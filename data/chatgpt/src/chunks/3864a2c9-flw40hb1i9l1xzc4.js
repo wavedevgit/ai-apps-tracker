@@ -1,3 +1,1504 @@
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{A1 as r,Aot as i,BU as a,Bnt as o,F7 as s,Git as c,HE as l,Hnt as u,I1 as d,JT as f,Knt as p,M1 as m,S1 as ee,Sw as te,Tat as ne,Uit as re,VE as ie,f8 as ae,j7 as oe,jat as h,jot as g,qT as _,ww as v,y8 as y,zE as b,zU as x}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as S,Ln as C,Nn as w,Rn as T,Vn as E,wn as se,zn as ce}from"./2340486e-oc6d2eodbcrmxur3.js";import{FQ as D,Hst as le,JPn as O,LPn as ue,Lrt as k,MPn as A,Mit as j,Nit as de,QQ as fe,Rrt as M,VQ as pe,Vst as me,XQ as he,Yrt as ge,ZQ as _e,eit as ve,iTn as ye,iit as be,jPn as xe,nWn as Se,rTn as N,rWn as Ce}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{Cx as we,Hm as Te,Kv as Ee,Ky as De,Sx as Oe,Um as ke,qv as Ae,qy as P}from"./30901919-om7b3qf5hp4j9x4l.js";import{Ay as je,Cy as Me,bu as Ne,cu as Pe,fu as Fe,hu as Ie,mu as Le,pu as Re,vu as ze,yu as F}from"./c2675c8c-fpv9s4kvd412dyap.js";import{S as Be,x as Ve}from"./82782bc9-cz4jkhg31tycbqqf.js";import{c as I,s as He}from"./122af5aa-ltlkro6lgoihtipj.js";import{a as Ue,r as We,t as Ge}from"./f688908b-ihudewhj6zxw9jmy.js";function Ke({connector:e,setup:t}){return e.status===`ONLY_ME`&&e.template_id===t.template.template_id&&e.owners.length>0&&e.owners.every(e=>e.type===`USER`)&&e.owners.some(e=>e.id===t.workspaceUserId)}function qe(e,t,n){let r=e.primaryConnector;return n!=null&&r.id===t.id&&r.status===`ONLY_ME`&&r.connector_type===`SERVICE`&&r.template_id!=null&&r.owners.length>0&&r.owners.every(e=>e.type===`USER`)&&r.owners.some(e=>e.id===n)}function L({plugin:e,workspaceId:t,workspaceUserId:n}){let r=ee();return e?.scope===`USER`&&n!=null&&e.creator_account_user_id===n&&r?.getWorkspaceId()===t&&r.normalizedAccountUserId===n}function Je({plugin:e,directoryApp:t,appIds:n,workspaceId:r,workspaceUserId:i,isPending:a}){return e==null||!I(e)||e.scope!==`USER`||i==null||e.creator_account_user_id!==i||n.length!==1||n[0]!==t.id||t.status!==`ONLY_ME`||t.connector_type!==`SERVICE`||t.template_id==null||a?null:{appId:t.id,directoryApp:t,mode:`publish`,skipImpact:!0,workspaceId:r,isAppEligible:e=>qe(e,t,i)}}function Ye({plugin:e,directoryApp:t,appIds:n,workspaceId:r,workspaceUserId:i,pendingAppId:a,appConfiguration:o,onPublish:s}){let c=()=>t==null?null:Je({plugin:e,directoryApp:t,appIds:n,workspaceId:r,workspaceUserId:i,isPending:a!=null||o!=null});return{onPublishDraft:c()==null?void 0:()=>{let t=c();t!=null&&L({plugin:e,workspaceId:r,workspaceUserId:i})&&s(t)},isCurrentActor:o?.isAppEligible==null?void 0:()=>L({plugin:e,workspaceId:r,workspaceUserId:i})}}var R=e((()=>{He(),d()})),z=t({CreateServiceConnectorFromTemplateModal:()=>B});function B(e){"use forget";let t=(0,nt.c)(198),{template:n,onClose:s,onCreateAttempt:c,personalTemplateSetup:l,onCreated:d,onWorkspaceDraftCreated:f,onNativeDraftHandoffIncomplete:p}=e,m=ce(),ee=pe(),re=je(),ie=n.can_create===!1,ae;t[0]===n.supported_auth_types?ae=t[1]:(ae=n.supported_auth_types?.some(tt)??!1,t[0]=n.supported_auth_types,t[1]=ae);let h=ae,g;t[2]===n.supported_auth_types?g=t[3]:(g=n.supported_auth_types?.some(et)??!1,t[2]=n.supported_auth_types,t[3]=g);let v=g,y=n.template_id===rt,b=n.template_id===it,x;t[4]!==b||t[5]!==n.template_id?(x=b?`https://help.openai.com/articles/20001487`:Fe(n.template_id),t[4]=b,t[5]=n.template_id,t[6]=x):x=t[6];let S=x,C;t[7]===n.link_params_schema?C=t[8]:(C=de(n.link_params_schema),t[7]=n.link_params_schema,t[8]=C);let T=C,[E,se]=(0,V.useState)(!1),D=(0,V.useRef)(!0),le=(0,V.useRef)(!1),O=(0,V.useRef)(null),ue;t[9]!==l||t[10]!==n.template_id?(ue=l?void 0:pt(n.template_id),t[9]=l,t[10]=n.template_id,t[11]=ue):ue=t[11];let A=ue,M;t[12]===A?M=t[13]:(M=()=>mt(A),t[12]=A,t[13]=M);let ge=(0,V.useSyncExternalStore)(dt,M,$e),_e=ge!=null,ye=(0,V.useRef)(!1),xe;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(xe={},t[14]=xe):xe=t[14];let[N,Ce]=(0,V.useState)(xe),we;t[15]===Symbol.for(`react.memo_cache_sentinel`)?(we={},t[15]=we):we=t[15];let[Te,Ae]=(0,V.useState)(we),[P,Me]=(0,V.useState)(null),[Ie,Re]=(0,V.useState)(h),[F,Ve]=(0,V.useState)(!1),[I,He]=(0,V.useState)(null),[We,qe]=(0,V.useState)(null),[L,Je]=(0,V.useState)(null),Ye=L?.connectorId,R;t[16]!==y||t[17]!==n.description||t[18]!==n.name||t[19]!==n.oauth_client_info?.default_scopes?(R=()=>({name:n.name,description:n.description??``,oauthClientId:``,oauthClientSecret:``,githubAppPrivateKey:``,oauthClientScopes:(n.oauth_client_info?.default_scopes??[]).join(`
-`),gitlabHostname:``,webhookSecret:y?bt():``}),t[16]=y,t[17]=n.description,t[18]=n.name,t[19]=n.oauth_client_info?.default_scopes,t[20]=R):R=t[20];let[z,B]=(0,V.useState)(R),lt;t[21]!==z.oauthClientId||t[22]!==z.oauthClientSecret?(lt=z.oauthClientId.trim().length>0||z.oauthClientSecret.trim().length>0,t[21]=z.oauthClientId,t[22]=z.oauthClientSecret,t[23]=lt):lt=t[23];let U=v||lt,ut;t[24]!==T||t[25]!==Te?(ut=j(T,Te),t[24]=T,t[25]=Te,t[26]=ut):ut=t[26];let W=ut,G=P?Le(P)??``:``,K=Ye?yt(Ye):``,J,Ct;t[27]===Symbol.for(`react.memo_cache_sentinel`)?(J=()=>(D.current=!0,()=>{D.current=!1;let e=O.current;e&&!e.dispatched&&gt(e.key,e.reservation),O.current=null}),Ct=[],t[27]=J,t[28]=Ct):(J=t[27],Ct=t[28]),(0,V.useEffect)(J,Ct);let wt,Tt;t[29]===h?(wt=t[30],Tt=t[31]):(wt=()=>{if(!h){Me(null),Re(!1);return}let e=!1;return Re(!0),Me(null),xt().then(t=>{e||Me(t)}).catch(()=>{e||Me(null)}).finally(()=>{e||Re(!1)}),()=>{e=!0}},Tt=[h],t[29]=h,t[30]=wt,t[31]=Tt),(0,V.useEffect)(wt,Tt);let Et,Dt;t[32]===I?(Et=t[33],Dt=t[34]):(Et=()=>{if(I==null)return;let e=window.setTimeout(()=>{He(null)},2e3);return()=>window.clearTimeout(e)},Dt=[I],t[32]=I,t[33]=Et,t[34]=Dt),(0,V.useEffect)(Et,Dt);let Ot;t[35]!==s||t[36]!==d||t[37]!==p||t[38]!==f||t[39]!==l?(Ot=e=>{let t=e.nativeDraftFallback,n=r(),a=t&&n?.getWorkspaceId()===t.workspaceId&&n.normalizedAccountUserId===t.accountUserId&&n.authUserId===t.actorUserId&&i()?.account?.id===t.workspaceId&&i()?.user?.id===t.actorUserId?t.connectorId:void 0;t&&!a?s():e.nativeDraftHandoffIncomplete?p?p(a):s():l&&d&&e.connector?d(e.connector):e.pluginId&&f&&e.connector?f({connector:e.connector,pluginId:e.pluginId,connectorId:e.connectorId}):s(e.connectorId)},t[35]=s,t[36]=d,t[37]=p,t[38]=f,t[39]=l,t[40]=Ot):Ot=t[40];let X=Ot,kt;t[41]!==L||t[42]!==X||t[43]!==E||t[44]!==s?(kt=()=>{E||(L?X(L):s())},t[41]=L,t[42]=X,t[43]=E,t[44]=s,t[45]=kt):kt=t[45];let At=kt,jt;t[46]===Symbol.for(`react.memo_cache_sentinel`)?(jt=e=>{Ce(t=>{if(!t[e])return t;let n={...t};return delete n[e],n})},t[46]=jt):jt=t[46];let Z=jt,Mt=(e,t)=>{Ae(n=>({...n,[e]:t})),l&&(e===`hostname`||e===`workspace_host`)&&!ye.current&&B(e=>({...e,name:he(n.name,t)})),Z(e)},Nt;t[47]===Z?Nt=t[48]:(Nt=async e=>{try{let t=await vt(e);B(e=>({...e,githubAppPrivateKey:t})),qe(e.name),Z(`githubAppPrivateKey`)}catch{a.danger(Y.githubAppPrivateKeyReadError)}},t[47]=Z,t[48]=Nt);let Pt=Nt,Ft;t[49]===Pt?Ft=t[50]:(Ft=e=>{e.length>0&&Pt(e[0])},t[49]=Pt,t[50]=Ft);let It;t[51]!==E||t[52]!==Ft?(It={accept:ct,disabled:E,multiple:!1,noClick:!0,noKeyboard:!0,onDropAccepted:Ft,onDropRejected:Qe},t[51]=E,t[52]=Ft,t[53]=It):It=t[53];let{getInputProps:Lt,getRootProps:Rt,isDragActive:zt,open:Bt}=Be(It),Vt;t[54]===Symbol.for(`react.memo_cache_sentinel`)?(Vt=async(e,t)=>{if(t)try{await navigator.clipboard.writeText(t),He(e)}catch{He(null)}},t[54]=Vt):Vt=t[54];let Ht=Vt,Ut;t[55]!==P||t[56]!==W||t[57]!==X||t[58]!==m||t[59]!==re||t[60]!==b||t[61]!==y||t[62]!==T||t[63]!==ee||t[64]!==s||t[65]!==c||t[66]!==f||t[67]!==l||t[68]!==U||t[69]!==n||t[70]!==ie||t[71]!==z.description||t[72]!==z.githubAppPrivateKey||t[73]!==z.gitlabHostname||t[74]!==z.name||t[75]!==z.oauthClientId||t[76]!==z.oauthClientScopes||t[77]!==z.oauthClientSecret||t[78]!==z.webhookSecret?(Ut=async e=>{if(e?.preventDefault(),ie||le.current)return;let t=l?void 0:pt(n.template_id),d=mt(t);if(d){a.danger(m.formatMessage(d===`pending`?Y.nativeCreationPending:Y.nativeCompletionUncertain));return}let p={},te=z.name.trim(),ae=z.description.trim(),h=z.oauthClientId.trim(),g=z.oauthClientSecret.trim(),_=z.githubAppPrivateKey.trim(),v=z.gitlabHostname.trim(),x=y&&U,S=z.webhookSecret.trim(),C=y;te||(p.name=m.formatMessage(Y.requiredField)),U&&(h||(p.oauthClientId=m.formatMessage(Y.requiredField)),g||(p.oauthClientSecret=m.formatMessage(Y.requiredField)),x&&!_&&(p.githubAppPrivateKey=m.formatMessage(Y.requiredField)),P||(p.callbackId=m.formatMessage(b?Y.gitlabRedirectUriUnavailable:Y.callbackUrlUnavailable))),b&&!v&&(p.gitlabHostname=m.formatMessage(Y.requiredField)),C&&(S||(p.webhookSecret=m.formatMessage(Y.requiredField)));let{sanitizedLinkParams:w,errors:E,hasPatternErrors:ce}=be(T,W,m);if(Object.assign(p,E),Object.keys(p).length>0){Ce(p),Object.keys(E).length>0&&a.danger(m.formatMessage(ce?ve.invalidFieldsToast:ve.requiredFieldsToast));return}se(!0),le.current=!0;let ue={name:te,description:ae,logo_url:n.logo_url,logo_url_dark:n.logo_url_dark,link_params:w,create_as_draft:!0},k={};C&&(k[ot]=S),x&&(k[at]=_),b&&(k[st]=v);let A={...ue,...Object.keys(k).length>0?{additional_config:k}:{},...U?{oauth_client_id:h,oauth_client_secret:g,oauth_client_scopes:_t(z.oauthClientScopes),callback_id:P??void 0}:{}},j=l?void 0:r()?.getWorkspaceId(),de=!1,M=!1,pe=!1,me;try{let e;if(l){c?.();let t=await fe(l,A);e={connectorId:t.connector.id,connector:t.connector,pluginId:t.plugin_id?.trim()||void 0}}else if(Ge({nativeEnabled:!0,connectorType:n.connector_type,workspaceId:j,requestBody:A})&&u().getContext().user.customIDs?.workspace_id===j&&u().getContext().user.userID===i()?.user?.id&&t!=null&&o(ft)){let r=Symbol(`service-template-prewrite`);me=r,O.current={key:t,reservation:r,dispatched:!1},ht(t,`pending`,r),de=!0;let i=await Ue({workspaceId:j??``,templateId:n.template_id,requestBody:A,onBeforeWrite:()=>{if(!D.current||O.current?.reservation!==r||q.get(window)?.get(t)!==r||mt(t)!==`pending`)throw Error(`The draft creation context has changed.`);O.current.dispatched=!0,M=!0,c?.()}});e={connectorId:i.connector_id,connector:i.connector,pluginId:i.plugin_id?.trim()||void 0}}else{c?.();let t=await oe.safePost(`/aip/connectors/templates/{template_id}/instantiate`,{parameters:{path:{template_id:n.template_id}},requestBody:A});e={connectorId:t.connector.id,connector:t.connector,pluginId:t.plugin_id?.trim()||void 0}}let s=r(),d=M&&e.connector!=null&&e.connectorId.trim()!==``&&e.connector.id===e.connectorId&&e.connector.connector_type===`SERVICE`&&!!s?.normalizedAccountUserId&&!!s.authUserId&&!!i()?.user?.id&&s.getWorkspaceId()===j&&s.authUserId===i()?.user?.id&&i()?.account?.id===j&&Ke({connector:e.connector,setup:{template:n,workspaceUserId:s.normalizedAccountUserId}}),p=M&&f!=null&&(!e.pluginId||!d);if(e.nativeDraftHandoffIncomplete=p,e.nativeDraftFallback=d&&s?.normalizedAccountUserId&&s.authUserId&&j?{connectorId:e.connectorId,workspaceId:j,actorUserId:s.authUserId,accountUserId:s.normalizedAccountUserId}:void 0,!l){if(await Promise.all([re(),St.refetch()]),ee(),M&&!D.current){ht(t,`uncertain`);return}p?(ht(t,`uncertain`),a.danger(m.formatMessage(Y.nativeCompletionUncertain))):(M&&gt(t),a.success(m.formatMessage(Y.success)))}C?Je(e):X(e)}catch(e){let n=e,r=M&&n instanceof ne&&!n.isTransportError&&(n.status===401||n.status===403||Ne(n));if(de&&!M?gt(t,me):r?gt(t):M&&ht(t,`uncertain`),de&&!D.current)return;a.danger(M&&!r?m.formatMessage(Y.nativeCompletionUncertain):ze(n,m),{toastId:`create_service_template_draft_error`,analyticsToastId:`create_service_template_draft_error`}),M&&!r&&(pe=!0,C?(Je({connectorId:``,nativeDraftHandoffIncomplete:!0}),se(!1)):s())}pe||(le.current=!1,se(!1))},t[55]=P,t[56]=W,t[57]=X,t[58]=m,t[59]=re,t[60]=b,t[61]=y,t[62]=T,t[63]=ee,t[64]=s,t[65]=c,t[66]=f,t[67]=l,t[68]=U,t[69]=n,t[70]=ie,t[71]=z.description,t[72]=z.githubAppPrivateKey,t[73]=z.gitlabHostname,t[74]=z.name,t[75]=z.oauthClientId,t[76]=z.oauthClientScopes,t[77]=z.oauthClientSecret,t[78]=z.webhookSecret,t[79]=Ut):Ut=t[79];let Wt=Ut,Gt;t[80]!==I||t[81]!==m?(Gt=e=>{let{setupValueKey:t,label:n,value:r,isLoading:i,loadingLabel:a,unavailableLabel:o,ariaLabel:s}=e,c=I===t,l=!!r&&!i,u=i?a:r||o;return(0,H.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[(0,H.jsxs)(`div`,{className:`flex items-center justify-between gap-3`,children:[(0,H.jsx)(`span`,{className:`text-token-text-primary text-xs font-semibold`,children:n}),(0,H.jsx)(`span`,{className:`text-token-text-tertiary text-xs`,children:(0,H.jsx)(w,{...c?Y.setupUrlCopied:l?Y.setupUrlCopyHint:Y.setupUrlCopyUnavailable})})]}),(0,H.jsxs)(`button`,{type:`button`,onClick:()=>void Ht(t,r),disabled:!l,className:`border-token-border-light bg-token-bg-primary flex w-full items-center justify-between gap-3 rounded-md border px-3 py-2 text-start text-xs shadow-sm transition-colors ${l?`hover:bg-token-main-surface-secondary`:`cursor-default opacity-70`}`,"aria-label":s,title:l?m.formatMessage(Y.setupUrlCopyHint):void 0,children:[(0,H.jsx)(`span`,{className:`text-token-text-secondary font-mono break-all`,children:u}),(0,H.jsx)(`span`,{className:`border-token-border-light bg-token-bg-secondary text-token-text-secondary flex h-8 w-8 shrink-0 items-center justify-center rounded-md border`,children:c?(0,H.jsx)(Oe,{className:`icon-sm`}):(0,H.jsx)(De,{className:`icon-sm`})})]})]})},t[80]=I,t[81]=m,t[82]=Gt):Gt=t[82];let Q=Gt;if(L){let e=!Ye,n=e?Y.githubWebhookUncertainTitle:Y.githubWebhookReadyTitle,r;t[83]===n?r=t[84]:(r=(0,H.jsx)(w,{...n}),t[83]=n,t[84]=r);let i=e?Y.githubWebhookUncertainBody:Y.githubWebhookReadyBody,a;t[85]===i?a=t[86]:(a=(0,H.jsx)(`p`,{className:`text-token-text-secondary text-sm`,children:(0,H.jsx)(w,{...i})}),t[85]=i,t[86]=a);let o;t[87]!==m||t[88]!==y||t[89]!==Q||t[90]!==z.webhookSecret?(o=y?Q({setupValueKey:`webhookSecret`,label:(0,H.jsx)(w,{...Y.githubWebhookSecretLabel}),value:z.webhookSecret,isLoading:!1,loadingLabel:m.formatMessage(Y.setupUrlLoading),unavailableLabel:m.formatMessage(Y.githubWebhookSecretUnavailable),ariaLabel:m.formatMessage(Y.copyGithubWebhookSecretAriaLabel)}):null,t[87]=m,t[88]=y,t[89]=Q,t[90]=z.webhookSecret,t[91]=o):o=t[91];let s;t[92]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,H.jsx)(w,{...Y.webhookUrlLabel}),t[92]=s):s=t[92];let c;t[93]!==L||t[94]!==X?(c=()=>X(L),t[93]=L,t[94]=X,t[95]=c):c=t[95];let l;t[96]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,H.jsx)(w,{...Y.doneCta}),t[96]=l):l=t[96];let u;return t[97]===c?u=t[98]:(u=(0,H.jsx)(`div`,{className:`flex justify-end`,children:(0,H.jsx)(_,{color:`primary`,onClick:c,size:`large`,className:`w-full md:w-auto`,type:`button`,children:l})}),t[97]=c,t[98]=u),(0,H.jsx)(te,{title:r,isOpen:!0,onClose:At,position:`center`,showCloseButton:!0,size:`custom`,className:`max-h-[90vh] w-full md:max-w-[448px]`,testId:`modal-create-service-connector-webhook-url`,children:(0,H.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[a,o,Q({setupValueKey:`webhook`,label:s,value:K,isLoading:!1,loadingLabel:m.formatMessage(Y.setupUrlLoading),unavailableLabel:m.formatMessage(Y.setupUrlUnavailable),ariaLabel:m.formatMessage(Y.copyWebhookUrlAriaLabel)}),u]})})}let Kt=te,qt=l?Pe.connectTemplateAppModalTitle:Pe.createTemplateAppModalTitle,Jt;t[99]===n.name?Jt=t[100]:(Jt={templateName:n.name},t[99]=n.name,t[100]=Jt);let Yt;t[101]!==qt||t[102]!==Jt?(Yt=(0,H.jsx)(`span`,{className:`flex items-center gap-1`,children:(0,H.jsx)(w,{...qt,values:Jt})}),t[101]=qt,t[102]=Jt,t[103]=Yt):Yt=t[103];let Xt=!E,Zt;t[104]===E?Zt=t[105]:(Zt=e=>{E&&e.preventDefault()},t[104]=E,t[105]=Zt);let Qt;t[106]!==l||t[107]!==v||t[108]!==n.name?(Qt=l?(0,H.jsx)(w,{id:`chatgpt.plugins.template_setup.description`,defaultMessage:`Enter your server settings, then continue to sign in.`}):(0,H.jsx)(w,{...v?Y.bodyWithOauth:Y.bodyWithoutOauth,values:{templateName:n.name}}),t[106]=l,t[107]=v,t[108]=n.name,t[109]=Qt):Qt=t[109];let $t;t[110]===S?$t=t[111]:($t=S?(0,H.jsxs)(H.Fragment,{children:[` `,(0,H.jsxs)(Se,{href:S,openNewTab:!0,className:`text-token-text-tertiary inline-flex items-center gap-1 text-sm no-underline! hover:underline!`,children:[(0,H.jsx)(w,{...Y.setupGuideLink}),(0,H.jsx)(Ee,{className:`h-3 w-3`})]})]}):null,t[110]=S,t[111]=$t);let en;t[112]!==Qt||t[113]!==$t?(en=(0,H.jsxs)(`p`,{className:`text-token-text-secondary text-sm`,children:[Qt,$t]}),t[112]=Qt,t[113]=$t,t[114]=en):en=t[114];let tn;t[115]!==_e||t[116]!==ge||t[117]!==n.template_id?(tn=_e?(0,H.jsxs)(`div`,{className:`flex flex-col items-start gap-2`,children:[(0,H.jsx)(`p`,{className:`text-status-critical text-sm`,role:`alert`,children:(0,H.jsx)(w,{...ge===`pending`?Y.nativeCreationPending:Y.nativeCompletionUncertain})}),ge===`uncertain`?(0,H.jsx)(_,{type:`button`,color:`secondary`,size:`small`,onClick:()=>{let e=pt(n.template_id);mt(e)===`uncertain`&&gt(e)},children:(0,H.jsx)(w,{...Y.nativeRetryAfterReviewCta})}):null]}):null,t[115]=_e,t[116]=ge,t[117]=n.template_id,t[118]=tn):tn=t[118];let nn;t[119]!==en||t[120]!==tn?(nn=(0,H.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[en,tn]}),t[119]=en,t[120]=tn,t[121]=nn):nn=t[121];let rn;t[122]===Symbol.for(`react.memo_cache_sentinel`)?(rn=(0,H.jsx)(`label`,{htmlFor:`service-template-name`,className:`mb-1 block text-sm font-medium`,children:(0,H.jsx)(w,{...Y.nameLabel})}),t[122]=rn):rn=t[122];let an;t[123]===m?an=t[124]:(an=m.formatMessage(Y.nameLabel),t[123]=m,t[124]=an);let on=l?void 0:`service-template-name-help`,sn;t[125]===Z?sn=t[126]:(sn=e=>{ye.current=!0,B(t=>({...t,name:e.target.value})),Z(`name`)},t[125]=Z,t[126]=sn);let cn;t[127]!==N.name||t[128]!==E||t[129]!==an||t[130]!==on||t[131]!==sn||t[132]!==z.name?(cn=(0,H.jsx)(k,{name:`service-template-name`,ariaLabel:an,"aria-describedby":on,value:z.name,onChange:sn,disabled:E,error:N.name,inputClassName:`bg-token-bg-primary!`}),t[127]=N.name,t[128]=E,t[129]=an,t[130]=on,t[131]=sn,t[132]=z.name,t[133]=cn):cn=t[133];let $;t[134]===l?$=t[135]:($=l?null:(0,H.jsx)(`p`,{id:`service-template-name-help`,className:`text-token-text-tertiary mt-1 text-xs`,children:(0,H.jsx)(w,{...Y.nameDescription})}),t[134]=l,t[135]=$);let ln;t[136]!==cn||t[137]!==$?(ln=(0,H.jsxs)(`div`,{children:[rn,cn,$]}),t[136]=cn,t[137]=$,t[138]=ln):ln=t[138];let un;t[139]!==m||t[140]!==E||t[141]!==l||t[142]!==z.description?(un=l?null:(0,H.jsxs)(`div`,{children:[(0,H.jsx)(`label`,{htmlFor:`service-template-description`,className:`mb-1 block text-sm font-medium`,children:(0,H.jsx)(w,{...Y.descriptionLabel})}),(0,H.jsx)(me,{name:`service-template-description`,ariaLabel:m.formatMessage(Y.descriptionLabel),"aria-describedby":`service-template-description-help`,value:z.description,onChange:e=>B(t=>({...t,description:e.target.value})),disabled:E,inputClassName:`bg-token-bg-primary!`}),(0,H.jsx)(`p`,{id:`service-template-description-help`,className:`text-token-text-tertiary mt-1 text-xs`,children:(0,H.jsx)(w,{...Y.descriptionDescription})})]}),t[139]=m,t[140]=E,t[141]=l,t[142]=z.description,t[143]=un):un=t[143];let dn;t[144]!==ln||t[145]!==un?(dn=(0,H.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[ln,un]}),t[144]=ln,t[145]=un,t[146]=dn):dn=t[146];let fn=T.length>0?(0,H.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[(0,H.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[(0,H.jsx)(`h3`,{className:`text-sm font-semibold`,children:(0,H.jsx)(w,{...ve.sectionTitle})}),(0,H.jsx)(`p`,{className:`text-token-text-secondary text-xs`,children:(0,H.jsx)(w,{...ve.sectionDescription})})]}),T.map(e=>{let t=e.required?m.formatMessage(ve.fieldLabelRequired,{label:e.title}):e.title,n=N[e.name],r=W[e.name]??``;return e.enumValues&&e.enumValues.length>0?(0,H.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[(0,H.jsx)(`label`,{htmlFor:`service-template-link-param-${e.name}`,className:`text-sm font-medium`,children:t}),(0,H.jsx)(`select`,{id:`service-template-link-param-${e.name}`,className:`border-token-border-light bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:ring-1 focus:outline-none`,value:r,onChange:t=>Mt(e.name,t.target.value),disabled:E,children:e.enumValues.map(Ze)}),e.description?(0,H.jsx)(`p`,{className:`text-token-text-tertiary text-xs`,children:e.description}):null,n?(0,H.jsx)(`p`,{className:`text-status-critical text-xs`,children:n}):null]},e.name):(0,H.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[(0,H.jsx)(`label`,{htmlFor:`service-template-link-param-${e.name}`,className:`mb-1 block text-sm font-medium`,children:t}),(0,H.jsx)(k,{name:`service-template-link-param-${e.name}`,ariaLabel:t,value:r,onChange:t=>Mt(e.name,t.target.value),disabled:E,placeholder:m.formatMessage(ve.fieldPlaceholder,{label:e.example??e.title}),error:n,inputClassName:`bg-token-bg-primary!`}),e.description?(0,H.jsx)(`p`,{className:`text-token-text-tertiary text-xs`,children:e.description}):null]},e.name)})]}):null,pn;t[147]!==N.gitlabHostname||t[148]!==m||t[149]!==b||t[150]!==E||t[151]!==Z||t[152]!==z.gitlabHostname?(pn=b?(0,H.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[(0,H.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[(0,H.jsx)(`h3`,{className:`text-sm font-semibold`,children:(0,H.jsx)(w,{...Y.gitlabInstanceSectionTitle})}),(0,H.jsx)(`p`,{className:`text-token-text-secondary text-xs`,children:(0,H.jsx)(w,{...Y.gitlabHostnameDescription})})]}),(0,H.jsxs)(`div`,{children:[(0,H.jsx)(`label`,{htmlFor:`service-template-gitlab-hostname`,className:`mb-1 block text-sm font-medium`,children:(0,H.jsx)(w,{...Y.gitlabHostnameLabel})}),(0,H.jsx)(k,{name:`service-template-gitlab-hostname`,ariaLabel:m.formatMessage(Y.gitlabHostnameLabel),value:z.gitlabHostname,onChange:e=>{B(t=>({...t,gitlabHostname:e.target.value})),Z(`gitlabHostname`)},disabled:E,error:N.gitlabHostname,placeholder:m.formatMessage(Y.gitlabHostnamePlaceholder),inputClassName:`bg-token-bg-primary!`})]})]}):null,t[147]=N.gitlabHostname,t[148]=m,t[149]=b,t[150]=E,t[151]=Z,t[152]=z.gitlabHostname,t[153]=pn):pn=t[153];let mn;t[154]!==E||t[155]!==v||t[156]!==F||t[157]!==h?(mn=h&&!v?(0,H.jsx)(`div`,{children:(0,H.jsx)(_,{color:`secondary`,size:`small`,type:`button`,"aria-expanded":F,onClick:()=>Ve(Xe),disabled:E,children:(0,H.jsx)(w,{...F?Y.hideAdvancedSettings:Y.showAdvancedSettings})})}):null,t[154]=E,t[155]=v,t[156]=F,t[157]=h,t[158]=mn):mn=t[158];let hn=h&&(v||F)?(0,H.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[(0,H.jsx)(`h3`,{className:`text-sm font-semibold`,children:(0,H.jsx)(w,{...Y.oauthSectionTitle})}),Q({setupValueKey:`callback`,label:(0,H.jsx)(w,{...b?Y.gitlabOauthRedirectUriLabel:Y.oauthCallbackUrlLabel}),value:G,isLoading:Ie,loadingLabel:m.formatMessage(Y.setupUrlLoading),unavailableLabel:m.formatMessage(Y.setupUrlUnavailable),ariaLabel:m.formatMessage(b?Y.copyGitlabOauthRedirectUriAriaLabel:Y.copyOauthCallbackUrlAriaLabel)}),N.callbackId?(0,H.jsx)(`p`,{className:`text-status-critical text-xs`,children:N.callbackId}):null,(0,H.jsxs)(`div`,{children:[(0,H.jsx)(`label`,{htmlFor:`service-template-oauth-client-id`,className:`mb-1 block text-sm font-medium`,children:(0,H.jsx)(w,{...Y.oauthClientIdLabel})}),(0,H.jsx)(k,{name:`service-template-oauth-client-id`,ariaLabel:m.formatMessage(Y.oauthClientIdLabel),value:z.oauthClientId,onChange:e=>{B(t=>({...t,oauthClientId:e.target.value})),Z(`oauthClientId`)},disabled:E,error:N.oauthClientId,inputClassName:`bg-token-bg-primary!`})]}),(0,H.jsxs)(`div`,{children:[(0,H.jsx)(`label`,{htmlFor:`service-template-oauth-client-secret`,className:`mb-1 block text-sm font-medium`,children:(0,H.jsx)(w,{...Y.oauthClientSecretLabel})}),(0,H.jsx)(k,{name:`service-template-oauth-client-secret`,ariaLabel:m.formatMessage(Y.oauthClientSecretLabel),type:`password`,value:z.oauthClientSecret,onChange:e=>{B(t=>({...t,oauthClientSecret:e.target.value})),Z(`oauthClientSecret`)},disabled:E,error:N.oauthClientSecret,inputClassName:`bg-token-bg-primary!`})]}),y?(0,H.jsx)(`div`,{className:`flex flex-col gap-4`,children:(0,H.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[(0,H.jsx)(`label`,{htmlFor:`service-template-github-app-private-key`,className:`text-sm font-medium`,children:(0,H.jsx)(w,{...Y.githubAppPrivateKeyLabel})}),(0,H.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,H.jsxs)(`div`,{...Rt({className:`border-token-border-light bg-token-bg-primary flex flex-col items-center gap-2 rounded-md border border-dashed px-4 py-5 text-center transition-colors ${zt?`border-token-text-primary bg-token-main-surface-secondary`:``}`}),children:[(0,H.jsx)(`input`,{...Lt()}),(0,H.jsx)(ke,{className:`text-token-text-secondary h-5 w-5`}),(0,H.jsx)(`p`,{className:`text-token-text-secondary text-sm`,children:(0,H.jsx)(w,{...Y.githubAppPrivateKeyUploadLabel})}),(0,H.jsx)(_,{type:`button`,color:`secondary`,size:`small`,disabled:E,onClick:()=>Bt(),children:(0,H.jsx)(w,{...Y.githubAppPrivateKeyUploadBrowseCta})})]}),We?(0,H.jsx)(`p`,{className:`text-token-text-tertiary text-xs`,children:(0,H.jsx)(w,{...Y.githubAppPrivateKeyFileLoaded,values:{fileName:We}})}):null]}),(0,H.jsx)(`textarea`,{id:`service-template-github-app-private-key`,className:`border-token-border-light bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-md border px-3 py-2 font-mono text-sm shadow-sm focus:ring-1 focus:outline-none`,value:z.githubAppPrivateKey,onChange:e=>{B(t=>({...t,githubAppPrivateKey:e.target.value})),qe(null),Z(`githubAppPrivateKey`)},rows:5,disabled:E,placeholder:m.formatMessage(Y.githubAppPrivateKeyPlaceholder),"aria-label":m.formatMessage(Y.githubAppPrivateKeyLabel)}),(0,H.jsx)(`p`,{className:`text-token-text-tertiary text-xs`,children:(0,H.jsx)(w,{...Y.githubAppPrivateKeyDescription})}),N.githubAppPrivateKey?(0,H.jsx)(`p`,{className:`text-status-critical text-xs`,children:N.githubAppPrivateKey}):null]})}):null,(0,H.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[(0,H.jsx)(`label`,{htmlFor:`service-template-oauth-client-scopes`,className:`text-sm font-medium`,children:(0,H.jsx)(w,{...b?Y.gitlabOauthClientScopesLabel:Y.oauthClientScopesLabel})}),(0,H.jsx)(`textarea`,{id:`service-template-oauth-client-scopes`,className:`border-token-border-light bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:ring-1 focus:outline-none`,value:z.oauthClientScopes,onChange:e=>B(t=>({...t,oauthClientScopes:e.target.value})),rows:3,disabled:E,readOnly:b,placeholder:m.formatMessage(Y.oauthClientScopesPlaceholder)}),(0,H.jsx)(`p`,{className:`text-token-text-tertiary text-xs`,children:(0,H.jsx)(w,{...b?Y.gitlabOauthClientScopesDescription:Y.oauthClientScopesDescription})})]})]}):null,gn;t[159]!==N.webhookSecret||t[160]!==m||t[161]!==y||t[162]!==Q||t[163]!==z.webhookSecret?(gn=y?(0,H.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[(0,H.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[(0,H.jsx)(`h3`,{className:`text-sm font-semibold`,children:(0,H.jsx)(w,{...Y.githubWebhookSectionTitle})}),(0,H.jsx)(`p`,{className:`text-token-text-secondary text-xs`,children:(0,H.jsx)(w,{...Y.githubWebhookSetupDescription})})]}),Q({setupValueKey:`webhookSecret`,label:(0,H.jsx)(w,{...Y.githubWebhookSecretLabel}),value:z.webhookSecret,isLoading:!1,loadingLabel:m.formatMessage(Y.setupUrlLoading),unavailableLabel:m.formatMessage(Y.githubWebhookSecretUnavailable),ariaLabel:m.formatMessage(Y.copyGithubWebhookSecretAriaLabel)}),N.webhookSecret?(0,H.jsx)(`p`,{className:`text-status-critical text-xs`,children:N.webhookSecret}):null]}):null,t[159]=N.webhookSecret,t[160]=m,t[161]=y,t[162]=Q,t[163]=z.webhookSecret,t[164]=gn):gn=t[164];let _n;t[165]===s?_n=t[166]:(_n=()=>s(),t[165]=s,t[166]=_n);let vn;t[167]===Symbol.for(`react.memo_cache_sentinel`)?(vn=(0,H.jsx)(w,{...Y.cancelCta}),t[167]=vn):vn=t[167];let yn;t[168]!==E||t[169]!==_n?(yn=(0,H.jsx)(_,{color:`secondary`,onClick:_n,size:`large`,className:`w-full md:w-auto`,type:`button`,disabled:E,children:vn}),t[168]=E,t[169]=_n,t[170]=yn):yn=t[170];let bn=ie||_e||E||U&&Ie,xn=l?Pe.continueSetupButton:Y.createCta,Sn;t[171]===xn?Sn=t[172]:(Sn=(0,H.jsx)(w,{...xn}),t[171]=xn,t[172]=Sn);let Cn;t[173]!==E||t[174]!==bn||t[175]!==Sn?(Cn=(0,H.jsx)(_,{color:`primary`,size:`large`,className:`w-full min-w-[170px] md:w-auto`,loading:E,disabled:bn,type:`submit`,children:Sn}),t[173]=E,t[174]=bn,t[175]=Sn,t[176]=Cn):Cn=t[176];let wn;t[177]!==yn||t[178]!==Cn?(wn=(0,H.jsxs)(`div`,{className:`flex flex-col-reverse gap-3 md:flex-row md:justify-end`,children:[yn,Cn]}),t[177]=yn,t[178]=Cn,t[179]=wn):wn=t[179];let Tn;t[180]!==Wt||t[181]!==nn||t[182]!==dn||t[183]!==fn||t[184]!==pn||t[185]!==mn||t[186]!==hn||t[187]!==gn||t[188]!==wn?(Tn=(0,H.jsxs)(`form`,{className:`flex flex-col gap-4`,onSubmit:Wt,children:[nn,dn,fn,pn,mn,hn,gn,wn]}),t[180]=Wt,t[181]=nn,t[182]=dn,t[183]=fn,t[184]=pn,t[185]=mn,t[186]=hn,t[187]=gn,t[188]=wn,t[189]=Tn):Tn=t[189];let En;return t[190]!==Kt||t[191]!==At||t[192]!==E||t[193]!==Yt||t[194]!==Xt||t[195]!==Zt||t[196]!==Tn?(En=(0,H.jsx)(Kt,{title:Yt,isOpen:!0,onClose:At,position:`center`,showCloseButton:Xt,shouldIgnoreClickOutside:E,onEscapeKeyDown:Zt,size:`custom`,className:`max-h-[90vh] w-full md:max-w-[448px]`,testId:`modal-create-service-connector-from-template`,children:Tn}),t[190]=Kt,t[191]=At,t[192]=E,t[193]=Yt,t[194]=Xt,t[195]=Zt,t[196]=Tn,t[197]=En):En=t[197],En}function Xe(e){return!e}function Ze(e){return(0,H.jsx)(`option`,{value:e,children:e},e)}function Qe(){a.danger(Y.githubAppPrivateKeyInvalidFile)}function $e(){}function et(e){return e.type===`OAUTH`&&e.client_credentials_required!==!1}function tt(e){return e.type===`OAUTH`}var nt,V,H,rt,it,at,ot,st,ct,lt,U,ut,W,G,K,q,dt,J,ft,pt,mt,ht,gt,_t,vt,yt,bt,xt,St,Y,Ct=e((()=>{nt=se(),Re(),_e(),ge(),F(),We(),Ie(),f(),Me(),Ae(),we(),P(),Te(),v(),le(),M(),Ce(),R(),D(),ye(),g(),h(),O(),xe(),ae(),d(),x(),l(),c(),s(),p(),V=n(E()),Ve(),T(),H=S(),rt=`templated_apps_GitHubEnterprise`,it=`templated_apps_GitLab`,at=`private_key`,ot=`webhook_secret`,st=`hostname`,ct={"application/octet-stream":[`.pem`],"application/pem-certificate-chain":[`.pem`],"application/x-pem-file":[`.pem`],"text/plain":[`.pem`]},lt=`https://connectors.api.openai.com`,U=32,ut=`chatgpt.service-template-native-create-uncertain:`,W=`chatgpt:service-template-create-lock`,G=new WeakMap,K=new WeakMap,q=new WeakMap,dt=e=>typeof window>`u`?()=>{}:(window.addEventListener(W,e),()=>window.removeEventListener(W,e)),J=()=>{window.dispatchEvent(new Event(W))},ft=`3541874775`,pt=e=>{let t=r(),n=i(),a=t?.getWorkspaceId();if(!(!a||!t?.normalizedAccountUserId||!n?.user?.id||t.authUserId!==n.user.id||n.account?.id!==a))return`${ut}${JSON.stringify([a,t.normalizedAccountUserId,n.user.id,e])}`},mt=e=>{if(!e||typeof window>`u`)return;let t=G.get(window)?.get(e);if(t!==`cleared`)try{let n=window.sessionStorage.getItem(e),r=q.get(window)?.has(e)===!0;if(n==null&&r)return`pending`;let i=t??(n===`pending`||n===`uncertain`?n:K.get(window)?.get(e));if(i!=null){let t=K.get(window)??new Map;t.set(e,i),K.set(window,t)}else n??K.get(window)?.delete(e);return i===`pending`&&!r?`uncertain`:i}catch{let n=t??K.get(window)?.get(e);return n===`pending`&&!q.get(window)?.has(e)?`uncertain`:n}},ht=(e,t,n)=>{if(!e||typeof window>`u`)return;let r=q.get(window)??new Map;t===`pending`&&n?r.set(e,n):r.delete(e),q.set(window,r);let i=K.get(window)??new Map;i.set(e,t),K.set(window,i);try{window.sessionStorage.setItem(e,t),G.get(window)?.delete(e)}catch{let n=G.get(window)??new Map;n.set(e,t),G.set(window,n)}J()},gt=(e,t)=>{if(!(!e||typeof window>`u`)&&!(t&&q.get(window)?.get(e)!==t)){q.get(window)?.delete(e),K.get(window)?.delete(e),G.get(window)?.delete(e);try{window.sessionStorage.removeItem(e)}catch{let t=G.get(window)??new Map;t.set(e,`cleared`),G.set(window,t)}J()}},_t=e=>{let t=new Set,n=[];for(let r of e.split(/\r?\n|,/)){let e=r.trim();!e||t.has(e)||(t.add(e),n.push(e))}return n},vt=e=>new Promise((t,n)=>{let r=new FileReader;r.onerror=()=>n(Error(`Unable to read file.`)),r.onload=()=>{if(typeof r.result==`string`){t(r.result);return}n(Error(`File contents unavailable.`))},r.readAsText(e)}),yt=e=>`${lt}/connectors/${encodeURIComponent(e)}/webhook`,bt=()=>{if(!globalThis.crypto?.getRandomValues)return``;let e=new Uint8Array(U);return globalThis.crypto.getRandomValues(e),Array.from(e,e=>e.toString(16).padStart(2,`0`)).join(``)},xt=async()=>(await oe.safeGet(`/aip/connectors/oauth/callback_id`,{})).callback_id??null,St=y(()=>({queryKey:ue(`workspace_settings`,!0,!1),queryFn:async()=>{let e=await oe.safePost(`/aip/connectors/list_accessible`,{requestBody:{principals:[],purpose:`workspace_settings`},parameters:{query:{include_actions:!1,external_logos:!0}},additionalHeaders:{[re]:N.ADMIN_SETTING}}),t=ie();return{connectors:(e.connectors??[]).map(e=>b(e,{preferIconAssets:t})),templates:e.app_templates??[]}},enabled:m()?.normalizedAccountUserId!=null&&A()})),Y=C({bodyWithOauth:{id:`GO4JyL`,defaultMessage:`Enter your organization's OAuth client details and provider settings. This creates a workspace-specific draft app that can be published afterward.`},bodyWithoutOauth:{id:`5I6YP9`,defaultMessage:`Enter your organization's provider settings. This creates a workspace-specific draft app that can be published afterward.`},setupGuideLink:{id:`chatgpt.connector_settings.service_template.setup_guide.link.label`,defaultMessage:`Learn more`},showAdvancedSettings:{id:`zSj6if`,defaultMessage:`Advanced settings`},hideAdvancedSettings:{id:`gKf0vS`,defaultMessage:`Hide advanced settings`},nameLabel:{id:`hGnzkR`,defaultMessage:`Name`},nameDescription:{id:`chatgpt.connector_settings.service_template.name.help_text`,defaultMessage:`Use a clear, descriptive name. Workspace members will see it, and ChatGPT uses it to decide when to use this app.`},descriptionLabel:{id:`W/yg6K`,defaultMessage:`Description`},descriptionDescription:{id:`chatgpt.connector_settings.service_template.description.help_text`,defaultMessage:`Describe what the app connects to and what it should be used for. This is shown to workspace members and used by ChatGPT.`},oauthSectionTitle:{id:`HMeJ7H`,defaultMessage:`OAuth client`},oauthClientIdLabel:{id:`bLXOJj`,defaultMessage:`OAuth client ID`},oauthClientSecretLabel:{id:`w2sU1b`,defaultMessage:`OAuth client secret`},githubAppPrivateKeyLabel:{id:`daxGvr`,defaultMessage:`GitHub App private key`},githubAppPrivateKeyUploadLabel:{id:`Er2aY/`,defaultMessage:`Drag and drop a .pem file here`},githubAppPrivateKeyUploadBrowseCta:{id:`cR2tO3`,defaultMessage:`Browse files`},githubAppPrivateKeyFileLoaded:{id:`maykO5`,defaultMessage:`Loaded {fileName}`},githubAppPrivateKeyInvalidFile:{id:`i+lAXo`,defaultMessage:`Upload a single .pem file.`},githubAppPrivateKeyReadError:{id:`4xlBSI`,defaultMessage:`Couldn't read the private key file.`},githubAppPrivateKeyPlaceholder:{id:`hARtyn`,defaultMessage:`Paste the private key generated for your GitHub App`},githubAppPrivateKeyDescription:{id:`fFvuel`,defaultMessage:`Used to mint short-lived installation tokens for repository operations.`},oauthClientScopesLabel:{id:`miFMbN`,defaultMessage:`Scopes (optional)`},oauthClientScopesPlaceholder:{id:`lr0K4D`,defaultMessage:`One value per line or comma-separated`},oauthClientScopesDescription:{id:`LttEvR`,defaultMessage:`Leave this as-is to use the template defaults, or override with your own requested scopes.`},gitlabOauthClientScopesLabel:{id:`A6nUJ+`,defaultMessage:`Scopes`},gitlabOauthClientScopesDescription:{id:`chatgpt.connector_settings.service_template.gitlab_oauth.scopes.help_text`,defaultMessage:`Enable these scopes for your GitLab OAuth application.`},oauthCallbackUrlLabel:{id:`acyK0J`,defaultMessage:`Callback URL`},gitlabOauthRedirectUriLabel:{id:`chatgpt.connector_settings.service_template.gitlab_oauth.redirect_uri.label`,defaultMessage:`Redirect URI`},callbackUrlUnavailable:{id:`/A0zHY`,defaultMessage:`Callback URL unavailable. Refresh and try again.`},gitlabRedirectUriUnavailable:{id:`chatgpt.connector_settings.service_template.gitlab_oauth.redirect_uri.error.unavailable`,defaultMessage:`Redirect URI unavailable. Refresh and try again.`},setupUrlLoading:{id:`mgZGUY`,defaultMessage:`Loading setup URL...`},setupUrlUnavailable:{id:`blpCdz`,defaultMessage:`Setup URL unavailable`},setupUrlCopied:{id:`nKUV24`,defaultMessage:`Copied`},setupUrlCopyHint:{id:`uDO8rc`,defaultMessage:`Copy`},setupUrlCopyUnavailable:{id:`0HX4iy`,defaultMessage:`Unavailable`},copyOauthCallbackUrlAriaLabel:{id:`ML0Qz2`,defaultMessage:`Copy OAuth callback URL`},copyGitlabOauthRedirectUriAriaLabel:{id:`chatgpt.connector_settings.service_template.gitlab_oauth.redirect_uri.copy_button.aria_label`,defaultMessage:`Copy OAuth redirect URI`},githubWebhookSectionTitle:{id:`chatgpt.connector_settings.service_template.github_webhook.section.title`,defaultMessage:`Webhook`},githubWebhookSetupDescription:{id:`chatgpt.connector_settings.service_template.github_webhook.setup.description`,defaultMessage:`Copy this generated secret into your GitHub App webhook settings. After creation, copy the webhook URL into the same settings.`},webhookUrlLabel:{id:`chatgpt.connector_settings.service_template.github_webhook.url.label`,defaultMessage:`Webhook URL`},githubWebhookReadyTitle:{id:`chatgpt.connector_settings.service_template.github_webhook.ready.title`,defaultMessage:`Webhook settings`},githubWebhookReadyBody:{id:`chatgpt.connector_settings.service_template.github_webhook.ready.body`,defaultMessage:`Copy these values into your GitHub App webhook settings.`},githubWebhookUncertainTitle:{id:`YJXHtu`,defaultMessage:`Keep your GitHub webhook secret`},githubWebhookUncertainBody:{id:`dWx7rw`,defaultMessage:`The draft may have been created. Save this secret, then check your drafts before trying again. The webhook URL is unavailable until the draft is confirmed.`},githubWebhookSecretLabel:{id:`chatgpt.connector_settings.service_template.github_webhook.secret.label`,defaultMessage:`Webhook secret`},gitlabInstanceSectionTitle:{id:`chatgpt.connector_settings.service_template.gitlab_instance.section.title`,defaultMessage:`GitLab instance`},gitlabHostnameLabel:{id:`chatgpt.connector_settings.service_template.gitlab_instance.hostname.label`,defaultMessage:`GitLab hostname`},gitlabHostnamePlaceholder:{id:`chatgpt.connector_settings.service_template.gitlab_instance.hostname.placeholder`,defaultMessage:`gitlab.example.com`},gitlabHostnameDescription:{id:`chatgpt.connector_settings.service_template.gitlab_instance.hostname.description`,defaultMessage:`Enter the hostname for your self-managed or Dedicated GitLab instance. Do not use gitlab.com.`},githubWebhookSecretUnavailable:{id:`chatgpt.connector_settings.service_template.github_webhook.secret.unavailable`,defaultMessage:`Webhook secret unavailable. Refresh and try again.`},copyWebhookUrlAriaLabel:{id:`o1YLPD`,defaultMessage:`Copy webhook URL`},copyGithubWebhookSecretAriaLabel:{id:`chatgpt.connector_settings.service_template.github_webhook.secret.copy.aria_label`,defaultMessage:`Copy GitHub webhook secret`},requiredField:{id:`KIFAz+`,defaultMessage:`This field is required.`},success:{id:`o15jgZ`,defaultMessage:`Draft app created`},nativeCompletionUncertain:{id:`gp7EnO`,defaultMessage:`We couldn't confirm the draft's setup. Check your drafts before trying again.`},nativeCreationPending:{id:`zpL/4i`,defaultMessage:`Draft creation is still processing. Check your drafts after it finishes.`},nativeRetryAfterReviewCta:{id:`eYajt+`,defaultMessage:`I checked drafts and found no new app`},cancelCta:{id:`lYbIy2`,defaultMessage:`Cancel`},doneCta:{id:`hSoBau`,defaultMessage:`Done`},createCta:{id:`+0AYMn`,defaultMessage:`Create draft`}})}));export{R as a,Ye as i,z as n,Ke as o,Ct as r,B as t};
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as r,
+    Aot as i,
+    BU as a,
+    Bnt as o,
+    F7 as s,
+    Git as c,
+    HE as l,
+    Hnt as u,
+    I1 as d,
+    JT as f,
+    Knt as p,
+    M1 as m,
+    S1 as ee,
+    Sw as te,
+    Tat as ne,
+    Uit as re,
+    VE as ie,
+    f8 as ae,
+    j7 as oe,
+    jat as h,
+    jot as g,
+    qT as _,
+    ww as v,
+    y8 as y,
+    zE as b,
+    zU as x
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as S,
+    Ln as C,
+    Nn as w,
+    Rn as T,
+    Vn as E,
+    wn as se,
+    zn as ce
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    FQ as D,
+    Hst as le,
+    JPn as O,
+    LPn as ue,
+    Lrt as k,
+    MPn as A,
+    Mit as j,
+    Nit as de,
+    QQ as fe,
+    Rrt as M,
+    VQ as pe,
+    Vst as me,
+    XQ as he,
+    Yrt as ge,
+    ZQ as _e,
+    eit as ve,
+    iTn as ye,
+    iit as be,
+    jPn as xe,
+    nWn as Se,
+    rTn as N,
+    rWn as Ce
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    Cx as we,
+    Hm as Te,
+    Kv as Ee,
+    Ky as De,
+    Sx as Oe,
+    Um as ke,
+    qv as Ae,
+    qy as P
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+import {
+    Ay as je,
+    Cy as Me,
+    bu as Ne,
+    cu as Pe,
+    fu as Fe,
+    hu as Ie,
+    mu as Le,
+    pu as Re,
+    vu as ze,
+    yu as F
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+import {
+    S as Be,
+    x as Ve
+} from "./82782bc9-cz4jkhg31tycbqqf.js";
+import {
+    c as I,
+    s as He
+} from "./122af5aa-ltlkro6lgoihtipj.js";
+import {
+    a as Ue,
+    r as We,
+    t as Ge
+} from "./f688908b-ihudewhj6zxw9jmy.js";
+
+function Ke({
+    connector: e,
+    setup: t
+}) {
+    return e.status === `ONLY_ME` && e.template_id === t.template.template_id && e.owners.length > 0 && e.owners.every(e => e.type === `USER`) && e.owners.some(e => e.id === t.workspaceUserId)
+}
+
+function qe(e, t, n) {
+    let r = e.primaryConnector;
+    return n != null && r.id === t.id && r.status === `ONLY_ME` && r.connector_type === `SERVICE` && r.template_id != null && r.owners.length > 0 && r.owners.every(e => e.type === `USER`) && r.owners.some(e => e.id === n)
+}
+
+function L({
+    plugin: e,
+    workspaceId: t,
+    workspaceUserId: n
+}) {
+    let r = ee();
+    return e?.scope === `USER` && n != null && e.creator_account_user_id === n && r?.getWorkspaceId() === t && r.normalizedAccountUserId === n
+}
+
+function Je({
+    plugin: e,
+    directoryApp: t,
+    appIds: n,
+    workspaceId: r,
+    workspaceUserId: i,
+    isPending: a
+}) {
+    return e == null || !I(e) || e.scope !== `USER` || i == null || e.creator_account_user_id !== i || n.length !== 1 || n[0] !== t.id || t.status !== `ONLY_ME` || t.connector_type !== `SERVICE` || t.template_id == null || a ? null : {
+        appId: t.id,
+        directoryApp: t,
+        mode: `publish`,
+        skipImpact: !0,
+        workspaceId: r,
+        isAppEligible: e => qe(e, t, i)
+    }
+}
+
+function Ye({
+    plugin: e,
+    directoryApp: t,
+    appIds: n,
+    workspaceId: r,
+    workspaceUserId: i,
+    pendingAppId: a,
+    appConfiguration: o,
+    onPublish: s
+}) {
+    let c = () => t == null ? null : Je({
+        plugin: e,
+        directoryApp: t,
+        appIds: n,
+        workspaceId: r,
+        workspaceUserId: i,
+        isPending: a != null || o != null
+    });
+    return {
+        onPublishDraft: c() == null ? void 0 : () => {
+            let t = c();
+            t != null && L({
+                plugin: e,
+                workspaceId: r,
+                workspaceUserId: i
+            }) && s(t)
+        },
+        isCurrentActor: o?.isAppEligible == null ? void 0 : () => L({
+            plugin: e,
+            workspaceId: r,
+            workspaceUserId: i
+        })
+    }
+}
+var R = e((() => {
+        He(), d()
+    })),
+    z = t({
+        CreateServiceConnectorFromTemplateModal: () => B
+    });
+
+function B(e) {
+    "use forget";
+    let t = (0, nt.c)(198),
+        {
+            template: n,
+            onClose: s,
+            onCreateAttempt: c,
+            personalTemplateSetup: l,
+            onCreated: d,
+            onWorkspaceDraftCreated: f,
+            onNativeDraftHandoffIncomplete: p
+        } = e,
+        m = ce(),
+        ee = pe(),
+        re = je(),
+        ie = n.can_create === !1,
+        ae;
+    t[0] === n.supported_auth_types ? ae = t[1] : (ae = n.supported_auth_types?.some(tt) ?? !1, t[0] = n.supported_auth_types, t[1] = ae);
+    let h = ae,
+        g;
+    t[2] === n.supported_auth_types ? g = t[3] : (g = n.supported_auth_types?.some(et) ?? !1, t[2] = n.supported_auth_types, t[3] = g);
+    let v = g,
+        y = n.template_id === rt,
+        b = n.template_id === it,
+        x;
+    t[4] !== b || t[5] !== n.template_id ? (x = b ? `https://help.openai.com/articles/20001487` : Fe(n.template_id), t[4] = b, t[5] = n.template_id, t[6] = x) : x = t[6];
+    let S = x,
+        C;
+    t[7] === n.link_params_schema ? C = t[8] : (C = de(n.link_params_schema), t[7] = n.link_params_schema, t[8] = C);
+    let T = C,
+        [E, se] = (0, V.useState)(!1),
+        D = (0, V.useRef)(!0),
+        le = (0, V.useRef)(!1),
+        O = (0, V.useRef)(null),
+        ue;
+    t[9] !== l || t[10] !== n.template_id ? (ue = l ? void 0 : pt(n.template_id), t[9] = l, t[10] = n.template_id, t[11] = ue) : ue = t[11];
+    let A = ue,
+        M;
+    t[12] === A ? M = t[13] : (M = () => mt(A), t[12] = A, t[13] = M);
+    let ge = (0, V.useSyncExternalStore)(dt, M, $e),
+        _e = ge != null,
+        ye = (0, V.useRef)(!1),
+        xe;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (xe = {}, t[14] = xe) : xe = t[14];
+    let [N, Ce] = (0, V.useState)(xe), we;
+    t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (we = {}, t[15] = we) : we = t[15];
+    let [Te, Ae] = (0, V.useState)(we), [P, Me] = (0, V.useState)(null), [Ie, Re] = (0, V.useState)(h), [F, Ve] = (0, V.useState)(!1), [I, He] = (0, V.useState)(null), [We, qe] = (0, V.useState)(null), [L, Je] = (0, V.useState)(null), Ye = L?.connectorId, R;
+    t[16] !== y || t[17] !== n.description || t[18] !== n.name || t[19] !== n.oauth_client_info?.default_scopes ? (R = () => ({
+        name: n.name,
+        description: n.description ?? ``,
+        oauthClientId: ``,
+        oauthClientSecret: ``,
+        githubAppPrivateKey: ``,
+        oauthClientScopes: (n.oauth_client_info?.default_scopes ?? []).join(`
+`),
+        gitlabHostname: ``,
+        webhookSecret: y ? bt() : ``
+    }), t[16] = y, t[17] = n.description, t[18] = n.name, t[19] = n.oauth_client_info?.default_scopes, t[20] = R) : R = t[20];
+    let [z, B] = (0, V.useState)(R), lt;
+    t[21] !== z.oauthClientId || t[22] !== z.oauthClientSecret ? (lt = z.oauthClientId.trim().length > 0 || z.oauthClientSecret.trim().length > 0, t[21] = z.oauthClientId, t[22] = z.oauthClientSecret, t[23] = lt) : lt = t[23];
+    let U = v || lt,
+        ut;
+    t[24] !== T || t[25] !== Te ? (ut = j(T, Te), t[24] = T, t[25] = Te, t[26] = ut) : ut = t[26];
+    let W = ut,
+        G = P ? Le(P) ?? `` : ``,
+        K = Ye ? yt(Ye) : ``,
+        J, Ct;
+    t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (J = () => (D.current = !0, () => {
+        D.current = !1;
+        let e = O.current;
+        e && !e.dispatched && gt(e.key, e.reservation), O.current = null
+    }), Ct = [], t[27] = J, t[28] = Ct) : (J = t[27], Ct = t[28]), (0, V.useEffect)(J, Ct);
+    let wt, Tt;
+    t[29] === h ? (wt = t[30], Tt = t[31]) : (wt = () => {
+        if (!h) {
+            Me(null), Re(!1);
+            return
+        }
+        let e = !1;
+        return Re(!0), Me(null), xt().then(t => {
+            e || Me(t)
+        }).catch(() => {
+            e || Me(null)
+        }).finally(() => {
+            e || Re(!1)
+        }), () => {
+            e = !0
+        }
+    }, Tt = [h], t[29] = h, t[30] = wt, t[31] = Tt), (0, V.useEffect)(wt, Tt);
+    let Et, Dt;
+    t[32] === I ? (Et = t[33], Dt = t[34]) : (Et = () => {
+        if (I == null) return;
+        let e = window.setTimeout(() => {
+            He(null)
+        }, 2e3);
+        return () => window.clearTimeout(e)
+    }, Dt = [I], t[32] = I, t[33] = Et, t[34] = Dt), (0, V.useEffect)(Et, Dt);
+    let Ot;
+    t[35] !== s || t[36] !== d || t[37] !== p || t[38] !== f || t[39] !== l ? (Ot = e => {
+        let t = e.nativeDraftFallback,
+            n = r(),
+            a = t && n?.getWorkspaceId() === t.workspaceId && n.normalizedAccountUserId === t.accountUserId && n.authUserId === t.actorUserId && i()?.account?.id === t.workspaceId && i()?.user?.id === t.actorUserId ? t.connectorId : void 0;
+        t && !a ? s() : e.nativeDraftHandoffIncomplete ? p ? p(a) : s() : l && d && e.connector ? d(e.connector) : e.pluginId && f && e.connector ? f({
+            connector: e.connector,
+            pluginId: e.pluginId,
+            connectorId: e.connectorId
+        }) : s(e.connectorId)
+    }, t[35] = s, t[36] = d, t[37] = p, t[38] = f, t[39] = l, t[40] = Ot) : Ot = t[40];
+    let X = Ot,
+        kt;
+    t[41] !== L || t[42] !== X || t[43] !== E || t[44] !== s ? (kt = () => {
+        E || (L ? X(L) : s())
+    }, t[41] = L, t[42] = X, t[43] = E, t[44] = s, t[45] = kt) : kt = t[45];
+    let At = kt,
+        jt;
+    t[46] === Symbol.for(`react.memo_cache_sentinel`) ? (jt = e => {
+        Ce(t => {
+            if (!t[e]) return t;
+            let n = {
+                ...t
+            };
+            return delete n[e], n
+        })
+    }, t[46] = jt) : jt = t[46];
+    let Z = jt,
+        Mt = (e, t) => {
+            Ae(n => ({
+                ...n,
+                [e]: t
+            })), l && (e === `hostname` || e === `workspace_host`) && !ye.current && B(e => ({
+                ...e,
+                name: he(n.name, t)
+            })), Z(e)
+        },
+        Nt;
+    t[47] === Z ? Nt = t[48] : (Nt = async e => {
+        try {
+            let t = await vt(e);
+            B(e => ({
+                ...e,
+                githubAppPrivateKey: t
+            })), qe(e.name), Z(`githubAppPrivateKey`)
+        } catch {
+            a.danger(Y.githubAppPrivateKeyReadError)
+        }
+    }, t[47] = Z, t[48] = Nt);
+    let Pt = Nt,
+        Ft;
+    t[49] === Pt ? Ft = t[50] : (Ft = e => {
+        e.length > 0 && Pt(e[0])
+    }, t[49] = Pt, t[50] = Ft);
+    let It;
+    t[51] !== E || t[52] !== Ft ? (It = {
+        accept: ct,
+        disabled: E,
+        multiple: !1,
+        noClick: !0,
+        noKeyboard: !0,
+        onDropAccepted: Ft,
+        onDropRejected: Qe
+    }, t[51] = E, t[52] = Ft, t[53] = It) : It = t[53];
+    let {
+        getInputProps: Lt,
+        getRootProps: Rt,
+        isDragActive: zt,
+        open: Bt
+    } = Be(It), Vt;
+    t[54] === Symbol.for(`react.memo_cache_sentinel`) ? (Vt = async (e, t) => {
+        if (t) try {
+            await navigator.clipboard.writeText(t), He(e)
+        } catch {
+            He(null)
+        }
+    }, t[54] = Vt) : Vt = t[54];
+    let Ht = Vt,
+        Ut;
+    t[55] !== P || t[56] !== W || t[57] !== X || t[58] !== m || t[59] !== re || t[60] !== b || t[61] !== y || t[62] !== T || t[63] !== ee || t[64] !== s || t[65] !== c || t[66] !== f || t[67] !== l || t[68] !== U || t[69] !== n || t[70] !== ie || t[71] !== z.description || t[72] !== z.githubAppPrivateKey || t[73] !== z.gitlabHostname || t[74] !== z.name || t[75] !== z.oauthClientId || t[76] !== z.oauthClientScopes || t[77] !== z.oauthClientSecret || t[78] !== z.webhookSecret ? (Ut = async e => {
+        if (e?.preventDefault(), ie || le.current) return;
+        let t = l ? void 0 : pt(n.template_id),
+            d = mt(t);
+        if (d) {
+            a.danger(m.formatMessage(d === `pending` ? Y.nativeCreationPending : Y.nativeCompletionUncertain));
+            return
+        }
+        let p = {},
+            te = z.name.trim(),
+            ae = z.description.trim(),
+            h = z.oauthClientId.trim(),
+            g = z.oauthClientSecret.trim(),
+            _ = z.githubAppPrivateKey.trim(),
+            v = z.gitlabHostname.trim(),
+            x = y && U,
+            S = z.webhookSecret.trim(),
+            C = y;
+        te || (p.name = m.formatMessage(Y.requiredField)), U && (h || (p.oauthClientId = m.formatMessage(Y.requiredField)), g || (p.oauthClientSecret = m.formatMessage(Y.requiredField)), x && !_ && (p.githubAppPrivateKey = m.formatMessage(Y.requiredField)), P || (p.callbackId = m.formatMessage(b ? Y.gitlabRedirectUriUnavailable : Y.callbackUrlUnavailable))), b && !v && (p.gitlabHostname = m.formatMessage(Y.requiredField)), C && (S || (p.webhookSecret = m.formatMessage(Y.requiredField)));
+        let {
+            sanitizedLinkParams: w,
+            errors: E,
+            hasPatternErrors: ce
+        } = be(T, W, m);
+        if (Object.assign(p, E), Object.keys(p).length > 0) {
+            Ce(p), Object.keys(E).length > 0 && a.danger(m.formatMessage(ce ? ve.invalidFieldsToast : ve.requiredFieldsToast));
+            return
+        }
+        se(!0), le.current = !0;
+        let ue = {
+                name: te,
+                description: ae,
+                logo_url: n.logo_url,
+                logo_url_dark: n.logo_url_dark,
+                link_params: w,
+                create_as_draft: !0
+            },
+            k = {};
+        C && (k[ot] = S), x && (k[at] = _), b && (k[st] = v);
+        let A = {
+                ...ue,
+                ...Object.keys(k).length > 0 ? {
+                    additional_config: k
+                } : {},
+                ...U ? {
+                    oauth_client_id: h,
+                    oauth_client_secret: g,
+                    oauth_client_scopes: _t(z.oauthClientScopes),
+                    callback_id: P ?? void 0
+                } : {}
+            },
+            j = l ? void 0 : r()?.getWorkspaceId(),
+            de = !1,
+            M = !1,
+            pe = !1,
+            me;
+        try {
+            let e;
+            if (l) {
+                c?.();
+                let t = await fe(l, A);
+                e = {
+                    connectorId: t.connector.id,
+                    connector: t.connector,
+                    pluginId: t.plugin_id?.trim() || void 0
+                }
+            } else if (Ge({
+                    nativeEnabled: !0,
+                    connectorType: n.connector_type,
+                    workspaceId: j,
+                    requestBody: A
+                }) && u().getContext().user.customIDs?.workspace_id === j && u().getContext().user.userID === i()?.user?.id && t != null && o(ft)) {
+                let r = Symbol(`service-template-prewrite`);
+                me = r, O.current = {
+                    key: t,
+                    reservation: r,
+                    dispatched: !1
+                }, ht(t, `pending`, r), de = !0;
+                let i = await Ue({
+                    workspaceId: j ?? ``,
+                    templateId: n.template_id,
+                    requestBody: A,
+                    onBeforeWrite: () => {
+                        if (!D.current || O.current?.reservation !== r || q.get(window)?.get(t) !== r || mt(t) !== `pending`) throw Error(`The draft creation context has changed.`);
+                        O.current.dispatched = !0, M = !0, c?.()
+                    }
+                });
+                e = {
+                    connectorId: i.connector_id,
+                    connector: i.connector,
+                    pluginId: i.plugin_id?.trim() || void 0
+                }
+            } else {
+                c?.();
+                let t = await oe.safePost(`/aip/connectors/templates/{template_id}/instantiate`, {
+                    parameters: {
+                        path: {
+                            template_id: n.template_id
+                        }
+                    },
+                    requestBody: A
+                });
+                e = {
+                    connectorId: t.connector.id,
+                    connector: t.connector,
+                    pluginId: t.plugin_id?.trim() || void 0
+                }
+            }
+            let s = r(),
+                d = M && e.connector != null && e.connectorId.trim() !== `` && e.connector.id === e.connectorId && e.connector.connector_type === `SERVICE` && !!s?.normalizedAccountUserId && !!s.authUserId && !!i()?.user?.id && s.getWorkspaceId() === j && s.authUserId === i()?.user?.id && i()?.account?.id === j && Ke({
+                    connector: e.connector,
+                    setup: {
+                        template: n,
+                        workspaceUserId: s.normalizedAccountUserId
+                    }
+                }),
+                p = M && f != null && (!e.pluginId || !d);
+            if (e.nativeDraftHandoffIncomplete = p, e.nativeDraftFallback = d && s?.normalizedAccountUserId && s.authUserId && j ? {
+                    connectorId: e.connectorId,
+                    workspaceId: j,
+                    actorUserId: s.authUserId,
+                    accountUserId: s.normalizedAccountUserId
+                } : void 0, !l) {
+                if (await Promise.all([re(), St.refetch()]), ee(), M && !D.current) {
+                    ht(t, `uncertain`);
+                    return
+                }
+                p ? (ht(t, `uncertain`), a.danger(m.formatMessage(Y.nativeCompletionUncertain))) : (M && gt(t), a.success(m.formatMessage(Y.success)))
+            }
+            C ? Je(e) : X(e)
+        } catch (e) {
+            let n = e,
+                r = M && n instanceof ne && !n.isTransportError && (n.status === 401 || n.status === 403 || Ne(n));
+            if (de && !M ? gt(t, me) : r ? gt(t) : M && ht(t, `uncertain`), de && !D.current) return;
+            a.danger(M && !r ? m.formatMessage(Y.nativeCompletionUncertain) : ze(n, m), {
+                toastId: `create_service_template_draft_error`,
+                analyticsToastId: `create_service_template_draft_error`
+            }), M && !r && (pe = !0, C ? (Je({
+                connectorId: ``,
+                nativeDraftHandoffIncomplete: !0
+            }), se(!1)) : s())
+        }
+        pe || (le.current = !1, se(!1))
+    }, t[55] = P, t[56] = W, t[57] = X, t[58] = m, t[59] = re, t[60] = b, t[61] = y, t[62] = T, t[63] = ee, t[64] = s, t[65] = c, t[66] = f, t[67] = l, t[68] = U, t[69] = n, t[70] = ie, t[71] = z.description, t[72] = z.githubAppPrivateKey, t[73] = z.gitlabHostname, t[74] = z.name, t[75] = z.oauthClientId, t[76] = z.oauthClientScopes, t[77] = z.oauthClientSecret, t[78] = z.webhookSecret, t[79] = Ut) : Ut = t[79];
+    let Wt = Ut,
+        Gt;
+    t[80] !== I || t[81] !== m ? (Gt = e => {
+        let {
+            setupValueKey: t,
+            label: n,
+            value: r,
+            isLoading: i,
+            loadingLabel: a,
+            unavailableLabel: o,
+            ariaLabel: s
+        } = e, c = I === t, l = !!r && !i, u = i ? a : r || o;
+        return (0, H.jsxs)(`div`, {
+            className: `flex flex-col gap-1`,
+            children: [(0, H.jsxs)(`div`, {
+                className: `flex items-center justify-between gap-3`,
+                children: [(0, H.jsx)(`span`, {
+                    className: `text-token-text-primary text-xs font-semibold`,
+                    children: n
+                }), (0, H.jsx)(`span`, {
+                    className: `text-token-text-tertiary text-xs`,
+                    children: (0, H.jsx)(w, {
+                        ...c ? Y.setupUrlCopied : l ? Y.setupUrlCopyHint : Y.setupUrlCopyUnavailable
+                    })
+                })]
+            }), (0, H.jsxs)(`button`, {
+                type: `button`,
+                onClick: () => void Ht(t, r),
+                disabled: !l,
+                className: `border-token-border-light bg-token-bg-primary flex w-full items-center justify-between gap-3 rounded-md border px-3 py-2 text-start text-xs shadow-sm transition-colors ${l?`hover:bg-token-main-surface-secondary`:`cursor-default opacity-70`}`,
+                "aria-label": s,
+                title: l ? m.formatMessage(Y.setupUrlCopyHint) : void 0,
+                children: [(0, H.jsx)(`span`, {
+                    className: `text-token-text-secondary font-mono break-all`,
+                    children: u
+                }), (0, H.jsx)(`span`, {
+                    className: `border-token-border-light bg-token-bg-secondary text-token-text-secondary flex h-8 w-8 shrink-0 items-center justify-center rounded-md border`,
+                    children: c ? (0, H.jsx)(Oe, {
+                        className: `icon-sm`
+                    }) : (0, H.jsx)(De, {
+                        className: `icon-sm`
+                    })
+                })]
+            })]
+        })
+    }, t[80] = I, t[81] = m, t[82] = Gt) : Gt = t[82];
+    let Q = Gt;
+    if (L) {
+        let e = !Ye,
+            n = e ? Y.githubWebhookUncertainTitle : Y.githubWebhookReadyTitle,
+            r;
+        t[83] === n ? r = t[84] : (r = (0, H.jsx)(w, {
+            ...n
+        }), t[83] = n, t[84] = r);
+        let i = e ? Y.githubWebhookUncertainBody : Y.githubWebhookReadyBody,
+            a;
+        t[85] === i ? a = t[86] : (a = (0, H.jsx)(`p`, {
+            className: `text-token-text-secondary text-sm`,
+            children: (0, H.jsx)(w, {
+                ...i
+            })
+        }), t[85] = i, t[86] = a);
+        let o;
+        t[87] !== m || t[88] !== y || t[89] !== Q || t[90] !== z.webhookSecret ? (o = y ? Q({
+            setupValueKey: `webhookSecret`,
+            label: (0, H.jsx)(w, {
+                ...Y.githubWebhookSecretLabel
+            }),
+            value: z.webhookSecret,
+            isLoading: !1,
+            loadingLabel: m.formatMessage(Y.setupUrlLoading),
+            unavailableLabel: m.formatMessage(Y.githubWebhookSecretUnavailable),
+            ariaLabel: m.formatMessage(Y.copyGithubWebhookSecretAriaLabel)
+        }) : null, t[87] = m, t[88] = y, t[89] = Q, t[90] = z.webhookSecret, t[91] = o) : o = t[91];
+        let s;
+        t[92] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, H.jsx)(w, {
+            ...Y.webhookUrlLabel
+        }), t[92] = s) : s = t[92];
+        let c;
+        t[93] !== L || t[94] !== X ? (c = () => X(L), t[93] = L, t[94] = X, t[95] = c) : c = t[95];
+        let l;
+        t[96] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, H.jsx)(w, {
+            ...Y.doneCta
+        }), t[96] = l) : l = t[96];
+        let u;
+        return t[97] === c ? u = t[98] : (u = (0, H.jsx)(`div`, {
+            className: `flex justify-end`,
+            children: (0, H.jsx)(_, {
+                color: `primary`,
+                onClick: c,
+                size: `large`,
+                className: `w-full md:w-auto`,
+                type: `button`,
+                children: l
+            })
+        }), t[97] = c, t[98] = u), (0, H.jsx)(te, {
+            title: r,
+            isOpen: !0,
+            onClose: At,
+            position: `center`,
+            showCloseButton: !0,
+            size: `custom`,
+            className: `max-h-[90vh] w-full md:max-w-[448px]`,
+            testId: `modal-create-service-connector-webhook-url`,
+            children: (0, H.jsxs)(`div`, {
+                className: `flex flex-col gap-4`,
+                children: [a, o, Q({
+                    setupValueKey: `webhook`,
+                    label: s,
+                    value: K,
+                    isLoading: !1,
+                    loadingLabel: m.formatMessage(Y.setupUrlLoading),
+                    unavailableLabel: m.formatMessage(Y.setupUrlUnavailable),
+                    ariaLabel: m.formatMessage(Y.copyWebhookUrlAriaLabel)
+                }), u]
+            })
+        })
+    }
+    let Kt = te,
+        qt = l ? Pe.connectTemplateAppModalTitle : Pe.createTemplateAppModalTitle,
+        Jt;
+    t[99] === n.name ? Jt = t[100] : (Jt = {
+        templateName: n.name
+    }, t[99] = n.name, t[100] = Jt);
+    let Yt;
+    t[101] !== qt || t[102] !== Jt ? (Yt = (0, H.jsx)(`span`, {
+        className: `flex items-center gap-1`,
+        children: (0, H.jsx)(w, {
+            ...qt,
+            values: Jt
+        })
+    }), t[101] = qt, t[102] = Jt, t[103] = Yt) : Yt = t[103];
+    let Xt = !E,
+        Zt;
+    t[104] === E ? Zt = t[105] : (Zt = e => {
+        E && e.preventDefault()
+    }, t[104] = E, t[105] = Zt);
+    let Qt;
+    t[106] !== l || t[107] !== v || t[108] !== n.name ? (Qt = l ? (0, H.jsx)(w, {
+        id: `chatgpt.plugins.template_setup.description`,
+        defaultMessage: `Enter your server settings, then continue to sign in.`
+    }) : (0, H.jsx)(w, {
+        ...v ? Y.bodyWithOauth : Y.bodyWithoutOauth,
+        values: {
+            templateName: n.name
+        }
+    }), t[106] = l, t[107] = v, t[108] = n.name, t[109] = Qt) : Qt = t[109];
+    let $t;
+    t[110] === S ? $t = t[111] : ($t = S ? (0, H.jsxs)(H.Fragment, {
+        children: [` `, (0, H.jsxs)(Se, {
+            href: S,
+            openNewTab: !0,
+            className: `text-token-text-tertiary inline-flex items-center gap-1 text-sm no-underline! hover:underline!`,
+            children: [(0, H.jsx)(w, {
+                ...Y.setupGuideLink
+            }), (0, H.jsx)(Ee, {
+                className: `h-3 w-3`
+            })]
+        })]
+    }) : null, t[110] = S, t[111] = $t);
+    let en;
+    t[112] !== Qt || t[113] !== $t ? (en = (0, H.jsxs)(`p`, {
+        className: `text-token-text-secondary text-sm`,
+        children: [Qt, $t]
+    }), t[112] = Qt, t[113] = $t, t[114] = en) : en = t[114];
+    let tn;
+    t[115] !== _e || t[116] !== ge || t[117] !== n.template_id ? (tn = _e ? (0, H.jsxs)(`div`, {
+        className: `flex flex-col items-start gap-2`,
+        children: [(0, H.jsx)(`p`, {
+            className: `text-status-critical text-sm`,
+            role: `alert`,
+            children: (0, H.jsx)(w, {
+                ...ge === `pending` ? Y.nativeCreationPending : Y.nativeCompletionUncertain
+            })
+        }), ge === `uncertain` ? (0, H.jsx)(_, {
+            type: `button`,
+            color: `secondary`,
+            size: `small`,
+            onClick: () => {
+                let e = pt(n.template_id);
+                mt(e) === `uncertain` && gt(e)
+            },
+            children: (0, H.jsx)(w, {
+                ...Y.nativeRetryAfterReviewCta
+            })
+        }) : null]
+    }) : null, t[115] = _e, t[116] = ge, t[117] = n.template_id, t[118] = tn) : tn = t[118];
+    let nn;
+    t[119] !== en || t[120] !== tn ? (nn = (0, H.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [en, tn]
+    }), t[119] = en, t[120] = tn, t[121] = nn) : nn = t[121];
+    let rn;
+    t[122] === Symbol.for(`react.memo_cache_sentinel`) ? (rn = (0, H.jsx)(`label`, {
+        htmlFor: `service-template-name`,
+        className: `mb-1 block text-sm font-medium`,
+        children: (0, H.jsx)(w, {
+            ...Y.nameLabel
+        })
+    }), t[122] = rn) : rn = t[122];
+    let an;
+    t[123] === m ? an = t[124] : (an = m.formatMessage(Y.nameLabel), t[123] = m, t[124] = an);
+    let on = l ? void 0 : `service-template-name-help`,
+        sn;
+    t[125] === Z ? sn = t[126] : (sn = e => {
+        ye.current = !0, B(t => ({
+            ...t,
+            name: e.target.value
+        })), Z(`name`)
+    }, t[125] = Z, t[126] = sn);
+    let cn;
+    t[127] !== N.name || t[128] !== E || t[129] !== an || t[130] !== on || t[131] !== sn || t[132] !== z.name ? (cn = (0, H.jsx)(k, {
+        name: `service-template-name`,
+        ariaLabel: an,
+        "aria-describedby": on,
+        value: z.name,
+        onChange: sn,
+        disabled: E,
+        error: N.name,
+        inputClassName: `bg-token-bg-primary!`
+    }), t[127] = N.name, t[128] = E, t[129] = an, t[130] = on, t[131] = sn, t[132] = z.name, t[133] = cn) : cn = t[133];
+    let $;
+    t[134] === l ? $ = t[135] : ($ = l ? null : (0, H.jsx)(`p`, {
+        id: `service-template-name-help`,
+        className: `text-token-text-tertiary mt-1 text-xs`,
+        children: (0, H.jsx)(w, {
+            ...Y.nameDescription
+        })
+    }), t[134] = l, t[135] = $);
+    let ln;
+    t[136] !== cn || t[137] !== $ ? (ln = (0, H.jsxs)(`div`, {
+        children: [rn, cn, $]
+    }), t[136] = cn, t[137] = $, t[138] = ln) : ln = t[138];
+    let un;
+    t[139] !== m || t[140] !== E || t[141] !== l || t[142] !== z.description ? (un = l ? null : (0, H.jsxs)(`div`, {
+        children: [(0, H.jsx)(`label`, {
+            htmlFor: `service-template-description`,
+            className: `mb-1 block text-sm font-medium`,
+            children: (0, H.jsx)(w, {
+                ...Y.descriptionLabel
+            })
+        }), (0, H.jsx)(me, {
+            name: `service-template-description`,
+            ariaLabel: m.formatMessage(Y.descriptionLabel),
+            "aria-describedby": `service-template-description-help`,
+            value: z.description,
+            onChange: e => B(t => ({
+                ...t,
+                description: e.target.value
+            })),
+            disabled: E,
+            inputClassName: `bg-token-bg-primary!`
+        }), (0, H.jsx)(`p`, {
+            id: `service-template-description-help`,
+            className: `text-token-text-tertiary mt-1 text-xs`,
+            children: (0, H.jsx)(w, {
+                ...Y.descriptionDescription
+            })
+        })]
+    }), t[139] = m, t[140] = E, t[141] = l, t[142] = z.description, t[143] = un) : un = t[143];
+    let dn;
+    t[144] !== ln || t[145] !== un ? (dn = (0, H.jsxs)(`div`, {
+        className: `flex flex-col gap-4`,
+        children: [ln, un]
+    }), t[144] = ln, t[145] = un, t[146] = dn) : dn = t[146];
+    let fn = T.length > 0 ? (0, H.jsxs)(`div`, {
+            className: `flex flex-col gap-4`,
+            children: [(0, H.jsxs)(`div`, {
+                className: `flex flex-col gap-1`,
+                children: [(0, H.jsx)(`h3`, {
+                    className: `text-sm font-semibold`,
+                    children: (0, H.jsx)(w, {
+                        ...ve.sectionTitle
+                    })
+                }), (0, H.jsx)(`p`, {
+                    className: `text-token-text-secondary text-xs`,
+                    children: (0, H.jsx)(w, {
+                        ...ve.sectionDescription
+                    })
+                })]
+            }), T.map(e => {
+                let t = e.required ? m.formatMessage(ve.fieldLabelRequired, {
+                        label: e.title
+                    }) : e.title,
+                    n = N[e.name],
+                    r = W[e.name] ?? ``;
+                return e.enumValues && e.enumValues.length > 0 ? (0, H.jsxs)(`div`, {
+                    className: `flex flex-col gap-1`,
+                    children: [(0, H.jsx)(`label`, {
+                        htmlFor: `service-template-link-param-${e.name}`,
+                        className: `text-sm font-medium`,
+                        children: t
+                    }), (0, H.jsx)(`select`, {
+                        id: `service-template-link-param-${e.name}`,
+                        className: `border-token-border-light bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:ring-1 focus:outline-none`,
+                        value: r,
+                        onChange: t => Mt(e.name, t.target.value),
+                        disabled: E,
+                        children: e.enumValues.map(Ze)
+                    }), e.description ? (0, H.jsx)(`p`, {
+                        className: `text-token-text-tertiary text-xs`,
+                        children: e.description
+                    }) : null, n ? (0, H.jsx)(`p`, {
+                        className: `text-status-critical text-xs`,
+                        children: n
+                    }) : null]
+                }, e.name) : (0, H.jsxs)(`div`, {
+                    className: `flex flex-col gap-1`,
+                    children: [(0, H.jsx)(`label`, {
+                        htmlFor: `service-template-link-param-${e.name}`,
+                        className: `mb-1 block text-sm font-medium`,
+                        children: t
+                    }), (0, H.jsx)(k, {
+                        name: `service-template-link-param-${e.name}`,
+                        ariaLabel: t,
+                        value: r,
+                        onChange: t => Mt(e.name, t.target.value),
+                        disabled: E,
+                        placeholder: m.formatMessage(ve.fieldPlaceholder, {
+                            label: e.example ?? e.title
+                        }),
+                        error: n,
+                        inputClassName: `bg-token-bg-primary!`
+                    }), e.description ? (0, H.jsx)(`p`, {
+                        className: `text-token-text-tertiary text-xs`,
+                        children: e.description
+                    }) : null]
+                }, e.name)
+            })]
+        }) : null,
+        pn;
+    t[147] !== N.gitlabHostname || t[148] !== m || t[149] !== b || t[150] !== E || t[151] !== Z || t[152] !== z.gitlabHostname ? (pn = b ? (0, H.jsxs)(`div`, {
+        className: `flex flex-col gap-4`,
+        children: [(0, H.jsxs)(`div`, {
+            className: `flex flex-col gap-1`,
+            children: [(0, H.jsx)(`h3`, {
+                className: `text-sm font-semibold`,
+                children: (0, H.jsx)(w, {
+                    ...Y.gitlabInstanceSectionTitle
+                })
+            }), (0, H.jsx)(`p`, {
+                className: `text-token-text-secondary text-xs`,
+                children: (0, H.jsx)(w, {
+                    ...Y.gitlabHostnameDescription
+                })
+            })]
+        }), (0, H.jsxs)(`div`, {
+            children: [(0, H.jsx)(`label`, {
+                htmlFor: `service-template-gitlab-hostname`,
+                className: `mb-1 block text-sm font-medium`,
+                children: (0, H.jsx)(w, {
+                    ...Y.gitlabHostnameLabel
+                })
+            }), (0, H.jsx)(k, {
+                name: `service-template-gitlab-hostname`,
+                ariaLabel: m.formatMessage(Y.gitlabHostnameLabel),
+                value: z.gitlabHostname,
+                onChange: e => {
+                    B(t => ({
+                        ...t,
+                        gitlabHostname: e.target.value
+                    })), Z(`gitlabHostname`)
+                },
+                disabled: E,
+                error: N.gitlabHostname,
+                placeholder: m.formatMessage(Y.gitlabHostnamePlaceholder),
+                inputClassName: `bg-token-bg-primary!`
+            })]
+        })]
+    }) : null, t[147] = N.gitlabHostname, t[148] = m, t[149] = b, t[150] = E, t[151] = Z, t[152] = z.gitlabHostname, t[153] = pn) : pn = t[153];
+    let mn;
+    t[154] !== E || t[155] !== v || t[156] !== F || t[157] !== h ? (mn = h && !v ? (0, H.jsx)(`div`, {
+        children: (0, H.jsx)(_, {
+            color: `secondary`,
+            size: `small`,
+            type: `button`,
+            "aria-expanded": F,
+            onClick: () => Ve(Xe),
+            disabled: E,
+            children: (0, H.jsx)(w, {
+                ...F ? Y.hideAdvancedSettings : Y.showAdvancedSettings
+            })
+        })
+    }) : null, t[154] = E, t[155] = v, t[156] = F, t[157] = h, t[158] = mn) : mn = t[158];
+    let hn = h && (v || F) ? (0, H.jsxs)(`div`, {
+            className: `flex flex-col gap-4`,
+            children: [(0, H.jsx)(`h3`, {
+                className: `text-sm font-semibold`,
+                children: (0, H.jsx)(w, {
+                    ...Y.oauthSectionTitle
+                })
+            }), Q({
+                setupValueKey: `callback`,
+                label: (0, H.jsx)(w, {
+                    ...b ? Y.gitlabOauthRedirectUriLabel : Y.oauthCallbackUrlLabel
+                }),
+                value: G,
+                isLoading: Ie,
+                loadingLabel: m.formatMessage(Y.setupUrlLoading),
+                unavailableLabel: m.formatMessage(Y.setupUrlUnavailable),
+                ariaLabel: m.formatMessage(b ? Y.copyGitlabOauthRedirectUriAriaLabel : Y.copyOauthCallbackUrlAriaLabel)
+            }), N.callbackId ? (0, H.jsx)(`p`, {
+                className: `text-status-critical text-xs`,
+                children: N.callbackId
+            }) : null, (0, H.jsxs)(`div`, {
+                children: [(0, H.jsx)(`label`, {
+                    htmlFor: `service-template-oauth-client-id`,
+                    className: `mb-1 block text-sm font-medium`,
+                    children: (0, H.jsx)(w, {
+                        ...Y.oauthClientIdLabel
+                    })
+                }), (0, H.jsx)(k, {
+                    name: `service-template-oauth-client-id`,
+                    ariaLabel: m.formatMessage(Y.oauthClientIdLabel),
+                    value: z.oauthClientId,
+                    onChange: e => {
+                        B(t => ({
+                            ...t,
+                            oauthClientId: e.target.value
+                        })), Z(`oauthClientId`)
+                    },
+                    disabled: E,
+                    error: N.oauthClientId,
+                    inputClassName: `bg-token-bg-primary!`
+                })]
+            }), (0, H.jsxs)(`div`, {
+                children: [(0, H.jsx)(`label`, {
+                    htmlFor: `service-template-oauth-client-secret`,
+                    className: `mb-1 block text-sm font-medium`,
+                    children: (0, H.jsx)(w, {
+                        ...Y.oauthClientSecretLabel
+                    })
+                }), (0, H.jsx)(k, {
+                    name: `service-template-oauth-client-secret`,
+                    ariaLabel: m.formatMessage(Y.oauthClientSecretLabel),
+                    type: `password`,
+                    value: z.oauthClientSecret,
+                    onChange: e => {
+                        B(t => ({
+                            ...t,
+                            oauthClientSecret: e.target.value
+                        })), Z(`oauthClientSecret`)
+                    },
+                    disabled: E,
+                    error: N.oauthClientSecret,
+                    inputClassName: `bg-token-bg-primary!`
+                })]
+            }), y ? (0, H.jsx)(`div`, {
+                className: `flex flex-col gap-4`,
+                children: (0, H.jsxs)(`div`, {
+                    className: `flex flex-col gap-1`,
+                    children: [(0, H.jsx)(`label`, {
+                        htmlFor: `service-template-github-app-private-key`,
+                        className: `text-sm font-medium`,
+                        children: (0, H.jsx)(w, {
+                            ...Y.githubAppPrivateKeyLabel
+                        })
+                    }), (0, H.jsxs)(`div`, {
+                        className: `flex flex-col gap-2`,
+                        children: [(0, H.jsxs)(`div`, {
+                            ...Rt({
+                                className: `border-token-border-light bg-token-bg-primary flex flex-col items-center gap-2 rounded-md border border-dashed px-4 py-5 text-center transition-colors ${zt?`border-token-text-primary bg-token-main-surface-secondary`:``}`
+                            }),
+                            children: [(0, H.jsx)(`input`, {
+                                ...Lt()
+                            }), (0, H.jsx)(ke, {
+                                className: `text-token-text-secondary h-5 w-5`
+                            }), (0, H.jsx)(`p`, {
+                                className: `text-token-text-secondary text-sm`,
+                                children: (0, H.jsx)(w, {
+                                    ...Y.githubAppPrivateKeyUploadLabel
+                                })
+                            }), (0, H.jsx)(_, {
+                                type: `button`,
+                                color: `secondary`,
+                                size: `small`,
+                                disabled: E,
+                                onClick: () => Bt(),
+                                children: (0, H.jsx)(w, {
+                                    ...Y.githubAppPrivateKeyUploadBrowseCta
+                                })
+                            })]
+                        }), We ? (0, H.jsx)(`p`, {
+                            className: `text-token-text-tertiary text-xs`,
+                            children: (0, H.jsx)(w, {
+                                ...Y.githubAppPrivateKeyFileLoaded,
+                                values: {
+                                    fileName: We
+                                }
+                            })
+                        }) : null]
+                    }), (0, H.jsx)(`textarea`, {
+                        id: `service-template-github-app-private-key`,
+                        className: `border-token-border-light bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-md border px-3 py-2 font-mono text-sm shadow-sm focus:ring-1 focus:outline-none`,
+                        value: z.githubAppPrivateKey,
+                        onChange: e => {
+                            B(t => ({
+                                ...t,
+                                githubAppPrivateKey: e.target.value
+                            })), qe(null), Z(`githubAppPrivateKey`)
+                        },
+                        rows: 5,
+                        disabled: E,
+                        placeholder: m.formatMessage(Y.githubAppPrivateKeyPlaceholder),
+                        "aria-label": m.formatMessage(Y.githubAppPrivateKeyLabel)
+                    }), (0, H.jsx)(`p`, {
+                        className: `text-token-text-tertiary text-xs`,
+                        children: (0, H.jsx)(w, {
+                            ...Y.githubAppPrivateKeyDescription
+                        })
+                    }), N.githubAppPrivateKey ? (0, H.jsx)(`p`, {
+                        className: `text-status-critical text-xs`,
+                        children: N.githubAppPrivateKey
+                    }) : null]
+                })
+            }) : null, (0, H.jsxs)(`div`, {
+                className: `flex flex-col gap-1`,
+                children: [(0, H.jsx)(`label`, {
+                    htmlFor: `service-template-oauth-client-scopes`,
+                    className: `text-sm font-medium`,
+                    children: (0, H.jsx)(w, {
+                        ...b ? Y.gitlabOauthClientScopesLabel : Y.oauthClientScopesLabel
+                    })
+                }), (0, H.jsx)(`textarea`, {
+                    id: `service-template-oauth-client-scopes`,
+                    className: `border-token-border-light bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-md border px-3 py-2 text-sm shadow-sm focus:ring-1 focus:outline-none`,
+                    value: z.oauthClientScopes,
+                    onChange: e => B(t => ({
+                        ...t,
+                        oauthClientScopes: e.target.value
+                    })),
+                    rows: 3,
+                    disabled: E,
+                    readOnly: b,
+                    placeholder: m.formatMessage(Y.oauthClientScopesPlaceholder)
+                }), (0, H.jsx)(`p`, {
+                    className: `text-token-text-tertiary text-xs`,
+                    children: (0, H.jsx)(w, {
+                        ...b ? Y.gitlabOauthClientScopesDescription : Y.oauthClientScopesDescription
+                    })
+                })]
+            })]
+        }) : null,
+        gn;
+    t[159] !== N.webhookSecret || t[160] !== m || t[161] !== y || t[162] !== Q || t[163] !== z.webhookSecret ? (gn = y ? (0, H.jsxs)(`div`, {
+        className: `flex flex-col gap-4`,
+        children: [(0, H.jsxs)(`div`, {
+            className: `flex flex-col gap-1`,
+            children: [(0, H.jsx)(`h3`, {
+                className: `text-sm font-semibold`,
+                children: (0, H.jsx)(w, {
+                    ...Y.githubWebhookSectionTitle
+                })
+            }), (0, H.jsx)(`p`, {
+                className: `text-token-text-secondary text-xs`,
+                children: (0, H.jsx)(w, {
+                    ...Y.githubWebhookSetupDescription
+                })
+            })]
+        }), Q({
+            setupValueKey: `webhookSecret`,
+            label: (0, H.jsx)(w, {
+                ...Y.githubWebhookSecretLabel
+            }),
+            value: z.webhookSecret,
+            isLoading: !1,
+            loadingLabel: m.formatMessage(Y.setupUrlLoading),
+            unavailableLabel: m.formatMessage(Y.githubWebhookSecretUnavailable),
+            ariaLabel: m.formatMessage(Y.copyGithubWebhookSecretAriaLabel)
+        }), N.webhookSecret ? (0, H.jsx)(`p`, {
+            className: `text-status-critical text-xs`,
+            children: N.webhookSecret
+        }) : null]
+    }) : null, t[159] = N.webhookSecret, t[160] = m, t[161] = y, t[162] = Q, t[163] = z.webhookSecret, t[164] = gn) : gn = t[164];
+    let _n;
+    t[165] === s ? _n = t[166] : (_n = () => s(), t[165] = s, t[166] = _n);
+    let vn;
+    t[167] === Symbol.for(`react.memo_cache_sentinel`) ? (vn = (0, H.jsx)(w, {
+        ...Y.cancelCta
+    }), t[167] = vn) : vn = t[167];
+    let yn;
+    t[168] !== E || t[169] !== _n ? (yn = (0, H.jsx)(_, {
+        color: `secondary`,
+        onClick: _n,
+        size: `large`,
+        className: `w-full md:w-auto`,
+        type: `button`,
+        disabled: E,
+        children: vn
+    }), t[168] = E, t[169] = _n, t[170] = yn) : yn = t[170];
+    let bn = ie || _e || E || U && Ie,
+        xn = l ? Pe.continueSetupButton : Y.createCta,
+        Sn;
+    t[171] === xn ? Sn = t[172] : (Sn = (0, H.jsx)(w, {
+        ...xn
+    }), t[171] = xn, t[172] = Sn);
+    let Cn;
+    t[173] !== E || t[174] !== bn || t[175] !== Sn ? (Cn = (0, H.jsx)(_, {
+        color: `primary`,
+        size: `large`,
+        className: `w-full min-w-[170px] md:w-auto`,
+        loading: E,
+        disabled: bn,
+        type: `submit`,
+        children: Sn
+    }), t[173] = E, t[174] = bn, t[175] = Sn, t[176] = Cn) : Cn = t[176];
+    let wn;
+    t[177] !== yn || t[178] !== Cn ? (wn = (0, H.jsxs)(`div`, {
+        className: `flex flex-col-reverse gap-3 md:flex-row md:justify-end`,
+        children: [yn, Cn]
+    }), t[177] = yn, t[178] = Cn, t[179] = wn) : wn = t[179];
+    let Tn;
+    t[180] !== Wt || t[181] !== nn || t[182] !== dn || t[183] !== fn || t[184] !== pn || t[185] !== mn || t[186] !== hn || t[187] !== gn || t[188] !== wn ? (Tn = (0, H.jsxs)(`form`, {
+        className: `flex flex-col gap-4`,
+        onSubmit: Wt,
+        children: [nn, dn, fn, pn, mn, hn, gn, wn]
+    }), t[180] = Wt, t[181] = nn, t[182] = dn, t[183] = fn, t[184] = pn, t[185] = mn, t[186] = hn, t[187] = gn, t[188] = wn, t[189] = Tn) : Tn = t[189];
+    let En;
+    return t[190] !== Kt || t[191] !== At || t[192] !== E || t[193] !== Yt || t[194] !== Xt || t[195] !== Zt || t[196] !== Tn ? (En = (0, H.jsx)(Kt, {
+        title: Yt,
+        isOpen: !0,
+        onClose: At,
+        position: `center`,
+        showCloseButton: Xt,
+        shouldIgnoreClickOutside: E,
+        onEscapeKeyDown: Zt,
+        size: `custom`,
+        className: `max-h-[90vh] w-full md:max-w-[448px]`,
+        testId: `modal-create-service-connector-from-template`,
+        children: Tn
+    }), t[190] = Kt, t[191] = At, t[192] = E, t[193] = Yt, t[194] = Xt, t[195] = Zt, t[196] = Tn, t[197] = En) : En = t[197], En
+}
+
+function Xe(e) {
+    return !e
+}
+
+function Ze(e) {
+    return (0, H.jsx)(`option`, {
+        value: e,
+        children: e
+    }, e)
+}
+
+function Qe() {
+    a.danger(Y.githubAppPrivateKeyInvalidFile)
+}
+
+function $e() {}
+
+function et(e) {
+    return e.type === `OAUTH` && e.client_credentials_required !== !1
+}
+
+function tt(e) {
+    return e.type === `OAUTH`
+}
+var nt, V, H, rt, it, at, ot, st, ct, lt, U, ut, W, G, K, q, dt, J, ft, pt, mt, ht, gt, _t, vt, yt, bt, xt, St, Y, Ct = e((() => {
+    nt = se(), Re(), _e(), ge(), F(), We(), Ie(), f(), Me(), Ae(), we(), P(), Te(), v(), le(), M(), Ce(), R(), D(), ye(), g(), h(), O(), xe(), ae(), d(), x(), l(), c(), s(), p(), V = n(E()), Ve(), T(), H = S(), rt = `templated_apps_GitHubEnterprise`, it = `templated_apps_GitLab`, at = `private_key`, ot = `webhook_secret`, st = `hostname`, ct = {
+        "application/octet-stream": [`.pem`],
+        "application/pem-certificate-chain": [`.pem`],
+        "application/x-pem-file": [`.pem`],
+        "text/plain": [`.pem`]
+    }, lt = `https://connectors.api.openai.com`, U = 32, ut = `chatgpt.service-template-native-create-uncertain:`, W = `chatgpt:service-template-create-lock`, G = new WeakMap, K = new WeakMap, q = new WeakMap, dt = e => typeof window > `u` ? () => {} : (window.addEventListener(W, e), () => window.removeEventListener(W, e)), J = () => {
+        window.dispatchEvent(new Event(W))
+    }, ft = `3541874775`, pt = e => {
+        let t = r(),
+            n = i(),
+            a = t?.getWorkspaceId();
+        if (!(!a || !t?.normalizedAccountUserId || !n?.user?.id || t.authUserId !== n.user.id || n.account?.id !== a)) return `${ut}${JSON.stringify([a,t.normalizedAccountUserId,n.user.id,e])}`
+    }, mt = e => {
+        if (!e || typeof window > `u`) return;
+        let t = G.get(window)?.get(e);
+        if (t !== `cleared`) try {
+            let n = window.sessionStorage.getItem(e),
+                r = q.get(window)?.has(e) === !0;
+            if (n == null && r) return `pending`;
+            let i = t ?? (n === `pending` || n === `uncertain` ? n : K.get(window)?.get(e));
+            if (i != null) {
+                let t = K.get(window) ?? new Map;
+                t.set(e, i), K.set(window, t)
+            } else n ?? K.get(window)?.delete(e);
+            return i === `pending` && !r ? `uncertain` : i
+        } catch {
+            let n = t ?? K.get(window)?.get(e);
+            return n === `pending` && !q.get(window)?.has(e) ? `uncertain` : n
+        }
+    }, ht = (e, t, n) => {
+        if (!e || typeof window > `u`) return;
+        let r = q.get(window) ?? new Map;
+        t === `pending` && n ? r.set(e, n) : r.delete(e), q.set(window, r);
+        let i = K.get(window) ?? new Map;
+        i.set(e, t), K.set(window, i);
+        try {
+            window.sessionStorage.setItem(e, t), G.get(window)?.delete(e)
+        } catch {
+            let n = G.get(window) ?? new Map;
+            n.set(e, t), G.set(window, n)
+        }
+        J()
+    }, gt = (e, t) => {
+        if (!(!e || typeof window > `u`) && !(t && q.get(window)?.get(e) !== t)) {
+            q.get(window)?.delete(e), K.get(window)?.delete(e), G.get(window)?.delete(e);
+            try {
+                window.sessionStorage.removeItem(e)
+            } catch {
+                let t = G.get(window) ?? new Map;
+                t.set(e, `cleared`), G.set(window, t)
+            }
+            J()
+        }
+    }, _t = e => {
+        let t = new Set,
+            n = [];
+        for (let r of e.split(/\r?\n|,/)) {
+            let e = r.trim();
+            !e || t.has(e) || (t.add(e), n.push(e))
+        }
+        return n
+    }, vt = e => new Promise((t, n) => {
+        let r = new FileReader;
+        r.onerror = () => n(Error(`Unable to read file.`)), r.onload = () => {
+            if (typeof r.result == `string`) {
+                t(r.result);
+                return
+            }
+            n(Error(`File contents unavailable.`))
+        }, r.readAsText(e)
+    }), yt = e => `${lt}/connectors/${encodeURIComponent(e)}/webhook`, bt = () => {
+        if (!globalThis.crypto?.getRandomValues) return ``;
+        let e = new Uint8Array(U);
+        return globalThis.crypto.getRandomValues(e), Array.from(e, e => e.toString(16).padStart(2, `0`)).join(``)
+    }, xt = async () => (await oe.safeGet(`/aip/connectors/oauth/callback_id`, {})).callback_id ?? null, St = y(() => ({
+        queryKey: ue(`workspace_settings`, !0, !1),
+        queryFn: async () => {
+            let e = await oe.safePost(`/aip/connectors/list_accessible`, {
+                    requestBody: {
+                        principals: [],
+                        purpose: `workspace_settings`
+                    },
+                    parameters: {
+                        query: {
+                            include_actions: !1,
+                            external_logos: !0
+                        }
+                    },
+                    additionalHeaders: {
+                        [re]: N.ADMIN_SETTING
+                    }
+                }),
+                t = ie();
+            return {
+                connectors: (e.connectors ?? []).map(e => b(e, {
+                    preferIconAssets: t
+                })),
+                templates: e.app_templates ?? []
+            }
+        },
+        enabled: m()?.normalizedAccountUserId != null && A()
+    })), Y = C({
+        bodyWithOauth: {
+            id: `GO4JyL`,
+            defaultMessage: `Enter your organization's OAuth client details and provider settings. This creates a workspace-specific draft app that can be published afterward.`
+        },
+        bodyWithoutOauth: {
+            id: `5I6YP9`,
+            defaultMessage: `Enter your organization's provider settings. This creates a workspace-specific draft app that can be published afterward.`
+        },
+        setupGuideLink: {
+            id: `chatgpt.connector_settings.service_template.setup_guide.link.label`,
+            defaultMessage: `Learn more`
+        },
+        showAdvancedSettings: {
+            id: `zSj6if`,
+            defaultMessage: `Advanced settings`
+        },
+        hideAdvancedSettings: {
+            id: `gKf0vS`,
+            defaultMessage: `Hide advanced settings`
+        },
+        nameLabel: {
+            id: `hGnzkR`,
+            defaultMessage: `Name`
+        },
+        nameDescription: {
+            id: `chatgpt.connector_settings.service_template.name.help_text`,
+            defaultMessage: `Use a clear, descriptive name. Workspace members will see it, and ChatGPT uses it to decide when to use this app.`
+        },
+        descriptionLabel: {
+            id: `W/yg6K`,
+            defaultMessage: `Description`
+        },
+        descriptionDescription: {
+            id: `chatgpt.connector_settings.service_template.description.help_text`,
+            defaultMessage: `Describe what the app connects to and what it should be used for. This is shown to workspace members and used by ChatGPT.`
+        },
+        oauthSectionTitle: {
+            id: `HMeJ7H`,
+            defaultMessage: `OAuth client`
+        },
+        oauthClientIdLabel: {
+            id: `bLXOJj`,
+            defaultMessage: `OAuth client ID`
+        },
+        oauthClientSecretLabel: {
+            id: `w2sU1b`,
+            defaultMessage: `OAuth client secret`
+        },
+        githubAppPrivateKeyLabel: {
+            id: `daxGvr`,
+            defaultMessage: `GitHub App private key`
+        },
+        githubAppPrivateKeyUploadLabel: {
+            id: `Er2aY/`,
+            defaultMessage: `Drag and drop a .pem file here`
+        },
+        githubAppPrivateKeyUploadBrowseCta: {
+            id: `cR2tO3`,
+            defaultMessage: `Browse files`
+        },
+        githubAppPrivateKeyFileLoaded: {
+            id: `maykO5`,
+            defaultMessage: `Loaded {fileName}`
+        },
+        githubAppPrivateKeyInvalidFile: {
+            id: `i+lAXo`,
+            defaultMessage: `Upload a single .pem file.`
+        },
+        githubAppPrivateKeyReadError: {
+            id: `4xlBSI`,
+            defaultMessage: `Couldn't read the private key file.`
+        },
+        githubAppPrivateKeyPlaceholder: {
+            id: `hARtyn`,
+            defaultMessage: `Paste the private key generated for your GitHub App`
+        },
+        githubAppPrivateKeyDescription: {
+            id: `fFvuel`,
+            defaultMessage: `Used to mint short-lived installation tokens for repository operations.`
+        },
+        oauthClientScopesLabel: {
+            id: `miFMbN`,
+            defaultMessage: `Scopes (optional)`
+        },
+        oauthClientScopesPlaceholder: {
+            id: `lr0K4D`,
+            defaultMessage: `One value per line or comma-separated`
+        },
+        oauthClientScopesDescription: {
+            id: `LttEvR`,
+            defaultMessage: `Leave this as-is to use the template defaults, or override with your own requested scopes.`
+        },
+        gitlabOauthClientScopesLabel: {
+            id: `A6nUJ+`,
+            defaultMessage: `Scopes`
+        },
+        gitlabOauthClientScopesDescription: {
+            id: `chatgpt.connector_settings.service_template.gitlab_oauth.scopes.help_text`,
+            defaultMessage: `Enable these scopes for your GitLab OAuth application.`
+        },
+        oauthCallbackUrlLabel: {
+            id: `acyK0J`,
+            defaultMessage: `Callback URL`
+        },
+        gitlabOauthRedirectUriLabel: {
+            id: `chatgpt.connector_settings.service_template.gitlab_oauth.redirect_uri.label`,
+            defaultMessage: `Redirect URI`
+        },
+        callbackUrlUnavailable: {
+            id: `/A0zHY`,
+            defaultMessage: `Callback URL unavailable. Refresh and try again.`
+        },
+        gitlabRedirectUriUnavailable: {
+            id: `chatgpt.connector_settings.service_template.gitlab_oauth.redirect_uri.error.unavailable`,
+            defaultMessage: `Redirect URI unavailable. Refresh and try again.`
+        },
+        setupUrlLoading: {
+            id: `mgZGUY`,
+            defaultMessage: `Loading setup URL...`
+        },
+        setupUrlUnavailable: {
+            id: `blpCdz`,
+            defaultMessage: `Setup URL unavailable`
+        },
+        setupUrlCopied: {
+            id: `nKUV24`,
+            defaultMessage: `Copied`
+        },
+        setupUrlCopyHint: {
+            id: `uDO8rc`,
+            defaultMessage: `Copy`
+        },
+        setupUrlCopyUnavailable: {
+            id: `0HX4iy`,
+            defaultMessage: `Unavailable`
+        },
+        copyOauthCallbackUrlAriaLabel: {
+            id: `ML0Qz2`,
+            defaultMessage: `Copy OAuth callback URL`
+        },
+        copyGitlabOauthRedirectUriAriaLabel: {
+            id: `chatgpt.connector_settings.service_template.gitlab_oauth.redirect_uri.copy_button.aria_label`,
+            defaultMessage: `Copy OAuth redirect URI`
+        },
+        githubWebhookSectionTitle: {
+            id: `chatgpt.connector_settings.service_template.github_webhook.section.title`,
+            defaultMessage: `Webhook`
+        },
+        githubWebhookSetupDescription: {
+            id: `chatgpt.connector_settings.service_template.github_webhook.setup.description`,
+            defaultMessage: `Copy this generated secret into your GitHub App webhook settings. After creation, copy the webhook URL into the same settings.`
+        },
+        webhookUrlLabel: {
+            id: `chatgpt.connector_settings.service_template.github_webhook.url.label`,
+            defaultMessage: `Webhook URL`
+        },
+        githubWebhookReadyTitle: {
+            id: `chatgpt.connector_settings.service_template.github_webhook.ready.title`,
+            defaultMessage: `Webhook settings`
+        },
+        githubWebhookReadyBody: {
+            id: `chatgpt.connector_settings.service_template.github_webhook.ready.body`,
+            defaultMessage: `Copy these values into your GitHub App webhook settings.`
+        },
+        githubWebhookUncertainTitle: {
+            id: `YJXHtu`,
+            defaultMessage: `Keep your GitHub webhook secret`
+        },
+        githubWebhookUncertainBody: {
+            id: `dWx7rw`,
+            defaultMessage: `The draft may have been created. Save this secret, then check your drafts before trying again. The webhook URL is unavailable until the draft is confirmed.`
+        },
+        githubWebhookSecretLabel: {
+            id: `chatgpt.connector_settings.service_template.github_webhook.secret.label`,
+            defaultMessage: `Webhook secret`
+        },
+        gitlabInstanceSectionTitle: {
+            id: `chatgpt.connector_settings.service_template.gitlab_instance.section.title`,
+            defaultMessage: `GitLab instance`
+        },
+        gitlabHostnameLabel: {
+            id: `chatgpt.connector_settings.service_template.gitlab_instance.hostname.label`,
+            defaultMessage: `GitLab hostname`
+        },
+        gitlabHostnamePlaceholder: {
+            id: `chatgpt.connector_settings.service_template.gitlab_instance.hostname.placeholder`,
+            defaultMessage: `gitlab.example.com`
+        },
+        gitlabHostnameDescription: {
+            id: `chatgpt.connector_settings.service_template.gitlab_instance.hostname.description`,
+            defaultMessage: `Enter the hostname for your self-managed or Dedicated GitLab instance. Do not use gitlab.com.`
+        },
+        githubWebhookSecretUnavailable: {
+            id: `chatgpt.connector_settings.service_template.github_webhook.secret.unavailable`,
+            defaultMessage: `Webhook secret unavailable. Refresh and try again.`
+        },
+        copyWebhookUrlAriaLabel: {
+            id: `o1YLPD`,
+            defaultMessage: `Copy webhook URL`
+        },
+        copyGithubWebhookSecretAriaLabel: {
+            id: `chatgpt.connector_settings.service_template.github_webhook.secret.copy.aria_label`,
+            defaultMessage: `Copy GitHub webhook secret`
+        },
+        requiredField: {
+            id: `KIFAz+`,
+            defaultMessage: `This field is required.`
+        },
+        success: {
+            id: `o15jgZ`,
+            defaultMessage: `Draft app created`
+        },
+        nativeCompletionUncertain: {
+            id: `gp7EnO`,
+            defaultMessage: `We couldn't confirm the draft's setup. Check your drafts before trying again.`
+        },
+        nativeCreationPending: {
+            id: `zpL/4i`,
+            defaultMessage: `Draft creation is still processing. Check your drafts after it finishes.`
+        },
+        nativeRetryAfterReviewCta: {
+            id: `eYajt+`,
+            defaultMessage: `I checked drafts and found no new app`
+        },
+        cancelCta: {
+            id: `lYbIy2`,
+            defaultMessage: `Cancel`
+        },
+        doneCta: {
+            id: `hSoBau`,
+            defaultMessage: `Done`
+        },
+        createCta: {
+            id: `+0AYMn`,
+            defaultMessage: `Create draft`
+        }
+    })
+}));
+export {
+    R as a, Ye as i, z as n, Ke as o, Ct as r, B as t
+};
 //# sourceMappingURL=3864a2c9-flw40hb1i9l1xzc4.js.map

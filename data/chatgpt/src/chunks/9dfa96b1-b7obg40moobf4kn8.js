@@ -1,2 +1,26 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n,r,i,a,o,s,c=e((()=>{t=`webp`,n=1200,r=`srgb`,i=`uchar`,a={width:1200,height:675},o=`/cdn/assets/made-with-chatgpt-og-g73iyayd.webp`,s={format:t,width:n,height:675,space:r,channels:3,depth:i,isProgressive:!1,isPalette:!1,hasProfile:!0,hasAlpha:!1,autoOrient:a,src:o}}));export{s as n,c as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t, n, r, i, a, o, s, c = e((() => {
+    t = `webp`, n = 1200, r = `srgb`, i = `uchar`, a = {
+        width: 1200,
+        height: 675
+    }, o = `/cdn/assets/made-with-chatgpt-og-g73iyayd.webp`, s = {
+        format: t,
+        width: n,
+        height: 675,
+        space: r,
+        channels: 3,
+        depth: i,
+        isProgressive: !1,
+        isPalette: !1,
+        hasProfile: !0,
+        hasAlpha: !1,
+        autoOrient: a,
+        src: o
+    }
+}));
+export {
+    s as n, c as t
+};
 //# sourceMappingURL=9dfa96b1-b7obg40moobf4kn8.js.map

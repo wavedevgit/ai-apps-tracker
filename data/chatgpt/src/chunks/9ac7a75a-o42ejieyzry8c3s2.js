@@ -1,2 +1,41 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Ktt as t,Sj as n,Wtt as r,bj as i,lnt as a,mnt as o,tnt as s,xj as c,yj as l}from"./4813494d-qsuygr73qjc6rh65.js";function u(){return i(m())}async function d(){let e=m();return l(e,e===`macos`?await r():null)}async function f(){let e=await d();return e.type===`download_url`?e.url:null}function p(e){return u()!=null&&n(e)}function m(){return o()?`windows`:a()&&!s()?`macos`:null}var h=e((()=>{c(),t()}));export{f as a,d as i,h as n,p as r,u as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ktt as t,
+    Sj as n,
+    Wtt as r,
+    bj as i,
+    lnt as a,
+    mnt as o,
+    tnt as s,
+    xj as c,
+    yj as l
+} from "./4813494d-qsuygr73qjc6rh65.js";
+
+function u() {
+    return i(m())
+}
+async function d() {
+    let e = m();
+    return l(e, e === `macos` ? await r() : null)
+}
+async function f() {
+    let e = await d();
+    return e.type === `download_url` ? e.url : null
+}
+
+function p(e) {
+    return u() != null && n(e)
+}
+
+function m() {
+    return o() ? `windows` : a() && !s() ? `macos` : null
+}
+var h = e((() => {
+    c(), t()
+}));
+export {
+    f as a, d as i, h as n, p as r, u as t
+};
 //# sourceMappingURL=9ac7a75a-o42ejieyzry8c3s2.js.map

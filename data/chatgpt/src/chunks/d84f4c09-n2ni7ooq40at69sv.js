@@ -1,6 +1,1865 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/fbf44c55-o2lsxc57nll08quu.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/2340486e-i7pjxgdhv0bs6apg.js"])))=>i.map(i=>d[i]);
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{$D as r,$G as i,BU as a,BV as o,CE as s,Ch as c,DD as l,EV as u,FO as d,Fw as f,HO as p,IV as m,J5 as h,JD as g,JT as _,JV as v,KD as ee,KO as te,L1 as ne,LV as re,MV as y,Mz as ie,N1 as b,N5 as ae,Nw as x,Nz as oe,OS as se,P7 as ce,PO as le,PS as ue,QD as de,R7 as fe,RU as pe,SD as me,Sw as S,TE as he,TV as ge,VO as _e,VV as ve,Wnt as ye,Wst as be,X0 as xe,X1 as Se,XV as C,Xnt as Ce,Xy as we,Y0 as Te,Y5 as Ee,YV as De,Zy as w,_D as T,_R as E,_h as D,b2 as O,cK as Oe,cW as ke,dD as k,gN as Ae,h8 as A,hN as j,it as je,jV as M,lD as Me,lK as Ne,lW as Pe,nK as Fe,nt as Ie,ot as Le,qD as Re,qT as N,tct as P,tt as F,wE as ze,wV as I,ww as Be,x2 as Ve,yR as He,yh as Ue,zU as We}from"./4813494d-dfpv67hlp00pbohr.js";import{Bn as L,In as R,Ln as Ge,N as Ke,Nn as z,O as qe,Rn as B,Vn as Je,cn as Ye,ln as Xe,s as Ze,wn as Qe,zn as V}from"./2340486e-i7pjxgdhv0bs6apg.js";import{C6t as $e,Gh as et,Kh as tt,MHn as nt,NHn as H,PHn as rt,SCn as it,Ust as at,Wst as ot,_6t as st,cMt as ct,iMt as lt,oMt as ut,sMt as dt,vCn as ft}from"./conversation-small-cy5f8pl0g26s86so.js";import{Am as pt,By as mt,Ef as ht,FS as gt,Fx as _t,IS as vt,Ix as yt,Mv as bt,Nv as xt,Rv as St,Tf as Ct,Vy as wt,dS as Tt,jm as Et,uS as Dt,vv as Ot,yv as kt,zv as At}from"./30901919-7dzdc1ou0jtwkwpt.js";import{f_ as U,gm as jt,hm as Mt,p_ as Nt}from"./8b34dbc2-k1zgxrtsww83602u.js";import{n as Pt,t as Ft}from"./92b4bb27-ohbsri0cnf4sf7zo.js";import{n as It,r as Lt}from"./3d705e5d-is2nynkj0c3lzm98.js";function Rt(e){return e===y.User||e===y.Group?y.Private:e===y.WorkspaceLink?y.Workspace:e}function W(e,t){return e=Rt(e),t!==void 0&&t.some(t=>t.recipient===e&&t.allowed)}function zt(e,t){return t===void 0?[]:(e=Rt(e),t.find(t=>t.recipient===e)?.moderated_fields??void 0)}function Bt(e,t){let n=zt(e,t);return n!=null&&n.length>0}var Vt=e((()=>{o()}));function Ht(e){if(!e)return;let t=e.gizmo.appeal_info?.state.kind===`appeal_sent`,n=Ut(e.gizmo.share_recipient,e.gizmo.sharing_targets??void 0);return{sharingRecipient:e.gizmo.share_recipient,categories:e.gizmo.display.categories,gizmoId:e.gizmo.id,moderationType:n,sharingTargets:e.gizmo.sharing_targets??void 0,showModal:t?2:n===0?0:1}}function Ut(e,t=[]){let n=new Set(t.filter(e=>e.allowed).map(e=>e.recipient));if(!e||(e in rn&&(e=rn[e]),n.has(e)))return 0;let r=n.has(y.Private)||n.has(y.Workspace),i=n.has(y.Link)||n.has(y.Marketplace);return e===y.Marketplace&&i?2:!i&&r?3:4}function Wt(e){switch(e){case 0:case 1:return R({id:`gizmo.appeals.publishBlockedTitle`,defaultMessage:`Your changes couldn’t be published`});case 2:return R({id:`gizmo.appeals.removedFromMarketplaceTitle`,defaultMessage:`Your GPT has been removed from the marketplace`});case 3:return R({id:`gizmo.appeals.removedFromPublicTitle`,defaultMessage:`Your GPT has been removed from public view`});case 4:return R({id:`gizmo.appeals.removedFromPrivateTitle`,defaultMessage:`Your GPT has been removed from private view`});case 5:return R({id:`gizmo.appeals.recategorizedTitle`,defaultMessage:`Your GPT has been recategorized`})}}function Gt(e){switch(e){case`profile_picture`:return R({id:`gizmo.appeals.profilePictureFieldName`,defaultMessage:`Profile Picture`});case`gizmo_name`:return R({id:`gizmo.appeals.gizmoNameFieldName`,defaultMessage:`Name`});case`gizmo_description`:return R({id:`gizmo.appeals.gizmoDescriptionFieldName`,defaultMessage:`Description`});case`gizmo_instructions`:return R({id:`gizmo.appeals.gizmoInstructionsFieldName`,defaultMessage:`Instructions`});case`gizmo_welcome_message`:return R({id:`gizmo.appeals.gizmoWelcomeMessageFieldName`,defaultMessage:`Welcome Message`});case`custom_actions`:return R({id:`gizmo.appeals.customActionsFieldName`,defaultMessage:`Custom Actions`});case`conversation_starter`:return R({id:`gizmo.appeals.conversationStarterFieldName`,defaultMessage:`Conversation Starter`});case`file`:return R({id:`gizmo.appeals.fileFieldName`,defaultMessage:`File`});case`gizmo_combined_content`:return R({id:`gizmo.appeals.gizmoCombinedContentFieldName`,defaultMessage:`GPT Content`});default:throw Error(`Unhandled moderation field: ${e}`)}}function Kt(e){switch(e){case y.Email:case y.Private:case y.Workspace:return R({id:`gizmo.appeals.privateRecipientModerationText`,defaultMessage:`Your GPT can’t be updated because it violates our {usagePolicyLink}Usage Policies{usagePolicyLink}.`});case y.Link:return R({id:`gizmo.appeals.linkRecipientModerationText`,defaultMessage:`Your GPT can’t be shared publicly because it violates our {usagePolicyLink}Usage Policies{usagePolicyLink}.`});case y.Marketplace:return R({id:`gizmo.appeals.marketplaceRecipientModerationText`,defaultMessage:`Your GPT can’t appear in the Explore GPTs page because it violates our {usagePolicyLink}Usage Policies{usagePolicyLink}.`});default:(0,Qt.default)(e)}}function qt({sharingRecipient:e,moderatedFields:t,appealAvailable:n}){let r=t.length;return(0,K.jsxs)(K.Fragment,{children:[(0,K.jsxs)(`p`,{children:[(0,K.jsx)(z,{...Kt(e),values:{usagePolicyLink:e=>(0,K.jsx)($t,{target:`_blank`,href:`https://openai.com/policies/usage-policies`,rel:`noreferrer`,children:e})}}),` `,r>0&&(0,K.jsx)(z,{id:`gizmo.appeals.seeBelowForSpecificIssues`,defaultMessage:`{numModeratedFields, plural,
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/fbf44c55-o2lsxc57nll08quu.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/2340486e-i7pjxgdhv0bs6apg.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $D as r,
+    $G as i,
+    BU as a,
+    BV as o,
+    CE as s,
+    Ch as c,
+    DD as l,
+    EV as u,
+    FO as d,
+    Fw as f,
+    HO as p,
+    IV as m,
+    J5 as h,
+    JD as g,
+    JT as _,
+    JV as v,
+    KD as ee,
+    KO as te,
+    L1 as ne,
+    LV as re,
+    MV as y,
+    Mz as ie,
+    N1 as b,
+    N5 as ae,
+    Nw as x,
+    Nz as oe,
+    OS as se,
+    P7 as ce,
+    PO as le,
+    PS as ue,
+    QD as de,
+    R7 as fe,
+    RU as pe,
+    SD as me,
+    Sw as S,
+    TE as he,
+    TV as ge,
+    VO as _e,
+    VV as ve,
+    Wnt as ye,
+    Wst as be,
+    X0 as xe,
+    X1 as Se,
+    XV as C,
+    Xnt as Ce,
+    Xy as we,
+    Y0 as Te,
+    Y5 as Ee,
+    YV as De,
+    Zy as w,
+    _D as T,
+    _R as E,
+    _h as D,
+    b2 as O,
+    cK as Oe,
+    cW as ke,
+    dD as k,
+    gN as Ae,
+    h8 as A,
+    hN as j,
+    it as je,
+    jV as M,
+    lD as Me,
+    lK as Ne,
+    lW as Pe,
+    nK as Fe,
+    nt as Ie,
+    ot as Le,
+    qD as Re,
+    qT as N,
+    tct as P,
+    tt as F,
+    wE as ze,
+    wV as I,
+    ww as Be,
+    x2 as Ve,
+    yR as He,
+    yh as Ue,
+    zU as We
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    Bn as L,
+    In as R,
+    Ln as Ge,
+    N as Ke,
+    Nn as z,
+    O as qe,
+    Rn as B,
+    Vn as Je,
+    cn as Ye,
+    ln as Xe,
+    s as Ze,
+    wn as Qe,
+    zn as V
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    C6t as $e,
+    Gh as et,
+    Kh as tt,
+    MHn as nt,
+    NHn as H,
+    PHn as rt,
+    SCn as it,
+    Ust as at,
+    Wst as ot,
+    _6t as st,
+    cMt as ct,
+    iMt as lt,
+    oMt as ut,
+    sMt as dt,
+    vCn as ft
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+import {
+    Am as pt,
+    By as mt,
+    Ef as ht,
+    FS as gt,
+    Fx as _t,
+    IS as vt,
+    Ix as yt,
+    Mv as bt,
+    Nv as xt,
+    Rv as St,
+    Tf as Ct,
+    Vy as wt,
+    dS as Tt,
+    jm as Et,
+    uS as Dt,
+    vv as Ot,
+    yv as kt,
+    zv as At
+} from "./30901919-7dzdc1ou0jtwkwpt.js";
+import {
+    f_ as U,
+    gm as jt,
+    hm as Mt,
+    p_ as Nt
+} from "./8b34dbc2-k1zgxrtsww83602u.js";
+import {
+    n as Pt,
+    t as Ft
+} from "./92b4bb27-ohbsri0cnf4sf7zo.js";
+import {
+    n as It,
+    r as Lt
+} from "./3d705e5d-is2nynkj0c3lzm98.js";
+
+function Rt(e) {
+    return e === y.User || e === y.Group ? y.Private : e === y.WorkspaceLink ? y.Workspace : e
+}
+
+function W(e, t) {
+    return e = Rt(e), t !== void 0 && t.some(t => t.recipient === e && t.allowed)
+}
+
+function zt(e, t) {
+    return t === void 0 ? [] : (e = Rt(e), t.find(t => t.recipient === e)?.moderated_fields ?? void 0)
+}
+
+function Bt(e, t) {
+    let n = zt(e, t);
+    return n != null && n.length > 0
+}
+var Vt = e((() => {
+    o()
+}));
+
+function Ht(e) {
+    if (!e) return;
+    let t = e.gizmo.appeal_info?.state.kind === `appeal_sent`,
+        n = Ut(e.gizmo.share_recipient, e.gizmo.sharing_targets ?? void 0);
+    return {
+        sharingRecipient: e.gizmo.share_recipient,
+        categories: e.gizmo.display.categories,
+        gizmoId: e.gizmo.id,
+        moderationType: n,
+        sharingTargets: e.gizmo.sharing_targets ?? void 0,
+        showModal: t ? 2 : n === 0 ? 0 : 1
+    }
+}
+
+function Ut(e, t = []) {
+    let n = new Set(t.filter(e => e.allowed).map(e => e.recipient));
+    if (!e || (e in rn && (e = rn[e]), n.has(e))) return 0;
+    let r = n.has(y.Private) || n.has(y.Workspace),
+        i = n.has(y.Link) || n.has(y.Marketplace);
+    return e === y.Marketplace && i ? 2 : !i && r ? 3 : 4
+}
+
+function Wt(e) {
+    switch (e) {
+        case 0:
+        case 1:
+            return R({
+                id: `gizmo.appeals.publishBlockedTitle`,
+                defaultMessage: `Your changes couldn’t be published`
+            });
+        case 2:
+            return R({
+                id: `gizmo.appeals.removedFromMarketplaceTitle`,
+                defaultMessage: `Your GPT has been removed from the marketplace`
+            });
+        case 3:
+            return R({
+                id: `gizmo.appeals.removedFromPublicTitle`,
+                defaultMessage: `Your GPT has been removed from public view`
+            });
+        case 4:
+            return R({
+                id: `gizmo.appeals.removedFromPrivateTitle`,
+                defaultMessage: `Your GPT has been removed from private view`
+            });
+        case 5:
+            return R({
+                id: `gizmo.appeals.recategorizedTitle`,
+                defaultMessage: `Your GPT has been recategorized`
+            })
+    }
+}
+
+function Gt(e) {
+    switch (e) {
+        case `profile_picture`:
+            return R({
+                id: `gizmo.appeals.profilePictureFieldName`,
+                defaultMessage: `Profile Picture`
+            });
+        case `gizmo_name`:
+            return R({
+                id: `gizmo.appeals.gizmoNameFieldName`,
+                defaultMessage: `Name`
+            });
+        case `gizmo_description`:
+            return R({
+                id: `gizmo.appeals.gizmoDescriptionFieldName`,
+                defaultMessage: `Description`
+            });
+        case `gizmo_instructions`:
+            return R({
+                id: `gizmo.appeals.gizmoInstructionsFieldName`,
+                defaultMessage: `Instructions`
+            });
+        case `gizmo_welcome_message`:
+            return R({
+                id: `gizmo.appeals.gizmoWelcomeMessageFieldName`,
+                defaultMessage: `Welcome Message`
+            });
+        case `custom_actions`:
+            return R({
+                id: `gizmo.appeals.customActionsFieldName`,
+                defaultMessage: `Custom Actions`
+            });
+        case `conversation_starter`:
+            return R({
+                id: `gizmo.appeals.conversationStarterFieldName`,
+                defaultMessage: `Conversation Starter`
+            });
+        case `file`:
+            return R({
+                id: `gizmo.appeals.fileFieldName`,
+                defaultMessage: `File`
+            });
+        case `gizmo_combined_content`:
+            return R({
+                id: `gizmo.appeals.gizmoCombinedContentFieldName`,
+                defaultMessage: `GPT Content`
+            });
+        default:
+            throw Error(`Unhandled moderation field: ${e}`)
+    }
+}
+
+function Kt(e) {
+    switch (e) {
+        case y.Email:
+        case y.Private:
+        case y.Workspace:
+            return R({
+                id: `gizmo.appeals.privateRecipientModerationText`,
+                defaultMessage: `Your GPT can’t be updated because it violates our {usagePolicyLink}Usage Policies{usagePolicyLink}.`
+            });
+        case y.Link:
+            return R({
+                id: `gizmo.appeals.linkRecipientModerationText`,
+                defaultMessage: `Your GPT can’t be shared publicly because it violates our {usagePolicyLink}Usage Policies{usagePolicyLink}.`
+            });
+        case y.Marketplace:
+            return R({
+                id: `gizmo.appeals.marketplaceRecipientModerationText`,
+                defaultMessage: `Your GPT can’t appear in the Explore GPTs page because it violates our {usagePolicyLink}Usage Policies{usagePolicyLink}.`
+            });
+        default:
+            (0, Qt.default)(e)
+    }
+}
+
+function qt({
+    sharingRecipient: e,
+    moderatedFields: t,
+    appealAvailable: n
+}) {
+    let r = t.length;
+    return (0, K.jsxs)(K.Fragment, {
+        children: [(0, K.jsxs)(`p`, {
+            children: [(0, K.jsx)(z, {
+                ...Kt(e),
+                values: {
+                    usagePolicyLink: e => (0, K.jsx)($t, {
+                        target: `_blank`,
+                        href: `https://openai.com/policies/usage-policies`,
+                        rel: `noreferrer`,
+                        children: e
+                    })
+                }
+            }), ` `, r > 0 && (0, K.jsx)(z, {
+                id: `gizmo.appeals.seeBelowForSpecificIssues`,
+                defaultMessage: `{numModeratedFields, plural,
               one {See below for the specific issue:}
               other {See below for the specific issues:}
-            }`,values:{numModeratedFields:r}})]}),r>0&&t?.map(e=>(0,K.jsxs)(K.Fragment,{children:[(0,K.jsx)(`p`,{className:`font-bold`,children:(0,K.jsx)(z,{...Gt(e.name)})}),(0,K.jsx)(`ul`,{className:`list-disc ps-5`,children:e.reasons.map(e=>(0,K.jsxs)(`li`,{children:[e.description,` `,e.link?(0,K.jsx)($t,{href:e.link,target:`_blank`,rel:`noreferrer`,children:(0,K.jsx)(z,{id:`gizmo.appeals.learnMore`,defaultMessage:`Learn more`})}):``]},e.description))})]})),n&&(0,K.jsx)(`p`,{children:(0,K.jsx)(z,{id:`gizmo.appeals.appealAvailableText`,defaultMessage:`If you think this was a mistake, use the appeal link in the email we sent you. Or you can publish to “Only me” and use this GPT privately.`})})]})}function Jt({gizmoId:e,sharingRecipient:t,categories:n,moderationType:r,sharingTargets:i,appealAvailable:a,onClose:o,onAppealSubmitted:s}){let c=V(),[l,u]=(0,G.useState)(``),[d,f]=(0,G.useState)(0),[p,m]=(0,G.useState)(!1),h=Ke(),g=async()=>{m(!0);try{await le.postGizmoAppeal(h,e,l,t,n),f(2),s?.()}finally{m(!1)}},_=zt(t,i),v=_?.length??0,ee=b();if(v===0&&ee?.isEnterprisey())return(0,K.jsx)(S,{testId:`modal-gizmo-appeal-available`,title:c.formatMessage(Wt(r)),isOpen:!0,onClose:o,showCloseButton:!0,type:`warning`,primaryButton:(0,K.jsx)(x.Button,{color:`primary`,onClick:o,children:(0,K.jsx)(z,{id:`wEsAOU`,defaultMessage:`OK`})}),children:(0,K.jsx)(`p`,{className:`text-sm`,children:(0,K.jsx)(z,{id:`gizmo.appeals.workspaceSettingsMessage`,defaultMessage:`Access to your GPT has been reduced by your workspace's GPT sharing settings. An owner of the workspace can change these settings in the workspace settings page.`})})});switch(d){case 0:return(0,K.jsx)(S,{testId:`modal-gizmo-appeal-available`,title:c.formatMessage(Wt(r)),isOpen:!0,onClose:o,showCloseButton:!0,primaryButton:(0,K.jsx)(x.Button,{color:`primary`,onClick:o,children:(0,K.jsx)(z,{id:`gizmo.appeals.contunueButton`,defaultMessage:`Continue`})}),type:`warning`,children:(0,K.jsx)(`div`,{className:`flex flex-col gap-2 text-sm`,children:(0,K.jsx)(qt,{sharingRecipient:t,moderatedFields:_??[],appealAvailable:a})})});case 1:return(0,K.jsx)(S,{testId:`modal-gizmo-appeal-form`,title:c.formatMessage({id:`gizmo.appeals.appealModalTitle`,defaultMessage:`Appeal`}),isOpen:!0,onClose:o,showCloseButton:!0,shouldIgnoreClickOutside:!0,primaryButton:(0,K.jsx)(x.Button,{color:`primary`,onClick:g,disabled:p||l.trim().length===0,children:(0,K.jsx)(z,{id:`gizmo.appeals.submitAppealButton`,defaultMessage:`Submit`})}),secondaryButton:(0,K.jsx)(x.Button,{onClick:()=>f(0),children:(0,K.jsx)(z,{id:`gizmo.appeals.backButton`,defaultMessage:`Back`})}),type:`warning`,children:(0,K.jsxs)(`div`,{className:`flex flex-col gap-2 text-sm`,children:[(0,K.jsx)(`p`,{children:(0,K.jsx)(z,{id:`gizmo.appeals.appealReasonText`,defaultMessage:`Please provide a reason for why you believe this GPT doesn’t violate our policies and should be published`})}),(0,K.jsx)(en,{value:l,onChange:e=>u(e.target.value)})]})});case 2:return(0,K.jsx)(K.Fragment,{})}}function Yt({onClose:e}){return(0,K.jsx)(S,{testId:`modal-gizmo-appeal-submitted`,title:V().formatMessage({id:`gizmo.appeals.appealSubmittedModalTitle`,defaultMessage:`Appeal submitted`}),isOpen:!0,onClose:e,showCloseButton:!0,primaryButton:(0,K.jsx)(x.Button,{color:`primary`,onClick:e,children:(0,K.jsx)(z,{id:`gizmo.appeals.closeButton`,defaultMessage:`Close`})}),type:`success`,children:(0,K.jsx)(`div`,{className:`flex flex-col gap-2 text-sm`,children:(0,K.jsx)(`div`,{children:(0,K.jsx)(z,{id:`gizmo.appeals.appealSubmittedText`,defaultMessage:`Your appeal has been submitted. We will get back to you as soon as possible.`})})})})}function Xt({gizmoId:e,onClose:t}){let n=ae(()=>Me(e).data),r=Ke(),i=async()=>{await le.postGizmoCancelAppeal(r,e)};return(0,K.jsx)(S,{testId:`modal-gizmo-appeal-sent`,isOpen:!0,onClose:Ae,primaryButton:(0,K.jsx)(x.Button,{color:`primary`,onClick:()=>{i(),t?.()},children:(0,K.jsx)(z,{id:`gizmo.appeals.cancelAppealButton`,defaultMessage:`Cancel appeal`})}),type:`warning`,children:(0,K.jsxs)(`div`,{className:`flex flex-col gap-2 text-sm`,children:[(0,K.jsx)(`h2`,{className:`text-lg font-semibold`,children:(0,K.jsx)(z,{id:`gizmo.appeals.appealReviewingHeader`,defaultMessage:`Reviewing your appeal`})}),(0,K.jsx)(`p`,{children:(0,K.jsx)(z,{id:`gizmo.appeals.appealSentModalText`,defaultMessage:`During the review you can continue using “{gizmoName}” as your private GPT, but won’t be able to update it or share it with others.`,values:{gizmoName:n?.gizmo.display.name}})})]})})}function Zt({appealState:e,onAppealClose:t,onAppealSubmitted:n}){let r=ye(`4226692983`),[i,a]=(0,G.useState)(!1);return i?(0,K.jsx)(Yt,{onClose:()=>{a(!1),n?.()}}):(0,K.jsxs)(K.Fragment,{children:[e?.showModal===2&&(0,K.jsx)(Xt,{gizmoId:e.gizmoId,onClose:t}),e?.showModal===1&&(0,K.jsx)(Jt,{gizmoId:e.gizmoId,sharingRecipient:e.sharingRecipient,categories:e.categories,moderationType:e.moderationType,sharingTargets:e.sharingTargets,appealAvailable:r,onClose:()=>t?.(),onAppealSubmitted:()=>a(!0)})]})}var Qt,G,K,$t,en,tn,nn,rn,an=e((()=>{f(),Be(),k(),d(),o(),A(),ne(),Ce(),Ze(),Qt=n(he()),j(),G=n(Je()),B(),ze(),Vt(),K=L(),$t=s.a`bold underline`,en=s.textarea`w-full text-sm overflow-y-auto rounded-lg border px-3 py-2 focus:ring-2 focus:ring-blue-400 border-token-border-medium bg-token-main-surface-primary h-32`,tn=function(e){return e[e.None=0]=`None`,e[e.AppealAvailable=1]=`AppealAvailable`,e[e.AppealSent=2]=`AppealSent`,e}({}),nn=function(e){return e[e.None=0]=`None`,e[e.PublishBlocked=1]=`PublishBlocked`,e[e.RemovedFromMarketplace=2]=`RemovedFromMarketplace`,e[e.RemovedFromPublic=3]=`RemovedFromPublic`,e[e.RemovedFromPrivate=4]=`RemovedFromPrivate`,e[e.Recategorized=5]=`Recategorized`,e}({}),rn={[y.User]:y.Private,[y.Group]:y.Private,[y.Email]:y.Private,[y.WorkspaceLink]:y.Workspace}}));function on(e,t){if(t==null)return e;function n(e){return typeof e==`object`&&e?Array.isArray(e)?e.map(n):Object.fromEntries(Object.entries(e).map(([e,t])=>[e,n(t)])):e===null?void 0:e}return t=n(t),{...e,...t}}function sn(e){switch(e){case 0:return`Loading`;case 1:return`Uploading profile picture`;case 2:return`Generating profile picture`;case 3:return`GPT name too long`;case 4:return`GPT description too long`;case 5:return`GPT instructions too long`;case 6:return`GPT name cannot be empty`;case 7:return`Public actions require valid privacy policy URLs`;case 8:return`Public GPTs must have a category`}}function cn(e){return e===`link`||e===`marketplace`}function ln(e){try{return new URL(e),!0}catch{return!1}}function un(e,t,n){let r=e.name.length>50,i=(e.description?.length??0)>300,a=(e.instructions?.length??0)>lt,o=[];if(e?.name===``&&o.push(6),r&&o.push(3),i&&o.push(4),a&&o.push(5),t!=null&&cn(t)){let t=e.tools?.filter(e=>e.type===be.JIT_PLUGIN);for(let e of t){let t=e.metadata?.privacy_policy_url;if(t==null||!ln(t)){o.push(7);break}}}return t===y.Marketplace&&n==null&&o.push(8),o}var dn,fn,pn,mn=e((()=>{P(),o(),ut(),B(),dn=function(e){return e[e.Loading=0]=`Loading`,e[e.UploadingProfilePic=1]=`UploadingProfilePic`,e[e.GeneratingProfilePic=2]=`GeneratingProfilePic`,e[e.GizmoNameTooLong=3]=`GizmoNameTooLong`,e[e.GizmoDescriptionTooLong=4]=`GizmoDescriptionTooLong`,e[e.GizmoInstructionsTooLong=5]=`GizmoInstructionsTooLong`,e[e.NameEmpty=6]=`NameEmpty`,e[e.MissingPublicActionPrivacyPolicyURL=7]=`MissingPublicActionPrivacyPolicyURL`,e[e.MissingCategory=8]=`MissingCategory`,e}({}),fn={id:void 0,instructions:``,name:``,description:``,emoji:void 0,theme:void 0,profilePictureId:void 0,profilePictureUrl:void 0,promptStarters:[],sharing:{recipient:y.Private,subjects:[]},tools:[{type:be.IMAGE_GEN}],files:[],defaultModel:null,trainingDisabled:!1,liveVersion:0,contextStuffingBudget:null,firstPartyProjectType:null},pn=Ge({instructionsWarning:{id:`gizmo.instructionsWarning`,defaultMessage:`Conversations with your GPT can potentially include part or all of the instructions provided.`}})}));function hn(e){return!cn(e.sharingRecipient??y.Private)&&ye(`1056818577`)}function gn(e,t){return t&&cn(e)?y.Private:e}var _n=e((()=>{Ce(),mn(),o()}));function vn(){"use forget";let e=(0,bn.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,q.jsx)(`div`,{role:`status`,className:`border-token-border-status-warning bg-token-bg-status-warning text-token-text-status-warning rounded-md border px-2.5 py-1.5 text-xs leading-4`,children:(0,q.jsx)(z,{id:`gizmo.publish.new_gpt.public_sharing_disabled.notice`,defaultMessage:`Sharing GPTs with the public is no longer available. <link>Learn more</link>`,values:{link:yn}})}),e[0]=t):t=e[0],t}function yn(e){return(0,q.jsx)(`a`,{href:`https://help.openai.com/en/articles/8554397-creating-a-gpt`,target:`_blank`,rel:`noopener noreferrer`,className:`underline`,children:e})}var bn,q,xn=e((()=>{bn=Qe(),B(),q=L()})),Sn=t({GizmoSharingDetails:()=>$,GizmoTile:()=>Mn,GizmoUpdatedModal:()=>jn,HipaaGizmoShareWarning:()=>Cn,SHARE_LEVEL_ICONS:()=>Q,ShareGizmoModal:()=>kn,ShareLevelItem:()=>Y,sharingSubjectToSharingParam:()=>On});function Cn(){return(0,Z.jsxs)(`div`,{className:`border-token-border-medium bg-token-main-surface-secondary text-token-text-primary flex items-start gap-3 rounded-md border px-4 py-3 text-sm`,children:[(0,Z.jsx)(Pe,{className:`icon-sm interactive-label-warning-secondary mt-0.5 shrink-0`}),(0,Z.jsx)(z,{id:`gizmo.share.hipaaCompliance.warning`,defaultMessage:`OpenAI supports HIPAA compliance for your use of custom GPTs in this workspace. If you share or publish this GPT with others, your BAA does not apply to their use. Do not represent this GPT to third parties as HIPAA compliant.`})]})}function wn(e,t){return C(e)?C(t)&&e.user_id===t.user_id:v(e)?v(t)&&e.group_id===t.group_id:ve(e)?ve(t)&&e.user_email.toLowerCase()===t.user_email.toLowerCase():e.type===t.type}function Tn(e){return v(e)?e.group_name:C(e)?e.user_name:e.user_email}function En(e){return C(e)?e.user_email:null}function Dn(e){return v(e)?e.group_name:C(e)?`${e.user_name} ${e.user_email}`:e.user_email}function On(e){if(typeof e.type==`string`)return e;let t=zn[e.type];if(!t)throw Error(`Unknown sharing subject type: `+e.type);return{...e,type:t}}function kn({gizmo:e,publishedGizmo:t,updateGizmo:n,promoteGizmo:i,appealGizmo:o,setAppealState:s,showActionsModal:c,shareOnly:u,onClose:d,workspaceOwner:f=!1}){let p=V(),_=ae(te),{data:ne}=l(f?void 0:e.id),ie=ne?.gizmo.migrated_plugin_id??e.migratedPluginId??t?.gizmo.migrated_plugin_id,b=g(ie),x=Se(),oe=hn(e),ue=x?.isHipaaCompliantWorkspace??!1,de=r().trim(),fe=x?.id,{data:he,isLoading:ve}=Fe(fe),ye=Lt(he),xe=x?.isEnterprisey()??!1,Ce=x?.data?.role,Te=Ce!=null&&ft(Ce),Ee;Ee=fe==null?void 0:f||Te||!xe?!0:ve?void 0:he?.permissions?.includes(Oe.MemberRoleView)??!1;let w=de||`your workspace`,T=He(),E=me(),[O,ke]=(0,X.useState)(void 0);(0,X.useEffect)(()=>{if(O===void 0)if(t?.gizmo.display.categories&&t?.gizmo.display.categories.length>0){let e=E.data?.categories.find(e=>e.id===t?.gizmo.display.categories[0]);e&&ke(e)}else E.data!==void 0&&ke(E.data.categories[E.data.categories.length-1])},[E.data,O,t]);let[k,Ae]=(0,X.useState)(()=>gn(e.sharingRecipient??y.Private,oe)),[A,j]=(0,X.useState)(e.sharing?.subjects??[]),[je,Me]=(0,X.useState)(null),[Ne,Pe]=(0,X.useState)(!1),Ie=(0,X.useRef)(null),Le=(0,X.useRef)(A.length);(0,X.useEffect)(()=>{A.length>Le.current&&requestAnimationFrame(()=>{Ie.current?.scrollTo({top:Ie.current.scrollHeight,behavior:`smooth`})}),Le.current=A.length},[A]);let Re=(0,X.useCallback)(()=>!Ve(e.sharing?.subjects,A)||e.sharingRecipient!==k,[e.sharing,e.sharingRecipient,k,A]),P=Ke(),F=un(e,k,O?.id??void 0),ze=F.includes(dn.MissingPublicActionPrivacyPolicyURL),Be=e.tools.find(e=>e.type===be.JIT_PLUGIN&&!e.metadata.privacy_policy_url);if(_||b)return(0,Z.jsx)(S,{isOpen:!0,onClose:d,title:(0,Z.jsx)(z,{...b?ee.title:_e.readOnlyTitle}),showCloseButton:!0,children:(0,Z.jsx)(z,{...b?ee.notice:_e.sharingNotice})});if(je)return(0,Z.jsx)(jn,{publishedGizmo:je,sharing:{recipient:k,subjects:A},workspaceName:w,onClose:d});function We(e){A.find(t=>wn(t,e))||j([...A,e])}let L=re(A);function R(e){let t=A.filter(e=>[M.WORKSPACE,M.ALL].indexOf(e.type)===-1);e!=null&&t.push(e),j(t)}function Ge(e){switch(Ae(e),e){case y.Marketplace:case y.Link:R({type:M.ALL,capabilities:I});break;case y.Workspace:case y.WorkspaceLink:R({type:M.WORKSPACE,capabilities:I});break;default:R(null)}}function qe(e){L!=null&&j(A.map(t=>t===L?{...t,capabilities:e}:t))}function B(e,t,n){return e.type===M.USER&&e.user_id.indexOf(`__`)===-1?{...e,user_id:e.user_id+`__`+x?.getWorkspaceId()}:e}async function Je(e,r){if(Ne||te()||g(ie))return;if(e&&!r)throw Error(`Cannot share a gizmo that hasn't been promoted before`);if(!O)return;Pe(!0);let o=A.map(B).map(On);if(o=m(k,o,L?.capabilities??I),f)return!x||!r?(a.warning(`Unable to change sharing settings`),d()):(await ce.safePost(`/accounts/{account_id}/gpts/{gizmo_id}/share`,{parameters:{path:{account_id:x.id,gizmo_id:r}},requestBody:{sharing:o}}),a.success(p.formatMessage({id:`SWSzcY`,defaultMessage:`Sharing settings updated`})),P.invalidateQueries({queryKey:[`workspace`]}),d());if(e){if(!r||!t)throw Error(`No gizmo ID to share`);try{let e={sharing:o};O&&(e.categories=[O.id]);let i=await le.shareGizmo(r,e);if(i.error)Bt(k,i.sharing_targets??void 0)?(s?.({gizmoId:t.gizmo.id,sharingRecipient:k,categories:t.gizmo.display.categories,moderationType:nn.PublishBlocked,sharingTargets:i.sharing_targets??void 0,showModal:tn.AppealAvailable}),d()):a.warning(p.formatMessage({id:`tmIKmp`,defaultMessage:`Unable to share GPT`}));else{if(i.resource==null)throw Error(`Missing shared gizmo resource`);P.setQueryData([`gizmo`,{gizmoId:t.gizmo.id},{draft:!1}],e=>i.resource),n?.(e=>({...e,sharing:{recipient:k,subjects:A},sharingRecipient:k})),a.success(p.formatMessage({id:`SWSzcY`,defaultMessage:`Sharing settings updated`})),d()}}catch{return a.warning(p.formatMessage({id:`dKC65l`,defaultMessage:`Failed to update sharing settings`})),d()}}else{if(i){let e=await i({subjects:o,recipient:k},O.id);r||=e?.gizmo.id,Me(e??null),n?.({liveVersion:e?.gizmo.live_version??void 0})}P.invalidateQueries({queryKey:[`gizmo`,{gizmoId:r}]})}Pe(!1),P.invalidateQueries({queryKey:[`gizmos`]}),P.refetchQueries({queryKey:[`gizmos`,`discovery`]}),P.refetchQueries({queryKey:[`gizmo`,{gizmoId:r}]}),P.invalidateQueries({queryKey:[`gizmo`,`userActionSettings`,{gizmoId:r}]}),P.invalidateQueries({queryKey:[`workspace`]}),n?.({sharing:{recipient:k,subjects:A},sharingRecipient:k},!1)}let Ye=!t||Pn(t.gizmo.author.user_id.split(`__`)[0],T?.id),Xe=t?.gizmo.author.display_name||null;return(0,Z.jsx)(S,{testId:`modal-share-gizmo`,type:`success`,className:`max-w-[555px]`,size:`custom`,isOpen:!0,onClose:d,primaryButton:Bt(k,e.sharingTargets)?(0,Z.jsx)(N,{onClick:()=>o(k,O?.id),children:(0,Z.jsx)(z,{id:`yS4os0`,defaultMessage:`Learn more`})}):(0,Z.jsx)(N,{onClick:()=>Je(u,t?.gizmo.id),loading:Ne,disabled:F.length>0||!W(k,e.sharingTargets),children:u?(0,Z.jsx)(z,{id:`BEKjVh`,defaultMessage:`Save`}):(0,Z.jsx)(z,{id:`24j5ts`,defaultMessage:`Update`})}),secondaryButton:(0,Z.jsxs)(Z.Fragment,{children:[Re()&&(0,Z.jsx)(`div`,{className:`text-token-text-secondary absolute start-6 bottom-8 text-sm`,children:(0,Z.jsx)(z,{id:`9CkgC4`,defaultMessage:`Unsaved changes`})}),t&&(0,Z.jsx)(N,{color:`secondary`,onClick:e=>se(t,pe(),e,p.formatMessage({id:`KdDqMm`,defaultMessage:`Copied link to clipboard`})),children:(0,Z.jsx)(z,{id:`wvL15a`,defaultMessage:`Copy link`})})]}),title:p.formatMessage({id:`7JggXH`,defaultMessage:`Share GPT`}),showCloseButton:!0,children:(0,Z.jsxs)(`div`,{className:`flex flex-col space-y-4`,children:[(0,Z.jsx)(Nn,{onAdd:e=>We(e),publishedGizmo:t,canListMembers:Ee,allowScimGroupSharing:ye}),ue&&(0,Z.jsx)(Cn,{}),(0,Z.jsx)(`h3`,{className:`text-base font-semibold`,children:(0,Z.jsx)(z,{id:`bNQXcV`,defaultMessage:`Share with...`})}),(0,Z.jsxs)(`div`,{ref:Ie,className:`max-h-[200px] space-y-2 overflow-y-auto`,children:[(0,Z.jsxs)(`div`,{className:`mb-4 flex flex-row items-center justify-between space-x-3`,children:[(0,Z.jsx)(`div`,{className:`shrink-0 grow-0 self-start`,children:Ye?(0,Z.jsx)(Ue,{user:T}):(0,Z.jsx)(D,{name:Xe??`User`,initialsCount:2})}),(0,Z.jsx)(`div`,{className:`grow text-base font-semibold`,children:Ye?(0,Z.jsxs)(`div`,{className:`flex flex-col`,children:[(0,Z.jsx)(z,{id:`U7tzof`,defaultMessage:`{userName} (you)`,values:{userName:T?.name}}),(0,Z.jsx)(`span`,{className:`text-token-text-secondary -mt-1 text-sm`,children:T?.email})]}):Xe?(0,Z.jsx)(z,{id:`scRZqV`,defaultMessage:`{userName} (builder)`,values:{userName:Xe}}):(0,Z.jsx)(z,{id:`gizmo.share.builder.fallbackLabel`,defaultMessage:`Builder`})})]}),A.map((e,t)=>De(e)&&(0,Z.jsxs)(`div`,{className:`mb-4 flex flex-row items-center justify-between space-x-3`,children:[(0,Z.jsx)(D,{name:Dn(e),initialsCount:C(e)?2:1,className:h(`shrink-0 grow-0`,C(e)&&`self-start`)}),(0,Z.jsxs)(`div`,{className:`flex grow flex-col`,children:[(0,Z.jsxs)(`span`,{className:`flex flex-row`,children:[(0,Z.jsx)(`span`,{className:`me-2 text-base font-semibold`,children:Tn(e)}),v(e)&&e.is_scim_managed&&(0,Z.jsx)(Ln,{})]}),C(e)&&(0,Z.jsx)(`span`,{className:`text-token-text-secondary -mt-1 text-sm`,children:En(e)})]}),(0,Z.jsxs)(H.Root,{children:[(0,Z.jsxs)(H.Trigger,{className:`text-token-text-secondary text-base whitespace-nowrap`,children:[(0,Z.jsx)(z,{...J(e.capabilities)}),(0,Z.jsx)(mt,{className:`icon`})]}),(0,Z.jsx)(H.Portal,{children:(0,Z.jsxs)(H.Content,{className:`max-w-[320px]`,children:[Rn().map((t,n)=>(0,Z.jsx)(An,{capabilities:t,selected:Ve(t,e.capabilities),onClick:()=>{j(A.map(n=>n===e?{...n,capabilities:t}:n))}},n)),(0,Z.jsx)(H.Separator,{className:`my-2`}),(0,Z.jsx)(H.Item,{onClick:()=>j(A.filter(t=>t!==e)),color:`danger`,icon:kt,children:(0,Z.jsx)(z,{id:`NU0BOB`,defaultMessage:`Remove`})})]})})]})]},t))]}),(0,Z.jsx)(`hr`,{className:`border-token-border-medium`}),(0,Z.jsx)(`h3`,{className:`text-base font-semibold`,children:(0,Z.jsx)(z,{id:`uqD7Y8`,defaultMessage:`Access`})}),oe&&(0,Z.jsx)(vn,{}),(0,Z.jsxs)(`div`,{className:`-ms-3.5 flex flex-row items-center justify-between space-x-3`,children:[(0,Z.jsxs)(U.Root,{value:k,onValueChange:e=>Ge(e),children:[(0,Z.jsxs)(U.Trigger,{children:[(0,Z.jsx)(U.Value,{}),(0,Z.jsx)(U.Icon,{})]}),(0,Z.jsx)(U.Portal,{children:(0,Z.jsxs)(U.Content,{children:[(0,Z.jsxs)(U.Group,{children:[(0,Z.jsx)(U.Label,{children:(0,Z.jsx)(z,{id:`YIQwaP`,defaultMessage:`Private`})}),k===y.User?(0,Z.jsx)(U.Item,{value:y.User,children:(0,Z.jsx)(Y,{shareLevel:y.User,workspaceName:w})}):(0,Z.jsx)(U.Item,{value:y.Private,children:(0,Z.jsx)(Y,{shareLevel:y.Private,workspaceName:w})})]}),(0,Z.jsx)(U.Separator,{}),(0,Z.jsx)(we,{triggerAs:null,label:p.formatMessage({id:`n0m61x`,defaultMessage:`Your workspace has disabled sharing with the workspace.`}),side:`bottom`,disabled:W(`workspace`,e.sharingTargets),children:(0,Z.jsxs)(U.Group,{children:[(0,Z.jsx)(U.Label,{children:w}),(0,Z.jsx)(U.Item,{value:y.WorkspaceLink,disabled:!W(y.WorkspaceLink,e.sharingTargets)&&!W(y.Workspace,e.sharingTargets),children:(0,Z.jsx)(Y,{shareLevel:y.WorkspaceLink,workspaceName:w})}),(0,Z.jsx)(U.Item,{value:y.Workspace,disabled:!W(`workspace`,e.sharingTargets),children:(0,Z.jsx)(Y,{shareLevel:y.Workspace,workspaceName:w})})]})}),!oe&&(0,Z.jsxs)(Z.Fragment,{children:[(0,Z.jsx)(U.Separator,{}),(0,Z.jsx)(we,{triggerAs:null,label:p.formatMessage({id:`IHnort`,defaultMessage:`Your workspace has disabled public sharing.`}),side:`bottom`,disabled:W(`marketplace`,e.sharingTargets),children:(0,Z.jsxs)(U.Group,{children:[(0,Z.jsx)(U.Label,{children:(0,Z.jsx)(z,{id:`PjY9bi`,defaultMessage:`Public`})}),(0,Z.jsx)(U.Item,{value:y.Link,disabled:!W(`link`,e.sharingTargets),children:(0,Z.jsx)(Y,{shareLevel:y.Link,workspaceName:w})}),(0,Z.jsx)(U.Item,{disabled:!W(`marketplace`,e.sharingTargets),value:y.Marketplace,children:(0,Z.jsx)(Y,{shareLevel:y.Marketplace,workspaceName:w})})]})})]})]})})]}),k!==y.Private&&k!==y.User&&(0,Z.jsxs)(H.Root,{children:[(0,Z.jsxs)(H.Trigger,{className:`text-token-text-secondary text-base whitespace-nowrap`,children:[L==null?(0,Z.jsx)(z,{...J(I)}):(0,Z.jsx)(z,{...J(L.capabilities)}),(0,Z.jsx)(mt,{className:`icon`})]}),(0,Z.jsx)(H.Portal,{children:(0,Z.jsxs)(H.Content,{className:`max-w-[320px]`,children:[(0,Z.jsx)(An,{onClick:()=>qe(I),capabilities:I,selected:Ve(L?.capabilities,I)}),k!==y.Marketplace&&k!==y.Link&&(0,Z.jsx)(An,{onClick:()=>qe(ge),capabilities:ge,selected:Ve(L?.capabilities,ge)})]})})]})]}),ze&&(0,Z.jsx)(`div`,{className:`text-xs text-red-500`,children:(0,Z.jsx)(z,{id:`/iw1Iv`,defaultMessage:`Public actions require valid privacy policy URLs. Click <fixlink>here</fixlink> to update.`,values:{fixlink:e=>(0,Z.jsx)(`button`,{onClick:()=>{c?.(Be?.metadata.action_id),d()},className:`underline`,children:e})}})}),(k===y.Marketplace||k===y.Workspace)&&(W(k,e.sharingTargets)?(0,Z.jsx)(Mn,{gizmo:e,category:O?.id,categories:E.data?.categories,onCategoryChange:e=>ke(e)}):Bt(k,e.sharingTargets)?(0,Z.jsx)(`div`,{className:`pb-2 text-xs text-red-500`,children:(0,Z.jsx)(qt,{sharingRecipient:k,moderatedFields:zt(k,e.sharingTargets)??[],appealAvailable:!0})}):(0,Z.jsx)(`div`,{className:`pb-2 text-xs text-red-500`,children:(0,Z.jsx)(z,{id:`BzqqKH`,defaultMessage:`Your workspace's settings don't allow this level of access. An owner of the workspace can change this setting in the workspace's GPTs settings.`})}))]})})}function J(e){return e.can_write?R({id:`SubCqD`,defaultMessage:`Can edit`}):e.can_view_config?R({id:`V6OjbX`,defaultMessage:`Can view settings`}):e.can_read?R({id:`/0j34W`,defaultMessage:`Can chat`}):R({id:`x2E8ET`,defaultMessage:`Unknown`})}function An({capabilities:e,selected:t,onClick:n}){let r=null;e.can_write?r=yt:e.can_view_config?r=Et:e.can_read&&(r=Dt);let i=e.can_write?(0,Z.jsx)(z,{id:`wKFMT1`,defaultMessage:`Edit settings, duplicate, and chat`}):e.can_view_config?(0,Z.jsx)(z,{id:`Y/J4TZ`,defaultMessage:`See settings, duplicate, and chat`}):e.can_read?(0,Z.jsx)(z,{id:`PvgEQP`,defaultMessage:`Chat with this GPT only`}):null;return(0,Z.jsxs)(H.Item,{className:`flex h-auto flex-row items-center px-3 py-3`,onClick:n,icon:r,children:[(0,Z.jsxs)(`div`,{className:`me-1 flex grow flex-col`,children:[(0,Z.jsx)(`span`,{className:`mb-0.5 text-base leading-tight`,children:(0,Z.jsx)(z,{...J(e)})}),(0,Z.jsx)(`span`,{className:`text-token-text-secondary text-xs`,children:i})]}),(0,Z.jsx)(bt,{className:h(`icon-lg shrink-0`,!t&&`invisible`)})]})}function Y({shareLevel:e,workspaceName:t,hasInviteSharing:n=!0}){(e===y.User||e===y.Group||e===y.Email)&&(e=y.Private);let r=Q[e];return(0,Z.jsxs)(`div`,{className:`flex flex-row items-center gap-3 text-sm`,children:[(0,Z.jsx)(r,{className:`icon text-token-text-secondary`}),(0,Z.jsx)(`div`,{className:`pt-px text-start`,children:!n&&e===y.Private?(0,Z.jsx)(z,{id:`vVJhYB`,defaultMessage:`Only me`}):(0,Z.jsx)(z,{...Bn[e],values:{workspaceName:t}})})]})}function jn({publishedGizmo:e,sharing:t,workspaceName:n,onClose:r}){let i=V();return(0,Z.jsxs)(S,{testId:`modal-gizmo-updated`,isOpen:!0,onClose:r,showCloseButton:!0,className:`w-[304px]`,title:(0,Z.jsx)(z,{id:`5CEceY`,defaultMessage:`GPT Updated`}),primaryButton:(0,Z.jsx)(N,{onClick:()=>{window.location.href=`/g/${e.gizmo.id}`},children:(0,Z.jsx)(z,{id:`RF75o5`,defaultMessage:`View GPT`})}),secondaryButton:(0,Z.jsx)(N,{color:`secondary`,onClick:t=>se(e,pe(),t,i.formatMessage({id:`KdDqMm`,defaultMessage:`Copied link to clipboard`})),children:(0,Z.jsx)(z,{id:`9hLOl9`,defaultMessage:`Copy link`})}),type:`success`,children:[(0,Z.jsx)(Mn,{gizmo:{profilePictureUrl:e.gizmo.display.profile_picture_url??void 0,name:e.gizmo.display.name}}),(0,Z.jsx)($,{sharing:t,workspaceName:n})]})}function Mn({gizmo:e,category:t,categories:n,onCategoryChange:r}){let{data:i,isLoading:a}=T(),o=n?.find(e=>e.id===t);return(0,Z.jsxs)(`div`,{children:[(0,Z.jsxs)(`div`,{className:h(`bg-token-main-surface-secondary mb-[1px] flex flex-row items-center space-x-2 p-4`,a&&`invisible`,n?`rounded-t-lg`:`rounded-lg`),children:[(0,Z.jsx)(dt,{isFirstParty:!1,className:`h-11 w-11`,src:e.profilePictureUrl}),(0,Z.jsxs)(`div`,{className:`flex grow flex-col space-y-0`,children:[(0,Z.jsx)(`span`,{className:`text-base font-semibold`,children:e.name}),(0,Z.jsx)(et,{builderName:i?.display_name,builderUrl:i?.website_url,socials:[i?.socials.linkedin,i?.socials.github].filter(e=>e!=null),className:`text-token-text-secondary text-xs`})]})]}),n&&(0,Z.jsxs)(`div`,{className:`bg-token-main-surface-secondary flex min-h-[56px] flex-row items-center justify-between space-x-2 rounded-b-lg px-4 text-base`,children:[(0,Z.jsx)(`span`,{className:`font-semibold`,children:(0,Z.jsx)(z,{id:`JcA4/t`,defaultMessage:`Category`})}),(0,Z.jsx)(`div`,{className:`text-token-text-secondary`,children:r?(0,Z.jsx)(nt,{size:`small`,triggerButton:(0,Z.jsxs)(`button`,{className:`flex items-center gap-1`,children:[o?.title,(0,Z.jsx)(mt,{className:`icon`})]}),children:n.map((e,t)=>(0,Z.jsx)(H.Item,{onClick:()=>r(e),children:e.title},t))}):(0,Z.jsx)(`span`,{className:`text-token-text-secondary`,children:o?.title})})]})]})}function Nn({onAdd:e,publishedGizmo:t,canListMembers:n,allowScimGroupSharing:r}){let i=V(),a=b(),[o,s]=(0,X.useState)(``),c=n===!0,l=$e(c?a?.id:void 0,0,o,5).data?.items.filter(e=>e.account_user_id!==t?.gizmo.author.user_id),u=r,{data:d}=qe({queryKey:[a?.id,`groups`,`filtered`,o,u],queryFn:()=>ce.safeGet(`/accounts/{account_id}/groups`,{parameters:{path:{account_id:a.id},query:{query:o,offset:0,orderby:`@score`,limit:20,include_scim_groups:u}}}),enabled:c&&o.trim()!==``&&a!=null&&!!a.getWorkspaceId()});function f(t,n,r){e({type:M.GROUP,group_id:t,group_name:n,capabilities:{...I},is_scim_managed:r}),s(``)}function p(t,n,r){a&&(e({type:M.USER,user_id:t,user_name:n,user_email:r,avatar_url:null,capabilities:{...I}}),s(``))}let m=a?.isEnterprisey()?i.formatMessage({id:`xy/AMO`,defaultMessage:`Add people and groups from your workspace`}):i.formatMessage({id:`Lh9njB`,defaultMessage:`Add people from your workspace`}),{eligible:h}=Le(F.hasSeenMultipleGPTEditorsTooltip),g=!c,_=g?(0,Z.jsx)(at,{ariaLabel:m,disabled:!0,inputClassName:`bg-token-bg-primary!`,name:`share-with-input`,placeholder:m,value:o}):(0,Z.jsx)(Ft,{label:m,name:`share-with-input`,inputClassName:`bg-token-bg-primary!`,inputValue:o,onInputChange:s,suggestions:[...l?.map(e=>({id:e.id,className:`flex flex-col rounded-xs p-1 hover:bg-token-main-surface-tertiary rounded-xs p-1 text-sm`,focusedClassName:`bg-token-main-surface-tertiary`,onClick:()=>p(e.account_user_id,e.name,e.email??``),children:(0,Z.jsxs)(Z.Fragment,{children:[(0,Z.jsx)(`span`,{className:`w-full font-semibold`,children:e.name}),(0,Z.jsx)(`span`,{className:`text-token-text-secondary text-sm`,children:e.email})]})}))??[],...d?.items.map(e=>({id:e.id,className:`flex flex-col rounded-xs p-1 hover:bg-token-main-surface-tertiary rounded-xs p-1 text-sm`,focusedClassName:`bg-token-main-surface-tertiary`,onClick:()=>f(e.id,e.name,e.is_scim_managed??!1),children:(0,Z.jsxs)(`span`,{className:`flex flex-col`,children:[(0,Z.jsxs)(`span`,{className:`flex flex-row`,children:[(0,Z.jsx)(`span`,{className:`me-2 font-semibold`,children:e.name}),e.is_scim_managed&&(0,Z.jsx)(Ln,{})]}),(0,Z.jsx)(`span`,{className:`text-token-text-secondary text-sm`,children:(0,Z.jsx)(z,{id:`r3Rx6X`,defaultMessage:`{numMembers, plural, one {1 member} other {# members}}`,values:{numMembers:e.num_members}})})]})}))??[]]});return(0,Z.jsxs)(Z.Fragment,{children:[n===!1&&(0,Z.jsxs)(`div`,{className:`border-token-border-medium bg-token-main-surface-secondary text-token-text-primary flex items-center gap-3 rounded-md border px-4 py-3`,children:[(0,Z.jsx)(Pe,{className:`icon-sm interactive-label-warning-secondary shrink-0`}),(0,Z.jsx)(z,{id:`6e1nG9`,defaultMessage:`You don't have permission to search your workspace members. Please contact your workspace admin for access or update the workspace settings.`})]}),n!==!1&&(0,Z.jsx)(`div`,{className:`flex w-full flex-row space-x-3`,children:h&&!g?(0,Z.jsx)(Mt,{announcementKey:F.hasSeenMultipleGPTEditorsTooltip,show:h,side:`right`,align:`center`,className:`w-full`,sideOffset:0,contentClassName:`z-100`,childrenWrapperClassName:`w-full`,theme:`bright`,dismissOnOutsideClick:!0,badge:`new`,description:i.formatMessage({id:`SR33A6`,defaultMessage:`You can now add editors to collaborate on your GPTs.`}),onDismiss:()=>je(F.hasSeenMultipleGPTEditorsTooltip),children:_}):_})]})}function Pn(e,t){return e===void 0||t===void 0?!1:e.split(`__`)[0]===t.split(`__`)[0]}function Fn(e){return!De(e)}var In,X,Z,Ln,Rn,zn,Bn,Vn,Q,$,Hn=e((()=>{In=Qe(),oe(),P(),c(),Ne(),de(),st(),it(),_(),Pt(),rt(),At(),Tt(),xt(),wt(),gt(),_t(),pt(),Ot(),Ct(),ke(),Be(),Nt(),w(),ot(),jt(),i(),ne(),E(),We(),Ie(),fe(),A(),p(),It(),xe(),Ze(),Ee(),O(),X=n(Je()),B(),Vt(),an(),tt(),ct(),k(),mn(),_n(),xn(),Re(),d(),o(),ue(),Z=L(),Xe(),Ln=Te(()=>Ye(()=>import(`./fbf44c55-o2lsxc57nll08quu.js`).then(e=>e.DirectorySyncResourceManagedIndication),__vite__mapDeps([0,1,2]))),Rn=()=>[I,ge,u],zn={[M.USER]:y.User,[M.GROUP]:y.Group,[M.WORKSPACE]:y.Workspace,[M.ALL]:y.Marketplace},Bn=Ge({private:{id:`pSXBWQ`,defaultMessage:`Invite-only`},user:{id:`pSXBWQ`,defaultMessage:`Invite-only`},group:{id:`pSXBWQ`,defaultMessage:`Invite-only`},email:{id:`pSXBWQ`,defaultMessage:`Invite-only`},workspace_link:{id:`Giaxt1`,defaultMessage:`Anyone at {workspaceName} with the link`},workspace:{id:`XLHaTU`,defaultMessage:`{workspaceName}`},link:{id:`uP1+Ri`,defaultMessage:`Anyone with the link`},marketplace:{id:`82Ilac`,defaultMessage:`GPT Store`}}),Vn=Ge({workspace:{id:`1kpopF`,defaultMessage:`Published to {workspaceName}`},marketplace:{id:`hdTRpJ`,defaultMessage:`Published to GPT Store`}}),Q={private:ht,user:ht,group:ht,email:ht,workspace_link:vt,workspace:St,link:vt,marketplace:ie.SidebarApps},$=e=>{"use forget";let t=(0,In.c)(26),{sharing:n,author:r,workspaceName:i,showAudiencePermissions:a}=e,o=a!==void 0&&a,s=n.recipient,c,l,u,d;if(t[0]!==r||t[1]!==s||t[2]!==n.subjects||t[3]!==o||t[4]!==i){let e=n.subjects.filter(Fn),a=o&&e.length>0?e.map(e=>({level:e.type===M.WORKSPACE?s===y.Workspace?y.Workspace:y.WorkspaceLink:s===y.Marketplace?y.Marketplace:y.Link,subject:e})):[{level:s,subject:void 0}];t[9]!==r||t[10]!==n.subjects||t[11]!==o?(d=(r!=null||n.subjects.some(De))&&(0,Z.jsxs)(`div`,{className:o?`my-4 flex flex-col gap-4`:`my-4`,children:[(0,Z.jsx)(`h3`,{className:o?`text-base font-semibold`:`text-token-text-secondary text-xs font-semibold`,children:(0,Z.jsx)(z,{id:`/paYH9`,defaultMessage:`Shared with`})}),r!=null&&(0,Z.jsxs)(`div`,{className:`flex items-center gap-3 text-sm`,children:[(0,Z.jsx)(D,{name:r.display_name??r.user_email??``,initialsCount:2,className:`shrink-0`}),(0,Z.jsxs)(`div`,{className:`min-w-0 flex-1 break-words`,children:[(0,Z.jsx)(`div`,{className:`font-semibold`,children:r.display_name??r.user_email}),(0,Z.jsx)(`div`,{className:`text-token-text-secondary`,children:r.user_email})]}),(0,Z.jsx)(`span`,{className:`text-token-text-secondary shrink-0`,children:(0,Z.jsx)(z,{id:`gizmo.pluginMigration.sharing.role.owner`,defaultMessage:`Owner`})})]}),n.subjects&&n.subjects.map((e,t)=>De(e)&&!(r!=null&&C(e)&&e.user_id===r.user_id)&&(0,Z.jsxs)(`div`,{className:o?`flex items-center justify-between gap-3 text-sm`:`flex flex-row items-center justify-between space-x-3 py-2`,children:[o&&(0,Z.jsx)(D,{name:Dn(e),initialsCount:C(e)?2:1,className:`shrink-0`}),(0,Z.jsxs)(`div`,{className:`min-w-0 flex-1 break-words`,children:[(0,Z.jsx)(`span`,{className:o?`text-sm font-semibold`:`text-base font-semibold`,children:Tn(e)}),C(e)&&(0,Z.jsxs)(Z.Fragment,{children:[(0,Z.jsx)(`br`,{}),(0,Z.jsx)(`span`,{className:`text-token-text-secondary text-sm`,children:En(e)})]})]}),(0,Z.jsx)(`span`,{className:`text-token-text-secondary shrink-0`,children:(0,Z.jsx)(z,{...J(e.capabilities)})})]},t))]}),t[9]=r,t[10]=n.subjects,t[11]=o,t[12]=d):d=t[12],c=o?`border-token-border-light mt-4 flex flex-col gap-4 border-t pt-4`:`my-4`;let f=o?`text-base font-semibold`:`text-token-text-secondary text-xs font-semibold`,p;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,Z.jsx)(z,{id:`q9XNZ7`,defaultMessage:`Access`}),t[13]=p):p=t[13],t[14]===f?l=t[15]:(l=(0,Z.jsx)(`h3`,{className:f,children:p}),t[14]=f,t[15]=l);let m;t[16]!==o||t[17]!==i?(m=e=>{let{level:t,subject:n}=e,r=Q[t];return(0,Z.jsxs)(`div`,{className:o?`flex items-center gap-3 text-start text-sm`:`ms-[3px] flex flex-row items-center py-3 text-start text-base font-semibold`,children:[(0,Z.jsx)(r,{className:o?`icon text-token-text-secondary shrink-0`:`md:icon-lg me-3 h-6 w-6 shrink-0`}),(0,Z.jsx)(`div`,{className:o?`min-w-0 flex-1`:`flex flex-col`,children:(0,Z.jsx)(`span`,{className:o?void 0:`font-semibold`,children:(0,Z.jsx)(z,{...o?Bn[t]:Vn[t]??Bn[t],values:{workspaceName:i}})})}),o&&n!=null&&(0,Z.jsx)(`span`,{className:`text-token-text-secondary ms-3 shrink-0 text-sm font-normal`,children:(0,Z.jsx)(z,{...J(n.capabilities)})})]},t)},t[16]=o,t[17]=i,t[18]=m):m=t[18],u=a.map(m),t[0]=r,t[1]=s,t[2]=n.subjects,t[3]=o,t[4]=i,t[5]=c,t[6]=l,t[7]=u,t[8]=d}else c=t[5],l=t[6],u=t[7],d=t[8];let f;t[19]!==c||t[20]!==l||t[21]!==u?(f=(0,Z.jsxs)(`div`,{className:c,children:[l,u]}),t[19]=c,t[20]=l,t[21]=u,t[22]=f):f=t[22];let p;return t[23]!==d||t[24]!==f?(p=(0,Z.jsxs)(Z.Fragment,{children:[d,f]}),t[23]=d,t[24]=f,t[25]=p):p=t[25],p}}));export{W as A,sn as C,Ht as D,nn as E,an as O,pn as S,Zt as T,fn as _,Q as a,mn as b,Y as c,vn as d,xn as f,dn as g,hn as h,Cn as i,Vt as k,Hn as l,_n as m,Mn as n,kn as o,gn as p,jn as r,Sn as s,$ as t,On as u,on as v,tn as w,cn as x,un as y};
+            }`,
+                values: {
+                    numModeratedFields: r
+                }
+            })]
+        }), r > 0 && t?.map(e => (0, K.jsxs)(K.Fragment, {
+            children: [(0, K.jsx)(`p`, {
+                className: `font-bold`,
+                children: (0, K.jsx)(z, {
+                    ...Gt(e.name)
+                })
+            }), (0, K.jsx)(`ul`, {
+                className: `list-disc ps-5`,
+                children: e.reasons.map(e => (0, K.jsxs)(`li`, {
+                    children: [e.description, ` `, e.link ? (0, K.jsx)($t, {
+                        href: e.link,
+                        target: `_blank`,
+                        rel: `noreferrer`,
+                        children: (0, K.jsx)(z, {
+                            id: `gizmo.appeals.learnMore`,
+                            defaultMessage: `Learn more`
+                        })
+                    }) : ``]
+                }, e.description))
+            })]
+        })), n && (0, K.jsx)(`p`, {
+            children: (0, K.jsx)(z, {
+                id: `gizmo.appeals.appealAvailableText`,
+                defaultMessage: `If you think this was a mistake, use the appeal link in the email we sent you. Or you can publish to “Only me” and use this GPT privately.`
+            })
+        })]
+    })
+}
+
+function Jt({
+    gizmoId: e,
+    sharingRecipient: t,
+    categories: n,
+    moderationType: r,
+    sharingTargets: i,
+    appealAvailable: a,
+    onClose: o,
+    onAppealSubmitted: s
+}) {
+    let c = V(),
+        [l, u] = (0, G.useState)(``),
+        [d, f] = (0, G.useState)(0),
+        [p, m] = (0, G.useState)(!1),
+        h = Ke(),
+        g = async () => {
+            m(!0);
+            try {
+                await le.postGizmoAppeal(h, e, l, t, n), f(2), s?.()
+            } finally {
+                m(!1)
+            }
+        }, _ = zt(t, i), v = _?.length ?? 0, ee = b();
+    if (v === 0 && ee?.isEnterprisey()) return (0, K.jsx)(S, {
+        testId: `modal-gizmo-appeal-available`,
+        title: c.formatMessage(Wt(r)),
+        isOpen: !0,
+        onClose: o,
+        showCloseButton: !0,
+        type: `warning`,
+        primaryButton: (0, K.jsx)(x.Button, {
+            color: `primary`,
+            onClick: o,
+            children: (0, K.jsx)(z, {
+                id: `wEsAOU`,
+                defaultMessage: `OK`
+            })
+        }),
+        children: (0, K.jsx)(`p`, {
+            className: `text-sm`,
+            children: (0, K.jsx)(z, {
+                id: `gizmo.appeals.workspaceSettingsMessage`,
+                defaultMessage: `Access to your GPT has been reduced by your workspace's GPT sharing settings. An owner of the workspace can change these settings in the workspace settings page.`
+            })
+        })
+    });
+    switch (d) {
+        case 0:
+            return (0, K.jsx)(S, {
+                testId: `modal-gizmo-appeal-available`,
+                title: c.formatMessage(Wt(r)),
+                isOpen: !0,
+                onClose: o,
+                showCloseButton: !0,
+                primaryButton: (0, K.jsx)(x.Button, {
+                    color: `primary`,
+                    onClick: o,
+                    children: (0, K.jsx)(z, {
+                        id: `gizmo.appeals.contunueButton`,
+                        defaultMessage: `Continue`
+                    })
+                }),
+                type: `warning`,
+                children: (0, K.jsx)(`div`, {
+                    className: `flex flex-col gap-2 text-sm`,
+                    children: (0, K.jsx)(qt, {
+                        sharingRecipient: t,
+                        moderatedFields: _ ?? [],
+                        appealAvailable: a
+                    })
+                })
+            });
+        case 1:
+            return (0, K.jsx)(S, {
+                testId: `modal-gizmo-appeal-form`,
+                title: c.formatMessage({
+                    id: `gizmo.appeals.appealModalTitle`,
+                    defaultMessage: `Appeal`
+                }),
+                isOpen: !0,
+                onClose: o,
+                showCloseButton: !0,
+                shouldIgnoreClickOutside: !0,
+                primaryButton: (0, K.jsx)(x.Button, {
+                    color: `primary`,
+                    onClick: g,
+                    disabled: p || l.trim().length === 0,
+                    children: (0, K.jsx)(z, {
+                        id: `gizmo.appeals.submitAppealButton`,
+                        defaultMessage: `Submit`
+                    })
+                }),
+                secondaryButton: (0, K.jsx)(x.Button, {
+                    onClick: () => f(0),
+                    children: (0, K.jsx)(z, {
+                        id: `gizmo.appeals.backButton`,
+                        defaultMessage: `Back`
+                    })
+                }),
+                type: `warning`,
+                children: (0, K.jsxs)(`div`, {
+                    className: `flex flex-col gap-2 text-sm`,
+                    children: [(0, K.jsx)(`p`, {
+                        children: (0, K.jsx)(z, {
+                            id: `gizmo.appeals.appealReasonText`,
+                            defaultMessage: `Please provide a reason for why you believe this GPT doesn’t violate our policies and should be published`
+                        })
+                    }), (0, K.jsx)(en, {
+                        value: l,
+                        onChange: e => u(e.target.value)
+                    })]
+                })
+            });
+        case 2:
+            return (0, K.jsx)(K.Fragment, {})
+    }
+}
+
+function Yt({
+    onClose: e
+}) {
+    return (0, K.jsx)(S, {
+        testId: `modal-gizmo-appeal-submitted`,
+        title: V().formatMessage({
+            id: `gizmo.appeals.appealSubmittedModalTitle`,
+            defaultMessage: `Appeal submitted`
+        }),
+        isOpen: !0,
+        onClose: e,
+        showCloseButton: !0,
+        primaryButton: (0, K.jsx)(x.Button, {
+            color: `primary`,
+            onClick: e,
+            children: (0, K.jsx)(z, {
+                id: `gizmo.appeals.closeButton`,
+                defaultMessage: `Close`
+            })
+        }),
+        type: `success`,
+        children: (0, K.jsx)(`div`, {
+            className: `flex flex-col gap-2 text-sm`,
+            children: (0, K.jsx)(`div`, {
+                children: (0, K.jsx)(z, {
+                    id: `gizmo.appeals.appealSubmittedText`,
+                    defaultMessage: `Your appeal has been submitted. We will get back to you as soon as possible.`
+                })
+            })
+        })
+    })
+}
+
+function Xt({
+    gizmoId: e,
+    onClose: t
+}) {
+    let n = ae(() => Me(e).data),
+        r = Ke(),
+        i = async () => {
+            await le.postGizmoCancelAppeal(r, e)
+        };
+    return (0, K.jsx)(S, {
+        testId: `modal-gizmo-appeal-sent`,
+        isOpen: !0,
+        onClose: Ae,
+        primaryButton: (0, K.jsx)(x.Button, {
+            color: `primary`,
+            onClick: () => {
+                i(), t?.()
+            },
+            children: (0, K.jsx)(z, {
+                id: `gizmo.appeals.cancelAppealButton`,
+                defaultMessage: `Cancel appeal`
+            })
+        }),
+        type: `warning`,
+        children: (0, K.jsxs)(`div`, {
+            className: `flex flex-col gap-2 text-sm`,
+            children: [(0, K.jsx)(`h2`, {
+                className: `text-lg font-semibold`,
+                children: (0, K.jsx)(z, {
+                    id: `gizmo.appeals.appealReviewingHeader`,
+                    defaultMessage: `Reviewing your appeal`
+                })
+            }), (0, K.jsx)(`p`, {
+                children: (0, K.jsx)(z, {
+                    id: `gizmo.appeals.appealSentModalText`,
+                    defaultMessage: `During the review you can continue using “{gizmoName}” as your private GPT, but won’t be able to update it or share it with others.`,
+                    values: {
+                        gizmoName: n?.gizmo.display.name
+                    }
+                })
+            })]
+        })
+    })
+}
+
+function Zt({
+    appealState: e,
+    onAppealClose: t,
+    onAppealSubmitted: n
+}) {
+    let r = ye(`4226692983`),
+        [i, a] = (0, G.useState)(!1);
+    return i ? (0, K.jsx)(Yt, {
+        onClose: () => {
+            a(!1), n?.()
+        }
+    }) : (0, K.jsxs)(K.Fragment, {
+        children: [e?.showModal === 2 && (0, K.jsx)(Xt, {
+            gizmoId: e.gizmoId,
+            onClose: t
+        }), e?.showModal === 1 && (0, K.jsx)(Jt, {
+            gizmoId: e.gizmoId,
+            sharingRecipient: e.sharingRecipient,
+            categories: e.categories,
+            moderationType: e.moderationType,
+            sharingTargets: e.sharingTargets,
+            appealAvailable: r,
+            onClose: () => t?.(),
+            onAppealSubmitted: () => a(!0)
+        })]
+    })
+}
+var Qt, G, K, $t, en, tn, nn, rn, an = e((() => {
+    f(), Be(), k(), d(), o(), A(), ne(), Ce(), Ze(), Qt = n(he()), j(), G = n(Je()), B(), ze(), Vt(), K = L(), $t = s.a`bold underline`, en = s.textarea`w-full text-sm overflow-y-auto rounded-lg border px-3 py-2 focus:ring-2 focus:ring-blue-400 border-token-border-medium bg-token-main-surface-primary h-32`, tn = function(e) {
+        return e[e.None = 0] = `None`, e[e.AppealAvailable = 1] = `AppealAvailable`, e[e.AppealSent = 2] = `AppealSent`, e
+    }({}), nn = function(e) {
+        return e[e.None = 0] = `None`, e[e.PublishBlocked = 1] = `PublishBlocked`, e[e.RemovedFromMarketplace = 2] = `RemovedFromMarketplace`, e[e.RemovedFromPublic = 3] = `RemovedFromPublic`, e[e.RemovedFromPrivate = 4] = `RemovedFromPrivate`, e[e.Recategorized = 5] = `Recategorized`, e
+    }({}), rn = {
+        [y.User]: y.Private,
+        [y.Group]: y.Private,
+        [y.Email]: y.Private,
+        [y.WorkspaceLink]: y.Workspace
+    }
+}));
+
+function on(e, t) {
+    if (t == null) return e;
+
+    function n(e) {
+        return typeof e == `object` && e ? Array.isArray(e) ? e.map(n) : Object.fromEntries(Object.entries(e).map(([e, t]) => [e, n(t)])) : e === null ? void 0 : e
+    }
+    return t = n(t), {
+        ...e,
+        ...t
+    }
+}
+
+function sn(e) {
+    switch (e) {
+        case 0:
+            return `Loading`;
+        case 1:
+            return `Uploading profile picture`;
+        case 2:
+            return `Generating profile picture`;
+        case 3:
+            return `GPT name too long`;
+        case 4:
+            return `GPT description too long`;
+        case 5:
+            return `GPT instructions too long`;
+        case 6:
+            return `GPT name cannot be empty`;
+        case 7:
+            return `Public actions require valid privacy policy URLs`;
+        case 8:
+            return `Public GPTs must have a category`
+    }
+}
+
+function cn(e) {
+    return e === `link` || e === `marketplace`
+}
+
+function ln(e) {
+    try {
+        return new URL(e), !0
+    } catch {
+        return !1
+    }
+}
+
+function un(e, t, n) {
+    let r = e.name.length > 50,
+        i = (e.description?.length ?? 0) > 300,
+        a = (e.instructions?.length ?? 0) > lt,
+        o = [];
+    if (e?.name === `` && o.push(6), r && o.push(3), i && o.push(4), a && o.push(5), t != null && cn(t)) {
+        let t = e.tools?.filter(e => e.type === be.JIT_PLUGIN);
+        for (let e of t) {
+            let t = e.metadata?.privacy_policy_url;
+            if (t == null || !ln(t)) {
+                o.push(7);
+                break
+            }
+        }
+    }
+    return t === y.Marketplace && n == null && o.push(8), o
+}
+var dn, fn, pn, mn = e((() => {
+    P(), o(), ut(), B(), dn = function(e) {
+        return e[e.Loading = 0] = `Loading`, e[e.UploadingProfilePic = 1] = `UploadingProfilePic`, e[e.GeneratingProfilePic = 2] = `GeneratingProfilePic`, e[e.GizmoNameTooLong = 3] = `GizmoNameTooLong`, e[e.GizmoDescriptionTooLong = 4] = `GizmoDescriptionTooLong`, e[e.GizmoInstructionsTooLong = 5] = `GizmoInstructionsTooLong`, e[e.NameEmpty = 6] = `NameEmpty`, e[e.MissingPublicActionPrivacyPolicyURL = 7] = `MissingPublicActionPrivacyPolicyURL`, e[e.MissingCategory = 8] = `MissingCategory`, e
+    }({}), fn = {
+        id: void 0,
+        instructions: ``,
+        name: ``,
+        description: ``,
+        emoji: void 0,
+        theme: void 0,
+        profilePictureId: void 0,
+        profilePictureUrl: void 0,
+        promptStarters: [],
+        sharing: {
+            recipient: y.Private,
+            subjects: []
+        },
+        tools: [{
+            type: be.IMAGE_GEN
+        }],
+        files: [],
+        defaultModel: null,
+        trainingDisabled: !1,
+        liveVersion: 0,
+        contextStuffingBudget: null,
+        firstPartyProjectType: null
+    }, pn = Ge({
+        instructionsWarning: {
+            id: `gizmo.instructionsWarning`,
+            defaultMessage: `Conversations with your GPT can potentially include part or all of the instructions provided.`
+        }
+    })
+}));
+
+function hn(e) {
+    return !cn(e.sharingRecipient ?? y.Private) && ye(`1056818577`)
+}
+
+function gn(e, t) {
+    return t && cn(e) ? y.Private : e
+}
+var _n = e((() => {
+    Ce(), mn(), o()
+}));
+
+function vn() {
+    "use forget";
+    let e = (0, bn.c)(1),
+        t;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, q.jsx)(`div`, {
+        role: `status`,
+        className: `border-token-border-status-warning bg-token-bg-status-warning text-token-text-status-warning rounded-md border px-2.5 py-1.5 text-xs leading-4`,
+        children: (0, q.jsx)(z, {
+            id: `gizmo.publish.new_gpt.public_sharing_disabled.notice`,
+            defaultMessage: `Sharing GPTs with the public is no longer available. <link>Learn more</link>`,
+            values: {
+                link: yn
+            }
+        })
+    }), e[0] = t) : t = e[0], t
+}
+
+function yn(e) {
+    return (0, q.jsx)(`a`, {
+        href: `https://help.openai.com/en/articles/8554397-creating-a-gpt`,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        className: `underline`,
+        children: e
+    })
+}
+var bn, q, xn = e((() => {
+        bn = Qe(), B(), q = L()
+    })),
+    Sn = t({
+        GizmoSharingDetails: () => $,
+        GizmoTile: () => Mn,
+        GizmoUpdatedModal: () => jn,
+        HipaaGizmoShareWarning: () => Cn,
+        SHARE_LEVEL_ICONS: () => Q,
+        ShareGizmoModal: () => kn,
+        ShareLevelItem: () => Y,
+        sharingSubjectToSharingParam: () => On
+    });
+
+function Cn() {
+    return (0, Z.jsxs)(`div`, {
+        className: `border-token-border-medium bg-token-main-surface-secondary text-token-text-primary flex items-start gap-3 rounded-md border px-4 py-3 text-sm`,
+        children: [(0, Z.jsx)(Pe, {
+            className: `icon-sm interactive-label-warning-secondary mt-0.5 shrink-0`
+        }), (0, Z.jsx)(z, {
+            id: `gizmo.share.hipaaCompliance.warning`,
+            defaultMessage: `OpenAI supports HIPAA compliance for your use of custom GPTs in this workspace. If you share or publish this GPT with others, your BAA does not apply to their use. Do not represent this GPT to third parties as HIPAA compliant.`
+        })]
+    })
+}
+
+function wn(e, t) {
+    return C(e) ? C(t) && e.user_id === t.user_id : v(e) ? v(t) && e.group_id === t.group_id : ve(e) ? ve(t) && e.user_email.toLowerCase() === t.user_email.toLowerCase() : e.type === t.type
+}
+
+function Tn(e) {
+    return v(e) ? e.group_name : C(e) ? e.user_name : e.user_email
+}
+
+function En(e) {
+    return C(e) ? e.user_email : null
+}
+
+function Dn(e) {
+    return v(e) ? e.group_name : C(e) ? `${e.user_name} ${e.user_email}` : e.user_email
+}
+
+function On(e) {
+    if (typeof e.type == `string`) return e;
+    let t = zn[e.type];
+    if (!t) throw Error(`Unknown sharing subject type: ` + e.type);
+    return {
+        ...e,
+        type: t
+    }
+}
+
+function kn({
+    gizmo: e,
+    publishedGizmo: t,
+    updateGizmo: n,
+    promoteGizmo: i,
+    appealGizmo: o,
+    setAppealState: s,
+    showActionsModal: c,
+    shareOnly: u,
+    onClose: d,
+    workspaceOwner: f = !1
+}) {
+    let p = V(),
+        _ = ae(te),
+        {
+            data: ne
+        } = l(f ? void 0 : e.id),
+        ie = ne?.gizmo.migrated_plugin_id ?? e.migratedPluginId ?? t?.gizmo.migrated_plugin_id,
+        b = g(ie),
+        x = Se(),
+        oe = hn(e),
+        ue = x?.isHipaaCompliantWorkspace ?? !1,
+        de = r().trim(),
+        fe = x?.id,
+        {
+            data: he,
+            isLoading: ve
+        } = Fe(fe),
+        ye = Lt(he),
+        xe = x?.isEnterprisey() ?? !1,
+        Ce = x?.data?.role,
+        Te = Ce != null && ft(Ce),
+        Ee;
+    Ee = fe == null ? void 0 : f || Te || !xe ? !0 : ve ? void 0 : he?.permissions?.includes(Oe.MemberRoleView) ?? !1;
+    let w = de || `your workspace`,
+        T = He(),
+        E = me(),
+        [O, ke] = (0, X.useState)(void 0);
+    (0, X.useEffect)(() => {
+        if (O === void 0)
+            if (t?.gizmo.display.categories && t?.gizmo.display.categories.length > 0) {
+                let e = E.data?.categories.find(e => e.id === t?.gizmo.display.categories[0]);
+                e && ke(e)
+            } else E.data !== void 0 && ke(E.data.categories[E.data.categories.length - 1])
+    }, [E.data, O, t]);
+    let [k, Ae] = (0, X.useState)(() => gn(e.sharingRecipient ?? y.Private, oe)), [A, j] = (0, X.useState)(e.sharing?.subjects ?? []), [je, Me] = (0, X.useState)(null), [Ne, Pe] = (0, X.useState)(!1), Ie = (0, X.useRef)(null), Le = (0, X.useRef)(A.length);
+    (0, X.useEffect)(() => {
+        A.length > Le.current && requestAnimationFrame(() => {
+            Ie.current?.scrollTo({
+                top: Ie.current.scrollHeight,
+                behavior: `smooth`
+            })
+        }), Le.current = A.length
+    }, [A]);
+    let Re = (0, X.useCallback)(() => !Ve(e.sharing?.subjects, A) || e.sharingRecipient !== k, [e.sharing, e.sharingRecipient, k, A]),
+        P = Ke(),
+        F = un(e, k, O?.id ?? void 0),
+        ze = F.includes(dn.MissingPublicActionPrivacyPolicyURL),
+        Be = e.tools.find(e => e.type === be.JIT_PLUGIN && !e.metadata.privacy_policy_url);
+    if (_ || b) return (0, Z.jsx)(S, {
+        isOpen: !0,
+        onClose: d,
+        title: (0, Z.jsx)(z, {
+            ...b ? ee.title : _e.readOnlyTitle
+        }),
+        showCloseButton: !0,
+        children: (0, Z.jsx)(z, {
+            ...b ? ee.notice : _e.sharingNotice
+        })
+    });
+    if (je) return (0, Z.jsx)(jn, {
+        publishedGizmo: je,
+        sharing: {
+            recipient: k,
+            subjects: A
+        },
+        workspaceName: w,
+        onClose: d
+    });
+
+    function We(e) {
+        A.find(t => wn(t, e)) || j([...A, e])
+    }
+    let L = re(A);
+
+    function R(e) {
+        let t = A.filter(e => [M.WORKSPACE, M.ALL].indexOf(e.type) === -1);
+        e != null && t.push(e), j(t)
+    }
+
+    function Ge(e) {
+        switch (Ae(e), e) {
+            case y.Marketplace:
+            case y.Link:
+                R({
+                    type: M.ALL,
+                    capabilities: I
+                });
+                break;
+            case y.Workspace:
+            case y.WorkspaceLink:
+                R({
+                    type: M.WORKSPACE,
+                    capabilities: I
+                });
+                break;
+            default:
+                R(null)
+        }
+    }
+
+    function qe(e) {
+        L != null && j(A.map(t => t === L ? {
+            ...t,
+            capabilities: e
+        } : t))
+    }
+
+    function B(e, t, n) {
+        return e.type === M.USER && e.user_id.indexOf(`__`) === -1 ? {
+            ...e,
+            user_id: e.user_id + `__` + x?.getWorkspaceId()
+        } : e
+    }
+    async function Je(e, r) {
+        if (Ne || te() || g(ie)) return;
+        if (e && !r) throw Error(`Cannot share a gizmo that hasn't been promoted before`);
+        if (!O) return;
+        Pe(!0);
+        let o = A.map(B).map(On);
+        if (o = m(k, o, L?.capabilities ?? I), f) return !x || !r ? (a.warning(`Unable to change sharing settings`), d()) : (await ce.safePost(`/accounts/{account_id}/gpts/{gizmo_id}/share`, {
+            parameters: {
+                path: {
+                    account_id: x.id,
+                    gizmo_id: r
+                }
+            },
+            requestBody: {
+                sharing: o
+            }
+        }), a.success(p.formatMessage({
+            id: `SWSzcY`,
+            defaultMessage: `Sharing settings updated`
+        })), P.invalidateQueries({
+            queryKey: [`workspace`]
+        }), d());
+        if (e) {
+            if (!r || !t) throw Error(`No gizmo ID to share`);
+            try {
+                let e = {
+                    sharing: o
+                };
+                O && (e.categories = [O.id]);
+                let i = await le.shareGizmo(r, e);
+                if (i.error) Bt(k, i.sharing_targets ?? void 0) ? (s?.({
+                    gizmoId: t.gizmo.id,
+                    sharingRecipient: k,
+                    categories: t.gizmo.display.categories,
+                    moderationType: nn.PublishBlocked,
+                    sharingTargets: i.sharing_targets ?? void 0,
+                    showModal: tn.AppealAvailable
+                }), d()) : a.warning(p.formatMessage({
+                    id: `tmIKmp`,
+                    defaultMessage: `Unable to share GPT`
+                }));
+                else {
+                    if (i.resource == null) throw Error(`Missing shared gizmo resource`);
+                    P.setQueryData([`gizmo`, {
+                        gizmoId: t.gizmo.id
+                    }, {
+                        draft: !1
+                    }], e => i.resource), n?.(e => ({
+                        ...e,
+                        sharing: {
+                            recipient: k,
+                            subjects: A
+                        },
+                        sharingRecipient: k
+                    })), a.success(p.formatMessage({
+                        id: `SWSzcY`,
+                        defaultMessage: `Sharing settings updated`
+                    })), d()
+                }
+            } catch {
+                return a.warning(p.formatMessage({
+                    id: `dKC65l`,
+                    defaultMessage: `Failed to update sharing settings`
+                })), d()
+            }
+        } else {
+            if (i) {
+                let e = await i({
+                    subjects: o,
+                    recipient: k
+                }, O.id);
+                r ||= e?.gizmo.id, Me(e ?? null), n?.({
+                    liveVersion: e?.gizmo.live_version ?? void 0
+                })
+            }
+            P.invalidateQueries({
+                queryKey: [`gizmo`, {
+                    gizmoId: r
+                }]
+            })
+        }
+        Pe(!1), P.invalidateQueries({
+            queryKey: [`gizmos`]
+        }), P.refetchQueries({
+            queryKey: [`gizmos`, `discovery`]
+        }), P.refetchQueries({
+            queryKey: [`gizmo`, {
+                gizmoId: r
+            }]
+        }), P.invalidateQueries({
+            queryKey: [`gizmo`, `userActionSettings`, {
+                gizmoId: r
+            }]
+        }), P.invalidateQueries({
+            queryKey: [`workspace`]
+        }), n?.({
+            sharing: {
+                recipient: k,
+                subjects: A
+            },
+            sharingRecipient: k
+        }, !1)
+    }
+    let Ye = !t || Pn(t.gizmo.author.user_id.split(`__`)[0], T?.id),
+        Xe = t?.gizmo.author.display_name || null;
+    return (0, Z.jsx)(S, {
+        testId: `modal-share-gizmo`,
+        type: `success`,
+        className: `max-w-[555px]`,
+        size: `custom`,
+        isOpen: !0,
+        onClose: d,
+        primaryButton: Bt(k, e.sharingTargets) ? (0, Z.jsx)(N, {
+            onClick: () => o(k, O?.id),
+            children: (0, Z.jsx)(z, {
+                id: `yS4os0`,
+                defaultMessage: `Learn more`
+            })
+        }) : (0, Z.jsx)(N, {
+            onClick: () => Je(u, t?.gizmo.id),
+            loading: Ne,
+            disabled: F.length > 0 || !W(k, e.sharingTargets),
+            children: u ? (0, Z.jsx)(z, {
+                id: `BEKjVh`,
+                defaultMessage: `Save`
+            }) : (0, Z.jsx)(z, {
+                id: `24j5ts`,
+                defaultMessage: `Update`
+            })
+        }),
+        secondaryButton: (0, Z.jsxs)(Z.Fragment, {
+            children: [Re() && (0, Z.jsx)(`div`, {
+                className: `text-token-text-secondary absolute start-6 bottom-8 text-sm`,
+                children: (0, Z.jsx)(z, {
+                    id: `9CkgC4`,
+                    defaultMessage: `Unsaved changes`
+                })
+            }), t && (0, Z.jsx)(N, {
+                color: `secondary`,
+                onClick: e => se(t, pe(), e, p.formatMessage({
+                    id: `KdDqMm`,
+                    defaultMessage: `Copied link to clipboard`
+                })),
+                children: (0, Z.jsx)(z, {
+                    id: `wvL15a`,
+                    defaultMessage: `Copy link`
+                })
+            })]
+        }),
+        title: p.formatMessage({
+            id: `7JggXH`,
+            defaultMessage: `Share GPT`
+        }),
+        showCloseButton: !0,
+        children: (0, Z.jsxs)(`div`, {
+            className: `flex flex-col space-y-4`,
+            children: [(0, Z.jsx)(Nn, {
+                onAdd: e => We(e),
+                publishedGizmo: t,
+                canListMembers: Ee,
+                allowScimGroupSharing: ye
+            }), ue && (0, Z.jsx)(Cn, {}), (0, Z.jsx)(`h3`, {
+                className: `text-base font-semibold`,
+                children: (0, Z.jsx)(z, {
+                    id: `bNQXcV`,
+                    defaultMessage: `Share with...`
+                })
+            }), (0, Z.jsxs)(`div`, {
+                ref: Ie,
+                className: `max-h-[200px] space-y-2 overflow-y-auto`,
+                children: [(0, Z.jsxs)(`div`, {
+                    className: `mb-4 flex flex-row items-center justify-between space-x-3`,
+                    children: [(0, Z.jsx)(`div`, {
+                        className: `shrink-0 grow-0 self-start`,
+                        children: Ye ? (0, Z.jsx)(Ue, {
+                            user: T
+                        }) : (0, Z.jsx)(D, {
+                            name: Xe ?? `User`,
+                            initialsCount: 2
+                        })
+                    }), (0, Z.jsx)(`div`, {
+                        className: `grow text-base font-semibold`,
+                        children: Ye ? (0, Z.jsxs)(`div`, {
+                            className: `flex flex-col`,
+                            children: [(0, Z.jsx)(z, {
+                                id: `U7tzof`,
+                                defaultMessage: `{userName} (you)`,
+                                values: {
+                                    userName: T?.name
+                                }
+                            }), (0, Z.jsx)(`span`, {
+                                className: `text-token-text-secondary -mt-1 text-sm`,
+                                children: T?.email
+                            })]
+                        }) : Xe ? (0, Z.jsx)(z, {
+                            id: `scRZqV`,
+                            defaultMessage: `{userName} (builder)`,
+                            values: {
+                                userName: Xe
+                            }
+                        }) : (0, Z.jsx)(z, {
+                            id: `gizmo.share.builder.fallbackLabel`,
+                            defaultMessage: `Builder`
+                        })
+                    })]
+                }), A.map((e, t) => De(e) && (0, Z.jsxs)(`div`, {
+                    className: `mb-4 flex flex-row items-center justify-between space-x-3`,
+                    children: [(0, Z.jsx)(D, {
+                        name: Dn(e),
+                        initialsCount: C(e) ? 2 : 1,
+                        className: h(`shrink-0 grow-0`, C(e) && `self-start`)
+                    }), (0, Z.jsxs)(`div`, {
+                        className: `flex grow flex-col`,
+                        children: [(0, Z.jsxs)(`span`, {
+                            className: `flex flex-row`,
+                            children: [(0, Z.jsx)(`span`, {
+                                className: `me-2 text-base font-semibold`,
+                                children: Tn(e)
+                            }), v(e) && e.is_scim_managed && (0, Z.jsx)(Ln, {})]
+                        }), C(e) && (0, Z.jsx)(`span`, {
+                            className: `text-token-text-secondary -mt-1 text-sm`,
+                            children: En(e)
+                        })]
+                    }), (0, Z.jsxs)(H.Root, {
+                        children: [(0, Z.jsxs)(H.Trigger, {
+                            className: `text-token-text-secondary text-base whitespace-nowrap`,
+                            children: [(0, Z.jsx)(z, {
+                                ...J(e.capabilities)
+                            }), (0, Z.jsx)(mt, {
+                                className: `icon`
+                            })]
+                        }), (0, Z.jsx)(H.Portal, {
+                            children: (0, Z.jsxs)(H.Content, {
+                                className: `max-w-[320px]`,
+                                children: [Rn().map((t, n) => (0, Z.jsx)(An, {
+                                    capabilities: t,
+                                    selected: Ve(t, e.capabilities),
+                                    onClick: () => {
+                                        j(A.map(n => n === e ? {
+                                            ...n,
+                                            capabilities: t
+                                        } : n))
+                                    }
+                                }, n)), (0, Z.jsx)(H.Separator, {
+                                    className: `my-2`
+                                }), (0, Z.jsx)(H.Item, {
+                                    onClick: () => j(A.filter(t => t !== e)),
+                                    color: `danger`,
+                                    icon: kt,
+                                    children: (0, Z.jsx)(z, {
+                                        id: `NU0BOB`,
+                                        defaultMessage: `Remove`
+                                    })
+                                })]
+                            })
+                        })]
+                    })]
+                }, t))]
+            }), (0, Z.jsx)(`hr`, {
+                className: `border-token-border-medium`
+            }), (0, Z.jsx)(`h3`, {
+                className: `text-base font-semibold`,
+                children: (0, Z.jsx)(z, {
+                    id: `uqD7Y8`,
+                    defaultMessage: `Access`
+                })
+            }), oe && (0, Z.jsx)(vn, {}), (0, Z.jsxs)(`div`, {
+                className: `-ms-3.5 flex flex-row items-center justify-between space-x-3`,
+                children: [(0, Z.jsxs)(U.Root, {
+                    value: k,
+                    onValueChange: e => Ge(e),
+                    children: [(0, Z.jsxs)(U.Trigger, {
+                        children: [(0, Z.jsx)(U.Value, {}), (0, Z.jsx)(U.Icon, {})]
+                    }), (0, Z.jsx)(U.Portal, {
+                        children: (0, Z.jsxs)(U.Content, {
+                            children: [(0, Z.jsxs)(U.Group, {
+                                children: [(0, Z.jsx)(U.Label, {
+                                    children: (0, Z.jsx)(z, {
+                                        id: `YIQwaP`,
+                                        defaultMessage: `Private`
+                                    })
+                                }), k === y.User ? (0, Z.jsx)(U.Item, {
+                                    value: y.User,
+                                    children: (0, Z.jsx)(Y, {
+                                        shareLevel: y.User,
+                                        workspaceName: w
+                                    })
+                                }) : (0, Z.jsx)(U.Item, {
+                                    value: y.Private,
+                                    children: (0, Z.jsx)(Y, {
+                                        shareLevel: y.Private,
+                                        workspaceName: w
+                                    })
+                                })]
+                            }), (0, Z.jsx)(U.Separator, {}), (0, Z.jsx)(we, {
+                                triggerAs: null,
+                                label: p.formatMessage({
+                                    id: `n0m61x`,
+                                    defaultMessage: `Your workspace has disabled sharing with the workspace.`
+                                }),
+                                side: `bottom`,
+                                disabled: W(`workspace`, e.sharingTargets),
+                                children: (0, Z.jsxs)(U.Group, {
+                                    children: [(0, Z.jsx)(U.Label, {
+                                        children: w
+                                    }), (0, Z.jsx)(U.Item, {
+                                        value: y.WorkspaceLink,
+                                        disabled: !W(y.WorkspaceLink, e.sharingTargets) && !W(y.Workspace, e.sharingTargets),
+                                        children: (0, Z.jsx)(Y, {
+                                            shareLevel: y.WorkspaceLink,
+                                            workspaceName: w
+                                        })
+                                    }), (0, Z.jsx)(U.Item, {
+                                        value: y.Workspace,
+                                        disabled: !W(`workspace`, e.sharingTargets),
+                                        children: (0, Z.jsx)(Y, {
+                                            shareLevel: y.Workspace,
+                                            workspaceName: w
+                                        })
+                                    })]
+                                })
+                            }), !oe && (0, Z.jsxs)(Z.Fragment, {
+                                children: [(0, Z.jsx)(U.Separator, {}), (0, Z.jsx)(we, {
+                                    triggerAs: null,
+                                    label: p.formatMessage({
+                                        id: `IHnort`,
+                                        defaultMessage: `Your workspace has disabled public sharing.`
+                                    }),
+                                    side: `bottom`,
+                                    disabled: W(`marketplace`, e.sharingTargets),
+                                    children: (0, Z.jsxs)(U.Group, {
+                                        children: [(0, Z.jsx)(U.Label, {
+                                            children: (0, Z.jsx)(z, {
+                                                id: `PjY9bi`,
+                                                defaultMessage: `Public`
+                                            })
+                                        }), (0, Z.jsx)(U.Item, {
+                                            value: y.Link,
+                                            disabled: !W(`link`, e.sharingTargets),
+                                            children: (0, Z.jsx)(Y, {
+                                                shareLevel: y.Link,
+                                                workspaceName: w
+                                            })
+                                        }), (0, Z.jsx)(U.Item, {
+                                            disabled: !W(`marketplace`, e.sharingTargets),
+                                            value: y.Marketplace,
+                                            children: (0, Z.jsx)(Y, {
+                                                shareLevel: y.Marketplace,
+                                                workspaceName: w
+                                            })
+                                        })]
+                                    })
+                                })]
+                            })]
+                        })
+                    })]
+                }), k !== y.Private && k !== y.User && (0, Z.jsxs)(H.Root, {
+                    children: [(0, Z.jsxs)(H.Trigger, {
+                        className: `text-token-text-secondary text-base whitespace-nowrap`,
+                        children: [L == null ? (0, Z.jsx)(z, {
+                            ...J(I)
+                        }) : (0, Z.jsx)(z, {
+                            ...J(L.capabilities)
+                        }), (0, Z.jsx)(mt, {
+                            className: `icon`
+                        })]
+                    }), (0, Z.jsx)(H.Portal, {
+                        children: (0, Z.jsxs)(H.Content, {
+                            className: `max-w-[320px]`,
+                            children: [(0, Z.jsx)(An, {
+                                onClick: () => qe(I),
+                                capabilities: I,
+                                selected: Ve(L?.capabilities, I)
+                            }), k !== y.Marketplace && k !== y.Link && (0, Z.jsx)(An, {
+                                onClick: () => qe(ge),
+                                capabilities: ge,
+                                selected: Ve(L?.capabilities, ge)
+                            })]
+                        })
+                    })]
+                })]
+            }), ze && (0, Z.jsx)(`div`, {
+                className: `text-xs text-red-500`,
+                children: (0, Z.jsx)(z, {
+                    id: `/iw1Iv`,
+                    defaultMessage: `Public actions require valid privacy policy URLs. Click <fixlink>here</fixlink> to update.`,
+                    values: {
+                        fixlink: e => (0, Z.jsx)(`button`, {
+                            onClick: () => {
+                                c?.(Be?.metadata.action_id), d()
+                            },
+                            className: `underline`,
+                            children: e
+                        })
+                    }
+                })
+            }), (k === y.Marketplace || k === y.Workspace) && (W(k, e.sharingTargets) ? (0, Z.jsx)(Mn, {
+                gizmo: e,
+                category: O?.id,
+                categories: E.data?.categories,
+                onCategoryChange: e => ke(e)
+            }) : Bt(k, e.sharingTargets) ? (0, Z.jsx)(`div`, {
+                className: `pb-2 text-xs text-red-500`,
+                children: (0, Z.jsx)(qt, {
+                    sharingRecipient: k,
+                    moderatedFields: zt(k, e.sharingTargets) ?? [],
+                    appealAvailable: !0
+                })
+            }) : (0, Z.jsx)(`div`, {
+                className: `pb-2 text-xs text-red-500`,
+                children: (0, Z.jsx)(z, {
+                    id: `BzqqKH`,
+                    defaultMessage: `Your workspace's settings don't allow this level of access. An owner of the workspace can change this setting in the workspace's GPTs settings.`
+                })
+            }))]
+        })
+    })
+}
+
+function J(e) {
+    return e.can_write ? R({
+        id: `SubCqD`,
+        defaultMessage: `Can edit`
+    }) : e.can_view_config ? R({
+        id: `V6OjbX`,
+        defaultMessage: `Can view settings`
+    }) : e.can_read ? R({
+        id: `/0j34W`,
+        defaultMessage: `Can chat`
+    }) : R({
+        id: `x2E8ET`,
+        defaultMessage: `Unknown`
+    })
+}
+
+function An({
+    capabilities: e,
+    selected: t,
+    onClick: n
+}) {
+    let r = null;
+    e.can_write ? r = yt : e.can_view_config ? r = Et : e.can_read && (r = Dt);
+    let i = e.can_write ? (0, Z.jsx)(z, {
+        id: `wKFMT1`,
+        defaultMessage: `Edit settings, duplicate, and chat`
+    }) : e.can_view_config ? (0, Z.jsx)(z, {
+        id: `Y/J4TZ`,
+        defaultMessage: `See settings, duplicate, and chat`
+    }) : e.can_read ? (0, Z.jsx)(z, {
+        id: `PvgEQP`,
+        defaultMessage: `Chat with this GPT only`
+    }) : null;
+    return (0, Z.jsxs)(H.Item, {
+        className: `flex h-auto flex-row items-center px-3 py-3`,
+        onClick: n,
+        icon: r,
+        children: [(0, Z.jsxs)(`div`, {
+            className: `me-1 flex grow flex-col`,
+            children: [(0, Z.jsx)(`span`, {
+                className: `mb-0.5 text-base leading-tight`,
+                children: (0, Z.jsx)(z, {
+                    ...J(e)
+                })
+            }), (0, Z.jsx)(`span`, {
+                className: `text-token-text-secondary text-xs`,
+                children: i
+            })]
+        }), (0, Z.jsx)(bt, {
+            className: h(`icon-lg shrink-0`, !t && `invisible`)
+        })]
+    })
+}
+
+function Y({
+    shareLevel: e,
+    workspaceName: t,
+    hasInviteSharing: n = !0
+}) {
+    (e === y.User || e === y.Group || e === y.Email) && (e = y.Private);
+    let r = Q[e];
+    return (0, Z.jsxs)(`div`, {
+        className: `flex flex-row items-center gap-3 text-sm`,
+        children: [(0, Z.jsx)(r, {
+            className: `icon text-token-text-secondary`
+        }), (0, Z.jsx)(`div`, {
+            className: `pt-px text-start`,
+            children: !n && e === y.Private ? (0, Z.jsx)(z, {
+                id: `vVJhYB`,
+                defaultMessage: `Only me`
+            }) : (0, Z.jsx)(z, {
+                ...Bn[e],
+                values: {
+                    workspaceName: t
+                }
+            })
+        })]
+    })
+}
+
+function jn({
+    publishedGizmo: e,
+    sharing: t,
+    workspaceName: n,
+    onClose: r
+}) {
+    let i = V();
+    return (0, Z.jsxs)(S, {
+        testId: `modal-gizmo-updated`,
+        isOpen: !0,
+        onClose: r,
+        showCloseButton: !0,
+        className: `w-[304px]`,
+        title: (0, Z.jsx)(z, {
+            id: `5CEceY`,
+            defaultMessage: `GPT Updated`
+        }),
+        primaryButton: (0, Z.jsx)(N, {
+            onClick: () => {
+                window.location.href = `/g/${e.gizmo.id}`
+            },
+            children: (0, Z.jsx)(z, {
+                id: `RF75o5`,
+                defaultMessage: `View GPT`
+            })
+        }),
+        secondaryButton: (0, Z.jsx)(N, {
+            color: `secondary`,
+            onClick: t => se(e, pe(), t, i.formatMessage({
+                id: `KdDqMm`,
+                defaultMessage: `Copied link to clipboard`
+            })),
+            children: (0, Z.jsx)(z, {
+                id: `9hLOl9`,
+                defaultMessage: `Copy link`
+            })
+        }),
+        type: `success`,
+        children: [(0, Z.jsx)(Mn, {
+            gizmo: {
+                profilePictureUrl: e.gizmo.display.profile_picture_url ?? void 0,
+                name: e.gizmo.display.name
+            }
+        }), (0, Z.jsx)($, {
+            sharing: t,
+            workspaceName: n
+        })]
+    })
+}
+
+function Mn({
+    gizmo: e,
+    category: t,
+    categories: n,
+    onCategoryChange: r
+}) {
+    let {
+        data: i,
+        isLoading: a
+    } = T(), o = n?.find(e => e.id === t);
+    return (0, Z.jsxs)(`div`, {
+        children: [(0, Z.jsxs)(`div`, {
+            className: h(`bg-token-main-surface-secondary mb-[1px] flex flex-row items-center space-x-2 p-4`, a && `invisible`, n ? `rounded-t-lg` : `rounded-lg`),
+            children: [(0, Z.jsx)(dt, {
+                isFirstParty: !1,
+                className: `h-11 w-11`,
+                src: e.profilePictureUrl
+            }), (0, Z.jsxs)(`div`, {
+                className: `flex grow flex-col space-y-0`,
+                children: [(0, Z.jsx)(`span`, {
+                    className: `text-base font-semibold`,
+                    children: e.name
+                }), (0, Z.jsx)(et, {
+                    builderName: i?.display_name,
+                    builderUrl: i?.website_url,
+                    socials: [i?.socials.linkedin, i?.socials.github].filter(e => e != null),
+                    className: `text-token-text-secondary text-xs`
+                })]
+            })]
+        }), n && (0, Z.jsxs)(`div`, {
+            className: `bg-token-main-surface-secondary flex min-h-[56px] flex-row items-center justify-between space-x-2 rounded-b-lg px-4 text-base`,
+            children: [(0, Z.jsx)(`span`, {
+                className: `font-semibold`,
+                children: (0, Z.jsx)(z, {
+                    id: `JcA4/t`,
+                    defaultMessage: `Category`
+                })
+            }), (0, Z.jsx)(`div`, {
+                className: `text-token-text-secondary`,
+                children: r ? (0, Z.jsx)(nt, {
+                    size: `small`,
+                    triggerButton: (0, Z.jsxs)(`button`, {
+                        className: `flex items-center gap-1`,
+                        children: [o?.title, (0, Z.jsx)(mt, {
+                            className: `icon`
+                        })]
+                    }),
+                    children: n.map((e, t) => (0, Z.jsx)(H.Item, {
+                        onClick: () => r(e),
+                        children: e.title
+                    }, t))
+                }) : (0, Z.jsx)(`span`, {
+                    className: `text-token-text-secondary`,
+                    children: o?.title
+                })
+            })]
+        })]
+    })
+}
+
+function Nn({
+    onAdd: e,
+    publishedGizmo: t,
+    canListMembers: n,
+    allowScimGroupSharing: r
+}) {
+    let i = V(),
+        a = b(),
+        [o, s] = (0, X.useState)(``),
+        c = n === !0,
+        l = $e(c ? a?.id : void 0, 0, o, 5).data?.items.filter(e => e.account_user_id !== t?.gizmo.author.user_id),
+        u = r,
+        {
+            data: d
+        } = qe({
+            queryKey: [a?.id, `groups`, `filtered`, o, u],
+            queryFn: () => ce.safeGet(`/accounts/{account_id}/groups`, {
+                parameters: {
+                    path: {
+                        account_id: a.id
+                    },
+                    query: {
+                        query: o,
+                        offset: 0,
+                        orderby: `@score`,
+                        limit: 20,
+                        include_scim_groups: u
+                    }
+                }
+            }),
+            enabled: c && o.trim() !== `` && a != null && !!a.getWorkspaceId()
+        });
+
+    function f(t, n, r) {
+        e({
+            type: M.GROUP,
+            group_id: t,
+            group_name: n,
+            capabilities: {
+                ...I
+            },
+            is_scim_managed: r
+        }), s(``)
+    }
+
+    function p(t, n, r) {
+        a && (e({
+            type: M.USER,
+            user_id: t,
+            user_name: n,
+            user_email: r,
+            avatar_url: null,
+            capabilities: {
+                ...I
+            }
+        }), s(``))
+    }
+    let m = a?.isEnterprisey() ? i.formatMessage({
+            id: `xy/AMO`,
+            defaultMessage: `Add people and groups from your workspace`
+        }) : i.formatMessage({
+            id: `Lh9njB`,
+            defaultMessage: `Add people from your workspace`
+        }),
+        {
+            eligible: h
+        } = Le(F.hasSeenMultipleGPTEditorsTooltip),
+        g = !c,
+        _ = g ? (0, Z.jsx)(at, {
+            ariaLabel: m,
+            disabled: !0,
+            inputClassName: `bg-token-bg-primary!`,
+            name: `share-with-input`,
+            placeholder: m,
+            value: o
+        }) : (0, Z.jsx)(Ft, {
+            label: m,
+            name: `share-with-input`,
+            inputClassName: `bg-token-bg-primary!`,
+            inputValue: o,
+            onInputChange: s,
+            suggestions: [...l?.map(e => ({
+                id: e.id,
+                className: `flex flex-col rounded-xs p-1 hover:bg-token-main-surface-tertiary rounded-xs p-1 text-sm`,
+                focusedClassName: `bg-token-main-surface-tertiary`,
+                onClick: () => p(e.account_user_id, e.name, e.email ?? ``),
+                children: (0, Z.jsxs)(Z.Fragment, {
+                    children: [(0, Z.jsx)(`span`, {
+                        className: `w-full font-semibold`,
+                        children: e.name
+                    }), (0, Z.jsx)(`span`, {
+                        className: `text-token-text-secondary text-sm`,
+                        children: e.email
+                    })]
+                })
+            })) ?? [], ...d?.items.map(e => ({
+                id: e.id,
+                className: `flex flex-col rounded-xs p-1 hover:bg-token-main-surface-tertiary rounded-xs p-1 text-sm`,
+                focusedClassName: `bg-token-main-surface-tertiary`,
+                onClick: () => f(e.id, e.name, e.is_scim_managed ?? !1),
+                children: (0, Z.jsxs)(`span`, {
+                    className: `flex flex-col`,
+                    children: [(0, Z.jsxs)(`span`, {
+                        className: `flex flex-row`,
+                        children: [(0, Z.jsx)(`span`, {
+                            className: `me-2 font-semibold`,
+                            children: e.name
+                        }), e.is_scim_managed && (0, Z.jsx)(Ln, {})]
+                    }), (0, Z.jsx)(`span`, {
+                        className: `text-token-text-secondary text-sm`,
+                        children: (0, Z.jsx)(z, {
+                            id: `r3Rx6X`,
+                            defaultMessage: `{numMembers, plural, one {1 member} other {# members}}`,
+                            values: {
+                                numMembers: e.num_members
+                            }
+                        })
+                    })]
+                })
+            })) ?? []]
+        });
+    return (0, Z.jsxs)(Z.Fragment, {
+        children: [n === !1 && (0, Z.jsxs)(`div`, {
+            className: `border-token-border-medium bg-token-main-surface-secondary text-token-text-primary flex items-center gap-3 rounded-md border px-4 py-3`,
+            children: [(0, Z.jsx)(Pe, {
+                className: `icon-sm interactive-label-warning-secondary shrink-0`
+            }), (0, Z.jsx)(z, {
+                id: `6e1nG9`,
+                defaultMessage: `You don't have permission to search your workspace members. Please contact your workspace admin for access or update the workspace settings.`
+            })]
+        }), n !== !1 && (0, Z.jsx)(`div`, {
+            className: `flex w-full flex-row space-x-3`,
+            children: h && !g ? (0, Z.jsx)(Mt, {
+                announcementKey: F.hasSeenMultipleGPTEditorsTooltip,
+                show: h,
+                side: `right`,
+                align: `center`,
+                className: `w-full`,
+                sideOffset: 0,
+                contentClassName: `z-100`,
+                childrenWrapperClassName: `w-full`,
+                theme: `bright`,
+                dismissOnOutsideClick: !0,
+                badge: `new`,
+                description: i.formatMessage({
+                    id: `SR33A6`,
+                    defaultMessage: `You can now add editors to collaborate on your GPTs.`
+                }),
+                onDismiss: () => je(F.hasSeenMultipleGPTEditorsTooltip),
+                children: _
+            }) : _
+        })]
+    })
+}
+
+function Pn(e, t) {
+    return e === void 0 || t === void 0 ? !1 : e.split(`__`)[0] === t.split(`__`)[0]
+}
+
+function Fn(e) {
+    return !De(e)
+}
+var In, X, Z, Ln, Rn, zn, Bn, Vn, Q, $, Hn = e((() => {
+    In = Qe(), oe(), P(), c(), Ne(), de(), st(), it(), _(), Pt(), rt(), At(), Tt(), xt(), wt(), gt(), _t(), pt(), Ot(), Ct(), ke(), Be(), Nt(), w(), ot(), jt(), i(), ne(), E(), We(), Ie(), fe(), A(), p(), It(), xe(), Ze(), Ee(), O(), X = n(Je()), B(), Vt(), an(), tt(), ct(), k(), mn(), _n(), xn(), Re(), d(), o(), ue(), Z = L(), Xe(), Ln = Te(() => Ye(() => import(`./fbf44c55-o2lsxc57nll08quu.js`).then(e => e.DirectorySyncResourceManagedIndication), __vite__mapDeps([0, 1, 2]))), Rn = () => [I, ge, u], zn = {
+        [M.USER]: y.User,
+        [M.GROUP]: y.Group,
+        [M.WORKSPACE]: y.Workspace,
+        [M.ALL]: y.Marketplace
+    }, Bn = Ge({
+        private: {
+            id: `pSXBWQ`,
+            defaultMessage: `Invite-only`
+        },
+        user: {
+            id: `pSXBWQ`,
+            defaultMessage: `Invite-only`
+        },
+        group: {
+            id: `pSXBWQ`,
+            defaultMessage: `Invite-only`
+        },
+        email: {
+            id: `pSXBWQ`,
+            defaultMessage: `Invite-only`
+        },
+        workspace_link: {
+            id: `Giaxt1`,
+            defaultMessage: `Anyone at {workspaceName} with the link`
+        },
+        workspace: {
+            id: `XLHaTU`,
+            defaultMessage: `{workspaceName}`
+        },
+        link: {
+            id: `uP1+Ri`,
+            defaultMessage: `Anyone with the link`
+        },
+        marketplace: {
+            id: `82Ilac`,
+            defaultMessage: `GPT Store`
+        }
+    }), Vn = Ge({
+        workspace: {
+            id: `1kpopF`,
+            defaultMessage: `Published to {workspaceName}`
+        },
+        marketplace: {
+            id: `hdTRpJ`,
+            defaultMessage: `Published to GPT Store`
+        }
+    }), Q = {
+        private: ht,
+        user: ht,
+        group: ht,
+        email: ht,
+        workspace_link: vt,
+        workspace: St,
+        link: vt,
+        marketplace: ie.SidebarApps
+    }, $ = e => {
+        "use forget";
+        let t = (0, In.c)(26),
+            {
+                sharing: n,
+                author: r,
+                workspaceName: i,
+                showAudiencePermissions: a
+            } = e,
+            o = a !== void 0 && a,
+            s = n.recipient,
+            c, l, u, d;
+        if (t[0] !== r || t[1] !== s || t[2] !== n.subjects || t[3] !== o || t[4] !== i) {
+            let e = n.subjects.filter(Fn),
+                a = o && e.length > 0 ? e.map(e => ({
+                    level: e.type === M.WORKSPACE ? s === y.Workspace ? y.Workspace : y.WorkspaceLink : s === y.Marketplace ? y.Marketplace : y.Link,
+                    subject: e
+                })) : [{
+                    level: s,
+                    subject: void 0
+                }];
+            t[9] !== r || t[10] !== n.subjects || t[11] !== o ? (d = (r != null || n.subjects.some(De)) && (0, Z.jsxs)(`div`, {
+                className: o ? `my-4 flex flex-col gap-4` : `my-4`,
+                children: [(0, Z.jsx)(`h3`, {
+                    className: o ? `text-base font-semibold` : `text-token-text-secondary text-xs font-semibold`,
+                    children: (0, Z.jsx)(z, {
+                        id: `/paYH9`,
+                        defaultMessage: `Shared with`
+                    })
+                }), r != null && (0, Z.jsxs)(`div`, {
+                    className: `flex items-center gap-3 text-sm`,
+                    children: [(0, Z.jsx)(D, {
+                        name: r.display_name ?? r.user_email ?? ``,
+                        initialsCount: 2,
+                        className: `shrink-0`
+                    }), (0, Z.jsxs)(`div`, {
+                        className: `min-w-0 flex-1 break-words`,
+                        children: [(0, Z.jsx)(`div`, {
+                            className: `font-semibold`,
+                            children: r.display_name ?? r.user_email
+                        }), (0, Z.jsx)(`div`, {
+                            className: `text-token-text-secondary`,
+                            children: r.user_email
+                        })]
+                    }), (0, Z.jsx)(`span`, {
+                        className: `text-token-text-secondary shrink-0`,
+                        children: (0, Z.jsx)(z, {
+                            id: `gizmo.pluginMigration.sharing.role.owner`,
+                            defaultMessage: `Owner`
+                        })
+                    })]
+                }), n.subjects && n.subjects.map((e, t) => De(e) && !(r != null && C(e) && e.user_id === r.user_id) && (0, Z.jsxs)(`div`, {
+                    className: o ? `flex items-center justify-between gap-3 text-sm` : `flex flex-row items-center justify-between space-x-3 py-2`,
+                    children: [o && (0, Z.jsx)(D, {
+                        name: Dn(e),
+                        initialsCount: C(e) ? 2 : 1,
+                        className: `shrink-0`
+                    }), (0, Z.jsxs)(`div`, {
+                        className: `min-w-0 flex-1 break-words`,
+                        children: [(0, Z.jsx)(`span`, {
+                            className: o ? `text-sm font-semibold` : `text-base font-semibold`,
+                            children: Tn(e)
+                        }), C(e) && (0, Z.jsxs)(Z.Fragment, {
+                            children: [(0, Z.jsx)(`br`, {}), (0, Z.jsx)(`span`, {
+                                className: `text-token-text-secondary text-sm`,
+                                children: En(e)
+                            })]
+                        })]
+                    }), (0, Z.jsx)(`span`, {
+                        className: `text-token-text-secondary shrink-0`,
+                        children: (0, Z.jsx)(z, {
+                            ...J(e.capabilities)
+                        })
+                    })]
+                }, t))]
+            }), t[9] = r, t[10] = n.subjects, t[11] = o, t[12] = d) : d = t[12], c = o ? `border-token-border-light mt-4 flex flex-col gap-4 border-t pt-4` : `my-4`;
+            let f = o ? `text-base font-semibold` : `text-token-text-secondary text-xs font-semibold`,
+                p;
+            t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, Z.jsx)(z, {
+                id: `q9XNZ7`,
+                defaultMessage: `Access`
+            }), t[13] = p) : p = t[13], t[14] === f ? l = t[15] : (l = (0, Z.jsx)(`h3`, {
+                className: f,
+                children: p
+            }), t[14] = f, t[15] = l);
+            let m;
+            t[16] !== o || t[17] !== i ? (m = e => {
+                let {
+                    level: t,
+                    subject: n
+                } = e, r = Q[t];
+                return (0, Z.jsxs)(`div`, {
+                    className: o ? `flex items-center gap-3 text-start text-sm` : `ms-[3px] flex flex-row items-center py-3 text-start text-base font-semibold`,
+                    children: [(0, Z.jsx)(r, {
+                        className: o ? `icon text-token-text-secondary shrink-0` : `md:icon-lg me-3 h-6 w-6 shrink-0`
+                    }), (0, Z.jsx)(`div`, {
+                        className: o ? `min-w-0 flex-1` : `flex flex-col`,
+                        children: (0, Z.jsx)(`span`, {
+                            className: o ? void 0 : `font-semibold`,
+                            children: (0, Z.jsx)(z, {
+                                ...o ? Bn[t] : Vn[t] ?? Bn[t],
+                                values: {
+                                    workspaceName: i
+                                }
+                            })
+                        })
+                    }), o && n != null && (0, Z.jsx)(`span`, {
+                        className: `text-token-text-secondary ms-3 shrink-0 text-sm font-normal`,
+                        children: (0, Z.jsx)(z, {
+                            ...J(n.capabilities)
+                        })
+                    })]
+                }, t)
+            }, t[16] = o, t[17] = i, t[18] = m) : m = t[18], u = a.map(m), t[0] = r, t[1] = s, t[2] = n.subjects, t[3] = o, t[4] = i, t[5] = c, t[6] = l, t[7] = u, t[8] = d
+        } else c = t[5], l = t[6], u = t[7], d = t[8];
+        let f;
+        t[19] !== c || t[20] !== l || t[21] !== u ? (f = (0, Z.jsxs)(`div`, {
+            className: c,
+            children: [l, u]
+        }), t[19] = c, t[20] = l, t[21] = u, t[22] = f) : f = t[22];
+        let p;
+        return t[23] !== d || t[24] !== f ? (p = (0, Z.jsxs)(Z.Fragment, {
+            children: [d, f]
+        }), t[23] = d, t[24] = f, t[25] = p) : p = t[25], p
+    }
+}));
+export {
+    W as A, sn as C, Ht as D, nn as E, an as O, pn as S, Zt as T, fn as _, Q as a, mn as b, Y as c, vn as d, xn as f, dn as g, hn as h, Cn as i, Vt as k, Hn as l, _n as m, Mn as n, kn as o, gn as p, jn as r, Sn as s, $ as t, On as u, on as v, tn as w, cn as x, un as y
+};
 //# sourceMappingURL=d84f4c09-n2ni7ooq40at69sv.js.map

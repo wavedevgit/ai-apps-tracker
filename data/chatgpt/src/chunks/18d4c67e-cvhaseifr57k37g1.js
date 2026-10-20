@@ -1,2 +1,107 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bn as n,Hn as r,Pn as i,Vn as a,zn as o}from"./2340486e-komxp8tzs51ny4jj.js";import{LHn as s,RHn as c,zHn as l}from"./conversation-small-cawdu7il3ha6y70c.js";import{M as u,N as d,P as f,j as p}from"./9e18a103-q7moiqommz7yhv30.js";function m({unifiedDiff:e,setUnifiedDiff:t,showFullDiff:r,setShowFullDiff:a}){let o=n(),[l,d]=(0,h.useState)(!1);return(0,g.jsxs)(s,{open:l,onOpenChange:d,contentAlign:`end`,sideOffset:8,modal:!0,triggerButton:(0,g.jsx)(`button`,{type:`button`,onClick:()=>d(!0),className:`hover:bg-token-border-light flex items-center justify-center rounded p-3`,"aria-label":o.formatMessage({id:`wham.diffModeDropdown.openMenu`,defaultMessage:`Open diff settings menu`}),children:(0,g.jsx)(f,{className:`icon`})}),children:[(0,g.jsxs)(c.RadioGroup,{value:e?`unified`:`split`,onValueChange:e=>t(e===`unified`),onClick:e=>e.stopPropagation(),children:[(0,g.jsx)(c.RadioItem,{value:`split`,onClick:e=>e.stopPropagation(),children:(0,g.jsxs)(`div`,{className:`text-token-text-primary flex items-center gap-3`,children:[(0,g.jsx)(f,{className:`icon`}),(0,g.jsx)(i,{id:`wham.message.modal.footer.splitDiff`,defaultMessage:`Split diff`})]})}),(0,g.jsx)(c.RadioItem,{value:`unified`,onClick:e=>e.stopPropagation(),children:(0,g.jsxs)(`div`,{className:`text-token-text-primary flex items-center gap-3`,children:[(0,g.jsx)(u,{className:`icon`}),(0,g.jsx)(i,{id:`wham.message.modal.footer.unifiedDiff`,defaultMessage:`Unified diff`})]})})]}),(0,g.jsx)(c.Separator,{}),(0,g.jsxs)(c.RadioGroup,{value:r?`full`:`latest`,onValueChange:e=>a(e===`full`),onClick:e=>{e.stopPropagation()},children:[(0,g.jsx)(c.RadioItem,{value:`full`,children:(0,g.jsx)(i,{id:`wham.copyFile.showFullDiff`,defaultMessage:`Full diff`})}),(0,g.jsx)(c.RadioItem,{value:`latest`,children:(0,g.jsx)(i,{id:`wham.copyFile.showLatestCommit`,defaultMessage:`Incremental diff`})})]})]})}var h,g,_=e((()=>{l(),d(),p(),h=t(r()),o(),g=a()}));export{_ as n,m as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bn as n,
+    Hn as r,
+    Pn as i,
+    Vn as a,
+    zn as o
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    LHn as s,
+    RHn as c,
+    zHn as l
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    M as u,
+    N as d,
+    P as f,
+    j as p
+} from "./9e18a103-q7moiqommz7yhv30.js";
+
+function m({
+    unifiedDiff: e,
+    setUnifiedDiff: t,
+    showFullDiff: r,
+    setShowFullDiff: a
+}) {
+    let o = n(),
+        [l, d] = (0, h.useState)(!1);
+    return (0, g.jsxs)(s, {
+        open: l,
+        onOpenChange: d,
+        contentAlign: `end`,
+        sideOffset: 8,
+        modal: !0,
+        triggerButton: (0, g.jsx)(`button`, {
+            type: `button`,
+            onClick: () => d(!0),
+            className: `hover:bg-token-border-light flex items-center justify-center rounded p-3`,
+            "aria-label": o.formatMessage({
+                id: `wham.diffModeDropdown.openMenu`,
+                defaultMessage: `Open diff settings menu`
+            }),
+            children: (0, g.jsx)(f, {
+                className: `icon`
+            })
+        }),
+        children: [(0, g.jsxs)(c.RadioGroup, {
+            value: e ? `unified` : `split`,
+            onValueChange: e => t(e === `unified`),
+            onClick: e => e.stopPropagation(),
+            children: [(0, g.jsx)(c.RadioItem, {
+                value: `split`,
+                onClick: e => e.stopPropagation(),
+                children: (0, g.jsxs)(`div`, {
+                    className: `text-token-text-primary flex items-center gap-3`,
+                    children: [(0, g.jsx)(f, {
+                        className: `icon`
+                    }), (0, g.jsx)(i, {
+                        id: `wham.message.modal.footer.splitDiff`,
+                        defaultMessage: `Split diff`
+                    })]
+                })
+            }), (0, g.jsx)(c.RadioItem, {
+                value: `unified`,
+                onClick: e => e.stopPropagation(),
+                children: (0, g.jsxs)(`div`, {
+                    className: `text-token-text-primary flex items-center gap-3`,
+                    children: [(0, g.jsx)(u, {
+                        className: `icon`
+                    }), (0, g.jsx)(i, {
+                        id: `wham.message.modal.footer.unifiedDiff`,
+                        defaultMessage: `Unified diff`
+                    })]
+                })
+            })]
+        }), (0, g.jsx)(c.Separator, {}), (0, g.jsxs)(c.RadioGroup, {
+            value: r ? `full` : `latest`,
+            onValueChange: e => a(e === `full`),
+            onClick: e => {
+                e.stopPropagation()
+            },
+            children: [(0, g.jsx)(c.RadioItem, {
+                value: `full`,
+                children: (0, g.jsx)(i, {
+                    id: `wham.copyFile.showFullDiff`,
+                    defaultMessage: `Full diff`
+                })
+            }), (0, g.jsx)(c.RadioItem, {
+                value: `latest`,
+                children: (0, g.jsx)(i, {
+                    id: `wham.copyFile.showLatestCommit`,
+                    defaultMessage: `Incremental diff`
+                })
+            })]
+        })]
+    })
+}
+var h, g, _ = e((() => {
+    l(), d(), p(), h = t(r()), o(), g = a()
+}));
+export {
+    _ as n, m as t
+};
 //# sourceMappingURL=18d4c67e-cvhaseifr57k37g1.js.map

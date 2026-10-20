@@ -1,2 +1,149 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Mz as t,Nz as n,pJ as r,xJ as i}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as a,Tn as o,Vn as s,zn as c}from"./2340486e-komxp8tzs51ny4jj.js";import{Xi as l,Zi as u}from"./conversation-small-cawdu7il3ha6y70c.js";import{T_ as d,__ as f,w_ as p,x_ as m}from"./8b34dbc2-d4icgkio4i3wfm6q.js";function h(e){"use forget";let t=(0,g.c)(11),n,r,a,o;t[0]===e?(n=t[1],r=t[2],a=t[3],o=t[4]):({"aria-hidden":n,"aria-label":r,"aria-labelledby":a,...o}=e,t[0]=e,t[1]=n,t[2]=r,t[3]=a,t[4]=o);let s=n??(r||a?void 0:!0),c;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(c={__html:i(l)},t[5]=c):c=t[5];let u;return t[6]!==r||t[7]!==a||t[8]!==o||t[9]!==s?(u=(0,_.jsx)(`svg`,{...o,xmlns:`http://www.w3.org/2000/svg`,width:l.canvas.width,height:l.canvas.height,viewBox:l.canvas.viewBox,fill:`currentColor`,"data-rtl-flip":``,"aria-label":r,"aria-labelledby":a,"aria-hidden":s,dangerouslySetInnerHTML:c}),t[6]=r,t[7]=a,t[8]=o,t[9]=s,t[10]=u):u=t[10],u}var g,_,v=e((()=>{g=o(),r(),u(),_=s()}));function y(){"use forget";let e=(0,b.c)(8),n=d(),r=a(),i;e[0]===r?i=e[1]:(i=r.formatMessage({id:`imagegen.actions.page.dismiss`,defaultMessage:`Dismiss`}),e[0]=r,e[1]=i);let o;e[2]===n?o=e[3]:(o=()=>{m(n,null)},e[2]=n,e[3]=o);let s;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,x.jsx)(t.Cross,{className:`h-5 w-5`}),e[4]=s):s=e[4];let c;return e[5]!==i||e[6]!==o?(c=(0,x.jsx)(`button`,{"aria-label":i,onClick:o,className:`text-token-text-primary flex shrink-0 items-center justify-center rounded-full transition sm:hidden`,children:s}),e[5]=i,e[6]=o,e[7]=c):c=e[7],c}var b,x,S,C=e((()=>{b=o(),c(),v(),n(),p(),f(),x=s(),S=e=>{"use forget";let n=(0,b.c)(20),{pageIndex:r,pageCount:i,onPreviousPage:o,onNextPage:s,showDismissButton:c}=e,l=c!==void 0&&c,u=a(),d=Math.min(r,i-1),f;n[0]===u?f=n[1]:(f=u.formatMessage({id:`imagegen.actions.page.previous`,defaultMessage:`Previous page`}),n[0]=u,n[1]=f);let p=d<=0,m;n[2]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,x.jsx)(h,{className:`icon-sm`}),n[2]=m):m=n[2];let g;n[3]!==o||n[4]!==f||n[5]!==p?(g=(0,x.jsx)(`button`,{"aria-label":f,onClick:o,disabled:p,className:`hover:bg-token-interactive-bg-tertiary-press bg-token-bg-primary border-token-border-heavy hidden size-9 items-center justify-center rounded-full border transition-colors disabled:cursor-not-allowed disabled:opacity-30 sm:flex`,children:m}),n[3]=o,n[4]=f,n[5]=p,n[6]=g):g=n[6];let _;n[7]===u?_=n[8]:(_=u.formatMessage({id:`imagegen.actions.page.next`,defaultMessage:`Next page`}),n[7]=u,n[8]=_);let v=d>=i-1,S;n[9]===Symbol.for(`react.memo_cache_sentinel`)?(S=(0,x.jsx)(t.ChevronRightSm,{className:`icon-sm`}),n[9]=S):S=n[9];let C;n[10]!==s||n[11]!==_||n[12]!==v?(C=(0,x.jsx)(`button`,{"aria-label":_,onClick:s,disabled:v,className:`hover:bg-token-interactive-bg-tertiary-press bg-token-bg-primary border-token-border-heavy hidden size-9 items-center justify-center rounded-full border transition-colors disabled:cursor-not-allowed disabled:opacity-30 sm:flex`,children:S}),n[10]=s,n[11]=_,n[12]=v,n[13]=C):C=n[13];let w;n[14]===l?w=n[15]:(w=l&&(0,x.jsx)(y,{}),n[14]=l,n[15]=w);let T;return n[16]!==w||n[17]!==g||n[18]!==C?(T=(0,x.jsxs)(`div`,{className:`flex items-center gap-2`,children:[g,C,w]}),n[16]=w,n[17]=g,n[18]=C,n[19]=T):T=n[19],T}}));export{C as n,S as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Mz as t,
+    Nz as n,
+    pJ as r,
+    xJ as i
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as a,
+    Tn as o,
+    Vn as s,
+    zn as c
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Xi as l,
+    Zi as u
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    T_ as d,
+    __ as f,
+    w_ as p,
+    x_ as m
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+
+function h(e) {
+    "use forget";
+    let t = (0, g.c)(11),
+        n, r, a, o;
+    t[0] === e ? (n = t[1], r = t[2], a = t[3], o = t[4]) : ({
+        "aria-hidden": n,
+        "aria-label": r,
+        "aria-labelledby": a,
+        ...o
+    } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = a, t[4] = o);
+    let s = n ?? (r || a ? void 0 : !0),
+        c;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (c = {
+        __html: i(l)
+    }, t[5] = c) : c = t[5];
+    let u;
+    return t[6] !== r || t[7] !== a || t[8] !== o || t[9] !== s ? (u = (0, _.jsx)(`svg`, {
+        ...o,
+        xmlns: `http://www.w3.org/2000/svg`,
+        width: l.canvas.width,
+        height: l.canvas.height,
+        viewBox: l.canvas.viewBox,
+        fill: `currentColor`,
+        "data-rtl-flip": ``,
+        "aria-label": r,
+        "aria-labelledby": a,
+        "aria-hidden": s,
+        dangerouslySetInnerHTML: c
+    }), t[6] = r, t[7] = a, t[8] = o, t[9] = s, t[10] = u) : u = t[10], u
+}
+var g, _, v = e((() => {
+    g = o(), r(), u(), _ = s()
+}));
+
+function y() {
+    "use forget";
+    let e = (0, b.c)(8),
+        n = d(),
+        r = a(),
+        i;
+    e[0] === r ? i = e[1] : (i = r.formatMessage({
+        id: `imagegen.actions.page.dismiss`,
+        defaultMessage: `Dismiss`
+    }), e[0] = r, e[1] = i);
+    let o;
+    e[2] === n ? o = e[3] : (o = () => {
+        m(n, null)
+    }, e[2] = n, e[3] = o);
+    let s;
+    e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, x.jsx)(t.Cross, {
+        className: `h-5 w-5`
+    }), e[4] = s) : s = e[4];
+    let c;
+    return e[5] !== i || e[6] !== o ? (c = (0, x.jsx)(`button`, {
+        "aria-label": i,
+        onClick: o,
+        className: `text-token-text-primary flex shrink-0 items-center justify-center rounded-full transition sm:hidden`,
+        children: s
+    }), e[5] = i, e[6] = o, e[7] = c) : c = e[7], c
+}
+var b, x, S, C = e((() => {
+    b = o(), c(), v(), n(), p(), f(), x = s(), S = e => {
+        "use forget";
+        let n = (0, b.c)(20),
+            {
+                pageIndex: r,
+                pageCount: i,
+                onPreviousPage: o,
+                onNextPage: s,
+                showDismissButton: c
+            } = e,
+            l = c !== void 0 && c,
+            u = a(),
+            d = Math.min(r, i - 1),
+            f;
+        n[0] === u ? f = n[1] : (f = u.formatMessage({
+            id: `imagegen.actions.page.previous`,
+            defaultMessage: `Previous page`
+        }), n[0] = u, n[1] = f);
+        let p = d <= 0,
+            m;
+        n[2] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, x.jsx)(h, {
+            className: `icon-sm`
+        }), n[2] = m) : m = n[2];
+        let g;
+        n[3] !== o || n[4] !== f || n[5] !== p ? (g = (0, x.jsx)(`button`, {
+            "aria-label": f,
+            onClick: o,
+            disabled: p,
+            className: `hover:bg-token-interactive-bg-tertiary-press bg-token-bg-primary border-token-border-heavy hidden size-9 items-center justify-center rounded-full border transition-colors disabled:cursor-not-allowed disabled:opacity-30 sm:flex`,
+            children: m
+        }), n[3] = o, n[4] = f, n[5] = p, n[6] = g) : g = n[6];
+        let _;
+        n[7] === u ? _ = n[8] : (_ = u.formatMessage({
+            id: `imagegen.actions.page.next`,
+            defaultMessage: `Next page`
+        }), n[7] = u, n[8] = _);
+        let v = d >= i - 1,
+            S;
+        n[9] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, x.jsx)(t.ChevronRightSm, {
+            className: `icon-sm`
+        }), n[9] = S) : S = n[9];
+        let C;
+        n[10] !== s || n[11] !== _ || n[12] !== v ? (C = (0, x.jsx)(`button`, {
+            "aria-label": _,
+            onClick: s,
+            disabled: v,
+            className: `hover:bg-token-interactive-bg-tertiary-press bg-token-bg-primary border-token-border-heavy hidden size-9 items-center justify-center rounded-full border transition-colors disabled:cursor-not-allowed disabled:opacity-30 sm:flex`,
+            children: S
+        }), n[10] = s, n[11] = _, n[12] = v, n[13] = C) : C = n[13];
+        let w;
+        n[14] === l ? w = n[15] : (w = l && (0, x.jsx)(y, {}), n[14] = l, n[15] = w);
+        let T;
+        return n[16] !== w || n[17] !== g || n[18] !== C ? (T = (0, x.jsxs)(`div`, {
+            className: `flex items-center gap-2`,
+            children: [g, C, w]
+        }), n[16] = w, n[17] = g, n[18] = C, n[19] = T) : T = n[19], T
+    }
+}));
+export {
+    C as n, S as t
+};
 //# sourceMappingURL=4775c8e0-acvb89uvrkm8q70w.js.map

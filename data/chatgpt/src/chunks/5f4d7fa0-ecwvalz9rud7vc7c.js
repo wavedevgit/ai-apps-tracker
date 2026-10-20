@@ -1,2 +1,253 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{C5 as t,Fst as n,Fv as r,HE as i,L1 as a,N1 as o,N5 as s,P7 as c,R7 as l,S8 as u,VE as d,Yit as f,Z_ as p,dK as m,h8 as h,qit as g,tct as _,uK as v,w5 as y,w8 as b,zE as x}from"./4813494d-dfpv67hlp00pbohr.js";import{wn as S}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Drt as C,FQ as ee,Nun as w,OPn as te,Ort as ne,PPn as T,WPn as E,WQ as D,Yln as re,bnt as O,eTn as k,kPn as A,nyn as j,ryn as M,tTn as N,wPn as ie,xPn as P,ynt as F}from"./conversation-small-cy5f8pl0g26s86so.js";var I,L,R=e((()=>{M(),N(),E(),te(),O(),h(),a(),i(),f(),m(),l(),y(),I=b(({connectorId:e,templateId:n})=>u(()=>{let r=t(),i=o();return{queryKey:[...T(),`codex-template`,i?.id,i?.normalizedAccountUserId,e,n],queryFn:async()=>{let[t,i]=await Promise.all([j(r,e,k.CODEX,{staleTime:0}),F.safeGet(`/connectors/by-template`,{parameters:{query:{template_id:n}},additionalHeaders:{[g]:k.CODEX}})]);return{connectors:[...t?[t]:[],...i.connectors]}},enabled:i?.normalizedAccountUserId!=null&&A()}})),L=b(({productSku:e,purpose:t})=>u(()=>{let n=T(t,!0,!1);return{queryKey:n,queryFn:async()=>{let n=await c.safePost(`/aip/connectors/list_accessible`,{requestBody:{principals:[],purpose:t},parameters:{query:{include_actions:!1,external_logos:!0}},additionalHeaders:e?{[g]:e}:void 0}),r=d();return{connectors:(n.connectors??[]).map(e=>x(e,{preferIconAssets:r})),templates:n.app_templates??[]}},placeholderData:t==null?v(`system-connectors`,1,n,{ignoreQuotaExceededError:!0}):void 0,enabled:o()?.normalizedAccountUserId!=null&&A()}}))}));function z(e){return e.id===X||e.template_id===`templated_apps_GitHubEnterprise`}function B(e){return Array.from(e.values()).filter(z).filter(e=>e.labels?.admin_only_connector!==`true`).filter(Q).sort((e,t)=>e.id===X?-1:t.id===X?1:e.name.localeCompare(t.name))}function V(e){return Array.from(e.values()).some(e=>z(e)&&Q(e))}function H(e={}){let{data:t}=L(e);return t&&V(C(t))}function U({candidates:e,connectorLinks:t,preferredConnectorId:n,selectedConnectorId:r}){for(let t of[r,n]){let n=e.find(e=>e.id===t);if(n&&Q(n))return n.id}let i=e.find(e=>Q(e)&&$(e.id,t));if(i)return i.id;let a=e.find(e=>e.id===X&&Q(e));return a?a.id:e.find(Q)?.id??X}function W(){"use forget";let e=(0,Y.c)(7),{data:t,isLoading:n,error:r,refetch:i}=s(K),a;e[0]===t?.connectors?a=e[1]:(a=B(new Map(t?.connectors.map(G))),e[0]=t?.connectors,e[1]=a);let o=a,c=r??null,l;return e[2]!==o||e[3]!==n||e[4]!==i||e[5]!==c?(l={candidates:o,isLoading:n,error:c,refetch:i},e[2]=o,e[3]=n,e[4]=i,e[5]=c,e[6]=l):l=e[6],l}function G(e){return[e.id,e]}function K(){return I({connectorId:X,templateId:Z})}function q(){"use forget";let e=(0,Y.c)(2),{candidates:t,isLoading:n,error:r}=W();if(n||r)return;let i;return e[0]===t?i=e[1]:(i=t.some(Q),e[0]=t,e[1]=i),i}function J(e){"use forget";let t=(0,Y.c)(12),{connectorId:r,redirectAfter:i,onNoConnector:a,onNoOAuthClients:o}=e===void 0?{}:e,s=i===void 0?`/codex/cloud`:i,{candidates:c,isLoading:l,error:u,refetch:d}=W(),{data:f,isLoading:p}=w(),m;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(m={productSku:k.CODEX},t[0]=m):m=t[0];let{connectorLinks:h,isLoading:g}=ie(m),_=U({candidates:c,connectorLinks:h,preferredConnectorId:f?.preferred_github_connector_id,selectedConnectorId:r}),v=D(n.GITHUB_CONNECTOR,_,`github`,s,k.CODEX,a,o),y=v.error??u,b;t[1]!==v||t[2]!==d?(b=()=>{v.refetch(),d()},t[1]=v,t[2]=d,t[3]=b):b=t[3];let x=(l||u!=null||c.length>0)&&v.isConnected,S=v.isLoading||l||g||p,C;return t[4]!==c||t[5]!==v||t[6]!==_||t[7]!==y||t[8]!==b||t[9]!==x||t[10]!==S?(C={...v,error:y,refetch:b,isConnected:x,isLoading:S,connectorId:_,githubConnectorCandidates:c},t[4]=c,t[5]=v,t[6]=_,t[7]=y,t[8]=b,t[9]=x,t[10]=S,t[11]=C):C=t[11],C}var Y,X,Z,Q,$,ae=e((()=>{Y=S(),_(),P(),r(),ee(),N(),ne(),h(),re(),R(),X=p[n.GITHUB_CONNECTOR],Z=`templated_apps_GitHubEnterprise`,Q=e=>e.status!==`DISABLED_BY_ADMIN`,$=(e,t)=>(t.get(e)?.length??0)>0}));export{q as a,J as i,ae as n,I as o,H as r,R as s,X as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    C5 as t,
+    Fst as n,
+    Fv as r,
+    HE as i,
+    L1 as a,
+    N1 as o,
+    N5 as s,
+    P7 as c,
+    R7 as l,
+    S8 as u,
+    VE as d,
+    Yit as f,
+    Z_ as p,
+    dK as m,
+    h8 as h,
+    qit as g,
+    tct as _,
+    uK as v,
+    w5 as y,
+    w8 as b,
+    zE as x
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    wn as S
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Drt as C,
+    FQ as ee,
+    Nun as w,
+    OPn as te,
+    Ort as ne,
+    PPn as T,
+    WPn as E,
+    WQ as D,
+    Yln as re,
+    bnt as O,
+    eTn as k,
+    kPn as A,
+    nyn as j,
+    ryn as M,
+    tTn as N,
+    wPn as ie,
+    xPn as P,
+    ynt as F
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+var I, L, R = e((() => {
+    M(), N(), E(), te(), O(), h(), a(), i(), f(), m(), l(), y(), I = b(({
+        connectorId: e,
+        templateId: n
+    }) => u(() => {
+        let r = t(),
+            i = o();
+        return {
+            queryKey: [...T(), `codex-template`, i?.id, i?.normalizedAccountUserId, e, n],
+            queryFn: async () => {
+                let [t, i] = await Promise.all([j(r, e, k.CODEX, {
+                    staleTime: 0
+                }), F.safeGet(`/connectors/by-template`, {
+                    parameters: {
+                        query: {
+                            template_id: n
+                        }
+                    },
+                    additionalHeaders: {
+                        [g]: k.CODEX
+                    }
+                })]);
+                return {
+                    connectors: [...t ? [t] : [], ...i.connectors]
+                }
+            },
+            enabled: i?.normalizedAccountUserId != null && A()
+        }
+    })), L = b(({
+        productSku: e,
+        purpose: t
+    }) => u(() => {
+        let n = T(t, !0, !1);
+        return {
+            queryKey: n,
+            queryFn: async () => {
+                let n = await c.safePost(`/aip/connectors/list_accessible`, {
+                        requestBody: {
+                            principals: [],
+                            purpose: t
+                        },
+                        parameters: {
+                            query: {
+                                include_actions: !1,
+                                external_logos: !0
+                            }
+                        },
+                        additionalHeaders: e ? {
+                            [g]: e
+                        } : void 0
+                    }),
+                    r = d();
+                return {
+                    connectors: (n.connectors ?? []).map(e => x(e, {
+                        preferIconAssets: r
+                    })),
+                    templates: n.app_templates ?? []
+                }
+            },
+            placeholderData: t == null ? v(`system-connectors`, 1, n, {
+                ignoreQuotaExceededError: !0
+            }) : void 0,
+            enabled: o()?.normalizedAccountUserId != null && A()
+        }
+    }))
+}));
+
+function z(e) {
+    return e.id === X || e.template_id === `templated_apps_GitHubEnterprise`
+}
+
+function B(e) {
+    return Array.from(e.values()).filter(z).filter(e => e.labels?.admin_only_connector !== `true`).filter(Q).sort((e, t) => e.id === X ? -1 : t.id === X ? 1 : e.name.localeCompare(t.name))
+}
+
+function V(e) {
+    return Array.from(e.values()).some(e => z(e) && Q(e))
+}
+
+function H(e = {}) {
+    let {
+        data: t
+    } = L(e);
+    return t && V(C(t))
+}
+
+function U({
+    candidates: e,
+    connectorLinks: t,
+    preferredConnectorId: n,
+    selectedConnectorId: r
+}) {
+    for (let t of [r, n]) {
+        let n = e.find(e => e.id === t);
+        if (n && Q(n)) return n.id
+    }
+    let i = e.find(e => Q(e) && $(e.id, t));
+    if (i) return i.id;
+    let a = e.find(e => e.id === X && Q(e));
+    return a ? a.id : e.find(Q)?.id ?? X
+}
+
+function W() {
+    "use forget";
+    let e = (0, Y.c)(7),
+        {
+            data: t,
+            isLoading: n,
+            error: r,
+            refetch: i
+        } = s(K),
+        a;
+    e[0] === t?.connectors ? a = e[1] : (a = B(new Map(t?.connectors.map(G))), e[0] = t?.connectors, e[1] = a);
+    let o = a,
+        c = r ?? null,
+        l;
+    return e[2] !== o || e[3] !== n || e[4] !== i || e[5] !== c ? (l = {
+        candidates: o,
+        isLoading: n,
+        error: c,
+        refetch: i
+    }, e[2] = o, e[3] = n, e[4] = i, e[5] = c, e[6] = l) : l = e[6], l
+}
+
+function G(e) {
+    return [e.id, e]
+}
+
+function K() {
+    return I({
+        connectorId: X,
+        templateId: Z
+    })
+}
+
+function q() {
+    "use forget";
+    let e = (0, Y.c)(2),
+        {
+            candidates: t,
+            isLoading: n,
+            error: r
+        } = W();
+    if (n || r) return;
+    let i;
+    return e[0] === t ? i = e[1] : (i = t.some(Q), e[0] = t, e[1] = i), i
+}
+
+function J(e) {
+    "use forget";
+    let t = (0, Y.c)(12),
+        {
+            connectorId: r,
+            redirectAfter: i,
+            onNoConnector: a,
+            onNoOAuthClients: o
+        } = e === void 0 ? {} : e,
+        s = i === void 0 ? `/codex/cloud` : i,
+        {
+            candidates: c,
+            isLoading: l,
+            error: u,
+            refetch: d
+        } = W(),
+        {
+            data: f,
+            isLoading: p
+        } = w(),
+        m;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (m = {
+        productSku: k.CODEX
+    }, t[0] = m) : m = t[0];
+    let {
+        connectorLinks: h,
+        isLoading: g
+    } = ie(m), _ = U({
+        candidates: c,
+        connectorLinks: h,
+        preferredConnectorId: f?.preferred_github_connector_id,
+        selectedConnectorId: r
+    }), v = D(n.GITHUB_CONNECTOR, _, `github`, s, k.CODEX, a, o), y = v.error ?? u, b;
+    t[1] !== v || t[2] !== d ? (b = () => {
+        v.refetch(), d()
+    }, t[1] = v, t[2] = d, t[3] = b) : b = t[3];
+    let x = (l || u != null || c.length > 0) && v.isConnected,
+        S = v.isLoading || l || g || p,
+        C;
+    return t[4] !== c || t[5] !== v || t[6] !== _ || t[7] !== y || t[8] !== b || t[9] !== x || t[10] !== S ? (C = {
+        ...v,
+        error: y,
+        refetch: b,
+        isConnected: x,
+        isLoading: S,
+        connectorId: _,
+        githubConnectorCandidates: c
+    }, t[4] = c, t[5] = v, t[6] = _, t[7] = y, t[8] = b, t[9] = x, t[10] = S, t[11] = C) : C = t[11], C
+}
+var Y, X, Z, Q, $, ae = e((() => {
+    Y = S(), _(), P(), r(), ee(), N(), ne(), h(), re(), R(), X = p[n.GITHUB_CONNECTOR], Z = `templated_apps_GitHubEnterprise`, Q = e => e.status !== `DISABLED_BY_ADMIN`, $ = (e, t) => (t.get(e)?.length ?? 0) > 0
+}));
+export {
+    q as a, J as i, ae as n, I as o, H as r, R as s, X as t
+};
 //# sourceMappingURL=5f4d7fa0-ecwvalz9rud7vc7c.js.map

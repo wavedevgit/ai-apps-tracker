@@ -1,2 +1,32 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Dnt as t,Ent as n,I1 as r,M1 as i,f5 as a,f8 as o,g8 as s}from"./4813494d-ed29bs6yiwucn7st.js";function c(){return i()?.normalizedAccountUserId!=null&&u()}function l(){i()?.normalizedAccountUserId!=null&&a(()=>u.set(!0))}var u,d=e((()=>{o(),r(),t(),u=s(n.LibrarySelfRemovalConfirmationDismissedV1,()=>!1,{coerceStoredValue:e=>e===!0,scope:()=>({userId:i()?.normalizedAccountUserId})})}));export{l as n,c as r,d as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Dnt as t,
+    Ent as n,
+    I1 as r,
+    M1 as i,
+    f5 as a,
+    f8 as o,
+    g8 as s
+} from "./4813494d-ed29bs6yiwucn7st.js";
+
+function c() {
+    return i()?.normalizedAccountUserId != null && u()
+}
+
+function l() {
+    i()?.normalizedAccountUserId != null && a(() => u.set(!0))
+}
+var u, d = e((() => {
+    o(), r(), t(), u = s(n.LibrarySelfRemovalConfirmationDismissedV1, () => !1, {
+        coerceStoredValue: e => e === !0,
+        scope: () => ({
+            userId: i()?.normalizedAccountUserId
+        })
+    })
+}));
+export {
+    l as n, c as r, d as t
+};
 //# sourceMappingURL=1f37ef3c-cfvbfxamjc7ll6hh.js.map

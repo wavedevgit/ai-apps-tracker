@@ -1,0 +1,1238 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    crt as n,
+    srt as r
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+import {
+    Bn as i,
+    Ln as a,
+    Nn as o,
+    Rn as s,
+    Vn as c,
+    wn as l,
+    zn as u
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    DHt as d,
+    u$ as f
+} from "./conversation-small-ikg0dwuw782klweb.js";
+import {
+    zt as p
+} from "./1c919af1-n3qwx9w7ipxrf1ap.js";
+import {
+    t as m
+} from "./4b68ab38-hqs0yc0b0yhvv7p6.js";
+import {
+    t as ee
+} from "./9d60841e-e49t3yx590vsf159.js";
+import {
+    a as h,
+    b as g,
+    d as te,
+    i as _,
+    t as v,
+    x as y
+} from "./707eab0c-irb6aeijstxf8tnp.js";
+import {
+    t as b
+} from "./a35abcd6-fl6iafxr1mqknzi0.js";
+import {
+    a as x,
+    n as S,
+    t as C
+} from "./18093cad-iz5mkotfimz5kllc.js";
+import {
+    C as w,
+    S as T,
+    a as E,
+    o as D,
+    s as O,
+    t as k,
+    v as A,
+    x as j
+} from "./4285e798-lllo1c9bqolpkjno.js";
+import {
+    n as M,
+    t as N
+} from "./8e88ec39-ly2p52dkrwo6r0lt.js";
+import {
+    n as P,
+    r as F,
+    t as I
+} from "./b162dc0f-j6d2lls08ey3l0kt.js";
+import {
+    T as L,
+    r as R,
+    y as z
+} from "./11e71471-eewkyapps63jx2nf.js";
+import {
+    a as B,
+    c as V,
+    i as H,
+    l as ne,
+    n as U,
+    o as re,
+    r as ie,
+    s as ae,
+    t as oe,
+    u as se
+} from "./43332649-ddgg8bfvnjog4rqu.js";
+import {
+    a as ce,
+    t as W
+} from "./f24939f4-pal5isn6y62twbdg.js";
+import {
+    n as le,
+    t as G
+} from "./467065a1-h86a543ffbi1ejh6.js";
+import {
+    i as K,
+    n as ue,
+    r as q
+} from "./a6bddaad-nwynqmt2f6v2cbji.js";
+import {
+    n as de,
+    t as fe
+} from "./4a56070f-opa52h6v0qraluqa.js";
+var pe, me, he, ge, _e, ve = e((() => {
+        pe = `na_y6G_Copy`, me = `na_y6G_Description`, he = `na_y6G_Icon`, ge = `na_y6G_Title`, _e = {
+            Copy: pe,
+            Description: me,
+            Icon: he,
+            Title: ge
+        }
+    })),
+    ye, be, xe, Se = e((() => {
+        ye = l(), ve(), be = i(), xe = e => {
+            "use forget";
+            let t = (0, ye.c)(12),
+                {
+                    description: n,
+                    icon: r,
+                    title: i
+                } = e,
+                a;
+            t[0] === r ? a = t[1] : (a = (0, be.jsx)(`div`, {
+                className: _e.Icon,
+                children: r
+            }), t[0] = r, t[1] = a);
+            let o;
+            t[2] === i ? o = t[3] : (o = (0, be.jsx)(`h2`, {
+                className: _e.Title,
+                children: i
+            }), t[2] = i, t[3] = o);
+            let s;
+            t[4] === n ? s = t[5] : (s = n && (0, be.jsx)(`p`, {
+                className: _e.Description,
+                children: n
+            }), t[4] = n, t[5] = s);
+            let c;
+            t[6] !== o || t[7] !== s ? (c = (0, be.jsxs)(`div`, {
+                className: _e.Copy,
+                children: [o, s]
+            }), t[6] = o, t[7] = s, t[8] = c) : c = t[8];
+            let l;
+            return t[9] !== a || t[10] !== c ? (l = (0, be.jsxs)(be.Fragment, {
+                children: [a, c]
+            }), t[9] = a, t[10] = c, t[11] = l) : l = t[11], l
+        }
+    })),
+    Ce, we = e((() => {
+        Ce = {
+            Error: `_8lHWXa_Error`
+        }
+    })),
+    Te, Ee, J, De, Oe, ke = e((() => {
+        Te = l(), k(), W(), r(), v(), G(), Ee = t(c()), s(), K(), Se(), we(), J = i(), De = e => {
+            "use forget";
+            let t = (0, Te.c)(39),
+                {
+                    onClose: r
+                } = e,
+                i = u(),
+                a = (0, Ee.useId)(),
+                [s, c] = (0, Ee.useState)(``),
+                [l, f] = (0, Ee.useState)(!1),
+                [p, m] = (0, Ee.useState)(null),
+                ee;
+            t[0] !== l || t[1] !== i || t[2] !== p ? (ee = p ?? (l ? i.formatMessage(Oe.promptRequiredError) : null), t[0] = l, t[1] = i, t[2] = p, t[3] = ee) : ee = t[3];
+            let h = ee,
+                g;
+            t[4] !== i || t[5] !== r || t[6] !== s ? (g = async () => {
+                m(null);
+                let e = s.trim();
+                if (e.length === 0) {
+                    f(!0);
+                    return
+                }
+                let t = d();
+                E({
+                    actionType: D.SKILL_GENERATE,
+                    actionResult: O.STARTED,
+                    actionInstanceId: t.actionInstanceId,
+                    source: j.SKILL_DETAIL,
+                    skill: {
+                        skillSource: A.GENERATED
+                    }
+                });
+                let a = !1;
+                try {
+                    await ce({
+                        kind: `skill`,
+                        prompt: e
+                    }), a = !0, E({
+                        actionType: D.SKILL_GENERATE,
+                        actionResult: O.SUCCEEDED,
+                        source: j.SKILL_DETAIL,
+                        skill: {
+                            skillSource: A.GENERATED
+                        },
+                        request: t()
+                    }), r()
+                } catch (e) {
+                    let r = e;
+                    a || E({
+                        actionType: D.SKILL_GENERATE,
+                        actionResult: O.FAILED,
+                        source: j.SKILL_DETAIL,
+                        skill: {
+                            skillSource: A.GENERATED
+                        },
+                        request: t({
+                            error: r
+                        })
+                    }), n.warn(`Failed to send skill prompt to Pluto`, {
+                        error: r
+                    }), m(i.formatMessage(Oe.unexpectedError))
+                }
+            }, t[4] = i, t[5] = r, t[6] = s, t[7] = g) : g = t[7];
+            let _ = g,
+                v;
+            t[8] === _ ? v = t[9] : (v = e => {
+                e.preventDefault(), _()
+            }, t[8] = _, t[9] = v);
+            let y = v,
+                b;
+            t[10] === _ ? b = t[11] : (b = e => {
+                e.nativeEvent.isComposing || e.key !== `Enter` || e.shiftKey || e.altKey || !e.metaKey && !e.ctrlKey || (e.preventDefault(), _())
+            }, t[10] = _, t[11] = b);
+            let x = b,
+                S;
+            t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, J.jsx)(xe, {
+                icon: (0, J.jsx)(ue, {
+                    name: `default`,
+                    className: `size-10`
+                }),
+                title: (0, J.jsx)(o, {
+                    ...Oe.createSkillTitle
+                }),
+                description: (0, J.jsx)(o, {
+                    ...Oe.createSkillBody
+                })
+            }), t[12] = S) : S = t[12];
+            let C;
+            t[13] === i ? C = t[14] : (C = i.formatMessage(Oe.promptFieldLabel), t[13] = i, t[14] = C);
+            let w;
+            t[15] === i ? w = t[16] : (w = i.formatMessage(Oe.promptPlaceholder), t[15] = i, t[16] = w);
+            let T;
+            t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (T = e => {
+                f(!1), m(null), c(e.target.value)
+            }, t[17] = T) : T = t[17];
+            let k;
+            t[18] !== x || t[19] !== l || t[20] !== s || t[21] !== C || t[22] !== w ? (k = (0, J.jsx)(le, {
+                "aria-label": C,
+                placeholder: w,
+                size: `lg`,
+                rows: 7,
+                maxHeight: `none`,
+                value: s,
+                invalid: l,
+                onKeyDown: x,
+                onChange: T
+            }), t[18] = x, t[19] = l, t[20] = s, t[21] = C, t[22] = w, t[23] = k) : k = t[23];
+            let M;
+            t[24] !== a || t[25] !== y || t[26] !== k ? (M = (0, J.jsx)(`div`, {
+                className: `min-h-0 flex-1 overflow-y-auto px-5 pt-5 max-sm:px-4 max-sm:pt-4`,
+                children: (0, J.jsxs)(`div`, {
+                    className: `flex w-full flex-col gap-4 pb-5`,
+                    children: [S, (0, J.jsx)(`form`, {
+                        id: a,
+                        className: `flex min-h-0 flex-1`,
+                        onSubmit: y,
+                        children: k
+                    })]
+                })
+            }), t[24] = a, t[25] = y, t[26] = k, t[27] = M) : M = t[27];
+            let N;
+            t[28] === h ? N = t[29] : (N = !!h && (0, J.jsx)(`div`, {
+                className: Ce.Error,
+                role: `alert`,
+                children: h
+            }), t[28] = h, t[29] = N);
+            let P;
+            t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (P = (0, J.jsx)(o, {
+                ...Oe.generate
+            }), t[30] = P) : P = t[30];
+            let F;
+            t[31] === a ? F = t[32] : (F = (0, J.jsx)(te, {
+                type: `submit`,
+                form: a,
+                color: `primary`,
+                size: `lg`,
+                pill: !0,
+                block: !0,
+                children: P
+            }), t[31] = a, t[32] = F);
+            let I;
+            t[33] !== N || t[34] !== F ? (I = (0, J.jsxs)(`div`, {
+                className: `flex shrink-0 flex-col gap-2.5 p-5`,
+                children: [N, F]
+            }), t[33] = N, t[34] = F, t[35] = I) : I = t[35];
+            let L;
+            return t[36] !== M || t[37] !== I ? (L = (0, J.jsxs)(`div`, {
+                className: `flex w-full flex-1 flex-col`,
+                children: [M, I]
+            }), t[36] = M, t[37] = I, t[38] = L) : L = t[38], L
+        }, Oe = a({
+            createSkillTitle: {
+                id: `Hermes.GptStudio.Builder.SkillsModalCreateView.createSkillTitle`,
+                defaultMessage: `Add skill`
+            },
+            createSkillBody: {
+                id: `Hermes.GptStudio.Builder.SkillsModalCreateView.createSkillBody`,
+                defaultMessage: `Skills are reusable tasks your agent can perform, like summarizing emails, creating tickets, or preparing meeting notes.`
+            },
+            promptFieldLabel: {
+                id: `Hermes.GptStudio.Builder.SkillsModalCreateView.promptFieldLabel`,
+                defaultMessage: `Describe the skill you want to create`
+            },
+            promptPlaceholder: {
+                id: `Hermes.GptStudio.Builder.SkillsModalCreateView.promptPlaceholder`,
+                defaultMessage: `Describe the skill you want to create`
+            },
+            promptRequiredError: {
+                id: `Hermes.GptStudio.Builder.SkillsModalCreateView.promptRequiredError`,
+                defaultMessage: `Describe the skill you want to create.`
+            },
+            generate: {
+                id: `Hermes.GptStudio.Builder.SkillsModalCreateView.generate`,
+                defaultMessage: `Generate skill`
+            },
+            unexpectedError: {
+                id: `Hermes.GptStudio.Builder.SkillsModalCreateView.unexpectedError`,
+                defaultMessage: `Something went wrong. Try again.`
+            }
+        })
+    })),
+    Ae, je, Me = e((() => {
+        f(), Ae = (e, t) => e.some(e => e.id === t.id || `chatgpt_skill_id` in e && e.chatgpt_skill_id === t.chatgpt_skill_id), je = e => ({
+            type: `chatgpt_skill_ref`,
+            id: e.id,
+            name: e.name,
+            description: e.description,
+            icon: {
+                name: e.iconography ?? `default`,
+                color: ``
+            },
+            created_by_user_id: e.creator_id,
+            created_at: e.updated_at,
+            chatgpt_skill_id: e.id
+        })
+    }));
+
+function Ne(e) {
+    return e != null
+}
+
+function Pe(e, t) {
+    return (0, Y.jsxs)(`span`, {
+        children: [t > 0 && (0, Y.jsx)(`span`, {
+            "aria-hidden": !0,
+            className: `px-1 text-base leading-none`,
+            children: Le
+        }), e]
+    }, `${t}-${e}`)
+}
+var Fe, Ie, Y, Le, Re, ze, Be, Ve, He, Ue = e((() => {
+        Fe = l(), oe(), v(), b(), _(), Ie = t(c()), s(), Me(), V(), K(), Se(), Y = i(), Le = `·`, Re = e => {
+            "use forget";
+            let t = (0, Fe.c)(65),
+                {
+                    directorySkill: n,
+                    onAttach: r
+                } = e,
+                i = u(),
+                {
+                    canManageChatGptSkills: a,
+                    skills: s
+                } = U(),
+                {
+                    attachChatGptSkill: c
+                } = ne(),
+                [l, d] = (0, Ie.useState)(null),
+                f, p;
+            t[0] !== s || t[1] !== n ? (f = je(n), p = Ae(s, f), t[0] = s, t[1] = n, t[2] = f, t[3] = p) : (f = t[2], p = t[3]);
+            let m = p,
+                g = m || !a,
+                _;
+            t[4] !== a || t[5] !== i || t[6] !== m ? (_ = !m && !a ? i.formatMessage(He.addSkillPermissionTooltip) : null, t[4] = a, t[5] = i, t[6] = m, t[7] = _) : _ = t[7];
+            let v = _,
+                y;
+            t[8] === n.short_description ? y = t[9] : (y = n.short_description?.trim(), t[8] = n.short_description, t[9] = y);
+            let b = y,
+                x;
+            t[10] === n.files ? x = t[11] : (x = Object.keys(n.files), t[10] = n.files, t[11] = x);
+            let S = x.length,
+                C, w;
+            if (t[12] !== n.last_updated_at || t[13] !== S || t[14] !== i) {
+                let e = new Date(n.last_updated_at),
+                    r = Number.isNaN(e.getTime()) ? null : Ve(e, i);
+                t[17] !== S || t[18] !== i ? (C = i.formatMessage(He.skillFileCount, {
+                    count: S
+                }), t[17] = S, t[18] = i, t[19] = C) : C = t[19], w = r == null ? null : i.formatMessage(He.skillUpdated, {
+                    updatedLabel: r
+                }), t[12] = n.last_updated_at, t[13] = S, t[14] = i, t[15] = C, t[16] = w
+            } else C = t[15], w = t[16];
+            let T;
+            t[20] !== C || t[21] !== w ? (T = [C, w].filter(Ne), t[20] = C, t[21] = w, t[22] = T) : T = t[22];
+            let E = T,
+                D;
+            t[23] !== c || t[24] !== a || t[25] !== m || t[26] !== r || t[27] !== f ? (D = () => {
+                if (m || !a) return;
+                d(null);
+                let e = c({
+                    skill: f
+                });
+                if (e.status === `attached`) {
+                    r();
+                    return
+                }
+                d(e.errorMessage)
+            }, t[23] = c, t[24] = a, t[25] = m, t[26] = r, t[27] = f, t[28] = D) : D = t[28];
+            let O = D,
+                k = f.icon?.name,
+                A;
+            t[29] === k ? A = t[30] : (A = (0, Y.jsx)(q, {
+                name: k,
+                className: `size-14`,
+                iconClassName: `size-10`,
+                borderStyle: `normal`
+            }), t[29] = k, t[30] = A);
+            let j;
+            t[31] !== b || t[32] !== f.name || t[33] !== A ? (j = (0, Y.jsx)(xe, {
+                icon: A,
+                title: f.name,
+                description: b
+            }), t[31] = b, t[32] = f.name, t[33] = A, t[34] = j) : j = t[34];
+            let M;
+            t[35] === E ? M = t[36] : (M = E.length > 0 && (0, Y.jsx)(`div`, {
+                className: `text-token-text-secondary truncate text-sm`,
+                children: E.map(Pe)
+            }), t[35] = E, t[36] = M);
+            let N;
+            t[37] === f.description ? N = t[38] : (N = (0, Y.jsx)(`p`, {
+                className: `text-token-text-secondary text-sm whitespace-pre-wrap`,
+                children: f.description
+            }), t[37] = f.description, t[38] = N);
+            let P;
+            t[39] !== j || t[40] !== M || t[41] !== N ? (P = (0, Y.jsx)(`div`, {
+                className: `min-h-0 flex-1 overflow-y-auto px-5 pt-5`,
+                children: (0, Y.jsxs)(`div`, {
+                    className: `flex w-full flex-col gap-4 pb-5`,
+                    children: [j, M, N]
+                })
+            }), t[39] = j, t[40] = M, t[41] = N, t[42] = P) : P = t[42];
+            let F;
+            t[43] === l ? F = t[44] : (F = l && (0, Y.jsx)(`div`, {
+                className: `text-token-interactive-label-warning-secondary text-center text-sm`,
+                role: `alert`,
+                children: l
+            }), t[43] = l, t[44] = F);
+            let I;
+            t[45] === O ? I = t[46] : (I = () => {
+                O()
+            }, t[45] = O, t[46] = I);
+            let L;
+            t[47] === m ? L = t[48] : (L = m && (0, Y.jsx)(ee, {
+                className: `-me-0.5`
+            }), t[47] = m, t[48] = L);
+            let R = m ? He.addedSkill : He.addSkill,
+                z;
+            t[49] === R ? z = t[50] : (z = (0, Y.jsx)(o, {
+                ...R
+            }), t[49] = R, t[50] = z);
+            let B;
+            t[51] !== g || t[52] !== I || t[53] !== L || t[54] !== z ? (B = (0, Y.jsxs)(te, {
+                color: `primary`,
+                size: `lg`,
+                pill: !0,
+                block: !0,
+                disabled: g,
+                onClick: I,
+                children: [L, z]
+            }), t[51] = g, t[52] = I, t[53] = L, t[54] = z, t[55] = B) : B = t[55];
+            let V;
+            t[56] !== v || t[57] !== B ? (V = (0, Y.jsx)(h, {
+                compact: !0,
+                content: v,
+                children: B
+            }), t[56] = v, t[57] = B, t[58] = V) : V = t[58];
+            let H;
+            t[59] !== F || t[60] !== V ? (H = (0, Y.jsxs)(`div`, {
+                className: `flex shrink-0 flex-col gap-2.5 p-5`,
+                children: [F, V]
+            }), t[59] = F, t[60] = V, t[61] = H) : H = t[61];
+            let re;
+            return t[62] !== P || t[63] !== H ? (re = (0, Y.jsxs)(`div`, {
+                className: `flex w-full flex-1 flex-col`,
+                children: [P, H]
+            }), t[62] = P, t[63] = H, t[64] = re) : re = t[64], re
+        }, ze = 7, Be = 1440 * 60 * 1e3, Ve = (e, t) => {
+            let n = Math.round((e.getTime() - Date.now()) / Be);
+            return Math.abs(n) <= ze ? t.formatRelativeTime(n, `day`, {
+                numeric: `auto`
+            }) : t.formatDate(e, {
+                month: `short`,
+                day: `numeric`,
+                year: `numeric`
+            })
+        }, He = a({
+            skillFileCount: {
+                id: `Hermes.GptStudio.Builder.SkillsModalDetailView.skillFileCount`,
+                defaultMessage: `{count, plural, one {# file} other {# files}}`
+            },
+            skillUpdated: {
+                id: `Hermes.GptStudio.Builder.SkillsModalDetailView.skillUpdated`,
+                defaultMessage: `Updated {updatedLabel}`
+            },
+            addSkill: {
+                id: `Hermes.GptStudio.Builder.SkillsModalDetailView.addSkill`,
+                defaultMessage: `Add`
+            },
+            addedSkill: {
+                id: `Hermes.GptStudio.Builder.SkillsModalDetailView.addedSkill`,
+                defaultMessage: `Added`
+            },
+            addSkillPermissionTooltip: {
+                id: `Hermes.GptStudio.Builder.SkillsModalDetailView.addSkillPermissionTooltip`,
+                defaultMessage: `Collaborators can’t add ChatGPT skills.`
+            }
+        })
+    })),
+    We, Ge, Ke, qe, Je = e((() => {
+        We = `Mgrp1G_Header`, Ge = `Mgrp1G_HeaderTitle`, Ke = `Mgrp1G_Sidebar`, qe = {
+            Header: We,
+            HeaderTitle: Ge,
+            Sidebar: Ke
+        }
+    })),
+    Ye, X, Xe, Ze, Qe, $e, et, tt = e((() => {
+        Ye = l(), k(), M(), v(), b(), g(), s(), P(), L(), Me(), K(), Je(), X = i(), Xe = e => {
+            "use forget";
+            let t = (0, Ye.c)(65),
+                {
+                    selectedSkillId: n,
+                    currentSkills: r,
+                    isCreateSelected: i,
+                    isUploadSelected: a,
+                    isError: s,
+                    isLoading: c,
+                    query: l,
+                    skills: d,
+                    onClose: f,
+                    onCreateSkill: p,
+                    onOpenSkillDetail: ee,
+                    onOpenUploadSkill: h,
+                    onQueryChange: g,
+                    onRetryLoad: _
+                } = e,
+                v = u(),
+                {
+                    pendingAction: b,
+                    showPane: x
+                } = F(),
+                S;
+            t[0] === l ? S = t[1] : (S = l.trim(), t[0] = l, t[1] = S);
+            let C = S.length > 0,
+                w = C && d.length === 0,
+                T = s || c,
+                O;
+            t[2] !== p || t[3] !== x ? (O = () => {
+                E({
+                    actionType: D.SKILLS_CREATE_SELECT,
+                    source: j.SKILL_DETAIL
+                }), x(`content`), p()
+            }, t[2] = p, t[3] = x, t[4] = O) : O = t[4];
+            let k, A;
+            t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (k = (0, X.jsx)(z, {
+                className: `size-5`
+            }), A = (0, X.jsx)(o, {
+                ...N.createSkill
+            }), t[5] = k, t[6] = A) : (k = t[5], A = t[6]);
+            let M;
+            t[7] !== i || t[8] !== O ? (M = (0, X.jsx)(I.SidebarItem, {
+                selected: i,
+                onClick: O,
+                icon: k,
+                children: A
+            }), t[7] = i, t[8] = O, t[9] = M) : M = t[9];
+            let P;
+            t[10] !== h || t[11] !== x ? (P = () => {
+                E({
+                    actionType: D.SKILLS_UPLOAD_SELECT,
+                    source: j.SKILL_DETAIL
+                }), x(`content`), h()
+            }, t[10] = h, t[11] = x, t[12] = P) : P = t[12];
+            let L, B;
+            t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (L = (0, X.jsx)(R, {
+                className: `size-5`
+            }), B = (0, X.jsx)(o, {
+                ...et.uploadSkill
+            }), t[13] = L, t[14] = B) : (L = t[13], B = t[14]);
+            let V;
+            t[15] !== a || t[16] !== P ? (V = (0, X.jsx)(I.SidebarItem, {
+                selected: a,
+                onClick: P,
+                icon: L,
+                children: B
+            }), t[15] = a, t[16] = P, t[17] = V) : V = t[17];
+            let H;
+            t[18] !== M || t[19] !== V ? (H = (0, X.jsxs)(X.Fragment, {
+                children: [M, V]
+            }), t[18] = M, t[19] = V, t[20] = H) : H = t[20];
+            let ne = H,
+                U;
+            t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (U = (0, X.jsx)(`div`, {
+                className: qe.HeaderTitle,
+                children: (0, X.jsx)(o, {
+                    ...N.skills
+                })
+            }), t[21] = U) : U = t[21];
+            let re;
+            t[22] === v ? re = t[23] : (re = v.formatMessage(N.close), t[22] = v, t[23] = re);
+            let ie;
+            t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (ie = (0, X.jsx)(m, {}), t[24] = ie) : ie = t[24];
+            let ae;
+            t[25] !== f || t[26] !== b || t[27] !== re ? (ae = (0, X.jsxs)(`div`, {
+                className: qe.Header,
+                children: [U, (0, X.jsx)(te, {
+                    color: `secondary`,
+                    variant: `ghost`,
+                    size: `sm`,
+                    iconSize: `md`,
+                    uniform: !0,
+                    disabled: b,
+                    "aria-label": re,
+                    onClick: f,
+                    children: ie
+                })]
+            }), t[25] = f, t[26] = b, t[27] = re, t[28] = ae) : ae = t[28];
+            let oe;
+            t[29] === v ? oe = t[30] : (oe = v.formatMessage(et.searchFieldLabel), t[29] = v, t[30] = oe);
+            let se;
+            t[31] === v ? se = t[32] : (se = v.formatMessage(N.clearSearch), t[31] = v, t[32] = se);
+            let ce;
+            t[33] === v ? ce = t[34] : (ce = v.formatMessage(et.searchPlaceholder), t[33] = v, t[34] = ce);
+            let W;
+            t[35] !== g || t[36] !== l || t[37] !== oe || t[38] !== se || t[39] !== ce ? (W = (0, X.jsx)(I.SidebarSearch, {
+                ariaLabel: oe,
+                clearLabel: se,
+                name: `skillSearch`,
+                placeholder: ce,
+                value: l,
+                onChange: g
+            }), t[35] = g, t[36] = l, t[37] = oe, t[38] = se, t[39] = ce, t[40] = W) : W = t[40];
+            let le = !T && (!C || w) && ne,
+                G;
+            t[41] !== T || t[42] !== C ? (G = !T && !C && (0, X.jsx)(`div`, {
+                className: `text-token-text-tertiary flex min-h-11 items-end px-2 pb-1 text-sm`,
+                children: (0, X.jsx)(o, {
+                    ...et.popularSkillsLabel
+                })
+            }), t[41] = T, t[42] = C, t[43] = G) : G = t[43];
+            let K;
+            t[44] !== r || t[45] !== C || t[46] !== s || t[47] !== c || t[48] !== ee || t[49] !== _ || t[50] !== b || t[51] !== n || t[52] !== x || t[53] !== d ? (K = s ? (0, X.jsxs)(Ze, {
+                children: [(0, X.jsx)(`p`, {
+                    className: `text-token-text-tertiary text-sm`,
+                    children: (0, X.jsx)(o, {
+                        ...et.skillsDirectoryLoadFailed
+                    })
+                }), (0, X.jsx)(te, {
+                    color: `secondary`,
+                    variant: `ghost`,
+                    size: `sm`,
+                    disabled: b,
+                    onClick: _,
+                    children: (0, X.jsx)(o, {
+                        ...N.retry
+                    })
+                })]
+            }) : c ? (0, X.jsx)(Ze, {
+                children: (0, X.jsx)(y, {
+                    className: `text-token-text-tertiary`,
+                    size: 16
+                })
+            }) : !C && d.length === 0 ? (0, X.jsxs)(Ze, {
+                children: [(0, X.jsx)(`div`, {
+                    className: `text-sm font-semibold`,
+                    children: (0, X.jsx)(o, {
+                        ...et.directoryEmptyTitle
+                    })
+                }), (0, X.jsx)(`div`, {
+                    className: `text-token-text-secondary text-sm`,
+                    children: (0, X.jsx)(o, {
+                        ...et.directoryEmptySubtitle
+                    })
+                })]
+            }) : d.map(e => (0, X.jsx)(Qe, {
+                currentSkills: r,
+                directorySkill: e,
+                isSelected: n === e.id,
+                onOpenSkillDetail: e => {
+                    x(`content`), ee(e)
+                }
+            }, e.id)), t[44] = r, t[45] = C, t[46] = s, t[47] = c, t[48] = ee, t[49] = _, t[50] = b, t[51] = n, t[52] = x, t[53] = d, t[54] = K) : K = t[54];
+            let ue = !T && C && !w && ne,
+                q;
+            t[55] === Symbol.for(`react.memo_cache_sentinel`) ? (q = (0, X.jsx)(`div`, {
+                className: `h-2 shrink-0`
+            }), t[55] = q) : q = t[55];
+            let de;
+            t[56] !== le || t[57] !== G || t[58] !== K || t[59] !== ue ? (de = (0, X.jsx)(`div`, {
+                className: `flex grow flex-col overflow-y-auto overscroll-contain`,
+                children: (0, X.jsxs)(`div`, {
+                    className: `flex min-h-full flex-col gap-px px-2 pt-2`,
+                    children: [le, G, K, ue, q]
+                })
+            }), t[56] = le, t[57] = G, t[58] = K, t[59] = ue, t[60] = de) : de = t[60];
+            let fe;
+            return t[61] !== ae || t[62] !== W || t[63] !== de ? (fe = (0, X.jsxs)(`div`, {
+                className: qe.Sidebar,
+                children: [ae, W, de]
+            }), t[61] = ae, t[62] = W, t[63] = de, t[64] = fe) : fe = t[64], fe
+        }, Ze = e => {
+            "use forget";
+            let t = (0, Ye.c)(2),
+                {
+                    children: n
+                } = e,
+                r;
+            return t[0] === n ? r = t[1] : (r = (0, X.jsx)(`div`, {
+                className: `text-token-text-tertiary flex grow flex-col items-center justify-center gap-3 px-2 py-4 text-center`,
+                children: n
+            }), t[0] = n, t[1] = r), r
+        }, Qe = e => {
+            "use forget";
+            let t = (0, Ye.c)(18),
+                {
+                    currentSkills: n,
+                    directorySkill: r,
+                    isSelected: i,
+                    onOpenSkillDetail: a
+                } = e,
+                o, s;
+            t[0] !== n || t[1] !== r ? (o = je(r), s = Ae(n, o), t[0] = n, t[1] = r, t[2] = o, t[3] = s) : (o = t[2], s = t[3]);
+            let c = s,
+                l;
+            t[4] === c ? l = t[5] : (l = c && (0, X.jsx)($e, {}), t[4] = c, t[5] = l);
+            let u;
+            t[6] !== a || t[7] !== o.chatgpt_skill_id || t[8] !== o.id ? (u = () => {
+                E({
+                    actionType: D.DIRECTORY_SKILL_SELECT,
+                    source: j.SKILL_DETAIL,
+                    skill: {
+                        chatgptSkillId: o.chatgpt_skill_id,
+                        skillSource: A.DIRECTORY
+                    }
+                }), a(o.id)
+            }, t[6] = a, t[7] = o.chatgpt_skill_id, t[8] = o.id, t[9] = u) : u = t[9];
+            let d = o.icon?.name,
+                f;
+            t[10] === d ? f = t[11] : (f = (0, X.jsx)(q, {
+                name: d,
+                className: `size-5`,
+                iconClassName: `size-4`
+            }), t[10] = d, t[11] = f);
+            let p;
+            return t[12] !== i || t[13] !== o.name || t[14] !== l || t[15] !== u || t[16] !== f ? (p = (0, X.jsx)(I.SidebarItem, {
+                endAdornment: l,
+                selected: i,
+                onClick: u,
+                icon: f,
+                children: o.name
+            }), t[12] = i, t[13] = o.name, t[14] = l, t[15] = u, t[16] = f, t[17] = p) : p = t[17], p
+        }, $e = () => {
+            "use forget";
+            let e = (0, Ye.c)(4),
+                t = u(),
+                n;
+            e[0] === t ? n = e[1] : (n = t.formatMessage(N.added), e[0] = t, e[1] = n);
+            let r;
+            return e[2] === n ? r = e[3] : (r = (0, X.jsx)(p, {
+                "aria-label": n,
+                className: `size-4 text-blue-400`
+            }), e[2] = n, e[3] = r), r
+        }, et = a({
+            searchFieldLabel: {
+                id: `Hermes.GptStudio.Builder.SkillsModalSidebar.searchFieldLabel`,
+                defaultMessage: `Search skills`
+            },
+            searchPlaceholder: {
+                id: `Hermes.GptStudio.Builder.SkillsModalSidebar.searchPlaceholder`,
+                defaultMessage: `Search skills`
+            },
+            uploadSkill: {
+                id: `Hermes.GptStudio.Builder.SkillsModalSidebar.uploadSkill`,
+                defaultMessage: `Upload skill`
+            },
+            popularSkillsLabel: {
+                id: `Hermes.GptStudio.Builder.SkillsModalSidebar.popularSkillsLabel`,
+                defaultMessage: `Popular skills`
+            },
+            skillsDirectoryLoadFailed: {
+                id: `Hermes.GptStudio.Builder.SkillsModalSidebar.skillsDirectoryLoadFailed`,
+                defaultMessage: `Couldn't load ChatGPT skills.`
+            },
+            directoryEmptyTitle: {
+                id: `Hermes.GptStudio.Builder.SkillsModalSidebar.directoryEmptyTitle`,
+                defaultMessage: `No ChatGPT skills are available`
+            },
+            directoryEmptySubtitle: {
+                id: `Hermes.GptStudio.Builder.SkillsModalSidebar.directoryEmptySubtitle`,
+                defaultMessage: `Create a skill to get started.`
+            }
+        })
+    })),
+    nt, rt, it, at = e((() => {
+        nt = `vBsd-q_Dropzone`, rt = `vBsd-q_DropzoneWrap`, it = {
+            Dropzone: nt,
+            DropzoneWrap: rt,
+            Error: `vBsd-q_Error`
+        }
+    })),
+    ot, st, Z, ct, lt, Q, ut = e((() => {
+        ot = l(), k(), fe(), v(), g(), st = t(c()), s(), L(), V(), B(), K(), Se(), at(), Z = i(), ct = e => e != null && Array.from(e.types).includes(`Files`), lt = e => {
+            "use forget";
+            let t = (0, ot.c)(62),
+                {
+                    onActivePendingChange: n,
+                    onAttach: r
+                } = e,
+                i = u(),
+                {
+                    skillArchiveUploadState: a,
+                    uploadSkillArchive: s
+                } = se(),
+                c = (0, st.useRef)(0),
+                [l, d] = (0, st.useState)(null),
+                [f, p] = (0, st.useState)(!1),
+                [m, ee] = (0, st.useState)(!1),
+                h = a.status === `uploading` || m,
+                g;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (g = () => {
+                c.current = 0, p(!1)
+            }, t[0] = g) : g = t[0];
+            let _ = g,
+                v, b;
+            t[1] === f ? (v = t[2], b = t[3]) : (v = () => {
+                if (!f) return;
+                let e = e => {
+                    e.key === `Escape` && _()
+                };
+                return document.addEventListener(`keydown`, e, !0), () => {
+                    document.removeEventListener(`keydown`, e, !0)
+                }
+            }, b = [f], t[1] = f, t[2] = v, t[3] = b), (0, st.useEffect)(v, b);
+            let x;
+            t[4] !== i || t[5] !== h || t[6] !== n || t[7] !== r || t[8] !== s ? (x = async (e, t, a) => {
+                if (h) return;
+                if (Array.isArray(e) && !H(e)) {
+                    d(i.formatMessage(Q.missingTopLevelSkillFile));
+                    return
+                }
+                d(null), n(!0);
+                let o = await s(e, t, a);
+                if (o.status === `attached`) {
+                    ee(!0), r();
+                    return
+                }
+                n(!1), o.errorMessage != null && d(o.errorMessage)
+            }, t[4] = i, t[5] = h, t[6] = n, t[7] = r, t[8] = s, t[9] = x) : x = t[9];
+            let S = x,
+                C;
+            t[10] !== i || t[11] !== h || t[12] !== S ? (C = async () => {
+                if (h) return;
+                let e = await ae();
+                if (e != null) {
+                    if (!re(e)) {
+                        d(i.formatMessage(Q.invalidDroppedArchive));
+                        return
+                    }
+                    S(e, T.ZIP, w.PICKER)
+                }
+            }, t[10] = i, t[11] = h, t[12] = S, t[13] = C) : C = t[13];
+            let E = C,
+                D;
+            t[14] !== h || t[15] !== S ? (D = () => {
+                h || de({
+                    mode: `folder`,
+                    onSelectFiles: e => {
+                        S(e, T.FOLDER, w.PICKER)
+                    }
+                })
+            }, t[14] = h, t[15] = S, t[16] = D) : D = t[16];
+            let O = D,
+                k;
+            t[17] === h ? k = t[18] : (k = e => {
+                ct(e.dataTransfer) && (e.preventDefault(), e.stopPropagation(), !h && (c.current += 1, p(!0)))
+            }, t[17] = h, t[18] = k);
+            let A = k,
+                j;
+            t[19] === h ? j = t[20] : (j = e => {
+                ct(e.dataTransfer) && (e.preventDefault(), e.stopPropagation(), e.dataTransfer.dropEffect = h ? `none` : `copy`)
+            }, t[19] = h, t[20] = j);
+            let M = j,
+                N;
+            t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (N = e => {
+                ct(e.dataTransfer) && (e.preventDefault(), e.stopPropagation(), c.current = Math.max(0, c.current - 1), c.current === 0 && _())
+            }, t[21] = N) : N = t[21];
+            let P = N,
+                F;
+            t[22] !== i || t[23] !== h || t[24] !== S ? (F = e => {
+                if (!ct(e.dataTransfer)) return;
+                let {
+                    dataTransfer: t
+                } = e;
+                e.preventDefault(), e.stopPropagation(), _(), !h && ie(t).then(e => {
+                    if (e == null) {
+                        d(i.formatMessage(Q.invalidDroppedArchive));
+                        return
+                    }
+                    S(e, Array.isArray(e) ? T.FOLDER : T.ZIP, w.DRAG_AND_DROP)
+                }).catch(() => {
+                    d(i.formatMessage(Q.invalidDroppedArchive))
+                })
+            }, t[22] = i, t[23] = h, t[24] = S, t[25] = F) : F = t[25];
+            let I = F;
+            if (h) {
+                let e;
+                t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Z.jsx)(y, {
+                    size: 20
+                }), t[26] = e) : e = t[26];
+                let n;
+                return t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Z.jsxs)(`div`, {
+                    className: `flex h-full w-full flex-col items-center justify-center gap-2.5 p-8 text-center`,
+                    children: [e, (0, Z.jsx)(`div`, {
+                        className: `text-sm`,
+                        children: (0, Z.jsx)(o, {
+                            ...Q.uploadingSkill
+                        })
+                    })]
+                }), t[27] = n) : n = t[27], n
+            }
+            let L;
+            t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (L = (0, Z.jsx)(xe, {
+                icon: (0, Z.jsx)(ue, {
+                    name: `default`,
+                    className: `size-10`
+                }),
+                title: (0, Z.jsx)(o, {
+                    ...Q.uploadSkillTitle
+                }),
+                description: (0, Z.jsx)(o, {
+                    ...Q.uploadSkillBody
+                })
+            }), t[28] = L) : L = t[28];
+            let z = f ? `` : void 0,
+                B;
+            t[29] === Symbol.for(`react.memo_cache_sentinel`) ? (B = (0, Z.jsx)(R, {
+                className: `size-5`
+            }), t[29] = B) : B = t[29];
+            let V;
+            t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (V = (0, Z.jsx)(`div`, {
+                className: `text-sm font-semibold`,
+                children: (0, Z.jsx)(o, {
+                    ...Q.dropzoneTitle
+                })
+            }), t[30] = V) : V = t[30];
+            let ne;
+            t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (ne = (0, Z.jsx)(`div`, {
+                className: `text-sm`,
+                children: (0, Z.jsx)(o, {
+                    ...Q.dropzoneDescription
+                })
+            }), t[31] = ne) : ne = t[31];
+            let U;
+            t[32] !== h || t[33] !== E || t[34] !== z ? (U = (0, Z.jsxs)(`div`, {
+                className: `flex min-h-0 flex-1 flex-col gap-4`,
+                children: [L, (0, Z.jsx)(`div`, {
+                    className: it.DropzoneWrap,
+                    children: (0, Z.jsxs)(`button`, {
+                        type: `button`,
+                        className: it.Dropzone,
+                        "data-drag-active": z,
+                        onClick: E,
+                        disabled: h,
+                        children: [B, V, ne]
+                    })
+                })]
+            }), t[32] = h, t[33] = E, t[34] = z, t[35] = U) : U = t[35];
+            let oe = l == null ? `` : void 0,
+                ce = l == null ? void 0 : `alert`,
+                W;
+            t[36] !== l || t[37] !== oe || t[38] !== ce ? (W = (0, Z.jsx)(`div`, {
+                className: it.Error,
+                "data-hidden": oe,
+                role: ce,
+                children: l
+            }), t[36] = l, t[37] = oe, t[38] = ce, t[39] = W) : W = t[39];
+            let le;
+            t[40] === Symbol.for(`react.memo_cache_sentinel`) ? (le = (0, Z.jsx)(o, {
+                ...Q.uploadZipFile
+            }), t[40] = le) : le = t[40];
+            let G;
+            t[41] !== h || t[42] !== E ? (G = (0, Z.jsx)(`div`, {
+                className: `flex-1`,
+                children: (0, Z.jsx)(te, {
+                    color: `primary`,
+                    variant: `outline`,
+                    size: `lg`,
+                    pill: !0,
+                    block: !0,
+                    disabled: h,
+                    onClick: E,
+                    children: le
+                })
+            }), t[41] = h, t[42] = E, t[43] = G) : G = t[43];
+            let K;
+            t[44] === Symbol.for(`react.memo_cache_sentinel`) ? (K = (0, Z.jsx)(o, {
+                ...Q.uploadFolder
+            }), t[44] = K) : K = t[44];
+            let q;
+            t[45] !== h || t[46] !== O ? (q = (0, Z.jsx)(`div`, {
+                className: `flex-1`,
+                children: (0, Z.jsx)(te, {
+                    color: `primary`,
+                    variant: `solid`,
+                    size: `lg`,
+                    pill: !0,
+                    block: !0,
+                    disabled: h,
+                    onClick: O,
+                    children: K
+                })
+            }), t[45] = h, t[46] = O, t[47] = q) : q = t[47];
+            let fe;
+            t[48] !== G || t[49] !== q ? (fe = (0, Z.jsxs)(`div`, {
+                className: `flex gap-2`,
+                children: [G, q]
+            }), t[48] = G, t[49] = q, t[50] = fe) : fe = t[50];
+            let pe;
+            t[51] !== W || t[52] !== fe ? (pe = (0, Z.jsxs)(`div`, {
+                className: `mt-4 flex shrink-0 flex-col gap-4`,
+                children: [W, fe]
+            }), t[51] = W, t[52] = fe, t[53] = pe) : pe = t[53];
+            let me;
+            t[54] !== U || t[55] !== pe ? (me = (0, Z.jsxs)(`div`, {
+                className: `flex min-h-0 flex-1 flex-col`,
+                children: [U, pe]
+            }), t[54] = U, t[55] = pe, t[56] = me) : me = t[56];
+            let he;
+            return t[57] !== A || t[58] !== M || t[59] !== I || t[60] !== me ? (he = (0, Z.jsx)(`div`, {
+                className: `flex w-full flex-1 flex-col p-5 max-sm:p-4`,
+                role: `presentation`,
+                onDragEnter: A,
+                onDragLeave: P,
+                onDragOver: M,
+                onDrop: I,
+                children: me
+            }), t[57] = A, t[58] = M, t[59] = I, t[60] = me, t[61] = he) : he = t[61], he
+        }, Q = a({
+            uploadSkillTitle: {
+                id: `Hermes.GptStudio.Builder.SkillsModalUploadView.uploadSkillTitle`,
+                defaultMessage: `Upload skill`
+            },
+            uploadSkillBody: {
+                id: `Hermes.GptStudio.Builder.SkillsModalUploadView.uploadSkillBody`,
+                defaultMessage: `A skill is a .zip file that contains a 'SKILL.md' Markdown file. After you upload it, the skill is checked for unsafe behavior in the background before it can be used.`
+            },
+            uploadZipFile: {
+                id: `Hermes.GptStudio.Builder.SkillsModalUploadView.uploadZipFile`,
+                defaultMessage: `Upload .zip file`
+            },
+            uploadFolder: {
+                id: `Hermes.GptStudio.Builder.SkillsModalUploadView.uploadFolder`,
+                defaultMessage: `Upload folder`
+            },
+            dropzoneTitle: {
+                id: `Hermes.GptStudio.Builder.SkillsModalUploadView.dropzoneTitle`,
+                defaultMessage: `Drop your skill here`
+            },
+            dropzoneDescription: {
+                id: `Hermes.GptStudio.Builder.SkillsModalUploadView.dropzoneDescription`,
+                defaultMessage: `Upload a .zip file or folder`
+            },
+            uploadingSkill: {
+                id: `Hermes.GptStudio.Builder.SkillsModalUploadView.uploadingSkill`,
+                defaultMessage: `Uploading skill...`
+            },
+            invalidDroppedArchive: {
+                id: `Hermes.GptStudio.Builder.SkillsModalUploadView.invalidDroppedArchive`,
+                defaultMessage: `Drop a .zip file or folder to upload.`
+            },
+            missingTopLevelSkillFile: {
+                id: `Hermes.GptStudio.Builder.SkillsModalUploadView.missingTopLevelSkillFile`,
+                defaultMessage: `Upload a folder with a top-level SKILL.md.`
+            }
+        })
+    }));
+
+function dt(e, t) {
+    return e.name.localeCompare(t.name) || e.id.localeCompare(t.id)
+}
+var ft, pt, $, mt, ht, gt, _t = e((() => {
+    ft = l(), C(), pt = t(c()), s(), P(), oe(), ke(), Ue(), tt(), ut(), $ = i(), mt = () => {
+        "use forget";
+        let e = (0, ft.c)(1),
+            t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(S.Content, {
+            maxWidth: 680,
+            className: `overflow-hidden`,
+            children: (0, $.jsx)(ht, {})
+        }), e[0] = t) : t = e[0], t
+    }, ht = () => {
+        "use forget";
+        let e = (0, ft.c)(43),
+            {
+                chatGptSkills: t,
+                isChatGptSkillsLoading: n,
+                hasChatGptSkillsError: r,
+                retryChatGptSkillsLoad: i,
+                skills: a
+            } = U(),
+            s = u(),
+            c;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = {
+            name: `create`
+        }, e[0] = c) : c = e[0];
+        let [l, d] = (0, pt.useState)(c), [f, p] = (0, pt.useState)(``), [m, ee] = (0, pt.useState)(!1), h;
+        e[1] === f ? h = e[2] : (h = f.trim(), e[1] = f, e[2] = h);
+        let g = (0, pt.useDeferredValue)(h),
+            te;
+        e[3] === m ? te = e[4] : (te = {
+            onRequestClose: () => m ? `deny` : `allow`
+        }, e[3] = m, e[4] = te);
+        let {
+            close: _
+        } = x(te), v, y;
+        if (e[5] !== t || e[6] !== g || e[7] !== l.name || e[8] !== l.skillId) {
+            let n = t.toSorted(dt),
+                r = g.toLowerCase();
+            v = r.length > 0 ? n.filter(e => e.name.toLowerCase().includes(r)) : n, y = l.name === `detail` ? n.find(e => e.id === l.skillId) ?? null : null, e[5] = t, e[6] = g, e[7] = l.name, e[8] = l.skillId, e[9] = v, e[10] = y
+        } else v = e[9], y = e[10];
+        let b = y,
+            C = l.name,
+            w = C === `upload` ? null : b?.id ?? null,
+            T;
+        e[11] === _ ? T = e[12] : (T = () => {
+            _()
+        }, e[11] = _, e[12] = T);
+        let E = T,
+            D;
+        e[13] === Symbol.for(`react.memo_cache_sentinel`) ? (D = (0, $.jsx)(S.Title, {
+            className: `sr-only`,
+            children: (0, $.jsx)(o, {
+                ...gt.skillsModalTitle
+            })
+        }), e[13] = D) : D = e[13];
+        let O;
+        e[14] === Symbol.for(`react.memo_cache_sentinel`) ? (O = (0, $.jsx)(S.Description, {
+            visuallyHidden: !0,
+            children: (0, $.jsx)(o, {
+                ...gt.skillsModalDescription
+            })
+        }), e[14] = O) : O = e[14];
+        let k;
+        e[15] === s ? k = e[16] : (k = s.formatMessage(gt.closeSkills), e[15] = s, e[16] = k);
+        let A = C === `create`,
+            j = C === `upload`,
+            M, N, P, F;
+        e[17] === Symbol.for(`react.memo_cache_sentinel`) ? (M = () => {
+            d({
+                name: `create`
+            })
+        }, N = e => {
+            d({
+                name: `detail`,
+                skillId: e
+            })
+        }, P = () => {
+            d({
+                name: `upload`
+            })
+        }, F = e => {
+            p(e)
+        }, e[17] = M, e[18] = N, e[19] = P, e[20] = F) : (M = e[17], N = e[18], P = e[19], F = e[20]);
+        let L;
+        e[21] !== _ || e[22] !== v || e[23] !== r || e[24] !== n || e[25] !== i || e[26] !== f || e[27] !== w || e[28] !== a || e[29] !== A || e[30] !== j ? (L = (0, $.jsx)(I.Sidebar, {
+            children: (0, $.jsx)(Xe, {
+                currentSkills: a,
+                isError: r,
+                isLoading: n,
+                query: f,
+                selectedSkillId: w,
+                skills: v,
+                isCreateSelected: A,
+                isUploadSelected: j,
+                onClose: _,
+                onCreateSkill: M,
+                onOpenSkillDetail: N,
+                onOpenUploadSkill: P,
+                onQueryChange: F,
+                onRetryLoad: i
+            })
+        }), e[21] = _, e[22] = v, e[23] = r, e[24] = n, e[25] = i, e[26] = f, e[27] = w, e[28] = a, e[29] = A, e[30] = j, e[31] = L) : L = e[31];
+        let R;
+        e[32] !== _ || e[33] !== E || e[34] !== b || e[35] !== C ? (R = (0, $.jsx)(I.View, {
+            children: C === `upload` ? (0, $.jsx)(lt, {
+                onActivePendingChange: ee,
+                onAttach: E
+            }) : b == null ? (0, $.jsx)(De, {
+                onClose: _
+            }) : (0, $.jsx)(Re, {
+                directorySkill: b,
+                onAttach: E
+            }, b.id)
+        }), e[32] = _, e[33] = E, e[34] = b, e[35] = C, e[36] = R) : R = e[36];
+        let z;
+        return e[37] !== _ || e[38] !== m || e[39] !== L || e[40] !== R || e[41] !== k ? (z = (0, $.jsxs)(S.Body, {
+            className: `p-0`,
+            children: [D, O, (0, $.jsxs)(I, {
+                closeLabel: k,
+                pendingAction: m,
+                onClose: _,
+                children: [L, R]
+            })]
+        }), e[37] = _, e[38] = m, e[39] = L, e[40] = R, e[41] = k, e[42] = z) : z = e[42], z
+    }, gt = a({
+        skillsModalTitle: {
+            id: `Hermes.GptStudio.Builder.SkillsModal.skillsModalTitle`,
+            defaultMessage: `Skills`
+        },
+        skillsModalDescription: {
+            id: `Hermes.GptStudio.Builder.SkillsModal.skillsModalDescription`,
+            defaultMessage: `Browse ChatGPT skills in the sidebar, or create a new skill in the detail pane.`
+        },
+        closeSkills: {
+            id: `Hermes.GptStudio.Builder.SkillsModal.closeSkills`,
+            defaultMessage: `Close skills`
+        }
+    })
+}));
+export {
+    _t as n, mt as t
+};
+//# sourceMappingURL=be1c64d6-i2okh2tm549xc7s2.js.map

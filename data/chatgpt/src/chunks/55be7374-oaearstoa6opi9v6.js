@@ -1,2 +1,46 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bot as t,hst as n,tct as r,zot as i}from"./4813494d-dfpv67hlp00pbohr.js";import{eTn as a,tTn as o}from"./conversation-small-cy5f8pl0g26s86so.js";function s(e){return e.get(`search`)??e.get(`q`)??``}var c=e((()=>{}));function l(e){let t=new URL(e.url),r=i(),o=r.session?.account,s=o?.structure===n.WORKSPACE;return{country:t.searchParams.get(`country`),platform:t.searchParams.get(`platform`)??`chat`,locale:t.searchParams.get(`locale`)??r.locale,hasWorkspace:s,accountId:o?.id,workspaceId:s?o.id:null,productSku:a.CONNECTOR_SETTING}}function u(e){let t=new URL(e.url);return t.pathname.replace(/\/+$/,``)===`/plugins`&&!s(t.searchParams).trim()&&!t.searchParams.get(`category`)?.trim()&&!t.searchParams.get(`section`)?.trim()}var d=e((()=>{r(),o(),c(),t()}));export{c as a,s as i,d as n,u as r,l as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bot as t,
+    hst as n,
+    tct as r,
+    zot as i
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    eTn as a,
+    tTn as o
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+
+function s(e) {
+    return e.get(`search`) ?? e.get(`q`) ?? ``
+}
+var c = e((() => {}));
+
+function l(e) {
+    let t = new URL(e.url),
+        r = i(),
+        o = r.session?.account,
+        s = o?.structure === n.WORKSPACE;
+    return {
+        country: t.searchParams.get(`country`),
+        platform: t.searchParams.get(`platform`) ?? `chat`,
+        locale: t.searchParams.get(`locale`) ?? r.locale,
+        hasWorkspace: s,
+        accountId: o?.id,
+        workspaceId: s ? o.id : null,
+        productSku: a.CONNECTOR_SETTING
+    }
+}
+
+function u(e) {
+    let t = new URL(e.url);
+    return t.pathname.replace(/\/+$/, ``) === `/plugins` && !s(t.searchParams).trim() && !t.searchParams.get(`category`)?.trim() && !t.searchParams.get(`section`)?.trim()
+}
+var d = e((() => {
+    r(), o(), c(), t()
+}));
+export {
+    c as a, s as i, d as n, u as r, l as t
+};
 //# sourceMappingURL=55be7374-oaearstoa6opi9v6.js.map

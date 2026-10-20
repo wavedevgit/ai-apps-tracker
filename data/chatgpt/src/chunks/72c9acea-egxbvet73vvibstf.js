@@ -1,4 +1,1496 @@
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{A5 as r,Ant as i,At as a,BZ as o,Bet as s,Bnt as c,Bx as l,Dz as u,Eq as d,Fa as f,G5 as p,Gnt as m,IN as h,JT as g,Jt as _,K5 as v,Knt as y,LN as b,Mnt as x,Mq as S,Mz as C,Nz as w,Oz as T,Pa as E,RU as D,SN as O,S_ as k,_8 as A,_N as j,_R as M,_Y as N,_a as ee,aW as te,ad as ne,aq as re,art as ie,ca as ae,cn as oe,dF as se,eQ as ce,f8 as le,fF as P,ftt as ue,hn as de,hnt as F,jnt as fe,k5 as pe,mF as me,mJ as he,nY as ge,ort as _e,pJ as ve,pnt as ye,pq as be,qJ as xe,qT as Se,qnt as Ce,r5 as we,sU as Te,sW as Ee,srt as De,tY as Oe,uF as ke,uU as Ae,ud as je,vJ as Me,vN as Ne,vq as I,xJ as Pe,xR as Fe,x_ as Ie,yN as Le,zU as Re,zx as ze}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as L,In as Be,Ln as Ve,Nn as R,Rn as He,Vn as z,wn as Ue,zn as We}from"./2340486e-oc6d2eodbcrmxur3.js";import{$3 as Ge,$Fn as B,$dt as V,Bpt as Ke,Dgn as qe,Dkn as Je,Fpt as H,Gpt as Ye,Hpt as Xe,Jpt as Ze,Kpt as Qe,LHn as $e,Lpt as et,Nlt as tt,Plt as nt,Ppt as rt,QSt as U,Qdt as it,RHn as at,Upt as ot,Vpt as st,Wpt as ct,YSt as lt,Ypt as ut,Zpt as dt,_F as ft,aT as W,aut as pt,bkn as mt,cBt as ht,clt as gt,cmt as _t,dGn as vt,dgn as yt,dht as bt,djn as xt,dlt as St,e6 as Ct,emt as wt,fGn as Tt,fIn as Et,flt as Dt,gbt as Ot,hbt as kt,iT as At,imt as jt,iut as Mt,kgn as Nt,lht as Pt,llt as Ft,lmt as It,mjn as Lt,nmt as Rt,oIn as zt,ogn as Bt,ojn as Vt,omt as Ht,rIn as Ut,rut as Wt,sBt as Gt,sjn as Kt,slt as qt,smt as Jt,tmt as Yt,ujn as Xt,ult as Zt,vF as Qt,vpt as $t,wkn as en,xkn as tn,ypt as nn}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{$v as rn,Bv as an,Iv as on,Jy as sn,Lv as cn,Qv as ln,Vv as G,Yy as un,ap as K,cf as dn,op as fn,sf as pn}from"./30901919-om7b3qf5hp4j9x4l.js";import{Dd as mn,Ed as hn,Om as gn,Td as _n,d_ as vn,f_ as yn,km as bn}from"./8b34dbc2-j8rcexxiltkm8ucr.js";import{n as xn,r as Sn,t as Cn}from"./24c0da2c-bx2qul3cpe0cu1wg.js";import{a as wn,i as Tn,n as En,o as Dn,r as On,t as kn}from"./5ab42519-ewabpgsn9d7qobzz.js";import{a as q,i as An,o as jn,t as Mn}from"./871633a6-o44rajzsr27vjidl.js";import{a as Nn,s as Pn}from"./0e629c03-lna8msucpxk839i5.js";import{n as Fn,t as In}from"./97c6978d-fxdy3l2uxcqb4jur.js";import{n as Ln,t as Rn}from"./f4607326-fwhobju9ukfgwjwh.js";import{_ as zn,a as Bn,d as Vn,f as Hn,g as Un,h as Wn,l as Gn,m as Kn,n as qn,o as Jn,p as Yn,s as Xn,t as Zn,u as Qn,v as $n,y as er}from"./bcae0416-imkf6os3s2ast8rh.js";import{a as tr,i as nr,r as rr,t as ir}from"./b58ae57c-mqnjsuhylfo1jbgq.js";function ar(){return or}var or,sr,cr=e((()=>{or=`local-places-preview`,sr=`places-button`}));function lr(e){"use forget";let t=(0,fr.c)(52),{messageId:n,clientThreadId:r,source:i}=e,a=We(),o;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(o=D(),t[0]=o):o=t[0];let s=o,[c,l]=(0,pr.useState)(!1),[u,d]=(0,pr.useState)(``),f;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(f=[],t[1]=f):f=t[1];let[p,m]=(0,pr.useState)(f),h=(0,pr.useId)(),g;t[2]!==r||t[3]!==n||t[4]!==i?(g={messageId:n,clientThreadId:r,source:i},t[2]=r,t[3]=n,t[4]=i,t[5]=g):g=t[5];let{mutate:_}=Fn(g),v;t[6]!==p.length||t[7]!==a?(v=p.length>0?a.formatMessage({id:`immersiveMapFeedback.placeholder.withReasons`,defaultMessage:`Tell our team why...`}):a.formatMessage({id:`immersiveMapFeedback.placeholder.default`,defaultMessage:`What would you like us to know?`}),t[6]=p.length,t[7]=a,t[8]=v):v=t[8];let y=v,b;t[9]!==p.length||t[10]!==u?(b=u.trim()===``&&p.length===0,t[9]=p.length,t[10]=u,t[11]=b):b=t[11];let x=b,S;t[12]===a?S=t[13]:(S=a.formatMessage({id:`immersiveMapFeedback.submitAria`,defaultMessage:`Submit feedback`}),t[12]=a,t[13]=S);let C=S,w;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(w=e=>{m(t=>t.includes(e)?t.filter(t=>t!==e):[...t,e])},t[14]=w):w=t[14];let T=w,E;t[15]!==p||t[16]!==u||t[17]!==a||t[18]!==_?(E=()=>{let e=u.trim();if(e===``&&p.length===0)return;let t=p;d(``),m([]),l(!1),s.success(a.formatMessage({id:`immersiveMapFeedback.toast.submitted`,defaultMessage:`Your feedback has been submitted`})),_({feedbackText:e,feedbackReasons:t})},t[15]=p,t[16]=u,t[17]=a,t[18]=_,t[19]=E):E=t[19];let O=E,k;t[20]===Symbol.for(`react.memo_cache_sentinel`)?(k=(0,J.jsx)($e.BasicTrigger,{asChild:!0,children:(0,J.jsx)(Se,{color:`ghost`,size:`small`,className:mr,children:(0,J.jsx)(R,{id:`immersiveMapFeedback.button.giveFeedback`,defaultMessage:`Give feedback`})})}),t[20]=k):k=t[20];let A;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(A=(0,J.jsx)(`div`,{className:`mb-3 font-bold`,children:(0,J.jsx)(R,{id:`immersiveMapFeedback.dropdown.title.maps`,defaultMessage:`Help our team improve Maps in ChatGPT`})}),t[21]=A):A=t[21];let j;t[22]===Symbol.for(`react.memo_cache_sentinel`)?(j=(0,J.jsxs)(`div`,{className:`border-token-border-default mx-2 border-b pt-1 pb-3 text-sm`,children:[A,(0,J.jsx)(`div`,{className:`text-xs`,children:(0,J.jsx)(R,{id:`immersiveMapFeedback.dropdown.description`,defaultMessage:`Tell us what's working and what's not. The more specific the feedback, the better.`})})]}),t[22]=j):j=t[22];let M;t[23]===O?M=t[24]:(M=e=>{e.preventDefault(),O()},t[23]=O,t[24]=M);let N;t[25]!==p||t[26]!==a?(N=hr.length>0&&(0,J.jsx)(`fieldset`,{className:`flex flex-col gap-3 py-3 text-sm`,children:hr.map(e=>(0,J.jsx)(dr,{label:a.formatMessage(e.labelMessage),checked:p.includes(e.reason),onChange:()=>T(e.reason)},e.reason))}),t[25]=p,t[26]=a,t[27]=N):N=t[27];let ee;t[28]===Symbol.for(`react.memo_cache_sentinel`)?(ee=(0,J.jsx)(R,{id:`immersiveMapFeedback.label.additionalFeedback`,defaultMessage:`Additional feedback`}),t[28]=ee):ee=t[28];let te;t[29]===h?te=t[30]:(te=(0,J.jsx)(`label`,{htmlFor:h,className:`sr-only`,children:ee}),t[29]=h,t[30]=te);let ne;t[31]===Symbol.for(`react.memo_cache_sentinel`)?(ne=e=>d(e.target.value),t[31]=ne):ne=t[31];let re;t[32]!==y||t[33]!==u||t[34]!==h?(re=(0,J.jsx)(At,{autoFocus:!0,id:h,name:`immersive-map-feedback-text`,value:u,onChange:ne,placeholder:y,rows:3,maxLength:1600,className:`border-token-border-heavy mt-1 self-stretch rounded-md bg-transparent px-2 py-2 text-sm focus:ring-0 focus:outline-none focus-visible:ring-0`}),t[32]=y,t[33]=u,t[34]=h,t[35]=re):re=t[35];let ie;t[36]===x?ie=t[37]:(ie=e=>{x&&e.preventDefault()},t[36]=x,t[37]=ie);let ae;t[38]===Symbol.for(`react.memo_cache_sentinel`)?(ae=(0,J.jsx)(R,{id:`immersiveMapFeedback.button.sendFeedback`,defaultMessage:`Send feedback`}),t[38]=ae):ae=t[38];let oe;t[39]!==x||t[40]!==C||t[41]!==ie?(oe=(0,J.jsx)(Se,{type:`submit`,size:`small`,className:`mt-2 mb-1 self-center px-4 py-2`,visuallyDisabled:x,"aria-disabled":x,onClick:ie,"aria-label":C,children:ae}),t[39]=x,t[40]=C,t[41]=ie,t[42]=oe):oe=t[42];let se;t[43]!==M||t[44]!==N||t[45]!==te||t[46]!==re||t[47]!==oe?(se=(0,J.jsx)($e.Portal,{children:(0,J.jsxs)($e.Content,{side:`bottom`,align:`end`,sideOffset:8,alignOffset:0,onCloseAutoFocus:ur,className:`z-[130] flex w-90 max-w-xs flex-col p-2`,children:[j,(0,J.jsx)(`div`,{className:`relative flex flex-col justify-between rounded-lg`,children:(0,J.jsxs)(`form`,{onSubmit:M,className:`relative flex flex-col px-2`,children:[N,te,re,oe]})})]})}),t[43]=M,t[44]=N,t[45]=te,t[46]=re,t[47]=oe,t[48]=se):se=t[48];let ce;return t[49]!==c||t[50]!==se?(ce=(0,J.jsxs)($e.Root,{onOpenChange:l,open:c,children:[k,se]}),t[49]=c,t[50]=se,t[51]=ce):ce=t[51],ce}function ur(e){e.preventDefault()}function dr({label:e,checked:t,onChange:n}){return(0,J.jsxs)(`label`,{className:`flex items-center justify-between gap-2`,children:[(0,J.jsx)(`span`,{className:`flex-1`,children:e}),(0,J.jsxs)(`span`,{className:`relative flex h-4 w-4 items-center justify-center`,children:[(0,J.jsx)(`input`,{type:`checkbox`,name:`immersive-map-feedback-reason`,className:`peer absolute inset-0 h-4 w-4 cursor-pointer opacity-0`,checked:t,onChange:n}),(0,J.jsx)(`span`,{className:`text-token-text-primary flex h-4 w-4 items-center justify-center rounded-[2px] border ${t?`border-token-text-primary bg-token-text-primary`:`border-token-border-heavy`}`,children:t?(0,J.jsx)(sn,{className:`text-token-text-inverted h-4 w-4`}):null})]})]})}var fr,pr,J,mr,hr,gr=e((()=>{fr=Ue(),g(),at(),un(),W(),In(),Re(),pr=n(z()),He(),J=L(),mr=`text-token-text-tertiary hover:text-token-text-secondary h-6 min-h-6 border-none px-2 text-xs transition-colors duration-150`,hr=[{reason:`helpful`,labelMessage:Be({id:`immersiveMapFeedback.reason.helpful`,defaultMessage:`This map is helpful`})},{reason:`broken`,labelMessage:Be({id:`immersiveMapFeedback.reason.broken`,defaultMessage:`This map is not working`})},{reason:`not_relevant_to_question`,labelMessage:Be({id:`immersiveMapFeedback.reason.irrelevantInformation`,defaultMessage:`This map has irrelevant information`})},{reason:`too_slow`,labelMessage:Be({id:`immersiveMapFeedback.reason.tooSlow`,defaultMessage:`The map and answers are too slow`})}]})),_r,vr,yr,br,xr,Sr,Cr,wr=e((()=>{_r=Ue(),ue(),g(),gn(),P(),pt(),Pt(),S(),F(),Nt(),ce(),He(),ut(),vr=L(),yr=.7,br=1.25,xr=`514645398`,Sr=e=>{"use forget";let t=(0,_r.c)(14),{conversation:n}=e,r=We(),{setTargetedContent:i}=bt(),a;t[0]===n?a=t[1]:(a=Mt(n),t[0]=n,t[1]=a);let c=a,l;t[2]===r?l=t[3]:(l=r.formatMessage({id:`c2ldaj`,defaultMessage:`Search Here`}),t[2]=r,t[3]=l);let u=l,f;t[4]!==n||t[5]!==c||t[6]!==u||t[7]!==i?(f=async()=>{let e=c.mapMessageId$(),t=Cr(c.currentViewState$());if(!t)return;let r=rt(t,e);if(r){ye.logStructuredEvent(`ChatgptPlacesSearchNearbyButtonClicked`,{messageId:e??``,conversationId:se(n)}),c.setHasRequestedNewData$(!0,{source:`search-nearby`}),c.setOverlayViewState$(t),i(void 0);try{await bn({callsiteId:`request_completion.formatted_text.contentReferences.maps.controls.search_nearby.1`,conversation:n,promptMessage:o(u,{map_search_parameters:r}),eventSource:`mouse`,extraStreamParams:{mapSearchParams:r,completionMetadata:{systemHints:[d.Search],searchSource:qe.MAP_SEARCH_THIS_AREA_BUTTON,conversationMode:{kind:s.PrimaryAssistant}}}})}catch{c.setHasRequestedNewData$(!1)}}},t[4]=n,t[5]=c,t[6]=u,t[7]=i,t[8]=f):f=t[8];let p=f,m;t[9]===p?m=t[10]:(m=()=>{p()},t[9]=p,t[10]=m);let h;return t[11]!==u||t[12]!==m?(h=(0,vr.jsx)(Se,{type:`button`,color:`secondary`,className:`btn border-token-border-default text-token-text-primary mt-3 border bg-transparent bg-clip-padding px-4`,contentWrapperClassName:`font-semibold`,onClick:m,children:u}),t[11]=u,t[12]=m,t[13]=h):h=t[13],h},Cr=e=>{if(e)return{...e,zoom:Math.max(0,e.zoom-yr),latSpan:e.latSpan==null?e.latSpan:e.latSpan*br,longSpan:e.longSpan==null?e.longSpan:e.longSpan*br}}}));function Tr(e){"use forget";let t=(0,kr.c)(28),{conversation:n,messageId:r,engagementLoggingContext:i,businesses:a,additionalBusinesses:o,onClick:s,onHover:l,trackContentReferenceEvent:u,setShowAdditionalBusinesses:d,showAdditionalBusinesses:f,isLoading:m,renderAsCarousel:h,enableMapCarouselPresentation:g,approvedImageUrls:v,showNotes:y,carouselNotesClassName:b}=e,x=h!==void 0&&h,S=g!==void 0&&g,C=y===void 0||y,w=We(),T=_(),E=(0,Ar.useRef)(null),D;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(D={didDrag:!1,pointerId:null,startScrollLeft:0,startX:0},t[0]=D):D=t[0];let O=(0,Ar.useRef)(D),k;t[1]===n?k=t[2]:(k=()=>zt(n)?.type===`entity`,t[1]=n,t[2]=k);let j=A(k),M;t[3]!==o||t[4]!==a||t[5]!==f?(M=f?[...a,...o]:a,t[3]=o,t[4]=a,t[5]=f,t[6]=M):M=t[6];let N=M,ee,te;t[7]===N?(ee=t[8],te=t[9]):(ee=()=>{for(let e of N)Pn(e.entity_data,Ke(e))},te=[N],t[7]=N,t[8]=ee,t[9]=te),(0,Ar.useEffect)(ee,te);let ne=a.length>0?2:4,re=a.length+(f?o.length:0),ie;t[10]!==w||t[11]!==m||t[12]!==re?(ie=Mr({intl:w,visibleNumberOfBusinesses:re,isLoading:m}),t[10]=w,t[11]=m,t[12]=re,t[13]=ie):ie=t[13];let ae=ie,ce=!m&&a.length===0&&o.length===0,le;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(le=c(xr),t[14]=le):le=t[14];let P=le,ue=!x,F;t[15]!==n||t[16]!==r||t[17]!==ue?(F=ue?(0,Y.jsx)(lr,{messageId:r,clientThreadId:n.id}):null,t[15]=n,t[16]=r,t[17]=ue,t[18]=F):F=t[18];let pe=F,me;t[19]===x?me=t[20]:(me=()=>{x&&E.current?.scrollTo({left:0})},t[19]=x,t[20]=me);let he;t[21]!==a.length||t[22]!==x?(he=[a.length,x],t[21]=a.length,t[22]=x,t[23]=he):he=t[23],(0,Ar.useEffect)(me,he);let ge=()=>{j()||l(null)},_e;t[24]===Symbol.for(`react.memo_cache_sentinel`)?(_e=e=>{e.pointerType!==`mouse`||e.button!==0||(O.current={didDrag:!1,pointerId:e.pointerId,startScrollLeft:e.currentTarget.scrollLeft,startX:e.clientX})},t[24]=_e):_e=t[24];let ve=_e,be;t[25]===Symbol.for(`react.memo_cache_sentinel`)?(be=e=>{let t=O.current;if(t.pointerId!==e.pointerId)return;let n=e.clientX-t.startX;if(!t.didDrag){if(Math.abs(n)<jr)return;t.didDrag=!0,e.currentTarget.setPointerCapture(e.pointerId)}e.preventDefault(),e.currentTarget.scrollLeft=t.startScrollLeft-n},t[25]=be):be=t[25];let xe=be,Se;t[26]===Symbol.for(`react.memo_cache_sentinel`)?(Se=e=>{let{currentTarget:t,pointerId:n}=e,r=O.current;r.pointerId===n&&(t.hasPointerCapture(n)&&t.releasePointerCapture(n),r.pointerId=null,r.didDrag&&requestAnimationFrame(()=>{t.scrollTo({left:t.scrollLeft})}))},t[26]=Se):Se=t[26];let Ce=Se,we;t[27]===Symbol.for(`react.memo_cache_sentinel`)?(we=e=>{let t=O.current;t.didDrag&&=(e.preventDefault(),e.stopPropagation(),!1)},t[27]=we):we=t[27];let Te=we,Ee=(e,t,r)=>{j()||(r&&ye.logStructuredEvent(r===`carousel_item`?`ChatgptPlacesBusinessCarouselItemHovered`:`ChatgptPlacesBusinessListItemHovered`,{entityId:e.entity_data.id,entityName:e.entity_data.name,entityIndex:fe(t),conversationId:se(n)}),l(e.entity_data.id))},De=(e,t,a)=>(0,Y.jsx)(oe.div,{role:`listitem`,initial:!T&&{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:T?{duration:0}:{ease:`easeInOut`},onClick:()=>{i&&Ln({source:`list`,clientThreadId:n.id,conversationId:se(n),messageId:r,assistantMessageId:i.assistantMessageId??r,turnIndex:i.turnIndex,contentReferenceStartIndex:i.contentReferenceStartIndex,surfaceLocation:i.surfaceLocation,entityId:e.entity_data.id,entityCategory:Ke(e),contentReferenceType:i.contentReferenceType,isGenui:i.isGenui}),ye.logStructuredEvent(a?.renderContext===`carousel_item`?`ChatgptPlacesBusinessCarouselItemClicked`:`ChatgptPlacesBusinessListItemClicked`,{entityId:e.entity_data.id,entityName:e.entity_data.name,entityIndex:fe(t),conversationId:se(n)}),s(e)},className:p(`h-full w-full cursor-pointer`,a?.floating&&`bg-token-bg-primary/90 border-token-border-light/60 border bg-clip-padding backdrop-blur`,a?.wrapperClassName),children:(0,Y.jsx)(_n,{clientThreadId:n.id,messageId:r,isModelPreferred:e.isModelPreferred,idx:t,business:e.entity_data,description:e.mapPointLabel,mapCarouselCard:x&&S?e.mapCarouselCard:void 0,approvedImageUrls:v,preserveRatingWithDescription:x&&S,notes:C?e.notes:void 0,trackContentReferenceEvent:u,enableSidebarNavigation:!1,imageClassName:a?.imageClassName,notesClassName:x?b:void 0,onHoverEnter:a?.enableHover?()=>Ee(e,t,a.renderContext):void 0,onHoverLeave:a?.enableHover?ge:void 0,wrapperClassName:a?.businessCardClassName,showShareEntityButton:!1})},Jt(e));return x?(0,Y.jsxs)(`div`,{ref:E,role:`list`,className:`no-scrollbar flex cursor-grab snap-x snap-mandatory gap-3 overflow-x-auto px-3 pb-3 select-none active:cursor-grabbing sm:scroll-ps-3 not-motion-reduce:sm:scroll-smooth sm:active:snap-none sm:active:scroll-auto`,onDragStart:Or,onClickCapture:Te,onPointerDown:ve,onPointerMove:xe,onPointerUp:Ce,onPointerCancel:Ce,children:[N.map((e,t)=>(0,Y.jsx)(`div`,{className:p(`flex shrink-0 snap-center`,`flex shrink-0 snap-center sm:snap-start`,`w-[82vw] max-w-[330px]`),children:De(e,t,{floating:!0,businessCardClassName:`p-3`,wrapperClassName:`overflow-hidden rounded-[28px]`,enableHover:!0,renderContext:`carousel_item`,imageClassName:`h-16 w-16 rounded-[16px]!`})},Jt(e))),m&&Array.from({length:ne}).map(Dr)]}):(0,Y.jsx)(Y.Fragment,{children:ce?(0,Y.jsxs)(`div`,{className:`flex h-full w-full flex-col`,children:[pe?(0,Y.jsx)(`div`,{className:`flex items-center justify-end px-4 pt-3 pb-2`,children:pe}):null,(0,Y.jsxs)(`div`,{className:`flex flex-1 flex-col items-center justify-center`,children:[(0,Y.jsx)(`div`,{className:`text-token-text-secondary text-sm font-medium`,children:(0,Y.jsx)(R,{id:`ccRlgZ`,defaultMessage:`Nothing found in this area`})}),P&&(0,Y.jsx)(Sr,{conversation:n})]})]}):(0,Y.jsxs)(`div`,{className:`flex h-full flex-col`,children:[a.length>0?(0,Y.jsx)(Nr,{title:ae,isLoading:m&&a.length===0,className:`pt-3 pb-2`,endContent:pe}):(0,Y.jsx)(Nr,{title:w.formatMessage({id:`iy+NUJ`,defaultMessage:`Places`}),className:`pt-3 pb-2 opacity-50`,endContent:pe}),(0,Y.jsx)(`div`,{className:`relative flex-1 overflow-hidden`,children:(0,Y.jsxs)(`div`,{className:`h-full overflow-y-auto`,children:[(0,Y.jsxs)(`div`,{role:`list`,className:`divide-y`,children:[a.map((e,t)=>De(e,t,{floating:!1,businessCardClassName:`p-4`,imageClassName:`h-16 w-16`,enableHover:!0,renderContext:`list_item`})),m&&Array.from({length:ne}).map(Er)]}),f&&o.length>0&&(0,Y.jsx)(Nr,{title:w.formatMessage({id:`71Us8A`,defaultMessage:`More ideas`})}),f&&(0,Y.jsx)(`div`,{role:`list`,className:`divide-y pb-4`,children:(0,Y.jsx)(de,{initial:!1,children:o.map((e,t)=>De(e,t,{floating:!1,businessCardClassName:`p-4`,imageClassName:`h-16 w-16`,enableHover:!0,renderContext:`list_item`}))})}),!m&&o.length>0&&(0,Y.jsx)(`div`,{className:`mx-5 pb-8`,children:(0,Y.jsx)(Pr,{isLoading:m,conversation:n,setShowAdditionalBusinesses:d,isShowingAdditionalBusinesses:f})})]})})]})})}function Er(e,t){return(0,Y.jsx)(hn,{imageClassName:`h-16 w-16`,className:`p-4`},`ghost-card-${t}`)}function Dr(e,t){return(0,Y.jsx)(`div`,{className:`bg-token-bg-primary w-[82vw] max-w-[330px] shrink-0 snap-center rounded-xl sm:snap-start`,children:(0,Y.jsx)(hn,{imageClassName:`h-16 w-16`})},`ghost-card-${t}`)}function Or(e){return e.preventDefault()}var kr,Ar,Y,jr,Mr,Nr,Pr,Fr=e((()=>{kr=Ue(),g(),P(),Nn(),gr(),B(),le(),F(),y(),i(),v(),a(),Ar=n(z()),He(),mn(),wr(),Rn(),_t(),ut(),Y=L(),jr=4,Mr=({intl:e,visibleNumberOfBusinesses:t,isLoading:n})=>t===1?e.formatMessage({id:`jp8v8C`,defaultMessage:`1 Place`}):t>0?e.formatMessage({id:`WVfesQ`,defaultMessage:`{numResults} Places`},{numResults:t}):n?e.formatMessage({id:`5wLbfd`,defaultMessage:`Thinking`}):e.formatMessage({id:`YP/AFK`,defaultMessage:`No results found`}),Nr=e=>{"use forget";let t=(0,kr.c)(9),{title:n,isLoading:r,className:i,endContent:a}=e,o=r&&`opacity-80!`,s;t[0]!==i||t[1]!==o?(s=p(`flex items-center justify-between gap-3 px-4`,o,i),t[0]=i,t[1]=o,t[2]=s):s=t[2];let c;t[3]===n?c=t[4]:(c=(0,Y.jsx)(`div`,{className:`text-text-primary font-medium`,children:n}),t[3]=n,t[4]=c);let l;return t[5]!==a||t[6]!==s||t[7]!==c?(l=(0,Y.jsxs)(`div`,{className:s,children:[c,a]}),t[5]=a,t[6]=s,t[7]=c,t[8]=l):l=t[8],l},Pr=e=>{"use forget";let t=(0,kr.c)(14),{isLoading:n,conversation:r,setShowAdditionalBusinesses:i,isShowingAdditionalBusinesses:a}=e,o=We(),s;t[0]!==o||t[1]!==a?(s=a?o.formatMessage({id:`62U9XT`,defaultMessage:`Show fewer places`}):o.formatMessage({id:`Fev2Lu`,defaultMessage:`Show more places`}),t[0]=o,t[1]=a,t[2]=s):s=t[2];let c=s,l=n&&`opacity-80!`,u;t[3]===l?u=t[4]:(u=p(`bg-token-action-secondary text-token-text-primary btn-custom border-token-border-default mt-2 justify-center border bg-clip-padding`,l),t[3]=l,t[4]=u);let d;t[5]!==r||t[6]!==a||t[7]!==i?(d=()=>{let e=!a;ye.logStructuredEvent(e?`ChatgptPlacesShowMoreButtonClicked`:`ChatgptPlacesShowLessButtonClicked`,{conversationId:se(r)}),i(e)},t[5]=r,t[6]=a,t[7]=i,t[8]=d):d=t[8];let f;return t[9]!==n||t[10]!==c||t[11]!==u||t[12]!==d?(f=(0,Y.jsx)(Se,{type:`button`,color:`custom`,size:`medium`,disabled:n,fullWidth:!0,className:u,contentWrapperClassName:`font-semibold `,onClick:d,children:c}),t[9]=n,t[10]=c,t[11]=u,t[12]=d,t[13]=f):f=t[13],f}}));function Ir(e){return!1}function Lr(e,t){return e?!0:t.some(e=>e.entity_data.is_open!=null&&e.entity_data.is_open!==void 0)}var Rr=e((()=>{}));function zr(e){"use forget";let t=(0,Kr.c)(38),{icon:n,isLoading:r,inactiveLabel:i,activeLabel:a,isActive:o,open:s,onOpenChange:c,showIconWhenActive:l,showIconWhenInactive:u,showCheckmarkWhenActive:d,iconAfterLabel:f,contentClassName:m,iconClassName:h,children:g}=e,_=l===void 0||l,v=u===void 0||u,y=d===void 0||d,b=o?_:v,x=o&&`bg-token-bg-tertiary`,S=r&&`opacity-80!`,w;t[0]!==x||t[1]!==S?(w=p(`btn btn-secondary btn-small border-token-border-default text-token-text-primary relative flex h-[36px] items-center justify-center border bg-clip-padding px-4`,x,S),t[0]=x,t[1]=S,t[2]=w):w=t[2];let T;t[3]!==o||t[4]!==y?(T=o&&y&&(0,X.jsx)(C.CheckSm,{className:`icon-sm`}),t[3]=o,t[4]=y,t[5]=T):T=t[5];let E;t[6]!==n||t[7]!==f||t[8]!==h||t[9]!==b?(E=b&&!f&&(0,X.jsx)(n,{className:p(`icon-sm`,h)}),t[6]=n,t[7]=f,t[8]=h,t[9]=b,t[10]=E):E=t[10];let D=o?a??i:i,O;t[11]===D?O=t[12]:(O=(0,X.jsx)(`span`,{className:`truncate text-xs`,children:D}),t[11]=D,t[12]=O);let k;t[13]!==n||t[14]!==f||t[15]!==h||t[16]!==b?(k=b&&f&&(0,X.jsx)(n,{className:p(`icon-sm`,h)}),t[13]=n,t[14]=f,t[15]=h,t[16]=b,t[17]=k):k=t[17];let A;t[18]===Symbol.for(`react.memo_cache_sentinel`)?(A=(0,X.jsx)(C.ChevronDownSm,{className:`icon-sm opacity-80`}),t[18]=A):A=t[18];let j;t[19]!==O||t[20]!==k||t[21]!==T||t[22]!==E?(j=(0,X.jsxs)(`span`,{className:`flex max-w-[200px] min-w-0 items-center justify-center gap-1 font-semibold`,children:[T,E,O,k,A]}),t[19]=O,t[20]=k,t[21]=T,t[22]=E,t[23]=j):j=t[23];let M;t[24]!==r||t[25]!==j||t[26]!==w?(M=(0,X.jsx)($e.BasicTrigger,{asChild:!0,children:(0,X.jsx)(`button`,{className:w,disabled:r,children:j})}),t[24]=r,t[25]=j,t[26]=w,t[27]=M):M=t[27];let N;t[28]===m?N=t[29]:(N=p(`py-1`,m),t[28]=m,t[29]=N);let ee;t[30]!==g||t[31]!==N?(ee=(0,X.jsx)($e.Portal,{children:(0,X.jsx)($e.Content,{align:`start`,side:`bottom`,className:N,children:g})}),t[30]=g,t[31]=N,t[32]=ee):ee=t[32];let te;return t[33]!==c||t[34]!==s||t[35]!==M||t[36]!==ee?(te=(0,X.jsxs)($e.Root,{open:s,onOpenChange:c,children:[M,ee]}),t[33]=c,t[34]=s,t[35]=M,t[36]=ee,t[37]=te):te=t[37],te}function Br(e){"use forget";let t=(0,Kr.c)(10),{rating:n}=e,r=Math.floor(n),i=Math.abs(n-r-.5)<.001,a=5-r-!!i,o;t[0]===r?o=t[1]:(o=Array.from({length:r}).map(Hr),t[0]=r,t[1]=o);let s;t[2]===i?s=t[3]:(s=i&&(0,X.jsxs)(`span`,{className:`relative h-4 w-4`,children:[(0,X.jsx)(ze.Star,{className:`text-token-text-tertiary h-4 w-4`}),(0,X.jsx)(`span`,{className:`absolute inset-0 overflow-hidden`,style:{width:`50%`},children:(0,X.jsx)(rn,{className:`h-4 w-4 text-yellow-400`})})]}),t[2]=i,t[3]=s);let c;t[4]===a?c=t[5]:(c=Array.from({length:a}).map(Vr),t[4]=a,t[5]=c);let l;return t[6]!==o||t[7]!==s||t[8]!==c?(l=(0,X.jsxs)(`div`,{className:`flex items-center gap-0.5`,"aria-hidden":`true`,children:[o,s,c]}),t[6]=o,t[7]=s,t[8]=c,t[9]=l):l=t[9],l}function Vr(e,t){return(0,X.jsx)(ze.Star,{className:`text-token-text-tertiary h-4 w-4`},`empty-${t}`)}function Hr(e,t){return(0,X.jsx)(rn,{className:`h-4 w-4 text-yellow-400`},`full-${t}`)}function Ur(e){"use forget";let t=(0,Kr.c)(51),{enabled:n,isLoading:r,open:i,onOpenChange:a,onSelect:o,selectedRating:s}=e,c=We();if(!n)return null;let l,u,d,f,p,m,h,g,_,v,y,b,x,S,C,w;if(t[0]!==c||t[1]!==r||t[2]!==a||t[3]!==o||t[4]!==i||t[5]!==s){let e=[{value:`2`,threshold:2},{value:`2.5`,threshold:2.5},{value:`3`,threshold:3},{value:`3.5`,threshold:3.5},{value:`4`,threshold:4},{value:`4.5`,threshold:4.5}],n;t[22]===c?n=t[23]:(n=e=>c.formatMessage(Jr.ratingThreshold,{rating:c.formatNumber(e,{minimumFractionDigits:1,maximumFractionDigits:1})}),t[22]=c,t[23]=n);let T=n,E;bb0:{if(s==null){E=void 0;break bb0}let t=e.find(e=>e.threshold===s);E=t?T(t.threshold):void 0}let D=E,O;t[24]===s?O=t[25]:(O=s==null?`anyRating`:s.toString(),t[24]=s,t[25]=O);let k=O;u=zr,b=rn,t[26]===c?x=t[27]:(x=c.formatMessage(Jr.ratingLabel),t[26]=c,t[27]=x),S=D,C=r,w=s!=null,f=!0,p=`text-yellow-400`,m=i,h=a,g=!0,l=$e.RadioGroup,d=k,_=t=>{if(t===`anyRating`){o(null);return}let n=e.find(e=>e.value===t);n&&o(n.threshold)};let A;t[28]===c?A=t[29]:(A=c.formatMessage(Jr.anyRating),t[28]=c,t[29]=A),t[30]===A?v=t[31]:(v=(0,X.jsx)($e.RadioItem,{value:`anyRating`,children:A}),t[30]=A,t[31]=v),y=e.map(e=>{let{value:t,threshold:n}=e;return(0,X.jsx)($e.RadioItem,{value:t,children:(0,X.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,X.jsx)(`span`,{className:`w-full tabular-nums`,children:T(n)}),(0,X.jsx)(Br,{rating:n})]})},t)}),t[0]=c,t[1]=r,t[2]=a,t[3]=o,t[4]=i,t[5]=s,t[6]=l,t[7]=u,t[8]=d,t[9]=f,t[10]=p,t[11]=m,t[12]=h,t[13]=g,t[14]=_,t[15]=v,t[16]=y,t[17]=b,t[18]=x,t[19]=S,t[20]=C,t[21]=w}else l=t[6],u=t[7],d=t[8],f=t[9],p=t[10],m=t[11],h=t[12],g=t[13],_=t[14],v=t[15],y=t[16],b=t[17],x=t[18],S=t[19],C=t[20],w=t[21];let T;t[32]!==l||t[33]!==d||t[34]!==_||t[35]!==v||t[36]!==y?(T=(0,X.jsxs)(l,{value:d,onValueChange:_,children:[v,y]}),t[32]=l,t[33]=d,t[34]=_,t[35]=v,t[36]=y,t[37]=T):T=t[37];let E;return t[38]!==u||t[39]!==f||t[40]!==p||t[41]!==m||t[42]!==h||t[43]!==g||t[44]!==T||t[45]!==b||t[46]!==x||t[47]!==S||t[48]!==C||t[49]!==w?(E=(0,X.jsx)(u,{icon:b,inactiveLabel:x,activeLabel:S,isLoading:C,isActive:w,iconAfterLabel:f,iconClassName:p,open:m,onOpenChange:h,showCheckmarkWhenActive:g,children:T}),t[38]=u,t[39]=f,t[40]=p,t[41]=m,t[42]=h,t[43]=g,t[44]=T,t[45]=b,t[46]=x,t[47]=S,t[48]=C,t[49]=w,t[50]=E):E=t[50],E}function Wr(e){"use forget";let t=(0,Kr.c)(20),{enabled:n,isLoading:r,onSelect:i,openNowOnly:a}=e,o=We();if(!n)return null;let s=a&&`btn-primary`,c=r&&`opacity-100!`,l;t[0]!==s||t[1]!==c?(l=p(`btn border-token-border-default disabled:text-token-text-tertiary relative flex h-[36px] items-center justify-center border bg-clip-padding px-4 drop-shadow-sm`,s,c),t[0]=s,t[1]=c,t[2]=l):l=t[2];let u;t[3]!==i||t[4]!==a?(u=()=>i(!a),t[3]=i,t[4]=a,t[5]=u):u=t[5];let d;t[6]===o?d=t[7]:(d=o.formatMessage(Jr.openNow),t[6]=o,t[7]=d);let f;t[8]===d?f=t[9]:(f=(0,X.jsx)(`span`,{className:`truncate text-xs`,children:d}),t[8]=d,t[9]=f);let m;t[10]===a?m=t[11]:(m=a&&(0,X.jsx)(C.Cross,{className:`icon-sm`}),t[10]=a,t[11]=m);let h;t[12]!==f||t[13]!==m?(h=(0,X.jsxs)(`span`,{className:`flex max-w-[200px] min-w-0 items-center justify-center gap-1 font-semibold`,children:[f,m]}),t[12]=f,t[13]=m,t[14]=h):h=t[14];let g;return t[15]!==r||t[16]!==l||t[17]!==u||t[18]!==h?(g=(0,X.jsx)(Se,{type:`button`,color:`secondary`,size:`small`,disabled:r,className:l,contentWrapperClassName:`font-semibold flex items-center gap-1`,onClick:u,children:h}),t[15]=r,t[16]=l,t[17]=u,t[18]=h,t[19]=g):g=t[19],g}function Gr(e){"use forget";let t=(0,Kr.c)(33),{clientThreadId:n}=e,[i,a]=(0,qr.useState)(null),o;t[0]===n?o=t[1]:(o=null,n&&(o=Mt(ke(n))),t[0]=n,t[1]=o);let s;t[2]===o?s=t[3]:(s=()=>o?.filters$(),t[2]=o,t[3]=s);let c=r(s),l;t[4]===o?l=t[5]:(l=()=>o?.businesses$()??[],t[4]=o,t[5]=l);let u=r(l),d;t[6]===o?d=t[7]:(d=()=>o?.hasRequestedNewData$()??!1,t[6]=o,t[7]=d);let f=r(d),p;t[8]===u?p=t[9]:(p=Ir(u),t[8]=u,t[9]=p);let m=p,h;t[10]!==u||t[11]!==f?(h=Lr(f,u),t[10]=u,t[11]=f,t[12]=h):h=t[12];let g=h,_=c??Wt;if(!m&&!g||!o)return null;let v;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(v=e=>{a(e?`rating`:null)},t[13]=v):v=t[13];let y=v,b=i===`rating`,x;t[14]===o?x=t[15]:(x=e=>o.setFilters$({minRating:e}),t[14]=o,t[15]=x);let S;t[16]!==m||t[17]!==_.minRating||t[18]!==f||t[19]!==b||t[20]!==x?(S=(0,X.jsx)(Ur,{enabled:m,open:b,onOpenChange:y,onSelect:x,selectedRating:_.minRating,isLoading:f}),t[16]=m,t[17]=_.minRating,t[18]=f,t[19]=b,t[20]=x,t[21]=S):S=t[21];let C;t[22]!==n||t[23]!==o?(C=e=>{a(null),o.setFilters$({openNowOnly:e}),ye.logStructuredEvent(`ChatgptPlacesFilterButtonClicked`,{conversationId:n,filterName:`open_now`,filterValueBool:e})},t[22]=n,t[23]=o,t[24]=C):C=t[24];let w;t[25]!==g||t[26]!==_.openNowOnly||t[27]!==f||t[28]!==C?(w=(0,X.jsx)(Wr,{enabled:g,isLoading:f,onSelect:C,openNowOnly:_.openNowOnly}),t[25]=g,t[26]=_.openNowOnly,t[27]=f,t[28]=C,t[29]=w):w=t[29];let T;return t[30]!==w||t[31]!==S?(T=(0,X.jsxs)(`div`,{className:`flex flex-wrap items-center gap-2`,children:[S,w]}),t[30]=w,t[31]=S,t[32]=T):T=t[32],T}var Kr,qr,X,Jr,Yr=e((()=>{Kr=Ue(),l(),w(),g(),P(),at(),ln(),Rr(),pt(),le(),F(),v(),qr=n(z()),He(),X=L(),Jr=Ve({ratingLabel:{id:`yIYAl7`,defaultMessage:`Rating`},anyRating:{id:`F8R0Bx`,defaultMessage:`Any rating`},ratingThreshold:{id:`stD1ac`,defaultMessage:`{rating}+`},openNow:{id:`pipXrq`,defaultMessage:`Open Now`}})}));function Xr(e,t,n){let r=e.createShader(t);if(!r)throw Error(`createShader failed`);if(e.shaderSource(r,n),e.compileShader(r),!e.getShaderParameter(r,e.COMPILE_STATUS)){let t=e.getShaderInfoLog(r)||`shader compile failed`;throw e.deleteShader(r),Error(t)}return r}function Zr(e,t,n){let r=e.createProgram();if(!r)throw Error(`createProgram failed`);let i=Xr(e,e.VERTEX_SHADER,t),a=Xr(e,e.FRAGMENT_SHADER,n);if(e.attachShader(r,i),e.attachShader(r,a),e.linkProgram(r),e.deleteShader(i),e.deleteShader(a),!e.getProgramParameter(r,e.LINK_STATUS)){let t=e.getProgramInfoLog(r)||`program link failed`;throw e.deleteProgram(r),Error(t)}return r}function Qr({className:e,zIndex:t=4,themeColor:n=[.15,.55,1,.55],overlayStrength:r=1.5,centerDim:i=.2,cornerOverlay:a=1.75,cornerDotBoost:o=1.55,dotBrightness:s=1.2,colorIntensity:c=1.5,dotVisibility:l=1,respectReducedMotion:u=!0,maxFps:d=30,maxDevicePixelRatio:f=1.25}){let m=(0,$r.useRef)(null),h=(0,$r.useRef)(null),g=(0,$r.useMemo)(()=>({color:n,overlayStrength:r,centerDim:i,cornerOverlay:a,cornerDotBoost:o,dotBrightness:s,colorIntensity:c,dotVisibility:l}),[n,r,i,a,o,s,c,l]);return(0,$r.useEffect)(()=>{if(typeof window>`u`||u&&window.matchMedia?.(`(prefers-reduced-motion: reduce)`)?.matches)return;let e=m.current,t=h.current;if(!e||!t)return;let n=t.getContext(`webgl2`,{alpha:!0,premultipliedAlpha:!0,antialias:!1,depth:!1,powerPreference:`low-power`,preserveDrawingBuffer:!1});if(!n)return;let r=null;try{r=Zr(n,ti,ni)}catch(e){console.warn(`AnimatedParticleOverlay: shader init failed`,e);return}n.useProgram(r),n.disable(n.DEPTH_TEST),n.enable(n.BLEND),n.blendFunc(n.ONE,n.ONE_MINUS_SRC_ALPHA);let i=n.getUniformLocation(r,`uResolution`),a=n.getUniformLocation(r,`uCircleColor`),o=n.getUniformLocation(r,`uRenderScale`),s=n.getUniformLocation(r,`uTime`),c=n.getUniformLocation(r,`uPatternTime`),l=n.getUniformLocation(r,`uDotTime`),p=n.getUniformLocation(r,`uOverlayStrength`),_=n.getUniformLocation(r,`uColorIntensity`),v=n.getUniformLocation(r,`uUniformTintAmount`),y=n.getUniformLocation(r,`uDotVisibility`),b=n.getUniformLocation(r,`uGreyTintAmount`),x=n.getUniformLocation(r,`uMaskProgress`),S=n.getUniformLocation(r,`uCenterDim`),C=n.getUniformLocation(r,`uCornerOverlay`),w=n.getUniformLocation(r,`uCornerDotBoost`),T=n.getUniformLocation(r,`uDotBrightness`),[E,D,O,k]=g.color;n.uniform4f(a,E,D,O,k),n.uniform1f(p,g.overlayStrength),n.uniform1f(_,g.colorIntensity),n.uniform1f(v,0),n.uniform1f(y,g.dotVisibility),n.uniform1f(b,0),n.uniform1f(x,0),n.uniform1f(S,g.centerDim),n.uniform1f(C,g.cornerOverlay),n.uniform1f(w,g.cornerDotBoost),n.uniform1f(T,g.dotBrightness);let A=1,j=0,M=0,N=d>0?1e3/d:0,ee=()=>{let r=e.getBoundingClientRect();A=Math.min(f,Math.max(1,window.devicePixelRatio||1));let a=Math.max(1,Math.floor(r.width*A)),s=Math.max(1,Math.floor(r.height*A));(t.width!==a||t.height!==s)&&(t.width=a,t.height=s,n.viewport(0,0,a,s)),n.uniform2f(i,a,s),n.uniform1f(o,A/Math.max(1,window.devicePixelRatio||1))},te=!1,ne=()=>{te||(te=!0,requestAnimationFrame(()=>{te=!1,ee()}))},re=new ResizeObserver(ne);re.observe(e);let ie=window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);ie.addEventListener?.(`change`,ne),ee();let ae=performance.now(),oe=e=>{if(typeof document<`u`&&document.hidden){j=requestAnimationFrame(oe);return}if(N>0&&e-M<N){j=requestAnimationFrame(oe);return}M=e;let t=(e-ae)*.001;n.uniform1f(s,t),n.uniform1f(c,t),n.uniform1f(l,t),n.clearColor(0,0,0,0),n.clear(n.COLOR_BUFFER_BIT),n.drawArrays(n.TRIANGLE_STRIP,0,4),j=requestAnimationFrame(oe)},se=e=>{e.preventDefault(),cancelAnimationFrame(j)};return t.addEventListener(`webglcontextlost`,se),j=requestAnimationFrame(oe),()=>{cancelAnimationFrame(j),re.disconnect(),ie.removeEventListener?.(`change`,ne),t.removeEventListener(`webglcontextlost`,se),r&&n.deleteProgram(r)}},[g,u,f,d]),(0,ei.jsx)(`div`,{ref:m,className:p(`pointer-events-none absolute inset-0`,e),style:{zIndex:t},"aria-hidden":`true`,children:(0,ei.jsx)(`canvas`,{ref:h,className:`h-full w-full`,style:{mixBlendMode:`normal`,opacity:1}})})}var $r,ei,ti,ni,ri=e((()=>{v(),$r=n(z()),ei=L(),ti=`#version 300 es
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A5 as r,
+    Ant as i,
+    At as a,
+    BZ as o,
+    Bet as s,
+    Bnt as c,
+    Bx as l,
+    Dz as u,
+    Eq as d,
+    Fa as f,
+    G5 as p,
+    Gnt as m,
+    IN as h,
+    JT as g,
+    Jt as _,
+    K5 as v,
+    Knt as y,
+    LN as b,
+    Mnt as x,
+    Mq as S,
+    Mz as C,
+    Nz as w,
+    Oz as T,
+    Pa as E,
+    RU as D,
+    SN as O,
+    S_ as k,
+    _8 as A,
+    _N as j,
+    _R as M,
+    _Y as N,
+    _a as ee,
+    aW as te,
+    ad as ne,
+    aq as re,
+    art as ie,
+    ca as ae,
+    cn as oe,
+    dF as se,
+    eQ as ce,
+    f8 as le,
+    fF as P,
+    ftt as ue,
+    hn as de,
+    hnt as F,
+    jnt as fe,
+    k5 as pe,
+    mF as me,
+    mJ as he,
+    nY as ge,
+    ort as _e,
+    pJ as ve,
+    pnt as ye,
+    pq as be,
+    qJ as xe,
+    qT as Se,
+    qnt as Ce,
+    r5 as we,
+    sU as Te,
+    sW as Ee,
+    srt as De,
+    tY as Oe,
+    uF as ke,
+    uU as Ae,
+    ud as je,
+    vJ as Me,
+    vN as Ne,
+    vq as I,
+    xJ as Pe,
+    xR as Fe,
+    x_ as Ie,
+    yN as Le,
+    zU as Re,
+    zx as ze
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as L,
+    In as Be,
+    Ln as Ve,
+    Nn as R,
+    Rn as He,
+    Vn as z,
+    wn as Ue,
+    zn as We
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    $3 as Ge,
+    $Fn as B,
+    $dt as V,
+    Bpt as Ke,
+    Dgn as qe,
+    Dkn as Je,
+    Fpt as H,
+    Gpt as Ye,
+    Hpt as Xe,
+    Jpt as Ze,
+    Kpt as Qe,
+    LHn as $e,
+    Lpt as et,
+    Nlt as tt,
+    Plt as nt,
+    Ppt as rt,
+    QSt as U,
+    Qdt as it,
+    RHn as at,
+    Upt as ot,
+    Vpt as st,
+    Wpt as ct,
+    YSt as lt,
+    Ypt as ut,
+    Zpt as dt,
+    _F as ft,
+    aT as W,
+    aut as pt,
+    bkn as mt,
+    cBt as ht,
+    clt as gt,
+    cmt as _t,
+    dGn as vt,
+    dgn as yt,
+    dht as bt,
+    djn as xt,
+    dlt as St,
+    e6 as Ct,
+    emt as wt,
+    fGn as Tt,
+    fIn as Et,
+    flt as Dt,
+    gbt as Ot,
+    hbt as kt,
+    iT as At,
+    imt as jt,
+    iut as Mt,
+    kgn as Nt,
+    lht as Pt,
+    llt as Ft,
+    lmt as It,
+    mjn as Lt,
+    nmt as Rt,
+    oIn as zt,
+    ogn as Bt,
+    ojn as Vt,
+    omt as Ht,
+    rIn as Ut,
+    rut as Wt,
+    sBt as Gt,
+    sjn as Kt,
+    slt as qt,
+    smt as Jt,
+    tmt as Yt,
+    ujn as Xt,
+    ult as Zt,
+    vF as Qt,
+    vpt as $t,
+    wkn as en,
+    xkn as tn,
+    ypt as nn
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    $v as rn,
+    Bv as an,
+    Iv as on,
+    Jy as sn,
+    Lv as cn,
+    Qv as ln,
+    Vv as G,
+    Yy as un,
+    ap as K,
+    cf as dn,
+    op as fn,
+    sf as pn
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+import {
+    Dd as mn,
+    Ed as hn,
+    Om as gn,
+    Td as _n,
+    d_ as vn,
+    f_ as yn,
+    km as bn
+} from "./8b34dbc2-j8rcexxiltkm8ucr.js";
+import {
+    n as xn,
+    r as Sn,
+    t as Cn
+} from "./24c0da2c-bx2qul3cpe0cu1wg.js";
+import {
+    a as wn,
+    i as Tn,
+    n as En,
+    o as Dn,
+    r as On,
+    t as kn
+} from "./5ab42519-ewabpgsn9d7qobzz.js";
+import {
+    a as q,
+    i as An,
+    o as jn,
+    t as Mn
+} from "./871633a6-o44rajzsr27vjidl.js";
+import {
+    a as Nn,
+    s as Pn
+} from "./0e629c03-lna8msucpxk839i5.js";
+import {
+    n as Fn,
+    t as In
+} from "./97c6978d-fxdy3l2uxcqb4jur.js";
+import {
+    n as Ln,
+    t as Rn
+} from "./f4607326-fwhobju9ukfgwjwh.js";
+import {
+    _ as zn,
+    a as Bn,
+    d as Vn,
+    f as Hn,
+    g as Un,
+    h as Wn,
+    l as Gn,
+    m as Kn,
+    n as qn,
+    o as Jn,
+    p as Yn,
+    s as Xn,
+    t as Zn,
+    u as Qn,
+    v as $n,
+    y as er
+} from "./bcae0416-imkf6os3s2ast8rh.js";
+import {
+    a as tr,
+    i as nr,
+    r as rr,
+    t as ir
+} from "./b58ae57c-mqnjsuhylfo1jbgq.js";
+
+function ar() {
+    return or
+}
+var or, sr, cr = e((() => {
+    or = `local-places-preview`, sr = `places-button`
+}));
+
+function lr(e) {
+    "use forget";
+    let t = (0, fr.c)(52),
+        {
+            messageId: n,
+            clientThreadId: r,
+            source: i
+        } = e,
+        a = We(),
+        o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = D(), t[0] = o) : o = t[0];
+    let s = o,
+        [c, l] = (0, pr.useState)(!1),
+        [u, d] = (0, pr.useState)(``),
+        f;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (f = [], t[1] = f) : f = t[1];
+    let [p, m] = (0, pr.useState)(f), h = (0, pr.useId)(), g;
+    t[2] !== r || t[3] !== n || t[4] !== i ? (g = {
+        messageId: n,
+        clientThreadId: r,
+        source: i
+    }, t[2] = r, t[3] = n, t[4] = i, t[5] = g) : g = t[5];
+    let {
+        mutate: _
+    } = Fn(g), v;
+    t[6] !== p.length || t[7] !== a ? (v = p.length > 0 ? a.formatMessage({
+        id: `immersiveMapFeedback.placeholder.withReasons`,
+        defaultMessage: `Tell our team why...`
+    }) : a.formatMessage({
+        id: `immersiveMapFeedback.placeholder.default`,
+        defaultMessage: `What would you like us to know?`
+    }), t[6] = p.length, t[7] = a, t[8] = v) : v = t[8];
+    let y = v,
+        b;
+    t[9] !== p.length || t[10] !== u ? (b = u.trim() === `` && p.length === 0, t[9] = p.length, t[10] = u, t[11] = b) : b = t[11];
+    let x = b,
+        S;
+    t[12] === a ? S = t[13] : (S = a.formatMessage({
+        id: `immersiveMapFeedback.submitAria`,
+        defaultMessage: `Submit feedback`
+    }), t[12] = a, t[13] = S);
+    let C = S,
+        w;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (w = e => {
+        m(t => t.includes(e) ? t.filter(t => t !== e) : [...t, e])
+    }, t[14] = w) : w = t[14];
+    let T = w,
+        E;
+    t[15] !== p || t[16] !== u || t[17] !== a || t[18] !== _ ? (E = () => {
+        let e = u.trim();
+        if (e === `` && p.length === 0) return;
+        let t = p;
+        d(``), m([]), l(!1), s.success(a.formatMessage({
+            id: `immersiveMapFeedback.toast.submitted`,
+            defaultMessage: `Your feedback has been submitted`
+        })), _({
+            feedbackText: e,
+            feedbackReasons: t
+        })
+    }, t[15] = p, t[16] = u, t[17] = a, t[18] = _, t[19] = E) : E = t[19];
+    let O = E,
+        k;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (k = (0, J.jsx)($e.BasicTrigger, {
+        asChild: !0,
+        children: (0, J.jsx)(Se, {
+            color: `ghost`,
+            size: `small`,
+            className: mr,
+            children: (0, J.jsx)(R, {
+                id: `immersiveMapFeedback.button.giveFeedback`,
+                defaultMessage: `Give feedback`
+            })
+        })
+    }), t[20] = k) : k = t[20];
+    let A;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (A = (0, J.jsx)(`div`, {
+        className: `mb-3 font-bold`,
+        children: (0, J.jsx)(R, {
+            id: `immersiveMapFeedback.dropdown.title.maps`,
+            defaultMessage: `Help our team improve Maps in ChatGPT`
+        })
+    }), t[21] = A) : A = t[21];
+    let j;
+    t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (j = (0, J.jsxs)(`div`, {
+        className: `border-token-border-default mx-2 border-b pt-1 pb-3 text-sm`,
+        children: [A, (0, J.jsx)(`div`, {
+            className: `text-xs`,
+            children: (0, J.jsx)(R, {
+                id: `immersiveMapFeedback.dropdown.description`,
+                defaultMessage: `Tell us what's working and what's not. The more specific the feedback, the better.`
+            })
+        })]
+    }), t[22] = j) : j = t[22];
+    let M;
+    t[23] === O ? M = t[24] : (M = e => {
+        e.preventDefault(), O()
+    }, t[23] = O, t[24] = M);
+    let N;
+    t[25] !== p || t[26] !== a ? (N = hr.length > 0 && (0, J.jsx)(`fieldset`, {
+        className: `flex flex-col gap-3 py-3 text-sm`,
+        children: hr.map(e => (0, J.jsx)(dr, {
+            label: a.formatMessage(e.labelMessage),
+            checked: p.includes(e.reason),
+            onChange: () => T(e.reason)
+        }, e.reason))
+    }), t[25] = p, t[26] = a, t[27] = N) : N = t[27];
+    let ee;
+    t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (ee = (0, J.jsx)(R, {
+        id: `immersiveMapFeedback.label.additionalFeedback`,
+        defaultMessage: `Additional feedback`
+    }), t[28] = ee) : ee = t[28];
+    let te;
+    t[29] === h ? te = t[30] : (te = (0, J.jsx)(`label`, {
+        htmlFor: h,
+        className: `sr-only`,
+        children: ee
+    }), t[29] = h, t[30] = te);
+    let ne;
+    t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (ne = e => d(e.target.value), t[31] = ne) : ne = t[31];
+    let re;
+    t[32] !== y || t[33] !== u || t[34] !== h ? (re = (0, J.jsx)(At, {
+        autoFocus: !0,
+        id: h,
+        name: `immersive-map-feedback-text`,
+        value: u,
+        onChange: ne,
+        placeholder: y,
+        rows: 3,
+        maxLength: 1600,
+        className: `border-token-border-heavy mt-1 self-stretch rounded-md bg-transparent px-2 py-2 text-sm focus:ring-0 focus:outline-none focus-visible:ring-0`
+    }), t[32] = y, t[33] = u, t[34] = h, t[35] = re) : re = t[35];
+    let ie;
+    t[36] === x ? ie = t[37] : (ie = e => {
+        x && e.preventDefault()
+    }, t[36] = x, t[37] = ie);
+    let ae;
+    t[38] === Symbol.for(`react.memo_cache_sentinel`) ? (ae = (0, J.jsx)(R, {
+        id: `immersiveMapFeedback.button.sendFeedback`,
+        defaultMessage: `Send feedback`
+    }), t[38] = ae) : ae = t[38];
+    let oe;
+    t[39] !== x || t[40] !== C || t[41] !== ie ? (oe = (0, J.jsx)(Se, {
+        type: `submit`,
+        size: `small`,
+        className: `mt-2 mb-1 self-center px-4 py-2`,
+        visuallyDisabled: x,
+        "aria-disabled": x,
+        onClick: ie,
+        "aria-label": C,
+        children: ae
+    }), t[39] = x, t[40] = C, t[41] = ie, t[42] = oe) : oe = t[42];
+    let se;
+    t[43] !== M || t[44] !== N || t[45] !== te || t[46] !== re || t[47] !== oe ? (se = (0, J.jsx)($e.Portal, {
+        children: (0, J.jsxs)($e.Content, {
+            side: `bottom`,
+            align: `end`,
+            sideOffset: 8,
+            alignOffset: 0,
+            onCloseAutoFocus: ur,
+            className: `z-[130] flex w-90 max-w-xs flex-col p-2`,
+            children: [j, (0, J.jsx)(`div`, {
+                className: `relative flex flex-col justify-between rounded-lg`,
+                children: (0, J.jsxs)(`form`, {
+                    onSubmit: M,
+                    className: `relative flex flex-col px-2`,
+                    children: [N, te, re, oe]
+                })
+            })]
+        })
+    }), t[43] = M, t[44] = N, t[45] = te, t[46] = re, t[47] = oe, t[48] = se) : se = t[48];
+    let ce;
+    return t[49] !== c || t[50] !== se ? (ce = (0, J.jsxs)($e.Root, {
+        onOpenChange: l,
+        open: c,
+        children: [k, se]
+    }), t[49] = c, t[50] = se, t[51] = ce) : ce = t[51], ce
+}
+
+function ur(e) {
+    e.preventDefault()
+}
+
+function dr({
+    label: e,
+    checked: t,
+    onChange: n
+}) {
+    return (0, J.jsxs)(`label`, {
+        className: `flex items-center justify-between gap-2`,
+        children: [(0, J.jsx)(`span`, {
+            className: `flex-1`,
+            children: e
+        }), (0, J.jsxs)(`span`, {
+            className: `relative flex h-4 w-4 items-center justify-center`,
+            children: [(0, J.jsx)(`input`, {
+                type: `checkbox`,
+                name: `immersive-map-feedback-reason`,
+                className: `peer absolute inset-0 h-4 w-4 cursor-pointer opacity-0`,
+                checked: t,
+                onChange: n
+            }), (0, J.jsx)(`span`, {
+                className: `text-token-text-primary flex h-4 w-4 items-center justify-center rounded-[2px] border ${t?`border-token-text-primary bg-token-text-primary`:`border-token-border-heavy`}`,
+                children: t ? (0, J.jsx)(sn, {
+                    className: `text-token-text-inverted h-4 w-4`
+                }) : null
+            })]
+        })]
+    })
+}
+var fr, pr, J, mr, hr, gr = e((() => {
+        fr = Ue(), g(), at(), un(), W(), In(), Re(), pr = n(z()), He(), J = L(), mr = `text-token-text-tertiary hover:text-token-text-secondary h-6 min-h-6 border-none px-2 text-xs transition-colors duration-150`, hr = [{
+            reason: `helpful`,
+            labelMessage: Be({
+                id: `immersiveMapFeedback.reason.helpful`,
+                defaultMessage: `This map is helpful`
+            })
+        }, {
+            reason: `broken`,
+            labelMessage: Be({
+                id: `immersiveMapFeedback.reason.broken`,
+                defaultMessage: `This map is not working`
+            })
+        }, {
+            reason: `not_relevant_to_question`,
+            labelMessage: Be({
+                id: `immersiveMapFeedback.reason.irrelevantInformation`,
+                defaultMessage: `This map has irrelevant information`
+            })
+        }, {
+            reason: `too_slow`,
+            labelMessage: Be({
+                id: `immersiveMapFeedback.reason.tooSlow`,
+                defaultMessage: `The map and answers are too slow`
+            })
+        }]
+    })),
+    _r, vr, yr, br, xr, Sr, Cr, wr = e((() => {
+        _r = Ue(), ue(), g(), gn(), P(), pt(), Pt(), S(), F(), Nt(), ce(), He(), ut(), vr = L(), yr = .7, br = 1.25, xr = `514645398`, Sr = e => {
+            "use forget";
+            let t = (0, _r.c)(14),
+                {
+                    conversation: n
+                } = e,
+                r = We(),
+                {
+                    setTargetedContent: i
+                } = bt(),
+                a;
+            t[0] === n ? a = t[1] : (a = Mt(n), t[0] = n, t[1] = a);
+            let c = a,
+                l;
+            t[2] === r ? l = t[3] : (l = r.formatMessage({
+                id: `c2ldaj`,
+                defaultMessage: `Search Here`
+            }), t[2] = r, t[3] = l);
+            let u = l,
+                f;
+            t[4] !== n || t[5] !== c || t[6] !== u || t[7] !== i ? (f = async () => {
+                let e = c.mapMessageId$(),
+                    t = Cr(c.currentViewState$());
+                if (!t) return;
+                let r = rt(t, e);
+                if (r) {
+                    ye.logStructuredEvent(`ChatgptPlacesSearchNearbyButtonClicked`, {
+                        messageId: e ?? ``,
+                        conversationId: se(n)
+                    }), c.setHasRequestedNewData$(!0, {
+                        source: `search-nearby`
+                    }), c.setOverlayViewState$(t), i(void 0);
+                    try {
+                        await bn({
+                            callsiteId: `request_completion.formatted_text.contentReferences.maps.controls.search_nearby.1`,
+                            conversation: n,
+                            promptMessage: o(u, {
+                                map_search_parameters: r
+                            }),
+                            eventSource: `mouse`,
+                            extraStreamParams: {
+                                mapSearchParams: r,
+                                completionMetadata: {
+                                    systemHints: [d.Search],
+                                    searchSource: qe.MAP_SEARCH_THIS_AREA_BUTTON,
+                                    conversationMode: {
+                                        kind: s.PrimaryAssistant
+                                    }
+                                }
+                            }
+                        })
+                    } catch {
+                        c.setHasRequestedNewData$(!1)
+                    }
+                }
+            }, t[4] = n, t[5] = c, t[6] = u, t[7] = i, t[8] = f) : f = t[8];
+            let p = f,
+                m;
+            t[9] === p ? m = t[10] : (m = () => {
+                p()
+            }, t[9] = p, t[10] = m);
+            let h;
+            return t[11] !== u || t[12] !== m ? (h = (0, vr.jsx)(Se, {
+                type: `button`,
+                color: `secondary`,
+                className: `btn border-token-border-default text-token-text-primary mt-3 border bg-transparent bg-clip-padding px-4`,
+                contentWrapperClassName: `font-semibold`,
+                onClick: m,
+                children: u
+            }), t[11] = u, t[12] = m, t[13] = h) : h = t[13], h
+        }, Cr = e => {
+            if (e) return {
+                ...e,
+                zoom: Math.max(0, e.zoom - yr),
+                latSpan: e.latSpan == null ? e.latSpan : e.latSpan * br,
+                longSpan: e.longSpan == null ? e.longSpan : e.longSpan * br
+            }
+        }
+    }));
+
+function Tr(e) {
+    "use forget";
+    let t = (0, kr.c)(28),
+        {
+            conversation: n,
+            messageId: r,
+            engagementLoggingContext: i,
+            businesses: a,
+            additionalBusinesses: o,
+            onClick: s,
+            onHover: l,
+            trackContentReferenceEvent: u,
+            setShowAdditionalBusinesses: d,
+            showAdditionalBusinesses: f,
+            isLoading: m,
+            renderAsCarousel: h,
+            enableMapCarouselPresentation: g,
+            approvedImageUrls: v,
+            showNotes: y,
+            carouselNotesClassName: b
+        } = e,
+        x = h !== void 0 && h,
+        S = g !== void 0 && g,
+        C = y === void 0 || y,
+        w = We(),
+        T = _(),
+        E = (0, Ar.useRef)(null),
+        D;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (D = {
+        didDrag: !1,
+        pointerId: null,
+        startScrollLeft: 0,
+        startX: 0
+    }, t[0] = D) : D = t[0];
+    let O = (0, Ar.useRef)(D),
+        k;
+    t[1] === n ? k = t[2] : (k = () => zt(n)?.type === `entity`, t[1] = n, t[2] = k);
+    let j = A(k),
+        M;
+    t[3] !== o || t[4] !== a || t[5] !== f ? (M = f ? [...a, ...o] : a, t[3] = o, t[4] = a, t[5] = f, t[6] = M) : M = t[6];
+    let N = M,
+        ee, te;
+    t[7] === N ? (ee = t[8], te = t[9]) : (ee = () => {
+        for (let e of N) Pn(e.entity_data, Ke(e))
+    }, te = [N], t[7] = N, t[8] = ee, t[9] = te), (0, Ar.useEffect)(ee, te);
+    let ne = a.length > 0 ? 2 : 4,
+        re = a.length + (f ? o.length : 0),
+        ie;
+    t[10] !== w || t[11] !== m || t[12] !== re ? (ie = Mr({
+        intl: w,
+        visibleNumberOfBusinesses: re,
+        isLoading: m
+    }), t[10] = w, t[11] = m, t[12] = re, t[13] = ie) : ie = t[13];
+    let ae = ie,
+        ce = !m && a.length === 0 && o.length === 0,
+        le;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (le = c(xr), t[14] = le) : le = t[14];
+    let P = le,
+        ue = !x,
+        F;
+    t[15] !== n || t[16] !== r || t[17] !== ue ? (F = ue ? (0, Y.jsx)(lr, {
+        messageId: r,
+        clientThreadId: n.id
+    }) : null, t[15] = n, t[16] = r, t[17] = ue, t[18] = F) : F = t[18];
+    let pe = F,
+        me;
+    t[19] === x ? me = t[20] : (me = () => {
+        x && E.current?.scrollTo({
+            left: 0
+        })
+    }, t[19] = x, t[20] = me);
+    let he;
+    t[21] !== a.length || t[22] !== x ? (he = [a.length, x], t[21] = a.length, t[22] = x, t[23] = he) : he = t[23], (0, Ar.useEffect)(me, he);
+    let ge = () => {
+            j() || l(null)
+        },
+        _e;
+    t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (_e = e => {
+        e.pointerType !== `mouse` || e.button !== 0 || (O.current = {
+            didDrag: !1,
+            pointerId: e.pointerId,
+            startScrollLeft: e.currentTarget.scrollLeft,
+            startX: e.clientX
+        })
+    }, t[24] = _e) : _e = t[24];
+    let ve = _e,
+        be;
+    t[25] === Symbol.for(`react.memo_cache_sentinel`) ? (be = e => {
+        let t = O.current;
+        if (t.pointerId !== e.pointerId) return;
+        let n = e.clientX - t.startX;
+        if (!t.didDrag) {
+            if (Math.abs(n) < jr) return;
+            t.didDrag = !0, e.currentTarget.setPointerCapture(e.pointerId)
+        }
+        e.preventDefault(), e.currentTarget.scrollLeft = t.startScrollLeft - n
+    }, t[25] = be) : be = t[25];
+    let xe = be,
+        Se;
+    t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (Se = e => {
+        let {
+            currentTarget: t,
+            pointerId: n
+        } = e, r = O.current;
+        r.pointerId === n && (t.hasPointerCapture(n) && t.releasePointerCapture(n), r.pointerId = null, r.didDrag && requestAnimationFrame(() => {
+            t.scrollTo({
+                left: t.scrollLeft
+            })
+        }))
+    }, t[26] = Se) : Se = t[26];
+    let Ce = Se,
+        we;
+    t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (we = e => {
+        let t = O.current;
+        t.didDrag &&= (e.preventDefault(), e.stopPropagation(), !1)
+    }, t[27] = we) : we = t[27];
+    let Te = we,
+        Ee = (e, t, r) => {
+            j() || (r && ye.logStructuredEvent(r === `carousel_item` ? `ChatgptPlacesBusinessCarouselItemHovered` : `ChatgptPlacesBusinessListItemHovered`, {
+                entityId: e.entity_data.id,
+                entityName: e.entity_data.name,
+                entityIndex: fe(t),
+                conversationId: se(n)
+            }), l(e.entity_data.id))
+        },
+        De = (e, t, a) => (0, Y.jsx)(oe.div, {
+            role: `listitem`,
+            initial: !T && {
+                opacity: 0
+            },
+            animate: {
+                opacity: 1
+            },
+            exit: {
+                opacity: 0
+            },
+            transition: T ? {
+                duration: 0
+            } : {
+                ease: `easeInOut`
+            },
+            onClick: () => {
+                i && Ln({
+                    source: `list`,
+                    clientThreadId: n.id,
+                    conversationId: se(n),
+                    messageId: r,
+                    assistantMessageId: i.assistantMessageId ?? r,
+                    turnIndex: i.turnIndex,
+                    contentReferenceStartIndex: i.contentReferenceStartIndex,
+                    surfaceLocation: i.surfaceLocation,
+                    entityId: e.entity_data.id,
+                    entityCategory: Ke(e),
+                    contentReferenceType: i.contentReferenceType,
+                    isGenui: i.isGenui
+                }), ye.logStructuredEvent(a?.renderContext === `carousel_item` ? `ChatgptPlacesBusinessCarouselItemClicked` : `ChatgptPlacesBusinessListItemClicked`, {
+                    entityId: e.entity_data.id,
+                    entityName: e.entity_data.name,
+                    entityIndex: fe(t),
+                    conversationId: se(n)
+                }), s(e)
+            },
+            className: p(`h-full w-full cursor-pointer`, a?.floating && `bg-token-bg-primary/90 border-token-border-light/60 border bg-clip-padding backdrop-blur`, a?.wrapperClassName),
+            children: (0, Y.jsx)(_n, {
+                clientThreadId: n.id,
+                messageId: r,
+                isModelPreferred: e.isModelPreferred,
+                idx: t,
+                business: e.entity_data,
+                description: e.mapPointLabel,
+                mapCarouselCard: x && S ? e.mapCarouselCard : void 0,
+                approvedImageUrls: v,
+                preserveRatingWithDescription: x && S,
+                notes: C ? e.notes : void 0,
+                trackContentReferenceEvent: u,
+                enableSidebarNavigation: !1,
+                imageClassName: a?.imageClassName,
+                notesClassName: x ? b : void 0,
+                onHoverEnter: a?.enableHover ? () => Ee(e, t, a.renderContext) : void 0,
+                onHoverLeave: a?.enableHover ? ge : void 0,
+                wrapperClassName: a?.businessCardClassName,
+                showShareEntityButton: !1
+            })
+        }, Jt(e));
+    return x ? (0, Y.jsxs)(`div`, {
+        ref: E,
+        role: `list`,
+        className: `no-scrollbar flex cursor-grab snap-x snap-mandatory gap-3 overflow-x-auto px-3 pb-3 select-none active:cursor-grabbing sm:scroll-ps-3 not-motion-reduce:sm:scroll-smooth sm:active:snap-none sm:active:scroll-auto`,
+        onDragStart: Or,
+        onClickCapture: Te,
+        onPointerDown: ve,
+        onPointerMove: xe,
+        onPointerUp: Ce,
+        onPointerCancel: Ce,
+        children: [N.map((e, t) => (0, Y.jsx)(`div`, {
+            className: p(`flex shrink-0 snap-center`, `flex shrink-0 snap-center sm:snap-start`, `w-[82vw] max-w-[330px]`),
+            children: De(e, t, {
+                floating: !0,
+                businessCardClassName: `p-3`,
+                wrapperClassName: `overflow-hidden rounded-[28px]`,
+                enableHover: !0,
+                renderContext: `carousel_item`,
+                imageClassName: `h-16 w-16 rounded-[16px]!`
+            })
+        }, Jt(e))), m && Array.from({
+            length: ne
+        }).map(Dr)]
+    }) : (0, Y.jsx)(Y.Fragment, {
+        children: ce ? (0, Y.jsxs)(`div`, {
+            className: `flex h-full w-full flex-col`,
+            children: [pe ? (0, Y.jsx)(`div`, {
+                className: `flex items-center justify-end px-4 pt-3 pb-2`,
+                children: pe
+            }) : null, (0, Y.jsxs)(`div`, {
+                className: `flex flex-1 flex-col items-center justify-center`,
+                children: [(0, Y.jsx)(`div`, {
+                    className: `text-token-text-secondary text-sm font-medium`,
+                    children: (0, Y.jsx)(R, {
+                        id: `ccRlgZ`,
+                        defaultMessage: `Nothing found in this area`
+                    })
+                }), P && (0, Y.jsx)(Sr, {
+                    conversation: n
+                })]
+            })]
+        }) : (0, Y.jsxs)(`div`, {
+            className: `flex h-full flex-col`,
+            children: [a.length > 0 ? (0, Y.jsx)(Nr, {
+                title: ae,
+                isLoading: m && a.length === 0,
+                className: `pt-3 pb-2`,
+                endContent: pe
+            }) : (0, Y.jsx)(Nr, {
+                title: w.formatMessage({
+                    id: `iy+NUJ`,
+                    defaultMessage: `Places`
+                }),
+                className: `pt-3 pb-2 opacity-50`,
+                endContent: pe
+            }), (0, Y.jsx)(`div`, {
+                className: `relative flex-1 overflow-hidden`,
+                children: (0, Y.jsxs)(`div`, {
+                    className: `h-full overflow-y-auto`,
+                    children: [(0, Y.jsxs)(`div`, {
+                        role: `list`,
+                        className: `divide-y`,
+                        children: [a.map((e, t) => De(e, t, {
+                            floating: !1,
+                            businessCardClassName: `p-4`,
+                            imageClassName: `h-16 w-16`,
+                            enableHover: !0,
+                            renderContext: `list_item`
+                        })), m && Array.from({
+                            length: ne
+                        }).map(Er)]
+                    }), f && o.length > 0 && (0, Y.jsx)(Nr, {
+                        title: w.formatMessage({
+                            id: `71Us8A`,
+                            defaultMessage: `More ideas`
+                        })
+                    }), f && (0, Y.jsx)(`div`, {
+                        role: `list`,
+                        className: `divide-y pb-4`,
+                        children: (0, Y.jsx)(de, {
+                            initial: !1,
+                            children: o.map((e, t) => De(e, t, {
+                                floating: !1,
+                                businessCardClassName: `p-4`,
+                                imageClassName: `h-16 w-16`,
+                                enableHover: !0,
+                                renderContext: `list_item`
+                            }))
+                        })
+                    }), !m && o.length > 0 && (0, Y.jsx)(`div`, {
+                        className: `mx-5 pb-8`,
+                        children: (0, Y.jsx)(Pr, {
+                            isLoading: m,
+                            conversation: n,
+                            setShowAdditionalBusinesses: d,
+                            isShowingAdditionalBusinesses: f
+                        })
+                    })]
+                })
+            })]
+        })
+    })
+}
+
+function Er(e, t) {
+    return (0, Y.jsx)(hn, {
+        imageClassName: `h-16 w-16`,
+        className: `p-4`
+    }, `ghost-card-${t}`)
+}
+
+function Dr(e, t) {
+    return (0, Y.jsx)(`div`, {
+        className: `bg-token-bg-primary w-[82vw] max-w-[330px] shrink-0 snap-center rounded-xl sm:snap-start`,
+        children: (0, Y.jsx)(hn, {
+            imageClassName: `h-16 w-16`
+        })
+    }, `ghost-card-${t}`)
+}
+
+function Or(e) {
+    return e.preventDefault()
+}
+var kr, Ar, Y, jr, Mr, Nr, Pr, Fr = e((() => {
+    kr = Ue(), g(), P(), Nn(), gr(), B(), le(), F(), y(), i(), v(), a(), Ar = n(z()), He(), mn(), wr(), Rn(), _t(), ut(), Y = L(), jr = 4, Mr = ({
+        intl: e,
+        visibleNumberOfBusinesses: t,
+        isLoading: n
+    }) => t === 1 ? e.formatMessage({
+        id: `jp8v8C`,
+        defaultMessage: `1 Place`
+    }) : t > 0 ? e.formatMessage({
+        id: `WVfesQ`,
+        defaultMessage: `{numResults} Places`
+    }, {
+        numResults: t
+    }) : n ? e.formatMessage({
+        id: `5wLbfd`,
+        defaultMessage: `Thinking`
+    }) : e.formatMessage({
+        id: `YP/AFK`,
+        defaultMessage: `No results found`
+    }), Nr = e => {
+        "use forget";
+        let t = (0, kr.c)(9),
+            {
+                title: n,
+                isLoading: r,
+                className: i,
+                endContent: a
+            } = e,
+            o = r && `opacity-80!`,
+            s;
+        t[0] !== i || t[1] !== o ? (s = p(`flex items-center justify-between gap-3 px-4`, o, i), t[0] = i, t[1] = o, t[2] = s) : s = t[2];
+        let c;
+        t[3] === n ? c = t[4] : (c = (0, Y.jsx)(`div`, {
+            className: `text-text-primary font-medium`,
+            children: n
+        }), t[3] = n, t[4] = c);
+        let l;
+        return t[5] !== a || t[6] !== s || t[7] !== c ? (l = (0, Y.jsxs)(`div`, {
+            className: s,
+            children: [c, a]
+        }), t[5] = a, t[6] = s, t[7] = c, t[8] = l) : l = t[8], l
+    }, Pr = e => {
+        "use forget";
+        let t = (0, kr.c)(14),
+            {
+                isLoading: n,
+                conversation: r,
+                setShowAdditionalBusinesses: i,
+                isShowingAdditionalBusinesses: a
+            } = e,
+            o = We(),
+            s;
+        t[0] !== o || t[1] !== a ? (s = a ? o.formatMessage({
+            id: `62U9XT`,
+            defaultMessage: `Show fewer places`
+        }) : o.formatMessage({
+            id: `Fev2Lu`,
+            defaultMessage: `Show more places`
+        }), t[0] = o, t[1] = a, t[2] = s) : s = t[2];
+        let c = s,
+            l = n && `opacity-80!`,
+            u;
+        t[3] === l ? u = t[4] : (u = p(`bg-token-action-secondary text-token-text-primary btn-custom border-token-border-default mt-2 justify-center border bg-clip-padding`, l), t[3] = l, t[4] = u);
+        let d;
+        t[5] !== r || t[6] !== a || t[7] !== i ? (d = () => {
+            let e = !a;
+            ye.logStructuredEvent(e ? `ChatgptPlacesShowMoreButtonClicked` : `ChatgptPlacesShowLessButtonClicked`, {
+                conversationId: se(r)
+            }), i(e)
+        }, t[5] = r, t[6] = a, t[7] = i, t[8] = d) : d = t[8];
+        let f;
+        return t[9] !== n || t[10] !== c || t[11] !== u || t[12] !== d ? (f = (0, Y.jsx)(Se, {
+            type: `button`,
+            color: `custom`,
+            size: `medium`,
+            disabled: n,
+            fullWidth: !0,
+            className: u,
+            contentWrapperClassName: `font-semibold `,
+            onClick: d,
+            children: c
+        }), t[9] = n, t[10] = c, t[11] = u, t[12] = d, t[13] = f) : f = t[13], f
+    }
+}));
+
+function Ir(e) {
+    return !1
+}
+
+function Lr(e, t) {
+    return e ? !0 : t.some(e => e.entity_data.is_open != null && e.entity_data.is_open !== void 0)
+}
+var Rr = e((() => {}));
+
+function zr(e) {
+    "use forget";
+    let t = (0, Kr.c)(38),
+        {
+            icon: n,
+            isLoading: r,
+            inactiveLabel: i,
+            activeLabel: a,
+            isActive: o,
+            open: s,
+            onOpenChange: c,
+            showIconWhenActive: l,
+            showIconWhenInactive: u,
+            showCheckmarkWhenActive: d,
+            iconAfterLabel: f,
+            contentClassName: m,
+            iconClassName: h,
+            children: g
+        } = e,
+        _ = l === void 0 || l,
+        v = u === void 0 || u,
+        y = d === void 0 || d,
+        b = o ? _ : v,
+        x = o && `bg-token-bg-tertiary`,
+        S = r && `opacity-80!`,
+        w;
+    t[0] !== x || t[1] !== S ? (w = p(`btn btn-secondary btn-small border-token-border-default text-token-text-primary relative flex h-[36px] items-center justify-center border bg-clip-padding px-4`, x, S), t[0] = x, t[1] = S, t[2] = w) : w = t[2];
+    let T;
+    t[3] !== o || t[4] !== y ? (T = o && y && (0, X.jsx)(C.CheckSm, {
+        className: `icon-sm`
+    }), t[3] = o, t[4] = y, t[5] = T) : T = t[5];
+    let E;
+    t[6] !== n || t[7] !== f || t[8] !== h || t[9] !== b ? (E = b && !f && (0, X.jsx)(n, {
+        className: p(`icon-sm`, h)
+    }), t[6] = n, t[7] = f, t[8] = h, t[9] = b, t[10] = E) : E = t[10];
+    let D = o ? a ?? i : i,
+        O;
+    t[11] === D ? O = t[12] : (O = (0, X.jsx)(`span`, {
+        className: `truncate text-xs`,
+        children: D
+    }), t[11] = D, t[12] = O);
+    let k;
+    t[13] !== n || t[14] !== f || t[15] !== h || t[16] !== b ? (k = b && f && (0, X.jsx)(n, {
+        className: p(`icon-sm`, h)
+    }), t[13] = n, t[14] = f, t[15] = h, t[16] = b, t[17] = k) : k = t[17];
+    let A;
+    t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (A = (0, X.jsx)(C.ChevronDownSm, {
+        className: `icon-sm opacity-80`
+    }), t[18] = A) : A = t[18];
+    let j;
+    t[19] !== O || t[20] !== k || t[21] !== T || t[22] !== E ? (j = (0, X.jsxs)(`span`, {
+        className: `flex max-w-[200px] min-w-0 items-center justify-center gap-1 font-semibold`,
+        children: [T, E, O, k, A]
+    }), t[19] = O, t[20] = k, t[21] = T, t[22] = E, t[23] = j) : j = t[23];
+    let M;
+    t[24] !== r || t[25] !== j || t[26] !== w ? (M = (0, X.jsx)($e.BasicTrigger, {
+        asChild: !0,
+        children: (0, X.jsx)(`button`, {
+            className: w,
+            disabled: r,
+            children: j
+        })
+    }), t[24] = r, t[25] = j, t[26] = w, t[27] = M) : M = t[27];
+    let N;
+    t[28] === m ? N = t[29] : (N = p(`py-1`, m), t[28] = m, t[29] = N);
+    let ee;
+    t[30] !== g || t[31] !== N ? (ee = (0, X.jsx)($e.Portal, {
+        children: (0, X.jsx)($e.Content, {
+            align: `start`,
+            side: `bottom`,
+            className: N,
+            children: g
+        })
+    }), t[30] = g, t[31] = N, t[32] = ee) : ee = t[32];
+    let te;
+    return t[33] !== c || t[34] !== s || t[35] !== M || t[36] !== ee ? (te = (0, X.jsxs)($e.Root, {
+        open: s,
+        onOpenChange: c,
+        children: [M, ee]
+    }), t[33] = c, t[34] = s, t[35] = M, t[36] = ee, t[37] = te) : te = t[37], te
+}
+
+function Br(e) {
+    "use forget";
+    let t = (0, Kr.c)(10),
+        {
+            rating: n
+        } = e,
+        r = Math.floor(n),
+        i = Math.abs(n - r - .5) < .001,
+        a = 5 - r - !!i,
+        o;
+    t[0] === r ? o = t[1] : (o = Array.from({
+        length: r
+    }).map(Hr), t[0] = r, t[1] = o);
+    let s;
+    t[2] === i ? s = t[3] : (s = i && (0, X.jsxs)(`span`, {
+        className: `relative h-4 w-4`,
+        children: [(0, X.jsx)(ze.Star, {
+            className: `text-token-text-tertiary h-4 w-4`
+        }), (0, X.jsx)(`span`, {
+            className: `absolute inset-0 overflow-hidden`,
+            style: {
+                width: `50%`
+            },
+            children: (0, X.jsx)(rn, {
+                className: `h-4 w-4 text-yellow-400`
+            })
+        })]
+    }), t[2] = i, t[3] = s);
+    let c;
+    t[4] === a ? c = t[5] : (c = Array.from({
+        length: a
+    }).map(Vr), t[4] = a, t[5] = c);
+    let l;
+    return t[6] !== o || t[7] !== s || t[8] !== c ? (l = (0, X.jsxs)(`div`, {
+        className: `flex items-center gap-0.5`,
+        "aria-hidden": `true`,
+        children: [o, s, c]
+    }), t[6] = o, t[7] = s, t[8] = c, t[9] = l) : l = t[9], l
+}
+
+function Vr(e, t) {
+    return (0, X.jsx)(ze.Star, {
+        className: `text-token-text-tertiary h-4 w-4`
+    }, `empty-${t}`)
+}
+
+function Hr(e, t) {
+    return (0, X.jsx)(rn, {
+        className: `h-4 w-4 text-yellow-400`
+    }, `full-${t}`)
+}
+
+function Ur(e) {
+    "use forget";
+    let t = (0, Kr.c)(51),
+        {
+            enabled: n,
+            isLoading: r,
+            open: i,
+            onOpenChange: a,
+            onSelect: o,
+            selectedRating: s
+        } = e,
+        c = We();
+    if (!n) return null;
+    let l, u, d, f, p, m, h, g, _, v, y, b, x, S, C, w;
+    if (t[0] !== c || t[1] !== r || t[2] !== a || t[3] !== o || t[4] !== i || t[5] !== s) {
+        let e = [{
+                value: `2`,
+                threshold: 2
+            }, {
+                value: `2.5`,
+                threshold: 2.5
+            }, {
+                value: `3`,
+                threshold: 3
+            }, {
+                value: `3.5`,
+                threshold: 3.5
+            }, {
+                value: `4`,
+                threshold: 4
+            }, {
+                value: `4.5`,
+                threshold: 4.5
+            }],
+            n;
+        t[22] === c ? n = t[23] : (n = e => c.formatMessage(Jr.ratingThreshold, {
+            rating: c.formatNumber(e, {
+                minimumFractionDigits: 1,
+                maximumFractionDigits: 1
+            })
+        }), t[22] = c, t[23] = n);
+        let T = n,
+            E;
+        bb0: {
+            if (s == null) {
+                E = void 0;
+                break bb0
+            }
+            let t = e.find(e => e.threshold === s);E = t ? T(t.threshold) : void 0
+        }
+        let D = E,
+            O;
+        t[24] === s ? O = t[25] : (O = s == null ? `anyRating` : s.toString(), t[24] = s, t[25] = O);
+        let k = O;
+        u = zr, b = rn, t[26] === c ? x = t[27] : (x = c.formatMessage(Jr.ratingLabel), t[26] = c, t[27] = x), S = D, C = r, w = s != null, f = !0, p = `text-yellow-400`, m = i, h = a, g = !0, l = $e.RadioGroup, d = k, _ = t => {
+            if (t === `anyRating`) {
+                o(null);
+                return
+            }
+            let n = e.find(e => e.value === t);
+            n && o(n.threshold)
+        };
+        let A;
+        t[28] === c ? A = t[29] : (A = c.formatMessage(Jr.anyRating), t[28] = c, t[29] = A), t[30] === A ? v = t[31] : (v = (0, X.jsx)($e.RadioItem, {
+            value: `anyRating`,
+            children: A
+        }), t[30] = A, t[31] = v), y = e.map(e => {
+            let {
+                value: t,
+                threshold: n
+            } = e;
+            return (0, X.jsx)($e.RadioItem, {
+                value: t,
+                children: (0, X.jsxs)(`div`, {
+                    className: `flex items-center gap-2`,
+                    children: [(0, X.jsx)(`span`, {
+                        className: `w-full tabular-nums`,
+                        children: T(n)
+                    }), (0, X.jsx)(Br, {
+                        rating: n
+                    })]
+                })
+            }, t)
+        }), t[0] = c, t[1] = r, t[2] = a, t[3] = o, t[4] = i, t[5] = s, t[6] = l, t[7] = u, t[8] = d, t[9] = f, t[10] = p, t[11] = m, t[12] = h, t[13] = g, t[14] = _, t[15] = v, t[16] = y, t[17] = b, t[18] = x, t[19] = S, t[20] = C, t[21] = w
+    } else l = t[6], u = t[7], d = t[8], f = t[9], p = t[10], m = t[11], h = t[12], g = t[13], _ = t[14], v = t[15], y = t[16], b = t[17], x = t[18], S = t[19], C = t[20], w = t[21];
+    let T;
+    t[32] !== l || t[33] !== d || t[34] !== _ || t[35] !== v || t[36] !== y ? (T = (0, X.jsxs)(l, {
+        value: d,
+        onValueChange: _,
+        children: [v, y]
+    }), t[32] = l, t[33] = d, t[34] = _, t[35] = v, t[36] = y, t[37] = T) : T = t[37];
+    let E;
+    return t[38] !== u || t[39] !== f || t[40] !== p || t[41] !== m || t[42] !== h || t[43] !== g || t[44] !== T || t[45] !== b || t[46] !== x || t[47] !== S || t[48] !== C || t[49] !== w ? (E = (0, X.jsx)(u, {
+        icon: b,
+        inactiveLabel: x,
+        activeLabel: S,
+        isLoading: C,
+        isActive: w,
+        iconAfterLabel: f,
+        iconClassName: p,
+        open: m,
+        onOpenChange: h,
+        showCheckmarkWhenActive: g,
+        children: T
+    }), t[38] = u, t[39] = f, t[40] = p, t[41] = m, t[42] = h, t[43] = g, t[44] = T, t[45] = b, t[46] = x, t[47] = S, t[48] = C, t[49] = w, t[50] = E) : E = t[50], E
+}
+
+function Wr(e) {
+    "use forget";
+    let t = (0, Kr.c)(20),
+        {
+            enabled: n,
+            isLoading: r,
+            onSelect: i,
+            openNowOnly: a
+        } = e,
+        o = We();
+    if (!n) return null;
+    let s = a && `btn-primary`,
+        c = r && `opacity-100!`,
+        l;
+    t[0] !== s || t[1] !== c ? (l = p(`btn border-token-border-default disabled:text-token-text-tertiary relative flex h-[36px] items-center justify-center border bg-clip-padding px-4 drop-shadow-sm`, s, c), t[0] = s, t[1] = c, t[2] = l) : l = t[2];
+    let u;
+    t[3] !== i || t[4] !== a ? (u = () => i(!a), t[3] = i, t[4] = a, t[5] = u) : u = t[5];
+    let d;
+    t[6] === o ? d = t[7] : (d = o.formatMessage(Jr.openNow), t[6] = o, t[7] = d);
+    let f;
+    t[8] === d ? f = t[9] : (f = (0, X.jsx)(`span`, {
+        className: `truncate text-xs`,
+        children: d
+    }), t[8] = d, t[9] = f);
+    let m;
+    t[10] === a ? m = t[11] : (m = a && (0, X.jsx)(C.Cross, {
+        className: `icon-sm`
+    }), t[10] = a, t[11] = m);
+    let h;
+    t[12] !== f || t[13] !== m ? (h = (0, X.jsxs)(`span`, {
+        className: `flex max-w-[200px] min-w-0 items-center justify-center gap-1 font-semibold`,
+        children: [f, m]
+    }), t[12] = f, t[13] = m, t[14] = h) : h = t[14];
+    let g;
+    return t[15] !== r || t[16] !== l || t[17] !== u || t[18] !== h ? (g = (0, X.jsx)(Se, {
+        type: `button`,
+        color: `secondary`,
+        size: `small`,
+        disabled: r,
+        className: l,
+        contentWrapperClassName: `font-semibold flex items-center gap-1`,
+        onClick: u,
+        children: h
+    }), t[15] = r, t[16] = l, t[17] = u, t[18] = h, t[19] = g) : g = t[19], g
+}
+
+function Gr(e) {
+    "use forget";
+    let t = (0, Kr.c)(33),
+        {
+            clientThreadId: n
+        } = e,
+        [i, a] = (0, qr.useState)(null),
+        o;
+    t[0] === n ? o = t[1] : (o = null, n && (o = Mt(ke(n))), t[0] = n, t[1] = o);
+    let s;
+    t[2] === o ? s = t[3] : (s = () => o?.filters$(), t[2] = o, t[3] = s);
+    let c = r(s),
+        l;
+    t[4] === o ? l = t[5] : (l = () => o?.businesses$() ?? [], t[4] = o, t[5] = l);
+    let u = r(l),
+        d;
+    t[6] === o ? d = t[7] : (d = () => o?.hasRequestedNewData$() ?? !1, t[6] = o, t[7] = d);
+    let f = r(d),
+        p;
+    t[8] === u ? p = t[9] : (p = Ir(u), t[8] = u, t[9] = p);
+    let m = p,
+        h;
+    t[10] !== u || t[11] !== f ? (h = Lr(f, u), t[10] = u, t[11] = f, t[12] = h) : h = t[12];
+    let g = h,
+        _ = c ?? Wt;
+    if (!m && !g || !o) return null;
+    let v;
+    t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (v = e => {
+        a(e ? `rating` : null)
+    }, t[13] = v) : v = t[13];
+    let y = v,
+        b = i === `rating`,
+        x;
+    t[14] === o ? x = t[15] : (x = e => o.setFilters$({
+        minRating: e
+    }), t[14] = o, t[15] = x);
+    let S;
+    t[16] !== m || t[17] !== _.minRating || t[18] !== f || t[19] !== b || t[20] !== x ? (S = (0, X.jsx)(Ur, {
+        enabled: m,
+        open: b,
+        onOpenChange: y,
+        onSelect: x,
+        selectedRating: _.minRating,
+        isLoading: f
+    }), t[16] = m, t[17] = _.minRating, t[18] = f, t[19] = b, t[20] = x, t[21] = S) : S = t[21];
+    let C;
+    t[22] !== n || t[23] !== o ? (C = e => {
+        a(null), o.setFilters$({
+            openNowOnly: e
+        }), ye.logStructuredEvent(`ChatgptPlacesFilterButtonClicked`, {
+            conversationId: n,
+            filterName: `open_now`,
+            filterValueBool: e
+        })
+    }, t[22] = n, t[23] = o, t[24] = C) : C = t[24];
+    let w;
+    t[25] !== g || t[26] !== _.openNowOnly || t[27] !== f || t[28] !== C ? (w = (0, X.jsx)(Wr, {
+        enabled: g,
+        isLoading: f,
+        onSelect: C,
+        openNowOnly: _.openNowOnly
+    }), t[25] = g, t[26] = _.openNowOnly, t[27] = f, t[28] = C, t[29] = w) : w = t[29];
+    let T;
+    return t[30] !== w || t[31] !== S ? (T = (0, X.jsxs)(`div`, {
+        className: `flex flex-wrap items-center gap-2`,
+        children: [S, w]
+    }), t[30] = w, t[31] = S, t[32] = T) : T = t[32], T
+}
+var Kr, qr, X, Jr, Yr = e((() => {
+    Kr = Ue(), l(), w(), g(), P(), at(), ln(), Rr(), pt(), le(), F(), v(), qr = n(z()), He(), X = L(), Jr = Ve({
+        ratingLabel: {
+            id: `yIYAl7`,
+            defaultMessage: `Rating`
+        },
+        anyRating: {
+            id: `F8R0Bx`,
+            defaultMessage: `Any rating`
+        },
+        ratingThreshold: {
+            id: `stD1ac`,
+            defaultMessage: `{rating}+`
+        },
+        openNow: {
+            id: `pipXrq`,
+            defaultMessage: `Open Now`
+        }
+    })
+}));
+
+function Xr(e, t, n) {
+    let r = e.createShader(t);
+    if (!r) throw Error(`createShader failed`);
+    if (e.shaderSource(r, n), e.compileShader(r), !e.getShaderParameter(r, e.COMPILE_STATUS)) {
+        let t = e.getShaderInfoLog(r) || `shader compile failed`;
+        throw e.deleteShader(r), Error(t)
+    }
+    return r
+}
+
+function Zr(e, t, n) {
+    let r = e.createProgram();
+    if (!r) throw Error(`createProgram failed`);
+    let i = Xr(e, e.VERTEX_SHADER, t),
+        a = Xr(e, e.FRAGMENT_SHADER, n);
+    if (e.attachShader(r, i), e.attachShader(r, a), e.linkProgram(r), e.deleteShader(i), e.deleteShader(a), !e.getProgramParameter(r, e.LINK_STATUS)) {
+        let t = e.getProgramInfoLog(r) || `program link failed`;
+        throw e.deleteProgram(r), Error(t)
+    }
+    return r
+}
+
+function Qr({
+    className: e,
+    zIndex: t = 4,
+    themeColor: n = [.15, .55, 1, .55],
+    overlayStrength: r = 1.5,
+    centerDim: i = .2,
+    cornerOverlay: a = 1.75,
+    cornerDotBoost: o = 1.55,
+    dotBrightness: s = 1.2,
+    colorIntensity: c = 1.5,
+    dotVisibility: l = 1,
+    respectReducedMotion: u = !0,
+    maxFps: d = 30,
+    maxDevicePixelRatio: f = 1.25
+}) {
+    let m = (0, $r.useRef)(null),
+        h = (0, $r.useRef)(null),
+        g = (0, $r.useMemo)(() => ({
+            color: n,
+            overlayStrength: r,
+            centerDim: i,
+            cornerOverlay: a,
+            cornerDotBoost: o,
+            dotBrightness: s,
+            colorIntensity: c,
+            dotVisibility: l
+        }), [n, r, i, a, o, s, c, l]);
+    return (0, $r.useEffect)(() => {
+        if (typeof window > `u` || u && window.matchMedia?.(`(prefers-reduced-motion: reduce)`)?.matches) return;
+        let e = m.current,
+            t = h.current;
+        if (!e || !t) return;
+        let n = t.getContext(`webgl2`, {
+            alpha: !0,
+            premultipliedAlpha: !0,
+            antialias: !1,
+            depth: !1,
+            powerPreference: `low-power`,
+            preserveDrawingBuffer: !1
+        });
+        if (!n) return;
+        let r = null;
+        try {
+            r = Zr(n, ti, ni)
+        } catch (e) {
+            console.warn(`AnimatedParticleOverlay: shader init failed`, e);
+            return
+        }
+        n.useProgram(r), n.disable(n.DEPTH_TEST), n.enable(n.BLEND), n.blendFunc(n.ONE, n.ONE_MINUS_SRC_ALPHA);
+        let i = n.getUniformLocation(r, `uResolution`),
+            a = n.getUniformLocation(r, `uCircleColor`),
+            o = n.getUniformLocation(r, `uRenderScale`),
+            s = n.getUniformLocation(r, `uTime`),
+            c = n.getUniformLocation(r, `uPatternTime`),
+            l = n.getUniformLocation(r, `uDotTime`),
+            p = n.getUniformLocation(r, `uOverlayStrength`),
+            _ = n.getUniformLocation(r, `uColorIntensity`),
+            v = n.getUniformLocation(r, `uUniformTintAmount`),
+            y = n.getUniformLocation(r, `uDotVisibility`),
+            b = n.getUniformLocation(r, `uGreyTintAmount`),
+            x = n.getUniformLocation(r, `uMaskProgress`),
+            S = n.getUniformLocation(r, `uCenterDim`),
+            C = n.getUniformLocation(r, `uCornerOverlay`),
+            w = n.getUniformLocation(r, `uCornerDotBoost`),
+            T = n.getUniformLocation(r, `uDotBrightness`),
+            [E, D, O, k] = g.color;
+        n.uniform4f(a, E, D, O, k), n.uniform1f(p, g.overlayStrength), n.uniform1f(_, g.colorIntensity), n.uniform1f(v, 0), n.uniform1f(y, g.dotVisibility), n.uniform1f(b, 0), n.uniform1f(x, 0), n.uniform1f(S, g.centerDim), n.uniform1f(C, g.cornerOverlay), n.uniform1f(w, g.cornerDotBoost), n.uniform1f(T, g.dotBrightness);
+        let A = 1,
+            j = 0,
+            M = 0,
+            N = d > 0 ? 1e3 / d : 0,
+            ee = () => {
+                let r = e.getBoundingClientRect();
+                A = Math.min(f, Math.max(1, window.devicePixelRatio || 1));
+                let a = Math.max(1, Math.floor(r.width * A)),
+                    s = Math.max(1, Math.floor(r.height * A));
+                (t.width !== a || t.height !== s) && (t.width = a, t.height = s, n.viewport(0, 0, a, s)), n.uniform2f(i, a, s), n.uniform1f(o, A / Math.max(1, window.devicePixelRatio || 1))
+            },
+            te = !1,
+            ne = () => {
+                te || (te = !0, requestAnimationFrame(() => {
+                    te = !1, ee()
+                }))
+            },
+            re = new ResizeObserver(ne);
+        re.observe(e);
+        let ie = window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`);
+        ie.addEventListener?.(`change`, ne), ee();
+        let ae = performance.now(),
+            oe = e => {
+                if (typeof document < `u` && document.hidden) {
+                    j = requestAnimationFrame(oe);
+                    return
+                }
+                if (N > 0 && e - M < N) {
+                    j = requestAnimationFrame(oe);
+                    return
+                }
+                M = e;
+                let t = (e - ae) * .001;
+                n.uniform1f(s, t), n.uniform1f(c, t), n.uniform1f(l, t), n.clearColor(0, 0, 0, 0), n.clear(n.COLOR_BUFFER_BIT), n.drawArrays(n.TRIANGLE_STRIP, 0, 4), j = requestAnimationFrame(oe)
+            },
+            se = e => {
+                e.preventDefault(), cancelAnimationFrame(j)
+            };
+        return t.addEventListener(`webglcontextlost`, se), j = requestAnimationFrame(oe), () => {
+            cancelAnimationFrame(j), re.disconnect(), ie.removeEventListener?.(`change`, ne), t.removeEventListener(`webglcontextlost`, se), r && n.deleteProgram(r)
+        }
+    }, [g, u, f, d]), (0, ei.jsx)(`div`, {
+        ref: m,
+        className: p(`pointer-events-none absolute inset-0`, e),
+        style: {
+            zIndex: t
+        },
+        "aria-hidden": `true`,
+        children: (0, ei.jsx)(`canvas`, {
+            ref: h,
+            className: `h-full w-full`,
+            style: {
+                mixBlendMode: `normal`,
+                opacity: 1
+            }
+        })
+    })
+}
+var $r, ei, ti, ni, ri = e((() => {
+    v(), $r = n(z()), ei = L(), ti = `#version 300 es
 precision highp float;
 out vec2 vUv;
 
@@ -15,7 +1507,7 @@ void main() {
   vUv = UVS[gl_VertexID];
   gl_Position = vec4(POS[gl_VertexID], 0.0, 1.0);
 }
-`,ni=`#version 300 es
+`, ni = `#version 300 es
 precision highp float;
 
 in vec2 vUv;
@@ -216,5 +1708,3622 @@ void main() {
   // premultiplied output for stable overlay compositing
   outColor = vec4(rgb * alpha, alpha);
 }
-`}));function ii(e){let t=e.getContainer(),n=new Set,r=``,i,a=!1,o=()=>{if(i=void 0,a||!e.isStyleLoaded())return;let o=e.getCanvas(),s=o.getBoundingClientRect();if(!o.clientWidth||!s.width)return;let c=s.width/o.clientWidth,l={type:`FeatureCollection`,features:[]};for(let r of t.querySelectorAll(`[data-map-marker-longitude]`)){let t=r.closest(`.mapboxgl-marker`);if(!t||Number(getComputedStyle(r).opacity)===0)continue;let i=t.getBoundingClientRect(),a=Number(r.dataset.mapMarkerLongitude),o=Number(r.dataset.mapMarkerLatitude);if(!(!Number.isFinite(a)||!Number.isFinite(o)))for(let t of[r,...r.querySelectorAll(`[data-map-label-blocker]`)]){let r=getComputedStyle(t),s=t.getBoundingClientRect();if(r.visibility===`hidden`||Number(r.opacity)===0||!s.width||!s.height)continue;let u=Math.ceil((s.width/c+si*2)/4)*4,d=Math.ceil((s.height/c+si*2)/4)*4,f=`${ai}-${u}-${d}`;e.hasImage(f)||(e.addImage(f,{width:u,height:d,data:new Uint8Array(u*d*4)}),n.add(f)),l.features.push({type:`Feature`,properties:{image:f,offset:[Math.round((s.left+s.width/2-i.left-i.width/2)/c),Math.round((s.top+s.height/2-i.bottom)/c)]},geometry:{type:`Point`,coordinates:[a,o]}})}}let u=JSON.stringify(l),d=e.getSource(ai);!d&&l.features.length===0||(d?u!==r&&d.setData(l):e.addSource(ai,{type:`geojson`,data:l}),r=u,e.getLayer(oi)||e.addLayer({id:oi,type:`symbol`,source:ai,layout:{"icon-image":[`get`,`image`],"icon-offset":[`get`,`offset`],"icon-padding":0,"icon-allow-overlap":!0,"icon-ignore-placement":!1,"icon-rotation-alignment":`viewport`,"icon-pitch-alignment":`viewport`}}))},s=()=>{!a&&i===void 0&&(i=requestAnimationFrame(o))},c=new ResizeObserver(s),l=new Set,u=()=>{let n=new Set([e.getCanvas(),...t.querySelectorAll(`[data-map-marker-longitude], [data-map-label-blocker]`)]);for(let e of l)n.has(e)||(c.unobserve(e),l.delete(e));for(let e of n)l.has(e)||(c.observe(e),l.add(e))},d=new MutationObserver(e=>{e.some(e=>e.type===`childList`)?(u(),s()):e.some(e=>(e.target instanceof Element?e.target:e.target.parentElement)?.closest(`[data-map-marker-longitude]`)!=null)&&s()});d.observe(t,{subtree:!0,childList:!0,characterData:!0,attributes:!0,attributeFilter:[`style`,`class`,`data-label-hidden`,`data-selected`,`data-hovered`,`data-map-marker-longitude`,`data-map-marker-latitude`]}),u();let f=new MutationObserver(s);for(let e=t;e;e=e.parentElement)f.observe(e,{attributes:!0,attributeFilter:[`style`,`class`]});return window.addEventListener(`resize`,s),e.on(`style.load`,s),t.addEventListener(`transitionend`,s),t.addEventListener(`pointerover`,s),t.addEventListener(`pointerout`,s),t.addEventListener(`focusin`,s),t.addEventListener(`focusout`,s),document.fonts?.addEventListener(`loadingdone`,s),s(),()=>{a=!0,i!==void 0&&cancelAnimationFrame(i),d.disconnect(),c.disconnect(),f.disconnect(),window.removeEventListener(`resize`,s),e.off(`style.load`,s),t.removeEventListener(`transitionend`,s),t.removeEventListener(`pointerover`,s),t.removeEventListener(`pointerout`,s),t.removeEventListener(`focusin`,s),t.removeEventListener(`focusout`,s),document.fonts?.removeEventListener(`loadingdone`,s),e.getLayer(oi)&&e.removeLayer(oi),e.getSource(ai)&&e.removeSource(ai);for(let t of n)e.hasImage(t)&&e.removeImage(t)}}var ai,oi,si,ci=e((()=>{ai=`local-search-label-blockers`,oi=`local-search-label-blockers`,si=4}));function li(e){"use forget";let t=(0,ui.c)(44),{messageId:n,clientThreadId:i,canNavigateBackward:a,canNavigateForward:o,onNavigateBackward$:s,onNavigateForward$:c}=e,l=We(),u=me(),d;t[0]===u?d=t[1]:(d=u?Mt(u):null,t[0]=u,t[1]=d);let f=d,p=r(()=>f?.hasRequestedNewData$())??!1;if(!a&&!o)return null;let m;t[2]===l?m=t[3]:(m=l.formatMessage(mi.assistantTurnHistoryControls),t[2]=l,t[3]=m);let h;t[4]===l?h=t[5]:(h=l.formatMessage(mi.previousAssistantTurn),t[4]=l,t[5]=h);let g=!a||p,_;t[6]!==a||t[7]!==p?(_=fi(a,`start`,p),t[6]=a,t[7]=p,t[8]=_):_=t[8];let v;t[9]!==a||t[10]!==i||t[11]!==p||t[12]!==n||t[13]!==s?(v=e=>{pi(a,p,e)||(ye.logStructuredEvent(`ChatgptPlacesPreviousAssistantTurnButtonClicked`,{messageId:n,conversationId:i}),s())},t[9]=a,t[10]=i,t[11]=p,t[12]=n,t[13]=s,t[14]=v):v=t[14];let y;t[15]===Symbol.for(`react.memo_cache_sentinel`)?(y=(0,di.jsx)(K,{className:`icon`}),t[15]=y):y=t[15];let b;t[16]!==h||t[17]!==g||t[18]!==_||t[19]!==v?(b=(0,di.jsx)(Se,{type:`button`,color:`ghost`,"aria-label":h,"aria-disabled":g,contentWrapperClassName:`flex h-full w-full items-center justify-center`,className:_,onClick:v,children:y}),t[16]=h,t[17]=g,t[18]=_,t[19]=v,t[20]=b):b=t[20];let x;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(x=(0,di.jsx)(`div`,{className:`bg-token-border-light h-[36px] w-px`,"aria-hidden":`true`}),t[21]=x):x=t[21];let S;t[22]===l?S=t[23]:(S=l.formatMessage(mi.nextAssistantTurn),t[22]=l,t[23]=S);let C=!o||p,w;t[24]!==o||t[25]!==p?(w=fi(o,`end`,p),t[24]=o,t[25]=p,t[26]=w):w=t[26];let T;t[27]!==o||t[28]!==i||t[29]!==p||t[30]!==n||t[31]!==c?(T=e=>{pi(o,p,e)||(ye.logStructuredEvent(`ChatgptPlacesNextAssistantTurnButtonClicked`,{messageId:n,conversationId:i}),c())},t[27]=o,t[28]=i,t[29]=p,t[30]=n,t[31]=c,t[32]=T):T=t[32];let E;t[33]===Symbol.for(`react.memo_cache_sentinel`)?(E=(0,di.jsx)(an,{className:`icon`}),t[33]=E):E=t[33];let D;t[34]!==S||t[35]!==C||t[36]!==w||t[37]!==T?(D=(0,di.jsx)(Se,{type:`button`,color:`ghost`,"aria-label":S,"aria-disabled":C,contentWrapperClassName:`flex h-full w-full items-center justify-center`,className:w,onClick:T,children:E}),t[34]=S,t[35]=C,t[36]=w,t[37]=T,t[38]=D):D=t[38];let O;return t[39]!==p||t[40]!==D||t[41]!==m||t[42]!==b?(O=(0,di.jsxs)(`div`,{className:`bg-token-bg-primary border-token-border-default text-token-text-primary relative inline-flex h-[36px] w-[76px] items-center overflow-hidden rounded-full border bg-clip-padding drop-shadow-sm`,role:`group`,"aria-label":m,"aria-disabled":p,children:[b,x,D]}),t[39]=p,t[40]=D,t[41]=m,t[42]=b,t[43]=O):O=t[43],O}var ui,di,fi,pi,mi,hi=e((()=>{ui=Ue(),g(),P(),fn(),G(),pt(),pe(),F(),v(),He(),di=L(),fi=(e,t,n)=>p(`h-full flex-1 rounded-none border-0 bg-transparent px-0`,t===`start`?`rounded-s-[inherit]`:`rounded-e-[inherit]`,e&&!n?`hover:bg-token-bg-secondary cursor-pointer`:`cursor-not-allowed opacity-50`),pi=(e,t,n)=>e&&!t?!1:(n.preventDefault(),!0),mi=Ve({assistantTurnHistoryControls:{id:`placesOverlay.assistantTurnHistoryControls`,defaultMessage:`Assistant response history navigation`},previousAssistantTurn:{id:`placesOverlay.previousAssistantTurn`,defaultMessage:`Show previous assistant response`},nextAssistantTurn:{id:`placesOverlay.nextAssistantTurn`,defaultMessage:`Show next assistant response`}})})),gi,_i=e((()=>{Me(),gi=he({name:`cursor-light-24`,canvas:{width:24,height:24,viewBox:`0 0 24 24`,frame:{x:0,y:0,width:24,height:24},inkBounds:{x:2.031372,y:2.088867,width:19.658569,height:19.731934},visualBounds:{x:2.031372,y:2.088867,width:19.658569,height:19.731934}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:2.031372,y:2.088867,width:19.658569,height:19.731934},center:{x:11.860657,y:11.954834},insets:{top:2.088867,right:2.310059,bottom:2.179199,left:2.031372},anchors:{frame:{x:12,y:12},ink:{x:11.860657,y:11.954834},foreground:{x:11.860657,y:11.954834}}},capabilities:[`icon`],body:`<path d="M5.42473 2.23531C3.43316 1.54181 1.50807 3.42841 2.16105 5.43355L6.92766 20.0605C7.63406 22.2284 10.613 22.4505 11.6327 20.4111L14.3837 14.9091C14.4919 14.6928 14.6719 14.5201 14.8925 14.4209L20.1864 12.039C22.289 11.0929 22.1557 8.06303 19.9784 7.30464L5.42473 2.23531ZM3.58781 4.96871C3.31914 4.14311 4.11155 3.36668 4.93156 3.6523L19.4853 8.72164C20.3817 9.03398 20.436 10.2813 19.5702 10.6709L14.2763 13.0527C13.7408 13.2938 13.3046 13.713 13.0419 14.2382L10.2909 19.7402C9.87104 20.5799 8.6443 20.4883 8.35344 19.5957L3.58781 4.96871Z" fill="currentColor"/>`})}));function vi(e){"use forget";let t=(0,yi.c)(11),n,r,i,a;t[0]===e?(n=t[1],r=t[2],i=t[3],a=t[4]):({"aria-hidden":n,"aria-label":r,"aria-labelledby":i,...a}=e,t[0]=e,t[1]=n,t[2]=r,t[3]=i,t[4]=a);let o=n??(r||i?void 0:!0),s;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(s={__html:Pe(gi)},t[5]=s):s=t[5];let c;return t[6]!==r||t[7]!==i||t[8]!==a||t[9]!==o?(c=(0,bi.jsx)(`svg`,{...a,xmlns:`http://www.w3.org/2000/svg`,width:gi.canvas.width,height:gi.canvas.height,viewBox:gi.canvas.viewBox,fill:`none`,"aria-label":r,"aria-labelledby":i,"aria-hidden":o,dangerouslySetInnerHTML:s}),t[6]=r,t[7]=i,t[8]=a,t[9]=o,t[10]=c):c=t[10],c}var yi,bi,xi=e((()=>{yi=Ue(),ve(),_i(),bi=L()}));function Si(e){"use forget";let t=(0,wi.c)(6),{show:n,onClick:r,position:i}=e,a=i===void 0?`top-right`:i,o;t[0]===r?o=t[1]:(o=(0,Ti.jsx)(Ci,{onClick:r}),t[0]=r,t[1]=o);let s;return t[2]!==a||t[3]!==n||t[4]!==o?(s=(0,Ti.jsx)(nr,{show:n,position:a,children:o}),t[2]=a,t[3]=n,t[4]=o,t[5]=s):s=t[5],s}function Ci(e){"use forget";let t=(0,wi.c)(8),{onClick:n}=e,r=We(),i;t[0]===n?i=t[1]:(i=e=>{e.preventDefault(),n()},t[0]=n,t[1]=i);let a;t[2]===r?a=t[3]:(a=r.formatMessage({id:`dUWlu0`,defaultMessage:`Reset view`}),t[2]=r,t[3]=a);let o;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,Ti.jsx)(vi,{className:`icon h-[18px]! w-[18px]! translate-x-[1px] translate-y-[1px]`}),t[4]=o):o=t[4];let s;return t[5]!==i||t[6]!==a?(s=(0,Ti.jsx)(Se,{type:`button`,color:`secondary`,size:`small`,className:`btn border-token-border-default text-token-text-primary disabled:text-token-text-tertiary relative flex h-[36px] w-[36px] items-center justify-center border bg-clip-padding drop-shadow-sm`,contentWrapperClassName:`font-semibold`,onClick:i,title:a,children:o}),t[5]=i,t[6]=a,t[7]=s):s=t[7],s}var wi,Ti,Ei=e((()=>{wi=Ue(),g(),xi(),He(),tr(),Ti=L()})),Di,Oi,ki,Ai=e((()=>{Di=Ue(),g(),He(),tr(),Oi=L(),ki=e=>{"use forget";let t=(0,Di.c)(11),{disabled:n,isEnabled:r,onClick:i}=e,a=We(),o=r?`primary`:`secondary`,s;t[0]===a?s=t[1]:(s=a.formatMessage({id:`chatgpt.maps.three_dimensional.toggle.aria_label`,defaultMessage:`3D map`}),t[0]=a,t[1]=s);let c;t[2]===i?c=t[3]:(c=e=>{e.preventDefault(),i()},t[2]=i,t[3]=c);let l;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,Oi.jsx)(R,{id:`chatgpt.maps.three_dimensional.toggle.button.label`,defaultMessage:`3D`}),t[4]=l):l=t[4];let u;return t[5]!==o||t[6]!==n||t[7]!==r||t[8]!==s||t[9]!==c?(u=(0,Oi.jsx)(nr,{position:`top-left`,children:(0,Oi.jsx)(Se,{type:`button`,"aria-label":s,"aria-pressed":r,color:o,disabled:n,size:`small`,className:`btn border-token-border-default text-token-text-primary disabled:text-token-text-tertiary relative flex h-9 min-w-9 items-center justify-center rounded-full border bg-clip-padding px-3 drop-shadow-sm`,contentWrapperClassName:`font-semibold`,onClick:c,children:l})}),t[5]=o,t[6]=n,t[7]=r,t[8]=s,t[9]=c,t[10]=u):u=t[10],u}}));function ji(e){"use forget";let t=(0,Mi.c)(27),{viewState:n,onClick:i,className:a,mapMessageId:c,afterCompletion:l}=e,u=me(),{setTargetedContent:d}=bt(),f=We(),[m,h]=(0,Ni.useState)(!1),g=(0,Ni.useRef)(!1),_=(0,Ni.useRef)(0),v;t[0]===f?v=t[1]:(v=f.formatMessage({id:`f9Y7Bz`,defaultMessage:`Search Here`}),t[0]=f,t[1]=v);let y=v,b;t[2]===f?b=t[3]:(b=f.formatMessage({id:`xXbDrS`,defaultMessage:`Thinking`}),t[2]=f,t[3]=b);let x=b,S;t[4]===u?S=t[5]:(S=u?Mt(u):null,t[4]=u,t[5]=S);let C=S,w;t[6]===C?w=t[7]:(w=()=>C?.hasRequestedNewData$(),t[6]=C,t[7]=w);let T=r(w)&&!m;if(!u||!C)return null;let E=T&&`cursor-not-allowed opacity-100!`,D;t[8]!==a||t[9]!==E?(D=p(`btn border-token-border-default text-token-text-primary disabled:text-token-text-tertiary relative flex h-[36px] items-center justify-center border bg-clip-padding px-4 drop-shadow-sm`,E,a),t[8]=a,t[9]=E,t[10]=D):D=t[10];let O;t[11]!==l||t[12]!==u||t[13]!==T||t[14]!==c||t[15]!==i||t[16]!==C||t[17]!==y||t[18]!==d||t[19]!==n?(O=async e=>{if(T){e.preventDefault();return}h(!1),g.current=!1;let t=_.current+1;_.current=t,i?.(),C.setHasRequestedNewData$(!0,{source:`search-this-area`}),d(void 0);let r=rt(n,c,!0);await bn({callsiteId:`request_completion.formatted_text.contentReferences.maps.controls.search_this_area.1`,conversation:u,promptMessage:o(y,{map_search_parameters:r}),eventSource:`mouse`,extraStreamParams:{mapSearchParams:r,completionMetadata:{searchSource:qe.MAP_SEARCH_THIS_AREA_BUTTON,conversationMode:{kind:s.PrimaryAssistant}}}}),!g.current&&_.current===t&&(l?.(),C.setHasRequestedNewData$(!1))},t[11]=l,t[12]=u,t[13]=T,t[14]=c,t[15]=i,t[16]=C,t[17]=y,t[18]=d,t[19]=n,t[20]=O):O=t[20];let k=T?x:y,A;return t[21]!==T||t[22]!==y||t[23]!==D||t[24]!==O||t[25]!==k?(A=(0,Pi.jsx)(Se,{type:`button`,color:`secondary`,size:`small`,disabled:T,className:D,contentWrapperClassName:`font-semibold flex items-center gap-2`,onClick:O,title:k,children:y}),t[21]=T,t[22]=y,t[23]=D,t[24]=O,t[25]=k,t[26]=A):A=t[26],A}var Mi,Ni,Pi,Fi=e((()=>{Mi=Ue(),ue(),g(),gn(),P(),pt(),Pt(),le(),Nt(),ce(),v(),Ni=n(z()),He(),ut(),Pi=L()})),Ii,Li,Ri=e((()=>{Ii=e=>{if(e==null||e.length<=1)return!1;let t=e.map(e=>e.dayNumber),n=t.every(e=>e!=null)&&new Set(t).size>1,r=e.every(e=>e.title!=null&&e.title.trim().length>0);return n||r},Li=e=>e!=null&&e.geometry.coordinates.length>=2&&e.duration_seconds!=null&&Number.isFinite(e.duration_seconds)&&e.legs.length===1}));function zi(e){return e.dayNumber}function Bi(e){return e!=null}var Vi,Hi,Ui,Wi,Gi,Ki,qi,Ji,Yi,Xi,Zi=e((()=>{Vi=Ue(),yn(),cn(),He(),kn(),tr(),Ri(),Hi=L(),Ui=e=>e!=null&&e.geometry.coordinates.length>=2,Wi=e=>e.geometry!=null&&e.geometry.coordinates.length>=2,Gi=e=>{let t=e?.trim();if(!(t==null||!/^#?[0-9a-f]{6}$/i.test(t)))return t.startsWith(`#`)?t:`#${t}`},Ki=(e,t,n)=>e.formatMessage({id:`chatgpt.maps.route_group.day`,defaultMessage:`Day {dayNumber}`},{dayNumber:t.dayNumber??n+1}),qi=e=>{"use forget";let t=(0,Vi.c)(40),{isFullScreen:n,routeGroups:r,groupsTitle:i,trailingControl:a,selectedRouteGroupIndex:o,onRouteGroupChange:s}=e,c=We();if(r==null||!Ii(r))return null;let l;if(t[0]!==r){let e=r.map(zi);l=e.every(Bi)&&new Set(e).size===e.length,t[0]=r,t[1]=l}else l=t[1];let u=l,d;t[2]!==i||t[3]!==u||t[4]!==c?(d=i?.trim()||(u?c.formatMessage({id:`chatgpt.maps.route_group.all_days`,defaultMessage:`All days`}):c.formatMessage({id:`chatgpt.maps.route_group.all_groups`,defaultMessage:`All groups`})),t[2]=i,t[3]=u,t[4]=c,t[5]=d):d=t[5];let f=d,p;t[6]!==u||t[7]!==c?(p=u?c.formatMessage({id:`chatgpt.maps.route_group.filter_label`,defaultMessage:`Trip day`}):c.formatMessage({id:`chatgpt.maps.route_group.generic_filter_label`,defaultMessage:`Map group`}),t[6]=u,t[7]=c,t[8]=p):p=t[8];let m=p,h=o==null?`all`:String(o),g;t[9]===s?g=t[10]:(g=e=>s(e===`all`?null:Number(e)),t[9]=s,t[10]=g);let _,v;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(_=(0,Hi.jsx)(vn.Value,{}),v=(0,Hi.jsx)(vn.Icon,{}),t[11]=_,t[12]=v):(_=t[11],v=t[12]);let y;t[13]===m?y=t[14]:(y=(0,Hi.jsxs)(vn.Trigger,{"aria-label":m,className:`interactive-button interactive-button-secondary bg-token-bg-primary/95 h-9! min-w-[112px] justify-between! gap-2 rounded-full! px-3! text-xs font-medium shadow-sm backdrop-blur`,children:[_,v]}),t[13]=m,t[14]=y);let b;t[15]===f?b=t[16]:(b=(0,Hi.jsx)(vn.Item,{value:`all`,children:f}),t[15]=f,t[16]=b);let x;if(t[17]!==u||t[18]!==c||t[19]!==r){let e;t[21]!==u||t[22]!==c?(e=(e,t)=>(0,Hi.jsx)(vn.Item,{value:String(t),children:u?Ki(c,e,t):e.title?.trim()||Ki(c,e,t)},t),t[21]=u,t[22]=c,t[23]=e):e=t[23],x=r.map(e),t[17]=u,t[18]=c,t[19]=r,t[20]=x}else x=t[20];let S;t[24]!==x||t[25]!==b?(S=(0,Hi.jsx)(vn.Portal,{children:(0,Hi.jsxs)(vn.Content,{align:`start`,className:`min-w-[140px]`,children:[b,x]})}),t[24]=x,t[25]=b,t[26]=S):S=t[26];let C;t[27]!==S||t[28]!==h||t[29]!==g||t[30]!==y?(C=(0,Hi.jsxs)(vn.Root,{value:h,onValueChange:g,children:[y,S]}),t[27]=S,t[28]=h,t[29]=g,t[30]=y,t[31]=C):C=t[31];let w=C,T;t[32]!==w||t[33]!==a?(T=(0,Hi.jsxs)(`div`,{className:`flex items-center gap-2`,children:[w,a]}),t[32]=w,t[33]=a,t[34]=T):T=t[34];let E=T;if(n){let e;t[35]===Symbol.for(`react.memo_cache_sentinel`)?(e={top:`calc(env(safe-area-inset-top, 0px) + (env(safe-area-inset-bottom, 0px) / 2) + 0.5rem)`},t[35]=e):e=t[35];let n;return t[36]===E?n=t[37]:(n=(0,Hi.jsx)(`div`,{className:`absolute start-14 z-[1000]`,style:e,children:E}),t[36]=E,t[37]=n),n}let D;return t[38]===E?D=t[39]:(D=(0,Hi.jsx)(`div`,{className:`absolute start-3 top-3 z-[1000]`,"data-testid":`inline-map-route-day-selector`,children:E}),t[38]=E,t[39]=D),D},Ji=e=>{"use forget";let t=(0,Vi.c)(5),{isDarkMode:n,mapReady:r,routeGroups:i}=e;if(!r)return null;let a;if(t[0]!==n||t[1]!==i){let e;t[3]===n?e=t[4]:(e=(e,t)=>{let r=e.route;if(!Ui(r))return[];let i=r.segments?.filter(Wi)??[],a=i.length>0?`genui-map-route-line-${t}-0`:`genui-map-route-line-${t}`,o=i.length>0?i.map((e,r)=>{let i=e.mode===`walking`,a=Gi(e.line?.color);return(0,Hi.jsx)(Dn,{id:`genui-map-route-${t}-${r}`,type:`geojson`,data:{type:`Feature`,properties:{},geometry:e.geometry},children:(0,Hi.jsx)(En,{id:`genui-map-route-line-${t}-${r}`,type:`line`,slot:`top`,layout:{"line-cap":`round`,"line-join":`round`},paint:{"line-color":a??(n?`#ffffff`:`#111111`),"line-color-use-theme":a||n?`none`:`default`,"line-emissive-strength":+!!n,"line-occlusion-opacity":1,...i?{"line-dasharray":[.1,1.2]}:{},"line-opacity":n?1:.9,"line-width":3}})},`${t}-${r}`)}):[(0,Hi.jsx)(Dn,{id:`genui-map-route-${t}`,type:`geojson`,data:{type:`Feature`,properties:{},geometry:r.geometry},children:(0,Hi.jsx)(En,{id:a,type:`line`,slot:`top`,layout:{"line-cap":`round`,"line-join":`round`},paint:{"line-color":n?`#ffffff`:`#111111`,"line-color-use-theme":n?`none`:`default`,"line-emissive-strength":+!!n,"line-occlusion-opacity":1,...r.route_mode===`walking`?{"line-dasharray":[.1,1.2]}:{},"line-opacity":n?1:.9,"line-width":3}})},t)],s=(e.alternativeRoutes??[]).flatMap((e,r)=>{if(!Ui(e))return[];let i=`genui-map-route-${t}-alternative-${r}`;return[(0,Hi.jsx)(Dn,{id:i,type:`geojson`,data:{type:`Feature`,properties:{},geometry:e.geometry},children:(0,Hi.jsx)(En,{id:`genui-map-route-line-${t}-alternative-${r}`,beforeId:a,type:`line`,slot:`top`,layout:{"line-cap":`round`,"line-join":`round`},paint:{"line-color":n?`#ffffff`:`#111111`,"line-color-use-theme":n?`none`:`default`,"line-emissive-strength":+!!n,"line-occlusion-opacity":1,...e.route_mode===`walking`?{"line-dasharray":[.1,1.2]}:{},"line-opacity":.45,"line-width":2}})},i)]});return[...o,...s]},t[3]=n,t[4]=e),a=i.flatMap(e),t[0]=n,t[1]=i,t[2]=a}else a=t[2];return a},Yi=e=>{"use forget";let t=(0,Vi.c)(6),{isFullScreen:n,route:r}=e,i=We(),a;t[0]!==i||t[1]!==r?(a=Xi(i,r),t[0]=i,t[1]=r,t[2]=a):a=t[2];let o=a;if(n||!Li(r)||o==null)return null;let s;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,Hi.jsx)(on,{className:`h-4 w-4`}),t[3]=s):s=t[3];let c;return t[4]===o?c=t[5]:(c=(0,Hi.jsx)(nr,{position:`top-left`,children:(0,Hi.jsxs)(`div`,{className:`pointer-events-none flex w-[112px] items-center justify-center gap-1.5 rounded-full border border-white/80 bg-white/95 px-3 py-1.5 text-sm font-medium text-gray-900 shadow-sm backdrop-blur dark:border-black/40 dark:bg-gray-900/90 dark:text-white`,children:[s,(0,Hi.jsx)(`span`,{children:o})]})}),t[4]=o,t[5]=c),c},Xi=(e,t)=>{if(!Ui(t))return null;let n=t.duration_seconds;return n==null||!Number.isFinite(n)?null:n<3600?e.formatMessage({id:`chatgpt.maps.route.duration_minutes`,defaultMessage:`{minutes, plural, one {# min} other {# mins}}`},{minutes:Math.max(1,Math.round(n/60))}):e.formatMessage({id:`chatgpt.maps.route.duration_hours`,defaultMessage:`{hours, plural, one {# hour} other {# hours}}`},{hours:Math.round(n/360)/10})}})),Qi,$i,ea,ta,na,ra,ia,aa,oa,sa,ca,la,ua,da,fa,pa,ma=e((()=>{_t(),Qi=e=>e.extra_params?.location===`user`,$i=(e,t,n)=>{e.has(t)||e.set(t,n);let r=/^point-(\d+)$/.exec(t);if(r!=null){let t=`genui-map-point-${r[1]}`;e.has(t)||e.set(t,n)}},ea=e=>e?.replace(/^point-(\d+)$/,`genui-map-point-$1`),ta=e=>{let t=[],n;return e.forEach((e,r)=>{let i=ea(e.from_point_id),a=r>0&&i===n;if(e.from_point_id!=null&&!a)t.push({pointId:e.from_point_id,legToNext:e});else if(e.from_point_id!=null){let n=t.at(-1);n!=null&&(n.legToNext=e)}e.to_point_id!=null&&t.push({pointId:e.to_point_id}),n=ea(e.to_point_id)}),t},na=e=>{let t=new Map;if(e==null)return t;let n=(e,n)=>{e==null||t.has(e)||$i(t,e,n)};return ta(e.legs).forEach((e,t)=>{n(e.pointId,t+1)}),t},ra=e=>{let t=new Map,n=1;return e?.forEach((r,i)=>{let a=na(r.route),o=r.pointIds.map((e,t)=>({pointId:e,pointIndex:t,routeStopIndex:a.get(e)??t+1})).sort((e,t)=>e.routeStopIndex-t.routeStopIndex||e.pointIndex-t.pointIndex);for(let{pointId:r,routeStopIndex:a}of o){let o=t.get(r);if(o!=null){o.groupIndices.includes(i)||o.groupIndices.push(i);continue}$i(t,r,{groupIndices:[i],stopNumber:e?.length===1?a:n}),n+=1}}),t},ia=(e,t)=>{if(!(e==null||!e.groupIndices.some(e=>t?.[e]?.route!=null)))return e.stopNumber},aa=(e,t)=>oa(e,[],t),oa=(e,t,n)=>{let r=Ht(e),i=new Map(r.map(e=>[e.mapEntityId??e.entity_data.id,e])),a=e=>i.get(e)??i.get(e.replace(/^point-(\d+)$/,`genui-map-point-$1`)),o=[],s=new Set,c=e=>{let t=a(e);return t==null?e:t.mapEntityId??t.entity_data.id},l=(e,t,n)=>{let r=a(e);r!=null&&o.push({business:r,stopNumber:t,legToNext:n})},u=n?.legs??[];return ta(u).forEach(({pointId:e,legToNext:t},n)=>{l(e,n+1,t)}),u.forEach(e=>{e.from_point_id!=null&&s.add(c(e.from_point_id)),e.to_point_id!=null&&s.add(c(e.to_point_id))}),t.forEach((e,t)=>{s.has(c(e))||l(e,t+1)}),t.length===0&&s.size===0?r.map((e,t)=>({business:e,stopNumber:t+1,legToNext:u[t]})):o.sort((e,t)=>e.stopNumber-t.stopNumber)},sa=(e,t)=>{if(t==null)return null;let n=ua(e,t.distance_meters),r=fa(e,t.duration_seconds);return n==null&&r==null?null:[la(e,t.route_mode),n,r].filter(Boolean).join(` • `)},ca=(e,t)=>{if(e.length<2)return null;let n=e.map(({business:e})=>{let{address:t,latitude:n,longitude:r,name:i}=e.entity_data;return Qi(e)?`${n},${r}`:[i,t].filter(Boolean).join(`, `)}),r=new URLSearchParams({api:`1`,origin:n[0],destination:n[n.length-1],travelmode:t===`cycling`?`bicycling`:t});return n.length>2&&r.set(`waypoints`,n.slice(1,-1).join(`|`)),`https://www.google.com/maps/dir/?${r.toString()}`},la=(e,t)=>e.formatMessage({id:`chatgpt.places.route_stops.sidebar.summary.mode`,defaultMessage:`{routeMode, select, walking {Walk} cycling {Bike} driving {Drive} transit {Transit} other {Route}}`},{routeMode:t}),ua=(e,t)=>{if(t==null||!Number.isFinite(t))return null;let n=t/1609.344;if(n>=.1){let t=n>=10?0:1;return e.formatNumber(n,{style:`unit`,unit:`mile`,unitDisplay:`short`,minimumFractionDigits:t,maximumFractionDigits:t})}return e.formatNumber(Math.max(1,Math.round(t*3.28084)),{style:`unit`,unit:`foot`,unitDisplay:`short`,maximumFractionDigits:0})},da=[{unit:`week`,minutes:10080},{unit:`day`,minutes:1440},{unit:`hour`,minutes:60},{unit:`minute`,minutes:1}],fa=(e,t)=>{if(t==null||!Number.isFinite(t))return null;let n=Math.max(1,Math.round(t/60));if(n<=60)return pa(e,n,`minute`);let r=n,i=[];for(let{unit:t,minutes:n}of da){let a=Math.floor(r/n);if(a!==0&&(i.push(pa(e,a,t)),r%=n,i.length===2))break}return e.formatList(i,{type:`unit`,style:`short`})},pa=(e,t,n)=>e.formatNumber(t,{style:`unit`,unit:n,unitDisplay:n===`minute`?`short`:`long`})})),ha,ga,_a=e((()=>{ha=`BqefNq_userMarkerPulse`,ga={userMarkerPulse:ha}}));function va(e){"use forget";let t=(0,ya.c)(48),{isFullScreen:n,picture:r,name:i}=e,a=We(),[o,s]=(0,ba.useState)(!1),[c,l]=(0,ba.useState)(0),u,d;if(t[0]!==a||t[1]!==i){let e=Ca(i);t[4]===a?u=t[5]:(u=a.formatMessage(Sa.youAreHere),t[4]=a,t[5]=u),d=e?[a.formatMessage(Sa.itIsFirstName,{firstName:e})]:[],t[0]=a,t[1]=i,t[2]=u,t[3]=d}else u=t[2],d=t[3];let f;t[6]===a?f=t[7]:(f=a.formatMessage(Sa.youreOnTheMap),t[6]=a,t[7]=f);let m;t[8]===a?m=t[9]:(m=a.formatMessage(Sa.youLookNice),t[8]=a,t[9]=m);let h;t[10]===a?h=t[11]:(h=a.formatMessage(Sa.justYou),t[10]=a,t[11]=h);let g;t[12]===a?g=t[13]:(g=a.formatMessage(Sa.stillYou),t[12]=a,t[13]=g);let _;t[14]!==u||t[15]!==d||t[16]!==f||t[17]!==m||t[18]!==h||t[19]!==g?(_=[u,...d,f,m,h,g],t[14]=u,t[15]=d,t[16]=f,t[17]=m,t[18]=h,t[19]=g,t[20]=_):_=t[20];let v=_,y=v[c%v.length],b;t[21]!==r||t[22]!==v.length?(b=()=>{!r||v.length===0||(l(e=>(e+1)%v.length),s(!0))},t[21]=r,t[22]=v.length,t[23]=b):b=t[23];let x=b,S;t[24]===Symbol.for(`react.memo_cache_sentinel`)?(S=()=>{s(!1)},t[24]=S):S=t[24];let C=S;if(!r){let e;return t[25]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,xa.jsx)(Wn,{className:`h-8 w-8`}),t[25]=e):e=t[25],e}let w;t[26]!==y||t[27]!==o?(w=o&&y&&(0,xa.jsx)(oe.div,{initial:{opacity:0,y:6,scale:.96},animate:{opacity:1,y:0,scale:1},exit:{opacity:0,y:4,scale:.98},transition:{duration:.16,ease:`easeOut`},className:`shadow-elevation-03 pointer-events-none absolute start-1/2 bottom-full z-20 mb-2 -translate-x-1/2 rounded-md bg-black px-2 py-1 text-sm whitespace-nowrap text-white`,children:y},y),t[26]=y,t[27]=o,t[28]=w):w=t[28];let T;t[29]===w?T=t[30]:(T=(0,xa.jsx)(de,{initial:!1,children:w}),t[29]=w,t[30]=T);let E=o?`bg-black`:`bg-white`,D=n&&ga.userMarkerPulse,O;t[31]!==E||t[32]!==D?(O=p(`pointer-events-none absolute inset-0 origin-center rounded-full transition-colors duration-150`,E,D),t[31]=E,t[32]=D,t[33]=O):O=t[33];let k;t[34]===O?k=t[35]:(k=(0,xa.jsx)(`span`,{"aria-hidden":`true`,className:O}),t[34]=O,t[35]=k);let A;t[36]===a?A=t[37]:(A=a.formatMessage({id:`avatar.profileimageMarker`,defaultMessage:`Profile image Marker`}),t[36]=a,t[37]=A);let j;t[38]!==r||t[39]!==A?(j=(0,xa.jsx)(`img`,{alt:A,src:r,className:`shadow-elevation-03 h-full w-full rounded-full object-cover`}),t[38]=r,t[39]=A,t[40]=j):j=t[40];let M;t[41]!==x||t[42]!==j?(M=(0,xa.jsx)(`div`,{className:`relative z-10 h-6 w-6`,onMouseEnter:x,onMouseLeave:C,children:j}),t[41]=x,t[42]=j,t[43]=M):M=t[43];let N;return t[44]!==T||t[45]!==k||t[46]!==M?(N=(0,xa.jsxs)(`div`,{className:`relative flex h-8 w-8 items-center justify-center`,children:[T,k,M]}),t[44]=T,t[45]=k,t[46]=M,t[47]=N):N=t[47],N}var ya,ba,xa,Sa,Ca,wa=e((()=>{ya=Ue(),v(),a(),ba=n(z()),He(),Kn(),_a(),xa=L(),Sa=Ve({youAreHere:{id:`mapUserLocationMarker.youAreHere`,defaultMessage:`You are here`},itIsFirstName:{id:`mapUserLocationMarker.itIsFirstName`,defaultMessage:`It's {firstName}!`},youreOnTheMap:{id:`mapUserLocationMarker.youreOnTheMap`,defaultMessage:`You're on the map`},youLookNice:{id:`mapUserLocationMarker.youLookNice`,defaultMessage:`You look nice`},justYou:{id:`mapUserLocationMarker.justYou`,defaultMessage:`Just you`},stillYou:{id:`mapUserLocationMarker.stillYou`,defaultMessage:`Still you`}}),Ca=e=>{let t=e?.trim();return t?t.split(/\s+/)[0]??null:null}}));function Ta(e){return e.stops.map(t=>({section:e,stop:t}))}function Ea(e){let{stop:t}=e;return t}function Da(e){return e.preventDefault()}function Oa(e){return e!=null&&!Na.test(e)}function ka(e){return(0,Z.jsx)(`div`,{className:`text-token-text-secondary mt-0.5 text-sm`,children:e},e.key)}var Aa,ja,Z,Ma,Na,Pa,Fa,Ia,La,Ra,za,Ba,Va,Ha,Ua,Wa,Ga,Ka,qa=e((()=>{Aa=Ue(),g(),P(),pn(),le(),M(),F(),kt(),i(),Lt(),v(),ja=n(z()),He(),mn(),An(),ma(),wa(),_t(),Z=L(),Ma=4,Na=/^\s*[+-]?\d+(?:\.\d+)?\s*,\s*[+-]?\d+(?:\.\d+)?\s*$/,Pa=e=>{"use forget";let t=(0,Aa.c)(49),{conversation:n,messageId:r,businesses:i,routeGroups:a,selectedRouteGroupIndex:o,routeContext:s,onClick:c,onHover:l,trackContentReferenceEvent:u,routeDisplayMode:d,enableMapCarouselPresentation:f,approvedImageUrls:m,carouselNotesClassName:h}=e,g=d===void 0?`stop`:d,_=f!==void 0&&f,v=g===`carousel`,y=v&&a.length>1&&o==null,b=We(),x=(0,ja.useRef)(null),S;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(S={didDrag:!1,pointerId:null,startScrollLeft:0,startX:0},t[0]=S):S=t[0];let C=(0,ja.useRef)(S),w,T,E,D,O;if(t[1]!==m||t[2]!==i||t[3]!==h||t[4]!==n||t[5]!==_||t[6]!==b||t[7]!==v||t[8]!==y||t[9]!==r||t[10]!==c||t[11]!==l||t[12]!==s||t[13]!==a||t[14]!==o||t[15]!==u){O=Symbol.for(`react.early_return_sentinel`);bb0:{let e;t[21]!==i||t[22]!==o?(e=(e,t)=>o!=null&&o!==t?[]:[{group:e,groupIndex:t,route:e.route,stops:oa(i,e.pointIds,e.route)}],t[21]=i,t[22]=o,t[23]=e):e=t[23];let d=a.flatMap(e),f=d.flatMap(Ta),g=new Set,S=y?f.filter(e=>{let{stop:t}=e,n=t.business.entity_data.id;return g.has(n)?!1:(g.add(n),!0)}):f,k=d.length===1?d[0]?.route:void 0,A=k==null?null:ca(S.map(Ea),k.route_mode);if(d.length===0){O=null;break bb0}let j;t[24]===Symbol.for(`react.memo_cache_sentinel`)?(j=e=>{e.pointerType!==`mouse`||e.button!==0||(C.current={didDrag:!1,pointerId:e.pointerId,startScrollLeft:e.currentTarget.scrollLeft,startX:e.clientX})},t[24]=j):j=t[24];let M=j,N;t[25]===Symbol.for(`react.memo_cache_sentinel`)?(N=e=>{let t=C.current;if(t.pointerId!==e.pointerId)return;let n=e.clientX-t.startX;if(!t.didDrag){if(Math.abs(n)<Ma)return;t.didDrag=!0,e.currentTarget.setPointerCapture(e.pointerId)}e.preventDefault(),e.currentTarget.scrollLeft=t.startScrollLeft-n},t[25]=N):N=t[25];let ee=N,te;t[26]===Symbol.for(`react.memo_cache_sentinel`)?(te=e=>{let t=C.current;t.pointerId===e.pointerId&&(e.currentTarget.hasPointerCapture(e.pointerId)&&e.currentTarget.releasePointerCapture(e.pointerId),t.pointerId=null)},t[26]=te):te=t[26];let ne=te,re;t[27]===Symbol.for(`react.memo_cache_sentinel`)?(re=e=>{C.current.didDrag&&(e.preventDefault(),e.stopPropagation(),C.current.didDrag=!1)},t[27]=re):re=t[27];let ie=re,ae;t[28]!==m||t[29]!==h||t[30]!==n||t[31]!==_||t[32]!==b||t[33]!==v||t[34]!==y||t[35]!==r||t[36]!==c||t[37]!==l||t[38]!==u?(ae=(e,t,i,a,o)=>{let s=e.business.entity_data.id,d=Qi(e.business),f=e.stopNumber>1?i?.legs[e.stopNumber-2]:void 0,g=fa(b,f?.duration_seconds),x=!y&&(i!=null||d)?(0,Z.jsx)(Ra,{stopNumber:e.stopNumber,totalStops:a}):null;if(v&&!y&&i!=null){let e=Va(i);e.length>0?x=Ha(b,e):g!=null&&(x=Ka(b,i.route_mode,g))}let S=()=>{ye.logStructuredEvent(v?`ChatgptPlacesBusinessCarouselItemClicked`:`ChatgptPlacesBusinessListItemClicked`,{entityId:s,entityName:e.business.entity_data.name,entityIndex:fe(t),conversationId:se(n)}),c(e.business)};return(0,Z.jsxs)(`div`,{role:`listitem`,className:v?`flex w-full`:void 0,children:[d?(0,Z.jsx)(`div`,{className:p(`overflow-hidden text-start`,v?`bg-token-bg-primary/90 border-token-border-light/60 w-full rounded-[20px] border bg-clip-padding backdrop-blur`:`w-full`),children:(0,Z.jsx)(Fa,{business:e.business,contextLabel:x,isCarousel:v})}):(0,Z.jsx)(`div`,{role:`button`,tabIndex:0,className:p(`interactive-button interactive-outline-secondary cursor-pointer overflow-hidden text-start`,v?`bg-token-bg-primary/90 border-token-border-light/60 w-full rounded-[20px] border bg-clip-padding backdrop-blur`:`w-full hover:bg-black/5 dark:hover:bg-white/10`),onClick:S,onKeyDown:e=>{e.target!==e.currentTarget||e.key!==`Enter`&&e.key!==` `||(e.preventDefault(),S())},onMouseEnter:()=>{ye.logStructuredEvent(v?`ChatgptPlacesBusinessCarouselItemHovered`:`ChatgptPlacesBusinessListItemHovered`,{entityId:s,entityName:e.business.entity_data.name,entityIndex:fe(t),conversationId:se(n)}),l(s)},onMouseLeave:()=>l(null),children:(0,Z.jsx)(_n,{clientThreadId:n.id,messageId:r,idx:t,business:e.business.entity_data,description:e.business.mapPointLabel,mapCarouselCard:v&&_?e.business.mapCarouselCard:void 0,approvedImageUrls:m,preserveRatingWithDescription:v&&_,notes:o??e.business.notes,trackContentReferenceEvent:u,enableSidebarNavigation:!1,imageClassName:`h-16 w-16 rounded-lg!`,contextLabel:x,notesClassName:v?h:`line-clamp-none!`,contextLabelPlacement:v?`eyebrow`:`metadata`,wrapperClassName:v?`p-3`:`px-4 py-4`,showShareEntityButton:!1})}),!v&&i!=null&&e.legToNext!=null&&(0,Z.jsx)(za,{intl:b,leg:e.legToNext,route:i})]},`${Jt(e.business)}:${e.stopNumber}`)},t[28]=m,t[29]=h,t[30]=n,t[31]=_,t[32]=b,t[33]=v,t[34]=y,t[35]=r,t[36]=c,t[37]=l,t[38]=u,t[39]=ae):ae=t[39];let oe=ae;if(v){let e;t[40]===oe?e=t[41]:(e=(e,t)=>{let{section:n,stop:r}=e;return(0,Z.jsx)(`div`,{className:`flex w-[82vw] max-w-[360px] shrink-0 snap-center sm:snap-start`,children:oe(r,t,n.route,n.stops.length,n.group.notesByPointId?.get(r.business.mapEntityId??r.business.entity_data.id))},`${n.groupIndex}:${Jt(r.business)}:${r.stopNumber}`)},t[40]=oe,t[41]=e),O=(0,Z.jsx)(`div`,{ref:x,role:`list`,className:`no-scrollbar flex cursor-grab snap-x snap-mandatory gap-3 overflow-x-auto px-3 pb-3 select-none active:cursor-grabbing sm:scroll-ps-3 not-motion-reduce:sm:scroll-smooth sm:active:snap-none sm:active:scroll-auto`,onDragStart:Da,onClickCapture:ie,onPointerDown:M,onPointerMove:ee,onPointerUp:ne,onPointerCancel:ne,children:S.map(e)});break bb0}E=`flex h-full flex-col`,D=(0,Z.jsx)(La,{route:k,routeContext:s,routeUrl:A,trackContentReferenceEvent:u}),w=`h-full overflow-y-auto pb-4`,T=d.map(e=>{let t=S.findIndex(t=>{let{section:n}=t;return n===e});return(0,Z.jsxs)(`section`,{children:[a!=null&&a.length>1&&e.group!=null&&(0,Z.jsx)(Ia,{dayNumber:e.group.dayNumber??e.groupIndex+1,title:e.group.title}),(0,Z.jsx)(`div`,{role:`list`,children:e.stops.map((n,r)=>oe(n,t+r,e.route,e.stops.length,e.group.notesByPointId?.get(n.business.mapEntityId??n.business.entity_data.id)))})]},e.groupIndex)})}t[1]=m,t[2]=i,t[3]=h,t[4]=n,t[5]=_,t[6]=b,t[7]=v,t[8]=y,t[9]=r,t[10]=c,t[11]=l,t[12]=s,t[13]=a,t[14]=o,t[15]=u,t[16]=w,t[17]=T,t[18]=E,t[19]=D,t[20]=O}else w=t[16],T=t[17],E=t[18],D=t[19],O=t[20];if(O!==Symbol.for(`react.early_return_sentinel`))return O;let k;t[42]!==w||t[43]!==T?(k=(0,Z.jsx)(`div`,{className:w,children:T}),t[42]=w,t[43]=T,t[44]=k):k=t[44];let A;return t[45]!==E||t[46]!==D||t[47]!==k?(A=(0,Z.jsxs)(`div`,{className:E,children:[D,k]}),t[45]=E,t[46]=D,t[47]=k,t[48]=A):A=t[48],A},Fa=e=>{"use forget";let t=(0,Aa.c)(28),{business:n,contextLabel:i,isCarousel:a}=e,o=r(Fe),s=We(),c=typeof n.extra_params?.address==`string`?n.extra_params.address:void 0,l;t[0]!==n.entity_data.address||t[1]!==c?(l=[n.entity_data.address,c].find(Oa),t[0]=n.entity_data.address,t[1]=c,t[2]=l):l=t[2];let u=l,d;t[3]!==s||t[4]!==u?(d=u||s.formatMessage({id:`chatgpt.places.route_stops.card.user_location`,defaultMessage:`Your location`}),t[3]=s,t[4]=u,t[5]=d):d=t[5];let f=d,m=a?`p-3`:`px-4 py-4`,h;t[6]===m?h=t[7]:(h=p(`flex gap-3`,m),t[6]=m,t[7]=h);let g=o?.picture,_=o?.name,v;t[8]!==g||t[9]!==_?(v=(0,Z.jsx)(va,{picture:g,name:_}),t[8]=g,t[9]=_,t[10]=v):v=t[10];let y;t[11]!==n.entity_data||t[12]!==v?(y=(0,Z.jsx)(`div`,{className:`h-16 w-16 shrink-0 overflow-hidden rounded-lg`,children:(0,Z.jsx)(Mn,{business:n.entity_data,width:64,height:64,marker:v})}),t[11]=n.entity_data,t[12]=v,t[13]=y):y=t[13];let b;t[14]===i?b=t[15]:(b=i!=null&&(0,Z.jsx)(`div`,{className:`text-token-text-secondary line-clamp-1 text-sm leading-tight`,children:i}),t[14]=i,t[15]=b);let x;t[16]===f?x=t[17]:(x=(0,Z.jsx)(`div`,{title:f,className:`text-token-text-primary line-clamp-1 text-sm leading-tight font-semibold`,children:f}),t[16]=f,t[17]=x);let S;t[18]===u?S=t[19]:(S=u&&(0,Z.jsx)(`div`,{className:`text-token-text-secondary line-clamp-1 text-sm leading-tight`,children:(0,Z.jsx)(R,{id:`chatgpt.places.route_stops.card.user_location`,defaultMessage:`Your location`})}),t[18]=u,t[19]=S);let C;t[20]!==b||t[21]!==x||t[22]!==S?(C=(0,Z.jsxs)(`div`,{className:`flex min-w-0 flex-1 flex-col justify-center gap-0.5`,children:[b,x,S]}),t[20]=b,t[21]=x,t[22]=S,t[23]=C):C=t[23];let w;return t[24]!==C||t[25]!==h||t[26]!==y?(w=(0,Z.jsxs)(`div`,{className:h,children:[y,C]}),t[24]=C,t[25]=h,t[26]=y,t[27]=w):w=t[27],w},Ia=e=>{"use forget";let t=(0,Aa.c)(5),{dayNumber:n,title:r}=e,i;t[0]===r?i=t[1]:(i=r?.trim(),t[0]=r,t[1]=i);let a=i,o;return t[2]!==n||t[3]!==a?(o=(0,Z.jsx)(`h3`,{className:`text-token-text-primary px-6 pt-5 pb-2 text-base font-semibold`,children:a?(0,Z.jsx)(R,{id:`chatgpt.places.route_stops.sidebar.day_heading_with_title`,defaultMessage:`Day {dayNumber} · {title}`,values:{dayNumber:n,title:a}}):(0,Z.jsx)(R,{id:`chatgpt.places.route_stops.sidebar.day_heading`,defaultMessage:`Day {dayNumber}`,values:{dayNumber:n}})}),t[2]=n,t[3]=a,t[4]=o):o=t[4],o},La=e=>{"use forget";let t=(0,Aa.c)(25),{route:n,routeContext:r,routeUrl:i,trackContentReferenceEvent:a}=e,o=We(),s;t[0]===r?.title?s=t[1]:(s=r?.title?.trim(),t[0]=r?.title,t[1]=s);let c=s,l;t[2]===r?.narrative?l=t[3]:(l=r?.narrative?.trim(),t[2]=r?.narrative,t[3]=l);let u=l,d;t[4]!==o||t[5]!==n?(d=sa(o,n),t[4]=o,t[5]=n,t[6]=d):d=t[6];let f=d,p;t[7]===c?p=t[8]:(p=c||(0,Z.jsx)(R,{id:`chatgpt.places.route_stops.sidebar.title`,defaultMessage:`Route stops`}),t[7]=c,t[8]=p);let m;t[9]===p?m=t[10]:(m=(0,Z.jsx)(`h2`,{className:`text-token-text-primary text-[22px] leading-7 font-semibold`,children:p}),t[9]=p,t[10]=m);let h;t[11]===u?h=t[12]:(h=u!=null&&(0,Z.jsx)(`p`,{className:`text-token-text-primary mt-4 text-[17px] leading-6`,children:u}),t[11]=u,t[12]=h);let g;t[13]!==i||t[14]!==a?(g=i!=null&&(0,Z.jsx)(Se,{as:`a`,to:i,openNewTab:!0,rel:`noreferrer`,color:`secondary`,size:`small`,icon:dn,onClick:()=>{a(`link_action`,null,`map`,{url:i,link_type:`button`,action:`click`,section:`map`,section_location:`fullscreen`,section_index:0},e=>{Ot({action:`click`,actionType:Vt.CHATGPT_ENGAGEMENT_ACTION_TYPE_CLICKED,analyticsMetadata:e,contentReferenceType:`map`,linkAffordance:Xt.CHATGPT_LINK_AFFORDANCE_BUTTON,linkType:xt.CHATGPT_LINK_TYPE_LOCAL_BUSINESS_DIRECTIONS,surfaceLocation:Kt.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_FULLSCREEN_MAP,url:i})})},children:(0,Z.jsx)(R,{id:`chatgpt.places.route_stops.sidebar.open_route`,defaultMessage:`Open route`})}),t[13]=i,t[14]=a,t[15]=g):g=t[15];let _;t[16]===f?_=t[17]:(_=f!=null&&(0,Z.jsx)(`span`,{className:`text-token-text-secondary text-sm`,children:f}),t[16]=f,t[17]=_);let v;t[18]!==g||t[19]!==_?(v=(0,Z.jsxs)(`div`,{className:`mt-4 flex flex-wrap items-center gap-3`,children:[g,_]}),t[18]=g,t[19]=_,t[20]=v):v=t[20];let y;return t[21]!==m||t[22]!==h||t[23]!==v?(y=(0,Z.jsxs)(`div`,{className:`border-token-border-light border-b px-6 pt-9 pb-4`,children:[m,h,v]}),t[21]=m,t[22]=h,t[23]=v,t[24]=y):y=t[24],y},Ra=e=>{"use forget";let t=(0,Aa.c)(4),{stopNumber:n,totalStops:r}=e;if(n===1){let e;return t[0]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Z.jsx)(R,{id:`chatgpt.places.route_stops.card.role.start`,defaultMessage:`Start here`}),t[0]=e):e=t[0],e}if(n===r){let e;return t[1]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Z.jsx)(R,{id:`chatgpt.places.route_stops.card.role.destination`,defaultMessage:`Destination`}),t[1]=e):e=t[1],e}let i;return t[2]===n?i=t[3]:(i=(0,Z.jsx)(R,{id:`chatgpt.places.route_stops.card.role.intermediate`,defaultMessage:`Stop {stopNumber}`,values:{stopNumber:n}}),t[2]=n,t[3]=i),i},za=e=>{"use forget";let t=(0,Aa.c)(16),{intl:n,leg:r,route:i}=e,a;t[0]===i?a=t[1]:(a=Va(i),t[0]=i,t[1]=a);let o=a;if(o.length>0){let e;return t[2]!==n||t[3]!==o?(e=(0,Z.jsx)(Ba,{intl:n,segments:o}),t[2]=n,t[3]=o,t[4]=e):e=t[4],e}let s,c;if(t[5]!==n||t[6]!==r.duration_seconds||t[7]!==i){c=Symbol.for(`react.early_return_sentinel`);bb0:{let e=fa(n,r.duration_seconds);if(e==null){c=null;break bb0}s=Ga(n,i.route_mode,e)}t[5]=n,t[6]=r.duration_seconds,t[7]=i,t[8]=s,t[9]=c}else s=t[8],c=t[9];if(c!==Symbol.for(`react.early_return_sentinel`))return c;let l=s,u;t[10]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,Z.jsx)(`div`,{className:`bg-token-border-default h-px flex-1`}),t[10]=u):u=t[10];let d;t[11]===l?d=t[12]:(d=(0,Z.jsx)(`span`,{children:l}),t[11]=l,t[12]=d);let f;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,Z.jsx)(`div`,{className:`bg-token-border-default h-px flex-1`}),t[13]=f):f=t[13];let p;return t[14]===d?p=t[15]:(p=(0,Z.jsxs)(`div`,{className:`text-token-text-secondary flex h-[42px] items-center gap-3 px-4 text-sm leading-[18px]`,children:[u,d,f]}),t[14]=d,t[15]=p),p},Ba=e=>{"use forget";let t=(0,Aa.c)(5),{intl:n,segments:r}=e,i;t[0]!==n||t[1]!==r?(i=r.map((e,t)=>{let i=fa(n,e.duration_seconds),a=[],o=Ua(n,e),s;if(e.mode===`transit`){s=Wa(e.line?.color);let t=e.line?.headsign?.trim(),n=e.stops[0]?.name,r=e.stops.at(-1)?.name;t!=null&&t.length>0&&a.push((0,Z.jsx)(R,{id:`chatgpt.places.route_stops.transit_segment.direction`,defaultMessage:`Toward {headsign}`,values:{headsign:t}},`direction`)),n!=null&&r!=null&&n!==r&&a.push((0,Z.jsx)(R,{id:`chatgpt.places.route_stops.transit_segment.stations`,defaultMessage:`{boardingStop} → {arrivalStop}`,values:{boardingStop:n,arrivalStop:r}},`stations`))}else{let e=r[t+1],n=r[t-1],i=n?.stops.at(-1);if(e?.mode===`transit`&&e.stops[0]!=null){let t=e.stops[0].name;a.push((0,Z.jsx)(R,{id:`chatgpt.places.route_stops.transit_segment.walk_to_station`,defaultMessage:`To {station}`,values:{station:t}},`station`))}else if(n?.mode===`transit`&&i!=null){let e=i.name;a.push((0,Z.jsx)(R,{id:`chatgpt.places.route_stops.transit_segment.walk_from_station`,defaultMessage:`From {station}`,values:{station:e}},`station`))}}let c=e.mode===`transit`?i:null;return(0,Z.jsxs)(`div`,{className:`relative py-2 pe-4`,children:[(0,Z.jsx)(`span`,{"aria-hidden":`true`,className:`bg-token-border-default absolute -start-[21px] top-3 size-2.5 rounded-full`,style:{backgroundColor:s}}),(0,Z.jsxs)(`div`,{className:`flex items-start justify-between gap-3`,children:[(0,Z.jsx)(`span`,{className:`text-token-text-primary text-sm font-medium`,children:o}),(0,Z.jsx)(`span`,{className:`text-token-text-secondary shrink-0 text-sm`,children:c})]}),a.map(ka)]},`${e.mode}-${t}`)}),t[0]=n,t[1]=r,t[2]=i):i=t[2];let a;return t[3]===i?a=t[4]:(a=(0,Z.jsx)(`div`,{className:`border-token-border-default my-2 ms-7 border-s ps-4`,children:i}),t[3]=i,t[4]=a),a},Va=e=>e.route_mode===`transit`?(e.segments??[]).filter(e=>e.mode===`transit`||(e.duration_seconds??0)>0||(e.distance_meters??0)>0):[],Ha=(e,t)=>t.map(t=>Ua(e,t)).join(` → `),Ua=(e,t)=>{if(t.mode===`transit`)return t.line?.name?.trim()||t.line?.short_name?.trim()||e.formatMessage({id:`chatgpt.places.route_stops.transit_segment.unnamed_line`,defaultMessage:`Transit`});let n=fa(e,t.duration_seconds);return n==null?e.formatMessage({id:`chatgpt.places.route_stops.transit_segment.walk_without_duration`,defaultMessage:`Walk`}):e.formatMessage({id:`chatgpt.places.route_stops.transit_segment.walk_with_duration`,defaultMessage:`Walk {duration}`},{duration:n})},Wa=e=>{let t=e?.trim();if(!(t==null||!/^#?[0-9a-f]{6}$/i.test(t)))return t.startsWith(`#`)?t:`#${t}`},Ga=(e,t,n)=>t===`walking`?e.formatMessage({id:`chatgpt.places.route_stops.leg_duration.walking_duration`,defaultMessage:`Walk ~{duration}`},{duration:n}):t===`cycling`?e.formatMessage({id:`chatgpt.places.route_stops.leg_duration.cycling_duration`,defaultMessage:`Bike ~{duration}`},{duration:n}):t===`transit`?e.formatMessage({id:`chatgpt.places.route_stops.leg_duration.transit_duration`,defaultMessage:`Transit ~{duration}`},{duration:n}):e.formatMessage({id:`chatgpt.places.route_stops.leg_duration.driving_duration`,defaultMessage:`Drive ~{duration}`},{duration:n}),Ka=(e,t,n)=>e.formatMessage({id:`chatgpt.places.route_stops.card.incoming_leg_duration`,defaultMessage:`{routeMode, select, walking {Walk} cycling {Bike} transit {Transit} other {Drive}} ~{duration}`},{routeMode:t,duration:n})})),Ja,Ya,Xa,Za,Qa,$a=e((()=>{Gn(),Hn(),Ja=n(z()),ma(),_t(),Ya=e=>e?.find(e=>e.route!=null)?.route,Xa=({businesses:e,routeGroups:t,selectedRouteGroupIndex:n})=>{if(n==null)return e;let r=t?.[n];if(r==null||r.pointIds.length===0)return[];let i=new Set;return oa(e,r.pointIds).flatMap(({business:e})=>{let t=Jt(e);return i.has(t)?[]:(i.add(t),[e])})},Za=e=>e.route==null||e.route.geometry.coordinates.length<2?[]:[e.route,...(e.alternativeRoutes??[]).filter(e=>e.geometry.coordinates.length>=2)].flatMap(e=>e.geometry.coordinates),Qa=({businesses:e,routeGroups:t,controlledRouteGroupIndex:n,onRouteGroupChange:r,messageId:i})=>{let[a,o]=(0,Ja.useState)({groupIndex:null,messageId:i}),s=r==null?a.messageId===i?a.groupIndex:null:n??null,c=(0,Ja.useMemo)(()=>ra(t),[t]),l=(0,Ja.useMemo)(()=>Xa({businesses:e,routeGroups:t,selectedRouteGroupIndex:s}),[e,t,s]),u=(0,Ja.useMemo)(()=>t??[],[t]),d=(0,Ja.useMemo)(()=>s==null?u:u.slice(s,s+1),[u,s]),f=(0,Ja.useMemo)(()=>d.flatMap(Za),[d]),p=d.length===1?d[0]?.route:null;return{displayRouteGroups:d,displayedBusinesses:l,getRouteGroupBounds:(0,Ja.useCallback)(t=>{let n=t==null?u:u.slice(t,t+1),r=[...Xa({businesses:e,routeGroups:u,selectedRouteGroupIndex:t}).map(e=>Yn([e.entity_data.longitude,e.entity_data.latitude])),...n.flatMap(Za).map(e=>Yn(e))];return r.length===0?null:Qn(Vn(r))},[u,e]),routeCoordinates:f,routeGroupStops:c,selectedRoute:p,selectedRouteGroupIndex:s,selectRouteGroup:e=>{r==null?o({groupIndex:e,messageId:i}):r(e)}}}})),eo,to,no,ro,io,ao,oo,so,co,lo=e((()=>{eo=(e,t)=>{let n=e?.knownFields??[],r=t?.knownFields??[];return e?.title===t?.title&&e?.imageUrl===t?.imageUrl&&e?.label===t?.label&&e?.ratingLabel===t?.ratingLabel&&e?.hoursLabel===t?.hoursLabel&&e?.knownFields==null==(t?.knownFields==null)&&n.length===r.length&&n.every((e,t)=>e===r[t])},to=(e,t)=>e.id===t.id&&e.entity.id===t.entity.id&&(e.icon??``)===(t.icon??``)&&(e.description??``)===(t.description??``)&&eo(e.mapCarouselCard,t.mapCarouselCard)&&(e.notes??``)===(t.notes??``)&&(e.entity.reservation_providers?.length??0)===(t.entity.reservation_providers?.length??0)&&(e.entity.image_urls?.length??0)===(t.entity.image_urls?.length??0)&&(e.entity.reconciled_thumbnails?.length??0)===(t.entity.reconciled_thumbnails?.length??0)&&(e.entity.image_url??``)===(t.entity.image_url??``),no=(e,t)=>e.length===t.length&&e.every((e,n)=>to(e,t[n])),ro=(e,t)=>e.length===t.length&&e.every((e,n)=>e.length===t[n].length&&e.every((e,r)=>e===t[n][r])),io=(e,t)=>{let n=e??[],r=t??[];return n.length===r.length&&n.every((e,t)=>e===r[t])},ao=(e,t)=>e.length===t.length&&e.every((e,n)=>e.name===t[n].name&&ro([e.location],[t[n].location])),oo=(e,t)=>{let n=e?.segments??[],r=t?.segments??[];return n.length===r.length&&n.every((e,t)=>{let n=r[t];return e.mode===n.mode&&(e.distance_meters??null)===(n.distance_meters??null)&&(e.duration_seconds??null)===(n.duration_seconds??null)&&(e.start_time??``)===(n.start_time??``)&&(e.end_time??``)===(n.end_time??``)&&(e.line?.name??``)===(n.line?.name??``)&&(e.line?.short_name??``)===(n.line?.short_name??``)&&(e.line?.vehicle??``)===(n.line?.vehicle??``)&&(e.line?.network_name??``)===(n.line?.network_name??``)&&(e.line?.color??``)===(n.line?.color??``)&&(e.line?.text_color??``)===(n.line?.text_color??``)&&(e.line?.headsign??``)===(n.line?.headsign??``)&&ao(e.stops,n.stops)&&io(e.next_departures,n.next_departures)&&ro(e.geometry?.coordinates??[],n.geometry?.coordinates??[])})},so=(e,t)=>e===t||no(e.entities,t.entities)&&no(e.raw_search_entities??[],t.raw_search_entities??[])&&(e.answer??``)===(t.answer??``),co=(e,t)=>{if(e===t)return!0;let n=e??[],r=t??[];return n.length===r.length&&n.every((e,t)=>{let n=r[t],i=e.route?.geometry.coordinates??[],a=n.route?.geometry.coordinates??[],o=e.alternativeRoutes??[],s=n.alternativeRoutes??[];return(e.dayNumber??``)===(n.dayNumber??``)&&(e.title??``)===(n.title??``)&&(e.notesByPointId?.size??0)===(n.notesByPointId?.size??0)&&Array.from(e.notesByPointId??[]).every(([e,t])=>n.notesByPointId?.get(e)===t)&&e.pointIds.length===n.pointIds.length&&e.pointIds.every((e,t)=>e===n.pointIds[t])&&(e.route?.route_mode??``)===(n.route?.route_mode??``)&&(e.route?.duration_seconds??null)===(n.route?.duration_seconds??null)&&ro(i,a)&&oo(e.route,n.route)&&o.length===s.length&&o.every((e,t)=>{let n=s[t],r=e.geometry.coordinates,i=n.geometry.coordinates;return e.route_mode===n.route_mode&&(e.duration_seconds??null)===(n.duration_seconds??null)&&ro(r,i)&&oo(e,n)})})}})),uo,fo,po,mo,ho,go,_o,vo,yo=e((()=>{Zn(),uo=13.5,fo=250,po=5,mo=4,ho=111.32,go=e=>{let t=[...e].sort((e,t)=>e-t),n=Math.floor(t.length/2);return t.length%2==0?(t[n-1]+t[n])/2:t[n]},_o=e=>{if(e.length<po)return e;let t=go(e.map(([e])=>e)),n=go(e.map(([,e])=>e)),r=Math.cos(n*Math.PI/180),i=e.map(([e,i])=>Math.hypot((e-t)*r,i-n)*ho),a=Math.max(fo,go(i)*mo),o=e.filter((e,t)=>i[t]<=a);return o.length>e.length/2?o:e},vo=({coordinates:e,width:t,height:n,padding:r,center:i,ignoreCoordinateOutliers:a=!1})=>{if(t<=r.left+r.right||n<=r.top+r.bottom)return null;let o=e.filter(([e,t])=>Number.isFinite(e)&&Number.isFinite(t));if(o.length===0)return null;let s=a?_o(o):o,c=s.map(([e])=>e),l=s.map(([,e])=>e),u=[[Math.min(...c),Math.min(...l)],[Math.max(...c),Math.max(...l)]],d,f,p;if(i){let[e,a]=Bn([...i]),o=Math.max((t-r.left-r.right)/2,.5),c=Math.max((n-r.top-r.bottom)/2,.5);p=i[0],f=i[1],d=uo;for(let t of s){let[n,r]=Bn([...t]),i=Math.abs(n-e),s=Math.abs(r-a);i>0&&(d=Math.min(d,Math.log2(o/i))),s>0&&(d=Math.min(d,Math.log2(c/s)))}let l=new qn({width:t,height:n,longitude:p,latitude:f,zoom:d});[p,f]=l.getMapCenterByLngLatPosition({lngLat:[...i],pos:[(r.left+t-r.right)/2,(r.top+n-r.bottom)/2]})}else{let e=new qn({width:t,height:n,longitude:(u[0][0]+u[1][0])/2,latitude:(u[0][1]+u[1][1])/2});({zoom:d,latitude:f,longitude:p}=e.fitBounds(u,{maxZoom:uo,padding:r}))}let m=new qn({width:t,height:n,longitude:p,latitude:f,zoom:d}),[h,g]=m.unproject([0,0]),[_,v]=m.unproject([t,n]);return{bounds:u,viewState:{longitude:p,latitude:f,zoom:d,pitch:0,bearing:0,latSpan:Math.abs(g-v),longSpan:Math.abs(_-h)}}}})),bo=t({MapWithEntities:()=>ss,MapWithEntitiesComponent:()=>xo,MapWithEntitiesImpl:()=>To});function xo(e){"use forget";let t=(0,ko.c)(199),{contentReference:n,clientThreadId:i,conversationId:a,overlayMapSource:o,messageId:s,assistantMessageId:l,isGenui:d,trackContentReferenceEvent:f,turnIndex:h,locationFooter:g,showInlineFeedback:_,mapHeight:v,borderRadiusClassName:y,fill:b,minHeight:x,initialViewState:S,initialSelectedBusinessId:C,centerOnUser:w,ignoreCoordinateOutliers:T,enableFullscreen:D,onMapReady:O,onMapClick:k,onMarkerClick:A,onBusinessCardClick:j,onBusinessCarouselShown:M,staggerMarkerEntrance:N,keepMountedOnceVisible:ee,renderMapWhileLoading:ne,hideInlineCarousel:re,enableMapCarouselPresentation:ie,updateInlineMapStateOnMove:ae,routeContext:oe,routeGroups:ce,mapAnalyticsMetadata:le}=e,P=o===void 0?`inline-map`:o,ue=d!==void 0&&d,de=_===void 0||_,F=b!==void 0&&b,fe=x===void 0?Uo:x,pe=T!==void 0&&T,me=D===void 0||D,he=N!==void 0&&N,ge=ee!==void 0&&ee,ve=ne!==void 0&&ne,xe=re!==void 0&&re,Se=ie!==void 0&&ie,Te=ae!==void 0&&ae,Ee;t[0]===me?Ee=t[1]:(Ee=me&&c(`3194776735`),t[0]=me,t[1]=Ee);let Oe=Ee,{shouldBlockConsumerLockdownModeActionsForConversation:je}=yt(i),Me=(0,Q.useRef)(void 0),I=i?ke(i):null,Pe=I?Ge(I):null,Fe=a??(I?se(I):void 0),Ie=m(`4107938382`),Le,Re;if(t[2]===Symbol.for(`react.memo_cache_sentinel`)){let e=m(`4107938382`,{disableExposureLog:!0});Le=e.get(`map-entity-notes-experiment-enrolled`,!1),Re=e.get(`map-entity-notes-exposure-point`,`delivery_eligible`)===`opportunity`?`opportunity`:`delivery_eligible`,t[2]=Le,t[3]=Re}else Le=t[2],Re=t[3];let ze=Re,L;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(L=ct(),t[4]=L):L=t[4];let Be=L,Ve=Ie.get(`enable-rich-map-widget-trigger`,!1),R=Ve&&P===`inline-map`?Be.inlineLineCount:null,He=R==null?null:Bo[R]??Bo[zo],z=I&&Oe?Mt(I):null,{openThreadSidebar:Ue}=Et(),We=nn(),B=U(i,s),V=`${s}:${n.start_idx}:${n.type}`,qe;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(qe=[],t[5]=qe):qe=t[5];let Je;t[6]===V?Je=t[7]:(Je={mapIdentity:V,businesses:qe},t[6]=V,t[7]=Je);let[Ye,$e]=(0,Q.useState)(Je),tt=Ye.mapIdentity===V?Ye.businesses:[],{businesses:rt,additionalBusinesses:at}=et(n),ot=wt()&&rt.length===0&&B?Qe(B):rt,lt=new Map(B?Qe(B).map(wo):[]),ut=e=>{let t=lt.get(e.entity_data.id),n=t?.length?{...e,entity_data:{...e.entity_data,selected_images:t}}:e;return e.mapPointOccurrences==null?n:{...n,mapPointOccurrences:e.mapPointOccurrences.map(ut)}},W=jt(It(ot.map(ut),tt),tt),pt=jt(It(at.map(ut),tt),tt),ht=[...W,...pt],gt=Ht(Ye.businesses),_t=Ht(ht);(Ye.mapIdentity!==V||gt.length!==_t.length||!gt.every((e,t)=>{let n=_t[t];return n!=null&&Jt(e)===Jt(n)&&e.entity_data.id===n.entity_data.id&&e.notes===n.notes&&e.extra_params?.map_entity_notes_sidecar===n.extra_params?.map_entity_notes_sidecar}))&&$e({mapIdentity:V,businesses:ht});let vt=c(`2305612616`),{mapBusinesses:bt,carouselBusinesses:xt}=st({businesses:W,additionalBusinesses:pt,includeFastPathBusinesses:vt}),St=(0,Q.useRef)(!1),Ct;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(Ct={opportunity:``,delivery:``},t[8]=Ct):Ct=t[8];let Dt=(0,Q.useRef)(Ct),Ot;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(Ot=e=>{if(!e||St.current)return;let t,n=null,r=requestAnimationFrame(r=>{let i=e=>{_e.hist(De.DEFAULT,`sonic.map_entity_notes.user_perceived_latency_ms`,[],Math.round(e-r)),St.current=!0,t?.disconnect()};if(e.querySelector(Ro)){i(r);return}t=new MutationObserver(()=>{e.querySelector(Ro)&&(t?.disconnect(),n=requestAnimationFrame(i))}),t.observe(e,{childList:!0,subtree:!0})});return()=>{t?.disconnect(),cancelAnimationFrame(r),n!=null&&cancelAnimationFrame(n)}},t[9]=Ot):Ot=t[9];let kt=Ne(Ot),At=Ya(ce),Nt=At==null?null:aa(W,At)[0]?.business??null,Pt;t[10]===C?Pt=t[11]:(Pt=e=>e.entity_data.id===C,t[10]=C,t[11]=Pt);let Ft=Ht(bt).find(Pt),Lt=Ft==null?null:Jt(Ft),[Bt,Vt]=(0,Q.useState)(Lt??(Nt==null?null:Jt(Nt))),Wt;t[12]===Bt?Wt=t[13]:(Wt=e=>Jt(e)===Bt,t[12]=Bt,t[13]=Wt);let Gt=Ht(bt).find(Wt),qt=Gt?.entity_data.id??null,Yt;t[14]===s?Yt=t[15]:(Yt={groupIndex:null,messageId:s},t[14]=s,t[15]=Yt);let[Xt,Zt]=(0,Q.useState)(Yt),Qt=Xt.messageId===s?Xt.groupIndex:null,$t=Xa({businesses:xt,routeGroups:ce,selectedRouteGroupIndex:Qt}),tn;t[16]!==I||t[17]!==P||t[18]!==Vt?(tn=()=>{if(P===`places-button`&&I)return we(()=>zt(I)?.type===`entity`,e=>{e||Vt(null)})},t[16]=I,t[17]=P,t[18]=Vt,t[19]=tn):tn=t[19];let rn;t[20]!==I||t[21]!==P?(rn=[I,P],t[20]=I,t[21]=P,t[22]=rn):rn=t[22],(0,Q.useEffect)(tn,rn);let an=bt.length===0,on=an&&!ve,[sn,cn]=(0,Q.useState)(!1),ln;t[23]===ge?ln=t[24]:(ln=()=>{ge&&cn(!0)},t[23]=ge,t[24]=ln);let G=Ne(ln),un;t[25]===G?un=t[26]:(un={onIntersect:G},t[25]=G,t[26]=un);let[K,dn]=Tt(un),fn=K||ge&&sn,pn=dn,mn,hn;t[27]!==an||t[28]!==K||t[29]!==je?(mn=()=>{!an&&K&&!je&&E(`content_event`)},hn=[an,K,je],t[27]=an,t[28]=K,t[29]=je,t[30]=mn,t[31]=hn):(mn=t[30],hn=t[31]),(0,Q.useEffect)(mn,hn);let gn=n.start_idx<4,_n=(P===`places-button`?Fo:At==null?Po:P===`genui-map-widget`&&At.route_mode===`walking`?Lo:Io)+(He?.heightAdjustmentPx??0),vn=gn?Ho+(Ve&&!xe?_n:0):Vo,[yn,bn]=(0,Q.useState)(!1),xn;t[32]===Symbol.for(`react.memo_cache_sentinel`)?(xn=e=>{if(e==null)return;let t=e=>{let{width:t,height:n}=e,r=Ze({width:t,height:n});bn(e=>e===r?e:r)};if(typeof ResizeObserver>`u`){let n=requestAnimationFrame(()=>{t(e.getBoundingClientRect())});return()=>cancelAnimationFrame(n)}return te({axis:`both`,target:e,onChange:t})},t[32]=xn):xn=t[32];let Sn=xn,{shouldApplyObstruction:Cn,shouldRender:wn}=Xe({hasRoom:yn,hasCarouselBusinesses:$t.length>0,hasConversation:I!=null,isRichOpenerEnabled:Ve,isHidden:xe}),Tn,En;t[33]!==I||t[34]!==$t||t[35]!==an||t[36]!==K||t[37]!==M||t[38]!==At||t[39]!==je||t[40]!==wn?(Tn=()=>{wn&&K&&!an&&!je&&I&&At==null&&M?.($t)},En=[$t,I,an,K,M,At,je,wn],t[33]=I,t[34]=$t,t[35]=an,t[36]=K,t[37]=M,t[38]=At,t[39]=je,t[40]=wn,t[41]=Tn,t[42]=En):(Tn=t[41],En=t[42]),(0,Q.useEffect)(Tn,En);let Dn=Le&&P===`inline-map`&&K&&wn&&!je,On,kn;t[43]!==Dn||t[44]!==$t||t[45]!==s||t[46]!==Be.showNotes||t[47]!==Ie?(On=()=>{if(!Dn)return;if(Dt.current.opportunity!==s){(ze===`opportunity`||!Be.showNotes)&&Ie.get(`map-entity-notes-experiment-enrolled`,!1);let e=ye.logStructuredEvent(`ChatgptPlacesNotesEligibility`,{legacyStatsigEventName:`chatgpt_map_entity_notes_opportunity`,stage:`CHATGPT_PLACES_NOTES_STAGE_OPPORTUNITY`,messageId:s});Ce(`chatgpt_map_entity_notes_opportunity`,void 0,{...e?{unique_event_id:e}:{}}),Dt.current.opportunity=s}if(Dt.current.delivery===s||!$t.some(Co))return;ze===`delivery_eligible`&&Ie.get(`map-entity-notes-experiment-enrolled`,!1);let e=ye.logStructuredEvent(`ChatgptPlacesNotesEligibility`,{legacyStatsigEventName:`chatgpt_map_entity_notes_delivery_eligible`,stage:`CHATGPT_PLACES_NOTES_STAGE_DELIVERY_ELIGIBLE`,messageId:s});Ce(`chatgpt_map_entity_notes_delivery_eligible`,void 0,{...e?{unique_event_id:e}:{}}),Dt.current.delivery=s},kn=[Dn,$t,s,ze,Be.showNotes,Ie],t[43]=Dn,t[44]=$t,t[45]=s,t[46]=Be.showNotes,t[47]=Ie,t[48]=On,t[49]=kn):(On=t[48],kn=t[49]),(0,Q.useEffect)(On,kn);let q;t[50]===fe?q=t[51]:(q=H(fe),t[50]=fe,t[51]=q);let An=q,jn=v??Math.max(vn,An),Mn=F?`100%`:jn,Nn=(0,Q.useRef)(null),Pn;t[52]!==pt||t[53]!==l||t[54]!==W||t[55]!==i||t[56]!==n.start_idx||t[57]!==n.type||t[58]!==I||t[59]!==Lt||t[60]!==Oe||t[61]!==le||t[62]!==B||t[63]!==s||t[64]!==P||t[65]!==z||t[66]!==oe||t[67]!==ce||t[68]!==Vt||t[69]!==h?(Pn=e=>{let t=`${s}:${n.start_idx}`;le!=null&&Nn.current!==t&&(as({action:mt.CHATGPT_GENUI_MAP_ENGAGEMENT_ACTION_CLICKED,contentReferenceStartIndex:n.start_idx,mapAnalyticsMetadata:le,messageId:s}),Nn.current=t),ye.logStructuredEvent(`ChatgptPlacesFullscreenOpened`,{conversationId:i,messageId:s,entryPoint:en.CHATGPT_PLACES_ENTRY_POINT_MAP_WIDGET});let r=B?Qe(B):[],a=Rt([...W,...pt],r);I&&Oe&&ft(I).setPopoverData$({contentReferenceStartIndex:n.start_idx,turnIndex:h}),!(!I||!z)&&(nt({businesses:a,conversation:I,contentReferenceStartIndex:n.start_idx,contentReferenceType:n.type,currentViewState:e,isMobile:!be(),messageId:s,assistantMessageId:l,turnIndex:h,mapSource:P,routeGroups:ce,routeContext:oe}),Vt(Lt))},t[52]=pt,t[53]=l,t[54]=W,t[55]=i,t[56]=n.start_idx,t[57]=n.type,t[58]=I,t[59]=Lt,t[60]=Oe,t[61]=le,t[62]=B,t[63]=s,t[64]=P,t[65]=z,t[66]=oe,t[67]=ce,t[68]=Vt,t[69]=h,t[70]=Pn):Pn=t[70];let Fn=Pn,In;t[71]!==Oe||t[72]!==P||t[73]!==Ie?(In=Oe&&P===`inline-map`&&Ie.get(`enable-inline-map-load-optimizations`,!1),t[71]=Oe,t[72]=P,t[73]=Ie,t[74]=In):In=t[74];let Rn=In,zn,Bn;t[75]!==Rn||t[76]!==Oe||t[77]!==s||t[78]!==z?(zn=()=>{!Rn&&Oe&&z&&z.currentMessageId$()===void 0&&z.setCurrentMessageId$(s)},Bn=[Rn,Oe,z,s],t[75]=Rn,t[76]=Oe,t[77]=s,t[78]=z,t[79]=zn,t[80]=Bn):(zn=t[79],Bn=t[80]),(0,Q.useEffect)(zn,Bn);let Vn;t[81]===z?Vn=t[82]:(Vn=()=>z?.isOpen$(),t[81]=z,t[82]=Vn);let Hn=r(Vn),Un;t[83]===z?Un=t[84]:(Un=()=>z?.currentMessageId$(),t[83]=z,t[84]=Un);let Wn=r(Un),Gn;t[85]!==an||t[86]!==de?(Gn=de&&!an&&dt(),t[85]=an,t[86]=de,t[87]=Gn):Gn=t[87];let Kn=Gn,qn=Oe&&!Hn&&Wn===s,Jn;t[88]!==l||t[89]!==n.start_idx||t[90]!==ue||t[91]!==s?(Jn=e=>({type:`entity`,debugThreadId:void 0,messageId:s,assistantMessageId:l,contentReferenceStartIndex:n.start_idx,query:e.entity_data.name,category:Ke(e),entityId:e.entity_data.id,isGenui:ue,extraParams:Ae(e.entity_data,e.extra_params),imageThumbnailUrl:it(e.entity_data)??void 0}),t[88]=l,t[89]=n.start_idx,t[90]=ue,t[91]=s,t[92]=Jn):Jn=t[92];let Yn=Jn,Xn;t[93]!==i||t[94]!==We||t[95]!==I||t[96]!==Yn||t[97]!==Ue?(Xn=e=>{i&&(We||I&&Ut(I),Ue(Yn(e)))},t[93]=i,t[94]=We,t[95]=I,t[96]=Yn,t[97]=Ue,t[98]=Xn):Xn=t[98];let Zn=Xn,Qn;t[99]!==l||t[100]!==i||t[101]!==n.start_idx||t[102]!==n.type||t[103]!==Fe||t[104]!==ue||t[105]!==s||t[106]!==A||t[107]!==Zn||t[108]!==Vt||t[109]!==h?(Qn=(e,t)=>{t===`marker`&&A?.(),E(`local_entity_clicked`);let r=e.entity_data.id;Ln({source:t===`marker`?`marker`:`list`,clientThreadId:i,conversationId:Fe,messageId:s,assistantMessageId:l,turnIndex:h,contentReferenceStartIndex:n.start_idx,surfaceLocation:Kt.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE,entityId:r,entityCategory:Ke(e),contentReferenceType:n.type,isGenui:ue}),Vt(Jt(e)),Zn(e)},t[99]=l,t[100]=i,t[101]=n.start_idx,t[102]=n.type,t[103]=Fe,t[104]=ue,t[105]=s,t[106]=A,t[107]=Zn,t[108]=Vt,t[109]=h,t[110]=Qn):Qn=t[110];let $n=Ne(Qn),er;t[111]!==j||t[112]!==Zn||t[113]!==Vt?(er=e=>{j?.(),E(`local_entity_clicked`),Vt(Jt(e)),Zn(e)},t[111]=j,t[112]=Zn,t[113]=Vt,t[114]=er):er=t[114];let tr=er;if(je)return null;let nr=F&&`flex h-full min-h-0 flex-1 flex-col`,rr;t[115]===nr?rr=t[116]:(rr=p(`not-prose`,nr),t[115]=nr,t[116]=rr);let ir;t[117]!==F||t[118]!==An?(ir=F?{minHeight:An}:void 0,t[117]=F,t[118]=An,t[119]=ir):ir=t[119];let ar=F?`flex h-full min-h-0 flex-1 flex-col`:gn?`pb-2`:`pt-4`,or;t[120]===ar?or=t[121]:(or=p(ar),t[120]=ar,t[121]=or);let sr=F&&`flex h-full min-h-0 flex-1 flex-col`,cr;t[122]===sr?cr=t[123]:(cr=p(Jo,sr),t[122]=sr,t[123]=cr);let ur=F?void 0:on?`0px`:`${jn}px`,dr=+!on,fr;t[124]!==ur||t[125]!==dr?(fr={maxHeight:ur,opacity:dr},t[124]=ur,t[125]=dr,t[126]=fr):fr=t[126];let pr;t[127]!==l||t[128]!==y||t[129]!==w||t[130]!==i||t[131]!==n.safe_urls||t[132]!==n.start_idx||t[133]!==n.type||t[134]!==I||t[135]!==Fe||t[136]!==Rn||t[137]!==$t||t[138]!==Se||t[139]!==F||t[140]!==tr||t[141]!==$n||t[142]!==pe||t[143]!==S||t[144]!==_n||t[145]!==He?.className||t[146]!==Pe||t[147]!==ue||t[148]!==on||t[149]!==Oe||t[150]!==vt||t[151]!==le||t[152]!==bt||t[153]!==Mn||t[154]!==pn||t[155]!==s||t[156]!==Be.showNotes||t[157]!==kt||t[158]!==Fn||t[159]!==k||t[160]!==O||t[161]!==P||t[162]!==z||t[163]!==At||t[164]!==oe||t[165]!==ce||t[166]!==An||t[167]!==Gt?.mapEntityId||t[168]!==qt||t[169]!==Qt||t[170]!==Zt||t[171]!==Cn||t[172]!==qn||t[173]!==wn||t[174]!==fn||t[175]!==he||t[176]!==f||t[177]!==h||t[178]!==Te?(pr=!on&&(0,$.jsx)(`div`,{ref:pn,style:{height:Mn,minHeight:F?An:void 0},className:p(`bg-[rgba(244,240,239,0.5)] dark:bg-[rgba(38,43,61,0.5)]`,!F&&(y??`rounded-[30px]`),F&&`min-h-0 flex-1`),children:fn&&(0,$.jsxs)(`div`,{className:p(`relative isolate h-full overflow-hidden`,!F&&(y??`rounded-3xl`)),children:[(0,$.jsx)(To,{height:Mn,mapSource:P,businesses:bt,clientThreadId:i,conversationId:Fe,contentReferenceStartIndex:n.start_idx,contentReferenceType:n.type,messageId:s,turnIndex:h,mapMessageId:s,trackContentReferenceEvent:f,mapAnalyticsMetadata:le,onFullScreenToggle:Oe?Fn:void 0,containerClassName:p(`overflow-hidden`,!F&&(y??`rounded-3xl`),qn&&`motion-safe:[view-transition-name:map-with-entities]`),obstructionPx:Cn?{bottom:_n}:void 0,refitOnBottomObstructionChange:!0,onMapClick:e=>{k?.(),Oe&&Fn(e)},selectedBusinessId:qt,selectedMapEntityId:Gt?.mapEntityId,initialViewState:S,centerOnUser:w,ignoreCoordinateOutliers:pe,markerTooltipLocation:`top`,onMarkerClick:$n,renderNonPreferredAsProvisional:vt,onMoveCallback:e=>{Me.current=e},onMoveEndCallback:e=>{Te&&Pe&&Pe.setSettledViewState$({mapInstanceKey:s,mapMessageId:s,viewState:e})},onMapReady:Rn?()=>{z!=null&&z.currentMessageId$()===void 0&&z.setCurrentMessageId$(s),O?.()}:O,staggerMarkerEntrance:he,routeGroups:ce,routeGroupsTitle:oe?.groupsTitle,selectedRouteGroupIndex:Qt,onRouteGroupChange:e=>Zt({groupIndex:e,messageId:s})}),wn&&I&&(0,$.jsx)(`div`,{ref:kt,className:`pointer-events-none absolute inset-x-0 bottom-0 z-1`,children:(0,$.jsx)(`div`,{className:`pointer-events-auto`,children:At==null&&(ce==null||ce.length===0)?(0,$.jsx)(Tr,{conversation:I,messageId:s,engagementLoggingContext:{assistantMessageId:l,turnIndex:h,contentReferenceStartIndex:n.start_idx,contentReferenceType:n.type,isGenui:ue,surfaceLocation:Kt.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE},businesses:$t,additionalBusinesses:[],onClick:tr,onHover:e=>{Mt(I).setHoveredBusinessId$(e)},trackContentReferenceEvent:f,setShowAdditionalBusinesses:So,showAdditionalBusinesses:!1,isLoading:!1,renderAsCarousel:!0,enableMapCarouselPresentation:Se,approvedImageUrls:n.safe_urls??void 0,showNotes:Be.showNotes,carouselNotesClassName:He?.className}):(0,$.jsx)(Pa,{conversation:I,messageId:s,businesses:$t,routeGroups:ce??[],selectedRouteGroupIndex:Qt,routeContext:oe,onClick:tr,onHover:e=>{Mt(I).setHoveredBusinessId$(e)},trackContentReferenceEvent:f,routeDisplayMode:`carousel`,enableMapCarouselPresentation:Se,approvedImageUrls:n.safe_urls??void 0,carouselNotesClassName:He?.className})})}),(0,$.jsx)(`div`,{className:p(`ring-token-border-default/50 pointer-events-none absolute inset-0 z-2 ring-1 ring-inset`,!F&&(y??`rounded-3xl`))})]})}),t[127]=l,t[128]=y,t[129]=w,t[130]=i,t[131]=n.safe_urls,t[132]=n.start_idx,t[133]=n.type,t[134]=I,t[135]=Fe,t[136]=Rn,t[137]=$t,t[138]=Se,t[139]=F,t[140]=tr,t[141]=$n,t[142]=pe,t[143]=S,t[144]=_n,t[145]=He?.className,t[146]=Pe,t[147]=ue,t[148]=on,t[149]=Oe,t[150]=vt,t[151]=le,t[152]=bt,t[153]=Mn,t[154]=pn,t[155]=s,t[156]=Be.showNotes,t[157]=kt,t[158]=Fn,t[159]=k,t[160]=O,t[161]=P,t[162]=z,t[163]=At,t[164]=oe,t[165]=ce,t[166]=An,t[167]=Gt?.mapEntityId,t[168]=qt,t[169]=Qt,t[170]=Zt,t[171]=Cn,t[172]=qn,t[173]=wn,t[174]=fn,t[175]=he,t[176]=f,t[177]=h,t[178]=Te,t[179]=pr):pr=t[179];let J;t[180]!==on||t[181]!==Sn||t[182]!==cr||t[183]!==fr||t[184]!==pr?(J=(0,$.jsx)(`div`,{ref:Sn,className:cr,style:fr,"aria-hidden":on,children:pr}),t[180]=on,t[181]=Sn,t[182]=cr,t[183]=fr,t[184]=pr,t[185]=J):J=t[185];let mr;t[186]!==i||t[187]!==g||t[188]!==s||t[189]!==Kn?(mr=(g||Kn)&&(0,$.jsxs)(`div`,{className:`flex items-center gap-2`,children:[g,Kn&&(0,$.jsx)(`div`,{className:`ms-auto shrink-0`,children:(0,$.jsx)(lr,{messageId:s,clientThreadId:i,source:`inline-map`})})]}),t[186]=i,t[187]=g,t[188]=s,t[189]=Kn,t[190]=mr):mr=t[190];let hr;t[191]!==or||t[192]!==J||t[193]!==mr?(hr=(0,$.jsxs)(`div`,{className:or,children:[J,mr]}),t[191]=or,t[192]=J,t[193]=mr,t[194]=hr):hr=t[194];let gr;return t[195]!==rr||t[196]!==ir||t[197]!==hr?(gr=(0,$.jsx)(u,{children:(0,$.jsx)(`div`,{className:rr,style:ir,"data-testid":`businesses-map-widget`,"data-w-component":`map`,"data-d-component":`map`,children:hr})}),t[195]=rr,t[196]=ir,t[197]=hr,t[198]=gr):gr=t[198],gr}function So(){}function Co(e){let{extra_params:t,notes:n}=e;return t?.map_entity_notes_sidecar===!0&&!!n?.trim()}function wo(e){let{entity_data:t}=e;return[t.id,t.selected_images]}function To(e){"use forget";let t=(0,ko.c)(2),{clientThreadId:n}=e,{shouldBlockConsumerLockdownModeActionsForConversation:r}=yt(n);if(r)return null;let i;return t[0]===e?i=t[1]:(i=(0,$.jsx)(Eo,{...e}),t[0]=e,t[1]=i),i}function Eo(e){"use forget";let t=(0,ko.c)(401),{businesses:n,routeGroups:i,routeGroupsTitle:a,selectedRouteGroupIndex:o,onRouteGroupChange:s,mapSource:l,clientThreadId:u,conversationId:d,contentReferenceStartIndex:f,contentReferenceType:h,messageId:g,mapAttributionTrackContentReferenceEvent:_,trackContentReferenceEvent:v,mapAnalyticsMetadata:y,mapMessageId:S,isFullScreen:C,onFullScreenToggle:w,containerClassName:T,selectedBusinessId:E,selectedMapEntityId:D,initialViewState:k,centerOnUser:A,onMoveCallback:j,onMoveEndCallback:M,onMapReady:N,staggerMarkerEntrance:te,shouldFitBoundsOnNewResults:re,obstructionPx:ie,enableOverlayLoadingAnimation:ae,markerTooltipLocation:se,renderNonPreferredAsProvisional:ce,onMarkerClick:le,onMapClick:P,assistantTurnNavigation:ue,shouldThrottleMapRecenter:F,refitOnBottomObstructionChange:pe,ignoreCoordinateOutliers:me,height:he}=e,ge=A!==void 0&&A,ve=te!==void 0&&te,Se=re!==void 0&&re,Ce;t[0]===ie?Ce=t[1]:(Ce=ie===void 0?{}:ie,t[0]=ie,t[1]=Ce);let we=Ce,Te=ce!==void 0&&ce,Ee=F===void 0||F,ke=pe!==void 0&&pe,Ae=me!==void 0&&me,je=he===void 0?Vo:he,Me=We(),Pe;t[2]===Me.locale?Pe=t[3]:(Pe={language:Me.locale},t[2]=Me.locale,t[3]=Pe);let Le=Pe,Re;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(Re=c(`1950533395`),t[4]=Re):Re=t[4];let ze=Re,L=(0,Q.useRef)(k==null),Be=(0,Q.useRef)(null),Ve=(0,Q.useRef)(null),R=O(),He=c(`3940942374`)||m(`4107938382`).get(`enable-discovery-map-style`,!1),z=He?Ft:Zt,Ue=He?gt:qt,Ge=!r(be),B=r(I),V=(0,Q.useRef)(null),Ke=l===`inline-map`,qe=m(`4107938382`).get(`enable-rich-map-widget-trigger`,!1),Je;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(Je=c(`3413445247`)||m(`4107938382`).get(`enable-3d-maps`,!1),t[5]=Je):Je=t[5];let H=Je,Xe=!!(H&&C&&k?.is3d),Ze=(0,Q.useRef)(Xe),Qe=Xe?k?.pitch??ts:0,$e=C?k?.bearing??0:0,et;t[6]!==k||t[7]!==Xe||t[8]!==Qe||t[9]!==$e?(et={...Yo,...k,pitch:Qe,bearing:$e,is3d:Xe},t[6]=k,t[7]=Xe,t[8]=Qe,t[9]=$e,t[10]=et):et=t[10];let tt=et,nt=(0,Q.useRef)(tt),rt=(0,Q.useRef)(k),[U,it]=(0,Q.useState)(tt),[at,st]=(0,Q.useState)(Xe),[ct,lt]=(0,Q.useState)(!1),ut=r(Fe),dt=ee(),[ft,W]=(0,Q.useState)(!1),[pt,_t]=(0,Q.useState)(!1),[vt,yt]=(0,Q.useState)(!1),bt=!(ve&&!B)||vt,xt;t[11]!==k||t[12]!==H||t[13]!==C||t[14]!==W||t[15]!==_t||t[16]!==it?(xt=()=>{if(!H&&Ze.current){Ze.current=!1,st(!1),it(e=>{let t={...e,pitch:0,bearing:0,is3d:!1};return nt.current=t,t});let e=V.current?.getMap();e!=null&&(e.setMaxPitch(0),rs(e,!1),e.jumpTo({pitch:0,bearing:0}))}if(!k)return;if(!C){let e=rt.current;if(rt.current=k,e?.latitude===k.latitude&&e.longitude===k.longitude&&e.zoom===k.zoom)return}let{latSpan:e,longSpan:t}=Ye(V.current),n=!!(H&&C&&k.is3d),r={...k,pitch:n?k.pitch??ts:0,bearing:H&&C?k.bearing??0:0,is3d:n,latSpan:e>0?e:k.latSpan,longSpan:t>0?t:k.longSpan};Ze.current=n,st(n);let i=V.current?.getMap();i!=null&&rs(i,n),it(r),nt.current=r,L.current=!1,W(!1),_t(!1)},t[11]=k,t[12]=H,t[13]=C,t[14]=W,t[15]=_t,t[16]=it,t[17]=xt):xt=t[17];let Ct;t[18]!==k||t[19]!==H||t[20]!==C?(Ct=[k,H,C],t[18]=k,t[19]=H,t[20]=C,t[21]=Ct):Ct=t[21],(0,Q.useEffect)(xt,Ct);let wt=we.right??0,Tt=we.bottom??0,Et=(0,Q.useRef)(Tt),Dt=(C||!w?No:70)+Tt,Ot=Mo+wt,kt=(0,Q.useRef)(!1),At,jt;t[22]===v?(At=t[23],jt=t[24]):(At=()=>{kt.current||=(v(`Search Content Reference Shown`,`search_content_reference_shown`,`map`),!0)},jt=[v],t[22]=v,t[23]=At,t[24]=jt),(0,Q.useEffect)(At,jt);let Mt=(0,Q.useRef)(null),Nt,Pt;t[25]!==f||t[26]!==y||t[27]!==g?(Nt=()=>{let e=`${g}:${f??0}`;y==null||Mt.current===e||(as({action:mt.CHATGPT_GENUI_MAP_ENGAGEMENT_ACTION_SHOWN,contentReferenceStartIndex:f??0,mapAnalyticsMetadata:y,messageId:g}),Mt.current=e)},Pt=[f,y,g],t[25]=f,t[26]=y,t[27]=g,t[28]=Nt,t[29]=Pt):(Nt=t[28],Pt=t[29]),(0,Q.useEffect)(Nt,Pt);let It;t[30]===Symbol.for(`react.memo_cache_sentinel`)?(It=new Set,t[30]=It):It=t[30];let[Lt,Rt]=(0,Q.useState)(It),zt=(0,Q.useRef)(-1),Bt=(0,Q.useRef)(``),Vt=(0,Q.useRef)(``),Ht=(0,Q.useRef)(null),Ut;t[31]===Symbol.for(`react.memo_cache_sentinel`)?(Ut=ds(),t[31]=Ut):Ut=t[31];let Wt=(0,Q.useRef)(Ut),Gt=(0,Q.useRef)(null),Kt=(0,Q.useRef)(null),Xt=(0,Q.useRef)(null),Qt=(0,Q.useRef)(null),$t;t[32]===Symbol.for(`react.memo_cache_sentinel`)?($t=new Set,t[32]=$t):$t=t[32];let en=(0,Q.useRef)($t),tn=(0,Q.useRef)(null),nn=(0,Q.useRef)(!1),rn=(0,Q.useRef)(null),an,on;t[33]===Symbol.for(`react.memo_cache_sentinel`)?(an=()=>()=>{rn.current!=null&&cancelAnimationFrame(rn.current)},on=[],t[33]=an,t[34]=on):(an=t[33],on=t[34]),(0,Q.useEffect)(an,on);let sn=(0,Q.useRef)(0),cn;t[35]!==n||t[36]!==o||t[37]!==g||t[38]!==s||t[39]!==i?(cn={businesses:n,routeGroups:i,controlledRouteGroupIndex:o,onRouteGroupChange:s,messageId:g},t[35]=n,t[36]=o,t[37]=g,t[38]=s,t[39]=i,t[40]=cn):cn=t[40];let{displayRouteGroups:ln,displayedBusinesses:G,getRouteGroupBounds:un,routeCoordinates:K,routeGroupStops:dn,selectedRoute:fn,selectedRouteGroupIndex:pn,selectRouteGroup:mn}=Qa(cn),hn;t[41]!==G||t[42]!==E||t[43]!==D||t[44]!==pn?(hn=(D==null?void 0:G.find(e=>e.mapEntityId===D))??(D==null||pn==null?G.find(e=>e.entity_data.id===E):void 0),t[41]=G,t[42]=E,t[43]=D,t[44]=pn,t[45]=hn):hn=t[45];let gn=hn,_n;t[46]!==G.length||t[47]!==C||t[48]!==l?(_n=G.length===0||C||l!==`inline-map`||m(`4107938382`).get(`enable-inline-map-entity-hover-card`,!0),t[46]=G.length,t[47]=C,t[48]=l,t[49]=_n):_n=t[49];let vn=_n,yn;t[50]===G?yn=t[51]:(yn=us(G),t[50]=G,t[51]=yn);let bn=yn,Sn,Cn;t[52]!==G||t[53]!==Te?(Sn=ot({businesses:G,renderNonPreferredAsProvisional:Te}),Cn=us(Sn),t[52]=G,t[53]=Te,t[54]=Sn,t[55]=Cn):(Sn=t[54],Cn=t[55]);let En=Cn,Dn;t[56]!==Dt||t[57]!==Ot||t[58]!==un||t[59]!==B||t[60]!==W||t[61]!==_t?(Dn=e=>{let t=un(e);t!=null&&(V.current?.fitBounds([[t[0],t[1]],[t[2],t[3]]],{pitch:V.current.getPitch(),bearing:V.current.getBearing(),maxZoom:uo,padding:{top:Ao,left:jo,right:Ot,bottom:Dt},duration:B?0:1200}),W(!1),_t(!1))},t[56]=Dt,t[57]=Ot,t[58]=un,t[59]=B,t[60]=W,t[61]=_t,t[62]=Dn):Dn=t[62];let kn=Ne(Dn),[q,An]=(0,Q.useState)(!1),jn,Mn;t[63]===q?(jn=t[64],Mn=t[65]):(jn=()=>{let e=V.current?.getMap();if(q&&e)return ii(e)},Mn=[q],t[63]=q,t[64]=jn,t[65]=Mn),(0,Q.useEffect)(jn,Mn);let Nn=C?`immersive_fullscreen`:`inline_map_card`,Pn=G.length>0,Fn=`${g}:${f??`none`}:${Nn}`,In=`${g}:${Nn}:${bn}`,Ln;t[66]===Fn?Ln=t[67]:(Ln=()=>(Qt.current?.key!==Fn&&(Qt.current={key:Fn,firstEntityCommittedAtMs:null,firstMarkerRenderedAtMs:null,loggedMetricNames:new Set}),Qt.current),t[66]=Fn,t[67]=Ln);let Rn=Ne(Ln),zn;t[68]!==Rn||t[69]!==Nn?(zn=()=>{let e=Rn(),t=Kt.current,n=e.firstMarkerRenderedAtMs,r=[[Wo,t],[Go,Xt.current],[Ko,n],[qo,t!=null&&n!=null?Math.max(t,n):null]];for(let[t,n]of r)Yt(e.loggedMetricNames,t,e.firstEntityCommittedAtMs,n,e=>{_e.hist(De.DEFAULT,t,{map_surface:Nn},e)})},t[68]=Rn,t[69]=Nn,t[70]=zn):zn=t[70];let Bn=Ne(zn),Vn;t[71]!==Rn||t[72]!==Pn||t[73]!==Bn?(Vn=()=>{let e=Rn();if(Pn&&e.firstEntityCommittedAtMs==null){let t=ds();e.firstEntityCommittedAtMs=t,Kt.current!=null&&Kt.current<t&&(Kt.current=t),Xt.current!=null&&Xt.current<t&&(Xt.current=t)}Bn()},t[71]=Rn,t[72]=Pn,t[73]=Bn,t[74]=Vn):Vn=t[74];let Hn;t[75]!==Rn||t[76]!==Pn||t[77]!==Bn||t[78]!==Fn?(Hn=[Rn,Pn,Bn,Fn],t[75]=Rn,t[76]=Pn,t[77]=Bn,t[78]=Fn,t[79]=Hn):Hn=t[79],b(Vn,Hn);let Wn;t[80]===Symbol.for(`react.memo_cache_sentinel`)?(Wn=()=>{en.current=new Set,tn.current=null,Wt.current=ds()},t[80]=Wn):Wn=t[80];let Gn;t[81]===In?Gn=t[82]:(Gn=[In],t[81]=In,t[82]=Gn),(0,Q.useEffect)(Wn,Gn);let Kn;t[83]!==G.length||t[84]!==u||t[85]!==q||t[86]!==In||t[87]!==Nn||t[88]!==g?(Kn=()=>{if(!q||G.length===0||en.current.size===0||tn.current===In)return;let e=ds(),t=Gt.current==null?void 0:Math.max(0,Math.round(Gt.current-Wt.current)),n=Math.max(0,Math.round(e-Wt.current)),r=G.length;if(u!=null&&g!=null&&!ns.has(g)){let t=ne(xe.getRequestId(Oe(u))??``)?.completionRequest;if(t!=null){let n=t?.requestCompletionCallsiteId?.startsWith(`request_completion.places.places_overlay.`)||t?.requestCompletionCallsiteId?.startsWith(`request_completion.formatted_text.contentReferences.maps.controls.`)?`experience_places`:`root`;ns.add(g),ye.logStructuredEvent(`ChatgptPlacesTimeToFirstPin`,{conversationId:u,messageId:g,timeToFirstPinMs:x(Math.round(e-t.turnTracker.promptSentTimestamp)),submitSurface:n})}}ye.logStructuredEvent(`ChatgptPlacesMapReady`,{conversationId:u,messageId:g,mapSurface:Nn,webviewLoadTimeMs:t==null?void 0:x(t),initialContentsLoadTimeMs:x(0),mapReadyTimeMs:x(n),entityCount:fe(r)}),tn.current=In},t[83]=G.length,t[84]=u,t[85]=q,t[86]=In,t[87]=Nn,t[88]=g,t[89]=Kn):Kn=t[89];let qn=Ne(Kn),Jn;t[90]===Symbol.for(`react.memo_cache_sentinel`)?(Jn=e=>{Ze.current=e,st(e),V.current?.getMap().setMaxPitch(e?60:0),V.current?.getMap().setConfigProperty(`basemap`,`show3dObjects`,e)},t[90]=Jn):Jn=t[90];let Yn=Ne(Jn),Zn;t[91]!==G||t[92]!==ct||t[93]!==d||t[94]!==Dt||t[95]!==Ot||t[96]!==H||t[97]!==C||t[98]!==g||t[99]!==E||t[100]!==Yn?(Zn=()=>{let e=V.current?.getMap();if(!H||!C||!ct||e==null)return;let t=!Ze.current,n=E?G.find(e=>e.entity_data.id===E):null,r=n?[n.entity_data.longitude,n.entity_data.latitude]:null;Yn(t),e.easeTo({pitch:t?ts:0,bearing:t?e.getBearing():0,...t&&r?{center:r,zoom:Math.max(e.getZoom(),es),padding:{top:Ao,left:jo,right:Ot,bottom:Dt}}:{}}),ye.logStructuredEvent(`ChatgptPlacesMapViewToggled`,{conversationId:d,messageId:g,is3d:t})},t[91]=G,t[92]=ct,t[93]=d,t[94]=Dt,t[95]=Ot,t[96]=H,t[97]=C,t[98]=g,t[99]=E,t[100]=Yn,t[101]=Zn):Zn=t[101];let Qn=Ne(Zn),$n;t[102]!==q||t[103]!==lt?($n=()=>{let e=V.current?.getMap();if(!q||e==null)return;let t=()=>{rs(e,Ze.current),lt(!0)},n=()=>{Ze.current=!1,st(!1),lt(!1)},r=()=>{e.setConfigProperty(`basemap`,`show3dObjects`,!1),e.jumpTo({pitch:0,bearing:0}),lt(!0)};return e.on(`style.load`,t),e.on(`webglcontextlost`,n),e.on(`webglcontextrestored`,r),()=>{e.off(`style.load`,t),e.off(`webglcontextlost`,n),e.off(`webglcontextrestored`,r)}},t[102]=q,t[103]=lt,t[104]=$n):$n=t[104];let er;t[105]===q?er=t[106]:(er=[q],t[105]=q,t[106]=er),(0,Q.useEffect)($n,er);let tr;t[107]===qn?tr=t[108]:(tr=()=>{qn()},t[107]=qn,t[108]=tr);let nr;t[109]!==G.length||t[110]!==q||t[111]!==qn?(nr=[qn,q,G.length],t[109]=G.length,t[110]=q,t[111]=qn,t[112]=nr):nr=t[112],(0,Q.useEffect)(tr,nr);let rr;t[113]!==Rn||t[114]!==qn||t[115]!==Bn?(rr=e=>{let t=ds();en.current.add(e),qn();let n=Rn();n.firstMarkerRenderedAtMs??=t,Bn()},t[113]=Rn,t[114]=qn,t[115]=Bn,t[116]=rr):rr=t[116];let ar=Ne(rr),or,sr;t[117]!==Sn||t[118]!==En||t[119]!==q||t[120]!==U.zoom?(or=()=>{let e=V.current;if(!e||!q||!(zt.current===-1||zt.current!==U.zoom||Bt.current!==En))return;let t=ms(e,Sn);if(!t)return;let n=hs(t);Rt(e=>fs(e,n)?e:n),zt.current=U.zoom,Bt.current=En},sr=[U.zoom,q,Sn,En],t[117]=Sn,t[118]=En,t[119]=q,t[120]=U.zoom,t[121]=or,t[122]=sr):(or=t[121],sr=t[122]),(0,Q.useEffect)(or,sr);let cr;t[123]!==G||t[124]!==ge||t[125]!==Dt||t[126]!==Ot||t[127]!==Ae||t[128]!==j||t[129]!==M||t[130]!==B||t[131]!==K||t[132]!==E||t[133]!==gn||t[134]!==W||t[135]!==_t||t[136]!==it||t[137]!==U.bearing||t[138]!==U.pitch?(cr=e=>{let t=Be.current,n={forceFitAll:e?.forceFitAll||t?.forceFitAll,addFitBoundsPaddingBuffer:e?.addFitBoundsPaddingBuffer||t?.addFitBoundsPaddingBuffer};Be.current=null;let r=n.forceFitAll===!0,i=function(e,t){let n=V.current;if(!n)return!1;let{width:r,height:i}=n.getContainer().getBoundingClientRect(),a=Dt,o=n.unproject([jo,Ao]),s=n.unproject([r-Ot,i-a]);return ht(e,5)>=ht(s.lat,5)&&ht(e,5)<=ht(o.lat,5)&&ht(t,5)>=ht(o.lng,5)&&ht(t,5)<=ht(s.lng,5)},a=gn;if(!L.current&&E&&!a)return;let o=r||L.current||!a,s=o?G:[a],c=o?K??[]:[];if(Ve.current){let e=Ve.current.clientWidth,t=Ve.current.clientHeight,a=n.addFitBoundsPaddingBuffer===!0?Qo:0,l={top:Ao+a,left:jo+a,right:Ot+a,bottom:Dt+a},u=rt.current,d=ge&&u!=null&&o,f=vo({coordinates:[...s.map(Oo),...c.map(Do)],width:e,height:t,padding:l,center:d&&u?[u.longitude,u.latitude]:void 0,ignoreCoordinateOutliers:Ae});if(!f){Be.current=n;return}let{bounds:p,viewState:m}=f;L.current||r?(e=>{let t={...m,pitch:V.current?.getPitch()??U.pitch,bearing:V.current?.getBearing()??U.bearing,is3d:Ze.current};if(V.current){let n=B?0:e;d?V.current.easeTo({center:[m.longitude,m.latitude],zoom:m.zoom,padding:{top:0,right:0,bottom:0,left:0},duration:n}):V.current.fitBounds(p,{pitch:t.pitch,bearing:t.bearing,maxZoom:uo,padding:l,duration:n})}if(nt.current=t,L.current=!1,e===0){let e=nt.current;it(e),j?.(e),M?.(e)}W(!1),_t(!1)})(L.current?0:1200):i(m.latitude,m.longitude)||V.current?.flyTo({center:[m.longitude,m.latitude],padding:{top:Ao,left:jo,right:Ot,bottom:Dt},...B?{duration:0}:{}})}},t[123]=G,t[124]=ge,t[125]=Dt,t[126]=Ot,t[127]=Ae,t[128]=j,t[129]=M,t[130]=B,t[131]=K,t[132]=E,t[133]=gn,t[134]=W,t[135]=_t,t[136]=it,t[137]=U.bearing,t[138]=U.pitch,t[139]=cr):cr=t[139];let lr=Ne(cr),ur,dr;t[140]===lr?(ur=t[141],dr=t[142]):(ur=()=>{if(!Ve.current)return;let e=Ie(()=>{V.current?.resize(),Be.current!=null&&lr()},100),t=new ResizeObserver(e);return t.observe(Ve.current),()=>{t.disconnect(),e.cancel()}},dr=[lr],t[140]=lr,t[141]=ur,t[142]=dr),(0,Q.useEffect)(ur,dr);let fr;t[143]!==Tt||t[144]!==G.length||t[145]!==bn||t[146]!==C||t[147]!==Ke||t[148]!==lr||t[149]!==ke||t[150]!==K||t[151]!==E||t[152]!==pn||t[153]!==Se||t[154]!==Ee?(fr=()=>{if(G.length===0&&K.length===0){Be.current=null,sn.current=0;return}let e=bn!==Vt.current;Vt.current=bn;let t=Et.current!==Tt;if(Et.current=Tt,L.current){lr();return}if(ke&&t&&!C){V.current?.resize(),lr({forceFitAll:!0});return}let n=pn!==Ht.current;if(Ht.current=pn,n){lr({forceFitAll:!0});return}if(e&&!C){lr({forceFitAll:!0});return}if(e&&C&&Se&&!E){let e=Date.now(),t=sn.current===0,n=e-sn.current>=$o;(t||!Ee||n)&&(sn.current=e,lr({forceFitAll:!0,addFitBoundsPaddingBuffer:!0}));return}if(!E&&e&&C&&!Ke){lr({forceFitAll:!0});return}if(!E)return;let r=setTimeout(lr,200);return()=>clearTimeout(r)},t[143]=Tt,t[144]=G.length,t[145]=bn,t[146]=C,t[147]=Ke,t[148]=lr,t[149]=ke,t[150]=K,t[151]=E,t[152]=pn,t[153]=Se,t[154]=Ee,t[155]=fr):fr=t[155];let pr;t[156]!==Tt||t[157]!==G||t[158]!==bn||t[159]!==ge||t[160]!==Dt||t[161]!==Ot||t[162]!==Ae||t[163]!==C||t[164]!==Ke||t[165]!==j||t[166]!==M||t[167]!==B||t[168]!==lr||t[169]!==ke||t[170]!==K||t[171]!==E||t[172]!==D||t[173]!==pn||t[174]!==Se||t[175]!==Ee?(pr=[ge,C,Ke,G,bn,Tt,E,D,Dt,Ot,Ae,j,M,B,lr,ke,K,pn,Se,Ee],t[156]=Tt,t[157]=G,t[158]=bn,t[159]=ge,t[160]=Dt,t[161]=Ot,t[162]=Ae,t[163]=C,t[164]=Ke,t[165]=j,t[166]=M,t[167]=B,t[168]=lr,t[169]=ke,t[170]=K,t[171]=E,t[172]=D,t[173]=pn,t[174]=Se,t[175]=Ee,t[176]=pr):pr=t[176],(0,Q.useEffect)(fr,pr);let{triggerRender:J,IntegratedUXDelayedRender:mr}=Xn(),hr;t[177]!==u||t[178]!==g?(hr=()=>{ye.logStructuredEvent(`ChatgptPlacesSearchStopButtonClicked`,{messageId:g,conversationId:u})},t[177]=u,t[178]=g,t[179]=hr):hr=t[179];let gr=hr,_r;t[180]!==j||t[181]!==M||t[182]!==Yn||t[183]!==W||t[184]!==_t||t[185]!==it?(_r=()=>{let e={...nt.current,pitch:0,bearing:0,is3d:!1};Yn(!1),it(e),j?.(e),M?.(e),W(!1),_t(!1)},t[180]=j,t[181]=M,t[182]=Yn,t[183]=W,t[184]=_t,t[185]=it,t[186]=_r):_r=t[186];let vr=_r,yr;t[187]!==u||t[188]!==g||t[189]!==W||t[190]!==U?(yr=()=>{ye.logStructuredEvent(`ChatgptPlacesSearchHereButtonClicked`,{messageId:g,conversationId:u}),nt.current=U,W(!1)},t[187]=u,t[188]=g,t[189]=W,t[190]=U,t[191]=yr):yr=t[191];let br=yr,xr;t[192]===_t?xr=t[193]:(xr=()=>_t(!1),t[192]=_t,t[193]=xr);let Sr=xr,Cr=Ke,wr=ue!=null,Tr=Ii(i),Er=C?`places_overlay`:`response`,Dr=_??v,Or;t[194]!==f||t[195]!==h||t[196]!==Er||t[197]!==Dr?(Or=(0,$.jsx)(Un,{contentReferenceStartIndex:f,contentReferenceType:h,sectionLocation:Er,trackContentReferenceEvent:Dr}),t[194]=f,t[195]=h,t[196]=Er,t[197]=Dr,t[198]=Or):Or=t[198];let kr=Or,Ar=Tr,Y=!C&&!Ar&&ft,jr=!C&&!Ar&&!Y&&pn==null&&Li(fn),Mr;t[199]!==ln||t[200]!==dn||t[201]!==pn?(Mr=pn==null?dn:ra(ln),t[199]=ln,t[200]=dn,t[201]=pn,t[202]=Mr):Mr=t[202];let Nr=Mr,Pr;if(t[203]!==n||t[204]!==bt||t[205]!==G||t[206]!==u||t[207]!==ln||t[208]!==Nr||t[209]!==ar||t[210]!==vn||t[211]!==se||t[212]!==g||t[213]!==le||t[214]!==Te||t[215]!==gn||t[216]!==ve||t[217]!==v||t[218]!==Lt){let e;t[220]!==n||t[221]!==bt||t[222]!==u||t[223]!==ln||t[224]!==Nr||t[225]!==ar||t[226]!==vn||t[227]!==se||t[228]!==g||t[229]!==le||t[230]!==Te||t[231]!==gn||t[232]!==ve||t[233]!==v||t[234]!==Lt?(e=e=>{let t=n.findIndex(t=>t.entity_data.id===e.entity_data.id),r=e.mapEntityId??e.entity_data.id,i=ia(Nr.get(r),ln);return(0,$.jsx)(cs,{business:e,idx:t,isSelected:e===gn,isVisible:Lt.has(e.entity_data.id),tooltipLocation:se,isSonicSidebarEnabled:ze,isProvisional:Te&&e.isModelPreferred===!1,clientThreadId:u,messageId:g,trackContentReferenceEvent:v,onMarkerClick:le,onRendered:ar,isHoverCardEnabled:vn,isEntranceReady:ve?bt:void 0,routeStopIndex:i},Jt(e))},t[220]=n,t[221]=bt,t[222]=u,t[223]=ln,t[224]=Nr,t[225]=ar,t[226]=vn,t[227]=se,t[228]=g,t[229]=le,t[230]=Te,t[231]=gn,t[232]=ve,t[233]=v,t[234]=Lt,t[235]=e):e=t[235],Pr=G.map(e),t[203]=n,t[204]=bt,t[205]=G,t[206]=u,t[207]=ln,t[208]=Nr,t[209]=ar,t[210]=vn,t[211]=se,t[212]=g,t[213]=le,t[214]=Te,t[215]=gn,t[216]=ve,t[217]=v,t[218]=Lt,t[219]=Pr}else Pr=t[219];let Fr=Pr,Ir=C?`100%`:je,Lr;t[236]===Ir?Lr=t[237]:(Lr={height:Ir},t[236]=Ir,t[237]=Lr);let Rr=p(`relative isolate w-full`,C&&`fullscreen-map-with-entities`,!C&&Ar&&`inline-grouped-map-controls`,qe&&`immersive-maps-opener-enabled`,T),zr=q?``:void 0,Br=U.longitude,Vr=U.latitude,Hr=U.zoom,Ur=C?U.pitch:0,Wr=C||H?U.bearing:0,Kr;t[238]===Symbol.for(`react.memo_cache_sentinel`)?(Kr=xn(),t[238]=Kr):Kr=t[238];let qr;t[239]!==P||t[240]!==U?(qr=e=>{let t=e.originalEvent;if(t?.defaultPrevented)return;let n=t?.target;n instanceof Element&&(n.closest(`.mapboxgl-marker`)||n.closest(`.mapboxgl-ctrl`))||P?.(U)},t[239]=P,t[240]=U,t[241]=qr):qr=t[241];let X;t[242]!==G.length||t[243]!==Bn||t[244]!==N||t[245]!==K||t[246]!==yt||t[247]!==ve||t[248]!==J?(X=()=>{let e=ds();Xt.current??=e,J?.(),Bn(),!(nn.current||L.current&&(G.length>0||K.length>0))&&(nn.current=!0,rn.current=requestAnimationFrame(()=>{rn.current=requestAnimationFrame(()=>{rn.current=null,ve&&yt(!0),N?.()})}))},t[242]=G.length,t[243]=Bn,t[244]=N,t[245]=K,t[246]=yt,t[247]=ve,t[248]=J,t[249]=X):X=t[249];let Jr=R?Ue:z,Yr=H&&C&&at?60:0,Xr=!!(H&&C),Zr=!!H,$r=!!(H&&C&&at),ei=!C,ti=C||!w?`grab`:`zoom-in`,ni;t[250]!==j||t[251]!==W||t[252]!==_t||t[253]!==it?(ni=e=>{let{latSpan:t,longSpan:n}=Ye(V.current),r={...e.viewState,is3d:Ze.current,latSpan:t,longSpan:n};j?.(r),it(r),ls(nt.current,e)&&(W(!0),_t(!0))},t[250]=j,t[251]=W,t[252]=_t,t[253]=it,t[254]=ni):ni=t[254];let ri;t[255]===M?ri=t[256]:(ri=e=>{let{latSpan:t,longSpan:n}=Ye(V.current),r={...e.viewState,is3d:Ze.current,latSpan:t,longSpan:n};M?.(r)},t[255]=M,t[256]=ri);let ai;t[257]===Me?ai=t[258]:(ai=Me.formatMessage({id:`1aF2nO`,defaultMessage:`Hold Ctrl to zoom`}),t[257]=Me,t[258]=ai);let oi;t[259]===Me?oi=t[260]:(oi=Me.formatMessage({id:`8R2Dga`,defaultMessage:`Hold ⌘ to zoom`}),t[259]=Me,t[260]=oi);let si;t[261]===Me?si=t[262]:(si=Me.formatMessage({id:`chatgpt.maps.three_dimensional.compass.aria_label`,defaultMessage:`Reset map orientation`}),t[261]=Me,t[262]=si);let ci;t[263]!==ai||t[264]!==oi||t[265]!==si?(ci={"ScrollZoomBlocker.CtrlMessage":ai,"ScrollZoomBlocker.CmdMessage":oi,"NavigationControl.ResetBearing":si},t[263]=ai,t[264]=oi,t[265]=si,t[266]=ci):ci=t[266];let ui;t[267]!==Bn||t[268]!==lt||t[269]!==An?(ui=()=>{Gt.current=ds(),Kt.current??=Gt.current,An(!0),lt(!0);let e=V.current?.getMap();e!=null&&rs(e,Ze.current),Bn()},t[267]=Bn,t[268]=lt,t[269]=An,t[270]=ui):ui=t[270];let di;t[271]!==C||t[272]!==w||t[273]!==U?(di=w&&(0,$.jsx)(ir,{isFullScreen:!!C,onClick:()=>w(U),position:C?`top-left`:`top-right`}),t[271]=C,t[272]=w,t[273]=U,t[274]=di):di=t[274];let fi;t[275]!==ln||t[276]!==R||t[277]!==q?(fi=(0,$.jsx)(Ji,{isDarkMode:R,mapReady:q,routeGroups:ln}),t[275]=ln,t[276]=R,t[277]=q,t[278]=fi):fi=t[278];let pi;t[279]!==vr||t[280]!==C||t[281]!==ft?(pi=!C&&ft&&(0,$.jsx)(Ci,{onClick:vr}),t[279]=vr,t[280]=C,t[281]=ft,t[282]=pi):pi=t[282];let mi;t[283]!==kr||t[284]!==pi?(mi=(0,$.jsxs)($.Fragment,{children:[pi,kr]}),t[283]=kr,t[284]=pi,t[285]=mi):mi=t[285];let hi;t[286]!==kn||t[287]!==mn?(hi=e=>{kn(e),mn(e)},t[286]=kn,t[287]=mn,t[288]=hi):hi=t[288];let gi;t[289]!==C||t[290]!==i||t[291]!==a||t[292]!==pn||t[293]!==mi||t[294]!==hi?(gi=(0,$.jsx)(qi,{isFullScreen:C,routeGroups:i,groupsTitle:a,trailingControl:mi,selectedRouteGroupIndex:pn,onRouteGroupChange:hi}),t[289]=C,t[290]=i,t[291]=a,t[292]=pn,t[293]=mi,t[294]=hi,t[295]=gi):gi=t[295];let _i;t[296]!==vr||t[297]!==C||t[298]!==ft||t[299]!==Tr?(_i=(C||!Tr)&&(0,$.jsx)(Si,{show:ft,position:`top-left`,onClick:vr}),t[296]=vr,t[297]=C,t[298]=ft,t[299]=Tr,t[300]=_i):_i=t[300];let vi;t[301]!==H||t[302]!==C?(vi=H&&C&&(0,$.jsx)(wn,{position:`top-left`,showZoom:!1,visualizePitch:!0,style:{borderRadius:9999,overflow:`hidden`}}),t[301]=H,t[302]=C,t[303]=vi):vi=t[303];let yi;t[304]!==H||t[305]!==C||t[306]!==Ge?(yi=C&&(!Ge||H)&&(0,$.jsx)(wn,{position:`top-left`,showCompass:!1,style:{borderRadius:9999,overflow:`hidden`}}),t[304]=H,t[305]=C,t[306]=Ge,t[307]=yi):yi=t[307];let bi;t[308]!==ct||t[309]!==Qn||t[310]!==at||t[311]!==H||t[312]!==C?(bi=H&&C&&(0,$.jsx)(ki,{disabled:!ct,isEnabled:at,onClick:Qn}),t[308]=ct,t[309]=Qn,t[310]=at,t[311]=H,t[312]=C,t[313]=bi):bi=t[313];let xi;t[314]!==C||t[315]!==fn||t[316]!==pn?(xi=pn==null&&(0,$.jsx)(Yi,{isFullScreen:C,route:fn}),t[314]=C,t[315]=fn,t[316]=pn,t[317]=xi):xi=t[317];let wi;t[318]===Fr?wi=t[319]:(wi=(0,$.jsx)(de,{initial:!1,children:Fr}),t[318]=Fr,t[319]=wi);let Ti;t[320]!==ut?.name||t[321]!==ut?.picture||t[322]!==C||t[323]!==dt?(Ti=dt?.latitude&&dt?.longitude&&(0,$.jsx)(Tn,{longitude:dt.longitude,latitude:dt.latitude,style:{zIndex:1e3},className:`cursor-default`,children:(0,$.jsx)(va,{isFullScreen:C,picture:ut?.picture,name:ut?.name})}),t[320]=ut?.name,t[321]=ut?.picture,t[322]=C,t[323]=dt,t[324]=Ti):Ti=t[324];let Ei;t[325]!==mr||t[326]!==wi||t[327]!==Ti?(Ei=(0,$.jsxs)(mr,{children:[wi,Ti]}),t[325]=mr,t[326]=wi,t[327]=Ti,t[328]=Ei):Ei=t[328];let Di;t[329]!==Le||t[330]!==yi||t[331]!==bi||t[332]!==xi||t[333]!==Ei||t[334]!==Ur||t[335]!==Wr||t[336]!==qr||t[337]!==X||t[338]!==Jr||t[339]!==Yr||t[340]!==Xr||t[341]!==$r||t[342]!==ei||t[343]!==ti||t[344]!==ni||t[345]!==ri||t[346]!==ci||t[347]!==ui||t[348]!==di||t[349]!==fi||t[350]!==gi||t[351]!==_i||t[352]!==vi||t[353]!==U.latitude||t[354]!==U.longitude||t[355]!==U.zoom?(Di=(0,$.jsxs)(On,{longitude:Br,latitude:Vr,zoom:Hr,pitch:Ur,bearing:Wr,RTLTextPlugin:Kr,onClick:qr,onIdle:X,mapboxAccessToken:St,mapStyle:Jr,...Le,attributionControl:!1,renderWorldCopies:!1,maxPitch:Yr,pitchWithRotate:Xr,dragRotate:Zr,touchPitch:$r,cooperativeGestures:ei,cursor:ti,onMove:ni,onMoveEnd:ri,locale:ci,ref:V,keyboard:!1,onLoad:ui,children:[di,fi,gi,_i,vi,yi,bi,xi,Ei]}),t[329]=Le,t[330]=yi,t[331]=bi,t[332]=xi,t[333]=Ei,t[334]=Ur,t[335]=Wr,t[336]=qr,t[337]=X,t[338]=Jr,t[339]=Yr,t[340]=Xr,t[341]=$r,t[342]=ei,t[343]=ti,t[344]=ni,t[345]=ri,t[346]=ci,t[347]=ui,t[348]=di,t[349]=fi,t[350]=gi,t[351]=_i,t[352]=vi,t[353]=U.latitude,t[354]=U.longitude,t[355]=U.zoom,t[356]=Di):Di=t[356];let Oi;t[357]!==ae||t[358]!==C||t[359]!==B?(Oi=C&&ae&&!B&&(0,$.jsx)(oe.div,{className:`pointer-events-none absolute inset-0`,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:.3},children:(0,$.jsx)(Qr,{maxFps:60})},`particle-overlay`),t[357]=ae,t[358]=C,t[359]=B,t[360]=Oi):Oi=t[360];let Ai;t[361]===Oi?Ai=t[362]:(Ai=(0,$.jsx)(de,{children:Oi}),t[361]=Oi,t[362]=Ai);let Mi;t[363]!==Di||t[364]!==Ai||t[365]!==zr?(Mi=(0,$.jsxs)(`div`,{className:`relative h-full w-full overflow-hidden`,"data-d-map-loaded":zr,children:[Di,Ai]}),t[363]=Di,t[364]=Ai,t[365]=zr,t[366]=Mi):Mi=t[366];let Ni=wt===0?`end-3`:`end-[calc(var(--places-business-list-width,0px)+1rem)]`,Pi;t[367]===Ni?Pi=t[368]:(Pi=p(`absolute z-[1001] flex items-center justify-end`,Ni),t[367]=Ni,t[368]=Pi);let Fi;t[369]===Symbol.for(`react.memo_cache_sentinel`)?(Fi={top:`calc(env(safe-area-inset-top, 0px) + (env(safe-area-inset-bottom, 0px) / 2) + 0.5rem)`},t[369]=Fi):Fi=t[369];let Ri;t[370]!==ue||t[371]!==u||t[372]!==gr||t[373]!==br||t[374]!==Sr||t[375]!==C||t[376]!==Ke||t[377]!==S||t[378]!==g||t[379]!==B||t[380]!==K||t[381]!==wr||t[382]!==Cr||t[383]!==pt||t[384]!==U?(Ri=C&&(ue||Ke)&&(0,$.jsxs)(`div`,{className:`flex flex-wrap items-center gap-2`,children:[pt&&K.length===0&&(0,$.jsx)(oe.div,{initial:!B&&{opacity:0,scale:.95},animate:{opacity:1,scale:1},transition:B?{duration:0}:{duration:.22,ease:`easeOut`},children:(0,$.jsx)(ji,{viewState:U,mapMessageId:S,onClick:br,onCancel:gr,afterCompletion:Sr})},`search-this-area`),Cr&&(0,$.jsx)(Gr,{clientThreadId:u}),wr&&(0,$.jsx)(li,{messageId:g,clientThreadId:u,canNavigateBackward:ue.canNavigateBackward,canNavigateForward:ue.canNavigateForward,onNavigateBackward$:ue.onNavigateBackward$,onNavigateForward$:ue.onNavigateForward$})]}),t[370]=ue,t[371]=u,t[372]=gr,t[373]=br,t[374]=Sr,t[375]=C,t[376]=Ke,t[377]=S,t[378]=g,t[379]=B,t[380]=K,t[381]=wr,t[382]=Cr,t[383]=pt,t[384]=U,t[385]=Ri):Ri=t[385];let zi;t[386]!==Pi||t[387]!==Ri?(zi=(0,$.jsx)(`div`,{className:Pi,style:Fi,children:Ri}),t[386]=Pi,t[387]=Ri,t[388]=zi):zi=t[388];let Bi;t[389]!==C||t[390]!==kr||t[391]!==jr||t[392]!==Y||t[393]!==Tr?(Bi=!Tr&&(0,$.jsx)(`div`,{className:p(`absolute z-[1001] flex flex-col gap-2`,C?`start-14 top-4`:Y?`start-[calc(0.75rem+2.25rem+0.5rem)] top-[18px]`:jr?`start-[calc(0.75rem+7rem+0.5rem)] top-[26px]`:`start-5 top-5`),children:kr}),t[389]=C,t[390]=kr,t[391]=jr,t[392]=Y,t[393]=Tr,t[394]=Bi):Bi=t[394];let Vi;return t[395]!==Mi||t[396]!==zi||t[397]!==Bi||t[398]!==Lr||t[399]!==Rr?(Vi=(0,$.jsxs)(`div`,{style:Lr,className:Rr,ref:Ve,children:[Mi,zi,Bi]}),t[395]=Mi,t[396]=zi,t[397]=Bi,t[398]=Lr,t[399]=Rr,t[400]=Vi):Vi=t[400],Vi}function Do(e){return[e[0],e[1]]}function Oo(e){return[e.entity_data.longitude,e.entity_data.latitude]}var ko,Q,$,Ao,jo,Mo,No,Po,Fo,Io,Lo,Ro,zo,Bo,Vo,Ho,Uo,Wo,Go,Ko,qo,Jo,Yo,Xo,Zo,Qo,$o,es,ts,ns,rs,is,as,os,ss,cs,ls,us,ds,fs,ps,ms,hs,gs=e((()=>{ko=Ue(),je(),Bt(),P(),$t(),lt(),cr(),gr(),Te(),f(),Yr(),pt(),B(),le(),T(),ri(),ae(),N(),ge(),M(),Qt(),F(),Ee(),re(),ie(),y(),Le(),vt(),h(),j(),i(),Lt(),Je(),Sn(),v(),k(),Gt(),Cn(),a(),Q=n(z()),He(),kn(),er(),mn(),Fr(),ci(),jn(),Dt(),rr(),hi(),Ei(),Ai(),Fi(),tt(),V(),zn(),_t(),Ri(),$n(),Zi(),qa(),ma(),$a(),lo(),Jn(),wa(),Rn(),ut(),Ct(),yo(),$=L(),Ao=50,jo=20,Mo=20,No=20,Po=144,Fo=100,Io=148,Lo=112,Ro=`.map-entity-note-latency-marker`,zo=2,Bo=[{className:`hidden`,heightAdjustmentPx:-72},{className:`line-clamp-1`,heightAdjustmentPx:-48},{className:`line-clamp-2`,heightAdjustmentPx:-24},{className:`line-clamp-3`,heightAdjustmentPx:0},{className:`line-clamp-4`,heightAdjustmentPx:24}],Vo=400,Ho=300,Uo=200,Wo=`chatgpt.places.map.first_entity_to_mapbox_load_ms`,Go=`chatgpt.places.map.first_entity_to_background_idle_ms`,Ko=`chatgpt.places.map.first_entity_to_ready_ms`,qo=`chatgpt.places.map.render_time_ms`,Jo=`relative isolate overflow-hidden motion-safe:transition-[max-height,opacity] motion-safe:duration-300 motion-safe:ease-out`,Yo={longitude:0,latitude:0,zoom:12,pitch:0,bearing:0},Xo=60,Zo=30,Qo=60,$o=2e3,es=16,ts=45,ns=new Set,rs=(e,t)=>{e.setConfigProperty(`basemap`,`show3dObjects`,t),e.setConfigProperty(`basemap`,`show3dBuildings`,!0),e.setConfigProperty(`basemap`,`show3dFacades`,!0),e.setConfigProperty(`basemap`,`show3dLandmarks`,!0),e.setConfigProperty(`basemap`,`show3dTrees`,!1)},is=e=>{switch(e){case`success`:return tn.CHATGPT_GENUI_MAP_ROUTE_OUTCOME_SUCCESS;case`partial`:return tn.CHATGPT_GENUI_MAP_ROUTE_OUTCOME_PARTIAL;case`no_route`:return tn.CHATGPT_GENUI_MAP_ROUTE_OUTCOME_NO_ROUTE}},as=({action:e,contentReferenceStartIndex:t,mapAnalyticsMetadata:n,messageId:r})=>{ye.logStructuredEvent(`ChatgptGenuiMapEngagement`,{action:e,messageId:r,contentReferenceStartIndex:fe(t),hasRoute:n.has_route,hasGroups:n.has_groups,routeOutcome:is(n.route_outcome),travelMode:n.travel_mode})},os=(e,t)=>e.messageId===t.messageId&&e.assistantMessageId===t.assistantMessageId&&e.clientThreadId===t.clientThreadId&&e.conversationId===t.conversationId&&e.turnIndex===t.turnIndex&&e.routeContext?.title===t.routeContext?.title&&e.routeContext?.groupsTitle===t.routeContext?.groupsTitle&&e.routeContext?.narrative===t.routeContext?.narrative&&co(e.routeGroups,t.routeGroups)&&e.mapHeight===t.mapHeight&&e.borderRadiusClassName===t.borderRadiusClassName&&e.fill===t.fill&&e.minHeight===t.minHeight&&e.centerOnUser===t.centerOnUser&&e.ignoreCoordinateOutliers===t.ignoreCoordinateOutliers&&e.initialSelectedBusinessId===t.initialSelectedBusinessId&&e.hideInlineCarousel===t.hideInlineCarousel&&e.enableMapCarouselPresentation===t.enableMapCarouselPresentation&&e.mapAnalyticsMetadata?.has_route===t.mapAnalyticsMetadata?.has_route&&e.mapAnalyticsMetadata?.has_groups===t.mapAnalyticsMetadata?.has_groups&&e.mapAnalyticsMetadata?.route_outcome===t.mapAnalyticsMetadata?.route_outcome&&e.mapAnalyticsMetadata?.travel_mode===t.mapAnalyticsMetadata?.travel_mode&&e.trackContentReferenceEvent===t.trackContentReferenceEvent&&so(e.contentReference,t.contentReference),ss=(0,Q.memo)(xo,os),cs=(0,Q.memo)(function(e){"use forget";let t=(0,ko.c)(32),{business:n,idx:r,isSelected:i,isVisible:a,tooltipLocation:o,isSonicSidebarEnabled:s,isProvisional:c,clientThreadId:l,messageId:u,trackContentReferenceEvent:d,onMarkerClick:f,onRendered:p,isHoverCardEnabled:m,routeStopIndex:h,isEntranceReady:g}=e,_;t[0]!==n||t[1]!==h?(_=h!=null&&Qi(n),t[0]=n,t[1]=h,t[2]=_):_=t[2];let v=_,y,b;t[3]!==n.entity_data.id||t[4]!==p?(y=()=>{p?.(n.entity_data.id)},b=[n.entity_data.id,p],t[3]=n.entity_data.id,t[4]=p,t[5]=y,t[6]=b):(y=t[5],b=t[6]),(0,Q.useEffect)(y,b);let x;t[7]!==n||t[8]!==v||t[9]!==f?(x=v?void 0:()=>f?.(n,`marker`),t[7]=n,t[8]=v,t[9]=f,t[10]=x):x=t[10];let S;t[11]!==n||t[12]!==l||t[13]!==r||t[14]!==m||t[15]!==s||t[16]!==v||t[17]!==u||t[18]!==f||t[19]!==d?(S=m&&!v&&(e=>{let{onProviderPickerOpenChange:t}=e;return(0,$.jsx)(_n,{clientThreadId:l,messageId:u,isModelPreferred:n.isModelPreferred,idx:r,business:n.entity_data,trackContentReferenceEvent:d,onOpenEntity:e=>f?.(n,e),enableSidebarNavigation:!!s,showActions:!0,showRatingSourceBadge:!0,onProviderPickerOpenChange:t})}),t[11]=n,t[12]=l,t[13]=r,t[14]=m,t[15]=s,t[16]=v,t[17]=u,t[18]=f,t[19]=d,t[20]=S):S=t[20];let C;return t[21]!==n||t[22]!==g||t[23]!==c||t[24]!==i||t[25]!==s||t[26]!==a||t[27]!==h||t[28]!==x||t[29]!==S||t[30]!==o?(C=(0,$.jsx)(q,{entitySearchResult:n,isSelected:i,isVisible:a,tooltipLocation:o,isSonicSidebarEnabled:s,isProvisional:c,onClick:x,routeStopIndex:h,isEntranceReady:g,enableImageHover:!1,tooltipContent:S}),t[21]=n,t[22]=g,t[23]=c,t[24]=i,t[25]=s,t[26]=a,t[27]=h,t[28]=x,t[29]=S,t[30]=o,t[31]=C):C=t[31],C},(e,t)=>e.business.entity_data===t.business.entity_data&&e.business.entity_category===t.business.entity_category&&e.business.notes===t.business.notes&&e.business.extra_params===t.business.extra_params&&e.business.isModelPreferred===t.business.isModelPreferred&&e.idx===t.idx&&e.isSelected===t.isSelected&&e.isVisible===t.isVisible&&e.tooltipLocation===t.tooltipLocation&&e.isSonicSidebarEnabled===t.isSonicSidebarEnabled&&e.isProvisional===t.isProvisional&&e.routeStopIndex===t.routeStopIndex&&e.isEntranceReady===t.isEntranceReady&&e.clientThreadId===t.clientThreadId&&e.messageId===t.messageId&&e.isHoverCardEnabled===t.isHoverCardEnabled&&e.trackContentReferenceEvent===t.trackContentReferenceEvent&&e.onMarkerClick===t.onMarkerClick&&e.onRendered===t.onRendered),ls=(e,t)=>{if(e){let n=Math.abs(t.viewState.zoom-e.zoom),r=Math.abs(t.viewState.latitude-e.latitude),i=Math.abs(t.viewState.longitude-e.longitude);return n>.05||r>5e-4||i>5e-4}return!1},us=(e,t=`|`)=>e.map(e=>e.entity_data.id).sort().join(t),ds=()=>typeof performance>`u`?Date.now():performance.now(),fs=(e,t)=>e.size===t.size&&[...e].every(e=>t.has(e)),ps=(e,t)=>!(e.x+e.w<=t.x||t.x+t.w<=e.x||e.y+e.h<=t.y||t.y+t.h<=e.y),ms=(e,t)=>{let n=[];for(let r of t){let t=e.project([r.entity_data.longitude,r.entity_data.latitude]);if(!t)return null;n.push({id:r.entity_data.id,x:t.x-Xo/2,y:t.y,w:Xo,h:Zo,rating:r.entity_data.rating??0,openNow:r.entity_data.is_open??!1})}return n},hs=e=>{let t=[...e].sort((e,t)=>e.openNow&&!t.openNow?-1:!e.openNow&&t.openNow?1:t.rating-e.rating),n=new Set,r=new Map(t.map(e=>[e.id,e]));for(let e of t){let t=!1;for(let i of n){let n=r.get(i);if(n&&ps(e,n)){t=!0;break}}t||n.add(e.id)}return n}}));export{Xa as a,qa as c,Tr as d,Fr as f,cr as h,bo as i,aa as l,ar as m,To as n,$a as o,sr as p,gs as r,Pa as s,ss as t,ma as u};
+`
+}));
+
+function ii(e) {
+    let t = e.getContainer(),
+        n = new Set,
+        r = ``,
+        i, a = !1,
+        o = () => {
+            if (i = void 0, a || !e.isStyleLoaded()) return;
+            let o = e.getCanvas(),
+                s = o.getBoundingClientRect();
+            if (!o.clientWidth || !s.width) return;
+            let c = s.width / o.clientWidth,
+                l = {
+                    type: `FeatureCollection`,
+                    features: []
+                };
+            for (let r of t.querySelectorAll(`[data-map-marker-longitude]`)) {
+                let t = r.closest(`.mapboxgl-marker`);
+                if (!t || Number(getComputedStyle(r).opacity) === 0) continue;
+                let i = t.getBoundingClientRect(),
+                    a = Number(r.dataset.mapMarkerLongitude),
+                    o = Number(r.dataset.mapMarkerLatitude);
+                if (!(!Number.isFinite(a) || !Number.isFinite(o)))
+                    for (let t of [r, ...r.querySelectorAll(`[data-map-label-blocker]`)]) {
+                        let r = getComputedStyle(t),
+                            s = t.getBoundingClientRect();
+                        if (r.visibility === `hidden` || Number(r.opacity) === 0 || !s.width || !s.height) continue;
+                        let u = Math.ceil((s.width / c + si * 2) / 4) * 4,
+                            d = Math.ceil((s.height / c + si * 2) / 4) * 4,
+                            f = `${ai}-${u}-${d}`;
+                        e.hasImage(f) || (e.addImage(f, {
+                            width: u,
+                            height: d,
+                            data: new Uint8Array(u * d * 4)
+                        }), n.add(f)), l.features.push({
+                            type: `Feature`,
+                            properties: {
+                                image: f,
+                                offset: [Math.round((s.left + s.width / 2 - i.left - i.width / 2) / c), Math.round((s.top + s.height / 2 - i.bottom) / c)]
+                            },
+                            geometry: {
+                                type: `Point`,
+                                coordinates: [a, o]
+                            }
+                        })
+                    }
+            }
+            let u = JSON.stringify(l),
+                d = e.getSource(ai);
+            !d && l.features.length === 0 || (d ? u !== r && d.setData(l) : e.addSource(ai, {
+                type: `geojson`,
+                data: l
+            }), r = u, e.getLayer(oi) || e.addLayer({
+                id: oi,
+                type: `symbol`,
+                source: ai,
+                layout: {
+                    "icon-image": [`get`, `image`],
+                    "icon-offset": [`get`, `offset`],
+                    "icon-padding": 0,
+                    "icon-allow-overlap": !0,
+                    "icon-ignore-placement": !1,
+                    "icon-rotation-alignment": `viewport`,
+                    "icon-pitch-alignment": `viewport`
+                }
+            }))
+        },
+        s = () => {
+            !a && i === void 0 && (i = requestAnimationFrame(o))
+        },
+        c = new ResizeObserver(s),
+        l = new Set,
+        u = () => {
+            let n = new Set([e.getCanvas(), ...t.querySelectorAll(`[data-map-marker-longitude], [data-map-label-blocker]`)]);
+            for (let e of l) n.has(e) || (c.unobserve(e), l.delete(e));
+            for (let e of n) l.has(e) || (c.observe(e), l.add(e))
+        },
+        d = new MutationObserver(e => {
+            e.some(e => e.type === `childList`) ? (u(), s()) : e.some(e => (e.target instanceof Element ? e.target : e.target.parentElement)?.closest(`[data-map-marker-longitude]`) != null) && s()
+        });
+    d.observe(t, {
+        subtree: !0,
+        childList: !0,
+        characterData: !0,
+        attributes: !0,
+        attributeFilter: [`style`, `class`, `data-label-hidden`, `data-selected`, `data-hovered`, `data-map-marker-longitude`, `data-map-marker-latitude`]
+    }), u();
+    let f = new MutationObserver(s);
+    for (let e = t; e; e = e.parentElement) f.observe(e, {
+        attributes: !0,
+        attributeFilter: [`style`, `class`]
+    });
+    return window.addEventListener(`resize`, s), e.on(`style.load`, s), t.addEventListener(`transitionend`, s), t.addEventListener(`pointerover`, s), t.addEventListener(`pointerout`, s), t.addEventListener(`focusin`, s), t.addEventListener(`focusout`, s), document.fonts?.addEventListener(`loadingdone`, s), s(), () => {
+        a = !0, i !== void 0 && cancelAnimationFrame(i), d.disconnect(), c.disconnect(), f.disconnect(), window.removeEventListener(`resize`, s), e.off(`style.load`, s), t.removeEventListener(`transitionend`, s), t.removeEventListener(`pointerover`, s), t.removeEventListener(`pointerout`, s), t.removeEventListener(`focusin`, s), t.removeEventListener(`focusout`, s), document.fonts?.removeEventListener(`loadingdone`, s), e.getLayer(oi) && e.removeLayer(oi), e.getSource(ai) && e.removeSource(ai);
+        for (let t of n) e.hasImage(t) && e.removeImage(t)
+    }
+}
+var ai, oi, si, ci = e((() => {
+    ai = `local-search-label-blockers`, oi = `local-search-label-blockers`, si = 4
+}));
+
+function li(e) {
+    "use forget";
+    let t = (0, ui.c)(44),
+        {
+            messageId: n,
+            clientThreadId: i,
+            canNavigateBackward: a,
+            canNavigateForward: o,
+            onNavigateBackward$: s,
+            onNavigateForward$: c
+        } = e,
+        l = We(),
+        u = me(),
+        d;
+    t[0] === u ? d = t[1] : (d = u ? Mt(u) : null, t[0] = u, t[1] = d);
+    let f = d,
+        p = r(() => f?.hasRequestedNewData$()) ?? !1;
+    if (!a && !o) return null;
+    let m;
+    t[2] === l ? m = t[3] : (m = l.formatMessage(mi.assistantTurnHistoryControls), t[2] = l, t[3] = m);
+    let h;
+    t[4] === l ? h = t[5] : (h = l.formatMessage(mi.previousAssistantTurn), t[4] = l, t[5] = h);
+    let g = !a || p,
+        _;
+    t[6] !== a || t[7] !== p ? (_ = fi(a, `start`, p), t[6] = a, t[7] = p, t[8] = _) : _ = t[8];
+    let v;
+    t[9] !== a || t[10] !== i || t[11] !== p || t[12] !== n || t[13] !== s ? (v = e => {
+        pi(a, p, e) || (ye.logStructuredEvent(`ChatgptPlacesPreviousAssistantTurnButtonClicked`, {
+            messageId: n,
+            conversationId: i
+        }), s())
+    }, t[9] = a, t[10] = i, t[11] = p, t[12] = n, t[13] = s, t[14] = v) : v = t[14];
+    let y;
+    t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, di.jsx)(K, {
+        className: `icon`
+    }), t[15] = y) : y = t[15];
+    let b;
+    t[16] !== h || t[17] !== g || t[18] !== _ || t[19] !== v ? (b = (0, di.jsx)(Se, {
+        type: `button`,
+        color: `ghost`,
+        "aria-label": h,
+        "aria-disabled": g,
+        contentWrapperClassName: `flex h-full w-full items-center justify-center`,
+        className: _,
+        onClick: v,
+        children: y
+    }), t[16] = h, t[17] = g, t[18] = _, t[19] = v, t[20] = b) : b = t[20];
+    let x;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, di.jsx)(`div`, {
+        className: `bg-token-border-light h-[36px] w-px`,
+        "aria-hidden": `true`
+    }), t[21] = x) : x = t[21];
+    let S;
+    t[22] === l ? S = t[23] : (S = l.formatMessage(mi.nextAssistantTurn), t[22] = l, t[23] = S);
+    let C = !o || p,
+        w;
+    t[24] !== o || t[25] !== p ? (w = fi(o, `end`, p), t[24] = o, t[25] = p, t[26] = w) : w = t[26];
+    let T;
+    t[27] !== o || t[28] !== i || t[29] !== p || t[30] !== n || t[31] !== c ? (T = e => {
+        pi(o, p, e) || (ye.logStructuredEvent(`ChatgptPlacesNextAssistantTurnButtonClicked`, {
+            messageId: n,
+            conversationId: i
+        }), c())
+    }, t[27] = o, t[28] = i, t[29] = p, t[30] = n, t[31] = c, t[32] = T) : T = t[32];
+    let E;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, di.jsx)(an, {
+        className: `icon`
+    }), t[33] = E) : E = t[33];
+    let D;
+    t[34] !== S || t[35] !== C || t[36] !== w || t[37] !== T ? (D = (0, di.jsx)(Se, {
+        type: `button`,
+        color: `ghost`,
+        "aria-label": S,
+        "aria-disabled": C,
+        contentWrapperClassName: `flex h-full w-full items-center justify-center`,
+        className: w,
+        onClick: T,
+        children: E
+    }), t[34] = S, t[35] = C, t[36] = w, t[37] = T, t[38] = D) : D = t[38];
+    let O;
+    return t[39] !== p || t[40] !== D || t[41] !== m || t[42] !== b ? (O = (0, di.jsxs)(`div`, {
+        className: `bg-token-bg-primary border-token-border-default text-token-text-primary relative inline-flex h-[36px] w-[76px] items-center overflow-hidden rounded-full border bg-clip-padding drop-shadow-sm`,
+        role: `group`,
+        "aria-label": m,
+        "aria-disabled": p,
+        children: [b, x, D]
+    }), t[39] = p, t[40] = D, t[41] = m, t[42] = b, t[43] = O) : O = t[43], O
+}
+var ui, di, fi, pi, mi, hi = e((() => {
+        ui = Ue(), g(), P(), fn(), G(), pt(), pe(), F(), v(), He(), di = L(), fi = (e, t, n) => p(`h-full flex-1 rounded-none border-0 bg-transparent px-0`, t === `start` ? `rounded-s-[inherit]` : `rounded-e-[inherit]`, e && !n ? `hover:bg-token-bg-secondary cursor-pointer` : `cursor-not-allowed opacity-50`), pi = (e, t, n) => e && !t ? !1 : (n.preventDefault(), !0), mi = Ve({
+            assistantTurnHistoryControls: {
+                id: `placesOverlay.assistantTurnHistoryControls`,
+                defaultMessage: `Assistant response history navigation`
+            },
+            previousAssistantTurn: {
+                id: `placesOverlay.previousAssistantTurn`,
+                defaultMessage: `Show previous assistant response`
+            },
+            nextAssistantTurn: {
+                id: `placesOverlay.nextAssistantTurn`,
+                defaultMessage: `Show next assistant response`
+            }
+        })
+    })),
+    gi, _i = e((() => {
+        Me(), gi = he({
+            name: `cursor-light-24`,
+            canvas: {
+                width: 24,
+                height: 24,
+                viewBox: `0 0 24 24`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 24,
+                    height: 24
+                },
+                inkBounds: {
+                    x: 2.031372,
+                    y: 2.088867,
+                    width: 19.658569,
+                    height: 19.731934
+                },
+                visualBounds: {
+                    x: 2.031372,
+                    y: 2.088867,
+                    width: 19.658569,
+                    height: 19.731934
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 2.031372,
+                    y: 2.088867,
+                    width: 19.658569,
+                    height: 19.731934
+                },
+                center: {
+                    x: 11.860657,
+                    y: 11.954834
+                },
+                insets: {
+                    top: 2.088867,
+                    right: 2.310059,
+                    bottom: 2.179199,
+                    left: 2.031372
+                },
+                anchors: {
+                    frame: {
+                        x: 12,
+                        y: 12
+                    },
+                    ink: {
+                        x: 11.860657,
+                        y: 11.954834
+                    },
+                    foreground: {
+                        x: 11.860657,
+                        y: 11.954834
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M5.42473 2.23531C3.43316 1.54181 1.50807 3.42841 2.16105 5.43355L6.92766 20.0605C7.63406 22.2284 10.613 22.4505 11.6327 20.4111L14.3837 14.9091C14.4919 14.6928 14.6719 14.5201 14.8925 14.4209L20.1864 12.039C22.289 11.0929 22.1557 8.06303 19.9784 7.30464L5.42473 2.23531ZM3.58781 4.96871C3.31914 4.14311 4.11155 3.36668 4.93156 3.6523L19.4853 8.72164C20.3817 9.03398 20.436 10.2813 19.5702 10.6709L14.2763 13.0527C13.7408 13.2938 13.3046 13.713 13.0419 14.2382L10.2909 19.7402C9.87104 20.5799 8.6443 20.4883 8.35344 19.5957L3.58781 4.96871Z" fill="currentColor"/>`
+        })
+    }));
+
+function vi(e) {
+    "use forget";
+    let t = (0, yi.c)(11),
+        n, r, i, a;
+    t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4]) : ({
+        "aria-hidden": n,
+        "aria-label": r,
+        "aria-labelledby": i,
+        ...a
+    } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a);
+    let o = n ?? (r || i ? void 0 : !0),
+        s;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (s = {
+        __html: Pe(gi)
+    }, t[5] = s) : s = t[5];
+    let c;
+    return t[6] !== r || t[7] !== i || t[8] !== a || t[9] !== o ? (c = (0, bi.jsx)(`svg`, {
+        ...a,
+        xmlns: `http://www.w3.org/2000/svg`,
+        width: gi.canvas.width,
+        height: gi.canvas.height,
+        viewBox: gi.canvas.viewBox,
+        fill: `none`,
+        "aria-label": r,
+        "aria-labelledby": i,
+        "aria-hidden": o,
+        dangerouslySetInnerHTML: s
+    }), t[6] = r, t[7] = i, t[8] = a, t[9] = o, t[10] = c) : c = t[10], c
+}
+var yi, bi, xi = e((() => {
+    yi = Ue(), ve(), _i(), bi = L()
+}));
+
+function Si(e) {
+    "use forget";
+    let t = (0, wi.c)(6),
+        {
+            show: n,
+            onClick: r,
+            position: i
+        } = e,
+        a = i === void 0 ? `top-right` : i,
+        o;
+    t[0] === r ? o = t[1] : (o = (0, Ti.jsx)(Ci, {
+        onClick: r
+    }), t[0] = r, t[1] = o);
+    let s;
+    return t[2] !== a || t[3] !== n || t[4] !== o ? (s = (0, Ti.jsx)(nr, {
+        show: n,
+        position: a,
+        children: o
+    }), t[2] = a, t[3] = n, t[4] = o, t[5] = s) : s = t[5], s
+}
+
+function Ci(e) {
+    "use forget";
+    let t = (0, wi.c)(8),
+        {
+            onClick: n
+        } = e,
+        r = We(),
+        i;
+    t[0] === n ? i = t[1] : (i = e => {
+        e.preventDefault(), n()
+    }, t[0] = n, t[1] = i);
+    let a;
+    t[2] === r ? a = t[3] : (a = r.formatMessage({
+        id: `dUWlu0`,
+        defaultMessage: `Reset view`
+    }), t[2] = r, t[3] = a);
+    let o;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Ti.jsx)(vi, {
+        className: `icon h-[18px]! w-[18px]! translate-x-[1px] translate-y-[1px]`
+    }), t[4] = o) : o = t[4];
+    let s;
+    return t[5] !== i || t[6] !== a ? (s = (0, Ti.jsx)(Se, {
+        type: `button`,
+        color: `secondary`,
+        size: `small`,
+        className: `btn border-token-border-default text-token-text-primary disabled:text-token-text-tertiary relative flex h-[36px] w-[36px] items-center justify-center border bg-clip-padding drop-shadow-sm`,
+        contentWrapperClassName: `font-semibold`,
+        onClick: i,
+        title: a,
+        children: o
+    }), t[5] = i, t[6] = a, t[7] = s) : s = t[7], s
+}
+var wi, Ti, Ei = e((() => {
+        wi = Ue(), g(), xi(), He(), tr(), Ti = L()
+    })),
+    Di, Oi, ki, Ai = e((() => {
+        Di = Ue(), g(), He(), tr(), Oi = L(), ki = e => {
+            "use forget";
+            let t = (0, Di.c)(11),
+                {
+                    disabled: n,
+                    isEnabled: r,
+                    onClick: i
+                } = e,
+                a = We(),
+                o = r ? `primary` : `secondary`,
+                s;
+            t[0] === a ? s = t[1] : (s = a.formatMessage({
+                id: `chatgpt.maps.three_dimensional.toggle.aria_label`,
+                defaultMessage: `3D map`
+            }), t[0] = a, t[1] = s);
+            let c;
+            t[2] === i ? c = t[3] : (c = e => {
+                e.preventDefault(), i()
+            }, t[2] = i, t[3] = c);
+            let l;
+            t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Oi.jsx)(R, {
+                id: `chatgpt.maps.three_dimensional.toggle.button.label`,
+                defaultMessage: `3D`
+            }), t[4] = l) : l = t[4];
+            let u;
+            return t[5] !== o || t[6] !== n || t[7] !== r || t[8] !== s || t[9] !== c ? (u = (0, Oi.jsx)(nr, {
+                position: `top-left`,
+                children: (0, Oi.jsx)(Se, {
+                    type: `button`,
+                    "aria-label": s,
+                    "aria-pressed": r,
+                    color: o,
+                    disabled: n,
+                    size: `small`,
+                    className: `btn border-token-border-default text-token-text-primary disabled:text-token-text-tertiary relative flex h-9 min-w-9 items-center justify-center rounded-full border bg-clip-padding px-3 drop-shadow-sm`,
+                    contentWrapperClassName: `font-semibold`,
+                    onClick: c,
+                    children: l
+                })
+            }), t[5] = o, t[6] = n, t[7] = r, t[8] = s, t[9] = c, t[10] = u) : u = t[10], u
+        }
+    }));
+
+function ji(e) {
+    "use forget";
+    let t = (0, Mi.c)(27),
+        {
+            viewState: n,
+            onClick: i,
+            className: a,
+            mapMessageId: c,
+            afterCompletion: l
+        } = e,
+        u = me(),
+        {
+            setTargetedContent: d
+        } = bt(),
+        f = We(),
+        [m, h] = (0, Ni.useState)(!1),
+        g = (0, Ni.useRef)(!1),
+        _ = (0, Ni.useRef)(0),
+        v;
+    t[0] === f ? v = t[1] : (v = f.formatMessage({
+        id: `f9Y7Bz`,
+        defaultMessage: `Search Here`
+    }), t[0] = f, t[1] = v);
+    let y = v,
+        b;
+    t[2] === f ? b = t[3] : (b = f.formatMessage({
+        id: `xXbDrS`,
+        defaultMessage: `Thinking`
+    }), t[2] = f, t[3] = b);
+    let x = b,
+        S;
+    t[4] === u ? S = t[5] : (S = u ? Mt(u) : null, t[4] = u, t[5] = S);
+    let C = S,
+        w;
+    t[6] === C ? w = t[7] : (w = () => C?.hasRequestedNewData$(), t[6] = C, t[7] = w);
+    let T = r(w) && !m;
+    if (!u || !C) return null;
+    let E = T && `cursor-not-allowed opacity-100!`,
+        D;
+    t[8] !== a || t[9] !== E ? (D = p(`btn border-token-border-default text-token-text-primary disabled:text-token-text-tertiary relative flex h-[36px] items-center justify-center border bg-clip-padding px-4 drop-shadow-sm`, E, a), t[8] = a, t[9] = E, t[10] = D) : D = t[10];
+    let O;
+    t[11] !== l || t[12] !== u || t[13] !== T || t[14] !== c || t[15] !== i || t[16] !== C || t[17] !== y || t[18] !== d || t[19] !== n ? (O = async e => {
+        if (T) {
+            e.preventDefault();
+            return
+        }
+        h(!1), g.current = !1;
+        let t = _.current + 1;
+        _.current = t, i?.(), C.setHasRequestedNewData$(!0, {
+            source: `search-this-area`
+        }), d(void 0);
+        let r = rt(n, c, !0);
+        await bn({
+            callsiteId: `request_completion.formatted_text.contentReferences.maps.controls.search_this_area.1`,
+            conversation: u,
+            promptMessage: o(y, {
+                map_search_parameters: r
+            }),
+            eventSource: `mouse`,
+            extraStreamParams: {
+                mapSearchParams: r,
+                completionMetadata: {
+                    searchSource: qe.MAP_SEARCH_THIS_AREA_BUTTON,
+                    conversationMode: {
+                        kind: s.PrimaryAssistant
+                    }
+                }
+            }
+        }), !g.current && _.current === t && (l?.(), C.setHasRequestedNewData$(!1))
+    }, t[11] = l, t[12] = u, t[13] = T, t[14] = c, t[15] = i, t[16] = C, t[17] = y, t[18] = d, t[19] = n, t[20] = O) : O = t[20];
+    let k = T ? x : y,
+        A;
+    return t[21] !== T || t[22] !== y || t[23] !== D || t[24] !== O || t[25] !== k ? (A = (0, Pi.jsx)(Se, {
+        type: `button`,
+        color: `secondary`,
+        size: `small`,
+        disabled: T,
+        className: D,
+        contentWrapperClassName: `font-semibold flex items-center gap-2`,
+        onClick: O,
+        title: k,
+        children: y
+    }), t[21] = T, t[22] = y, t[23] = D, t[24] = O, t[25] = k, t[26] = A) : A = t[26], A
+}
+var Mi, Ni, Pi, Fi = e((() => {
+        Mi = Ue(), ue(), g(), gn(), P(), pt(), Pt(), le(), Nt(), ce(), v(), Ni = n(z()), He(), ut(), Pi = L()
+    })),
+    Ii, Li, Ri = e((() => {
+        Ii = e => {
+            if (e == null || e.length <= 1) return !1;
+            let t = e.map(e => e.dayNumber),
+                n = t.every(e => e != null) && new Set(t).size > 1,
+                r = e.every(e => e.title != null && e.title.trim().length > 0);
+            return n || r
+        }, Li = e => e != null && e.geometry.coordinates.length >= 2 && e.duration_seconds != null && Number.isFinite(e.duration_seconds) && e.legs.length === 1
+    }));
+
+function zi(e) {
+    return e.dayNumber
+}
+
+function Bi(e) {
+    return e != null
+}
+var Vi, Hi, Ui, Wi, Gi, Ki, qi, Ji, Yi, Xi, Zi = e((() => {
+        Vi = Ue(), yn(), cn(), He(), kn(), tr(), Ri(), Hi = L(), Ui = e => e != null && e.geometry.coordinates.length >= 2, Wi = e => e.geometry != null && e.geometry.coordinates.length >= 2, Gi = e => {
+            let t = e?.trim();
+            if (!(t == null || !/^#?[0-9a-f]{6}$/i.test(t))) return t.startsWith(`#`) ? t : `#${t}`
+        }, Ki = (e, t, n) => e.formatMessage({
+            id: `chatgpt.maps.route_group.day`,
+            defaultMessage: `Day {dayNumber}`
+        }, {
+            dayNumber: t.dayNumber ?? n + 1
+        }), qi = e => {
+            "use forget";
+            let t = (0, Vi.c)(40),
+                {
+                    isFullScreen: n,
+                    routeGroups: r,
+                    groupsTitle: i,
+                    trailingControl: a,
+                    selectedRouteGroupIndex: o,
+                    onRouteGroupChange: s
+                } = e,
+                c = We();
+            if (r == null || !Ii(r)) return null;
+            let l;
+            if (t[0] !== r) {
+                let e = r.map(zi);
+                l = e.every(Bi) && new Set(e).size === e.length, t[0] = r, t[1] = l
+            } else l = t[1];
+            let u = l,
+                d;
+            t[2] !== i || t[3] !== u || t[4] !== c ? (d = i?.trim() || (u ? c.formatMessage({
+                id: `chatgpt.maps.route_group.all_days`,
+                defaultMessage: `All days`
+            }) : c.formatMessage({
+                id: `chatgpt.maps.route_group.all_groups`,
+                defaultMessage: `All groups`
+            })), t[2] = i, t[3] = u, t[4] = c, t[5] = d) : d = t[5];
+            let f = d,
+                p;
+            t[6] !== u || t[7] !== c ? (p = u ? c.formatMessage({
+                id: `chatgpt.maps.route_group.filter_label`,
+                defaultMessage: `Trip day`
+            }) : c.formatMessage({
+                id: `chatgpt.maps.route_group.generic_filter_label`,
+                defaultMessage: `Map group`
+            }), t[6] = u, t[7] = c, t[8] = p) : p = t[8];
+            let m = p,
+                h = o == null ? `all` : String(o),
+                g;
+            t[9] === s ? g = t[10] : (g = e => s(e === `all` ? null : Number(e)), t[9] = s, t[10] = g);
+            let _, v;
+            t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = (0, Hi.jsx)(vn.Value, {}), v = (0, Hi.jsx)(vn.Icon, {}), t[11] = _, t[12] = v) : (_ = t[11], v = t[12]);
+            let y;
+            t[13] === m ? y = t[14] : (y = (0, Hi.jsxs)(vn.Trigger, {
+                "aria-label": m,
+                className: `interactive-button interactive-button-secondary bg-token-bg-primary/95 h-9! min-w-[112px] justify-between! gap-2 rounded-full! px-3! text-xs font-medium shadow-sm backdrop-blur`,
+                children: [_, v]
+            }), t[13] = m, t[14] = y);
+            let b;
+            t[15] === f ? b = t[16] : (b = (0, Hi.jsx)(vn.Item, {
+                value: `all`,
+                children: f
+            }), t[15] = f, t[16] = b);
+            let x;
+            if (t[17] !== u || t[18] !== c || t[19] !== r) {
+                let e;
+                t[21] !== u || t[22] !== c ? (e = (e, t) => (0, Hi.jsx)(vn.Item, {
+                    value: String(t),
+                    children: u ? Ki(c, e, t) : e.title?.trim() || Ki(c, e, t)
+                }, t), t[21] = u, t[22] = c, t[23] = e) : e = t[23], x = r.map(e), t[17] = u, t[18] = c, t[19] = r, t[20] = x
+            } else x = t[20];
+            let S;
+            t[24] !== x || t[25] !== b ? (S = (0, Hi.jsx)(vn.Portal, {
+                children: (0, Hi.jsxs)(vn.Content, {
+                    align: `start`,
+                    className: `min-w-[140px]`,
+                    children: [b, x]
+                })
+            }), t[24] = x, t[25] = b, t[26] = S) : S = t[26];
+            let C;
+            t[27] !== S || t[28] !== h || t[29] !== g || t[30] !== y ? (C = (0, Hi.jsxs)(vn.Root, {
+                value: h,
+                onValueChange: g,
+                children: [y, S]
+            }), t[27] = S, t[28] = h, t[29] = g, t[30] = y, t[31] = C) : C = t[31];
+            let w = C,
+                T;
+            t[32] !== w || t[33] !== a ? (T = (0, Hi.jsxs)(`div`, {
+                className: `flex items-center gap-2`,
+                children: [w, a]
+            }), t[32] = w, t[33] = a, t[34] = T) : T = t[34];
+            let E = T;
+            if (n) {
+                let e;
+                t[35] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+                    top: `calc(env(safe-area-inset-top, 0px) + (env(safe-area-inset-bottom, 0px) / 2) + 0.5rem)`
+                }, t[35] = e) : e = t[35];
+                let n;
+                return t[36] === E ? n = t[37] : (n = (0, Hi.jsx)(`div`, {
+                    className: `absolute start-14 z-[1000]`,
+                    style: e,
+                    children: E
+                }), t[36] = E, t[37] = n), n
+            }
+            let D;
+            return t[38] === E ? D = t[39] : (D = (0, Hi.jsx)(`div`, {
+                className: `absolute start-3 top-3 z-[1000]`,
+                "data-testid": `inline-map-route-day-selector`,
+                children: E
+            }), t[38] = E, t[39] = D), D
+        }, Ji = e => {
+            "use forget";
+            let t = (0, Vi.c)(5),
+                {
+                    isDarkMode: n,
+                    mapReady: r,
+                    routeGroups: i
+                } = e;
+            if (!r) return null;
+            let a;
+            if (t[0] !== n || t[1] !== i) {
+                let e;
+                t[3] === n ? e = t[4] : (e = (e, t) => {
+                    let r = e.route;
+                    if (!Ui(r)) return [];
+                    let i = r.segments?.filter(Wi) ?? [],
+                        a = i.length > 0 ? `genui-map-route-line-${t}-0` : `genui-map-route-line-${t}`,
+                        o = i.length > 0 ? i.map((e, r) => {
+                            let i = e.mode === `walking`,
+                                a = Gi(e.line?.color);
+                            return (0, Hi.jsx)(Dn, {
+                                id: `genui-map-route-${t}-${r}`,
+                                type: `geojson`,
+                                data: {
+                                    type: `Feature`,
+                                    properties: {},
+                                    geometry: e.geometry
+                                },
+                                children: (0, Hi.jsx)(En, {
+                                    id: `genui-map-route-line-${t}-${r}`,
+                                    type: `line`,
+                                    slot: `top`,
+                                    layout: {
+                                        "line-cap": `round`,
+                                        "line-join": `round`
+                                    },
+                                    paint: {
+                                        "line-color": a ?? (n ? `#ffffff` : `#111111`),
+                                        "line-color-use-theme": a || n ? `none` : `default`,
+                                        "line-emissive-strength": +!!n,
+                                        "line-occlusion-opacity": 1,
+                                        ...i ? {
+                                            "line-dasharray": [.1, 1.2]
+                                        } : {},
+                                        "line-opacity": n ? 1 : .9,
+                                        "line-width": 3
+                                    }
+                                })
+                            }, `${t}-${r}`)
+                        }) : [(0, Hi.jsx)(Dn, {
+                            id: `genui-map-route-${t}`,
+                            type: `geojson`,
+                            data: {
+                                type: `Feature`,
+                                properties: {},
+                                geometry: r.geometry
+                            },
+                            children: (0, Hi.jsx)(En, {
+                                id: a,
+                                type: `line`,
+                                slot: `top`,
+                                layout: {
+                                    "line-cap": `round`,
+                                    "line-join": `round`
+                                },
+                                paint: {
+                                    "line-color": n ? `#ffffff` : `#111111`,
+                                    "line-color-use-theme": n ? `none` : `default`,
+                                    "line-emissive-strength": +!!n,
+                                    "line-occlusion-opacity": 1,
+                                    ...r.route_mode === `walking` ? {
+                                        "line-dasharray": [.1, 1.2]
+                                    } : {},
+                                    "line-opacity": n ? 1 : .9,
+                                    "line-width": 3
+                                }
+                            })
+                        }, t)],
+                        s = (e.alternativeRoutes ?? []).flatMap((e, r) => {
+                            if (!Ui(e)) return [];
+                            let i = `genui-map-route-${t}-alternative-${r}`;
+                            return [(0, Hi.jsx)(Dn, {
+                                id: i,
+                                type: `geojson`,
+                                data: {
+                                    type: `Feature`,
+                                    properties: {},
+                                    geometry: e.geometry
+                                },
+                                children: (0, Hi.jsx)(En, {
+                                    id: `genui-map-route-line-${t}-alternative-${r}`,
+                                    beforeId: a,
+                                    type: `line`,
+                                    slot: `top`,
+                                    layout: {
+                                        "line-cap": `round`,
+                                        "line-join": `round`
+                                    },
+                                    paint: {
+                                        "line-color": n ? `#ffffff` : `#111111`,
+                                        "line-color-use-theme": n ? `none` : `default`,
+                                        "line-emissive-strength": +!!n,
+                                        "line-occlusion-opacity": 1,
+                                        ...e.route_mode === `walking` ? {
+                                            "line-dasharray": [.1, 1.2]
+                                        } : {},
+                                        "line-opacity": .45,
+                                        "line-width": 2
+                                    }
+                                })
+                            }, i)]
+                        });
+                    return [...o, ...s]
+                }, t[3] = n, t[4] = e), a = i.flatMap(e), t[0] = n, t[1] = i, t[2] = a
+            } else a = t[2];
+            return a
+        }, Yi = e => {
+            "use forget";
+            let t = (0, Vi.c)(6),
+                {
+                    isFullScreen: n,
+                    route: r
+                } = e,
+                i = We(),
+                a;
+            t[0] !== i || t[1] !== r ? (a = Xi(i, r), t[0] = i, t[1] = r, t[2] = a) : a = t[2];
+            let o = a;
+            if (n || !Li(r) || o == null) return null;
+            let s;
+            t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, Hi.jsx)(on, {
+                className: `h-4 w-4`
+            }), t[3] = s) : s = t[3];
+            let c;
+            return t[4] === o ? c = t[5] : (c = (0, Hi.jsx)(nr, {
+                position: `top-left`,
+                children: (0, Hi.jsxs)(`div`, {
+                    className: `pointer-events-none flex w-[112px] items-center justify-center gap-1.5 rounded-full border border-white/80 bg-white/95 px-3 py-1.5 text-sm font-medium text-gray-900 shadow-sm backdrop-blur dark:border-black/40 dark:bg-gray-900/90 dark:text-white`,
+                    children: [s, (0, Hi.jsx)(`span`, {
+                        children: o
+                    })]
+                })
+            }), t[4] = o, t[5] = c), c
+        }, Xi = (e, t) => {
+            if (!Ui(t)) return null;
+            let n = t.duration_seconds;
+            return n == null || !Number.isFinite(n) ? null : n < 3600 ? e.formatMessage({
+                id: `chatgpt.maps.route.duration_minutes`,
+                defaultMessage: `{minutes, plural, one {# min} other {# mins}}`
+            }, {
+                minutes: Math.max(1, Math.round(n / 60))
+            }) : e.formatMessage({
+                id: `chatgpt.maps.route.duration_hours`,
+                defaultMessage: `{hours, plural, one {# hour} other {# hours}}`
+            }, {
+                hours: Math.round(n / 360) / 10
+            })
+        }
+    })),
+    Qi, $i, ea, ta, na, ra, ia, aa, oa, sa, ca, la, ua, da, fa, pa, ma = e((() => {
+        _t(), Qi = e => e.extra_params?.location === `user`, $i = (e, t, n) => {
+            e.has(t) || e.set(t, n);
+            let r = /^point-(\d+)$/.exec(t);
+            if (r != null) {
+                let t = `genui-map-point-${r[1]}`;
+                e.has(t) || e.set(t, n)
+            }
+        }, ea = e => e?.replace(/^point-(\d+)$/, `genui-map-point-$1`), ta = e => {
+            let t = [],
+                n;
+            return e.forEach((e, r) => {
+                let i = ea(e.from_point_id),
+                    a = r > 0 && i === n;
+                if (e.from_point_id != null && !a) t.push({
+                    pointId: e.from_point_id,
+                    legToNext: e
+                });
+                else if (e.from_point_id != null) {
+                    let n = t.at(-1);
+                    n != null && (n.legToNext = e)
+                }
+                e.to_point_id != null && t.push({
+                    pointId: e.to_point_id
+                }), n = ea(e.to_point_id)
+            }), t
+        }, na = e => {
+            let t = new Map;
+            if (e == null) return t;
+            let n = (e, n) => {
+                e == null || t.has(e) || $i(t, e, n)
+            };
+            return ta(e.legs).forEach((e, t) => {
+                n(e.pointId, t + 1)
+            }), t
+        }, ra = e => {
+            let t = new Map,
+                n = 1;
+            return e?.forEach((r, i) => {
+                let a = na(r.route),
+                    o = r.pointIds.map((e, t) => ({
+                        pointId: e,
+                        pointIndex: t,
+                        routeStopIndex: a.get(e) ?? t + 1
+                    })).sort((e, t) => e.routeStopIndex - t.routeStopIndex || e.pointIndex - t.pointIndex);
+                for (let {
+                        pointId: r,
+                        routeStopIndex: a
+                    }
+                    of o) {
+                    let o = t.get(r);
+                    if (o != null) {
+                        o.groupIndices.includes(i) || o.groupIndices.push(i);
+                        continue
+                    }
+                    $i(t, r, {
+                        groupIndices: [i],
+                        stopNumber: e?.length === 1 ? a : n
+                    }), n += 1
+                }
+            }), t
+        }, ia = (e, t) => {
+            if (!(e == null || !e.groupIndices.some(e => t?.[e]?.route != null))) return e.stopNumber
+        }, aa = (e, t) => oa(e, [], t), oa = (e, t, n) => {
+            let r = Ht(e),
+                i = new Map(r.map(e => [e.mapEntityId ?? e.entity_data.id, e])),
+                a = e => i.get(e) ?? i.get(e.replace(/^point-(\d+)$/, `genui-map-point-$1`)),
+                o = [],
+                s = new Set,
+                c = e => {
+                    let t = a(e);
+                    return t == null ? e : t.mapEntityId ?? t.entity_data.id
+                },
+                l = (e, t, n) => {
+                    let r = a(e);
+                    r != null && o.push({
+                        business: r,
+                        stopNumber: t,
+                        legToNext: n
+                    })
+                },
+                u = n?.legs ?? [];
+            return ta(u).forEach(({
+                pointId: e,
+                legToNext: t
+            }, n) => {
+                l(e, n + 1, t)
+            }), u.forEach(e => {
+                e.from_point_id != null && s.add(c(e.from_point_id)), e.to_point_id != null && s.add(c(e.to_point_id))
+            }), t.forEach((e, t) => {
+                s.has(c(e)) || l(e, t + 1)
+            }), t.length === 0 && s.size === 0 ? r.map((e, t) => ({
+                business: e,
+                stopNumber: t + 1,
+                legToNext: u[t]
+            })) : o.sort((e, t) => e.stopNumber - t.stopNumber)
+        }, sa = (e, t) => {
+            if (t == null) return null;
+            let n = ua(e, t.distance_meters),
+                r = fa(e, t.duration_seconds);
+            return n == null && r == null ? null : [la(e, t.route_mode), n, r].filter(Boolean).join(` • `)
+        }, ca = (e, t) => {
+            if (e.length < 2) return null;
+            let n = e.map(({
+                    business: e
+                }) => {
+                    let {
+                        address: t,
+                        latitude: n,
+                        longitude: r,
+                        name: i
+                    } = e.entity_data;
+                    return Qi(e) ? `${n},${r}` : [i, t].filter(Boolean).join(`, `)
+                }),
+                r = new URLSearchParams({
+                    api: `1`,
+                    origin: n[0],
+                    destination: n[n.length - 1],
+                    travelmode: t === `cycling` ? `bicycling` : t
+                });
+            return n.length > 2 && r.set(`waypoints`, n.slice(1, -1).join(`|`)), `https://www.google.com/maps/dir/?${r.toString()}`
+        }, la = (e, t) => e.formatMessage({
+            id: `chatgpt.places.route_stops.sidebar.summary.mode`,
+            defaultMessage: `{routeMode, select, walking {Walk} cycling {Bike} driving {Drive} transit {Transit} other {Route}}`
+        }, {
+            routeMode: t
+        }), ua = (e, t) => {
+            if (t == null || !Number.isFinite(t)) return null;
+            let n = t / 1609.344;
+            if (n >= .1) {
+                let t = n >= 10 ? 0 : 1;
+                return e.formatNumber(n, {
+                    style: `unit`,
+                    unit: `mile`,
+                    unitDisplay: `short`,
+                    minimumFractionDigits: t,
+                    maximumFractionDigits: t
+                })
+            }
+            return e.formatNumber(Math.max(1, Math.round(t * 3.28084)), {
+                style: `unit`,
+                unit: `foot`,
+                unitDisplay: `short`,
+                maximumFractionDigits: 0
+            })
+        }, da = [{
+            unit: `week`,
+            minutes: 10080
+        }, {
+            unit: `day`,
+            minutes: 1440
+        }, {
+            unit: `hour`,
+            minutes: 60
+        }, {
+            unit: `minute`,
+            minutes: 1
+        }], fa = (e, t) => {
+            if (t == null || !Number.isFinite(t)) return null;
+            let n = Math.max(1, Math.round(t / 60));
+            if (n <= 60) return pa(e, n, `minute`);
+            let r = n,
+                i = [];
+            for (let {
+                    unit: t,
+                    minutes: n
+                }
+                of da) {
+                let a = Math.floor(r / n);
+                if (a !== 0 && (i.push(pa(e, a, t)), r %= n, i.length === 2)) break
+            }
+            return e.formatList(i, {
+                type: `unit`,
+                style: `short`
+            })
+        }, pa = (e, t, n) => e.formatNumber(t, {
+            style: `unit`,
+            unit: n,
+            unitDisplay: n === `minute` ? `short` : `long`
+        })
+    })),
+    ha, ga, _a = e((() => {
+        ha = `BqefNq_userMarkerPulse`, ga = {
+            userMarkerPulse: ha
+        }
+    }));
+
+function va(e) {
+    "use forget";
+    let t = (0, ya.c)(48),
+        {
+            isFullScreen: n,
+            picture: r,
+            name: i
+        } = e,
+        a = We(),
+        [o, s] = (0, ba.useState)(!1),
+        [c, l] = (0, ba.useState)(0),
+        u, d;
+    if (t[0] !== a || t[1] !== i) {
+        let e = Ca(i);
+        t[4] === a ? u = t[5] : (u = a.formatMessage(Sa.youAreHere), t[4] = a, t[5] = u), d = e ? [a.formatMessage(Sa.itIsFirstName, {
+            firstName: e
+        })] : [], t[0] = a, t[1] = i, t[2] = u, t[3] = d
+    } else u = t[2], d = t[3];
+    let f;
+    t[6] === a ? f = t[7] : (f = a.formatMessage(Sa.youreOnTheMap), t[6] = a, t[7] = f);
+    let m;
+    t[8] === a ? m = t[9] : (m = a.formatMessage(Sa.youLookNice), t[8] = a, t[9] = m);
+    let h;
+    t[10] === a ? h = t[11] : (h = a.formatMessage(Sa.justYou), t[10] = a, t[11] = h);
+    let g;
+    t[12] === a ? g = t[13] : (g = a.formatMessage(Sa.stillYou), t[12] = a, t[13] = g);
+    let _;
+    t[14] !== u || t[15] !== d || t[16] !== f || t[17] !== m || t[18] !== h || t[19] !== g ? (_ = [u, ...d, f, m, h, g], t[14] = u, t[15] = d, t[16] = f, t[17] = m, t[18] = h, t[19] = g, t[20] = _) : _ = t[20];
+    let v = _,
+        y = v[c % v.length],
+        b;
+    t[21] !== r || t[22] !== v.length ? (b = () => {
+        !r || v.length === 0 || (l(e => (e + 1) % v.length), s(!0))
+    }, t[21] = r, t[22] = v.length, t[23] = b) : b = t[23];
+    let x = b,
+        S;
+    t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (S = () => {
+        s(!1)
+    }, t[24] = S) : S = t[24];
+    let C = S;
+    if (!r) {
+        let e;
+        return t[25] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, xa.jsx)(Wn, {
+            className: `h-8 w-8`
+        }), t[25] = e) : e = t[25], e
+    }
+    let w;
+    t[26] !== y || t[27] !== o ? (w = o && y && (0, xa.jsx)(oe.div, {
+        initial: {
+            opacity: 0,
+            y: 6,
+            scale: .96
+        },
+        animate: {
+            opacity: 1,
+            y: 0,
+            scale: 1
+        },
+        exit: {
+            opacity: 0,
+            y: 4,
+            scale: .98
+        },
+        transition: {
+            duration: .16,
+            ease: `easeOut`
+        },
+        className: `shadow-elevation-03 pointer-events-none absolute start-1/2 bottom-full z-20 mb-2 -translate-x-1/2 rounded-md bg-black px-2 py-1 text-sm whitespace-nowrap text-white`,
+        children: y
+    }, y), t[26] = y, t[27] = o, t[28] = w) : w = t[28];
+    let T;
+    t[29] === w ? T = t[30] : (T = (0, xa.jsx)(de, {
+        initial: !1,
+        children: w
+    }), t[29] = w, t[30] = T);
+    let E = o ? `bg-black` : `bg-white`,
+        D = n && ga.userMarkerPulse,
+        O;
+    t[31] !== E || t[32] !== D ? (O = p(`pointer-events-none absolute inset-0 origin-center rounded-full transition-colors duration-150`, E, D), t[31] = E, t[32] = D, t[33] = O) : O = t[33];
+    let k;
+    t[34] === O ? k = t[35] : (k = (0, xa.jsx)(`span`, {
+        "aria-hidden": `true`,
+        className: O
+    }), t[34] = O, t[35] = k);
+    let A;
+    t[36] === a ? A = t[37] : (A = a.formatMessage({
+        id: `avatar.profileimageMarker`,
+        defaultMessage: `Profile image Marker`
+    }), t[36] = a, t[37] = A);
+    let j;
+    t[38] !== r || t[39] !== A ? (j = (0, xa.jsx)(`img`, {
+        alt: A,
+        src: r,
+        className: `shadow-elevation-03 h-full w-full rounded-full object-cover`
+    }), t[38] = r, t[39] = A, t[40] = j) : j = t[40];
+    let M;
+    t[41] !== x || t[42] !== j ? (M = (0, xa.jsx)(`div`, {
+        className: `relative z-10 h-6 w-6`,
+        onMouseEnter: x,
+        onMouseLeave: C,
+        children: j
+    }), t[41] = x, t[42] = j, t[43] = M) : M = t[43];
+    let N;
+    return t[44] !== T || t[45] !== k || t[46] !== M ? (N = (0, xa.jsxs)(`div`, {
+        className: `relative flex h-8 w-8 items-center justify-center`,
+        children: [T, k, M]
+    }), t[44] = T, t[45] = k, t[46] = M, t[47] = N) : N = t[47], N
+}
+var ya, ba, xa, Sa, Ca, wa = e((() => {
+    ya = Ue(), v(), a(), ba = n(z()), He(), Kn(), _a(), xa = L(), Sa = Ve({
+        youAreHere: {
+            id: `mapUserLocationMarker.youAreHere`,
+            defaultMessage: `You are here`
+        },
+        itIsFirstName: {
+            id: `mapUserLocationMarker.itIsFirstName`,
+            defaultMessage: `It's {firstName}!`
+        },
+        youreOnTheMap: {
+            id: `mapUserLocationMarker.youreOnTheMap`,
+            defaultMessage: `You're on the map`
+        },
+        youLookNice: {
+            id: `mapUserLocationMarker.youLookNice`,
+            defaultMessage: `You look nice`
+        },
+        justYou: {
+            id: `mapUserLocationMarker.justYou`,
+            defaultMessage: `Just you`
+        },
+        stillYou: {
+            id: `mapUserLocationMarker.stillYou`,
+            defaultMessage: `Still you`
+        }
+    }), Ca = e => {
+        let t = e?.trim();
+        return t ? t.split(/\s+/)[0] ?? null : null
+    }
+}));
+
+function Ta(e) {
+    return e.stops.map(t => ({
+        section: e,
+        stop: t
+    }))
+}
+
+function Ea(e) {
+    let {
+        stop: t
+    } = e;
+    return t
+}
+
+function Da(e) {
+    return e.preventDefault()
+}
+
+function Oa(e) {
+    return e != null && !Na.test(e)
+}
+
+function ka(e) {
+    return (0, Z.jsx)(`div`, {
+        className: `text-token-text-secondary mt-0.5 text-sm`,
+        children: e
+    }, e.key)
+}
+var Aa, ja, Z, Ma, Na, Pa, Fa, Ia, La, Ra, za, Ba, Va, Ha, Ua, Wa, Ga, Ka, qa = e((() => {
+        Aa = Ue(), g(), P(), pn(), le(), M(), F(), kt(), i(), Lt(), v(), ja = n(z()), He(), mn(), An(), ma(), wa(), _t(), Z = L(), Ma = 4, Na = /^\s*[+-]?\d+(?:\.\d+)?\s*,\s*[+-]?\d+(?:\.\d+)?\s*$/, Pa = e => {
+            "use forget";
+            let t = (0, Aa.c)(49),
+                {
+                    conversation: n,
+                    messageId: r,
+                    businesses: i,
+                    routeGroups: a,
+                    selectedRouteGroupIndex: o,
+                    routeContext: s,
+                    onClick: c,
+                    onHover: l,
+                    trackContentReferenceEvent: u,
+                    routeDisplayMode: d,
+                    enableMapCarouselPresentation: f,
+                    approvedImageUrls: m,
+                    carouselNotesClassName: h
+                } = e,
+                g = d === void 0 ? `stop` : d,
+                _ = f !== void 0 && f,
+                v = g === `carousel`,
+                y = v && a.length > 1 && o == null,
+                b = We(),
+                x = (0, ja.useRef)(null),
+                S;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (S = {
+                didDrag: !1,
+                pointerId: null,
+                startScrollLeft: 0,
+                startX: 0
+            }, t[0] = S) : S = t[0];
+            let C = (0, ja.useRef)(S),
+                w, T, E, D, O;
+            if (t[1] !== m || t[2] !== i || t[3] !== h || t[4] !== n || t[5] !== _ || t[6] !== b || t[7] !== v || t[8] !== y || t[9] !== r || t[10] !== c || t[11] !== l || t[12] !== s || t[13] !== a || t[14] !== o || t[15] !== u) {
+                O = Symbol.for(`react.early_return_sentinel`);
+                bb0: {
+                    let e;t[21] !== i || t[22] !== o ? (e = (e, t) => o != null && o !== t ? [] : [{
+                        group: e,
+                        groupIndex: t,
+                        route: e.route,
+                        stops: oa(i, e.pointIds, e.route)
+                    }], t[21] = i, t[22] = o, t[23] = e) : e = t[23];
+                    let d = a.flatMap(e),
+                        f = d.flatMap(Ta),
+                        g = new Set,
+                        S = y ? f.filter(e => {
+                            let {
+                                stop: t
+                            } = e, n = t.business.entity_data.id;
+                            return g.has(n) ? !1 : (g.add(n), !0)
+                        }) : f,
+                        k = d.length === 1 ? d[0]?.route : void 0,
+                        A = k == null ? null : ca(S.map(Ea), k.route_mode);
+                    if (d.length === 0) {
+                        O = null;
+                        break bb0
+                    }
+                    let j;t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (j = e => {
+                        e.pointerType !== `mouse` || e.button !== 0 || (C.current = {
+                            didDrag: !1,
+                            pointerId: e.pointerId,
+                            startScrollLeft: e.currentTarget.scrollLeft,
+                            startX: e.clientX
+                        })
+                    }, t[24] = j) : j = t[24];
+                    let M = j,
+                        N;t[25] === Symbol.for(`react.memo_cache_sentinel`) ? (N = e => {
+                        let t = C.current;
+                        if (t.pointerId !== e.pointerId) return;
+                        let n = e.clientX - t.startX;
+                        if (!t.didDrag) {
+                            if (Math.abs(n) < Ma) return;
+                            t.didDrag = !0, e.currentTarget.setPointerCapture(e.pointerId)
+                        }
+                        e.preventDefault(), e.currentTarget.scrollLeft = t.startScrollLeft - n
+                    }, t[25] = N) : N = t[25];
+                    let ee = N,
+                        te;t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (te = e => {
+                        let t = C.current;
+                        t.pointerId === e.pointerId && (e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId), t.pointerId = null)
+                    }, t[26] = te) : te = t[26];
+                    let ne = te,
+                        re;t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (re = e => {
+                        C.current.didDrag && (e.preventDefault(), e.stopPropagation(), C.current.didDrag = !1)
+                    }, t[27] = re) : re = t[27];
+                    let ie = re,
+                        ae;t[28] !== m || t[29] !== h || t[30] !== n || t[31] !== _ || t[32] !== b || t[33] !== v || t[34] !== y || t[35] !== r || t[36] !== c || t[37] !== l || t[38] !== u ? (ae = (e, t, i, a, o) => {
+                        let s = e.business.entity_data.id,
+                            d = Qi(e.business),
+                            f = e.stopNumber > 1 ? i?.legs[e.stopNumber - 2] : void 0,
+                            g = fa(b, f?.duration_seconds),
+                            x = !y && (i != null || d) ? (0, Z.jsx)(Ra, {
+                                stopNumber: e.stopNumber,
+                                totalStops: a
+                            }) : null;
+                        if (v && !y && i != null) {
+                            let e = Va(i);
+                            e.length > 0 ? x = Ha(b, e) : g != null && (x = Ka(b, i.route_mode, g))
+                        }
+                        let S = () => {
+                            ye.logStructuredEvent(v ? `ChatgptPlacesBusinessCarouselItemClicked` : `ChatgptPlacesBusinessListItemClicked`, {
+                                entityId: s,
+                                entityName: e.business.entity_data.name,
+                                entityIndex: fe(t),
+                                conversationId: se(n)
+                            }), c(e.business)
+                        };
+                        return (0, Z.jsxs)(`div`, {
+                            role: `listitem`,
+                            className: v ? `flex w-full` : void 0,
+                            children: [d ? (0, Z.jsx)(`div`, {
+                                className: p(`overflow-hidden text-start`, v ? `bg-token-bg-primary/90 border-token-border-light/60 w-full rounded-[20px] border bg-clip-padding backdrop-blur` : `w-full`),
+                                children: (0, Z.jsx)(Fa, {
+                                    business: e.business,
+                                    contextLabel: x,
+                                    isCarousel: v
+                                })
+                            }) : (0, Z.jsx)(`div`, {
+                                role: `button`,
+                                tabIndex: 0,
+                                className: p(`interactive-button interactive-outline-secondary cursor-pointer overflow-hidden text-start`, v ? `bg-token-bg-primary/90 border-token-border-light/60 w-full rounded-[20px] border bg-clip-padding backdrop-blur` : `w-full hover:bg-black/5 dark:hover:bg-white/10`),
+                                onClick: S,
+                                onKeyDown: e => {
+                                    e.target !== e.currentTarget || e.key !== `Enter` && e.key !== ` ` || (e.preventDefault(), S())
+                                },
+                                onMouseEnter: () => {
+                                    ye.logStructuredEvent(v ? `ChatgptPlacesBusinessCarouselItemHovered` : `ChatgptPlacesBusinessListItemHovered`, {
+                                        entityId: s,
+                                        entityName: e.business.entity_data.name,
+                                        entityIndex: fe(t),
+                                        conversationId: se(n)
+                                    }), l(s)
+                                },
+                                onMouseLeave: () => l(null),
+                                children: (0, Z.jsx)(_n, {
+                                    clientThreadId: n.id,
+                                    messageId: r,
+                                    idx: t,
+                                    business: e.business.entity_data,
+                                    description: e.business.mapPointLabel,
+                                    mapCarouselCard: v && _ ? e.business.mapCarouselCard : void 0,
+                                    approvedImageUrls: m,
+                                    preserveRatingWithDescription: v && _,
+                                    notes: o ?? e.business.notes,
+                                    trackContentReferenceEvent: u,
+                                    enableSidebarNavigation: !1,
+                                    imageClassName: `h-16 w-16 rounded-lg!`,
+                                    contextLabel: x,
+                                    notesClassName: v ? h : `line-clamp-none!`,
+                                    contextLabelPlacement: v ? `eyebrow` : `metadata`,
+                                    wrapperClassName: v ? `p-3` : `px-4 py-4`,
+                                    showShareEntityButton: !1
+                                })
+                            }), !v && i != null && e.legToNext != null && (0, Z.jsx)(za, {
+                                intl: b,
+                                leg: e.legToNext,
+                                route: i
+                            })]
+                        }, `${Jt(e.business)}:${e.stopNumber}`)
+                    }, t[28] = m, t[29] = h, t[30] = n, t[31] = _, t[32] = b, t[33] = v, t[34] = y, t[35] = r, t[36] = c, t[37] = l, t[38] = u, t[39] = ae) : ae = t[39];
+                    let oe = ae;
+                    if (v) {
+                        let e;
+                        t[40] === oe ? e = t[41] : (e = (e, t) => {
+                            let {
+                                section: n,
+                                stop: r
+                            } = e;
+                            return (0, Z.jsx)(`div`, {
+                                className: `flex w-[82vw] max-w-[360px] shrink-0 snap-center sm:snap-start`,
+                                children: oe(r, t, n.route, n.stops.length, n.group.notesByPointId?.get(r.business.mapEntityId ?? r.business.entity_data.id))
+                            }, `${n.groupIndex}:${Jt(r.business)}:${r.stopNumber}`)
+                        }, t[40] = oe, t[41] = e), O = (0, Z.jsx)(`div`, {
+                            ref: x,
+                            role: `list`,
+                            className: `no-scrollbar flex cursor-grab snap-x snap-mandatory gap-3 overflow-x-auto px-3 pb-3 select-none active:cursor-grabbing sm:scroll-ps-3 not-motion-reduce:sm:scroll-smooth sm:active:snap-none sm:active:scroll-auto`,
+                            onDragStart: Da,
+                            onClickCapture: ie,
+                            onPointerDown: M,
+                            onPointerMove: ee,
+                            onPointerUp: ne,
+                            onPointerCancel: ne,
+                            children: S.map(e)
+                        });
+                        break bb0
+                    }
+                    E = `flex h-full flex-col`,
+                    D = (0, Z.jsx)(La, {
+                        route: k,
+                        routeContext: s,
+                        routeUrl: A,
+                        trackContentReferenceEvent: u
+                    }),
+                    w = `h-full overflow-y-auto pb-4`,
+                    T = d.map(e => {
+                        let t = S.findIndex(t => {
+                            let {
+                                section: n
+                            } = t;
+                            return n === e
+                        });
+                        return (0, Z.jsxs)(`section`, {
+                            children: [a != null && a.length > 1 && e.group != null && (0, Z.jsx)(Ia, {
+                                dayNumber: e.group.dayNumber ?? e.groupIndex + 1,
+                                title: e.group.title
+                            }), (0, Z.jsx)(`div`, {
+                                role: `list`,
+                                children: e.stops.map((n, r) => oe(n, t + r, e.route, e.stops.length, e.group.notesByPointId?.get(n.business.mapEntityId ?? n.business.entity_data.id)))
+                            })]
+                        }, e.groupIndex)
+                    })
+                }
+                t[1] = m, t[2] = i, t[3] = h, t[4] = n, t[5] = _, t[6] = b, t[7] = v, t[8] = y, t[9] = r, t[10] = c, t[11] = l, t[12] = s, t[13] = a, t[14] = o, t[15] = u, t[16] = w, t[17] = T, t[18] = E, t[19] = D, t[20] = O
+            } else w = t[16], T = t[17], E = t[18], D = t[19], O = t[20];
+            if (O !== Symbol.for(`react.early_return_sentinel`)) return O;
+            let k;
+            t[42] !== w || t[43] !== T ? (k = (0, Z.jsx)(`div`, {
+                className: w,
+                children: T
+            }), t[42] = w, t[43] = T, t[44] = k) : k = t[44];
+            let A;
+            return t[45] !== E || t[46] !== D || t[47] !== k ? (A = (0, Z.jsxs)(`div`, {
+                className: E,
+                children: [D, k]
+            }), t[45] = E, t[46] = D, t[47] = k, t[48] = A) : A = t[48], A
+        }, Fa = e => {
+            "use forget";
+            let t = (0, Aa.c)(28),
+                {
+                    business: n,
+                    contextLabel: i,
+                    isCarousel: a
+                } = e,
+                o = r(Fe),
+                s = We(),
+                c = typeof n.extra_params?.address == `string` ? n.extra_params.address : void 0,
+                l;
+            t[0] !== n.entity_data.address || t[1] !== c ? (l = [n.entity_data.address, c].find(Oa), t[0] = n.entity_data.address, t[1] = c, t[2] = l) : l = t[2];
+            let u = l,
+                d;
+            t[3] !== s || t[4] !== u ? (d = u || s.formatMessage({
+                id: `chatgpt.places.route_stops.card.user_location`,
+                defaultMessage: `Your location`
+            }), t[3] = s, t[4] = u, t[5] = d) : d = t[5];
+            let f = d,
+                m = a ? `p-3` : `px-4 py-4`,
+                h;
+            t[6] === m ? h = t[7] : (h = p(`flex gap-3`, m), t[6] = m, t[7] = h);
+            let g = o?.picture,
+                _ = o?.name,
+                v;
+            t[8] !== g || t[9] !== _ ? (v = (0, Z.jsx)(va, {
+                picture: g,
+                name: _
+            }), t[8] = g, t[9] = _, t[10] = v) : v = t[10];
+            let y;
+            t[11] !== n.entity_data || t[12] !== v ? (y = (0, Z.jsx)(`div`, {
+                className: `h-16 w-16 shrink-0 overflow-hidden rounded-lg`,
+                children: (0, Z.jsx)(Mn, {
+                    business: n.entity_data,
+                    width: 64,
+                    height: 64,
+                    marker: v
+                })
+            }), t[11] = n.entity_data, t[12] = v, t[13] = y) : y = t[13];
+            let b;
+            t[14] === i ? b = t[15] : (b = i != null && (0, Z.jsx)(`div`, {
+                className: `text-token-text-secondary line-clamp-1 text-sm leading-tight`,
+                children: i
+            }), t[14] = i, t[15] = b);
+            let x;
+            t[16] === f ? x = t[17] : (x = (0, Z.jsx)(`div`, {
+                title: f,
+                className: `text-token-text-primary line-clamp-1 text-sm leading-tight font-semibold`,
+                children: f
+            }), t[16] = f, t[17] = x);
+            let S;
+            t[18] === u ? S = t[19] : (S = u && (0, Z.jsx)(`div`, {
+                className: `text-token-text-secondary line-clamp-1 text-sm leading-tight`,
+                children: (0, Z.jsx)(R, {
+                    id: `chatgpt.places.route_stops.card.user_location`,
+                    defaultMessage: `Your location`
+                })
+            }), t[18] = u, t[19] = S);
+            let C;
+            t[20] !== b || t[21] !== x || t[22] !== S ? (C = (0, Z.jsxs)(`div`, {
+                className: `flex min-w-0 flex-1 flex-col justify-center gap-0.5`,
+                children: [b, x, S]
+            }), t[20] = b, t[21] = x, t[22] = S, t[23] = C) : C = t[23];
+            let w;
+            return t[24] !== C || t[25] !== h || t[26] !== y ? (w = (0, Z.jsxs)(`div`, {
+                className: h,
+                children: [y, C]
+            }), t[24] = C, t[25] = h, t[26] = y, t[27] = w) : w = t[27], w
+        }, Ia = e => {
+            "use forget";
+            let t = (0, Aa.c)(5),
+                {
+                    dayNumber: n,
+                    title: r
+                } = e,
+                i;
+            t[0] === r ? i = t[1] : (i = r?.trim(), t[0] = r, t[1] = i);
+            let a = i,
+                o;
+            return t[2] !== n || t[3] !== a ? (o = (0, Z.jsx)(`h3`, {
+                className: `text-token-text-primary px-6 pt-5 pb-2 text-base font-semibold`,
+                children: a ? (0, Z.jsx)(R, {
+                    id: `chatgpt.places.route_stops.sidebar.day_heading_with_title`,
+                    defaultMessage: `Day {dayNumber} · {title}`,
+                    values: {
+                        dayNumber: n,
+                        title: a
+                    }
+                }) : (0, Z.jsx)(R, {
+                    id: `chatgpt.places.route_stops.sidebar.day_heading`,
+                    defaultMessage: `Day {dayNumber}`,
+                    values: {
+                        dayNumber: n
+                    }
+                })
+            }), t[2] = n, t[3] = a, t[4] = o) : o = t[4], o
+        }, La = e => {
+            "use forget";
+            let t = (0, Aa.c)(25),
+                {
+                    route: n,
+                    routeContext: r,
+                    routeUrl: i,
+                    trackContentReferenceEvent: a
+                } = e,
+                o = We(),
+                s;
+            t[0] === r?.title ? s = t[1] : (s = r?.title?.trim(), t[0] = r?.title, t[1] = s);
+            let c = s,
+                l;
+            t[2] === r?.narrative ? l = t[3] : (l = r?.narrative?.trim(), t[2] = r?.narrative, t[3] = l);
+            let u = l,
+                d;
+            t[4] !== o || t[5] !== n ? (d = sa(o, n), t[4] = o, t[5] = n, t[6] = d) : d = t[6];
+            let f = d,
+                p;
+            t[7] === c ? p = t[8] : (p = c || (0, Z.jsx)(R, {
+                id: `chatgpt.places.route_stops.sidebar.title`,
+                defaultMessage: `Route stops`
+            }), t[7] = c, t[8] = p);
+            let m;
+            t[9] === p ? m = t[10] : (m = (0, Z.jsx)(`h2`, {
+                className: `text-token-text-primary text-[22px] leading-7 font-semibold`,
+                children: p
+            }), t[9] = p, t[10] = m);
+            let h;
+            t[11] === u ? h = t[12] : (h = u != null && (0, Z.jsx)(`p`, {
+                className: `text-token-text-primary mt-4 text-[17px] leading-6`,
+                children: u
+            }), t[11] = u, t[12] = h);
+            let g;
+            t[13] !== i || t[14] !== a ? (g = i != null && (0, Z.jsx)(Se, {
+                as: `a`,
+                to: i,
+                openNewTab: !0,
+                rel: `noreferrer`,
+                color: `secondary`,
+                size: `small`,
+                icon: dn,
+                onClick: () => {
+                    a(`link_action`, null, `map`, {
+                        url: i,
+                        link_type: `button`,
+                        action: `click`,
+                        section: `map`,
+                        section_location: `fullscreen`,
+                        section_index: 0
+                    }, e => {
+                        Ot({
+                            action: `click`,
+                            actionType: Vt.CHATGPT_ENGAGEMENT_ACTION_TYPE_CLICKED,
+                            analyticsMetadata: e,
+                            contentReferenceType: `map`,
+                            linkAffordance: Xt.CHATGPT_LINK_AFFORDANCE_BUTTON,
+                            linkType: xt.CHATGPT_LINK_TYPE_LOCAL_BUSINESS_DIRECTIONS,
+                            surfaceLocation: Kt.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_FULLSCREEN_MAP,
+                            url: i
+                        })
+                    })
+                },
+                children: (0, Z.jsx)(R, {
+                    id: `chatgpt.places.route_stops.sidebar.open_route`,
+                    defaultMessage: `Open route`
+                })
+            }), t[13] = i, t[14] = a, t[15] = g) : g = t[15];
+            let _;
+            t[16] === f ? _ = t[17] : (_ = f != null && (0, Z.jsx)(`span`, {
+                className: `text-token-text-secondary text-sm`,
+                children: f
+            }), t[16] = f, t[17] = _);
+            let v;
+            t[18] !== g || t[19] !== _ ? (v = (0, Z.jsxs)(`div`, {
+                className: `mt-4 flex flex-wrap items-center gap-3`,
+                children: [g, _]
+            }), t[18] = g, t[19] = _, t[20] = v) : v = t[20];
+            let y;
+            return t[21] !== m || t[22] !== h || t[23] !== v ? (y = (0, Z.jsxs)(`div`, {
+                className: `border-token-border-light border-b px-6 pt-9 pb-4`,
+                children: [m, h, v]
+            }), t[21] = m, t[22] = h, t[23] = v, t[24] = y) : y = t[24], y
+        }, Ra = e => {
+            "use forget";
+            let t = (0, Aa.c)(4),
+                {
+                    stopNumber: n,
+                    totalStops: r
+                } = e;
+            if (n === 1) {
+                let e;
+                return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Z.jsx)(R, {
+                    id: `chatgpt.places.route_stops.card.role.start`,
+                    defaultMessage: `Start here`
+                }), t[0] = e) : e = t[0], e
+            }
+            if (n === r) {
+                let e;
+                return t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Z.jsx)(R, {
+                    id: `chatgpt.places.route_stops.card.role.destination`,
+                    defaultMessage: `Destination`
+                }), t[1] = e) : e = t[1], e
+            }
+            let i;
+            return t[2] === n ? i = t[3] : (i = (0, Z.jsx)(R, {
+                id: `chatgpt.places.route_stops.card.role.intermediate`,
+                defaultMessage: `Stop {stopNumber}`,
+                values: {
+                    stopNumber: n
+                }
+            }), t[2] = n, t[3] = i), i
+        }, za = e => {
+            "use forget";
+            let t = (0, Aa.c)(16),
+                {
+                    intl: n,
+                    leg: r,
+                    route: i
+                } = e,
+                a;
+            t[0] === i ? a = t[1] : (a = Va(i), t[0] = i, t[1] = a);
+            let o = a;
+            if (o.length > 0) {
+                let e;
+                return t[2] !== n || t[3] !== o ? (e = (0, Z.jsx)(Ba, {
+                    intl: n,
+                    segments: o
+                }), t[2] = n, t[3] = o, t[4] = e) : e = t[4], e
+            }
+            let s, c;
+            if (t[5] !== n || t[6] !== r.duration_seconds || t[7] !== i) {
+                c = Symbol.for(`react.early_return_sentinel`);
+                bb0: {
+                    let e = fa(n, r.duration_seconds);
+                    if (e == null) {
+                        c = null;
+                        break bb0
+                    }
+                    s = Ga(n, i.route_mode, e)
+                }
+                t[5] = n, t[6] = r.duration_seconds, t[7] = i, t[8] = s, t[9] = c
+            } else s = t[8], c = t[9];
+            if (c !== Symbol.for(`react.early_return_sentinel`)) return c;
+            let l = s,
+                u;
+            t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, Z.jsx)(`div`, {
+                className: `bg-token-border-default h-px flex-1`
+            }), t[10] = u) : u = t[10];
+            let d;
+            t[11] === l ? d = t[12] : (d = (0, Z.jsx)(`span`, {
+                children: l
+            }), t[11] = l, t[12] = d);
+            let f;
+            t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, Z.jsx)(`div`, {
+                className: `bg-token-border-default h-px flex-1`
+            }), t[13] = f) : f = t[13];
+            let p;
+            return t[14] === d ? p = t[15] : (p = (0, Z.jsxs)(`div`, {
+                className: `text-token-text-secondary flex h-[42px] items-center gap-3 px-4 text-sm leading-[18px]`,
+                children: [u, d, f]
+            }), t[14] = d, t[15] = p), p
+        }, Ba = e => {
+            "use forget";
+            let t = (0, Aa.c)(5),
+                {
+                    intl: n,
+                    segments: r
+                } = e,
+                i;
+            t[0] !== n || t[1] !== r ? (i = r.map((e, t) => {
+                let i = fa(n, e.duration_seconds),
+                    a = [],
+                    o = Ua(n, e),
+                    s;
+                if (e.mode === `transit`) {
+                    s = Wa(e.line?.color);
+                    let t = e.line?.headsign?.trim(),
+                        n = e.stops[0]?.name,
+                        r = e.stops.at(-1)?.name;
+                    t != null && t.length > 0 && a.push((0, Z.jsx)(R, {
+                        id: `chatgpt.places.route_stops.transit_segment.direction`,
+                        defaultMessage: `Toward {headsign}`,
+                        values: {
+                            headsign: t
+                        }
+                    }, `direction`)), n != null && r != null && n !== r && a.push((0, Z.jsx)(R, {
+                        id: `chatgpt.places.route_stops.transit_segment.stations`,
+                        defaultMessage: `{boardingStop} → {arrivalStop}`,
+                        values: {
+                            boardingStop: n,
+                            arrivalStop: r
+                        }
+                    }, `stations`))
+                } else {
+                    let e = r[t + 1],
+                        n = r[t - 1],
+                        i = n?.stops.at(-1);
+                    if (e?.mode === `transit` && e.stops[0] != null) {
+                        let t = e.stops[0].name;
+                        a.push((0, Z.jsx)(R, {
+                            id: `chatgpt.places.route_stops.transit_segment.walk_to_station`,
+                            defaultMessage: `To {station}`,
+                            values: {
+                                station: t
+                            }
+                        }, `station`))
+                    } else if (n?.mode === `transit` && i != null) {
+                        let e = i.name;
+                        a.push((0, Z.jsx)(R, {
+                            id: `chatgpt.places.route_stops.transit_segment.walk_from_station`,
+                            defaultMessage: `From {station}`,
+                            values: {
+                                station: e
+                            }
+                        }, `station`))
+                    }
+                }
+                let c = e.mode === `transit` ? i : null;
+                return (0, Z.jsxs)(`div`, {
+                    className: `relative py-2 pe-4`,
+                    children: [(0, Z.jsx)(`span`, {
+                        "aria-hidden": `true`,
+                        className: `bg-token-border-default absolute -start-[21px] top-3 size-2.5 rounded-full`,
+                        style: {
+                            backgroundColor: s
+                        }
+                    }), (0, Z.jsxs)(`div`, {
+                        className: `flex items-start justify-between gap-3`,
+                        children: [(0, Z.jsx)(`span`, {
+                            className: `text-token-text-primary text-sm font-medium`,
+                            children: o
+                        }), (0, Z.jsx)(`span`, {
+                            className: `text-token-text-secondary shrink-0 text-sm`,
+                            children: c
+                        })]
+                    }), a.map(ka)]
+                }, `${e.mode}-${t}`)
+            }), t[0] = n, t[1] = r, t[2] = i) : i = t[2];
+            let a;
+            return t[3] === i ? a = t[4] : (a = (0, Z.jsx)(`div`, {
+                className: `border-token-border-default my-2 ms-7 border-s ps-4`,
+                children: i
+            }), t[3] = i, t[4] = a), a
+        }, Va = e => e.route_mode === `transit` ? (e.segments ?? []).filter(e => e.mode === `transit` || (e.duration_seconds ?? 0) > 0 || (e.distance_meters ?? 0) > 0) : [], Ha = (e, t) => t.map(t => Ua(e, t)).join(` → `), Ua = (e, t) => {
+            if (t.mode === `transit`) return t.line?.name?.trim() || t.line?.short_name?.trim() || e.formatMessage({
+                id: `chatgpt.places.route_stops.transit_segment.unnamed_line`,
+                defaultMessage: `Transit`
+            });
+            let n = fa(e, t.duration_seconds);
+            return n == null ? e.formatMessage({
+                id: `chatgpt.places.route_stops.transit_segment.walk_without_duration`,
+                defaultMessage: `Walk`
+            }) : e.formatMessage({
+                id: `chatgpt.places.route_stops.transit_segment.walk_with_duration`,
+                defaultMessage: `Walk {duration}`
+            }, {
+                duration: n
+            })
+        }, Wa = e => {
+            let t = e?.trim();
+            if (!(t == null || !/^#?[0-9a-f]{6}$/i.test(t))) return t.startsWith(`#`) ? t : `#${t}`
+        }, Ga = (e, t, n) => t === `walking` ? e.formatMessage({
+            id: `chatgpt.places.route_stops.leg_duration.walking_duration`,
+            defaultMessage: `Walk ~{duration}`
+        }, {
+            duration: n
+        }) : t === `cycling` ? e.formatMessage({
+            id: `chatgpt.places.route_stops.leg_duration.cycling_duration`,
+            defaultMessage: `Bike ~{duration}`
+        }, {
+            duration: n
+        }) : t === `transit` ? e.formatMessage({
+            id: `chatgpt.places.route_stops.leg_duration.transit_duration`,
+            defaultMessage: `Transit ~{duration}`
+        }, {
+            duration: n
+        }) : e.formatMessage({
+            id: `chatgpt.places.route_stops.leg_duration.driving_duration`,
+            defaultMessage: `Drive ~{duration}`
+        }, {
+            duration: n
+        }), Ka = (e, t, n) => e.formatMessage({
+            id: `chatgpt.places.route_stops.card.incoming_leg_duration`,
+            defaultMessage: `{routeMode, select, walking {Walk} cycling {Bike} transit {Transit} other {Drive}} ~{duration}`
+        }, {
+            routeMode: t,
+            duration: n
+        })
+    })),
+    Ja, Ya, Xa, Za, Qa, $a = e((() => {
+        Gn(), Hn(), Ja = n(z()), ma(), _t(), Ya = e => e?.find(e => e.route != null)?.route, Xa = ({
+            businesses: e,
+            routeGroups: t,
+            selectedRouteGroupIndex: n
+        }) => {
+            if (n == null) return e;
+            let r = t?.[n];
+            if (r == null || r.pointIds.length === 0) return [];
+            let i = new Set;
+            return oa(e, r.pointIds).flatMap(({
+                business: e
+            }) => {
+                let t = Jt(e);
+                return i.has(t) ? [] : (i.add(t), [e])
+            })
+        }, Za = e => e.route == null || e.route.geometry.coordinates.length < 2 ? [] : [e.route, ...(e.alternativeRoutes ?? []).filter(e => e.geometry.coordinates.length >= 2)].flatMap(e => e.geometry.coordinates), Qa = ({
+            businesses: e,
+            routeGroups: t,
+            controlledRouteGroupIndex: n,
+            onRouteGroupChange: r,
+            messageId: i
+        }) => {
+            let [a, o] = (0, Ja.useState)({
+                groupIndex: null,
+                messageId: i
+            }), s = r == null ? a.messageId === i ? a.groupIndex : null : n ?? null, c = (0, Ja.useMemo)(() => ra(t), [t]), l = (0, Ja.useMemo)(() => Xa({
+                businesses: e,
+                routeGroups: t,
+                selectedRouteGroupIndex: s
+            }), [e, t, s]), u = (0, Ja.useMemo)(() => t ?? [], [t]), d = (0, Ja.useMemo)(() => s == null ? u : u.slice(s, s + 1), [u, s]), f = (0, Ja.useMemo)(() => d.flatMap(Za), [d]), p = d.length === 1 ? d[0]?.route : null;
+            return {
+                displayRouteGroups: d,
+                displayedBusinesses: l,
+                getRouteGroupBounds: (0, Ja.useCallback)(t => {
+                    let n = t == null ? u : u.slice(t, t + 1),
+                        r = [...Xa({
+                            businesses: e,
+                            routeGroups: u,
+                            selectedRouteGroupIndex: t
+                        }).map(e => Yn([e.entity_data.longitude, e.entity_data.latitude])), ...n.flatMap(Za).map(e => Yn(e))];
+                    return r.length === 0 ? null : Qn(Vn(r))
+                }, [u, e]),
+                routeCoordinates: f,
+                routeGroupStops: c,
+                selectedRoute: p,
+                selectedRouteGroupIndex: s,
+                selectRouteGroup: e => {
+                    r == null ? o({
+                        groupIndex: e,
+                        messageId: i
+                    }) : r(e)
+                }
+            }
+        }
+    })),
+    eo, to, no, ro, io, ao, oo, so, co, lo = e((() => {
+        eo = (e, t) => {
+            let n = e?.knownFields ?? [],
+                r = t?.knownFields ?? [];
+            return e?.title === t?.title && e?.imageUrl === t?.imageUrl && e?.label === t?.label && e?.ratingLabel === t?.ratingLabel && e?.hoursLabel === t?.hoursLabel && e?.knownFields == null == (t?.knownFields == null) && n.length === r.length && n.every((e, t) => e === r[t])
+        }, to = (e, t) => e.id === t.id && e.entity.id === t.entity.id && (e.icon ?? ``) === (t.icon ?? ``) && (e.description ?? ``) === (t.description ?? ``) && eo(e.mapCarouselCard, t.mapCarouselCard) && (e.notes ?? ``) === (t.notes ?? ``) && (e.entity.reservation_providers?.length ?? 0) === (t.entity.reservation_providers?.length ?? 0) && (e.entity.image_urls?.length ?? 0) === (t.entity.image_urls?.length ?? 0) && (e.entity.reconciled_thumbnails?.length ?? 0) === (t.entity.reconciled_thumbnails?.length ?? 0) && (e.entity.image_url ?? ``) === (t.entity.image_url ?? ``), no = (e, t) => e.length === t.length && e.every((e, n) => to(e, t[n])), ro = (e, t) => e.length === t.length && e.every((e, n) => e.length === t[n].length && e.every((e, r) => e === t[n][r])), io = (e, t) => {
+            let n = e ?? [],
+                r = t ?? [];
+            return n.length === r.length && n.every((e, t) => e === r[t])
+        }, ao = (e, t) => e.length === t.length && e.every((e, n) => e.name === t[n].name && ro([e.location], [t[n].location])), oo = (e, t) => {
+            let n = e?.segments ?? [],
+                r = t?.segments ?? [];
+            return n.length === r.length && n.every((e, t) => {
+                let n = r[t];
+                return e.mode === n.mode && (e.distance_meters ?? null) === (n.distance_meters ?? null) && (e.duration_seconds ?? null) === (n.duration_seconds ?? null) && (e.start_time ?? ``) === (n.start_time ?? ``) && (e.end_time ?? ``) === (n.end_time ?? ``) && (e.line?.name ?? ``) === (n.line?.name ?? ``) && (e.line?.short_name ?? ``) === (n.line?.short_name ?? ``) && (e.line?.vehicle ?? ``) === (n.line?.vehicle ?? ``) && (e.line?.network_name ?? ``) === (n.line?.network_name ?? ``) && (e.line?.color ?? ``) === (n.line?.color ?? ``) && (e.line?.text_color ?? ``) === (n.line?.text_color ?? ``) && (e.line?.headsign ?? ``) === (n.line?.headsign ?? ``) && ao(e.stops, n.stops) && io(e.next_departures, n.next_departures) && ro(e.geometry?.coordinates ?? [], n.geometry?.coordinates ?? [])
+            })
+        }, so = (e, t) => e === t || no(e.entities, t.entities) && no(e.raw_search_entities ?? [], t.raw_search_entities ?? []) && (e.answer ?? ``) === (t.answer ?? ``), co = (e, t) => {
+            if (e === t) return !0;
+            let n = e ?? [],
+                r = t ?? [];
+            return n.length === r.length && n.every((e, t) => {
+                let n = r[t],
+                    i = e.route?.geometry.coordinates ?? [],
+                    a = n.route?.geometry.coordinates ?? [],
+                    o = e.alternativeRoutes ?? [],
+                    s = n.alternativeRoutes ?? [];
+                return (e.dayNumber ?? ``) === (n.dayNumber ?? ``) && (e.title ?? ``) === (n.title ?? ``) && (e.notesByPointId?.size ?? 0) === (n.notesByPointId?.size ?? 0) && Array.from(e.notesByPointId ?? []).every(([e, t]) => n.notesByPointId?.get(e) === t) && e.pointIds.length === n.pointIds.length && e.pointIds.every((e, t) => e === n.pointIds[t]) && (e.route?.route_mode ?? ``) === (n.route?.route_mode ?? ``) && (e.route?.duration_seconds ?? null) === (n.route?.duration_seconds ?? null) && ro(i, a) && oo(e.route, n.route) && o.length === s.length && o.every((e, t) => {
+                    let n = s[t],
+                        r = e.geometry.coordinates,
+                        i = n.geometry.coordinates;
+                    return e.route_mode === n.route_mode && (e.duration_seconds ?? null) === (n.duration_seconds ?? null) && ro(r, i) && oo(e, n)
+                })
+            })
+        }
+    })),
+    uo, fo, po, mo, ho, go, _o, vo, yo = e((() => {
+        Zn(), uo = 13.5, fo = 250, po = 5, mo = 4, ho = 111.32, go = e => {
+            let t = [...e].sort((e, t) => e - t),
+                n = Math.floor(t.length / 2);
+            return t.length % 2 == 0 ? (t[n - 1] + t[n]) / 2 : t[n]
+        }, _o = e => {
+            if (e.length < po) return e;
+            let t = go(e.map(([e]) => e)),
+                n = go(e.map(([, e]) => e)),
+                r = Math.cos(n * Math.PI / 180),
+                i = e.map(([e, i]) => Math.hypot((e - t) * r, i - n) * ho),
+                a = Math.max(fo, go(i) * mo),
+                o = e.filter((e, t) => i[t] <= a);
+            return o.length > e.length / 2 ? o : e
+        }, vo = ({
+            coordinates: e,
+            width: t,
+            height: n,
+            padding: r,
+            center: i,
+            ignoreCoordinateOutliers: a = !1
+        }) => {
+            if (t <= r.left + r.right || n <= r.top + r.bottom) return null;
+            let o = e.filter(([e, t]) => Number.isFinite(e) && Number.isFinite(t));
+            if (o.length === 0) return null;
+            let s = a ? _o(o) : o,
+                c = s.map(([e]) => e),
+                l = s.map(([, e]) => e),
+                u = [
+                    [Math.min(...c), Math.min(...l)],
+                    [Math.max(...c), Math.max(...l)]
+                ],
+                d, f, p;
+            if (i) {
+                let [e, a] = Bn([...i]), o = Math.max((t - r.left - r.right) / 2, .5), c = Math.max((n - r.top - r.bottom) / 2, .5);
+                p = i[0], f = i[1], d = uo;
+                for (let t of s) {
+                    let [n, r] = Bn([...t]), i = Math.abs(n - e), s = Math.abs(r - a);
+                    i > 0 && (d = Math.min(d, Math.log2(o / i))), s > 0 && (d = Math.min(d, Math.log2(c / s)))
+                }
+                let l = new qn({
+                    width: t,
+                    height: n,
+                    longitude: p,
+                    latitude: f,
+                    zoom: d
+                });
+                [p, f] = l.getMapCenterByLngLatPosition({
+                    lngLat: [...i],
+                    pos: [(r.left + t - r.right) / 2, (r.top + n - r.bottom) / 2]
+                })
+            } else {
+                let e = new qn({
+                    width: t,
+                    height: n,
+                    longitude: (u[0][0] + u[1][0]) / 2,
+                    latitude: (u[0][1] + u[1][1]) / 2
+                });
+                ({
+                    zoom: d,
+                    latitude: f,
+                    longitude: p
+                } = e.fitBounds(u, {
+                    maxZoom: uo,
+                    padding: r
+                }))
+            }
+            let m = new qn({
+                    width: t,
+                    height: n,
+                    longitude: p,
+                    latitude: f,
+                    zoom: d
+                }),
+                [h, g] = m.unproject([0, 0]),
+                [_, v] = m.unproject([t, n]);
+            return {
+                bounds: u,
+                viewState: {
+                    longitude: p,
+                    latitude: f,
+                    zoom: d,
+                    pitch: 0,
+                    bearing: 0,
+                    latSpan: Math.abs(g - v),
+                    longSpan: Math.abs(_ - h)
+                }
+            }
+        }
+    })),
+    bo = t({
+        MapWithEntities: () => ss,
+        MapWithEntitiesComponent: () => xo,
+        MapWithEntitiesImpl: () => To
+    });
+
+function xo(e) {
+    "use forget";
+    let t = (0, ko.c)(199),
+        {
+            contentReference: n,
+            clientThreadId: i,
+            conversationId: a,
+            overlayMapSource: o,
+            messageId: s,
+            assistantMessageId: l,
+            isGenui: d,
+            trackContentReferenceEvent: f,
+            turnIndex: h,
+            locationFooter: g,
+            showInlineFeedback: _,
+            mapHeight: v,
+            borderRadiusClassName: y,
+            fill: b,
+            minHeight: x,
+            initialViewState: S,
+            initialSelectedBusinessId: C,
+            centerOnUser: w,
+            ignoreCoordinateOutliers: T,
+            enableFullscreen: D,
+            onMapReady: O,
+            onMapClick: k,
+            onMarkerClick: A,
+            onBusinessCardClick: j,
+            onBusinessCarouselShown: M,
+            staggerMarkerEntrance: N,
+            keepMountedOnceVisible: ee,
+            renderMapWhileLoading: ne,
+            hideInlineCarousel: re,
+            enableMapCarouselPresentation: ie,
+            updateInlineMapStateOnMove: ae,
+            routeContext: oe,
+            routeGroups: ce,
+            mapAnalyticsMetadata: le
+        } = e,
+        P = o === void 0 ? `inline-map` : o,
+        ue = d !== void 0 && d,
+        de = _ === void 0 || _,
+        F = b !== void 0 && b,
+        fe = x === void 0 ? Uo : x,
+        pe = T !== void 0 && T,
+        me = D === void 0 || D,
+        he = N !== void 0 && N,
+        ge = ee !== void 0 && ee,
+        ve = ne !== void 0 && ne,
+        xe = re !== void 0 && re,
+        Se = ie !== void 0 && ie,
+        Te = ae !== void 0 && ae,
+        Ee;
+    t[0] === me ? Ee = t[1] : (Ee = me && c(`3194776735`), t[0] = me, t[1] = Ee);
+    let Oe = Ee,
+        {
+            shouldBlockConsumerLockdownModeActionsForConversation: je
+        } = yt(i),
+        Me = (0, Q.useRef)(void 0),
+        I = i ? ke(i) : null,
+        Pe = I ? Ge(I) : null,
+        Fe = a ?? (I ? se(I) : void 0),
+        Ie = m(`4107938382`),
+        Le, Re;
+    if (t[2] === Symbol.for(`react.memo_cache_sentinel`)) {
+        let e = m(`4107938382`, {
+            disableExposureLog: !0
+        });
+        Le = e.get(`map-entity-notes-experiment-enrolled`, !1), Re = e.get(`map-entity-notes-exposure-point`, `delivery_eligible`) === `opportunity` ? `opportunity` : `delivery_eligible`, t[2] = Le, t[3] = Re
+    } else Le = t[2], Re = t[3];
+    let ze = Re,
+        L;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (L = ct(), t[4] = L) : L = t[4];
+    let Be = L,
+        Ve = Ie.get(`enable-rich-map-widget-trigger`, !1),
+        R = Ve && P === `inline-map` ? Be.inlineLineCount : null,
+        He = R == null ? null : Bo[R] ?? Bo[zo],
+        z = I && Oe ? Mt(I) : null,
+        {
+            openThreadSidebar: Ue
+        } = Et(),
+        We = nn(),
+        B = U(i, s),
+        V = `${s}:${n.start_idx}:${n.type}`,
+        qe;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (qe = [], t[5] = qe) : qe = t[5];
+    let Je;
+    t[6] === V ? Je = t[7] : (Je = {
+        mapIdentity: V,
+        businesses: qe
+    }, t[6] = V, t[7] = Je);
+    let [Ye, $e] = (0, Q.useState)(Je), tt = Ye.mapIdentity === V ? Ye.businesses : [], {
+        businesses: rt,
+        additionalBusinesses: at
+    } = et(n), ot = wt() && rt.length === 0 && B ? Qe(B) : rt, lt = new Map(B ? Qe(B).map(wo) : []), ut = e => {
+        let t = lt.get(e.entity_data.id),
+            n = t?.length ? {
+                ...e,
+                entity_data: {
+                    ...e.entity_data,
+                    selected_images: t
+                }
+            } : e;
+        return e.mapPointOccurrences == null ? n : {
+            ...n,
+            mapPointOccurrences: e.mapPointOccurrences.map(ut)
+        }
+    }, W = jt(It(ot.map(ut), tt), tt), pt = jt(It(at.map(ut), tt), tt), ht = [...W, ...pt], gt = Ht(Ye.businesses), _t = Ht(ht);
+    (Ye.mapIdentity !== V || gt.length !== _t.length || !gt.every((e, t) => {
+        let n = _t[t];
+        return n != null && Jt(e) === Jt(n) && e.entity_data.id === n.entity_data.id && e.notes === n.notes && e.extra_params?.map_entity_notes_sidecar === n.extra_params?.map_entity_notes_sidecar
+    })) && $e({
+        mapIdentity: V,
+        businesses: ht
+    });
+    let vt = c(`2305612616`),
+        {
+            mapBusinesses: bt,
+            carouselBusinesses: xt
+        } = st({
+            businesses: W,
+            additionalBusinesses: pt,
+            includeFastPathBusinesses: vt
+        }),
+        St = (0, Q.useRef)(!1),
+        Ct;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (Ct = {
+        opportunity: ``,
+        delivery: ``
+    }, t[8] = Ct) : Ct = t[8];
+    let Dt = (0, Q.useRef)(Ct),
+        Ot;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (Ot = e => {
+        if (!e || St.current) return;
+        let t, n = null,
+            r = requestAnimationFrame(r => {
+                let i = e => {
+                    _e.hist(De.DEFAULT, `sonic.map_entity_notes.user_perceived_latency_ms`, [], Math.round(e - r)), St.current = !0, t?.disconnect()
+                };
+                if (e.querySelector(Ro)) {
+                    i(r);
+                    return
+                }
+                t = new MutationObserver(() => {
+                    e.querySelector(Ro) && (t?.disconnect(), n = requestAnimationFrame(i))
+                }), t.observe(e, {
+                    childList: !0,
+                    subtree: !0
+                })
+            });
+        return () => {
+            t?.disconnect(), cancelAnimationFrame(r), n != null && cancelAnimationFrame(n)
+        }
+    }, t[9] = Ot) : Ot = t[9];
+    let kt = Ne(Ot),
+        At = Ya(ce),
+        Nt = At == null ? null : aa(W, At)[0]?.business ?? null,
+        Pt;
+    t[10] === C ? Pt = t[11] : (Pt = e => e.entity_data.id === C, t[10] = C, t[11] = Pt);
+    let Ft = Ht(bt).find(Pt),
+        Lt = Ft == null ? null : Jt(Ft),
+        [Bt, Vt] = (0, Q.useState)(Lt ?? (Nt == null ? null : Jt(Nt))),
+        Wt;
+    t[12] === Bt ? Wt = t[13] : (Wt = e => Jt(e) === Bt, t[12] = Bt, t[13] = Wt);
+    let Gt = Ht(bt).find(Wt),
+        qt = Gt?.entity_data.id ?? null,
+        Yt;
+    t[14] === s ? Yt = t[15] : (Yt = {
+        groupIndex: null,
+        messageId: s
+    }, t[14] = s, t[15] = Yt);
+    let [Xt, Zt] = (0, Q.useState)(Yt), Qt = Xt.messageId === s ? Xt.groupIndex : null, $t = Xa({
+        businesses: xt,
+        routeGroups: ce,
+        selectedRouteGroupIndex: Qt
+    }), tn;
+    t[16] !== I || t[17] !== P || t[18] !== Vt ? (tn = () => {
+        if (P === `places-button` && I) return we(() => zt(I)?.type === `entity`, e => {
+            e || Vt(null)
+        })
+    }, t[16] = I, t[17] = P, t[18] = Vt, t[19] = tn) : tn = t[19];
+    let rn;
+    t[20] !== I || t[21] !== P ? (rn = [I, P], t[20] = I, t[21] = P, t[22] = rn) : rn = t[22], (0, Q.useEffect)(tn, rn);
+    let an = bt.length === 0,
+        on = an && !ve,
+        [sn, cn] = (0, Q.useState)(!1),
+        ln;
+    t[23] === ge ? ln = t[24] : (ln = () => {
+        ge && cn(!0)
+    }, t[23] = ge, t[24] = ln);
+    let G = Ne(ln),
+        un;
+    t[25] === G ? un = t[26] : (un = {
+        onIntersect: G
+    }, t[25] = G, t[26] = un);
+    let [K, dn] = Tt(un), fn = K || ge && sn, pn = dn, mn, hn;
+    t[27] !== an || t[28] !== K || t[29] !== je ? (mn = () => {
+        !an && K && !je && E(`content_event`)
+    }, hn = [an, K, je], t[27] = an, t[28] = K, t[29] = je, t[30] = mn, t[31] = hn) : (mn = t[30], hn = t[31]), (0, Q.useEffect)(mn, hn);
+    let gn = n.start_idx < 4,
+        _n = (P === `places-button` ? Fo : At == null ? Po : P === `genui-map-widget` && At.route_mode === `walking` ? Lo : Io) + (He?.heightAdjustmentPx ?? 0),
+        vn = gn ? Ho + (Ve && !xe ? _n : 0) : Vo,
+        [yn, bn] = (0, Q.useState)(!1),
+        xn;
+    t[32] === Symbol.for(`react.memo_cache_sentinel`) ? (xn = e => {
+        if (e == null) return;
+        let t = e => {
+            let {
+                width: t,
+                height: n
+            } = e, r = Ze({
+                width: t,
+                height: n
+            });
+            bn(e => e === r ? e : r)
+        };
+        if (typeof ResizeObserver > `u`) {
+            let n = requestAnimationFrame(() => {
+                t(e.getBoundingClientRect())
+            });
+            return () => cancelAnimationFrame(n)
+        }
+        return te({
+            axis: `both`,
+            target: e,
+            onChange: t
+        })
+    }, t[32] = xn) : xn = t[32];
+    let Sn = xn,
+        {
+            shouldApplyObstruction: Cn,
+            shouldRender: wn
+        } = Xe({
+            hasRoom: yn,
+            hasCarouselBusinesses: $t.length > 0,
+            hasConversation: I != null,
+            isRichOpenerEnabled: Ve,
+            isHidden: xe
+        }),
+        Tn, En;
+    t[33] !== I || t[34] !== $t || t[35] !== an || t[36] !== K || t[37] !== M || t[38] !== At || t[39] !== je || t[40] !== wn ? (Tn = () => {
+        wn && K && !an && !je && I && At == null && M?.($t)
+    }, En = [$t, I, an, K, M, At, je, wn], t[33] = I, t[34] = $t, t[35] = an, t[36] = K, t[37] = M, t[38] = At, t[39] = je, t[40] = wn, t[41] = Tn, t[42] = En) : (Tn = t[41], En = t[42]), (0, Q.useEffect)(Tn, En);
+    let Dn = Le && P === `inline-map` && K && wn && !je,
+        On, kn;
+    t[43] !== Dn || t[44] !== $t || t[45] !== s || t[46] !== Be.showNotes || t[47] !== Ie ? (On = () => {
+        if (!Dn) return;
+        if (Dt.current.opportunity !== s) {
+            (ze === `opportunity` || !Be.showNotes) && Ie.get(`map-entity-notes-experiment-enrolled`, !1);
+            let e = ye.logStructuredEvent(`ChatgptPlacesNotesEligibility`, {
+                legacyStatsigEventName: `chatgpt_map_entity_notes_opportunity`,
+                stage: `CHATGPT_PLACES_NOTES_STAGE_OPPORTUNITY`,
+                messageId: s
+            });
+            Ce(`chatgpt_map_entity_notes_opportunity`, void 0, {
+                ...e ? {
+                    unique_event_id: e
+                } : {}
+            }), Dt.current.opportunity = s
+        }
+        if (Dt.current.delivery === s || !$t.some(Co)) return;
+        ze === `delivery_eligible` && Ie.get(`map-entity-notes-experiment-enrolled`, !1);
+        let e = ye.logStructuredEvent(`ChatgptPlacesNotesEligibility`, {
+            legacyStatsigEventName: `chatgpt_map_entity_notes_delivery_eligible`,
+            stage: `CHATGPT_PLACES_NOTES_STAGE_DELIVERY_ELIGIBLE`,
+            messageId: s
+        });
+        Ce(`chatgpt_map_entity_notes_delivery_eligible`, void 0, {
+            ...e ? {
+                unique_event_id: e
+            } : {}
+        }), Dt.current.delivery = s
+    }, kn = [Dn, $t, s, ze, Be.showNotes, Ie], t[43] = Dn, t[44] = $t, t[45] = s, t[46] = Be.showNotes, t[47] = Ie, t[48] = On, t[49] = kn) : (On = t[48], kn = t[49]), (0, Q.useEffect)(On, kn);
+    let q;
+    t[50] === fe ? q = t[51] : (q = H(fe), t[50] = fe, t[51] = q);
+    let An = q,
+        jn = v ?? Math.max(vn, An),
+        Mn = F ? `100%` : jn,
+        Nn = (0, Q.useRef)(null),
+        Pn;
+    t[52] !== pt || t[53] !== l || t[54] !== W || t[55] !== i || t[56] !== n.start_idx || t[57] !== n.type || t[58] !== I || t[59] !== Lt || t[60] !== Oe || t[61] !== le || t[62] !== B || t[63] !== s || t[64] !== P || t[65] !== z || t[66] !== oe || t[67] !== ce || t[68] !== Vt || t[69] !== h ? (Pn = e => {
+        let t = `${s}:${n.start_idx}`;
+        le != null && Nn.current !== t && (as({
+            action: mt.CHATGPT_GENUI_MAP_ENGAGEMENT_ACTION_CLICKED,
+            contentReferenceStartIndex: n.start_idx,
+            mapAnalyticsMetadata: le,
+            messageId: s
+        }), Nn.current = t), ye.logStructuredEvent(`ChatgptPlacesFullscreenOpened`, {
+            conversationId: i,
+            messageId: s,
+            entryPoint: en.CHATGPT_PLACES_ENTRY_POINT_MAP_WIDGET
+        });
+        let r = B ? Qe(B) : [],
+            a = Rt([...W, ...pt], r);
+        I && Oe && ft(I).setPopoverData$({
+            contentReferenceStartIndex: n.start_idx,
+            turnIndex: h
+        }), !(!I || !z) && (nt({
+            businesses: a,
+            conversation: I,
+            contentReferenceStartIndex: n.start_idx,
+            contentReferenceType: n.type,
+            currentViewState: e,
+            isMobile: !be(),
+            messageId: s,
+            assistantMessageId: l,
+            turnIndex: h,
+            mapSource: P,
+            routeGroups: ce,
+            routeContext: oe
+        }), Vt(Lt))
+    }, t[52] = pt, t[53] = l, t[54] = W, t[55] = i, t[56] = n.start_idx, t[57] = n.type, t[58] = I, t[59] = Lt, t[60] = Oe, t[61] = le, t[62] = B, t[63] = s, t[64] = P, t[65] = z, t[66] = oe, t[67] = ce, t[68] = Vt, t[69] = h, t[70] = Pn) : Pn = t[70];
+    let Fn = Pn,
+        In;
+    t[71] !== Oe || t[72] !== P || t[73] !== Ie ? (In = Oe && P === `inline-map` && Ie.get(`enable-inline-map-load-optimizations`, !1), t[71] = Oe, t[72] = P, t[73] = Ie, t[74] = In) : In = t[74];
+    let Rn = In,
+        zn, Bn;
+    t[75] !== Rn || t[76] !== Oe || t[77] !== s || t[78] !== z ? (zn = () => {
+        !Rn && Oe && z && z.currentMessageId$() === void 0 && z.setCurrentMessageId$(s)
+    }, Bn = [Rn, Oe, z, s], t[75] = Rn, t[76] = Oe, t[77] = s, t[78] = z, t[79] = zn, t[80] = Bn) : (zn = t[79], Bn = t[80]), (0, Q.useEffect)(zn, Bn);
+    let Vn;
+    t[81] === z ? Vn = t[82] : (Vn = () => z?.isOpen$(), t[81] = z, t[82] = Vn);
+    let Hn = r(Vn),
+        Un;
+    t[83] === z ? Un = t[84] : (Un = () => z?.currentMessageId$(), t[83] = z, t[84] = Un);
+    let Wn = r(Un),
+        Gn;
+    t[85] !== an || t[86] !== de ? (Gn = de && !an && dt(), t[85] = an, t[86] = de, t[87] = Gn) : Gn = t[87];
+    let Kn = Gn,
+        qn = Oe && !Hn && Wn === s,
+        Jn;
+    t[88] !== l || t[89] !== n.start_idx || t[90] !== ue || t[91] !== s ? (Jn = e => ({
+        type: `entity`,
+        debugThreadId: void 0,
+        messageId: s,
+        assistantMessageId: l,
+        contentReferenceStartIndex: n.start_idx,
+        query: e.entity_data.name,
+        category: Ke(e),
+        entityId: e.entity_data.id,
+        isGenui: ue,
+        extraParams: Ae(e.entity_data, e.extra_params),
+        imageThumbnailUrl: it(e.entity_data) ?? void 0
+    }), t[88] = l, t[89] = n.start_idx, t[90] = ue, t[91] = s, t[92] = Jn) : Jn = t[92];
+    let Yn = Jn,
+        Xn;
+    t[93] !== i || t[94] !== We || t[95] !== I || t[96] !== Yn || t[97] !== Ue ? (Xn = e => {
+        i && (We || I && Ut(I), Ue(Yn(e)))
+    }, t[93] = i, t[94] = We, t[95] = I, t[96] = Yn, t[97] = Ue, t[98] = Xn) : Xn = t[98];
+    let Zn = Xn,
+        Qn;
+    t[99] !== l || t[100] !== i || t[101] !== n.start_idx || t[102] !== n.type || t[103] !== Fe || t[104] !== ue || t[105] !== s || t[106] !== A || t[107] !== Zn || t[108] !== Vt || t[109] !== h ? (Qn = (e, t) => {
+        t === `marker` && A?.(), E(`local_entity_clicked`);
+        let r = e.entity_data.id;
+        Ln({
+            source: t === `marker` ? `marker` : `list`,
+            clientThreadId: i,
+            conversationId: Fe,
+            messageId: s,
+            assistantMessageId: l,
+            turnIndex: h,
+            contentReferenceStartIndex: n.start_idx,
+            surfaceLocation: Kt.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE,
+            entityId: r,
+            entityCategory: Ke(e),
+            contentReferenceType: n.type,
+            isGenui: ue
+        }), Vt(Jt(e)), Zn(e)
+    }, t[99] = l, t[100] = i, t[101] = n.start_idx, t[102] = n.type, t[103] = Fe, t[104] = ue, t[105] = s, t[106] = A, t[107] = Zn, t[108] = Vt, t[109] = h, t[110] = Qn) : Qn = t[110];
+    let $n = Ne(Qn),
+        er;
+    t[111] !== j || t[112] !== Zn || t[113] !== Vt ? (er = e => {
+        j?.(), E(`local_entity_clicked`), Vt(Jt(e)), Zn(e)
+    }, t[111] = j, t[112] = Zn, t[113] = Vt, t[114] = er) : er = t[114];
+    let tr = er;
+    if (je) return null;
+    let nr = F && `flex h-full min-h-0 flex-1 flex-col`,
+        rr;
+    t[115] === nr ? rr = t[116] : (rr = p(`not-prose`, nr), t[115] = nr, t[116] = rr);
+    let ir;
+    t[117] !== F || t[118] !== An ? (ir = F ? {
+        minHeight: An
+    } : void 0, t[117] = F, t[118] = An, t[119] = ir) : ir = t[119];
+    let ar = F ? `flex h-full min-h-0 flex-1 flex-col` : gn ? `pb-2` : `pt-4`,
+        or;
+    t[120] === ar ? or = t[121] : (or = p(ar), t[120] = ar, t[121] = or);
+    let sr = F && `flex h-full min-h-0 flex-1 flex-col`,
+        cr;
+    t[122] === sr ? cr = t[123] : (cr = p(Jo, sr), t[122] = sr, t[123] = cr);
+    let ur = F ? void 0 : on ? `0px` : `${jn}px`,
+        dr = +!on,
+        fr;
+    t[124] !== ur || t[125] !== dr ? (fr = {
+        maxHeight: ur,
+        opacity: dr
+    }, t[124] = ur, t[125] = dr, t[126] = fr) : fr = t[126];
+    let pr;
+    t[127] !== l || t[128] !== y || t[129] !== w || t[130] !== i || t[131] !== n.safe_urls || t[132] !== n.start_idx || t[133] !== n.type || t[134] !== I || t[135] !== Fe || t[136] !== Rn || t[137] !== $t || t[138] !== Se || t[139] !== F || t[140] !== tr || t[141] !== $n || t[142] !== pe || t[143] !== S || t[144] !== _n || t[145] !== He?.className || t[146] !== Pe || t[147] !== ue || t[148] !== on || t[149] !== Oe || t[150] !== vt || t[151] !== le || t[152] !== bt || t[153] !== Mn || t[154] !== pn || t[155] !== s || t[156] !== Be.showNotes || t[157] !== kt || t[158] !== Fn || t[159] !== k || t[160] !== O || t[161] !== P || t[162] !== z || t[163] !== At || t[164] !== oe || t[165] !== ce || t[166] !== An || t[167] !== Gt?.mapEntityId || t[168] !== qt || t[169] !== Qt || t[170] !== Zt || t[171] !== Cn || t[172] !== qn || t[173] !== wn || t[174] !== fn || t[175] !== he || t[176] !== f || t[177] !== h || t[178] !== Te ? (pr = !on && (0, $.jsx)(`div`, {
+        ref: pn,
+        style: {
+            height: Mn,
+            minHeight: F ? An : void 0
+        },
+        className: p(`bg-[rgba(244,240,239,0.5)] dark:bg-[rgba(38,43,61,0.5)]`, !F && (y ?? `rounded-[30px]`), F && `min-h-0 flex-1`),
+        children: fn && (0, $.jsxs)(`div`, {
+            className: p(`relative isolate h-full overflow-hidden`, !F && (y ?? `rounded-3xl`)),
+            children: [(0, $.jsx)(To, {
+                height: Mn,
+                mapSource: P,
+                businesses: bt,
+                clientThreadId: i,
+                conversationId: Fe,
+                contentReferenceStartIndex: n.start_idx,
+                contentReferenceType: n.type,
+                messageId: s,
+                turnIndex: h,
+                mapMessageId: s,
+                trackContentReferenceEvent: f,
+                mapAnalyticsMetadata: le,
+                onFullScreenToggle: Oe ? Fn : void 0,
+                containerClassName: p(`overflow-hidden`, !F && (y ?? `rounded-3xl`), qn && `motion-safe:[view-transition-name:map-with-entities]`),
+                obstructionPx: Cn ? {
+                    bottom: _n
+                } : void 0,
+                refitOnBottomObstructionChange: !0,
+                onMapClick: e => {
+                    k?.(), Oe && Fn(e)
+                },
+                selectedBusinessId: qt,
+                selectedMapEntityId: Gt?.mapEntityId,
+                initialViewState: S,
+                centerOnUser: w,
+                ignoreCoordinateOutliers: pe,
+                markerTooltipLocation: `top`,
+                onMarkerClick: $n,
+                renderNonPreferredAsProvisional: vt,
+                onMoveCallback: e => {
+                    Me.current = e
+                },
+                onMoveEndCallback: e => {
+                    Te && Pe && Pe.setSettledViewState$({
+                        mapInstanceKey: s,
+                        mapMessageId: s,
+                        viewState: e
+                    })
+                },
+                onMapReady: Rn ? () => {
+                    z != null && z.currentMessageId$() === void 0 && z.setCurrentMessageId$(s), O?.()
+                } : O,
+                staggerMarkerEntrance: he,
+                routeGroups: ce,
+                routeGroupsTitle: oe?.groupsTitle,
+                selectedRouteGroupIndex: Qt,
+                onRouteGroupChange: e => Zt({
+                    groupIndex: e,
+                    messageId: s
+                })
+            }), wn && I && (0, $.jsx)(`div`, {
+                ref: kt,
+                className: `pointer-events-none absolute inset-x-0 bottom-0 z-1`,
+                children: (0, $.jsx)(`div`, {
+                    className: `pointer-events-auto`,
+                    children: At == null && (ce == null || ce.length === 0) ? (0, $.jsx)(Tr, {
+                        conversation: I,
+                        messageId: s,
+                        engagementLoggingContext: {
+                            assistantMessageId: l,
+                            turnIndex: h,
+                            contentReferenceStartIndex: n.start_idx,
+                            contentReferenceType: n.type,
+                            isGenui: ue,
+                            surfaceLocation: Kt.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE
+                        },
+                        businesses: $t,
+                        additionalBusinesses: [],
+                        onClick: tr,
+                        onHover: e => {
+                            Mt(I).setHoveredBusinessId$(e)
+                        },
+                        trackContentReferenceEvent: f,
+                        setShowAdditionalBusinesses: So,
+                        showAdditionalBusinesses: !1,
+                        isLoading: !1,
+                        renderAsCarousel: !0,
+                        enableMapCarouselPresentation: Se,
+                        approvedImageUrls: n.safe_urls ?? void 0,
+                        showNotes: Be.showNotes,
+                        carouselNotesClassName: He?.className
+                    }) : (0, $.jsx)(Pa, {
+                        conversation: I,
+                        messageId: s,
+                        businesses: $t,
+                        routeGroups: ce ?? [],
+                        selectedRouteGroupIndex: Qt,
+                        routeContext: oe,
+                        onClick: tr,
+                        onHover: e => {
+                            Mt(I).setHoveredBusinessId$(e)
+                        },
+                        trackContentReferenceEvent: f,
+                        routeDisplayMode: `carousel`,
+                        enableMapCarouselPresentation: Se,
+                        approvedImageUrls: n.safe_urls ?? void 0,
+                        carouselNotesClassName: He?.className
+                    })
+                })
+            }), (0, $.jsx)(`div`, {
+                className: p(`ring-token-border-default/50 pointer-events-none absolute inset-0 z-2 ring-1 ring-inset`, !F && (y ?? `rounded-3xl`))
+            })]
+        })
+    }), t[127] = l, t[128] = y, t[129] = w, t[130] = i, t[131] = n.safe_urls, t[132] = n.start_idx, t[133] = n.type, t[134] = I, t[135] = Fe, t[136] = Rn, t[137] = $t, t[138] = Se, t[139] = F, t[140] = tr, t[141] = $n, t[142] = pe, t[143] = S, t[144] = _n, t[145] = He?.className, t[146] = Pe, t[147] = ue, t[148] = on, t[149] = Oe, t[150] = vt, t[151] = le, t[152] = bt, t[153] = Mn, t[154] = pn, t[155] = s, t[156] = Be.showNotes, t[157] = kt, t[158] = Fn, t[159] = k, t[160] = O, t[161] = P, t[162] = z, t[163] = At, t[164] = oe, t[165] = ce, t[166] = An, t[167] = Gt?.mapEntityId, t[168] = qt, t[169] = Qt, t[170] = Zt, t[171] = Cn, t[172] = qn, t[173] = wn, t[174] = fn, t[175] = he, t[176] = f, t[177] = h, t[178] = Te, t[179] = pr) : pr = t[179];
+    let J;
+    t[180] !== on || t[181] !== Sn || t[182] !== cr || t[183] !== fr || t[184] !== pr ? (J = (0, $.jsx)(`div`, {
+        ref: Sn,
+        className: cr,
+        style: fr,
+        "aria-hidden": on,
+        children: pr
+    }), t[180] = on, t[181] = Sn, t[182] = cr, t[183] = fr, t[184] = pr, t[185] = J) : J = t[185];
+    let mr;
+    t[186] !== i || t[187] !== g || t[188] !== s || t[189] !== Kn ? (mr = (g || Kn) && (0, $.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [g, Kn && (0, $.jsx)(`div`, {
+            className: `ms-auto shrink-0`,
+            children: (0, $.jsx)(lr, {
+                messageId: s,
+                clientThreadId: i,
+                source: `inline-map`
+            })
+        })]
+    }), t[186] = i, t[187] = g, t[188] = s, t[189] = Kn, t[190] = mr) : mr = t[190];
+    let hr;
+    t[191] !== or || t[192] !== J || t[193] !== mr ? (hr = (0, $.jsxs)(`div`, {
+        className: or,
+        children: [J, mr]
+    }), t[191] = or, t[192] = J, t[193] = mr, t[194] = hr) : hr = t[194];
+    let gr;
+    return t[195] !== rr || t[196] !== ir || t[197] !== hr ? (gr = (0, $.jsx)(u, {
+        children: (0, $.jsx)(`div`, {
+            className: rr,
+            style: ir,
+            "data-testid": `businesses-map-widget`,
+            "data-w-component": `map`,
+            "data-d-component": `map`,
+            children: hr
+        })
+    }), t[195] = rr, t[196] = ir, t[197] = hr, t[198] = gr) : gr = t[198], gr
+}
+
+function So() {}
+
+function Co(e) {
+    let {
+        extra_params: t,
+        notes: n
+    } = e;
+    return t?.map_entity_notes_sidecar === !0 && !!n?.trim()
+}
+
+function wo(e) {
+    let {
+        entity_data: t
+    } = e;
+    return [t.id, t.selected_images]
+}
+
+function To(e) {
+    "use forget";
+    let t = (0, ko.c)(2),
+        {
+            clientThreadId: n
+        } = e,
+        {
+            shouldBlockConsumerLockdownModeActionsForConversation: r
+        } = yt(n);
+    if (r) return null;
+    let i;
+    return t[0] === e ? i = t[1] : (i = (0, $.jsx)(Eo, {
+        ...e
+    }), t[0] = e, t[1] = i), i
+}
+
+function Eo(e) {
+    "use forget";
+    let t = (0, ko.c)(401),
+        {
+            businesses: n,
+            routeGroups: i,
+            routeGroupsTitle: a,
+            selectedRouteGroupIndex: o,
+            onRouteGroupChange: s,
+            mapSource: l,
+            clientThreadId: u,
+            conversationId: d,
+            contentReferenceStartIndex: f,
+            contentReferenceType: h,
+            messageId: g,
+            mapAttributionTrackContentReferenceEvent: _,
+            trackContentReferenceEvent: v,
+            mapAnalyticsMetadata: y,
+            mapMessageId: S,
+            isFullScreen: C,
+            onFullScreenToggle: w,
+            containerClassName: T,
+            selectedBusinessId: E,
+            selectedMapEntityId: D,
+            initialViewState: k,
+            centerOnUser: A,
+            onMoveCallback: j,
+            onMoveEndCallback: M,
+            onMapReady: N,
+            staggerMarkerEntrance: te,
+            shouldFitBoundsOnNewResults: re,
+            obstructionPx: ie,
+            enableOverlayLoadingAnimation: ae,
+            markerTooltipLocation: se,
+            renderNonPreferredAsProvisional: ce,
+            onMarkerClick: le,
+            onMapClick: P,
+            assistantTurnNavigation: ue,
+            shouldThrottleMapRecenter: F,
+            refitOnBottomObstructionChange: pe,
+            ignoreCoordinateOutliers: me,
+            height: he
+        } = e,
+        ge = A !== void 0 && A,
+        ve = te !== void 0 && te,
+        Se = re !== void 0 && re,
+        Ce;
+    t[0] === ie ? Ce = t[1] : (Ce = ie === void 0 ? {} : ie, t[0] = ie, t[1] = Ce);
+    let we = Ce,
+        Te = ce !== void 0 && ce,
+        Ee = F === void 0 || F,
+        ke = pe !== void 0 && pe,
+        Ae = me !== void 0 && me,
+        je = he === void 0 ? Vo : he,
+        Me = We(),
+        Pe;
+    t[2] === Me.locale ? Pe = t[3] : (Pe = {
+        language: Me.locale
+    }, t[2] = Me.locale, t[3] = Pe);
+    let Le = Pe,
+        Re;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (Re = c(`1950533395`), t[4] = Re) : Re = t[4];
+    let ze = Re,
+        L = (0, Q.useRef)(k == null),
+        Be = (0, Q.useRef)(null),
+        Ve = (0, Q.useRef)(null),
+        R = O(),
+        He = c(`3940942374`) || m(`4107938382`).get(`enable-discovery-map-style`, !1),
+        z = He ? Ft : Zt,
+        Ue = He ? gt : qt,
+        Ge = !r(be),
+        B = r(I),
+        V = (0, Q.useRef)(null),
+        Ke = l === `inline-map`,
+        qe = m(`4107938382`).get(`enable-rich-map-widget-trigger`, !1),
+        Je;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (Je = c(`3413445247`) || m(`4107938382`).get(`enable-3d-maps`, !1), t[5] = Je) : Je = t[5];
+    let H = Je,
+        Xe = !!(H && C && k?.is3d),
+        Ze = (0, Q.useRef)(Xe),
+        Qe = Xe ? k?.pitch ?? ts : 0,
+        $e = C ? k?.bearing ?? 0 : 0,
+        et;
+    t[6] !== k || t[7] !== Xe || t[8] !== Qe || t[9] !== $e ? (et = {
+        ...Yo,
+        ...k,
+        pitch: Qe,
+        bearing: $e,
+        is3d: Xe
+    }, t[6] = k, t[7] = Xe, t[8] = Qe, t[9] = $e, t[10] = et) : et = t[10];
+    let tt = et,
+        nt = (0, Q.useRef)(tt),
+        rt = (0, Q.useRef)(k),
+        [U, it] = (0, Q.useState)(tt),
+        [at, st] = (0, Q.useState)(Xe),
+        [ct, lt] = (0, Q.useState)(!1),
+        ut = r(Fe),
+        dt = ee(),
+        [ft, W] = (0, Q.useState)(!1),
+        [pt, _t] = (0, Q.useState)(!1),
+        [vt, yt] = (0, Q.useState)(!1),
+        bt = !(ve && !B) || vt,
+        xt;
+    t[11] !== k || t[12] !== H || t[13] !== C || t[14] !== W || t[15] !== _t || t[16] !== it ? (xt = () => {
+        if (!H && Ze.current) {
+            Ze.current = !1, st(!1), it(e => {
+                let t = {
+                    ...e,
+                    pitch: 0,
+                    bearing: 0,
+                    is3d: !1
+                };
+                return nt.current = t, t
+            });
+            let e = V.current?.getMap();
+            e != null && (e.setMaxPitch(0), rs(e, !1), e.jumpTo({
+                pitch: 0,
+                bearing: 0
+            }))
+        }
+        if (!k) return;
+        if (!C) {
+            let e = rt.current;
+            if (rt.current = k, e?.latitude === k.latitude && e.longitude === k.longitude && e.zoom === k.zoom) return
+        }
+        let {
+            latSpan: e,
+            longSpan: t
+        } = Ye(V.current), n = !!(H && C && k.is3d), r = {
+            ...k,
+            pitch: n ? k.pitch ?? ts : 0,
+            bearing: H && C ? k.bearing ?? 0 : 0,
+            is3d: n,
+            latSpan: e > 0 ? e : k.latSpan,
+            longSpan: t > 0 ? t : k.longSpan
+        };
+        Ze.current = n, st(n);
+        let i = V.current?.getMap();
+        i != null && rs(i, n), it(r), nt.current = r, L.current = !1, W(!1), _t(!1)
+    }, t[11] = k, t[12] = H, t[13] = C, t[14] = W, t[15] = _t, t[16] = it, t[17] = xt) : xt = t[17];
+    let Ct;
+    t[18] !== k || t[19] !== H || t[20] !== C ? (Ct = [k, H, C], t[18] = k, t[19] = H, t[20] = C, t[21] = Ct) : Ct = t[21], (0, Q.useEffect)(xt, Ct);
+    let wt = we.right ?? 0,
+        Tt = we.bottom ?? 0,
+        Et = (0, Q.useRef)(Tt),
+        Dt = (C || !w ? No : 70) + Tt,
+        Ot = Mo + wt,
+        kt = (0, Q.useRef)(!1),
+        At, jt;
+    t[22] === v ? (At = t[23], jt = t[24]) : (At = () => {
+        kt.current ||= (v(`Search Content Reference Shown`, `search_content_reference_shown`, `map`), !0)
+    }, jt = [v], t[22] = v, t[23] = At, t[24] = jt), (0, Q.useEffect)(At, jt);
+    let Mt = (0, Q.useRef)(null),
+        Nt, Pt;
+    t[25] !== f || t[26] !== y || t[27] !== g ? (Nt = () => {
+        let e = `${g}:${f??0}`;
+        y == null || Mt.current === e || (as({
+            action: mt.CHATGPT_GENUI_MAP_ENGAGEMENT_ACTION_SHOWN,
+            contentReferenceStartIndex: f ?? 0,
+            mapAnalyticsMetadata: y,
+            messageId: g
+        }), Mt.current = e)
+    }, Pt = [f, y, g], t[25] = f, t[26] = y, t[27] = g, t[28] = Nt, t[29] = Pt) : (Nt = t[28], Pt = t[29]), (0, Q.useEffect)(Nt, Pt);
+    let It;
+    t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (It = new Set, t[30] = It) : It = t[30];
+    let [Lt, Rt] = (0, Q.useState)(It), zt = (0, Q.useRef)(-1), Bt = (0, Q.useRef)(``), Vt = (0, Q.useRef)(``), Ht = (0, Q.useRef)(null), Ut;
+    t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (Ut = ds(), t[31] = Ut) : Ut = t[31];
+    let Wt = (0, Q.useRef)(Ut),
+        Gt = (0, Q.useRef)(null),
+        Kt = (0, Q.useRef)(null),
+        Xt = (0, Q.useRef)(null),
+        Qt = (0, Q.useRef)(null),
+        $t;
+    t[32] === Symbol.for(`react.memo_cache_sentinel`) ? ($t = new Set, t[32] = $t) : $t = t[32];
+    let en = (0, Q.useRef)($t),
+        tn = (0, Q.useRef)(null),
+        nn = (0, Q.useRef)(!1),
+        rn = (0, Q.useRef)(null),
+        an, on;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (an = () => () => {
+        rn.current != null && cancelAnimationFrame(rn.current)
+    }, on = [], t[33] = an, t[34] = on) : (an = t[33], on = t[34]), (0, Q.useEffect)(an, on);
+    let sn = (0, Q.useRef)(0),
+        cn;
+    t[35] !== n || t[36] !== o || t[37] !== g || t[38] !== s || t[39] !== i ? (cn = {
+        businesses: n,
+        routeGroups: i,
+        controlledRouteGroupIndex: o,
+        onRouteGroupChange: s,
+        messageId: g
+    }, t[35] = n, t[36] = o, t[37] = g, t[38] = s, t[39] = i, t[40] = cn) : cn = t[40];
+    let {
+        displayRouteGroups: ln,
+        displayedBusinesses: G,
+        getRouteGroupBounds: un,
+        routeCoordinates: K,
+        routeGroupStops: dn,
+        selectedRoute: fn,
+        selectedRouteGroupIndex: pn,
+        selectRouteGroup: mn
+    } = Qa(cn), hn;
+    t[41] !== G || t[42] !== E || t[43] !== D || t[44] !== pn ? (hn = (D == null ? void 0 : G.find(e => e.mapEntityId === D)) ?? (D == null || pn == null ? G.find(e => e.entity_data.id === E) : void 0), t[41] = G, t[42] = E, t[43] = D, t[44] = pn, t[45] = hn) : hn = t[45];
+    let gn = hn,
+        _n;
+    t[46] !== G.length || t[47] !== C || t[48] !== l ? (_n = G.length === 0 || C || l !== `inline-map` || m(`4107938382`).get(`enable-inline-map-entity-hover-card`, !0), t[46] = G.length, t[47] = C, t[48] = l, t[49] = _n) : _n = t[49];
+    let vn = _n,
+        yn;
+    t[50] === G ? yn = t[51] : (yn = us(G), t[50] = G, t[51] = yn);
+    let bn = yn,
+        Sn, Cn;
+    t[52] !== G || t[53] !== Te ? (Sn = ot({
+        businesses: G,
+        renderNonPreferredAsProvisional: Te
+    }), Cn = us(Sn), t[52] = G, t[53] = Te, t[54] = Sn, t[55] = Cn) : (Sn = t[54], Cn = t[55]);
+    let En = Cn,
+        Dn;
+    t[56] !== Dt || t[57] !== Ot || t[58] !== un || t[59] !== B || t[60] !== W || t[61] !== _t ? (Dn = e => {
+        let t = un(e);
+        t != null && (V.current?.fitBounds([
+            [t[0], t[1]],
+            [t[2], t[3]]
+        ], {
+            pitch: V.current.getPitch(),
+            bearing: V.current.getBearing(),
+            maxZoom: uo,
+            padding: {
+                top: Ao,
+                left: jo,
+                right: Ot,
+                bottom: Dt
+            },
+            duration: B ? 0 : 1200
+        }), W(!1), _t(!1))
+    }, t[56] = Dt, t[57] = Ot, t[58] = un, t[59] = B, t[60] = W, t[61] = _t, t[62] = Dn) : Dn = t[62];
+    let kn = Ne(Dn),
+        [q, An] = (0, Q.useState)(!1),
+        jn, Mn;
+    t[63] === q ? (jn = t[64], Mn = t[65]) : (jn = () => {
+        let e = V.current?.getMap();
+        if (q && e) return ii(e)
+    }, Mn = [q], t[63] = q, t[64] = jn, t[65] = Mn), (0, Q.useEffect)(jn, Mn);
+    let Nn = C ? `immersive_fullscreen` : `inline_map_card`,
+        Pn = G.length > 0,
+        Fn = `${g}:${f??`none`}:${Nn}`,
+        In = `${g}:${Nn}:${bn}`,
+        Ln;
+    t[66] === Fn ? Ln = t[67] : (Ln = () => (Qt.current?.key !== Fn && (Qt.current = {
+        key: Fn,
+        firstEntityCommittedAtMs: null,
+        firstMarkerRenderedAtMs: null,
+        loggedMetricNames: new Set
+    }), Qt.current), t[66] = Fn, t[67] = Ln);
+    let Rn = Ne(Ln),
+        zn;
+    t[68] !== Rn || t[69] !== Nn ? (zn = () => {
+        let e = Rn(),
+            t = Kt.current,
+            n = e.firstMarkerRenderedAtMs,
+            r = [
+                [Wo, t],
+                [Go, Xt.current],
+                [Ko, n],
+                [qo, t != null && n != null ? Math.max(t, n) : null]
+            ];
+        for (let [t, n] of r) Yt(e.loggedMetricNames, t, e.firstEntityCommittedAtMs, n, e => {
+            _e.hist(De.DEFAULT, t, {
+                map_surface: Nn
+            }, e)
+        })
+    }, t[68] = Rn, t[69] = Nn, t[70] = zn) : zn = t[70];
+    let Bn = Ne(zn),
+        Vn;
+    t[71] !== Rn || t[72] !== Pn || t[73] !== Bn ? (Vn = () => {
+        let e = Rn();
+        if (Pn && e.firstEntityCommittedAtMs == null) {
+            let t = ds();
+            e.firstEntityCommittedAtMs = t, Kt.current != null && Kt.current < t && (Kt.current = t), Xt.current != null && Xt.current < t && (Xt.current = t)
+        }
+        Bn()
+    }, t[71] = Rn, t[72] = Pn, t[73] = Bn, t[74] = Vn) : Vn = t[74];
+    let Hn;
+    t[75] !== Rn || t[76] !== Pn || t[77] !== Bn || t[78] !== Fn ? (Hn = [Rn, Pn, Bn, Fn], t[75] = Rn, t[76] = Pn, t[77] = Bn, t[78] = Fn, t[79] = Hn) : Hn = t[79], b(Vn, Hn);
+    let Wn;
+    t[80] === Symbol.for(`react.memo_cache_sentinel`) ? (Wn = () => {
+        en.current = new Set, tn.current = null, Wt.current = ds()
+    }, t[80] = Wn) : Wn = t[80];
+    let Gn;
+    t[81] === In ? Gn = t[82] : (Gn = [In], t[81] = In, t[82] = Gn), (0, Q.useEffect)(Wn, Gn);
+    let Kn;
+    t[83] !== G.length || t[84] !== u || t[85] !== q || t[86] !== In || t[87] !== Nn || t[88] !== g ? (Kn = () => {
+        if (!q || G.length === 0 || en.current.size === 0 || tn.current === In) return;
+        let e = ds(),
+            t = Gt.current == null ? void 0 : Math.max(0, Math.round(Gt.current - Wt.current)),
+            n = Math.max(0, Math.round(e - Wt.current)),
+            r = G.length;
+        if (u != null && g != null && !ns.has(g)) {
+            let t = ne(xe.getRequestId(Oe(u)) ?? ``)?.completionRequest;
+            if (t != null) {
+                let n = t?.requestCompletionCallsiteId?.startsWith(`request_completion.places.places_overlay.`) || t?.requestCompletionCallsiteId?.startsWith(`request_completion.formatted_text.contentReferences.maps.controls.`) ? `experience_places` : `root`;
+                ns.add(g), ye.logStructuredEvent(`ChatgptPlacesTimeToFirstPin`, {
+                    conversationId: u,
+                    messageId: g,
+                    timeToFirstPinMs: x(Math.round(e - t.turnTracker.promptSentTimestamp)),
+                    submitSurface: n
+                })
+            }
+        }
+        ye.logStructuredEvent(`ChatgptPlacesMapReady`, {
+            conversationId: u,
+            messageId: g,
+            mapSurface: Nn,
+            webviewLoadTimeMs: t == null ? void 0 : x(t),
+            initialContentsLoadTimeMs: x(0),
+            mapReadyTimeMs: x(n),
+            entityCount: fe(r)
+        }), tn.current = In
+    }, t[83] = G.length, t[84] = u, t[85] = q, t[86] = In, t[87] = Nn, t[88] = g, t[89] = Kn) : Kn = t[89];
+    let qn = Ne(Kn),
+        Jn;
+    t[90] === Symbol.for(`react.memo_cache_sentinel`) ? (Jn = e => {
+        Ze.current = e, st(e), V.current?.getMap().setMaxPitch(e ? 60 : 0), V.current?.getMap().setConfigProperty(`basemap`, `show3dObjects`, e)
+    }, t[90] = Jn) : Jn = t[90];
+    let Yn = Ne(Jn),
+        Zn;
+    t[91] !== G || t[92] !== ct || t[93] !== d || t[94] !== Dt || t[95] !== Ot || t[96] !== H || t[97] !== C || t[98] !== g || t[99] !== E || t[100] !== Yn ? (Zn = () => {
+        let e = V.current?.getMap();
+        if (!H || !C || !ct || e == null) return;
+        let t = !Ze.current,
+            n = E ? G.find(e => e.entity_data.id === E) : null,
+            r = n ? [n.entity_data.longitude, n.entity_data.latitude] : null;
+        Yn(t), e.easeTo({
+            pitch: t ? ts : 0,
+            bearing: t ? e.getBearing() : 0,
+            ...t && r ? {
+                center: r,
+                zoom: Math.max(e.getZoom(), es),
+                padding: {
+                    top: Ao,
+                    left: jo,
+                    right: Ot,
+                    bottom: Dt
+                }
+            } : {}
+        }), ye.logStructuredEvent(`ChatgptPlacesMapViewToggled`, {
+            conversationId: d,
+            messageId: g,
+            is3d: t
+        })
+    }, t[91] = G, t[92] = ct, t[93] = d, t[94] = Dt, t[95] = Ot, t[96] = H, t[97] = C, t[98] = g, t[99] = E, t[100] = Yn, t[101] = Zn) : Zn = t[101];
+    let Qn = Ne(Zn),
+        $n;
+    t[102] !== q || t[103] !== lt ? ($n = () => {
+        let e = V.current?.getMap();
+        if (!q || e == null) return;
+        let t = () => {
+                rs(e, Ze.current), lt(!0)
+            },
+            n = () => {
+                Ze.current = !1, st(!1), lt(!1)
+            },
+            r = () => {
+                e.setConfigProperty(`basemap`, `show3dObjects`, !1), e.jumpTo({
+                    pitch: 0,
+                    bearing: 0
+                }), lt(!0)
+            };
+        return e.on(`style.load`, t), e.on(`webglcontextlost`, n), e.on(`webglcontextrestored`, r), () => {
+            e.off(`style.load`, t), e.off(`webglcontextlost`, n), e.off(`webglcontextrestored`, r)
+        }
+    }, t[102] = q, t[103] = lt, t[104] = $n) : $n = t[104];
+    let er;
+    t[105] === q ? er = t[106] : (er = [q], t[105] = q, t[106] = er), (0, Q.useEffect)($n, er);
+    let tr;
+    t[107] === qn ? tr = t[108] : (tr = () => {
+        qn()
+    }, t[107] = qn, t[108] = tr);
+    let nr;
+    t[109] !== G.length || t[110] !== q || t[111] !== qn ? (nr = [qn, q, G.length], t[109] = G.length, t[110] = q, t[111] = qn, t[112] = nr) : nr = t[112], (0, Q.useEffect)(tr, nr);
+    let rr;
+    t[113] !== Rn || t[114] !== qn || t[115] !== Bn ? (rr = e => {
+        let t = ds();
+        en.current.add(e), qn();
+        let n = Rn();
+        n.firstMarkerRenderedAtMs ??= t, Bn()
+    }, t[113] = Rn, t[114] = qn, t[115] = Bn, t[116] = rr) : rr = t[116];
+    let ar = Ne(rr),
+        or, sr;
+    t[117] !== Sn || t[118] !== En || t[119] !== q || t[120] !== U.zoom ? (or = () => {
+        let e = V.current;
+        if (!e || !q || !(zt.current === -1 || zt.current !== U.zoom || Bt.current !== En)) return;
+        let t = ms(e, Sn);
+        if (!t) return;
+        let n = hs(t);
+        Rt(e => fs(e, n) ? e : n), zt.current = U.zoom, Bt.current = En
+    }, sr = [U.zoom, q, Sn, En], t[117] = Sn, t[118] = En, t[119] = q, t[120] = U.zoom, t[121] = or, t[122] = sr) : (or = t[121], sr = t[122]), (0, Q.useEffect)(or, sr);
+    let cr;
+    t[123] !== G || t[124] !== ge || t[125] !== Dt || t[126] !== Ot || t[127] !== Ae || t[128] !== j || t[129] !== M || t[130] !== B || t[131] !== K || t[132] !== E || t[133] !== gn || t[134] !== W || t[135] !== _t || t[136] !== it || t[137] !== U.bearing || t[138] !== U.pitch ? (cr = e => {
+        let t = Be.current,
+            n = {
+                forceFitAll: e?.forceFitAll || t?.forceFitAll,
+                addFitBoundsPaddingBuffer: e?.addFitBoundsPaddingBuffer || t?.addFitBoundsPaddingBuffer
+            };
+        Be.current = null;
+        let r = n.forceFitAll === !0,
+            i = function(e, t) {
+                let n = V.current;
+                if (!n) return !1;
+                let {
+                    width: r,
+                    height: i
+                } = n.getContainer().getBoundingClientRect(), a = Dt, o = n.unproject([jo, Ao]), s = n.unproject([r - Ot, i - a]);
+                return ht(e, 5) >= ht(s.lat, 5) && ht(e, 5) <= ht(o.lat, 5) && ht(t, 5) >= ht(o.lng, 5) && ht(t, 5) <= ht(s.lng, 5)
+            },
+            a = gn;
+        if (!L.current && E && !a) return;
+        let o = r || L.current || !a,
+            s = o ? G : [a],
+            c = o ? K ?? [] : [];
+        if (Ve.current) {
+            let e = Ve.current.clientWidth,
+                t = Ve.current.clientHeight,
+                a = n.addFitBoundsPaddingBuffer === !0 ? Qo : 0,
+                l = {
+                    top: Ao + a,
+                    left: jo + a,
+                    right: Ot + a,
+                    bottom: Dt + a
+                },
+                u = rt.current,
+                d = ge && u != null && o,
+                f = vo({
+                    coordinates: [...s.map(Oo), ...c.map(Do)],
+                    width: e,
+                    height: t,
+                    padding: l,
+                    center: d && u ? [u.longitude, u.latitude] : void 0,
+                    ignoreCoordinateOutliers: Ae
+                });
+            if (!f) {
+                Be.current = n;
+                return
+            }
+            let {
+                bounds: p,
+                viewState: m
+            } = f;
+            L.current || r ? (e => {
+                let t = {
+                    ...m,
+                    pitch: V.current?.getPitch() ?? U.pitch,
+                    bearing: V.current?.getBearing() ?? U.bearing,
+                    is3d: Ze.current
+                };
+                if (V.current) {
+                    let n = B ? 0 : e;
+                    d ? V.current.easeTo({
+                        center: [m.longitude, m.latitude],
+                        zoom: m.zoom,
+                        padding: {
+                            top: 0,
+                            right: 0,
+                            bottom: 0,
+                            left: 0
+                        },
+                        duration: n
+                    }) : V.current.fitBounds(p, {
+                        pitch: t.pitch,
+                        bearing: t.bearing,
+                        maxZoom: uo,
+                        padding: l,
+                        duration: n
+                    })
+                }
+                if (nt.current = t, L.current = !1, e === 0) {
+                    let e = nt.current;
+                    it(e), j?.(e), M?.(e)
+                }
+                W(!1), _t(!1)
+            })(L.current ? 0 : 1200) : i(m.latitude, m.longitude) || V.current?.flyTo({
+                center: [m.longitude, m.latitude],
+                padding: {
+                    top: Ao,
+                    left: jo,
+                    right: Ot,
+                    bottom: Dt
+                },
+                ...B ? {
+                    duration: 0
+                } : {}
+            })
+        }
+    }, t[123] = G, t[124] = ge, t[125] = Dt, t[126] = Ot, t[127] = Ae, t[128] = j, t[129] = M, t[130] = B, t[131] = K, t[132] = E, t[133] = gn, t[134] = W, t[135] = _t, t[136] = it, t[137] = U.bearing, t[138] = U.pitch, t[139] = cr) : cr = t[139];
+    let lr = Ne(cr),
+        ur, dr;
+    t[140] === lr ? (ur = t[141], dr = t[142]) : (ur = () => {
+        if (!Ve.current) return;
+        let e = Ie(() => {
+                V.current?.resize(), Be.current != null && lr()
+            }, 100),
+            t = new ResizeObserver(e);
+        return t.observe(Ve.current), () => {
+            t.disconnect(), e.cancel()
+        }
+    }, dr = [lr], t[140] = lr, t[141] = ur, t[142] = dr), (0, Q.useEffect)(ur, dr);
+    let fr;
+    t[143] !== Tt || t[144] !== G.length || t[145] !== bn || t[146] !== C || t[147] !== Ke || t[148] !== lr || t[149] !== ke || t[150] !== K || t[151] !== E || t[152] !== pn || t[153] !== Se || t[154] !== Ee ? (fr = () => {
+        if (G.length === 0 && K.length === 0) {
+            Be.current = null, sn.current = 0;
+            return
+        }
+        let e = bn !== Vt.current;
+        Vt.current = bn;
+        let t = Et.current !== Tt;
+        if (Et.current = Tt, L.current) {
+            lr();
+            return
+        }
+        if (ke && t && !C) {
+            V.current?.resize(), lr({
+                forceFitAll: !0
+            });
+            return
+        }
+        let n = pn !== Ht.current;
+        if (Ht.current = pn, n) {
+            lr({
+                forceFitAll: !0
+            });
+            return
+        }
+        if (e && !C) {
+            lr({
+                forceFitAll: !0
+            });
+            return
+        }
+        if (e && C && Se && !E) {
+            let e = Date.now(),
+                t = sn.current === 0,
+                n = e - sn.current >= $o;
+            (t || !Ee || n) && (sn.current = e, lr({
+                forceFitAll: !0,
+                addFitBoundsPaddingBuffer: !0
+            }));
+            return
+        }
+        if (!E && e && C && !Ke) {
+            lr({
+                forceFitAll: !0
+            });
+            return
+        }
+        if (!E) return;
+        let r = setTimeout(lr, 200);
+        return () => clearTimeout(r)
+    }, t[143] = Tt, t[144] = G.length, t[145] = bn, t[146] = C, t[147] = Ke, t[148] = lr, t[149] = ke, t[150] = K, t[151] = E, t[152] = pn, t[153] = Se, t[154] = Ee, t[155] = fr) : fr = t[155];
+    let pr;
+    t[156] !== Tt || t[157] !== G || t[158] !== bn || t[159] !== ge || t[160] !== Dt || t[161] !== Ot || t[162] !== Ae || t[163] !== C || t[164] !== Ke || t[165] !== j || t[166] !== M || t[167] !== B || t[168] !== lr || t[169] !== ke || t[170] !== K || t[171] !== E || t[172] !== D || t[173] !== pn || t[174] !== Se || t[175] !== Ee ? (pr = [ge, C, Ke, G, bn, Tt, E, D, Dt, Ot, Ae, j, M, B, lr, ke, K, pn, Se, Ee], t[156] = Tt, t[157] = G, t[158] = bn, t[159] = ge, t[160] = Dt, t[161] = Ot, t[162] = Ae, t[163] = C, t[164] = Ke, t[165] = j, t[166] = M, t[167] = B, t[168] = lr, t[169] = ke, t[170] = K, t[171] = E, t[172] = D, t[173] = pn, t[174] = Se, t[175] = Ee, t[176] = pr) : pr = t[176], (0, Q.useEffect)(fr, pr);
+    let {
+        triggerRender: J,
+        IntegratedUXDelayedRender: mr
+    } = Xn(), hr;
+    t[177] !== u || t[178] !== g ? (hr = () => {
+        ye.logStructuredEvent(`ChatgptPlacesSearchStopButtonClicked`, {
+            messageId: g,
+            conversationId: u
+        })
+    }, t[177] = u, t[178] = g, t[179] = hr) : hr = t[179];
+    let gr = hr,
+        _r;
+    t[180] !== j || t[181] !== M || t[182] !== Yn || t[183] !== W || t[184] !== _t || t[185] !== it ? (_r = () => {
+        let e = {
+            ...nt.current,
+            pitch: 0,
+            bearing: 0,
+            is3d: !1
+        };
+        Yn(!1), it(e), j?.(e), M?.(e), W(!1), _t(!1)
+    }, t[180] = j, t[181] = M, t[182] = Yn, t[183] = W, t[184] = _t, t[185] = it, t[186] = _r) : _r = t[186];
+    let vr = _r,
+        yr;
+    t[187] !== u || t[188] !== g || t[189] !== W || t[190] !== U ? (yr = () => {
+        ye.logStructuredEvent(`ChatgptPlacesSearchHereButtonClicked`, {
+            messageId: g,
+            conversationId: u
+        }), nt.current = U, W(!1)
+    }, t[187] = u, t[188] = g, t[189] = W, t[190] = U, t[191] = yr) : yr = t[191];
+    let br = yr,
+        xr;
+    t[192] === _t ? xr = t[193] : (xr = () => _t(!1), t[192] = _t, t[193] = xr);
+    let Sr = xr,
+        Cr = Ke,
+        wr = ue != null,
+        Tr = Ii(i),
+        Er = C ? `places_overlay` : `response`,
+        Dr = _ ?? v,
+        Or;
+    t[194] !== f || t[195] !== h || t[196] !== Er || t[197] !== Dr ? (Or = (0, $.jsx)(Un, {
+        contentReferenceStartIndex: f,
+        contentReferenceType: h,
+        sectionLocation: Er,
+        trackContentReferenceEvent: Dr
+    }), t[194] = f, t[195] = h, t[196] = Er, t[197] = Dr, t[198] = Or) : Or = t[198];
+    let kr = Or,
+        Ar = Tr,
+        Y = !C && !Ar && ft,
+        jr = !C && !Ar && !Y && pn == null && Li(fn),
+        Mr;
+    t[199] !== ln || t[200] !== dn || t[201] !== pn ? (Mr = pn == null ? dn : ra(ln), t[199] = ln, t[200] = dn, t[201] = pn, t[202] = Mr) : Mr = t[202];
+    let Nr = Mr,
+        Pr;
+    if (t[203] !== n || t[204] !== bt || t[205] !== G || t[206] !== u || t[207] !== ln || t[208] !== Nr || t[209] !== ar || t[210] !== vn || t[211] !== se || t[212] !== g || t[213] !== le || t[214] !== Te || t[215] !== gn || t[216] !== ve || t[217] !== v || t[218] !== Lt) {
+        let e;
+        t[220] !== n || t[221] !== bt || t[222] !== u || t[223] !== ln || t[224] !== Nr || t[225] !== ar || t[226] !== vn || t[227] !== se || t[228] !== g || t[229] !== le || t[230] !== Te || t[231] !== gn || t[232] !== ve || t[233] !== v || t[234] !== Lt ? (e = e => {
+            let t = n.findIndex(t => t.entity_data.id === e.entity_data.id),
+                r = e.mapEntityId ?? e.entity_data.id,
+                i = ia(Nr.get(r), ln);
+            return (0, $.jsx)(cs, {
+                business: e,
+                idx: t,
+                isSelected: e === gn,
+                isVisible: Lt.has(e.entity_data.id),
+                tooltipLocation: se,
+                isSonicSidebarEnabled: ze,
+                isProvisional: Te && e.isModelPreferred === !1,
+                clientThreadId: u,
+                messageId: g,
+                trackContentReferenceEvent: v,
+                onMarkerClick: le,
+                onRendered: ar,
+                isHoverCardEnabled: vn,
+                isEntranceReady: ve ? bt : void 0,
+                routeStopIndex: i
+            }, Jt(e))
+        }, t[220] = n, t[221] = bt, t[222] = u, t[223] = ln, t[224] = Nr, t[225] = ar, t[226] = vn, t[227] = se, t[228] = g, t[229] = le, t[230] = Te, t[231] = gn, t[232] = ve, t[233] = v, t[234] = Lt, t[235] = e) : e = t[235], Pr = G.map(e), t[203] = n, t[204] = bt, t[205] = G, t[206] = u, t[207] = ln, t[208] = Nr, t[209] = ar, t[210] = vn, t[211] = se, t[212] = g, t[213] = le, t[214] = Te, t[215] = gn, t[216] = ve, t[217] = v, t[218] = Lt, t[219] = Pr
+    } else Pr = t[219];
+    let Fr = Pr,
+        Ir = C ? `100%` : je,
+        Lr;
+    t[236] === Ir ? Lr = t[237] : (Lr = {
+        height: Ir
+    }, t[236] = Ir, t[237] = Lr);
+    let Rr = p(`relative isolate w-full`, C && `fullscreen-map-with-entities`, !C && Ar && `inline-grouped-map-controls`, qe && `immersive-maps-opener-enabled`, T),
+        zr = q ? `` : void 0,
+        Br = U.longitude,
+        Vr = U.latitude,
+        Hr = U.zoom,
+        Ur = C ? U.pitch : 0,
+        Wr = C || H ? U.bearing : 0,
+        Kr;
+    t[238] === Symbol.for(`react.memo_cache_sentinel`) ? (Kr = xn(), t[238] = Kr) : Kr = t[238];
+    let qr;
+    t[239] !== P || t[240] !== U ? (qr = e => {
+        let t = e.originalEvent;
+        if (t?.defaultPrevented) return;
+        let n = t?.target;
+        n instanceof Element && (n.closest(`.mapboxgl-marker`) || n.closest(`.mapboxgl-ctrl`)) || P?.(U)
+    }, t[239] = P, t[240] = U, t[241] = qr) : qr = t[241];
+    let X;
+    t[242] !== G.length || t[243] !== Bn || t[244] !== N || t[245] !== K || t[246] !== yt || t[247] !== ve || t[248] !== J ? (X = () => {
+        let e = ds();
+        Xt.current ??= e, J?.(), Bn(), !(nn.current || L.current && (G.length > 0 || K.length > 0)) && (nn.current = !0, rn.current = requestAnimationFrame(() => {
+            rn.current = requestAnimationFrame(() => {
+                rn.current = null, ve && yt(!0), N?.()
+            })
+        }))
+    }, t[242] = G.length, t[243] = Bn, t[244] = N, t[245] = K, t[246] = yt, t[247] = ve, t[248] = J, t[249] = X) : X = t[249];
+    let Jr = R ? Ue : z,
+        Yr = H && C && at ? 60 : 0,
+        Xr = !!(H && C),
+        Zr = !!H,
+        $r = !!(H && C && at),
+        ei = !C,
+        ti = C || !w ? `grab` : `zoom-in`,
+        ni;
+    t[250] !== j || t[251] !== W || t[252] !== _t || t[253] !== it ? (ni = e => {
+        let {
+            latSpan: t,
+            longSpan: n
+        } = Ye(V.current), r = {
+            ...e.viewState,
+            is3d: Ze.current,
+            latSpan: t,
+            longSpan: n
+        };
+        j?.(r), it(r), ls(nt.current, e) && (W(!0), _t(!0))
+    }, t[250] = j, t[251] = W, t[252] = _t, t[253] = it, t[254] = ni) : ni = t[254];
+    let ri;
+    t[255] === M ? ri = t[256] : (ri = e => {
+        let {
+            latSpan: t,
+            longSpan: n
+        } = Ye(V.current), r = {
+            ...e.viewState,
+            is3d: Ze.current,
+            latSpan: t,
+            longSpan: n
+        };
+        M?.(r)
+    }, t[255] = M, t[256] = ri);
+    let ai;
+    t[257] === Me ? ai = t[258] : (ai = Me.formatMessage({
+        id: `1aF2nO`,
+        defaultMessage: `Hold Ctrl to zoom`
+    }), t[257] = Me, t[258] = ai);
+    let oi;
+    t[259] === Me ? oi = t[260] : (oi = Me.formatMessage({
+        id: `8R2Dga`,
+        defaultMessage: `Hold ⌘ to zoom`
+    }), t[259] = Me, t[260] = oi);
+    let si;
+    t[261] === Me ? si = t[262] : (si = Me.formatMessage({
+        id: `chatgpt.maps.three_dimensional.compass.aria_label`,
+        defaultMessage: `Reset map orientation`
+    }), t[261] = Me, t[262] = si);
+    let ci;
+    t[263] !== ai || t[264] !== oi || t[265] !== si ? (ci = {
+        "ScrollZoomBlocker.CtrlMessage": ai,
+        "ScrollZoomBlocker.CmdMessage": oi,
+        "NavigationControl.ResetBearing": si
+    }, t[263] = ai, t[264] = oi, t[265] = si, t[266] = ci) : ci = t[266];
+    let ui;
+    t[267] !== Bn || t[268] !== lt || t[269] !== An ? (ui = () => {
+        Gt.current = ds(), Kt.current ??= Gt.current, An(!0), lt(!0);
+        let e = V.current?.getMap();
+        e != null && rs(e, Ze.current), Bn()
+    }, t[267] = Bn, t[268] = lt, t[269] = An, t[270] = ui) : ui = t[270];
+    let di;
+    t[271] !== C || t[272] !== w || t[273] !== U ? (di = w && (0, $.jsx)(ir, {
+        isFullScreen: !!C,
+        onClick: () => w(U),
+        position: C ? `top-left` : `top-right`
+    }), t[271] = C, t[272] = w, t[273] = U, t[274] = di) : di = t[274];
+    let fi;
+    t[275] !== ln || t[276] !== R || t[277] !== q ? (fi = (0, $.jsx)(Ji, {
+        isDarkMode: R,
+        mapReady: q,
+        routeGroups: ln
+    }), t[275] = ln, t[276] = R, t[277] = q, t[278] = fi) : fi = t[278];
+    let pi;
+    t[279] !== vr || t[280] !== C || t[281] !== ft ? (pi = !C && ft && (0, $.jsx)(Ci, {
+        onClick: vr
+    }), t[279] = vr, t[280] = C, t[281] = ft, t[282] = pi) : pi = t[282];
+    let mi;
+    t[283] !== kr || t[284] !== pi ? (mi = (0, $.jsxs)($.Fragment, {
+        children: [pi, kr]
+    }), t[283] = kr, t[284] = pi, t[285] = mi) : mi = t[285];
+    let hi;
+    t[286] !== kn || t[287] !== mn ? (hi = e => {
+        kn(e), mn(e)
+    }, t[286] = kn, t[287] = mn, t[288] = hi) : hi = t[288];
+    let gi;
+    t[289] !== C || t[290] !== i || t[291] !== a || t[292] !== pn || t[293] !== mi || t[294] !== hi ? (gi = (0, $.jsx)(qi, {
+        isFullScreen: C,
+        routeGroups: i,
+        groupsTitle: a,
+        trailingControl: mi,
+        selectedRouteGroupIndex: pn,
+        onRouteGroupChange: hi
+    }), t[289] = C, t[290] = i, t[291] = a, t[292] = pn, t[293] = mi, t[294] = hi, t[295] = gi) : gi = t[295];
+    let _i;
+    t[296] !== vr || t[297] !== C || t[298] !== ft || t[299] !== Tr ? (_i = (C || !Tr) && (0, $.jsx)(Si, {
+        show: ft,
+        position: `top-left`,
+        onClick: vr
+    }), t[296] = vr, t[297] = C, t[298] = ft, t[299] = Tr, t[300] = _i) : _i = t[300];
+    let vi;
+    t[301] !== H || t[302] !== C ? (vi = H && C && (0, $.jsx)(wn, {
+        position: `top-left`,
+        showZoom: !1,
+        visualizePitch: !0,
+        style: {
+            borderRadius: 9999,
+            overflow: `hidden`
+        }
+    }), t[301] = H, t[302] = C, t[303] = vi) : vi = t[303];
+    let yi;
+    t[304] !== H || t[305] !== C || t[306] !== Ge ? (yi = C && (!Ge || H) && (0, $.jsx)(wn, {
+        position: `top-left`,
+        showCompass: !1,
+        style: {
+            borderRadius: 9999,
+            overflow: `hidden`
+        }
+    }), t[304] = H, t[305] = C, t[306] = Ge, t[307] = yi) : yi = t[307];
+    let bi;
+    t[308] !== ct || t[309] !== Qn || t[310] !== at || t[311] !== H || t[312] !== C ? (bi = H && C && (0, $.jsx)(ki, {
+        disabled: !ct,
+        isEnabled: at,
+        onClick: Qn
+    }), t[308] = ct, t[309] = Qn, t[310] = at, t[311] = H, t[312] = C, t[313] = bi) : bi = t[313];
+    let xi;
+    t[314] !== C || t[315] !== fn || t[316] !== pn ? (xi = pn == null && (0, $.jsx)(Yi, {
+        isFullScreen: C,
+        route: fn
+    }), t[314] = C, t[315] = fn, t[316] = pn, t[317] = xi) : xi = t[317];
+    let wi;
+    t[318] === Fr ? wi = t[319] : (wi = (0, $.jsx)(de, {
+        initial: !1,
+        children: Fr
+    }), t[318] = Fr, t[319] = wi);
+    let Ti;
+    t[320] !== ut?.name || t[321] !== ut?.picture || t[322] !== C || t[323] !== dt ? (Ti = dt?.latitude && dt?.longitude && (0, $.jsx)(Tn, {
+        longitude: dt.longitude,
+        latitude: dt.latitude,
+        style: {
+            zIndex: 1e3
+        },
+        className: `cursor-default`,
+        children: (0, $.jsx)(va, {
+            isFullScreen: C,
+            picture: ut?.picture,
+            name: ut?.name
+        })
+    }), t[320] = ut?.name, t[321] = ut?.picture, t[322] = C, t[323] = dt, t[324] = Ti) : Ti = t[324];
+    let Ei;
+    t[325] !== mr || t[326] !== wi || t[327] !== Ti ? (Ei = (0, $.jsxs)(mr, {
+        children: [wi, Ti]
+    }), t[325] = mr, t[326] = wi, t[327] = Ti, t[328] = Ei) : Ei = t[328];
+    let Di;
+    t[329] !== Le || t[330] !== yi || t[331] !== bi || t[332] !== xi || t[333] !== Ei || t[334] !== Ur || t[335] !== Wr || t[336] !== qr || t[337] !== X || t[338] !== Jr || t[339] !== Yr || t[340] !== Xr || t[341] !== $r || t[342] !== ei || t[343] !== ti || t[344] !== ni || t[345] !== ri || t[346] !== ci || t[347] !== ui || t[348] !== di || t[349] !== fi || t[350] !== gi || t[351] !== _i || t[352] !== vi || t[353] !== U.latitude || t[354] !== U.longitude || t[355] !== U.zoom ? (Di = (0, $.jsxs)(On, {
+        longitude: Br,
+        latitude: Vr,
+        zoom: Hr,
+        pitch: Ur,
+        bearing: Wr,
+        RTLTextPlugin: Kr,
+        onClick: qr,
+        onIdle: X,
+        mapboxAccessToken: St,
+        mapStyle: Jr,
+        ...Le,
+        attributionControl: !1,
+        renderWorldCopies: !1,
+        maxPitch: Yr,
+        pitchWithRotate: Xr,
+        dragRotate: Zr,
+        touchPitch: $r,
+        cooperativeGestures: ei,
+        cursor: ti,
+        onMove: ni,
+        onMoveEnd: ri,
+        locale: ci,
+        ref: V,
+        keyboard: !1,
+        onLoad: ui,
+        children: [di, fi, gi, _i, vi, yi, bi, xi, Ei]
+    }), t[329] = Le, t[330] = yi, t[331] = bi, t[332] = xi, t[333] = Ei, t[334] = Ur, t[335] = Wr, t[336] = qr, t[337] = X, t[338] = Jr, t[339] = Yr, t[340] = Xr, t[341] = $r, t[342] = ei, t[343] = ti, t[344] = ni, t[345] = ri, t[346] = ci, t[347] = ui, t[348] = di, t[349] = fi, t[350] = gi, t[351] = _i, t[352] = vi, t[353] = U.latitude, t[354] = U.longitude, t[355] = U.zoom, t[356] = Di) : Di = t[356];
+    let Oi;
+    t[357] !== ae || t[358] !== C || t[359] !== B ? (Oi = C && ae && !B && (0, $.jsx)(oe.div, {
+        className: `pointer-events-none absolute inset-0`,
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: 1
+        },
+        exit: {
+            opacity: 0
+        },
+        transition: {
+            duration: .3
+        },
+        children: (0, $.jsx)(Qr, {
+            maxFps: 60
+        })
+    }, `particle-overlay`), t[357] = ae, t[358] = C, t[359] = B, t[360] = Oi) : Oi = t[360];
+    let Ai;
+    t[361] === Oi ? Ai = t[362] : (Ai = (0, $.jsx)(de, {
+        children: Oi
+    }), t[361] = Oi, t[362] = Ai);
+    let Mi;
+    t[363] !== Di || t[364] !== Ai || t[365] !== zr ? (Mi = (0, $.jsxs)(`div`, {
+        className: `relative h-full w-full overflow-hidden`,
+        "data-d-map-loaded": zr,
+        children: [Di, Ai]
+    }), t[363] = Di, t[364] = Ai, t[365] = zr, t[366] = Mi) : Mi = t[366];
+    let Ni = wt === 0 ? `end-3` : `end-[calc(var(--places-business-list-width,0px)+1rem)]`,
+        Pi;
+    t[367] === Ni ? Pi = t[368] : (Pi = p(`absolute z-[1001] flex items-center justify-end`, Ni), t[367] = Ni, t[368] = Pi);
+    let Fi;
+    t[369] === Symbol.for(`react.memo_cache_sentinel`) ? (Fi = {
+        top: `calc(env(safe-area-inset-top, 0px) + (env(safe-area-inset-bottom, 0px) / 2) + 0.5rem)`
+    }, t[369] = Fi) : Fi = t[369];
+    let Ri;
+    t[370] !== ue || t[371] !== u || t[372] !== gr || t[373] !== br || t[374] !== Sr || t[375] !== C || t[376] !== Ke || t[377] !== S || t[378] !== g || t[379] !== B || t[380] !== K || t[381] !== wr || t[382] !== Cr || t[383] !== pt || t[384] !== U ? (Ri = C && (ue || Ke) && (0, $.jsxs)(`div`, {
+        className: `flex flex-wrap items-center gap-2`,
+        children: [pt && K.length === 0 && (0, $.jsx)(oe.div, {
+            initial: !B && {
+                opacity: 0,
+                scale: .95
+            },
+            animate: {
+                opacity: 1,
+                scale: 1
+            },
+            transition: B ? {
+                duration: 0
+            } : {
+                duration: .22,
+                ease: `easeOut`
+            },
+            children: (0, $.jsx)(ji, {
+                viewState: U,
+                mapMessageId: S,
+                onClick: br,
+                onCancel: gr,
+                afterCompletion: Sr
+            })
+        }, `search-this-area`), Cr && (0, $.jsx)(Gr, {
+            clientThreadId: u
+        }), wr && (0, $.jsx)(li, {
+            messageId: g,
+            clientThreadId: u,
+            canNavigateBackward: ue.canNavigateBackward,
+            canNavigateForward: ue.canNavigateForward,
+            onNavigateBackward$: ue.onNavigateBackward$,
+            onNavigateForward$: ue.onNavigateForward$
+        })]
+    }), t[370] = ue, t[371] = u, t[372] = gr, t[373] = br, t[374] = Sr, t[375] = C, t[376] = Ke, t[377] = S, t[378] = g, t[379] = B, t[380] = K, t[381] = wr, t[382] = Cr, t[383] = pt, t[384] = U, t[385] = Ri) : Ri = t[385];
+    let zi;
+    t[386] !== Pi || t[387] !== Ri ? (zi = (0, $.jsx)(`div`, {
+        className: Pi,
+        style: Fi,
+        children: Ri
+    }), t[386] = Pi, t[387] = Ri, t[388] = zi) : zi = t[388];
+    let Bi;
+    t[389] !== C || t[390] !== kr || t[391] !== jr || t[392] !== Y || t[393] !== Tr ? (Bi = !Tr && (0, $.jsx)(`div`, {
+        className: p(`absolute z-[1001] flex flex-col gap-2`, C ? `start-14 top-4` : Y ? `start-[calc(0.75rem+2.25rem+0.5rem)] top-[18px]` : jr ? `start-[calc(0.75rem+7rem+0.5rem)] top-[26px]` : `start-5 top-5`),
+        children: kr
+    }), t[389] = C, t[390] = kr, t[391] = jr, t[392] = Y, t[393] = Tr, t[394] = Bi) : Bi = t[394];
+    let Vi;
+    return t[395] !== Mi || t[396] !== zi || t[397] !== Bi || t[398] !== Lr || t[399] !== Rr ? (Vi = (0, $.jsxs)(`div`, {
+        style: Lr,
+        className: Rr,
+        ref: Ve,
+        children: [Mi, zi, Bi]
+    }), t[395] = Mi, t[396] = zi, t[397] = Bi, t[398] = Lr, t[399] = Rr, t[400] = Vi) : Vi = t[400], Vi
+}
+
+function Do(e) {
+    return [e[0], e[1]]
+}
+
+function Oo(e) {
+    return [e.entity_data.longitude, e.entity_data.latitude]
+}
+var ko, Q, $, Ao, jo, Mo, No, Po, Fo, Io, Lo, Ro, zo, Bo, Vo, Ho, Uo, Wo, Go, Ko, qo, Jo, Yo, Xo, Zo, Qo, $o, es, ts, ns, rs, is, as, os, ss, cs, ls, us, ds, fs, ps, ms, hs, gs = e((() => {
+    ko = Ue(), je(), Bt(), P(), $t(), lt(), cr(), gr(), Te(), f(), Yr(), pt(), B(), le(), T(), ri(), ae(), N(), ge(), M(), Qt(), F(), Ee(), re(), ie(), y(), Le(), vt(), h(), j(), i(), Lt(), Je(), Sn(), v(), k(), Gt(), Cn(), a(), Q = n(z()), He(), kn(), er(), mn(), Fr(), ci(), jn(), Dt(), rr(), hi(), Ei(), Ai(), Fi(), tt(), V(), zn(), _t(), Ri(), $n(), Zi(), qa(), ma(), $a(), lo(), Jn(), wa(), Rn(), ut(), Ct(), yo(), $ = L(), Ao = 50, jo = 20, Mo = 20, No = 20, Po = 144, Fo = 100, Io = 148, Lo = 112, Ro = `.map-entity-note-latency-marker`, zo = 2, Bo = [{
+        className: `hidden`,
+        heightAdjustmentPx: -72
+    }, {
+        className: `line-clamp-1`,
+        heightAdjustmentPx: -48
+    }, {
+        className: `line-clamp-2`,
+        heightAdjustmentPx: -24
+    }, {
+        className: `line-clamp-3`,
+        heightAdjustmentPx: 0
+    }, {
+        className: `line-clamp-4`,
+        heightAdjustmentPx: 24
+    }], Vo = 400, Ho = 300, Uo = 200, Wo = `chatgpt.places.map.first_entity_to_mapbox_load_ms`, Go = `chatgpt.places.map.first_entity_to_background_idle_ms`, Ko = `chatgpt.places.map.first_entity_to_ready_ms`, qo = `chatgpt.places.map.render_time_ms`, Jo = `relative isolate overflow-hidden motion-safe:transition-[max-height,opacity] motion-safe:duration-300 motion-safe:ease-out`, Yo = {
+        longitude: 0,
+        latitude: 0,
+        zoom: 12,
+        pitch: 0,
+        bearing: 0
+    }, Xo = 60, Zo = 30, Qo = 60, $o = 2e3, es = 16, ts = 45, ns = new Set, rs = (e, t) => {
+        e.setConfigProperty(`basemap`, `show3dObjects`, t), e.setConfigProperty(`basemap`, `show3dBuildings`, !0), e.setConfigProperty(`basemap`, `show3dFacades`, !0), e.setConfigProperty(`basemap`, `show3dLandmarks`, !0), e.setConfigProperty(`basemap`, `show3dTrees`, !1)
+    }, is = e => {
+        switch (e) {
+            case `success`:
+                return tn.CHATGPT_GENUI_MAP_ROUTE_OUTCOME_SUCCESS;
+            case `partial`:
+                return tn.CHATGPT_GENUI_MAP_ROUTE_OUTCOME_PARTIAL;
+            case `no_route`:
+                return tn.CHATGPT_GENUI_MAP_ROUTE_OUTCOME_NO_ROUTE
+        }
+    }, as = ({
+        action: e,
+        contentReferenceStartIndex: t,
+        mapAnalyticsMetadata: n,
+        messageId: r
+    }) => {
+        ye.logStructuredEvent(`ChatgptGenuiMapEngagement`, {
+            action: e,
+            messageId: r,
+            contentReferenceStartIndex: fe(t),
+            hasRoute: n.has_route,
+            hasGroups: n.has_groups,
+            routeOutcome: is(n.route_outcome),
+            travelMode: n.travel_mode
+        })
+    }, os = (e, t) => e.messageId === t.messageId && e.assistantMessageId === t.assistantMessageId && e.clientThreadId === t.clientThreadId && e.conversationId === t.conversationId && e.turnIndex === t.turnIndex && e.routeContext?.title === t.routeContext?.title && e.routeContext?.groupsTitle === t.routeContext?.groupsTitle && e.routeContext?.narrative === t.routeContext?.narrative && co(e.routeGroups, t.routeGroups) && e.mapHeight === t.mapHeight && e.borderRadiusClassName === t.borderRadiusClassName && e.fill === t.fill && e.minHeight === t.minHeight && e.centerOnUser === t.centerOnUser && e.ignoreCoordinateOutliers === t.ignoreCoordinateOutliers && e.initialSelectedBusinessId === t.initialSelectedBusinessId && e.hideInlineCarousel === t.hideInlineCarousel && e.enableMapCarouselPresentation === t.enableMapCarouselPresentation && e.mapAnalyticsMetadata?.has_route === t.mapAnalyticsMetadata?.has_route && e.mapAnalyticsMetadata?.has_groups === t.mapAnalyticsMetadata?.has_groups && e.mapAnalyticsMetadata?.route_outcome === t.mapAnalyticsMetadata?.route_outcome && e.mapAnalyticsMetadata?.travel_mode === t.mapAnalyticsMetadata?.travel_mode && e.trackContentReferenceEvent === t.trackContentReferenceEvent && so(e.contentReference, t.contentReference), ss = (0, Q.memo)(xo, os), cs = (0, Q.memo)(function(e) {
+        "use forget";
+        let t = (0, ko.c)(32),
+            {
+                business: n,
+                idx: r,
+                isSelected: i,
+                isVisible: a,
+                tooltipLocation: o,
+                isSonicSidebarEnabled: s,
+                isProvisional: c,
+                clientThreadId: l,
+                messageId: u,
+                trackContentReferenceEvent: d,
+                onMarkerClick: f,
+                onRendered: p,
+                isHoverCardEnabled: m,
+                routeStopIndex: h,
+                isEntranceReady: g
+            } = e,
+            _;
+        t[0] !== n || t[1] !== h ? (_ = h != null && Qi(n), t[0] = n, t[1] = h, t[2] = _) : _ = t[2];
+        let v = _,
+            y, b;
+        t[3] !== n.entity_data.id || t[4] !== p ? (y = () => {
+            p?.(n.entity_data.id)
+        }, b = [n.entity_data.id, p], t[3] = n.entity_data.id, t[4] = p, t[5] = y, t[6] = b) : (y = t[5], b = t[6]), (0, Q.useEffect)(y, b);
+        let x;
+        t[7] !== n || t[8] !== v || t[9] !== f ? (x = v ? void 0 : () => f?.(n, `marker`), t[7] = n, t[8] = v, t[9] = f, t[10] = x) : x = t[10];
+        let S;
+        t[11] !== n || t[12] !== l || t[13] !== r || t[14] !== m || t[15] !== s || t[16] !== v || t[17] !== u || t[18] !== f || t[19] !== d ? (S = m && !v && (e => {
+            let {
+                onProviderPickerOpenChange: t
+            } = e;
+            return (0, $.jsx)(_n, {
+                clientThreadId: l,
+                messageId: u,
+                isModelPreferred: n.isModelPreferred,
+                idx: r,
+                business: n.entity_data,
+                trackContentReferenceEvent: d,
+                onOpenEntity: e => f?.(n, e),
+                enableSidebarNavigation: !!s,
+                showActions: !0,
+                showRatingSourceBadge: !0,
+                onProviderPickerOpenChange: t
+            })
+        }), t[11] = n, t[12] = l, t[13] = r, t[14] = m, t[15] = s, t[16] = v, t[17] = u, t[18] = f, t[19] = d, t[20] = S) : S = t[20];
+        let C;
+        return t[21] !== n || t[22] !== g || t[23] !== c || t[24] !== i || t[25] !== s || t[26] !== a || t[27] !== h || t[28] !== x || t[29] !== S || t[30] !== o ? (C = (0, $.jsx)(q, {
+            entitySearchResult: n,
+            isSelected: i,
+            isVisible: a,
+            tooltipLocation: o,
+            isSonicSidebarEnabled: s,
+            isProvisional: c,
+            onClick: x,
+            routeStopIndex: h,
+            isEntranceReady: g,
+            enableImageHover: !1,
+            tooltipContent: S
+        }), t[21] = n, t[22] = g, t[23] = c, t[24] = i, t[25] = s, t[26] = a, t[27] = h, t[28] = x, t[29] = S, t[30] = o, t[31] = C) : C = t[31], C
+    }, (e, t) => e.business.entity_data === t.business.entity_data && e.business.entity_category === t.business.entity_category && e.business.notes === t.business.notes && e.business.extra_params === t.business.extra_params && e.business.isModelPreferred === t.business.isModelPreferred && e.idx === t.idx && e.isSelected === t.isSelected && e.isVisible === t.isVisible && e.tooltipLocation === t.tooltipLocation && e.isSonicSidebarEnabled === t.isSonicSidebarEnabled && e.isProvisional === t.isProvisional && e.routeStopIndex === t.routeStopIndex && e.isEntranceReady === t.isEntranceReady && e.clientThreadId === t.clientThreadId && e.messageId === t.messageId && e.isHoverCardEnabled === t.isHoverCardEnabled && e.trackContentReferenceEvent === t.trackContentReferenceEvent && e.onMarkerClick === t.onMarkerClick && e.onRendered === t.onRendered), ls = (e, t) => {
+        if (e) {
+            let n = Math.abs(t.viewState.zoom - e.zoom),
+                r = Math.abs(t.viewState.latitude - e.latitude),
+                i = Math.abs(t.viewState.longitude - e.longitude);
+            return n > .05 || r > 5e-4 || i > 5e-4
+        }
+        return !1
+    }, us = (e, t = `|`) => e.map(e => e.entity_data.id).sort().join(t), ds = () => typeof performance > `u` ? Date.now() : performance.now(), fs = (e, t) => e.size === t.size && [...e].every(e => t.has(e)), ps = (e, t) => !(e.x + e.w <= t.x || t.x + t.w <= e.x || e.y + e.h <= t.y || t.y + t.h <= e.y), ms = (e, t) => {
+        let n = [];
+        for (let r of t) {
+            let t = e.project([r.entity_data.longitude, r.entity_data.latitude]);
+            if (!t) return null;
+            n.push({
+                id: r.entity_data.id,
+                x: t.x - Xo / 2,
+                y: t.y,
+                w: Xo,
+                h: Zo,
+                rating: r.entity_data.rating ?? 0,
+                openNow: r.entity_data.is_open ?? !1
+            })
+        }
+        return n
+    }, hs = e => {
+        let t = [...e].sort((e, t) => e.openNow && !t.openNow ? -1 : !e.openNow && t.openNow ? 1 : t.rating - e.rating),
+            n = new Set,
+            r = new Map(t.map(e => [e.id, e]));
+        for (let e of t) {
+            let t = !1;
+            for (let i of n) {
+                let n = r.get(i);
+                if (n && ps(e, n)) {
+                    t = !0;
+                    break
+                }
+            }
+            t || n.add(e.id)
+        }
+        return n
+    }
+}));
+export {
+    Xa as a, qa as c, Tr as d, Fr as f, cr as h, bo as i, aa as l, ar as m, To as n, $a as o, sr as p, gs as r, Pa as s, ss as t, ma as u
+};
 //# sourceMappingURL=72c9acea-egxbvet73vvibstf.js.map

@@ -1,0 +1,83 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    X5 as t,
+    Y5 as n
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+import {
+    Bn as r,
+    wn as i
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function a(e) {
+    "use forget";
+    let t = (0, o.c)(30),
+        {
+            align: r,
+            className: i,
+            email: a,
+            fallback: c,
+            name: l,
+            primaryAccessory: u,
+            primaryClassName: d,
+            secondaryClassName: f
+        } = e,
+        p = r === void 0 ? `start` : r,
+        m = c === void 0 ? null : c,
+        h = u === void 0 ? null : u,
+        g = l ?? a;
+    if (g == null) {
+        let e;
+        return t[0] === m ? e = t[1] : (e = (0, s.jsx)(s.Fragment, {
+            children: m
+        }), t[0] = m, t[1] = e), e
+    }
+    let _;
+    t[2] !== a || t[3] !== l ? (_ = [l, a].filter(Boolean), t[2] = a, t[3] = l, t[4] = _) : _ = t[4];
+    let v = _.join(` `),
+        y = l != null && a != null,
+        b = p === `end` && `text-end`,
+        x;
+    t[5] !== i || t[6] !== b ? (x = n(`min-w-0`, b, i), t[5] = i, t[6] = b, t[7] = x) : x = t[7];
+    let S = v || void 0,
+        C = p === `end` && `justify-end`,
+        w;
+    t[8] === C ? w = t[9] : (w = n(`flex min-w-0 items-center gap-1`, C), t[8] = C, t[9] = w);
+    let T;
+    t[10] === d ? T = t[11] : (T = n(`min-w-0 truncate`, d), t[10] = d, t[11] = T);
+    let E;
+    t[12] !== g || t[13] !== T ? (E = (0, s.jsx)(`span`, {
+        className: T,
+        children: g
+    }), t[12] = g, t[13] = T, t[14] = E) : E = t[14];
+    let D;
+    t[15] === h ? D = t[16] : (D = h ? (0, s.jsx)(`span`, {
+        className: `shrink-0`,
+        children: h
+    }) : null, t[15] = h, t[16] = D);
+    let O;
+    t[17] !== E || t[18] !== D || t[19] !== w ? (O = (0, s.jsxs)(`div`, {
+        className: w,
+        children: [E, D]
+    }), t[17] = E, t[18] = D, t[19] = w, t[20] = O) : O = t[20];
+    let k;
+    t[21] !== a || t[22] !== f || t[23] !== y ? (k = y ? (0, s.jsx)(`div`, {
+        className: n(`truncate`, f),
+        title: a,
+        children: a
+    }) : null, t[21] = a, t[22] = f, t[23] = y, t[24] = k) : k = t[24];
+    let A;
+    return t[25] !== O || t[26] !== k || t[27] !== x || t[28] !== S ? (A = (0, s.jsxs)(`div`, {
+        className: x,
+        title: S,
+        children: [O, k]
+    }), t[25] = O, t[26] = k, t[27] = x, t[28] = S, t[29] = A) : A = t[29], A
+}
+var o, s, c = e((() => {
+    o = i(), t(), s = r()
+}));
+export {
+    c as n, a as t
+};
+//# sourceMappingURL=ef50f9ea-kt7be3v4t6uzzqmf.js.map

@@ -1,3 +1,167 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Rn as t,zn as n}from"./2340486e-komxp8tzs51ny4jj.js";var r,i,a,o,s,c,l,u,d,f=e((()=>{n(),r={id:`extra-reasoning`},i=`Templates`,a=`Agent plan actions`,o=`Connector action constraints`,s=`Message source`,c=({actions:e,allowedActionNames:t,connectorId:n,connectorName:r,draftConstraintJson:i,existingConstraints:a,savedConstraint:s})=>[{type:`input_tag`,text:``,id:`connector_constraint_rule:${n}:${s.id??s.name}`,group:o,data:{type:`connector_constraint_rule`,action:`edit`,connector_id:n,connector_name:r,allowed_action_names:t,actions:e,existing_rules:a,saved_rule:s,saved_rule_before_editor_changes:s,draft_rule_json:i,current_editor_json:i,rule_id_to_update:s.id,edit_instructions:`Use current_editor_json as the current draft constraint to edit, including its name and constraints. Use rule_id_to_update to update the existing constraint when present.`}}],l=(e,t)=>{switch(t.kind){case`agent`:return e.formatMessage(d.agentPromptPrefix,{description:t.prompt});case`skill`:return e.formatMessage(d.skillPromptPrefix,{description:t.prompt});case`memory_suggestion`:return t.prompt;case`agent_template`:return t.prompt;case`connector_link_added`:return e.formatMessage(d.connectorLinkAddedPrompt,{connectorName:t.connectorName});case`connector_constraint_rule`:return t.prompt;case`publish_checklist`:return`${e.formatMessage(t.updateType===`update`?d.publishChecklistUpdatePrompt:d.publishChecklistCreatePrompt)}\n${t.checklistItems.map(e=>`- ${e}`).join(`
-`)}`;case`agent_plan_action`:return e.formatMessage(d.agentPlanConfirmPrompt)}},u=(e,t)=>t.kind===`publish_checklist`?{content:[{type:`input_tag`,text:``,id:`message_source:publish_checklist`,group:s,data:{type:`message_source`,value:`publish_checklist`}},{type:`input_text`,text:l(e,t)}]}:t.kind===`agent_plan_action`?{content:[{type:`input_tag`,text:``,id:`agent_plan_action:${t.action}`,group:a,data:{type:`agent_plan_action`,action:t.action,widget_item_id:t.widgetItemId,...t.agentPlanState?{state:t.agentPlanState}:{}}},{type:`input_text`,text:l(e,t)}]}:t.kind===`connector_constraint_rule`?{content:[{type:`input_tag`,text:``,id:`connector_constraint_rule:${t.connectorId}:generate`,group:o,data:{type:`connector_constraint_rule`,connector_id:t.connectorId}},{type:`input_text`,text:t.prompt}]}:t.kind===`skill`?{text:l(e,t),toolChoice:r}:t.kind===`agent_template`?{content:[{type:`input_tag`,text:``,id:`template:${t.templateName}`,group:i,data:{type:`template`,template_name:t.templateName,...t.templateListWidgetContext==null?{}:{template_list_widget_item_id:t.templateListWidgetContext.widgetItemId,template_list_widget_state:t.templateListWidgetContext.state},...t.selectedToolIdsByCategory==null?{}:{selected_tool_ids_by_category:t.selectedToolIdsByCategory}}},{type:`input_text`,text:t.prompt}]}:{text:l(e,t)},d=t({agentPromptPrefix:{id:`Hermes.GptStudio.Chat.PlutoPrompt.agentPromptPrefix`,defaultMessage:`Configure this agent using this description: {description}`},skillPromptPrefix:{id:`Hermes.GptStudio.Chat.PlutoPrompt.skillPromptPrefix`,defaultMessage:`Create a skill using this description: {description}`},connectorLinkAddedPrompt:{id:`Hermes.GptStudio.Chat.PlutoPrompt.connectorLinkAddedPrompt`,defaultMessage:`I connected {connectorName}.`},publishChecklistUpdatePrompt:{id:`Hermes.GptStudio.Chat.PlutoPrompt.publishChecklistUpdatePrompt`,defaultMessage:`Fix these issues to update this agent:`},publishChecklistCreatePrompt:{id:`Hermes.GptStudio.Chat.PlutoPrompt.publishChecklistCreatePrompt`,defaultMessage:`Fix these issues to finish creating this agent:`},agentPlanConfirmPrompt:{id:`Hermes.GptStudio.Chat.PlutoPrompt.agentPlanConfirmPrompt`,defaultMessage:`Build this agent`}})}));export{u as n,f as r,c as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Rn as t,
+    zn as n
+} from "./2340486e-komxp8tzs51ny4jj.js";
+var r, i, a, o, s, c, l, u, d, f = e((() => {
+    n(), r = {
+        id: `extra-reasoning`
+    }, i = `Templates`, a = `Agent plan actions`, o = `Connector action constraints`, s = `Message source`, c = ({
+        actions: e,
+        allowedActionNames: t,
+        connectorId: n,
+        connectorName: r,
+        draftConstraintJson: i,
+        existingConstraints: a,
+        savedConstraint: s
+    }) => [{
+        type: `input_tag`,
+        text: ``,
+        id: `connector_constraint_rule:${n}:${s.id??s.name}`,
+        group: o,
+        data: {
+            type: `connector_constraint_rule`,
+            action: `edit`,
+            connector_id: n,
+            connector_name: r,
+            allowed_action_names: t,
+            actions: e,
+            existing_rules: a,
+            saved_rule: s,
+            saved_rule_before_editor_changes: s,
+            draft_rule_json: i,
+            current_editor_json: i,
+            rule_id_to_update: s.id,
+            edit_instructions: `Use current_editor_json as the current draft constraint to edit, including its name and constraints. Use rule_id_to_update to update the existing constraint when present.`
+        }
+    }], l = (e, t) => {
+        switch (t.kind) {
+            case `agent`:
+                return e.formatMessage(d.agentPromptPrefix, {
+                    description: t.prompt
+                });
+            case `skill`:
+                return e.formatMessage(d.skillPromptPrefix, {
+                    description: t.prompt
+                });
+            case `memory_suggestion`:
+                return t.prompt;
+            case `agent_template`:
+                return t.prompt;
+            case `connector_link_added`:
+                return e.formatMessage(d.connectorLinkAddedPrompt, {
+                    connectorName: t.connectorName
+                });
+            case `connector_constraint_rule`:
+                return t.prompt;
+            case `publish_checklist`:
+                return `${e.formatMessage(t.updateType===`update`?d.publishChecklistUpdatePrompt:d.publishChecklistCreatePrompt)}\n${t.checklistItems.map(e=>`- ${e}`).join(`
+`)}`;
+            case `agent_plan_action`:
+                return e.formatMessage(d.agentPlanConfirmPrompt)
+        }
+    }, u = (e, t) => t.kind === `publish_checklist` ? {
+        content: [{
+            type: `input_tag`,
+            text: ``,
+            id: `message_source:publish_checklist`,
+            group: s,
+            data: {
+                type: `message_source`,
+                value: `publish_checklist`
+            }
+        }, {
+            type: `input_text`,
+            text: l(e, t)
+        }]
+    } : t.kind === `agent_plan_action` ? {
+        content: [{
+            type: `input_tag`,
+            text: ``,
+            id: `agent_plan_action:${t.action}`,
+            group: a,
+            data: {
+                type: `agent_plan_action`,
+                action: t.action,
+                widget_item_id: t.widgetItemId,
+                ...t.agentPlanState ? {
+                    state: t.agentPlanState
+                } : {}
+            }
+        }, {
+            type: `input_text`,
+            text: l(e, t)
+        }]
+    } : t.kind === `connector_constraint_rule` ? {
+        content: [{
+            type: `input_tag`,
+            text: ``,
+            id: `connector_constraint_rule:${t.connectorId}:generate`,
+            group: o,
+            data: {
+                type: `connector_constraint_rule`,
+                connector_id: t.connectorId
+            }
+        }, {
+            type: `input_text`,
+            text: t.prompt
+        }]
+    } : t.kind === `skill` ? {
+        text: l(e, t),
+        toolChoice: r
+    } : t.kind === `agent_template` ? {
+        content: [{
+            type: `input_tag`,
+            text: ``,
+            id: `template:${t.templateName}`,
+            group: i,
+            data: {
+                type: `template`,
+                template_name: t.templateName,
+                ...t.templateListWidgetContext == null ? {} : {
+                    template_list_widget_item_id: t.templateListWidgetContext.widgetItemId,
+                    template_list_widget_state: t.templateListWidgetContext.state
+                },
+                ...t.selectedToolIdsByCategory == null ? {} : {
+                    selected_tool_ids_by_category: t.selectedToolIdsByCategory
+                }
+            }
+        }, {
+            type: `input_text`,
+            text: t.prompt
+        }]
+    } : {
+        text: l(e, t)
+    }, d = t({
+        agentPromptPrefix: {
+            id: `Hermes.GptStudio.Chat.PlutoPrompt.agentPromptPrefix`,
+            defaultMessage: `Configure this agent using this description: {description}`
+        },
+        skillPromptPrefix: {
+            id: `Hermes.GptStudio.Chat.PlutoPrompt.skillPromptPrefix`,
+            defaultMessage: `Create a skill using this description: {description}`
+        },
+        connectorLinkAddedPrompt: {
+            id: `Hermes.GptStudio.Chat.PlutoPrompt.connectorLinkAddedPrompt`,
+            defaultMessage: `I connected {connectorName}.`
+        },
+        publishChecklistUpdatePrompt: {
+            id: `Hermes.GptStudio.Chat.PlutoPrompt.publishChecklistUpdatePrompt`,
+            defaultMessage: `Fix these issues to update this agent:`
+        },
+        publishChecklistCreatePrompt: {
+            id: `Hermes.GptStudio.Chat.PlutoPrompt.publishChecklistCreatePrompt`,
+            defaultMessage: `Fix these issues to finish creating this agent:`
+        },
+        agentPlanConfirmPrompt: {
+            id: `Hermes.GptStudio.Chat.PlutoPrompt.agentPlanConfirmPrompt`,
+            defaultMessage: `Build this agent`
+        }
+    })
+}));
+export {
+    u as n, f as r, c as t
+};
 //# sourceMappingURL=f5388fa8-fuely8ty9ky21twa.js.map

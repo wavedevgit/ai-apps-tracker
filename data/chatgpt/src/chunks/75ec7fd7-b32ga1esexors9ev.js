@@ -1,0 +1,52 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bst as t,
+    P5 as n,
+    Rst as r,
+    fD as i,
+    g8 as a,
+    lD as o,
+    nct as s
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+import {
+    Bn as c,
+    Rn as l,
+    zn as u
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    I8 as d,
+    L8 as f,
+    M8 as p,
+    P8 as m,
+    R8 as h
+} from "./conversation-small-ikg0dwuw782klweb.js";
+
+function g({
+    gizmoId: e,
+    onClose: i
+}) {
+    let a = n(() => o(e).data),
+        {
+            data: s
+        } = h(r.Gizmo),
+        c = f(u(), e, r.Gizmo, t.GPTs);
+    if (s == null) return null;
+    let l = a == null ? `Report` : `Report ${a.gizmo.display.name}`;
+    return (0, _.jsx)(p, {
+        reasons: s.reasons,
+        submitReport: c,
+        title: l,
+        onClose: i,
+        header: s.header,
+        subHeader: s.header_explanation
+    })
+}
+var _, v = e((() => {
+    s(), i(), m(), a(), d(), l(), _ = c()
+}));
+export {
+    v as n, g as t
+};
+//# sourceMappingURL=75ec7fd7-b32ga1esexors9ev.js.map

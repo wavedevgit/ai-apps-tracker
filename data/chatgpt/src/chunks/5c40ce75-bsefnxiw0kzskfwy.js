@@ -1,2 +1,819 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{CK as t,F7 as n,FE as r,Fat as i,Fv as a,GE as o,JE as s,Knt as c,L1 as l,NE as u,R7 as d,Rv as f,Wnt as p,Xnt as m,Yit as h,dat as g,g8 as _,h8 as v,j1 as y,kat as b,qE as x,qit as S,sat as C,uat as w,wK as T}from"./4813494d-dfpv67hlp00pbohr.js";import{H as E,J as ee,s as D,w as O}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Twn as te,_Cn as k,bnt as ne,cwn as A,eTn as j,hCn as M,kwn as re,mCn as ie,swn as ae,tTn as N,ynt as oe}from"./conversation-small-cy5f8pl0g26s86so.js";import{$v as se,Av as P,By as ce,Cy as le,Dv as F,Hy as I,Qv as ue,Ty as de,kv as L}from"./c2675c8c-9bs3zsr3vq259es7.js";import{c as fe,s as pe}from"./46464433-g946xnvlgzfys2yo.js";import{a as me,c as he,d as ge,f as _e,l as ve,n as ye,o as be,r as xe,s as Se,t as Ce,u as we}from"./bb6515d2-b318rq40s8sslcbs.js";import{a as Te,n as Ee}from"./1fc9a22c-czfd83azx6f410kt.js";var De,Oe,ke=e((()=>{s(),De=e=>{let t=[],n=new Map,r=new Set;for(let i of e?.values()??[]){let e=o(i.id);if(r.has(e))continue;r.add(e);let a=i.template_id??null;t.push({primaryConnector:{id:i.id,template_id:a},relatedConnectors:[]});let s=i.labels?.sync_only_connector===`true`||i.sync_metadata?.sync_only===!0||i.sync_metadata?.supports_admin_sync===!0,c=i.status===`ENABLED`?`enabled`:i.status===`ONLY_ME`||i.status===`DISABLED_BY_ADMIN`&&!s?`disabled`:null;c!=null&&(n.set(i.id,c),a!=null&&a!==``&&n.set(a,c))}return{apps:t,statusesByConnectorId:n}},Oe=e=>e.primaryConnector.status===`ONLY_ME`?`publish`:`enable`}));function Ae(){return p(R,{disableExposureLog:!0})}function je(){return p(R)}var R,Me=e((()=>{m(),R=`87717130`}));function Ne(){if(typeof window>`u`)return!1;let e=new URL(w,window.location.href);return e.origin===window.location.origin&&e.pathname.replace(/\/$/,``)===`/backend-api`&&e.search===``&&e.hash===``}function z(){return Ne()&&Ae()?`sheep`:`legacy`}function B(e,t,n,r){if(n?.throwIfAborted(),e!==void 0&&(ie(t),e!==z()||r!==void 0&&y()?.normalizedAccountUserId!==r))throw new E({revert:!0})}function Pe(e,t,n){return!n||!M(t)||e!==z()?!1:!Ne()||(je()?`sheep`:`legacy`)===e}async function Fe({appId:e,workspaceId:r,signal:i,limit:a,pageToken:o}){return await A({operation:`app_references`,transport:`sheep`,workspaceId:r,signal:i,request:async s=>{B(`sheep`,r,i),Ie??=new n({baseUrl:w.replace(/\/$/,``),targetRoutesAreCanonical:!0});let c=await Ie.safeGet(`/plugins/admin/by-app/{app_id}`,{...s,authOption:C.Required,preserveAccountIdOnRetry:!0,signal:i,additionalHeaders:{...t(r),[S]:`ADMIN_SETTING`,"x-openai-use-sheep":`1`},parameters:{path:{app_id:e},query:{limit:a,...o==null?{}:{pageToken:o}}}});return B(`sheep`,r,i),c}})}var Ie,Le,Re=e((()=>{ae(),v(),g(),h(),d(),m(),l(),T(),D(),k(),Me(),Le=_(z,e=>{let t=c();return t.on(`values_updated`,e),()=>t.off(`values_updated`,e)},{name:`adminPluginAppReferenceReadTransport`})})),ze,Be,V,Ve=e((()=>{ae(),T(),N(),ne(),g(),i(),h(),D(),P(),Re(),ze=1e3,Be=async({appId:e,workspaceId:n,signal:r,transport:i,workspaceUserId:a})=>{let o=new Map,s=new Set,c=null,l=null;for(;;){B(i,n,r,a);let u=c,d;try{d=i===`sheep`?await Fe({appId:e,workspaceId:n,signal:r,limit:ze,pageToken:c}):await A({operation:`app_references`,transport:`plugin_service`,workspaceId:n,signal:r,request:i=>oe.safeGet(`/plugins/admin/by-app/{app_id}`,{...i,authOption:C.Required,signal:r,additionalHeaders:{...t(n),[S]:j.ADMIN_SETTING},parameters:{path:{app_id:e},query:{limit:ze,...u==null?{}:{pageToken:u}}}})})}catch(e){if(B(i,n,r,a),i!==`sheep`&&e instanceof b&&e.status===404&&c==null)return{plugins:[],totalCount:0,isComplete:!0};throw e}if(B(i,n,r,a),!Array.isArray(d.plugins)||d.pagination==null||!Number.isSafeInteger(d.pagination.limit)||d.pagination.limit<=0||!Number.isSafeInteger(d.total_count)||d.total_count<0)throw Error(`Plugin impact references are incomplete or malformed.`);if(l!=null&&l!==d.total_count)throw Error(`Plugin impact reference counts changed during pagination.`);l=d.total_count;for(let e of d.plugins)o.set(e.id,e);let f=d.pagination.next_page_token??null;if(f!=null&&typeof f!=`string`)throw Error(`Plugin impact pagination returned an invalid page token.`);if(f==null)return{plugins:[...o.values()],totalCount:l,isComplete:o.size===l};if(s.has(f))throw Error(`Plugin impact pagination repeated a page token.`);s.add(f),c=f}},V=({appId:e,workspaceId:t,transport:n,workspaceUserId:r})=>O({queryKey:L(`app-references`,t,e,...r===void 0?[]:[{canonicalReferenceActor:r}],...n===`sheep`?[`app-reference-sheep`]:[]),enabled:t!==``&&e!==``,staleTime:F,queryFn:({signal:i})=>Be({appId:e,workspaceId:t,signal:i,workspaceUserId:r,transport:r!==void 0||n===`sheep`?n:void 0})})}));function He(){return p(`241231532`,{disableExposureLog:!0})}function Ue(){return p(`241231532`)}var We=e((()=>{m()}));function Ge(){if(typeof window>`u`)return!1;let e=new URL(w,window.location.href);return e.origin===window.location.origin&&e.pathname.replace(/\/$/,``)===`/backend-api`&&e.search===``&&e.hash===``}function H(){return Ge()&&He()?`sheep`:`legacy`}function U(e,t,n,r){if(n?.throwIfAborted(),e!==void 0&&(ie(t),e!==H()||r!==void 0&&y()?.normalizedAccountUserId!==r))throw new E({revert:!0})}function Ke(e,t,n){return!n||!M(t)||e!==H()?!1:!Ge()||(Ue()?`sheep`:`legacy`)===e}async function qe({appIds:e,workspaceId:r,transport:i,signal:a,workspaceUserId:o}){let s=o??(i===void 0?void 0:y()?.normalizedAccountUserId);if(U(i,r,a,s),e.length===0)return new Map;let c;if(i!==`sheep`)c=await A({operation:`workspace_content`,transport:`sa_server`,workspaceId:r,signal:a,request:t=>te(e,{workspace:!0,accountId:r,productSku:j.ADMIN_SETTING},t)});else{if(s===void 0)throw new E({revert:!0});Je??=new n({baseUrl:w.replace(/\/$/,``),targetRoutesAreCanonical:!0});let i=Je;c=await A({operation:`workspace_content`,transport:`sheep`,workspaceId:r,signal:a,request:async n=>{let o=await i.safePost(`/apps/workspace/content`,{...n,authOption:C.Required,preserveAccountIdOnRetry:!0,...a===void 0?{}:{signal:a},additionalHeaders:{...t(r),[S]:j.ADMIN_SETTING,"x-openai-use-sheep":`1`},parameters:{query:{detail:`full`}},requestBody:{app_ids:[...e]}});return new Map(o.apps.map(e=>[e.id,e]))}})}return U(i,r,a,s),c}var Je,Ye,W=e((()=>{ae(),re(),N(),v(),l(),g(),h(),d(),m(),T(),D(),k(),We(),Ye=_(H,e=>{let t=c();return t.on(`values_updated`,e),()=>t.off(`values_updated`,e)},{name:`adminPluginWorkspaceContentReadTransport`})}));function Xe(e){if(e==null||e.workspaceUserId==null)return!1;let t=y();return M(e.workspaceId)&&t?.getWorkspaceId()===e.workspaceId&&t.normalizedAccountUserId===e.workspaceUserId&&H()===e.transport}function Ze(e,t){return e===void 0?[]:[{contentTransport:e,workspaceUserId:t}]}function Qe(e,t){let n=e.at(-1);return typeof n==`object`&&!!n&&`contentTransport`in n&&n.contentTransport===t.transport&&`workspaceUserId`in n&&n.workspaceUserId===t.workspaceUserId}function $e({queryClient:e,previous:t,next:n}){if(!(t.workspaceId===n.workspaceId&&t.transport===n.transport&&t.workspaceUserId===n.workspaceUserId))for(let n of[`apps-details`,`impact`]){let r={queryKey:L(n,t.workspaceId),predicate:e=>Qe(e.queryKey,t)};e.cancelQueries(r),e.invalidateQueries({...r,refetchType:`none`})}}var G=e((()=>{l(),k(),P(),W()})),et,tt,K,nt=e((()=>{a(),r(),N(),v(),l(),g(),i(),m(),D(),ce(),P(),G(),W(),et=()=>p(`585473327`),tt=_(et,e=>{let t=c();return t.on(`values_updated`,e),()=>t.off(`values_updated`,e)},{name:`nativeAdminPluginAppRecoveryEnabled`}),K=({appIds:e,workspaceId:t,transport:n,nativeAppDetailsRecoveryEnabled:r=!1,workspaceUserId:i=n===void 0?void 0:y()?.normalizedAccountUserId})=>{let a=[...new Set(e)].sort(),o=r,s=e=>{if(n===`sheep`&&i===void 0)throw new E({revert:!0});return qe({appIds:a,workspaceId:t,workspaceUserId:i,transport:n,signal:e})},c=async(e,r)=>{let i=await s(n===`sheep`?r:void 0);r.throwIfAborted();let o=a.filter(e=>!i.has(e)&&f(e));if(o.length===0)return i;let c;try{c=await u(e,o,{workspaceId:t,productSku:j.ADMIN_SETTING,authOption:C.Required,signal:r,staleTime:0})}catch(e){if(r.throwIfAborted(),e instanceof b)return i;throw e}r.throwIfAborted();let l=[...c].flatMap(([e,t])=>t.id===e&&o.includes(e)?[[e,{...t,logo_url_dark:t.logo_url_dark??null}]]:[]);return l.length===0?i:new Map([...i,...l])};return O({queryKey:L(`apps-details`,t,{appIds:Object.fromEntries(a.map(e=>[e,!0])),...o?{nativeAppDetailsRecovery:!0}:{}},...Ze(n,i)),queryFn:o?({client:e,signal:t})=>I({operation:`app_details`,signal:t,request:()=>c(e,t)}):n===`sheep`?({signal:e})=>I({operation:`app_details`,request:()=>s(e)}):()=>I({operation:`app_details`,request:()=>s()}),enabled:t!==``&&a.length>0,...o?{refetchOnMount:!0}:{},staleTime:F})}}));async function rt(e){let{contentTransport:t,contentWorkspaceUserId:n}=e;if(n===void 0)throw new E({revert:!0});U(t,e.workspaceId,void 0,n);let r=z(),i=pt({...e,referenceTransport:r,contentTransport:t,contentWorkspaceUserId:n});if(!Pe(r,e.workspaceId,i.enabled===!0)||!Ke(t,e.workspaceId,i.enabled===!0))throw new E({revert:!0});let a=i.queryKey.includes(`ck-sheep`)?`sheep`:`legacy`,o=e.queryClient.getQueryCache().find({queryKey:i.queryKey,exact:!0}),s=e.queryClient.getQueryData(i.queryKey),c=o!=null&&!o.state.isInvalidated&&o.state.dataUpdatedAt!==0&&Date.now()-o.state.dataUpdatedAt<6e4&&s!=null&&he(s),l=await e.queryClient.fetchQuery(i);if(c&&!Se(a,e.workspaceId,n))throw new E({revert:!0});return B(r,e.workspaceId),U(t,e.workspaceId,void 0,n),l}var it,at,ot,q,st,J,Y,ct,X,Z,Q,lt,$,ut,dt,ft,pt,mt=e((()=>{l(),W(),G(),Ve(),Re(),pe(),ve(),s(),le(),ue(),ke(),Te(),D(),xe(),nt(),P(),it=50,at=100,ot=5,q=100,st=5e3,J=async(e,t,n)=>{let r=Array(e.length),i=0;return await Promise.all(Array.from({length:Math.min(e.length,ot)},async()=>{for(;i<e.length;){n.throwIfAborted();let a=i;i+=1,r[a]=await t(e[a])}})),r},Y=(e,t)=>{let n=new Set(e.filter(e=>e!==``)),r=new Set([...t?.values()??[]].flatMap(e=>[e.id,e.template_id].filter(e=>e!=null&&e!==``))),i=[...t?.values()??[]].flatMap(e=>{let t=[e.id,e.template_id].filter(e=>e!=null&&e!==``);return t.some(e=>[...n].some(t=>t===e||o(t)===o(e)&&(!r.has(t)||!r.has(e))))?t:[]});return[...new Set([...n,...i].flatMap(e=>{let t=x(e);return t==null||r.has(e)&&r.has(t)?[e]:[e,t]}))].sort()},ct=e=>({id:e.id,displayName:e.display_name,canonicalAppId:e.canonical_app_id??null,appIds:[...new Set(e.app_ids)],requiredAppIdGroups:e.required_app_id_groups?.map(e=>[...new Set(e)])??null,appManifest:e.app_manifest==null?null:{apps:Object.fromEntries(Object.entries(e.app_manifest.apps).map(([e,t])=>[e,{id:t.id,required:t.required??null}]))},interface:{composerIconUrl:e.interface.composer_icon_url??null,logoUrl:e.interface.logo_url??null}}),X=e=>e.status===`DISABLED_BY_ADMIN`&&(e.labels?.sync_only_connector===`true`||e.sync_metadata?.sync_only===!0||e.sync_metadata?.supports_admin_sync===!0),Z=e=>new Set([...e.values()].flatMap(e=>[e.id,e.template_id].filter(e=>e!=null&&e!==``))),Q=(e,t)=>{let n=new Set([e.id,e.template_id].filter(e=>e!=null&&e!==``));for(let e of n){let r=x(e);r!=null&&!t.has(r)&&n.add(r)}return n},lt=({app:e,exactEffectiveAppIds:t,hydratedAppsById:n})=>{let r=[e.id,e.template_id].filter(e=>e!=null&&e!==``);for(let e of r){let r=n?.get(e);if(r!=null)return r;let i=x(e);if(i!=null&&!t.has(i)){let e=n?.get(i);if(e!=null)return e}}},$=(e,t)=>{let n=new Map,r=Z(e);for(let i of e.values()){let{statusesByConnectorId:e}=De(new Map([[i.id,i]])),a=lt({app:i,exactEffectiveAppIds:r,hydratedAppsById:t}),o=i.sync_metadata?.sync_status,s=X(i)&&o?.ksid!=null&&o.ksid.trim()!==``&&o.ks_status!==`deleting`&&o.ks_status!==`deleted`,c=a==null?s?`enabled`:e.get(i.id):se(a)||X(i)&&de(a)?`enabled`:`disabled`,l=Q(i,r);for(let e of l){let t=n.get(e)??{enabled:!1,disabled:!1,unknown:!1};c===`enabled`?t.enabled=!0:c===`disabled`?t.disabled=!0:t.unknown=!0,n.set(e,t)}}let i=new Map;return n.forEach((e,t)=>{e.enabled&&!e.disabled?i.set(t,!0):e.disabled&&!e.enabled&&!e.unknown&&i.set(t,!1)}),i},ut=async({appsById:e,appEnabledById:t,requiredAppIds:n,workspaceId:r,queryClient:i,signal:a,transport:o,ckTransport:s})=>{let c=new Set([...n].filter(e=>!t.has(e)));if(c.size===0)return new Map;let l=y()?.normalizedAccountUserId,u=Z(e),d=new Map;for(let t of e.values())X(t)&&[...Q(t,u)].some(e=>c.has(e))&&d.set(t.id,t);let f=await J([...d.values()],async e=>{a.throwIfAborted();let t=i==null?await Ce({appId:e.id,directoryApp:e,workspaceId:r,signal:a}):await i.fetchQuery(ye({transport:o,ckTransport:s,appId:e.id,directoryApp:e,workspaceId:r}));if(a.throwIfAborted(),i!=null&&s!=null&&l!=null&&!be(s,r,l,t))throw new E({revert:!0});return[e,t]},a);return new Map(f.flatMap(([e,t])=>[...Q(e,u)].map(e=>[e,t])))},dt=e=>{if(e.requiredAppIdGroups!=null)return e.requiredAppIdGroups.flat();if(e.appManifest==null)return e.appIds;let t=new Set,n=new Set;return Object.values(e.appManifest.apps).forEach(e=>{e.required===!1?t.add(e.id):n.add(e.id)}),e.appIds.filter(e=>!t.has(e)||n.has(e))},ft=async({workspaceId:e,pluginId:t,targetAppIds:n,targetEnabled:r,appsById:i,queryClient:a,signal:o,transport:s,ckTransport:c,ckWorkspaceUserId:l,referenceTransport:u,contentTransport:d,contentWorkspaceUserId:f})=>{if(B(u,e,o),U(d,e,o,f),c!==void 0&&me(c,e,l,o),e===``||t===``||n.length===0)return{status:`error`};let p=Y(n,i);if(p.length===0||new Set(n).size>it||p.length>at)throw Error(`Plugin impact exceeds the supported app lookup limit.`);let m=(await J(p,t=>a==null?Be({appId:t,workspaceId:e,signal:o,transport:u}):a.fetchQuery(V({appId:t,workspaceId:e,transport:u})),o)).flatMap(e=>e.plugins);B(u,e,o),U(d,e,o,f);let h=new Map;for(let e of m)h.has(e.id)||h.set(e.id,ct(e));let g=[...h.values()];if(!h.has(t))return{status:`error`};let _=new Map(i??[]),v=$(_),y=new Set(g.flatMap(dt));if(y.size>st)throw Error(`Plugin impact exceeds the supported required-app limit.`);let b=[...y].filter(e=>!v.has(e));if(b.length>0){B(u,e,o),U(d,e,o,f);let t=Array.from({length:Math.ceil(b.length/q)},(e,t)=>b.slice(t*q,(t+1)*q)),n=await J(t,t=>a==null?qe({appIds:t,workspaceId:e,transport:d,workspaceUserId:f,signal:o}):a.fetchQuery(K({appIds:t,workspaceId:e,transport:d,workspaceUserId:f})),o);B(u,e,o),U(d,e,o,f);for(let e of n)e.forEach((e,t)=>_.set(t,e));v=$(_)}let S=await ut({appsById:_,appEnabledById:v,requiredAppIds:y,transport:s,ckTransport:c,workspaceId:e,queryClient:a,signal:o});B(u,e,o),U(d,e,o,f),c!==void 0&&me(c,e,l,o);let C=Z(_),w=new Set(n);for(let e of n){let t=x(e);t!=null&&(!C.has(e)||!C.has(t))&&w.add(t)}let T=Ee({referencedPlugins:g,appEnabledById:$(_,S),targetAppIds:w,targetEnabled:r,selectedPluginId:t}),E=T.complete?{status:`ready`,plugins:T.plugins}:{status:`error`};return ge(E,[...S.values()].some(we)),E},pt=({workspaceId:e,pluginId:t,targetAppIds:n,targetEnabled:r,appsById:i,queryClient:a,referenceTransport:o,contentTransport:s,contentWorkspaceUserId:c=s===void 0?void 0:y()?.normalizedAccountUserId,transport:l=a==null?`legacy`:fe(),ckTransport:u=a==null?`legacy`:_e()})=>{let d=a!=null&&u===`sheep`?y()?.normalizedAccountUserId:void 0,f=Y(n,i),p=[...new Set(n.filter(e=>e!==``))].sort();return O({queryKey:L(`impact`,e,t,r,...p,`lookup`,...f,...a!=null&&l===`sheep`?[`sheep`]:[],...a!=null&&u===`sheep`?[`ck-sheep`,d]:[],...o===`sheep`?[`app-reference-sheep`]:[],...Ze(s,c)),enabled:e!==``&&t!==``&&p.length>0,staleTime:F,structuralSharing:(e,t)=>{let n=ee(e,t);return typeof n==`object`&&n&&ge(n,he(t)),n},queryFn:({signal:n})=>ft({workspaceId:e,pluginId:t,targetAppIds:p,targetEnabled:r,appsById:i,queryClient:a,transport:l,ckTransport:a==null?void 0:u,ckWorkspaceUserId:d,referenceTransport:o,contentTransport:s,contentWorkspaceUserId:c,signal:n})})}}));export{ke as S,B as _,nt as a,z as b,Xe as c,U as d,Ke as f,Le as g,Ve as h,K as i,$e as l,V as m,$ as n,tt as o,W as p,mt as r,G as s,rt as t,Ye as u,Pe as v,Oe as x,Re as y};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    CK as t,
+    F7 as n,
+    FE as r,
+    Fat as i,
+    Fv as a,
+    GE as o,
+    JE as s,
+    Knt as c,
+    L1 as l,
+    NE as u,
+    R7 as d,
+    Rv as f,
+    Wnt as p,
+    Xnt as m,
+    Yit as h,
+    dat as g,
+    g8 as _,
+    h8 as v,
+    j1 as y,
+    kat as b,
+    qE as x,
+    qit as S,
+    sat as C,
+    uat as w,
+    wK as T
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    H as E,
+    J as ee,
+    s as D,
+    w as O
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Twn as te,
+    _Cn as k,
+    bnt as ne,
+    cwn as A,
+    eTn as j,
+    hCn as M,
+    kwn as re,
+    mCn as ie,
+    swn as ae,
+    tTn as N,
+    ynt as oe
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+import {
+    $v as se,
+    Av as P,
+    By as ce,
+    Cy as le,
+    Dv as F,
+    Hy as I,
+    Qv as ue,
+    Ty as de,
+    kv as L
+} from "./c2675c8c-9bs3zsr3vq259es7.js";
+import {
+    c as fe,
+    s as pe
+} from "./46464433-g946xnvlgzfys2yo.js";
+import {
+    a as me,
+    c as he,
+    d as ge,
+    f as _e,
+    l as ve,
+    n as ye,
+    o as be,
+    r as xe,
+    s as Se,
+    t as Ce,
+    u as we
+} from "./bb6515d2-b318rq40s8sslcbs.js";
+import {
+    a as Te,
+    n as Ee
+} from "./1fc9a22c-czfd83azx6f410kt.js";
+var De, Oe, ke = e((() => {
+    s(), De = e => {
+        let t = [],
+            n = new Map,
+            r = new Set;
+        for (let i of e?.values() ?? []) {
+            let e = o(i.id);
+            if (r.has(e)) continue;
+            r.add(e);
+            let a = i.template_id ?? null;
+            t.push({
+                primaryConnector: {
+                    id: i.id,
+                    template_id: a
+                },
+                relatedConnectors: []
+            });
+            let s = i.labels?.sync_only_connector === `true` || i.sync_metadata?.sync_only === !0 || i.sync_metadata?.supports_admin_sync === !0,
+                c = i.status === `ENABLED` ? `enabled` : i.status === `ONLY_ME` || i.status === `DISABLED_BY_ADMIN` && !s ? `disabled` : null;
+            c != null && (n.set(i.id, c), a != null && a !== `` && n.set(a, c))
+        }
+        return {
+            apps: t,
+            statusesByConnectorId: n
+        }
+    }, Oe = e => e.primaryConnector.status === `ONLY_ME` ? `publish` : `enable`
+}));
+
+function Ae() {
+    return p(R, {
+        disableExposureLog: !0
+    })
+}
+
+function je() {
+    return p(R)
+}
+var R, Me = e((() => {
+    m(), R = `87717130`
+}));
+
+function Ne() {
+    if (typeof window > `u`) return !1;
+    let e = new URL(w, window.location.href);
+    return e.origin === window.location.origin && e.pathname.replace(/\/$/, ``) === `/backend-api` && e.search === `` && e.hash === ``
+}
+
+function z() {
+    return Ne() && Ae() ? `sheep` : `legacy`
+}
+
+function B(e, t, n, r) {
+    if (n?.throwIfAborted(), e !== void 0 && (ie(t), e !== z() || r !== void 0 && y()?.normalizedAccountUserId !== r)) throw new E({
+        revert: !0
+    })
+}
+
+function Pe(e, t, n) {
+    return !n || !M(t) || e !== z() ? !1 : !Ne() || (je() ? `sheep` : `legacy`) === e
+}
+async function Fe({
+    appId: e,
+    workspaceId: r,
+    signal: i,
+    limit: a,
+    pageToken: o
+}) {
+    return await A({
+        operation: `app_references`,
+        transport: `sheep`,
+        workspaceId: r,
+        signal: i,
+        request: async s => {
+            B(`sheep`, r, i), Ie ??= new n({
+                baseUrl: w.replace(/\/$/, ``),
+                targetRoutesAreCanonical: !0
+            });
+            let c = await Ie.safeGet(`/plugins/admin/by-app/{app_id}`, {
+                ...s,
+                authOption: C.Required,
+                preserveAccountIdOnRetry: !0,
+                signal: i,
+                additionalHeaders: {
+                    ...t(r),
+                    [S]: `ADMIN_SETTING`,
+                    "x-openai-use-sheep": `1`
+                },
+                parameters: {
+                    path: {
+                        app_id: e
+                    },
+                    query: {
+                        limit: a,
+                        ...o == null ? {} : {
+                            pageToken: o
+                        }
+                    }
+                }
+            });
+            return B(`sheep`, r, i), c
+        }
+    })
+}
+var Ie, Le, Re = e((() => {
+        ae(), v(), g(), h(), d(), m(), l(), T(), D(), k(), Me(), Le = _(z, e => {
+            let t = c();
+            return t.on(`values_updated`, e), () => t.off(`values_updated`, e)
+        }, {
+            name: `adminPluginAppReferenceReadTransport`
+        })
+    })),
+    ze, Be, V, Ve = e((() => {
+        ae(), T(), N(), ne(), g(), i(), h(), D(), P(), Re(), ze = 1e3, Be = async ({
+            appId: e,
+            workspaceId: n,
+            signal: r,
+            transport: i,
+            workspaceUserId: a
+        }) => {
+            let o = new Map,
+                s = new Set,
+                c = null,
+                l = null;
+            for (;;) {
+                B(i, n, r, a);
+                let u = c,
+                    d;
+                try {
+                    d = i === `sheep` ? await Fe({
+                        appId: e,
+                        workspaceId: n,
+                        signal: r,
+                        limit: ze,
+                        pageToken: c
+                    }) : await A({
+                        operation: `app_references`,
+                        transport: `plugin_service`,
+                        workspaceId: n,
+                        signal: r,
+                        request: i => oe.safeGet(`/plugins/admin/by-app/{app_id}`, {
+                            ...i,
+                            authOption: C.Required,
+                            signal: r,
+                            additionalHeaders: {
+                                ...t(n),
+                                [S]: j.ADMIN_SETTING
+                            },
+                            parameters: {
+                                path: {
+                                    app_id: e
+                                },
+                                query: {
+                                    limit: ze,
+                                    ...u == null ? {} : {
+                                        pageToken: u
+                                    }
+                                }
+                            }
+                        })
+                    })
+                } catch (e) {
+                    if (B(i, n, r, a), i !== `sheep` && e instanceof b && e.status === 404 && c == null) return {
+                        plugins: [],
+                        totalCount: 0,
+                        isComplete: !0
+                    };
+                    throw e
+                }
+                if (B(i, n, r, a), !Array.isArray(d.plugins) || d.pagination == null || !Number.isSafeInteger(d.pagination.limit) || d.pagination.limit <= 0 || !Number.isSafeInteger(d.total_count) || d.total_count < 0) throw Error(`Plugin impact references are incomplete or malformed.`);
+                if (l != null && l !== d.total_count) throw Error(`Plugin impact reference counts changed during pagination.`);
+                l = d.total_count;
+                for (let e of d.plugins) o.set(e.id, e);
+                let f = d.pagination.next_page_token ?? null;
+                if (f != null && typeof f != `string`) throw Error(`Plugin impact pagination returned an invalid page token.`);
+                if (f == null) return {
+                    plugins: [...o.values()],
+                    totalCount: l,
+                    isComplete: o.size === l
+                };
+                if (s.has(f)) throw Error(`Plugin impact pagination repeated a page token.`);
+                s.add(f), c = f
+            }
+        }, V = ({
+            appId: e,
+            workspaceId: t,
+            transport: n,
+            workspaceUserId: r
+        }) => O({
+            queryKey: L(`app-references`, t, e, ...r === void 0 ? [] : [{
+                canonicalReferenceActor: r
+            }], ...n === `sheep` ? [`app-reference-sheep`] : []),
+            enabled: t !== `` && e !== ``,
+            staleTime: F,
+            queryFn: ({
+                signal: i
+            }) => Be({
+                appId: e,
+                workspaceId: t,
+                signal: i,
+                workspaceUserId: r,
+                transport: r !== void 0 || n === `sheep` ? n : void 0
+            })
+        })
+    }));
+
+function He() {
+    return p(`241231532`, {
+        disableExposureLog: !0
+    })
+}
+
+function Ue() {
+    return p(`241231532`)
+}
+var We = e((() => {
+    m()
+}));
+
+function Ge() {
+    if (typeof window > `u`) return !1;
+    let e = new URL(w, window.location.href);
+    return e.origin === window.location.origin && e.pathname.replace(/\/$/, ``) === `/backend-api` && e.search === `` && e.hash === ``
+}
+
+function H() {
+    return Ge() && He() ? `sheep` : `legacy`
+}
+
+function U(e, t, n, r) {
+    if (n?.throwIfAborted(), e !== void 0 && (ie(t), e !== H() || r !== void 0 && y()?.normalizedAccountUserId !== r)) throw new E({
+        revert: !0
+    })
+}
+
+function Ke(e, t, n) {
+    return !n || !M(t) || e !== H() ? !1 : !Ge() || (Ue() ? `sheep` : `legacy`) === e
+}
+async function qe({
+    appIds: e,
+    workspaceId: r,
+    transport: i,
+    signal: a,
+    workspaceUserId: o
+}) {
+    let s = o ?? (i === void 0 ? void 0 : y()?.normalizedAccountUserId);
+    if (U(i, r, a, s), e.length === 0) return new Map;
+    let c;
+    if (i !== `sheep`) c = await A({
+        operation: `workspace_content`,
+        transport: `sa_server`,
+        workspaceId: r,
+        signal: a,
+        request: t => te(e, {
+            workspace: !0,
+            accountId: r,
+            productSku: j.ADMIN_SETTING
+        }, t)
+    });
+    else {
+        if (s === void 0) throw new E({
+            revert: !0
+        });
+        Je ??= new n({
+            baseUrl: w.replace(/\/$/, ``),
+            targetRoutesAreCanonical: !0
+        });
+        let i = Je;
+        c = await A({
+            operation: `workspace_content`,
+            transport: `sheep`,
+            workspaceId: r,
+            signal: a,
+            request: async n => {
+                let o = await i.safePost(`/apps/workspace/content`, {
+                    ...n,
+                    authOption: C.Required,
+                    preserveAccountIdOnRetry: !0,
+                    ...a === void 0 ? {} : {
+                        signal: a
+                    },
+                    additionalHeaders: {
+                        ...t(r),
+                        [S]: j.ADMIN_SETTING,
+                        "x-openai-use-sheep": `1`
+                    },
+                    parameters: {
+                        query: {
+                            detail: `full`
+                        }
+                    },
+                    requestBody: {
+                        app_ids: [...e]
+                    }
+                });
+                return new Map(o.apps.map(e => [e.id, e]))
+            }
+        })
+    }
+    return U(i, r, a, s), c
+}
+var Je, Ye, W = e((() => {
+    ae(), re(), N(), v(), l(), g(), h(), d(), m(), T(), D(), k(), We(), Ye = _(H, e => {
+        let t = c();
+        return t.on(`values_updated`, e), () => t.off(`values_updated`, e)
+    }, {
+        name: `adminPluginWorkspaceContentReadTransport`
+    })
+}));
+
+function Xe(e) {
+    if (e == null || e.workspaceUserId == null) return !1;
+    let t = y();
+    return M(e.workspaceId) && t?.getWorkspaceId() === e.workspaceId && t.normalizedAccountUserId === e.workspaceUserId && H() === e.transport
+}
+
+function Ze(e, t) {
+    return e === void 0 ? [] : [{
+        contentTransport: e,
+        workspaceUserId: t
+    }]
+}
+
+function Qe(e, t) {
+    let n = e.at(-1);
+    return typeof n == `object` && !!n && `contentTransport` in n && n.contentTransport === t.transport && `workspaceUserId` in n && n.workspaceUserId === t.workspaceUserId
+}
+
+function $e({
+    queryClient: e,
+    previous: t,
+    next: n
+}) {
+    if (!(t.workspaceId === n.workspaceId && t.transport === n.transport && t.workspaceUserId === n.workspaceUserId))
+        for (let n of [`apps-details`, `impact`]) {
+            let r = {
+                queryKey: L(n, t.workspaceId),
+                predicate: e => Qe(e.queryKey, t)
+            };
+            e.cancelQueries(r), e.invalidateQueries({
+                ...r,
+                refetchType: `none`
+            })
+        }
+}
+var G = e((() => {
+        l(), k(), P(), W()
+    })),
+    et, tt, K, nt = e((() => {
+        a(), r(), N(), v(), l(), g(), i(), m(), D(), ce(), P(), G(), W(), et = () => p(`585473327`), tt = _(et, e => {
+            let t = c();
+            return t.on(`values_updated`, e), () => t.off(`values_updated`, e)
+        }, {
+            name: `nativeAdminPluginAppRecoveryEnabled`
+        }), K = ({
+            appIds: e,
+            workspaceId: t,
+            transport: n,
+            nativeAppDetailsRecoveryEnabled: r = !1,
+            workspaceUserId: i = n === void 0 ? void 0 : y()?.normalizedAccountUserId
+        }) => {
+            let a = [...new Set(e)].sort(),
+                o = r,
+                s = e => {
+                    if (n === `sheep` && i === void 0) throw new E({
+                        revert: !0
+                    });
+                    return qe({
+                        appIds: a,
+                        workspaceId: t,
+                        workspaceUserId: i,
+                        transport: n,
+                        signal: e
+                    })
+                },
+                c = async (e, r) => {
+                    let i = await s(n === `sheep` ? r : void 0);
+                    r.throwIfAborted();
+                    let o = a.filter(e => !i.has(e) && f(e));
+                    if (o.length === 0) return i;
+                    let c;
+                    try {
+                        c = await u(e, o, {
+                            workspaceId: t,
+                            productSku: j.ADMIN_SETTING,
+                            authOption: C.Required,
+                            signal: r,
+                            staleTime: 0
+                        })
+                    } catch (e) {
+                        if (r.throwIfAborted(), e instanceof b) return i;
+                        throw e
+                    }
+                    r.throwIfAborted();
+                    let l = [...c].flatMap(([e, t]) => t.id === e && o.includes(e) ? [
+                        [e, {
+                            ...t,
+                            logo_url_dark: t.logo_url_dark ?? null
+                        }]
+                    ] : []);
+                    return l.length === 0 ? i : new Map([...i, ...l])
+                };
+            return O({
+                queryKey: L(`apps-details`, t, {
+                    appIds: Object.fromEntries(a.map(e => [e, !0])),
+                    ...o ? {
+                        nativeAppDetailsRecovery: !0
+                    } : {}
+                }, ...Ze(n, i)),
+                queryFn: o ? ({
+                    client: e,
+                    signal: t
+                }) => I({
+                    operation: `app_details`,
+                    signal: t,
+                    request: () => c(e, t)
+                }) : n === `sheep` ? ({
+                    signal: e
+                }) => I({
+                    operation: `app_details`,
+                    request: () => s(e)
+                }) : () => I({
+                    operation: `app_details`,
+                    request: () => s()
+                }),
+                enabled: t !== `` && a.length > 0,
+                ...o ? {
+                    refetchOnMount: !0
+                } : {},
+                staleTime: F
+            })
+        }
+    }));
+async function rt(e) {
+    let {
+        contentTransport: t,
+        contentWorkspaceUserId: n
+    } = e;
+    if (n === void 0) throw new E({
+        revert: !0
+    });
+    U(t, e.workspaceId, void 0, n);
+    let r = z(),
+        i = pt({
+            ...e,
+            referenceTransport: r,
+            contentTransport: t,
+            contentWorkspaceUserId: n
+        });
+    if (!Pe(r, e.workspaceId, i.enabled === !0) || !Ke(t, e.workspaceId, i.enabled === !0)) throw new E({
+        revert: !0
+    });
+    let a = i.queryKey.includes(`ck-sheep`) ? `sheep` : `legacy`,
+        o = e.queryClient.getQueryCache().find({
+            queryKey: i.queryKey,
+            exact: !0
+        }),
+        s = e.queryClient.getQueryData(i.queryKey),
+        c = o != null && !o.state.isInvalidated && o.state.dataUpdatedAt !== 0 && Date.now() - o.state.dataUpdatedAt < 6e4 && s != null && he(s),
+        l = await e.queryClient.fetchQuery(i);
+    if (c && !Se(a, e.workspaceId, n)) throw new E({
+        revert: !0
+    });
+    return B(r, e.workspaceId), U(t, e.workspaceId, void 0, n), l
+}
+var it, at, ot, q, st, J, Y, ct, X, Z, Q, lt, $, ut, dt, ft, pt, mt = e((() => {
+    l(), W(), G(), Ve(), Re(), pe(), ve(), s(), le(), ue(), ke(), Te(), D(), xe(), nt(), P(), it = 50, at = 100, ot = 5, q = 100, st = 5e3, J = async (e, t, n) => {
+        let r = Array(e.length),
+            i = 0;
+        return await Promise.all(Array.from({
+            length: Math.min(e.length, ot)
+        }, async () => {
+            for (; i < e.length;) {
+                n.throwIfAborted();
+                let a = i;
+                i += 1, r[a] = await t(e[a])
+            }
+        })), r
+    }, Y = (e, t) => {
+        let n = new Set(e.filter(e => e !== ``)),
+            r = new Set([...t?.values() ?? []].flatMap(e => [e.id, e.template_id].filter(e => e != null && e !== ``))),
+            i = [...t?.values() ?? []].flatMap(e => {
+                let t = [e.id, e.template_id].filter(e => e != null && e !== ``);
+                return t.some(e => [...n].some(t => t === e || o(t) === o(e) && (!r.has(t) || !r.has(e)))) ? t : []
+            });
+        return [...new Set([...n, ...i].flatMap(e => {
+            let t = x(e);
+            return t == null || r.has(e) && r.has(t) ? [e] : [e, t]
+        }))].sort()
+    }, ct = e => ({
+        id: e.id,
+        displayName: e.display_name,
+        canonicalAppId: e.canonical_app_id ?? null,
+        appIds: [...new Set(e.app_ids)],
+        requiredAppIdGroups: e.required_app_id_groups?.map(e => [...new Set(e)]) ?? null,
+        appManifest: e.app_manifest == null ? null : {
+            apps: Object.fromEntries(Object.entries(e.app_manifest.apps).map(([e, t]) => [e, {
+                id: t.id,
+                required: t.required ?? null
+            }]))
+        },
+        interface: {
+            composerIconUrl: e.interface.composer_icon_url ?? null,
+            logoUrl: e.interface.logo_url ?? null
+        }
+    }), X = e => e.status === `DISABLED_BY_ADMIN` && (e.labels?.sync_only_connector === `true` || e.sync_metadata?.sync_only === !0 || e.sync_metadata?.supports_admin_sync === !0), Z = e => new Set([...e.values()].flatMap(e => [e.id, e.template_id].filter(e => e != null && e !== ``))), Q = (e, t) => {
+        let n = new Set([e.id, e.template_id].filter(e => e != null && e !== ``));
+        for (let e of n) {
+            let r = x(e);
+            r != null && !t.has(r) && n.add(r)
+        }
+        return n
+    }, lt = ({
+        app: e,
+        exactEffectiveAppIds: t,
+        hydratedAppsById: n
+    }) => {
+        let r = [e.id, e.template_id].filter(e => e != null && e !== ``);
+        for (let e of r) {
+            let r = n?.get(e);
+            if (r != null) return r;
+            let i = x(e);
+            if (i != null && !t.has(i)) {
+                let e = n?.get(i);
+                if (e != null) return e
+            }
+        }
+    }, $ = (e, t) => {
+        let n = new Map,
+            r = Z(e);
+        for (let i of e.values()) {
+            let {
+                statusesByConnectorId: e
+            } = De(new Map([
+                [i.id, i]
+            ])), a = lt({
+                app: i,
+                exactEffectiveAppIds: r,
+                hydratedAppsById: t
+            }), o = i.sync_metadata?.sync_status, s = X(i) && o?.ksid != null && o.ksid.trim() !== `` && o.ks_status !== `deleting` && o.ks_status !== `deleted`, c = a == null ? s ? `enabled` : e.get(i.id) : se(a) || X(i) && de(a) ? `enabled` : `disabled`, l = Q(i, r);
+            for (let e of l) {
+                let t = n.get(e) ?? {
+                    enabled: !1,
+                    disabled: !1,
+                    unknown: !1
+                };
+                c === `enabled` ? t.enabled = !0 : c === `disabled` ? t.disabled = !0 : t.unknown = !0, n.set(e, t)
+            }
+        }
+        let i = new Map;
+        return n.forEach((e, t) => {
+            e.enabled && !e.disabled ? i.set(t, !0) : e.disabled && !e.enabled && !e.unknown && i.set(t, !1)
+        }), i
+    }, ut = async ({
+        appsById: e,
+        appEnabledById: t,
+        requiredAppIds: n,
+        workspaceId: r,
+        queryClient: i,
+        signal: a,
+        transport: o,
+        ckTransport: s
+    }) => {
+        let c = new Set([...n].filter(e => !t.has(e)));
+        if (c.size === 0) return new Map;
+        let l = y()?.normalizedAccountUserId,
+            u = Z(e),
+            d = new Map;
+        for (let t of e.values()) X(t) && [...Q(t, u)].some(e => c.has(e)) && d.set(t.id, t);
+        let f = await J([...d.values()], async e => {
+            a.throwIfAborted();
+            let t = i == null ? await Ce({
+                appId: e.id,
+                directoryApp: e,
+                workspaceId: r,
+                signal: a
+            }) : await i.fetchQuery(ye({
+                transport: o,
+                ckTransport: s,
+                appId: e.id,
+                directoryApp: e,
+                workspaceId: r
+            }));
+            if (a.throwIfAborted(), i != null && s != null && l != null && !be(s, r, l, t)) throw new E({
+                revert: !0
+            });
+            return [e, t]
+        }, a);
+        return new Map(f.flatMap(([e, t]) => [...Q(e, u)].map(e => [e, t])))
+    }, dt = e => {
+        if (e.requiredAppIdGroups != null) return e.requiredAppIdGroups.flat();
+        if (e.appManifest == null) return e.appIds;
+        let t = new Set,
+            n = new Set;
+        return Object.values(e.appManifest.apps).forEach(e => {
+            e.required === !1 ? t.add(e.id) : n.add(e.id)
+        }), e.appIds.filter(e => !t.has(e) || n.has(e))
+    }, ft = async ({
+        workspaceId: e,
+        pluginId: t,
+        targetAppIds: n,
+        targetEnabled: r,
+        appsById: i,
+        queryClient: a,
+        signal: o,
+        transport: s,
+        ckTransport: c,
+        ckWorkspaceUserId: l,
+        referenceTransport: u,
+        contentTransport: d,
+        contentWorkspaceUserId: f
+    }) => {
+        if (B(u, e, o), U(d, e, o, f), c !== void 0 && me(c, e, l, o), e === `` || t === `` || n.length === 0) return {
+            status: `error`
+        };
+        let p = Y(n, i);
+        if (p.length === 0 || new Set(n).size > it || p.length > at) throw Error(`Plugin impact exceeds the supported app lookup limit.`);
+        let m = (await J(p, t => a == null ? Be({
+            appId: t,
+            workspaceId: e,
+            signal: o,
+            transport: u
+        }) : a.fetchQuery(V({
+            appId: t,
+            workspaceId: e,
+            transport: u
+        })), o)).flatMap(e => e.plugins);
+        B(u, e, o), U(d, e, o, f);
+        let h = new Map;
+        for (let e of m) h.has(e.id) || h.set(e.id, ct(e));
+        let g = [...h.values()];
+        if (!h.has(t)) return {
+            status: `error`
+        };
+        let _ = new Map(i ?? []),
+            v = $(_),
+            y = new Set(g.flatMap(dt));
+        if (y.size > st) throw Error(`Plugin impact exceeds the supported required-app limit.`);
+        let b = [...y].filter(e => !v.has(e));
+        if (b.length > 0) {
+            B(u, e, o), U(d, e, o, f);
+            let t = Array.from({
+                    length: Math.ceil(b.length / q)
+                }, (e, t) => b.slice(t * q, (t + 1) * q)),
+                n = await J(t, t => a == null ? qe({
+                    appIds: t,
+                    workspaceId: e,
+                    transport: d,
+                    workspaceUserId: f,
+                    signal: o
+                }) : a.fetchQuery(K({
+                    appIds: t,
+                    workspaceId: e,
+                    transport: d,
+                    workspaceUserId: f
+                })), o);
+            B(u, e, o), U(d, e, o, f);
+            for (let e of n) e.forEach((e, t) => _.set(t, e));
+            v = $(_)
+        }
+        let S = await ut({
+            appsById: _,
+            appEnabledById: v,
+            requiredAppIds: y,
+            transport: s,
+            ckTransport: c,
+            workspaceId: e,
+            queryClient: a,
+            signal: o
+        });
+        B(u, e, o), U(d, e, o, f), c !== void 0 && me(c, e, l, o);
+        let C = Z(_),
+            w = new Set(n);
+        for (let e of n) {
+            let t = x(e);
+            t != null && (!C.has(e) || !C.has(t)) && w.add(t)
+        }
+        let T = Ee({
+                referencedPlugins: g,
+                appEnabledById: $(_, S),
+                targetAppIds: w,
+                targetEnabled: r,
+                selectedPluginId: t
+            }),
+            E = T.complete ? {
+                status: `ready`,
+                plugins: T.plugins
+            } : {
+                status: `error`
+            };
+        return ge(E, [...S.values()].some(we)), E
+    }, pt = ({
+        workspaceId: e,
+        pluginId: t,
+        targetAppIds: n,
+        targetEnabled: r,
+        appsById: i,
+        queryClient: a,
+        referenceTransport: o,
+        contentTransport: s,
+        contentWorkspaceUserId: c = s === void 0 ? void 0 : y()?.normalizedAccountUserId,
+        transport: l = a == null ? `legacy` : fe(),
+        ckTransport: u = a == null ? `legacy` : _e()
+    }) => {
+        let d = a != null && u === `sheep` ? y()?.normalizedAccountUserId : void 0,
+            f = Y(n, i),
+            p = [...new Set(n.filter(e => e !== ``))].sort();
+        return O({
+            queryKey: L(`impact`, e, t, r, ...p, `lookup`, ...f, ...a != null && l === `sheep` ? [`sheep`] : [], ...a != null && u === `sheep` ? [`ck-sheep`, d] : [], ...o === `sheep` ? [`app-reference-sheep`] : [], ...Ze(s, c)),
+            enabled: e !== `` && t !== `` && p.length > 0,
+            staleTime: F,
+            structuralSharing: (e, t) => {
+                let n = ee(e, t);
+                return typeof n == `object` && n && ge(n, he(t)), n
+            },
+            queryFn: ({
+                signal: n
+            }) => ft({
+                workspaceId: e,
+                pluginId: t,
+                targetAppIds: p,
+                targetEnabled: r,
+                appsById: i,
+                queryClient: a,
+                transport: l,
+                ckTransport: a == null ? void 0 : u,
+                ckWorkspaceUserId: d,
+                referenceTransport: o,
+                contentTransport: s,
+                contentWorkspaceUserId: c,
+                signal: n
+            })
+        })
+    }
+}));
+export {
+    ke as S, B as _, nt as a, z as b, Xe as c, U as d, Ke as f, Le as g, Ve as h, K as i, $e as l, V as m, $ as n, tt as o, W as p, mt as r, G as s, rt as t, Ye as u, Pe as v, Oe as x, Re as y
+};
 //# sourceMappingURL=5c40ce75-bsefnxiw0kzskfwy.js.map

@@ -1,0 +1,24 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    B5t as t,
+    W5t as n,
+    dPt as r,
+    uPt as i
+} from "./conversation-small-ikg0dwuw782klweb.js";
+
+function a(e) {
+    return e.libraryFileId != null && !i(e) ? e.libraryFileId : e.source?.type === `google_drive` && n(e.source.fileId) ? e.source.fileId : null
+}
+
+function o(e) {
+    return a(e) != null
+}
+var s = e((() => {
+    r(), t()
+}));
+export {
+    s as n, o as r, a as t
+};
+//# sourceMappingURL=3cf4f9ac-i6zkbx9oywktzcmg.js.map

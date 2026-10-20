@@ -1,14 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-var t, n = e((() => {
-    t = new Intl.NumberFormat(void 0, {
-        notation: `compact`,
-        maximumSignificantDigits: 3
-    })
-}));
-export {
-    n,
-    t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n=e((()=>{t=new Intl.NumberFormat(void 0,{notation:`compact`,maximumSignificantDigits:3})}));export{n,t};
 //# sourceMappingURL=14cc4891-cg3322196l0g7djn.js.map

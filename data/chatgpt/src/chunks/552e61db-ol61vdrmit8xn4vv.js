@@ -1,2 +1,68 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Pn as t,Tn as n,Vn as r,zn as i}from"./2340486e-komxp8tzs51ny4jj.js";function a(e){"use forget";let t=(0,l.c)(2),{children:n}=e,r;return t[0]===n?r=t[1]:(r=(0,u.jsx)(`div`,{className:`text-token-text-secondary mt-5 text-sm leading-5`,role:`note`,children:(0,u.jsx)(`span`,{children:n})}),t[0]=n,t[1]=r),r}function o(){"use forget";let e=(0,l.c)(1),n;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,u.jsx)(a,{children:(0,u.jsx)(t,{id:`admin.cloudConsoleM3UsersReadOnlyBanner`,defaultMessage:`Users are managed in Cloud Console for this workspace. This page is read only.`})}),e[0]=n):n=e[0],n}function s(){"use forget";let e=(0,l.c)(1),n;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,u.jsx)(a,{children:(0,u.jsx)(t,{id:`admin.cloudConsoleM3GroupsReadOnlyBanner`,defaultMessage:`Groups are managed in Cloud Console for this workspace. This page is read only.`})}),e[0]=n):n=e[0],n}function c(){"use forget";let e=(0,l.c)(1),n;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,u.jsx)(a,{children:(0,u.jsx)(t,{id:`admin.cloudConsoleM3PermissionsRolesReadOnlyBanner`,defaultMessage:`Role permissions and custom roles are managed in Cloud Console for this workspace and are read only here. Other workspace settings remain editable.`})}),e[0]=n):n=e[0],n}var l,u,d=e((()=>{l=n(),i(),u=r()}));export{d as i,c as n,o as r,s as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Pn as t,
+    Tn as n,
+    Vn as r,
+    zn as i
+} from "./2340486e-komxp8tzs51ny4jj.js";
+
+function a(e) {
+    "use forget";
+    let t = (0, l.c)(2),
+        {
+            children: n
+        } = e,
+        r;
+    return t[0] === n ? r = t[1] : (r = (0, u.jsx)(`div`, {
+        className: `text-token-text-secondary mt-5 text-sm leading-5`,
+        role: `note`,
+        children: (0, u.jsx)(`span`, {
+            children: n
+        })
+    }), t[0] = n, t[1] = r), r
+}
+
+function o() {
+    "use forget";
+    let e = (0, l.c)(1),
+        n;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, u.jsx)(a, {
+        children: (0, u.jsx)(t, {
+            id: `admin.cloudConsoleM3UsersReadOnlyBanner`,
+            defaultMessage: `Users are managed in Cloud Console for this workspace. This page is read only.`
+        })
+    }), e[0] = n) : n = e[0], n
+}
+
+function s() {
+    "use forget";
+    let e = (0, l.c)(1),
+        n;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, u.jsx)(a, {
+        children: (0, u.jsx)(t, {
+            id: `admin.cloudConsoleM3GroupsReadOnlyBanner`,
+            defaultMessage: `Groups are managed in Cloud Console for this workspace. This page is read only.`
+        })
+    }), e[0] = n) : n = e[0], n
+}
+
+function c() {
+    "use forget";
+    let e = (0, l.c)(1),
+        n;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, u.jsx)(a, {
+        children: (0, u.jsx)(t, {
+            id: `admin.cloudConsoleM3PermissionsRolesReadOnlyBanner`,
+            defaultMessage: `Role permissions and custom roles are managed in Cloud Console for this workspace and are read only here. Other workspace settings remain editable.`
+        })
+    }), e[0] = n) : n = e[0], n
+}
+var l, u, d = e((() => {
+    l = n(), i(), u = r()
+}));
+export {
+    d as i, c as n, o as r, s as t
+};
 //# sourceMappingURL=552e61db-ol61vdrmit8xn4vv.js.map

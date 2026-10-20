@@ -1,2 +1,94 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{J5 as t,Xy as n,Y5 as r,Zy as i}from"./4813494d-dfpv67hlp00pbohr.js";import{Bn as a,Nn as o,Rn as s,Vn as c,wn as l}from"./2340486e-i7pjxgdhv0bs6apg.js";var u,d,f,p=e((()=>{u=a(),c(),d=e=>(0,u.jsx)(`svg`,{preserveAspectRatio:`none`,overflow:`visible`,style:{display:`block`},width:24,height:9,viewBox:`0 0 24 9`,fill:`none`,xmlns:`http://www.w3.org/2000/svg`,...e,children:(0,u.jsx)(`g`,{id:`Caret`,children:(0,u.jsx)(`path`,{id:`Vector`,d:`M0 0C5.4 0 7.3 2.2 9.6 5.3L10.7 6.8C11.35 7.7 12.65 7.7 13.3 6.8L14.4 5.3C16.7 2.2 18.6 0 24 0H0Z`,fill:`#0D0D0D`})})}),f=d})),m,h,g,_=e((()=>{m=l(),r(),s(),i(),p(),h=a(),g=e=>{"use forget";let r=(0,m.c)(11),{children:i,className:a,label:s,showTooltip:c}=e,l=!c,u;r[0]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,h.jsxs)(`div`,{className:`flex max-w-[min(215px,calc(100dvw-16px))] flex-col items-center opacity-90 group-data-[side=bottom]:flex-col-reverse`,children:[(0,h.jsx)(`div`,{className:`light bg-token-interactive-bg-primary-default text-token-text-inverted-static text-footnote-emphasized shadow-elevation-05 rounded-lg p-2 text-start`,children:(0,h.jsx)(o,{id:`chatgpt.business_profiles.verified.tooltip`,defaultMessage:`OpenAI verified that this profile is managed by an owner or authorized representative.`})}),(0,h.jsx)(f,{"aria-hidden":`true`,className:`group-data-[side=bottom]:rotate-180`})]}),r[0]=u):u=r[0];let d;r[1]===a?d=r[2]:(d=t(`inline-flex shrink-0 align-middle`,a),r[1]=a,r[2]=d);let p=c?0:void 0,g;r[3]!==i||r[4]!==s||r[5]!==d||r[6]!==p?(g=(0,h.jsx)(`span`,{className:d,role:`img`,"aria-label":s,tabIndex:p,children:i}),r[3]=i,r[4]=s,r[5]=d,r[6]=p,r[7]=g):g=r[7];let _;return r[8]!==l||r[9]!==g?(_=(0,h.jsx)(n,{disabled:l,triggerAs:null,usePortal:!1,side:`top`,contentClassName:`group overflow-visible!`,customPaddingClassName:`p-0`,customBorderClassName:`border-0`,customBackgroundColorClassName:`bg-transparent`,label:u,children:g}),r[8]=l,r[9]=g,r[10]=_):_=r[10],_}}));export{_ as n,g as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    J5 as t,
+    Xy as n,
+    Y5 as r,
+    Zy as i
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    Bn as a,
+    Nn as o,
+    Rn as s,
+    Vn as c,
+    wn as l
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+var u, d, f, p = e((() => {
+        u = a(), c(), d = e => (0, u.jsx)(`svg`, {
+            preserveAspectRatio: `none`,
+            overflow: `visible`,
+            style: {
+                display: `block`
+            },
+            width: 24,
+            height: 9,
+            viewBox: `0 0 24 9`,
+            fill: `none`,
+            xmlns: `http://www.w3.org/2000/svg`,
+            ...e,
+            children: (0, u.jsx)(`g`, {
+                id: `Caret`,
+                children: (0, u.jsx)(`path`, {
+                    id: `Vector`,
+                    d: `M0 0C5.4 0 7.3 2.2 9.6 5.3L10.7 6.8C11.35 7.7 12.65 7.7 13.3 6.8L14.4 5.3C16.7 2.2 18.6 0 24 0H0Z`,
+                    fill: `#0D0D0D`
+                })
+            })
+        }), f = d
+    })),
+    m, h, g, _ = e((() => {
+        m = l(), r(), s(), i(), p(), h = a(), g = e => {
+            "use forget";
+            let r = (0, m.c)(11),
+                {
+                    children: i,
+                    className: a,
+                    label: s,
+                    showTooltip: c
+                } = e,
+                l = !c,
+                u;
+            r[0] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, h.jsxs)(`div`, {
+                className: `flex max-w-[min(215px,calc(100dvw-16px))] flex-col items-center opacity-90 group-data-[side=bottom]:flex-col-reverse`,
+                children: [(0, h.jsx)(`div`, {
+                    className: `light bg-token-interactive-bg-primary-default text-token-text-inverted-static text-footnote-emphasized shadow-elevation-05 rounded-lg p-2 text-start`,
+                    children: (0, h.jsx)(o, {
+                        id: `chatgpt.business_profiles.verified.tooltip`,
+                        defaultMessage: `OpenAI verified that this profile is managed by an owner or authorized representative.`
+                    })
+                }), (0, h.jsx)(f, {
+                    "aria-hidden": `true`,
+                    className: `group-data-[side=bottom]:rotate-180`
+                })]
+            }), r[0] = u) : u = r[0];
+            let d;
+            r[1] === a ? d = r[2] : (d = t(`inline-flex shrink-0 align-middle`, a), r[1] = a, r[2] = d);
+            let p = c ? 0 : void 0,
+                g;
+            r[3] !== i || r[4] !== s || r[5] !== d || r[6] !== p ? (g = (0, h.jsx)(`span`, {
+                className: d,
+                role: `img`,
+                "aria-label": s,
+                tabIndex: p,
+                children: i
+            }), r[3] = i, r[4] = s, r[5] = d, r[6] = p, r[7] = g) : g = r[7];
+            let _;
+            return r[8] !== l || r[9] !== g ? (_ = (0, h.jsx)(n, {
+                disabled: l,
+                triggerAs: null,
+                usePortal: !1,
+                side: `top`,
+                contentClassName: `group overflow-visible!`,
+                customPaddingClassName: `p-0`,
+                customBorderClassName: `border-0`,
+                customBackgroundColorClassName: `bg-transparent`,
+                label: u,
+                children: g
+            }), r[8] = l, r[9] = g, r[10] = _) : _ = r[10], _
+        }
+    }));
+export {
+    _ as n, g as t
+};
 //# sourceMappingURL=66f31be8-kfn26dcq4i1og2kv.js.map

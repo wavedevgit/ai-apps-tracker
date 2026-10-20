@@ -1,2 +1,89 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Dz as t,Ik as n,Mk as r,Oz as i,dit as a,uit as o}from"./4813494d-dfpv67hlp00pbohr.js";import{Bn as s,wn as c}from"./2340486e-i7pjxgdhv0bs6apg.js";import{VGn as l,zGn as u}from"./conversation-small-cy5f8pl0g26s86so.js";import{Bp as d,D as f,G as p,Hp as m,O as h,U as g,Vp as _,W as v,b as y,y as b,zp as x}from"./8b34dbc2-k1zgxrtsww83602u.js";import{r as S,t as C}from"./8e42e080-etv2clklbd1blyn3.js";function w(e){"use forget";let n=(0,T.c)(11),{children:i,header:o}=e,s;n[0]===Symbol.for(`react.memo_cache_sentinel`)?(s=r(),n[0]=s):s=n[0];let c=s,l,p;n[1]===Symbol.for(`react.memo_cache_sentinel`)?(l=a()&&(0,E.jsx)(u.Heading,{children:(0,E.jsx)(t,{children:(0,E.jsx)(b,{})})}),p=a()&&(0,E.jsx)(u.Navbar,{children:(0,E.jsx)(d,{children:(0,E.jsx)(f,{navHeader:(0,E.jsx)(g,{}),children:(0,E.jsx)(v,{isProjectsEnabled:c})})})}),n[1]=l,n[2]=p):(l=n[1],p=n[2]);let m;n[3]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,E.jsx)(x,{rightContent:(0,E.jsx)(S,{isMobile:!0}),children:a()&&(0,E.jsx)(_,{})}),n[3]=m):m=n[3];let h;n[4]===o?h=n[5]:(h=(0,E.jsxs)(u.Header,{children:[m,o]}),n[4]=o,n[5]=h);let y;n[6]===i?y=n[7]:(y=(0,E.jsx)(t,{children:i}),n[6]=i,n[7]=y);let C;return n[8]!==h||n[9]!==y?(C=(0,E.jsxs)(u,{children:[l,p,h,y]}),n[8]=h,n[9]=y,n[10]=C):C=n[10],C}var T,E,D=e((()=>{T=c(),p(),h(),n(),y(),l(),i(),m(),o(),C(),E=s()}));export{D as n,w as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Dz as t,
+    Ik as n,
+    Mk as r,
+    Oz as i,
+    dit as a,
+    uit as o
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    Bn as s,
+    wn as c
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    VGn as l,
+    zGn as u
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+import {
+    Bp as d,
+    D as f,
+    G as p,
+    Hp as m,
+    O as h,
+    U as g,
+    Vp as _,
+    W as v,
+    b as y,
+    y as b,
+    zp as x
+} from "./8b34dbc2-k1zgxrtsww83602u.js";
+import {
+    r as S,
+    t as C
+} from "./8e42e080-etv2clklbd1blyn3.js";
+
+function w(e) {
+    "use forget";
+    let n = (0, T.c)(11),
+        {
+            children: i,
+            header: o
+        } = e,
+        s;
+    n[0] === Symbol.for(`react.memo_cache_sentinel`) ? (s = r(), n[0] = s) : s = n[0];
+    let c = s,
+        l, p;
+    n[1] === Symbol.for(`react.memo_cache_sentinel`) ? (l = a() && (0, E.jsx)(u.Heading, {
+        children: (0, E.jsx)(t, {
+            children: (0, E.jsx)(b, {})
+        })
+    }), p = a() && (0, E.jsx)(u.Navbar, {
+        children: (0, E.jsx)(d, {
+            children: (0, E.jsx)(f, {
+                navHeader: (0, E.jsx)(g, {}),
+                children: (0, E.jsx)(v, {
+                    isProjectsEnabled: c
+                })
+            })
+        })
+    }), n[1] = l, n[2] = p) : (l = n[1], p = n[2]);
+    let m;
+    n[3] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, E.jsx)(x, {
+        rightContent: (0, E.jsx)(S, {
+            isMobile: !0
+        }),
+        children: a() && (0, E.jsx)(_, {})
+    }), n[3] = m) : m = n[3];
+    let h;
+    n[4] === o ? h = n[5] : (h = (0, E.jsxs)(u.Header, {
+        children: [m, o]
+    }), n[4] = o, n[5] = h);
+    let y;
+    n[6] === i ? y = n[7] : (y = (0, E.jsx)(t, {
+        children: i
+    }), n[6] = i, n[7] = y);
+    let C;
+    return n[8] !== h || n[9] !== y ? (C = (0, E.jsxs)(u, {
+        children: [l, p, h, y]
+    }), n[8] = h, n[9] = y, n[10] = C) : C = n[10], C
+}
+var T, E, D = e((() => {
+    T = c(), p(), h(), n(), y(), l(), i(), m(), o(), C(), E = s()
+}));
+export {
+    D as n, w as t
+};
 //# sourceMappingURL=fa6172b9-jho1kn4bjptete5g.js.map

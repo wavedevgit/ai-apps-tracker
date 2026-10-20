@@ -1,4 +1,15 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e){return r.test(e)}function n({svgMarkup:e}){return`<!DOCTYPE html>
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e) {
+    return r.test(e)
+}
+
+function n({
+    svgMarkup: e
+}) {
+    return `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -88,5 +99,12 @@ import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e){return r.test(e
       })();
     <\/script>
   </body>
-</html>`}var r,i=e((()=>{r=/^\uFEFF?\s*(?:<\?xml\b[\s\S]*?\?>\s*)?(?:<!doctype\s+svg\b[^>]*>\s*)?<svg\b/i}));export{t as n,i as r,n as t};
+</html>`
+}
+var r, i = e((() => {
+    r = /^\uFEFF?\s*(?:<\?xml\b[\s\S]*?\?>\s*)?(?:<!doctype\s+svg\b[^>]*>\s*)?<svg\b/i
+}));
+export {
+    t as n, i as r, n as t
+};
 //# sourceMappingURL=c01cad0d-kcla04z8lzj7ivsr.js.map

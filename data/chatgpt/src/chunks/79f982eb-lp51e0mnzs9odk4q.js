@@ -1,2 +1,130 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{J5 as t,Xy as n,Y5 as r,Zy as i,dx as a,yx as o}from"./4813494d-dfpv67hlp00pbohr.js";import{Bn as s,Vn as c,wn as l}from"./2340486e-i7pjxgdhv0bs6apg.js";function u(e){return{id:`${e.type??`unknown`}:${e.command}:${e.systemHintType??``}`,title:e.title,disabled:e.disabled,icon:e.icon,secondary:e.secondary,trailing:e.trailing,tooltip:e.tooltip,color:e.color,trailingColor:e.trailingColor,matchText:[e.command,...e.aliases??[]],insertText:e.insertText,onSelect:e.onSelect,shouldRestoreComposerFocusAfterSelect:e.shouldRestoreComposerFocusAfterSelect,noMatchEmpty:e.noMatchEmpty,showFor:e.type===`app`&&e.isConnected?[`at_command`,`slash_command`]:e.type===`project`?[`slash_command`]:[`at_command`],searchParameters:{targets:[e.command,...e.aliases??[],...e.regexMatches??[],e.secondary?`${e.title} ${e.secondary}`:e.title],weight:e.matchWeight},meta:{isApp:e.type===`app`,isConnected:e.isConnected,isHeadPlugin:e.isHeadPlugin,isProject:e.type===`project`,systemHintType:e.systemHintType,mention:e.mention,unifiedComposerMenuCategory:e.type===`gizmo`?`gpts`:void 0}}}var d,f=e((()=>{d=function(e){return e.Gizmo=`gizmo`,e.App=`app`,e.Project=`project`,e}({})}));function p(e){"use forget";let r=(0,m.c)(33),{item:i,isHighlighted:o,onHighlight:s,onClick:c,className:l,titleClassName:u,secondaryClassName:d,secondaryLayout:f}=e,p=(f===void 0?`stacked`:f)===`inline`,g=i.tooltip?.primary,_=i.tooltip?.secondary,v=i.tooltip?.labelTextAlign,y=i.disabled&&`suggestion-item-disabled-tooltip`,b;r[0]===y?b=r[1]:(b=t(`cant-hover:hidden`,y),r[0]=y,r[1]=b);let x=!i.tooltip,S=!p&&i.secondary,C;r[2]!==i.secondary||r[3]!==i.title||r[4]!==d||r[5]!==p||r[6]!==u?(C=p&&(0,h.jsxs)(`div`,{className:`me-24 flex min-w-0 flex-1 items-baseline gap-3`,children:[(0,h.jsx)(`span`,{className:t(`max-w-full min-w-0 shrink-0 truncate`,u),children:i.title}),i.secondary&&(0,h.jsx)(`span`,{className:t(`min-w-0 truncate`,d??`text-token-text-secondary group-data-[highlighted]:text-token-text-primary group-focus-visible:text-token-text-primary group-hover:text-token-text-primary transition-colors`),children:i.secondary})]}),r[2]=i.secondary,r[3]=i.title,r[4]=d,r[5]=p,r[6]=u,r[7]=C):C=r[7];let w;r[8]!==i.title||r[9]!==p||r[10]!==u?(w=!p&&(0,h.jsx)(`span`,{className:t(`break-words`,u),children:i.title}),r[8]=i.title,r[9]=p,r[10]=u,r[11]=w):w=r[11];let T;r[12]!==l||r[13]!==o||r[14]!==i.color||r[15]!==i.disabled||r[16]!==i.icon||r[17]!==i.trailing||r[18]!==i.trailingColor||r[19]!==c||r[20]!==s||r[21]!==p||r[22]!==w||r[23]!==S||r[24]!==C?(T=(0,h.jsxs)(a,{as:`div`,hasManagedFocus:!0,fillContainer:p,highlighted:o,onPointerMove:s,onClick:c,disabled:i.disabled,icon:i.icon,secondary:S,trailing:i.trailing,color:i.color,trailingColor:i.trailingColor,className:l,children:[C,w]}),r[12]=l,r[13]=o,r[14]=i.color,r[15]=i.disabled,r[16]=i.icon,r[17]=i.trailing,r[18]=i.trailingColor,r[19]=c,r[20]=s,r[21]=p,r[22]=w,r[23]=S,r[24]=C,r[25]=T):T=r[25];let E;return r[26]!==T||r[27]!==g||r[28]!==_||r[29]!==v||r[30]!==b||r[31]!==x?(E=(0,h.jsx)(n,{side:`bottom`,align:`start`,label:g,secondaryLabel:_,labelTextAlign:v,contentClassName:b,triggerAs:null,disabled:x,children:T}),r[26]=T,r[27]=g,r[28]=_,r[29]=v,r[30]=b,r[31]=x,r[32]=E):E=r[32],E}var m,h,g=e((()=>{m=l(),o(),i(),r(),c(),h=s()}));export{u as a,f as i,g as n,d as r,p as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    J5 as t,
+    Xy as n,
+    Y5 as r,
+    Zy as i,
+    dx as a,
+    yx as o
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    Bn as s,
+    Vn as c,
+    wn as l
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function u(e) {
+    return {
+        id: `${e.type??`unknown`}:${e.command}:${e.systemHintType??``}`,
+        title: e.title,
+        disabled: e.disabled,
+        icon: e.icon,
+        secondary: e.secondary,
+        trailing: e.trailing,
+        tooltip: e.tooltip,
+        color: e.color,
+        trailingColor: e.trailingColor,
+        matchText: [e.command, ...e.aliases ?? []],
+        insertText: e.insertText,
+        onSelect: e.onSelect,
+        shouldRestoreComposerFocusAfterSelect: e.shouldRestoreComposerFocusAfterSelect,
+        noMatchEmpty: e.noMatchEmpty,
+        showFor: e.type === `app` && e.isConnected ? [`at_command`, `slash_command`] : e.type === `project` ? [`slash_command`] : [`at_command`],
+        searchParameters: {
+            targets: [e.command, ...e.aliases ?? [], ...e.regexMatches ?? [], e.secondary ? `${e.title} ${e.secondary}` : e.title],
+            weight: e.matchWeight
+        },
+        meta: {
+            isApp: e.type === `app`,
+            isConnected: e.isConnected,
+            isHeadPlugin: e.isHeadPlugin,
+            isProject: e.type === `project`,
+            systemHintType: e.systemHintType,
+            mention: e.mention,
+            unifiedComposerMenuCategory: e.type === `gizmo` ? `gpts` : void 0
+        }
+    }
+}
+var d, f = e((() => {
+    d = function(e) {
+        return e.Gizmo = `gizmo`, e.App = `app`, e.Project = `project`, e
+    }({})
+}));
+
+function p(e) {
+    "use forget";
+    let r = (0, m.c)(33),
+        {
+            item: i,
+            isHighlighted: o,
+            onHighlight: s,
+            onClick: c,
+            className: l,
+            titleClassName: u,
+            secondaryClassName: d,
+            secondaryLayout: f
+        } = e,
+        p = (f === void 0 ? `stacked` : f) === `inline`,
+        g = i.tooltip?.primary,
+        _ = i.tooltip?.secondary,
+        v = i.tooltip?.labelTextAlign,
+        y = i.disabled && `suggestion-item-disabled-tooltip`,
+        b;
+    r[0] === y ? b = r[1] : (b = t(`cant-hover:hidden`, y), r[0] = y, r[1] = b);
+    let x = !i.tooltip,
+        S = !p && i.secondary,
+        C;
+    r[2] !== i.secondary || r[3] !== i.title || r[4] !== d || r[5] !== p || r[6] !== u ? (C = p && (0, h.jsxs)(`div`, {
+        className: `me-24 flex min-w-0 flex-1 items-baseline gap-3`,
+        children: [(0, h.jsx)(`span`, {
+            className: t(`max-w-full min-w-0 shrink-0 truncate`, u),
+            children: i.title
+        }), i.secondary && (0, h.jsx)(`span`, {
+            className: t(`min-w-0 truncate`, d ?? `text-token-text-secondary group-data-[highlighted]:text-token-text-primary group-focus-visible:text-token-text-primary group-hover:text-token-text-primary transition-colors`),
+            children: i.secondary
+        })]
+    }), r[2] = i.secondary, r[3] = i.title, r[4] = d, r[5] = p, r[6] = u, r[7] = C) : C = r[7];
+    let w;
+    r[8] !== i.title || r[9] !== p || r[10] !== u ? (w = !p && (0, h.jsx)(`span`, {
+        className: t(`break-words`, u),
+        children: i.title
+    }), r[8] = i.title, r[9] = p, r[10] = u, r[11] = w) : w = r[11];
+    let T;
+    r[12] !== l || r[13] !== o || r[14] !== i.color || r[15] !== i.disabled || r[16] !== i.icon || r[17] !== i.trailing || r[18] !== i.trailingColor || r[19] !== c || r[20] !== s || r[21] !== p || r[22] !== w || r[23] !== S || r[24] !== C ? (T = (0, h.jsxs)(a, {
+        as: `div`,
+        hasManagedFocus: !0,
+        fillContainer: p,
+        highlighted: o,
+        onPointerMove: s,
+        onClick: c,
+        disabled: i.disabled,
+        icon: i.icon,
+        secondary: S,
+        trailing: i.trailing,
+        color: i.color,
+        trailingColor: i.trailingColor,
+        className: l,
+        children: [C, w]
+    }), r[12] = l, r[13] = o, r[14] = i.color, r[15] = i.disabled, r[16] = i.icon, r[17] = i.trailing, r[18] = i.trailingColor, r[19] = c, r[20] = s, r[21] = p, r[22] = w, r[23] = S, r[24] = C, r[25] = T) : T = r[25];
+    let E;
+    return r[26] !== T || r[27] !== g || r[28] !== _ || r[29] !== v || r[30] !== b || r[31] !== x ? (E = (0, h.jsx)(n, {
+        side: `bottom`,
+        align: `start`,
+        label: g,
+        secondaryLabel: _,
+        labelTextAlign: v,
+        contentClassName: b,
+        triggerAs: null,
+        disabled: x,
+        children: T
+    }), r[26] = T, r[27] = g, r[28] = _, r[29] = v, r[30] = b, r[31] = x, r[32] = E) : E = r[32], E
+}
+var m, h, g = e((() => {
+    m = l(), o(), i(), r(), c(), h = s()
+}));
+export {
+    u as a, f as i, g as n, d as r, p as t
+};
 //# sourceMappingURL=79f982eb-lp51e0mnzs9odk4q.js.map

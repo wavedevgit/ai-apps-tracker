@@ -1,3 +1,905 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/97f4f1ec-oro335oa9ekhqzcw.js","assets/f025431a-ehagpvg3m4e1cduv.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Kt as n,Vn as r,cn as i,ln as a}from"./2340486e-oc6d2eodbcrmxur3.js";var o,s,c=e((()=>{o=t(r()),r(),k(),s=o.createContext(null)}));function l(e,t){let n=Array.isArray(e)?e[0]:e?e.x:0,r=Array.isArray(e)?e[1]:e?e.y:0,i=Array.isArray(t)?t[0]:t?t.x:0,a=Array.isArray(t)?t[1]:t?t.y:0;return n===i&&r===a}function u(e,t){if(e===t)return!0;if(!e||!t)return!1;if(Array.isArray(e)){if(!Array.isArray(t)||e.length!==t.length)return!1;for(let n=0;n<e.length;n++)if(!u(e[n],t[n]))return!1;return!0}else if(Array.isArray(t))return!1;if(typeof e==`object`&&typeof t==`object`){let n=Object.keys(e),r=Object.keys(t);if(n.length!==r.length)return!1;for(let r of n)if(!t.hasOwnProperty(r)||!u(e[r],t[r]))return!1;return!0}return!1}var d=e((()=>{}));function f(e){let t=e.clone();return t.pixelsToGLUnits=e.pixelsToGLUnits,t}function p(e,t){if(!e.getProjection)return;let n=e.getProjection();u(n,t.getProjection())||t.setProjection(n)}function m(e){return{longitude:e.center.lng,latitude:e.center.lat,zoom:e.zoom,pitch:e.pitch,bearing:e.bearing,padding:e.padding}}function h(e,t){let n=t.viewState||t,r=!1;if(`longitude`in n&&`latitude`in n){let t=e.center;e.center=new t.constructor(n.longitude,n.latitude),r||=t!==e.center}if(`zoom`in n){let t=e.zoom;e.zoom=n.zoom,r||=t!==e.zoom}if(`bearing`in n){let t=e.bearing;e.bearing=n.bearing,r||=t!==e.bearing}if(`pitch`in n){let t=e.pitch;e.pitch=n.pitch,r||=t!==e.pitch}return n.padding&&!e.isPaddingEqual(n.padding)&&(r=!0,e.padding=n.padding),r}var ee=e((()=>{d()}));function g(e){if(!e)return null;if(typeof e==`string`||(`toJS`in e&&(e=e.toJS()),!e.layers))return e;let t={};for(let n of e.layers)t[n.id]=n;let n=e.layers.map(e=>{let n=null;`interactive`in e&&(n=Object.assign({},e),delete n.interactive);let r=t[e.ref];if(r){n||=Object.assign({},e),delete n.ref;for(let e of _)e in r&&(n[e]=r[e])}return n||e});return{...e,layers:n}}var _,te=e((()=>{_=[`type`,`source`,`source-layer`,`minzoom`,`maxzoom`,`filter`,`layout`]}));function ne(){let e=null;if(typeof location<`u`){let t=/access_token=([^&\/]*)/.exec(location.search);e=t&&t[1]}try{e||={}.MapboxAccessToken}catch{}try{e||={}.REACT_APP_MAPBOX_ACCESS_TOKEN}catch{}return e}var v,y,b,x,re,ie,S,ae=e((()=>{ee(),te(),d(),v={version:8,sources:{},layers:[]},y={mousedown:`onMouseDown`,mouseup:`onMouseUp`,mouseover:`onMouseOver`,mousemove:`onMouseMove`,click:`onClick`,dblclick:`onDblClick`,mouseenter:`onMouseEnter`,mouseleave:`onMouseLeave`,mouseout:`onMouseOut`,contextmenu:`onContextMenu`,touchstart:`onTouchStart`,touchend:`onTouchEnd`,touchmove:`onTouchMove`,touchcancel:`onTouchCancel`},b={movestart:`onMoveStart`,move:`onMove`,moveend:`onMoveEnd`,dragstart:`onDragStart`,drag:`onDrag`,dragend:`onDragEnd`,zoomstart:`onZoomStart`,zoom:`onZoom`,zoomend:`onZoomEnd`,rotatestart:`onRotateStart`,rotate:`onRotate`,rotateend:`onRotateEnd`,pitchstart:`onPitchStart`,pitch:`onPitch`,pitchend:`onPitchEnd`},x={wheel:`onWheel`,boxzoomstart:`onBoxZoomStart`,boxzoomend:`onBoxZoomEnd`,boxzoomcancel:`onBoxZoomCancel`,resize:`onResize`,load:`onLoad`,render:`onRender`,idle:`onIdle`,remove:`onRemove`,data:`onData`,styledata:`onStyleData`,sourcedata:`onSourceData`,error:`onError`},re=[`minZoom`,`maxZoom`,`minPitch`,`maxPitch`,`maxBounds`,`projection`,`renderWorldCopies`],ie=[`scrollZoom`,`boxZoom`,`dragRotate`,`dragPan`,`keyboard`,`doubleClickZoom`,`touchZoomRotate`,`touchPitch`],S=class e{constructor(e,t,n){this._map=null,this._internalUpdate=!1,this._inRender=!1,this._hoveredFeatures=null,this._deferredEvents={move:!1,zoom:!1,pitch:!1,rotate:!1},this._onEvent=e=>{let t=this.props[x[e.type]];t?t(e):e.type===`error`&&console.error(e.error)},this._onPointerEvent=e=>{(e.type===`mousemove`||e.type===`mouseout`)&&this._updateHover(e);let t=this.props[y[e.type]];t&&(this.props.interactiveLayerIds&&e.type!==`mouseover`&&e.type!==`mouseout`&&(e.features=this._hoveredFeatures||this._queryRenderedFeatures(e.point)),t(e),delete e.features)},this._onCameraEvent=e=>{if(!this._internalUpdate){let t=this.props[b[e.type]];t&&t(e)}e.type in this._deferredEvents&&(this._deferredEvents[e.type]=!1)},this._MapClass=e,this.props=t,this._initialize(n)}get map(){return this._map}get transform(){return this._renderTransform}setProps(e){let t=this.props;this.props=e;let n=this._updateSettings(e,t);n&&this._createShadowTransform(this._map);let r=this._updateSize(e),i=this._updateViewState(e,!0);this._updateStyle(e,t),this._updateStyleComponents(e,t),this._updateHandlers(e,t),(n||r||i&&!this._map.isMoving())&&this.redraw()}static reuse(t,n){let r=e.savedMaps.pop();if(!r)return null;let i=r.map,a=i.getContainer();for(n.className=a.className;a.childNodes.length>0;)n.appendChild(a.childNodes[0]);i._container=n;let o=i._resizeObserver;o&&(o.disconnect(),o.observe(n)),r.setProps({...t,styleDiffing:!1}),i.resize();let{initialViewState:s}=t;return s&&(s.bounds?i.fitBounds(s.bounds,{...s.fitBoundsOptions,duration:0}):r._updateViewState(s,!1)),i.isStyleLoaded()?i.fire(`load`):i.once(`styledata`,()=>i.fire(`load`)),i._update(),r}_initialize(e){let{props:t}=this,{mapStyle:n=v}=t,r={...t,...t.initialViewState,accessToken:t.mapboxAccessToken||ne()||null,container:e,style:g(n)},i=r.initialViewState||r.viewState||r;if(Object.assign(r,{center:[i.longitude||0,i.latitude||0],zoom:i.zoom||0,pitch:i.pitch||0,bearing:i.bearing||0}),t.gl){let e=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=()=>(HTMLCanvasElement.prototype.getContext=e,t.gl)}let a=new this._MapClass(r);i.padding&&a.setPadding(i.padding),t.cursor&&(a.getCanvas().style.cursor=t.cursor),this._createShadowTransform(a);let o=a._render;a._render=e=>{this._inRender=!0,o.call(a,e),this._inRender=!1};let s=a._renderTaskQueue.run;a._renderTaskQueue.run=e=>{s.call(a._renderTaskQueue,e),this._onBeforeRepaint()},a.on(`render`,()=>this._onAfterRepaint());let c=a.fire;a.fire=this._fireEvent.bind(this,c),a.on(`resize`,()=>{this._renderTransform.resize(a.transform.width,a.transform.height)}),a.on(`styledata`,()=>{this._updateStyleComponents(this.props,{}),p(a.transform,this._renderTransform)}),a.on(`sourcedata`,()=>this._updateStyleComponents(this.props,{}));for(let e in y)a.on(e,this._onPointerEvent);for(let e in b)a.on(e,this._onCameraEvent);for(let e in x)a.on(e,this._onEvent);this._map=a}recycle(){this.map.getContainer().querySelector(`[mapboxgl-children]`)?.remove(),e.savedMaps.push(this)}destroy(){this._map.remove()}redraw(){let e=this._map;!this._inRender&&e.style&&(e._frame&&=(e._frame.cancel(),null),e._render())}_createShadowTransform(e){let t=f(e.transform);e.painter.transform=t,this._renderTransform=t}_updateSize(e){let{viewState:t}=e;if(t){let e=this._map;if(t.width!==e.transform.width||t.height!==e.transform.height)return e.resize(),!0}return!1}_updateViewState(e,t){if(this._internalUpdate)return!1;let n=this._map,r=this._renderTransform,{zoom:i,pitch:a,bearing:o}=r,s=n.isMoving();s&&(r.cameraElevationReference=`sea`);let c=h(r,{...m(n.transform),...e});if(s&&(r.cameraElevationReference=`ground`),c&&t){let e=this._deferredEvents;e.move=!0,e.zoom||=i!==r.zoom,e.rotate||=o!==r.bearing,e.pitch||=a!==r.pitch}return s||h(n.transform,e),c}_updateSettings(e,t){let n=this._map,r=!1;for(let i of re)i in e&&!u(e[i],t[i])&&(r=!0,n[`set${i[0].toUpperCase()}${i.slice(1)}`]?.call(n,e[i]));return r}_updateStyle(e,t){if(e.cursor!==t.cursor&&(this._map.getCanvas().style.cursor=e.cursor||``),e.mapStyle!==t.mapStyle){let{mapStyle:t=v,styleDiffing:n=!0}=e,r={diff:n};return`localIdeographFontFamily`in e&&(r.localIdeographFontFamily=e.localIdeographFontFamily),this._map.setStyle(g(t),r),!0}return!1}_updateStyleComponents(e,t){let n=this._map,r=!1;return n.isStyleLoaded()&&(`light`in e&&n.setLight&&!u(e.light,t.light)&&(r=!0,n.setLight(e.light)),`fog`in e&&n.setFog&&!u(e.fog,t.fog)&&(r=!0,n.setFog(e.fog)),`terrain`in e&&n.setTerrain&&!u(e.terrain,t.terrain)&&(!e.terrain||n.getSource(e.terrain.source))&&(r=!0,n.setTerrain(e.terrain))),r}_updateHandlers(e,t){let n=this._map,r=!1;for(let i of ie){let a=e[i]??!0;u(a,t[i]??!0)||(r=!0,a?n[i].enable(a):n[i].disable())}return r}_queryRenderedFeatures(e){let t=this._map,n=t.transform,{interactiveLayerIds:r=[]}=this.props;try{return t.transform=this._renderTransform,t.queryRenderedFeatures(e,{layers:r.filter(t.getLayer.bind(t))})}catch{return[]}finally{t.transform=n}}_updateHover(e){let{props:t}=this;if(t.interactiveLayerIds&&(t.onMouseMove||t.onMouseEnter||t.onMouseLeave)){let t=e.type,n=this._hoveredFeatures?.length>0,r=this._queryRenderedFeatures(e.point),i=r.length>0;!i&&n&&(e.type=`mouseleave`,this._onPointerEvent(e)),this._hoveredFeatures=r,i&&!n&&(e.type=`mouseenter`,this._onPointerEvent(e)),e.type=t}else this._hoveredFeatures=null}_fireEvent(e,t,n){let r=this._map,i=r.transform,a=typeof t==`string`?t:t.type;return a===`move`&&this._updateViewState(this.props,!1),a in b&&(typeof t==`object`&&(t.viewState=m(i)),this._map.isMoving())?(r.transform=this._renderTransform,e.call(r,t,n),r.transform=i,r):(e.call(r,t,n),r)}_onBeforeRepaint(){let e=this._map;this._internalUpdate=!0;for(let t in this._deferredEvents)this._deferredEvents[t]&&e.fire(t);this._internalUpdate=!1;let t=this._map.transform;e.transform=this._renderTransform,this._onAfterRepaint=()=>{p(this._renderTransform,t),e.transform=t}}},S.savedMaps=[]}));function oe(e){if(!e)return null;let t=e.map,n={getMap:()=>t,getCenter:()=>e.transform.center,getZoom:()=>e.transform.zoom,getBearing:()=>e.transform.bearing,getPitch:()=>e.transform.pitch,getPadding:()=>e.transform.padding,getBounds:()=>e.transform.getBounds(),project:n=>{let r=t.transform;t.transform=e.transform;let i=t.project(n);return t.transform=r,i},unproject:n=>{let r=t.transform;t.transform=e.transform;let i=t.unproject(n);return t.transform=r,i},queryTerrainElevation:(n,r)=>{let i=t.transform;t.transform=e.transform;let a=t.queryTerrainElevation(n,r);return t.transform=i,a},queryRenderedFeatures:(n,r)=>{let i=t.transform;t.transform=e.transform;let a=t.queryRenderedFeatures(n,r);return t.transform=i,a}};for(let e of se(t))!(e in n)&&!ce.includes(e)&&(n[e]=t[e].bind(t));return n}function se(e){let t=new Set,n=e;for(;n;){for(let r of Object.getOwnPropertyNames(n))r[0]!==`_`&&typeof e[r]==`function`&&r!==`fire`&&r!==`setEventedParent`&&t.add(r);n=Object.getPrototypeOf(n)}return Array.from(t)}var ce,le=e((()=>{ce=[`setMaxBounds`,`setMinZoom`,`setMaxZoom`,`setMinPitch`,`setMaxPitch`,`setRenderWorldCopies`,`setProjection`,`setStyle`,`addSource`,`removeSource`,`addLayer`,`removeLayer`,`setLayerZoomRange`,`setFilter`,`setPaintProperty`,`setLayoutProperty`,`setLight`,`setTerrain`,`setFog`,`remove`]})),C,w,ue=e((()=>{C=t(r()),w=typeof document<`u`?C.useLayoutEffect:C.useEffect}));function de(e,t){for(let n of T)n in t&&(e[n]=t[n]);let{RTLTextPlugin:n=`https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js`}=t;n&&e.getRTLTextPluginStatus&&e.getRTLTextPluginStatus()===`unavailable`&&e.setRTLTextPlugin(n,e=>{e&&console.error(e)},!0)}var T,fe=e((()=>{T=[`baseApiUrl`,`maxParallelImageRequests`,`workerClass`,`workerCount`,`workerUrl`]}));function pe(e,t,n){let r=(0,D.useContext)(s),[i,a]=(0,D.useState)(null),o=(0,D.useRef)(),{current:c}=(0,D.useRef)({mapLib:null,map:null});(0,D.useEffect)(()=>{let t=e.mapLib,i=!0,s;return Promise.resolve(t||n).then(t=>{if(!i)return;if(!t)throw Error(`Invalid mapLib`);let n=`Map`in t?t:t.default;if(!n.Map)throw Error(`Invalid mapLib`);if(de(n,e),!n.supported||n.supported(e))e.reuseMaps&&(s=S.reuse(e,o.current)),s||=new S(n.Map,e,o.current),c.map=oe(s),c.mapLib=n,a(s),r?.onMapMount(c.map,e.id);else throw Error(`Map is not supported by this browser`)}).catch(t=>{let{onError:n}=e;n?n({type:`error`,target:null,originalEvent:null,error:t}):console.error(t)}),()=>{i=!1,s&&(r?.onMapUnmount(e.id),e.reuseMaps?s.recycle():s.destroy())}},[]),w(()=>{i&&i.setProps(e)}),(0,D.useImperativeHandle)(t,()=>c.map,[i]);let l=(0,D.useMemo)(()=>({position:`relative`,width:`100%`,height:`100%`,...e.style}),[e.style]);return E.createElement(`div`,{id:e.id,ref:o,style:l},i&&E.createElement(O.Provider,{value:c},E.createElement(`div`,{"mapboxgl-children":``,style:{height:`100%`}},e.children)))}var E,D,O,k=e((()=>{E=t(r()),D=t(r()),c(),ae(),le(),ue(),fe(),O=E.createContext(null)}));function A(e,t){if(!e||!t)return;let n=e.style;for(let e in t){let r=t[e];Number.isFinite(r)&&!j.test(e)?n[e]=`${r}px`:n[e]=r}}var j,M=e((()=>{j=/box|flex|grid|column|lineHeight|fontWeight|opacity|order|tabSize|zIndex/}));function me(e,t){let{map:n,mapLib:r}=(0,F.useContext)(O),i=(0,F.useRef)({props:e});i.current.props=e;let a=(0,F.useMemo)(()=>{let t=!1;N.Children.forEach(e.children,e=>{e&&(t=!0)});let n={...e,element:t?document.createElement(`div`):null},o=new r.Marker(n);return o.setLngLat([e.longitude,e.latitude]),o.getElement().addEventListener(`click`,e=>{var t,n;(n=(t=i.current.props).onClick)==null||n.call(t,{type:`click`,target:o,originalEvent:e})}),o.on(`dragstart`,e=>{var t,n;let r=e;r.lngLat=a.getLngLat(),(n=(t=i.current.props).onDragStart)==null||n.call(t,r)}),o.on(`drag`,e=>{var t,n;let r=e;r.lngLat=a.getLngLat(),(n=(t=i.current.props).onDrag)==null||n.call(t,r)}),o.on(`dragend`,e=>{var t,n;let r=e;r.lngLat=a.getLngLat(),(n=(t=i.current.props).onDragEnd)==null||n.call(t,r)}),o},[]);(0,F.useEffect)(()=>(a.addTo(n.getMap()),()=>{a.remove()}),[]);let{longitude:o,latitude:s,offset:c,style:u,draggable:d=!1,popup:f=null,rotation:p=0,rotationAlignment:m=`auto`,pitchAlignment:h=`auto`}=e;return(0,F.useEffect)(()=>{A(a.getElement(),u)},[u]),(0,F.useImperativeHandle)(t,()=>a,[]),(a.getLngLat().lng!==o||a.getLngLat().lat!==s)&&a.setLngLat([o,s]),c&&!l(a.getOffset(),c)&&a.setOffset(c),a.isDraggable()!==d&&a.setDraggable(d),a.getRotation()!==p&&a.setRotation(p),a.getRotationAlignment()!==m&&a.setRotationAlignment(m),a.getPitchAlignment()!==h&&a.setPitchAlignment(h),a.getPopup()!==f&&a.setPopup(f),(0,P.createPortal)(e.children,a.getElement())}var N,P,F,I,he=e((()=>{N=t(r()),P=t(n()),F=t(r()),M(),k(),d(),I=(0,F.memo)((0,F.forwardRef)(me))}));function L(e){return new Set(e?e.trim().split(/\s+/):[])}function ge(e,t){let{map:n,mapLib:r}=(0,z.useContext)(O),i=(0,z.useMemo)(()=>document.createElement(`div`),[]),a=(0,z.useRef)({props:e});a.current.props=e;let o=(0,z.useMemo)(()=>{let t={...e},n=new r.Popup(t);return n.setLngLat([e.longitude,e.latitude]),n.once(`open`,e=>{var t,n;(n=(t=a.current.props).onOpen)==null||n.call(t,e)}),n},[]);if((0,z.useEffect)(()=>{let e=e=>{var t,n;(n=(t=a.current.props).onClose)==null||n.call(t,e)};return o.on(`close`,e),o.setDOMContent(i).addTo(n.getMap()),()=>{o.off(`close`,e),o.isOpen()&&o.remove()}},[]),(0,z.useEffect)(()=>{A(o.getElement(),e.style)},[e.style]),(0,z.useImperativeHandle)(t,()=>o,[]),o.isOpen()&&((o.getLngLat().lng!==e.longitude||o.getLngLat().lat!==e.latitude)&&o.setLngLat([e.longitude,e.latitude]),e.offset&&!u(o.options.offset,e.offset)&&o.setOffset(e.offset),(o.options.anchor!==e.anchor||o.options.maxWidth!==e.maxWidth)&&(o.options.anchor=e.anchor,o.setMaxWidth(e.maxWidth)),o.options.className!==e.className)){let t=L(o.options.className),n=L(e.className);for(let e of t)n.has(e)||o.removeClassName(e);for(let e of n)t.has(e)||o.addClassName(e);o.options.className=e.className}return(0,R.createPortal)(e.children,i)}var R,z,_e=e((()=>{R=t(n()),z=t(r()),M(),k(),d(),(0,z.memo)((0,z.forwardRef)(ge))}));function B(e,t,n,r){let i=(0,V.useContext)(O),a=(0,V.useMemo)(()=>e(i),[]);return(0,V.useEffect)(()=>{let e=r||n||t,o=typeof t==`function`&&typeof n==`function`?t:null,s=typeof n==`function`?n:typeof t==`function`?t:null,{map:c}=i;return c.hasControl(a)||(c.addControl(a,e?.position),o&&o(i)),()=>{s&&s(i),c.hasControl(a)&&c.removeControl(a)}},[]),a}var V,H=e((()=>{V=t(r()),k()}));function ve(e){let t=B(({mapLib:t})=>new t.AttributionControl(e),{position:e.position});return(0,U.useEffect)(()=>{A(t._container,e.style)},[e.style]),null}var U,ye=e((()=>{U=t(r()),M(),H(),(0,U.memo)(ve)}));function be(e){let t=B(({mapLib:t})=>new t.FullscreenControl({container:e.containerId&&document.getElementById(e.containerId)}),{position:e.position});return(0,W.useEffect)(()=>{A(t._controlContainer,e.style)},[e.style]),null}var W,xe=e((()=>{W=t(r()),M(),H(),(0,W.memo)(be)}));function Se(e,t){let n=(0,G.useRef)({props:e}),r=B(({mapLib:t})=>{let r=new t.GeolocateControl(e),i=r._setupUI;return r._setupUI=e=>{r._container.hasChildNodes()||i(e)},r.on(`geolocate`,e=>{var t,r;(r=(t=n.current.props).onGeolocate)==null||r.call(t,e)}),r.on(`error`,e=>{var t,r;(r=(t=n.current.props).onError)==null||r.call(t,e)}),r.on(`outofmaxbounds`,e=>{var t,r;(r=(t=n.current.props).onOutOfMaxBounds)==null||r.call(t,e)}),r.on(`trackuserlocationstart`,e=>{var t,r;(r=(t=n.current.props).onTrackUserLocationStart)==null||r.call(t,e)}),r.on(`trackuserlocationend`,e=>{var t,r;(r=(t=n.current.props).onTrackUserLocationEnd)==null||r.call(t,e)}),r},{position:e.position});return n.current.props=e,(0,G.useImperativeHandle)(t,()=>r,[]),(0,G.useEffect)(()=>{A(r._container,e.style)},[e.style]),null}var G,Ce=e((()=>{G=t(r()),M(),H(),(0,G.memo)((0,G.forwardRef)(Se))}));function we(e){let t=B(({mapLib:t})=>new t.NavigationControl(e),{position:e.position});return(0,K.useEffect)(()=>{A(t._container,e.style)},[e.style]),null}var K,Te,Ee=e((()=>{K=t(r()),M(),H(),Te=(0,K.memo)(we)}));function De(e){let t=B(({mapLib:t})=>new t.ScaleControl(e),{position:e.position}),n=(0,q.useRef)(e),r=n.current;n.current=e;let{style:i}=e;return e.maxWidth!==void 0&&e.maxWidth!==r.maxWidth&&(t.options.maxWidth=e.maxWidth),e.unit!==void 0&&e.unit!==r.unit&&t.setUnit(e.unit),(0,q.useEffect)(()=>{A(t._container,i)},[i]),null}var q,Oe=e((()=>{q=t(r()),M(),H(),(0,q.memo)(De)}));function J(e,t){if(!e)throw Error(t)}var ke=e((()=>{}));function Ae(e,t,n,r){if(J(n.id===r.id,`layer id changed`),J(n.type===r.type,`layer type changed`),n.type===`custom`||r.type===`custom`)return;let{layout:i={},paint:a={},filter:o,minzoom:s,maxzoom:c,beforeId:l}=n;if(l!==r.beforeId&&e.moveLayer(t,l),i!==r.layout){let n=r.layout||{};for(let r in i)u(i[r],n[r])||e.setLayoutProperty(t,r,i[r]);for(let r in n)i.hasOwnProperty(r)||e.setLayoutProperty(t,r,void 0)}if(a!==r.paint){let n=r.paint||{};for(let r in a)u(a[r],n[r])||e.setPaintProperty(t,r,a[r]);for(let r in n)a.hasOwnProperty(r)||e.setPaintProperty(t,r,void 0)}u(o,r.filter)||e.setFilter(t,o),(s!==r.minzoom||c!==r.maxzoom)&&e.setLayerZoomRange(t,s,c)}function je(e,t,n){if(e.style&&e.style._loaded&&(!(`source`in n)||e.getSource(n.source))){let r={...n,id:t};delete r.beforeId,e.addLayer(r,n.beforeId)}}function Me(e){let t=(0,Y.useContext)(O).map.getMap(),n=(0,Y.useRef)(e),[,r]=(0,Y.useState)(0),i=(0,Y.useMemo)(()=>e.id||`jsx-layer-${Ne++}`,[]);if((0,Y.useEffect)(()=>{if(t){let e=()=>r(e=>e+1);return t.on(`styledata`,e),e(),()=>{t.off(`styledata`,e),t.style&&t.style._loaded&&t.getLayer(i)&&t.removeLayer(i)}}},[t]),t&&t.style&&t.getLayer(i))try{Ae(t,i,e,n.current)}catch(e){console.warn(e)}else je(t,i,e);return n.current=e,null}var Y,Ne,Pe=e((()=>{Y=t(r()),k(),ke(),d(),Ne=0}));function Fe(e,t,n){if(e.style&&e.style._loaded){let r={...n};return delete r.id,delete r.children,e.addSource(t,r),e.getSource(t)}return null}function Ie(e,t,n){J(t.id===n.id,`source id changed`),J(t.type===n.type,`source type changed`);let r=``,i=0;for(let e in t)e!==`children`&&e!==`id`&&!u(n[e],t[e])&&(r=e,i++);if(!i)return;let a=t.type;if(a===`geojson`)e.setData(t.data);else if(a===`image`)e.updateImage({url:t.url,coordinates:t.coordinates});else if(`setCoordinates`in e&&i===1&&r===`coordinates`)e.setCoordinates(t.coordinates);else if(`setUrl`in e)switch(r){case`url`:e.setUrl(t.url);break;case`tiles`:e.setTiles(t.tiles);break;default:}else console.warn(`Unable to update <Source> prop: ${r}`)}function Le(e){let t=(0,Z.useContext)(O).map.getMap(),n=(0,Z.useRef)(e),[,r]=(0,Z.useState)(0),i=(0,Z.useMemo)(()=>e.id||`jsx-source-${ze++}`,[]);(0,Z.useEffect)(()=>{if(t){let e=()=>setTimeout(()=>r(e=>e+1),0);return t.on(`styledata`,e),e(),()=>{if(t.off(`styledata`,e),t.style&&t.style._loaded&&t.getSource(i)){let e=t.getStyle()?.layers;if(e)for(let n of e)n.source===i&&t.removeLayer(n.id);t.removeSource(i)}}}},[t]);let a=t&&t.style&&t.getSource(i);return a?Ie(a,e,n.current):a=Fe(t,i,e),n.current=e,a&&X.Children.map(e.children,e=>e&&(0,Re.cloneElement)(e,{source:i}))||null}var X,Z,Re,ze,Be=e((()=>{X=t(r()),Z=t(r()),Re=t(r()),k(),ke(),d(),ze=0})),Ve=e((()=>{})),He=e((()=>{})),Ue,We,Ge,Ke,qe,Je,Q,$=e((()=>{Ue=t(r()),k(),he(),_e(),ye(),xe(),Ce(),Ee(),Oe(),Pe(),Be(),c(),H(),Ve(),He(),a(),We=i(()=>import(`./97f4f1ec-oro335oa9ekhqzcw.js`).then(e=>t(e.default)),__vite__mapDeps([0,1])),Ge=Ue.forwardRef(function(e,t){return pe(e,t,We)}),Ke=I,qe=Te,Je=Me,Q=Le})),Ye=e((()=>{$(),$()}));export{qe as a,H as c,Ke as i,B as l,Je as n,Q as o,Ge as r,$ as s,Ye as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/97f4f1ec-oro335oa9ekhqzcw.js", "assets/f025431a-ehagpvg3m4e1cduv.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Kt as n,
+    Vn as r,
+    cn as i,
+    ln as a
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+var o, s, c = e((() => {
+    o = t(r()), r(), k(), s = o.createContext(null)
+}));
+
+function l(e, t) {
+    let n = Array.isArray(e) ? e[0] : e ? e.x : 0,
+        r = Array.isArray(e) ? e[1] : e ? e.y : 0,
+        i = Array.isArray(t) ? t[0] : t ? t.x : 0,
+        a = Array.isArray(t) ? t[1] : t ? t.y : 0;
+    return n === i && r === a
+}
+
+function u(e, t) {
+    if (e === t) return !0;
+    if (!e || !t) return !1;
+    if (Array.isArray(e)) {
+        if (!Array.isArray(t) || e.length !== t.length) return !1;
+        for (let n = 0; n < e.length; n++)
+            if (!u(e[n], t[n])) return !1;
+        return !0
+    } else if (Array.isArray(t)) return !1;
+    if (typeof e == `object` && typeof t == `object`) {
+        let n = Object.keys(e),
+            r = Object.keys(t);
+        if (n.length !== r.length) return !1;
+        for (let r of n)
+            if (!t.hasOwnProperty(r) || !u(e[r], t[r])) return !1;
+        return !0
+    }
+    return !1
+}
+var d = e((() => {}));
+
+function f(e) {
+    let t = e.clone();
+    return t.pixelsToGLUnits = e.pixelsToGLUnits, t
+}
+
+function p(e, t) {
+    if (!e.getProjection) return;
+    let n = e.getProjection();
+    u(n, t.getProjection()) || t.setProjection(n)
+}
+
+function m(e) {
+    return {
+        longitude: e.center.lng,
+        latitude: e.center.lat,
+        zoom: e.zoom,
+        pitch: e.pitch,
+        bearing: e.bearing,
+        padding: e.padding
+    }
+}
+
+function h(e, t) {
+    let n = t.viewState || t,
+        r = !1;
+    if (`longitude` in n && `latitude` in n) {
+        let t = e.center;
+        e.center = new t.constructor(n.longitude, n.latitude), r ||= t !== e.center
+    }
+    if (`zoom` in n) {
+        let t = e.zoom;
+        e.zoom = n.zoom, r ||= t !== e.zoom
+    }
+    if (`bearing` in n) {
+        let t = e.bearing;
+        e.bearing = n.bearing, r ||= t !== e.bearing
+    }
+    if (`pitch` in n) {
+        let t = e.pitch;
+        e.pitch = n.pitch, r ||= t !== e.pitch
+    }
+    return n.padding && !e.isPaddingEqual(n.padding) && (r = !0, e.padding = n.padding), r
+}
+var ee = e((() => {
+    d()
+}));
+
+function g(e) {
+    if (!e) return null;
+    if (typeof e == `string` || (`toJS` in e && (e = e.toJS()), !e.layers)) return e;
+    let t = {};
+    for (let n of e.layers) t[n.id] = n;
+    let n = e.layers.map(e => {
+        let n = null;
+        `interactive` in e && (n = Object.assign({}, e), delete n.interactive);
+        let r = t[e.ref];
+        if (r) {
+            n ||= Object.assign({}, e), delete n.ref;
+            for (let e of _) e in r && (n[e] = r[e])
+        }
+        return n || e
+    });
+    return {
+        ...e,
+        layers: n
+    }
+}
+var _, te = e((() => {
+    _ = [`type`, `source`, `source-layer`, `minzoom`, `maxzoom`, `filter`, `layout`]
+}));
+
+function ne() {
+    let e = null;
+    if (typeof location < `u`) {
+        let t = /access_token=([^&\/]*)/.exec(location.search);
+        e = t && t[1]
+    }
+    try {
+        e ||= {}.MapboxAccessToken
+    } catch {}
+    try {
+        e ||= {}.REACT_APP_MAPBOX_ACCESS_TOKEN
+    } catch {}
+    return e
+}
+var v, y, b, x, re, ie, S, ae = e((() => {
+    ee(), te(), d(), v = {
+        version: 8,
+        sources: {},
+        layers: []
+    }, y = {
+        mousedown: `onMouseDown`,
+        mouseup: `onMouseUp`,
+        mouseover: `onMouseOver`,
+        mousemove: `onMouseMove`,
+        click: `onClick`,
+        dblclick: `onDblClick`,
+        mouseenter: `onMouseEnter`,
+        mouseleave: `onMouseLeave`,
+        mouseout: `onMouseOut`,
+        contextmenu: `onContextMenu`,
+        touchstart: `onTouchStart`,
+        touchend: `onTouchEnd`,
+        touchmove: `onTouchMove`,
+        touchcancel: `onTouchCancel`
+    }, b = {
+        movestart: `onMoveStart`,
+        move: `onMove`,
+        moveend: `onMoveEnd`,
+        dragstart: `onDragStart`,
+        drag: `onDrag`,
+        dragend: `onDragEnd`,
+        zoomstart: `onZoomStart`,
+        zoom: `onZoom`,
+        zoomend: `onZoomEnd`,
+        rotatestart: `onRotateStart`,
+        rotate: `onRotate`,
+        rotateend: `onRotateEnd`,
+        pitchstart: `onPitchStart`,
+        pitch: `onPitch`,
+        pitchend: `onPitchEnd`
+    }, x = {
+        wheel: `onWheel`,
+        boxzoomstart: `onBoxZoomStart`,
+        boxzoomend: `onBoxZoomEnd`,
+        boxzoomcancel: `onBoxZoomCancel`,
+        resize: `onResize`,
+        load: `onLoad`,
+        render: `onRender`,
+        idle: `onIdle`,
+        remove: `onRemove`,
+        data: `onData`,
+        styledata: `onStyleData`,
+        sourcedata: `onSourceData`,
+        error: `onError`
+    }, re = [`minZoom`, `maxZoom`, `minPitch`, `maxPitch`, `maxBounds`, `projection`, `renderWorldCopies`], ie = [`scrollZoom`, `boxZoom`, `dragRotate`, `dragPan`, `keyboard`, `doubleClickZoom`, `touchZoomRotate`, `touchPitch`], S = class e {
+        constructor(e, t, n) {
+            this._map = null, this._internalUpdate = !1, this._inRender = !1, this._hoveredFeatures = null, this._deferredEvents = {
+                move: !1,
+                zoom: !1,
+                pitch: !1,
+                rotate: !1
+            }, this._onEvent = e => {
+                let t = this.props[x[e.type]];
+                t ? t(e) : e.type === `error` && console.error(e.error)
+            }, this._onPointerEvent = e => {
+                (e.type === `mousemove` || e.type === `mouseout`) && this._updateHover(e);
+                let t = this.props[y[e.type]];
+                t && (this.props.interactiveLayerIds && e.type !== `mouseover` && e.type !== `mouseout` && (e.features = this._hoveredFeatures || this._queryRenderedFeatures(e.point)), t(e), delete e.features)
+            }, this._onCameraEvent = e => {
+                if (!this._internalUpdate) {
+                    let t = this.props[b[e.type]];
+                    t && t(e)
+                }
+                e.type in this._deferredEvents && (this._deferredEvents[e.type] = !1)
+            }, this._MapClass = e, this.props = t, this._initialize(n)
+        }
+        get map() {
+            return this._map
+        }
+        get transform() {
+            return this._renderTransform
+        }
+        setProps(e) {
+            let t = this.props;
+            this.props = e;
+            let n = this._updateSettings(e, t);
+            n && this._createShadowTransform(this._map);
+            let r = this._updateSize(e),
+                i = this._updateViewState(e, !0);
+            this._updateStyle(e, t), this._updateStyleComponents(e, t), this._updateHandlers(e, t), (n || r || i && !this._map.isMoving()) && this.redraw()
+        }
+        static reuse(t, n) {
+            let r = e.savedMaps.pop();
+            if (!r) return null;
+            let i = r.map,
+                a = i.getContainer();
+            for (n.className = a.className; a.childNodes.length > 0;) n.appendChild(a.childNodes[0]);
+            i._container = n;
+            let o = i._resizeObserver;
+            o && (o.disconnect(), o.observe(n)), r.setProps({
+                ...t,
+                styleDiffing: !1
+            }), i.resize();
+            let {
+                initialViewState: s
+            } = t;
+            return s && (s.bounds ? i.fitBounds(s.bounds, {
+                ...s.fitBoundsOptions,
+                duration: 0
+            }) : r._updateViewState(s, !1)), i.isStyleLoaded() ? i.fire(`load`) : i.once(`styledata`, () => i.fire(`load`)), i._update(), r
+        }
+        _initialize(e) {
+            let {
+                props: t
+            } = this, {
+                mapStyle: n = v
+            } = t, r = {
+                ...t,
+                ...t.initialViewState,
+                accessToken: t.mapboxAccessToken || ne() || null,
+                container: e,
+                style: g(n)
+            }, i = r.initialViewState || r.viewState || r;
+            if (Object.assign(r, {
+                    center: [i.longitude || 0, i.latitude || 0],
+                    zoom: i.zoom || 0,
+                    pitch: i.pitch || 0,
+                    bearing: i.bearing || 0
+                }), t.gl) {
+                let e = HTMLCanvasElement.prototype.getContext;
+                HTMLCanvasElement.prototype.getContext = () => (HTMLCanvasElement.prototype.getContext = e, t.gl)
+            }
+            let a = new this._MapClass(r);
+            i.padding && a.setPadding(i.padding), t.cursor && (a.getCanvas().style.cursor = t.cursor), this._createShadowTransform(a);
+            let o = a._render;
+            a._render = e => {
+                this._inRender = !0, o.call(a, e), this._inRender = !1
+            };
+            let s = a._renderTaskQueue.run;
+            a._renderTaskQueue.run = e => {
+                s.call(a._renderTaskQueue, e), this._onBeforeRepaint()
+            }, a.on(`render`, () => this._onAfterRepaint());
+            let c = a.fire;
+            a.fire = this._fireEvent.bind(this, c), a.on(`resize`, () => {
+                this._renderTransform.resize(a.transform.width, a.transform.height)
+            }), a.on(`styledata`, () => {
+                this._updateStyleComponents(this.props, {}), p(a.transform, this._renderTransform)
+            }), a.on(`sourcedata`, () => this._updateStyleComponents(this.props, {}));
+            for (let e in y) a.on(e, this._onPointerEvent);
+            for (let e in b) a.on(e, this._onCameraEvent);
+            for (let e in x) a.on(e, this._onEvent);
+            this._map = a
+        }
+        recycle() {
+            this.map.getContainer().querySelector(`[mapboxgl-children]`)?.remove(), e.savedMaps.push(this)
+        }
+        destroy() {
+            this._map.remove()
+        }
+        redraw() {
+            let e = this._map;
+            !this._inRender && e.style && (e._frame &&= (e._frame.cancel(), null), e._render())
+        }
+        _createShadowTransform(e) {
+            let t = f(e.transform);
+            e.painter.transform = t, this._renderTransform = t
+        }
+        _updateSize(e) {
+            let {
+                viewState: t
+            } = e;
+            if (t) {
+                let e = this._map;
+                if (t.width !== e.transform.width || t.height !== e.transform.height) return e.resize(), !0
+            }
+            return !1
+        }
+        _updateViewState(e, t) {
+            if (this._internalUpdate) return !1;
+            let n = this._map,
+                r = this._renderTransform,
+                {
+                    zoom: i,
+                    pitch: a,
+                    bearing: o
+                } = r,
+                s = n.isMoving();
+            s && (r.cameraElevationReference = `sea`);
+            let c = h(r, {
+                ...m(n.transform),
+                ...e
+            });
+            if (s && (r.cameraElevationReference = `ground`), c && t) {
+                let e = this._deferredEvents;
+                e.move = !0, e.zoom ||= i !== r.zoom, e.rotate ||= o !== r.bearing, e.pitch ||= a !== r.pitch
+            }
+            return s || h(n.transform, e), c
+        }
+        _updateSettings(e, t) {
+            let n = this._map,
+                r = !1;
+            for (let i of re) i in e && !u(e[i], t[i]) && (r = !0, n[`set${i[0].toUpperCase()}${i.slice(1)}`]?.call(n, e[i]));
+            return r
+        }
+        _updateStyle(e, t) {
+            if (e.cursor !== t.cursor && (this._map.getCanvas().style.cursor = e.cursor || ``), e.mapStyle !== t.mapStyle) {
+                let {
+                    mapStyle: t = v,
+                    styleDiffing: n = !0
+                } = e, r = {
+                    diff: n
+                };
+                return `localIdeographFontFamily` in e && (r.localIdeographFontFamily = e.localIdeographFontFamily), this._map.setStyle(g(t), r), !0
+            }
+            return !1
+        }
+        _updateStyleComponents(e, t) {
+            let n = this._map,
+                r = !1;
+            return n.isStyleLoaded() && (`light` in e && n.setLight && !u(e.light, t.light) && (r = !0, n.setLight(e.light)), `fog` in e && n.setFog && !u(e.fog, t.fog) && (r = !0, n.setFog(e.fog)), `terrain` in e && n.setTerrain && !u(e.terrain, t.terrain) && (!e.terrain || n.getSource(e.terrain.source)) && (r = !0, n.setTerrain(e.terrain))), r
+        }
+        _updateHandlers(e, t) {
+            let n = this._map,
+                r = !1;
+            for (let i of ie) {
+                let a = e[i] ?? !0;
+                u(a, t[i] ?? !0) || (r = !0, a ? n[i].enable(a) : n[i].disable())
+            }
+            return r
+        }
+        _queryRenderedFeatures(e) {
+            let t = this._map,
+                n = t.transform,
+                {
+                    interactiveLayerIds: r = []
+                } = this.props;
+            try {
+                return t.transform = this._renderTransform, t.queryRenderedFeatures(e, {
+                    layers: r.filter(t.getLayer.bind(t))
+                })
+            } catch {
+                return []
+            } finally {
+                t.transform = n
+            }
+        }
+        _updateHover(e) {
+            let {
+                props: t
+            } = this;
+            if (t.interactiveLayerIds && (t.onMouseMove || t.onMouseEnter || t.onMouseLeave)) {
+                let t = e.type,
+                    n = this._hoveredFeatures?.length > 0,
+                    r = this._queryRenderedFeatures(e.point),
+                    i = r.length > 0;
+                !i && n && (e.type = `mouseleave`, this._onPointerEvent(e)), this._hoveredFeatures = r, i && !n && (e.type = `mouseenter`, this._onPointerEvent(e)), e.type = t
+            } else this._hoveredFeatures = null
+        }
+        _fireEvent(e, t, n) {
+            let r = this._map,
+                i = r.transform,
+                a = typeof t == `string` ? t : t.type;
+            return a === `move` && this._updateViewState(this.props, !1), a in b && (typeof t == `object` && (t.viewState = m(i)), this._map.isMoving()) ? (r.transform = this._renderTransform, e.call(r, t, n), r.transform = i, r) : (e.call(r, t, n), r)
+        }
+        _onBeforeRepaint() {
+            let e = this._map;
+            this._internalUpdate = !0;
+            for (let t in this._deferredEvents) this._deferredEvents[t] && e.fire(t);
+            this._internalUpdate = !1;
+            let t = this._map.transform;
+            e.transform = this._renderTransform, this._onAfterRepaint = () => {
+                p(this._renderTransform, t), e.transform = t
+            }
+        }
+    }, S.savedMaps = []
+}));
+
+function oe(e) {
+    if (!e) return null;
+    let t = e.map,
+        n = {
+            getMap: () => t,
+            getCenter: () => e.transform.center,
+            getZoom: () => e.transform.zoom,
+            getBearing: () => e.transform.bearing,
+            getPitch: () => e.transform.pitch,
+            getPadding: () => e.transform.padding,
+            getBounds: () => e.transform.getBounds(),
+            project: n => {
+                let r = t.transform;
+                t.transform = e.transform;
+                let i = t.project(n);
+                return t.transform = r, i
+            },
+            unproject: n => {
+                let r = t.transform;
+                t.transform = e.transform;
+                let i = t.unproject(n);
+                return t.transform = r, i
+            },
+            queryTerrainElevation: (n, r) => {
+                let i = t.transform;
+                t.transform = e.transform;
+                let a = t.queryTerrainElevation(n, r);
+                return t.transform = i, a
+            },
+            queryRenderedFeatures: (n, r) => {
+                let i = t.transform;
+                t.transform = e.transform;
+                let a = t.queryRenderedFeatures(n, r);
+                return t.transform = i, a
+            }
+        };
+    for (let e of se(t)) !(e in n) && !ce.includes(e) && (n[e] = t[e].bind(t));
+    return n
+}
+
+function se(e) {
+    let t = new Set,
+        n = e;
+    for (; n;) {
+        for (let r of Object.getOwnPropertyNames(n)) r[0] !== `_` && typeof e[r] == `function` && r !== `fire` && r !== `setEventedParent` && t.add(r);
+        n = Object.getPrototypeOf(n)
+    }
+    return Array.from(t)
+}
+var ce, le = e((() => {
+        ce = [`setMaxBounds`, `setMinZoom`, `setMaxZoom`, `setMinPitch`, `setMaxPitch`, `setRenderWorldCopies`, `setProjection`, `setStyle`, `addSource`, `removeSource`, `addLayer`, `removeLayer`, `setLayerZoomRange`, `setFilter`, `setPaintProperty`, `setLayoutProperty`, `setLight`, `setTerrain`, `setFog`, `remove`]
+    })),
+    C, w, ue = e((() => {
+        C = t(r()), w = typeof document < `u` ? C.useLayoutEffect : C.useEffect
+    }));
+
+function de(e, t) {
+    for (let n of T) n in t && (e[n] = t[n]);
+    let {
+        RTLTextPlugin: n = `https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.2.3/mapbox-gl-rtl-text.js`
+    } = t;
+    n && e.getRTLTextPluginStatus && e.getRTLTextPluginStatus() === `unavailable` && e.setRTLTextPlugin(n, e => {
+        e && console.error(e)
+    }, !0)
+}
+var T, fe = e((() => {
+    T = [`baseApiUrl`, `maxParallelImageRequests`, `workerClass`, `workerCount`, `workerUrl`]
+}));
+
+function pe(e, t, n) {
+    let r = (0, D.useContext)(s),
+        [i, a] = (0, D.useState)(null),
+        o = (0, D.useRef)(),
+        {
+            current: c
+        } = (0, D.useRef)({
+            mapLib: null,
+            map: null
+        });
+    (0, D.useEffect)(() => {
+        let t = e.mapLib,
+            i = !0,
+            s;
+        return Promise.resolve(t || n).then(t => {
+            if (!i) return;
+            if (!t) throw Error(`Invalid mapLib`);
+            let n = `Map` in t ? t : t.default;
+            if (!n.Map) throw Error(`Invalid mapLib`);
+            if (de(n, e), !n.supported || n.supported(e)) e.reuseMaps && (s = S.reuse(e, o.current)), s ||= new S(n.Map, e, o.current), c.map = oe(s), c.mapLib = n, a(s), r?.onMapMount(c.map, e.id);
+            else throw Error(`Map is not supported by this browser`)
+        }).catch(t => {
+            let {
+                onError: n
+            } = e;
+            n ? n({
+                type: `error`,
+                target: null,
+                originalEvent: null,
+                error: t
+            }) : console.error(t)
+        }), () => {
+            i = !1, s && (r?.onMapUnmount(e.id), e.reuseMaps ? s.recycle() : s.destroy())
+        }
+    }, []), w(() => {
+        i && i.setProps(e)
+    }), (0, D.useImperativeHandle)(t, () => c.map, [i]);
+    let l = (0, D.useMemo)(() => ({
+        position: `relative`,
+        width: `100%`,
+        height: `100%`,
+        ...e.style
+    }), [e.style]);
+    return E.createElement(`div`, {
+        id: e.id,
+        ref: o,
+        style: l
+    }, i && E.createElement(O.Provider, {
+        value: c
+    }, E.createElement(`div`, {
+        "mapboxgl-children": ``,
+        style: {
+            height: `100%`
+        }
+    }, e.children)))
+}
+var E, D, O, k = e((() => {
+    E = t(r()), D = t(r()), c(), ae(), le(), ue(), fe(), O = E.createContext(null)
+}));
+
+function A(e, t) {
+    if (!e || !t) return;
+    let n = e.style;
+    for (let e in t) {
+        let r = t[e];
+        Number.isFinite(r) && !j.test(e) ? n[e] = `${r}px` : n[e] = r
+    }
+}
+var j, M = e((() => {
+    j = /box|flex|grid|column|lineHeight|fontWeight|opacity|order|tabSize|zIndex/
+}));
+
+function me(e, t) {
+    let {
+        map: n,
+        mapLib: r
+    } = (0, F.useContext)(O), i = (0, F.useRef)({
+        props: e
+    });
+    i.current.props = e;
+    let a = (0, F.useMemo)(() => {
+        let t = !1;
+        N.Children.forEach(e.children, e => {
+            e && (t = !0)
+        });
+        let n = {
+                ...e,
+                element: t ? document.createElement(`div`) : null
+            },
+            o = new r.Marker(n);
+        return o.setLngLat([e.longitude, e.latitude]), o.getElement().addEventListener(`click`, e => {
+            var t, n;
+            (n = (t = i.current.props).onClick) == null || n.call(t, {
+                type: `click`,
+                target: o,
+                originalEvent: e
+            })
+        }), o.on(`dragstart`, e => {
+            var t, n;
+            let r = e;
+            r.lngLat = a.getLngLat(), (n = (t = i.current.props).onDragStart) == null || n.call(t, r)
+        }), o.on(`drag`, e => {
+            var t, n;
+            let r = e;
+            r.lngLat = a.getLngLat(), (n = (t = i.current.props).onDrag) == null || n.call(t, r)
+        }), o.on(`dragend`, e => {
+            var t, n;
+            let r = e;
+            r.lngLat = a.getLngLat(), (n = (t = i.current.props).onDragEnd) == null || n.call(t, r)
+        }), o
+    }, []);
+    (0, F.useEffect)(() => (a.addTo(n.getMap()), () => {
+        a.remove()
+    }), []);
+    let {
+        longitude: o,
+        latitude: s,
+        offset: c,
+        style: u,
+        draggable: d = !1,
+        popup: f = null,
+        rotation: p = 0,
+        rotationAlignment: m = `auto`,
+        pitchAlignment: h = `auto`
+    } = e;
+    return (0, F.useEffect)(() => {
+        A(a.getElement(), u)
+    }, [u]), (0, F.useImperativeHandle)(t, () => a, []), (a.getLngLat().lng !== o || a.getLngLat().lat !== s) && a.setLngLat([o, s]), c && !l(a.getOffset(), c) && a.setOffset(c), a.isDraggable() !== d && a.setDraggable(d), a.getRotation() !== p && a.setRotation(p), a.getRotationAlignment() !== m && a.setRotationAlignment(m), a.getPitchAlignment() !== h && a.setPitchAlignment(h), a.getPopup() !== f && a.setPopup(f), (0, P.createPortal)(e.children, a.getElement())
+}
+var N, P, F, I, he = e((() => {
+    N = t(r()), P = t(n()), F = t(r()), M(), k(), d(), I = (0, F.memo)((0, F.forwardRef)(me))
+}));
+
+function L(e) {
+    return new Set(e ? e.trim().split(/\s+/) : [])
+}
+
+function ge(e, t) {
+    let {
+        map: n,
+        mapLib: r
+    } = (0, z.useContext)(O), i = (0, z.useMemo)(() => document.createElement(`div`), []), a = (0, z.useRef)({
+        props: e
+    });
+    a.current.props = e;
+    let o = (0, z.useMemo)(() => {
+        let t = {
+                ...e
+            },
+            n = new r.Popup(t);
+        return n.setLngLat([e.longitude, e.latitude]), n.once(`open`, e => {
+            var t, n;
+            (n = (t = a.current.props).onOpen) == null || n.call(t, e)
+        }), n
+    }, []);
+    if ((0, z.useEffect)(() => {
+            let e = e => {
+                var t, n;
+                (n = (t = a.current.props).onClose) == null || n.call(t, e)
+            };
+            return o.on(`close`, e), o.setDOMContent(i).addTo(n.getMap()), () => {
+                o.off(`close`, e), o.isOpen() && o.remove()
+            }
+        }, []), (0, z.useEffect)(() => {
+            A(o.getElement(), e.style)
+        }, [e.style]), (0, z.useImperativeHandle)(t, () => o, []), o.isOpen() && ((o.getLngLat().lng !== e.longitude || o.getLngLat().lat !== e.latitude) && o.setLngLat([e.longitude, e.latitude]), e.offset && !u(o.options.offset, e.offset) && o.setOffset(e.offset), (o.options.anchor !== e.anchor || o.options.maxWidth !== e.maxWidth) && (o.options.anchor = e.anchor, o.setMaxWidth(e.maxWidth)), o.options.className !== e.className)) {
+        let t = L(o.options.className),
+            n = L(e.className);
+        for (let e of t) n.has(e) || o.removeClassName(e);
+        for (let e of n) t.has(e) || o.addClassName(e);
+        o.options.className = e.className
+    }
+    return (0, R.createPortal)(e.children, i)
+}
+var R, z, _e = e((() => {
+    R = t(n()), z = t(r()), M(), k(), d(), (0, z.memo)((0, z.forwardRef)(ge))
+}));
+
+function B(e, t, n, r) {
+    let i = (0, V.useContext)(O),
+        a = (0, V.useMemo)(() => e(i), []);
+    return (0, V.useEffect)(() => {
+        let e = r || n || t,
+            o = typeof t == `function` && typeof n == `function` ? t : null,
+            s = typeof n == `function` ? n : typeof t == `function` ? t : null,
+            {
+                map: c
+            } = i;
+        return c.hasControl(a) || (c.addControl(a, e?.position), o && o(i)), () => {
+            s && s(i), c.hasControl(a) && c.removeControl(a)
+        }
+    }, []), a
+}
+var V, H = e((() => {
+    V = t(r()), k()
+}));
+
+function ve(e) {
+    let t = B(({
+        mapLib: t
+    }) => new t.AttributionControl(e), {
+        position: e.position
+    });
+    return (0, U.useEffect)(() => {
+        A(t._container, e.style)
+    }, [e.style]), null
+}
+var U, ye = e((() => {
+    U = t(r()), M(), H(), (0, U.memo)(ve)
+}));
+
+function be(e) {
+    let t = B(({
+        mapLib: t
+    }) => new t.FullscreenControl({
+        container: e.containerId && document.getElementById(e.containerId)
+    }), {
+        position: e.position
+    });
+    return (0, W.useEffect)(() => {
+        A(t._controlContainer, e.style)
+    }, [e.style]), null
+}
+var W, xe = e((() => {
+    W = t(r()), M(), H(), (0, W.memo)(be)
+}));
+
+function Se(e, t) {
+    let n = (0, G.useRef)({
+            props: e
+        }),
+        r = B(({
+            mapLib: t
+        }) => {
+            let r = new t.GeolocateControl(e),
+                i = r._setupUI;
+            return r._setupUI = e => {
+                r._container.hasChildNodes() || i(e)
+            }, r.on(`geolocate`, e => {
+                var t, r;
+                (r = (t = n.current.props).onGeolocate) == null || r.call(t, e)
+            }), r.on(`error`, e => {
+                var t, r;
+                (r = (t = n.current.props).onError) == null || r.call(t, e)
+            }), r.on(`outofmaxbounds`, e => {
+                var t, r;
+                (r = (t = n.current.props).onOutOfMaxBounds) == null || r.call(t, e)
+            }), r.on(`trackuserlocationstart`, e => {
+                var t, r;
+                (r = (t = n.current.props).onTrackUserLocationStart) == null || r.call(t, e)
+            }), r.on(`trackuserlocationend`, e => {
+                var t, r;
+                (r = (t = n.current.props).onTrackUserLocationEnd) == null || r.call(t, e)
+            }), r
+        }, {
+            position: e.position
+        });
+    return n.current.props = e, (0, G.useImperativeHandle)(t, () => r, []), (0, G.useEffect)(() => {
+        A(r._container, e.style)
+    }, [e.style]), null
+}
+var G, Ce = e((() => {
+    G = t(r()), M(), H(), (0, G.memo)((0, G.forwardRef)(Se))
+}));
+
+function we(e) {
+    let t = B(({
+        mapLib: t
+    }) => new t.NavigationControl(e), {
+        position: e.position
+    });
+    return (0, K.useEffect)(() => {
+        A(t._container, e.style)
+    }, [e.style]), null
+}
+var K, Te, Ee = e((() => {
+    K = t(r()), M(), H(), Te = (0, K.memo)(we)
+}));
+
+function De(e) {
+    let t = B(({
+            mapLib: t
+        }) => new t.ScaleControl(e), {
+            position: e.position
+        }),
+        n = (0, q.useRef)(e),
+        r = n.current;
+    n.current = e;
+    let {
+        style: i
+    } = e;
+    return e.maxWidth !== void 0 && e.maxWidth !== r.maxWidth && (t.options.maxWidth = e.maxWidth), e.unit !== void 0 && e.unit !== r.unit && t.setUnit(e.unit), (0, q.useEffect)(() => {
+        A(t._container, i)
+    }, [i]), null
+}
+var q, Oe = e((() => {
+    q = t(r()), M(), H(), (0, q.memo)(De)
+}));
+
+function J(e, t) {
+    if (!e) throw Error(t)
+}
+var ke = e((() => {}));
+
+function Ae(e, t, n, r) {
+    if (J(n.id === r.id, `layer id changed`), J(n.type === r.type, `layer type changed`), n.type === `custom` || r.type === `custom`) return;
+    let {
+        layout: i = {},
+        paint: a = {},
+        filter: o,
+        minzoom: s,
+        maxzoom: c,
+        beforeId: l
+    } = n;
+    if (l !== r.beforeId && e.moveLayer(t, l), i !== r.layout) {
+        let n = r.layout || {};
+        for (let r in i) u(i[r], n[r]) || e.setLayoutProperty(t, r, i[r]);
+        for (let r in n) i.hasOwnProperty(r) || e.setLayoutProperty(t, r, void 0)
+    }
+    if (a !== r.paint) {
+        let n = r.paint || {};
+        for (let r in a) u(a[r], n[r]) || e.setPaintProperty(t, r, a[r]);
+        for (let r in n) a.hasOwnProperty(r) || e.setPaintProperty(t, r, void 0)
+    }
+    u(o, r.filter) || e.setFilter(t, o), (s !== r.minzoom || c !== r.maxzoom) && e.setLayerZoomRange(t, s, c)
+}
+
+function je(e, t, n) {
+    if (e.style && e.style._loaded && (!(`source` in n) || e.getSource(n.source))) {
+        let r = {
+            ...n,
+            id: t
+        };
+        delete r.beforeId, e.addLayer(r, n.beforeId)
+    }
+}
+
+function Me(e) {
+    let t = (0, Y.useContext)(O).map.getMap(),
+        n = (0, Y.useRef)(e),
+        [, r] = (0, Y.useState)(0),
+        i = (0, Y.useMemo)(() => e.id || `jsx-layer-${Ne++}`, []);
+    if ((0, Y.useEffect)(() => {
+            if (t) {
+                let e = () => r(e => e + 1);
+                return t.on(`styledata`, e), e(), () => {
+                    t.off(`styledata`, e), t.style && t.style._loaded && t.getLayer(i) && t.removeLayer(i)
+                }
+            }
+        }, [t]), t && t.style && t.getLayer(i)) try {
+        Ae(t, i, e, n.current)
+    } catch (e) {
+        console.warn(e)
+    } else je(t, i, e);
+    return n.current = e, null
+}
+var Y, Ne, Pe = e((() => {
+    Y = t(r()), k(), ke(), d(), Ne = 0
+}));
+
+function Fe(e, t, n) {
+    if (e.style && e.style._loaded) {
+        let r = {
+            ...n
+        };
+        return delete r.id, delete r.children, e.addSource(t, r), e.getSource(t)
+    }
+    return null
+}
+
+function Ie(e, t, n) {
+    J(t.id === n.id, `source id changed`), J(t.type === n.type, `source type changed`);
+    let r = ``,
+        i = 0;
+    for (let e in t) e !== `children` && e !== `id` && !u(n[e], t[e]) && (r = e, i++);
+    if (!i) return;
+    let a = t.type;
+    if (a === `geojson`) e.setData(t.data);
+    else if (a === `image`) e.updateImage({
+        url: t.url,
+        coordinates: t.coordinates
+    });
+    else if (`setCoordinates` in e && i === 1 && r === `coordinates`) e.setCoordinates(t.coordinates);
+    else if (`setUrl` in e) switch (r) {
+        case `url`:
+            e.setUrl(t.url);
+            break;
+        case `tiles`:
+            e.setTiles(t.tiles);
+            break;
+        default:
+    } else console.warn(`Unable to update <Source> prop: ${r}`)
+}
+
+function Le(e) {
+    let t = (0, Z.useContext)(O).map.getMap(),
+        n = (0, Z.useRef)(e),
+        [, r] = (0, Z.useState)(0),
+        i = (0, Z.useMemo)(() => e.id || `jsx-source-${ze++}`, []);
+    (0, Z.useEffect)(() => {
+        if (t) {
+            let e = () => setTimeout(() => r(e => e + 1), 0);
+            return t.on(`styledata`, e), e(), () => {
+                if (t.off(`styledata`, e), t.style && t.style._loaded && t.getSource(i)) {
+                    let e = t.getStyle()?.layers;
+                    if (e)
+                        for (let n of e) n.source === i && t.removeLayer(n.id);
+                    t.removeSource(i)
+                }
+            }
+        }
+    }, [t]);
+    let a = t && t.style && t.getSource(i);
+    return a ? Ie(a, e, n.current) : a = Fe(t, i, e), n.current = e, a && X.Children.map(e.children, e => e && (0, Re.cloneElement)(e, {
+        source: i
+    })) || null
+}
+var X, Z, Re, ze, Be = e((() => {
+        X = t(r()), Z = t(r()), Re = t(r()), k(), ke(), d(), ze = 0
+    })),
+    Ve = e((() => {})),
+    He = e((() => {})),
+    Ue, We, Ge, Ke, qe, Je, Q, $ = e((() => {
+        Ue = t(r()), k(), he(), _e(), ye(), xe(), Ce(), Ee(), Oe(), Pe(), Be(), c(), H(), Ve(), He(), a(), We = i(() => import(`./97f4f1ec-oro335oa9ekhqzcw.js`).then(e => t(e.default)), __vite__mapDeps([0, 1])), Ge = Ue.forwardRef(function(e, t) {
+            return pe(e, t, We)
+        }), Ke = I, qe = Te, Je = Me, Q = Le
+    })),
+    Ye = e((() => {
+        $(), $()
+    }));
+export {
+    qe as a, H as c, Ke as i, B as l, Je as n, Q as o, Ge as r, $ as s, Ye as t
+};
 //# sourceMappingURL=5ab42519-ewabpgsn9d7qobzz.js.map

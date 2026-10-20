@@ -1,3 +1,1167 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/24fd10e2-abtkt6x6e458c01b.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-dfpv67hlp00pbohr.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/conversation-small-cy5f8pl0g26s86so.js","assets/30901919-7dzdc1ou0jtwkwpt.js","assets/c470f5ab-d4g7lc53n1e1ao7o.js","assets/0e5afe53-o2mcfq1ky1uaktz5.js","assets/conversation-small-j5v9ogf2.css","assets/c2675c8c-9bs3zsr3vq259es7.js","assets/82782bc9-mb60yg1xlggwvqri.js","assets/8b34dbc2-k1zgxrtsww83602u.js","assets/global-modals-lv5n3ujm.css","assets/09231af0-mb9azias91zaxsma.js","assets/2f772deb-i8iagtnmm0oa4tfr.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$W as n,BZ as r,C1 as i,Ew as a,Fv as o,J5 as s,L1 as c,Lv as l,Mq as u,Tw as d,Uq as f,VU as p,Y5 as m,YW as h,_nt as g,bG as _,bW as v,c1 as y,eQ as b,eY as x,fF as S,fc as C,gc as w,iat as T,l1 as E,mF as D,nY as O,oat as k,yW as ee,ynt as A,zU as j}from"./4813494d-dfpv67hlp00pbohr.js";import{Bn as te,G as M,Ln as N,N as P,Nn as F,Nt as I,O as L,Q as R,Rn as z,Vn as B,cn as ne,jt as re,l as ie,ln as ae,s as oe,wn as V,zn as se}from"./2340486e-i7pjxgdhv0bs6apg.js";import{C1 as ce,CAt as le,DW as ue,Fwt as de,Hbt as fe,Jkt as pe,Nkt as me,Okt as he,PAt as ge,PW as _e,Pkt as ve,SAt as ye,SW as be,Ubt as xe,Ukt as Se,Vkt as Ce,Ykt as we,Zkt as Te,_W as Ee,bAt as De,bW as Oe,dX as H,eTn as ke,fwt as Ae,ggn as je,hgn as Me,kAt as U,lW as Ne,pW as W,tTn as Pe,uX as Fe,uwt as G,vW as K,w1 as Ie,wAt as q,xAt as Le,xW as J,yAt as Re,yW as Y,zkt as ze}from"./conversation-small-cy5f8pl0g26s86so.js";import{Hv as Be,TC as Ve,Uv as He,wC as Ue}from"./30901919-7dzdc1ou0jtwkwpt.js";import{$o as We,Am as Ge,as as Ke,es as qe,is as Je,km as Ye,rs as Xe,ts as Ze}from"./8b34dbc2-k1zgxrtsww83602u.js";import{n as Qe,t as $e}from"./4f866508-ok01gojch43k1jc4.js";import{i as et,n as tt}from"./04f387fb-hr81txxsrrvxpfhr.js";import{c as nt,r as rt}from"./fcf5f4da-m2640lkqt2mr4cfw.js";import{i as it,n as at}from"./a81eda00-bo1ba2e0lxrld4iq.js";import{a as ot,i as st,o as ct,s as lt,t as ut}from"./4cf35c7a-fuufw34ubkxvq703.js";import{n as dt,r as ft}from"./a84119fb-g9ybdtndzt78bucn.js";import{n as pt,t as mt}from"./22f0e71d-fq2vpnfqg8u09itl.js";import{n as ht,t as gt}from"./c253861d-e3870rqaaisxc6r6.js";function _t(e){let t=new URLSearchParams(e).getAll(`credit_alert`);if(t.length===0)return;let n=t[0];return t.length===1&&n&&xt.test(n)?n:null}function vt(){try{let e=sessionStorage.getItem(bt);return e&&xt.test(e)?e:null}catch{return null}}function yt(e){return _t(e)!==void 0||vt()!=null}var bt,xt,St=e((()=>{bt=`finances.credit-alert.login`,xt=/^[A-Za-z0-9_-]{86}$/}));function Ct(e){return e.span===1||e.span===2?e.span:e.dashboard_placement===`half`?1:2}function wt(e,t){return{widgetConfig:e,span:t}}function Tt(e){let t=[],n=[...e];for(;n.length>0;){let e=n.shift();if(e==null)break;if(Ct(e)===1){let r=n.findIndex(e=>Ct(e)===1);if(r===-1){t.push({items:[wt(e,2)]});continue}let[i]=n.splice(r,1);t.push({items:[wt(e,1),wt(i,1)]});continue}t.push({items:[wt(e,2)]})}return t}var Et=e((()=>{}));function Dt(e){if(!Array.isArray(e.transactions))return[];let t=e.sensitive_values_hidden!==!1;return e.transactions.slice(0,10).flatMap(e=>{if(typeof e!=`object`||!e||Array.isArray(e))return[];let n=e;return n.detail_sidebar_enabled!==!0||typeof n.transaction_id!=`string`||!n.transaction_id.trim()||typeof n.display_name!=`string`||!n.display_name.trim()?[]:[it({type:`entity`,category:`ledger_detail_sidebar`,messageId:`mattress-ledger-widget`,contentReferenceStartIndex:0,query:`${n.display_name} transaction`,extraParams:{detail_type:`transaction`,displayTitle:n.display_name,alwaysShowFollowUpButton:!0,disableFooterActions:!0,transaction_id:n.transaction_id,logo_url:n.logo_url??``,category_icon:n.category_icon,merchant_name:n.merchant_name,transaction_date:n.date,date_label:n.date_label,amount_label:t?n.masked_amount_label:n.amount_label,amount_value:t?null:n.amount_value,currency_code:n.currency_code,account_id:n.account_id??``,account_name:n.account_detail,primary_category:n.category_label,primary_category_key:n.primary_category_key,primary_category_id:n.primary_category_id,category_confidence_level:n.category_confidence_level??``,category_confidence_label:n.category_confidence_label??``,pending:n.pending,month_start:n.month_start,sensitive_values_hidden:t}},t)]})}async function Ot({store:e,state:t,clientThreadId:n,locale:r,isCurrent:i}){let a=e.getGeneration(),{createLedgerTransactionDetailRequest:o}=await ne(async()=>{let{createLedgerTransactionDetailRequest:e}=await import(`./24fd10e2-abtkt6x6e458c01b.js`).then(e=>(e.t(),e.a));return{createLedgerTransactionDetailRequest:e}},__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]));if(!i()||e.getGeneration()!==a)return;let s=Dt(t).flatMap(e=>{let t=o({clientThreadId:n,conversationId:x(n)??n,messageId:e.messageId,category:`ledger_detail_sidebar`,query:e.query,extraParams:e.extraParams,locale:r});return t?[t]:[]});e.enqueue(s)}var kt=e((()=>{at(),O(),ae()}));function At({cardId:e,conversation:t,navigate:r,prompt:a}){let o=i(),s=o?.normalizedAccountUserId;if(!n()||!o||!s||!t||!a.trim())return!1;let c=ue(a,{accountId:o.id,accountUserId:s},{starter_prompt_id:e,suggestion_type:y.Starter});return w({conversation:t,nextMode:_.TPP}),je(r,{params:new URLSearchParams({surface:`work`}),state:c}),!0}var jt=e((()=>{E(),Me(),c(),C(),h(),_e()})),Mt,Nt,Pt=e((()=>{Mt=`_9X9NtG_widget`,Nt={widget:Mt}}));function Ft(e){return!e.id||typeof e.id!=`string`||!It(e.widget)?!1:e.widget.type.length>0}function It(e){return e==null||Array.isArray(e)||typeof e!=`object`||!(`type`in e)?!1:typeof e.type==`string`}function X(e){return typeof e==`object`&&!!e&&!Array.isArray(e)}function Lt(e){let t=e?.ledger_link_id;return typeof t==`string`?t:void 0}function Rt(e){return Array.isArray(e)?e.filter(e=>typeof e==`string`):[]}function zt(e){if(!X(e))return null;let t=typeof e.transaction_id==`string`?e.transaction_id.trim():``,n=typeof e.target_primary_category==`string`?e.target_primary_category.trim():``;return!t||!n?null:{transaction_id:t,target_primary_category:n}}function Bt(e){if(!X(e)||!Array.isArray(e.corrections))return null;let t=[];for(let n of e.corrections){let e=zt(n);if(!e)return null;t.push(e)}return t}function Vt(e){return X(e)?e.kind===mn&&Array.isArray(e.transactionIds)&&e.transactionIds.every(e=>typeof e==`string`):!1}function Ht(e,t){if(!e)return;let n=e.getState();if(!n||!Array.isArray(n.transactions))return;let r=new Set(t),i=n.transactions.filter(e=>{if(!X(e))return!0;let t=typeof e.id==`string`?e.id:void 0;return t==null||!r.has(t)});e.setState({transactions:i},!1)}function Ut(e){return e.id.startsWith(hn)}function Wt(e){let t=e.initial_state;if(t==null)return null;let n={...t};return delete n[ut],Object.keys(n).length===0?null:n}function Gt(e){return M([e.id,e.widget,Wt(e)])}function Kt(e){return e.items.map(e=>Gt(e.widgetConfig)).join(`:`)}function qt(e){return e.initial_state??void 0}function Jt(e){let t=e.initial_state?.[ut];return typeof t==`boolean`?t:void 0}function Yt({widgets:e,variant:t}){return e.filter(e=>Ft(e)?t===`dashboard`?!Ut(e):Ut(e):!1)}function Xt(e){"use forget";let t=(0,cn.c)(9),{hasLedgerConnections:n,variant:r,starterAnalytics:i,className:a}=e,o=r===void 0?`onboarding`:r,s=re(`/finances/:tab`)?.params.tab??`dashboard`,{isLedgerAccountFlowLoading:c,loadingOauthLinkId:l,onWidgetAction:u}=Zt(D(),i?.financeSessionId,s),d;return t[0]!==a||t[1]!==n||t[2]!==c||t[3]!==l||t[4]!==u||t[5]!==i||t[6]!==s||t[7]!==o?(d=(0,Q.jsx)(en,{hasLedgerConnections:n,isLedgerAccountFlowLoading:c,loadingOauthLinkId:l,variant:o,starterAnalytics:i,tab:s,onWidgetAction:u,className:a}),t[0]=a,t[1]=n,t[2]=c,t[3]=l,t[4]=u,t[5]=i,t[6]=s,t[7]=o,t[8]=d):d=t[8],d}function Zt(e,t,n){"use no forget";let i=I(),a=(0,Z.useRef)(!1),o=P(),s=p(),{isLoading:c,loadingOauthLinkId:u,open:d}=ft(),m=Ke({skipPostConnectExperience:!0,productSku:ke.CONNECTOR_SETTING,canReuseLink:l,resolveDirectNoAuthConnector:Ze}),h=se(),{sensitiveValuesHidden:_,setSensitiveValuesHidden:v}=lt(),b=(0,Z.useCallback)(async()=>(o.getQueryData(me)??await o.fetchQuery({queryKey:me,queryFn:Ce})??[]).find(Te)?.id,[o]),x=(0,Z.useCallback)(async t=>{if(!(!e||!d))try{d({autoStartOauthLinkId:t??await b(),trackingContext:{entryPoint:`widget`}})}catch(e){s.danger(h.formatMessage($.connectAccountErrorToast),{error:e})}},[e,b,h,d,s]),S=(0,Z.useCallback)(t=>{pt({...t,conversation:e,sensitiveValuesHidden:_})},[e,_]),C=(0,Z.useCallback)(()=>{o.invalidateQueries({queryKey:he})},[o]);return{isLedgerAccountFlowLoading:c,loadingOauthLinkId:u,onWidgetAction:(0,Z.useCallback)(async({type:c,payload:l})=>{if(c===dn){if(!X(l))return;let e=typeof l.ledger_link_id==`string`?l.ledger_link_id:void 0;await x(e);return}if(c===`ledger_set_sensitive_values_hidden`){let e=ot(l);if(e==null)return;v(e);return}if(c===`ledger_category_review_save`){let e=Bt(l);if(!e||e.length===0)return;try{if((await Ae({actionType:c,payload:{corrections:e},toaster:s})).status!==`success`){s.danger(h.formatMessage($.categoryReviewSaveErrorToast));return}return{kind:mn,transactionIds:e.map(e=>e.transaction_id)}}catch(e){s.danger(h.formatMessage($.categoryReviewSaveErrorToast),{error:e});return}}if(c===`open_entity_detail`&&X(l)&&l.category===fn){let e=X(l.extraParams)?l.extraParams:void 0;if(J(e)){await x(Lt(e));return}c=Ee,l={card_id:e?.card_id,prompt:l.query,system_hint:e?.system_hint}}if(c===`open_entity_detail`&&X(l)&&l.category===pn){let t=X(l.extraParams)?l.extraParams:void 0,n=typeof l.query==`string`?l.query:void 0,i=Rt(t?.transaction_ids);if(!n||!e)return;let a=typeof t?.card_id==`string`?t.card_id:`ledger-low-confidence-category-correction`,o=typeof t?.system_hint==`string`?f(t.system_hint)??U:U,{extraStreamParams:s,systemHints:c}=fe(o?[o]:[]);await Ge({callsiteId:`request_completion.mattress.ledger_category_correction_widget.1`,conversation:e,promptMessage:r(n,{starter_prompt_id:a,suggestion_type:y.Starter,...i.length>0?{ledger_transaction_ids:i}:{},...c.length>0?{system_hints:c}:{}}),eventSource:`mouse`,extraStreamParams:s});return}if(c!==`mattress_onboarding_card_click`){if(!c||!ln.has(c))return;await nt({actionType:c,payload:X(l)?l:void 0,context:{openEntitySidebar:S},library:un});return}if(!X(l))return;let u=typeof l.card_id==`string`?l.card_id:void 0;if(!u)return;let p=l.action;if(p!=null)return!Y(p)||!d?void 0:(T.addAction(`finance-landing-page.onboarding-card-click`,{cardId:u}),new Promise(e=>{let r=d({destination:p.destination,trackingContext:{entryPoint:`widget`,...u===gn?{entrypoint:`starter_prompt`}:{}},onSettled:e});r&&t&&u===gn&&g.logStructuredEvent(`ChatgptFinanceComponentInteraction`,{surfaceName:`home`,componentName:`starter_card`,componentId:gn,financeSessionId:t,tab:n,action:`clicked`}),r||e()}));if(l.thread_mode===`work`){if(typeof l.prompt!=`string`||a.current)return;a.current=At({cardId:u,conversation:e,navigate:i,prompt:l.prompt});return}if(Oe(u))return T.addAction(`finance-landing-page.onboarding-card-click`,{cardId:u}),d?new Promise(e=>{We({accountLinkingContext:{source:`widget`},createLedgerConnectorLink:m,ensurePluginEnabled:!0,navigate:i,onConversationReady:C,prompt:h.formatMessage(W),queryClient:o,startLedgerAccountFlow:t=>d({...t,onSettled:e})})||e()}):void 0;if(be(u)){await x();return}let _=typeof l.prompt==`string`?l.prompt:void 0,b=typeof l.system_hint==`string`?f(l.system_hint):void 0;_&&(T.addAction(`finance-landing-page.onboarding-card-click`,{cardId:u}),e&&(await Xe({cardId:u,conversation:e,prompt:_,systemHint:b}),C()))},[e,m,t,C,h,i,S,x,d,o,v,n,s])}}function Qt(e){"use forget";let t=(0,cn.c)(43),{className:n,isRepairLoading:r,transactionPrefetchRevision:i,onWidgetAction:a,widgetConfig:o}=e,c=r!==void 0&&r,l=(0,Z.useRef)(null),u;t[0]===o?u=t[1]:(u=Jt(o),t[0]=o,t[1]=u);let d=u,f=D(),p=se(),m=(0,Z.useRef)(!1),h=(0,Z.useRef)(!1),g;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(g=le(),t[2]=g):g=t[2];let _=g,v;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(v=Le(),t[3]=v):v=t[3];let y=v,b;t[4]!==f||t[5]!==p.locale||t[6]!==d||t[7]!==i||t[8]!==o.id?(b=()=>{if(y===0||i===0||!f||o.id!==`ledger_recent_transactions_widget`)return;let e=l.current?.getState();if(!e)return;let t={...e,sensitive_values_hidden:d??e.sensitive_values_hidden};_.setContext(ye(p.locale,t.sensitive_values_hidden)),Ot({store:_,state:t,clientThreadId:f.id,locale:p.locale,isCurrent:()=>m.current}).catch($t)},t[4]=f,t[5]=p.locale,t[6]=d,t[7]=i,t[8]=o.id,t[9]=b):b=t[9];let x=b,S,C;t[10]===x?(S=t[11],C=t[12]):(S=()=>(m.current=!0,h.current&&x(),()=>{m.current=!1}),C=[x],t[10]=x,t[11]=S,t[12]=C),(0,Z.useEffect)(S,C);let w;t[13]===a?w=t[14]:(w=async(e,t)=>{let n=await a?.(e,t);return Vt(n)&&Ht(l.current,n.transactionIds),n},t[13]=a,t[14]=w);let T=w,E,O;t[15]===d?(E=t[16],O=t[17]):(O=()=>{d!=null&&l.current?.setState({[ut]:d},!1)},E=[d],t[15]=d,t[16]=E,t[17]=O),(0,Z.useEffect)(O,E);let k;t[18]!==c||t[19]!==o.initial_state?.ledger_link_id?(k=()=>{typeof o.initial_state?.ledger_link_id==`string`&&l.current?.setState({ledger_repair_initializing:c},!1)},t[18]=c,t[19]=o.initial_state?.ledger_link_id,t[20]=k):k=t[20];let A=o.initial_state?.ledger_link_id,j;t[21]!==c||t[22]!==A?(j=[c,A],t[21]=c,t[22]=A,t[23]=j):j=t[23],(0,Z.useEffect)(k,j);let te=o.id,M;t[24]===n?M=t[25]:(M=s(`min-w-0`,Nt.widget,n),t[24]=n,t[25]=M);let N=o.widget,P;t[26]===o?P=t[27]:(P=qt(o),t[26]=o,t[27]=P);let F,I;t[28]===x?(F=t[29],I=t[30]):(F=()=>{h.current=!0,x()},I=e=>{e.scope===`root`&&h.current&&x()},t[28]=x,t[29]=F,t[30]=I);let L;t[31]!==T||t[32]!==N||t[33]!==P||t[34]!==F||t[35]!==I?(L=(0,Q.jsx)(gt,{widget:N,initialState:P,onAction:T,onInitialRenderCommit:F,onStateMutation:I,ref:l}),t[31]=T,t[32]=N,t[33]=P,t[34]=F,t[35]=I,t[36]=L):L=t[36];let R;t[37]!==M||t[38]!==L?(R=(0,Q.jsx)(`div`,{className:M,children:L}),t[37]=M,t[38]=L,t[39]=R):R=t[39];let z;return t[40]!==R||t[41]!==o.id?(z=(0,Q.jsx)(ee,{name:`Mattress Widget`,children:R},te),t[40]=R,t[41]=o.id,t[42]=z):z=t[42],z}function $t(){}function en(e){"use forget";let t=(0,cn.c)(92),{hasLedgerConnections:n,isLedgerAccountFlowLoading:r,loadingOauthLinkId:i,variant:a,starterAnalytics:o,tab:c,onWidgetAction:l,className:u}=e,f=se(),p=(0,Z.useId)(),[m,h]=(0,Z.useState)(!1),[_,v]=(0,Z.useState)(null),y=o?.financeSessionId,b=o?.viewedCreditStarterSession,x,S;t[0]!==_||t[1]!==y||t[2]!==c||t[3]!==b?(x=()=>{if(!(!_||!y||!b))return Ie(_,()=>{b.current!==y&&(b.current=y,g.logStructuredEvent(`ChatgptFinanceComponentViewed`,{surfaceName:`home`,componentName:`starter_card`,componentId:gn,financeSessionId:y,tab:c}))})},S=[_,y,c,b],t[0]=_,t[1]=y,t[2]=c,t[3]=b,t[4]=x,t[5]=S):(x=t[4],S=t[5]),(0,Z.useEffect)(x,S);let{sensitiveValuesHidden:C}=lt(),w;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(w={queryKey:me,queryFn:Ce,enabled:!1},t[6]=w):w=t[6];let T=L(w),E;t[7]===n?E=t[8]:(E=pe(n),t[7]=n,t[8]=E);let D;t[9]!==T.data||t[10]!==a?(D=()=>a===`dashboard`?$e(T.data??[]):void 0,t[9]=T.data,t[10]=a,t[11]=D):D=t[11];let O=a===`dashboard`,k;t[12]!==E||t[13]!==D||t[14]!==O?(k={queryKey:E,initialPageParam:0,queryFn:an,getNextPageParam:rn,refetchOnMount:`always`,refetchInterval:D,enabled:O},t[12]=E,t[13]=D,t[14]=O,t[15]=k):k=t[15];let A=ie(k),j;t[16]===n?j=t[17]:(j=[...ve,`onboarding`,n],t[16]=n,t[17]=j);let te=a===`onboarding`,M;t[18]!==j||t[19]!==te?(M={queryKey:j,queryFn:Se,refetchOnMount:!0,enabled:te},t[18]=j,t[19]=te,t[20]=M):M=t[20];let N=L(M);A.data?.pages;let P;t[21]!==A.data?.pages||t[22]!==N.data||t[23]!==a?(P=a===`dashboard`?A.data?.pages.flatMap(nn)??[]:N.data??[],t[21]=A.data?.pages,t[22]=N.data,t[23]=a,t[24]=P):P=t[24];let I;t[25]!==C||t[26]!==P?(I=st(P,C),t[25]=C,t[26]=P,t[27]=I):I=t[27];let R=Yt({widgets:I,variant:a}),z;t[28]===Symbol.for(`react.memo_cache_sentinel`)?(z=le(),t[28]=z):z=t[28];let B=z,ne;t[29]===Symbol.for(`react.memo_cache_sentinel`)?(ne=Le(),t[29]=ne):ne=t[29];let re=ne,ae;t[30]!==f.locale||t[31]!==C?(ae=ye(f.locale,C),t[30]=f.locale,t[31]=C,t[32]=ae):ae=t[32];let oe=ae,V;t[33]===T.data?V=t[34]:(V=T.data??[],t[33]=T.data,t[34]=V);let ce;t[35]===V?ce=t[36]:(ce=$e(V),t[35]=V,t[36]=ce);let ue=ce!=null,de,fe;t[37]!==oe||t[38]!==a?(de=()=>{if(a!==`dashboard`||re===0)return;B.setContext(oe);let e=De(),t=()=>{B.setActive(Re(),re)};return t(),document.addEventListener(`visibilitychange`,t),window.addEventListener(`online`,t),window.addEventListener(`offline`,t),e?.addEventListener(`change`,t),()=>{document.removeEventListener(`visibilitychange`,t),window.removeEventListener(`online`,t),window.removeEventListener(`offline`,t),e?.removeEventListener(`change`,t),B.setActive(!1),window.location.pathname.startsWith(`/finances`)||B.endVisit()}},fe=[oe,re,B,a],t[37]=oe,t[38]=a,t[39]=de,t[40]=fe):(de=t[39],fe=t[40]),(0,Z.useEffect)(de,fe);let he,ge;t[41]!==A.isFetching||t[42]!==ue?(he=()=>{B.setPaused(ue||A.isFetching)},ge=[B,ue,A.isFetching],t[41]=A.isFetching,t[42]=ue,t[43]=he,t[44]=ge):(he=t[43],ge=t[44]),(0,Z.useEffect)(he,ge);let _e=a===`dashboard`?A.isLoading:N.isLoading,be=(0,Z.useRef)(null),[xe,we]=(0,Z.useState)(!1),[Te,Ee]=(0,Z.useState)(!1),Oe;t[45]===Symbol.for(`react.memo_cache_sentinel`)?(Oe=()=>{let e=be.current;if(!e)return;let t=e.scrollWidth-e.clientWidth;we(e.scrollLeft>1),Ee(e.scrollLeft<t-1)},t[45]=Oe):Oe=t[45];let H=Oe,ke;t[46]===Symbol.for(`react.memo_cache_sentinel`)?(ke=e=>{let t=be.current;if(!t)return;let n=t.firstElementChild,r=n instanceof HTMLElement?n.getBoundingClientRect().width:0,i=getComputedStyle(t),a=Number.parseFloat(i.columnGap||i.gap)||0,o=r>0?Math.max(1,Math.floor((t.clientWidth+a)/(r+a))):1,s=r>0?(r+a)*o:t.clientWidth;t.scrollBy({left:e===`forward`?s:-s,behavior:`smooth`})},t[46]=ke):ke=t[46];let Ae=ke,je;if(t[47]===a?je=t[48]:(je=()=>{if(a!==`onboarding`)return;let e=be.current;if(!e)return;H();let t=requestAnimationFrame(H);e.addEventListener(`scroll`,H,{passive:!0});let n=typeof ResizeObserver>`u`?null:new ResizeObserver(H);return n?.observe(e),()=>{cancelAnimationFrame(t),e.removeEventListener(`scroll`,H),n?.disconnect()}},t[47]=a,t[48]=je),(0,Z.useEffect)(je,[H,a,R.length]),a===`onboarding`&&n&&m)return null;if(_e){let e;return t[49]!==u||t[50]!==n||t[51]!==a?(e=(0,Q.jsx)(on,{hasLedgerConnections:n,variant:a,className:u}),t[49]=u,t[50]=n,t[51]=a,t[52]=e):e=t[52],e}if(a===`dashboard`){let e=Tt([...R].sort(tn));if(e.length===0&&!A.hasNextPage&&!A.isFetchingNextPage){let e;return t[53]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Q.jsx)(sn,{}),t[53]=e):e=t[53],e}let n;t[54]===u?n=t[55]:(n=s(`flex flex-col gap-4`,u),t[54]=u,t[55]=n);let a;t[56]!==A.dataUpdatedAt||t[57]!==r||t[58]!==i||t[59]!==l?(a=e=>(0,Q.jsx)(`div`,{className:`grid grid-cols-1 gap-4 md:grid-cols-2`,children:e.items.map(e=>(0,Q.jsx)(_n,{className:e.span===2?`md:col-span-2`:void 0,isRepairLoading:r&&e.widgetConfig.initial_state?.ledger_link_id===i,widgetConfig:e.widgetConfig,transactionPrefetchRevision:e.widgetConfig.id===`ledger_recent_transactions_widget`?A.dataUpdatedAt:void 0,onWidgetAction:l},Gt(e.widgetConfig)))},Kt(e)),t[56]=A.dataUpdatedAt,t[57]=r,t[58]=i,t[59]=l,t[60]=a):a=t[60];let o;return t[61]!==A.fetchNextPage||t[62]!==A.hasNextPage||t[63]!==A.isFetchingNextPage?(o=(0,Q.jsx)(Fe,{isFetchingNextPage:A.isFetchingNextPage,hasNextPage:A.hasNextPage,fetchNextPage:A.fetchNextPage,bgColor:`bg-transparent`,rootMargin:`0px 0px 20% 0px`}),t[61]=A.fetchNextPage,t[62]=A.hasNextPage,t[63]=A.isFetchingNextPage,t[64]=o):o=t[64],(0,Q.jsxs)(`div`,{className:n,children:[e.map(a),o]})}if(R.length===0)return null;let Me=R.map(e=>(0,Q.jsx)(ee,{name:`Mattress Widget`,children:(0,Q.jsx)(`div`,{ref:e.id===`${hn}:${gn}`?v:void 0,className:s(`mattress-onboarding-widget-card h-[124px] min-w-0 shrink-0 snap-start sm:basis-[calc((100%-12px)/2)]`,R.length===1?`basis-full`:`basis-[78%] lg:basis-[calc((100%-24px)/3)]`),"data-testid":`mattress-onboarding-widget-cell`,children:(0,Q.jsx)(gt,{widget:e.widget,initialState:qt(e),onAction:l})})},Gt(e))),U;t[65]===Me?U=t[66]:(U=(0,Q.jsx)(`div`,{ref:be,className:`no-scrollbar flex w-full snap-x snap-mandatory items-stretch gap-3 overflow-x-auto pb-2`,"data-testid":`mattress-onboarding-widgets-grid`,children:Me}),t[65]=Me,t[66]=U);let Ne=U,W;t[67]===u?W=t[68]:(W=s(`flex w-full flex-col gap-4`,u),t[67]=u,t[68]=W);let Pe;t[69]===Symbol.for(`react.memo_cache_sentinel`)?(Pe=(0,Q.jsx)(F,{...$.onboardingSectionTitle}),t[69]=Pe):Pe=t[69];let G;t[70]===p?G=t[71]:(G=(0,Q.jsx)(`h2`,{id:p,className:`text-heading-3 text-token-text-primary font-medium`,children:Pe}),t[70]=p,t[71]=G);let K;t[72]!==xe||t[73]!==Te||t[74]!==n||t[75]!==f||t[76]!==Ae?(K=n?(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsx)(`button`,{"aria-label":f.formatMessage($.previousOnboardingPage),className:`hover:bg-token-interactive-bg-tertiary-press bg-token-bg-primary border-token-border-heavy focus-visible:outline-token-border-strong hidden size-9 items-center justify-center rounded-full border transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-30 sm:flex`,disabled:!xe,onClick:()=>Ae(`back`),type:`button`,children:(0,Q.jsx)(Be,{"aria-hidden":`true`,className:`icon-sm`})}),(0,Q.jsx)(`button`,{"aria-label":f.formatMessage($.nextOnboardingPage),className:`hover:bg-token-interactive-bg-tertiary-press bg-token-bg-primary border-token-border-heavy focus-visible:outline-token-border-strong hidden size-9 items-center justify-center rounded-full border transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-30 sm:flex`,disabled:!Te,onClick:()=>Ae(`forward`),type:`button`,children:(0,Q.jsx)(Ue,{"aria-hidden":`true`,className:`icon-sm`})})]}):null,t[72]=xe,t[73]=Te,t[74]=n,t[75]=f,t[76]=Ae,t[77]=K):K=t[77];let q;t[78]!==n||t[79]!==f?(q=n?(0,Q.jsx)(d,{"aria-label":f.formatMessage($.dismissOnboardingSection),className:`text-token-text-tertiary size-8 shrink-0`,onClick:()=>{h(!0)}}):null,t[78]=n,t[79]=f,t[80]=q):q=t[80];let J;t[81]!==K||t[82]!==q?(J=(0,Q.jsxs)(`div`,{className:`flex items-center gap-2`,children:[K,q]}),t[81]=K,t[82]=q,t[83]=J):J=t[83];let Y;t[84]!==G||t[85]!==J?(Y=(0,Q.jsxs)(`div`,{className:`flex items-center justify-between gap-3`,children:[G,J]}),t[84]=G,t[85]=J,t[86]=Y):Y=t[86];let ze;return t[87]!==Ne||t[88]!==p||t[89]!==W||t[90]!==Y?(ze=(0,Q.jsxs)(`section`,{"aria-labelledby":p,className:W,children:[Y,Ne]}),t[87]=Ne,t[88]=p,t[89]=W,t[90]=Y,t[91]=ze):ze=t[91],ze}function tn(e,t){return(e.dashboard_rank??2**53-1)-(t.dashboard_rank??2**53-1)}function nn(e){return e.widgets}function rn(e){return e.dashboard_next_offset??void 0}function an(e){let{pageParam:t}=e;return ze({offset:typeof t==`number`?t:0,limit:4})}function on(e){"use forget";let t=(0,cn.c)(11),{hasLedgerConnections:n,variant:r,className:i}=e,a=r===`dashboard`?`grid w-full self-stretch grid-cols-1 gap-4 md:grid-cols-2`:`no-scrollbar flex w-full snap-x snap-mandatory items-stretch gap-3 overflow-x-auto pb-2`,o=r===`onboarding`?`h-[124px] min-w-0 shrink-0 basis-[78%] snap-start animate-pulse rounded-xl bg-gray-200 sm:basis-[calc((100%-12px)/2)] lg:basis-[calc((100%-24px)/3)] dark:bg-gray-700`:`h-32 w-full animate-pulse rounded-xl bg-gray-200 dark:bg-gray-700`,c=r===`onboarding`?n?4:1:2,l;t[0]!==i||t[1]!==a?(l=s(a,i),t[0]=i,t[1]=a,t[2]=l):l=t[2];let u;if(t[3]!==o||t[4]!==c){let e;t[6]===o?e=t[7]:(e=(e,t)=>(0,Q.jsx)(`div`,{className:o,"data-testid":`mattress-widgets-loading-card`},t),t[6]=o,t[7]=e),u=Array.from({length:c},e),t[3]=o,t[4]=c,t[5]=u}else u=t[5];let d;return t[8]!==l||t[9]!==u?(d=(0,Q.jsx)(`div`,{"aria-hidden":`true`,className:l,"data-testid":`mattress-widgets-loading-placeholder`,children:u}),t[8]=l,t[9]=u,t[10]=d):d=t[10],d}function sn(){"use forget";let e=(0,cn.c)(2),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Q.jsx)(`p`,{className:`text-token-text-primary text-sm font-medium`,children:(0,Q.jsx)(F,{...$.dashboardEmptyStateTitle})}),e[0]=t):t=e[0];let n;return e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Q.jsxs)(`div`,{className:`border-token-border-light bg-token-bg-primary rounded-2xl border px-6 py-10 text-center`,children:[t,(0,Q.jsx)(`p`,{className:`text-token-text-tertiary mt-2 text-sm`,children:(0,Q.jsx)(F,{...$.dashboardEmptyStateDescription})})]}),e[1]=n):n=e[1],n}var cn,Z,Q,ln,un,dn,fn,pn,mn,hn,gn,$,_n,vn=e((()=>{cn=V(),E(),Je(),Ye(),S(),a(),He(),Ve(),H(),tt(),de(),rt(),G(),ge(),we(),Qe(),qe(),ct(),K(),Et(),dt(),mt(),q(),kt(),jt(),Ne(),Pe(),o(),ht(),u(),j(),A(),xe(),k(),v(),ce(),b(),oe(),Z=t(B()),z(),R(),m(),Pt(),Q=te(),ln=new Set([`open_entity_detail`,`open_url`]),un={open_entity_detail:et.open_entity_detail,open_url:et.open_url},dn=`mattress_ledger_open_account_link`,fn=`ledger_add_account_prompt`,pn=`ledger_category_correction_prompt`,mn=`ledger_category_review_saved`,hn=`ledger_finance_onboarding_widget`,gn=`finance-onboarding-connect-credit`,$=N({onboardingSectionTitle:{id:`mattress.widgets.onboarding.section.title`,defaultMessage:`Get started`},dismissOnboardingSection:{id:`mattress.widgets.onboarding.dismiss.button.label`,defaultMessage:`Close Get started`},previousOnboardingPage:{id:`mattress.widgets.onboarding.previous.button.label`,defaultMessage:`Previous page`},nextOnboardingPage:{id:`mattress.widgets.onboarding.next.button.label`,defaultMessage:`Next page`},dashboardEmptyStateTitle:{id:`mattress.widgets.dashboard.empty_state.title`,defaultMessage:`Your dashboard will populate as your Finances data becomes available`},dashboardEmptyStateDescription:{id:`mattress.widgets.dashboard.empty_state.description`,defaultMessage:`Connect accounts and sync recent transactions to see personalized finance widgets here.`},connectAccountErrorToast:{id:`mattress.widgets.account_connection.error.toast`,defaultMessage:`Error connecting account`},categoryReviewSaveErrorToast:{id:`mattress.widgets.category_review.save.error.toast`,defaultMessage:`Could not save category edits`}}),_n=(0,Z.memo)(Qt,(e,t)=>e.className===t.className&&e.isRepairLoading===t.isRepairLoading&&e.transactionPrefetchRevision===t.transactionPrefetchRevision&&e.onWidgetAction===t.onWidgetAction&&Jt(e.widgetConfig)===Jt(t.widgetConfig)&&Gt(e.widgetConfig)===Gt(t.widgetConfig))}));export{St as a,yt as i,vn as n,_t as o,bt as r,vt as s,Xt as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/24fd10e2-abtkt6x6e458c01b.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-dfpv67hlp00pbohr.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-cy5f8pl0g26s86so.js", "assets/30901919-7dzdc1ou0jtwkwpt.js", "assets/c470f5ab-d4g7lc53n1e1ao7o.js", "assets/0e5afe53-o2mcfq1ky1uaktz5.js", "assets/conversation-small-j5v9ogf2.css", "assets/c2675c8c-9bs3zsr3vq259es7.js", "assets/82782bc9-mb60yg1xlggwvqri.js", "assets/8b34dbc2-k1zgxrtsww83602u.js", "assets/global-modals-lv5n3ujm.css", "assets/09231af0-mb9azias91zaxsma.js", "assets/2f772deb-i8iagtnmm0oa4tfr.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $W as n,
+    BZ as r,
+    C1 as i,
+    Ew as a,
+    Fv as o,
+    J5 as s,
+    L1 as c,
+    Lv as l,
+    Mq as u,
+    Tw as d,
+    Uq as f,
+    VU as p,
+    Y5 as m,
+    YW as h,
+    _nt as g,
+    bG as _,
+    bW as v,
+    c1 as y,
+    eQ as b,
+    eY as x,
+    fF as S,
+    fc as C,
+    gc as w,
+    iat as T,
+    l1 as E,
+    mF as D,
+    nY as O,
+    oat as k,
+    yW as ee,
+    ynt as A,
+    zU as j
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    Bn as te,
+    G as M,
+    Ln as N,
+    N as P,
+    Nn as F,
+    Nt as I,
+    O as L,
+    Q as R,
+    Rn as z,
+    Vn as B,
+    cn as ne,
+    jt as re,
+    l as ie,
+    ln as ae,
+    s as oe,
+    wn as V,
+    zn as se
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    C1 as ce,
+    CAt as le,
+    DW as ue,
+    Fwt as de,
+    Hbt as fe,
+    Jkt as pe,
+    Nkt as me,
+    Okt as he,
+    PAt as ge,
+    PW as _e,
+    Pkt as ve,
+    SAt as ye,
+    SW as be,
+    Ubt as xe,
+    Ukt as Se,
+    Vkt as Ce,
+    Ykt as we,
+    Zkt as Te,
+    _W as Ee,
+    bAt as De,
+    bW as Oe,
+    dX as H,
+    eTn as ke,
+    fwt as Ae,
+    ggn as je,
+    hgn as Me,
+    kAt as U,
+    lW as Ne,
+    pW as W,
+    tTn as Pe,
+    uX as Fe,
+    uwt as G,
+    vW as K,
+    w1 as Ie,
+    wAt as q,
+    xAt as Le,
+    xW as J,
+    yAt as Re,
+    yW as Y,
+    zkt as ze
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+import {
+    Hv as Be,
+    TC as Ve,
+    Uv as He,
+    wC as Ue
+} from "./30901919-7dzdc1ou0jtwkwpt.js";
+import {
+    $o as We,
+    Am as Ge,
+    as as Ke,
+    es as qe,
+    is as Je,
+    km as Ye,
+    rs as Xe,
+    ts as Ze
+} from "./8b34dbc2-k1zgxrtsww83602u.js";
+import {
+    n as Qe,
+    t as $e
+} from "./4f866508-ok01gojch43k1jc4.js";
+import {
+    i as et,
+    n as tt
+} from "./04f387fb-hr81txxsrrvxpfhr.js";
+import {
+    c as nt,
+    r as rt
+} from "./fcf5f4da-m2640lkqt2mr4cfw.js";
+import {
+    i as it,
+    n as at
+} from "./a81eda00-bo1ba2e0lxrld4iq.js";
+import {
+    a as ot,
+    i as st,
+    o as ct,
+    s as lt,
+    t as ut
+} from "./4cf35c7a-fuufw34ubkxvq703.js";
+import {
+    n as dt,
+    r as ft
+} from "./a84119fb-g9ybdtndzt78bucn.js";
+import {
+    n as pt,
+    t as mt
+} from "./22f0e71d-fq2vpnfqg8u09itl.js";
+import {
+    n as ht,
+    t as gt
+} from "./c253861d-e3870rqaaisxc6r6.js";
+
+function _t(e) {
+    let t = new URLSearchParams(e).getAll(`credit_alert`);
+    if (t.length === 0) return;
+    let n = t[0];
+    return t.length === 1 && n && xt.test(n) ? n : null
+}
+
+function vt() {
+    try {
+        let e = sessionStorage.getItem(bt);
+        return e && xt.test(e) ? e : null
+    } catch {
+        return null
+    }
+}
+
+function yt(e) {
+    return _t(e) !== void 0 || vt() != null
+}
+var bt, xt, St = e((() => {
+    bt = `finances.credit-alert.login`, xt = /^[A-Za-z0-9_-]{86}$/
+}));
+
+function Ct(e) {
+    return e.span === 1 || e.span === 2 ? e.span : e.dashboard_placement === `half` ? 1 : 2
+}
+
+function wt(e, t) {
+    return {
+        widgetConfig: e,
+        span: t
+    }
+}
+
+function Tt(e) {
+    let t = [],
+        n = [...e];
+    for (; n.length > 0;) {
+        let e = n.shift();
+        if (e == null) break;
+        if (Ct(e) === 1) {
+            let r = n.findIndex(e => Ct(e) === 1);
+            if (r === -1) {
+                t.push({
+                    items: [wt(e, 2)]
+                });
+                continue
+            }
+            let [i] = n.splice(r, 1);
+            t.push({
+                items: [wt(e, 1), wt(i, 1)]
+            });
+            continue
+        }
+        t.push({
+            items: [wt(e, 2)]
+        })
+    }
+    return t
+}
+var Et = e((() => {}));
+
+function Dt(e) {
+    if (!Array.isArray(e.transactions)) return [];
+    let t = e.sensitive_values_hidden !== !1;
+    return e.transactions.slice(0, 10).flatMap(e => {
+        if (typeof e != `object` || !e || Array.isArray(e)) return [];
+        let n = e;
+        return n.detail_sidebar_enabled !== !0 || typeof n.transaction_id != `string` || !n.transaction_id.trim() || typeof n.display_name != `string` || !n.display_name.trim() ? [] : [it({
+            type: `entity`,
+            category: `ledger_detail_sidebar`,
+            messageId: `mattress-ledger-widget`,
+            contentReferenceStartIndex: 0,
+            query: `${n.display_name} transaction`,
+            extraParams: {
+                detail_type: `transaction`,
+                displayTitle: n.display_name,
+                alwaysShowFollowUpButton: !0,
+                disableFooterActions: !0,
+                transaction_id: n.transaction_id,
+                logo_url: n.logo_url ?? ``,
+                category_icon: n.category_icon,
+                merchant_name: n.merchant_name,
+                transaction_date: n.date,
+                date_label: n.date_label,
+                amount_label: t ? n.masked_amount_label : n.amount_label,
+                amount_value: t ? null : n.amount_value,
+                currency_code: n.currency_code,
+                account_id: n.account_id ?? ``,
+                account_name: n.account_detail,
+                primary_category: n.category_label,
+                primary_category_key: n.primary_category_key,
+                primary_category_id: n.primary_category_id,
+                category_confidence_level: n.category_confidence_level ?? ``,
+                category_confidence_label: n.category_confidence_label ?? ``,
+                pending: n.pending,
+                month_start: n.month_start,
+                sensitive_values_hidden: t
+            }
+        }, t)]
+    })
+}
+async function Ot({
+    store: e,
+    state: t,
+    clientThreadId: n,
+    locale: r,
+    isCurrent: i
+}) {
+    let a = e.getGeneration(),
+        {
+            createLedgerTransactionDetailRequest: o
+        } = await ne(async () => {
+            let {
+                createLedgerTransactionDetailRequest: e
+            } = await import(`./24fd10e2-abtkt6x6e458c01b.js`).then(e => (e.t(), e.a));
+            return {
+                createLedgerTransactionDetailRequest: e
+            }
+        }, __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]));
+    if (!i() || e.getGeneration() !== a) return;
+    let s = Dt(t).flatMap(e => {
+        let t = o({
+            clientThreadId: n,
+            conversationId: x(n) ?? n,
+            messageId: e.messageId,
+            category: `ledger_detail_sidebar`,
+            query: e.query,
+            extraParams: e.extraParams,
+            locale: r
+        });
+        return t ? [t] : []
+    });
+    e.enqueue(s)
+}
+var kt = e((() => {
+    at(), O(), ae()
+}));
+
+function At({
+    cardId: e,
+    conversation: t,
+    navigate: r,
+    prompt: a
+}) {
+    let o = i(),
+        s = o?.normalizedAccountUserId;
+    if (!n() || !o || !s || !t || !a.trim()) return !1;
+    let c = ue(a, {
+        accountId: o.id,
+        accountUserId: s
+    }, {
+        starter_prompt_id: e,
+        suggestion_type: y.Starter
+    });
+    return w({
+        conversation: t,
+        nextMode: _.TPP
+    }), je(r, {
+        params: new URLSearchParams({
+            surface: `work`
+        }),
+        state: c
+    }), !0
+}
+var jt = e((() => {
+        E(), Me(), c(), C(), h(), _e()
+    })),
+    Mt, Nt, Pt = e((() => {
+        Mt = `_9X9NtG_widget`, Nt = {
+            widget: Mt
+        }
+    }));
+
+function Ft(e) {
+    return !e.id || typeof e.id != `string` || !It(e.widget) ? !1 : e.widget.type.length > 0
+}
+
+function It(e) {
+    return e == null || Array.isArray(e) || typeof e != `object` || !(`type` in e) ? !1 : typeof e.type == `string`
+}
+
+function X(e) {
+    return typeof e == `object` && !!e && !Array.isArray(e)
+}
+
+function Lt(e) {
+    let t = e?.ledger_link_id;
+    return typeof t == `string` ? t : void 0
+}
+
+function Rt(e) {
+    return Array.isArray(e) ? e.filter(e => typeof e == `string`) : []
+}
+
+function zt(e) {
+    if (!X(e)) return null;
+    let t = typeof e.transaction_id == `string` ? e.transaction_id.trim() : ``,
+        n = typeof e.target_primary_category == `string` ? e.target_primary_category.trim() : ``;
+    return !t || !n ? null : {
+        transaction_id: t,
+        target_primary_category: n
+    }
+}
+
+function Bt(e) {
+    if (!X(e) || !Array.isArray(e.corrections)) return null;
+    let t = [];
+    for (let n of e.corrections) {
+        let e = zt(n);
+        if (!e) return null;
+        t.push(e)
+    }
+    return t
+}
+
+function Vt(e) {
+    return X(e) ? e.kind === mn && Array.isArray(e.transactionIds) && e.transactionIds.every(e => typeof e == `string`) : !1
+}
+
+function Ht(e, t) {
+    if (!e) return;
+    let n = e.getState();
+    if (!n || !Array.isArray(n.transactions)) return;
+    let r = new Set(t),
+        i = n.transactions.filter(e => {
+            if (!X(e)) return !0;
+            let t = typeof e.id == `string` ? e.id : void 0;
+            return t == null || !r.has(t)
+        });
+    e.setState({
+        transactions: i
+    }, !1)
+}
+
+function Ut(e) {
+    return e.id.startsWith(hn)
+}
+
+function Wt(e) {
+    let t = e.initial_state;
+    if (t == null) return null;
+    let n = {
+        ...t
+    };
+    return delete n[ut], Object.keys(n).length === 0 ? null : n
+}
+
+function Gt(e) {
+    return M([e.id, e.widget, Wt(e)])
+}
+
+function Kt(e) {
+    return e.items.map(e => Gt(e.widgetConfig)).join(`:`)
+}
+
+function qt(e) {
+    return e.initial_state ?? void 0
+}
+
+function Jt(e) {
+    let t = e.initial_state?.[ut];
+    return typeof t == `boolean` ? t : void 0
+}
+
+function Yt({
+    widgets: e,
+    variant: t
+}) {
+    return e.filter(e => Ft(e) ? t === `dashboard` ? !Ut(e) : Ut(e) : !1)
+}
+
+function Xt(e) {
+    "use forget";
+    let t = (0, cn.c)(9),
+        {
+            hasLedgerConnections: n,
+            variant: r,
+            starterAnalytics: i,
+            className: a
+        } = e,
+        o = r === void 0 ? `onboarding` : r,
+        s = re(`/finances/:tab`)?.params.tab ?? `dashboard`,
+        {
+            isLedgerAccountFlowLoading: c,
+            loadingOauthLinkId: l,
+            onWidgetAction: u
+        } = Zt(D(), i?.financeSessionId, s),
+        d;
+    return t[0] !== a || t[1] !== n || t[2] !== c || t[3] !== l || t[4] !== u || t[5] !== i || t[6] !== s || t[7] !== o ? (d = (0, Q.jsx)(en, {
+        hasLedgerConnections: n,
+        isLedgerAccountFlowLoading: c,
+        loadingOauthLinkId: l,
+        variant: o,
+        starterAnalytics: i,
+        tab: s,
+        onWidgetAction: u,
+        className: a
+    }), t[0] = a, t[1] = n, t[2] = c, t[3] = l, t[4] = u, t[5] = i, t[6] = s, t[7] = o, t[8] = d) : d = t[8], d
+}
+
+function Zt(e, t, n) {
+    "use no forget";
+    let i = I(),
+        a = (0, Z.useRef)(!1),
+        o = P(),
+        s = p(),
+        {
+            isLoading: c,
+            loadingOauthLinkId: u,
+            open: d
+        } = ft(),
+        m = Ke({
+            skipPostConnectExperience: !0,
+            productSku: ke.CONNECTOR_SETTING,
+            canReuseLink: l,
+            resolveDirectNoAuthConnector: Ze
+        }),
+        h = se(),
+        {
+            sensitiveValuesHidden: _,
+            setSensitiveValuesHidden: v
+        } = lt(),
+        b = (0, Z.useCallback)(async () => (o.getQueryData(me) ?? await o.fetchQuery({
+            queryKey: me,
+            queryFn: Ce
+        }) ?? []).find(Te)?.id, [o]),
+        x = (0, Z.useCallback)(async t => {
+            if (!(!e || !d)) try {
+                d({
+                    autoStartOauthLinkId: t ?? await b(),
+                    trackingContext: {
+                        entryPoint: `widget`
+                    }
+                })
+            } catch (e) {
+                s.danger(h.formatMessage($.connectAccountErrorToast), {
+                    error: e
+                })
+            }
+        }, [e, b, h, d, s]),
+        S = (0, Z.useCallback)(t => {
+            pt({
+                ...t,
+                conversation: e,
+                sensitiveValuesHidden: _
+            })
+        }, [e, _]),
+        C = (0, Z.useCallback)(() => {
+            o.invalidateQueries({
+                queryKey: he
+            })
+        }, [o]);
+    return {
+        isLedgerAccountFlowLoading: c,
+        loadingOauthLinkId: u,
+        onWidgetAction: (0, Z.useCallback)(async ({
+            type: c,
+            payload: l
+        }) => {
+            if (c === dn) {
+                if (!X(l)) return;
+                let e = typeof l.ledger_link_id == `string` ? l.ledger_link_id : void 0;
+                await x(e);
+                return
+            }
+            if (c === `ledger_set_sensitive_values_hidden`) {
+                let e = ot(l);
+                if (e == null) return;
+                v(e);
+                return
+            }
+            if (c === `ledger_category_review_save`) {
+                let e = Bt(l);
+                if (!e || e.length === 0) return;
+                try {
+                    if ((await Ae({
+                            actionType: c,
+                            payload: {
+                                corrections: e
+                            },
+                            toaster: s
+                        })).status !== `success`) {
+                        s.danger(h.formatMessage($.categoryReviewSaveErrorToast));
+                        return
+                    }
+                    return {
+                        kind: mn,
+                        transactionIds: e.map(e => e.transaction_id)
+                    }
+                } catch (e) {
+                    s.danger(h.formatMessage($.categoryReviewSaveErrorToast), {
+                        error: e
+                    });
+                    return
+                }
+            }
+            if (c === `open_entity_detail` && X(l) && l.category === fn) {
+                let e = X(l.extraParams) ? l.extraParams : void 0;
+                if (J(e)) {
+                    await x(Lt(e));
+                    return
+                }
+                c = Ee, l = {
+                    card_id: e?.card_id,
+                    prompt: l.query,
+                    system_hint: e?.system_hint
+                }
+            }
+            if (c === `open_entity_detail` && X(l) && l.category === pn) {
+                let t = X(l.extraParams) ? l.extraParams : void 0,
+                    n = typeof l.query == `string` ? l.query : void 0,
+                    i = Rt(t?.transaction_ids);
+                if (!n || !e) return;
+                let a = typeof t?.card_id == `string` ? t.card_id : `ledger-low-confidence-category-correction`,
+                    o = typeof t?.system_hint == `string` ? f(t.system_hint) ?? U : U,
+                    {
+                        extraStreamParams: s,
+                        systemHints: c
+                    } = fe(o ? [o] : []);
+                await Ge({
+                    callsiteId: `request_completion.mattress.ledger_category_correction_widget.1`,
+                    conversation: e,
+                    promptMessage: r(n, {
+                        starter_prompt_id: a,
+                        suggestion_type: y.Starter,
+                        ...i.length > 0 ? {
+                            ledger_transaction_ids: i
+                        } : {},
+                        ...c.length > 0 ? {
+                            system_hints: c
+                        } : {}
+                    }),
+                    eventSource: `mouse`,
+                    extraStreamParams: s
+                });
+                return
+            }
+            if (c !== `mattress_onboarding_card_click`) {
+                if (!c || !ln.has(c)) return;
+                await nt({
+                    actionType: c,
+                    payload: X(l) ? l : void 0,
+                    context: {
+                        openEntitySidebar: S
+                    },
+                    library: un
+                });
+                return
+            }
+            if (!X(l)) return;
+            let u = typeof l.card_id == `string` ? l.card_id : void 0;
+            if (!u) return;
+            let p = l.action;
+            if (p != null) return !Y(p) || !d ? void 0 : (T.addAction(`finance-landing-page.onboarding-card-click`, {
+                cardId: u
+            }), new Promise(e => {
+                let r = d({
+                    destination: p.destination,
+                    trackingContext: {
+                        entryPoint: `widget`,
+                        ...u === gn ? {
+                            entrypoint: `starter_prompt`
+                        } : {}
+                    },
+                    onSettled: e
+                });
+                r && t && u === gn && g.logStructuredEvent(`ChatgptFinanceComponentInteraction`, {
+                    surfaceName: `home`,
+                    componentName: `starter_card`,
+                    componentId: gn,
+                    financeSessionId: t,
+                    tab: n,
+                    action: `clicked`
+                }), r || e()
+            }));
+            if (l.thread_mode === `work`) {
+                if (typeof l.prompt != `string` || a.current) return;
+                a.current = At({
+                    cardId: u,
+                    conversation: e,
+                    navigate: i,
+                    prompt: l.prompt
+                });
+                return
+            }
+            if (Oe(u)) return T.addAction(`finance-landing-page.onboarding-card-click`, {
+                cardId: u
+            }), d ? new Promise(e => {
+                We({
+                    accountLinkingContext: {
+                        source: `widget`
+                    },
+                    createLedgerConnectorLink: m,
+                    ensurePluginEnabled: !0,
+                    navigate: i,
+                    onConversationReady: C,
+                    prompt: h.formatMessage(W),
+                    queryClient: o,
+                    startLedgerAccountFlow: t => d({
+                        ...t,
+                        onSettled: e
+                    })
+                }) || e()
+            }) : void 0;
+            if (be(u)) {
+                await x();
+                return
+            }
+            let _ = typeof l.prompt == `string` ? l.prompt : void 0,
+                b = typeof l.system_hint == `string` ? f(l.system_hint) : void 0;
+            _ && (T.addAction(`finance-landing-page.onboarding-card-click`, {
+                cardId: u
+            }), e && (await Xe({
+                cardId: u,
+                conversation: e,
+                prompt: _,
+                systemHint: b
+            }), C()))
+        }, [e, m, t, C, h, i, S, x, d, o, v, n, s])
+    }
+}
+
+function Qt(e) {
+    "use forget";
+    let t = (0, cn.c)(43),
+        {
+            className: n,
+            isRepairLoading: r,
+            transactionPrefetchRevision: i,
+            onWidgetAction: a,
+            widgetConfig: o
+        } = e,
+        c = r !== void 0 && r,
+        l = (0, Z.useRef)(null),
+        u;
+    t[0] === o ? u = t[1] : (u = Jt(o), t[0] = o, t[1] = u);
+    let d = u,
+        f = D(),
+        p = se(),
+        m = (0, Z.useRef)(!1),
+        h = (0, Z.useRef)(!1),
+        g;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (g = le(), t[2] = g) : g = t[2];
+    let _ = g,
+        v;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (v = Le(), t[3] = v) : v = t[3];
+    let y = v,
+        b;
+    t[4] !== f || t[5] !== p.locale || t[6] !== d || t[7] !== i || t[8] !== o.id ? (b = () => {
+        if (y === 0 || i === 0 || !f || o.id !== `ledger_recent_transactions_widget`) return;
+        let e = l.current?.getState();
+        if (!e) return;
+        let t = {
+            ...e,
+            sensitive_values_hidden: d ?? e.sensitive_values_hidden
+        };
+        _.setContext(ye(p.locale, t.sensitive_values_hidden)), Ot({
+            store: _,
+            state: t,
+            clientThreadId: f.id,
+            locale: p.locale,
+            isCurrent: () => m.current
+        }).catch($t)
+    }, t[4] = f, t[5] = p.locale, t[6] = d, t[7] = i, t[8] = o.id, t[9] = b) : b = t[9];
+    let x = b,
+        S, C;
+    t[10] === x ? (S = t[11], C = t[12]) : (S = () => (m.current = !0, h.current && x(), () => {
+        m.current = !1
+    }), C = [x], t[10] = x, t[11] = S, t[12] = C), (0, Z.useEffect)(S, C);
+    let w;
+    t[13] === a ? w = t[14] : (w = async (e, t) => {
+        let n = await a?.(e, t);
+        return Vt(n) && Ht(l.current, n.transactionIds), n
+    }, t[13] = a, t[14] = w);
+    let T = w,
+        E, O;
+    t[15] === d ? (E = t[16], O = t[17]) : (O = () => {
+        d != null && l.current?.setState({
+            [ut]: d
+        }, !1)
+    }, E = [d], t[15] = d, t[16] = E, t[17] = O), (0, Z.useEffect)(O, E);
+    let k;
+    t[18] !== c || t[19] !== o.initial_state?.ledger_link_id ? (k = () => {
+        typeof o.initial_state?.ledger_link_id == `string` && l.current?.setState({
+            ledger_repair_initializing: c
+        }, !1)
+    }, t[18] = c, t[19] = o.initial_state?.ledger_link_id, t[20] = k) : k = t[20];
+    let A = o.initial_state?.ledger_link_id,
+        j;
+    t[21] !== c || t[22] !== A ? (j = [c, A], t[21] = c, t[22] = A, t[23] = j) : j = t[23], (0, Z.useEffect)(k, j);
+    let te = o.id,
+        M;
+    t[24] === n ? M = t[25] : (M = s(`min-w-0`, Nt.widget, n), t[24] = n, t[25] = M);
+    let N = o.widget,
+        P;
+    t[26] === o ? P = t[27] : (P = qt(o), t[26] = o, t[27] = P);
+    let F, I;
+    t[28] === x ? (F = t[29], I = t[30]) : (F = () => {
+        h.current = !0, x()
+    }, I = e => {
+        e.scope === `root` && h.current && x()
+    }, t[28] = x, t[29] = F, t[30] = I);
+    let L;
+    t[31] !== T || t[32] !== N || t[33] !== P || t[34] !== F || t[35] !== I ? (L = (0, Q.jsx)(gt, {
+        widget: N,
+        initialState: P,
+        onAction: T,
+        onInitialRenderCommit: F,
+        onStateMutation: I,
+        ref: l
+    }), t[31] = T, t[32] = N, t[33] = P, t[34] = F, t[35] = I, t[36] = L) : L = t[36];
+    let R;
+    t[37] !== M || t[38] !== L ? (R = (0, Q.jsx)(`div`, {
+        className: M,
+        children: L
+    }), t[37] = M, t[38] = L, t[39] = R) : R = t[39];
+    let z;
+    return t[40] !== R || t[41] !== o.id ? (z = (0, Q.jsx)(ee, {
+        name: `Mattress Widget`,
+        children: R
+    }, te), t[40] = R, t[41] = o.id, t[42] = z) : z = t[42], z
+}
+
+function $t() {}
+
+function en(e) {
+    "use forget";
+    let t = (0, cn.c)(92),
+        {
+            hasLedgerConnections: n,
+            isLedgerAccountFlowLoading: r,
+            loadingOauthLinkId: i,
+            variant: a,
+            starterAnalytics: o,
+            tab: c,
+            onWidgetAction: l,
+            className: u
+        } = e,
+        f = se(),
+        p = (0, Z.useId)(),
+        [m, h] = (0, Z.useState)(!1),
+        [_, v] = (0, Z.useState)(null),
+        y = o?.financeSessionId,
+        b = o?.viewedCreditStarterSession,
+        x, S;
+    t[0] !== _ || t[1] !== y || t[2] !== c || t[3] !== b ? (x = () => {
+        if (!(!_ || !y || !b)) return Ie(_, () => {
+            b.current !== y && (b.current = y, g.logStructuredEvent(`ChatgptFinanceComponentViewed`, {
+                surfaceName: `home`,
+                componentName: `starter_card`,
+                componentId: gn,
+                financeSessionId: y,
+                tab: c
+            }))
+        })
+    }, S = [_, y, c, b], t[0] = _, t[1] = y, t[2] = c, t[3] = b, t[4] = x, t[5] = S) : (x = t[4], S = t[5]), (0, Z.useEffect)(x, S);
+    let {
+        sensitiveValuesHidden: C
+    } = lt(), w;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (w = {
+        queryKey: me,
+        queryFn: Ce,
+        enabled: !1
+    }, t[6] = w) : w = t[6];
+    let T = L(w),
+        E;
+    t[7] === n ? E = t[8] : (E = pe(n), t[7] = n, t[8] = E);
+    let D;
+    t[9] !== T.data || t[10] !== a ? (D = () => a === `dashboard` ? $e(T.data ?? []) : void 0, t[9] = T.data, t[10] = a, t[11] = D) : D = t[11];
+    let O = a === `dashboard`,
+        k;
+    t[12] !== E || t[13] !== D || t[14] !== O ? (k = {
+        queryKey: E,
+        initialPageParam: 0,
+        queryFn: an,
+        getNextPageParam: rn,
+        refetchOnMount: `always`,
+        refetchInterval: D,
+        enabled: O
+    }, t[12] = E, t[13] = D, t[14] = O, t[15] = k) : k = t[15];
+    let A = ie(k),
+        j;
+    t[16] === n ? j = t[17] : (j = [...ve, `onboarding`, n], t[16] = n, t[17] = j);
+    let te = a === `onboarding`,
+        M;
+    t[18] !== j || t[19] !== te ? (M = {
+        queryKey: j,
+        queryFn: Se,
+        refetchOnMount: !0,
+        enabled: te
+    }, t[18] = j, t[19] = te, t[20] = M) : M = t[20];
+    let N = L(M);
+    A.data?.pages;
+    let P;
+    t[21] !== A.data?.pages || t[22] !== N.data || t[23] !== a ? (P = a === `dashboard` ? A.data?.pages.flatMap(nn) ?? [] : N.data ?? [], t[21] = A.data?.pages, t[22] = N.data, t[23] = a, t[24] = P) : P = t[24];
+    let I;
+    t[25] !== C || t[26] !== P ? (I = st(P, C), t[25] = C, t[26] = P, t[27] = I) : I = t[27];
+    let R = Yt({
+            widgets: I,
+            variant: a
+        }),
+        z;
+    t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (z = le(), t[28] = z) : z = t[28];
+    let B = z,
+        ne;
+    t[29] === Symbol.for(`react.memo_cache_sentinel`) ? (ne = Le(), t[29] = ne) : ne = t[29];
+    let re = ne,
+        ae;
+    t[30] !== f.locale || t[31] !== C ? (ae = ye(f.locale, C), t[30] = f.locale, t[31] = C, t[32] = ae) : ae = t[32];
+    let oe = ae,
+        V;
+    t[33] === T.data ? V = t[34] : (V = T.data ?? [], t[33] = T.data, t[34] = V);
+    let ce;
+    t[35] === V ? ce = t[36] : (ce = $e(V), t[35] = V, t[36] = ce);
+    let ue = ce != null,
+        de, fe;
+    t[37] !== oe || t[38] !== a ? (de = () => {
+        if (a !== `dashboard` || re === 0) return;
+        B.setContext(oe);
+        let e = De(),
+            t = () => {
+                B.setActive(Re(), re)
+            };
+        return t(), document.addEventListener(`visibilitychange`, t), window.addEventListener(`online`, t), window.addEventListener(`offline`, t), e?.addEventListener(`change`, t), () => {
+            document.removeEventListener(`visibilitychange`, t), window.removeEventListener(`online`, t), window.removeEventListener(`offline`, t), e?.removeEventListener(`change`, t), B.setActive(!1), window.location.pathname.startsWith(`/finances`) || B.endVisit()
+        }
+    }, fe = [oe, re, B, a], t[37] = oe, t[38] = a, t[39] = de, t[40] = fe) : (de = t[39], fe = t[40]), (0, Z.useEffect)(de, fe);
+    let he, ge;
+    t[41] !== A.isFetching || t[42] !== ue ? (he = () => {
+        B.setPaused(ue || A.isFetching)
+    }, ge = [B, ue, A.isFetching], t[41] = A.isFetching, t[42] = ue, t[43] = he, t[44] = ge) : (he = t[43], ge = t[44]), (0, Z.useEffect)(he, ge);
+    let _e = a === `dashboard` ? A.isLoading : N.isLoading,
+        be = (0, Z.useRef)(null),
+        [xe, we] = (0, Z.useState)(!1),
+        [Te, Ee] = (0, Z.useState)(!1),
+        Oe;
+    t[45] === Symbol.for(`react.memo_cache_sentinel`) ? (Oe = () => {
+        let e = be.current;
+        if (!e) return;
+        let t = e.scrollWidth - e.clientWidth;
+        we(e.scrollLeft > 1), Ee(e.scrollLeft < t - 1)
+    }, t[45] = Oe) : Oe = t[45];
+    let H = Oe,
+        ke;
+    t[46] === Symbol.for(`react.memo_cache_sentinel`) ? (ke = e => {
+        let t = be.current;
+        if (!t) return;
+        let n = t.firstElementChild,
+            r = n instanceof HTMLElement ? n.getBoundingClientRect().width : 0,
+            i = getComputedStyle(t),
+            a = Number.parseFloat(i.columnGap || i.gap) || 0,
+            o = r > 0 ? Math.max(1, Math.floor((t.clientWidth + a) / (r + a))) : 1,
+            s = r > 0 ? (r + a) * o : t.clientWidth;
+        t.scrollBy({
+            left: e === `forward` ? s : -s,
+            behavior: `smooth`
+        })
+    }, t[46] = ke) : ke = t[46];
+    let Ae = ke,
+        je;
+    if (t[47] === a ? je = t[48] : (je = () => {
+            if (a !== `onboarding`) return;
+            let e = be.current;
+            if (!e) return;
+            H();
+            let t = requestAnimationFrame(H);
+            e.addEventListener(`scroll`, H, {
+                passive: !0
+            });
+            let n = typeof ResizeObserver > `u` ? null : new ResizeObserver(H);
+            return n?.observe(e), () => {
+                cancelAnimationFrame(t), e.removeEventListener(`scroll`, H), n?.disconnect()
+            }
+        }, t[47] = a, t[48] = je), (0, Z.useEffect)(je, [H, a, R.length]), a === `onboarding` && n && m) return null;
+    if (_e) {
+        let e;
+        return t[49] !== u || t[50] !== n || t[51] !== a ? (e = (0, Q.jsx)(on, {
+            hasLedgerConnections: n,
+            variant: a,
+            className: u
+        }), t[49] = u, t[50] = n, t[51] = a, t[52] = e) : e = t[52], e
+    }
+    if (a === `dashboard`) {
+        let e = Tt([...R].sort(tn));
+        if (e.length === 0 && !A.hasNextPage && !A.isFetchingNextPage) {
+            let e;
+            return t[53] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Q.jsx)(sn, {}), t[53] = e) : e = t[53], e
+        }
+        let n;
+        t[54] === u ? n = t[55] : (n = s(`flex flex-col gap-4`, u), t[54] = u, t[55] = n);
+        let a;
+        t[56] !== A.dataUpdatedAt || t[57] !== r || t[58] !== i || t[59] !== l ? (a = e => (0, Q.jsx)(`div`, {
+            className: `grid grid-cols-1 gap-4 md:grid-cols-2`,
+            children: e.items.map(e => (0, Q.jsx)(_n, {
+                className: e.span === 2 ? `md:col-span-2` : void 0,
+                isRepairLoading: r && e.widgetConfig.initial_state?.ledger_link_id === i,
+                widgetConfig: e.widgetConfig,
+                transactionPrefetchRevision: e.widgetConfig.id === `ledger_recent_transactions_widget` ? A.dataUpdatedAt : void 0,
+                onWidgetAction: l
+            }, Gt(e.widgetConfig)))
+        }, Kt(e)), t[56] = A.dataUpdatedAt, t[57] = r, t[58] = i, t[59] = l, t[60] = a) : a = t[60];
+        let o;
+        return t[61] !== A.fetchNextPage || t[62] !== A.hasNextPage || t[63] !== A.isFetchingNextPage ? (o = (0, Q.jsx)(Fe, {
+            isFetchingNextPage: A.isFetchingNextPage,
+            hasNextPage: A.hasNextPage,
+            fetchNextPage: A.fetchNextPage,
+            bgColor: `bg-transparent`,
+            rootMargin: `0px 0px 20% 0px`
+        }), t[61] = A.fetchNextPage, t[62] = A.hasNextPage, t[63] = A.isFetchingNextPage, t[64] = o) : o = t[64], (0, Q.jsxs)(`div`, {
+            className: n,
+            children: [e.map(a), o]
+        })
+    }
+    if (R.length === 0) return null;
+    let Me = R.map(e => (0, Q.jsx)(ee, {
+            name: `Mattress Widget`,
+            children: (0, Q.jsx)(`div`, {
+                ref: e.id === `${hn}:${gn}` ? v : void 0,
+                className: s(`mattress-onboarding-widget-card h-[124px] min-w-0 shrink-0 snap-start sm:basis-[calc((100%-12px)/2)]`, R.length === 1 ? `basis-full` : `basis-[78%] lg:basis-[calc((100%-24px)/3)]`),
+                "data-testid": `mattress-onboarding-widget-cell`,
+                children: (0, Q.jsx)(gt, {
+                    widget: e.widget,
+                    initialState: qt(e),
+                    onAction: l
+                })
+            })
+        }, Gt(e))),
+        U;
+    t[65] === Me ? U = t[66] : (U = (0, Q.jsx)(`div`, {
+        ref: be,
+        className: `no-scrollbar flex w-full snap-x snap-mandatory items-stretch gap-3 overflow-x-auto pb-2`,
+        "data-testid": `mattress-onboarding-widgets-grid`,
+        children: Me
+    }), t[65] = Me, t[66] = U);
+    let Ne = U,
+        W;
+    t[67] === u ? W = t[68] : (W = s(`flex w-full flex-col gap-4`, u), t[67] = u, t[68] = W);
+    let Pe;
+    t[69] === Symbol.for(`react.memo_cache_sentinel`) ? (Pe = (0, Q.jsx)(F, {
+        ...$.onboardingSectionTitle
+    }), t[69] = Pe) : Pe = t[69];
+    let G;
+    t[70] === p ? G = t[71] : (G = (0, Q.jsx)(`h2`, {
+        id: p,
+        className: `text-heading-3 text-token-text-primary font-medium`,
+        children: Pe
+    }), t[70] = p, t[71] = G);
+    let K;
+    t[72] !== xe || t[73] !== Te || t[74] !== n || t[75] !== f || t[76] !== Ae ? (K = n ? (0, Q.jsxs)(Q.Fragment, {
+        children: [(0, Q.jsx)(`button`, {
+            "aria-label": f.formatMessage($.previousOnboardingPage),
+            className: `hover:bg-token-interactive-bg-tertiary-press bg-token-bg-primary border-token-border-heavy focus-visible:outline-token-border-strong hidden size-9 items-center justify-center rounded-full border transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-30 sm:flex`,
+            disabled: !xe,
+            onClick: () => Ae(`back`),
+            type: `button`,
+            children: (0, Q.jsx)(Be, {
+                "aria-hidden": `true`,
+                className: `icon-sm`
+            })
+        }), (0, Q.jsx)(`button`, {
+            "aria-label": f.formatMessage($.nextOnboardingPage),
+            className: `hover:bg-token-interactive-bg-tertiary-press bg-token-bg-primary border-token-border-heavy focus-visible:outline-token-border-strong hidden size-9 items-center justify-center rounded-full border transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 disabled:cursor-not-allowed disabled:opacity-30 sm:flex`,
+            disabled: !Te,
+            onClick: () => Ae(`forward`),
+            type: `button`,
+            children: (0, Q.jsx)(Ue, {
+                "aria-hidden": `true`,
+                className: `icon-sm`
+            })
+        })]
+    }) : null, t[72] = xe, t[73] = Te, t[74] = n, t[75] = f, t[76] = Ae, t[77] = K) : K = t[77];
+    let q;
+    t[78] !== n || t[79] !== f ? (q = n ? (0, Q.jsx)(d, {
+        "aria-label": f.formatMessage($.dismissOnboardingSection),
+        className: `text-token-text-tertiary size-8 shrink-0`,
+        onClick: () => {
+            h(!0)
+        }
+    }) : null, t[78] = n, t[79] = f, t[80] = q) : q = t[80];
+    let J;
+    t[81] !== K || t[82] !== q ? (J = (0, Q.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [K, q]
+    }), t[81] = K, t[82] = q, t[83] = J) : J = t[83];
+    let Y;
+    t[84] !== G || t[85] !== J ? (Y = (0, Q.jsxs)(`div`, {
+        className: `flex items-center justify-between gap-3`,
+        children: [G, J]
+    }), t[84] = G, t[85] = J, t[86] = Y) : Y = t[86];
+    let ze;
+    return t[87] !== Ne || t[88] !== p || t[89] !== W || t[90] !== Y ? (ze = (0, Q.jsxs)(`section`, {
+        "aria-labelledby": p,
+        className: W,
+        children: [Y, Ne]
+    }), t[87] = Ne, t[88] = p, t[89] = W, t[90] = Y, t[91] = ze) : ze = t[91], ze
+}
+
+function tn(e, t) {
+    return (e.dashboard_rank ?? 2 ** 53 - 1) - (t.dashboard_rank ?? 2 ** 53 - 1)
+}
+
+function nn(e) {
+    return e.widgets
+}
+
+function rn(e) {
+    return e.dashboard_next_offset ?? void 0
+}
+
+function an(e) {
+    let {
+        pageParam: t
+    } = e;
+    return ze({
+        offset: typeof t == `number` ? t : 0,
+        limit: 4
+    })
+}
+
+function on(e) {
+    "use forget";
+    let t = (0, cn.c)(11),
+        {
+            hasLedgerConnections: n,
+            variant: r,
+            className: i
+        } = e,
+        a = r === `dashboard` ? `grid w-full self-stretch grid-cols-1 gap-4 md:grid-cols-2` : `no-scrollbar flex w-full snap-x snap-mandatory items-stretch gap-3 overflow-x-auto pb-2`,
+        o = r === `onboarding` ? `h-[124px] min-w-0 shrink-0 basis-[78%] snap-start animate-pulse rounded-xl bg-gray-200 sm:basis-[calc((100%-12px)/2)] lg:basis-[calc((100%-24px)/3)] dark:bg-gray-700` : `h-32 w-full animate-pulse rounded-xl bg-gray-200 dark:bg-gray-700`,
+        c = r === `onboarding` ? n ? 4 : 1 : 2,
+        l;
+    t[0] !== i || t[1] !== a ? (l = s(a, i), t[0] = i, t[1] = a, t[2] = l) : l = t[2];
+    let u;
+    if (t[3] !== o || t[4] !== c) {
+        let e;
+        t[6] === o ? e = t[7] : (e = (e, t) => (0, Q.jsx)(`div`, {
+            className: o,
+            "data-testid": `mattress-widgets-loading-card`
+        }, t), t[6] = o, t[7] = e), u = Array.from({
+            length: c
+        }, e), t[3] = o, t[4] = c, t[5] = u
+    } else u = t[5];
+    let d;
+    return t[8] !== l || t[9] !== u ? (d = (0, Q.jsx)(`div`, {
+        "aria-hidden": `true`,
+        className: l,
+        "data-testid": `mattress-widgets-loading-placeholder`,
+        children: u
+    }), t[8] = l, t[9] = u, t[10] = d) : d = t[10], d
+}
+
+function sn() {
+    "use forget";
+    let e = (0, cn.c)(2),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Q.jsx)(`p`, {
+        className: `text-token-text-primary text-sm font-medium`,
+        children: (0, Q.jsx)(F, {
+            ...$.dashboardEmptyStateTitle
+        })
+    }), e[0] = t) : t = e[0];
+    let n;
+    return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Q.jsxs)(`div`, {
+        className: `border-token-border-light bg-token-bg-primary rounded-2xl border px-6 py-10 text-center`,
+        children: [t, (0, Q.jsx)(`p`, {
+            className: `text-token-text-tertiary mt-2 text-sm`,
+            children: (0, Q.jsx)(F, {
+                ...$.dashboardEmptyStateDescription
+            })
+        })]
+    }), e[1] = n) : n = e[1], n
+}
+var cn, Z, Q, ln, un, dn, fn, pn, mn, hn, gn, $, _n, vn = e((() => {
+    cn = V(), E(), Je(), Ye(), S(), a(), He(), Ve(), H(), tt(), de(), rt(), G(), ge(), we(), Qe(), qe(), ct(), K(), Et(), dt(), mt(), q(), kt(), jt(), Ne(), Pe(), o(), ht(), u(), j(), A(), xe(), k(), v(), ce(), b(), oe(), Z = t(B()), z(), R(), m(), Pt(), Q = te(), ln = new Set([`open_entity_detail`, `open_url`]), un = {
+        open_entity_detail: et.open_entity_detail,
+        open_url: et.open_url
+    }, dn = `mattress_ledger_open_account_link`, fn = `ledger_add_account_prompt`, pn = `ledger_category_correction_prompt`, mn = `ledger_category_review_saved`, hn = `ledger_finance_onboarding_widget`, gn = `finance-onboarding-connect-credit`, $ = N({
+        onboardingSectionTitle: {
+            id: `mattress.widgets.onboarding.section.title`,
+            defaultMessage: `Get started`
+        },
+        dismissOnboardingSection: {
+            id: `mattress.widgets.onboarding.dismiss.button.label`,
+            defaultMessage: `Close Get started`
+        },
+        previousOnboardingPage: {
+            id: `mattress.widgets.onboarding.previous.button.label`,
+            defaultMessage: `Previous page`
+        },
+        nextOnboardingPage: {
+            id: `mattress.widgets.onboarding.next.button.label`,
+            defaultMessage: `Next page`
+        },
+        dashboardEmptyStateTitle: {
+            id: `mattress.widgets.dashboard.empty_state.title`,
+            defaultMessage: `Your dashboard will populate as your Finances data becomes available`
+        },
+        dashboardEmptyStateDescription: {
+            id: `mattress.widgets.dashboard.empty_state.description`,
+            defaultMessage: `Connect accounts and sync recent transactions to see personalized finance widgets here.`
+        },
+        connectAccountErrorToast: {
+            id: `mattress.widgets.account_connection.error.toast`,
+            defaultMessage: `Error connecting account`
+        },
+        categoryReviewSaveErrorToast: {
+            id: `mattress.widgets.category_review.save.error.toast`,
+            defaultMessage: `Could not save category edits`
+        }
+    }), _n = (0, Z.memo)(Qt, (e, t) => e.className === t.className && e.isRepairLoading === t.isRepairLoading && e.transactionPrefetchRevision === t.transactionPrefetchRevision && e.onWidgetAction === t.onWidgetAction && Jt(e.widgetConfig) === Jt(t.widgetConfig) && Gt(e.widgetConfig) === Gt(t.widgetConfig))
+}));
+export {
+    St as a, yt as i, vn as n, _t as o, bt as r, vt as s, Xt as t
+};
 //# sourceMappingURL=f19e94aa-i63orpsycpl74d0x.js.map

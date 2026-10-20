@@ -1,2 +1,110 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Hnt as t,JT as n,Jnt as r,qT as i}from"./4813494d-qsuygr73qjc6rh65.js";import{Pn as a,Tn as o,Vn as s,zn as c}from"./2340486e-komxp8tzs51ny4jj.js";import{Bt as l,zt as u}from"./c470f5ab-in0lllrdrzeo67gs.js";import{i as d,r as f}from"./ab92372e-dodnn2y0eo4rnnj7.js";function p(e){"use forget";let n=(0,h.c)(4),r;n[0]===e?r=n[1]:(r=e===void 0?{}:e,n[0]=e,n[1]=r);let i=r;if(!t(`1437685011`))return null;let a;return n[2]===i?a=n[3]:(a=(0,g.jsx)(m,{...i}),n[2]=i,n[3]=a),a}function m(e){"use forget";let t=(0,h.c)(8),{connectorId:n,redirectAfter:r}=e,o=r===void 0?`/codex/cloud/settings/environments`:r,s;t[0]!==n||t[1]!==o?(s={connectorId:n,redirectAfter:o},t[0]=n,t[1]=o,t[2]=s):s=t[2];let{isConnected:c,isLoading:l,error:f,openConnectorModal:p,refetch:m,gitlabConnectorCandidates:_}=d(s);if(c||l||_.length===0&&!f)return null;let v;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,g.jsx)(u,{"aria-hidden":!0,className:`icon`}),t[3]=v):v=t[3];let y;return t[4]!==f||t[5]!==p||t[6]!==m?(y=(0,g.jsxs)(`div`,{className:`draggable no-draggable-children bg-token-bg-secondary sticky top-0 z-20 flex min-h-12 w-full flex-row items-center justify-center gap-1.5 px-3 py-2`,children:[v,(0,g.jsx)(`span`,{className:`text-token-text-primary flex items-center text-sm font-normal`,children:f?(0,g.jsxs)(g.Fragment,{children:[(0,g.jsx)(a,{id:`wham.environments.gitlab_connection.alert.load_error.message`,defaultMessage:`Codex couldn't load your GitLab connection.`}),(0,g.jsx)(i,{type:`button`,color:`ghost`,size:`small`,className:`h-auto px-1 font-semibold underline`,onClick:m,children:(0,g.jsx)(a,{id:`wham.environments.gitlab_connection.alert.retry.button.label`,defaultMessage:`Retry`})})]}):(0,g.jsxs)(g.Fragment,{children:[(0,g.jsx)(a,{id:`wham.environments.gitlab_connection.alert.disconnected.message`,defaultMessage:`Your GitLab account is not connected.`}),(0,g.jsx)(i,{type:`button`,color:`ghost`,size:`small`,className:`h-auto px-1 font-semibold underline`,onClick:p,children:(0,g.jsx)(a,{id:`wham.environments.gitlab_connection.alert.connect.button.label`,defaultMessage:`Connect now`})})]})})]}),t[4]=f,t[5]=p,t[6]=m,t[7]=y):y=t[7],y}var h,g,_=e((()=>{h=o(),n(),l(),r(),f(),c(),g=s()}));export{_ as n,p as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Hnt as t,
+    JT as n,
+    Jnt as r,
+    qT as i
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Pn as a,
+    Tn as o,
+    Vn as s,
+    zn as c
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Bt as l,
+    zt as u
+} from "./c470f5ab-in0lllrdrzeo67gs.js";
+import {
+    i as d,
+    r as f
+} from "./ab92372e-dodnn2y0eo4rnnj7.js";
+
+function p(e) {
+    "use forget";
+    let n = (0, h.c)(4),
+        r;
+    n[0] === e ? r = n[1] : (r = e === void 0 ? {} : e, n[0] = e, n[1] = r);
+    let i = r;
+    if (!t(`1437685011`)) return null;
+    let a;
+    return n[2] === i ? a = n[3] : (a = (0, g.jsx)(m, {
+        ...i
+    }), n[2] = i, n[3] = a), a
+}
+
+function m(e) {
+    "use forget";
+    let t = (0, h.c)(8),
+        {
+            connectorId: n,
+            redirectAfter: r
+        } = e,
+        o = r === void 0 ? `/codex/cloud/settings/environments` : r,
+        s;
+    t[0] !== n || t[1] !== o ? (s = {
+        connectorId: n,
+        redirectAfter: o
+    }, t[0] = n, t[1] = o, t[2] = s) : s = t[2];
+    let {
+        isConnected: c,
+        isLoading: l,
+        error: f,
+        openConnectorModal: p,
+        refetch: m,
+        gitlabConnectorCandidates: _
+    } = d(s);
+    if (c || l || _.length === 0 && !f) return null;
+    let v;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, g.jsx)(u, {
+        "aria-hidden": !0,
+        className: `icon`
+    }), t[3] = v) : v = t[3];
+    let y;
+    return t[4] !== f || t[5] !== p || t[6] !== m ? (y = (0, g.jsxs)(`div`, {
+        className: `draggable no-draggable-children bg-token-bg-secondary sticky top-0 z-20 flex min-h-12 w-full flex-row items-center justify-center gap-1.5 px-3 py-2`,
+        children: [v, (0, g.jsx)(`span`, {
+            className: `text-token-text-primary flex items-center text-sm font-normal`,
+            children: f ? (0, g.jsxs)(g.Fragment, {
+                children: [(0, g.jsx)(a, {
+                    id: `wham.environments.gitlab_connection.alert.load_error.message`,
+                    defaultMessage: `Codex couldn't load your GitLab connection.`
+                }), (0, g.jsx)(i, {
+                    type: `button`,
+                    color: `ghost`,
+                    size: `small`,
+                    className: `h-auto px-1 font-semibold underline`,
+                    onClick: m,
+                    children: (0, g.jsx)(a, {
+                        id: `wham.environments.gitlab_connection.alert.retry.button.label`,
+                        defaultMessage: `Retry`
+                    })
+                })]
+            }) : (0, g.jsxs)(g.Fragment, {
+                children: [(0, g.jsx)(a, {
+                    id: `wham.environments.gitlab_connection.alert.disconnected.message`,
+                    defaultMessage: `Your GitLab account is not connected.`
+                }), (0, g.jsx)(i, {
+                    type: `button`,
+                    color: `ghost`,
+                    size: `small`,
+                    className: `h-auto px-1 font-semibold underline`,
+                    onClick: p,
+                    children: (0, g.jsx)(a, {
+                        id: `wham.environments.gitlab_connection.alert.connect.button.label`,
+                        defaultMessage: `Connect now`
+                    })
+                })]
+            })
+        })]
+    }), t[4] = f, t[5] = p, t[6] = m, t[7] = y) : y = t[7], y
+}
+var h, g, _ = e((() => {
+    h = o(), n(), l(), r(), f(), c(), g = s()
+}));
+export {
+    _ as n, p as t
+};
 //# sourceMappingURL=66a75a18-d3kt6c1ldvdpxm7t.js.map

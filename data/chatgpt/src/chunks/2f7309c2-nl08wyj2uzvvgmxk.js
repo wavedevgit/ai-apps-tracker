@@ -1,0 +1,127 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    F7 as t,
+    Hp as n,
+    S5 as r,
+    T8 as i,
+    _8 as a,
+    bi as o,
+    g8 as s,
+    z7 as c,
+    zm as l
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+import {
+    P9t as u,
+    QNt as d,
+    XNt as f
+} from "./conversation-small-ikg0dwuw782klweb.js";
+import {
+    n as p,
+    t as m
+} from "./3dcf3d3b-g4ex3dfhfia1hxwe.js";
+import {
+    i as h,
+    n as g
+} from "./560eefd0-ohfhqgei7qobfd0w.js";
+var _, v = e((() => {
+    s(), d(), _ = i(e => a(() => f().getSessionSnapshot(e) ?? null, e => f().subscribe(e), {
+        name: `libraryBackedDocumentSession:${e}`
+    }))
+}));
+async function y(e) {
+    let n = await t.safePatch(`/files/library/files/{library_file_id}`, {
+        parameters: {
+            path: {
+                library_file_id: e.libraryFileId
+            }
+        },
+        requestBody: {
+            ...e.fileName == null ? {} : {
+                file_name: e.fileName
+            },
+            inline_content: e.content,
+            ...e.expectedCurrentVersion == null ? {} : {
+                expected_current_version: e.expectedCurrentVersion
+            }
+        },
+        signal: e.abortSignal
+    });
+    return o(), {
+        fileId: n.file_id,
+        libraryFileId: n.id,
+        fileName: n.file_name,
+        mimeType: n.mime_type || e.mimeType || l(n.file_name),
+        versionNumber: typeof n.current_version_number == `number` ? n.current_version_number : null,
+        originConversationId: typeof n.origination_thread_id == `string` ? n.origination_thread_id : null,
+        libraryArtifactType: typeof n.library_artifact_type == `string` ? n.library_artifact_type : null
+    }
+}
+var b = e((() => {
+    u(), c(), n()
+}));
+async function x({
+    content: e,
+    contentFileId: t,
+    fileName: n,
+    libraryFileId: i,
+    mimeType: a,
+    queryClient: o,
+    updateLibraryTextFileOverride: s,
+    useOptimisticLock: c = !1
+}) {
+    let l = f(),
+        u = null;
+    return await l.enqueueSave({
+        libraryFileId: i,
+        save: async () => {
+            if (r(() => p(i))) return;
+            let d = l.beginSave({
+                libraryFileId: i,
+                content: e
+            });
+            if (d == null) return;
+            let f = new AbortController,
+                m = window.setTimeout(() => {
+                    f.abort()
+                }, S),
+                g = await (s ?? y)({
+                    libraryFileId: i,
+                    mimeType: a,
+                    content: e,
+                    expectedCurrentVersion: c ? d.expectedCurrentVersion : void 0,
+                    fileName: n,
+                    abortSignal: f.signal
+                }).catch(e => {
+                    throw window.clearTimeout(m), l.completeSaveError({
+                        libraryFileId: i,
+                        saveSequence: d.saveSequence
+                    }), h({
+                        error: e,
+                        fileId: t,
+                        libraryFileId: i,
+                        queryClient: o
+                    }), e
+                });
+            window.clearTimeout(m), u = {
+                completedSession: l.completeSaveSuccess({
+                    libraryFileId: i,
+                    saveSequence: d.saveSequence,
+                    submittedContent: e,
+                    fileId: g.fileId,
+                    versionNumber: g.versionNumber
+                }),
+                result: g,
+                submittedContent: e
+            }
+        }
+    }), u
+}
+var S, C = e((() => {
+    m(), s(), b(), d(), g(), S = 3e4
+}));
+export {
+    _ as i, x as n, v as r, C as t
+};
+//# sourceMappingURL=2f7309c2-nl08wyj2uzvvgmxk.js.map

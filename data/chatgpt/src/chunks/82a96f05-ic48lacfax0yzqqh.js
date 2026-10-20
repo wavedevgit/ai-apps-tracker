@@ -1,2 +1,65 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{$st as t,K3 as n,X3 as r,Y3 as i,fst as a}from"./4813494d-qsuygr73qjc6rh65.js";import{Ln as o,zn as s}from"./2340486e-komxp8tzs51ny4jj.js";import{Srn as c,_rn as l,hrn as u,mrn as d,vrn as f,xrn as p}from"./conversation-small-cawdu7il3ha6y70c.js";function m({isAuthenticated:e,isNativeMobileView:t,planType:n,disabledReason:r,eligiblePlanTypes:i}){return!e||t||n!==a.FREE&&n!==a.GO||r!==`plan_not_eligible`?null:i?.includes(a.PLUS)?`plus`:i?.includes(a.PRO)?`pro`:null}function h({isAuthenticated:e,isNativeMobileView:t,planType:n,disabledReason:a,eligiblePlanTypes:o}){return!e||t||n==null||r(n)||a!==`plan_not_eligible`||!o?.length||!o.some(i)||!o.every(r)?null:`enterprise`}function g(e){return e===`enterprise`?y:c()?d(e===`pro`?a.PRO:a.PLUS,`plugin-upgrade`):e===`pro`?v:_}var _,v,y,b,x,S,C=e((()=>{t(),l(),p(),u(),n(),s(),_=f.plus,v=f.pro,y=o({id:`chatgpt.plugins.directory.plan_upgrade.dialog.button.enterprise.label`,defaultMessage:`Upgrade to install`}),b=o({id:`chatgpt.plugins.directory.plan_upgrade.dialog.button.enterprise.contact_sales.label`,defaultMessage:`Contact sales`}),x=o({id:`chatgpt.plugins.directory.plan_upgrade.aria_label`,defaultMessage:`Upgrade to install {pluginName}`}),S=o({id:`chatgpt.plugins.directory.plan_upgrade.enterprise.aria_label`,defaultMessage:`Upgrade to install {pluginName}`})}));export{x as a,C as i,g as n,S as o,m as r,b as s,h as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $st as t,
+    K3 as n,
+    X3 as r,
+    Y3 as i,
+    fst as a
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Ln as o,
+    zn as s
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Srn as c,
+    _rn as l,
+    hrn as u,
+    mrn as d,
+    vrn as f,
+    xrn as p
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+
+function m({
+    isAuthenticated: e,
+    isNativeMobileView: t,
+    planType: n,
+    disabledReason: r,
+    eligiblePlanTypes: i
+}) {
+    return !e || t || n !== a.FREE && n !== a.GO || r !== `plan_not_eligible` ? null : i?.includes(a.PLUS) ? `plus` : i?.includes(a.PRO) ? `pro` : null
+}
+
+function h({
+    isAuthenticated: e,
+    isNativeMobileView: t,
+    planType: n,
+    disabledReason: a,
+    eligiblePlanTypes: o
+}) {
+    return !e || t || n == null || r(n) || a !== `plan_not_eligible` || !o?.length || !o.some(i) || !o.every(r) ? null : `enterprise`
+}
+
+function g(e) {
+    return e === `enterprise` ? y : c() ? d(e === `pro` ? a.PRO : a.PLUS, `plugin-upgrade`) : e === `pro` ? v : _
+}
+var _, v, y, b, x, S, C = e((() => {
+    t(), l(), p(), u(), n(), s(), _ = f.plus, v = f.pro, y = o({
+        id: `chatgpt.plugins.directory.plan_upgrade.dialog.button.enterprise.label`,
+        defaultMessage: `Upgrade to install`
+    }), b = o({
+        id: `chatgpt.plugins.directory.plan_upgrade.dialog.button.enterprise.contact_sales.label`,
+        defaultMessage: `Contact sales`
+    }), x = o({
+        id: `chatgpt.plugins.directory.plan_upgrade.aria_label`,
+        defaultMessage: `Upgrade to install {pluginName}`
+    }), S = o({
+        id: `chatgpt.plugins.directory.plan_upgrade.enterprise.aria_label`,
+        defaultMessage: `Upgrade to install {pluginName}`
+    })
+}));
+export {
+    x as a, C as i, g as n, S as o, m as r, b as s, h as t
+};
 //# sourceMappingURL=82a96f05-ic48lacfax0yzqqh.js.map

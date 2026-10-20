@@ -1,0 +1,27 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    ms as t,
+    vs as n,
+    wG as r,
+    xG as i
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+import {
+    In as a,
+    Rn as o
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function s(e) {
+    return `/?${new URLSearchParams({surface:i.TPP,[t]:`site`,prompt:e}).toString()}`
+}
+var c, l = e((() => {
+    o(), n(), r(), c = a({
+        id: `sites.empty_state.create_site_prompt.with_sites_mention`,
+        defaultMessage: `Make me a {sitesMention} about ...`
+    })
+}));
+export {
+    s as n, l as r, c as t
+};
+//# sourceMappingURL=7e73986a-lfrt8aig45zb9i3u.js.map

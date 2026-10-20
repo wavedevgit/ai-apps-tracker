@@ -1,2 +1,26 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Hn as n}from"./2340486e-komxp8tzs51ny4jj.js";function r(e,t=!1){let n=e==null&&t;return{isLoading:n||e?.status===`loading`,unavailable:!n&&(e==null||e.status===`superseded`),error:e?.status===`error`||void 0,data:e?.status===`success`?{url:e.url}:void 0}}var i,a,o=e((()=>{i=t(n()),a=(0,i.createContext)(void 0)}));export{o as n,r,a as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Hn as n
+} from "./2340486e-komxp8tzs51ny4jj.js";
+
+function r(e, t = !1) {
+    let n = e == null && t;
+    return {
+        isLoading: n || e?.status === `loading`,
+        unavailable: !n && (e == null || e.status === `superseded`),
+        error: e?.status === `error` || void 0,
+        data: e?.status === `success` ? {
+            url: e.url
+        } : void 0
+    }
+}
+var i, a, o = e((() => {
+    i = t(n()), a = (0, i.createContext)(void 0)
+}));
+export {
+    o as n, r, a as t
+};
 //# sourceMappingURL=12f672d1-m1h9q6syaghepks7.js.map

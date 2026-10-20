@@ -1,4 +1,3739 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/6175a897-h81gxcso66p4epcb.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-dfpv67hlp00pbohr.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/conversation-small-cy5f8pl0g26s86so.js","assets/30901919-7dzdc1ou0jtwkwpt.js","assets/c470f5ab-d4g7lc53n1e1ao7o.js","assets/0e5afe53-o2mcfq1ky1uaktz5.js","assets/conversation-small-j5v9ogf2.css","assets/af004db9-jdoi5p0ftep3sdlx.js","assets/a91a940c-k9u32x246pzc7sfi.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Ant as n,Az as r,C5 as i,C8 as a,CQ as o,Ew as s,Fat as c,I8 as l,J5 as u,JT as d,Jtt as f,L8 as p,M5 as m,N5 as h,P7 as g,Q0 as _,Qu as v,R7 as y,RU as b,Rk as x,SQ as S,Sot as C,Tw as w,Vk as T,Wnt as E,X0 as D,Xnt as O,Xu as k,Xy as A,Y0 as j,Y5 as M,YQ as N,Ynt as P,Zy as F,_N as I,_nt as L,aB as R,aC as ee,aF as te,aq as z,b8 as B,c0 as ne,dat as V,drt as H,el as re,fF as U,fq as ie,h8 as W,iB as G,iF as K,iat as ae,il as oe,jnt as se,jz as q,kat as ce,knt as J,l0 as le,lq as Y,lrt as X,nR as ue,nY as de,nnt as fe,o5 as pe,oC as me,oat as he,pY as ge,pq as Z,qJ as _e,qT as ve,rR as ye,sat as be,t2 as xe,urt as Se,vN as Q,w5 as Ce,x5 as we,xQ as Te,xot as Ee,ynt as De,zU as Oe}from"./4813494d-dfpv67hlp00pbohr.js";import{Bn as ke,In as Ae,Ln as je,N as Me,Nn as Ne,O as Pe,Q as Fe,Rn as $,Vn as Ie,cn as Le,it as Re,ln as ze,p as Be,s as Ve,wn as He,zn as Ue}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$k as We,AJ as Ge,Bst as Ke,DFn as qe,DNn as Je,Dhn as Ye,Ehn as Xe,Gft as Ze,H5t as Qe,II as $e,Jht as et,Jk as tt,K9t as nt,KGn as rt,Kft as it,Llt as at,NHn as ot,Njt as st,PHn as ct,Pjt as lt,Q5t as ut,QNt as dt,ROt as ft,Rbt as pt,SKt as mt,TFn as ht,TGt as gt,UOt as _t,Vst as vt,W5t as yt,XNt as bt,Xk as xt,YGn as St,YNt as Ct,Yht as wt,Zk as Tt,aT as Et,ahn as Dt,bFn as Ot,bKt as kt,chn as At,dA as jt,iT as Mt,ihn as Nt,jJ as Pt,lhn as Ft,mFn as It,nhn as Lt,ohn as Rt,q9t as zt,qNt as Bt,rhn as Vt,shn as Ht,uA as Ut,vIn as Wt,vKt as Gt,vL as Kt,wGt as qt,xFn as Jt,xIn as Yt,yKt as Xt,yL as Zt,zbt as Qt,zlt as $t}from"./conversation-small-cy5f8pl0g26s86so.js";import{Ax as en,CS as tn,Jy as nn,Nh as rn,Ph as an,Uh as on,Wh as sn,Yy as cn,_i as ln,eb as un,fi as dn,gi as fn,hi as pn,kx as mn,mi as hn,nS as gn,nl as _n,pi as vn,rS as yn,rl as bn,tb as xn,vi as Sn,wS as Cn,yi as wn}from"./30901919-7dzdc1ou0jtwkwpt.js";import{Em as Tn,Lb as En,Qy as Dn,sb as On,wm as kn}from"./8b34dbc2-k1zgxrtsww83602u.js";import{n as An,t as jn}from"./12a8bcb0-c9hpjc2ty9d378md.js";import{n as Mn,t as Nn}from"./af004db9-jdoi5p0ftep3sdlx.js";import{i as Pn,n as Fn,r as In,t as Ln}from"./429593da-nkbmnesnowmdlpp6.js";import{n as Rn,t as zn}from"./44246d2c-dgp7kxutj9d3oogu.js";import{o as Bn,r as Vn}from"./ede2e481-od67eg1jmad8xqx3.js";import{n as Hn,r as Un}from"./1af2f3f4-bzmpfifzgwv1mucp.js";import{i as Wn,n as Gn}from"./55904901-jldq49nzssgkpqgh.js";import{n as Kn,t as qn}from"./3dcf3d3b-m9girfky08mett6w.js";import{i as Jn,n as Yn,t as Xn}from"./cc79834b-nek79wvzr7ty113i.js";import{b as Zn,d as Qn,g as $n,n as er,p as tr,y as nr}from"./4117f58d-mjw4wvc73oldt8xn.js";import{_ as rr,a as ir,c as ar,g as or,h as sr,i as cr,l as lr,o as ur,r as dr,s as fr,u as pr}from"./31e01dd8-f2tk4edmhnwhnl2h.js";import{i as mr,n as hr,r as gr,t as _r}from"./2f7309c2-kry204irnbsi071c.js";import{n as vr,r as yr,t as br}from"./560eefd0-er495qv49u7e31py.js";import{n as xr,t as Sr}from"./25a66342-dvwfh58a5m2qay1h.js";import{r as Cr,t as wr,x as Tr,y as Er}from"./27597608-gd3ymqiu9shcfl27.js";import{a as Dr,o as Or}from"./203cffdc-fvzq9iwlw95y9heu.js";import{n as kr,t as Ar}from"./2ac7f54f-jzsm5rt2s8lmfbel.js";import{n as jr,r as Mr}from"./e54430f0-5zrphxauqk0p9zqh.js";import{i as Nr,r as Pr,t as Fr}from"./0e8433b5-lti5b9lz5r84u3ug.js";import{n as Ir,t as Lr}from"./058a5ba2-ez1dm3uknky7s9ol.js";import{n as Rr,t as zr}from"./017c9c5c-dnxpivxpr9qrcxwn.js";import{n as Br,r as Vr,t as Hr}from"./a91a940c-k9u32x246pzc7sfi.js";import{n as Ur,t as Wr}from"./4b2c6e28-n431d5euuvb9l3uy.js";function Gr(e,t){"use forget";let n=(0,Kr.c)(4),r=(0,qr.useRef)(e),i=(0,qr.useRef)(!1),a,o;return n[0]!==t||n[1]!==e?(a=()=>{!t&&!i.current&&(r.current=e,i.current=!0)},o=[e,t],n[0]=t,n[1]=e,n[2]=a,n[3]=o):(a=n[2],o=n[3]),(0,qr.useEffect)(a,o),r}var Kr,qr,Jr=e((()=>{Kr=He(),qr=t(Ie())}));function Yr(e){return typeof e==`function`?e():e}function Xr(e,t){return e<1&&(!(t instanceof ce)||t.status!==409)}function Zr(e){"use forget";let t=(0,ei.c)(78),{writingBlock:n,dirty:r,setDirty:i,persistWritingBlock:a,prepareSnapshot:o,onSave:s,onSaveError:c,delay:l,isStreaming:u,saveDisabled:d}=e,f=l===void 0?2e3:l,p=u!==void 0&&u,m=d!==void 0&&d,[h,g]=(0,ti.useState)(!1),[_,v]=(0,ti.useState)(null),[y,b]=(0,ti.useState)(null),[x,S]=(0,ti.useState)(!1),[C,w]=(0,ti.useState)(!1),T=(0,ti.useRef)(0),E=Gr(n.content,p),D=Gr(n.title,p),O;t[0]===n.metadata?O=t[1]:(O=JSON.stringify(n.metadata??{}),t[0]=n.metadata,t[1]=O);let k=Gr(O,p),A;t[2]===n.metadata?A=t[3]:(A=n.metadata??{},t[2]=n.metadata,t[3]=A);let j=Gr(A,p),M=(0,ti.useRef)(!1),N=(0,ti.useRef)(!1),P=(0,ti.useRef)(!1),F=(0,ti.useRef)(null),I=(0,ti.useRef)(!1),L=(0,ti.useRef)(0),R=(0,ti.useRef)(null),ee=(0,ti.useRef)(0),te;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(te=Promise.resolve(),t[4]=te):te=t[4];let z=(0,ti.useRef)(te),B;t[5]===a?B=t[6]:(B=(e,t)=>{let n=0,r=z.current.catch(Qr).then(async()=>{if(t!==ee.current)return;let r=async()=>{n+=1,T.current=n,n>1&&w(!0),await a(e)};try{await r()}catch(e){let n=e;if(t!==ee.current)return;if(!Xr(0,n))throw n;if(await new Promise($r),t!==ee.current)return;await r()}});return z.current=r,r},t[5]=a,t[6]=B);let ne=B,V;t[7]!==ne||t[8]!==m?(V=async e=>{let{generation:t,snapshot:n}=e;Yr(m)||await ne(n,t)},t[7]=ne,t[8]=m,t[9]=V):V=t[9];let H;t[10]!==s||t[11]!==i?(H=(e,t,n)=>{let{snapshot:r}=t;R.current===n?.myVersion&&!M.current&&F.current==null&&(i(!1),b(new Date),s?.(r))},t[10]=s,t[11]=i,t[12]=H):H=t[12];let re;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(re=()=>{T.current=0,w(!1);let e=L.current+=1;return R.current=e,g(!0),v(null),{myVersion:e}},t[13]=re):re=t[13];let U;t[14]!==c||t[15]!==i?(U=(e,t,n)=>{v(e instanceof Error?e.message:String(e)),i(!0),c?.(e)},t[14]=c,t[15]=i,t[16]=U):U=t[16];let{mutate:ie,mutateAsync:W}=Be({mutationFn:V,onSuccess:H,onMutate:re,onError:U,onSettled:(e,t,n,r)=>{if(T.current=0,w(!1),R.current===r?.myVersion&&(g(!1),R.current=null,M.current&&K.flush(),F.current!=null)){let e=F.current;F.current=null,S(!1),G({generation:ee.current,snapshot:e})}}}),G=ie,K=Ke(e=>{let{content:t,title:n,metadata:r}=e,i=o==null?{content:t,title:n,metadata:r}:o({requireDirtySession:N.current&&!P.current});if(M.current=!1,N.current=!1,P.current=!1,i==null){I.current=!1,S(F.current!=null);return}if(R.current!=null){F.current=i,S(!0);return}F.current=null,S(!1),G({generation:ee.current,snapshot:i})},f),ae;t[17]!==K||t[18]!==r||t[19]!==p||t[20]!==E||t[21]!==j||t[22]!==k||t[23]!==D||t[24]!==m||t[25]!==n.content||t[26]!==n.metadata||t[27]!==n.title?(ae=()=>{let e=n.metadata??{},t=JSON.stringify(e);if(p||Yr(m))return;if(n.content===E.current&&n.title===D.current&&t===k.current){I.current=!1;return}let i=n.title!==D.current||t!==k.current;if(E.current=n.content,D.current=n.title,j.current=e,k.current=t,!r){M.current=!1,I.current=!1,P.current=!1,S(!1);return}i&&(P.current=!0),N.current||(M.current=!0,S(!0),K({content:n.content,title:n.title,metadata:e})),I.current&&=(Promise.resolve().then(()=>{K.flush()}),!1)},t[17]=K,t[18]=r,t[19]=p,t[20]=E,t[21]=j,t[22]=k,t[23]=D,t[24]=m,t[25]=n.content,t[26]=n.metadata,t[27]=n.title,t[28]=ae):ae=t[28];let oe;t[29]!==K||t[30]!==r||t[31]!==p||t[32]!==E||t[33]!==j||t[34]!==k||t[35]!==D||t[36]!==m||t[37]!==n.content||t[38]!==n.metadata||t[39]!==n.title?(oe=[n.content,n.title,n.metadata,E,D,k,j,K,r,p,m],t[29]=K,t[30]=r,t[31]=p,t[32]=E,t[33]=j,t[34]=k,t[35]=D,t[36]=m,t[37]=n.content,t[38]=n.metadata,t[39]=n.title,t[40]=oe):oe=t[40],(0,ti.useEffect)(ae,oe);let se;t[41]===K?se=t[42]:(se=()=>()=>{K.cancel(),I.current=!1,N.current=!1,P.current=!1,S(!1)},t[41]=K,t[42]=se);let q;t[43]===K?q=t[44]:(q=[K],t[43]=K,t[44]=q),(0,ti.useEffect)(se,q);let ce;t[45]!==K||t[46]!==r?(ce=()=>{if(!r&&!M.current&&F.current==null){I.current=!1,S(!1);return}I.current=!0,M.current&&(K.flush(),I.current=!1)},t[45]=K,t[46]=r,t[47]=ce):ce=t[47];let J=ce,le;t[48]!==K||t[49]!==p||t[50]!==E||t[51]!==j||t[52]!==D||t[53]!==m?(le=()=>{p||Yr(m)||(N.current=!0,M.current=!0,S(!0),K({content:E.current,title:D.current,metadata:j.current}))},t[48]=K,t[49]=p,t[50]=E,t[51]=j,t[52]=D,t[53]=m,t[54]=le):le=t[54];let Y=le,X;t[55]!==K||t[56]!==E||t[57]!==j||t[58]!==k||t[59]!==D||t[60]!==W||t[61]!==m?(X=async e=>{if(Yr(m))return!1;let t=ee.current+=1;return K.cancel(),F.current=null,M.current=!1,I.current=!1,N.current=!1,P.current=!1,E.current=e.content,D.current=e.title,j.current=e.metadata,k.current=JSON.stringify(e.metadata),S(!1),await W({generation:t,snapshot:e}),!0},t[55]=K,t[56]=E,t[57]=j,t[58]=k,t[59]=D,t[60]=W,t[61]=m,t[62]=X):X=t[62];let ue=X,de;t[63]===Symbol.for(`react.memo_cache_sentinel`)?(de=()=>{I.current=!0},t[63]=de):de=t[63];let fe=de,pe;t[64]!==K||t[65]!==E||t[66]!==j||t[67]!==D||t[68]!==G?(pe=()=>{if(I.current=!1,M.current){K.flush();return}S(!1),N.current=!1,P.current=!1,R.current??G({generation:ee.current,snapshot:{content:E.current,title:D.current,metadata:j.current}})},t[64]=K,t[65]=E,t[66]=j,t[67]=D,t[68]=G,t[69]=pe):pe=t[69];let me=pe,he=!!y&&!r&&!h,ge;bb0:{if(C){ge=`retrying`;break bb0}if(h){ge=`saving`;break bb0}if(_){ge=`error`;break bb0}if(x){ge=`queued`;break bb0}if(r){ge=`dirty`;break bb0}if(he){ge=`saved`;break bb0}ge=`idle`}let Z=ge,_e;return t[70]!==_||t[71]!==J||t[72]!==me||t[73]!==Y||t[74]!==ue||t[75]!==y||t[76]!==Z?(_e={status:Z,savedAt:y,error:_,saveSnapshot:ue,flushPendingChanges:J,flushNextChange:fe,forceSave:me,notifyEditorInput:Y},t[70]=_,t[71]=J,t[72]=me,t[73]=Y,t[74]=ue,t[75]=y,t[76]=Z,t[77]=_e):_e=t[77],_e}function Qr(){}function $r(e){return setTimeout(e,3e3)}var ei,ti,ni=e((()=>{ei=He(),c(),Jr(),Ve(),ti=t(Ie()),vt()}));function ri(e){"use forget";let t=(0,ii.c)(101),{authoritativeContent:n,authoritativeContentKey:r,authoritativeContentVersion:i,contentFileId:a,isEditable:o,getFileNameForContent:s,libraryDocumentId:c,libraryFileId:l,mimeType:u,onSave:d,onSaveError:f,onSaveSuccess:p,updateLibraryTextFileOverride:m,useOptimisticLock:g,persistFileName:_,persistViaMultiplayer:v,multiplayerSession:y,writingBlock:b}=e,x=g!==void 0&&g,S=_!==void 0&&_,C=v!==void 0&&v,w;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(w=Bt(),t[0]=w):w=t[0];let T=w,E;t[1]===c?E=t[2]:(E=()=>mr(c),t[1]=c,t[2]=E);let D=h(E),O=(0,ai.useRef)(null),k=(0,ai.useRef)(void 0),A=Me(),j,M;t[3]===c?(j=t[4],M=t[5]):(j=()=>{let e=T.getSession(c);O.current=e?.dirty===!0?e.draftContent:null},M=[c,T],t[3]=c,t[4]=j,t[5]=M),(0,ai.useEffect)(j,M);let N,P;t[6]!==n||t[7]!==r||t[8]!==i||t[9]!==a||t[10]!==c?(N=()=>{n!=null&&(r==null?T.hydrateSessionFromLibrary({libraryFileId:c,content:n,fileId:a,versionNumber:i}):T.replaceWithAuthoritativeContent({libraryFileId:c,content:n,fileId:a,authoritativeContentKey:r,versionNumber:i}),T.getSessionSnapshot(c)?.dirty!==!0&&(O.current=null))},P=[n,r,i,a,c,T],t[6]=n,t[7]=r,t[8]=i,t[9]=a,t[10]=c,t[11]=N,t[12]=P):(N=t[11],P=t[12]),(0,ai.useEffect)(N,P);let F=D?.draftContent??n,I=F??``,L;t[13]!==I||t[14]!==b?(L={...b,content:I},t[13]=I,t[14]=b,t[15]=L):L=t[15];let R=L,ee;t[16]!==a||t[17]!==s||t[18]!==l||t[19]!==u||t[20]!==p||t[21]!==S||t[22]!==A||t[23]!==m||t[24]!==x?(ee=async e=>{let{content:t,title:n}=e;if(l==null)return!1;let r=await hr({content:t,contentFileId:a,fileName:S?s?.(t)??n:void 0,libraryFileId:l,mimeType:u,queryClient:A,updateLibraryTextFileOverride:m,useOptimisticLock:x});return r!=null&&p?.(r),r!=null},t[16]=a,t[17]=s,t[18]=l,t[19]=u,t[20]=p,t[21]=S,t[22]=A,t[23]=m,t[24]=x,t[25]=ee):ee=t[25];let te=ee,z;t[26]!==s||t[27]!==c||t[28]!==l||t[29]!==A?(z=async e=>{let{content:t,title:n}=e;if(l==null)return;let r=s?.(t)??n;if(r==null)return;let i=k.current??T.getSessionSnapshot(c)?.lastSavedContent??t,a=s?.(i)??r;r!==a&&(await Un({debounce:!1,fileName:r,initialFileName:a,libraryFileId:l,queryClient:A}),k.current=t)},t[26]=s,t[27]=c,t[28]=l,t[29]=A,t[30]=z):z=t[30];let B=z,ne;t[31]!==o||t[32]!==c||t[33]!==l||t[34]!==y||t[35]!==d||t[36]!==C||t[37]!==te||t[38]!==b.title?(ne=async()=>{T.flushPendingEditorChanges(c);let e=T.getSessionSnapshot(c);if(!o||l==null)return!1;if(C){if(y==null)throw Error(`The multiplayer document has not opened.`);return await y.save(),!0}return e==null||!e.dirty?!0:e.draftSource===`library`?await te({content:e.draftContent,title:b.title})?(d?.(),!0):T.getSessionSnapshot(c)?.dirty===!1:!1},t[31]=o,t[32]=c,t[33]=l,t[34]=y,t[35]=d,t[36]=C,t[37]=te,t[38]=b.title,t[39]=ne):ne=t[39];let V=ne,H;t[40]!==a||t[41]!==c?(H=e=>{let t=T.getSessionSnapshot(c);!e||t==null||t.hasPendingEditorChanges||(T.updateDraft({libraryFileId:c,content:t.draftContent,fileId:t.fileId??a,source:`library`}),O.current=null)},t[40]=a,t[41]=c,t[42]=H):H=t[42];let re=H,U;t[43]!==c||t[44]!==b.metadata||t[45]!==b.title?(U=e=>{let{requireDirtySession:t}=e;T.flushPendingEditorChanges(c);let n=T.getSessionSnapshot(c);if(!(n==null||t&&!n.dirty))return{content:n.draftContent,title:b.title,metadata:b.metadata??{}}},t[43]=c,t[44]=b.metadata,t[45]=b.title,t[46]=U):U=t[46];let ie=U,W;t[47]!==o||t[48]!==c||t[49]!==l||t[50]!==S||t[51]!==C?(W=()=>{let e=T.getSessionSnapshot(c);return C&&!S||!o||l==null||e==null||e.draftSource!==`library`},t[47]=o,t[48]=c,t[49]=l,t[50]=S,t[51]=C,t[52]=W):W=t[52];let G=W,K=D?.dirty??!1,ae;t[53]!==B||t[54]!==C||t[55]!==te?(ae=async e=>{C?await B(e):await te(e)},t[53]=B,t[54]=C,t[55]=te,t[56]=ae):ae=t[56];let oe=C?void 0:d,se;t[57]!==G||t[58]!==f||t[59]!==ie||t[60]!==re||t[61]!==K||t[62]!==ae||t[63]!==oe||t[64]!==R?(se={writingBlock:R,dirty:K,setDirty:re,prepareSnapshot:ie,persistWritingBlock:ae,delay:oi,saveDisabled:G,onSave:oe,onSaveError:f},t[57]=G,t[58]=f,t[59]=ie,t[60]=re,t[61]=K,t[62]=ae,t[63]=oe,t[64]=R,t[65]=se):se=t[65];let q=Zr(se),ce=q.saveSnapshot,J;t[66]!==ie||t[67]!==ce?(J=()=>{let e=ie({requireDirtySession:!0});return e==null?Promise.resolve(!1):ce(e)},t[66]=ie,t[67]=ce,t[68]=J):J=t[68];let le=J,Y;t[69]!==a||t[70]!==c?(Y=e=>{let t=T.getSessionSnapshot(c);T.updateDraft({libraryFileId:c,content:e,fileId:t?.fileId??a,source:`library`})},t[69]=a,t[70]=c,t[71]=Y):Y=t[71];let X=Y,ue=q.flushPendingChanges,de;t[72]!==ue||t[73]!==c?(de=()=>{T.flushPendingEditorChanges(c),ue()},t[72]=ue,t[73]=c,t[74]=de):de=t[74];let fe=de,pe;t[75]!==q||t[76]!==F||t[77]!==o||t[78]!==c||t[79]!==C?(pe=()=>{let e=T.getSessionSnapshot(c);C||!o||F==null||e?.dirty!==!0||e.draftSource!==`library`||e.inFlightSaveSequence!=null||O.current==null||O.current!==e.draftContent||e.draftContent!==F||(O.current=null,q.forceSave())},t[75]=q,t[76]=F,t[77]=o,t[78]=c,t[79]=C,t[80]=pe):pe=t[80];let me=D?.dirty,he=D?.draftContent,ge=D?.inFlightSaveSequence,Z;t[81]!==q||t[82]!==F||t[83]!==o||t[84]!==c||t[85]!==C||t[86]!==me||t[87]!==he||t[88]!==ge?(Z=[q,F,o,c,C,me,he,ge,T],t[81]=q,t[82]=F,t[83]=o,t[84]=c,t[85]=C,t[86]=me,t[87]=he,t[88]=ge,t[89]=Z):Z=t[89],(0,ai.useEffect)(pe,Z);let _e=D?.lastAppliedLivePatchResultKey,ve;return t[90]!==q.notifyEditorInput||t[91]!==q.status||t[92]!==F||t[93]!==fe||t[94]!==le||t[95]!==V||t[96]!==re||t[97]!==_e||t[98]!==X||t[99]!==R?(ve={autosaveStatus:q.status,content:F,externalContentUpdateKey:_e,flushPendingChanges:fe,notifyEditorInput:q.notifyEditorInput,retryPendingChanges:le,savePendingChanges:V,setDirty:re,updateDraftContent:X,writingBlock:R},t[90]=q.notifyEditorInput,t[91]=q.status,t[92]=F,t[93]=fe,t[94]=le,t[95]=V,t[96]=re,t[97]=_e,t[98]=X,t[99]=R,t[100]=ve):ve=t[100],ve}var ii,ai,oi,si=e((()=>{ii=He(),Hn(),W(),gr(),Ct(),_r(),ni(),Ve(),ai=t(Ie()),oi=2500}));function ci(e){"use forget";let t=(0,li.c)(52),{editorHandleRef:n,isInteractionDisabled:r,onWriteLikeMeResult:i,writingBlockId:a}=e,[o,s]=(0,ui.useState)(!1),c;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(c={canUndo:!1,canRedo:!1,isHistoryInteractionDisabled:!1,hasActiveMagicEditPreview:!1},t[0]=c):c=t[0];let[l,u]=(0,ui.useState)(c),[d,f]=(0,ui.useState)(!1),[p,m]=(0,ui.useState)(!1),[h,g]=(0,ui.useState)(!1),[_,v]=(0,ui.useState)(!1),y=(0,ui.useRef)(!1),b;t[1]!==i||t[2]!==a?(b=(e,t,n,r)=>e==null||e!==a?!1:r==null?i?.(t,n)??!1:i?.(t,n,r)??!1,t[1]=i,t[2]=a,t[3]=b):b=t[3];let x=Q(b),S;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(S=(e,t)=>{u(e),e.canUndo||e.canRedo?f(!0):t?.preserveSessionEditsWhenEmpty!==!0&&f(!1),e.canRedo&&m(!0),!e.canUndo&&!e.canRedo&&m(!1)},t[4]=S):S=t[4];let C=S,w;t[5]===n?w=t[6]:(w=()=>{let e=n.current?.getHistoryState();e&&C(e)},t[5]=n,t[6]=w);let T=w,E;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(E=e=>{C(e)},t[7]=E):E=t[7];let D=E,O;t[8]!==n||t[9]!==l.isHistoryInteractionDisabled||t[10]!==T?(O=()=>{l.isHistoryInteractionDisabled||(m(!0),n.current?.undo({restoreFocus:!1,scrollIntoView:!1}),T())},t[8]=n,t[9]=l.isHistoryInteractionDisabled,t[10]=T,t[11]=O):O=t[11];let k=O,A;t[12]!==n||t[13]!==l.isHistoryInteractionDisabled||t[14]!==T?(A=()=>{l.isHistoryInteractionDisabled||(n.current?.redo({restoreFocus:!1,scrollIntoView:!1}),T())},t[12]=n,t[13]=l.isHistoryInteractionDisabled,t[14]=T,t[15]=A):A=t[15];let j=A,M;t[16]===n?M=t[17]:(M=()=>{f(!0);let e=n.current?.getHistoryState();e&&C(e,{preserveSessionEditsWhenEmpty:!0})},t[16]=n,t[17]=M);let N=M,P=l.canRedo||p,F=l.isHistoryInteractionDisabled===!0,I;t[18]!==n||t[19]!==r?(I=(e,t)=>{if(e){if(r)return;n.current?.beginHeaderMagicEdit?.()===!0&&s(!0);return}s(!1),n.current?.cancelHeaderMagicEdit({cancelRequest:t?.cancelRequest})},t[18]=n,t[19]=r,t[20]=I):I=t[20];let L=I,R;t[21]===n?R=t[22]:(R=async e=>await n.current?.submitHeaderMagicEdit(e)??!1,t[21]=n,t[22]=R);let ee=R,te;t[23]!==n||t[24]!==x||t[25]!==r||t[26]!==a?(te=(e,t)=>{if(r||y.current)return Promise.resolve(!1);y.current=!0,v(!0);let i=a,o=n.current,s=o?.flushPendingChanges(),c=t?.primaryOption!=null&&s!=null?{...t,primaryOption:{...t.primaryOption,content:s}}:t;return(o?.requestHeaderMagicEditReplacement?.(di,{personalizationEnabled:!0})??Promise.resolve(null)).then(t=>t==null||!x(i,e,t,c)?!1:(o?.setWritingBlockContent(t),!0)).finally(()=>{y.current=!1,v(!1)})},t[23]=n,t[24]=x,t[25]=r,t[26]=a,t[27]=te):te=t[27];let z=te,B;t[28]===n?B=t[29]:(B=()=>{n.current?.cancelHeaderMagicEdit({releaseSelection:!1})},t[28]=n,t[29]=B);let ne=B,V;t[30]===Symbol.for(`react.memo_cache_sentinel`)?(V=e=>{g(e)},t[30]=V):V=t[30];let H=V,re=l.hasActiveMagicEditPreview===!0,U;t[31]!==d||t[32]!==l.canRedo||t[33]!==l.canUndo||t[34]!==F||t[35]!==o||t[36]!==r||t[37]!==ne||t[38]!==L||t[39]!==j||t[40]!==ee||t[41]!==k||t[42]!==P||t[43]!==re?(U={isComposerOpen:o,onComposerOpenChange:L,onSubmittingChange:H,isInteractionDisabled:r,isHeaderInteractionDisabled:F,hasHistorySessionEdits:d,hasActiveMagicEditPreview:re,canUndo:l.canUndo,canRedo:l.canRedo,shouldShowRedoButton:P,onUndo:k,onRedo:j,onSubmitComposerInstruction:ee,onCancelComposerSubmit:ne},t[31]=d,t[32]=l.canRedo,t[33]=l.canUndo,t[34]=F,t[35]=o,t[36]=r,t[37]=ne,t[38]=L,t[39]=j,t[40]=ee,t[41]=k,t[42]=P,t[43]=re,t[44]=U):U=t[44];let ie=U,W;return t[45]!==o||t[46]!==h||t[47]!==_||t[48]!==ie||t[49]!==N||t[50]!==z?(W={magicEditControls:ie,isHeaderMagicEditComposerOpen:o,isHeaderMagicEditSubmitting:h,isWriteLikeMeSubmitting:_,onHistoryStateChange:D,onWriteLikeMeAction:z,markSessionEdited:N},t[45]=o,t[46]=h,t[47]=_,t[48]=ie,t[49]=N,t[50]=z,t[51]=W):W=t[51],W}var li,ui,di,fi=e((()=>{li=He(),ui=t(Ie()),I(),di=`Rewrite this using my writing style.`}));function pi({messageId:e,resourceUpdate:t,result:n}){return{messageId:e,libraryFileId:n.libraryFileId,fileId:Tt(t),versionNumber:t.contentRevisionId!=null&&t.contentRevisionId!==t.resourceRevisionId?null:n.newVersionNumber,content:t.content}}function mi(e){return typeof e==`object`&&!!e&&!Array.isArray(e)}function hi(e){let t=e.metadata?.library_file_update,n=e.metadata?.invoked_resource?.resource_uri,r=n===`/library/finalize_uploads`||n===`/connector_openai_library/implicit_link::connector_openai_library/finalize_uploads`;if(e.author.role!==`tool`||t==null||!r&&n!==`/library/replace_library_file`&&n!==`/connector_openai_library/implicit_link::connector_openai_library/replace_library_file`)return null;let i;if(e.content.content_type===`code`)i=e.content.text;else if(e.content.content_type===`text`&&e.content.parts.every(e=>typeof e==`string`))i=e.content.parts.join(``);else return null;try{let n=JSON.parse(i);if(!mi(n)||!mi(n.result))return null;let a=n.result.structuredContent;if(!mi(a))return null;let o=r?a.results:[a];if(!Array.isArray(o))return null;let s=o.find(e=>mi(e)&&e.status===`succeeded`&&e.operation===`replace_library_file`&&e.library_file_id===t.library_file_id&&e.file_id===t.file_id);if(s==null)return null;let c=s.current_version_number;return typeof c!=`number`||!Number.isInteger(c)||c<0?null:{messageId:e.id,libraryFileId:t.library_file_id,fileId:t.file_id,versionNumber:c}}catch{return null}}function gi(e,t=_i(e)){let n=new Map([...t.values()].map(e=>[e.messageId,e])),r=new Map;for(let t of e){let e=n.get(t.id),i=e==null?hi(t):pi(e);i!=null&&r.set(i.libraryFileId,i)}return r}function _i(e){let t=new Map;for(let n of e){let e=N(n);if(e?.status!==`created`)continue;let r=xt(n.metadata?.resource_updates,e.libraryFileId);r!=null&&t.set(e.libraryFileId,{messageId:n.id,result:e,resourceUpdate:r})}return t}function vi(e,t){for(let n of e.values())if(n.resourceUpdate.supersedes.some(e=>e.message_id===t.message_id&&e.instance_id===t.instance_id))return n}function yi(e,t){if(e.size!==t.size)return!1;for(let[n,r]of e){let e=t.get(n);if(e==null||r.messageId!==e.messageId||r.result.newVersionNumber!==e.result.newVersionNumber||r.resourceUpdate.instanceId!==e.resourceUpdate.instanceId||r.resourceUpdate.resourceRevisionId!==e.resourceUpdate.resourceRevisionId||r.resourceUpdate.contentRevisionId!==e.resourceUpdate.contentRevisionId||r.resourceUpdate.content!==e.resourceUpdate.content||r.resourceUpdate.displayMode!==e.resourceUpdate.displayMode||r.resourceUpdate.supersedes.length!==e.resourceUpdate.supersedes.length||r.resourceUpdate.supersedes.some((t,n)=>{let r=e.resourceUpdate.supersedes[n];return t.message_id!==r?.message_id||t.instance_id!==r?.instance_id||t.ref_index!==r?.ref_index}))return!1}return!0}var bi,xi,Si=e((()=>{U(),v(),We(),tt(),W(),l(),bi=K(e=>B(()=>_i(k(e).flatMap(e=>e.messages)),{equals:yi})),xi=K(e=>B(()=>gi(k(e).flatMap(e=>e.messages),bi(e)),{equals:(e,t)=>e.size===t.size&&[...e].every(([e,n])=>p(n,t.get(e)))}))}));function Ci(e){return`result`in e?pi(e):e}function wi(e){let{messageId:t,fileId:n}=Ci(e);return`${t}:${n}`}function Ti(e=ki){let t=new Set,n=new Map,r=new Map,i=new Set;function a(e){let{libraryFileId:t}=Ci(e.update),n=wi(e.update),i=r.get(t);i?.resultKey!==n&&(i!=null&&clearTimeout(i.timeout),r.set(t,{resultKey:n,timeout:setTimeout(()=>{r.get(t)?.resultKey===n&&(r.delete(t),o(e))},Oi)}))}function o({update:o,queryClient:s,resultMode:c=`live`,serverThreadId:l}){let{content:u,fileId:d,libraryFileId:f,versionNumber:p}=Ci(o),m=wi(o),h=r.get(f);if(h!=null&&h.resultKey!==m&&(clearTimeout(h.timeout),r.delete(f)),t.has(m)||(t.add(m),e.invalidateCaches({fileId:d,libraryFileId:f,queryClient:s})),we(()=>Kn(f)))return`multiplayer`;let g=e.getSessionStore(),_=g.getSessionSnapshot(f);if(_==null)return`no_session`;if(_.dirty||_.inFlightSaveSequence!=null)return`deferred`;if(n.get(f)?.resultKey===m||r.get(f)?.resultKey===m||i.has(m))return`duplicate`;let v=g.observeExternalCommit({isHistoricalResult:c===`historical`,libraryFileId:f,resultKey:m,versionNumber:p});if(v.status!==`accepted`)return v.status;if(n.get(f)?.abortController.abort(),u!=null){i.add(m);try{let e=g.applyAuthoritativeExternalCommit({content:u,fileId:d,libraryFileId:f,livePatchResultKey:c===`live`?m:void 0,observationToken:v.observationToken,resultKey:m});return e===`skipped_local_changes`||e===`skipped_stale_version`?`deferred`:e}finally{i.delete(m)}}if(l==null)return`invalidated`;let y=new AbortController;return n.set(f,{abortController:y,resultKey:m}),e.fetchAndApplyObservedExternalSession({abortSignal:y.signal,fileId:d,libraryFileId:f,livePatchResultKey:c===`live`?m:void 0,observationToken:v.observationToken,resultKey:m,serverThreadId:l}).catch(()=>{y.signal.aborted||a({update:o,queryClient:s,resultMode:c,serverThreadId:l})}).finally(()=>{n.get(f)?.abortController===y&&n.delete(f)}),`syncing`}return{ingest:o,dispose(){for(let{abortController:e}of n.values())e.abort();n.clear();for(let{timeout:e}of r.values())clearTimeout(e);r.clear(),i.clear()}}}function Ei(e,t){let n=Ti(t),r=0,i=!1,a=null,o=null,s=!1,c=new Map;function l(){if(!s){s=!0;for(let e of t.resourceUpdates$().values()){let t=wi(e);c.has(t)||c.set(t,`historical`)}}}function u(r=t.resourceUpdates$(),i=e.serverId$()){let a=t.getQueryClient();for(let e of r.values()){let t=wi(e);c.has(t)||c.set(t,`live`),n.ingest({update:e,queryClient:a,resultMode:c.get(t),serverThreadId:i})}}return{retain$(s){s!=null&&(c.set(s,`live`),i&&u()),r+=1,i||(i=!0,l(),u(),o=t.getSessionStore().subscribe(()=>{u()}),a=pe(()=>({serverThreadId:e.serverId$(),resourceUpdates:t.resourceUpdates$()}),({serverThreadId:e,resourceUpdates:t})=>{u(t,e)}));let d=!1;return()=>{d||(d=!0,--r,r===0&&queueMicrotask(()=>{r!==0||!i||(i=!1,a?.(),a=null,o?.(),o=null,n.dispose())}))}}}}function Di(e,t){return Ai(e).retain$(t)}var Oi,ki,Ai,ji=e((()=>{qn(),U(),W(),Ce(),Ct(),Si(),vr(),Oi=1e3,ki={getSessionStore:Bt,invalidateCaches:yr,fetchAndApplyObservedExternalSession:br},Ai=te(e=>Ei(e,{...ki,getQueryClient:i,resourceUpdates$:()=>xi(e)}))}));function Mi({messageId:e,conversation:t,writingBlockId:n}){let r=ge(t?.id,t=>{if(!(!e||!t))return _e.getTree(t).getMaybeMessage(e)})?.metadata?.writing_blocks,i=o(r!=null&&Object.hasOwn(r,n)?r[n]:void 0);return Be({mutationFn:async({feedbackText:r,feedbackReasons:a})=>{let o=we(()=>t?.serverId$());try{await g.safePost(`/conversation/message/writing-blocks/feedback`,{requestBody:{message_id:e??`unknown`,conversation_id:o??`unknown`,writing_block_id:n,feedback:r,checked_reasons:a.length>0?a:void 0,user_edited_writing_block:i},authOption:be.SendIfAvailable})}catch{return}}})}var Ni=e((()=>{W(),de(),V(),y(),S(),Ve()}));function Pi(){let e=J.getItem(n.HideWritingBlockFeedback);if(e===!0)return J.removeItem(n.HideWritingBlockFeedback),!1;let t=Li(e);return t==null?(e!=null&&J.removeItem(n.HideWritingBlockFeedback),!1):Date.now()>=t+Ii?(J.removeItem(n.HideWritingBlockFeedback),!1):!0}function Fi(){Ri.set(!0),J.setItem(n.HideWritingBlockFeedback,new Date().toISOString())}var Ii,Li,Ri,zi=e((()=>{W(),se(),Ii=10080*60*1e3,Li=e=>{if(typeof e==`number`)return Number.isFinite(e)?e:null;if(typeof e==`string`){let t=Date.parse(e);return Number.isNaN(t)?null:t}if(e instanceof Date){let t=e.getTime();return Number.isNaN(t)?null:t}return null},Ri=a(Pi,{getServerFallback:()=>!1})}));function Bi(e){"use forget";let t=(0,Ui.c)(74),{messageId:n,conversation:r,writingBlockId:i,initialOpen:a,initialFeedbackText:o}=e,s=Ue(),c;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(c=b(),t[0]=c):c=t[0];let l=c,u=h(Hi),[d,f]=(0,Wi.useState)(o??``),[p,m]=(0,Wi.useState)(a??!1),[g,_]=(0,Wi.useState)(!1),v;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(v=()=>{m(!0)},t[1]=v):v=t[1];let y=Ke(v,500),x;t[2]===y?x=t[3]:(x=()=>{y()},t[2]=y,t[3]=x);let S=Q(x),C;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(C=()=>{_(!0)},t[4]=C):C=t[4];let T=Q(C),E;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(E=e=>{let t=e.relatedTarget;t instanceof Node&&e.currentTarget.contains(t)||_(!1)},t[5]=E):E=t[5];let D=Q(E),O;t[6]===y?O=t[7]:(O=()=>{y.cancel(),m(!1),_(!1)},t[6]=y,t[7]=O);let k=Q(O),A;t[8]===k?A=t[9]:(A=e=>{if(e){m(!0);return}k()},t[8]=k,t[9]=A);let j=Q(A),M;t[10]!==g||t[11]!==y?(M=()=>{g||y.cancel()},t[10]=g,t[11]=y,t[12]=M):M=t[12];let N=Q(M),P;t[13]!==r||t[14]!==n||t[15]!==i?(P={messageId:n,conversation:r,writingBlockId:i},t[13]=r,t[14]=n,t[15]=i,t[16]=P):P=t[16];let{mutate:F}=Mi(P),I;t[17]!==d||t[18]!==k||t[19]!==s||t[20]!==F?(I=()=>{let e=d.trim();e!==``&&(F({feedbackText:e,feedbackReasons:[]}),l.success(s.formatMessage({id:`writingBlocks.feedback.toastSubmitted`,defaultMessage:`Your feedback has been submitted`})),f(``),k(),Fi())},t[17]=d,t[18]=k,t[19]=s,t[20]=F,t[21]=I):I=t[21];let L=Q(I),R;t[22]===s?R=t[23]:(R=s.formatMessage({id:`writingBlocks.feedback.button`,defaultMessage:`What is this?`}),t[22]=s,t[23]=R);let ee=R,te;t[24]===d?te=t[25]:(te=d.trim(),t[24]=d,t[25]=te);let z=te===``,B;t[26]===s?B=t[27]:(B=s.formatMessage({id:`writingBlocks.feedback.placeholder`,defaultMessage:`What did you like or dislike?`}),t[26]=s,t[27]=B);let ne=B;if(u)return null;let V;t[28]===Symbol.for(`react.memo_cache_sentinel`)?(V=(0,Gi.jsx)(G,{className:`icon ms-1`,"aria-hidden":`true`}),t[28]=V):V=t[28];let H;t[29]!==ee||t[30]!==N||t[31]!==S?(H=(0,Gi.jsx)(ot.BasicTrigger,{asChild:!0,children:(0,Gi.jsxs)(ve,{color:`ghost`,size:`medium`,"aria-label":ee,contentWrapperClassName:`items-center`,className:`text-token-text-tertiary hover:text-token-text-secondary -me-4 border-0 font-sans hover:bg-transparent! active:bg-transparent!`,type:`button`,onMouseEnter:S,onMouseLeave:N,children:[ee,V]})}),t[29]=ee,t[30]=N,t[31]=S,t[32]=H):H=t[32];let re;t[33]===Symbol.for(`react.memo_cache_sentinel`)?(re=(0,Gi.jsx)(`div`,{className:`flex-1 font-bold`,children:(0,Gi.jsx)(Ne,{id:`writingBlocks.feedback.title`,defaultMessage:`This is a writing block, a new feature we’re testing`})}),t[33]=re):re=t[33];let U;t[34]===s?U=t[35]:(U=s.formatMessage({id:`9htpP0`,defaultMessage:`Close writing block feedback popup`}),t[34]=s,t[35]=U);let ie;t[36]!==k||t[37]!==U?(ie=(0,Gi.jsxs)(`div`,{className:`mb-2 flex items-start justify-between gap-2`,children:[re,(0,Gi.jsx)(w,{onClick:k,"aria-label":U,className:`text-token-text-primary -m-1 -me-2 rounded-full!`})]}),t[36]=k,t[37]=U,t[38]=ie):ie=t[38];let W;t[39]===Symbol.for(`react.memo_cache_sentinel`)?(W=(0,Gi.jsx)(`div`,{className:`text-xs leading-relaxed`,children:(0,Gi.jsx)(Ne,{id:`writingBlocks.feedback.description`,defaultMessage:`Tell us what’s working and what’s not. The more specific the feedback, the better.`})}),t[39]=W):W=t[39];let K;t[40]===ie?K=t[41]:(K=(0,Gi.jsxs)(`div`,{className:`mx-2 pt-1 pb-3 text-sm`,children:[ie,W]}),t[40]=ie,t[41]=K);let ae;t[42]===L?ae=t[43]:(ae=e=>{e.preventDefault(),L()},t[42]=L,t[43]=ae);let oe;t[44]===Symbol.for(`react.memo_cache_sentinel`)?(oe=(0,Gi.jsx)(`label`,{htmlFor:`writing-block-feedback-text`,className:`sr-only`,children:(0,Gi.jsx)(Ne,{id:`writingBlocks.feedback.additionalLabel`,defaultMessage:`Additional feedback`})}),t[44]=oe):oe=t[44];let se;t[45]===Symbol.for(`react.memo_cache_sentinel`)?(se=e=>f(e.target.value),t[45]=se):se=t[45];let q;t[46]!==ne||t[47]!==d?(q=(0,Gi.jsx)(Mt,{autoFocus:!0,id:`writing-block-feedback-text`,name:`writing-block-feedback-text`,value:d,onChange:se,placeholder:ne,rows:3,className:`border-token-border-heavy mt-1 self-stretch rounded-md bg-transparent px-2 py-2 text-sm focus:ring-0 focus:outline-none focus-visible:ring-0`}),t[46]=ne,t[47]=d,t[48]=q):q=t[48];let ce;t[49]===z?ce=t[50]:(ce=e=>{z&&e.preventDefault()},t[49]=z,t[50]=ce);let J;t[51]===s?J=t[52]:(J=s.formatMessage({defaultMessage:`Submit`,id:`writingBlocks.feedback.submitAriaLabel`}),t[51]=s,t[52]=J);let le;t[53]===Symbol.for(`react.memo_cache_sentinel`)?(le=(0,Gi.jsx)(Ne,{id:`writingBlocks.feedback.submitLabel`,defaultMessage:`Share feedback`}),t[53]=le):le=t[53];let Y;t[54]!==z||t[55]!==ce||t[56]!==J?(Y=(0,Gi.jsx)(ve,{type:`submit`,size:`small`,className:`mt-2 mb-1 self-center px-4 py-2`,visuallyDisabled:z,"aria-disabled":z,onClick:ce,"aria-label":J,children:le}),t[54]=z,t[55]=ce,t[56]=J,t[57]=Y):Y=t[57];let X;t[58]!==ae||t[59]!==q||t[60]!==Y?(X=(0,Gi.jsx)(`div`,{className:`relative flex flex-col justify-between rounded-lg`,children:(0,Gi.jsxs)(`form`,{onSubmit:ae,className:`relative flex flex-col px-2`,children:[oe,q,Y]})}),t[58]=ae,t[59]=q,t[60]=Y,t[61]=X):X=t[61];let ue;t[62]!==N||t[63]!==S||t[64]!==D||t[65]!==T||t[66]!==K||t[67]!==X?(ue=(0,Gi.jsx)(ot.Portal,{children:(0,Gi.jsxs)(ot.Content,{side:`top`,align:`end`,sideOffset:0,alignOffset:0,onCloseAutoFocus:Vi,className:`flex w-70 flex-col p-2`,onMouseEnter:S,onMouseLeave:N,onFocus:T,onBlur:D,children:[K,X]})}),t[62]=N,t[63]=S,t[64]=D,t[65]=T,t[66]=K,t[67]=X,t[68]=ue):ue=t[68];let de;return t[69]!==j||t[70]!==p||t[71]!==H||t[72]!==ue?(de=(0,Gi.jsxs)(ot.Root,{onOpenChange:j,open:p,modal:!1,children:[H,ue]}),t[69]=j,t[70]=p,t[71]=H,t[72]=ue,t[73]=de):de=t[73],de}function Vi(e){e.preventDefault()}function Hi(){return Ri()}var Ui,Wi,Gi,Ki=e((()=>{Ui=He(),d(),s(),ct(),R(),Et(),m(),Oe(),I(),Ni(),zi(),Wi=t(Ie()),$(),vt(),Gi=ke()}));function qi({activeOwnerKind:e,hasSidePaneOwner:t,isFocusedInSidePane:n,sidePaneWidth:r,viewportWidth:i}){return n||t&&(e!==`library-content`||r>=Wt(i))}var Ji,Yi=e((()=>{Yt(),It(),W(),Xt(),Ji=(e=!1)=>e&&we(mt)||!e&&Ot()?`side-pane`:`fullscreen`}));async function Xi({entryId:e,libraryFileId:t,prepareVersionHistory:n,serverThreadId:r}){if(n!=null&&!await n({flushEditor:!1}))throw Error(`Pending document changes could not be saved before restoring this version.`);let a=await $n({entryId:e,fileId:t});if(a==null)return;let o=await bt({abortSignal:new AbortController().signal,fileId:a.fileId,serverThreadId:r}),s=Bt().replaceWithAuthoritativeContent({authoritativeContentKey:a.id,content:o,fileId:a.fileId,libraryFileId:t,versionNumber:a.versionNumber});if(s.draftContent!==o||s.fileId!==a.fileId||s.dirty||s.inFlightSaveSequence!=null)throw Error(`The restored version could not be applied to the current document.`);yr({fileId:a.fileId,libraryFileId:t,queryClient:i()}),er(t)}function Zi({entryId:e,errorMessage:t,libraryFileId:n,prepareVersionHistory:r,serverThreadId:i}){Xi({entryId:e,libraryFileId:n,prepareVersionHistory:r,serverThreadId:i}).catch(r=>{Zn({entryId:e,fileId:n}),b().danger(t,{error:r})})}var Qi=e((()=>{Qn(),Oe(),Ce(),dt(),Ct(),vr()}));function $i(e){"use forget";let t=(0,ta.c)(133),{isStreamingPlaceholder:n,messageRef:i,messageId:a,editorHandleRef:o,conversation:s,writingBlockId:c,isLastNodeInMessage:l,preserveSidebarInFullscreen:d,defaultSidePaneWidth:f,initialSidePanePresentation:p,minimumMainWidth:m,minimumSidePaneWidth:g,onSidePaneWidthCommit:_,persistSidePaneWidth:v,preferredSidePaneWidth:y,collapsedChip:b,earlierVersion:x,inlineAfter:S,className:C,onBlurOutside:w,presentationMode:T,renderExpandedContentInline:D,children:O}=e,k=n!==void 0&&n,A=l!==void 0&&l,j=d!==void 0&&d,M;t[0]===f?M=t[1]:(M=f===void 0?Wt():f,t[0]=f,t[1]=M);let N=M,P=m===void 0?352:m,F=g===void 0?400:g,I=D!==void 0&&D,{isAssistantRevisionsEnabled:L,isSupersededConversationVersion:R,expandedPaneId:ee,expandedShellKind:te,fullscreenComposerController:z,fullscreenTurnComposer:B,isFullscreenComposerEnabled:ne,isFullscreenDialogOpen:V,isVersionHistoryPreviewOpen:H,isVersionHistoryPreviewUnavailable:re,libraryFileId:U,prepareVersionHistory:W,setIsFullscreenDialogOpen:G,shouldBlockDialogEscapeKeyDown:K,versionHistoryPreviewContent:ae}=Or(),oe=L!==void 0&&L,se=R!==void 0&&R,q=te===void 0?`fullscreen`:te,ce=ne!==void 0&&ne,J=H!==void 0&&H,le=re!==void 0&&re,{fullscreenTransitionPhase:X}=Mr(),[ue,de]=(0,na.useState)(V),fe=Ue(),pe=h(ea),me=(0,na.useContext)(Ut),he;t[2]===fe?he=t[3]:(he=fe.formatMessage({id:`writingBlocks.fullscreen.editor.accessibleTitle`,defaultMessage:`Writing block editor`}),t[2]=fe,t[3]=he);let Z=he,ve;t[4]===a?ve=t[5]:(ve=e=>a==null||e==null?!1:_e.isLastActorMessage(e,a),t[4]=a,t[5]=ve);let ye=ge(s?.id,ve),be=h(ie),xe=h(Y),Se=St(),Q=V&&q===`side-pane`,Ce;t[6]!==b||t[7]!==Q||t[8]!==T||t[9]!==Se?(Ce=()=>T!==`voice-stage`&&b!=null&&qi({activeOwnerKind:Se?.activeOwnerKind$()??null,hasSidePaneOwner:Se?.activeOwnerId$()!=null,isFocusedInSidePane:Q,sidePaneWidth:Se?.railLayout$().width??0,viewportWidth:gt().width}),t[6]=b,t[7]=Q,t[8]=T,t[9]=Se,t[10]=Ce):Ce=t[10];let we=h(Ce),Te=oe&&se&&!V&&T!==`voice-stage`&&x!=null,Ee=!V&&!we&&!Te,[De,Oe]=(0,na.useState)(Ee);oe&&Ee&&!De&&Oe(!0);let ke=Te&&De,Ae;t[11]!==me||t[12]!==xe||t[13]!==pe||t[14]!==T||t[15]!==c?(Ae=T!==`voice-stage`&&!xe&&!me&&c!=null&&!pe&&E(`1594900112`),t[11]=me,t[12]=xe,t[13]=pe,t[14]=T,t[15]=c,t[16]=Ae):Ae=t[16];let je=Ae,Me=je&&ye&&A,Ne=q===`fullscreen`&&(V||ue),Pe=!J&&ce&&(B!=null||z!=null)&&V&&be,Fe=null;if(B!=null){let e;t[17]===B?e=t[18]:(e=(0,ra.jsx)(fr,{...B}),t[17]=B,t[18]=e),Fe=e}else if(z!=null){let e;t[19]===z?e=t[20]:(e=(0,ra.jsx)(ur,{...z}),t[19]=z,t[20]=e),Fe=e}let $=X!==`idle`,Ie;t[21]===$?Ie=t[22]:(Ie=$?{viewTransitionName:cr}:void 0,t[21]=$,t[22]=Ie);let Le=Ie,Re;t[23]===$?Re=t[24]:(Re=$?{viewTransitionName:dr}:void 0,t[23]=$,t[24]=Re);let ze=Re,Be;t[25]===G?Be=t[26]:(Be=e=>{de(!0),G(e)},t[25]=G,t[26]=Be);let Ve=Be,He;t[27]===G?He=t[28]:(He=(e,t)=>G(e,{skipCloseConfirmation:t!==void 0&&t}),t[27]=G,t[28]=He);let We=He,Ge;t[29]===o?Ge=t[30]:(Ge=()=>{if(o.current!=null){o.current.focusEditor();return}window.requestAnimationFrame(()=>{o.current?.focusEditor()})},t[29]=o,t[30]=Ge);let Ke=Ge,qe;t[31]===w?qe=t[32]:(qe=e=>{if(!w)return;let t=e.currentTarget,n=e.relatedTarget;if(!(n instanceof Node&&t.contains(n))){if(n==null){window.setTimeout(()=>{let e=document.activeElement;e instanceof Node&&t.contains(e)||w()},0);return}w()}},t[31]=w,t[32]=qe);let Je=qe,Ye;t[33]!==O||t[34]!==s||t[35]!==fe||t[36]!==V||t[37]!==J||t[38]!==le||t[39]!==U||t[40]!==W||t[41]!==ae?(Ye=U!=null&&V?(0,ra.jsxs)(Fr,{fileId:U,onClose:()=>er(U),onRestoreEntry:e=>{Zi({entryId:e,errorMessage:fe.formatMessage(zt.restoreFileFailed),libraryFileId:U,prepareVersionHistory:W,serverThreadId:s?.serverId$()})},overlayTopInset:`preview-header`,variant:`overlay`,children:[O,J&&ae==null&&(0,ra.jsx)(`div`,{className:`bg-token-bg-primary absolute inset-0 flex items-center justify-center`,"data-testid":`writing-block-version-history-preview-loading`,children:le?(0,ra.jsx)(Lr,{isRetryable:!0,message:fe.formatMessage(zt.loadError),onClose:()=>er(U),onRetry:()=>nr(U)}):(0,ra.jsx)(r,{})})]}):O,t[33]=O,t[34]=s,t[35]=fe,t[36]=V,t[37]=J,t[38]=le,t[39]=U,t[40]=W,t[41]=ae,t[42]=Ye):Ye=t[42];let Xe=Ye,Ze;t[43]!==C||t[44]!==s||t[45]!==X||t[46]!==Je||t[47]!==$||t[48]!==k||t[49]!==a||t[50]!==i||t[51]!==T||t[52]!==Me||t[53]!==Ee||t[54]!==ke||t[55]!==je||t[56]!==ze||t[57]!==Le||t[58]!==Xe||t[59]!==c?(Ze=(Ee||ke)&&(0,ra.jsxs)(`div`,{className:u(`group relative clear-both my-4 w-full overflow-visible`,C),hidden:ke,"data-writing-block-fullscreen-fallback-target":ke?void 0:`inline`,"data-writing-block-fullscreen-transition-phase":!ke&&$?X:void 0,children:[(0,ra.jsx)(Cr,{ref:ke?void 0:i,id:ke?void 0:`writing-block-${a}${T===`voice-stage`?`-voice-stage`:``}`,onBlurCapture:Je,className:u(`[--wb-text-primary:var(--text-primary)] [--wb-text-secondary:var(--text-secondary)] [--wb-text-tertiary:var(--text-tertiary)] [--wb-surface-primary:var(--bg-primary)] [--wb-surface-secondary:var(--bg-tertiary)] [--wb-border:rgb(0_0_0/7%)] [--wb-border-hover:rgb(0_0_0/7%)] [--wb-divider:var(--border-light)] [--wb-focus:var(--border-strong)] [--wb-control-border:var(--interactive-border-focus)] [--wb-entity-accent:var(--theme-entity-accent)] [--wb-accent:var(--interactive-label-accent-default)] [--wb-on-accent:var(--bg-primary)] [--wb-interactive-background:var(--interactive-bg-accent-default)] [--wb-selection:var(--theme-user-selection-bg,var(--selection))] [--wb-radius-sm:var(--radius-sm)] [--wb-shadow-lg:var(--shadow-lg)] [--wb-font-sans:var(--font-sans)] [--wb-font-mono:var(--font-mono)] [--wb-shimmer-dark-contrast:var(--gray-550)] [--wb-shimmer-dark-secondary:var(--text-tertiary)] [--wb-radius:24px] [--wb-shadow:0_4px_80px_rgb(0_0_0/2%)] [contain:none]`,k&&`h-10 px-4 py-2`),backgroundProps:{className:`bg-token-bg-primary! dark:bg-[#2a2a2a]!`,"data-writing-block-fullscreen-shell-surface":!0},backgroundStyle:Le,borderProps:{"data-writing-block-fullscreen-shell-border":!0},borderStyle:ze,"data-writing-block":!0,"data-testid":`writing-block-container`,children:Xe}),je&&(0,ra.jsx)(`div`,{className:u(`flex justify-end px-3`,Me&&`pointer-events-none absolute end-0 -bottom-11 z-1 mt-0`),"data-writing-block-feedback-row":!0,children:(0,ra.jsx)(`div`,{className:u(Me&&`pointer-events-auto`),children:(0,ra.jsx)(Bi,{messageId:a,conversation:s,writingBlockId:c})})})]}),t[43]=C,t[44]=s,t[45]=X,t[46]=Je,t[47]=$,t[48]=k,t[49]=a,t[50]=i,t[51]=T,t[52]=Me,t[53]=Ee,t[54]=ke,t[55]=je,t[56]=ze,t[57]=Le,t[58]=Xe,t[59]=c,t[60]=Ze):Ze=t[60];let Qe=Ee&&S,$e;t[61]!==C||t[62]!==x||t[63]!==a||t[64]!==i||t[65]!==Te?($e=Te&&(0,ra.jsx)(`div`,{ref:i,id:`writing-block-${a}`,className:u(`relative clear-both my-4 w-full max-w-full`,C),children:x}),t[61]=C,t[62]=x,t[63]=a,t[64]=i,t[65]=Te,t[66]=$e):$e=t[66];let et;t[67]!==C||t[68]!==b||t[69]!==a||t[70]!==i||t[71]!==T||t[72]!==we||t[73]!==Te?(et=!Te&&we&&(0,ra.jsx)(`div`,{ref:i,id:`writing-block-${a}${T===`voice-stage`?`-voice-stage`:``}`,className:u(`relative clear-both my-4 w-full max-w-full`,C),children:b}),t[67]=C,t[68]=b,t[69]=a,t[70]=i,t[71]=T,t[72]=we,t[73]=Te,t[74]=et):et=t[74];let tt;t[75]!==q||t[76]!==Fe||t[77]!==X||t[78]!==B||t[79]!==Je||t[80]!==V||t[81]!==$||t[82]!==I||t[83]!==Pe||t[84]!==Xe?(tt=q===`side-pane`&&I&&(0,ra.jsxs)(`div`,{onBlurCapture:Je,className:`bg-token-bg-primary flex h-full w-full cursor-auto flex-col dark:bg-[#2a2a2a]`,"data-writing-block-fullscreen-fallback-target":`fullscreen`,"data-writing-block-fullscreen-transition-phase":$?X:void 0,children:[V?Xe:null,Pe&&B!=null?(0,ra.jsx)(ia,{...B}):Pe?(0,ra.jsx)(Xn.FullscreenOnly,{children:Fe}):null]}),t[75]=q,t[76]=Fe,t[77]=X,t[78]=B,t[79]=Je,t[80]=V,t[81]=$,t[82]=I,t[83]=Pe,t[84]=Xe,t[85]=tt):tt=t[85];let nt;t[86]!==N||t[87]!==o||t[88]!==ee||t[89]!==q||t[90]!==Ke||t[91]!==Z||t[92]!==Fe||t[93]!==X||t[94]!==B||t[95]!==Je||t[96]!==We||t[97]!==p||t[98]!==V||t[99]!==$||t[100]!==P||t[101]!==F||t[102]!==_||t[103]!==v||t[104]!==y||t[105]!==j||t[106]!==I||t[107]!==K||t[108]!==Pe||t[109]!==Xe?(nt=q===`side-pane`&&!I&&(0,ra.jsxs)(Xn.Content,{open:V,paneId:ee,defaultSidePaneWidth:N,initialPresentation:p,minimumMainWidth:P,minimumSidePaneWidth:F,onSidePaneWidthCommit:_,persistSidePaneWidth:v,preserveSidebar:j,preferredSidePaneWidth:y,onOpenChange:(e,t)=>We(e,t?.reason===`replaced`),accessibleTitle:Z,className:`dark:bg-[#2a2a2a]`,onEscapeKeyDown:e=>{K&&e.preventDefault()},focusOnOpen:()=>{o.current?.focusEditor()},focusOnClose:Ke,children:[(0,ra.jsx)(Xn.Body,{onBlurCapture:Je,className:`bg-token-bg-primary flex h-full w-full cursor-auto flex-col dark:bg-[#2a2a2a]`,"data-writing-block-fullscreen-fallback-target":`fullscreen`,"data-writing-block-fullscreen-transition-phase":$?X:void 0,children:V?Xe:null}),Pe&&B!=null?(0,ra.jsx)(ia,{...B}):Pe?(0,ra.jsx)(Xn.FullscreenOnly,{children:Fe}):null]}),t[86]=N,t[87]=o,t[88]=ee,t[89]=q,t[90]=Ke,t[91]=Z,t[92]=Fe,t[93]=X,t[94]=B,t[95]=Je,t[96]=We,t[97]=p,t[98]=V,t[99]=$,t[100]=P,t[101]=F,t[102]=_,t[103]=v,t[104]=y,t[105]=j,t[106]=I,t[107]=K,t[108]=Pe,t[109]=Xe,t[110]=nt):nt=t[110];let rt;t[111]!==o||t[112]!==Z||t[113]!==Fe||t[114]!==X||t[115]!==Je||t[116]!==Ve||t[117]!==V||t[118]!==$||t[119]!==j||t[120]!==K||t[121]!==Ne||t[122]!==Pe||t[123]!==Xe?(rt=Ne&&(0,ra.jsxs)(at,{open:V,onOpenChange:Ve,accessibleTitle:Z,className:`bg-token-bg-primary dark:bg-[#2a2a2a]`,preserveSidebar:j,onEscapeKeyDown:e=>{K&&e.preventDefault()},onOpenAutoFocus:e=>{e.preventDefault(),o.current?.focusEditor()},onCloseAutoFocus:e=>{e.preventDefault(),o.current?.focusEditor(),de(!1)},children:[(0,ra.jsx)(at.Contents,{onBlurCapture:Je,className:`bg-token-bg-primary flex h-full w-full cursor-auto flex-col dark:bg-[#2a2a2a]`,"data-writing-block-fullscreen-fallback-target":`fullscreen`,"data-writing-block-fullscreen-transition-phase":$?X:void 0,children:V?Xe:null}),Pe&&Fe]}),t[111]=o,t[112]=Z,t[113]=Fe,t[114]=X,t[115]=Je,t[116]=Ve,t[117]=V,t[118]=$,t[119]=j,t[120]=K,t[121]=Ne,t[122]=Pe,t[123]=Xe,t[124]=rt):rt=t[124];let it;return t[125]!==Ze||t[126]!==Qe||t[127]!==$e||t[128]!==et||t[129]!==tt||t[130]!==nt||t[131]!==rt?(it=(0,ra.jsxs)(ra.Fragment,{children:[Ze,Qe,$e,et,tt,nt,rt]}),t[125]=Ze,t[126]=Qe,t[127]=$e,t[128]=et,t[129]=tt,t[130]=nt,t[131]=rt,t[132]=it):it=t[132],it}function ea(){return Ri()}var ta,na,ra,ia,aa=e((()=>{ta=He(),Yt(),$t(),nt(),Nr(),Qn(),Ir(),rt(),Yn(),m(),de(),jt(),z(),O(),qt(),Ki(),ar(),jr(),Dr(),zi(),Yi(),ir(),Qi(),Rn(),wr(),q(),M(),na=t(Ie()),$(),ra=ke(),ia=e=>{"use forget";let t=(0,ta.c)(4),n=Jn(),r=n.usesViewTransition?n.targetPresentation===`fullscreen`:n.presentation===`fullscreen`,i;return t[0]!==n.isTransitioning||t[1]!==e||t[2]!==r?(i=r?(0,ra.jsx)(fr,{...e,disableAutoFocus:n.isTransitioning}):null,t[0]=n.isTransitioning,t[1]=e,t[2]=r,t[3]=i):i=t[3],i}}));function oa(e){"use forget";let t=(0,sa.c)(15),{analyticsLibraryFileId:n,content:r,flushEditorContent:i,conversation:a,messageId:o,libraryFileId:s,writingBlockId:c,writingBlockIndex:l,writingBlockInstanceId:u,variant:d,onCopy:f,contentReferences:p}=e,m;t[0]!==n||t[1]!==r||t[2]!==p||t[3]!==a||t[4]!==i||t[5]!==s||t[6]!==o||t[7]!==d||t[8]!==c||t[9]!==l||t[10]!==u?(m=()=>{let e=i?.()??r,t=a==null?void 0:we(a.serverId$);s==null?t!=null&&o!=null&&L.logStructuredEvent(`ChatgptWritingBlockCopyButtonClicked`,{conversationId:t,messageId:o,variant:d,...c==null?{}:{writingBlockId:c},...l==null?{}:{writingBlockIndex:l},...n==null?{}:{libraryFileId:n}}):L.logStructuredEvent(`ChatgptWritingBlockLibraryFileCopyButtonClicked`,{libraryFileId:s,variant:d,...c==null?{}:{writingBlockId:c}}),Se.count(H.WRITING_BLOCKS,`chatgpt_writing_block_copy_button_clicked`);let f=Pn(e);if(e!=null&&t!=null&&o!=null){L.logStructuredEvent(`CopyTurnToClipboard`,{conversationId:t,messageId:o});let n=u??c,r=n==null?null:or(n,o),i=la(r,e);c!=null&&it({writing_block_id:c,action_type:`copy`,initial_block_body_markdown:i,current_block_body_markdown:r?.currentMarkdown??e,edit_trajectory:sr(r?.editTrajectory)},t,o,null),Zt({type:`copy`,source:`mouse`,location:`writing-block`,selectedText:f,messageId:o,serverThreadId:t,contentType:`text`})}let m={"text/plain":f};try{m=Rr(f,p,{preferBareUrlSelfLinks:!0,includeMcpSourceCitations:a!=null&&we(()=>oe(a))})}catch(e){let t=e;ae.addError(t)}return m},t[0]=n,t[1]=r,t[2]=p,t[3]=a,t[4]=i,t[5]=s,t[6]=o,t[7]=d,t[8]=c,t[9]=l,t[10]=u,t[11]=m):m=t[11];let h=m,g;return t[12]!==f||t[13]!==h?(g={handleCopy:e=>{let t=b(),n;try{n=h()}catch(e){let n=e;throw t.danger(ca,{duration:4,hasCloseButton:!0,toastId:`copy_to_clipboard_failed_to_copy`}),n}return ee(n,t,e).then(t=>(f?.(e),t))}},t[12]=f,t[13]=h,t[14]=g):g=t[14],g}var sa,ca,la,ua=e((()=>{sa=He(),Kt(),zr(),W(),Oe(),re(),De(),me(),he(),X(),Ze(),rr(),In(),$(),ca=Ae({id:`writingBlocks.copy.error.prepareClipboard`,defaultMessage:`Failed to copy to clipboard.`}),la=(e,t)=>e?e.editTrajectory.length===0?e.currentMarkdown:e.initialMarkdown:t}));function da(e){"use forget";let t=(0,fa.c)(9),{isStreaming:n,isDisabled:r}=e,i=r!==void 0&&r,a=Ue(),{expandedShellKind:o}=Or(),s=(o===void 0?`fullscreen`:o)===`side-pane`?Xn.CloseButton:at.CloseButton,c;t[0]===a?c=t[1]:(c=a.formatMessage({id:`WritingBlockCloseButton.closeTooltip`,defaultMessage:`Close`}),t[0]=a,t[1]=c);let l=c,u=n||i,d;t[2]!==s||t[3]!==l||t[4]!==u?(d=(0,pa.jsx)(s,{"aria-label":l,disabled:u}),t[2]=s,t[3]=l,t[4]=u,t[5]=d):d=t[5];let f;return t[6]!==l||t[7]!==d?(f=(0,pa.jsx)(A,{sideOffset:0,label:l,children:d}),t[6]=l,t[7]=d,t[8]=f):f=t[8],f}var fa,pa,ma=e((()=>{fa=He(),F(),$t(),Yn(),Dr(),$(),Rn(),pa=ke()}));function ha({conversation:e,libraryFileId:t,messageId:n,index:r,title:i,content:a,writingBlockId:o,isStreaming:s,disabled:c=!1,renderAsMenuItem:l=!1,hasLoggedImpression:d=!1,setHasLoggedImpression:f}){"use no forget";let p=Ue(),[m,g]=(0,ga.useState)(!1),[_,v]=(0,ga.useState)(!1),[y,b]=(0,ga.useState)(!1),x=(0,ga.useRef)(!1),S=h(()=>e.serverId$()),C=S?.toString()??null;(0,ga.useEffect)(()=>{!S||d||x.current||(x.current=!0,f?.(!0),Vr({conversationId:C,...t==null?{}:{libraryFileId:t},messageId:n,writingBlockId:o,impressionType:ye.CHATGPT_WRITING_BLOCK_RESUME_EXPORT_IMPRESSION_TYPE_BUTTON}))},[C,d,t,n,S,f,o]);let w=Q(()=>{let e=E(ya);if(Br({conversationId:C,...t==null?{}:{libraryFileId:t},messageId:n,writingBlockId:o,clickType:ue.CHATGPT_WRITING_BLOCK_RESUME_EXPORT_CLICK_TYPE_PREVIEW_OPEN}),l){xe(va,{content:a,conversationId:C,index:r,isDocxDownloadEnabled:e,isOpen:!0,...t==null?{}:{libraryFileId:t},messageId:n,title:i,writingBlockId:o});return}v(!0),b(e),g(!0)}),T=Q(()=>g(!1)),D=p.formatMessage({defaultMessage:`Download`,id:`ResumeExportButton.triggerLabel`}),O=c||!S||!!s;return(0,_a.jsxs)(_a.Fragment,{children:[l?(0,_a.jsx)(ot.Item,{icon:un,label:D,disabled:O,onClick:w}):(0,_a.jsx)(A,{sideOffset:0,label:D,children:(0,_a.jsx)(`button`,{"aria-label":D,className:u(`text-token-text-primary hover:bg-token-bg-tertiary disabled:text-token-text-tertiary flex size-9 items-center justify-center rounded-full p-1.5 transition-colors select-none disabled:hover:bg-transparent`),disabled:O,onClick:w,type:`button`,children:(0,_a.jsx)(un,{className:`block`})})}),_?(0,_a.jsx)(va,{content:a,conversationId:C,index:r,isDocxDownloadEnabled:y,isOpen:m,libraryFileId:t,messageId:n,onClose:T,title:i,writingBlockId:o}):null]})}var ga,_a,va,ya,ba=e((()=>{F(),ct(),xn(),_(),m(),O(),I(),Rn(),D(),M(),ga=t(Ie()),$(),Hr(),_a=ke(),ze(),va=j(()=>Le(()=>import(`./6175a897-h81gxcso66p4epcb.js`).then(e=>e.ResumePreviewModal),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11]))),ya=`3817517664`})),xa,Sa,Ca,wa,Ta,Ea,Da,Oa=e((()=>{et(),xa=[/^education$/i,/^experience$/i,/^work\s+history$/i,/^professional\s+experience$/i,/^skills$/i,/^technical\s+skills$/i,/^projects$/i,/^certifications?$/i],Sa=e=>/(?:\b(?:19|20)\d{2}\b\s*(?:-|–|—|to)\s*(?:\b(?:19|20)\d{2}\b|present|current))/i.test(e),Ca=e=>/[\w.+-]+@[\w.-]+\.\w{2,}/i.test(e),wa=e=>/\+?\d[\d\s().-]{7,}\d/.test(e),Ta=e=>/\b(linked(?:in)?|github|portfolio|email|phone|cell|mobile)\b/i.test(e),Ea=(e,t)=>new Set(e.filter(e=>t.some(t=>t.test(e)))),Da=async e=>{let t=wt(e).toLowerCase(),n=t.split(`
-`).map(e=>e.trim()).filter(Boolean).filter(e=>e.length<45),r=Ea(n,xa),i=r.size>=1,a=r.size>=2,o=Ca(t)||wa(t)||Ta(t);return i&&(o||Sa(t)||a)}})),ka,Aa,ja=e((()=>{Oa(),C(),ka=class{constructor(){Ee(this,`resumeClassifierStateByBlock`,new Map)}getCachedResult(e,t){let n=this.getState(e);if(n?.content===t)return n?.result}startClassificationRequest(e,t){if(e==null)return null;let n=this.getState(e);return n!=null&&n.content!==t&&(n.content=t,n.isInFlight=!1,n.result=void 0),n==null||n.result!==void 0||n.isInFlight?null:(n.content=t,n.isInFlight=!0,n.requestId+=1,n.requestId)}completeClassificationRequest(e,t,n,r){let i=this.getState(e);return i==null||i.content!==n||!i.isInFlight||i.requestId!==t?!1:(i.result=r,i.isInFlight=!1,!0)}cancelClassificationRequest(e,t){let n=this.getState(e);n==null||n.requestId!==t||(n.isInFlight=!1)}async runClassificationRequest(e,t,n){let r=await Da(t);return this.completeClassificationRequest(e,n,t,r)?r:null}getState(e){if(e==null)return null;let t=this.resumeClassifierStateByBlock.get(e);return t??(t={content:null,isInFlight:!1,requestId:0,result:void 0},this.resumeClassifierStateByBlock.set(e,t)),t}},Aa=new ka}));function Ma(e){"use forget";let t=(0,Na.c)(29),{writingBlock:n,conversation:r,messageId:i,index:a,showDownloadButton:o,isStreaming:s}=e,[c,l]=(0,Pa.useState)(!1),u=n.variant===Te.DOCUMENT||n.variant===Te.STANDARD,d=n.id??String(a),f;t[0]!==r||t[1]!==a||t[2]!==i||t[3]!==d?(f=Ra(r,i,d,a),t[0]=r,t[1]=a,t[2]=i,t[3]=d,t[4]=f):f=t[4];let p=f,m;t[5]!==p||t[6]!==r||t[7]!==u||t[8]!==s||t[9]!==i||t[10]!==o?(m=u&&o&&!s&&r!=null&&i!=null&&p!=null&&E(La),t[5]=p,t[6]=r,t[7]=u,t[8]=s,t[9]=i,t[10]=o,t[11]=m):m=t[11];let h=m,g,_;t[12]!==p||t[13]!==h||t[14]!==n.content?(g=()=>{if(!h){l(!1);return}let e=Aa.getCachedResult(p,n.content);l(e??null)},_=[p,h,n.content],t[12]=p,t[13]=h,t[14]=n.content,t[15]=g,t[16]=_):(g=t[15],_=t[16]),(0,Pa.useEffect)(g,_);let v;t[17]!==p||t[18]!==h||t[19]!==n.content?(v=()=>{if(!h)return;let e=!0,t=null;return(async()=>{let r=Aa.getCachedResult(p,n.content);if(r===!0){l(!0);return}if(r!==void 0){l(!1);return}if(t=Aa.startClassificationRequest(p,n.content),t==null)return;Se.count(H.WRITING_BLOCKS,Fa);let i=await Aa.runClassificationRequest(p,n.content,t);!e||i==null||(l(i),i&&Se.count(H.WRITING_BLOCKS,Ia))})(),()=>{e=!1,!(p==null||t==null)&&Aa.cancelClassificationRequest(p,t)}},t[17]=p,t[18]=h,t[19]=n.content,t[20]=v):v=t[20];let y;return t[21]!==p||t[22]!==u||t[23]!==s||t[24]!==i||t[25]!==h||t[26]!==n.content||t[27]!==n.id?(y=[p,u,s,i,h,n.content,n.id],t[21]=p,t[22]=u,t[23]=s,t[24]=i,t[25]=h,t[26]=n.content,t[27]=n.id,t[28]=y):y=t[28],(0,Pa.useEffect)(v,y),h?c:!1}var Na,Pa,Fa,Ia,La,Ra,za=e((()=>{Na=He(),X(),O(),S(),Pa=t(Ie()),ja(),Fa=`chatgpt_writing_block_resume_classifier_triggered`,Ia=`chatgpt_writing_block_resume_classifier_positive`,La=`2870900009`,Ra=(e,t,n,r)=>e==null||t==null?null:`${e.id}:${t}:${n}:${r}`})),Ba,Va,Ha,Ua=e((()=>{Xe(),At(),Rt(),Nt(),Lt(),Ba=Ye({id:`writing-block-header-actions`,icons:{copy:{normal:Vt,small:Dt},pencil:{normal:Ht,small:Ft}}}),Va=Ba.Copy,Ha=Ba.Pencil}));function Wa(e){"use forget";let t=(0,Ka.c)(26),{analyticsLibraryFileId:n,conversation:r,messageId:i,libraryFileId:a,content:o,flushEditorContent:s,writingBlockId:c,writingBlockIndex:l,writingBlockInstanceId:d,variant:f,contentReferences:p,disabled:m,renderAsMenuItem:h}=e,g=m!==void 0&&m,_=h!==void 0&&h,{conversationRevisionTextCue:v,dismissConversationRevisionTextCue:y}=Or(),b;t[0]!==v||t[1]!==y?(b=()=>{(v==null?Gt()===`until-first-edit`:v.expiresAt==null)||y?.()},t[0]=v,t[1]=y,t[2]=b):b=t[2];let x=b,S;t[3]!==n||t[4]!==o||t[5]!==p||t[6]!==r||t[7]!==s||t[8]!==a||t[9]!==i||t[10]!==x||t[11]!==f||t[12]!==c||t[13]!==l||t[14]!==d?(S={analyticsLibraryFileId:n,conversation:r,messageId:i,libraryFileId:a,content:o,flushEditorContent:s,writingBlockId:c,writingBlockIndex:l,writingBlockInstanceId:d,variant:f,onCopy:x,contentReferences:p},t[3]=n,t[4]=o,t[5]=p,t[6]=r,t[7]=s,t[8]=a,t[9]=i,t[10]=x,t[11]=f,t[12]=c,t[13]=l,t[14]=d,t[15]=S):S=t[15];let{handleCopy:C}=oa(S);if(_){let e;t[16]===C?e=t[17]:(e=e=>{e.stopPropagation(),C(e).catch(Ga)},t[16]=C,t[17]=e);let n;t[18]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,qa.jsx)(Ne,{id:`CopyButton.copy`,defaultMessage:`Copy`}),t[18]=n):n=t[18];let r;return t[19]!==g||t[20]!==e?(r=(0,qa.jsx)(ot.Item,{icon:Va,disabled:g,onClick:e,label:n}),t[19]=g,t[20]=e,t[21]=r):r=t[21],r}let w;t[22]===Symbol.for(`react.memo_cache_sentinel`)?(w=u(`text-sm font-medium`,`text-token-text-primary hover:bg-token-bg-tertiary flex size-9 items-center justify-center rounded-full p-1.5 transition-colors disabled:opacity-40 disabled:hover:bg-transparent`),t[22]=w):w=t[22];let T;return t[23]!==g||t[24]!==C?(T=(0,qa.jsx)(pt,{onCopy:C,disabled:g,iconClassName:`icon-md`,className:w,iconOnly:!0,tooltipSideOffset:0}),t[23]=g,t[24]=C,t[25]=T):T=t[25],T}function Ga(){}var Ka,qa,Ja=e((()=>{Ka=He(),Qt(),ct(),Ua(),ua(),Dr(),Xt(),Rn(),M(),$(),qa=ke()}));function Ya(e){"use forget";let t=(0,Xa.c)(12),{disabled:n,onFullscreenOpenRequested:r}=e,i=Ue(),{fullscreenTurnComposer:a,setIsFullscreenDialogOpen:o}=Or(),s;t[0]===i?s=t[1]:(s=i.formatMessage({id:`chatgpt.writing_blocks.focused_editor.open_button.label`,defaultMessage:`Open editor`}),t[0]=i,t[1]=s);let c=s,l;t[2]===a?l=t[3]:(l=()=>{a==null?lr():pr()},t[2]=a,t[3]=l);let u=l,d;t[4]!==r||t[5]!==o?(d=()=>{r?.(),o(!0)},t[4]=r,t[5]=o,t[6]=d):d=t[6];let f;return t[7]!==n||t[8]!==c||t[9]!==u||t[10]!==d?(f=(0,Za.jsx)(Wr,{icon:_n,label:c,tooltip:c,disabled:n,onClick:d,onFocus:u,onPointerEnter:u}),t[7]=n,t[8]=c,t[9]=u,t[10]=d,t[11]=f):f=t[11],f}var Xa,Za,Qa=e((()=>{Xa=He(),bn(),Ur(),ar(),Dr(),$(),Za=ke()}));function $a(e){"use forget";let t=(0,to.c)(14),{actions:n,children:r,disabled:i}=e,a=i!==void 0&&i,o=Ue(),[s,c]=(0,no.useState)(!1);if(a&&s&&c(!1),n.length===0&&r==null)return null;let l=s&&!a,u;t[0]===o?u=t[1]:(u=o.formatMessage({id:`writingBlocks.actions.moreActions`,defaultMessage:`More actions`}),t[0]=o,t[1]=u);let d;t[2]!==a||t[3]!==u?(d=(0,ro.jsx)(ot.Trigger,{asChild:!0,children:(0,ro.jsx)(Wr,{icon:mn,label:u,disabled:a})}),t[2]=a,t[3]=u,t[4]=d):d=t[4];let f;t[5]===n?f=t[6]:(f=n.map(eo),t[5]=n,t[6]=f);let p;t[7]!==r||t[8]!==f?(p=(0,ro.jsx)(ot.Portal,{children:(0,ro.jsxs)(ot.Content,{align:`end`,size:`small`,children:[r,f]})}),t[7]=r,t[8]=f,t[9]=p):p=t[9];let m;return t[10]!==l||t[11]!==d||t[12]!==p?(m=(0,ro.jsxs)(ot.Root,{open:l,onOpenChange:c,children:[d,p]}),t[10]=l,t[11]=d,t[12]=p,t[13]=m):m=t[13],m}function eo(e){return(0,ro.jsx)(no.Fragment,{children:e.submenu??(0,ro.jsx)(ot.Item,{icon:e.icon,color:e.color,disabled:e.disabled,onClick:e.onSelect,children:e.label})},e.id)}var to,no,ro,io=e((()=>{to=He(),ct(),en(),Ur(),no=t(Ie()),$(),ro=ke()}));function ao(e){return`${e?.trim().replace(/[<>:"/\\|?*]+/g,`-`).replace(/\s+/g,` `).trim()||`Untitled`}.md`}function oo(e){return e instanceof ce&&e.code===ho}function so(e){"use forget";let t=(0,po.c)(6),{label:n,onViewLibrary:r,getToast:i}=e,a;t[0]!==i||t[1]!==r?(a=()=>{r(),i()?.close()},t[0]=i,t[1]=r,t[2]=a):a=t[2];let o=Q(a),s;return t[3]!==o||t[4]!==n?(s=(0,mo.jsx)(`button`,{type:`button`,className:`rounded-sm font-bold text-white underline underline-offset-2 hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white`,onClick:o,children:n}),t[3]=o,t[4]=n,t[5]=s):s=t[5],s}function co(e){"use forget";let t=(0,po.c)(40),{writingBlock:n,title:r,isStreaming:i,disabled:a,isPromotionPending:o,isSavedToLibrary:s,onPromoteToLibrary:c,flushEditorContentForLibrarySave:l,variant:d,children:f,onSaved:p}=e,m=a!==void 0&&a,h=o!==void 0&&o,g=s!==void 0&&s,_=d===void 0?`default`:d,v=Ue(),y;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(y=b(),t[0]=y):y=t[0];let x=y,S;t[1]!==v||t[2]!==h?(S=h?v.formatMessage({id:`WritingBlockSaveToLibraryButton.addingToLibraryLabel`,defaultMessage:`Adding to library`}):v.formatMessage({id:`WritingBlockSaveToLibraryButton.label`,defaultMessage:`Add to library`}),t[1]=v,t[2]=h,t[3]=S):S=t[3];let C=S,w;t[4]===v?w=t[5]:(w=v.formatMessage({id:`WritingBlockSaveToLibraryButton.addedToLibraryLabel`,defaultMessage:`Added to library`}),t[4]=v,t[5]=w);let T=w,E;t[6]===v?E=t[7]:(E=v.formatMessage({id:`WritingBlockSaveToLibraryButton.viewLibraryAction`,defaultMessage:`view`}),t[6]=v,t[7]=E);let D=E,O=m||!!i||h||c==null,k=Q(fo),A;t[8]!==l||t[9]!==k||t[10]!==v||t[11]!==O||t[12]!==c||t[13]!==p||t[14]!==r||t[15]!==D||t[16]!==n?(A=async e=>{if(O||c==null)return;let t=l?.(),i=t??n.content,a=ao(n.title??r??xr(i)),o=()=>{x.danger(v.formatMessage({id:`WritingBlockSaveToLibraryButton.saveToFilesFailed`,defaultMessage:`Couldn't save "{fileName}" to Files. Try again.`},{fileName:a}))},s=null;try{s=await c({contentOverride:t})}catch(e){if(oo(e)){xe(jn,{});return}}if(!s?.libraryFileId){o();return}p?.(e);let u=x.success(``,{description:(0,mo.jsx)(`span`,{className:`whitespace-nowrap`,children:(0,mo.jsx)(Ne,{id:`WritingBlockSaveToLibraryButton.savedToLibraryWithViewAction`,defaultMessage:`Saved to your library {viewAction}`,values:{viewAction:(0,mo.jsx)(so,{label:D,onViewLibrary:k,getToast:()=>u})}})}),icon:yn,iconClassName:`size-5`,iconWrapperClassName:`flex shrink-0 grow-0 items-center`})},t[8]=l,t[9]=k,t[10]=v,t[11]=O,t[12]=c,t[13]=p,t[14]=r,t[15]=D,t[16]=n,t[17]=A):A=t[17];let j=Q(A);if(g){let e;return t[18]!==T||t[19]!==k?(e=(0,mo.jsx)(Wr,{icon:nn,label:T,tooltip:T,onClick:k}),t[18]=T,t[19]=k,t[20]=e):e=t[20],e}if(_===`inline`){let e;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,mo.jsx)(yn,{className:`icon-sm`,"aria-hidden":!0}),t[21]=e):e=t[21];let n;t[22]===C?n=t[23]:(n=(0,mo.jsxs)(`span`,{className:`flex items-center gap-1`,children:[e,C]}),t[22]=C,t[23]=n);let r;t[24]!==f||t[25]!==j||t[26]!==O||t[27]!==h||t[28]!==C?(r=e=>(0,mo.jsxs)(`button`,{...e,type:`button`,"aria-label":C,"aria-busy":h||void 0,"aria-disabled":O||void 0,className:`interactive-button interactive-bg-secondary interactive-label-tertiary interactive-outline-secondary group/inline-title flex h-9 min-w-0 items-center rounded-full ps-3 pe-3 transition-[padding] duration-200 ease-out hover:ps-1 focus-visible:ps-1 aria-busy:ps-1 motion-reduce:transition-none [@media(hover:none)]:ps-1`,onClick:e=>{j(e.detail===0).catch(uo)},children:[(0,mo.jsx)(`span`,{className:u(`grid shrink-0 transition-[grid-template-columns,opacity] duration-200 ease-out group-focus-visible/inline-title:grid-cols-[1fr] group-focus-visible/inline-title:opacity-100 group-hover/inline-title:grid-cols-[1fr] group-hover/inline-title:opacity-100 motion-reduce:transition-none [@media(hover:none)]:grid-cols-[1fr] [@media(hover:none)]:opacity-100`,h?`grid-cols-[1fr] opacity-100`:`grid-cols-[0fr] opacity-0`),children:(0,mo.jsx)(`span`,{className:`min-w-0 overflow-hidden`,children:(0,mo.jsx)(`span`,{className:`flex w-8 items-center justify-center`,children:h?(0,mo.jsx)(Nn,{size:20}):(0,mo.jsx)(wn,{className:`icon`,"aria-hidden":!0})})})}),(0,mo.jsx)(`span`,{className:`min-w-0 truncate`,children:f})]}),t[24]=f,t[25]=j,t[26]=O,t[27]=h,t[28]=C,t[29]=r):r=t[29];let i;return t[30]!==n||t[31]!==r?(i=(0,mo.jsx)(st,{content:n,children:r}),t[30]=n,t[31]=r,t[32]=i):i=t[32],i}let M=h||void 0,N;t[33]===j?N=t[34]:(N=e=>{j(e.detail===0).catch(lo)},t[33]=j,t[34]=N);let P;return t[35]!==O||t[36]!==C||t[37]!==M||t[38]!==N?(P=(0,mo.jsx)(Wr,{icon:rn,label:C,tooltip:C,"aria-busy":M,disabled:O,onClick:N}),t[35]=O,t[36]=C,t[37]=M,t[38]=N,t[39]=P):P=t[39],P}function lo(){}function uo(){}function fo(){le(kn(`/library`,Je.CHATGPT_FILE_LIBRARY_ENTRY_POINT_BANNER))}var po,mo,ho,go=e((()=>{po=He(),Mn(),lt(),M(),_(),cn(),an(),gn(),Sn(),An(),Tn(),Oe(),c(),ne(),I(),En(),Ur(),Sr(),$(),mo=ke(),ho=`library_storage_limit_exceeded`}));function _o(e){return e.disabled}var vo,yo,bo,xo,So,Co,wo=e((()=>{vo=He(),ba(),za(),x(),m(),O(),Ja(),Fn(),Qa(),io(),go(),Dr(),S(),Jt(),yo=t(Ie()),bo=ke(),xo=`499412252`,So=`resume_preview_enabled`,Co=e=>{"use forget";let t=(0,vo.c)(129),{analyticsMetadata:n,writingBlock:r,conversation:i,messageId:a,libraryFileId:o,optimisticLibraryFileId:s,contentReferences:c,showDownloadButton:l,title:u,index:d,isStreaming:f,primaryAction:p,primaryActionPlacement:m,presence:g,overflowActions:_,hideCopyButton:v,isWritingBlockFocusedModeEnabled:y,isInteractionDisabled:b,isLibraryPromotionPending:x,onPromoteToLibrary:S,enableSaveToLibrary:C,onFullscreenOpenRequested:w,flushEditorContentForCopy:E,flushEditorContentForLibrarySave:D,flushUnsavedEdits:O}=e,k=m===void 0?`trailing`:m,A;t[0]===_?A=t[1]:(A=_===void 0?[]:_,t[0]=_,t[1]=A);let j=A,M=v!==void 0&&v,N=b!==void 0&&b,F=x!==void 0&&x,I=C!==void 0&&C,[L,R]=(0,yo.useState)(!1),{expandedShellKind:ee,isFullscreenDialogOpen:te}=Or(),z;t[2]===i?z=t[3]:(z=()=>i?.serverId$(),t[2]=i,t[3]=z);let B=h(z),ne=r.variant===Te.DOCUMENT,V=qe(),H=T(),re=r.library_file_id,U;t[4]!==o||t[5]!==re?(U=o!=null&&o.trim().length>0||typeof re==`string`&&re.trim().length>0,t[4]=o,t[5]=re,t[6]=U):U=t[6];let ie=U,W;t[7]===s?W=t[8]:(W=s!=null&&s.trim().length>0,t[7]=s,t[8]=W);let G=W,K=r.id??String(d),ae=n?.blockId,oe=l&&i!=null&&a!=null&&ne&&V,se=f??!1,q;t[9]!==i||t[10]!==d||t[11]!==a||t[12]!==l||t[13]!==se||t[14]!==r?(q={writingBlock:r,conversation:i,messageId:a,index:d,showDownloadButton:l,isStreaming:se},t[9]=i,t[10]=d,t[11]=a,t[12]=l,t[13]=se,t[14]=r,t[15]=q):q=t[15];let ce=Ma(q),J;t[16]===Symbol.for(`react.memo_cache_sentinel`)?(J=function(){return P(xo).get(So,!1)},t[16]=J):J=t[16];let le=J,Y;t[17]!==i||t[18]!==ce||t[19]!==a?(Y=ce&&i!=null&&a!=null&&le(),t[17]=i,t[18]=ce,t[19]=a,t[20]=Y):Y=t[20];let X=Y,ue=i!=null&&a!=null&&r.variant!==Te.EMAIL&&y&&!te,de;t[21]!==I||t[22]!==ie||t[23]!==H||t[24]!==G||t[25]!==S||t[26]!==B||t[27]!==r.content?(de=H&&I&&!ie&&!G&&B!=null&&S!=null&&r.content.trim()!==``,t[21]=I,t[22]=ie,t[23]=H,t[24]=G,t[25]=S,t[26]=B,t[27]=r.content,t[28]=de):de=t[28];let fe=de,pe=H&&I&&y&&te&&(!ie||G),me=!M&&(i!=null||o!=null),he=te&&ee===`side-pane`,ge=he&&!f,Z=N||!!f,_e;t[29]!==Z||t[30]!==p?(_e=p==null?null:(0,bo.jsx)(`span`,{className:`contents`,inert:Z,"aria-disabled":Z||void 0,children:p}),t[29]=Z,t[30]=p,t[31]=_e):_e=t[31];let ve=_e,ye=he&&l&&(X||oe),be=r.variant===Te.SLIDES&&k===`trailing`,xe=N||void 0,Se=k===`leading`?ve:null,Q;t[32]!==Z||t[33]!==fe||t[34]!==D||t[35]!==F||t[36]!==G||t[37]!==f||t[38]!==S||t[39]!==pe||t[40]!==u||t[41]!==r?(Q=pe&&(0,bo.jsx)(co,{writingBlock:r,title:u,isStreaming:f,disabled:Z||!fe,isPromotionPending:F,isSavedToLibrary:G,onPromoteToLibrary:S,flushEditorContentForLibrarySave:D}),t[32]=Z,t[33]=fe,t[34]=D,t[35]=F,t[36]=G,t[37]=f,t[38]=S,t[39]=pe,t[40]=u,t[41]=r,t[42]=Q):Q=t[42];let Ce;t[43]!==n?.libraryFileId||t[44]!==ae||t[45]!==c||t[46]!==i||t[47]!==E||t[48]!==d||t[49]!==N||t[50]!==o||t[51]!==a||t[52]!==ge||t[53]!==me||t[54]!==r.content||t[55]!==r.variant||t[56]!==K?(Ce=!ge&&me&&(0,bo.jsx)(Wa,{analyticsLibraryFileId:n?.libraryFileId,content:r.content,flushEditorContent:E,conversation:i,messageId:a,libraryFileId:o,writingBlockId:ae,writingBlockIndex:String(d),writingBlockInstanceId:K,variant:r.variant,contentReferences:c,disabled:N}),t[43]=n?.libraryFileId,t[44]=ae,t[45]=c,t[46]=i,t[47]=E,t[48]=d,t[49]=N,t[50]=o,t[51]=a,t[52]=ge,t[53]=me,t[54]=r.content,t[55]=r.variant,t[56]=K,t[57]=Ce):Ce=t[57];let we;t[58]!==n?.libraryFileId||t[59]!==Z||t[60]!==i||t[61]!==O||t[62]!==L||t[63]!==d||t[64]!==f||t[65]!==o||t[66]!==a||t[67]!==he||t[68]!==oe||t[69]!==X||t[70]!==l||t[71]!==u||t[72]!==r.content||t[73]!==r.title||t[74]!==K?(we=!he&&l&&(X?(0,bo.jsx)(ha,{conversation:i,content:r.content,libraryFileId:o??n?.libraryFileId,messageId:a,title:u,index:d,writingBlockId:K,isStreaming:f,disabled:Z,hasLoggedImpression:L,setHasLoggedImpression:R}):oe&&!X&&(0,bo.jsx)(Ln,{conversation:i,messageId:a,index:d,flushUnsavedEdits:O,markdownContent:r.content,markdownFileName:u??r.title,isStreaming:f,disabled:Z})),t[58]=n?.libraryFileId,t[59]=Z,t[60]=i,t[61]=O,t[62]=L,t[63]=d,t[64]=f,t[65]=o,t[66]=a,t[67]=he,t[68]=oe,t[69]=X,t[70]=l,t[71]=u,t[72]=r.content,t[73]=r.title,t[74]=K,t[75]=we):we=t[75];let Ee=k===`trailing`&&!be?ve:null,De;t[76]!==Z||t[77]!==g?(De=g==null?null:(0,bo.jsx)(`span`,{className:`contents`,inert:Z,children:g}),t[76]=Z,t[77]=g,t[78]=De):De=t[78];let Oe;t[79]!==Z||t[80]!==j||t[81]!==he||t[82]!==me||t[83]!==ye?(Oe=Z||j.every(_o)&&!(he&&me)&&!ye,t[79]=Z,t[80]=j,t[81]=he,t[82]=me,t[83]=ye,t[84]=Oe):Oe=t[84];let ke;t[85]!==n?.libraryFileId||t[86]!==ae||t[87]!==Z||t[88]!==c||t[89]!==i||t[90]!==E||t[91]!==O||t[92]!==L||t[93]!==d||t[94]!==N||t[95]!==f||t[96]!==o||t[97]!==a||t[98]!==ge||t[99]!==he||t[100]!==me||t[101]!==ye||t[102]!==X||t[103]!==u||t[104]!==r.content||t[105]!==r.title||t[106]!==r.variant||t[107]!==K?(ke=he&&(me||ye)?(0,bo.jsxs)(bo.Fragment,{children:[ge&&me&&(0,bo.jsx)(Wa,{analyticsLibraryFileId:n?.libraryFileId,content:r.content,flushEditorContent:E,conversation:i,messageId:a,libraryFileId:o,writingBlockId:ae,writingBlockIndex:String(d),writingBlockInstanceId:K,variant:r.variant,contentReferences:c,disabled:N,renderAsMenuItem:!0}),ye&&i!=null&&a!=null&&(X?(0,bo.jsx)(ha,{conversation:i,content:r.content,libraryFileId:o??n?.libraryFileId,messageId:a,title:u,index:d,writingBlockId:K,isStreaming:f,disabled:Z,hasLoggedImpression:L,setHasLoggedImpression:R,renderAsMenuItem:!0}):(0,bo.jsx)(Ln,{conversation:i,messageId:a,index:d,flushUnsavedEdits:O,markdownContent:r.content,markdownFileName:u??r.title,isStreaming:f,disabled:Z,renderAsSubmenu:!0}))]}):null,t[85]=n?.libraryFileId,t[86]=ae,t[87]=Z,t[88]=c,t[89]=i,t[90]=E,t[91]=O,t[92]=L,t[93]=d,t[94]=N,t[95]=f,t[96]=o,t[97]=a,t[98]=ge,t[99]=he,t[100]=me,t[101]=ye,t[102]=X,t[103]=u,t[104]=r.content,t[105]=r.title,t[106]=r.variant,t[107]=K,t[108]=ke):ke=t[108];let Ae;t[109]!==j||t[110]!==Oe||t[111]!==ke?(Ae=(0,bo.jsx)($a,{actions:j,disabled:Oe,children:ke}),t[109]=j,t[110]=Oe,t[111]=ke,t[112]=Ae):Ae=t[112];let je;t[113]!==Z||t[114]!==w||t[115]!==ue?(je=ue&&(0,bo.jsx)(Ya,{disabled:Z,onFullscreenOpenRequested:w}),t[113]=Z,t[114]=w,t[115]=ue,t[116]=je):je=t[116];let Me=be?ve:null,Ne;return t[117]!==N||t[118]!==xe||t[119]!==Se||t[120]!==Q||t[121]!==Ce||t[122]!==we||t[123]!==Ee||t[124]!==De||t[125]!==Ae||t[126]!==je||t[127]!==Me?(Ne=(0,bo.jsxs)(`div`,{className:`flex items-center gap-1`,inert:N,"aria-disabled":xe,children:[Se,Q,Ce,we,Ee,De,Ae,je,Me]}),t[117]=N,t[118]=xe,t[119]=Se,t[120]=Q,t[121]=Ce,t[122]=we,t[123]=Ee,t[124]=De,t[125]=Ae,t[126]=je,t[127]=Me,t[128]=Ne):Ne=t[128],Ne}}));function To(e){"use forget";let t=(0,Oo.c)(75),{children:n,conversation:r,messageId:i,index:a,libraryFileId:o,optimisticLibraryFileId:s,enableSaveToLibrary:c,onLibraryClick:l,flushUnsavedEdits:u,...d}=e,f=Ue(),{prepareVersionHistory:p}=Or(),m=T(),g;t[0]===r?g=t[1]:(g=()=>r?.serverId$(),t[0]=r,t[1]=g);let _=h(g),[v,y]=(0,ko.useState)(!1),[x,S]=(0,ko.useState)(!1),C=(0,ko.useRef)(null),w=[o,s,d.writingBlock.library_file_id].find(Do),{data:E}=Pe({queryKey:[`writing-block-library-location`,w],queryFn:e=>{let{signal:t}=e;return Bn(w??``,t)},select:Eo,enabled:x&&w!=null}),D=E===void 0?null:E,O;t[2]===D?O=t[3]:(O=Gn(D),t[2]=D,t[3]=O);let k;t[4]===D?k=t[5]:(k=()=>yt(D),t[4]=D,t[5]=k);let A=x&&D!=null,j;t[6]!==O||t[7]!==k||t[8]!==A?(j={queryKey:O,queryFn:k,enabled:A,staleTime:3e4},t[6]=O,t[7]=k,t[8]=A,t[9]=j):j=t[9];let{data:M}=Pe(j),N=h(()=>w!=null&&(r==null||!bi(r).has(w))),P=m&&c&&w==null&&_!=null&&d.onPromoteToLibrary!=null&&d.writingBlock.content.trim()!==``,F,I;if(t[10]!==v||t[11]!==w?(F=()=>{v&&w!=null&&document.activeElement===document.body&&C.current?.focus()},I=[v,w],t[10]=v,t[11]=w,t[12]=F,t[13]=I):(F=t[12],I=t[13]),(0,ko.useEffect)(F,I),w!=null&&m){let e;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Ao.jsx)(Cn,{className:`icon`,"aria-hidden":!0}),t[14]=e):e=t[14];let o;t[15]===n?o=t[16]:(o=(0,Ao.jsx)(`span`,{className:`min-w-0 truncate`,children:n}),t[15]=n,t[16]=o);let s;t[17]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,Ao.jsx)(fn,{className:`icon-xs opacity-0 group-hover/inline-note:opacity-100 group-focus-visible/inline-note:opacity-100 group-data-[state=open]/inline-note:opacity-100`,"aria-hidden":!0}),t[17]=s):s=t[17];let c;t[18]===o?c=t[19]:(c=(0,Ao.jsx)(ot.BasicTrigger,{asChild:!0,children:(0,Ao.jsxs)(`button`,{ref:C,type:`button`,className:`interactive-button interactive-outline-secondary bg-token-bg-primary text-token-text-tertiary text-body-small-regular hover:border-token-border-default hover:bg-token-bg-tertiary hover:text-token-text-primary hover:shadow-elevation-01 active:bg-token-bg-tertiary data-[state=open]:border-token-border-default data-[state=open]:bg-token-bg-tertiary data-[state=open]:text-token-text-primary data-[state=open]:shadow-elevation-01 group/inline-note flex h-9 min-w-0 items-center gap-1 rounded-full border border-transparent px-3`,children:[e,o,s]})}),t[18]=o,t[19]=c);let m;t[20]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,Ao.jsx)(Cn,{className:`icon-sm mt-0.5 shrink-0`,"aria-hidden":!0}),t[20]=m):m=t[20];let h;t[21]===n?h=t[22]:(h=(0,Ao.jsx)(`div`,{className:`text-token-text-primary text-body-small-regular truncate`,children:n}),t[21]=n,t[22]=h);let g;if(t[23]!==D||t[24]!==M||t[25]!==f||t[26]!==l){let e;t[28]===l?e=t[29]:(e=(e,t)=>(0,Ao.jsxs)(`li`,{className:`contents`,children:[t>0&&(0,Ao.jsx)(`span`,{"aria-hidden":!0,children:(0,Ao.jsx)(Ne,{...zt.breadcrumbSeparator})}),(0,Ao.jsx)(Re,{to:ft(`/library`,e.id),onClick:l,className:`hover:text-token-text-primary focus-visible:text-token-text-primary focus-visible:outline-token-border-heavy max-w-full rounded-sm wrap-break-word focus-visible:outline-2 focus-visible:outline-offset-2`,children:e.name})]},e.id??`root`),t[28]=l,t[29]=e),g=Qe({currentDirectoryId:D,directoryPath:M,intl:f}).map(e),t[23]=D,t[24]=M,t[25]=f,t[26]=l,t[27]=g}else g=t[27];let _;t[30]===g?_=t[31]:(_=(0,Ao.jsx)(`ol`,{className:`text-token-text-tertiary text-caption-regular flex flex-wrap gap-x-1`,children:g}),t[30]=g,t[31]=_);let v;t[32]!==h||t[33]!==_?(v=(0,Ao.jsxs)(`div`,{className:`flex items-start gap-2 px-3 py-2`,children:[m,(0,Ao.jsxs)(`div`,{className:`min-w-0`,children:[h,_]})]}),t[32]=h,t[33]=_,t[34]=v):v=t[34];let y;t[35]===Symbol.for(`react.memo_cache_sentinel`)?(y=(0,Ao.jsx)(ot.Separator,{}),t[35]=y):y=t[35];let x;t[36]===Symbol.for(`react.memo_cache_sentinel`)?(x=(0,Ao.jsx)(Ne,{id:`writingBlocks.inlineLibraryTitle.openInLibrary`,defaultMessage:`Open in Library`}),t[36]=x):x=t[36];let T;t[37]===l?T=t[38]:(T=(0,Ao.jsx)(ot.LinkItem,{to:`/library`,onClick:l,icon:yn,children:x}),t[37]=l,t[38]=T);let E=d.title??d.writingBlock.title,O;t[39]!==r||t[40]!==u||t[41]!==a||t[42]!==i||t[43]!==d.disabled||t[44]!==d.isStreaming||t[45]!==d.writingBlock.content||t[46]!==w||t[47]!==E?(O=(0,Ao.jsx)(Ln,{conversation:r,messageId:i,index:a,libraryFileId:w,markdownContent:d.writingBlock.content,markdownFileName:E,flushUnsavedEdits:u,disabled:d.disabled,isStreaming:d.isStreaming,renderAsSubmenu:!0}),t[39]=r,t[40]=u,t[41]=a,t[42]=i,t[43]=d.disabled,t[44]=d.isStreaming,t[45]=d.writingBlock.content,t[46]=w,t[47]=E,t[48]=O):O=t[48];let k;t[49]!==N||t[50]!==f||t[51]!==p||t[52]!==d.disabled||t[53]!==w?(k=N&&(0,Ao.jsx)(ot.Item,{icon:on,disabled:d.disabled,onSelect:()=>{Promise.resolve(p?.()).then(e=>{if(e===!1)throw Error(`Could not save pending changes before opening version history.`);Dn(),tr(w)}).catch(e=>{b().danger(f.formatMessage({id:`writingBlocks.inlineLibraryTitle.historyFailed`,defaultMessage:`Couldn't open version history. Try again.`}),{error:e})})},children:(0,Ao.jsx)(Ne,{id:`recall.artifact_writing_block.menu.version_history`,defaultMessage:`Version history`})}),t[49]=N,t[50]=f,t[51]=p,t[52]=d.disabled,t[53]=w,t[54]=k):k=t[54];let A;t[55]!==v||t[56]!==T||t[57]!==O||t[58]!==k?(A=(0,Ao.jsx)(ot.Portal,{children:(0,Ao.jsxs)(ot.Content,{align:`start`,className:`max-w-sm`,children:[v,y,T,O,k]})}),t[55]=v,t[56]=T,t[57]=O,t[58]=k,t[59]=A):A=t[59];let j;return t[60]!==S||t[61]!==c||t[62]!==A?(j=(0,Ao.jsxs)(ot.Root,{onOpenChange:S,children:[c,A]}),t[60]=S,t[61]=c,t[62]=A,t[63]=j):j=t[63],j}if(P){let e;return t[64]!==n||t[65]!==d||t[66]!==y?(e=(0,Ao.jsx)(co,{...d,variant:`inline`,onSaved:y,children:n}),t[64]=n,t[65]=d,t[66]=y,t[67]=e):e=t[67],e}let L;t[68]===w?L=t[69]:(L=w!=null&&(0,Ao.jsx)(Cn,{className:`icon me-1 shrink-0`,"aria-hidden":!0}),t[68]=w,t[69]=L);let R;t[70]===n?R=t[71]:(R=(0,Ao.jsx)(`span`,{className:`min-w-0 truncate`,children:n}),t[70]=n,t[71]=R);let ee;return t[72]!==L||t[73]!==R?(ee=(0,Ao.jsxs)(`div`,{className:`flex h-9 min-w-0 items-center px-3`,children:[L,R]}),t[72]=L,t[73]=R,t[74]=ee):ee=t[74],ee}function Eo(e){let{artifact:t}=e;return typeof t.classifiers.parent_directory_id==`string`?t.classifiers.parent_directory_id:null}function Do(e){return e!=null&&e.trim().length>0}var Oo,ko,Ao,jo=e((()=>{Oo=He(),ct(),ln(),sn(),gn(),tn(),On(),Qn(),nt(),Wn(),_t(),ut(),Vn(),x(),m(),Oe(),Fn(),go(),Dr(),Si(),Ve(),ko=t(Ie()),$(),Fe(),Ao=ke()})),Mo,No,Po,Fo=e((()=>{Mo=He(),Dr(),jo(),M(),$(),No=ke(),Po=e=>{"use forget";let t=(0,Mo.c)(15),{title:n,fullscreenTitleContent:r,autosaveDebugBadge:i,inlineLibraryControls:a}=e,{isFullscreenDialogOpen:o}=Or(),s=o&&r!=null,c;t[0]===n?c=t[1]:(c=n??(0,No.jsx)(Ne,{id:`writingBlocks.header.label`,defaultMessage:`Writing`}),t[0]=n,t[1]=c);let l=c,d=a==null&&`max-w-[75%]`,f=o?`text-token-text-primary text-body-regular`:a==null?`text-token-text-tertiary text-sm font-medium`:`text-token-text-tertiary text-body-small-regular`,p;t[2]!==d||t[3]!==f?(p=u(`flex min-w-0 grow cursor-default items-center self-center`,d,f),t[2]=d,t[3]=f,t[4]=p):p=t[4];let m;t[5]!==r||t[6]!==a||t[7]!==o||t[8]!==s||t[9]!==l?(m=a!=null&&!o?(0,No.jsx)(To,{...a,children:l}):(0,No.jsx)(`div`,{className:u(`min-w-0`,!s&&`truncate`),children:s?r:l}),t[5]=r,t[6]=a,t[7]=o,t[8]=s,t[9]=l,t[10]=m):m=t[10];let h;return t[11]!==i||t[12]!==p||t[13]!==m?(h=(0,No.jsxs)(`div`,{className:p,children:[m,i]}),t[11]=i,t[12]=p,t[13]=m,t[14]=h):h=t[14],h}})),Io,Lo,Ro,zo,Bo,Vo,Ho,Uo=e((()=>{Io=He(),kr(),pn(),Ua(),De(),X(),wr(),M(),$(),Lo=ke(),Ro=je({editButtonLabel:{id:`writingBlocks.header.magicEdit.entry.text`,defaultMessage:`Edit`}}),zo=({className:e})=>(0,Lo.jsx)(Ha,{className:u(`icon`,e)}),Bo=({className:e})=>(0,Lo.jsx)(hn,{className:u(`icon-sm`,e)}),Vo=({onCancel:e,size:t})=>(0,Lo.jsx)(Ar,{size:t,onClick:e}),Ho=e=>{"use forget";let t=(0,Io.c)(23),{controls:n,analyticsMetadata:r,showCollapsedEditLabel:i,trailingContent:a,variant:o}=e,s=i===void 0||i,c=Ue(),l=r?.libraryFileId,u;t[0]!==r?.blockId||t[1]!==r?.messageId||t[2]!==r?.serverThreadId||t[3]!==l||t[4]!==o?(u=()=>{L.logStructuredEvent(`ChatgptWritingBlockHeaderMagicEditButtonClicked`,{conversationId:r?.serverThreadId,messageId:r?.messageId,writingBlockId:r?.blockId,...l==null?{}:{libraryFileId:l},variant:o}),Se.count(H.WRITING_BLOCKS,`chatgpt_writing_block_header_magic_edit_button_clicked`)},t[0]=r?.blockId,t[1]=r?.messageId,t[2]=r?.serverThreadId,t[3]=l,t[4]=o,t[5]=u):u=t[5],r?.blockId,r?.messageId,r?.serverThreadId;let d=u,f;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(f={composer:`dark:bg-[#2a2a2a]`,editButton:`dark:bg-[#2a2a2a]`},t[6]=f):f=t[6];let p;t[7]===c?p=t[8]:(p=c.formatMessage(Ro.editButtonLabel),t[7]=c,t[8]=p);let m;t[9]===c?m=t[10]:(m=c.formatMessage({id:`writingBlocks.header.magicEdit.composer.placeholder`,defaultMessage:`Ask for changes`}),t[9]=c,t[10]=m);let h;t[11]===c?h=t[12]:(h=c.formatMessage({id:`writingBlocks.header.magicEdit.composer.submit`,defaultMessage:`Submit edits`}),t[11]=c,t[12]=h);let g;t[13]!==p||t[14]!==m||t[15]!==h?(g={editButton:p,composerPlaceholder:m,submitButton:h},t[13]=p,t[14]=m,t[15]=h,t[16]=g):g=t[16];let _;return t[17]!==n||t[18]!==d||t[19]!==s||t[20]!==g||t[21]!==a?(_=(0,Lo.jsx)(Er,{classNames:f,controls:n,labels:g,onEditButtonClick:d,renderEditIcon:zo,renderSubmitIcon:Bo,renderSubmittingControl:Vo,showCollapsedEditLabel:s,submitButtonClassName:`composer-submit-btn composer-submit-button-color`,trailingContent:a}),t[17]=n,t[18]=d,t[19]=s,t[20]=g,t[21]=a,t[22]=_):_=t[22],_}}));function Wo(e){let{action:t,disabled:n,label:r,onClick:i,onMouseDown:a,tooltip:o}=e;return(0,Ko.jsx)(Wr,{disabled:n,icon:t===`undo`?vn:qo,label:r,onClick:i,onMouseDown:a,tooltip:o})}var Go,Ko,qo,Jo,Yo=e((()=>{Go=He(),dn(),Ur(),wr(),M(),$(),Ko=ke(),qo=e=>{"use forget";let t=(0,Go.c)(5),n;t[0]===e.className?n=t[1]:(n=u(e.className,`-scale-x-100`),t[0]=e.className,t[1]=n);let r;return t[2]!==e||t[3]!==n?(r=(0,Ko.jsx)(vn,{...e,"data-rtl-flip":void 0,className:n}),t[2]=e,t[3]=n,t[4]=r):r=t[4],r},Jo=e=>{"use forget";let t=(0,Go.c)(25),{editHistoryControls:n}=e,r=Ue(),i;t[0]===r?i=t[1]:(i=r.formatMessage({id:`writingBlocks.header.undo.tooltip`,defaultMessage:`Undo`}),t[0]=r,t[1]=i);let a=i,o;t[2]===r?o=t[3]:(o=r.formatMessage({id:`writingBlocks.header.undo.aria`,defaultMessage:`Undo last edit`}),t[2]=r,t[3]=o);let s=o,c;t[4]===r?c=t[5]:(c=r.formatMessage({id:`writingBlocks.header.redo.tooltip`,defaultMessage:`Redo`}),t[4]=r,t[5]=c);let l=c,u;t[6]===r?u=t[7]:(u=r.formatMessage({id:`writingBlocks.header.redo.aria`,defaultMessage:`Redo last edit`}),t[6]=r,t[7]=u);let d=u,f;t[8]!==n.canRedo||t[9]!==n.canUndo||t[10]!==n.hasActiveMagicEditPreview||t[11]!==n.hasHistorySessionEdits||t[12]!==n.isHeaderInteractionDisabled||t[13]!==n.onRedo||t[14]!==n.onUndo||t[15]!==n.shouldShowRedoButton?(f={canRedo:n.canRedo,canUndo:n.canUndo,hasActivePreview:n.hasActiveMagicEditPreview,hasSessionEdits:n.hasHistorySessionEdits,isInteractionDisabled:n.isHeaderInteractionDisabled,onRedo:n.onRedo,onUndo:n.onUndo,showRedoButton:n.shouldShowRedoButton},t[8]=n.canRedo,t[9]=n.canUndo,t[10]=n.hasActiveMagicEditPreview,t[11]=n.hasHistorySessionEdits,t[12]=n.isHeaderInteractionDisabled,t[13]=n.onRedo,t[14]=n.onUndo,t[15]=n.shouldShowRedoButton,t[16]=f):f=t[16];let p;t[17]!==d||t[18]!==l||t[19]!==s||t[20]!==a?(p={redoButton:d,redoTooltip:l,undoButton:s,undoTooltip:a},t[17]=d,t[18]=l,t[19]=s,t[20]=a,t[21]=p):p=t[21];let m;return t[22]!==f||t[23]!==p?(m=(0,Ko.jsx)(Tr,{controls:f,labels:p,renderButton:Wo}),t[22]=f,t[23]=p,t[24]=m):m=t[24],m}}));function Xo(e){"use forget";let t=(0,$o.c)(8),{conversation:n,libraryFileId:r,prepareVersionHistory:i}=e,a=Ue(),o;t[0]!==n||t[1]!==a||t[2]!==r||t[3]!==i?(o=e=>{Zi({entryId:e,errorMessage:a.formatMessage(zt.restoreFileFailed),libraryFileId:r,prepareVersionHistory:i,serverThreadId:n?.serverId$()})},t[0]=n,t[1]=a,t[2]=r,t[3]=i,t[4]=o):o=t[4];let s;return t[5]!==r||t[6]!==o?(s=(0,ts.jsx)(Pr,{fileId:r,onRestore:o}),t[5]=r,t[6]=o,t[7]=s):s=t[7],s}function Zo(e){return e.author.metadata?.real_author===`onboarding`}function Qo(e){return e!=null&&_e.someMessage(e,Zo)}var $o,es,ts,ns,rs=e((()=>{$o=He(),Ge(),nt(),Nr(),x(),Yn(),m(),de(),z(),O(),f(),ma(),jr(),Dr(),wo(),Xt(),Jt(),Fo(),Uo(),Yo(),ir(),Qi(),jt(),Rn(),Sr(),S(),M(),es=t(Ie()),$(),ts=ke(),ns=e=>{"use forget";let t=(0,$o.c)(141),{primaryAction:n,writingBlock:r,conversation:i,messageId:a,libraryFileId:o,optimisticLibraryFileId:s,isLibraryPromotionPending:c,onPromoteToLibrary:l,enableSaveToLibrary:d,onFullscreenOpenRequested:f,flushEditorContentForCopy:p,flushEditorContentForLibrarySave:m,flushUnsavedEdits:g,isInlineWritingBlockExportEnabled:_,title:v,index:y,showDownloadButton:b,contentReferences:x,analyticsMetadata:S,isStreaming:C,enableHeaderActionButtons:w,className:E,isWritingBlockFocusedModeEnabled:D,fullscreenLeadingAction:O,fullscreenCloseButtonPlacement:k,primaryActionPlacement:A,presence:j,overflowActions:M,sidePaneOverflowActions:N,hideCopyButton:P,hideFullscreenDivider:F,presentationMode:I,children:L,inlineContent:R}=e,ee=b===void 0||b,te=w!==void 0&&w,z=k===void 0?`leading`:k,B=F!==void 0&&F,ne;t[0]===e.autosaveStatus?ne=t[1]:(ne=!1,t[0]=e.autosaveStatus,t[1]=ne);let V=ne,H;bb0:switch(e.autosaveStatus){case`error`:H=`text-red-500 dark:text-red-400`;break bb0;case`retrying`:H=`text-purple-500 dark:text-purple-400`;break bb0;case`saving`:H=`text-blue-500 dark:text-blue-400`;break bb0;case`queued`:H=`text-amber-500 dark:text-amber-400`;break bb0;case`dirty`:H=`text-orange-500 dark:text-orange-400`;break bb0;case`saved`:H=`text-emerald-500 dark:text-emerald-400`;break bb0;default:H=`text-token-text-primary/35`}let re=H,U;t[2]!==re||t[3]!==e.autosaveStatus||t[4]!==V?(U=V?(0,ts.jsxs)(ts.Fragment,{children:[(0,ts.jsx)(`span`,{className:`mx-1`,children:`⋅`}),(0,ts.jsx)(`span`,{className:u(`text-[14px]`,re),"data-debug-saving":!0,children:e.autosaveStatus})]}):null,t[2]=re,t[3]=e.autosaveStatus,t[4]=V,t[5]=U):U=t[5];let W=U,{expandedShellKind:G,isFullscreenDialogOpen:K,isFullscreenTurnActive:ae,isVersionHistoryPreviewOpen:oe,libraryFileId:se,prepareFullscreenComposerTransition:q,prepareVersionHistory:ce,versionHistoryPreviewContent:J}=Or(),le=ae!==void 0&&ae,Y=oe!==void 0&&oe,X=(0,es.useContext)(Ut),{fullscreenTransitionPhase:ue}=Mr(),de=ge(i?.id,Qo),pe=T(),me=h(Z),he=h(ie),_e;t[6]!==he||t[7]!==me||t[8]!==K||t[9]!==r.variant?(_e=zn(r.variant,K,me,he),t[6]=he,t[7]=me,t[8]=K,t[9]=r.variant,t[10]=_e):_e=t[10];let{left:ve}=_e,ye=Math.min(ve,5),be=h(kt),xe;t[11]!==L||t[12]!==K||t[13]!==X||t[14]!==de||t[15]!==Y||t[16]!==I||t[17]!==r.variant?(xe=()=>!K&&!Y&&!X&&!de&&!fe()&&I!==`voice-stage`&&r.variant!==Te.EMAIL&&L==null&&ht(),t[11]=L,t[12]=K,t[13]=X,t[14]=de,t[15]=Y,t[16]=I,t[17]=r.variant,t[18]=xe):xe=t[18];let Se=h(xe),Q=!Se&&!be&&I!==`voice-stage`&&!Y&&!K&&!de&&he?e.magicEditControls:void 0,Ce=Q!==void 0,we=Q?.isComposerOpen===!0,Ee=!Y&&e.isEditable&&e.magicEditControls?.isHeaderInteractionDisabled===!0,De=le||!te&&Ee,Oe=Se?2:Ce?1:ye,ke=!Y&&K&&e.magicEditControls?.hasHistorySessionEdits===!0&&(e.magicEditControls.canUndo||e.magicEditControls.canRedo)&&e.magicEditControls.hasActiveMagicEditPreview!==!0?e.magicEditControls:void 0,Ae=Q?.hasHistorySessionEdits===!0&&Q.hasActiveMagicEditPreview!==!0?Q:void 0,je=ke??Ae,Me;t[19]===Symbol.for(`react.memo_cache_sentinel`)?(Me=fe(),t[19]=Me):Me=t[19];let Ne=!Me,Pe=je!==void 0||Ne||K&&(G===`side-pane`||z===`trailing`),Fe=je!==void 0&&Ne,$;t[20]!==Oe||t[21]!==be||t[22]!==K||t[23]!==Se?($=!K&&{paddingLeft:`calc(${Oe} * var(--spacing))`,...be&&!Se&&{paddingBlock:`calc(var(--oai-wb-radius) - 4.5 * var(--spacing))`,paddingInlineEnd:`calc(var(--oai-wb-radius) - 4.5 * var(--spacing))`}},t[20]=Oe,t[21]=be,t[22]=K,t[23]=Se,t[24]=$):$=t[24];let Ie;t[25]===$?Ie=t[26]:(Ie={...$},t[25]=$,t[26]=Ie);let Le=Ie,Re=ue!==`idle`,ze;t[27]!==K||t[28]!==Re?(ze=K&&Re?{viewTransitionName:cr}:void 0,t[27]=K,t[28]=Re,t[29]=ze):ze=t[29];let Be=ze,Ve;t[30]!==K||t[31]!==Re?(Ve=K&&Re?{viewTransitionName:dr}:void 0,t[30]=K,t[31]=Re,t[32]=Ve):Ve=t[32];let He=Ve,Ue=Re?ue:void 0,We=K?null:R;if(X)return null;let Ge=K&&!Re&&!B&&`border-token-border-light border-b`,Ke=K?`top-0`:`md:top-(--sticky-padding-top)`,qe;t[33]!==Ge||t[34]!==Ke?(qe=u(Pt.WritingBlockHeader,Ge,`relative`,`md:sticky`,Ke),t[33]=Ge,t[34]=Ke,t[35]=qe):qe=t[35];let Je;t[36]!==E||t[37]!==G||t[38]!==K||t[39]!==Se||t[40]!==Ce?(Je=u(`relative isolate flex w-full items-center justify-between gap-3 font-sans`,K?u(`rounded-none py-2`,G===`side-pane`?`ps-4 pe-3`:`px-3`):Se?`py-2`:`py-2.5`,!K&&(Se?`pe-2`:Ce?`pe-3`:`pe-3 sm:pe-1`),E),t[36]=E,t[37]=G,t[38]=K,t[39]=Se,t[40]=Ce,t[41]=Je):Je=t[41];let Ye;t[42]===Be?Ye=t[43]:(Ye=(0,ts.jsx)(`div`,{"aria-hidden":!0,className:`bg-token-bg-primary pointer-events-none absolute inset-0 -z-1 dark:bg-[#2a2a2a]`,"data-writing-block-fullscreen-header-surface":!0,style:Be}),t[42]=Be,t[43]=Ye);let Xe=K?`fullscreen`:`inline`,Ze=we?`items-start`:`items-center`,Qe;t[44]===Ze?Qe=t[45]:(Qe=u(`flex min-w-0 grow gap-3`,Ze),t[44]=Ze,t[45]=Qe);let et;t[46]!==G||t[47]!==z||t[48]!==O||t[49]!==K||t[50]!==Ee||t[51]!==C?(et=K&&(0,ts.jsx)(ts.Fragment,{children:O===void 0?G!==`side-pane`&&z!==`trailing`?(0,ts.jsx)(da,{isStreaming:C,isDisabled:Ee}):null:O}),t[46]=G,t[47]=z,t[48]=O,t[49]=K,t[50]=Ee,t[51]=C,t[52]=et):et=t[52];let tt;t[53]!==S||t[54]!==W||t[55]!==Q||t[56]!==L||t[57]!==i||t[58]!==d||t[59]!==m||t[60]!==g||t[61]!==y||t[62]!==De||t[63]!==Se||t[64]!==c||t[65]!==C||t[66]!==Y||t[67]!==o||t[68]!==a||t[69]!==l||t[70]!==s||t[71]!==e||t[72]!==v||t[73]!==We||t[74]!==r?(tt=L??(Q?(0,ts.jsx)(Ho,{controls:Q,analyticsMetadata:S,showCollapsedEditLabel:!$e(r.metadata),trailingContent:We,variant:r.variant}):(0,ts.jsxs)(ts.Fragment,{children:[(0,ts.jsx)(Po,{...e,inlineLibraryControls:Se?{writingBlock:r,title:v,conversation:i,messageId:a,index:y,libraryFileId:o,optimisticLibraryFileId:s,enableSaveToLibrary:d,isStreaming:C,disabled:De,isPromotionPending:c,onPromoteToLibrary:l,flushEditorContentForLibrarySave:m,flushUnsavedEdits:g,onLibraryClick:e.onLibraryClick??m}:void 0,autosaveDebugBadge:W,fullscreenTitleContent:Y&&!e.preserveFullscreenTitleDuringVersionHistoryPreview?void 0:e.fullscreenTitleContent}),We]})),t[53]=S,t[54]=W,t[55]=Q,t[56]=L,t[57]=i,t[58]=d,t[59]=m,t[60]=g,t[61]=y,t[62]=De,t[63]=Se,t[64]=c,t[65]=C,t[66]=Y,t[67]=o,t[68]=a,t[69]=l,t[70]=s,t[71]=e,t[72]=v,t[73]=We,t[74]=r,t[75]=tt):tt=t[75];let nt;t[76]!==Qe||t[77]!==et||t[78]!==tt?(nt=(0,ts.jsxs)(`div`,{className:Qe,children:[et,tt]}),t[76]=Qe,t[77]=et,t[78]=tt,t[79]=nt):nt=t[79];let rt;t[80]!==S||t[81]!==x||t[82]!==i||t[83]!==d||t[84]!==G||t[85]!==p||t[86]!==m||t[87]!==g||t[88]!==z||t[89]!==P||t[90]!==y||t[91]!==K||t[92]!==De||t[93]!==Ee||t[94]!==Se||t[95]!==_||t[96]!==c||t[97]!==de||t[98]!==pe||t[99]!==C||t[100]!==Y||t[101]!==D||t[102]!==o||t[103]!==a||t[104]!==f||t[105]!==l||t[106]!==s||t[107]!==M||t[108]!==q||t[109]!==ce||t[110]!==j||t[111]!==n||t[112]!==A||t[113]!==Pe||t[114]!==Fe||t[115]!==ee||t[116]!==N||t[117]!==v||t[118]!==se||t[119]!==J||t[120]!==je||t[121]!==r?(rt=Pe&&(0,ts.jsxs)(`div`,{className:`flex shrink-0 items-center`,children:[je&&(0,ts.jsx)(`div`,{className:`flex items-center gap-0`,"data-testid":`writing-block-header-magic-edit-history-buttons`,children:(0,ts.jsx)(Jo,{editHistoryControls:je})}),Fe&&(0,ts.jsx)(`div`,{"aria-hidden":`true`,className:`bg-token-border-light mx-1.5 h-3.5 w-px shrink-0`,"data-testid":`writing-block-header-magic-edit-history-separator`}),Ne&&(0,ts.jsx)(Co,{analyticsMetadata:S,writingBlock:Y&&J!=null?{...r,content:J}:r,conversation:i,messageId:a,libraryFileId:o,optimisticLibraryFileId:s,contentReferences:x,showDownloadButton:ee&&(!Se||!pe)&&(K||o!=null||r.library_file_id!=null||s!=null||r.variant===Te.EMAIL)&&!de&&!Y,isInlineWritingBlockExportEnabled:_,title:v,index:y,isStreaming:C,primaryAction:Y&&N!=null&&se!=null?(0,ts.jsx)(Xo,{conversation:i,libraryFileId:se,prepareVersionHistory:ce}):n,primaryActionPlacement:A,presence:j,overflowActions:K&&G===`side-pane`&&N!=null?[...M??[],...N]:M,hideCopyButton:P,isWritingBlockFocusedModeEnabled:D&&!de,isInteractionDisabled:De,isLibraryPromotionPending:c,onPromoteToLibrary:l,enableSaveToLibrary:d&&!Y,onFullscreenOpenRequested:f,flushEditorContentForCopy:Y?void 0:p,flushEditorContentForLibrarySave:m,flushUnsavedEdits:g}),K&&G!==`side-pane`&&z===`trailing`&&(0,ts.jsx)(da,{isStreaming:C,isDisabled:Ee}),K&&G===`side-pane`&&(0,ts.jsx)(Xn.HeaderActions,{preparePresentation:q,closeButton:(0,ts.jsx)(da,{isStreaming:C,isDisabled:Ee})})]}),t[80]=S,t[81]=x,t[82]=i,t[83]=d,t[84]=G,t[85]=p,t[86]=m,t[87]=g,t[88]=z,t[89]=P,t[90]=y,t[91]=K,t[92]=De,t[93]=Ee,t[94]=Se,t[95]=_,t[96]=c,t[97]=de,t[98]=pe,t[99]=C,t[100]=Y,t[101]=D,t[102]=o,t[103]=a,t[104]=f,t[105]=l,t[106]=s,t[107]=M,t[108]=q,t[109]=ce,t[110]=j,t[111]=n,t[112]=A,t[113]=Pe,t[114]=Fe,t[115]=ee,t[116]=N,t[117]=v,t[118]=se,t[119]=J,t[120]=je,t[121]=r,t[122]=rt):rt=t[122];let it;t[123]!==Ue||t[124]!==Xe||t[125]!==nt||t[126]!==rt?(it=(0,ts.jsxs)(`div`,{className:`relative z-1 flex w-full items-center justify-between gap-3`,"data-writing-block-fullscreen-header-chrome":!0,"data-writing-block-fullscreen-header-layout":Xe,"data-writing-block-fullscreen-transition-phase":Ue,children:[nt,rt]}),t[123]=Ue,t[124]=Xe,t[125]=nt,t[126]=rt,t[127]=it):it=t[127];let at;t[128]!==Le||t[129]!==Je||t[130]!==Ye||t[131]!==it?(at=(0,ts.jsxs)(`div`,{className:Je,"data-testid":`writing-block-header-surface`,style:Le,children:[Ye,it]}),t[128]=Le,t[129]=Je,t[130]=Ye,t[131]=it,t[132]=at):at=t[132];let ot;t[133]!==K||t[134]!==Re||t[135]!==He?(ot=K&&Re&&(0,ts.jsx)(`div`,{"aria-hidden":!0,className:`bg-token-border-light pointer-events-none absolute inset-x-0 bottom-0 h-px`,"data-writing-block-fullscreen-header-border":!0,style:He}),t[133]=K,t[134]=Re,t[135]=He,t[136]=ot):ot=t[136];let st;return t[137]!==qe||t[138]!==at||t[139]!==ot?(st=(0,ts.jsxs)(`div`,{className:qe,"data-testid":`writing-block-header-sticky-container`,children:[at,ot]}),t[137]=qe,t[138]=at,t[139]=ot,t[140]=st):st=t[140],st}}));export{ri as _,$i as a,Yi as c,vi as d,Si as f,si as g,ci as h,oa as i,ji as l,fi as m,rs as n,aa as o,bi as p,ua as r,Ji as s,ns as t,Di as u,ni as v,Zr as y};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/6175a897-h81gxcso66p4epcb.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-dfpv67hlp00pbohr.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-cy5f8pl0g26s86so.js", "assets/30901919-7dzdc1ou0jtwkwpt.js", "assets/c470f5ab-d4g7lc53n1e1ao7o.js", "assets/0e5afe53-o2mcfq1ky1uaktz5.js", "assets/conversation-small-j5v9ogf2.css", "assets/af004db9-jdoi5p0ftep3sdlx.js", "assets/a91a940c-k9u32x246pzc7sfi.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ant as n,
+    Az as r,
+    C5 as i,
+    C8 as a,
+    CQ as o,
+    Ew as s,
+    Fat as c,
+    I8 as l,
+    J5 as u,
+    JT as d,
+    Jtt as f,
+    L8 as p,
+    M5 as m,
+    N5 as h,
+    P7 as g,
+    Q0 as _,
+    Qu as v,
+    R7 as y,
+    RU as b,
+    Rk as x,
+    SQ as S,
+    Sot as C,
+    Tw as w,
+    Vk as T,
+    Wnt as E,
+    X0 as D,
+    Xnt as O,
+    Xu as k,
+    Xy as A,
+    Y0 as j,
+    Y5 as M,
+    YQ as N,
+    Ynt as P,
+    Zy as F,
+    _N as I,
+    _nt as L,
+    aB as R,
+    aC as ee,
+    aF as te,
+    aq as z,
+    b8 as B,
+    c0 as ne,
+    dat as V,
+    drt as H,
+    el as re,
+    fF as U,
+    fq as ie,
+    h8 as W,
+    iB as G,
+    iF as K,
+    iat as ae,
+    il as oe,
+    jnt as se,
+    jz as q,
+    kat as ce,
+    knt as J,
+    l0 as le,
+    lq as Y,
+    lrt as X,
+    nR as ue,
+    nY as de,
+    nnt as fe,
+    o5 as pe,
+    oC as me,
+    oat as he,
+    pY as ge,
+    pq as Z,
+    qJ as _e,
+    qT as ve,
+    rR as ye,
+    sat as be,
+    t2 as xe,
+    urt as Se,
+    vN as Q,
+    w5 as Ce,
+    x5 as we,
+    xQ as Te,
+    xot as Ee,
+    ynt as De,
+    zU as Oe
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    Bn as ke,
+    In as Ae,
+    Ln as je,
+    N as Me,
+    Nn as Ne,
+    O as Pe,
+    Q as Fe,
+    Rn as $,
+    Vn as Ie,
+    cn as Le,
+    it as Re,
+    ln as ze,
+    p as Be,
+    s as Ve,
+    wn as He,
+    zn as Ue
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $k as We,
+    AJ as Ge,
+    Bst as Ke,
+    DFn as qe,
+    DNn as Je,
+    Dhn as Ye,
+    Ehn as Xe,
+    Gft as Ze,
+    H5t as Qe,
+    II as $e,
+    Jht as et,
+    Jk as tt,
+    K9t as nt,
+    KGn as rt,
+    Kft as it,
+    Llt as at,
+    NHn as ot,
+    Njt as st,
+    PHn as ct,
+    Pjt as lt,
+    Q5t as ut,
+    QNt as dt,
+    ROt as ft,
+    Rbt as pt,
+    SKt as mt,
+    TFn as ht,
+    TGt as gt,
+    UOt as _t,
+    Vst as vt,
+    W5t as yt,
+    XNt as bt,
+    Xk as xt,
+    YGn as St,
+    YNt as Ct,
+    Yht as wt,
+    Zk as Tt,
+    aT as Et,
+    ahn as Dt,
+    bFn as Ot,
+    bKt as kt,
+    chn as At,
+    dA as jt,
+    iT as Mt,
+    ihn as Nt,
+    jJ as Pt,
+    lhn as Ft,
+    mFn as It,
+    nhn as Lt,
+    ohn as Rt,
+    q9t as zt,
+    qNt as Bt,
+    rhn as Vt,
+    shn as Ht,
+    uA as Ut,
+    vIn as Wt,
+    vKt as Gt,
+    vL as Kt,
+    wGt as qt,
+    xFn as Jt,
+    xIn as Yt,
+    yKt as Xt,
+    yL as Zt,
+    zbt as Qt,
+    zlt as $t
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+import {
+    Ax as en,
+    CS as tn,
+    Jy as nn,
+    Nh as rn,
+    Ph as an,
+    Uh as on,
+    Wh as sn,
+    Yy as cn,
+    _i as ln,
+    eb as un,
+    fi as dn,
+    gi as fn,
+    hi as pn,
+    kx as mn,
+    mi as hn,
+    nS as gn,
+    nl as _n,
+    pi as vn,
+    rS as yn,
+    rl as bn,
+    tb as xn,
+    vi as Sn,
+    wS as Cn,
+    yi as wn
+} from "./30901919-7dzdc1ou0jtwkwpt.js";
+import {
+    Em as Tn,
+    Lb as En,
+    Qy as Dn,
+    sb as On,
+    wm as kn
+} from "./8b34dbc2-k1zgxrtsww83602u.js";
+import {
+    n as An,
+    t as jn
+} from "./12a8bcb0-c9hpjc2ty9d378md.js";
+import {
+    n as Mn,
+    t as Nn
+} from "./af004db9-jdoi5p0ftep3sdlx.js";
+import {
+    i as Pn,
+    n as Fn,
+    r as In,
+    t as Ln
+} from "./429593da-nkbmnesnowmdlpp6.js";
+import {
+    n as Rn,
+    t as zn
+} from "./44246d2c-dgp7kxutj9d3oogu.js";
+import {
+    o as Bn,
+    r as Vn
+} from "./ede2e481-od67eg1jmad8xqx3.js";
+import {
+    n as Hn,
+    r as Un
+} from "./1af2f3f4-bzmpfifzgwv1mucp.js";
+import {
+    i as Wn,
+    n as Gn
+} from "./55904901-jldq49nzssgkpqgh.js";
+import {
+    n as Kn,
+    t as qn
+} from "./3dcf3d3b-m9girfky08mett6w.js";
+import {
+    i as Jn,
+    n as Yn,
+    t as Xn
+} from "./cc79834b-nek79wvzr7ty113i.js";
+import {
+    b as Zn,
+    d as Qn,
+    g as $n,
+    n as er,
+    p as tr,
+    y as nr
+} from "./4117f58d-mjw4wvc73oldt8xn.js";
+import {
+    _ as rr,
+    a as ir,
+    c as ar,
+    g as or,
+    h as sr,
+    i as cr,
+    l as lr,
+    o as ur,
+    r as dr,
+    s as fr,
+    u as pr
+} from "./31e01dd8-f2tk4edmhnwhnl2h.js";
+import {
+    i as mr,
+    n as hr,
+    r as gr,
+    t as _r
+} from "./2f7309c2-kry204irnbsi071c.js";
+import {
+    n as vr,
+    r as yr,
+    t as br
+} from "./560eefd0-er495qv49u7e31py.js";
+import {
+    n as xr,
+    t as Sr
+} from "./25a66342-dvwfh58a5m2qay1h.js";
+import {
+    r as Cr,
+    t as wr,
+    x as Tr,
+    y as Er
+} from "./27597608-gd3ymqiu9shcfl27.js";
+import {
+    a as Dr,
+    o as Or
+} from "./203cffdc-fvzq9iwlw95y9heu.js";
+import {
+    n as kr,
+    t as Ar
+} from "./2ac7f54f-jzsm5rt2s8lmfbel.js";
+import {
+    n as jr,
+    r as Mr
+} from "./e54430f0-5zrphxauqk0p9zqh.js";
+import {
+    i as Nr,
+    r as Pr,
+    t as Fr
+} from "./0e8433b5-lti5b9lz5r84u3ug.js";
+import {
+    n as Ir,
+    t as Lr
+} from "./058a5ba2-ez1dm3uknky7s9ol.js";
+import {
+    n as Rr,
+    t as zr
+} from "./017c9c5c-dnxpivxpr9qrcxwn.js";
+import {
+    n as Br,
+    r as Vr,
+    t as Hr
+} from "./a91a940c-k9u32x246pzc7sfi.js";
+import {
+    n as Ur,
+    t as Wr
+} from "./4b2c6e28-n431d5euuvb9l3uy.js";
+
+function Gr(e, t) {
+    "use forget";
+    let n = (0, Kr.c)(4),
+        r = (0, qr.useRef)(e),
+        i = (0, qr.useRef)(!1),
+        a, o;
+    return n[0] !== t || n[1] !== e ? (a = () => {
+        !t && !i.current && (r.current = e, i.current = !0)
+    }, o = [e, t], n[0] = t, n[1] = e, n[2] = a, n[3] = o) : (a = n[2], o = n[3]), (0, qr.useEffect)(a, o), r
+}
+var Kr, qr, Jr = e((() => {
+    Kr = He(), qr = t(Ie())
+}));
+
+function Yr(e) {
+    return typeof e == `function` ? e() : e
+}
+
+function Xr(e, t) {
+    return e < 1 && (!(t instanceof ce) || t.status !== 409)
+}
+
+function Zr(e) {
+    "use forget";
+    let t = (0, ei.c)(78),
+        {
+            writingBlock: n,
+            dirty: r,
+            setDirty: i,
+            persistWritingBlock: a,
+            prepareSnapshot: o,
+            onSave: s,
+            onSaveError: c,
+            delay: l,
+            isStreaming: u,
+            saveDisabled: d
+        } = e,
+        f = l === void 0 ? 2e3 : l,
+        p = u !== void 0 && u,
+        m = d !== void 0 && d,
+        [h, g] = (0, ti.useState)(!1),
+        [_, v] = (0, ti.useState)(null),
+        [y, b] = (0, ti.useState)(null),
+        [x, S] = (0, ti.useState)(!1),
+        [C, w] = (0, ti.useState)(!1),
+        T = (0, ti.useRef)(0),
+        E = Gr(n.content, p),
+        D = Gr(n.title, p),
+        O;
+    t[0] === n.metadata ? O = t[1] : (O = JSON.stringify(n.metadata ?? {}), t[0] = n.metadata, t[1] = O);
+    let k = Gr(O, p),
+        A;
+    t[2] === n.metadata ? A = t[3] : (A = n.metadata ?? {}, t[2] = n.metadata, t[3] = A);
+    let j = Gr(A, p),
+        M = (0, ti.useRef)(!1),
+        N = (0, ti.useRef)(!1),
+        P = (0, ti.useRef)(!1),
+        F = (0, ti.useRef)(null),
+        I = (0, ti.useRef)(!1),
+        L = (0, ti.useRef)(0),
+        R = (0, ti.useRef)(null),
+        ee = (0, ti.useRef)(0),
+        te;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (te = Promise.resolve(), t[4] = te) : te = t[4];
+    let z = (0, ti.useRef)(te),
+        B;
+    t[5] === a ? B = t[6] : (B = (e, t) => {
+        let n = 0,
+            r = z.current.catch(Qr).then(async () => {
+                if (t !== ee.current) return;
+                let r = async () => {
+                    n += 1, T.current = n, n > 1 && w(!0), await a(e)
+                };
+                try {
+                    await r()
+                } catch (e) {
+                    let n = e;
+                    if (t !== ee.current) return;
+                    if (!Xr(0, n)) throw n;
+                    if (await new Promise($r), t !== ee.current) return;
+                    await r()
+                }
+            });
+        return z.current = r, r
+    }, t[5] = a, t[6] = B);
+    let ne = B,
+        V;
+    t[7] !== ne || t[8] !== m ? (V = async e => {
+        let {
+            generation: t,
+            snapshot: n
+        } = e;
+        Yr(m) || await ne(n, t)
+    }, t[7] = ne, t[8] = m, t[9] = V) : V = t[9];
+    let H;
+    t[10] !== s || t[11] !== i ? (H = (e, t, n) => {
+        let {
+            snapshot: r
+        } = t;
+        R.current === n?.myVersion && !M.current && F.current == null && (i(!1), b(new Date), s?.(r))
+    }, t[10] = s, t[11] = i, t[12] = H) : H = t[12];
+    let re;
+    t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (re = () => {
+        T.current = 0, w(!1);
+        let e = L.current += 1;
+        return R.current = e, g(!0), v(null), {
+            myVersion: e
+        }
+    }, t[13] = re) : re = t[13];
+    let U;
+    t[14] !== c || t[15] !== i ? (U = (e, t, n) => {
+        v(e instanceof Error ? e.message : String(e)), i(!0), c?.(e)
+    }, t[14] = c, t[15] = i, t[16] = U) : U = t[16];
+    let {
+        mutate: ie,
+        mutateAsync: W
+    } = Be({
+        mutationFn: V,
+        onSuccess: H,
+        onMutate: re,
+        onError: U,
+        onSettled: (e, t, n, r) => {
+            if (T.current = 0, w(!1), R.current === r?.myVersion && (g(!1), R.current = null, M.current && K.flush(), F.current != null)) {
+                let e = F.current;
+                F.current = null, S(!1), G({
+                    generation: ee.current,
+                    snapshot: e
+                })
+            }
+        }
+    }), G = ie, K = Ke(e => {
+        let {
+            content: t,
+            title: n,
+            metadata: r
+        } = e, i = o == null ? {
+            content: t,
+            title: n,
+            metadata: r
+        } : o({
+            requireDirtySession: N.current && !P.current
+        });
+        if (M.current = !1, N.current = !1, P.current = !1, i == null) {
+            I.current = !1, S(F.current != null);
+            return
+        }
+        if (R.current != null) {
+            F.current = i, S(!0);
+            return
+        }
+        F.current = null, S(!1), G({
+            generation: ee.current,
+            snapshot: i
+        })
+    }, f), ae;
+    t[17] !== K || t[18] !== r || t[19] !== p || t[20] !== E || t[21] !== j || t[22] !== k || t[23] !== D || t[24] !== m || t[25] !== n.content || t[26] !== n.metadata || t[27] !== n.title ? (ae = () => {
+        let e = n.metadata ?? {},
+            t = JSON.stringify(e);
+        if (p || Yr(m)) return;
+        if (n.content === E.current && n.title === D.current && t === k.current) {
+            I.current = !1;
+            return
+        }
+        let i = n.title !== D.current || t !== k.current;
+        if (E.current = n.content, D.current = n.title, j.current = e, k.current = t, !r) {
+            M.current = !1, I.current = !1, P.current = !1, S(!1);
+            return
+        }
+        i && (P.current = !0), N.current || (M.current = !0, S(!0), K({
+            content: n.content,
+            title: n.title,
+            metadata: e
+        })), I.current &&= (Promise.resolve().then(() => {
+            K.flush()
+        }), !1)
+    }, t[17] = K, t[18] = r, t[19] = p, t[20] = E, t[21] = j, t[22] = k, t[23] = D, t[24] = m, t[25] = n.content, t[26] = n.metadata, t[27] = n.title, t[28] = ae) : ae = t[28];
+    let oe;
+    t[29] !== K || t[30] !== r || t[31] !== p || t[32] !== E || t[33] !== j || t[34] !== k || t[35] !== D || t[36] !== m || t[37] !== n.content || t[38] !== n.metadata || t[39] !== n.title ? (oe = [n.content, n.title, n.metadata, E, D, k, j, K, r, p, m], t[29] = K, t[30] = r, t[31] = p, t[32] = E, t[33] = j, t[34] = k, t[35] = D, t[36] = m, t[37] = n.content, t[38] = n.metadata, t[39] = n.title, t[40] = oe) : oe = t[40], (0, ti.useEffect)(ae, oe);
+    let se;
+    t[41] === K ? se = t[42] : (se = () => () => {
+        K.cancel(), I.current = !1, N.current = !1, P.current = !1, S(!1)
+    }, t[41] = K, t[42] = se);
+    let q;
+    t[43] === K ? q = t[44] : (q = [K], t[43] = K, t[44] = q), (0, ti.useEffect)(se, q);
+    let ce;
+    t[45] !== K || t[46] !== r ? (ce = () => {
+        if (!r && !M.current && F.current == null) {
+            I.current = !1, S(!1);
+            return
+        }
+        I.current = !0, M.current && (K.flush(), I.current = !1)
+    }, t[45] = K, t[46] = r, t[47] = ce) : ce = t[47];
+    let J = ce,
+        le;
+    t[48] !== K || t[49] !== p || t[50] !== E || t[51] !== j || t[52] !== D || t[53] !== m ? (le = () => {
+        p || Yr(m) || (N.current = !0, M.current = !0, S(!0), K({
+            content: E.current,
+            title: D.current,
+            metadata: j.current
+        }))
+    }, t[48] = K, t[49] = p, t[50] = E, t[51] = j, t[52] = D, t[53] = m, t[54] = le) : le = t[54];
+    let Y = le,
+        X;
+    t[55] !== K || t[56] !== E || t[57] !== j || t[58] !== k || t[59] !== D || t[60] !== W || t[61] !== m ? (X = async e => {
+        if (Yr(m)) return !1;
+        let t = ee.current += 1;
+        return K.cancel(), F.current = null, M.current = !1, I.current = !1, N.current = !1, P.current = !1, E.current = e.content, D.current = e.title, j.current = e.metadata, k.current = JSON.stringify(e.metadata), S(!1), await W({
+            generation: t,
+            snapshot: e
+        }), !0
+    }, t[55] = K, t[56] = E, t[57] = j, t[58] = k, t[59] = D, t[60] = W, t[61] = m, t[62] = X) : X = t[62];
+    let ue = X,
+        de;
+    t[63] === Symbol.for(`react.memo_cache_sentinel`) ? (de = () => {
+        I.current = !0
+    }, t[63] = de) : de = t[63];
+    let fe = de,
+        pe;
+    t[64] !== K || t[65] !== E || t[66] !== j || t[67] !== D || t[68] !== G ? (pe = () => {
+        if (I.current = !1, M.current) {
+            K.flush();
+            return
+        }
+        S(!1), N.current = !1, P.current = !1, R.current ?? G({
+            generation: ee.current,
+            snapshot: {
+                content: E.current,
+                title: D.current,
+                metadata: j.current
+            }
+        })
+    }, t[64] = K, t[65] = E, t[66] = j, t[67] = D, t[68] = G, t[69] = pe) : pe = t[69];
+    let me = pe,
+        he = !!y && !r && !h,
+        ge;
+    bb0: {
+        if (C) {
+            ge = `retrying`;
+            break bb0
+        }
+        if (h) {
+            ge = `saving`;
+            break bb0
+        }
+        if (_) {
+            ge = `error`;
+            break bb0
+        }
+        if (x) {
+            ge = `queued`;
+            break bb0
+        }
+        if (r) {
+            ge = `dirty`;
+            break bb0
+        }
+        if (he) {
+            ge = `saved`;
+            break bb0
+        }
+        ge = `idle`
+    }
+    let Z = ge,
+        _e;
+    return t[70] !== _ || t[71] !== J || t[72] !== me || t[73] !== Y || t[74] !== ue || t[75] !== y || t[76] !== Z ? (_e = {
+        status: Z,
+        savedAt: y,
+        error: _,
+        saveSnapshot: ue,
+        flushPendingChanges: J,
+        flushNextChange: fe,
+        forceSave: me,
+        notifyEditorInput: Y
+    }, t[70] = _, t[71] = J, t[72] = me, t[73] = Y, t[74] = ue, t[75] = y, t[76] = Z, t[77] = _e) : _e = t[77], _e
+}
+
+function Qr() {}
+
+function $r(e) {
+    return setTimeout(e, 3e3)
+}
+var ei, ti, ni = e((() => {
+    ei = He(), c(), Jr(), Ve(), ti = t(Ie()), vt()
+}));
+
+function ri(e) {
+    "use forget";
+    let t = (0, ii.c)(101),
+        {
+            authoritativeContent: n,
+            authoritativeContentKey: r,
+            authoritativeContentVersion: i,
+            contentFileId: a,
+            isEditable: o,
+            getFileNameForContent: s,
+            libraryDocumentId: c,
+            libraryFileId: l,
+            mimeType: u,
+            onSave: d,
+            onSaveError: f,
+            onSaveSuccess: p,
+            updateLibraryTextFileOverride: m,
+            useOptimisticLock: g,
+            persistFileName: _,
+            persistViaMultiplayer: v,
+            multiplayerSession: y,
+            writingBlock: b
+        } = e,
+        x = g !== void 0 && g,
+        S = _ !== void 0 && _,
+        C = v !== void 0 && v,
+        w;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (w = Bt(), t[0] = w) : w = t[0];
+    let T = w,
+        E;
+    t[1] === c ? E = t[2] : (E = () => mr(c), t[1] = c, t[2] = E);
+    let D = h(E),
+        O = (0, ai.useRef)(null),
+        k = (0, ai.useRef)(void 0),
+        A = Me(),
+        j, M;
+    t[3] === c ? (j = t[4], M = t[5]) : (j = () => {
+        let e = T.getSession(c);
+        O.current = e?.dirty === !0 ? e.draftContent : null
+    }, M = [c, T], t[3] = c, t[4] = j, t[5] = M), (0, ai.useEffect)(j, M);
+    let N, P;
+    t[6] !== n || t[7] !== r || t[8] !== i || t[9] !== a || t[10] !== c ? (N = () => {
+        n != null && (r == null ? T.hydrateSessionFromLibrary({
+            libraryFileId: c,
+            content: n,
+            fileId: a,
+            versionNumber: i
+        }) : T.replaceWithAuthoritativeContent({
+            libraryFileId: c,
+            content: n,
+            fileId: a,
+            authoritativeContentKey: r,
+            versionNumber: i
+        }), T.getSessionSnapshot(c)?.dirty !== !0 && (O.current = null))
+    }, P = [n, r, i, a, c, T], t[6] = n, t[7] = r, t[8] = i, t[9] = a, t[10] = c, t[11] = N, t[12] = P) : (N = t[11], P = t[12]), (0, ai.useEffect)(N, P);
+    let F = D?.draftContent ?? n,
+        I = F ?? ``,
+        L;
+    t[13] !== I || t[14] !== b ? (L = {
+        ...b,
+        content: I
+    }, t[13] = I, t[14] = b, t[15] = L) : L = t[15];
+    let R = L,
+        ee;
+    t[16] !== a || t[17] !== s || t[18] !== l || t[19] !== u || t[20] !== p || t[21] !== S || t[22] !== A || t[23] !== m || t[24] !== x ? (ee = async e => {
+        let {
+            content: t,
+            title: n
+        } = e;
+        if (l == null) return !1;
+        let r = await hr({
+            content: t,
+            contentFileId: a,
+            fileName: S ? s?.(t) ?? n : void 0,
+            libraryFileId: l,
+            mimeType: u,
+            queryClient: A,
+            updateLibraryTextFileOverride: m,
+            useOptimisticLock: x
+        });
+        return r != null && p?.(r), r != null
+    }, t[16] = a, t[17] = s, t[18] = l, t[19] = u, t[20] = p, t[21] = S, t[22] = A, t[23] = m, t[24] = x, t[25] = ee) : ee = t[25];
+    let te = ee,
+        z;
+    t[26] !== s || t[27] !== c || t[28] !== l || t[29] !== A ? (z = async e => {
+        let {
+            content: t,
+            title: n
+        } = e;
+        if (l == null) return;
+        let r = s?.(t) ?? n;
+        if (r == null) return;
+        let i = k.current ?? T.getSessionSnapshot(c)?.lastSavedContent ?? t,
+            a = s?.(i) ?? r;
+        r !== a && (await Un({
+            debounce: !1,
+            fileName: r,
+            initialFileName: a,
+            libraryFileId: l,
+            queryClient: A
+        }), k.current = t)
+    }, t[26] = s, t[27] = c, t[28] = l, t[29] = A, t[30] = z) : z = t[30];
+    let B = z,
+        ne;
+    t[31] !== o || t[32] !== c || t[33] !== l || t[34] !== y || t[35] !== d || t[36] !== C || t[37] !== te || t[38] !== b.title ? (ne = async () => {
+        T.flushPendingEditorChanges(c);
+        let e = T.getSessionSnapshot(c);
+        if (!o || l == null) return !1;
+        if (C) {
+            if (y == null) throw Error(`The multiplayer document has not opened.`);
+            return await y.save(), !0
+        }
+        return e == null || !e.dirty ? !0 : e.draftSource === `library` ? await te({
+            content: e.draftContent,
+            title: b.title
+        }) ? (d?.(), !0) : T.getSessionSnapshot(c)?.dirty === !1 : !1
+    }, t[31] = o, t[32] = c, t[33] = l, t[34] = y, t[35] = d, t[36] = C, t[37] = te, t[38] = b.title, t[39] = ne) : ne = t[39];
+    let V = ne,
+        H;
+    t[40] !== a || t[41] !== c ? (H = e => {
+        let t = T.getSessionSnapshot(c);
+        !e || t == null || t.hasPendingEditorChanges || (T.updateDraft({
+            libraryFileId: c,
+            content: t.draftContent,
+            fileId: t.fileId ?? a,
+            source: `library`
+        }), O.current = null)
+    }, t[40] = a, t[41] = c, t[42] = H) : H = t[42];
+    let re = H,
+        U;
+    t[43] !== c || t[44] !== b.metadata || t[45] !== b.title ? (U = e => {
+        let {
+            requireDirtySession: t
+        } = e;
+        T.flushPendingEditorChanges(c);
+        let n = T.getSessionSnapshot(c);
+        if (!(n == null || t && !n.dirty)) return {
+            content: n.draftContent,
+            title: b.title,
+            metadata: b.metadata ?? {}
+        }
+    }, t[43] = c, t[44] = b.metadata, t[45] = b.title, t[46] = U) : U = t[46];
+    let ie = U,
+        W;
+    t[47] !== o || t[48] !== c || t[49] !== l || t[50] !== S || t[51] !== C ? (W = () => {
+        let e = T.getSessionSnapshot(c);
+        return C && !S || !o || l == null || e == null || e.draftSource !== `library`
+    }, t[47] = o, t[48] = c, t[49] = l, t[50] = S, t[51] = C, t[52] = W) : W = t[52];
+    let G = W,
+        K = D?.dirty ?? !1,
+        ae;
+    t[53] !== B || t[54] !== C || t[55] !== te ? (ae = async e => {
+        C ? await B(e) : await te(e)
+    }, t[53] = B, t[54] = C, t[55] = te, t[56] = ae) : ae = t[56];
+    let oe = C ? void 0 : d,
+        se;
+    t[57] !== G || t[58] !== f || t[59] !== ie || t[60] !== re || t[61] !== K || t[62] !== ae || t[63] !== oe || t[64] !== R ? (se = {
+        writingBlock: R,
+        dirty: K,
+        setDirty: re,
+        prepareSnapshot: ie,
+        persistWritingBlock: ae,
+        delay: oi,
+        saveDisabled: G,
+        onSave: oe,
+        onSaveError: f
+    }, t[57] = G, t[58] = f, t[59] = ie, t[60] = re, t[61] = K, t[62] = ae, t[63] = oe, t[64] = R, t[65] = se) : se = t[65];
+    let q = Zr(se),
+        ce = q.saveSnapshot,
+        J;
+    t[66] !== ie || t[67] !== ce ? (J = () => {
+        let e = ie({
+            requireDirtySession: !0
+        });
+        return e == null ? Promise.resolve(!1) : ce(e)
+    }, t[66] = ie, t[67] = ce, t[68] = J) : J = t[68];
+    let le = J,
+        Y;
+    t[69] !== a || t[70] !== c ? (Y = e => {
+        let t = T.getSessionSnapshot(c);
+        T.updateDraft({
+            libraryFileId: c,
+            content: e,
+            fileId: t?.fileId ?? a,
+            source: `library`
+        })
+    }, t[69] = a, t[70] = c, t[71] = Y) : Y = t[71];
+    let X = Y,
+        ue = q.flushPendingChanges,
+        de;
+    t[72] !== ue || t[73] !== c ? (de = () => {
+        T.flushPendingEditorChanges(c), ue()
+    }, t[72] = ue, t[73] = c, t[74] = de) : de = t[74];
+    let fe = de,
+        pe;
+    t[75] !== q || t[76] !== F || t[77] !== o || t[78] !== c || t[79] !== C ? (pe = () => {
+        let e = T.getSessionSnapshot(c);
+        C || !o || F == null || e?.dirty !== !0 || e.draftSource !== `library` || e.inFlightSaveSequence != null || O.current == null || O.current !== e.draftContent || e.draftContent !== F || (O.current = null, q.forceSave())
+    }, t[75] = q, t[76] = F, t[77] = o, t[78] = c, t[79] = C, t[80] = pe) : pe = t[80];
+    let me = D?.dirty,
+        he = D?.draftContent,
+        ge = D?.inFlightSaveSequence,
+        Z;
+    t[81] !== q || t[82] !== F || t[83] !== o || t[84] !== c || t[85] !== C || t[86] !== me || t[87] !== he || t[88] !== ge ? (Z = [q, F, o, c, C, me, he, ge, T], t[81] = q, t[82] = F, t[83] = o, t[84] = c, t[85] = C, t[86] = me, t[87] = he, t[88] = ge, t[89] = Z) : Z = t[89], (0, ai.useEffect)(pe, Z);
+    let _e = D?.lastAppliedLivePatchResultKey,
+        ve;
+    return t[90] !== q.notifyEditorInput || t[91] !== q.status || t[92] !== F || t[93] !== fe || t[94] !== le || t[95] !== V || t[96] !== re || t[97] !== _e || t[98] !== X || t[99] !== R ? (ve = {
+        autosaveStatus: q.status,
+        content: F,
+        externalContentUpdateKey: _e,
+        flushPendingChanges: fe,
+        notifyEditorInput: q.notifyEditorInput,
+        retryPendingChanges: le,
+        savePendingChanges: V,
+        setDirty: re,
+        updateDraftContent: X,
+        writingBlock: R
+    }, t[90] = q.notifyEditorInput, t[91] = q.status, t[92] = F, t[93] = fe, t[94] = le, t[95] = V, t[96] = re, t[97] = _e, t[98] = X, t[99] = R, t[100] = ve) : ve = t[100], ve
+}
+var ii, ai, oi, si = e((() => {
+    ii = He(), Hn(), W(), gr(), Ct(), _r(), ni(), Ve(), ai = t(Ie()), oi = 2500
+}));
+
+function ci(e) {
+    "use forget";
+    let t = (0, li.c)(52),
+        {
+            editorHandleRef: n,
+            isInteractionDisabled: r,
+            onWriteLikeMeResult: i,
+            writingBlockId: a
+        } = e,
+        [o, s] = (0, ui.useState)(!1),
+        c;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = {
+        canUndo: !1,
+        canRedo: !1,
+        isHistoryInteractionDisabled: !1,
+        hasActiveMagicEditPreview: !1
+    }, t[0] = c) : c = t[0];
+    let [l, u] = (0, ui.useState)(c), [d, f] = (0, ui.useState)(!1), [p, m] = (0, ui.useState)(!1), [h, g] = (0, ui.useState)(!1), [_, v] = (0, ui.useState)(!1), y = (0, ui.useRef)(!1), b;
+    t[1] !== i || t[2] !== a ? (b = (e, t, n, r) => e == null || e !== a ? !1 : r == null ? i?.(t, n) ?? !1 : i?.(t, n, r) ?? !1, t[1] = i, t[2] = a, t[3] = b) : b = t[3];
+    let x = Q(b),
+        S;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (e, t) => {
+        u(e), e.canUndo || e.canRedo ? f(!0) : t?.preserveSessionEditsWhenEmpty !== !0 && f(!1), e.canRedo && m(!0), !e.canUndo && !e.canRedo && m(!1)
+    }, t[4] = S) : S = t[4];
+    let C = S,
+        w;
+    t[5] === n ? w = t[6] : (w = () => {
+        let e = n.current?.getHistoryState();
+        e && C(e)
+    }, t[5] = n, t[6] = w);
+    let T = w,
+        E;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (E = e => {
+        C(e)
+    }, t[7] = E) : E = t[7];
+    let D = E,
+        O;
+    t[8] !== n || t[9] !== l.isHistoryInteractionDisabled || t[10] !== T ? (O = () => {
+        l.isHistoryInteractionDisabled || (m(!0), n.current?.undo({
+            restoreFocus: !1,
+            scrollIntoView: !1
+        }), T())
+    }, t[8] = n, t[9] = l.isHistoryInteractionDisabled, t[10] = T, t[11] = O) : O = t[11];
+    let k = O,
+        A;
+    t[12] !== n || t[13] !== l.isHistoryInteractionDisabled || t[14] !== T ? (A = () => {
+        l.isHistoryInteractionDisabled || (n.current?.redo({
+            restoreFocus: !1,
+            scrollIntoView: !1
+        }), T())
+    }, t[12] = n, t[13] = l.isHistoryInteractionDisabled, t[14] = T, t[15] = A) : A = t[15];
+    let j = A,
+        M;
+    t[16] === n ? M = t[17] : (M = () => {
+        f(!0);
+        let e = n.current?.getHistoryState();
+        e && C(e, {
+            preserveSessionEditsWhenEmpty: !0
+        })
+    }, t[16] = n, t[17] = M);
+    let N = M,
+        P = l.canRedo || p,
+        F = l.isHistoryInteractionDisabled === !0,
+        I;
+    t[18] !== n || t[19] !== r ? (I = (e, t) => {
+        if (e) {
+            if (r) return;
+            n.current?.beginHeaderMagicEdit?.() === !0 && s(!0);
+            return
+        }
+        s(!1), n.current?.cancelHeaderMagicEdit({
+            cancelRequest: t?.cancelRequest
+        })
+    }, t[18] = n, t[19] = r, t[20] = I) : I = t[20];
+    let L = I,
+        R;
+    t[21] === n ? R = t[22] : (R = async e => await n.current?.submitHeaderMagicEdit(e) ?? !1, t[21] = n, t[22] = R);
+    let ee = R,
+        te;
+    t[23] !== n || t[24] !== x || t[25] !== r || t[26] !== a ? (te = (e, t) => {
+        if (r || y.current) return Promise.resolve(!1);
+        y.current = !0, v(!0);
+        let i = a,
+            o = n.current,
+            s = o?.flushPendingChanges(),
+            c = t?.primaryOption != null && s != null ? {
+                ...t,
+                primaryOption: {
+                    ...t.primaryOption,
+                    content: s
+                }
+            } : t;
+        return (o?.requestHeaderMagicEditReplacement?.(di, {
+            personalizationEnabled: !0
+        }) ?? Promise.resolve(null)).then(t => t == null || !x(i, e, t, c) ? !1 : (o?.setWritingBlockContent(t), !0)).finally(() => {
+            y.current = !1, v(!1)
+        })
+    }, t[23] = n, t[24] = x, t[25] = r, t[26] = a, t[27] = te) : te = t[27];
+    let z = te,
+        B;
+    t[28] === n ? B = t[29] : (B = () => {
+        n.current?.cancelHeaderMagicEdit({
+            releaseSelection: !1
+        })
+    }, t[28] = n, t[29] = B);
+    let ne = B,
+        V;
+    t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (V = e => {
+        g(e)
+    }, t[30] = V) : V = t[30];
+    let H = V,
+        re = l.hasActiveMagicEditPreview === !0,
+        U;
+    t[31] !== d || t[32] !== l.canRedo || t[33] !== l.canUndo || t[34] !== F || t[35] !== o || t[36] !== r || t[37] !== ne || t[38] !== L || t[39] !== j || t[40] !== ee || t[41] !== k || t[42] !== P || t[43] !== re ? (U = {
+        isComposerOpen: o,
+        onComposerOpenChange: L,
+        onSubmittingChange: H,
+        isInteractionDisabled: r,
+        isHeaderInteractionDisabled: F,
+        hasHistorySessionEdits: d,
+        hasActiveMagicEditPreview: re,
+        canUndo: l.canUndo,
+        canRedo: l.canRedo,
+        shouldShowRedoButton: P,
+        onUndo: k,
+        onRedo: j,
+        onSubmitComposerInstruction: ee,
+        onCancelComposerSubmit: ne
+    }, t[31] = d, t[32] = l.canRedo, t[33] = l.canUndo, t[34] = F, t[35] = o, t[36] = r, t[37] = ne, t[38] = L, t[39] = j, t[40] = ee, t[41] = k, t[42] = P, t[43] = re, t[44] = U) : U = t[44];
+    let ie = U,
+        W;
+    return t[45] !== o || t[46] !== h || t[47] !== _ || t[48] !== ie || t[49] !== N || t[50] !== z ? (W = {
+        magicEditControls: ie,
+        isHeaderMagicEditComposerOpen: o,
+        isHeaderMagicEditSubmitting: h,
+        isWriteLikeMeSubmitting: _,
+        onHistoryStateChange: D,
+        onWriteLikeMeAction: z,
+        markSessionEdited: N
+    }, t[45] = o, t[46] = h, t[47] = _, t[48] = ie, t[49] = N, t[50] = z, t[51] = W) : W = t[51], W
+}
+var li, ui, di, fi = e((() => {
+    li = He(), ui = t(Ie()), I(), di = `Rewrite this using my writing style.`
+}));
+
+function pi({
+    messageId: e,
+    resourceUpdate: t,
+    result: n
+}) {
+    return {
+        messageId: e,
+        libraryFileId: n.libraryFileId,
+        fileId: Tt(t),
+        versionNumber: t.contentRevisionId != null && t.contentRevisionId !== t.resourceRevisionId ? null : n.newVersionNumber,
+        content: t.content
+    }
+}
+
+function mi(e) {
+    return typeof e == `object` && !!e && !Array.isArray(e)
+}
+
+function hi(e) {
+    let t = e.metadata?.library_file_update,
+        n = e.metadata?.invoked_resource?.resource_uri,
+        r = n === `/library/finalize_uploads` || n === `/connector_openai_library/implicit_link::connector_openai_library/finalize_uploads`;
+    if (e.author.role !== `tool` || t == null || !r && n !== `/library/replace_library_file` && n !== `/connector_openai_library/implicit_link::connector_openai_library/replace_library_file`) return null;
+    let i;
+    if (e.content.content_type === `code`) i = e.content.text;
+    else if (e.content.content_type === `text` && e.content.parts.every(e => typeof e == `string`)) i = e.content.parts.join(``);
+    else return null;
+    try {
+        let n = JSON.parse(i);
+        if (!mi(n) || !mi(n.result)) return null;
+        let a = n.result.structuredContent;
+        if (!mi(a)) return null;
+        let o = r ? a.results : [a];
+        if (!Array.isArray(o)) return null;
+        let s = o.find(e => mi(e) && e.status === `succeeded` && e.operation === `replace_library_file` && e.library_file_id === t.library_file_id && e.file_id === t.file_id);
+        if (s == null) return null;
+        let c = s.current_version_number;
+        return typeof c != `number` || !Number.isInteger(c) || c < 0 ? null : {
+            messageId: e.id,
+            libraryFileId: t.library_file_id,
+            fileId: t.file_id,
+            versionNumber: c
+        }
+    } catch {
+        return null
+    }
+}
+
+function gi(e, t = _i(e)) {
+    let n = new Map([...t.values()].map(e => [e.messageId, e])),
+        r = new Map;
+    for (let t of e) {
+        let e = n.get(t.id),
+            i = e == null ? hi(t) : pi(e);
+        i != null && r.set(i.libraryFileId, i)
+    }
+    return r
+}
+
+function _i(e) {
+    let t = new Map;
+    for (let n of e) {
+        let e = N(n);
+        if (e?.status !== `created`) continue;
+        let r = xt(n.metadata?.resource_updates, e.libraryFileId);
+        r != null && t.set(e.libraryFileId, {
+            messageId: n.id,
+            result: e,
+            resourceUpdate: r
+        })
+    }
+    return t
+}
+
+function vi(e, t) {
+    for (let n of e.values())
+        if (n.resourceUpdate.supersedes.some(e => e.message_id === t.message_id && e.instance_id === t.instance_id)) return n
+}
+
+function yi(e, t) {
+    if (e.size !== t.size) return !1;
+    for (let [n, r] of e) {
+        let e = t.get(n);
+        if (e == null || r.messageId !== e.messageId || r.result.newVersionNumber !== e.result.newVersionNumber || r.resourceUpdate.instanceId !== e.resourceUpdate.instanceId || r.resourceUpdate.resourceRevisionId !== e.resourceUpdate.resourceRevisionId || r.resourceUpdate.contentRevisionId !== e.resourceUpdate.contentRevisionId || r.resourceUpdate.content !== e.resourceUpdate.content || r.resourceUpdate.displayMode !== e.resourceUpdate.displayMode || r.resourceUpdate.supersedes.length !== e.resourceUpdate.supersedes.length || r.resourceUpdate.supersedes.some((t, n) => {
+                let r = e.resourceUpdate.supersedes[n];
+                return t.message_id !== r?.message_id || t.instance_id !== r?.instance_id || t.ref_index !== r?.ref_index
+            })) return !1
+    }
+    return !0
+}
+var bi, xi, Si = e((() => {
+    U(), v(), We(), tt(), W(), l(), bi = K(e => B(() => _i(k(e).flatMap(e => e.messages)), {
+        equals: yi
+    })), xi = K(e => B(() => gi(k(e).flatMap(e => e.messages), bi(e)), {
+        equals: (e, t) => e.size === t.size && [...e].every(([e, n]) => p(n, t.get(e)))
+    }))
+}));
+
+function Ci(e) {
+    return `result` in e ? pi(e) : e
+}
+
+function wi(e) {
+    let {
+        messageId: t,
+        fileId: n
+    } = Ci(e);
+    return `${t}:${n}`
+}
+
+function Ti(e = ki) {
+    let t = new Set,
+        n = new Map,
+        r = new Map,
+        i = new Set;
+
+    function a(e) {
+        let {
+            libraryFileId: t
+        } = Ci(e.update), n = wi(e.update), i = r.get(t);
+        i?.resultKey !== n && (i != null && clearTimeout(i.timeout), r.set(t, {
+            resultKey: n,
+            timeout: setTimeout(() => {
+                r.get(t)?.resultKey === n && (r.delete(t), o(e))
+            }, Oi)
+        }))
+    }
+
+    function o({
+        update: o,
+        queryClient: s,
+        resultMode: c = `live`,
+        serverThreadId: l
+    }) {
+        let {
+            content: u,
+            fileId: d,
+            libraryFileId: f,
+            versionNumber: p
+        } = Ci(o), m = wi(o), h = r.get(f);
+        if (h != null && h.resultKey !== m && (clearTimeout(h.timeout), r.delete(f)), t.has(m) || (t.add(m), e.invalidateCaches({
+                fileId: d,
+                libraryFileId: f,
+                queryClient: s
+            })), we(() => Kn(f))) return `multiplayer`;
+        let g = e.getSessionStore(),
+            _ = g.getSessionSnapshot(f);
+        if (_ == null) return `no_session`;
+        if (_.dirty || _.inFlightSaveSequence != null) return `deferred`;
+        if (n.get(f)?.resultKey === m || r.get(f)?.resultKey === m || i.has(m)) return `duplicate`;
+        let v = g.observeExternalCommit({
+            isHistoricalResult: c === `historical`,
+            libraryFileId: f,
+            resultKey: m,
+            versionNumber: p
+        });
+        if (v.status !== `accepted`) return v.status;
+        if (n.get(f)?.abortController.abort(), u != null) {
+            i.add(m);
+            try {
+                let e = g.applyAuthoritativeExternalCommit({
+                    content: u,
+                    fileId: d,
+                    libraryFileId: f,
+                    livePatchResultKey: c === `live` ? m : void 0,
+                    observationToken: v.observationToken,
+                    resultKey: m
+                });
+                return e === `skipped_local_changes` || e === `skipped_stale_version` ? `deferred` : e
+            } finally {
+                i.delete(m)
+            }
+        }
+        if (l == null) return `invalidated`;
+        let y = new AbortController;
+        return n.set(f, {
+            abortController: y,
+            resultKey: m
+        }), e.fetchAndApplyObservedExternalSession({
+            abortSignal: y.signal,
+            fileId: d,
+            libraryFileId: f,
+            livePatchResultKey: c === `live` ? m : void 0,
+            observationToken: v.observationToken,
+            resultKey: m,
+            serverThreadId: l
+        }).catch(() => {
+            y.signal.aborted || a({
+                update: o,
+                queryClient: s,
+                resultMode: c,
+                serverThreadId: l
+            })
+        }).finally(() => {
+            n.get(f)?.abortController === y && n.delete(f)
+        }), `syncing`
+    }
+    return {
+        ingest: o,
+        dispose() {
+            for (let {
+                    abortController: e
+                }
+                of n.values()) e.abort();
+            n.clear();
+            for (let {
+                    timeout: e
+                }
+                of r.values()) clearTimeout(e);
+            r.clear(), i.clear()
+        }
+    }
+}
+
+function Ei(e, t) {
+    let n = Ti(t),
+        r = 0,
+        i = !1,
+        a = null,
+        o = null,
+        s = !1,
+        c = new Map;
+
+    function l() {
+        if (!s) {
+            s = !0;
+            for (let e of t.resourceUpdates$().values()) {
+                let t = wi(e);
+                c.has(t) || c.set(t, `historical`)
+            }
+        }
+    }
+
+    function u(r = t.resourceUpdates$(), i = e.serverId$()) {
+        let a = t.getQueryClient();
+        for (let e of r.values()) {
+            let t = wi(e);
+            c.has(t) || c.set(t, `live`), n.ingest({
+                update: e,
+                queryClient: a,
+                resultMode: c.get(t),
+                serverThreadId: i
+            })
+        }
+    }
+    return {
+        retain$(s) {
+            s != null && (c.set(s, `live`), i && u()), r += 1, i || (i = !0, l(), u(), o = t.getSessionStore().subscribe(() => {
+                u()
+            }), a = pe(() => ({
+                serverThreadId: e.serverId$(),
+                resourceUpdates: t.resourceUpdates$()
+            }), ({
+                serverThreadId: e,
+                resourceUpdates: t
+            }) => {
+                u(t, e)
+            }));
+            let d = !1;
+            return () => {
+                d || (d = !0, --r, r === 0 && queueMicrotask(() => {
+                    r !== 0 || !i || (i = !1, a?.(), a = null, o?.(), o = null, n.dispose())
+                }))
+            }
+        }
+    }
+}
+
+function Di(e, t) {
+    return Ai(e).retain$(t)
+}
+var Oi, ki, Ai, ji = e((() => {
+    qn(), U(), W(), Ce(), Ct(), Si(), vr(), Oi = 1e3, ki = {
+        getSessionStore: Bt,
+        invalidateCaches: yr,
+        fetchAndApplyObservedExternalSession: br
+    }, Ai = te(e => Ei(e, {
+        ...ki,
+        getQueryClient: i,
+        resourceUpdates$: () => xi(e)
+    }))
+}));
+
+function Mi({
+    messageId: e,
+    conversation: t,
+    writingBlockId: n
+}) {
+    let r = ge(t?.id, t => {
+            if (!(!e || !t)) return _e.getTree(t).getMaybeMessage(e)
+        })?.metadata?.writing_blocks,
+        i = o(r != null && Object.hasOwn(r, n) ? r[n] : void 0);
+    return Be({
+        mutationFn: async ({
+            feedbackText: r,
+            feedbackReasons: a
+        }) => {
+            let o = we(() => t?.serverId$());
+            try {
+                await g.safePost(`/conversation/message/writing-blocks/feedback`, {
+                    requestBody: {
+                        message_id: e ?? `unknown`,
+                        conversation_id: o ?? `unknown`,
+                        writing_block_id: n,
+                        feedback: r,
+                        checked_reasons: a.length > 0 ? a : void 0,
+                        user_edited_writing_block: i
+                    },
+                    authOption: be.SendIfAvailable
+                })
+            } catch {
+                return
+            }
+        }
+    })
+}
+var Ni = e((() => {
+    W(), de(), V(), y(), S(), Ve()
+}));
+
+function Pi() {
+    let e = J.getItem(n.HideWritingBlockFeedback);
+    if (e === !0) return J.removeItem(n.HideWritingBlockFeedback), !1;
+    let t = Li(e);
+    return t == null ? (e != null && J.removeItem(n.HideWritingBlockFeedback), !1) : Date.now() >= t + Ii ? (J.removeItem(n.HideWritingBlockFeedback), !1) : !0
+}
+
+function Fi() {
+    Ri.set(!0), J.setItem(n.HideWritingBlockFeedback, new Date().toISOString())
+}
+var Ii, Li, Ri, zi = e((() => {
+    W(), se(), Ii = 10080 * 60 * 1e3, Li = e => {
+        if (typeof e == `number`) return Number.isFinite(e) ? e : null;
+        if (typeof e == `string`) {
+            let t = Date.parse(e);
+            return Number.isNaN(t) ? null : t
+        }
+        if (e instanceof Date) {
+            let t = e.getTime();
+            return Number.isNaN(t) ? null : t
+        }
+        return null
+    }, Ri = a(Pi, {
+        getServerFallback: () => !1
+    })
+}));
+
+function Bi(e) {
+    "use forget";
+    let t = (0, Ui.c)(74),
+        {
+            messageId: n,
+            conversation: r,
+            writingBlockId: i,
+            initialOpen: a,
+            initialFeedbackText: o
+        } = e,
+        s = Ue(),
+        c;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = b(), t[0] = c) : c = t[0];
+    let l = c,
+        u = h(Hi),
+        [d, f] = (0, Wi.useState)(o ?? ``),
+        [p, m] = (0, Wi.useState)(a ?? !1),
+        [g, _] = (0, Wi.useState)(!1),
+        v;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (v = () => {
+        m(!0)
+    }, t[1] = v) : v = t[1];
+    let y = Ke(v, 500),
+        x;
+    t[2] === y ? x = t[3] : (x = () => {
+        y()
+    }, t[2] = y, t[3] = x);
+    let S = Q(x),
+        C;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (C = () => {
+        _(!0)
+    }, t[4] = C) : C = t[4];
+    let T = Q(C),
+        E;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (E = e => {
+        let t = e.relatedTarget;
+        t instanceof Node && e.currentTarget.contains(t) || _(!1)
+    }, t[5] = E) : E = t[5];
+    let D = Q(E),
+        O;
+    t[6] === y ? O = t[7] : (O = () => {
+        y.cancel(), m(!1), _(!1)
+    }, t[6] = y, t[7] = O);
+    let k = Q(O),
+        A;
+    t[8] === k ? A = t[9] : (A = e => {
+        if (e) {
+            m(!0);
+            return
+        }
+        k()
+    }, t[8] = k, t[9] = A);
+    let j = Q(A),
+        M;
+    t[10] !== g || t[11] !== y ? (M = () => {
+        g || y.cancel()
+    }, t[10] = g, t[11] = y, t[12] = M) : M = t[12];
+    let N = Q(M),
+        P;
+    t[13] !== r || t[14] !== n || t[15] !== i ? (P = {
+        messageId: n,
+        conversation: r,
+        writingBlockId: i
+    }, t[13] = r, t[14] = n, t[15] = i, t[16] = P) : P = t[16];
+    let {
+        mutate: F
+    } = Mi(P), I;
+    t[17] !== d || t[18] !== k || t[19] !== s || t[20] !== F ? (I = () => {
+        let e = d.trim();
+        e !== `` && (F({
+            feedbackText: e,
+            feedbackReasons: []
+        }), l.success(s.formatMessage({
+            id: `writingBlocks.feedback.toastSubmitted`,
+            defaultMessage: `Your feedback has been submitted`
+        })), f(``), k(), Fi())
+    }, t[17] = d, t[18] = k, t[19] = s, t[20] = F, t[21] = I) : I = t[21];
+    let L = Q(I),
+        R;
+    t[22] === s ? R = t[23] : (R = s.formatMessage({
+        id: `writingBlocks.feedback.button`,
+        defaultMessage: `What is this?`
+    }), t[22] = s, t[23] = R);
+    let ee = R,
+        te;
+    t[24] === d ? te = t[25] : (te = d.trim(), t[24] = d, t[25] = te);
+    let z = te === ``,
+        B;
+    t[26] === s ? B = t[27] : (B = s.formatMessage({
+        id: `writingBlocks.feedback.placeholder`,
+        defaultMessage: `What did you like or dislike?`
+    }), t[26] = s, t[27] = B);
+    let ne = B;
+    if (u) return null;
+    let V;
+    t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (V = (0, Gi.jsx)(G, {
+        className: `icon ms-1`,
+        "aria-hidden": `true`
+    }), t[28] = V) : V = t[28];
+    let H;
+    t[29] !== ee || t[30] !== N || t[31] !== S ? (H = (0, Gi.jsx)(ot.BasicTrigger, {
+        asChild: !0,
+        children: (0, Gi.jsxs)(ve, {
+            color: `ghost`,
+            size: `medium`,
+            "aria-label": ee,
+            contentWrapperClassName: `items-center`,
+            className: `text-token-text-tertiary hover:text-token-text-secondary -me-4 border-0 font-sans hover:bg-transparent! active:bg-transparent!`,
+            type: `button`,
+            onMouseEnter: S,
+            onMouseLeave: N,
+            children: [ee, V]
+        })
+    }), t[29] = ee, t[30] = N, t[31] = S, t[32] = H) : H = t[32];
+    let re;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (re = (0, Gi.jsx)(`div`, {
+        className: `flex-1 font-bold`,
+        children: (0, Gi.jsx)(Ne, {
+            id: `writingBlocks.feedback.title`,
+            defaultMessage: `This is a writing block, a new feature we’re testing`
+        })
+    }), t[33] = re) : re = t[33];
+    let U;
+    t[34] === s ? U = t[35] : (U = s.formatMessage({
+        id: `9htpP0`,
+        defaultMessage: `Close writing block feedback popup`
+    }), t[34] = s, t[35] = U);
+    let ie;
+    t[36] !== k || t[37] !== U ? (ie = (0, Gi.jsxs)(`div`, {
+        className: `mb-2 flex items-start justify-between gap-2`,
+        children: [re, (0, Gi.jsx)(w, {
+            onClick: k,
+            "aria-label": U,
+            className: `text-token-text-primary -m-1 -me-2 rounded-full!`
+        })]
+    }), t[36] = k, t[37] = U, t[38] = ie) : ie = t[38];
+    let W;
+    t[39] === Symbol.for(`react.memo_cache_sentinel`) ? (W = (0, Gi.jsx)(`div`, {
+        className: `text-xs leading-relaxed`,
+        children: (0, Gi.jsx)(Ne, {
+            id: `writingBlocks.feedback.description`,
+            defaultMessage: `Tell us what’s working and what’s not. The more specific the feedback, the better.`
+        })
+    }), t[39] = W) : W = t[39];
+    let K;
+    t[40] === ie ? K = t[41] : (K = (0, Gi.jsxs)(`div`, {
+        className: `mx-2 pt-1 pb-3 text-sm`,
+        children: [ie, W]
+    }), t[40] = ie, t[41] = K);
+    let ae;
+    t[42] === L ? ae = t[43] : (ae = e => {
+        e.preventDefault(), L()
+    }, t[42] = L, t[43] = ae);
+    let oe;
+    t[44] === Symbol.for(`react.memo_cache_sentinel`) ? (oe = (0, Gi.jsx)(`label`, {
+        htmlFor: `writing-block-feedback-text`,
+        className: `sr-only`,
+        children: (0, Gi.jsx)(Ne, {
+            id: `writingBlocks.feedback.additionalLabel`,
+            defaultMessage: `Additional feedback`
+        })
+    }), t[44] = oe) : oe = t[44];
+    let se;
+    t[45] === Symbol.for(`react.memo_cache_sentinel`) ? (se = e => f(e.target.value), t[45] = se) : se = t[45];
+    let q;
+    t[46] !== ne || t[47] !== d ? (q = (0, Gi.jsx)(Mt, {
+        autoFocus: !0,
+        id: `writing-block-feedback-text`,
+        name: `writing-block-feedback-text`,
+        value: d,
+        onChange: se,
+        placeholder: ne,
+        rows: 3,
+        className: `border-token-border-heavy mt-1 self-stretch rounded-md bg-transparent px-2 py-2 text-sm focus:ring-0 focus:outline-none focus-visible:ring-0`
+    }), t[46] = ne, t[47] = d, t[48] = q) : q = t[48];
+    let ce;
+    t[49] === z ? ce = t[50] : (ce = e => {
+        z && e.preventDefault()
+    }, t[49] = z, t[50] = ce);
+    let J;
+    t[51] === s ? J = t[52] : (J = s.formatMessage({
+        defaultMessage: `Submit`,
+        id: `writingBlocks.feedback.submitAriaLabel`
+    }), t[51] = s, t[52] = J);
+    let le;
+    t[53] === Symbol.for(`react.memo_cache_sentinel`) ? (le = (0, Gi.jsx)(Ne, {
+        id: `writingBlocks.feedback.submitLabel`,
+        defaultMessage: `Share feedback`
+    }), t[53] = le) : le = t[53];
+    let Y;
+    t[54] !== z || t[55] !== ce || t[56] !== J ? (Y = (0, Gi.jsx)(ve, {
+        type: `submit`,
+        size: `small`,
+        className: `mt-2 mb-1 self-center px-4 py-2`,
+        visuallyDisabled: z,
+        "aria-disabled": z,
+        onClick: ce,
+        "aria-label": J,
+        children: le
+    }), t[54] = z, t[55] = ce, t[56] = J, t[57] = Y) : Y = t[57];
+    let X;
+    t[58] !== ae || t[59] !== q || t[60] !== Y ? (X = (0, Gi.jsx)(`div`, {
+        className: `relative flex flex-col justify-between rounded-lg`,
+        children: (0, Gi.jsxs)(`form`, {
+            onSubmit: ae,
+            className: `relative flex flex-col px-2`,
+            children: [oe, q, Y]
+        })
+    }), t[58] = ae, t[59] = q, t[60] = Y, t[61] = X) : X = t[61];
+    let ue;
+    t[62] !== N || t[63] !== S || t[64] !== D || t[65] !== T || t[66] !== K || t[67] !== X ? (ue = (0, Gi.jsx)(ot.Portal, {
+        children: (0, Gi.jsxs)(ot.Content, {
+            side: `top`,
+            align: `end`,
+            sideOffset: 0,
+            alignOffset: 0,
+            onCloseAutoFocus: Vi,
+            className: `flex w-70 flex-col p-2`,
+            onMouseEnter: S,
+            onMouseLeave: N,
+            onFocus: T,
+            onBlur: D,
+            children: [K, X]
+        })
+    }), t[62] = N, t[63] = S, t[64] = D, t[65] = T, t[66] = K, t[67] = X, t[68] = ue) : ue = t[68];
+    let de;
+    return t[69] !== j || t[70] !== p || t[71] !== H || t[72] !== ue ? (de = (0, Gi.jsxs)(ot.Root, {
+        onOpenChange: j,
+        open: p,
+        modal: !1,
+        children: [H, ue]
+    }), t[69] = j, t[70] = p, t[71] = H, t[72] = ue, t[73] = de) : de = t[73], de
+}
+
+function Vi(e) {
+    e.preventDefault()
+}
+
+function Hi() {
+    return Ri()
+}
+var Ui, Wi, Gi, Ki = e((() => {
+    Ui = He(), d(), s(), ct(), R(), Et(), m(), Oe(), I(), Ni(), zi(), Wi = t(Ie()), $(), vt(), Gi = ke()
+}));
+
+function qi({
+    activeOwnerKind: e,
+    hasSidePaneOwner: t,
+    isFocusedInSidePane: n,
+    sidePaneWidth: r,
+    viewportWidth: i
+}) {
+    return n || t && (e !== `library-content` || r >= Wt(i))
+}
+var Ji, Yi = e((() => {
+    Yt(), It(), W(), Xt(), Ji = (e = !1) => e && we(mt) || !e && Ot() ? `side-pane` : `fullscreen`
+}));
+async function Xi({
+    entryId: e,
+    libraryFileId: t,
+    prepareVersionHistory: n,
+    serverThreadId: r
+}) {
+    if (n != null && !await n({
+            flushEditor: !1
+        })) throw Error(`Pending document changes could not be saved before restoring this version.`);
+    let a = await $n({
+        entryId: e,
+        fileId: t
+    });
+    if (a == null) return;
+    let o = await bt({
+            abortSignal: new AbortController().signal,
+            fileId: a.fileId,
+            serverThreadId: r
+        }),
+        s = Bt().replaceWithAuthoritativeContent({
+            authoritativeContentKey: a.id,
+            content: o,
+            fileId: a.fileId,
+            libraryFileId: t,
+            versionNumber: a.versionNumber
+        });
+    if (s.draftContent !== o || s.fileId !== a.fileId || s.dirty || s.inFlightSaveSequence != null) throw Error(`The restored version could not be applied to the current document.`);
+    yr({
+        fileId: a.fileId,
+        libraryFileId: t,
+        queryClient: i()
+    }), er(t)
+}
+
+function Zi({
+    entryId: e,
+    errorMessage: t,
+    libraryFileId: n,
+    prepareVersionHistory: r,
+    serverThreadId: i
+}) {
+    Xi({
+        entryId: e,
+        libraryFileId: n,
+        prepareVersionHistory: r,
+        serverThreadId: i
+    }).catch(r => {
+        Zn({
+            entryId: e,
+            fileId: n
+        }), b().danger(t, {
+            error: r
+        })
+    })
+}
+var Qi = e((() => {
+    Qn(), Oe(), Ce(), dt(), Ct(), vr()
+}));
+
+function $i(e) {
+    "use forget";
+    let t = (0, ta.c)(133),
+        {
+            isStreamingPlaceholder: n,
+            messageRef: i,
+            messageId: a,
+            editorHandleRef: o,
+            conversation: s,
+            writingBlockId: c,
+            isLastNodeInMessage: l,
+            preserveSidebarInFullscreen: d,
+            defaultSidePaneWidth: f,
+            initialSidePanePresentation: p,
+            minimumMainWidth: m,
+            minimumSidePaneWidth: g,
+            onSidePaneWidthCommit: _,
+            persistSidePaneWidth: v,
+            preferredSidePaneWidth: y,
+            collapsedChip: b,
+            earlierVersion: x,
+            inlineAfter: S,
+            className: C,
+            onBlurOutside: w,
+            presentationMode: T,
+            renderExpandedContentInline: D,
+            children: O
+        } = e,
+        k = n !== void 0 && n,
+        A = l !== void 0 && l,
+        j = d !== void 0 && d,
+        M;
+    t[0] === f ? M = t[1] : (M = f === void 0 ? Wt() : f, t[0] = f, t[1] = M);
+    let N = M,
+        P = m === void 0 ? 352 : m,
+        F = g === void 0 ? 400 : g,
+        I = D !== void 0 && D,
+        {
+            isAssistantRevisionsEnabled: L,
+            isSupersededConversationVersion: R,
+            expandedPaneId: ee,
+            expandedShellKind: te,
+            fullscreenComposerController: z,
+            fullscreenTurnComposer: B,
+            isFullscreenComposerEnabled: ne,
+            isFullscreenDialogOpen: V,
+            isVersionHistoryPreviewOpen: H,
+            isVersionHistoryPreviewUnavailable: re,
+            libraryFileId: U,
+            prepareVersionHistory: W,
+            setIsFullscreenDialogOpen: G,
+            shouldBlockDialogEscapeKeyDown: K,
+            versionHistoryPreviewContent: ae
+        } = Or(),
+        oe = L !== void 0 && L,
+        se = R !== void 0 && R,
+        q = te === void 0 ? `fullscreen` : te,
+        ce = ne !== void 0 && ne,
+        J = H !== void 0 && H,
+        le = re !== void 0 && re,
+        {
+            fullscreenTransitionPhase: X
+        } = Mr(),
+        [ue, de] = (0, na.useState)(V),
+        fe = Ue(),
+        pe = h(ea),
+        me = (0, na.useContext)(Ut),
+        he;
+    t[2] === fe ? he = t[3] : (he = fe.formatMessage({
+        id: `writingBlocks.fullscreen.editor.accessibleTitle`,
+        defaultMessage: `Writing block editor`
+    }), t[2] = fe, t[3] = he);
+    let Z = he,
+        ve;
+    t[4] === a ? ve = t[5] : (ve = e => a == null || e == null ? !1 : _e.isLastActorMessage(e, a), t[4] = a, t[5] = ve);
+    let ye = ge(s?.id, ve),
+        be = h(ie),
+        xe = h(Y),
+        Se = St(),
+        Q = V && q === `side-pane`,
+        Ce;
+    t[6] !== b || t[7] !== Q || t[8] !== T || t[9] !== Se ? (Ce = () => T !== `voice-stage` && b != null && qi({
+        activeOwnerKind: Se?.activeOwnerKind$() ?? null,
+        hasSidePaneOwner: Se?.activeOwnerId$() != null,
+        isFocusedInSidePane: Q,
+        sidePaneWidth: Se?.railLayout$().width ?? 0,
+        viewportWidth: gt().width
+    }), t[6] = b, t[7] = Q, t[8] = T, t[9] = Se, t[10] = Ce) : Ce = t[10];
+    let we = h(Ce),
+        Te = oe && se && !V && T !== `voice-stage` && x != null,
+        Ee = !V && !we && !Te,
+        [De, Oe] = (0, na.useState)(Ee);
+    oe && Ee && !De && Oe(!0);
+    let ke = Te && De,
+        Ae;
+    t[11] !== me || t[12] !== xe || t[13] !== pe || t[14] !== T || t[15] !== c ? (Ae = T !== `voice-stage` && !xe && !me && c != null && !pe && E(`1594900112`), t[11] = me, t[12] = xe, t[13] = pe, t[14] = T, t[15] = c, t[16] = Ae) : Ae = t[16];
+    let je = Ae,
+        Me = je && ye && A,
+        Ne = q === `fullscreen` && (V || ue),
+        Pe = !J && ce && (B != null || z != null) && V && be,
+        Fe = null;
+    if (B != null) {
+        let e;
+        t[17] === B ? e = t[18] : (e = (0, ra.jsx)(fr, {
+            ...B
+        }), t[17] = B, t[18] = e), Fe = e
+    } else if (z != null) {
+        let e;
+        t[19] === z ? e = t[20] : (e = (0, ra.jsx)(ur, {
+            ...z
+        }), t[19] = z, t[20] = e), Fe = e
+    }
+    let $ = X !== `idle`,
+        Ie;
+    t[21] === $ ? Ie = t[22] : (Ie = $ ? {
+        viewTransitionName: cr
+    } : void 0, t[21] = $, t[22] = Ie);
+    let Le = Ie,
+        Re;
+    t[23] === $ ? Re = t[24] : (Re = $ ? {
+        viewTransitionName: dr
+    } : void 0, t[23] = $, t[24] = Re);
+    let ze = Re,
+        Be;
+    t[25] === G ? Be = t[26] : (Be = e => {
+        de(!0), G(e)
+    }, t[25] = G, t[26] = Be);
+    let Ve = Be,
+        He;
+    t[27] === G ? He = t[28] : (He = (e, t) => G(e, {
+        skipCloseConfirmation: t !== void 0 && t
+    }), t[27] = G, t[28] = He);
+    let We = He,
+        Ge;
+    t[29] === o ? Ge = t[30] : (Ge = () => {
+        if (o.current != null) {
+            o.current.focusEditor();
+            return
+        }
+        window.requestAnimationFrame(() => {
+            o.current?.focusEditor()
+        })
+    }, t[29] = o, t[30] = Ge);
+    let Ke = Ge,
+        qe;
+    t[31] === w ? qe = t[32] : (qe = e => {
+        if (!w) return;
+        let t = e.currentTarget,
+            n = e.relatedTarget;
+        if (!(n instanceof Node && t.contains(n))) {
+            if (n == null) {
+                window.setTimeout(() => {
+                    let e = document.activeElement;
+                    e instanceof Node && t.contains(e) || w()
+                }, 0);
+                return
+            }
+            w()
+        }
+    }, t[31] = w, t[32] = qe);
+    let Je = qe,
+        Ye;
+    t[33] !== O || t[34] !== s || t[35] !== fe || t[36] !== V || t[37] !== J || t[38] !== le || t[39] !== U || t[40] !== W || t[41] !== ae ? (Ye = U != null && V ? (0, ra.jsxs)(Fr, {
+        fileId: U,
+        onClose: () => er(U),
+        onRestoreEntry: e => {
+            Zi({
+                entryId: e,
+                errorMessage: fe.formatMessage(zt.restoreFileFailed),
+                libraryFileId: U,
+                prepareVersionHistory: W,
+                serverThreadId: s?.serverId$()
+            })
+        },
+        overlayTopInset: `preview-header`,
+        variant: `overlay`,
+        children: [O, J && ae == null && (0, ra.jsx)(`div`, {
+            className: `bg-token-bg-primary absolute inset-0 flex items-center justify-center`,
+            "data-testid": `writing-block-version-history-preview-loading`,
+            children: le ? (0, ra.jsx)(Lr, {
+                isRetryable: !0,
+                message: fe.formatMessage(zt.loadError),
+                onClose: () => er(U),
+                onRetry: () => nr(U)
+            }) : (0, ra.jsx)(r, {})
+        })]
+    }) : O, t[33] = O, t[34] = s, t[35] = fe, t[36] = V, t[37] = J, t[38] = le, t[39] = U, t[40] = W, t[41] = ae, t[42] = Ye) : Ye = t[42];
+    let Xe = Ye,
+        Ze;
+    t[43] !== C || t[44] !== s || t[45] !== X || t[46] !== Je || t[47] !== $ || t[48] !== k || t[49] !== a || t[50] !== i || t[51] !== T || t[52] !== Me || t[53] !== Ee || t[54] !== ke || t[55] !== je || t[56] !== ze || t[57] !== Le || t[58] !== Xe || t[59] !== c ? (Ze = (Ee || ke) && (0, ra.jsxs)(`div`, {
+        className: u(`group relative clear-both my-4 w-full overflow-visible`, C),
+        hidden: ke,
+        "data-writing-block-fullscreen-fallback-target": ke ? void 0 : `inline`,
+        "data-writing-block-fullscreen-transition-phase": !ke && $ ? X : void 0,
+        children: [(0, ra.jsx)(Cr, {
+            ref: ke ? void 0 : i,
+            id: ke ? void 0 : `writing-block-${a}${T===`voice-stage`?`-voice-stage`:``}`,
+            onBlurCapture: Je,
+            className: u(`[--wb-text-primary:var(--text-primary)] [--wb-text-secondary:var(--text-secondary)] [--wb-text-tertiary:var(--text-tertiary)] [--wb-surface-primary:var(--bg-primary)] [--wb-surface-secondary:var(--bg-tertiary)] [--wb-border:rgb(0_0_0/7%)] [--wb-border-hover:rgb(0_0_0/7%)] [--wb-divider:var(--border-light)] [--wb-focus:var(--border-strong)] [--wb-control-border:var(--interactive-border-focus)] [--wb-entity-accent:var(--theme-entity-accent)] [--wb-accent:var(--interactive-label-accent-default)] [--wb-on-accent:var(--bg-primary)] [--wb-interactive-background:var(--interactive-bg-accent-default)] [--wb-selection:var(--theme-user-selection-bg,var(--selection))] [--wb-radius-sm:var(--radius-sm)] [--wb-shadow-lg:var(--shadow-lg)] [--wb-font-sans:var(--font-sans)] [--wb-font-mono:var(--font-mono)] [--wb-shimmer-dark-contrast:var(--gray-550)] [--wb-shimmer-dark-secondary:var(--text-tertiary)] [--wb-radius:24px] [--wb-shadow:0_4px_80px_rgb(0_0_0/2%)] [contain:none]`, k && `h-10 px-4 py-2`),
+            backgroundProps: {
+                className: `bg-token-bg-primary! dark:bg-[#2a2a2a]!`,
+                "data-writing-block-fullscreen-shell-surface": !0
+            },
+            backgroundStyle: Le,
+            borderProps: {
+                "data-writing-block-fullscreen-shell-border": !0
+            },
+            borderStyle: ze,
+            "data-writing-block": !0,
+            "data-testid": `writing-block-container`,
+            children: Xe
+        }), je && (0, ra.jsx)(`div`, {
+            className: u(`flex justify-end px-3`, Me && `pointer-events-none absolute end-0 -bottom-11 z-1 mt-0`),
+            "data-writing-block-feedback-row": !0,
+            children: (0, ra.jsx)(`div`, {
+                className: u(Me && `pointer-events-auto`),
+                children: (0, ra.jsx)(Bi, {
+                    messageId: a,
+                    conversation: s,
+                    writingBlockId: c
+                })
+            })
+        })]
+    }), t[43] = C, t[44] = s, t[45] = X, t[46] = Je, t[47] = $, t[48] = k, t[49] = a, t[50] = i, t[51] = T, t[52] = Me, t[53] = Ee, t[54] = ke, t[55] = je, t[56] = ze, t[57] = Le, t[58] = Xe, t[59] = c, t[60] = Ze) : Ze = t[60];
+    let Qe = Ee && S,
+        $e;
+    t[61] !== C || t[62] !== x || t[63] !== a || t[64] !== i || t[65] !== Te ? ($e = Te && (0, ra.jsx)(`div`, {
+        ref: i,
+        id: `writing-block-${a}`,
+        className: u(`relative clear-both my-4 w-full max-w-full`, C),
+        children: x
+    }), t[61] = C, t[62] = x, t[63] = a, t[64] = i, t[65] = Te, t[66] = $e) : $e = t[66];
+    let et;
+    t[67] !== C || t[68] !== b || t[69] !== a || t[70] !== i || t[71] !== T || t[72] !== we || t[73] !== Te ? (et = !Te && we && (0, ra.jsx)(`div`, {
+        ref: i,
+        id: `writing-block-${a}${T===`voice-stage`?`-voice-stage`:``}`,
+        className: u(`relative clear-both my-4 w-full max-w-full`, C),
+        children: b
+    }), t[67] = C, t[68] = b, t[69] = a, t[70] = i, t[71] = T, t[72] = we, t[73] = Te, t[74] = et) : et = t[74];
+    let tt;
+    t[75] !== q || t[76] !== Fe || t[77] !== X || t[78] !== B || t[79] !== Je || t[80] !== V || t[81] !== $ || t[82] !== I || t[83] !== Pe || t[84] !== Xe ? (tt = q === `side-pane` && I && (0, ra.jsxs)(`div`, {
+        onBlurCapture: Je,
+        className: `bg-token-bg-primary flex h-full w-full cursor-auto flex-col dark:bg-[#2a2a2a]`,
+        "data-writing-block-fullscreen-fallback-target": `fullscreen`,
+        "data-writing-block-fullscreen-transition-phase": $ ? X : void 0,
+        children: [V ? Xe : null, Pe && B != null ? (0, ra.jsx)(ia, {
+            ...B
+        }) : Pe ? (0, ra.jsx)(Xn.FullscreenOnly, {
+            children: Fe
+        }) : null]
+    }), t[75] = q, t[76] = Fe, t[77] = X, t[78] = B, t[79] = Je, t[80] = V, t[81] = $, t[82] = I, t[83] = Pe, t[84] = Xe, t[85] = tt) : tt = t[85];
+    let nt;
+    t[86] !== N || t[87] !== o || t[88] !== ee || t[89] !== q || t[90] !== Ke || t[91] !== Z || t[92] !== Fe || t[93] !== X || t[94] !== B || t[95] !== Je || t[96] !== We || t[97] !== p || t[98] !== V || t[99] !== $ || t[100] !== P || t[101] !== F || t[102] !== _ || t[103] !== v || t[104] !== y || t[105] !== j || t[106] !== I || t[107] !== K || t[108] !== Pe || t[109] !== Xe ? (nt = q === `side-pane` && !I && (0, ra.jsxs)(Xn.Content, {
+        open: V,
+        paneId: ee,
+        defaultSidePaneWidth: N,
+        initialPresentation: p,
+        minimumMainWidth: P,
+        minimumSidePaneWidth: F,
+        onSidePaneWidthCommit: _,
+        persistSidePaneWidth: v,
+        preserveSidebar: j,
+        preferredSidePaneWidth: y,
+        onOpenChange: (e, t) => We(e, t?.reason === `replaced`),
+        accessibleTitle: Z,
+        className: `dark:bg-[#2a2a2a]`,
+        onEscapeKeyDown: e => {
+            K && e.preventDefault()
+        },
+        focusOnOpen: () => {
+            o.current?.focusEditor()
+        },
+        focusOnClose: Ke,
+        children: [(0, ra.jsx)(Xn.Body, {
+            onBlurCapture: Je,
+            className: `bg-token-bg-primary flex h-full w-full cursor-auto flex-col dark:bg-[#2a2a2a]`,
+            "data-writing-block-fullscreen-fallback-target": `fullscreen`,
+            "data-writing-block-fullscreen-transition-phase": $ ? X : void 0,
+            children: V ? Xe : null
+        }), Pe && B != null ? (0, ra.jsx)(ia, {
+            ...B
+        }) : Pe ? (0, ra.jsx)(Xn.FullscreenOnly, {
+            children: Fe
+        }) : null]
+    }), t[86] = N, t[87] = o, t[88] = ee, t[89] = q, t[90] = Ke, t[91] = Z, t[92] = Fe, t[93] = X, t[94] = B, t[95] = Je, t[96] = We, t[97] = p, t[98] = V, t[99] = $, t[100] = P, t[101] = F, t[102] = _, t[103] = v, t[104] = y, t[105] = j, t[106] = I, t[107] = K, t[108] = Pe, t[109] = Xe, t[110] = nt) : nt = t[110];
+    let rt;
+    t[111] !== o || t[112] !== Z || t[113] !== Fe || t[114] !== X || t[115] !== Je || t[116] !== Ve || t[117] !== V || t[118] !== $ || t[119] !== j || t[120] !== K || t[121] !== Ne || t[122] !== Pe || t[123] !== Xe ? (rt = Ne && (0, ra.jsxs)(at, {
+        open: V,
+        onOpenChange: Ve,
+        accessibleTitle: Z,
+        className: `bg-token-bg-primary dark:bg-[#2a2a2a]`,
+        preserveSidebar: j,
+        onEscapeKeyDown: e => {
+            K && e.preventDefault()
+        },
+        onOpenAutoFocus: e => {
+            e.preventDefault(), o.current?.focusEditor()
+        },
+        onCloseAutoFocus: e => {
+            e.preventDefault(), o.current?.focusEditor(), de(!1)
+        },
+        children: [(0, ra.jsx)(at.Contents, {
+            onBlurCapture: Je,
+            className: `bg-token-bg-primary flex h-full w-full cursor-auto flex-col dark:bg-[#2a2a2a]`,
+            "data-writing-block-fullscreen-fallback-target": `fullscreen`,
+            "data-writing-block-fullscreen-transition-phase": $ ? X : void 0,
+            children: V ? Xe : null
+        }), Pe && Fe]
+    }), t[111] = o, t[112] = Z, t[113] = Fe, t[114] = X, t[115] = Je, t[116] = Ve, t[117] = V, t[118] = $, t[119] = j, t[120] = K, t[121] = Ne, t[122] = Pe, t[123] = Xe, t[124] = rt) : rt = t[124];
+    let it;
+    return t[125] !== Ze || t[126] !== Qe || t[127] !== $e || t[128] !== et || t[129] !== tt || t[130] !== nt || t[131] !== rt ? (it = (0, ra.jsxs)(ra.Fragment, {
+        children: [Ze, Qe, $e, et, tt, nt, rt]
+    }), t[125] = Ze, t[126] = Qe, t[127] = $e, t[128] = et, t[129] = tt, t[130] = nt, t[131] = rt, t[132] = it) : it = t[132], it
+}
+
+function ea() {
+    return Ri()
+}
+var ta, na, ra, ia, aa = e((() => {
+    ta = He(), Yt(), $t(), nt(), Nr(), Qn(), Ir(), rt(), Yn(), m(), de(), jt(), z(), O(), qt(), Ki(), ar(), jr(), Dr(), zi(), Yi(), ir(), Qi(), Rn(), wr(), q(), M(), na = t(Ie()), $(), ra = ke(), ia = e => {
+        "use forget";
+        let t = (0, ta.c)(4),
+            n = Jn(),
+            r = n.usesViewTransition ? n.targetPresentation === `fullscreen` : n.presentation === `fullscreen`,
+            i;
+        return t[0] !== n.isTransitioning || t[1] !== e || t[2] !== r ? (i = r ? (0, ra.jsx)(fr, {
+            ...e,
+            disableAutoFocus: n.isTransitioning
+        }) : null, t[0] = n.isTransitioning, t[1] = e, t[2] = r, t[3] = i) : i = t[3], i
+    }
+}));
+
+function oa(e) {
+    "use forget";
+    let t = (0, sa.c)(15),
+        {
+            analyticsLibraryFileId: n,
+            content: r,
+            flushEditorContent: i,
+            conversation: a,
+            messageId: o,
+            libraryFileId: s,
+            writingBlockId: c,
+            writingBlockIndex: l,
+            writingBlockInstanceId: u,
+            variant: d,
+            onCopy: f,
+            contentReferences: p
+        } = e,
+        m;
+    t[0] !== n || t[1] !== r || t[2] !== p || t[3] !== a || t[4] !== i || t[5] !== s || t[6] !== o || t[7] !== d || t[8] !== c || t[9] !== l || t[10] !== u ? (m = () => {
+        let e = i?.() ?? r,
+            t = a == null ? void 0 : we(a.serverId$);
+        s == null ? t != null && o != null && L.logStructuredEvent(`ChatgptWritingBlockCopyButtonClicked`, {
+            conversationId: t,
+            messageId: o,
+            variant: d,
+            ...c == null ? {} : {
+                writingBlockId: c
+            },
+            ...l == null ? {} : {
+                writingBlockIndex: l
+            },
+            ...n == null ? {} : {
+                libraryFileId: n
+            }
+        }) : L.logStructuredEvent(`ChatgptWritingBlockLibraryFileCopyButtonClicked`, {
+            libraryFileId: s,
+            variant: d,
+            ...c == null ? {} : {
+                writingBlockId: c
+            }
+        }), Se.count(H.WRITING_BLOCKS, `chatgpt_writing_block_copy_button_clicked`);
+        let f = Pn(e);
+        if (e != null && t != null && o != null) {
+            L.logStructuredEvent(`CopyTurnToClipboard`, {
+                conversationId: t,
+                messageId: o
+            });
+            let n = u ?? c,
+                r = n == null ? null : or(n, o),
+                i = la(r, e);
+            c != null && it({
+                writing_block_id: c,
+                action_type: `copy`,
+                initial_block_body_markdown: i,
+                current_block_body_markdown: r?.currentMarkdown ?? e,
+                edit_trajectory: sr(r?.editTrajectory)
+            }, t, o, null), Zt({
+                type: `copy`,
+                source: `mouse`,
+                location: `writing-block`,
+                selectedText: f,
+                messageId: o,
+                serverThreadId: t,
+                contentType: `text`
+            })
+        }
+        let m = {
+            "text/plain": f
+        };
+        try {
+            m = Rr(f, p, {
+                preferBareUrlSelfLinks: !0,
+                includeMcpSourceCitations: a != null && we(() => oe(a))
+            })
+        } catch (e) {
+            let t = e;
+            ae.addError(t)
+        }
+        return m
+    }, t[0] = n, t[1] = r, t[2] = p, t[3] = a, t[4] = i, t[5] = s, t[6] = o, t[7] = d, t[8] = c, t[9] = l, t[10] = u, t[11] = m) : m = t[11];
+    let h = m,
+        g;
+    return t[12] !== f || t[13] !== h ? (g = {
+        handleCopy: e => {
+            let t = b(),
+                n;
+            try {
+                n = h()
+            } catch (e) {
+                let n = e;
+                throw t.danger(ca, {
+                    duration: 4,
+                    hasCloseButton: !0,
+                    toastId: `copy_to_clipboard_failed_to_copy`
+                }), n
+            }
+            return ee(n, t, e).then(t => (f?.(e), t))
+        }
+    }, t[12] = f, t[13] = h, t[14] = g) : g = t[14], g
+}
+var sa, ca, la, ua = e((() => {
+    sa = He(), Kt(), zr(), W(), Oe(), re(), De(), me(), he(), X(), Ze(), rr(), In(), $(), ca = Ae({
+        id: `writingBlocks.copy.error.prepareClipboard`,
+        defaultMessage: `Failed to copy to clipboard.`
+    }), la = (e, t) => e ? e.editTrajectory.length === 0 ? e.currentMarkdown : e.initialMarkdown : t
+}));
+
+function da(e) {
+    "use forget";
+    let t = (0, fa.c)(9),
+        {
+            isStreaming: n,
+            isDisabled: r
+        } = e,
+        i = r !== void 0 && r,
+        a = Ue(),
+        {
+            expandedShellKind: o
+        } = Or(),
+        s = (o === void 0 ? `fullscreen` : o) === `side-pane` ? Xn.CloseButton : at.CloseButton,
+        c;
+    t[0] === a ? c = t[1] : (c = a.formatMessage({
+        id: `WritingBlockCloseButton.closeTooltip`,
+        defaultMessage: `Close`
+    }), t[0] = a, t[1] = c);
+    let l = c,
+        u = n || i,
+        d;
+    t[2] !== s || t[3] !== l || t[4] !== u ? (d = (0, pa.jsx)(s, {
+        "aria-label": l,
+        disabled: u
+    }), t[2] = s, t[3] = l, t[4] = u, t[5] = d) : d = t[5];
+    let f;
+    return t[6] !== l || t[7] !== d ? (f = (0, pa.jsx)(A, {
+        sideOffset: 0,
+        label: l,
+        children: d
+    }), t[6] = l, t[7] = d, t[8] = f) : f = t[8], f
+}
+var fa, pa, ma = e((() => {
+    fa = He(), F(), $t(), Yn(), Dr(), $(), Rn(), pa = ke()
+}));
+
+function ha({
+    conversation: e,
+    libraryFileId: t,
+    messageId: n,
+    index: r,
+    title: i,
+    content: a,
+    writingBlockId: o,
+    isStreaming: s,
+    disabled: c = !1,
+    renderAsMenuItem: l = !1,
+    hasLoggedImpression: d = !1,
+    setHasLoggedImpression: f
+}) {
+    "use no forget";
+    let p = Ue(),
+        [m, g] = (0, ga.useState)(!1),
+        [_, v] = (0, ga.useState)(!1),
+        [y, b] = (0, ga.useState)(!1),
+        x = (0, ga.useRef)(!1),
+        S = h(() => e.serverId$()),
+        C = S?.toString() ?? null;
+    (0, ga.useEffect)(() => {
+        !S || d || x.current || (x.current = !0, f?.(!0), Vr({
+            conversationId: C,
+            ...t == null ? {} : {
+                libraryFileId: t
+            },
+            messageId: n,
+            writingBlockId: o,
+            impressionType: ye.CHATGPT_WRITING_BLOCK_RESUME_EXPORT_IMPRESSION_TYPE_BUTTON
+        }))
+    }, [C, d, t, n, S, f, o]);
+    let w = Q(() => {
+            let e = E(ya);
+            if (Br({
+                    conversationId: C,
+                    ...t == null ? {} : {
+                        libraryFileId: t
+                    },
+                    messageId: n,
+                    writingBlockId: o,
+                    clickType: ue.CHATGPT_WRITING_BLOCK_RESUME_EXPORT_CLICK_TYPE_PREVIEW_OPEN
+                }), l) {
+                xe(va, {
+                    content: a,
+                    conversationId: C,
+                    index: r,
+                    isDocxDownloadEnabled: e,
+                    isOpen: !0,
+                    ...t == null ? {} : {
+                        libraryFileId: t
+                    },
+                    messageId: n,
+                    title: i,
+                    writingBlockId: o
+                });
+                return
+            }
+            v(!0), b(e), g(!0)
+        }),
+        T = Q(() => g(!1)),
+        D = p.formatMessage({
+            defaultMessage: `Download`,
+            id: `ResumeExportButton.triggerLabel`
+        }),
+        O = c || !S || !!s;
+    return (0, _a.jsxs)(_a.Fragment, {
+        children: [l ? (0, _a.jsx)(ot.Item, {
+            icon: un,
+            label: D,
+            disabled: O,
+            onClick: w
+        }) : (0, _a.jsx)(A, {
+            sideOffset: 0,
+            label: D,
+            children: (0, _a.jsx)(`button`, {
+                "aria-label": D,
+                className: u(`text-token-text-primary hover:bg-token-bg-tertiary disabled:text-token-text-tertiary flex size-9 items-center justify-center rounded-full p-1.5 transition-colors select-none disabled:hover:bg-transparent`),
+                disabled: O,
+                onClick: w,
+                type: `button`,
+                children: (0, _a.jsx)(un, {
+                    className: `block`
+                })
+            })
+        }), _ ? (0, _a.jsx)(va, {
+            content: a,
+            conversationId: C,
+            index: r,
+            isDocxDownloadEnabled: y,
+            isOpen: m,
+            libraryFileId: t,
+            messageId: n,
+            onClose: T,
+            title: i,
+            writingBlockId: o
+        }) : null]
+    })
+}
+var ga, _a, va, ya, ba = e((() => {
+        F(), ct(), xn(), _(), m(), O(), I(), Rn(), D(), M(), ga = t(Ie()), $(), Hr(), _a = ke(), ze(), va = j(() => Le(() => import(`./6175a897-h81gxcso66p4epcb.js`).then(e => e.ResumePreviewModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]))), ya = `3817517664`
+    })),
+    xa, Sa, Ca, wa, Ta, Ea, Da, Oa = e((() => {
+        et(), xa = [/^education$/i, /^experience$/i, /^work\s+history$/i, /^professional\s+experience$/i, /^skills$/i, /^technical\s+skills$/i, /^projects$/i, /^certifications?$/i], Sa = e => /(?:\b(?:19|20)\d{2}\b\s*(?:-|–|—|to)\s*(?:\b(?:19|20)\d{2}\b|present|current))/i.test(e), Ca = e => /[\w.+-]+@[\w.-]+\.\w{2,}/i.test(e), wa = e => /\+?\d[\d\s().-]{7,}\d/.test(e), Ta = e => /\b(linked(?:in)?|github|portfolio|email|phone|cell|mobile)\b/i.test(e), Ea = (e, t) => new Set(e.filter(e => t.some(t => t.test(e)))), Da = async e => {
+            let t = wt(e).toLowerCase(),
+                n = t.split(`
+`).map(e => e.trim()).filter(Boolean).filter(e => e.length < 45),
+                r = Ea(n, xa),
+                i = r.size >= 1,
+                a = r.size >= 2,
+                o = Ca(t) || wa(t) || Ta(t);
+            return i && (o || Sa(t) || a)
+        }
+    })),
+    ka, Aa, ja = e((() => {
+        Oa(), C(), ka = class {
+            constructor() {
+                Ee(this, `resumeClassifierStateByBlock`, new Map)
+            }
+            getCachedResult(e, t) {
+                let n = this.getState(e);
+                if (n?.content === t) return n?.result
+            }
+            startClassificationRequest(e, t) {
+                if (e == null) return null;
+                let n = this.getState(e);
+                return n != null && n.content !== t && (n.content = t, n.isInFlight = !1, n.result = void 0), n == null || n.result !== void 0 || n.isInFlight ? null : (n.content = t, n.isInFlight = !0, n.requestId += 1, n.requestId)
+            }
+            completeClassificationRequest(e, t, n, r) {
+                let i = this.getState(e);
+                return i == null || i.content !== n || !i.isInFlight || i.requestId !== t ? !1 : (i.result = r, i.isInFlight = !1, !0)
+            }
+            cancelClassificationRequest(e, t) {
+                let n = this.getState(e);
+                n == null || n.requestId !== t || (n.isInFlight = !1)
+            }
+            async runClassificationRequest(e, t, n) {
+                let r = await Da(t);
+                return this.completeClassificationRequest(e, n, t, r) ? r : null
+            }
+            getState(e) {
+                if (e == null) return null;
+                let t = this.resumeClassifierStateByBlock.get(e);
+                return t ?? (t = {
+                    content: null,
+                    isInFlight: !1,
+                    requestId: 0,
+                    result: void 0
+                }, this.resumeClassifierStateByBlock.set(e, t)), t
+            }
+        }, Aa = new ka
+    }));
+
+function Ma(e) {
+    "use forget";
+    let t = (0, Na.c)(29),
+        {
+            writingBlock: n,
+            conversation: r,
+            messageId: i,
+            index: a,
+            showDownloadButton: o,
+            isStreaming: s
+        } = e,
+        [c, l] = (0, Pa.useState)(!1),
+        u = n.variant === Te.DOCUMENT || n.variant === Te.STANDARD,
+        d = n.id ?? String(a),
+        f;
+    t[0] !== r || t[1] !== a || t[2] !== i || t[3] !== d ? (f = Ra(r, i, d, a), t[0] = r, t[1] = a, t[2] = i, t[3] = d, t[4] = f) : f = t[4];
+    let p = f,
+        m;
+    t[5] !== p || t[6] !== r || t[7] !== u || t[8] !== s || t[9] !== i || t[10] !== o ? (m = u && o && !s && r != null && i != null && p != null && E(La), t[5] = p, t[6] = r, t[7] = u, t[8] = s, t[9] = i, t[10] = o, t[11] = m) : m = t[11];
+    let h = m,
+        g, _;
+    t[12] !== p || t[13] !== h || t[14] !== n.content ? (g = () => {
+        if (!h) {
+            l(!1);
+            return
+        }
+        let e = Aa.getCachedResult(p, n.content);
+        l(e ?? null)
+    }, _ = [p, h, n.content], t[12] = p, t[13] = h, t[14] = n.content, t[15] = g, t[16] = _) : (g = t[15], _ = t[16]), (0, Pa.useEffect)(g, _);
+    let v;
+    t[17] !== p || t[18] !== h || t[19] !== n.content ? (v = () => {
+        if (!h) return;
+        let e = !0,
+            t = null;
+        return (async () => {
+            let r = Aa.getCachedResult(p, n.content);
+            if (r === !0) {
+                l(!0);
+                return
+            }
+            if (r !== void 0) {
+                l(!1);
+                return
+            }
+            if (t = Aa.startClassificationRequest(p, n.content), t == null) return;
+            Se.count(H.WRITING_BLOCKS, Fa);
+            let i = await Aa.runClassificationRequest(p, n.content, t);
+            !e || i == null || (l(i), i && Se.count(H.WRITING_BLOCKS, Ia))
+        })(), () => {
+            e = !1, !(p == null || t == null) && Aa.cancelClassificationRequest(p, t)
+        }
+    }, t[17] = p, t[18] = h, t[19] = n.content, t[20] = v) : v = t[20];
+    let y;
+    return t[21] !== p || t[22] !== u || t[23] !== s || t[24] !== i || t[25] !== h || t[26] !== n.content || t[27] !== n.id ? (y = [p, u, s, i, h, n.content, n.id], t[21] = p, t[22] = u, t[23] = s, t[24] = i, t[25] = h, t[26] = n.content, t[27] = n.id, t[28] = y) : y = t[28], (0, Pa.useEffect)(v, y), h ? c : !1
+}
+var Na, Pa, Fa, Ia, La, Ra, za = e((() => {
+        Na = He(), X(), O(), S(), Pa = t(Ie()), ja(), Fa = `chatgpt_writing_block_resume_classifier_triggered`, Ia = `chatgpt_writing_block_resume_classifier_positive`, La = `2870900009`, Ra = (e, t, n, r) => e == null || t == null ? null : `${e.id}:${t}:${n}:${r}`
+    })),
+    Ba, Va, Ha, Ua = e((() => {
+        Xe(), At(), Rt(), Nt(), Lt(), Ba = Ye({
+            id: `writing-block-header-actions`,
+            icons: {
+                copy: {
+                    normal: Vt,
+                    small: Dt
+                },
+                pencil: {
+                    normal: Ht,
+                    small: Ft
+                }
+            }
+        }), Va = Ba.Copy, Ha = Ba.Pencil
+    }));
+
+function Wa(e) {
+    "use forget";
+    let t = (0, Ka.c)(26),
+        {
+            analyticsLibraryFileId: n,
+            conversation: r,
+            messageId: i,
+            libraryFileId: a,
+            content: o,
+            flushEditorContent: s,
+            writingBlockId: c,
+            writingBlockIndex: l,
+            writingBlockInstanceId: d,
+            variant: f,
+            contentReferences: p,
+            disabled: m,
+            renderAsMenuItem: h
+        } = e,
+        g = m !== void 0 && m,
+        _ = h !== void 0 && h,
+        {
+            conversationRevisionTextCue: v,
+            dismissConversationRevisionTextCue: y
+        } = Or(),
+        b;
+    t[0] !== v || t[1] !== y ? (b = () => {
+        (v == null ? Gt() === `until-first-edit` : v.expiresAt == null) || y?.()
+    }, t[0] = v, t[1] = y, t[2] = b) : b = t[2];
+    let x = b,
+        S;
+    t[3] !== n || t[4] !== o || t[5] !== p || t[6] !== r || t[7] !== s || t[8] !== a || t[9] !== i || t[10] !== x || t[11] !== f || t[12] !== c || t[13] !== l || t[14] !== d ? (S = {
+        analyticsLibraryFileId: n,
+        conversation: r,
+        messageId: i,
+        libraryFileId: a,
+        content: o,
+        flushEditorContent: s,
+        writingBlockId: c,
+        writingBlockIndex: l,
+        writingBlockInstanceId: d,
+        variant: f,
+        onCopy: x,
+        contentReferences: p
+    }, t[3] = n, t[4] = o, t[5] = p, t[6] = r, t[7] = s, t[8] = a, t[9] = i, t[10] = x, t[11] = f, t[12] = c, t[13] = l, t[14] = d, t[15] = S) : S = t[15];
+    let {
+        handleCopy: C
+    } = oa(S);
+    if (_) {
+        let e;
+        t[16] === C ? e = t[17] : (e = e => {
+            e.stopPropagation(), C(e).catch(Ga)
+        }, t[16] = C, t[17] = e);
+        let n;
+        t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, qa.jsx)(Ne, {
+            id: `CopyButton.copy`,
+            defaultMessage: `Copy`
+        }), t[18] = n) : n = t[18];
+        let r;
+        return t[19] !== g || t[20] !== e ? (r = (0, qa.jsx)(ot.Item, {
+            icon: Va,
+            disabled: g,
+            onClick: e,
+            label: n
+        }), t[19] = g, t[20] = e, t[21] = r) : r = t[21], r
+    }
+    let w;
+    t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (w = u(`text-sm font-medium`, `text-token-text-primary hover:bg-token-bg-tertiary flex size-9 items-center justify-center rounded-full p-1.5 transition-colors disabled:opacity-40 disabled:hover:bg-transparent`), t[22] = w) : w = t[22];
+    let T;
+    return t[23] !== g || t[24] !== C ? (T = (0, qa.jsx)(pt, {
+        onCopy: C,
+        disabled: g,
+        iconClassName: `icon-md`,
+        className: w,
+        iconOnly: !0,
+        tooltipSideOffset: 0
+    }), t[23] = g, t[24] = C, t[25] = T) : T = t[25], T
+}
+
+function Ga() {}
+var Ka, qa, Ja = e((() => {
+    Ka = He(), Qt(), ct(), Ua(), ua(), Dr(), Xt(), Rn(), M(), $(), qa = ke()
+}));
+
+function Ya(e) {
+    "use forget";
+    let t = (0, Xa.c)(12),
+        {
+            disabled: n,
+            onFullscreenOpenRequested: r
+        } = e,
+        i = Ue(),
+        {
+            fullscreenTurnComposer: a,
+            setIsFullscreenDialogOpen: o
+        } = Or(),
+        s;
+    t[0] === i ? s = t[1] : (s = i.formatMessage({
+        id: `chatgpt.writing_blocks.focused_editor.open_button.label`,
+        defaultMessage: `Open editor`
+    }), t[0] = i, t[1] = s);
+    let c = s,
+        l;
+    t[2] === a ? l = t[3] : (l = () => {
+        a == null ? lr() : pr()
+    }, t[2] = a, t[3] = l);
+    let u = l,
+        d;
+    t[4] !== r || t[5] !== o ? (d = () => {
+        r?.(), o(!0)
+    }, t[4] = r, t[5] = o, t[6] = d) : d = t[6];
+    let f;
+    return t[7] !== n || t[8] !== c || t[9] !== u || t[10] !== d ? (f = (0, Za.jsx)(Wr, {
+        icon: _n,
+        label: c,
+        tooltip: c,
+        disabled: n,
+        onClick: d,
+        onFocus: u,
+        onPointerEnter: u
+    }), t[7] = n, t[8] = c, t[9] = u, t[10] = d, t[11] = f) : f = t[11], f
+}
+var Xa, Za, Qa = e((() => {
+    Xa = He(), bn(), Ur(), ar(), Dr(), $(), Za = ke()
+}));
+
+function $a(e) {
+    "use forget";
+    let t = (0, to.c)(14),
+        {
+            actions: n,
+            children: r,
+            disabled: i
+        } = e,
+        a = i !== void 0 && i,
+        o = Ue(),
+        [s, c] = (0, no.useState)(!1);
+    if (a && s && c(!1), n.length === 0 && r == null) return null;
+    let l = s && !a,
+        u;
+    t[0] === o ? u = t[1] : (u = o.formatMessage({
+        id: `writingBlocks.actions.moreActions`,
+        defaultMessage: `More actions`
+    }), t[0] = o, t[1] = u);
+    let d;
+    t[2] !== a || t[3] !== u ? (d = (0, ro.jsx)(ot.Trigger, {
+        asChild: !0,
+        children: (0, ro.jsx)(Wr, {
+            icon: mn,
+            label: u,
+            disabled: a
+        })
+    }), t[2] = a, t[3] = u, t[4] = d) : d = t[4];
+    let f;
+    t[5] === n ? f = t[6] : (f = n.map(eo), t[5] = n, t[6] = f);
+    let p;
+    t[7] !== r || t[8] !== f ? (p = (0, ro.jsx)(ot.Portal, {
+        children: (0, ro.jsxs)(ot.Content, {
+            align: `end`,
+            size: `small`,
+            children: [r, f]
+        })
+    }), t[7] = r, t[8] = f, t[9] = p) : p = t[9];
+    let m;
+    return t[10] !== l || t[11] !== d || t[12] !== p ? (m = (0, ro.jsxs)(ot.Root, {
+        open: l,
+        onOpenChange: c,
+        children: [d, p]
+    }), t[10] = l, t[11] = d, t[12] = p, t[13] = m) : m = t[13], m
+}
+
+function eo(e) {
+    return (0, ro.jsx)(no.Fragment, {
+        children: e.submenu ?? (0, ro.jsx)(ot.Item, {
+            icon: e.icon,
+            color: e.color,
+            disabled: e.disabled,
+            onClick: e.onSelect,
+            children: e.label
+        })
+    }, e.id)
+}
+var to, no, ro, io = e((() => {
+    to = He(), ct(), en(), Ur(), no = t(Ie()), $(), ro = ke()
+}));
+
+function ao(e) {
+    return `${e?.trim().replace(/[<>:"/\\|?*]+/g,`-`).replace(/\s+/g,` `).trim()||`Untitled`}.md`
+}
+
+function oo(e) {
+    return e instanceof ce && e.code === ho
+}
+
+function so(e) {
+    "use forget";
+    let t = (0, po.c)(6),
+        {
+            label: n,
+            onViewLibrary: r,
+            getToast: i
+        } = e,
+        a;
+    t[0] !== i || t[1] !== r ? (a = () => {
+        r(), i()?.close()
+    }, t[0] = i, t[1] = r, t[2] = a) : a = t[2];
+    let o = Q(a),
+        s;
+    return t[3] !== o || t[4] !== n ? (s = (0, mo.jsx)(`button`, {
+        type: `button`,
+        className: `rounded-sm font-bold text-white underline underline-offset-2 hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white`,
+        onClick: o,
+        children: n
+    }), t[3] = o, t[4] = n, t[5] = s) : s = t[5], s
+}
+
+function co(e) {
+    "use forget";
+    let t = (0, po.c)(40),
+        {
+            writingBlock: n,
+            title: r,
+            isStreaming: i,
+            disabled: a,
+            isPromotionPending: o,
+            isSavedToLibrary: s,
+            onPromoteToLibrary: c,
+            flushEditorContentForLibrarySave: l,
+            variant: d,
+            children: f,
+            onSaved: p
+        } = e,
+        m = a !== void 0 && a,
+        h = o !== void 0 && o,
+        g = s !== void 0 && s,
+        _ = d === void 0 ? `default` : d,
+        v = Ue(),
+        y;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (y = b(), t[0] = y) : y = t[0];
+    let x = y,
+        S;
+    t[1] !== v || t[2] !== h ? (S = h ? v.formatMessage({
+        id: `WritingBlockSaveToLibraryButton.addingToLibraryLabel`,
+        defaultMessage: `Adding to library`
+    }) : v.formatMessage({
+        id: `WritingBlockSaveToLibraryButton.label`,
+        defaultMessage: `Add to library`
+    }), t[1] = v, t[2] = h, t[3] = S) : S = t[3];
+    let C = S,
+        w;
+    t[4] === v ? w = t[5] : (w = v.formatMessage({
+        id: `WritingBlockSaveToLibraryButton.addedToLibraryLabel`,
+        defaultMessage: `Added to library`
+    }), t[4] = v, t[5] = w);
+    let T = w,
+        E;
+    t[6] === v ? E = t[7] : (E = v.formatMessage({
+        id: `WritingBlockSaveToLibraryButton.viewLibraryAction`,
+        defaultMessage: `view`
+    }), t[6] = v, t[7] = E);
+    let D = E,
+        O = m || !!i || h || c == null,
+        k = Q(fo),
+        A;
+    t[8] !== l || t[9] !== k || t[10] !== v || t[11] !== O || t[12] !== c || t[13] !== p || t[14] !== r || t[15] !== D || t[16] !== n ? (A = async e => {
+        if (O || c == null) return;
+        let t = l?.(),
+            i = t ?? n.content,
+            a = ao(n.title ?? r ?? xr(i)),
+            o = () => {
+                x.danger(v.formatMessage({
+                    id: `WritingBlockSaveToLibraryButton.saveToFilesFailed`,
+                    defaultMessage: `Couldn't save "{fileName}" to Files. Try again.`
+                }, {
+                    fileName: a
+                }))
+            },
+            s = null;
+        try {
+            s = await c({
+                contentOverride: t
+            })
+        } catch (e) {
+            if (oo(e)) {
+                xe(jn, {});
+                return
+            }
+        }
+        if (!s?.libraryFileId) {
+            o();
+            return
+        }
+        p?.(e);
+        let u = x.success(``, {
+            description: (0, mo.jsx)(`span`, {
+                className: `whitespace-nowrap`,
+                children: (0, mo.jsx)(Ne, {
+                    id: `WritingBlockSaveToLibraryButton.savedToLibraryWithViewAction`,
+                    defaultMessage: `Saved to your library {viewAction}`,
+                    values: {
+                        viewAction: (0, mo.jsx)(so, {
+                            label: D,
+                            onViewLibrary: k,
+                            getToast: () => u
+                        })
+                    }
+                })
+            }),
+            icon: yn,
+            iconClassName: `size-5`,
+            iconWrapperClassName: `flex shrink-0 grow-0 items-center`
+        })
+    }, t[8] = l, t[9] = k, t[10] = v, t[11] = O, t[12] = c, t[13] = p, t[14] = r, t[15] = D, t[16] = n, t[17] = A) : A = t[17];
+    let j = Q(A);
+    if (g) {
+        let e;
+        return t[18] !== T || t[19] !== k ? (e = (0, mo.jsx)(Wr, {
+            icon: nn,
+            label: T,
+            tooltip: T,
+            onClick: k
+        }), t[18] = T, t[19] = k, t[20] = e) : e = t[20], e
+    }
+    if (_ === `inline`) {
+        let e;
+        t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, mo.jsx)(yn, {
+            className: `icon-sm`,
+            "aria-hidden": !0
+        }), t[21] = e) : e = t[21];
+        let n;
+        t[22] === C ? n = t[23] : (n = (0, mo.jsxs)(`span`, {
+            className: `flex items-center gap-1`,
+            children: [e, C]
+        }), t[22] = C, t[23] = n);
+        let r;
+        t[24] !== f || t[25] !== j || t[26] !== O || t[27] !== h || t[28] !== C ? (r = e => (0, mo.jsxs)(`button`, {
+            ...e,
+            type: `button`,
+            "aria-label": C,
+            "aria-busy": h || void 0,
+            "aria-disabled": O || void 0,
+            className: `interactive-button interactive-bg-secondary interactive-label-tertiary interactive-outline-secondary group/inline-title flex h-9 min-w-0 items-center rounded-full ps-3 pe-3 transition-[padding] duration-200 ease-out hover:ps-1 focus-visible:ps-1 aria-busy:ps-1 motion-reduce:transition-none [@media(hover:none)]:ps-1`,
+            onClick: e => {
+                j(e.detail === 0).catch(uo)
+            },
+            children: [(0, mo.jsx)(`span`, {
+                className: u(`grid shrink-0 transition-[grid-template-columns,opacity] duration-200 ease-out group-focus-visible/inline-title:grid-cols-[1fr] group-focus-visible/inline-title:opacity-100 group-hover/inline-title:grid-cols-[1fr] group-hover/inline-title:opacity-100 motion-reduce:transition-none [@media(hover:none)]:grid-cols-[1fr] [@media(hover:none)]:opacity-100`, h ? `grid-cols-[1fr] opacity-100` : `grid-cols-[0fr] opacity-0`),
+                children: (0, mo.jsx)(`span`, {
+                    className: `min-w-0 overflow-hidden`,
+                    children: (0, mo.jsx)(`span`, {
+                        className: `flex w-8 items-center justify-center`,
+                        children: h ? (0, mo.jsx)(Nn, {
+                            size: 20
+                        }) : (0, mo.jsx)(wn, {
+                            className: `icon`,
+                            "aria-hidden": !0
+                        })
+                    })
+                })
+            }), (0, mo.jsx)(`span`, {
+                className: `min-w-0 truncate`,
+                children: f
+            })]
+        }), t[24] = f, t[25] = j, t[26] = O, t[27] = h, t[28] = C, t[29] = r) : r = t[29];
+        let i;
+        return t[30] !== n || t[31] !== r ? (i = (0, mo.jsx)(st, {
+            content: n,
+            children: r
+        }), t[30] = n, t[31] = r, t[32] = i) : i = t[32], i
+    }
+    let M = h || void 0,
+        N;
+    t[33] === j ? N = t[34] : (N = e => {
+        j(e.detail === 0).catch(lo)
+    }, t[33] = j, t[34] = N);
+    let P;
+    return t[35] !== O || t[36] !== C || t[37] !== M || t[38] !== N ? (P = (0, mo.jsx)(Wr, {
+        icon: rn,
+        label: C,
+        tooltip: C,
+        "aria-busy": M,
+        disabled: O,
+        onClick: N
+    }), t[35] = O, t[36] = C, t[37] = M, t[38] = N, t[39] = P) : P = t[39], P
+}
+
+function lo() {}
+
+function uo() {}
+
+function fo() {
+    le(kn(`/library`, Je.CHATGPT_FILE_LIBRARY_ENTRY_POINT_BANNER))
+}
+var po, mo, ho, go = e((() => {
+    po = He(), Mn(), lt(), M(), _(), cn(), an(), gn(), Sn(), An(), Tn(), Oe(), c(), ne(), I(), En(), Ur(), Sr(), $(), mo = ke(), ho = `library_storage_limit_exceeded`
+}));
+
+function _o(e) {
+    return e.disabled
+}
+var vo, yo, bo, xo, So, Co, wo = e((() => {
+    vo = He(), ba(), za(), x(), m(), O(), Ja(), Fn(), Qa(), io(), go(), Dr(), S(), Jt(), yo = t(Ie()), bo = ke(), xo = `499412252`, So = `resume_preview_enabled`, Co = e => {
+        "use forget";
+        let t = (0, vo.c)(129),
+            {
+                analyticsMetadata: n,
+                writingBlock: r,
+                conversation: i,
+                messageId: a,
+                libraryFileId: o,
+                optimisticLibraryFileId: s,
+                contentReferences: c,
+                showDownloadButton: l,
+                title: u,
+                index: d,
+                isStreaming: f,
+                primaryAction: p,
+                primaryActionPlacement: m,
+                presence: g,
+                overflowActions: _,
+                hideCopyButton: v,
+                isWritingBlockFocusedModeEnabled: y,
+                isInteractionDisabled: b,
+                isLibraryPromotionPending: x,
+                onPromoteToLibrary: S,
+                enableSaveToLibrary: C,
+                onFullscreenOpenRequested: w,
+                flushEditorContentForCopy: E,
+                flushEditorContentForLibrarySave: D,
+                flushUnsavedEdits: O
+            } = e,
+            k = m === void 0 ? `trailing` : m,
+            A;
+        t[0] === _ ? A = t[1] : (A = _ === void 0 ? [] : _, t[0] = _, t[1] = A);
+        let j = A,
+            M = v !== void 0 && v,
+            N = b !== void 0 && b,
+            F = x !== void 0 && x,
+            I = C !== void 0 && C,
+            [L, R] = (0, yo.useState)(!1),
+            {
+                expandedShellKind: ee,
+                isFullscreenDialogOpen: te
+            } = Or(),
+            z;
+        t[2] === i ? z = t[3] : (z = () => i?.serverId$(), t[2] = i, t[3] = z);
+        let B = h(z),
+            ne = r.variant === Te.DOCUMENT,
+            V = qe(),
+            H = T(),
+            re = r.library_file_id,
+            U;
+        t[4] !== o || t[5] !== re ? (U = o != null && o.trim().length > 0 || typeof re == `string` && re.trim().length > 0, t[4] = o, t[5] = re, t[6] = U) : U = t[6];
+        let ie = U,
+            W;
+        t[7] === s ? W = t[8] : (W = s != null && s.trim().length > 0, t[7] = s, t[8] = W);
+        let G = W,
+            K = r.id ?? String(d),
+            ae = n?.blockId,
+            oe = l && i != null && a != null && ne && V,
+            se = f ?? !1,
+            q;
+        t[9] !== i || t[10] !== d || t[11] !== a || t[12] !== l || t[13] !== se || t[14] !== r ? (q = {
+            writingBlock: r,
+            conversation: i,
+            messageId: a,
+            index: d,
+            showDownloadButton: l,
+            isStreaming: se
+        }, t[9] = i, t[10] = d, t[11] = a, t[12] = l, t[13] = se, t[14] = r, t[15] = q) : q = t[15];
+        let ce = Ma(q),
+            J;
+        t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (J = function() {
+            return P(xo).get(So, !1)
+        }, t[16] = J) : J = t[16];
+        let le = J,
+            Y;
+        t[17] !== i || t[18] !== ce || t[19] !== a ? (Y = ce && i != null && a != null && le(), t[17] = i, t[18] = ce, t[19] = a, t[20] = Y) : Y = t[20];
+        let X = Y,
+            ue = i != null && a != null && r.variant !== Te.EMAIL && y && !te,
+            de;
+        t[21] !== I || t[22] !== ie || t[23] !== H || t[24] !== G || t[25] !== S || t[26] !== B || t[27] !== r.content ? (de = H && I && !ie && !G && B != null && S != null && r.content.trim() !== ``, t[21] = I, t[22] = ie, t[23] = H, t[24] = G, t[25] = S, t[26] = B, t[27] = r.content, t[28] = de) : de = t[28];
+        let fe = de,
+            pe = H && I && y && te && (!ie || G),
+            me = !M && (i != null || o != null),
+            he = te && ee === `side-pane`,
+            ge = he && !f,
+            Z = N || !!f,
+            _e;
+        t[29] !== Z || t[30] !== p ? (_e = p == null ? null : (0, bo.jsx)(`span`, {
+            className: `contents`,
+            inert: Z,
+            "aria-disabled": Z || void 0,
+            children: p
+        }), t[29] = Z, t[30] = p, t[31] = _e) : _e = t[31];
+        let ve = _e,
+            ye = he && l && (X || oe),
+            be = r.variant === Te.SLIDES && k === `trailing`,
+            xe = N || void 0,
+            Se = k === `leading` ? ve : null,
+            Q;
+        t[32] !== Z || t[33] !== fe || t[34] !== D || t[35] !== F || t[36] !== G || t[37] !== f || t[38] !== S || t[39] !== pe || t[40] !== u || t[41] !== r ? (Q = pe && (0, bo.jsx)(co, {
+            writingBlock: r,
+            title: u,
+            isStreaming: f,
+            disabled: Z || !fe,
+            isPromotionPending: F,
+            isSavedToLibrary: G,
+            onPromoteToLibrary: S,
+            flushEditorContentForLibrarySave: D
+        }), t[32] = Z, t[33] = fe, t[34] = D, t[35] = F, t[36] = G, t[37] = f, t[38] = S, t[39] = pe, t[40] = u, t[41] = r, t[42] = Q) : Q = t[42];
+        let Ce;
+        t[43] !== n?.libraryFileId || t[44] !== ae || t[45] !== c || t[46] !== i || t[47] !== E || t[48] !== d || t[49] !== N || t[50] !== o || t[51] !== a || t[52] !== ge || t[53] !== me || t[54] !== r.content || t[55] !== r.variant || t[56] !== K ? (Ce = !ge && me && (0, bo.jsx)(Wa, {
+            analyticsLibraryFileId: n?.libraryFileId,
+            content: r.content,
+            flushEditorContent: E,
+            conversation: i,
+            messageId: a,
+            libraryFileId: o,
+            writingBlockId: ae,
+            writingBlockIndex: String(d),
+            writingBlockInstanceId: K,
+            variant: r.variant,
+            contentReferences: c,
+            disabled: N
+        }), t[43] = n?.libraryFileId, t[44] = ae, t[45] = c, t[46] = i, t[47] = E, t[48] = d, t[49] = N, t[50] = o, t[51] = a, t[52] = ge, t[53] = me, t[54] = r.content, t[55] = r.variant, t[56] = K, t[57] = Ce) : Ce = t[57];
+        let we;
+        t[58] !== n?.libraryFileId || t[59] !== Z || t[60] !== i || t[61] !== O || t[62] !== L || t[63] !== d || t[64] !== f || t[65] !== o || t[66] !== a || t[67] !== he || t[68] !== oe || t[69] !== X || t[70] !== l || t[71] !== u || t[72] !== r.content || t[73] !== r.title || t[74] !== K ? (we = !he && l && (X ? (0, bo.jsx)(ha, {
+            conversation: i,
+            content: r.content,
+            libraryFileId: o ?? n?.libraryFileId,
+            messageId: a,
+            title: u,
+            index: d,
+            writingBlockId: K,
+            isStreaming: f,
+            disabled: Z,
+            hasLoggedImpression: L,
+            setHasLoggedImpression: R
+        }) : oe && !X && (0, bo.jsx)(Ln, {
+            conversation: i,
+            messageId: a,
+            index: d,
+            flushUnsavedEdits: O,
+            markdownContent: r.content,
+            markdownFileName: u ?? r.title,
+            isStreaming: f,
+            disabled: Z
+        })), t[58] = n?.libraryFileId, t[59] = Z, t[60] = i, t[61] = O, t[62] = L, t[63] = d, t[64] = f, t[65] = o, t[66] = a, t[67] = he, t[68] = oe, t[69] = X, t[70] = l, t[71] = u, t[72] = r.content, t[73] = r.title, t[74] = K, t[75] = we) : we = t[75];
+        let Ee = k === `trailing` && !be ? ve : null,
+            De;
+        t[76] !== Z || t[77] !== g ? (De = g == null ? null : (0, bo.jsx)(`span`, {
+            className: `contents`,
+            inert: Z,
+            children: g
+        }), t[76] = Z, t[77] = g, t[78] = De) : De = t[78];
+        let Oe;
+        t[79] !== Z || t[80] !== j || t[81] !== he || t[82] !== me || t[83] !== ye ? (Oe = Z || j.every(_o) && !(he && me) && !ye, t[79] = Z, t[80] = j, t[81] = he, t[82] = me, t[83] = ye, t[84] = Oe) : Oe = t[84];
+        let ke;
+        t[85] !== n?.libraryFileId || t[86] !== ae || t[87] !== Z || t[88] !== c || t[89] !== i || t[90] !== E || t[91] !== O || t[92] !== L || t[93] !== d || t[94] !== N || t[95] !== f || t[96] !== o || t[97] !== a || t[98] !== ge || t[99] !== he || t[100] !== me || t[101] !== ye || t[102] !== X || t[103] !== u || t[104] !== r.content || t[105] !== r.title || t[106] !== r.variant || t[107] !== K ? (ke = he && (me || ye) ? (0, bo.jsxs)(bo.Fragment, {
+            children: [ge && me && (0, bo.jsx)(Wa, {
+                analyticsLibraryFileId: n?.libraryFileId,
+                content: r.content,
+                flushEditorContent: E,
+                conversation: i,
+                messageId: a,
+                libraryFileId: o,
+                writingBlockId: ae,
+                writingBlockIndex: String(d),
+                writingBlockInstanceId: K,
+                variant: r.variant,
+                contentReferences: c,
+                disabled: N,
+                renderAsMenuItem: !0
+            }), ye && i != null && a != null && (X ? (0, bo.jsx)(ha, {
+                conversation: i,
+                content: r.content,
+                libraryFileId: o ?? n?.libraryFileId,
+                messageId: a,
+                title: u,
+                index: d,
+                writingBlockId: K,
+                isStreaming: f,
+                disabled: Z,
+                hasLoggedImpression: L,
+                setHasLoggedImpression: R,
+                renderAsMenuItem: !0
+            }) : (0, bo.jsx)(Ln, {
+                conversation: i,
+                messageId: a,
+                index: d,
+                flushUnsavedEdits: O,
+                markdownContent: r.content,
+                markdownFileName: u ?? r.title,
+                isStreaming: f,
+                disabled: Z,
+                renderAsSubmenu: !0
+            }))]
+        }) : null, t[85] = n?.libraryFileId, t[86] = ae, t[87] = Z, t[88] = c, t[89] = i, t[90] = E, t[91] = O, t[92] = L, t[93] = d, t[94] = N, t[95] = f, t[96] = o, t[97] = a, t[98] = ge, t[99] = he, t[100] = me, t[101] = ye, t[102] = X, t[103] = u, t[104] = r.content, t[105] = r.title, t[106] = r.variant, t[107] = K, t[108] = ke) : ke = t[108];
+        let Ae;
+        t[109] !== j || t[110] !== Oe || t[111] !== ke ? (Ae = (0, bo.jsx)($a, {
+            actions: j,
+            disabled: Oe,
+            children: ke
+        }), t[109] = j, t[110] = Oe, t[111] = ke, t[112] = Ae) : Ae = t[112];
+        let je;
+        t[113] !== Z || t[114] !== w || t[115] !== ue ? (je = ue && (0, bo.jsx)(Ya, {
+            disabled: Z,
+            onFullscreenOpenRequested: w
+        }), t[113] = Z, t[114] = w, t[115] = ue, t[116] = je) : je = t[116];
+        let Me = be ? ve : null,
+            Ne;
+        return t[117] !== N || t[118] !== xe || t[119] !== Se || t[120] !== Q || t[121] !== Ce || t[122] !== we || t[123] !== Ee || t[124] !== De || t[125] !== Ae || t[126] !== je || t[127] !== Me ? (Ne = (0, bo.jsxs)(`div`, {
+            className: `flex items-center gap-1`,
+            inert: N,
+            "aria-disabled": xe,
+            children: [Se, Q, Ce, we, Ee, De, Ae, je, Me]
+        }), t[117] = N, t[118] = xe, t[119] = Se, t[120] = Q, t[121] = Ce, t[122] = we, t[123] = Ee, t[124] = De, t[125] = Ae, t[126] = je, t[127] = Me, t[128] = Ne) : Ne = t[128], Ne
+    }
+}));
+
+function To(e) {
+    "use forget";
+    let t = (0, Oo.c)(75),
+        {
+            children: n,
+            conversation: r,
+            messageId: i,
+            index: a,
+            libraryFileId: o,
+            optimisticLibraryFileId: s,
+            enableSaveToLibrary: c,
+            onLibraryClick: l,
+            flushUnsavedEdits: u,
+            ...d
+        } = e,
+        f = Ue(),
+        {
+            prepareVersionHistory: p
+        } = Or(),
+        m = T(),
+        g;
+    t[0] === r ? g = t[1] : (g = () => r?.serverId$(), t[0] = r, t[1] = g);
+    let _ = h(g),
+        [v, y] = (0, ko.useState)(!1),
+        [x, S] = (0, ko.useState)(!1),
+        C = (0, ko.useRef)(null),
+        w = [o, s, d.writingBlock.library_file_id].find(Do),
+        {
+            data: E
+        } = Pe({
+            queryKey: [`writing-block-library-location`, w],
+            queryFn: e => {
+                let {
+                    signal: t
+                } = e;
+                return Bn(w ?? ``, t)
+            },
+            select: Eo,
+            enabled: x && w != null
+        }),
+        D = E === void 0 ? null : E,
+        O;
+    t[2] === D ? O = t[3] : (O = Gn(D), t[2] = D, t[3] = O);
+    let k;
+    t[4] === D ? k = t[5] : (k = () => yt(D), t[4] = D, t[5] = k);
+    let A = x && D != null,
+        j;
+    t[6] !== O || t[7] !== k || t[8] !== A ? (j = {
+        queryKey: O,
+        queryFn: k,
+        enabled: A,
+        staleTime: 3e4
+    }, t[6] = O, t[7] = k, t[8] = A, t[9] = j) : j = t[9];
+    let {
+        data: M
+    } = Pe(j), N = h(() => w != null && (r == null || !bi(r).has(w))), P = m && c && w == null && _ != null && d.onPromoteToLibrary != null && d.writingBlock.content.trim() !== ``, F, I;
+    if (t[10] !== v || t[11] !== w ? (F = () => {
+            v && w != null && document.activeElement === document.body && C.current?.focus()
+        }, I = [v, w], t[10] = v, t[11] = w, t[12] = F, t[13] = I) : (F = t[12], I = t[13]), (0, ko.useEffect)(F, I), w != null && m) {
+        let e;
+        t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Ao.jsx)(Cn, {
+            className: `icon`,
+            "aria-hidden": !0
+        }), t[14] = e) : e = t[14];
+        let o;
+        t[15] === n ? o = t[16] : (o = (0, Ao.jsx)(`span`, {
+            className: `min-w-0 truncate`,
+            children: n
+        }), t[15] = n, t[16] = o);
+        let s;
+        t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, Ao.jsx)(fn, {
+            className: `icon-xs opacity-0 group-hover/inline-note:opacity-100 group-focus-visible/inline-note:opacity-100 group-data-[state=open]/inline-note:opacity-100`,
+            "aria-hidden": !0
+        }), t[17] = s) : s = t[17];
+        let c;
+        t[18] === o ? c = t[19] : (c = (0, Ao.jsx)(ot.BasicTrigger, {
+            asChild: !0,
+            children: (0, Ao.jsxs)(`button`, {
+                ref: C,
+                type: `button`,
+                className: `interactive-button interactive-outline-secondary bg-token-bg-primary text-token-text-tertiary text-body-small-regular hover:border-token-border-default hover:bg-token-bg-tertiary hover:text-token-text-primary hover:shadow-elevation-01 active:bg-token-bg-tertiary data-[state=open]:border-token-border-default data-[state=open]:bg-token-bg-tertiary data-[state=open]:text-token-text-primary data-[state=open]:shadow-elevation-01 group/inline-note flex h-9 min-w-0 items-center gap-1 rounded-full border border-transparent px-3`,
+                children: [e, o, s]
+            })
+        }), t[18] = o, t[19] = c);
+        let m;
+        t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, Ao.jsx)(Cn, {
+            className: `icon-sm mt-0.5 shrink-0`,
+            "aria-hidden": !0
+        }), t[20] = m) : m = t[20];
+        let h;
+        t[21] === n ? h = t[22] : (h = (0, Ao.jsx)(`div`, {
+            className: `text-token-text-primary text-body-small-regular truncate`,
+            children: n
+        }), t[21] = n, t[22] = h);
+        let g;
+        if (t[23] !== D || t[24] !== M || t[25] !== f || t[26] !== l) {
+            let e;
+            t[28] === l ? e = t[29] : (e = (e, t) => (0, Ao.jsxs)(`li`, {
+                className: `contents`,
+                children: [t > 0 && (0, Ao.jsx)(`span`, {
+                    "aria-hidden": !0,
+                    children: (0, Ao.jsx)(Ne, {
+                        ...zt.breadcrumbSeparator
+                    })
+                }), (0, Ao.jsx)(Re, {
+                    to: ft(`/library`, e.id),
+                    onClick: l,
+                    className: `hover:text-token-text-primary focus-visible:text-token-text-primary focus-visible:outline-token-border-heavy max-w-full rounded-sm wrap-break-word focus-visible:outline-2 focus-visible:outline-offset-2`,
+                    children: e.name
+                })]
+            }, e.id ?? `root`), t[28] = l, t[29] = e), g = Qe({
+                currentDirectoryId: D,
+                directoryPath: M,
+                intl: f
+            }).map(e), t[23] = D, t[24] = M, t[25] = f, t[26] = l, t[27] = g
+        } else g = t[27];
+        let _;
+        t[30] === g ? _ = t[31] : (_ = (0, Ao.jsx)(`ol`, {
+            className: `text-token-text-tertiary text-caption-regular flex flex-wrap gap-x-1`,
+            children: g
+        }), t[30] = g, t[31] = _);
+        let v;
+        t[32] !== h || t[33] !== _ ? (v = (0, Ao.jsxs)(`div`, {
+            className: `flex items-start gap-2 px-3 py-2`,
+            children: [m, (0, Ao.jsxs)(`div`, {
+                className: `min-w-0`,
+                children: [h, _]
+            })]
+        }), t[32] = h, t[33] = _, t[34] = v) : v = t[34];
+        let y;
+        t[35] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, Ao.jsx)(ot.Separator, {}), t[35] = y) : y = t[35];
+        let x;
+        t[36] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, Ao.jsx)(Ne, {
+            id: `writingBlocks.inlineLibraryTitle.openInLibrary`,
+            defaultMessage: `Open in Library`
+        }), t[36] = x) : x = t[36];
+        let T;
+        t[37] === l ? T = t[38] : (T = (0, Ao.jsx)(ot.LinkItem, {
+            to: `/library`,
+            onClick: l,
+            icon: yn,
+            children: x
+        }), t[37] = l, t[38] = T);
+        let E = d.title ?? d.writingBlock.title,
+            O;
+        t[39] !== r || t[40] !== u || t[41] !== a || t[42] !== i || t[43] !== d.disabled || t[44] !== d.isStreaming || t[45] !== d.writingBlock.content || t[46] !== w || t[47] !== E ? (O = (0, Ao.jsx)(Ln, {
+            conversation: r,
+            messageId: i,
+            index: a,
+            libraryFileId: w,
+            markdownContent: d.writingBlock.content,
+            markdownFileName: E,
+            flushUnsavedEdits: u,
+            disabled: d.disabled,
+            isStreaming: d.isStreaming,
+            renderAsSubmenu: !0
+        }), t[39] = r, t[40] = u, t[41] = a, t[42] = i, t[43] = d.disabled, t[44] = d.isStreaming, t[45] = d.writingBlock.content, t[46] = w, t[47] = E, t[48] = O) : O = t[48];
+        let k;
+        t[49] !== N || t[50] !== f || t[51] !== p || t[52] !== d.disabled || t[53] !== w ? (k = N && (0, Ao.jsx)(ot.Item, {
+            icon: on,
+            disabled: d.disabled,
+            onSelect: () => {
+                Promise.resolve(p?.()).then(e => {
+                    if (e === !1) throw Error(`Could not save pending changes before opening version history.`);
+                    Dn(), tr(w)
+                }).catch(e => {
+                    b().danger(f.formatMessage({
+                        id: `writingBlocks.inlineLibraryTitle.historyFailed`,
+                        defaultMessage: `Couldn't open version history. Try again.`
+                    }), {
+                        error: e
+                    })
+                })
+            },
+            children: (0, Ao.jsx)(Ne, {
+                id: `recall.artifact_writing_block.menu.version_history`,
+                defaultMessage: `Version history`
+            })
+        }), t[49] = N, t[50] = f, t[51] = p, t[52] = d.disabled, t[53] = w, t[54] = k) : k = t[54];
+        let A;
+        t[55] !== v || t[56] !== T || t[57] !== O || t[58] !== k ? (A = (0, Ao.jsx)(ot.Portal, {
+            children: (0, Ao.jsxs)(ot.Content, {
+                align: `start`,
+                className: `max-w-sm`,
+                children: [v, y, T, O, k]
+            })
+        }), t[55] = v, t[56] = T, t[57] = O, t[58] = k, t[59] = A) : A = t[59];
+        let j;
+        return t[60] !== S || t[61] !== c || t[62] !== A ? (j = (0, Ao.jsxs)(ot.Root, {
+            onOpenChange: S,
+            children: [c, A]
+        }), t[60] = S, t[61] = c, t[62] = A, t[63] = j) : j = t[63], j
+    }
+    if (P) {
+        let e;
+        return t[64] !== n || t[65] !== d || t[66] !== y ? (e = (0, Ao.jsx)(co, {
+            ...d,
+            variant: `inline`,
+            onSaved: y,
+            children: n
+        }), t[64] = n, t[65] = d, t[66] = y, t[67] = e) : e = t[67], e
+    }
+    let L;
+    t[68] === w ? L = t[69] : (L = w != null && (0, Ao.jsx)(Cn, {
+        className: `icon me-1 shrink-0`,
+        "aria-hidden": !0
+    }), t[68] = w, t[69] = L);
+    let R;
+    t[70] === n ? R = t[71] : (R = (0, Ao.jsx)(`span`, {
+        className: `min-w-0 truncate`,
+        children: n
+    }), t[70] = n, t[71] = R);
+    let ee;
+    return t[72] !== L || t[73] !== R ? (ee = (0, Ao.jsxs)(`div`, {
+        className: `flex h-9 min-w-0 items-center px-3`,
+        children: [L, R]
+    }), t[72] = L, t[73] = R, t[74] = ee) : ee = t[74], ee
+}
+
+function Eo(e) {
+    let {
+        artifact: t
+    } = e;
+    return typeof t.classifiers.parent_directory_id == `string` ? t.classifiers.parent_directory_id : null
+}
+
+function Do(e) {
+    return e != null && e.trim().length > 0
+}
+var Oo, ko, Ao, jo = e((() => {
+        Oo = He(), ct(), ln(), sn(), gn(), tn(), On(), Qn(), nt(), Wn(), _t(), ut(), Vn(), x(), m(), Oe(), Fn(), go(), Dr(), Si(), Ve(), ko = t(Ie()), $(), Fe(), Ao = ke()
+    })),
+    Mo, No, Po, Fo = e((() => {
+        Mo = He(), Dr(), jo(), M(), $(), No = ke(), Po = e => {
+            "use forget";
+            let t = (0, Mo.c)(15),
+                {
+                    title: n,
+                    fullscreenTitleContent: r,
+                    autosaveDebugBadge: i,
+                    inlineLibraryControls: a
+                } = e,
+                {
+                    isFullscreenDialogOpen: o
+                } = Or(),
+                s = o && r != null,
+                c;
+            t[0] === n ? c = t[1] : (c = n ?? (0, No.jsx)(Ne, {
+                id: `writingBlocks.header.label`,
+                defaultMessage: `Writing`
+            }), t[0] = n, t[1] = c);
+            let l = c,
+                d = a == null && `max-w-[75%]`,
+                f = o ? `text-token-text-primary text-body-regular` : a == null ? `text-token-text-tertiary text-sm font-medium` : `text-token-text-tertiary text-body-small-regular`,
+                p;
+            t[2] !== d || t[3] !== f ? (p = u(`flex min-w-0 grow cursor-default items-center self-center`, d, f), t[2] = d, t[3] = f, t[4] = p) : p = t[4];
+            let m;
+            t[5] !== r || t[6] !== a || t[7] !== o || t[8] !== s || t[9] !== l ? (m = a != null && !o ? (0, No.jsx)(To, {
+                ...a,
+                children: l
+            }) : (0, No.jsx)(`div`, {
+                className: u(`min-w-0`, !s && `truncate`),
+                children: s ? r : l
+            }), t[5] = r, t[6] = a, t[7] = o, t[8] = s, t[9] = l, t[10] = m) : m = t[10];
+            let h;
+            return t[11] !== i || t[12] !== p || t[13] !== m ? (h = (0, No.jsxs)(`div`, {
+                className: p,
+                children: [m, i]
+            }), t[11] = i, t[12] = p, t[13] = m, t[14] = h) : h = t[14], h
+        }
+    })),
+    Io, Lo, Ro, zo, Bo, Vo, Ho, Uo = e((() => {
+        Io = He(), kr(), pn(), Ua(), De(), X(), wr(), M(), $(), Lo = ke(), Ro = je({
+            editButtonLabel: {
+                id: `writingBlocks.header.magicEdit.entry.text`,
+                defaultMessage: `Edit`
+            }
+        }), zo = ({
+            className: e
+        }) => (0, Lo.jsx)(Ha, {
+            className: u(`icon`, e)
+        }), Bo = ({
+            className: e
+        }) => (0, Lo.jsx)(hn, {
+            className: u(`icon-sm`, e)
+        }), Vo = ({
+            onCancel: e,
+            size: t
+        }) => (0, Lo.jsx)(Ar, {
+            size: t,
+            onClick: e
+        }), Ho = e => {
+            "use forget";
+            let t = (0, Io.c)(23),
+                {
+                    controls: n,
+                    analyticsMetadata: r,
+                    showCollapsedEditLabel: i,
+                    trailingContent: a,
+                    variant: o
+                } = e,
+                s = i === void 0 || i,
+                c = Ue(),
+                l = r?.libraryFileId,
+                u;
+            t[0] !== r?.blockId || t[1] !== r?.messageId || t[2] !== r?.serverThreadId || t[3] !== l || t[4] !== o ? (u = () => {
+                L.logStructuredEvent(`ChatgptWritingBlockHeaderMagicEditButtonClicked`, {
+                    conversationId: r?.serverThreadId,
+                    messageId: r?.messageId,
+                    writingBlockId: r?.blockId,
+                    ...l == null ? {} : {
+                        libraryFileId: l
+                    },
+                    variant: o
+                }), Se.count(H.WRITING_BLOCKS, `chatgpt_writing_block_header_magic_edit_button_clicked`)
+            }, t[0] = r?.blockId, t[1] = r?.messageId, t[2] = r?.serverThreadId, t[3] = l, t[4] = o, t[5] = u) : u = t[5], r?.blockId, r?.messageId, r?.serverThreadId;
+            let d = u,
+                f;
+            t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (f = {
+                composer: `dark:bg-[#2a2a2a]`,
+                editButton: `dark:bg-[#2a2a2a]`
+            }, t[6] = f) : f = t[6];
+            let p;
+            t[7] === c ? p = t[8] : (p = c.formatMessage(Ro.editButtonLabel), t[7] = c, t[8] = p);
+            let m;
+            t[9] === c ? m = t[10] : (m = c.formatMessage({
+                id: `writingBlocks.header.magicEdit.composer.placeholder`,
+                defaultMessage: `Ask for changes`
+            }), t[9] = c, t[10] = m);
+            let h;
+            t[11] === c ? h = t[12] : (h = c.formatMessage({
+                id: `writingBlocks.header.magicEdit.composer.submit`,
+                defaultMessage: `Submit edits`
+            }), t[11] = c, t[12] = h);
+            let g;
+            t[13] !== p || t[14] !== m || t[15] !== h ? (g = {
+                editButton: p,
+                composerPlaceholder: m,
+                submitButton: h
+            }, t[13] = p, t[14] = m, t[15] = h, t[16] = g) : g = t[16];
+            let _;
+            return t[17] !== n || t[18] !== d || t[19] !== s || t[20] !== g || t[21] !== a ? (_ = (0, Lo.jsx)(Er, {
+                classNames: f,
+                controls: n,
+                labels: g,
+                onEditButtonClick: d,
+                renderEditIcon: zo,
+                renderSubmitIcon: Bo,
+                renderSubmittingControl: Vo,
+                showCollapsedEditLabel: s,
+                submitButtonClassName: `composer-submit-btn composer-submit-button-color`,
+                trailingContent: a
+            }), t[17] = n, t[18] = d, t[19] = s, t[20] = g, t[21] = a, t[22] = _) : _ = t[22], _
+        }
+    }));
+
+function Wo(e) {
+    let {
+        action: t,
+        disabled: n,
+        label: r,
+        onClick: i,
+        onMouseDown: a,
+        tooltip: o
+    } = e;
+    return (0, Ko.jsx)(Wr, {
+        disabled: n,
+        icon: t === `undo` ? vn : qo,
+        label: r,
+        onClick: i,
+        onMouseDown: a,
+        tooltip: o
+    })
+}
+var Go, Ko, qo, Jo, Yo = e((() => {
+    Go = He(), dn(), Ur(), wr(), M(), $(), Ko = ke(), qo = e => {
+        "use forget";
+        let t = (0, Go.c)(5),
+            n;
+        t[0] === e.className ? n = t[1] : (n = u(e.className, `-scale-x-100`), t[0] = e.className, t[1] = n);
+        let r;
+        return t[2] !== e || t[3] !== n ? (r = (0, Ko.jsx)(vn, {
+            ...e,
+            "data-rtl-flip": void 0,
+            className: n
+        }), t[2] = e, t[3] = n, t[4] = r) : r = t[4], r
+    }, Jo = e => {
+        "use forget";
+        let t = (0, Go.c)(25),
+            {
+                editHistoryControls: n
+            } = e,
+            r = Ue(),
+            i;
+        t[0] === r ? i = t[1] : (i = r.formatMessage({
+            id: `writingBlocks.header.undo.tooltip`,
+            defaultMessage: `Undo`
+        }), t[0] = r, t[1] = i);
+        let a = i,
+            o;
+        t[2] === r ? o = t[3] : (o = r.formatMessage({
+            id: `writingBlocks.header.undo.aria`,
+            defaultMessage: `Undo last edit`
+        }), t[2] = r, t[3] = o);
+        let s = o,
+            c;
+        t[4] === r ? c = t[5] : (c = r.formatMessage({
+            id: `writingBlocks.header.redo.tooltip`,
+            defaultMessage: `Redo`
+        }), t[4] = r, t[5] = c);
+        let l = c,
+            u;
+        t[6] === r ? u = t[7] : (u = r.formatMessage({
+            id: `writingBlocks.header.redo.aria`,
+            defaultMessage: `Redo last edit`
+        }), t[6] = r, t[7] = u);
+        let d = u,
+            f;
+        t[8] !== n.canRedo || t[9] !== n.canUndo || t[10] !== n.hasActiveMagicEditPreview || t[11] !== n.hasHistorySessionEdits || t[12] !== n.isHeaderInteractionDisabled || t[13] !== n.onRedo || t[14] !== n.onUndo || t[15] !== n.shouldShowRedoButton ? (f = {
+            canRedo: n.canRedo,
+            canUndo: n.canUndo,
+            hasActivePreview: n.hasActiveMagicEditPreview,
+            hasSessionEdits: n.hasHistorySessionEdits,
+            isInteractionDisabled: n.isHeaderInteractionDisabled,
+            onRedo: n.onRedo,
+            onUndo: n.onUndo,
+            showRedoButton: n.shouldShowRedoButton
+        }, t[8] = n.canRedo, t[9] = n.canUndo, t[10] = n.hasActiveMagicEditPreview, t[11] = n.hasHistorySessionEdits, t[12] = n.isHeaderInteractionDisabled, t[13] = n.onRedo, t[14] = n.onUndo, t[15] = n.shouldShowRedoButton, t[16] = f) : f = t[16];
+        let p;
+        t[17] !== d || t[18] !== l || t[19] !== s || t[20] !== a ? (p = {
+            redoButton: d,
+            redoTooltip: l,
+            undoButton: s,
+            undoTooltip: a
+        }, t[17] = d, t[18] = l, t[19] = s, t[20] = a, t[21] = p) : p = t[21];
+        let m;
+        return t[22] !== f || t[23] !== p ? (m = (0, Ko.jsx)(Tr, {
+            controls: f,
+            labels: p,
+            renderButton: Wo
+        }), t[22] = f, t[23] = p, t[24] = m) : m = t[24], m
+    }
+}));
+
+function Xo(e) {
+    "use forget";
+    let t = (0, $o.c)(8),
+        {
+            conversation: n,
+            libraryFileId: r,
+            prepareVersionHistory: i
+        } = e,
+        a = Ue(),
+        o;
+    t[0] !== n || t[1] !== a || t[2] !== r || t[3] !== i ? (o = e => {
+        Zi({
+            entryId: e,
+            errorMessage: a.formatMessage(zt.restoreFileFailed),
+            libraryFileId: r,
+            prepareVersionHistory: i,
+            serverThreadId: n?.serverId$()
+        })
+    }, t[0] = n, t[1] = a, t[2] = r, t[3] = i, t[4] = o) : o = t[4];
+    let s;
+    return t[5] !== r || t[6] !== o ? (s = (0, ts.jsx)(Pr, {
+        fileId: r,
+        onRestore: o
+    }), t[5] = r, t[6] = o, t[7] = s) : s = t[7], s
+}
+
+function Zo(e) {
+    return e.author.metadata?.real_author === `onboarding`
+}
+
+function Qo(e) {
+    return e != null && _e.someMessage(e, Zo)
+}
+var $o, es, ts, ns, rs = e((() => {
+    $o = He(), Ge(), nt(), Nr(), x(), Yn(), m(), de(), z(), O(), f(), ma(), jr(), Dr(), wo(), Xt(), Jt(), Fo(), Uo(), Yo(), ir(), Qi(), jt(), Rn(), Sr(), S(), M(), es = t(Ie()), $(), ts = ke(), ns = e => {
+        "use forget";
+        let t = (0, $o.c)(141),
+            {
+                primaryAction: n,
+                writingBlock: r,
+                conversation: i,
+                messageId: a,
+                libraryFileId: o,
+                optimisticLibraryFileId: s,
+                isLibraryPromotionPending: c,
+                onPromoteToLibrary: l,
+                enableSaveToLibrary: d,
+                onFullscreenOpenRequested: f,
+                flushEditorContentForCopy: p,
+                flushEditorContentForLibrarySave: m,
+                flushUnsavedEdits: g,
+                isInlineWritingBlockExportEnabled: _,
+                title: v,
+                index: y,
+                showDownloadButton: b,
+                contentReferences: x,
+                analyticsMetadata: S,
+                isStreaming: C,
+                enableHeaderActionButtons: w,
+                className: E,
+                isWritingBlockFocusedModeEnabled: D,
+                fullscreenLeadingAction: O,
+                fullscreenCloseButtonPlacement: k,
+                primaryActionPlacement: A,
+                presence: j,
+                overflowActions: M,
+                sidePaneOverflowActions: N,
+                hideCopyButton: P,
+                hideFullscreenDivider: F,
+                presentationMode: I,
+                children: L,
+                inlineContent: R
+            } = e,
+            ee = b === void 0 || b,
+            te = w !== void 0 && w,
+            z = k === void 0 ? `leading` : k,
+            B = F !== void 0 && F,
+            ne;
+        t[0] === e.autosaveStatus ? ne = t[1] : (ne = !1, t[0] = e.autosaveStatus, t[1] = ne);
+        let V = ne,
+            H;
+        bb0: switch (e.autosaveStatus) {
+            case `error`:
+                H = `text-red-500 dark:text-red-400`;
+                break bb0;
+            case `retrying`:
+                H = `text-purple-500 dark:text-purple-400`;
+                break bb0;
+            case `saving`:
+                H = `text-blue-500 dark:text-blue-400`;
+                break bb0;
+            case `queued`:
+                H = `text-amber-500 dark:text-amber-400`;
+                break bb0;
+            case `dirty`:
+                H = `text-orange-500 dark:text-orange-400`;
+                break bb0;
+            case `saved`:
+                H = `text-emerald-500 dark:text-emerald-400`;
+                break bb0;
+            default:
+                H = `text-token-text-primary/35`
+        }
+        let re = H,
+            U;
+        t[2] !== re || t[3] !== e.autosaveStatus || t[4] !== V ? (U = V ? (0, ts.jsxs)(ts.Fragment, {
+            children: [(0, ts.jsx)(`span`, {
+                className: `mx-1`,
+                children: `⋅`
+            }), (0, ts.jsx)(`span`, {
+                className: u(`text-[14px]`, re),
+                "data-debug-saving": !0,
+                children: e.autosaveStatus
+            })]
+        }) : null, t[2] = re, t[3] = e.autosaveStatus, t[4] = V, t[5] = U) : U = t[5];
+        let W = U,
+            {
+                expandedShellKind: G,
+                isFullscreenDialogOpen: K,
+                isFullscreenTurnActive: ae,
+                isVersionHistoryPreviewOpen: oe,
+                libraryFileId: se,
+                prepareFullscreenComposerTransition: q,
+                prepareVersionHistory: ce,
+                versionHistoryPreviewContent: J
+            } = Or(),
+            le = ae !== void 0 && ae,
+            Y = oe !== void 0 && oe,
+            X = (0, es.useContext)(Ut),
+            {
+                fullscreenTransitionPhase: ue
+            } = Mr(),
+            de = ge(i?.id, Qo),
+            pe = T(),
+            me = h(Z),
+            he = h(ie),
+            _e;
+        t[6] !== he || t[7] !== me || t[8] !== K || t[9] !== r.variant ? (_e = zn(r.variant, K, me, he), t[6] = he, t[7] = me, t[8] = K, t[9] = r.variant, t[10] = _e) : _e = t[10];
+        let {
+            left: ve
+        } = _e, ye = Math.min(ve, 5), be = h(kt), xe;
+        t[11] !== L || t[12] !== K || t[13] !== X || t[14] !== de || t[15] !== Y || t[16] !== I || t[17] !== r.variant ? (xe = () => !K && !Y && !X && !de && !fe() && I !== `voice-stage` && r.variant !== Te.EMAIL && L == null && ht(), t[11] = L, t[12] = K, t[13] = X, t[14] = de, t[15] = Y, t[16] = I, t[17] = r.variant, t[18] = xe) : xe = t[18];
+        let Se = h(xe),
+            Q = !Se && !be && I !== `voice-stage` && !Y && !K && !de && he ? e.magicEditControls : void 0,
+            Ce = Q !== void 0,
+            we = Q?.isComposerOpen === !0,
+            Ee = !Y && e.isEditable && e.magicEditControls?.isHeaderInteractionDisabled === !0,
+            De = le || !te && Ee,
+            Oe = Se ? 2 : Ce ? 1 : ye,
+            ke = !Y && K && e.magicEditControls?.hasHistorySessionEdits === !0 && (e.magicEditControls.canUndo || e.magicEditControls.canRedo) && e.magicEditControls.hasActiveMagicEditPreview !== !0 ? e.magicEditControls : void 0,
+            Ae = Q?.hasHistorySessionEdits === !0 && Q.hasActiveMagicEditPreview !== !0 ? Q : void 0,
+            je = ke ?? Ae,
+            Me;
+        t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (Me = fe(), t[19] = Me) : Me = t[19];
+        let Ne = !Me,
+            Pe = je !== void 0 || Ne || K && (G === `side-pane` || z === `trailing`),
+            Fe = je !== void 0 && Ne,
+            $;
+        t[20] !== Oe || t[21] !== be || t[22] !== K || t[23] !== Se ? ($ = !K && {
+            paddingLeft: `calc(${Oe} * var(--spacing))`,
+            ...be && !Se && {
+                paddingBlock: `calc(var(--oai-wb-radius) - 4.5 * var(--spacing))`,
+                paddingInlineEnd: `calc(var(--oai-wb-radius) - 4.5 * var(--spacing))`
+            }
+        }, t[20] = Oe, t[21] = be, t[22] = K, t[23] = Se, t[24] = $) : $ = t[24];
+        let Ie;
+        t[25] === $ ? Ie = t[26] : (Ie = {
+            ...$
+        }, t[25] = $, t[26] = Ie);
+        let Le = Ie,
+            Re = ue !== `idle`,
+            ze;
+        t[27] !== K || t[28] !== Re ? (ze = K && Re ? {
+            viewTransitionName: cr
+        } : void 0, t[27] = K, t[28] = Re, t[29] = ze) : ze = t[29];
+        let Be = ze,
+            Ve;
+        t[30] !== K || t[31] !== Re ? (Ve = K && Re ? {
+            viewTransitionName: dr
+        } : void 0, t[30] = K, t[31] = Re, t[32] = Ve) : Ve = t[32];
+        let He = Ve,
+            Ue = Re ? ue : void 0,
+            We = K ? null : R;
+        if (X) return null;
+        let Ge = K && !Re && !B && `border-token-border-light border-b`,
+            Ke = K ? `top-0` : `md:top-(--sticky-padding-top)`,
+            qe;
+        t[33] !== Ge || t[34] !== Ke ? (qe = u(Pt.WritingBlockHeader, Ge, `relative`, `md:sticky`, Ke), t[33] = Ge, t[34] = Ke, t[35] = qe) : qe = t[35];
+        let Je;
+        t[36] !== E || t[37] !== G || t[38] !== K || t[39] !== Se || t[40] !== Ce ? (Je = u(`relative isolate flex w-full items-center justify-between gap-3 font-sans`, K ? u(`rounded-none py-2`, G === `side-pane` ? `ps-4 pe-3` : `px-3`) : Se ? `py-2` : `py-2.5`, !K && (Se ? `pe-2` : Ce ? `pe-3` : `pe-3 sm:pe-1`), E), t[36] = E, t[37] = G, t[38] = K, t[39] = Se, t[40] = Ce, t[41] = Je) : Je = t[41];
+        let Ye;
+        t[42] === Be ? Ye = t[43] : (Ye = (0, ts.jsx)(`div`, {
+            "aria-hidden": !0,
+            className: `bg-token-bg-primary pointer-events-none absolute inset-0 -z-1 dark:bg-[#2a2a2a]`,
+            "data-writing-block-fullscreen-header-surface": !0,
+            style: Be
+        }), t[42] = Be, t[43] = Ye);
+        let Xe = K ? `fullscreen` : `inline`,
+            Ze = we ? `items-start` : `items-center`,
+            Qe;
+        t[44] === Ze ? Qe = t[45] : (Qe = u(`flex min-w-0 grow gap-3`, Ze), t[44] = Ze, t[45] = Qe);
+        let et;
+        t[46] !== G || t[47] !== z || t[48] !== O || t[49] !== K || t[50] !== Ee || t[51] !== C ? (et = K && (0, ts.jsx)(ts.Fragment, {
+            children: O === void 0 ? G !== `side-pane` && z !== `trailing` ? (0, ts.jsx)(da, {
+                isStreaming: C,
+                isDisabled: Ee
+            }) : null : O
+        }), t[46] = G, t[47] = z, t[48] = O, t[49] = K, t[50] = Ee, t[51] = C, t[52] = et) : et = t[52];
+        let tt;
+        t[53] !== S || t[54] !== W || t[55] !== Q || t[56] !== L || t[57] !== i || t[58] !== d || t[59] !== m || t[60] !== g || t[61] !== y || t[62] !== De || t[63] !== Se || t[64] !== c || t[65] !== C || t[66] !== Y || t[67] !== o || t[68] !== a || t[69] !== l || t[70] !== s || t[71] !== e || t[72] !== v || t[73] !== We || t[74] !== r ? (tt = L ?? (Q ? (0, ts.jsx)(Ho, {
+            controls: Q,
+            analyticsMetadata: S,
+            showCollapsedEditLabel: !$e(r.metadata),
+            trailingContent: We,
+            variant: r.variant
+        }) : (0, ts.jsxs)(ts.Fragment, {
+            children: [(0, ts.jsx)(Po, {
+                ...e,
+                inlineLibraryControls: Se ? {
+                    writingBlock: r,
+                    title: v,
+                    conversation: i,
+                    messageId: a,
+                    index: y,
+                    libraryFileId: o,
+                    optimisticLibraryFileId: s,
+                    enableSaveToLibrary: d,
+                    isStreaming: C,
+                    disabled: De,
+                    isPromotionPending: c,
+                    onPromoteToLibrary: l,
+                    flushEditorContentForLibrarySave: m,
+                    flushUnsavedEdits: g,
+                    onLibraryClick: e.onLibraryClick ?? m
+                } : void 0,
+                autosaveDebugBadge: W,
+                fullscreenTitleContent: Y && !e.preserveFullscreenTitleDuringVersionHistoryPreview ? void 0 : e.fullscreenTitleContent
+            }), We]
+        })), t[53] = S, t[54] = W, t[55] = Q, t[56] = L, t[57] = i, t[58] = d, t[59] = m, t[60] = g, t[61] = y, t[62] = De, t[63] = Se, t[64] = c, t[65] = C, t[66] = Y, t[67] = o, t[68] = a, t[69] = l, t[70] = s, t[71] = e, t[72] = v, t[73] = We, t[74] = r, t[75] = tt) : tt = t[75];
+        let nt;
+        t[76] !== Qe || t[77] !== et || t[78] !== tt ? (nt = (0, ts.jsxs)(`div`, {
+            className: Qe,
+            children: [et, tt]
+        }), t[76] = Qe, t[77] = et, t[78] = tt, t[79] = nt) : nt = t[79];
+        let rt;
+        t[80] !== S || t[81] !== x || t[82] !== i || t[83] !== d || t[84] !== G || t[85] !== p || t[86] !== m || t[87] !== g || t[88] !== z || t[89] !== P || t[90] !== y || t[91] !== K || t[92] !== De || t[93] !== Ee || t[94] !== Se || t[95] !== _ || t[96] !== c || t[97] !== de || t[98] !== pe || t[99] !== C || t[100] !== Y || t[101] !== D || t[102] !== o || t[103] !== a || t[104] !== f || t[105] !== l || t[106] !== s || t[107] !== M || t[108] !== q || t[109] !== ce || t[110] !== j || t[111] !== n || t[112] !== A || t[113] !== Pe || t[114] !== Fe || t[115] !== ee || t[116] !== N || t[117] !== v || t[118] !== se || t[119] !== J || t[120] !== je || t[121] !== r ? (rt = Pe && (0, ts.jsxs)(`div`, {
+            className: `flex shrink-0 items-center`,
+            children: [je && (0, ts.jsx)(`div`, {
+                className: `flex items-center gap-0`,
+                "data-testid": `writing-block-header-magic-edit-history-buttons`,
+                children: (0, ts.jsx)(Jo, {
+                    editHistoryControls: je
+                })
+            }), Fe && (0, ts.jsx)(`div`, {
+                "aria-hidden": `true`,
+                className: `bg-token-border-light mx-1.5 h-3.5 w-px shrink-0`,
+                "data-testid": `writing-block-header-magic-edit-history-separator`
+            }), Ne && (0, ts.jsx)(Co, {
+                analyticsMetadata: S,
+                writingBlock: Y && J != null ? {
+                    ...r,
+                    content: J
+                } : r,
+                conversation: i,
+                messageId: a,
+                libraryFileId: o,
+                optimisticLibraryFileId: s,
+                contentReferences: x,
+                showDownloadButton: ee && (!Se || !pe) && (K || o != null || r.library_file_id != null || s != null || r.variant === Te.EMAIL) && !de && !Y,
+                isInlineWritingBlockExportEnabled: _,
+                title: v,
+                index: y,
+                isStreaming: C,
+                primaryAction: Y && N != null && se != null ? (0, ts.jsx)(Xo, {
+                    conversation: i,
+                    libraryFileId: se,
+                    prepareVersionHistory: ce
+                }) : n,
+                primaryActionPlacement: A,
+                presence: j,
+                overflowActions: K && G === `side-pane` && N != null ? [...M ?? [], ...N] : M,
+                hideCopyButton: P,
+                isWritingBlockFocusedModeEnabled: D && !de,
+                isInteractionDisabled: De,
+                isLibraryPromotionPending: c,
+                onPromoteToLibrary: l,
+                enableSaveToLibrary: d && !Y,
+                onFullscreenOpenRequested: f,
+                flushEditorContentForCopy: Y ? void 0 : p,
+                flushEditorContentForLibrarySave: m,
+                flushUnsavedEdits: g
+            }), K && G !== `side-pane` && z === `trailing` && (0, ts.jsx)(da, {
+                isStreaming: C,
+                isDisabled: Ee
+            }), K && G === `side-pane` && (0, ts.jsx)(Xn.HeaderActions, {
+                preparePresentation: q,
+                closeButton: (0, ts.jsx)(da, {
+                    isStreaming: C,
+                    isDisabled: Ee
+                })
+            })]
+        }), t[80] = S, t[81] = x, t[82] = i, t[83] = d, t[84] = G, t[85] = p, t[86] = m, t[87] = g, t[88] = z, t[89] = P, t[90] = y, t[91] = K, t[92] = De, t[93] = Ee, t[94] = Se, t[95] = _, t[96] = c, t[97] = de, t[98] = pe, t[99] = C, t[100] = Y, t[101] = D, t[102] = o, t[103] = a, t[104] = f, t[105] = l, t[106] = s, t[107] = M, t[108] = q, t[109] = ce, t[110] = j, t[111] = n, t[112] = A, t[113] = Pe, t[114] = Fe, t[115] = ee, t[116] = N, t[117] = v, t[118] = se, t[119] = J, t[120] = je, t[121] = r, t[122] = rt) : rt = t[122];
+        let it;
+        t[123] !== Ue || t[124] !== Xe || t[125] !== nt || t[126] !== rt ? (it = (0, ts.jsxs)(`div`, {
+            className: `relative z-1 flex w-full items-center justify-between gap-3`,
+            "data-writing-block-fullscreen-header-chrome": !0,
+            "data-writing-block-fullscreen-header-layout": Xe,
+            "data-writing-block-fullscreen-transition-phase": Ue,
+            children: [nt, rt]
+        }), t[123] = Ue, t[124] = Xe, t[125] = nt, t[126] = rt, t[127] = it) : it = t[127];
+        let at;
+        t[128] !== Le || t[129] !== Je || t[130] !== Ye || t[131] !== it ? (at = (0, ts.jsxs)(`div`, {
+            className: Je,
+            "data-testid": `writing-block-header-surface`,
+            style: Le,
+            children: [Ye, it]
+        }), t[128] = Le, t[129] = Je, t[130] = Ye, t[131] = it, t[132] = at) : at = t[132];
+        let ot;
+        t[133] !== K || t[134] !== Re || t[135] !== He ? (ot = K && Re && (0, ts.jsx)(`div`, {
+            "aria-hidden": !0,
+            className: `bg-token-border-light pointer-events-none absolute inset-x-0 bottom-0 h-px`,
+            "data-writing-block-fullscreen-header-border": !0,
+            style: He
+        }), t[133] = K, t[134] = Re, t[135] = He, t[136] = ot) : ot = t[136];
+        let st;
+        return t[137] !== qe || t[138] !== at || t[139] !== ot ? (st = (0, ts.jsxs)(`div`, {
+            className: qe,
+            "data-testid": `writing-block-header-sticky-container`,
+            children: [at, ot]
+        }), t[137] = qe, t[138] = at, t[139] = ot, t[140] = st) : st = t[140], st
+    }
+}));
+export {
+    ri as _, $i as a, Yi as c, vi as d, Si as f, si as g, ci as h, oa as i, ji as l, fi as m, rs as n, aa as o, bi as p, ua as r, Ji as s, ns as t, Di as u, ni as v, Zr as y
+};
 //# sourceMappingURL=920a0b2e-k9vqfefqhxnqhdgz.js.map

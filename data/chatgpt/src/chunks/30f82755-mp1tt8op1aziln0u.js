@@ -1,2 +1,6028 @@
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{$W as r,$rt as i,A0 as a,Az as o,BK as s,BV as c,Bk as l,Bx as u,C1 as d,CN as f,Cm as p,Cy as m,Ek as h,Eq as g,Ex as _,F0 as v,FP as y,Fq as b,GH as ee,GU as x,Gst as S,HK as C,Hp as te,Hq as ne,I0 as w,I8 as re,IN as ie,Ik as T,Iq as E,J5 as ae,Jtt as D,KH as oe,Kk as O,L1 as se,L8 as ce,LN as le,LU as k,Lnt as ue,Lq as A,Ls as de,Mk as fe,Mq as pe,Ms as j,Mz as me,N1 as he,N5 as M,NV as ge,Nq as _e,Nz as ve,P7 as N,PS as P,Pnt as F,Q0 as ye,Qd as I,Qu as be,R7 as xe,RU as Se,Rk as Ce,S5 as L,Sc as we,Sm as Te,Sy as R,Tk as Ee,U0 as z,Uu as De,Vd as Oe,Vx as ke,W0 as Ae,WU as je,Wk as Me,Wnt as B,Wrt as Ne,Xd as Pe,Xnt as Fe,Y5 as Ie,YW as Le,Z0 as Re,ZK as ze,Zu as Be,_N as V,__ as Ve,_nt as He,aq as Ue,b2 as We,b8 as Ge,bP as Ke,cD as qe,cf as Je,cm as Ye,dD as Xe,dE as Ze,dF as Qe,dit as $e,ek as et,el as H,eq as tt,fF as nt,fV as rt,fq as it,fy as at,h5 as ot,h8 as st,hV as U,i_ as ct,il as lt,im as ut,jet as dt,jq as ft,js as pt,jz as mt,kS as ht,kU as gt,lf as _t,lk as vt,mst as yt,nY as bt,n_ as xt,of as St,oq as Ct,pE as wt,pY as Tt,pnt as Et,px as Dt,qB as Ot,qJ as kt,t2 as At,tV as jt,tct as Mt,uD as Nt,uit as Pt,vN as Ft,w8 as It,wet as W,wx as Lt,x2 as Rt,x5 as zt,xm as Bt,yN as Vt,yV as Ht,yc as Ut,ynt as Wt,yx as Gt,z0 as Kt,zU as qt,zm as Jt,zq as Yt}from"./4813494d-dfpv67hlp00pbohr.js";import{At as G,Bn as K,In as Xt,Kt as Zt,Ln as Qt,N as $t,Nn as en,Nt as tn,Q as nn,Rn as rn,Vn as an,l as on,s as sn,wn as cn,zn as ln}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$9t as un,$X as dn,$gn as fn,AHt as pn,AQ as q,AX as mn,B5 as hn,B9t as gn,BHn as _n,BIn as vn,Bzt as yn,C$ as bn,Cpn as xn,D$ as Sn,DQ as Cn,DX as wn,E$ as Tn,E5t as En,ENn as Dn,EQ as On,EX as kn,EY as An,Ejn as jn,FIn as Mn,FY as Nn,Ffn as Pn,Fgn as Fn,Fpn as In,Fx as Ln,HNn as Rn,Hfn as zn,Hmn as Bn,Hv as Vn,Hyn as Hn,IWt as Un,IY as Wn,Ifn as Gn,Ivn as Kn,Ix as qn,Ixn as J,Izn as Jn,JS as Y,JY as Yn,Ju as Xn,Jyn as Zn,Kyn as Qn,L9t as $n,LY as er,Lvn as tr,Lxn as nr,M2 as rr,MPt as ir,MQ as ar,MX as or,Mpn as sr,NHn as cr,NY as lr,Npn as ur,OFn as dr,OQ as fr,OUt as pr,Oyn as mr,PAt as hr,PHn as gr,PIn as _r,Q9t as vr,Qbn as yr,Qzn as br,Rgn as xr,Rxn as Sr,S$ as Cr,S5t as wr,SUt as X,SY as Tr,T$ as Er,T9t as Dr,TQ as Or,TUt as kr,TX as Ar,U9t as jr,UHn as Mr,UNn as Nr,UR as Z,UUn as Pr,Umn as Fr,Uv as Ir,V5 as Lr,V9t as Rr,VIn as zr,Vmn as Br,Vpn as Vr,Vv as Hr,Vzt as Ur,WR as Wr,WUn as Gr,Wfn as Kr,Xyn as qr,Yzn as Jr,ZIn as Yr,Zbn as Xr,Zgn as Zr,Zzn as Qr,_Nn as $r,_Ut as ei,_at as ti,_dn as ni,aEt as ri,aY as ii,afn as ai,agn as oi,axn as si,bNn as ci,bU as li,bUt as ui,btt as di,c0 as fi,cMt as pi,cSn as mi,cgn as hi,cpn as gi,cxn as _i,d2t as vi,d7 as yi,d7t as bi,dfn as xi,dgn as Si,eEt as Ci,eLn as wi,e_n as Ti,een as Ei,fUt as Di,fX as Oi,gZ as ki,gdn as Ai,ggn as ji,hgn as Mi,hpn as Ni,i7t as Pi,iEt as Fi,iX as Ii,ibn as Li,ifn as Ri,ixn as zi,j2 as Bi,j9t as Vi,jAt as Hi,jHt as Ui,jPt as Wi,jQ as Gi,jY as Ki,jxn as qi,jyn as Ji,kFn as Yi,kxn as Xi,l0 as Zi,l6 as Qi,lSn as $i,len as ea,lpn as ta,mUt as na,mX as ra,mxn as ia,nFt as aa,nLn as oa,nPn as sa,nTn as ca,nX as la,nZ as ua,nxn as da,o0 as fa,oVn as pa,oX as ma,oY as ha,ogn as ga,p7 as _a,pUt as va,pxn as ya,qIn as ba,qS as xa,qY as Sa,qu as Ca,qzn as wa,rFt as Ta,rPn as Ea,rxn as Da,sMt as Oa,sVn as ka,sX as Aa,sbn as ja,sgn as Ma,sxn as Na,tEt as Pa,tLn as Fa,tTn as Ia,tX as La,tZ as Ra,ten as za,txn as Ba,u0 as Va,u2t as Ha,u6 as Ua,uUt as Wa,uen as Ga,ufn as Ka,ugn as qa,vPt as Ja,vWt as Ya,vpn as Xa,w$ as Za,w9t as Qa,wPn as $a,wX as eo,wY as to,x$ as no,x9t as ro,xPn as io,xU as ao,xUt as oo,xY as so,xat as co,xpn as lo,yNn as uo,yPt as fo,yUt as po,yZ as mo,ytt as ho,z5 as go,zv as _o,zzn as vo}from"./conversation-small-cy5f8pl0g26s86so.js";import{Fu as yo,Hx as bo,Iu as xo,Kb as So,Ky as Co,Lu as wo,Mu as To,Nu as Eo,Pu as Do,Ru as Oo,Tp as ko,Ux as Ao,VS as jo,Xx as Mo,Zx as No,_v as Po,bS as Fo,cS as Io,gS as Lo,gv as Ro,lS as zo,mS as Bo,oC as Vo,qb as Ho,qy as Uo,sC as Wo,wp as Go,yS as Ko,zS as qo,zu as Jo}from"./30901919-7dzdc1ou0jtwkwpt.js";import{$t as Yo,an as Xo}from"./82782bc9-mb60yg1xlggwvqri.js";import{Au as Zo,CS as Qo,Ca as $o,Fv as es,G_ as ts,Ga as ns,Gs as rs,Hh as is,I_ as as,Iv as os,J_ as ss,Jc as cs,Js as ls,K_ as us,Ka as ds,Kf as fs,Kh as ps,Ks as ms,L_ as hs,Lb as gs,Lf as _s,M_ as vs,Mc as ys,Ms as bs,N_ as xs,Nc as Ss,Pc as Cs,Qs as ws,Rf as Ts,SS as Es,Sb as Ds,X_ as Os,Xc as ks,Xs as As,Y_ as js,Ys as Ms,Z_ as Ns,Zc as Ps,Zs as Fs,_S as Is,_r as Ls,ai as Rs,b_ as zs,ba as Bs,br as Vs,cb as Hs,cw as Us,dS as Ws,dw as Gs,ec as Ks,ev as qs,g_ as Js,gg as Ys,gr as Xs,hS as Zs,h_ as Qs,hc as $s,hg as ec,hr as tc,ii as nc,jc as rc,js as ic,ju as ac,ku as oc,lS as sc,lb as cc,lr as lc,lv as uc,lw as dc,mc as fc,ml as pc,mr as mc,nc as hc,nv as gc,oS as _c,o_ as vc,ol as yc,pS as bc,pl as xc,pr as Sc,q_ as Cc,qc as wc,qf as Tc,qh as Ec,qs as Dc,qy as Oc,rc as kc,s_ as Ac,sb as jc,sl as Mc,sv as Nc,sw as Pc,sy as Fc,tc as Ic,tv as Lc,uS as Rc,ur as zc,v_ as Bc,vr as Vc,wa as Hc,wu as Uc,xS as Wc,xr as Gc,xv as Kc,xy as qc,ya as Jc,yr as Yc,z_ as Xc}from"./8b34dbc2-k1zgxrtsww83602u.js";import{a as Zc,i as Qc,n as $c,r as el,t as tl}from"./79f982eb-lp51e0mnzs9odk4q.js";import{a as nl,c as rl,i as il,o as al,r as ol,s as sl}from"./85557f11-mqqr1coukt2floak.js";import{n as cl,r as ll,t as ul}from"./a0c3e3cc-kctmzez7j33c49ca.js";import{n as dl,t as fl}from"./4f3b7bd2-nagz220ft881iobv.js";import{n as pl,t as ml}from"./f5cccfb7-omfq28qsvhujhxcn.js";import{n as hl,t as gl}from"./1878c176-dqvselyevexndhmn.js";import{n as _l,t as vl}from"./3cc06638-bj28irw1caa5kavh.js";import{o as yl,r as bl}from"./e00155ab-o9g7j7snyipilnz5.js";import{n as xl,r as Sl}from"./0fd8fe12-ro1elyk99bqoljv6.js";import{i as Cl,n as wl,r as Tl,t as El}from"./774409ae-fu5pzm1gts6apo9l.js";function Dl(e){return Zs(vs(e).doc).length<3}function Ol(e,t){let n=e.thumbnail_url??e.content_url,r=e.entity_type===`self`?t:e.entity_name;return{id:Jn(e.id),title:r,matchText:[r],insertText:r,icon:(0,jl.jsx)(ya,{alt:``,assetPointer:e.asset_pointer,className:`icon-sm rounded-full object-cover`,composerThumbnailUrl:e.thumbnail_url,fallbackUrl:n,placeholder:(0,jl.jsx)(Vo,{"aria-hidden":`true`,className:`icon-sm`}),thumbnailAssetPointer:e.thumbnail_asset_pointer,useComposerThumbnailCache:!0}),onSelect:()=>{},showFor:[`at_command`],meta:{mention:{representation:`inline-pill`,kind:`reference-image`,referenceImageTag:{id:e.id,...e.asset_pointer==null?n==null?{}:{thumbnailUrl:n}:{assetPointer:e.asset_pointer},...e.thumbnail_asset_pointer==null?{}:{thumbnailAssetPointer:e.thumbnail_asset_pointer}}}}}}function kl(e){"use forget";let t=(0,Al.c)(10),{enabled:n}=e,r=ln(),i;t[0]===r?i=t[1]:(i=r.formatMessage(pl.composerSelfMention),t[0]=r,t[1]=i);let a=i,o,s,c;t[2]===n?(o=t[3],s=t[4],c=t[5]):(o=n&&Sr(),s=on,c=Xi({enabled:o}),t[2]=n,t[3]=o,t[4]=s,t[5]=c);let l=s(c).data?.pages,u;return t[6]!==l||t[7]!==a||t[8]!==o?(u=o?l?.flatMap(e=>e.items.map(e=>Ol(e,a)))??[]:void 0,t[6]=l,t[7]=a,t[8]=o,t[9]=u):u=t[9],u}var Al,jl,Ml=e((()=>{Al=cn(),Wo(),Xc(),wa(),Is(),qi(),J(),ml(),ia(),sn(),rn(),jl=K()}));function Nl(){return B(`2666007232`)}function Pl(e,t){"use forget";return t&&Nl()?e:void 0}function Fl({composerController:e,intl:t,isFileUploadEnabled:n}){let r=xc(e),i=r.actions$(),a=r.status$();return{id:`audio-attachment-recording`,title:t.formatMessage(Sa.label),secondary:t.formatMessage(Sa.description),matchText:[`audio`,`record`,`recording`,`voice`],icon:(0,Il.jsx)(me.Voice,{className:`icon`,"aria-hidden":`true`}),onSelect:()=>{i?.start(`keyboard`)},showFor:[`at_command`],disabled:!n||!r.canRecord$()||i==null||a!==`idle`,shouldRestoreComposerFocusAfterSelect:!1}}var Il,Ll=e((()=>{ve(),Fe(),Yn(),pc(),Il=K()}));function Rl({isBlocked:e,isUnifiedComposerMenuEnabled:t,disabledReason:n}){return e?t?{trailing:n,trailingColor:`tertiary`}:{disabled:!0,secondary:n}:{}}var zl,Bl,Vl=e((()=>{Mt(),hi(),be(),H(),gt(),st(),zl=Be(e=>qa(e?.disabledToolIds,e?.conversationOrigin)),Bl=It(({conversation:e,disabledReason:t,isUnifiedComposerMenuEnabled:n})=>Ge(()=>{let{data:r,isLoading:i}=k(),a=ga(r?.settings?.[S.LockdownModeEnabled]),o=!(!a&&!Ma(i)||!lt(e)&&zl(e));return e=>{let r=o&&Si(e),i=r&&a;return{disabledReason:t,isBlocked:r,shouldShowBlockedModal:i&&n,treatment:Rl({isBlocked:i,isUnifiedComposerMenuEnabled:n,disabledReason:t})}}}))}));function Hl(e){At(gl,{entryPointElementId:Gl,conversationId:e})}function Ul(e){"use forget";let t=(0,Wl.c)(2),n=M(e.serverId$),r;return t[0]===n?r=t[1]:(r=()=>Hl(n),t[0]=n,t[1]=r),r}var Wl,Gl,Kl=e((()=>{Wl=cn(),ye(),st(),hl(),Gl=`unified-composer-feedback-shortcut`}));function ql(e){return e.startsWith(`/c/`)||e.includes(`/c/`)}function Jl(e,t){return t?e.filter(e=>`slot`in e?e.slot===`upload`:e.command===`copy-response`||e.command===`new-chat`):e}function Yl(e,t,n,r=!1){return e.flatMap(e=>`slot`in e?t[e.slot]??[]:!n&&iu.has(e.command)||r&&au.has(e.command)?[]:[Zc(e)])}function Xl(e,t){return e.filter(e=>e.meta?.systemHintType===g.Plan).map(e=>({...e,secondary:t}))}function Zl(e){"use forget";let t=(0,nu.c)(35),{composerController:n,conversation:r,disableAdvancedVoiceMode:i,disableReason:a,disableVoiceButton:o,enabled:s,inputState:c}=e,l=ln(),u=tn(),{openSettings:d}=vi(),f;t[0]===d?f=t[1]:(f=e=>d(e),t[0]=d,t[1]=f);let p=Ft(f),m;t[2]===r?m=t[3]:(m=()=>Gr(r),t[2]=r,t[3]=m);let h=M(m),g=Rs(r),_=Y(r),v=ds(n),y=Ul(r),b=Kr(r),ee=Ys(r),x=ao(r),S;t[4]===r.id?S=t[5]:(S={clientThreadId:r.id,location:`Unified composer slash menu`},t[4]=r.id,t[5]=S);let{canShare:C,onShare:te}=Ac(S),ne=Pe(),w=!i&&ne,re=Ts(),ie=zc(),T;t[6]!==r||t[7]!==a||t[8]!==o||t[9]!==c?(T={conversation:r,inputState:c,disableReason:a,disableVoiceButton:o},t[6]=r,t[7]=a,t[8]=o,t[9]=c,t[10]=T):T=t[10];let E=Ir(T),ae=qn(),D=Hr(),oe=oc($l),O=E&&ae,se=O&&D&&!oe,ce;t[11]!==w||t[12]!==se||t[13]!==n||t[14]!==o||t[15]!==re||t[16]!==ie?(ce=()=>{se&&_l({allowIntegratedUX:w,composerController:n,disableVoiceButton:o,nuxMode:re,startSeparateVoiceMode:ie})},t[11]=w,t[12]=se,t[13]=n,t[14]=o,t[15]=re,t[16]=ie,t[17]=ce):ce=t[17];let le=ce,k;bb0:{if(!s){let e;t[18]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[18]=e):e=t[18],k=e;break bb0}let e;if(t[19]!==g||t[20]!==C||t[21]!==_||t[22]!==v||t[23]!==y||t[24]!==l||t[25]!==u||t[26]!==p||t[27]!==ee||t[28]!==x||t[29]!==te||t[30]!==O||t[31]!==h||t[32]!==b||t[33]!==le){let n=tu({intl:l,navigate:u,actions:{branchChat:g,copyResponse:_,dictate:v,feedback:y,openSettings:p,pinChat:b,readAloud:ee,retryResponse:x,shareChat:te,voiceMode:le},shouldShowVoiceModeAction:O});e=Jl(C?n:n.filter(Ql),h),t[19]=g,t[20]=C,t[21]=_,t[22]=v,t[23]=y,t[24]=l,t[25]=u,t[26]=p,t[27]=ee,t[28]=x,t[29]=te,t[30]=O,t[31]=h,t[32]=b,t[33]=le,t[34]=e}else e=t[34];k=e}return k}function Ql(e){return`slot`in e||e.command!==`share-chat`}function $l(e){return e.isVoiceModeActive}function eu(e,t,n){let r=t.trim();return r.length===0?e:lo(e,r,e=>e.searchParameters??{targets:[e.secondary?`${e.title} ${e.secondary}`:e.title,...e.matchText]},{locale:n})}function tu({intl:e,navigate:t,actions:n,shouldShowVoiceModeAction:r}){let i=[{slot:`upload`},{command:`branch-chat`,aliases:[`branch`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.branch_chat.label`,defaultMessage:`Branch chat`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.branch_chat.description`,defaultMessage:`Start a new chat from this point`}),icon:(0,ru.jsx)(Ro,{className:`icon`}),onSelect:n.branchChat},{command:`copy-response`,aliases:[`copy`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.copy_response.label`,defaultMessage:`Copy response`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.copy_response.description`,defaultMessage:`Copy last response to clipboard`}),icon:(0,ru.jsx)(Co,{className:`icon`}),onSelect:n.copyResponse},{command:`dictate`,aliases:[`speech`,`voice typing`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.dictate.label`,defaultMessage:`Dictate`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.dictate.description`,defaultMessage:`Convert speech to text`}),icon:(0,ru.jsx)(yo,{className:`icon`}),onSelect:n.dictate},{command:`feedback`,title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.feedback.label`,defaultMessage:`Feedback`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.feedback.description`,defaultMessage:`Share feedback about ChatGPT`}),icon:(0,ru.jsx)(Io,{className:`icon`}),onSelect:n.feedback},{slot:`model`},{slot:`move-to-project`},{command:`new-chat`,aliases:[`new`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.new_chat.label`,defaultMessage:`New chat`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.new_chat.description`,defaultMessage:`Start a new conversation`}),icon:(0,ru.jsx)(me.Plus,{className:`icon`}),onSelect:()=>{ji(t)}},{command:`personalization`,aliases:[`custom instructions`,`memory`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.personalization.label`,defaultMessage:`Personalization`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.personalization.description`,defaultMessage:`Set your style and custom instructions`}),icon:(0,ru.jsx)(xo,{className:`icon`}),onSelect:()=>n.openSettings(at.Personalization)},{command:`pin-chat`,aliases:[`pin`,`unpin`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.pin_chat.label`,defaultMessage:`Pin chat`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.pin_chat.description`,defaultMessage:`Keep this chat in the sidebar`}),icon:(0,ru.jsx)(No,{className:`icon`}),onSelect:n.pinChat},{slot:`plan`},{command:`read-aloud`,aliases:[`read`,`aloud`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.read_aloud.label`,defaultMessage:`Read aloud`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.read_aloud.description`,defaultMessage:`Listen to the last response`}),icon:(0,ru.jsx)(Ao,{className:`icon`}),onSelect:n.readAloud},{slot:`intelligence`},{command:`retry-response`,aliases:[`retry`,`regenerate`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.retry_response.label`,defaultMessage:`Retry response`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.retry_response.description`,defaultMessage:`Generate a new answer for your last message`}),icon:(0,ru.jsx)(Go,{className:`icon`}),onSelect:n.retryResponse},{command:`settings`,title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.settings.label`,defaultMessage:`Settings`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.settings.description`,defaultMessage:`Open app settings`}),icon:(0,ru.jsx)(Ho,{className:`icon`}),onSelect:()=>n.openSettings(at.General)},{command:`share-chat`,aliases:[`share`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.share_chat.label`,defaultMessage:`Share chat`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.share_chat.description`,defaultMessage:`Create a link to share this chat on the web`}),icon:(0,ru.jsx)(Fo,{className:`icon`}),onSelect:n.shareChat},{command:`temporary-chat`,aliases:[`temporary`,`temp`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.temporary_chat.label`,defaultMessage:`Temporary chat`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.temporary_chat.description.v2`,defaultMessage:`Start a temporary chat`}),icon:(0,ru.jsx)(me.ChatTemp,{className:`icon`}),onSelect:()=>{ji(t,{params:new URLSearchParams({[z]:`true`})})}}];return r&&i.push({command:`voice-mode`,aliases:[`voice`],title:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.voice_mode.label`,defaultMessage:`Voice mode`}),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.voice_mode.description`,defaultMessage:`Start a live voice conversation`}),icon:(0,ru.jsx)(Eo,{className:`icon`}),onSelect:n.voiceMode}),i}var nu,ru,iu,au,ou=e((()=>{nu=cn(),Ae(),Pr(),Mi(),ko(),Po(),ve(),zo(),Uo(),wo(),Do(),Mo(),So(),Ko(),bo(),To(),Oe(),nc(),vc(),Qc(),st(),Kl(),li(),Ha(),m(),zn(),xa(),pe(),xn(),V(),Ln(),Vn(),lc(),vl(),Uc(),ec(),_o(),ns(),rn(),nn(),_s(),ru=K(),iu=new Set([`branch-chat`,`copy-response`,`new-chat`,`pin-chat`,`read-aloud`,`retry-response`,`share-chat`]),au=new Set([`branch-chat`,`pin-chat`,`share-chat`])}));function su(e,t){return{id:e,title:t,matchText:[],onSelect:()=>{},showFor:[`slash_command`],disabled:!0}}function cu(e){"use forget";let t=(0,uu.c)(53),{conversation:n,enabled:r,isFirstPartyProject:i,isHomeNewChatComposer:a,searchQuery:o,setSelectedGizmoTag:s}=e,c=ln(),l=tn(),u=Tt(n.id,kt.getGizmoId),d;t[0]===n?d=t[1]:(d=()=>pa(n)??!1,t[0]=n,t[1]=d);let f=M(d),p=M(w),m=M(it),h;t[2]===n?h=t[3]:(h=()=>lt(n),t[2]=n,t[3]=h);let g=M(h),_=M(n.serverId$),{projects:v,isLoading:y,fetchNextPage:b,hasNextPage:ee,isFetchingNextPage:x}=Ve(),S=Fr(),C;t[4]!==u||t[5]!==r||t[6]!==m||t[7]!==i||t[8]!==a||t[9]!==f||t[10]!==p||t[11]!==_?(C=r&&!p&&fe()&&(a||_!=null&&!i&&!_t.shouldDisableProjectMove()&&Ni({gizmoId:u,isPinned:f,allowPinnedConversationProjectMove:Ee({isPinned:f,isDesktopLayout:m})})),t[4]=u,t[5]=r,t[6]=m,t[7]=i,t[8]=a,t[9]=f,t[10]=p,t[11]=_,t[12]=C):C=t[12];let te=C,ne;if(t[13]!==n||t[14]!==u||t[15]!==b||t[16]!==ee||t[17]!==c||t[18]!==x||t[19]!==g||t[20]!==l||t[21]!==v||t[22]!==_||t[23]!==s||t[24]!==S){let e=v.filter(lu),r;t[26]!==n||t[27]!==u||t[28]!==c||t[29]!==g||t[30]!==l||t[31]!==_||t[32]!==s||t[33]!==S?(r=e=>{let t=e.gizmo.gizmo,r=g&&!ht(e.gizmo),i=r?gi(e.gizmo):null,a=t.display.emoji!=null&&t.display.emoji in In?t.display.emoji:null;return{id:`move-to-project:${t.id}`,title:t.display.name,matchText:[t.display.name],icon:(0,du.jsx)(sr,{color:t.display.theme??null,emoji:a,strict:!0}),disabled:r,tooltip:i==null?void 0:{primary:c.formatMessage(i)},onSelect:()=>{if(!w()){if(_==null){ws({conversation:n,gizmo:e.gizmo,entrySurface:`slash_command`}),s(e.gizmo);return}S({newGizmoId:t.id,conversation:new Br(_),previousGizmoId:u??null,optimistic:!1}),l(Ot(_,{project:t}))}},showFor:[`slash_command`]}},t[26]=n,t[27]=u,t[28]=c,t[29]=g,t[30]=l,t[31]=_,t[32]=s,t[33]=S,t[34]=r):r=t[34],ne=e.map(r),ee&&ne.push(x?su(`move-to-project-loading-more`,c.formatMessage({id:`chatgpt.composer.unified_menu.move_to_project.loading_more`,defaultMessage:`Loading more projects`})):{id:`move-to-project-load-more`,title:c.formatMessage({id:`chatgpt.composer.unified_menu.move_to_project.load_more`,defaultMessage:`Load more projects`}),matchText:[],onSelect:()=>{b()},showFor:[`slash_command`]}),t[13]=n,t[14]=u,t[15]=b,t[16]=ee,t[17]=c,t[18]=x,t[19]=g,t[20]=l,t[21]=v,t[22]=_,t[23]=s,t[24]=S,t[25]=ne}else ne=t[25];let re=ne,ie,T;t[35]!==c.locale||t[36]!==o||t[37]!==re?(T=eu(re,o,c.locale),t[35]=c.locale,t[36]=o,t[37]=re,t[38]=T):T=t[38];let E=T;if(y){let e;t[39]===c?e=t[40]:(e=su(`move-to-project-loading`,c.formatMessage({id:`chatgpt.composer.unified_menu.move_to_project.loading`,defaultMessage:`Loading projects`})),t[39]=c,t[40]=e);let n;t[41]===e?n=t[42]:(n=[e],t[41]=e,t[42]=n),ie=n}else if(E.length===0){let e;t[43]===c?e=t[44]:(e=su(`move-to-project-empty`,c.formatMessage({id:`chatgpt.composer.unified_menu.move_to_project.empty`,defaultMessage:`No projects found`})),t[43]=c,t[44]=e);let n;t[45]===e?n=t[46]:(n=[e],t[45]=e,t[46]=n),ie=n}else ie=E;let ae=ie,D;t[47]!==ae||t[48]!==te?(D=te?ae:[],t[47]=ae,t[48]=te,t[49]=D):D=t[49];let oe;return t[50]!==te||t[51]!==D?(oe={items:D,shouldShow:te},t[50]=te,t[51]=D,t[52]=oe):oe=t[52],oe}function lu(e){let{gizmo:t}=e;return!U(t)}var uu,du,fu=e((()=>{uu=cn(),ka(),a(),Bn(),P(),ur(),Vr(),xt(),Xa(),T(),rt(),H(),ta(),h(),st(),bt(),Ue(),jt(),St(),rn(),nn(),Ks(),ou(),du=K()}));function pu(e){return e.replace(/[\s_-]+/g,``).toLowerCase()}function mu(e,t){let n=pu(e);return n===t?0:n.startsWith(t)?1:n.includes(t)?2:3}function hu(e,t,n){let r=pu(t);return r.length===0?[...e]:[...e].sort((e,t)=>mu(n(e),r)-mu(n(t),r))}var gu=e((()=>{}));function _u(e){let t=e?.filter(e=>e.showFor.includes(`at_command`))??[];return{gptItems:t.filter(e=>e.meta?.unifiedComposerMenuCategory===`gpts`),appItems:t.filter(e=>e.meta?.unifiedComposerMenuCategory!==`gpts`)}}function vu(e,t){let n=e.meta?.isLocalSystemHintAction===!0&&Yt(e.id)?e.id:e.meta?.systemHintType;if(n!=null)return e.meta?.isConnected===!0&&da(n)===Wu?2:Ba(n,t)}function yu({isIntegratedVoiceModeActive:e,triggerSymbol:t}){return e&&(t===`+`||t===`@`||t===`/`)}function bu({fileUploads:e,imageUploads:t}){return{showFileLibrary:e===`allowed`,showUpload:e===`allowed`||t===`allowed`}}function xu(e,{financesEligible:t}){let n=new Set(e.flatMap(e=>{let t=e.meta?.systemHintType;return t==null?[]:[da(t)]}));return e.filter(e=>{let r=e.meta?.systemHintType;return r===Hi&&e.meta?.isConnected===!1&&!t?!1:r===g.Picture?!n.has(g.PictureV2):r!==g.Research||!n.has(pt)})}function Su(e){return e.map(e=>e.meta?.isConnected===!1&&A(e.meta.systemHintType)?e.icon==null?e:{...e,icon:(0,Ru.jsx)(ti,{className:`icon size-5! rounded-sm!`,variant:`inline`,children:e.icon})}:e.meta?.isApp===!0||e.meta?.systemHintType!=null?Ou(e,`system-hint`):e)}function Cu(e){return e.map(e=>e.icon==null?Ou(e,`document-reference`):e)}function wu(e){return Du(e,`folder-reference`)}function Tu(e){return e.map(e=>({...e,noMatchEmpty:!1}))}function Eu(e){return e.map(e=>e.meta?.isSkill===!0?Ou(e,`skill`):e.meta?.systemHintType==null?e:Ou(e,`system-hint`))}function Du(e,t){return e.map(e=>Ou(e,t))}function Ou(e,t){return{...e,icon:(0,Ru.jsx)(Xr,{id:t===`system-hint`?e.meta?.systemHintType??e.id:e.id,kind:t,variant:`inline`})}}function ku(e,t){return e.map(e=>({...e,meta:{...e.meta??{},unifiedComposerMenuCategory:t}}))}function Au(e){let t=[],n=[];for(let r of e)A(r.meta?.systemHintType)&&r.meta?.isConnected===!1?n.push(r):t.push(r);return[...t,...n]}function ju(e,t){if(t===`files`||t===`folders`)return t;if(t==null)return e.id.startsWith(`file-library:`)?`files`:br(e.id)==null?void 0:`folders`}function Mu(e,t){if(ju(e,t)===`folders`||Fa(e.id.slice(13)))return e.title;let n=e.title.split(`/`);return n[n.length-1]??e.title}function Nu(e,t){if(e.meta?.globalSearchRank!=null)return!0;let n=ju(e,t);return n===`files`?Fa(e.id.slice(13)):n===`folders`&&oa(br(e.id))}function Pu(e,t,n=``,r=!1){let i=e[0]?.meta?.unifiedComposerMenuCategory;if(r){let n=new Set(t.filter(e=>ju(e,i)!=null).map(e=>e.id)),r=e.filter(e=>n.has(e.id)),a=0;return t.map(e=>n.has(e.id)?r[a++]??e:e)}let a=new Set(t.filter(e=>Nu(e,i)).map(e=>e.id)),o=t;if(a.size>=2){let r=e.filter(e=>a.has(e.id)),s=hu(r.filter(e=>e.meta?.globalSearchRank!=null).sort((e,t)=>(e.meta?.globalSearchRank??0)-(t.meta?.globalSearchRank??0)),n,e=>Mu(e,i)),c=0,l=r.map(e=>e.meta?.globalSearchRank==null?e:s[c++]??e),u=0;o=t.map(e=>a.has(e.id)?l[u++]??e:e)}if(n.trim().length===0)return o;let s=o.filter(e=>ju(e,i)!=null);if(s.length<2)return o;let c=hu(s,n,e=>Mu(e,i)),l=0;return o.map(e=>ju(e,i)==null?e:c[l++]??e)}function Fu(e,t){switch(t){case`plugins`:return e.formatMessage({id:`chatgpt.composer.unified_menu.category.plugins.label`,defaultMessage:`Plugins`});case`gpts`:return e.formatMessage({id:`chatgpt.composer.unified_menu.category.gpts.label`,defaultMessage:`GPTs`});case`files`:return e.formatMessage({id:`chatgpt.composer.unified_menu.category.files.label`,defaultMessage:`Files`});case`folders`:return e.formatMessage({id:`chatgpt.composer.unified_menu.category.folders.label`,defaultMessage:`Folders`});case`skills`:return e.formatMessage({id:`chatgpt.composer.unified_menu.category.skills.label`,defaultMessage:`Skills`})}}function Iu(e,t,n=!1){let r=e[0]?.meta?.unifiedComposerMenuCategory;return n&&r===`files`?e.length:t?Bu:r===`plugins`?Uu:r===`files`||r===`folders`?Hu:Vu}function Lu(e,{additionalRanks:t,fallbackRandomSeed:n,recentlyUsedPluginIds:r=[]}={}){let i=new Map,a=[],o=0,s=[],c=[];for(let n of e){let e=n.meta?.systemHintType,r=vu(n,t);n.meta?.isLocalSystemHintAction===!0&&(o+=1),r==null?n.meta?.isLocalSystemHintAction===!0?a.push(n):E(e)&&(A(e)&&n.meta?.isConnected===!1?e!==Hi&&c.push(n):s.push(n)):i.has(r)||i.set(r,n)}let l=Ba(g.Maps,t)??-1,u=Ba(g.Shopping,t)??-1,{installedItems:d,suggestedItems:f}=Na({installedItems:s,suggestedItems:c,maxItems:Math.max(0,Math.min(zu-o-Number(i.has(2))-Number(i.has(l))-Number(i.has(u)),Bu-i.size-a.length)),fallbackRandomSeed:n,recentlyUsedPluginIds:r,getPluginId:e=>{let t=e.meta?.systemHintType;return t==null?e.id:da(t)},getPluginSortKey:e=>e.id,isHeadPlugin:e=>e.meta?.isHeadPlugin===!0});return[...[...i.entries()].sort(([e],[t])=>e-t).map(([,e])=>e),...a,...d,...f]}var Ru,zu,Bu,Vu,Hu,Uu,Wu,Gu=e((()=>{de(),hr(),co(),zr(),pe(),Qr(),gu(),si(),Da(),yr(),Ru=K(),zu=4,Bu=7,Vu=2,Hu=3,Uu=3,Wu=`Plugin_b0672f102c2081919b893649fdcfeeaa`}));function Ku(e){return{...no({command:`upload-files`,aliases:[`file`,`files`,`document`,`documents`],title:e.formatMessage(Ar.addFiles),secondary:e.formatMessage({id:`chatgpt.composer.unified_menu.upload.files_upsell.description`,defaultMessage:`Upload documents and other files`}),onSelect:()=>wn(`add_files`)}),icon:(0,Yu.jsx)(u.FolderColor,{className:`icon`}),trailing:e.formatMessage(Ne.logInButtonText),trailingColor:`tertiary`}}function qu({intl:e,loggedOutUpsellSystemHints:t}){let n=new Map;for(let e of t)n.has(e.systemHint)||n.set(e.systemHint,e);let r=Zu.map(({systemHint:t,label:r})=>({systemHint:t,title:e.formatMessage(r),hint:n.get(t)})),i=e.formatMessage(Ne.logInButtonText),a=[],o,s;for(let{systemHint:e,title:t,hint:n}of r){let r={id:`logged-out-upsell:${e}`,title:t,secondary:n?.description,icon:e===g.Think?(0,Yu.jsx)(Qu,{}):(0,Yu.jsx)(Xr,{id:e,kind:`system-hint`,variant:`inline`}),matchText:[t,...n?[n.name,...n.aliases]:[]],meta:{systemHintType:e,unifiedComposerMenuCategory:`plugins`},onSelect:()=>wn(e),showFor:[`at_command`],trailing:i,trailingColor:`tertiary`};a.push(r),e===g.PictureV2?o??=r:e===g.Think&&(s??=r)}return{items:a,createImage:o,think:s}}function Ju({fileUploadUpsell:e,intl:t,isSearching:n,loggedOutUpsellSystemHints:r,pluginSuggestionItems:i,restrictToUploads:a,systemHints:o,uploadGroup:s}){if(a)return s.length>0?[s]:[];let c=t.formatMessage(Xu.webSearch),l=qu({intl:t,loggedOutUpsellSystemHints:r}),u=ku(Su(o),`plugins`),d=[],f;for(let e of u){if(e.meta?.systemHintType!==g.Search)continue;let t={...e,title:c,matchText:[c,...e.matchText],...e.searchParameters&&{searchParameters:{...e.searchParameters,targets:[c,...e.searchParameters.targets]}}};f??=t,d.push(t)}if(!n)return[[...s,f,l.createImage,e,l.think].filter(e=>e!=null)];let p=[...Lu([...d,...u.filter(e=>_e(e.meta?.systemHintType)||e.meta?.isLocalSystemHintAction===!0)]),...l.items,...ku(i,`plugins`)];return[e?[...s,e]:s,p].filter(e=>e.length>0)}var Yu,Xu,Zu,Qu,$u=e((()=>{i(),ke(),pe(),Vt(),rn(),kn(),eo(),Gu(),yr(),Za(),Yu=K(),Xu=Qt({webSearch:{id:`chatgpt.composer.unified_menu.plugin.web_search.label`,defaultMessage:`Web search`}}),Zu=[{systemHint:g.PictureV2,label:Ar.createImage},{systemHint:g.Research,label:Ar.deepResearch},{systemHint:g.Think,label:Ar.thinkLonger}],Qu=()=>{"use forget";return f()===`dark`?(0,Yu.jsx)(u.SkillLightbulbDark,{className:`icon`}):(0,Yu.jsx)(u.SkillLightbulbLight,{className:`icon`})}})),ed,td,nd,rd=e((()=>{ed=cn(),ts(),Os(),td=n(an()),nd=e=>{"use forget";let t=(0,ed.c)(9),{editorView:n,isMultiwordLibraryMentionParsingEnabled:r,onHintMatch:i,setReferencePosition:a}=e,o,s;t[0]===n?(o=t[1],s=t[2]):(o=()=>()=>{ss(n)},s=[n],t[0]=n,t[1]=o,t[2]=s),(0,td.useEffect)(o,s);let c,l;return t[3]!==n||t[4]!==r||t[5]!==i||t[6]!==a?(c=()=>{let e=()=>{n.dispatch(Ns(n.state.tr,{setReferencePosition:a,onHintMatch:i,supportsMultiwordLibraryMentions:r,refreshFromSelection:!0}))};return e(),n.dom.addEventListener(us,e),()=>{n.dom.removeEventListener(us,e)}},l=[n,r,i,a],t[3]=n,t[4]=r,t[5]=i,t[6]=a,t[7]=c,t[8]=l):(c=t[7],l=t[8]),(0,td.useEffect)(c,l),null}}));function id({account:e,command:t,intl:n,location:i,navigateToPluginDetails:a,onConnected:o,onPendingChange:c,getPendingConnection:l,productExperience:u,pluginId:d,queryClient:f,runIfAllowed:p,systemHintType:m}){let h=t=>{let r={...e?{accountId:e.id}:{},platform:`chat`,locale:n.locale,hasWorkspace:!!e?.getWorkspaceId()},a=l(),p={pluginId:d};a.current=p,c(d);let h=()=>{a.current===p&&(a.current=null,c(null),t?.())},g=!1,_=async e=>{if(g)return;g=!0,h();let t={queryKey:s(`plugins`)};await f.cancelQueries(t),f.setQueriesData(t,t=>{if(!t?.some(e=>e.systemHint===m))return t;let n=e!==m&&t.some(t=>t.systemHint===e);return t.flatMap(t=>t.systemHint===m?n?[]:[{...t,systemHint:e,isConnected:!0,canConnect:!1}]:[t])}),o(e)};ac({productExperience:u,...e?{installAccountId:e.id}:{},intl:n,onConnectionConfirmed:e=>void _(ne(e??d)),onConnectionResult:e=>{if(!g)if(e===`connected`){let[e]=bl([d],f.getQueryData(Fc(r).queryKey)??[]);_(e??m)}else g=!0,h()},pathname:i.pathname,pluginId:d,queryClient:f,requestContext:r,search:i.search,searchParams:new URLSearchParams(i.search),surface:jn.CHATGPT_PLUGIN_MARKETPLACE_SURFACE_COMPOSER_HINTS}).then(h,h)},g=(n,o)=>{if(l().current!=null)return;let s=!1;p(()=>{if(s=!0,e!=null&&t.isConnected!==!0&&!Et()&&!es(new URLSearchParams(i.search)).shouldUseConnectRoute&&r()&&u===je.CHATGPT_PRODUCT_EXPERIENCE_WORK){h(o);return}o?.();let c=Kc({pluginId:d,location:i,continueConnectOnOpen:n,originatingInstallSurface:n?jn.CHATGPT_PLUGIN_MARKETPLACE_SURFACE_COMPOSER_HINTS:void 0});a(c.to,c.state)}),s||o?.()};return{item:Zc({...t,onSelect:()=>g(!1)}),onSelect:e=>g(!1,e),onConnect:e=>g(!0,e)}}var ad=e((()=>{x(),Zo(),yl(),qc(),os(),$i(),C(),pe(),Le(),D(),Qc()}));function od(e){return e.meta?.isSkill===!0}function sd(e){return e.meta?.isSkillGroupToggle===!0}function cd(e){return e.meta?.isProject===!0}function ld(e){return e.meta?.isProjectGroupToggle===!0}function ud({count:e,intl:t,isExpanded:n,useFlyout:r}){return{id:hd,title:t.formatMessage({defaultMessage:`Skills`,id:`composer.skills.dropdownLabel`}),matchText:[`skills`],icon:(0,md.jsx)(me.Skills,{className:`icon`}),trailing:(0,md.jsxs)(`div`,{className:`text-token-text-tertiary flex items-center gap-1`,children:[(0,md.jsx)(`span`,{className:`text-xs`,children:e}),r?(0,md.jsx)(me.ChevronRightSm,{className:`icon-sm`}):n?(0,md.jsx)(me.ChevronDownSm,{className:`icon-sm`}):(0,md.jsx)(me.ChevronRightSm,{className:`icon-sm`})]}),onSelect:()=>{},showFor:[`at_command`,`slash_command`],meta:{isSkillGroupToggle:!0}}}function dd({count:e,intl:t,isExpanded:n,useFlyout:r}){return{id:gd,title:t.formatMessage({defaultMessage:`Projects`,id:`composer.projects.dropdownLabel`}),matchText:[`projects`],icon:(0,md.jsx)(me.Folder,{className:`icon`}),trailing:(0,md.jsxs)(`div`,{className:`text-token-text-tertiary flex items-center gap-1`,children:[(0,md.jsx)(`span`,{className:`text-xs`,children:e}),r?(0,md.jsx)(me.ChevronRightSm,{className:`icon-sm`}):n?(0,md.jsx)(me.ChevronDownSm,{className:`icon-sm`}):(0,md.jsx)(me.ChevronRightSm,{className:`icon-sm`})]}),onSelect:()=>{},showFor:[`slash_command`],meta:{isProjectGroupToggle:!0}}}function fd({groups:e,intl:t,isSkillsExpanded:n,isProjectsExpanded:r=!1,useFlyout:i=!1,skillsGroupAfterIndex:a,projectsGroupAfterIndex:o,inlineSkills:s=!1,inlineProjects:c=!0}){let l=[],u=[],d=[];for(let t of e){let e=t.filter(e=>od(e)?(u.push(e),s):cd(e)?(d.push(e),c):!0);e.length>0&&l.push(e)}let f=l;if(u.length>0&&!s){let e=[ud({count:u.length,intl:t,isExpanded:n,useFlyout:i}),...n||i?u:[]];f=pd({groups:f,group:e,afterIndex:a})}if(d.length>0&&!c){let e=[dd({count:d.length,intl:t,isExpanded:r,useFlyout:i}),...r||i?d:[]];f=pd({groups:f,group:e,afterIndex:o})}return{displayGroups:f,skillItems:u,projectItems:d}}function pd({groups:e,group:t,afterIndex:n}){let r=n==null?e.length:Math.min(n+1,e.length);return[...e.slice(0,r),t,...e.slice(r)]}var md,hd,gd,_d=e((()=>{ve(),md=K(),hd=`skills-group-toggle`,gd=`projects-group-toggle`}));function vd({mention:e,text:t}){return e.kind===`folder-reference`?t:t.replace(/^(@|\$)/,``)}function yd({isSidebarSlash:e,promptReferer:t,suggestion:n}){return!!n.insertText&&(t===`at_command`||t===`agent_tool`||e||n.meta?.isSkill===!0||n.meta?.mention!=null)}var bd=e((()=>{}));function xd({hasSuggestions:e,isFileLibrarySearchPending:t,isSubmenuSearchActive:n,promptReferer:r,promptSearchQuery:i}){return r===`at_command`&&i.length>0&&!n&&!e&&t}var Sd=e((()=>{}));function Cd(){return B(wd)}var wd,Td=e((()=>{Fe(),wd=`867377638`}));function Ed(e,t){return t==null||!e.startsWith(`external-gdrive:`)||e.startsWith(`external-gdrive:account:`)?e:`external-gdrive:account:${t.key}:${e.slice(16)}`}function Dd(e,t){let n=Rr(e);if(n==null)return{};let r=n.provider===`google_drive`?(0,Rf.jsxs)(Rf.Fragment,{children:[(0,Rf.jsx)(`span`,{className:`hidden sm:inline`,children:(0,Rf.jsx)(en,{id:`composer.library.folder_suggestion.source.google_drive.label`,defaultMessage:`Google Drive`})}),(0,Rf.jsx)(`span`,{className:`sm:hidden`,children:(0,Rf.jsx)(en,{id:`composer.library.folder_suggestion.source.google_drive.mobile.label`,defaultMessage:`Drive`})})]}):(0,Rf.jsx)(en,{...n.provider===`sharepoint`?ca.sharepoint:gn(n.provider).label}),i=$n(t,n.provider);return{trailing:(0,Rf.jsx)(`span`,{className:`block max-w-40 truncate text-end sm:max-w-64`,children:i?(0,Rf.jsx)(en,{id:`composer.library.folder_suggestion.source.with_external_account.label`,defaultMessage:`{provider} · {account}`,values:{account:i,provider:r}}):r})}}function Od(e){let t=e?.trim(),n=t?(0,Rf.jsx)(en,{id:`composer.library.folder_suggestion.source.shared.named.label`,defaultMessage:`Shared by {name}`,values:{name:t}}):(0,Rf.jsx)(en,{id:`composer.library.folder_suggestion.source.shared.unknown.label`,defaultMessage:`Shared`});return{secondary:(0,Rf.jsx)(`span`,{className:`hidden sm:inline`,children:n}),trailing:(0,Rf.jsx)(`span`,{className:`max-w-32 truncate sm:hidden`,children:n})}}function kd(e){return e==null?void 0:{key:e.key}}function Ad(e,t,n){if(e==null||e.providersKey!==t.join(`,`)||e.googleDriveConnectionScopeKey!==n)return;let r=zt(d);return r?.id===e.accountId&&r.normalizedAccountUserId===e.accountUserId?e.items:void 0}function jd({canUseInlineTagging:e,isFileLibraryUiEnabled:t,unifiedComposerSelectionStateEnabled:n}){return e&&t&&n}function Md({isLibraryMentionMenuOpen:e,supportsLibraryFolderReferences:t,...n}){return e&&t&&jd(n)}function Nd({supportsLibraryFolderReferences:e,...t}){return e&&jd(t)}function Pd(e){let t=e.file_name,n=t.split(`/`),r=n[n.length-1]??t,i=n.length>1?n[0]:void 0;return i?[t,r,i,...n]:[t,r,...n]}function Fd(e,t=``,n=zf){let r=e.filter(e=>e.state===`ready`);return t.length===0?r.slice(0,n):lo(r,t,e=>({targets:Pd(e)}),{maxResults:n})}function Id(e){return e.startsWith(`/`)&&e!==`/`&&!e.endsWith(`/`)&&!e.includes(`//`)}function Ld(e){let t=e.display_path;if(t==null||!Id(t))return;let n=t.split(`/`);if(n[n.length-1]?.trim().toLowerCase()===e.name.trim().toLowerCase())return t}function Rd(e,t=!1,n=``){let r=new Set,i=[],a=hu([...e.entries()],n,([,e])=>e.title);for(let[e,n]of a){let a=n.payload,o=n.snippet;if(!(n.source_type!==`library`||n.source_key!==`library:folder`||a.kind!==`library_folder`||a.is_root===!0||a.directory_id.length===0||oa(a.directory_id)||ea(a)!=null&&ea(a)!==`native`||n.title.length===0||r.has(a.directory_id)||o==null||!Id(o))&&(r.add(a.directory_id),i.push({directoryId:a.directory_id,displayPath:o,...t?{globalSearchRank:e}:{},name:n.title}),i.length===Gf))break}return i}function zd(e,t=qf,n=``,r=Hf){let i=new Set,a=new Set,o=[],s=[];for(let t of e){if(t.kind===`file`&&t.name.trim().length>0&&t.state===`ready`&&Fa(t.id)&&!i.has(t.id)){i.add(t.id),o.push({fileId:t.id,fileName:t.name,mimeType:t.mime_type,fileSizeBytes:t.file_size_bytes,libraryFileCategory:t.library_file_category,libraryArtifactType:t.library_artifact_type,externalAccount:t.external_account??void 0});continue}if(t.kind!==`directory`||t.is_root===!0||t.name.trim().length===0||!oa(t.id)||a.has(t.id))continue;let e=Ld(t);a.add(t.id),s.push({directoryId:t.id,name:t.name,externalAccount:t.external_account??void 0,...e==null?{}:{displayPath:e}})}return{fileCandidates:hu($d([],o,t),n,e=>e.fileName).slice(0,r),folderCandidates:hu(s,n,e=>e.name).slice(0,Gf)}}function Bd(e,t=``,n=zf){let r=[],i=[],a=new Set,o=new Set;for(let t of e){if(t.is_shared!==!0||t.name.trim().length===0||!Te(t.parent_directory_id))continue;if(t.kind===`file`&&t.state===`ready`&&t.id.trim().length>0&&!Fa(t.id)&&t.file_id==null&&!a.has(t.id)){a.add(t.id),r.push({fileId:t.id,libraryFileId:t.id,fileName:t.name,mimeType:t.mime_type,fileSizeBytes:t.file_size_bytes,libraryFileCategory:t.library_file_category,libraryArtifactType:t.library_artifact_type,...t.shared_by?.name?{sharedByName:t.shared_by.name}:{},sharedLibraryFileReference:{displayPath:t.display_path}});continue}if(t.kind!==`directory`||t.is_root===!0||!Te(t.id)||p(t.id)||o.has(t.id))continue;let e=Ld(t);e!=null&&(o.add(t.id),i.push({directoryId:t.id,displayPath:e,name:t.name,...t.shared_by?.name?{sharedByName:t.shared_by.name}:{}}))}return{fileCandidates:hu($d([],r),t,e=>e.fileName).slice(0,n),folderCandidates:hu(i,t,e=>e.name).slice(0,Gf)}}function Vd(e,t){let n=t=>{let n=t.toLowerCase().split(/[\s_-]+/).filter(Boolean);return n.length===0?[]:e.filter(e=>{let t=e.name.toLowerCase().replace(/[\s_-]+/g,``);return n.every(e=>t.includes(e))})},r=n(t);return r.length>0?r:n(t.slice(0,-1))}function Hd({currentConnectionScopeKey:e,items:t,resultConnectionScopeKey:n}){return e!=null&&e===n?t:[]}function Ud(e,t){return!e.some(e=>e.fileId===t||e.mountedLibraryFileId===t)}function Wd(e){return{fileId:e.file_id,libraryFileId:e.id,fileName:e.file_name,mimeType:e.mime_type,fileSizeBytes:e.file_size_bytes,libraryFileCategory:e.library_file_category,libraryArtifactType:e.library_artifact_type,externalAccount:e.external_account??void 0}}function Gd(e,t){return Fa(e)?t:t.split(`/`).pop()??t}function Kd(e,{providers:t,includeOwnedFolders:n,includeSharedResults:r},i=``){let a=[],o=[],s=[],c=[],l=new Map;for(let[i,u]of e.entries()){let e=u.payload,d=(`provider`in e?ea(e):null)??`native`;if(u.source_type!==`library`)continue;if(d===`native_shared`){if(!r||e.kind!==`library_file`&&e.kind!==`library_folder`)continue;let t=`/`+[...u.snippet?.split(` / `)??[],u.title].join(`/`),n={name:u.title,parent_directory_id:e.parent_directory_id??null,display_path:t,is_shared:e.is_shared,shared_by:e.shared_by};e.kind===`library_folder`?(c.push({...n,kind:`directory`,id:e.directory_id,is_root:e.is_root}),l.set(e.directory_id,i)):e.kind===`library_file`&&e.file_id===e.library_item_id&&(c.push({...n,kind:`file`,id:e.library_item_id,name:e.file_name,state:e.state,mime_type:e.mime_type,file_size_bytes:e.file_size_bytes,library_file_category:e.library_file_category,library_artifact_type:e.library_artifact_type}),l.set(e.library_item_id,i));continue}if(!t.includes(d))continue;if(e.kind===`library_folder`){if(!n||u.source_key!==`library:folder`)continue;if(d!==`native`){let t=d===`google_drive`?Ed(e.directory_id,e.external_account):e.directory_id,n=d===`google_drive`&&e.parent_directory_id!=null?Ed(e.parent_directory_id,e.external_account):e.parent_directory_id;if(d!==`google_drive`&&d!==`box`&&d!==`dropbox`||Rr(t,d)?.provider!==d||n!=null&&(!wi(n)||Rr(n,d)?.provider!==d))continue;let r=zd([{kind:`directory`,id:t,name:u.title,parent_directory_id:n??null,display_path:u.snippet,is_root:e.is_root,external_account:e.external_account}]).folderCandidates;o.push(...r.map(e=>({...e,globalSearchRank:i})));continue}let r=Dr(u,t);if(r==null||r.is_root===!0||r.id.length===0||r.name.trim().length===0)continue;let a=r.display_path!=null&&Id(r.display_path)?r.display_path:void 0;if(a==null)continue;o.push({directoryId:r.id,name:r.name,displayPath:a,globalSearchRank:i});continue}let f=Qa(u,t,{allowSharePoint:t.some(Yr)});f!=null&&(d===`native`&&s.push(f),!(f.state!==`ready`||f.file_name.trim().length===0)&&a.push({...Wd(f),...Fa(f.id)?{fileId:f.id}:{},...Yr(d)&&u.snippet?{sourceLocation:u.snippet}:{},globalSearchRank:i}))}let u=Bd(c,i,Kf);return a.push(...u.fileCandidates.map(e=>({...e,globalSearchRank:l.get(e.fileId)}))),o.push(...u.folderCandidates.map(e=>({...e,globalSearchRank:l.get(e.directoryId)}))),a.sort((e,t)=>(e.globalSearchRank??0)-(t.globalSearchRank??0)),o.sort((e,t)=>(e.globalSearchRank??0)-(t.globalSearchRank??0)),{fileCandidates:hu(Zd(a,[],e=>e.libraryFileId??e.fileId),i,e=>Gd(e.fileId,e.fileName)),folderCandidates:hu(Zd(o,[],e=>e.directoryId),i,e=>e.name).slice(0,Gf),nativeFiles:s}}function qd(e,t,n){let r=e=>e.libraryFileId??e.fileId,i=new Map(t.map(e=>[r(e),e])),a=e.map(e=>{let t=i.get(r(e));return{...e,...t,externalAccount:t?.externalAccount??e.externalAccount}}),o=new Set(a.map(r)),s=new Set(a.map(Qd)),c=t.filter(e=>!o.has(r(e))&&!s.has(Qd(e))),l=$d([...a,...c],[]);return[...a,...l.filter(e=>!o.has(r(e)))].slice(0,n)}function Jd(e,t){t.composerDisplayMode!==`inline`&&e.files$.set(e=>e.map(e=>e.tempId===t.tempId?{...e,composerDisplayMode:`inline`}:e))}function Yd(e,t){return e.fileId===t.fileId||e.mountedLibraryFileId===t.fileId||e.sharedLibraryFileReference!=null&&t.libraryFileId!=null&&e.sharedLibraryFileReference.library_file_id===t.libraryFileId}async function Xd(e,t,n,r=!1,i=`at_mention`,a=!1,o,s,c,l){let u=zt(e.files$).find(e=>Yd(e,t));if(u!=null){if(n===`inline`&&Jd(e,u),await L(()=>!e.files$().some(e=>e.tempId===u.tempId&&e.status===ut.Uploading)),!zt(e.readyFiles$).some(e=>e.tempId===u.tempId))throw Error(`Mounted Library file attachment did not complete`);return}let d=to(zt(e.files$),l),f=t.mimeType??Jt(t.fileName);if(t.sharedLibraryFileReference!=null){if(dn(zt(e.files$))>=10)throw Error(`Shared Library file reference limit exceeded`);if(!is.validateChatAttachmentTotal(e,o,s,c,d))return;is.attachSharedLibraryFileReference(e,{libraryFileId:t.libraryFileId??t.fileId,name:t.fileName,displayPath:t.sharedLibraryFileReference.displayPath,mimeType:t.mimeType,libraryArtifactType:t.libraryArtifactType,size:t.fileSizeBytes,entrypoint:i,composerDisplayMode:n});return}if(Fa(t.fileId)){if(!is.validateChatAttachmentTotal(e,o,s,c,d))return;let l=a&&i===`at_mention`?xl(t.fileId):void 0,u=l?.getCallbacks(t.fileId);try{await is.attachMountedLibraryFile(e,{id:t.fileId,name:t.fileName,mimeType:f,size:t.fileSizeBytes??void 0,libraryProvider:vn(t.fileId),libraryEntrypoint:i,externalAccount:kd(t.externalAccount),composerDisplayMode:n,allowLiveReference:r,deferMaterializationForSuggestions:ra(),materialize:async()=>{let e=await fo({fileId:t.fileId,name:t.fileName,mimeType:t.mimeType});return{id:e.file_id,name:e.file_name,mimeType:e.mime_type??f,size:e.file_size_bytes,previewFile:e.preview_file??void 0}}})&&(u?.onAttachmentSuccess(),l?.complete());return}catch(e){throw u?.onAttachmentError(e),e}}is.validateChatAttachment(e,t.fileSizeBytes??void 0,o,s,c,d)&&is.attachLibraryFile(e,{id:t.fileId,name:t.fileName,mimeType:f,size:t.fileSizeBytes??void 0,libraryFileId:t.libraryFileId,libraryArtifactType:t.libraryArtifactType??void 0,libraryProvider:vn(t.fileId),libraryEntrypoint:i,composerDisplayMode:n})}function Zd(e,t,n){let r=new Set;return[...e,...t].filter(e=>{let t=n(e);return r.has(t)?!1:(r.add(t),!0)})}function Qd(e){return JSON.stringify([Rr(e.fileId)?.provider??`native`,e.externalAccount?.key??null,e.fileName.trim().toLowerCase()])}function $d(e,t,n=qf){let r=new Set([...e,...t.filter(e=>!n.has(e.fileId))].map(e=>e.fileName.trim().toLowerCase())),i=Zd(e,t.filter(e=>!n.has(e.fileId)||!r.has(e.fileName.trim().toLowerCase())),e=>e.fileId),a=new Map;for(let e of i){let t=Qd(e),n=a.get(t);n==null?a.set(t,new Set([e.fileId])):n.add(e.fileId)}return i.filter(e=>{if(Yr(ba(e.fileId)))return!0;let t=Qd(e);return(a.get(t)?.size??0)<2})}function ef(e){"use forget";let t=(0,If.c)(204),{allowMountedLibraryLiveReferences:n,allowSharedLibraryReferences:r,canUseInlineTagging:i,composerController:a,conversation:o,gizmoEditorMode:s,maxLibraryAttachmentCount:c,maxTotalLibraryAttachmentCount:u,supportsLibraryFolderReferences:f,unifiedComposerSelectionStateEnabled:p}=e,m=n!==void 0&&n,h=r!==void 0&&r,g=o.id,_=Ec(),v=_.skipChatAttachmentLimits?void 0:c,y=_.skipChatAttachmentLimits?void 0:u,b=ln(),ee=M(_.files$),x=M(l),S;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(S=$e(),t[0]=S):S=t[0];let C=S,te;t[1]===x?te=t[2]:(te=yi(x),t[1]=x,t[2]=te);let{showRecentFilesDropdown:ne}=te,w=C&&ne,re=M(Ff),ie;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(ie=Yi(),t[3]=ie):ie=t[3];let T=ie,[E,ae]=(0,Lf.useState)(``),[D,oe]=(0,Lf.useState)(void 0),[O,se]=(0,Lf.useState)(!1),ce=D===`@`||D===`+`,le;t[4]!==i||t[5]!==w||t[6]!==ce?(le=()=>i&&w&&ce?na():void 0,t[4]=i,t[5]=w,t[6]=ce,t[7]=le):le=t[7];let k=M(le),A=k?.googleDriveConnectionScopeKey,de=k?.connectionScopeKey,fe=k?.accountScopeKey,pe;t[8]!==fe||t[9]!==de||t[10]!==A||t[11]!==k?(pe=k==null?void 0:JSON.stringify([fe,de,A,k.providers]),t[8]=fe,t[9]=de,t[10]=A,t[11]=k,t[12]=pe):pe=t[12];let j=pe,me,he;t[13]!==m||t[14]!==i||t[15]!==a||t[16]!==_||t[17]!==p?(me=()=>{if(!(!i||!p))return uc(hs(a),e=>Xd(_,e,`inline`,m,`pasted_url`).then(()=>{if(!zt(_.files$).some(t=>Yd(t,e)))throw Error(`Mounted Library file attachment did not complete`);Ds(e.fileId,!0)},t=>{throw Ds(e.fileId,!1,t),t}))},he=[m,i,a,_,p],t[13]=m,t[14]=i,t[15]=a,t[16]=_,t[17]=p,t[18]=me,t[19]=he):(me=t[18],he=t[19]),(0,Lf.useEffect)(me,he);let ge;t[20]===re?ge=t[21]:(ge=X({providers:re,isGoogleDriveEnabled:T}),t[20]=re,t[21]=ge);let _e=ge,ve;t[22]!==_e||t[23]!==k?(ve=()=>k==null?_e:va().recentProviders,t[22]=_e,t[23]=k,t[24]=ve):ve=t[24];let P=M(ve),[F,ye]=(0,Lf.useState)(null),I=(0,Lf.useRef)(!1),be=(0,Lf.useRef)(!1),xe=M(Ki),Ce;t[25]===E?Ce=t[26]:(Ce=E.trim().toLowerCase(),t[25]=E,t[26]=Ce);let L=Ce,we;t[27]!==h||t[28]!==i||t[29]!==A||t[30]!==w||t[31]!==_e||t[32]!==j||t[33]!==O||t[34]!==p||t[35]!==F?(we=(e,t,n)=>{let r=t===`@`||t===`+`;if(r&&!be.current&&i&&w&&(be.current=!0,ei()),r?!I.current&&h&&i&&w&&p&&ua()&&(I.current=!0,za()):(I.current=!1,be.current=!1),r&&n&&!O&&j!=null){let e=zt(d);e?.id==null||e.normalizedAccountUserId==null||F!=null&&(F.accountId!==e.id||F.accountUserId!==e.normalizedAccountUserId)?ye(null):Nn({googleDriveConnectionScopeKey:A,providers:_e})?ye({accountId:e.id,accountUserId:e.normalizedAccountUserId,googleDriveConnectionScopeKey:A,providersKey:_e.join(`,`),items:lr({googleDriveConnectionScopeKey:A,providers:_e}).items.filter(Pf)}):ye(null)}ae(e),oe(t),se(n)},t[27]=h,t[28]=i,t[29]=A,t[30]=w,t[31]=_e,t[32]=j,t[33]=O,t[34]=p,t[35]=F,t[36]=we):we=t[36];let R=we,Ee;t[37]!==ce||t[38]!==j||t[39]!==O?(Ee=()=>{!ce||!O||j==null||er().catch(Nf)},t[37]=ce,t[38]=j,t[39]=O,t[40]=Ee):Ee=t[40];let z;t[41]!==fe||t[42]!==P||t[43]!==de||t[44]!==A||t[45]!==ce||t[46]!==j||t[47]!==O?(z=[fe,P,de,j,A,ce,O],t[41]=fe,t[42]=P,t[43]=de,t[44]=A,t[45]=ce,t[46]=j,t[47]=O,t[48]=z):z=t[48],(0,Lf.useEffect)(Ee,z);let De=Md({canUseInlineTagging:i,isFileLibraryUiEnabled:w,isLibraryMentionMenuOpen:ce,supportsLibraryFolderReferences:f,unifiedComposerSelectionStateEnabled:p}),Oe=h&&i&&w&&p&&ua(),ke=Oe&&ce&&ua({logExposure:!0}),Ae=ke,je=De||Ae,Me=Ae||Nd({canUseInlineTagging:i,isFileLibraryUiEnabled:w,supportsLibraryFolderReferences:f,unifiedComposerSelectionStateEnabled:p}),[B,Ne]=(0,Lf.useState)(null),Pe=di(B),Fe=(0,Lf.useRef)(0),Ie=(0,Lf.useRef)(null),Le;t[49]===Symbol.for(`react.memo_cache_sentinel`)?(Le=new Map,t[49]=Le):Le=t[49];let Re=(0,Lf.useRef)(Le),ze=M(()=>je?bc(vs(a).doc):Yf),Be=i&&w&&ce&&L.length>0,V=Be&&Gn(),Ve=V&&oo({disableExposureLog:!0}),Ue=Be&&De,We=Be&&ke,Ge=JSON.stringify([j,Ue,We,Ve]),Ke=Be?JSON.stringify([V?E:null,Ge,g]):null,[qe,Je]=(0,Lf.useState)(Ke);qe!==Ke&&(Je(Ke),Ne(null));let Ye;t[50]!==g||t[51]!==Ve||t[52]!==Ge||t[53]!==j||t[54]!==L||t[55]!==Pe||t[56]!==k||t[57]!==E||t[58]!==Ne||t[59]!==Ue||t[60]!==We||t[61]!==Be||t[62]!==V?(Ye=()=>{if(!Be){Fe.current+=1;return}if(V){let e=Fe.current+=1,t=new AbortController,n=!1,r=()=>!t.signal.aborted&&Fe.current===e&&Di(k),i={query:L,globalSearchScopeKey:Ge,fileItems:null,globalSearchFileCandidates:[],folderItems:[],mountedItems:[],mountedSearchScopeKey:j,provisionalBoxItemIds:qf,sharedItems:null,isPending:!0},a=e=>{Ne(t=>r()?e(t?.query===L&&t.globalSearchScopeKey===Ge?t:i):t)},o=(k?.providers??[`native`]).filter(e=>!Ve||e!==`sharepoint`),s=[...o,...We?[`native_shared`]:[]],c=[];Cd()&&(o.includes(`google_drive`)&&c.push(`google_drive`),o.includes(`box`)&&c.push(`box`));let l=k?.imanageConnectionScopeKey==null?1:2,u=()=>{--l,a(e=>({...e,isPending:l>0}))},d=window.setTimeout(()=>{Ne(i),k?.imanageConnectionScopeKey!=null&&Cl({query:E.trim(),limit:Kf,providers:[`imanage`],signal:t.signal}).then(e=>{if(!r())return;let t=zd(e.items.filter(Mf),qf,L,Kf).fileCandidates;a(e=>({...e,globalSearchFileCandidates:qd(e.globalSearchFileCandidates??[],t,Bf)}))}).then(u,u),c.forEach(e=>{Tl({query:E.trim(),limit:Kf,provider:e,signal:t.signal}).then(t=>{if(!r()||n||t==null)return;let i=e===`google_drive`?`gdrive`:`box`,o=zd(t.items.filter(e=>e.kind===`file`&&ba(e.id)===i),qf,L,Kf).fileCandidates;a(e=>({...e,globalSearchFileCandidates:qd(e.globalSearchFileCandidates??[],o,Vf)}))}).catch(jf)}),un({query:E.trim(),limit:Kf,entrypoint:`composer`,sourceRequests:[{type:`library`,filters:{lanes:Ue||We?[`image`,`document`,`folder`]:[`image`,`document`],...s.includes(`onedrive`)?{library_providers:s}:{providers:s.filter(Af)}}}],signal:t.signal}).then(t=>{if(!r())return;let i=Kd(t.items,{providers:o,includeOwnedFolders:Ue,includeSharedResults:We},L);n=!0;let s=(e,n)=>{let r=n===void 0||n;return(t.source_statuses??[]).some(t=>t.source_type===`library`&&(r||t.source_key===`library:image`||t.source_key===`library:document`)&&(t.status===`error`||t.provider_statuses?.some(t=>ea(t)===e&&t.status===`error`)))};Ie.current=s(`google_drive`)?e:null,a(e=>({...e,fileItems:i.nativeFiles,globalSearchFileCandidates:qd(e.globalSearchFileCandidates??[],i.fileCandidates,Bf),folderItems:i.folderCandidates}));let c=s(`native`,!1);Hs({loadType:`refresh`,success:!c,provider:$r(`native`),...c?{errorType:Oc}:{itemCount:i.nativeFiles.length},libraryOrigin:Jf,conversationId:g})}).catch(()=>{r()&&(Ie.current=e,a(kf),Hs({loadType:`refresh`,success:!1,provider:$r(`native`),errorType:Oc,libraryOrigin:Jf,conversationId:g}))}).then(u,u)},200);return()=>{window.clearTimeout(d),t.abort()}}let e=Pe.current,t=e?.mountedItems==null?null:Hd({currentConnectionScopeKey:j,items:e.mountedItems,resultConnectionScopeKey:e.mountedSearchScopeKey}),n=e?.provisionalBoxItemIds??qf,r=t==null?[]:Vd(t,L),i=new Set(r.filter(e=>n.has(e.id)).map(Of)),a=new Set(r.filter(e=>ba(e.id)===`box`&&!i.has(e.id)).map(Df)),o=null,s=!1,c=e=>{let t=o;return t==null?e?r:[]:r.filter(n=>ba(n.id)===`box`?t.has(n.id):e)},l=Fe.current+1;Fe.current=l;let u=new AbortController,d=!1,f=!1,p=()=>!d&&Fe.current===l&&Di(k),m=2+Number(Ue)+Number(We),h=()=>{p()&&(--m,!(m>0)&&Ne(e=>e?.query===L?{...e,isPending:!1}:e))},_=window.setTimeout(()=>{let e=(e,n)=>{Ne(a=>{let o=a?.mountedItems==null?null:Hd({currentConnectionScopeKey:j,items:a.mountedItems,resultConnectionScopeKey:a.mountedSearchScopeKey});return{...a?.query===L?{...a,mountedItems:o}:{query:L,fileItems:null,globalSearchFileCandidates:null,folderItems:null,mountedItems:t==null?null:r,mountedSearchScopeKey:a?.mountedSearchScopeKey,provisionalBoxItemIds:i,sharedItems:null,isPending:!0},...e,...e.mountedItems==null?{}:{mountedSearchScopeKey:j},...n?.retainedMountedItems!=null&&e.mountedItems!=null?{mountedItems:Zd(n.retainedMountedItems,e.mountedItems,Ef)}:{}}})};ro({limit:Wf,cursor:null,preferCache:!1,q:E.trim()}).then(t=>{p()&&(e({fileItems:t.items}),Hs({loadType:`refresh`,success:!0,provider:$r(`native`),itemCount:t.items.length,libraryOrigin:Jf,conversationId:g}))}).catch(()=>{p()&&(e({fileItems:[]}),Hs({loadType:`refresh`,success:!1,provider:$r(`native`),errorType:Oc,libraryOrigin:Jf,conversationId:g}))}).then(h,h),Ue&&Ei({query:E.trim(),limit:Gf,entrypoint:`composer`}).then(t=>{p()&&e({folderItems:Rd(t.items)})}).catch(()=>{p()&&e({folderItems:[]})}).then(h,h);let n=Cd(),d=n&&k?.providers.includes(`box`)===!0;wl({query:E.trim(),limit:Kf,signal:u.signal,useCache:n,providers:[...k?.providers.filter(Tf)??[],...k?.imanageConnectionScopeKey==null?[]:[`imanage`]],includeGoogleDriveCache:k?.providers.includes(`google_drive`)===!0,includeBoxCache:d,onCachedResult:(t,n)=>{let{provider:r,providerPage:i}=n;if(!p())return;let l;if(r===`google_drive`)Ie.current=null;else{let e=i.items.filter(wf).map(Cf);o=new Set(e),l=new Set(e.filter(e=>!a.has(e)))}let u=c(!f||s);e({mountedItems:t.items,...l==null?{}:{provisionalBoxItemIds:l}},{retainedMountedItems:u})},onResult:t=>{p()&&(Ie.current=null,e({mountedItems:t.items,provisionalBoxItemIds:qf}))},onLiveError:t=>{let{cachedPage:n,cachedProviders:r}=t;if(!p())return;f=!0,s=r.has(`google_drive`),Ie.current=r.has(`google_drive`)?null:l;let i=c(s);e({mountedItems:n?.items??[]},{retainedMountedItems:i})}}).then(h,h),We&&N.safeGet(`/files/library/shared/search`,{parameters:{query:{q:E.trim(),limit:Kf}},signal:u.signal}).then(t=>{p()&&e({sharedItems:t.items})}).catch(()=>{p()&&e({sharedItems:[]})}).then(h,h)},200);return()=>{d=!0,window.clearTimeout(_),u.abort()}},t[50]=g,t[51]=Ve,t[52]=Ge,t[53]=j,t[54]=L,t[55]=Pe,t[56]=k,t[57]=E,t[58]=Ne,t[59]=Ue,t[60]=We,t[61]=Be,t[62]=V,t[63]=Ye):Ye=t[63];let Xe;t[64]!==g||t[65]!==Ve||t[66]!==Ge||t[67]!==j||t[68]!==L||t[69]!==Pe||t[70]!==k||t[71]!==E||t[72]!==Ue||t[73]!==We||t[74]!==Be||t[75]!==V?(Xe=[g,Ve,j,L,Pe,E,Ue,We,Be,T,k,Ge,V],t[64]=g,t[65]=Ve,t[66]=Ge,t[67]=j,t[68]=L,t[69]=Pe,t[70]=k,t[71]=E,t[72]=Ue,t[73]=We,t[74]=Be,t[75]=V,t[76]=Xe):Xe=t[76],(0,Lf.useEffect)(Ye,Xe);let Ze=V&&B?.query===L&&B.globalSearchScopeKey===Ge,Qe=Be&&B?.query===L&&(!V||Ze)&&B.fileItems!=null?B.fileItems:null,et=Qe!=null,H=Be&&(V&&!Ze||B?.query!==L||B.isPending),tt;t[77]!==Qe||t[78]!==et||t[79]!==L||t[80]!==O?(tt=Fd(hu(Qe??[],L,Sf),et?``:L,O?Uf:zf),t[77]=Qe,t[78]=et,t[79]=L,t[80]=O,t[81]=tt):tt=t[81];let nt=tt,rt;bb0:{if(!O){let e;t[82]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[82]=e):e=t[82],rt=e;break bb0}let e;t[83]!==fe||t[84]!==P||t[85]!==de||t[86]!==A?(e=Nn({accountScopeKey:fe,connectionScopeKey:de,googleDriveConnectionScopeKey:A,providers:P}),t[83]=fe,t[84]=P,t[85]=de,t[86]=A,t[87]=e):e=t[87];let n=e,r;if(t[88]!==fe||t[89]!==xe||t[90]!==P||t[91]!==de||t[92]!==A||t[93]!==n||t[94]!==_e||t[95]!==j||t[96]!==F){let e=xe>0||n?lr({accountScopeKey:fe,connectionScopeKey:de,googleDriveConnectionScopeKey:A,providers:P}).items:[];r=Fd((j!=null&&!n&&e.length===0?Ad(F,_e,A)??e:e).filter(xf),``,Uf),t[88]=fe,t[89]=xe,t[90]=P,t[91]=de,t[92]=A,t[93]=n,t[94]=_e,t[95]=j,t[96]=F,t[97]=r}else r=t[97];rt=r}let it=rt,at;bb1:{if(V||!Be||B?.mountedItems==null){let e;t[98]===Symbol.for(`react.memo_cache_sentinel`)?(e={fileCandidates:[],folderCandidates:[]},t[98]=e):e=t[98],at=e;break bb1}let e;if(t[99]!==j||t[100]!==L||t[101]!==B.mountedItems||t[102]!==B.mountedSearchScopeKey||t[103]!==B.provisionalBoxItemIds||t[104]!==B.query){let n=Hd({currentConnectionScopeKey:j,items:B.mountedItems,resultConnectionScopeKey:B.mountedSearchScopeKey});e=zd(B.query===L?n:Vd(n,L),B.provisionalBoxItemIds,L),t[99]=j,t[100]=L,t[101]=B.mountedItems,t[102]=B.mountedSearchScopeKey,t[103]=B.provisionalBoxItemIds,t[104]=B.query,t[105]=e}else e=t[105];at=e}let ot=at,st;t[106]!==L||t[107]!==B||t[108]!==We||t[109]!==V?(st=!V&&We&&B?.query===L&&B.sharedItems!=null?Bd(B.sharedItems,L):{fileCandidates:[],folderCandidates:[]},t[106]=L,t[107]=B,t[108]=We,t[109]=V,t[110]=st):st=t[110];let U=st,ct;bb2:{if(V){let e;t[111]!==Ze||t[112]!==B?(e=Ze?B.globalSearchFileCandidates??[]:[],t[111]=Ze,t[112]=B,t[113]=e):e=t[113],ct=e;break bb2}let e;t[114]!==nt||t[115]!==ot.fileCandidates||t[116]!==L||t[117]!==B?.provisionalBoxItemIds||t[118]!==U.fileCandidates?(e=hu($d(hu($d(nt.map(Wd),ot.fileCandidates,B?.provisionalBoxItemIds),L,bf),U.fileCandidates),L,yf),t[114]=nt,t[115]=ot.fileCandidates,t[116]=L,t[117]=B?.provisionalBoxItemIds,t[118]=U.fileCandidates,t[119]=e):e=t[119],ct=e}let dt=ct,ft;t[120]===it?ft=t[121]:(ft=it.map(Wd),t[120]=it,t[121]=ft);let pt=ft,mt;bb3:{if(!i||!w){let e;t[122]===Symbol.for(`react.memo_cache_sentinel`)?(e={fileLibraryBrowseSuggestions:[],fileLibraryPathSuggestions:[]},t[122]=e):e=t[122],mt=e;break bb3}let e;t[123]!==m||t[124]!==a||t[125]!==g||t[126]!==v||t[127]!==y||t[128]!==_||t[129]!==s||t[130]!==b||t[131]!==L||t[132]!==k||t[133]!==ee||t[134]!==p?(e=e=>{let t=e.fileName,n=Fa(e.fileId),r=t.split(`/`),i=n?t:r[r.length-1]??t,o=Ta(e.libraryArtifactType)||e.libraryArtifactType===`flashcards`,c=o?Wi(t,e.libraryArtifactType,b):t,l=o?Wi(i,e.libraryArtifactType,b):i,u=!n&&r.length>1?r[0]:void 0,d=n||e.sharedLibraryFileReference!=null||e.globalSearchRank!=null?[t,t.replace(/[\s_-]+/g,``),t.replace(/[\s_-]+/g,`_`),t.replace(/[\s_-]+/g,`-`),L]:u?[t,i,u,...r]:[t,i,...r],f=e.mimeType??Jt(e.fileName),h=p&&![`audio/`,`image/`,`video/`].some(e=>f.startsWith(e)),x=ee.some(t=>t.composerDisplayMode===`inline`&&Yd(t,e)),S=e.sharedLibraryFileReference!=null&&!ee.some(t=>Yd(t,e))&&dn(ee)>=10,C=e.sharedLibraryFileReference==null?Dd(e.fileId,e.externalAccount):Od(e.sharedByName);return{id:`file-library:${e.fileId}`,title:c,matchText:[t,i,u??`root`],showFor:[`at_command`],noMatchEmpty:!0,disabled:S,searchParameters:{targets:d},icon:Ta(e.libraryArtifactType)?(0,Rf.jsx)(Fi,{className:`icon`,iconKey:e.libraryArtifactType===`site_preview`?`sites`:`app-block`}):(0,Rf.jsx)(Ci,{className:`icon`,fileName:i,mimeType:f,mountedLibraryFileId:e.fileId}),...C,secondary:e.sourceLocation??C.secondary,...e.sourceLocation?{tooltip:{primary:l,secondary:e.sourceLocation}}:{},insertText:h&&!x?l:void 0,meta:{...e.globalSearchRank==null?{}:{globalSearchRank:e.globalSearchRank},mention:h?{representation:`inline-pill`,kind:`document-reference`,documentReferenceMimeType:f,documentReferenceLibraryArtifactType:e.libraryArtifactType??void 0}:void 0},onSelect:()=>{if(Fa(e.fileId)&&!Di(k))return;let t=_.files$(),n=t.find(t=>Yd(t,e));if(n){h&&Jd(_,n);return}let r=t.filter(vf).length;if(Xd(_,e,h?`inline`:void 0,m,`at_mention`,!0,b,v,y,s).catch(()=>{if(!Ud(_.files$(),e.fileId))return;let t=`file-library:${e.fileId}`,n=hs(a);Qo(n,[t],{addToHistory:!1}),Es(n,[t],{addToHistory:!1}),Se().danger(b.formatMessage(Xf.mountedFileMaterializationFailed))}),!_.files$().some(t=>Yd(t,e))){if(h){let t=_.chatUploadLimitError$();if(t==null)return;let n=hs(a),r=`file-library:${e.fileId}`;Qo(n,[r],{addToHistory:!1}),Es(n,[r],{addToHistory:!1}),is.setChatUploadLimitError(_,t)}return}cc({provider:uo([e.fileId]),file:{file_id:e.fileId,mime_type:e.mimeType,library_file_category:e.libraryFileCategory??void 0},selected:!0,selectedCount:r+1,libraryOrigin:Jf,conversationId:g})}}},t[123]=m,t[124]=a,t[125]=g,t[126]=v,t[127]=y,t[128]=_,t[129]=s,t[130]=b,t[131]=L,t[132]=k,t[133]=ee,t[134]=p,t[135]=e):e=t[135];let n=e,r;t[136]!==pt||t[137]!==n?(r=pt.map(n),t[136]=pt,t[137]=n,t[138]=r):r=t[138];let o;t[139]!==dt||t[140]!==n?(o=dt.map(n),t[139]=dt,t[140]=n,t[141]=o):o=t[141];let c;t[142]!==r||t[143]!==o?(c={fileLibraryBrowseSuggestions:r,fileLibraryPathSuggestions:o},t[142]=r,t[143]=o,t[144]=c):c=t[144],mt=c}let{fileLibraryBrowseSuggestions:ht,fileLibraryPathSuggestions:gt}=mt,_t;bb4:{if(!je||B==null){let e;t[145]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[145]=e):e=t[145],_t=e;break bb4}let e;if(t[146]!==Ze||t[147]!==De||t[148]!==ot.folderCandidates||t[149]!==L||t[150]!==B||t[151]!==U.folderCandidates||t[152]!==V){let n=hu(Zd(De&&B.query===L?B.folderItems??[]:[],De?ot.folderCandidates:[],_f),L,gf);e=V?Ze?B.folderItems??[]:[]:hu(Zd(n,U.folderCandidates,hf),L,mf),t[146]=Ze,t[147]=De,t[148]=ot.folderCandidates,t[149]=L,t[150]=B,t[151]=U.folderCandidates,t[152]=V,t[153]=e}else e=t[153];let n=e,r;t[154]===ze?r=t[155]:(r=new Set(ze.map(pf)),t[154]=ze,t[155]=r);let i=r,a=ze.length>=10,o;if(t[156]!==n||t[157]!==a||t[158]!==L||t[159]!==i){let e;t[161]!==a||t[162]!==L||t[163]!==i?(e=e=>{let t=e.displayPath?.split(`/`).filter(Boolean)??[],n=e.displayPath?[e.displayPath,e.name,...t]:[e.name],r=oa(e.directoryId)||Te(e.directoryId)||e.globalSearchRank!=null?[...n,L]:n,o=Te(e.directoryId)?Od(e.sharedByName):Dd(e.directoryId,e.externalAccount),s=e.displayPath;return o.secondary&&(s=e.displayPath?(0,Rf.jsxs)(Rf.Fragment,{children:[e.displayPath,(0,Rf.jsx)(`span`,{className:`ms-3 hidden sm:inline`,children:o.secondary})]}):o.secondary),{id:Jr(e.directoryId),title:e.name,secondary:s,matchText:r,showFor:[`at_command`],noMatchEmpty:!0,searchParameters:{targets:r},icon:(0,Rf.jsx)(qo,{className:`icon`}),trailing:o.trailing,insertText:e.name,disabled:a||i.has(e.directoryId),meta:{...e.globalSearchRank==null?{}:{globalSearchRank:e.globalSearchRank},mention:{representation:`inline-pill`,kind:`folder-reference`,libraryFolderEntrypoint:`at_mention`,...e.displayPath?{libraryFolderDisplayPath:e.displayPath}:{}}},onSelect:ff}},t[161]=a,t[162]=L,t[163]=i,t[164]=e):e=t[164],o=n.map(e),t[156]=n,t[157]=a,t[158]=L,t[159]=i,t[160]=o}else o=t[160];_t=o}let vt=_t,yt,bt;t[165]!==dt||t[166]!==Ze||t[167]!==vt||t[168]!==L||t[169]!==B||t[170]!==O||t[171]!==D||t[172]!==V?(yt=()=>{let e=Fe.current;if(D!==`@`||O||V&&!Ze||B?.query!==L||B.mountedItems==null||B.isPending)return;let t=new Map;T&&Ie.current!==e&&t.set(Nr.CHATGPT_FILE_LIBRARY_PROVIDER_GOOGLE_DRIVE,0);let n=[...dt.map(df),...vt.flatMap(uf)];for(let e of n){let n=$r(vn(e));n==null||n===Nr.CHATGPT_FILE_LIBRARY_PROVIDER_LIBRARY||t.set(n,(t.get(n)??0)+1)}for(let[n,r]of t)Re.current.get(n)!==e&&(He.logStructuredEvent(`ChatgptFileLibraryResultsShown`,{provider:n,productExperience:sa(),visibleItemCount:ue(r),...r===0?{emptyReason:Dn.CHATGPT_FILE_LIBRARY_EMPTY_REASON_QUERY_NO_MATCH}:{}}),Re.current.set(n,e))},bt=[dt,Ze,T,vt,L,B,O,D,V],t[165]=dt,t[166]=Ze,t[167]=vt,t[168]=L,t[169]=B,t[170]=O,t[171]=D,t[172]=V,t[173]=yt,t[174]=bt):(yt=t[173],bt=t[174]),(0,Lf.useEffect)(yt,bt);let xt;t[175]!==m||t[176]!==i||t[177]!==a||t[178]!==o||t[179]!==g||t[180]!==v||t[181]!==y||t[182]!==_||t[183]!==s||t[184]!==A||t[185]!==b||t[186]!==De||t[187]!==Oe||t[188]!==_e||t[189]!==ze||t[190]!==p||t[191]!==F?(xt=()=>{let e=Oe&&ua({logExposure:!0}),t=_.files$(),n=to(t,s),r=Nn({googleDriveConnectionScopeKey:A,providers:_e})?lr({googleDriveConnectionScopeKey:A,providers:_e}).items:Ad(F,_e,A);At(Qi,{attachedFileIds:t.flatMap(lf).filter(cf),attachedFileCount:t.filter(sf).length,attachedNativeLibraryFiles:t.flatMap(of),conversationId:g,entryPoint:`composer`,...v==null?{}:{nativeAttachmentPolicy:{maxAttachmentCount:v,attachedUploadFileCount:Pi(n),maxTotalAttachmentCount:y,attachedTotalFileCount:n.length,validateSize:e=>is.validateChatAttachment(_,e),onLimitReached:()=>is.setChatAttachmentCountLimitError(_,b,v)}},canTrackNativeComposerAttachment:af,initialFiles:r,initialFilesAreCombinedRecents:r!=null,prewarmedRecentProviders:_e,...e?{attachedSharedLibraryFileCount:dn(t),onAttachSharedLibraryFile:e=>{let t=_.files$(),n=to(t,s);dn(t)>=10||!is.validateChatAttachmentTotal(_,b,v,y,n)||is.attachSharedLibraryFileReference(_,{libraryFileId:e.libraryFileId,name:e.name,mimeType:e.mimeType,libraryArtifactType:e.libraryArtifactType,size:e.size,displayPath:e.displayPath,entrypoint:`composer_library_picker`})}}:{},...De||e?{allowOwnedLibraryFolders:De,attachedFolderIds:ze.map(rf),onAttachLibraryFolders:e=>{let t=Bs(a,e.map(nf));return t===`at-capacity`?Se().danger(b.formatMessage(Xf.folderReferenceAtCapacity,{max:10})):t===`unavailable`&&Se().danger(b.formatMessage(Xf.folderReferenceUnavailable)),t===`inserted`}}:{},onAttachLibraryFile:e=>{if(!is.validateChatAttachment(_,e.size,b,v,y,to(_.files$(),s)))return;let t=i&&Wr(e.mimeType,e.libraryArtifactType),n=_.files$(),r=t&&p&&Hc(a,[{fileId:e.id,fileName:e.name,mimeType:e.mimeType,libraryArtifactType:e.libraryArtifactType}]);try{is.attachLibraryFile(_,{...e,...r?{composerDisplayMode:`inline`}:{}})}catch(t){let n=t;throw e.onAttachmentError?.(n),n}let o=_.files$().find(t=>t.fileId===e.id&&t.libraryFileId===e.libraryFileId&&t.status===ut.Ready);o!=null&&!n.includes(o)&&e.onAttachmentSuccess?.()},onDetachLibraryFile:e=>{let t=_.files$().find(t=>t.fileId===e||t.mountedLibraryFileId===e);t!=null&&(t.composerDisplayMode===`inline`&&Qo(hs(a),[`file-library:${t.mountedLibraryFileId??t.fileId}`],{addToHistory:!1}),_.files$().some(e=>e.tempId===t.tempId)&&is.removeUserInitiated(_,t.tempId,{logComposerFileRemovalFor:lt(o)?`work`:`chat`}))},useCombinedRecents:!0,prioritizeMountedGoogleDriveLiveReferences:m,onAttachMountedLibraryFile:e=>{if(!is.validateChatAttachmentTotal(_,b,v,y,to(_.files$(),s)))return Promise.resolve(!1);let t=i&&Wr(e.mimeType)&&p&&Hc(a,[{fileId:e.id,fileName:e.name,mimeType:e.mimeType}]);return Xd(_,{fileId:e.id,fileName:e.name,mimeType:e.mimeType,fileSizeBytes:e.size},t?`inline`:void 0,m,`composer_library_picker`,!1,b,v,y,s).then(()=>_.readyFiles$().some(t=>t.mountedLibraryFileId===e.id)).catch(n=>{throw t&&Qo(hs(a),[`file-library:${e.id}`],{addToHistory:!1}),n})},onClose:tf})},t[175]=m,t[176]=i,t[177]=a,t[178]=o,t[179]=g,t[180]=v,t[181]=y,t[182]=_,t[183]=s,t[184]=A,t[185]=b,t[186]=De,t[187]=Oe,t[188]=_e,t[189]=ze,t[190]=p,t[191]=F,t[192]=xt):xt=t[192];let St=xt,Ct=V?Ke:null,wt=i&&w,Tt;return t[193]!==ht||t[194]!==gt||t[195]!==H||t[196]!==je||t[197]!==Me||t[198]!==vt||t[199]!==R||t[200]!==St||t[201]!==Ct||t[202]!==wt?(Tt={fileLibraryBrowseSuggestions:ht,fileLibraryPathSuggestions:gt,isFileLibrarySearchPending:H,librarySearchKey:Ct,isLibraryFolderUiEnabled:je,isMultiwordLibraryMentionParsingEnabled:Me,libraryFolderPathSuggestions:vt,onSearchQueryChange:R,openFileLibraryModal:St,showFileLibraryEntrypoint:wt},t[193]=ht,t[194]=gt,t[195]=H,t[196]=je,t[197]=Me,t[198]=vt,t[199]=R,t[200]=St,t[201]=Ct,t[202]=wt,t[203]=Tt):Tt=t[203],Tt}function tf(){return Re(Qi)}function nf(e){return{kind:`folder-reference`,directoryId:e.id,keyword:e.name,displayPath:e.displayPath??null,libraryEntrypoint:`composer_library_picker`}}function rf(e){return e.directory_id}function af(){return!0}function of(e){return e.fileId!=null&&e.libraryFileId!=null&&e.mountedLibraryFileId==null?[{selectionId:e.fileId,libraryFileId:e.libraryFileId}]:[]}function sf(e){return(e.fileId!=null||e.mountedLibraryFileId!=null)&&e.sharedLibraryFileReference==null}function cf(e){return e!=null}function lf(e){return[e.fileId,e.mountedLibraryFileId]}function uf(e){let t=br(e.id);return t==null?[]:[t]}function df(e){return e.fileId}function ff(){}function pf(e){return e.directory_id}function mf(e){return e.name}function hf(e){return e.directoryId}function gf(e){return e.name}function _f(e){return e.directoryId}function vf(e){return e.source===`library`}function yf(e){return Gd(e.fileId,e.fileName)}function bf(e){return Gd(e.fileId,e.fileName)}function xf(e){let t=ba(e.id);return t==null||!ui(t)}function Sf(e){return Gd(e.file_id,e.file_name)}function Cf(e){return e.id}function wf(e){return ba(e.id)===`box`}function Tf(e){return e!==`native`}function Ef(e){return e.id}function Df(e){return e.id}function Of(e){return e.id}function kf(e){return{...e,fileItems:[]}}function Af(e){return e!==`onedrive`}function jf(){}function Mf(e){return ba(e.id)===`imanage`}function Nf(){}function Pf(e){let t=ba(e.id);return t==null||t===`gdrive`}function Ff(){return pr()}var If,Lf,Rf,zf,Bf,Vf,Hf,Uf,Wf,Gf,Kf,qf,Jf,Yf,Xf,Zf=e((()=>{If=cn(),aa(),Ga(),zr(),Vi(),kr(),Sl(),Ua(),Xc(),jo(),ye(),ri(),Pa(),ps(),Ye(),Oi(),bi(),te(),_a(),vr(),Pn(),Ia(),Ea(),ci(),ir(),jc(),Ja(),El(),jr(),Bt(),Td(),dr(),po(),Wa(),Ce(),st(),se(),H(),Pt(),Wt(),xn(),xe(),ho(),qt(),F(),gs(),Lf=n(an()),rn(),Wn(),Nc(),Is(),Qr(),gu(),Jc(),$o(),Z(),An(),Ra(),Rf=K(),zf=3,Bf=6,Vf=3,Hf=5,Uf=10,Wf=50,Gf=3,Kf=20,qf=new Set,Jf=Rn.CHATGPT_FILE_LIBRARY_ORIGIN_CONVERSATION_MENU,Yf=[],Xf=Qt({mountedFileMaterializationFailed:{id:`composer.library.mounted_file_materialization_failed`,defaultMessage:`This file couldn't be attached. Please try again.`},folderReferenceAtCapacity:{id:`composer.library.folder_reference.at_capacity.error`,defaultMessage:`You can add up to {max} folders to a message.`},folderReferenceUnavailable:{id:`composer.library.folder_reference.unavailable.error`,defaultMessage:`This folder can't be added to this chat.`}})})),Qf=t({SuggestedPluginConnectButton:()=>mm,SystemHintSuggestor:()=>vm,SystemHintSuggestorMenuBody:()=>rp,getAvailableSystemHintsForMenu:()=>Rp});function $f(e){return e.find(e=>e.color===`selected`)?.title}function ep(e,t){return[...e,...t.flatMap(e=>[e.title,...typeof e.secondary==`string`?[e.secondary]:[],...e.matchText])].filter(e=>e.length>0)}function tp({id:e,title:t,secondary:n,matchText:r,icon:i,firstItemId:a,showFor:o=[`slash_command`]}){return{id:e,title:t,...n?{secondary:n}:{},matchText:r,icon:i,trailing:(0,$.jsx)(me.ChevronRightSm,{className:`icon-sm`}),onSelect:()=>{},showFor:o,meta:{isSubmenuTrigger:!0,submenuFirstItemId:a}}}function np(e){"use forget";let t=(0,$p.c)(35),{composerController:n,isMultiwordLibraryMentionParsingEnabled:r,onSearchQueryChange:i}=e,a;t[0]===n?a=t[1]:(a=fc(n),t[0]=n,t[1]=a);let o=a,s=!M(tt),c;t[2]===n?c=t[3]:(c=()=>xs(n),t[2]=n,t[3]=c);let l=M(c),u=(0,Q.useRef)(null),d=(0,Q.useRef)(null),f=(0,Q.useRef)(_m),[p,m]=(0,Q.useState)(void 0),h=(0,Q.useRef)(void 0),g;t[4]===o.isSuggestionMenuVisible$?g=t[5]:(g=()=>()=>{o.isSuggestionMenuVisible$.set(!1)},t[4]=o.isSuggestionMenuVisible$,t[5]=g);let _;t[6]===o?_=t[7]:(_=[o],t[6]=o,t[7]=_),(0,Q.useEffect)(g,_);let v,y;t[8]!==p||t[9]!==i?(v=()=>{h.current!=null&&p==null&&(d.current=null,i(``,void 0,!1)),h.current=p},y=[p,i],t[8]=p,t[9]=i,t[10]=v,t[11]=y):(v=t[10],y=t[11]),(0,Q.useEffect)(v,y);let b,ee;t[12]!==l||t[13]!==e.conversation.id?(b=()=>{if(l==null)return;let t=t=>{t.inputType===`insertText`&&t.data===`@`&&(d.current={conversationId:e.conversation.id,rangeFrom:l.state.selection.from})};return l.dom.addEventListener(`beforeinput`,t,!0),()=>{l.dom.removeEventListener(`beforeinput`,t,!0)}},ee=[l,e.conversation.id],t[12]=l,t[13]=e.conversation.id,t[14]=b,t[15]=ee):(b=t[14],ee=t[15]),(0,Q.useEffect)(b,ee);let x;t[16]!==n||t[17]!==s?(x=e=>{let t=s?e==null?null:as(n).current??e:e;u.current=t,f.current(t)},t[16]=n,t[17]=s,t[18]=x):x=t[18];let S=x,C;t[19]===Symbol.for(`react.memo_cache_sentinel`)?(C=e=>(f.current=e,e(u.current),()=>{e(null),f.current===e&&(f.current=_m)}),t[19]=C):C=t[19];let te=C,ne;t[20]===o.isSuggestionMenuVisible$?ne=t[21]:(ne=e=>{o.isSuggestionMenuVisible$.set(e!=null),m(t=>Rt(t,e)?t:e)},t[20]=o.isSuggestionMenuVisible$,t[21]=ne);let w=ne,re;t[22]!==l||t[23]!==w||t[24]!==r||t[25]!==S?(re=l!=null&&(0,$.jsx)(nd,{editorView:l,isMultiwordLibraryMentionParsingEnabled:r,onHintMatch:w,setReferencePosition:S}),t[22]=l,t[23]=w,t[24]=r,t[25]=S,t[26]=re):re=t[26];let ie;t[27]!==n||t[28]!==p||t[29]!==e||t[30]!==s?(ie=p!=null&&(0,$.jsx)(Ca.Content,{composerController:n,children:(0,$.jsx)(rp,{...e,hintMatch:p,typedSitesMentionRef:d,unifiedComposerMenuEnabled:s,registerFloatingReference:te})}),t[27]=n,t[28]=p,t[29]=e,t[30]=s,t[31]=ie):ie=t[31];let T;return t[32]!==re||t[33]!==ie?(T=(0,$.jsxs)($.Fragment,{children:[re,ie]}),t[32]=re,t[33]=ie,t[34]=T):T=t[34],T}function rp(e){"use forget";let t=(0,$p.c)(427),{gptsAndAppsSlashCommands$:n,pluginSuggestionRows:r,laneModelSlashCommands$:i,intelligenceSlashCommands$:a,modelVersionSlashCommands$:o,internalModelSlashCommands$:s,modelSlashCommands$:c,hazelnutSlashCommands:l,templatedPrompts:d,fileLibraryBrowseSuggestions:f,fileLibraryPathSuggestions:p,isFileLibrarySearchPending:m,librarySearchKey:h,libraryFolderPathSuggestions:g,referenceImageSuggestions:v,isLibraryFolderUiEnabled:y,onSearchQueryChange:b,slashCommands:x,plusCameraSuggestion:S,plusUploadSuggestion:C,plusAudioAttachmentSuggestion:te,fileUploadUpsell:ne,openFileLibraryModal:w,showFileLibraryEntrypoint:re,systemHints:ie,composerController:T,canAccessFileLibrary:E,conversation:D,layoutMode:oe,systemHintMenuSide:O,isHomeNewChatComposer:se,isCustomAgentHintActive:ce,isFirstPartyProject:k,isConversationViewComposer:ue,isTemporaryChat:de,isIntegratedVoiceModeActive:fe,inputState:pe,disableReason:j,disableAdvancedVoiceMode:ge,disableVoiceButton:_e,thinkingSlashCommand:ve,setSelectedGizmoTag:N,composerToolAvailability:P,hintMatch:F,typedSitesMentionRef:ye,unifiedComposerMenuEnabled:I,registerFloatingReference:be}=e,xe=h===void 0?null:h,Se=E===void 0||E,Ce=P===void 0?`default`:P,{disableAtTagging:L}=la(),{slashCommands:we}=d,Te=tn(),R=ln(),Ee=Ce===`files_only`,{file_uploads:z,image_uploads:De}=Mc(),Oe=M(cl),ke=M(Me),Ae;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(Ae=zi(),t[0]=Ae):Ae=t[0];let je=Ae,Ne=he()?.planType===yt.FREE?rm:void 0,Pe;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(Pe=B(`3001618585`),t[1]=Pe):Pe=t[1];let Fe=Pe,Ie;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(Ie={skip:!Fe},t[2]=Ie):Ie=t[2];let{connectorLinks:Le}=$a(Ie),Re;t[3]===Le?Re=t[4]:(Re=Fe&&(Le.get(Ya)?.length??0)>0,t[3]=Le,t[4]=Re);let ze=Re,Be;t[5]!==T||t[6]!==D||t[7]!==ge||t[8]!==j||t[9]!==_e||t[10]!==pe||t[11]!==I?(Be={composerController:T,conversation:D,disableAdvancedVoiceMode:ge,inputState:pe,disableReason:j,disableVoiceButton:_e,enabled:I},t[5]=T,t[6]=D,t[7]=ge,t[8]=j,t[9]=_e,t[10]=pe,t[11]=I,t[12]=Be):Be=t[12];let V=Zl(Be),Ve=`${O??(oe===`center`?`bottom`:`top`)}-start`,Ue=I?8:10,We=I?0:-18,Ge;t[13]!==Ue||t[14]!==We?(Ge=il({mainAxis:Ue,alignmentAxis:We}),t[13]=Ue,t[14]=We,t[15]=Ge):Ge=t[15];let Ke;t[16]===I?Ke=t[17]:(Ke=I?[]:[nl({padding:6})],t[16]=I,t[17]=Ke);let qe=I?28:0,Je;t[18]===I?Je=t[19]:(Je=e=>{let{elements:t,rects:n,availableWidth:r,availableHeight:i}=e,a=I?n.reference.width:r;t.floating.style.setProperty(`--radix-popper-available-width`,`${a}px`),t.floating.style.setProperty(`--radix-popper-available-height`,`${i}px`)},t[18]=I,t[19]=Je);let Ye;t[20]!==qe||t[21]!==Je?(Ye=al({padding:qe,apply:Je}),t[20]=qe,t[21]=Je,t[22]=Ye):Ye=t[22];let Xe;t[23]!==Ge||t[24]!==Ke||t[25]!==Ye?(Xe=[Ge,...Ke,Ye],t[23]=Ge,t[24]=Ke,t[25]=Ye,t[26]=Xe):Xe=t[26];let et;t[27]!==Xe||t[28]!==Ve?(et={placement:Ve,middleware:Xe,whileElementsMounted:rl},t[27]=Xe,t[28]=Ve,t[29]=et):et=t[29];let{refs:H,floatingStyles:tt}=sl(et),nt,rt;t[30]!==H||t[31]!==be?(nt=()=>be(e=>{H.setReference(e)}),rt=[H,be],t[30]=H,t[31]=be,t[32]=nt,t[33]=rt):(nt=t[32],rt=t[33]),le(nt,rt);let it;t[34]===Symbol.for(`react.memo_cache_sentinel`)?(it={placement:`right-start`,middleware:[il({mainAxis:4}),nl({padding:6})],whileElementsMounted:rl},t[34]=it):it=t[34];let{refs:at,floatingStyles:ot,update:st}=sl(it),U;t[35]===Symbol.for(`react.memo_cache_sentinel`)?(U={placement:`right-start`,middleware:[il({mainAxis:4}),nl({padding:6})],whileElementsMounted:rl},t[35]=U):U=t[35];let{refs:ct,floatingStyles:lt,update:ut}=sl(U),dt=(0,Q.useRef)(null),pt=(0,Q.useRef)(null),mt;t[36]===at?mt=t[37]:(mt=e=>{at.setReference(e)},t[36]=at,t[37]=mt);let ht=mt,gt;t[38]===at?gt=t[39]:(gt=e=>{at.setFloating(e)},t[38]=at,t[39]=gt);let _t=gt,vt;t[40]===ct?vt=t[41]:(vt=e=>{ct.setReference(e)},t[40]=ct,t[41]=vt);let bt=vt,xt;t[42]===ct?xt=t[43]:(xt=e=>{ct.setFloating(e)},t[42]=ct,t[43]=xt);let St=xt,wt;t[44]===Symbol.for(`react.memo_cache_sentinel`)?(wt=()=>{dt.current!=null&&(window.clearTimeout(dt.current),dt.current=null)},t[44]=wt):wt=t[44];let Tt=wt,Et;t[45]===Symbol.for(`react.memo_cache_sentinel`)?(Et=()=>{pt.current!=null&&(window.clearTimeout(pt.current),pt.current=null)},t[45]=Et):Et=t[45];let Dt=Et,[Ot,kt]=(0,Q.useState)(Lp),[At,jt]=(0,Q.useState)(Ip),Mt,Nt;t[46]===Symbol.for(`react.memo_cache_sentinel`)?(Mt=()=>Tt,Nt=[Tt],t[46]=Mt,t[47]=Nt):(Mt=t[46],Nt=t[47]),(0,Q.useEffect)(Mt,Nt);let Pt,It;t[48]===Symbol.for(`react.memo_cache_sentinel`)?(Pt=()=>Dt,It=[Dt],t[48]=Pt,t[49]=It):(Pt=t[48],It=t[49]),(0,Q.useEffect)(Pt,It);let W=F.range?`${F.triggerSymbol}:${F.range.from}`:F.triggerSymbol,Lt;t[50]!==T||t[51]!==F.range?(Lt=()=>{F.range&&Rc(hs(T),F.range.from,F.range.to)},t[50]=T,t[51]=F.range,t[52]=Lt):Lt=t[52];let Rt=Lt,zt;t[53]===T?zt=t[54]:(zt=()=>{let e=hs(T);qs(e),Cc(e)},t[53]=T,t[54]=zt);let Bt=zt,Vt=(0,Q.useRef)(null),Ht,Ut;t[55]===Symbol.for(`react.memo_cache_sentinel`)?(Ht=()=>(Vt.current={},()=>{Vt.current=null}),Ut=[],t[55]=Ht,t[56]=Ut):(Ht=t[55],Ut=t[56]),(0,Q.useEffect)(Ht,Ut);let Wt=di(F),Gt;t[57]!==Rt||t[58]!==Bt||t[59]!==Wt||t[60]!==F?(Gt=()=>{let e=Vt.current;return()=>{e==null||Vt.current!==e||Wt.current!==F||(Rt(),Bt())}},t[57]=Rt,t[58]=Bt,t[59]=Wt,t[60]=F,t[61]=Gt):Gt=t[61];let Kt=Gt,qt;t[62]!==L||t[63]!==n||t[64]!==Ee?(qt=()=>{if(!(L||Ee))return n?.()},t[62]=L,t[63]=n,t[64]=Ee,t[65]=qt):qt=t[65];let Jt=M(qt),Yt;t[66]===F.triggerSymbol?Yt=t[67]:(Yt=gm(F.triggerSymbol),t[66]=F.triggerSymbol,t[67]=Yt);let G=Yt,K=G===`slash_command`,Xt;t[68]!==i||t[69]!==K?(Xt=()=>K?i?.()??[]:[],t[68]=i,t[69]=K,t[70]=Xt):Xt=t[70];let Zt=M(Xt),Qt;t[71]!==a||t[72]!==K?(Qt=()=>K?a?.()??[]:[],t[71]=a,t[72]=K,t[73]=Qt):Qt=t[73];let $t=M(Qt),nn;t[74]!==o||t[75]!==K?(nn=()=>K?o?.()??[]:[],t[74]=o,t[75]=K,t[76]=nn):nn=t[76];let rn=M(nn),an;t[77]!==D||t[78]!==s||t[79]!==K?(an=()=>K&&Vs(D)?s?.()??[]:[],t[77]=D,t[78]=s,t[79]=K,t[80]=an):an=t[80];let on=M(an),sn;t[81]!==c||t[82]!==K?(sn=()=>K?c?.()??[]:[],t[81]=c,t[82]=K,t[83]=sn):sn=t[83];let cn=M(sn),un=G,dn;t[84]!==Ee||t[85]!==k||t[86]!==I?(dn=!Ee&&!I&&!k&&Or(),t[84]=Ee,t[85]=k,t[86]=I,t[87]=dn):dn=t[87];let fn=dn,q,mn,hn,gn,vn;if(t[88]!==z||t[89]!==F.text||t[90]!==F.triggerSymbol||t[91]!==De||t[92]!==fe||t[93]!==G||t[94]!==I){q=F.text.trim();let e;t[100]!==F.triggerSymbol||t[101]!==fe?(e=yu({isIntegratedVoiceModeActive:fe,triggerSymbol:F.triggerSymbol}),t[100]=F.triggerSymbol,t[101]=fe,t[102]=e):e=t[102],mn=e;let n;t[103]!==z||t[104]!==De?(n=bu({fileUploads:z,imageUploads:De}),t[103]=z,t[104]=De,t[105]=n):n=t[105],{showFileLibrary:hn,showUpload:gn}=n,vn=I&&G===`at_command`&&Array.from(q).length===1,t[88]=z,t[89]=F.text,t[90]=F.triggerSymbol,t[91]=De,t[92]=fe,t[93]=G,t[94]=I,t[95]=q,t[96]=mn,t[97]=hn,t[98]=gn,t[99]=vn}else q=t[95],mn=t[96],hn=t[97],gn=t[98],vn=t[99];let yn=vn,bn=M(Ct),xn=oe===`center`&&bn,Sn=q.length>0,Cn=G!==`slash_command`||q.length>0,wn=xn&&!Sn,Tn=xn&&!Cn,En;t[106]===W?En=t[107]:(En=e=>{kt(t=>({...t,matchKey:W,isHovered:e}))},t[106]=W,t[107]=En);let Dn=En,On;t[108]===W?On=t[109]:(On=e=>{kt(t=>({...t,matchKey:W,isPinned:e}))},t[108]=W,t[109]=On);let kn=On,An;t[110]===W?An=t[111]:(An=e=>{jt(t=>({...t,matchKey:W,isHovered:e}))},t[110]=W,t[111]=An);let jn=An,Mn;t[112]===W?Mn=t[113]:(Mn=e=>{jt(t=>({...t,matchKey:W,isPinned:e}))},t[112]=W,t[113]=Mn);let Nn=Mn,Pn=Ot.matchKey===W&&Ot.isHovered,Fn=Ot.matchKey===W&&Ot.isPinned,In=At.matchKey===W&&At.isHovered,Ln=At.matchKey===W&&At.isPinned,Rn;t[114]===Dn?Rn=t[115]:(Rn=()=>{Tt(),dt.current=window.setTimeout(()=>{Dn(!1)},100)},t[114]=Dn,t[115]=Rn);let zn=Rn,Bn;t[116]===jn?Bn=t[117]:(Bn=()=>{Dt(),pt.current=window.setTimeout(()=>{jn(!1)},100)},t[116]=jn,t[117]=Bn);let Vn=Bn,Hn;t[118]===W?Hn=t[119]:(Hn=()=>({matchKey:W,isExpanded:!1}),t[118]=W,t[119]=Hn);let[Un,Wn]=(0,Q.useState)(Hn),Gn;t[120]===W?Gn=t[121]:(Gn=()=>({matchKey:W,isExpanded:!1}),t[120]=W,t[121]=Gn);let[Kn,qn]=(0,Q.useState)(Gn),[J,Jn]=(0,Q.useState)(``),[Y,Yn]=(0,Q.useState)(null),Xn,Qn;t[122]===Y?(Xn=t[123],Qn=t[124]):(Xn=()=>{if(Y===am)return Gc()},Qn=[Y],t[122]=Y,t[123]=Xn,t[124]=Qn),(0,Q.useEffect)(Xn,Qn);let $n=Y===nm&&G===`at_command`,er=Y!=null&&G===`slash_command`||$n,tr=$n?J:q,nr,rr;t[125]!==tr||t[126]!==F.triggerSymbol||t[127]!==$n||t[128]!==b?(nr=()=>{b(tr,F.triggerSymbol,$n)},rr=[tr,F.triggerSymbol,$n,b],t[125]=tr,t[126]=F.triggerSymbol,t[127]=$n,t[128]=b,t[129]=nr,t[130]=rr):(nr=t[129],rr=t[130]),le(nr,rr);let ir;t[131]===Symbol.for(`react.memo_cache_sentinel`)?(ir=()=>{Yn(null),Jn(``)},t[131]=ir):ir=t[131];let ar;t[132]===W?ar=t[133]:(ar=[W],t[132]=W,t[133]=ar),(0,Q.useEffect)(ir,ar);let or=(0,Q.useRef)(q),sr,lr;t[134]!==Y||t[135]!==q?(sr=()=>{Y!=null&&q.length===0&&or.current.length>0&&Yn(null),or.current=q},lr=[Y,q],t[134]=Y,t[135]=q,t[136]=sr,t[137]=lr):(sr=t[136],lr=t[137]),(0,Q.useEffect)(sr,lr);let ur;bb0:{let e=null;if(Y===cm?e=$t:Y===im?e=rn:Y===am&&(e=on),e==null||e.length===0){ur=null;break bb0}let n;t[138]!==Y||t[139]!==R.locale||t[140]!==e||t[141]!==J?(n=Y===am?Vc(e,J,Fp,{locale:R.locale,maxResults:om}):eu(e,J,R.locale),t[138]=Y,t[139]=R.locale,t[140]=e,t[141]=J,t[142]=n):n=t[142];let r=n,i;t[143]!==R||t[144]!==r?(i=r.length>0?r:[{id:`submenu-search-empty`,title:R.formatMessage({id:`composer.systemHintSuggestor.submenu.empty`,defaultMessage:`No results found`}),matchText:[],onSelect:Pp,showFor:[`slash_command`],disabled:!0}],t[143]=R,t[144]=r,t[145]=i):i=t[145],ur=i}let dr=ur,fr=Un.matchKey===W&&Un.isExpanded&&!wn,pr=Kn.matchKey===W&&Kn.isExpanded&&!Tn,mr=I&&G===`slash_command`,hr;t[146]!==D||t[147]!==k||t[148]!==se||t[149]!==N||t[150]!==J||t[151]!==mr?(hr={conversation:D,enabled:mr,isFirstPartyProject:k,isHomeNewChatComposer:se,searchQuery:J,setSelectedGizmoTag:N},t[146]=D,t[147]=k,t[148]=se,t[149]=N,t[150]=J,t[151]=mr,t[152]=hr):hr=t[152];let{items:gr,shouldShow:_r}=cu(hr),vr;if(t[153]!==Kt||t[154]!==Bt||t[155]!==R||t[156]!==r){let e;t[158]!==Kt||t[159]!==Bt||t[160]!==R?(e=e=>{let{item:t,isPending:n,onConnect:r}=e;if(r==null)return t;let i=()=>{r(Kt())};return{...t,trailing:t.trailing??(0,$.jsx)(mm,{itemId:t.id,isPending:n,label:R.formatMessage({id:`chatgpt.composer.unified_menu.suggested_plugin.connect.aria_label`,defaultMessage:`Connect {pluginName}`},{pluginName:t.title}),onBlur:Bt,onConnect:i})}},t[158]=Kt,t[159]=Bt,t[160]=R,t[161]=e):e=t[161],vr=r.map(e),t[153]=Kt,t[154]=Bt,t[155]=R,t[156]=r,t[157]=vr}else vr=t[157];let yr=vr,br;t[162]===D?br=t[163]:(br=()=>ki(D),t[162]=D,t[163]=br);let xr=M(br),Sr;t[164]===Symbol.for(`react.memo_cache_sentinel`)?(Sr=$e(),t[164]=Sr):Sr=t[164];let Cr=Sr,wr=Pl(te,I&&!L&&G===`at_command`&&(!mn||gn)),X;if(t[165]!==x||t[166]!==dr||t[167]!==Y||t[168]!==L||t[169]!==f||t[170]!==p||t[171]!==ne||t[172]!==ke||t[173]!==wr||t[174]!==Jt||t[175]!==l||t[176]!==$t||t[177]!==on||t[178]!==R||t[179]!==ue||t[180]!==ce||t[181]!==$n||t[182]!==Ee||t[183]!==ze||t[184]!==de||t[185]!==Zt||t[186]!==g||t[187]!==xr||t[188]!==cn||t[189]!==rn||t[190]!==gr||t[191]!==Te||t[192]!==w||t[193]!==yr||t[194]!==S||t[195]!==C||t[196]!==G||t[197]!==q.length||t[198]!==un||t[199]!==Oe||t[200]!==v||t[201]!==mn||t[202]!==Sn||t[203]!==_r||t[204]!==hn||t[205]!==re||t[206]!==fn||t[207]!==gn||t[208]!==J.length||t[209]!==ie||t[210]!==we||t[211]!==ve||t[212]!==I||t[213]!==V){bb1:{if(L){X=dm;break bb1}let e;t[215]===G?e=t[216]:(e=e=>e.showFor.includes(G),t[215]=G,t[216]=e);let n=ie.filter(e),r=n.filter(Np);if(I){if(G===`slash_command`){if(mn){let e;t[217]!==x||t[218]!==gn?(e=gn&&x.length>0?[x]:dm,t[217]=x,t[218]=gn,t[219]=e):e=t[219],X=e;break bb1}if(dr!=null){let e;t[220]===dr?e=t[221]:(e=[dr],t[220]=dr,t[221]=e),X=e;break bb1}if(Y===sm){let e;t[222]===gr?e=t[223]:(e=[gr],t[222]=gr,t[223]=e),X=e;break bb1}let e=_r?[tp({id:sm,title:R.formatMessage(Ze.moveConversationToProject),secondary:R.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.move_to_project.description`,defaultMessage:`Select a project for this chat`}),matchText:[`move to project`,`project`],icon:(0,$.jsx)(me.Folder,{className:`icon`}),firstItemId:gr.find(Mp)?.id??gr[0]?.id})]:[],r=[...ve==null?[]:[ve],...$t.length>0?[tp({id:cm,title:R.formatMessage(pm),secondary:$f($t),matchText:ep([`effort`,`intelligence`,`think`,`reason`],$t),icon:(0,$.jsx)(u.Brain,{className:`icon`}),firstItemId:$t.find(jp)?.id??$t[0]?.id})]:[]],i=[...rn.length>0?[tp({id:im,title:R.formatMessage({id:`composer.systemHintSuggestor.modelSubmenu.title`,defaultMessage:`Model`}),secondary:$f(rn),matchText:ep([`model`,`version`],rn),icon:(0,$.jsx)(u.Atom,{className:`icon`}),firstItemId:rn.find(Ap)?.id??rn[0]?.id})]:[],...on.length>0?[tp({id:am,title:R.formatMessage({id:`chatgpt.composer.internal_models.slash_submenu.title`,defaultMessage:`Internal model`}),secondary:R.formatMessage({id:`chatgpt.composer.internal_models.slash_submenu.description`,defaultMessage:`Browse and test internal models`}),matchText:[`internal`,`internal models`],icon:(0,$.jsx)(u.Flask,{className:`icon`}),firstItemId:on.find(kp)?.id??on[0]?.id})]:[]];X=[Yl(Ee?[{slot:`upload`},{slot:`model`},{slot:`intelligence`}]:V,{upload:x,plan:Xl(n,R.formatMessage({id:`chatgpt.composer.unified_menu.shortcut.plan_mode.description`,defaultMessage:`Plan before taking action`})),intelligence:r,model:i,"move-to-project":e},ue,de)];break bb1}if(G!==`at_command`){let e;t[224]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[224]=e):e=t[224],X=e;break bb1}let e=[...S?[S]:[],...C&&(!mn||gn)?[C]:[],...wr?[wr]:[]];if(!Cr){X=Ju({fileUploadUpsell:ne,intl:R,isSearching:q.length>0,loggedOutUpsellSystemHints:xr,pluginSuggestionItems:yr,restrictToUploads:mn,systemHints:n,uploadGroup:e});break bb1}let r=re&&!$n,i=$n?Tu(J.length===0?f:p):p,a=($n||q.length>0)&&(!mn||hn)?ku(Cu(i),`files`):[],o=r&&(!mn||hn)?[{id:nm,title:R.formatMessage({id:`chatgpt.composer.unified_menu.library.entrypoint.label`,defaultMessage:`Add from library`}),secondary:ze?R.formatMessage({id:`chatgpt.composer.unified_menu.library.entrypoint.description.google_drive`,defaultMessage:`Browse and search your files, including Google Drive`}):R.formatMessage({id:`chatgpt.composer.unified_menu.library.entrypoint.description`,defaultMessage:`Browse and search your files`}),matchText:[`add from library`,`library`,`recent files`],icon:(0,$.jsx)(u.Library,{className:`icon`}),onSelect:w,showFor:[`at_command`]}]:[],s=$n?Tu(g):g,c=mn?[]:ku(wu(s),`folders`);if($n){X=a.length>0||c.length>0?[a,c].filter(Op):[[{id:`file-library-submenu-search-empty`,title:R.formatMessage({id:`chatgpt.composer.unified_menu.library.empty`,defaultMessage:`No matching files`}),matchText:[],onSelect:Dp,showFor:[`at_command`],disabled:!0}]];break bb1}if(Ee||mn){X=[e,o,a,c].filter(Ep);break bb1}let{gptItems:d,appItems:m}=_u(Jt),h=ku(Su(xu(Ur([...n.filter(Tp),...m,...yr],wp),{financesEligible:ke})),`plugins`);X=[e,o,v,q.length===0?Lu(h,{additionalRanks:Ne,fallbackRandomSeed:je,recentlyUsedPluginIds:Oe}):h,q.length===0?[]:d,a,c,q.length===0?[]:ku(Eu(l??[]),`skills`)].filter(Cp);break bb1}let i;t[225]!==Jt||t[226]!==G?(i=Jt?.filter(e=>e.showFor.includes(G)),t[225]=Jt,t[226]=G,t[227]=i):i=t[227];let a=i,o=n.filter(Sp),s=[...Zt,...o],c;if(t[228]!==R||t[229]!==Te||t[230]!==un||t[231]!==fn||t[232]!==we){if(c=[],fn&&we.length>0){let e;t[234]===we?e=t[235]:(e=[...we],t[234]=we,t[235]=e),c.push(e);let n;if(t[236]!==R||t[237]!==Te||t[238]!==un){let e;t[240]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,$.jsx)(Ho,{className:`icon`}),t[240]=e):e=t[240];let r;t[241]!==Te||t[242]!==un?(r=()=>{let e=`/saved-prompts?referer=${un}`;Te(e)},t[241]=Te,t[242]=un,t[243]=r):r=t[243],n=Zc({command:tm,title:R.formatMessage({id:`composer.library.managePrompts`,defaultMessage:`Manage prompts`}),icon:e,onSelect:r}),t[236]=R,t[237]=Te,t[238]=un,t[239]=n}else n=t[239];let r;t[244]===n?r=t[245]:(r=[n],t[244]=n,t[245]=r),c.push(r)}t[228]=R,t[229]=Te,t[230]=un,t[231]=fn,t[232]=we,t[233]=c}else c=t[233];let d;t[246]===a?d=t[247]:(d=a??[],t[246]=a,t[247]=d);let m;t[248]===d?m=t[249]:(m=[d],t[248]=d,t[249]=m);let h=m,_;t[250]!==p||t[251]!==g||t[252]!==G?(_=G===`at_command`?[p,g].filter(xp):[],t[250]=p,t[251]=g,t[252]=G,t[253]=_):_=t[253];let y=_;if(Ee){if(G===`slash_command`){let e;t[254]!==x||t[255]!==Zt||t[256]!==cn?(e=[x,Zt,cn],t[254]=x,t[255]=Zt,t[256]=cn,t[257]=e):e=t[257],X=e;break bb1}if(G===`at_command`){X=y;break bb1}X=dm;break bb1}let b;t[258]!==l||t[259]!==G||t[260]!==Sn?(b=G===`at_command`&&!Sn?(l??[]).filter(bp):l??[],t[258]=l,t[259]=G,t[260]=Sn,t[261]=b):b=t[261];let ee=b,te;t[262]!==G||t[263]!==Sn||t[264]!==ee?(te=ee.length>0&&(G!==`at_command`||Sn||ee.some(yp))?[ee]:[],t[262]=G,t[263]=Sn,t[264]=ee,t[265]=te):te=t[265];let T=te,E;t[266]!==y||t[267]!==h||t[268]!==c?(E=[...c,...y,...h],t[266]=y,t[267]=h,t[268]=c,t[269]=E):E=t[269];let ae=E;if(G===`at_command`){let e;t[270]!==T||t[271]!==r||t[272]!==ae||t[273]!==v?(e=[...ae,v,...T,r].filter(vp),t[270]=T,t[271]=r,t[272]=ae,t[273]=v,t[274]=e):e=t[274],X=e}else if(G===`slash_command`){if(ce){X=ae;break bb1}let e;t[275]!==x||t[276]!==T||t[277]!==cn||t[278]!==ae||t[279]!==s?(e=[x,s,cn,...ae,...T],t[275]=x,t[276]=T,t[277]=cn,t[278]=ae,t[279]=s,t[280]=e):e=t[280],X=e}else{let e;t[281]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[281]=e):e=t[281],X=e}}t[165]=x,t[166]=dr,t[167]=Y,t[168]=L,t[169]=f,t[170]=p,t[171]=ne,t[172]=ke,t[173]=wr,t[174]=Jt,t[175]=l,t[176]=$t,t[177]=on,t[178]=R,t[179]=ue,t[180]=ce,t[181]=$n,t[182]=Ee,t[183]=ze,t[184]=de,t[185]=Zt,t[186]=g,t[187]=xr,t[188]=cn,t[189]=rn,t[190]=gr,t[191]=Te,t[192]=w,t[193]=yr,t[194]=S,t[195]=C,t[196]=G,t[197]=q.length,t[198]=un,t[199]=Oe,t[200]=v,t[201]=mn,t[202]=Sn,t[203]=_r,t[204]=hn,t[205]=re,t[206]=fn,t[207]=gn,t[208]=J.length,t[209]=ie,t[210]=we,t[211]=ve,t[212]=I,t[213]=V,t[214]=X}else X=t[214];let Tr=X,Er;t[282]!==F.text||t[283]!==R.locale||t[284]!==xe?(Er=e=>Pu(e,Au(lo(e,F.text,_p,{locale:R.locale})),F.text,xe!=null),t[282]=F.text,t[283]=R.locale,t[284]=xe,t[285]=Er):Er=t[285];let Dr=Er,kr,Ar,jr;if(t[286]!==Tn||t[287]!==wn||t[288]!==Dr||t[289]!==Tr||t[290]!==F.text||t[291]!==R||t[292]!==pr||t[293]!==fr||t[294]!==er||t[295]!==xe||t[296]!==G||t[297]!==Cn||t[298]!==Sn||t[299]!==yn||t[300]!==I){let e;if(!F.text||er)e=Tr.map(hp);else if(!I)e=[Dr(ee(Tr))];else{let t=Tr.map(Dr).filter(mp);e=yn?t.map(e=>e.slice(0,Iu(e,t.length===1,xe!=null))):t}kr=fd({groups:e,intl:R,isSkillsExpanded:fr,isProjectsExpanded:pr,useFlyout:wn||Tn,skillsGroupAfterIndex:G===`slash_command`?0:void 0,projectsGroupAfterIndex:G===`slash_command`?2:void 0,inlineSkills:Sn,inlineProjects:Cn}),Ar=kr.displayGroups,jr=ee(kr.displayGroups),t[286]=Tn,t[287]=wn,t[288]=Dr,t[289]=Tr,t[290]=F.text,t[291]=R,t[292]=pr,t[293]=fr,t[294]=er,t[295]=xe,t[296]=G,t[297]=Cn,t[298]=Sn,t[299]=yn,t[300]=I,t[301]=kr,t[302]=Ar,t[303]=jr}else kr=t[301],Ar=t[302],jr=t[303];let Mr;t[304]!==kr.projectItems||t[305]!==kr.skillItems||t[306]!==Ar||t[307]!==jr?(Mr={displayGroups:Ar,suggestions:jr,skillItems:kr.skillItems,projectItems:kr.projectItems},t[304]=kr.projectItems,t[305]=kr.skillItems,t[306]=Ar,t[307]=jr,t[308]=Mr):Mr=t[308];let{displayGroups:Nr,suggestions:Z,skillItems:Pr,projectItems:Fr}=Mr,Ir;t[309]!==Nr||t[310]!==er||t[311]!==xe||t[312]!==G||t[313]!==q.length||t[314]!==I?(Ir=I&&G===`at_command`&&!er&&q.length>0&&(xe!=null||Nr.some(pp)||new Set(Nr.map(fp)).size>1),t[309]=Nr,t[310]=er,t[311]=xe,t[312]=G,t[313]=q.length,t[314]=I,t[315]=Ir):Ir=t[315];let Lr=Ir,[Rr,zr]=(0,Q.useState)(null),Br;t[316]!==F.text||t[317]!==W||t[318]!==xe?(Br=xe==null?null:JSON.stringify([W,F.text,xe]),t[316]=F.text,t[317]=W,t[318]=xe,t[319]=Br):Br=t[319];let Vr=Br,Hr=(0,Q.useRef)(null),Wr;t[320]===Vr?Wr=t[321]:(Wr=e=>{Hr.current=Vr==null?null:{key:Vr,itemId:e.id}},t[320]=Vr,t[321]=Wr);let Gr=Wr,Kr;t[322]!==Tn||t[323]!==wn||t[324]!==Gr||t[325]!==Nn||t[326]!==kn||t[327]!==Z?(Kr=e=>{zr(t=>{if(t==null)return null;let n=Z.length;for(let r=0;r<n;r++){let i=(t+n+(r+1)*e)%n,a=Z[i];if(!a.disabled)return Gr(a),wn&&kn(od(a)||sd(a)),Tn&&Nn(cd(a)||ld(a)),i}return null})},t[322]=Tn,t[323]=wn,t[324]=Gr,t[325]=Nn,t[326]=kn,t[327]=Z,t[328]=Kr):Kr=t[328];let qr=di(Kr),Jr=Z.length,Yr=Jr>0,Xr;t[329]!==m||t[330]!==er||t[331]!==G||t[332]!==q||t[333]!==Yr?(Xr=xd({hasSuggestions:Yr,isFileLibrarySearchPending:m,isSubmenuSearchActive:er,promptReferer:G,promptSearchQuery:q}),t[329]=m,t[330]=er,t[331]=G,t[332]=q,t[333]=Yr,t[334]=Xr):Xr=t[334];let Zr=Xr,Qr=Jr===0&&!Zr,$r;t[335]===T?$r=t[336]:($r=fc(T),t[335]=T,t[336]=$r);let{isUnifiedComposerPlusMenuOpen$:ei}=$r,ti,ni;t[337]!==F.triggerSymbol||t[338]!==ei||t[339]!==Qr||t[340]!==I?(ti=()=>(ei.set(I&&F.triggerSymbol===`+`&&!Qr),()=>ei.set(!1)),ni=[F.triggerSymbol,ei,Qr,I],t[337]=F.triggerSymbol,t[338]=ei,t[339]=Qr,t[340]=I,t[341]=ti,t[342]=ni):(ti=t[341],ni=t[342]),(0,Q.useEffect)(ti,ni);let ri=(0,Q.useRef)(null),ii=(0,Q.useRef)(null),ai,oi;t[343]!==Vr||t[344]!==Gr||t[345]!==Z?(ai=()=>{Hr.current?.key!==Vr&&(Hr.current=null);let e=ri.current;ri.current=null;let t=Z.map(dp).join(`|`);if(e!=null){ii.current=t;let n=Z.findIndex(t=>t.id===e&&!t.disabled);if(n>=0){Gr(Z[n]),zr(n);return}}let n=Hr.current;if(n!=null){let e=Z.findIndex(e=>e.id===n.itemId&&!e.disabled);if(e>=0){ii.current=t,zr(e);return}Hr.current=null}if(ii.current===t)return;ii.current=t;let r=Z.findIndex(up);zr(r>=0?r:null)},oi=[Vr,Gr,Z],t[343]=Vr,t[344]=Gr,t[345]=Z,t[346]=ai,t[347]=oi):(ai=t[346],oi=t[347]),(0,Q.useEffect)(ai,oi);let si=Rr==null?null:Z[Rr],ci=wn&&Pr.length>0&&(Pn||Fn),li=Tn&&Fr.length>0&&(In||Ln),ui=null,fi=null,pi=0;for(let e of Nr){if(sd(e[0])){ui={baseIndex:pi,group:e};break}pi+=e.length}let mi=0;for(let e of Nr){if(ld(e[0])){fi={baseIndex:mi,group:e};break}mi+=e.length}let hi=ui?.group.slice(1)??fm,gi=fi?.group.slice(1)??fm,_i,vi;t[348]!==ci||t[349]!==st?(_i=()=>{ci&&st()},vi=[ci,st],t[348]=ci,t[349]=st,t[350]=_i,t[351]=vi):(_i=t[350],vi=t[351]),(0,Q.useEffect)(_i,vi);let yi,bi;t[352]!==li||t[353]!==ut?(yi=()=>{li&&ut()},bi=[li,ut],t[352]=li,t[353]=ut,t[354]=yi,t[355]=bi):(yi=t[354],bi=t[355]),(0,Q.useEffect)(yi,bi);let xi;t[356]!==T||t[357]!==F.range?(xi=e=>{if(!F.range)return;let t=hs(T);Rc(t,F.range.from,F.range.to),_c(t,e)},t[356]=T,t[357]=F.range,t[358]=xi):xi=t[358];let Si=xi,Ci;t[359]!==T||t[360]!==F.range||t[361]!==Si?(Ci=e=>{let{text:t,mentionId:n,mention:r,systemHintType:i,iconUrl:a,iconDarkUrl:o}=e;if(!F.range)return;let s=hs(T),{schema:c}=s.state,l=t.replace(/\s+$/,``);if(!l){Si(t);return}let u=r??{representation:`legacy-mark`,kind:t.startsWith(`$`)?`tool`:`at`},d=vd({mention:u,text:l}),f={id:n,keyword:d},p;if(u.representation===`inline-pill`){let e=c.nodes[Us];if(e==null){Si(t);return}let r=vo(e,{mention:u,mentionId:n,mentionValue:d,systemHintType:i});if(r==null){Si(t);return}p=r}else{let e=c.marks.ecosystemMentionMark;if(e==null){Si(t);return}let n=`${u.kind===`tool`?`$`:`@`}${d}`;p=c.text(n,[e.create({...f,kind:u.kind===`tool`?dc:Pc,iconUrl:a,iconDarkUrl:o})])}let m=[p,c.text(` `)],h=Yo.fromArray(m);s.dispatch(s.state.tr.replaceWith(F.range.from,F.range.to,h))},t[359]=T,t[360]=F.range,t[361]=Si,t[362]=Ci):Ci=t[362];let wi=Ci,Ti;t[363]===T?Ti=t[364]:(Ti=()=>{let e=hs(T);qs(e),js(e)},t[363]=T,t[364]=Ti);let Ei=Ti,Di=e=>{let{hintToSave:t,expectPerfectMatch:n,skipInternalModelPreflight:i}=e,a=t===void 0?si:t,o=i!==void 0&&i;if(!a)return!1;let s=F.text.toLocaleLowerCase(),c=a.matchText.some(e=>e.toLocaleLowerCase()===s);if(n&&!c||a.disabled)return!1;if(a.meta?.isSubmenuTrigger===!0)return qs(hs(T)),Jn(``),Yn(a.id),ri.current=a.meta?.submenuFirstItemId??a.id,!0;if(sd(a)){if(wn){let e=Z.findIndex(lp);return Tt(),kn(!0),e>=0&&zr(e),e>=0}let e=!fr;return Wn({matchKey:W,isExpanded:e}),ri.current=e?Pr[0]?.id??a.id:a.id,!0}if(ld(a)){if(Tn){let e=Z.findIndex(cp);return Dt(),Nn(!0),e>=0&&zr(e),e>=0}let e=!pr;return qn({matchKey:W,isExpanded:e}),ri.current=e?Fr[0]?.id??a.id:a.id,!0}if(Y===am&&a.color!==`selected`&&!o&&B(`3016847258`))return Zn(a.id.slice(15)).then(e=>{e&&Di({hintToSave:a,expectPerfectMatch:n,skipInternalModelPreflight:!0})}),!0;let l=a.insertText;ic(T).flushPendingAsFallback();let u=r.find(e=>{let{item:t}=e;return t.id===a.id});return u?.onSelect==null?(yd({isSidebarSlash:!1,promptReferer:G,suggestion:a})&&l?wi({text:l,mentionId:a.meta?.systemHintType??a.id,mention:a.meta?.mention,systemHintType:a.meta?.systemHintType,iconUrl:a.meta?.mentionIconUrl,iconDarkUrl:a.meta?.mentionIconDarkUrl}):Rt(),Bt(),a.onSelect(G),!0):(u.onSelect(Kt()),!0)},Oi=di(Di),Ai;t[365]===H.floating.current?Ai=t[366]:(Ai=e=>{let t=Array.from(H.floating.current?.querySelectorAll(`[data-suggested-plugin-connect]`)??[]).find(t=>t.dataset.suggestedPluginConnect===e);return t?.focus(),t!=null},t[365]=H.floating.current,t[366]=Ai);let ji=Ft(Ai),Mi;t[367]!==T||t[368]!==Ei||t[369]!==qr||t[370]!==Oi?(Mi=e=>{if(_(e))return;let t=e.ctrlKey&&(e.key===`n`||e.key===`p`);if(e.key===`ArrowUp`||e.key===`ArrowDown`||t){e.preventDefault(),qr.current(e.key===`ArrowUp`||e.ctrlKey&&e.key===`p`?-1:1);return}if(e.key===`Escape`){e.preventDefault(),Ei(),Ws(hs(T));return}(e.key===`Enter`||e.key===`Tab`)&&(e.preventDefault(),Oi.current({expectPerfectMatch:!1})&&Ws(hs(T)))},t[367]=T,t[368]=Ei,t[369]=qr,t[370]=Oi,t[371]=Mi):Mi=t[371];let Ni=Ft(Mi),Pi;t[372]!==T||t[373]!==ji||t[374]!==er||t[375]!==qr||t[376]!==Oi||t[377]!==si||t[378]!==Qr?(Pi=()=>{let e=hs(T);return!Qr&&!er&&Lc(e,(t,n)=>{if(t===`up`)qr.current(-1);else if(t===`down`)qr.current(1);else if(t===`cancel`)qs(e),js(e);else if(t===`submit`)return n?.key===`Tab`&&!n.shiftKey&&si!=null&&ji(si.id)?!0:((si==null||!sd(si)&&!ld(si)&&si.meta?.isSubmenuTrigger!==!0)&&qs(e),Oi.current({expectPerfectMatch:!1}));else if(t===`checkMatch`)return Oi.current({expectPerfectMatch:!0})}),()=>qs(e)},t[372]=T,t[373]=ji,t[374]=er,t[375]=qr,t[376]=Oi,t[377]=si,t[378]=Qr,t[379]=Pi):Pi=t[379];let Fi;t[380]!==Rt||t[381]!==T||t[382]!==ji||t[383]!==er||t[384]!==qr||t[385]!==Oi||t[386]!==si||t[387]!==Qr?(Fi=[T,er,Qr,si,Rt,ji,qr,Oi],t[380]=Rt,t[381]=T,t[382]=ji,t[383]=er,t[384]=qr,t[385]=Oi,t[386]=si,t[387]=Qr,t[388]=Fi):Fi=t[388],(0,Q.useEffect)(Pi,Fi);let Ii,Li;t[389]!==D||t[390]!==Qr?(Ii=()=>{Qr||He.logEvent(`System Hint List Opened`,{conversation_id:Qe(D)})},Li=[D,Qr],t[389]=D,t[390]=Qr,t[391]=Ii,t[392]=Li):(Ii=t[391],Li=t[392]),(0,Q.useEffect)(Ii,Li);let Ri=(0,Q.useRef)(void 0),Bi,Vi;if(t[393]!==D||t[394]!==F.range.from||t[395]!==F.triggerSymbol||t[396]!==W||t[397]!==Z||t[398]!==Qr||t[399]!==ye?(Bi=()=>{if(Qr||F.triggerSymbol!==`@`||ye.current?.conversationId!==D.id||ye.current.rangeFrom!==F.range.from||!Z.some(sp))return;let e=`${D.id}:${W}`;Ri.current!==e&&(Ri.current=e,pn({conversationId:Qe(D),source:`at-mention`}).mentionSuggestionsLoaded())},Vi=[D,F.range.from,F.triggerSymbol,W,Z,Qr,ye],t[393]=D,t[394]=F.range.from,t[395]=F.triggerSymbol,t[396]=W,t[397]=Z,t[398]=Qr,t[399]=ye,t[400]=Bi,t[401]=Vi):(Bi=t[400],Vi=t[401]),(0,Q.useEffect)(Bi,Vi),Qr)return null;let Hi=I&&Cr&&!mn&&!$n&&G===`at_command`&&q.length===0,Ui;t[402]!==D||t[403]!==H.floating||t[404]!==Z?(Ui=(0,$.jsx)(fl,{conversation:D,containerRef:H.floating,suggestions:Z}),t[402]=D,t[403]=H.floating,t[404]=Z,t[405]=Ui):Ui=t[405];let Wi;t[406]===H?Wi=t[407]:(Wi=e=>H.setFloating(e),t[406]=H,t[407]=Wi);let Gi=I&&`py-2!`,Ki=I?`w-[var(--radix-popper-available-width)] max-w-[calc(100vw-12px)] dark:bg-token-bg-primary`:`max-w-[min(var(--radix-popper-available-width,100vw),--spacing(100))]`,qi=I?`max-h-[min(var(--radix-popper-available-height,50svh),--spacing(4)+10*var(--menu-item-height))]`:Z.length>6?`max-h-[min(var(--radix-popper-available-height,50svh),--spacing(1.5)+5*var(--menu-item-height))]`:`max-h-[var(--radix-popper-available-height,50svh)]`,Ji;t[408]!==Gi||t[409]!==Ki||t[410]!==qi?(Ji=ae(`overflow-y-auto [scrollbar-width:none]`,Gi,Ki,qi),t[408]=Gi,t[409]=Ki,t[410]=qi,t[411]=Ji):Ji=t[411];let Yi;t[412]!==Y||t[413]!==Ei||t[414]!==H.floating.current||t[415]!==Ni||t[416]!==R||t[417]!==er||t[418]!==J?(Yi=er&&(0,$.jsxs)(`div`,{className:`ps-5 pe-3 pt-1 pb-2`,children:[(0,$.jsx)(`label`,{className:`sr-only`,htmlFor:`composer-submenu-search`,children:Y===am?(0,$.jsx)(en,{id:`chatgpt.model_picker.internal_models.search.aria_label`,defaultMessage:`Search internal models`}):(0,$.jsx)(en,{id:`composer.systemHintSuggestor.submenu.search.placeholder`,defaultMessage:`Search`})}),(0,$.jsx)(`input`,{className:`text-token-text-primary caret-token-text-primary placeholder:text-token-text-tertiary w-full border-0 bg-transparent p-0 text-sm shadow-none ring-0 [box-shadow:none] [outline:none] outline-none focus:border-transparent focus:shadow-none focus:ring-0 focus:outline-none focus-visible:ring-0 focus-visible:outline-none`,"data-internal-model-search":Y===am?`true`:void 0,id:`composer-submenu-search`,name:`composer-submenu-search`,value:J,placeholder:R.formatMessage({id:`composer.systemHintSuggestor.submenu.search.placeholder`,defaultMessage:`Search`}),autoComplete:`off`,spellCheck:!1,autoFocus:!0,onChange:e=>{Jn(e.currentTarget.value),zr(0)},onKeyDown:Ni,onBlur:()=>{window.setTimeout(()=>{let e=document.activeElement;e instanceof Node&&H.floating.current?.contains(e)||Ei()},0)}})]}),t[412]=Y,t[413]=Ei,t[414]=H.floating.current,t[415]=Ni,t[416]=R,t[417]=er,t[418]=J,t[419]=Yi):Yi=t[419];let Xi;t[420]===Zr?Xi=t[421]:(Xi=Zr?(0,$.jsx)(ym,{}):null,t[420]=Zr,t[421]=Xi);let Zi;return t[422]!==Se||t[423]!==R||t[424]!==y||t[425]!==Hi?(Zi=Hi?(0,$.jsx)(`div`,{className:`text-token-text-tertiary mx-2 flex min-h-(--menu-item-height) items-center px-2 py-1.5 text-sm leading-5`,children:Se?y?R.formatMessage({id:`chatgpt.composer.unified_menu.at_menu.footer_hint_with_folders`,defaultMessage:`Type to search plugins, files, folders & skills`}):R.formatMessage({id:`chatgpt.composer.unified_menu.at_menu.footer_hint`,defaultMessage:`Type to search plugins, files & skills`}):(0,$.jsx)(en,{id:`chatgpt.composer.unified_menu.at_menu.footer_hint_generic`,defaultMessage:`Type to search`})}):null,t[422]=Se,t[423]=R,t[424]=y,t[425]=Hi,t[426]=Zi):Zi=t[426],(0,$.jsxs)($.Fragment,{children:[Ui,(0,$.jsxs)(_n,{ref:Wi,$menuSurface:I,style:tt,"aria-busy":Zr,className:Ji,onPointerDown:op,children:[Yi,Nr.map((e,t)=>{let n=0;for(let e=0;e<t;e++)n+=Nr[e].length;let r=sd(e[0]),i=ld(e[0]),a=Lr?e[0]?.meta?.unifiedComposerMenuCategory:void 0,o=a==null?null:Fu(R,a);return(0,$.jsxs)(cr.Group,{separator:!I,children:[o==null?null:(0,$.jsx)(cr.Label,{className:`text-token-text-secondary px-2! py-2! text-sm leading-5 font-normal!`,children:o}),e.map((e,t)=>{let a=n+t,o=wn&&r&&t>0,s=Tn&&i&&t>0,c=wn&&r&&t===0,l=Tn&&i&&t===0;return o||s?null:(0,$.jsx)(`div`,{"data-composer-plugin-impression-id":A(e.meta?.systemHintType)?ft(e.meta.systemHintType):void 0,className:Y===am?`[&_.break-words]:block [&_.break-words]:truncate [&_.text-xs]:truncate`:void 0,ref:c?ht:l?bt:void 0,onPointerLeave:()=>{c&&zn(),l&&Vn()},children:(0,$.jsx)(tl,{item:e,isHighlighted:a===Rr,onHighlight:()=>{if(Gr(e),zr(a),c){Tt(),Dn(!0),Nn(!1),jn(!1);return}if(l){Dt(),jn(!0),kn(!1),Dn(!1);return}wn&&kn(!1),Tn&&Nn(!1)},onClick:()=>{Di({hintToSave:e,expectPerfectMatch:!1}),e.shouldRestoreComposerFocusAfterSelect!==!1&&Ws(hs(T))},className:ae(I&&`mx-2! gap-3! px-2! [&:has(>.trailing)>:first-child]:gap-3!`),titleClassName:I&&!e.disabled&&(e.color==null||e.color==="default")?`text-token-text-primary`:void 0,secondaryClassName:I?`text-token-text-tertiary`:void 0,secondaryLayout:I&&Y!==am?`inline`:`stacked`})},e.id)})]},e[0]?.meta?.unifiedComposerMenuCategory??t)}),Xi,Zi]}),ci&&ui!=null&&(0,$.jsx)(_n,{ref:_t,$menuSurface:I,style:ot,className:`z-1 max-h-[min(var(--radix-popper-available-height,50svh),--spacing(100))] min-w-[min(280px,95vw)] [scrollbar-width:none] overflow-y-auto`,onPointerDown:ap,onPointerEnter:()=>{Tt(),Dn(!0)},onPointerLeave:()=>{zn()},children:hi.map((e,t)=>{let n=ui.baseIndex+t+1;return(0,$.jsx)(tl,{item:e,isHighlighted:n===Rr,onHighlight:()=>{Tt(),Dn(!0),Gr(e),zr(n)},onClick:()=>{Di({hintToSave:e,expectPerfectMatch:!1}),Ws(hs(T))}},e.id)})}),li&&fi!=null&&(0,$.jsx)(_n,{ref:St,$menuSurface:I,style:lt,className:`z-1 max-h-[min(var(--radix-popper-available-height,50svh),--spacing(100))] min-w-[min(280px,95vw)] [scrollbar-width:none] overflow-y-auto`,onPointerDown:ip,onPointerEnter:()=>{Dt(),jn(!0)},onPointerLeave:()=>{Vn()},children:gi.map((e,t)=>{let n=fi.baseIndex+t+1;return(0,$.jsx)(tl,{item:e,isHighlighted:n===Rr,onHighlight:()=>{Dt(),jn(!0),Gr(e),zr(n)},onClick:()=>{Di({hintToSave:e,expectPerfectMatch:!1}),Ws(hs(T))}},e.id)})})]})}function ip(e){e.preventDefault()}function ap(e){e.preventDefault()}function op(e){let{target:t}=e;t instanceof HTMLInputElement||e.preventDefault()}function sp(e){let t=e.meta?.systemHintType;return!e.disabled&&t!=null&&rr(t,`site`)}function cp(e){return cd(e)&&!e.disabled}function lp(e){return od(e)&&!e.disabled}function up(e){return!e.disabled}function dp(e){return`${e.id}:${+!!e.disabled}`}function fp(e){return e[0]?.meta?.unifiedComposerMenuCategory??`uncategorized`}function pp(e){return e[0]?.meta?.unifiedComposerMenuCategory===`gpts`}function mp(e){return e.length>0}function hp(e){return e.filter(gp)}function gp(e){return!e.noMatchEmpty}function _p(e){return e.searchParameters??{targets:[e.secondary?`${e.title} ${e.secondary}`:e.title,...e.matchText]}}function vp(e){return e.length>0}function yp(e){return!od(e)}function bp(e){return!od(e)}function xp(e){return e.length>0}function Sp(e){return!e.meta?.isConnector||!!e.meta.isConnected}function Cp(e){return e.length>0}function wp(e){return e.meta?.systemHintType??e.id}function Tp(e){return e.meta?.systemHintType!==g.Think&&(!e.meta?.isConnector||e.meta.isConnected===!0)}function Ep(e){return e.length>0}function Dp(){}function Op(e){return e.length>0}function kp(e){return!e.disabled}function Ap(e){return!e.disabled}function jp(e){return!e.disabled}function Mp(e){return!e.disabled}function Np(e){return e.meta?.isLocalSystemHintAction===!0}function Pp(){}function Fp(e){return e.searchParameters?.targets??e.matchText}function Ip(){return{matchKey:void 0,isHovered:!1,isPinned:!1}}function Lp(){return{matchKey:void 0,isHovered:!1,isPinned:!1}}function Rp({accountPlanType:e,availableSystemHints:t,isFilesOnlyComposer:n}){if(n)return[];let r=xr(t,e);return r&&go(r.filter(e=>!(e.isConnector&&e.hideFromInitialSelection&&!e.canConnect)))}function zp(e){return e!=null&&e in In}function Bp(){return ai()}function Vp(e){return e.isLoggedOutUpsell===!0}function Hp(e){return e.systemHint}function Up(e){return b(e.systemHint)}function Wp(e){return e.resource}function Gp(e){return e.gizmo}function Kp(e){return e.gizmo.id}function qp(e){e.clear()}function Jp(e){return e.id}function Yp(){}function Xp(e){return e.prompts??[]}function Zp(e){return e.prompts??[]}function Qp(e){return e.meta?.systemHintType===g.Think}var $p,Q,em,$,tm,nm,rm,im,am,om,sm,cm,lm,um,dm,fm,pm,mm,hm,gm,_m,vm,ym,bm=e((()=>{$p=cn(),$i(),Mt(),Un(),i(),hi(),Tr(),nt(),be(),a(),gr(),Gt(),Lo(),ke(),Oo(),ve(),So(),ye(),Mr(),de(),Zi(),cs(),wr(),O(),io(),pi(),Xe(),c(),P(),Ss(),Oe(),yc(),Ic(),St(),ja(),Ji(),qr(),Qn(),ur(),Vr(),xt(),wt(),T(),rt(),W(),ys(),Cn(),ma(),$s(),bs(),Tc(),ul(),dl(),La(),ks(),Qc(),Ri(),ms(),Ml(),J(),mo(),Bi(),H(),Ui(),ta(),m(),et(),st(),se(),mt(),Ke(),fn(),Fe(),or(),pe(),Fn(),we(),Ai(),Pt(),Wt(),Mn(),xn(),Lt(),Ue(),re(),V(),ho(),ie(),Ll(),ol(),sn(),Ie(),oe(),We(),yn(),Xo(),Q=n(an()),rn(),em=n(Zt()),nn(),ze(),ii(),Xc(),Vl(),wa(),Ks(),Yc(),fu(),kn(),$u(),Kn(),si(),xi(),Is(),gc(),Gs(),Os(),rd(),Xn(),ad(),_d(),$c(),bd(),Sd(),ls(),Lr(),Bc(),Sn(),Za(),Zf(),Gu(),ou(),$=K(),tm=`manage-prompts`,nm=`file-library-submenu`,rm={[g.Sketch]:.5},im=`model-submenu`,am=`internal-model-submenu`,om=10,sm=`move-to-project-submenu`,cm=`intelligence-submenu`,lm=20,um=20*1e3,dm=[],fm=[],pm=Xt({id:`composer.systemHintSuggestor.intelligenceSubmenu.title`,defaultMessage:`Intelligence`}),mm=e=>{"use forget";let t=(0,$p.c)(18),{itemId:n,isPending:r,label:i,onBlur:a,onConnect:s}=e,c=r!==void 0&&r,l=c||void 0,u=c||void 0,d=c?void 0:a,f=c?void 0:s,p;t[0]===c?p=t[1]:(p=c?(0,$.jsx)(`span`,{"aria-hidden":`true`,children:(0,$.jsx)(o,{className:`icon-sm`})}):(0,$.jsx)(en,{...Ka.suggestedPluginConnectLabel}),t[0]=c,t[1]=p);let m;t[2]!==n||t[3]!==i||t[4]!==l||t[5]!==u||t[6]!==d||t[7]!==f||t[8]!==p?(m=(0,$.jsx)(Dt,{type:`button`,"aria-label":i,"aria-busy":l,"aria-disabled":u,color:`tertiary`,"data-suggested-plugin-connect":n,onBlur:d,onClick:f,children:p}),t[2]=n,t[3]=i,t[4]=l,t[5]=u,t[6]=d,t[7]=f,t[8]=p,t[9]=m):m=t[9];let h;t[10]===c?h=t[11]:(h=c&&(0,$.jsx)(en,{...Ka.loading}),t[10]=c,t[11]=h);let g;t[12]!==i||t[13]!==h?(g=(0,$.jsx)(`span`,{role:`status`,"aria-label":i,className:`sr-only`,children:h}),t[12]=i,t[13]=h,t[14]=g):g=t[14];let _;return t[15]!==m||t[16]!==g?(_=(0,$.jsxs)($.Fragment,{children:[m,g]}),t[15]=m,t[16]=g,t[17]=_):_=t[17],_},hm=e=>{let t=new Set,n=[];for(let r of e)t.has(r.id)||(t.add(r.id),n.push(r));return n},gm=e=>e?{"@":`at_command`,"+":`at_command`,"/":`slash_command`}[e]??`slash_command`:`slash_command`,_m=()=>{},vm=(0,Q.memo)(function(e){"use forget";let t=(0,$p.c)(309),{availableSystemHints:n,suggestedPluginSystemHints:r,composerController:i,conversation:a,layoutMode:o,systemHintMenuSide:s,composerLayer:c,canUseInlineTagging:l,isFileUploadEnabled:u,fileUploadDisabledReason:d,currentModelConfig:f,openFileDialog:p,selectModelId:m,removeModel:h,clearModelSelection:_,gizmoId:b,hasGizmoFeatureRateLimit:x,setSelectedGizmoTag:S,isFirstPartyProject:C,inputState:te,disableReason:ne,disableAdvancedVoiceMode:re,disableVoiceButton:ie,composerToolAvailability:T,supportsLibraryFolderReferences:E,allowSharedLibraryReferences:ae,maxLibraryAttachmentCount:D,maxTotalLibraryAttachmentCount:oe,gizmoEditorMode:O}=e,se;t[0]===r?se=t[1]:(se=r===void 0?[]:r,t[0]=r,t[1]=se);let le=se,k=te===void 0?`default`:te,ue=re!==void 0&&re,de=ie!==void 0&&ie,pe=T===void 0?`default`:T,_e=E!==void 0&&E,ve=ae!==void 0&&ae,N=ln(),P=G(),F=tn(),ye=$t(),be;t[2]===a?be=t[3]:(be={conversation:a},t[2]=a,t[3]=be);let xe=ni(be),Se=he(),Ce=Se?.planType,L=y(),{disableAtTagging:we}=la(),Te=I(),Ee=Je(),z=!M(tt),Oe;t[4]===a?Oe=t[5]:(Oe=()=>tr(g.Think,a),t[4]=a,t[5]=Oe);let ke=M(Oe),Ae;t[6]===N?Ae=t[7]:(Ae=oi(N),t[6]=N,t[7]=Ae);let je=Ae,Me;t[8]!==je||t[9]!==a||t[10]!==z?(Me=()=>Bl({conversation:a,disabledReason:je,isUnifiedComposerMenuEnabled:z}),t[8]=je,t[9]=a,t[10]=z,t[11]=Me):Me=t[11];let B=M(Me),Pe=!z,Fe;t[12]===Symbol.for(`react.memo_cache_sentinel`)?(Fe=$e(),t[12]=Fe):Fe=t[12];let Ie=Fe,Le=M(w),Re;t[13]!==a.id||t[14]!==Le?(Re=()=>!Le||!v()||Kt(a.id),t[13]=a.id,t[14]=Le,t[15]=Re):Re=t[15];let ze=M(Re),Be=M(Bp),V;t[16]===i?V=t[17]:(V=()=>Qs(i),t[16]=i,t[17]=V);let{activeSystemHintType:Ve,activeConnectorSystemHintTypes:Ue,activeCustomAgentSystemHintType:We}=M(V),Ke=We!=null,Ye=M(a.serverId$),Xe=P.pathname===`/`&&Ye==null,Ze;t[18]===a?Ze=t[19]:(Ze=()=>lt(a),t[18]=a,t[19]=Ze);let et=M(Ze),H;t[20]===a?H=t[21]:(H=()=>De(a),t[20]=a,t[21]=H);let nt=M(H),rt;t[22]!==P.pathname||t[23]!==Ye?(rt=Ye!=null||ql(P.pathname),t[22]=P.pathname,t[23]=Ye,t[24]=rt):rt=t[24];let it=rt,{showModelSlashCommands:st}=c,U=pe===`files_only`,ut;t[25]===i?ut=t[26]:(ut=()=>nr()&&Dl(i),t[25]=i,t[26]=ut);let pt=M(ut),{file_uploads:mt,image_uploads:gt,video:_t}=Mc(),{disabled:yt,icon:bt,onSelect:xt}=hc(`ComposerPlusMenu`),St=Te&&Ee&&_t===`allowed`,Ct;t[27]!==mt||t[28]!==gt||t[29]!==N?(Ct=bn({fileUploads:mt,imageUploads:gt,intl:N}),t[27]=mt,t[28]=gt,t[29]=N,t[30]=Ct):Ct=t[30];let wt=Ct,Tt=z&&!u&&d===Tn.RateLimitReached&&Se?.hasPaidSubscription()!==!0&&Va(dt.RateLimitedFileUploadMenuItem),Et;t[31]!==Ce||t[32]!==F||t[33]!==L?.call_to_action?.[0]||t[34]!==L?.upsell_context_id||t[35]!==Ye?(Et=()=>{fi({navigate:F,openModalLocation:dt.RateLimitedFileUploadMenuItem,onBeforeAction:()=>{Ps({type:`file_upload`,location:`inline-text`,plan_type:Ce??`unknown`,is_hard_block:!1,hard_block_reason:``})},primaryAction:L?.call_to_action?.[0],sourceThreadId:Ye??null,upsellContextId:L?.upsell_context_id})},t[31]=Ce,t[32]=F,t[33]=L?.call_to_action?.[0],t[34]=L?.upsell_context_id,t[35]=Ye,t[36]=Et):Et=t[36];let Dt=Et;f?.title;let Ot;bb0:{if(!z){let e;t[37]!==f?.title||t[38]!==d||t[39]!==N||t[40]!==u||t[41]!==p?(e=no({title:wc(N,!u,d,f?.title),onSelect:p,disabled:!u,iconAriaLabel:``,shouldRestoreComposerFocusAfterSelect:!1}),t[37]=f?.title,t[38]=d,t[39]=N,t[40]=u,t[41]=p,t[42]=e):e=t[42],Ot=e;break bb0}if(Tt){let e;t[43]!==f?.title||t[44]!==N||t[45]!==Dt||t[46]!==L?(e=no({title:wc(N,!0,Tn.RateLimitReached,f?.title),secondary:fa(L,N),onSelect:Dt,disabled:!1,iconAriaLabel:``}),t[43]=f?.title,t[44]=N,t[45]=Dt,t[46]=L,t[47]=e):e=t[47],Ot=e;break bb0}let e;t[48]!==N||t[49]!==u||t[50]!==p||t[51]!==wt?(e=no({title:wt,secondary:Cr(N),onSelect:p,disabled:!u,iconAriaLabel:``,shouldRestoreComposerFocusAfterSelect:!1}),t[48]=N,t[49]=u,t[50]=p,t[51]=wt,t[52]=e):e=t[52],Ot=e}let kt=Ot,jt;t[53]!==Pe||t[54]!==z?(jt={showDescriptions:z,showSelectedDecoration:Pe,unifiedComposerSelectionStateEnabled:z},t[53]=Pe,t[54]=z,t[55]=jt):jt=t[55];let Mt=Cs(jt),Pt;if(t[56]!==kt||t[57]!==Be||t[58]!==U||t[59]!==F||t[60]!==z){bb1:{let e=[];if(e.push(kt),U||z){Pt=e.map(Zc);break bb1}Be&&e.push({command:`add-mcp`,aliases:[`mcp`],title:`Add MCP`,icon:(0,$.jsx)(Jo,{className:`icon`}),noMatchEmpty:!0,onSelect:()=>{F(R(at.Connectors))}}),Pt=e.map(Zc)}t[56]=kt,t[57]=Be,t[58]=U,t[59]=F,t[60]=z,t[61]=Pt}else Pt=t[61];let Ft=Pt,It;t[62]!==a||t[63]!==f?.id||t[64]!==h||t[65]!==m||t[66]!==st?(It=()=>Ge(()=>st?Xs({modelsData:Hn(a),currentModelId:f?.id,selectModelId:m,removeModel:h}).map(Zc):[]),t[62]=a,t[63]=f?.id,t[64]=h,t[65]=m,t[66]=st,t[67]=It):It=t[67],f?.id;let W;t[68]===It?W=t[69]:(W=It(),t[68]=It,t[69]=W);let Lt=W;f?.id;let Rt;t[70]!==a||t[71]!==f?.id||t[72]!==N||t[73]!==h||t[74]!==m||t[75]!==st?(Rt=Ge(()=>{if(!st)return[];let e=Hn(a),t=mr(a).conversationVersion$();return tc({modelsData:e,currentModelId:f?.id,currentVersionId:t,selectModelId:m,intl:N,showModelSlashCommands:st,removeModel:h})}),t[70]=a,t[71]=f?.id,t[72]=N,t[73]=h,t[74]=m,t[75]=st,t[76]=Rt):Rt=t[76];let zt=Rt,Bt;t[77]===Symbol.for(`react.memo_cache_sentinel`)?(Bt=Li(),t[77]=Bt):Bt=t[77];let Vt=z&&Ie&&Bt;f?.id;let Wt;t[78]!==a||t[79]!==f?.id||t[80]!==m||t[81]!==Vt?(Wt=Ge(()=>{if(!Vt)return[];let e=Hn(a),t=mr(a).conversationVersion$();return Ls({conversation:a,modelsData:e,currentModelId:f?.id,currentVersionId:t,selectModelId:m})}),t[78]=a,t[79]=f?.id,t[80]=m,t[81]=Vt,t[82]=Wt):Wt=t[82];let Gt=Wt,qt;t[83]!==a||t[84]!==f?.id||t[85]!==b||t[86]!==xe?(qt=()=>Ge(()=>Vs(a)?mc({conversation:a,modelsData:Hn(a),currentModelId:f?.id,modelSwitcherDenialsBySlug:xe,preferredModelId:b==null?void 0:qe(b).data?.gizmo.default_model??void 0}):[],{equals:ce}),t[83]=a,t[84]=f?.id,t[85]=b,t[86]=xe,t[87]=qt):qt=t[87],f?.id;let Jt;t[88]===qt?Jt=t[89]:(Jt=qt(),t[88]=qt,t[89]=Jt);let Yt=Jt,K;t[90]!==Ce||t[91]!==n||t[92]!==U?(K=Rp({accountPlanType:Ce,availableSystemHints:n,isFilesOnlyComposer:U}),t[90]=Ce,t[91]=n,t[92]=U,t[93]=K):K=t[93];let Xt=K,Zt;t[94]===i?Zt=t[95]:(Zt=()=>rs(i).controller$(),t[94]=i,t[95]=Zt);let Qt=M(Zt),en=we===!0,nn;t[96]!==en||t[97]!==U||t[98]!==Te||t[99]!==Qt?(nn=e=>ha({hint:e,sketchComposer:Qt,disableAtTagging:en,isFilesOnlyComposer:U,isIntegratedVoiceModeActive:Te}),t[96]=en,t[97]=U,t[98]=Te,t[99]=Qt,t[100]=nn):nn=t[100];let rn=nn,an;t[101]!==_||t[102]!==i||t[103]!==ke||t[104]!==B||t[105]!==rn||t[106]!==Pe||t[107]!==z?(an={composerController:i,clearModelSelection:_,isThinkingSystemHintPersistent:ke,resolveSystemHintBehavior:rn,resolveConsumerLockdownModeSuggestion:B,showDescriptions:z,showSelectedDecoration:Pe,unifiedComposerSelectionStateEnabled:z},t[101]=_,t[102]=i,t[103]=ke,t[104]=B,t[105]=rn,t[106]=Pe,t[107]=z,t[108]=an):an=t[108];let on=Fs(a,an),sn;bb2:{if(we){let e;t[109]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[109]=e):e=t[109],sn=e;break bb2}let e;if(t[110]!==Xt||t[111]!==l||t[112]!==on){let n;t[114]===l?n=t[115]:(n=e=>A(e.systemHint)?!1:!l||!e.isConnector,t[114]=l,t[115]=n);let r;t[116]===on?r=t[117]:(r=e=>{let t=on(e);return t==null?[]:[t]},t[116]=on,t[117]=r),e=(Xt??[]).filter(n).flatMap(r),t[110]=Xt,t[111]=l,t[112]=on,t[113]=e}else e=t[113];sn=e}let cn=sn,un;t[118]!==n||t[119]!==Ke||t[120]!==U?(un=U||Ke?[]:hn(n??[]),t[118]=n,t[119]=Ke,t[120]=U,t[121]=un):un=t[121];let dn=un,fn;t[122]!==a.id||t[123]!==N||t[124]!==B||t[125]!==z?(fn=e=>{let t=Dc(e,N),{isBlocked:n,shouldShowBlockedModal:r,treatment:i}=B(e),o=e=>{if(n){r&&At(so,{clientThreadId:a.id,toolName:t});return}e()};return{command:{command:t,aliases:t===e.name?void 0:[e.name],title:t,type:el.App,isConnected:e.isConnected,isHeadPlugin:e.isHeadPlugin,systemHintType:e.systemHint,icon:(0,$.jsx)(mn,{hint:e,isNextToLabel:!0}),secondary:z?e.description:void 0,...i},isBlocked:n,runIfAllowed:o}},t[122]=a.id,t[123]=N,t[124]=B,t[125]=z,t[126]=fn):fn=t[126];let pn=fn,gn;t[127]===Symbol.for(`react.memo_cache_sentinel`)?(gn=zi(),t[127]=gn):gn=t[127];let _n=gn,[vn,yn]=(0,Q.useState)(null),xn=(0,Q.useRef)(null),Sn;t[128]===Symbol.for(`react.memo_cache_sentinel`)?(Sn=e=>{e==null?yn(null):(0,em.flushSync)(()=>yn(e))},t[128]=Sn):Sn=t[128];let Cn=Sn,Dn,kn;t[129]===Symbol.for(`react.memo_cache_sentinel`)?(Dn=()=>()=>{xn.current=null},kn=[],t[129]=Dn,t[130]=kn):(Dn=t[129],kn=t[130]),(0,Q.useEffect)(Dn,kn);let An;bb3:{if(!z){let e;t[131]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[131]=e):e=t[131],An=e;break bb3}if(!Ie){let e;if(t[132]!==N||t[133]!==le){let n=N.formatMessage(Ne.logInButtonText),r;t[135]===N?r=t[136]:(r=e=>Dc(e,N),t[135]=N,t[136]=r),e=_i(le.filter(Vp),_n,Hp,r).map(e=>{let t=Dc(e,N);return{item:{id:`logged-out-upsell:${e.systemHint}`,title:t,secondary:e.description,icon:(0,$.jsx)(mn,{hint:e,isNextToLabel:!0}),matchText:[e.name,e.description,...e.aliases],onSelect:()=>wn(e.systemHint),showFor:[`at_command`],trailing:n,trailingColor:`tertiary`}}}),t[132]=N,t[133]=le,t[134]=e}else e=t[134];An=e;break bb3}if(Ke){let e;t[137]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[137]=e):e=t[137],An=e;break bb3}let e;t[138]!==Se||t[139]!==i||t[140]!==pn||t[141]!==N||t[142]!==et||t[143]!==P.hash||t[144]!==P.pathname||t[145]!==P.search||t[146]!==F||t[147]!==vn||t[148]!==ye||t[149]!==le?(e=le.map(e=>{let t=ft(e.systemHint),{command:n,runIfAllowed:r}=pn(e);return{...id({productExperience:mi(et?`work`:`chat`),account:Se,command:n,intl:N,location:{pathname:P.pathname,search:P.search,hash:P.hash},navigateToPluginDetails:(e,t)=>F(e,{state:t}),onConnected:e=>Js(i,e),onPendingChange:Cn,getPendingConnection:()=>xn,pluginId:t,queryClient:ye,runIfAllowed:r,systemHintType:e.systemHint}),isPending:vn===t}}),t[138]=Se,t[139]=i,t[140]=pn,t[141]=N,t[142]=et,t[143]=P.hash,t[144]=P.pathname,t[145]=P.search,t[146]=F,t[147]=vn,t[148]=ye,t[149]=le,t[150]=e):e=t[150],An=e}let jn=An,Mn;t[151]!==n||t[152]!==U?(Mn=U?[]:(n??[]).filter(Up),t[151]=n,t[152]=U,t[153]=Mn):Mn=t[153];let Nn=Mn,Pn;t[154]!==nt||t[155]!==et?(Pn=En({conversationOrigin:nt,isTPPConversationMode:et}),t[154]=nt,t[155]=et,t[156]=Pn):Pn=t[156];let Fn=l&&!we&&ze,In;t[157]!==ve||t[158]!==i||t[159]!==a||t[160]!==O||t[161]!==D||t[162]!==oe||t[163]!==_e||t[164]!==Pn||t[165]!==Fn||t[166]!==z?(In={allowMountedLibraryLiveReferences:Pn,allowSharedLibraryReferences:ve,canUseInlineTagging:Fn,composerController:i,conversation:a,maxLibraryAttachmentCount:D,maxTotalLibraryAttachmentCount:oe,gizmoEditorMode:O,supportsLibraryFolderReferences:_e,unifiedComposerSelectionStateEnabled:z},t[157]=ve,t[158]=i,t[159]=a,t[160]=O,t[161]=D,t[162]=oe,t[163]=_e,t[164]=Pn,t[165]=Fn,t[166]=z,t[167]=In):In=t[167];let{fileLibraryBrowseSuggestions:Ln,fileLibraryPathSuggestions:Rn,isFileLibrarySearchPending:zn,librarySearchKey:Bn,libraryFolderPathSuggestions:Vn,isLibraryFolderUiEnabled:Un,isMultiwordLibraryMentionParsingEnabled:Wn,onSearchQueryChange:Gn,openFileLibraryModal:Kn,showFileLibraryEntrypoint:qn}=ef(In),[J,Jn]=(0,Q.useState)(``),[Y,Yn]=(0,Q.useState)(!1),Xn=kl({enabled:Y&&Ie&&ze&&!U&&!Te&&pt})??fm,Zn;t[168]===Gn?Zn=t[169]:(Zn=(e,t,n)=>{Jn(e),Yn(t===`@`),Gn(e,t,n)},t[168]=Gn,t[169]=Zn);let Qn=Zn,$n;t[170]!==Ue||t[171]!==We||t[172]!==Ve||t[173]!==Nn||t[174]!==dn||t[175]!==l||t[176]!==_||t[177]!==i||t[178]!==a||t[179]!==we||t[180]!==pn||t[181]!==b||t[182]!==x||t[183]!==N||t[184]!==U||t[185]!==C||t[186]!==Xe||t[187]!==et||t[188]!==Le||t[189]!==S||t[190]!==Pe||t[191]!==z?($n=Ge(()=>{if(U||!l||we)return[];let e=vt(),{data:t}=Nt(),{data:n}=ct(),r=Ur([...e??[],...t?.list.items?.map(Wp)??[],...n?.items?.map(Gp)??[]],Kp).filter(e=>b==null||e.gizmo.id!==b),o=dn.map(e=>{let{command:t,isBlocked:n,runIfAllowed:r}=pn(e),o=Ms(e.systemHint,Ve,Ue),s=o&&Pe,c=e.systemHint===j,l;return n||(z?l=e.name:!o&&!c&&(l=`@${e.name}`)),{...t,trailing:s?(0,$.jsx)(me.CheckSm,{className:`icon-sm`}):t.trailing,trailingColor:s?`primary`:t.trailingColor,color:s?`selected`:void 0,insertText:l,mention:z?{representation:`inline-pill`,kind:`system-hint`}:void 0,onSelect:()=>r(()=>{if(o){if(z)return;zs(i,e.systemHint);return}A(e.systemHint)&&ll(ft(e.systemHint)),Js(i,e.systemHint),Ti(e.systemHint,Zr.AtMention,_r({clientThreadId:Qe(a)}))})}}),s=Nn.map(e=>{let t=Dc(e,N),n=We===e.systemHint,r=n&&Pe;return{...Zc({command:t,title:t,aliases:t===e.name?[...e.aliases]:[e.name,...e.aliases],regexMatches:e.regexMatches?[...e.regexMatches]:void 0,type:el.App,isConnected:!1,icon:(0,$.jsx)(mn,{hint:e,isNextToLabel:!0}),secondary:z?e.description:void 0,trailing:r?(0,$.jsx)(me.CheckSm,{className:`icon-sm`}):void 0,trailingColor:r?`primary`:void 0,color:r?`selected`:void 0,onSelect:()=>{n||ot(()=>{Ut.set(a,null),_?.();let t=hs(i);z?Wc(t):sc(t),fs.set(i,qp),As(i,e.systemHint)})}}),id:e.systemHint}}),c=Xe&&!Le&&fe(),u=C?[]:r.flatMap(e=>{let t=Ht(e.gizmo.id),n=t&&Xe&&c;if(t&&!n||!t&&et)return[];let r=n?el.Project:el.Gizmo,i=et&&t&&!ht(e),o=i?gi(e):null,s=zp(e.gizmo.display.emoji)?e.gizmo.display.emoji:null;return[{command:e.gizmo.display.name,title:e.gizmo.display.name,type:r,disabled:x||i,tooltip:o==null?void 0:{primary:N.formatMessage(o)},icon:r===el.Project?(0,$.jsx)(sr,{color:e.gizmo.display.theme??null,emoji:s,strict:!0}):(0,$.jsx)(Oa,{simple:!0,isFirstParty:!!e.gizmo.tags?.includes(ge.FirstParty),src:e.gizmo.display.profile_picture_url,className:`icon`,alt:``}),onSelect:()=>{if(He.logEventWithStatsig(`Composer GPT Selected`,`chatgpt_web_composer_gpt_selected`,{gizmo:e.gizmo.id}),r===el.Project){if(w())return;ws({conversation:a,gizmo:e,entrySurface:`slash_command`}),S(e);return}S(e)}}]}).filter(e=>!o.some(t=>t.command===e.command));return Ur([...o.map(Zc),...s,...u.map(Zc)],Jp)}),t[170]=Ue,t[171]=We,t[172]=Ve,t[173]=Nn,t[174]=dn,t[175]=l,t[176]=_,t[177]=i,t[178]=a,t[179]=we,t[180]=pn,t[181]=b,t[182]=x,t[183]=N,t[184]=U,t[185]=C,t[186]=Xe,t[187]=et,t[188]=Le,t[189]=S,t[190]=Pe,t[191]=z,t[192]=$n):$n=t[192];let er=$n,rr;t[193]!==U||t[194]!==C||t[195]!==z?(rr=!z&&!U&&!C&&Or(),t[193]=U,t[194]=C,t[195]=z,t[196]=rr):rr=t[196];let ir=rr,or;t[197]===Symbol.for(`react.memo_cache_sentinel`)?(or=fr(),t[197]=or):or=t[197];let cr=or,lr;t[198]===Symbol.for(`react.memo_cache_sentinel`)?(lr=Ii(),t[198]=lr):lr=t[198];let ur=lr,dr;t[199]===Symbol.for(`react.memo_cache_sentinel`)?(dr=On()??0,t[199]=dr):dr=t[199];let pr=(0,Q.useRef)(dr),hr=(0,Q.useRef)(0),gr;t[200]===ir?gr=t[201]:(gr={enabled:ir},t[200]=ir,t[201]=gr);let{data:vr,isLoading:yr,hasNextPage:br,refetch:xr}=q(gr),Sr=ir&&vr!=null&&!br,wr,X;t[202]!==xr||t[203]!==J.length||t[204]!==Sr?(wr=()=>{if(!cr||J.length===0||!Sr)return;let e=On();if(e==null||e<=pr.current)return;let t=Date.now();t-hr.current<um||(hr.current=t,xr().then(t=>{t.status===`success`&&(pr.current=Math.max(pr.current,e))}).catch(Yp))},X=[xr,J.length,cr,Sr],t[202]=xr,t[203]=J.length,t[204]=Sr,t[205]=wr,t[206]=X):(wr=t[205],X=t[206]),(0,Q.useEffect)(wr,X);let Tr=Gi(),Dr;t[207]!==i||t[208]!==a||t[209]!==Tr?(Dr=(e,t)=>{rc({prompt:e,conversation:a,composerController:i,referer:t,trackPromptInvocation:Tr})},t[207]=i,t[208]=a,t[209]=Tr,t[210]=Dr):Dr=t[210];let kr=Dr,Ar;bb4:{if(!vr||!ir){let e;t[211]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[211]=e):e=t[211],Ar=e;break bb4}let e;t[212]===vr.pages?e=t[213]:(e=ee(vr.pages.map(Xp)),t[212]=vr.pages,t[213]=e),Ar=e}let jr=Ar,Mr=ir&&br&&J.length>0,Nr;t[214]!==J||t[215]!==Mr?(Nr={search:J,enabled:Mr},t[214]=J,t[215]=Mr,t[216]=Nr):Nr=t[216];let{data:Z,isLoading:Pr,isFetching:Fr}=ar(Nr),Ir=Mr&&(Pr||Fr),Lr;bb5:{if(!Z){let e;t[217]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[217]=e):e=t[217],Lr=e;break bb5}let e;t[218]===Z.pages?e=t[219]:(e=ee(Z.pages.map(Zp)),t[218]=Z.pages,t[219]=e),Lr=e}let Rr=Lr,zr;t[220]===kr?zr=t[221]:(zr=e=>({id:`prompt:${e.name}`,title:e.name,matchText:[e.name],showFor:[`at_command`],searchParameters:{targets:[e.name]},icon:ur?Aa(e.symbol,{className:`icon-sm`}):(0,$.jsx)(Bo,{className:`icon-sm`}),onSelect:t=>{kr(e,t??`slash_command`)}}),t[220]=kr,t[221]=zr);let Br=zr,Vr;bb6:{if(!ir){let e;t[222]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[222]=e):e=t[222],Vr=e;break bb6}let e;t[223]!==jr||t[224]!==Rr||t[225]!==J.length?(e=J.length>0?hm([...Rr,...jr]):jr,t[223]=jr,t[224]=Rr,t[225]=J.length,t[226]=e):e=t[226];let n=e,r;t[227]!==n||t[228]!==J.length?(r=J.length>0?n:n.slice(0,lm),t[227]=n,t[228]=J.length,t[229]=r):r=t[229];let i=r,a;t[230]!==i||t[231]!==Br?(a=i.map(Br),t[230]=i,t[231]=Br,t[232]=a):a=t[232],Vr=a}let Hr=Vr,Wr=yr||Ir,Gr=!Ie&&z&&!Te,Kr;bb7:{if(!z){Kr=void 0;break bb7}let e;t[233]!==kt||t[234]!==N||t[235]!==Tt||t[236]!==Gr?(e=Gr?{...kt,command:`upload-photos`,aliases:[`photo`,`photos`,`image`,`images`],title:Tt?kt.title:N.formatMessage(Er.photosOnly)}:kt,t[233]=kt,t[234]=N,t[235]=Tt,t[236]=Gr,t[237]=e):e=t[237];let n=e,r;t[238]===n?r=t[239]:(r=Zc(n),t[238]=n,t[239]=r),Kr=r}let qr=Kr,Jr;bb8:{if(!z||!St){Jr=void 0;break bb8}let e;t[240]!==bt||t[241]!==N||t[242]!==yt||t[243]!==xt?(e=Zc({command:`camera`,aliases:[`video`],title:N.formatMessage(kc),icon:bt,disabled:yt,onSelect:xt,shouldRestoreComposerFocusAfterSelect:!1}),t[240]=bt,t[241]=N,t[242]=yt,t[243]=xt,t[244]=e):e=t[244],Jr=e}let Yr=Jr,Xr;t[245]!==i||t[246]!==N||t[247]!==u?(Xr=()=>Fl({composerController:i,intl:N,isFileUploadEnabled:u}),t[245]=i,t[246]=N,t[247]=u,t[248]=Xr):Xr=t[248];let Qr=M(Xr),$r;t[249]!==N||t[250]!==Gr?($r=Gr?Zc(Ku(N)):void 0,t[249]=N,t[250]=Gr,t[251]=$r):$r=t[251];let ei=$r,ti;t[252]===cn?ti=t[253]:(ti=cn.find(Qp),t[252]=cn,t[253]=ti);let ri=ti;f?.id;let ii;t[254]!==a||t[255]!==f?.id||t[256]!==m||t[257]!==Vt?(ii=Ge(()=>Vt?Sc({conversation:a,modelsData:Hn(a),currentModelId:f?.id,selectModelId:m}):[]),t[254]=a,t[255]=f?.id,t[256]=m,t[257]=Vt,t[258]=ii):ii=t[258];let ai=ii,si;t[259]!==Wr||t[260]!==Hr?(si={slashCommands:Hr,isLoading:Wr},t[259]=Wr,t[260]=Hr,t[261]=si):si=t[261];let ci;t[262]===cn?ci=t[263]:(ci=cn??[],t[262]=cn,t[263]=ci);let li;return t[264]!==ze||t[265]!==i||t[266]!==pe||t[267]!==a||t[268]!==ue||t[269]!==ne||t[270]!==de||t[271]!==Ln||t[272]!==Rn||t[273]!==ei||t[274]!==er||t[275]!==Qn||t[276]!==Mt||t[277]!==k||t[278]!==ai||t[279]!==Yt||t[280]!==it||t[281]!==Ke||t[282]!==zn||t[283]!==C||t[284]!==Xe||t[285]!==Te||t[286]!==Un||t[287]!==Wn||t[288]!==Le||t[289]!==zt||t[290]!==o||t[291]!==Vn||t[292]!==Bn||t[293]!==Lt||t[294]!==Gt||t[295]!==Kn||t[296]!==jn||t[297]!==Qr||t[298]!==Yr||t[299]!==qr||t[300]!==Xn||t[301]!==S||t[302]!==qn||t[303]!==Ft||t[304]!==s||t[305]!==si||t[306]!==ci||t[307]!==ri?(li=(0,$.jsx)(np,{gptsAndAppsSlashCommands$:er,pluginSuggestionRows:jn,laneModelSlashCommands$:zt,intelligenceSlashCommands$:ai,modelVersionSlashCommands$:Gt,internalModelSlashCommands$:Yt,modelSlashCommands$:Lt,hazelnutSlashCommands:Mt,onSearchQueryChange:Qn,templatedPrompts:si,fileLibraryBrowseSuggestions:Ln,fileLibraryPathSuggestions:Rn,isFileLibrarySearchPending:zn,librarySearchKey:Bn,libraryFolderPathSuggestions:Vn,referenceImageSuggestions:Xn,isLibraryFolderUiEnabled:Un,isMultiwordLibraryMentionParsingEnabled:Wn,slashCommands:Ft,plusCameraSuggestion:Yr,plusUploadSuggestion:qr,plusAudioAttachmentSuggestion:Qr,fileUploadUpsell:ei,openFileLibraryModal:Kn,showFileLibraryEntrypoint:qn,systemHints:ci,composerController:i,canAccessFileLibrary:ze,conversation:a,layoutMode:o,systemHintMenuSide:s,isHomeNewChatComposer:Xe,isCustomAgentHintActive:Ke,isFirstPartyProject:C,isConversationViewComposer:it,isTemporaryChat:Le,isIntegratedVoiceModeActive:Te,inputState:k,disableReason:ne,disableAdvancedVoiceMode:ue,disableVoiceButton:de,thinkingSlashCommand:ri,setSelectedGizmoTag:S,composerToolAvailability:pe}),t[264]=ze,t[265]=i,t[266]=pe,t[267]=a,t[268]=ue,t[269]=ne,t[270]=de,t[271]=Ln,t[272]=Rn,t[273]=ei,t[274]=er,t[275]=Qn,t[276]=Mt,t[277]=k,t[278]=ai,t[279]=Yt,t[280]=it,t[281]=Ke,t[282]=zn,t[283]=C,t[284]=Xe,t[285]=Te,t[286]=Un,t[287]=Wn,t[288]=Le,t[289]=zt,t[290]=o,t[291]=Vn,t[292]=Bn,t[293]=Lt,t[294]=Gt,t[295]=Kn,t[296]=jn,t[297]=Qr,t[298]=Yr,t[299]=qr,t[300]=Xn,t[301]=S,t[302]=qn,t[303]=Ft,t[304]=s,t[305]=si,t[306]=ci,t[307]=ri,t[308]=li):li=t[308],li}),ym=()=>{"use forget";let e=(0,$p.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsxs)(`div`,{"aria-hidden":`true`,className:`skeleton group relative mx-1.5 flex min-h-(--menu-item-height) w-auto items-center gap-1.5 rounded-[10px] px-2.5 py-1.5 [--skeleton-opacity:0.75]`,children:[(0,$.jsx)(`div`,{className:`skeleton-child icon shrink-0 rounded-md`}),(0,$.jsx)(`div`,{className:`skeleton-child h-4 w-40 max-w-[70%] rounded-md`})]}),e[0]=t):t=e[0],t}}));export{Qf as n,bm as r,vm as t};
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $W as r,
+    $rt as i,
+    A0 as a,
+    Az as o,
+    BK as s,
+    BV as c,
+    Bk as l,
+    Bx as u,
+    C1 as d,
+    CN as f,
+    Cm as p,
+    Cy as m,
+    Ek as h,
+    Eq as g,
+    Ex as _,
+    F0 as v,
+    FP as y,
+    Fq as b,
+    GH as ee,
+    GU as x,
+    Gst as S,
+    HK as C,
+    Hp as te,
+    Hq as ne,
+    I0 as w,
+    I8 as re,
+    IN as ie,
+    Ik as T,
+    Iq as E,
+    J5 as ae,
+    Jtt as D,
+    KH as oe,
+    Kk as O,
+    L1 as se,
+    L8 as ce,
+    LN as le,
+    LU as k,
+    Lnt as ue,
+    Lq as A,
+    Ls as de,
+    Mk as fe,
+    Mq as pe,
+    Ms as j,
+    Mz as me,
+    N1 as he,
+    N5 as M,
+    NV as ge,
+    Nq as _e,
+    Nz as ve,
+    P7 as N,
+    PS as P,
+    Pnt as F,
+    Q0 as ye,
+    Qd as I,
+    Qu as be,
+    R7 as xe,
+    RU as Se,
+    Rk as Ce,
+    S5 as L,
+    Sc as we,
+    Sm as Te,
+    Sy as R,
+    Tk as Ee,
+    U0 as z,
+    Uu as De,
+    Vd as Oe,
+    Vx as ke,
+    W0 as Ae,
+    WU as je,
+    Wk as Me,
+    Wnt as B,
+    Wrt as Ne,
+    Xd as Pe,
+    Xnt as Fe,
+    Y5 as Ie,
+    YW as Le,
+    Z0 as Re,
+    ZK as ze,
+    Zu as Be,
+    _N as V,
+    __ as Ve,
+    _nt as He,
+    aq as Ue,
+    b2 as We,
+    b8 as Ge,
+    bP as Ke,
+    cD as qe,
+    cf as Je,
+    cm as Ye,
+    dD as Xe,
+    dE as Ze,
+    dF as Qe,
+    dit as $e,
+    ek as et,
+    el as H,
+    eq as tt,
+    fF as nt,
+    fV as rt,
+    fq as it,
+    fy as at,
+    h5 as ot,
+    h8 as st,
+    hV as U,
+    i_ as ct,
+    il as lt,
+    im as ut,
+    jet as dt,
+    jq as ft,
+    js as pt,
+    jz as mt,
+    kS as ht,
+    kU as gt,
+    lf as _t,
+    lk as vt,
+    mst as yt,
+    nY as bt,
+    n_ as xt,
+    of as St,
+    oq as Ct,
+    pE as wt,
+    pY as Tt,
+    pnt as Et,
+    px as Dt,
+    qB as Ot,
+    qJ as kt,
+    t2 as At,
+    tV as jt,
+    tct as Mt,
+    uD as Nt,
+    uit as Pt,
+    vN as Ft,
+    w8 as It,
+    wet as W,
+    wx as Lt,
+    x2 as Rt,
+    x5 as zt,
+    xm as Bt,
+    yN as Vt,
+    yV as Ht,
+    yc as Ut,
+    ynt as Wt,
+    yx as Gt,
+    z0 as Kt,
+    zU as qt,
+    zm as Jt,
+    zq as Yt
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    At as G,
+    Bn as K,
+    In as Xt,
+    Kt as Zt,
+    Ln as Qt,
+    N as $t,
+    Nn as en,
+    Nt as tn,
+    Q as nn,
+    Rn as rn,
+    Vn as an,
+    l as on,
+    s as sn,
+    wn as cn,
+    zn as ln
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $9t as un,
+    $X as dn,
+    $gn as fn,
+    AHt as pn,
+    AQ as q,
+    AX as mn,
+    B5 as hn,
+    B9t as gn,
+    BHn as _n,
+    BIn as vn,
+    Bzt as yn,
+    C$ as bn,
+    Cpn as xn,
+    D$ as Sn,
+    DQ as Cn,
+    DX as wn,
+    E$ as Tn,
+    E5t as En,
+    ENn as Dn,
+    EQ as On,
+    EX as kn,
+    EY as An,
+    Ejn as jn,
+    FIn as Mn,
+    FY as Nn,
+    Ffn as Pn,
+    Fgn as Fn,
+    Fpn as In,
+    Fx as Ln,
+    HNn as Rn,
+    Hfn as zn,
+    Hmn as Bn,
+    Hv as Vn,
+    Hyn as Hn,
+    IWt as Un,
+    IY as Wn,
+    Ifn as Gn,
+    Ivn as Kn,
+    Ix as qn,
+    Ixn as J,
+    Izn as Jn,
+    JS as Y,
+    JY as Yn,
+    Ju as Xn,
+    Jyn as Zn,
+    Kyn as Qn,
+    L9t as $n,
+    LY as er,
+    Lvn as tr,
+    Lxn as nr,
+    M2 as rr,
+    MPt as ir,
+    MQ as ar,
+    MX as or,
+    Mpn as sr,
+    NHn as cr,
+    NY as lr,
+    Npn as ur,
+    OFn as dr,
+    OQ as fr,
+    OUt as pr,
+    Oyn as mr,
+    PAt as hr,
+    PHn as gr,
+    PIn as _r,
+    Q9t as vr,
+    Qbn as yr,
+    Qzn as br,
+    Rgn as xr,
+    Rxn as Sr,
+    S$ as Cr,
+    S5t as wr,
+    SUt as X,
+    SY as Tr,
+    T$ as Er,
+    T9t as Dr,
+    TQ as Or,
+    TUt as kr,
+    TX as Ar,
+    U9t as jr,
+    UHn as Mr,
+    UNn as Nr,
+    UR as Z,
+    UUn as Pr,
+    Umn as Fr,
+    Uv as Ir,
+    V5 as Lr,
+    V9t as Rr,
+    VIn as zr,
+    Vmn as Br,
+    Vpn as Vr,
+    Vv as Hr,
+    Vzt as Ur,
+    WR as Wr,
+    WUn as Gr,
+    Wfn as Kr,
+    Xyn as qr,
+    Yzn as Jr,
+    ZIn as Yr,
+    Zbn as Xr,
+    Zgn as Zr,
+    Zzn as Qr,
+    _Nn as $r,
+    _Ut as ei,
+    _at as ti,
+    _dn as ni,
+    aEt as ri,
+    aY as ii,
+    afn as ai,
+    agn as oi,
+    axn as si,
+    bNn as ci,
+    bU as li,
+    bUt as ui,
+    btt as di,
+    c0 as fi,
+    cMt as pi,
+    cSn as mi,
+    cgn as hi,
+    cpn as gi,
+    cxn as _i,
+    d2t as vi,
+    d7 as yi,
+    d7t as bi,
+    dfn as xi,
+    dgn as Si,
+    eEt as Ci,
+    eLn as wi,
+    e_n as Ti,
+    een as Ei,
+    fUt as Di,
+    fX as Oi,
+    gZ as ki,
+    gdn as Ai,
+    ggn as ji,
+    hgn as Mi,
+    hpn as Ni,
+    i7t as Pi,
+    iEt as Fi,
+    iX as Ii,
+    ibn as Li,
+    ifn as Ri,
+    ixn as zi,
+    j2 as Bi,
+    j9t as Vi,
+    jAt as Hi,
+    jHt as Ui,
+    jPt as Wi,
+    jQ as Gi,
+    jY as Ki,
+    jxn as qi,
+    jyn as Ji,
+    kFn as Yi,
+    kxn as Xi,
+    l0 as Zi,
+    l6 as Qi,
+    lSn as $i,
+    len as ea,
+    lpn as ta,
+    mUt as na,
+    mX as ra,
+    mxn as ia,
+    nFt as aa,
+    nLn as oa,
+    nPn as sa,
+    nTn as ca,
+    nX as la,
+    nZ as ua,
+    nxn as da,
+    o0 as fa,
+    oVn as pa,
+    oX as ma,
+    oY as ha,
+    ogn as ga,
+    p7 as _a,
+    pUt as va,
+    pxn as ya,
+    qIn as ba,
+    qS as xa,
+    qY as Sa,
+    qu as Ca,
+    qzn as wa,
+    rFt as Ta,
+    rPn as Ea,
+    rxn as Da,
+    sMt as Oa,
+    sVn as ka,
+    sX as Aa,
+    sbn as ja,
+    sgn as Ma,
+    sxn as Na,
+    tEt as Pa,
+    tLn as Fa,
+    tTn as Ia,
+    tX as La,
+    tZ as Ra,
+    ten as za,
+    txn as Ba,
+    u0 as Va,
+    u2t as Ha,
+    u6 as Ua,
+    uUt as Wa,
+    uen as Ga,
+    ufn as Ka,
+    ugn as qa,
+    vPt as Ja,
+    vWt as Ya,
+    vpn as Xa,
+    w$ as Za,
+    w9t as Qa,
+    wPn as $a,
+    wX as eo,
+    wY as to,
+    x$ as no,
+    x9t as ro,
+    xPn as io,
+    xU as ao,
+    xUt as oo,
+    xY as so,
+    xat as co,
+    xpn as lo,
+    yNn as uo,
+    yPt as fo,
+    yUt as po,
+    yZ as mo,
+    ytt as ho,
+    z5 as go,
+    zv as _o,
+    zzn as vo
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+import {
+    Fu as yo,
+    Hx as bo,
+    Iu as xo,
+    Kb as So,
+    Ky as Co,
+    Lu as wo,
+    Mu as To,
+    Nu as Eo,
+    Pu as Do,
+    Ru as Oo,
+    Tp as ko,
+    Ux as Ao,
+    VS as jo,
+    Xx as Mo,
+    Zx as No,
+    _v as Po,
+    bS as Fo,
+    cS as Io,
+    gS as Lo,
+    gv as Ro,
+    lS as zo,
+    mS as Bo,
+    oC as Vo,
+    qb as Ho,
+    qy as Uo,
+    sC as Wo,
+    wp as Go,
+    yS as Ko,
+    zS as qo,
+    zu as Jo
+} from "./30901919-7dzdc1ou0jtwkwpt.js";
+import {
+    $t as Yo,
+    an as Xo
+} from "./82782bc9-mb60yg1xlggwvqri.js";
+import {
+    Au as Zo,
+    CS as Qo,
+    Ca as $o,
+    Fv as es,
+    G_ as ts,
+    Ga as ns,
+    Gs as rs,
+    Hh as is,
+    I_ as as,
+    Iv as os,
+    J_ as ss,
+    Jc as cs,
+    Js as ls,
+    K_ as us,
+    Ka as ds,
+    Kf as fs,
+    Kh as ps,
+    Ks as ms,
+    L_ as hs,
+    Lb as gs,
+    Lf as _s,
+    M_ as vs,
+    Mc as ys,
+    Ms as bs,
+    N_ as xs,
+    Nc as Ss,
+    Pc as Cs,
+    Qs as ws,
+    Rf as Ts,
+    SS as Es,
+    Sb as Ds,
+    X_ as Os,
+    Xc as ks,
+    Xs as As,
+    Y_ as js,
+    Ys as Ms,
+    Z_ as Ns,
+    Zc as Ps,
+    Zs as Fs,
+    _S as Is,
+    _r as Ls,
+    ai as Rs,
+    b_ as zs,
+    ba as Bs,
+    br as Vs,
+    cb as Hs,
+    cw as Us,
+    dS as Ws,
+    dw as Gs,
+    ec as Ks,
+    ev as qs,
+    g_ as Js,
+    gg as Ys,
+    gr as Xs,
+    hS as Zs,
+    h_ as Qs,
+    hc as $s,
+    hg as ec,
+    hr as tc,
+    ii as nc,
+    jc as rc,
+    js as ic,
+    ju as ac,
+    ku as oc,
+    lS as sc,
+    lb as cc,
+    lr as lc,
+    lv as uc,
+    lw as dc,
+    mc as fc,
+    ml as pc,
+    mr as mc,
+    nc as hc,
+    nv as gc,
+    oS as _c,
+    o_ as vc,
+    ol as yc,
+    pS as bc,
+    pl as xc,
+    pr as Sc,
+    q_ as Cc,
+    qc as wc,
+    qf as Tc,
+    qh as Ec,
+    qs as Dc,
+    qy as Oc,
+    rc as kc,
+    s_ as Ac,
+    sb as jc,
+    sl as Mc,
+    sv as Nc,
+    sw as Pc,
+    sy as Fc,
+    tc as Ic,
+    tv as Lc,
+    uS as Rc,
+    ur as zc,
+    v_ as Bc,
+    vr as Vc,
+    wa as Hc,
+    wu as Uc,
+    xS as Wc,
+    xr as Gc,
+    xv as Kc,
+    xy as qc,
+    ya as Jc,
+    yr as Yc,
+    z_ as Xc
+} from "./8b34dbc2-k1zgxrtsww83602u.js";
+import {
+    a as Zc,
+    i as Qc,
+    n as $c,
+    r as el,
+    t as tl
+} from "./79f982eb-lp51e0mnzs9odk4q.js";
+import {
+    a as nl,
+    c as rl,
+    i as il,
+    o as al,
+    r as ol,
+    s as sl
+} from "./85557f11-mqqr1coukt2floak.js";
+import {
+    n as cl,
+    r as ll,
+    t as ul
+} from "./a0c3e3cc-kctmzez7j33c49ca.js";
+import {
+    n as dl,
+    t as fl
+} from "./4f3b7bd2-nagz220ft881iobv.js";
+import {
+    n as pl,
+    t as ml
+} from "./f5cccfb7-omfq28qsvhujhxcn.js";
+import {
+    n as hl,
+    t as gl
+} from "./1878c176-dqvselyevexndhmn.js";
+import {
+    n as _l,
+    t as vl
+} from "./3cc06638-bj28irw1caa5kavh.js";
+import {
+    o as yl,
+    r as bl
+} from "./e00155ab-o9g7j7snyipilnz5.js";
+import {
+    n as xl,
+    r as Sl
+} from "./0fd8fe12-ro1elyk99bqoljv6.js";
+import {
+    i as Cl,
+    n as wl,
+    r as Tl,
+    t as El
+} from "./774409ae-fu5pzm1gts6apo9l.js";
+
+function Dl(e) {
+    return Zs(vs(e).doc).length < 3
+}
+
+function Ol(e, t) {
+    let n = e.thumbnail_url ?? e.content_url,
+        r = e.entity_type === `self` ? t : e.entity_name;
+    return {
+        id: Jn(e.id),
+        title: r,
+        matchText: [r],
+        insertText: r,
+        icon: (0, jl.jsx)(ya, {
+            alt: ``,
+            assetPointer: e.asset_pointer,
+            className: `icon-sm rounded-full object-cover`,
+            composerThumbnailUrl: e.thumbnail_url,
+            fallbackUrl: n,
+            placeholder: (0, jl.jsx)(Vo, {
+                "aria-hidden": `true`,
+                className: `icon-sm`
+            }),
+            thumbnailAssetPointer: e.thumbnail_asset_pointer,
+            useComposerThumbnailCache: !0
+        }),
+        onSelect: () => {},
+        showFor: [`at_command`],
+        meta: {
+            mention: {
+                representation: `inline-pill`,
+                kind: `reference-image`,
+                referenceImageTag: {
+                    id: e.id,
+                    ...e.asset_pointer == null ? n == null ? {} : {
+                        thumbnailUrl: n
+                    } : {
+                        assetPointer: e.asset_pointer
+                    },
+                    ...e.thumbnail_asset_pointer == null ? {} : {
+                        thumbnailAssetPointer: e.thumbnail_asset_pointer
+                    }
+                }
+            }
+        }
+    }
+}
+
+function kl(e) {
+    "use forget";
+    let t = (0, Al.c)(10),
+        {
+            enabled: n
+        } = e,
+        r = ln(),
+        i;
+    t[0] === r ? i = t[1] : (i = r.formatMessage(pl.composerSelfMention), t[0] = r, t[1] = i);
+    let a = i,
+        o, s, c;
+    t[2] === n ? (o = t[3], s = t[4], c = t[5]) : (o = n && Sr(), s = on, c = Xi({
+        enabled: o
+    }), t[2] = n, t[3] = o, t[4] = s, t[5] = c);
+    let l = s(c).data?.pages,
+        u;
+    return t[6] !== l || t[7] !== a || t[8] !== o ? (u = o ? l?.flatMap(e => e.items.map(e => Ol(e, a))) ?? [] : void 0, t[6] = l, t[7] = a, t[8] = o, t[9] = u) : u = t[9], u
+}
+var Al, jl, Ml = e((() => {
+    Al = cn(), Wo(), Xc(), wa(), Is(), qi(), J(), ml(), ia(), sn(), rn(), jl = K()
+}));
+
+function Nl() {
+    return B(`2666007232`)
+}
+
+function Pl(e, t) {
+    "use forget";
+    return t && Nl() ? e : void 0
+}
+
+function Fl({
+    composerController: e,
+    intl: t,
+    isFileUploadEnabled: n
+}) {
+    let r = xc(e),
+        i = r.actions$(),
+        a = r.status$();
+    return {
+        id: `audio-attachment-recording`,
+        title: t.formatMessage(Sa.label),
+        secondary: t.formatMessage(Sa.description),
+        matchText: [`audio`, `record`, `recording`, `voice`],
+        icon: (0, Il.jsx)(me.Voice, {
+            className: `icon`,
+            "aria-hidden": `true`
+        }),
+        onSelect: () => {
+            i?.start(`keyboard`)
+        },
+        showFor: [`at_command`],
+        disabled: !n || !r.canRecord$() || i == null || a !== `idle`,
+        shouldRestoreComposerFocusAfterSelect: !1
+    }
+}
+var Il, Ll = e((() => {
+    ve(), Fe(), Yn(), pc(), Il = K()
+}));
+
+function Rl({
+    isBlocked: e,
+    isUnifiedComposerMenuEnabled: t,
+    disabledReason: n
+}) {
+    return e ? t ? {
+        trailing: n,
+        trailingColor: `tertiary`
+    } : {
+        disabled: !0,
+        secondary: n
+    } : {}
+}
+var zl, Bl, Vl = e((() => {
+    Mt(), hi(), be(), H(), gt(), st(), zl = Be(e => qa(e?.disabledToolIds, e?.conversationOrigin)), Bl = It(({
+        conversation: e,
+        disabledReason: t,
+        isUnifiedComposerMenuEnabled: n
+    }) => Ge(() => {
+        let {
+            data: r,
+            isLoading: i
+        } = k(), a = ga(r?.settings?.[S.LockdownModeEnabled]), o = !(!a && !Ma(i) || !lt(e) && zl(e));
+        return e => {
+            let r = o && Si(e),
+                i = r && a;
+            return {
+                disabledReason: t,
+                isBlocked: r,
+                shouldShowBlockedModal: i && n,
+                treatment: Rl({
+                    isBlocked: i,
+                    isUnifiedComposerMenuEnabled: n,
+                    disabledReason: t
+                })
+            }
+        }
+    }))
+}));
+
+function Hl(e) {
+    At(gl, {
+        entryPointElementId: Gl,
+        conversationId: e
+    })
+}
+
+function Ul(e) {
+    "use forget";
+    let t = (0, Wl.c)(2),
+        n = M(e.serverId$),
+        r;
+    return t[0] === n ? r = t[1] : (r = () => Hl(n), t[0] = n, t[1] = r), r
+}
+var Wl, Gl, Kl = e((() => {
+    Wl = cn(), ye(), st(), hl(), Gl = `unified-composer-feedback-shortcut`
+}));
+
+function ql(e) {
+    return e.startsWith(`/c/`) || e.includes(`/c/`)
+}
+
+function Jl(e, t) {
+    return t ? e.filter(e => `slot` in e ? e.slot === `upload` : e.command === `copy-response` || e.command === `new-chat`) : e
+}
+
+function Yl(e, t, n, r = !1) {
+    return e.flatMap(e => `slot` in e ? t[e.slot] ?? [] : !n && iu.has(e.command) || r && au.has(e.command) ? [] : [Zc(e)])
+}
+
+function Xl(e, t) {
+    return e.filter(e => e.meta?.systemHintType === g.Plan).map(e => ({
+        ...e,
+        secondary: t
+    }))
+}
+
+function Zl(e) {
+    "use forget";
+    let t = (0, nu.c)(35),
+        {
+            composerController: n,
+            conversation: r,
+            disableAdvancedVoiceMode: i,
+            disableReason: a,
+            disableVoiceButton: o,
+            enabled: s,
+            inputState: c
+        } = e,
+        l = ln(),
+        u = tn(),
+        {
+            openSettings: d
+        } = vi(),
+        f;
+    t[0] === d ? f = t[1] : (f = e => d(e), t[0] = d, t[1] = f);
+    let p = Ft(f),
+        m;
+    t[2] === r ? m = t[3] : (m = () => Gr(r), t[2] = r, t[3] = m);
+    let h = M(m),
+        g = Rs(r),
+        _ = Y(r),
+        v = ds(n),
+        y = Ul(r),
+        b = Kr(r),
+        ee = Ys(r),
+        x = ao(r),
+        S;
+    t[4] === r.id ? S = t[5] : (S = {
+        clientThreadId: r.id,
+        location: `Unified composer slash menu`
+    }, t[4] = r.id, t[5] = S);
+    let {
+        canShare: C,
+        onShare: te
+    } = Ac(S), ne = Pe(), w = !i && ne, re = Ts(), ie = zc(), T;
+    t[6] !== r || t[7] !== a || t[8] !== o || t[9] !== c ? (T = {
+        conversation: r,
+        inputState: c,
+        disableReason: a,
+        disableVoiceButton: o
+    }, t[6] = r, t[7] = a, t[8] = o, t[9] = c, t[10] = T) : T = t[10];
+    let E = Ir(T),
+        ae = qn(),
+        D = Hr(),
+        oe = oc($l),
+        O = E && ae,
+        se = O && D && !oe,
+        ce;
+    t[11] !== w || t[12] !== se || t[13] !== n || t[14] !== o || t[15] !== re || t[16] !== ie ? (ce = () => {
+        se && _l({
+            allowIntegratedUX: w,
+            composerController: n,
+            disableVoiceButton: o,
+            nuxMode: re,
+            startSeparateVoiceMode: ie
+        })
+    }, t[11] = w, t[12] = se, t[13] = n, t[14] = o, t[15] = re, t[16] = ie, t[17] = ce) : ce = t[17];
+    let le = ce,
+        k;
+    bb0: {
+        if (!s) {
+            let e;
+            t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[18] = e) : e = t[18], k = e;
+            break bb0
+        }
+        let e;
+        if (t[19] !== g || t[20] !== C || t[21] !== _ || t[22] !== v || t[23] !== y || t[24] !== l || t[25] !== u || t[26] !== p || t[27] !== ee || t[28] !== x || t[29] !== te || t[30] !== O || t[31] !== h || t[32] !== b || t[33] !== le) {
+            let n = tu({
+                intl: l,
+                navigate: u,
+                actions: {
+                    branchChat: g,
+                    copyResponse: _,
+                    dictate: v,
+                    feedback: y,
+                    openSettings: p,
+                    pinChat: b,
+                    readAloud: ee,
+                    retryResponse: x,
+                    shareChat: te,
+                    voiceMode: le
+                },
+                shouldShowVoiceModeAction: O
+            });
+            e = Jl(C ? n : n.filter(Ql), h), t[19] = g, t[20] = C, t[21] = _, t[22] = v, t[23] = y, t[24] = l, t[25] = u, t[26] = p, t[27] = ee, t[28] = x, t[29] = te, t[30] = O, t[31] = h, t[32] = b, t[33] = le, t[34] = e
+        } else e = t[34];k = e
+    }
+    return k
+}
+
+function Ql(e) {
+    return `slot` in e || e.command !== `share-chat`
+}
+
+function $l(e) {
+    return e.isVoiceModeActive
+}
+
+function eu(e, t, n) {
+    let r = t.trim();
+    return r.length === 0 ? e : lo(e, r, e => e.searchParameters ?? {
+        targets: [e.secondary ? `${e.title} ${e.secondary}` : e.title, ...e.matchText]
+    }, {
+        locale: n
+    })
+}
+
+function tu({
+    intl: e,
+    navigate: t,
+    actions: n,
+    shouldShowVoiceModeAction: r
+}) {
+    let i = [{
+        slot: `upload`
+    }, {
+        command: `branch-chat`,
+        aliases: [`branch`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.branch_chat.label`,
+            defaultMessage: `Branch chat`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.branch_chat.description`,
+            defaultMessage: `Start a new chat from this point`
+        }),
+        icon: (0, ru.jsx)(Ro, {
+            className: `icon`
+        }),
+        onSelect: n.branchChat
+    }, {
+        command: `copy-response`,
+        aliases: [`copy`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.copy_response.label`,
+            defaultMessage: `Copy response`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.copy_response.description`,
+            defaultMessage: `Copy last response to clipboard`
+        }),
+        icon: (0, ru.jsx)(Co, {
+            className: `icon`
+        }),
+        onSelect: n.copyResponse
+    }, {
+        command: `dictate`,
+        aliases: [`speech`, `voice typing`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.dictate.label`,
+            defaultMessage: `Dictate`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.dictate.description`,
+            defaultMessage: `Convert speech to text`
+        }),
+        icon: (0, ru.jsx)(yo, {
+            className: `icon`
+        }),
+        onSelect: n.dictate
+    }, {
+        command: `feedback`,
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.feedback.label`,
+            defaultMessage: `Feedback`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.feedback.description`,
+            defaultMessage: `Share feedback about ChatGPT`
+        }),
+        icon: (0, ru.jsx)(Io, {
+            className: `icon`
+        }),
+        onSelect: n.feedback
+    }, {
+        slot: `model`
+    }, {
+        slot: `move-to-project`
+    }, {
+        command: `new-chat`,
+        aliases: [`new`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.new_chat.label`,
+            defaultMessage: `New chat`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.new_chat.description`,
+            defaultMessage: `Start a new conversation`
+        }),
+        icon: (0, ru.jsx)(me.Plus, {
+            className: `icon`
+        }),
+        onSelect: () => {
+            ji(t)
+        }
+    }, {
+        command: `personalization`,
+        aliases: [`custom instructions`, `memory`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.personalization.label`,
+            defaultMessage: `Personalization`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.personalization.description`,
+            defaultMessage: `Set your style and custom instructions`
+        }),
+        icon: (0, ru.jsx)(xo, {
+            className: `icon`
+        }),
+        onSelect: () => n.openSettings(at.Personalization)
+    }, {
+        command: `pin-chat`,
+        aliases: [`pin`, `unpin`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.pin_chat.label`,
+            defaultMessage: `Pin chat`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.pin_chat.description`,
+            defaultMessage: `Keep this chat in the sidebar`
+        }),
+        icon: (0, ru.jsx)(No, {
+            className: `icon`
+        }),
+        onSelect: n.pinChat
+    }, {
+        slot: `plan`
+    }, {
+        command: `read-aloud`,
+        aliases: [`read`, `aloud`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.read_aloud.label`,
+            defaultMessage: `Read aloud`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.read_aloud.description`,
+            defaultMessage: `Listen to the last response`
+        }),
+        icon: (0, ru.jsx)(Ao, {
+            className: `icon`
+        }),
+        onSelect: n.readAloud
+    }, {
+        slot: `intelligence`
+    }, {
+        command: `retry-response`,
+        aliases: [`retry`, `regenerate`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.retry_response.label`,
+            defaultMessage: `Retry response`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.retry_response.description`,
+            defaultMessage: `Generate a new answer for your last message`
+        }),
+        icon: (0, ru.jsx)(Go, {
+            className: `icon`
+        }),
+        onSelect: n.retryResponse
+    }, {
+        command: `settings`,
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.settings.label`,
+            defaultMessage: `Settings`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.settings.description`,
+            defaultMessage: `Open app settings`
+        }),
+        icon: (0, ru.jsx)(Ho, {
+            className: `icon`
+        }),
+        onSelect: () => n.openSettings(at.General)
+    }, {
+        command: `share-chat`,
+        aliases: [`share`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.share_chat.label`,
+            defaultMessage: `Share chat`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.share_chat.description`,
+            defaultMessage: `Create a link to share this chat on the web`
+        }),
+        icon: (0, ru.jsx)(Fo, {
+            className: `icon`
+        }),
+        onSelect: n.shareChat
+    }, {
+        command: `temporary-chat`,
+        aliases: [`temporary`, `temp`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.temporary_chat.label`,
+            defaultMessage: `Temporary chat`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.temporary_chat.description.v2`,
+            defaultMessage: `Start a temporary chat`
+        }),
+        icon: (0, ru.jsx)(me.ChatTemp, {
+            className: `icon`
+        }),
+        onSelect: () => {
+            ji(t, {
+                params: new URLSearchParams({
+                    [z]: `true`
+                })
+            })
+        }
+    }];
+    return r && i.push({
+        command: `voice-mode`,
+        aliases: [`voice`],
+        title: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.voice_mode.label`,
+            defaultMessage: `Voice mode`
+        }),
+        secondary: e.formatMessage({
+            id: `chatgpt.composer.unified_menu.shortcut.voice_mode.description`,
+            defaultMessage: `Start a live voice conversation`
+        }),
+        icon: (0, ru.jsx)(Eo, {
+            className: `icon`
+        }),
+        onSelect: n.voiceMode
+    }), i
+}
+var nu, ru, iu, au, ou = e((() => {
+    nu = cn(), Ae(), Pr(), Mi(), ko(), Po(), ve(), zo(), Uo(), wo(), Do(), Mo(), So(), Ko(), bo(), To(), Oe(), nc(), vc(), Qc(), st(), Kl(), li(), Ha(), m(), zn(), xa(), pe(), xn(), V(), Ln(), Vn(), lc(), vl(), Uc(), ec(), _o(), ns(), rn(), nn(), _s(), ru = K(), iu = new Set([`branch-chat`, `copy-response`, `new-chat`, `pin-chat`, `read-aloud`, `retry-response`, `share-chat`]), au = new Set([`branch-chat`, `pin-chat`, `share-chat`])
+}));
+
+function su(e, t) {
+    return {
+        id: e,
+        title: t,
+        matchText: [],
+        onSelect: () => {},
+        showFor: [`slash_command`],
+        disabled: !0
+    }
+}
+
+function cu(e) {
+    "use forget";
+    let t = (0, uu.c)(53),
+        {
+            conversation: n,
+            enabled: r,
+            isFirstPartyProject: i,
+            isHomeNewChatComposer: a,
+            searchQuery: o,
+            setSelectedGizmoTag: s
+        } = e,
+        c = ln(),
+        l = tn(),
+        u = Tt(n.id, kt.getGizmoId),
+        d;
+    t[0] === n ? d = t[1] : (d = () => pa(n) ?? !1, t[0] = n, t[1] = d);
+    let f = M(d),
+        p = M(w),
+        m = M(it),
+        h;
+    t[2] === n ? h = t[3] : (h = () => lt(n), t[2] = n, t[3] = h);
+    let g = M(h),
+        _ = M(n.serverId$),
+        {
+            projects: v,
+            isLoading: y,
+            fetchNextPage: b,
+            hasNextPage: ee,
+            isFetchingNextPage: x
+        } = Ve(),
+        S = Fr(),
+        C;
+    t[4] !== u || t[5] !== r || t[6] !== m || t[7] !== i || t[8] !== a || t[9] !== f || t[10] !== p || t[11] !== _ ? (C = r && !p && fe() && (a || _ != null && !i && !_t.shouldDisableProjectMove() && Ni({
+        gizmoId: u,
+        isPinned: f,
+        allowPinnedConversationProjectMove: Ee({
+            isPinned: f,
+            isDesktopLayout: m
+        })
+    })), t[4] = u, t[5] = r, t[6] = m, t[7] = i, t[8] = a, t[9] = f, t[10] = p, t[11] = _, t[12] = C) : C = t[12];
+    let te = C,
+        ne;
+    if (t[13] !== n || t[14] !== u || t[15] !== b || t[16] !== ee || t[17] !== c || t[18] !== x || t[19] !== g || t[20] !== l || t[21] !== v || t[22] !== _ || t[23] !== s || t[24] !== S) {
+        let e = v.filter(lu),
+            r;
+        t[26] !== n || t[27] !== u || t[28] !== c || t[29] !== g || t[30] !== l || t[31] !== _ || t[32] !== s || t[33] !== S ? (r = e => {
+            let t = e.gizmo.gizmo,
+                r = g && !ht(e.gizmo),
+                i = r ? gi(e.gizmo) : null,
+                a = t.display.emoji != null && t.display.emoji in In ? t.display.emoji : null;
+            return {
+                id: `move-to-project:${t.id}`,
+                title: t.display.name,
+                matchText: [t.display.name],
+                icon: (0, du.jsx)(sr, {
+                    color: t.display.theme ?? null,
+                    emoji: a,
+                    strict: !0
+                }),
+                disabled: r,
+                tooltip: i == null ? void 0 : {
+                    primary: c.formatMessage(i)
+                },
+                onSelect: () => {
+                    if (!w()) {
+                        if (_ == null) {
+                            ws({
+                                conversation: n,
+                                gizmo: e.gizmo,
+                                entrySurface: `slash_command`
+                            }), s(e.gizmo);
+                            return
+                        }
+                        S({
+                            newGizmoId: t.id,
+                            conversation: new Br(_),
+                            previousGizmoId: u ?? null,
+                            optimistic: !1
+                        }), l(Ot(_, {
+                            project: t
+                        }))
+                    }
+                },
+                showFor: [`slash_command`]
+            }
+        }, t[26] = n, t[27] = u, t[28] = c, t[29] = g, t[30] = l, t[31] = _, t[32] = s, t[33] = S, t[34] = r) : r = t[34], ne = e.map(r), ee && ne.push(x ? su(`move-to-project-loading-more`, c.formatMessage({
+            id: `chatgpt.composer.unified_menu.move_to_project.loading_more`,
+            defaultMessage: `Loading more projects`
+        })) : {
+            id: `move-to-project-load-more`,
+            title: c.formatMessage({
+                id: `chatgpt.composer.unified_menu.move_to_project.load_more`,
+                defaultMessage: `Load more projects`
+            }),
+            matchText: [],
+            onSelect: () => {
+                b()
+            },
+            showFor: [`slash_command`]
+        }), t[13] = n, t[14] = u, t[15] = b, t[16] = ee, t[17] = c, t[18] = x, t[19] = g, t[20] = l, t[21] = v, t[22] = _, t[23] = s, t[24] = S, t[25] = ne
+    } else ne = t[25];
+    let re = ne,
+        ie, T;
+    t[35] !== c.locale || t[36] !== o || t[37] !== re ? (T = eu(re, o, c.locale), t[35] = c.locale, t[36] = o, t[37] = re, t[38] = T) : T = t[38];
+    let E = T;
+    if (y) {
+        let e;
+        t[39] === c ? e = t[40] : (e = su(`move-to-project-loading`, c.formatMessage({
+            id: `chatgpt.composer.unified_menu.move_to_project.loading`,
+            defaultMessage: `Loading projects`
+        })), t[39] = c, t[40] = e);
+        let n;
+        t[41] === e ? n = t[42] : (n = [e], t[41] = e, t[42] = n), ie = n
+    } else if (E.length === 0) {
+        let e;
+        t[43] === c ? e = t[44] : (e = su(`move-to-project-empty`, c.formatMessage({
+            id: `chatgpt.composer.unified_menu.move_to_project.empty`,
+            defaultMessage: `No projects found`
+        })), t[43] = c, t[44] = e);
+        let n;
+        t[45] === e ? n = t[46] : (n = [e], t[45] = e, t[46] = n), ie = n
+    } else ie = E;
+    let ae = ie,
+        D;
+    t[47] !== ae || t[48] !== te ? (D = te ? ae : [], t[47] = ae, t[48] = te, t[49] = D) : D = t[49];
+    let oe;
+    return t[50] !== te || t[51] !== D ? (oe = {
+        items: D,
+        shouldShow: te
+    }, t[50] = te, t[51] = D, t[52] = oe) : oe = t[52], oe
+}
+
+function lu(e) {
+    let {
+        gizmo: t
+    } = e;
+    return !U(t)
+}
+var uu, du, fu = e((() => {
+    uu = cn(), ka(), a(), Bn(), P(), ur(), Vr(), xt(), Xa(), T(), rt(), H(), ta(), h(), st(), bt(), Ue(), jt(), St(), rn(), nn(), Ks(), ou(), du = K()
+}));
+
+function pu(e) {
+    return e.replace(/[\s_-]+/g, ``).toLowerCase()
+}
+
+function mu(e, t) {
+    let n = pu(e);
+    return n === t ? 0 : n.startsWith(t) ? 1 : n.includes(t) ? 2 : 3
+}
+
+function hu(e, t, n) {
+    let r = pu(t);
+    return r.length === 0 ? [...e] : [...e].sort((e, t) => mu(n(e), r) - mu(n(t), r))
+}
+var gu = e((() => {}));
+
+function _u(e) {
+    let t = e?.filter(e => e.showFor.includes(`at_command`)) ?? [];
+    return {
+        gptItems: t.filter(e => e.meta?.unifiedComposerMenuCategory === `gpts`),
+        appItems: t.filter(e => e.meta?.unifiedComposerMenuCategory !== `gpts`)
+    }
+}
+
+function vu(e, t) {
+    let n = e.meta?.isLocalSystemHintAction === !0 && Yt(e.id) ? e.id : e.meta?.systemHintType;
+    if (n != null) return e.meta?.isConnected === !0 && da(n) === Wu ? 2 : Ba(n, t)
+}
+
+function yu({
+    isIntegratedVoiceModeActive: e,
+    triggerSymbol: t
+}) {
+    return e && (t === `+` || t === `@` || t === `/`)
+}
+
+function bu({
+    fileUploads: e,
+    imageUploads: t
+}) {
+    return {
+        showFileLibrary: e === `allowed`,
+        showUpload: e === `allowed` || t === `allowed`
+    }
+}
+
+function xu(e, {
+    financesEligible: t
+}) {
+    let n = new Set(e.flatMap(e => {
+        let t = e.meta?.systemHintType;
+        return t == null ? [] : [da(t)]
+    }));
+    return e.filter(e => {
+        let r = e.meta?.systemHintType;
+        return r === Hi && e.meta?.isConnected === !1 && !t ? !1 : r === g.Picture ? !n.has(g.PictureV2) : r !== g.Research || !n.has(pt)
+    })
+}
+
+function Su(e) {
+    return e.map(e => e.meta?.isConnected === !1 && A(e.meta.systemHintType) ? e.icon == null ? e : {
+        ...e,
+        icon: (0, Ru.jsx)(ti, {
+            className: `icon size-5! rounded-sm!`,
+            variant: `inline`,
+            children: e.icon
+        })
+    } : e.meta?.isApp === !0 || e.meta?.systemHintType != null ? Ou(e, `system-hint`) : e)
+}
+
+function Cu(e) {
+    return e.map(e => e.icon == null ? Ou(e, `document-reference`) : e)
+}
+
+function wu(e) {
+    return Du(e, `folder-reference`)
+}
+
+function Tu(e) {
+    return e.map(e => ({
+        ...e,
+        noMatchEmpty: !1
+    }))
+}
+
+function Eu(e) {
+    return e.map(e => e.meta?.isSkill === !0 ? Ou(e, `skill`) : e.meta?.systemHintType == null ? e : Ou(e, `system-hint`))
+}
+
+function Du(e, t) {
+    return e.map(e => Ou(e, t))
+}
+
+function Ou(e, t) {
+    return {
+        ...e,
+        icon: (0, Ru.jsx)(Xr, {
+            id: t === `system-hint` ? e.meta?.systemHintType ?? e.id : e.id,
+            kind: t,
+            variant: `inline`
+        })
+    }
+}
+
+function ku(e, t) {
+    return e.map(e => ({
+        ...e,
+        meta: {
+            ...e.meta ?? {},
+            unifiedComposerMenuCategory: t
+        }
+    }))
+}
+
+function Au(e) {
+    let t = [],
+        n = [];
+    for (let r of e) A(r.meta?.systemHintType) && r.meta?.isConnected === !1 ? n.push(r) : t.push(r);
+    return [...t, ...n]
+}
+
+function ju(e, t) {
+    if (t === `files` || t === `folders`) return t;
+    if (t == null) return e.id.startsWith(`file-library:`) ? `files` : br(e.id) == null ? void 0 : `folders`
+}
+
+function Mu(e, t) {
+    if (ju(e, t) === `folders` || Fa(e.id.slice(13))) return e.title;
+    let n = e.title.split(`/`);
+    return n[n.length - 1] ?? e.title
+}
+
+function Nu(e, t) {
+    if (e.meta?.globalSearchRank != null) return !0;
+    let n = ju(e, t);
+    return n === `files` ? Fa(e.id.slice(13)) : n === `folders` && oa(br(e.id))
+}
+
+function Pu(e, t, n = ``, r = !1) {
+    let i = e[0]?.meta?.unifiedComposerMenuCategory;
+    if (r) {
+        let n = new Set(t.filter(e => ju(e, i) != null).map(e => e.id)),
+            r = e.filter(e => n.has(e.id)),
+            a = 0;
+        return t.map(e => n.has(e.id) ? r[a++] ?? e : e)
+    }
+    let a = new Set(t.filter(e => Nu(e, i)).map(e => e.id)),
+        o = t;
+    if (a.size >= 2) {
+        let r = e.filter(e => a.has(e.id)),
+            s = hu(r.filter(e => e.meta?.globalSearchRank != null).sort((e, t) => (e.meta?.globalSearchRank ?? 0) - (t.meta?.globalSearchRank ?? 0)), n, e => Mu(e, i)),
+            c = 0,
+            l = r.map(e => e.meta?.globalSearchRank == null ? e : s[c++] ?? e),
+            u = 0;
+        o = t.map(e => a.has(e.id) ? l[u++] ?? e : e)
+    }
+    if (n.trim().length === 0) return o;
+    let s = o.filter(e => ju(e, i) != null);
+    if (s.length < 2) return o;
+    let c = hu(s, n, e => Mu(e, i)),
+        l = 0;
+    return o.map(e => ju(e, i) == null ? e : c[l++] ?? e)
+}
+
+function Fu(e, t) {
+    switch (t) {
+        case `plugins`:
+            return e.formatMessage({
+                id: `chatgpt.composer.unified_menu.category.plugins.label`,
+                defaultMessage: `Plugins`
+            });
+        case `gpts`:
+            return e.formatMessage({
+                id: `chatgpt.composer.unified_menu.category.gpts.label`,
+                defaultMessage: `GPTs`
+            });
+        case `files`:
+            return e.formatMessage({
+                id: `chatgpt.composer.unified_menu.category.files.label`,
+                defaultMessage: `Files`
+            });
+        case `folders`:
+            return e.formatMessage({
+                id: `chatgpt.composer.unified_menu.category.folders.label`,
+                defaultMessage: `Folders`
+            });
+        case `skills`:
+            return e.formatMessage({
+                id: `chatgpt.composer.unified_menu.category.skills.label`,
+                defaultMessage: `Skills`
+            })
+    }
+}
+
+function Iu(e, t, n = !1) {
+    let r = e[0]?.meta?.unifiedComposerMenuCategory;
+    return n && r === `files` ? e.length : t ? Bu : r === `plugins` ? Uu : r === `files` || r === `folders` ? Hu : Vu
+}
+
+function Lu(e, {
+    additionalRanks: t,
+    fallbackRandomSeed: n,
+    recentlyUsedPluginIds: r = []
+} = {}) {
+    let i = new Map,
+        a = [],
+        o = 0,
+        s = [],
+        c = [];
+    for (let n of e) {
+        let e = n.meta?.systemHintType,
+            r = vu(n, t);
+        n.meta?.isLocalSystemHintAction === !0 && (o += 1), r == null ? n.meta?.isLocalSystemHintAction === !0 ? a.push(n) : E(e) && (A(e) && n.meta?.isConnected === !1 ? e !== Hi && c.push(n) : s.push(n)) : i.has(r) || i.set(r, n)
+    }
+    let l = Ba(g.Maps, t) ?? -1,
+        u = Ba(g.Shopping, t) ?? -1,
+        {
+            installedItems: d,
+            suggestedItems: f
+        } = Na({
+            installedItems: s,
+            suggestedItems: c,
+            maxItems: Math.max(0, Math.min(zu - o - Number(i.has(2)) - Number(i.has(l)) - Number(i.has(u)), Bu - i.size - a.length)),
+            fallbackRandomSeed: n,
+            recentlyUsedPluginIds: r,
+            getPluginId: e => {
+                let t = e.meta?.systemHintType;
+                return t == null ? e.id : da(t)
+            },
+            getPluginSortKey: e => e.id,
+            isHeadPlugin: e => e.meta?.isHeadPlugin === !0
+        });
+    return [...[...i.entries()].sort(([e], [t]) => e - t).map(([, e]) => e), ...a, ...d, ...f]
+}
+var Ru, zu, Bu, Vu, Hu, Uu, Wu, Gu = e((() => {
+    de(), hr(), co(), zr(), pe(), Qr(), gu(), si(), Da(), yr(), Ru = K(), zu = 4, Bu = 7, Vu = 2, Hu = 3, Uu = 3, Wu = `Plugin_b0672f102c2081919b893649fdcfeeaa`
+}));
+
+function Ku(e) {
+    return {
+        ...no({
+            command: `upload-files`,
+            aliases: [`file`, `files`, `document`, `documents`],
+            title: e.formatMessage(Ar.addFiles),
+            secondary: e.formatMessage({
+                id: `chatgpt.composer.unified_menu.upload.files_upsell.description`,
+                defaultMessage: `Upload documents and other files`
+            }),
+            onSelect: () => wn(`add_files`)
+        }),
+        icon: (0, Yu.jsx)(u.FolderColor, {
+            className: `icon`
+        }),
+        trailing: e.formatMessage(Ne.logInButtonText),
+        trailingColor: `tertiary`
+    }
+}
+
+function qu({
+    intl: e,
+    loggedOutUpsellSystemHints: t
+}) {
+    let n = new Map;
+    for (let e of t) n.has(e.systemHint) || n.set(e.systemHint, e);
+    let r = Zu.map(({
+            systemHint: t,
+            label: r
+        }) => ({
+            systemHint: t,
+            title: e.formatMessage(r),
+            hint: n.get(t)
+        })),
+        i = e.formatMessage(Ne.logInButtonText),
+        a = [],
+        o, s;
+    for (let {
+            systemHint: e,
+            title: t,
+            hint: n
+        }
+        of r) {
+        let r = {
+            id: `logged-out-upsell:${e}`,
+            title: t,
+            secondary: n?.description,
+            icon: e === g.Think ? (0, Yu.jsx)(Qu, {}) : (0, Yu.jsx)(Xr, {
+                id: e,
+                kind: `system-hint`,
+                variant: `inline`
+            }),
+            matchText: [t, ...n ? [n.name, ...n.aliases] : []],
+            meta: {
+                systemHintType: e,
+                unifiedComposerMenuCategory: `plugins`
+            },
+            onSelect: () => wn(e),
+            showFor: [`at_command`],
+            trailing: i,
+            trailingColor: `tertiary`
+        };
+        a.push(r), e === g.PictureV2 ? o ??= r : e === g.Think && (s ??= r)
+    }
+    return {
+        items: a,
+        createImage: o,
+        think: s
+    }
+}
+
+function Ju({
+    fileUploadUpsell: e,
+    intl: t,
+    isSearching: n,
+    loggedOutUpsellSystemHints: r,
+    pluginSuggestionItems: i,
+    restrictToUploads: a,
+    systemHints: o,
+    uploadGroup: s
+}) {
+    if (a) return s.length > 0 ? [s] : [];
+    let c = t.formatMessage(Xu.webSearch),
+        l = qu({
+            intl: t,
+            loggedOutUpsellSystemHints: r
+        }),
+        u = ku(Su(o), `plugins`),
+        d = [],
+        f;
+    for (let e of u) {
+        if (e.meta?.systemHintType !== g.Search) continue;
+        let t = {
+            ...e,
+            title: c,
+            matchText: [c, ...e.matchText],
+            ...e.searchParameters && {
+                searchParameters: {
+                    ...e.searchParameters,
+                    targets: [c, ...e.searchParameters.targets]
+                }
+            }
+        };
+        f ??= t, d.push(t)
+    }
+    if (!n) return [
+        [...s, f, l.createImage, e, l.think].filter(e => e != null)
+    ];
+    let p = [...Lu([...d, ...u.filter(e => _e(e.meta?.systemHintType) || e.meta?.isLocalSystemHintAction === !0)]), ...l.items, ...ku(i, `plugins`)];
+    return [e ? [...s, e] : s, p].filter(e => e.length > 0)
+}
+var Yu, Xu, Zu, Qu, $u = e((() => {
+        i(), ke(), pe(), Vt(), rn(), kn(), eo(), Gu(), yr(), Za(), Yu = K(), Xu = Qt({
+            webSearch: {
+                id: `chatgpt.composer.unified_menu.plugin.web_search.label`,
+                defaultMessage: `Web search`
+            }
+        }), Zu = [{
+            systemHint: g.PictureV2,
+            label: Ar.createImage
+        }, {
+            systemHint: g.Research,
+            label: Ar.deepResearch
+        }, {
+            systemHint: g.Think,
+            label: Ar.thinkLonger
+        }], Qu = () => {
+            "use forget";
+            return f() === `dark` ? (0, Yu.jsx)(u.SkillLightbulbDark, {
+                className: `icon`
+            }) : (0, Yu.jsx)(u.SkillLightbulbLight, {
+                className: `icon`
+            })
+        }
+    })),
+    ed, td, nd, rd = e((() => {
+        ed = cn(), ts(), Os(), td = n(an()), nd = e => {
+            "use forget";
+            let t = (0, ed.c)(9),
+                {
+                    editorView: n,
+                    isMultiwordLibraryMentionParsingEnabled: r,
+                    onHintMatch: i,
+                    setReferencePosition: a
+                } = e,
+                o, s;
+            t[0] === n ? (o = t[1], s = t[2]) : (o = () => () => {
+                ss(n)
+            }, s = [n], t[0] = n, t[1] = o, t[2] = s), (0, td.useEffect)(o, s);
+            let c, l;
+            return t[3] !== n || t[4] !== r || t[5] !== i || t[6] !== a ? (c = () => {
+                let e = () => {
+                    n.dispatch(Ns(n.state.tr, {
+                        setReferencePosition: a,
+                        onHintMatch: i,
+                        supportsMultiwordLibraryMentions: r,
+                        refreshFromSelection: !0
+                    }))
+                };
+                return e(), n.dom.addEventListener(us, e), () => {
+                    n.dom.removeEventListener(us, e)
+                }
+            }, l = [n, r, i, a], t[3] = n, t[4] = r, t[5] = i, t[6] = a, t[7] = c, t[8] = l) : (c = t[7], l = t[8]), (0, td.useEffect)(c, l), null
+        }
+    }));
+
+function id({
+    account: e,
+    command: t,
+    intl: n,
+    location: i,
+    navigateToPluginDetails: a,
+    onConnected: o,
+    onPendingChange: c,
+    getPendingConnection: l,
+    productExperience: u,
+    pluginId: d,
+    queryClient: f,
+    runIfAllowed: p,
+    systemHintType: m
+}) {
+    let h = t => {
+            let r = {
+                    ...e ? {
+                        accountId: e.id
+                    } : {},
+                    platform: `chat`,
+                    locale: n.locale,
+                    hasWorkspace: !!e?.getWorkspaceId()
+                },
+                a = l(),
+                p = {
+                    pluginId: d
+                };
+            a.current = p, c(d);
+            let h = () => {
+                    a.current === p && (a.current = null, c(null), t?.())
+                },
+                g = !1,
+                _ = async e => {
+                    if (g) return;
+                    g = !0, h();
+                    let t = {
+                        queryKey: s(`plugins`)
+                    };
+                    await f.cancelQueries(t), f.setQueriesData(t, t => {
+                        if (!t?.some(e => e.systemHint === m)) return t;
+                        let n = e !== m && t.some(t => t.systemHint === e);
+                        return t.flatMap(t => t.systemHint === m ? n ? [] : [{
+                            ...t,
+                            systemHint: e,
+                            isConnected: !0,
+                            canConnect: !1
+                        }] : [t])
+                    }), o(e)
+                };
+            ac({
+                productExperience: u,
+                ...e ? {
+                    installAccountId: e.id
+                } : {},
+                intl: n,
+                onConnectionConfirmed: e => void _(ne(e ?? d)),
+                onConnectionResult: e => {
+                    if (!g)
+                        if (e === `connected`) {
+                            let [e] = bl([d], f.getQueryData(Fc(r).queryKey) ?? []);
+                            _(e ?? m)
+                        } else g = !0, h()
+                },
+                pathname: i.pathname,
+                pluginId: d,
+                queryClient: f,
+                requestContext: r,
+                search: i.search,
+                searchParams: new URLSearchParams(i.search),
+                surface: jn.CHATGPT_PLUGIN_MARKETPLACE_SURFACE_COMPOSER_HINTS
+            }).then(h, h)
+        },
+        g = (n, o) => {
+            if (l().current != null) return;
+            let s = !1;
+            p(() => {
+                if (s = !0, e != null && t.isConnected !== !0 && !Et() && !es(new URLSearchParams(i.search)).shouldUseConnectRoute && r() && u === je.CHATGPT_PRODUCT_EXPERIENCE_WORK) {
+                    h(o);
+                    return
+                }
+                o?.();
+                let c = Kc({
+                    pluginId: d,
+                    location: i,
+                    continueConnectOnOpen: n,
+                    originatingInstallSurface: n ? jn.CHATGPT_PLUGIN_MARKETPLACE_SURFACE_COMPOSER_HINTS : void 0
+                });
+                a(c.to, c.state)
+            }), s || o?.()
+        };
+    return {
+        item: Zc({
+            ...t,
+            onSelect: () => g(!1)
+        }),
+        onSelect: e => g(!1, e),
+        onConnect: e => g(!0, e)
+    }
+}
+var ad = e((() => {
+    x(), Zo(), yl(), qc(), os(), $i(), C(), pe(), Le(), D(), Qc()
+}));
+
+function od(e) {
+    return e.meta?.isSkill === !0
+}
+
+function sd(e) {
+    return e.meta?.isSkillGroupToggle === !0
+}
+
+function cd(e) {
+    return e.meta?.isProject === !0
+}
+
+function ld(e) {
+    return e.meta?.isProjectGroupToggle === !0
+}
+
+function ud({
+    count: e,
+    intl: t,
+    isExpanded: n,
+    useFlyout: r
+}) {
+    return {
+        id: hd,
+        title: t.formatMessage({
+            defaultMessage: `Skills`,
+            id: `composer.skills.dropdownLabel`
+        }),
+        matchText: [`skills`],
+        icon: (0, md.jsx)(me.Skills, {
+            className: `icon`
+        }),
+        trailing: (0, md.jsxs)(`div`, {
+            className: `text-token-text-tertiary flex items-center gap-1`,
+            children: [(0, md.jsx)(`span`, {
+                className: `text-xs`,
+                children: e
+            }), r ? (0, md.jsx)(me.ChevronRightSm, {
+                className: `icon-sm`
+            }) : n ? (0, md.jsx)(me.ChevronDownSm, {
+                className: `icon-sm`
+            }) : (0, md.jsx)(me.ChevronRightSm, {
+                className: `icon-sm`
+            })]
+        }),
+        onSelect: () => {},
+        showFor: [`at_command`, `slash_command`],
+        meta: {
+            isSkillGroupToggle: !0
+        }
+    }
+}
+
+function dd({
+    count: e,
+    intl: t,
+    isExpanded: n,
+    useFlyout: r
+}) {
+    return {
+        id: gd,
+        title: t.formatMessage({
+            defaultMessage: `Projects`,
+            id: `composer.projects.dropdownLabel`
+        }),
+        matchText: [`projects`],
+        icon: (0, md.jsx)(me.Folder, {
+            className: `icon`
+        }),
+        trailing: (0, md.jsxs)(`div`, {
+            className: `text-token-text-tertiary flex items-center gap-1`,
+            children: [(0, md.jsx)(`span`, {
+                className: `text-xs`,
+                children: e
+            }), r ? (0, md.jsx)(me.ChevronRightSm, {
+                className: `icon-sm`
+            }) : n ? (0, md.jsx)(me.ChevronDownSm, {
+                className: `icon-sm`
+            }) : (0, md.jsx)(me.ChevronRightSm, {
+                className: `icon-sm`
+            })]
+        }),
+        onSelect: () => {},
+        showFor: [`slash_command`],
+        meta: {
+            isProjectGroupToggle: !0
+        }
+    }
+}
+
+function fd({
+    groups: e,
+    intl: t,
+    isSkillsExpanded: n,
+    isProjectsExpanded: r = !1,
+    useFlyout: i = !1,
+    skillsGroupAfterIndex: a,
+    projectsGroupAfterIndex: o,
+    inlineSkills: s = !1,
+    inlineProjects: c = !0
+}) {
+    let l = [],
+        u = [],
+        d = [];
+    for (let t of e) {
+        let e = t.filter(e => od(e) ? (u.push(e), s) : cd(e) ? (d.push(e), c) : !0);
+        e.length > 0 && l.push(e)
+    }
+    let f = l;
+    if (u.length > 0 && !s) {
+        let e = [ud({
+            count: u.length,
+            intl: t,
+            isExpanded: n,
+            useFlyout: i
+        }), ...n || i ? u : []];
+        f = pd({
+            groups: f,
+            group: e,
+            afterIndex: a
+        })
+    }
+    if (d.length > 0 && !c) {
+        let e = [dd({
+            count: d.length,
+            intl: t,
+            isExpanded: r,
+            useFlyout: i
+        }), ...r || i ? d : []];
+        f = pd({
+            groups: f,
+            group: e,
+            afterIndex: o
+        })
+    }
+    return {
+        displayGroups: f,
+        skillItems: u,
+        projectItems: d
+    }
+}
+
+function pd({
+    groups: e,
+    group: t,
+    afterIndex: n
+}) {
+    let r = n == null ? e.length : Math.min(n + 1, e.length);
+    return [...e.slice(0, r), t, ...e.slice(r)]
+}
+var md, hd, gd, _d = e((() => {
+    ve(), md = K(), hd = `skills-group-toggle`, gd = `projects-group-toggle`
+}));
+
+function vd({
+    mention: e,
+    text: t
+}) {
+    return e.kind === `folder-reference` ? t : t.replace(/^(@|\$)/, ``)
+}
+
+function yd({
+    isSidebarSlash: e,
+    promptReferer: t,
+    suggestion: n
+}) {
+    return !!n.insertText && (t === `at_command` || t === `agent_tool` || e || n.meta?.isSkill === !0 || n.meta?.mention != null)
+}
+var bd = e((() => {}));
+
+function xd({
+    hasSuggestions: e,
+    isFileLibrarySearchPending: t,
+    isSubmenuSearchActive: n,
+    promptReferer: r,
+    promptSearchQuery: i
+}) {
+    return r === `at_command` && i.length > 0 && !n && !e && t
+}
+var Sd = e((() => {}));
+
+function Cd() {
+    return B(wd)
+}
+var wd, Td = e((() => {
+    Fe(), wd = `867377638`
+}));
+
+function Ed(e, t) {
+    return t == null || !e.startsWith(`external-gdrive:`) || e.startsWith(`external-gdrive:account:`) ? e : `external-gdrive:account:${t.key}:${e.slice(16)}`
+}
+
+function Dd(e, t) {
+    let n = Rr(e);
+    if (n == null) return {};
+    let r = n.provider === `google_drive` ? (0, Rf.jsxs)(Rf.Fragment, {
+            children: [(0, Rf.jsx)(`span`, {
+                className: `hidden sm:inline`,
+                children: (0, Rf.jsx)(en, {
+                    id: `composer.library.folder_suggestion.source.google_drive.label`,
+                    defaultMessage: `Google Drive`
+                })
+            }), (0, Rf.jsx)(`span`, {
+                className: `sm:hidden`,
+                children: (0, Rf.jsx)(en, {
+                    id: `composer.library.folder_suggestion.source.google_drive.mobile.label`,
+                    defaultMessage: `Drive`
+                })
+            })]
+        }) : (0, Rf.jsx)(en, {
+            ...n.provider === `sharepoint` ? ca.sharepoint : gn(n.provider).label
+        }),
+        i = $n(t, n.provider);
+    return {
+        trailing: (0, Rf.jsx)(`span`, {
+            className: `block max-w-40 truncate text-end sm:max-w-64`,
+            children: i ? (0, Rf.jsx)(en, {
+                id: `composer.library.folder_suggestion.source.with_external_account.label`,
+                defaultMessage: `{provider} · {account}`,
+                values: {
+                    account: i,
+                    provider: r
+                }
+            }) : r
+        })
+    }
+}
+
+function Od(e) {
+    let t = e?.trim(),
+        n = t ? (0, Rf.jsx)(en, {
+            id: `composer.library.folder_suggestion.source.shared.named.label`,
+            defaultMessage: `Shared by {name}`,
+            values: {
+                name: t
+            }
+        }) : (0, Rf.jsx)(en, {
+            id: `composer.library.folder_suggestion.source.shared.unknown.label`,
+            defaultMessage: `Shared`
+        });
+    return {
+        secondary: (0, Rf.jsx)(`span`, {
+            className: `hidden sm:inline`,
+            children: n
+        }),
+        trailing: (0, Rf.jsx)(`span`, {
+            className: `max-w-32 truncate sm:hidden`,
+            children: n
+        })
+    }
+}
+
+function kd(e) {
+    return e == null ? void 0 : {
+        key: e.key
+    }
+}
+
+function Ad(e, t, n) {
+    if (e == null || e.providersKey !== t.join(`,`) || e.googleDriveConnectionScopeKey !== n) return;
+    let r = zt(d);
+    return r?.id === e.accountId && r.normalizedAccountUserId === e.accountUserId ? e.items : void 0
+}
+
+function jd({
+    canUseInlineTagging: e,
+    isFileLibraryUiEnabled: t,
+    unifiedComposerSelectionStateEnabled: n
+}) {
+    return e && t && n
+}
+
+function Md({
+    isLibraryMentionMenuOpen: e,
+    supportsLibraryFolderReferences: t,
+    ...n
+}) {
+    return e && t && jd(n)
+}
+
+function Nd({
+    supportsLibraryFolderReferences: e,
+    ...t
+}) {
+    return e && jd(t)
+}
+
+function Pd(e) {
+    let t = e.file_name,
+        n = t.split(`/`),
+        r = n[n.length - 1] ?? t,
+        i = n.length > 1 ? n[0] : void 0;
+    return i ? [t, r, i, ...n] : [t, r, ...n]
+}
+
+function Fd(e, t = ``, n = zf) {
+    let r = e.filter(e => e.state === `ready`);
+    return t.length === 0 ? r.slice(0, n) : lo(r, t, e => ({
+        targets: Pd(e)
+    }), {
+        maxResults: n
+    })
+}
+
+function Id(e) {
+    return e.startsWith(`/`) && e !== `/` && !e.endsWith(`/`) && !e.includes(`//`)
+}
+
+function Ld(e) {
+    let t = e.display_path;
+    if (t == null || !Id(t)) return;
+    let n = t.split(`/`);
+    if (n[n.length - 1]?.trim().toLowerCase() === e.name.trim().toLowerCase()) return t
+}
+
+function Rd(e, t = !1, n = ``) {
+    let r = new Set,
+        i = [],
+        a = hu([...e.entries()], n, ([, e]) => e.title);
+    for (let [e, n] of a) {
+        let a = n.payload,
+            o = n.snippet;
+        if (!(n.source_type !== `library` || n.source_key !== `library:folder` || a.kind !== `library_folder` || a.is_root === !0 || a.directory_id.length === 0 || oa(a.directory_id) || ea(a) != null && ea(a) !== `native` || n.title.length === 0 || r.has(a.directory_id) || o == null || !Id(o)) && (r.add(a.directory_id), i.push({
+                directoryId: a.directory_id,
+                displayPath: o,
+                ...t ? {
+                    globalSearchRank: e
+                } : {},
+                name: n.title
+            }), i.length === Gf)) break
+    }
+    return i
+}
+
+function zd(e, t = qf, n = ``, r = Hf) {
+    let i = new Set,
+        a = new Set,
+        o = [],
+        s = [];
+    for (let t of e) {
+        if (t.kind === `file` && t.name.trim().length > 0 && t.state === `ready` && Fa(t.id) && !i.has(t.id)) {
+            i.add(t.id), o.push({
+                fileId: t.id,
+                fileName: t.name,
+                mimeType: t.mime_type,
+                fileSizeBytes: t.file_size_bytes,
+                libraryFileCategory: t.library_file_category,
+                libraryArtifactType: t.library_artifact_type,
+                externalAccount: t.external_account ?? void 0
+            });
+            continue
+        }
+        if (t.kind !== `directory` || t.is_root === !0 || t.name.trim().length === 0 || !oa(t.id) || a.has(t.id)) continue;
+        let e = Ld(t);
+        a.add(t.id), s.push({
+            directoryId: t.id,
+            name: t.name,
+            externalAccount: t.external_account ?? void 0,
+            ...e == null ? {} : {
+                displayPath: e
+            }
+        })
+    }
+    return {
+        fileCandidates: hu($d([], o, t), n, e => e.fileName).slice(0, r),
+        folderCandidates: hu(s, n, e => e.name).slice(0, Gf)
+    }
+}
+
+function Bd(e, t = ``, n = zf) {
+    let r = [],
+        i = [],
+        a = new Set,
+        o = new Set;
+    for (let t of e) {
+        if (t.is_shared !== !0 || t.name.trim().length === 0 || !Te(t.parent_directory_id)) continue;
+        if (t.kind === `file` && t.state === `ready` && t.id.trim().length > 0 && !Fa(t.id) && t.file_id == null && !a.has(t.id)) {
+            a.add(t.id), r.push({
+                fileId: t.id,
+                libraryFileId: t.id,
+                fileName: t.name,
+                mimeType: t.mime_type,
+                fileSizeBytes: t.file_size_bytes,
+                libraryFileCategory: t.library_file_category,
+                libraryArtifactType: t.library_artifact_type,
+                ...t.shared_by?.name ? {
+                    sharedByName: t.shared_by.name
+                } : {},
+                sharedLibraryFileReference: {
+                    displayPath: t.display_path
+                }
+            });
+            continue
+        }
+        if (t.kind !== `directory` || t.is_root === !0 || !Te(t.id) || p(t.id) || o.has(t.id)) continue;
+        let e = Ld(t);
+        e != null && (o.add(t.id), i.push({
+            directoryId: t.id,
+            displayPath: e,
+            name: t.name,
+            ...t.shared_by?.name ? {
+                sharedByName: t.shared_by.name
+            } : {}
+        }))
+    }
+    return {
+        fileCandidates: hu($d([], r), t, e => e.fileName).slice(0, n),
+        folderCandidates: hu(i, t, e => e.name).slice(0, Gf)
+    }
+}
+
+function Vd(e, t) {
+    let n = t => {
+            let n = t.toLowerCase().split(/[\s_-]+/).filter(Boolean);
+            return n.length === 0 ? [] : e.filter(e => {
+                let t = e.name.toLowerCase().replace(/[\s_-]+/g, ``);
+                return n.every(e => t.includes(e))
+            })
+        },
+        r = n(t);
+    return r.length > 0 ? r : n(t.slice(0, -1))
+}
+
+function Hd({
+    currentConnectionScopeKey: e,
+    items: t,
+    resultConnectionScopeKey: n
+}) {
+    return e != null && e === n ? t : []
+}
+
+function Ud(e, t) {
+    return !e.some(e => e.fileId === t || e.mountedLibraryFileId === t)
+}
+
+function Wd(e) {
+    return {
+        fileId: e.file_id,
+        libraryFileId: e.id,
+        fileName: e.file_name,
+        mimeType: e.mime_type,
+        fileSizeBytes: e.file_size_bytes,
+        libraryFileCategory: e.library_file_category,
+        libraryArtifactType: e.library_artifact_type,
+        externalAccount: e.external_account ?? void 0
+    }
+}
+
+function Gd(e, t) {
+    return Fa(e) ? t : t.split(`/`).pop() ?? t
+}
+
+function Kd(e, {
+    providers: t,
+    includeOwnedFolders: n,
+    includeSharedResults: r
+}, i = ``) {
+    let a = [],
+        o = [],
+        s = [],
+        c = [],
+        l = new Map;
+    for (let [i, u] of e.entries()) {
+        let e = u.payload,
+            d = (`provider` in e ? ea(e) : null) ?? `native`;
+        if (u.source_type !== `library`) continue;
+        if (d === `native_shared`) {
+            if (!r || e.kind !== `library_file` && e.kind !== `library_folder`) continue;
+            let t = `/` + [...u.snippet?.split(` / `) ?? [], u.title].join(`/`),
+                n = {
+                    name: u.title,
+                    parent_directory_id: e.parent_directory_id ?? null,
+                    display_path: t,
+                    is_shared: e.is_shared,
+                    shared_by: e.shared_by
+                };
+            e.kind === `library_folder` ? (c.push({
+                ...n,
+                kind: `directory`,
+                id: e.directory_id,
+                is_root: e.is_root
+            }), l.set(e.directory_id, i)) : e.kind === `library_file` && e.file_id === e.library_item_id && (c.push({
+                ...n,
+                kind: `file`,
+                id: e.library_item_id,
+                name: e.file_name,
+                state: e.state,
+                mime_type: e.mime_type,
+                file_size_bytes: e.file_size_bytes,
+                library_file_category: e.library_file_category,
+                library_artifact_type: e.library_artifact_type
+            }), l.set(e.library_item_id, i));
+            continue
+        }
+        if (!t.includes(d)) continue;
+        if (e.kind === `library_folder`) {
+            if (!n || u.source_key !== `library:folder`) continue;
+            if (d !== `native`) {
+                let t = d === `google_drive` ? Ed(e.directory_id, e.external_account) : e.directory_id,
+                    n = d === `google_drive` && e.parent_directory_id != null ? Ed(e.parent_directory_id, e.external_account) : e.parent_directory_id;
+                if (d !== `google_drive` && d !== `box` && d !== `dropbox` || Rr(t, d)?.provider !== d || n != null && (!wi(n) || Rr(n, d)?.provider !== d)) continue;
+                let r = zd([{
+                    kind: `directory`,
+                    id: t,
+                    name: u.title,
+                    parent_directory_id: n ?? null,
+                    display_path: u.snippet,
+                    is_root: e.is_root,
+                    external_account: e.external_account
+                }]).folderCandidates;
+                o.push(...r.map(e => ({
+                    ...e,
+                    globalSearchRank: i
+                })));
+                continue
+            }
+            let r = Dr(u, t);
+            if (r == null || r.is_root === !0 || r.id.length === 0 || r.name.trim().length === 0) continue;
+            let a = r.display_path != null && Id(r.display_path) ? r.display_path : void 0;
+            if (a == null) continue;
+            o.push({
+                directoryId: r.id,
+                name: r.name,
+                displayPath: a,
+                globalSearchRank: i
+            });
+            continue
+        }
+        let f = Qa(u, t, {
+            allowSharePoint: t.some(Yr)
+        });
+        f != null && (d === `native` && s.push(f), !(f.state !== `ready` || f.file_name.trim().length === 0) && a.push({
+            ...Wd(f),
+            ...Fa(f.id) ? {
+                fileId: f.id
+            } : {},
+            ...Yr(d) && u.snippet ? {
+                sourceLocation: u.snippet
+            } : {},
+            globalSearchRank: i
+        }))
+    }
+    let u = Bd(c, i, Kf);
+    return a.push(...u.fileCandidates.map(e => ({
+        ...e,
+        globalSearchRank: l.get(e.fileId)
+    }))), o.push(...u.folderCandidates.map(e => ({
+        ...e,
+        globalSearchRank: l.get(e.directoryId)
+    }))), a.sort((e, t) => (e.globalSearchRank ?? 0) - (t.globalSearchRank ?? 0)), o.sort((e, t) => (e.globalSearchRank ?? 0) - (t.globalSearchRank ?? 0)), {
+        fileCandidates: hu(Zd(a, [], e => e.libraryFileId ?? e.fileId), i, e => Gd(e.fileId, e.fileName)),
+        folderCandidates: hu(Zd(o, [], e => e.directoryId), i, e => e.name).slice(0, Gf),
+        nativeFiles: s
+    }
+}
+
+function qd(e, t, n) {
+    let r = e => e.libraryFileId ?? e.fileId,
+        i = new Map(t.map(e => [r(e), e])),
+        a = e.map(e => {
+            let t = i.get(r(e));
+            return {
+                ...e,
+                ...t,
+                externalAccount: t?.externalAccount ?? e.externalAccount
+            }
+        }),
+        o = new Set(a.map(r)),
+        s = new Set(a.map(Qd)),
+        c = t.filter(e => !o.has(r(e)) && !s.has(Qd(e))),
+        l = $d([...a, ...c], []);
+    return [...a, ...l.filter(e => !o.has(r(e)))].slice(0, n)
+}
+
+function Jd(e, t) {
+    t.composerDisplayMode !== `inline` && e.files$.set(e => e.map(e => e.tempId === t.tempId ? {
+        ...e,
+        composerDisplayMode: `inline`
+    } : e))
+}
+
+function Yd(e, t) {
+    return e.fileId === t.fileId || e.mountedLibraryFileId === t.fileId || e.sharedLibraryFileReference != null && t.libraryFileId != null && e.sharedLibraryFileReference.library_file_id === t.libraryFileId
+}
+async function Xd(e, t, n, r = !1, i = `at_mention`, a = !1, o, s, c, l) {
+    let u = zt(e.files$).find(e => Yd(e, t));
+    if (u != null) {
+        if (n === `inline` && Jd(e, u), await L(() => !e.files$().some(e => e.tempId === u.tempId && e.status === ut.Uploading)), !zt(e.readyFiles$).some(e => e.tempId === u.tempId)) throw Error(`Mounted Library file attachment did not complete`);
+        return
+    }
+    let d = to(zt(e.files$), l),
+        f = t.mimeType ?? Jt(t.fileName);
+    if (t.sharedLibraryFileReference != null) {
+        if (dn(zt(e.files$)) >= 10) throw Error(`Shared Library file reference limit exceeded`);
+        if (!is.validateChatAttachmentTotal(e, o, s, c, d)) return;
+        is.attachSharedLibraryFileReference(e, {
+            libraryFileId: t.libraryFileId ?? t.fileId,
+            name: t.fileName,
+            displayPath: t.sharedLibraryFileReference.displayPath,
+            mimeType: t.mimeType,
+            libraryArtifactType: t.libraryArtifactType,
+            size: t.fileSizeBytes,
+            entrypoint: i,
+            composerDisplayMode: n
+        });
+        return
+    }
+    if (Fa(t.fileId)) {
+        if (!is.validateChatAttachmentTotal(e, o, s, c, d)) return;
+        let l = a && i === `at_mention` ? xl(t.fileId) : void 0,
+            u = l?.getCallbacks(t.fileId);
+        try {
+            await is.attachMountedLibraryFile(e, {
+                id: t.fileId,
+                name: t.fileName,
+                mimeType: f,
+                size: t.fileSizeBytes ?? void 0,
+                libraryProvider: vn(t.fileId),
+                libraryEntrypoint: i,
+                externalAccount: kd(t.externalAccount),
+                composerDisplayMode: n,
+                allowLiveReference: r,
+                deferMaterializationForSuggestions: ra(),
+                materialize: async () => {
+                    let e = await fo({
+                        fileId: t.fileId,
+                        name: t.fileName,
+                        mimeType: t.mimeType
+                    });
+                    return {
+                        id: e.file_id,
+                        name: e.file_name,
+                        mimeType: e.mime_type ?? f,
+                        size: e.file_size_bytes,
+                        previewFile: e.preview_file ?? void 0
+                    }
+                }
+            }) && (u?.onAttachmentSuccess(), l?.complete());
+            return
+        } catch (e) {
+            throw u?.onAttachmentError(e), e
+        }
+    }
+    is.validateChatAttachment(e, t.fileSizeBytes ?? void 0, o, s, c, d) && is.attachLibraryFile(e, {
+        id: t.fileId,
+        name: t.fileName,
+        mimeType: f,
+        size: t.fileSizeBytes ?? void 0,
+        libraryFileId: t.libraryFileId,
+        libraryArtifactType: t.libraryArtifactType ?? void 0,
+        libraryProvider: vn(t.fileId),
+        libraryEntrypoint: i,
+        composerDisplayMode: n
+    })
+}
+
+function Zd(e, t, n) {
+    let r = new Set;
+    return [...e, ...t].filter(e => {
+        let t = n(e);
+        return r.has(t) ? !1 : (r.add(t), !0)
+    })
+}
+
+function Qd(e) {
+    return JSON.stringify([Rr(e.fileId)?.provider ?? `native`, e.externalAccount?.key ?? null, e.fileName.trim().toLowerCase()])
+}
+
+function $d(e, t, n = qf) {
+    let r = new Set([...e, ...t.filter(e => !n.has(e.fileId))].map(e => e.fileName.trim().toLowerCase())),
+        i = Zd(e, t.filter(e => !n.has(e.fileId) || !r.has(e.fileName.trim().toLowerCase())), e => e.fileId),
+        a = new Map;
+    for (let e of i) {
+        let t = Qd(e),
+            n = a.get(t);
+        n == null ? a.set(t, new Set([e.fileId])) : n.add(e.fileId)
+    }
+    return i.filter(e => {
+        if (Yr(ba(e.fileId))) return !0;
+        let t = Qd(e);
+        return (a.get(t)?.size ?? 0) < 2
+    })
+}
+
+function ef(e) {
+    "use forget";
+    let t = (0, If.c)(204),
+        {
+            allowMountedLibraryLiveReferences: n,
+            allowSharedLibraryReferences: r,
+            canUseInlineTagging: i,
+            composerController: a,
+            conversation: o,
+            gizmoEditorMode: s,
+            maxLibraryAttachmentCount: c,
+            maxTotalLibraryAttachmentCount: u,
+            supportsLibraryFolderReferences: f,
+            unifiedComposerSelectionStateEnabled: p
+        } = e,
+        m = n !== void 0 && n,
+        h = r !== void 0 && r,
+        g = o.id,
+        _ = Ec(),
+        v = _.skipChatAttachmentLimits ? void 0 : c,
+        y = _.skipChatAttachmentLimits ? void 0 : u,
+        b = ln(),
+        ee = M(_.files$),
+        x = M(l),
+        S;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (S = $e(), t[0] = S) : S = t[0];
+    let C = S,
+        te;
+    t[1] === x ? te = t[2] : (te = yi(x), t[1] = x, t[2] = te);
+    let {
+        showRecentFilesDropdown: ne
+    } = te, w = C && ne, re = M(Ff), ie;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (ie = Yi(), t[3] = ie) : ie = t[3];
+    let T = ie,
+        [E, ae] = (0, Lf.useState)(``),
+        [D, oe] = (0, Lf.useState)(void 0),
+        [O, se] = (0, Lf.useState)(!1),
+        ce = D === `@` || D === `+`,
+        le;
+    t[4] !== i || t[5] !== w || t[6] !== ce ? (le = () => i && w && ce ? na() : void 0, t[4] = i, t[5] = w, t[6] = ce, t[7] = le) : le = t[7];
+    let k = M(le),
+        A = k?.googleDriveConnectionScopeKey,
+        de = k?.connectionScopeKey,
+        fe = k?.accountScopeKey,
+        pe;
+    t[8] !== fe || t[9] !== de || t[10] !== A || t[11] !== k ? (pe = k == null ? void 0 : JSON.stringify([fe, de, A, k.providers]), t[8] = fe, t[9] = de, t[10] = A, t[11] = k, t[12] = pe) : pe = t[12];
+    let j = pe,
+        me, he;
+    t[13] !== m || t[14] !== i || t[15] !== a || t[16] !== _ || t[17] !== p ? (me = () => {
+        if (!(!i || !p)) return uc(hs(a), e => Xd(_, e, `inline`, m, `pasted_url`).then(() => {
+            if (!zt(_.files$).some(t => Yd(t, e))) throw Error(`Mounted Library file attachment did not complete`);
+            Ds(e.fileId, !0)
+        }, t => {
+            throw Ds(e.fileId, !1, t), t
+        }))
+    }, he = [m, i, a, _, p], t[13] = m, t[14] = i, t[15] = a, t[16] = _, t[17] = p, t[18] = me, t[19] = he) : (me = t[18], he = t[19]), (0, Lf.useEffect)(me, he);
+    let ge;
+    t[20] === re ? ge = t[21] : (ge = X({
+        providers: re,
+        isGoogleDriveEnabled: T
+    }), t[20] = re, t[21] = ge);
+    let _e = ge,
+        ve;
+    t[22] !== _e || t[23] !== k ? (ve = () => k == null ? _e : va().recentProviders, t[22] = _e, t[23] = k, t[24] = ve) : ve = t[24];
+    let P = M(ve),
+        [F, ye] = (0, Lf.useState)(null),
+        I = (0, Lf.useRef)(!1),
+        be = (0, Lf.useRef)(!1),
+        xe = M(Ki),
+        Ce;
+    t[25] === E ? Ce = t[26] : (Ce = E.trim().toLowerCase(), t[25] = E, t[26] = Ce);
+    let L = Ce,
+        we;
+    t[27] !== h || t[28] !== i || t[29] !== A || t[30] !== w || t[31] !== _e || t[32] !== j || t[33] !== O || t[34] !== p || t[35] !== F ? (we = (e, t, n) => {
+        let r = t === `@` || t === `+`;
+        if (r && !be.current && i && w && (be.current = !0, ei()), r ? !I.current && h && i && w && p && ua() && (I.current = !0, za()) : (I.current = !1, be.current = !1), r && n && !O && j != null) {
+            let e = zt(d);
+            e?.id == null || e.normalizedAccountUserId == null || F != null && (F.accountId !== e.id || F.accountUserId !== e.normalizedAccountUserId) ? ye(null) : Nn({
+                googleDriveConnectionScopeKey: A,
+                providers: _e
+            }) ? ye({
+                accountId: e.id,
+                accountUserId: e.normalizedAccountUserId,
+                googleDriveConnectionScopeKey: A,
+                providersKey: _e.join(`,`),
+                items: lr({
+                    googleDriveConnectionScopeKey: A,
+                    providers: _e
+                }).items.filter(Pf)
+            }) : ye(null)
+        }
+        ae(e), oe(t), se(n)
+    }, t[27] = h, t[28] = i, t[29] = A, t[30] = w, t[31] = _e, t[32] = j, t[33] = O, t[34] = p, t[35] = F, t[36] = we) : we = t[36];
+    let R = we,
+        Ee;
+    t[37] !== ce || t[38] !== j || t[39] !== O ? (Ee = () => {
+        !ce || !O || j == null || er().catch(Nf)
+    }, t[37] = ce, t[38] = j, t[39] = O, t[40] = Ee) : Ee = t[40];
+    let z;
+    t[41] !== fe || t[42] !== P || t[43] !== de || t[44] !== A || t[45] !== ce || t[46] !== j || t[47] !== O ? (z = [fe, P, de, j, A, ce, O], t[41] = fe, t[42] = P, t[43] = de, t[44] = A, t[45] = ce, t[46] = j, t[47] = O, t[48] = z) : z = t[48], (0, Lf.useEffect)(Ee, z);
+    let De = Md({
+            canUseInlineTagging: i,
+            isFileLibraryUiEnabled: w,
+            isLibraryMentionMenuOpen: ce,
+            supportsLibraryFolderReferences: f,
+            unifiedComposerSelectionStateEnabled: p
+        }),
+        Oe = h && i && w && p && ua(),
+        ke = Oe && ce && ua({
+            logExposure: !0
+        }),
+        Ae = ke,
+        je = De || Ae,
+        Me = Ae || Nd({
+            canUseInlineTagging: i,
+            isFileLibraryUiEnabled: w,
+            supportsLibraryFolderReferences: f,
+            unifiedComposerSelectionStateEnabled: p
+        }),
+        [B, Ne] = (0, Lf.useState)(null),
+        Pe = di(B),
+        Fe = (0, Lf.useRef)(0),
+        Ie = (0, Lf.useRef)(null),
+        Le;
+    t[49] === Symbol.for(`react.memo_cache_sentinel`) ? (Le = new Map, t[49] = Le) : Le = t[49];
+    let Re = (0, Lf.useRef)(Le),
+        ze = M(() => je ? bc(vs(a).doc) : Yf),
+        Be = i && w && ce && L.length > 0,
+        V = Be && Gn(),
+        Ve = V && oo({
+            disableExposureLog: !0
+        }),
+        Ue = Be && De,
+        We = Be && ke,
+        Ge = JSON.stringify([j, Ue, We, Ve]),
+        Ke = Be ? JSON.stringify([V ? E : null, Ge, g]) : null,
+        [qe, Je] = (0, Lf.useState)(Ke);
+    qe !== Ke && (Je(Ke), Ne(null));
+    let Ye;
+    t[50] !== g || t[51] !== Ve || t[52] !== Ge || t[53] !== j || t[54] !== L || t[55] !== Pe || t[56] !== k || t[57] !== E || t[58] !== Ne || t[59] !== Ue || t[60] !== We || t[61] !== Be || t[62] !== V ? (Ye = () => {
+        if (!Be) {
+            Fe.current += 1;
+            return
+        }
+        if (V) {
+            let e = Fe.current += 1,
+                t = new AbortController,
+                n = !1,
+                r = () => !t.signal.aborted && Fe.current === e && Di(k),
+                i = {
+                    query: L,
+                    globalSearchScopeKey: Ge,
+                    fileItems: null,
+                    globalSearchFileCandidates: [],
+                    folderItems: [],
+                    mountedItems: [],
+                    mountedSearchScopeKey: j,
+                    provisionalBoxItemIds: qf,
+                    sharedItems: null,
+                    isPending: !0
+                },
+                a = e => {
+                    Ne(t => r() ? e(t?.query === L && t.globalSearchScopeKey === Ge ? t : i) : t)
+                },
+                o = (k?.providers ?? [`native`]).filter(e => !Ve || e !== `sharepoint`),
+                s = [...o, ...We ? [`native_shared`] : []],
+                c = [];
+            Cd() && (o.includes(`google_drive`) && c.push(`google_drive`), o.includes(`box`) && c.push(`box`));
+            let l = k?.imanageConnectionScopeKey == null ? 1 : 2,
+                u = () => {
+                    --l, a(e => ({
+                        ...e,
+                        isPending: l > 0
+                    }))
+                },
+                d = window.setTimeout(() => {
+                    Ne(i), k?.imanageConnectionScopeKey != null && Cl({
+                        query: E.trim(),
+                        limit: Kf,
+                        providers: [`imanage`],
+                        signal: t.signal
+                    }).then(e => {
+                        if (!r()) return;
+                        let t = zd(e.items.filter(Mf), qf, L, Kf).fileCandidates;
+                        a(e => ({
+                            ...e,
+                            globalSearchFileCandidates: qd(e.globalSearchFileCandidates ?? [], t, Bf)
+                        }))
+                    }).then(u, u), c.forEach(e => {
+                        Tl({
+                            query: E.trim(),
+                            limit: Kf,
+                            provider: e,
+                            signal: t.signal
+                        }).then(t => {
+                            if (!r() || n || t == null) return;
+                            let i = e === `google_drive` ? `gdrive` : `box`,
+                                o = zd(t.items.filter(e => e.kind === `file` && ba(e.id) === i), qf, L, Kf).fileCandidates;
+                            a(e => ({
+                                ...e,
+                                globalSearchFileCandidates: qd(e.globalSearchFileCandidates ?? [], o, Vf)
+                            }))
+                        }).catch(jf)
+                    }), un({
+                        query: E.trim(),
+                        limit: Kf,
+                        entrypoint: `composer`,
+                        sourceRequests: [{
+                            type: `library`,
+                            filters: {
+                                lanes: Ue || We ? [`image`, `document`, `folder`] : [`image`, `document`],
+                                ...s.includes(`onedrive`) ? {
+                                    library_providers: s
+                                } : {
+                                    providers: s.filter(Af)
+                                }
+                            }
+                        }],
+                        signal: t.signal
+                    }).then(t => {
+                        if (!r()) return;
+                        let i = Kd(t.items, {
+                            providers: o,
+                            includeOwnedFolders: Ue,
+                            includeSharedResults: We
+                        }, L);
+                        n = !0;
+                        let s = (e, n) => {
+                            let r = n === void 0 || n;
+                            return (t.source_statuses ?? []).some(t => t.source_type === `library` && (r || t.source_key === `library:image` || t.source_key === `library:document`) && (t.status === `error` || t.provider_statuses?.some(t => ea(t) === e && t.status === `error`)))
+                        };
+                        Ie.current = s(`google_drive`) ? e : null, a(e => ({
+                            ...e,
+                            fileItems: i.nativeFiles,
+                            globalSearchFileCandidates: qd(e.globalSearchFileCandidates ?? [], i.fileCandidates, Bf),
+                            folderItems: i.folderCandidates
+                        }));
+                        let c = s(`native`, !1);
+                        Hs({
+                            loadType: `refresh`,
+                            success: !c,
+                            provider: $r(`native`),
+                            ...c ? {
+                                errorType: Oc
+                            } : {
+                                itemCount: i.nativeFiles.length
+                            },
+                            libraryOrigin: Jf,
+                            conversationId: g
+                        })
+                    }).catch(() => {
+                        r() && (Ie.current = e, a(kf), Hs({
+                            loadType: `refresh`,
+                            success: !1,
+                            provider: $r(`native`),
+                            errorType: Oc,
+                            libraryOrigin: Jf,
+                            conversationId: g
+                        }))
+                    }).then(u, u)
+                }, 200);
+            return () => {
+                window.clearTimeout(d), t.abort()
+            }
+        }
+        let e = Pe.current,
+            t = e?.mountedItems == null ? null : Hd({
+                currentConnectionScopeKey: j,
+                items: e.mountedItems,
+                resultConnectionScopeKey: e.mountedSearchScopeKey
+            }),
+            n = e?.provisionalBoxItemIds ?? qf,
+            r = t == null ? [] : Vd(t, L),
+            i = new Set(r.filter(e => n.has(e.id)).map(Of)),
+            a = new Set(r.filter(e => ba(e.id) === `box` && !i.has(e.id)).map(Df)),
+            o = null,
+            s = !1,
+            c = e => {
+                let t = o;
+                return t == null ? e ? r : [] : r.filter(n => ba(n.id) === `box` ? t.has(n.id) : e)
+            },
+            l = Fe.current + 1;
+        Fe.current = l;
+        let u = new AbortController,
+            d = !1,
+            f = !1,
+            p = () => !d && Fe.current === l && Di(k),
+            m = 2 + Number(Ue) + Number(We),
+            h = () => {
+                p() && (--m, !(m > 0) && Ne(e => e?.query === L ? {
+                    ...e,
+                    isPending: !1
+                } : e))
+            },
+            _ = window.setTimeout(() => {
+                let e = (e, n) => {
+                    Ne(a => {
+                        let o = a?.mountedItems == null ? null : Hd({
+                            currentConnectionScopeKey: j,
+                            items: a.mountedItems,
+                            resultConnectionScopeKey: a.mountedSearchScopeKey
+                        });
+                        return {
+                            ...a?.query === L ? {
+                                ...a,
+                                mountedItems: o
+                            } : {
+                                query: L,
+                                fileItems: null,
+                                globalSearchFileCandidates: null,
+                                folderItems: null,
+                                mountedItems: t == null ? null : r,
+                                mountedSearchScopeKey: a?.mountedSearchScopeKey,
+                                provisionalBoxItemIds: i,
+                                sharedItems: null,
+                                isPending: !0
+                            },
+                            ...e,
+                            ...e.mountedItems == null ? {} : {
+                                mountedSearchScopeKey: j
+                            },
+                            ...n?.retainedMountedItems != null && e.mountedItems != null ? {
+                                mountedItems: Zd(n.retainedMountedItems, e.mountedItems, Ef)
+                            } : {}
+                        }
+                    })
+                };
+                ro({
+                    limit: Wf,
+                    cursor: null,
+                    preferCache: !1,
+                    q: E.trim()
+                }).then(t => {
+                    p() && (e({
+                        fileItems: t.items
+                    }), Hs({
+                        loadType: `refresh`,
+                        success: !0,
+                        provider: $r(`native`),
+                        itemCount: t.items.length,
+                        libraryOrigin: Jf,
+                        conversationId: g
+                    }))
+                }).catch(() => {
+                    p() && (e({
+                        fileItems: []
+                    }), Hs({
+                        loadType: `refresh`,
+                        success: !1,
+                        provider: $r(`native`),
+                        errorType: Oc,
+                        libraryOrigin: Jf,
+                        conversationId: g
+                    }))
+                }).then(h, h), Ue && Ei({
+                    query: E.trim(),
+                    limit: Gf,
+                    entrypoint: `composer`
+                }).then(t => {
+                    p() && e({
+                        folderItems: Rd(t.items)
+                    })
+                }).catch(() => {
+                    p() && e({
+                        folderItems: []
+                    })
+                }).then(h, h);
+                let n = Cd(),
+                    d = n && k?.providers.includes(`box`) === !0;
+                wl({
+                    query: E.trim(),
+                    limit: Kf,
+                    signal: u.signal,
+                    useCache: n,
+                    providers: [...k?.providers.filter(Tf) ?? [], ...k?.imanageConnectionScopeKey == null ? [] : [`imanage`]],
+                    includeGoogleDriveCache: k?.providers.includes(`google_drive`) === !0,
+                    includeBoxCache: d,
+                    onCachedResult: (t, n) => {
+                        let {
+                            provider: r,
+                            providerPage: i
+                        } = n;
+                        if (!p()) return;
+                        let l;
+                        if (r === `google_drive`) Ie.current = null;
+                        else {
+                            let e = i.items.filter(wf).map(Cf);
+                            o = new Set(e), l = new Set(e.filter(e => !a.has(e)))
+                        }
+                        let u = c(!f || s);
+                        e({
+                            mountedItems: t.items,
+                            ...l == null ? {} : {
+                                provisionalBoxItemIds: l
+                            }
+                        }, {
+                            retainedMountedItems: u
+                        })
+                    },
+                    onResult: t => {
+                        p() && (Ie.current = null, e({
+                            mountedItems: t.items,
+                            provisionalBoxItemIds: qf
+                        }))
+                    },
+                    onLiveError: t => {
+                        let {
+                            cachedPage: n,
+                            cachedProviders: r
+                        } = t;
+                        if (!p()) return;
+                        f = !0, s = r.has(`google_drive`), Ie.current = r.has(`google_drive`) ? null : l;
+                        let i = c(s);
+                        e({
+                            mountedItems: n?.items ?? []
+                        }, {
+                            retainedMountedItems: i
+                        })
+                    }
+                }).then(h, h), We && N.safeGet(`/files/library/shared/search`, {
+                    parameters: {
+                        query: {
+                            q: E.trim(),
+                            limit: Kf
+                        }
+                    },
+                    signal: u.signal
+                }).then(t => {
+                    p() && e({
+                        sharedItems: t.items
+                    })
+                }).catch(() => {
+                    p() && e({
+                        sharedItems: []
+                    })
+                }).then(h, h)
+            }, 200);
+        return () => {
+            d = !0, window.clearTimeout(_), u.abort()
+        }
+    }, t[50] = g, t[51] = Ve, t[52] = Ge, t[53] = j, t[54] = L, t[55] = Pe, t[56] = k, t[57] = E, t[58] = Ne, t[59] = Ue, t[60] = We, t[61] = Be, t[62] = V, t[63] = Ye) : Ye = t[63];
+    let Xe;
+    t[64] !== g || t[65] !== Ve || t[66] !== Ge || t[67] !== j || t[68] !== L || t[69] !== Pe || t[70] !== k || t[71] !== E || t[72] !== Ue || t[73] !== We || t[74] !== Be || t[75] !== V ? (Xe = [g, Ve, j, L, Pe, E, Ue, We, Be, T, k, Ge, V], t[64] = g, t[65] = Ve, t[66] = Ge, t[67] = j, t[68] = L, t[69] = Pe, t[70] = k, t[71] = E, t[72] = Ue, t[73] = We, t[74] = Be, t[75] = V, t[76] = Xe) : Xe = t[76], (0, Lf.useEffect)(Ye, Xe);
+    let Ze = V && B?.query === L && B.globalSearchScopeKey === Ge,
+        Qe = Be && B?.query === L && (!V || Ze) && B.fileItems != null ? B.fileItems : null,
+        et = Qe != null,
+        H = Be && (V && !Ze || B?.query !== L || B.isPending),
+        tt;
+    t[77] !== Qe || t[78] !== et || t[79] !== L || t[80] !== O ? (tt = Fd(hu(Qe ?? [], L, Sf), et ? `` : L, O ? Uf : zf), t[77] = Qe, t[78] = et, t[79] = L, t[80] = O, t[81] = tt) : tt = t[81];
+    let nt = tt,
+        rt;
+    bb0: {
+        if (!O) {
+            let e;
+            t[82] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[82] = e) : e = t[82], rt = e;
+            break bb0
+        }
+        let e;t[83] !== fe || t[84] !== P || t[85] !== de || t[86] !== A ? (e = Nn({
+            accountScopeKey: fe,
+            connectionScopeKey: de,
+            googleDriveConnectionScopeKey: A,
+            providers: P
+        }), t[83] = fe, t[84] = P, t[85] = de, t[86] = A, t[87] = e) : e = t[87];
+        let n = e,
+            r;
+        if (t[88] !== fe || t[89] !== xe || t[90] !== P || t[91] !== de || t[92] !== A || t[93] !== n || t[94] !== _e || t[95] !== j || t[96] !== F) {
+            let e = xe > 0 || n ? lr({
+                accountScopeKey: fe,
+                connectionScopeKey: de,
+                googleDriveConnectionScopeKey: A,
+                providers: P
+            }).items : [];
+            r = Fd((j != null && !n && e.length === 0 ? Ad(F, _e, A) ?? e : e).filter(xf), ``, Uf), t[88] = fe, t[89] = xe, t[90] = P, t[91] = de, t[92] = A, t[93] = n, t[94] = _e, t[95] = j, t[96] = F, t[97] = r
+        } else r = t[97];rt = r
+    }
+    let it = rt,
+        at;
+    bb1: {
+        if (V || !Be || B?.mountedItems == null) {
+            let e;
+            t[98] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+                fileCandidates: [],
+                folderCandidates: []
+            }, t[98] = e) : e = t[98], at = e;
+            break bb1
+        }
+        let e;
+        if (t[99] !== j || t[100] !== L || t[101] !== B.mountedItems || t[102] !== B.mountedSearchScopeKey || t[103] !== B.provisionalBoxItemIds || t[104] !== B.query) {
+            let n = Hd({
+                currentConnectionScopeKey: j,
+                items: B.mountedItems,
+                resultConnectionScopeKey: B.mountedSearchScopeKey
+            });
+            e = zd(B.query === L ? n : Vd(n, L), B.provisionalBoxItemIds, L), t[99] = j, t[100] = L, t[101] = B.mountedItems, t[102] = B.mountedSearchScopeKey, t[103] = B.provisionalBoxItemIds, t[104] = B.query, t[105] = e
+        } else e = t[105];at = e
+    }
+    let ot = at,
+        st;
+    t[106] !== L || t[107] !== B || t[108] !== We || t[109] !== V ? (st = !V && We && B?.query === L && B.sharedItems != null ? Bd(B.sharedItems, L) : {
+        fileCandidates: [],
+        folderCandidates: []
+    }, t[106] = L, t[107] = B, t[108] = We, t[109] = V, t[110] = st) : st = t[110];
+    let U = st,
+        ct;
+    bb2: {
+        if (V) {
+            let e;
+            t[111] !== Ze || t[112] !== B ? (e = Ze ? B.globalSearchFileCandidates ?? [] : [], t[111] = Ze, t[112] = B, t[113] = e) : e = t[113], ct = e;
+            break bb2
+        }
+        let e;t[114] !== nt || t[115] !== ot.fileCandidates || t[116] !== L || t[117] !== B?.provisionalBoxItemIds || t[118] !== U.fileCandidates ? (e = hu($d(hu($d(nt.map(Wd), ot.fileCandidates, B?.provisionalBoxItemIds), L, bf), U.fileCandidates), L, yf), t[114] = nt, t[115] = ot.fileCandidates, t[116] = L, t[117] = B?.provisionalBoxItemIds, t[118] = U.fileCandidates, t[119] = e) : e = t[119],
+        ct = e
+    }
+    let dt = ct,
+        ft;
+    t[120] === it ? ft = t[121] : (ft = it.map(Wd), t[120] = it, t[121] = ft);
+    let pt = ft,
+        mt;
+    bb3: {
+        if (!i || !w) {
+            let e;
+            t[122] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+                fileLibraryBrowseSuggestions: [],
+                fileLibraryPathSuggestions: []
+            }, t[122] = e) : e = t[122], mt = e;
+            break bb3
+        }
+        let e;t[123] !== m || t[124] !== a || t[125] !== g || t[126] !== v || t[127] !== y || t[128] !== _ || t[129] !== s || t[130] !== b || t[131] !== L || t[132] !== k || t[133] !== ee || t[134] !== p ? (e = e => {
+            let t = e.fileName,
+                n = Fa(e.fileId),
+                r = t.split(`/`),
+                i = n ? t : r[r.length - 1] ?? t,
+                o = Ta(e.libraryArtifactType) || e.libraryArtifactType === `flashcards`,
+                c = o ? Wi(t, e.libraryArtifactType, b) : t,
+                l = o ? Wi(i, e.libraryArtifactType, b) : i,
+                u = !n && r.length > 1 ? r[0] : void 0,
+                d = n || e.sharedLibraryFileReference != null || e.globalSearchRank != null ? [t, t.replace(/[\s_-]+/g, ``), t.replace(/[\s_-]+/g, `_`), t.replace(/[\s_-]+/g, `-`), L] : u ? [t, i, u, ...r] : [t, i, ...r],
+                f = e.mimeType ?? Jt(e.fileName),
+                h = p && ![`audio/`, `image/`, `video/`].some(e => f.startsWith(e)),
+                x = ee.some(t => t.composerDisplayMode === `inline` && Yd(t, e)),
+                S = e.sharedLibraryFileReference != null && !ee.some(t => Yd(t, e)) && dn(ee) >= 10,
+                C = e.sharedLibraryFileReference == null ? Dd(e.fileId, e.externalAccount) : Od(e.sharedByName);
+            return {
+                id: `file-library:${e.fileId}`,
+                title: c,
+                matchText: [t, i, u ?? `root`],
+                showFor: [`at_command`],
+                noMatchEmpty: !0,
+                disabled: S,
+                searchParameters: {
+                    targets: d
+                },
+                icon: Ta(e.libraryArtifactType) ? (0, Rf.jsx)(Fi, {
+                    className: `icon`,
+                    iconKey: e.libraryArtifactType === `site_preview` ? `sites` : `app-block`
+                }) : (0, Rf.jsx)(Ci, {
+                    className: `icon`,
+                    fileName: i,
+                    mimeType: f,
+                    mountedLibraryFileId: e.fileId
+                }),
+                ...C,
+                secondary: e.sourceLocation ?? C.secondary,
+                ...e.sourceLocation ? {
+                    tooltip: {
+                        primary: l,
+                        secondary: e.sourceLocation
+                    }
+                } : {},
+                insertText: h && !x ? l : void 0,
+                meta: {
+                    ...e.globalSearchRank == null ? {} : {
+                        globalSearchRank: e.globalSearchRank
+                    },
+                    mention: h ? {
+                        representation: `inline-pill`,
+                        kind: `document-reference`,
+                        documentReferenceMimeType: f,
+                        documentReferenceLibraryArtifactType: e.libraryArtifactType ?? void 0
+                    } : void 0
+                },
+                onSelect: () => {
+                    if (Fa(e.fileId) && !Di(k)) return;
+                    let t = _.files$(),
+                        n = t.find(t => Yd(t, e));
+                    if (n) {
+                        h && Jd(_, n);
+                        return
+                    }
+                    let r = t.filter(vf).length;
+                    if (Xd(_, e, h ? `inline` : void 0, m, `at_mention`, !0, b, v, y, s).catch(() => {
+                            if (!Ud(_.files$(), e.fileId)) return;
+                            let t = `file-library:${e.fileId}`,
+                                n = hs(a);
+                            Qo(n, [t], {
+                                addToHistory: !1
+                            }), Es(n, [t], {
+                                addToHistory: !1
+                            }), Se().danger(b.formatMessage(Xf.mountedFileMaterializationFailed))
+                        }), !_.files$().some(t => Yd(t, e))) {
+                        if (h) {
+                            let t = _.chatUploadLimitError$();
+                            if (t == null) return;
+                            let n = hs(a),
+                                r = `file-library:${e.fileId}`;
+                            Qo(n, [r], {
+                                addToHistory: !1
+                            }), Es(n, [r], {
+                                addToHistory: !1
+                            }), is.setChatUploadLimitError(_, t)
+                        }
+                        return
+                    }
+                    cc({
+                        provider: uo([e.fileId]),
+                        file: {
+                            file_id: e.fileId,
+                            mime_type: e.mimeType,
+                            library_file_category: e.libraryFileCategory ?? void 0
+                        },
+                        selected: !0,
+                        selectedCount: r + 1,
+                        libraryOrigin: Jf,
+                        conversationId: g
+                    })
+                }
+            }
+        }, t[123] = m, t[124] = a, t[125] = g, t[126] = v, t[127] = y, t[128] = _, t[129] = s, t[130] = b, t[131] = L, t[132] = k, t[133] = ee, t[134] = p, t[135] = e) : e = t[135];
+        let n = e,
+            r;t[136] !== pt || t[137] !== n ? (r = pt.map(n), t[136] = pt, t[137] = n, t[138] = r) : r = t[138];
+        let o;t[139] !== dt || t[140] !== n ? (o = dt.map(n), t[139] = dt, t[140] = n, t[141] = o) : o = t[141];
+        let c;t[142] !== r || t[143] !== o ? (c = {
+            fileLibraryBrowseSuggestions: r,
+            fileLibraryPathSuggestions: o
+        }, t[142] = r, t[143] = o, t[144] = c) : c = t[144],
+        mt = c
+    }
+    let {
+        fileLibraryBrowseSuggestions: ht,
+        fileLibraryPathSuggestions: gt
+    } = mt, _t;
+    bb4: {
+        if (!je || B == null) {
+            let e;
+            t[145] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[145] = e) : e = t[145], _t = e;
+            break bb4
+        }
+        let e;
+        if (t[146] !== Ze || t[147] !== De || t[148] !== ot.folderCandidates || t[149] !== L || t[150] !== B || t[151] !== U.folderCandidates || t[152] !== V) {
+            let n = hu(Zd(De && B.query === L ? B.folderItems ?? [] : [], De ? ot.folderCandidates : [], _f), L, gf);
+            e = V ? Ze ? B.folderItems ?? [] : [] : hu(Zd(n, U.folderCandidates, hf), L, mf), t[146] = Ze, t[147] = De, t[148] = ot.folderCandidates, t[149] = L, t[150] = B, t[151] = U.folderCandidates, t[152] = V, t[153] = e
+        } else e = t[153];
+        let n = e,
+            r;t[154] === ze ? r = t[155] : (r = new Set(ze.map(pf)), t[154] = ze, t[155] = r);
+        let i = r,
+            a = ze.length >= 10,
+            o;
+        if (t[156] !== n || t[157] !== a || t[158] !== L || t[159] !== i) {
+            let e;
+            t[161] !== a || t[162] !== L || t[163] !== i ? (e = e => {
+                let t = e.displayPath?.split(`/`).filter(Boolean) ?? [],
+                    n = e.displayPath ? [e.displayPath, e.name, ...t] : [e.name],
+                    r = oa(e.directoryId) || Te(e.directoryId) || e.globalSearchRank != null ? [...n, L] : n,
+                    o = Te(e.directoryId) ? Od(e.sharedByName) : Dd(e.directoryId, e.externalAccount),
+                    s = e.displayPath;
+                return o.secondary && (s = e.displayPath ? (0, Rf.jsxs)(Rf.Fragment, {
+                    children: [e.displayPath, (0, Rf.jsx)(`span`, {
+                        className: `ms-3 hidden sm:inline`,
+                        children: o.secondary
+                    })]
+                }) : o.secondary), {
+                    id: Jr(e.directoryId),
+                    title: e.name,
+                    secondary: s,
+                    matchText: r,
+                    showFor: [`at_command`],
+                    noMatchEmpty: !0,
+                    searchParameters: {
+                        targets: r
+                    },
+                    icon: (0, Rf.jsx)(qo, {
+                        className: `icon`
+                    }),
+                    trailing: o.trailing,
+                    insertText: e.name,
+                    disabled: a || i.has(e.directoryId),
+                    meta: {
+                        ...e.globalSearchRank == null ? {} : {
+                            globalSearchRank: e.globalSearchRank
+                        },
+                        mention: {
+                            representation: `inline-pill`,
+                            kind: `folder-reference`,
+                            libraryFolderEntrypoint: `at_mention`,
+                            ...e.displayPath ? {
+                                libraryFolderDisplayPath: e.displayPath
+                            } : {}
+                        }
+                    },
+                    onSelect: ff
+                }
+            }, t[161] = a, t[162] = L, t[163] = i, t[164] = e) : e = t[164], o = n.map(e), t[156] = n, t[157] = a, t[158] = L, t[159] = i, t[160] = o
+        } else o = t[160];_t = o
+    }
+    let vt = _t,
+        yt, bt;
+    t[165] !== dt || t[166] !== Ze || t[167] !== vt || t[168] !== L || t[169] !== B || t[170] !== O || t[171] !== D || t[172] !== V ? (yt = () => {
+        let e = Fe.current;
+        if (D !== `@` || O || V && !Ze || B?.query !== L || B.mountedItems == null || B.isPending) return;
+        let t = new Map;
+        T && Ie.current !== e && t.set(Nr.CHATGPT_FILE_LIBRARY_PROVIDER_GOOGLE_DRIVE, 0);
+        let n = [...dt.map(df), ...vt.flatMap(uf)];
+        for (let e of n) {
+            let n = $r(vn(e));
+            n == null || n === Nr.CHATGPT_FILE_LIBRARY_PROVIDER_LIBRARY || t.set(n, (t.get(n) ?? 0) + 1)
+        }
+        for (let [n, r] of t) Re.current.get(n) !== e && (He.logStructuredEvent(`ChatgptFileLibraryResultsShown`, {
+            provider: n,
+            productExperience: sa(),
+            visibleItemCount: ue(r),
+            ...r === 0 ? {
+                emptyReason: Dn.CHATGPT_FILE_LIBRARY_EMPTY_REASON_QUERY_NO_MATCH
+            } : {}
+        }), Re.current.set(n, e))
+    }, bt = [dt, Ze, T, vt, L, B, O, D, V], t[165] = dt, t[166] = Ze, t[167] = vt, t[168] = L, t[169] = B, t[170] = O, t[171] = D, t[172] = V, t[173] = yt, t[174] = bt) : (yt = t[173], bt = t[174]), (0, Lf.useEffect)(yt, bt);
+    let xt;
+    t[175] !== m || t[176] !== i || t[177] !== a || t[178] !== o || t[179] !== g || t[180] !== v || t[181] !== y || t[182] !== _ || t[183] !== s || t[184] !== A || t[185] !== b || t[186] !== De || t[187] !== Oe || t[188] !== _e || t[189] !== ze || t[190] !== p || t[191] !== F ? (xt = () => {
+        let e = Oe && ua({
+                logExposure: !0
+            }),
+            t = _.files$(),
+            n = to(t, s),
+            r = Nn({
+                googleDriveConnectionScopeKey: A,
+                providers: _e
+            }) ? lr({
+                googleDriveConnectionScopeKey: A,
+                providers: _e
+            }).items : Ad(F, _e, A);
+        At(Qi, {
+            attachedFileIds: t.flatMap(lf).filter(cf),
+            attachedFileCount: t.filter(sf).length,
+            attachedNativeLibraryFiles: t.flatMap(of),
+            conversationId: g,
+            entryPoint: `composer`,
+            ...v == null ? {} : {
+                nativeAttachmentPolicy: {
+                    maxAttachmentCount: v,
+                    attachedUploadFileCount: Pi(n),
+                    maxTotalAttachmentCount: y,
+                    attachedTotalFileCount: n.length,
+                    validateSize: e => is.validateChatAttachment(_, e),
+                    onLimitReached: () => is.setChatAttachmentCountLimitError(_, b, v)
+                }
+            },
+            canTrackNativeComposerAttachment: af,
+            initialFiles: r,
+            initialFilesAreCombinedRecents: r != null,
+            prewarmedRecentProviders: _e,
+            ...e ? {
+                attachedSharedLibraryFileCount: dn(t),
+                onAttachSharedLibraryFile: e => {
+                    let t = _.files$(),
+                        n = to(t, s);
+                    dn(t) >= 10 || !is.validateChatAttachmentTotal(_, b, v, y, n) || is.attachSharedLibraryFileReference(_, {
+                        libraryFileId: e.libraryFileId,
+                        name: e.name,
+                        mimeType: e.mimeType,
+                        libraryArtifactType: e.libraryArtifactType,
+                        size: e.size,
+                        displayPath: e.displayPath,
+                        entrypoint: `composer_library_picker`
+                    })
+                }
+            } : {},
+            ...De || e ? {
+                allowOwnedLibraryFolders: De,
+                attachedFolderIds: ze.map(rf),
+                onAttachLibraryFolders: e => {
+                    let t = Bs(a, e.map(nf));
+                    return t === `at-capacity` ? Se().danger(b.formatMessage(Xf.folderReferenceAtCapacity, {
+                        max: 10
+                    })) : t === `unavailable` && Se().danger(b.formatMessage(Xf.folderReferenceUnavailable)), t === `inserted`
+                }
+            } : {},
+            onAttachLibraryFile: e => {
+                if (!is.validateChatAttachment(_, e.size, b, v, y, to(_.files$(), s))) return;
+                let t = i && Wr(e.mimeType, e.libraryArtifactType),
+                    n = _.files$(),
+                    r = t && p && Hc(a, [{
+                        fileId: e.id,
+                        fileName: e.name,
+                        mimeType: e.mimeType,
+                        libraryArtifactType: e.libraryArtifactType
+                    }]);
+                try {
+                    is.attachLibraryFile(_, {
+                        ...e,
+                        ...r ? {
+                            composerDisplayMode: `inline`
+                        } : {}
+                    })
+                } catch (t) {
+                    let n = t;
+                    throw e.onAttachmentError?.(n), n
+                }
+                let o = _.files$().find(t => t.fileId === e.id && t.libraryFileId === e.libraryFileId && t.status === ut.Ready);
+                o != null && !n.includes(o) && e.onAttachmentSuccess?.()
+            },
+            onDetachLibraryFile: e => {
+                let t = _.files$().find(t => t.fileId === e || t.mountedLibraryFileId === e);
+                t != null && (t.composerDisplayMode === `inline` && Qo(hs(a), [`file-library:${t.mountedLibraryFileId??t.fileId}`], {
+                    addToHistory: !1
+                }), _.files$().some(e => e.tempId === t.tempId) && is.removeUserInitiated(_, t.tempId, {
+                    logComposerFileRemovalFor: lt(o) ? `work` : `chat`
+                }))
+            },
+            useCombinedRecents: !0,
+            prioritizeMountedGoogleDriveLiveReferences: m,
+            onAttachMountedLibraryFile: e => {
+                if (!is.validateChatAttachmentTotal(_, b, v, y, to(_.files$(), s))) return Promise.resolve(!1);
+                let t = i && Wr(e.mimeType) && p && Hc(a, [{
+                    fileId: e.id,
+                    fileName: e.name,
+                    mimeType: e.mimeType
+                }]);
+                return Xd(_, {
+                    fileId: e.id,
+                    fileName: e.name,
+                    mimeType: e.mimeType,
+                    fileSizeBytes: e.size
+                }, t ? `inline` : void 0, m, `composer_library_picker`, !1, b, v, y, s).then(() => _.readyFiles$().some(t => t.mountedLibraryFileId === e.id)).catch(n => {
+                    throw t && Qo(hs(a), [`file-library:${e.id}`], {
+                        addToHistory: !1
+                    }), n
+                })
+            },
+            onClose: tf
+        })
+    }, t[175] = m, t[176] = i, t[177] = a, t[178] = o, t[179] = g, t[180] = v, t[181] = y, t[182] = _, t[183] = s, t[184] = A, t[185] = b, t[186] = De, t[187] = Oe, t[188] = _e, t[189] = ze, t[190] = p, t[191] = F, t[192] = xt) : xt = t[192];
+    let St = xt,
+        Ct = V ? Ke : null,
+        wt = i && w,
+        Tt;
+    return t[193] !== ht || t[194] !== gt || t[195] !== H || t[196] !== je || t[197] !== Me || t[198] !== vt || t[199] !== R || t[200] !== St || t[201] !== Ct || t[202] !== wt ? (Tt = {
+        fileLibraryBrowseSuggestions: ht,
+        fileLibraryPathSuggestions: gt,
+        isFileLibrarySearchPending: H,
+        librarySearchKey: Ct,
+        isLibraryFolderUiEnabled: je,
+        isMultiwordLibraryMentionParsingEnabled: Me,
+        libraryFolderPathSuggestions: vt,
+        onSearchQueryChange: R,
+        openFileLibraryModal: St,
+        showFileLibraryEntrypoint: wt
+    }, t[193] = ht, t[194] = gt, t[195] = H, t[196] = je, t[197] = Me, t[198] = vt, t[199] = R, t[200] = St, t[201] = Ct, t[202] = wt, t[203] = Tt) : Tt = t[203], Tt
+}
+
+function tf() {
+    return Re(Qi)
+}
+
+function nf(e) {
+    return {
+        kind: `folder-reference`,
+        directoryId: e.id,
+        keyword: e.name,
+        displayPath: e.displayPath ?? null,
+        libraryEntrypoint: `composer_library_picker`
+    }
+}
+
+function rf(e) {
+    return e.directory_id
+}
+
+function af() {
+    return !0
+}
+
+function of(e) {
+    return e.fileId != null && e.libraryFileId != null && e.mountedLibraryFileId == null ? [{
+        selectionId: e.fileId,
+        libraryFileId: e.libraryFileId
+    }] : []
+}
+
+function sf(e) {
+    return (e.fileId != null || e.mountedLibraryFileId != null) && e.sharedLibraryFileReference == null
+}
+
+function cf(e) {
+    return e != null
+}
+
+function lf(e) {
+    return [e.fileId, e.mountedLibraryFileId]
+}
+
+function uf(e) {
+    let t = br(e.id);
+    return t == null ? [] : [t]
+}
+
+function df(e) {
+    return e.fileId
+}
+
+function ff() {}
+
+function pf(e) {
+    return e.directory_id
+}
+
+function mf(e) {
+    return e.name
+}
+
+function hf(e) {
+    return e.directoryId
+}
+
+function gf(e) {
+    return e.name
+}
+
+function _f(e) {
+    return e.directoryId
+}
+
+function vf(e) {
+    return e.source === `library`
+}
+
+function yf(e) {
+    return Gd(e.fileId, e.fileName)
+}
+
+function bf(e) {
+    return Gd(e.fileId, e.fileName)
+}
+
+function xf(e) {
+    let t = ba(e.id);
+    return t == null || !ui(t)
+}
+
+function Sf(e) {
+    return Gd(e.file_id, e.file_name)
+}
+
+function Cf(e) {
+    return e.id
+}
+
+function wf(e) {
+    return ba(e.id) === `box`
+}
+
+function Tf(e) {
+    return e !== `native`
+}
+
+function Ef(e) {
+    return e.id
+}
+
+function Df(e) {
+    return e.id
+}
+
+function Of(e) {
+    return e.id
+}
+
+function kf(e) {
+    return {
+        ...e,
+        fileItems: []
+    }
+}
+
+function Af(e) {
+    return e !== `onedrive`
+}
+
+function jf() {}
+
+function Mf(e) {
+    return ba(e.id) === `imanage`
+}
+
+function Nf() {}
+
+function Pf(e) {
+    let t = ba(e.id);
+    return t == null || t === `gdrive`
+}
+
+function Ff() {
+    return pr()
+}
+var If, Lf, Rf, zf, Bf, Vf, Hf, Uf, Wf, Gf, Kf, qf, Jf, Yf, Xf, Zf = e((() => {
+        If = cn(), aa(), Ga(), zr(), Vi(), kr(), Sl(), Ua(), Xc(), jo(), ye(), ri(), Pa(), ps(), Ye(), Oi(), bi(), te(), _a(), vr(), Pn(), Ia(), Ea(), ci(), ir(), jc(), Ja(), El(), jr(), Bt(), Td(), dr(), po(), Wa(), Ce(), st(), se(), H(), Pt(), Wt(), xn(), xe(), ho(), qt(), F(), gs(), Lf = n(an()), rn(), Wn(), Nc(), Is(), Qr(), gu(), Jc(), $o(), Z(), An(), Ra(), Rf = K(), zf = 3, Bf = 6, Vf = 3, Hf = 5, Uf = 10, Wf = 50, Gf = 3, Kf = 20, qf = new Set, Jf = Rn.CHATGPT_FILE_LIBRARY_ORIGIN_CONVERSATION_MENU, Yf = [], Xf = Qt({
+            mountedFileMaterializationFailed: {
+                id: `composer.library.mounted_file_materialization_failed`,
+                defaultMessage: `This file couldn't be attached. Please try again.`
+            },
+            folderReferenceAtCapacity: {
+                id: `composer.library.folder_reference.at_capacity.error`,
+                defaultMessage: `You can add up to {max} folders to a message.`
+            },
+            folderReferenceUnavailable: {
+                id: `composer.library.folder_reference.unavailable.error`,
+                defaultMessage: `This folder can't be added to this chat.`
+            }
+        })
+    })),
+    Qf = t({
+        SuggestedPluginConnectButton: () => mm,
+        SystemHintSuggestor: () => vm,
+        SystemHintSuggestorMenuBody: () => rp,
+        getAvailableSystemHintsForMenu: () => Rp
+    });
+
+function $f(e) {
+    return e.find(e => e.color === `selected`)?.title
+}
+
+function ep(e, t) {
+    return [...e, ...t.flatMap(e => [e.title, ...typeof e.secondary == `string` ? [e.secondary] : [], ...e.matchText])].filter(e => e.length > 0)
+}
+
+function tp({
+    id: e,
+    title: t,
+    secondary: n,
+    matchText: r,
+    icon: i,
+    firstItemId: a,
+    showFor: o = [`slash_command`]
+}) {
+    return {
+        id: e,
+        title: t,
+        ...n ? {
+            secondary: n
+        } : {},
+        matchText: r,
+        icon: i,
+        trailing: (0, $.jsx)(me.ChevronRightSm, {
+            className: `icon-sm`
+        }),
+        onSelect: () => {},
+        showFor: o,
+        meta: {
+            isSubmenuTrigger: !0,
+            submenuFirstItemId: a
+        }
+    }
+}
+
+function np(e) {
+    "use forget";
+    let t = (0, $p.c)(35),
+        {
+            composerController: n,
+            isMultiwordLibraryMentionParsingEnabled: r,
+            onSearchQueryChange: i
+        } = e,
+        a;
+    t[0] === n ? a = t[1] : (a = fc(n), t[0] = n, t[1] = a);
+    let o = a,
+        s = !M(tt),
+        c;
+    t[2] === n ? c = t[3] : (c = () => xs(n), t[2] = n, t[3] = c);
+    let l = M(c),
+        u = (0, Q.useRef)(null),
+        d = (0, Q.useRef)(null),
+        f = (0, Q.useRef)(_m),
+        [p, m] = (0, Q.useState)(void 0),
+        h = (0, Q.useRef)(void 0),
+        g;
+    t[4] === o.isSuggestionMenuVisible$ ? g = t[5] : (g = () => () => {
+        o.isSuggestionMenuVisible$.set(!1)
+    }, t[4] = o.isSuggestionMenuVisible$, t[5] = g);
+    let _;
+    t[6] === o ? _ = t[7] : (_ = [o], t[6] = o, t[7] = _), (0, Q.useEffect)(g, _);
+    let v, y;
+    t[8] !== p || t[9] !== i ? (v = () => {
+        h.current != null && p == null && (d.current = null, i(``, void 0, !1)), h.current = p
+    }, y = [p, i], t[8] = p, t[9] = i, t[10] = v, t[11] = y) : (v = t[10], y = t[11]), (0, Q.useEffect)(v, y);
+    let b, ee;
+    t[12] !== l || t[13] !== e.conversation.id ? (b = () => {
+        if (l == null) return;
+        let t = t => {
+            t.inputType === `insertText` && t.data === `@` && (d.current = {
+                conversationId: e.conversation.id,
+                rangeFrom: l.state.selection.from
+            })
+        };
+        return l.dom.addEventListener(`beforeinput`, t, !0), () => {
+            l.dom.removeEventListener(`beforeinput`, t, !0)
+        }
+    }, ee = [l, e.conversation.id], t[12] = l, t[13] = e.conversation.id, t[14] = b, t[15] = ee) : (b = t[14], ee = t[15]), (0, Q.useEffect)(b, ee);
+    let x;
+    t[16] !== n || t[17] !== s ? (x = e => {
+        let t = s ? e == null ? null : as(n).current ?? e : e;
+        u.current = t, f.current(t)
+    }, t[16] = n, t[17] = s, t[18] = x) : x = t[18];
+    let S = x,
+        C;
+    t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (C = e => (f.current = e, e(u.current), () => {
+        e(null), f.current === e && (f.current = _m)
+    }), t[19] = C) : C = t[19];
+    let te = C,
+        ne;
+    t[20] === o.isSuggestionMenuVisible$ ? ne = t[21] : (ne = e => {
+        o.isSuggestionMenuVisible$.set(e != null), m(t => Rt(t, e) ? t : e)
+    }, t[20] = o.isSuggestionMenuVisible$, t[21] = ne);
+    let w = ne,
+        re;
+    t[22] !== l || t[23] !== w || t[24] !== r || t[25] !== S ? (re = l != null && (0, $.jsx)(nd, {
+        editorView: l,
+        isMultiwordLibraryMentionParsingEnabled: r,
+        onHintMatch: w,
+        setReferencePosition: S
+    }), t[22] = l, t[23] = w, t[24] = r, t[25] = S, t[26] = re) : re = t[26];
+    let ie;
+    t[27] !== n || t[28] !== p || t[29] !== e || t[30] !== s ? (ie = p != null && (0, $.jsx)(Ca.Content, {
+        composerController: n,
+        children: (0, $.jsx)(rp, {
+            ...e,
+            hintMatch: p,
+            typedSitesMentionRef: d,
+            unifiedComposerMenuEnabled: s,
+            registerFloatingReference: te
+        })
+    }), t[27] = n, t[28] = p, t[29] = e, t[30] = s, t[31] = ie) : ie = t[31];
+    let T;
+    return t[32] !== re || t[33] !== ie ? (T = (0, $.jsxs)($.Fragment, {
+        children: [re, ie]
+    }), t[32] = re, t[33] = ie, t[34] = T) : T = t[34], T
+}
+
+function rp(e) {
+    "use forget";
+    let t = (0, $p.c)(427),
+        {
+            gptsAndAppsSlashCommands$: n,
+            pluginSuggestionRows: r,
+            laneModelSlashCommands$: i,
+            intelligenceSlashCommands$: a,
+            modelVersionSlashCommands$: o,
+            internalModelSlashCommands$: s,
+            modelSlashCommands$: c,
+            hazelnutSlashCommands: l,
+            templatedPrompts: d,
+            fileLibraryBrowseSuggestions: f,
+            fileLibraryPathSuggestions: p,
+            isFileLibrarySearchPending: m,
+            librarySearchKey: h,
+            libraryFolderPathSuggestions: g,
+            referenceImageSuggestions: v,
+            isLibraryFolderUiEnabled: y,
+            onSearchQueryChange: b,
+            slashCommands: x,
+            plusCameraSuggestion: S,
+            plusUploadSuggestion: C,
+            plusAudioAttachmentSuggestion: te,
+            fileUploadUpsell: ne,
+            openFileLibraryModal: w,
+            showFileLibraryEntrypoint: re,
+            systemHints: ie,
+            composerController: T,
+            canAccessFileLibrary: E,
+            conversation: D,
+            layoutMode: oe,
+            systemHintMenuSide: O,
+            isHomeNewChatComposer: se,
+            isCustomAgentHintActive: ce,
+            isFirstPartyProject: k,
+            isConversationViewComposer: ue,
+            isTemporaryChat: de,
+            isIntegratedVoiceModeActive: fe,
+            inputState: pe,
+            disableReason: j,
+            disableAdvancedVoiceMode: ge,
+            disableVoiceButton: _e,
+            thinkingSlashCommand: ve,
+            setSelectedGizmoTag: N,
+            composerToolAvailability: P,
+            hintMatch: F,
+            typedSitesMentionRef: ye,
+            unifiedComposerMenuEnabled: I,
+            registerFloatingReference: be
+        } = e,
+        xe = h === void 0 ? null : h,
+        Se = E === void 0 || E,
+        Ce = P === void 0 ? `default` : P,
+        {
+            disableAtTagging: L
+        } = la(),
+        {
+            slashCommands: we
+        } = d,
+        Te = tn(),
+        R = ln(),
+        Ee = Ce === `files_only`,
+        {
+            file_uploads: z,
+            image_uploads: De
+        } = Mc(),
+        Oe = M(cl),
+        ke = M(Me),
+        Ae;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (Ae = zi(), t[0] = Ae) : Ae = t[0];
+    let je = Ae,
+        Ne = he()?.planType === yt.FREE ? rm : void 0,
+        Pe;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (Pe = B(`3001618585`), t[1] = Pe) : Pe = t[1];
+    let Fe = Pe,
+        Ie;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (Ie = {
+        skip: !Fe
+    }, t[2] = Ie) : Ie = t[2];
+    let {
+        connectorLinks: Le
+    } = $a(Ie), Re;
+    t[3] === Le ? Re = t[4] : (Re = Fe && (Le.get(Ya)?.length ?? 0) > 0, t[3] = Le, t[4] = Re);
+    let ze = Re,
+        Be;
+    t[5] !== T || t[6] !== D || t[7] !== ge || t[8] !== j || t[9] !== _e || t[10] !== pe || t[11] !== I ? (Be = {
+        composerController: T,
+        conversation: D,
+        disableAdvancedVoiceMode: ge,
+        inputState: pe,
+        disableReason: j,
+        disableVoiceButton: _e,
+        enabled: I
+    }, t[5] = T, t[6] = D, t[7] = ge, t[8] = j, t[9] = _e, t[10] = pe, t[11] = I, t[12] = Be) : Be = t[12];
+    let V = Zl(Be),
+        Ve = `${O??(oe===`center`?`bottom`:`top`)}-start`,
+        Ue = I ? 8 : 10,
+        We = I ? 0 : -18,
+        Ge;
+    t[13] !== Ue || t[14] !== We ? (Ge = il({
+        mainAxis: Ue,
+        alignmentAxis: We
+    }), t[13] = Ue, t[14] = We, t[15] = Ge) : Ge = t[15];
+    let Ke;
+    t[16] === I ? Ke = t[17] : (Ke = I ? [] : [nl({
+        padding: 6
+    })], t[16] = I, t[17] = Ke);
+    let qe = I ? 28 : 0,
+        Je;
+    t[18] === I ? Je = t[19] : (Je = e => {
+        let {
+            elements: t,
+            rects: n,
+            availableWidth: r,
+            availableHeight: i
+        } = e, a = I ? n.reference.width : r;
+        t.floating.style.setProperty(`--radix-popper-available-width`, `${a}px`), t.floating.style.setProperty(`--radix-popper-available-height`, `${i}px`)
+    }, t[18] = I, t[19] = Je);
+    let Ye;
+    t[20] !== qe || t[21] !== Je ? (Ye = al({
+        padding: qe,
+        apply: Je
+    }), t[20] = qe, t[21] = Je, t[22] = Ye) : Ye = t[22];
+    let Xe;
+    t[23] !== Ge || t[24] !== Ke || t[25] !== Ye ? (Xe = [Ge, ...Ke, Ye], t[23] = Ge, t[24] = Ke, t[25] = Ye, t[26] = Xe) : Xe = t[26];
+    let et;
+    t[27] !== Xe || t[28] !== Ve ? (et = {
+        placement: Ve,
+        middleware: Xe,
+        whileElementsMounted: rl
+    }, t[27] = Xe, t[28] = Ve, t[29] = et) : et = t[29];
+    let {
+        refs: H,
+        floatingStyles: tt
+    } = sl(et), nt, rt;
+    t[30] !== H || t[31] !== be ? (nt = () => be(e => {
+        H.setReference(e)
+    }), rt = [H, be], t[30] = H, t[31] = be, t[32] = nt, t[33] = rt) : (nt = t[32], rt = t[33]), le(nt, rt);
+    let it;
+    t[34] === Symbol.for(`react.memo_cache_sentinel`) ? (it = {
+        placement: `right-start`,
+        middleware: [il({
+            mainAxis: 4
+        }), nl({
+            padding: 6
+        })],
+        whileElementsMounted: rl
+    }, t[34] = it) : it = t[34];
+    let {
+        refs: at,
+        floatingStyles: ot,
+        update: st
+    } = sl(it), U;
+    t[35] === Symbol.for(`react.memo_cache_sentinel`) ? (U = {
+        placement: `right-start`,
+        middleware: [il({
+            mainAxis: 4
+        }), nl({
+            padding: 6
+        })],
+        whileElementsMounted: rl
+    }, t[35] = U) : U = t[35];
+    let {
+        refs: ct,
+        floatingStyles: lt,
+        update: ut
+    } = sl(U), dt = (0, Q.useRef)(null), pt = (0, Q.useRef)(null), mt;
+    t[36] === at ? mt = t[37] : (mt = e => {
+        at.setReference(e)
+    }, t[36] = at, t[37] = mt);
+    let ht = mt,
+        gt;
+    t[38] === at ? gt = t[39] : (gt = e => {
+        at.setFloating(e)
+    }, t[38] = at, t[39] = gt);
+    let _t = gt,
+        vt;
+    t[40] === ct ? vt = t[41] : (vt = e => {
+        ct.setReference(e)
+    }, t[40] = ct, t[41] = vt);
+    let bt = vt,
+        xt;
+    t[42] === ct ? xt = t[43] : (xt = e => {
+        ct.setFloating(e)
+    }, t[42] = ct, t[43] = xt);
+    let St = xt,
+        wt;
+    t[44] === Symbol.for(`react.memo_cache_sentinel`) ? (wt = () => {
+        dt.current != null && (window.clearTimeout(dt.current), dt.current = null)
+    }, t[44] = wt) : wt = t[44];
+    let Tt = wt,
+        Et;
+    t[45] === Symbol.for(`react.memo_cache_sentinel`) ? (Et = () => {
+        pt.current != null && (window.clearTimeout(pt.current), pt.current = null)
+    }, t[45] = Et) : Et = t[45];
+    let Dt = Et,
+        [Ot, kt] = (0, Q.useState)(Lp),
+        [At, jt] = (0, Q.useState)(Ip),
+        Mt, Nt;
+    t[46] === Symbol.for(`react.memo_cache_sentinel`) ? (Mt = () => Tt, Nt = [Tt], t[46] = Mt, t[47] = Nt) : (Mt = t[46], Nt = t[47]), (0, Q.useEffect)(Mt, Nt);
+    let Pt, It;
+    t[48] === Symbol.for(`react.memo_cache_sentinel`) ? (Pt = () => Dt, It = [Dt], t[48] = Pt, t[49] = It) : (Pt = t[48], It = t[49]), (0, Q.useEffect)(Pt, It);
+    let W = F.range ? `${F.triggerSymbol}:${F.range.from}` : F.triggerSymbol,
+        Lt;
+    t[50] !== T || t[51] !== F.range ? (Lt = () => {
+        F.range && Rc(hs(T), F.range.from, F.range.to)
+    }, t[50] = T, t[51] = F.range, t[52] = Lt) : Lt = t[52];
+    let Rt = Lt,
+        zt;
+    t[53] === T ? zt = t[54] : (zt = () => {
+        let e = hs(T);
+        qs(e), Cc(e)
+    }, t[53] = T, t[54] = zt);
+    let Bt = zt,
+        Vt = (0, Q.useRef)(null),
+        Ht, Ut;
+    t[55] === Symbol.for(`react.memo_cache_sentinel`) ? (Ht = () => (Vt.current = {}, () => {
+        Vt.current = null
+    }), Ut = [], t[55] = Ht, t[56] = Ut) : (Ht = t[55], Ut = t[56]), (0, Q.useEffect)(Ht, Ut);
+    let Wt = di(F),
+        Gt;
+    t[57] !== Rt || t[58] !== Bt || t[59] !== Wt || t[60] !== F ? (Gt = () => {
+        let e = Vt.current;
+        return () => {
+            e == null || Vt.current !== e || Wt.current !== F || (Rt(), Bt())
+        }
+    }, t[57] = Rt, t[58] = Bt, t[59] = Wt, t[60] = F, t[61] = Gt) : Gt = t[61];
+    let Kt = Gt,
+        qt;
+    t[62] !== L || t[63] !== n || t[64] !== Ee ? (qt = () => {
+        if (!(L || Ee)) return n?.()
+    }, t[62] = L, t[63] = n, t[64] = Ee, t[65] = qt) : qt = t[65];
+    let Jt = M(qt),
+        Yt;
+    t[66] === F.triggerSymbol ? Yt = t[67] : (Yt = gm(F.triggerSymbol), t[66] = F.triggerSymbol, t[67] = Yt);
+    let G = Yt,
+        K = G === `slash_command`,
+        Xt;
+    t[68] !== i || t[69] !== K ? (Xt = () => K ? i?.() ?? [] : [], t[68] = i, t[69] = K, t[70] = Xt) : Xt = t[70];
+    let Zt = M(Xt),
+        Qt;
+    t[71] !== a || t[72] !== K ? (Qt = () => K ? a?.() ?? [] : [], t[71] = a, t[72] = K, t[73] = Qt) : Qt = t[73];
+    let $t = M(Qt),
+        nn;
+    t[74] !== o || t[75] !== K ? (nn = () => K ? o?.() ?? [] : [], t[74] = o, t[75] = K, t[76] = nn) : nn = t[76];
+    let rn = M(nn),
+        an;
+    t[77] !== D || t[78] !== s || t[79] !== K ? (an = () => K && Vs(D) ? s?.() ?? [] : [], t[77] = D, t[78] = s, t[79] = K, t[80] = an) : an = t[80];
+    let on = M(an),
+        sn;
+    t[81] !== c || t[82] !== K ? (sn = () => K ? c?.() ?? [] : [], t[81] = c, t[82] = K, t[83] = sn) : sn = t[83];
+    let cn = M(sn),
+        un = G,
+        dn;
+    t[84] !== Ee || t[85] !== k || t[86] !== I ? (dn = !Ee && !I && !k && Or(), t[84] = Ee, t[85] = k, t[86] = I, t[87] = dn) : dn = t[87];
+    let fn = dn,
+        q, mn, hn, gn, vn;
+    if (t[88] !== z || t[89] !== F.text || t[90] !== F.triggerSymbol || t[91] !== De || t[92] !== fe || t[93] !== G || t[94] !== I) {
+        q = F.text.trim();
+        let e;
+        t[100] !== F.triggerSymbol || t[101] !== fe ? (e = yu({
+            isIntegratedVoiceModeActive: fe,
+            triggerSymbol: F.triggerSymbol
+        }), t[100] = F.triggerSymbol, t[101] = fe, t[102] = e) : e = t[102], mn = e;
+        let n;
+        t[103] !== z || t[104] !== De ? (n = bu({
+            fileUploads: z,
+            imageUploads: De
+        }), t[103] = z, t[104] = De, t[105] = n) : n = t[105], {
+            showFileLibrary: hn,
+            showUpload: gn
+        } = n, vn = I && G === `at_command` && Array.from(q).length === 1, t[88] = z, t[89] = F.text, t[90] = F.triggerSymbol, t[91] = De, t[92] = fe, t[93] = G, t[94] = I, t[95] = q, t[96] = mn, t[97] = hn, t[98] = gn, t[99] = vn
+    } else q = t[95], mn = t[96], hn = t[97], gn = t[98], vn = t[99];
+    let yn = vn,
+        bn = M(Ct),
+        xn = oe === `center` && bn,
+        Sn = q.length > 0,
+        Cn = G !== `slash_command` || q.length > 0,
+        wn = xn && !Sn,
+        Tn = xn && !Cn,
+        En;
+    t[106] === W ? En = t[107] : (En = e => {
+        kt(t => ({
+            ...t,
+            matchKey: W,
+            isHovered: e
+        }))
+    }, t[106] = W, t[107] = En);
+    let Dn = En,
+        On;
+    t[108] === W ? On = t[109] : (On = e => {
+        kt(t => ({
+            ...t,
+            matchKey: W,
+            isPinned: e
+        }))
+    }, t[108] = W, t[109] = On);
+    let kn = On,
+        An;
+    t[110] === W ? An = t[111] : (An = e => {
+        jt(t => ({
+            ...t,
+            matchKey: W,
+            isHovered: e
+        }))
+    }, t[110] = W, t[111] = An);
+    let jn = An,
+        Mn;
+    t[112] === W ? Mn = t[113] : (Mn = e => {
+        jt(t => ({
+            ...t,
+            matchKey: W,
+            isPinned: e
+        }))
+    }, t[112] = W, t[113] = Mn);
+    let Nn = Mn,
+        Pn = Ot.matchKey === W && Ot.isHovered,
+        Fn = Ot.matchKey === W && Ot.isPinned,
+        In = At.matchKey === W && At.isHovered,
+        Ln = At.matchKey === W && At.isPinned,
+        Rn;
+    t[114] === Dn ? Rn = t[115] : (Rn = () => {
+        Tt(), dt.current = window.setTimeout(() => {
+            Dn(!1)
+        }, 100)
+    }, t[114] = Dn, t[115] = Rn);
+    let zn = Rn,
+        Bn;
+    t[116] === jn ? Bn = t[117] : (Bn = () => {
+        Dt(), pt.current = window.setTimeout(() => {
+            jn(!1)
+        }, 100)
+    }, t[116] = jn, t[117] = Bn);
+    let Vn = Bn,
+        Hn;
+    t[118] === W ? Hn = t[119] : (Hn = () => ({
+        matchKey: W,
+        isExpanded: !1
+    }), t[118] = W, t[119] = Hn);
+    let [Un, Wn] = (0, Q.useState)(Hn), Gn;
+    t[120] === W ? Gn = t[121] : (Gn = () => ({
+        matchKey: W,
+        isExpanded: !1
+    }), t[120] = W, t[121] = Gn);
+    let [Kn, qn] = (0, Q.useState)(Gn), [J, Jn] = (0, Q.useState)(``), [Y, Yn] = (0, Q.useState)(null), Xn, Qn;
+    t[122] === Y ? (Xn = t[123], Qn = t[124]) : (Xn = () => {
+        if (Y === am) return Gc()
+    }, Qn = [Y], t[122] = Y, t[123] = Xn, t[124] = Qn), (0, Q.useEffect)(Xn, Qn);
+    let $n = Y === nm && G === `at_command`,
+        er = Y != null && G === `slash_command` || $n,
+        tr = $n ? J : q,
+        nr, rr;
+    t[125] !== tr || t[126] !== F.triggerSymbol || t[127] !== $n || t[128] !== b ? (nr = () => {
+        b(tr, F.triggerSymbol, $n)
+    }, rr = [tr, F.triggerSymbol, $n, b], t[125] = tr, t[126] = F.triggerSymbol, t[127] = $n, t[128] = b, t[129] = nr, t[130] = rr) : (nr = t[129], rr = t[130]), le(nr, rr);
+    let ir;
+    t[131] === Symbol.for(`react.memo_cache_sentinel`) ? (ir = () => {
+        Yn(null), Jn(``)
+    }, t[131] = ir) : ir = t[131];
+    let ar;
+    t[132] === W ? ar = t[133] : (ar = [W], t[132] = W, t[133] = ar), (0, Q.useEffect)(ir, ar);
+    let or = (0, Q.useRef)(q),
+        sr, lr;
+    t[134] !== Y || t[135] !== q ? (sr = () => {
+        Y != null && q.length === 0 && or.current.length > 0 && Yn(null), or.current = q
+    }, lr = [Y, q], t[134] = Y, t[135] = q, t[136] = sr, t[137] = lr) : (sr = t[136], lr = t[137]), (0, Q.useEffect)(sr, lr);
+    let ur;
+    bb0: {
+        let e = null;
+        if (Y === cm ? e = $t : Y === im ? e = rn : Y === am && (e = on), e == null || e.length === 0) {
+            ur = null;
+            break bb0
+        }
+        let n;t[138] !== Y || t[139] !== R.locale || t[140] !== e || t[141] !== J ? (n = Y === am ? Vc(e, J, Fp, {
+            locale: R.locale,
+            maxResults: om
+        }) : eu(e, J, R.locale), t[138] = Y, t[139] = R.locale, t[140] = e, t[141] = J, t[142] = n) : n = t[142];
+        let r = n,
+            i;t[143] !== R || t[144] !== r ? (i = r.length > 0 ? r : [{
+            id: `submenu-search-empty`,
+            title: R.formatMessage({
+                id: `composer.systemHintSuggestor.submenu.empty`,
+                defaultMessage: `No results found`
+            }),
+            matchText: [],
+            onSelect: Pp,
+            showFor: [`slash_command`],
+            disabled: !0
+        }], t[143] = R, t[144] = r, t[145] = i) : i = t[145],
+        ur = i
+    }
+    let dr = ur,
+        fr = Un.matchKey === W && Un.isExpanded && !wn,
+        pr = Kn.matchKey === W && Kn.isExpanded && !Tn,
+        mr = I && G === `slash_command`,
+        hr;
+    t[146] !== D || t[147] !== k || t[148] !== se || t[149] !== N || t[150] !== J || t[151] !== mr ? (hr = {
+        conversation: D,
+        enabled: mr,
+        isFirstPartyProject: k,
+        isHomeNewChatComposer: se,
+        searchQuery: J,
+        setSelectedGizmoTag: N
+    }, t[146] = D, t[147] = k, t[148] = se, t[149] = N, t[150] = J, t[151] = mr, t[152] = hr) : hr = t[152];
+    let {
+        items: gr,
+        shouldShow: _r
+    } = cu(hr), vr;
+    if (t[153] !== Kt || t[154] !== Bt || t[155] !== R || t[156] !== r) {
+        let e;
+        t[158] !== Kt || t[159] !== Bt || t[160] !== R ? (e = e => {
+            let {
+                item: t,
+                isPending: n,
+                onConnect: r
+            } = e;
+            if (r == null) return t;
+            let i = () => {
+                r(Kt())
+            };
+            return {
+                ...t,
+                trailing: t.trailing ?? (0, $.jsx)(mm, {
+                    itemId: t.id,
+                    isPending: n,
+                    label: R.formatMessage({
+                        id: `chatgpt.composer.unified_menu.suggested_plugin.connect.aria_label`,
+                        defaultMessage: `Connect {pluginName}`
+                    }, {
+                        pluginName: t.title
+                    }),
+                    onBlur: Bt,
+                    onConnect: i
+                })
+            }
+        }, t[158] = Kt, t[159] = Bt, t[160] = R, t[161] = e) : e = t[161], vr = r.map(e), t[153] = Kt, t[154] = Bt, t[155] = R, t[156] = r, t[157] = vr
+    } else vr = t[157];
+    let yr = vr,
+        br;
+    t[162] === D ? br = t[163] : (br = () => ki(D), t[162] = D, t[163] = br);
+    let xr = M(br),
+        Sr;
+    t[164] === Symbol.for(`react.memo_cache_sentinel`) ? (Sr = $e(), t[164] = Sr) : Sr = t[164];
+    let Cr = Sr,
+        wr = Pl(te, I && !L && G === `at_command` && (!mn || gn)),
+        X;
+    if (t[165] !== x || t[166] !== dr || t[167] !== Y || t[168] !== L || t[169] !== f || t[170] !== p || t[171] !== ne || t[172] !== ke || t[173] !== wr || t[174] !== Jt || t[175] !== l || t[176] !== $t || t[177] !== on || t[178] !== R || t[179] !== ue || t[180] !== ce || t[181] !== $n || t[182] !== Ee || t[183] !== ze || t[184] !== de || t[185] !== Zt || t[186] !== g || t[187] !== xr || t[188] !== cn || t[189] !== rn || t[190] !== gr || t[191] !== Te || t[192] !== w || t[193] !== yr || t[194] !== S || t[195] !== C || t[196] !== G || t[197] !== q.length || t[198] !== un || t[199] !== Oe || t[200] !== v || t[201] !== mn || t[202] !== Sn || t[203] !== _r || t[204] !== hn || t[205] !== re || t[206] !== fn || t[207] !== gn || t[208] !== J.length || t[209] !== ie || t[210] !== we || t[211] !== ve || t[212] !== I || t[213] !== V) {
+        bb1: {
+            if (L) {
+                X = dm;
+                break bb1
+            }
+            let e;t[215] === G ? e = t[216] : (e = e => e.showFor.includes(G), t[215] = G, t[216] = e);
+            let n = ie.filter(e),
+                r = n.filter(Np);
+            if (I) {
+                if (G === `slash_command`) {
+                    if (mn) {
+                        let e;
+                        t[217] !== x || t[218] !== gn ? (e = gn && x.length > 0 ? [x] : dm, t[217] = x, t[218] = gn, t[219] = e) : e = t[219], X = e;
+                        break bb1
+                    }
+                    if (dr != null) {
+                        let e;
+                        t[220] === dr ? e = t[221] : (e = [dr], t[220] = dr, t[221] = e), X = e;
+                        break bb1
+                    }
+                    if (Y === sm) {
+                        let e;
+                        t[222] === gr ? e = t[223] : (e = [gr], t[222] = gr, t[223] = e), X = e;
+                        break bb1
+                    }
+                    let e = _r ? [tp({
+                            id: sm,
+                            title: R.formatMessage(Ze.moveConversationToProject),
+                            secondary: R.formatMessage({
+                                id: `chatgpt.composer.unified_menu.shortcut.move_to_project.description`,
+                                defaultMessage: `Select a project for this chat`
+                            }),
+                            matchText: [`move to project`, `project`],
+                            icon: (0, $.jsx)(me.Folder, {
+                                className: `icon`
+                            }),
+                            firstItemId: gr.find(Mp)?.id ?? gr[0]?.id
+                        })] : [],
+                        r = [...ve == null ? [] : [ve], ...$t.length > 0 ? [tp({
+                            id: cm,
+                            title: R.formatMessage(pm),
+                            secondary: $f($t),
+                            matchText: ep([`effort`, `intelligence`, `think`, `reason`], $t),
+                            icon: (0, $.jsx)(u.Brain, {
+                                className: `icon`
+                            }),
+                            firstItemId: $t.find(jp)?.id ?? $t[0]?.id
+                        })] : []],
+                        i = [...rn.length > 0 ? [tp({
+                            id: im,
+                            title: R.formatMessage({
+                                id: `composer.systemHintSuggestor.modelSubmenu.title`,
+                                defaultMessage: `Model`
+                            }),
+                            secondary: $f(rn),
+                            matchText: ep([`model`, `version`], rn),
+                            icon: (0, $.jsx)(u.Atom, {
+                                className: `icon`
+                            }),
+                            firstItemId: rn.find(Ap)?.id ?? rn[0]?.id
+                        })] : [], ...on.length > 0 ? [tp({
+                            id: am,
+                            title: R.formatMessage({
+                                id: `chatgpt.composer.internal_models.slash_submenu.title`,
+                                defaultMessage: `Internal model`
+                            }),
+                            secondary: R.formatMessage({
+                                id: `chatgpt.composer.internal_models.slash_submenu.description`,
+                                defaultMessage: `Browse and test internal models`
+                            }),
+                            matchText: [`internal`, `internal models`],
+                            icon: (0, $.jsx)(u.Flask, {
+                                className: `icon`
+                            }),
+                            firstItemId: on.find(kp)?.id ?? on[0]?.id
+                        })] : []];
+                    X = [Yl(Ee ? [{
+                        slot: `upload`
+                    }, {
+                        slot: `model`
+                    }, {
+                        slot: `intelligence`
+                    }] : V, {
+                        upload: x,
+                        plan: Xl(n, R.formatMessage({
+                            id: `chatgpt.composer.unified_menu.shortcut.plan_mode.description`,
+                            defaultMessage: `Plan before taking action`
+                        })),
+                        intelligence: r,
+                        model: i,
+                        "move-to-project": e
+                    }, ue, de)];
+                    break bb1
+                }
+                if (G !== `at_command`) {
+                    let e;
+                    t[224] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[224] = e) : e = t[224], X = e;
+                    break bb1
+                }
+                let e = [...S ? [S] : [], ...C && (!mn || gn) ? [C] : [], ...wr ? [wr] : []];
+                if (!Cr) {
+                    X = Ju({
+                        fileUploadUpsell: ne,
+                        intl: R,
+                        isSearching: q.length > 0,
+                        loggedOutUpsellSystemHints: xr,
+                        pluginSuggestionItems: yr,
+                        restrictToUploads: mn,
+                        systemHints: n,
+                        uploadGroup: e
+                    });
+                    break bb1
+                }
+                let r = re && !$n,
+                    i = $n ? Tu(J.length === 0 ? f : p) : p,
+                    a = ($n || q.length > 0) && (!mn || hn) ? ku(Cu(i), `files`) : [],
+                    o = r && (!mn || hn) ? [{
+                        id: nm,
+                        title: R.formatMessage({
+                            id: `chatgpt.composer.unified_menu.library.entrypoint.label`,
+                            defaultMessage: `Add from library`
+                        }),
+                        secondary: ze ? R.formatMessage({
+                            id: `chatgpt.composer.unified_menu.library.entrypoint.description.google_drive`,
+                            defaultMessage: `Browse and search your files, including Google Drive`
+                        }) : R.formatMessage({
+                            id: `chatgpt.composer.unified_menu.library.entrypoint.description`,
+                            defaultMessage: `Browse and search your files`
+                        }),
+                        matchText: [`add from library`, `library`, `recent files`],
+                        icon: (0, $.jsx)(u.Library, {
+                            className: `icon`
+                        }),
+                        onSelect: w,
+                        showFor: [`at_command`]
+                    }] : [],
+                    s = $n ? Tu(g) : g,
+                    c = mn ? [] : ku(wu(s), `folders`);
+                if ($n) {
+                    X = a.length > 0 || c.length > 0 ? [a, c].filter(Op) : [
+                        [{
+                            id: `file-library-submenu-search-empty`,
+                            title: R.formatMessage({
+                                id: `chatgpt.composer.unified_menu.library.empty`,
+                                defaultMessage: `No matching files`
+                            }),
+                            matchText: [],
+                            onSelect: Dp,
+                            showFor: [`at_command`],
+                            disabled: !0
+                        }]
+                    ];
+                    break bb1
+                }
+                if (Ee || mn) {
+                    X = [e, o, a, c].filter(Ep);
+                    break bb1
+                }
+                let {
+                    gptItems: d,
+                    appItems: m
+                } = _u(Jt), h = ku(Su(xu(Ur([...n.filter(Tp), ...m, ...yr], wp), {
+                    financesEligible: ke
+                })), `plugins`);
+                X = [e, o, v, q.length === 0 ? Lu(h, {
+                    additionalRanks: Ne,
+                    fallbackRandomSeed: je,
+                    recentlyUsedPluginIds: Oe
+                }) : h, q.length === 0 ? [] : d, a, c, q.length === 0 ? [] : ku(Eu(l ?? []), `skills`)].filter(Cp);
+                break bb1
+            }
+            let i;t[225] !== Jt || t[226] !== G ? (i = Jt?.filter(e => e.showFor.includes(G)), t[225] = Jt, t[226] = G, t[227] = i) : i = t[227];
+            let a = i,
+                o = n.filter(Sp),
+                s = [...Zt, ...o],
+                c;
+            if (t[228] !== R || t[229] !== Te || t[230] !== un || t[231] !== fn || t[232] !== we) {
+                if (c = [], fn && we.length > 0) {
+                    let e;
+                    t[234] === we ? e = t[235] : (e = [...we], t[234] = we, t[235] = e), c.push(e);
+                    let n;
+                    if (t[236] !== R || t[237] !== Te || t[238] !== un) {
+                        let e;
+                        t[240] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, $.jsx)(Ho, {
+                            className: `icon`
+                        }), t[240] = e) : e = t[240];
+                        let r;
+                        t[241] !== Te || t[242] !== un ? (r = () => {
+                            let e = `/saved-prompts?referer=${un}`;
+                            Te(e)
+                        }, t[241] = Te, t[242] = un, t[243] = r) : r = t[243], n = Zc({
+                            command: tm,
+                            title: R.formatMessage({
+                                id: `composer.library.managePrompts`,
+                                defaultMessage: `Manage prompts`
+                            }),
+                            icon: e,
+                            onSelect: r
+                        }), t[236] = R, t[237] = Te, t[238] = un, t[239] = n
+                    } else n = t[239];
+                    let r;
+                    t[244] === n ? r = t[245] : (r = [n], t[244] = n, t[245] = r), c.push(r)
+                }
+                t[228] = R, t[229] = Te, t[230] = un, t[231] = fn, t[232] = we, t[233] = c
+            } else c = t[233];
+            let d;t[246] === a ? d = t[247] : (d = a ?? [], t[246] = a, t[247] = d);
+            let m;t[248] === d ? m = t[249] : (m = [d], t[248] = d, t[249] = m);
+            let h = m,
+                _;t[250] !== p || t[251] !== g || t[252] !== G ? (_ = G === `at_command` ? [p, g].filter(xp) : [], t[250] = p, t[251] = g, t[252] = G, t[253] = _) : _ = t[253];
+            let y = _;
+            if (Ee) {
+                if (G === `slash_command`) {
+                    let e;
+                    t[254] !== x || t[255] !== Zt || t[256] !== cn ? (e = [x, Zt, cn], t[254] = x, t[255] = Zt, t[256] = cn, t[257] = e) : e = t[257], X = e;
+                    break bb1
+                }
+                if (G === `at_command`) {
+                    X = y;
+                    break bb1
+                }
+                X = dm;
+                break bb1
+            }
+            let b;t[258] !== l || t[259] !== G || t[260] !== Sn ? (b = G === `at_command` && !Sn ? (l ?? []).filter(bp) : l ?? [], t[258] = l, t[259] = G, t[260] = Sn, t[261] = b) : b = t[261];
+            let ee = b,
+                te;t[262] !== G || t[263] !== Sn || t[264] !== ee ? (te = ee.length > 0 && (G !== `at_command` || Sn || ee.some(yp)) ? [ee] : [], t[262] = G, t[263] = Sn, t[264] = ee, t[265] = te) : te = t[265];
+            let T = te,
+                E;t[266] !== y || t[267] !== h || t[268] !== c ? (E = [...c, ...y, ...h], t[266] = y, t[267] = h, t[268] = c, t[269] = E) : E = t[269];
+            let ae = E;
+            if (G === `at_command`) {
+                let e;
+                t[270] !== T || t[271] !== r || t[272] !== ae || t[273] !== v ? (e = [...ae, v, ...T, r].filter(vp), t[270] = T, t[271] = r, t[272] = ae, t[273] = v, t[274] = e) : e = t[274], X = e
+            } else if (G === `slash_command`) {
+                if (ce) {
+                    X = ae;
+                    break bb1
+                }
+                let e;
+                t[275] !== x || t[276] !== T || t[277] !== cn || t[278] !== ae || t[279] !== s ? (e = [x, s, cn, ...ae, ...T], t[275] = x, t[276] = T, t[277] = cn, t[278] = ae, t[279] = s, t[280] = e) : e = t[280], X = e
+            } else {
+                let e;
+                t[281] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[281] = e) : e = t[281], X = e
+            }
+        }
+        t[165] = x,
+        t[166] = dr,
+        t[167] = Y,
+        t[168] = L,
+        t[169] = f,
+        t[170] = p,
+        t[171] = ne,
+        t[172] = ke,
+        t[173] = wr,
+        t[174] = Jt,
+        t[175] = l,
+        t[176] = $t,
+        t[177] = on,
+        t[178] = R,
+        t[179] = ue,
+        t[180] = ce,
+        t[181] = $n,
+        t[182] = Ee,
+        t[183] = ze,
+        t[184] = de,
+        t[185] = Zt,
+        t[186] = g,
+        t[187] = xr,
+        t[188] = cn,
+        t[189] = rn,
+        t[190] = gr,
+        t[191] = Te,
+        t[192] = w,
+        t[193] = yr,
+        t[194] = S,
+        t[195] = C,
+        t[196] = G,
+        t[197] = q.length,
+        t[198] = un,
+        t[199] = Oe,
+        t[200] = v,
+        t[201] = mn,
+        t[202] = Sn,
+        t[203] = _r,
+        t[204] = hn,
+        t[205] = re,
+        t[206] = fn,
+        t[207] = gn,
+        t[208] = J.length,
+        t[209] = ie,
+        t[210] = we,
+        t[211] = ve,
+        t[212] = I,
+        t[213] = V,
+        t[214] = X
+    }
+    else X = t[214];
+    let Tr = X,
+        Er;
+    t[282] !== F.text || t[283] !== R.locale || t[284] !== xe ? (Er = e => Pu(e, Au(lo(e, F.text, _p, {
+        locale: R.locale
+    })), F.text, xe != null), t[282] = F.text, t[283] = R.locale, t[284] = xe, t[285] = Er) : Er = t[285];
+    let Dr = Er,
+        kr, Ar, jr;
+    if (t[286] !== Tn || t[287] !== wn || t[288] !== Dr || t[289] !== Tr || t[290] !== F.text || t[291] !== R || t[292] !== pr || t[293] !== fr || t[294] !== er || t[295] !== xe || t[296] !== G || t[297] !== Cn || t[298] !== Sn || t[299] !== yn || t[300] !== I) {
+        let e;
+        if (!F.text || er) e = Tr.map(hp);
+        else if (!I) e = [Dr(ee(Tr))];
+        else {
+            let t = Tr.map(Dr).filter(mp);
+            e = yn ? t.map(e => e.slice(0, Iu(e, t.length === 1, xe != null))) : t
+        }
+        kr = fd({
+            groups: e,
+            intl: R,
+            isSkillsExpanded: fr,
+            isProjectsExpanded: pr,
+            useFlyout: wn || Tn,
+            skillsGroupAfterIndex: G === `slash_command` ? 0 : void 0,
+            projectsGroupAfterIndex: G === `slash_command` ? 2 : void 0,
+            inlineSkills: Sn,
+            inlineProjects: Cn
+        }), Ar = kr.displayGroups, jr = ee(kr.displayGroups), t[286] = Tn, t[287] = wn, t[288] = Dr, t[289] = Tr, t[290] = F.text, t[291] = R, t[292] = pr, t[293] = fr, t[294] = er, t[295] = xe, t[296] = G, t[297] = Cn, t[298] = Sn, t[299] = yn, t[300] = I, t[301] = kr, t[302] = Ar, t[303] = jr
+    } else kr = t[301], Ar = t[302], jr = t[303];
+    let Mr;
+    t[304] !== kr.projectItems || t[305] !== kr.skillItems || t[306] !== Ar || t[307] !== jr ? (Mr = {
+        displayGroups: Ar,
+        suggestions: jr,
+        skillItems: kr.skillItems,
+        projectItems: kr.projectItems
+    }, t[304] = kr.projectItems, t[305] = kr.skillItems, t[306] = Ar, t[307] = jr, t[308] = Mr) : Mr = t[308];
+    let {
+        displayGroups: Nr,
+        suggestions: Z,
+        skillItems: Pr,
+        projectItems: Fr
+    } = Mr, Ir;
+    t[309] !== Nr || t[310] !== er || t[311] !== xe || t[312] !== G || t[313] !== q.length || t[314] !== I ? (Ir = I && G === `at_command` && !er && q.length > 0 && (xe != null || Nr.some(pp) || new Set(Nr.map(fp)).size > 1), t[309] = Nr, t[310] = er, t[311] = xe, t[312] = G, t[313] = q.length, t[314] = I, t[315] = Ir) : Ir = t[315];
+    let Lr = Ir,
+        [Rr, zr] = (0, Q.useState)(null),
+        Br;
+    t[316] !== F.text || t[317] !== W || t[318] !== xe ? (Br = xe == null ? null : JSON.stringify([W, F.text, xe]), t[316] = F.text, t[317] = W, t[318] = xe, t[319] = Br) : Br = t[319];
+    let Vr = Br,
+        Hr = (0, Q.useRef)(null),
+        Wr;
+    t[320] === Vr ? Wr = t[321] : (Wr = e => {
+        Hr.current = Vr == null ? null : {
+            key: Vr,
+            itemId: e.id
+        }
+    }, t[320] = Vr, t[321] = Wr);
+    let Gr = Wr,
+        Kr;
+    t[322] !== Tn || t[323] !== wn || t[324] !== Gr || t[325] !== Nn || t[326] !== kn || t[327] !== Z ? (Kr = e => {
+        zr(t => {
+            if (t == null) return null;
+            let n = Z.length;
+            for (let r = 0; r < n; r++) {
+                let i = (t + n + (r + 1) * e) % n,
+                    a = Z[i];
+                if (!a.disabled) return Gr(a), wn && kn(od(a) || sd(a)), Tn && Nn(cd(a) || ld(a)), i
+            }
+            return null
+        })
+    }, t[322] = Tn, t[323] = wn, t[324] = Gr, t[325] = Nn, t[326] = kn, t[327] = Z, t[328] = Kr) : Kr = t[328];
+    let qr = di(Kr),
+        Jr = Z.length,
+        Yr = Jr > 0,
+        Xr;
+    t[329] !== m || t[330] !== er || t[331] !== G || t[332] !== q || t[333] !== Yr ? (Xr = xd({
+        hasSuggestions: Yr,
+        isFileLibrarySearchPending: m,
+        isSubmenuSearchActive: er,
+        promptReferer: G,
+        promptSearchQuery: q
+    }), t[329] = m, t[330] = er, t[331] = G, t[332] = q, t[333] = Yr, t[334] = Xr) : Xr = t[334];
+    let Zr = Xr,
+        Qr = Jr === 0 && !Zr,
+        $r;
+    t[335] === T ? $r = t[336] : ($r = fc(T), t[335] = T, t[336] = $r);
+    let {
+        isUnifiedComposerPlusMenuOpen$: ei
+    } = $r, ti, ni;
+    t[337] !== F.triggerSymbol || t[338] !== ei || t[339] !== Qr || t[340] !== I ? (ti = () => (ei.set(I && F.triggerSymbol === `+` && !Qr), () => ei.set(!1)), ni = [F.triggerSymbol, ei, Qr, I], t[337] = F.triggerSymbol, t[338] = ei, t[339] = Qr, t[340] = I, t[341] = ti, t[342] = ni) : (ti = t[341], ni = t[342]), (0, Q.useEffect)(ti, ni);
+    let ri = (0, Q.useRef)(null),
+        ii = (0, Q.useRef)(null),
+        ai, oi;
+    t[343] !== Vr || t[344] !== Gr || t[345] !== Z ? (ai = () => {
+        Hr.current?.key !== Vr && (Hr.current = null);
+        let e = ri.current;
+        ri.current = null;
+        let t = Z.map(dp).join(`|`);
+        if (e != null) {
+            ii.current = t;
+            let n = Z.findIndex(t => t.id === e && !t.disabled);
+            if (n >= 0) {
+                Gr(Z[n]), zr(n);
+                return
+            }
+        }
+        let n = Hr.current;
+        if (n != null) {
+            let e = Z.findIndex(e => e.id === n.itemId && !e.disabled);
+            if (e >= 0) {
+                ii.current = t, zr(e);
+                return
+            }
+            Hr.current = null
+        }
+        if (ii.current === t) return;
+        ii.current = t;
+        let r = Z.findIndex(up);
+        zr(r >= 0 ? r : null)
+    }, oi = [Vr, Gr, Z], t[343] = Vr, t[344] = Gr, t[345] = Z, t[346] = ai, t[347] = oi) : (ai = t[346], oi = t[347]), (0, Q.useEffect)(ai, oi);
+    let si = Rr == null ? null : Z[Rr],
+        ci = wn && Pr.length > 0 && (Pn || Fn),
+        li = Tn && Fr.length > 0 && (In || Ln),
+        ui = null,
+        fi = null,
+        pi = 0;
+    for (let e of Nr) {
+        if (sd(e[0])) {
+            ui = {
+                baseIndex: pi,
+                group: e
+            };
+            break
+        }
+        pi += e.length
+    }
+    let mi = 0;
+    for (let e of Nr) {
+        if (ld(e[0])) {
+            fi = {
+                baseIndex: mi,
+                group: e
+            };
+            break
+        }
+        mi += e.length
+    }
+    let hi = ui?.group.slice(1) ?? fm,
+        gi = fi?.group.slice(1) ?? fm,
+        _i, vi;
+    t[348] !== ci || t[349] !== st ? (_i = () => {
+        ci && st()
+    }, vi = [ci, st], t[348] = ci, t[349] = st, t[350] = _i, t[351] = vi) : (_i = t[350], vi = t[351]), (0, Q.useEffect)(_i, vi);
+    let yi, bi;
+    t[352] !== li || t[353] !== ut ? (yi = () => {
+        li && ut()
+    }, bi = [li, ut], t[352] = li, t[353] = ut, t[354] = yi, t[355] = bi) : (yi = t[354], bi = t[355]), (0, Q.useEffect)(yi, bi);
+    let xi;
+    t[356] !== T || t[357] !== F.range ? (xi = e => {
+        if (!F.range) return;
+        let t = hs(T);
+        Rc(t, F.range.from, F.range.to), _c(t, e)
+    }, t[356] = T, t[357] = F.range, t[358] = xi) : xi = t[358];
+    let Si = xi,
+        Ci;
+    t[359] !== T || t[360] !== F.range || t[361] !== Si ? (Ci = e => {
+        let {
+            text: t,
+            mentionId: n,
+            mention: r,
+            systemHintType: i,
+            iconUrl: a,
+            iconDarkUrl: o
+        } = e;
+        if (!F.range) return;
+        let s = hs(T),
+            {
+                schema: c
+            } = s.state,
+            l = t.replace(/\s+$/, ``);
+        if (!l) {
+            Si(t);
+            return
+        }
+        let u = r ?? {
+                representation: `legacy-mark`,
+                kind: t.startsWith(`$`) ? `tool` : `at`
+            },
+            d = vd({
+                mention: u,
+                text: l
+            }),
+            f = {
+                id: n,
+                keyword: d
+            },
+            p;
+        if (u.representation === `inline-pill`) {
+            let e = c.nodes[Us];
+            if (e == null) {
+                Si(t);
+                return
+            }
+            let r = vo(e, {
+                mention: u,
+                mentionId: n,
+                mentionValue: d,
+                systemHintType: i
+            });
+            if (r == null) {
+                Si(t);
+                return
+            }
+            p = r
+        } else {
+            let e = c.marks.ecosystemMentionMark;
+            if (e == null) {
+                Si(t);
+                return
+            }
+            let n = `${u.kind===`tool`?`$`:`@`}${d}`;
+            p = c.text(n, [e.create({
+                ...f,
+                kind: u.kind === `tool` ? dc : Pc,
+                iconUrl: a,
+                iconDarkUrl: o
+            })])
+        }
+        let m = [p, c.text(` `)],
+            h = Yo.fromArray(m);
+        s.dispatch(s.state.tr.replaceWith(F.range.from, F.range.to, h))
+    }, t[359] = T, t[360] = F.range, t[361] = Si, t[362] = Ci) : Ci = t[362];
+    let wi = Ci,
+        Ti;
+    t[363] === T ? Ti = t[364] : (Ti = () => {
+        let e = hs(T);
+        qs(e), js(e)
+    }, t[363] = T, t[364] = Ti);
+    let Ei = Ti,
+        Di = e => {
+            let {
+                hintToSave: t,
+                expectPerfectMatch: n,
+                skipInternalModelPreflight: i
+            } = e, a = t === void 0 ? si : t, o = i !== void 0 && i;
+            if (!a) return !1;
+            let s = F.text.toLocaleLowerCase(),
+                c = a.matchText.some(e => e.toLocaleLowerCase() === s);
+            if (n && !c || a.disabled) return !1;
+            if (a.meta?.isSubmenuTrigger === !0) return qs(hs(T)), Jn(``), Yn(a.id), ri.current = a.meta?.submenuFirstItemId ?? a.id, !0;
+            if (sd(a)) {
+                if (wn) {
+                    let e = Z.findIndex(lp);
+                    return Tt(), kn(!0), e >= 0 && zr(e), e >= 0
+                }
+                let e = !fr;
+                return Wn({
+                    matchKey: W,
+                    isExpanded: e
+                }), ri.current = e ? Pr[0]?.id ?? a.id : a.id, !0
+            }
+            if (ld(a)) {
+                if (Tn) {
+                    let e = Z.findIndex(cp);
+                    return Dt(), Nn(!0), e >= 0 && zr(e), e >= 0
+                }
+                let e = !pr;
+                return qn({
+                    matchKey: W,
+                    isExpanded: e
+                }), ri.current = e ? Fr[0]?.id ?? a.id : a.id, !0
+            }
+            if (Y === am && a.color !== `selected` && !o && B(`3016847258`)) return Zn(a.id.slice(15)).then(e => {
+                e && Di({
+                    hintToSave: a,
+                    expectPerfectMatch: n,
+                    skipInternalModelPreflight: !0
+                })
+            }), !0;
+            let l = a.insertText;
+            ic(T).flushPendingAsFallback();
+            let u = r.find(e => {
+                let {
+                    item: t
+                } = e;
+                return t.id === a.id
+            });
+            return u?.onSelect == null ? (yd({
+                isSidebarSlash: !1,
+                promptReferer: G,
+                suggestion: a
+            }) && l ? wi({
+                text: l,
+                mentionId: a.meta?.systemHintType ?? a.id,
+                mention: a.meta?.mention,
+                systemHintType: a.meta?.systemHintType,
+                iconUrl: a.meta?.mentionIconUrl,
+                iconDarkUrl: a.meta?.mentionIconDarkUrl
+            }) : Rt(), Bt(), a.onSelect(G), !0) : (u.onSelect(Kt()), !0)
+        },
+        Oi = di(Di),
+        Ai;
+    t[365] === H.floating.current ? Ai = t[366] : (Ai = e => {
+        let t = Array.from(H.floating.current?.querySelectorAll(`[data-suggested-plugin-connect]`) ?? []).find(t => t.dataset.suggestedPluginConnect === e);
+        return t?.focus(), t != null
+    }, t[365] = H.floating.current, t[366] = Ai);
+    let ji = Ft(Ai),
+        Mi;
+    t[367] !== T || t[368] !== Ei || t[369] !== qr || t[370] !== Oi ? (Mi = e => {
+        if (_(e)) return;
+        let t = e.ctrlKey && (e.key === `n` || e.key === `p`);
+        if (e.key === `ArrowUp` || e.key === `ArrowDown` || t) {
+            e.preventDefault(), qr.current(e.key === `ArrowUp` || e.ctrlKey && e.key === `p` ? -1 : 1);
+            return
+        }
+        if (e.key === `Escape`) {
+            e.preventDefault(), Ei(), Ws(hs(T));
+            return
+        }(e.key === `Enter` || e.key === `Tab`) && (e.preventDefault(), Oi.current({
+            expectPerfectMatch: !1
+        }) && Ws(hs(T)))
+    }, t[367] = T, t[368] = Ei, t[369] = qr, t[370] = Oi, t[371] = Mi) : Mi = t[371];
+    let Ni = Ft(Mi),
+        Pi;
+    t[372] !== T || t[373] !== ji || t[374] !== er || t[375] !== qr || t[376] !== Oi || t[377] !== si || t[378] !== Qr ? (Pi = () => {
+        let e = hs(T);
+        return !Qr && !er && Lc(e, (t, n) => {
+            if (t === `up`) qr.current(-1);
+            else if (t === `down`) qr.current(1);
+            else if (t === `cancel`) qs(e), js(e);
+            else if (t === `submit`) return n?.key === `Tab` && !n.shiftKey && si != null && ji(si.id) ? !0 : ((si == null || !sd(si) && !ld(si) && si.meta?.isSubmenuTrigger !== !0) && qs(e), Oi.current({
+                expectPerfectMatch: !1
+            }));
+            else if (t === `checkMatch`) return Oi.current({
+                expectPerfectMatch: !0
+            })
+        }), () => qs(e)
+    }, t[372] = T, t[373] = ji, t[374] = er, t[375] = qr, t[376] = Oi, t[377] = si, t[378] = Qr, t[379] = Pi) : Pi = t[379];
+    let Fi;
+    t[380] !== Rt || t[381] !== T || t[382] !== ji || t[383] !== er || t[384] !== qr || t[385] !== Oi || t[386] !== si || t[387] !== Qr ? (Fi = [T, er, Qr, si, Rt, ji, qr, Oi], t[380] = Rt, t[381] = T, t[382] = ji, t[383] = er, t[384] = qr, t[385] = Oi, t[386] = si, t[387] = Qr, t[388] = Fi) : Fi = t[388], (0, Q.useEffect)(Pi, Fi);
+    let Ii, Li;
+    t[389] !== D || t[390] !== Qr ? (Ii = () => {
+        Qr || He.logEvent(`System Hint List Opened`, {
+            conversation_id: Qe(D)
+        })
+    }, Li = [D, Qr], t[389] = D, t[390] = Qr, t[391] = Ii, t[392] = Li) : (Ii = t[391], Li = t[392]), (0, Q.useEffect)(Ii, Li);
+    let Ri = (0, Q.useRef)(void 0),
+        Bi, Vi;
+    if (t[393] !== D || t[394] !== F.range.from || t[395] !== F.triggerSymbol || t[396] !== W || t[397] !== Z || t[398] !== Qr || t[399] !== ye ? (Bi = () => {
+            if (Qr || F.triggerSymbol !== `@` || ye.current?.conversationId !== D.id || ye.current.rangeFrom !== F.range.from || !Z.some(sp)) return;
+            let e = `${D.id}:${W}`;
+            Ri.current !== e && (Ri.current = e, pn({
+                conversationId: Qe(D),
+                source: `at-mention`
+            }).mentionSuggestionsLoaded())
+        }, Vi = [D, F.range.from, F.triggerSymbol, W, Z, Qr, ye], t[393] = D, t[394] = F.range.from, t[395] = F.triggerSymbol, t[396] = W, t[397] = Z, t[398] = Qr, t[399] = ye, t[400] = Bi, t[401] = Vi) : (Bi = t[400], Vi = t[401]), (0, Q.useEffect)(Bi, Vi), Qr) return null;
+    let Hi = I && Cr && !mn && !$n && G === `at_command` && q.length === 0,
+        Ui;
+    t[402] !== D || t[403] !== H.floating || t[404] !== Z ? (Ui = (0, $.jsx)(fl, {
+        conversation: D,
+        containerRef: H.floating,
+        suggestions: Z
+    }), t[402] = D, t[403] = H.floating, t[404] = Z, t[405] = Ui) : Ui = t[405];
+    let Wi;
+    t[406] === H ? Wi = t[407] : (Wi = e => H.setFloating(e), t[406] = H, t[407] = Wi);
+    let Gi = I && `py-2!`,
+        Ki = I ? `w-[var(--radix-popper-available-width)] max-w-[calc(100vw-12px)] dark:bg-token-bg-primary` : `max-w-[min(var(--radix-popper-available-width,100vw),--spacing(100))]`,
+        qi = I ? `max-h-[min(var(--radix-popper-available-height,50svh),--spacing(4)+10*var(--menu-item-height))]` : Z.length > 6 ? `max-h-[min(var(--radix-popper-available-height,50svh),--spacing(1.5)+5*var(--menu-item-height))]` : `max-h-[var(--radix-popper-available-height,50svh)]`,
+        Ji;
+    t[408] !== Gi || t[409] !== Ki || t[410] !== qi ? (Ji = ae(`overflow-y-auto [scrollbar-width:none]`, Gi, Ki, qi), t[408] = Gi, t[409] = Ki, t[410] = qi, t[411] = Ji) : Ji = t[411];
+    let Yi;
+    t[412] !== Y || t[413] !== Ei || t[414] !== H.floating.current || t[415] !== Ni || t[416] !== R || t[417] !== er || t[418] !== J ? (Yi = er && (0, $.jsxs)(`div`, {
+        className: `ps-5 pe-3 pt-1 pb-2`,
+        children: [(0, $.jsx)(`label`, {
+            className: `sr-only`,
+            htmlFor: `composer-submenu-search`,
+            children: Y === am ? (0, $.jsx)(en, {
+                id: `chatgpt.model_picker.internal_models.search.aria_label`,
+                defaultMessage: `Search internal models`
+            }) : (0, $.jsx)(en, {
+                id: `composer.systemHintSuggestor.submenu.search.placeholder`,
+                defaultMessage: `Search`
+            })
+        }), (0, $.jsx)(`input`, {
+            className: `text-token-text-primary caret-token-text-primary placeholder:text-token-text-tertiary w-full border-0 bg-transparent p-0 text-sm shadow-none ring-0 [box-shadow:none] [outline:none] outline-none focus:border-transparent focus:shadow-none focus:ring-0 focus:outline-none focus-visible:ring-0 focus-visible:outline-none`,
+            "data-internal-model-search": Y === am ? `true` : void 0,
+            id: `composer-submenu-search`,
+            name: `composer-submenu-search`,
+            value: J,
+            placeholder: R.formatMessage({
+                id: `composer.systemHintSuggestor.submenu.search.placeholder`,
+                defaultMessage: `Search`
+            }),
+            autoComplete: `off`,
+            spellCheck: !1,
+            autoFocus: !0,
+            onChange: e => {
+                Jn(e.currentTarget.value), zr(0)
+            },
+            onKeyDown: Ni,
+            onBlur: () => {
+                window.setTimeout(() => {
+                    let e = document.activeElement;
+                    e instanceof Node && H.floating.current?.contains(e) || Ei()
+                }, 0)
+            }
+        })]
+    }), t[412] = Y, t[413] = Ei, t[414] = H.floating.current, t[415] = Ni, t[416] = R, t[417] = er, t[418] = J, t[419] = Yi) : Yi = t[419];
+    let Xi;
+    t[420] === Zr ? Xi = t[421] : (Xi = Zr ? (0, $.jsx)(ym, {}) : null, t[420] = Zr, t[421] = Xi);
+    let Zi;
+    return t[422] !== Se || t[423] !== R || t[424] !== y || t[425] !== Hi ? (Zi = Hi ? (0, $.jsx)(`div`, {
+        className: `text-token-text-tertiary mx-2 flex min-h-(--menu-item-height) items-center px-2 py-1.5 text-sm leading-5`,
+        children: Se ? y ? R.formatMessage({
+            id: `chatgpt.composer.unified_menu.at_menu.footer_hint_with_folders`,
+            defaultMessage: `Type to search plugins, files, folders & skills`
+        }) : R.formatMessage({
+            id: `chatgpt.composer.unified_menu.at_menu.footer_hint`,
+            defaultMessage: `Type to search plugins, files & skills`
+        }) : (0, $.jsx)(en, {
+            id: `chatgpt.composer.unified_menu.at_menu.footer_hint_generic`,
+            defaultMessage: `Type to search`
+        })
+    }) : null, t[422] = Se, t[423] = R, t[424] = y, t[425] = Hi, t[426] = Zi) : Zi = t[426], (0, $.jsxs)($.Fragment, {
+        children: [Ui, (0, $.jsxs)(_n, {
+            ref: Wi,
+            $menuSurface: I,
+            style: tt,
+            "aria-busy": Zr,
+            className: Ji,
+            onPointerDown: op,
+            children: [Yi, Nr.map((e, t) => {
+                let n = 0;
+                for (let e = 0; e < t; e++) n += Nr[e].length;
+                let r = sd(e[0]),
+                    i = ld(e[0]),
+                    a = Lr ? e[0]?.meta?.unifiedComposerMenuCategory : void 0,
+                    o = a == null ? null : Fu(R, a);
+                return (0, $.jsxs)(cr.Group, {
+                    separator: !I,
+                    children: [o == null ? null : (0, $.jsx)(cr.Label, {
+                        className: `text-token-text-secondary px-2! py-2! text-sm leading-5 font-normal!`,
+                        children: o
+                    }), e.map((e, t) => {
+                        let a = n + t,
+                            o = wn && r && t > 0,
+                            s = Tn && i && t > 0,
+                            c = wn && r && t === 0,
+                            l = Tn && i && t === 0;
+                        return o || s ? null : (0, $.jsx)(`div`, {
+                            "data-composer-plugin-impression-id": A(e.meta?.systemHintType) ? ft(e.meta.systemHintType) : void 0,
+                            className: Y === am ? `[&_.break-words]:block [&_.break-words]:truncate [&_.text-xs]:truncate` : void 0,
+                            ref: c ? ht : l ? bt : void 0,
+                            onPointerLeave: () => {
+                                c && zn(), l && Vn()
+                            },
+                            children: (0, $.jsx)(tl, {
+                                item: e,
+                                isHighlighted: a === Rr,
+                                onHighlight: () => {
+                                    if (Gr(e), zr(a), c) {
+                                        Tt(), Dn(!0), Nn(!1), jn(!1);
+                                        return
+                                    }
+                                    if (l) {
+                                        Dt(), jn(!0), kn(!1), Dn(!1);
+                                        return
+                                    }
+                                    wn && kn(!1), Tn && Nn(!1)
+                                },
+                                onClick: () => {
+                                    Di({
+                                        hintToSave: e,
+                                        expectPerfectMatch: !1
+                                    }), e.shouldRestoreComposerFocusAfterSelect !== !1 && Ws(hs(T))
+                                },
+                                className: ae(I && `mx-2! gap-3! px-2! [&:has(>.trailing)>:first-child]:gap-3!`),
+                                titleClassName: I && !e.disabled && (e.color == null || e.color === "default") ? `text-token-text-primary` : void 0,
+                                secondaryClassName: I ? `text-token-text-tertiary` : void 0,
+                                secondaryLayout: I && Y !== am ? `inline` : `stacked`
+                            })
+                        }, e.id)
+                    })]
+                }, e[0]?.meta?.unifiedComposerMenuCategory ?? t)
+            }), Xi, Zi]
+        }), ci && ui != null && (0, $.jsx)(_n, {
+            ref: _t,
+            $menuSurface: I,
+            style: ot,
+            className: `z-1 max-h-[min(var(--radix-popper-available-height,50svh),--spacing(100))] min-w-[min(280px,95vw)] [scrollbar-width:none] overflow-y-auto`,
+            onPointerDown: ap,
+            onPointerEnter: () => {
+                Tt(), Dn(!0)
+            },
+            onPointerLeave: () => {
+                zn()
+            },
+            children: hi.map((e, t) => {
+                let n = ui.baseIndex + t + 1;
+                return (0, $.jsx)(tl, {
+                    item: e,
+                    isHighlighted: n === Rr,
+                    onHighlight: () => {
+                        Tt(), Dn(!0), Gr(e), zr(n)
+                    },
+                    onClick: () => {
+                        Di({
+                            hintToSave: e,
+                            expectPerfectMatch: !1
+                        }), Ws(hs(T))
+                    }
+                }, e.id)
+            })
+        }), li && fi != null && (0, $.jsx)(_n, {
+            ref: St,
+            $menuSurface: I,
+            style: lt,
+            className: `z-1 max-h-[min(var(--radix-popper-available-height,50svh),--spacing(100))] min-w-[min(280px,95vw)] [scrollbar-width:none] overflow-y-auto`,
+            onPointerDown: ip,
+            onPointerEnter: () => {
+                Dt(), jn(!0)
+            },
+            onPointerLeave: () => {
+                Vn()
+            },
+            children: gi.map((e, t) => {
+                let n = fi.baseIndex + t + 1;
+                return (0, $.jsx)(tl, {
+                    item: e,
+                    isHighlighted: n === Rr,
+                    onHighlight: () => {
+                        Dt(), jn(!0), Gr(e), zr(n)
+                    },
+                    onClick: () => {
+                        Di({
+                            hintToSave: e,
+                            expectPerfectMatch: !1
+                        }), Ws(hs(T))
+                    }
+                }, e.id)
+            })
+        })]
+    })
+}
+
+function ip(e) {
+    e.preventDefault()
+}
+
+function ap(e) {
+    e.preventDefault()
+}
+
+function op(e) {
+    let {
+        target: t
+    } = e;
+    t instanceof HTMLInputElement || e.preventDefault()
+}
+
+function sp(e) {
+    let t = e.meta?.systemHintType;
+    return !e.disabled && t != null && rr(t, `site`)
+}
+
+function cp(e) {
+    return cd(e) && !e.disabled
+}
+
+function lp(e) {
+    return od(e) && !e.disabled
+}
+
+function up(e) {
+    return !e.disabled
+}
+
+function dp(e) {
+    return `${e.id}:${+!!e.disabled}`
+}
+
+function fp(e) {
+    return e[0]?.meta?.unifiedComposerMenuCategory ?? `uncategorized`
+}
+
+function pp(e) {
+    return e[0]?.meta?.unifiedComposerMenuCategory === `gpts`
+}
+
+function mp(e) {
+    return e.length > 0
+}
+
+function hp(e) {
+    return e.filter(gp)
+}
+
+function gp(e) {
+    return !e.noMatchEmpty
+}
+
+function _p(e) {
+    return e.searchParameters ?? {
+        targets: [e.secondary ? `${e.title} ${e.secondary}` : e.title, ...e.matchText]
+    }
+}
+
+function vp(e) {
+    return e.length > 0
+}
+
+function yp(e) {
+    return !od(e)
+}
+
+function bp(e) {
+    return !od(e)
+}
+
+function xp(e) {
+    return e.length > 0
+}
+
+function Sp(e) {
+    return !e.meta?.isConnector || !!e.meta.isConnected
+}
+
+function Cp(e) {
+    return e.length > 0
+}
+
+function wp(e) {
+    return e.meta?.systemHintType ?? e.id
+}
+
+function Tp(e) {
+    return e.meta?.systemHintType !== g.Think && (!e.meta?.isConnector || e.meta.isConnected === !0)
+}
+
+function Ep(e) {
+    return e.length > 0
+}
+
+function Dp() {}
+
+function Op(e) {
+    return e.length > 0
+}
+
+function kp(e) {
+    return !e.disabled
+}
+
+function Ap(e) {
+    return !e.disabled
+}
+
+function jp(e) {
+    return !e.disabled
+}
+
+function Mp(e) {
+    return !e.disabled
+}
+
+function Np(e) {
+    return e.meta?.isLocalSystemHintAction === !0
+}
+
+function Pp() {}
+
+function Fp(e) {
+    return e.searchParameters?.targets ?? e.matchText
+}
+
+function Ip() {
+    return {
+        matchKey: void 0,
+        isHovered: !1,
+        isPinned: !1
+    }
+}
+
+function Lp() {
+    return {
+        matchKey: void 0,
+        isHovered: !1,
+        isPinned: !1
+    }
+}
+
+function Rp({
+    accountPlanType: e,
+    availableSystemHints: t,
+    isFilesOnlyComposer: n
+}) {
+    if (n) return [];
+    let r = xr(t, e);
+    return r && go(r.filter(e => !(e.isConnector && e.hideFromInitialSelection && !e.canConnect)))
+}
+
+function zp(e) {
+    return e != null && e in In
+}
+
+function Bp() {
+    return ai()
+}
+
+function Vp(e) {
+    return e.isLoggedOutUpsell === !0
+}
+
+function Hp(e) {
+    return e.systemHint
+}
+
+function Up(e) {
+    return b(e.systemHint)
+}
+
+function Wp(e) {
+    return e.resource
+}
+
+function Gp(e) {
+    return e.gizmo
+}
+
+function Kp(e) {
+    return e.gizmo.id
+}
+
+function qp(e) {
+    e.clear()
+}
+
+function Jp(e) {
+    return e.id
+}
+
+function Yp() {}
+
+function Xp(e) {
+    return e.prompts ?? []
+}
+
+function Zp(e) {
+    return e.prompts ?? []
+}
+
+function Qp(e) {
+    return e.meta?.systemHintType === g.Think
+}
+var $p, Q, em, $, tm, nm, rm, im, am, om, sm, cm, lm, um, dm, fm, pm, mm, hm, gm, _m, vm, ym, bm = e((() => {
+    $p = cn(), $i(), Mt(), Un(), i(), hi(), Tr(), nt(), be(), a(), gr(), Gt(), Lo(), ke(), Oo(), ve(), So(), ye(), Mr(), de(), Zi(), cs(), wr(), O(), io(), pi(), Xe(), c(), P(), Ss(), Oe(), yc(), Ic(), St(), ja(), Ji(), qr(), Qn(), ur(), Vr(), xt(), wt(), T(), rt(), W(), ys(), Cn(), ma(), $s(), bs(), Tc(), ul(), dl(), La(), ks(), Qc(), Ri(), ms(), Ml(), J(), mo(), Bi(), H(), Ui(), ta(), m(), et(), st(), se(), mt(), Ke(), fn(), Fe(), or(), pe(), Fn(), we(), Ai(), Pt(), Wt(), Mn(), xn(), Lt(), Ue(), re(), V(), ho(), ie(), Ll(), ol(), sn(), Ie(), oe(), We(), yn(), Xo(), Q = n(an()), rn(), em = n(Zt()), nn(), ze(), ii(), Xc(), Vl(), wa(), Ks(), Yc(), fu(), kn(), $u(), Kn(), si(), xi(), Is(), gc(), Gs(), Os(), rd(), Xn(), ad(), _d(), $c(), bd(), Sd(), ls(), Lr(), Bc(), Sn(), Za(), Zf(), Gu(), ou(), $ = K(), tm = `manage-prompts`, nm = `file-library-submenu`, rm = {
+        [g.Sketch]: .5
+    }, im = `model-submenu`, am = `internal-model-submenu`, om = 10, sm = `move-to-project-submenu`, cm = `intelligence-submenu`, lm = 20, um = 20 * 1e3, dm = [], fm = [], pm = Xt({
+        id: `composer.systemHintSuggestor.intelligenceSubmenu.title`,
+        defaultMessage: `Intelligence`
+    }), mm = e => {
+        "use forget";
+        let t = (0, $p.c)(18),
+            {
+                itemId: n,
+                isPending: r,
+                label: i,
+                onBlur: a,
+                onConnect: s
+            } = e,
+            c = r !== void 0 && r,
+            l = c || void 0,
+            u = c || void 0,
+            d = c ? void 0 : a,
+            f = c ? void 0 : s,
+            p;
+        t[0] === c ? p = t[1] : (p = c ? (0, $.jsx)(`span`, {
+            "aria-hidden": `true`,
+            children: (0, $.jsx)(o, {
+                className: `icon-sm`
+            })
+        }) : (0, $.jsx)(en, {
+            ...Ka.suggestedPluginConnectLabel
+        }), t[0] = c, t[1] = p);
+        let m;
+        t[2] !== n || t[3] !== i || t[4] !== l || t[5] !== u || t[6] !== d || t[7] !== f || t[8] !== p ? (m = (0, $.jsx)(Dt, {
+            type: `button`,
+            "aria-label": i,
+            "aria-busy": l,
+            "aria-disabled": u,
+            color: `tertiary`,
+            "data-suggested-plugin-connect": n,
+            onBlur: d,
+            onClick: f,
+            children: p
+        }), t[2] = n, t[3] = i, t[4] = l, t[5] = u, t[6] = d, t[7] = f, t[8] = p, t[9] = m) : m = t[9];
+        let h;
+        t[10] === c ? h = t[11] : (h = c && (0, $.jsx)(en, {
+            ...Ka.loading
+        }), t[10] = c, t[11] = h);
+        let g;
+        t[12] !== i || t[13] !== h ? (g = (0, $.jsx)(`span`, {
+            role: `status`,
+            "aria-label": i,
+            className: `sr-only`,
+            children: h
+        }), t[12] = i, t[13] = h, t[14] = g) : g = t[14];
+        let _;
+        return t[15] !== m || t[16] !== g ? (_ = (0, $.jsxs)($.Fragment, {
+            children: [m, g]
+        }), t[15] = m, t[16] = g, t[17] = _) : _ = t[17], _
+    }, hm = e => {
+        let t = new Set,
+            n = [];
+        for (let r of e) t.has(r.id) || (t.add(r.id), n.push(r));
+        return n
+    }, gm = e => e ? {
+        "@": `at_command`,
+        "+": `at_command`,
+        "/": `slash_command`
+    } [e] ?? `slash_command` : `slash_command`, _m = () => {}, vm = (0, Q.memo)(function(e) {
+        "use forget";
+        let t = (0, $p.c)(309),
+            {
+                availableSystemHints: n,
+                suggestedPluginSystemHints: r,
+                composerController: i,
+                conversation: a,
+                layoutMode: o,
+                systemHintMenuSide: s,
+                composerLayer: c,
+                canUseInlineTagging: l,
+                isFileUploadEnabled: u,
+                fileUploadDisabledReason: d,
+                currentModelConfig: f,
+                openFileDialog: p,
+                selectModelId: m,
+                removeModel: h,
+                clearModelSelection: _,
+                gizmoId: b,
+                hasGizmoFeatureRateLimit: x,
+                setSelectedGizmoTag: S,
+                isFirstPartyProject: C,
+                inputState: te,
+                disableReason: ne,
+                disableAdvancedVoiceMode: re,
+                disableVoiceButton: ie,
+                composerToolAvailability: T,
+                supportsLibraryFolderReferences: E,
+                allowSharedLibraryReferences: ae,
+                maxLibraryAttachmentCount: D,
+                maxTotalLibraryAttachmentCount: oe,
+                gizmoEditorMode: O
+            } = e,
+            se;
+        t[0] === r ? se = t[1] : (se = r === void 0 ? [] : r, t[0] = r, t[1] = se);
+        let le = se,
+            k = te === void 0 ? `default` : te,
+            ue = re !== void 0 && re,
+            de = ie !== void 0 && ie,
+            pe = T === void 0 ? `default` : T,
+            _e = E !== void 0 && E,
+            ve = ae !== void 0 && ae,
+            N = ln(),
+            P = G(),
+            F = tn(),
+            ye = $t(),
+            be;
+        t[2] === a ? be = t[3] : (be = {
+            conversation: a
+        }, t[2] = a, t[3] = be);
+        let xe = ni(be),
+            Se = he(),
+            Ce = Se?.planType,
+            L = y(),
+            {
+                disableAtTagging: we
+            } = la(),
+            Te = I(),
+            Ee = Je(),
+            z = !M(tt),
+            Oe;
+        t[4] === a ? Oe = t[5] : (Oe = () => tr(g.Think, a), t[4] = a, t[5] = Oe);
+        let ke = M(Oe),
+            Ae;
+        t[6] === N ? Ae = t[7] : (Ae = oi(N), t[6] = N, t[7] = Ae);
+        let je = Ae,
+            Me;
+        t[8] !== je || t[9] !== a || t[10] !== z ? (Me = () => Bl({
+            conversation: a,
+            disabledReason: je,
+            isUnifiedComposerMenuEnabled: z
+        }), t[8] = je, t[9] = a, t[10] = z, t[11] = Me) : Me = t[11];
+        let B = M(Me),
+            Pe = !z,
+            Fe;
+        t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (Fe = $e(), t[12] = Fe) : Fe = t[12];
+        let Ie = Fe,
+            Le = M(w),
+            Re;
+        t[13] !== a.id || t[14] !== Le ? (Re = () => !Le || !v() || Kt(a.id), t[13] = a.id, t[14] = Le, t[15] = Re) : Re = t[15];
+        let ze = M(Re),
+            Be = M(Bp),
+            V;
+        t[16] === i ? V = t[17] : (V = () => Qs(i), t[16] = i, t[17] = V);
+        let {
+            activeSystemHintType: Ve,
+            activeConnectorSystemHintTypes: Ue,
+            activeCustomAgentSystemHintType: We
+        } = M(V), Ke = We != null, Ye = M(a.serverId$), Xe = P.pathname === `/` && Ye == null, Ze;
+        t[18] === a ? Ze = t[19] : (Ze = () => lt(a), t[18] = a, t[19] = Ze);
+        let et = M(Ze),
+            H;
+        t[20] === a ? H = t[21] : (H = () => De(a), t[20] = a, t[21] = H);
+        let nt = M(H),
+            rt;
+        t[22] !== P.pathname || t[23] !== Ye ? (rt = Ye != null || ql(P.pathname), t[22] = P.pathname, t[23] = Ye, t[24] = rt) : rt = t[24];
+        let it = rt,
+            {
+                showModelSlashCommands: st
+            } = c,
+            U = pe === `files_only`,
+            ut;
+        t[25] === i ? ut = t[26] : (ut = () => nr() && Dl(i), t[25] = i, t[26] = ut);
+        let pt = M(ut),
+            {
+                file_uploads: mt,
+                image_uploads: gt,
+                video: _t
+            } = Mc(),
+            {
+                disabled: yt,
+                icon: bt,
+                onSelect: xt
+            } = hc(`ComposerPlusMenu`),
+            St = Te && Ee && _t === `allowed`,
+            Ct;
+        t[27] !== mt || t[28] !== gt || t[29] !== N ? (Ct = bn({
+            fileUploads: mt,
+            imageUploads: gt,
+            intl: N
+        }), t[27] = mt, t[28] = gt, t[29] = N, t[30] = Ct) : Ct = t[30];
+        let wt = Ct,
+            Tt = z && !u && d === Tn.RateLimitReached && Se?.hasPaidSubscription() !== !0 && Va(dt.RateLimitedFileUploadMenuItem),
+            Et;
+        t[31] !== Ce || t[32] !== F || t[33] !== L?.call_to_action?.[0] || t[34] !== L?.upsell_context_id || t[35] !== Ye ? (Et = () => {
+            fi({
+                navigate: F,
+                openModalLocation: dt.RateLimitedFileUploadMenuItem,
+                onBeforeAction: () => {
+                    Ps({
+                        type: `file_upload`,
+                        location: `inline-text`,
+                        plan_type: Ce ?? `unknown`,
+                        is_hard_block: !1,
+                        hard_block_reason: ``
+                    })
+                },
+                primaryAction: L?.call_to_action?.[0],
+                sourceThreadId: Ye ?? null,
+                upsellContextId: L?.upsell_context_id
+            })
+        }, t[31] = Ce, t[32] = F, t[33] = L?.call_to_action?.[0], t[34] = L?.upsell_context_id, t[35] = Ye, t[36] = Et) : Et = t[36];
+        let Dt = Et;
+        f?.title;
+        let Ot;
+        bb0: {
+            if (!z) {
+                let e;
+                t[37] !== f?.title || t[38] !== d || t[39] !== N || t[40] !== u || t[41] !== p ? (e = no({
+                    title: wc(N, !u, d, f?.title),
+                    onSelect: p,
+                    disabled: !u,
+                    iconAriaLabel: ``,
+                    shouldRestoreComposerFocusAfterSelect: !1
+                }), t[37] = f?.title, t[38] = d, t[39] = N, t[40] = u, t[41] = p, t[42] = e) : e = t[42], Ot = e;
+                break bb0
+            }
+            if (Tt) {
+                let e;
+                t[43] !== f?.title || t[44] !== N || t[45] !== Dt || t[46] !== L ? (e = no({
+                    title: wc(N, !0, Tn.RateLimitReached, f?.title),
+                    secondary: fa(L, N),
+                    onSelect: Dt,
+                    disabled: !1,
+                    iconAriaLabel: ``
+                }), t[43] = f?.title, t[44] = N, t[45] = Dt, t[46] = L, t[47] = e) : e = t[47], Ot = e;
+                break bb0
+            }
+            let e;t[48] !== N || t[49] !== u || t[50] !== p || t[51] !== wt ? (e = no({
+                title: wt,
+                secondary: Cr(N),
+                onSelect: p,
+                disabled: !u,
+                iconAriaLabel: ``,
+                shouldRestoreComposerFocusAfterSelect: !1
+            }), t[48] = N, t[49] = u, t[50] = p, t[51] = wt, t[52] = e) : e = t[52],
+            Ot = e
+        }
+        let kt = Ot,
+            jt;
+        t[53] !== Pe || t[54] !== z ? (jt = {
+            showDescriptions: z,
+            showSelectedDecoration: Pe,
+            unifiedComposerSelectionStateEnabled: z
+        }, t[53] = Pe, t[54] = z, t[55] = jt) : jt = t[55];
+        let Mt = Cs(jt),
+            Pt;
+        if (t[56] !== kt || t[57] !== Be || t[58] !== U || t[59] !== F || t[60] !== z) {
+            bb1: {
+                let e = [];
+                if (e.push(kt), U || z) {
+                    Pt = e.map(Zc);
+                    break bb1
+                }
+                Be && e.push({
+                    command: `add-mcp`,
+                    aliases: [`mcp`],
+                    title: `Add MCP`,
+                    icon: (0, $.jsx)(Jo, {
+                        className: `icon`
+                    }),
+                    noMatchEmpty: !0,
+                    onSelect: () => {
+                        F(R(at.Connectors))
+                    }
+                }),
+                Pt = e.map(Zc)
+            }
+            t[56] = kt,
+            t[57] = Be,
+            t[58] = U,
+            t[59] = F,
+            t[60] = z,
+            t[61] = Pt
+        }
+        else Pt = t[61];
+        let Ft = Pt,
+            It;
+        t[62] !== a || t[63] !== f?.id || t[64] !== h || t[65] !== m || t[66] !== st ? (It = () => Ge(() => st ? Xs({
+            modelsData: Hn(a),
+            currentModelId: f?.id,
+            selectModelId: m,
+            removeModel: h
+        }).map(Zc) : []), t[62] = a, t[63] = f?.id, t[64] = h, t[65] = m, t[66] = st, t[67] = It) : It = t[67], f?.id;
+        let W;
+        t[68] === It ? W = t[69] : (W = It(), t[68] = It, t[69] = W);
+        let Lt = W;
+        f?.id;
+        let Rt;
+        t[70] !== a || t[71] !== f?.id || t[72] !== N || t[73] !== h || t[74] !== m || t[75] !== st ? (Rt = Ge(() => {
+            if (!st) return [];
+            let e = Hn(a),
+                t = mr(a).conversationVersion$();
+            return tc({
+                modelsData: e,
+                currentModelId: f?.id,
+                currentVersionId: t,
+                selectModelId: m,
+                intl: N,
+                showModelSlashCommands: st,
+                removeModel: h
+            })
+        }), t[70] = a, t[71] = f?.id, t[72] = N, t[73] = h, t[74] = m, t[75] = st, t[76] = Rt) : Rt = t[76];
+        let zt = Rt,
+            Bt;
+        t[77] === Symbol.for(`react.memo_cache_sentinel`) ? (Bt = Li(), t[77] = Bt) : Bt = t[77];
+        let Vt = z && Ie && Bt;
+        f?.id;
+        let Wt;
+        t[78] !== a || t[79] !== f?.id || t[80] !== m || t[81] !== Vt ? (Wt = Ge(() => {
+            if (!Vt) return [];
+            let e = Hn(a),
+                t = mr(a).conversationVersion$();
+            return Ls({
+                conversation: a,
+                modelsData: e,
+                currentModelId: f?.id,
+                currentVersionId: t,
+                selectModelId: m
+            })
+        }), t[78] = a, t[79] = f?.id, t[80] = m, t[81] = Vt, t[82] = Wt) : Wt = t[82];
+        let Gt = Wt,
+            qt;
+        t[83] !== a || t[84] !== f?.id || t[85] !== b || t[86] !== xe ? (qt = () => Ge(() => Vs(a) ? mc({
+            conversation: a,
+            modelsData: Hn(a),
+            currentModelId: f?.id,
+            modelSwitcherDenialsBySlug: xe,
+            preferredModelId: b == null ? void 0 : qe(b).data?.gizmo.default_model ?? void 0
+        }) : [], {
+            equals: ce
+        }), t[83] = a, t[84] = f?.id, t[85] = b, t[86] = xe, t[87] = qt) : qt = t[87], f?.id;
+        let Jt;
+        t[88] === qt ? Jt = t[89] : (Jt = qt(), t[88] = qt, t[89] = Jt);
+        let Yt = Jt,
+            K;
+        t[90] !== Ce || t[91] !== n || t[92] !== U ? (K = Rp({
+            accountPlanType: Ce,
+            availableSystemHints: n,
+            isFilesOnlyComposer: U
+        }), t[90] = Ce, t[91] = n, t[92] = U, t[93] = K) : K = t[93];
+        let Xt = K,
+            Zt;
+        t[94] === i ? Zt = t[95] : (Zt = () => rs(i).controller$(), t[94] = i, t[95] = Zt);
+        let Qt = M(Zt),
+            en = we === !0,
+            nn;
+        t[96] !== en || t[97] !== U || t[98] !== Te || t[99] !== Qt ? (nn = e => ha({
+            hint: e,
+            sketchComposer: Qt,
+            disableAtTagging: en,
+            isFilesOnlyComposer: U,
+            isIntegratedVoiceModeActive: Te
+        }), t[96] = en, t[97] = U, t[98] = Te, t[99] = Qt, t[100] = nn) : nn = t[100];
+        let rn = nn,
+            an;
+        t[101] !== _ || t[102] !== i || t[103] !== ke || t[104] !== B || t[105] !== rn || t[106] !== Pe || t[107] !== z ? (an = {
+            composerController: i,
+            clearModelSelection: _,
+            isThinkingSystemHintPersistent: ke,
+            resolveSystemHintBehavior: rn,
+            resolveConsumerLockdownModeSuggestion: B,
+            showDescriptions: z,
+            showSelectedDecoration: Pe,
+            unifiedComposerSelectionStateEnabled: z
+        }, t[101] = _, t[102] = i, t[103] = ke, t[104] = B, t[105] = rn, t[106] = Pe, t[107] = z, t[108] = an) : an = t[108];
+        let on = Fs(a, an),
+            sn;
+        bb2: {
+            if (we) {
+                let e;
+                t[109] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[109] = e) : e = t[109], sn = e;
+                break bb2
+            }
+            let e;
+            if (t[110] !== Xt || t[111] !== l || t[112] !== on) {
+                let n;
+                t[114] === l ? n = t[115] : (n = e => A(e.systemHint) ? !1 : !l || !e.isConnector, t[114] = l, t[115] = n);
+                let r;
+                t[116] === on ? r = t[117] : (r = e => {
+                    let t = on(e);
+                    return t == null ? [] : [t]
+                }, t[116] = on, t[117] = r), e = (Xt ?? []).filter(n).flatMap(r), t[110] = Xt, t[111] = l, t[112] = on, t[113] = e
+            } else e = t[113];sn = e
+        }
+        let cn = sn,
+            un;
+        t[118] !== n || t[119] !== Ke || t[120] !== U ? (un = U || Ke ? [] : hn(n ?? []), t[118] = n, t[119] = Ke, t[120] = U, t[121] = un) : un = t[121];
+        let dn = un,
+            fn;
+        t[122] !== a.id || t[123] !== N || t[124] !== B || t[125] !== z ? (fn = e => {
+            let t = Dc(e, N),
+                {
+                    isBlocked: n,
+                    shouldShowBlockedModal: r,
+                    treatment: i
+                } = B(e),
+                o = e => {
+                    if (n) {
+                        r && At(so, {
+                            clientThreadId: a.id,
+                            toolName: t
+                        });
+                        return
+                    }
+                    e()
+                };
+            return {
+                command: {
+                    command: t,
+                    aliases: t === e.name ? void 0 : [e.name],
+                    title: t,
+                    type: el.App,
+                    isConnected: e.isConnected,
+                    isHeadPlugin: e.isHeadPlugin,
+                    systemHintType: e.systemHint,
+                    icon: (0, $.jsx)(mn, {
+                        hint: e,
+                        isNextToLabel: !0
+                    }),
+                    secondary: z ? e.description : void 0,
+                    ...i
+                },
+                isBlocked: n,
+                runIfAllowed: o
+            }
+        }, t[122] = a.id, t[123] = N, t[124] = B, t[125] = z, t[126] = fn) : fn = t[126];
+        let pn = fn,
+            gn;
+        t[127] === Symbol.for(`react.memo_cache_sentinel`) ? (gn = zi(), t[127] = gn) : gn = t[127];
+        let _n = gn,
+            [vn, yn] = (0, Q.useState)(null),
+            xn = (0, Q.useRef)(null),
+            Sn;
+        t[128] === Symbol.for(`react.memo_cache_sentinel`) ? (Sn = e => {
+            e == null ? yn(null) : (0, em.flushSync)(() => yn(e))
+        }, t[128] = Sn) : Sn = t[128];
+        let Cn = Sn,
+            Dn, kn;
+        t[129] === Symbol.for(`react.memo_cache_sentinel`) ? (Dn = () => () => {
+            xn.current = null
+        }, kn = [], t[129] = Dn, t[130] = kn) : (Dn = t[129], kn = t[130]), (0, Q.useEffect)(Dn, kn);
+        let An;
+        bb3: {
+            if (!z) {
+                let e;
+                t[131] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[131] = e) : e = t[131], An = e;
+                break bb3
+            }
+            if (!Ie) {
+                let e;
+                if (t[132] !== N || t[133] !== le) {
+                    let n = N.formatMessage(Ne.logInButtonText),
+                        r;
+                    t[135] === N ? r = t[136] : (r = e => Dc(e, N), t[135] = N, t[136] = r), e = _i(le.filter(Vp), _n, Hp, r).map(e => {
+                        let t = Dc(e, N);
+                        return {
+                            item: {
+                                id: `logged-out-upsell:${e.systemHint}`,
+                                title: t,
+                                secondary: e.description,
+                                icon: (0, $.jsx)(mn, {
+                                    hint: e,
+                                    isNextToLabel: !0
+                                }),
+                                matchText: [e.name, e.description, ...e.aliases],
+                                onSelect: () => wn(e.systemHint),
+                                showFor: [`at_command`],
+                                trailing: n,
+                                trailingColor: `tertiary`
+                            }
+                        }
+                    }), t[132] = N, t[133] = le, t[134] = e
+                } else e = t[134];
+                An = e;
+                break bb3
+            }
+            if (Ke) {
+                let e;
+                t[137] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[137] = e) : e = t[137], An = e;
+                break bb3
+            }
+            let e;t[138] !== Se || t[139] !== i || t[140] !== pn || t[141] !== N || t[142] !== et || t[143] !== P.hash || t[144] !== P.pathname || t[145] !== P.search || t[146] !== F || t[147] !== vn || t[148] !== ye || t[149] !== le ? (e = le.map(e => {
+                let t = ft(e.systemHint),
+                    {
+                        command: n,
+                        runIfAllowed: r
+                    } = pn(e);
+                return {
+                    ...id({
+                        productExperience: mi(et ? `work` : `chat`),
+                        account: Se,
+                        command: n,
+                        intl: N,
+                        location: {
+                            pathname: P.pathname,
+                            search: P.search,
+                            hash: P.hash
+                        },
+                        navigateToPluginDetails: (e, t) => F(e, {
+                            state: t
+                        }),
+                        onConnected: e => Js(i, e),
+                        onPendingChange: Cn,
+                        getPendingConnection: () => xn,
+                        pluginId: t,
+                        queryClient: ye,
+                        runIfAllowed: r,
+                        systemHintType: e.systemHint
+                    }),
+                    isPending: vn === t
+                }
+            }), t[138] = Se, t[139] = i, t[140] = pn, t[141] = N, t[142] = et, t[143] = P.hash, t[144] = P.pathname, t[145] = P.search, t[146] = F, t[147] = vn, t[148] = ye, t[149] = le, t[150] = e) : e = t[150],
+            An = e
+        }
+        let jn = An,
+            Mn;
+        t[151] !== n || t[152] !== U ? (Mn = U ? [] : (n ?? []).filter(Up), t[151] = n, t[152] = U, t[153] = Mn) : Mn = t[153];
+        let Nn = Mn,
+            Pn;
+        t[154] !== nt || t[155] !== et ? (Pn = En({
+            conversationOrigin: nt,
+            isTPPConversationMode: et
+        }), t[154] = nt, t[155] = et, t[156] = Pn) : Pn = t[156];
+        let Fn = l && !we && ze,
+            In;
+        t[157] !== ve || t[158] !== i || t[159] !== a || t[160] !== O || t[161] !== D || t[162] !== oe || t[163] !== _e || t[164] !== Pn || t[165] !== Fn || t[166] !== z ? (In = {
+            allowMountedLibraryLiveReferences: Pn,
+            allowSharedLibraryReferences: ve,
+            canUseInlineTagging: Fn,
+            composerController: i,
+            conversation: a,
+            maxLibraryAttachmentCount: D,
+            maxTotalLibraryAttachmentCount: oe,
+            gizmoEditorMode: O,
+            supportsLibraryFolderReferences: _e,
+            unifiedComposerSelectionStateEnabled: z
+        }, t[157] = ve, t[158] = i, t[159] = a, t[160] = O, t[161] = D, t[162] = oe, t[163] = _e, t[164] = Pn, t[165] = Fn, t[166] = z, t[167] = In) : In = t[167];
+        let {
+            fileLibraryBrowseSuggestions: Ln,
+            fileLibraryPathSuggestions: Rn,
+            isFileLibrarySearchPending: zn,
+            librarySearchKey: Bn,
+            libraryFolderPathSuggestions: Vn,
+            isLibraryFolderUiEnabled: Un,
+            isMultiwordLibraryMentionParsingEnabled: Wn,
+            onSearchQueryChange: Gn,
+            openFileLibraryModal: Kn,
+            showFileLibraryEntrypoint: qn
+        } = ef(In), [J, Jn] = (0, Q.useState)(``), [Y, Yn] = (0, Q.useState)(!1), Xn = kl({
+            enabled: Y && Ie && ze && !U && !Te && pt
+        }) ?? fm, Zn;
+        t[168] === Gn ? Zn = t[169] : (Zn = (e, t, n) => {
+            Jn(e), Yn(t === `@`), Gn(e, t, n)
+        }, t[168] = Gn, t[169] = Zn);
+        let Qn = Zn,
+            $n;
+        t[170] !== Ue || t[171] !== We || t[172] !== Ve || t[173] !== Nn || t[174] !== dn || t[175] !== l || t[176] !== _ || t[177] !== i || t[178] !== a || t[179] !== we || t[180] !== pn || t[181] !== b || t[182] !== x || t[183] !== N || t[184] !== U || t[185] !== C || t[186] !== Xe || t[187] !== et || t[188] !== Le || t[189] !== S || t[190] !== Pe || t[191] !== z ? ($n = Ge(() => {
+            if (U || !l || we) return [];
+            let e = vt(),
+                {
+                    data: t
+                } = Nt(),
+                {
+                    data: n
+                } = ct(),
+                r = Ur([...e ?? [], ...t?.list.items?.map(Wp) ?? [], ...n?.items?.map(Gp) ?? []], Kp).filter(e => b == null || e.gizmo.id !== b),
+                o = dn.map(e => {
+                    let {
+                        command: t,
+                        isBlocked: n,
+                        runIfAllowed: r
+                    } = pn(e), o = Ms(e.systemHint, Ve, Ue), s = o && Pe, c = e.systemHint === j, l;
+                    return n || (z ? l = e.name : !o && !c && (l = `@${e.name}`)), {
+                        ...t,
+                        trailing: s ? (0, $.jsx)(me.CheckSm, {
+                            className: `icon-sm`
+                        }) : t.trailing,
+                        trailingColor: s ? `primary` : t.trailingColor,
+                        color: s ? `selected` : void 0,
+                        insertText: l,
+                        mention: z ? {
+                            representation: `inline-pill`,
+                            kind: `system-hint`
+                        } : void 0,
+                        onSelect: () => r(() => {
+                            if (o) {
+                                if (z) return;
+                                zs(i, e.systemHint);
+                                return
+                            }
+                            A(e.systemHint) && ll(ft(e.systemHint)), Js(i, e.systemHint), Ti(e.systemHint, Zr.AtMention, _r({
+                                clientThreadId: Qe(a)
+                            }))
+                        })
+                    }
+                }),
+                s = Nn.map(e => {
+                    let t = Dc(e, N),
+                        n = We === e.systemHint,
+                        r = n && Pe;
+                    return {
+                        ...Zc({
+                            command: t,
+                            title: t,
+                            aliases: t === e.name ? [...e.aliases] : [e.name, ...e.aliases],
+                            regexMatches: e.regexMatches ? [...e.regexMatches] : void 0,
+                            type: el.App,
+                            isConnected: !1,
+                            icon: (0, $.jsx)(mn, {
+                                hint: e,
+                                isNextToLabel: !0
+                            }),
+                            secondary: z ? e.description : void 0,
+                            trailing: r ? (0, $.jsx)(me.CheckSm, {
+                                className: `icon-sm`
+                            }) : void 0,
+                            trailingColor: r ? `primary` : void 0,
+                            color: r ? `selected` : void 0,
+                            onSelect: () => {
+                                n || ot(() => {
+                                    Ut.set(a, null), _?.();
+                                    let t = hs(i);
+                                    z ? Wc(t) : sc(t), fs.set(i, qp), As(i, e.systemHint)
+                                })
+                            }
+                        }),
+                        id: e.systemHint
+                    }
+                }),
+                c = Xe && !Le && fe(),
+                u = C ? [] : r.flatMap(e => {
+                    let t = Ht(e.gizmo.id),
+                        n = t && Xe && c;
+                    if (t && !n || !t && et) return [];
+                    let r = n ? el.Project : el.Gizmo,
+                        i = et && t && !ht(e),
+                        o = i ? gi(e) : null,
+                        s = zp(e.gizmo.display.emoji) ? e.gizmo.display.emoji : null;
+                    return [{
+                        command: e.gizmo.display.name,
+                        title: e.gizmo.display.name,
+                        type: r,
+                        disabled: x || i,
+                        tooltip: o == null ? void 0 : {
+                            primary: N.formatMessage(o)
+                        },
+                        icon: r === el.Project ? (0, $.jsx)(sr, {
+                            color: e.gizmo.display.theme ?? null,
+                            emoji: s,
+                            strict: !0
+                        }) : (0, $.jsx)(Oa, {
+                            simple: !0,
+                            isFirstParty: !!e.gizmo.tags?.includes(ge.FirstParty),
+                            src: e.gizmo.display.profile_picture_url,
+                            className: `icon`,
+                            alt: ``
+                        }),
+                        onSelect: () => {
+                            if (He.logEventWithStatsig(`Composer GPT Selected`, `chatgpt_web_composer_gpt_selected`, {
+                                    gizmo: e.gizmo.id
+                                }), r === el.Project) {
+                                if (w()) return;
+                                ws({
+                                    conversation: a,
+                                    gizmo: e,
+                                    entrySurface: `slash_command`
+                                }), S(e);
+                                return
+                            }
+                            S(e)
+                        }
+                    }]
+                }).filter(e => !o.some(t => t.command === e.command));
+            return Ur([...o.map(Zc), ...s, ...u.map(Zc)], Jp)
+        }), t[170] = Ue, t[171] = We, t[172] = Ve, t[173] = Nn, t[174] = dn, t[175] = l, t[176] = _, t[177] = i, t[178] = a, t[179] = we, t[180] = pn, t[181] = b, t[182] = x, t[183] = N, t[184] = U, t[185] = C, t[186] = Xe, t[187] = et, t[188] = Le, t[189] = S, t[190] = Pe, t[191] = z, t[192] = $n) : $n = t[192];
+        let er = $n,
+            rr;
+        t[193] !== U || t[194] !== C || t[195] !== z ? (rr = !z && !U && !C && Or(), t[193] = U, t[194] = C, t[195] = z, t[196] = rr) : rr = t[196];
+        let ir = rr,
+            or;
+        t[197] === Symbol.for(`react.memo_cache_sentinel`) ? (or = fr(), t[197] = or) : or = t[197];
+        let cr = or,
+            lr;
+        t[198] === Symbol.for(`react.memo_cache_sentinel`) ? (lr = Ii(), t[198] = lr) : lr = t[198];
+        let ur = lr,
+            dr;
+        t[199] === Symbol.for(`react.memo_cache_sentinel`) ? (dr = On() ?? 0, t[199] = dr) : dr = t[199];
+        let pr = (0, Q.useRef)(dr),
+            hr = (0, Q.useRef)(0),
+            gr;
+        t[200] === ir ? gr = t[201] : (gr = {
+            enabled: ir
+        }, t[200] = ir, t[201] = gr);
+        let {
+            data: vr,
+            isLoading: yr,
+            hasNextPage: br,
+            refetch: xr
+        } = q(gr), Sr = ir && vr != null && !br, wr, X;
+        t[202] !== xr || t[203] !== J.length || t[204] !== Sr ? (wr = () => {
+            if (!cr || J.length === 0 || !Sr) return;
+            let e = On();
+            if (e == null || e <= pr.current) return;
+            let t = Date.now();
+            t - hr.current < um || (hr.current = t, xr().then(t => {
+                t.status === `success` && (pr.current = Math.max(pr.current, e))
+            }).catch(Yp))
+        }, X = [xr, J.length, cr, Sr], t[202] = xr, t[203] = J.length, t[204] = Sr, t[205] = wr, t[206] = X) : (wr = t[205], X = t[206]), (0, Q.useEffect)(wr, X);
+        let Tr = Gi(),
+            Dr;
+        t[207] !== i || t[208] !== a || t[209] !== Tr ? (Dr = (e, t) => {
+            rc({
+                prompt: e,
+                conversation: a,
+                composerController: i,
+                referer: t,
+                trackPromptInvocation: Tr
+            })
+        }, t[207] = i, t[208] = a, t[209] = Tr, t[210] = Dr) : Dr = t[210];
+        let kr = Dr,
+            Ar;
+        bb4: {
+            if (!vr || !ir) {
+                let e;
+                t[211] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[211] = e) : e = t[211], Ar = e;
+                break bb4
+            }
+            let e;t[212] === vr.pages ? e = t[213] : (e = ee(vr.pages.map(Xp)), t[212] = vr.pages, t[213] = e),
+            Ar = e
+        }
+        let jr = Ar,
+            Mr = ir && br && J.length > 0,
+            Nr;
+        t[214] !== J || t[215] !== Mr ? (Nr = {
+            search: J,
+            enabled: Mr
+        }, t[214] = J, t[215] = Mr, t[216] = Nr) : Nr = t[216];
+        let {
+            data: Z,
+            isLoading: Pr,
+            isFetching: Fr
+        } = ar(Nr), Ir = Mr && (Pr || Fr), Lr;
+        bb5: {
+            if (!Z) {
+                let e;
+                t[217] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[217] = e) : e = t[217], Lr = e;
+                break bb5
+            }
+            let e;t[218] === Z.pages ? e = t[219] : (e = ee(Z.pages.map(Zp)), t[218] = Z.pages, t[219] = e),
+            Lr = e
+        }
+        let Rr = Lr,
+            zr;
+        t[220] === kr ? zr = t[221] : (zr = e => ({
+            id: `prompt:${e.name}`,
+            title: e.name,
+            matchText: [e.name],
+            showFor: [`at_command`],
+            searchParameters: {
+                targets: [e.name]
+            },
+            icon: ur ? Aa(e.symbol, {
+                className: `icon-sm`
+            }) : (0, $.jsx)(Bo, {
+                className: `icon-sm`
+            }),
+            onSelect: t => {
+                kr(e, t ?? `slash_command`)
+            }
+        }), t[220] = kr, t[221] = zr);
+        let Br = zr,
+            Vr;
+        bb6: {
+            if (!ir) {
+                let e;
+                t[222] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[222] = e) : e = t[222], Vr = e;
+                break bb6
+            }
+            let e;t[223] !== jr || t[224] !== Rr || t[225] !== J.length ? (e = J.length > 0 ? hm([...Rr, ...jr]) : jr, t[223] = jr, t[224] = Rr, t[225] = J.length, t[226] = e) : e = t[226];
+            let n = e,
+                r;t[227] !== n || t[228] !== J.length ? (r = J.length > 0 ? n : n.slice(0, lm), t[227] = n, t[228] = J.length, t[229] = r) : r = t[229];
+            let i = r,
+                a;t[230] !== i || t[231] !== Br ? (a = i.map(Br), t[230] = i, t[231] = Br, t[232] = a) : a = t[232],
+            Vr = a
+        }
+        let Hr = Vr,
+            Wr = yr || Ir,
+            Gr = !Ie && z && !Te,
+            Kr;
+        bb7: {
+            if (!z) {
+                Kr = void 0;
+                break bb7
+            }
+            let e;t[233] !== kt || t[234] !== N || t[235] !== Tt || t[236] !== Gr ? (e = Gr ? {
+                ...kt,
+                command: `upload-photos`,
+                aliases: [`photo`, `photos`, `image`, `images`],
+                title: Tt ? kt.title : N.formatMessage(Er.photosOnly)
+            } : kt, t[233] = kt, t[234] = N, t[235] = Tt, t[236] = Gr, t[237] = e) : e = t[237];
+            let n = e,
+                r;t[238] === n ? r = t[239] : (r = Zc(n), t[238] = n, t[239] = r),
+            Kr = r
+        }
+        let qr = Kr,
+            Jr;
+        bb8: {
+            if (!z || !St) {
+                Jr = void 0;
+                break bb8
+            }
+            let e;t[240] !== bt || t[241] !== N || t[242] !== yt || t[243] !== xt ? (e = Zc({
+                command: `camera`,
+                aliases: [`video`],
+                title: N.formatMessage(kc),
+                icon: bt,
+                disabled: yt,
+                onSelect: xt,
+                shouldRestoreComposerFocusAfterSelect: !1
+            }), t[240] = bt, t[241] = N, t[242] = yt, t[243] = xt, t[244] = e) : e = t[244],
+            Jr = e
+        }
+        let Yr = Jr,
+            Xr;
+        t[245] !== i || t[246] !== N || t[247] !== u ? (Xr = () => Fl({
+            composerController: i,
+            intl: N,
+            isFileUploadEnabled: u
+        }), t[245] = i, t[246] = N, t[247] = u, t[248] = Xr) : Xr = t[248];
+        let Qr = M(Xr),
+            $r;
+        t[249] !== N || t[250] !== Gr ? ($r = Gr ? Zc(Ku(N)) : void 0, t[249] = N, t[250] = Gr, t[251] = $r) : $r = t[251];
+        let ei = $r,
+            ti;
+        t[252] === cn ? ti = t[253] : (ti = cn.find(Qp), t[252] = cn, t[253] = ti);
+        let ri = ti;
+        f?.id;
+        let ii;
+        t[254] !== a || t[255] !== f?.id || t[256] !== m || t[257] !== Vt ? (ii = Ge(() => Vt ? Sc({
+            conversation: a,
+            modelsData: Hn(a),
+            currentModelId: f?.id,
+            selectModelId: m
+        }) : []), t[254] = a, t[255] = f?.id, t[256] = m, t[257] = Vt, t[258] = ii) : ii = t[258];
+        let ai = ii,
+            si;
+        t[259] !== Wr || t[260] !== Hr ? (si = {
+            slashCommands: Hr,
+            isLoading: Wr
+        }, t[259] = Wr, t[260] = Hr, t[261] = si) : si = t[261];
+        let ci;
+        t[262] === cn ? ci = t[263] : (ci = cn ?? [], t[262] = cn, t[263] = ci);
+        let li;
+        return t[264] !== ze || t[265] !== i || t[266] !== pe || t[267] !== a || t[268] !== ue || t[269] !== ne || t[270] !== de || t[271] !== Ln || t[272] !== Rn || t[273] !== ei || t[274] !== er || t[275] !== Qn || t[276] !== Mt || t[277] !== k || t[278] !== ai || t[279] !== Yt || t[280] !== it || t[281] !== Ke || t[282] !== zn || t[283] !== C || t[284] !== Xe || t[285] !== Te || t[286] !== Un || t[287] !== Wn || t[288] !== Le || t[289] !== zt || t[290] !== o || t[291] !== Vn || t[292] !== Bn || t[293] !== Lt || t[294] !== Gt || t[295] !== Kn || t[296] !== jn || t[297] !== Qr || t[298] !== Yr || t[299] !== qr || t[300] !== Xn || t[301] !== S || t[302] !== qn || t[303] !== Ft || t[304] !== s || t[305] !== si || t[306] !== ci || t[307] !== ri ? (li = (0, $.jsx)(np, {
+            gptsAndAppsSlashCommands$: er,
+            pluginSuggestionRows: jn,
+            laneModelSlashCommands$: zt,
+            intelligenceSlashCommands$: ai,
+            modelVersionSlashCommands$: Gt,
+            internalModelSlashCommands$: Yt,
+            modelSlashCommands$: Lt,
+            hazelnutSlashCommands: Mt,
+            onSearchQueryChange: Qn,
+            templatedPrompts: si,
+            fileLibraryBrowseSuggestions: Ln,
+            fileLibraryPathSuggestions: Rn,
+            isFileLibrarySearchPending: zn,
+            librarySearchKey: Bn,
+            libraryFolderPathSuggestions: Vn,
+            referenceImageSuggestions: Xn,
+            isLibraryFolderUiEnabled: Un,
+            isMultiwordLibraryMentionParsingEnabled: Wn,
+            slashCommands: Ft,
+            plusCameraSuggestion: Yr,
+            plusUploadSuggestion: qr,
+            plusAudioAttachmentSuggestion: Qr,
+            fileUploadUpsell: ei,
+            openFileLibraryModal: Kn,
+            showFileLibraryEntrypoint: qn,
+            systemHints: ci,
+            composerController: i,
+            canAccessFileLibrary: ze,
+            conversation: a,
+            layoutMode: o,
+            systemHintMenuSide: s,
+            isHomeNewChatComposer: Xe,
+            isCustomAgentHintActive: Ke,
+            isFirstPartyProject: C,
+            isConversationViewComposer: it,
+            isTemporaryChat: Le,
+            isIntegratedVoiceModeActive: Te,
+            inputState: k,
+            disableReason: ne,
+            disableAdvancedVoiceMode: ue,
+            disableVoiceButton: de,
+            thinkingSlashCommand: ri,
+            setSelectedGizmoTag: S,
+            composerToolAvailability: pe
+        }), t[264] = ze, t[265] = i, t[266] = pe, t[267] = a, t[268] = ue, t[269] = ne, t[270] = de, t[271] = Ln, t[272] = Rn, t[273] = ei, t[274] = er, t[275] = Qn, t[276] = Mt, t[277] = k, t[278] = ai, t[279] = Yt, t[280] = it, t[281] = Ke, t[282] = zn, t[283] = C, t[284] = Xe, t[285] = Te, t[286] = Un, t[287] = Wn, t[288] = Le, t[289] = zt, t[290] = o, t[291] = Vn, t[292] = Bn, t[293] = Lt, t[294] = Gt, t[295] = Kn, t[296] = jn, t[297] = Qr, t[298] = Yr, t[299] = qr, t[300] = Xn, t[301] = S, t[302] = qn, t[303] = Ft, t[304] = s, t[305] = si, t[306] = ci, t[307] = ri, t[308] = li) : li = t[308], li
+    }), ym = () => {
+        "use forget";
+        let e = (0, $p.c)(1),
+            t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsxs)(`div`, {
+            "aria-hidden": `true`,
+            className: `skeleton group relative mx-1.5 flex min-h-(--menu-item-height) w-auto items-center gap-1.5 rounded-[10px] px-2.5 py-1.5 [--skeleton-opacity:0.75]`,
+            children: [(0, $.jsx)(`div`, {
+                className: `skeleton-child icon shrink-0 rounded-md`
+            }), (0, $.jsx)(`div`, {
+                className: `skeleton-child h-4 w-40 max-w-[70%] rounded-md`
+            })]
+        }), e[0] = t) : t = e[0], t
+    }
+}));
+export {
+    Qf as n, bm as r, vm as t
+};
 //# sourceMappingURL=30f82755-mp1tt8op1aziln0u.js.map
