@@ -1,2 +1,47 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{jAt as t,kAt as n}from"./conversation-small-l6tnsr2xfn2d55kk.js";function r(e,t,n){return t===!0||e!==!1||n===!0}function i(e,t){if(!(typeof e!=`string`||e.trim().length===0))return t?n:e}function a(e,t){let n=e.extraParams;if(e.category!==`ledger_detail_sidebar`||n?.detail_type!==`transaction`)return e;let a=n.sensitive_values_hidden===!0;if(!r(n.sensitive_values_hidden,t,e.widgetStateOverride?.sensitive_values_hidden))return e;let o=i(n.amount_label,!0),s=i(n.account_name,!0),c=a&&n.amount_value==null&&n.amount_label===o&&n.account_name===s?n:{...n,sensitive_values_hidden:!0,amount_value:null,amount_label:o,account_name:s},l=e.widgetStateOverride?.sensitive_values_hidden===!0?e.widgetStateOverride:{...e.widgetStateOverride,sensitive_values_hidden:!0};return c===n&&l===e.widgetStateOverride?e:{...e,extraParams:c,widgetStateOverride:l}}var o=e((()=>{t()}));export{a as i,o as n,r,i as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    jAt as t,
+    kAt as n
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+
+function r(e, t, n) {
+    return t === !0 || e !== !1 || n === !0
+}
+
+function i(e, t) {
+    if (!(typeof e != `string` || e.trim().length === 0)) return t ? n : e
+}
+
+function a(e, t) {
+    let n = e.extraParams;
+    if (e.category !== `ledger_detail_sidebar` || n?.detail_type !== `transaction`) return e;
+    let a = n.sensitive_values_hidden === !0;
+    if (!r(n.sensitive_values_hidden, t, e.widgetStateOverride?.sensitive_values_hidden)) return e;
+    let o = i(n.amount_label, !0),
+        s = i(n.account_name, !0),
+        c = a && n.amount_value == null && n.amount_label === o && n.account_name === s ? n : {
+            ...n,
+            sensitive_values_hidden: !0,
+            amount_value: null,
+            amount_label: o,
+            account_name: s
+        },
+        l = e.widgetStateOverride?.sensitive_values_hidden === !0 ? e.widgetStateOverride : {
+            ...e.widgetStateOverride,
+            sensitive_values_hidden: !0
+        };
+    return c === n && l === e.widgetStateOverride ? e : {
+        ...e,
+        extraParams: c,
+        widgetStateOverride: l
+    }
+}
+var o = e((() => {
+    t()
+}));
+export {
+    a as i, o as n, r, i as t
+};
 //# sourceMappingURL=a81eda00-k7iwfu3y7mfi86il.js.map

@@ -1,2 +1,1265 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{A5 as n,CS as r,Dg as i,Eg as a,F_ as o,G5 as s,I1 as c,Ik as l,JT as u,K5 as d,M1 as f,Og as p,R_ as m,Tg as h,X0 as g,Xy as _,Yy as v,Z0 as y,_N as b,aD as x,aq as S,dD as C,dE as w,e2 as T,fV as E,g_ as ee,hV as te,iq as D,jk as O,k5 as k,kg as A,mJ as j,m_ as M,oq as N,pE as P,pV as F,p_ as ne,pq as I,qT as L,t_ as R,vJ as z,vN as re,xS as B,xV as ie}from"./4813494d-ed29bs6yiwucn7st.js";import{$ as V,Bn as H,Nn as U,Pt as ae,Rn as W,Vn as G,wn as K,zn as oe}from"./2340486e-oc6d2eodbcrmxur3.js";import{$At as q,$mn as J,A0t as Y,Apn as se,Ba as X,Dpn as Z,Epn as ce,F0t as le,Hjt as ue,I0t as de,IHn as fe,Jm as pe,LHn as me,M0t as he,MAt as ge,N0t as _e,NAt as ve,Npn as ye,Opn as be,P0t as xe,Qmn as Se,RHn as Ce,SFt as we,Thn as Te,Tpn as Ee,Ujt as De,Vjt as Oe,Wjt as ke,Xmn as Ae,Zm as je,Zmn as Me,_hn as Ne,dX as Pe,ghn as Fe,j0t as Ie,jpn as Le,k0t as Re,rjt as ze,uX as Be,vhn as Ve,whn as He,xFt as Ue,yhn as We,za as Ge,zpn as Ke}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{$x as qe,Fb as Je,Gh as Ye,Kh as Xe,Nx as Ze,Pb as Qe,Px as $e,Qx as et,Rx as tt,Xx as nt,Zx as rt,zx as it}from"./30901919-om7b3qf5hp4j9x4l.js";import{cS as at,dS as ot,hS as st,mS as ct,uS as lt}from"./c2675c8c-fpv9s4kvd412dyap.js";import{Bp as ut,Vp as dt}from"./8b34dbc2-j8rcexxiltkm8ucr.js";import{a as ft,i as pt,l as mt,n as ht,o as gt,s as _t,t as vt}from"./9e958008-pc2ks4d6ed7tc5z5.js";import{n as yt,r as bt,t as xt}from"./84bcef95-gx4v09sr4r263psk.js";import{n as St,t as Ct}from"./dee3edb9-h41f8bh55h3xqjpl.js";var wt,Tt=e((()=>{z(),wt=j({name:`square-and-pencil-light-16`,canvas:{width:16,height:16,viewBox:`0 0 16 16`,frame:{x:0,y:0,width:16,height:16},inkBounds:{x:1.807861,y:1.746094,width:12.443115,height:12.445313},visualBounds:{x:1.807861,y:1.746094,width:12.443115,height:12.445313}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:1.807861,y:1.746094,width:12.443115,height:12.445313},center:{x:8.029419,y:7.968751},insets:{top:1.746094,right:1.749024,bottom:1.808593,left:1.807861},anchors:{frame:{x:8,y:8},ink:{x:8.029419,y:7.968751},foreground:{x:8.029419,y:7.968751}}},capabilities:[`icon`],body:`<path d="M6.33325 1.80763C6.62314 1.80763 6.85855 2.04315 6.85864 2.33302C6.85864 2.62297 6.6232 2.85841 6.33325 2.85841H4.66626C3.66786 2.85859 2.85891 3.66765 2.85864 4.66603V11.333C2.85864 12.3316 3.66769 13.1414 4.66626 13.1416H11.3333C12.332 13.1416 13.1418 12.3317 13.1418 11.333V9.66603C13.1421 9.37642 13.3766 9.14179 13.6663 9.14161C13.956 9.14161 14.1914 9.37631 14.1917 9.66603V11.333C14.1917 12.9116 12.9119 14.1914 11.3333 14.1914H4.66626C3.0878 14.1912 1.80786 12.9115 1.80786 11.333V4.66603C1.80813 3.08775 3.08796 1.80781 4.66626 1.80763H6.33325Z" fill="currentColor"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.842 2.32228C11.6259 1.55049 12.8863 1.55435 13.6643 2.33204C14.4442 3.11205 14.4469 4.37706 13.6702 5.16017L9.41626 9.4463C9.05652 9.80879 8.59956 10.0601 8.10083 10.1699L6.19263 10.5899C5.7111 10.6958 5.28165 10.2666 5.38794 9.78517L5.80884 7.88185C5.9196 7.38036 6.17342 6.92096 6.53931 6.56056L10.842 2.32228ZM12.9221 3.07521C12.552 2.7051 11.9524 2.70322 11.5793 3.07033L7.27563 7.30861C7.05429 7.52663 6.90125 7.80504 6.83423 8.10841L6.54028 9.43849L7.87524 9.14454C8.17687 9.07807 8.45355 8.92625 8.67114 8.70704L12.9241 4.41993C13.2934 4.04741 13.2928 3.44631 12.9221 3.07521Z" fill="currentColor"/>`})})),Et,Dt=e((()=>{z(),Et=j({name:`square-and-pencil-light-20`,canvas:{width:20,height:20,viewBox:`0 0 20 20`,frame:{x:0,y:0,width:20,height:20},inkBounds:{x:2.501709,y:2.398926,width:15.095703,height:15.099365},visualBounds:{x:2.501709,y:2.398926,width:15.095703,height:15.099365}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:2.501709,y:2.398926,width:15.095703,height:15.099365},center:{x:10.049561,y:9.948609},insets:{top:2.398926,right:2.402588,bottom:2.501709,left:2.501709},anchors:{frame:{x:10,y:10},ink:{x:10.049561,y:9.948609},foreground:{x:10.049561,y:9.948609}}},capabilities:[`icon`],body:`<path d="M8.16675 2.50127C8.53391 2.50127 8.83161 2.7992 8.83179 3.16631C8.83179 3.53358 8.53402 3.83135 8.16675 3.83135H5.83374C4.72836 3.83135 3.83197 4.72797 3.83179 5.8333V14.1663C3.83179 15.2718 4.72825 16.1683 5.83374 16.1683H14.1667C15.2722 16.1683 16.1687 15.2718 16.1687 14.1663V11.8333C16.1689 11.4662 16.4666 11.1683 16.8337 11.1683C17.2007 11.1684 17.4986 11.4663 17.4988 11.8333V14.1663C17.4988 16.0063 16.0068 17.4983 14.1667 17.4983H5.83374C3.99371 17.4983 2.50171 16.0063 2.50171 14.1663V5.8333C2.50189 3.99343 3.99382 2.50127 5.83374 2.50127H8.16675Z" fill="currentColor"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4265 3.10381C14.3857 2.15908 15.9276 2.16466 16.8796 3.11651C17.8339 4.07106 17.8372 5.61827 16.8865 6.57647L11.7244 11.7786C11.3005 12.2058 10.7622 12.5027 10.1746 12.6321L7.78784 13.1565C7.20661 13.2842 6.6889 12.766 6.81714 12.1849L7.34253 9.80498C7.47294 9.21426 7.77197 8.67391 8.20288 8.24932L13.4265 3.10381ZM15.9392 4.05694C15.5038 3.62172 14.7988 3.61907 14.3601 4.05108L9.13647 9.19659C8.88861 9.44077 8.71644 9.75138 8.64136 10.0911L8.28979 11.6849L9.88843 11.3333C10.2265 11.2588 10.5362 11.0878 10.78 10.8421L15.9421 5.63897C16.3769 5.20075 16.3756 4.49352 15.9392 4.05694Z" fill="currentColor"/>`})})),Ot,kt=e((()=>{He(),We(),Ne(),he(),Y(),Tt(),Dt(),Se(),Ae(),Ot=Te({id:`project-directory`,icons:{compose:{normal:Et,small:wt},settings:{normal:Re,small:Ie},share:{normal:Fe,small:Ve},trash:{normal:Me,small:J}}})})),At,jt,Mt,Nt=e((()=>{At=`VmdjuW_projectDirectoryGridColumns`,jt=`VmdjuW_projectDirectoryGridColumnsWithNewChat`,Mt={projectDirectoryGridColumns:At,projectDirectoryGridColumnsWithNewChat:jt}}));function Pt(e){"use forget";let t=(0,Q.c)(92),r;t[0]===e?r=t[1]:(r=e===void 0?{}:e,t[0]=e,t[1]=r);let{title:i,toolbar:a,headerActions:o,searchLabel:c,searchClearLabel:l,searchPlaceholder:u,belowHeader:d,useOuterScrollRoot:p,alignWithLibrarySelectionGutter:m}=r,h=p!==void 0&&p,g=m!==void 0&&m,_=oe(),v;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(v=f(),t[2]=v):v=t[2];let y=v?.normalizedAccountUserId??null,b=n(Ft),x;t[3]===b?x=t[4]:(x={hiddenProjectId:b},t[3]=b,t[4]=x);let{projects:S,data:C,isLoading:T,isRequestInProgress:E,isPlaceholderData:te,isError:D,refetch:k,hasNextPage:A,isFetchingNextPage:j,fetchNextPage:N}=ee(x),{pinnedProjectIds:P}=M(),[F,ne]=(0,on.useState)(`all`),[I,L]=(0,on.useState)(``),R=st(!0),z=(0,on.useDeferredValue)(I),[B,ie]=(0,on.useState)(!1),V;t[5]===k?V=t[6]:(V=function(){k()},t[5]=k,t[6]=V);let H=re(V),ae=D||C===void 0&&!T&&B,W=B&&E&&te,G=D||B&&C===void 0||W,K=C!=null&&!T&&!W,q;t[7]!==ae||t[8]!==K?(q={isError:ae,isReady:K},t[7]=ae,t[8]=K,t[9]=q):q=t[9],ce(q);let J=C===void 0&&!T&&!B,Y;if(t[10]!==z||t[11]!==P||t[12]!==S||t[13]!==F){let e=z.trim().toLowerCase();Y=rn(S.filter(t=>F!==`all`&&Qt(t,y)!==F?!1:e.length===0||t.gizmo.gizmo.display.name.toLowerCase().includes(e)),P),t[10]=z,t[11]=P,t[12]=S,t[13]=F,t[14]=Y}else Y=t[14];let se=Y,X;t[15]===se.length?X=t[16]:(X=se.length>0&&O(),t[15]=se.length,t[16]=X);let Z=X,le,ue;t[17]!==H||t[18]!==J?(le=()=>{J&&(0,on.startTransition)(()=>{ie(!0),H()})},ue=[J,H],t[17]=H,t[18]=J,t[19]=le,t[20]=ue):(le=t[19],ue=t[20]),(0,on.useEffect)(le,ue);let de=h?`min-h-full`:`h-full overflow-hidden`,fe;t[21]===de?fe=t[22]:(fe=s(`flex w-full flex-col`,de),t[21]=de,t[22]=fe);let pe;t[23]===i?pe=t[24]:(pe=i??(0,$.jsx)(U,{...w.projectsPageTitle}),t[23]=i,t[24]=pe);let me;t[25]===Symbol.for(`react.memo_cache_sentinel`)?(me=(0,$.jsx)(ut,{}),t[25]=me):me=t[25];let he;t[26]===o?he=t[27]:(he=o??(0,$.jsx)(It,{}),t[26]=o,t[27]=he);let ge;t[28]!==pe||t[29]!==he?(ge=(0,$.jsx)(`div`,{className:`md:hidden`,children:(0,$.jsx)(Ct,{title:pe,navigationButton:me,rightContent:he})}),t[28]=pe,t[29]=he,t[30]=ge):ge=t[30];let _e=!h||void 0,ve=h?void 0:`project-directory-scroll-root`,ye=!h&&`overflow-auto`,be;t[31]===ye?be=t[32]:(be=s(ye),t[31]=ye,t[32]=be);let xe=g?R:void 0,Se;t[33]===Symbol.for(`react.memo_cache_sentinel`)?(Se={title:`text-heading-app box-trim-0.5 font-medium max-md:hidden`,controls:`max-md:w-full`,search:`max-md:w-full max-md:max-w-[400px] md:w-60`,headerActions:`max-md:hidden`},t[33]=Se):Se=t[33];let Ce;t[34]===i?Ce=t[35]:(Ce=i??(0,$.jsx)(U,{...w.projectsPageTitle}),t[34]=i,t[35]=Ce);let we;t[36]!==_||t[37]!==c?(we=c??_.formatMessage(w.projectsPageSearchLabel),t[36]=_,t[37]=c,t[38]=we):we=t[38];let Te;t[39]!==_||t[40]!==l?(Te=l??_.formatMessage(w.projectsPageSearchClearLabel),t[39]=_,t[40]=l,t[41]=Te):Te=t[41];let Ee,De;t[42]===Symbol.for(`react.memo_cache_sentinel`)?(Ee=e=>L(e.target.value),De=()=>L(``),t[42]=Ee,t[43]=De):(Ee=t[42],De=t[43]);let Oe;t[44]!==_||t[45]!==u?(Oe=u??_.formatMessage(w.projectsPageSearchPlaceholder),t[44]=_,t[45]=u,t[46]=Oe):Oe=t[46];let ke;t[47]!==I||t[48]!==we||t[49]!==Te||t[50]!==Oe?(ke=(0,$.jsx)(lt,{id:`projects-page-search`,label:we,clearLabel:Te,value:I,onChange:Ee,onClear:De,placeholder:Oe}),t[47]=I,t[48]=we,t[49]=Te,t[50]=Oe,t[51]=ke):ke=t[51];let Ae;t[52]===o?Ae=t[53]:(Ae=o??(0,$.jsx)(It,{className:`inline-flex w-auto`}),t[52]=o,t[53]=Ae);let je;t[54]!==Ce||t[55]!==ke||t[56]!==Ae?(je=(0,$.jsx)(at,{className:`max-md:mt-0 max-md:min-h-0`,classNames:Se,title:Ce,searchInput:ke,headerActions:Ae}),t[54]=Ce,t[55]=ke,t[56]=Ae,t[57]=je):je=t[57];let Me;t[58]!==d||t[59]!==je?(Me=(0,$.jsxs)($.Fragment,{children:[je,d]}),t[58]=d,t[59]=je,t[60]=Me):Me=t[60];let Ne;t[61]!==F||t[62]!==a?(Ne=a??(0,$.jsx)(Rt,{scope:F,onScopeChange:ne}),t[61]=F,t[62]=a,t[63]=Ne):Ne=t[63];let Pe;t[64]===Symbol.for(`react.memo_cache_sentinel`)?(Pe={...xt,toolbarShell:`bg-token-main-surface-primary`},t[64]=Pe):Pe=t[64];let Fe;t[65]!==N||t[66]!==A||t[67]!==j||t[68]!==T||t[69]!==E||t[70]!==P||t[71]!==S.length||t[72]!==H||t[73]!==G||t[74]!==Z||t[75]!==se?(Fe=G?(0,$.jsx)(Ge,{isRetrying:E,refetch:H}):T&&S.length===0?(0,$.jsx)(Vt,{}):se.length===0&&!A?(0,$.jsx)(Ut,{filtered:S.length>0}):(0,$.jsxs)($.Fragment,{children:[(0,$.jsxs)(Bt,{children:[(0,$.jsx)(zt,{shouldShowNewChatHoverButton:Z}),(0,$.jsxs)(ft,{children:[se.map(e=>(0,$.jsx)(Gt,{isPinned:P.has(e.gizmo.gizmo.id),project:e,shouldShowNewChatHoverButton:Z},e.gizmo.gizmo.id)),j?Array.from({length:4},(e,t)=>(0,$.jsx)(Wt,{className:`group skeleton [--skeleton-opacity:0.75]`,shouldShowNewChatHoverButton:Z},`project-directory-loading-more-row-${t}`)):null]})]}),j?null:(0,$.jsx)(Be,{isFetchingNextPage:!1,hasNextPage:!!A,fetchNextPage:()=>{N()},bgColor:`bg-transparent`})]}),t[65]=N,t[66]=A,t[67]=j,t[68]=T,t[69]=E,t[70]=P,t[71]=S.length,t[72]=H,t[73]=G,t[74]=Z,t[75]=se,t[76]=Fe):Fe=t[76];let Ie;t[77]!==g||t[78]!==xe||t[79]!==Me||t[80]!==Ne||t[81]!==Fe?(Ie=(0,$.jsx)(yt,{disableMultiselectMobile:g,multiselectEnabled$:xe,header:Me,toolbar:Ne,classNames:Pe,children:Fe}),t[77]=g,t[78]=xe,t[79]=Me,t[80]=Ne,t[81]=Fe,t[82]=Ie):Ie=t[82];let Le;t[83]!==_e||t[84]!==ve||t[85]!==be||t[86]!==Ie?(Le=(0,$.jsx)(`div`,{"data-scroll-root":_e,"data-testid":ve,className:be,children:Ie}),t[83]=_e,t[84]=ve,t[85]=be,t[86]=Ie,t[87]=Le):Le=t[87];let Re;return t[88]!==fe||t[89]!==ge||t[90]!==Le?(Re=(0,$.jsxs)(`div`,{className:fe,children:[ge,Le]}),t[88]=fe,t[89]=ge,t[90]=Le,t[91]=Re):Re=t[91],Re}function Ft(){}function It(e){"use forget";let t=(0,Q.c)(8),{className:n}=e,r=ae(),i=(0,on.useRef)(null),a;t[0]===r?a=t[1]:(a={onSuccess:e=>{e&&r(`/g/${e}/project`)}},t[0]=r,t[1]=a);let o;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,$.jsx)(U,{...w.projectsPageNewButton}),t[2]=o):o=t[2];let s;t[3]===n?s=t[4]:(s=(0,$.jsx)(Lt,{buttonRef:i,className:n,label:o}),t[3]=n,t[4]=s);let c;return t[5]!==a||t[6]!==s?(c=(0,$.jsx)(Ue,{for:Z,withProps:a,children:s}),t[5]=a,t[6]=s,t[7]=c):c=t[7],c}function Lt(e){"use forget";let t=(0,Q.c)(38),{buttonRef:n,onClick:r,iconOnly:i,className:o,label:c}=e,l=i!==void 0&&i,u=oe(),{canCreate:d}=a(),f;t[0]!==d||t[1]!==r?(f=()=>{d&&r?.()},t[0]=d,t[1]=r,t[2]=f):f=t[2];let p=f,m;t[3]===d?m=t[4]:(m=()=>{d&&Z.prefetch()},t[3]=d,t[4]=m);let h=m;if(l){let e;t[5]===u?e=t[6]:(e=u.formatMessage(w.newProjectButton),t[5]=u,t[6]=e);let r=d?`focus-visible:ring-token-ring text-token-text-primary hover:bg-token-bg-tertiary focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none active:opacity-50`:`text-token-text-tertiary cursor-not-allowed opacity-50`,i;t[7]===r?i=t[8]:(i=s(`touch:h-10 touch:w-10 inline-flex h-9 w-9 items-center justify-center rounded-md focus:outline-hidden`,r),t[7]=r,t[8]=i);let a=!d,o;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,$.jsx)(Xe,{className:`icon-lg`}),t[9]=o):o=t[9];let c;t[10]!==n||t[11]!==p||t[12]!==h||t[13]!==e||t[14]!==i||t[15]!==a?(c=(0,$.jsx)(`button`,{type:`button`,"aria-label":e,className:i,onClick:p,ref:n,onFocus:h,onPointerEnter:h,disabled:a,children:o}),t[10]=n,t[11]=p,t[12]=h,t[13]=e,t[14]=i,t[15]=a,t[16]=c):c=t[16];let l=c;if(d)return l;let f;t[17]===u?f=t[18]:(f=u.formatMessage(w.createProjectDisabledByAdmin),t[17]=u,t[18]=f);let m;return t[19]!==l||t[20]!==f?(m=(0,$.jsx)(v,{label:f,children:l}),t[19]=l,t[20]=f,t[21]=m):m=t[21],m}let g;t[22]===o?g=t[23]:(g=s(`inline-flex w-full justify-center md:w-auto`,o),t[22]=o,t[23]=g);let _=!d,y;t[24]===c?y=t[25]:(y=c??(0,$.jsx)(U,{...w.newProjectButton}),t[24]=c,t[25]=y);let b;t[26]!==n||t[27]!==p||t[28]!==h||t[29]!==g||t[30]!==_||t[31]!==y?(b=(0,$.jsx)(L,{className:g,color:`primary`,onClick:p,ref:n,onIntent:h,visuallyDisabled:_,children:y}),t[26]=n,t[27]=p,t[28]=h,t[29]=g,t[30]=_,t[31]=y,t[32]=b):b=t[32];let x=b;if(d)return x;let S;t[33]===u?S=t[34]:(S=u.formatMessage(w.createProjectDisabledByAdmin),t[33]=u,t[34]=S);let C;return t[35]!==x||t[36]!==S?(C=(0,$.jsx)(v,{label:S,children:x}),t[35]=x,t[36]=S,t[37]=C):C=t[37],C}function Rt(e){"use forget";let t=(0,Q.c)(22),{scope:n,onScopeChange:r}=e,i=n===`all`,a;t[0]===r?a=t[1]:(a=()=>r(`all`),t[0]=r,t[1]=a);let o;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,$.jsx)(U,{...w.projectsPageAllTab}),t[2]=o):o=t[2];let s;t[3]!==i||t[4]!==a?(s=(0,$.jsx)(pe,{active:i,onClick:a,children:o}),t[3]=i,t[4]=a,t[5]=s):s=t[5];let c=n===`owned`,l;t[6]===r?l=t[7]:(l=()=>r(`owned`),t[6]=r,t[7]=l);let u;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,$.jsx)(U,{...w.projectsPageCreatedByYouTab}),t[8]=u):u=t[8];let d;t[9]!==c||t[10]!==l?(d=(0,$.jsx)(pe,{active:c,onClick:l,children:u}),t[9]=c,t[10]=l,t[11]=d):d=t[11];let f=n===`shared`,p;t[12]===r?p=t[13]:(p=()=>r(`shared`),t[12]=r,t[13]=p);let m;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,$.jsx)(U,{...w.projectsPageSharedWithYouTab}),t[14]=m):m=t[14];let h;t[15]!==p||t[16]!==f?(h=(0,$.jsx)(pe,{active:f,onClick:p,children:m}),t[15]=p,t[16]=f,t[17]=h):h=t[17];let g;return t[18]!==h||t[19]!==s||t[20]!==d?(g=(0,$.jsx)(`div`,{className:`flex min-h-[60px] w-full items-center py-2`,children:(0,$.jsxs)(`div`,{className:`no-scrollbar flex min-w-0 flex-1 flex-nowrap items-center gap-0 overflow-x-auto sm:flex-wrap sm:overflow-visible`,children:[s,d,h]})}),t[18]=h,t[19]=s,t[20]=d,t[21]=g):g=t[21],g}function zt(e){"use forget";let t=(0,Q.c)(7),{shouldShowNewChatHoverButton:n}=e,r=n!==void 0&&n&&Mt.projectDirectoryGridColumnsWithNewChat,i;t[0]===r?i=t[1]:(i=s(`grid`,Mt.projectDirectoryGridColumns,r),t[0]=r,t[1]=i);let a;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,$.jsx)(ht,{role:`columnheader`,children:(0,$.jsx)(U,{...w.projectsPageNameColumn})}),t[2]=a):a=t[2];let o;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,$.jsx)(ht,{role:`columnheader`,className:`hidden text-start sm:block`,children:(0,$.jsx)(U,{...w.projectsPageModifiedColumn})}),t[3]=o):o=t[3];let c;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,$.jsx)(ht,{role:`columnheader`,className:`justify-self-end`,children:(0,$.jsx)(`span`,{className:`sr-only`,children:(0,$.jsx)(U,{...w.projectsPageActionsColumn})})}),t[4]=c):c=t[4];let l;return t[5]===i?l=t[6]:(l=(0,$.jsxs)(pt,{role:`row`,className:i,children:[a,o,c]}),t[5]=i,t[6]=l),l}function Bt(e){"use forget";let t=(0,Q.c)(5),{children:n}=e,r=oe(),i;t[0]===r?i=t[1]:(i=r.formatMessage(w.projectsPageTitle),t[0]=r,t[1]=i);let a;return t[2]!==n||t[3]!==i?(a=(0,$.jsx)(`div`,{role:`grid`,"aria-label":i,children:n}),t[2]=n,t[3]=i,t[4]=a):a=t[4],a}function Vt(){"use forget";let e=(0,Q.c)(2),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(zt,{}),e[0]=t):t=e[0];let n;return e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,$.jsxs)(Bt,{children:[t,(0,$.jsx)(ft,{className:`group skeleton [--skeleton-opacity:0.75]`,children:Array.from({length:8},Ht)})]}),e[1]=n):n=e[1],n}function Ht(e,t){return(0,$.jsx)(Wt,{},`project-directory-skeleton-row-${t}`)}function Ut(e){"use forget";let t=(0,Q.c)(8),{filtered:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,$.jsx)(`div`,{className:`border-token-border-light bg-token-bg-secondary mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border`,children:(0,$.jsx)(se,{color:null,strict:!0,size:`lg`})}),t[0]=r):r=t[0];let i=n?w.projectsPageNoResults:w.projectsPageEmptyState,a;t[1]===i?a=t[2]:(a=(0,$.jsx)(`div`,{className:`text-token-text-primary text-base font-medium`,children:(0,$.jsx)(U,{...i})}),t[1]=i,t[2]=a);let o;t[3]===n?o=t[4]:(o=n?(0,$.jsx)(`div`,{className:`text-token-text-secondary mt-2 text-sm`,children:(0,$.jsx)(U,{...w.projectsPageNoResultsSubtitle})}):null,t[3]=n,t[4]=o);let s;return t[5]!==a||t[6]!==o?(s=(0,$.jsxs)(`div`,{className:`px-0 py-16 text-center md:px-6`,children:[r,a,o]}),t[5]=a,t[6]=o,t[7]=s):s=t[7],s}function Wt(e){"use forget";let t=(0,Q.c)(11),n;t[0]===e?n=t[1]:(n=e===void 0?{}:e,t[0]=e,t[1]=n);let{className:r,shouldShowNewChatHoverButton:i}=n,a=i!==void 0&&i&&Mt.projectDirectoryGridColumnsWithNewChat,o;t[2]!==r||t[3]!==a?(o=s(`grid min-h-15 items-center gap-4 overflow-visible py-2.5 ps-0 pe-2`,Mt.projectDirectoryGridColumns,a,r),t[2]=r,t[3]=a,t[4]=o):o=t[4];let c;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,$.jsx)(`div`,{className:`skeleton-child size-8 shrink-0 rounded-[8px]`}),t[5]=c):c=t[5];let l;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,$.jsxs)(`div`,{className:`flex min-w-0 items-center gap-4 text-start`,children:[c,(0,$.jsxs)(`div`,{className:`flex min-w-0 flex-col gap-1 sm:flex-row sm:items-center sm:gap-2`,children:[(0,$.jsx)(`div`,{className:`skeleton-child h-[14px] w-[160px] max-w-full rounded-md`}),(0,$.jsx)(`div`,{className:`skeleton-child h-[12px] w-14 rounded-md sm:hidden`})]})]}),t[6]=l):l=t[6];let u;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,$.jsx)(`div`,{className:`hidden justify-start sm:flex`,children:(0,$.jsx)(`div`,{className:`skeleton-child h-[14px] w-16 rounded-md`})}),t[7]=u):u=t[7];let d;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,$.jsx)(`div`,{className:`-me-2 flex justify-end`,"aria-hidden":`true`,children:(0,$.jsx)(`div`,{className:`skeleton-child h-9 w-9 rounded-[6px]`})}),t[8]=d):d=t[8];let f;return t[9]===o?f=t[10]:(f=(0,$.jsxs)(`div`,{className:o,children:[l,u,d]}),t[9]=o,t[10]=f),f}function Gt(e){"use forget";let t=(0,Q.c)(120),{project:r,isPinned:i,shouldShowNewChatHoverButton:a}=e,o=oe(),c=ae(),[l,u]=(0,on.useState)(!1),d=n(I),f=n(D),p=n(N),h=d&&p&&!f,g=r.gizmo.gizmo.display.name,_=r.gizmo.gizmo.display.emoji,v=_!=null&&an(_)?_:null,y;t[0]===r.gizmo?y=t[1]:(y=te(r.gizmo),t[0]=r.gizmo,t[1]=y);let b=y,x;t[2]!==o||t[3]!==b||t[4]!==r?(x=b?`—`:$t(o,tn(r)),t[2]=o,t[3]=b,t[4]=r,t[5]=x):x=t[5];let S=x,C;t[6]===r.gizmo?C=t[7]:(C=ie(r.gizmo),t[6]=r.gizmo,t[7]=C);let T=C,E,ee,O,k,A,j,M,P,F,ne,L,R,z,re,B,V,H,W,G;if(t[8]!==o||t[9]!==l||t[10]!==b||t[11]!==i||t[12]!==T||t[13]!==c||t[14]!==r.gizmo||t[15]!==v||t[16]!==g||t[17]!==h||t[18]!==a||t[19]!==S){let e=s(`flex transition-opacity`,h&&!l?`pointer-events-none opacity-0 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100`:`pointer-events-auto opacity-100`),n=h?`flex opacity-100 transition-opacity group-hover:opacity-0 group-focus-within:opacity-0`:`hidden`,u=l&&`opacity-0`,d;t[39]!==n||t[40]!==u?(d=s(`text-token-icon-tertiary pointer-events-none absolute inset-y-0 end-0 size-9 items-center justify-center`,n,u),t[39]=n,t[40]=u,t[41]=d):d=t[41];let f=d;E=_t,k=!1,A=!1,j=!1,M=!1,t[42]!==o||t[43]!==g?(P=o.formatMessage(w.projectSidebarActionsMenuLabel,{title:g}),t[42]=o,t[43]=g,t[44]=P):P=t[44],t[45]!==c||t[46]!==r.gizmo?(F=()=>{ke(r.gizmo,()=>{let e=r.gizmo.gizmo.id;m(`project_home_navigation`,{targetKey:e}),m(`project_home_project_data_ready`,{targetKey:e}),c(`/g/${r.gizmo.gizmo.id}/project`)})},t[45]=c,t[46]=r.gizmo,t[47]=F):F=t[47],ne=Kt;let p=a&&Mt.projectDirectoryGridColumnsWithNewChat;t[48]===p?L=t[49]:(L=s(Mt.projectDirectoryGridColumns,p),t[48]=p,t[49]=L);let _;t[50]!==b||t[51]!==T||t[52]!==r.gizmo.gizmo.display.theme||t[53]!==v?(_=(0,$.jsx)(`div`,{className:`border-token-border-default bg-token-bg-primary flex size-8 shrink-0 items-center justify-center rounded-[8px] border`,children:b?(0,$.jsx)(qe,{className:`text-token-text-primary h-5! w-5!`}):(0,$.jsx)(se,{color:r.gizmo.gizmo.display.theme??null,emoji:v,isSharedProject:T,className:`h-5! w-5!`,strict:!0})}),t[50]=b,t[51]=T,t[52]=r.gizmo.gizmo.display.theme,t[53]=v,t[54]=_):_=t[54];let y;t[55]===i?y=t[56]:(y=i?(0,$.jsx)(`span`,{className:`sr-only`,children:(0,$.jsx)(U,{...w.projectsPagePinnedProjectStatus})}):null,t[55]=i,t[56]=y);let x;t[57]!==g||t[58]!==y?(x=(0,$.jsxs)(`div`,{className:`text-token-text-primary min-w-0 truncate text-[14px] leading-5`,children:[g,y]}),t[57]=g,t[58]=y,t[59]=x):x=t[59];let C;t[60]===T?C=t[61]:(C=T?(0,$.jsx)($e,{"aria-hidden":`true`,className:`text-token-icon-primary h-4 w-4 shrink-0`}):null,t[60]=T,t[61]=C);let te;t[62]!==x||t[63]!==C?(te=(0,$.jsxs)(`div`,{className:`flex min-w-0 items-center gap-2 text-[14px] leading-5`,children:[x,C]}),t[62]=x,t[63]=C,t[64]=te):te=t[64];let D;t[65]===S?D=t[66]:(D=(0,$.jsx)(`div`,{className:`text-token-text-secondary mt-1 truncate text-[12px] leading-[16px] sm:hidden`,children:S}),t[65]=S,t[66]=D);let N;t[67]!==te||t[68]!==D?(N=(0,$.jsxs)(`div`,{className:`flex min-w-0 flex-col`,children:[te,D]}),t[67]=te,t[68]=D,t[69]=N):N=t[69],t[70]!==_||t[71]!==N?(R=(0,$.jsxs)(vt,{className:`relative z-10 flex min-w-0 items-center gap-3 text-start`,children:[_,N]}),t[70]=_,t[71]=N,t[72]=R):R=t[72],t[73]===S?z=t[74]:(z=(0,$.jsx)(vt,{className:`text-token-text-secondary relative z-10 hidden truncate text-start text-[14px] leading-5 sm:block`,children:S}),t[73]=S,t[74]=z),G=`gridcell`,ee=`true`,O=`relative z-10 -me-2 flex items-center justify-end`,H=`flex items-center justify-end gap-1.5`,t[75]!==i||t[76]!==h?(W=i?(0,$.jsx)(`div`,{"aria-hidden":`true`,className:s(`text-token-icon-tertiary size-9 items-center justify-center rounded-[6px]`,h?`hidden`:`flex`),children:(0,$.jsx)(Je,{className:`h-4 w-4`})}):null,t[75]=i,t[76]=h,t[77]=W):W=t[77];let I=a?`sm:w-[78px]`:`sm:w-9`;t[78]===I?B=t[79]:(B=s(`relative h-9 w-9 shrink-0`,I),t[78]=I,t[79]=B),t[80]!==f||t[81]!==i?(V=i?(0,$.jsx)(`div`,{"aria-hidden":`true`,className:f,children:(0,$.jsx)(Je,{className:`h-4 w-4`})}):null,t[80]=f,t[81]=i,t[82]=V):V=t[82],re=s(`absolute inset-y-0 end-0 flex items-center justify-end gap-1.5`,a?`sm:w-[78px]`:`sm:w-9`,e),t[8]=o,t[9]=l,t[10]=b,t[11]=i,t[12]=T,t[13]=c,t[14]=r.gizmo,t[15]=v,t[16]=g,t[17]=h,t[18]=a,t[19]=S,t[20]=E,t[21]=ee,t[22]=O,t[23]=k,t[24]=A,t[25]=j,t[26]=M,t[27]=P,t[28]=F,t[29]=ne,t[30]=L,t[31]=R,t[32]=z,t[33]=re,t[34]=B,t[35]=V,t[36]=H,t[37]=W,t[38]=G}else E=t[20],ee=t[21],O=t[22],k=t[23],A=t[24],j=t[25],M=t[26],P=t[27],F=t[28],ne=t[29],L=t[30],R=t[31],z=t[32],re=t[33],B=t[34],V=t[35],H=t[36],W=t[37],G=t[38];let K;t[83]!==r||t[84]!==a?(K=a?(0,$.jsx)(qt,{project:r,className:`hidden sm:flex`}):null,t[83]=r,t[84]=a,t[85]=K):K=t[85];let q;t[86]!==l||t[87]!==i||t[88]!==r?(q=(0,$.jsx)(Jt,{project:r,isPinned:i,open:l,onOpenChange:u}),t[86]=l,t[87]=i,t[88]=r,t[89]=q):q=t[89];let J;t[90]!==K||t[91]!==q||t[92]!==re?(J=(0,$.jsxs)(`div`,{className:re,children:[K,q]}),t[90]=K,t[91]=q,t[92]=re,t[93]=J):J=t[93];let Y;t[94]!==J||t[95]!==B||t[96]!==V?(Y=(0,$.jsxs)(`div`,{className:B,children:[V,J]}),t[94]=J,t[95]=B,t[96]=V,t[97]=Y):Y=t[97];let X;t[98]!==Y||t[99]!==H||t[100]!==W?(X=(0,$.jsxs)(`div`,{className:H,children:[W,Y]}),t[98]=Y,t[99]=H,t[100]=W,t[101]=X):X=t[101];let Z;t[102]!==ee||t[103]!==O||t[104]!==X||t[105]!==G?(Z=(0,$.jsx)(`div`,{role:G,"data-page-table-row-actions":ee,className:O,children:X}),t[102]=ee,t[103]=O,t[104]=X,t[105]=G,t[106]=Z):Z=t[106];let ce;return t[107]!==E||t[108]!==k||t[109]!==A||t[110]!==j||t[111]!==M||t[112]!==P||t[113]!==F||t[114]!==ne||t[115]!==L||t[116]!==R||t[117]!==z||t[118]!==Z?(ce=(0,$.jsxs)(E,{selectionEnabled:k,checked:A,active:j,showCheckbox:M,checkboxLabel:P,onActivate:F,onCheckedChange:ne,className:L,children:[R,z,Z]}),t[107]=E,t[108]=k,t[109]=A,t[110]=j,t[111]=M,t[112]=P,t[113]=F,t[114]=ne,t[115]=L,t[116]=R,t[117]=z,t[118]=Z,t[119]=ce):ce=t[119],ce}function Kt(){}function qt(e){"use forget";let t=(0,Q.c)(15),{project:n,className:r}=e,i=oe(),a=ae(),o;t[0]===i?o=t[1]:(o=i.formatMessage(ge.newChat),t[0]=i,t[1]=o);let c=o,l;t[2]===r?l=t[3]:(l=s(`keyboard-focused:focus-ring text-token-icon-tertiary hover:bg-token-bg-tertiary size-9 min-h-9 items-center justify-center rounded-[6px] border-0 p-0 transition-colors outline-none`,r),t[2]=r,t[3]=l);let u;t[4]!==a||t[5]!==n.gizmo?(u=e=>{e.stopPropagation(),ke(n.gizmo,()=>{a(x(n.gizmo))})},t[4]=a,t[5]=n.gizmo,t[6]=u):u=t[6];let d;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,$.jsx)(Ot.Compose,{}),t[7]=d):d=t[7];let f;t[8]!==c||t[9]!==l||t[10]!==u?(f=(0,$.jsx)(`button`,{type:`button`,"aria-label":c,"data-page-table-grid-focus-target":`true`,"data-page-table-row-actions-focus-target":`true`,className:l,onClick:u,children:d}),t[8]=c,t[9]=l,t[10]=u,t[11]=f):f=t[11];let p;return t[12]!==c||t[13]!==f?(p=(0,$.jsx)(v,{label:c,children:f}),t[12]=c,t[13]=f,t[14]=p):p=t[14],p}function Jt(e){"use forget";let t=(0,Q.c)(50),{project:n,isPinned:r,open:a,onOpenChange:o}=e,s=oe(),c;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(c=f(),t[0]=c):c=t[0];let l=c,u=n.gizmo.gizmo.display.name,d=n.gizmo.gizmo.id,m;t[1]===n.gizmo?m=t[2]:(m=te(n.gizmo),t[1]=n.gizmo,t[2]=m);let h=m,{mutate:g}=ne(),_=n.gizmo.gizmo.author.user_id===l?.normalizedAccountUserId,{canOpen:v}=A(n.gizmo),y;t[3]!==v||t[4]!==n.gizmo?(y=v&&!F(n.gizmo),t[3]=v,t[4]=n.gizmo,t[5]=y):y=t[5];let b=y,{canEdit:x}=p(n.gizmo),{canDelete:S}=i(n.gizmo),C=(0,on.useRef)(!1),E;t[6]===r?E=t[7]:(E=r?(0,$.jsx)(it,{className:`h-5 w-5`,"aria-hidden":`true`}):(0,$.jsx)(rt,{className:`h-5 w-5`,"aria-hidden":`true`}),t[6]=r,t[7]=E);let ee=E,D;t[8]===n.gizmo?D=t[9]:(D=()=>{T(_e,{gizmo:B(n.gizmo),publishedGizmo:n.gizmo,onClose:Zt})},t[8]=n.gizmo,t[9]=D);let O=re(D),k;t[10]===Symbol.for(`react.memo_cache_sentinel`)?(k=e=>{C.current&&(C.current=!1,e.preventDefault())},t[10]=k):k=t[10];let j;t[11]!==s||t[12]!==u?(j=s.formatMessage(w.projectSidebarActionsMenuLabel,{title:u}),t[11]=s,t[12]=u,t[13]=j):j=t[13];let M;t[14]===j?M=t[15]:(M=(0,$.jsx)(gt,{label:j}),t[14]=j,t[15]=M);let N;t[16]===Symbol.for(`react.memo_cache_sentinel`)?(N=()=>{C.current=!0},t[16]=N):N=t[16];let P;t[17]!==r||t[18]!==g||t[19]!==n?(P=()=>{g({isPinned:!r,project:n})},t[17]=r,t[18]=g,t[19]=n,t[20]=P):P=t[20];let I=r?w.unpinProjectDropdownButton:w.pinProjectDropdownButton,L;t[21]===I?L=t[22]:(L=(0,$.jsx)(U,{...I}),t[21]=I,t[22]=L);let R;t[23]!==ee||t[24]!==P||t[25]!==L?(R=(0,$.jsx)(me.Item,{className:`keyboard-focused:focus-ring`,icon:ee,onPointerDown:N,onClick:P,children:L}),t[23]=ee,t[24]=P,t[25]=L,t[26]=R):R=t[26];let z;t[27]!==O||t[28]!==b?(z=b?(0,$.jsx)(me.Item,{className:`keyboard-focused:focus-ring`,icon:(0,$.jsx)(Ot.Share,{className:`h-5 w-5`}),onClick:()=>{O()},children:(0,$.jsx)(U,{...w.projectShareButton})}):null,t[27]=O,t[28]=b,t[29]=z):z=t[29];let ie;t[30]!==x||t[31]!==h||t[32]!==n.gizmo?(ie=x&&!h?(0,$.jsx)(me.Item,{className:`keyboard-focused:focus-ring`,icon:(0,$.jsx)(Ot.Settings,{className:`h-5 w-5`}),onClick:()=>{T(le,{gizmo:n.gizmo,onClose:Xt})},children:(0,$.jsx)(U,{...w.projectSettings})}):null,t[30]=x,t[31]=h,t[32]=n.gizmo,t[33]=ie):ie=t[33];let V;t[34]!==S||t[35]!==x||t[36]!==h||t[37]!==_||t[38]!==n.gizmo||t[39]!==d||t[40]!==b?(V=S&&_&&!h?(0,$.jsx)(me.Group,{separator:b||x,children:(0,$.jsx)(me.Item,{color:`danger`,className:`keyboard-focused:focus-ring`,icon:(0,$.jsx)(Ot.Trash,{className:`text-token-text-status-error h-5 w-5`}),onClick:()=>{T(Oe,{gizmoId:d,gizmo:n.gizmo,handleDelete:Yt})},children:(0,$.jsx)(U,{...w.deleteProjectDropdownButton})})}):null,t[34]=S,t[35]=x,t[36]=h,t[37]=_,t[38]=n.gizmo,t[39]=d,t[40]=b,t[41]=V):V=t[41];let H;return t[42]!==o||t[43]!==a||t[44]!==R||t[45]!==z||t[46]!==ie||t[47]!==V||t[48]!==M?(H=(0,$.jsxs)(fe,{open:a,onOpenChange:o,onCloseAutoFocus:k,triggerButton:M,contentAlign:`end`,sideOffset:4,alignOffset:-4,size:`small`,contentClassName:`w-50 max-w-[95vw]`,children:[R,z,ie,V]}),t[42]=o,t[43]=a,t[44]=R,t[45]=z,t[46]=ie,t[47]=V,t[48]=M,t[49]=H):H=t[49],H}function Yt(){g(Oe)}function Xt(){return g(le)}function Zt(){return g(_e)}function Qt(e,t){return t?e.gizmo.gizmo.author.user_id===t?`owned`:`shared`:ie(e.gizmo)?`shared`:`owned`}function $t(e,t){if(!t)return null;let n=new Date(t);return Number.isNaN(n.getTime())?null:q(e,n)}function en(e){let t=new Date(tn(e)??``).getTime();return Number.isNaN(t)?0:t}function tn(e){return e.gizmo.gizmo.version_updated_at??e.gizmo.gizmo.updated_at}function nn(e,t){let n=en(t)-en(e);return n===0?e.gizmo.gizmo.display.name.localeCompare(t.gizmo.gizmo.display.name):n}function rn(e,t){let n=[],r=[];for(let i of e)t.has(i.gizmo.gizmo.id)?n.push(i):r.push(i);return n.sort(nn),r.sort(nn),[...n,...r]}function an(e){return e in ye}var Q,on,$,sn=e((()=>{Q=K(),u(),we(),Ce(),et(),Ze(),Qe(),nt(),Ye(),tt(),Pe(),y(),_(),C(),ve(),De(),ot(),mt(),St(),je(),bt(),de(),ue(),xe(),kt(),Le(),X(),Ke(),R(),P(),r(),l(),E(),h(),o(),Ee(),dt(),k(),ct(),c(),S(),ze(),b(),d(),on=t(G()),W(),V(),be(),Nt(),$=H()}));export{sn as n,Pt as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A5 as n,
+    CS as r,
+    Dg as i,
+    Eg as a,
+    F_ as o,
+    G5 as s,
+    I1 as c,
+    Ik as l,
+    JT as u,
+    K5 as d,
+    M1 as f,
+    Og as p,
+    R_ as m,
+    Tg as h,
+    X0 as g,
+    Xy as _,
+    Yy as v,
+    Z0 as y,
+    _N as b,
+    aD as x,
+    aq as S,
+    dD as C,
+    dE as w,
+    e2 as T,
+    fV as E,
+    g_ as ee,
+    hV as te,
+    iq as D,
+    jk as O,
+    k5 as k,
+    kg as A,
+    mJ as j,
+    m_ as M,
+    oq as N,
+    pE as P,
+    pV as F,
+    p_ as ne,
+    pq as I,
+    qT as L,
+    t_ as R,
+    vJ as z,
+    vN as re,
+    xS as B,
+    xV as ie
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    $ as V,
+    Bn as H,
+    Nn as U,
+    Pt as ae,
+    Rn as W,
+    Vn as G,
+    wn as K,
+    zn as oe
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    $At as q,
+    $mn as J,
+    A0t as Y,
+    Apn as se,
+    Ba as X,
+    Dpn as Z,
+    Epn as ce,
+    F0t as le,
+    Hjt as ue,
+    I0t as de,
+    IHn as fe,
+    Jm as pe,
+    LHn as me,
+    M0t as he,
+    MAt as ge,
+    N0t as _e,
+    NAt as ve,
+    Npn as ye,
+    Opn as be,
+    P0t as xe,
+    Qmn as Se,
+    RHn as Ce,
+    SFt as we,
+    Thn as Te,
+    Tpn as Ee,
+    Ujt as De,
+    Vjt as Oe,
+    Wjt as ke,
+    Xmn as Ae,
+    Zm as je,
+    Zmn as Me,
+    _hn as Ne,
+    dX as Pe,
+    ghn as Fe,
+    j0t as Ie,
+    jpn as Le,
+    k0t as Re,
+    rjt as ze,
+    uX as Be,
+    vhn as Ve,
+    whn as He,
+    xFt as Ue,
+    yhn as We,
+    za as Ge,
+    zpn as Ke
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    $x as qe,
+    Fb as Je,
+    Gh as Ye,
+    Kh as Xe,
+    Nx as Ze,
+    Pb as Qe,
+    Px as $e,
+    Qx as et,
+    Rx as tt,
+    Xx as nt,
+    Zx as rt,
+    zx as it
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+import {
+    cS as at,
+    dS as ot,
+    hS as st,
+    mS as ct,
+    uS as lt
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+import {
+    Bp as ut,
+    Vp as dt
+} from "./8b34dbc2-j8rcexxiltkm8ucr.js";
+import {
+    a as ft,
+    i as pt,
+    l as mt,
+    n as ht,
+    o as gt,
+    s as _t,
+    t as vt
+} from "./9e958008-pc2ks4d6ed7tc5z5.js";
+import {
+    n as yt,
+    r as bt,
+    t as xt
+} from "./84bcef95-gx4v09sr4r263psk.js";
+import {
+    n as St,
+    t as Ct
+} from "./dee3edb9-h41f8bh55h3xqjpl.js";
+var wt, Tt = e((() => {
+        z(), wt = j({
+            name: `square-and-pencil-light-16`,
+            canvas: {
+                width: 16,
+                height: 16,
+                viewBox: `0 0 16 16`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 16,
+                    height: 16
+                },
+                inkBounds: {
+                    x: 1.807861,
+                    y: 1.746094,
+                    width: 12.443115,
+                    height: 12.445313
+                },
+                visualBounds: {
+                    x: 1.807861,
+                    y: 1.746094,
+                    width: 12.443115,
+                    height: 12.445313
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 1.807861,
+                    y: 1.746094,
+                    width: 12.443115,
+                    height: 12.445313
+                },
+                center: {
+                    x: 8.029419,
+                    y: 7.968751
+                },
+                insets: {
+                    top: 1.746094,
+                    right: 1.749024,
+                    bottom: 1.808593,
+                    left: 1.807861
+                },
+                anchors: {
+                    frame: {
+                        x: 8,
+                        y: 8
+                    },
+                    ink: {
+                        x: 8.029419,
+                        y: 7.968751
+                    },
+                    foreground: {
+                        x: 8.029419,
+                        y: 7.968751
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M6.33325 1.80763C6.62314 1.80763 6.85855 2.04315 6.85864 2.33302C6.85864 2.62297 6.6232 2.85841 6.33325 2.85841H4.66626C3.66786 2.85859 2.85891 3.66765 2.85864 4.66603V11.333C2.85864 12.3316 3.66769 13.1414 4.66626 13.1416H11.3333C12.332 13.1416 13.1418 12.3317 13.1418 11.333V9.66603C13.1421 9.37642 13.3766 9.14179 13.6663 9.14161C13.956 9.14161 14.1914 9.37631 14.1917 9.66603V11.333C14.1917 12.9116 12.9119 14.1914 11.3333 14.1914H4.66626C3.0878 14.1912 1.80786 12.9115 1.80786 11.333V4.66603C1.80813 3.08775 3.08796 1.80781 4.66626 1.80763H6.33325Z" fill="currentColor"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M10.842 2.32228C11.6259 1.55049 12.8863 1.55435 13.6643 2.33204C14.4442 3.11205 14.4469 4.37706 13.6702 5.16017L9.41626 9.4463C9.05652 9.80879 8.59956 10.0601 8.10083 10.1699L6.19263 10.5899C5.7111 10.6958 5.28165 10.2666 5.38794 9.78517L5.80884 7.88185C5.9196 7.38036 6.17342 6.92096 6.53931 6.56056L10.842 2.32228ZM12.9221 3.07521C12.552 2.7051 11.9524 2.70322 11.5793 3.07033L7.27563 7.30861C7.05429 7.52663 6.90125 7.80504 6.83423 8.10841L6.54028 9.43849L7.87524 9.14454C8.17687 9.07807 8.45355 8.92625 8.67114 8.70704L12.9241 4.41993C13.2934 4.04741 13.2928 3.44631 12.9221 3.07521Z" fill="currentColor"/>`
+        })
+    })),
+    Et, Dt = e((() => {
+        z(), Et = j({
+            name: `square-and-pencil-light-20`,
+            canvas: {
+                width: 20,
+                height: 20,
+                viewBox: `0 0 20 20`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 20,
+                    height: 20
+                },
+                inkBounds: {
+                    x: 2.501709,
+                    y: 2.398926,
+                    width: 15.095703,
+                    height: 15.099365
+                },
+                visualBounds: {
+                    x: 2.501709,
+                    y: 2.398926,
+                    width: 15.095703,
+                    height: 15.099365
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 2.501709,
+                    y: 2.398926,
+                    width: 15.095703,
+                    height: 15.099365
+                },
+                center: {
+                    x: 10.049561,
+                    y: 9.948609
+                },
+                insets: {
+                    top: 2.398926,
+                    right: 2.402588,
+                    bottom: 2.501709,
+                    left: 2.501709
+                },
+                anchors: {
+                    frame: {
+                        x: 10,
+                        y: 10
+                    },
+                    ink: {
+                        x: 10.049561,
+                        y: 9.948609
+                    },
+                    foreground: {
+                        x: 10.049561,
+                        y: 9.948609
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M8.16675 2.50127C8.53391 2.50127 8.83161 2.7992 8.83179 3.16631C8.83179 3.53358 8.53402 3.83135 8.16675 3.83135H5.83374C4.72836 3.83135 3.83197 4.72797 3.83179 5.8333V14.1663C3.83179 15.2718 4.72825 16.1683 5.83374 16.1683H14.1667C15.2722 16.1683 16.1687 15.2718 16.1687 14.1663V11.8333C16.1689 11.4662 16.4666 11.1683 16.8337 11.1683C17.2007 11.1684 17.4986 11.4663 17.4988 11.8333V14.1663C17.4988 16.0063 16.0068 17.4983 14.1667 17.4983H5.83374C3.99371 17.4983 2.50171 16.0063 2.50171 14.1663V5.8333C2.50189 3.99343 3.99382 2.50127 5.83374 2.50127H8.16675Z" fill="currentColor"/> <path fill-rule="evenodd" clip-rule="evenodd" d="M13.4265 3.10381C14.3857 2.15908 15.9276 2.16466 16.8796 3.11651C17.8339 4.07106 17.8372 5.61827 16.8865 6.57647L11.7244 11.7786C11.3005 12.2058 10.7622 12.5027 10.1746 12.6321L7.78784 13.1565C7.20661 13.2842 6.6889 12.766 6.81714 12.1849L7.34253 9.80498C7.47294 9.21426 7.77197 8.67391 8.20288 8.24932L13.4265 3.10381ZM15.9392 4.05694C15.5038 3.62172 14.7988 3.61907 14.3601 4.05108L9.13647 9.19659C8.88861 9.44077 8.71644 9.75138 8.64136 10.0911L8.28979 11.6849L9.88843 11.3333C10.2265 11.2588 10.5362 11.0878 10.78 10.8421L15.9421 5.63897C16.3769 5.20075 16.3756 4.49352 15.9392 4.05694Z" fill="currentColor"/>`
+        })
+    })),
+    Ot, kt = e((() => {
+        He(), We(), Ne(), he(), Y(), Tt(), Dt(), Se(), Ae(), Ot = Te({
+            id: `project-directory`,
+            icons: {
+                compose: {
+                    normal: Et,
+                    small: wt
+                },
+                settings: {
+                    normal: Re,
+                    small: Ie
+                },
+                share: {
+                    normal: Fe,
+                    small: Ve
+                },
+                trash: {
+                    normal: Me,
+                    small: J
+                }
+            }
+        })
+    })),
+    At, jt, Mt, Nt = e((() => {
+        At = `VmdjuW_projectDirectoryGridColumns`, jt = `VmdjuW_projectDirectoryGridColumnsWithNewChat`, Mt = {
+            projectDirectoryGridColumns: At,
+            projectDirectoryGridColumnsWithNewChat: jt
+        }
+    }));
+
+function Pt(e) {
+    "use forget";
+    let t = (0, Q.c)(92),
+        r;
+    t[0] === e ? r = t[1] : (r = e === void 0 ? {} : e, t[0] = e, t[1] = r);
+    let {
+        title: i,
+        toolbar: a,
+        headerActions: o,
+        searchLabel: c,
+        searchClearLabel: l,
+        searchPlaceholder: u,
+        belowHeader: d,
+        useOuterScrollRoot: p,
+        alignWithLibrarySelectionGutter: m
+    } = r, h = p !== void 0 && p, g = m !== void 0 && m, _ = oe(), v;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (v = f(), t[2] = v) : v = t[2];
+    let y = v?.normalizedAccountUserId ?? null,
+        b = n(Ft),
+        x;
+    t[3] === b ? x = t[4] : (x = {
+        hiddenProjectId: b
+    }, t[3] = b, t[4] = x);
+    let {
+        projects: S,
+        data: C,
+        isLoading: T,
+        isRequestInProgress: E,
+        isPlaceholderData: te,
+        isError: D,
+        refetch: k,
+        hasNextPage: A,
+        isFetchingNextPage: j,
+        fetchNextPage: N
+    } = ee(x), {
+        pinnedProjectIds: P
+    } = M(), [F, ne] = (0, on.useState)(`all`), [I, L] = (0, on.useState)(``), R = st(!0), z = (0, on.useDeferredValue)(I), [B, ie] = (0, on.useState)(!1), V;
+    t[5] === k ? V = t[6] : (V = function() {
+        k()
+    }, t[5] = k, t[6] = V);
+    let H = re(V),
+        ae = D || C === void 0 && !T && B,
+        W = B && E && te,
+        G = D || B && C === void 0 || W,
+        K = C != null && !T && !W,
+        q;
+    t[7] !== ae || t[8] !== K ? (q = {
+        isError: ae,
+        isReady: K
+    }, t[7] = ae, t[8] = K, t[9] = q) : q = t[9], ce(q);
+    let J = C === void 0 && !T && !B,
+        Y;
+    if (t[10] !== z || t[11] !== P || t[12] !== S || t[13] !== F) {
+        let e = z.trim().toLowerCase();
+        Y = rn(S.filter(t => F !== `all` && Qt(t, y) !== F ? !1 : e.length === 0 || t.gizmo.gizmo.display.name.toLowerCase().includes(e)), P), t[10] = z, t[11] = P, t[12] = S, t[13] = F, t[14] = Y
+    } else Y = t[14];
+    let se = Y,
+        X;
+    t[15] === se.length ? X = t[16] : (X = se.length > 0 && O(), t[15] = se.length, t[16] = X);
+    let Z = X,
+        le, ue;
+    t[17] !== H || t[18] !== J ? (le = () => {
+        J && (0, on.startTransition)(() => {
+            ie(!0), H()
+        })
+    }, ue = [J, H], t[17] = H, t[18] = J, t[19] = le, t[20] = ue) : (le = t[19], ue = t[20]), (0, on.useEffect)(le, ue);
+    let de = h ? `min-h-full` : `h-full overflow-hidden`,
+        fe;
+    t[21] === de ? fe = t[22] : (fe = s(`flex w-full flex-col`, de), t[21] = de, t[22] = fe);
+    let pe;
+    t[23] === i ? pe = t[24] : (pe = i ?? (0, $.jsx)(U, {
+        ...w.projectsPageTitle
+    }), t[23] = i, t[24] = pe);
+    let me;
+    t[25] === Symbol.for(`react.memo_cache_sentinel`) ? (me = (0, $.jsx)(ut, {}), t[25] = me) : me = t[25];
+    let he;
+    t[26] === o ? he = t[27] : (he = o ?? (0, $.jsx)(It, {}), t[26] = o, t[27] = he);
+    let ge;
+    t[28] !== pe || t[29] !== he ? (ge = (0, $.jsx)(`div`, {
+        className: `md:hidden`,
+        children: (0, $.jsx)(Ct, {
+            title: pe,
+            navigationButton: me,
+            rightContent: he
+        })
+    }), t[28] = pe, t[29] = he, t[30] = ge) : ge = t[30];
+    let _e = !h || void 0,
+        ve = h ? void 0 : `project-directory-scroll-root`,
+        ye = !h && `overflow-auto`,
+        be;
+    t[31] === ye ? be = t[32] : (be = s(ye), t[31] = ye, t[32] = be);
+    let xe = g ? R : void 0,
+        Se;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (Se = {
+        title: `text-heading-app box-trim-0.5 font-medium max-md:hidden`,
+        controls: `max-md:w-full`,
+        search: `max-md:w-full max-md:max-w-[400px] md:w-60`,
+        headerActions: `max-md:hidden`
+    }, t[33] = Se) : Se = t[33];
+    let Ce;
+    t[34] === i ? Ce = t[35] : (Ce = i ?? (0, $.jsx)(U, {
+        ...w.projectsPageTitle
+    }), t[34] = i, t[35] = Ce);
+    let we;
+    t[36] !== _ || t[37] !== c ? (we = c ?? _.formatMessage(w.projectsPageSearchLabel), t[36] = _, t[37] = c, t[38] = we) : we = t[38];
+    let Te;
+    t[39] !== _ || t[40] !== l ? (Te = l ?? _.formatMessage(w.projectsPageSearchClearLabel), t[39] = _, t[40] = l, t[41] = Te) : Te = t[41];
+    let Ee, De;
+    t[42] === Symbol.for(`react.memo_cache_sentinel`) ? (Ee = e => L(e.target.value), De = () => L(``), t[42] = Ee, t[43] = De) : (Ee = t[42], De = t[43]);
+    let Oe;
+    t[44] !== _ || t[45] !== u ? (Oe = u ?? _.formatMessage(w.projectsPageSearchPlaceholder), t[44] = _, t[45] = u, t[46] = Oe) : Oe = t[46];
+    let ke;
+    t[47] !== I || t[48] !== we || t[49] !== Te || t[50] !== Oe ? (ke = (0, $.jsx)(lt, {
+        id: `projects-page-search`,
+        label: we,
+        clearLabel: Te,
+        value: I,
+        onChange: Ee,
+        onClear: De,
+        placeholder: Oe
+    }), t[47] = I, t[48] = we, t[49] = Te, t[50] = Oe, t[51] = ke) : ke = t[51];
+    let Ae;
+    t[52] === o ? Ae = t[53] : (Ae = o ?? (0, $.jsx)(It, {
+        className: `inline-flex w-auto`
+    }), t[52] = o, t[53] = Ae);
+    let je;
+    t[54] !== Ce || t[55] !== ke || t[56] !== Ae ? (je = (0, $.jsx)(at, {
+        className: `max-md:mt-0 max-md:min-h-0`,
+        classNames: Se,
+        title: Ce,
+        searchInput: ke,
+        headerActions: Ae
+    }), t[54] = Ce, t[55] = ke, t[56] = Ae, t[57] = je) : je = t[57];
+    let Me;
+    t[58] !== d || t[59] !== je ? (Me = (0, $.jsxs)($.Fragment, {
+        children: [je, d]
+    }), t[58] = d, t[59] = je, t[60] = Me) : Me = t[60];
+    let Ne;
+    t[61] !== F || t[62] !== a ? (Ne = a ?? (0, $.jsx)(Rt, {
+        scope: F,
+        onScopeChange: ne
+    }), t[61] = F, t[62] = a, t[63] = Ne) : Ne = t[63];
+    let Pe;
+    t[64] === Symbol.for(`react.memo_cache_sentinel`) ? (Pe = {
+        ...xt,
+        toolbarShell: `bg-token-main-surface-primary`
+    }, t[64] = Pe) : Pe = t[64];
+    let Fe;
+    t[65] !== N || t[66] !== A || t[67] !== j || t[68] !== T || t[69] !== E || t[70] !== P || t[71] !== S.length || t[72] !== H || t[73] !== G || t[74] !== Z || t[75] !== se ? (Fe = G ? (0, $.jsx)(Ge, {
+        isRetrying: E,
+        refetch: H
+    }) : T && S.length === 0 ? (0, $.jsx)(Vt, {}) : se.length === 0 && !A ? (0, $.jsx)(Ut, {
+        filtered: S.length > 0
+    }) : (0, $.jsxs)($.Fragment, {
+        children: [(0, $.jsxs)(Bt, {
+            children: [(0, $.jsx)(zt, {
+                shouldShowNewChatHoverButton: Z
+            }), (0, $.jsxs)(ft, {
+                children: [se.map(e => (0, $.jsx)(Gt, {
+                    isPinned: P.has(e.gizmo.gizmo.id),
+                    project: e,
+                    shouldShowNewChatHoverButton: Z
+                }, e.gizmo.gizmo.id)), j ? Array.from({
+                    length: 4
+                }, (e, t) => (0, $.jsx)(Wt, {
+                    className: `group skeleton [--skeleton-opacity:0.75]`,
+                    shouldShowNewChatHoverButton: Z
+                }, `project-directory-loading-more-row-${t}`)) : null]
+            })]
+        }), j ? null : (0, $.jsx)(Be, {
+            isFetchingNextPage: !1,
+            hasNextPage: !!A,
+            fetchNextPage: () => {
+                N()
+            },
+            bgColor: `bg-transparent`
+        })]
+    }), t[65] = N, t[66] = A, t[67] = j, t[68] = T, t[69] = E, t[70] = P, t[71] = S.length, t[72] = H, t[73] = G, t[74] = Z, t[75] = se, t[76] = Fe) : Fe = t[76];
+    let Ie;
+    t[77] !== g || t[78] !== xe || t[79] !== Me || t[80] !== Ne || t[81] !== Fe ? (Ie = (0, $.jsx)(yt, {
+        disableMultiselectMobile: g,
+        multiselectEnabled$: xe,
+        header: Me,
+        toolbar: Ne,
+        classNames: Pe,
+        children: Fe
+    }), t[77] = g, t[78] = xe, t[79] = Me, t[80] = Ne, t[81] = Fe, t[82] = Ie) : Ie = t[82];
+    let Le;
+    t[83] !== _e || t[84] !== ve || t[85] !== be || t[86] !== Ie ? (Le = (0, $.jsx)(`div`, {
+        "data-scroll-root": _e,
+        "data-testid": ve,
+        className: be,
+        children: Ie
+    }), t[83] = _e, t[84] = ve, t[85] = be, t[86] = Ie, t[87] = Le) : Le = t[87];
+    let Re;
+    return t[88] !== fe || t[89] !== ge || t[90] !== Le ? (Re = (0, $.jsxs)(`div`, {
+        className: fe,
+        children: [ge, Le]
+    }), t[88] = fe, t[89] = ge, t[90] = Le, t[91] = Re) : Re = t[91], Re
+}
+
+function Ft() {}
+
+function It(e) {
+    "use forget";
+    let t = (0, Q.c)(8),
+        {
+            className: n
+        } = e,
+        r = ae(),
+        i = (0, on.useRef)(null),
+        a;
+    t[0] === r ? a = t[1] : (a = {
+        onSuccess: e => {
+            e && r(`/g/${e}/project`)
+        }
+    }, t[0] = r, t[1] = a);
+    let o;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, $.jsx)(U, {
+        ...w.projectsPageNewButton
+    }), t[2] = o) : o = t[2];
+    let s;
+    t[3] === n ? s = t[4] : (s = (0, $.jsx)(Lt, {
+        buttonRef: i,
+        className: n,
+        label: o
+    }), t[3] = n, t[4] = s);
+    let c;
+    return t[5] !== a || t[6] !== s ? (c = (0, $.jsx)(Ue, {
+        for: Z,
+        withProps: a,
+        children: s
+    }), t[5] = a, t[6] = s, t[7] = c) : c = t[7], c
+}
+
+function Lt(e) {
+    "use forget";
+    let t = (0, Q.c)(38),
+        {
+            buttonRef: n,
+            onClick: r,
+            iconOnly: i,
+            className: o,
+            label: c
+        } = e,
+        l = i !== void 0 && i,
+        u = oe(),
+        {
+            canCreate: d
+        } = a(),
+        f;
+    t[0] !== d || t[1] !== r ? (f = () => {
+        d && r?.()
+    }, t[0] = d, t[1] = r, t[2] = f) : f = t[2];
+    let p = f,
+        m;
+    t[3] === d ? m = t[4] : (m = () => {
+        d && Z.prefetch()
+    }, t[3] = d, t[4] = m);
+    let h = m;
+    if (l) {
+        let e;
+        t[5] === u ? e = t[6] : (e = u.formatMessage(w.newProjectButton), t[5] = u, t[6] = e);
+        let r = d ? `focus-visible:ring-token-ring text-token-text-primary hover:bg-token-bg-tertiary focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none active:opacity-50` : `text-token-text-tertiary cursor-not-allowed opacity-50`,
+            i;
+        t[7] === r ? i = t[8] : (i = s(`touch:h-10 touch:w-10 inline-flex h-9 w-9 items-center justify-center rounded-md focus:outline-hidden`, r), t[7] = r, t[8] = i);
+        let a = !d,
+            o;
+        t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, $.jsx)(Xe, {
+            className: `icon-lg`
+        }), t[9] = o) : o = t[9];
+        let c;
+        t[10] !== n || t[11] !== p || t[12] !== h || t[13] !== e || t[14] !== i || t[15] !== a ? (c = (0, $.jsx)(`button`, {
+            type: `button`,
+            "aria-label": e,
+            className: i,
+            onClick: p,
+            ref: n,
+            onFocus: h,
+            onPointerEnter: h,
+            disabled: a,
+            children: o
+        }), t[10] = n, t[11] = p, t[12] = h, t[13] = e, t[14] = i, t[15] = a, t[16] = c) : c = t[16];
+        let l = c;
+        if (d) return l;
+        let f;
+        t[17] === u ? f = t[18] : (f = u.formatMessage(w.createProjectDisabledByAdmin), t[17] = u, t[18] = f);
+        let m;
+        return t[19] !== l || t[20] !== f ? (m = (0, $.jsx)(v, {
+            label: f,
+            children: l
+        }), t[19] = l, t[20] = f, t[21] = m) : m = t[21], m
+    }
+    let g;
+    t[22] === o ? g = t[23] : (g = s(`inline-flex w-full justify-center md:w-auto`, o), t[22] = o, t[23] = g);
+    let _ = !d,
+        y;
+    t[24] === c ? y = t[25] : (y = c ?? (0, $.jsx)(U, {
+        ...w.newProjectButton
+    }), t[24] = c, t[25] = y);
+    let b;
+    t[26] !== n || t[27] !== p || t[28] !== h || t[29] !== g || t[30] !== _ || t[31] !== y ? (b = (0, $.jsx)(L, {
+        className: g,
+        color: `primary`,
+        onClick: p,
+        ref: n,
+        onIntent: h,
+        visuallyDisabled: _,
+        children: y
+    }), t[26] = n, t[27] = p, t[28] = h, t[29] = g, t[30] = _, t[31] = y, t[32] = b) : b = t[32];
+    let x = b;
+    if (d) return x;
+    let S;
+    t[33] === u ? S = t[34] : (S = u.formatMessage(w.createProjectDisabledByAdmin), t[33] = u, t[34] = S);
+    let C;
+    return t[35] !== x || t[36] !== S ? (C = (0, $.jsx)(v, {
+        label: S,
+        children: x
+    }), t[35] = x, t[36] = S, t[37] = C) : C = t[37], C
+}
+
+function Rt(e) {
+    "use forget";
+    let t = (0, Q.c)(22),
+        {
+            scope: n,
+            onScopeChange: r
+        } = e,
+        i = n === `all`,
+        a;
+    t[0] === r ? a = t[1] : (a = () => r(`all`), t[0] = r, t[1] = a);
+    let o;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, $.jsx)(U, {
+        ...w.projectsPageAllTab
+    }), t[2] = o) : o = t[2];
+    let s;
+    t[3] !== i || t[4] !== a ? (s = (0, $.jsx)(pe, {
+        active: i,
+        onClick: a,
+        children: o
+    }), t[3] = i, t[4] = a, t[5] = s) : s = t[5];
+    let c = n === `owned`,
+        l;
+    t[6] === r ? l = t[7] : (l = () => r(`owned`), t[6] = r, t[7] = l);
+    let u;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, $.jsx)(U, {
+        ...w.projectsPageCreatedByYouTab
+    }), t[8] = u) : u = t[8];
+    let d;
+    t[9] !== c || t[10] !== l ? (d = (0, $.jsx)(pe, {
+        active: c,
+        onClick: l,
+        children: u
+    }), t[9] = c, t[10] = l, t[11] = d) : d = t[11];
+    let f = n === `shared`,
+        p;
+    t[12] === r ? p = t[13] : (p = () => r(`shared`), t[12] = r, t[13] = p);
+    let m;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, $.jsx)(U, {
+        ...w.projectsPageSharedWithYouTab
+    }), t[14] = m) : m = t[14];
+    let h;
+    t[15] !== p || t[16] !== f ? (h = (0, $.jsx)(pe, {
+        active: f,
+        onClick: p,
+        children: m
+    }), t[15] = p, t[16] = f, t[17] = h) : h = t[17];
+    let g;
+    return t[18] !== h || t[19] !== s || t[20] !== d ? (g = (0, $.jsx)(`div`, {
+        className: `flex min-h-[60px] w-full items-center py-2`,
+        children: (0, $.jsxs)(`div`, {
+            className: `no-scrollbar flex min-w-0 flex-1 flex-nowrap items-center gap-0 overflow-x-auto sm:flex-wrap sm:overflow-visible`,
+            children: [s, d, h]
+        })
+    }), t[18] = h, t[19] = s, t[20] = d, t[21] = g) : g = t[21], g
+}
+
+function zt(e) {
+    "use forget";
+    let t = (0, Q.c)(7),
+        {
+            shouldShowNewChatHoverButton: n
+        } = e,
+        r = n !== void 0 && n && Mt.projectDirectoryGridColumnsWithNewChat,
+        i;
+    t[0] === r ? i = t[1] : (i = s(`grid`, Mt.projectDirectoryGridColumns, r), t[0] = r, t[1] = i);
+    let a;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, $.jsx)(ht, {
+        role: `columnheader`,
+        children: (0, $.jsx)(U, {
+            ...w.projectsPageNameColumn
+        })
+    }), t[2] = a) : a = t[2];
+    let o;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, $.jsx)(ht, {
+        role: `columnheader`,
+        className: `hidden text-start sm:block`,
+        children: (0, $.jsx)(U, {
+            ...w.projectsPageModifiedColumn
+        })
+    }), t[3] = o) : o = t[3];
+    let c;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, $.jsx)(ht, {
+        role: `columnheader`,
+        className: `justify-self-end`,
+        children: (0, $.jsx)(`span`, {
+            className: `sr-only`,
+            children: (0, $.jsx)(U, {
+                ...w.projectsPageActionsColumn
+            })
+        })
+    }), t[4] = c) : c = t[4];
+    let l;
+    return t[5] === i ? l = t[6] : (l = (0, $.jsxs)(pt, {
+        role: `row`,
+        className: i,
+        children: [a, o, c]
+    }), t[5] = i, t[6] = l), l
+}
+
+function Bt(e) {
+    "use forget";
+    let t = (0, Q.c)(5),
+        {
+            children: n
+        } = e,
+        r = oe(),
+        i;
+    t[0] === r ? i = t[1] : (i = r.formatMessage(w.projectsPageTitle), t[0] = r, t[1] = i);
+    let a;
+    return t[2] !== n || t[3] !== i ? (a = (0, $.jsx)(`div`, {
+        role: `grid`,
+        "aria-label": i,
+        children: n
+    }), t[2] = n, t[3] = i, t[4] = a) : a = t[4], a
+}
+
+function Vt() {
+    "use forget";
+    let e = (0, Q.c)(2),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(zt, {}), e[0] = t) : t = e[0];
+    let n;
+    return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, $.jsxs)(Bt, {
+        children: [t, (0, $.jsx)(ft, {
+            className: `group skeleton [--skeleton-opacity:0.75]`,
+            children: Array.from({
+                length: 8
+            }, Ht)
+        })]
+    }), e[1] = n) : n = e[1], n
+}
+
+function Ht(e, t) {
+    return (0, $.jsx)(Wt, {}, `project-directory-skeleton-row-${t}`)
+}
+
+function Ut(e) {
+    "use forget";
+    let t = (0, Q.c)(8),
+        {
+            filtered: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, $.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-secondary mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl border`,
+        children: (0, $.jsx)(se, {
+            color: null,
+            strict: !0,
+            size: `lg`
+        })
+    }), t[0] = r) : r = t[0];
+    let i = n ? w.projectsPageNoResults : w.projectsPageEmptyState,
+        a;
+    t[1] === i ? a = t[2] : (a = (0, $.jsx)(`div`, {
+        className: `text-token-text-primary text-base font-medium`,
+        children: (0, $.jsx)(U, {
+            ...i
+        })
+    }), t[1] = i, t[2] = a);
+    let o;
+    t[3] === n ? o = t[4] : (o = n ? (0, $.jsx)(`div`, {
+        className: `text-token-text-secondary mt-2 text-sm`,
+        children: (0, $.jsx)(U, {
+            ...w.projectsPageNoResultsSubtitle
+        })
+    }) : null, t[3] = n, t[4] = o);
+    let s;
+    return t[5] !== a || t[6] !== o ? (s = (0, $.jsxs)(`div`, {
+        className: `px-0 py-16 text-center md:px-6`,
+        children: [r, a, o]
+    }), t[5] = a, t[6] = o, t[7] = s) : s = t[7], s
+}
+
+function Wt(e) {
+    "use forget";
+    let t = (0, Q.c)(11),
+        n;
+    t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+    let {
+        className: r,
+        shouldShowNewChatHoverButton: i
+    } = n, a = i !== void 0 && i && Mt.projectDirectoryGridColumnsWithNewChat, o;
+    t[2] !== r || t[3] !== a ? (o = s(`grid min-h-15 items-center gap-4 overflow-visible py-2.5 ps-0 pe-2`, Mt.projectDirectoryGridColumns, a, r), t[2] = r, t[3] = a, t[4] = o) : o = t[4];
+    let c;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, $.jsx)(`div`, {
+        className: `skeleton-child size-8 shrink-0 rounded-[8px]`
+    }), t[5] = c) : c = t[5];
+    let l;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, $.jsxs)(`div`, {
+        className: `flex min-w-0 items-center gap-4 text-start`,
+        children: [c, (0, $.jsxs)(`div`, {
+            className: `flex min-w-0 flex-col gap-1 sm:flex-row sm:items-center sm:gap-2`,
+            children: [(0, $.jsx)(`div`, {
+                className: `skeleton-child h-[14px] w-[160px] max-w-full rounded-md`
+            }), (0, $.jsx)(`div`, {
+                className: `skeleton-child h-[12px] w-14 rounded-md sm:hidden`
+            })]
+        })]
+    }), t[6] = l) : l = t[6];
+    let u;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, $.jsx)(`div`, {
+        className: `hidden justify-start sm:flex`,
+        children: (0, $.jsx)(`div`, {
+            className: `skeleton-child h-[14px] w-16 rounded-md`
+        })
+    }), t[7] = u) : u = t[7];
+    let d;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, $.jsx)(`div`, {
+        className: `-me-2 flex justify-end`,
+        "aria-hidden": `true`,
+        children: (0, $.jsx)(`div`, {
+            className: `skeleton-child h-9 w-9 rounded-[6px]`
+        })
+    }), t[8] = d) : d = t[8];
+    let f;
+    return t[9] === o ? f = t[10] : (f = (0, $.jsxs)(`div`, {
+        className: o,
+        children: [l, u, d]
+    }), t[9] = o, t[10] = f), f
+}
+
+function Gt(e) {
+    "use forget";
+    let t = (0, Q.c)(120),
+        {
+            project: r,
+            isPinned: i,
+            shouldShowNewChatHoverButton: a
+        } = e,
+        o = oe(),
+        c = ae(),
+        [l, u] = (0, on.useState)(!1),
+        d = n(I),
+        f = n(D),
+        p = n(N),
+        h = d && p && !f,
+        g = r.gizmo.gizmo.display.name,
+        _ = r.gizmo.gizmo.display.emoji,
+        v = _ != null && an(_) ? _ : null,
+        y;
+    t[0] === r.gizmo ? y = t[1] : (y = te(r.gizmo), t[0] = r.gizmo, t[1] = y);
+    let b = y,
+        x;
+    t[2] !== o || t[3] !== b || t[4] !== r ? (x = b ? `—` : $t(o, tn(r)), t[2] = o, t[3] = b, t[4] = r, t[5] = x) : x = t[5];
+    let S = x,
+        C;
+    t[6] === r.gizmo ? C = t[7] : (C = ie(r.gizmo), t[6] = r.gizmo, t[7] = C);
+    let T = C,
+        E, ee, O, k, A, j, M, P, F, ne, L, R, z, re, B, V, H, W, G;
+    if (t[8] !== o || t[9] !== l || t[10] !== b || t[11] !== i || t[12] !== T || t[13] !== c || t[14] !== r.gizmo || t[15] !== v || t[16] !== g || t[17] !== h || t[18] !== a || t[19] !== S) {
+        let e = s(`flex transition-opacity`, h && !l ? `pointer-events-none opacity-0 group-hover:pointer-events-auto group-hover:opacity-100 group-focus-within:pointer-events-auto group-focus-within:opacity-100` : `pointer-events-auto opacity-100`),
+            n = h ? `flex opacity-100 transition-opacity group-hover:opacity-0 group-focus-within:opacity-0` : `hidden`,
+            u = l && `opacity-0`,
+            d;
+        t[39] !== n || t[40] !== u ? (d = s(`text-token-icon-tertiary pointer-events-none absolute inset-y-0 end-0 size-9 items-center justify-center`, n, u), t[39] = n, t[40] = u, t[41] = d) : d = t[41];
+        let f = d;
+        E = _t, k = !1, A = !1, j = !1, M = !1, t[42] !== o || t[43] !== g ? (P = o.formatMessage(w.projectSidebarActionsMenuLabel, {
+            title: g
+        }), t[42] = o, t[43] = g, t[44] = P) : P = t[44], t[45] !== c || t[46] !== r.gizmo ? (F = () => {
+            ke(r.gizmo, () => {
+                let e = r.gizmo.gizmo.id;
+                m(`project_home_navigation`, {
+                    targetKey: e
+                }), m(`project_home_project_data_ready`, {
+                    targetKey: e
+                }), c(`/g/${r.gizmo.gizmo.id}/project`)
+            })
+        }, t[45] = c, t[46] = r.gizmo, t[47] = F) : F = t[47], ne = Kt;
+        let p = a && Mt.projectDirectoryGridColumnsWithNewChat;
+        t[48] === p ? L = t[49] : (L = s(Mt.projectDirectoryGridColumns, p), t[48] = p, t[49] = L);
+        let _;
+        t[50] !== b || t[51] !== T || t[52] !== r.gizmo.gizmo.display.theme || t[53] !== v ? (_ = (0, $.jsx)(`div`, {
+            className: `border-token-border-default bg-token-bg-primary flex size-8 shrink-0 items-center justify-center rounded-[8px] border`,
+            children: b ? (0, $.jsx)(qe, {
+                className: `text-token-text-primary h-5! w-5!`
+            }) : (0, $.jsx)(se, {
+                color: r.gizmo.gizmo.display.theme ?? null,
+                emoji: v,
+                isSharedProject: T,
+                className: `h-5! w-5!`,
+                strict: !0
+            })
+        }), t[50] = b, t[51] = T, t[52] = r.gizmo.gizmo.display.theme, t[53] = v, t[54] = _) : _ = t[54];
+        let y;
+        t[55] === i ? y = t[56] : (y = i ? (0, $.jsx)(`span`, {
+            className: `sr-only`,
+            children: (0, $.jsx)(U, {
+                ...w.projectsPagePinnedProjectStatus
+            })
+        }) : null, t[55] = i, t[56] = y);
+        let x;
+        t[57] !== g || t[58] !== y ? (x = (0, $.jsxs)(`div`, {
+            className: `text-token-text-primary min-w-0 truncate text-[14px] leading-5`,
+            children: [g, y]
+        }), t[57] = g, t[58] = y, t[59] = x) : x = t[59];
+        let C;
+        t[60] === T ? C = t[61] : (C = T ? (0, $.jsx)($e, {
+            "aria-hidden": `true`,
+            className: `text-token-icon-primary h-4 w-4 shrink-0`
+        }) : null, t[60] = T, t[61] = C);
+        let te;
+        t[62] !== x || t[63] !== C ? (te = (0, $.jsxs)(`div`, {
+            className: `flex min-w-0 items-center gap-2 text-[14px] leading-5`,
+            children: [x, C]
+        }), t[62] = x, t[63] = C, t[64] = te) : te = t[64];
+        let D;
+        t[65] === S ? D = t[66] : (D = (0, $.jsx)(`div`, {
+            className: `text-token-text-secondary mt-1 truncate text-[12px] leading-[16px] sm:hidden`,
+            children: S
+        }), t[65] = S, t[66] = D);
+        let N;
+        t[67] !== te || t[68] !== D ? (N = (0, $.jsxs)(`div`, {
+            className: `flex min-w-0 flex-col`,
+            children: [te, D]
+        }), t[67] = te, t[68] = D, t[69] = N) : N = t[69], t[70] !== _ || t[71] !== N ? (R = (0, $.jsxs)(vt, {
+            className: `relative z-10 flex min-w-0 items-center gap-3 text-start`,
+            children: [_, N]
+        }), t[70] = _, t[71] = N, t[72] = R) : R = t[72], t[73] === S ? z = t[74] : (z = (0, $.jsx)(vt, {
+            className: `text-token-text-secondary relative z-10 hidden truncate text-start text-[14px] leading-5 sm:block`,
+            children: S
+        }), t[73] = S, t[74] = z), G = `gridcell`, ee = `true`, O = `relative z-10 -me-2 flex items-center justify-end`, H = `flex items-center justify-end gap-1.5`, t[75] !== i || t[76] !== h ? (W = i ? (0, $.jsx)(`div`, {
+            "aria-hidden": `true`,
+            className: s(`text-token-icon-tertiary size-9 items-center justify-center rounded-[6px]`, h ? `hidden` : `flex`),
+            children: (0, $.jsx)(Je, {
+                className: `h-4 w-4`
+            })
+        }) : null, t[75] = i, t[76] = h, t[77] = W) : W = t[77];
+        let I = a ? `sm:w-[78px]` : `sm:w-9`;
+        t[78] === I ? B = t[79] : (B = s(`relative h-9 w-9 shrink-0`, I), t[78] = I, t[79] = B), t[80] !== f || t[81] !== i ? (V = i ? (0, $.jsx)(`div`, {
+            "aria-hidden": `true`,
+            className: f,
+            children: (0, $.jsx)(Je, {
+                className: `h-4 w-4`
+            })
+        }) : null, t[80] = f, t[81] = i, t[82] = V) : V = t[82], re = s(`absolute inset-y-0 end-0 flex items-center justify-end gap-1.5`, a ? `sm:w-[78px]` : `sm:w-9`, e), t[8] = o, t[9] = l, t[10] = b, t[11] = i, t[12] = T, t[13] = c, t[14] = r.gizmo, t[15] = v, t[16] = g, t[17] = h, t[18] = a, t[19] = S, t[20] = E, t[21] = ee, t[22] = O, t[23] = k, t[24] = A, t[25] = j, t[26] = M, t[27] = P, t[28] = F, t[29] = ne, t[30] = L, t[31] = R, t[32] = z, t[33] = re, t[34] = B, t[35] = V, t[36] = H, t[37] = W, t[38] = G
+    } else E = t[20], ee = t[21], O = t[22], k = t[23], A = t[24], j = t[25], M = t[26], P = t[27], F = t[28], ne = t[29], L = t[30], R = t[31], z = t[32], re = t[33], B = t[34], V = t[35], H = t[36], W = t[37], G = t[38];
+    let K;
+    t[83] !== r || t[84] !== a ? (K = a ? (0, $.jsx)(qt, {
+        project: r,
+        className: `hidden sm:flex`
+    }) : null, t[83] = r, t[84] = a, t[85] = K) : K = t[85];
+    let q;
+    t[86] !== l || t[87] !== i || t[88] !== r ? (q = (0, $.jsx)(Jt, {
+        project: r,
+        isPinned: i,
+        open: l,
+        onOpenChange: u
+    }), t[86] = l, t[87] = i, t[88] = r, t[89] = q) : q = t[89];
+    let J;
+    t[90] !== K || t[91] !== q || t[92] !== re ? (J = (0, $.jsxs)(`div`, {
+        className: re,
+        children: [K, q]
+    }), t[90] = K, t[91] = q, t[92] = re, t[93] = J) : J = t[93];
+    let Y;
+    t[94] !== J || t[95] !== B || t[96] !== V ? (Y = (0, $.jsxs)(`div`, {
+        className: B,
+        children: [V, J]
+    }), t[94] = J, t[95] = B, t[96] = V, t[97] = Y) : Y = t[97];
+    let X;
+    t[98] !== Y || t[99] !== H || t[100] !== W ? (X = (0, $.jsxs)(`div`, {
+        className: H,
+        children: [W, Y]
+    }), t[98] = Y, t[99] = H, t[100] = W, t[101] = X) : X = t[101];
+    let Z;
+    t[102] !== ee || t[103] !== O || t[104] !== X || t[105] !== G ? (Z = (0, $.jsx)(`div`, {
+        role: G,
+        "data-page-table-row-actions": ee,
+        className: O,
+        children: X
+    }), t[102] = ee, t[103] = O, t[104] = X, t[105] = G, t[106] = Z) : Z = t[106];
+    let ce;
+    return t[107] !== E || t[108] !== k || t[109] !== A || t[110] !== j || t[111] !== M || t[112] !== P || t[113] !== F || t[114] !== ne || t[115] !== L || t[116] !== R || t[117] !== z || t[118] !== Z ? (ce = (0, $.jsxs)(E, {
+        selectionEnabled: k,
+        checked: A,
+        active: j,
+        showCheckbox: M,
+        checkboxLabel: P,
+        onActivate: F,
+        onCheckedChange: ne,
+        className: L,
+        children: [R, z, Z]
+    }), t[107] = E, t[108] = k, t[109] = A, t[110] = j, t[111] = M, t[112] = P, t[113] = F, t[114] = ne, t[115] = L, t[116] = R, t[117] = z, t[118] = Z, t[119] = ce) : ce = t[119], ce
+}
+
+function Kt() {}
+
+function qt(e) {
+    "use forget";
+    let t = (0, Q.c)(15),
+        {
+            project: n,
+            className: r
+        } = e,
+        i = oe(),
+        a = ae(),
+        o;
+    t[0] === i ? o = t[1] : (o = i.formatMessage(ge.newChat), t[0] = i, t[1] = o);
+    let c = o,
+        l;
+    t[2] === r ? l = t[3] : (l = s(`keyboard-focused:focus-ring text-token-icon-tertiary hover:bg-token-bg-tertiary size-9 min-h-9 items-center justify-center rounded-[6px] border-0 p-0 transition-colors outline-none`, r), t[2] = r, t[3] = l);
+    let u;
+    t[4] !== a || t[5] !== n.gizmo ? (u = e => {
+        e.stopPropagation(), ke(n.gizmo, () => {
+            a(x(n.gizmo))
+        })
+    }, t[4] = a, t[5] = n.gizmo, t[6] = u) : u = t[6];
+    let d;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, $.jsx)(Ot.Compose, {}), t[7] = d) : d = t[7];
+    let f;
+    t[8] !== c || t[9] !== l || t[10] !== u ? (f = (0, $.jsx)(`button`, {
+        type: `button`,
+        "aria-label": c,
+        "data-page-table-grid-focus-target": `true`,
+        "data-page-table-row-actions-focus-target": `true`,
+        className: l,
+        onClick: u,
+        children: d
+    }), t[8] = c, t[9] = l, t[10] = u, t[11] = f) : f = t[11];
+    let p;
+    return t[12] !== c || t[13] !== f ? (p = (0, $.jsx)(v, {
+        label: c,
+        children: f
+    }), t[12] = c, t[13] = f, t[14] = p) : p = t[14], p
+}
+
+function Jt(e) {
+    "use forget";
+    let t = (0, Q.c)(50),
+        {
+            project: n,
+            isPinned: r,
+            open: a,
+            onOpenChange: o
+        } = e,
+        s = oe(),
+        c;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = f(), t[0] = c) : c = t[0];
+    let l = c,
+        u = n.gizmo.gizmo.display.name,
+        d = n.gizmo.gizmo.id,
+        m;
+    t[1] === n.gizmo ? m = t[2] : (m = te(n.gizmo), t[1] = n.gizmo, t[2] = m);
+    let h = m,
+        {
+            mutate: g
+        } = ne(),
+        _ = n.gizmo.gizmo.author.user_id === l?.normalizedAccountUserId,
+        {
+            canOpen: v
+        } = A(n.gizmo),
+        y;
+    t[3] !== v || t[4] !== n.gizmo ? (y = v && !F(n.gizmo), t[3] = v, t[4] = n.gizmo, t[5] = y) : y = t[5];
+    let b = y,
+        {
+            canEdit: x
+        } = p(n.gizmo),
+        {
+            canDelete: S
+        } = i(n.gizmo),
+        C = (0, on.useRef)(!1),
+        E;
+    t[6] === r ? E = t[7] : (E = r ? (0, $.jsx)(it, {
+        className: `h-5 w-5`,
+        "aria-hidden": `true`
+    }) : (0, $.jsx)(rt, {
+        className: `h-5 w-5`,
+        "aria-hidden": `true`
+    }), t[6] = r, t[7] = E);
+    let ee = E,
+        D;
+    t[8] === n.gizmo ? D = t[9] : (D = () => {
+        T(_e, {
+            gizmo: B(n.gizmo),
+            publishedGizmo: n.gizmo,
+            onClose: Zt
+        })
+    }, t[8] = n.gizmo, t[9] = D);
+    let O = re(D),
+        k;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (k = e => {
+        C.current && (C.current = !1, e.preventDefault())
+    }, t[10] = k) : k = t[10];
+    let j;
+    t[11] !== s || t[12] !== u ? (j = s.formatMessage(w.projectSidebarActionsMenuLabel, {
+        title: u
+    }), t[11] = s, t[12] = u, t[13] = j) : j = t[13];
+    let M;
+    t[14] === j ? M = t[15] : (M = (0, $.jsx)(gt, {
+        label: j
+    }), t[14] = j, t[15] = M);
+    let N;
+    t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (N = () => {
+        C.current = !0
+    }, t[16] = N) : N = t[16];
+    let P;
+    t[17] !== r || t[18] !== g || t[19] !== n ? (P = () => {
+        g({
+            isPinned: !r,
+            project: n
+        })
+    }, t[17] = r, t[18] = g, t[19] = n, t[20] = P) : P = t[20];
+    let I = r ? w.unpinProjectDropdownButton : w.pinProjectDropdownButton,
+        L;
+    t[21] === I ? L = t[22] : (L = (0, $.jsx)(U, {
+        ...I
+    }), t[21] = I, t[22] = L);
+    let R;
+    t[23] !== ee || t[24] !== P || t[25] !== L ? (R = (0, $.jsx)(me.Item, {
+        className: `keyboard-focused:focus-ring`,
+        icon: ee,
+        onPointerDown: N,
+        onClick: P,
+        children: L
+    }), t[23] = ee, t[24] = P, t[25] = L, t[26] = R) : R = t[26];
+    let z;
+    t[27] !== O || t[28] !== b ? (z = b ? (0, $.jsx)(me.Item, {
+        className: `keyboard-focused:focus-ring`,
+        icon: (0, $.jsx)(Ot.Share, {
+            className: `h-5 w-5`
+        }),
+        onClick: () => {
+            O()
+        },
+        children: (0, $.jsx)(U, {
+            ...w.projectShareButton
+        })
+    }) : null, t[27] = O, t[28] = b, t[29] = z) : z = t[29];
+    let ie;
+    t[30] !== x || t[31] !== h || t[32] !== n.gizmo ? (ie = x && !h ? (0, $.jsx)(me.Item, {
+        className: `keyboard-focused:focus-ring`,
+        icon: (0, $.jsx)(Ot.Settings, {
+            className: `h-5 w-5`
+        }),
+        onClick: () => {
+            T(le, {
+                gizmo: n.gizmo,
+                onClose: Xt
+            })
+        },
+        children: (0, $.jsx)(U, {
+            ...w.projectSettings
+        })
+    }) : null, t[30] = x, t[31] = h, t[32] = n.gizmo, t[33] = ie) : ie = t[33];
+    let V;
+    t[34] !== S || t[35] !== x || t[36] !== h || t[37] !== _ || t[38] !== n.gizmo || t[39] !== d || t[40] !== b ? (V = S && _ && !h ? (0, $.jsx)(me.Group, {
+        separator: b || x,
+        children: (0, $.jsx)(me.Item, {
+            color: `danger`,
+            className: `keyboard-focused:focus-ring`,
+            icon: (0, $.jsx)(Ot.Trash, {
+                className: `text-token-text-status-error h-5 w-5`
+            }),
+            onClick: () => {
+                T(Oe, {
+                    gizmoId: d,
+                    gizmo: n.gizmo,
+                    handleDelete: Yt
+                })
+            },
+            children: (0, $.jsx)(U, {
+                ...w.deleteProjectDropdownButton
+            })
+        })
+    }) : null, t[34] = S, t[35] = x, t[36] = h, t[37] = _, t[38] = n.gizmo, t[39] = d, t[40] = b, t[41] = V) : V = t[41];
+    let H;
+    return t[42] !== o || t[43] !== a || t[44] !== R || t[45] !== z || t[46] !== ie || t[47] !== V || t[48] !== M ? (H = (0, $.jsxs)(fe, {
+        open: a,
+        onOpenChange: o,
+        onCloseAutoFocus: k,
+        triggerButton: M,
+        contentAlign: `end`,
+        sideOffset: 4,
+        alignOffset: -4,
+        size: `small`,
+        contentClassName: `w-50 max-w-[95vw]`,
+        children: [R, z, ie, V]
+    }), t[42] = o, t[43] = a, t[44] = R, t[45] = z, t[46] = ie, t[47] = V, t[48] = M, t[49] = H) : H = t[49], H
+}
+
+function Yt() {
+    g(Oe)
+}
+
+function Xt() {
+    return g(le)
+}
+
+function Zt() {
+    return g(_e)
+}
+
+function Qt(e, t) {
+    return t ? e.gizmo.gizmo.author.user_id === t ? `owned` : `shared` : ie(e.gizmo) ? `shared` : `owned`
+}
+
+function $t(e, t) {
+    if (!t) return null;
+    let n = new Date(t);
+    return Number.isNaN(n.getTime()) ? null : q(e, n)
+}
+
+function en(e) {
+    let t = new Date(tn(e) ?? ``).getTime();
+    return Number.isNaN(t) ? 0 : t
+}
+
+function tn(e) {
+    return e.gizmo.gizmo.version_updated_at ?? e.gizmo.gizmo.updated_at
+}
+
+function nn(e, t) {
+    let n = en(t) - en(e);
+    return n === 0 ? e.gizmo.gizmo.display.name.localeCompare(t.gizmo.gizmo.display.name) : n
+}
+
+function rn(e, t) {
+    let n = [],
+        r = [];
+    for (let i of e) t.has(i.gizmo.gizmo.id) ? n.push(i) : r.push(i);
+    return n.sort(nn), r.sort(nn), [...n, ...r]
+}
+
+function an(e) {
+    return e in ye
+}
+var Q, on, $, sn = e((() => {
+    Q = K(), u(), we(), Ce(), et(), Ze(), Qe(), nt(), Ye(), tt(), Pe(), y(), _(), C(), ve(), De(), ot(), mt(), St(), je(), bt(), de(), ue(), xe(), kt(), Le(), X(), Ke(), R(), P(), r(), l(), E(), h(), o(), Ee(), dt(), k(), ct(), c(), S(), ze(), b(), d(), on = t(G()), W(), V(), be(), Nt(), $ = H()
+}));
+export {
+    sn as n, Pt as t
+};
 //# sourceMappingURL=25afeb5a-b2dayb4rg293eu8k.js.map

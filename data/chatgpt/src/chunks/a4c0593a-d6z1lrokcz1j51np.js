@@ -1,2 +1,171 @@
-import{n as e,r as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{CK as n,Dat as r,Git as i,L7 as a,Nat as o,P7 as s,aat as c,cat as l,lat as u,qit as d,wK as f}from"./4813494d-qsuygr73qjc6rh65.js";import{_nt as p,aTn as m,iTn as h,vnt as g}from"./conversation-small-cawdu7il3ha6y70c.js";import{DS as _,HS as v,LS as y,XS as b,qS as x,vS as S}from"./c2675c8c-nxl2ic2ofk2vw70s.js";function C(e,t=globalThis.location?.origin){try{let n=new URL(e,t),r=n.pathname.replace(/\/+$/,``);return r.endsWith(`/backend-api`)?n.pathname=`${r}/admin`:r.endsWith(`/api`)?n.pathname=`${r.slice(0,-4)}/admin`:n.pathname=`${r}/admin`,n.search=``,n.hash=``,n.toString()}catch{return`${e.replace(/\/+$/,``)}/admin`}}var w=e((()=>{})),T=t({AdminConnectorsRequest:()=>k,MicrosoftAdminConsentSheepRequest:()=>j,SHEEP_ROUTING_HEADERS:()=>O,SharePointWorkspaceRequest:()=>A,getMicrosoftSensitivityLabels:()=>E,resolveSharePointSites:()=>D});async function E({workspaceId:e,connectorId:t,linkId:a,signal:o}){let s=await p.safePost(`/mcp`,{authOption:c.Required,signal:o,preserveAccountIdOnRetry:!0,cache:`no-store`,additionalHeaders:{...n(e),[i]:h.ADMIN_SETTING,Accept:`application/json`},requestBody:{jsonrpc:`2.0`,id:1,method:`tools/call`,params:{name:`get_sensitivity_labels`,arguments:{},_meta:{_codex_apps:{resource_uri:`/${t}/${a}/get_sensitivity_labels`}}}}});if(`error`in s||s.id!==1)throw Error(`Sensitivity-label catalog request failed`);let l=s.result;if(l.isError){let e=P.safeParse(l._meta);throw e.success&&e.data[`openai/connector_auth`].connector_id===t&&e.data[`openai/connector_auth`].link_id===a?new r(`/mcp`,403,{detail:{error_data:{action:`TRIGGER_REAUTHENTICATION`}}},void 0,Error(`Sensitivity-label catalog requires reconnection`)):Error(`Sensitivity-label catalog action failed`)}let u=N.parse(l.structuredContent),d=[],f=[...u.value];for(let e=0;e<f.length;e++){let t=M.parse(f[e]),n=t.display_name?.trim()||t.name.trim();n&&d.push({id:t.id,display_name:n}),f.push(...t.sublabels??[])}return{labels:d}}async function D({workspaceId:e,connectorId:t,linkId:r,siteCollectionIds:a,siteUrls:o}){let s=await p.safePost(`/v2/connectors/{connector_id}/sharepoint/resolve_sites`,{authOption:c.Required,additionalHeaders:{...n(e),[i]:h.ADMIN_SETTING},parameters:{path:{connector_id:t}},requestBody:{link_id:r,...a?{site_collection_ids:a}:{},...o?{site_urls:o}:{}}});return{sites:s.sites,results:s.results??[]}}var O,k,A,j,M,N,P,F=e((()=>{f(),m(),g(),w(),u(),d(),o(),a(),S(),O={"x-openai-use-sheep":`1`},k=new s({baseUrl:C(l)}),A=new s({baseUrl:l,targetRoutesAreCanonical:!0}),j=new s({baseUrl:l,targetRoutesAreCanonical:!0}),M=v({id:x(),name:x(),display_name:x().nullish(),sublabels:_(b()).optional()}),N=v({value:_(b())}),P=v({"openai/tool_error_kind":y(`connector_auth_required`),"openai/connector_auth":v({connector_id:x(),link_id:x().nullish()})})}));export{E as a,T as i,O as n,F as o,A as r,D as s,k as t};
+import {
+    n as e,
+    r as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    CK as n,
+    Dat as r,
+    Git as i,
+    L7 as a,
+    Nat as o,
+    P7 as s,
+    aat as c,
+    cat as l,
+    lat as u,
+    qit as d,
+    wK as f
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    _nt as p,
+    aTn as m,
+    iTn as h,
+    vnt as g
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    DS as _,
+    HS as v,
+    LS as y,
+    XS as b,
+    qS as x,
+    vS as S
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+
+function C(e, t = globalThis.location?.origin) {
+    try {
+        let n = new URL(e, t),
+            r = n.pathname.replace(/\/+$/, ``);
+        return r.endsWith(`/backend-api`) ? n.pathname = `${r}/admin` : r.endsWith(`/api`) ? n.pathname = `${r.slice(0,-4)}/admin` : n.pathname = `${r}/admin`, n.search = ``, n.hash = ``, n.toString()
+    } catch {
+        return `${e.replace(/\/+$/,``)}/admin`
+    }
+}
+var w = e((() => {})),
+    T = t({
+        AdminConnectorsRequest: () => k,
+        MicrosoftAdminConsentSheepRequest: () => j,
+        SHEEP_ROUTING_HEADERS: () => O,
+        SharePointWorkspaceRequest: () => A,
+        getMicrosoftSensitivityLabels: () => E,
+        resolveSharePointSites: () => D
+    });
+async function E({
+    workspaceId: e,
+    connectorId: t,
+    linkId: a,
+    signal: o
+}) {
+    let s = await p.safePost(`/mcp`, {
+        authOption: c.Required,
+        signal: o,
+        preserveAccountIdOnRetry: !0,
+        cache: `no-store`,
+        additionalHeaders: {
+            ...n(e),
+            [i]: h.ADMIN_SETTING,
+            Accept: `application/json`
+        },
+        requestBody: {
+            jsonrpc: `2.0`,
+            id: 1,
+            method: `tools/call`,
+            params: {
+                name: `get_sensitivity_labels`,
+                arguments: {},
+                _meta: {
+                    _codex_apps: {
+                        resource_uri: `/${t}/${a}/get_sensitivity_labels`
+                    }
+                }
+            }
+        }
+    });
+    if (`error` in s || s.id !== 1) throw Error(`Sensitivity-label catalog request failed`);
+    let l = s.result;
+    if (l.isError) {
+        let e = P.safeParse(l._meta);
+        throw e.success && e.data[`openai/connector_auth`].connector_id === t && e.data[`openai/connector_auth`].link_id === a ? new r(`/mcp`, 403, {
+            detail: {
+                error_data: {
+                    action: `TRIGGER_REAUTHENTICATION`
+                }
+            }
+        }, void 0, Error(`Sensitivity-label catalog requires reconnection`)) : Error(`Sensitivity-label catalog action failed`)
+    }
+    let u = N.parse(l.structuredContent),
+        d = [],
+        f = [...u.value];
+    for (let e = 0; e < f.length; e++) {
+        let t = M.parse(f[e]),
+            n = t.display_name?.trim() || t.name.trim();
+        n && d.push({
+            id: t.id,
+            display_name: n
+        }), f.push(...t.sublabels ?? [])
+    }
+    return {
+        labels: d
+    }
+}
+async function D({
+    workspaceId: e,
+    connectorId: t,
+    linkId: r,
+    siteCollectionIds: a,
+    siteUrls: o
+}) {
+    let s = await p.safePost(`/v2/connectors/{connector_id}/sharepoint/resolve_sites`, {
+        authOption: c.Required,
+        additionalHeaders: {
+            ...n(e),
+            [i]: h.ADMIN_SETTING
+        },
+        parameters: {
+            path: {
+                connector_id: t
+            }
+        },
+        requestBody: {
+            link_id: r,
+            ...a ? {
+                site_collection_ids: a
+            } : {},
+            ...o ? {
+                site_urls: o
+            } : {}
+        }
+    });
+    return {
+        sites: s.sites,
+        results: s.results ?? []
+    }
+}
+var O, k, A, j, M, N, P, F = e((() => {
+    f(), m(), g(), w(), u(), d(), o(), a(), S(), O = {
+        "x-openai-use-sheep": `1`
+    }, k = new s({
+        baseUrl: C(l)
+    }), A = new s({
+        baseUrl: l,
+        targetRoutesAreCanonical: !0
+    }), j = new s({
+        baseUrl: l,
+        targetRoutesAreCanonical: !0
+    }), M = v({
+        id: x(),
+        name: x(),
+        display_name: x().nullish(),
+        sublabels: _(b()).optional()
+    }), N = v({
+        value: _(b())
+    }), P = v({
+        "openai/tool_error_kind": y(`connector_auth_required`),
+        "openai/connector_auth": v({
+            connector_id: x(),
+            link_id: x().nullish()
+        })
+    })
+}));
+export {
+    E as a, T as i, O as n, F as o, A as r, D as s, k as t
+};
 //# sourceMappingURL=a4c0593a-d6z1lrokcz1j51np.js.map

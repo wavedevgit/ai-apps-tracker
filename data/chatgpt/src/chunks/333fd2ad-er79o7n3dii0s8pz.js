@@ -1,2 +1,79 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{$G as t,$st as n,Hnt as r,I1 as i,J1 as a,Jnt as o,M1 as s,Qit as c,S1 as l,Y1 as u,Zit as d,Zst as f,aK as p,b1 as m,cK as h,eat as g,lK as _,nK as v}from"./4813494d-qsuygr73qjc6rh65.js";import{Tn as y}from"./2340486e-komxp8tzs51ny4jj.js";function b(e,t){let n=(e??(t.data==null&&(t.isLoading||t.isError)?s():null))?.getWorkspaceId(),r=d.getCookie(g.Workspace);return!n||r!=null&&r!==n?void 0:n}function x(){return b(l(),m())}var S=e((()=>{i(),c()}));function C(){return T(l(),m(),p())}function w(){"use forget";let e=(0,E.c)(7),t=u(),n=a(),r;e[0]!==t||e[1]!==n?(r=b(t,n),e[0]=t,e[1]=n,e[2]=r):r=e[2];let i=v(r),o;return e[3]!==t||e[4]!==n||e[5]!==i?(o=T(t,n,i),e[3]=t,e[4]=n,e[5]=i,e[6]=o):o=e[6],o===`ENABLED`}function T(e,t,{data:n,isLoading:i,isError:a}){if(r(`2358095084`))return`ENABLED`;let o=r(`3829681746`),s=b(e,t);if(s==null)return o&&e==null&&t.isLoading?`LOADING`:`DISABLED`;if(o&&!t.isLoading&&!t.isError&&e?.isWorkspaceAccount()&&e.canAccessWithCurrentSession&&!e.isDeactivated()&&e.data.hasExplicitRole===!0&&(e.data.role===f.OWNER||e.data.role===f.ADMIN))return`ENABLED`;if(a)return`ERROR`;let c=n?.workspace_id===s?n:void 0,l=c?.permissions?.includes(h.CodexAdminAccess),u=c?.beta_settings?.codex_admin===!0;return l||u?`ENABLED`:o&&t.isError?`ERROR`:i&&n==null||o&&t.isLoading?`LOADING`:`DISABLED`}var E,D=e((()=>{E=y(),n(),_(),t(),i(),o(),S()}));export{S as a,x as i,D as n,w as r,C as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $G as t,
+    $st as n,
+    Hnt as r,
+    I1 as i,
+    J1 as a,
+    Jnt as o,
+    M1 as s,
+    Qit as c,
+    S1 as l,
+    Y1 as u,
+    Zit as d,
+    Zst as f,
+    aK as p,
+    b1 as m,
+    cK as h,
+    eat as g,
+    lK as _,
+    nK as v
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Tn as y
+} from "./2340486e-komxp8tzs51ny4jj.js";
+
+function b(e, t) {
+    let n = (e ?? (t.data == null && (t.isLoading || t.isError) ? s() : null))?.getWorkspaceId(),
+        r = d.getCookie(g.Workspace);
+    return !n || r != null && r !== n ? void 0 : n
+}
+
+function x() {
+    return b(l(), m())
+}
+var S = e((() => {
+    i(), c()
+}));
+
+function C() {
+    return T(l(), m(), p())
+}
+
+function w() {
+    "use forget";
+    let e = (0, E.c)(7),
+        t = u(),
+        n = a(),
+        r;
+    e[0] !== t || e[1] !== n ? (r = b(t, n), e[0] = t, e[1] = n, e[2] = r) : r = e[2];
+    let i = v(r),
+        o;
+    return e[3] !== t || e[4] !== n || e[5] !== i ? (o = T(t, n, i), e[3] = t, e[4] = n, e[5] = i, e[6] = o) : o = e[6], o === `ENABLED`
+}
+
+function T(e, t, {
+    data: n,
+    isLoading: i,
+    isError: a
+}) {
+    if (r(`2358095084`)) return `ENABLED`;
+    let o = r(`3829681746`),
+        s = b(e, t);
+    if (s == null) return o && e == null && t.isLoading ? `LOADING` : `DISABLED`;
+    if (o && !t.isLoading && !t.isError && e?.isWorkspaceAccount() && e.canAccessWithCurrentSession && !e.isDeactivated() && e.data.hasExplicitRole === !0 && (e.data.role === f.OWNER || e.data.role === f.ADMIN)) return `ENABLED`;
+    if (a) return `ERROR`;
+    let c = n?.workspace_id === s ? n : void 0,
+        l = c?.permissions?.includes(h.CodexAdminAccess),
+        u = c?.beta_settings?.codex_admin === !0;
+    return l || u ? `ENABLED` : o && t.isError ? `ERROR` : i && n == null || o && t.isLoading ? `LOADING` : `DISABLED`
+}
+var E, D = e((() => {
+    E = y(), n(), _(), t(), i(), o(), S()
+}));
+export {
+    S as a, x as i, D as n, w as r, C as t
+};
 //# sourceMappingURL=333fd2ad-er79o7n3dii0s8pz.js.map

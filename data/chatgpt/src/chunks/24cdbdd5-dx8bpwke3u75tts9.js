@@ -1,14 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-var t, n, r, i, a = e((() => {
-    t = `vHIrlq_backdrop`, n = `vHIrlq_dialog`, r = `vHIrlq_showcaseEditor`, i = {
-        backdrop: t,
-        dialog: n,
-        showcaseEditor: r
-    }
-}));
-export {
-    i as n, a as t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n,r,i,a=e((()=>{t=`vHIrlq_backdrop`,n=`vHIrlq_dialog`,r=`vHIrlq_showcaseEditor`,i={backdrop:t,dialog:n,showcaseEditor:r}}));export{i as n,a as t};
 //# sourceMappingURL=24cdbdd5-dx8bpwke3u75tts9.js.map

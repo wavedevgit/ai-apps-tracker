@@ -1,2 +1,832 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$8 as n,A5 as r,At as i,G5 as a,K5 as o,SN as s,Xy as c,Yy as l,aq as u,cn as d,e5 as f,f8 as p,hn as m,nn as h,on as g,oq as ee,vn as _,yN as v}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as y,Ln as b,Rn as x,Vn as S,zn as C}from"./2340486e-oc6d2eodbcrmxur3.js";import{IVt as w,LVt as T,_gn as te,cUn as ne,lUn as E,mUn as D,pUn as re,ygn as O}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{Dg as k,Og as A,_y as ie,gy as j}from"./30901919-om7b3qf5hp4j9x4l.js";import{At as M,U as N,W as P,kt as ae}from"./82782bc9-cz4jkhg31tycbqqf.js";import{c as oe,s as se}from"./31cec8d8-ejzahhq8v425zkie.js";import{n as F,t as ce}from"./b4b33d24-kjje5y8qaeodnp6k.js";import{f as le,r as ue}from"./bcae0416-gkbk5fuozoi1k6dj.js";import{_ as de,g as I,i as L,m as fe,o as pe,p as me,u as R}from"./df59e297-o3612z5rjm7jpxw4.js";function he(e){let{doc:t,selection:n}=e,{$from:r,$to:i}=n,{pos:a}=r,{pos:o}=i,s=t.textBetween(a,o);try{return{sourceFrom:de(t,r),sourceTo:I(t,i),from:a,to:o,selectedText:s}}catch(e){ne.logError(`Getting source selection`,e)}return{selectedText:s,from:a,to:o}}var z=e((()=>{E(),fe()})),B,V=e((()=>{B={type:`spring`,bounce:.2,duration:.5}}));function ge(e){return e instanceof N}function _e(e){return e instanceof ue}var H=e((()=>{le(),P()}));function ve(){let e=pe(),t=me();return(0,U.useMemo)(()=>()=>e()??t(),[e,t])}var U,ye=e((()=>{R(),L(),U=t(S())}));function be({accelerator:e,size:t,opacity:n,onClick:i,onSubmit:o,disableHeightAnimation:s=!1,disableLabel:c=!1,isCancelledScrubber:l=!1,isSmall:u=!1,isConfirming:f}){let{title:p,icon:m}=e,h=r(ee),g=C();return(0,G.jsxs)(`div`,{className:`relative`,children:[!h&&!c&&(0,G.jsx)(d.div,{className:`text-token-text-secondary absolute end-full top-1/2 w-[160px] -translate-y-1/2 transform pe-4 text-end text-sm`,initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:.2},children:g.formatMessage(p)}),(0,G.jsx)(xe,{size:t,onClick:i,opacity:n,initialHeight:l||s?`auto`:0,initialScale:l?.88:.5,title:p,isSmall:u,isConfirming:f,onSubmit:o,icon:(0,G.jsx)(m,{className:a(`text-token-primary m-auto`,u?`icon`:`icon-lg`)})})]})}var W,G,xe,K=e((()=>{k(),c(),p(),u(),o(),i(),W=t(S()),x(),V(),G=y(),xe=({title:e,icon:t,size:n,opacity:i,initialHeight:o=n,initialScale:s=1,onClick:c,isConfirming:u,isSmall:f,onSubmit:p})=>{let m=C(),h=_(),[g,v]=(0,W.useState)(!1),y=r(ee),b=(0,G.jsx)(d.div,{initial:{scale:s,opacity:0},animate:{scale:1,opacity:1,transition:{type:`spring`,bounce:.24,duration:.52}},exit:{scale:.5,opacity:0,transition:{type:`spring`,bounce:.24,duration:.52,opacity:{duration:.1}}},whileHover:{scale:1.15},transition:B,children:(0,G.jsx)(d.div,{className:`flex cursor-pointer items-start overflow-hidden`,initial:{width:n,height:n},animate:{width:n,height:n},transition:B,onMouseEnter:()=>{v(!0)},onMouseLeave:()=>{v(!1)},children:u?(0,G.jsx)(d.button,{className:`m-auto flex h-8 w-8 items-center justify-center rounded-full bg-black text-center dark:bg-white`,initial:{opacity:0,scale:.64},animate:{opacity:1,scale:1},exit:{opacity:0,scale:.64},transition:{type:`spring`,duration:.32,bounce:.14},onClick:p,children:(0,G.jsx)(A,{className:a(`animate-pulsing text-white dark:text-black`,f?`icon`:`icon-lg`)})}):t})});return(0,G.jsx)(d.div,{role:`button`,onClick:c,initial:{height:o},animate:{height:n,opacity:u?1:i??.52},exit:{height:0},whileHover:{opacity:1},transition:B,children:y?(0,G.jsx)(l,{open:h?!!(u||g):!1,label:m.formatMessage(e),side:`left`,contentClassName:`pointer-events-none`,children:b}):b})}}));function Se({title:e,onSubmit:t,icon:n}){let r=C(),i=n;return(0,q.jsxs)(d.div,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},onClick:t,className:`text-token-text-secondary hover:text-token-text-primary flex aspect-square w-20 max-w-20 min-w-20 cursor-pointer flex-col items-center rounded-2xl p-3 transition-colors hover:bg-gray-100/75 dark:hover:bg-gray-700`,children:[(0,q.jsx)(i,{className:`icon-2xl m-auto`}),(0,q.jsx)(`div`,{className:`line-clamp-1 w-16 max-w-16 overflow-hidden text-center text-xs`,children:r.formatMessage(e)})]})}function Ce({grid:e,onSubmit:t,title:n}){let r=C();return(0,q.jsxs)(`div`,{className:`flex h-full flex-col content-center gap-y-4 overflow-x-hidden px-3 py-4`,children:[(0,q.jsx)(`div`,{className:`text-token-primary mt-1 text-center font-medium`,children:n}),(0,q.jsx)(`div`,{className:`flex-auto`,children:(0,q.jsx)(`div`,{className:`grid grid-cols-2 gap-1`,children:e.map((n,i)=>(0,q.jsx)(Se,{title:n.title,icon:n.icon,onSubmit:n=>{let a=e[i];`prompt`in a&&t?.(n,r.formatMessage(a.prompt))}},i))})})]})}var q,we=e((()=>{i(),x(),q=y()}));function Te({title:e,onClick:t,isConfirming:n,onSubmit:r,isAnyItemConfirmed:i}){let o=C();return(0,J.jsxs)(d.div,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},onClick:t,className:a(`flex-item my-1 flex min-w-40 cursor-pointer items-center overflow-hidden rounded-2xl py-2 ps-4 pe-2 font-medium text-clip whitespace-nowrap transition-colors hover:bg-gray-100/75 dark:hover:bg-gray-700`,{"bg-gray-100/50 dark:bg-gray-700/50":n,"text-token-text-secondary hover:text-token-text-primary":!n&&i}),children:[(0,J.jsx)(`div`,{className:`flex-auto`,children:o.formatMessage(e)}),(0,J.jsx)(d.button,{className:a(`ms-3 h-6 w-6 rounded-full bg-black text-center dark:bg-white`,{"pointer-events-none invisible":!n}),initial:{opacity:0,scale:.64},animate:{opacity:+!!n,scale:n?1:.64},transition:{type:`spring`,duration:.32,bounce:.14},onClick:r,children:(0,J.jsx)(A,{className:`icon-lg text-white dark:text-black`})})]})}function Ee({menu:e,onConfirm:t,onSubmit:n}){let[r,i]=(0,De.useState)(!1),a=C();return(0,J.jsx)(`div`,{className:`h-full flex-col content-center overflow-x-hidden px-3`,children:e.map((o,s)=>(0,J.jsx)(Te,{title:o.title,isConfirming:r===s,isAnyItemConfirmed:r!==!1,onClick:()=>{i(s),t?.()},onSubmit:t=>{let r=e[s];`prompt`in r&&n?.(t,a.formatMessage(r.prompt))}},`menu-item-${o.title}`))})}var De,J,Oe=e((()=>{k(),o(),i(),De=t(S()),x(),J=y()})),ke,Ae=e((()=>{ke=e=>`isCancel`in e&&e.isCancel}));function je(e,t,n){return n===t?1:w((e-t)/(n-t),0,1)}function Me({size:e,acceleratorScrubber:t,onConfirm:n,onCancel:r,onSubmit:i,onDragStart:o,isConfirming:s}){let{icon:c}=t,u=`scrub`in t?t.scrub:[],f=e-12,p=C(),m=(0,Y.useRef)(null),ee=(0,Y.useRef)(null),[_,v]=(0,Y.useState)(u?Math.floor(u.length/2):0),y=Math.round(_),b=(0,Y.useRef)(_),x=u?p.formatMessage(u[y].title):null,S=h(0);return g(S,`change`,e=>{let t=je(e,-274/2+f/2,(Ne-6)/2-f/2)*(u?u.length-1:0);b.current=t,v(t)}),(0,X.jsx)(d.div,{ref:m,className:`start-items relative z-20 flex w-full`,style:{top:6,height:Ne-12},children:(0,X.jsx)(d.div,{drag:`y`,ref:ee,dragConstraints:m,dragMomentum:!1,dragElastic:0,className:a(`border-token-border-default m-auto rounded-full border shadow-md transition-colors`,s?`cursor-pointer bg-black dark:bg-white`:`bg-token-main-surface-primary cursor-grab`),style:{y:S,width:f,height:f},onDragStart:o,onDragEnd:()=>{if(!u||ke(u[y])||s)return r?.();u&&n?.()},children:(0,X.jsx)(l,{open:!0,label:x,side:`right`,children:(0,X.jsx)(`div`,{className:`flex h-full w-full items-center justify-center overflow-hidden`,children:s?(0,X.jsx)(A,{onClick:e=>{e.preventDefault(),!(!u||!s||!(`prompt`in u[y]))&&i?.(e,p.formatMessage(u[y].prompt))},className:`icon-xl animate-pulsing text-white dark:text-black`}):(0,X.jsx)(c,{className:`text-token-primary icon-lg m-auto`})})})})})}var Y,X,Ne,Pe=e((()=>{Ae(),k(),c(),o(),T(),i(),Y=t(S()),x(),X=y(),Ne=280}));function Fe({top:e}){return(0,Q.jsx)(d.div,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},className:`absolute start-1/2 m-auto h-1 w-1 -translate-x-1/2 rounded-full bg-gray-300`,style:{top:e}})}function Ie({bottom:e=20,right:t=20,isEmbeddedInPromptArea:i=!1,disableHint:o=!1,disableOverlay:c=!1,onCancel:l,onExpandedChange:u,onSubmit:f,isRequestActive:p=!1,isVisuallyHidden:h=!1,actions:g}){let[_,v]=(0,Z.useState)(!1),[y,b]=(0,Z.useState)(!o&&!p),[x,S]=(0,Z.useState)(!0),[w,T]=(0,Z.useState)(null),[E,D]=(0,Z.useState)(!1),[O,k]=(0,Z.useState)(!1),[A,j]=(0,Z.useState)(!1),[M,N]=(0,Z.useState)(null),[P,oe]=(0,Z.useState)(null),[F,le]=(0,Z.useState)(null),ue=!x,de=s(),I=i&&!y,L=I?Be:ze,fe=C(),pe=r(ee),me=ve(),R=(0,Z.useRef)(null),z=p||_,V=p&&!y&&x;(0,Z.useEffect)(()=>{y&&!O&&k(!0),u?.(y)},[y,O]),(0,Z.useEffect)(()=>{E&&!z&&!M&&(R.current!=null&&clearTimeout(R.current),b(!0)),!E&&!z&&!M&&(R.current!=null&&clearTimeout(R.current),R.current=window.setTimeout(()=>{b(!1),T(null),j(!1)},Re))},[E,z,M,y]),(0,Z.useEffect)(()=>{if(p){T(null);return}v(!1),!O&&!o&&(k(!0),b(!0),R.current!=null&&clearTimeout(R.current),R.current=window.setTimeout(()=>{b(!1),T(null),j(!1),k(!0)},Re))},[p,o,O]);let _e=e=>{T(e)},H=(e,t,n)=>{D(!1),v(!0),b(!1),T(null),j(!1),N(null),oe(null),le(null);let r=me(),i=(e,r)=>{ne.logButtonClick(re.ACCELERATOR,{action:{action:n.action,id:n.id,title:n.title},prompt:t,sourceFrom:e,sourceTo:r})};if(r&&ge(r)){let{state:a}=r,{sourceFrom:o,sourceTo:s}=he(a);if(i(o,s),o==null||s==null){f?.(e,null,t,n);return}f?.(e,{start:o,end:s},t,n);let c=a.tr.setSelection(ae.create(a.doc,a.selection.anchor));r.dispatch(c);return}i(),f?.(e,null,t,n)},U=g[0],ye=g.slice(1),W=!!M&&g.find(({id:e})=>e===M),G=!!P&&g.find(({id:e})=>e===P),K=!!F&&g.find(({id:e})=>e===F),Se=(e,t)=>{if(ue)return;if(!E){D(!0);return}let{id:n}=t;if(`scrub`in t)return N(n);if(`menu`in t)return oe(n);if(`grid`in t)return le(n);_e(n)},q=(e,t)=>{ue||`prompt`in t&&H(e,fe.formatMessage(t.prompt),t)},we=ye.map(e=>{if(!y)return null;let{id:t}=e;return(0,Q.jsx)(be,{accelerator:e,isConfirming:t===w,isCancelledScrubber:A,size:L,onClick:t=>Se(t,e),onSubmit:t=>q(t,e)},t)}),Te=(0,Z.useRef)(null);(0,Z.useEffect)(()=>{let{current:e}=Te;if(e)return n(document,{mousedown:({target:t})=>{t instanceof HTMLElement&&!e.contains(t)&&(b(!1),T(null),j(!1),D(!1),N(null),oe(null),le(null))}})},[M,P,F]);let De=Math.round($/L)*2,J=[],Oe=0;for(let e=0;e<De-1;e++)Oe+=$/De,J.push((0,Q.jsx)(Fe,{top:Oe}));let ke=(0,Q.jsx)(d.div,{ref:Te,initial:{opacity:0,scale:.85,borderRadius:L/2},exit:{opacity:0,borderRadius:L/2},className:a(`border-token-border-default absolute overflow-visible border transition-colors select-none`,se.accelerators,{"pointer-events-none":h,"bg-token-main-surface-primary shadow-xl":y&&!M&&!p,"bg-token-main-surface-primary shadow-lg":!y&&!M&&!p&&!i,"bg-token-main-surface-primary border-transparent shadow-sm":!y&&!M&&!p&&i,"bg-token-main-surface-secondary border-transparent":M&&!p,"bg-token-main-surface-primary":p&&!V,"bg-black! text-white!":!de&&V,"bg-white! text-black!":de&&V}),style:{right:t,bottom:e},animate:{scale:z||V||_?.85:1,opacity:+!h,borderRadius:P&&G&&!z||F&&K&&!z?Ve:L/2},onHoverStart:()=>{R.current!=null&&clearTimeout(R.current),D(!0)},onHoverEnd:()=>D(!1),children:(0,Q.jsx)(m,{children:P&&G&&`menu`in G&&!z?(0,Q.jsx)(d.div,{initial:{height:L,width:L},transition:B,animate:{height:$,width:`auto`},exit:{height:L,width:L},children:(0,Q.jsx)(Ee,{isConfirming:w===G.id,onConfirm:()=>_e(G.id),onSubmit:(e,t)=>H(e,t,G),menu:G.menu})}):F&&K&&`grid`in K&&!z?(0,Q.jsx)(d.div,{initial:{height:L,width:L},transition:B,animate:{height:Le,width:`auto`},exit:{height:L,width:L},children:(0,Q.jsx)(Ce,{title:fe.formatMessage(K.title),onSubmit:(e,t)=>H(e,t,K),grid:K.grid})}):M&&W&&!z?(0,Q.jsxs)(d.div,{initial:{height:L,width:L},transition:B,animate:{height:$,width:L},exit:{height:L,width:L},onClick:()=>{T(null)},children:[(0,Q.jsx)(Me,{onDragStart:()=>T(null),isConfirming:w===W.id,onConfirm:()=>_e(W.id),onSubmit:(e,t)=>H(e,t,W),onCancel:()=>{N(null),j(!0)},size:L,acceleratorScrubber:W}),J]}):(0,Q.jsxs)(d.div,{className:`flex flex-col`,initial:!i&&{height:L,width:L},transition:B,animate:{height:y?L*g.length:L,width:L},exit:{height:L,width:L},onAnimationComplete:()=>S(!0),onAnimationStart:()=>S(!1),children:[(0,Q.jsx)(m,{children:we}),(0,Q.jsx)(`div`,{className:`flex items-center`,style:{width:L,height:L},children:z?V?(0,Q.jsx)(xe,{title:He.cancel,icon:(0,Q.jsx)(ie,{className:a(`animate-pulsing m-auto shrink-0`,I?`h-6 w-6`:`h-10 w-10`)}),isSmall:I,opacity:1,size:L,onClick:()=>{T(null),l?.()}}):(0,Q.jsx)(te,{size:20,className:`text-token-text-secondary m-auto`}):(0,Q.jsx)(be,{disableHeightAnimation:i,disableLabel:pe||!y,isCancelledScrubber:A,accelerator:U,isConfirming:w===U.id,opacity:y?void 0:1,isSmall:I,size:L,onSubmit:e=>q(e,U),onClick:e=>Se(e,U)})})]})})});return c||pe?ke:(0,Q.jsxs)(Q.Fragment,{children:[y&&(0,Q.jsx)(ce,{zIndexKey:`acceleratorsOverlay`,className:`bg-white/95 dark:bg-black/85`}),ke]})}var Z,Q,$,Le,Re,ze,Be,Ve,He,Ue=e((()=>{D(),E(),F(),z(),V(),oe(),H(),ye(),O(),j(),p(),f(),u(),v(),o(),i(),M(),Z=t(S()),x(),K(),we(),Oe(),Pe(),Q=y(),$=280,Le=235,Re=1250,ze=56,Be=32,Ve=28,He=b({cancel:{id:`Hov840`,defaultMessage:`Cancel`}})}));export{H as a,he as c,ve as i,z as l,Ue as n,_e as o,ye as r,ge as s,Ie as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $8 as n,
+    A5 as r,
+    At as i,
+    G5 as a,
+    K5 as o,
+    SN as s,
+    Xy as c,
+    Yy as l,
+    aq as u,
+    cn as d,
+    e5 as f,
+    f8 as p,
+    hn as m,
+    nn as h,
+    on as g,
+    oq as ee,
+    vn as _,
+    yN as v
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as y,
+    Ln as b,
+    Rn as x,
+    Vn as S,
+    zn as C
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    IVt as w,
+    LVt as T,
+    _gn as te,
+    cUn as ne,
+    lUn as E,
+    mUn as D,
+    pUn as re,
+    ygn as O
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    Dg as k,
+    Og as A,
+    _y as ie,
+    gy as j
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+import {
+    At as M,
+    U as N,
+    W as P,
+    kt as ae
+} from "./82782bc9-cz4jkhg31tycbqqf.js";
+import {
+    c as oe,
+    s as se
+} from "./31cec8d8-ejzahhq8v425zkie.js";
+import {
+    n as F,
+    t as ce
+} from "./b4b33d24-kjje5y8qaeodnp6k.js";
+import {
+    f as le,
+    r as ue
+} from "./bcae0416-gkbk5fuozoi1k6dj.js";
+import {
+    _ as de,
+    g as I,
+    i as L,
+    m as fe,
+    o as pe,
+    p as me,
+    u as R
+} from "./df59e297-o3612z5rjm7jpxw4.js";
+
+function he(e) {
+    let {
+        doc: t,
+        selection: n
+    } = e, {
+        $from: r,
+        $to: i
+    } = n, {
+        pos: a
+    } = r, {
+        pos: o
+    } = i, s = t.textBetween(a, o);
+    try {
+        return {
+            sourceFrom: de(t, r),
+            sourceTo: I(t, i),
+            from: a,
+            to: o,
+            selectedText: s
+        }
+    } catch (e) {
+        ne.logError(`Getting source selection`, e)
+    }
+    return {
+        selectedText: s,
+        from: a,
+        to: o
+    }
+}
+var z = e((() => {
+        E(), fe()
+    })),
+    B, V = e((() => {
+        B = {
+            type: `spring`,
+            bounce: .2,
+            duration: .5
+        }
+    }));
+
+function ge(e) {
+    return e instanceof N
+}
+
+function _e(e) {
+    return e instanceof ue
+}
+var H = e((() => {
+    le(), P()
+}));
+
+function ve() {
+    let e = pe(),
+        t = me();
+    return (0, U.useMemo)(() => () => e() ?? t(), [e, t])
+}
+var U, ye = e((() => {
+    R(), L(), U = t(S())
+}));
+
+function be({
+    accelerator: e,
+    size: t,
+    opacity: n,
+    onClick: i,
+    onSubmit: o,
+    disableHeightAnimation: s = !1,
+    disableLabel: c = !1,
+    isCancelledScrubber: l = !1,
+    isSmall: u = !1,
+    isConfirming: f
+}) {
+    let {
+        title: p,
+        icon: m
+    } = e, h = r(ee), g = C();
+    return (0, G.jsxs)(`div`, {
+        className: `relative`,
+        children: [!h && !c && (0, G.jsx)(d.div, {
+            className: `text-token-text-secondary absolute end-full top-1/2 w-[160px] -translate-y-1/2 transform pe-4 text-end text-sm`,
+            initial: {
+                opacity: 0
+            },
+            animate: {
+                opacity: 1
+            },
+            exit: {
+                opacity: 0
+            },
+            transition: {
+                duration: .2
+            },
+            children: g.formatMessage(p)
+        }), (0, G.jsx)(xe, {
+            size: t,
+            onClick: i,
+            opacity: n,
+            initialHeight: l || s ? `auto` : 0,
+            initialScale: l ? .88 : .5,
+            title: p,
+            isSmall: u,
+            isConfirming: f,
+            onSubmit: o,
+            icon: (0, G.jsx)(m, {
+                className: a(`text-token-primary m-auto`, u ? `icon` : `icon-lg`)
+            })
+        })]
+    })
+}
+var W, G, xe, K = e((() => {
+    k(), c(), p(), u(), o(), i(), W = t(S()), x(), V(), G = y(), xe = ({
+        title: e,
+        icon: t,
+        size: n,
+        opacity: i,
+        initialHeight: o = n,
+        initialScale: s = 1,
+        onClick: c,
+        isConfirming: u,
+        isSmall: f,
+        onSubmit: p
+    }) => {
+        let m = C(),
+            h = _(),
+            [g, v] = (0, W.useState)(!1),
+            y = r(ee),
+            b = (0, G.jsx)(d.div, {
+                initial: {
+                    scale: s,
+                    opacity: 0
+                },
+                animate: {
+                    scale: 1,
+                    opacity: 1,
+                    transition: {
+                        type: `spring`,
+                        bounce: .24,
+                        duration: .52
+                    }
+                },
+                exit: {
+                    scale: .5,
+                    opacity: 0,
+                    transition: {
+                        type: `spring`,
+                        bounce: .24,
+                        duration: .52,
+                        opacity: {
+                            duration: .1
+                        }
+                    }
+                },
+                whileHover: {
+                    scale: 1.15
+                },
+                transition: B,
+                children: (0, G.jsx)(d.div, {
+                    className: `flex cursor-pointer items-start overflow-hidden`,
+                    initial: {
+                        width: n,
+                        height: n
+                    },
+                    animate: {
+                        width: n,
+                        height: n
+                    },
+                    transition: B,
+                    onMouseEnter: () => {
+                        v(!0)
+                    },
+                    onMouseLeave: () => {
+                        v(!1)
+                    },
+                    children: u ? (0, G.jsx)(d.button, {
+                        className: `m-auto flex h-8 w-8 items-center justify-center rounded-full bg-black text-center dark:bg-white`,
+                        initial: {
+                            opacity: 0,
+                            scale: .64
+                        },
+                        animate: {
+                            opacity: 1,
+                            scale: 1
+                        },
+                        exit: {
+                            opacity: 0,
+                            scale: .64
+                        },
+                        transition: {
+                            type: `spring`,
+                            duration: .32,
+                            bounce: .14
+                        },
+                        onClick: p,
+                        children: (0, G.jsx)(A, {
+                            className: a(`animate-pulsing text-white dark:text-black`, f ? `icon` : `icon-lg`)
+                        })
+                    }) : t
+                })
+            });
+        return (0, G.jsx)(d.div, {
+            role: `button`,
+            onClick: c,
+            initial: {
+                height: o
+            },
+            animate: {
+                height: n,
+                opacity: u ? 1 : i ?? .52
+            },
+            exit: {
+                height: 0
+            },
+            whileHover: {
+                opacity: 1
+            },
+            transition: B,
+            children: y ? (0, G.jsx)(l, {
+                open: h ? !!(u || g) : !1,
+                label: m.formatMessage(e),
+                side: `left`,
+                contentClassName: `pointer-events-none`,
+                children: b
+            }) : b
+        })
+    }
+}));
+
+function Se({
+    title: e,
+    onSubmit: t,
+    icon: n
+}) {
+    let r = C(),
+        i = n;
+    return (0, q.jsxs)(d.div, {
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: 1
+        },
+        exit: {
+            opacity: 0
+        },
+        onClick: t,
+        className: `text-token-text-secondary hover:text-token-text-primary flex aspect-square w-20 max-w-20 min-w-20 cursor-pointer flex-col items-center rounded-2xl p-3 transition-colors hover:bg-gray-100/75 dark:hover:bg-gray-700`,
+        children: [(0, q.jsx)(i, {
+            className: `icon-2xl m-auto`
+        }), (0, q.jsx)(`div`, {
+            className: `line-clamp-1 w-16 max-w-16 overflow-hidden text-center text-xs`,
+            children: r.formatMessage(e)
+        })]
+    })
+}
+
+function Ce({
+    grid: e,
+    onSubmit: t,
+    title: n
+}) {
+    let r = C();
+    return (0, q.jsxs)(`div`, {
+        className: `flex h-full flex-col content-center gap-y-4 overflow-x-hidden px-3 py-4`,
+        children: [(0, q.jsx)(`div`, {
+            className: `text-token-primary mt-1 text-center font-medium`,
+            children: n
+        }), (0, q.jsx)(`div`, {
+            className: `flex-auto`,
+            children: (0, q.jsx)(`div`, {
+                className: `grid grid-cols-2 gap-1`,
+                children: e.map((n, i) => (0, q.jsx)(Se, {
+                    title: n.title,
+                    icon: n.icon,
+                    onSubmit: n => {
+                        let a = e[i];
+                        `prompt` in a && t?.(n, r.formatMessage(a.prompt))
+                    }
+                }, i))
+            })
+        })]
+    })
+}
+var q, we = e((() => {
+    i(), x(), q = y()
+}));
+
+function Te({
+    title: e,
+    onClick: t,
+    isConfirming: n,
+    onSubmit: r,
+    isAnyItemConfirmed: i
+}) {
+    let o = C();
+    return (0, J.jsxs)(d.div, {
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: 1
+        },
+        exit: {
+            opacity: 0
+        },
+        onClick: t,
+        className: a(`flex-item my-1 flex min-w-40 cursor-pointer items-center overflow-hidden rounded-2xl py-2 ps-4 pe-2 font-medium text-clip whitespace-nowrap transition-colors hover:bg-gray-100/75 dark:hover:bg-gray-700`, {
+            "bg-gray-100/50 dark:bg-gray-700/50": n,
+            "text-token-text-secondary hover:text-token-text-primary": !n && i
+        }),
+        children: [(0, J.jsx)(`div`, {
+            className: `flex-auto`,
+            children: o.formatMessage(e)
+        }), (0, J.jsx)(d.button, {
+            className: a(`ms-3 h-6 w-6 rounded-full bg-black text-center dark:bg-white`, {
+                "pointer-events-none invisible": !n
+            }),
+            initial: {
+                opacity: 0,
+                scale: .64
+            },
+            animate: {
+                opacity: +!!n,
+                scale: n ? 1 : .64
+            },
+            transition: {
+                type: `spring`,
+                duration: .32,
+                bounce: .14
+            },
+            onClick: r,
+            children: (0, J.jsx)(A, {
+                className: `icon-lg text-white dark:text-black`
+            })
+        })]
+    })
+}
+
+function Ee({
+    menu: e,
+    onConfirm: t,
+    onSubmit: n
+}) {
+    let [r, i] = (0, De.useState)(!1), a = C();
+    return (0, J.jsx)(`div`, {
+        className: `h-full flex-col content-center overflow-x-hidden px-3`,
+        children: e.map((o, s) => (0, J.jsx)(Te, {
+            title: o.title,
+            isConfirming: r === s,
+            isAnyItemConfirmed: r !== !1,
+            onClick: () => {
+                i(s), t?.()
+            },
+            onSubmit: t => {
+                let r = e[s];
+                `prompt` in r && n?.(t, a.formatMessage(r.prompt))
+            }
+        }, `menu-item-${o.title}`))
+    })
+}
+var De, J, Oe = e((() => {
+        k(), o(), i(), De = t(S()), x(), J = y()
+    })),
+    ke, Ae = e((() => {
+        ke = e => `isCancel` in e && e.isCancel
+    }));
+
+function je(e, t, n) {
+    return n === t ? 1 : w((e - t) / (n - t), 0, 1)
+}
+
+function Me({
+    size: e,
+    acceleratorScrubber: t,
+    onConfirm: n,
+    onCancel: r,
+    onSubmit: i,
+    onDragStart: o,
+    isConfirming: s
+}) {
+    let {
+        icon: c
+    } = t, u = `scrub` in t ? t.scrub : [], f = e - 12, p = C(), m = (0, Y.useRef)(null), ee = (0, Y.useRef)(null), [_, v] = (0, Y.useState)(u ? Math.floor(u.length / 2) : 0), y = Math.round(_), b = (0, Y.useRef)(_), x = u ? p.formatMessage(u[y].title) : null, S = h(0);
+    return g(S, `change`, e => {
+        let t = je(e, -274 / 2 + f / 2, (Ne - 6) / 2 - f / 2) * (u ? u.length - 1 : 0);
+        b.current = t, v(t)
+    }), (0, X.jsx)(d.div, {
+        ref: m,
+        className: `start-items relative z-20 flex w-full`,
+        style: {
+            top: 6,
+            height: Ne - 12
+        },
+        children: (0, X.jsx)(d.div, {
+            drag: `y`,
+            ref: ee,
+            dragConstraints: m,
+            dragMomentum: !1,
+            dragElastic: 0,
+            className: a(`border-token-border-default m-auto rounded-full border shadow-md transition-colors`, s ? `cursor-pointer bg-black dark:bg-white` : `bg-token-main-surface-primary cursor-grab`),
+            style: {
+                y: S,
+                width: f,
+                height: f
+            },
+            onDragStart: o,
+            onDragEnd: () => {
+                if (!u || ke(u[y]) || s) return r?.();
+                u && n?.()
+            },
+            children: (0, X.jsx)(l, {
+                open: !0,
+                label: x,
+                side: `right`,
+                children: (0, X.jsx)(`div`, {
+                    className: `flex h-full w-full items-center justify-center overflow-hidden`,
+                    children: s ? (0, X.jsx)(A, {
+                        onClick: e => {
+                            e.preventDefault(), !(!u || !s || !(`prompt` in u[y])) && i?.(e, p.formatMessage(u[y].prompt))
+                        },
+                        className: `icon-xl animate-pulsing text-white dark:text-black`
+                    }) : (0, X.jsx)(c, {
+                        className: `text-token-primary icon-lg m-auto`
+                    })
+                })
+            })
+        })
+    })
+}
+var Y, X, Ne, Pe = e((() => {
+    Ae(), k(), c(), o(), T(), i(), Y = t(S()), x(), X = y(), Ne = 280
+}));
+
+function Fe({
+    top: e
+}) {
+    return (0, Q.jsx)(d.div, {
+        initial: {
+            opacity: 0
+        },
+        animate: {
+            opacity: 1
+        },
+        exit: {
+            opacity: 0
+        },
+        className: `absolute start-1/2 m-auto h-1 w-1 -translate-x-1/2 rounded-full bg-gray-300`,
+        style: {
+            top: e
+        }
+    })
+}
+
+function Ie({
+    bottom: e = 20,
+    right: t = 20,
+    isEmbeddedInPromptArea: i = !1,
+    disableHint: o = !1,
+    disableOverlay: c = !1,
+    onCancel: l,
+    onExpandedChange: u,
+    onSubmit: f,
+    isRequestActive: p = !1,
+    isVisuallyHidden: h = !1,
+    actions: g
+}) {
+    let [_, v] = (0, Z.useState)(!1), [y, b] = (0, Z.useState)(!o && !p), [x, S] = (0, Z.useState)(!0), [w, T] = (0, Z.useState)(null), [E, D] = (0, Z.useState)(!1), [O, k] = (0, Z.useState)(!1), [A, j] = (0, Z.useState)(!1), [M, N] = (0, Z.useState)(null), [P, oe] = (0, Z.useState)(null), [F, le] = (0, Z.useState)(null), ue = !x, de = s(), I = i && !y, L = I ? Be : ze, fe = C(), pe = r(ee), me = ve(), R = (0, Z.useRef)(null), z = p || _, V = p && !y && x;
+    (0, Z.useEffect)(() => {
+        y && !O && k(!0), u?.(y)
+    }, [y, O]), (0, Z.useEffect)(() => {
+        E && !z && !M && (R.current != null && clearTimeout(R.current), b(!0)), !E && !z && !M && (R.current != null && clearTimeout(R.current), R.current = window.setTimeout(() => {
+            b(!1), T(null), j(!1)
+        }, Re))
+    }, [E, z, M, y]), (0, Z.useEffect)(() => {
+        if (p) {
+            T(null);
+            return
+        }
+        v(!1), !O && !o && (k(!0), b(!0), R.current != null && clearTimeout(R.current), R.current = window.setTimeout(() => {
+            b(!1), T(null), j(!1), k(!0)
+        }, Re))
+    }, [p, o, O]);
+    let _e = e => {
+            T(e)
+        },
+        H = (e, t, n) => {
+            D(!1), v(!0), b(!1), T(null), j(!1), N(null), oe(null), le(null);
+            let r = me(),
+                i = (e, r) => {
+                    ne.logButtonClick(re.ACCELERATOR, {
+                        action: {
+                            action: n.action,
+                            id: n.id,
+                            title: n.title
+                        },
+                        prompt: t,
+                        sourceFrom: e,
+                        sourceTo: r
+                    })
+                };
+            if (r && ge(r)) {
+                let {
+                    state: a
+                } = r, {
+                    sourceFrom: o,
+                    sourceTo: s
+                } = he(a);
+                if (i(o, s), o == null || s == null) {
+                    f?.(e, null, t, n);
+                    return
+                }
+                f?.(e, {
+                    start: o,
+                    end: s
+                }, t, n);
+                let c = a.tr.setSelection(ae.create(a.doc, a.selection.anchor));
+                r.dispatch(c);
+                return
+            }
+            i(), f?.(e, null, t, n)
+        },
+        U = g[0],
+        ye = g.slice(1),
+        W = !!M && g.find(({
+            id: e
+        }) => e === M),
+        G = !!P && g.find(({
+            id: e
+        }) => e === P),
+        K = !!F && g.find(({
+            id: e
+        }) => e === F),
+        Se = (e, t) => {
+            if (ue) return;
+            if (!E) {
+                D(!0);
+                return
+            }
+            let {
+                id: n
+            } = t;
+            if (`scrub` in t) return N(n);
+            if (`menu` in t) return oe(n);
+            if (`grid` in t) return le(n);
+            _e(n)
+        },
+        q = (e, t) => {
+            ue || `prompt` in t && H(e, fe.formatMessage(t.prompt), t)
+        },
+        we = ye.map(e => {
+            if (!y) return null;
+            let {
+                id: t
+            } = e;
+            return (0, Q.jsx)(be, {
+                accelerator: e,
+                isConfirming: t === w,
+                isCancelledScrubber: A,
+                size: L,
+                onClick: t => Se(t, e),
+                onSubmit: t => q(t, e)
+            }, t)
+        }),
+        Te = (0, Z.useRef)(null);
+    (0, Z.useEffect)(() => {
+        let {
+            current: e
+        } = Te;
+        if (e) return n(document, {
+            mousedown: ({
+                target: t
+            }) => {
+                t instanceof HTMLElement && !e.contains(t) && (b(!1), T(null), j(!1), D(!1), N(null), oe(null), le(null))
+            }
+        })
+    }, [M, P, F]);
+    let De = Math.round($ / L) * 2,
+        J = [],
+        Oe = 0;
+    for (let e = 0; e < De - 1; e++) Oe += $ / De, J.push((0, Q.jsx)(Fe, {
+        top: Oe
+    }));
+    let ke = (0, Q.jsx)(d.div, {
+        ref: Te,
+        initial: {
+            opacity: 0,
+            scale: .85,
+            borderRadius: L / 2
+        },
+        exit: {
+            opacity: 0,
+            borderRadius: L / 2
+        },
+        className: a(`border-token-border-default absolute overflow-visible border transition-colors select-none`, se.accelerators, {
+            "pointer-events-none": h,
+            "bg-token-main-surface-primary shadow-xl": y && !M && !p,
+            "bg-token-main-surface-primary shadow-lg": !y && !M && !p && !i,
+            "bg-token-main-surface-primary border-transparent shadow-sm": !y && !M && !p && i,
+            "bg-token-main-surface-secondary border-transparent": M && !p,
+            "bg-token-main-surface-primary": p && !V,
+            "bg-black! text-white!": !de && V,
+            "bg-white! text-black!": de && V
+        }),
+        style: {
+            right: t,
+            bottom: e
+        },
+        animate: {
+            scale: z || V || _ ? .85 : 1,
+            opacity: +!h,
+            borderRadius: P && G && !z || F && K && !z ? Ve : L / 2
+        },
+        onHoverStart: () => {
+            R.current != null && clearTimeout(R.current), D(!0)
+        },
+        onHoverEnd: () => D(!1),
+        children: (0, Q.jsx)(m, {
+            children: P && G && `menu` in G && !z ? (0, Q.jsx)(d.div, {
+                initial: {
+                    height: L,
+                    width: L
+                },
+                transition: B,
+                animate: {
+                    height: $,
+                    width: `auto`
+                },
+                exit: {
+                    height: L,
+                    width: L
+                },
+                children: (0, Q.jsx)(Ee, {
+                    isConfirming: w === G.id,
+                    onConfirm: () => _e(G.id),
+                    onSubmit: (e, t) => H(e, t, G),
+                    menu: G.menu
+                })
+            }) : F && K && `grid` in K && !z ? (0, Q.jsx)(d.div, {
+                initial: {
+                    height: L,
+                    width: L
+                },
+                transition: B,
+                animate: {
+                    height: Le,
+                    width: `auto`
+                },
+                exit: {
+                    height: L,
+                    width: L
+                },
+                children: (0, Q.jsx)(Ce, {
+                    title: fe.formatMessage(K.title),
+                    onSubmit: (e, t) => H(e, t, K),
+                    grid: K.grid
+                })
+            }) : M && W && !z ? (0, Q.jsxs)(d.div, {
+                initial: {
+                    height: L,
+                    width: L
+                },
+                transition: B,
+                animate: {
+                    height: $,
+                    width: L
+                },
+                exit: {
+                    height: L,
+                    width: L
+                },
+                onClick: () => {
+                    T(null)
+                },
+                children: [(0, Q.jsx)(Me, {
+                    onDragStart: () => T(null),
+                    isConfirming: w === W.id,
+                    onConfirm: () => _e(W.id),
+                    onSubmit: (e, t) => H(e, t, W),
+                    onCancel: () => {
+                        N(null), j(!0)
+                    },
+                    size: L,
+                    acceleratorScrubber: W
+                }), J]
+            }) : (0, Q.jsxs)(d.div, {
+                className: `flex flex-col`,
+                initial: !i && {
+                    height: L,
+                    width: L
+                },
+                transition: B,
+                animate: {
+                    height: y ? L * g.length : L,
+                    width: L
+                },
+                exit: {
+                    height: L,
+                    width: L
+                },
+                onAnimationComplete: () => S(!0),
+                onAnimationStart: () => S(!1),
+                children: [(0, Q.jsx)(m, {
+                    children: we
+                }), (0, Q.jsx)(`div`, {
+                    className: `flex items-center`,
+                    style: {
+                        width: L,
+                        height: L
+                    },
+                    children: z ? V ? (0, Q.jsx)(xe, {
+                        title: He.cancel,
+                        icon: (0, Q.jsx)(ie, {
+                            className: a(`animate-pulsing m-auto shrink-0`, I ? `h-6 w-6` : `h-10 w-10`)
+                        }),
+                        isSmall: I,
+                        opacity: 1,
+                        size: L,
+                        onClick: () => {
+                            T(null), l?.()
+                        }
+                    }) : (0, Q.jsx)(te, {
+                        size: 20,
+                        className: `text-token-text-secondary m-auto`
+                    }) : (0, Q.jsx)(be, {
+                        disableHeightAnimation: i,
+                        disableLabel: pe || !y,
+                        isCancelledScrubber: A,
+                        accelerator: U,
+                        isConfirming: w === U.id,
+                        opacity: y ? void 0 : 1,
+                        isSmall: I,
+                        size: L,
+                        onSubmit: e => q(e, U),
+                        onClick: e => Se(e, U)
+                    })
+                })]
+            })
+        })
+    });
+    return c || pe ? ke : (0, Q.jsxs)(Q.Fragment, {
+        children: [y && (0, Q.jsx)(ce, {
+            zIndexKey: `acceleratorsOverlay`,
+            className: `bg-white/95 dark:bg-black/85`
+        }), ke]
+    })
+}
+var Z, Q, $, Le, Re, ze, Be, Ve, He, Ue = e((() => {
+    D(), E(), F(), z(), V(), oe(), H(), ye(), O(), j(), p(), f(), u(), v(), o(), i(), M(), Z = t(S()), x(), K(), we(), Oe(), Pe(), Q = y(), $ = 280, Le = 235, Re = 1250, ze = 56, Be = 32, Ve = 28, He = b({
+        cancel: {
+            id: `Hov840`,
+            defaultMessage: `Cancel`
+        }
+    })
+}));
+export {
+    H as a, he as c, ve as i, z as l, Ue as n, _e as o, ye as r, ge as s, Ie as t
+};
 //# sourceMappingURL=2df5afbf-czf581hfk5gktprj.js.map

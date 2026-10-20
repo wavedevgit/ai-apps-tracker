@@ -1,2 +1,102 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{A1 as t,CK as n,Git as r,I1 as i,L7 as a,P7 as o,aat as s,cat as c,lat as l,qit as u,wK as d}from"./4813494d-qsuygr73qjc6rh65.js";import{s as f,w as p}from"./2340486e-komxp8tzs51ny4jj.js";import{fwn as m,gCn as h,mCn as g,pCn as _,uwn as v}from"./conversation-small-cawdu7il3ha6y70c.js";import{ey as y,ny as b,ry as x}from"./c2675c8c-nxl2ic2ofk2vw70s.js";import{n as S,r as C}from"./29ad5082-oln1osqfxuccc0lr.js";var w,T=e((()=>{l(),a(),w=new o({baseUrl:c,targetRoutesAreCanonical:!0})})),E,D=e((()=>{v(),S(),i(),d(),u(),l(),T(),f(),h(),x(),E=({appId:e,workspaceId:i,workspaceUserId:a,admitted:o})=>{let c=()=>a!=null&&t()?.normalizedAccountUserId===a,l=()=>{if(_(i),!C()||o!==!0||e===``||!c())throw Error(`App role policy is unavailable for the selected administrator.`)};return p({queryKey:b(`app-role-policy`,i,a,e),enabled:C()&&o===!0&&e!==``&&c()&&g(i),staleTime:y,queryFn:async({signal:t})=>{l();let a=n(i);if(a==null)throw Error(`The selected workspace changed.`);let o=await m({operation:`app_role_policy_read`,transport:`sheep`,workspaceId:i,signal:t,request:n=>w.safeGet(`/rbac/workspace/{workspace_id}/connector/{connector_id}/roles`,{...n,signal:t,authOption:s.Required,additionalHeaders:{...a,[r]:`ADMIN_SETTING`,"x-openai-use-sheep":`1`},parameters:{path:{workspace_id:i,connector_id:e},query:{consistency:`strong`,role_policy:`informational`}}})});l(),t.throwIfAborted();let c=o.role_policy;if(c==null)return null;if(c.workspace_id!==i||c.app_id.trim()===``||c.consistency!==`optimize_latency`)throw Error(`App role policy does not match the selected workspace and app.`);return c}})}}));export{D as n,E as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as t,
+    CK as n,
+    Git as r,
+    I1 as i,
+    L7 as a,
+    P7 as o,
+    aat as s,
+    cat as c,
+    lat as l,
+    qit as u,
+    wK as d
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    s as f,
+    w as p
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    fwn as m,
+    gCn as h,
+    mCn as g,
+    pCn as _,
+    uwn as v
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    ey as y,
+    ny as b,
+    ry as x
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+import {
+    n as S,
+    r as C
+} from "./29ad5082-oln1osqfxuccc0lr.js";
+var w, T = e((() => {
+        l(), a(), w = new o({
+            baseUrl: c,
+            targetRoutesAreCanonical: !0
+        })
+    })),
+    E, D = e((() => {
+        v(), S(), i(), d(), u(), l(), T(), f(), h(), x(), E = ({
+            appId: e,
+            workspaceId: i,
+            workspaceUserId: a,
+            admitted: o
+        }) => {
+            let c = () => a != null && t()?.normalizedAccountUserId === a,
+                l = () => {
+                    if (_(i), !C() || o !== !0 || e === `` || !c()) throw Error(`App role policy is unavailable for the selected administrator.`)
+                };
+            return p({
+                queryKey: b(`app-role-policy`, i, a, e),
+                enabled: C() && o === !0 && e !== `` && c() && g(i),
+                staleTime: y,
+                queryFn: async ({
+                    signal: t
+                }) => {
+                    l();
+                    let a = n(i);
+                    if (a == null) throw Error(`The selected workspace changed.`);
+                    let o = await m({
+                        operation: `app_role_policy_read`,
+                        transport: `sheep`,
+                        workspaceId: i,
+                        signal: t,
+                        request: n => w.safeGet(`/rbac/workspace/{workspace_id}/connector/{connector_id}/roles`, {
+                            ...n,
+                            signal: t,
+                            authOption: s.Required,
+                            additionalHeaders: {
+                                ...a,
+                                [r]: `ADMIN_SETTING`,
+                                "x-openai-use-sheep": `1`
+                            },
+                            parameters: {
+                                path: {
+                                    workspace_id: i,
+                                    connector_id: e
+                                },
+                                query: {
+                                    consistency: `strong`,
+                                    role_policy: `informational`
+                                }
+                            }
+                        })
+                    });
+                    l(), t.throwIfAborted();
+                    let c = o.role_policy;
+                    if (c == null) return null;
+                    if (c.workspace_id !== i || c.app_id.trim() === `` || c.consistency !== `optimize_latency`) throw Error(`App role policy does not match the selected workspace and app.`);
+                    return c
+                }
+            })
+        }
+    }));
+export {
+    D as n, E as t
+};
 //# sourceMappingURL=6b31d988-i167q6vtut5anx4l.js.map

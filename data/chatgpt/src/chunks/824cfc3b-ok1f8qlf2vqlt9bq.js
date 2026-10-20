@@ -1,2 +1,51 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{A1 as t,F7 as n,I1 as r,j7 as i}from"./4813494d-ed29bs6yiwucn7st.js";import{s as a,w as o}from"./2340486e-oc6d2eodbcrmxur3.js";import{Qv as s,bb as c,hb as l,ty as u}from"./c2675c8c-fpv9s4kvd412dyap.js";var d,f=e((()=>{r(),n(),a(),l(),u(),d=e=>o({queryKey:[e,`roles`],enabled:e!==``,staleTime:s,queryFn:({signal:n})=>{if(t()?.getWorkspaceId()!==e)throw Error(`The current workspace cannot access these roles.`);return c({operation:`workspace_roles`,signal:n,request:async()=>await i.safeGet(`/rbac/workspace/{workspace_id}/roles`,{signal:n,parameters:{query:{account_id:e,consistency:`strong`},path:{workspace_id:e}}})})}})}));export{f as n,d as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as t,
+    F7 as n,
+    I1 as r,
+    j7 as i
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    s as a,
+    w as o
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    Qv as s,
+    bb as c,
+    hb as l,
+    ty as u
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+var d, f = e((() => {
+    r(), n(), a(), l(), u(), d = e => o({
+        queryKey: [e, `roles`],
+        enabled: e !== ``,
+        staleTime: s,
+        queryFn: ({
+            signal: n
+        }) => {
+            if (t()?.getWorkspaceId() !== e) throw Error(`The current workspace cannot access these roles.`);
+            return c({
+                operation: `workspace_roles`,
+                signal: n,
+                request: async () => await i.safeGet(`/rbac/workspace/{workspace_id}/roles`, {
+                    signal: n,
+                    parameters: {
+                        query: {
+                            account_id: e,
+                            consistency: `strong`
+                        },
+                        path: {
+                            workspace_id: e
+                        }
+                    }
+                })
+            })
+        }
+    })
+}));
+export {
+    f as n, d as t
+};
 //# sourceMappingURL=824cfc3b-ok1f8qlf2vqlt9bq.js.map

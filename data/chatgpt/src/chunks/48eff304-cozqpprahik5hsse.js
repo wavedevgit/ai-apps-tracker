@@ -1,3 +1,832 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/cc1ea293-n249dlrpuzunbhe7.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-ed29bs6yiwucn7st.js","assets/2340486e-oc6d2eodbcrmxur3.js","assets/root-lelxp0l2.css","assets/fedf4e11-jhhga25nxu6i6jg7.js","assets/cea3409c-nycpo0wkyuavw2fz.js","assets/30901919-om7b3qf5hp4j9x4l.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Al as n,Aot as r,Bnt as i,F7 as a,I1 as o,J0 as s,J1 as c,JT as l,Knt as u,Pit as d,RU as f,Sw as p,Tat as m,W1 as h,X0 as g,Y0 as _,Y1 as v,Z0 as y,b4 as ee,e2 as b,fr as x,hnt as S,j7 as te,jat as C,jit as ne,kl as re,lr as w,n0 as T,oit as E,pnt as D,qT as O,sit as k,t0 as A,uit as ie,ww as j,x4 as M,zU as N}from"./4813494d-ed29bs6yiwucn7st.js";import{$ as ae,Bn as P,N as oe,Nn as F,Pt as se,Rn as I,Rt as ce,Vn as L,cn as le,jt as ue,ln as de,lt as fe,s as pe,wn as me,xt as he,zn as R}from"./2340486e-oc6d2eodbcrmxur3.js";import{Nh as ge,Ph as z}from"./c2675c8c-fpv9s4kvd412dyap.js";import{c as _e,l as ve}from"./8b34dbc2-j8rcexxiltkm8ucr.js";import{n as B,t as V}from"./fedf4e11-jhhga25nxu6i6jg7.js";import{n as ye,r as be,t as xe}from"./5d04b0af-llm6fqow424onnuj.js";var H,Se=e((()=>{_(),de(),H=s(()=>le(()=>import(`./cc1ea293-n249dlrpuzunbhe7.js`).then(e=>e.GiftCreditsClaimModal),__vite__mapDeps([0,1,2,3,4,5,6,7])))}));function Ce(){g(H)}function we(){return Ce}function Te(e){return e.preventDefault()}function Ee(e){return e.preventDefault()}var De,U,W,Oe,ke=e((()=>{De=me(),l(),j(),y(),U=t(L()),I(),Se(),B(),W=P(),Oe=e=>{"use forget";let t=(0,De.c)(68),{canSwitchToPersonal:n,isSwitchingAccount:r,onClaim:i,onClose:a,onRetry:o,onSwitchAccount:s,onSwitchToPersonal:c,state:l}=e,u=R(),d;t[0]!==i||t[1]!==a||t[2]!==o||t[3]!==l.canRetry||t[4]!==l.creditAmount||t[5]!==l.operation||t[6]!==l.status?(d=()=>{if(l.status===`available`){b(H,{creditAmount:l.creditAmount,onClaim:i,onDismiss:a,status:`available`});return}if(l.status===`redeeming`||l.status===`processing`&&!l.canRetry){b(H,{creditAmount:l.creditAmount,onClaim:i,onDismiss:a,status:`claiming`});return}if(l.status===`processing`&&l.canRetry||l.status===`error`&&l.operation===`redemption`){b(H,{creditAmount:l.creditAmount,onClaim:o,onDismiss:a,status:`retryable`});return}g(H)},t[0]=i,t[1]=a,t[2]=o,t[3]=l.canRetry,t[4]=l.creditAmount,t[5]=l.operation,t[6]=l.status,t[7]=d):d=t[7];let f;t[8]!==i||t[9]!==a||t[10]!==o||t[11]!==l?(f=[i,a,o,l],t[8]=i,t[9]=a,t[10]=o,t[11]=l,t[12]=f):f=t[12],(0,U.useEffect)(d,f);let m;if(t[13]===Symbol.for(`react.memo_cache_sentinel`)?(m=[],t[13]=m):m=t[13],(0,U.useEffect)(we,m),l.status===`workspace_association_blocked`){let e;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,W.jsx)(`span`,{className:`block text-sm leading-5`,children:(0,W.jsx)(F,{...V.workspaceAccountIneligibleDescription})}),t[14]=e):e=t[14];let n;t[15]===u?n=t[16]:(n=u.formatMessage(V.workspaceAccountIneligibleTitle),t[15]=u,t[16]=n);let r;t[17]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,W.jsx)(F,{...V.switchAccountButton}),t[17]=r):r=t[17];let i;t[18]===s?i=t[19]:(i=(0,W.jsx)(O,{className:`rounded-full`,color:`primary`,onClick:s,size:`large`,type:`button`,children:r}),t[18]=s,t[19]=i);let o;t[20]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,W.jsx)(F,{...V.goBackButton}),t[20]=o):o=t[20];let c;t[21]===a?c=t[22]:(c=(0,W.jsx)(O,{className:`rounded-full`,color:`secondary`,onClick:a,size:`large`,type:`button`,children:o}),t[21]=a,t[22]=c);let l;return t[23]!==a||t[24]!==n||t[25]!==i||t[26]!==c?(l=(0,W.jsx)(p,{className:`max-w-[480px]`,description:e,isOpen:!0,onClose:a,onEscapeKeyDown:Te,shouldIgnoreClickOutside:!0,showCloseButton:!1,size:`custom`,type:`warning`,title:n,primaryButton:i,secondaryButton:c}),t[23]=a,t[24]=n,t[25]=i,t[26]=c,t[27]=l):l=t[27],l}if(l.status===`workspace_blocked`){let e=n?V.personalAccountRequiredDescription:V.personalWorkspaceUnavailableDescription,i;t[28]===e?i=t[29]:(i=(0,W.jsx)(`span`,{className:`block text-sm leading-5`,children:(0,W.jsx)(F,{...e})}),t[28]=e,t[29]=i);let o;t[30]===u?o=t[31]:(o=u.formatMessage(V.personalAccountRequiredTitle),t[30]=u,t[31]=o);let l=n&&r,d=n&&r,f=n?c:s,m=n?V.switchToPersonalAccount:V.switchAccountButton,h;t[32]===m?h=t[33]:(h=(0,W.jsx)(F,{...m}),t[32]=m,t[33]=h);let g;t[34]!==h||t[35]!==l||t[36]!==d||t[37]!==f?(g=(0,W.jsx)(O,{className:`rounded-full`,color:`primary`,disabled:l,loading:d,onClick:f,size:`large`,type:`button`,children:h}),t[34]=h,t[35]=l,t[36]=d,t[37]=f,t[38]=g):g=t[38];let _;t[39]===Symbol.for(`react.memo_cache_sentinel`)?(_=(0,W.jsx)(F,{...V.goBackButton}),t[39]=_):_=t[39];let v;t[40]===a?v=t[41]:(v=(0,W.jsx)(O,{className:`rounded-full`,color:`secondary`,onClick:a,size:`large`,type:`button`,children:_}),t[40]=a,t[41]=v);let y;return t[42]!==a||t[43]!==g||t[44]!==v||t[45]!==i||t[46]!==o?(y=(0,W.jsx)(p,{className:`max-w-[480px]`,description:i,testId:`modal-gift-credit-personal-account-required`,isOpen:!0,onClose:a,onEscapeKeyDown:Ee,shouldIgnoreClickOutside:!0,showCloseButton:!1,size:`custom`,type:`warning`,title:o,primaryButton:g,secondaryButton:v}),t[42]=a,t[43]=g,t[44]=v,t[45]=i,t[46]=o,t[47]=y):y=t[47],y}if(l.status===`currency_mismatch`){let e;t[48]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,W.jsx)(`span`,{className:`text-token-text-secondary block text-sm leading-5`,children:(0,W.jsx)(F,{...V.currencyMismatchDescription})}),t[48]=e):e=t[48];let n;t[49]===u?n=t[50]:(n=u.formatMessage(V.currencyMismatchTitle),t[49]=u,t[50]=n);let r;t[51]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,W.jsx)(F,{...V.gotItButton}),t[51]=r):r=t[51];let i;t[52]===a?i=t[53]:(i=(0,W.jsx)(O,{className:`rounded-full`,color:`primary`,onClick:a,size:`large`,type:`button`,children:r}),t[52]=a,t[53]=i);let o;return t[54]!==a||t[55]!==n||t[56]!==i?(o=(0,W.jsx)(p,{className:`max-w-[480px]`,description:e,testId:`modal-gift-credit-currency-mismatch`,isOpen:!0,onClose:a,shouldIgnoreClickOutside:!0,showCloseButton:!1,size:`custom`,type:`danger`,title:n,primaryButton:i}),t[54]=a,t[55]=n,t[56]=i,t[57]=o):o=t[57],o}if(l.status===`location_ineligible`){let e;t[58]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,W.jsx)(`span`,{className:`text-token-text-secondary block text-sm leading-5`,children:(0,W.jsx)(F,{...V.locationIneligibleDescription})}),t[58]=e):e=t[58];let n;t[59]===u?n=t[60]:(n=u.formatMessage(V.locationIneligibleTitle),t[59]=u,t[60]=n);let r;t[61]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,W.jsx)(F,{...V.gotItButton}),t[61]=r):r=t[61];let i;t[62]===a?i=t[63]:(i=(0,W.jsx)(O,{className:`rounded-full`,color:`primary`,onClick:a,size:`large`,type:`button`,children:r}),t[62]=a,t[63]=i);let o;return t[64]!==a||t[65]!==n||t[66]!==i?(o=(0,W.jsx)(p,{className:`max-w-[480px]`,description:e,testId:`modal-gift-credit-location-ineligible`,isOpen:!0,onClose:a,shouldIgnoreClickOutside:!0,showCloseButton:!1,size:`custom`,type:`danger`,title:n,primaryButton:i}),t[64]=a,t[65]=n,t[66]=i,t[67]=o):o=t[67],o}return null}})),Ae,G,K,je=e((()=>{Ae=(e,t)=>{switch(t.type){case`check_eligibility`:return{status:`loading`};case`show_available`:return{...t.details,presentation:t.presentation,status:`available`};case`show_ineligible`:return{status:`ineligible`};case`show_workspace_association_blocked`:return{status:`workspace_association_blocked`};case`show_workspace_blocked`:return{status:`workspace_blocked`};case`show_currency_mismatch`:return{status:`currency_mismatch`};case`show_location_ineligible`:return{status:`location_ineligible`};case`show_unavailable`:return{status:`unavailable`};case`show_eligibility_error`:return{status:`error`,operation:`eligibility`};case`start_redemption`:return{...t.details,status:`redeeming`};case`show_processing`:return{...t.details,canRetry:t.canRetry,status:`processing`};case`show_redeemed`:return{creditAmount:t.creditAmount,creditGrantId:t.creditGrantId,status:`redeemed`};case`show_redemption_error`:return{...t.details,operation:`redemption`,status:`error`}}},G=e=>{let t=Number(e);if(!Number.isSafeInteger(t)||t<=0)throw Error(`Gift credit claim returned an invalid amount`);return t},K=e=>({accountId:e.accountId,creditAmount:e.creditAmount})})),q,Me,Ne,J,Pe,Y,X,Fe,Ie,Le,Re=e((()=>{o(),N(),E(),C(),d(),M(),a(),n(),pe(),q=t(L()),I(),ge(),ke(),je(),ye(),B(),Me=P(),Ne=[1e3,2e3,4e3],J=`X-OpenAI-Gift-Credit-Claim-Token`,Pe=`chatgpt_gift_credit_redemption`,Y=e=>typeof e==`object`&&!!e&&`workspace_account_associated`in e&&e.workspace_account_associated===!0,X=e=>typeof e==`object`&&!!e&&(`ineligibility_detail_reason`in e&&e.ineligibility_detail_reason===`recipient_currency_mismatch`||`ineligibility_reason`in e&&(e.ineligibility_reason===`recipient_currency_mismatch`||e.ineligibility_reason===`recipient_location_ineligible`)),Fe=e=>typeof e==`object`&&!!e&&`location_ineligible`in e&&e.location_ineligible===!0,Ie=(e,t)=>new Promise((n,r)=>{if(t.aborted){r(t.reason);return}let i=window.setTimeout(()=>{t.removeEventListener(`abort`,a),n()},e),a=()=>{window.clearTimeout(i),r(t.reason)};t.addEventListener(`abort`,a,{once:!0})}),Le=({claimCode:e,deliveryMode:t,giftFunnelId:n,onAlreadyClaimed:r,onClose:i,onRedeemed:a,onUnavailable:o})=>{"use no forget";let[s,l]=(0,q.useReducer)(Ae,{status:`loading`}),u=R(),d=oe(),p=v(),{data:g,isLoading:_}=c(),[y,b]=(0,q.useState)(!1),x=g?.accountItems.find(e=>e.isPersonalAccount()&&!e.isDeactivated()),S=p!=null&&!p.isPersonalAccount(),C=g!=null&&xe(g.accountItems),w=(0,q.useRef)(null),T=(0,q.useRef)({deliveryMode:t,giftFunnelId:n}),E=(0,q.useRef)(null),D=(0,q.useRef)(null),O=(0,q.useRef)(!1),k=(0,q.useRef)(!1),A=(0,q.useRef)(null),j=(0,q.useCallback)((e,t,n)=>{k.current||(k.current=!0,d.invalidateQueries({queryKey:[`usage-limits-page-configs`,n]}),d.invalidateQueries({queryKey:[`wham`,`usage`,`rate-limit-status`]}),d.invalidateQueries({queryKey:[`settings`,`agent-usage`,`remaining-balance`,n]}),l({type:`show_redeemed`,creditAmount:e,creditGrantId:t}),a(e))},[a,d]),M=(0,q.useCallback)(async(t,n=!1)=>{if(O.current)return;O.current=!0;let r=A.current??(n?`recovery`:`initial`);A.current=r,D.current?.abort();let i=new AbortController;D.current=i,l(n?{type:`show_processing`,canRetry:!1,details:t}:{type:`start_redemption`,details:t}),z({step:`claim_redemption`,outcome:`started`,...T.current,attemptKind:r,creditQuantity:t.creditAmount});try{for(let n=0;;n+=1){let a=await re(Pe),s=await te.safePost(`/gift-credits/claims/redeem`,{additionalHeaders:{...a,[J]:e},requestBody:{account_id:t.accountId},signal:i.signal});if(i.signal.aborted)return;if(s.status===`redeemed`&&`credit_grant_id`in s){j(t.creditAmount,s.credit_grant_id,t.accountId);return}if(s.status===`unavailable`){l({type:`show_unavailable`}),o();return}if(`eligible`in s&&s.eligible===!1){Y(s)?l({type:`show_workspace_association_blocked`}):X(s)?l({type:`show_currency_mismatch`}):Fe(s)?l({type:`show_location_ineligible`}):(l({type:`show_ineligible`}),o());return}if(s.status!==`claim_reserved`)throw Error(`Gift credit redemption returned an unknown state`);let c=Ne[n];if(c==null){z({step:`claim_redemption`,outcome:`pending`,reason:`auto_retry_exhausted`,...T.current,attemptKind:r,giftId:s.gift_id,creditQuantity:t.creditAmount}),l({type:`show_processing`,canRetry:!0,details:t});return}l({type:`show_processing`,canRetry:!1,details:t}),await Ie(c,i.signal)}}catch(e){i.signal.aborted||(e instanceof m&&e.isTransportError&&z({step:`claim_redemption`,outcome:`failed`,reason:`request_failed`,...T.current,attemptKind:r,creditQuantity:t.creditAmount}),l({type:`show_redemption_error`,details:t}))}finally{D.current===i&&(O.current=!1)}},[e,j,o]),N=(0,q.useCallback)(async()=>{w.current?.abort();let t=new AbortController;if(w.current=t,l({type:`check_eligibility`}),_&&(p==null||p.isPersonalAccount()))return;let n=()=>{E.current!==e&&(E.current=e,z({step:`claim_eligibility`,outcome:`ineligible`,reason:`workspace_account_associated`,...T.current}))};if(C){n(),l({type:`show_workspace_association_blocked`});return}if(S){n(),l({type:`show_workspace_blocked`});return}try{let n=await te.safeGet(`/gift-credits/claims/eligibility`,{additionalHeaders:{[J]:e},signal:t.signal});if(t.signal.aborted)return;if(n.status===`unavailable`){l({type:`show_unavailable`}),o();return}if(n.status===`redeemed`&&`credit_grant_id`in n){l({type:`show_redeemed`,creditAmount:G(n.amount),creditGrantId:n.credit_grant_id}),r();return}if(n.status===`claim_reserved`){M({accountId:n.account_id,creditAmount:G(n.amount)},!0);return}if(`eligible`in n&&n.eligible===!1){Y(n)?l({type:`show_workspace_association_blocked`}):X(n)?l({type:`show_currency_mismatch`}):Fe(n)?l({type:`show_location_ineligible`}):(l({type:`show_ineligible`}),o());return}if(!(`eligible_accounts`in n)||n.eligible_accounts.length===0){l({type:`show_ineligible`}),o();return}let i=n.eligible_accounts[0];l({type:`show_available`,details:{accountId:i.account_id,creditAmount:G(n.amount)},presentation:n.presentation??null})}catch(e){t.signal.aborted||(e instanceof m&&e.isTransportError&&z({step:`claim_eligibility`,outcome:`failed`,reason:`request_failed`,...T.current}),l({type:`show_eligibility_error`}),o())}},[_,e,p,C,S,r,o,M]),ae=(0,q.useCallback)(async()=>{if(!(x==null||y)){b(!0);try{let{updatedAccount:e,willRedirect:t}=await h(d,x.id,u,f(),!0,window.location.href);if(!e&&!t){b(!1),f().danger(u.formatMessage(V.accountSwitchError));return}t||ee(window.location.href)}catch{b(!1),f().danger(u.formatMessage(V.accountSwitchError))}}},[u,y,x,d]),P=(0,q.useCallback)(()=>{s.status===`available`&&M(K(s))},[M,s]),F=(0,q.useCallback)(()=>{if(s.status===`error`&&s.operation===`eligibility`){N();return}(s.status===`error`&&s.operation===`redemption`||s.status===`processing`&&s.canRetry)&&M(K(s),!0)},[N,M,s]);return(0,q.useEffect)(()=>(N(),()=>{w.current?.abort()}),[N]),(0,q.useEffect)(()=>(k.current=!1,A.current=null,T.current={deliveryMode:t,giftFunnelId:n},()=>{D.current?.abort(),D.current=null,O.current=!1}),[e,t,n]),(0,Me.jsx)(Oe,{onClose:i,onClaim:P,onRetry:F,onSwitchAccount:()=>ie({reason:ne.AccountSwitcher,source:`gifts.credits.redemption-flow`}),onSwitchToPersonal:()=>void ae(),canSwitchToPersonal:x!=null,isSwitchingAccount:y,state:s})}}));function ze(){"use forget";let e=(0,Z.c)(18),{claimCode:t}=ce(),n=ue(),r=se(),{search:i}=n,a;e[0]===i?a=e[1]:(a=new URLSearchParams(i).get(`gift_auth_return`),e[0]=i,e[1]=a);let o=a===`1`,s;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(s=k(),e[2]=s):s=e[2];let c=s,l=(0,Q.useRef)(o?t??null:null),u,d;e[3]!==o||e[4]!==n.hash||e[5]!==n.pathname||e[6]!==r||e[7]!==i?(u=()=>{if(!c||!o)return;let e=new URLSearchParams(i);e.delete(`gift_auth_return`),r({pathname:n.pathname,search:e.size>0?`?${e.toString()}`:``,hash:n.hash},{replace:!0})},d=[c,o,n.hash,n.pathname,r,i],e[3]=o,e[4]=n.hash,e[5]=n.pathname,e[6]=r,e[7]=i,e[8]=u,e[9]=d):(u=e[8],d=e[9]),(0,Q.useEffect)(u,d);let f,p;if(e[10]===t?(f=e[11],p=e[12]):(f=()=>{!c||t==null||t.length===0||l.current===t||(l.current=t,z({step:`claim_link`,outcome:`started`}))},p=[c,t],e[10]=t,e[11]=f,e[12]=p),(0,Q.useEffect)(f,p),t==null||t.length===0){let t;return e[13]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(fe,{replace:!0,to:`/`}),e[13]=t):t=e[13],t}if(!c){let n;return e[14]===t?n=e[15]:(n=(0,$.jsx)(He,{claimCode:t}),e[14]=t,e[15]=n),n}let m;return e[16]===t?m=e[17]:(m=(0,$.jsx)(Ue,{claimCode:t}),e[16]=t,e[17]=m),m}function Be(){}var Z,Q,$,Ve,He,Ue,We=e((()=>{Z=me(),ve(),x(),A(),N(),E(),S(),Q=t(L()),I(),ae(),ge(),Re(),B(),$=P(),Ve=50,He=e=>{"use forget";let t=(0,Z.c)(4),{claimCode:n}=e,r=(0,Q.useRef)(null),i,a;t[0]===n?(i=t[1],a=t[2]):(i=()=>{r.current!==n&&(r.current=n,z({step:`claim_link`,outcome:`started`}),z({step:`auth_redirect`,outcome:`started`}));let e=!1,t=new URL(`/gifts/credits/claim/${encodeURIComponent(n)}`,window.location.origin);return t.searchParams.set(`gift_auth_return`,`1`),D.flushStructuredEvents(Ve).catch(Be).then(()=>{if(!e)return T({callbackUrl:t.href,fallbackScreenHint:`login_or_signup`})}),()=>{e=!0}},a=[n],t[0]=n,t[1]=i,t[2]=a),(0,Q.useEffect)(i,a);let o;return t[3]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,$.jsx)(_e,{}),t[3]=o):o=t[3],o},Ue=e=>{"use forget";let t=(0,Z.c)(20),{claimCode:n}=e,i=R(),a=se(),o=r()?.user,s;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(s=()=>{w({email:o?.email,phoneNumber:o?.phone_number})},t[0]=s):s=t[0];let c;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(c=[o?.email,o?.phone_number],t[1]=c):c=t[1],(0,Q.useEffect)(s,c);let l;t[2]===a?l=t[3]:(l=()=>{a(`/`,{replace:!0})},t[2]=a,t[3]=l);let u=l,d;t[4]!==u||t[5]!==i?(d=e=>{u(),f().success(i.formatMessage(V.redeemedToast,{creditAmount:e}))},t[4]=u,t[5]=i,t[6]=d):d=t[6];let p=d,m;t[7]!==u||t[8]!==i?(m=()=>{u(),f().danger(i.formatMessage(V.alreadyClaimedToast))},t[7]=u,t[8]=i,t[9]=m):m=t[9];let h=m,g;t[10]!==u||t[11]!==i?(g=()=>{u(),f().danger(i.formatMessage(V.unavailableToast))},t[10]=u,t[11]=i,t[12]=g):g=t[12];let _=g,v;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,$.jsx)(_e,{}),t[13]=v):v=t[13];let y;return t[14]!==n||t[15]!==u||t[16]!==h||t[17]!==p||t[18]!==_?(y=(0,$.jsxs)($.Fragment,{children:[v,(0,$.jsx)(Le,{claimCode:n,onAlreadyClaimed:h,onClose:u,onRedeemed:p,onUnavailable:_})]}),t[14]=n,t[15]=u,t[16]=h,t[17]=p,t[18]=_,t[19]=y):y=t[19],y}})),Ge,Ke=e((()=>{ye(),E(),u(),ae(),Ge=()=>k()&&!i(`2067846105`)&&!be()?he(`/`):null}));export{We as i,Ke as n,ze as r,Ge as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/cc1ea293-n249dlrpuzunbhe7.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-ed29bs6yiwucn7st.js", "assets/2340486e-oc6d2eodbcrmxur3.js", "assets/root-lelxp0l2.css", "assets/fedf4e11-jhhga25nxu6i6jg7.js", "assets/cea3409c-nycpo0wkyuavw2fz.js", "assets/30901919-om7b3qf5hp4j9x4l.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Al as n,
+    Aot as r,
+    Bnt as i,
+    F7 as a,
+    I1 as o,
+    J0 as s,
+    J1 as c,
+    JT as l,
+    Knt as u,
+    Pit as d,
+    RU as f,
+    Sw as p,
+    Tat as m,
+    W1 as h,
+    X0 as g,
+    Y0 as _,
+    Y1 as v,
+    Z0 as y,
+    b4 as ee,
+    e2 as b,
+    fr as x,
+    hnt as S,
+    j7 as te,
+    jat as C,
+    jit as ne,
+    kl as re,
+    lr as w,
+    n0 as T,
+    oit as E,
+    pnt as D,
+    qT as O,
+    sit as k,
+    t0 as A,
+    uit as ie,
+    ww as j,
+    x4 as M,
+    zU as N
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    $ as ae,
+    Bn as P,
+    N as oe,
+    Nn as F,
+    Pt as se,
+    Rn as I,
+    Rt as ce,
+    Vn as L,
+    cn as le,
+    jt as ue,
+    ln as de,
+    lt as fe,
+    s as pe,
+    wn as me,
+    xt as he,
+    zn as R
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    Nh as ge,
+    Ph as z
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+import {
+    c as _e,
+    l as ve
+} from "./8b34dbc2-j8rcexxiltkm8ucr.js";
+import {
+    n as B,
+    t as V
+} from "./fedf4e11-jhhga25nxu6i6jg7.js";
+import {
+    n as ye,
+    r as be,
+    t as xe
+} from "./5d04b0af-llm6fqow424onnuj.js";
+var H, Se = e((() => {
+    _(), de(), H = s(() => le(() => import(`./cc1ea293-n249dlrpuzunbhe7.js`).then(e => e.GiftCreditsClaimModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7])))
+}));
+
+function Ce() {
+    g(H)
+}
+
+function we() {
+    return Ce
+}
+
+function Te(e) {
+    return e.preventDefault()
+}
+
+function Ee(e) {
+    return e.preventDefault()
+}
+var De, U, W, Oe, ke = e((() => {
+        De = me(), l(), j(), y(), U = t(L()), I(), Se(), B(), W = P(), Oe = e => {
+            "use forget";
+            let t = (0, De.c)(68),
+                {
+                    canSwitchToPersonal: n,
+                    isSwitchingAccount: r,
+                    onClaim: i,
+                    onClose: a,
+                    onRetry: o,
+                    onSwitchAccount: s,
+                    onSwitchToPersonal: c,
+                    state: l
+                } = e,
+                u = R(),
+                d;
+            t[0] !== i || t[1] !== a || t[2] !== o || t[3] !== l.canRetry || t[4] !== l.creditAmount || t[5] !== l.operation || t[6] !== l.status ? (d = () => {
+                if (l.status === `available`) {
+                    b(H, {
+                        creditAmount: l.creditAmount,
+                        onClaim: i,
+                        onDismiss: a,
+                        status: `available`
+                    });
+                    return
+                }
+                if (l.status === `redeeming` || l.status === `processing` && !l.canRetry) {
+                    b(H, {
+                        creditAmount: l.creditAmount,
+                        onClaim: i,
+                        onDismiss: a,
+                        status: `claiming`
+                    });
+                    return
+                }
+                if (l.status === `processing` && l.canRetry || l.status === `error` && l.operation === `redemption`) {
+                    b(H, {
+                        creditAmount: l.creditAmount,
+                        onClaim: o,
+                        onDismiss: a,
+                        status: `retryable`
+                    });
+                    return
+                }
+                g(H)
+            }, t[0] = i, t[1] = a, t[2] = o, t[3] = l.canRetry, t[4] = l.creditAmount, t[5] = l.operation, t[6] = l.status, t[7] = d) : d = t[7];
+            let f;
+            t[8] !== i || t[9] !== a || t[10] !== o || t[11] !== l ? (f = [i, a, o, l], t[8] = i, t[9] = a, t[10] = o, t[11] = l, t[12] = f) : f = t[12], (0, U.useEffect)(d, f);
+            let m;
+            if (t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (m = [], t[13] = m) : m = t[13], (0, U.useEffect)(we, m), l.status === `workspace_association_blocked`) {
+                let e;
+                t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, W.jsx)(`span`, {
+                    className: `block text-sm leading-5`,
+                    children: (0, W.jsx)(F, {
+                        ...V.workspaceAccountIneligibleDescription
+                    })
+                }), t[14] = e) : e = t[14];
+                let n;
+                t[15] === u ? n = t[16] : (n = u.formatMessage(V.workspaceAccountIneligibleTitle), t[15] = u, t[16] = n);
+                let r;
+                t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, W.jsx)(F, {
+                    ...V.switchAccountButton
+                }), t[17] = r) : r = t[17];
+                let i;
+                t[18] === s ? i = t[19] : (i = (0, W.jsx)(O, {
+                    className: `rounded-full`,
+                    color: `primary`,
+                    onClick: s,
+                    size: `large`,
+                    type: `button`,
+                    children: r
+                }), t[18] = s, t[19] = i);
+                let o;
+                t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, W.jsx)(F, {
+                    ...V.goBackButton
+                }), t[20] = o) : o = t[20];
+                let c;
+                t[21] === a ? c = t[22] : (c = (0, W.jsx)(O, {
+                    className: `rounded-full`,
+                    color: `secondary`,
+                    onClick: a,
+                    size: `large`,
+                    type: `button`,
+                    children: o
+                }), t[21] = a, t[22] = c);
+                let l;
+                return t[23] !== a || t[24] !== n || t[25] !== i || t[26] !== c ? (l = (0, W.jsx)(p, {
+                    className: `max-w-[480px]`,
+                    description: e,
+                    isOpen: !0,
+                    onClose: a,
+                    onEscapeKeyDown: Te,
+                    shouldIgnoreClickOutside: !0,
+                    showCloseButton: !1,
+                    size: `custom`,
+                    type: `warning`,
+                    title: n,
+                    primaryButton: i,
+                    secondaryButton: c
+                }), t[23] = a, t[24] = n, t[25] = i, t[26] = c, t[27] = l) : l = t[27], l
+            }
+            if (l.status === `workspace_blocked`) {
+                let e = n ? V.personalAccountRequiredDescription : V.personalWorkspaceUnavailableDescription,
+                    i;
+                t[28] === e ? i = t[29] : (i = (0, W.jsx)(`span`, {
+                    className: `block text-sm leading-5`,
+                    children: (0, W.jsx)(F, {
+                        ...e
+                    })
+                }), t[28] = e, t[29] = i);
+                let o;
+                t[30] === u ? o = t[31] : (o = u.formatMessage(V.personalAccountRequiredTitle), t[30] = u, t[31] = o);
+                let l = n && r,
+                    d = n && r,
+                    f = n ? c : s,
+                    m = n ? V.switchToPersonalAccount : V.switchAccountButton,
+                    h;
+                t[32] === m ? h = t[33] : (h = (0, W.jsx)(F, {
+                    ...m
+                }), t[32] = m, t[33] = h);
+                let g;
+                t[34] !== h || t[35] !== l || t[36] !== d || t[37] !== f ? (g = (0, W.jsx)(O, {
+                    className: `rounded-full`,
+                    color: `primary`,
+                    disabled: l,
+                    loading: d,
+                    onClick: f,
+                    size: `large`,
+                    type: `button`,
+                    children: h
+                }), t[34] = h, t[35] = l, t[36] = d, t[37] = f, t[38] = g) : g = t[38];
+                let _;
+                t[39] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = (0, W.jsx)(F, {
+                    ...V.goBackButton
+                }), t[39] = _) : _ = t[39];
+                let v;
+                t[40] === a ? v = t[41] : (v = (0, W.jsx)(O, {
+                    className: `rounded-full`,
+                    color: `secondary`,
+                    onClick: a,
+                    size: `large`,
+                    type: `button`,
+                    children: _
+                }), t[40] = a, t[41] = v);
+                let y;
+                return t[42] !== a || t[43] !== g || t[44] !== v || t[45] !== i || t[46] !== o ? (y = (0, W.jsx)(p, {
+                    className: `max-w-[480px]`,
+                    description: i,
+                    testId: `modal-gift-credit-personal-account-required`,
+                    isOpen: !0,
+                    onClose: a,
+                    onEscapeKeyDown: Ee,
+                    shouldIgnoreClickOutside: !0,
+                    showCloseButton: !1,
+                    size: `custom`,
+                    type: `warning`,
+                    title: o,
+                    primaryButton: g,
+                    secondaryButton: v
+                }), t[42] = a, t[43] = g, t[44] = v, t[45] = i, t[46] = o, t[47] = y) : y = t[47], y
+            }
+            if (l.status === `currency_mismatch`) {
+                let e;
+                t[48] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, W.jsx)(`span`, {
+                    className: `text-token-text-secondary block text-sm leading-5`,
+                    children: (0, W.jsx)(F, {
+                        ...V.currencyMismatchDescription
+                    })
+                }), t[48] = e) : e = t[48];
+                let n;
+                t[49] === u ? n = t[50] : (n = u.formatMessage(V.currencyMismatchTitle), t[49] = u, t[50] = n);
+                let r;
+                t[51] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, W.jsx)(F, {
+                    ...V.gotItButton
+                }), t[51] = r) : r = t[51];
+                let i;
+                t[52] === a ? i = t[53] : (i = (0, W.jsx)(O, {
+                    className: `rounded-full`,
+                    color: `primary`,
+                    onClick: a,
+                    size: `large`,
+                    type: `button`,
+                    children: r
+                }), t[52] = a, t[53] = i);
+                let o;
+                return t[54] !== a || t[55] !== n || t[56] !== i ? (o = (0, W.jsx)(p, {
+                    className: `max-w-[480px]`,
+                    description: e,
+                    testId: `modal-gift-credit-currency-mismatch`,
+                    isOpen: !0,
+                    onClose: a,
+                    shouldIgnoreClickOutside: !0,
+                    showCloseButton: !1,
+                    size: `custom`,
+                    type: `danger`,
+                    title: n,
+                    primaryButton: i
+                }), t[54] = a, t[55] = n, t[56] = i, t[57] = o) : o = t[57], o
+            }
+            if (l.status === `location_ineligible`) {
+                let e;
+                t[58] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, W.jsx)(`span`, {
+                    className: `text-token-text-secondary block text-sm leading-5`,
+                    children: (0, W.jsx)(F, {
+                        ...V.locationIneligibleDescription
+                    })
+                }), t[58] = e) : e = t[58];
+                let n;
+                t[59] === u ? n = t[60] : (n = u.formatMessage(V.locationIneligibleTitle), t[59] = u, t[60] = n);
+                let r;
+                t[61] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, W.jsx)(F, {
+                    ...V.gotItButton
+                }), t[61] = r) : r = t[61];
+                let i;
+                t[62] === a ? i = t[63] : (i = (0, W.jsx)(O, {
+                    className: `rounded-full`,
+                    color: `primary`,
+                    onClick: a,
+                    size: `large`,
+                    type: `button`,
+                    children: r
+                }), t[62] = a, t[63] = i);
+                let o;
+                return t[64] !== a || t[65] !== n || t[66] !== i ? (o = (0, W.jsx)(p, {
+                    className: `max-w-[480px]`,
+                    description: e,
+                    testId: `modal-gift-credit-location-ineligible`,
+                    isOpen: !0,
+                    onClose: a,
+                    shouldIgnoreClickOutside: !0,
+                    showCloseButton: !1,
+                    size: `custom`,
+                    type: `danger`,
+                    title: n,
+                    primaryButton: i
+                }), t[64] = a, t[65] = n, t[66] = i, t[67] = o) : o = t[67], o
+            }
+            return null
+        }
+    })),
+    Ae, G, K, je = e((() => {
+        Ae = (e, t) => {
+            switch (t.type) {
+                case `check_eligibility`:
+                    return {
+                        status: `loading`
+                    };
+                case `show_available`:
+                    return {
+                        ...t.details, presentation: t.presentation, status: `available`
+                    };
+                case `show_ineligible`:
+                    return {
+                        status: `ineligible`
+                    };
+                case `show_workspace_association_blocked`:
+                    return {
+                        status: `workspace_association_blocked`
+                    };
+                case `show_workspace_blocked`:
+                    return {
+                        status: `workspace_blocked`
+                    };
+                case `show_currency_mismatch`:
+                    return {
+                        status: `currency_mismatch`
+                    };
+                case `show_location_ineligible`:
+                    return {
+                        status: `location_ineligible`
+                    };
+                case `show_unavailable`:
+                    return {
+                        status: `unavailable`
+                    };
+                case `show_eligibility_error`:
+                    return {
+                        status: `error`, operation: `eligibility`
+                    };
+                case `start_redemption`:
+                    return {
+                        ...t.details, status: `redeeming`
+                    };
+                case `show_processing`:
+                    return {
+                        ...t.details, canRetry: t.canRetry, status: `processing`
+                    };
+                case `show_redeemed`:
+                    return {
+                        creditAmount: t.creditAmount, creditGrantId: t.creditGrantId, status: `redeemed`
+                    };
+                case `show_redemption_error`:
+                    return {
+                        ...t.details, operation: `redemption`, status: `error`
+                    }
+            }
+        }, G = e => {
+            let t = Number(e);
+            if (!Number.isSafeInteger(t) || t <= 0) throw Error(`Gift credit claim returned an invalid amount`);
+            return t
+        }, K = e => ({
+            accountId: e.accountId,
+            creditAmount: e.creditAmount
+        })
+    })),
+    q, Me, Ne, J, Pe, Y, X, Fe, Ie, Le, Re = e((() => {
+        o(), N(), E(), C(), d(), M(), a(), n(), pe(), q = t(L()), I(), ge(), ke(), je(), ye(), B(), Me = P(), Ne = [1e3, 2e3, 4e3], J = `X-OpenAI-Gift-Credit-Claim-Token`, Pe = `chatgpt_gift_credit_redemption`, Y = e => typeof e == `object` && !!e && `workspace_account_associated` in e && e.workspace_account_associated === !0, X = e => typeof e == `object` && !!e && (`ineligibility_detail_reason` in e && e.ineligibility_detail_reason === `recipient_currency_mismatch` || `ineligibility_reason` in e && (e.ineligibility_reason === `recipient_currency_mismatch` || e.ineligibility_reason === `recipient_location_ineligible`)), Fe = e => typeof e == `object` && !!e && `location_ineligible` in e && e.location_ineligible === !0, Ie = (e, t) => new Promise((n, r) => {
+            if (t.aborted) {
+                r(t.reason);
+                return
+            }
+            let i = window.setTimeout(() => {
+                    t.removeEventListener(`abort`, a), n()
+                }, e),
+                a = () => {
+                    window.clearTimeout(i), r(t.reason)
+                };
+            t.addEventListener(`abort`, a, {
+                once: !0
+            })
+        }), Le = ({
+            claimCode: e,
+            deliveryMode: t,
+            giftFunnelId: n,
+            onAlreadyClaimed: r,
+            onClose: i,
+            onRedeemed: a,
+            onUnavailable: o
+        }) => {
+            "use no forget";
+            let [s, l] = (0, q.useReducer)(Ae, {
+                status: `loading`
+            }), u = R(), d = oe(), p = v(), {
+                data: g,
+                isLoading: _
+            } = c(), [y, b] = (0, q.useState)(!1), x = g?.accountItems.find(e => e.isPersonalAccount() && !e.isDeactivated()), S = p != null && !p.isPersonalAccount(), C = g != null && xe(g.accountItems), w = (0, q.useRef)(null), T = (0, q.useRef)({
+                deliveryMode: t,
+                giftFunnelId: n
+            }), E = (0, q.useRef)(null), D = (0, q.useRef)(null), O = (0, q.useRef)(!1), k = (0, q.useRef)(!1), A = (0, q.useRef)(null), j = (0, q.useCallback)((e, t, n) => {
+                k.current || (k.current = !0, d.invalidateQueries({
+                    queryKey: [`usage-limits-page-configs`, n]
+                }), d.invalidateQueries({
+                    queryKey: [`wham`, `usage`, `rate-limit-status`]
+                }), d.invalidateQueries({
+                    queryKey: [`settings`, `agent-usage`, `remaining-balance`, n]
+                }), l({
+                    type: `show_redeemed`,
+                    creditAmount: e,
+                    creditGrantId: t
+                }), a(e))
+            }, [a, d]), M = (0, q.useCallback)(async (t, n = !1) => {
+                if (O.current) return;
+                O.current = !0;
+                let r = A.current ?? (n ? `recovery` : `initial`);
+                A.current = r, D.current?.abort();
+                let i = new AbortController;
+                D.current = i, l(n ? {
+                    type: `show_processing`,
+                    canRetry: !1,
+                    details: t
+                } : {
+                    type: `start_redemption`,
+                    details: t
+                }), z({
+                    step: `claim_redemption`,
+                    outcome: `started`,
+                    ...T.current,
+                    attemptKind: r,
+                    creditQuantity: t.creditAmount
+                });
+                try {
+                    for (let n = 0;; n += 1) {
+                        let a = await re(Pe),
+                            s = await te.safePost(`/gift-credits/claims/redeem`, {
+                                additionalHeaders: {
+                                    ...a,
+                                    [J]: e
+                                },
+                                requestBody: {
+                                    account_id: t.accountId
+                                },
+                                signal: i.signal
+                            });
+                        if (i.signal.aborted) return;
+                        if (s.status === `redeemed` && `credit_grant_id` in s) {
+                            j(t.creditAmount, s.credit_grant_id, t.accountId);
+                            return
+                        }
+                        if (s.status === `unavailable`) {
+                            l({
+                                type: `show_unavailable`
+                            }), o();
+                            return
+                        }
+                        if (`eligible` in s && s.eligible === !1) {
+                            Y(s) ? l({
+                                type: `show_workspace_association_blocked`
+                            }) : X(s) ? l({
+                                type: `show_currency_mismatch`
+                            }) : Fe(s) ? l({
+                                type: `show_location_ineligible`
+                            }) : (l({
+                                type: `show_ineligible`
+                            }), o());
+                            return
+                        }
+                        if (s.status !== `claim_reserved`) throw Error(`Gift credit redemption returned an unknown state`);
+                        let c = Ne[n];
+                        if (c == null) {
+                            z({
+                                step: `claim_redemption`,
+                                outcome: `pending`,
+                                reason: `auto_retry_exhausted`,
+                                ...T.current,
+                                attemptKind: r,
+                                giftId: s.gift_id,
+                                creditQuantity: t.creditAmount
+                            }), l({
+                                type: `show_processing`,
+                                canRetry: !0,
+                                details: t
+                            });
+                            return
+                        }
+                        l({
+                            type: `show_processing`,
+                            canRetry: !1,
+                            details: t
+                        }), await Ie(c, i.signal)
+                    }
+                } catch (e) {
+                    i.signal.aborted || (e instanceof m && e.isTransportError && z({
+                        step: `claim_redemption`,
+                        outcome: `failed`,
+                        reason: `request_failed`,
+                        ...T.current,
+                        attemptKind: r,
+                        creditQuantity: t.creditAmount
+                    }), l({
+                        type: `show_redemption_error`,
+                        details: t
+                    }))
+                } finally {
+                    D.current === i && (O.current = !1)
+                }
+            }, [e, j, o]), N = (0, q.useCallback)(async () => {
+                w.current?.abort();
+                let t = new AbortController;
+                if (w.current = t, l({
+                        type: `check_eligibility`
+                    }), _ && (p == null || p.isPersonalAccount())) return;
+                let n = () => {
+                    E.current !== e && (E.current = e, z({
+                        step: `claim_eligibility`,
+                        outcome: `ineligible`,
+                        reason: `workspace_account_associated`,
+                        ...T.current
+                    }))
+                };
+                if (C) {
+                    n(), l({
+                        type: `show_workspace_association_blocked`
+                    });
+                    return
+                }
+                if (S) {
+                    n(), l({
+                        type: `show_workspace_blocked`
+                    });
+                    return
+                }
+                try {
+                    let n = await te.safeGet(`/gift-credits/claims/eligibility`, {
+                        additionalHeaders: {
+                            [J]: e
+                        },
+                        signal: t.signal
+                    });
+                    if (t.signal.aborted) return;
+                    if (n.status === `unavailable`) {
+                        l({
+                            type: `show_unavailable`
+                        }), o();
+                        return
+                    }
+                    if (n.status === `redeemed` && `credit_grant_id` in n) {
+                        l({
+                            type: `show_redeemed`,
+                            creditAmount: G(n.amount),
+                            creditGrantId: n.credit_grant_id
+                        }), r();
+                        return
+                    }
+                    if (n.status === `claim_reserved`) {
+                        M({
+                            accountId: n.account_id,
+                            creditAmount: G(n.amount)
+                        }, !0);
+                        return
+                    }
+                    if (`eligible` in n && n.eligible === !1) {
+                        Y(n) ? l({
+                            type: `show_workspace_association_blocked`
+                        }) : X(n) ? l({
+                            type: `show_currency_mismatch`
+                        }) : Fe(n) ? l({
+                            type: `show_location_ineligible`
+                        }) : (l({
+                            type: `show_ineligible`
+                        }), o());
+                        return
+                    }
+                    if (!(`eligible_accounts` in n) || n.eligible_accounts.length === 0) {
+                        l({
+                            type: `show_ineligible`
+                        }), o();
+                        return
+                    }
+                    let i = n.eligible_accounts[0];
+                    l({
+                        type: `show_available`,
+                        details: {
+                            accountId: i.account_id,
+                            creditAmount: G(n.amount)
+                        },
+                        presentation: n.presentation ?? null
+                    })
+                } catch (e) {
+                    t.signal.aborted || (e instanceof m && e.isTransportError && z({
+                        step: `claim_eligibility`,
+                        outcome: `failed`,
+                        reason: `request_failed`,
+                        ...T.current
+                    }), l({
+                        type: `show_eligibility_error`
+                    }), o())
+                }
+            }, [_, e, p, C, S, r, o, M]), ae = (0, q.useCallback)(async () => {
+                if (!(x == null || y)) {
+                    b(!0);
+                    try {
+                        let {
+                            updatedAccount: e,
+                            willRedirect: t
+                        } = await h(d, x.id, u, f(), !0, window.location.href);
+                        if (!e && !t) {
+                            b(!1), f().danger(u.formatMessage(V.accountSwitchError));
+                            return
+                        }
+                        t || ee(window.location.href)
+                    } catch {
+                        b(!1), f().danger(u.formatMessage(V.accountSwitchError))
+                    }
+                }
+            }, [u, y, x, d]), P = (0, q.useCallback)(() => {
+                s.status === `available` && M(K(s))
+            }, [M, s]), F = (0, q.useCallback)(() => {
+                if (s.status === `error` && s.operation === `eligibility`) {
+                    N();
+                    return
+                }(s.status === `error` && s.operation === `redemption` || s.status === `processing` && s.canRetry) && M(K(s), !0)
+            }, [N, M, s]);
+            return (0, q.useEffect)(() => (N(), () => {
+                w.current?.abort()
+            }), [N]), (0, q.useEffect)(() => (k.current = !1, A.current = null, T.current = {
+                deliveryMode: t,
+                giftFunnelId: n
+            }, () => {
+                D.current?.abort(), D.current = null, O.current = !1
+            }), [e, t, n]), (0, Me.jsx)(Oe, {
+                onClose: i,
+                onClaim: P,
+                onRetry: F,
+                onSwitchAccount: () => ie({
+                    reason: ne.AccountSwitcher,
+                    source: `gifts.credits.redemption-flow`
+                }),
+                onSwitchToPersonal: () => void ae(),
+                canSwitchToPersonal: x != null,
+                isSwitchingAccount: y,
+                state: s
+            })
+        }
+    }));
+
+function ze() {
+    "use forget";
+    let e = (0, Z.c)(18),
+        {
+            claimCode: t
+        } = ce(),
+        n = ue(),
+        r = se(),
+        {
+            search: i
+        } = n,
+        a;
+    e[0] === i ? a = e[1] : (a = new URLSearchParams(i).get(`gift_auth_return`), e[0] = i, e[1] = a);
+    let o = a === `1`,
+        s;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (s = k(), e[2] = s) : s = e[2];
+    let c = s,
+        l = (0, Q.useRef)(o ? t ?? null : null),
+        u, d;
+    e[3] !== o || e[4] !== n.hash || e[5] !== n.pathname || e[6] !== r || e[7] !== i ? (u = () => {
+        if (!c || !o) return;
+        let e = new URLSearchParams(i);
+        e.delete(`gift_auth_return`), r({
+            pathname: n.pathname,
+            search: e.size > 0 ? `?${e.toString()}` : ``,
+            hash: n.hash
+        }, {
+            replace: !0
+        })
+    }, d = [c, o, n.hash, n.pathname, r, i], e[3] = o, e[4] = n.hash, e[5] = n.pathname, e[6] = r, e[7] = i, e[8] = u, e[9] = d) : (u = e[8], d = e[9]), (0, Q.useEffect)(u, d);
+    let f, p;
+    if (e[10] === t ? (f = e[11], p = e[12]) : (f = () => {
+            !c || t == null || t.length === 0 || l.current === t || (l.current = t, z({
+                step: `claim_link`,
+                outcome: `started`
+            }))
+        }, p = [c, t], e[10] = t, e[11] = f, e[12] = p), (0, Q.useEffect)(f, p), t == null || t.length === 0) {
+        let t;
+        return e[13] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(fe, {
+            replace: !0,
+            to: `/`
+        }), e[13] = t) : t = e[13], t
+    }
+    if (!c) {
+        let n;
+        return e[14] === t ? n = e[15] : (n = (0, $.jsx)(He, {
+            claimCode: t
+        }), e[14] = t, e[15] = n), n
+    }
+    let m;
+    return e[16] === t ? m = e[17] : (m = (0, $.jsx)(Ue, {
+        claimCode: t
+    }), e[16] = t, e[17] = m), m
+}
+
+function Be() {}
+var Z, Q, $, Ve, He, Ue, We = e((() => {
+        Z = me(), ve(), x(), A(), N(), E(), S(), Q = t(L()), I(), ae(), ge(), Re(), B(), $ = P(), Ve = 50, He = e => {
+            "use forget";
+            let t = (0, Z.c)(4),
+                {
+                    claimCode: n
+                } = e,
+                r = (0, Q.useRef)(null),
+                i, a;
+            t[0] === n ? (i = t[1], a = t[2]) : (i = () => {
+                r.current !== n && (r.current = n, z({
+                    step: `claim_link`,
+                    outcome: `started`
+                }), z({
+                    step: `auth_redirect`,
+                    outcome: `started`
+                }));
+                let e = !1,
+                    t = new URL(`/gifts/credits/claim/${encodeURIComponent(n)}`, window.location.origin);
+                return t.searchParams.set(`gift_auth_return`, `1`), D.flushStructuredEvents(Ve).catch(Be).then(() => {
+                    if (!e) return T({
+                        callbackUrl: t.href,
+                        fallbackScreenHint: `login_or_signup`
+                    })
+                }), () => {
+                    e = !0
+                }
+            }, a = [n], t[0] = n, t[1] = i, t[2] = a), (0, Q.useEffect)(i, a);
+            let o;
+            return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, $.jsx)(_e, {}), t[3] = o) : o = t[3], o
+        }, Ue = e => {
+            "use forget";
+            let t = (0, Z.c)(20),
+                {
+                    claimCode: n
+                } = e,
+                i = R(),
+                a = se(),
+                o = r()?.user,
+                s;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (s = () => {
+                w({
+                    email: o?.email,
+                    phoneNumber: o?.phone_number
+                })
+            }, t[0] = s) : s = t[0];
+            let c;
+            t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (c = [o?.email, o?.phone_number], t[1] = c) : c = t[1], (0, Q.useEffect)(s, c);
+            let l;
+            t[2] === a ? l = t[3] : (l = () => {
+                a(`/`, {
+                    replace: !0
+                })
+            }, t[2] = a, t[3] = l);
+            let u = l,
+                d;
+            t[4] !== u || t[5] !== i ? (d = e => {
+                u(), f().success(i.formatMessage(V.redeemedToast, {
+                    creditAmount: e
+                }))
+            }, t[4] = u, t[5] = i, t[6] = d) : d = t[6];
+            let p = d,
+                m;
+            t[7] !== u || t[8] !== i ? (m = () => {
+                u(), f().danger(i.formatMessage(V.alreadyClaimedToast))
+            }, t[7] = u, t[8] = i, t[9] = m) : m = t[9];
+            let h = m,
+                g;
+            t[10] !== u || t[11] !== i ? (g = () => {
+                u(), f().danger(i.formatMessage(V.unavailableToast))
+            }, t[10] = u, t[11] = i, t[12] = g) : g = t[12];
+            let _ = g,
+                v;
+            t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, $.jsx)(_e, {}), t[13] = v) : v = t[13];
+            let y;
+            return t[14] !== n || t[15] !== u || t[16] !== h || t[17] !== p || t[18] !== _ ? (y = (0, $.jsxs)($.Fragment, {
+                children: [v, (0, $.jsx)(Le, {
+                    claimCode: n,
+                    onAlreadyClaimed: h,
+                    onClose: u,
+                    onRedeemed: p,
+                    onUnavailable: _
+                })]
+            }), t[14] = n, t[15] = u, t[16] = h, t[17] = p, t[18] = _, t[19] = y) : y = t[19], y
+        }
+    })),
+    Ge, Ke = e((() => {
+        ye(), E(), u(), ae(), Ge = () => k() && !i(`2067846105`) && !be() ? he(`/`) : null
+    }));
+export {
+    We as i, Ke as n, ze as r, Ge as t
+};
 //# sourceMappingURL=48eff304-cozqpprahik5hsse.js.map
