@@ -1,2 +1,342 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{IN as n,Iv as r,LN as i,M5 as a,Pv as o,R8 as s,RU as c,X0 as l,X8 as u,Z0 as d,_N as f,a5 as p,crt as m,e2 as ee,lrt as h,m8 as g,srt as _,vN as v,zU as y}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as te,Hn as b,N as ne,Tn as x,Vn as S,s as C,zn as w}from"./2340486e-komxp8tzs51ny4jj.js";import{CW as re,EG as T,TAt as ie,TG as E,YFn as D,aTn as O,eIn as k,i6 as A,iTn as ae,jAt as j,r6 as oe,sAt as se,uAt as M,wG as N,wW as P}from"./conversation-small-cawdu7il3ha6y70c.js";import{_S as ce,gS as F}from"./c2675c8c-nxl2ic2ofk2vw70s.js";import{as as le,is as I}from"./8b34dbc2-d4icgkio4i3wfm6q.js";import{n as L,r as ue}from"./4f866508-gm32302vy1rviel5.js";import{n as R,t as z}from"./cd7c6193-lvaijx6wbwdx3noi.js";import{o as B,s as de,t as fe}from"./4cf35c7a-agd3kz164bjzljfz.js";import{i as pe,n as me,r as V,t as H}from"./2bed0ed0-ipxxzaglcj882wd4.js";import{n as U,t as W}from"./8d72234e-fbnkh4tiawvmftdq.js";import{i as G,n as K,r as he,t as q}from"./a4cc73b1-m0vz702tlsbchvi1.js";function ge(){"use forget";let e=(0,J.c)(10),t=(0,Y.useContext)($),n=t?.start,r=(0,Y.useRef)(void 0),a,o;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(a=()=>{let e=new AbortController;return r.current=e.signal,()=>e.abort(Error(`unmount`))},o=[],e[0]=a,e[1]=o):(a=e[0],o=e[1]),i(a,o);let s;e[2]===n?s=e[3]:(s=e=>n?.({...e,signal:r.current})??!1,e[2]=n,e[3]=s);let c=v(s),l=t?.isConfirming??!1,u=t?.isLoading??!1,d=t?.loadingOauthLinkId,f=n?c:void 0,p=t?.openCreditAccountDetail,m;return e[4]!==l||e[5]!==u||e[6]!==d||e[7]!==f||e[8]!==p?(m={isConfirming:l,isLoading:u,loadingOauthLinkId:d,open:f,openCreditAccountDetail:p},e[4]=l,e[5]=u,e[6]=d,e[7]=f,e[8]=p,e[9]=m):m=e[9],m}function _e(){"use forget";return(0,Y.useContext)($)?.openAccountDetail}function ve(e){"use forget";let t=(0,J.c)(36),{children:n,conversation:i}=e,o=te(),s=ne(),d;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(d=c(),t[0]=d):d=t[0];let f=d,g=ce(!1),_=a(g),v;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(v={productSku:ae.CONNECTOR_SETTING,canReuseLink:r,skipPostConnectExperience:!0},t[1]=v):v=t[1];let y=le(v),{sensitiveValuesHidden:b}=de(),x;t[2]===i?x=t[3]:(x={conversation:i},t[2]=i,t[3]=x);let{isInitializing:S,loadingOauthLinkId:C,start:w}=pe(x),T;t[4]===i?T=t[5]:(T=()=>me(i),t[4]=i,t[5]=T);let O=a(T),k;t[6]!==i||t[7]!==y||t[8]!==o||t[9]!==g||t[10]!==S||t[11]!==w?(k=e=>{if(g())return!1;let t={disableExposureLog:e?.accountLinkingContext?.isDebugForced===!0},n=e?.accountLinkingContext!=null&&e.autoStartOauthLinkId==null&&e.destination==null&&E(t),r=e?.destination===`credit`?`creditScore`:e?.destination;if(e?.destination==null&&!n&&(e?.autoStartOauthLinkId!=null||e?.accountLinkingContext!=null||!N()))return w(e);let a=()=>!e?.signal?.aborted&&(r===`creditScore`||(n?E(t):N()));if(S||!a())return!1;let s=r==null||r===`accounts`,c=s?e?.linkingAttempt??se(e?.trackingContext,`first_party`):void 0;if(s&&!c?.claim())return!1;let u=c?.context??(e?.trackingContext?.entrypoint?{entrypoint:e.trackingContext.entrypoint}:void 0),d=!1,p=()=>{let t=new AbortController,a=!1;ee(W,{chatSDK:K(q()),clientThreadId:i.id,conversation:i,features:[],locale:o.locale,params:{view:`accountLinking`,...r==null?{}:{initialTab:r},trackingContext:u,...n?{accountLinkingContext:e.accountLinkingContext}:{}},title:o.formatMessage(he),onClose:()=>{t.abort(),c?.finish()},...n?{onRefreshOrigin:()=>{a||t.signal.aborted||(a=!0,Promise.resolve().then(()=>e.onSuccess?.(()=>!t.signal.aborted,t.signal)).then(e=>{if(!t.signal.aborted){if(e===!1)throw Error(`Ledger onboarding handoff did not start`);l(W)}}).catch(e=>{t.signal.aborted||f.danger(o.formatMessage(V),{error:e})}))}}:{}}),d=!0};return e?.destination!=null||n?(g.set(!0),(e.prepareConnectorLink?e.prepareConnectorLink(a,e.signal,void 0,u):re(u,t=>y(ie,{...t,signal:e.signal})).then(ye)).then(async t=>{!t||!a()||e.beforeOpen&&!await e.beforeOpen()||a()&&p()}).catch(t=>{e.signal?.aborted||f.danger(o.formatMessage(V),{error:t})}).finally(()=>{g.set(!1),d||c?.finish(),e.onSettled?.()}),!0):(p(),!0)},t[6]=i,t[7]=y,t[8]=o,t[9]=g,t[10]=S,t[11]=w,t[12]=k):k=t[12];let A=k,j,M;t[13]!==i||t[14]!==s?(j=()=>p(()=>{let e=z(i)?.focusedObject.params;return e?.route===Z&&e.accountDetailSource===`mattress_accounts_tab`},(e,t)=>{t&&!e&&(m.count(h.ECOSYSTEM,`ledger.account_detail.host_closed`,[{key:`surface`,value:`mattress_accounts_tab`}]),ue(s))},{fireImmediately:!0}),M=[i,s],t[13]=i,t[14]=s,t[15]=j,t[16]=M):(j=t[15],M=t[16]),(0,Y.useEffect)(j,M);let P,F;t[17]!==i||t[18]!==b?(P=()=>{let e=z(i),t=e?.focusedObject.params;if(e==null||e.chatSDK==null||t?.route!==Z||t.accountDetailSource!==`mattress_accounts_tab`)return;let{chatSDK:n}=e,r=oe(i);r.applyRemoteWidgetState$(n.widgetId,{...u(r.getWidgetState$(n),{}),[fe]:b})},F=[i,b],t[17]=i,t[18]=b,t[19]=P,t[20]=F):(P=t[19],F=t[20]),(0,Y.useEffect)(P,F);let I;t[21]===i?I=t[22]:(I=e=>{let{accountSelection:t,selectionSnapshot:n,sensitiveValuesHidden:r,title:a}=e,o=q(),s=Date.now();m.count(h.ECOSYSTEM,`ledger.account_detail.host_opened`,[{key:`surface`,value:`mattress_accounts_tab`}]),D(i),z.set(i,{focusedObject:{title:a,params:{accountSelection:t,accountDetailOpenedAtMs:s,accountDetailSource:`mattress_accounts_tab`,enableTargetedReply:!0,hideHeader:!0,loadingState:`detail`,layout:{isSidebarResponsive:!0,sidebarWidthPx:Q},route:Z,...n?{selectionSnapshot:n}:{}}},chatSDK:K(o,{sensitiveValuesHidden:r})})},t[21]=i,t[22]=I);let L=I,R;t[23]!==i||t[24]!==o?(R=()=>{D(i),z.set(i,{focusedObject:{title:o.formatMessage({id:`mattress.financeCreditAccountDetail.title`,defaultMessage:`Credit score`}),params:{view:`creditAccountDetail`,forceFullHeight:!0,layout:{isSidebarResponsive:!0,sidebarWidthPx:Q}}},chatSDK:K(q())})},t[23]=i,t[24]=o,t[25]=R):R=t[25];let B=R,H=S||_,U;t[26]!==O||t[27]!==C||t[28]!==L||t[29]!==B||t[30]!==A||t[31]!==H?(U={isConfirming:O,isLoading:H,loadingOauthLinkId:C,openAccountDetail:L,openCreditAccountDetail:B,start:A},t[26]=O,t[27]=C,t[28]=L,t[29]=B,t[30]=A,t[31]=H,t[32]=U):U=t[32];let G;return t[33]!==n||t[34]!==U?(G=(0,X.jsx)($.Provider,{value:U,children:n}),t[33]=n,t[34]=U,t[35]=G):G=t[35],G}function ye(e){return e?.auth_status===`ACTIVE`}var J,Y,X,Z,Q,$,be=e((()=>{J=x(),M(),P(),s(),I(),d(),U(),R(),A(),j(),T(),L(),B(),G(),H(),o(),O(),k(),g(),F(),y(),_(),f(),n(),C(),Y=t(b()),w(),X=S(),Z=`account_detail`,Q=400,$=(0,Y.createContext)(null)}));export{_e as i,be as n,ge as r,ve as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    IN as n,
+    Iv as r,
+    LN as i,
+    M5 as a,
+    Pv as o,
+    R8 as s,
+    RU as c,
+    X0 as l,
+    X8 as u,
+    Z0 as d,
+    _N as f,
+    a5 as p,
+    crt as m,
+    e2 as ee,
+    lrt as h,
+    m8 as g,
+    srt as _,
+    vN as v,
+    zU as y
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as te,
+    Hn as b,
+    N as ne,
+    Tn as x,
+    Vn as S,
+    s as C,
+    zn as w
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    CW as re,
+    EG as T,
+    TAt as ie,
+    TG as E,
+    YFn as D,
+    aTn as O,
+    eIn as k,
+    i6 as A,
+    iTn as ae,
+    jAt as j,
+    r6 as oe,
+    sAt as se,
+    uAt as M,
+    wG as N,
+    wW as P
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    _S as ce,
+    gS as F
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+import {
+    as as le,
+    is as I
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+import {
+    n as L,
+    r as ue
+} from "./4f866508-gm32302vy1rviel5.js";
+import {
+    n as R,
+    t as z
+} from "./cd7c6193-lvaijx6wbwdx3noi.js";
+import {
+    o as B,
+    s as de,
+    t as fe
+} from "./4cf35c7a-agd3kz164bjzljfz.js";
+import {
+    i as pe,
+    n as me,
+    r as V,
+    t as H
+} from "./2bed0ed0-ipxxzaglcj882wd4.js";
+import {
+    n as U,
+    t as W
+} from "./8d72234e-fbnkh4tiawvmftdq.js";
+import {
+    i as G,
+    n as K,
+    r as he,
+    t as q
+} from "./a4cc73b1-m0vz702tlsbchvi1.js";
+
+function ge() {
+    "use forget";
+    let e = (0, J.c)(10),
+        t = (0, Y.useContext)($),
+        n = t?.start,
+        r = (0, Y.useRef)(void 0),
+        a, o;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = () => {
+        let e = new AbortController;
+        return r.current = e.signal, () => e.abort(Error(`unmount`))
+    }, o = [], e[0] = a, e[1] = o) : (a = e[0], o = e[1]), i(a, o);
+    let s;
+    e[2] === n ? s = e[3] : (s = e => n?.({
+        ...e,
+        signal: r.current
+    }) ?? !1, e[2] = n, e[3] = s);
+    let c = v(s),
+        l = t?.isConfirming ?? !1,
+        u = t?.isLoading ?? !1,
+        d = t?.loadingOauthLinkId,
+        f = n ? c : void 0,
+        p = t?.openCreditAccountDetail,
+        m;
+    return e[4] !== l || e[5] !== u || e[6] !== d || e[7] !== f || e[8] !== p ? (m = {
+        isConfirming: l,
+        isLoading: u,
+        loadingOauthLinkId: d,
+        open: f,
+        openCreditAccountDetail: p
+    }, e[4] = l, e[5] = u, e[6] = d, e[7] = f, e[8] = p, e[9] = m) : m = e[9], m
+}
+
+function _e() {
+    "use forget";
+    return (0, Y.useContext)($)?.openAccountDetail
+}
+
+function ve(e) {
+    "use forget";
+    let t = (0, J.c)(36),
+        {
+            children: n,
+            conversation: i
+        } = e,
+        o = te(),
+        s = ne(),
+        d;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = c(), t[0] = d) : d = t[0];
+    let f = d,
+        g = ce(!1),
+        _ = a(g),
+        v;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (v = {
+        productSku: ae.CONNECTOR_SETTING,
+        canReuseLink: r,
+        skipPostConnectExperience: !0
+    }, t[1] = v) : v = t[1];
+    let y = le(v),
+        {
+            sensitiveValuesHidden: b
+        } = de(),
+        x;
+    t[2] === i ? x = t[3] : (x = {
+        conversation: i
+    }, t[2] = i, t[3] = x);
+    let {
+        isInitializing: S,
+        loadingOauthLinkId: C,
+        start: w
+    } = pe(x), T;
+    t[4] === i ? T = t[5] : (T = () => me(i), t[4] = i, t[5] = T);
+    let O = a(T),
+        k;
+    t[6] !== i || t[7] !== y || t[8] !== o || t[9] !== g || t[10] !== S || t[11] !== w ? (k = e => {
+        if (g()) return !1;
+        let t = {
+                disableExposureLog: e?.accountLinkingContext?.isDebugForced === !0
+            },
+            n = e?.accountLinkingContext != null && e.autoStartOauthLinkId == null && e.destination == null && E(t),
+            r = e?.destination === `credit` ? `creditScore` : e?.destination;
+        if (e?.destination == null && !n && (e?.autoStartOauthLinkId != null || e?.accountLinkingContext != null || !N())) return w(e);
+        let a = () => !e?.signal?.aborted && (r === `creditScore` || (n ? E(t) : N()));
+        if (S || !a()) return !1;
+        let s = r == null || r === `accounts`,
+            c = s ? e?.linkingAttempt ?? se(e?.trackingContext, `first_party`) : void 0;
+        if (s && !c?.claim()) return !1;
+        let u = c?.context ?? (e?.trackingContext?.entrypoint ? {
+                entrypoint: e.trackingContext.entrypoint
+            } : void 0),
+            d = !1,
+            p = () => {
+                let t = new AbortController,
+                    a = !1;
+                ee(W, {
+                    chatSDK: K(q()),
+                    clientThreadId: i.id,
+                    conversation: i,
+                    features: [],
+                    locale: o.locale,
+                    params: {
+                        view: `accountLinking`,
+                        ...r == null ? {} : {
+                            initialTab: r
+                        },
+                        trackingContext: u,
+                        ...n ? {
+                            accountLinkingContext: e.accountLinkingContext
+                        } : {}
+                    },
+                    title: o.formatMessage(he),
+                    onClose: () => {
+                        t.abort(), c?.finish()
+                    },
+                    ...n ? {
+                        onRefreshOrigin: () => {
+                            a || t.signal.aborted || (a = !0, Promise.resolve().then(() => e.onSuccess?.(() => !t.signal.aborted, t.signal)).then(e => {
+                                if (!t.signal.aborted) {
+                                    if (e === !1) throw Error(`Ledger onboarding handoff did not start`);
+                                    l(W)
+                                }
+                            }).catch(e => {
+                                t.signal.aborted || f.danger(o.formatMessage(V), {
+                                    error: e
+                                })
+                            }))
+                        }
+                    } : {}
+                }), d = !0
+            };
+        return e?.destination != null || n ? (g.set(!0), (e.prepareConnectorLink ? e.prepareConnectorLink(a, e.signal, void 0, u) : re(u, t => y(ie, {
+            ...t,
+            signal: e.signal
+        })).then(ye)).then(async t => {
+            !t || !a() || e.beforeOpen && !await e.beforeOpen() || a() && p()
+        }).catch(t => {
+            e.signal?.aborted || f.danger(o.formatMessage(V), {
+                error: t
+            })
+        }).finally(() => {
+            g.set(!1), d || c?.finish(), e.onSettled?.()
+        }), !0) : (p(), !0)
+    }, t[6] = i, t[7] = y, t[8] = o, t[9] = g, t[10] = S, t[11] = w, t[12] = k) : k = t[12];
+    let A = k,
+        j, M;
+    t[13] !== i || t[14] !== s ? (j = () => p(() => {
+        let e = z(i)?.focusedObject.params;
+        return e?.route === Z && e.accountDetailSource === `mattress_accounts_tab`
+    }, (e, t) => {
+        t && !e && (m.count(h.ECOSYSTEM, `ledger.account_detail.host_closed`, [{
+            key: `surface`,
+            value: `mattress_accounts_tab`
+        }]), ue(s))
+    }, {
+        fireImmediately: !0
+    }), M = [i, s], t[13] = i, t[14] = s, t[15] = j, t[16] = M) : (j = t[15], M = t[16]), (0, Y.useEffect)(j, M);
+    let P, F;
+    t[17] !== i || t[18] !== b ? (P = () => {
+        let e = z(i),
+            t = e?.focusedObject.params;
+        if (e == null || e.chatSDK == null || t?.route !== Z || t.accountDetailSource !== `mattress_accounts_tab`) return;
+        let {
+            chatSDK: n
+        } = e, r = oe(i);
+        r.applyRemoteWidgetState$(n.widgetId, {
+            ...u(r.getWidgetState$(n), {}),
+            [fe]: b
+        })
+    }, F = [i, b], t[17] = i, t[18] = b, t[19] = P, t[20] = F) : (P = t[19], F = t[20]), (0, Y.useEffect)(P, F);
+    let I;
+    t[21] === i ? I = t[22] : (I = e => {
+        let {
+            accountSelection: t,
+            selectionSnapshot: n,
+            sensitiveValuesHidden: r,
+            title: a
+        } = e, o = q(), s = Date.now();
+        m.count(h.ECOSYSTEM, `ledger.account_detail.host_opened`, [{
+            key: `surface`,
+            value: `mattress_accounts_tab`
+        }]), D(i), z.set(i, {
+            focusedObject: {
+                title: a,
+                params: {
+                    accountSelection: t,
+                    accountDetailOpenedAtMs: s,
+                    accountDetailSource: `mattress_accounts_tab`,
+                    enableTargetedReply: !0,
+                    hideHeader: !0,
+                    loadingState: `detail`,
+                    layout: {
+                        isSidebarResponsive: !0,
+                        sidebarWidthPx: Q
+                    },
+                    route: Z,
+                    ...n ? {
+                        selectionSnapshot: n
+                    } : {}
+                }
+            },
+            chatSDK: K(o, {
+                sensitiveValuesHidden: r
+            })
+        })
+    }, t[21] = i, t[22] = I);
+    let L = I,
+        R;
+    t[23] !== i || t[24] !== o ? (R = () => {
+        D(i), z.set(i, {
+            focusedObject: {
+                title: o.formatMessage({
+                    id: `mattress.financeCreditAccountDetail.title`,
+                    defaultMessage: `Credit score`
+                }),
+                params: {
+                    view: `creditAccountDetail`,
+                    forceFullHeight: !0,
+                    layout: {
+                        isSidebarResponsive: !0,
+                        sidebarWidthPx: Q
+                    }
+                }
+            },
+            chatSDK: K(q())
+        })
+    }, t[23] = i, t[24] = o, t[25] = R) : R = t[25];
+    let B = R,
+        H = S || _,
+        U;
+    t[26] !== O || t[27] !== C || t[28] !== L || t[29] !== B || t[30] !== A || t[31] !== H ? (U = {
+        isConfirming: O,
+        isLoading: H,
+        loadingOauthLinkId: C,
+        openAccountDetail: L,
+        openCreditAccountDetail: B,
+        start: A
+    }, t[26] = O, t[27] = C, t[28] = L, t[29] = B, t[30] = A, t[31] = H, t[32] = U) : U = t[32];
+    let G;
+    return t[33] !== n || t[34] !== U ? (G = (0, X.jsx)($.Provider, {
+        value: U,
+        children: n
+    }), t[33] = n, t[34] = U, t[35] = G) : G = t[35], G
+}
+
+function ye(e) {
+    return e?.auth_status === `ACTIVE`
+}
+var J, Y, X, Z, Q, $, be = e((() => {
+    J = x(), M(), P(), s(), I(), d(), U(), R(), A(), j(), T(), L(), B(), G(), H(), o(), O(), k(), g(), F(), y(), _(), f(), n(), C(), Y = t(b()), w(), X = S(), Z = `account_detail`, Q = 400, $ = (0, Y.createContext)(null)
+}));
+export {
+    _e as i, be as n, ge as r, ve as t
+};
 //# sourceMappingURL=a84119fb-hruy0jbony4v8z5j.js.map

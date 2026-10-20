@@ -1,2 +1,51 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{M5 as n,S8 as r,m8 as i}from"./4813494d-qsuygr73qjc6rh65.js";import{Hn as a,Tn as o,Vn as s}from"./2340486e-komxp8tzs51ny4jj.js";function c(e){"use forget";let t=(0,u.c)(5),{multiselectEnabled$:n,children:r}=e,i;t[0]===n?i=t[1]:(i={multiselectEnabled$:n},t[0]=n,t[1]=i);let a;return t[2]!==r||t[3]!==i?(a=(0,f.jsx)(p.Provider,{value:i,children:r}),t[2]=r,t[3]=i,t[4]=a):a=t[4],a}function l(){"use forget";let{multiselectEnabled$:e}=(0,d.useContext)(p);return n(e)}var u,d,f,p,m=e((()=>{u=o(),i(),d=t(a()),f=s(),p=(0,d.createContext)({multiselectEnabled$:r(!0,{name:`pageTableMultiselectEnabled`})})}));export{m as n,l as r,c as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    M5 as n,
+    S8 as r,
+    m8 as i
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Hn as a,
+    Tn as o,
+    Vn as s
+} from "./2340486e-komxp8tzs51ny4jj.js";
+
+function c(e) {
+    "use forget";
+    let t = (0, u.c)(5),
+        {
+            multiselectEnabled$: n,
+            children: r
+        } = e,
+        i;
+    t[0] === n ? i = t[1] : (i = {
+        multiselectEnabled$: n
+    }, t[0] = n, t[1] = i);
+    let a;
+    return t[2] !== r || t[3] !== i ? (a = (0, f.jsx)(p.Provider, {
+        value: i,
+        children: r
+    }), t[2] = r, t[3] = i, t[4] = a) : a = t[4], a
+}
+
+function l() {
+    "use forget";
+    let {
+        multiselectEnabled$: e
+    } = (0, d.useContext)(p);
+    return n(e)
+}
+var u, d, f, p, m = e((() => {
+    u = o(), i(), d = t(a()), f = s(), p = (0, d.createContext)({
+        multiselectEnabled$: r(!0, {
+            name: `pageTableMultiselectEnabled`
+        })
+    })
+}));
+export {
+    m as n, l as r, c as t
+};
 //# sourceMappingURL=6fd2d070-l1rkrns1lzcgveb8.js.map

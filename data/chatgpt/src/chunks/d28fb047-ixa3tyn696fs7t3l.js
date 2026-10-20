@@ -1,2 +1,1194 @@
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{$Y as r,Dz as i,Hnt as a,J5 as o,JT as s,Jnt as c,M5 as l,Mnt as u,Mw as d,Nnt as f,Oz as p,QY as m,Ur as ee,Wr as h,Ynt as te,Z0 as g,_N as _,_Y as v,_nt as y,a2 as ne,aq as b,bV as re,dF as x,dQ as ie,eQ as ae,fF as S,fV as oe,h5 as se,hnt as C,iF as w,jw as ce,m5 as le,m8 as ue,nY as T,pY as de,pq as fe,q5 as pe,qJ as E,qT as me,sU as he,uU as ge,vN as D,vq as _e,y5 as O,zZ as k}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as ve,Hn as ye,Pn as be,Tn as xe,Vn as Se,zn as Ce}from"./2340486e-komxp8tzs51ny4jj.js";import{$dt as we,$lt as Te,Ayn as A,Bpt as Ee,Bwt as De,Ckn as Oe,Cpt as ke,Dkn as Ae,EBt as je,Ekn as Me,Eut as j,Flt as Ne,GFn as Pe,Glt as Fe,Hlt as Ie,Ilt as Le,Ipt as Re,Jdt as ze,Jlt as Be,KM as Ve,Klt as He,Llt as M,Okn as N,Qdt as Ue,Qlt as We,Rwt as Ge,SGt as Ke,Syn as qe,TBt as Je,Tpt as Ye,Tut as Xe,Ult as Ze,Vlt as Qe,Wlt as $e,Xlt as et,Ylt as tt,Ypt as nt,_F as rt,_pt as it,amt as P,aut as at,cjn as ot,cmt as st,cut as ct,dFt as lt,dht as ut,eIn as dt,edt as F,eut as ft,fFt as pt,gIn as I,hjn as mt,i6 as ht,iut as gt,lht as _t,lut as vt,mIn as yt,nut as bt,omt as xt,out as St,pIn as Ct,qM as wt,r6 as L,sut as Tt,tdt as Et,tut as Dt,vF as R,vpt as Ot,wkn as kt,xGt as At}from"./conversation-small-cawdu7il3ha6y70c.js";import{Gn as jt,Hd as Mt,Kn as Nt,Om as z,bl as B,km as V,xl as H,yl as U}from"./8b34dbc2-d4icgkio4i3wfm6q.js";import{n as Pt,t as W}from"./24fd10e2-bxrvd7wzvzgx6egy.js";import{i as G,n as Ft}from"./74d67c64-eepvlo99zoqy41yl.js";import{a as It,c as Lt,d as Rt,f as K,l as zt,n as Bt,o as q,r as Vt,s as Ht,u as Ut}from"./72c9acea-bt982tn4jjzfd5x4.js";import{n as Wt,t as Gt}from"./d329f11d-di8gkxqnfari7y7p.js";import{a as Kt,o as qt}from"./0e629c03-jyz0j49qo34ae27b.js";import{n as Jt,t as Yt}from"./f4607326-dc3wfqhwpty8q7kg.js";import{n as Xt,t as Zt}from"./a5f68020-i8llevojawxqjo26.js";import{n as J,t as Qt}from"./ff9bbca7-ndtsef1dpjnwks60.js";import{n as $t,t as en}from"./277559ed-ew9ccvvtvmpwk18r.js";import{n as tn,t as nn}from"./2397672a-mm1zhl5eml2pn1ad.js";var rn,Y,X,an,on,sn,cn=e((()=>{rn=xe(),$t(),Ot(),tn(),dt(),mt(),o(),Y=n(ye()),X=Se(),an=48,on=e=>`${e.messageId}:${e.entityId??e.query}:${e.query}`,sn=e=>{"use forget";let t=(0,rn.c)(30),{activePaneIndex:n,conversation:r,detailsPanes:i,selectedBusiness:a,enableInstantLocalBusinessSidebar:o,initialBusinessContentReferenceType:s,rootNotes:c,sidebarActions:l,reserveCloseButtonSpace:u,renderHeader:d}=e,f=u!==void 0&&u,p;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(p={},t[0]=p):p=t[0];let[m,ee]=(0,Y.useState)(p),h;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(h={},t[1]=h):h=t[1];let[te,g]=(0,Y.useState)(h),_=i[n],v=_?on(_):void 0,y=v==null?0:m[v]??0,ne=y===-1||(v==null?0:te[`${v}:${n}`]??0)<=y,b;if(t[2]!==n||t[3]!==r||t[4]!==i||t[5]!==o||t[6]!==m||t[7]!==s||t[8]!==f||t[9]!==c||t[10]!==a||t[11]!==l){let e;t[13]!==n||t[14]!==r||t[15]!==o||t[16]!==m||t[17]!==s||t[18]!==f||t[19]!==c||t[20]!==a||t[21]!==l?(e=(e,t)=>{let i=on(e),u=`${i}:${t}`,d=t===n,p=t>n,h=m[i]??0,te=f&&h>=0&&h<an,_=o&&t===0&&a!=null&&a.entity_data.id===e.entityId?a.entity_data:void 0;return(0,X.jsx)(`div`,{"aria-hidden":!d,inert:!d,"data-entity-details-pane-active":d,onScroll:e=>{let t=e.currentTarget.scrollTop;g(e=>e[u]===t?e:{...e,[u]:t})},className:pe(`bg-token-bg-primary absolute inset-0 overflow-y-auto motion-safe:transition-transform motion-safe:duration-200 motion-safe:ease-in-out`,p?`translate-x-full`:`translate-x-0`,!d&&`pointer-events-none`,t>0&&`starting:translate-x-full`,te&&`[&:not(:has([data-entity-loading-image]))]:pt-14`),children:(0,X.jsx)(nn,{value:{businessId:e.entityId,notes:t===0?c:void 0},children:(0,X.jsx)(Pe,{actions:l,children:(0,X.jsx)(it,{value:{category:e.category,entityId:e.entityId,entityCategory:e.category,entityName:e.query,initialBusinessData:_,initialBusinessContentReferenceType:_?s:void 0,initialBusinessImageUrl:_?e.imageThumbnailUrl??_.image_url??void 0:void 0,messageId:e.messageId,contentReferenceStartIndex:e.contentReferenceStartIndex,onFullWidthImageHeightChange:e=>{let t=e??0;ee(e=>e[i]===t?e:{...e,[i]:t})},surfaceLocation:ot.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_FULLSCREEN_MAP},children:(0,X.jsx)(en,{conversation:r,debugThreadId:e.debugThreadId,messageId:e.messageId,query:e.query,category:e.category??`other`,extraParams:e.extraParams,isModal:!1,enableFollowUpButton:!1})})})})},u)},t[13]=n,t[14]=r,t[15]=o,t[16]=m,t[17]=s,t[18]=f,t[19]=c,t[20]=a,t[21]=l,t[22]=e):e=t[22],b=i.map(e),t[2]=n,t[3]=r,t[4]=i,t[5]=o,t[6]=m,t[7]=s,t[8]=f,t[9]=c,t[10]=a,t[11]=l,t[12]=b}else b=t[12];let re;t[23]!==_||t[24]!==ne||t[25]!==d?(re=_!=null&&d?.(ne),t[23]=_,t[24]=ne,t[25]=d,t[26]=re):re=t[26];let x;return t[27]!==b||t[28]!==re?(x=(0,X.jsxs)(`div`,{className:`relative h-full overflow-hidden`,children:[b,re]}),t[27]=b,t[28]=re,t[29]=x):x=t[29],x}})),ln=t({PlacesOverlay:()=>un,createPlacesOverlayTargetedReply:()=>xn});function un(e){"use forget";let t=(0,_n.c)(235),{conversation:n}=e,o=ve(),[s,c]=(0,Z.useState)(!1),u=ne(yt),d;t[0]===n?d=t[1]:(d=gt(n),t[0]=n,t[1]=d);let p=d,m;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(m=a(`8119044`),t[2]=m):m=t[2];let h=m,g=a(`2305612616`),_=a(`3076173531`),v=!l(fe),y=l(_e),{viewportHeight:b,viewportWidth:ie}=l(hn),ae;t[3]===n?ae=t[4]:(ae={conversation:n},t[3]=n,t[4]=ae);let S=wt(ae),oe;t[5]===p?oe=t[6]:(oe=()=>({businesses:p.filteredBusinesses$(),messageId:p.currentMessageId$(),mapMessageId:p.mapMessageId$(),originAssistantMessageId:p.originAssistantMessageId$(),isOpen:p.isOpen$(),initialViewState:p.initialViewState$(),turnIndex:p.turnIndex$(),contentReferenceStartIndex:p.contentReferenceStartIndex$(),contentReferenceType:p.contentReferenceType$(),hasRequestedNewData:p.hasRequestedNewData$(),isLoadingInitialNewData:p.isLoadingInitialNewData$(),newDataRequestSource:p.newDataRequestSource$(),showNonPreferredBusinesses:p.showNonPreferredBusinesses$(),entityDetailsNavigation:p.entityDetailsNavigation$(),entityDetailsBusinessId:p.entityDetailsBusinessId$(),entityDetailsMapEntityId:p.entityDetailsMapEntityId$(),isEntityDetailsOpen:p.isEntityDetailsOpen$(),mapSource:p.mapSource$(),routeGroups:p.routeGroups$(),selectedRouteGroupIndex:p.selectedRouteGroupIndex$(),routeContext:p.routeContext$()}),t[5]=p,t[6]=oe);let{businesses:se,messageId:w,mapMessageId:ue,originAssistantMessageId:T,isOpen:E,initialViewState:he,turnIndex:O,contentReferenceStartIndex:k,contentReferenceType:ye,hasRequestedNewData:xe,isLoadingInitialNewData:Se,newDataRequestSource:Ce,showNonPreferredBusinesses:we,entityDetailsNavigation:A,entityDetailsBusinessId:je,entityDetailsMapEntityId:Me,isEntityDetailsOpen:j,mapSource:Ve,routeGroups:M,selectedRouteGroupIndex:N,routeContext:We}=l(oe),Ge=Re(se??[]),{preferredBusinesses:Ke,additionalBusinesses:Je}=Dt(Ge),Ye=M?.find(mn)?.route,Qe=Ye!=null,nt=It({businesses:Ke,routeGroups:M,selectedRouteGroupIndex:N}),it=It({businesses:Je,routeGroups:M,selectedRouteGroupIndex:N}),P=je==null?null:xt(Ge).find(e=>Me==null?e.entity_data.id===je:e.mapEntityId===Me)??null,at=P!=null&&qt(P.entity_data,Ee(P),{disableExposureLog:!E||!j}),st=Ye==null?null:zt(Ge,Ye)[0]?.business.entity_data.id??null,lt=P==null?null:ze(P),dt=j?je:st,[F,pt]=de(n.id,pn),{setTargetedContent:I}=ut(),mt;t[7]===pt?mt=t[8]:(mt=re(pt),t[7]=pt,t[8]=mt);let ht=mt,_t;t[9]===n?_t=t[10]:(_t=()=>qe(n).id,t[9]=n,t[10]=_t);let vt=l(_t),L=F.length-1,R=F[L],Ot=R?Fe(R):void 0,At=Ot?.id,jt=Ot?.status,Mt=Ot?.metadata?.map_search_parameters?.search_here===!0,Nt=F.length>1?F[L-1]:void 0,z,B,V,H,U,W,G,Lt;if(t[11]!==R||t[12]!==w||t[13]!==O||t[14]!==F){z=Ze(F),H=$e({assistantTurnHistory:z,messageId:w,turnIndex:O});let e=H>=0?z[H]:void 0;G=e?.turnIndex??O,V=H>0,B=H>=0&&H<z.length-1,W=e?.turn??R,U=W?Fe(W):void 0,Lt=De(U?.metadata),t[11]=R,t[12]=w,t[13]=O,t[14]=F,t[15]=z,t[16]=B,t[17]=V,t[18]=H,t[19]=U,t[20]=W,t[21]=G,t[22]=Lt}else z=t[15],B=t[16],V=t[17],H=t[18],U=t[19],W=t[20],G=t[21],Lt=t[22];let K=Lt,q=ct(A),Vt;t[23]===A?Vt=t[24]:(Vt=St(A),t[23]=A,t[24]=Vt);let Ut=Vt,Wt=g&&S&&!we&&(xe||O===L),Kt=tt({allBusinesses:Ge,preferredBusinesses:Ke,selectedBusiness:j?P:null,showAllBusinesses:we,showProvisionalBusinesses:Wt}),Yt=Kt.length,Xt;t[25]!==n.id||t[26]!==o?(Xt=(e,t)=>{!e||e.length===0||!t||e.forEach(e=>{let r=e.entity_data.name;r&&Pt({clientThreadId:n.id,messageId:t,query:r,category:Ee(e),extraParams:e.extra_params??void 0,locale:o.locale})})},t[25]=n.id,t[26]=o,t[27]=Xt):Xt=t[27];let J=D(Xt),$t=(0,Z.useRef)(!1),en=(0,Z.useRef)(new Set),tn=(0,Z.useRef)(null);(0,Z.useEffect)(()=>{if(E&&!$t.current){$t.current=!0,_&&J(Ke,w);return}!E&&$t.current&&($t.current=!1)},[E,Ke,w,J,_]);let nn,rn;t[28]!==S||t[29]!==p?(nn=()=>{p.hasRequestedNewData$()&&!S&&p.setHasRequestedNewData$(!1)},rn=[S,p],t[28]=S,t[29]=p,t[30]=nn,t[31]=rn):(nn=t[30],rn=t[31]),(0,Z.useEffect)(nn,rn);let Y,X;t[32]!==n||t[33]!==S||t[34]!==E||t[35]!==w?(Y=()=>{let e={conversationId:n.id,isCompletionInProgress:S,isOverlayOpen:E},t=He({current:e,previous:tn.current});if(tn.current=e,t==null||!E)return;let r=rt(n);r.isOpen$()||(r.open$(),t===`overlay_opened_during_generation`&&C.logStructuredEvent(`ChatgptPlacesComposerPopoverAutoOpenedDuringGeneration`,{conversationId:x(n),messageId:w}))},X=[n,S,E,w],t[32]=n,t[33]=S,t[34]=E,t[35]=w,t[36]=Y,t[37]=X):(Y=t[36],X=t[37]),(0,Z.useEffect)(Y,X);let an,on;t[38]!==E||t[39]!==p?(an=()=>{if(E)return ee.on(`requestCompletion`,()=>{p.newDataRequestSource$()||p.setHasRequestedNewData$(!0,{source:`composer`})})},on=[p,E],t[38]=E,t[39]=p,t[40]=an,t[41]=on):(an=t[40],on=t[41]),(0,Z.useEffect)(an,on);let cn;t[42]!==_||t[43]!==R||t[44]!==L||t[45]!==p||t[46]!==w||t[47]!==J||t[48]!==Nt?(cn=[L,R,p,Nt,J,_,w],t[42]=_,t[43]=R,t[44]=L,t[45]=p,t[46]=w,t[47]=J,t[48]=Nt,t[49]=cn):cn=t[49],(0,Z.useEffect)(()=>{if(!p.isOpen$()||!R||!R.messages||R.messages.length===0)return;let e=R.messages?.[R.messages.length-1],t=w===e?.id;if(!p.hasRequestedNewData$()&&!t)return;let n=et({turn:R,previousTurn:Nt,currentBusinesses:p.businesses$()??[],additionalBusinessesMergeMode:p.additionalBusinessesMergeMode$()});if(!(!n.lastMessage?.id||r(n.lastMessage.id))&&ft({businesses:n.businesses,lastMessage:n.lastMessage})&&(bt({overlayState:p,messageId:n.lastMessage?.id,contentReferenceStartIndex:n.contentReferenceStartIndex,contentReferenceType:n.contentReferenceType,mapMessageId:n.mapMessageId,turnIndex:L}),n.shouldResetAdditionalBusinessesMergeMode&&p.setAdditionalBusinessesMergeMode$(`replace`),p.setBusinesses$(n.businesses),p.routeGroups$.set(n.routeGroups),p.routeContext$.set(n.routeContext),Te(n.lastMessage))){p.setHasRequestedNewData$(!1),_&&J(n.businesses.filter(fn),n.lastMessage?.id);return}},cn),(0,Z.useEffect)(()=>{if(!E||S||xe||jt!==`finished_successfully`||!Mt||At==null||At!==w||en.current.has(At))return;let e=Number(Yt===0);C.logStructuredEvent(`ChatgptPlacesFinalRenderEmptyMap`,{conversationId:x(n),messageId:At,metricValue:f(e),visiblePinCount:f(Yt)}),te(`sonic.map_search.final_render_empty_map`,e,{map_surface:`fullscreen`,search_here:`true`,visible_pin_count:String(Yt)}),en.current.add(At)},[n,xe,S,Mt,E,At,jt,w,Yt]);let ln=w??``,un;t[50]!==n.id||t[51]!==O||t[52]!==ln?(un={clientThreadId:n.id,messageId:ln,turnIndex:O},t[50]=n.id,t[51]=O,t[52]=ln,t[53]=un):un=t[53];let vn=Et(un),Sn,Cn;t[54]!==n||t[55]!==E||t[56]!==w?(Sn=()=>{E&&C.logStructuredEvent(`ChatgptPlacesFullscreenOpened`,{conversationId:x(n),messageId:w})},Cn=[E,n,w],t[54]=n,t[55]=E,t[56]=w,t[57]=Sn,t[58]=Cn):(Sn=t[57],Cn=t[58]),(0,Z.useEffect)(Sn,Cn);let wn;t[59]!==n||t[60]!==u||t[61]!==p||t[62]!==w||t[63]!==y||t[64]!==I?(wn=e=>{u||(C.logStructuredEvent(`ChatgptPlacesFullscreenClosed`,{conversationId:x(n),messageId:w,trigger:e?.source===`close_button`?Ae.CHATGPT_PLACES_FULLSCREEN_CLOSED_TRIGGER_CLOSE_BUTTON:Ae.CHATGPT_PLACES_FULLSCREEN_CLOSED_TRIGGER_OTHER}),p.prepareForOverlayClose$(),I(void 0),Le.close({className:Ie[`places-overlay-transition`],onFinished:()=>p.finalizeOverlayClose$(),skipTransition:y,update:()=>p.close$()}))},t[59]=n,t[60]=u,t[61]=p,t[62]=w,t[63]=y,t[64]=I,t[65]=wn):wn=t[65];let Tn=D(wn),En;t[66]===p?En=t[67]:(En=e=>{p.setCurrentViewState$({viewState:e}),p.setMapInteractionState$(`moving`)},t[66]=p,t[67]=En);let Dn=D(En),On;t[68]===p?On=t[69]:(On=e=>{p.setCurrentViewState$({viewState:e}),p.setMapInteractionState$(`settled`)},t[68]=p,t[69]=On);let kn=D(On),An;t[70]!==z||t[71]!==n||t[72]!==H||t[73]!==E||t[74]!==p||t[75]!==I||t[76]!==F?(An=e=>{let t=e===`backward`?H-1:H+1,r=z[t];if(!r)return;let i=r.turnIndex>0?F[r.turnIndex-1]:void 0,a=et({turn:r.turn,previousTurn:i});le(()=>{bt({overlayState:p,messageId:a.lastMessage?.id,contentReferenceStartIndex:a.contentReferenceStartIndex,contentReferenceType:a.contentReferenceType,mapMessageId:a.mapMessageId,turnIndex:r.turnIndex}),E&&rt(n).setPopoverData$({turnIndex:r.turnIndex,contentReferenceStartIndex:a.contentReferenceStartIndex}),p.setBusinesses$(a.businesses),p.routeGroups$.set(a.routeGroups),p.routeContext$.set(a.routeContext),p.setShowNonPreferredBusinesses$(!1),p.setHasRequestedNewData$(!1),p.setNewDataRequestSource$(`history-navigation`)}),p.clearEntityDetails$(),I(void 0),c(!1)},t[70]=z,t[71]=n,t[72]=H,t[73]=E,t[74]=p,t[75]=I,t[76]=F,t[77]=An):An=t[77];let jn=D(An),Mn;t[78]===jn?Mn=t[79]:(Mn=()=>{jn(`backward`)},t[78]=jn,t[79]=Mn);let Nn=D(Mn),Pn;t[80]===jn?Pn=t[81]:(Pn=()=>{jn(`forward`)},t[80]=jn,t[81]=Pn);let Fn=D(Pn),In;t[82]!==n||t[83]!==U||t[84]!==W||t[85]!==K||t[86]!==R||t[87]!==p||t[88]!==k||t[89]!==w||t[90]!==T||t[91]!==I?(In=(e,t,r)=>{let i=r===void 0?`marker`:r;if(!t)return;i===`marker`&&C.logStructuredEvent(`ChatgptPlacesMarkerClicked`,{entityId:e.entity_data.id,conversationId:x(n),messageId:w??``}),C.logStructuredEvent(`ChatgptPlacesBusinessEntityDetailsShown`,{entityId:e.entity_data.id,conversationId:x(n),messageId:w??``,source:i===`marker`?kt.CHATGPT_PLACES_ENTITY_DETAILS_SOURCE_MARKER:kt.CHATGPT_PLACES_ENTITY_DETAILS_SOURCE_BUSINESS_LIST});let a=Ee(e),o=ke({message:U,entityId:e.entity_data.id,contentReferenceStartIndex:k});p.openEntityDetails$({type:`entity`,debugThreadId:void 0,contentReferenceStartIndex:o.contentReferenceStartIndex??k??0,messageId:w??``,assistantMessageId:T,query:e.entity_data.name,category:a,entityId:e.entity_data.id,isGenui:K,extraParams:ge(e.entity_data,e.extra_params),imageThumbnailUrl:Ue(e.entity_data)??void 0},e.mapEntityId),c(!1);let s=W??R;s&&I(xn({query:e.entity_data.name,turn:s,conversationId:n.id,originatingConversationId:n.id,category:a}))},t[82]=n,t[83]=U,t[84]=W,t[85]=K,t[86]=R,t[87]=p,t[88]=k,t[89]=w,t[90]=T,t[91]=I,t[92]=In):In=t[92];let Ln=D(In),Rn;t[93]!==n||t[94]!==U||t[95]!==Ln||t[96]!==K||t[97]!==L||t[98]!==k||t[99]!==w||t[100]!==T||t[101]!==G?(Rn=(e,t)=>{let r=ke({message:U,entityId:e.entity_data.id,contentReferenceStartIndex:k});Jt({source:t===`marker`?`marker`:`list`,clientThreadId:n.id,conversationId:x(n),messageId:w,assistantMessageId:T??w,turnIndex:G??L,contentReferenceStartIndex:r.contentReferenceStartIndex,surfaceLocation:ot.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_FULLSCREEN_MAP,entityId:e.entity_data.id,entityCategory:Ee(e),contentReferenceType:r.contentReferenceType,isGenui:K}),Ln(e,!0,t)},t[93]=n,t[94]=U,t[95]=Ln,t[96]=K,t[97]=L,t[98]=k,t[99]=w,t[100]=T,t[101]=G,t[102]=Rn):Rn=t[102];let zn=D(Rn),Bn;t[103]!==n||t[104]!==p||t[105]!==w||t[106]!==y||t[107]!==I?(Bn=e=>{p.beginClosingEntityDetails$(),I(void 0),c(!1),setTimeout(()=>{p.finishClosingEntityDetails$()},y?0:300),C.logStructuredEvent(`ChatgptPlacesBusinessEntityDetailsClosed`,{conversationId:x(n),messageId:w,trigger:e===`close_button`?Oe.CHATGPT_PLACES_ENTITY_DETAILS_CLOSED_TRIGGER_CLOSE_BUTTON:e===`swipe`?Oe.CHATGPT_PLACES_ENTITY_DETAILS_CLOSED_TRIGGER_SWIPE:Oe.CHATGPT_PLACES_ENTITY_DETAILS_CLOSED_TRIGGER_MAP_CLICK})},t[103]=n,t[104]=p,t[105]=w,t[106]=y,t[107]=I,t[108]=Bn):Bn=t[108];let $=D(Bn),Vn;t[109]===Symbol.for(`react.memo_cache_sentinel`)?(Vn=e=>{let t=e.target;if(!(t instanceof HTMLElement)||t.dataset.entityDetailsPaneActive!==`true`)return;let n=t.scrollTop>0;c(e=>e===n?e:n)},t[109]=Vn):Vn=t[109];let Hn=D(Vn),Un=e=>{if(!j||q==null){p.openEntityDetails$(e),c(!1);return}p.openNestedEntityDetails$(e),c(!1)},Wn;t[110]===p?Wn=t[111]:(Wn=e=>{p.openEntityDetails$(e),c(!1)},t[110]=p,t[111]=Wn);let Gn=Wn,Kn;t[112]!==A||t[113]!==$||t[114]!==p?(Kn=()=>{if(!St(A)){$(`close_button`);return}p.goBackInEntityDetails$(),c(!1)},t[112]=A,t[113]=$,t[114]=p,t[115]=Kn):Kn=t[115];let qn=Kn,Jn=Ct(n),Yn=e=>Tt({acceptsSidebar:dn,activeSidebar:q,closeNavigator:()=>$(`close_button`),fallbackActions:Jn,openSidebar:e}),Xn=Yn(Un),Zn=Yn(Gn);if(!w)return null;let Qn=Be(ie),$n=v?0:Qn+yn,er=Ce===`composer`||Ce===`history-navigation`,tr=Ce===`composer`,nr=$n>0?$n:Qn,rr;t[116]===nr?rr=t[117]:(rr={right:nr,bottom:200},t[116]=nr,t[117]=rr);let ir=rr,ar=Qe?(0,Q.jsx)(Ht,{conversation:n,messageId:w,businesses:Ke,routeGroups:M??[],selectedRouteGroupIndex:N,routeContext:We,onClick:e=>{zn(e,`business_list`)},onHover:e=>{p.setHoveredBusinessId$(e)},trackContentReferenceEvent:vn,routeDisplayMode:v?`carousel`:`stop`}):(0,Q.jsx)(Rt,{conversation:n,messageId:w,businesses:nt,additionalBusinesses:it,onClick:e=>{zn(e,`business_list`)},onHover:e=>{p.setHoveredBusinessId$(e)},setShowAdditionalBusinesses:e=>{p.setShowNonPreferredBusinesses$(e)},showAdditionalBusinesses:we,trackContentReferenceEvent:vn,isLoading:xe,renderAsCarousel:v}),or=P?ke({message:U,entityId:P.entity_data.id,contentReferenceStartIndex:k}):void 0,sr=at&&(or?.contentReferenceType===`entity`||or?.contentReferenceType===`map`)?or.contentReferenceType:void 0,cr;t[118]!==n.id||t[119]!==q||t[120]!==qn||t[121]!==$||t[122]!==j||t[123]!==v||t[124]!==Ut||t[125]!==w||t[126]!==T||t[127]!==P||t[128]!==lt?(cr=e=>{if(q==null)return null;let t=pe(Ft(),`touch:min-h-10`,v&&`min-h-10 min-w-10`);return(0,Q.jsx)(`div`,{"aria-hidden":!j,inert:!j,className:pe(`pointer-events-none absolute inset-x-0 top-0 z-10 motion-safe:transition-opacity motion-safe:duration-150 motion-safe:ease-in-out`,j?`opacity-100`:`opacity-0`),children:(0,Q.jsx)(Qt,{title:q.query,isTransparent:e,usePageBackground:!1,onClose:()=>$(`close_button`),leadingAction:Ut&&(0,Q.jsxs)(me,{color:`ghost`,className:t,contentWrapperClassName:`flex items-center gap-2 text-[18px] font-normal `,onClick:qn,children:[(0,Q.jsx)(ce,{className:`icon`}),(0,Q.jsx)(`span`,{className:`sr-only`,children:(0,Q.jsx)(be,{id:`chatgpt.places.overlay.entity_details.button.back.aria_label`,defaultMessage:`Back`})})]}),actions:!Ut&&P!=null?(0,Q.jsxs)(Q.Fragment,{children:[lt!=null&&(0,Q.jsx)(Zt,{analyticsSurface:`map_card`,className:t,request:lt,clientThreadId:n.id,messageId:w??void 0,assistantMessageId:T}),(0,Q.jsx)(Xe,{business:P.entity_data,extraParams:P.extra_params,className:t,requireFeatureGate:!0,withTooltip:!0})]}):null})})},t[118]=n.id,t[119]=q,t[120]=qn,t[121]=$,t[122]=j,t[123]=v,t[124]=Ut,t[125]=w,t[126]=T,t[127]=P,t[128]=lt,t[129]=cr):cr=t[129];let lr=cr,ur=A.history,dr=A.historyIndex,fr;t[130]!==dr||t[131]!==n||t[132]!==at||t[133]!==je||t[134]!==ur||t[135]!==Xn||t[136]!==sr||t[137]!==lr||t[138]!==P?(fr=e=>{let t=e!==void 0&&e;return(0,Q.jsx)(sn,{activePaneIndex:dr,conversation:n,detailsPanes:ur,selectedBusiness:P,enableInstantLocalBusinessSidebar:at,initialBusinessContentReferenceType:sr,rootNotes:P?.notes,sidebarActions:Xn,reserveCloseButtonSpace:t,renderHeader:lr},je)},t[130]=dr,t[131]=n,t[132]=at,t[133]=je,t[134]=ur,t[135]=Xn,t[136]=sr,t[137]=lr,t[138]=P,t[139]=fr):fr=t[139];let pr=fr,mr;t[140]!==Tn||t[141]!==E?(mr=e=>{!e&&E&&Tn()},t[140]=Tn,t[141]=E,t[142]=mr):mr=t[142];let hr;t[143]===o?hr=t[144]:(hr=o.formatMessage({id:`chatgpt.places.overlay.dialog.title.maps`,defaultMessage:`Maps`}),t[143]=o,t[144]=hr);let gr=E&&`motion-safe:[view-transition-name:map-with-entities]`,_r;t[145]===gr?_r=t[146]:(_r=pe(`absolute inset-0`,gr),t[145]=gr,t[146]=_r);let vr=We?.groupsTitle,yr;t[147]===p.selectedRouteGroupIndex$?yr=t[148]:(yr=e=>p.selectedRouteGroupIndex$.set(e),t[147]=p.selectedRouteGroupIndex$,t[148]=yr);let br=n.id,xr;t[149]===n?xr=t[150]:(xr=x(n),t[149]=n,t[150]=xr);let Sr=ye,Cr=G??L,wr;t[151]!==ir||t[152]!==v||t[153]!==b?(wr=v?{bottom:Math.round(b*.7)}:ir,t[151]=ir,t[152]=v,t[153]=b,t[154]=wr):wr=t[154];let Tr;t[155]!==$||t[156]!==j?(Tr=()=>{j&&$(`map_click`)},t[155]=$,t[156]=j,t[157]=Tr):Tr=t[157];let Er=j?Me:void 0,Dr;t[158]===Tn?Dr=t[159]:(Dr=()=>Tn({source:`close_button`}),t[158]=Tn,t[159]=Dr);let Or=h&&xe,kr;t[160]!==B||t[161]!==V||t[162]!==Nn||t[163]!==Fn?(kr={canNavigateBackward:V,canNavigateForward:B,onNavigateBackward$:Nn,onNavigateForward$:Fn},t[160]=B,t[161]=V,t[162]=Nn,t[163]=Fn,t[164]=kr):kr=t[164];let Ar;t[165]!==n.id||t[166]!==zn||t[167]!==Dn||t[168]!==kn||t[169]!==vn||t[170]!==Kt||t[171]!==Ve||t[172]!==k||t[173]!==he||t[174]!==ue||t[175]!==w||t[176]!==M||t[177]!==dt||t[178]!==N||t[179]!==er||t[180]!==tr||t[181]!==Wt||t[182]!==vr||t[183]!==yr||t[184]!==xr||t[185]!==Sr||t[186]!==Cr||t[187]!==wr||t[188]!==Tr||t[189]!==Er||t[190]!==Dr||t[191]!==Or||t[192]!==kr?(Ar=(0,Q.jsx)(Bt,{businesses:Kt,mapSource:Ve,routeGroups:M,routeGroupsTitle:vr,selectedRouteGroupIndex:N,onRouteGroupChange:yr,clientThreadId:br,conversationId:xr,contentReferenceStartIndex:k,contentReferenceType:Sr,messageId:w,turnIndex:Cr,mapMessageId:ue,trackContentReferenceEvent:vn,isFullScreen:!0,obstructionPx:wr,onMapClick:Tr,selectedBusinessId:dt,selectedMapEntityId:Er,initialViewState:he,onMoveCallback:Dn,onMoveEndCallback:kn,shouldFitBoundsOnNewResults:er,onFullScreenToggle:Dr,markerTooltipLocation:`top`,onMarkerClick:zn,renderNonPreferredAsProvisional:Wt,enableOverlayLoadingAnimation:Or,shouldThrottleMapRecenter:tr,assistantTurnNavigation:kr}),t[165]=n.id,t[166]=zn,t[167]=Dn,t[168]=kn,t[169]=vn,t[170]=Kt,t[171]=Ve,t[172]=k,t[173]=he,t[174]=ue,t[175]=w,t[176]=M,t[177]=dt,t[178]=N,t[179]=er,t[180]=tr,t[181]=Wt,t[182]=vr,t[183]=yr,t[184]=xr,t[185]=Sr,t[186]=Cr,t[187]=wr,t[188]=Tr,t[189]=Er,t[190]=Dr,t[191]=Or,t[192]=kr,t[193]=Ar):Ar=t[193];let jr;t[194]===Symbol.for(`react.memo_cache_sentinel`)?(jr=(0,Q.jsx)(`div`,{className:`from-token-bg-primary/0 via-token-bg-primary/0 to-token-bg-primary/40 absolute inset-0 bg-linear-to-b`}),t[194]=jr):jr=t[194];let Mr;t[195]===Symbol.for(`react.memo_cache_sentinel`)?(Mr=(0,Q.jsxs)(`div`,{className:`pointer-events-none absolute inset-x-0 bottom-0 h-[300px]`,"aria-hidden":`true`,children:[jr,(0,Q.jsx)(`div`,{className:`bg-token-bg-primary/0 absolute inset-0 backdrop-blur-md`,style:{WebkitMaskImage:`linear-gradient(to bottom, transparent 0%, transparent 40%, black 80%, black 100%)`,maskImage:`linear-gradient(to bottom, transparent 0%, transparent 40%, black 80%, black 100%)`}})]}),t[195]=Mr):Mr=t[195];let Nr;t[196]!==_r||t[197]!==Ar?(Nr=(0,Q.jsxs)(`div`,{className:_r,children:[Ar,Mr]}),t[196]=_r,t[197]=Ar,t[198]=Nr):Nr=t[198];let Pr;t[199]!==Zn||t[200]!==n||t[201]!==vt||t[202]!==$n||t[203]!==v||t[204]!==E||t[205]!==ht||t[206]!==w?(Pr=E&&(0,Q.jsx)(Pe,{actions:Zn,children:(0,Q.jsx)(gn,{messageId:w,conversation:n,currentModelId:vt,desktopSidebarObstructionPx:$n,isMobile:v,isProjectThread:ht})}),t[199]=Zn,t[200]=n,t[201]=vt,t[202]=$n,t[203]=v,t[204]=E,t[205]=ht,t[206]=w,t[207]=Pr):Pr=t[207];let Fr;t[208]!==ar||t[209]!==se?.length||t[210]!==j||t[211]!==Se||t[212]!==v||t[213]!==E||t[214]!==pr?(Fr=v?E&&(0,Q.jsx)(`div`,{className:`pointer-events-none absolute inset-x-0 bottom-34 z-10 pb-0 motion-safe:[view-transition-name:business-list-container]`,id:`business-list-container`,children:(0,Q.jsx)(`div`,{className:pe(`pointer-events-auto motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-in-out`,Se||(se?.length??0)===0?`pointer-events-none translate-y-10 opacity-0`:`translate-y-0 opacity-100`),children:ar})}):E&&(0,Q.jsxs)(`div`,{className:`bg-token-bg-primary/80 border-token-border-default absolute end-2 top-2 bottom-2 z-10 w-[var(--places-business-list-width)] overflow-hidden rounded-3xl border bg-clip-padding drop-shadow-sm motion-safe:[view-transition-name:business-list-container] dark:bg-black/85`,id:`business-list-container`,children:[(0,Q.jsx)(`div`,{"aria-hidden":`true`,className:`pointer-events-none absolute inset-0 backdrop-blur-[10px]`}),(0,Q.jsxs)(`div`,{className:`relative h-full w-full`,children:[(0,Q.jsx)(`div`,{className:pe(`h-full w-full`,j&&`pointer-events-none`),children:ar}),(0,Q.jsx)(`div`,{className:pe(`absolute inset-0 h-full w-full overflow-hidden motion-safe:transition-transform motion-safe:duration-200 motion-safe:ease-in-out`,j?`translate-x-0`:`pointer-events-none translate-x-full`),id:`entity-details-container`,children:(0,Q.jsx)(`div`,{className:`h-full [&_#sidebar-follow-up-button]:hidden`,children:pr(!0)})})]})]}),t[208]=ar,t[209]=se?.length,t[210]=j,t[211]=Se,t[212]=v,t[213]=E,t[214]=pr,t[215]=Fr):Fr=t[215];let Ir;t[216]!==Nr||t[217]!==Pr||t[218]!==Fr?(Ir=(0,Q.jsx)(Ne.Contents,{className:`flex flex-col overflow-hidden`,style:bn,children:(0,Q.jsx)(i,{children:(0,Q.jsxs)(`div`,{className:`relative flex flex-1 flex-col overflow-hidden`,children:[Nr,Pr,Fr]})})}),t[216]=Nr,t[217]=Pr,t[218]=Fr,t[219]=Ir):Ir=t[219];let Lr;t[220]!==E||t[221]!==mr||t[222]!==hr||t[223]!==Ir?(Lr=(0,Q.jsx)(Ne,{open:E,onOpenChange:mr,accessibleTitle:hr,className:`z-1!`,forceMount:!0,preserveSidebar:!0,children:Ir}),t[220]=E,t[221]=mr,t[222]=hr,t[223]=Ir,t[224]=Lr):Lr=t[224];let Rr;t[225]!==Hn||t[226]!==$||t[227]!==s||t[228]!==j||t[229]!==v||t[230]!==pr?(Rr=v&&(0,Q.jsx)(Gt.Root,{presented:j,defaultPresented:j,onPresentedChange:e=>{e||$(`swipe`)},children:(0,Q.jsx)(Gt.Portal,{children:(0,Q.jsxs)(Gt.View,{contentPlacement:`bottom`,swipeDismissal:!0,swipeOvershoot:!0,tracks:`bottom`,children:[(0,Q.jsx)(Gt.Backdrop,{className:`bg-black/25`}),(0,Q.jsx)(Gt.Content,{className:`w-full overflow-hidden rounded-t-[28px] motion-safe:transition-[height] motion-safe:duration-200 motion-safe:ease-out`,style:{height:s?`100dvh`:`70dvh`},children:(0,Q.jsx)(`div`,{className:`h-full rounded-t-[28px] [&_#sidebar-follow-up-button]:hidden`,onScrollCapture:Hn,children:pr(!0)})})]})})}),t[225]=Hn,t[226]=$,t[227]=s,t[228]=j,t[229]=v,t[230]=pr,t[231]=Rr):Rr=t[231];let zr;return t[232]!==Lr||t[233]!==Rr?(zr=(0,Q.jsxs)(Q.Fragment,{children:[Lr,Rr]}),t[232]=Lr,t[233]=Rr,t[234]=zr):zr=t[234],zr}function dn(e){return e.type===`entity`}function fn(e){return e.isModelPreferred}function pn(e){return[E.getConversationTurns(e),E.getGizmoId(e)]}function mn(e){return e.route!=null}function hn(){let e=Ke();return{viewportHeight:e.height,viewportWidth:e.width}}function gn(e){"use forget";let t=(0,_n.c)(21),{messageId:n,conversation:r,currentModelId:i,desktopSidebarObstructionPx:a,isMobile:o,isProjectThread:s}=e,c;t[0]===r?c=t[1]:(c=()=>L(r).showLoadingBar$(),t[0]=r,t[1]=c);let u=l(c),d;t[2]!==r||t[3]!==n?(d=async e=>{C.logStructuredEvent(`ChatgptPlacesFollowUpSubmitted`,{messageId:n,conversationId:r.id,followUpSource:Me.CHATGPT_PLACES_FOLLOW_UP_SOURCE_COMPOSER}),V({callsiteId:`request_completion.places.places_overlay.2`,conversation:r,...await B(e)})},t[2]=r,t[3]=n,t[4]=d):d=t[4];let f=d,p;t[5]===r?p=t[6]:(p=e=>{V({callsiteId:`request_completion.places.places_overlay.3`,conversation:r,...U(e)})},t[5]=r,t[6]=p);let m=p,ee=!o&&a>0?`calc(100% - ${a}px)`:void 0,h;t[7]===ee?h=t[8]:(h={width:ee},t[7]=ee,t[8]=h);let te=h,g;t[9]!==r||t[10]!==i||t[11]!==m||t[12]!==f||t[13]!==s||t[14]!==u?(g=!u&&(0,Q.jsx)(jt,{conversation:r,currentModelId:i,isNewThread:!1,isProjectThread:s,entrySurface:`places_overlay`,onRequestCompletion:f,onContinueGenerating:m,layoutMode:`bottom`,hideHeader:!0}),t[9]=r,t[10]=i,t[11]=m,t[12]=f,t[13]=s,t[14]=u,t[15]=g):g=t[15];let _;t[16]===g?_=t[17]:(_=(0,Q.jsx)(`div`,{className:`w-full max-w-3xl`,children:g}),t[16]=g,t[17]=_);let v;return t[18]!==te||t[19]!==_?(v=(0,Q.jsx)(lt,{children:(0,Q.jsx)(`div`,{className:`absolute start-0 bottom-4 z-20 flex w-full justify-center px-4 motion-safe:transition-[width] motion-safe:duration-200 motion-safe:ease-in-out sm:px-6`,style:te,children:_})}),t[18]=te,t[19]=_,t[20]=v):v=t[20],v}var _n,Z,Q,vn,yn,bn,xn,Sn=e((()=>{_n=xe(),s(),z(),S(),Wt(),d(),ht(),Kt(),W(),Ge(),K(),we(),Vt(),st(),Yt(),Lt(),Ut(),q(),nt(),F(),M(),I(),g(),A(),at(),he(),j(),Qe(),Ye(),oe(),H(),pt(),_t(),Nt(),Xt(),Mt(),J(),G(),dt(),ue(),se(),p(),v(),Ve(),T(),R(),y(),m(),b(),ae(),c(),_(),At(),u(),mt(),N(),o(),Je(),Z=n(ye()),Ce(),P(),We(),cn(),vt(),h(),Q=Se(),vn=`clamp(380px, 25vw, 440px)`,yn=8,bn={"--places-business-list-width":vn},w(()=>O(void 0)),xn=({query:e,turn:t,originatingConversationId:n,category:r})=>{let i=(t.messages??[]).filter(ie).map(e=>e.id);return{type:`text`,label:e,shouldPersistAcrossMessages:!0,createNewCompletionParams:t=>{if(!e)return t;let n=k(e);return{...t,promptMessage:je(t.promptMessage,{metadata:{targeted_reply:e}}),appendMessages:t.appendMessages==null?[n]:[...t.appendMessages,n]}},onCreateCompletion:({serverThreadId:e,currentLeafId:t})=>{let a=`chatgpt_places_overlay_follow_up_submitted`,o=C.logStructuredEvent(`ChatgptPlacesTargetedReplyEvent`,{legacyStatsigEventName:a,action:`CHATGPT_PLACES_TARGETED_REPLY_ACTION_SUBMITTED`,conversationId:e,currentLeafId:t,originatingConversationId:n,category:r});C.logValueEventWithStatsig({segmentEventName:`Places Overlay Follow Up Submitted`,statsigEventName:a,data:{conversationId:e,currentLeafId:t,messageIds:i,originatingConversationId:n,category:r},eventId:o})},onCleared:({serverThreadId:e,currentLeafId:t})=>{let a=`chatgpt_places_overlay_follow_up_cleared`,o=C.logStructuredEvent(`ChatgptPlacesTargetedReplyEvent`,{legacyStatsigEventName:a,action:`CHATGPT_PLACES_TARGETED_REPLY_ACTION_CLEARED`,conversationId:e,currentLeafId:t,originatingConversationId:n,category:r});C.logValueEventWithStatsig({segmentEventName:`Places Overlay Follow Up Cleared`,statsigEventName:a,data:{conversationId:e,currentLeafId:t,messageIds:i,originatingConversationId:n,category:r},eventId:o})}}}}));export{Sn as n,ln as r,un as t};
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $Y as r,
+    Dz as i,
+    Hnt as a,
+    J5 as o,
+    JT as s,
+    Jnt as c,
+    M5 as l,
+    Mnt as u,
+    Mw as d,
+    Nnt as f,
+    Oz as p,
+    QY as m,
+    Ur as ee,
+    Wr as h,
+    Ynt as te,
+    Z0 as g,
+    _N as _,
+    _Y as v,
+    _nt as y,
+    a2 as ne,
+    aq as b,
+    bV as re,
+    dF as x,
+    dQ as ie,
+    eQ as ae,
+    fF as S,
+    fV as oe,
+    h5 as se,
+    hnt as C,
+    iF as w,
+    jw as ce,
+    m5 as le,
+    m8 as ue,
+    nY as T,
+    pY as de,
+    pq as fe,
+    q5 as pe,
+    qJ as E,
+    qT as me,
+    sU as he,
+    uU as ge,
+    vN as D,
+    vq as _e,
+    y5 as O,
+    zZ as k
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as ve,
+    Hn as ye,
+    Pn as be,
+    Tn as xe,
+    Vn as Se,
+    zn as Ce
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    $dt as we,
+    $lt as Te,
+    Ayn as A,
+    Bpt as Ee,
+    Bwt as De,
+    Ckn as Oe,
+    Cpt as ke,
+    Dkn as Ae,
+    EBt as je,
+    Ekn as Me,
+    Eut as j,
+    Flt as Ne,
+    GFn as Pe,
+    Glt as Fe,
+    Hlt as Ie,
+    Ilt as Le,
+    Ipt as Re,
+    Jdt as ze,
+    Jlt as Be,
+    KM as Ve,
+    Klt as He,
+    Llt as M,
+    Okn as N,
+    Qdt as Ue,
+    Qlt as We,
+    Rwt as Ge,
+    SGt as Ke,
+    Syn as qe,
+    TBt as Je,
+    Tpt as Ye,
+    Tut as Xe,
+    Ult as Ze,
+    Vlt as Qe,
+    Wlt as $e,
+    Xlt as et,
+    Ylt as tt,
+    Ypt as nt,
+    _F as rt,
+    _pt as it,
+    amt as P,
+    aut as at,
+    cjn as ot,
+    cmt as st,
+    cut as ct,
+    dFt as lt,
+    dht as ut,
+    eIn as dt,
+    edt as F,
+    eut as ft,
+    fFt as pt,
+    gIn as I,
+    hjn as mt,
+    i6 as ht,
+    iut as gt,
+    lht as _t,
+    lut as vt,
+    mIn as yt,
+    nut as bt,
+    omt as xt,
+    out as St,
+    pIn as Ct,
+    qM as wt,
+    r6 as L,
+    sut as Tt,
+    tdt as Et,
+    tut as Dt,
+    vF as R,
+    vpt as Ot,
+    wkn as kt,
+    xGt as At
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Gn as jt,
+    Hd as Mt,
+    Kn as Nt,
+    Om as z,
+    bl as B,
+    km as V,
+    xl as H,
+    yl as U
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+import {
+    n as Pt,
+    t as W
+} from "./24fd10e2-bxrvd7wzvzgx6egy.js";
+import {
+    i as G,
+    n as Ft
+} from "./74d67c64-eepvlo99zoqy41yl.js";
+import {
+    a as It,
+    c as Lt,
+    d as Rt,
+    f as K,
+    l as zt,
+    n as Bt,
+    o as q,
+    r as Vt,
+    s as Ht,
+    u as Ut
+} from "./72c9acea-bt982tn4jjzfd5x4.js";
+import {
+    n as Wt,
+    t as Gt
+} from "./d329f11d-di8gkxqnfari7y7p.js";
+import {
+    a as Kt,
+    o as qt
+} from "./0e629c03-jyz0j49qo34ae27b.js";
+import {
+    n as Jt,
+    t as Yt
+} from "./f4607326-dc3wfqhwpty8q7kg.js";
+import {
+    n as Xt,
+    t as Zt
+} from "./a5f68020-i8llevojawxqjo26.js";
+import {
+    n as J,
+    t as Qt
+} from "./ff9bbca7-ndtsef1dpjnwks60.js";
+import {
+    n as $t,
+    t as en
+} from "./277559ed-ew9ccvvtvmpwk18r.js";
+import {
+    n as tn,
+    t as nn
+} from "./2397672a-mm1zhl5eml2pn1ad.js";
+var rn, Y, X, an, on, sn, cn = e((() => {
+        rn = xe(), $t(), Ot(), tn(), dt(), mt(), o(), Y = n(ye()), X = Se(), an = 48, on = e => `${e.messageId}:${e.entityId??e.query}:${e.query}`, sn = e => {
+            "use forget";
+            let t = (0, rn.c)(30),
+                {
+                    activePaneIndex: n,
+                    conversation: r,
+                    detailsPanes: i,
+                    selectedBusiness: a,
+                    enableInstantLocalBusinessSidebar: o,
+                    initialBusinessContentReferenceType: s,
+                    rootNotes: c,
+                    sidebarActions: l,
+                    reserveCloseButtonSpace: u,
+                    renderHeader: d
+                } = e,
+                f = u !== void 0 && u,
+                p;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (p = {}, t[0] = p) : p = t[0];
+            let [m, ee] = (0, Y.useState)(p), h;
+            t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (h = {}, t[1] = h) : h = t[1];
+            let [te, g] = (0, Y.useState)(h), _ = i[n], v = _ ? on(_) : void 0, y = v == null ? 0 : m[v] ?? 0, ne = y === -1 || (v == null ? 0 : te[`${v}:${n}`] ?? 0) <= y, b;
+            if (t[2] !== n || t[3] !== r || t[4] !== i || t[5] !== o || t[6] !== m || t[7] !== s || t[8] !== f || t[9] !== c || t[10] !== a || t[11] !== l) {
+                let e;
+                t[13] !== n || t[14] !== r || t[15] !== o || t[16] !== m || t[17] !== s || t[18] !== f || t[19] !== c || t[20] !== a || t[21] !== l ? (e = (e, t) => {
+                    let i = on(e),
+                        u = `${i}:${t}`,
+                        d = t === n,
+                        p = t > n,
+                        h = m[i] ?? 0,
+                        te = f && h >= 0 && h < an,
+                        _ = o && t === 0 && a != null && a.entity_data.id === e.entityId ? a.entity_data : void 0;
+                    return (0, X.jsx)(`div`, {
+                        "aria-hidden": !d,
+                        inert: !d,
+                        "data-entity-details-pane-active": d,
+                        onScroll: e => {
+                            let t = e.currentTarget.scrollTop;
+                            g(e => e[u] === t ? e : {
+                                ...e,
+                                [u]: t
+                            })
+                        },
+                        className: pe(`bg-token-bg-primary absolute inset-0 overflow-y-auto motion-safe:transition-transform motion-safe:duration-200 motion-safe:ease-in-out`, p ? `translate-x-full` : `translate-x-0`, !d && `pointer-events-none`, t > 0 && `starting:translate-x-full`, te && `[&:not(:has([data-entity-loading-image]))]:pt-14`),
+                        children: (0, X.jsx)(nn, {
+                            value: {
+                                businessId: e.entityId,
+                                notes: t === 0 ? c : void 0
+                            },
+                            children: (0, X.jsx)(Pe, {
+                                actions: l,
+                                children: (0, X.jsx)(it, {
+                                    value: {
+                                        category: e.category,
+                                        entityId: e.entityId,
+                                        entityCategory: e.category,
+                                        entityName: e.query,
+                                        initialBusinessData: _,
+                                        initialBusinessContentReferenceType: _ ? s : void 0,
+                                        initialBusinessImageUrl: _ ? e.imageThumbnailUrl ?? _.image_url ?? void 0 : void 0,
+                                        messageId: e.messageId,
+                                        contentReferenceStartIndex: e.contentReferenceStartIndex,
+                                        onFullWidthImageHeightChange: e => {
+                                            let t = e ?? 0;
+                                            ee(e => e[i] === t ? e : {
+                                                ...e,
+                                                [i]: t
+                                            })
+                                        },
+                                        surfaceLocation: ot.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_FULLSCREEN_MAP
+                                    },
+                                    children: (0, X.jsx)(en, {
+                                        conversation: r,
+                                        debugThreadId: e.debugThreadId,
+                                        messageId: e.messageId,
+                                        query: e.query,
+                                        category: e.category ?? `other`,
+                                        extraParams: e.extraParams,
+                                        isModal: !1,
+                                        enableFollowUpButton: !1
+                                    })
+                                })
+                            })
+                        })
+                    }, u)
+                }, t[13] = n, t[14] = r, t[15] = o, t[16] = m, t[17] = s, t[18] = f, t[19] = c, t[20] = a, t[21] = l, t[22] = e) : e = t[22], b = i.map(e), t[2] = n, t[3] = r, t[4] = i, t[5] = o, t[6] = m, t[7] = s, t[8] = f, t[9] = c, t[10] = a, t[11] = l, t[12] = b
+            } else b = t[12];
+            let re;
+            t[23] !== _ || t[24] !== ne || t[25] !== d ? (re = _ != null && d?.(ne), t[23] = _, t[24] = ne, t[25] = d, t[26] = re) : re = t[26];
+            let x;
+            return t[27] !== b || t[28] !== re ? (x = (0, X.jsxs)(`div`, {
+                className: `relative h-full overflow-hidden`,
+                children: [b, re]
+            }), t[27] = b, t[28] = re, t[29] = x) : x = t[29], x
+        }
+    })),
+    ln = t({
+        PlacesOverlay: () => un,
+        createPlacesOverlayTargetedReply: () => xn
+    });
+
+function un(e) {
+    "use forget";
+    let t = (0, _n.c)(235),
+        {
+            conversation: n
+        } = e,
+        o = ve(),
+        [s, c] = (0, Z.useState)(!1),
+        u = ne(yt),
+        d;
+    t[0] === n ? d = t[1] : (d = gt(n), t[0] = n, t[1] = d);
+    let p = d,
+        m;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (m = a(`8119044`), t[2] = m) : m = t[2];
+    let h = m,
+        g = a(`2305612616`),
+        _ = a(`3076173531`),
+        v = !l(fe),
+        y = l(_e),
+        {
+            viewportHeight: b,
+            viewportWidth: ie
+        } = l(hn),
+        ae;
+    t[3] === n ? ae = t[4] : (ae = {
+        conversation: n
+    }, t[3] = n, t[4] = ae);
+    let S = wt(ae),
+        oe;
+    t[5] === p ? oe = t[6] : (oe = () => ({
+        businesses: p.filteredBusinesses$(),
+        messageId: p.currentMessageId$(),
+        mapMessageId: p.mapMessageId$(),
+        originAssistantMessageId: p.originAssistantMessageId$(),
+        isOpen: p.isOpen$(),
+        initialViewState: p.initialViewState$(),
+        turnIndex: p.turnIndex$(),
+        contentReferenceStartIndex: p.contentReferenceStartIndex$(),
+        contentReferenceType: p.contentReferenceType$(),
+        hasRequestedNewData: p.hasRequestedNewData$(),
+        isLoadingInitialNewData: p.isLoadingInitialNewData$(),
+        newDataRequestSource: p.newDataRequestSource$(),
+        showNonPreferredBusinesses: p.showNonPreferredBusinesses$(),
+        entityDetailsNavigation: p.entityDetailsNavigation$(),
+        entityDetailsBusinessId: p.entityDetailsBusinessId$(),
+        entityDetailsMapEntityId: p.entityDetailsMapEntityId$(),
+        isEntityDetailsOpen: p.isEntityDetailsOpen$(),
+        mapSource: p.mapSource$(),
+        routeGroups: p.routeGroups$(),
+        selectedRouteGroupIndex: p.selectedRouteGroupIndex$(),
+        routeContext: p.routeContext$()
+    }), t[5] = p, t[6] = oe);
+    let {
+        businesses: se,
+        messageId: w,
+        mapMessageId: ue,
+        originAssistantMessageId: T,
+        isOpen: E,
+        initialViewState: he,
+        turnIndex: O,
+        contentReferenceStartIndex: k,
+        contentReferenceType: ye,
+        hasRequestedNewData: xe,
+        isLoadingInitialNewData: Se,
+        newDataRequestSource: Ce,
+        showNonPreferredBusinesses: we,
+        entityDetailsNavigation: A,
+        entityDetailsBusinessId: je,
+        entityDetailsMapEntityId: Me,
+        isEntityDetailsOpen: j,
+        mapSource: Ve,
+        routeGroups: M,
+        selectedRouteGroupIndex: N,
+        routeContext: We
+    } = l(oe), Ge = Re(se ?? []), {
+        preferredBusinesses: Ke,
+        additionalBusinesses: Je
+    } = Dt(Ge), Ye = M?.find(mn)?.route, Qe = Ye != null, nt = It({
+        businesses: Ke,
+        routeGroups: M,
+        selectedRouteGroupIndex: N
+    }), it = It({
+        businesses: Je,
+        routeGroups: M,
+        selectedRouteGroupIndex: N
+    }), P = je == null ? null : xt(Ge).find(e => Me == null ? e.entity_data.id === je : e.mapEntityId === Me) ?? null, at = P != null && qt(P.entity_data, Ee(P), {
+        disableExposureLog: !E || !j
+    }), st = Ye == null ? null : zt(Ge, Ye)[0]?.business.entity_data.id ?? null, lt = P == null ? null : ze(P), dt = j ? je : st, [F, pt] = de(n.id, pn), {
+        setTargetedContent: I
+    } = ut(), mt;
+    t[7] === pt ? mt = t[8] : (mt = re(pt), t[7] = pt, t[8] = mt);
+    let ht = mt,
+        _t;
+    t[9] === n ? _t = t[10] : (_t = () => qe(n).id, t[9] = n, t[10] = _t);
+    let vt = l(_t),
+        L = F.length - 1,
+        R = F[L],
+        Ot = R ? Fe(R) : void 0,
+        At = Ot?.id,
+        jt = Ot?.status,
+        Mt = Ot?.metadata?.map_search_parameters?.search_here === !0,
+        Nt = F.length > 1 ? F[L - 1] : void 0,
+        z, B, V, H, U, W, G, Lt;
+    if (t[11] !== R || t[12] !== w || t[13] !== O || t[14] !== F) {
+        z = Ze(F), H = $e({
+            assistantTurnHistory: z,
+            messageId: w,
+            turnIndex: O
+        });
+        let e = H >= 0 ? z[H] : void 0;
+        G = e?.turnIndex ?? O, V = H > 0, B = H >= 0 && H < z.length - 1, W = e?.turn ?? R, U = W ? Fe(W) : void 0, Lt = De(U?.metadata), t[11] = R, t[12] = w, t[13] = O, t[14] = F, t[15] = z, t[16] = B, t[17] = V, t[18] = H, t[19] = U, t[20] = W, t[21] = G, t[22] = Lt
+    } else z = t[15], B = t[16], V = t[17], H = t[18], U = t[19], W = t[20], G = t[21], Lt = t[22];
+    let K = Lt,
+        q = ct(A),
+        Vt;
+    t[23] === A ? Vt = t[24] : (Vt = St(A), t[23] = A, t[24] = Vt);
+    let Ut = Vt,
+        Wt = g && S && !we && (xe || O === L),
+        Kt = tt({
+            allBusinesses: Ge,
+            preferredBusinesses: Ke,
+            selectedBusiness: j ? P : null,
+            showAllBusinesses: we,
+            showProvisionalBusinesses: Wt
+        }),
+        Yt = Kt.length,
+        Xt;
+    t[25] !== n.id || t[26] !== o ? (Xt = (e, t) => {
+        !e || e.length === 0 || !t || e.forEach(e => {
+            let r = e.entity_data.name;
+            r && Pt({
+                clientThreadId: n.id,
+                messageId: t,
+                query: r,
+                category: Ee(e),
+                extraParams: e.extra_params ?? void 0,
+                locale: o.locale
+            })
+        })
+    }, t[25] = n.id, t[26] = o, t[27] = Xt) : Xt = t[27];
+    let J = D(Xt),
+        $t = (0, Z.useRef)(!1),
+        en = (0, Z.useRef)(new Set),
+        tn = (0, Z.useRef)(null);
+    (0, Z.useEffect)(() => {
+        if (E && !$t.current) {
+            $t.current = !0, _ && J(Ke, w);
+            return
+        }!E && $t.current && ($t.current = !1)
+    }, [E, Ke, w, J, _]);
+    let nn, rn;
+    t[28] !== S || t[29] !== p ? (nn = () => {
+        p.hasRequestedNewData$() && !S && p.setHasRequestedNewData$(!1)
+    }, rn = [S, p], t[28] = S, t[29] = p, t[30] = nn, t[31] = rn) : (nn = t[30], rn = t[31]), (0, Z.useEffect)(nn, rn);
+    let Y, X;
+    t[32] !== n || t[33] !== S || t[34] !== E || t[35] !== w ? (Y = () => {
+        let e = {
+                conversationId: n.id,
+                isCompletionInProgress: S,
+                isOverlayOpen: E
+            },
+            t = He({
+                current: e,
+                previous: tn.current
+            });
+        if (tn.current = e, t == null || !E) return;
+        let r = rt(n);
+        r.isOpen$() || (r.open$(), t === `overlay_opened_during_generation` && C.logStructuredEvent(`ChatgptPlacesComposerPopoverAutoOpenedDuringGeneration`, {
+            conversationId: x(n),
+            messageId: w
+        }))
+    }, X = [n, S, E, w], t[32] = n, t[33] = S, t[34] = E, t[35] = w, t[36] = Y, t[37] = X) : (Y = t[36], X = t[37]), (0, Z.useEffect)(Y, X);
+    let an, on;
+    t[38] !== E || t[39] !== p ? (an = () => {
+        if (E) return ee.on(`requestCompletion`, () => {
+            p.newDataRequestSource$() || p.setHasRequestedNewData$(!0, {
+                source: `composer`
+            })
+        })
+    }, on = [p, E], t[38] = E, t[39] = p, t[40] = an, t[41] = on) : (an = t[40], on = t[41]), (0, Z.useEffect)(an, on);
+    let cn;
+    t[42] !== _ || t[43] !== R || t[44] !== L || t[45] !== p || t[46] !== w || t[47] !== J || t[48] !== Nt ? (cn = [L, R, p, Nt, J, _, w], t[42] = _, t[43] = R, t[44] = L, t[45] = p, t[46] = w, t[47] = J, t[48] = Nt, t[49] = cn) : cn = t[49], (0, Z.useEffect)(() => {
+        if (!p.isOpen$() || !R || !R.messages || R.messages.length === 0) return;
+        let e = R.messages?.[R.messages.length - 1],
+            t = w === e?.id;
+        if (!p.hasRequestedNewData$() && !t) return;
+        let n = et({
+            turn: R,
+            previousTurn: Nt,
+            currentBusinesses: p.businesses$() ?? [],
+            additionalBusinessesMergeMode: p.additionalBusinessesMergeMode$()
+        });
+        if (!(!n.lastMessage?.id || r(n.lastMessage.id)) && ft({
+                businesses: n.businesses,
+                lastMessage: n.lastMessage
+            }) && (bt({
+                overlayState: p,
+                messageId: n.lastMessage?.id,
+                contentReferenceStartIndex: n.contentReferenceStartIndex,
+                contentReferenceType: n.contentReferenceType,
+                mapMessageId: n.mapMessageId,
+                turnIndex: L
+            }), n.shouldResetAdditionalBusinessesMergeMode && p.setAdditionalBusinessesMergeMode$(`replace`), p.setBusinesses$(n.businesses), p.routeGroups$.set(n.routeGroups), p.routeContext$.set(n.routeContext), Te(n.lastMessage))) {
+            p.setHasRequestedNewData$(!1), _ && J(n.businesses.filter(fn), n.lastMessage?.id);
+            return
+        }
+    }, cn), (0, Z.useEffect)(() => {
+        if (!E || S || xe || jt !== `finished_successfully` || !Mt || At == null || At !== w || en.current.has(At)) return;
+        let e = Number(Yt === 0);
+        C.logStructuredEvent(`ChatgptPlacesFinalRenderEmptyMap`, {
+            conversationId: x(n),
+            messageId: At,
+            metricValue: f(e),
+            visiblePinCount: f(Yt)
+        }), te(`sonic.map_search.final_render_empty_map`, e, {
+            map_surface: `fullscreen`,
+            search_here: `true`,
+            visible_pin_count: String(Yt)
+        }), en.current.add(At)
+    }, [n, xe, S, Mt, E, At, jt, w, Yt]);
+    let ln = w ?? ``,
+        un;
+    t[50] !== n.id || t[51] !== O || t[52] !== ln ? (un = {
+        clientThreadId: n.id,
+        messageId: ln,
+        turnIndex: O
+    }, t[50] = n.id, t[51] = O, t[52] = ln, t[53] = un) : un = t[53];
+    let vn = Et(un),
+        Sn, Cn;
+    t[54] !== n || t[55] !== E || t[56] !== w ? (Sn = () => {
+        E && C.logStructuredEvent(`ChatgptPlacesFullscreenOpened`, {
+            conversationId: x(n),
+            messageId: w
+        })
+    }, Cn = [E, n, w], t[54] = n, t[55] = E, t[56] = w, t[57] = Sn, t[58] = Cn) : (Sn = t[57], Cn = t[58]), (0, Z.useEffect)(Sn, Cn);
+    let wn;
+    t[59] !== n || t[60] !== u || t[61] !== p || t[62] !== w || t[63] !== y || t[64] !== I ? (wn = e => {
+        u || (C.logStructuredEvent(`ChatgptPlacesFullscreenClosed`, {
+            conversationId: x(n),
+            messageId: w,
+            trigger: e?.source === `close_button` ? Ae.CHATGPT_PLACES_FULLSCREEN_CLOSED_TRIGGER_CLOSE_BUTTON : Ae.CHATGPT_PLACES_FULLSCREEN_CLOSED_TRIGGER_OTHER
+        }), p.prepareForOverlayClose$(), I(void 0), Le.close({
+            className: Ie[`places-overlay-transition`],
+            onFinished: () => p.finalizeOverlayClose$(),
+            skipTransition: y,
+            update: () => p.close$()
+        }))
+    }, t[59] = n, t[60] = u, t[61] = p, t[62] = w, t[63] = y, t[64] = I, t[65] = wn) : wn = t[65];
+    let Tn = D(wn),
+        En;
+    t[66] === p ? En = t[67] : (En = e => {
+        p.setCurrentViewState$({
+            viewState: e
+        }), p.setMapInteractionState$(`moving`)
+    }, t[66] = p, t[67] = En);
+    let Dn = D(En),
+        On;
+    t[68] === p ? On = t[69] : (On = e => {
+        p.setCurrentViewState$({
+            viewState: e
+        }), p.setMapInteractionState$(`settled`)
+    }, t[68] = p, t[69] = On);
+    let kn = D(On),
+        An;
+    t[70] !== z || t[71] !== n || t[72] !== H || t[73] !== E || t[74] !== p || t[75] !== I || t[76] !== F ? (An = e => {
+        let t = e === `backward` ? H - 1 : H + 1,
+            r = z[t];
+        if (!r) return;
+        let i = r.turnIndex > 0 ? F[r.turnIndex - 1] : void 0,
+            a = et({
+                turn: r.turn,
+                previousTurn: i
+            });
+        le(() => {
+            bt({
+                overlayState: p,
+                messageId: a.lastMessage?.id,
+                contentReferenceStartIndex: a.contentReferenceStartIndex,
+                contentReferenceType: a.contentReferenceType,
+                mapMessageId: a.mapMessageId,
+                turnIndex: r.turnIndex
+            }), E && rt(n).setPopoverData$({
+                turnIndex: r.turnIndex,
+                contentReferenceStartIndex: a.contentReferenceStartIndex
+            }), p.setBusinesses$(a.businesses), p.routeGroups$.set(a.routeGroups), p.routeContext$.set(a.routeContext), p.setShowNonPreferredBusinesses$(!1), p.setHasRequestedNewData$(!1), p.setNewDataRequestSource$(`history-navigation`)
+        }), p.clearEntityDetails$(), I(void 0), c(!1)
+    }, t[70] = z, t[71] = n, t[72] = H, t[73] = E, t[74] = p, t[75] = I, t[76] = F, t[77] = An) : An = t[77];
+    let jn = D(An),
+        Mn;
+    t[78] === jn ? Mn = t[79] : (Mn = () => {
+        jn(`backward`)
+    }, t[78] = jn, t[79] = Mn);
+    let Nn = D(Mn),
+        Pn;
+    t[80] === jn ? Pn = t[81] : (Pn = () => {
+        jn(`forward`)
+    }, t[80] = jn, t[81] = Pn);
+    let Fn = D(Pn),
+        In;
+    t[82] !== n || t[83] !== U || t[84] !== W || t[85] !== K || t[86] !== R || t[87] !== p || t[88] !== k || t[89] !== w || t[90] !== T || t[91] !== I ? (In = (e, t, r) => {
+        let i = r === void 0 ? `marker` : r;
+        if (!t) return;
+        i === `marker` && C.logStructuredEvent(`ChatgptPlacesMarkerClicked`, {
+            entityId: e.entity_data.id,
+            conversationId: x(n),
+            messageId: w ?? ``
+        }), C.logStructuredEvent(`ChatgptPlacesBusinessEntityDetailsShown`, {
+            entityId: e.entity_data.id,
+            conversationId: x(n),
+            messageId: w ?? ``,
+            source: i === `marker` ? kt.CHATGPT_PLACES_ENTITY_DETAILS_SOURCE_MARKER : kt.CHATGPT_PLACES_ENTITY_DETAILS_SOURCE_BUSINESS_LIST
+        });
+        let a = Ee(e),
+            o = ke({
+                message: U,
+                entityId: e.entity_data.id,
+                contentReferenceStartIndex: k
+            });
+        p.openEntityDetails$({
+            type: `entity`,
+            debugThreadId: void 0,
+            contentReferenceStartIndex: o.contentReferenceStartIndex ?? k ?? 0,
+            messageId: w ?? ``,
+            assistantMessageId: T,
+            query: e.entity_data.name,
+            category: a,
+            entityId: e.entity_data.id,
+            isGenui: K,
+            extraParams: ge(e.entity_data, e.extra_params),
+            imageThumbnailUrl: Ue(e.entity_data) ?? void 0
+        }, e.mapEntityId), c(!1);
+        let s = W ?? R;
+        s && I(xn({
+            query: e.entity_data.name,
+            turn: s,
+            conversationId: n.id,
+            originatingConversationId: n.id,
+            category: a
+        }))
+    }, t[82] = n, t[83] = U, t[84] = W, t[85] = K, t[86] = R, t[87] = p, t[88] = k, t[89] = w, t[90] = T, t[91] = I, t[92] = In) : In = t[92];
+    let Ln = D(In),
+        Rn;
+    t[93] !== n || t[94] !== U || t[95] !== Ln || t[96] !== K || t[97] !== L || t[98] !== k || t[99] !== w || t[100] !== T || t[101] !== G ? (Rn = (e, t) => {
+        let r = ke({
+            message: U,
+            entityId: e.entity_data.id,
+            contentReferenceStartIndex: k
+        });
+        Jt({
+            source: t === `marker` ? `marker` : `list`,
+            clientThreadId: n.id,
+            conversationId: x(n),
+            messageId: w,
+            assistantMessageId: T ?? w,
+            turnIndex: G ?? L,
+            contentReferenceStartIndex: r.contentReferenceStartIndex,
+            surfaceLocation: ot.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_FULLSCREEN_MAP,
+            entityId: e.entity_data.id,
+            entityCategory: Ee(e),
+            contentReferenceType: r.contentReferenceType,
+            isGenui: K
+        }), Ln(e, !0, t)
+    }, t[93] = n, t[94] = U, t[95] = Ln, t[96] = K, t[97] = L, t[98] = k, t[99] = w, t[100] = T, t[101] = G, t[102] = Rn) : Rn = t[102];
+    let zn = D(Rn),
+        Bn;
+    t[103] !== n || t[104] !== p || t[105] !== w || t[106] !== y || t[107] !== I ? (Bn = e => {
+        p.beginClosingEntityDetails$(), I(void 0), c(!1), setTimeout(() => {
+            p.finishClosingEntityDetails$()
+        }, y ? 0 : 300), C.logStructuredEvent(`ChatgptPlacesBusinessEntityDetailsClosed`, {
+            conversationId: x(n),
+            messageId: w,
+            trigger: e === `close_button` ? Oe.CHATGPT_PLACES_ENTITY_DETAILS_CLOSED_TRIGGER_CLOSE_BUTTON : e === `swipe` ? Oe.CHATGPT_PLACES_ENTITY_DETAILS_CLOSED_TRIGGER_SWIPE : Oe.CHATGPT_PLACES_ENTITY_DETAILS_CLOSED_TRIGGER_MAP_CLICK
+        })
+    }, t[103] = n, t[104] = p, t[105] = w, t[106] = y, t[107] = I, t[108] = Bn) : Bn = t[108];
+    let $ = D(Bn),
+        Vn;
+    t[109] === Symbol.for(`react.memo_cache_sentinel`) ? (Vn = e => {
+        let t = e.target;
+        if (!(t instanceof HTMLElement) || t.dataset.entityDetailsPaneActive !== `true`) return;
+        let n = t.scrollTop > 0;
+        c(e => e === n ? e : n)
+    }, t[109] = Vn) : Vn = t[109];
+    let Hn = D(Vn),
+        Un = e => {
+            if (!j || q == null) {
+                p.openEntityDetails$(e), c(!1);
+                return
+            }
+            p.openNestedEntityDetails$(e), c(!1)
+        },
+        Wn;
+    t[110] === p ? Wn = t[111] : (Wn = e => {
+        p.openEntityDetails$(e), c(!1)
+    }, t[110] = p, t[111] = Wn);
+    let Gn = Wn,
+        Kn;
+    t[112] !== A || t[113] !== $ || t[114] !== p ? (Kn = () => {
+        if (!St(A)) {
+            $(`close_button`);
+            return
+        }
+        p.goBackInEntityDetails$(), c(!1)
+    }, t[112] = A, t[113] = $, t[114] = p, t[115] = Kn) : Kn = t[115];
+    let qn = Kn,
+        Jn = Ct(n),
+        Yn = e => Tt({
+            acceptsSidebar: dn,
+            activeSidebar: q,
+            closeNavigator: () => $(`close_button`),
+            fallbackActions: Jn,
+            openSidebar: e
+        }),
+        Xn = Yn(Un),
+        Zn = Yn(Gn);
+    if (!w) return null;
+    let Qn = Be(ie),
+        $n = v ? 0 : Qn + yn,
+        er = Ce === `composer` || Ce === `history-navigation`,
+        tr = Ce === `composer`,
+        nr = $n > 0 ? $n : Qn,
+        rr;
+    t[116] === nr ? rr = t[117] : (rr = {
+        right: nr,
+        bottom: 200
+    }, t[116] = nr, t[117] = rr);
+    let ir = rr,
+        ar = Qe ? (0, Q.jsx)(Ht, {
+            conversation: n,
+            messageId: w,
+            businesses: Ke,
+            routeGroups: M ?? [],
+            selectedRouteGroupIndex: N,
+            routeContext: We,
+            onClick: e => {
+                zn(e, `business_list`)
+            },
+            onHover: e => {
+                p.setHoveredBusinessId$(e)
+            },
+            trackContentReferenceEvent: vn,
+            routeDisplayMode: v ? `carousel` : `stop`
+        }) : (0, Q.jsx)(Rt, {
+            conversation: n,
+            messageId: w,
+            businesses: nt,
+            additionalBusinesses: it,
+            onClick: e => {
+                zn(e, `business_list`)
+            },
+            onHover: e => {
+                p.setHoveredBusinessId$(e)
+            },
+            setShowAdditionalBusinesses: e => {
+                p.setShowNonPreferredBusinesses$(e)
+            },
+            showAdditionalBusinesses: we,
+            trackContentReferenceEvent: vn,
+            isLoading: xe,
+            renderAsCarousel: v
+        }),
+        or = P ? ke({
+            message: U,
+            entityId: P.entity_data.id,
+            contentReferenceStartIndex: k
+        }) : void 0,
+        sr = at && (or?.contentReferenceType === `entity` || or?.contentReferenceType === `map`) ? or.contentReferenceType : void 0,
+        cr;
+    t[118] !== n.id || t[119] !== q || t[120] !== qn || t[121] !== $ || t[122] !== j || t[123] !== v || t[124] !== Ut || t[125] !== w || t[126] !== T || t[127] !== P || t[128] !== lt ? (cr = e => {
+        if (q == null) return null;
+        let t = pe(Ft(), `touch:min-h-10`, v && `min-h-10 min-w-10`);
+        return (0, Q.jsx)(`div`, {
+            "aria-hidden": !j,
+            inert: !j,
+            className: pe(`pointer-events-none absolute inset-x-0 top-0 z-10 motion-safe:transition-opacity motion-safe:duration-150 motion-safe:ease-in-out`, j ? `opacity-100` : `opacity-0`),
+            children: (0, Q.jsx)(Qt, {
+                title: q.query,
+                isTransparent: e,
+                usePageBackground: !1,
+                onClose: () => $(`close_button`),
+                leadingAction: Ut && (0, Q.jsxs)(me, {
+                    color: `ghost`,
+                    className: t,
+                    contentWrapperClassName: `flex items-center gap-2 text-[18px] font-normal `,
+                    onClick: qn,
+                    children: [(0, Q.jsx)(ce, {
+                        className: `icon`
+                    }), (0, Q.jsx)(`span`, {
+                        className: `sr-only`,
+                        children: (0, Q.jsx)(be, {
+                            id: `chatgpt.places.overlay.entity_details.button.back.aria_label`,
+                            defaultMessage: `Back`
+                        })
+                    })]
+                }),
+                actions: !Ut && P != null ? (0, Q.jsxs)(Q.Fragment, {
+                    children: [lt != null && (0, Q.jsx)(Zt, {
+                        analyticsSurface: `map_card`,
+                        className: t,
+                        request: lt,
+                        clientThreadId: n.id,
+                        messageId: w ?? void 0,
+                        assistantMessageId: T
+                    }), (0, Q.jsx)(Xe, {
+                        business: P.entity_data,
+                        extraParams: P.extra_params,
+                        className: t,
+                        requireFeatureGate: !0,
+                        withTooltip: !0
+                    })]
+                }) : null
+            })
+        })
+    }, t[118] = n.id, t[119] = q, t[120] = qn, t[121] = $, t[122] = j, t[123] = v, t[124] = Ut, t[125] = w, t[126] = T, t[127] = P, t[128] = lt, t[129] = cr) : cr = t[129];
+    let lr = cr,
+        ur = A.history,
+        dr = A.historyIndex,
+        fr;
+    t[130] !== dr || t[131] !== n || t[132] !== at || t[133] !== je || t[134] !== ur || t[135] !== Xn || t[136] !== sr || t[137] !== lr || t[138] !== P ? (fr = e => {
+        let t = e !== void 0 && e;
+        return (0, Q.jsx)(sn, {
+            activePaneIndex: dr,
+            conversation: n,
+            detailsPanes: ur,
+            selectedBusiness: P,
+            enableInstantLocalBusinessSidebar: at,
+            initialBusinessContentReferenceType: sr,
+            rootNotes: P?.notes,
+            sidebarActions: Xn,
+            reserveCloseButtonSpace: t,
+            renderHeader: lr
+        }, je)
+    }, t[130] = dr, t[131] = n, t[132] = at, t[133] = je, t[134] = ur, t[135] = Xn, t[136] = sr, t[137] = lr, t[138] = P, t[139] = fr) : fr = t[139];
+    let pr = fr,
+        mr;
+    t[140] !== Tn || t[141] !== E ? (mr = e => {
+        !e && E && Tn()
+    }, t[140] = Tn, t[141] = E, t[142] = mr) : mr = t[142];
+    let hr;
+    t[143] === o ? hr = t[144] : (hr = o.formatMessage({
+        id: `chatgpt.places.overlay.dialog.title.maps`,
+        defaultMessage: `Maps`
+    }), t[143] = o, t[144] = hr);
+    let gr = E && `motion-safe:[view-transition-name:map-with-entities]`,
+        _r;
+    t[145] === gr ? _r = t[146] : (_r = pe(`absolute inset-0`, gr), t[145] = gr, t[146] = _r);
+    let vr = We?.groupsTitle,
+        yr;
+    t[147] === p.selectedRouteGroupIndex$ ? yr = t[148] : (yr = e => p.selectedRouteGroupIndex$.set(e), t[147] = p.selectedRouteGroupIndex$, t[148] = yr);
+    let br = n.id,
+        xr;
+    t[149] === n ? xr = t[150] : (xr = x(n), t[149] = n, t[150] = xr);
+    let Sr = ye,
+        Cr = G ?? L,
+        wr;
+    t[151] !== ir || t[152] !== v || t[153] !== b ? (wr = v ? {
+        bottom: Math.round(b * .7)
+    } : ir, t[151] = ir, t[152] = v, t[153] = b, t[154] = wr) : wr = t[154];
+    let Tr;
+    t[155] !== $ || t[156] !== j ? (Tr = () => {
+        j && $(`map_click`)
+    }, t[155] = $, t[156] = j, t[157] = Tr) : Tr = t[157];
+    let Er = j ? Me : void 0,
+        Dr;
+    t[158] === Tn ? Dr = t[159] : (Dr = () => Tn({
+        source: `close_button`
+    }), t[158] = Tn, t[159] = Dr);
+    let Or = h && xe,
+        kr;
+    t[160] !== B || t[161] !== V || t[162] !== Nn || t[163] !== Fn ? (kr = {
+        canNavigateBackward: V,
+        canNavigateForward: B,
+        onNavigateBackward$: Nn,
+        onNavigateForward$: Fn
+    }, t[160] = B, t[161] = V, t[162] = Nn, t[163] = Fn, t[164] = kr) : kr = t[164];
+    let Ar;
+    t[165] !== n.id || t[166] !== zn || t[167] !== Dn || t[168] !== kn || t[169] !== vn || t[170] !== Kt || t[171] !== Ve || t[172] !== k || t[173] !== he || t[174] !== ue || t[175] !== w || t[176] !== M || t[177] !== dt || t[178] !== N || t[179] !== er || t[180] !== tr || t[181] !== Wt || t[182] !== vr || t[183] !== yr || t[184] !== xr || t[185] !== Sr || t[186] !== Cr || t[187] !== wr || t[188] !== Tr || t[189] !== Er || t[190] !== Dr || t[191] !== Or || t[192] !== kr ? (Ar = (0, Q.jsx)(Bt, {
+        businesses: Kt,
+        mapSource: Ve,
+        routeGroups: M,
+        routeGroupsTitle: vr,
+        selectedRouteGroupIndex: N,
+        onRouteGroupChange: yr,
+        clientThreadId: br,
+        conversationId: xr,
+        contentReferenceStartIndex: k,
+        contentReferenceType: Sr,
+        messageId: w,
+        turnIndex: Cr,
+        mapMessageId: ue,
+        trackContentReferenceEvent: vn,
+        isFullScreen: !0,
+        obstructionPx: wr,
+        onMapClick: Tr,
+        selectedBusinessId: dt,
+        selectedMapEntityId: Er,
+        initialViewState: he,
+        onMoveCallback: Dn,
+        onMoveEndCallback: kn,
+        shouldFitBoundsOnNewResults: er,
+        onFullScreenToggle: Dr,
+        markerTooltipLocation: `top`,
+        onMarkerClick: zn,
+        renderNonPreferredAsProvisional: Wt,
+        enableOverlayLoadingAnimation: Or,
+        shouldThrottleMapRecenter: tr,
+        assistantTurnNavigation: kr
+    }), t[165] = n.id, t[166] = zn, t[167] = Dn, t[168] = kn, t[169] = vn, t[170] = Kt, t[171] = Ve, t[172] = k, t[173] = he, t[174] = ue, t[175] = w, t[176] = M, t[177] = dt, t[178] = N, t[179] = er, t[180] = tr, t[181] = Wt, t[182] = vr, t[183] = yr, t[184] = xr, t[185] = Sr, t[186] = Cr, t[187] = wr, t[188] = Tr, t[189] = Er, t[190] = Dr, t[191] = Or, t[192] = kr, t[193] = Ar) : Ar = t[193];
+    let jr;
+    t[194] === Symbol.for(`react.memo_cache_sentinel`) ? (jr = (0, Q.jsx)(`div`, {
+        className: `from-token-bg-primary/0 via-token-bg-primary/0 to-token-bg-primary/40 absolute inset-0 bg-linear-to-b`
+    }), t[194] = jr) : jr = t[194];
+    let Mr;
+    t[195] === Symbol.for(`react.memo_cache_sentinel`) ? (Mr = (0, Q.jsxs)(`div`, {
+        className: `pointer-events-none absolute inset-x-0 bottom-0 h-[300px]`,
+        "aria-hidden": `true`,
+        children: [jr, (0, Q.jsx)(`div`, {
+            className: `bg-token-bg-primary/0 absolute inset-0 backdrop-blur-md`,
+            style: {
+                WebkitMaskImage: `linear-gradient(to bottom, transparent 0%, transparent 40%, black 80%, black 100%)`,
+                maskImage: `linear-gradient(to bottom, transparent 0%, transparent 40%, black 80%, black 100%)`
+            }
+        })]
+    }), t[195] = Mr) : Mr = t[195];
+    let Nr;
+    t[196] !== _r || t[197] !== Ar ? (Nr = (0, Q.jsxs)(`div`, {
+        className: _r,
+        children: [Ar, Mr]
+    }), t[196] = _r, t[197] = Ar, t[198] = Nr) : Nr = t[198];
+    let Pr;
+    t[199] !== Zn || t[200] !== n || t[201] !== vt || t[202] !== $n || t[203] !== v || t[204] !== E || t[205] !== ht || t[206] !== w ? (Pr = E && (0, Q.jsx)(Pe, {
+        actions: Zn,
+        children: (0, Q.jsx)(gn, {
+            messageId: w,
+            conversation: n,
+            currentModelId: vt,
+            desktopSidebarObstructionPx: $n,
+            isMobile: v,
+            isProjectThread: ht
+        })
+    }), t[199] = Zn, t[200] = n, t[201] = vt, t[202] = $n, t[203] = v, t[204] = E, t[205] = ht, t[206] = w, t[207] = Pr) : Pr = t[207];
+    let Fr;
+    t[208] !== ar || t[209] !== se?.length || t[210] !== j || t[211] !== Se || t[212] !== v || t[213] !== E || t[214] !== pr ? (Fr = v ? E && (0, Q.jsx)(`div`, {
+        className: `pointer-events-none absolute inset-x-0 bottom-34 z-10 pb-0 motion-safe:[view-transition-name:business-list-container]`,
+        id: `business-list-container`,
+        children: (0, Q.jsx)(`div`, {
+            className: pe(`pointer-events-auto motion-safe:transition-all motion-safe:duration-300 motion-safe:ease-in-out`, Se || (se?.length ?? 0) === 0 ? `pointer-events-none translate-y-10 opacity-0` : `translate-y-0 opacity-100`),
+            children: ar
+        })
+    }) : E && (0, Q.jsxs)(`div`, {
+        className: `bg-token-bg-primary/80 border-token-border-default absolute end-2 top-2 bottom-2 z-10 w-[var(--places-business-list-width)] overflow-hidden rounded-3xl border bg-clip-padding drop-shadow-sm motion-safe:[view-transition-name:business-list-container] dark:bg-black/85`,
+        id: `business-list-container`,
+        children: [(0, Q.jsx)(`div`, {
+            "aria-hidden": `true`,
+            className: `pointer-events-none absolute inset-0 backdrop-blur-[10px]`
+        }), (0, Q.jsxs)(`div`, {
+            className: `relative h-full w-full`,
+            children: [(0, Q.jsx)(`div`, {
+                className: pe(`h-full w-full`, j && `pointer-events-none`),
+                children: ar
+            }), (0, Q.jsx)(`div`, {
+                className: pe(`absolute inset-0 h-full w-full overflow-hidden motion-safe:transition-transform motion-safe:duration-200 motion-safe:ease-in-out`, j ? `translate-x-0` : `pointer-events-none translate-x-full`),
+                id: `entity-details-container`,
+                children: (0, Q.jsx)(`div`, {
+                    className: `h-full [&_#sidebar-follow-up-button]:hidden`,
+                    children: pr(!0)
+                })
+            })]
+        })]
+    }), t[208] = ar, t[209] = se?.length, t[210] = j, t[211] = Se, t[212] = v, t[213] = E, t[214] = pr, t[215] = Fr) : Fr = t[215];
+    let Ir;
+    t[216] !== Nr || t[217] !== Pr || t[218] !== Fr ? (Ir = (0, Q.jsx)(Ne.Contents, {
+        className: `flex flex-col overflow-hidden`,
+        style: bn,
+        children: (0, Q.jsx)(i, {
+            children: (0, Q.jsxs)(`div`, {
+                className: `relative flex flex-1 flex-col overflow-hidden`,
+                children: [Nr, Pr, Fr]
+            })
+        })
+    }), t[216] = Nr, t[217] = Pr, t[218] = Fr, t[219] = Ir) : Ir = t[219];
+    let Lr;
+    t[220] !== E || t[221] !== mr || t[222] !== hr || t[223] !== Ir ? (Lr = (0, Q.jsx)(Ne, {
+        open: E,
+        onOpenChange: mr,
+        accessibleTitle: hr,
+        className: `z-1!`,
+        forceMount: !0,
+        preserveSidebar: !0,
+        children: Ir
+    }), t[220] = E, t[221] = mr, t[222] = hr, t[223] = Ir, t[224] = Lr) : Lr = t[224];
+    let Rr;
+    t[225] !== Hn || t[226] !== $ || t[227] !== s || t[228] !== j || t[229] !== v || t[230] !== pr ? (Rr = v && (0, Q.jsx)(Gt.Root, {
+        presented: j,
+        defaultPresented: j,
+        onPresentedChange: e => {
+            e || $(`swipe`)
+        },
+        children: (0, Q.jsx)(Gt.Portal, {
+            children: (0, Q.jsxs)(Gt.View, {
+                contentPlacement: `bottom`,
+                swipeDismissal: !0,
+                swipeOvershoot: !0,
+                tracks: `bottom`,
+                children: [(0, Q.jsx)(Gt.Backdrop, {
+                    className: `bg-black/25`
+                }), (0, Q.jsx)(Gt.Content, {
+                    className: `w-full overflow-hidden rounded-t-[28px] motion-safe:transition-[height] motion-safe:duration-200 motion-safe:ease-out`,
+                    style: {
+                        height: s ? `100dvh` : `70dvh`
+                    },
+                    children: (0, Q.jsx)(`div`, {
+                        className: `h-full rounded-t-[28px] [&_#sidebar-follow-up-button]:hidden`,
+                        onScrollCapture: Hn,
+                        children: pr(!0)
+                    })
+                })]
+            })
+        })
+    }), t[225] = Hn, t[226] = $, t[227] = s, t[228] = j, t[229] = v, t[230] = pr, t[231] = Rr) : Rr = t[231];
+    let zr;
+    return t[232] !== Lr || t[233] !== Rr ? (zr = (0, Q.jsxs)(Q.Fragment, {
+        children: [Lr, Rr]
+    }), t[232] = Lr, t[233] = Rr, t[234] = zr) : zr = t[234], zr
+}
+
+function dn(e) {
+    return e.type === `entity`
+}
+
+function fn(e) {
+    return e.isModelPreferred
+}
+
+function pn(e) {
+    return [E.getConversationTurns(e), E.getGizmoId(e)]
+}
+
+function mn(e) {
+    return e.route != null
+}
+
+function hn() {
+    let e = Ke();
+    return {
+        viewportHeight: e.height,
+        viewportWidth: e.width
+    }
+}
+
+function gn(e) {
+    "use forget";
+    let t = (0, _n.c)(21),
+        {
+            messageId: n,
+            conversation: r,
+            currentModelId: i,
+            desktopSidebarObstructionPx: a,
+            isMobile: o,
+            isProjectThread: s
+        } = e,
+        c;
+    t[0] === r ? c = t[1] : (c = () => L(r).showLoadingBar$(), t[0] = r, t[1] = c);
+    let u = l(c),
+        d;
+    t[2] !== r || t[3] !== n ? (d = async e => {
+        C.logStructuredEvent(`ChatgptPlacesFollowUpSubmitted`, {
+            messageId: n,
+            conversationId: r.id,
+            followUpSource: Me.CHATGPT_PLACES_FOLLOW_UP_SOURCE_COMPOSER
+        }), V({
+            callsiteId: `request_completion.places.places_overlay.2`,
+            conversation: r,
+            ...await B(e)
+        })
+    }, t[2] = r, t[3] = n, t[4] = d) : d = t[4];
+    let f = d,
+        p;
+    t[5] === r ? p = t[6] : (p = e => {
+        V({
+            callsiteId: `request_completion.places.places_overlay.3`,
+            conversation: r,
+            ...U(e)
+        })
+    }, t[5] = r, t[6] = p);
+    let m = p,
+        ee = !o && a > 0 ? `calc(100% - ${a}px)` : void 0,
+        h;
+    t[7] === ee ? h = t[8] : (h = {
+        width: ee
+    }, t[7] = ee, t[8] = h);
+    let te = h,
+        g;
+    t[9] !== r || t[10] !== i || t[11] !== m || t[12] !== f || t[13] !== s || t[14] !== u ? (g = !u && (0, Q.jsx)(jt, {
+        conversation: r,
+        currentModelId: i,
+        isNewThread: !1,
+        isProjectThread: s,
+        entrySurface: `places_overlay`,
+        onRequestCompletion: f,
+        onContinueGenerating: m,
+        layoutMode: `bottom`,
+        hideHeader: !0
+    }), t[9] = r, t[10] = i, t[11] = m, t[12] = f, t[13] = s, t[14] = u, t[15] = g) : g = t[15];
+    let _;
+    t[16] === g ? _ = t[17] : (_ = (0, Q.jsx)(`div`, {
+        className: `w-full max-w-3xl`,
+        children: g
+    }), t[16] = g, t[17] = _);
+    let v;
+    return t[18] !== te || t[19] !== _ ? (v = (0, Q.jsx)(lt, {
+        children: (0, Q.jsx)(`div`, {
+            className: `absolute start-0 bottom-4 z-20 flex w-full justify-center px-4 motion-safe:transition-[width] motion-safe:duration-200 motion-safe:ease-in-out sm:px-6`,
+            style: te,
+            children: _
+        })
+    }), t[18] = te, t[19] = _, t[20] = v) : v = t[20], v
+}
+var _n, Z, Q, vn, yn, bn, xn, Sn = e((() => {
+    _n = xe(), s(), z(), S(), Wt(), d(), ht(), Kt(), W(), Ge(), K(), we(), Vt(), st(), Yt(), Lt(), Ut(), q(), nt(), F(), M(), I(), g(), A(), at(), he(), j(), Qe(), Ye(), oe(), H(), pt(), _t(), Nt(), Xt(), Mt(), J(), G(), dt(), ue(), se(), p(), v(), Ve(), T(), R(), y(), m(), b(), ae(), c(), _(), At(), u(), mt(), N(), o(), Je(), Z = n(ye()), Ce(), P(), We(), cn(), vt(), h(), Q = Se(), vn = `clamp(380px, 25vw, 440px)`, yn = 8, bn = {
+        "--places-business-list-width": vn
+    }, w(() => O(void 0)), xn = ({
+        query: e,
+        turn: t,
+        originatingConversationId: n,
+        category: r
+    }) => {
+        let i = (t.messages ?? []).filter(ie).map(e => e.id);
+        return {
+            type: `text`,
+            label: e,
+            shouldPersistAcrossMessages: !0,
+            createNewCompletionParams: t => {
+                if (!e) return t;
+                let n = k(e);
+                return {
+                    ...t,
+                    promptMessage: je(t.promptMessage, {
+                        metadata: {
+                            targeted_reply: e
+                        }
+                    }),
+                    appendMessages: t.appendMessages == null ? [n] : [...t.appendMessages, n]
+                }
+            },
+            onCreateCompletion: ({
+                serverThreadId: e,
+                currentLeafId: t
+            }) => {
+                let a = `chatgpt_places_overlay_follow_up_submitted`,
+                    o = C.logStructuredEvent(`ChatgptPlacesTargetedReplyEvent`, {
+                        legacyStatsigEventName: a,
+                        action: `CHATGPT_PLACES_TARGETED_REPLY_ACTION_SUBMITTED`,
+                        conversationId: e,
+                        currentLeafId: t,
+                        originatingConversationId: n,
+                        category: r
+                    });
+                C.logValueEventWithStatsig({
+                    segmentEventName: `Places Overlay Follow Up Submitted`,
+                    statsigEventName: a,
+                    data: {
+                        conversationId: e,
+                        currentLeafId: t,
+                        messageIds: i,
+                        originatingConversationId: n,
+                        category: r
+                    },
+                    eventId: o
+                })
+            },
+            onCleared: ({
+                serverThreadId: e,
+                currentLeafId: t
+            }) => {
+                let a = `chatgpt_places_overlay_follow_up_cleared`,
+                    o = C.logStructuredEvent(`ChatgptPlacesTargetedReplyEvent`, {
+                        legacyStatsigEventName: a,
+                        action: `CHATGPT_PLACES_TARGETED_REPLY_ACTION_CLEARED`,
+                        conversationId: e,
+                        currentLeafId: t,
+                        originatingConversationId: n,
+                        category: r
+                    });
+                C.logValueEventWithStatsig({
+                    segmentEventName: `Places Overlay Follow Up Cleared`,
+                    statsigEventName: a,
+                    data: {
+                        conversationId: e,
+                        currentLeafId: t,
+                        messageIds: i,
+                        originatingConversationId: n,
+                        category: r
+                    },
+                    eventId: o
+                })
+            }
+        }
+    }
+}));
+export {
+    Sn as n, ln as r, un as t
+};
 //# sourceMappingURL=d28fb047-ixa3tyn696fs7t3l.js.map

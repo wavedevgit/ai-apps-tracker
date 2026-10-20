@@ -1,2 +1,207 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{CF as n,I1 as r,JT as i,Mot as a,Sw as o,VU as s,XN as c,Y1 as l,ZN as u,cit as d,fit as f,fr as p,iat as m,jF as h,nat as g,pr as _,qT as v,ww as y,zU as b}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as x,Hn as S,Pn as C,Rn as w,Tn as T,Vn as E,zn as D}from"./2340486e-komxp8tzs51ny4jj.js";import{af as O,if as k,of as A,rf as j}from"./30901919-jory365vq6ym5crx.js";function M(e){"use forget";let t=(0,P.c)(46),{onClose:r,accounts:i,onLoggedOutNonActive:c,postLogoutCallbackUrl:u,postLogoutAction:d}=e,p=d===void 0?`open_add_account_auth`:d,m=x(),h=s(),y;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(y=a(),t[0]=y):y=t[0];let b=y,S=l(),[w,T]=(0,F.useState)(i[0]?.sessionToken??null),[E,D]=(0,F.useState)(!1),O;t[1]!==i||t[2]!==S||t[3]!==m||t[4]!==E||t[5]!==r||t[6]!==c||t[7]!==p||t[8]!==u||t[9]!==w||t[10]!==h?(O=async()=>{if(!(w==null||E)&&i.find(e=>e.sessionToken===w)){D(!0);try{let e=S?.isWorkspacePlan()===!0?S.id:void 0;r(),await _({sessionToken:w,currentSessionToken:b?.sessionToken,currentWorkspaceAccountId:e,postLogoutAction:p,postLogoutCallbackUrl:u,analytics:{source:n.AccountSwitcherAddAccountModal,type:`single_account`},onNoNextSession:f,onComplete:c})}catch(e){let t=e;g.addError(Error(`Failed to log out selected account from add-account modal`,{cause:t}),{source:n.AccountSwitcherAddAccountModal}),h.danger(m.formatMessage({id:`navigation.switchAccounts.logoutModalFailed`,defaultMessage:`Failed to log out selected account.`}),{description:t instanceof Error?t.message:String(t)})}D(!1)}},t[1]=i,t[2]=S,t[3]=m,t[4]=E,t[5]=r,t[6]=c,t[7]=p,t[8]=u,t[9]=w,t[10]=h,t[11]=O):O=t[11];let j=O,M;t[12]===m?M=t[13]:(M=m.formatMessage(L.logoutModalTitle),t[12]=m,t[13]=M);let R;t[14]===m?R=t[15]:(R=m.formatMessage(L.logoutModalDescription),t[14]=m,t[15]=R);let z;if(t[16]!==i||t[17]!==m||t[18]!==E||t[19]!==w){let e;t[21]!==m||t[22]!==E||t[23]!==w?(e=e=>{let t=N(e,m),n=e.sessionToken===w,r=e.userId??e.email??e.sessionToken;return(0,I.jsxs)(`button`,{type:`button`,className:`hover:bg-token-bg-secondary flex w-full items-center gap-2 rounded-lg px-3 py-2 text-start`,disabled:E,onClick:()=>{T(e.sessionToken)},children:[n?(0,I.jsx)(A,{className:`text-token-text-primary icon-sm shrink-0`}):(0,I.jsx)(k,{className:`text-token-text-tertiary icon-sm shrink-0`}),(0,I.jsx)(`span`,{className:`text-token-text-primary text-base`,children:t})]},r)},t[21]=m,t[22]=E,t[23]=w,t[24]=e):e=t[24],z=i.map(e),t[16]=i,t[17]=m,t[18]=E,t[19]=w,t[20]=z}else z=t[20];let B;t[25]===z?B=t[26]:(B=(0,I.jsx)(`div`,{className:`flex flex-col gap-2`,children:z}),t[25]=z,t[26]=B);let V;t[27]===Symbol.for(`react.memo_cache_sentinel`)?(V=(0,I.jsx)(C,{id:`navigation.switchAccounts.logoutModalCancel`,defaultMessage:`Cancel`}),t[27]=V):V=t[27];let H;t[28]!==E||t[29]!==r?(H=(0,I.jsx)(v,{type:`button`,color:`secondary`,onClick:r,disabled:E,children:V}),t[28]=E,t[29]=r,t[30]=H):H=t[30];let U;t[31]===j?U=t[32]:(U=()=>{j()},t[31]=j,t[32]=U);let W=E||w==null,G;t[33]===Symbol.for(`react.memo_cache_sentinel`)?(G=(0,I.jsx)(C,{id:`navigation.switchAccounts.logoutModalConfirm`,defaultMessage:`Log out and continue`}),t[33]=G):G=t[33];let K;t[34]!==U||t[35]!==W?(K=(0,I.jsx)(v,{type:`button`,color:`primary`,onClick:U,disabled:W,children:G}),t[34]=U,t[35]=W,t[36]=K):K=t[36];let q;t[37]!==K||t[38]!==H?(q=(0,I.jsxs)(`div`,{className:`mt-6 flex justify-end gap-3`,children:[H,K]}),t[37]=K,t[38]=H,t[39]=q):q=t[39];let J;return t[40]!==r||t[41]!==q||t[42]!==M||t[43]!==R||t[44]!==B?(J=(0,I.jsxs)(o,{testId:`modal-account-switcher-logout-for-add-account`,isOpen:!0,onClose:r,showCloseButton:!0,title:M,description:R,size:`normal`,children:[B,q]}),t[40]=r,t[41]=q,t[42]=M,t[43]=R,t[44]=B,t[45]=J):J=t[45],J}function N(e,t){let n=e.email??t.formatMessage({id:`navigation.switchAccounts.unknownEmail`,defaultMessage:`Unknown email`}),r=e.name??t.formatMessage({id:`navigation.switchAccounts.unknownName`,defaultMessage:`Unnamed account`}),i=c(e.phoneNumber);return!e.email&&i!=null?`${r} (${i})`:n}var P,F,I,L,R=e((()=>{P=T(),i(),O(),j(),y(),p(),r(),b(),u(),h(),d(),m(),F=t(S()),D(),I=E(),L=w({logoutModalTitle:{id:`navigation.switchAccounts.logoutModal.title`,defaultMessage:`Choose an account to log out`},logoutModalDescription:{id:`navigation.switchAccounts.logoutModal.description`,defaultMessage:`You’re already logged in to two accounts. Log out of one to add a new account.`}})}));export{R as n,M as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    CF as n,
+    I1 as r,
+    JT as i,
+    Mot as a,
+    Sw as o,
+    VU as s,
+    XN as c,
+    Y1 as l,
+    ZN as u,
+    cit as d,
+    fit as f,
+    fr as p,
+    iat as m,
+    jF as h,
+    nat as g,
+    pr as _,
+    qT as v,
+    ww as y,
+    zU as b
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as x,
+    Hn as S,
+    Pn as C,
+    Rn as w,
+    Tn as T,
+    Vn as E,
+    zn as D
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    af as O,
+    if as k,
+    of as A,
+    rf as j
+} from "./30901919-jory365vq6ym5crx.js";
+
+function M(e) {
+    "use forget";
+    let t = (0, P.c)(46),
+        {
+            onClose: r,
+            accounts: i,
+            onLoggedOutNonActive: c,
+            postLogoutCallbackUrl: u,
+            postLogoutAction: d
+        } = e,
+        p = d === void 0 ? `open_add_account_auth` : d,
+        m = x(),
+        h = s(),
+        y;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (y = a(), t[0] = y) : y = t[0];
+    let b = y,
+        S = l(),
+        [w, T] = (0, F.useState)(i[0]?.sessionToken ?? null),
+        [E, D] = (0, F.useState)(!1),
+        O;
+    t[1] !== i || t[2] !== S || t[3] !== m || t[4] !== E || t[5] !== r || t[6] !== c || t[7] !== p || t[8] !== u || t[9] !== w || t[10] !== h ? (O = async () => {
+        if (!(w == null || E) && i.find(e => e.sessionToken === w)) {
+            D(!0);
+            try {
+                let e = S?.isWorkspacePlan() === !0 ? S.id : void 0;
+                r(), await _({
+                    sessionToken: w,
+                    currentSessionToken: b?.sessionToken,
+                    currentWorkspaceAccountId: e,
+                    postLogoutAction: p,
+                    postLogoutCallbackUrl: u,
+                    analytics: {
+                        source: n.AccountSwitcherAddAccountModal,
+                        type: `single_account`
+                    },
+                    onNoNextSession: f,
+                    onComplete: c
+                })
+            } catch (e) {
+                let t = e;
+                g.addError(Error(`Failed to log out selected account from add-account modal`, {
+                    cause: t
+                }), {
+                    source: n.AccountSwitcherAddAccountModal
+                }), h.danger(m.formatMessage({
+                    id: `navigation.switchAccounts.logoutModalFailed`,
+                    defaultMessage: `Failed to log out selected account.`
+                }), {
+                    description: t instanceof Error ? t.message : String(t)
+                })
+            }
+            D(!1)
+        }
+    }, t[1] = i, t[2] = S, t[3] = m, t[4] = E, t[5] = r, t[6] = c, t[7] = p, t[8] = u, t[9] = w, t[10] = h, t[11] = O) : O = t[11];
+    let j = O,
+        M;
+    t[12] === m ? M = t[13] : (M = m.formatMessage(L.logoutModalTitle), t[12] = m, t[13] = M);
+    let R;
+    t[14] === m ? R = t[15] : (R = m.formatMessage(L.logoutModalDescription), t[14] = m, t[15] = R);
+    let z;
+    if (t[16] !== i || t[17] !== m || t[18] !== E || t[19] !== w) {
+        let e;
+        t[21] !== m || t[22] !== E || t[23] !== w ? (e = e => {
+            let t = N(e, m),
+                n = e.sessionToken === w,
+                r = e.userId ?? e.email ?? e.sessionToken;
+            return (0, I.jsxs)(`button`, {
+                type: `button`,
+                className: `hover:bg-token-bg-secondary flex w-full items-center gap-2 rounded-lg px-3 py-2 text-start`,
+                disabled: E,
+                onClick: () => {
+                    T(e.sessionToken)
+                },
+                children: [n ? (0, I.jsx)(A, {
+                    className: `text-token-text-primary icon-sm shrink-0`
+                }) : (0, I.jsx)(k, {
+                    className: `text-token-text-tertiary icon-sm shrink-0`
+                }), (0, I.jsx)(`span`, {
+                    className: `text-token-text-primary text-base`,
+                    children: t
+                })]
+            }, r)
+        }, t[21] = m, t[22] = E, t[23] = w, t[24] = e) : e = t[24], z = i.map(e), t[16] = i, t[17] = m, t[18] = E, t[19] = w, t[20] = z
+    } else z = t[20];
+    let B;
+    t[25] === z ? B = t[26] : (B = (0, I.jsx)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: z
+    }), t[25] = z, t[26] = B);
+    let V;
+    t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (V = (0, I.jsx)(C, {
+        id: `navigation.switchAccounts.logoutModalCancel`,
+        defaultMessage: `Cancel`
+    }), t[27] = V) : V = t[27];
+    let H;
+    t[28] !== E || t[29] !== r ? (H = (0, I.jsx)(v, {
+        type: `button`,
+        color: `secondary`,
+        onClick: r,
+        disabled: E,
+        children: V
+    }), t[28] = E, t[29] = r, t[30] = H) : H = t[30];
+    let U;
+    t[31] === j ? U = t[32] : (U = () => {
+        j()
+    }, t[31] = j, t[32] = U);
+    let W = E || w == null,
+        G;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (G = (0, I.jsx)(C, {
+        id: `navigation.switchAccounts.logoutModalConfirm`,
+        defaultMessage: `Log out and continue`
+    }), t[33] = G) : G = t[33];
+    let K;
+    t[34] !== U || t[35] !== W ? (K = (0, I.jsx)(v, {
+        type: `button`,
+        color: `primary`,
+        onClick: U,
+        disabled: W,
+        children: G
+    }), t[34] = U, t[35] = W, t[36] = K) : K = t[36];
+    let q;
+    t[37] !== K || t[38] !== H ? (q = (0, I.jsxs)(`div`, {
+        className: `mt-6 flex justify-end gap-3`,
+        children: [H, K]
+    }), t[37] = K, t[38] = H, t[39] = q) : q = t[39];
+    let J;
+    return t[40] !== r || t[41] !== q || t[42] !== M || t[43] !== R || t[44] !== B ? (J = (0, I.jsxs)(o, {
+        testId: `modal-account-switcher-logout-for-add-account`,
+        isOpen: !0,
+        onClose: r,
+        showCloseButton: !0,
+        title: M,
+        description: R,
+        size: `normal`,
+        children: [B, q]
+    }), t[40] = r, t[41] = q, t[42] = M, t[43] = R, t[44] = B, t[45] = J) : J = t[45], J
+}
+
+function N(e, t) {
+    let n = e.email ?? t.formatMessage({
+            id: `navigation.switchAccounts.unknownEmail`,
+            defaultMessage: `Unknown email`
+        }),
+        r = e.name ?? t.formatMessage({
+            id: `navigation.switchAccounts.unknownName`,
+            defaultMessage: `Unnamed account`
+        }),
+        i = c(e.phoneNumber);
+    return !e.email && i != null ? `${r} (${i})` : n
+}
+var P, F, I, L, R = e((() => {
+    P = T(), i(), O(), j(), y(), p(), r(), b(), u(), h(), d(), m(), F = t(S()), D(), I = E(), L = w({
+        logoutModalTitle: {
+            id: `navigation.switchAccounts.logoutModal.title`,
+            defaultMessage: `Choose an account to log out`
+        },
+        logoutModalDescription: {
+            id: `navigation.switchAccounts.logoutModal.description`,
+            defaultMessage: `You’re already logged in to two accounts. Log out of one to add a new account.`
+        }
+    })
+}));
+export {
+    R as n, M as t
+};
 //# sourceMappingURL=d925d50a-o71h6mumoawg8qvx.js.map

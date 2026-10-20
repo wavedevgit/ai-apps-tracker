@@ -1,2 +1,26 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bnt as t,Hnt as n,Knt as r,f8 as i,p8 as a}from"./4813494d-ed29bs6yiwucn7st.js";function o(){return t(`1495465110`)}var s,c=e((()=>{i(),r(),s=a(o,e=>{let t=n();return t.on(`values_updated`,e),()=>t.off(`values_updated`,e)},{name:`adminPluginRolePolicyUiEnabled`})}));export{c as n,o as r,s as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bnt as t,
+    Hnt as n,
+    Knt as r,
+    f8 as i,
+    p8 as a
+} from "./4813494d-ed29bs6yiwucn7st.js";
+
+function o() {
+    return t(`1495465110`)
+}
+var s, c = e((() => {
+    i(), r(), s = a(o, e => {
+        let t = n();
+        return t.on(`values_updated`, e), () => t.off(`values_updated`, e)
+    }, {
+        name: `adminPluginRolePolicyUiEnabled`
+    })
+}));
+export {
+    c as n, o as r, s as t
+};
 //# sourceMappingURL=29ad5082-lflt1anw5u4w7fwt.js.map

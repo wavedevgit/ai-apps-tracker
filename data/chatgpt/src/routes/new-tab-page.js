@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{$ as t,Ut as n,Vn as r}from"./2340486e-komxp8tzs51ny4jj.js";import{c as i,l as a}from"./8b34dbc2-d4icgkio4i3wfm6q.js";var o,s,c,l=e((()=>{t(),a(),o=r(),s=()=>[{title:`New Tab`}],c=n(function(){return(0,o.jsx)(i,{})})}));e((()=>{l()}))();export{c as default,s as meta};
-//# sourceMappingURL=new-tab-page-iljjvmmr.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bn as t,Ht as n,Q as r}from"./2340486e-i7pjxgdhv0bs6apg.js";import{c as i,l as a}from"./8b34dbc2-k1zgxrtsww83602u.js";var o,s,c,l=e((()=>{r(),a(),o=t(),s=()=>[{title:`New Tab`}],c=n(function(){return(0,o.jsx)(i,{})})}));e((()=>{l()}))();export{c as default,s as meta};
+//# sourceMappingURL=new-tab-page-bi64z256.js.map

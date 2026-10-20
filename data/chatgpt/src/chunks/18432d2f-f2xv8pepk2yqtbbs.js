@@ -1,3 +1,551 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/dbfda4c2-nzyaos9m315ljmmp.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-qsuygr73qjc6rh65.js","assets/2340486e-komxp8tzs51ny4jj.js","assets/root-lelxp0l2.css","assets/conversation-small-cawdu7il3ha6y70c.js","assets/30901919-jory365vq6ym5crx.js","assets/c470f5ab-in0lllrdrzeo67gs.js","assets/0e5afe53-f9gmgfmgrr83ziw3.js","assets/conversation-small-czggvj2v.css","assets/2fecbc54-jqsa4x7ktufw637c.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bd as n,Bot as r,Dnt as i,Dz as a,J0 as o,J5 as s,Jnt as c,Ktt as l,M5 as u,Mnt as d,Nnt as f,Ont as p,Oz as m,VL as h,Y0 as g,YT as _,Yd as v,ZT as y,_R as b,_nt as x,aq as S,cit as C,fF as w,fq as T,hnt as E,j5 as D,knt as O,lit as k,m8 as A,nU as j,oR as M,pJ as N,q5 as ee,qnt as P,qtt as F,rF as te,sR as I,snt as L,tU as R,xJ as z,xR as B,zot as V}from"./4813494d-qsuygr73qjc6rh65.js";import{Hn as H,Pn as U,Rn as W,Tn as G,Vn as K,ln as ne,un as re,zn as ie}from"./2340486e-komxp8tzs51ny4jj.js";import{Aa as ae,Fx as oe,KGn as se,Px as ce,Sfn as le,WGn as q,dr as ue,ka as de,lr as fe,vfn as pe}from"./conversation-small-cawdu7il3ha6y70c.js";import{$g as me,Bp as he,C_ as ge,D as _e,Dn as ve,E as ye,En as be,F as xe,Ft as Se,G as Ce,Gh as we,H as Te,It as Ee,Kh as De,M as Oe,N as ke,O as Ae,Om as je,T as Me,U as Ne,Vp as Pe,Zg as Fe,b as Ie,j as Le,km as Re,m as ze,p as Be,w_ as Ve,y as He,zp as Ue}from"./8b34dbc2-d4icgkio4i3wfm6q.js";import{r as We,t as Ge}from"./5be378a2-k3nsj583ropnxboe.js";import{n as Ke,t as qe}from"./2d4fbc67-n4ywjthtz7t22vif.js";import{n as Je,t as Ye}from"./c157dfba-bi5i8pu8hfyi6t3h.js";import{n as Xe,t as Ze}from"./cc1aa8e1-i2dab8jg191bppv8.js";import{n as Qe,t as J}from"./8e0d0293-i872ouk4x6b8qqx6.js";import{l as $e,u as et}from"./cbffa3f1-kp33gyza4vfeuh1c.js";import{a as tt,i as nt,n as rt,r as it,s as at,t as ot}from"./2fecbc54-jqsa4x7ktufw637c.js";var st,ct,lt,ut=e((()=>{ie(),st={url:`https://cdn.openai.com/chatgpt/ctf-cdn/image-gen/images-og-image.png`,width:1200,height:675,alt:`Magazine cover on a wooden table reading 'Convergence' and 'ChatGPT Images 2.0', featuring a lizard wearing a cowboy hat.`},ct=W({title:{id:`image-gen.images-app.meta.title`,defaultMessage:`ChatGPT Images 2.0 | AI Image Generator`},versionedTitle:{id:`image-gen.images-app.meta.title.versioned`,defaultMessage:`ChatGPT Images {version} | AI Image Generator`},description:{id:`image-gen.images-app.meta.description`,defaultMessage:`Generate high-quality AI images quickly with ChatGPT Images, featuring precise edits, preset filters and trending prompts.`}}),lt=W({title:{id:`image-gen.images-app.trending.meta.title`,defaultMessage:`{trendTitle} AI Image Generator | ChatGPT`},description:{id:`image-gen.images-app.trending.meta.description`,defaultMessage:`Explore trending AI image prompts in ChatGPT—transform photos, create viral visuals, and generate stunning images instantly with simple prompts.`}})}));function dt(e){"use forget";let t=(0,ft.c)(11),n,r,i,a;t[0]===e?(n=t[1],r=t[2],i=t[3],a=t[4]):({"aria-hidden":n,"aria-label":r,"aria-labelledby":i,...a}=e,t[0]=e,t[1]=n,t[2]=r,t[3]=i,t[4]=a);let o=n??(r||i?void 0:!0),s;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(s={__html:z(J)},t[5]=s):s=t[5];let c;return t[6]!==r||t[7]!==i||t[8]!==a||t[9]!==o?(c=(0,pt.jsx)(`svg`,{...a,xmlns:`http://www.w3.org/2000/svg`,width:J.canvas.width,height:J.canvas.height,viewBox:J.canvas.viewBox,fill:`currentColor`,"aria-label":r,"aria-labelledby":i,"aria-hidden":o,dangerouslySetInnerHTML:s}),t[6]=r,t[7]=i,t[8]=a,t[9]=o,t[10]=c):c=t[10],c}var ft,pt,mt=e((()=>{ft=G(),N(),Qe(),pt=K()}));function ht(e){"use forget";let t=(0,_t.c)(15),{className:n,page:r,trendTitle:i,hideMobileEdgeShadow:a}=e,o;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(o=k(),t[0]=o):o=t[0];let s=o,c=u(gt),l=r&&`h-header-height`,d=r&&(s?!a&&`max-md:sharp-edge-top-shadow`:`sharp-edge-top-shadow`),f;t[1]!==n||t[2]!==l||t[3]!==d?(f=ee(`max-w-app-content mx-auto flex w-full items-center max-md:z-20 max-md:px-2`,l,d,n),t[1]=n,t[2]=l,t[3]=d,t[4]=f):f=t[4];let p;t[5]===c?p=t[6]:(p=_(c),t[5]=c,t[6]=p);let m=r?`image-app-header`:void 0,h;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(h=s&&(0,Y.jsx)(`div`,{className:`corner-superellipse/1.1 ms-4 [overflow-clip-margin:4px] empty:hidden max-md:relative max-md:ms-0 max-md:me-2 max-md:overflow-clip max-md:rounded-xl`,children:(0,Y.jsx)(he,{})}),t[7]=h):h=t[7];let g;t[8]===i?g=t[9]:(g=(0,Y.jsx)(Ze,{className:`text-token-text-primary pointer-none not-keyboard-focused:outline-none text-heading-app box-trim-0.5 font-normal max-md:min-w-0 max-md:truncate max-md:text-2xl max-md:leading-[30px] max-md:font-semibold max-md:tracking-[-0.5px] max-md:[text-box-trim:none] max-md:before:hidden max-md:after:hidden md:translate-y-1 md:px-(--images-app-padding)`,children:i?(0,Y.jsxs)(`span`,{className:`flex items-center justify-center gap-2`,children:[(0,Y.jsx)(`span`,{"aria-hidden":`true`,children:(0,Y.jsx)(dt,{})}),(0,Y.jsx)(`span`,{className:`text-token-text-primary/60`,children:(0,Y.jsx)(U,{id:`image-gen.images-app.header.trendingTitle`,defaultMessage:`{trendTitle} on ChatGPT`,values:{trendTitle:(0,Y.jsx)(`span`,{className:`text-token-text-primary`,children:i})}})})]}):(0,Y.jsx)(U,{...$e})}),t[8]=i,t[9]=g);let v;return t[10]!==f||t[11]!==p||t[12]!==m||t[13]!==g?(v=(0,Y.jsxs)(`header`,{className:f,"data-scrolled-from-start":p,id:m,children:[h,g]}),t[10]=f,t[11]=p,t[12]=m,t[13]=g,t[14]=v):v=t[14],v}function gt(){return me()}var _t,Y,vt=e((()=>{_t=G(),mt(),Fe(),A(),Pe(),et(),C(),y(),Xe(),s(),ie(),Y=K()}));function yt(){try{return localStorage.getItem(Ot)===`true`}catch{return!1}}function bt(){try{localStorage.removeItem(Ot)}catch{}}function xt(e){let t=i.getItem(p.ImagesMobileAppUpsellDismissalState,{userId:e});if(t!=null)return at(t);let n=it(yt());return n.hasDismissed?(X(e,n),bt(),n):n}function X(e,t){i.setItem(p.ImagesMobileAppUpsellDismissalState,t,{userId:e})}function St(){let e=P(Dt);return ot({isEnabled:e.get(`app_upsell_enabled`,!1),surfaceOpenInterval:e.get(`app_upsell_surface_open_interval`,0)})}function Ct(e){"use forget";let t=(0,Tt.c)(16),{fallback:n}=e,r=n===void 0?null:n,i=u(wt),[a,o]=(0,Z.useState)(null),s=(0,Z.useRef)(null),c=(0,Z.useRef)(!1),l=tt({isLoggedIn:k(),isAndroid:F(),isMobileViewport:!u(T),isTablet:L()}),d;t[0]===l?d=t[1]:(d=l?St():0,t[0]=l,t[1]=d);let p=d,m=l&&p>0&&a?.shouldShow===!0,g,_;t[2]!==l||t[3]!==p||t[4]!==i?(g=()=>{if(!l||i==null||p===0||s.current===i)return;let e=xt(i),t=rt({dismissalState:e,surfaceOpenInterval:p});t.dismissalState!==e&&X(i,t.dismissalState),s.current=i,c.current=!1,o(t)},_=[l,p,i],t[2]=l,t[3]=p,t[4]=i,t[5]=g,t[6]=_):(g=t[5],_=t[6]),(0,Z.useEffect)(g,_);let v,y;if(t[7]!==m||t[8]!==a||t[9]!==p?(v=()=>{if(!m||a==null||c.current)return;c.current=!0,j();let e=E.logUpsellOrModalEvent(h,{eventId:`images_mobile_app_upsell`,type:M.UPSELL_OR_MODAL_TYPE_CUSTOM_NUX_MODAL}),t={surface:`images`,surface_open_interval:String(p),eligible_opens_since_dismissal:String(a.dismissalState.eligibleOpensSinceDismissal)};E.logValueEventWithStatsig({segmentEventName:`Mobile App Upsell Banner Shown`,statsigEventName:`chatgpt_web_mobile_app_upsell_banner_shown`,...e?{eventId:e}:{},data:t,statsigMetadata:t,legacyStatsigFallbackMode:`immediate`})},y=[m,a,p],t[7]=m,t[8]=a,t[9]=p,t[10]=v,t[11]=y):(v=t[10],y=t[11]),(0,Z.useEffect)(v,y),!l||p===0)return r;if(i==null||a==null)return null;if(!m)return a.shouldSuppressFallback?null:r;let b;return t[12]!==a.dismissalState.eligibleOpensSinceDismissal||t[13]!==p||t[14]!==i?(b=(0,Et.jsx)(kt,{onDismiss:()=>{let e={hasDismissed:!0,eligibleOpensSinceDismissal:0};X(i,e),o({dismissalState:e,shouldShow:!1,shouldSuppressFallback:!0});let t={surface:`images`,surface_open_interval:String(p),eligible_opens_since_dismissal:String(a.dismissalState.eligibleOpensSinceDismissal)},n=E.logStructuredEvent(`ChatgptWebMobileAppUpsellBannerDismissed`,{productExperience:`CHATGPT_WEB_MOBILE_APP_UPSELL_PRODUCT_EXPERIENCE_CHAT`,surface:`CHATGPT_WEB_MOBILE_APP_UPSELL_BANNER_SURFACE_IMAGES`,surfaceOpenCountInterval:f(p),eligibleOpenCountSinceDismissal:f(a.dismissalState.eligibleOpensSinceDismissal)});E.logValueEventWithStatsig({segmentEventName:`Mobile App Upsell Banner Dismissed`,statsigEventName:`chatgpt_web_mobile_app_upsell_banner_dismissed`,...n?{eventId:n}:{},data:t,statsigMetadata:t,legacyStatsigFallbackMode:`immediate`})}}),t[12]=a.dismissalState.eligibleOpensSinceDismissal,t[13]=p,t[14]=i,t[15]=b):b=t[15],b}function wt(){return B()?.id??null}var Tt,Z,Et,Dt,Ot,kt,At=e((()=>{Tt=G(),R(),C(),x(),O(),S(),A(),b(),c(),l(),d(),I(),g(),Z=t(H()),nt(),Et=K(),re(),Dt=`1506327862`,Ot=`oai/apps/hasDismissedImagesMobileAppUpsell`,kt=o(()=>ne(()=>import(`./dbfda4c2-nzyaos9m315ljmmp.js`).then(e=>e.ImagesMobileAppUpsellSheet),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10])))}));function jt(e){"use forget";let t=(0,Pt.c)(62),{children:n,trendTitle:i,hideMobileHeaderUnderline:o}=e,s=(0,Q.use)(te),c;t[0]===s?c=t[1]:(c=r(s),t[0]=s,t[1]=c);let l=c,d=De(),f=v(),p;t[2]===l?p=t[3]:(p=e=>{Re({callsiteId:`request_completion.tool_landing_pages.image_gen.images_app_stage.1`,conversation:l,...e})},t[2]=l,t[3]=p);let m=p,h;t[4]!==l||t[5]!==m?(h={conversation:l,handleRequestCompletion:m},t[4]=l,t[5]=m,t[6]=h):h=t[6],Ee(h);let g=u(Nt),_,y;t[7]!==l||t[8]!==d?(_=()=>be({conversation:l,filePickerStore:d}),y=[l,d],t[7]=l,t[8]=d,t[9]=_,t[10]=y):(_=t[9],y=t[10]),(0,Q.useEffect)(_,y);let b;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(b=[],t[11]=b):b=t[11],(0,Q.useEffect)(Mt,b);let x;t[12]===l?x=t[13]:(x=(0,$.jsx)(Be,{conversation:l}),t[12]=l,t[13]=x);let S;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(S=!k()&&`no-auth`,t[14]=S):S=t[14];let C=g&&`scrolled-from-start`,w;t[15]===C?w=t[16]:(w=ee(`images-app`,S,C),t[15]=C,t[16]=w);let T;t[17]===Symbol.for(`react.memo_cache_sentinel`)?(T=(0,$.jsx)(a,{children:(0,$.jsx)(Ct,{fallback:(0,$.jsx)(He,{})})}),t[17]=T):T=t[17];let E;t[18]!==o||t[19]!==i?(E=k()&&(0,$.jsx)(ht,{page:!0,className:`md:hidden`,hideMobileEdgeShadow:o,trendTitle:i}),t[18]=o,t[19]=i,t[20]=E):E=t[20];let D;t[21]===l?D=t[22]:(D=!k()&&l&&(0,$.jsx)(Le,{conversation:l,className:`bg-transparent shadow-none backdrop-blur-none`}),t[21]=l,t[22]=D);let O;t[23]!==E||t[24]!==D?(O=(0,$.jsxs)(q.Heading,{children:[T,E,D]}),t[23]=E,t[24]=D,t[25]=O):O=t[25];let A;t[26]===Symbol.for(`react.memo_cache_sentinel`)?(A=(0,$.jsx)(`div`,{className:`absolute inset-0 backdrop-blur-xs`}),t[26]=A):A=t[26];let j;t[27]===Symbol.for(`react.memo_cache_sentinel`)?(j=(0,$.jsx)(Ne,{}),t[27]=j):j=t[27];let M;t[28]===l.id?M=t[29]:(M=(0,$.jsx)(q.Navbar,{children:(0,$.jsx)(Ue,{insetBg:A,children:(0,$.jsx)(_e,{navHeader:j,children:(0,$.jsx)(Te,{clientThreadId:l.id})})})}),t[28]=l.id,t[29]=M);let N,P;t[30]===Symbol.for(`react.memo_cache_sentinel`)?(N=(0,$.jsx)(q.Header,{children:k()&&(0,$.jsx)(Me,{surface:`images`,standalone:!0})}),P=(0,$.jsx)(de,{}),t[30]=N,t[31]=P):(N=t[30],P=t[31]);let F;t[32]===l?F=t[33]:(F=(0,$.jsx)(a,{children:(0,$.jsx)(ke,{conversation:l})}),t[32]=l,t[33]=F);let I,L,R;t[34]===l.id?(I=t[35],L=t[36],R=t[37]):(I=(0,$.jsx)(Ge,{clientThreadId:l.id}),L=(0,$.jsx)(qe,{clientThreadId:l.id}),R=(0,$.jsx)(Ye,{clientThreadId:l.id}),t[34]=l.id,t[35]=I,t[36]=L,t[37]=R);let z;t[38]!==F||t[39]!==I||t[40]!==L||t[41]!==R?(z=(0,$.jsxs)(q.ContentSidebar,{children:[F,I,L,R]}),t[38]=F,t[39]=I,t[40]=L,t[41]=R,t[42]=z):z=t[42];let B;t[43]!==n||t[44]!==w||t[45]!==O||t[46]!==M||t[47]!==z?(B=(0,$.jsxs)(q,{className:w,children:[O,n,M,N,P,z]}),t[43]=n,t[44]=w,t[45]=O,t[46]=M,t[47]=z,t[48]=B):B=t[48];let V;t[49]!==l||t[50]!==B?(V=(0,$.jsx)(ge,{conversation:l,children:B}),t[49]=l,t[50]=B,t[51]=V):V=t[51];let H;t[52]===l?H=t[53]:(H=(0,$.jsx)(fe,{conversation:l}),t[52]=l,t[53]=H);let U;t[54]!==l||t[55]!==f?(U=k()&&!f&&(0,$.jsx)(ce,{conversation:l}),t[54]=l,t[55]=f,t[56]=U):U=t[56];let W;return t[57]!==V||t[58]!==H||t[59]!==U||t[60]!==x?(W=(0,$.jsxs)($.Fragment,{children:[x,V,H,U]}),t[57]=V,t[58]=H,t[59]=U,t[60]=x,t[61]=W):W=t[61],W}function Mt(){le()}function Nt(){return me()}var Pt,Q,$,Ft=e((()=>{Pt=G(),Ce(),ze(),ae(),m(),Pe(),xe(),Oe(),ue(),je(),Ve(),w(),We(),we(),Fe(),pe(),n(),Ae(),Ke(),ye(),Ie(),se(),D(),vt(),At(),ve(),Se(),C(),V(),oe(),Je(),s(),Q=t(H()),$=K()}));export{ct as a,ut as c,vt as i,Ft as n,lt as o,ht as r,st as s,jt as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/dbfda4c2-nzyaos9m315ljmmp.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-qsuygr73qjc6rh65.js", "assets/2340486e-komxp8tzs51ny4jj.js", "assets/root-lelxp0l2.css", "assets/conversation-small-cawdu7il3ha6y70c.js", "assets/30901919-jory365vq6ym5crx.js", "assets/c470f5ab-in0lllrdrzeo67gs.js", "assets/0e5afe53-f9gmgfmgrr83ziw3.js", "assets/conversation-small-czggvj2v.css", "assets/2fecbc54-jqsa4x7ktufw637c.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bd as n,
+    Bot as r,
+    Dnt as i,
+    Dz as a,
+    J0 as o,
+    J5 as s,
+    Jnt as c,
+    Ktt as l,
+    M5 as u,
+    Mnt as d,
+    Nnt as f,
+    Ont as p,
+    Oz as m,
+    VL as h,
+    Y0 as g,
+    YT as _,
+    Yd as v,
+    ZT as y,
+    _R as b,
+    _nt as x,
+    aq as S,
+    cit as C,
+    fF as w,
+    fq as T,
+    hnt as E,
+    j5 as D,
+    knt as O,
+    lit as k,
+    m8 as A,
+    nU as j,
+    oR as M,
+    pJ as N,
+    q5 as ee,
+    qnt as P,
+    qtt as F,
+    rF as te,
+    sR as I,
+    snt as L,
+    tU as R,
+    xJ as z,
+    xR as B,
+    zot as V
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Hn as H,
+    Pn as U,
+    Rn as W,
+    Tn as G,
+    Vn as K,
+    ln as ne,
+    un as re,
+    zn as ie
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Aa as ae,
+    Fx as oe,
+    KGn as se,
+    Px as ce,
+    Sfn as le,
+    WGn as q,
+    dr as ue,
+    ka as de,
+    lr as fe,
+    vfn as pe
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    $g as me,
+    Bp as he,
+    C_ as ge,
+    D as _e,
+    Dn as ve,
+    E as ye,
+    En as be,
+    F as xe,
+    Ft as Se,
+    G as Ce,
+    Gh as we,
+    H as Te,
+    It as Ee,
+    Kh as De,
+    M as Oe,
+    N as ke,
+    O as Ae,
+    Om as je,
+    T as Me,
+    U as Ne,
+    Vp as Pe,
+    Zg as Fe,
+    b as Ie,
+    j as Le,
+    km as Re,
+    m as ze,
+    p as Be,
+    w_ as Ve,
+    y as He,
+    zp as Ue
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+import {
+    r as We,
+    t as Ge
+} from "./5be378a2-k3nsj583ropnxboe.js";
+import {
+    n as Ke,
+    t as qe
+} from "./2d4fbc67-n4ywjthtz7t22vif.js";
+import {
+    n as Je,
+    t as Ye
+} from "./c157dfba-bi5i8pu8hfyi6t3h.js";
+import {
+    n as Xe,
+    t as Ze
+} from "./cc1aa8e1-i2dab8jg191bppv8.js";
+import {
+    n as Qe,
+    t as J
+} from "./8e0d0293-i872ouk4x6b8qqx6.js";
+import {
+    l as $e,
+    u as et
+} from "./cbffa3f1-kp33gyza4vfeuh1c.js";
+import {
+    a as tt,
+    i as nt,
+    n as rt,
+    r as it,
+    s as at,
+    t as ot
+} from "./2fecbc54-jqsa4x7ktufw637c.js";
+var st, ct, lt, ut = e((() => {
+    ie(), st = {
+        url: `https://cdn.openai.com/chatgpt/ctf-cdn/image-gen/images-og-image.png`,
+        width: 1200,
+        height: 675,
+        alt: `Magazine cover on a wooden table reading 'Convergence' and 'ChatGPT Images 2.0', featuring a lizard wearing a cowboy hat.`
+    }, ct = W({
+        title: {
+            id: `image-gen.images-app.meta.title`,
+            defaultMessage: `ChatGPT Images 2.0 | AI Image Generator`
+        },
+        versionedTitle: {
+            id: `image-gen.images-app.meta.title.versioned`,
+            defaultMessage: `ChatGPT Images {version} | AI Image Generator`
+        },
+        description: {
+            id: `image-gen.images-app.meta.description`,
+            defaultMessage: `Generate high-quality AI images quickly with ChatGPT Images, featuring precise edits, preset filters and trending prompts.`
+        }
+    }), lt = W({
+        title: {
+            id: `image-gen.images-app.trending.meta.title`,
+            defaultMessage: `{trendTitle} AI Image Generator | ChatGPT`
+        },
+        description: {
+            id: `image-gen.images-app.trending.meta.description`,
+            defaultMessage: `Explore trending AI image prompts in ChatGPT—transform photos, create viral visuals, and generate stunning images instantly with simple prompts.`
+        }
+    })
+}));
+
+function dt(e) {
+    "use forget";
+    let t = (0, ft.c)(11),
+        n, r, i, a;
+    t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4]) : ({
+        "aria-hidden": n,
+        "aria-label": r,
+        "aria-labelledby": i,
+        ...a
+    } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a);
+    let o = n ?? (r || i ? void 0 : !0),
+        s;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (s = {
+        __html: z(J)
+    }, t[5] = s) : s = t[5];
+    let c;
+    return t[6] !== r || t[7] !== i || t[8] !== a || t[9] !== o ? (c = (0, pt.jsx)(`svg`, {
+        ...a,
+        xmlns: `http://www.w3.org/2000/svg`,
+        width: J.canvas.width,
+        height: J.canvas.height,
+        viewBox: J.canvas.viewBox,
+        fill: `currentColor`,
+        "aria-label": r,
+        "aria-labelledby": i,
+        "aria-hidden": o,
+        dangerouslySetInnerHTML: s
+    }), t[6] = r, t[7] = i, t[8] = a, t[9] = o, t[10] = c) : c = t[10], c
+}
+var ft, pt, mt = e((() => {
+    ft = G(), N(), Qe(), pt = K()
+}));
+
+function ht(e) {
+    "use forget";
+    let t = (0, _t.c)(15),
+        {
+            className: n,
+            page: r,
+            trendTitle: i,
+            hideMobileEdgeShadow: a
+        } = e,
+        o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = k(), t[0] = o) : o = t[0];
+    let s = o,
+        c = u(gt),
+        l = r && `h-header-height`,
+        d = r && (s ? !a && `max-md:sharp-edge-top-shadow` : `sharp-edge-top-shadow`),
+        f;
+    t[1] !== n || t[2] !== l || t[3] !== d ? (f = ee(`max-w-app-content mx-auto flex w-full items-center max-md:z-20 max-md:px-2`, l, d, n), t[1] = n, t[2] = l, t[3] = d, t[4] = f) : f = t[4];
+    let p;
+    t[5] === c ? p = t[6] : (p = _(c), t[5] = c, t[6] = p);
+    let m = r ? `image-app-header` : void 0,
+        h;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (h = s && (0, Y.jsx)(`div`, {
+        className: `corner-superellipse/1.1 ms-4 [overflow-clip-margin:4px] empty:hidden max-md:relative max-md:ms-0 max-md:me-2 max-md:overflow-clip max-md:rounded-xl`,
+        children: (0, Y.jsx)(he, {})
+    }), t[7] = h) : h = t[7];
+    let g;
+    t[8] === i ? g = t[9] : (g = (0, Y.jsx)(Ze, {
+        className: `text-token-text-primary pointer-none not-keyboard-focused:outline-none text-heading-app box-trim-0.5 font-normal max-md:min-w-0 max-md:truncate max-md:text-2xl max-md:leading-[30px] max-md:font-semibold max-md:tracking-[-0.5px] max-md:[text-box-trim:none] max-md:before:hidden max-md:after:hidden md:translate-y-1 md:px-(--images-app-padding)`,
+        children: i ? (0, Y.jsxs)(`span`, {
+            className: `flex items-center justify-center gap-2`,
+            children: [(0, Y.jsx)(`span`, {
+                "aria-hidden": `true`,
+                children: (0, Y.jsx)(dt, {})
+            }), (0, Y.jsx)(`span`, {
+                className: `text-token-text-primary/60`,
+                children: (0, Y.jsx)(U, {
+                    id: `image-gen.images-app.header.trendingTitle`,
+                    defaultMessage: `{trendTitle} on ChatGPT`,
+                    values: {
+                        trendTitle: (0, Y.jsx)(`span`, {
+                            className: `text-token-text-primary`,
+                            children: i
+                        })
+                    }
+                })
+            })]
+        }) : (0, Y.jsx)(U, {
+            ...$e
+        })
+    }), t[8] = i, t[9] = g);
+    let v;
+    return t[10] !== f || t[11] !== p || t[12] !== m || t[13] !== g ? (v = (0, Y.jsxs)(`header`, {
+        className: f,
+        "data-scrolled-from-start": p,
+        id: m,
+        children: [h, g]
+    }), t[10] = f, t[11] = p, t[12] = m, t[13] = g, t[14] = v) : v = t[14], v
+}
+
+function gt() {
+    return me()
+}
+var _t, Y, vt = e((() => {
+    _t = G(), mt(), Fe(), A(), Pe(), et(), C(), y(), Xe(), s(), ie(), Y = K()
+}));
+
+function yt() {
+    try {
+        return localStorage.getItem(Ot) === `true`
+    } catch {
+        return !1
+    }
+}
+
+function bt() {
+    try {
+        localStorage.removeItem(Ot)
+    } catch {}
+}
+
+function xt(e) {
+    let t = i.getItem(p.ImagesMobileAppUpsellDismissalState, {
+        userId: e
+    });
+    if (t != null) return at(t);
+    let n = it(yt());
+    return n.hasDismissed ? (X(e, n), bt(), n) : n
+}
+
+function X(e, t) {
+    i.setItem(p.ImagesMobileAppUpsellDismissalState, t, {
+        userId: e
+    })
+}
+
+function St() {
+    let e = P(Dt);
+    return ot({
+        isEnabled: e.get(`app_upsell_enabled`, !1),
+        surfaceOpenInterval: e.get(`app_upsell_surface_open_interval`, 0)
+    })
+}
+
+function Ct(e) {
+    "use forget";
+    let t = (0, Tt.c)(16),
+        {
+            fallback: n
+        } = e,
+        r = n === void 0 ? null : n,
+        i = u(wt),
+        [a, o] = (0, Z.useState)(null),
+        s = (0, Z.useRef)(null),
+        c = (0, Z.useRef)(!1),
+        l = tt({
+            isLoggedIn: k(),
+            isAndroid: F(),
+            isMobileViewport: !u(T),
+            isTablet: L()
+        }),
+        d;
+    t[0] === l ? d = t[1] : (d = l ? St() : 0, t[0] = l, t[1] = d);
+    let p = d,
+        m = l && p > 0 && a?.shouldShow === !0,
+        g, _;
+    t[2] !== l || t[3] !== p || t[4] !== i ? (g = () => {
+        if (!l || i == null || p === 0 || s.current === i) return;
+        let e = xt(i),
+            t = rt({
+                dismissalState: e,
+                surfaceOpenInterval: p
+            });
+        t.dismissalState !== e && X(i, t.dismissalState), s.current = i, c.current = !1, o(t)
+    }, _ = [l, p, i], t[2] = l, t[3] = p, t[4] = i, t[5] = g, t[6] = _) : (g = t[5], _ = t[6]), (0, Z.useEffect)(g, _);
+    let v, y;
+    if (t[7] !== m || t[8] !== a || t[9] !== p ? (v = () => {
+            if (!m || a == null || c.current) return;
+            c.current = !0, j();
+            let e = E.logUpsellOrModalEvent(h, {
+                    eventId: `images_mobile_app_upsell`,
+                    type: M.UPSELL_OR_MODAL_TYPE_CUSTOM_NUX_MODAL
+                }),
+                t = {
+                    surface: `images`,
+                    surface_open_interval: String(p),
+                    eligible_opens_since_dismissal: String(a.dismissalState.eligibleOpensSinceDismissal)
+                };
+            E.logValueEventWithStatsig({
+                segmentEventName: `Mobile App Upsell Banner Shown`,
+                statsigEventName: `chatgpt_web_mobile_app_upsell_banner_shown`,
+                ...e ? {
+                    eventId: e
+                } : {},
+                data: t,
+                statsigMetadata: t,
+                legacyStatsigFallbackMode: `immediate`
+            })
+        }, y = [m, a, p], t[7] = m, t[8] = a, t[9] = p, t[10] = v, t[11] = y) : (v = t[10], y = t[11]), (0, Z.useEffect)(v, y), !l || p === 0) return r;
+    if (i == null || a == null) return null;
+    if (!m) return a.shouldSuppressFallback ? null : r;
+    let b;
+    return t[12] !== a.dismissalState.eligibleOpensSinceDismissal || t[13] !== p || t[14] !== i ? (b = (0, Et.jsx)(kt, {
+        onDismiss: () => {
+            let e = {
+                hasDismissed: !0,
+                eligibleOpensSinceDismissal: 0
+            };
+            X(i, e), o({
+                dismissalState: e,
+                shouldShow: !1,
+                shouldSuppressFallback: !0
+            });
+            let t = {
+                    surface: `images`,
+                    surface_open_interval: String(p),
+                    eligible_opens_since_dismissal: String(a.dismissalState.eligibleOpensSinceDismissal)
+                },
+                n = E.logStructuredEvent(`ChatgptWebMobileAppUpsellBannerDismissed`, {
+                    productExperience: `CHATGPT_WEB_MOBILE_APP_UPSELL_PRODUCT_EXPERIENCE_CHAT`,
+                    surface: `CHATGPT_WEB_MOBILE_APP_UPSELL_BANNER_SURFACE_IMAGES`,
+                    surfaceOpenCountInterval: f(p),
+                    eligibleOpenCountSinceDismissal: f(a.dismissalState.eligibleOpensSinceDismissal)
+                });
+            E.logValueEventWithStatsig({
+                segmentEventName: `Mobile App Upsell Banner Dismissed`,
+                statsigEventName: `chatgpt_web_mobile_app_upsell_banner_dismissed`,
+                ...n ? {
+                    eventId: n
+                } : {},
+                data: t,
+                statsigMetadata: t,
+                legacyStatsigFallbackMode: `immediate`
+            })
+        }
+    }), t[12] = a.dismissalState.eligibleOpensSinceDismissal, t[13] = p, t[14] = i, t[15] = b) : b = t[15], b
+}
+
+function wt() {
+    return B()?.id ?? null
+}
+var Tt, Z, Et, Dt, Ot, kt, At = e((() => {
+    Tt = G(), R(), C(), x(), O(), S(), A(), b(), c(), l(), d(), I(), g(), Z = t(H()), nt(), Et = K(), re(), Dt = `1506327862`, Ot = `oai/apps/hasDismissedImagesMobileAppUpsell`, kt = o(() => ne(() => import(`./dbfda4c2-nzyaos9m315ljmmp.js`).then(e => e.ImagesMobileAppUpsellSheet), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])))
+}));
+
+function jt(e) {
+    "use forget";
+    let t = (0, Pt.c)(62),
+        {
+            children: n,
+            trendTitle: i,
+            hideMobileHeaderUnderline: o
+        } = e,
+        s = (0, Q.use)(te),
+        c;
+    t[0] === s ? c = t[1] : (c = r(s), t[0] = s, t[1] = c);
+    let l = c,
+        d = De(),
+        f = v(),
+        p;
+    t[2] === l ? p = t[3] : (p = e => {
+        Re({
+            callsiteId: `request_completion.tool_landing_pages.image_gen.images_app_stage.1`,
+            conversation: l,
+            ...e
+        })
+    }, t[2] = l, t[3] = p);
+    let m = p,
+        h;
+    t[4] !== l || t[5] !== m ? (h = {
+        conversation: l,
+        handleRequestCompletion: m
+    }, t[4] = l, t[5] = m, t[6] = h) : h = t[6], Ee(h);
+    let g = u(Nt),
+        _, y;
+    t[7] !== l || t[8] !== d ? (_ = () => be({
+        conversation: l,
+        filePickerStore: d
+    }), y = [l, d], t[7] = l, t[8] = d, t[9] = _, t[10] = y) : (_ = t[9], y = t[10]), (0, Q.useEffect)(_, y);
+    let b;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (b = [], t[11] = b) : b = t[11], (0, Q.useEffect)(Mt, b);
+    let x;
+    t[12] === l ? x = t[13] : (x = (0, $.jsx)(Be, {
+        conversation: l
+    }), t[12] = l, t[13] = x);
+    let S;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (S = !k() && `no-auth`, t[14] = S) : S = t[14];
+    let C = g && `scrolled-from-start`,
+        w;
+    t[15] === C ? w = t[16] : (w = ee(`images-app`, S, C), t[15] = C, t[16] = w);
+    let T;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, $.jsx)(a, {
+        children: (0, $.jsx)(Ct, {
+            fallback: (0, $.jsx)(He, {})
+        })
+    }), t[17] = T) : T = t[17];
+    let E;
+    t[18] !== o || t[19] !== i ? (E = k() && (0, $.jsx)(ht, {
+        page: !0,
+        className: `md:hidden`,
+        hideMobileEdgeShadow: o,
+        trendTitle: i
+    }), t[18] = o, t[19] = i, t[20] = E) : E = t[20];
+    let D;
+    t[21] === l ? D = t[22] : (D = !k() && l && (0, $.jsx)(Le, {
+        conversation: l,
+        className: `bg-transparent shadow-none backdrop-blur-none`
+    }), t[21] = l, t[22] = D);
+    let O;
+    t[23] !== E || t[24] !== D ? (O = (0, $.jsxs)(q.Heading, {
+        children: [T, E, D]
+    }), t[23] = E, t[24] = D, t[25] = O) : O = t[25];
+    let A;
+    t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (A = (0, $.jsx)(`div`, {
+        className: `absolute inset-0 backdrop-blur-xs`
+    }), t[26] = A) : A = t[26];
+    let j;
+    t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (j = (0, $.jsx)(Ne, {}), t[27] = j) : j = t[27];
+    let M;
+    t[28] === l.id ? M = t[29] : (M = (0, $.jsx)(q.Navbar, {
+        children: (0, $.jsx)(Ue, {
+            insetBg: A,
+            children: (0, $.jsx)(_e, {
+                navHeader: j,
+                children: (0, $.jsx)(Te, {
+                    clientThreadId: l.id
+                })
+            })
+        })
+    }), t[28] = l.id, t[29] = M);
+    let N, P;
+    t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (N = (0, $.jsx)(q.Header, {
+        children: k() && (0, $.jsx)(Me, {
+            surface: `images`,
+            standalone: !0
+        })
+    }), P = (0, $.jsx)(de, {}), t[30] = N, t[31] = P) : (N = t[30], P = t[31]);
+    let F;
+    t[32] === l ? F = t[33] : (F = (0, $.jsx)(a, {
+        children: (0, $.jsx)(ke, {
+            conversation: l
+        })
+    }), t[32] = l, t[33] = F);
+    let I, L, R;
+    t[34] === l.id ? (I = t[35], L = t[36], R = t[37]) : (I = (0, $.jsx)(Ge, {
+        clientThreadId: l.id
+    }), L = (0, $.jsx)(qe, {
+        clientThreadId: l.id
+    }), R = (0, $.jsx)(Ye, {
+        clientThreadId: l.id
+    }), t[34] = l.id, t[35] = I, t[36] = L, t[37] = R);
+    let z;
+    t[38] !== F || t[39] !== I || t[40] !== L || t[41] !== R ? (z = (0, $.jsxs)(q.ContentSidebar, {
+        children: [F, I, L, R]
+    }), t[38] = F, t[39] = I, t[40] = L, t[41] = R, t[42] = z) : z = t[42];
+    let B;
+    t[43] !== n || t[44] !== w || t[45] !== O || t[46] !== M || t[47] !== z ? (B = (0, $.jsxs)(q, {
+        className: w,
+        children: [O, n, M, N, P, z]
+    }), t[43] = n, t[44] = w, t[45] = O, t[46] = M, t[47] = z, t[48] = B) : B = t[48];
+    let V;
+    t[49] !== l || t[50] !== B ? (V = (0, $.jsx)(ge, {
+        conversation: l,
+        children: B
+    }), t[49] = l, t[50] = B, t[51] = V) : V = t[51];
+    let H;
+    t[52] === l ? H = t[53] : (H = (0, $.jsx)(fe, {
+        conversation: l
+    }), t[52] = l, t[53] = H);
+    let U;
+    t[54] !== l || t[55] !== f ? (U = k() && !f && (0, $.jsx)(ce, {
+        conversation: l
+    }), t[54] = l, t[55] = f, t[56] = U) : U = t[56];
+    let W;
+    return t[57] !== V || t[58] !== H || t[59] !== U || t[60] !== x ? (W = (0, $.jsxs)($.Fragment, {
+        children: [x, V, H, U]
+    }), t[57] = V, t[58] = H, t[59] = U, t[60] = x, t[61] = W) : W = t[61], W
+}
+
+function Mt() {
+    le()
+}
+
+function Nt() {
+    return me()
+}
+var Pt, Q, $, Ft = e((() => {
+    Pt = G(), Ce(), ze(), ae(), m(), Pe(), xe(), Oe(), ue(), je(), Ve(), w(), We(), we(), Fe(), pe(), n(), Ae(), Ke(), ye(), Ie(), se(), D(), vt(), At(), ve(), Se(), C(), V(), oe(), Je(), s(), Q = t(H()), $ = K()
+}));
+export {
+    ct as a, ut as c, vt as i, Ft as n, lt as o, ht as r, st as s, jt as t
+};
 //# sourceMappingURL=18432d2f-f2xv8pepk2yqtbbs.js.map

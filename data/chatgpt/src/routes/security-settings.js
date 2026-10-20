@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,t as n}from"./85299807-jc3o4e9whuvyggix.js";e((()=>{n()}))();export{t as default};
-//# sourceMappingURL=security-settings-hvv6xvfp.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,t as n}from"./85299807-ou3tgn5ik04lgx2g.js";e((()=>{n()}))();export{t as default};
+//# sourceMappingURL=security-settings-fwmz4y1n.js.map

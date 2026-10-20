@@ -1,2 +1,142 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e,t,n=1){let r=t*.7+e*1.7;return{x:Math.sin(r)*.009*n,y:Math.sin(r*1.13+.7)*.018*n,roll:Math.sin(r*.83)*.035*n,yaw:Math.sin(r*.63)*.065*n,bend:Math.sin(r*.9)*.035*n}}var n=e((()=>{}));function r(e,t,n){let r=g((e-t)/(n-t));return r*r*(3-2*r)}function i(e,t){let n=0,r=t*.04;return{layers:e.map((e,i)=>{let a=Math.max(.23,h[i].height)*t,o=Math.hypot(e.x,e.y,e.z)/e.y*a*.5*1.24,s=n-o;return n=s-o-r,{z:s,radius:o}}),farDepth:-n}}function a(e,n,i=!1,a=0,o=!1){let s=h[e],c=i?1:Number.isFinite(n)?Math.max(-.12,Math.min(1.12,n)):0,l=s.delay,u=c,d=r(c,l,.9),f=i?0:1-r(c,l,.88),p=t(e,a,f),m=s.start[1]>.5?o?.95:.84:s.start[1]+(o?.04:0);return{x:_(s.start[0],s.end[0],u)+p.x,desktopX:_(s.start[0],s.desktopEndX,u)+p.x,y:_(m,s.end[1],u)+p.y,height:_(.23,s.height,d),growth:d,tilt:s.tilt*(1-u)+p.roll,turn:_(s.turn,s.settledTurn,u)+p.yaw,bend:p.bend,drift:f,placement:r(c,0,1)}}function o(e,t,n,r){let i=r<600,a=r>=768,o=t/r,s=120*o,h=Math.max(0,n-s),g=i?c:a?u:l,v=i?t:Math.min(t-(a?2*f*o:0),d*o),y=Math.min(h,v/g),b=y*g,x=i?Math.min(h,t*.85)*.23:Math.min(h*.23,t*.16,p*o),S=(.5-e.y)*h+s/2,C=-n/2+s+y*(1-e.y)+(i?0:m*o);return{x:((a?e.desktopX:e.x)-.5)*_(t,b,e.placement),y:_(S,C,e.placement),height:y*e.height+(x-y*.23)*(1-e.growth)}}var s,c,l,u,d,f,p,m,h,g,_,v=e((()=>{n(),s={stiffness:170,damping:17,mass:1,restDelta:.001,restSpeed:.01},c=1280/660,l=768/300,u=768/512,d=768,f=16,p=140,m=30,h=[{name:`Felipe`,start:[.14,.28],end:[.29,.94],desktopEndX:.15,height:.48,tilt:-.16,turn:.14,frontTurn:0,settledTurn:.34,delay:0},{name:`Alfred`,start:[.23,.65],end:[.43,.955],desktopEndX:.38,height:.42,tilt:.15,turn:-.12,frontTurn:0,settledTurn:.34,delay:.04},{name:`Iggy`,start:[.77,.66],end:[.57,.9675],desktopEndX:.62,height:.395,tilt:-.12,turn:.1,frontTurn:0,settledTurn:.34,delay:.07},{name:`Todd`,start:[.86,.25],end:[.71,.9725],desktopEndX:.85,height:.37,tilt:.17,turn:-.18,frontTurn:0,settledTurn:.34,delay:.02}],g=e=>Number.isFinite(e)?Math.max(0,Math.min(1,e)):0,_=(e,t,n)=>e+(t-e)*n}));export{a,o as i,s as n,v as o,i as r,h as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e, t, n = 1) {
+    let r = t * .7 + e * 1.7;
+    return {
+        x: Math.sin(r) * .009 * n,
+        y: Math.sin(r * 1.13 + .7) * .018 * n,
+        roll: Math.sin(r * .83) * .035 * n,
+        yaw: Math.sin(r * .63) * .065 * n,
+        bend: Math.sin(r * .9) * .035 * n
+    }
+}
+var n = e((() => {}));
+
+function r(e, t, n) {
+    let r = g((e - t) / (n - t));
+    return r * r * (3 - 2 * r)
+}
+
+function i(e, t) {
+    let n = 0,
+        r = t * .04;
+    return {
+        layers: e.map((e, i) => {
+            let a = Math.max(.23, h[i].height) * t,
+                o = Math.hypot(e.x, e.y, e.z) / e.y * a * .5 * 1.24,
+                s = n - o;
+            return n = s - o - r, {
+                z: s,
+                radius: o
+            }
+        }),
+        farDepth: -n
+    }
+}
+
+function a(e, n, i = !1, a = 0, o = !1) {
+    let s = h[e],
+        c = i ? 1 : Number.isFinite(n) ? Math.max(-.12, Math.min(1.12, n)) : 0,
+        l = s.delay,
+        u = c,
+        d = r(c, l, .9),
+        f = i ? 0 : 1 - r(c, l, .88),
+        p = t(e, a, f),
+        m = s.start[1] > .5 ? o ? .95 : .84 : s.start[1] + (o ? .04 : 0);
+    return {
+        x: _(s.start[0], s.end[0], u) + p.x,
+        desktopX: _(s.start[0], s.desktopEndX, u) + p.x,
+        y: _(m, s.end[1], u) + p.y,
+        height: _(.23, s.height, d),
+        growth: d,
+        tilt: s.tilt * (1 - u) + p.roll,
+        turn: _(s.turn, s.settledTurn, u) + p.yaw,
+        bend: p.bend,
+        drift: f,
+        placement: r(c, 0, 1)
+    }
+}
+
+function o(e, t, n, r) {
+    let i = r < 600,
+        a = r >= 768,
+        o = t / r,
+        s = 120 * o,
+        h = Math.max(0, n - s),
+        g = i ? c : a ? u : l,
+        v = i ? t : Math.min(t - (a ? 2 * f * o : 0), d * o),
+        y = Math.min(h, v / g),
+        b = y * g,
+        x = i ? Math.min(h, t * .85) * .23 : Math.min(h * .23, t * .16, p * o),
+        S = (.5 - e.y) * h + s / 2,
+        C = -n / 2 + s + y * (1 - e.y) + (i ? 0 : m * o);
+    return {
+        x: ((a ? e.desktopX : e.x) - .5) * _(t, b, e.placement),
+        y: _(S, C, e.placement),
+        height: y * e.height + (x - y * .23) * (1 - e.growth)
+    }
+}
+var s, c, l, u, d, f, p, m, h, g, _, v = e((() => {
+    n(), s = {
+        stiffness: 170,
+        damping: 17,
+        mass: 1,
+        restDelta: .001,
+        restSpeed: .01
+    }, c = 1280 / 660, l = 768 / 300, u = 768 / 512, d = 768, f = 16, p = 140, m = 30, h = [{
+        name: `Felipe`,
+        start: [.14, .28],
+        end: [.29, .94],
+        desktopEndX: .15,
+        height: .48,
+        tilt: -.16,
+        turn: .14,
+        frontTurn: 0,
+        settledTurn: .34,
+        delay: 0
+    }, {
+        name: `Alfred`,
+        start: [.23, .65],
+        end: [.43, .955],
+        desktopEndX: .38,
+        height: .42,
+        tilt: .15,
+        turn: -.12,
+        frontTurn: 0,
+        settledTurn: .34,
+        delay: .04
+    }, {
+        name: `Iggy`,
+        start: [.77, .66],
+        end: [.57, .9675],
+        desktopEndX: .62,
+        height: .395,
+        tilt: -.12,
+        turn: .1,
+        frontTurn: 0,
+        settledTurn: .34,
+        delay: .07
+    }, {
+        name: `Todd`,
+        start: [.86, .25],
+        end: [.71, .9725],
+        desktopEndX: .85,
+        height: .37,
+        tilt: .17,
+        turn: -.18,
+        frontTurn: 0,
+        settledTurn: .34,
+        delay: .02
+    }], g = e => Number.isFinite(e) ? Math.max(0, Math.min(1, e)) : 0, _ = (e, t, n) => e + (t - e) * n
+}));
+export {
+    a,
+    o as i,
+    s as n,
+    v as o,
+    i as r,
+    h as t
+};
 //# sourceMappingURL=9f8043fe-b16zixijfs6j31kd.js.map

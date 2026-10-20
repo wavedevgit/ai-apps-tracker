@@ -1,12 +1,2038 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/9d85046f-e85d5eor0wkmhr5z.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-qsuygr73qjc6rh65.js","assets/2340486e-komxp8tzs51ny4jj.js","assets/root-lelxp0l2.css","assets/conversation-small-cawdu7il3ha6y70c.js","assets/30901919-jory365vq6ym5crx.js","assets/c470f5ab-in0lllrdrzeo67gs.js","assets/0e5afe53-f9gmgfmgrr83ziw3.js","assets/conversation-small-czggvj2v.css","assets/7d7b57e4-fdxwh6u0sbsynv7j.js","assets/31cec8d8-ejzahhq8v425zkie.js","assets/bcae0416-gpoh40wq8xybesjx.js","assets/bcae0416-gky2jkyu7jq786j6.js","assets/6cb574fa-hpeydd2lxw6dodj4.js","assets/a4ef304b-dpx54jrhg24zia67.js","assets/82d617fa-n9i38l3tb4jesip5.js","assets/f2f6ba90-dii5igbck9gk8pmb.js","assets/code-block-viewer-bb2wmqiy.css","assets/ce1c05a6-fesqkicp7lfobeop.js","assets/f6a81ab7-htw4wmdx583c7vy2.js","assets/f8d34c7f-h6u88v3njdxsx78j.js","assets/ff057340-ncovky3n23380hp7.js","assets/d674ec0a-u06tep750x7114as.js","assets/40748e50-jixrib02dq9dndks.js","assets/e01e2324-gw4vrvd9lu7s24tu.js","assets/58bafdef-e37ztwhy6y06i0v6.js","assets/app-block-trigger-actions-hxl87txx.css","assets/374cb62d-if76sx9yrswm6ykp.js","assets/2ea88c7a-lxyla91xs6iv7odf.js","assets/8d846022-bvik3sltoydb2o43.js","assets/91969468-bkzmjjpmmnvm9ngq.js","assets/4d271a7b-o0mxja3gckmk1ykl.js","assets/e1a66d2b-iktyf2mausmi8n5g.js","assets/4c0f1f8e-lcllh9m5rwe6l2ew.js","assets/3509739a-kuauye74m5ek47rc.js","assets/25a66342-cnfcsfdh2ydiex1n.js","assets/c2675c8c-nxl2ic2ofk2vw70s.js","assets/82782bc9-jj605vonxg0iyc7p.js","assets/8b34dbc2-d4icgkio4i3wfm6q.js","assets/global-modals-lv5n3ujm.css","assets/25a66342-j7cd8h2bqav7weve.js","assets/84983163-ci4xm9sq2rcig1sd.js","assets/7517017f-mzovnixx0oznxrxh.js","assets/2ab5aa6c-cko2yuio90tucmj1.js","assets/ae2c873a-cad3xuzaay6ed97f.js","assets/a8af2dc6-kny7rg9fnkjsf95i.js","assets/5422a199-ohc0ujx944q7esd3.js","assets/842a9084-mbvxvhqyj6d0lcob.js","assets/2ac7f54f-gt1pzem2r1sakws9.js"])))=>i.map(i=>d[i]);
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{F7 as r,I1 as i,J0 as a,J5 as o,JJ as s,L7 as c,M5 as l,N7 as u,SN as d,VU as f,Xy as p,Y0 as m,Z1 as h,_N as g,_nt as _,aat as v,aq as y,bU as b,crt as x,dY as S,ert as C,fF as w,fq as T,hnt as E,lY as D,lat as ee,lrt as te,m8 as O,nY as ne,nrt as re,q5 as k,qJ as ie,srt as ae,tY as oe,uF as se,vN as A,yN as ce,yU as le,z1 as ue,zU as de}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as fe,Hn as j,Pn as M,Tn as pe,Vn as me,ln as N,p as P,qt as F,s as he,un as ge,zn as _e}from"./2340486e-komxp8tzs51ny4jj.js";import{Ahn as ve,CCn as ye,EE as be,OE as xe,RHn as Se,Rlt as I,Rst as Ce,SCn as we,TE as Te,_Tt as Ee,a_ as De,bgn as L,cr as Oe,fOt as ke,khn as Ae,mTt as je,nT as Me,o_ as Ne,pOt as Pe,rT as Fe,sTt as Ie,sr as Le,uTt as Re,vgn as ze,zHn as Be,zlt as Ve,zst as He}from"./conversation-small-cawdu7il3ha6y70c.js";import{Ti as Ue,fb as R,pb as We,wi as Ge}from"./30901919-jory365vq6ym5crx.js";import{n as Ke,r as qe}from"./91969468-bkzmjjpmmnvm9ngq.js";import{a as Je,t as Ye}from"./76b5a357-benxdh69028dkycz.js";import{n as Xe,r as Ze}from"./0fbccedd-g5j5mxt9uk7x2vx2.js";import{n as Qe,t as $e}from"./8baac9c1-lv7abm5nmqnkirb9.js";import{a as et,i as tt,n as nt,r as rt,t as it}from"./58bafdef-e37ztwhy6y06i0v6.js";import{n as at,t as ot}from"./8b02daf9-bwvca4933dw4l7qk.js";import{n as st,t as ct}from"./2ab5aa6c-cko2yuio90tucmj1.js";import{a as lt,c as ut,d as dt,i as ft,l as pt,n as mt,o as ht,r as gt,s as _t,t as vt,u as yt}from"./9e6b8179-ew7iwgnanuecii8u.js";import{n as bt,t as xt}from"./0d44a401-kk0x20p96od87d5x.js";import{n as St,r as z}from"./ff057340-ncovky3n23380hp7.js";import{n as Ct,t as B}from"./8becd41d-dw3uvigdojwh6hwv.js";import{n as V,t as wt}from"./ae2c873a-cad3xuzaay6ed97f.js";import{n as Tt,t as Et}from"./7bed292f-es505lalrff9yim1.js";import{n as Dt,t as Ot}from"./70c3dee7-lsaf5xtpkkhxv4cr.js";import{n as kt,r as At}from"./c0abab23-of64ico3xvvt7god.js";function jt(){return rt()}function Mt(e){e.preventDefault()}var Nt,Pt,Ft,It,Lt=e((()=>{Nt=pe(),et(),nt(),Be(),Fe(),O(),g(),Pt=n(j()),He(),Ft=me(),It=e=>{"use forget";let t=(0,Nt.c)(30),{reference:n}=e,r=l(jt),[i,a]=(0,Pt.useState)(!1),[o,s]=(0,Pt.useState)(!1),c;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(c=()=>{a(!0)},t[0]=c):c=t[0];let u=Ce(c,500),d;t[1]===u?d=t[2]:(d=()=>{u()},t[1]=u,t[2]=d);let f=A(d),p;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(p=()=>{s(!0)},t[3]=p):p=t[3];let m=A(p),h;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(h=e=>{let t=e.relatedTarget;t instanceof Node&&e.currentTarget.contains(t)||s(!1)},t[4]=h):h=t[4];let g=A(h),_;t[5]===u?_=t[6]:(_=()=>{u.cancel(),a(!1),s(!1)},t[5]=u,t[6]=_);let v=A(_),y;t[7]===v?y=t[8]:(y=e=>{if(e){a(!0);return}v()},t[7]=v,t[8]=y);let b=A(y),x;t[9]!==o||t[10]!==u?(x=()=>{o||u.cancel()},t[9]=o,t[10]=u,t[11]=x):x=t[11];let S=A(x);if(r)return null;let C;t[12]!==S||t[13]!==f?(C=(0,Ft.jsx)(Se.BasicTrigger,{asChild:!0,children:(0,Ft.jsx)(Me,{onMouseEnter:f,onMouseLeave:S})}),t[12]=S,t[13]=f,t[14]=C):C=t[14];let w;t[15]===Symbol.for(`react.memo_cache_sentinel`)?(w={kind:`chart`},t[15]=w):w=t[15];let T;t[16]!==v||t[17]!==n?(T=(0,Ft.jsx)(tt,{onClose:v,onSubmitted:it,reference:n,target:w}),t[16]=v,t[17]=n,t[18]=T):T=t[18];let E;t[19]!==S||t[20]!==f||t[21]!==g||t[22]!==m||t[23]!==T?(E=(0,Ft.jsx)(Se.Portal,{children:(0,Ft.jsx)(Se.Content,{side:`top`,align:`end`,sideOffset:0,alignOffset:0,onCloseAutoFocus:Mt,className:`flex w-70 flex-col p-2`,onMouseEnter:f,onMouseLeave:S,onFocus:m,onBlur:g,children:T})}),t[19]=S,t[20]=f,t[21]=g,t[22]=m,t[23]=T,t[24]=E):E=t[24];let D;return t[25]!==b||t[26]!==i||t[27]!==E||t[28]!==C?(D=(0,Ft.jsxs)(Se.Root,{onOpenChange:b,open:i,modal:!1,children:[C,E]}),t[25]=b,t[26]=i,t[27]=E,t[28]=C,t[29]=D):D=t[29],D}})),Rt,zt,Bt=e((()=>{Rt=`lxnfua_clipPathFallback`,zt={clipPathFallback:Rt}}));function Vt(e){"use forget";let t=(0,Ht.c)(14),{visible:n,className:r,contentClassName:i,children:a}=e,o=n===void 0||n,s=!o&&`border-transparent`,c=o&&`border-token-border-light border-radius-3xl corner-superellipse/1.1 rounded-3xl`,l;t[0]!==r||t[1]!==s||t[2]!==c?(l=k(r,`border`,s,c),t[0]=r,t[1]=s,t[2]=c,t[3]=l):l=t[3];let u=o&&`border-radius-3xl bg-(--code-block-surface) corner-superellipse/1.1 overflow-clip rounded-3xl [--code-block-surface:var(--bg-elevated-secondary)] dark:[--code-block-surface:var(--composer-surface-primary)]`,d=o&&zt.clipPathFallback,f;t[4]!==i||t[5]!==u||t[6]!==d?(f=k(i,`h-full w-full`,u,d),t[4]=i,t[5]=u,t[6]=d,t[7]=f):f=t[7];let p;t[8]!==a||t[9]!==f?(p=(0,Ut.jsx)(`div`,{className:f,children:a}),t[8]=a,t[9]=f,t[10]=p):p=t[10];let m;return t[11]!==l||t[12]!==p?(m=(0,Ut.jsx)(`div`,{className:l,children:p}),t[11]=l,t[12]=p,t[13]=m):m=t[13],m}var Ht,Ut,Wt=e((()=>{Ht=pe(),Bt(),o(),Ut=me()}));function Gt(e){if(e==null)return;let t=e.trim();if(t.length!==0&&!Kt.test(t))return t}var Kt,qt=e((()=>{Kt=/^id\s*=\s*(?:"[^"\r\n]*"|'[^'\r\n]*')$/i}));function Jt(e){if(!e)return null;let t=e.trim().match(/^([+-]?(?:\d+\.?\d*|\.\d+))(px|pt|pc|in|cm|mm|q|%)?$/i);if(!t)return null;let n=Number.parseFloat(t[1]);if(!Number.isFinite(n)||n<=0)return null;let r=(t[2]??`px`).toLowerCase();if(r===`%`)return null;switch(r){case`px`:return n;case`pt`:return 96/72*n;case`pc`:return n*16;case`in`:return n*96;case`cm`:return 96/2.54*n;case`mm`:return 96/25.4*n;case`q`:return 96/101.6*n;default:return null}}function Yt(e){if(typeof DOMParser>`u`)return null;let t=new DOMParser().parseFromString(e,`image/svg+xml`).querySelector(`svg`);if(!t)return null;let n=Jt(t.getAttribute(`width`)),r=Jt(t.getAttribute(`height`));if(n&&r)return{width:n,height:r};let i=t.getAttribute(`viewBox`);if(!i)return null;let a=i.trim().split(/[\s,]+/).map(e=>Number.parseFloat(e)),o=a[2],s=a[3];return Number.isFinite(o)&&Number.isFinite(s)&&o>0&&s>0?{width:o,height:s}:null}async function Xt(e){let t=new Image;return t.decoding=`async`,await new Promise((n,r)=>{t.onload=()=>n(),t.onerror=()=>r(Error(`Failed to load diagram image`)),t.src=e}),t}async function Zt(e,t=en){if(typeof document>`u`)throw Error(`SVG export is only supported in the browser.`);let n=Number.isFinite(t)&&t>0?t:en,r=Yt(e),i=await Xt(Ae(e)),a=r?.width&&r.width>0?r.width:Math.max(i.naturalWidth,1),o=r?.height&&r.height>0?r.height:Math.max(i.naturalHeight,1),s=Math.max(1,Math.ceil(a*n)),c=Math.max(1,Math.ceil(o*n));if(typeof OffscreenCanvas<`u`){let e=new OffscreenCanvas(s,c),t=e.getContext(`2d`);if(t&&typeof e.convertToBlob==`function`)return t.scale(n,n),t.drawImage(i,0,0,a,o),e.convertToBlob({type:`image/png`})}let l=document.createElement(`canvas`);l.width=s,l.height=c;let u=l.getContext(`2d`);if(!u)throw Error(`Unable to export diagram image.`);u.scale(n,n),u.drawImage(i,0,0,a,o);let d=await new Promise(e=>{l.toBlob(t=>e(t),`image/png`)});if(!d)throw Error(`Unable to create PNG export.`);return d}async function Qt(e){if(e.startsWith(`data:`)){let t=e.indexOf(`,`);if(t<0)throw Error(`Invalid preview image data URL.`);let n=e.slice(5,t),r=e.slice(t+1),i=n.split(`;`),a=i[0]||`application/octet-stream`;if(i.some(e=>e.toLowerCase()===`base64`)){if(typeof atob>`u`)throw Error(`Base64 decoding is unavailable in this environment.`);let e=atob(r),t=new Uint8Array(e.length);for(let n=0;n<e.length;n++)t[n]=e.charCodeAt(n);return new Blob([t],{type:a})}return new Blob([decodeURIComponent(r)],{type:a})}let t=await r(e);if(!t.ok)throw Error(`Unable to read preview image.`);return t.blob()}async function $t({source:e,chatTheme:t,enableMermaidUiImprovements:n,isDarkMode:r}){let i=n?xt({chatTheme:t,isDarkMode:r,background:`surface`}):void 0;return Zt(await Xe({source:e,theme:i==null?r?`dark`:`neutral`:`base`,themeVariables:i,isDarkMode:r,diagramId:`mermaid-export-${Math.random().toString(36).slice(2)}`}))}var en,tn=e((()=>{Ze(),bt(),ve(),c(),en=2}));function nn(e){switch(e){case`html`:case`react`:return`code`;case`mermaid`:case`vega`:case`vega-lite`:return`png`;default:return null}}function rn(e,t){return e===`html`?`preview.html`:t===`javascript`?`preview.jsx`:`preview.tsx`}function an(e){return e===`html`?`text/html;charset=utf-8`:`text/plain;charset=utf-8`}var on=e((()=>{})),sn,H,cn,ln=e((()=>{sn=pe(),L(),st(),z(),Ct(),V(),We(),Ge(),p(),o(),_e(),H=me(),cn=e=>{"use forget";let t=(0,sn.c)(56),{language:n,code:r,messageId:i,clientThreadId:a,isModelPreviewable:o,isPreviewable:s,isPreviewOpen:c,isStreaming:l,isTurnStreaming:u,isPreviewToggleDisabled:d,isExecutable:f,isCodeRunning:p,onCodeClick:m,onPreviewClick:h,onPreviewMouseEnter:g,onPreviewMouseLeave:_,onFullScreenClick:v,onRunClick:y}=e,b=o!==void 0&&o,x=s!==void 0&&s,S=c!==void 0&&c,C=l!==void 0&&l,w=u!==void 0&&u,T=d!==void 0&&d,E=f!==void 0&&f,D=p!==void 0&&p,ee=fe(),te=!S,O;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(O=(0,H.jsx)(R,{className:`icon-sm me-2.5 shrink-0`}),t[0]=O):O=t[0];let ne=O;if(x){let e;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,H.jsx)(Ue,{className:`icon-sm me-2.5 shrink-0`}),t[1]=e):e=t[1],ne=e}if(C){let e;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,H.jsx)(ze,{size:16,className:`text-token-text-tertiary me-2.5`,backgroundStrokeClassName:`stroke-black/20 dark:stroke-white/20`}),t[2]=e):e=t[2],ne=e}let re=!S&&`sticky z-2`,ie=!S&&`top-(--sticky-padding-top)`,ae;t[3]!==re||t[4]!==ie?(ae=k(`select-none`,re,ie),t[3]=re,t[4]=ie,t[5]=ae):ae=t[5];let oe=S?`bg-token-main-surface-primary`:`bg-(--code-block-surface)`,se;t[6]===oe?se=t[7]:(se=k(`flex w-full items-center justify-between py-1.5 ps-4 pe-1.5 font-sans md:ps-5`,oe),t[6]=oe,t[7]=se);let A=C&&`text-token-text-tertiary`,ce=!C&&`text-token-text-primary`,le;t[8]!==A||t[9]!==ce?(le=k(`flex max-w-[75%] min-w-0 cursor-default items-center text-sm font-medium`,`justify-self-start`,A,ce),t[8]=A,t[9]=ce,t[10]=le):le=t[10];let ue;t[11]===n?ue=t[12]:(ue=n??(0,H.jsx)(M,{id:`code-block-header-title-no-language`,defaultMessage:`Code`}),t[11]=n,t[12]=ue);let de;t[13]!==ee||t[14]!==b?(de=b&&!1,t[13]=ee,t[14]=b,t[15]=de):de=t[15];let j;t[16]!==ne||t[17]!==le||t[18]!==ue||t[19]!==de?(j=(0,H.jsxs)(`div`,{className:le,children:[ne,ue,de]}),t[16]=ne,t[17]=le,t[18]=ue,t[19]=de,t[20]=j):j=t[20];let pe;t[21]!==S||t[22]!==T||t[23]!==x||t[24]!==m||t[25]!==h||t[26]!==g||t[27]!==_?(pe=x&&(0,H.jsx)(B,{isPreviewOpen:S,isPreviewDisabled:T,onCodeClick:m,onPreviewClick:h,onPreviewMouseEnter:g,onPreviewMouseLeave:_}),t[21]=S,t[22]=T,t[23]=x,t[24]=m,t[25]=h,t[26]=g,t[27]=_,t[28]=pe):pe=t[28];let me;t[29]!==S||t[30]!==v?(me=S&&(0,H.jsx)(St,{onClick:v,className:`shrink-0`}),t[29]=S,t[30]=v,t[31]=me):me=t[31];let N;t[32]!==a||t[33]!==r||t[34]!==C||t[35]!==i||t[36]!==te?(N=te&&(0,H.jsx)(ct,{code:r,messageId:i,clientThreadId:a,disabled:C}),t[32]=a,t[33]=r,t[34]=C,t[35]=i,t[36]=te,t[37]=N):N=t[37];let P;t[38]!==D||t[39]!==E||t[40]!==C||t[41]!==w||t[42]!==y?(P=E&&(0,H.jsx)(wt,{isCodeRunning:D,disabled:C||w,onClick:y}),t[38]=D,t[39]=E,t[40]=C,t[41]=w,t[42]=y,t[43]=P):P=t[43];let F;t[44]!==pe||t[45]!==me||t[46]!==N||t[47]!==P?(F=(0,H.jsxs)(`div`,{className:`flex flex-row items-center gap-0.5 justify-self-end`,children:[pe,me,N,P]}),t[44]=pe,t[45]=me,t[46]=N,t[47]=P,t[48]=F):F=t[48];let he;t[49]!==se||t[50]!==j||t[51]!==F?(he=(0,H.jsxs)(`div`,{className:se,children:[j,F]}),t[49]=se,t[50]=j,t[51]=F,t[52]=he):he=t[52];let ge;return t[53]!==ae||t[54]!==he?(ge=(0,H.jsx)(`div`,{className:ae,children:he}),t[53]=ae,t[54]=he,t[55]=ge):ge=t[55],ge}})),un=e((()=>{}));function dn(e){"use forget";let t=(0,fn.c)(23),{threadId:n,messageId:r,codeIndex:i,language:a}=e,o=S(n),s=(0,pn.useRef)(0),c=(0,pn.useRef)(0),[l,d]=(0,pn.useState)(null),f;t[0]!==i||t[1]!==r||t[2]!==o?(f=[`code-block-autosave`,o,r,i],t[0]=i,t[1]=r,t[2]=o,t[3]=f):f=t[3];let p=`codeblock:${o}:${r}:${i}`,m;t[4]===p?m=t[5]:(m={id:p},t[4]=p,t[5]=m);let h;t[6]!==i||t[7]!==a||t[8]!==r||t[9]!==o?(h=async e=>{let{content:t}=e;!o||i===void 0||!r||await u.safePost(`/conversation/message/code-blocks`,{requestBody:{message_id:r,conversation_id:o,index:String(i),code_block:{index:String(i),content:t,language:a},updated_at:new Date().toISOString()},authOption:v.SendIfAvailable})},t[6]=i,t[7]=a,t[8]=r,t[9]=o,t[10]=h):h=t[10];let g,_;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(g=e=>{c.current=e.editVersion,d(null)},_=(e,t)=>{t.editVersion===s.current&&d(e instanceof Error?e.message:String(e))},t[11]=g,t[12]=_):(g=t[11],_=t[12]);let y=P({mutationKey:f,scope:m,mutationFn:h,onMutate:g,onError:_,onSettled:(e,t,n)=>{n.editVersion===c.current&&x.isPending()&&s.current>n.editVersion&&x.flush()},retry:1,retryDelay:3e3}),b;t[13]===y?b=t[14]:(b=e=>y.mutateAsync(e),t[13]=y,t[14]=b);let x=Ce(b,2e3),C;t[15]===x?C=t[16]:(C=e=>{let t=s.current+=1;x({content:e,editVersion:t})},t[15]=x,t[16]=C);let w=A(C),T;t[17]===x?T=t[18]:(T=async()=>{let e=x.flush();if(e==null)return!0;try{return await e,!0}catch{return!1}},t[17]=x,t[18]=T);let E=A(T),D;return t[19]!==l||t[20]!==E||t[21]!==w?(D={requestSave:w,flushSave:E,error:l},t[19]=l,t[20]=E,t[21]=w,t[22]=D):D=t[22],D}var fn,pn,mn=e((()=>{fn=pe(),ne(),ee(),c(),g(),he(),pn=n(j()),He()}));function hn(e){"use forget";let t=(0,_n.c)(14),{canRunCodeExecution:n,isFullScreen:r,isScreenAtLeastMd:i,runCodeBlockViewTransition:a,fullscreenContainerRef:o,focusRestoreRef:s,setIsFullScreen:c,setIsPreviewFirst:l,setViewState:u}=e,[d,f]=(0,vn.useState)(!1),[p,m]=(0,vn.useState)(0),h;t[0]!==n||t[1]!==s||t[2]!==o||t[3]!==r||t[4]!==i||t[5]!==a||t[6]!==c||t[7]!==l||t[8]!==u?(h=()=>{if(n){if(r){f(!0),m(gn);return}o.current?.measurePlaceholderMetrics(),document.activeElement instanceof HTMLElement&&(s.current=document.activeElement),a(()=>{f(!0),m(U),l(!1),c(!0),u(i?`split`:`preview`)})}},t[0]=n,t[1]=s,t[2]=o,t[3]=r,t[4]=i,t[5]=a,t[6]=c,t[7]=l,t[8]=u,t[9]=h):h=t[9];let g=A(h),_;return t[10]!==d||t[11]!==g||t[12]!==p?(_={isExecutionPaneVisible:d,setIsExecutionPaneVisible:f,requestCodeRun:g,runRequestId:p,setRunRequestId:m},t[10]=d,t[11]=g,t[12]=p,t[13]=_):_=t[13],_}function U(e){return e+1}function gn(e){return e+1}var _n,vn,yn=e((()=>{_n=pe(),g(),vn=n(j())}));function bn(e){return e.replaceAll(`\r
-`,`
-`).replaceAll(`\r`,`
-`)}function xn(e){let t=[];for(let n of e.matchAll(J))t.push(n[2]);return t}function W(e){let t=e=>e.startsWith(`--- `)||e.startsWith(`+++ `)||e.startsWith(`@@ `)||e.startsWith(` `)||e.startsWith(`+`)||e.startsWith(`-`)||e.startsWith(`\\`),n=[...e];for(;n.length>0&&!t(n[n.length-1]??``);)n.pop();return n}function G(e){let t=e.trim();if(t===``||t.toUpperCase()===Tn||/^NO_CHANGES[.!]?$/i.test(t))return null;let n=[t,...xn(t).map(e=>e.trim())],r=t.split(`
-`).findIndex(e=>e.startsWith(`--- `)||e.startsWith(`@@ `));r>=0&&n.push(t.split(`
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/9d85046f-e85d5eor0wkmhr5z.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-qsuygr73qjc6rh65.js", "assets/2340486e-komxp8tzs51ny4jj.js", "assets/root-lelxp0l2.css", "assets/conversation-small-cawdu7il3ha6y70c.js", "assets/30901919-jory365vq6ym5crx.js", "assets/c470f5ab-in0lllrdrzeo67gs.js", "assets/0e5afe53-f9gmgfmgrr83ziw3.js", "assets/conversation-small-czggvj2v.css", "assets/7d7b57e4-fdxwh6u0sbsynv7j.js", "assets/31cec8d8-ejzahhq8v425zkie.js", "assets/bcae0416-gpoh40wq8xybesjx.js", "assets/bcae0416-gky2jkyu7jq786j6.js", "assets/6cb574fa-hpeydd2lxw6dodj4.js", "assets/a4ef304b-dpx54jrhg24zia67.js", "assets/82d617fa-n9i38l3tb4jesip5.js", "assets/f2f6ba90-dii5igbck9gk8pmb.js", "assets/code-block-viewer-bb2wmqiy.css", "assets/ce1c05a6-fesqkicp7lfobeop.js", "assets/f6a81ab7-htw4wmdx583c7vy2.js", "assets/f8d34c7f-h6u88v3njdxsx78j.js", "assets/ff057340-ncovky3n23380hp7.js", "assets/d674ec0a-u06tep750x7114as.js", "assets/40748e50-jixrib02dq9dndks.js", "assets/e01e2324-gw4vrvd9lu7s24tu.js", "assets/58bafdef-e37ztwhy6y06i0v6.js", "assets/app-block-trigger-actions-hxl87txx.css", "assets/374cb62d-if76sx9yrswm6ykp.js", "assets/2ea88c7a-lxyla91xs6iv7odf.js", "assets/8d846022-bvik3sltoydb2o43.js", "assets/91969468-bkzmjjpmmnvm9ngq.js", "assets/4d271a7b-o0mxja3gckmk1ykl.js", "assets/e1a66d2b-iktyf2mausmi8n5g.js", "assets/4c0f1f8e-lcllh9m5rwe6l2ew.js", "assets/3509739a-kuauye74m5ek47rc.js", "assets/25a66342-cnfcsfdh2ydiex1n.js", "assets/c2675c8c-nxl2ic2ofk2vw70s.js", "assets/82782bc9-jj605vonxg0iyc7p.js", "assets/8b34dbc2-d4icgkio4i3wfm6q.js", "assets/global-modals-lv5n3ujm.css", "assets/25a66342-j7cd8h2bqav7weve.js", "assets/84983163-ci4xm9sq2rcig1sd.js", "assets/7517017f-mzovnixx0oznxrxh.js", "assets/2ab5aa6c-cko2yuio90tucmj1.js", "assets/ae2c873a-cad3xuzaay6ed97f.js", "assets/a8af2dc6-kny7rg9fnkjsf95i.js", "assets/5422a199-ohc0ujx944q7esd3.js", "assets/842a9084-mbvxvhqyj6d0lcob.js", "assets/2ac7f54f-gt1pzem2r1sakws9.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    F7 as r,
+    I1 as i,
+    J0 as a,
+    J5 as o,
+    JJ as s,
+    L7 as c,
+    M5 as l,
+    N7 as u,
+    SN as d,
+    VU as f,
+    Xy as p,
+    Y0 as m,
+    Z1 as h,
+    _N as g,
+    _nt as _,
+    aat as v,
+    aq as y,
+    bU as b,
+    crt as x,
+    dY as S,
+    ert as C,
+    fF as w,
+    fq as T,
+    hnt as E,
+    lY as D,
+    lat as ee,
+    lrt as te,
+    m8 as O,
+    nY as ne,
+    nrt as re,
+    q5 as k,
+    qJ as ie,
+    srt as ae,
+    tY as oe,
+    uF as se,
+    vN as A,
+    yN as ce,
+    yU as le,
+    z1 as ue,
+    zU as de
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as fe,
+    Hn as j,
+    Pn as M,
+    Tn as pe,
+    Vn as me,
+    ln as N,
+    p as P,
+    qt as F,
+    s as he,
+    un as ge,
+    zn as _e
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Ahn as ve,
+    CCn as ye,
+    EE as be,
+    OE as xe,
+    RHn as Se,
+    Rlt as I,
+    Rst as Ce,
+    SCn as we,
+    TE as Te,
+    _Tt as Ee,
+    a_ as De,
+    bgn as L,
+    cr as Oe,
+    fOt as ke,
+    khn as Ae,
+    mTt as je,
+    nT as Me,
+    o_ as Ne,
+    pOt as Pe,
+    rT as Fe,
+    sTt as Ie,
+    sr as Le,
+    uTt as Re,
+    vgn as ze,
+    zHn as Be,
+    zlt as Ve,
+    zst as He
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Ti as Ue,
+    fb as R,
+    pb as We,
+    wi as Ge
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    n as Ke,
+    r as qe
+} from "./91969468-bkzmjjpmmnvm9ngq.js";
+import {
+    a as Je,
+    t as Ye
+} from "./76b5a357-benxdh69028dkycz.js";
+import {
+    n as Xe,
+    r as Ze
+} from "./0fbccedd-g5j5mxt9uk7x2vx2.js";
+import {
+    n as Qe,
+    t as $e
+} from "./8baac9c1-lv7abm5nmqnkirb9.js";
+import {
+    a as et,
+    i as tt,
+    n as nt,
+    r as rt,
+    t as it
+} from "./58bafdef-e37ztwhy6y06i0v6.js";
+import {
+    n as at,
+    t as ot
+} from "./8b02daf9-bwvca4933dw4l7qk.js";
+import {
+    n as st,
+    t as ct
+} from "./2ab5aa6c-cko2yuio90tucmj1.js";
+import {
+    a as lt,
+    c as ut,
+    d as dt,
+    i as ft,
+    l as pt,
+    n as mt,
+    o as ht,
+    r as gt,
+    s as _t,
+    t as vt,
+    u as yt
+} from "./9e6b8179-ew7iwgnanuecii8u.js";
+import {
+    n as bt,
+    t as xt
+} from "./0d44a401-kk0x20p96od87d5x.js";
+import {
+    n as St,
+    r as z
+} from "./ff057340-ncovky3n23380hp7.js";
+import {
+    n as Ct,
+    t as B
+} from "./8becd41d-dw3uvigdojwh6hwv.js";
+import {
+    n as V,
+    t as wt
+} from "./ae2c873a-cad3xuzaay6ed97f.js";
+import {
+    n as Tt,
+    t as Et
+} from "./7bed292f-es505lalrff9yim1.js";
+import {
+    n as Dt,
+    t as Ot
+} from "./70c3dee7-lsaf5xtpkkhxv4cr.js";
+import {
+    n as kt,
+    r as At
+} from "./c0abab23-of64ico3xvvt7god.js";
+
+function jt() {
+    return rt()
+}
+
+function Mt(e) {
+    e.preventDefault()
+}
+var Nt, Pt, Ft, It, Lt = e((() => {
+        Nt = pe(), et(), nt(), Be(), Fe(), O(), g(), Pt = n(j()), He(), Ft = me(), It = e => {
+            "use forget";
+            let t = (0, Nt.c)(30),
+                {
+                    reference: n
+                } = e,
+                r = l(jt),
+                [i, a] = (0, Pt.useState)(!1),
+                [o, s] = (0, Pt.useState)(!1),
+                c;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = () => {
+                a(!0)
+            }, t[0] = c) : c = t[0];
+            let u = Ce(c, 500),
+                d;
+            t[1] === u ? d = t[2] : (d = () => {
+                u()
+            }, t[1] = u, t[2] = d);
+            let f = A(d),
+                p;
+            t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (p = () => {
+                s(!0)
+            }, t[3] = p) : p = t[3];
+            let m = A(p),
+                h;
+            t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (h = e => {
+                let t = e.relatedTarget;
+                t instanceof Node && e.currentTarget.contains(t) || s(!1)
+            }, t[4] = h) : h = t[4];
+            let g = A(h),
+                _;
+            t[5] === u ? _ = t[6] : (_ = () => {
+                u.cancel(), a(!1), s(!1)
+            }, t[5] = u, t[6] = _);
+            let v = A(_),
+                y;
+            t[7] === v ? y = t[8] : (y = e => {
+                if (e) {
+                    a(!0);
+                    return
+                }
+                v()
+            }, t[7] = v, t[8] = y);
+            let b = A(y),
+                x;
+            t[9] !== o || t[10] !== u ? (x = () => {
+                o || u.cancel()
+            }, t[9] = o, t[10] = u, t[11] = x) : x = t[11];
+            let S = A(x);
+            if (r) return null;
+            let C;
+            t[12] !== S || t[13] !== f ? (C = (0, Ft.jsx)(Se.BasicTrigger, {
+                asChild: !0,
+                children: (0, Ft.jsx)(Me, {
+                    onMouseEnter: f,
+                    onMouseLeave: S
+                })
+            }), t[12] = S, t[13] = f, t[14] = C) : C = t[14];
+            let w;
+            t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (w = {
+                kind: `chart`
+            }, t[15] = w) : w = t[15];
+            let T;
+            t[16] !== v || t[17] !== n ? (T = (0, Ft.jsx)(tt, {
+                onClose: v,
+                onSubmitted: it,
+                reference: n,
+                target: w
+            }), t[16] = v, t[17] = n, t[18] = T) : T = t[18];
+            let E;
+            t[19] !== S || t[20] !== f || t[21] !== g || t[22] !== m || t[23] !== T ? (E = (0, Ft.jsx)(Se.Portal, {
+                children: (0, Ft.jsx)(Se.Content, {
+                    side: `top`,
+                    align: `end`,
+                    sideOffset: 0,
+                    alignOffset: 0,
+                    onCloseAutoFocus: Mt,
+                    className: `flex w-70 flex-col p-2`,
+                    onMouseEnter: f,
+                    onMouseLeave: S,
+                    onFocus: m,
+                    onBlur: g,
+                    children: T
+                })
+            }), t[19] = S, t[20] = f, t[21] = g, t[22] = m, t[23] = T, t[24] = E) : E = t[24];
+            let D;
+            return t[25] !== b || t[26] !== i || t[27] !== E || t[28] !== C ? (D = (0, Ft.jsxs)(Se.Root, {
+                onOpenChange: b,
+                open: i,
+                modal: !1,
+                children: [C, E]
+            }), t[25] = b, t[26] = i, t[27] = E, t[28] = C, t[29] = D) : D = t[29], D
+        }
+    })),
+    Rt, zt, Bt = e((() => {
+        Rt = `lxnfua_clipPathFallback`, zt = {
+            clipPathFallback: Rt
+        }
+    }));
+
+function Vt(e) {
+    "use forget";
+    let t = (0, Ht.c)(14),
+        {
+            visible: n,
+            className: r,
+            contentClassName: i,
+            children: a
+        } = e,
+        o = n === void 0 || n,
+        s = !o && `border-transparent`,
+        c = o && `border-token-border-light border-radius-3xl corner-superellipse/1.1 rounded-3xl`,
+        l;
+    t[0] !== r || t[1] !== s || t[2] !== c ? (l = k(r, `border`, s, c), t[0] = r, t[1] = s, t[2] = c, t[3] = l) : l = t[3];
+    let u = o && `border-radius-3xl bg-(--code-block-surface) corner-superellipse/1.1 overflow-clip rounded-3xl [--code-block-surface:var(--bg-elevated-secondary)] dark:[--code-block-surface:var(--composer-surface-primary)]`,
+        d = o && zt.clipPathFallback,
+        f;
+    t[4] !== i || t[5] !== u || t[6] !== d ? (f = k(i, `h-full w-full`, u, d), t[4] = i, t[5] = u, t[6] = d, t[7] = f) : f = t[7];
+    let p;
+    t[8] !== a || t[9] !== f ? (p = (0, Ut.jsx)(`div`, {
+        className: f,
+        children: a
+    }), t[8] = a, t[9] = f, t[10] = p) : p = t[10];
+    let m;
+    return t[11] !== l || t[12] !== p ? (m = (0, Ut.jsx)(`div`, {
+        className: l,
+        children: p
+    }), t[11] = l, t[12] = p, t[13] = m) : m = t[13], m
+}
+var Ht, Ut, Wt = e((() => {
+    Ht = pe(), Bt(), o(), Ut = me()
+}));
+
+function Gt(e) {
+    if (e == null) return;
+    let t = e.trim();
+    if (t.length !== 0 && !Kt.test(t)) return t
+}
+var Kt, qt = e((() => {
+    Kt = /^id\s*=\s*(?:"[^"\r\n]*"|'[^'\r\n]*')$/i
+}));
+
+function Jt(e) {
+    if (!e) return null;
+    let t = e.trim().match(/^([+-]?(?:\d+\.?\d*|\.\d+))(px|pt|pc|in|cm|mm|q|%)?$/i);
+    if (!t) return null;
+    let n = Number.parseFloat(t[1]);
+    if (!Number.isFinite(n) || n <= 0) return null;
+    let r = (t[2] ?? `px`).toLowerCase();
+    if (r === `%`) return null;
+    switch (r) {
+        case `px`:
+            return n;
+        case `pt`:
+            return 96 / 72 * n;
+        case `pc`:
+            return n * 16;
+        case `in`:
+            return n * 96;
+        case `cm`:
+            return 96 / 2.54 * n;
+        case `mm`:
+            return 96 / 25.4 * n;
+        case `q`:
+            return 96 / 101.6 * n;
+        default:
+            return null
+    }
+}
+
+function Yt(e) {
+    if (typeof DOMParser > `u`) return null;
+    let t = new DOMParser().parseFromString(e, `image/svg+xml`).querySelector(`svg`);
+    if (!t) return null;
+    let n = Jt(t.getAttribute(`width`)),
+        r = Jt(t.getAttribute(`height`));
+    if (n && r) return {
+        width: n,
+        height: r
+    };
+    let i = t.getAttribute(`viewBox`);
+    if (!i) return null;
+    let a = i.trim().split(/[\s,]+/).map(e => Number.parseFloat(e)),
+        o = a[2],
+        s = a[3];
+    return Number.isFinite(o) && Number.isFinite(s) && o > 0 && s > 0 ? {
+        width: o,
+        height: s
+    } : null
+}
+async function Xt(e) {
+    let t = new Image;
+    return t.decoding = `async`, await new Promise((n, r) => {
+        t.onload = () => n(), t.onerror = () => r(Error(`Failed to load diagram image`)), t.src = e
+    }), t
+}
+async function Zt(e, t = en) {
+    if (typeof document > `u`) throw Error(`SVG export is only supported in the browser.`);
+    let n = Number.isFinite(t) && t > 0 ? t : en,
+        r = Yt(e),
+        i = await Xt(Ae(e)),
+        a = r?.width && r.width > 0 ? r.width : Math.max(i.naturalWidth, 1),
+        o = r?.height && r.height > 0 ? r.height : Math.max(i.naturalHeight, 1),
+        s = Math.max(1, Math.ceil(a * n)),
+        c = Math.max(1, Math.ceil(o * n));
+    if (typeof OffscreenCanvas < `u`) {
+        let e = new OffscreenCanvas(s, c),
+            t = e.getContext(`2d`);
+        if (t && typeof e.convertToBlob == `function`) return t.scale(n, n), t.drawImage(i, 0, 0, a, o), e.convertToBlob({
+            type: `image/png`
+        })
+    }
+    let l = document.createElement(`canvas`);
+    l.width = s, l.height = c;
+    let u = l.getContext(`2d`);
+    if (!u) throw Error(`Unable to export diagram image.`);
+    u.scale(n, n), u.drawImage(i, 0, 0, a, o);
+    let d = await new Promise(e => {
+        l.toBlob(t => e(t), `image/png`)
+    });
+    if (!d) throw Error(`Unable to create PNG export.`);
+    return d
+}
+async function Qt(e) {
+    if (e.startsWith(`data:`)) {
+        let t = e.indexOf(`,`);
+        if (t < 0) throw Error(`Invalid preview image data URL.`);
+        let n = e.slice(5, t),
+            r = e.slice(t + 1),
+            i = n.split(`;`),
+            a = i[0] || `application/octet-stream`;
+        if (i.some(e => e.toLowerCase() === `base64`)) {
+            if (typeof atob > `u`) throw Error(`Base64 decoding is unavailable in this environment.`);
+            let e = atob(r),
+                t = new Uint8Array(e.length);
+            for (let n = 0; n < e.length; n++) t[n] = e.charCodeAt(n);
+            return new Blob([t], {
+                type: a
+            })
+        }
+        return new Blob([decodeURIComponent(r)], {
+            type: a
+        })
+    }
+    let t = await r(e);
+    if (!t.ok) throw Error(`Unable to read preview image.`);
+    return t.blob()
+}
+async function $t({
+    source: e,
+    chatTheme: t,
+    enableMermaidUiImprovements: n,
+    isDarkMode: r
+}) {
+    let i = n ? xt({
+        chatTheme: t,
+        isDarkMode: r,
+        background: `surface`
+    }) : void 0;
+    return Zt(await Xe({
+        source: e,
+        theme: i == null ? r ? `dark` : `neutral` : `base`,
+        themeVariables: i,
+        isDarkMode: r,
+        diagramId: `mermaid-export-${Math.random().toString(36).slice(2)}`
+    }))
+}
+var en, tn = e((() => {
+    Ze(), bt(), ve(), c(), en = 2
+}));
+
+function nn(e) {
+    switch (e) {
+        case `html`:
+        case `react`:
+            return `code`;
+        case `mermaid`:
+        case `vega`:
+        case `vega-lite`:
+            return `png`;
+        default:
+            return null
+    }
+}
+
+function rn(e, t) {
+    return e === `html` ? `preview.html` : t === `javascript` ? `preview.jsx` : `preview.tsx`
+}
+
+function an(e) {
+    return e === `html` ? `text/html;charset=utf-8` : `text/plain;charset=utf-8`
+}
+var on = e((() => {})),
+    sn, H, cn, ln = e((() => {
+        sn = pe(), L(), st(), z(), Ct(), V(), We(), Ge(), p(), o(), _e(), H = me(), cn = e => {
+            "use forget";
+            let t = (0, sn.c)(56),
+                {
+                    language: n,
+                    code: r,
+                    messageId: i,
+                    clientThreadId: a,
+                    isModelPreviewable: o,
+                    isPreviewable: s,
+                    isPreviewOpen: c,
+                    isStreaming: l,
+                    isTurnStreaming: u,
+                    isPreviewToggleDisabled: d,
+                    isExecutable: f,
+                    isCodeRunning: p,
+                    onCodeClick: m,
+                    onPreviewClick: h,
+                    onPreviewMouseEnter: g,
+                    onPreviewMouseLeave: _,
+                    onFullScreenClick: v,
+                    onRunClick: y
+                } = e,
+                b = o !== void 0 && o,
+                x = s !== void 0 && s,
+                S = c !== void 0 && c,
+                C = l !== void 0 && l,
+                w = u !== void 0 && u,
+                T = d !== void 0 && d,
+                E = f !== void 0 && f,
+                D = p !== void 0 && p,
+                ee = fe(),
+                te = !S,
+                O;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (O = (0, H.jsx)(R, {
+                className: `icon-sm me-2.5 shrink-0`
+            }), t[0] = O) : O = t[0];
+            let ne = O;
+            if (x) {
+                let e;
+                t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, H.jsx)(Ue, {
+                    className: `icon-sm me-2.5 shrink-0`
+                }), t[1] = e) : e = t[1], ne = e
+            }
+            if (C) {
+                let e;
+                t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, H.jsx)(ze, {
+                    size: 16,
+                    className: `text-token-text-tertiary me-2.5`,
+                    backgroundStrokeClassName: `stroke-black/20 dark:stroke-white/20`
+                }), t[2] = e) : e = t[2], ne = e
+            }
+            let re = !S && `sticky z-2`,
+                ie = !S && `top-(--sticky-padding-top)`,
+                ae;
+            t[3] !== re || t[4] !== ie ? (ae = k(`select-none`, re, ie), t[3] = re, t[4] = ie, t[5] = ae) : ae = t[5];
+            let oe = S ? `bg-token-main-surface-primary` : `bg-(--code-block-surface)`,
+                se;
+            t[6] === oe ? se = t[7] : (se = k(`flex w-full items-center justify-between py-1.5 ps-4 pe-1.5 font-sans md:ps-5`, oe), t[6] = oe, t[7] = se);
+            let A = C && `text-token-text-tertiary`,
+                ce = !C && `text-token-text-primary`,
+                le;
+            t[8] !== A || t[9] !== ce ? (le = k(`flex max-w-[75%] min-w-0 cursor-default items-center text-sm font-medium`, `justify-self-start`, A, ce), t[8] = A, t[9] = ce, t[10] = le) : le = t[10];
+            let ue;
+            t[11] === n ? ue = t[12] : (ue = n ?? (0, H.jsx)(M, {
+                id: `code-block-header-title-no-language`,
+                defaultMessage: `Code`
+            }), t[11] = n, t[12] = ue);
+            let de;
+            t[13] !== ee || t[14] !== b ? (de = b && !1, t[13] = ee, t[14] = b, t[15] = de) : de = t[15];
+            let j;
+            t[16] !== ne || t[17] !== le || t[18] !== ue || t[19] !== de ? (j = (0, H.jsxs)(`div`, {
+                className: le,
+                children: [ne, ue, de]
+            }), t[16] = ne, t[17] = le, t[18] = ue, t[19] = de, t[20] = j) : j = t[20];
+            let pe;
+            t[21] !== S || t[22] !== T || t[23] !== x || t[24] !== m || t[25] !== h || t[26] !== g || t[27] !== _ ? (pe = x && (0, H.jsx)(B, {
+                isPreviewOpen: S,
+                isPreviewDisabled: T,
+                onCodeClick: m,
+                onPreviewClick: h,
+                onPreviewMouseEnter: g,
+                onPreviewMouseLeave: _
+            }), t[21] = S, t[22] = T, t[23] = x, t[24] = m, t[25] = h, t[26] = g, t[27] = _, t[28] = pe) : pe = t[28];
+            let me;
+            t[29] !== S || t[30] !== v ? (me = S && (0, H.jsx)(St, {
+                onClick: v,
+                className: `shrink-0`
+            }), t[29] = S, t[30] = v, t[31] = me) : me = t[31];
+            let N;
+            t[32] !== a || t[33] !== r || t[34] !== C || t[35] !== i || t[36] !== te ? (N = te && (0, H.jsx)(ct, {
+                code: r,
+                messageId: i,
+                clientThreadId: a,
+                disabled: C
+            }), t[32] = a, t[33] = r, t[34] = C, t[35] = i, t[36] = te, t[37] = N) : N = t[37];
+            let P;
+            t[38] !== D || t[39] !== E || t[40] !== C || t[41] !== w || t[42] !== y ? (P = E && (0, H.jsx)(wt, {
+                isCodeRunning: D,
+                disabled: C || w,
+                onClick: y
+            }), t[38] = D, t[39] = E, t[40] = C, t[41] = w, t[42] = y, t[43] = P) : P = t[43];
+            let F;
+            t[44] !== pe || t[45] !== me || t[46] !== N || t[47] !== P ? (F = (0, H.jsxs)(`div`, {
+                className: `flex flex-row items-center gap-0.5 justify-self-end`,
+                children: [pe, me, N, P]
+            }), t[44] = pe, t[45] = me, t[46] = N, t[47] = P, t[48] = F) : F = t[48];
+            let he;
+            t[49] !== se || t[50] !== j || t[51] !== F ? (he = (0, H.jsxs)(`div`, {
+                className: se,
+                children: [j, F]
+            }), t[49] = se, t[50] = j, t[51] = F, t[52] = he) : he = t[52];
+            let ge;
+            return t[53] !== ae || t[54] !== he ? (ge = (0, H.jsx)(`div`, {
+                className: ae,
+                children: he
+            }), t[53] = ae, t[54] = he, t[55] = ge) : ge = t[55], ge
+        }
+    })),
+    un = e((() => {}));
+
+function dn(e) {
+    "use forget";
+    let t = (0, fn.c)(23),
+        {
+            threadId: n,
+            messageId: r,
+            codeIndex: i,
+            language: a
+        } = e,
+        o = S(n),
+        s = (0, pn.useRef)(0),
+        c = (0, pn.useRef)(0),
+        [l, d] = (0, pn.useState)(null),
+        f;
+    t[0] !== i || t[1] !== r || t[2] !== o ? (f = [`code-block-autosave`, o, r, i], t[0] = i, t[1] = r, t[2] = o, t[3] = f) : f = t[3];
+    let p = `codeblock:${o}:${r}:${i}`,
+        m;
+    t[4] === p ? m = t[5] : (m = {
+        id: p
+    }, t[4] = p, t[5] = m);
+    let h;
+    t[6] !== i || t[7] !== a || t[8] !== r || t[9] !== o ? (h = async e => {
+        let {
+            content: t
+        } = e;
+        !o || i === void 0 || !r || await u.safePost(`/conversation/message/code-blocks`, {
+            requestBody: {
+                message_id: r,
+                conversation_id: o,
+                index: String(i),
+                code_block: {
+                    index: String(i),
+                    content: t,
+                    language: a
+                },
+                updated_at: new Date().toISOString()
+            },
+            authOption: v.SendIfAvailable
+        })
+    }, t[6] = i, t[7] = a, t[8] = r, t[9] = o, t[10] = h) : h = t[10];
+    let g, _;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (g = e => {
+        c.current = e.editVersion, d(null)
+    }, _ = (e, t) => {
+        t.editVersion === s.current && d(e instanceof Error ? e.message : String(e))
+    }, t[11] = g, t[12] = _) : (g = t[11], _ = t[12]);
+    let y = P({
+            mutationKey: f,
+            scope: m,
+            mutationFn: h,
+            onMutate: g,
+            onError: _,
+            onSettled: (e, t, n) => {
+                n.editVersion === c.current && x.isPending() && s.current > n.editVersion && x.flush()
+            },
+            retry: 1,
+            retryDelay: 3e3
+        }),
+        b;
+    t[13] === y ? b = t[14] : (b = e => y.mutateAsync(e), t[13] = y, t[14] = b);
+    let x = Ce(b, 2e3),
+        C;
+    t[15] === x ? C = t[16] : (C = e => {
+        let t = s.current += 1;
+        x({
+            content: e,
+            editVersion: t
+        })
+    }, t[15] = x, t[16] = C);
+    let w = A(C),
+        T;
+    t[17] === x ? T = t[18] : (T = async () => {
+        let e = x.flush();
+        if (e == null) return !0;
+        try {
+            return await e, !0
+        } catch {
+            return !1
+        }
+    }, t[17] = x, t[18] = T);
+    let E = A(T),
+        D;
+    return t[19] !== l || t[20] !== E || t[21] !== w ? (D = {
+        requestSave: w,
+        flushSave: E,
+        error: l
+    }, t[19] = l, t[20] = E, t[21] = w, t[22] = D) : D = t[22], D
+}
+var fn, pn, mn = e((() => {
+    fn = pe(), ne(), ee(), c(), g(), he(), pn = n(j()), He()
+}));
+
+function hn(e) {
+    "use forget";
+    let t = (0, _n.c)(14),
+        {
+            canRunCodeExecution: n,
+            isFullScreen: r,
+            isScreenAtLeastMd: i,
+            runCodeBlockViewTransition: a,
+            fullscreenContainerRef: o,
+            focusRestoreRef: s,
+            setIsFullScreen: c,
+            setIsPreviewFirst: l,
+            setViewState: u
+        } = e,
+        [d, f] = (0, vn.useState)(!1),
+        [p, m] = (0, vn.useState)(0),
+        h;
+    t[0] !== n || t[1] !== s || t[2] !== o || t[3] !== r || t[4] !== i || t[5] !== a || t[6] !== c || t[7] !== l || t[8] !== u ? (h = () => {
+        if (n) {
+            if (r) {
+                f(!0), m(gn);
+                return
+            }
+            o.current?.measurePlaceholderMetrics(), document.activeElement instanceof HTMLElement && (s.current = document.activeElement), a(() => {
+                f(!0), m(U), l(!1), c(!0), u(i ? `split` : `preview`)
+            })
+        }
+    }, t[0] = n, t[1] = s, t[2] = o, t[3] = r, t[4] = i, t[5] = a, t[6] = c, t[7] = l, t[8] = u, t[9] = h) : h = t[9];
+    let g = A(h),
+        _;
+    return t[10] !== d || t[11] !== g || t[12] !== p ? (_ = {
+        isExecutionPaneVisible: d,
+        setIsExecutionPaneVisible: f,
+        requestCodeRun: g,
+        runRequestId: p,
+        setRunRequestId: m
+    }, t[10] = d, t[11] = g, t[12] = p, t[13] = _) : _ = t[13], _
+}
+
+function U(e) {
+    return e + 1
+}
+
+function gn(e) {
+    return e + 1
+}
+var _n, vn, yn = e((() => {
+    _n = pe(), g(), vn = n(j())
+}));
+
+function bn(e) {
+    return e.replaceAll(`\r
+`, `
+`).replaceAll(`\r`, `
+`)
+}
+
+function xn(e) {
+    let t = [];
+    for (let n of e.matchAll(J)) t.push(n[2]);
+    return t
+}
+
+function W(e) {
+    let t = e => e.startsWith(`--- `) || e.startsWith(`+++ `) || e.startsWith(`@@ `) || e.startsWith(` `) || e.startsWith(`+`) || e.startsWith(`-`) || e.startsWith(`\\`),
+        n = [...e];
+    for (; n.length > 0 && !t(n[n.length - 1] ?? ``);) n.pop();
+    return n
+}
+
+function G(e) {
+    let t = e.trim();
+    if (t === `` || t.toUpperCase() === Tn || /^NO_CHANGES[.!]?$/i.test(t)) return null;
+    let n = [t, ...xn(t).map(e => e.trim())],
+        r = t.split(`
+`).findIndex(e => e.startsWith(`--- `) || e.startsWith(`@@ `));
+    r >= 0 && n.push(t.split(`
 `).slice(r).join(`
-`));for(let e of n){if(e.toUpperCase()===Tn)return null;if(e.includes(`@@`))return e}throw Error(`Magic edit diff is missing a unified diff hunk`)}function Sn(e){let t=[],n=!1;for(let r of e){if(r.startsWith(`@@ `)){n=!0,t.push(r);continue}if(r.startsWith(`--- `)||r.startsWith(`+++ `)){n=!1,t.push(r);continue}!n&&kn.test(r)||t.push(r)}return t}function Cn(e){let t=[...e],n=!1;for(let e=0;e<t.length;e++){let r=t[e];if(r.startsWith(`@@ `)){n=!0;continue}if(r.startsWith(`--- `)||r.startsWith(`+++ `)){n=!1;continue}n&&/^[ +\-]\d+\|/.test(r)&&(t[e]=`${r[0]}${r.slice(1).replace(/^\d+\|/,``)}`)}return t}function K(e){let t=[...e];for(let e=0;e<t.length;e++){let n=t[e].match(On);if(n==null)continue;let r=Number(n[1]),i=Number(n[2]),a=n[3]??``,o=0,s=0,c=e+1;for(;c<t.length;c++){let e=t[c];if(e.startsWith(`@@ `)||e.startsWith(`--- `)||e.startsWith(`+++ `))break;if(e.startsWith(`\\`))continue;let n=e[0];if(n===` `){o++,s++;continue}if(n===`-`){o++;continue}if(n===`+`){s++;continue}break}t[e]=`@@ -${r},${o} +${i},${s} @@${a}`,e=c-1}return t}function q(e){let t=G(bn(e));if(t==null)return null;let n=W(Sn(t.trim().split(`
-`))),r=n.findIndex(e=>e.startsWith(`--- `)||e.startsWith(`@@ `));if(r<0)throw Error(`Magic edit diff is missing a unified diff hunk`);let i=n.slice(r);if(i=Cn(i),i=K(i),!i.some(e=>e.startsWith(`@@ `)))throw Error(`Magic edit diff is missing a unified diff hunk`);i[0]?.startsWith(`--- `)&&i[1]?.startsWith(`+++ `)||(i=[En,Dn,...i.filter(e=>!e.startsWith(`--- `)&&!e.startsWith(`+++ `))]);let a=i.join(`
-`);return a.endsWith(`
-`)?a:`${a}\n`}function wn(e,t){let n=q(t);if(n==null)return e;let r=Ye(e,n);if(r===!1)throw Error(`Failed to apply magic edit unified diff`);return r}var Tn,En,Dn,J,On,kn,An=e((()=>{Je(),Tn=`NO_CHANGES`,En=`--- a/code`,Dn=`+++ b/code`,J=/(?:^|\n)(`{3,}|~{3,})[^\n]*\n([\s\S]*?)\n\1(?=\n|$)/g,On=/^@@ -(\d+)(?:,\d+)? \+(\d+)(?:,\d+)? @@(.*)$/,kn=/^(?:diff --git |index |old mode |new mode |new file mode |deleted file mode |similarity index |rename from |rename to )/}));function jn(e){return e.match(/[^\n]*\n|[^\n]+/g)??[]}function Mn(e){return e.reduce((e,t)=>e+t.length,0)}function Y(e,t,n){let r=e[e.length-1];if(r!=null&&r.type===t){r.lines.push(n);return}e.push({type:t,lines:[n]})}function Nn(e,t){let n=e.length,r=t.length,i=Array.from({length:n+1},()=>new Uint32Array(r+1));for(let a=n-1;a>=0;a--)for(let n=r-1;n>=0;n--)i[a][n]=e[a]===t[n]?i[a+1][n+1]+1:Math.max(i[a+1][n],i[a][n+1]);let a=[],o=0,s=0;for(;o<n&&s<r;){if(e[o]===t[s]){Y(a,`equal`,e[o]),o++,s++;continue}i[o+1][s]>=i[o][s+1]?(Y(a,`delete`,e[o]),o++):(Y(a,`insert`,t[s]),s++)}for(;o<n;)Y(a,`delete`,e[o]),o++;for(;s<r;)Y(a,`insert`,t[s]),s++;return a}function Pn(e,t){let n=0,r=Math.min(e.length,t.length);for(;n<r&&e.charCodeAt(n)===t.charCodeAt(n);)n++;let i=0,a=Math.min(e.length,t.length)-n;for(;i<a&&e.charCodeAt(e.length-1-i)===t.charCodeAt(t.length-1-i);)i++;let o=n,s=e.length-i,c=n,l=t.length-i;return o===s&&c===l?[]:[{fromA:o,toA:s,fromB:c,toB:l}]}function Fn(e){let t=[],n=0,r=0;for(let i=0;i<e.length;i++){let a=e[i];if(a.type===`equal`){let e=Mn(a.lines);n+=e,r+=e;continue}let o=n,s=r;for(;i<e.length&&e[i].type!==`equal`;i++){let t=e[i];t.type!==`insert`&&(n+=Mn(t.lines)),t.type!==`delete`&&(r+=Mn(t.lines))}t.push({fromA:o,toA:n,fromB:s,toB:r}),i--}return t}function In(e,t){if(e===t)return[];let n=jn(e),r=jn(t);if(n.length*r.length>Ln)return Pn(e,t);let i=Fn(Nn(n,r));return i.length>0?i:Pn(e,t)}var Ln,Rn=e((()=>{Ln=2e5}));function zn(e,t,n){if(t<0||n<t||n>e.length)throw Error(`Selection indices must satisfy 0 <= start <= end <= len(code)`);return e.slice(0,t)+Bn+e.slice(t,n)+Vn+e.slice(n)}var Bn,Vn,Hn=e((()=>{Bn=`<|magic_edit_start|>`,Vn=`<|magic_edit_end|>`}));function Un(){"use no forget";let e=(0,Wn.useRef)(null),t=P({mutationFn:async({payload:t})=>{e.current?.abort(new DOMException(`Request canceled`,`AbortError`));let n=new AbortController;e.current=n;try{return await u.safePost(`/conversation/message/code-blocks/magic-edit`,{requestBody:t,authOption:v.SendIfAvailable,signal:n.signal})}finally{e.current===n&&(e.current=null)}}});return{cancel:(0,Wn.useCallback)(()=>{e.current?.abort(new DOMException(`Request canceled`,`AbortError`)),e.current=null},[]),...t}}var Wn,Gn=e((()=>{ee(),c(),he(),Wn=n(j())}));function Kn(e,t){let n=e.getSelectionRange();if(n==null||n.from===n.to)return{startIndex:0,endIndex:t.length};let r=Math.max(0,Math.min(n.from,t.length)),i=Math.max(0,Math.min(n.to,t.length));return{startIndex:Math.min(r,i),endIndex:Math.max(r,i)}}function qn(e){"use forget";let t=(0,Yn.c)(44),{baseCode:n,prepareCodeForDisplay:r,resetKey:i,language:a,languageTag:o,serverThreadId:s,editorRef:c,onApplyCode:l,onRequestError:u}=e,[d,f]=(0,Xn.useState)(null),{mutateAsync:p,isPending:m,cancel:h}=Un(),g;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(g=()=>{f(null)},t[0]=g):g=t[0];let _;t[1]===i?_=t[2]:(_=[i],t[1]=i,t[2]=_),(0,Xn.useEffect)(g,_);let v;t[3]!==c||t[4]!==a||t[5]!==o||t[6]!==u||t[7]!==d||t[8]!==p||t[9]!==s?(v=async e=>{if(d!=null)return!1;let t=c.current;if(!t)return!1;let n=t.getCode(),{startIndex:r,endIndex:i}=Kn(t,n),l=zn(n,r,i),m=o??a??`text`;try{let t=(await p({payload:{start_index:r,end_index:i,marked_block_body_markdown:l,language:m,instruction:e,num_variations:1,conversation_id:s,mode:`diff`}})).choices[0];if(t==null)return u(),!1;let a=wn(n,t);return a===n?!1:(f({previousCode:n,nextCode:a}),!0)}catch(e){let t=e;return t instanceof DOMException&&t.name===`AbortError`||u(),!1}},t[3]=c,t[4]=a,t[5]=o,t[6]=u,t[7]=d,t[8]=p,t[9]=s,t[10]=v):v=t[10];let y=A(v),b;t[11]!==l||t[12]!==d?(b=()=>{d!=null&&(l(d.nextCode),f(null))},t[11]=l,t[12]=d,t[13]=b):b=t[13];let x=A(b),S;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(S=()=>{f(null)},t[14]=S):S=t[14];let C=A(S),w=d?.nextCode??n,T;t[15]!==r||t[16]!==w?(T=r?.(w)??w,t[15]=r,t[16]=w,t[17]=T):T=t[17];let E=T,D;bb0:{if(d==null){D=null;break bb0}let e,n,i;t[18]!==d||t[19]!==r?(n=r?.(d.previousCode)??d.previousCode,e=r?.(d.nextCode)??d.nextCode,i=In(n,e).map((t,n)=>{let{fromA:r,toA:i,fromB:a,toB:o}=t;return{id:`magic-edit-${n}`,positionBefore:{start:r,end:i},positionAfter:{start:a,end:o},content:e.slice(a,o)}}),t[18]=d,t[19]=r,t[20]=e,t[21]=n,t[22]=i):(e=t[20],n=t[21],i=t[22]);let a=i,o,s;t[23]===Symbol.for(`react.memo_cache_sentinel`)?(s=[],o=[],t[23]=o,t[24]=s):(o=t[23],s=t[24]);let c;t[25]!==a||t[26]!==e||t[27]!==n?(c={edits:a,commentsBefore:s,commentsAfter:o,contentBefore:n,contentAfter:e},t[25]=a,t[26]=e,t[27]=n,t[28]=c):c=t[28],D=c}let ee=D,te;bb1:{if(ee==null){te=null;break bb1}if(ee.edits.length===0){te=null;break bb1}let e;t[29]===ee.edits?e=t[30]:(e=Math.min(...ee.edits.map(Jn)),t[29]=ee.edits,t[30]=e),te=e}let O=te,ne,re;t[31]!==c||t[32]!==O?(re=()=>{if(O==null)return;let e=requestAnimationFrame(()=>{c.current?.scrollToPosition(O)});return()=>{cancelAnimationFrame(e)}},ne=[c,O],t[31]=c,t[32]=O,t[33]=ne,t[34]=re):(ne=t[33],re=t[34]),(0,Xn.useEffect)(re,ne);let k;return t[35]!==h||t[36]!==m||t[37]!==x||t[38]!==y||t[39]!==C||t[40]!==d||t[41]!==ee||t[42]!==E?(k={pendingMagicEditSuggestion:d,pendingMagicEditTextdocDiff:ee,previewCode:E,isCodeBlockMagicEditPending:m,cancelCodeBlockMagicEdit:h,onCodeBlockMagicEditSubmit:y,onAcceptMagicEditSuggestion:x,onUndoMagicEditSuggestion:C},t[35]=h,t[36]=m,t[37]=x,t[38]=y,t[39]=C,t[40]=d,t[41]=ee,t[42]=E,t[43]=k):k=t[43],k}function Jn(e){return e.positionAfter.start}var Yn,Xn,Zn=e((()=>{Yn=pe(),An(),Rn(),Hn(),Gn(),g(),Xn=n(j())})),Qn=t({CodeBlock:()=>fr});function $n(e,t,n,r,i){return e.threadId===t&&e.messageId===n&&e.codeIndex===r&&e.sourceContent===i}function er(e){try{let t=e=>{if(typeof e!=`object`||!e)return!1;if(Array.isArray(e))return e.some(t);let n=`data`in e?e.data:void 0;return(Array.isArray(n)?n:[n]).some(e=>{if(typeof e!=`object`||!e)return!1;let t=`url`in e?e.url:void 0;return typeof t==`string`||typeof t==`object`&&!!t&&`signal`in t})||Object.entries(e).some(([e,n])=>e!==`values`&&e!==`datasets`&&t(n))};return t(JSON.parse(e))}catch{return!1}}function tr({isFullScreen:e,previewOnly:t,showInlineCopyButtonOnly:n}){return e||t?`none`:n?`copy-only`:`header`}function nr(e){return e===`code`?`preview`:e}function rr(e){return!e}function ir(e){return!e}var ar,X,or,Z,sr,cr,lr,ur,dr,fr,pr,mr=e((()=>{ar=pe(),at(),b(),Ke(),Lt(),Wt(),st(),dt(),pt(),be(),De(),qt(),lt(),tn(),on(),Oe(),ln(),Tt(),Dt(),mt(),un(),Pe(),mn(),yn(),Zn(),w(),Ee(),At(),$e(),Re(),O(),i(),ne(),de(),_(),ye(),y(),C(),I(),ae(),ce(),g(),m(),o(),X=n(j()),or=n(F()),_e(),He(),Z=me(),ge(),sr=a(()=>N(()=>import(`./9d85046f-e85d5eor0wkmhr5z.js`).then(e=>e.CodeBlockEditorPane),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]))),cr=a(()=>N(()=>import(`./ce1c05a6-fesqkicp7lfobeop.js`).then(e=>e.CodeBlockPreviewPane),__vite__mapDeps([19,1,2,3,4,20,5,6,7,8,9,21,22])),{loading:({className:e,previewLanguage:t})=>(0,Z.jsx)(`div`,{"data-code-block-preview-pane":t,className:k(`aspect-video w-full`,e)})}),lr=a(()=>N(()=>import(`./d674ec0a-u06tep750x7114as.js`).then(e=>e.CodeBlockMermaidPreviewActions),__vite__mapDeps([23,1,2,3,4,24,5,6,7,8,9,25,26,27]))),ur=a(()=>N(()=>import(`./374cb62d-if76sx9yrswm6ykp.js`).then(e=>e.CodeBlockExecutionPane),__vite__mapDeps([28,1,2,3,4,29,30,31,5,6,7,8,9,32,33,34,35,36,37,38,39,40,41,42,43,21,44,45,46,47])),{loading:()=>(0,Z.jsx)(`div`,{className:`h-full min-h-0 w-full`})}),dr=a(()=>N(()=>import(`./842a9084-mbvxvhqyj6d0lcob.js`).then(e=>e.CodeBlockMagicEditTool),__vite__mapDeps([48,1,2,3,4,5,6,7,8,9,49]))),fr=e=>{"use forget";let t=(0,ar.c)(5),n=qe(),r=h(),i;t[0]===r?i=t[1]:(i=()=>!r&&!ue().isError,t[0]=r,t[1]=i);let a=l(i),{isInternalPreview:o}=(0,X.useContext)(Le);if(e.gates.mermaidUiImprovementsEnabled&&Gt(e.language)===`mermaid`&&((n||o)&&e.isStreaming||!e.disablePreview&&!n&&!o&&a)){let e;return t[2]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Z.jsx)(Et,{}),t[2]=e):e=t[2],e}let s;return t[3]===e?s=t[4]:(s=(0,Z.jsx)(pr,{...e}),t[3]=e,t[4]=s),s},pr=e=>{"use forget";let t=(0,ar.c)(408),{code:n,bufferStreamingContent:r,clipboardContent:i,language:a,headerTitle:o,className:c,codeIndex:u,threadId:p,messageId:m,isPreviewable:h,isSandboxFilePreview:g,disablePreview:_,previewOnly:v,isStreaming:y,isTurnStreaming:b,isTerminalTurnCodeBlock:C,editable:w,isInteractive:ee,gates:O,mermaidThemeVariablesOverride:ne}=e,ae=r!==void 0&&r,ce=h!==void 0&&h,ue=_!==void 0&&_,de=v!==void 0&&v,j=y!==void 0&&y,M=b!==void 0&&b,pe=C!==void 0&&C,me=w===void 0||w,N=ee===void 0||ee,P=fe(),F=f(),he=d(),ge=qe(),{isInternalPreview:_e,networkPolicy:ve}=(0,X.useContext)(Le),ye=ve===void 0?`none`:ve,be=S(p),Se;t[0]===a?Se=t[1]:(Se=Gt(a),t[0]=a,t[1]=Se);let I=Se,Ee=ke[I??``],De;t[2]!==I||t[3]!==Ee?(De=Ee??{language:I,label:I},t[2]=I,t[3]=Ee,t[4]=De):De=t[4];let{language:L,label:Oe}=De,Ae=!ue&&(ge||_e)&&O.mermaidUiImprovementsEnabled&&L===`mermaid`,Me=(0,X.useRef)(null),Pe=(0,X.useRef)(null),Fe=(0,X.useRef)(null),Re=(0,X.useRef)(null),ze=(0,X.useRef)(null),Be=(0,X.useRef)(null),He=(0,X.useRef)(null),Ue=(0,X.useId)(),[R,We]=(0,X.useState)(!1),[Ge,Ke]=(0,X.useState)(Ae?`preview`:`code`),[Je,Ye]=(0,X.useState)(`ready`),[Xe,Ze]=(0,X.useState)(!1),[$e,et]=(0,X.useState)(!1),[tt,nt]=(0,X.useState)(!1),[rt,it]=(0,X.useState)(`unattempted`),[at,st]=(0,X.useState)(!1),[lt,dt]=(0,X.useState)(!1),[pt,mt]=(0,X.useState)(!1),[bt,xt]=(0,X.useState)(null),St,z,Ct,B,V,wt,Tt;if(t[5]!==u||t[6]!==L||t[7]!==bt||t[8]!==m||t[9]!==n||t[10]!==p){Ct=n.replace(/\n$/g,``);let e;bb0:{if(p==null||m==null){e=void 0;break bb0}let n;if(t[18]!==u||t[19]!==m||t[20]!==p){let e=oe(p);n=ie.getTree(e).getMaybeMessage(m)?.metadata?.code_blocks?.[u]?.content,t[18]=u,t[19]=m,t[20]=p,t[21]=n}else n=t[21];e=n}let r=e;V=r??Ct;let i=bt!=null&&$n(bt.identity,p,m,u,V);z=i?bt.content:V,St=r!==void 0||i;let a;t[22]===L?a=t[23]:(a=e=>L===`mermaid`?Ot(e):e,t[22]=L,t[23]=a),B=a,wt=B(z),Tt=B(Ct),t[5]=u,t[6]=L,t[7]=bt,t[8]=m,t[9]=n,t[10]=p,t[11]=St,t[12]=z,t[13]=Ct,t[14]=B,t[15]=V,t[16]=wt,t[17]=Tt}else St=t[11],z=t[12],Ct=t[13],B=t[14],V=t[15],wt=t[16],Tt=t[17];let Et=wt!==Tt,Dt;t[24]!==z||t[25]!==B?(Dt=B(z),t[24]=z,t[25]=B,t[26]=Dt):Dt=t[26];let At=Dt,jt=St?z:i??Ct,Mt;t[27]!==jt||t[28]!==B?(Mt=B(jt),t[27]=jt,t[28]=B,t[29]=Mt):Mt=t[29];let Nt=Mt,Pt,Ft;t[30]!==u||t[31]!==m||t[32]!==V||t[33]!==p?(Pt=()=>{xt(e=>e!=null&&!$n(e.identity,p,m,u,V)?null:e)},Ft=[u,m,V,p],t[30]=u,t[31]=m,t[32]=V,t[33]=p,t[34]=Pt,t[35]=Ft):(Pt=t[34],Ft=t[35]),(0,X.useEffect)(Pt,Ft);let Lt;t[36]!==u||t[37]!==m||t[38]!==I||t[39]!==p?(Lt={threadId:p,messageId:m,codeIndex:u,language:I},t[36]=u,t[37]=m,t[38]=I,t[39]=p,t[40]=Lt):Lt=t[40];let{requestSave:Rt,flushSave:zt}=dn(Lt),Bt;t[41]!==u||t[42]!==m||t[43]!==p?(Bt=e=>{if(p==null||m==null)return!1;let t=je(se(p),m);if(!t)return!1;let n=`${u}`;return D(p,r=>s.updateTree(r,r=>r.updateNodeMessageMetadata(t.id,{code_blocks:{...t.metadata?.code_blocks??{},[n]:{content:e}}}))),!0},t[41]=u,t[42]=m,t[43]=p,t[44]=Bt):Bt=t[44];let Ht=A(Bt),Ut;t[45]!==u||t[46]!==At||t[47]!==m||t[48]!==B||t[49]!==Rt||t[50]!==V||t[51]!==p||t[52]!==Ht?(Ut=e=>{let t=e.doc.toString();if(B(t)===At)return;let n=Ht(t);xt({identity:{threadId:p,messageId:m,codeIndex:u,sourceContent:V},content:t}),n&&Rt(t)},t[45]=u,t[46]=At,t[47]=m,t[48]=B,t[49]=Rt,t[50]=V,t[51]=p,t[52]=Ht,t[53]=Ut):Ut=t[53];let Wt=A(Ut),Kt=Ce(Wt,300),qt;t[54]!==Kt||t[55]!==zt?(qt=()=>{Kt.flush(),zt()},t[54]=Kt,t[55]=zt,t[56]=qt):qt=t[56];let Jt=A(qt),Yt;t[57]!==u||t[58]!==zt||t[59]!==m||t[60]!==B||t[61]!==Rt||t[62]!==V||t[63]!==p||t[64]!==Ht?(Yt=e=>{let t=B(e),n=Ht(t);xt({identity:{threadId:p,messageId:m,codeIndex:u,sourceContent:V},content:t}),n&&(Rt(t),zt())},t[57]=u,t[58]=zt,t[59]=m,t[60]=B,t[61]=Rt,t[62]=V,t[63]=p,t[64]=Ht,t[65]=Yt):Yt=t[65];let Xt=A(Yt),Zt;t[66]!==P||t[67]!==F?(Zt=()=>{F.danger(P.formatMessage({id:`codeBlock.magicEdit.error.failed`,defaultMessage:`An error occurred while applying edits.`}))},t[66]=P,t[67]=F,t[68]=Zt):Zt=t[68];let en=A(Zt),tn;t[69]!==Xt||t[70]!==L||t[71]!==z||t[72]!==en||t[73]!==B||t[74]!==I||t[75]!==be||t[76]!==V?(tn={baseCode:z,prepareCodeForDisplay:B,resetKey:V,language:I,languageTag:L,serverThreadId:be,editorRef:Fe,onApplyCode:Xt,onRequestError:en},t[69]=Xt,t[70]=L,t[71]=z,t[72]=en,t[73]=B,t[74]=I,t[75]=be,t[76]=V,t[77]=tn):tn=t[77];let{pendingMagicEditSuggestion:on,pendingMagicEditTextdocDiff:sn,previewCode:H,isCodeBlockMagicEditPending:ln,cancelCodeBlockMagicEdit:un,onCodeBlockMagicEditSubmit:fn,onAcceptMagicEditSuggestion:pn,onUndoMagicEditSuggestion:mn}=qn(tn),U=l(T),gn=(0,X.useRef)(U),_n=Ee?.previewLanguage??L,vn=ft(_n,H),yn=vn===`vega`||vn===`vega-lite`,bn;t[78]!==_e||t[79]!==yn||t[80]!==H?(bn=_e&&yn&&er(H),t[78]=_e,t[79]=yn,t[80]=H,t[81]=bn):bn=t[81];let xn=!ue&&(!_e||vn!=null&&vn!==`react`&&vn!==`recharts`&&vn!==`threejs`&&!bn)&&(ge||_e||vn===`svg`),W=xn?vn:null,G=xn&&de,Sn=!!O.mermaidUiImprovementsEnabled,Cn=o??(W===`svg`?`SVG`:Oe),K=!G&&(Ge===`code`||Ge===`split`),q=G||Ge===`preview`||Ge===`split`,wn=Ee?.inlineCopyOnly||L==null&&Cn==null,Tn=nn(W),En;t[82]===L?En=t[83]:(En=gt(L),t[82]=L,t[83]=En);let Dn=En,J=W!=null,On=_t({previewLanguage:W,languageTag:L,isStreaming:j}),kn=On?z:void 0,An;t[84]===kn?An=t[85]:(An={includeElementText:!1,reportMatchDespiteCssHighlight:!0,rootRef:Me,searchableText:kn},t[84]=kn,t[85]=An);let jn=Qe(An),Mn=N&&ge&&Dn!=null,Y=Mn&&!J,Nn=G&&_n===`recharts`&&O.widgetFeedbackEnabled===!0,Pn=!R&&J&&!j&&Nn&&N&&pe,Fn=Mn&&!j&&!M,In=m!=null,Ln=ht(W,H)&&!j&&rt===`unattempted`&&(ce||Ne()),Rn=G||W===`svg`||(W===`vega`||W===`vega-lite`)&&!j||W===`mermaid`&&!j,[zn,Bn]=(0,X.useState)(Rn),Vn=Tn!=null&&q,Hn=Xe||j||(W===`vega`||W===`vega-lite`||W===`threejs`||W===`recharts`)&&Je!==`ready`,Un=!G&&me&&N,Wn=O.magicEditEnabled&&Un,Gn=!G&&Un&&O.sharingEnabled&&J,Kn=!_e&&(W===`html`||W===`react`),Jn;t[86]===Symbol.for(`react.memo_cache_sentinel`)?(Jn=()=>{Ze(!1),dt(!1)},t[86]=Jn):Jn=t[86];let Yn;t[87]!==H||t[88]!==W?(Yn=[H,W],t[87]=H,t[88]=W,t[89]=Yn):Yn=t[89],(0,X.useEffect)(Jn,Yn);let Xn;t[90]===W?Xn=t[91]:(Xn=()=>{if(W===`vega`||W===`vega-lite`||W===`threejs`||W===`recharts`){Ye(`loading`);return}Ye(`ready`)},t[90]=W,t[91]=Xn);let Zn;t[92]!==H||t[93]!==W?(Zn=[H,W],t[92]=H,t[93]=W,t[94]=Zn):Zn=t[94],(0,X.useEffect)(Xn,Zn);let Qn;t[95]===Ln?Qn=t[96]:(Qn=(e,t)=>{if(e?Ye(`ready`):t===`failure`&&Ye(`failed`),Ln){if(t===`failure`){it(`settled`),mt(!1);return}e&&(it(`settled`),mt(!1),Ke(nr))}},t[95]=Ln,t[96]=Qn);let fr=A(Qn),pr;t[97]!==Sn||t[98]!==P||t[99]!==he||t[100]!==Xe||t[101]!==q||t[102]!==L||t[103]!==H||t[104]!==Tn||t[105]!==W||t[106]!==F?(pr=()=>{if(Tn==null||!q||Xe)return;Ze(!0);let e=()=>{F.danger(Tn===`code`?P.formatMessage({id:`codeBlock.previewExport.code.error`,defaultMessage:`Failed to export code file.`}):P.formatMessage({id:`codeBlock.previewExport.error`,defaultMessage:`Failed to export PNG.`}),{duration:4,hasCloseButton:!0,toastId:`code_block_preview_export_failed`}),Ze(!1)};if(Tn===`code`){if(W!==`html`&&W!==`react`){e();return}try{we(new Blob([H],{type:an(W)}),rn(W,L)),F.success(P.formatMessage({id:`codeBlock.previewExport.code.success`,defaultMessage:`Downloaded code file.`})),Ze(!1)}catch{e()}return}let t=document.fonts?document.fonts.ready:Promise.resolve();(async()=>{try{await t,await re.yield();let n;if(W===`mermaid`)n=await $t({source:H,chatTheme:le(),enableMermaidUiImprovements:Sn,isDarkMode:he});else{let t;if(Re.current&&(t=await Re.current.captureScreenshotDataUrl()),!t){e();return}await re.yield(),n=await Qt(t)}await re.yield();let r=`vega-chart.png`;W===`mermaid`&&(r=`mermaid-diagram.png`),we(n,r),F.success(P.formatMessage({id:`codeBlock.previewExport.success`,defaultMessage:`Downloaded PNG.`})),Ze(!1)}catch{e()}})()},t[97]=Sn,t[98]=P,t[99]=he,t[100]=Xe,t[101]=q,t[102]=L,t[103]=H,t[104]=Tn,t[105]=W,t[106]=F,t[107]=pr):pr=t[107];let mr=A(pr),hr,gr;t[108]===Rn?(hr=t[109],gr=t[110]):(hr=()=>{Rn&&Ke(`preview`)},gr=[Rn],t[108]=Rn,t[109]=hr,t[110]=gr),(0,X.useEffect)(hr,gr);let _r;t[111]===Symbol.for(`react.memo_cache_sentinel`)?(_r=e=>{(0,or.flushSync)(()=>{et(!0)}),Ve({forceFlushSync:!0,className:`code-block-fullscreen-transition`,update:e}).finished.finally(()=>{et(!1)})},t[111]=_r):_r=t[111];let vr=A(_r),yr,br;t[112]!==Ue||t[113]!==R?(yr=()=>{if(R){xe(Ue);return}Te(Ue)},br=[Ue,R],t[112]=Ue,t[113]=R,t[114]=yr,t[115]=br):(yr=t[114],br=t[115]),(0,X.useEffect)(yr,br);let xr,Sr;t[116]===Ue?(xr=t[117],Sr=t[118]):(xr=()=>()=>{Te(Ue)},Sr=[Ue],t[116]=Ue,t[117]=xr,t[118]=Sr),(0,X.useEffect)(xr,Sr);let Cr;t[119]!==Fn||t[120]!==R||t[121]!==U||t[122]!==vr?(Cr={canRunCodeExecution:Fn,isFullScreen:R,isScreenAtLeastMd:U,runCodeBlockViewTransition:vr,fullscreenContainerRef:Be,focusRestoreRef:He,setIsFullScreen:We,setIsPreviewFirst:Bn,setViewState:Ke},t[119]=Fn,t[120]=R,t[121]=U,t[122]=vr,t[123]=Cr):Cr=t[123];let{isExecutionPaneVisible:wr,setIsExecutionPaneVisible:Tr,requestCodeRun:Er,runRequestId:Dr,setRunRequestId:Or}=hn(Cr),kr;t[124]!==q||t[125]!==Ln?(kr=()=>q?`visible`:Ln?`auto`:`hover`,t[124]=q,t[125]=Ln,t[126]=kr):kr=t[126];let Ar=A(kr),jr=be??p,Mr;t[127]!==Ar||t[128]!==g||t[129]!==m||t[130]!==_n||t[131]!==jr?(Mr={conversationId:jr,messageId:m,codeBlockLanguage:_n,isSandboxFilePreview:g,getPreviewStartMode:Ar},t[127]=Ar,t[128]=g,t[129]=m,t[130]=_n,t[131]=jr,t[132]=Mr):Mr=t[132];let Nr=Mr,Pr;t[133]!==ce||t[134]!==J||t[135]!==m||t[136]!==I||t[137]!==p?(Pr=(e,t)=>{E.logStructuredEvent(e,{conversationId:p,messageId:m,language:I,modelPreviewable:ce,clientPreviewable:J}),x.count(te.CODE_BLOCKS,t)},t[133]=ce,t[134]=J,t[135]=m,t[136]=I,t[137]=p,t[138]=Pr):Pr=t[138];let Q=A(Pr),Fr;t[139]===Q?Fr=t[140]:(Fr=()=>{Q(`ChatgptCodeBlockRunButtonClicked`,`chatgpt_code_block_run_button_clicked`)},t[139]=Q,t[140]=Fr);let Ir=A(Fr),Lr,Rr;t[141]!==Y||t[142]!==wr||t[143]!==R||t[144]!==zn||t[145]!==U?(Lr=()=>{if(!R){gn.current=U;return}gn.current!==U&&(gn.current=U,Ke(e=>U?e===`code`||e===`preview`&&!zn?`split`:e:e===`split`?Y&&wr||zn?`preview`:`code`:e))},Rr=[Y,wr,R,zn,U],t[141]=Y,t[142]=wr,t[143]=R,t[144]=zn,t[145]=U,t[146]=Lr,t[147]=Rr):(Lr=t[146],Rr=t[147]),(0,X.useEffect)(Lr,Rr);let zr;t[148]!==tt||t[149]!==Q||t[150]!==Er?(zr=()=>{if(tt){ze.current?.stop();return}Q(`ChatgptCodeBlockRunButtonClicked`,`chatgpt_code_block_run_button_clicked`),Er()},t[148]=tt,t[149]=Q,t[150]=Er,t[151]=zr):zr=t[151];let Br=A(zr),$=J?q:Y?wr:!1,Vr;t[152]===Symbol.for(`react.memo_cache_sentinel`)?(Vr=()=>{st(!1)},t[152]=Vr):Vr=t[152];let Hr=A(Vr),Ur;t[153]!==Hr||t[154]!==U||t[155]!==Kn||t[156]!==at?(Ur=()=>{if(Kn){if(!at){x.count(te.CODE_BLOCKS,`chatgpt_code_block_console_opened`),Ke(e=>e===`code`?U?`split`:`preview`:e),st(!0),requestAnimationFrame(()=>{Re.current?.focus()});return}Hr()}},t[153]=Hr,t[154]=U,t[155]=Kn,t[156]=at,t[157]=Ur):Ur=t[157];let Wr=A(Ur),Gr;t[158]!==un||t[159]!==Sn||t[160]!==Y||t[161]!==zn||t[162]!==W||t[163]!==vr||t[164]!==Tr||t[165]!==Or?(Gr=()=>{ze.current?.stop(),nt(!1),Tr(!1),st(!1),dt(!1),Or(0),un(),vr(()=>{We(!1),Ke(e=>Y?`code`:Sn&&W===`mermaid`?`preview`:e===`split`?zn?`preview`:`code`:e)})},t[158]=un,t[159]=Sn,t[160]=Y,t[161]=zn,t[162]=W,t[163]=vr,t[164]=Tr,t[165]=Or,t[166]=Gr):Gr=t[166];let Kr=A(Gr),qr,Jr;t[167]!==Sn||t[168]!==K||t[169]!==wr||t[170]!==R||t[171]!==q||t[172]!==W?(qr=()=>{if(!R){let e=He.current;e?.isConnected&&e.focus(),He.current=null;return}let e=requestAnimationFrame(()=>{if(Sn&&W===`mermaid`&&K&&Fe.current!=null){Fe.current.focus();return}if((!Sn||W!==`mermaid`||q)&&Re.current!=null){Re.current.focus();return}if(wr){ze.current?.focus();return}Pe.current?.focus()});return()=>{cancelAnimationFrame(e)}},Jr=[Sn,K,wr,R,q,W],t[167]=Sn,t[168]=K,t[169]=wr,t[170]=R,t[171]=q,t[172]=W,t[173]=qr,t[174]=Jr):(qr=t[173],Jr=t[174]),(0,X.useEffect)(qr,Jr);let Yr=j&&!Rn,Xr;t[175]!==Q||t[176]!==vr?(Xr=()=>{Q(`ChatgptCodeBlockFullScreenButtonClicked`,`chatgpt_code_block_full_screen_button_clicked`),Be.current?.measurePlaceholderMetrics(),document.activeElement instanceof HTMLElement&&(He.current=document.activeElement),vr(()=>{Bn(!0),We(!0)})},t[175]=Q,t[176]=vr,t[177]=Xr):Xr=t[177];let Zr=A(Xr),Qr;t[178]!==q||t[179]!==J||t[180]!==U||t[181]!==j||t[182]!==M||t[183]!==Q||t[184]!==vr?(Qr=()=>{Q(`ChatgptCodeBlockEditButtonClicked`,`chatgpt_code_block_edit_button_clicked`),!(M||j||!J)&&(Be.current?.measurePlaceholderMetrics(),document.activeElement instanceof HTMLElement&&(He.current=document.activeElement),vr(()=>{We(!0),Bn(q),Ke(U?`split`:`code`)}))},t[178]=q,t[179]=J,t[180]=U,t[181]=j,t[182]=M,t[183]=Q,t[184]=vr,t[185]=Qr):Qr=t[185];let $r=A(Qr),ei;t[186]===Yr?ei=t[187]:(ei=()=>{Yr||(mt(!1),Ke(`code`))},t[186]=Yr,t[187]=ei);let ti=A(ei),ni;t[188]!==Yr||t[189]!==Q?(ni=async()=>{Yr||(Q(`ChatgptCodeBlockPreviewButtonClicked`,`chatgpt_code_block_preview_button_clicked`),await cr.prefetch(),Ke(`preview`),(Me.current?.getBoundingClientRect().top??0)<=0&&Me.current?.scrollIntoView({behavior:`smooth`}))},t[188]=Yr,t[189]=Q,t[190]=ni):ni=t[190];let ri=A(ni),ii;t[191]!==Y||t[192]!==U||t[193]!==Tr?(ii=()=>{Y&&Tr(rr),Ke(e=>U?e===`code`?`split`:`code`:e===`code`?`preview`:`code`)},t[191]=Y,t[192]=U,t[193]=Tr,t[194]=ii):ii=t[194];let ai=A(ii),oi;t[195]!==Y||t[196]!==U||t[197]!==Tr?(oi=()=>{Y&&!U&&Tr(ir),Ke(e=>U?e===`preview`?`split`:`preview`:e===`code`?`preview`:`code`)},t[195]=Y,t[196]=U,t[197]=Tr,t[198]=oi):oi=t[198];let si=A(oi),ci;t[199]!==q||t[200]!==Yr||t[201]!==J?(ci=()=>{!J||q||Yr||(cr.prefetch(),mt(!0))},t[199]=q,t[200]=Yr,t[201]=J,t[202]=ci):ci=t[202];let li=A(ci),ui;t[203]===q?ui=t[204]:(ui=()=>{q||mt(!1)},t[203]=q,t[204]=ui);let di=A(ui),fi=Y&&R&&Dn!=null,pi=Sn&&W===`mermaid`&&q&&!R&&!G,mi;t[205]!==R||t[206]!==G||t[207]!==pi||t[208]!==wn?(mi=pi?`none`:tr({isFullScreen:R,previewOnly:G,showInlineCopyButtonOnly:wn}),t[205]=R,t[206]=G,t[207]=pi,t[208]=wn,t[209]=mi):mi=t[209];let hi=mi,gi=!pi&&!(hi===`header`&&U),_i=!pi,vi;t[210]!==Nt||t[211]!==hi||t[212]!==tt||t[213]!==Mn||t[214]!==ce||t[215]!==Yr||t[216]!==J||t[217]!==$||t[218]!==j||t[219]!==M||t[220]!==m||t[221]!==Zr||t[222]!==li||t[223]!==di||t[224]!==Br||t[225]!==ti||t[226]!==ri||t[227]!==Cn||t[228]!==p?(vi=hi===`header`?(0,Z.jsx)(cn,{messageId:m,clientThreadId:p,language:Cn,code:Nt,isModelPreviewable:ce,isPreviewable:J,isStreaming:j,isTurnStreaming:M,isPreviewToggleDisabled:Yr,isExecutable:Mn,isCodeRunning:tt,isPreviewOpen:$,onCodeClick:ti,onPreviewClick:ri,onPreviewMouseEnter:li,onPreviewMouseLeave:di,onFullScreenClick:Zr,onRunClick:Br}):null,t[210]=Nt,t[211]=hi,t[212]=tt,t[213]=Mn,t[214]=ce,t[215]=Yr,t[216]=J,t[217]=$,t[218]=j,t[219]=M,t[220]=m,t[221]=Zr,t[222]=li,t[223]=di,t[224]=Br,t[225]=ti,t[226]=ri,t[227]=Cn,t[228]=p,t[229]=vi):vi=t[229];let yi=vi,bi;t[230]!==c||t[231]!==Hr||t[232]!==u||t[233]!==Nr||t[234]!==O.mermaidUiImprovementsEnabled||t[235]!==In||t[236]!==hi||t[237]!==$e||t[238]!==Et||t[239]!==R||t[240]!==_e||t[241]!==q||t[242]!==J||t[243]!==j||t[244]!==Kn||t[245]!==at||t[246]!==ne||t[247]!==m||t[248]!==ye||t[249]!==Zr||t[250]!==fr||t[251]!==H||t[252]!==W||t[253]!==G||t[254]!==Ln||t[255]!==pt||t[256]!==pi||t[257]!==_i||t[258]!==gi||t[259]!==p||t[260]!==Je?(bi=In&&J&&(q||pt||Ln)?(0,Z.jsx)(cr,{messageId:m,clientThreadId:p,codeIndex:u,previewCode:H,previewLanguage:W,previewState:Je,..._e?{hasNetworkAccess:ye!==`none`&&void 0,isSharedSurface:!0}:{},isCodeEdited:Et,analyticsContext:Nr,isFullscreen:R,isStreaming:j,previewOnly:G,previewRef:Re,onWebPreviewReadyChange:fr,isConsoleEnabled:Kn,isConsoleOpen:Kn&&at,onConsoleClose:Hr,onConsoleErrorOutputChange:dt,onFullScreenClick:Zr,showFullScreenButton:gi,showCardChrome:_i,isInline:pi,enableMermaidUiImprovements:O.mermaidUiImprovementsEnabled,mermaidThemeVariablesOverride:ne,className:k(c,hi===`header`&&`rounded-none! border-transparent! bg-transparent! shadow-none!`,(!(pt||Ln)||q)&&`relative`,(pt||Ln)&&!q&&`pointer-events-none absolute top-48 opacity-0`,$e&&`[view-transition-name:code-block-preview-pane]`)}):null,t[230]=c,t[231]=Hr,t[232]=u,t[233]=Nr,t[234]=O.mermaidUiImprovementsEnabled,t[235]=In,t[236]=hi,t[237]=$e,t[238]=Et,t[239]=R,t[240]=_e,t[241]=q,t[242]=J,t[243]=j,t[244]=Kn,t[245]=at,t[246]=ne,t[247]=m,t[248]=ye,t[249]=Zr,t[250]=fr,t[251]=H,t[252]=W,t[253]=G,t[254]=Ln,t[255]=pt,t[256]=pi,t[257]=_i,t[258]=gi,t[259]=p,t[260]=Je,t[261]=bi):bi=t[261];let xi=bi,Si=null;if(xi!=null){if(Si=xi,pi){let e;t[262]!==$r||t[263]!==mr?(e=(0,Z.jsx)(`div`,{className:`absolute end-2 top-2 z-10`,children:(0,Z.jsx)(lr,{onDownload:mr,onOpenEditor:$r})}),t[262]=$r,t[263]=mr,t[264]=e):e=t[264];let n;t[265]!==xi||t[266]!==e?(n=(0,Z.jsxs)(`div`,{className:`group/app-widget group/keyboard-or-hover relative`,children:[e,xi]}),t[265]=xi,t[266]=e,t[267]=n):n=t[267],Si=n}}else if(fi){let e=`${m}:${u}:code-execution`,n=j||M,r=$e&&`[view-transition-name:code-block-preview-pane]`,i;t[268]!==c||t[269]!==r?(i=k(c,r),t[268]=c,t[269]=r,t[270]=i):i=t[270];let a;t[271]!==Fn||t[272]!==Dn||t[273]!==Nt||t[274]!==Nr||t[275]!==Et||t[276]!==j||t[277]!==z||t[278]!==m||t[279]!==Ir||t[280]!==Dr||t[281]!==e||t[282]!==n||t[283]!==i||t[284]!==p?(a=(0,Z.jsx)(ur,{id:e,clientThreadId:p,messageId:m,code:z,clipboardContent:Nt,language:Dn,isCodeEdited:Et,analyticsContext:Nr,runRequestId:Dr,onIsCodeRunningChange:nt,onRunClick:Ir,showRunButton:Fn,isRunDisabled:n,isCopyDisabled:j,isFullscreen:!0,ref:ze,className:i}),t[271]=Fn,t[272]=Dn,t[273]=Nt,t[274]=Nr,t[275]=Et,t[276]=j,t[277]=z,t[278]=m,t[279]=Ir,t[280]=Dr,t[281]=e,t[282]=n,t[283]=i,t[284]=p,t[285]=a):a=t[285],Si=a}let Ci;t[286]!==Nt||t[287]!==hi||t[288]!==j||t[289]!==m||t[290]!==p?(Ci=hi===`copy-only`&&(0,Z.jsx)(`div`,{className:`pointer-events-none absolute end-1.5 top-1 z-2 md:end-2 md:top-1`,children:(0,Z.jsx)(ct,{code:Nt,messageId:m,clientThreadId:p,disabled:j,className:`pointer-events-auto`})}),t[286]=Nt,t[287]=hi,t[288]=j,t[289]=m,t[290]=p,t[291]=Ci):Ci=t[291];let wi;t[292]!==ae||t[293]!==c||t[294]!==u||t[295]!==Kt||t[296]!==At||t[297]!==$e||t[298]!==K||t[299]!==Un||t[300]!==Y||t[301]!==R||t[302]!==J||t[303]!==$||t[304]!==j||t[305]!==M||t[306]!==L||t[307]!==m||t[308]!==pn||t[309]!==Jt||t[310]!==Wt||t[311]!==mn||t[312]!==on||t[313]!==sn||t[314]!==G||t[315]!==On||t[316]!==wn||t[317]!==p?(wi=!G&&(K||R)&&(0,Z.jsx)(ot,{enabled:ae&&j,streamId:`${p??``}:${m??``}:${u}`,text:At,children:e=>(0,Z.jsx)(sr,{messageId:m,codeIndex:u,latestEditedCode:e,languageTag:L,isFullScreen:R,isReadOnly:M||j||!R||!Un||!J&&!Y,isPreviewing:$,isStreaming:j,useFixedInlineHeight:On,onChange:L===`mermaid`?Wt:Kt,onBlur:Jt,hasPendingMagicEditSuggestion:on!=null,onUndoMagicEditSuggestion:mn,onAcceptMagicEditSuggestion:pn,pendingMagicEditTextdocDiff:sn,editorRef:Fe,className:k(c,!R&&wn&&`pe-11 pt-3`,$e&&R&&!K&&`invisible`,$e&&`[view-transition-name:code-block-code-pane]`)})}),t[292]=ae,t[293]=c,t[294]=u,t[295]=Kt,t[296]=At,t[297]=$e,t[298]=K,t[299]=Un,t[300]=Y,t[301]=R,t[302]=J,t[303]=$,t[304]=j,t[305]=M,t[306]=L,t[307]=m,t[308]=pn,t[309]=Jt,t[310]=Wt,t[311]=mn,t[312]=on,t[313]=sn,t[314]=G,t[315]=On,t[316]=wn,t[317]=p,t[318]=wi):wi=t[318];let Ti;t[319]!==Ci||t[320]!==wi?(Ti=(0,Z.jsxs)(Z.Fragment,{children:[Ci,wi]}),t[319]=Ci,t[320]=wi,t[321]=Ti):Ti=t[321];let Ei=Ti,Di=On?`boundary`:void 0,Oi=R&&(J||Y),ki=!R||$,Ai=jn?Ie:void 0,ji;t[322]!==Ei||t[323]!==hi||t[324]!==R||t[325]!==U||t[326]!==$||t[327]!==pi?(ji=hi===`header`||pi?(0,Z.jsx)(`div`,{className:k($&&`h-full`),children:Ei}):(0,Z.jsx)(Vt,{className:k($&&`h-full border-0!`),visible:!$&&(!R||U),children:Ei}),t[322]=Ei,t[323]=hi,t[324]=R,t[325]=U,t[326]=$,t[327]=pi,t[328]=ji):ji=t[328];let Mi;t[329]!==K||t[330]!==Si||t[331]!==Di||t[332]!==Oi||t[333]!==ki||t[334]!==Ai||t[335]!==ji?(Mi=(0,Z.jsxs)(vt,{"data-custom-highlighting-behavior":Di,isActive:Oi,isLeftPaneVisible:K,isRightPaneVisible:ki,ref:Me,className:Ai,children:[ji,Si]}),t[329]=K,t[330]=Si,t[331]=Di,t[332]=Oi,t[333]=ki,t[334]=Ai,t[335]=ji,t[336]=Mi):Mi=t[336];let Ni=Mi,Pi=on!=null,Fi=J&&$?Re:Fe,Ii;t[337]!==Kr||t[338]!==Dn||t[339]!==u||t[340]!==Nt||t[341]!==zt||t[342]!==lt||t[343]!==K||t[344]!==Y||t[345]!==R||t[346]!==Hn||t[347]!==Vn||t[348]!==Yr||t[349]!==J||t[350]!==$||t[351]!==Gn||t[352]!==j||t[353]!==Kn||t[354]!==at||t[355]!==m||t[356]!==si||t[357]!==ai||t[358]!==mr||t[359]!==Wr||t[360]!==Tn||t[361]!==G||t[362]!==Cn||t[363]!==p?(Ii=R&&(0,Z.jsx)(ut,{code:Nt,showCopyButton:Dn==null&&!G,messageId:m,clientThreadId:p,codeIndex:u,isStreaming:j,isPreviewOpen:$,isExecutionPaneOnly:Y,isPreviewDisabled:!(J||Y)||Yr,showCodeToggle:!G,isPreviewExportable:Vn,isPreviewExportDisabled:Hn,previewExportKind:Tn??void 0,showConsoleToggle:Kn,isConsoleOpen:Kn&&at,hasConsoleErrorOutput:Kn&&lt,isCodeOpen:K,onPreviewClick:ai,onPreviewExportClick:mr,onPreviewHover:J?cr.prefetch:void 0,onConsoleToggle:Wr,onCodeClick:si,isShareable:Gn,flushSave:zt,language:Cn,onCloseClick:Kr,closeButtonRef:Pe}),t[337]=Kr,t[338]=Dn,t[339]=u,t[340]=Nt,t[341]=zt,t[342]=lt,t[343]=K,t[344]=Y,t[345]=R,t[346]=Hn,t[347]=Vn,t[348]=Yr,t[349]=J,t[350]=$,t[351]=Gn,t[352]=j,t[353]=Kn,t[354]=at,t[355]=m,t[356]=si,t[357]=ai,t[358]=mr,t[359]=Wr,t[360]=Tn,t[361]=G,t[362]=Cn,t[363]=p,t[364]=Ii):Ii=t[364];let Li=R&&`flex min-h-0 flex-1 flex-col`,Ri=!R&&`contents`,zi;t[365]!==Li||t[366]!==Ri?(zi=k(Li,Ri),t[365]=Li,t[366]=Ri,t[367]=zi):zi=t[367];let Bi;t[368]!==yi||t[369]!==R||t[370]!==$||t[371]!==G||t[372]!==pi||t[373]!==wn||t[374]!==Ni?(Bi=!G&&!wn&&!pi?(0,Z.jsxs)(Vt,{visible:!R,className:k(R&&`flex min-h-0 flex-1 flex-col border-0!`),contentClassName:k(!R&&`relative`,R&&`flex min-h-0 flex-1 flex-col`),children:[!R&&(0,Z.jsxs)(Z.Fragment,{children:[yi,!$&&(0,Z.jsx)(`div`,{className:`pointer-events-none absolute inset-x-4 top-12 bottom-4`,children:(0,Z.jsx)(kt,{top:`calc(var(--sticky-padding-top) + 48px)`,height:1,className:`z-1!`})})]}),Ni]}):Ni,t[368]=yi,t[369]=R,t[370]=$,t[371]=G,t[372]=pi,t[373]=wn,t[374]=Ni,t[375]=Bi):Bi=t[375];let Vi;t[376]!==zi||t[377]!==Bi?(Vi=(0,Z.jsx)(`div`,{className:zi,children:Bi}),t[376]=zi,t[377]=Bi,t[378]=Vi):Vi=t[378];let Hi;t[379]!==un||t[380]!==Kr||t[381]!==ln||t[382]!==R||t[383]!==Wn||t[384]!==j||t[385]!==M||t[386]!==fn||t[387]!==on?(Hi=Wn&&(0,Z.jsx)(dr,{isOpen:R&&on==null,isLoading:ln,onSubmit:fn,onCancelRequest:un,onClose:Kr,disabled:M||j||on!=null}),t[379]=un,t[380]=Kr,t[381]=ln,t[382]=R,t[383]=Wn,t[384]=j,t[385]=M,t[386]=fn,t[387]=on,t[388]=Hi):Hi=t[388];let Ui;t[389]!==u||t[390]!==Nn||t[391]!==R||t[392]!==N||t[393]!==J||t[394]!==j||t[395]!==m||t[396]!==Pn||t[397]!==p?(Ui=!R&&J&&!j&&Nn&&p!=null&&m!=null&&N&&(0,Z.jsx)(`div`,{className:k(`flex justify-end`,Pn?`pointer-events-none absolute end-0 top-full z-1 mt-1`:`mt-1`),"data-chart-feedback-row":!0,children:(0,Z.jsx)(`div`,{className:k(Pn&&`pointer-events-auto`),children:(0,Z.jsx)(It,{reference:{clientThreadId:p,messageId:m,referenceIndex:u}})})}),t[389]=u,t[390]=Nn,t[391]=R,t[392]=N,t[393]=J,t[394]=j,t[395]=m,t[396]=Pn,t[397]=p,t[398]=Ui):Ui=t[398];let Wi;return t[399]!==Kr||t[400]!==R||t[401]!==Pi||t[402]!==Fi||t[403]!==Ii||t[404]!==Vi||t[405]!==Hi||t[406]!==Ui?(Wi=(0,Z.jsxs)(yt,{ref:Be,isFullscreen:R,codeBlockRef:Me,isEscapeCloseDisabled:Pi,onEscapeClose:Kr,firstElementRef:Pe,lastElementRef:Fi,children:[Ii,Vi,Hi,Ui]}),t[399]=Kr,t[400]=R,t[401]=Pi,t[402]=Fi,t[403]=Ii,t[404]=Vi,t[405]=Hi,t[406]=Ui,t[407]=Wi):Wi=t[407],Wi}}));export{Qn as n,mr as r,fr as t};
+`));
+    for (let e of n) {
+        if (e.toUpperCase() === Tn) return null;
+        if (e.includes(`@@`)) return e
+    }
+    throw Error(`Magic edit diff is missing a unified diff hunk`)
+}
+
+function Sn(e) {
+    let t = [],
+        n = !1;
+    for (let r of e) {
+        if (r.startsWith(`@@ `)) {
+            n = !0, t.push(r);
+            continue
+        }
+        if (r.startsWith(`--- `) || r.startsWith(`+++ `)) {
+            n = !1, t.push(r);
+            continue
+        }!n && kn.test(r) || t.push(r)
+    }
+    return t
+}
+
+function Cn(e) {
+    let t = [...e],
+        n = !1;
+    for (let e = 0; e < t.length; e++) {
+        let r = t[e];
+        if (r.startsWith(`@@ `)) {
+            n = !0;
+            continue
+        }
+        if (r.startsWith(`--- `) || r.startsWith(`+++ `)) {
+            n = !1;
+            continue
+        }
+        n && /^[ +\-]\d+\|/.test(r) && (t[e] = `${r[0]}${r.slice(1).replace(/^\d+\|/,``)}`)
+    }
+    return t
+}
+
+function K(e) {
+    let t = [...e];
+    for (let e = 0; e < t.length; e++) {
+        let n = t[e].match(On);
+        if (n == null) continue;
+        let r = Number(n[1]),
+            i = Number(n[2]),
+            a = n[3] ?? ``,
+            o = 0,
+            s = 0,
+            c = e + 1;
+        for (; c < t.length; c++) {
+            let e = t[c];
+            if (e.startsWith(`@@ `) || e.startsWith(`--- `) || e.startsWith(`+++ `)) break;
+            if (e.startsWith(`\\`)) continue;
+            let n = e[0];
+            if (n === ` `) {
+                o++, s++;
+                continue
+            }
+            if (n === `-`) {
+                o++;
+                continue
+            }
+            if (n === `+`) {
+                s++;
+                continue
+            }
+            break
+        }
+        t[e] = `@@ -${r},${o} +${i},${s} @@${a}`, e = c - 1
+    }
+    return t
+}
+
+function q(e) {
+    let t = G(bn(e));
+    if (t == null) return null;
+    let n = W(Sn(t.trim().split(`
+`))),
+        r = n.findIndex(e => e.startsWith(`--- `) || e.startsWith(`@@ `));
+    if (r < 0) throw Error(`Magic edit diff is missing a unified diff hunk`);
+    let i = n.slice(r);
+    if (i = Cn(i), i = K(i), !i.some(e => e.startsWith(`@@ `))) throw Error(`Magic edit diff is missing a unified diff hunk`);
+    i[0]?.startsWith(`--- `) && i[1]?.startsWith(`+++ `) || (i = [En, Dn, ...i.filter(e => !e.startsWith(`--- `) && !e.startsWith(`+++ `))]);
+    let a = i.join(`
+`);
+    return a.endsWith(`
+`) ? a : `${a}\n`
+}
+
+function wn(e, t) {
+    let n = q(t);
+    if (n == null) return e;
+    let r = Ye(e, n);
+    if (r === !1) throw Error(`Failed to apply magic edit unified diff`);
+    return r
+}
+var Tn, En, Dn, J, On, kn, An = e((() => {
+    Je(), Tn = `NO_CHANGES`, En = `--- a/code`, Dn = `+++ b/code`, J = /(?:^|\n)(`{3,}|~{3,})[^\n]*\n([\s\S]*?)\n\1(?=\n|$)/g, On = /^@@ -(\d+)(?:,\d+)? \+(\d+)(?:,\d+)? @@(.*)$/, kn = /^(?:diff --git |index |old mode |new mode |new file mode |deleted file mode |similarity index |rename from |rename to )/
+}));
+
+function jn(e) {
+    return e.match(/[^\n]*\n|[^\n]+/g) ?? []
+}
+
+function Mn(e) {
+    return e.reduce((e, t) => e + t.length, 0)
+}
+
+function Y(e, t, n) {
+    let r = e[e.length - 1];
+    if (r != null && r.type === t) {
+        r.lines.push(n);
+        return
+    }
+    e.push({
+        type: t,
+        lines: [n]
+    })
+}
+
+function Nn(e, t) {
+    let n = e.length,
+        r = t.length,
+        i = Array.from({
+            length: n + 1
+        }, () => new Uint32Array(r + 1));
+    for (let a = n - 1; a >= 0; a--)
+        for (let n = r - 1; n >= 0; n--) i[a][n] = e[a] === t[n] ? i[a + 1][n + 1] + 1 : Math.max(i[a + 1][n], i[a][n + 1]);
+    let a = [],
+        o = 0,
+        s = 0;
+    for (; o < n && s < r;) {
+        if (e[o] === t[s]) {
+            Y(a, `equal`, e[o]), o++, s++;
+            continue
+        }
+        i[o + 1][s] >= i[o][s + 1] ? (Y(a, `delete`, e[o]), o++) : (Y(a, `insert`, t[s]), s++)
+    }
+    for (; o < n;) Y(a, `delete`, e[o]), o++;
+    for (; s < r;) Y(a, `insert`, t[s]), s++;
+    return a
+}
+
+function Pn(e, t) {
+    let n = 0,
+        r = Math.min(e.length, t.length);
+    for (; n < r && e.charCodeAt(n) === t.charCodeAt(n);) n++;
+    let i = 0,
+        a = Math.min(e.length, t.length) - n;
+    for (; i < a && e.charCodeAt(e.length - 1 - i) === t.charCodeAt(t.length - 1 - i);) i++;
+    let o = n,
+        s = e.length - i,
+        c = n,
+        l = t.length - i;
+    return o === s && c === l ? [] : [{
+        fromA: o,
+        toA: s,
+        fromB: c,
+        toB: l
+    }]
+}
+
+function Fn(e) {
+    let t = [],
+        n = 0,
+        r = 0;
+    for (let i = 0; i < e.length; i++) {
+        let a = e[i];
+        if (a.type === `equal`) {
+            let e = Mn(a.lines);
+            n += e, r += e;
+            continue
+        }
+        let o = n,
+            s = r;
+        for (; i < e.length && e[i].type !== `equal`; i++) {
+            let t = e[i];
+            t.type !== `insert` && (n += Mn(t.lines)), t.type !== `delete` && (r += Mn(t.lines))
+        }
+        t.push({
+            fromA: o,
+            toA: n,
+            fromB: s,
+            toB: r
+        }), i--
+    }
+    return t
+}
+
+function In(e, t) {
+    if (e === t) return [];
+    let n = jn(e),
+        r = jn(t);
+    if (n.length * r.length > Ln) return Pn(e, t);
+    let i = Fn(Nn(n, r));
+    return i.length > 0 ? i : Pn(e, t)
+}
+var Ln, Rn = e((() => {
+    Ln = 2e5
+}));
+
+function zn(e, t, n) {
+    if (t < 0 || n < t || n > e.length) throw Error(`Selection indices must satisfy 0 <= start <= end <= len(code)`);
+    return e.slice(0, t) + Bn + e.slice(t, n) + Vn + e.slice(n)
+}
+var Bn, Vn, Hn = e((() => {
+    Bn = `<|magic_edit_start|>`, Vn = `<|magic_edit_end|>`
+}));
+
+function Un() {
+    "use no forget";
+    let e = (0, Wn.useRef)(null),
+        t = P({
+            mutationFn: async ({
+                payload: t
+            }) => {
+                e.current?.abort(new DOMException(`Request canceled`, `AbortError`));
+                let n = new AbortController;
+                e.current = n;
+                try {
+                    return await u.safePost(`/conversation/message/code-blocks/magic-edit`, {
+                        requestBody: t,
+                        authOption: v.SendIfAvailable,
+                        signal: n.signal
+                    })
+                } finally {
+                    e.current === n && (e.current = null)
+                }
+            }
+        });
+    return {
+        cancel: (0, Wn.useCallback)(() => {
+            e.current?.abort(new DOMException(`Request canceled`, `AbortError`)), e.current = null
+        }, []),
+        ...t
+    }
+}
+var Wn, Gn = e((() => {
+    ee(), c(), he(), Wn = n(j())
+}));
+
+function Kn(e, t) {
+    let n = e.getSelectionRange();
+    if (n == null || n.from === n.to) return {
+        startIndex: 0,
+        endIndex: t.length
+    };
+    let r = Math.max(0, Math.min(n.from, t.length)),
+        i = Math.max(0, Math.min(n.to, t.length));
+    return {
+        startIndex: Math.min(r, i),
+        endIndex: Math.max(r, i)
+    }
+}
+
+function qn(e) {
+    "use forget";
+    let t = (0, Yn.c)(44),
+        {
+            baseCode: n,
+            prepareCodeForDisplay: r,
+            resetKey: i,
+            language: a,
+            languageTag: o,
+            serverThreadId: s,
+            editorRef: c,
+            onApplyCode: l,
+            onRequestError: u
+        } = e,
+        [d, f] = (0, Xn.useState)(null),
+        {
+            mutateAsync: p,
+            isPending: m,
+            cancel: h
+        } = Un(),
+        g;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (g = () => {
+        f(null)
+    }, t[0] = g) : g = t[0];
+    let _;
+    t[1] === i ? _ = t[2] : (_ = [i], t[1] = i, t[2] = _), (0, Xn.useEffect)(g, _);
+    let v;
+    t[3] !== c || t[4] !== a || t[5] !== o || t[6] !== u || t[7] !== d || t[8] !== p || t[9] !== s ? (v = async e => {
+        if (d != null) return !1;
+        let t = c.current;
+        if (!t) return !1;
+        let n = t.getCode(),
+            {
+                startIndex: r,
+                endIndex: i
+            } = Kn(t, n),
+            l = zn(n, r, i),
+            m = o ?? a ?? `text`;
+        try {
+            let t = (await p({
+                payload: {
+                    start_index: r,
+                    end_index: i,
+                    marked_block_body_markdown: l,
+                    language: m,
+                    instruction: e,
+                    num_variations: 1,
+                    conversation_id: s,
+                    mode: `diff`
+                }
+            })).choices[0];
+            if (t == null) return u(), !1;
+            let a = wn(n, t);
+            return a === n ? !1 : (f({
+                previousCode: n,
+                nextCode: a
+            }), !0)
+        } catch (e) {
+            let t = e;
+            return t instanceof DOMException && t.name === `AbortError` || u(), !1
+        }
+    }, t[3] = c, t[4] = a, t[5] = o, t[6] = u, t[7] = d, t[8] = p, t[9] = s, t[10] = v) : v = t[10];
+    let y = A(v),
+        b;
+    t[11] !== l || t[12] !== d ? (b = () => {
+        d != null && (l(d.nextCode), f(null))
+    }, t[11] = l, t[12] = d, t[13] = b) : b = t[13];
+    let x = A(b),
+        S;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (S = () => {
+        f(null)
+    }, t[14] = S) : S = t[14];
+    let C = A(S),
+        w = d?.nextCode ?? n,
+        T;
+    t[15] !== r || t[16] !== w ? (T = r?.(w) ?? w, t[15] = r, t[16] = w, t[17] = T) : T = t[17];
+    let E = T,
+        D;
+    bb0: {
+        if (d == null) {
+            D = null;
+            break bb0
+        }
+        let e, n, i;t[18] !== d || t[19] !== r ? (n = r?.(d.previousCode) ?? d.previousCode, e = r?.(d.nextCode) ?? d.nextCode, i = In(n, e).map((t, n) => {
+            let {
+                fromA: r,
+                toA: i,
+                fromB: a,
+                toB: o
+            } = t;
+            return {
+                id: `magic-edit-${n}`,
+                positionBefore: {
+                    start: r,
+                    end: i
+                },
+                positionAfter: {
+                    start: a,
+                    end: o
+                },
+                content: e.slice(a, o)
+            }
+        }), t[18] = d, t[19] = r, t[20] = e, t[21] = n, t[22] = i) : (e = t[20], n = t[21], i = t[22]);
+        let a = i,
+            o, s;t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (s = [], o = [], t[23] = o, t[24] = s) : (o = t[23], s = t[24]);
+        let c;t[25] !== a || t[26] !== e || t[27] !== n ? (c = {
+            edits: a,
+            commentsBefore: s,
+            commentsAfter: o,
+            contentBefore: n,
+            contentAfter: e
+        }, t[25] = a, t[26] = e, t[27] = n, t[28] = c) : c = t[28],
+        D = c
+    }
+    let ee = D,
+        te;
+    bb1: {
+        if (ee == null) {
+            te = null;
+            break bb1
+        }
+        if (ee.edits.length === 0) {
+            te = null;
+            break bb1
+        }
+        let e;t[29] === ee.edits ? e = t[30] : (e = Math.min(...ee.edits.map(Jn)), t[29] = ee.edits, t[30] = e),
+        te = e
+    }
+    let O = te,
+        ne, re;
+    t[31] !== c || t[32] !== O ? (re = () => {
+        if (O == null) return;
+        let e = requestAnimationFrame(() => {
+            c.current?.scrollToPosition(O)
+        });
+        return () => {
+            cancelAnimationFrame(e)
+        }
+    }, ne = [c, O], t[31] = c, t[32] = O, t[33] = ne, t[34] = re) : (ne = t[33], re = t[34]), (0, Xn.useEffect)(re, ne);
+    let k;
+    return t[35] !== h || t[36] !== m || t[37] !== x || t[38] !== y || t[39] !== C || t[40] !== d || t[41] !== ee || t[42] !== E ? (k = {
+        pendingMagicEditSuggestion: d,
+        pendingMagicEditTextdocDiff: ee,
+        previewCode: E,
+        isCodeBlockMagicEditPending: m,
+        cancelCodeBlockMagicEdit: h,
+        onCodeBlockMagicEditSubmit: y,
+        onAcceptMagicEditSuggestion: x,
+        onUndoMagicEditSuggestion: C
+    }, t[35] = h, t[36] = m, t[37] = x, t[38] = y, t[39] = C, t[40] = d, t[41] = ee, t[42] = E, t[43] = k) : k = t[43], k
+}
+
+function Jn(e) {
+    return e.positionAfter.start
+}
+var Yn, Xn, Zn = e((() => {
+        Yn = pe(), An(), Rn(), Hn(), Gn(), g(), Xn = n(j())
+    })),
+    Qn = t({
+        CodeBlock: () => fr
+    });
+
+function $n(e, t, n, r, i) {
+    return e.threadId === t && e.messageId === n && e.codeIndex === r && e.sourceContent === i
+}
+
+function er(e) {
+    try {
+        let t = e => {
+            if (typeof e != `object` || !e) return !1;
+            if (Array.isArray(e)) return e.some(t);
+            let n = `data` in e ? e.data : void 0;
+            return (Array.isArray(n) ? n : [n]).some(e => {
+                if (typeof e != `object` || !e) return !1;
+                let t = `url` in e ? e.url : void 0;
+                return typeof t == `string` || typeof t == `object` && !!t && `signal` in t
+            }) || Object.entries(e).some(([e, n]) => e !== `values` && e !== `datasets` && t(n))
+        };
+        return t(JSON.parse(e))
+    } catch {
+        return !1
+    }
+}
+
+function tr({
+    isFullScreen: e,
+    previewOnly: t,
+    showInlineCopyButtonOnly: n
+}) {
+    return e || t ? `none` : n ? `copy-only` : `header`
+}
+
+function nr(e) {
+    return e === `code` ? `preview` : e
+}
+
+function rr(e) {
+    return !e
+}
+
+function ir(e) {
+    return !e
+}
+var ar, X, or, Z, sr, cr, lr, ur, dr, fr, pr, mr = e((() => {
+    ar = pe(), at(), b(), Ke(), Lt(), Wt(), st(), dt(), pt(), be(), De(), qt(), lt(), tn(), on(), Oe(), ln(), Tt(), Dt(), mt(), un(), Pe(), mn(), yn(), Zn(), w(), Ee(), At(), $e(), Re(), O(), i(), ne(), de(), _(), ye(), y(), C(), I(), ae(), ce(), g(), m(), o(), X = n(j()), or = n(F()), _e(), He(), Z = me(), ge(), sr = a(() => N(() => import(`./9d85046f-e85d5eor0wkmhr5z.js`).then(e => e.CodeBlockEditorPane), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]))), cr = a(() => N(() => import(`./ce1c05a6-fesqkicp7lfobeop.js`).then(e => e.CodeBlockPreviewPane), __vite__mapDeps([19, 1, 2, 3, 4, 20, 5, 6, 7, 8, 9, 21, 22])), {
+        loading: ({
+            className: e,
+            previewLanguage: t
+        }) => (0, Z.jsx)(`div`, {
+            "data-code-block-preview-pane": t,
+            className: k(`aspect-video w-full`, e)
+        })
+    }), lr = a(() => N(() => import(`./d674ec0a-u06tep750x7114as.js`).then(e => e.CodeBlockMermaidPreviewActions), __vite__mapDeps([23, 1, 2, 3, 4, 24, 5, 6, 7, 8, 9, 25, 26, 27]))), ur = a(() => N(() => import(`./374cb62d-if76sx9yrswm6ykp.js`).then(e => e.CodeBlockExecutionPane), __vite__mapDeps([28, 1, 2, 3, 4, 29, 30, 31, 5, 6, 7, 8, 9, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 21, 44, 45, 46, 47])), {
+        loading: () => (0, Z.jsx)(`div`, {
+            className: `h-full min-h-0 w-full`
+        })
+    }), dr = a(() => N(() => import(`./842a9084-mbvxvhqyj6d0lcob.js`).then(e => e.CodeBlockMagicEditTool), __vite__mapDeps([48, 1, 2, 3, 4, 5, 6, 7, 8, 9, 49]))), fr = e => {
+        "use forget";
+        let t = (0, ar.c)(5),
+            n = qe(),
+            r = h(),
+            i;
+        t[0] === r ? i = t[1] : (i = () => !r && !ue().isError, t[0] = r, t[1] = i);
+        let a = l(i),
+            {
+                isInternalPreview: o
+            } = (0, X.useContext)(Le);
+        if (e.gates.mermaidUiImprovementsEnabled && Gt(e.language) === `mermaid` && ((n || o) && e.isStreaming || !e.disablePreview && !n && !o && a)) {
+            let e;
+            return t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Z.jsx)(Et, {}), t[2] = e) : e = t[2], e
+        }
+        let s;
+        return t[3] === e ? s = t[4] : (s = (0, Z.jsx)(pr, {
+            ...e
+        }), t[3] = e, t[4] = s), s
+    }, pr = e => {
+        "use forget";
+        let t = (0, ar.c)(408),
+            {
+                code: n,
+                bufferStreamingContent: r,
+                clipboardContent: i,
+                language: a,
+                headerTitle: o,
+                className: c,
+                codeIndex: u,
+                threadId: p,
+                messageId: m,
+                isPreviewable: h,
+                isSandboxFilePreview: g,
+                disablePreview: _,
+                previewOnly: v,
+                isStreaming: y,
+                isTurnStreaming: b,
+                isTerminalTurnCodeBlock: C,
+                editable: w,
+                isInteractive: ee,
+                gates: O,
+                mermaidThemeVariablesOverride: ne
+            } = e,
+            ae = r !== void 0 && r,
+            ce = h !== void 0 && h,
+            ue = _ !== void 0 && _,
+            de = v !== void 0 && v,
+            j = y !== void 0 && y,
+            M = b !== void 0 && b,
+            pe = C !== void 0 && C,
+            me = w === void 0 || w,
+            N = ee === void 0 || ee,
+            P = fe(),
+            F = f(),
+            he = d(),
+            ge = qe(),
+            {
+                isInternalPreview: _e,
+                networkPolicy: ve
+            } = (0, X.useContext)(Le),
+            ye = ve === void 0 ? `none` : ve,
+            be = S(p),
+            Se;
+        t[0] === a ? Se = t[1] : (Se = Gt(a), t[0] = a, t[1] = Se);
+        let I = Se,
+            Ee = ke[I ?? ``],
+            De;
+        t[2] !== I || t[3] !== Ee ? (De = Ee ?? {
+            language: I,
+            label: I
+        }, t[2] = I, t[3] = Ee, t[4] = De) : De = t[4];
+        let {
+            language: L,
+            label: Oe
+        } = De, Ae = !ue && (ge || _e) && O.mermaidUiImprovementsEnabled && L === `mermaid`, Me = (0, X.useRef)(null), Pe = (0, X.useRef)(null), Fe = (0, X.useRef)(null), Re = (0, X.useRef)(null), ze = (0, X.useRef)(null), Be = (0, X.useRef)(null), He = (0, X.useRef)(null), Ue = (0, X.useId)(), [R, We] = (0, X.useState)(!1), [Ge, Ke] = (0, X.useState)(Ae ? `preview` : `code`), [Je, Ye] = (0, X.useState)(`ready`), [Xe, Ze] = (0, X.useState)(!1), [$e, et] = (0, X.useState)(!1), [tt, nt] = (0, X.useState)(!1), [rt, it] = (0, X.useState)(`unattempted`), [at, st] = (0, X.useState)(!1), [lt, dt] = (0, X.useState)(!1), [pt, mt] = (0, X.useState)(!1), [bt, xt] = (0, X.useState)(null), St, z, Ct, B, V, wt, Tt;
+        if (t[5] !== u || t[6] !== L || t[7] !== bt || t[8] !== m || t[9] !== n || t[10] !== p) {
+            Ct = n.replace(/\n$/g, ``);
+            let e;
+            bb0: {
+                if (p == null || m == null) {
+                    e = void 0;
+                    break bb0
+                }
+                let n;
+                if (t[18] !== u || t[19] !== m || t[20] !== p) {
+                    let e = oe(p);
+                    n = ie.getTree(e).getMaybeMessage(m)?.metadata?.code_blocks?.[u]?.content, t[18] = u, t[19] = m, t[20] = p, t[21] = n
+                } else n = t[21];e = n
+            }
+            let r = e;
+            V = r ?? Ct;
+            let i = bt != null && $n(bt.identity, p, m, u, V);
+            z = i ? bt.content : V, St = r !== void 0 || i;
+            let a;
+            t[22] === L ? a = t[23] : (a = e => L === `mermaid` ? Ot(e) : e, t[22] = L, t[23] = a), B = a, wt = B(z), Tt = B(Ct), t[5] = u, t[6] = L, t[7] = bt, t[8] = m, t[9] = n, t[10] = p, t[11] = St, t[12] = z, t[13] = Ct, t[14] = B, t[15] = V, t[16] = wt, t[17] = Tt
+        } else St = t[11], z = t[12], Ct = t[13], B = t[14], V = t[15], wt = t[16], Tt = t[17];
+        let Et = wt !== Tt,
+            Dt;
+        t[24] !== z || t[25] !== B ? (Dt = B(z), t[24] = z, t[25] = B, t[26] = Dt) : Dt = t[26];
+        let At = Dt,
+            jt = St ? z : i ?? Ct,
+            Mt;
+        t[27] !== jt || t[28] !== B ? (Mt = B(jt), t[27] = jt, t[28] = B, t[29] = Mt) : Mt = t[29];
+        let Nt = Mt,
+            Pt, Ft;
+        t[30] !== u || t[31] !== m || t[32] !== V || t[33] !== p ? (Pt = () => {
+            xt(e => e != null && !$n(e.identity, p, m, u, V) ? null : e)
+        }, Ft = [u, m, V, p], t[30] = u, t[31] = m, t[32] = V, t[33] = p, t[34] = Pt, t[35] = Ft) : (Pt = t[34], Ft = t[35]), (0, X.useEffect)(Pt, Ft);
+        let Lt;
+        t[36] !== u || t[37] !== m || t[38] !== I || t[39] !== p ? (Lt = {
+            threadId: p,
+            messageId: m,
+            codeIndex: u,
+            language: I
+        }, t[36] = u, t[37] = m, t[38] = I, t[39] = p, t[40] = Lt) : Lt = t[40];
+        let {
+            requestSave: Rt,
+            flushSave: zt
+        } = dn(Lt), Bt;
+        t[41] !== u || t[42] !== m || t[43] !== p ? (Bt = e => {
+            if (p == null || m == null) return !1;
+            let t = je(se(p), m);
+            if (!t) return !1;
+            let n = `${u}`;
+            return D(p, r => s.updateTree(r, r => r.updateNodeMessageMetadata(t.id, {
+                code_blocks: {
+                    ...t.metadata?.code_blocks ?? {},
+                    [n]: {
+                        content: e
+                    }
+                }
+            }))), !0
+        }, t[41] = u, t[42] = m, t[43] = p, t[44] = Bt) : Bt = t[44];
+        let Ht = A(Bt),
+            Ut;
+        t[45] !== u || t[46] !== At || t[47] !== m || t[48] !== B || t[49] !== Rt || t[50] !== V || t[51] !== p || t[52] !== Ht ? (Ut = e => {
+            let t = e.doc.toString();
+            if (B(t) === At) return;
+            let n = Ht(t);
+            xt({
+                identity: {
+                    threadId: p,
+                    messageId: m,
+                    codeIndex: u,
+                    sourceContent: V
+                },
+                content: t
+            }), n && Rt(t)
+        }, t[45] = u, t[46] = At, t[47] = m, t[48] = B, t[49] = Rt, t[50] = V, t[51] = p, t[52] = Ht, t[53] = Ut) : Ut = t[53];
+        let Wt = A(Ut),
+            Kt = Ce(Wt, 300),
+            qt;
+        t[54] !== Kt || t[55] !== zt ? (qt = () => {
+            Kt.flush(), zt()
+        }, t[54] = Kt, t[55] = zt, t[56] = qt) : qt = t[56];
+        let Jt = A(qt),
+            Yt;
+        t[57] !== u || t[58] !== zt || t[59] !== m || t[60] !== B || t[61] !== Rt || t[62] !== V || t[63] !== p || t[64] !== Ht ? (Yt = e => {
+            let t = B(e),
+                n = Ht(t);
+            xt({
+                identity: {
+                    threadId: p,
+                    messageId: m,
+                    codeIndex: u,
+                    sourceContent: V
+                },
+                content: t
+            }), n && (Rt(t), zt())
+        }, t[57] = u, t[58] = zt, t[59] = m, t[60] = B, t[61] = Rt, t[62] = V, t[63] = p, t[64] = Ht, t[65] = Yt) : Yt = t[65];
+        let Xt = A(Yt),
+            Zt;
+        t[66] !== P || t[67] !== F ? (Zt = () => {
+            F.danger(P.formatMessage({
+                id: `codeBlock.magicEdit.error.failed`,
+                defaultMessage: `An error occurred while applying edits.`
+            }))
+        }, t[66] = P, t[67] = F, t[68] = Zt) : Zt = t[68];
+        let en = A(Zt),
+            tn;
+        t[69] !== Xt || t[70] !== L || t[71] !== z || t[72] !== en || t[73] !== B || t[74] !== I || t[75] !== be || t[76] !== V ? (tn = {
+            baseCode: z,
+            prepareCodeForDisplay: B,
+            resetKey: V,
+            language: I,
+            languageTag: L,
+            serverThreadId: be,
+            editorRef: Fe,
+            onApplyCode: Xt,
+            onRequestError: en
+        }, t[69] = Xt, t[70] = L, t[71] = z, t[72] = en, t[73] = B, t[74] = I, t[75] = be, t[76] = V, t[77] = tn) : tn = t[77];
+        let {
+            pendingMagicEditSuggestion: on,
+            pendingMagicEditTextdocDiff: sn,
+            previewCode: H,
+            isCodeBlockMagicEditPending: ln,
+            cancelCodeBlockMagicEdit: un,
+            onCodeBlockMagicEditSubmit: fn,
+            onAcceptMagicEditSuggestion: pn,
+            onUndoMagicEditSuggestion: mn
+        } = qn(tn), U = l(T), gn = (0, X.useRef)(U), _n = Ee?.previewLanguage ?? L, vn = ft(_n, H), yn = vn === `vega` || vn === `vega-lite`, bn;
+        t[78] !== _e || t[79] !== yn || t[80] !== H ? (bn = _e && yn && er(H), t[78] = _e, t[79] = yn, t[80] = H, t[81] = bn) : bn = t[81];
+        let xn = !ue && (!_e || vn != null && vn !== `react` && vn !== `recharts` && vn !== `threejs` && !bn) && (ge || _e || vn === `svg`),
+            W = xn ? vn : null,
+            G = xn && de,
+            Sn = !!O.mermaidUiImprovementsEnabled,
+            Cn = o ?? (W === `svg` ? `SVG` : Oe),
+            K = !G && (Ge === `code` || Ge === `split`),
+            q = G || Ge === `preview` || Ge === `split`,
+            wn = Ee?.inlineCopyOnly || L == null && Cn == null,
+            Tn = nn(W),
+            En;
+        t[82] === L ? En = t[83] : (En = gt(L), t[82] = L, t[83] = En);
+        let Dn = En,
+            J = W != null,
+            On = _t({
+                previewLanguage: W,
+                languageTag: L,
+                isStreaming: j
+            }),
+            kn = On ? z : void 0,
+            An;
+        t[84] === kn ? An = t[85] : (An = {
+            includeElementText: !1,
+            reportMatchDespiteCssHighlight: !0,
+            rootRef: Me,
+            searchableText: kn
+        }, t[84] = kn, t[85] = An);
+        let jn = Qe(An),
+            Mn = N && ge && Dn != null,
+            Y = Mn && !J,
+            Nn = G && _n === `recharts` && O.widgetFeedbackEnabled === !0,
+            Pn = !R && J && !j && Nn && N && pe,
+            Fn = Mn && !j && !M,
+            In = m != null,
+            Ln = ht(W, H) && !j && rt === `unattempted` && (ce || Ne()),
+            Rn = G || W === `svg` || (W === `vega` || W === `vega-lite`) && !j || W === `mermaid` && !j,
+            [zn, Bn] = (0, X.useState)(Rn),
+            Vn = Tn != null && q,
+            Hn = Xe || j || (W === `vega` || W === `vega-lite` || W === `threejs` || W === `recharts`) && Je !== `ready`,
+            Un = !G && me && N,
+            Wn = O.magicEditEnabled && Un,
+            Gn = !G && Un && O.sharingEnabled && J,
+            Kn = !_e && (W === `html` || W === `react`),
+            Jn;
+        t[86] === Symbol.for(`react.memo_cache_sentinel`) ? (Jn = () => {
+            Ze(!1), dt(!1)
+        }, t[86] = Jn) : Jn = t[86];
+        let Yn;
+        t[87] !== H || t[88] !== W ? (Yn = [H, W], t[87] = H, t[88] = W, t[89] = Yn) : Yn = t[89], (0, X.useEffect)(Jn, Yn);
+        let Xn;
+        t[90] === W ? Xn = t[91] : (Xn = () => {
+            if (W === `vega` || W === `vega-lite` || W === `threejs` || W === `recharts`) {
+                Ye(`loading`);
+                return
+            }
+            Ye(`ready`)
+        }, t[90] = W, t[91] = Xn);
+        let Zn;
+        t[92] !== H || t[93] !== W ? (Zn = [H, W], t[92] = H, t[93] = W, t[94] = Zn) : Zn = t[94], (0, X.useEffect)(Xn, Zn);
+        let Qn;
+        t[95] === Ln ? Qn = t[96] : (Qn = (e, t) => {
+            if (e ? Ye(`ready`) : t === `failure` && Ye(`failed`), Ln) {
+                if (t === `failure`) {
+                    it(`settled`), mt(!1);
+                    return
+                }
+                e && (it(`settled`), mt(!1), Ke(nr))
+            }
+        }, t[95] = Ln, t[96] = Qn);
+        let fr = A(Qn),
+            pr;
+        t[97] !== Sn || t[98] !== P || t[99] !== he || t[100] !== Xe || t[101] !== q || t[102] !== L || t[103] !== H || t[104] !== Tn || t[105] !== W || t[106] !== F ? (pr = () => {
+            if (Tn == null || !q || Xe) return;
+            Ze(!0);
+            let e = () => {
+                F.danger(Tn === `code` ? P.formatMessage({
+                    id: `codeBlock.previewExport.code.error`,
+                    defaultMessage: `Failed to export code file.`
+                }) : P.formatMessage({
+                    id: `codeBlock.previewExport.error`,
+                    defaultMessage: `Failed to export PNG.`
+                }), {
+                    duration: 4,
+                    hasCloseButton: !0,
+                    toastId: `code_block_preview_export_failed`
+                }), Ze(!1)
+            };
+            if (Tn === `code`) {
+                if (W !== `html` && W !== `react`) {
+                    e();
+                    return
+                }
+                try {
+                    we(new Blob([H], {
+                        type: an(W)
+                    }), rn(W, L)), F.success(P.formatMessage({
+                        id: `codeBlock.previewExport.code.success`,
+                        defaultMessage: `Downloaded code file.`
+                    })), Ze(!1)
+                } catch {
+                    e()
+                }
+                return
+            }
+            let t = document.fonts ? document.fonts.ready : Promise.resolve();
+            (async () => {
+                try {
+                    await t, await re.yield();
+                    let n;
+                    if (W === `mermaid`) n = await $t({
+                        source: H,
+                        chatTheme: le(),
+                        enableMermaidUiImprovements: Sn,
+                        isDarkMode: he
+                    });
+                    else {
+                        let t;
+                        if (Re.current && (t = await Re.current.captureScreenshotDataUrl()), !t) {
+                            e();
+                            return
+                        }
+                        await re.yield(), n = await Qt(t)
+                    }
+                    await re.yield();
+                    let r = `vega-chart.png`;
+                    W === `mermaid` && (r = `mermaid-diagram.png`), we(n, r), F.success(P.formatMessage({
+                        id: `codeBlock.previewExport.success`,
+                        defaultMessage: `Downloaded PNG.`
+                    })), Ze(!1)
+                } catch {
+                    e()
+                }
+            })()
+        }, t[97] = Sn, t[98] = P, t[99] = he, t[100] = Xe, t[101] = q, t[102] = L, t[103] = H, t[104] = Tn, t[105] = W, t[106] = F, t[107] = pr) : pr = t[107];
+        let mr = A(pr),
+            hr, gr;
+        t[108] === Rn ? (hr = t[109], gr = t[110]) : (hr = () => {
+            Rn && Ke(`preview`)
+        }, gr = [Rn], t[108] = Rn, t[109] = hr, t[110] = gr), (0, X.useEffect)(hr, gr);
+        let _r;
+        t[111] === Symbol.for(`react.memo_cache_sentinel`) ? (_r = e => {
+            (0, or.flushSync)(() => {
+                et(!0)
+            }), Ve({
+                forceFlushSync: !0,
+                className: `code-block-fullscreen-transition`,
+                update: e
+            }).finished.finally(() => {
+                et(!1)
+            })
+        }, t[111] = _r) : _r = t[111];
+        let vr = A(_r),
+            yr, br;
+        t[112] !== Ue || t[113] !== R ? (yr = () => {
+            if (R) {
+                xe(Ue);
+                return
+            }
+            Te(Ue)
+        }, br = [Ue, R], t[112] = Ue, t[113] = R, t[114] = yr, t[115] = br) : (yr = t[114], br = t[115]), (0, X.useEffect)(yr, br);
+        let xr, Sr;
+        t[116] === Ue ? (xr = t[117], Sr = t[118]) : (xr = () => () => {
+            Te(Ue)
+        }, Sr = [Ue], t[116] = Ue, t[117] = xr, t[118] = Sr), (0, X.useEffect)(xr, Sr);
+        let Cr;
+        t[119] !== Fn || t[120] !== R || t[121] !== U || t[122] !== vr ? (Cr = {
+            canRunCodeExecution: Fn,
+            isFullScreen: R,
+            isScreenAtLeastMd: U,
+            runCodeBlockViewTransition: vr,
+            fullscreenContainerRef: Be,
+            focusRestoreRef: He,
+            setIsFullScreen: We,
+            setIsPreviewFirst: Bn,
+            setViewState: Ke
+        }, t[119] = Fn, t[120] = R, t[121] = U, t[122] = vr, t[123] = Cr) : Cr = t[123];
+        let {
+            isExecutionPaneVisible: wr,
+            setIsExecutionPaneVisible: Tr,
+            requestCodeRun: Er,
+            runRequestId: Dr,
+            setRunRequestId: Or
+        } = hn(Cr), kr;
+        t[124] !== q || t[125] !== Ln ? (kr = () => q ? `visible` : Ln ? `auto` : `hover`, t[124] = q, t[125] = Ln, t[126] = kr) : kr = t[126];
+        let Ar = A(kr),
+            jr = be ?? p,
+            Mr;
+        t[127] !== Ar || t[128] !== g || t[129] !== m || t[130] !== _n || t[131] !== jr ? (Mr = {
+            conversationId: jr,
+            messageId: m,
+            codeBlockLanguage: _n,
+            isSandboxFilePreview: g,
+            getPreviewStartMode: Ar
+        }, t[127] = Ar, t[128] = g, t[129] = m, t[130] = _n, t[131] = jr, t[132] = Mr) : Mr = t[132];
+        let Nr = Mr,
+            Pr;
+        t[133] !== ce || t[134] !== J || t[135] !== m || t[136] !== I || t[137] !== p ? (Pr = (e, t) => {
+            E.logStructuredEvent(e, {
+                conversationId: p,
+                messageId: m,
+                language: I,
+                modelPreviewable: ce,
+                clientPreviewable: J
+            }), x.count(te.CODE_BLOCKS, t)
+        }, t[133] = ce, t[134] = J, t[135] = m, t[136] = I, t[137] = p, t[138] = Pr) : Pr = t[138];
+        let Q = A(Pr),
+            Fr;
+        t[139] === Q ? Fr = t[140] : (Fr = () => {
+            Q(`ChatgptCodeBlockRunButtonClicked`, `chatgpt_code_block_run_button_clicked`)
+        }, t[139] = Q, t[140] = Fr);
+        let Ir = A(Fr),
+            Lr, Rr;
+        t[141] !== Y || t[142] !== wr || t[143] !== R || t[144] !== zn || t[145] !== U ? (Lr = () => {
+            if (!R) {
+                gn.current = U;
+                return
+            }
+            gn.current !== U && (gn.current = U, Ke(e => U ? e === `code` || e === `preview` && !zn ? `split` : e : e === `split` ? Y && wr || zn ? `preview` : `code` : e))
+        }, Rr = [Y, wr, R, zn, U], t[141] = Y, t[142] = wr, t[143] = R, t[144] = zn, t[145] = U, t[146] = Lr, t[147] = Rr) : (Lr = t[146], Rr = t[147]), (0, X.useEffect)(Lr, Rr);
+        let zr;
+        t[148] !== tt || t[149] !== Q || t[150] !== Er ? (zr = () => {
+            if (tt) {
+                ze.current?.stop();
+                return
+            }
+            Q(`ChatgptCodeBlockRunButtonClicked`, `chatgpt_code_block_run_button_clicked`), Er()
+        }, t[148] = tt, t[149] = Q, t[150] = Er, t[151] = zr) : zr = t[151];
+        let Br = A(zr),
+            $ = J ? q : Y ? wr : !1,
+            Vr;
+        t[152] === Symbol.for(`react.memo_cache_sentinel`) ? (Vr = () => {
+            st(!1)
+        }, t[152] = Vr) : Vr = t[152];
+        let Hr = A(Vr),
+            Ur;
+        t[153] !== Hr || t[154] !== U || t[155] !== Kn || t[156] !== at ? (Ur = () => {
+            if (Kn) {
+                if (!at) {
+                    x.count(te.CODE_BLOCKS, `chatgpt_code_block_console_opened`), Ke(e => e === `code` ? U ? `split` : `preview` : e), st(!0), requestAnimationFrame(() => {
+                        Re.current?.focus()
+                    });
+                    return
+                }
+                Hr()
+            }
+        }, t[153] = Hr, t[154] = U, t[155] = Kn, t[156] = at, t[157] = Ur) : Ur = t[157];
+        let Wr = A(Ur),
+            Gr;
+        t[158] !== un || t[159] !== Sn || t[160] !== Y || t[161] !== zn || t[162] !== W || t[163] !== vr || t[164] !== Tr || t[165] !== Or ? (Gr = () => {
+            ze.current?.stop(), nt(!1), Tr(!1), st(!1), dt(!1), Or(0), un(), vr(() => {
+                We(!1), Ke(e => Y ? `code` : Sn && W === `mermaid` ? `preview` : e === `split` ? zn ? `preview` : `code` : e)
+            })
+        }, t[158] = un, t[159] = Sn, t[160] = Y, t[161] = zn, t[162] = W, t[163] = vr, t[164] = Tr, t[165] = Or, t[166] = Gr) : Gr = t[166];
+        let Kr = A(Gr),
+            qr, Jr;
+        t[167] !== Sn || t[168] !== K || t[169] !== wr || t[170] !== R || t[171] !== q || t[172] !== W ? (qr = () => {
+            if (!R) {
+                let e = He.current;
+                e?.isConnected && e.focus(), He.current = null;
+                return
+            }
+            let e = requestAnimationFrame(() => {
+                if (Sn && W === `mermaid` && K && Fe.current != null) {
+                    Fe.current.focus();
+                    return
+                }
+                if ((!Sn || W !== `mermaid` || q) && Re.current != null) {
+                    Re.current.focus();
+                    return
+                }
+                if (wr) {
+                    ze.current?.focus();
+                    return
+                }
+                Pe.current?.focus()
+            });
+            return () => {
+                cancelAnimationFrame(e)
+            }
+        }, Jr = [Sn, K, wr, R, q, W], t[167] = Sn, t[168] = K, t[169] = wr, t[170] = R, t[171] = q, t[172] = W, t[173] = qr, t[174] = Jr) : (qr = t[173], Jr = t[174]), (0, X.useEffect)(qr, Jr);
+        let Yr = j && !Rn,
+            Xr;
+        t[175] !== Q || t[176] !== vr ? (Xr = () => {
+            Q(`ChatgptCodeBlockFullScreenButtonClicked`, `chatgpt_code_block_full_screen_button_clicked`), Be.current?.measurePlaceholderMetrics(), document.activeElement instanceof HTMLElement && (He.current = document.activeElement), vr(() => {
+                Bn(!0), We(!0)
+            })
+        }, t[175] = Q, t[176] = vr, t[177] = Xr) : Xr = t[177];
+        let Zr = A(Xr),
+            Qr;
+        t[178] !== q || t[179] !== J || t[180] !== U || t[181] !== j || t[182] !== M || t[183] !== Q || t[184] !== vr ? (Qr = () => {
+            Q(`ChatgptCodeBlockEditButtonClicked`, `chatgpt_code_block_edit_button_clicked`), !(M || j || !J) && (Be.current?.measurePlaceholderMetrics(), document.activeElement instanceof HTMLElement && (He.current = document.activeElement), vr(() => {
+                We(!0), Bn(q), Ke(U ? `split` : `code`)
+            }))
+        }, t[178] = q, t[179] = J, t[180] = U, t[181] = j, t[182] = M, t[183] = Q, t[184] = vr, t[185] = Qr) : Qr = t[185];
+        let $r = A(Qr),
+            ei;
+        t[186] === Yr ? ei = t[187] : (ei = () => {
+            Yr || (mt(!1), Ke(`code`))
+        }, t[186] = Yr, t[187] = ei);
+        let ti = A(ei),
+            ni;
+        t[188] !== Yr || t[189] !== Q ? (ni = async () => {
+            Yr || (Q(`ChatgptCodeBlockPreviewButtonClicked`, `chatgpt_code_block_preview_button_clicked`), await cr.prefetch(), Ke(`preview`), (Me.current?.getBoundingClientRect().top ?? 0) <= 0 && Me.current?.scrollIntoView({
+                behavior: `smooth`
+            }))
+        }, t[188] = Yr, t[189] = Q, t[190] = ni) : ni = t[190];
+        let ri = A(ni),
+            ii;
+        t[191] !== Y || t[192] !== U || t[193] !== Tr ? (ii = () => {
+            Y && Tr(rr), Ke(e => U ? e === `code` ? `split` : `code` : e === `code` ? `preview` : `code`)
+        }, t[191] = Y, t[192] = U, t[193] = Tr, t[194] = ii) : ii = t[194];
+        let ai = A(ii),
+            oi;
+        t[195] !== Y || t[196] !== U || t[197] !== Tr ? (oi = () => {
+            Y && !U && Tr(ir), Ke(e => U ? e === `preview` ? `split` : `preview` : e === `code` ? `preview` : `code`)
+        }, t[195] = Y, t[196] = U, t[197] = Tr, t[198] = oi) : oi = t[198];
+        let si = A(oi),
+            ci;
+        t[199] !== q || t[200] !== Yr || t[201] !== J ? (ci = () => {
+            !J || q || Yr || (cr.prefetch(), mt(!0))
+        }, t[199] = q, t[200] = Yr, t[201] = J, t[202] = ci) : ci = t[202];
+        let li = A(ci),
+            ui;
+        t[203] === q ? ui = t[204] : (ui = () => {
+            q || mt(!1)
+        }, t[203] = q, t[204] = ui);
+        let di = A(ui),
+            fi = Y && R && Dn != null,
+            pi = Sn && W === `mermaid` && q && !R && !G,
+            mi;
+        t[205] !== R || t[206] !== G || t[207] !== pi || t[208] !== wn ? (mi = pi ? `none` : tr({
+            isFullScreen: R,
+            previewOnly: G,
+            showInlineCopyButtonOnly: wn
+        }), t[205] = R, t[206] = G, t[207] = pi, t[208] = wn, t[209] = mi) : mi = t[209];
+        let hi = mi,
+            gi = !pi && !(hi === `header` && U),
+            _i = !pi,
+            vi;
+        t[210] !== Nt || t[211] !== hi || t[212] !== tt || t[213] !== Mn || t[214] !== ce || t[215] !== Yr || t[216] !== J || t[217] !== $ || t[218] !== j || t[219] !== M || t[220] !== m || t[221] !== Zr || t[222] !== li || t[223] !== di || t[224] !== Br || t[225] !== ti || t[226] !== ri || t[227] !== Cn || t[228] !== p ? (vi = hi === `header` ? (0, Z.jsx)(cn, {
+            messageId: m,
+            clientThreadId: p,
+            language: Cn,
+            code: Nt,
+            isModelPreviewable: ce,
+            isPreviewable: J,
+            isStreaming: j,
+            isTurnStreaming: M,
+            isPreviewToggleDisabled: Yr,
+            isExecutable: Mn,
+            isCodeRunning: tt,
+            isPreviewOpen: $,
+            onCodeClick: ti,
+            onPreviewClick: ri,
+            onPreviewMouseEnter: li,
+            onPreviewMouseLeave: di,
+            onFullScreenClick: Zr,
+            onRunClick: Br
+        }) : null, t[210] = Nt, t[211] = hi, t[212] = tt, t[213] = Mn, t[214] = ce, t[215] = Yr, t[216] = J, t[217] = $, t[218] = j, t[219] = M, t[220] = m, t[221] = Zr, t[222] = li, t[223] = di, t[224] = Br, t[225] = ti, t[226] = ri, t[227] = Cn, t[228] = p, t[229] = vi) : vi = t[229];
+        let yi = vi,
+            bi;
+        t[230] !== c || t[231] !== Hr || t[232] !== u || t[233] !== Nr || t[234] !== O.mermaidUiImprovementsEnabled || t[235] !== In || t[236] !== hi || t[237] !== $e || t[238] !== Et || t[239] !== R || t[240] !== _e || t[241] !== q || t[242] !== J || t[243] !== j || t[244] !== Kn || t[245] !== at || t[246] !== ne || t[247] !== m || t[248] !== ye || t[249] !== Zr || t[250] !== fr || t[251] !== H || t[252] !== W || t[253] !== G || t[254] !== Ln || t[255] !== pt || t[256] !== pi || t[257] !== _i || t[258] !== gi || t[259] !== p || t[260] !== Je ? (bi = In && J && (q || pt || Ln) ? (0, Z.jsx)(cr, {
+            messageId: m,
+            clientThreadId: p,
+            codeIndex: u,
+            previewCode: H,
+            previewLanguage: W,
+            previewState: Je,
+            ..._e ? {
+                hasNetworkAccess: ye !== `none` && void 0,
+                isSharedSurface: !0
+            } : {},
+            isCodeEdited: Et,
+            analyticsContext: Nr,
+            isFullscreen: R,
+            isStreaming: j,
+            previewOnly: G,
+            previewRef: Re,
+            onWebPreviewReadyChange: fr,
+            isConsoleEnabled: Kn,
+            isConsoleOpen: Kn && at,
+            onConsoleClose: Hr,
+            onConsoleErrorOutputChange: dt,
+            onFullScreenClick: Zr,
+            showFullScreenButton: gi,
+            showCardChrome: _i,
+            isInline: pi,
+            enableMermaidUiImprovements: O.mermaidUiImprovementsEnabled,
+            mermaidThemeVariablesOverride: ne,
+            className: k(c, hi === `header` && `rounded-none! border-transparent! bg-transparent! shadow-none!`, (!(pt || Ln) || q) && `relative`, (pt || Ln) && !q && `pointer-events-none absolute top-48 opacity-0`, $e && `[view-transition-name:code-block-preview-pane]`)
+        }) : null, t[230] = c, t[231] = Hr, t[232] = u, t[233] = Nr, t[234] = O.mermaidUiImprovementsEnabled, t[235] = In, t[236] = hi, t[237] = $e, t[238] = Et, t[239] = R, t[240] = _e, t[241] = q, t[242] = J, t[243] = j, t[244] = Kn, t[245] = at, t[246] = ne, t[247] = m, t[248] = ye, t[249] = Zr, t[250] = fr, t[251] = H, t[252] = W, t[253] = G, t[254] = Ln, t[255] = pt, t[256] = pi, t[257] = _i, t[258] = gi, t[259] = p, t[260] = Je, t[261] = bi) : bi = t[261];
+        let xi = bi,
+            Si = null;
+        if (xi != null) {
+            if (Si = xi, pi) {
+                let e;
+                t[262] !== $r || t[263] !== mr ? (e = (0, Z.jsx)(`div`, {
+                    className: `absolute end-2 top-2 z-10`,
+                    children: (0, Z.jsx)(lr, {
+                        onDownload: mr,
+                        onOpenEditor: $r
+                    })
+                }), t[262] = $r, t[263] = mr, t[264] = e) : e = t[264];
+                let n;
+                t[265] !== xi || t[266] !== e ? (n = (0, Z.jsxs)(`div`, {
+                    className: `group/app-widget group/keyboard-or-hover relative`,
+                    children: [e, xi]
+                }), t[265] = xi, t[266] = e, t[267] = n) : n = t[267], Si = n
+            }
+        } else if (fi) {
+            let e = `${m}:${u}:code-execution`,
+                n = j || M,
+                r = $e && `[view-transition-name:code-block-preview-pane]`,
+                i;
+            t[268] !== c || t[269] !== r ? (i = k(c, r), t[268] = c, t[269] = r, t[270] = i) : i = t[270];
+            let a;
+            t[271] !== Fn || t[272] !== Dn || t[273] !== Nt || t[274] !== Nr || t[275] !== Et || t[276] !== j || t[277] !== z || t[278] !== m || t[279] !== Ir || t[280] !== Dr || t[281] !== e || t[282] !== n || t[283] !== i || t[284] !== p ? (a = (0, Z.jsx)(ur, {
+                id: e,
+                clientThreadId: p,
+                messageId: m,
+                code: z,
+                clipboardContent: Nt,
+                language: Dn,
+                isCodeEdited: Et,
+                analyticsContext: Nr,
+                runRequestId: Dr,
+                onIsCodeRunningChange: nt,
+                onRunClick: Ir,
+                showRunButton: Fn,
+                isRunDisabled: n,
+                isCopyDisabled: j,
+                isFullscreen: !0,
+                ref: ze,
+                className: i
+            }), t[271] = Fn, t[272] = Dn, t[273] = Nt, t[274] = Nr, t[275] = Et, t[276] = j, t[277] = z, t[278] = m, t[279] = Ir, t[280] = Dr, t[281] = e, t[282] = n, t[283] = i, t[284] = p, t[285] = a) : a = t[285], Si = a
+        }
+        let Ci;
+        t[286] !== Nt || t[287] !== hi || t[288] !== j || t[289] !== m || t[290] !== p ? (Ci = hi === `copy-only` && (0, Z.jsx)(`div`, {
+            className: `pointer-events-none absolute end-1.5 top-1 z-2 md:end-2 md:top-1`,
+            children: (0, Z.jsx)(ct, {
+                code: Nt,
+                messageId: m,
+                clientThreadId: p,
+                disabled: j,
+                className: `pointer-events-auto`
+            })
+        }), t[286] = Nt, t[287] = hi, t[288] = j, t[289] = m, t[290] = p, t[291] = Ci) : Ci = t[291];
+        let wi;
+        t[292] !== ae || t[293] !== c || t[294] !== u || t[295] !== Kt || t[296] !== At || t[297] !== $e || t[298] !== K || t[299] !== Un || t[300] !== Y || t[301] !== R || t[302] !== J || t[303] !== $ || t[304] !== j || t[305] !== M || t[306] !== L || t[307] !== m || t[308] !== pn || t[309] !== Jt || t[310] !== Wt || t[311] !== mn || t[312] !== on || t[313] !== sn || t[314] !== G || t[315] !== On || t[316] !== wn || t[317] !== p ? (wi = !G && (K || R) && (0, Z.jsx)(ot, {
+            enabled: ae && j,
+            streamId: `${p??``}:${m??``}:${u}`,
+            text: At,
+            children: e => (0, Z.jsx)(sr, {
+                messageId: m,
+                codeIndex: u,
+                latestEditedCode: e,
+                languageTag: L,
+                isFullScreen: R,
+                isReadOnly: M || j || !R || !Un || !J && !Y,
+                isPreviewing: $,
+                isStreaming: j,
+                useFixedInlineHeight: On,
+                onChange: L === `mermaid` ? Wt : Kt,
+                onBlur: Jt,
+                hasPendingMagicEditSuggestion: on != null,
+                onUndoMagicEditSuggestion: mn,
+                onAcceptMagicEditSuggestion: pn,
+                pendingMagicEditTextdocDiff: sn,
+                editorRef: Fe,
+                className: k(c, !R && wn && `pe-11 pt-3`, $e && R && !K && `invisible`, $e && `[view-transition-name:code-block-code-pane]`)
+            })
+        }), t[292] = ae, t[293] = c, t[294] = u, t[295] = Kt, t[296] = At, t[297] = $e, t[298] = K, t[299] = Un, t[300] = Y, t[301] = R, t[302] = J, t[303] = $, t[304] = j, t[305] = M, t[306] = L, t[307] = m, t[308] = pn, t[309] = Jt, t[310] = Wt, t[311] = mn, t[312] = on, t[313] = sn, t[314] = G, t[315] = On, t[316] = wn, t[317] = p, t[318] = wi) : wi = t[318];
+        let Ti;
+        t[319] !== Ci || t[320] !== wi ? (Ti = (0, Z.jsxs)(Z.Fragment, {
+            children: [Ci, wi]
+        }), t[319] = Ci, t[320] = wi, t[321] = Ti) : Ti = t[321];
+        let Ei = Ti,
+            Di = On ? `boundary` : void 0,
+            Oi = R && (J || Y),
+            ki = !R || $,
+            Ai = jn ? Ie : void 0,
+            ji;
+        t[322] !== Ei || t[323] !== hi || t[324] !== R || t[325] !== U || t[326] !== $ || t[327] !== pi ? (ji = hi === `header` || pi ? (0, Z.jsx)(`div`, {
+            className: k($ && `h-full`),
+            children: Ei
+        }) : (0, Z.jsx)(Vt, {
+            className: k($ && `h-full border-0!`),
+            visible: !$ && (!R || U),
+            children: Ei
+        }), t[322] = Ei, t[323] = hi, t[324] = R, t[325] = U, t[326] = $, t[327] = pi, t[328] = ji) : ji = t[328];
+        let Mi;
+        t[329] !== K || t[330] !== Si || t[331] !== Di || t[332] !== Oi || t[333] !== ki || t[334] !== Ai || t[335] !== ji ? (Mi = (0, Z.jsxs)(vt, {
+            "data-custom-highlighting-behavior": Di,
+            isActive: Oi,
+            isLeftPaneVisible: K,
+            isRightPaneVisible: ki,
+            ref: Me,
+            className: Ai,
+            children: [ji, Si]
+        }), t[329] = K, t[330] = Si, t[331] = Di, t[332] = Oi, t[333] = ki, t[334] = Ai, t[335] = ji, t[336] = Mi) : Mi = t[336];
+        let Ni = Mi,
+            Pi = on != null,
+            Fi = J && $ ? Re : Fe,
+            Ii;
+        t[337] !== Kr || t[338] !== Dn || t[339] !== u || t[340] !== Nt || t[341] !== zt || t[342] !== lt || t[343] !== K || t[344] !== Y || t[345] !== R || t[346] !== Hn || t[347] !== Vn || t[348] !== Yr || t[349] !== J || t[350] !== $ || t[351] !== Gn || t[352] !== j || t[353] !== Kn || t[354] !== at || t[355] !== m || t[356] !== si || t[357] !== ai || t[358] !== mr || t[359] !== Wr || t[360] !== Tn || t[361] !== G || t[362] !== Cn || t[363] !== p ? (Ii = R && (0, Z.jsx)(ut, {
+            code: Nt,
+            showCopyButton: Dn == null && !G,
+            messageId: m,
+            clientThreadId: p,
+            codeIndex: u,
+            isStreaming: j,
+            isPreviewOpen: $,
+            isExecutionPaneOnly: Y,
+            isPreviewDisabled: !(J || Y) || Yr,
+            showCodeToggle: !G,
+            isPreviewExportable: Vn,
+            isPreviewExportDisabled: Hn,
+            previewExportKind: Tn ?? void 0,
+            showConsoleToggle: Kn,
+            isConsoleOpen: Kn && at,
+            hasConsoleErrorOutput: Kn && lt,
+            isCodeOpen: K,
+            onPreviewClick: ai,
+            onPreviewExportClick: mr,
+            onPreviewHover: J ? cr.prefetch : void 0,
+            onConsoleToggle: Wr,
+            onCodeClick: si,
+            isShareable: Gn,
+            flushSave: zt,
+            language: Cn,
+            onCloseClick: Kr,
+            closeButtonRef: Pe
+        }), t[337] = Kr, t[338] = Dn, t[339] = u, t[340] = Nt, t[341] = zt, t[342] = lt, t[343] = K, t[344] = Y, t[345] = R, t[346] = Hn, t[347] = Vn, t[348] = Yr, t[349] = J, t[350] = $, t[351] = Gn, t[352] = j, t[353] = Kn, t[354] = at, t[355] = m, t[356] = si, t[357] = ai, t[358] = mr, t[359] = Wr, t[360] = Tn, t[361] = G, t[362] = Cn, t[363] = p, t[364] = Ii) : Ii = t[364];
+        let Li = R && `flex min-h-0 flex-1 flex-col`,
+            Ri = !R && `contents`,
+            zi;
+        t[365] !== Li || t[366] !== Ri ? (zi = k(Li, Ri), t[365] = Li, t[366] = Ri, t[367] = zi) : zi = t[367];
+        let Bi;
+        t[368] !== yi || t[369] !== R || t[370] !== $ || t[371] !== G || t[372] !== pi || t[373] !== wn || t[374] !== Ni ? (Bi = !G && !wn && !pi ? (0, Z.jsxs)(Vt, {
+            visible: !R,
+            className: k(R && `flex min-h-0 flex-1 flex-col border-0!`),
+            contentClassName: k(!R && `relative`, R && `flex min-h-0 flex-1 flex-col`),
+            children: [!R && (0, Z.jsxs)(Z.Fragment, {
+                children: [yi, !$ && (0, Z.jsx)(`div`, {
+                    className: `pointer-events-none absolute inset-x-4 top-12 bottom-4`,
+                    children: (0, Z.jsx)(kt, {
+                        top: `calc(var(--sticky-padding-top) + 48px)`,
+                        height: 1,
+                        className: `z-1!`
+                    })
+                })]
+            }), Ni]
+        }) : Ni, t[368] = yi, t[369] = R, t[370] = $, t[371] = G, t[372] = pi, t[373] = wn, t[374] = Ni, t[375] = Bi) : Bi = t[375];
+        let Vi;
+        t[376] !== zi || t[377] !== Bi ? (Vi = (0, Z.jsx)(`div`, {
+            className: zi,
+            children: Bi
+        }), t[376] = zi, t[377] = Bi, t[378] = Vi) : Vi = t[378];
+        let Hi;
+        t[379] !== un || t[380] !== Kr || t[381] !== ln || t[382] !== R || t[383] !== Wn || t[384] !== j || t[385] !== M || t[386] !== fn || t[387] !== on ? (Hi = Wn && (0, Z.jsx)(dr, {
+            isOpen: R && on == null,
+            isLoading: ln,
+            onSubmit: fn,
+            onCancelRequest: un,
+            onClose: Kr,
+            disabled: M || j || on != null
+        }), t[379] = un, t[380] = Kr, t[381] = ln, t[382] = R, t[383] = Wn, t[384] = j, t[385] = M, t[386] = fn, t[387] = on, t[388] = Hi) : Hi = t[388];
+        let Ui;
+        t[389] !== u || t[390] !== Nn || t[391] !== R || t[392] !== N || t[393] !== J || t[394] !== j || t[395] !== m || t[396] !== Pn || t[397] !== p ? (Ui = !R && J && !j && Nn && p != null && m != null && N && (0, Z.jsx)(`div`, {
+            className: k(`flex justify-end`, Pn ? `pointer-events-none absolute end-0 top-full z-1 mt-1` : `mt-1`),
+            "data-chart-feedback-row": !0,
+            children: (0, Z.jsx)(`div`, {
+                className: k(Pn && `pointer-events-auto`),
+                children: (0, Z.jsx)(It, {
+                    reference: {
+                        clientThreadId: p,
+                        messageId: m,
+                        referenceIndex: u
+                    }
+                })
+            })
+        }), t[389] = u, t[390] = Nn, t[391] = R, t[392] = N, t[393] = J, t[394] = j, t[395] = m, t[396] = Pn, t[397] = p, t[398] = Ui) : Ui = t[398];
+        let Wi;
+        return t[399] !== Kr || t[400] !== R || t[401] !== Pi || t[402] !== Fi || t[403] !== Ii || t[404] !== Vi || t[405] !== Hi || t[406] !== Ui ? (Wi = (0, Z.jsxs)(yt, {
+            ref: Be,
+            isFullscreen: R,
+            codeBlockRef: Me,
+            isEscapeCloseDisabled: Pi,
+            onEscapeClose: Kr,
+            firstElementRef: Pe,
+            lastElementRef: Fi,
+            children: [Ii, Vi, Hi, Ui]
+        }), t[399] = Kr, t[400] = R, t[401] = Pi, t[402] = Fi, t[403] = Ii, t[404] = Vi, t[405] = Hi, t[406] = Ui, t[407] = Wi) : Wi = t[407], Wi
+    }
+}));
+export {
+    Qn as n, mr as r, fr as t
+};
 //# sourceMappingURL=18e7d84e-129ky8qoaee0swtc.js.map

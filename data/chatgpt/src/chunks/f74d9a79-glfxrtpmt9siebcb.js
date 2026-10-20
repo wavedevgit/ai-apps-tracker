@@ -1,2 +1,143 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{J5 as t,JT as n,q5 as r,qT as i}from"./4813494d-qsuygr73qjc6rh65.js";import{Tn as a,Vn as o}from"./2340486e-komxp8tzs51ny4jj.js";import{RHn as s,zHn as c}from"./conversation-small-cawdu7il3ha6y70c.js";import{DC as l,EC as u}from"./30901919-jory365vq6ym5crx.js";var d,f,p,m=e((()=>{d=a(),f=o(),p=e=>{"use forget";let t=(0,d.c)(9),{linkName:n,profileEmail:r}=e,i;t[0]===r?i=t[1]:(i=r?.trim(),t[0]=r,t[1]=i);let a=i,o;t[2]===n?o=t[3]:(o=n?.trim(),t[2]=n,t[3]=o);let s=o,c=s===a?void 0:s,l;t[4]!==a||t[5]!==c?(l=[a,c].filter(Boolean),t[4]=a,t[5]=c,t[6]=l):l=t[6];let u=l.join(` · `);if(!u)return null;let p;return t[7]===u?p=t[8]:(p=(0,f.jsx)(`span`,{className:`text-token-text-secondary block text-base [overflow-wrap:anywhere] break-words`,children:u}),t[7]=u,t[8]=p),p}}));function h(e){return e.label}var g,_,v,y=e((()=>{g=a(),n(),c(),l(),t(),_=o(),v=e=>{"use forget";let t=(0,g.c)(37),{children:n,className:a,color:o,defaultOpen:c,disabled:l,onPrimaryAction:d,onSelectOption:f,size:p,splitActionOptions:m}=e,v;t[0]===a?v=t[1]:(v=r(`inline-flex min-w-0`,a),t[0]=a,t[1]=v);let y;t[2]===n?y=t[3]:(y=(0,_.jsx)(`span`,{className:`min-w-0 truncate`,children:n}),t[2]=n,t[3]=y);let b;t[4]!==o||t[5]!==l||t[6]!==d||t[7]!==p||t[8]!==y?(b=(0,_.jsx)(i,{className:`min-w-0 flex-1 rounded-e-none border-e-0 transition-colors`,color:o,contentsFullWidth:!0,contentWrapperClassName:`min-w-0`,disabled:l,onClick:d,size:p,type:`button`,children:y}),t[4]=o,t[5]=l,t[6]=d,t[7]=p,t[8]=y,t[9]=b):b=t[9];let x=o===`primary`&&`data-[state=open]:bg-token-interactive-bg-primary-hover`,S=o===`secondary`&&`data-[state=open]:bg-token-interactive-bg-secondary-hover`,C;t[10]!==x||t[11]!==S?(C=r(`rounded-s-none border-s-0 px-2 transition-colors`,x,S),t[10]=x,t[11]=S,t[12]=C):C=t[12];let w;t[13]===m?w=t[14]:(w=m.map(h).join(`, `),t[13]=m,t[14]=w);let T;t[15]===Symbol.for(`react.memo_cache_sentinel`)?(T=(0,_.jsx)(u,{className:`icon-sm`}),t[15]=T):T=t[15];let E;t[16]!==o||t[17]!==l||t[18]!==p||t[19]!==C||t[20]!==w?(E=(0,_.jsx)(s.BasicTrigger,{asChild:!0,children:(0,_.jsx)(i,{className:C,color:o,disabled:l,label:w,size:p,type:`button`,children:T})}),t[16]=o,t[17]=l,t[18]=p,t[19]=C,t[20]=w,t[21]=E):E=t[21];let D;t[22]!==v||t[23]!==b||t[24]!==E?(D=(0,_.jsxs)(`div`,{className:v,children:[b,E]}),t[22]=v,t[23]=b,t[24]=E,t[25]=D):D=t[25];let O;if(t[26]!==f||t[27]!==m){let e;t[29]===f?e=t[30]:(e=e=>(0,_.jsx)(s.Item,{className:`pe-2.5!`,label:e.label,onClick:t=>f(t,e.action)},e.label),t[29]=f,t[30]=e),O=m.map(e),t[26]=f,t[27]=m,t[28]=O}else O=t[28];let k;t[31]===O?k=t[32]:(k=(0,_.jsx)(s.Portal,{children:(0,_.jsx)(s.Content,{align:`end`,className:`w-max max-w-[calc(100vw-24px)]!`,sideOffset:8,size:`auto`,children:O})}),t[31]=O,t[32]=k);let A;return t[33]!==c||t[34]!==D||t[35]!==k?(A=(0,_.jsxs)(s.Root,{defaultOpen:c,children:[D,k]}),t[33]=c,t[34]=D,t[35]=k,t[36]=A):A=t[36],A}}));export{m as i,y as n,p as r,v as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    J5 as t,
+    JT as n,
+    q5 as r,
+    qT as i
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Tn as a,
+    Vn as o
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    RHn as s,
+    zHn as c
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    DC as l,
+    EC as u
+} from "./30901919-jory365vq6ym5crx.js";
+var d, f, p, m = e((() => {
+    d = a(), f = o(), p = e => {
+        "use forget";
+        let t = (0, d.c)(9),
+            {
+                linkName: n,
+                profileEmail: r
+            } = e,
+            i;
+        t[0] === r ? i = t[1] : (i = r?.trim(), t[0] = r, t[1] = i);
+        let a = i,
+            o;
+        t[2] === n ? o = t[3] : (o = n?.trim(), t[2] = n, t[3] = o);
+        let s = o,
+            c = s === a ? void 0 : s,
+            l;
+        t[4] !== a || t[5] !== c ? (l = [a, c].filter(Boolean), t[4] = a, t[5] = c, t[6] = l) : l = t[6];
+        let u = l.join(` · `);
+        if (!u) return null;
+        let p;
+        return t[7] === u ? p = t[8] : (p = (0, f.jsx)(`span`, {
+            className: `text-token-text-secondary block text-base [overflow-wrap:anywhere] break-words`,
+            children: u
+        }), t[7] = u, t[8] = p), p
+    }
+}));
+
+function h(e) {
+    return e.label
+}
+var g, _, v, y = e((() => {
+    g = a(), n(), c(), l(), t(), _ = o(), v = e => {
+        "use forget";
+        let t = (0, g.c)(37),
+            {
+                children: n,
+                className: a,
+                color: o,
+                defaultOpen: c,
+                disabled: l,
+                onPrimaryAction: d,
+                onSelectOption: f,
+                size: p,
+                splitActionOptions: m
+            } = e,
+            v;
+        t[0] === a ? v = t[1] : (v = r(`inline-flex min-w-0`, a), t[0] = a, t[1] = v);
+        let y;
+        t[2] === n ? y = t[3] : (y = (0, _.jsx)(`span`, {
+            className: `min-w-0 truncate`,
+            children: n
+        }), t[2] = n, t[3] = y);
+        let b;
+        t[4] !== o || t[5] !== l || t[6] !== d || t[7] !== p || t[8] !== y ? (b = (0, _.jsx)(i, {
+            className: `min-w-0 flex-1 rounded-e-none border-e-0 transition-colors`,
+            color: o,
+            contentsFullWidth: !0,
+            contentWrapperClassName: `min-w-0`,
+            disabled: l,
+            onClick: d,
+            size: p,
+            type: `button`,
+            children: y
+        }), t[4] = o, t[5] = l, t[6] = d, t[7] = p, t[8] = y, t[9] = b) : b = t[9];
+        let x = o === `primary` && `data-[state=open]:bg-token-interactive-bg-primary-hover`,
+            S = o === `secondary` && `data-[state=open]:bg-token-interactive-bg-secondary-hover`,
+            C;
+        t[10] !== x || t[11] !== S ? (C = r(`rounded-s-none border-s-0 px-2 transition-colors`, x, S), t[10] = x, t[11] = S, t[12] = C) : C = t[12];
+        let w;
+        t[13] === m ? w = t[14] : (w = m.map(h).join(`, `), t[13] = m, t[14] = w);
+        let T;
+        t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, _.jsx)(u, {
+            className: `icon-sm`
+        }), t[15] = T) : T = t[15];
+        let E;
+        t[16] !== o || t[17] !== l || t[18] !== p || t[19] !== C || t[20] !== w ? (E = (0, _.jsx)(s.BasicTrigger, {
+            asChild: !0,
+            children: (0, _.jsx)(i, {
+                className: C,
+                color: o,
+                disabled: l,
+                label: w,
+                size: p,
+                type: `button`,
+                children: T
+            })
+        }), t[16] = o, t[17] = l, t[18] = p, t[19] = C, t[20] = w, t[21] = E) : E = t[21];
+        let D;
+        t[22] !== v || t[23] !== b || t[24] !== E ? (D = (0, _.jsxs)(`div`, {
+            className: v,
+            children: [b, E]
+        }), t[22] = v, t[23] = b, t[24] = E, t[25] = D) : D = t[25];
+        let O;
+        if (t[26] !== f || t[27] !== m) {
+            let e;
+            t[29] === f ? e = t[30] : (e = e => (0, _.jsx)(s.Item, {
+                className: `pe-2.5!`,
+                label: e.label,
+                onClick: t => f(t, e.action)
+            }, e.label), t[29] = f, t[30] = e), O = m.map(e), t[26] = f, t[27] = m, t[28] = O
+        } else O = t[28];
+        let k;
+        t[31] === O ? k = t[32] : (k = (0, _.jsx)(s.Portal, {
+            children: (0, _.jsx)(s.Content, {
+                align: `end`,
+                className: `w-max max-w-[calc(100vw-24px)]!`,
+                sideOffset: 8,
+                size: `auto`,
+                children: O
+            })
+        }), t[31] = O, t[32] = k);
+        let A;
+        return t[33] !== c || t[34] !== D || t[35] !== k ? (A = (0, _.jsxs)(s.Root, {
+            defaultOpen: c,
+            children: [D, k]
+        }), t[33] = c, t[34] = D, t[35] = k, t[36] = A) : A = t[36], A
+    }
+}));
+export {
+    m as i, y as n, p as r, v as t
+};
 //# sourceMappingURL=f74d9a79-glfxrtpmt9siebcb.js.map

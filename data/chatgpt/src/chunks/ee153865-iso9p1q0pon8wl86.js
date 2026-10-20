@@ -1,2 +1,20 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n,r=e((()=>{t=new Set([`http:`,`https:`]),n=e=>{let n=e.trim();if(n===``)return;let r;try{r=new URL(n)}catch{return}return t.has(r.protocol)?r.href:void 0}}));export{r as n,n as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t, n, r = e((() => {
+    t = new Set([`http:`, `https:`]), n = e => {
+        let n = e.trim();
+        if (n === ``) return;
+        let r;
+        try {
+            r = new URL(n)
+        } catch {
+            return
+        }
+        return t.has(r.protocol) ? r.href : void 0
+    }
+}));
+export {
+    r as n, n as t
+};
 //# sourceMappingURL=ee153865-iso9p1q0pon8wl86.js.map

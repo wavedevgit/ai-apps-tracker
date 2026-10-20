@@ -1,2 +1,2 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$ as n,Hn as r,Pt as i,Ut as a}from"./2340486e-komxp8tzs51ny4jj.js";var o,s,c=e((()=>{n(),o=t(r()),s=a(function(){let e=(0,o.useRef)(!1),t=i();return(0,o.useEffect)(()=>{e.current||(e.current=!0,t(`/`,{replace:!0}))},[t]),null})}));e((()=>{c()}))();export{s as default};
-//# sourceMappingURL=chat._-onrdnhjj.js.map
+import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Ht as n,Nt as r,Q as i,Vn as a}from"./2340486e-i7pjxgdhv0bs6apg.js";var o,s,c=e((()=>{i(),o=t(a()),s=n(function(){let e=(0,o.useRef)(!1),t=r();return(0,o.useEffect)(()=>{e.current||(e.current=!0,t(`/`,{replace:!0}))},[t]),null})}));e((()=>{c()}))();export{s as default};
+//# sourceMappingURL=chat._-hw2qvnlo.js.map

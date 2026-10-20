@@ -1,2 +1,12 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e,t){return!e||e.length<=t?e:e.slice(0,t/2)+`…`+e.slice(-t/2)}var n=e((()=>{}));export{t as n,n as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e, t) {
+    return !e || e.length <= t ? e : e.slice(0, t / 2) + `…` + e.slice(-t / 2)
+}
+var n = e((() => {}));
+export {
+    t as n, n as t
+};
 //# sourceMappingURL=7271f1c9-eisaobgjylt9iv5o.js.map

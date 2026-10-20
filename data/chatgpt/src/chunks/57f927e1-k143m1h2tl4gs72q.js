@@ -1,3 +1,284 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/c87b043a-lrnux3ypccinxfsg.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-ed29bs6yiwucn7st.js","assets/2340486e-oc6d2eodbcrmxur3.js","assets/root-lelxp0l2.css","assets/conversation-small-l6tnsr2xfn2d55kk.js","assets/30901919-om7b3qf5hp4j9x4l.js","assets/c470f5ab-d0jxi6yggehv1yt2.js","assets/0e5afe53-goyw8fd3qndq8rq5.js","assets/conversation-small-ixfdle4i.css","assets/c2675c8c-fpv9s4kvd412dyap.js","assets/82782bc9-cz4jkhg31tycbqqf.js","assets/8b34dbc2-j8rcexxiltkm8ucr.js","assets/global-modals-lv5n3ujm.css"])))=>i.map(i=>d[i]);
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Az as t,F7 as n,Ga as r,J0 as i,JT as a,Tat as o,Ua as s,Y0 as c,hnt as l,j7 as u,jat as d,jz as f,pnt as p,qT as m}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as h,N as g,Nn as _,Rn as v,cn as y,ln as b,s as x,wn as S,zn as C}from"./2340486e-oc6d2eodbcrmxur3.js";import{Hst as w,Vst as T,bat as E,eot as D}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{TC as O,wC as k}from"./30901919-om7b3qf5hp4j9x4l.js";import{BS as A,GS as j,_a as M,gS as N,va as P}from"./c2675c8c-fpv9s4kvd412dyap.js";import{Bx as F,Hx as I,iS as L}from"./8b34dbc2-j8rcexxiltkm8ucr.js";function R(e){if(!(e instanceof Error)||!e.message)return null;let t=e instanceof o&&typeof e.detail?.message==`string`?e.detail.message:e.message;try{let e=A({type:j(),msg:j()}).safeParse(JSON.parse(t));if(e.success)return e.data.msg}catch{}return t}var z=e((()=>{d(),N()}));function B(e){let{open:t,onOpenChange:n,isSubmitting:r,...i}=e;return(0,G.jsx)(s,{for:K,withProps:{...i,open:t,onOpenChange:n,isSubmitting:r},open:t,disableLightDismiss:r,onClose:()=>n(!1)})}function V(e){let{leadingControl:t,trailingControl:n,...r}=e;return(0,G.jsx)(`div`,{className:`relative`,children:(0,G.jsx)(T,{...r,name:r.id,ariaLabel:!1,color:`tertiary`,autoCapitalize:`off`,containerInputClassName:`ps-4 pe-6`,insideContainerChildren:(0,G.jsxs)(G.Fragment,{children:[(0,G.jsx)(`span`,{className:`pointer-events-none absolute inset-y-0 start-0 flex items-center`,children:t}),(0,G.jsx)(`span`,{className:`pointer-events-none absolute inset-y-0 end-0 flex items-center`,children:n})]})})})}function H(e){let{variant:t,...n}=e;return(0,G.jsx)(m,{...n,color:t})}function U(e){return(0,G.jsx)(`p`,{className:`border-token-border-status-warning bg-token-bg-status-warning text-token-text-status-warning rounded-2xl border px-4 py-3 text-sm leading-5`,children:e})}var W,G,K,q,J,Y=e((()=>{W=S(),a(),w(),f(),r(),O(),M(),l(),n(),L(),E(),c(),x(),v(),z(),G=h(),b(),K=i(()=>y(()=>import(`./c87b043a-lrnux3ypccinxfsg.js`).then(e=>e.ProfileV2UsernameDialogContent),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13]))),q=e=>{"use forget";let t=(0,W.c)(15),{value:n,accountId:r,pageScope:i,isSaving:a,isProfileEditing:o,presentation:s,onEditStarted:c,onSaved:l}=e,u=s===void 0?`inline`:s,d=g(),f;t[0]===i?f=t[1]:(f=()=>p.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:i,action:F.CODEX_PROFILE_EDIT_ACTION_USERNAME_CHANGE_STARTED}),t[0]=i,t[1]=f);let m;t[2]!==l||t[3]!==i||t[4]!==d?(m=async e=>{let t;try{t=await P(e)}catch(e){let t=e;throw p.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:i,action:F.CODEX_PROFILE_EDIT_ACTION_SAVE_FAILED,profileDetailsUpdateApiStatus:I.CODEX_PROFILE_EDIT_SAVE_API_STATUS_NOT_ATTEMPTED,usernameUpdateApiStatus:I.CODEX_PROFILE_EDIT_SAVE_API_STATUS_FAILED}),t}d.invalidateQueries({queryKey:[`account-username`]}),p.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:i,action:F.CODEX_PROFILE_EDIT_ACTION_SAVE_SUCCEEDED,usernameUpdateApiStatus:I.CODEX_PROFILE_EDIT_SAVE_API_STATUS_SUCCEEDED}),l(t)},t[2]=l,t[3]=i,t[4]=d,t[5]=m):m=t[5];let h;return t[6]!==r||t[7]!==o||t[8]!==a||t[9]!==c||t[10]!==u||t[11]!==f||t[12]!==m||t[13]!==n?(h=(0,G.jsx)(J,{value:n,accountId:r,isSaving:a,isProfileEditing:o,presentation:u,onEditStarted:c,onChangeStarted:f,onSave:m}),t[6]=r,t[7]=o,t[8]=a,t[9]=c,t[10]=u,t[11]=f,t[12]=m,t[13]=n,t[14]=h):h=t[14],h},J=e=>{"use forget";let n=(0,W.c)(23),{value:r,accountId:i,isSaving:a,isProfileEditing:o,presentation:s,onClose:c,onEditStarted:l,onChangeStarted:d,onSave:f}=e,p=o!==void 0&&o,m=s===void 0?`inline`:s,h=C(),v=g(),y=m===`dialog`,b;n[0]!==a||n[1]!==m?(b=m===`inline`?void 0:e=>{let{children:t,...n}=e;return m===`dialog`?null:(0,G.jsxs)(`button`,{...n,type:`button`,disabled:a,className:`interactive-button interactive-bg-secondary flex w-full items-center justify-between gap-4 px-4 py-3 text-sm`,children:[(0,G.jsx)(_,{id:`profile.usernameInputLabel`,defaultMessage:`Username`}),(0,G.jsxs)(`span`,{className:`text-token-text-secondary flex min-w-0 items-center gap-2`,children:[(0,G.jsx)(`span`,{className:`truncate`,children:t}),(0,G.jsx)(k,{className:`icon-sm shrink-0`})]})]})},n[0]=a,n[1]=m,n[2]=b):b=n[2];let x;n[3]!==i||n[4]!==v?(x=e=>v.fetchQuery({queryKey:[`profile`,`username-availability`,i,e],queryFn:()=>u.safePost(`/wham/profiles/username/check`,{additionalHeaders:{"ChatGPT-Account-ID":i},requestBody:{username:e}}),retry:!1,staleTime:1e4}),n[3]=i,n[4]=v,n[5]=x):x=n[5];let S;n[6]===h?S=n[7]:(S=e=>R(e)??h.formatMessage({id:`profile.usernameUpdateError`,defaultMessage:`Unable to update username`}),n[6]=h,n[7]=S);let w;n[8]===Symbol.for(`react.memo_cache_sentinel`)?(w=(0,G.jsx)(t,{className:`size-4`}),n[8]=w):w=n[8];let T;return n[9]!==i||n[10]!==h||n[11]!==p||n[12]!==a||n[13]!==d||n[14]!==c||n[15]!==l||n[16]!==f||n[17]!==y||n[18]!==b||n[19]!==x||n[20]!==S||n[21]!==r?(T=(0,G.jsx)(D,{defaultOpen:y,onClose:c,value:r,accountId:i,isSaving:a,isProfileEditing:p,onEditStarted:l,intl:h,renderTrigger:b,checkAvailability:x,formatSaveError:S,onChangeStarted:d,onSave:f,renderDialog:B,renderInput:V,renderButton:H,renderWarning:U,spinner:w}),n[9]=i,n[10]=h,n[11]=p,n[12]=a,n[13]=d,n[14]=c,n[15]=l,n[16]=f,n[17]=y,n[18]=b,n[19]=x,n[20]=S,n[21]=r,n[22]=T):T=n[22],T}}));export{z as a,R as i,q as n,Y as r,J as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/c87b043a-lrnux3ypccinxfsg.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-ed29bs6yiwucn7st.js", "assets/2340486e-oc6d2eodbcrmxur3.js", "assets/root-lelxp0l2.css", "assets/conversation-small-l6tnsr2xfn2d55kk.js", "assets/30901919-om7b3qf5hp4j9x4l.js", "assets/c470f5ab-d0jxi6yggehv1yt2.js", "assets/0e5afe53-goyw8fd3qndq8rq5.js", "assets/conversation-small-ixfdle4i.css", "assets/c2675c8c-fpv9s4kvd412dyap.js", "assets/82782bc9-cz4jkhg31tycbqqf.js", "assets/8b34dbc2-j8rcexxiltkm8ucr.js", "assets/global-modals-lv5n3ujm.css"]))) => i.map(i => d[i]);
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Az as t,
+    F7 as n,
+    Ga as r,
+    J0 as i,
+    JT as a,
+    Tat as o,
+    Ua as s,
+    Y0 as c,
+    hnt as l,
+    j7 as u,
+    jat as d,
+    jz as f,
+    pnt as p,
+    qT as m
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as h,
+    N as g,
+    Nn as _,
+    Rn as v,
+    cn as y,
+    ln as b,
+    s as x,
+    wn as S,
+    zn as C
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    Hst as w,
+    Vst as T,
+    bat as E,
+    eot as D
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    TC as O,
+    wC as k
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+import {
+    BS as A,
+    GS as j,
+    _a as M,
+    gS as N,
+    va as P
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+import {
+    Bx as F,
+    Hx as I,
+    iS as L
+} from "./8b34dbc2-j8rcexxiltkm8ucr.js";
+
+function R(e) {
+    if (!(e instanceof Error) || !e.message) return null;
+    let t = e instanceof o && typeof e.detail?.message == `string` ? e.detail.message : e.message;
+    try {
+        let e = A({
+            type: j(),
+            msg: j()
+        }).safeParse(JSON.parse(t));
+        if (e.success) return e.data.msg
+    } catch {}
+    return t
+}
+var z = e((() => {
+    d(), N()
+}));
+
+function B(e) {
+    let {
+        open: t,
+        onOpenChange: n,
+        isSubmitting: r,
+        ...i
+    } = e;
+    return (0, G.jsx)(s, {
+        for: K,
+        withProps: {
+            ...i,
+            open: t,
+            onOpenChange: n,
+            isSubmitting: r
+        },
+        open: t,
+        disableLightDismiss: r,
+        onClose: () => n(!1)
+    })
+}
+
+function V(e) {
+    let {
+        leadingControl: t,
+        trailingControl: n,
+        ...r
+    } = e;
+    return (0, G.jsx)(`div`, {
+        className: `relative`,
+        children: (0, G.jsx)(T, {
+            ...r,
+            name: r.id,
+            ariaLabel: !1,
+            color: `tertiary`,
+            autoCapitalize: `off`,
+            containerInputClassName: `ps-4 pe-6`,
+            insideContainerChildren: (0, G.jsxs)(G.Fragment, {
+                children: [(0, G.jsx)(`span`, {
+                    className: `pointer-events-none absolute inset-y-0 start-0 flex items-center`,
+                    children: t
+                }), (0, G.jsx)(`span`, {
+                    className: `pointer-events-none absolute inset-y-0 end-0 flex items-center`,
+                    children: n
+                })]
+            })
+        })
+    })
+}
+
+function H(e) {
+    let {
+        variant: t,
+        ...n
+    } = e;
+    return (0, G.jsx)(m, {
+        ...n,
+        color: t
+    })
+}
+
+function U(e) {
+    return (0, G.jsx)(`p`, {
+        className: `border-token-border-status-warning bg-token-bg-status-warning text-token-text-status-warning rounded-2xl border px-4 py-3 text-sm leading-5`,
+        children: e
+    })
+}
+var W, G, K, q, J, Y = e((() => {
+    W = S(), a(), w(), f(), r(), O(), M(), l(), n(), L(), E(), c(), x(), v(), z(), G = h(), b(), K = i(() => y(() => import(`./c87b043a-lrnux3ypccinxfsg.js`).then(e => e.ProfileV2UsernameDialogContent), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))), q = e => {
+        "use forget";
+        let t = (0, W.c)(15),
+            {
+                value: n,
+                accountId: r,
+                pageScope: i,
+                isSaving: a,
+                isProfileEditing: o,
+                presentation: s,
+                onEditStarted: c,
+                onSaved: l
+            } = e,
+            u = s === void 0 ? `inline` : s,
+            d = g(),
+            f;
+        t[0] === i ? f = t[1] : (f = () => p.logStructuredEvent(`CodexProfileEditEvent`, {
+            pageScope: i,
+            action: F.CODEX_PROFILE_EDIT_ACTION_USERNAME_CHANGE_STARTED
+        }), t[0] = i, t[1] = f);
+        let m;
+        t[2] !== l || t[3] !== i || t[4] !== d ? (m = async e => {
+            let t;
+            try {
+                t = await P(e)
+            } catch (e) {
+                let t = e;
+                throw p.logStructuredEvent(`CodexProfileEditEvent`, {
+                    pageScope: i,
+                    action: F.CODEX_PROFILE_EDIT_ACTION_SAVE_FAILED,
+                    profileDetailsUpdateApiStatus: I.CODEX_PROFILE_EDIT_SAVE_API_STATUS_NOT_ATTEMPTED,
+                    usernameUpdateApiStatus: I.CODEX_PROFILE_EDIT_SAVE_API_STATUS_FAILED
+                }), t
+            }
+            d.invalidateQueries({
+                queryKey: [`account-username`]
+            }), p.logStructuredEvent(`CodexProfileEditEvent`, {
+                pageScope: i,
+                action: F.CODEX_PROFILE_EDIT_ACTION_SAVE_SUCCEEDED,
+                usernameUpdateApiStatus: I.CODEX_PROFILE_EDIT_SAVE_API_STATUS_SUCCEEDED
+            }), l(t)
+        }, t[2] = l, t[3] = i, t[4] = d, t[5] = m) : m = t[5];
+        let h;
+        return t[6] !== r || t[7] !== o || t[8] !== a || t[9] !== c || t[10] !== u || t[11] !== f || t[12] !== m || t[13] !== n ? (h = (0, G.jsx)(J, {
+            value: n,
+            accountId: r,
+            isSaving: a,
+            isProfileEditing: o,
+            presentation: u,
+            onEditStarted: c,
+            onChangeStarted: f,
+            onSave: m
+        }), t[6] = r, t[7] = o, t[8] = a, t[9] = c, t[10] = u, t[11] = f, t[12] = m, t[13] = n, t[14] = h) : h = t[14], h
+    }, J = e => {
+        "use forget";
+        let n = (0, W.c)(23),
+            {
+                value: r,
+                accountId: i,
+                isSaving: a,
+                isProfileEditing: o,
+                presentation: s,
+                onClose: c,
+                onEditStarted: l,
+                onChangeStarted: d,
+                onSave: f
+            } = e,
+            p = o !== void 0 && o,
+            m = s === void 0 ? `inline` : s,
+            h = C(),
+            v = g(),
+            y = m === `dialog`,
+            b;
+        n[0] !== a || n[1] !== m ? (b = m === `inline` ? void 0 : e => {
+            let {
+                children: t,
+                ...n
+            } = e;
+            return m === `dialog` ? null : (0, G.jsxs)(`button`, {
+                ...n,
+                type: `button`,
+                disabled: a,
+                className: `interactive-button interactive-bg-secondary flex w-full items-center justify-between gap-4 px-4 py-3 text-sm`,
+                children: [(0, G.jsx)(_, {
+                    id: `profile.usernameInputLabel`,
+                    defaultMessage: `Username`
+                }), (0, G.jsxs)(`span`, {
+                    className: `text-token-text-secondary flex min-w-0 items-center gap-2`,
+                    children: [(0, G.jsx)(`span`, {
+                        className: `truncate`,
+                        children: t
+                    }), (0, G.jsx)(k, {
+                        className: `icon-sm shrink-0`
+                    })]
+                })]
+            })
+        }, n[0] = a, n[1] = m, n[2] = b) : b = n[2];
+        let x;
+        n[3] !== i || n[4] !== v ? (x = e => v.fetchQuery({
+            queryKey: [`profile`, `username-availability`, i, e],
+            queryFn: () => u.safePost(`/wham/profiles/username/check`, {
+                additionalHeaders: {
+                    "ChatGPT-Account-ID": i
+                },
+                requestBody: {
+                    username: e
+                }
+            }),
+            retry: !1,
+            staleTime: 1e4
+        }), n[3] = i, n[4] = v, n[5] = x) : x = n[5];
+        let S;
+        n[6] === h ? S = n[7] : (S = e => R(e) ?? h.formatMessage({
+            id: `profile.usernameUpdateError`,
+            defaultMessage: `Unable to update username`
+        }), n[6] = h, n[7] = S);
+        let w;
+        n[8] === Symbol.for(`react.memo_cache_sentinel`) ? (w = (0, G.jsx)(t, {
+            className: `size-4`
+        }), n[8] = w) : w = n[8];
+        let T;
+        return n[9] !== i || n[10] !== h || n[11] !== p || n[12] !== a || n[13] !== d || n[14] !== c || n[15] !== l || n[16] !== f || n[17] !== y || n[18] !== b || n[19] !== x || n[20] !== S || n[21] !== r ? (T = (0, G.jsx)(D, {
+            defaultOpen: y,
+            onClose: c,
+            value: r,
+            accountId: i,
+            isSaving: a,
+            isProfileEditing: p,
+            onEditStarted: l,
+            intl: h,
+            renderTrigger: b,
+            checkAvailability: x,
+            formatSaveError: S,
+            onChangeStarted: d,
+            onSave: f,
+            renderDialog: B,
+            renderInput: V,
+            renderButton: H,
+            renderWarning: U,
+            spinner: w
+        }), n[9] = i, n[10] = h, n[11] = p, n[12] = a, n[13] = d, n[14] = c, n[15] = l, n[16] = f, n[17] = y, n[18] = b, n[19] = x, n[20] = S, n[21] = r, n[22] = T) : T = n[22], T
+    }
+}));
+export {
+    z as a, R as i, q as n, Y as r, J as t
+};
 //# sourceMappingURL=57f927e1-k143m1h2tl4gs72q.js.map

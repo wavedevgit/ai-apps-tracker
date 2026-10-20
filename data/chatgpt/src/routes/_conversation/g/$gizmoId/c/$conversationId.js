@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{$ as t,Ut as n}from"./2340486e-komxp8tzs51ny4jj.js";var r,i,a=e((()=>{t(),r=({params:e,serverLoader:t})=>e.gizmoId===`health`?t():null,i=n(function(){"use forget";return null})}));e((()=>{a()}))();export{r as clientLoader,i as default};
-//# sourceMappingURL=_conversation.g._gizmoId.c._conversationId-ce6nat0j.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Ht as t,Q as n}from"./2340486e-i7pjxgdhv0bs6apg.js";var r,i,a=e((()=>{n(),r=({params:e,serverLoader:t})=>e.gizmoId===`health`?t():null,i=t(function(){"use forget";return null})}));e((()=>{a()}))();export{r as clientLoader,i as default};
+//# sourceMappingURL=_conversation.g._gizmoId.c._conversationId-gn4xl6n7.js.map

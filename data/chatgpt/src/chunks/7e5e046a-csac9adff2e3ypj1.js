@@ -4507,7 +4507,7 @@ Error generating stack: ` + e.message + `
                         Bi(e, t)
                     }
                     while (1);
-                    return t && e.shellSuspendCounter++, Ol = Dl = null, J = r, A.H = i, A.A = a, X === null && (Y = null, Z = 0, Me()), o
+                return t && e.shellSuspendCounter++, Ol = Dl = null, J = r, A.H = i, A.A = a, X === null && (Y = null, Z = 0, Me()), o
             }
 
             function Ki() {
@@ -4585,7 +4585,7 @@ Error generating stack: ` + e.message + `
                         Bi(e, t)
                     }
                     while (1);
-                    return Ol = Dl = null, A.H = r, A.A = i, J = n, X === null ? (Y = null, Z = 0, Me(), $) : 0
+                return Ol = Dl = null, A.H = r, A.A = i, J = n, X === null ? (Y = null, Z = 0, Me(), $) : 0
             }
 
             function Ji() {

@@ -1,2 +1,13 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n,r,i=e((()=>{t=`#DFC8FE`,n=`bg-[#DFC8FE]`,r=`font-oai text-[48px] leading-[1.14] font-medium tracking-[-0.02em] md:text-[100px] md:leading-none md:font-normal`}));export{i,n,r,t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t, n, r, i = e((() => {
+    t = `#DFC8FE`, n = `bg-[#DFC8FE]`, r = `font-oai text-[48px] leading-[1.14] font-medium tracking-[-0.02em] md:text-[100px] md:leading-none md:font-normal`
+}));
+export {
+    i,
+    n,
+    r,
+    t
+};
 //# sourceMappingURL=f75c6596-hd1clrgicwul3oz2.js.map

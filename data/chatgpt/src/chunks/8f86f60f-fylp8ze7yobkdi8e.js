@@ -1,2 +1,102 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Az as t,JT as n,Pv as r,Sw as i,X_ as a,Zst as o,jst as s,jz as c,qT as l,ww as u}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as d,Nn as f,Rn as p,wn as m,zn as h}from"./2340486e-oc6d2eodbcrmxur3.js";function g(e){for(let t of[`sharepoint_admin`,`teams_admin`,`outlook_email_admin`])if(e.knowledgeConfig.some(({key:e})=>e===t))return t}function _(e){return a[y[e]]}function v(e,t){return t.get(_(e))}var y,b=e((()=>{o(),r(),y={sharepoint_admin:s.SHAREPOINT_ADMIN_CONNECTOR,teams_admin:s.TEAMS_ADMIN_CONNECTOR,outlook_email_admin:s.OUTLOOK_EMAIL_ADMIN_CONNECTOR}})),x,S,C,w=e((()=>{x=m(),n(),u(),c(),p(),S=d(),C=e=>{"use forget";let n=(0,x.c)(12),{onClose:r,hasError:a,onRetry:o}=e,s=a!==void 0&&a,c=h(),u;n[0]===c?u=n[1]:(u=c.formatMessage({id:`contextual-answers.admin.sync.setup.loading.title`,defaultMessage:`Sync setup`}),n[0]=c,n[1]=u);let d=s?`alert`:`status`,p;n[2]!==s||n[3]!==o?(p=s?(0,S.jsxs)(S.Fragment,{children:[(0,S.jsx)(f,{id:`contextual-answers.admin.sync.setup.loading.error`,defaultMessage:`We couldn't load sync setup. Please try again.`}),o&&(0,S.jsx)(l,{color:`secondary`,onClick:o,children:(0,S.jsx)(f,{id:`contextual-answers.admin.sync.setup.loading.retry`,defaultMessage:`Retry`})})]}):(0,S.jsxs)(S.Fragment,{children:[(0,S.jsx)(t,{}),(0,S.jsx)(f,{id:`contextual-answers.admin.sync.setup.loading.status`,defaultMessage:`Loading sync setup…`})]}),n[2]=s,n[3]=o,n[4]=p):p=n[4];let m;n[5]!==d||n[6]!==p?(m=(0,S.jsx)(`div`,{className:`flex min-h-40 flex-col items-center justify-center gap-4 p-6 text-center`,role:d,children:p}),n[5]=d,n[6]=p,n[7]=m):m=n[7];let g;return n[8]!==r||n[9]!==u||n[10]!==m?(g=(0,S.jsx)(i,{testId:`modal-microsoft-admin-sync-loading`,isOpen:!0,onClose:r,size:`custom`,className:`max-w-[420px]`,title:u,children:m}),n[8]=r,n[9]=u,n[10]=m,n[11]=g):g=n[11],g}}));export{g as a,_ as i,w as n,b as o,v as r,C as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Az as t,
+    JT as n,
+    Pv as r,
+    Sw as i,
+    X_ as a,
+    Zst as o,
+    jst as s,
+    jz as c,
+    qT as l,
+    ww as u
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as d,
+    Nn as f,
+    Rn as p,
+    wn as m,
+    zn as h
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+
+function g(e) {
+    for (let t of [`sharepoint_admin`, `teams_admin`, `outlook_email_admin`])
+        if (e.knowledgeConfig.some(({
+                key: e
+            }) => e === t)) return t
+}
+
+function _(e) {
+    return a[y[e]]
+}
+
+function v(e, t) {
+    return t.get(_(e))
+}
+var y, b = e((() => {
+        o(), r(), y = {
+            sharepoint_admin: s.SHAREPOINT_ADMIN_CONNECTOR,
+            teams_admin: s.TEAMS_ADMIN_CONNECTOR,
+            outlook_email_admin: s.OUTLOOK_EMAIL_ADMIN_CONNECTOR
+        }
+    })),
+    x, S, C, w = e((() => {
+        x = m(), n(), u(), c(), p(), S = d(), C = e => {
+            "use forget";
+            let n = (0, x.c)(12),
+                {
+                    onClose: r,
+                    hasError: a,
+                    onRetry: o
+                } = e,
+                s = a !== void 0 && a,
+                c = h(),
+                u;
+            n[0] === c ? u = n[1] : (u = c.formatMessage({
+                id: `contextual-answers.admin.sync.setup.loading.title`,
+                defaultMessage: `Sync setup`
+            }), n[0] = c, n[1] = u);
+            let d = s ? `alert` : `status`,
+                p;
+            n[2] !== s || n[3] !== o ? (p = s ? (0, S.jsxs)(S.Fragment, {
+                children: [(0, S.jsx)(f, {
+                    id: `contextual-answers.admin.sync.setup.loading.error`,
+                    defaultMessage: `We couldn't load sync setup. Please try again.`
+                }), o && (0, S.jsx)(l, {
+                    color: `secondary`,
+                    onClick: o,
+                    children: (0, S.jsx)(f, {
+                        id: `contextual-answers.admin.sync.setup.loading.retry`,
+                        defaultMessage: `Retry`
+                    })
+                })]
+            }) : (0, S.jsxs)(S.Fragment, {
+                children: [(0, S.jsx)(t, {}), (0, S.jsx)(f, {
+                    id: `contextual-answers.admin.sync.setup.loading.status`,
+                    defaultMessage: `Loading sync setup…`
+                })]
+            }), n[2] = s, n[3] = o, n[4] = p) : p = n[4];
+            let m;
+            n[5] !== d || n[6] !== p ? (m = (0, S.jsx)(`div`, {
+                className: `flex min-h-40 flex-col items-center justify-center gap-4 p-6 text-center`,
+                role: d,
+                children: p
+            }), n[5] = d, n[6] = p, n[7] = m) : m = n[7];
+            let g;
+            return n[8] !== r || n[9] !== u || n[10] !== m ? (g = (0, S.jsx)(i, {
+                testId: `modal-microsoft-admin-sync-loading`,
+                isOpen: !0,
+                onClose: r,
+                size: `custom`,
+                className: `max-w-[420px]`,
+                title: u,
+                children: m
+            }), n[8] = r, n[9] = u, n[10] = m, n[11] = g) : g = n[11], g
+        }
+    }));
+export {
+    g as a, _ as i, w as n, b as o, v as r, C as t
+};
 //# sourceMappingURL=8f86f60f-fylp8ze7yobkdi8e.js.map

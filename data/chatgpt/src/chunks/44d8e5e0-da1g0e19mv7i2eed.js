@@ -1,2 +1,75 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bn as t,Rn as n,wn as r,zn as i}from"./2340486e-oc6d2eodbcrmxur3.js";import{vn as a}from"./1c919af1-abbe8u4rjagje3yr.js";import{a as o,i as s}from"./707eab0c-co82iasy3ghgw11m.js";import{t as c}from"./a35abcd6-o5uzbzp1jprs3y1b.js";var l,u,d,f=e((()=>{l=r(),c(),s(),n(),u=t(),d=e=>{"use forget";let t=(0,l.c)(14),{pluginName:n,onClick:r,size:s}=e,c=s===void 0?`sm`:s,d=i(),f;t[0]===d?f=t[1]:(f=d.formatMessage({id:`admin.plugins.table.verified.icon.label`,defaultMessage:`OpenAI verified`}),t[0]=d,t[1]=f);let p=f,m=c===`md`?`size-5`:`size-4`,h=`absolute -end-1 -bottom-1 z-[1] inline-flex ${m} shrink-0 rounded-full`,g=`${m} shrink-0 rounded-full bg-white text-[#004f99]`,_;t[2]===g?_=t[3]:(_=(0,u.jsx)(a,{"aria-hidden":!0,className:g}),t[2]=g,t[3]=_);let v=_,y;t[4]!==h||t[5]!==v||t[6]!==d||t[7]!==r||t[8]!==n||t[9]!==p?(y=r==null?(0,u.jsx)(`span`,{role:`img`,"aria-label":p,className:h,children:v}):(0,u.jsx)(`button`,{type:`button`,"aria-label":d.formatMessage({id:`admin.plugins.table.verified.icon.button.label`,defaultMessage:`View details for {name}. OpenAI verified.`},{name:n}),className:`keyboard-focused:focus-ring pointer-events-auto ${h} cursor-help outline-none`,onClick:r,children:v}),t[4]=h,t[5]=v,t[6]=d,t[7]=r,t[8]=n,t[9]=p,t[10]=y):y=t[10];let b;return t[11]!==y||t[12]!==p?(b=(0,u.jsx)(o,{compact:!0,content:p,children:y}),t[11]=y,t[12]=p,t[13]=b):b=t[13],b}}));export{f as n,d as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bn as t,
+    Rn as n,
+    wn as r,
+    zn as i
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    vn as a
+} from "./1c919af1-abbe8u4rjagje3yr.js";
+import {
+    a as o,
+    i as s
+} from "./707eab0c-co82iasy3ghgw11m.js";
+import {
+    t as c
+} from "./a35abcd6-o5uzbzp1jprs3y1b.js";
+var l, u, d, f = e((() => {
+    l = r(), c(), s(), n(), u = t(), d = e => {
+        "use forget";
+        let t = (0, l.c)(14),
+            {
+                pluginName: n,
+                onClick: r,
+                size: s
+            } = e,
+            c = s === void 0 ? `sm` : s,
+            d = i(),
+            f;
+        t[0] === d ? f = t[1] : (f = d.formatMessage({
+            id: `admin.plugins.table.verified.icon.label`,
+            defaultMessage: `OpenAI verified`
+        }), t[0] = d, t[1] = f);
+        let p = f,
+            m = c === `md` ? `size-5` : `size-4`,
+            h = `absolute -end-1 -bottom-1 z-[1] inline-flex ${m} shrink-0 rounded-full`,
+            g = `${m} shrink-0 rounded-full bg-white text-[#004f99]`,
+            _;
+        t[2] === g ? _ = t[3] : (_ = (0, u.jsx)(a, {
+            "aria-hidden": !0,
+            className: g
+        }), t[2] = g, t[3] = _);
+        let v = _,
+            y;
+        t[4] !== h || t[5] !== v || t[6] !== d || t[7] !== r || t[8] !== n || t[9] !== p ? (y = r == null ? (0, u.jsx)(`span`, {
+            role: `img`,
+            "aria-label": p,
+            className: h,
+            children: v
+        }) : (0, u.jsx)(`button`, {
+            type: `button`,
+            "aria-label": d.formatMessage({
+                id: `admin.plugins.table.verified.icon.button.label`,
+                defaultMessage: `View details for {name}. OpenAI verified.`
+            }, {
+                name: n
+            }),
+            className: `keyboard-focused:focus-ring pointer-events-auto ${h} cursor-help outline-none`,
+            onClick: r,
+            children: v
+        }), t[4] = h, t[5] = v, t[6] = d, t[7] = r, t[8] = n, t[9] = p, t[10] = y) : y = t[10];
+        let b;
+        return t[11] !== y || t[12] !== p ? (b = (0, u.jsx)(o, {
+            compact: !0,
+            content: p,
+            children: y
+        }), t[11] = y, t[12] = p, t[13] = b) : b = t[13], b
+    }
+}));
+export {
+    f as n, d as t
+};
 //# sourceMappingURL=44d8e5e0-da1g0e19mv7i2eed.js.map

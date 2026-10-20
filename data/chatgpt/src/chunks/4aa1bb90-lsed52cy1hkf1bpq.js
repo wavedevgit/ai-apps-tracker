@@ -1,2 +1,1114 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{BE as t,Dq as n,GE as r,HE as i,Het as a,JE as o,KE as s,Mq as c,Pq as l,ctt as u,dtt as d,ftt as f,nX as p,ptt as ee,qE as te,rX as ne,tX as re}from"./4813494d-ed29bs6yiwucn7st.js";import{$j as ie,Fz as ae,Iz as oe,Lz as se,Rz as ce,Xgt as le,Zgt as ue,aft as de,bBt as fe,eS as pe,nS as me,oft as he,tS as ge,yBt as _e,zz as ve}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{BS as m,CS as ye,DS as be,ES as h,FS as g,GS as _,HS as xe,IS as v,JS as y,Jv as Se,MS as Ce,OS as we,QS as Te,TS as b,US as x,VS as S,YS as Ee,Yv as De,gS as Oe,qS as C,vS as ke,xS as w,zS as T}from"./c2675c8c-fpv9s4kvd412dyap.js";import{r as Ae,t as je}from"./5422a199-ohc0ujx944q7esd3.js";var Me=e((()=>{ke()})),Ne=e((()=>{Me()})),Pe,E,Fe,Ie,Le,Re,D,O,k,A,j,M,N,P,ze,Be,Ve,He,Ue,We,Ge,Ke,qe,F,I,Je,Ye,Xe,Ze,Qe,$e,et,tt,nt,rt,it,at,ot,st,ct,lt,L,R,ut,z,dt,ft,pt,mt,ht,gt,_t,vt,yt,bt,xt,B,St,V,H,Ct,wt,Tt,Et,Dt,Ot,U,kt,At,jt,Mt,Nt,Pt,Ft,It,Lt,Rt,zt,Bt,Vt,Ht,Ut,Wt,W,G,K,Gt,Kt,qt,q,Jt,Yt,Xt,Zt,Qt,$t,en,tn,nn,rn,an,on,sn,cn,ln,un,dn,fn,pn,mn,hn,gn,J,_n,vn,yn,bn,xn,Sn,Cn,wn,Tn,En,Dn,On,kn,An,jn,Mn,Nn,Pn,Fn,In,Ln,Rn,zn,Bn,Vn,Hn,Un,Wn,Gn,Kn,qn,Jn,Yn,Xn=e((()=>{Ne(),Pe=`io.modelcontextprotocol/related-task`,E=be(e=>e!==null&&(typeof e==`object`||typeof e==`function`)),Fe=C([_(),T().int()]),Ie=_(),v({ttl:C([T(),ye()]).optional(),pollInterval:T().optional()}),Le=m({ttl:T().optional()}),Re=m({taskId:_()}),D=v({progressToken:Fe.optional(),[Pe]:Re.optional()}),O=m({_meta:D.optional()}),k=O.extend({task:Le.optional()}),A=m({method:_(),params:O.loose().optional()}),j=m({_meta:D.optional()}),M=m({method:_(),params:j.loose().optional()}),N=v({_meta:D.optional()}),P=C([_(),T().int()]),ze=m({jsonrpc:g(`2.0`),id:P,...A.shape}).strict(),Be=m({jsonrpc:g(`2.0`),...M.shape}).strict(),Ve=m({jsonrpc:g(`2.0`),id:P,result:N}).strict(),(function(e){e[e.ConnectionClosed=-32e3]=`ConnectionClosed`,e[e.RequestTimeout=-32001]=`RequestTimeout`,e[e.ParseError=-32700]=`ParseError`,e[e.InvalidRequest=-32600]=`InvalidRequest`,e[e.MethodNotFound=-32601]=`MethodNotFound`,e[e.InvalidParams=-32602]=`InvalidParams`,e[e.InternalError=-32603]=`InternalError`,e[e.UrlElicitationRequired=-32042]=`UrlElicitationRequired`})(He||={}),Ue=m({jsonrpc:g(`2.0`),id:P.optional(),error:m({code:T().int(),message:_(),data:y().optional()})}).strict(),C([ze,Be,Ve,Ue]),C([Ve,Ue]),We=N.strict(),Ge=j.extend({requestId:P.optional(),reason:_().optional()}),Ke=M.extend({method:g(`notifications/cancelled`),params:Ge}),qe=m({src:_(),mimeType:_().optional(),sizes:b(_()).optional(),theme:w([`light`,`dark`]).optional()}),F=m({icons:b(qe).optional()}),I=m({name:_(),title:_().optional()}),Je=I.extend({...I.shape,...F.shape,version:_(),websiteUrl:_().optional(),description:_().optional()}),Ye=Ce(m({applyDefaults:h().optional()}),x(_(),y())),Xe=xe(e=>e&&typeof e==`object`&&!Array.isArray(e)&&Object.keys(e).length===0?{form:{}}:e,Ce(m({form:Ye.optional(),url:E.optional()}),x(_(),y()).optional())),Ze=v({list:E.optional(),cancel:E.optional(),requests:v({sampling:v({createMessage:E.optional()}).optional(),elicitation:v({create:E.optional()}).optional()}).optional()}),Qe=v({list:E.optional(),cancel:E.optional(),requests:v({tools:v({call:E.optional()}).optional()}).optional()}),$e=m({experimental:x(_(),E).optional(),sampling:m({context:E.optional(),tools:E.optional()}).optional(),elicitation:Xe.optional(),roots:m({listChanged:h().optional()}).optional(),tasks:Ze.optional()}),et=O.extend({protocolVersion:_(),capabilities:$e,clientInfo:Je}),tt=A.extend({method:g(`initialize`),params:et}),nt=m({experimental:x(_(),E).optional(),logging:E.optional(),completions:E.optional(),prompts:m({listChanged:h().optional()}).optional(),resources:m({subscribe:h().optional(),listChanged:h().optional()}).optional(),tools:m({listChanged:h().optional()}).optional(),tasks:Qe.optional()}),rt=N.extend({protocolVersion:_(),capabilities:nt,serverInfo:Je,instructions:_().optional()}),it=M.extend({method:g(`notifications/initialized`),params:j.optional()}),at=A.extend({method:g(`ping`),params:O.optional()}),ot=m({progress:T(),total:S(T()),message:S(_())}),st=m({...j.shape,...ot.shape,progressToken:Fe}),ct=M.extend({method:g(`notifications/progress`),params:st}),lt=O.extend({cursor:Ie.optional()}),L=A.extend({params:lt.optional()}),R=N.extend({nextCursor:Ie.optional()}),ut=w([`working`,`input_required`,`completed`,`failed`,`cancelled`]),z=m({taskId:_(),status:ut,ttl:C([T(),ye()]),createdAt:_(),lastUpdatedAt:_(),pollInterval:S(T()),statusMessage:S(_())}),dt=N.extend({task:z}),ft=j.merge(z),pt=M.extend({method:g(`notifications/tasks/status`),params:ft}),mt=A.extend({method:g(`tasks/get`),params:O.extend({taskId:_()})}),ht=N.merge(z),gt=A.extend({method:g(`tasks/result`),params:O.extend({taskId:_()})}),N.loose(),_t=L.extend({method:g(`tasks/list`)}),vt=R.extend({tasks:b(z)}),yt=A.extend({method:g(`tasks/cancel`),params:O.extend({taskId:_()})}),N.merge(z),bt=m({uri:_(),mimeType:S(_()),_meta:x(_(),y()).optional()}),xt=bt.extend({text:_()}),B=_().refine(e=>{try{return atob(e),!0}catch{return!1}},{message:`Invalid Base64 string`}),St=bt.extend({blob:B}),V=w([`user`,`assistant`]),H=m({audience:b(V).optional(),priority:T().min(0).max(1).optional(),lastModified:Te({offset:!0}).optional()}),Ct=m({...I.shape,...F.shape,uri:_(),description:S(_()),mimeType:S(_()),annotations:H.optional(),_meta:S(v({}))}),wt=m({...I.shape,...F.shape,uriTemplate:_(),description:S(_()),mimeType:S(_()),annotations:H.optional(),_meta:S(v({}))}),Tt=L.extend({method:g(`resources/list`)}),Et=R.extend({resources:b(Ct)}),Dt=L.extend({method:g(`resources/templates/list`)}),Ot=R.extend({resourceTemplates:b(wt)}),U=O.extend({uri:_()}),kt=U,At=A.extend({method:g(`resources/read`),params:kt}),jt=N.extend({contents:b(C([xt,St]))}),Mt=M.extend({method:g(`notifications/resources/list_changed`),params:j.optional()}),Nt=U,Pt=A.extend({method:g(`resources/subscribe`),params:Nt}),Ft=U,It=A.extend({method:g(`resources/unsubscribe`),params:Ft}),Lt=j.extend({uri:_()}),Rt=M.extend({method:g(`notifications/resources/updated`),params:Lt}),zt=m({name:_(),description:S(_()),required:S(h())}),Bt=m({...I.shape,...F.shape,description:S(_()),arguments:S(b(zt)),_meta:S(v({}))}),Vt=L.extend({method:g(`prompts/list`)}),Ht=R.extend({prompts:b(Bt)}),Ut=O.extend({name:_(),arguments:x(_(),_()).optional()}),Wt=A.extend({method:g(`prompts/get`),params:Ut}),W=m({type:g(`text`),text:_(),annotations:H.optional(),_meta:x(_(),y()).optional()}),G=m({type:g(`image`),data:B,mimeType:_(),annotations:H.optional(),_meta:x(_(),y()).optional()}),K=m({type:g(`audio`),data:B,mimeType:_(),annotations:H.optional(),_meta:x(_(),y()).optional()}),Gt=m({type:g(`tool_use`),name:_(),id:_(),input:x(_(),y()),_meta:x(_(),y()).optional()}),Kt=m({type:g(`resource`),resource:C([xt,St]),annotations:H.optional(),_meta:x(_(),y()).optional()}),qt=Ct.extend({type:g(`resource_link`)}),q=C([W,G,K,qt,Kt]),Jt=m({role:V,content:q}),Yt=N.extend({description:_().optional(),messages:b(Jt)}),Xt=M.extend({method:g(`notifications/prompts/list_changed`),params:j.optional()}),Zt=m({title:_().optional(),readOnlyHint:h().optional(),destructiveHint:h().optional(),idempotentHint:h().optional(),openWorldHint:h().optional()}),Qt=m({taskSupport:w([`required`,`optional`,`forbidden`]).optional()}),$t=m({...I.shape,...F.shape,description:_().optional(),inputSchema:m({type:g(`object`),properties:x(_(),E).optional(),required:b(_()).optional()}).catchall(y()),outputSchema:m({type:g(`object`),properties:x(_(),E).optional(),required:b(_()).optional()}).catchall(y()).optional(),annotations:Zt.optional(),execution:Qt.optional(),_meta:x(_(),y()).optional()}),en=L.extend({method:g(`tools/list`)}),tn=R.extend({tools:b($t)}),nn=N.extend({content:b(q).default([]),structuredContent:x(_(),y()).optional(),isError:h().optional()}),nn.or(N.extend({toolResult:y()})),rn=k.extend({name:_(),arguments:x(_(),y()).optional()}),an=A.extend({method:g(`tools/call`),params:rn}),on=M.extend({method:g(`notifications/tools/list_changed`),params:j.optional()}),m({autoRefresh:h().default(!0),debounceMs:T().int().nonnegative().default(300)}),sn=w([`debug`,`info`,`notice`,`warning`,`error`,`critical`,`alert`,`emergency`]),cn=O.extend({level:sn}),ln=A.extend({method:g(`logging/setLevel`),params:cn}),un=j.extend({level:sn,logger:_().optional(),data:y()}),dn=M.extend({method:g(`notifications/message`),params:un}),fn=m({name:_().optional()}),pn=m({hints:b(fn).optional(),costPriority:T().min(0).max(1).optional(),speedPriority:T().min(0).max(1).optional(),intelligencePriority:T().min(0).max(1).optional()}),mn=m({mode:w([`auto`,`required`,`none`]).optional()}),hn=m({type:g(`tool_result`),toolUseId:_().describe(`The unique identifier for the corresponding tool call.`),content:b(q).default([]),structuredContent:m({}).loose().optional(),isError:h().optional(),_meta:x(_(),y()).optional()}),gn=we(`type`,[W,G,K]),J=we(`type`,[W,G,K,Gt,hn]),_n=m({role:V,content:C([J,b(J)]),_meta:x(_(),y()).optional()}),vn=k.extend({messages:b(_n),modelPreferences:pn.optional(),systemPrompt:_().optional(),includeContext:w([`none`,`thisServer`,`allServers`]).optional(),temperature:T().optional(),maxTokens:T().int(),stopSequences:b(_()).optional(),metadata:E.optional(),tools:b($t).optional(),toolChoice:mn.optional()}),yn=A.extend({method:g(`sampling/createMessage`),params:vn}),bn=N.extend({model:_(),stopReason:S(w([`endTurn`,`stopSequence`,`maxTokens`]).or(_())),role:V,content:gn}),xn=N.extend({model:_(),stopReason:S(w([`endTurn`,`stopSequence`,`maxTokens`,`toolUse`]).or(_())),role:V,content:C([J,b(J)])}),Sn=m({type:g(`boolean`),title:_().optional(),description:_().optional(),default:h().optional()}),Cn=m({type:g(`string`),title:_().optional(),description:_().optional(),minLength:T().optional(),maxLength:T().optional(),format:w([`email`,`uri`,`date`,`date-time`]).optional(),default:_().optional()}),wn=m({type:w([`number`,`integer`]),title:_().optional(),description:_().optional(),minimum:T().optional(),maximum:T().optional(),default:T().optional()}),Tn=m({type:g(`string`),title:_().optional(),description:_().optional(),enum:b(_()),default:_().optional()}),En=m({type:g(`string`),title:_().optional(),description:_().optional(),oneOf:b(m({const:_(),title:_()})),default:_().optional()}),Dn=m({type:g(`string`),title:_().optional(),description:_().optional(),enum:b(_()),enumNames:b(_()).optional(),default:_().optional()}),On=C([Tn,En]),kn=m({type:g(`array`),title:_().optional(),description:_().optional(),minItems:T().optional(),maxItems:T().optional(),items:m({type:g(`string`),enum:b(_())}),default:b(_()).optional()}),An=m({type:g(`array`),title:_().optional(),description:_().optional(),minItems:T().optional(),maxItems:T().optional(),items:m({anyOf:b(m({const:_(),title:_()}))}),default:b(_()).optional()}),jn=C([kn,An]),Mn=C([Dn,On,jn]),Nn=C([Mn,Sn,Cn,wn]),Pn=k.extend({mode:g(`form`).optional(),message:_(),requestedSchema:m({type:g(`object`),properties:x(_(),Nn),required:b(_()).optional()})}),Fn=k.extend({mode:g(`url`),message:_(),elicitationId:_(),url:_().url()}),In=C([Pn,Fn]),Ln=A.extend({method:g(`elicitation/create`),params:In}),Rn=j.extend({elicitationId:_()}),zn=M.extend({method:g(`notifications/elicitation/complete`),params:Rn}),Bn=N.extend({action:w([`accept`,`decline`,`cancel`]),content:xe(e=>e===null?void 0:e,x(_(),C([_(),T(),h(),b(_())])).optional())}),Vn=m({type:g(`ref/resource`),uri:_()}),Hn=m({type:g(`ref/prompt`),name:_()}),Un=O.extend({ref:C([Hn,Vn]),argument:m({name:_(),value:_()}),context:m({arguments:x(_(),_()).optional()}).optional()}),Wn=A.extend({method:g(`completion/complete`),params:Un}),Gn=N.extend({completion:v({values:b(_()).max(100),total:S(T().int()),hasMore:S(h())})}),Kn=m({uri:_().startsWith(`file://`),name:_().optional(),_meta:x(_(),y()).optional()}),qn=A.extend({method:g(`roots/list`),params:O.optional()}),Jn=N.extend({roots:b(Kn)}),Yn=M.extend({method:g(`notifications/roots/list_changed`),params:j.optional()}),C([at,tt,Wn,ln,Wt,Vt,Tt,Dt,At,Pt,It,an,en,mt,gt,_t,yt]),C([Ke,ct,it,Yn,pt]),C([We,bn,xn,Bn,Jn,ht,vt,dt]),C([at,yn,Ln,qn,mt,gt,_t,yt]),C([Ke,ct,dn,Rt,Mt,on,Xt,pt,zn]),C([We,rt,Gn,Yt,Ht,Et,Ot,jt,nn,tn,ht,vt,dt])}));function Zn(e,t){return fe(e,[e=>e.theme===t,e=>e.theme==null,e=>e.sizes==null||e.sizes.includes(`any`)?1/0:Math.max(0,...e.sizes.map(e=>{let[t,n]=e.split(`x`).map(Number);return t*n}))],[`desc`,`desc`,`desc`])[0]?.src}var Qn,$n,er,tr,Y,X=e((()=>{Xn(),_e(),Oe(),je(),Qn=16384,$n=Ee({protocol:/^https?$/u}).transform(e=>new URL(e)).refine(e=>e.username===``&&e.password===``),er=/^image\/(png|jpeg|jpg|gif|webp|svg\+xml|x-icon|vnd\.microsoft\.icon)$/u,tr=qe.extend({src:_().trim().min(1).max(Qn).refine(e=>{if(/[\u0000-\u0020\u007f]/u.test(e))return!1;if(!e.startsWith(`data:`))return $n.safeParse(e).success;let t=Ae(e);return t!=null&&er.test(t.mimeType)&&e.indexOf(`,`)<e.length-1}),mimeType:_().regex(er).optional(),sizes:b(_().max(32).regex(/^(any|[1-9][0-9]*x[1-9][0-9]*)$/u)).max(8).optional()}).strip(),Y=b(tr.optional().catch(void 0)).max(8).transform(e=>e.filter(e=>e!=null)).refine(e=>e.reduce((e,t)=>e+t.src.length,0)<=Qn).optional().catch(void 0)})),nr,rr=e((()=>{Oe(),X(),nr=b(m({id:_().regex(/^[a-z][a-z0-9_-]{0,63}$/u),title:_().trim().min(1).max(128).refine(e=>!/\p{Cc}/u.test(e)),icons:Y,accessMode:w([`included`,`connected`,`web`]).optional(),delayMinutes:T().int().min(1).max(10080).optional()})).max(32)}));function ir(e){return e.providerId==null?e.capabilityId==null?e.id:`${e.id}:${e.capabilityId}`:`${e.id}:provider:${e.providerId}:${e.accessMode??``}`}function ar(e,t,n=[],i=[]){let a=or(e,t,n),o=new Map,c=new Set,l=new Set;for(let t of e){let e=t.invocation;if(e==null)continue;let n=fr(e,a);if(n==null)continue;let i=r(n.id);if(e.sourceProviders!==void 0){if(e.sourceProviders.length===0)continue;l.add(i),c.add(i);for(let[e,t]of o)r(t.id)===i&&t.providerId==null&&o.delete(e);for(let t of e.sourceProviders){let r=`${i}:provider:${t.id}:${t.accessMode??``}`,a=o.get(r);o.set(r,{...n,name:t.title,providerId:t.id,accessMode:t.accessMode,sourceIcons:t.icons??a?.sourceIcons,sourceConnectorIds:[...new Set([...a?.sourceConnectorIds??[],e.connectorId])],delayMinutes:Math.max(t.delayMinutes??0,a?.delayMinutes??0)||void 0})}continue}if(!l.has(i))if(e.capabilityId!=null&&e.capabilityName!=null){let t=o.get(i);o.delete(i),c.add(i);let r=`${i}:${e.capabilityId}`,a=o.get(r),s=e.sourceIcons??a?.sourceIcons,l=[...new Set([...a?.sourceConnectorIds??[],t?.id,a?.id,e.connectorId].filter(e=>e!=null&&e!==n.id))],u={...n,name:e.capabilityName,capabilityId:e.capabilityId,...s==null?{}:{sourceIcons:s},...l.length>0?{sourceConnectorIds:l}:{}};o.set(r,u)}else c.has(i)||o.set(i,n)}if(i.length>0){let t=new Map(n.map(e=>[e.id,e])),l=new Set(e.flatMap(({privateConnectorId:e})=>e==null?[]:[r(e)]));for(let e of i){let n=r(e),i=s(t,e);if(i==null||i.status!==`ENABLED`||l.has(n)||i.connector_type!=null&&De({app_metadata:i.app_metadata,connector_type:i.connector_type,status:i.status}))continue;if(c.has(n)){for(let[t,i]of o)i.capabilityId==null&&i.providerId==null||r(i.id)!==n||i.id===e||i.sourceConnectorIds?.includes(e)||o.set(t,{...i,sourceConnectorIds:[...i.sourceConnectorIds??[],e]});continue}let u=fr({connectorId:e,connectorName:null,logoUrl:null},a,!0);if(u==null)continue;let d=o.get(n);if(d!=null){d.id!==e&&!d.sourceConnectorIds?.includes(e)&&o.set(n,{...u,id:d.id,sourceConnectorIds:[...d.sourceConnectorIds??[],e]});continue}o.set(n,u)}}return[...o.values()]}function or(e,n,r){let i=sr(e),a=new Map;for(let t of e)for(let e of t.catalogActions)e.kind!==`exclude`&&cr(a,e.connectorIds,e.plugin,e.kind===`set-if-missing`);for(let e of n)for(let t of e.apps_content){let e=Z(t.display_name);e!=null&&cr(a,[t.id],{id:t.id,name:e,logoUrl:t.logo_url,logoDarkUrl:t.logo_dark_url})}for(let e of r){let n=Z(e.name);if(n==null)continue;let{lightLogoUrl:r,darkLogoUrl:i}=t(e);cr(a,[e.id],{id:e.id,name:n,logoUrl:r,logoDarkUrl:i})}return{excludedIdentifiers:i,pluginsByConnectorId:a}}function sr(e){return new Set(e.flatMap(e=>e.catalogActions.flatMap(e=>e.kind===`exclude`?e.connectorIds.flatMap(e=>{let t=e.trim(),n=te(t);return n==null?[t]:[t,n]}):[])))}function cr(e,t,n,r=!1){for(let i of t){let t=Z(i);t!=null&&(!r||!e.has(t))&&e.set(t,n)}}function lr(e){let t=[];for(let n of e.metadata?.selected_mcp_sources??[]){let e=[n.id];if(De(n)){t.push({connectorIds:e,kind:`exclude`});continue}let r=Z(n.name);r!=null&&t.push({connectorIds:e,kind:`set`,plugin:{id:n.id,name:r,logoUrl:n.logo_url,logoDarkUrl:n.logo_url_dark??null}})}let r=e.metadata?.serialization_metadata?.custom_symbol_offsets??[];if(r.length>0){let i=ae(e);for(let e of r){let r=ee(e),o=r.id;if(r.symbol!==a.EcosystemMention||!l(o))continue;let s=n(o),c=i.slice(r.startIndex,r.endIndex).trim().replace(/^@/u,``);c&&t.push({connectorIds:[s],kind:`set-if-missing`,plugin:{id:s,name:c,logoUrl:null,logoDarkUrl:null}})}}let i=e.metadata,o=i?.invoked_resource?.publish_status===`private`||i?.chatgpt_sdk?.distribution_channel===d.ONLY_ME;return{catalogActions:t,invocation:ur(e),privateConnectorId:o&&dr(e)?Z(i?.invoked_resource?.connector_id):null}}function ur(e){let t=e.metadata,n=t?.invoked_resource,r=t?.invoked_plugin,i=Z(n?.connector_id),a=nr.safeParse(n?.source_providers).data,o=Z(r?.connector_name)??(a!==void 0||i===pr?Z(n?.app_name):null);if(i==null||i===`connector_openai_plugin_management`||!dr(e)||n?.publish_status===`private`||t?.chatgpt_sdk?.distribution_channel===d.ONLY_ME)return null;let s=(t?.tool_icons??[]).find(e=>/\/ecosystem\/apps\/[^/]+/.test(e))??(i===pr?`/images/ecosystem/apps/appgarden/icon.png`:null),c=Z(n?.capability_id),l=Z(n?.capability_name),u=Y.safeParse(n?.source_icons).data;return{connectorId:i,connectorName:o,logoUrl:s,sourceProviders:a,...c!=null&&l!=null?{capabilityId:c,capabilityName:l}:{},...u==null?{}:{sourceIcons:u}}}function dr(e){let t=e.metadata?.chatgpt_sdk?.tool_response_metadata?.status;if(e.author.role!==u.Tool||e.status===`in_progress`||e.status===`finished_partial_completion`||e.metadata?.is_error===!0||e.metadata?.chatgpt_sdk?.is_error===!0||t===`error`||t===`cancelled`||e.metadata?.__internal?.api_tool_error?.error_code!=null)return!1;let n=e.metadata?.invoked_plugin?.http_response_status;if(n==null)return!0;let r=Number(n);return Number.isInteger(r)&&r>=200&&r<300}function fr(e,t,n=!1){let i=e.connectorId;if(mr.has(r(i))||t.excludedIdentifiers.has(i))return null;let a=n?s(t.pluginsByConnectorId,i):t.pluginsByConnectorId.get(i);if(a!=null){let t=a.logoUrl!=null;return{...a,id:i,name:e.connectorName??a.name,logoUrl:a.logoUrl??e.logoUrl,logoDarkUrl:t?a.logoDarkUrl:null}}return e.connectorName==null?null:{id:i,name:e.connectorName,logoUrl:e.logoUrl,logoDarkUrl:null}}function Z(e){return typeof e==`string`&&e.trim()?e.trim():null}var pr,mr,hr=e((()=>{f(),o(),Se(),ue(),ie(),X(),rr(),oe(),c(),i(),pr=`connector_20205bf7d4e99a89d7154bb849718324`,mr=new Set([`connector_openai_genui_search`,`connector_openai_genui_sheep`,`connector_openai_search_service`,le,`connector_openai_user_notifications`,`connector_openai_personal_context`])}));function Q(e){return e?.trim()?e:null}function gr(e,t){let n=[e.connectorId,e.linkId];return[JSON.stringify([...n,`id`,t.id]),...t.url==null?[]:[JSON.stringify([...n,`url`,ge(new URL(t.url))])],...t.open==null?[]:[he([...n,`open`,t.open])]]}function _r(e){let t=ur(e)?.connectorId;if(t==null)return null;let n,r,i=e.content.content_type===`code`&&e.content.text.includes(`openai/resourceActivities`)?Er.safeParse(se(e,e.content.text)):null;if(i?.success){if(i.data.appContext.connectorId!==t)return null;n=[i.data.result],r=Q(i.data.appContext.linkId)}else{let i=e.metadata?.chatgpt_sdk,a=i?.tool_response_metadata;if(a?.status!==`success`)return null;let o=(e.metadata?.invoked_resource?.resource_uri)?.replace(/^\/+|\/+$/gu,``).split(`/`);if(o==null||o.length!==2&&o.length!==3||o.some(e=>!e)||(o.length===3||/^(connector_|asdk_app_)/u.test(o[0]))&&o[0]!==t)return null;n=[a.call_tool_result,a.mcp_tool_result],r=Q(i?.link_id)??Q(i?.[`openai/link_id`])??Q(o.length===3?o[1]:null)}for(let e of n){let n=Tr.safeParse(e);if(!n.success||n.data.isError)continue;let i=wr.safeParse(n.data._meta??n.data.meta);if(i.success)return{connectorId:t,linkId:r,resources:i.data[`openai/resourceActivities`].resources}}return null}function vr(e){if(e.author.role!==u.Assistant||!ve(e)||e.channel!==`final`&&e.end_turn!==!0)return[];let t=[],n=new Map;for(let r of e.metadata?.content_references??[]){if(r.type!==`mcp_source`||typeof r.citation_id!=`string`||!r.citation_id.trim()||typeof r.connector_id!=`string`||!r.connector_id.trim()||r.link_id!=null&&typeof r.link_id!=`string`)continue;let i=Cr.safeParse({id:JSON.stringify([e.id,r.citation_id]),url:r.url,title:r.title,activities:[`read`],open:{tool:r.tool_name,arguments:r.tool_arguments}});if(!i.success)continue;let a={connectorId:r.connector_id,linkId:Q(r.link_id),resources:[i.data],...typeof r.capability_id==`string`&&/^[a-z][a-z0-9_]{0,63}$/u.test(r.capability_id)?{capabilityId:r.capability_id,...typeof r.capability_name==`string`&&r.capability_name.trim()?{capabilityName:r.capability_name}:{}}:{}},o=gr(a,i.data),s=o.map(e=>n.get(e)).find(e=>e!=null);s==null?t.push(a):s.resources[0]=i.data;for(let e of o)n.set(e,s??a);if(t.length===xr)break}return t}function*yr(e,t){for(let[n,r]of e.entries()){let e=t[n];e!=null&&(yield{messageIndex:n,activity:e});for(let e of vr(r))yield{messageIndex:n,activity:e}}}function br(e,t){if(!t.some(e=>e?.resources.length)&&!e.some(e=>vr(e).length))return[];let n=re;for(let t of e)n=ne(n,t);let r=new Map(n.flatMap((e,t)=>e.messages.map(e=>[e.id,t]))),i=new Set,a=new Map,o=0,s=0;for(let{messageIndex:n,activity:c}of yr(e,t)){let t=e[n],l=r.get(t.id)??n;for(let e of c.resources){let r=e.url==null?void 0:new URL(e.url),u=gr(c,e),d=new Set(u.flatMap(e=>{let t=a.get(e);return t==null?[]:[t]})),f=[...d].sort((e,t)=>e.firstSeenIndex-t.firstSeenIndex)[0];f??(f={firstSeenIndex:n,openIndex:-1,iconsIndex:-1,source:{key:u[0],connectorId:c.connectorId,title:e.title?.trim()||(r==null?e.id:`${r.host}${r.pathname===`/`?``:r.pathname}`),url:e.url,mimeType:e.mimeType},aliases:new Set,activitiesByTurn:new Map},i.add(f));for(let e of d)if(e!==f){e.openIndex>f.openIndex&&(f.source.open=e.source.open,f.openIndex=e.openIndex),e.iconsIndex>f.iconsIndex&&(f.source.icons=e.source.icons,f.iconsIndex=e.iconsIndex),f.source.capabilityId==null&&e.source.capabilityId!=null&&(f.source.capabilityId=e.source.capabilityId,f.source.capabilityName=e.source.capabilityName);for(let t of e.aliases)f.aliases.add(t),a.set(t,f);for(let[t,n]of e.activitiesByTurn){let e=f.activitiesByTurn.get(t)??{values:new Set,firstReadMessageIndex:1/0};for(let t of n.values)e.values.add(t);e.firstReadMessageIndex=Math.min(e.firstReadMessageIndex,n.firstReadMessageIndex),f.activitiesByTurn.set(t,e)}i.delete(e)}for(let e of u)f.aliases.add(e),a.set(e,f);let p=f.activitiesByTurn.get(l)??{values:new Set,firstReadMessageIndex:1/0};for(let t of e.activities)p.values.add(t);e.activities.includes(`read`)&&(p.firstReadMessageIndex=Math.min(p.firstReadMessageIndex,n),e.open!=null&&(f.openIndex=o++,f.source.open={...e.open,linkId:c.linkId,messageId:t.id})),f.activitiesByTurn.set(l,p),f.source.url=e.url??f.source.url,e.title?.trim()&&(f.source.title=e.title.trim()),f.source.mimeType??=e.mimeType,e.icons?.length&&(f.source.icons=e.icons,f.iconsIndex=s++),f.source.capabilityId==null&&c.capabilityId!=null&&(f.source.capabilityId=c.capabilityId,f.source.capabilityName=c.capabilityName)}}return[...i].flatMap(t=>{let n=1/0;for(let e of t.activitiesByTurn.values())e.values.has(`created`)||(n=Math.min(n,e.firstReadMessageIndex));return n===1/0?[]:{...t.source,firstSeenMessageId:e[n].id}})}var xr,$,Sr,Cr,wr,Tr,Er,Dr=e((()=>{f(),p(),hr(),pe(),oe(),de(),ce(),Oe(),X(),xr=100,$=_().max(16384),Sr=m({id:$.refine(e=>e.trim().length>0),url:$.refine(e=>me(e)!=null).optional(),title:$.optional(),mimeType:$.optional(),icons:Y,activities:b(w([`read`,`created`,`updated`])).min(1).max(xr),open:m({tool:_().regex(/^[a-zA-Z0-9_.-]{1,256}$/u),arguments:x(_(),y()).refine(e=>new TextEncoder().encode(JSON.stringify(e)).length<=16384)}).optional().catch(void 0)}),Cr=Sr.refine(e=>e.url!=null||e.open!=null),wr=m({"openai/resourceActivities":m({version:g(1),resources:b(Sr.required({url:!0})).min(1).max(xr)})}),Tr=m({isError:h().optional(),_meta:y().optional(),meta:y().optional()}),Er=m({type:g(`mcpToolCall`),server:w([`codex_apps`,`codex-connectors-mcp`]),status:g(`completed`),error:ye().optional(),appContext:m({connectorId:_(),linkId:_().nullable()}),result:Tr})}));export{ur as a,ir as c,X as d,Zn as f,Dr as i,ar as l,_r as n,sr as o,br as r,lr as s,vr as t,hr as u};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    BE as t,
+    Dq as n,
+    GE as r,
+    HE as i,
+    Het as a,
+    JE as o,
+    KE as s,
+    Mq as c,
+    Pq as l,
+    ctt as u,
+    dtt as d,
+    ftt as f,
+    nX as p,
+    ptt as ee,
+    qE as te,
+    rX as ne,
+    tX as re
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    $j as ie,
+    Fz as ae,
+    Iz as oe,
+    Lz as se,
+    Rz as ce,
+    Xgt as le,
+    Zgt as ue,
+    aft as de,
+    bBt as fe,
+    eS as pe,
+    nS as me,
+    oft as he,
+    tS as ge,
+    yBt as _e,
+    zz as ve
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    BS as m,
+    CS as ye,
+    DS as be,
+    ES as h,
+    FS as g,
+    GS as _,
+    HS as xe,
+    IS as v,
+    JS as y,
+    Jv as Se,
+    MS as Ce,
+    OS as we,
+    QS as Te,
+    TS as b,
+    US as x,
+    VS as S,
+    YS as Ee,
+    Yv as De,
+    gS as Oe,
+    qS as C,
+    vS as ke,
+    xS as w,
+    zS as T
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+import {
+    r as Ae,
+    t as je
+} from "./5422a199-ohc0ujx944q7esd3.js";
+var Me = e((() => {
+        ke()
+    })),
+    Ne = e((() => {
+        Me()
+    })),
+    Pe, E, Fe, Ie, Le, Re, D, O, k, A, j, M, N, P, ze, Be, Ve, He, Ue, We, Ge, Ke, qe, F, I, Je, Ye, Xe, Ze, Qe, $e, et, tt, nt, rt, it, at, ot, st, ct, lt, L, R, ut, z, dt, ft, pt, mt, ht, gt, _t, vt, yt, bt, xt, B, St, V, H, Ct, wt, Tt, Et, Dt, Ot, U, kt, At, jt, Mt, Nt, Pt, Ft, It, Lt, Rt, zt, Bt, Vt, Ht, Ut, Wt, W, G, K, Gt, Kt, qt, q, Jt, Yt, Xt, Zt, Qt, $t, en, tn, nn, rn, an, on, sn, cn, ln, un, dn, fn, pn, mn, hn, gn, J, _n, vn, yn, bn, xn, Sn, Cn, wn, Tn, En, Dn, On, kn, An, jn, Mn, Nn, Pn, Fn, In, Ln, Rn, zn, Bn, Vn, Hn, Un, Wn, Gn, Kn, qn, Jn, Yn, Xn = e((() => {
+        Ne(), Pe = `io.modelcontextprotocol/related-task`, E = be(e => e !== null && (typeof e == `object` || typeof e == `function`)), Fe = C([_(), T().int()]), Ie = _(), v({
+            ttl: C([T(), ye()]).optional(),
+            pollInterval: T().optional()
+        }), Le = m({
+            ttl: T().optional()
+        }), Re = m({
+            taskId: _()
+        }), D = v({
+            progressToken: Fe.optional(),
+            [Pe]: Re.optional()
+        }), O = m({
+            _meta: D.optional()
+        }), k = O.extend({
+            task: Le.optional()
+        }), A = m({
+            method: _(),
+            params: O.loose().optional()
+        }), j = m({
+            _meta: D.optional()
+        }), M = m({
+            method: _(),
+            params: j.loose().optional()
+        }), N = v({
+            _meta: D.optional()
+        }), P = C([_(), T().int()]), ze = m({
+            jsonrpc: g(`2.0`),
+            id: P,
+            ...A.shape
+        }).strict(), Be = m({
+            jsonrpc: g(`2.0`),
+            ...M.shape
+        }).strict(), Ve = m({
+            jsonrpc: g(`2.0`),
+            id: P,
+            result: N
+        }).strict(), (function(e) {
+            e[e.ConnectionClosed = -32e3] = `ConnectionClosed`, e[e.RequestTimeout = -32001] = `RequestTimeout`, e[e.ParseError = -32700] = `ParseError`, e[e.InvalidRequest = -32600] = `InvalidRequest`, e[e.MethodNotFound = -32601] = `MethodNotFound`, e[e.InvalidParams = -32602] = `InvalidParams`, e[e.InternalError = -32603] = `InternalError`, e[e.UrlElicitationRequired = -32042] = `UrlElicitationRequired`
+        })(He ||= {}), Ue = m({
+            jsonrpc: g(`2.0`),
+            id: P.optional(),
+            error: m({
+                code: T().int(),
+                message: _(),
+                data: y().optional()
+            })
+        }).strict(), C([ze, Be, Ve, Ue]), C([Ve, Ue]), We = N.strict(), Ge = j.extend({
+            requestId: P.optional(),
+            reason: _().optional()
+        }), Ke = M.extend({
+            method: g(`notifications/cancelled`),
+            params: Ge
+        }), qe = m({
+            src: _(),
+            mimeType: _().optional(),
+            sizes: b(_()).optional(),
+            theme: w([`light`, `dark`]).optional()
+        }), F = m({
+            icons: b(qe).optional()
+        }), I = m({
+            name: _(),
+            title: _().optional()
+        }), Je = I.extend({
+            ...I.shape,
+            ...F.shape,
+            version: _(),
+            websiteUrl: _().optional(),
+            description: _().optional()
+        }), Ye = Ce(m({
+            applyDefaults: h().optional()
+        }), x(_(), y())), Xe = xe(e => e && typeof e == `object` && !Array.isArray(e) && Object.keys(e).length === 0 ? {
+            form: {}
+        } : e, Ce(m({
+            form: Ye.optional(),
+            url: E.optional()
+        }), x(_(), y()).optional())), Ze = v({
+            list: E.optional(),
+            cancel: E.optional(),
+            requests: v({
+                sampling: v({
+                    createMessage: E.optional()
+                }).optional(),
+                elicitation: v({
+                    create: E.optional()
+                }).optional()
+            }).optional()
+        }), Qe = v({
+            list: E.optional(),
+            cancel: E.optional(),
+            requests: v({
+                tools: v({
+                    call: E.optional()
+                }).optional()
+            }).optional()
+        }), $e = m({
+            experimental: x(_(), E).optional(),
+            sampling: m({
+                context: E.optional(),
+                tools: E.optional()
+            }).optional(),
+            elicitation: Xe.optional(),
+            roots: m({
+                listChanged: h().optional()
+            }).optional(),
+            tasks: Ze.optional()
+        }), et = O.extend({
+            protocolVersion: _(),
+            capabilities: $e,
+            clientInfo: Je
+        }), tt = A.extend({
+            method: g(`initialize`),
+            params: et
+        }), nt = m({
+            experimental: x(_(), E).optional(),
+            logging: E.optional(),
+            completions: E.optional(),
+            prompts: m({
+                listChanged: h().optional()
+            }).optional(),
+            resources: m({
+                subscribe: h().optional(),
+                listChanged: h().optional()
+            }).optional(),
+            tools: m({
+                listChanged: h().optional()
+            }).optional(),
+            tasks: Qe.optional()
+        }), rt = N.extend({
+            protocolVersion: _(),
+            capabilities: nt,
+            serverInfo: Je,
+            instructions: _().optional()
+        }), it = M.extend({
+            method: g(`notifications/initialized`),
+            params: j.optional()
+        }), at = A.extend({
+            method: g(`ping`),
+            params: O.optional()
+        }), ot = m({
+            progress: T(),
+            total: S(T()),
+            message: S(_())
+        }), st = m({
+            ...j.shape,
+            ...ot.shape,
+            progressToken: Fe
+        }), ct = M.extend({
+            method: g(`notifications/progress`),
+            params: st
+        }), lt = O.extend({
+            cursor: Ie.optional()
+        }), L = A.extend({
+            params: lt.optional()
+        }), R = N.extend({
+            nextCursor: Ie.optional()
+        }), ut = w([`working`, `input_required`, `completed`, `failed`, `cancelled`]), z = m({
+            taskId: _(),
+            status: ut,
+            ttl: C([T(), ye()]),
+            createdAt: _(),
+            lastUpdatedAt: _(),
+            pollInterval: S(T()),
+            statusMessage: S(_())
+        }), dt = N.extend({
+            task: z
+        }), ft = j.merge(z), pt = M.extend({
+            method: g(`notifications/tasks/status`),
+            params: ft
+        }), mt = A.extend({
+            method: g(`tasks/get`),
+            params: O.extend({
+                taskId: _()
+            })
+        }), ht = N.merge(z), gt = A.extend({
+            method: g(`tasks/result`),
+            params: O.extend({
+                taskId: _()
+            })
+        }), N.loose(), _t = L.extend({
+            method: g(`tasks/list`)
+        }), vt = R.extend({
+            tasks: b(z)
+        }), yt = A.extend({
+            method: g(`tasks/cancel`),
+            params: O.extend({
+                taskId: _()
+            })
+        }), N.merge(z), bt = m({
+            uri: _(),
+            mimeType: S(_()),
+            _meta: x(_(), y()).optional()
+        }), xt = bt.extend({
+            text: _()
+        }), B = _().refine(e => {
+            try {
+                return atob(e), !0
+            } catch {
+                return !1
+            }
+        }, {
+            message: `Invalid Base64 string`
+        }), St = bt.extend({
+            blob: B
+        }), V = w([`user`, `assistant`]), H = m({
+            audience: b(V).optional(),
+            priority: T().min(0).max(1).optional(),
+            lastModified: Te({
+                offset: !0
+            }).optional()
+        }), Ct = m({
+            ...I.shape,
+            ...F.shape,
+            uri: _(),
+            description: S(_()),
+            mimeType: S(_()),
+            annotations: H.optional(),
+            _meta: S(v({}))
+        }), wt = m({
+            ...I.shape,
+            ...F.shape,
+            uriTemplate: _(),
+            description: S(_()),
+            mimeType: S(_()),
+            annotations: H.optional(),
+            _meta: S(v({}))
+        }), Tt = L.extend({
+            method: g(`resources/list`)
+        }), Et = R.extend({
+            resources: b(Ct)
+        }), Dt = L.extend({
+            method: g(`resources/templates/list`)
+        }), Ot = R.extend({
+            resourceTemplates: b(wt)
+        }), U = O.extend({
+            uri: _()
+        }), kt = U, At = A.extend({
+            method: g(`resources/read`),
+            params: kt
+        }), jt = N.extend({
+            contents: b(C([xt, St]))
+        }), Mt = M.extend({
+            method: g(`notifications/resources/list_changed`),
+            params: j.optional()
+        }), Nt = U, Pt = A.extend({
+            method: g(`resources/subscribe`),
+            params: Nt
+        }), Ft = U, It = A.extend({
+            method: g(`resources/unsubscribe`),
+            params: Ft
+        }), Lt = j.extend({
+            uri: _()
+        }), Rt = M.extend({
+            method: g(`notifications/resources/updated`),
+            params: Lt
+        }), zt = m({
+            name: _(),
+            description: S(_()),
+            required: S(h())
+        }), Bt = m({
+            ...I.shape,
+            ...F.shape,
+            description: S(_()),
+            arguments: S(b(zt)),
+            _meta: S(v({}))
+        }), Vt = L.extend({
+            method: g(`prompts/list`)
+        }), Ht = R.extend({
+            prompts: b(Bt)
+        }), Ut = O.extend({
+            name: _(),
+            arguments: x(_(), _()).optional()
+        }), Wt = A.extend({
+            method: g(`prompts/get`),
+            params: Ut
+        }), W = m({
+            type: g(`text`),
+            text: _(),
+            annotations: H.optional(),
+            _meta: x(_(), y()).optional()
+        }), G = m({
+            type: g(`image`),
+            data: B,
+            mimeType: _(),
+            annotations: H.optional(),
+            _meta: x(_(), y()).optional()
+        }), K = m({
+            type: g(`audio`),
+            data: B,
+            mimeType: _(),
+            annotations: H.optional(),
+            _meta: x(_(), y()).optional()
+        }), Gt = m({
+            type: g(`tool_use`),
+            name: _(),
+            id: _(),
+            input: x(_(), y()),
+            _meta: x(_(), y()).optional()
+        }), Kt = m({
+            type: g(`resource`),
+            resource: C([xt, St]),
+            annotations: H.optional(),
+            _meta: x(_(), y()).optional()
+        }), qt = Ct.extend({
+            type: g(`resource_link`)
+        }), q = C([W, G, K, qt, Kt]), Jt = m({
+            role: V,
+            content: q
+        }), Yt = N.extend({
+            description: _().optional(),
+            messages: b(Jt)
+        }), Xt = M.extend({
+            method: g(`notifications/prompts/list_changed`),
+            params: j.optional()
+        }), Zt = m({
+            title: _().optional(),
+            readOnlyHint: h().optional(),
+            destructiveHint: h().optional(),
+            idempotentHint: h().optional(),
+            openWorldHint: h().optional()
+        }), Qt = m({
+            taskSupport: w([`required`, `optional`, `forbidden`]).optional()
+        }), $t = m({
+            ...I.shape,
+            ...F.shape,
+            description: _().optional(),
+            inputSchema: m({
+                type: g(`object`),
+                properties: x(_(), E).optional(),
+                required: b(_()).optional()
+            }).catchall(y()),
+            outputSchema: m({
+                type: g(`object`),
+                properties: x(_(), E).optional(),
+                required: b(_()).optional()
+            }).catchall(y()).optional(),
+            annotations: Zt.optional(),
+            execution: Qt.optional(),
+            _meta: x(_(), y()).optional()
+        }), en = L.extend({
+            method: g(`tools/list`)
+        }), tn = R.extend({
+            tools: b($t)
+        }), nn = N.extend({
+            content: b(q).default([]),
+            structuredContent: x(_(), y()).optional(),
+            isError: h().optional()
+        }), nn.or(N.extend({
+            toolResult: y()
+        })), rn = k.extend({
+            name: _(),
+            arguments: x(_(), y()).optional()
+        }), an = A.extend({
+            method: g(`tools/call`),
+            params: rn
+        }), on = M.extend({
+            method: g(`notifications/tools/list_changed`),
+            params: j.optional()
+        }), m({
+            autoRefresh: h().default(!0),
+            debounceMs: T().int().nonnegative().default(300)
+        }), sn = w([`debug`, `info`, `notice`, `warning`, `error`, `critical`, `alert`, `emergency`]), cn = O.extend({
+            level: sn
+        }), ln = A.extend({
+            method: g(`logging/setLevel`),
+            params: cn
+        }), un = j.extend({
+            level: sn,
+            logger: _().optional(),
+            data: y()
+        }), dn = M.extend({
+            method: g(`notifications/message`),
+            params: un
+        }), fn = m({
+            name: _().optional()
+        }), pn = m({
+            hints: b(fn).optional(),
+            costPriority: T().min(0).max(1).optional(),
+            speedPriority: T().min(0).max(1).optional(),
+            intelligencePriority: T().min(0).max(1).optional()
+        }), mn = m({
+            mode: w([`auto`, `required`, `none`]).optional()
+        }), hn = m({
+            type: g(`tool_result`),
+            toolUseId: _().describe(`The unique identifier for the corresponding tool call.`),
+            content: b(q).default([]),
+            structuredContent: m({}).loose().optional(),
+            isError: h().optional(),
+            _meta: x(_(), y()).optional()
+        }), gn = we(`type`, [W, G, K]), J = we(`type`, [W, G, K, Gt, hn]), _n = m({
+            role: V,
+            content: C([J, b(J)]),
+            _meta: x(_(), y()).optional()
+        }), vn = k.extend({
+            messages: b(_n),
+            modelPreferences: pn.optional(),
+            systemPrompt: _().optional(),
+            includeContext: w([`none`, `thisServer`, `allServers`]).optional(),
+            temperature: T().optional(),
+            maxTokens: T().int(),
+            stopSequences: b(_()).optional(),
+            metadata: E.optional(),
+            tools: b($t).optional(),
+            toolChoice: mn.optional()
+        }), yn = A.extend({
+            method: g(`sampling/createMessage`),
+            params: vn
+        }), bn = N.extend({
+            model: _(),
+            stopReason: S(w([`endTurn`, `stopSequence`, `maxTokens`]).or(_())),
+            role: V,
+            content: gn
+        }), xn = N.extend({
+            model: _(),
+            stopReason: S(w([`endTurn`, `stopSequence`, `maxTokens`, `toolUse`]).or(_())),
+            role: V,
+            content: C([J, b(J)])
+        }), Sn = m({
+            type: g(`boolean`),
+            title: _().optional(),
+            description: _().optional(),
+            default: h().optional()
+        }), Cn = m({
+            type: g(`string`),
+            title: _().optional(),
+            description: _().optional(),
+            minLength: T().optional(),
+            maxLength: T().optional(),
+            format: w([`email`, `uri`, `date`, `date-time`]).optional(),
+            default: _().optional()
+        }), wn = m({
+            type: w([`number`, `integer`]),
+            title: _().optional(),
+            description: _().optional(),
+            minimum: T().optional(),
+            maximum: T().optional(),
+            default: T().optional()
+        }), Tn = m({
+            type: g(`string`),
+            title: _().optional(),
+            description: _().optional(),
+            enum: b(_()),
+            default: _().optional()
+        }), En = m({
+            type: g(`string`),
+            title: _().optional(),
+            description: _().optional(),
+            oneOf: b(m({
+                const: _(),
+                title: _()
+            })),
+            default: _().optional()
+        }), Dn = m({
+            type: g(`string`),
+            title: _().optional(),
+            description: _().optional(),
+            enum: b(_()),
+            enumNames: b(_()).optional(),
+            default: _().optional()
+        }), On = C([Tn, En]), kn = m({
+            type: g(`array`),
+            title: _().optional(),
+            description: _().optional(),
+            minItems: T().optional(),
+            maxItems: T().optional(),
+            items: m({
+                type: g(`string`),
+                enum: b(_())
+            }),
+            default: b(_()).optional()
+        }), An = m({
+            type: g(`array`),
+            title: _().optional(),
+            description: _().optional(),
+            minItems: T().optional(),
+            maxItems: T().optional(),
+            items: m({
+                anyOf: b(m({
+                    const: _(),
+                    title: _()
+                }))
+            }),
+            default: b(_()).optional()
+        }), jn = C([kn, An]), Mn = C([Dn, On, jn]), Nn = C([Mn, Sn, Cn, wn]), Pn = k.extend({
+            mode: g(`form`).optional(),
+            message: _(),
+            requestedSchema: m({
+                type: g(`object`),
+                properties: x(_(), Nn),
+                required: b(_()).optional()
+            })
+        }), Fn = k.extend({
+            mode: g(`url`),
+            message: _(),
+            elicitationId: _(),
+            url: _().url()
+        }), In = C([Pn, Fn]), Ln = A.extend({
+            method: g(`elicitation/create`),
+            params: In
+        }), Rn = j.extend({
+            elicitationId: _()
+        }), zn = M.extend({
+            method: g(`notifications/elicitation/complete`),
+            params: Rn
+        }), Bn = N.extend({
+            action: w([`accept`, `decline`, `cancel`]),
+            content: xe(e => e === null ? void 0 : e, x(_(), C([_(), T(), h(), b(_())])).optional())
+        }), Vn = m({
+            type: g(`ref/resource`),
+            uri: _()
+        }), Hn = m({
+            type: g(`ref/prompt`),
+            name: _()
+        }), Un = O.extend({
+            ref: C([Hn, Vn]),
+            argument: m({
+                name: _(),
+                value: _()
+            }),
+            context: m({
+                arguments: x(_(), _()).optional()
+            }).optional()
+        }), Wn = A.extend({
+            method: g(`completion/complete`),
+            params: Un
+        }), Gn = N.extend({
+            completion: v({
+                values: b(_()).max(100),
+                total: S(T().int()),
+                hasMore: S(h())
+            })
+        }), Kn = m({
+            uri: _().startsWith(`file://`),
+            name: _().optional(),
+            _meta: x(_(), y()).optional()
+        }), qn = A.extend({
+            method: g(`roots/list`),
+            params: O.optional()
+        }), Jn = N.extend({
+            roots: b(Kn)
+        }), Yn = M.extend({
+            method: g(`notifications/roots/list_changed`),
+            params: j.optional()
+        }), C([at, tt, Wn, ln, Wt, Vt, Tt, Dt, At, Pt, It, an, en, mt, gt, _t, yt]), C([Ke, ct, it, Yn, pt]), C([We, bn, xn, Bn, Jn, ht, vt, dt]), C([at, yn, Ln, qn, mt, gt, _t, yt]), C([Ke, ct, dn, Rt, Mt, on, Xt, pt, zn]), C([We, rt, Gn, Yt, Ht, Et, Ot, jt, nn, tn, ht, vt, dt])
+    }));
+
+function Zn(e, t) {
+    return fe(e, [e => e.theme === t, e => e.theme == null, e => e.sizes == null || e.sizes.includes(`any`) ? 1 / 0 : Math.max(0, ...e.sizes.map(e => {
+        let [t, n] = e.split(`x`).map(Number);
+        return t * n
+    }))], [`desc`, `desc`, `desc`])[0]?.src
+}
+var Qn, $n, er, tr, Y, X = e((() => {
+        Xn(), _e(), Oe(), je(), Qn = 16384, $n = Ee({
+            protocol: /^https?$/u
+        }).transform(e => new URL(e)).refine(e => e.username === `` && e.password === ``), er = /^image\/(png|jpeg|jpg|gif|webp|svg\+xml|x-icon|vnd\.microsoft\.icon)$/u, tr = qe.extend({
+            src: _().trim().min(1).max(Qn).refine(e => {
+                if (/[\u0000-\u0020\u007f]/u.test(e)) return !1;
+                if (!e.startsWith(`data:`)) return $n.safeParse(e).success;
+                let t = Ae(e);
+                return t != null && er.test(t.mimeType) && e.indexOf(`,`) < e.length - 1
+            }),
+            mimeType: _().regex(er).optional(),
+            sizes: b(_().max(32).regex(/^(any|[1-9][0-9]*x[1-9][0-9]*)$/u)).max(8).optional()
+        }).strip(), Y = b(tr.optional().catch(void 0)).max(8).transform(e => e.filter(e => e != null)).refine(e => e.reduce((e, t) => e + t.src.length, 0) <= Qn).optional().catch(void 0)
+    })),
+    nr, rr = e((() => {
+        Oe(), X(), nr = b(m({
+            id: _().regex(/^[a-z][a-z0-9_-]{0,63}$/u),
+            title: _().trim().min(1).max(128).refine(e => !/\p{Cc}/u.test(e)),
+            icons: Y,
+            accessMode: w([`included`, `connected`, `web`]).optional(),
+            delayMinutes: T().int().min(1).max(10080).optional()
+        })).max(32)
+    }));
+
+function ir(e) {
+    return e.providerId == null ? e.capabilityId == null ? e.id : `${e.id}:${e.capabilityId}` : `${e.id}:provider:${e.providerId}:${e.accessMode??``}`
+}
+
+function ar(e, t, n = [], i = []) {
+    let a = or(e, t, n),
+        o = new Map,
+        c = new Set,
+        l = new Set;
+    for (let t of e) {
+        let e = t.invocation;
+        if (e == null) continue;
+        let n = fr(e, a);
+        if (n == null) continue;
+        let i = r(n.id);
+        if (e.sourceProviders !== void 0) {
+            if (e.sourceProviders.length === 0) continue;
+            l.add(i), c.add(i);
+            for (let [e, t] of o) r(t.id) === i && t.providerId == null && o.delete(e);
+            for (let t of e.sourceProviders) {
+                let r = `${i}:provider:${t.id}:${t.accessMode??``}`,
+                    a = o.get(r);
+                o.set(r, {
+                    ...n,
+                    name: t.title,
+                    providerId: t.id,
+                    accessMode: t.accessMode,
+                    sourceIcons: t.icons ?? a?.sourceIcons,
+                    sourceConnectorIds: [...new Set([...a?.sourceConnectorIds ?? [], e.connectorId])],
+                    delayMinutes: Math.max(t.delayMinutes ?? 0, a?.delayMinutes ?? 0) || void 0
+                })
+            }
+            continue
+        }
+        if (!l.has(i))
+            if (e.capabilityId != null && e.capabilityName != null) {
+                let t = o.get(i);
+                o.delete(i), c.add(i);
+                let r = `${i}:${e.capabilityId}`,
+                    a = o.get(r),
+                    s = e.sourceIcons ?? a?.sourceIcons,
+                    l = [...new Set([...a?.sourceConnectorIds ?? [], t?.id, a?.id, e.connectorId].filter(e => e != null && e !== n.id))],
+                    u = {
+                        ...n,
+                        name: e.capabilityName,
+                        capabilityId: e.capabilityId,
+                        ...s == null ? {} : {
+                            sourceIcons: s
+                        },
+                        ...l.length > 0 ? {
+                            sourceConnectorIds: l
+                        } : {}
+                    };
+                o.set(r, u)
+            } else c.has(i) || o.set(i, n)
+    }
+    if (i.length > 0) {
+        let t = new Map(n.map(e => [e.id, e])),
+            l = new Set(e.flatMap(({
+                privateConnectorId: e
+            }) => e == null ? [] : [r(e)]));
+        for (let e of i) {
+            let n = r(e),
+                i = s(t, e);
+            if (i == null || i.status !== `ENABLED` || l.has(n) || i.connector_type != null && De({
+                    app_metadata: i.app_metadata,
+                    connector_type: i.connector_type,
+                    status: i.status
+                })) continue;
+            if (c.has(n)) {
+                for (let [t, i] of o) i.capabilityId == null && i.providerId == null || r(i.id) !== n || i.id === e || i.sourceConnectorIds?.includes(e) || o.set(t, {
+                    ...i,
+                    sourceConnectorIds: [...i.sourceConnectorIds ?? [], e]
+                });
+                continue
+            }
+            let u = fr({
+                connectorId: e,
+                connectorName: null,
+                logoUrl: null
+            }, a, !0);
+            if (u == null) continue;
+            let d = o.get(n);
+            if (d != null) {
+                d.id !== e && !d.sourceConnectorIds?.includes(e) && o.set(n, {
+                    ...u,
+                    id: d.id,
+                    sourceConnectorIds: [...d.sourceConnectorIds ?? [], e]
+                });
+                continue
+            }
+            o.set(n, u)
+        }
+    }
+    return [...o.values()]
+}
+
+function or(e, n, r) {
+    let i = sr(e),
+        a = new Map;
+    for (let t of e)
+        for (let e of t.catalogActions) e.kind !== `exclude` && cr(a, e.connectorIds, e.plugin, e.kind === `set-if-missing`);
+    for (let e of n)
+        for (let t of e.apps_content) {
+            let e = Z(t.display_name);
+            e != null && cr(a, [t.id], {
+                id: t.id,
+                name: e,
+                logoUrl: t.logo_url,
+                logoDarkUrl: t.logo_dark_url
+            })
+        }
+    for (let e of r) {
+        let n = Z(e.name);
+        if (n == null) continue;
+        let {
+            lightLogoUrl: r,
+            darkLogoUrl: i
+        } = t(e);
+        cr(a, [e.id], {
+            id: e.id,
+            name: n,
+            logoUrl: r,
+            logoDarkUrl: i
+        })
+    }
+    return {
+        excludedIdentifiers: i,
+        pluginsByConnectorId: a
+    }
+}
+
+function sr(e) {
+    return new Set(e.flatMap(e => e.catalogActions.flatMap(e => e.kind === `exclude` ? e.connectorIds.flatMap(e => {
+        let t = e.trim(),
+            n = te(t);
+        return n == null ? [t] : [t, n]
+    }) : [])))
+}
+
+function cr(e, t, n, r = !1) {
+    for (let i of t) {
+        let t = Z(i);
+        t != null && (!r || !e.has(t)) && e.set(t, n)
+    }
+}
+
+function lr(e) {
+    let t = [];
+    for (let n of e.metadata?.selected_mcp_sources ?? []) {
+        let e = [n.id];
+        if (De(n)) {
+            t.push({
+                connectorIds: e,
+                kind: `exclude`
+            });
+            continue
+        }
+        let r = Z(n.name);
+        r != null && t.push({
+            connectorIds: e,
+            kind: `set`,
+            plugin: {
+                id: n.id,
+                name: r,
+                logoUrl: n.logo_url,
+                logoDarkUrl: n.logo_url_dark ?? null
+            }
+        })
+    }
+    let r = e.metadata?.serialization_metadata?.custom_symbol_offsets ?? [];
+    if (r.length > 0) {
+        let i = ae(e);
+        for (let e of r) {
+            let r = ee(e),
+                o = r.id;
+            if (r.symbol !== a.EcosystemMention || !l(o)) continue;
+            let s = n(o),
+                c = i.slice(r.startIndex, r.endIndex).trim().replace(/^@/u, ``);
+            c && t.push({
+                connectorIds: [s],
+                kind: `set-if-missing`,
+                plugin: {
+                    id: s,
+                    name: c,
+                    logoUrl: null,
+                    logoDarkUrl: null
+                }
+            })
+        }
+    }
+    let i = e.metadata,
+        o = i?.invoked_resource?.publish_status === `private` || i?.chatgpt_sdk?.distribution_channel === d.ONLY_ME;
+    return {
+        catalogActions: t,
+        invocation: ur(e),
+        privateConnectorId: o && dr(e) ? Z(i?.invoked_resource?.connector_id) : null
+    }
+}
+
+function ur(e) {
+    let t = e.metadata,
+        n = t?.invoked_resource,
+        r = t?.invoked_plugin,
+        i = Z(n?.connector_id),
+        a = nr.safeParse(n?.source_providers).data,
+        o = Z(r?.connector_name) ?? (a !== void 0 || i === pr ? Z(n?.app_name) : null);
+    if (i == null || i === `connector_openai_plugin_management` || !dr(e) || n?.publish_status === `private` || t?.chatgpt_sdk?.distribution_channel === d.ONLY_ME) return null;
+    let s = (t?.tool_icons ?? []).find(e => /\/ecosystem\/apps\/[^/]+/.test(e)) ?? (i === pr ? `/images/ecosystem/apps/appgarden/icon.png` : null),
+        c = Z(n?.capability_id),
+        l = Z(n?.capability_name),
+        u = Y.safeParse(n?.source_icons).data;
+    return {
+        connectorId: i,
+        connectorName: o,
+        logoUrl: s,
+        sourceProviders: a,
+        ...c != null && l != null ? {
+            capabilityId: c,
+            capabilityName: l
+        } : {},
+        ...u == null ? {} : {
+            sourceIcons: u
+        }
+    }
+}
+
+function dr(e) {
+    let t = e.metadata?.chatgpt_sdk?.tool_response_metadata?.status;
+    if (e.author.role !== u.Tool || e.status === `in_progress` || e.status === `finished_partial_completion` || e.metadata?.is_error === !0 || e.metadata?.chatgpt_sdk?.is_error === !0 || t === `error` || t === `cancelled` || e.metadata?.__internal?.api_tool_error?.error_code != null) return !1;
+    let n = e.metadata?.invoked_plugin?.http_response_status;
+    if (n == null) return !0;
+    let r = Number(n);
+    return Number.isInteger(r) && r >= 200 && r < 300
+}
+
+function fr(e, t, n = !1) {
+    let i = e.connectorId;
+    if (mr.has(r(i)) || t.excludedIdentifiers.has(i)) return null;
+    let a = n ? s(t.pluginsByConnectorId, i) : t.pluginsByConnectorId.get(i);
+    if (a != null) {
+        let t = a.logoUrl != null;
+        return {
+            ...a,
+            id: i,
+            name: e.connectorName ?? a.name,
+            logoUrl: a.logoUrl ?? e.logoUrl,
+            logoDarkUrl: t ? a.logoDarkUrl : null
+        }
+    }
+    return e.connectorName == null ? null : {
+        id: i,
+        name: e.connectorName,
+        logoUrl: e.logoUrl,
+        logoDarkUrl: null
+    }
+}
+
+function Z(e) {
+    return typeof e == `string` && e.trim() ? e.trim() : null
+}
+var pr, mr, hr = e((() => {
+    f(), o(), Se(), ue(), ie(), X(), rr(), oe(), c(), i(), pr = `connector_20205bf7d4e99a89d7154bb849718324`, mr = new Set([`connector_openai_genui_search`, `connector_openai_genui_sheep`, `connector_openai_search_service`, le, `connector_openai_user_notifications`, `connector_openai_personal_context`])
+}));
+
+function Q(e) {
+    return e?.trim() ? e : null
+}
+
+function gr(e, t) {
+    let n = [e.connectorId, e.linkId];
+    return [JSON.stringify([...n, `id`, t.id]), ...t.url == null ? [] : [JSON.stringify([...n, `url`, ge(new URL(t.url))])], ...t.open == null ? [] : [he([...n, `open`, t.open])]]
+}
+
+function _r(e) {
+    let t = ur(e)?.connectorId;
+    if (t == null) return null;
+    let n, r, i = e.content.content_type === `code` && e.content.text.includes(`openai/resourceActivities`) ? Er.safeParse(se(e, e.content.text)) : null;
+    if (i?.success) {
+        if (i.data.appContext.connectorId !== t) return null;
+        n = [i.data.result], r = Q(i.data.appContext.linkId)
+    } else {
+        let i = e.metadata?.chatgpt_sdk,
+            a = i?.tool_response_metadata;
+        if (a?.status !== `success`) return null;
+        let o = (e.metadata?.invoked_resource?.resource_uri)?.replace(/^\/+|\/+$/gu, ``).split(`/`);
+        if (o == null || o.length !== 2 && o.length !== 3 || o.some(e => !e) || (o.length === 3 || /^(connector_|asdk_app_)/u.test(o[0])) && o[0] !== t) return null;
+        n = [a.call_tool_result, a.mcp_tool_result], r = Q(i?.link_id) ?? Q(i?.[`openai/link_id`]) ?? Q(o.length === 3 ? o[1] : null)
+    }
+    for (let e of n) {
+        let n = Tr.safeParse(e);
+        if (!n.success || n.data.isError) continue;
+        let i = wr.safeParse(n.data._meta ?? n.data.meta);
+        if (i.success) return {
+            connectorId: t,
+            linkId: r,
+            resources: i.data[`openai/resourceActivities`].resources
+        }
+    }
+    return null
+}
+
+function vr(e) {
+    if (e.author.role !== u.Assistant || !ve(e) || e.channel !== `final` && e.end_turn !== !0) return [];
+    let t = [],
+        n = new Map;
+    for (let r of e.metadata?.content_references ?? []) {
+        if (r.type !== `mcp_source` || typeof r.citation_id != `string` || !r.citation_id.trim() || typeof r.connector_id != `string` || !r.connector_id.trim() || r.link_id != null && typeof r.link_id != `string`) continue;
+        let i = Cr.safeParse({
+            id: JSON.stringify([e.id, r.citation_id]),
+            url: r.url,
+            title: r.title,
+            activities: [`read`],
+            open: {
+                tool: r.tool_name,
+                arguments: r.tool_arguments
+            }
+        });
+        if (!i.success) continue;
+        let a = {
+                connectorId: r.connector_id,
+                linkId: Q(r.link_id),
+                resources: [i.data],
+                ...typeof r.capability_id == `string` && /^[a-z][a-z0-9_]{0,63}$/u.test(r.capability_id) ? {
+                    capabilityId: r.capability_id,
+                    ...typeof r.capability_name == `string` && r.capability_name.trim() ? {
+                        capabilityName: r.capability_name
+                    } : {}
+                } : {}
+            },
+            o = gr(a, i.data),
+            s = o.map(e => n.get(e)).find(e => e != null);
+        s == null ? t.push(a) : s.resources[0] = i.data;
+        for (let e of o) n.set(e, s ?? a);
+        if (t.length === xr) break
+    }
+    return t
+}
+
+function* yr(e, t) {
+    for (let [n, r] of e.entries()) {
+        let e = t[n];
+        e != null && (yield {
+            messageIndex: n,
+            activity: e
+        });
+        for (let e of vr(r)) yield {
+            messageIndex: n,
+            activity: e
+        }
+    }
+}
+
+function br(e, t) {
+    if (!t.some(e => e?.resources.length) && !e.some(e => vr(e).length)) return [];
+    let n = re;
+    for (let t of e) n = ne(n, t);
+    let r = new Map(n.flatMap((e, t) => e.messages.map(e => [e.id, t]))),
+        i = new Set,
+        a = new Map,
+        o = 0,
+        s = 0;
+    for (let {
+            messageIndex: n,
+            activity: c
+        }
+        of yr(e, t)) {
+        let t = e[n],
+            l = r.get(t.id) ?? n;
+        for (let e of c.resources) {
+            let r = e.url == null ? void 0 : new URL(e.url),
+                u = gr(c, e),
+                d = new Set(u.flatMap(e => {
+                    let t = a.get(e);
+                    return t == null ? [] : [t]
+                })),
+                f = [...d].sort((e, t) => e.firstSeenIndex - t.firstSeenIndex)[0];
+            f ?? (f = {
+                firstSeenIndex: n,
+                openIndex: -1,
+                iconsIndex: -1,
+                source: {
+                    key: u[0],
+                    connectorId: c.connectorId,
+                    title: e.title?.trim() || (r == null ? e.id : `${r.host}${r.pathname===`/`?``:r.pathname}`),
+                    url: e.url,
+                    mimeType: e.mimeType
+                },
+                aliases: new Set,
+                activitiesByTurn: new Map
+            }, i.add(f));
+            for (let e of d)
+                if (e !== f) {
+                    e.openIndex > f.openIndex && (f.source.open = e.source.open, f.openIndex = e.openIndex), e.iconsIndex > f.iconsIndex && (f.source.icons = e.source.icons, f.iconsIndex = e.iconsIndex), f.source.capabilityId == null && e.source.capabilityId != null && (f.source.capabilityId = e.source.capabilityId, f.source.capabilityName = e.source.capabilityName);
+                    for (let t of e.aliases) f.aliases.add(t), a.set(t, f);
+                    for (let [t, n] of e.activitiesByTurn) {
+                        let e = f.activitiesByTurn.get(t) ?? {
+                            values: new Set,
+                            firstReadMessageIndex: 1 / 0
+                        };
+                        for (let t of n.values) e.values.add(t);
+                        e.firstReadMessageIndex = Math.min(e.firstReadMessageIndex, n.firstReadMessageIndex), f.activitiesByTurn.set(t, e)
+                    }
+                    i.delete(e)
+                } for (let e of u) f.aliases.add(e), a.set(e, f);
+            let p = f.activitiesByTurn.get(l) ?? {
+                values: new Set,
+                firstReadMessageIndex: 1 / 0
+            };
+            for (let t of e.activities) p.values.add(t);
+            e.activities.includes(`read`) && (p.firstReadMessageIndex = Math.min(p.firstReadMessageIndex, n), e.open != null && (f.openIndex = o++, f.source.open = {
+                ...e.open,
+                linkId: c.linkId,
+                messageId: t.id
+            })), f.activitiesByTurn.set(l, p), f.source.url = e.url ?? f.source.url, e.title?.trim() && (f.source.title = e.title.trim()), f.source.mimeType ??= e.mimeType, e.icons?.length && (f.source.icons = e.icons, f.iconsIndex = s++), f.source.capabilityId == null && c.capabilityId != null && (f.source.capabilityId = c.capabilityId, f.source.capabilityName = c.capabilityName)
+        }
+    }
+    return [...i].flatMap(t => {
+        let n = 1 / 0;
+        for (let e of t.activitiesByTurn.values()) e.values.has(`created`) || (n = Math.min(n, e.firstReadMessageIndex));
+        return n === 1 / 0 ? [] : {
+            ...t.source,
+            firstSeenMessageId: e[n].id
+        }
+    })
+}
+var xr, $, Sr, Cr, wr, Tr, Er, Dr = e((() => {
+    f(), p(), hr(), pe(), oe(), de(), ce(), Oe(), X(), xr = 100, $ = _().max(16384), Sr = m({
+        id: $.refine(e => e.trim().length > 0),
+        url: $.refine(e => me(e) != null).optional(),
+        title: $.optional(),
+        mimeType: $.optional(),
+        icons: Y,
+        activities: b(w([`read`, `created`, `updated`])).min(1).max(xr),
+        open: m({
+            tool: _().regex(/^[a-zA-Z0-9_.-]{1,256}$/u),
+            arguments: x(_(), y()).refine(e => new TextEncoder().encode(JSON.stringify(e)).length <= 16384)
+        }).optional().catch(void 0)
+    }), Cr = Sr.refine(e => e.url != null || e.open != null), wr = m({
+        "openai/resourceActivities": m({
+            version: g(1),
+            resources: b(Sr.required({
+                url: !0
+            })).min(1).max(xr)
+        })
+    }), Tr = m({
+        isError: h().optional(),
+        _meta: y().optional(),
+        meta: y().optional()
+    }), Er = m({
+        type: g(`mcpToolCall`),
+        server: w([`codex_apps`, `codex-connectors-mcp`]),
+        status: g(`completed`),
+        error: ye().optional(),
+        appContext: m({
+            connectorId: _(),
+            linkId: _().nullable()
+        }),
+        result: Tr
+    })
+}));
+export {
+    ur as a, ir as c, X as d, Zn as f, Dr as i, ar as l, _r as n, sr as o, br as r, lr as s, vr as t, hr as u
+};
 //# sourceMappingURL=4aa1bb90-lsed52cy1hkf1bpq.js.map

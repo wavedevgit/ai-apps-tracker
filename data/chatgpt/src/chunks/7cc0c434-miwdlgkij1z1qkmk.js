@@ -1,3 +1,92 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/f8943f1a-jsecm7craqisc12s.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-ed29bs6yiwucn7st.js","assets/2340486e-oc6d2eodbcrmxur3.js","assets/root-lelxp0l2.css","assets/conversation-small-l6tnsr2xfn2d55kk.js","assets/30901919-om7b3qf5hp4j9x4l.js","assets/c470f5ab-d0jxi6yggehv1yt2.js","assets/0e5afe53-goyw8fd3qndq8rq5.js","assets/conversation-small-ixfdle4i.css","assets/707eab0c-co82iasy3ghgw11m.js","assets/c2675c8c-fpv9s4kvd412dyap.js","assets/82782bc9-cz4jkhg31tycbqqf.js","assets/8b34dbc2-j8rcexxiltkm8ucr.js","assets/global-modals-lv5n3ujm.css","assets/9d60841e-bx3dwc8nyvp30a4s.js","assets/bcae0416-hw074mfyxypgqrid.js","assets/d4c740a3-grm4mqv12ru1q0ee.js","assets/Button-ijivgymd.css","assets/b15d5b53-gonhprvrm8r6kd5g.js","assets/06dfbf77-cr250ye2ma8l0qcj.js","assets/94e0eb8c-emr0f7qgwa31sqqx.js","assets/47ed0b35-bj95sqryrx48zckh.js","assets/760cdbab-nywajgj3w9y1wdks.js","assets/d5b03218-fi4689ui2efdykgy.js","assets/7517017f-m0e7hb8h6fyirvew.js","assets/832dbd3a-bk26djhng80afq3w.js","assets/35efed7b-mjyj2x2a4oblnb3b.js","assets/e1258b01-mthkgiytv33jieoc.js","assets/51994dd8-m6vrhv89eb2d5zj6.js","assets/99a48954-kr1rwr2qdycogma7.js","assets/7f8fbef9-cuma3gqbx9wnooe3.js","assets/5e9a123c-hnrm47orc9o5k2v0.js","assets/50ec8f21-b2m7e4aenkl4kos1.js"])))=>i.map(i=>d[i]);
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{J0 as r,Y0 as i,Zst as a,jst as o}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as s,Vn as c,cn as l,ln as u,wn as d}from"./2340486e-oc6d2eodbcrmxur3.js";import{Ay as f,Cy as p}from"./c2675c8c-fpv9s4kvd412dyap.js";import{i as m,n as h,t as g}from"./56d77f0a-cdwkdepqdex1l3gc.js";var _=t({AdminPluginAppSyncSetupProvider:()=>C});function v(e){let{key:t}=e;return t===`teams_admin`}var y,b,x,S,C,w,T=e((()=>{y=d(),a(),p(),m(),i(),b=n(c()),x=s(),u(),S=r(()=>l(()=>import(`./f8943f1a-jsecm7craqisc12s.js`).then(e=>e.AdminPluginTeamsSyncSetupModal),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33]))),C=e=>{"use forget";let t=(0,y.c)(3),{children:n,workspaceId:r}=e,i;return t[0]!==n||t[1]!==r?(i=(0,x.jsx)(h,{connectorReadScope:`plugin-admin-v2`,children:(0,x.jsx)(w,{workspaceId:r,children:n})}),t[0]=n,t[1]=r,t[2]=i):i=t[2],i},w=e=>{"use forget";let t=(0,y.c)(10),{children:n,workspaceId:r}=e,i=(0,b.useContext)(g),a=f(),[s,c]=(0,b.useState)(null),l;t[0]===i?l=t[1]:(l=e=>{if(e?.openToAdminSync===!0&&e.app.primaryConnector.type===o.TEAMS_CONNECTOR&&e.app.knowledgeConfig.some(v)){c(e);return}e??c(null),i(e)},t[0]=i,t[1]=l);let u;t[2]!==a||t[3]!==s||t[4]!==r?(u=s==null?null:(0,x.jsx)(S,{app:s.app,skipParameterConstraintsPreflight:s.skipParameterConstraintsPreflight,workspaceId:r,onClose:()=>{c(null),a(),s.onClose?.()}}),t[2]=a,t[3]=s,t[4]=r,t[5]=u):u=t[5];let d;return t[6]!==n||t[7]!==l||t[8]!==u?(d=(0,x.jsxs)(g.Provider,{value:l,children:[u,n]}),t[6]=n,t[7]=l,t[8]=u,t[9]=d):d=t[9],d}}));export{_ as n,T as r,C as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/f8943f1a-jsecm7craqisc12s.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-ed29bs6yiwucn7st.js", "assets/2340486e-oc6d2eodbcrmxur3.js", "assets/root-lelxp0l2.css", "assets/conversation-small-l6tnsr2xfn2d55kk.js", "assets/30901919-om7b3qf5hp4j9x4l.js", "assets/c470f5ab-d0jxi6yggehv1yt2.js", "assets/0e5afe53-goyw8fd3qndq8rq5.js", "assets/conversation-small-ixfdle4i.css", "assets/707eab0c-co82iasy3ghgw11m.js", "assets/c2675c8c-fpv9s4kvd412dyap.js", "assets/82782bc9-cz4jkhg31tycbqqf.js", "assets/8b34dbc2-j8rcexxiltkm8ucr.js", "assets/global-modals-lv5n3ujm.css", "assets/9d60841e-bx3dwc8nyvp30a4s.js", "assets/bcae0416-hw074mfyxypgqrid.js", "assets/d4c740a3-grm4mqv12ru1q0ee.js", "assets/Button-ijivgymd.css", "assets/b15d5b53-gonhprvrm8r6kd5g.js", "assets/06dfbf77-cr250ye2ma8l0qcj.js", "assets/94e0eb8c-emr0f7qgwa31sqqx.js", "assets/47ed0b35-bj95sqryrx48zckh.js", "assets/760cdbab-nywajgj3w9y1wdks.js", "assets/d5b03218-fi4689ui2efdykgy.js", "assets/7517017f-m0e7hb8h6fyirvew.js", "assets/832dbd3a-bk26djhng80afq3w.js", "assets/35efed7b-mjyj2x2a4oblnb3b.js", "assets/e1258b01-mthkgiytv33jieoc.js", "assets/51994dd8-m6vrhv89eb2d5zj6.js", "assets/99a48954-kr1rwr2qdycogma7.js", "assets/7f8fbef9-cuma3gqbx9wnooe3.js", "assets/5e9a123c-hnrm47orc9o5k2v0.js", "assets/50ec8f21-b2m7e4aenkl4kos1.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    J0 as r,
+    Y0 as i,
+    Zst as a,
+    jst as o
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as s,
+    Vn as c,
+    cn as l,
+    ln as u,
+    wn as d
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    Ay as f,
+    Cy as p
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+import {
+    i as m,
+    n as h,
+    t as g
+} from "./56d77f0a-cdwkdepqdex1l3gc.js";
+var _ = t({
+    AdminPluginAppSyncSetupProvider: () => C
+});
+
+function v(e) {
+    let {
+        key: t
+    } = e;
+    return t === `teams_admin`
+}
+var y, b, x, S, C, w, T = e((() => {
+    y = d(), a(), p(), m(), i(), b = n(c()), x = s(), u(), S = r(() => l(() => import(`./f8943f1a-jsecm7craqisc12s.js`).then(e => e.AdminPluginTeamsSyncSetupModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33]))), C = e => {
+        "use forget";
+        let t = (0, y.c)(3),
+            {
+                children: n,
+                workspaceId: r
+            } = e,
+            i;
+        return t[0] !== n || t[1] !== r ? (i = (0, x.jsx)(h, {
+            connectorReadScope: `plugin-admin-v2`,
+            children: (0, x.jsx)(w, {
+                workspaceId: r,
+                children: n
+            })
+        }), t[0] = n, t[1] = r, t[2] = i) : i = t[2], i
+    }, w = e => {
+        "use forget";
+        let t = (0, y.c)(10),
+            {
+                children: n,
+                workspaceId: r
+            } = e,
+            i = (0, b.useContext)(g),
+            a = f(),
+            [s, c] = (0, b.useState)(null),
+            l;
+        t[0] === i ? l = t[1] : (l = e => {
+            if (e?.openToAdminSync === !0 && e.app.primaryConnector.type === o.TEAMS_CONNECTOR && e.app.knowledgeConfig.some(v)) {
+                c(e);
+                return
+            }
+            e ?? c(null), i(e)
+        }, t[0] = i, t[1] = l);
+        let u;
+        t[2] !== a || t[3] !== s || t[4] !== r ? (u = s == null ? null : (0, x.jsx)(S, {
+            app: s.app,
+            skipParameterConstraintsPreflight: s.skipParameterConstraintsPreflight,
+            workspaceId: r,
+            onClose: () => {
+                c(null), a(), s.onClose?.()
+            }
+        }), t[2] = a, t[3] = s, t[4] = r, t[5] = u) : u = t[5];
+        let d;
+        return t[6] !== n || t[7] !== l || t[8] !== u ? (d = (0, x.jsxs)(g.Provider, {
+            value: l,
+            children: [u, n]
+        }), t[6] = n, t[7] = l, t[8] = u, t[9] = d) : d = t[9], d
+    }
+}));
+export {
+    _ as n, T as r, C as t
+};
 //# sourceMappingURL=7cc0c434-miwdlgkij1z1qkmk.js.map

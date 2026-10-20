@@ -1,2 +1,1670 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{A5 as n,At as r,Bnt as i,Bx as a,Ea as o,G5 as s,Gnt as c,JT as l,K5 as u,Knt as d,Mw as f,Oa as p,Xm as m,Zm as h,cn as g,eY as ee,f8 as te,fF as ne,jw as _,mF as v,nY as y,np as b,qT as re,rp as x,t5 as ie,zx as ae}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as S,Ln as C,Nn as w,Rn as T,Vn as E,wn as D,zn as O}from"./2340486e-oc6d2eodbcrmxur3.js";import{$Fn as oe,A3 as k,D3 as A,Elt as j,FIn as se,Hft as M,IIn as N,JFn as ce,Lft as le,Lgt as ue,Rft as de,Rgt as fe,Slt as pe,Smt as me,Tlt as he,_In as ge,bmt as _e,bpt as ve,bxn as ye,cjn as P,cpt as be,dkn as xe,dmt as Se,edt as Ce,fkn as we,fmt as F,ftn as Te,gIn as Ee,gmt as De,ipt as Oe,j3 as ke,ljn as Ae,mjn as I,nIn as L,oIn as R,pkn as je,pmt as Me,rpt as Ne,sjn as Pe,tIn as z,tdt as Fe,utn as Ie,v3 as B,vlt as Le,vmt as Re,vxn as ze,wlt as V,x3 as Be,xlt as Ve,xmt as He,xpt as Ue,ymt as We}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{CC as Ge,Ch as Ke,SC as qe,Sh as Je}from"./30901919-om7b3qf5hp4j9x4l.js";import{Hr as Ye,Qr as Xe,Zr as Ze}from"./c2675c8c-fpv9s4kvd412dyap.js";import{A as Qe,C as $e,F as et,I as tt,L as nt,M as rt,N as it,O as at,P as ot,_ as st,a as ct,b as lt,c as ut,d as dt,f as ft,h as pt,i as mt,j as ht,l as gt,m as _t,n as vt,o as yt,p as bt,t as xt,u as St,v as Ct,y as wt}from"./2b67bcd8-obsapj7sdkvqe5m5.js";import{i as Tt,n as Et}from"./2da3878c-gkrb0e5v6s2rnyqu.js";import{r as Dt,t as Ot}from"./58ee18a8-euful5r0u8gadv59.js";import{c as H,d as kt,g as At,l as U,m as W,n as jt,t as G,u as Mt}from"./1362c49f-n6zhspd2q58weltu.js";import{a as Nt,c as Pt,i as Ft,l as It,n as Lt,o as K,r as Rt,s as zt,t as Bt,u as Vt}from"./f4222f0c-pa2ve6u13r5z0rc3.js";function Ht(e){"use forget";let t=(0,Wt.c)(80),{images:n,initialIndex:r,activeIndex:i,paginationStatus:a,onInteraction:o,className:s,aspect:c,objectPosition:l,showDots:u,showArrows:d,imageClassName:f,allowLoop:p,onClick:m,onArrowClick:h,onActiveIndexChange:g}=e,ee=r===void 0?0:r,te=s===void 0?``:s,ne=c===void 0?`aspect-[16/9]`:c,v=l===void 0?`object-cover`:l,y=u===void 0||u,b=d===void 0||d,re=f===void 0?``:f,x=p===void 0||p,[ie,ae]=(0,q.useState)(ee),S=i??ie,C;t[0]!==i||t[1]!==g?(C=e=>{i==null?ae(e):g?.(e)},t[0]=i,t[1]=g,t[2]=C):C=t[2];let w=C,T=(0,q.useEffectEvent)(w),[E,D]=(0,q.useState)(!1),[oe,k]=(0,q.useState)(!1),A=(0,q.useRef)(null),j=O(),se;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(se={active:!1,startX:0,lastX:0,dx:0,width:1,lastTime:0,velocity:0,captured:!1,programmaticTargetIndex:null},t[3]=se):se=t[3];let M=(0,q.useRef)(se),N=n.length,ce=n[S]?.src,le;t[4]===i?le=t[5]:(le=()=>{if(i==null)return;let e=A.current;e&&(M.current.programmaticTargetIndex===i||Math.round(e.scrollLeft/(e.clientWidth||1))===i||(M.current.programmaticTargetIndex=i,e.scrollTo({left:i*e.clientWidth,behavior:`instant`})))},t[4]=i,t[5]=le);let ue;t[6]!==ce||t[7]!==i?(ue=[i,ce],t[6]=ce,t[7]=i,t[8]=ue):ue=t[8],(0,q.useEffect)(le,ue);let de;t[9]!==x||t[10]!==w||t[11]!==N?(de=(e,t)=>{let n=t===void 0?`smooth`:t,r=A.current;if(!r)return;let i=x?Kt(e,0,N-1):Gt(e,0,N-1),a=M.current.width||r.clientWidth||1;M.current.programmaticTargetIndex=i,r.scrollTo({left:i*a,behavior:n}),w(i)},t[9]=x,t[10]=w,t[11]=N,t[12]=de):de=t[12];let fe=de,pe,me;t[13]===b?(pe=t[14],me=t[15]):(pe=()=>{if(!b)return;k(!0);let e=window.setTimeout(()=>k(!1),2e3);return()=>window.clearTimeout(e)},me=[b],t[13]=b,t[14]=pe,t[15]=me),(0,q.useEffect)(pe,me);let he=E,ge=E||oe,_e;t[16]!==x||t[17]!==N?(_e=e=>x?Kt(e,0,N-1):Gt(e,0,N-1),t[16]=x,t[17]=N,t[18]=_e):_e=t[18];let ve=_e,ye;t[19]!==o||t[20]!==fe?(ye=e=>{o?.(),fe(e,`smooth`)},t[19]=o,t[20]=fe,t[21]=ye):ye=t[21];let P=ye,be;t[22]!==P||t[23]!==S||t[24]!==h||t[25]!==ve||t[26]!==N?(be=e=>{if(N<=1)return;let t=ve(e===`next`?S+1:S-1);t!==S&&h?.(e,t),P(t)},t[22]=P,t[23]=S,t[24]=h,t[25]=ve,t[26]=N,t[27]=be):be=t[27];let xe=be,Se,Ce;t[28]!==i||t[29]!==S||t[30]!==g?(Se=()=>{i??g?.(S)},Ce=[i,S,g],t[28]=i,t[29]=S,t[30]=g,t[31]=Se,t[32]=Ce):(Se=t[31],Ce=t[32]),(0,q.useEffect)(Se,Ce);let we,F;t[33]===Symbol.for(`react.memo_cache_sentinel`)?(we=()=>{let e=A.current;if(!e)return;let t=new ResizeObserver(t=>{for(let n of t)M.current.width=n.contentRect.width||e.clientWidth||1});return t.observe(e),M.current.width=e.clientWidth||1,()=>t.disconnect()},F=[],t[33]=we,t[34]=F):(we=t[33],F=t[34]),(0,q.useEffect)(we,F);let Te;t[35]!==S||t[36]!==T||t[37]!==N?(Te=()=>{let e=A.current;if(!e)return;let t=()=>{let t=M.current.width||e.clientWidth||1,n=e.scrollLeft||0,r=n/t,i=M.current.programmaticTargetIndex;if(i!=null){let e=i*t;Math.abs(n-e)<=2&&(M.current.programmaticTargetIndex=null);return}let a=S;r>S+.5?a=Gt(S+1,0,N-1):r<S-.5&&(a=Gt(S-1,0,N-1)),a!==S&&T(a)};return e.addEventListener(`scroll`,t,{passive:!0}),()=>e.removeEventListener(`scroll`,t)},t[35]=S,t[36]=T,t[37]=N,t[38]=Te):Te=t[38];let Ee;t[39]!==S||t[40]!==N?(Ee=[N,S],t[39]=S,t[40]=N,t[41]=Ee):Ee=t[41],(0,q.useEffect)(Te,Ee);let De=`select-none ${te} relative`,Oe,ke;t[42]===Symbol.for(`react.memo_cache_sentinel`)?(Oe=()=>D(!0),ke=()=>D(!1),t[42]=Oe,t[43]=ke):(Oe=t[42],ke=t[43]);let Ae=`relative w-full ${ne} overflow-clip`,I;if(t[44]!==re||t[45]!==n||t[46]!==j||t[47]!==v||t[48]!==m){let e;t[50]!==re||t[51]!==j||t[52]!==v||t[53]!==m?(e=(e,t)=>(0,J.jsx)(`div`,{onClick:()=>m?.(e,t),role:m?`button`:void 0,tabIndex:m?0:void 0,onKeyDown:n=>{m&&(n.key===`Enter`||n.key===` `)&&(n.preventDefault(),m(e,t))},className:`relative h-full w-full shrink-0 grow-0 basis-full snap-center`,children:e.content?e.content:(0,J.jsx)(`img`,{src:e.src,alt:e.alt??j.formatMessage({id:`wHCsqa`,defaultMessage:`Slide {index}`},{index:t+1}),className:`h-full w-full ${v} ${re}`})},e.src),t[50]=re,t[51]=j,t[52]=v,t[53]=m,t[54]=e):e=t[54],I=n.map(e),t[44]=re,t[45]=n,t[46]=j,t[47]=v,t[48]=m,t[49]=I}else I=t[49];let L;t[55]!==o||t[56]!==I?(L=(0,J.jsx)(`div`,{ref:A,onScroll:o,className:`no-scrollbar flex h-full w-full touch-pan-x touch-pan-y snap-x snap-mandatory overflow-x-scroll scroll-smooth`,children:I}),t[55]=o,t[56]=I,t[57]=L):L=t[57];let R;t[58]!==xe||t[59]!==n.length||t[60]!==j||t[61]!==he||t[62]!==ge||t[63]!==b?(R=b&&n.length>1&&(0,J.jsxs)(J.Fragment,{children:[(0,J.jsx)(Ut,{ariaLabel:j.formatMessage({id:`l9pylv`,defaultMessage:`Previous slide`}),onClick:()=>xe(`previous`),side:`start`,visible:he,children:(0,J.jsx)(_,{className:`icon-md`})}),(0,J.jsx)(Ut,{ariaLabel:j.formatMessage({id:`L0pbQh`,defaultMessage:`Next slide`}),onClick:()=>xe(`next`),side:`end`,visible:ge,children:(0,J.jsx)(qe,{className:`icon-md`})})]}),t[58]=xe,t[59]=n.length,t[60]=j,t[61]=he,t[62]=ge,t[63]=b,t[64]=R):R=t[64];let je;t[65]!==Ae||t[66]!==L||t[67]!==R?(je=(0,J.jsxs)(`div`,{className:Ae,children:[L,R]}),t[65]=Ae,t[66]=L,t[67]=R,t[68]=je):je=t[68];let Me;t[69]!==P||t[70]!==n||t[71]!==S||t[72]!==j||t[73]!==a||t[74]!==y?(Me=a==null?y&&n.length>1&&n.length<=20&&(0,J.jsx)(`div`,{className:`absolute start-0 end-0 bottom-3 flex items-center justify-center`,children:(0,J.jsx)(`div`,{className:`flex w-fit items-center justify-center gap-2 rounded-full bg-[#0D0D0D66] bg-clip-padding p-1 backdrop-blur`,children:n.map((e,t)=>(0,J.jsx)(`button`,{type:`button`,onClick:()=>P(t),"aria-label":j.formatMessage({id:`PUV+4+`,defaultMessage:`Go to slide {index}`},{index:t+1}),className:`h-1.5 w-1.5 rounded-full transition-opacity ${t===S?`bg-white`:`bg-gray-400 opacity-60`}`},t))})}):(0,J.jsx)(`div`,{className:`pointer-events-none absolute start-0 end-0 bottom-3 flex justify-center`,children:a}),t[69]=P,t[70]=n,t[71]=S,t[72]=j,t[73]=a,t[74]=y,t[75]=Me):Me=t[75];let Ne;return t[76]!==De||t[77]!==je||t[78]!==Me?(Ne=(0,J.jsxs)(`div`,{className:De,"aria-roledescription":`carousel`,onMouseEnter:Oe,onMouseLeave:ke,children:[je,Me]}),t[76]=De,t[77]=je,t[78]=Me,t[79]=Ne):Ne=t[79],Ne}function Ut(e){"use forget";let t=(0,Wt.c)(8),{ariaLabel:n,onClick:r,side:i,visible:a,children:o}=e,c=i===`start`?`start-3`:`end-3`,l=a?`opacity-90 pointer-events-auto`:`opacity-0 pointer-events-none`,u;t[0]!==c||t[1]!==l?(u=s(`btn-secondary border-token-border-default active:bg-token-bg-tertiary hover:bg-token-bg-primary absolute top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-clip-padding backdrop-blur transition-opacity duration-300 hover:shadow-[0px_4px_16px_0px_rgba(0,0,0,0.05)] active:opacity-100!`,l,c),t[0]=c,t[1]=l,t[2]=u):u=t[2];let d;return t[3]!==n||t[4]!==o||t[5]!==r||t[6]!==u?(d=(0,J.jsx)(`button`,{"aria-label":n,onClick:r,className:u,children:o}),t[3]=n,t[4]=o,t[5]=r,t[6]=u,t[7]=d):d=t[7],d}var Wt,q,J,Gt,Kt,qt=e((()=>{Wt=D(),f(),Ge(),u(),q=t(E()),T(),J=S(),Gt=(e,t,n)=>Math.min(Math.max(e,t),n),Kt=(e,t,n)=>e>n?t:e<t?n:e})),Jt,Yt,Xt,Zt=e((()=>{Jt=`Z_5WHq_generationStatus`,Yt=`Z_5WHq_generationStatusShimmer`,Xt={generationStatus:Jt,generationStatusShimmer:Yt}}));function Qt(e){"use forget";let t=(0,$t.c)(44),{aspect:n,imageUrls:r,generatedImageUrls:i,isGenerating:a,renderImage:o,onArrowClick:s,onClick:c,onGeneratedImageViewed:l}=e,u=n===void 0?`aspect-square`:n,d=i[0],f;t[0]!==r[0]||t[1]!==d?(f={url:r[0],latestGeneratedImage:d},t[0]=r[0],t[1]=d,t[2]=f):f=t[2];let[p,m]=(0,en.useState)(f),h;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(h=[],t[3]=h):h=t[3];let[g,ee]=(0,en.useState)(h),[te,ne]=(0,en.useState)(!1),_=(0,en.useRef)(null),v;t[4]!==r||t[5]!==p.url?(v=r.indexOf(p.url),t[4]=r,t[5]=p.url,t[6]=v):v=t[6];let y=Math.max(0,v),b=r[y],re;t[7]!==b||t[8]!==i||t[9]!==g?(re=i.includes(b)&&g.includes(b),t[7]=b,t[8]=i,t[9]=g,t[10]=re):re=t[10];let x=re,ie=(0,en.useEffectEvent)(l),ae;t[11]!==y||t[12]!==x||t[13]!==ie?(ae=()=>{x&&ie(y)},t[11]=y,t[12]=x,t[13]=ie,t[14]=ae):ae=t[14];let S;t[15]!==b||t[16]!==y||t[17]!==x?(S=[b,y,x],t[15]=b,t[16]=y,t[17]=x,t[18]=S):S=t[18],(0,en.useEffect)(ae,S);let C,T;t[19]===Symbol.for(`react.memo_cache_sentinel`)?(C=()=>()=>{_.current!=null&&clearTimeout(_.current)},T=[],t[19]=C,t[20]=T):(C=t[19],T=t[20]),(0,en.useEffect)(C,T);let E;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(E=()=>{ne(!0),_.current!=null&&clearTimeout(_.current),_.current=setTimeout(()=>ne(!1),800)},t[21]=E):E=t[21];let D=E,O;if(t[22]!==r||t[23]!==d||t[24]!==o){let e;t[26]!==d||t[27]!==o?(e=e=>({src:e,content:o(e,()=>{ee(t=>t.includes(e)?t:[...t,e]),e===d&&m(t=>t.latestGeneratedImage===e?t:{url:e,latestGeneratedImage:e})})}),t[26]=d,t[27]=o,t[28]=e):e=t[28],O=r.map(e),t[22]=r,t[23]=d,t[24]=o,t[25]=O}else O=t[25];let oe;t[29]===r?oe=t[30]:(oe=e=>{let t=r[e];m(e=>e.url===t?e:{...e,url:t})},t[29]=r,t[30]=oe);let k;t[31]!==a||t[32]!==te?(k=a&&!te?(0,tn.jsx)(`span`,{role:`status`,className:`rounded-full bg-black/25 px-3 py-2.5 text-xs font-medium text-white backdrop-blur-md`,children:(0,tn.jsx)(`span`,{className:Xt.generationStatus,children:(0,tn.jsx)(w,{id:`chatgpt.shopping.virtual_try_on.product_detail.generation.status`,defaultMessage:`Generating try-on`})})}):void 0,t[31]=a,t[32]=te,t[33]=k):k=t[33];let A;t[34]===c?A=t[35]:(A=(e,t)=>c(e.src,t),t[34]=c,t[35]=A);let j;return t[36]!==u||t[37]!==y||t[38]!==s||t[39]!==O||t[40]!==oe||t[41]!==k||t[42]!==A?(j=(0,tn.jsx)(Ht,{activeIndex:y,images:O,aspect:u,onActiveIndexChange:oe,onInteraction:D,paginationStatus:k,onArrowClick:s,onClick:A}),t[36]=u,t[37]=y,t[38]=s,t[39]=O,t[40]=oe,t[41]=k,t[42]=A,t[43]=j):j=t[43],j}var $t,en,tn,nn=e((()=>{$t=D(),qt(),en=t(E()),T(),Zt(),tn=S()}));function rn(){"use forget";let e=(0,ln.c)(25),t=v(),r;e[0]===t?r=e[1]:(r=()=>t?Ct(t):[],e[0]=t,e[1]=r);let i=n(r),a;e[2]===t?a=e[3]:(a=()=>t?mt(t):{messageId:void 0,clientThreadId:void 0},e[2]=t,e[3]=a);let{messageId:o,clientThreadId:s}=n(a),c;e[4]===t?c=e[5]:(c=()=>t?k(t).rootMessageId$()!=null:!1,e[4]=t,e[5]=c);let l=n(c),u;e[6]===Symbol.for(`react.memo_cache_sentinel`)?(u=H(),e[6]=u):u=e[6];let d=u;if(!t||!o||i.length===0)return null;let f;e[7]!==t||e[8]!==l||e[9]!==o?(f=(0,Y.jsx)(`h3`,{className:`mb-4`,children:d&&!l?(0,Y.jsxs)(`button`,{type:`button`,className:`text-token-text-primary text-heading-3 flex w-fit items-center text-start font-medium`,onClick:()=>an(t,o),children:[(0,Y.jsx)(`span`,{children:(0,Y.jsx)(w,{...un.exploreMoreTitle})}),(0,Y.jsx)(ae.ChevronRight,{"aria-hidden":`true`,className:`icon ms-1 shrink-0`})]}):(0,Y.jsx)(`span`,{className:`text-token-text-primary text-heading-3 font-medium`,children:(0,Y.jsx)(w,{...un.exploreMoreTitle})})}),e[7]=t,e[8]=l,e[9]=o,e[10]=f):f=e[10];let p;if(e[11]!==s||e[12]!==t||e[13]!==o||e[14]!==i){let n;e[16]!==s||e[17]!==t||e[18]!==o?(n=(e,n)=>(0,Y.jsxs)(`div`,{className:`group group/product-card relative min-w-0 self-start`,children:[(0,Y.jsx)(`button`,{type:`button`,className:`block w-full text-start`,onClick:r=>on(t,o,e,n,{isImageClick:he(r.target)}),children:(0,Y.jsx)(cn,{product:e})}),(0,Y.jsx)(G,{product:e,clientThreadId:s,messageId:o})]},e.id),e[16]=s,e[17]=t,e[18]=o,e[19]=n):n=e[19],p=i.map(n),e[11]=s,e[12]=t,e[13]=o,e[14]=i,e[15]=p}else p=e[15];let m;e[20]===p?m=e[21]:(m=(0,Y.jsx)(`div`,{className:`grid grid-cols-2 items-start gap-x-2 gap-y-4`,children:p}),e[20]=p,e[21]=m);let h;return e[22]!==f||e[23]!==m?(h=(0,Y.jsx)(`div`,{className:`mt-2 px-5`,children:(0,Y.jsxs)(`div`,{className:`border-token-border-light border-t pt-6`,children:[f,m]})}),e[22]=f,e[23]=m,e[24]=h):h=e[24],h}function an(e,t){if(!H())return;let n=mt(e).turnIndex;k(e).open$({rootMessageId:t,originTurnIndex:n??0})}function on(e,t,n,r,i){sn(e,t,n);let a=mt(e);if(pe(n,{clientThreadId:a.clientThreadId,messageId:t,contentReferenceStartIndex:0,contentReferenceType:Ne.Products,sectionLocation:`sidebar`,isGenui:a.isGenui},{isImageClick:i?.isImageClick===!0}))return;let o={type:`product_agent`,messageId:t,product:n,contentReferenceStartIndex:0,productIndex:r,interactionSource:`browse`},s=b(),c=m(),l=c?s.rooms$().get(c):null;if(l!=null&&s.hasAccess){s.openThreadSidebar$(l,o);return}L(e,o)}function sn(e,t,n){let r=mt(e),i=R(e),a=lt(e),o=z(i,`product`)||z(i,`product_agent`)?i.contentReferenceStartIndex:void 0;de({clientThreadId:r.clientThreadId,messageId:t,turnIndex:r.turnIndex,contentReferenceStartIndex:o,surfaceLocation:Pe.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_SIDEBAR,entityAffordance:P.CHATGPT_ENTITY_AFFORDANCE_PRODUCT_CARD,entityId:M(n,t,o),entityCategory:`product`,contentReferenceType:`product_entity`,isGenui:r.isGenui,parentContext:a?{entityId:M(a,t,o),entityCategory:`product`,contentReferenceStartIndex:o,messageId:t}:void 0})}function cn(e){"use forget";let t=(0,ln.c)(16),{product:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=c(`2128165686`).get(`image_fit`,``),t[0]=r):r=t[0];let i=r,a=i===`contain_all`||i===`product_card`?i:`default`,o=n.image_urls?.[0],s=n.offers?.[0]?.price,l;t[1]!==o||t[2]!==n?(l=o?(0,Y.jsx)(We,{src:o,assetPointerDimensions:Se(n,o),fitStrategy:a,alt:n.title,className:`absolute inset-0 m-0 block h-full w-full transition-transform duration-200 group-hover:scale-[1.02]`},o):null,t[1]=o,t[2]=n,t[3]=l):l=t[3];let u;t[4]===l?u=t[5]:(u=(0,Y.jsx)(`div`,{className:`bg-tertiary relative aspect-square w-full overflow-hidden rounded-2xl`,...j,children:l}),t[4]=l,t[5]=u);let d;t[6]===n.title?d=t[7]:(d=(0,Y.jsx)(`div`,{className:`text-token-text-primary line-clamp-2 text-sm leading-5 font-medium`,children:n.title}),t[6]=n.title,t[7]=d);let f;t[8]===s?f=t[9]:(f=s?(0,Y.jsx)(`div`,{className:`text-token-text-secondary text-sm leading-5`,children:s}):null,t[8]=s,t[9]=f);let p;t[10]!==d||t[11]!==f?(p=(0,Y.jsxs)(`div`,{className:`flex min-w-0 flex-col gap-1`,children:[d,f]}),t[10]=d,t[11]=f,t[12]=p):p=t[12];let m;return t[13]!==u||t[14]!==p?(m=(0,Y.jsxs)(`div`,{className:`flex min-w-0 flex-col gap-2`,children:[u,p]}),t[13]=u,t[14]=p,t[15]=m):m=t[15],m}var ln,Y,un,dn=e((()=>{ln=D(),le(),Oe(),h(),x(),ne(),a(),oe(),V(),Ve(),F(),$e(),ke(),U(),jt(),te(),d(),I(),T(),_e(),Y=S(),un=C({exploreMoreTitle:{id:`chatgpt.search.product_details.explore_more.section_title`,defaultMessage:`Explore more`}})}));function fn(e){"use forget";let t=(0,pn.c)(17),{isModal:n,product:r,conversation:i,messageId:a,contentReferenceStartIndex:o,turnIndex:s,productIndex:c,onFollowUp:l}=e,u=O(),d;t[0]===u?d=t[1]:(d=u.formatMessage({id:`products.detailsFollowUpButton.label`,defaultMessage:`Follow up`}),t[0]=u,t[1]=d);let f=d,p;t[2]!==o||t[3]!==i||t[4]!==n||t[5]!==a||t[6]!==l||t[7]!==r||t[8]!==c||t[9]!==s?(p=()=>{n&&ce(i),Be(i,r,{messageId:a,turnIndex:s,contentReferenceStartIndex:o,productIndex:c,contentReferenceType:Ne.ProductEntity},je.CHATGPT_PRODUCT_FOLLOW_UP_INTERACTION_SURFACE_FOLLOW_UP_BUTTON),l?.()},t[2]=o,t[3]=i,t[4]=n,t[5]=a,t[6]=l,t[7]=r,t[8]=c,t[9]=s,t[10]=p):p=t[10];let m;t[11]===f?m=t[12]:(m=(0,mn.jsx)(`span`,{className:`flex items-center select-none`,children:f}),t[11]=f,t[12]=m);let h;return t[13]!==f||t[14]!==p||t[15]!==m?(h=(0,mn.jsx)(`div`,{id:`product-details-follow-up-button`,className:`fixed end-7 bottom-10 z-[50] md:bottom-8`,children:(0,mn.jsx)(re,{size:`large`,color:`primary`,icon:Je,label:f,contentWrapperClassName:`gap-2`,className:`corner-superellipse/1.1 shadow-short h-12 cursor-pointer overflow-clip rounded-[28px] border-none px-6 py-7 font-medium active:opacity-100!`,onClick:p,children:m})}),t[13]=f,t[14]=p,t[15]=m,t[16]=h):h=t[16],h}var pn,mn,hn=e((()=>{pn=D(),Oe(),A(),l(),Ke(),oe(),B(),T(),mn=S()}));function gn(e){"use forget";let t=(0,_n.c)(4),{priceHistory:n}=e,r=n.typical_low_price===n.typical_high_price,i;return t[0]!==r||t[1]!==n.typical_high_price||t[2]!==n.typical_low_price?(i=(0,X.jsx)(`section`,{className:`mt-4 px-6`,children:(0,X.jsx)(`div`,{className:`border-token-border-light border-t pt-4`,children:(0,X.jsx)(`div`,{className:`text-token-text-primary text-sm font-medium`,children:r?(0,X.jsx)(w,{id:`chatgpt.search.product_details.price_history.typical_single`,defaultMessage:`Typically {price}`,values:{price:n.typical_low_price}}):(0,X.jsx)(w,{id:`chatgpt.search.product_details.price_history.typical_range`,defaultMessage:`Typically {lowPrice} - {highPrice}`,values:{lowPrice:n.typical_low_price,highPrice:n.typical_high_price}})})})}),t[0]=r,t[1]=n.typical_high_price,t[2]=n.typical_low_price,t[3]=i):i=t[3],i}var _n,X,vn=e((()=>{_n=D(),T(),X=S()}));function yn(e){return(Array.isArray(e)?e.flatMap(e=>bn(e)?[[e.name??e.label??e.key,e.value]]:[]):Object.entries(e??{})).flatMap(([e,t])=>{if(typeof e!=`string`||t==null)return[];let n=typeof t==`string`?t:JSON.stringify(t);return n==null?[]:[[e,n]]})}function bn(e){return typeof e==`object`&&!!e&&!Array.isArray(e)}function xn(e,t){let[n,r]=e;return(0,Z.jsxs)(`div`,{className:`flex justify-between gap-4 text-sm`,children:[(0,Z.jsx)(`dt`,{className:`text-token-text-secondary`,children:n}),(0,Z.jsx)(`dd`,{className:`text-token-text-primary text-end`,children:r})]},`${n}-${t}`)}var Sn,Z,Cn,wn=e((()=>{Sn=D(),T(),Pt(),Z=S(),Cn=e=>{"use forget";let t=(0,Sn.c)(12),{product:n}=e,r,i,a,o;if(t[0]!==n.attributes||t[1]!==n.description){o=Symbol.for(`react.early_return_sentinel`);bb0:{let e=yn(n.attributes);if(!n.description&&e.length===0){o=null;break bb0}r=`flex flex-col bg-inherit`,t[6]===n.description?i=t[7]:(i=n.description&&(0,Z.jsx)(zt,{stickyHeader:!1,title:(0,Z.jsx)(w,{id:`chatgpt.search.product_details.source_catalog.overview.section_title`,defaultMessage:`Overview`}),children:(0,Z.jsx)(`p`,{className:`text-token-text-primary text-sm whitespace-pre-wrap`,children:n.description})}),t[6]=n.description,t[7]=i),a=e.length>0&&(0,Z.jsx)(zt,{stickyHeader:!1,title:(0,Z.jsx)(w,{id:`chatgpt.search.product_details.source_catalog.attributes.section_title`,defaultMessage:`Details`}),children:(0,Z.jsx)(`dl`,{className:`flex flex-col gap-3`,children:e.map(xn)})})}t[0]=n.attributes,t[1]=n.description,t[2]=r,t[3]=i,t[4]=a,t[5]=o}else r=t[2],i=t[3],a=t[4],o=t[5];if(o!==Symbol.for(`react.early_return_sentinel`))return o;let s;return t[8]!==r||t[9]!==i||t[10]!==a?(s=(0,Z.jsxs)(`div`,{className:r,children:[i,a]}),t[8]=r,t[9]=i,t[10]=a,t[11]=s):s=t[11],s}}));function Tn(e){"use forget";let t=(0,Nn.c)(284),{product:r,clientThreadId:a,messageId:o,contentReferenceStartIndex:l,turnIndex:u,productIndex:d,conversation:f,offsetTopMargin:m,sidebar:h,isModal:te,galleryAspect:ne,interactionSource:_,initialVisibleOfferCount:v,onFollowUp:y}=e,b=m!==void 0&&m,x=te!==void 0&&te,ae;t[0]===f?ae=t[1]:(ae=()=>mt(f),t[0]=f,t[1]=ae);let S=n(ae),C;t[2]===S?C=t[3]:(C={...S,isGenui:!0},t[2]=S,t[3]=C);let T=Fe(C),[E,D]=(0,Q.useState)(null),[O,oe]=(0,Q.useState)(!1),[k,A]=(0,Q.useState)(!1),[j,se]=(0,Q.useState)(!1),[ce,le]=(0,Q.useState)(!1),de=Pn(),{showDebugConversationTurns:fe}=Te(),pe=h?.type===`product_agent`&&h.publicEntityShareId!=null,me=!pe&&de?.persist_conversation_to_user===!0,he=(0,Q.use)(Ee),ge=(0,Q.useRef)(null),_e=(0,Q.useRef)(null),ve=(0,Q.useRef)(null),[P,Ce]=(0,Q.useState)(null),we;t[4]===a?we=t[5]:(we=ee(a)??a,t[4]=a,t[5]=we);let F=we,Oe=p(),ke;t[6]!==f.id||t[7]!==Oe?(ke=ee(f.id)??Oe,t[6]=f.id,t[7]=Oe,t[8]=ke):ke=t[8];let I=ke,L=i(`3375735072`),R;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(R=Le(),t[9]=R):R=t[9];let je=R,Ne;t[10]!==f||t[11]!==r?(Ne=()=>{let e=ut(f),t=e===`enriched`?gt(f):null,n=wt(f),{product:i,offers:a}=n??{product:r,offers:[]};return{productDetailDataScope:e,resolvedProductDetailData:n,statefulProduct:i,renderedOffers:a,hasStreamedEntityOffers:e===`source_catalog`?n!=null:(t?.product.offers?.length??0)>0}},t[10]=f,t[11]=r,t[12]=Ne):Ne=t[12];let{productDetailDataScope:z,resolvedProductDetailData:Ie,statefulProduct:B,renderedOffers:ze,hasStreamedEntityOffers:V}=n(Ne),Be,Ve;if(t[13]!==z){let e=z===`enriched`?c(`2128165686`):void 0;Be=e?.get(`disable_sidebar_what_to_know`,!1)??!1,Ve=e?.get(`disable_sidebar_reviews`,!1)??!1,t[13]=z,t[14]=Be,t[15]=Ve}else Be=t[14],Ve=t[15];let We=Ve,Ge;t[16]===f?Ge=t[17]:(Ge=()=>({productRationale:pt(f),isLoadingReviewsOrRationale:_t(f)}),t[16]=f,t[17]=Ge);let{productRationale:Ke,isLoadingReviewsOrRationale:qe}=n(Ge),Je=!Be&&!!(Ke?.rationale||qe),Ye;t[18]===f?Ye=t[19]:(Ye=()=>st(f),t[18]=f,t[19]=Ye);let $e=n(Ye),et;t[20]===f?et=t[21]:(et=()=>bt(f),t[20]=f,t[21]=et);let tt=n(et),nt;t[22]===f?nt=t[23]:(nt=()=>St(f),t[22]=f,t[23]=nt);let it=n(nt),ot;t[24]===f?ot=t[25]:(ot=()=>dt(f),t[24]=f,t[25]=ot);let lt=n(ot),vt;t[26]===f?vt=t[27]:(vt=()=>yt(f),t[26]=f,t[27]=vt);let xt=n(vt),Ct;t[28]===f?Ct=t[29]:(Ct=()=>ct(f),t[28]=f,t[29]=Ct);let Et=n(Ct),Dt;t[30]===f?Dt=t[31]:(Dt=()=>{let e=wt(f)?.product;return{productImageUrls:ft(f),isGeneratingTryOn:e!=null&&Tt(f,e.id)}},t[30]=f,t[31]=Dt);let{productImageUrls:H,isGeneratingTryOn:kt}=n(Dt),U=h?.type===`product_agent`||h?.type===`entity`?h.pinnedImage:void 0,W=U?.content_url||U?.thumbnail_url,jt;t[32]!==U?.content_url||t[33]!==U?.thumbnail_url||t[34]!==W||t[35]!==H?(jt=W?[W,...H.filter(e=>e!==U?.content_url&&e!==U?.thumbnail_url)]:H,t[32]=U?.content_url,t[33]=U?.thumbnail_url,t[34]=W,t[35]=H,t[36]=jt):jt=t[36];let G=jt,Pt;t[37]===B?Pt=t[38]:(Pt=Re(B),t[37]=B,t[38]=Pt);let Ft=Pt,Lt=z===`enriched`&&(B.shopping_vto?.eligible??r.shopping_vto?.eligible??!1),[K]=(0,Q.useState)(Dn),zt,Vt;t[39]!==f||t[40]!==F||t[41]!==o||t[42]!==r?(zt=()=>Qe({conversation:f,shellProduct:r,conversationId:F,messageId:o}),Vt=[f,r,F,o],t[39]=f,t[40]=F,t[41]=o,t[42]=r,t[43]=zt,t[44]=Vt):(zt=t[43],Vt=t[44]),(0,Q.useEffect)(zt,Vt);let Ht,Ut;t[45]!==f||t[46]!==F||t[47]!==o||t[48]!==me||t[49]!==r||t[50]!==B?(Ht=()=>{rt({conversation:f,shellProduct:r,statefulProduct:B,conversationId:F,messageId:o,persistConversationToUser:me})},Ut=[f,F,o,me,r,B],t[45]=f,t[46]=F,t[47]=o,t[48]=me,t[49]=r,t[50]=B,t[51]=Ht,t[52]=Ut):(Ht=t[51],Ut=t[52]),(0,Q.useEffect)(Ht,Ut);let Wt,q;t[53]===Symbol.for(`react.memo_cache_sentinel`)?(Wt=()=>{let e=ve.current;if(!e)return;let t=()=>{Ce(e.getBoundingClientRect().height)};if(t(),typeof ResizeObserver>`u`)return;let n=new ResizeObserver(t);return n.observe(e),()=>{n.disconnect()}},q=[],t[53]=Wt,t[54]=q):(Wt=t[53],q=t[54]),(0,Q.useEffect)(Wt,q);let J=(0,Q.useRef)(!1),Gt=(0,Q.useRef)(null),Kt,qt;t[55]!==a||t[56]!==l||t[57]!==f||t[58]!==o||t[59]!==z||t[60]!==T?(Kt=()=>ie(()=>{let e=gt(f)?.product;e&&!J.current&&(J.current=!0,be({clientThreadId:a,messageId:o,contentReferenceStartIndex:l,product:e,source:z===`source_catalog`?xe.CHATGPT_PRODUCT_SIDEBAR_ENTITY_SOURCE_SOURCE_CATALOG:xe.CHATGPT_PRODUCT_SIDEBAR_ENTITY_SOURCE_ENRICHED}),T(`Product Sidebar Entity Loaded`,`product_sidebar_entity_loaded`,`product_entity`,{...e.analytics_meta??{},product_event_uuid:e.product_event_uuid}))}),qt=[a,l,f,o,z,T],t[55]=a,t[56]=l,t[57]=f,t[58]=o,t[59]=z,t[60]=T,t[61]=Kt,t[62]=qt):(Kt=t[61],qt=t[62]),(0,Q.useEffect)(Kt,qt);let Jt;t[63]!==_||t[64]!==z||t[65]!==Ie||t[66]!==r||t[67]!==B||t[68]!==T?(Jt=()=>{if(z===`source_catalog`&&Ie==null)return;let e=z===`source_catalog`?B:r;if(Gt.current===e.id)return;Gt.current=e.id;let t=jn(e,_),n=[t.offer_url,t.product_url,t.site_url,t.merchant_url].find(En);T(`Product Detail Shown`,`product_detail_shown`,`product_entity`,t,void 0,t=>N(`product_detail_shown`,`detail_shown`,t,{productId:e.id,interactionSource:_,url:n}))},t[63]=_,t[64]=z,t[65]=Ie,t[66]=r,t[67]=B,t[68]=T,t[69]=Jt):Jt=t[69];let Yt;t[70]!==a||t[71]!==l||t[72]!==_||t[73]!==o||t[74]!==I||t[75]!==z||t[76]!==Ie||t[77]!==r||t[78]!==B||t[79]!==T||t[80]!==u?(Yt=[a,l,_,o,I,z,Ie,r,B,T,u],t[70]=a,t[71]=l,t[72]=_,t[73]=o,t[74]=I,t[75]=z,t[76]=Ie,t[77]=r,t[78]=B,t[79]=T,t[80]=u,t[81]=Yt):Yt=t[81],(0,Q.useEffect)(Jt,Yt);let Xt;t[82]!==z||t[83]!==B?(Xt=z===`enriched`?B.variants??[]:[],t[82]=z,t[83]=B,t[84]=Xt):Xt=t[84];let Zt=Xt,$t;t[85]===B?$t=t[86]:($t=e=>Se(B,e),t[85]=B,t[86]=$t);let en=$t,tn;if(t[87]!==H||t[88]!==B){tn=[];for(let e of H){let t=He(e,Se(B,e));t!=null&&tn.push(t)}t[87]=H,t[88]=B,t[89]=tn}else tn=t[89];let nn=tn,an=ye(nn),on;t[90]!==nn||t[91]!==an?(on=e=>{let t=He(e);if(t==null)return e;let n=nn.findIndex(e=>e.asset_pointer===t.asset_pointer);return an[n]?.data?.url??null},t[90]=nn,t[91]=an,t[92]=on):on=t[92];let sn=on,cn;t[93]!==S.isGenui||t[94]!==a||t[95]!==l||t[96]!==G||t[97]!==o||t[98]!==U?.url||t[99]!==W||t[100]!==sn||t[101]!==r||t[102]!==B||t[103]!==u?(cn=(e,t)=>{let n=G[e];Ue({clientThreadId:a,messageId:o,turnIndex:u,contentReferenceStartIndex:l,surfaceLocation:Pe.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_SIDEBAR,imageAffordance:t,imageIndex:e,contentReferenceType:`product_entity`,parentContext:{entityId:M(r,o,l),entityCategory:`product`,contentReferenceStartIndex:l,messageId:o},isGenui:S.isGenui,url:n===W?U?.url:B.url??r.url,contentUrl:n?sn(n):void 0,isVirtualTryOnImage:Me(B,n)})},t[93]=S.isGenui,t[94]=a,t[95]=l,t[96]=G,t[97]=o,t[98]=U?.url,t[99]=W,t[100]=sn,t[101]=r,t[102]=B,t[103]=u,t[104]=cn):cn=t[104];let ln=cn,Y;t[105]!==S||t[106]!==l||t[107]!==F||t[108]!==xt||t[109]!==G||t[110]!==o||t[111]!==he||t[112]!==U||t[113]!==W||t[114]!==d||t[115]!==sn||t[116]!==r||t[117]!==B?(Y=e=>{if(he==null)return;let t=G.map(e=>({imageUrl:e,resolvedImageUrl:sn(e)})),n=[],i=[],a;for(let{imageUrl:r,resolvedImageUrl:o}of t){if(o==null)continue;let t=Se(B,r)??{width:0,height:0},s=U&&r===W?{...U,show_url:!0}:{url:o,content_url:o,thumbnail_url:o,title:xt,content_size:t,thumbnail_size:t,is_proxied_image:He(r)!=null};Me(B,r)&&i.push(n.length),n.push(s),r===e&&(a=s)}a!=null&&(he({image:a,source:ue.ImageGroup,analyticsMetadata:S,contentReferenceStartIndex:l,productIndex:d,imageResults:n,engagementMetadata:{virtualTryOnImageIndices:i,contentReferenceType:`product_entity`,pageUrl:B.url??r.url??null,parentContext:{entityId:M(r,o,l),entityCategory:`product`,contentReferenceStartIndex:l,messageId:o}}}),(Re(B).includes(e)||Re(r).includes(e))&&Ze({productId:B.id,conversationId:F,messageId:o},`product_detail`))},t[105]=S,t[106]=l,t[107]=F,t[108]=xt,t[109]=G,t[110]=o,t[111]=he,t[112]=U,t[113]=W,t[114]=d,t[115]=sn,t[116]=r,t[117]=B,t[118]=Y):Y=t[118];let un=Y,dn=At({isCheckoutEnabled:L,isClearingVariantSelection:j,isLoadingProductEntity:it}),pn=lt===`success`||lt===`error`,mn;t[119]!==pn||t[120]!==V||t[121]!==z||t[122]!==ze||t[123]!==r.offers?(mn=z===`source_catalog`||V?ze:pn?r.offers??[]:[],t[119]=pn,t[120]=V,t[121]=z,t[122]=ze,t[123]=r.offers,t[124]=mn):mn=t[124];let hn=mn,_n=hn.length>1,X=V&&lt===`success`,vn;t[125]!==f||t[126]!==X||t[127]!==V||t[128]!==o||t[129]!==K||t[130]!==r.id||t[131]!==r.query||t[132]!==r.title?(vn=()=>{K.reset({conversation:f,messageId:o,productKey:r.id||r.query||r.title}),K.logRenderOfferTimings(V,X,!0)},t[125]=f,t[126]=X,t[127]=V,t[128]=o,t[129]=K,t[130]=r.id,t[131]=r.query,t[132]=r.title,t[133]=vn):vn=t[133];let yn=(0,Q.useEffectEvent)(vn),bn;t[134]===yn?bn=t[135]:(bn=()=>{yn()},t[134]=yn,t[135]=bn);let xn;t[136]!==K||t[137]!==r.id?(xn=[K,r.id],t[136]=K,t[137]=r.id,t[138]=xn):xn=t[138],(0,Q.useEffect)(bn,xn);let Sn,Z;t[139]!==X||t[140]!==V||t[141]!==K?(Sn=()=>{K.logRenderOfferTimings(V,X)},Z=[X,V,K],t[139]=X,t[140]=V,t[141]=K,t[142]=Sn,t[143]=Z):(Sn=t[142],Z=t[143]),(0,Q.useEffect)(Sn,Z);let wn;t[144]===f?wn=t[145]:(wn=()=>{let e=ge.current,t=_e.current;if(!e||!t)return;let n=()=>{let n=e.getBoundingClientRect().top,r=t.getBoundingClientRect().bottom;return Math.max(0,Math.floor(r-n))};if(typeof ResizeObserver>`u`){at(f,n());return}at(f,-1);let r=new ResizeObserver(()=>{at(f,n())});return r.observe(e),r.observe(t),at(f,n()),()=>{r.disconnect()}},t[144]=f,t[145]=wn);let Tn;t[146]!==f||t[147]!==lt||t[148]!==H.length?(Tn=[f,lt,H.length],t[146]=f,t[147]=lt,t[148]=H.length,t[149]=Tn):Tn=t[149],(0,Q.useEffect)(wn,Tn);let kn=h&&(pe||I)&&Et;if(z===`source_catalog`&&Ie==null){let e=b?`bg-surface-primary`:`bg-token-bg-primary`,n;t[150]===e?n=t[151]:(n=s(`flex min-h-screen w-full flex-col gap-4 px-6 pt-8`,e),t[150]=e,t[151]=n);let i;t[152]!==f||t[153]!==F||t[154]!==o||t[155]!==lt||t[156]!==r?(i=lt===`error`?(0,$.jsxs)(`div`,{className:`flex min-h-[420px] flex-col items-center justify-center text-center`,children:[(0,$.jsx)(`p`,{className:`text-token-text-secondary max-w-xs text-sm`,children:(0,$.jsx)(w,{id:`chatgpt.search.product_details.source_catalog.error.message`,defaultMessage:`We couldn't load this product.`})}),(0,$.jsx)(re,{type:`button`,className:`mt-4`,color:`secondary`,size:`small`,onClick:()=>{ht({conversation:f,shellProduct:r,conversationId:F,messageId:o})},children:(0,$.jsx)(w,{id:`chatgpt.search.product_details.source_catalog.error.retry_button.label`,defaultMessage:`Try again`})})]}):(0,$.jsxs)($.Fragment,{children:[(0,$.jsx)(`div`,{className:`bg-token-bg-tertiary h-56 animate-pulse rounded-2xl`}),(0,$.jsx)(`div`,{className:`bg-token-bg-tertiary h-7 w-3/4 animate-pulse rounded`}),(0,$.jsx)(`div`,{className:`bg-token-bg-tertiary h-5 w-1/3 animate-pulse rounded`})]}),t[152]=f,t[153]=F,t[154]=o,t[155]=lt,t[156]=r,t[157]=i):i=t[157];let a;return t[158]!==it||t[159]!==n||t[160]!==i?(a=(0,$.jsx)(`div`,{className:n,"aria-busy":it,children:i}),t[158]=it,t[159]=n,t[160]=i,t[161]=a):a=t[161],a}let An=b?`bg-surface-primary`:`bg-token-bg-primary`,Fn=b?`mt-[calc(var(--threadFlyOut-leading-height,var(--product-flyout-sticky-header-height))*-1)] min-h-screen`:`mt-0`,In;t[162]!==An||t[163]!==Fn?(In=s(`flex w-full flex-col`,An,Fn),t[162]=An,t[163]=Fn,t[164]=In):In=t[164];let Ln=`${B.id}:${G[0]??``}`,Rn;t[165]!==en||t[166]!==U||t[167]!==W||t[168]!==B.title?(Rn=(e,t)=>(0,$.jsx)(Mn,{src:e,onLoad:t,title:e===W&&U?U.title:B.title,assetPointerDimensions:en(e)}),t[165]=en,t[166]=U,t[167]=W,t[168]=B.title,t[169]=Rn):Rn=t[169];let zn;t[170]!==F||t[171]!==o||t[172]!==B.id?(zn=()=>{Xe({productId:B.id,conversationId:F,messageId:o},`product_detail`)},t[170]=F,t[171]=o,t[172]=B.id,t[173]=zn):zn=t[173];let Bn;t[174]===ln?Bn=t[175]:(Bn=(e,t)=>{ln(t,e===`next`?Ae.CHATGPT_IMAGE_AFFORDANCE_IMAGE_GALLERY_NEXT_BUTTON:Ae.CHATGPT_IMAGE_AFFORDANCE_IMAGE_GALLERY_PREVIOUS_BUTTON)},t[174]=ln,t[175]=Bn);let Vn;t[176]!==ln||t[177]!==un?(Vn=(e,t)=>{ln(t,Ae.CHATGPT_IMAGE_AFFORDANCE_PRODUCT_DETAIL_IMAGE),un(e)},t[176]=ln,t[177]=un,t[178]=Vn):Vn=t[178];let Hn;t[179]!==ne||t[180]!==G||t[181]!==Ft||t[182]!==kt||t[183]!==Ln||t[184]!==Rn||t[185]!==zn||t[186]!==Bn||t[187]!==Vn?(Hn=(0,$.jsx)(`div`,{ref:_e,children:(0,$.jsx)(Qt,{aspect:ne,imageUrls:G,generatedImageUrls:Ft,isGenerating:kt,renderImage:Rn,onGeneratedImageViewed:zn,onArrowClick:Bn,onClick:Vn},Ln)}),t[179]=ne,t[180]=G,t[181]=Ft,t[182]=kt,t[183]=Ln,t[184]=Rn,t[185]=zn,t[186]=Bn,t[187]=Vn,t[188]=Hn):Hn=t[188];let Un;t[189]===P?Un=t[190]:(Un=P==null?void 0:{height:P},t[189]=P,t[190]=Un);let Wn;t[191]===Symbol.for(`react.memo_cache_sentinel`)?(Wn={duration:.2,ease:`easeInOut`},t[191]=Wn):Wn=t[191];let Gn;t[192]===xt?Gn=t[193]:(Gn=(0,$.jsx)(`h2`,{ref:ve,className:`text-xl`,children:xt}),t[192]=xt,t[193]=Gn);let Kn;t[194]!==Un||t[195]!==Gn?(Kn=(0,$.jsx)(g.div,{className:`overflow-hidden`,initial:!1,animate:Un,transition:Wn,children:Gn}),t[194]=Un,t[195]=Gn,t[196]=Kn):Kn=t[196];let qn;t[197]===B?qn=t[198]:(qn=(0,$.jsx)(Mt,{product:B,wrapperClass:`text-token-text-primary mt-1 inline-flex items-center gap-1 text-base leading-5 font-normal`,includeMidDelimiter:!0,includeNum:!0}),t[197]=B,t[198]=qn);let Jn;t[199]!==Kn||t[200]!==qn?(Jn=(0,$.jsxs)(`div`,{className:`flex flex-col px-6 pt-4`,children:[Kn,qn]}),t[199]=Kn,t[200]=qn,t[201]=Jn):Jn=t[201];let Yn;t[202]!==je||t[203]!==B.price_history?(Yn=je&&B.price_history&&(0,$.jsx)(gn,{priceHistory:B.price_history}),t[202]=je,t[203]=B.price_history,t[204]=Yn):Yn=t[204];let Xn;t[205]!==f||t[206]!==O||t[207]!==L||t[208]!==k||t[209]!==d||t[210]!==r||t[211]!==B||t[212]!==T||t[213]!==Zt?(Xn=L&&Zt.length>0&&(0,$.jsx)(`div`,{className:s(`px-5 pt-4 pb-2`,k&&`pointer-events-none opacity-50`),"aria-busy":k,children:(0,$.jsx)(Bt,{options:Zt,showErrors:O,updateOption:(e,t,n)=>On({optionGroupId:e,selectedId:t,variant_index:n,conversation:f,shellProduct:r,statefulProduct:B,setIsSwitchingVariant:A,setIsClearingVariantSelection:se,setSuppressOfferAnimations:le,setError:D,trackContentReferenceEvent:T,productIndex:d,productId:r.id})})}),t[205]=f,t[206]=O,t[207]=L,t[208]=k,t[209]=d,t[210]=r,t[211]=B,t[212]=T,t[213]=Zt,t[214]=Xn):Xn=t[214];let Zn;t[215]===E?Zn=t[216]:(Zn=E&&(0,$.jsx)(`div`,{className:`text-token-interactive-label-danger-secondary-default text-center`,children:E}),t[215]=E,t[216]=Zn);let Qn;t[217]!==L||t[218]!==H||t[219]!==B.image_urls?(Qn=L?B.image_urls??[]:H,t[217]=L,t[218]=H,t[219]=B.image_urls,t[220]=Qn):Qn=t[220];let $n=z===`source_catalog`||Je,er;t[221]===Symbol.for(`react.memo_cache_sentinel`)?(er=()=>oe(!0),t[221]=er):er=t[221];let tr;t[222]!==l||t[223]!==f||t[224]!==v||t[225]!==_||t[226]!==hn||t[227]!==dn||t[228]!==d||t[229]!==_n||t[230]!==B||t[231]!==ce||t[232]!==Qn||t[233]!==$n||t[234]!==T?(tr=(0,$.jsx)(It,{className:`flex flex-col px-5 pt-3`,offers:hn,conversation:f,contentReferenceStartIndex:l,productIndex:d,product:B,trackContentReferenceEvent:T,imageUrls:Qn,isLoading:dn,suppressOfferAnimations:ce,showBestPriceOfferTag:_n,showBottomBorder:$n,onOpenCheckout:er,interactionSource:_,initialVisibleOfferCount:v}),t[222]=l,t[223]=f,t[224]=v,t[225]=_,t[226]=hn,t[227]=dn,t[228]=d,t[229]=_n,t[230]=B,t[231]=ce,t[232]=Qn,t[233]=$n,t[234]=T,t[235]=tr):tr=t[235];let nr;t[236]!==We||t[237]!==Be||t[238]!==qe||t[239]!==o||t[240]!==z||t[241]!==Ke||t[242]!==$e||t[243]!==K||t[244]!==B||t[245]!==T?(nr=z===`source_catalog`?(0,$.jsx)(Cn,{product:B}):(0,$.jsxs)(`div`,{className:`flex flex-col bg-inherit`,children:[!Be&&(0,$.jsx)(Nt,{contentReference:Ke,trackContentReferenceEvent:T,disableAnimation:!!(Ke||$e),isLoading:qe,productAnalyticsMeta:B.analytics_meta??void 0,productEventUuid:B.product_event_uuid??void 0,renderProfiler:K}),!We&&(0,$.jsx)(Rt,{contentReference:$e,messageId:o,trackContentReferenceEvent:T,disableAnimation:!!(Ke||$e),productAnalyticsMeta:B.analytics_meta??void 0,productEventUuid:B.product_event_uuid??void 0,renderProfiler:K})]}),t[236]=We,t[237]=Be,t[238]=qe,t[239]=o,t[240]=z,t[241]=Ke,t[242]=$e,t[243]=K,t[244]=B,t[245]=T,t[246]=nr):nr=t[246];let rr;t[247]===Symbol.for(`react.memo_cache_sentinel`)?(rr=(0,$.jsx)(rn,{}),t[247]=rr):rr=t[247];let ir;t[248]!==l||t[249]!==f||t[250]!==Lt||t[251]!==o||t[252]!==H||t[253]!==d||t[254]!==r.shopping_vto||t[255]!==B||t[256]!==u?(ir=Lt&&(0,$.jsx)(Ot,{contentReferenceStartIndex:l,conversation:f,messageId:o,product:{...B,image_urls:H,shopping_vto:B.shopping_vto==null?r.shopping_vto:{...B.shopping_vto,generated_images:De(B.shopping_vto.generated_images??[],r.shopping_vto?.generated_images??[])}},productIndex:d,turnIndex:u}),t[248]=l,t[249]=f,t[250]=Lt,t[251]=o,t[252]=H,t[253]=d,t[254]=r.shopping_vto,t[255]=B,t[256]=u,t[257]=ir):ir=t[257];let ar;t[258]!==l||t[259]!==f||t[260]!==x||t[261]!==pe||t[262]!==o||t[263]!==y||t[264]!==d||t[265]!==kn||t[266]!==B||t[267]!==u?(ar=kn&&(0,$.jsx)(`div`,{className:`flex justify-end px-6 pt-16 pb-6`,children:(0,$.jsx)(fn,{conversation:f,messageId:pe?void 0:o,contentReferenceStartIndex:l,turnIndex:u,productIndex:d,product:B,isModal:x,onFollowUp:y})}),t[258]=l,t[259]=f,t[260]=x,t[261]=pe,t[262]=o,t[263]=y,t[264]=d,t[265]=kn,t[266]=B,t[267]=u,t[268]=ar):ar=t[268];let or;t[269]!==tt||t[270]!==fe?(or=!1,t[269]=tt,t[270]=fe,t[271]=or):or=t[271];let sr;return t[272]!==In||t[273]!==Hn||t[274]!==Jn||t[275]!==Yn||t[276]!==Xn||t[277]!==Zn||t[278]!==tr||t[279]!==nr||t[280]!==ir||t[281]!==ar||t[282]!==or?(sr=(0,$.jsxs)(`div`,{ref:ge,className:In,children:[Hn,Jn,Yn,Xn,Zn,tr,nr,rr,ir,ar,or]}),t[272]=In,t[273]=Hn,t[274]=Jn,t[275]=Yn,t[276]=Xn,t[277]=Zn,t[278]=tr,t[279]=nr,t[280]=ir,t[281]=ar,t[282]=or,t[283]=sr):sr=t[283],sr}function En(e){return typeof e==`string`&&e!==``}function Dn(){return new it}async function On({optionGroupId:e,selectedId:t,variant_index:n,conversation:r,shellProduct:i,statefulProduct:a,setIsSwitchingVariant:o,setIsClearingVariantSelection:s,setSuppressOfferAnimations:c,setError:l,trackContentReferenceEvent:u,productIndex:d,productId:f}){let p=a.variants?.find(t=>t.id===e);u(`product_detail`,`product_detail`,`product_entity`,{...a.analytics_meta??{},product_index:d,product_id:f,product_event_uuid:a.product_event_uuid,action:`variant_selected`,section:`product_detail`,section_location:`sidebar`,variant_name:p?.label??``,variant_value:p?.options.find(e=>e.id===t)?.label??``,variant_index:n});let m=t==null,h=a.variants?.some(e=>e.selected_option_id)??!1,g=a.variants?.map(n=>m||n.id===e?{...n,options:n.options.map(e=>({...e,selected:!m&&e.id===t})),selected_option_id:m?null:t}:n)??a.variants,ee=m?void 0:g?.reduce((e,t)=>(t.selected_option_id&&(e[t.id]=t.selected_option_id),e),{}),te=p?.options.find(e=>e.id===t);t&&!te?.available&&(ee={[e]:t});let ne=Object.keys(ee??{}).length>0,_=kn({shellProduct:i,statefulProduct:a,variantOptionsQuery:ee,optionGroupId:e,isClearingVariantSelection:m});o(!0),s(m),c(m||!h),xt({conversation:r,shellProduct:i,updatedVariants:g,variantOptionsQuery:ee,optionGroupId:e,productLookupKey:_});let v=!1,y=(e,t)=>{v=!0,vt({conversation:r,shellProduct:i,nextProduct:e,productLookupKey:t??e.product_lookup_key??{},hasFetchedVariant:ne})};try{if(m)for await(let e of nt({productQuery:i.title,productLookupKey:_})){if(e.type!==`product_entity`)continue;let t={...e.product,variants:e.product.variants??g};y(t,t.product_lookup_key??_)}else{let e=(await et({productLookupKey:_,onProductEntity:e=>{let t=e.product;t?.variants&&y(t,_)}}))?.product;!v&&e?.variants&&y(e,_)}}catch{}finally{o(!1),s(!1),c(!1)}}function kn({shellProduct:e,statefulProduct:t,variantOptionsQuery:n,optionGroupId:r,isClearingVariantSelection:i}){return i?An(e.product_lookup_key):{...t.product_lookup_key,variant_options_query:n,last_variant_selection_group_id:r}}function An(e){if(!e)return e;let t={...e};return delete t.variant_options_query,delete t.last_variant_selection_group_id,t}function jn(e,t){return{...e.analytics_meta??{},interaction_source:t,product_id:e.id,product_event_uuid:e.product_event_uuid,product_url:e.url,has_popular_tag:e.popularity_metadata?.product_tags?.includes(`popular`)??!1}}function Mn(e){"use forget";let t=(0,Nn.c)(6),{assetPointerDimensions:n,src:r,title:i,onLoad:a}=e,o;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(o=s(`h-full w-full cursor-zoom-in object-contain mix-blend-darken dark:mix-blend-lighten`),t[0]=o):o=t[0];let c;return t[1]!==n||t[2]!==a||t[3]!==r||t[4]!==i?(c=(0,$.jsx)(We,{src:r,onLoad:a,assetPointerDimensions:n,alt:i,className:o}),t[1]=n,t[2]=a,t[3]=r,t[4]=i,t[5]=c):c=t[5],c}var Nn,Q,$,Pn,Fn=e((()=>{Nn=D(),se(),le(),ve(),Oe(),l(),Ce(),ze(),ge(),fe(),nn(),Et(),Dt(),Ye(),F(),kt(),Ve(),me(),ot(),tt(),$e(),Ie(),te(),y(),o(),d(),I(),we(),u(),r(),Q=t(E()),T(),dn(),hn(),_e(),Vt(),vn(),K(),Ft(),Lt(),wn(),W(),$=S(),Pn=()=>void 0}));export{Fn as n,Tn as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A5 as n,
+    At as r,
+    Bnt as i,
+    Bx as a,
+    Ea as o,
+    G5 as s,
+    Gnt as c,
+    JT as l,
+    K5 as u,
+    Knt as d,
+    Mw as f,
+    Oa as p,
+    Xm as m,
+    Zm as h,
+    cn as g,
+    eY as ee,
+    f8 as te,
+    fF as ne,
+    jw as _,
+    mF as v,
+    nY as y,
+    np as b,
+    qT as re,
+    rp as x,
+    t5 as ie,
+    zx as ae
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as S,
+    Ln as C,
+    Nn as w,
+    Rn as T,
+    Vn as E,
+    wn as D,
+    zn as O
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    $Fn as oe,
+    A3 as k,
+    D3 as A,
+    Elt as j,
+    FIn as se,
+    Hft as M,
+    IIn as N,
+    JFn as ce,
+    Lft as le,
+    Lgt as ue,
+    Rft as de,
+    Rgt as fe,
+    Slt as pe,
+    Smt as me,
+    Tlt as he,
+    _In as ge,
+    bmt as _e,
+    bpt as ve,
+    bxn as ye,
+    cjn as P,
+    cpt as be,
+    dkn as xe,
+    dmt as Se,
+    edt as Ce,
+    fkn as we,
+    fmt as F,
+    ftn as Te,
+    gIn as Ee,
+    gmt as De,
+    ipt as Oe,
+    j3 as ke,
+    ljn as Ae,
+    mjn as I,
+    nIn as L,
+    oIn as R,
+    pkn as je,
+    pmt as Me,
+    rpt as Ne,
+    sjn as Pe,
+    tIn as z,
+    tdt as Fe,
+    utn as Ie,
+    v3 as B,
+    vlt as Le,
+    vmt as Re,
+    vxn as ze,
+    wlt as V,
+    x3 as Be,
+    xlt as Ve,
+    xmt as He,
+    xpt as Ue,
+    ymt as We
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    CC as Ge,
+    Ch as Ke,
+    SC as qe,
+    Sh as Je
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+import {
+    Hr as Ye,
+    Qr as Xe,
+    Zr as Ze
+} from "./c2675c8c-fpv9s4kvd412dyap.js";
+import {
+    A as Qe,
+    C as $e,
+    F as et,
+    I as tt,
+    L as nt,
+    M as rt,
+    N as it,
+    O as at,
+    P as ot,
+    _ as st,
+    a as ct,
+    b as lt,
+    c as ut,
+    d as dt,
+    f as ft,
+    h as pt,
+    i as mt,
+    j as ht,
+    l as gt,
+    m as _t,
+    n as vt,
+    o as yt,
+    p as bt,
+    t as xt,
+    u as St,
+    v as Ct,
+    y as wt
+} from "./2b67bcd8-obsapj7sdkvqe5m5.js";
+import {
+    i as Tt,
+    n as Et
+} from "./2da3878c-gkrb0e5v6s2rnyqu.js";
+import {
+    r as Dt,
+    t as Ot
+} from "./58ee18a8-euful5r0u8gadv59.js";
+import {
+    c as H,
+    d as kt,
+    g as At,
+    l as U,
+    m as W,
+    n as jt,
+    t as G,
+    u as Mt
+} from "./1362c49f-n6zhspd2q58weltu.js";
+import {
+    a as Nt,
+    c as Pt,
+    i as Ft,
+    l as It,
+    n as Lt,
+    o as K,
+    r as Rt,
+    s as zt,
+    t as Bt,
+    u as Vt
+} from "./f4222f0c-pa2ve6u13r5z0rc3.js";
+
+function Ht(e) {
+    "use forget";
+    let t = (0, Wt.c)(80),
+        {
+            images: n,
+            initialIndex: r,
+            activeIndex: i,
+            paginationStatus: a,
+            onInteraction: o,
+            className: s,
+            aspect: c,
+            objectPosition: l,
+            showDots: u,
+            showArrows: d,
+            imageClassName: f,
+            allowLoop: p,
+            onClick: m,
+            onArrowClick: h,
+            onActiveIndexChange: g
+        } = e,
+        ee = r === void 0 ? 0 : r,
+        te = s === void 0 ? `` : s,
+        ne = c === void 0 ? `aspect-[16/9]` : c,
+        v = l === void 0 ? `object-cover` : l,
+        y = u === void 0 || u,
+        b = d === void 0 || d,
+        re = f === void 0 ? `` : f,
+        x = p === void 0 || p,
+        [ie, ae] = (0, q.useState)(ee),
+        S = i ?? ie,
+        C;
+    t[0] !== i || t[1] !== g ? (C = e => {
+        i == null ? ae(e) : g?.(e)
+    }, t[0] = i, t[1] = g, t[2] = C) : C = t[2];
+    let w = C,
+        T = (0, q.useEffectEvent)(w),
+        [E, D] = (0, q.useState)(!1),
+        [oe, k] = (0, q.useState)(!1),
+        A = (0, q.useRef)(null),
+        j = O(),
+        se;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (se = {
+        active: !1,
+        startX: 0,
+        lastX: 0,
+        dx: 0,
+        width: 1,
+        lastTime: 0,
+        velocity: 0,
+        captured: !1,
+        programmaticTargetIndex: null
+    }, t[3] = se) : se = t[3];
+    let M = (0, q.useRef)(se),
+        N = n.length,
+        ce = n[S]?.src,
+        le;
+    t[4] === i ? le = t[5] : (le = () => {
+        if (i == null) return;
+        let e = A.current;
+        e && (M.current.programmaticTargetIndex === i || Math.round(e.scrollLeft / (e.clientWidth || 1)) === i || (M.current.programmaticTargetIndex = i, e.scrollTo({
+            left: i * e.clientWidth,
+            behavior: `instant`
+        })))
+    }, t[4] = i, t[5] = le);
+    let ue;
+    t[6] !== ce || t[7] !== i ? (ue = [i, ce], t[6] = ce, t[7] = i, t[8] = ue) : ue = t[8], (0, q.useEffect)(le, ue);
+    let de;
+    t[9] !== x || t[10] !== w || t[11] !== N ? (de = (e, t) => {
+        let n = t === void 0 ? `smooth` : t,
+            r = A.current;
+        if (!r) return;
+        let i = x ? Kt(e, 0, N - 1) : Gt(e, 0, N - 1),
+            a = M.current.width || r.clientWidth || 1;
+        M.current.programmaticTargetIndex = i, r.scrollTo({
+            left: i * a,
+            behavior: n
+        }), w(i)
+    }, t[9] = x, t[10] = w, t[11] = N, t[12] = de) : de = t[12];
+    let fe = de,
+        pe, me;
+    t[13] === b ? (pe = t[14], me = t[15]) : (pe = () => {
+        if (!b) return;
+        k(!0);
+        let e = window.setTimeout(() => k(!1), 2e3);
+        return () => window.clearTimeout(e)
+    }, me = [b], t[13] = b, t[14] = pe, t[15] = me), (0, q.useEffect)(pe, me);
+    let he = E,
+        ge = E || oe,
+        _e;
+    t[16] !== x || t[17] !== N ? (_e = e => x ? Kt(e, 0, N - 1) : Gt(e, 0, N - 1), t[16] = x, t[17] = N, t[18] = _e) : _e = t[18];
+    let ve = _e,
+        ye;
+    t[19] !== o || t[20] !== fe ? (ye = e => {
+        o?.(), fe(e, `smooth`)
+    }, t[19] = o, t[20] = fe, t[21] = ye) : ye = t[21];
+    let P = ye,
+        be;
+    t[22] !== P || t[23] !== S || t[24] !== h || t[25] !== ve || t[26] !== N ? (be = e => {
+        if (N <= 1) return;
+        let t = ve(e === `next` ? S + 1 : S - 1);
+        t !== S && h?.(e, t), P(t)
+    }, t[22] = P, t[23] = S, t[24] = h, t[25] = ve, t[26] = N, t[27] = be) : be = t[27];
+    let xe = be,
+        Se, Ce;
+    t[28] !== i || t[29] !== S || t[30] !== g ? (Se = () => {
+        i ?? g?.(S)
+    }, Ce = [i, S, g], t[28] = i, t[29] = S, t[30] = g, t[31] = Se, t[32] = Ce) : (Se = t[31], Ce = t[32]), (0, q.useEffect)(Se, Ce);
+    let we, F;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (we = () => {
+        let e = A.current;
+        if (!e) return;
+        let t = new ResizeObserver(t => {
+            for (let n of t) M.current.width = n.contentRect.width || e.clientWidth || 1
+        });
+        return t.observe(e), M.current.width = e.clientWidth || 1, () => t.disconnect()
+    }, F = [], t[33] = we, t[34] = F) : (we = t[33], F = t[34]), (0, q.useEffect)(we, F);
+    let Te;
+    t[35] !== S || t[36] !== T || t[37] !== N ? (Te = () => {
+        let e = A.current;
+        if (!e) return;
+        let t = () => {
+            let t = M.current.width || e.clientWidth || 1,
+                n = e.scrollLeft || 0,
+                r = n / t,
+                i = M.current.programmaticTargetIndex;
+            if (i != null) {
+                let e = i * t;
+                Math.abs(n - e) <= 2 && (M.current.programmaticTargetIndex = null);
+                return
+            }
+            let a = S;
+            r > S + .5 ? a = Gt(S + 1, 0, N - 1) : r < S - .5 && (a = Gt(S - 1, 0, N - 1)), a !== S && T(a)
+        };
+        return e.addEventListener(`scroll`, t, {
+            passive: !0
+        }), () => e.removeEventListener(`scroll`, t)
+    }, t[35] = S, t[36] = T, t[37] = N, t[38] = Te) : Te = t[38];
+    let Ee;
+    t[39] !== S || t[40] !== N ? (Ee = [N, S], t[39] = S, t[40] = N, t[41] = Ee) : Ee = t[41], (0, q.useEffect)(Te, Ee);
+    let De = `select-none ${te} relative`,
+        Oe, ke;
+    t[42] === Symbol.for(`react.memo_cache_sentinel`) ? (Oe = () => D(!0), ke = () => D(!1), t[42] = Oe, t[43] = ke) : (Oe = t[42], ke = t[43]);
+    let Ae = `relative w-full ${ne} overflow-clip`,
+        I;
+    if (t[44] !== re || t[45] !== n || t[46] !== j || t[47] !== v || t[48] !== m) {
+        let e;
+        t[50] !== re || t[51] !== j || t[52] !== v || t[53] !== m ? (e = (e, t) => (0, J.jsx)(`div`, {
+            onClick: () => m?.(e, t),
+            role: m ? `button` : void 0,
+            tabIndex: m ? 0 : void 0,
+            onKeyDown: n => {
+                m && (n.key === `Enter` || n.key === ` `) && (n.preventDefault(), m(e, t))
+            },
+            className: `relative h-full w-full shrink-0 grow-0 basis-full snap-center`,
+            children: e.content ? e.content : (0, J.jsx)(`img`, {
+                src: e.src,
+                alt: e.alt ?? j.formatMessage({
+                    id: `wHCsqa`,
+                    defaultMessage: `Slide {index}`
+                }, {
+                    index: t + 1
+                }),
+                className: `h-full w-full ${v} ${re}`
+            })
+        }, e.src), t[50] = re, t[51] = j, t[52] = v, t[53] = m, t[54] = e) : e = t[54], I = n.map(e), t[44] = re, t[45] = n, t[46] = j, t[47] = v, t[48] = m, t[49] = I
+    } else I = t[49];
+    let L;
+    t[55] !== o || t[56] !== I ? (L = (0, J.jsx)(`div`, {
+        ref: A,
+        onScroll: o,
+        className: `no-scrollbar flex h-full w-full touch-pan-x touch-pan-y snap-x snap-mandatory overflow-x-scroll scroll-smooth`,
+        children: I
+    }), t[55] = o, t[56] = I, t[57] = L) : L = t[57];
+    let R;
+    t[58] !== xe || t[59] !== n.length || t[60] !== j || t[61] !== he || t[62] !== ge || t[63] !== b ? (R = b && n.length > 1 && (0, J.jsxs)(J.Fragment, {
+        children: [(0, J.jsx)(Ut, {
+            ariaLabel: j.formatMessage({
+                id: `l9pylv`,
+                defaultMessage: `Previous slide`
+            }),
+            onClick: () => xe(`previous`),
+            side: `start`,
+            visible: he,
+            children: (0, J.jsx)(_, {
+                className: `icon-md`
+            })
+        }), (0, J.jsx)(Ut, {
+            ariaLabel: j.formatMessage({
+                id: `L0pbQh`,
+                defaultMessage: `Next slide`
+            }),
+            onClick: () => xe(`next`),
+            side: `end`,
+            visible: ge,
+            children: (0, J.jsx)(qe, {
+                className: `icon-md`
+            })
+        })]
+    }), t[58] = xe, t[59] = n.length, t[60] = j, t[61] = he, t[62] = ge, t[63] = b, t[64] = R) : R = t[64];
+    let je;
+    t[65] !== Ae || t[66] !== L || t[67] !== R ? (je = (0, J.jsxs)(`div`, {
+        className: Ae,
+        children: [L, R]
+    }), t[65] = Ae, t[66] = L, t[67] = R, t[68] = je) : je = t[68];
+    let Me;
+    t[69] !== P || t[70] !== n || t[71] !== S || t[72] !== j || t[73] !== a || t[74] !== y ? (Me = a == null ? y && n.length > 1 && n.length <= 20 && (0, J.jsx)(`div`, {
+        className: `absolute start-0 end-0 bottom-3 flex items-center justify-center`,
+        children: (0, J.jsx)(`div`, {
+            className: `flex w-fit items-center justify-center gap-2 rounded-full bg-[#0D0D0D66] bg-clip-padding p-1 backdrop-blur`,
+            children: n.map((e, t) => (0, J.jsx)(`button`, {
+                type: `button`,
+                onClick: () => P(t),
+                "aria-label": j.formatMessage({
+                    id: `PUV+4+`,
+                    defaultMessage: `Go to slide {index}`
+                }, {
+                    index: t + 1
+                }),
+                className: `h-1.5 w-1.5 rounded-full transition-opacity ${t===S?`bg-white`:`bg-gray-400 opacity-60`}`
+            }, t))
+        })
+    }) : (0, J.jsx)(`div`, {
+        className: `pointer-events-none absolute start-0 end-0 bottom-3 flex justify-center`,
+        children: a
+    }), t[69] = P, t[70] = n, t[71] = S, t[72] = j, t[73] = a, t[74] = y, t[75] = Me) : Me = t[75];
+    let Ne;
+    return t[76] !== De || t[77] !== je || t[78] !== Me ? (Ne = (0, J.jsxs)(`div`, {
+        className: De,
+        "aria-roledescription": `carousel`,
+        onMouseEnter: Oe,
+        onMouseLeave: ke,
+        children: [je, Me]
+    }), t[76] = De, t[77] = je, t[78] = Me, t[79] = Ne) : Ne = t[79], Ne
+}
+
+function Ut(e) {
+    "use forget";
+    let t = (0, Wt.c)(8),
+        {
+            ariaLabel: n,
+            onClick: r,
+            side: i,
+            visible: a,
+            children: o
+        } = e,
+        c = i === `start` ? `start-3` : `end-3`,
+        l = a ? `opacity-90 pointer-events-auto` : `opacity-0 pointer-events-none`,
+        u;
+    t[0] !== c || t[1] !== l ? (u = s(`btn-secondary border-token-border-default active:bg-token-bg-tertiary hover:bg-token-bg-primary absolute top-1/2 flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full bg-clip-padding backdrop-blur transition-opacity duration-300 hover:shadow-[0px_4px_16px_0px_rgba(0,0,0,0.05)] active:opacity-100!`, l, c), t[0] = c, t[1] = l, t[2] = u) : u = t[2];
+    let d;
+    return t[3] !== n || t[4] !== o || t[5] !== r || t[6] !== u ? (d = (0, J.jsx)(`button`, {
+        "aria-label": n,
+        onClick: r,
+        className: u,
+        children: o
+    }), t[3] = n, t[4] = o, t[5] = r, t[6] = u, t[7] = d) : d = t[7], d
+}
+var Wt, q, J, Gt, Kt, qt = e((() => {
+        Wt = D(), f(), Ge(), u(), q = t(E()), T(), J = S(), Gt = (e, t, n) => Math.min(Math.max(e, t), n), Kt = (e, t, n) => e > n ? t : e < t ? n : e
+    })),
+    Jt, Yt, Xt, Zt = e((() => {
+        Jt = `Z_5WHq_generationStatus`, Yt = `Z_5WHq_generationStatusShimmer`, Xt = {
+            generationStatus: Jt,
+            generationStatusShimmer: Yt
+        }
+    }));
+
+function Qt(e) {
+    "use forget";
+    let t = (0, $t.c)(44),
+        {
+            aspect: n,
+            imageUrls: r,
+            generatedImageUrls: i,
+            isGenerating: a,
+            renderImage: o,
+            onArrowClick: s,
+            onClick: c,
+            onGeneratedImageViewed: l
+        } = e,
+        u = n === void 0 ? `aspect-square` : n,
+        d = i[0],
+        f;
+    t[0] !== r[0] || t[1] !== d ? (f = {
+        url: r[0],
+        latestGeneratedImage: d
+    }, t[0] = r[0], t[1] = d, t[2] = f) : f = t[2];
+    let [p, m] = (0, en.useState)(f), h;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (h = [], t[3] = h) : h = t[3];
+    let [g, ee] = (0, en.useState)(h), [te, ne] = (0, en.useState)(!1), _ = (0, en.useRef)(null), v;
+    t[4] !== r || t[5] !== p.url ? (v = r.indexOf(p.url), t[4] = r, t[5] = p.url, t[6] = v) : v = t[6];
+    let y = Math.max(0, v),
+        b = r[y],
+        re;
+    t[7] !== b || t[8] !== i || t[9] !== g ? (re = i.includes(b) && g.includes(b), t[7] = b, t[8] = i, t[9] = g, t[10] = re) : re = t[10];
+    let x = re,
+        ie = (0, en.useEffectEvent)(l),
+        ae;
+    t[11] !== y || t[12] !== x || t[13] !== ie ? (ae = () => {
+        x && ie(y)
+    }, t[11] = y, t[12] = x, t[13] = ie, t[14] = ae) : ae = t[14];
+    let S;
+    t[15] !== b || t[16] !== y || t[17] !== x ? (S = [b, y, x], t[15] = b, t[16] = y, t[17] = x, t[18] = S) : S = t[18], (0, en.useEffect)(ae, S);
+    let C, T;
+    t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (C = () => () => {
+        _.current != null && clearTimeout(_.current)
+    }, T = [], t[19] = C, t[20] = T) : (C = t[19], T = t[20]), (0, en.useEffect)(C, T);
+    let E;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (E = () => {
+        ne(!0), _.current != null && clearTimeout(_.current), _.current = setTimeout(() => ne(!1), 800)
+    }, t[21] = E) : E = t[21];
+    let D = E,
+        O;
+    if (t[22] !== r || t[23] !== d || t[24] !== o) {
+        let e;
+        t[26] !== d || t[27] !== o ? (e = e => ({
+            src: e,
+            content: o(e, () => {
+                ee(t => t.includes(e) ? t : [...t, e]), e === d && m(t => t.latestGeneratedImage === e ? t : {
+                    url: e,
+                    latestGeneratedImage: e
+                })
+            })
+        }), t[26] = d, t[27] = o, t[28] = e) : e = t[28], O = r.map(e), t[22] = r, t[23] = d, t[24] = o, t[25] = O
+    } else O = t[25];
+    let oe;
+    t[29] === r ? oe = t[30] : (oe = e => {
+        let t = r[e];
+        m(e => e.url === t ? e : {
+            ...e,
+            url: t
+        })
+    }, t[29] = r, t[30] = oe);
+    let k;
+    t[31] !== a || t[32] !== te ? (k = a && !te ? (0, tn.jsx)(`span`, {
+        role: `status`,
+        className: `rounded-full bg-black/25 px-3 py-2.5 text-xs font-medium text-white backdrop-blur-md`,
+        children: (0, tn.jsx)(`span`, {
+            className: Xt.generationStatus,
+            children: (0, tn.jsx)(w, {
+                id: `chatgpt.shopping.virtual_try_on.product_detail.generation.status`,
+                defaultMessage: `Generating try-on`
+            })
+        })
+    }) : void 0, t[31] = a, t[32] = te, t[33] = k) : k = t[33];
+    let A;
+    t[34] === c ? A = t[35] : (A = (e, t) => c(e.src, t), t[34] = c, t[35] = A);
+    let j;
+    return t[36] !== u || t[37] !== y || t[38] !== s || t[39] !== O || t[40] !== oe || t[41] !== k || t[42] !== A ? (j = (0, tn.jsx)(Ht, {
+        activeIndex: y,
+        images: O,
+        aspect: u,
+        onActiveIndexChange: oe,
+        onInteraction: D,
+        paginationStatus: k,
+        onArrowClick: s,
+        onClick: A
+    }), t[36] = u, t[37] = y, t[38] = s, t[39] = O, t[40] = oe, t[41] = k, t[42] = A, t[43] = j) : j = t[43], j
+}
+var $t, en, tn, nn = e((() => {
+    $t = D(), qt(), en = t(E()), T(), Zt(), tn = S()
+}));
+
+function rn() {
+    "use forget";
+    let e = (0, ln.c)(25),
+        t = v(),
+        r;
+    e[0] === t ? r = e[1] : (r = () => t ? Ct(t) : [], e[0] = t, e[1] = r);
+    let i = n(r),
+        a;
+    e[2] === t ? a = e[3] : (a = () => t ? mt(t) : {
+        messageId: void 0,
+        clientThreadId: void 0
+    }, e[2] = t, e[3] = a);
+    let {
+        messageId: o,
+        clientThreadId: s
+    } = n(a), c;
+    e[4] === t ? c = e[5] : (c = () => t ? k(t).rootMessageId$() != null : !1, e[4] = t, e[5] = c);
+    let l = n(c),
+        u;
+    e[6] === Symbol.for(`react.memo_cache_sentinel`) ? (u = H(), e[6] = u) : u = e[6];
+    let d = u;
+    if (!t || !o || i.length === 0) return null;
+    let f;
+    e[7] !== t || e[8] !== l || e[9] !== o ? (f = (0, Y.jsx)(`h3`, {
+        className: `mb-4`,
+        children: d && !l ? (0, Y.jsxs)(`button`, {
+            type: `button`,
+            className: `text-token-text-primary text-heading-3 flex w-fit items-center text-start font-medium`,
+            onClick: () => an(t, o),
+            children: [(0, Y.jsx)(`span`, {
+                children: (0, Y.jsx)(w, {
+                    ...un.exploreMoreTitle
+                })
+            }), (0, Y.jsx)(ae.ChevronRight, {
+                "aria-hidden": `true`,
+                className: `icon ms-1 shrink-0`
+            })]
+        }) : (0, Y.jsx)(`span`, {
+            className: `text-token-text-primary text-heading-3 font-medium`,
+            children: (0, Y.jsx)(w, {
+                ...un.exploreMoreTitle
+            })
+        })
+    }), e[7] = t, e[8] = l, e[9] = o, e[10] = f) : f = e[10];
+    let p;
+    if (e[11] !== s || e[12] !== t || e[13] !== o || e[14] !== i) {
+        let n;
+        e[16] !== s || e[17] !== t || e[18] !== o ? (n = (e, n) => (0, Y.jsxs)(`div`, {
+            className: `group group/product-card relative min-w-0 self-start`,
+            children: [(0, Y.jsx)(`button`, {
+                type: `button`,
+                className: `block w-full text-start`,
+                onClick: r => on(t, o, e, n, {
+                    isImageClick: he(r.target)
+                }),
+                children: (0, Y.jsx)(cn, {
+                    product: e
+                })
+            }), (0, Y.jsx)(G, {
+                product: e,
+                clientThreadId: s,
+                messageId: o
+            })]
+        }, e.id), e[16] = s, e[17] = t, e[18] = o, e[19] = n) : n = e[19], p = i.map(n), e[11] = s, e[12] = t, e[13] = o, e[14] = i, e[15] = p
+    } else p = e[15];
+    let m;
+    e[20] === p ? m = e[21] : (m = (0, Y.jsx)(`div`, {
+        className: `grid grid-cols-2 items-start gap-x-2 gap-y-4`,
+        children: p
+    }), e[20] = p, e[21] = m);
+    let h;
+    return e[22] !== f || e[23] !== m ? (h = (0, Y.jsx)(`div`, {
+        className: `mt-2 px-5`,
+        children: (0, Y.jsxs)(`div`, {
+            className: `border-token-border-light border-t pt-6`,
+            children: [f, m]
+        })
+    }), e[22] = f, e[23] = m, e[24] = h) : h = e[24], h
+}
+
+function an(e, t) {
+    if (!H()) return;
+    let n = mt(e).turnIndex;
+    k(e).open$({
+        rootMessageId: t,
+        originTurnIndex: n ?? 0
+    })
+}
+
+function on(e, t, n, r, i) {
+    sn(e, t, n);
+    let a = mt(e);
+    if (pe(n, {
+            clientThreadId: a.clientThreadId,
+            messageId: t,
+            contentReferenceStartIndex: 0,
+            contentReferenceType: Ne.Products,
+            sectionLocation: `sidebar`,
+            isGenui: a.isGenui
+        }, {
+            isImageClick: i?.isImageClick === !0
+        })) return;
+    let o = {
+            type: `product_agent`,
+            messageId: t,
+            product: n,
+            contentReferenceStartIndex: 0,
+            productIndex: r,
+            interactionSource: `browse`
+        },
+        s = b(),
+        c = m(),
+        l = c ? s.rooms$().get(c) : null;
+    if (l != null && s.hasAccess) {
+        s.openThreadSidebar$(l, o);
+        return
+    }
+    L(e, o)
+}
+
+function sn(e, t, n) {
+    let r = mt(e),
+        i = R(e),
+        a = lt(e),
+        o = z(i, `product`) || z(i, `product_agent`) ? i.contentReferenceStartIndex : void 0;
+    de({
+        clientThreadId: r.clientThreadId,
+        messageId: t,
+        turnIndex: r.turnIndex,
+        contentReferenceStartIndex: o,
+        surfaceLocation: Pe.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_SIDEBAR,
+        entityAffordance: P.CHATGPT_ENTITY_AFFORDANCE_PRODUCT_CARD,
+        entityId: M(n, t, o),
+        entityCategory: `product`,
+        contentReferenceType: `product_entity`,
+        isGenui: r.isGenui,
+        parentContext: a ? {
+            entityId: M(a, t, o),
+            entityCategory: `product`,
+            contentReferenceStartIndex: o,
+            messageId: t
+        } : void 0
+    })
+}
+
+function cn(e) {
+    "use forget";
+    let t = (0, ln.c)(16),
+        {
+            product: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = c(`2128165686`).get(`image_fit`, ``), t[0] = r) : r = t[0];
+    let i = r,
+        a = i === `contain_all` || i === `product_card` ? i : `default`,
+        o = n.image_urls?.[0],
+        s = n.offers?.[0]?.price,
+        l;
+    t[1] !== o || t[2] !== n ? (l = o ? (0, Y.jsx)(We, {
+        src: o,
+        assetPointerDimensions: Se(n, o),
+        fitStrategy: a,
+        alt: n.title,
+        className: `absolute inset-0 m-0 block h-full w-full transition-transform duration-200 group-hover:scale-[1.02]`
+    }, o) : null, t[1] = o, t[2] = n, t[3] = l) : l = t[3];
+    let u;
+    t[4] === l ? u = t[5] : (u = (0, Y.jsx)(`div`, {
+        className: `bg-tertiary relative aspect-square w-full overflow-hidden rounded-2xl`,
+        ...j,
+        children: l
+    }), t[4] = l, t[5] = u);
+    let d;
+    t[6] === n.title ? d = t[7] : (d = (0, Y.jsx)(`div`, {
+        className: `text-token-text-primary line-clamp-2 text-sm leading-5 font-medium`,
+        children: n.title
+    }), t[6] = n.title, t[7] = d);
+    let f;
+    t[8] === s ? f = t[9] : (f = s ? (0, Y.jsx)(`div`, {
+        className: `text-token-text-secondary text-sm leading-5`,
+        children: s
+    }) : null, t[8] = s, t[9] = f);
+    let p;
+    t[10] !== d || t[11] !== f ? (p = (0, Y.jsxs)(`div`, {
+        className: `flex min-w-0 flex-col gap-1`,
+        children: [d, f]
+    }), t[10] = d, t[11] = f, t[12] = p) : p = t[12];
+    let m;
+    return t[13] !== u || t[14] !== p ? (m = (0, Y.jsxs)(`div`, {
+        className: `flex min-w-0 flex-col gap-2`,
+        children: [u, p]
+    }), t[13] = u, t[14] = p, t[15] = m) : m = t[15], m
+}
+var ln, Y, un, dn = e((() => {
+    ln = D(), le(), Oe(), h(), x(), ne(), a(), oe(), V(), Ve(), F(), $e(), ke(), U(), jt(), te(), d(), I(), T(), _e(), Y = S(), un = C({
+        exploreMoreTitle: {
+            id: `chatgpt.search.product_details.explore_more.section_title`,
+            defaultMessage: `Explore more`
+        }
+    })
+}));
+
+function fn(e) {
+    "use forget";
+    let t = (0, pn.c)(17),
+        {
+            isModal: n,
+            product: r,
+            conversation: i,
+            messageId: a,
+            contentReferenceStartIndex: o,
+            turnIndex: s,
+            productIndex: c,
+            onFollowUp: l
+        } = e,
+        u = O(),
+        d;
+    t[0] === u ? d = t[1] : (d = u.formatMessage({
+        id: `products.detailsFollowUpButton.label`,
+        defaultMessage: `Follow up`
+    }), t[0] = u, t[1] = d);
+    let f = d,
+        p;
+    t[2] !== o || t[3] !== i || t[4] !== n || t[5] !== a || t[6] !== l || t[7] !== r || t[8] !== c || t[9] !== s ? (p = () => {
+        n && ce(i), Be(i, r, {
+            messageId: a,
+            turnIndex: s,
+            contentReferenceStartIndex: o,
+            productIndex: c,
+            contentReferenceType: Ne.ProductEntity
+        }, je.CHATGPT_PRODUCT_FOLLOW_UP_INTERACTION_SURFACE_FOLLOW_UP_BUTTON), l?.()
+    }, t[2] = o, t[3] = i, t[4] = n, t[5] = a, t[6] = l, t[7] = r, t[8] = c, t[9] = s, t[10] = p) : p = t[10];
+    let m;
+    t[11] === f ? m = t[12] : (m = (0, mn.jsx)(`span`, {
+        className: `flex items-center select-none`,
+        children: f
+    }), t[11] = f, t[12] = m);
+    let h;
+    return t[13] !== f || t[14] !== p || t[15] !== m ? (h = (0, mn.jsx)(`div`, {
+        id: `product-details-follow-up-button`,
+        className: `fixed end-7 bottom-10 z-[50] md:bottom-8`,
+        children: (0, mn.jsx)(re, {
+            size: `large`,
+            color: `primary`,
+            icon: Je,
+            label: f,
+            contentWrapperClassName: `gap-2`,
+            className: `corner-superellipse/1.1 shadow-short h-12 cursor-pointer overflow-clip rounded-[28px] border-none px-6 py-7 font-medium active:opacity-100!`,
+            onClick: p,
+            children: m
+        })
+    }), t[13] = f, t[14] = p, t[15] = m, t[16] = h) : h = t[16], h
+}
+var pn, mn, hn = e((() => {
+    pn = D(), Oe(), A(), l(), Ke(), oe(), B(), T(), mn = S()
+}));
+
+function gn(e) {
+    "use forget";
+    let t = (0, _n.c)(4),
+        {
+            priceHistory: n
+        } = e,
+        r = n.typical_low_price === n.typical_high_price,
+        i;
+    return t[0] !== r || t[1] !== n.typical_high_price || t[2] !== n.typical_low_price ? (i = (0, X.jsx)(`section`, {
+        className: `mt-4 px-6`,
+        children: (0, X.jsx)(`div`, {
+            className: `border-token-border-light border-t pt-4`,
+            children: (0, X.jsx)(`div`, {
+                className: `text-token-text-primary text-sm font-medium`,
+                children: r ? (0, X.jsx)(w, {
+                    id: `chatgpt.search.product_details.price_history.typical_single`,
+                    defaultMessage: `Typically {price}`,
+                    values: {
+                        price: n.typical_low_price
+                    }
+                }) : (0, X.jsx)(w, {
+                    id: `chatgpt.search.product_details.price_history.typical_range`,
+                    defaultMessage: `Typically {lowPrice} - {highPrice}`,
+                    values: {
+                        lowPrice: n.typical_low_price,
+                        highPrice: n.typical_high_price
+                    }
+                })
+            })
+        })
+    }), t[0] = r, t[1] = n.typical_high_price, t[2] = n.typical_low_price, t[3] = i) : i = t[3], i
+}
+var _n, X, vn = e((() => {
+    _n = D(), T(), X = S()
+}));
+
+function yn(e) {
+    return (Array.isArray(e) ? e.flatMap(e => bn(e) ? [
+        [e.name ?? e.label ?? e.key, e.value]
+    ] : []) : Object.entries(e ?? {})).flatMap(([e, t]) => {
+        if (typeof e != `string` || t == null) return [];
+        let n = typeof t == `string` ? t : JSON.stringify(t);
+        return n == null ? [] : [
+            [e, n]
+        ]
+    })
+}
+
+function bn(e) {
+    return typeof e == `object` && !!e && !Array.isArray(e)
+}
+
+function xn(e, t) {
+    let [n, r] = e;
+    return (0, Z.jsxs)(`div`, {
+        className: `flex justify-between gap-4 text-sm`,
+        children: [(0, Z.jsx)(`dt`, {
+            className: `text-token-text-secondary`,
+            children: n
+        }), (0, Z.jsx)(`dd`, {
+            className: `text-token-text-primary text-end`,
+            children: r
+        })]
+    }, `${n}-${t}`)
+}
+var Sn, Z, Cn, wn = e((() => {
+    Sn = D(), T(), Pt(), Z = S(), Cn = e => {
+        "use forget";
+        let t = (0, Sn.c)(12),
+            {
+                product: n
+            } = e,
+            r, i, a, o;
+        if (t[0] !== n.attributes || t[1] !== n.description) {
+            o = Symbol.for(`react.early_return_sentinel`);
+            bb0: {
+                let e = yn(n.attributes);
+                if (!n.description && e.length === 0) {
+                    o = null;
+                    break bb0
+                }
+                r = `flex flex-col bg-inherit`,
+                t[6] === n.description ? i = t[7] : (i = n.description && (0, Z.jsx)(zt, {
+                    stickyHeader: !1,
+                    title: (0, Z.jsx)(w, {
+                        id: `chatgpt.search.product_details.source_catalog.overview.section_title`,
+                        defaultMessage: `Overview`
+                    }),
+                    children: (0, Z.jsx)(`p`, {
+                        className: `text-token-text-primary text-sm whitespace-pre-wrap`,
+                        children: n.description
+                    })
+                }), t[6] = n.description, t[7] = i),
+                a = e.length > 0 && (0, Z.jsx)(zt, {
+                    stickyHeader: !1,
+                    title: (0, Z.jsx)(w, {
+                        id: `chatgpt.search.product_details.source_catalog.attributes.section_title`,
+                        defaultMessage: `Details`
+                    }),
+                    children: (0, Z.jsx)(`dl`, {
+                        className: `flex flex-col gap-3`,
+                        children: e.map(xn)
+                    })
+                })
+            }
+            t[0] = n.attributes, t[1] = n.description, t[2] = r, t[3] = i, t[4] = a, t[5] = o
+        } else r = t[2], i = t[3], a = t[4], o = t[5];
+        if (o !== Symbol.for(`react.early_return_sentinel`)) return o;
+        let s;
+        return t[8] !== r || t[9] !== i || t[10] !== a ? (s = (0, Z.jsxs)(`div`, {
+            className: r,
+            children: [i, a]
+        }), t[8] = r, t[9] = i, t[10] = a, t[11] = s) : s = t[11], s
+    }
+}));
+
+function Tn(e) {
+    "use forget";
+    let t = (0, Nn.c)(284),
+        {
+            product: r,
+            clientThreadId: a,
+            messageId: o,
+            contentReferenceStartIndex: l,
+            turnIndex: u,
+            productIndex: d,
+            conversation: f,
+            offsetTopMargin: m,
+            sidebar: h,
+            isModal: te,
+            galleryAspect: ne,
+            interactionSource: _,
+            initialVisibleOfferCount: v,
+            onFollowUp: y
+        } = e,
+        b = m !== void 0 && m,
+        x = te !== void 0 && te,
+        ae;
+    t[0] === f ? ae = t[1] : (ae = () => mt(f), t[0] = f, t[1] = ae);
+    let S = n(ae),
+        C;
+    t[2] === S ? C = t[3] : (C = {
+        ...S,
+        isGenui: !0
+    }, t[2] = S, t[3] = C);
+    let T = Fe(C),
+        [E, D] = (0, Q.useState)(null),
+        [O, oe] = (0, Q.useState)(!1),
+        [k, A] = (0, Q.useState)(!1),
+        [j, se] = (0, Q.useState)(!1),
+        [ce, le] = (0, Q.useState)(!1),
+        de = Pn(),
+        {
+            showDebugConversationTurns: fe
+        } = Te(),
+        pe = h?.type === `product_agent` && h.publicEntityShareId != null,
+        me = !pe && de?.persist_conversation_to_user === !0,
+        he = (0, Q.use)(Ee),
+        ge = (0, Q.useRef)(null),
+        _e = (0, Q.useRef)(null),
+        ve = (0, Q.useRef)(null),
+        [P, Ce] = (0, Q.useState)(null),
+        we;
+    t[4] === a ? we = t[5] : (we = ee(a) ?? a, t[4] = a, t[5] = we);
+    let F = we,
+        Oe = p(),
+        ke;
+    t[6] !== f.id || t[7] !== Oe ? (ke = ee(f.id) ?? Oe, t[6] = f.id, t[7] = Oe, t[8] = ke) : ke = t[8];
+    let I = ke,
+        L = i(`3375735072`),
+        R;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (R = Le(), t[9] = R) : R = t[9];
+    let je = R,
+        Ne;
+    t[10] !== f || t[11] !== r ? (Ne = () => {
+        let e = ut(f),
+            t = e === `enriched` ? gt(f) : null,
+            n = wt(f),
+            {
+                product: i,
+                offers: a
+            } = n ?? {
+                product: r,
+                offers: []
+            };
+        return {
+            productDetailDataScope: e,
+            resolvedProductDetailData: n,
+            statefulProduct: i,
+            renderedOffers: a,
+            hasStreamedEntityOffers: e === `source_catalog` ? n != null : (t?.product.offers?.length ?? 0) > 0
+        }
+    }, t[10] = f, t[11] = r, t[12] = Ne) : Ne = t[12];
+    let {
+        productDetailDataScope: z,
+        resolvedProductDetailData: Ie,
+        statefulProduct: B,
+        renderedOffers: ze,
+        hasStreamedEntityOffers: V
+    } = n(Ne), Be, Ve;
+    if (t[13] !== z) {
+        let e = z === `enriched` ? c(`2128165686`) : void 0;
+        Be = e?.get(`disable_sidebar_what_to_know`, !1) ?? !1, Ve = e?.get(`disable_sidebar_reviews`, !1) ?? !1, t[13] = z, t[14] = Be, t[15] = Ve
+    } else Be = t[14], Ve = t[15];
+    let We = Ve,
+        Ge;
+    t[16] === f ? Ge = t[17] : (Ge = () => ({
+        productRationale: pt(f),
+        isLoadingReviewsOrRationale: _t(f)
+    }), t[16] = f, t[17] = Ge);
+    let {
+        productRationale: Ke,
+        isLoadingReviewsOrRationale: qe
+    } = n(Ge), Je = !Be && !!(Ke?.rationale || qe), Ye;
+    t[18] === f ? Ye = t[19] : (Ye = () => st(f), t[18] = f, t[19] = Ye);
+    let $e = n(Ye),
+        et;
+    t[20] === f ? et = t[21] : (et = () => bt(f), t[20] = f, t[21] = et);
+    let tt = n(et),
+        nt;
+    t[22] === f ? nt = t[23] : (nt = () => St(f), t[22] = f, t[23] = nt);
+    let it = n(nt),
+        ot;
+    t[24] === f ? ot = t[25] : (ot = () => dt(f), t[24] = f, t[25] = ot);
+    let lt = n(ot),
+        vt;
+    t[26] === f ? vt = t[27] : (vt = () => yt(f), t[26] = f, t[27] = vt);
+    let xt = n(vt),
+        Ct;
+    t[28] === f ? Ct = t[29] : (Ct = () => ct(f), t[28] = f, t[29] = Ct);
+    let Et = n(Ct),
+        Dt;
+    t[30] === f ? Dt = t[31] : (Dt = () => {
+        let e = wt(f)?.product;
+        return {
+            productImageUrls: ft(f),
+            isGeneratingTryOn: e != null && Tt(f, e.id)
+        }
+    }, t[30] = f, t[31] = Dt);
+    let {
+        productImageUrls: H,
+        isGeneratingTryOn: kt
+    } = n(Dt), U = h?.type === `product_agent` || h?.type === `entity` ? h.pinnedImage : void 0, W = U?.content_url || U?.thumbnail_url, jt;
+    t[32] !== U?.content_url || t[33] !== U?.thumbnail_url || t[34] !== W || t[35] !== H ? (jt = W ? [W, ...H.filter(e => e !== U?.content_url && e !== U?.thumbnail_url)] : H, t[32] = U?.content_url, t[33] = U?.thumbnail_url, t[34] = W, t[35] = H, t[36] = jt) : jt = t[36];
+    let G = jt,
+        Pt;
+    t[37] === B ? Pt = t[38] : (Pt = Re(B), t[37] = B, t[38] = Pt);
+    let Ft = Pt,
+        Lt = z === `enriched` && (B.shopping_vto?.eligible ?? r.shopping_vto?.eligible ?? !1),
+        [K] = (0, Q.useState)(Dn),
+        zt, Vt;
+    t[39] !== f || t[40] !== F || t[41] !== o || t[42] !== r ? (zt = () => Qe({
+        conversation: f,
+        shellProduct: r,
+        conversationId: F,
+        messageId: o
+    }), Vt = [f, r, F, o], t[39] = f, t[40] = F, t[41] = o, t[42] = r, t[43] = zt, t[44] = Vt) : (zt = t[43], Vt = t[44]), (0, Q.useEffect)(zt, Vt);
+    let Ht, Ut;
+    t[45] !== f || t[46] !== F || t[47] !== o || t[48] !== me || t[49] !== r || t[50] !== B ? (Ht = () => {
+        rt({
+            conversation: f,
+            shellProduct: r,
+            statefulProduct: B,
+            conversationId: F,
+            messageId: o,
+            persistConversationToUser: me
+        })
+    }, Ut = [f, F, o, me, r, B], t[45] = f, t[46] = F, t[47] = o, t[48] = me, t[49] = r, t[50] = B, t[51] = Ht, t[52] = Ut) : (Ht = t[51], Ut = t[52]), (0, Q.useEffect)(Ht, Ut);
+    let Wt, q;
+    t[53] === Symbol.for(`react.memo_cache_sentinel`) ? (Wt = () => {
+        let e = ve.current;
+        if (!e) return;
+        let t = () => {
+            Ce(e.getBoundingClientRect().height)
+        };
+        if (t(), typeof ResizeObserver > `u`) return;
+        let n = new ResizeObserver(t);
+        return n.observe(e), () => {
+            n.disconnect()
+        }
+    }, q = [], t[53] = Wt, t[54] = q) : (Wt = t[53], q = t[54]), (0, Q.useEffect)(Wt, q);
+    let J = (0, Q.useRef)(!1),
+        Gt = (0, Q.useRef)(null),
+        Kt, qt;
+    t[55] !== a || t[56] !== l || t[57] !== f || t[58] !== o || t[59] !== z || t[60] !== T ? (Kt = () => ie(() => {
+        let e = gt(f)?.product;
+        e && !J.current && (J.current = !0, be({
+            clientThreadId: a,
+            messageId: o,
+            contentReferenceStartIndex: l,
+            product: e,
+            source: z === `source_catalog` ? xe.CHATGPT_PRODUCT_SIDEBAR_ENTITY_SOURCE_SOURCE_CATALOG : xe.CHATGPT_PRODUCT_SIDEBAR_ENTITY_SOURCE_ENRICHED
+        }), T(`Product Sidebar Entity Loaded`, `product_sidebar_entity_loaded`, `product_entity`, {
+            ...e.analytics_meta ?? {},
+            product_event_uuid: e.product_event_uuid
+        }))
+    }), qt = [a, l, f, o, z, T], t[55] = a, t[56] = l, t[57] = f, t[58] = o, t[59] = z, t[60] = T, t[61] = Kt, t[62] = qt) : (Kt = t[61], qt = t[62]), (0, Q.useEffect)(Kt, qt);
+    let Jt;
+    t[63] !== _ || t[64] !== z || t[65] !== Ie || t[66] !== r || t[67] !== B || t[68] !== T ? (Jt = () => {
+        if (z === `source_catalog` && Ie == null) return;
+        let e = z === `source_catalog` ? B : r;
+        if (Gt.current === e.id) return;
+        Gt.current = e.id;
+        let t = jn(e, _),
+            n = [t.offer_url, t.product_url, t.site_url, t.merchant_url].find(En);
+        T(`Product Detail Shown`, `product_detail_shown`, `product_entity`, t, void 0, t => N(`product_detail_shown`, `detail_shown`, t, {
+            productId: e.id,
+            interactionSource: _,
+            url: n
+        }))
+    }, t[63] = _, t[64] = z, t[65] = Ie, t[66] = r, t[67] = B, t[68] = T, t[69] = Jt) : Jt = t[69];
+    let Yt;
+    t[70] !== a || t[71] !== l || t[72] !== _ || t[73] !== o || t[74] !== I || t[75] !== z || t[76] !== Ie || t[77] !== r || t[78] !== B || t[79] !== T || t[80] !== u ? (Yt = [a, l, _, o, I, z, Ie, r, B, T, u], t[70] = a, t[71] = l, t[72] = _, t[73] = o, t[74] = I, t[75] = z, t[76] = Ie, t[77] = r, t[78] = B, t[79] = T, t[80] = u, t[81] = Yt) : Yt = t[81], (0, Q.useEffect)(Jt, Yt);
+    let Xt;
+    t[82] !== z || t[83] !== B ? (Xt = z === `enriched` ? B.variants ?? [] : [], t[82] = z, t[83] = B, t[84] = Xt) : Xt = t[84];
+    let Zt = Xt,
+        $t;
+    t[85] === B ? $t = t[86] : ($t = e => Se(B, e), t[85] = B, t[86] = $t);
+    let en = $t,
+        tn;
+    if (t[87] !== H || t[88] !== B) {
+        tn = [];
+        for (let e of H) {
+            let t = He(e, Se(B, e));
+            t != null && tn.push(t)
+        }
+        t[87] = H, t[88] = B, t[89] = tn
+    } else tn = t[89];
+    let nn = tn,
+        an = ye(nn),
+        on;
+    t[90] !== nn || t[91] !== an ? (on = e => {
+        let t = He(e);
+        if (t == null) return e;
+        let n = nn.findIndex(e => e.asset_pointer === t.asset_pointer);
+        return an[n]?.data?.url ?? null
+    }, t[90] = nn, t[91] = an, t[92] = on) : on = t[92];
+    let sn = on,
+        cn;
+    t[93] !== S.isGenui || t[94] !== a || t[95] !== l || t[96] !== G || t[97] !== o || t[98] !== U?.url || t[99] !== W || t[100] !== sn || t[101] !== r || t[102] !== B || t[103] !== u ? (cn = (e, t) => {
+        let n = G[e];
+        Ue({
+            clientThreadId: a,
+            messageId: o,
+            turnIndex: u,
+            contentReferenceStartIndex: l,
+            surfaceLocation: Pe.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_SIDEBAR,
+            imageAffordance: t,
+            imageIndex: e,
+            contentReferenceType: `product_entity`,
+            parentContext: {
+                entityId: M(r, o, l),
+                entityCategory: `product`,
+                contentReferenceStartIndex: l,
+                messageId: o
+            },
+            isGenui: S.isGenui,
+            url: n === W ? U?.url : B.url ?? r.url,
+            contentUrl: n ? sn(n) : void 0,
+            isVirtualTryOnImage: Me(B, n)
+        })
+    }, t[93] = S.isGenui, t[94] = a, t[95] = l, t[96] = G, t[97] = o, t[98] = U?.url, t[99] = W, t[100] = sn, t[101] = r, t[102] = B, t[103] = u, t[104] = cn) : cn = t[104];
+    let ln = cn,
+        Y;
+    t[105] !== S || t[106] !== l || t[107] !== F || t[108] !== xt || t[109] !== G || t[110] !== o || t[111] !== he || t[112] !== U || t[113] !== W || t[114] !== d || t[115] !== sn || t[116] !== r || t[117] !== B ? (Y = e => {
+        if (he == null) return;
+        let t = G.map(e => ({
+                imageUrl: e,
+                resolvedImageUrl: sn(e)
+            })),
+            n = [],
+            i = [],
+            a;
+        for (let {
+                imageUrl: r,
+                resolvedImageUrl: o
+            }
+            of t) {
+            if (o == null) continue;
+            let t = Se(B, r) ?? {
+                    width: 0,
+                    height: 0
+                },
+                s = U && r === W ? {
+                    ...U,
+                    show_url: !0
+                } : {
+                    url: o,
+                    content_url: o,
+                    thumbnail_url: o,
+                    title: xt,
+                    content_size: t,
+                    thumbnail_size: t,
+                    is_proxied_image: He(r) != null
+                };
+            Me(B, r) && i.push(n.length), n.push(s), r === e && (a = s)
+        }
+        a != null && (he({
+            image: a,
+            source: ue.ImageGroup,
+            analyticsMetadata: S,
+            contentReferenceStartIndex: l,
+            productIndex: d,
+            imageResults: n,
+            engagementMetadata: {
+                virtualTryOnImageIndices: i,
+                contentReferenceType: `product_entity`,
+                pageUrl: B.url ?? r.url ?? null,
+                parentContext: {
+                    entityId: M(r, o, l),
+                    entityCategory: `product`,
+                    contentReferenceStartIndex: l,
+                    messageId: o
+                }
+            }
+        }), (Re(B).includes(e) || Re(r).includes(e)) && Ze({
+            productId: B.id,
+            conversationId: F,
+            messageId: o
+        }, `product_detail`))
+    }, t[105] = S, t[106] = l, t[107] = F, t[108] = xt, t[109] = G, t[110] = o, t[111] = he, t[112] = U, t[113] = W, t[114] = d, t[115] = sn, t[116] = r, t[117] = B, t[118] = Y) : Y = t[118];
+    let un = Y,
+        dn = At({
+            isCheckoutEnabled: L,
+            isClearingVariantSelection: j,
+            isLoadingProductEntity: it
+        }),
+        pn = lt === `success` || lt === `error`,
+        mn;
+    t[119] !== pn || t[120] !== V || t[121] !== z || t[122] !== ze || t[123] !== r.offers ? (mn = z === `source_catalog` || V ? ze : pn ? r.offers ?? [] : [], t[119] = pn, t[120] = V, t[121] = z, t[122] = ze, t[123] = r.offers, t[124] = mn) : mn = t[124];
+    let hn = mn,
+        _n = hn.length > 1,
+        X = V && lt === `success`,
+        vn;
+    t[125] !== f || t[126] !== X || t[127] !== V || t[128] !== o || t[129] !== K || t[130] !== r.id || t[131] !== r.query || t[132] !== r.title ? (vn = () => {
+        K.reset({
+            conversation: f,
+            messageId: o,
+            productKey: r.id || r.query || r.title
+        }), K.logRenderOfferTimings(V, X, !0)
+    }, t[125] = f, t[126] = X, t[127] = V, t[128] = o, t[129] = K, t[130] = r.id, t[131] = r.query, t[132] = r.title, t[133] = vn) : vn = t[133];
+    let yn = (0, Q.useEffectEvent)(vn),
+        bn;
+    t[134] === yn ? bn = t[135] : (bn = () => {
+        yn()
+    }, t[134] = yn, t[135] = bn);
+    let xn;
+    t[136] !== K || t[137] !== r.id ? (xn = [K, r.id], t[136] = K, t[137] = r.id, t[138] = xn) : xn = t[138], (0, Q.useEffect)(bn, xn);
+    let Sn, Z;
+    t[139] !== X || t[140] !== V || t[141] !== K ? (Sn = () => {
+        K.logRenderOfferTimings(V, X)
+    }, Z = [X, V, K], t[139] = X, t[140] = V, t[141] = K, t[142] = Sn, t[143] = Z) : (Sn = t[142], Z = t[143]), (0, Q.useEffect)(Sn, Z);
+    let wn;
+    t[144] === f ? wn = t[145] : (wn = () => {
+        let e = ge.current,
+            t = _e.current;
+        if (!e || !t) return;
+        let n = () => {
+            let n = e.getBoundingClientRect().top,
+                r = t.getBoundingClientRect().bottom;
+            return Math.max(0, Math.floor(r - n))
+        };
+        if (typeof ResizeObserver > `u`) {
+            at(f, n());
+            return
+        }
+        at(f, -1);
+        let r = new ResizeObserver(() => {
+            at(f, n())
+        });
+        return r.observe(e), r.observe(t), at(f, n()), () => {
+            r.disconnect()
+        }
+    }, t[144] = f, t[145] = wn);
+    let Tn;
+    t[146] !== f || t[147] !== lt || t[148] !== H.length ? (Tn = [f, lt, H.length], t[146] = f, t[147] = lt, t[148] = H.length, t[149] = Tn) : Tn = t[149], (0, Q.useEffect)(wn, Tn);
+    let kn = h && (pe || I) && Et;
+    if (z === `source_catalog` && Ie == null) {
+        let e = b ? `bg-surface-primary` : `bg-token-bg-primary`,
+            n;
+        t[150] === e ? n = t[151] : (n = s(`flex min-h-screen w-full flex-col gap-4 px-6 pt-8`, e), t[150] = e, t[151] = n);
+        let i;
+        t[152] !== f || t[153] !== F || t[154] !== o || t[155] !== lt || t[156] !== r ? (i = lt === `error` ? (0, $.jsxs)(`div`, {
+            className: `flex min-h-[420px] flex-col items-center justify-center text-center`,
+            children: [(0, $.jsx)(`p`, {
+                className: `text-token-text-secondary max-w-xs text-sm`,
+                children: (0, $.jsx)(w, {
+                    id: `chatgpt.search.product_details.source_catalog.error.message`,
+                    defaultMessage: `We couldn't load this product.`
+                })
+            }), (0, $.jsx)(re, {
+                type: `button`,
+                className: `mt-4`,
+                color: `secondary`,
+                size: `small`,
+                onClick: () => {
+                    ht({
+                        conversation: f,
+                        shellProduct: r,
+                        conversationId: F,
+                        messageId: o
+                    })
+                },
+                children: (0, $.jsx)(w, {
+                    id: `chatgpt.search.product_details.source_catalog.error.retry_button.label`,
+                    defaultMessage: `Try again`
+                })
+            })]
+        }) : (0, $.jsxs)($.Fragment, {
+            children: [(0, $.jsx)(`div`, {
+                className: `bg-token-bg-tertiary h-56 animate-pulse rounded-2xl`
+            }), (0, $.jsx)(`div`, {
+                className: `bg-token-bg-tertiary h-7 w-3/4 animate-pulse rounded`
+            }), (0, $.jsx)(`div`, {
+                className: `bg-token-bg-tertiary h-5 w-1/3 animate-pulse rounded`
+            })]
+        }), t[152] = f, t[153] = F, t[154] = o, t[155] = lt, t[156] = r, t[157] = i) : i = t[157];
+        let a;
+        return t[158] !== it || t[159] !== n || t[160] !== i ? (a = (0, $.jsx)(`div`, {
+            className: n,
+            "aria-busy": it,
+            children: i
+        }), t[158] = it, t[159] = n, t[160] = i, t[161] = a) : a = t[161], a
+    }
+    let An = b ? `bg-surface-primary` : `bg-token-bg-primary`,
+        Fn = b ? `mt-[calc(var(--threadFlyOut-leading-height,var(--product-flyout-sticky-header-height))*-1)] min-h-screen` : `mt-0`,
+        In;
+    t[162] !== An || t[163] !== Fn ? (In = s(`flex w-full flex-col`, An, Fn), t[162] = An, t[163] = Fn, t[164] = In) : In = t[164];
+    let Ln = `${B.id}:${G[0]??``}`,
+        Rn;
+    t[165] !== en || t[166] !== U || t[167] !== W || t[168] !== B.title ? (Rn = (e, t) => (0, $.jsx)(Mn, {
+        src: e,
+        onLoad: t,
+        title: e === W && U ? U.title : B.title,
+        assetPointerDimensions: en(e)
+    }), t[165] = en, t[166] = U, t[167] = W, t[168] = B.title, t[169] = Rn) : Rn = t[169];
+    let zn;
+    t[170] !== F || t[171] !== o || t[172] !== B.id ? (zn = () => {
+        Xe({
+            productId: B.id,
+            conversationId: F,
+            messageId: o
+        }, `product_detail`)
+    }, t[170] = F, t[171] = o, t[172] = B.id, t[173] = zn) : zn = t[173];
+    let Bn;
+    t[174] === ln ? Bn = t[175] : (Bn = (e, t) => {
+        ln(t, e === `next` ? Ae.CHATGPT_IMAGE_AFFORDANCE_IMAGE_GALLERY_NEXT_BUTTON : Ae.CHATGPT_IMAGE_AFFORDANCE_IMAGE_GALLERY_PREVIOUS_BUTTON)
+    }, t[174] = ln, t[175] = Bn);
+    let Vn;
+    t[176] !== ln || t[177] !== un ? (Vn = (e, t) => {
+        ln(t, Ae.CHATGPT_IMAGE_AFFORDANCE_PRODUCT_DETAIL_IMAGE), un(e)
+    }, t[176] = ln, t[177] = un, t[178] = Vn) : Vn = t[178];
+    let Hn;
+    t[179] !== ne || t[180] !== G || t[181] !== Ft || t[182] !== kt || t[183] !== Ln || t[184] !== Rn || t[185] !== zn || t[186] !== Bn || t[187] !== Vn ? (Hn = (0, $.jsx)(`div`, {
+        ref: _e,
+        children: (0, $.jsx)(Qt, {
+            aspect: ne,
+            imageUrls: G,
+            generatedImageUrls: Ft,
+            isGenerating: kt,
+            renderImage: Rn,
+            onGeneratedImageViewed: zn,
+            onArrowClick: Bn,
+            onClick: Vn
+        }, Ln)
+    }), t[179] = ne, t[180] = G, t[181] = Ft, t[182] = kt, t[183] = Ln, t[184] = Rn, t[185] = zn, t[186] = Bn, t[187] = Vn, t[188] = Hn) : Hn = t[188];
+    let Un;
+    t[189] === P ? Un = t[190] : (Un = P == null ? void 0 : {
+        height: P
+    }, t[189] = P, t[190] = Un);
+    let Wn;
+    t[191] === Symbol.for(`react.memo_cache_sentinel`) ? (Wn = {
+        duration: .2,
+        ease: `easeInOut`
+    }, t[191] = Wn) : Wn = t[191];
+    let Gn;
+    t[192] === xt ? Gn = t[193] : (Gn = (0, $.jsx)(`h2`, {
+        ref: ve,
+        className: `text-xl`,
+        children: xt
+    }), t[192] = xt, t[193] = Gn);
+    let Kn;
+    t[194] !== Un || t[195] !== Gn ? (Kn = (0, $.jsx)(g.div, {
+        className: `overflow-hidden`,
+        initial: !1,
+        animate: Un,
+        transition: Wn,
+        children: Gn
+    }), t[194] = Un, t[195] = Gn, t[196] = Kn) : Kn = t[196];
+    let qn;
+    t[197] === B ? qn = t[198] : (qn = (0, $.jsx)(Mt, {
+        product: B,
+        wrapperClass: `text-token-text-primary mt-1 inline-flex items-center gap-1 text-base leading-5 font-normal`,
+        includeMidDelimiter: !0,
+        includeNum: !0
+    }), t[197] = B, t[198] = qn);
+    let Jn;
+    t[199] !== Kn || t[200] !== qn ? (Jn = (0, $.jsxs)(`div`, {
+        className: `flex flex-col px-6 pt-4`,
+        children: [Kn, qn]
+    }), t[199] = Kn, t[200] = qn, t[201] = Jn) : Jn = t[201];
+    let Yn;
+    t[202] !== je || t[203] !== B.price_history ? (Yn = je && B.price_history && (0, $.jsx)(gn, {
+        priceHistory: B.price_history
+    }), t[202] = je, t[203] = B.price_history, t[204] = Yn) : Yn = t[204];
+    let Xn;
+    t[205] !== f || t[206] !== O || t[207] !== L || t[208] !== k || t[209] !== d || t[210] !== r || t[211] !== B || t[212] !== T || t[213] !== Zt ? (Xn = L && Zt.length > 0 && (0, $.jsx)(`div`, {
+        className: s(`px-5 pt-4 pb-2`, k && `pointer-events-none opacity-50`),
+        "aria-busy": k,
+        children: (0, $.jsx)(Bt, {
+            options: Zt,
+            showErrors: O,
+            updateOption: (e, t, n) => On({
+                optionGroupId: e,
+                selectedId: t,
+                variant_index: n,
+                conversation: f,
+                shellProduct: r,
+                statefulProduct: B,
+                setIsSwitchingVariant: A,
+                setIsClearingVariantSelection: se,
+                setSuppressOfferAnimations: le,
+                setError: D,
+                trackContentReferenceEvent: T,
+                productIndex: d,
+                productId: r.id
+            })
+        })
+    }), t[205] = f, t[206] = O, t[207] = L, t[208] = k, t[209] = d, t[210] = r, t[211] = B, t[212] = T, t[213] = Zt, t[214] = Xn) : Xn = t[214];
+    let Zn;
+    t[215] === E ? Zn = t[216] : (Zn = E && (0, $.jsx)(`div`, {
+        className: `text-token-interactive-label-danger-secondary-default text-center`,
+        children: E
+    }), t[215] = E, t[216] = Zn);
+    let Qn;
+    t[217] !== L || t[218] !== H || t[219] !== B.image_urls ? (Qn = L ? B.image_urls ?? [] : H, t[217] = L, t[218] = H, t[219] = B.image_urls, t[220] = Qn) : Qn = t[220];
+    let $n = z === `source_catalog` || Je,
+        er;
+    t[221] === Symbol.for(`react.memo_cache_sentinel`) ? (er = () => oe(!0), t[221] = er) : er = t[221];
+    let tr;
+    t[222] !== l || t[223] !== f || t[224] !== v || t[225] !== _ || t[226] !== hn || t[227] !== dn || t[228] !== d || t[229] !== _n || t[230] !== B || t[231] !== ce || t[232] !== Qn || t[233] !== $n || t[234] !== T ? (tr = (0, $.jsx)(It, {
+        className: `flex flex-col px-5 pt-3`,
+        offers: hn,
+        conversation: f,
+        contentReferenceStartIndex: l,
+        productIndex: d,
+        product: B,
+        trackContentReferenceEvent: T,
+        imageUrls: Qn,
+        isLoading: dn,
+        suppressOfferAnimations: ce,
+        showBestPriceOfferTag: _n,
+        showBottomBorder: $n,
+        onOpenCheckout: er,
+        interactionSource: _,
+        initialVisibleOfferCount: v
+    }), t[222] = l, t[223] = f, t[224] = v, t[225] = _, t[226] = hn, t[227] = dn, t[228] = d, t[229] = _n, t[230] = B, t[231] = ce, t[232] = Qn, t[233] = $n, t[234] = T, t[235] = tr) : tr = t[235];
+    let nr;
+    t[236] !== We || t[237] !== Be || t[238] !== qe || t[239] !== o || t[240] !== z || t[241] !== Ke || t[242] !== $e || t[243] !== K || t[244] !== B || t[245] !== T ? (nr = z === `source_catalog` ? (0, $.jsx)(Cn, {
+        product: B
+    }) : (0, $.jsxs)(`div`, {
+        className: `flex flex-col bg-inherit`,
+        children: [!Be && (0, $.jsx)(Nt, {
+            contentReference: Ke,
+            trackContentReferenceEvent: T,
+            disableAnimation: !!(Ke || $e),
+            isLoading: qe,
+            productAnalyticsMeta: B.analytics_meta ?? void 0,
+            productEventUuid: B.product_event_uuid ?? void 0,
+            renderProfiler: K
+        }), !We && (0, $.jsx)(Rt, {
+            contentReference: $e,
+            messageId: o,
+            trackContentReferenceEvent: T,
+            disableAnimation: !!(Ke || $e),
+            productAnalyticsMeta: B.analytics_meta ?? void 0,
+            productEventUuid: B.product_event_uuid ?? void 0,
+            renderProfiler: K
+        })]
+    }), t[236] = We, t[237] = Be, t[238] = qe, t[239] = o, t[240] = z, t[241] = Ke, t[242] = $e, t[243] = K, t[244] = B, t[245] = T, t[246] = nr) : nr = t[246];
+    let rr;
+    t[247] === Symbol.for(`react.memo_cache_sentinel`) ? (rr = (0, $.jsx)(rn, {}), t[247] = rr) : rr = t[247];
+    let ir;
+    t[248] !== l || t[249] !== f || t[250] !== Lt || t[251] !== o || t[252] !== H || t[253] !== d || t[254] !== r.shopping_vto || t[255] !== B || t[256] !== u ? (ir = Lt && (0, $.jsx)(Ot, {
+        contentReferenceStartIndex: l,
+        conversation: f,
+        messageId: o,
+        product: {
+            ...B,
+            image_urls: H,
+            shopping_vto: B.shopping_vto == null ? r.shopping_vto : {
+                ...B.shopping_vto,
+                generated_images: De(B.shopping_vto.generated_images ?? [], r.shopping_vto?.generated_images ?? [])
+            }
+        },
+        productIndex: d,
+        turnIndex: u
+    }), t[248] = l, t[249] = f, t[250] = Lt, t[251] = o, t[252] = H, t[253] = d, t[254] = r.shopping_vto, t[255] = B, t[256] = u, t[257] = ir) : ir = t[257];
+    let ar;
+    t[258] !== l || t[259] !== f || t[260] !== x || t[261] !== pe || t[262] !== o || t[263] !== y || t[264] !== d || t[265] !== kn || t[266] !== B || t[267] !== u ? (ar = kn && (0, $.jsx)(`div`, {
+        className: `flex justify-end px-6 pt-16 pb-6`,
+        children: (0, $.jsx)(fn, {
+            conversation: f,
+            messageId: pe ? void 0 : o,
+            contentReferenceStartIndex: l,
+            turnIndex: u,
+            productIndex: d,
+            product: B,
+            isModal: x,
+            onFollowUp: y
+        })
+    }), t[258] = l, t[259] = f, t[260] = x, t[261] = pe, t[262] = o, t[263] = y, t[264] = d, t[265] = kn, t[266] = B, t[267] = u, t[268] = ar) : ar = t[268];
+    let or;
+    t[269] !== tt || t[270] !== fe ? (or = !1, t[269] = tt, t[270] = fe, t[271] = or) : or = t[271];
+    let sr;
+    return t[272] !== In || t[273] !== Hn || t[274] !== Jn || t[275] !== Yn || t[276] !== Xn || t[277] !== Zn || t[278] !== tr || t[279] !== nr || t[280] !== ir || t[281] !== ar || t[282] !== or ? (sr = (0, $.jsxs)(`div`, {
+        ref: ge,
+        className: In,
+        children: [Hn, Jn, Yn, Xn, Zn, tr, nr, rr, ir, ar, or]
+    }), t[272] = In, t[273] = Hn, t[274] = Jn, t[275] = Yn, t[276] = Xn, t[277] = Zn, t[278] = tr, t[279] = nr, t[280] = ir, t[281] = ar, t[282] = or, t[283] = sr) : sr = t[283], sr
+}
+
+function En(e) {
+    return typeof e == `string` && e !== ``
+}
+
+function Dn() {
+    return new it
+}
+async function On({
+    optionGroupId: e,
+    selectedId: t,
+    variant_index: n,
+    conversation: r,
+    shellProduct: i,
+    statefulProduct: a,
+    setIsSwitchingVariant: o,
+    setIsClearingVariantSelection: s,
+    setSuppressOfferAnimations: c,
+    setError: l,
+    trackContentReferenceEvent: u,
+    productIndex: d,
+    productId: f
+}) {
+    let p = a.variants?.find(t => t.id === e);
+    u(`product_detail`, `product_detail`, `product_entity`, {
+        ...a.analytics_meta ?? {},
+        product_index: d,
+        product_id: f,
+        product_event_uuid: a.product_event_uuid,
+        action: `variant_selected`,
+        section: `product_detail`,
+        section_location: `sidebar`,
+        variant_name: p?.label ?? ``,
+        variant_value: p?.options.find(e => e.id === t)?.label ?? ``,
+        variant_index: n
+    });
+    let m = t == null,
+        h = a.variants?.some(e => e.selected_option_id) ?? !1,
+        g = a.variants?.map(n => m || n.id === e ? {
+            ...n,
+            options: n.options.map(e => ({
+                ...e,
+                selected: !m && e.id === t
+            })),
+            selected_option_id: m ? null : t
+        } : n) ?? a.variants,
+        ee = m ? void 0 : g?.reduce((e, t) => (t.selected_option_id && (e[t.id] = t.selected_option_id), e), {}),
+        te = p?.options.find(e => e.id === t);
+    t && !te?.available && (ee = {
+        [e]: t
+    });
+    let ne = Object.keys(ee ?? {}).length > 0,
+        _ = kn({
+            shellProduct: i,
+            statefulProduct: a,
+            variantOptionsQuery: ee,
+            optionGroupId: e,
+            isClearingVariantSelection: m
+        });
+    o(!0), s(m), c(m || !h), xt({
+        conversation: r,
+        shellProduct: i,
+        updatedVariants: g,
+        variantOptionsQuery: ee,
+        optionGroupId: e,
+        productLookupKey: _
+    });
+    let v = !1,
+        y = (e, t) => {
+            v = !0, vt({
+                conversation: r,
+                shellProduct: i,
+                nextProduct: e,
+                productLookupKey: t ?? e.product_lookup_key ?? {},
+                hasFetchedVariant: ne
+            })
+        };
+    try {
+        if (m)
+            for await (let e of nt({
+                productQuery: i.title,
+                productLookupKey: _
+            })) {
+                if (e.type !== `product_entity`) continue;
+                let t = {
+                    ...e.product,
+                    variants: e.product.variants ?? g
+                };
+                y(t, t.product_lookup_key ?? _)
+            } else {
+                let e = (await et({
+                    productLookupKey: _,
+                    onProductEntity: e => {
+                        let t = e.product;
+                        t?.variants && y(t, _)
+                    }
+                }))?.product;
+                !v && e?.variants && y(e, _)
+            }
+    } catch {} finally {
+        o(!1), s(!1), c(!1)
+    }
+}
+
+function kn({
+    shellProduct: e,
+    statefulProduct: t,
+    variantOptionsQuery: n,
+    optionGroupId: r,
+    isClearingVariantSelection: i
+}) {
+    return i ? An(e.product_lookup_key) : {
+        ...t.product_lookup_key,
+        variant_options_query: n,
+        last_variant_selection_group_id: r
+    }
+}
+
+function An(e) {
+    if (!e) return e;
+    let t = {
+        ...e
+    };
+    return delete t.variant_options_query, delete t.last_variant_selection_group_id, t
+}
+
+function jn(e, t) {
+    return {
+        ...e.analytics_meta ?? {},
+        interaction_source: t,
+        product_id: e.id,
+        product_event_uuid: e.product_event_uuid,
+        product_url: e.url,
+        has_popular_tag: e.popularity_metadata?.product_tags?.includes(`popular`) ?? !1
+    }
+}
+
+function Mn(e) {
+    "use forget";
+    let t = (0, Nn.c)(6),
+        {
+            assetPointerDimensions: n,
+            src: r,
+            title: i,
+            onLoad: a
+        } = e,
+        o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = s(`h-full w-full cursor-zoom-in object-contain mix-blend-darken dark:mix-blend-lighten`), t[0] = o) : o = t[0];
+    let c;
+    return t[1] !== n || t[2] !== a || t[3] !== r || t[4] !== i ? (c = (0, $.jsx)(We, {
+        src: r,
+        onLoad: a,
+        assetPointerDimensions: n,
+        alt: i,
+        className: o
+    }), t[1] = n, t[2] = a, t[3] = r, t[4] = i, t[5] = c) : c = t[5], c
+}
+var Nn, Q, $, Pn, Fn = e((() => {
+    Nn = D(), se(), le(), ve(), Oe(), l(), Ce(), ze(), ge(), fe(), nn(), Et(), Dt(), Ye(), F(), kt(), Ve(), me(), ot(), tt(), $e(), Ie(), te(), y(), o(), d(), I(), we(), u(), r(), Q = t(E()), T(), dn(), hn(), _e(), Vt(), vn(), K(), Ft(), Lt(), wn(), W(), $ = S(), Pn = () => void 0
+}));
+export {
+    Fn as n, Tn as t
+};
 //# sourceMappingURL=ecdd5ba5-aceutm3sa24qbtjk.js.map

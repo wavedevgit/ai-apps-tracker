@@ -1,2 +1,506 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$f as n,F_ as r,I1 as i,J5 as a,JT as o,Ji as s,M1 as c,M5 as l,Qf as u,R_ as d,Xi as f,Yf as p,_nt as m,dE as h,e5 as g,f_ as _,hnt as v,m8 as y,n5 as b,nY as x,pE as S,pY as C,q5 as w,qB as T,qT as E,tV as D,t_ as O}from"./4813494d-qsuygr73qjc6rh65.js";import{$ as k,Bn as A,Hn as j,Pn as M,Tn as N,Vn as P,at as ee,zn as F}from"./2340486e-komxp8tzs51ny4jj.js";import{LAt as te,RAt as I,ajt as ne,fGn as re,ijt as ie,pGn as ae}from"./conversation-small-cawdu7il3ha6y70c.js";import{Dh as oe,Oh as se}from"./30901919-jory365vq6ym5crx.js";import{Fg as L,Hp as R,Rg as ce,Up as le}from"./8b34dbc2-d4icgkio4i3wfm6q.js";function ue({children:e,className:t}){return(0,B.jsx)(`li`,{className:w(V,t),children:e})}function de({leading:e,title:t,subtitle:n,skeleton:r,className:i,wrapTitle:a=!0,titleFontWeight:o=`medium`}){let s=t!=null||r===!0,c=n!=null||!!r,l=a?(0,B.jsx)(`div`,{className:w(`text-sm`,o===`normal`?`font-normal`:o===`semibold`?`font-semibold`:`font-medium`,r===!0&&`skeleton-child h-6 w-fit min-w-[50%]`),children:t}):t;return(0,B.jsxs)(`div`,{className:w(`flex w-full items-center gap-4`,r&&`group skeleton`,i),children:[e,(0,B.jsxs)(`div`,{className:`grow overflow-hidden`,children:[s&&l,c&&(0,B.jsx)(`div`,{className:w(`text-token-text-secondary min-h-0 truncate text-sm`,r&&w(`skeleton-child mt-2 h-6`,r===`snippet`?`w-2/5`:`w-fit`)),children:n})]})]})}function z({children:e,className:t}){return(0,B.jsx)(`div`,{className:w(`text-token-text-tertiary relative flex min-h-10 min-w-10 shrink-0 items-center justify-end gap-2 text-sm`,t),children:e})}var B,V,H=e((()=>{a(),B=P(),V=`group/project-item hover:bg-token-interactive-bg-secondary-hover active:bg-token-interactive-bg-secondary-press flex min-h-16 cursor-pointer items-center p-3 text-sm select-none`})),U,W,G,K,fe=e((()=>{U=N(),le(),H(),S(),m(),a(),W=t(j()),F(),G=P(),K=e=>{"use forget";let t=(0,U.c)(27),{conversation:n,conversationTitle:r,isNewProjectPage:i}=e,a=i!==void 0&&i,[o,s]=(0,W.useState)(!1),c=A(),l;if(t[0]!==n.title||t[1]!==r||t[2]!==c){let e=r?.trim()||n.title?.trim();l=e?c.formatMessage(h.projectConversationActionsMenuLabel,{title:e}):void 0,t[0]=n.title,t[1]=r,t[2]=c,t[3]=l}else l=t[3];let u=l,d;t[4]!==n.update_time||t[5]!==c?(d=n.update_time&&Intl.DateTimeFormat(c.locale,{month:`short`,day:`numeric`}).format(new Date(n.update_time)),t[4]=n.update_time,t[5]=c,t[6]=d):d=t[6];let f=d,p;t[7]!==f||t[8]!==o||t[9]!==a?(p=!!f&&(0,G.jsx)(`span`,{"aria-hidden":`true`,className:w(`whitespace-nowrap`,!a&&`transition-opacity duration-100 ease-out`,o?`opacity-0`:`can-hover:group-hover/project-item:opacity-0 can-hover:group-focus-within/project-item:opacity-0 opacity-100`),"data-testid":`project-conversation-overflow-date`,children:f}),t[7]=f,t[8]=o,t[9]=a,t[10]=p):p=t[10];let m=!a&&`transition-opacity duration-100 ease-out`,g=!o&&`can-hover:opacity-0 can-hover:pointer-events-none`,_=o&&`pointer-events-auto opacity-100`,y;t[11]!==m||t[12]!==g||t[13]!==_?(y=w(`flex items-center gap-1.5`,m,`can-hover:absolute can-hover:inset-y-0 can-hover:end-0`,g,`can-hover:group-hover/project-item:opacity-100`,`can-hover:group-hover/project-item:pointer-events-auto`,`can-hover:group-focus-within/project-item:opacity-100`,`can-hover:group-focus-within/project-item:pointer-events-auto`,`cant-hover:opacity-100 cant-hover:pointer-events-auto`,_),t[11]=m,t[12]=g,t[13]=_,t[14]=y):y=t[14];let b;t[15]===n.id?b=t[16]:(b=e=>{s(e),e&&v.logEvent(`Conversation History Item Open Menu`,{conversationId:n.id})},t[15]=n.id,t[16]=b);let x;t[17]!==u||t[18]!==n||t[19]!==b?(x=(0,G.jsx)(R,{conversation:n,ariaLabel:u,onOpenChange:b,inMainScreen:!0,isActiveConversation:!1}),t[17]=u,t[18]=n,t[19]=b,t[20]=x):x=t[20];let S;t[21]!==x||t[22]!==y?(S=(0,G.jsx)(`div`,{className:y,"data-prevent-default":!0,"data-testid":`project-conversation-overflow-menu`,children:x}),t[21]=x,t[22]=y,t[23]=S):S=t[23];let C;return t[24]!==S||t[25]!==p?(C=(0,G.jsxs)(z,{children:[p,S]}),t[24]=S,t[25]=p,t[26]=C):C=t[26],C}}));function pe(e){"use forget";let t=(0,Y.c)(11),{project:n,onNavigateToConversation:r}=e;_(n.id);let i;t[0]===n?i=t[1]:(i=()=>n.conversations$().all$(),t[0]=n,t[1]=i);let a=l(i),o;t[2]===n?o=t[3]:(o=()=>n.conversations$().canShowConversations$(),t[2]=n,t[3]=o);let s=l(o),c;t[4]!==s||t[5]!==a||t[6]!==r||t[7]!==n?(c=s&&(0,Z.jsx)(me,{items:a,project:n,onNavigateToConversation:r}),t[4]=s,t[5]=a,t[6]=r,t[7]=n,t[8]=c):c=t[8];let u;return t[9]===c?u=t[10]:(u=(0,Z.jsx)(`section`,{children:c}),t[9]=c,t[10]=u),u}function me(e){"use forget";let t=(0,Y.c)(45),{project:n,items:r,onNavigateToConversation:i}=e,a;t[0]===n?a=t[1]:(a=()=>n.conversations$().canFetchMore$(),t[0]=n,t[1]=a);let o=l(a),c;t[2]===n?c=t[3]:(c=()=>n.gizmo$(),t[2]=n,t[3]=c);let u=l(c),d;t[4]===n?d=t[5]:(d=()=>n.conversations$().awaitingManualRetry$(),t[4]=n,t[5]=d);let f=l(d),p;t[6]===n?p=t[7]:(p=()=>n.conversations$().fetchMore$,t[6]=n,t[7]=p);let m=l(p),h;t[8]===n?h=t[9]:(h=()=>n.conversations$().cursor$(),t[8]=n,t[9]=h);let g=l(h),_;t[10]===n?_=t[11]:(_=()=>n.conversations$().isLoading$(),t[10]=n,t[11]=_);let v=l(_),y;t[12]===n?y=t[13]:(y=()=>n.isShared$(),t[12]=n,t[13]=y);let b=l(y),x=v,S;t[14]!==r||t[15]!==u?.gizmo?.author?(S=r?.some(e=>`owner`in e&&e.owner?.user_id!==u?.gizmo?.author.user_id),t[14]=r,t[15]=u?.gizmo?.author,t[16]=S):S=t[16];let C=b===!0||S===!0,T=x&&`skeleton`,D;t[17]===T?D=t[18]:(D=w(`divide-token-bg-tertiary group divide-y`,T),t[17]=T,t[18]=D);let O;t[19]!==r||t[20]!==i||t[21]!==u||t[22]!==C?(O=u&&r&&r.map(e=>(0,Z.jsx)(ue,{children:(0,Z.jsx)($,{conversation:e,project:u,showAvatar:C??!1,onNavigateToConversation:i})},e.id)),t[19]=r,t[20]=i,t[21]=u,t[22]=C,t[23]=O):O=t[23];let k;t[24]!==o||t[25]!==m||t[26]!==v?(k=!v&&o&&(0,Z.jsx)(E,{type:`button`,onClick:m,className:`keyboard-not-focused:sr-only`,children:(0,Z.jsx)(M,{id:`project.conversation-list.load-more`,defaultMessage:`Load more conversations`})}),t[24]=o,t[25]=m,t[26]=v,t[27]=k):k=t[27];let A;t[28]!==f||t[29]!==n?(A=f&&(0,Z.jsx)(s,{type:`normal`,className:`mt-2`,dangerCtaText:`Try again`,onDangerCtaClick:()=>{n.conversations$().awaitingManualRetry$.set(!1)},content:(0,Z.jsx)(M,{id:`project.conversation-list.awaiting-manual-retry`,defaultMessage:`Loading more conversations failed. Please try again.`}),icon:(0,Z.jsx)(oe,{className:`icon`})}),t[28]=f,t[29]=n,t[30]=A):A=t[30];let j;t[31]===x?j=t[32]:(j=x&&(0,Z.jsx)(q,{}),t[31]=x,t[32]=j);let N;t[33]!==o||t[34]!==g||t[35]!==m?(N=(0,Z.jsx)(he,{canFetchMore:o,fetchMore:m},g),t[33]=o,t[34]=g,t[35]=m,t[36]=N):N=t[36];let P;return t[37]!==v||t[38]!==D||t[39]!==O||t[40]!==k||t[41]!==A||t[42]!==j||t[43]!==N?(P=(0,Z.jsxs)(`ol`,{className:D,"aria-busy":v,children:[O,k,A,j,N]}),t[37]=v,t[38]=D,t[39]=O,t[40]=k,t[41]=A,t[42]=j,t[43]=N,t[44]=P):P=t[44],P}function q(e){"use forget";let t=(0,Y.c)(13),{count:n,showAvatar:r}=e,i=n===void 0?2:n,a=r===void 0||r,o=A(),s;t[0]===o?s=t[1]:(s=o.formatMessage(Q.title),t[0]=o,t[1]=s);let c=s,l;t[2]===o?l=t[3]:(l=o.formatMessage(Q.snippet),t[2]=o,t[3]=l);let u=l,d;if(t[4]!==i||t[5]!==u||t[6]!==c||t[7]!==a){let e;t[9]!==u||t[10]!==c||t[11]!==a?(e=(e,t)=>(0,Z.jsx)(`li`,{className:`mt-1 flex min-h-15 items-center p-3 text-sm`,inert:!0,"aria-hidden":!0,children:(0,Z.jsx)(J,{conversationTitle:c,showAvatar:a,monogram:null,snippet:u,skeleton:!0})},t),t[9]=u,t[10]=c,t[11]=a,t[12]=e):e=t[12],d=(0,Z.jsx)(Z.Fragment,{children:Array.from({length:i},e)}),t[4]=i,t[5]=u,t[6]=c,t[7]=a,t[8]=d}else d=t[8];return d}function he(e){"use forget";let t=(0,Y.c)(8),{canFetchMore:n,fetchMore:r}=e,i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i={threshold:0,rootMargin:`200px 0px`},t[0]=i):i=t[0];let[a,o]=ae(i),s,c;if(t[1]!==n||t[2]!==r||t[3]!==a?(s=()=>{n&&a&&r()},c=[n,r,a],t[1]=n,t[2]=r,t[3]=a,t[4]=s,t[5]=c):(s=t[4],c=t[5]),(0,X.useEffect)(s,c),!n)return null;let l;return t[6]===o?l=t[7]:(l=(0,Z.jsx)(`div`,{className:`h-px w-full`,inert:!0,ref:o}),t[6]=o,t[7]=l),l}function J(e){"use forget";let t=(0,Y.c)(10),{showAvatar:n,monogram:r,editor:i,conversationTitle:a,skeleton:o,snippet:s}=e,c;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(c=!1,t[0]=c):c=t[0];let l;t[1]!==r||t[2]!==n?(l=n&&(0,Z.jsx)(p,{monogram:r,showTooltip:!0}),t[1]=r,t[2]=n,t[3]=l):l=t[3];let u=i??a,d=!i,f;return t[4]!==o||t[5]!==s||t[6]!==l||t[7]!==u||t[8]!==d?(f=(0,Z.jsx)(de,{leading:l,title:u,wrapTitle:d,subtitle:s,skeleton:o}),t[4]=o,t[5]=s,t[6]=l,t[7]=u,t[8]=d,t[9]=f):f=t[9],f}function ge(e){return e?.title}var Y,X,Z,Q,$,_e=e((()=>{Y=N(),o(),f(),se(),I(),H(),fe(),u(),n(),O(),S(),r(),y(),i(),x(),b(),ce(),ie(),D(),re(),a(),X=t(j()),F(),k(),Z=P(),Q={title:{id:`project.conversation-list.loading-title`,description:`Loading conversation list skeleton message`,defaultMessage:`Loading conversation title...`},snippet:{id:`project.conversation-list.loading-snippet`,description:`Loading conversation list skeleton snippet`,defaultMessage:`Loading conversation snippet...`}},$=e=>{"use forget";let t=(0,Y.c)(60),{conversation:n,project:r,showAvatar:i,onNavigateToConversation:a}=e,o=A(),s=C(n.id,ge)??n.title,[l,u]=(0,X.useState)(!1),f,p;t[0]===n.id?(f=t[1],p=t[2]):(f=()=>g(L,{editTitleInMainScreen:e=>{let{serverThreadId:t}=e;t===n.id&&u(!0)}}),p=[n.id],t[0]=n.id,t[1]=f,t[2]=p),(0,X.useEffect)(f,p);let{snippet:m}=n,_,v,y,b,x;if(t[3]!==n||t[4]!==r.gizmo){let e=c()?.normalizedAccountUserId;_=`owner`in n?n.owner:null,b=_?.user_id,v=_?.name,y=_?.user_email,x=T(n.id,{project:r.gizmo,ownerUserId:b,accountUserId:e}),t[3]=n,t[4]=r.gizmo,t[5]=_,t[6]=v,t[7]=y,t[8]=b,t[9]=x}else _=t[5],v=t[6],y=t[7],b=t[8],x=t[9];let S=x,w,E,D,O,k,j,M;if(t[10]!==n||t[11]!==s||t[12]!==S||t[13]!==o||t[14]!==l||t[15]!==_||t[16]!==v||t[17]!==y||t[18]!==b||t[19]!==i||t[20]!==m){M=Symbol.for(`react.early_return_sentinel`);bb0:{let e=n.update_time&&Intl.DateTimeFormat(o.locale,{month:`short`,day:`numeric`}).format(new Date(n.update_time)),r;t[28]!==n||t[29]!==l?(r=l?(0,Z.jsx)(te,{conversationId:n.id,historyConversationResponse:n,onClose:()=>{u(!1)}}):null,t[28]=n,t[29]=l,t[30]=r):r=t[30];let a=!m&&`snippet`,c;t[31]!==_||t[32]!==v||t[33]!==y||t[34]!==b?(c=_&&v&&b?{label:v,id:b,sublabel:y}:null,t[31]=_,t[32]=v,t[33]=y,t[34]=b,t[35]=c):c=t[35];let d;if(t[36]!==s||t[37]!==i||t[38]!==m||t[39]!==a||t[40]!==c||t[41]!==r?(d=(0,Z.jsx)(J,{conversationTitle:s,editor:r,snippet:m,skeleton:a,showAvatar:i,monogram:c}),t[36]=s,t[37]=i,t[38]=m,t[39]=a,t[40]=c,t[41]=r,t[42]=d):d=t[42],E=d,l){M=E;break bb0}j=`flex w-full min-w-0 items-center gap-4`,w=ee,D=S,O=!1,k=e?o.formatMessage(h.projectConversationLastUpdatedDescription,{date:e}):void 0}t[10]=n,t[11]=s,t[12]=S,t[13]=o,t[14]=l,t[15]=_,t[16]=v,t[17]=y,t[18]=b,t[19]=i,t[20]=m,t[21]=w,t[22]=E,t[23]=D,t[24]=O,t[25]=k,t[26]=j,t[27]=M}else w=t[21],E=t[22],D=t[23],O=t[24],k=t[25],j=t[26],M=t[27];if(M!==Symbol.for(`react.early_return_sentinel`))return M;let N;t[43]!==n.id||t[44]!==a?(N=e=>{ne(e)&&d(`project_chat_navigation`,{targetKey:n.id}),a?.()},t[43]=n.id,t[44]=a,t[45]=N):N=t[45];let P;t[46]!==w||t[47]!==E||t[48]!==D||t[49]!==O||t[50]!==k||t[51]!==N?(P=(0,Z.jsx)(w,{to:D,draggable:O,"aria-description":k,className:`block min-w-0 grow`,onClick:N,children:E}),t[46]=w,t[47]=E,t[48]=D,t[49]=O,t[50]=k,t[51]=N,t[52]=P):P=t[52];let F;t[53]!==n||t[54]!==s?(F=(0,Z.jsx)(K,{conversation:n,conversationTitle:s,isNewProjectPage:!0}),t[53]=n,t[54]=s,t[55]=F):F=t[55];let I;return t[56]!==P||t[57]!==F||t[58]!==j?(I=(0,Z.jsxs)(`div`,{className:j,children:[P,F]}),t[56]=P,t[57]=F,t[58]=j,t[59]=I):I=t[59],I}}));export{H as a,z as i,pe as n,_e as r,q as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $f as n,
+    F_ as r,
+    I1 as i,
+    J5 as a,
+    JT as o,
+    Ji as s,
+    M1 as c,
+    M5 as l,
+    Qf as u,
+    R_ as d,
+    Xi as f,
+    Yf as p,
+    _nt as m,
+    dE as h,
+    e5 as g,
+    f_ as _,
+    hnt as v,
+    m8 as y,
+    n5 as b,
+    nY as x,
+    pE as S,
+    pY as C,
+    q5 as w,
+    qB as T,
+    qT as E,
+    tV as D,
+    t_ as O
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    $ as k,
+    Bn as A,
+    Hn as j,
+    Pn as M,
+    Tn as N,
+    Vn as P,
+    at as ee,
+    zn as F
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    LAt as te,
+    RAt as I,
+    ajt as ne,
+    fGn as re,
+    ijt as ie,
+    pGn as ae
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Dh as oe,
+    Oh as se
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    Fg as L,
+    Hp as R,
+    Rg as ce,
+    Up as le
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+
+function ue({
+    children: e,
+    className: t
+}) {
+    return (0, B.jsx)(`li`, {
+        className: w(V, t),
+        children: e
+    })
+}
+
+function de({
+    leading: e,
+    title: t,
+    subtitle: n,
+    skeleton: r,
+    className: i,
+    wrapTitle: a = !0,
+    titleFontWeight: o = `medium`
+}) {
+    let s = t != null || r === !0,
+        c = n != null || !!r,
+        l = a ? (0, B.jsx)(`div`, {
+            className: w(`text-sm`, o === `normal` ? `font-normal` : o === `semibold` ? `font-semibold` : `font-medium`, r === !0 && `skeleton-child h-6 w-fit min-w-[50%]`),
+            children: t
+        }) : t;
+    return (0, B.jsxs)(`div`, {
+        className: w(`flex w-full items-center gap-4`, r && `group skeleton`, i),
+        children: [e, (0, B.jsxs)(`div`, {
+            className: `grow overflow-hidden`,
+            children: [s && l, c && (0, B.jsx)(`div`, {
+                className: w(`text-token-text-secondary min-h-0 truncate text-sm`, r && w(`skeleton-child mt-2 h-6`, r === `snippet` ? `w-2/5` : `w-fit`)),
+                children: n
+            })]
+        })]
+    })
+}
+
+function z({
+    children: e,
+    className: t
+}) {
+    return (0, B.jsx)(`div`, {
+        className: w(`text-token-text-tertiary relative flex min-h-10 min-w-10 shrink-0 items-center justify-end gap-2 text-sm`, t),
+        children: e
+    })
+}
+var B, V, H = e((() => {
+        a(), B = P(), V = `group/project-item hover:bg-token-interactive-bg-secondary-hover active:bg-token-interactive-bg-secondary-press flex min-h-16 cursor-pointer items-center p-3 text-sm select-none`
+    })),
+    U, W, G, K, fe = e((() => {
+        U = N(), le(), H(), S(), m(), a(), W = t(j()), F(), G = P(), K = e => {
+            "use forget";
+            let t = (0, U.c)(27),
+                {
+                    conversation: n,
+                    conversationTitle: r,
+                    isNewProjectPage: i
+                } = e,
+                a = i !== void 0 && i,
+                [o, s] = (0, W.useState)(!1),
+                c = A(),
+                l;
+            if (t[0] !== n.title || t[1] !== r || t[2] !== c) {
+                let e = r?.trim() || n.title?.trim();
+                l = e ? c.formatMessage(h.projectConversationActionsMenuLabel, {
+                    title: e
+                }) : void 0, t[0] = n.title, t[1] = r, t[2] = c, t[3] = l
+            } else l = t[3];
+            let u = l,
+                d;
+            t[4] !== n.update_time || t[5] !== c ? (d = n.update_time && Intl.DateTimeFormat(c.locale, {
+                month: `short`,
+                day: `numeric`
+            }).format(new Date(n.update_time)), t[4] = n.update_time, t[5] = c, t[6] = d) : d = t[6];
+            let f = d,
+                p;
+            t[7] !== f || t[8] !== o || t[9] !== a ? (p = !!f && (0, G.jsx)(`span`, {
+                "aria-hidden": `true`,
+                className: w(`whitespace-nowrap`, !a && `transition-opacity duration-100 ease-out`, o ? `opacity-0` : `can-hover:group-hover/project-item:opacity-0 can-hover:group-focus-within/project-item:opacity-0 opacity-100`),
+                "data-testid": `project-conversation-overflow-date`,
+                children: f
+            }), t[7] = f, t[8] = o, t[9] = a, t[10] = p) : p = t[10];
+            let m = !a && `transition-opacity duration-100 ease-out`,
+                g = !o && `can-hover:opacity-0 can-hover:pointer-events-none`,
+                _ = o && `pointer-events-auto opacity-100`,
+                y;
+            t[11] !== m || t[12] !== g || t[13] !== _ ? (y = w(`flex items-center gap-1.5`, m, `can-hover:absolute can-hover:inset-y-0 can-hover:end-0`, g, `can-hover:group-hover/project-item:opacity-100`, `can-hover:group-hover/project-item:pointer-events-auto`, `can-hover:group-focus-within/project-item:opacity-100`, `can-hover:group-focus-within/project-item:pointer-events-auto`, `cant-hover:opacity-100 cant-hover:pointer-events-auto`, _), t[11] = m, t[12] = g, t[13] = _, t[14] = y) : y = t[14];
+            let b;
+            t[15] === n.id ? b = t[16] : (b = e => {
+                s(e), e && v.logEvent(`Conversation History Item Open Menu`, {
+                    conversationId: n.id
+                })
+            }, t[15] = n.id, t[16] = b);
+            let x;
+            t[17] !== u || t[18] !== n || t[19] !== b ? (x = (0, G.jsx)(R, {
+                conversation: n,
+                ariaLabel: u,
+                onOpenChange: b,
+                inMainScreen: !0,
+                isActiveConversation: !1
+            }), t[17] = u, t[18] = n, t[19] = b, t[20] = x) : x = t[20];
+            let S;
+            t[21] !== x || t[22] !== y ? (S = (0, G.jsx)(`div`, {
+                className: y,
+                "data-prevent-default": !0,
+                "data-testid": `project-conversation-overflow-menu`,
+                children: x
+            }), t[21] = x, t[22] = y, t[23] = S) : S = t[23];
+            let C;
+            return t[24] !== S || t[25] !== p ? (C = (0, G.jsxs)(z, {
+                children: [p, S]
+            }), t[24] = S, t[25] = p, t[26] = C) : C = t[26], C
+        }
+    }));
+
+function pe(e) {
+    "use forget";
+    let t = (0, Y.c)(11),
+        {
+            project: n,
+            onNavigateToConversation: r
+        } = e;
+    _(n.id);
+    let i;
+    t[0] === n ? i = t[1] : (i = () => n.conversations$().all$(), t[0] = n, t[1] = i);
+    let a = l(i),
+        o;
+    t[2] === n ? o = t[3] : (o = () => n.conversations$().canShowConversations$(), t[2] = n, t[3] = o);
+    let s = l(o),
+        c;
+    t[4] !== s || t[5] !== a || t[6] !== r || t[7] !== n ? (c = s && (0, Z.jsx)(me, {
+        items: a,
+        project: n,
+        onNavigateToConversation: r
+    }), t[4] = s, t[5] = a, t[6] = r, t[7] = n, t[8] = c) : c = t[8];
+    let u;
+    return t[9] === c ? u = t[10] : (u = (0, Z.jsx)(`section`, {
+        children: c
+    }), t[9] = c, t[10] = u), u
+}
+
+function me(e) {
+    "use forget";
+    let t = (0, Y.c)(45),
+        {
+            project: n,
+            items: r,
+            onNavigateToConversation: i
+        } = e,
+        a;
+    t[0] === n ? a = t[1] : (a = () => n.conversations$().canFetchMore$(), t[0] = n, t[1] = a);
+    let o = l(a),
+        c;
+    t[2] === n ? c = t[3] : (c = () => n.gizmo$(), t[2] = n, t[3] = c);
+    let u = l(c),
+        d;
+    t[4] === n ? d = t[5] : (d = () => n.conversations$().awaitingManualRetry$(), t[4] = n, t[5] = d);
+    let f = l(d),
+        p;
+    t[6] === n ? p = t[7] : (p = () => n.conversations$().fetchMore$, t[6] = n, t[7] = p);
+    let m = l(p),
+        h;
+    t[8] === n ? h = t[9] : (h = () => n.conversations$().cursor$(), t[8] = n, t[9] = h);
+    let g = l(h),
+        _;
+    t[10] === n ? _ = t[11] : (_ = () => n.conversations$().isLoading$(), t[10] = n, t[11] = _);
+    let v = l(_),
+        y;
+    t[12] === n ? y = t[13] : (y = () => n.isShared$(), t[12] = n, t[13] = y);
+    let b = l(y),
+        x = v,
+        S;
+    t[14] !== r || t[15] !== u?.gizmo?.author ? (S = r?.some(e => `owner` in e && e.owner?.user_id !== u?.gizmo?.author.user_id), t[14] = r, t[15] = u?.gizmo?.author, t[16] = S) : S = t[16];
+    let C = b === !0 || S === !0,
+        T = x && `skeleton`,
+        D;
+    t[17] === T ? D = t[18] : (D = w(`divide-token-bg-tertiary group divide-y`, T), t[17] = T, t[18] = D);
+    let O;
+    t[19] !== r || t[20] !== i || t[21] !== u || t[22] !== C ? (O = u && r && r.map(e => (0, Z.jsx)(ue, {
+        children: (0, Z.jsx)($, {
+            conversation: e,
+            project: u,
+            showAvatar: C ?? !1,
+            onNavigateToConversation: i
+        })
+    }, e.id)), t[19] = r, t[20] = i, t[21] = u, t[22] = C, t[23] = O) : O = t[23];
+    let k;
+    t[24] !== o || t[25] !== m || t[26] !== v ? (k = !v && o && (0, Z.jsx)(E, {
+        type: `button`,
+        onClick: m,
+        className: `keyboard-not-focused:sr-only`,
+        children: (0, Z.jsx)(M, {
+            id: `project.conversation-list.load-more`,
+            defaultMessage: `Load more conversations`
+        })
+    }), t[24] = o, t[25] = m, t[26] = v, t[27] = k) : k = t[27];
+    let A;
+    t[28] !== f || t[29] !== n ? (A = f && (0, Z.jsx)(s, {
+        type: `normal`,
+        className: `mt-2`,
+        dangerCtaText: `Try again`,
+        onDangerCtaClick: () => {
+            n.conversations$().awaitingManualRetry$.set(!1)
+        },
+        content: (0, Z.jsx)(M, {
+            id: `project.conversation-list.awaiting-manual-retry`,
+            defaultMessage: `Loading more conversations failed. Please try again.`
+        }),
+        icon: (0, Z.jsx)(oe, {
+            className: `icon`
+        })
+    }), t[28] = f, t[29] = n, t[30] = A) : A = t[30];
+    let j;
+    t[31] === x ? j = t[32] : (j = x && (0, Z.jsx)(q, {}), t[31] = x, t[32] = j);
+    let N;
+    t[33] !== o || t[34] !== g || t[35] !== m ? (N = (0, Z.jsx)(he, {
+        canFetchMore: o,
+        fetchMore: m
+    }, g), t[33] = o, t[34] = g, t[35] = m, t[36] = N) : N = t[36];
+    let P;
+    return t[37] !== v || t[38] !== D || t[39] !== O || t[40] !== k || t[41] !== A || t[42] !== j || t[43] !== N ? (P = (0, Z.jsxs)(`ol`, {
+        className: D,
+        "aria-busy": v,
+        children: [O, k, A, j, N]
+    }), t[37] = v, t[38] = D, t[39] = O, t[40] = k, t[41] = A, t[42] = j, t[43] = N, t[44] = P) : P = t[44], P
+}
+
+function q(e) {
+    "use forget";
+    let t = (0, Y.c)(13),
+        {
+            count: n,
+            showAvatar: r
+        } = e,
+        i = n === void 0 ? 2 : n,
+        a = r === void 0 || r,
+        o = A(),
+        s;
+    t[0] === o ? s = t[1] : (s = o.formatMessage(Q.title), t[0] = o, t[1] = s);
+    let c = s,
+        l;
+    t[2] === o ? l = t[3] : (l = o.formatMessage(Q.snippet), t[2] = o, t[3] = l);
+    let u = l,
+        d;
+    if (t[4] !== i || t[5] !== u || t[6] !== c || t[7] !== a) {
+        let e;
+        t[9] !== u || t[10] !== c || t[11] !== a ? (e = (e, t) => (0, Z.jsx)(`li`, {
+            className: `mt-1 flex min-h-15 items-center p-3 text-sm`,
+            inert: !0,
+            "aria-hidden": !0,
+            children: (0, Z.jsx)(J, {
+                conversationTitle: c,
+                showAvatar: a,
+                monogram: null,
+                snippet: u,
+                skeleton: !0
+            })
+        }, t), t[9] = u, t[10] = c, t[11] = a, t[12] = e) : e = t[12], d = (0, Z.jsx)(Z.Fragment, {
+            children: Array.from({
+                length: i
+            }, e)
+        }), t[4] = i, t[5] = u, t[6] = c, t[7] = a, t[8] = d
+    } else d = t[8];
+    return d
+}
+
+function he(e) {
+    "use forget";
+    let t = (0, Y.c)(8),
+        {
+            canFetchMore: n,
+            fetchMore: r
+        } = e,
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = {
+        threshold: 0,
+        rootMargin: `200px 0px`
+    }, t[0] = i) : i = t[0];
+    let [a, o] = ae(i), s, c;
+    if (t[1] !== n || t[2] !== r || t[3] !== a ? (s = () => {
+            n && a && r()
+        }, c = [n, r, a], t[1] = n, t[2] = r, t[3] = a, t[4] = s, t[5] = c) : (s = t[4], c = t[5]), (0, X.useEffect)(s, c), !n) return null;
+    let l;
+    return t[6] === o ? l = t[7] : (l = (0, Z.jsx)(`div`, {
+        className: `h-px w-full`,
+        inert: !0,
+        ref: o
+    }), t[6] = o, t[7] = l), l
+}
+
+function J(e) {
+    "use forget";
+    let t = (0, Y.c)(10),
+        {
+            showAvatar: n,
+            monogram: r,
+            editor: i,
+            conversationTitle: a,
+            skeleton: o,
+            snippet: s
+        } = e,
+        c;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = !1, t[0] = c) : c = t[0];
+    let l;
+    t[1] !== r || t[2] !== n ? (l = n && (0, Z.jsx)(p, {
+        monogram: r,
+        showTooltip: !0
+    }), t[1] = r, t[2] = n, t[3] = l) : l = t[3];
+    let u = i ?? a,
+        d = !i,
+        f;
+    return t[4] !== o || t[5] !== s || t[6] !== l || t[7] !== u || t[8] !== d ? (f = (0, Z.jsx)(de, {
+        leading: l,
+        title: u,
+        wrapTitle: d,
+        subtitle: s,
+        skeleton: o
+    }), t[4] = o, t[5] = s, t[6] = l, t[7] = u, t[8] = d, t[9] = f) : f = t[9], f
+}
+
+function ge(e) {
+    return e?.title
+}
+var Y, X, Z, Q, $, _e = e((() => {
+    Y = N(), o(), f(), se(), I(), H(), fe(), u(), n(), O(), S(), r(), y(), i(), x(), b(), ce(), ie(), D(), re(), a(), X = t(j()), F(), k(), Z = P(), Q = {
+        title: {
+            id: `project.conversation-list.loading-title`,
+            description: `Loading conversation list skeleton message`,
+            defaultMessage: `Loading conversation title...`
+        },
+        snippet: {
+            id: `project.conversation-list.loading-snippet`,
+            description: `Loading conversation list skeleton snippet`,
+            defaultMessage: `Loading conversation snippet...`
+        }
+    }, $ = e => {
+        "use forget";
+        let t = (0, Y.c)(60),
+            {
+                conversation: n,
+                project: r,
+                showAvatar: i,
+                onNavigateToConversation: a
+            } = e,
+            o = A(),
+            s = C(n.id, ge) ?? n.title,
+            [l, u] = (0, X.useState)(!1),
+            f, p;
+        t[0] === n.id ? (f = t[1], p = t[2]) : (f = () => g(L, {
+            editTitleInMainScreen: e => {
+                let {
+                    serverThreadId: t
+                } = e;
+                t === n.id && u(!0)
+            }
+        }), p = [n.id], t[0] = n.id, t[1] = f, t[2] = p), (0, X.useEffect)(f, p);
+        let {
+            snippet: m
+        } = n, _, v, y, b, x;
+        if (t[3] !== n || t[4] !== r.gizmo) {
+            let e = c()?.normalizedAccountUserId;
+            _ = `owner` in n ? n.owner : null, b = _?.user_id, v = _?.name, y = _?.user_email, x = T(n.id, {
+                project: r.gizmo,
+                ownerUserId: b,
+                accountUserId: e
+            }), t[3] = n, t[4] = r.gizmo, t[5] = _, t[6] = v, t[7] = y, t[8] = b, t[9] = x
+        } else _ = t[5], v = t[6], y = t[7], b = t[8], x = t[9];
+        let S = x,
+            w, E, D, O, k, j, M;
+        if (t[10] !== n || t[11] !== s || t[12] !== S || t[13] !== o || t[14] !== l || t[15] !== _ || t[16] !== v || t[17] !== y || t[18] !== b || t[19] !== i || t[20] !== m) {
+            M = Symbol.for(`react.early_return_sentinel`);
+            bb0: {
+                let e = n.update_time && Intl.DateTimeFormat(o.locale, {
+                        month: `short`,
+                        day: `numeric`
+                    }).format(new Date(n.update_time)),
+                    r;t[28] !== n || t[29] !== l ? (r = l ? (0, Z.jsx)(te, {
+                    conversationId: n.id,
+                    historyConversationResponse: n,
+                    onClose: () => {
+                        u(!1)
+                    }
+                }) : null, t[28] = n, t[29] = l, t[30] = r) : r = t[30];
+                let a = !m && `snippet`,
+                    c;t[31] !== _ || t[32] !== v || t[33] !== y || t[34] !== b ? (c = _ && v && b ? {
+                    label: v,
+                    id: b,
+                    sublabel: y
+                } : null, t[31] = _, t[32] = v, t[33] = y, t[34] = b, t[35] = c) : c = t[35];
+                let d;
+                if (t[36] !== s || t[37] !== i || t[38] !== m || t[39] !== a || t[40] !== c || t[41] !== r ? (d = (0, Z.jsx)(J, {
+                        conversationTitle: s,
+                        editor: r,
+                        snippet: m,
+                        skeleton: a,
+                        showAvatar: i,
+                        monogram: c
+                    }), t[36] = s, t[37] = i, t[38] = m, t[39] = a, t[40] = c, t[41] = r, t[42] = d) : d = t[42], E = d, l) {
+                    M = E;
+                    break bb0
+                }
+                j = `flex w-full min-w-0 items-center gap-4`,
+                w = ee,
+                D = S,
+                O = !1,
+                k = e ? o.formatMessage(h.projectConversationLastUpdatedDescription, {
+                    date: e
+                }) : void 0
+            }
+            t[10] = n, t[11] = s, t[12] = S, t[13] = o, t[14] = l, t[15] = _, t[16] = v, t[17] = y, t[18] = b, t[19] = i, t[20] = m, t[21] = w, t[22] = E, t[23] = D, t[24] = O, t[25] = k, t[26] = j, t[27] = M
+        } else w = t[21], E = t[22], D = t[23], O = t[24], k = t[25], j = t[26], M = t[27];
+        if (M !== Symbol.for(`react.early_return_sentinel`)) return M;
+        let N;
+        t[43] !== n.id || t[44] !== a ? (N = e => {
+            ne(e) && d(`project_chat_navigation`, {
+                targetKey: n.id
+            }), a?.()
+        }, t[43] = n.id, t[44] = a, t[45] = N) : N = t[45];
+        let P;
+        t[46] !== w || t[47] !== E || t[48] !== D || t[49] !== O || t[50] !== k || t[51] !== N ? (P = (0, Z.jsx)(w, {
+            to: D,
+            draggable: O,
+            "aria-description": k,
+            className: `block min-w-0 grow`,
+            onClick: N,
+            children: E
+        }), t[46] = w, t[47] = E, t[48] = D, t[49] = O, t[50] = k, t[51] = N, t[52] = P) : P = t[52];
+        let F;
+        t[53] !== n || t[54] !== s ? (F = (0, Z.jsx)(K, {
+            conversation: n,
+            conversationTitle: s,
+            isNewProjectPage: !0
+        }), t[53] = n, t[54] = s, t[55] = F) : F = t[55];
+        let I;
+        return t[56] !== P || t[57] !== F || t[58] !== j ? (I = (0, Z.jsxs)(`div`, {
+            className: j,
+            children: [P, F]
+        }), t[56] = P, t[57] = F, t[58] = j, t[59] = I) : I = t[59], I
+    }
+}));
+export {
+    H as a, z as i, pe as n, _e as r, q as t
+};
 //# sourceMappingURL=f8646d57-m7bvoaf4kwvgxw0e.js.map

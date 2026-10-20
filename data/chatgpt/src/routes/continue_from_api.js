@@ -1,2 +1,2 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{iat as n,nat as r}from"./4813494d-qsuygr73qjc6rh65.js";import{$ as i,Hn as a,Pt as o,Ut as s}from"./2340486e-komxp8tzs51ny4jj.js";var c,l,u=e((()=>{i(),n(),c=t(a()),l=s(function(){let e=o();return(0,c.useEffect)(()=>{r.addError(`This page should never be rendered.`),e(`/`)},[e]),null})}));e((()=>{u()}))();export{l as default};
-//# sourceMappingURL=continue_from_api-mascbhkw.js.map
+import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{iat as n,oat as r}from"./4813494d-dfpv67hlp00pbohr.js";import{Ht as i,Nt as a,Q as o,Vn as s}from"./2340486e-i7pjxgdhv0bs6apg.js";var c,l,u=e((()=>{o(),r(),c=t(s()),l=i(function(){let e=a();return(0,c.useEffect)(()=>{n.addError(`This page should never be rendered.`),e(`/`)},[e]),null})}));e((()=>{u()}))();export{l as default};
+//# sourceMappingURL=continue_from_api-m0n0dikf.js.map

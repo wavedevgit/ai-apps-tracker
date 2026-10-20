@@ -1,2 +1,88 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{I1 as t,J5 as n,M1 as r,Xot as i,Zot as a,cW as o,lW as s,q5 as c}from"./4813494d-qsuygr73qjc6rh65.js";import{O as l,Pn as u,Rn as d,Vn as f,s as p,zn as m}from"./2340486e-komxp8tzs51ny4jj.js";import{n as h,t as g}from"./99a48954-b5oyjy59r8mv6u45.js";function _(e,t,n){let a=r(i())?.getWorkspaceId(),o=e.primaryConnector.id,{data:s,isLoading:c}=l(g({queryKeyPrefix:`connector-workspace-permissions`,workspaceId:a,connectorId:o,enabled:!!(a&&o),transport:t,actorId:n})),u=s?.action_param_schemas;return{hasParameterConstraints:u!=null&&Object.keys(u).length>0,isLoading:c}}function v({className:e}){return(0,b.jsxs)(`div`,{className:c(`bg-token-main-surface-secondary text-token-text-secondary flex items-start gap-3 rounded-xl p-3 text-sm`,e),children:[(0,b.jsx)(s,{className:`icon mt-0.5 h-4 w-4 shrink-0`}),(0,b.jsx)(u,{...x.syncNotice})]})}function y({className:e}){return(0,b.jsxs)(`div`,{className:c(`bg-token-main-surface-secondary text-token-text-secondary flex items-start gap-3 rounded-xl p-3 text-sm`,e),children:[(0,b.jsx)(s,{className:`icon mt-0.5 h-4 w-4 shrink-0`}),(0,b.jsx)(u,{...x.microsoftSyncScopeNotice})]})}var b,x,S=e((()=>{a(),h(),t(),p(),n(),m(),o(),b=f(),x=d({syncNotice:{id:`FZVRSl`,defaultMessage:`Parameter Constraints apply only to direct app tools. They do not limit content retrieved from this app’s synced data.`},microsoftSyncScopeNotice:{id:`mTvu9v`,defaultMessage:`Content Selection settings, such as Files and Sites, apply only to synced search and fetch results. They do not limit other tools, such as reading or fetching documents. Disable non-sync tools to apply Content Selection effectively for your workspace.`}})}));export{_ as i,v as n,S as r,y as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    I1 as t,
+    J5 as n,
+    M1 as r,
+    Xot as i,
+    Zot as a,
+    cW as o,
+    lW as s,
+    q5 as c
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    O as l,
+    Pn as u,
+    Rn as d,
+    Vn as f,
+    s as p,
+    zn as m
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    n as h,
+    t as g
+} from "./99a48954-b5oyjy59r8mv6u45.js";
+
+function _(e, t, n) {
+    let a = r(i())?.getWorkspaceId(),
+        o = e.primaryConnector.id,
+        {
+            data: s,
+            isLoading: c
+        } = l(g({
+            queryKeyPrefix: `connector-workspace-permissions`,
+            workspaceId: a,
+            connectorId: o,
+            enabled: !!(a && o),
+            transport: t,
+            actorId: n
+        })),
+        u = s?.action_param_schemas;
+    return {
+        hasParameterConstraints: u != null && Object.keys(u).length > 0,
+        isLoading: c
+    }
+}
+
+function v({
+    className: e
+}) {
+    return (0, b.jsxs)(`div`, {
+        className: c(`bg-token-main-surface-secondary text-token-text-secondary flex items-start gap-3 rounded-xl p-3 text-sm`, e),
+        children: [(0, b.jsx)(s, {
+            className: `icon mt-0.5 h-4 w-4 shrink-0`
+        }), (0, b.jsx)(u, {
+            ...x.syncNotice
+        })]
+    })
+}
+
+function y({
+    className: e
+}) {
+    return (0, b.jsxs)(`div`, {
+        className: c(`bg-token-main-surface-secondary text-token-text-secondary flex items-start gap-3 rounded-xl p-3 text-sm`, e),
+        children: [(0, b.jsx)(s, {
+            className: `icon mt-0.5 h-4 w-4 shrink-0`
+        }), (0, b.jsx)(u, {
+            ...x.microsoftSyncScopeNotice
+        })]
+    })
+}
+var b, x, S = e((() => {
+    a(), h(), t(), p(), n(), m(), o(), b = f(), x = d({
+        syncNotice: {
+            id: `FZVRSl`,
+            defaultMessage: `Parameter Constraints apply only to direct app tools. They do not limit content retrieved from this app’s synced data.`
+        },
+        microsoftSyncScopeNotice: {
+            id: `mTvu9v`,
+            defaultMessage: `Content Selection settings, such as Files and Sites, apply only to synced search and fetch results. They do not limit other tools, such as reading or fetching documents. Disable non-sync tools to apply Content Selection effectively for your workspace.`
+        }
+    })
+}));
+export {
+    _ as i, v as n, S as r, y as t
+};
 //# sourceMappingURL=51994dd8-k24c1llm089y6pog.js.map

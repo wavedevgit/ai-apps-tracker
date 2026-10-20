@@ -1,0 +1,2 @@
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{f3 as t,o3 as n}from"./4813494d-dfpv67hlp00pbohr.js";import{Son as r,Ton as i}from"./conversation-small-cy5f8pl0g26s86so.js";var a,o,s=e((()=>{t(),i(),a=({intl:e,amount:t,currency:r})=>{let i=n(r),a=t/10**i;return e.formatNumber(a,{currency:r,style:`currency`,minimumFractionDigits:i,maximumFractionDigits:i})},o=({intl:e,amount:t,currency:i})=>r({intl:e,amount:t/10**n(i),currency:i})}));export{o as n,s as r,a as t};
+//# sourceMappingURL=cf38d95c-iygkcvu24otpoxai.js.map
