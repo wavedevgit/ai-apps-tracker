@@ -1,2 +1,106 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Dw as t,Ew as n,X5 as r,Y5 as i}from"./4813494d-tap9fxyhk4ehe0bs.js";import{Bn as a,wn as o}from"./2340486e-i7pjxgdhv0bs6apg.js";import{i as s,n as c,t as l}from"./74d67c64-kl7f5b296uctk5bi.js";function u(e){"use forget";let t=(0,d.c)(40),{title:r,actions:a,leadingAction:o,onClose:s,isTransparent:u,usePageBackground:p,showBorder:m,className:h}=e,g=p===void 0||p,_=m===void 0||m,v;t[0]===u?v=t[1]:(v=l(u),t[0]=u,t[1]=v);let y=v,b;t[2]!==h||t[3]!==u||t[4]!==_||t[5]!==g?(b=i(`flex h-14 w-full shrink-0 items-center gap-2.5 px-3 py-2 transition-colors duration-200 ease-out`,u?`pointer-events-none bg-transparent`:[`pointer-events-auto`,g?`bg-surface-primary`:`bg-token-bg-primary`,_&&`border-light border-b`],h),t[2]=h,t[3]=u,t[4]=_,t[5]=g,t[6]=b):b=t[6];let x;t[7]!==y||t[8]!==o?(x=(0,f.jsx)(`div`,{className:y,children:o}),t[7]=y,t[8]=o,t[9]=x):x=t[9];let S;t[10]!==u||t[11]!==r?(S=r&&!u&&(0,f.jsx)(`div`,{className:`text-token-text-primary min-w-0 flex-1 truncate ps-1 text-sm font-medium`,children:r}),t[10]=u,t[11]=r,t[12]=S):S=t[12];let C;t[13]!==x||t[14]!==S?(C=(0,f.jsxs)(`div`,{className:`flex min-w-0 flex-1 items-center`,children:[x,S]}),t[13]=x,t[14]=S,t[15]=C):C=t[15];let w=u&&`gap-3`,T;t[16]===w?T=t[17]:(T=i(`pointer-events-auto flex shrink-0 items-center`,w),t[16]=w,t[17]=T);let E;t[18]!==y||t[19]!==a?(E=(0,f.jsx)(`div`,{className:y,children:a}),t[18]=y,t[19]=a,t[20]=E):E=t[20];let D;t[21]===u?D=t[22]:(D=!u&&(0,f.jsx)(`div`,{"aria-hidden":`true`,className:`flex w-3 shrink-0 justify-center`,children:(0,f.jsx)(`div`,{className:`bg-token-border-default h-5 w-px`})}),t[21]=u,t[22]=D);let O;t[23]!==E||t[24]!==D?(O=(0,f.jsxs)(`div`,{className:`flex shrink-0 items-center not-has-[button]:hidden`,children:[E,D]}),t[23]=E,t[24]=D,t[25]=O):O=t[25];let k;t[26]===Symbol.for(`react.memo_cache_sentinel`)?(k=c(),t[26]=k):k=t[26];let A;t[27]===s?A=t[28]:(A=(0,f.jsx)(n,{type:`button`,className:k,onClick:s}),t[27]=s,t[28]=A);let j;t[29]!==y||t[30]!==A?(j=(0,f.jsx)(`div`,{className:y,children:A}),t[29]=y,t[30]=A,t[31]=j):j=t[31];let M;t[32]!==O||t[33]!==j||t[34]!==T?(M=(0,f.jsxs)(`div`,{className:T,children:[O,j]}),t[32]=O,t[33]=j,t[34]=T,t[35]=M):M=t[35];let N;return t[36]!==M||t[37]!==b||t[38]!==C?(N=(0,f.jsxs)(`div`,{className:b,children:[C,M]}),t[36]=M,t[37]=b,t[38]=C,t[39]=N):N=t[39],N}var d,f,p=e((()=>{d=o(),t(),r(),s(),f=a()}));export{p as n,u as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Dw as t,
+    Ew as n,
+    X5 as r,
+    Y5 as i
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    Bn as a,
+    wn as o
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    i as s,
+    n as c,
+    t as l
+} from "./74d67c64-kl7f5b296uctk5bi.js";
+
+function u(e) {
+    "use forget";
+    let t = (0, d.c)(40),
+        {
+            title: r,
+            actions: a,
+            leadingAction: o,
+            onClose: s,
+            isTransparent: u,
+            usePageBackground: p,
+            showBorder: m,
+            className: h
+        } = e,
+        g = p === void 0 || p,
+        _ = m === void 0 || m,
+        v;
+    t[0] === u ? v = t[1] : (v = l(u), t[0] = u, t[1] = v);
+    let y = v,
+        b;
+    t[2] !== h || t[3] !== u || t[4] !== _ || t[5] !== g ? (b = i(`flex h-14 w-full shrink-0 items-center gap-2.5 px-3 py-2 transition-colors duration-200 ease-out`, u ? `pointer-events-none bg-transparent` : [`pointer-events-auto`, g ? `bg-surface-primary` : `bg-token-bg-primary`, _ && `border-light border-b`], h), t[2] = h, t[3] = u, t[4] = _, t[5] = g, t[6] = b) : b = t[6];
+    let x;
+    t[7] !== y || t[8] !== o ? (x = (0, f.jsx)(`div`, {
+        className: y,
+        children: o
+    }), t[7] = y, t[8] = o, t[9] = x) : x = t[9];
+    let S;
+    t[10] !== u || t[11] !== r ? (S = r && !u && (0, f.jsx)(`div`, {
+        className: `text-token-text-primary min-w-0 flex-1 truncate ps-1 text-sm font-medium`,
+        children: r
+    }), t[10] = u, t[11] = r, t[12] = S) : S = t[12];
+    let C;
+    t[13] !== x || t[14] !== S ? (C = (0, f.jsxs)(`div`, {
+        className: `flex min-w-0 flex-1 items-center`,
+        children: [x, S]
+    }), t[13] = x, t[14] = S, t[15] = C) : C = t[15];
+    let w = u && `gap-3`,
+        T;
+    t[16] === w ? T = t[17] : (T = i(`pointer-events-auto flex shrink-0 items-center`, w), t[16] = w, t[17] = T);
+    let E;
+    t[18] !== y || t[19] !== a ? (E = (0, f.jsx)(`div`, {
+        className: y,
+        children: a
+    }), t[18] = y, t[19] = a, t[20] = E) : E = t[20];
+    let D;
+    t[21] === u ? D = t[22] : (D = !u && (0, f.jsx)(`div`, {
+        "aria-hidden": `true`,
+        className: `flex w-3 shrink-0 justify-center`,
+        children: (0, f.jsx)(`div`, {
+            className: `bg-token-border-default h-5 w-px`
+        })
+    }), t[21] = u, t[22] = D);
+    let O;
+    t[23] !== E || t[24] !== D ? (O = (0, f.jsxs)(`div`, {
+        className: `flex shrink-0 items-center not-has-[button]:hidden`,
+        children: [E, D]
+    }), t[23] = E, t[24] = D, t[25] = O) : O = t[25];
+    let k;
+    t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (k = c(), t[26] = k) : k = t[26];
+    let A;
+    t[27] === s ? A = t[28] : (A = (0, f.jsx)(n, {
+        type: `button`,
+        className: k,
+        onClick: s
+    }), t[27] = s, t[28] = A);
+    let j;
+    t[29] !== y || t[30] !== A ? (j = (0, f.jsx)(`div`, {
+        className: y,
+        children: A
+    }), t[29] = y, t[30] = A, t[31] = j) : j = t[31];
+    let M;
+    t[32] !== O || t[33] !== j || t[34] !== T ? (M = (0, f.jsxs)(`div`, {
+        className: T,
+        children: [O, j]
+    }), t[32] = O, t[33] = j, t[34] = T, t[35] = M) : M = t[35];
+    let N;
+    return t[36] !== M || t[37] !== b || t[38] !== C ? (N = (0, f.jsxs)(`div`, {
+        className: b,
+        children: [C, M]
+    }), t[36] = M, t[37] = b, t[38] = C, t[39] = N) : N = t[39], N
+}
+var d, f, p = e((() => {
+    d = o(), t(), r(), s(), f = a()
+}));
+export {
+    p as n, u as t
+};
 //# sourceMappingURL=ff9bbca7-dr7vcvtq01lor9lq.js.map

@@ -1,2 +1,43 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{AN as n,NN as r,iE as i,rE as a}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as o,Vn as s,wn as c}from"./2340486e-oc6d2eodbcrmxur3.js";var l,u,d,f,p=e((()=>{l=c(),n(),a(),u=t(s()),d=o(),f=(0,u.forwardRef)(function(e,t){"use forget";let n=(0,l.c)(10),a,o;n[0]===e?(a=n[1],o=n[2]):({tabIndex:o,...a}=e,n[0]=e,n[1]=a,n[2]=o);let s=o===void 0?-1:o,{children:c}=a,u;n[3]===t?u=n[4]:(u=i(t,r),n[3]=t,n[4]=u);let f;return n[5]!==c||n[6]!==a||n[7]!==u||n[8]!==s?(f=(0,d.jsx)(`h1`,{...a,ref:u,tabIndex:s,children:c}),n[5]=c,n[6]=a,n[7]=u,n[8]=s,n[9]=f):f=n[9],f})}));export{p as n,f as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    AN as n,
+    NN as r,
+    iE as i,
+    rE as a
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as o,
+    Vn as s,
+    wn as c
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+var l, u, d, f, p = e((() => {
+    l = c(), n(), a(), u = t(s()), d = o(), f = (0, u.forwardRef)(function(e, t) {
+        "use forget";
+        let n = (0, l.c)(10),
+            a, o;
+        n[0] === e ? (a = n[1], o = n[2]) : ({
+            tabIndex: o,
+            ...a
+        } = e, n[0] = e, n[1] = a, n[2] = o);
+        let s = o === void 0 ? -1 : o,
+            {
+                children: c
+            } = a,
+            u;
+        n[3] === t ? u = n[4] : (u = i(t, r), n[3] = t, n[4] = u);
+        let f;
+        return n[5] !== c || n[6] !== a || n[7] !== u || n[8] !== s ? (f = (0, d.jsx)(`h1`, {
+            ...a,
+            ref: u,
+            tabIndex: s,
+            children: c
+        }), n[5] = c, n[6] = a, n[7] = u, n[8] = s, n[9] = f) : f = n[9], f
+    })
+}));
+export {
+    p as n, f as t
+};
 //# sourceMappingURL=cc1aa8e1-hgqm60vfrn9xmrrb.js.map

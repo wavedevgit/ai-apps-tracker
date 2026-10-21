@@ -1,2 +1,225 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{GJ as n,dY as r,eY as i,k8 as a,lY as o,o2 as s,q5 as c}from"./4813494d-t80q9ew944ej0mgk.js";import{Bn as l,Vn as u,wn as d}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Czt as f,D as ee,E as p,HIt as m,Ud as te,Wd as h,XIt as g,_zt as _,aKn as ne,nX as v,rLt as re,rX as y,sKn as b,uzt as x}from"./conversation-small-ocicxxw6jegn4vux.js";import{Nt as ie,Pt as S,T_ as C,w_ as ae,zg as w}from"./8b34dbc2-egl8cz04n8nmlktg.js";import{n as T,t as E}from"./d7ede44b-coma8yok3qrknr7f.js";import{r as D,t as O}from"./4740ae63-dz2lgzvkce0rr9m5.js";import{B as k,L as A,R as j,z as oe}from"./8e7d0a25-l7bd7mjhpj4tsyzi.js";import{n as M,t as N}from"./aaf9e772-ozfadalk91jsromx.js";import{a as P,i as F,o as I,r as L,t as R}from"./36beadec-e2h1z651qc5af4h7.js";var z,B,V=e((()=>{z=`WMAbnW_Thread`,B={Thread:z}}));function H(){return _().displayState.activePreviewThreadId}function U(e){return n.hasUserMessage(e)}function W(e){x.setActivePreviewThreadId(e)}var G,K,q,J,Y,se=e((()=>{G=d(),L(),I(),m(),C(),h(),D(),y(),b(),a(),i(),S(),p(),w(),s(),K=t(u()),f(),T(),j(),V(),q=l(),J={lockSelectedReplyTarget:!0,disableAtTagging:!0},Y=e=>{"use forget";let t=(0,G.c)(39),{agent:n,agentVersion:i,conversationHistory:a,disabled:s}=e,l=s!==void 0&&s,u=c(H),d;t[0]!==u||t[1]!==i.agent_id?(d=A(u,i.agent_id),t[0]=u,t[1]=i.agent_id,t[2]=d):d=t[2];let f=d,p=o(u),m=r(f.id,U),{data:h}=re(i.agent_id),g,_;t[3]!==p||t[4]!==u?(g=()=>{oe(u),k(p)},_=[u,p],t[3]=p,t[4]=u,t[5]=g,t[6]=_):(g=t[5],_=t[6]),(0,K.useEffect)(g,_);let y;t[7]===u?y=t[8]:(y={clientThreadId:u},t[7]=u,t[8]=y),ee(y);let b,S;t[9]!==f.id||t[10]!==m?(b=()=>{m&&x.setPlutoCurrentPreview(f.id)},S=[f.id,m],t[9]=f.id,t[10]=m,t[11]=b,t[12]=S):(b=t[11],S=t[12]),(0,K.useEffect)(b,S);let C;t[13]!==n||t[14]!==i||t[15]!==f||t[16]!==a||t[17]!==l||t[18]!==m||t[19]!==h?(C=(0,q.jsx)(ne,{className:`h-full! w-full!`,children:m&&!l?(0,q.jsx)(v,{value:J,children:(0,q.jsx)(ie,{conversation:f,className:B.Thread})}):(0,q.jsx)(`div`,{className:`w-full px-(--build-shell-inline-padding)`,children:(0,q.jsxs)(`div`,{className:`mx-auto my-4 w-full max-w-(--builder-content-width) sm:my-12`,children:[(0,q.jsx)(P,{agent:n,agentVersion:i}),(0,q.jsx)(F,{agent:n,agentVersion:i,conversationHistoryQuery:{data:{items:a,scheduled:[]}},triggerResources:h,extraStreamParams:{hideFromHistory:!0,isDoNotRemember:!0},isRunningDraftAgent:!0,onSelectRecentConversation:W,disabled:l})]})})}),t[13]=n,t[14]=i,t[15]=f,t[16]=a,t[17]=l,t[18]=m,t[19]=h,t[20]=C):C=t[20];let w,T;t[21]===f?(w=t[22],T=t[23]):(T=(0,q.jsx)(E,{conversation:f}),w=(0,q.jsx)(O,{conversation:f}),t[21]=f,t[22]=w,t[23]=T);let D;t[24]!==w||t[25]!==C||t[26]!==T?(D=(0,q.jsxs)(te.Root,{children:[C,T,w]}),t[24]=w,t[25]=C,t[26]=T,t[27]=D):D=t[27];let j;t[28]===f?j=t[29]:(j=!1,t[28]=f,t[29]=j);let M;t[30]!==f||t[31]!==D||t[32]!==j?(M=(0,q.jsxs)(ae,{conversation:f,children:[D,j]}),t[30]=f,t[31]=D,t[32]=j,t[33]=M):M=t[33];let N;return t[34]!==i.icon.color||t[35]!==i.icon.name||t[36]!==f||t[37]!==M?(N=(0,q.jsx)(R,{conversation:f,accentColor:i.icon.color,iconName:i.icon.name,children:M}),t[34]=i.icon.color,t[35]=i.icon.name,t[36]=f,t[37]=M,t[38]=N):N=t[38],N}}));function ce(){return _().currentGpt.id}function X(){return _().currentGpt}var Z,Q,$,le=e((()=>{Z=d(),m(),a(),f(),se(),N(),Q=l(),$=e=>{"use forget";let t=(0,Z.c)(11),{disabled:n}=e,r=n!==void 0&&n,i=c(ce),a=c(X),o=M(),{data:s}=g(i);if(!s)return null;let l;t[0]!==s.draft_version||t[1]!==a.icon||t[2]!==a.name||t[3]!==a.starterPrompts||t[4]!==a.tagline?(l={...s.draft_version,starter_prompts:a.starterPrompts,name:a.name,tagline:a.tagline,icon:a.icon},t[0]=s.draft_version,t[1]=a.icon,t[2]=a.name,t[3]=a.starterPrompts,t[4]=a.tagline,t[5]=l):l=t[5];let u;return t[6]!==s.agent||t[7]!==o||t[8]!==r||t[9]!==l?(u=(0,Q.jsx)(Y,{agent:s.agent,agentVersion:l,conversationHistory:o,disabled:r}),t[6]=s.agent,t[7]=o,t[8]=r,t[9]=l,t[10]=u):u=t[10],u}}));export{le as n,$ as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    GJ as n,
+    dY as r,
+    eY as i,
+    k8 as a,
+    lY as o,
+    o2 as s,
+    q5 as c
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    Bn as l,
+    Vn as u,
+    wn as d
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Czt as f,
+    D as ee,
+    E as p,
+    HIt as m,
+    Ud as te,
+    Wd as h,
+    XIt as g,
+    _zt as _,
+    aKn as ne,
+    nX as v,
+    rLt as re,
+    rX as y,
+    sKn as b,
+    uzt as x
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+import {
+    Nt as ie,
+    Pt as S,
+    T_ as C,
+    w_ as ae,
+    zg as w
+} from "./8b34dbc2-egl8cz04n8nmlktg.js";
+import {
+    n as T,
+    t as E
+} from "./d7ede44b-coma8yok3qrknr7f.js";
+import {
+    r as D,
+    t as O
+} from "./4740ae63-dz2lgzvkce0rr9m5.js";
+import {
+    B as k,
+    L as A,
+    R as j,
+    z as oe
+} from "./8e7d0a25-l7bd7mjhpj4tsyzi.js";
+import {
+    n as M,
+    t as N
+} from "./aaf9e772-ozfadalk91jsromx.js";
+import {
+    a as P,
+    i as F,
+    o as I,
+    r as L,
+    t as R
+} from "./36beadec-e2h1z651qc5af4h7.js";
+var z, B, V = e((() => {
+    z = `WMAbnW_Thread`, B = {
+        Thread: z
+    }
+}));
+
+function H() {
+    return _().displayState.activePreviewThreadId
+}
+
+function U(e) {
+    return n.hasUserMessage(e)
+}
+
+function W(e) {
+    x.setActivePreviewThreadId(e)
+}
+var G, K, q, J, Y, se = e((() => {
+    G = d(), L(), I(), m(), C(), h(), D(), y(), b(), a(), i(), S(), p(), w(), s(), K = t(u()), f(), T(), j(), V(), q = l(), J = {
+        lockSelectedReplyTarget: !0,
+        disableAtTagging: !0
+    }, Y = e => {
+        "use forget";
+        let t = (0, G.c)(39),
+            {
+                agent: n,
+                agentVersion: i,
+                conversationHistory: a,
+                disabled: s
+            } = e,
+            l = s !== void 0 && s,
+            u = c(H),
+            d;
+        t[0] !== u || t[1] !== i.agent_id ? (d = A(u, i.agent_id), t[0] = u, t[1] = i.agent_id, t[2] = d) : d = t[2];
+        let f = d,
+            p = o(u),
+            m = r(f.id, U),
+            {
+                data: h
+            } = re(i.agent_id),
+            g, _;
+        t[3] !== p || t[4] !== u ? (g = () => {
+            oe(u), k(p)
+        }, _ = [u, p], t[3] = p, t[4] = u, t[5] = g, t[6] = _) : (g = t[5], _ = t[6]), (0, K.useEffect)(g, _);
+        let y;
+        t[7] === u ? y = t[8] : (y = {
+            clientThreadId: u
+        }, t[7] = u, t[8] = y), ee(y);
+        let b, S;
+        t[9] !== f.id || t[10] !== m ? (b = () => {
+            m && x.setPlutoCurrentPreview(f.id)
+        }, S = [f.id, m], t[9] = f.id, t[10] = m, t[11] = b, t[12] = S) : (b = t[11], S = t[12]), (0, K.useEffect)(b, S);
+        let C;
+        t[13] !== n || t[14] !== i || t[15] !== f || t[16] !== a || t[17] !== l || t[18] !== m || t[19] !== h ? (C = (0, q.jsx)(ne, {
+            className: `h-full! w-full!`,
+            children: m && !l ? (0, q.jsx)(v, {
+                value: J,
+                children: (0, q.jsx)(ie, {
+                    conversation: f,
+                    className: B.Thread
+                })
+            }) : (0, q.jsx)(`div`, {
+                className: `w-full px-(--build-shell-inline-padding)`,
+                children: (0, q.jsxs)(`div`, {
+                    className: `mx-auto my-4 w-full max-w-(--builder-content-width) sm:my-12`,
+                    children: [(0, q.jsx)(P, {
+                        agent: n,
+                        agentVersion: i
+                    }), (0, q.jsx)(F, {
+                        agent: n,
+                        agentVersion: i,
+                        conversationHistoryQuery: {
+                            data: {
+                                items: a,
+                                scheduled: []
+                            }
+                        },
+                        triggerResources: h,
+                        extraStreamParams: {
+                            hideFromHistory: !0,
+                            isDoNotRemember: !0
+                        },
+                        isRunningDraftAgent: !0,
+                        onSelectRecentConversation: W,
+                        disabled: l
+                    })]
+                })
+            })
+        }), t[13] = n, t[14] = i, t[15] = f, t[16] = a, t[17] = l, t[18] = m, t[19] = h, t[20] = C) : C = t[20];
+        let w, T;
+        t[21] === f ? (w = t[22], T = t[23]) : (T = (0, q.jsx)(E, {
+            conversation: f
+        }), w = (0, q.jsx)(O, {
+            conversation: f
+        }), t[21] = f, t[22] = w, t[23] = T);
+        let D;
+        t[24] !== w || t[25] !== C || t[26] !== T ? (D = (0, q.jsxs)(te.Root, {
+            children: [C, T, w]
+        }), t[24] = w, t[25] = C, t[26] = T, t[27] = D) : D = t[27];
+        let j;
+        t[28] === f ? j = t[29] : (j = !1, t[28] = f, t[29] = j);
+        let M;
+        t[30] !== f || t[31] !== D || t[32] !== j ? (M = (0, q.jsxs)(ae, {
+            conversation: f,
+            children: [D, j]
+        }), t[30] = f, t[31] = D, t[32] = j, t[33] = M) : M = t[33];
+        let N;
+        return t[34] !== i.icon.color || t[35] !== i.icon.name || t[36] !== f || t[37] !== M ? (N = (0, q.jsx)(R, {
+            conversation: f,
+            accentColor: i.icon.color,
+            iconName: i.icon.name,
+            children: M
+        }), t[34] = i.icon.color, t[35] = i.icon.name, t[36] = f, t[37] = M, t[38] = N) : N = t[38], N
+    }
+}));
+
+function ce() {
+    return _().currentGpt.id
+}
+
+function X() {
+    return _().currentGpt
+}
+var Z, Q, $, le = e((() => {
+    Z = d(), m(), a(), f(), se(), N(), Q = l(), $ = e => {
+        "use forget";
+        let t = (0, Z.c)(11),
+            {
+                disabled: n
+            } = e,
+            r = n !== void 0 && n,
+            i = c(ce),
+            a = c(X),
+            o = M(),
+            {
+                data: s
+            } = g(i);
+        if (!s) return null;
+        let l;
+        t[0] !== s.draft_version || t[1] !== a.icon || t[2] !== a.name || t[3] !== a.starterPrompts || t[4] !== a.tagline ? (l = {
+            ...s.draft_version,
+            starter_prompts: a.starterPrompts,
+            name: a.name,
+            tagline: a.tagline,
+            icon: a.icon
+        }, t[0] = s.draft_version, t[1] = a.icon, t[2] = a.name, t[3] = a.starterPrompts, t[4] = a.tagline, t[5] = l) : l = t[5];
+        let u;
+        return t[6] !== s.agent || t[7] !== o || t[8] !== r || t[9] !== l ? (u = (0, Q.jsx)(Y, {
+            agent: s.agent,
+            agentVersion: l,
+            conversationHistory: o,
+            disabled: r
+        }), t[6] = s.agent, t[7] = o, t[8] = r, t[9] = l, t[10] = u) : u = t[10], u
+    }
+}));
+export {
+    le as n, $ as t
+};
 //# sourceMappingURL=8be53502-cj41qlrlz3qa1bst.js.map

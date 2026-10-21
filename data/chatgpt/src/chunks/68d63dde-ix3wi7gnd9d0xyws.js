@@ -1,2 +1,38 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{_h as t,wh as n}from"./4813494d-t80q9ew944ej0mgk.js";import{Bn as r}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Kx as i,hm as a,mm as o,qx as s}from"./30901919-r9pahacmzqudnt4f.js";var c,l,u=e((()=>{n(),a(),i(),c=r(),l=({group:e})=>(0,c.jsxs)(`div`,{className:`relative me-3`,children:[(0,c.jsx)(t,{IconComponent:o,className:`bg-token-bg-tertiary`,rounded:!0}),e.is_scim_managed&&(0,c.jsx)(`div`,{className:`bg-token-bg-tertiary absolute -end-1 -bottom-1 rounded-full border-2 border-white p-0.25`,children:(0,c.jsx)(s,{width:10,height:10})})]})}));export{u as n,l as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    _h as t,
+    wh as n
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    Bn as r
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Kx as i,
+    hm as a,
+    mm as o,
+    qx as s
+} from "./30901919-r9pahacmzqudnt4f.js";
+var c, l, u = e((() => {
+    n(), a(), i(), c = r(), l = ({
+        group: e
+    }) => (0, c.jsxs)(`div`, {
+        className: `relative me-3`,
+        children: [(0, c.jsx)(t, {
+            IconComponent: o,
+            className: `bg-token-bg-tertiary`,
+            rounded: !0
+        }), e.is_scim_managed && (0, c.jsx)(`div`, {
+            className: `bg-token-bg-tertiary absolute -end-1 -bottom-1 rounded-full border-2 border-white p-0.25`,
+            children: (0, c.jsx)(s, {
+                width: 10,
+                height: 10
+            })
+        })]
+    })
+}));
+export {
+    u as n, l as t
+};
 //# sourceMappingURL=68d63dde-ix3wi7gnd9d0xyws.js.map

@@ -1,2 +1,68 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{$tt as t,Snt as n,Xnt as r,cnt as i,gj as a,gnt as o,ont as s,trt as c,wnt as l}from"./4813494d-lxa3wniynbx9ka2a.js";import{Ln as u,Rn as d}from"./2340486e-i7pjxgdhv0bs6apg.js";import{EGn as f,TGn as p,wGn as m}from"./conversation-small-kzsalymynzuddxee.js";import{n as h}from"./9ac7a75a-l9slh9v6x4adbsun.js";function g(e){return e===`https://persistent.oaistatic.com/codex-app-prod/ChatGPT.dmg`||e===`https://persistent.oaistatic.com/codex-app-prod/ChatGPT-latest-x64.dmg`}function _(){return typeof window<`u`&&o()&&!i()&&!s()}function v(){return _()?`micro_installer`:`full_app`}function y(e,t,i,o){if(!_()||!g(e)&&e!==`https://persistent.oaistatic.com/codex-app-prod/ChatGPTInstaller.dmg`)return e;let s=i===`micro_installer`?a:e;try{n.logStructuredEvent(`ChatgptDesktopDownloadSelected`,{artifact:s===`https://persistent.oaistatic.com/codex-app-prod/ChatGPTInstaller.dmg`?m.CHATGPT_DESKTOP_DOWNLOAD_ARTIFACT_MAC_UNIVERSAL_INSTALLER:e===`https://persistent.oaistatic.com/codex-app-prod/ChatGPT.dmg`?m.CHATGPT_DESKTOP_DOWNLOAD_ARTIFACT_MAC_ARM64_APP:m.CHATGPT_DESKTOP_DOWNLOAD_ARTIFACT_MAC_X64_APP,surface:x[t],ctaId:o}),Promise.all([n.flushStructuredEvents(250),r(250)]).catch(()=>void 0)}catch{}return s}var b,x,S=e((()=>{l(),c(),t(),h(),f(),d(),b=u({downloadMac:{id:`codex.ctas.mac`,defaultMessage:`Download for macOS`}}),x={download_page:p.CHATGPT_DESKTOP_DOWNLOAD_SURFACE_DOWNLOAD_PAGE,contentful_ctas:p.CHATGPT_DESKTOP_DOWNLOAD_SURFACE_CONTENTFUL_CTAS,contentful_button:p.CHATGPT_DESKTOP_DOWNLOAD_SURFACE_CONTENTFUL_BUTTON,rosalind_marketing:p.CHATGPT_DESKTOP_DOWNLOAD_SURFACE_ROSALIND_MARKETING}}));export{y as a,g as i,v as n,S as r,b as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $tt as t,
+    Snt as n,
+    Xnt as r,
+    cnt as i,
+    gj as a,
+    gnt as o,
+    ont as s,
+    trt as c,
+    wnt as l
+} from "./4813494d-lxa3wniynbx9ka2a.js";
+import {
+    Ln as u,
+    Rn as d
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    EGn as f,
+    TGn as p,
+    wGn as m
+} from "./conversation-small-kzsalymynzuddxee.js";
+import {
+    n as h
+} from "./9ac7a75a-l9slh9v6x4adbsun.js";
+
+function g(e) {
+    return e === `https://persistent.oaistatic.com/codex-app-prod/ChatGPT.dmg` || e === `https://persistent.oaistatic.com/codex-app-prod/ChatGPT-latest-x64.dmg`
+}
+
+function _() {
+    return typeof window < `u` && o() && !i() && !s()
+}
+
+function v() {
+    return _() ? `micro_installer` : `full_app`
+}
+
+function y(e, t, i, o) {
+    if (!_() || !g(e) && e !== `https://persistent.oaistatic.com/codex-app-prod/ChatGPTInstaller.dmg`) return e;
+    let s = i === `micro_installer` ? a : e;
+    try {
+        n.logStructuredEvent(`ChatgptDesktopDownloadSelected`, {
+            artifact: s === `https://persistent.oaistatic.com/codex-app-prod/ChatGPTInstaller.dmg` ? m.CHATGPT_DESKTOP_DOWNLOAD_ARTIFACT_MAC_UNIVERSAL_INSTALLER : e === `https://persistent.oaistatic.com/codex-app-prod/ChatGPT.dmg` ? m.CHATGPT_DESKTOP_DOWNLOAD_ARTIFACT_MAC_ARM64_APP : m.CHATGPT_DESKTOP_DOWNLOAD_ARTIFACT_MAC_X64_APP,
+            surface: x[t],
+            ctaId: o
+        }), Promise.all([n.flushStructuredEvents(250), r(250)]).catch(() => void 0)
+    } catch {}
+    return s
+}
+var b, x, S = e((() => {
+    l(), c(), t(), h(), f(), d(), b = u({
+        downloadMac: {
+            id: `codex.ctas.mac`,
+            defaultMessage: `Download for macOS`
+        }
+    }), x = {
+        download_page: p.CHATGPT_DESKTOP_DOWNLOAD_SURFACE_DOWNLOAD_PAGE,
+        contentful_ctas: p.CHATGPT_DESKTOP_DOWNLOAD_SURFACE_CONTENTFUL_CTAS,
+        contentful_button: p.CHATGPT_DESKTOP_DOWNLOAD_SURFACE_CONTENTFUL_BUTTON,
+        rosalind_marketing: p.CHATGPT_DESKTOP_DOWNLOAD_SURFACE_ROSALIND_MARKETING
+    }
+}));
+export {
+    y as a, g as i, v as n, S as r, b as t
+};
 //# sourceMappingURL=9dade4c6-ipre7h06d9cgvt7z.js.map

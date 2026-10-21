@@ -1,2 +1,86 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{At as t,G5 as n,K5 as r,Xy as i,Yy as a,cn as o,hn as s}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as c,Vn as l}from"./2340486e-oc6d2eodbcrmxur3.js";var u,d,f,p,m=e((()=>{i(),r(),t(),l(),u=c(),d=({items:e,activeTab:t,onTabChange:r,className:i,tabClassName:a})=>(0,u.jsx)(`div`,{className:`border-token-border-light flex justify-between border-b`,children:(0,u.jsx)(`div`,{className:n(`flex gap-2 pt-2`,i),children:e.map(e=>(0,u.jsx)(p,{isActive:t===e.key,onClick:()=>r(e.key),disabled:e.disabled,tooltip:e.tooltip,className:a,children:e.label},e.key))})}),f=({items:e,activeTab:t})=>(0,u.jsx)(`main`,{children:(0,u.jsx)(s,{mode:`wait`,children:(0,u.jsx)(o.div,{initial:{y:10,opacity:0},animate:{y:0,opacity:1},exit:{y:-10,opacity:0},transition:{duration:.2},children:(0,u.jsx)(`div`,{children:e.find(e=>e.key===t)?.children})},t)})}),p=({isActive:e,tooltip:t,className:r,children:i,...o})=>{let s=(0,u.jsx)(`button`,{className:n(`text-l block px-2 py-2.5 font-normal`,e?`text-token-text-primary border-token-text-secondary -mb-[1px] cursor-pointer border-b`:`text-token-text-tertiary`,r),...o,children:i});return t?(0,u.jsx)(a,{label:t,side:`top`,children:s}):s}}));export{m as i,f as n,d as r,p as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    At as t,
+    G5 as n,
+    K5 as r,
+    Xy as i,
+    Yy as a,
+    cn as o,
+    hn as s
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as c,
+    Vn as l
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+var u, d, f, p, m = e((() => {
+    i(), r(), t(), l(), u = c(), d = ({
+        items: e,
+        activeTab: t,
+        onTabChange: r,
+        className: i,
+        tabClassName: a
+    }) => (0, u.jsx)(`div`, {
+        className: `border-token-border-light flex justify-between border-b`,
+        children: (0, u.jsx)(`div`, {
+            className: n(`flex gap-2 pt-2`, i),
+            children: e.map(e => (0, u.jsx)(p, {
+                isActive: t === e.key,
+                onClick: () => r(e.key),
+                disabled: e.disabled,
+                tooltip: e.tooltip,
+                className: a,
+                children: e.label
+            }, e.key))
+        })
+    }), f = ({
+        items: e,
+        activeTab: t
+    }) => (0, u.jsx)(`main`, {
+        children: (0, u.jsx)(s, {
+            mode: `wait`,
+            children: (0, u.jsx)(o.div, {
+                initial: {
+                    y: 10,
+                    opacity: 0
+                },
+                animate: {
+                    y: 0,
+                    opacity: 1
+                },
+                exit: {
+                    y: -10,
+                    opacity: 0
+                },
+                transition: {
+                    duration: .2
+                },
+                children: (0, u.jsx)(`div`, {
+                    children: e.find(e => e.key === t)?.children
+                })
+            }, t)
+        })
+    }), p = ({
+        isActive: e,
+        tooltip: t,
+        className: r,
+        children: i,
+        ...o
+    }) => {
+        let s = (0, u.jsx)(`button`, {
+            className: n(`text-l block px-2 py-2.5 font-normal`, e ? `text-token-text-primary border-token-text-secondary -mb-[1px] cursor-pointer border-b` : `text-token-text-tertiary`, r),
+            ...o,
+            children: i
+        });
+        return t ? (0, u.jsx)(a, {
+            label: t,
+            side: `top`,
+            children: s
+        }) : s
+    }
+}));
+export {
+    m as i, f as n, d as r, p as t
+};
 //# sourceMappingURL=32d3feda-cvf9amyf2w6ko3dw.js.map

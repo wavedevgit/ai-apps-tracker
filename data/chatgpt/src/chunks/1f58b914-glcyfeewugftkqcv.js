@@ -1,2 +1,235 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Dit as t,J7 as n,Oat as r,Q7 as i,SK as a,V1 as o,Yrt as s,Zot as c,fat as l,q1 as u,uat as d,wat as f,xK as p}from"./4813494d-t80q9ew944ej0mgk.js";import{BPn as m,VPn as h,gTn as g,gnt as _,hTn as v,hnt as y,zPn as b}from"./conversation-small-ocicxxw6jegn4vux.js";import{$x as x,Px as S,Ux as C,Vx as w,Wx as T,cS as E,dS as D,fS as O,iS as k,lS as A,rS as j,sS as M,uS as N}from"./c2675c8c-p3x4d0bnf7e77o1n.js";import{n as P,t as F}from"./8d846022-bvik3sltoydb2o43.js";function I(){return JSON.stringify([c()?.user?.id??null,c()?.account?.id??null,o()?.normalizedAccountUserId??null,s({isAuthOptional:!0})[`ChatGPT-Account-ID`]??null])}async function L(e,t){return m(((await b(!0,v.CONNECTOR_SETTING,void 0,e,t)).connector_openai_wallet??[]).filter(e=>e.auth_status===`ACTIVE`&&[`OAUTH`,`API_KEY`,`NONE`].includes(e.auth_type)))}async function R({accountId:e,linkId:t,name:n,args:r,signal:i,context:a}){if(!U.has(n))throw Error(`Unknown Wallet enrollment action`);let o=await y.safePost(`/mcp`,{authOption:f.Required,requestBody:{jsonrpc:`2.0`,id:W,method:`tools/call`,params:{name:`wallet.${n}`,arguments:r,_meta:{...a?{"x-codex-turn-metadata":V(a)}:{},_codex_apps:{resource_uri:`/${B}/${t}/${n}`,returns_pre_shaped_mcp_result:!0},...typeof window<`u`&&window.navigator.language?{"openai/browserLanguage":window.navigator.language}:{}}}},additionalHeaders:{...p(e),[d]:v.CODEX,Accept:`application/json`},disableAutomaticRetry:!0,cache:`no-store`,signal:i}),s=G.safeParse(o);if(!s.success)throw Error(`Invalid Wallet tool response`);if(`error`in s.data)throw Error(`Wallet tool request failed (${s.data.error.code})`);let c=s.data.result,l=P(c);if(!l)throw Error(`Invalid Wallet tool response`);return{...l,_meta:c._meta,structuredContent:c.structuredContent}}async function z(e,t,r,i){if(i){let t=await n.safeGet(`/ecosystem/widget`,{authOption:f.Required,parameters:{query:{uri:`connectors://${B}`,template_pointer:H}},additionalHeaders:{...p(e),[d]:v.CODEX},disableAutomaticRetry:!0,cache:`no-store`,signal:r}),{html:i,csp:a,domain:o}=q.parse(t);return{html:i,csp:a,domain:o}}let a=await y.safePost(`/mcp`,{authOption:f.Required,requestBody:{jsonrpc:`2.0`,id:W,method:`resources/read`,params:{uri:H,_meta:{"x-codex-turn-metadata":{mcp_request_meta:{selected_connector_ids:[B],link_id:t}},...typeof window<`u`&&window.navigator.language?{"openai/browserLanguage":window.navigator.language}:{}}}},additionalHeaders:{...p(e),[d]:v.CODEX,Accept:`application/json`},disableAutomaticRetry:!0,cache:`no-store`,signal:r}),o=J.safeParse(a);if(!o.success)throw Error(`Invalid Wallet widget response`);let s=o.data.result.contents[0];return{html:s.text,csp:s._meta[`openai/widgetCSP`],domain:null}}var B,V,H,U,W,G,K,q,J,Y=e((()=>{h(),g(),_(),u(),t(),r(),l(),i(),a(),F(),S(),B=`connector_openai_wallet`,V=e=>({thread_id:e.threadId,client_metadata:{orbit_id:e.orbitId}}),H=`internal://wallet-vgs-card-enrollment`,U=new Set([`open_vgs_card_enrollment`,`list_wallet_contact_infos`,`save_wallet_contact_info`,`register_vgs_agentic_token`,`request_vgs_card_verification`,`refresh_vgs_card_verification`,`verify_vgs_card`,`finalize_vgs_card_registration`]),W=1,G=D([E({jsonrpc:x(`2.0`),id:x(W),result:k({content:C(O()),structuredContent:M(A(),O()).optional(),_meta:M(A(),O()).optional(),isError:T().optional()})}),E({jsonrpc:x(`2.0`),id:x(W).nullable(),error:k({code:j(),message:A()})})]),K=k({connect_domains:C(A()).nullish(),resource_domains:C(A()).nullish(),frame_domains:C(A()).nullish(),redirect_domains:C(A()).nullish()}),q=k({html:A().refine(e=>e.trim().length>0),is_verified_first_party:x(!0),domain:w(),csp:K}),J=E({jsonrpc:x(`2.0`),id:x(W),result:k({contents:N([k({uri:x(H),mimeType:x(`text/html`),text:A().refine(e=>e.trim().length>0),_meta:k({"openai/widgetCSP":K,"openai/widgetDomain":w().optional()})})])})})})),X,Z=e((()=>{X=class extends Error{constructor(){super(`Wallet request is no longer available`)}}}));export{L as a,z as c,R as i,Z as n,I as o,B as r,Y as s,X as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Dit as t,
+    J7 as n,
+    Oat as r,
+    Q7 as i,
+    SK as a,
+    V1 as o,
+    Yrt as s,
+    Zot as c,
+    fat as l,
+    q1 as u,
+    uat as d,
+    wat as f,
+    xK as p
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    BPn as m,
+    VPn as h,
+    gTn as g,
+    gnt as _,
+    hTn as v,
+    hnt as y,
+    zPn as b
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+import {
+    $x as x,
+    Px as S,
+    Ux as C,
+    Vx as w,
+    Wx as T,
+    cS as E,
+    dS as D,
+    fS as O,
+    iS as k,
+    lS as A,
+    rS as j,
+    sS as M,
+    uS as N
+} from "./c2675c8c-p3x4d0bnf7e77o1n.js";
+import {
+    n as P,
+    t as F
+} from "./8d846022-bvik3sltoydb2o43.js";
+
+function I() {
+    return JSON.stringify([c()?.user?.id ?? null, c()?.account?.id ?? null, o()?.normalizedAccountUserId ?? null, s({
+        isAuthOptional: !0
+    })[`ChatGPT-Account-ID`] ?? null])
+}
+async function L(e, t) {
+    return m(((await b(!0, v.CONNECTOR_SETTING, void 0, e, t)).connector_openai_wallet ?? []).filter(e => e.auth_status === `ACTIVE` && [`OAUTH`, `API_KEY`, `NONE`].includes(e.auth_type)))
+}
+async function R({
+    accountId: e,
+    linkId: t,
+    name: n,
+    args: r,
+    signal: i,
+    context: a
+}) {
+    if (!U.has(n)) throw Error(`Unknown Wallet enrollment action`);
+    let o = await y.safePost(`/mcp`, {
+            authOption: f.Required,
+            requestBody: {
+                jsonrpc: `2.0`,
+                id: W,
+                method: `tools/call`,
+                params: {
+                    name: `wallet.${n}`,
+                    arguments: r,
+                    _meta: {
+                        ...a ? {
+                            "x-codex-turn-metadata": V(a)
+                        } : {},
+                        _codex_apps: {
+                            resource_uri: `/${B}/${t}/${n}`,
+                            returns_pre_shaped_mcp_result: !0
+                        },
+                        ...typeof window < `u` && window.navigator.language ? {
+                            "openai/browserLanguage": window.navigator.language
+                        } : {}
+                    }
+                }
+            },
+            additionalHeaders: {
+                ...p(e),
+                [d]: v.CODEX,
+                Accept: `application/json`
+            },
+            disableAutomaticRetry: !0,
+            cache: `no-store`,
+            signal: i
+        }),
+        s = G.safeParse(o);
+    if (!s.success) throw Error(`Invalid Wallet tool response`);
+    if (`error` in s.data) throw Error(`Wallet tool request failed (${s.data.error.code})`);
+    let c = s.data.result,
+        l = P(c);
+    if (!l) throw Error(`Invalid Wallet tool response`);
+    return {
+        ...l,
+        _meta: c._meta,
+        structuredContent: c.structuredContent
+    }
+}
+async function z(e, t, r, i) {
+    if (i) {
+        let t = await n.safeGet(`/ecosystem/widget`, {
+                authOption: f.Required,
+                parameters: {
+                    query: {
+                        uri: `connectors://${B}`,
+                        template_pointer: H
+                    }
+                },
+                additionalHeaders: {
+                    ...p(e),
+                    [d]: v.CODEX
+                },
+                disableAutomaticRetry: !0,
+                cache: `no-store`,
+                signal: r
+            }),
+            {
+                html: i,
+                csp: a,
+                domain: o
+            } = q.parse(t);
+        return {
+            html: i,
+            csp: a,
+            domain: o
+        }
+    }
+    let a = await y.safePost(`/mcp`, {
+            authOption: f.Required,
+            requestBody: {
+                jsonrpc: `2.0`,
+                id: W,
+                method: `resources/read`,
+                params: {
+                    uri: H,
+                    _meta: {
+                        "x-codex-turn-metadata": {
+                            mcp_request_meta: {
+                                selected_connector_ids: [B],
+                                link_id: t
+                            }
+                        },
+                        ...typeof window < `u` && window.navigator.language ? {
+                            "openai/browserLanguage": window.navigator.language
+                        } : {}
+                    }
+                }
+            },
+            additionalHeaders: {
+                ...p(e),
+                [d]: v.CODEX,
+                Accept: `application/json`
+            },
+            disableAutomaticRetry: !0,
+            cache: `no-store`,
+            signal: r
+        }),
+        o = J.safeParse(a);
+    if (!o.success) throw Error(`Invalid Wallet widget response`);
+    let s = o.data.result.contents[0];
+    return {
+        html: s.text,
+        csp: s._meta[`openai/widgetCSP`],
+        domain: null
+    }
+}
+var B, V, H, U, W, G, K, q, J, Y = e((() => {
+        h(), g(), _(), u(), t(), r(), l(), i(), a(), F(), S(), B = `connector_openai_wallet`, V = e => ({
+            thread_id: e.threadId,
+            client_metadata: {
+                orbit_id: e.orbitId
+            }
+        }), H = `internal://wallet-vgs-card-enrollment`, U = new Set([`open_vgs_card_enrollment`, `list_wallet_contact_infos`, `save_wallet_contact_info`, `register_vgs_agentic_token`, `request_vgs_card_verification`, `refresh_vgs_card_verification`, `verify_vgs_card`, `finalize_vgs_card_registration`]), W = 1, G = D([E({
+            jsonrpc: x(`2.0`),
+            id: x(W),
+            result: k({
+                content: C(O()),
+                structuredContent: M(A(), O()).optional(),
+                _meta: M(A(), O()).optional(),
+                isError: T().optional()
+            })
+        }), E({
+            jsonrpc: x(`2.0`),
+            id: x(W).nullable(),
+            error: k({
+                code: j(),
+                message: A()
+            })
+        })]), K = k({
+            connect_domains: C(A()).nullish(),
+            resource_domains: C(A()).nullish(),
+            frame_domains: C(A()).nullish(),
+            redirect_domains: C(A()).nullish()
+        }), q = k({
+            html: A().refine(e => e.trim().length > 0),
+            is_verified_first_party: x(!0),
+            domain: w(),
+            csp: K
+        }), J = E({
+            jsonrpc: x(`2.0`),
+            id: x(W),
+            result: k({
+                contents: N([k({
+                    uri: x(H),
+                    mimeType: x(`text/html`),
+                    text: A().refine(e => e.trim().length > 0),
+                    _meta: k({
+                        "openai/widgetCSP": K,
+                        "openai/widgetDomain": w().optional()
+                    })
+                })])
+            })
+        })
+    })),
+    X, Z = e((() => {
+        X = class extends Error {
+            constructor() {
+                super(`Wallet request is no longer available`)
+            }
+        }
+    }));
+export {
+    L as a, z as c, R as i, Z as n, I as o, B as r, Y as s, X as t
+};
 //# sourceMappingURL=1f58b914-glcyfeewugftkqcv.js.map

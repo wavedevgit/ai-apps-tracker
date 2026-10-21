@@ -1,2 +1,71 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{BU as t,JT as n,YT as r,oC as i,sC as a,zU as o}from"./4813494d-lxa3wniynbx9ka2a.js";import{Bn as s,Nn as c,Rn as l,wn as u,zn as d}from"./2340486e-i7pjxgdhv0bs6apg.js";import{FS as f,IS as p}from"./30901919-i8ip8r0znvgcym38.js";var m,h,g,_=e((()=>{m=u(),r(),f(),t(),a(),l(),h=s(),g=e=>{"use forget";let t=(0,m.c)(7),{adminReviewUrl:r}=e,a=d(),s;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,h.jsx)(`p`,{className:`text-token-text-secondary text-sm`,children:(0,h.jsx)(c,{id:`chatgpt.plugins.details.apps.workspace_approval.admin_link.description`,defaultMessage:`Send this link to a workspace admin for app approval.`})}),t[0]=s):s=t[0];let l;t[1]!==r||t[2]!==a?(l=()=>{i(new URL(r,window.location.origin).toString()).then(()=>o().success(a.formatMessage({id:`chatgpt.plugins.details.apps.workspace_approval.admin_link.copy.toast.success`,defaultMessage:`Admin review link copied`}))).catch(()=>o().danger(a.formatMessage({id:`chatgpt.plugins.details.apps.workspace_approval.admin_link.copy.toast.error`,defaultMessage:`Couldn't copy admin review link`})))},t[1]=r,t[2]=a,t[3]=l):l=t[3];let u;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,h.jsx)(c,{id:`chatgpt.plugins.details.apps.workspace_approval.admin_link.copy.button.label`,defaultMessage:`Copy admin review link`}),t[4]=u):u=t[4];let f;return t[5]===l?f=t[6]:(f=(0,h.jsxs)(`div`,{className:`flex flex-col items-start gap-3`,children:[s,(0,h.jsx)(n,{color:`secondary`,icon:p,size:`small`,type:`button`,onClick:l,children:u})]}),t[5]=l,t[6]=f),f}}));export{_ as n,g as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    BU as t,
+    JT as n,
+    YT as r,
+    oC as i,
+    sC as a,
+    zU as o
+} from "./4813494d-lxa3wniynbx9ka2a.js";
+import {
+    Bn as s,
+    Nn as c,
+    Rn as l,
+    wn as u,
+    zn as d
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    FS as f,
+    IS as p
+} from "./30901919-i8ip8r0znvgcym38.js";
+var m, h, g, _ = e((() => {
+    m = u(), r(), f(), t(), a(), l(), h = s(), g = e => {
+        "use forget";
+        let t = (0, m.c)(7),
+            {
+                adminReviewUrl: r
+            } = e,
+            a = d(),
+            s;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, h.jsx)(`p`, {
+            className: `text-token-text-secondary text-sm`,
+            children: (0, h.jsx)(c, {
+                id: `chatgpt.plugins.details.apps.workspace_approval.admin_link.description`,
+                defaultMessage: `Send this link to a workspace admin for app approval.`
+            })
+        }), t[0] = s) : s = t[0];
+        let l;
+        t[1] !== r || t[2] !== a ? (l = () => {
+            i(new URL(r, window.location.origin).toString()).then(() => o().success(a.formatMessage({
+                id: `chatgpt.plugins.details.apps.workspace_approval.admin_link.copy.toast.success`,
+                defaultMessage: `Admin review link copied`
+            }))).catch(() => o().danger(a.formatMessage({
+                id: `chatgpt.plugins.details.apps.workspace_approval.admin_link.copy.toast.error`,
+                defaultMessage: `Couldn't copy admin review link`
+            })))
+        }, t[1] = r, t[2] = a, t[3] = l) : l = t[3];
+        let u;
+        t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, h.jsx)(c, {
+            id: `chatgpt.plugins.details.apps.workspace_approval.admin_link.copy.button.label`,
+            defaultMessage: `Copy admin review link`
+        }), t[4] = u) : u = t[4];
+        let f;
+        return t[5] === l ? f = t[6] : (f = (0, h.jsxs)(`div`, {
+            className: `flex flex-col items-start gap-3`,
+            children: [s, (0, h.jsx)(n, {
+                color: `secondary`,
+                icon: p,
+                size: `small`,
+                type: `button`,
+                onClick: l,
+                children: u
+            })]
+        }), t[5] = l, t[6] = f), f
+    }
+}));
+export {
+    _ as n, g as t
+};
 //# sourceMappingURL=16a2233e-jezftfzjc6cvd2jo.js.map

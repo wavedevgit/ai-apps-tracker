@@ -1,2 +1,93 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Pn as t,Rn as n,Tn as r,Vn as i,zn as a}from"./2340486e-komxp8tzs51ny4jj.js";import{uRt as o,yRt as s}from"./conversation-small-cawdu7il3ha6y70c.js";import{K as c,W as l}from"./8e7d0a25-c4oex49jr20n6c3r.js";var u,d,f,p,m=e((()=>{u=r(),o(),l(),a(),d=i(),f=e=>{"use forget";let n=(0,u.c)(18),{skill:r,skillName:i}=e,a=`chatgpt_skill_id`in r,o;n[0]===r.id?o=n[1]:(o={skillId:r.id},n[0]=r.id,n[1]=o);let{data:l}=c(o),f=!a,m;n[2]!==r.id||n[3]!==f?(m={skillId:r.id,enabled:f},n[2]=r.id,n[3]=f,n[4]=m):m=n[4];let h=s(m),g=a?l?.file_count??0:h,_=i??l?.display_name??l?.skill_name??r.name,v;n[5]===_?v=n[6]:(v=(0,d.jsx)(`h3`,{className:`sentence text-lg font-normal`,children:_}),n[5]=_,n[6]=v);let y;n[7]===a?y=n[8]:(y=a?(0,d.jsx)(t,{...p.chatGptSkillLabel}):(0,d.jsx)(t,{...p.skillLabel}),n[7]=a,n[8]=y);let b;n[9]===Symbol.for(`react.memo_cache_sentinel`)?(b=(0,d.jsx)(`span`,{children:` • `}),n[9]=b):b=n[9];let x;n[10]===g?x=n[11]:(x=(0,d.jsx)(`span`,{children:(0,d.jsx)(t,{...p.filesCountLabel,values:{count:g}})}),n[10]=g,n[11]=x);let S;n[12]!==y||n[13]!==x?(S=(0,d.jsxs)(`div`,{className:`text-tertiary text-xs`,children:[y,b,x]}),n[12]=y,n[13]=x,n[14]=S):S=n[14];let C;return n[15]!==v||n[16]!==S?(C=(0,d.jsxs)(`div`,{children:[v,S]}),n[15]=v,n[16]=S,n[17]=C):C=n[17],C},p=n({skillLabel:{id:`Hermes.GptStudio.Builder.SkillHeaderInfo.skillLabel`,defaultMessage:`Skill`},chatGptSkillLabel:{id:`Hermes.GptStudio.Builder.SkillHeaderInfo.chatGptSkillLabel`,defaultMessage:`ChatGPT skill`},filesCountLabel:{id:`Hermes.GptStudio.Builder.SkillHeaderInfo.filesCountLabel`,defaultMessage:`{count, plural, one {# file} other {# files}}`}})}));export{m as n,f as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Pn as t,
+    Rn as n,
+    Tn as r,
+    Vn as i,
+    zn as a
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    uRt as o,
+    yRt as s
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    K as c,
+    W as l
+} from "./8e7d0a25-c4oex49jr20n6c3r.js";
+var u, d, f, p, m = e((() => {
+    u = r(), o(), l(), a(), d = i(), f = e => {
+        "use forget";
+        let n = (0, u.c)(18),
+            {
+                skill: r,
+                skillName: i
+            } = e,
+            a = `chatgpt_skill_id` in r,
+            o;
+        n[0] === r.id ? o = n[1] : (o = {
+            skillId: r.id
+        }, n[0] = r.id, n[1] = o);
+        let {
+            data: l
+        } = c(o), f = !a, m;
+        n[2] !== r.id || n[3] !== f ? (m = {
+            skillId: r.id,
+            enabled: f
+        }, n[2] = r.id, n[3] = f, n[4] = m) : m = n[4];
+        let h = s(m),
+            g = a ? l?.file_count ?? 0 : h,
+            _ = i ?? l?.display_name ?? l?.skill_name ?? r.name,
+            v;
+        n[5] === _ ? v = n[6] : (v = (0, d.jsx)(`h3`, {
+            className: `sentence text-lg font-normal`,
+            children: _
+        }), n[5] = _, n[6] = v);
+        let y;
+        n[7] === a ? y = n[8] : (y = a ? (0, d.jsx)(t, {
+            ...p.chatGptSkillLabel
+        }) : (0, d.jsx)(t, {
+            ...p.skillLabel
+        }), n[7] = a, n[8] = y);
+        let b;
+        n[9] === Symbol.for(`react.memo_cache_sentinel`) ? (b = (0, d.jsx)(`span`, {
+            children: ` • `
+        }), n[9] = b) : b = n[9];
+        let x;
+        n[10] === g ? x = n[11] : (x = (0, d.jsx)(`span`, {
+            children: (0, d.jsx)(t, {
+                ...p.filesCountLabel,
+                values: {
+                    count: g
+                }
+            })
+        }), n[10] = g, n[11] = x);
+        let S;
+        n[12] !== y || n[13] !== x ? (S = (0, d.jsxs)(`div`, {
+            className: `text-tertiary text-xs`,
+            children: [y, b, x]
+        }), n[12] = y, n[13] = x, n[14] = S) : S = n[14];
+        let C;
+        return n[15] !== v || n[16] !== S ? (C = (0, d.jsxs)(`div`, {
+            children: [v, S]
+        }), n[15] = v, n[16] = S, n[17] = C) : C = n[17], C
+    }, p = n({
+        skillLabel: {
+            id: `Hermes.GptStudio.Builder.SkillHeaderInfo.skillLabel`,
+            defaultMessage: `Skill`
+        },
+        chatGptSkillLabel: {
+            id: `Hermes.GptStudio.Builder.SkillHeaderInfo.chatGptSkillLabel`,
+            defaultMessage: `ChatGPT skill`
+        },
+        filesCountLabel: {
+            id: `Hermes.GptStudio.Builder.SkillHeaderInfo.filesCountLabel`,
+            defaultMessage: `{count, plural, one {# file} other {# files}}`
+        }
+    })
+}));
+export {
+    m as n, f as t
+};
 //# sourceMappingURL=081a1911-f71gee4g6yvhlvh8.js.map

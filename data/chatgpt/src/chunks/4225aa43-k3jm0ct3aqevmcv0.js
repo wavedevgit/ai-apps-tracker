@@ -1,2 +1,43 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{l0 as t,u0 as n}from"./4813494d-tap9fxyhk4ehe0bs.js";import{KBn as r,YBn as i,_pt as a,hpt as o}from"./conversation-small-nmt18uiom3b14vca.js";async function s({conversationId:e,messageId:t,onUnavailable:i}){let a=o(e,t);if(a==null){i();return}try{if((await r(e,{forceNetworkFetch:!0,includeMessageId:t})).is_archived){i();return}n(a)}catch{i()}}var c=e((()=>{a(),i(),t()}));export{s as n,c as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    l0 as t,
+    u0 as n
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    KBn as r,
+    YBn as i,
+    _pt as a,
+    hpt as o
+} from "./conversation-small-nmt18uiom3b14vca.js";
+async function s({
+    conversationId: e,
+    messageId: t,
+    onUnavailable: i
+}) {
+    let a = o(e, t);
+    if (a == null) {
+        i();
+        return
+    }
+    try {
+        if ((await r(e, {
+                forceNetworkFetch: !0,
+                includeMessageId: t
+            })).is_archived) {
+            i();
+            return
+        }
+        n(a)
+    } catch {
+        i()
+    }
+}
+var c = e((() => {
+    a(), i(), t()
+}));
+export {
+    s as n, c as t
+};
 //# sourceMappingURL=4225aa43-k3jm0ct3aqevmcv0.js.map

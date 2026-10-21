@@ -1,2 +1,28 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{eB as n,nB as r,tB as i}from"./4813494d-lxa3wniynbx9ka2a.js";import{Nt as a,Q as o,Vn as s}from"./2340486e-i7pjxgdhv0bs6apg.js";function c(e){let t=a();(0,l.useEffect)(()=>{e||t(r(n.NO_ACCESS))},[e,t])}var l,u=e((()=>{i(),l=t(s()),o()}));export{c as n,u as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    eB as n,
+    nB as r,
+    tB as i
+} from "./4813494d-lxa3wniynbx9ka2a.js";
+import {
+    Nt as a,
+    Q as o,
+    Vn as s
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function c(e) {
+    let t = a();
+    (0, l.useEffect)(() => {
+        e || t(r(n.NO_ACCESS))
+    }, [e, t])
+}
+var l, u = e((() => {
+    i(), l = t(s()), o()
+}));
+export {
+    c as n, u as t
+};
 //# sourceMappingURL=29946bd6-bi0t2ax3vdpe7s31.js.map

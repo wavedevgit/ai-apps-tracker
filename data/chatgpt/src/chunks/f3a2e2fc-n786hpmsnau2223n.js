@@ -1,2 +1,244 @@
-import{n as e,r as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{c2 as n,d2 as r,gF as i,vF as a}from"./4813494d-t80q9ew944ej0mgk.js";import{$Et as o,BNn as s,FFn as ee,G9t as c,GDt as l,HDt as te,K9t as ne,OPt as u,PFn as d,Q9t as f,RNn as re,TDt as p,XPt as m,Xxt as h,Yxt as ie,ZPt as ae,cLn as g,een as oe,iDt as se,iPt as _,jPt as v,kPt as ce,mDt as y,oDt as b,pDt as x,rDt as S,rPt as C,sDt as w,sLn as T,tPt as le,uLn as E,wDt as D,wLn as O,wPt as k,xLn as ue}from"./conversation-small-ocicxxw6jegn4vux.js";import{n as A,r as de}from"./3cf4f9ac-bjv0vxarolubryau.js";import{n as j,t as fe}from"./dcea21c8-medw50f2na78prwc.js";function M(e){let t=e.classifiers.library_artifact_type;if(e.libraryFileId==null||e.sharingEntryId!=null&&e.sharingCanManage===!1||C(e)||e.gizmoId!=null||e.classifiers.library_file_is_project===1||!b(t).canShare)return!1;if(e.status===`available`)return!0;if(e.status!==`unavailable`)return!1;let n=e.classifiers.library_file_state;return(n===`created`||n===`indexing`)&&e.source?.type===`chat_upload`&&e.deletedAt==null&&t!==`site`&&t!==`learning_quiz`}var N=e((()=>{_(),w()})),P=t({openLibraryArtifactPreviewModal:()=>I,resolveLibraryArtifactPreviewFileReference:()=>F});async function F({artifact:e,resolveFileReference:t,onError:n,signal:r}){let i=async()=>{try{let e=await t();return r?.aborted===!0?null:e}catch(t){return e.source?.type!==`google_drive`&&r?.aborted!==!0&&n(t),null}},a=e.source?.type===`external_library`&&O(e.source.fileId)?e.source.fileId:void 0,o=a!=null;return e.source?.type!==`google_drive`&&!o?{fileReference:await i()}:{fileReference:{fileId:a??e.id,fileName:k(e),mimeType:e.mimeType,sizeBytes:e.sizeBytes},resolveFileReference:i}}function I({artifact:e,analyticsSession:t,favoritesAnalyticsSource:n,clientThreadId:a,fileId:o,fileName:s,libraryFileId:c,sharedLibraryFileId:l,mimeType:u,onClose:d,onDelete:f,onDownload:p,onSaved:m,providesOpenLibraryFileContext:h=!1,resolveFileReference:_,readOnly:v=!1,previewFileReference:y,sidePaneHandoff:b,showDelete:w,showOpenLibraryFileComposerContext:T=!1,sidePaneShellHostStore:A,sizeBytes:j,fullscreenShellEnabled:N}){let P=l??c??e.libraryFileId,F=v||l!=null,I=s==null?k(e):P==null?s:ce({libraryFileId:P,fileName:s}),L=typeof e.classifiers.parent_directory_id==`string`?e.classifiers.parent_directory_id:void 0,R=typeof e.classifiers.library_artifact_type==`string`?e.classifiers.library_artifact_type:void 0,z=u??e.mimeType,B=e.source?.type===`external_library`?e.source.fileId:void 0,V=[e.id,e.libraryFileId,B,o],H=V.some(e=>g(e?.replace(/^(?:file-library:)+/,``))),U=E(...V),pe=!H||O(U)&&(e.source==null||e.source.type===`external_library`&&O(e.source.fileId)&&e.source.fileId===U)&&!o.startsWith(`file-library:`)&&ne(e.mimeType),me=ue(e.id)?e.id:H&&O(U)?U:void 0,W=j??e.sizeBytes,G=le(e),K=l==null&&e.source?.type===`google_drive`?e.source:void 0,he=l==null&&e.source?.type===`external_library`&&x({mountedLibraryFileId:e.source.fileId,sourceUrl:e.source.sourceUrl})!=null?e.source:void 0,q=K==null?void 0:te({mountedLibraryFileId:K.fileId,sourceMimeType:e.mimeType,sourceUrl:K.sourceUrl}),J=E(...V,e.source!=null&&`fileId`in e.source?e.source.fileId:void 0),Y=re(J??``)==null?G===`native`?P:void 0:J,X=a==null?null:i(a),Z=X!=null&&l==null&&P!=null&&h&&ee()?S(X,{fileId:o,fileName:I,libraryFileId:P,libraryProvider:G,libraryEntrypoint:`library_start_chat`,mimeType:z,sizeBytes:W},{showComposerContext:T}):null,Q=()=>{X!=null&&Z!=null&&se(X,Z),d?.()};if(l==null&&P&&ae(e)){b?.onUnavailable(),r(ie,{fileId:o,fileName:I,libraryFileId:P,libraryProvider:G,libraryEntrypoint:`library_start_chat`,mimeType:z,sizeBytes:W,showAskAboutComposer:!0,useFullscreenShell:N,onDelete:f,onClose:Z==null?d:Q});return}let $={analyticsSession:t,favoritesAnalyticsSource:n,artifactId:l==null?e.id:void 0,clientThreadId:a,fileId:o,mountedLibraryFileId:l==null?me:void 0,libraryFileId:l==null?P:void 0,...l==null?{}:{sharedLibraryFileId:l},libraryDirectoryId:L,libraryArtifactType:R,libraryProvider:G,librarySourceFileName:C(e)?k(e):void 0,librarySourceMimeType:C(e)?e.mimeType:void 0,librarySourceUrl:q??he?.sourceUrl,libraryEntrypoint:`library_start_chat`,...Y==null?{}:{libraryChatUsageResourceId:Y},fileName:I,originConversationId:l==null?e.originationThreadId:void 0,originMessageId:l==null?e.originationMessageId:void 0,imageGenAttribution:e.imageGenAttribution,mimeType:z,sizeBytes:W,canRenameFile:!F&&!C(e)&&de(e),canShareFile:M(e)&&(!F||l!=null&&oe()),sharingEntryId:e.sharingEntryId,gizmoId:l==null?e.gizmoId:void 0,fullscreenShellEnabled:N,hideComposer:l==null&&!pe||void 0,isEditable:!F&&void 0,unifiedImageViewerEligible:l==null,onSaved:l==null?m:void 0,onDownload:l==null?p:void 0,onDelete:l==null?f:void 0,preferSidePaneForWritingBlockEditor:A!=null,resolveFileReference:l==null?_:void 0,previewFileReference:l==null?y:void 0,sidePaneHandoff:b,showDelete:l==null&&w,onClose:Z==null?d:Q};if(A!=null){r(fe,{...$,sidePaneShellHostStore:A});return}r(D,$)}var L=e((()=>{T(),a(),n(),v(),o(),d(),f(),u(),l(),s(),_(),y(),c(),N(),m(),A(),p(),j(),h()}));export{N as a,F as i,I as n,M as o,P as r,L as t};
+import {
+    n as e,
+    r as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    c2 as n,
+    d2 as r,
+    gF as i,
+    vF as a
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    $Et as o,
+    BNn as s,
+    FFn as ee,
+    G9t as c,
+    GDt as l,
+    HDt as te,
+    K9t as ne,
+    OPt as u,
+    PFn as d,
+    Q9t as f,
+    RNn as re,
+    TDt as p,
+    XPt as m,
+    Xxt as h,
+    Yxt as ie,
+    ZPt as ae,
+    cLn as g,
+    een as oe,
+    iDt as se,
+    iPt as _,
+    jPt as v,
+    kPt as ce,
+    mDt as y,
+    oDt as b,
+    pDt as x,
+    rDt as S,
+    rPt as C,
+    sDt as w,
+    sLn as T,
+    tPt as le,
+    uLn as E,
+    wDt as D,
+    wLn as O,
+    wPt as k,
+    xLn as ue
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+import {
+    n as A,
+    r as de
+} from "./3cf4f9ac-bjv0vxarolubryau.js";
+import {
+    n as j,
+    t as fe
+} from "./dcea21c8-medw50f2na78prwc.js";
+
+function M(e) {
+    let t = e.classifiers.library_artifact_type;
+    if (e.libraryFileId == null || e.sharingEntryId != null && e.sharingCanManage === !1 || C(e) || e.gizmoId != null || e.classifiers.library_file_is_project === 1 || !b(t).canShare) return !1;
+    if (e.status === `available`) return !0;
+    if (e.status !== `unavailable`) return !1;
+    let n = e.classifiers.library_file_state;
+    return (n === `created` || n === `indexing`) && e.source?.type === `chat_upload` && e.deletedAt == null && t !== `site` && t !== `learning_quiz`
+}
+var N = e((() => {
+        _(), w()
+    })),
+    P = t({
+        openLibraryArtifactPreviewModal: () => I,
+        resolveLibraryArtifactPreviewFileReference: () => F
+    });
+async function F({
+    artifact: e,
+    resolveFileReference: t,
+    onError: n,
+    signal: r
+}) {
+    let i = async () => {
+        try {
+            let e = await t();
+            return r?.aborted === !0 ? null : e
+        } catch (t) {
+            return e.source?.type !== `google_drive` && r?.aborted !== !0 && n(t), null
+        }
+    }, a = e.source?.type === `external_library` && O(e.source.fileId) ? e.source.fileId : void 0, o = a != null;
+    return e.source?.type !== `google_drive` && !o ? {
+        fileReference: await i()
+    } : {
+        fileReference: {
+            fileId: a ?? e.id,
+            fileName: k(e),
+            mimeType: e.mimeType,
+            sizeBytes: e.sizeBytes
+        },
+        resolveFileReference: i
+    }
+}
+
+function I({
+    artifact: e,
+    analyticsSession: t,
+    favoritesAnalyticsSource: n,
+    clientThreadId: a,
+    fileId: o,
+    fileName: s,
+    libraryFileId: c,
+    sharedLibraryFileId: l,
+    mimeType: u,
+    onClose: d,
+    onDelete: f,
+    onDownload: p,
+    onSaved: m,
+    providesOpenLibraryFileContext: h = !1,
+    resolveFileReference: _,
+    readOnly: v = !1,
+    previewFileReference: y,
+    sidePaneHandoff: b,
+    showDelete: w,
+    showOpenLibraryFileComposerContext: T = !1,
+    sidePaneShellHostStore: A,
+    sizeBytes: j,
+    fullscreenShellEnabled: N
+}) {
+    let P = l ?? c ?? e.libraryFileId,
+        F = v || l != null,
+        I = s == null ? k(e) : P == null ? s : ce({
+            libraryFileId: P,
+            fileName: s
+        }),
+        L = typeof e.classifiers.parent_directory_id == `string` ? e.classifiers.parent_directory_id : void 0,
+        R = typeof e.classifiers.library_artifact_type == `string` ? e.classifiers.library_artifact_type : void 0,
+        z = u ?? e.mimeType,
+        B = e.source?.type === `external_library` ? e.source.fileId : void 0,
+        V = [e.id, e.libraryFileId, B, o],
+        H = V.some(e => g(e?.replace(/^(?:file-library:)+/, ``))),
+        U = E(...V),
+        pe = !H || O(U) && (e.source == null || e.source.type === `external_library` && O(e.source.fileId) && e.source.fileId === U) && !o.startsWith(`file-library:`) && ne(e.mimeType),
+        me = ue(e.id) ? e.id : H && O(U) ? U : void 0,
+        W = j ?? e.sizeBytes,
+        G = le(e),
+        K = l == null && e.source?.type === `google_drive` ? e.source : void 0,
+        he = l == null && e.source?.type === `external_library` && x({
+            mountedLibraryFileId: e.source.fileId,
+            sourceUrl: e.source.sourceUrl
+        }) != null ? e.source : void 0,
+        q = K == null ? void 0 : te({
+            mountedLibraryFileId: K.fileId,
+            sourceMimeType: e.mimeType,
+            sourceUrl: K.sourceUrl
+        }),
+        J = E(...V, e.source != null && `fileId` in e.source ? e.source.fileId : void 0),
+        Y = re(J ?? ``) == null ? G === `native` ? P : void 0 : J,
+        X = a == null ? null : i(a),
+        Z = X != null && l == null && P != null && h && ee() ? S(X, {
+            fileId: o,
+            fileName: I,
+            libraryFileId: P,
+            libraryProvider: G,
+            libraryEntrypoint: `library_start_chat`,
+            mimeType: z,
+            sizeBytes: W
+        }, {
+            showComposerContext: T
+        }) : null,
+        Q = () => {
+            X != null && Z != null && se(X, Z), d?.()
+        };
+    if (l == null && P && ae(e)) {
+        b?.onUnavailable(), r(ie, {
+            fileId: o,
+            fileName: I,
+            libraryFileId: P,
+            libraryProvider: G,
+            libraryEntrypoint: `library_start_chat`,
+            mimeType: z,
+            sizeBytes: W,
+            showAskAboutComposer: !0,
+            useFullscreenShell: N,
+            onDelete: f,
+            onClose: Z == null ? d : Q
+        });
+        return
+    }
+    let $ = {
+        analyticsSession: t,
+        favoritesAnalyticsSource: n,
+        artifactId: l == null ? e.id : void 0,
+        clientThreadId: a,
+        fileId: o,
+        mountedLibraryFileId: l == null ? me : void 0,
+        libraryFileId: l == null ? P : void 0,
+        ...l == null ? {} : {
+            sharedLibraryFileId: l
+        },
+        libraryDirectoryId: L,
+        libraryArtifactType: R,
+        libraryProvider: G,
+        librarySourceFileName: C(e) ? k(e) : void 0,
+        librarySourceMimeType: C(e) ? e.mimeType : void 0,
+        librarySourceUrl: q ?? he?.sourceUrl,
+        libraryEntrypoint: `library_start_chat`,
+        ...Y == null ? {} : {
+            libraryChatUsageResourceId: Y
+        },
+        fileName: I,
+        originConversationId: l == null ? e.originationThreadId : void 0,
+        originMessageId: l == null ? e.originationMessageId : void 0,
+        imageGenAttribution: e.imageGenAttribution,
+        mimeType: z,
+        sizeBytes: W,
+        canRenameFile: !F && !C(e) && de(e),
+        canShareFile: M(e) && (!F || l != null && oe()),
+        sharingEntryId: e.sharingEntryId,
+        gizmoId: l == null ? e.gizmoId : void 0,
+        fullscreenShellEnabled: N,
+        hideComposer: l == null && !pe || void 0,
+        isEditable: !F && void 0,
+        unifiedImageViewerEligible: l == null,
+        onSaved: l == null ? m : void 0,
+        onDownload: l == null ? p : void 0,
+        onDelete: l == null ? f : void 0,
+        preferSidePaneForWritingBlockEditor: A != null,
+        resolveFileReference: l == null ? _ : void 0,
+        previewFileReference: l == null ? y : void 0,
+        sidePaneHandoff: b,
+        showDelete: l == null && w,
+        onClose: Z == null ? d : Q
+    };
+    if (A != null) {
+        r(fe, {
+            ...$,
+            sidePaneShellHostStore: A
+        });
+        return
+    }
+    r(D, $)
+}
+var L = e((() => {
+    T(), a(), n(), v(), o(), d(), f(), u(), l(), s(), _(), y(), c(), N(), m(), A(), p(), j(), h()
+}));
+export {
+    N as a, F as i, I as n, M as o, P as r, L as t
+};
 //# sourceMappingURL=f3a2e2fc-n786hpmsnau2223n.js.map

@@ -1,3 +1,837 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/c2825ab1-hh5nevd71cvdas11.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-t80q9ew944ej0mgk.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/conversation-small-ocicxxw6jegn4vux.js","assets/30901919-r9pahacmzqudnt4f.js","assets/c470f5ab-py8gip6x11wq9s88.js","assets/0e5afe53-bfccq9og5d2mon04.js","assets/conversation-small-ht8gwtl7.css","assets/f5cccfb7-omfq28qsvhujhxcn.js","assets/65f98121-e8xtq7cv6itsi26s.js","assets/0f8b28f8-gbvlxctev5u2kjjt.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$J as n,$i as r,Da as i,Dit as a,GJ as o,Int as s,J1 as c,JF as l,Let as u,Oa as d,Oit as f,Pnt as p,QX as m,Qnt as h,Qy as g,Rz as _,Uet as v,Wet as y,Znt as b,Zy as x,_tt as S,a2 as C,art as w,c7 as T,eY as ee,ea as te,es as ne,f0 as E,k8 as D,ktt as O,l7 as k,nZ as A,o0 as j,o2 as M,os as N,p0 as P,prt as F,q1 as I,q5 as L,qF as R,zz as re}from"./4813494d-t80q9ew944ej0mgk.js";import{Bn as z,Ln as B,N as ie,Nn as V,Nt as ae,Q as H,Rn as U,Vn as oe,cn as se,ln as W,s as ce,wn as le,zn as ue}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$Hn as G,AR as de,Bfn as fe,FL as pe,JL as me,M7 as he,Nl as ge,Ntt as K,O7 as _e,Pl as ve,Ptt as ye,Q8 as be,QHn as xe,Sdn as q,Vfn as Se,YC as Ce,YL as we,Z8 as Te,a5 as Ee,aWn as De,eUn as Oe,ew as ke,f5 as J,i5 as Ae,iWn as je,kR as Me,nVn as Ne,nrn as Y,o5 as Pe,qL as Fe,s5 as Ie,srn as Le,tVn as Re,u5 as ze,xdn as Be}from"./conversation-small-ocicxxw6jegn4vux.js";import{Rm as Ve,bS as He,eb as Ue,gb as We,lp as Ge,mb as Ke,oC as qe,sC as Je,tb as Ye,up as Xe,yS as Ze,zm as Qe}from"./30901919-r9pahacmzqudnt4f.js";import{aa as $e,ca as et,da as tt,fa as nt,ha as rt,oa as it,pa as at}from"./8b34dbc2-egl8cz04n8nmlktg.js";import{n as ot,t as st}from"./429c9f5e-dkcl33w5iczkox8u.js";import{n as ct,r as lt}from"./1cfd0849-hp82r8pa7w8ppuka.js";import{n as ut,r as dt,t as ft}from"./97fef780-oxsy19jvt22hwcyz.js";import{n as pt,t as mt}from"./ee0eeb85-orfgyajspai4e567.js";var ht,gt,_t=e((()=>{ht=t(oe()),gt=(0,ht.createContext)(null)}));function vt({rightAlign:e=!1,bottomAlign:t=!1,fullWidth:n=!1,justifyBetween:r=!1,alwaysVisible:i=!1,onOverlayVisible:a,testId:o,children:s}){"use no forget";let c=i?`opacity-100 pointer-events-none`:`opacity-0 pointer-events-none group-focus-within/imagegen-image:opacity-100 group-hover/imagegen-image:opacity-100 focus-within:opacity-100 group-focus-within/imagegen-image:pointer-events-auto group-hover/imagegen-image:pointer-events-auto focus-within:pointer-events-auto`,l=(0,X.useCallback)(e=>{e.propertyName===`opacity`&&a?.()},[a]);return(0,X.useEffect)(()=>{i&&a?.()},[i,a]),(0,Z.jsxs)(`div`,{className:T(`pointer-events-none absolute z-2 overflow-hidden`,t?`rounded-b-[inherit]`:`rounded-t-[inherit]`,e?`end-0`:`start-0`,t?`bottom-0`:`top-0`,n&&`w-full`),children:[(0,Z.jsx)(`div`,{"data-testid":o,onTransitionEnd:l,className:T(t?`bg-linear-to-b`:`bg-linear-to-t`,`from-transparent to-black/30`,`h-20 w-full transition-opacity duration-75 ease-out`,i?`opacity-100`:`opacity-0 group-focus-within/imagegen-image:opacity-100 group-hover/imagegen-image:opacity-100 focus-within:opacity-100`)}),(0,Z.jsx)(`div`,{className:T(`absolute inset-0 flex`,c,`p-3`,t?`items-end`:`items-start`,e?`justify-end`:`justify-start`,r&&`justify-between`),children:s})]})}function yt({canShowShareButton:e,onOverlayVisible:t,...n}){"use no forget";let r=(0,X.useRef)(!1),i=de(),a=(0,X.useCallback)(()=>{e&&(r.current||=(p.logEvent(`Share Post: Share Button Shown`,{source:`image_gen_action_overlay`,...i}),!0))},[i,e]),o=(0,X.useCallback)(()=>{t?.(),a()},[a,t]);return(0,Z.jsx)(vt,{...n,onOverlayVisible:o})}function bt(e){return t=>{t.stopPropagation(),e()}}function xt({canShowShareButton:e,canPublishPromptShare:t,assetPointer:n,fullSizeImageAsset:r,conversation:i,messageId:a,shareSeriesImageCount:o,shareSeriesMessageSliceIds:s,fallback:c=null,shareFlowSource:l}){"use no forget";let[u,d]=(0,X.useState)(!1),[f,m]=(0,X.useState)(null),[g,v]=(0,X.useState)(null),y=(0,X.useRef)(!1),b=ue(),x=r?.asset_pointer??n,S=fe({mimeType:r?.mime_type}),C=at({canPublishPromptShare:t,assetPointer:x,conversation:i,imageGenMessageId:a,shareFlowSource:l}),w=rt({assetPointer:x,conversation:i,imageGenMessageId:a,shareFlowSource:l}),T=(0,X.useMemo)(()=>Array.from(new Set((s??[]).filter(Boolean))),[s]),ee=at({conversation:i,imageGenMessageIds:T,shareFlowSource:l}),te=rt({conversation:i,imageGenMessageIds:T,shareFlowSource:l}),ne=de(),E=(o??0)>1&&T.length>0,D=L(()=>e?nt():!1),O=L(()=>e&&t&&Fe()),k=pe(),A=()=>{K.imageShared({analyticsContext:ne,source:`image_gen_action_overlay`})},j=(e=`media_generation`)=>{p.logEventWithStatsig(`chatgpt_image_lightbox_share_current_image_selected`,`chatgpt_image_lightbox_share_current_image_selected`),p.logEventWithStatsig(`Share Post: Share Button Clicked`,`chatgpt_post_share_button_clicked`,{source:`image_gen_action_overlay`,attachment_type:e,message_id:a}),A()},M=()=>{p.logEventWithStatsig(`chatgpt_image_lightbox_share_all_images_selected`,`chatgpt_image_lightbox_share_all_images_selected`),p.logEventWithStatsig(`Share Post: Share Button Clicked`,`chatgpt_post_share_button_clicked`,{source:`image_gen_action_overlay`,attachment_type:`image_series_share`}),A()},N=async(e,t,{keepDropdownOpen:n=!1}={})=>{y.current=!0,n||m(null),v(null),d(!0);try{let n=await t();n?(v(n),m(e),await n.autoCopyShareLink()):m(null)}finally{d(!1),y.current=!1}},P=()=>{v(null),m(null)},F=async e=>{m(null),v(null),d(!0);try{let t=await e();if(!t)return;await t.copyShareLinkWithStreamingClipboard({shouldShowModerationBlockedToast:!0,successToastVariant:`successNeutral`},{omitSheetType:!0})}finally{d(!1)}},I=async(e,{keepDropdownOpen:t=!1}={})=>{if(e){await N(`mini-current`,w,{keepDropdownOpen:t}),j();return}d(!0);try{await C()}finally{d(!1)}j()},R=async(e,{keepDropdownOpen:t=!1}={})=>{if(e){await N(`mini-series`,te,{keepDropdownOpen:t}),M();return}d(!0);try{await ee()}finally{d(!1)}M()},re=async()=>{j(`prompt`),d(!0);try{await C({shareType:Te.PromptShare})}finally{d(!1)}};if(!e)return c;let z=u?_:He,B=(0,Z.jsx)(Q,{icon:z,variant:`imageGenUpdates`,disabled:u,onClick:e=>{e.stopPropagation()},ariaLabel:b.formatMessage(S.shareLabel)});return E||O?(0,Z.jsx)(xe,{open:f!=null,side:f==="default"?void 0:`right`,contentAlign:f==="default"?void 0:`end`,sideOffset:8,size:`auto`,contentClassName:f==="default"?void 0:k.contentClassName,onOpenChange:e=>{if(!e){if(y.current)return;P();return}if(v(null),m(`default`),E){let e=p.logStructuredEvent(`ChatgptImageLightboxButtonTapped`,{button:`CHATGPT_IMAGE_LIGHTBOX_BUTTON_TYPE_SHARE`,legacyStatsigEventName:`chatgpt_web_image_library_lightbox_image_share_clicked`,selectionState:`CHATGPT_IMAGEGEN_SELECTION_STATE_PENDING_SELECTION`,imageSeriesCount:h(o)});p.logValueEventWithStatsig({segmentEventName:`chatgpt_web_image_library_lightbox_image_share_clicked`,statsigEventName:`chatgpt_web_image_library_lightbox_image_share_clicked`,data:{selection_state:`pending_selection`,image_series_count:o},eventId:e})}},triggerButton:B,children:f===`mini-current`&&g?(0,Z.jsx)(it,{imageShareScope:`single_image`,isBusinessWorkspace:k.isBusinessWorkspace,isResolvingShareLink:u,onClose:P,shareActions:g}):f===`mini-series`&&g?(0,Z.jsx)(it,{imageShareScope:`image_series`,isBusinessWorkspace:k.isBusinessWorkspace,isResolvingShareLink:u,onClose:P,shareActions:g}):(0,Z.jsxs)(Z.Fragment,{children:[(0,Z.jsx)(G.Item,{icon:qe,onSelect:e=>{if(t&&we()){I(!1);return}if(D){F(w).finally(j);return}let n=tt();n&&e.preventDefault(),I(n,{keepDropdownOpen:n})},children:b.formatMessage(S.shareSelectionLabel)}),E&&(0,Z.jsx)(G.Item,{icon:Ve,onSelect:e=>{if(D){F(te).finally(M);return}let t=tt();t&&e.preventDefault(),R(t,{keepDropdownOpen:t})},children:b.formatMessage(lt.imageSeries,{imageCount:o})}),O&&(0,Z.jsx)(G.Item,{icon:Ge,onSelect:()=>void re(),children:b.formatMessage(lt.promptTemplate)})]})}):f===`mini-current`&&g?(0,Z.jsx)($e,{imageShareScope:`single_image`,isResolvingShareLink:u,triggerButton:B,onClose:P,shareActions:g}):(0,Z.jsx)(Q,{icon:z,variant:`imageGenUpdates`,disabled:u,onClick:bt(async()=>{if(t&&we()){await I(!1);return}if(D){await F(w),A();return}if(tt()){await N(`mini-current`,w),A();return}d(!0);try{await C()}finally{d(!1)}K.imageShared({analyticsContext:ne,source:`image_gen_action_overlay`})}),ariaLabel:b.formatMessage(S.shareLabel)})}var St,X,Z,Ct,wt,Q,Tt,$,Et=e((()=>{St=le(),ee(),A(),ot(),J(),Se(),q(),O(),Oe(),Xe(),Ye(),We(),Je(),Qe(),Ze(),g(),r(),je(),ve(),he(),Ce(),u(),Y(),et(),me(),N(),be(),R(),D(),re(),I(),E(),ct(),a(),s(),i(),Ne(),F(),b(),M(),ce(),k(),X=t(oe()),U(),H(),Me(),ye(),_t(),Ie(),Ee(),ut(),mt(),Z=z(),W(),Ct=y.ImageGenWatermarkOverflowMenu,wt=C(()=>se(()=>import(`./c2825ab1-hh5nevd71cvdas11.js`).then(e=>e.ImageGenReferenceActions),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12])),{loading:({fallback:e})=>e,fallback:({fallback:e})=>e}),Q=(0,X.forwardRef)(function(e,t){"use forget";let n=(0,St.c)(28),r,i,a,o,s,c,l,u,d;n[0]===e?(r=n[1],i=n[2],a=n[3],o=n[4],s=n[5],c=n[6],l=n[7],u=n[8],d=n[9]):({icon:r,children:o,className:s,disabled:c,onClick:l,ariaLabel:i,selected:u,variant:d,...a}=e,n[0]=e,n[1]=r,n[2]=i,n[3]=a,n[4]=o,n[5]=s,n[6]=c,n[7]=l,n[8]=u,n[9]=d);let f=u!==void 0&&u,p=(d===void 0?`default`:d)===`imageGenUpdates`,m=o==null,h=p&&m,g=h&&`group`,_=p?m?`h-10 w-10`:`h-10 gap-0 rounded-full bg-black/15 px-3 backdrop-blur-md hover:bg-black/30 focus:bg-black/30`:`gap-1 rounded-xl hover:bg-white/15 hover:backdrop-blur-md focus:bg-white/15 focus:backdrop-blur-md`,v=!p&&(m?`h-10 w-10`:`h-10 px-2`),y;n[10]!==s||n[11]!==g||n[12]!==_||n[13]!==v?(y=T(`pointer-events-auto z-11 flex items-center justify-center text-sm font-medium text-white`,g,_,v,s),n[10]=s,n[11]=g,n[12]=_,n[13]=v,n[14]=y):y=n[14];let b;n[15]!==r||n[16]!==o||n[17]!==h?(b=h?(0,Z.jsx)(`span`,{className:`flex h-9 w-9 items-center justify-center rounded-full bg-black/15 backdrop-blur-md group-hover:bg-black/30 group-focus:bg-black/30`,children:r!=null&&(0,Z.jsx)(r,{style:{filter:`drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15))`},className:`icon fill-current`})}):(0,Z.jsxs)(Z.Fragment,{children:[r!=null&&(0,Z.jsx)(r,{style:{filter:`drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15))`},className:`icon fill-current`}),o]}),n[15]=r,n[16]=o,n[17]=h,n[18]=b):b=n[18];let x;return n[19]!==i||n[20]!==a||n[21]!==c||n[22]!==l||n[23]!==t||n[24]!==f||n[25]!==y||n[26]!==b?(x=(0,Z.jsx)(`button`,{ref:t,type:`button`,"aria-pressed":f,className:y,onClick:l,disabled:c,"aria-label":i,...a,children:b}),n[19]=i,n[20]=a,n[21]=c,n[22]=l,n[23]=t,n[24]=f,n[25]=y,n[26]=b,n[27]=x):x=n[27],x}),Tt=({imageAssetPointer:e,imageUrl:t,hasWatermarkedDownload:r=!1,isRenderedImageWatermarked:i=!1,fullSizeImageAsset:a,canPublishPromptShare:s=!0,shareSeriesImageCount:u,shareSeriesMessageSliceIds:p,downloadFullImage:h=!1,messageId:g,conversation:_,shouldShowOverflow:y=!1,alwaysVisible:b,shouldShow360Entrypoint:C=!1,on360EntrypointClick:T,on360EntrypointVisible:ee,onEditClick:E,editButtonAnalytics:D,shareFlowSource:O=ne.CHATGPT_SHARE_FLOW_SOURCE_IMAGE_PREVIEW_INLINE_ACTION})=>{"use no forget";let k=L(_.serverId$),A=ie(),M=ue(),N=ae(),F=fe({mimeType:a?.mime_type}),{isAnimated:I}=F,R=ze(a,k,g),re=j(),z=de(),B=f(),H=d(),U=l(),oe=ke()&&B&&!H&&!U,se=L(c),W=oe&&!se,ce=(0,X.use)(gt),le=a?.asset_pointer??e,pe=(0,X.useCallback)(()=>{D!=null&&K.conversationImageEditButtonTapped(D),E?.()},[D,E]),me=(0,X.useCallback)(()=>Ae(M,void 0,{title:m(o.getMaybeMessage(n(_.id),g))}),[M,_.id,g]),he=te(),ve=De(),ye=ve?.type===ge.Image&&ve.image.asset_pointer===e,[be,q]=(0,X.useState)(!1),Se=re?.hasPaidSubscription()??!1,Ce=!(H&&!B)&&!Se&&(r||i),we=b!==!1,Te=C&&T!=null,Ee=M.formatMessage($.enter360World),Oe=(0,X.useCallback)(async({shouldDownloadWatermark:e=!0}={})=>{if(!t)return null;let n=t,o=e&&i,s=e&&r&&a?.metadata!=null?a.metadata.watermarked_asset_pointer:void 0;if(s&&a)try{n=(await Re.fetch(A,{asset:{...a,asset_pointer:s},conversationId:k,downloadIntent:!0})).url,o=!0}catch{}else if(h&&a)try{n=(await Re.fetch(A,{asset:a,conversationId:k,downloadIntent:!0})).url,o=!1}catch{}return{downloadedWithWatermark:o,urlToDownload:n}},[h,a,r,t,i,A,k]),J=(0,X.useCallback)(async({shouldDownloadWatermark:e=!0}={})=>{let t=await Oe({shouldDownloadWatermark:e});t!=null&&(await Pe({url:t.urlToDownload,fileName:me(),gifSource:R}),K.download({analyticsContext:z,downloadedWithWatermark:t.downloadedWithWatermark}))},[z,me,R,Oe]),je=(0,X.useCallback)(()=>{if(w.logEvent(`chatgpt_image_watermark_download_upgrade_click`,void 0,{source:`overlay`}),!f()){P({fallbackScreenHint:`login`,skipLoginModal:!1});return}let t=a??(e==null?null:{asset_pointer:e,content_type:S.ImageAssetPointer,size_bytes:0,width:0,height:0});t!=null&&pt({asset:t,conversationId:k}),Le({navigate:N,checkoutOriginProvenance:{checkoutOriginProductExperience:Be.CHAT,checkoutOriginDeliverySurface:`web`},openModalLocation:Ct})},[a,e,N,k]),Me=M.formatMessage(I?F.downloadLabel:h?$.downloadFullSize:$.download),Ne=t?(0,Z.jsx)(x,{label:M.formatMessage(h?$.downloadTooltipFullSize:$.downloadTooltip),children:(0,Z.jsx)(Q,{icon:Ue,variant:`imageGenUpdates`,ariaLabel:Me,onClick:bt(()=>{J()})})}):null,Y=Ce&&v({openModalLocation:Ct}),Fe=t&&Y?(0,Z.jsxs)(xe,{side:`bottom`,sideOffset:10,size:`auto`,open:be,onOpenChange:q,contentClassName:`pointer-events-auto z-11 min-w-fit origin-top-end text-token-text-primary`,triggerButton:(0,Z.jsx)(Q,{icon:Ue,variant:`imageGenUpdates`,ariaLabel:Me,onClick:e=>{e.stopPropagation()}}),children:[(0,Z.jsx)(G.Item,{className:`py-2`,children:(0,Z.jsxs)(`button`,{type:`button`,onClick:e=>{e.preventDefault(),e.stopPropagation(),J(),q(!1)},className:`row text-token-text-primary flex items-center gap-2`,children:[(0,Z.jsx)(Ue,{}),(0,Z.jsx)(`span`,{className:`font-semibold`,children:(0,Z.jsx)(V,{...F.downloadLabel})})]})}),(0,Z.jsx)(G.Separator,{}),(0,Z.jsx)(G.Item,{className:`py-2`,children:(0,Z.jsxs)(`button`,{type:`button`,onClick:e=>{e.preventDefault(),e.stopPropagation(),je(),q(!1)},className:`row text-token-text-primary flex items-center gap-2`,children:[(0,Z.jsx)(Ue,{}),(0,Z.jsxs)(`div`,{className:`flex flex-col items-start`,children:[(0,Z.jsx)(`span`,{className:`font-semibold`,children:(0,Z.jsx)(V,{...dt.downloadWithoutLogo})}),(0,Z.jsx)(`span`,{className:`text-token-text-secondary`,children:(0,Z.jsx)(V,{...dt.upgradePlan})})]})]})})]}):null,Ie=Y?Fe:Ne,Ve=W||Ie!=null,He=E&&F.canEdit?(0,Z.jsx)(Q,{variant:`imageGenUpdates`,onClick:bt(pe),ariaLabel:M.formatMessage($.editImage),children:(0,Z.jsx)(V,{id:`imageGenActionOverlay.editButton`,defaultMessage:`Edit`})}):null;return(0,Z.jsx)(Z.Fragment,{children:he?!ye&&(0,Z.jsx)(vt,{rightAlign:!0,fullWidth:!0,children:(0,Z.jsx)(Q,{icon:_e,ariaLabel:M.formatMessage(F.expandLabel)})}):(0,Z.jsx)(Z.Fragment,{children:(0,Z.jsx)(yt,{canShowShareButton:W,bottomAlign:!0,rightAlign:!0,fullWidth:!0,alwaysVisible:we,onOverlayVisible:Te?ee:void 0,testId:`image-gen-overlay-actions`,children:(0,Z.jsxs)(`div`,{className:`flex w-full items-center justify-between`,children:[(0,Z.jsxs)(`div`,{className:`pointer-events-auto flex items-end gap-2`,"data-testid":`image-gen-overlay-left-actions`,children:[R&&!H&&!U&&(0,Z.jsx)(st,{source:R,inline:!0}),Te?(0,Z.jsx)(x,{label:Ee,children:(0,Z.jsx)(Q,{icon:Ke,variant:`imageGenUpdates`,ariaLabel:Ee,onClick:bt(T),children:(0,Z.jsx)(`span`,{"aria-hidden":!0,className:`ms-1.5 pe-0.5`,children:360})})}):null,H||U?He:(0,Z.jsx)(wt,{conversation:_,fallback:He,messageId:g}),y&&!Ve&&(0,Z.jsx)(ft,{isAnimated:I,onOpenChange:q,onDownload:()=>{J()},onDownloadWithoutWatermark:Y?je:void 0,showWithoutWatermarkLabel:!r&&!Ce,triggerClassName:`pointer-events-auto z-11 flex h-10 w-10 items-center justify-center rounded-xl bg-transparent hover:bg-token-icon-surface/10 focus:bg-token-icon-surface/10 focus-visible:bg-token-icon-surface/10`,iconClassName:`icon-lg fill-transparent text-white`,dropdownClassName:`pointer-events-auto z-11 min-w-fit origin-top-end text-token-text-primary`})]}),(0,Z.jsxs)(`div`,{className:`pointer-events-auto flex gap-2`,"data-testid":`image-gen-overlay-right-actions`,children:[W&&le!=null&&ce?.({conversation:_,assetPointer:le,imageGenMessageId:g,shareFlowSource:O}),(0,Z.jsx)(xt,{canShowShareButton:W,canPublishPromptShare:s,assetPointer:e,fullSizeImageAsset:a,conversation:_,messageId:g,shareSeriesImageCount:u,shareSeriesMessageSliceIds:p,fallback:Ie,shareFlowSource:O})]})]})})})})},$=B({download:{id:`imageGenActionOverlay.download`,defaultMessage:`Download this image`},downloadFullSize:{id:`imageGenActionOverlay.downloadFullSize`,defaultMessage:`Download full size image`},downloadTooltip:{id:`0EYire`,defaultMessage:`Download`},downloadTooltipFullSize:{id:`imageGenActionOverlay.downloadTooltipFullSize`,defaultMessage:`Download full size`},editImage:{id:`imageGenActionOverlay.editImage`,defaultMessage:`Edit image`},enter360World:{id:`imageGenActionOverlay.enter360World`,defaultMessage:`Enter 360 world`}})})),Dt,Ot,kt=e((()=>{Dt=`data:image/svg+xml;base64,PHN2ZwogIHdpZHRoPSIzNiIKICBoZWlnaHQ9IjM2IgogIHZpZXdCb3g9IjAgMCAzNiAzNiIKICBmaWxsPSJub25lIgogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKPgogIDxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF80NjY1XzIzMzApIj4KICAgIDxyZWN0IHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgZmlsbD0id2hpdGUiIC8+CiAgICA8cmVjdCB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIGZpbGw9IiMxRTFFMUUiIC8+CiAgICA8cmVjdCB4PSIxOCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiBmaWxsPSJibGFjayIgLz4KICAgIDxyZWN0IHg9IjE4IiB5PSIxOCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiBmaWxsPSIjMUUxRTFFIiAvPgogICAgPHJlY3QgeT0iMTgiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgZmlsbD0iYmxhY2siIC8+CiAgPC9nPgogIDxkZWZzPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwMF80NjY1XzIzMzAiPgogICAgICA8cmVjdCB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIGZpbGw9IndoaXRlIiAvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+Cjwvc3ZnPgo=`,Ot=`data:image/svg+xml;base64,PHN2ZwogIHdpZHRoPSIzNiIKICBoZWlnaHQ9IjM2IgogIHZpZXdCb3g9IjAgMCAzNiAzNiIKICBmaWxsPSJub25lIgogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKPgogIDxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF80NjY1XzIzMTkpIj4KICAgIDxyZWN0IHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgZmlsbD0id2hpdGUiIC8+CiAgICA8cmVjdCB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIGZpbGw9IiNFRkVGRjAiIC8+CiAgICA8cmVjdCB4PSIxOCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiBmaWxsPSJ3aGl0ZSIgLz4KICAgIDxyZWN0IHg9IjE4IiB5PSIxOCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiBmaWxsPSIjRUZFRkYwIiAvPgogICAgPHJlY3QgeT0iMTgiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgZmlsbD0id2hpdGUiIC8+CiAgPC9nPgogIDxkZWZzPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwMF80NjY1XzIzMTkiPgogICAgICA8cmVjdCB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIGZpbGw9IndoaXRlIiAvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+Cjwvc3ZnPgo=`}));export{Et as a,Tt as i,Ot as n,kt as r,Dt as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/c2825ab1-hh5nevd71cvdas11.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-t80q9ew944ej0mgk.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-ocicxxw6jegn4vux.js", "assets/30901919-r9pahacmzqudnt4f.js", "assets/c470f5ab-py8gip6x11wq9s88.js", "assets/0e5afe53-bfccq9og5d2mon04.js", "assets/conversation-small-ht8gwtl7.css", "assets/f5cccfb7-omfq28qsvhujhxcn.js", "assets/65f98121-e8xtq7cv6itsi26s.js", "assets/0f8b28f8-gbvlxctev5u2kjjt.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $J as n,
+    $i as r,
+    Da as i,
+    Dit as a,
+    GJ as o,
+    Int as s,
+    J1 as c,
+    JF as l,
+    Let as u,
+    Oa as d,
+    Oit as f,
+    Pnt as p,
+    QX as m,
+    Qnt as h,
+    Qy as g,
+    Rz as _,
+    Uet as v,
+    Wet as y,
+    Znt as b,
+    Zy as x,
+    _tt as S,
+    a2 as C,
+    art as w,
+    c7 as T,
+    eY as ee,
+    ea as te,
+    es as ne,
+    f0 as E,
+    k8 as D,
+    ktt as O,
+    l7 as k,
+    nZ as A,
+    o0 as j,
+    o2 as M,
+    os as N,
+    p0 as P,
+    prt as F,
+    q1 as I,
+    q5 as L,
+    qF as R,
+    zz as re
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    Bn as z,
+    Ln as B,
+    N as ie,
+    Nn as V,
+    Nt as ae,
+    Q as H,
+    Rn as U,
+    Vn as oe,
+    cn as se,
+    ln as W,
+    s as ce,
+    wn as le,
+    zn as ue
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $Hn as G,
+    AR as de,
+    Bfn as fe,
+    FL as pe,
+    JL as me,
+    M7 as he,
+    Nl as ge,
+    Ntt as K,
+    O7 as _e,
+    Pl as ve,
+    Ptt as ye,
+    Q8 as be,
+    QHn as xe,
+    Sdn as q,
+    Vfn as Se,
+    YC as Ce,
+    YL as we,
+    Z8 as Te,
+    a5 as Ee,
+    aWn as De,
+    eUn as Oe,
+    ew as ke,
+    f5 as J,
+    i5 as Ae,
+    iWn as je,
+    kR as Me,
+    nVn as Ne,
+    nrn as Y,
+    o5 as Pe,
+    qL as Fe,
+    s5 as Ie,
+    srn as Le,
+    tVn as Re,
+    u5 as ze,
+    xdn as Be
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+import {
+    Rm as Ve,
+    bS as He,
+    eb as Ue,
+    gb as We,
+    lp as Ge,
+    mb as Ke,
+    oC as qe,
+    sC as Je,
+    tb as Ye,
+    up as Xe,
+    yS as Ze,
+    zm as Qe
+} from "./30901919-r9pahacmzqudnt4f.js";
+import {
+    aa as $e,
+    ca as et,
+    da as tt,
+    fa as nt,
+    ha as rt,
+    oa as it,
+    pa as at
+} from "./8b34dbc2-egl8cz04n8nmlktg.js";
+import {
+    n as ot,
+    t as st
+} from "./429c9f5e-dkcl33w5iczkox8u.js";
+import {
+    n as ct,
+    r as lt
+} from "./1cfd0849-hp82r8pa7w8ppuka.js";
+import {
+    n as ut,
+    r as dt,
+    t as ft
+} from "./97fef780-oxsy19jvt22hwcyz.js";
+import {
+    n as pt,
+    t as mt
+} from "./ee0eeb85-orfgyajspai4e567.js";
+var ht, gt, _t = e((() => {
+    ht = t(oe()), gt = (0, ht.createContext)(null)
+}));
+
+function vt({
+    rightAlign: e = !1,
+    bottomAlign: t = !1,
+    fullWidth: n = !1,
+    justifyBetween: r = !1,
+    alwaysVisible: i = !1,
+    onOverlayVisible: a,
+    testId: o,
+    children: s
+}) {
+    "use no forget";
+    let c = i ? `opacity-100 pointer-events-none` : `opacity-0 pointer-events-none group-focus-within/imagegen-image:opacity-100 group-hover/imagegen-image:opacity-100 focus-within:opacity-100 group-focus-within/imagegen-image:pointer-events-auto group-hover/imagegen-image:pointer-events-auto focus-within:pointer-events-auto`,
+        l = (0, X.useCallback)(e => {
+            e.propertyName === `opacity` && a?.()
+        }, [a]);
+    return (0, X.useEffect)(() => {
+        i && a?.()
+    }, [i, a]), (0, Z.jsxs)(`div`, {
+        className: T(`pointer-events-none absolute z-2 overflow-hidden`, t ? `rounded-b-[inherit]` : `rounded-t-[inherit]`, e ? `end-0` : `start-0`, t ? `bottom-0` : `top-0`, n && `w-full`),
+        children: [(0, Z.jsx)(`div`, {
+            "data-testid": o,
+            onTransitionEnd: l,
+            className: T(t ? `bg-linear-to-b` : `bg-linear-to-t`, `from-transparent to-black/30`, `h-20 w-full transition-opacity duration-75 ease-out`, i ? `opacity-100` : `opacity-0 group-focus-within/imagegen-image:opacity-100 group-hover/imagegen-image:opacity-100 focus-within:opacity-100`)
+        }), (0, Z.jsx)(`div`, {
+            className: T(`absolute inset-0 flex`, c, `p-3`, t ? `items-end` : `items-start`, e ? `justify-end` : `justify-start`, r && `justify-between`),
+            children: s
+        })]
+    })
+}
+
+function yt({
+    canShowShareButton: e,
+    onOverlayVisible: t,
+    ...n
+}) {
+    "use no forget";
+    let r = (0, X.useRef)(!1),
+        i = de(),
+        a = (0, X.useCallback)(() => {
+            e && (r.current ||= (p.logEvent(`Share Post: Share Button Shown`, {
+                source: `image_gen_action_overlay`,
+                ...i
+            }), !0))
+        }, [i, e]),
+        o = (0, X.useCallback)(() => {
+            t?.(), a()
+        }, [a, t]);
+    return (0, Z.jsx)(vt, {
+        ...n,
+        onOverlayVisible: o
+    })
+}
+
+function bt(e) {
+    return t => {
+        t.stopPropagation(), e()
+    }
+}
+
+function xt({
+    canShowShareButton: e,
+    canPublishPromptShare: t,
+    assetPointer: n,
+    fullSizeImageAsset: r,
+    conversation: i,
+    messageId: a,
+    shareSeriesImageCount: o,
+    shareSeriesMessageSliceIds: s,
+    fallback: c = null,
+    shareFlowSource: l
+}) {
+    "use no forget";
+    let [u, d] = (0, X.useState)(!1), [f, m] = (0, X.useState)(null), [g, v] = (0, X.useState)(null), y = (0, X.useRef)(!1), b = ue(), x = r?.asset_pointer ?? n, S = fe({
+        mimeType: r?.mime_type
+    }), C = at({
+        canPublishPromptShare: t,
+        assetPointer: x,
+        conversation: i,
+        imageGenMessageId: a,
+        shareFlowSource: l
+    }), w = rt({
+        assetPointer: x,
+        conversation: i,
+        imageGenMessageId: a,
+        shareFlowSource: l
+    }), T = (0, X.useMemo)(() => Array.from(new Set((s ?? []).filter(Boolean))), [s]), ee = at({
+        conversation: i,
+        imageGenMessageIds: T,
+        shareFlowSource: l
+    }), te = rt({
+        conversation: i,
+        imageGenMessageIds: T,
+        shareFlowSource: l
+    }), ne = de(), E = (o ?? 0) > 1 && T.length > 0, D = L(() => e ? nt() : !1), O = L(() => e && t && Fe()), k = pe(), A = () => {
+        K.imageShared({
+            analyticsContext: ne,
+            source: `image_gen_action_overlay`
+        })
+    }, j = (e = `media_generation`) => {
+        p.logEventWithStatsig(`chatgpt_image_lightbox_share_current_image_selected`, `chatgpt_image_lightbox_share_current_image_selected`), p.logEventWithStatsig(`Share Post: Share Button Clicked`, `chatgpt_post_share_button_clicked`, {
+            source: `image_gen_action_overlay`,
+            attachment_type: e,
+            message_id: a
+        }), A()
+    }, M = () => {
+        p.logEventWithStatsig(`chatgpt_image_lightbox_share_all_images_selected`, `chatgpt_image_lightbox_share_all_images_selected`), p.logEventWithStatsig(`Share Post: Share Button Clicked`, `chatgpt_post_share_button_clicked`, {
+            source: `image_gen_action_overlay`,
+            attachment_type: `image_series_share`
+        }), A()
+    }, N = async (e, t, {
+        keepDropdownOpen: n = !1
+    } = {}) => {
+        y.current = !0, n || m(null), v(null), d(!0);
+        try {
+            let n = await t();
+            n ? (v(n), m(e), await n.autoCopyShareLink()) : m(null)
+        } finally {
+            d(!1), y.current = !1
+        }
+    }, P = () => {
+        v(null), m(null)
+    }, F = async e => {
+        m(null), v(null), d(!0);
+        try {
+            let t = await e();
+            if (!t) return;
+            await t.copyShareLinkWithStreamingClipboard({
+                shouldShowModerationBlockedToast: !0,
+                successToastVariant: `successNeutral`
+            }, {
+                omitSheetType: !0
+            })
+        } finally {
+            d(!1)
+        }
+    }, I = async (e, {
+        keepDropdownOpen: t = !1
+    } = {}) => {
+        if (e) {
+            await N(`mini-current`, w, {
+                keepDropdownOpen: t
+            }), j();
+            return
+        }
+        d(!0);
+        try {
+            await C()
+        } finally {
+            d(!1)
+        }
+        j()
+    }, R = async (e, {
+        keepDropdownOpen: t = !1
+    } = {}) => {
+        if (e) {
+            await N(`mini-series`, te, {
+                keepDropdownOpen: t
+            }), M();
+            return
+        }
+        d(!0);
+        try {
+            await ee()
+        } finally {
+            d(!1)
+        }
+        M()
+    }, re = async () => {
+        j(`prompt`), d(!0);
+        try {
+            await C({
+                shareType: Te.PromptShare
+            })
+        } finally {
+            d(!1)
+        }
+    };
+    if (!e) return c;
+    let z = u ? _ : He,
+        B = (0, Z.jsx)(Q, {
+            icon: z,
+            variant: `imageGenUpdates`,
+            disabled: u,
+            onClick: e => {
+                e.stopPropagation()
+            },
+            ariaLabel: b.formatMessage(S.shareLabel)
+        });
+    return E || O ? (0, Z.jsx)(xe, {
+        open: f != null,
+        side: f === "default" ? void 0 : `right`,
+        contentAlign: f === "default" ? void 0 : `end`,
+        sideOffset: 8,
+        size: `auto`,
+        contentClassName: f === "default" ? void 0 : k.contentClassName,
+        onOpenChange: e => {
+            if (!e) {
+                if (y.current) return;
+                P();
+                return
+            }
+            if (v(null), m(`default`), E) {
+                let e = p.logStructuredEvent(`ChatgptImageLightboxButtonTapped`, {
+                    button: `CHATGPT_IMAGE_LIGHTBOX_BUTTON_TYPE_SHARE`,
+                    legacyStatsigEventName: `chatgpt_web_image_library_lightbox_image_share_clicked`,
+                    selectionState: `CHATGPT_IMAGEGEN_SELECTION_STATE_PENDING_SELECTION`,
+                    imageSeriesCount: h(o)
+                });
+                p.logValueEventWithStatsig({
+                    segmentEventName: `chatgpt_web_image_library_lightbox_image_share_clicked`,
+                    statsigEventName: `chatgpt_web_image_library_lightbox_image_share_clicked`,
+                    data: {
+                        selection_state: `pending_selection`,
+                        image_series_count: o
+                    },
+                    eventId: e
+                })
+            }
+        },
+        triggerButton: B,
+        children: f === `mini-current` && g ? (0, Z.jsx)(it, {
+            imageShareScope: `single_image`,
+            isBusinessWorkspace: k.isBusinessWorkspace,
+            isResolvingShareLink: u,
+            onClose: P,
+            shareActions: g
+        }) : f === `mini-series` && g ? (0, Z.jsx)(it, {
+            imageShareScope: `image_series`,
+            isBusinessWorkspace: k.isBusinessWorkspace,
+            isResolvingShareLink: u,
+            onClose: P,
+            shareActions: g
+        }) : (0, Z.jsxs)(Z.Fragment, {
+            children: [(0, Z.jsx)(G.Item, {
+                icon: qe,
+                onSelect: e => {
+                    if (t && we()) {
+                        I(!1);
+                        return
+                    }
+                    if (D) {
+                        F(w).finally(j);
+                        return
+                    }
+                    let n = tt();
+                    n && e.preventDefault(), I(n, {
+                        keepDropdownOpen: n
+                    })
+                },
+                children: b.formatMessage(S.shareSelectionLabel)
+            }), E && (0, Z.jsx)(G.Item, {
+                icon: Ve,
+                onSelect: e => {
+                    if (D) {
+                        F(te).finally(M);
+                        return
+                    }
+                    let t = tt();
+                    t && e.preventDefault(), R(t, {
+                        keepDropdownOpen: t
+                    })
+                },
+                children: b.formatMessage(lt.imageSeries, {
+                    imageCount: o
+                })
+            }), O && (0, Z.jsx)(G.Item, {
+                icon: Ge,
+                onSelect: () => void re(),
+                children: b.formatMessage(lt.promptTemplate)
+            })]
+        })
+    }) : f === `mini-current` && g ? (0, Z.jsx)($e, {
+        imageShareScope: `single_image`,
+        isResolvingShareLink: u,
+        triggerButton: B,
+        onClose: P,
+        shareActions: g
+    }) : (0, Z.jsx)(Q, {
+        icon: z,
+        variant: `imageGenUpdates`,
+        disabled: u,
+        onClick: bt(async () => {
+            if (t && we()) {
+                await I(!1);
+                return
+            }
+            if (D) {
+                await F(w), A();
+                return
+            }
+            if (tt()) {
+                await N(`mini-current`, w), A();
+                return
+            }
+            d(!0);
+            try {
+                await C()
+            } finally {
+                d(!1)
+            }
+            K.imageShared({
+                analyticsContext: ne,
+                source: `image_gen_action_overlay`
+            })
+        }),
+        ariaLabel: b.formatMessage(S.shareLabel)
+    })
+}
+var St, X, Z, Ct, wt, Q, Tt, $, Et = e((() => {
+        St = le(), ee(), A(), ot(), J(), Se(), q(), O(), Oe(), Xe(), Ye(), We(), Je(), Qe(), Ze(), g(), r(), je(), ve(), he(), Ce(), u(), Y(), et(), me(), N(), be(), R(), D(), re(), I(), E(), ct(), a(), s(), i(), Ne(), F(), b(), M(), ce(), k(), X = t(oe()), U(), H(), Me(), ye(), _t(), Ie(), Ee(), ut(), mt(), Z = z(), W(), Ct = y.ImageGenWatermarkOverflowMenu, wt = C(() => se(() => import(`./c2825ab1-hh5nevd71cvdas11.js`).then(e => e.ImageGenReferenceActions), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])), {
+            loading: ({
+                fallback: e
+            }) => e,
+            fallback: ({
+                fallback: e
+            }) => e
+        }), Q = (0, X.forwardRef)(function(e, t) {
+            "use forget";
+            let n = (0, St.c)(28),
+                r, i, a, o, s, c, l, u, d;
+            n[0] === e ? (r = n[1], i = n[2], a = n[3], o = n[4], s = n[5], c = n[6], l = n[7], u = n[8], d = n[9]) : ({
+                icon: r,
+                children: o,
+                className: s,
+                disabled: c,
+                onClick: l,
+                ariaLabel: i,
+                selected: u,
+                variant: d,
+                ...a
+            } = e, n[0] = e, n[1] = r, n[2] = i, n[3] = a, n[4] = o, n[5] = s, n[6] = c, n[7] = l, n[8] = u, n[9] = d);
+            let f = u !== void 0 && u,
+                p = (d === void 0 ? `default` : d) === `imageGenUpdates`,
+                m = o == null,
+                h = p && m,
+                g = h && `group`,
+                _ = p ? m ? `h-10 w-10` : `h-10 gap-0 rounded-full bg-black/15 px-3 backdrop-blur-md hover:bg-black/30 focus:bg-black/30` : `gap-1 rounded-xl hover:bg-white/15 hover:backdrop-blur-md focus:bg-white/15 focus:backdrop-blur-md`,
+                v = !p && (m ? `h-10 w-10` : `h-10 px-2`),
+                y;
+            n[10] !== s || n[11] !== g || n[12] !== _ || n[13] !== v ? (y = T(`pointer-events-auto z-11 flex items-center justify-center text-sm font-medium text-white`, g, _, v, s), n[10] = s, n[11] = g, n[12] = _, n[13] = v, n[14] = y) : y = n[14];
+            let b;
+            n[15] !== r || n[16] !== o || n[17] !== h ? (b = h ? (0, Z.jsx)(`span`, {
+                className: `flex h-9 w-9 items-center justify-center rounded-full bg-black/15 backdrop-blur-md group-hover:bg-black/30 group-focus:bg-black/30`,
+                children: r != null && (0, Z.jsx)(r, {
+                    style: {
+                        filter: `drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15))`
+                    },
+                    className: `icon fill-current`
+                })
+            }) : (0, Z.jsxs)(Z.Fragment, {
+                children: [r != null && (0, Z.jsx)(r, {
+                    style: {
+                        filter: `drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.15))`
+                    },
+                    className: `icon fill-current`
+                }), o]
+            }), n[15] = r, n[16] = o, n[17] = h, n[18] = b) : b = n[18];
+            let x;
+            return n[19] !== i || n[20] !== a || n[21] !== c || n[22] !== l || n[23] !== t || n[24] !== f || n[25] !== y || n[26] !== b ? (x = (0, Z.jsx)(`button`, {
+                ref: t,
+                type: `button`,
+                "aria-pressed": f,
+                className: y,
+                onClick: l,
+                disabled: c,
+                "aria-label": i,
+                ...a,
+                children: b
+            }), n[19] = i, n[20] = a, n[21] = c, n[22] = l, n[23] = t, n[24] = f, n[25] = y, n[26] = b, n[27] = x) : x = n[27], x
+        }), Tt = ({
+            imageAssetPointer: e,
+            imageUrl: t,
+            hasWatermarkedDownload: r = !1,
+            isRenderedImageWatermarked: i = !1,
+            fullSizeImageAsset: a,
+            canPublishPromptShare: s = !0,
+            shareSeriesImageCount: u,
+            shareSeriesMessageSliceIds: p,
+            downloadFullImage: h = !1,
+            messageId: g,
+            conversation: _,
+            shouldShowOverflow: y = !1,
+            alwaysVisible: b,
+            shouldShow360Entrypoint: C = !1,
+            on360EntrypointClick: T,
+            on360EntrypointVisible: ee,
+            onEditClick: E,
+            editButtonAnalytics: D,
+            shareFlowSource: O = ne.CHATGPT_SHARE_FLOW_SOURCE_IMAGE_PREVIEW_INLINE_ACTION
+        }) => {
+            "use no forget";
+            let k = L(_.serverId$),
+                A = ie(),
+                M = ue(),
+                N = ae(),
+                F = fe({
+                    mimeType: a?.mime_type
+                }),
+                {
+                    isAnimated: I
+                } = F,
+                R = ze(a, k, g),
+                re = j(),
+                z = de(),
+                B = f(),
+                H = d(),
+                U = l(),
+                oe = ke() && B && !H && !U,
+                se = L(c),
+                W = oe && !se,
+                ce = (0, X.use)(gt),
+                le = a?.asset_pointer ?? e,
+                pe = (0, X.useCallback)(() => {
+                    D != null && K.conversationImageEditButtonTapped(D), E?.()
+                }, [D, E]),
+                me = (0, X.useCallback)(() => Ae(M, void 0, {
+                    title: m(o.getMaybeMessage(n(_.id), g))
+                }), [M, _.id, g]),
+                he = te(),
+                ve = De(),
+                ye = ve?.type === ge.Image && ve.image.asset_pointer === e,
+                [be, q] = (0, X.useState)(!1),
+                Se = re?.hasPaidSubscription() ?? !1,
+                Ce = !(H && !B) && !Se && (r || i),
+                we = b !== !1,
+                Te = C && T != null,
+                Ee = M.formatMessage($.enter360World),
+                Oe = (0, X.useCallback)(async ({
+                    shouldDownloadWatermark: e = !0
+                } = {}) => {
+                    if (!t) return null;
+                    let n = t,
+                        o = e && i,
+                        s = e && r && a?.metadata != null ? a.metadata.watermarked_asset_pointer : void 0;
+                    if (s && a) try {
+                        n = (await Re.fetch(A, {
+                            asset: {
+                                ...a,
+                                asset_pointer: s
+                            },
+                            conversationId: k,
+                            downloadIntent: !0
+                        })).url, o = !0
+                    } catch {} else if (h && a) try {
+                        n = (await Re.fetch(A, {
+                            asset: a,
+                            conversationId: k,
+                            downloadIntent: !0
+                        })).url, o = !1
+                    } catch {}
+                    return {
+                        downloadedWithWatermark: o,
+                        urlToDownload: n
+                    }
+                }, [h, a, r, t, i, A, k]),
+                J = (0, X.useCallback)(async ({
+                    shouldDownloadWatermark: e = !0
+                } = {}) => {
+                    let t = await Oe({
+                        shouldDownloadWatermark: e
+                    });
+                    t != null && (await Pe({
+                        url: t.urlToDownload,
+                        fileName: me(),
+                        gifSource: R
+                    }), K.download({
+                        analyticsContext: z,
+                        downloadedWithWatermark: t.downloadedWithWatermark
+                    }))
+                }, [z, me, R, Oe]),
+                je = (0, X.useCallback)(() => {
+                    if (w.logEvent(`chatgpt_image_watermark_download_upgrade_click`, void 0, {
+                            source: `overlay`
+                        }), !f()) {
+                        P({
+                            fallbackScreenHint: `login`,
+                            skipLoginModal: !1
+                        });
+                        return
+                    }
+                    let t = a ?? (e == null ? null : {
+                        asset_pointer: e,
+                        content_type: S.ImageAssetPointer,
+                        size_bytes: 0,
+                        width: 0,
+                        height: 0
+                    });
+                    t != null && pt({
+                        asset: t,
+                        conversationId: k
+                    }), Le({
+                        navigate: N,
+                        checkoutOriginProvenance: {
+                            checkoutOriginProductExperience: Be.CHAT,
+                            checkoutOriginDeliverySurface: `web`
+                        },
+                        openModalLocation: Ct
+                    })
+                }, [a, e, N, k]),
+                Me = M.formatMessage(I ? F.downloadLabel : h ? $.downloadFullSize : $.download),
+                Ne = t ? (0, Z.jsx)(x, {
+                    label: M.formatMessage(h ? $.downloadTooltipFullSize : $.downloadTooltip),
+                    children: (0, Z.jsx)(Q, {
+                        icon: Ue,
+                        variant: `imageGenUpdates`,
+                        ariaLabel: Me,
+                        onClick: bt(() => {
+                            J()
+                        })
+                    })
+                }) : null,
+                Y = Ce && v({
+                    openModalLocation: Ct
+                }),
+                Fe = t && Y ? (0, Z.jsxs)(xe, {
+                    side: `bottom`,
+                    sideOffset: 10,
+                    size: `auto`,
+                    open: be,
+                    onOpenChange: q,
+                    contentClassName: `pointer-events-auto z-11 min-w-fit origin-top-end text-token-text-primary`,
+                    triggerButton: (0, Z.jsx)(Q, {
+                        icon: Ue,
+                        variant: `imageGenUpdates`,
+                        ariaLabel: Me,
+                        onClick: e => {
+                            e.stopPropagation()
+                        }
+                    }),
+                    children: [(0, Z.jsx)(G.Item, {
+                        className: `py-2`,
+                        children: (0, Z.jsxs)(`button`, {
+                            type: `button`,
+                            onClick: e => {
+                                e.preventDefault(), e.stopPropagation(), J(), q(!1)
+                            },
+                            className: `row text-token-text-primary flex items-center gap-2`,
+                            children: [(0, Z.jsx)(Ue, {}), (0, Z.jsx)(`span`, {
+                                className: `font-semibold`,
+                                children: (0, Z.jsx)(V, {
+                                    ...F.downloadLabel
+                                })
+                            })]
+                        })
+                    }), (0, Z.jsx)(G.Separator, {}), (0, Z.jsx)(G.Item, {
+                        className: `py-2`,
+                        children: (0, Z.jsxs)(`button`, {
+                            type: `button`,
+                            onClick: e => {
+                                e.preventDefault(), e.stopPropagation(), je(), q(!1)
+                            },
+                            className: `row text-token-text-primary flex items-center gap-2`,
+                            children: [(0, Z.jsx)(Ue, {}), (0, Z.jsxs)(`div`, {
+                                className: `flex flex-col items-start`,
+                                children: [(0, Z.jsx)(`span`, {
+                                    className: `font-semibold`,
+                                    children: (0, Z.jsx)(V, {
+                                        ...dt.downloadWithoutLogo
+                                    })
+                                }), (0, Z.jsx)(`span`, {
+                                    className: `text-token-text-secondary`,
+                                    children: (0, Z.jsx)(V, {
+                                        ...dt.upgradePlan
+                                    })
+                                })]
+                            })]
+                        })
+                    })]
+                }) : null,
+                Ie = Y ? Fe : Ne,
+                Ve = W || Ie != null,
+                He = E && F.canEdit ? (0, Z.jsx)(Q, {
+                    variant: `imageGenUpdates`,
+                    onClick: bt(pe),
+                    ariaLabel: M.formatMessage($.editImage),
+                    children: (0, Z.jsx)(V, {
+                        id: `imageGenActionOverlay.editButton`,
+                        defaultMessage: `Edit`
+                    })
+                }) : null;
+            return (0, Z.jsx)(Z.Fragment, {
+                children: he ? !ye && (0, Z.jsx)(vt, {
+                    rightAlign: !0,
+                    fullWidth: !0,
+                    children: (0, Z.jsx)(Q, {
+                        icon: _e,
+                        ariaLabel: M.formatMessage(F.expandLabel)
+                    })
+                }) : (0, Z.jsx)(Z.Fragment, {
+                    children: (0, Z.jsx)(yt, {
+                        canShowShareButton: W,
+                        bottomAlign: !0,
+                        rightAlign: !0,
+                        fullWidth: !0,
+                        alwaysVisible: we,
+                        onOverlayVisible: Te ? ee : void 0,
+                        testId: `image-gen-overlay-actions`,
+                        children: (0, Z.jsxs)(`div`, {
+                            className: `flex w-full items-center justify-between`,
+                            children: [(0, Z.jsxs)(`div`, {
+                                className: `pointer-events-auto flex items-end gap-2`,
+                                "data-testid": `image-gen-overlay-left-actions`,
+                                children: [R && !H && !U && (0, Z.jsx)(st, {
+                                    source: R,
+                                    inline: !0
+                                }), Te ? (0, Z.jsx)(x, {
+                                    label: Ee,
+                                    children: (0, Z.jsx)(Q, {
+                                        icon: Ke,
+                                        variant: `imageGenUpdates`,
+                                        ariaLabel: Ee,
+                                        onClick: bt(T),
+                                        children: (0, Z.jsx)(`span`, {
+                                            "aria-hidden": !0,
+                                            className: `ms-1.5 pe-0.5`,
+                                            children: 360
+                                        })
+                                    })
+                                }) : null, H || U ? He : (0, Z.jsx)(wt, {
+                                    conversation: _,
+                                    fallback: He,
+                                    messageId: g
+                                }), y && !Ve && (0, Z.jsx)(ft, {
+                                    isAnimated: I,
+                                    onOpenChange: q,
+                                    onDownload: () => {
+                                        J()
+                                    },
+                                    onDownloadWithoutWatermark: Y ? je : void 0,
+                                    showWithoutWatermarkLabel: !r && !Ce,
+                                    triggerClassName: `pointer-events-auto z-11 flex h-10 w-10 items-center justify-center rounded-xl bg-transparent hover:bg-token-icon-surface/10 focus:bg-token-icon-surface/10 focus-visible:bg-token-icon-surface/10`,
+                                    iconClassName: `icon-lg fill-transparent text-white`,
+                                    dropdownClassName: `pointer-events-auto z-11 min-w-fit origin-top-end text-token-text-primary`
+                                })]
+                            }), (0, Z.jsxs)(`div`, {
+                                className: `pointer-events-auto flex gap-2`,
+                                "data-testid": `image-gen-overlay-right-actions`,
+                                children: [W && le != null && ce?.({
+                                    conversation: _,
+                                    assetPointer: le,
+                                    imageGenMessageId: g,
+                                    shareFlowSource: O
+                                }), (0, Z.jsx)(xt, {
+                                    canShowShareButton: W,
+                                    canPublishPromptShare: s,
+                                    assetPointer: e,
+                                    fullSizeImageAsset: a,
+                                    conversation: _,
+                                    messageId: g,
+                                    shareSeriesImageCount: u,
+                                    shareSeriesMessageSliceIds: p,
+                                    fallback: Ie,
+                                    shareFlowSource: O
+                                })]
+                            })]
+                        })
+                    })
+                })
+            })
+        }, $ = B({
+            download: {
+                id: `imageGenActionOverlay.download`,
+                defaultMessage: `Download this image`
+            },
+            downloadFullSize: {
+                id: `imageGenActionOverlay.downloadFullSize`,
+                defaultMessage: `Download full size image`
+            },
+            downloadTooltip: {
+                id: `0EYire`,
+                defaultMessage: `Download`
+            },
+            downloadTooltipFullSize: {
+                id: `imageGenActionOverlay.downloadTooltipFullSize`,
+                defaultMessage: `Download full size`
+            },
+            editImage: {
+                id: `imageGenActionOverlay.editImage`,
+                defaultMessage: `Edit image`
+            },
+            enter360World: {
+                id: `imageGenActionOverlay.enter360World`,
+                defaultMessage: `Enter 360 world`
+            }
+        })
+    })),
+    Dt, Ot, kt = e((() => {
+        Dt = `data:image/svg+xml;base64,PHN2ZwogIHdpZHRoPSIzNiIKICBoZWlnaHQ9IjM2IgogIHZpZXdCb3g9IjAgMCAzNiAzNiIKICBmaWxsPSJub25lIgogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKPgogIDxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF80NjY1XzIzMzApIj4KICAgIDxyZWN0IHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgZmlsbD0id2hpdGUiIC8+CiAgICA8cmVjdCB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIGZpbGw9IiMxRTFFMUUiIC8+CiAgICA8cmVjdCB4PSIxOCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiBmaWxsPSJibGFjayIgLz4KICAgIDxyZWN0IHg9IjE4IiB5PSIxOCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiBmaWxsPSIjMUUxRTFFIiAvPgogICAgPHJlY3QgeT0iMTgiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgZmlsbD0iYmxhY2siIC8+CiAgPC9nPgogIDxkZWZzPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwMF80NjY1XzIzMzAiPgogICAgICA8cmVjdCB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIGZpbGw9IndoaXRlIiAvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+Cjwvc3ZnPgo=`, Ot = `data:image/svg+xml;base64,PHN2ZwogIHdpZHRoPSIzNiIKICBoZWlnaHQ9IjM2IgogIHZpZXdCb3g9IjAgMCAzNiAzNiIKICBmaWxsPSJub25lIgogIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKPgogIDxnIGNsaXAtcGF0aD0idXJsKCNjbGlwMF80NjY1XzIzMTkpIj4KICAgIDxyZWN0IHdpZHRoPSIzNiIgaGVpZ2h0PSIzNiIgZmlsbD0id2hpdGUiIC8+CiAgICA8cmVjdCB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIGZpbGw9IiNFRkVGRjAiIC8+CiAgICA8cmVjdCB4PSIxOCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiBmaWxsPSJ3aGl0ZSIgLz4KICAgIDxyZWN0IHg9IjE4IiB5PSIxOCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiBmaWxsPSIjRUZFRkYwIiAvPgogICAgPHJlY3QgeT0iMTgiIHdpZHRoPSIxOCIgaGVpZ2h0PSIxOCIgZmlsbD0id2hpdGUiIC8+CiAgPC9nPgogIDxkZWZzPgogICAgPGNsaXBQYXRoIGlkPSJjbGlwMF80NjY1XzIzMTkiPgogICAgICA8cmVjdCB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIGZpbGw9IndoaXRlIiAvPgogICAgPC9jbGlwUGF0aD4KICA8L2RlZnM+Cjwvc3ZnPgo=`
+    }));
+export {
+    Et as a, Tt as i, Ot as n, kt as r, Dt as t
+};
 //# sourceMappingURL=ecab41d6-da2jb3kdcqr49oen.js.map

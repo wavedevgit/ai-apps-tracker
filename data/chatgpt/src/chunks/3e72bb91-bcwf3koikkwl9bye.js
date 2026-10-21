@@ -1,3 +1,1860 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/b0ac1aff-ir0sazghf28a0pjr.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-t80q9ew944ej0mgk.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/0f28d127-nklp1mbg6pt8usv8.js","assets/conversation-small-ocicxxw6jegn4vux.js","assets/30901919-r9pahacmzqudnt4f.js","assets/c470f5ab-py8gip6x11wq9s88.js","assets/0e5afe53-bfccq9og5d2mon04.js","assets/conversation-small-ht8gwtl7.css"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,$w as r,AE as i,CR as a,Dit as o,Fz as s,I8 as c,Int as l,Iz as u,J7 as d,Jw as f,Kw as p,Nw as m,Oit as h,Pnt as g,Pw as _,Q7 as v,Qy as y,R8 as b,SK as x,TR as S,U1 as C,Xw as w,ZG as T,Zot as E,Zw as D,Zy as O,a0 as k,a2 as A,art as j,c2 as M,c7 as N,d2 as P,eE as F,eK as I,gst as L,hl as R,hst as ee,ia as z,it as B,k8 as V,kE as H,l7 as U,ml as W,nt as te,o0 as ne,o2 as re,ot as ie,prt as ae,q1 as G,q5 as oe,ra as se,rq as ce,srt as le,tT as ue,tt as de,uq as fe,urt as pe,wh as me,xK as he,xh as ge}from"./4813494d-t80q9ew944ej0mgk.js";import{At as _e,Bn as ve,Ln as ye,Nn as K,Nt as be,O as xe,Q as Se,Rn as Ce,Vn as we,cn as Te,ct as Ee,it as De,ln as Oe,s as ke,wn as Ae,zn as je}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$Hn as Me,A8t as Ne,AJ as Pe,Bun as Fe,F7 as Ie,FNn as Le,G3t as Re,Gst as ze,H3t as Be,H4t as Ve,I7 as He,I8t as Ue,IMt as We,Jln as Ge,L4t as Ke,LMt as qe,Mjt as Je,Mun as Ye,Njt as Xe,P8t as Ze,PCn as Qe,PNn as $e,QHn as et,RCn as tt,U3t as nt,Ust as rt,V4t as it,Vun as at,W3t as ot,WMt as st,XMt as ct,_Wn as lt,aKn as ut,eUn as dt,fWn as ft,jJ as pt,lkt as mt,o2t as ht,pWn as gt,qMt as _t,s2t as vt,sKn as yt,ukt as bt,yWn as xt,z4t as St}from"./conversation-small-ocicxxw6jegn4vux.js";import{$f as Ct,$x as wt,Kb as Tt,Kv as Et,Qf as Dt,Qx as Ot,Zf as kt,ep as At,ex as jt,hv as Mt,ip as Nt,mv as Pt,np as Ft,qb as It,qv as Lt,rp as Rt,tp as zt,tx as Bt}from"./30901919-r9pahacmzqudnt4f.js";import{AS as Vt,RC as Ht,ax as Ut,cC as Wt,ex as Gt,fx as Kt,kS as qt,tx as Jt,ux as Yt}from"./c2675c8c-p3x4d0bnf7e77o1n.js";import{$u as Xt,Ch as Zt,Oh as Qt,Sh as $t,bu as en,nd as tn,wh as nn,xh as rn,xu as an}from"./8b34dbc2-egl8cz04n8nmlktg.js";import{Ht as on,Vt as sn}from"./c470f5ab-py8gip6x11wq9s88.js";import{a as cn,i as ln,n as un}from"./5f4d7fa0-ozobd91aufocy1xp.js";import{n as dn,t as fn}from"./673c0d9b-kkdfn13ai6mrj3m8.js";import{i as pn,l as mn,o as hn,u as gn}from"./e19f3910-b2tehuk0f6f3y30c.js";import{d as _n,o as vn}from"./e9df0b0e-guis70e509etk8dc.js";import{r as yn,t as bn}from"./f23f926c-on8y7f8xm2uysfwj.js";import{n as xn,t as Sn}from"./ab4d12c6-bl7w245obqzi1h5v.js";import{n as Cn,t as wn}from"./dd81d43b-eoew3j4qpr9hxml0.js";import{n as Tn,t as En}from"./19189336-k2phecsrw2z9845i.js";import{n as Dn,o as On,s as kn,t as An}from"./a0561fd6-o0sv55s92vawd582.js";import{n as jn,r as Mn}from"./333fd2ad-b9canc46kwucs6bp.js";import{i as Nn,t as Pn}from"./fab52ad7-fintq2t5ygluaa1w.js";import{r as Fn,t as In}from"./d848de1a-in64ipnw8c2z9go3.js";import{i as Ln,r as Rn}from"./ab92372e-h3j4qii1au9y3ur0.js";function zn(){"use forget";let e=(0,Gn.c)(39),t=je(),r=at(Wn),i=at(Un),a=at(Hn),o=at(Vn),{connectorId:s}=ln(),{eligible:c,isLoading:l}=ct(),u;e[0]===o?u=e[1]:(u=!!o&&!o.startsWith(`gitlab-`),e[0]=o,e[1]=u);let d=u,f=o??``,p;e[2]!==s||e[3]!==f?(p=[`wham`,`repository`,f,s],e[2]=s,e[3]=f,e[4]=p):p=e[4];let m;e[5]!==s||e[6]!==o?(m=()=>W.getRepository(o??``,s),e[5]=s,e[6]=o,e[7]=m):m=e[7];let h;e[8]!==d||e[9]!==p||e[10]!==m?(h={queryKey:p,enabled:d,queryFn:m,staleTime:3e5},e[8]=d,e[9]=p,e[10]=m,e[11]=h):h=e[11];let{data:g}=xe(h);if(!r||!i||l||!c)return null;let _=`/codex/cloud/settings/environment/${r}/edit`,v;e[12]!==a||e[13]!==c?(v=()=>{a(),c&&B(st)},e[12]=a,e[13]=c,e[14]=v):v=e[14];let y=v,b;e[15]!==a||e[16]!==c?(b=()=>{c&&B(st),a()},e[15]=a,e[16]=c,e[17]=b):b=e[17];let x=b,S;e[18]===Symbol.for(`react.memo_cache_sentinel`)?(S=(0,q.jsx)(`div`,{className:`rounded-full p-1`,children:(0,q.jsx)(Rt,{className:`text-token-text-primary size-4`})}),e[18]=S):S=e[18];let C;e[19]===Symbol.for(`react.memo_cache_sentinel`)?(C=(0,q.jsx)(`div`,{className:`flex-1 text-sm`,children:(0,q.jsx)(`p`,{className:`text-token-text-primary font-medium`,children:(0,q.jsx)(K,{id:`wham.envlessEnvironmentPopover.title`,defaultMessage:`Environment created`})})}),e[19]=C):C=e[19];let w;e[20]===t?w=e[21]:(w=t.formatMessage({id:`wham.envlessEnvironmentPopover.dismiss`,defaultMessage:`Dismiss environment onboarding popover`}),e[20]=t,e[21]=w);let T;e[22]!==y||e[23]!==w?(T=(0,q.jsxs)(`div`,{className:`flex items-center gap-3`,children:[S,C,(0,q.jsx)(n,{size:`small`,color:`ghost`,icon:Pt,"aria-label":w,onClick:y})]}),e[22]=y,e[23]=w,e[24]=T):T=e[24];let E;e[25]===g?E=e[26]:(E=(0,q.jsx)(`p`,{children:g?.name?(0,q.jsx)(K,{id:`wham.envlessEnvironmentPopover.bodyRest1`,defaultMessage:`Codex has created a default environment for your repo: <b>{repoName}</b>.`,values:{b:Bn,repoName:g.name}}):(0,q.jsx)(K,{id:`wham.envlessEnvironmentPopover.bodyRest1NoRepo`,defaultMessage:`To get the most out of Codex, add the packages and tools your project depends on.`})}),e[25]=g,e[26]=E);let D;e[27]===Symbol.for(`react.memo_cache_sentinel`)?(D=(0,q.jsx)(`p`,{children:(0,q.jsx)(K,{id:`wham.envlessEnvironmentPopover.bodyRest2`,defaultMessage:`To enable full testing and framework support, customize it with the languages and tools you use.`})}),e[27]=D):D=e[27];let O;e[28]===E?O=e[29]:(O=(0,q.jsx)(`p`,{className:`text-token-text-primary pt-2 text-sm`,children:(0,q.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[E,D]})}),e[28]=E,e[29]=O);let k,A;e[30]===Symbol.for(`react.memo_cache_sentinel`)?(k=(0,q.jsx)(K,{id:`wham.envlessEnvironmentPopover.editLink`,defaultMessage:`Edit environment`}),A=(0,q.jsx)(Et,{className:`size-3.5`}),e[30]=k,e[31]=A):(k=e[30],A=e[31]);let j;e[32]!==_||e[33]!==x?(j=(0,q.jsx)(`div`,{className:`flex w-full justify-end`,children:(0,q.jsxs)(De,{to:_,className:`text-token-text-accent hover:text-token-text-accent/80 mt-3 inline-flex items-center gap-1 font-medium underline`,onClick:x,children:[k,A]})}),e[32]=_,e[33]=x,e[34]=j):j=e[34];let M;return e[35]!==T||e[36]!==O||e[37]!==j?(M=(0,q.jsx)(`div`,{className:`pointer-events-none fixed end-4 bottom-4 z-50 flex justify-end`,children:(0,q.jsxs)(`div`,{className:`border-token-border-default bg-token-bg-primary dark:bg-token-bg-tertiary pointer-events-auto w-80 max-w-full rounded-2xl border p-4 shadow-[0px_16px_48px_rgba(0,0,0,0.16)]`,children:[T,O,j]})}),e[35]=T,e[36]=O,e[37]=j,e[38]=M):M=e[38],M}function Bn(e){return(0,q.jsx)(`b`,{children:e})}function Vn(e){return e.selectedRepositoryId}function Hn(e){return e.dismissEnvironmentOnboardingPopover}function Un(e){return e.showEnvironmentOnboardingPopover}function Wn(e){return e.autoCreatedEnvironmentId}var Gn,q,Kn=e((()=>{Gn=Ae(),F(),Lt(),Nt(),Mt(),te(),_t(),un(),R(),Fe(),ke(),Ce(),Se(),q=ve()}));function qn({connectorError:e,isConnected:t,isGithubDisabledByAdmin:n,isLoading:r}){return r?`loading`:e?`error`:n?`disabled`:t?`connected`:`disconnected`}function Jn({githubAccessStatus:e,hasAdminAccess:t=!1}){if(e===`loading`)return!1;if(t===!0)return!0;switch(e){case`connected`:case`error`:return!0;case`disabled`:case`disconnected`:return!1}}function Yn(e){"use forget";let t=(0,Xn.c)(18),n;t[0]===e?n=t[1]:(n=e===void 0?{}:e,t[0]=e,t[1]=n);let{redirectAfter:r}=n,i=r===void 0?`/codex/cloud/security`:r,a;t[2]===i?a=t[3]:(a={redirectAfter:i},t[2]=i,t[3]=a);let{error:o,isConnected:s,isLoading:c,openGithubModal:l,platformConnector:u,refetch:d}=ln(a),f=u?.status===`DISABLED_BY_ADMIN`,p;t[4]!==o||t[5]!==s||t[6]!==f||t[7]!==c?(p=qn({connectorError:o,isConnected:s,isGithubDisabledByAdmin:f,isLoading:c}),t[4]=o,t[5]=s,t[6]=f,t[7]=c,t[8]=p):p=t[8];let m=p,h;return t[9]!==o||t[10]!==s||t[11]!==f||t[12]!==c||t[13]!==l||t[14]!==u||t[15]!==d||t[16]!==m?(h={connectorError:o,isConnected:s,isGithubDisabledByAdmin:f,isLoading:c,openGithubModal:l,platformConnector:u,refetch:d,status:m},t[9]=o,t[10]=s,t[11]=f,t[12]=c,t[13]=l,t[14]=u,t[15]=d,t[16]=m,t[17]=h):h=t[17],h}var Xn,Zn=e((()=>{Xn=Ae(),un()}));function Qn(e){return e===-1?null:e}function $n(){"use forget";let e=(0,rr.c)(27),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=C()?.getWorkspaceId(),e[0]=t):t=e[0];let n=_n(t),r,i,a,o,s,c,l,u,d,f;if(e[1]!==n.hasLoadedAllPages||e[2]!==n.quotaUsedCount||e[3]!==n.scanMap){let t=pe(`3689744552`);d=Qn(t.get(`scans_count`,ir.scans_count)),c=t.get(`lookback_days`,ir.lookback_days),i=Qn(c);let p=t.get(`lookback_days_options`,ir.lookback_days_options).map(nr);o=t.get(`min_commits`,ir.min_commits),a=t.get(`max_commits`,ir.max_commits),u=Qn(t.get(`remaining_scans_cta_threshold`,ir.remaining_scans_cta_threshold)),s=n.quotaUsedCount??(n.hasLoadedAllPages?n.scanMap.size:void 0),l=d==null||s===void 0?null:Math.max(d-s,0),r=l!=null&&u!=null&&l<=u,f=Array.from(new Set([...p,c].filter(tr))).sort(er),e[1]=n.hasLoadedAllPages,e[2]=n.quotaUsedCount,e[3]=n.scanMap,e[4]=r,e[5]=i,e[6]=a,e[7]=o,e[8]=s,e[9]=c,e[10]=l,e[11]=u,e[12]=d,e[13]=f}else r=e[4],i=e[5],a=e[6],o=e[7],s=e[8],c=e[9],l=e[10],u=e[11],d=e[12],f=e[13];let p=f,m=l!=null&&l<=0,h=n.isLoading||s===void 0,g=c===-1,_;return e[14]!==r||e[15]!==i||e[16]!==a||e[17]!==o||e[18]!==p||e[19]!==s||e[20]!==l||e[21]!==u||e[22]!==d||e[23]!==m||e[24]!==h||e[25]!==g?(_={isExhausted:m,isLoading:h,isNearScanLimit:r,lookbackDaysLimit:i,lookbackDaysOptions:p,maxCommits:a,minCommits:o,ownedScanCount:s,remainingScans:l,remainingScansCtaThreshold:u,scansCount:d,supportsIndefiniteLookback:g},e[14]=r,e[15]=i,e[16]=a,e[17]=o,e[18]=p,e[19]=s,e[20]=l,e[21]=u,e[22]=d,e[23]=m,e[24]=h,e[25]=g,e[26]=_):_=e[26],_}function er(e,t){return e-t}function tr(e){return e>0}function nr(e){return Number(e)}var rr,ir,ar=e((()=>{rr=Ae(),vn(),G(),ae(),ir={scans_count:-1,lookback_days:-1,lookback_days_options:[7,14,30,60],min_commits:1e3,max_commits:1e4,remaining_scans_cta_threshold:-1}}));function or(e){"use forget";let t=(0,lr.c)(34),{hasRecordedInterest:r,isPopoverOpen:i,onDismissPermanently:a,onGetInTouch:o,onMaybeLater:s,onOpenChange:c}=e,l=je(),u;t[0]===l?u=t[1]:(u=l.formatMessage({id:`wham.whamHeader.getMoreScansAriaLabel`,defaultMessage:`Open the get more scans dialog`}),t[0]=l,t[1]=u);let d;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,J.jsx)(`span`,{className:`flex items-center gap-1`,children:(0,J.jsx)(K,{id:`wham.whamHeader.getMoreScans`,defaultMessage:`Get more scans`})}),t[2]=d):d=t[2];let f;t[3]===u?f=t[4]:(f=(0,J.jsx)(n,{type:`button`,color:`secondary`,label:u,children:d}),t[3]=u,t[4]=f);let p;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,J.jsx)(`div`,{className:`text-token-text-primary text-[15px] leading-5 font-medium`,children:(0,J.jsx)(K,{id:`wham.securityRateLimitModal.title`,defaultMessage:`Codex Security is in Research Preview`})}),t[5]=p):p=t[5];let m;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,J.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[p,(0,J.jsx)(`div`,{className:`text-token-text-secondary text-sm leading-5`,children:(0,J.jsx)(K,{id:`wham.securityRateLimitModal.description`,defaultMessage:`Codex Security is in Research Preview with limits on the number of scans you can perform. If you'd like early access to the paid version, please let us know.`})})]}),t[6]=m):m=t[6];let h;t[7]===o?h=t[8]:(h=()=>void o(),t[7]=o,t[8]=h);let g;t[9]!==r||t[10]!==l?(g=r?l.formatMessage({id:`wham.securityRateLimitModal.success`,defaultMessage:`Thanks! Your response has been recorded`}):l.formatMessage({id:`wham.securityRateLimitModal.getInTouch`,defaultMessage:`Yes, get in touch with me`}),t[9]=r,t[10]=l,t[11]=g):g=t[11];let _;t[12]!==h||t[13]!==g?(_=(0,J.jsx)(n,{color:`primary`,fullWidth:!0,onClick:h,children:g}),t[12]=h,t[13]=g,t[14]=_):_=t[14];let v;t[15]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,J.jsx)(K,{id:`wham.securityRateLimitModal.maybeLater`,defaultMessage:`Maybe later`}),t[15]=v):v=t[15];let y;t[16]===s?y=t[17]:(y=(0,J.jsx)(n,{color:`ghost`,onClick:s,children:v}),t[16]=s,t[17]=y);let b;t[18]===a?b=t[19]:(b=()=>void a(),t[18]=a,t[19]=b);let x;t[20]===Symbol.for(`react.memo_cache_sentinel`)?(x=(0,J.jsx)(K,{id:`wham.securityRateLimitModal.noThanks`,defaultMessage:`No thanks`}),t[20]=x):x=t[20];let S;t[21]===b?S=t[22]:(S=(0,J.jsx)(n,{color:`secondary`,onClick:b,children:x}),t[21]=b,t[22]=S);let C;t[23]!==y||t[24]!==S?(C=(0,J.jsxs)(`div`,{className:`flex items-center justify-end gap-2`,children:[y,S]}),t[23]=y,t[24]=S,t[25]=C):C=t[25];let w;t[26]!==C||t[27]!==_?(w=(0,J.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[m,(0,J.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[_,C]})]}),t[26]=C,t[27]=_,t[28]=w):w=t[28];let T;return t[29]!==i||t[30]!==c||t[31]!==w||t[32]!==f?(T=(0,J.jsx)(Ie,{open:i,onOpenChange:c,side:`bottom`,alignAgainstAnchor:`start`,sideOffset:4,disableAutofocus:!0,className:`w-[440px] max-w-[440px] rounded-2xl p-4`,triggerButton:f,children:w}),t[29]=i,t[30]=c,t[31]=w,t[32]=f,t[33]=T):T=t[33],T}function sr(){"use forget";let e=(0,lr.c)(1),{hasAdminAccess:t}=dn(),{status:n}=Yn();if(!Jn({githubAccessStatus:n,hasAdminAccess:t}))return null;let r;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,J.jsx)(cr,{}),e[0]=r):r=e[0],r}function cr(){"use forget";let e=(0,lr.c)(7),[t,n]=(0,ur.useState)(!1),[r,i]=(0,ur.useState)(!1),{eligible:a,isLoading:o}=ie(de.hasAcknowledgedAardvarkScanLimitAnnouncement),{isNearScanLimit:s,scansCount:c}=$n(),l=s&&(!o&&a&&c!=null&&s||r),u;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(u=()=>{n(!1),g.logStructuredEvent(`CodexSecurityScanLimitPromptAction`,{actionType:$e.CODEX_SECURITY_SCAN_LIMIT_PROMPT_ACTION_TYPE_MAYBE_LATER})},e[0]=u):u=e[0];let d=u,f;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(f=async()=>{n(!1),g.logStructuredEvent(`CodexSecurityScanLimitPromptAction`,{actionType:$e.CODEX_SECURITY_SCAN_LIMIT_PROMPT_ACTION_TYPE_DISMISS}),await B(de.hasAcknowledgedAardvarkScanLimitAnnouncement)},e[1]=f):f=e[1];let p=f,m;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(m=async()=>{i(!0),g.logStructuredEvent(`CodexSecurityScanLimitPromptAction`,{actionType:$e.CODEX_SECURITY_SCAN_LIMIT_PROMPT_ACTION_TYPE_GET_IN_TOUCH}),await B(de.hasAcknowledgedAardvarkScanLimitAnnouncement)},e[2]=m):m=e[2];let h=m,_;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(_=e=>{n(e),e||i(!1)},e[3]=_):_=e[3];let v=_,y;return e[4]!==r||e[5]!==t?(y=(0,J.jsx)(or,{hasRecordedInterest:r,isPopoverOpen:t,onDismissPermanently:p,onGetInTouch:h,onMaybeLater:d,onOpenChange:v}),e[4]=r,e[5]=t,e[6]=y):y=e[6],l?y:null}var lr,ur,J,dr=e((()=>{lr=Ae(),fn(),F(),Zn(),ar(),He(),te(),l(),Le(),ur=t(we()),Ce(),J=ve()}));function fr(){return pe(`349697204`)}function pr(){"use forget";let e=(0,br.c)(2),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=h(),e[0]=t):t=e[0];let n=!t;mt.markStart(`WhamLoginOrProfileMenu`),mt.markRendered(`WhamLoginOrProfileMenu`);let r;return e[1]===Symbol.for(`react.memo_cache_sentinel`)?(r=n?(0,Y.jsx)(Xt,{}):(0,Y.jsx)(mr,{}),e[1]=r):r=e[1],r}function mr(){"use forget";let e=(0,br.c)(57),{data:t}=k(),n=S(),r=C(),i=be(),a=_e(),o=je(),s=fr(),c=E(),{openSettings:l}=vt(),u=at(yr),d=at(vr),f;e[0]===i?f=e[1]:(f=()=>{i(`/codex/cloud/settings/general`)},e[0]=i,e[1]=f);let p=f;if(!r){let t;return e[2]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Y.jsx)(`div`,{className:`flex h-10 w-10 items-center justify-center`,children:(0,Y.jsx)(`div`,{className:`bg-token-bg-tertiary h-8 w-8 rounded-full`})}),e[2]=t):t=e[2],t}let{showAccountSwitcher:m}=Ke({accountState:t,currentSession:c,user:n}),h=m,g;e[3]===h?g=e[4]:(g=()=>{h&&Ve()},e[3]=h,e[4]=g);let _=g,v;e[5]===a.pathname?v=e[6]:(v=a.pathname.startsWith(`/codex/cloud/onboarding`),e[5]=a.pathname,e[6]=v);let y=v,b;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(b=ot(),e[7]=b):b=e[7];let x=b,w=s.get(`changelog_date`,``),T=s.get(`changelog_url`,``),D;bb0:{if(!w){D=!1;break bb0}let e=new Date(w);if(Number.isNaN(e.getTime())){D=!1;break bb0}D=Date.now()-e.getTime()<6048e5}let O=D&&u!==w,A;e[8]===O?A=e[9]:(A=()=>(0,Y.jsxs)(`span`,{className:`relative`,children:[(0,Y.jsx)(se,{className:`icon`,"aria-hidden":`true`}),O&&(0,Y.jsx)(Je,{color:`blue`,className:`border-token-bg-primary absolute end-0 top-0 border`})]}),e[8]=O,e[9]=A);let j=A,M;e[10]===_?M=e[11]:(M=e=>{e&&_()},e[10]=_,e[11]=M);let N;e[12]===o?N=e[13]:(N=o.formatMessage({id:`wham.whamProfile.openProfileMenu`,defaultMessage:`Open Profile Menu`}),e[12]=o,e[13]=N);let P;e[14]===Symbol.for(`react.memo_cache_sentinel`)?(P=(0,Y.jsx)(ge,{showPlanTypeBadge:!0}),e[14]=P):P=e[14];let F;e[15]===O?F=e[16]:(F=O&&(0,Y.jsx)(Je,{color:`blue`,className:`border-token-bg-primary absolute end-0 top-0 border`}),e[15]=O,e[16]=F);let I;e[17]===F?I=e[18]:(I=(0,Y.jsxs)(`span`,{className:`relative`,children:[P,F]}),e[17]=F,e[18]=I);let L;e[19]!==_||e[20]!==I||e[21]!==N?(L=(0,Y.jsx)(`button`,{onFocus:_,onMouseEnter:_,onClick:_r,"aria-label":N,"data-testid":`profile-button`,className:`text-token-text-secondary hover:text-token-text-primary hover:bg-token-interactive-bg-secondary-hover radix-state-open:text-token-text-secondary flex h-10 w-10 items-center justify-center rounded-full px-1 transition focus-visible:outline-0`,children:I}),e[19]=_,e[20]=I,e[21]=N,e[22]=L):L=e[22];let R;e[23]===h?R=e[24]:(R=(0,Y.jsx)(rn,{showAccountSwitcher:h,accountSwitcherRedirectUrl:`/codex/cloud?refresh_account=true`}),e[23]=h,e[24]=R);let ee;e[25]!==y||e[26]!==p?(ee=!y&&(0,Y.jsx)(Me.Item,{onClick:p,icon:zt,"data-testid":`accounts-settings-button`,children:(0,Y.jsx)(K,{id:`wham.whamProfile.codexSettings`,defaultMessage:`Codex settings`})}),e[25]=y,e[26]=p,e[27]=ee):ee=e[27];let z;e[28]===Symbol.for(`react.memo_cache_sentinel`)?(z=(0,Y.jsx)(Zt,{}),e[28]=z):z=e[28];let B;e[29]===l?B=e[30]:(B=()=>l(),e[29]=l,e[30]=B);let V;e[31]===Symbol.for(`react.memo_cache_sentinel`)?(V=(0,Y.jsx)(K,{id:`wham.whamProfile.chatgptSettings`,defaultMessage:`ChatGPT settings`}),e[31]=V):V=e[31];let H;e[32]===B?H=e[33]:(H=(0,Y.jsx)(Me.Item,{icon:It,onClick:B,"data-testid":`settings-menu-item`,children:V}),e[32]=B,e[33]=H);let U;e[34]===Symbol.for(`react.memo_cache_sentinel`)?(U=(0,Y.jsx)(Me.Item,{className:`touch:hidden`,icon:At,onPointerOver:gr,onClick:hr,children:(0,Y.jsx)(K,{id:`wham.whamProfile.keyboardShortcutsMenu`,defaultMessage:`Keyboard shortcuts`})}),e[34]=U):U=e[34];let W;e[35]!==j||e[36]!==w||e[37]!==T||e[38]!==y||e[39]!==d?(W=!y&&T&&(0,Y.jsx)(Me.LinkItem,{icon:j,external:!0,to:T,onClick:()=>{w&&d(w)},children:(0,Y.jsx)(K,{id:`wham.whamProfile.changelog`,defaultMessage:`Changelog`})}),e[35]=j,e[36]=w,e[37]=T,e[38]=y,e[39]=d,e[40]=W):W=e[40];let te;e[41]===Symbol.for(`react.memo_cache_sentinel`)?(te=(0,Y.jsxs)(Y.Fragment,{children:[(0,Y.jsx)(Me.Separator,{}),(0,Y.jsx)($t,{})]}),e[41]=te):te=e[41];let ne;e[42]===x?ne=e[43]:(ne=(x||!1)&&(0,Y.jsx)(Me.Separator,{}),e[42]=x,e[43]=ne);let re;e[44]===x?re=e[45]:(re=x&&(0,Y.jsx)(Be,{}),e[44]=x,e[45]=re);let ie,ae;e[46]===Symbol.for(`react.memo_cache_sentinel`)?(ie=!1,ae=(0,Y.jsx)(nn,{}),e[46]=ie,e[47]=ae):(ie=e[46],ae=e[47]);let G;return e[48]!==L||e[49]!==R||e[50]!==ee||e[51]!==H||e[52]!==W||e[53]!==ne||e[54]!==re||e[55]!==M?(G=(0,Y.jsxs)(et,{onOpenChange:M,triggerButton:L,children:[R,ee,z,H,U,W,te,ne,re,ie,ae]}),e[48]=L,e[49]=R,e[50]=ee,e[51]=H,e[52]=W,e[53]=ne,e[54]=re,e[55]=M,e[56]=G):G=e[56],G}function hr(){P(xr)}function gr(){return xr.prefetch()}function _r(){g.logEvent(`Account: Open Profile Menu`),j.logEvent(`chatgpt_account_open_profile_menu`)}function vr(e){return e.setLastClickedChangelogDate}function yr(e){return e.lastClickedChangelogDate}var br,Y,xr,Sr=e((()=>{br=Ae(),me(),Xe(),dt(),Ft(),z(),Tt(),Ct(),M(),Re(),nt(),tn(),it(),St(),Qt(),ht(),G(),a(),o(),l(),bt(),ae(),Fe(),re(),Ce(),Se(),Y=ve(),Oe(),xr=A(()=>Te(()=>import(`./b0ac1aff-ir0sazghf28a0pjr.js`).then(e=>(e.t(),e.r)).then(e=>e.WhamKeyboardActionsModal),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10])))}));function Cr(){return le(`4285716042`)}var wr=e((()=>{ae()}));function Tr({isUpsell:e=!1}={}){return!e}var Er=e((()=>{}));function Dr(e,t){return!e||!t?null:kr({workspaceId:e,viewerId:E()?.user?.id})}function Or(e){return Ze(Ne(`/agent-security`,e,void 0,typeof window>`u`?``:window.location.search),e)}var kr,Ar=e((()=>{Ue(),x(),V(),o(),v(),kr=b(({workspaceId:e,viewerId:t})=>c(()=>({queryKey:[`wham`,`agent-policy-editor`,e,t],queryFn:async({signal:t})=>{let n=await d.safeGet(`/wham/config/agent-enterprise-managed`,{signal:t,additionalHeaders:he(e),cache:`no-store`});if(typeof n.capabilities?.can_view!=`boolean`)throw Error(`Policy editor status is unavailable`);return n.editor_enabled===!0&&n.capabilities.can_view&&!n.legacy_policy_editor_required},staleTime:0,retry:!1,refetchOnWindowFocus:`always`})))}));function jr(e){"use forget";let t=(0,Nr.c)(22),{text:n,path:r,isActive:i,trailing:a,disabledReason:o}=e,s=be(),c=o!=null,l=c||void 0,u=c?`text-token-text-tertiary cursor-not-allowed`:`hover:bg-token-bg-tertiary hover:cursor-pointer`,d=i&&!c&&`bg-token-bg-tertiary font-semibold`,f;t[0]!==u||t[1]!==d?(f=N(`flex w-full items-center gap-3 rounded-md p-2 text-start`,u,d),t[0]=u,t[1]=d,t[2]=f):f=t[2];let p;t[3]!==c||t[4]!==s||t[5]!==r?(p=()=>{c||s(r)},t[3]=c,t[4]=s,t[5]=r,t[6]=p):p=t[6];let m;t[7]===n?m=t[8]:(m=(0,X.jsx)(`span`,{className:`min-w-0 flex-1 truncate`,children:n}),t[7]=n,t[8]=m);let h;t[9]!==c||t[10]!==a?(h=c?(0,X.jsx)(wt,{"aria-hidden":!0,className:`size-4 shrink-0`}):a,t[9]=c,t[10]=a,t[11]=h):h=t[11];let g;t[12]!==l||t[13]!==f||t[14]!==p||t[15]!==m||t[16]!==h?(g=(0,X.jsxs)(`button`,{type:`button`,"aria-disabled":l,className:f,onClick:p,children:[m,h]}),t[12]=l,t[13]=f,t[14]=p,t[15]=m,t[16]=h,t[17]=g):g=t[17];let _=g,v;return t[18]!==_||t[19]!==o||t[20]!==c?(v=c?(0,X.jsx)(O,{label:o,side:`right`,className:`w-full`,children:_}):_,t[18]=_,t[19]=o,t[20]=c,t[21]=v):v=t[21],v}function Mr(){"use forget";let e=(0,Nr.c)(63),t=ee(),n=je(),r=ne(),i;e[0]===r?i=e[1]:(i=Gt(r),e[0]=r,e[1]=i);let a=i,o=_e(),s=Nn(),c=qe(),l=Mn(),u=kn(t),d=oe(Dn),f=l||!d.isError&&d.data?.capabilities?.can_view===!0,p;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(p=Tr(),e[2]=p):p=e[2];let m=p,h=m,g=s||m,_=c!==`DISABLED`,v;e[3]===r?v=e[4]:(v=r?.getWorkspaceId(),e[3]=r,e[4]=v);let y=v,b;e[5]!==l||e[6]!==u||e[7]!==y?(b=()=>Dr(y,l&&u),e[5]=l,e[6]=u,e[7]=y,e[8]=b):b=e[8];let x=oe(b),S;e[9]!==x||e[10]!==y?(S=y&&x?.isSuccess&&x.data?Or(y):void 0,e[9]=x,e[10]=y,e[11]=S):S=e[11];let C=S,{data:w}=I(y),T=r?.data.role!=null&&Qe(r.data.role),E=y!=null&&(l||T),D=Ye(),O=E&&D.isSuccess&&D.data.codex_notifications_console_enabled===!0?Ze(Ne(`/general#workspace-codex-notifications`,y),y):null,k=_&&E&&Cr(),A=r?.planType,j;e[12]===A?j=e[13]:(j=Kt(A),e[12]=A,e[13]=j);let M=!j&&Ut(w?.permissions,{hasWorkspaceAdminRole:T,planType:r?.planType})&&(r?.isFedrampCompliantWorkspace!==!0||In(y).adminConsoleUrl!=null),N;e[14]===Symbol.for(`react.memo_cache_sentinel`)?(N=(0,X.jsx)(`p`,{className:`text-text-primary py-2 ps-2 text-xl leading-7 font-medium`,children:(0,X.jsx)(K,{id:`wham.settingsSidebar.settings`,defaultMessage:`Settings`})}),e[14]=N):N=e[14];let P;e[15]!==_||e[16]!==o?(P=_&&(0,X.jsx)(jr,{text:(0,X.jsx)(K,{id:`wham.settingsSidebar.general`,defaultMessage:`General`}),path:`/codex/cloud/settings/general`,isActive:o.pathname.startsWith(`/codex/cloud/settings/general`)}),e[15]=_,e[16]=o,e[17]=P):P=e[17];let F;e[18]!==_||e[19]!==o?(F=_&&(0,X.jsx)(jr,{text:(0,X.jsx)(K,{id:`wham.settingsSidebar.environments`,defaultMessage:`Environments`}),path:`/codex/cloud/settings/environments`,isActive:o.pathname.startsWith(`/codex/cloud/settings/environments`)}),e[18]=_,e[19]=o,e[20]=F):F=e[20];let L;e[21]!==_||e[22]!==o?(L=_&&(0,X.jsx)(jr,{text:(0,X.jsx)(K,{id:`wham.settingsSidebar.codeReview`,defaultMessage:`Code review`}),path:`/codex/cloud/settings/code-review`,isActive:o.pathname.startsWith(`/codex/cloud/settings/code-review`)}),e[21]=_,e[22]=o,e[23]=L):L=e[23];let R;e[24]!==_||e[25]!==o?(R=_&&(0,X.jsx)(jr,{text:(0,X.jsx)(K,{id:`wham.settingsSidebar.connectors`,defaultMessage:`Connectors`}),path:`/codex/cloud/settings/connectors`,isActive:o.pathname.startsWith(`/codex/cloud/settings/connectors`)}),e[24]=_,e[25]=o,e[26]=R):R=e[26];let z;e[27]!==_||e[28]!==o?(z=!_||h?null:(0,X.jsx)(jr,{text:(0,X.jsx)(K,{id:`wham.settingsSidebar.usage`,defaultMessage:`Usage`}),path:`/codex/cloud/settings/usage`,isActive:o.pathname.startsWith(`/codex/cloud/settings/usage`)}),e[27]=_,e[28]=o,e[29]=z):z=e[29];let B;e[30]!==g||e[31]!==a||e[32]!==n||e[33]!==o?(B=a==null?g?(0,X.jsx)(jr,{text:(0,X.jsx)(K,{id:`wham.settingsSidebar.analytics`,defaultMessage:`Analytics`}),path:`/codex/cloud/settings/analytics`,isActive:o.pathname.startsWith(`/codex/cloud/settings/analytics`)}):null:(0,X.jsxs)(`a`,{href:a,target:`_blank`,rel:`noopener noreferrer`,"aria-label":n.formatMessage({id:`wham.settingsSidebar.analyticsAdminConsoleLink.ariaLabel`,defaultMessage:`Analytics (opens in a new tab)`}),className:`interactive-button interactive-bg-secondary interactive-label-secondary interactive-outline-secondary flex w-full items-center gap-3 rounded-md p-2 text-start`,children:[(0,X.jsx)(`span`,{className:`min-w-0 flex-1 truncate`,children:(0,X.jsx)(K,{id:`wham.settingsSidebar.analytics`,defaultMessage:`Analytics`})}),(0,X.jsx)(Bt,{"aria-hidden":!0,className:`icon-sm shrink-0`})]}),e[30]=g,e[31]=a,e[32]=n,e[33]=o,e[34]=B):B=e[34];let V;e[35]!==_||e[36]!==o?(V=_&&(0,X.jsx)(jr,{text:(0,X.jsx)(K,{id:`wham.settingsSidebar.dataControls`,defaultMessage:`Data controls`}),path:`/codex/cloud/settings/data`,isActive:o.pathname.startsWith(`/codex/cloud/settings/data`)}),e[35]=_,e[36]=o,e[37]=V):V=e[37];let H;e[38]!==k||e[39]!==n||e[40]!==o||e[41]!==O?(H=O==null?k?(0,X.jsx)(jr,{text:(0,X.jsx)(K,{id:`wham.settingsSidebar.notifications`,defaultMessage:`Notifications`}),path:`/codex/cloud/settings/notifications`,isActive:o.pathname.startsWith(`/codex/cloud/settings/notifications`)}):null:(0,X.jsxs)(`a`,{href:O,target:`_blank`,rel:`noopener noreferrer`,"aria-label":n.formatMessage({id:`wham.settingsSidebar.notificationsAdminConsoleLink.ariaLabel`,defaultMessage:`Notifications (opens in a new tab)`}),className:`interactive-button interactive-bg-secondary interactive-label-secondary interactive-outline-secondary flex w-full items-center gap-3 rounded-md p-2 text-start`,children:[(0,X.jsx)(`span`,{className:`min-w-0 flex-1 truncate`,children:(0,X.jsx)(K,{id:`wham.settingsSidebar.notifications`,defaultMessage:`Notifications`})}),(0,X.jsx)(Bt,{"aria-hidden":!0,className:`icon-sm shrink-0`})]}),e[38]=k,e[39]=n,e[40]=o,e[41]=O,e[42]=H):H=e[42];let U;e[43]!==C||e[44]!==f||e[45]!==E||e[46]!==u||e[47]!==o?(U=u&&(f||E)&&(C?(0,X.jsxs)(`a`,{href:C,className:`hover:bg-token-bg-tertiary flex w-full items-center gap-3 rounded-md p-2 text-start`,children:[(0,X.jsx)(`span`,{className:`min-w-0 flex-1 truncate`,children:(0,X.jsx)(K,{id:`wham.settingsSidebar.managedConfigs`,defaultMessage:`Policies & Configurations`})}),(0,X.jsx)(Bt,{"aria-hidden":!0,className:`icon-sm shrink-0`})]}):(0,X.jsx)(jr,{text:(0,X.jsx)(K,{id:`wham.settingsSidebar.managedConfigs`,defaultMessage:`Policies & Configurations`}),path:`/codex/cloud/settings/policies`,isActive:o.pathname.startsWith(`/codex/cloud/settings/policies`)||o.pathname.startsWith(`/codex/cloud/settings/managed-configs`),disabledReason:f?void 0:(0,X.jsx)(K,{id:`wham.settingsSidebar.policyViewPermissionRequired`,defaultMessage:`You need permission to view Codex policies. Ask a workspace owner to update your permissions.`})})),e[43]=C,e[44]=f,e[45]=E,e[46]=u,e[47]=o,e[48]=U):U=e[48];let W;e[49]!==M||e[50]!==o?(W=M&&(0,X.jsx)(jr,{text:(0,X.jsx)(K,{id:`wham.settingsSidebar.accessTokens`,defaultMessage:`Access tokens`}),path:`/codex/cloud/settings/access-tokens`,isActive:o.pathname.startsWith(`/codex/cloud/settings/access-tokens`),trailing:(0,X.jsx)(Bt,{"aria-hidden":!0,"data-testid":`agent-identities-external-link-icon`,className:`text-token-text-secondary ms-auto size-4 shrink-0`})}),e[49]=M,e[50]=o,e[51]=W):W=e[51];let te;return e[52]!==L||e[53]!==R||e[54]!==z||e[55]!==B||e[56]!==V||e[57]!==H||e[58]!==U||e[59]!==W||e[60]!==P||e[61]!==F?(te=(0,X.jsxs)(`div`,{className:`flex w-64 flex-col gap-3 px-4`,children:[N,(0,X.jsxs)(`div`,{className:`flex flex-col gap-2 pe-3 text-sm`,children:[P,F,L,R,z,B,V,H,U,W]})]}),e[52]=L,e[53]=R,e[54]=z,e[55]=B,e[56]=V,e[57]=H,e[58]=U,e[59]=W,e[60]=P,e[61]=F,e[62]=te):te=e[62],te}var Nr,X,Pr=e((()=>{Nr=Ae(),Yt(),Jt(),Ue(),tt(),y(),Ot(),jt(),T(),L(),V(),G(),On(),We(),jn(),Pn(),wr(),Er(),Ar(),An(),Ge(),Fn(),U(),Ce(),Se(),X=ve()}));function Fr(e){"use forget";let t=(0,Ir.c)(29),[n,i]=(0,Lr.useState)(!1),a=_e(),o;t[0]===a.pathname?o=t[1]:(o=a.pathname.includes(`/codex/cloud/onboarding`),t[0]=a.pathname,t[1]=o);let s=o,c=je(),{hasAccess:l,isWorkspaceAllowed:u}=dn(),d=l===!0||u,h;t[2]===c?h=t[3]:(h=c.formatMessage({id:`wham.mobileSettingsSidebar.open`,defaultMessage:`Open settings sidebar`}),t[2]=c,t[3]=h);let g;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(g=(0,Z.jsx)(Dt,{className:`icon`}),t[4]=g):g=t[4];let _;t[5]===h?_=t[6]:(_=(0,Z.jsx)(r,{asChild:!0,children:(0,Z.jsx)(`button`,{type:`button`,className:`hover:bg-token-bg-tertiary text-token-text-secondary flex h-8 w-8 items-center justify-center rounded-md`,"aria-label":h,children:g})}),t[5]=h,t[6]=_);let v;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,Z.jsx)(w,{className:`fixed inset-0 z-40 bg-black/50`}),t[7]=v):v=t[7];let y;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(y=()=>i(!1),t[8]=y):y=t[8];let b;t[9]===c?b=t[10]:(b=c.formatMessage({id:`wham.mobileSettingsSidebar.close`,defaultMessage:`Close settings sidebar`}),t[9]=c,t[10]=b);let x;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(x=(0,Z.jsx)(m,{className:`icon`}),t[11]=x):x=t[11];let S;t[12]===b?S=t[13]:(S=(0,Z.jsx)(`div`,{className:`flex justify-end p-2`,children:(0,Z.jsx)(`button`,{type:`button`,onClick:y,className:`hover:bg-token-bg-tertiary text-token-text-secondary flex h-8 w-8 items-center justify-center rounded-md`,"aria-label":b,children:x})}),t[12]=b,t[13]=S);let C;t[14]!==c||t[15]!==s||t[16]!==d?(C=d&&!s&&(0,Z.jsxs)(`div`,{className:`mb-3 flex w-64 flex-col gap-3 px-4`,children:[(0,Z.jsx)(`p`,{className:`text-text-primary py-2 ps-2 text-xl leading-7 font-medium`,children:(0,Z.jsx)(K,{id:`wham.mobileSettingsSidebar.securityHeader`,defaultMessage:`Security`})}),(0,Z.jsxs)(`div`,{className:`flex flex-col gap-2 pe-3 text-sm`,children:[le(`1908296950`)&&(0,Z.jsx)(De,{to:`/codex/cloud/security/overview`,onClick:()=>i(!1),className:`hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2`,children:(0,Z.jsx)(K,{id:`wham.mobileSettingsSidebar.overview`,defaultMessage:`Overview`})}),(0,Z.jsx)(De,{to:`/codex/cloud/security/findings`,onClick:()=>i(!1),className:`hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2`,"aria-label":c.formatMessage({id:`wham.mobileSettingsSidebar.findingsAriaLabel`,defaultMessage:`Go to Security findings`}),children:(0,Z.jsx)(K,{id:`wham.mobileSettingsSidebar.findings`,defaultMessage:`Findings`})}),(0,Z.jsx)(De,{to:`/codex/cloud/security/scans`,onClick:()=>i(!1),className:`hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2`,"aria-label":c.formatMessage({id:`wham.mobileSettingsSidebar.scansAriaLabel`,defaultMessage:`Go to Security scans`}),children:(0,Z.jsx)(K,{id:`wham.mobileSettingsSidebar.scans`,defaultMessage:`Scans`})})]})]}),t[14]=c,t[15]=s,t[16]=d,t[17]=C):C=t[17];let T;t[18]===s?T=t[19]:(T=!s&&(0,Z.jsx)(Mr,{}),t[18]=s,t[19]=T);let E;t[20]===Symbol.for(`react.memo_cache_sentinel`)?(E=(0,Z.jsx)(`div`,{className:`px-4 py-2`,children:(0,Z.jsx)(lt,{href:`https://platform.openai.com/docs/codex/overview`,target:`_blank`,className:`hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2 text-sm`,children:(0,Z.jsx)(K,{id:`wham.mobileSettingsSidebar.docs`,defaultMessage:`Docs`})})}),t[20]=E):E=t[20];let O;t[21]!==T||t[22]!==S||t[23]!==C?(O=(0,Z.jsxs)(D,{children:[v,(0,Z.jsxs)(f,{className:`bg-token-bg-primary fixed inset-y-0 start-0 z-50 flex w-64 flex-col shadow-lg`,children:[S,C,T,E]})]}),t[21]=T,t[22]=S,t[23]=C,t[24]=O):O=t[24];let k;return t[25]!==n||t[26]!==O||t[27]!==_?(k=(0,Z.jsxs)(p,{open:n,onOpenChange:i,children:[_,O]}),t[25]=n,t[26]=O,t[27]=_,t[28]=k):k=t[28],k}var Ir,Lr,Z,Rr=e((()=>{Ir=Ae(),fn(),_(),kt(),xt(),ae(),ue(),Lr=t(we()),Ce(),Se(),Pr(),Z=ve()}));function zr(e){"use forget";let t=(0,Hr.c)(64),{hideNotificationBell:n,hideSettingsLink:r,className:i,mobileLeadingContent:a,mobileCenterContent:o,mobileTrailingContent:c,hideMobileLogo:l}=e,u=n!==void 0&&n,d=r!==void 0&&r,f=l!==void 0&&l,p=!oe(fe),m=je(),h=_e(),g=yn(),_=xn(),v=gn(),y;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(y={key:`chatgpt-codex-download`,allowUnauthenticatedTracking:!0},t[0]=y):y=t[0];let{trackSelectedPixels:b}=Vt(y),x;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(x={key:Ht.CODEX_DOWNLOAD,allowUnauthenticatedTracking:!0},t[1]=x):x=t[1];let{trackSelectedPixels:S}=Vt(x),{hasAccess:C,isWorkspaceAllowed:w}=dn(),T=C===!0||w,E=T?`/codex/cloud/security`:`/aardvark`,D,k,A,j,M,P;if(t[2]!==i||t[3]!==g||t[4]!==E||t[5]!==v||t[6]!==f||t[7]!==u||t[8]!==d||t[9]!==m||t[10]!==_||t[11]!==p||t[12]!==h.pathname||t[13]!==o||t[14]!==a||t[15]!==c||t[16]!==T||t[17]!==S||t[18]!==b){let e=h.pathname.startsWith(`/codex/cloud/security`)||h.pathname.startsWith(`/aardvark`),n;t[25]===h.pathname?n=t[26]:(n=h.pathname.startsWith(`/codex/cloud/settings`),t[25]=h.pathname,t[26]=n);let r=!e&&!n,l=a!=null||o!=null||c!=null,y=!v||!_||g.isLoadingOs||!g.canDownload,x;t[27]!==g.os||t[28]!==m?(x=g.os===`linux`?m.formatMessage(Ur.appNotAvailableOnLinuxTooltip):void 0,t[27]=g.os,t[28]=m,t[29]=x):x=t[29];let C=x,w;t[30]!==g||t[31]!==m?(w=Br(m,g),t[30]=g,t[31]=m,t[32]=w):w=t[32];let F=w,I=!p&&`ms-[5px] mt-[5px]`,L;t[33]===I?L=t[34]:(L=N(`text-token-text-primary flex items-center gap-2 hover:cursor-pointer`,I),t[33]=I,t[34]=L);let R=L;t[35]!==i||t[36]!==l||t[37]!==p?(P=N(p?N(`grid w-full items-center gap-2`,l?`grid-cols-[auto_minmax(0,1fr)_auto]`:`grid-cols-[1fr_auto_1fr]`):`sticky top-0 flex w-full justify-end py-3 ps-3 pe-1`,i),t[35]=i,t[36]=l,t[37]=p,t[38]=P):P=t[38],t[39]!==p||t[40]!==a?(D=p?a??(0,Q.jsx)(Fr,{}):null,t[39]=p,t[40]=a,t[41]=D):D=t[41];let ee=p?`flex min-w-0 items-center gap-3 self-center`:`absolute start-0 top-3 flex items-center gap-3 self-center`,z;t[42]===ee?z=t[43]:(z=N(ee),t[42]=ee,t[43]=z);let B;t[44]!==R||t[45]!==f||t[46]!==m||t[47]!==p||t[48]!==o?(B=p&&o!=null?o:p&&f?null:(0,Q.jsx)(De,{to:`/codex/cloud`,className:R,"aria-label":m.formatMessage({id:`wham.whamHeader.codexHomeAriaLabel`,defaultMessage:`Go to Codex`}),children:(0,Q.jsx)(ft,{className:`h-[27px] w-auto shrink-0`})}),t[44]=R,t[45]=f,t[46]=m,t[47]=p,t[48]=o,t[49]=B):B=t[49],t[50]!==z||t[51]!==B?(k=(0,Q.jsx)(`div`,{className:z,children:B}),t[50]=z,t[51]=B,t[52]=k):k=t[52];let V=p&&`justify-end`;t[53]===V?A=t[54]:(A=N(`flex items-center gap-2`,V),t[53]=V,t[54]=A),j=p?c??null:null,M=!p&&(0,Q.jsx)(s,{fallback:(0,Q.jsx)(`div`,{className:`h-10 w-[320px]`}),children:(0,Q.jsxs)(`div`,{className:`flex items-center`,children:[e?(0,Q.jsx)(sr,{}):(0,Q.jsx)(wn,{}),(0,Q.jsxs)(`div`,{className:`ms-3 flex items-center gap-5`,children:[!1,(0,Q.jsxs)(`div`,{className:`flex items-center gap-5`,children:[(0,Q.jsx)(De,{to:`/codex/cloud`,className:Vr(r),"aria-label":m.formatMessage({id:`wham.whamHeader.codeAriaLabel`,defaultMessage:`Link to Code`}),children:(0,Q.jsx)(K,{id:`wham.whamHeader.code`,defaultMessage:`Code`})}),T&&(0,Q.jsx)(De,{to:E,className:Vr(e),"aria-label":m.formatMessage({id:`wham.whamHeader.codexSecurityAriaLabel`,defaultMessage:`Link to Security`}),children:(0,Q.jsx)(K,{id:`wham.whamHeader.codexSecurity`,defaultMessage:`Security`})}),(0,Q.jsx)(O,{disabled:C==null,label:C,children:(0,Q.jsx)(`button`,{type:`button`,disabled:y,onClick:e=>{e.preventDefault(),!y&&(Pe.recordCodexAppSurfaceAction(`header_download`,`download`),pn({trackSelectedPixels:()=>{S(),b()}}))},className:Vr(!1,y),"aria-label":F,children:(0,Q.jsx)(K,{id:`wham.whamHeader.app`,defaultMessage:`App`})})}),(0,Q.jsx)(lt,{href:`https://platform.openai.com/docs/codex/overview`,target:`_blank`,className:Vr(!1),"aria-label":m.formatMessage({id:`wham.whamHeader.docsAriaLabel`,defaultMessage:`Link to the Codex docs page`}),children:(0,Q.jsx)(K,{id:`wham.whamHeader.docs`,defaultMessage:`Docs`})})]}),!d&&(0,Q.jsxs)(`div`,{className:`flex items-center gap-0.5`,children:[(0,Q.jsx)(De,{to:`/codex/cloud/settings/general`,className:`no-draggable keyboard-focused:bg-token-interactive-bg-secondary-hover text-token-text-primary hover:bg-token-interactive-bg-secondary-hover flex h-8 w-8 items-center justify-center rounded-md focus:outline-none`,"aria-label":m.formatMessage({id:`wham.whamHeader.settingsAriaLabel`,defaultMessage:`Link to the Codex settings page`}),children:(0,Q.jsx)(It,{className:`icon-sm`})}),!u&&(0,Q.jsx)(Tn,{className:`h-8! w-8! rounded-md!`})]}),d&&!u&&(0,Q.jsx)(`div`,{className:`flex items-center`,children:(0,Q.jsx)(Tn,{className:`h-8! w-8! rounded-md!`})})]}),(0,Q.jsx)(pr,{})]})}),t[2]=i,t[3]=g,t[4]=E,t[5]=v,t[6]=f,t[7]=u,t[8]=d,t[9]=m,t[10]=_,t[11]=p,t[12]=h.pathname,t[13]=o,t[14]=a,t[15]=c,t[16]=T,t[17]=S,t[18]=b,t[19]=D,t[20]=k,t[21]=A,t[22]=j,t[23]=M,t[24]=P}else D=t[19],k=t[20],A=t[21],j=t[22],M=t[23],P=t[24];let F;t[55]!==A||t[56]!==j||t[57]!==M?(F=(0,Q.jsxs)(`div`,{className:A,children:[j,M]}),t[55]=A,t[56]=j,t[57]=M,t[58]=F):F=t[58];let I;return t[59]!==D||t[60]!==k||t[61]!==F||t[62]!==P?(I=(0,Q.jsxs)(`div`,{className:P,children:[D,k,F]}),t[59]=D,t[60]=k,t[61]=F,t[62]=P,t[63]=I):I=t[63],I}function Br(e,t){switch(t.isLoadingOs?`loading`:t.os){case`loading`:return e.formatMessage(Ur.loadingOsAriaLabel);case`linux`:return e.formatMessage(Ur.appNotAvailableOnLinuxAriaLabel);case`mac`:case`windows`:case null:return e.formatMessage(Ur.downloadAppAriaLabel)}}function Vr(e,t=!1){return N(`text-token-text-primary text-sm leading-5 font-medium tracking-[-0.18px] transition-opacity`,t?`cursor-default opacity-40`:e?`opacity-100`:`opacity-70 hover:opacity-100`)}var Hr,Q,Ur,Wr=e((()=>{Hr=Ae(),fn(),qt(),Wt(),gt(),Tt(),y(),xt(),V(),u(),ce(),hn(),dr(),bn(),Sn(),Cn(),mn(),Sr(),pt(),En(),Rr(),U(),Ce(),Se(),Q=ve(),Ur=ye({appNotAvailableOnLinuxTooltip:{id:`wham.whamHeader.appNotAvailableOnLinuxTooltip`,defaultMessage:`Not available on Linux`},loadingOsAriaLabel:{id:`wham.whamHeader.loadingOsAriaLabel`,defaultMessage:`loading OS`},appNotAvailableOnLinuxAriaLabel:{id:`wham.whamHeader.appNotAvailableOnLinuxAriaLabel`,defaultMessage:`Codex app is not available on Linux`},downloadAppAriaLabel:{id:`wham.whamHeader.downloadAppAriaLabel`,defaultMessage:`Download the Codex app`}})}));function Gr(){"use forget";let e=(0,Jr.c)(2);if(!le(`1437685011`)){let t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Xr.jsx)(qr,{}),e[0]=t):t=e[0],t}let t;return e[1]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Xr.jsx)(Kr,{}),e[1]=t):t=e[1],t}function Kr(){"use forget";let e=(0,Jr.c)(1),{isConnected:t,isLoading:n}=Ln();if(n||t)return null;let r;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Xr.jsx)(qr,{}),e[0]=r):r=e[0],r}function qr(){"use forget";let e=(0,Jr.c)(7),[t,n]=(0,Yr.useState)(!1),r;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(r={redirectAfter:`/codex/cloud/settings/environments`},e[0]=r):r=e[0];let{isConnected:i,isLoading:a,error:o,openGithubModal:s,refetch:c}=ln(r);if(!cn()||(a||i)&&!t)return null;let l;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,Xr.jsx)(sn,{className:`icon`}),e[1]=l):l=e[1];let u;return e[2]!==o||e[3]!==a||e[4]!==s||e[5]!==c?(u=(0,Xr.jsxs)(`div`,{className:`draggable no-draggable-children bg-token-bg-secondary sticky top-0 z-20 flex h-12 w-full flex-row items-center justify-center gap-1.5`,children:[l,(0,Xr.jsx)(`span`,{className:`text-token-text-primary flex text-sm font-normal`,children:(0,Xr.jsx)(K,{id:`wham.connectGitHubAlert.message`,defaultMessage:`Your GitHub account is not connected. <connect>Connect now</connect>.`,values:{connect:e=>a?(0,Xr.jsx)(`span`,{className:`flex items-center ps-2`,children:(0,Xr.jsx)(rt,{className:`h-4 w-12`})}):o?(0,Xr.jsx)(`button`,{className:`ps-1 font-semibold underline hover:cursor-pointer`,onClick:()=>{n(!0),c()},children:(0,Xr.jsx)(K,{id:`wham.connectGitHubAlert.retry`,defaultMessage:`Failed to load GitHub connection. Click retry.`})}):(0,Xr.jsx)(`button`,{className:`ps-1 font-semibold underline hover:cursor-pointer`,onClick:s,children:e})}})})]}),e[2]=o,e[3]=a,e[4]=s,e[5]=c,e[6]=u):u=e[6],u}var Jr,Yr,Xr,Zr=e((()=>{Jr=Ae(),on(),ze(),ae(),un(),Rn(),Yr=t(we()),Ce(),Xr=ve()}));function Qr(e){let[t,n]=(0,$r.useState)(!1);return(0,$r.useEffect)(()=>{let t=e.current,r=()=>{t&&n(t.scrollTop>0)},i,a=0;function o(){if(t=e.current,!t){if(a++>=10)return;i=requestAnimationFrame(o);return}t.addEventListener(`scroll`,r),n(t.scrollTop>0)}return o(),()=>{i!==void 0&&cancelAnimationFrame(i),t&&t.removeEventListener(`scroll`,r)}},[e]),t}var $r,ei=e((()=>{$r=t(we())}));function ti({fillContentHeight:e,flex:t,horizontalPadding:n,maxWidth:r,topPadding:i}){return N(`mx-auto`,e&&`h-full flex-1`,r,t&&`flex flex-col`,n&&`px-8`,i&&`pt-8`)}function ni(e){"use forget";let t=(0,ii.c)(51),{children:n,flex:r,fillContentHeight:i,showSidebar:a,leftRail:o,canShowAlert:c,connectionAlert:l,hideHeaderNotificationBell:u,hideHeaderSettings:d,hideBorder:f,alwaysShowBorder:p,horizontalPadding:m,maxWidth:h,footerSpacePx:g,topPadding:_,mobileHeaderLeadingContent:v,mobileHeaderCenterContent:y,mobileHeaderTrailingContent:b,hideMobileHeaderLogo:x}=e,S=r!==void 0&&r,w=i===void 0||i,T=a===void 0||a,E=c===void 0||c,D=u!==void 0&&u,O=d!==void 0&&d,k=f!==void 0&&f,A=p!==void 0&&p,j=m!==void 0&&m,M=h===void 0?`max-w-screen-2xl`:h,N=g===void 0?80:g,P=_!==void 0&&_,F=x!==void 0&&x,I=(0,ai.useRef)(null),[L,R]=(0,ai.useState)(null),ee=Qr(I),z=at(ri),B=!oe(fe),V=qe(),H=C(),U,W;if(t[0]===L?(U=t[1],W=t[2]):(U=()=>{let e=L?.closest(`[data-scroll-root]`);if(e==null)return;let t=e.style.overflowY;return e.style.overflowY=`hidden`,()=>{e.style.overflowY=t}},W=[L],t[0]=L,t[1]=U,t[2]=W),(0,ai.useEffect)(U,W),V===`DISABLED`&&!H?.isWorkspacePlan()){let e;return t[3]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,$.jsx)(Ee,{to:`/`,replace:!0}),t[3]=e):e=t[3],e}let te=ut,ne=en,re=H?.getWorkspaceId(),ie;t[4]!==ne||t[5]!==re?(ie=(0,$.jsx)(ne,{page:`codex`},re),t[4]=ne,t[5]=re,t[6]=ie):ie=t[6];let ae=ee&&!k||A?`border-token-bg-secondary`:`border-transparent`,G;t[7]!==D||t[8]!==O||t[9]!==F||t[10]!==y||t[11]!==v||t[12]!==b?(G=(0,$.jsx)(zr,{hideNotificationBell:D,className:`flex-1`,hideSettingsLink:O,mobileLeadingContent:v,mobileCenterContent:y,mobileTrailingContent:b,hideMobileLogo:F}),t[7]=D,t[8]=O,t[9]=F,t[10]=y,t[11]=v,t[12]=b,t[13]=G):G=t[13];let se;t[14]!==ae||t[15]!==G?(se=(0,$.jsx)(oi,{className:ae,children:G}),t[14]=ae,t[15]=G,t[16]=se):se=t[16];let ce;t[17]===z?ce=t[18]:(ce=!1,t[17]=z,t[18]=ce);let le;t[19]!==E||t[20]!==l?(le=l??(E&&(0,$.jsx)(qr,{})),t[19]=E,t[20]=l,t[21]=le):le=t[21];let ue=`calc(100vh - var(--header-height) - ${N}px)`,de;t[22]===ue?de=t[23]:(de={height:ue},t[22]=ue,t[23]=de);let pe;t[24]!==B||t[25]!==T?(pe=T&&!B&&(0,$.jsx)(`div`,{className:`h-full w-64 flex-shrink-0 overflow-y-auto pt-8`,children:(0,$.jsx)(Mr,{})}),t[24]=B,t[25]=T,t[26]=pe):pe=t[26];let me;t[27]!==w||t[28]!==S||t[29]!==j||t[30]!==M||t[31]!==P?(me=ti({fillContentHeight:w,flex:S,horizontalPadding:j,maxWidth:M,topPadding:P}),t[27]=w,t[28]=S,t[29]=j,t[30]=M,t[31]=P,t[32]=me):me=t[32];let he;t[33]!==n||t[34]!==me?(he=(0,$.jsx)(`div`,{ref:I,className:`bg-token-bg-primary dark:bg-token-bg-secondary-surface w-full overflow-y-auto`,children:(0,$.jsx)(`div`,{className:me,children:n})}),t[33]=n,t[34]=me,t[35]=he):he=t[35];let ge;t[36]!==o||t[37]!==de||t[38]!==pe||t[39]!==he?(ge=(0,$.jsxs)(`div`,{ref:R,className:`flex flex-1 overflow-hidden`,style:de,children:[pe,o,he]}),t[36]=o,t[37]=de,t[38]=pe,t[39]=he,t[40]=ge):ge=t[40];let _e;t[41]!==le||t[42]!==ge?(_e=(0,$.jsxs)(s,{children:[le,ge]}),t[41]=le,t[42]=ge,t[43]=_e):_e=t[43];let ve;t[44]===Symbol.for(`react.memo_cache_sentinel`)?(ve=(0,$.jsx)(zn,{}),t[44]=ve):ve=t[44];let ye;return t[45]!==te||t[46]!==ie||t[47]!==se||t[48]!==ce||t[49]!==_e?(ye=(0,$.jsxs)(te,{mainContainerClassName:`overflow-hidden`,children:[ie,se,ce,_e,ve]}),t[45]=te,t[46]=ie,t[47]=se,t[48]=ce,t[49]=_e,t[50]=ye):ye=t[50],ye}function ri(e){return e.showReactQueryDevtools}var ii,ai,$,oi,si=e((()=>{ii=Ae(),an(),yt(),V(),u(),G(),ce(),Kn(),We(),Wr(),Zr(),Pr(),ei(),Fe(),U(),ai=t(we()),Se(),i(),$=ve(),oi=H.div`draggable no-draggable-children sticky top-0 p-3 flex items-center justify-between z-20 h-header-height border-b border-transparent font-semibold bg-token-bg-primary dark:bg-token-bg-secondary-surface`}));export{zn as C,Yn as S,Cr as _,Qr as a,Zn as b,Zr as c,Dr as d,Or as f,wr as g,Tr as h,ei as i,zr as l,Er as m,oi as n,qr as o,Ar as p,si as r,Gr as s,ni as t,Wr as u,ar as v,Kn as w,Jn as x,$n as y};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/b0ac1aff-ir0sazghf28a0pjr.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-t80q9ew944ej0mgk.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/0f28d127-nklp1mbg6pt8usv8.js", "assets/conversation-small-ocicxxw6jegn4vux.js", "assets/30901919-r9pahacmzqudnt4f.js", "assets/c470f5ab-py8gip6x11wq9s88.js", "assets/0e5afe53-bfccq9og5d2mon04.js", "assets/conversation-small-ht8gwtl7.css"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    $w as r,
+    AE as i,
+    CR as a,
+    Dit as o,
+    Fz as s,
+    I8 as c,
+    Int as l,
+    Iz as u,
+    J7 as d,
+    Jw as f,
+    Kw as p,
+    Nw as m,
+    Oit as h,
+    Pnt as g,
+    Pw as _,
+    Q7 as v,
+    Qy as y,
+    R8 as b,
+    SK as x,
+    TR as S,
+    U1 as C,
+    Xw as w,
+    ZG as T,
+    Zot as E,
+    Zw as D,
+    Zy as O,
+    a0 as k,
+    a2 as A,
+    art as j,
+    c2 as M,
+    c7 as N,
+    d2 as P,
+    eE as F,
+    eK as I,
+    gst as L,
+    hl as R,
+    hst as ee,
+    ia as z,
+    it as B,
+    k8 as V,
+    kE as H,
+    l7 as U,
+    ml as W,
+    nt as te,
+    o0 as ne,
+    o2 as re,
+    ot as ie,
+    prt as ae,
+    q1 as G,
+    q5 as oe,
+    ra as se,
+    rq as ce,
+    srt as le,
+    tT as ue,
+    tt as de,
+    uq as fe,
+    urt as pe,
+    wh as me,
+    xK as he,
+    xh as ge
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    At as _e,
+    Bn as ve,
+    Ln as ye,
+    Nn as K,
+    Nt as be,
+    O as xe,
+    Q as Se,
+    Rn as Ce,
+    Vn as we,
+    cn as Te,
+    ct as Ee,
+    it as De,
+    ln as Oe,
+    s as ke,
+    wn as Ae,
+    zn as je
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $Hn as Me,
+    A8t as Ne,
+    AJ as Pe,
+    Bun as Fe,
+    F7 as Ie,
+    FNn as Le,
+    G3t as Re,
+    Gst as ze,
+    H3t as Be,
+    H4t as Ve,
+    I7 as He,
+    I8t as Ue,
+    IMt as We,
+    Jln as Ge,
+    L4t as Ke,
+    LMt as qe,
+    Mjt as Je,
+    Mun as Ye,
+    Njt as Xe,
+    P8t as Ze,
+    PCn as Qe,
+    PNn as $e,
+    QHn as et,
+    RCn as tt,
+    U3t as nt,
+    Ust as rt,
+    V4t as it,
+    Vun as at,
+    W3t as ot,
+    WMt as st,
+    XMt as ct,
+    _Wn as lt,
+    aKn as ut,
+    eUn as dt,
+    fWn as ft,
+    jJ as pt,
+    lkt as mt,
+    o2t as ht,
+    pWn as gt,
+    qMt as _t,
+    s2t as vt,
+    sKn as yt,
+    ukt as bt,
+    yWn as xt,
+    z4t as St
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+import {
+    $f as Ct,
+    $x as wt,
+    Kb as Tt,
+    Kv as Et,
+    Qf as Dt,
+    Qx as Ot,
+    Zf as kt,
+    ep as At,
+    ex as jt,
+    hv as Mt,
+    ip as Nt,
+    mv as Pt,
+    np as Ft,
+    qb as It,
+    qv as Lt,
+    rp as Rt,
+    tp as zt,
+    tx as Bt
+} from "./30901919-r9pahacmzqudnt4f.js";
+import {
+    AS as Vt,
+    RC as Ht,
+    ax as Ut,
+    cC as Wt,
+    ex as Gt,
+    fx as Kt,
+    kS as qt,
+    tx as Jt,
+    ux as Yt
+} from "./c2675c8c-p3x4d0bnf7e77o1n.js";
+import {
+    $u as Xt,
+    Ch as Zt,
+    Oh as Qt,
+    Sh as $t,
+    bu as en,
+    nd as tn,
+    wh as nn,
+    xh as rn,
+    xu as an
+} from "./8b34dbc2-egl8cz04n8nmlktg.js";
+import {
+    Ht as on,
+    Vt as sn
+} from "./c470f5ab-py8gip6x11wq9s88.js";
+import {
+    a as cn,
+    i as ln,
+    n as un
+} from "./5f4d7fa0-ozobd91aufocy1xp.js";
+import {
+    n as dn,
+    t as fn
+} from "./673c0d9b-kkdfn13ai6mrj3m8.js";
+import {
+    i as pn,
+    l as mn,
+    o as hn,
+    u as gn
+} from "./e19f3910-b2tehuk0f6f3y30c.js";
+import {
+    d as _n,
+    o as vn
+} from "./e9df0b0e-guis70e509etk8dc.js";
+import {
+    r as yn,
+    t as bn
+} from "./f23f926c-on8y7f8xm2uysfwj.js";
+import {
+    n as xn,
+    t as Sn
+} from "./ab4d12c6-bl7w245obqzi1h5v.js";
+import {
+    n as Cn,
+    t as wn
+} from "./dd81d43b-eoew3j4qpr9hxml0.js";
+import {
+    n as Tn,
+    t as En
+} from "./19189336-k2phecsrw2z9845i.js";
+import {
+    n as Dn,
+    o as On,
+    s as kn,
+    t as An
+} from "./a0561fd6-o0sv55s92vawd582.js";
+import {
+    n as jn,
+    r as Mn
+} from "./333fd2ad-b9canc46kwucs6bp.js";
+import {
+    i as Nn,
+    t as Pn
+} from "./fab52ad7-fintq2t5ygluaa1w.js";
+import {
+    r as Fn,
+    t as In
+} from "./d848de1a-in64ipnw8c2z9go3.js";
+import {
+    i as Ln,
+    r as Rn
+} from "./ab92372e-h3j4qii1au9y3ur0.js";
+
+function zn() {
+    "use forget";
+    let e = (0, Gn.c)(39),
+        t = je(),
+        r = at(Wn),
+        i = at(Un),
+        a = at(Hn),
+        o = at(Vn),
+        {
+            connectorId: s
+        } = ln(),
+        {
+            eligible: c,
+            isLoading: l
+        } = ct(),
+        u;
+    e[0] === o ? u = e[1] : (u = !!o && !o.startsWith(`gitlab-`), e[0] = o, e[1] = u);
+    let d = u,
+        f = o ?? ``,
+        p;
+    e[2] !== s || e[3] !== f ? (p = [`wham`, `repository`, f, s], e[2] = s, e[3] = f, e[4] = p) : p = e[4];
+    let m;
+    e[5] !== s || e[6] !== o ? (m = () => W.getRepository(o ?? ``, s), e[5] = s, e[6] = o, e[7] = m) : m = e[7];
+    let h;
+    e[8] !== d || e[9] !== p || e[10] !== m ? (h = {
+        queryKey: p,
+        enabled: d,
+        queryFn: m,
+        staleTime: 3e5
+    }, e[8] = d, e[9] = p, e[10] = m, e[11] = h) : h = e[11];
+    let {
+        data: g
+    } = xe(h);
+    if (!r || !i || l || !c) return null;
+    let _ = `/codex/cloud/settings/environment/${r}/edit`,
+        v;
+    e[12] !== a || e[13] !== c ? (v = () => {
+        a(), c && B(st)
+    }, e[12] = a, e[13] = c, e[14] = v) : v = e[14];
+    let y = v,
+        b;
+    e[15] !== a || e[16] !== c ? (b = () => {
+        c && B(st), a()
+    }, e[15] = a, e[16] = c, e[17] = b) : b = e[17];
+    let x = b,
+        S;
+    e[18] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, q.jsx)(`div`, {
+        className: `rounded-full p-1`,
+        children: (0, q.jsx)(Rt, {
+            className: `text-token-text-primary size-4`
+        })
+    }), e[18] = S) : S = e[18];
+    let C;
+    e[19] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, q.jsx)(`div`, {
+        className: `flex-1 text-sm`,
+        children: (0, q.jsx)(`p`, {
+            className: `text-token-text-primary font-medium`,
+            children: (0, q.jsx)(K, {
+                id: `wham.envlessEnvironmentPopover.title`,
+                defaultMessage: `Environment created`
+            })
+        })
+    }), e[19] = C) : C = e[19];
+    let w;
+    e[20] === t ? w = e[21] : (w = t.formatMessage({
+        id: `wham.envlessEnvironmentPopover.dismiss`,
+        defaultMessage: `Dismiss environment onboarding popover`
+    }), e[20] = t, e[21] = w);
+    let T;
+    e[22] !== y || e[23] !== w ? (T = (0, q.jsxs)(`div`, {
+        className: `flex items-center gap-3`,
+        children: [S, C, (0, q.jsx)(n, {
+            size: `small`,
+            color: `ghost`,
+            icon: Pt,
+            "aria-label": w,
+            onClick: y
+        })]
+    }), e[22] = y, e[23] = w, e[24] = T) : T = e[24];
+    let E;
+    e[25] === g ? E = e[26] : (E = (0, q.jsx)(`p`, {
+        children: g?.name ? (0, q.jsx)(K, {
+            id: `wham.envlessEnvironmentPopover.bodyRest1`,
+            defaultMessage: `Codex has created a default environment for your repo: <b>{repoName}</b>.`,
+            values: {
+                b: Bn,
+                repoName: g.name
+            }
+        }) : (0, q.jsx)(K, {
+            id: `wham.envlessEnvironmentPopover.bodyRest1NoRepo`,
+            defaultMessage: `To get the most out of Codex, add the packages and tools your project depends on.`
+        })
+    }), e[25] = g, e[26] = E);
+    let D;
+    e[27] === Symbol.for(`react.memo_cache_sentinel`) ? (D = (0, q.jsx)(`p`, {
+        children: (0, q.jsx)(K, {
+            id: `wham.envlessEnvironmentPopover.bodyRest2`,
+            defaultMessage: `To enable full testing and framework support, customize it with the languages and tools you use.`
+        })
+    }), e[27] = D) : D = e[27];
+    let O;
+    e[28] === E ? O = e[29] : (O = (0, q.jsx)(`p`, {
+        className: `text-token-text-primary pt-2 text-sm`,
+        children: (0, q.jsxs)(`div`, {
+            className: `flex flex-col gap-2`,
+            children: [E, D]
+        })
+    }), e[28] = E, e[29] = O);
+    let k, A;
+    e[30] === Symbol.for(`react.memo_cache_sentinel`) ? (k = (0, q.jsx)(K, {
+        id: `wham.envlessEnvironmentPopover.editLink`,
+        defaultMessage: `Edit environment`
+    }), A = (0, q.jsx)(Et, {
+        className: `size-3.5`
+    }), e[30] = k, e[31] = A) : (k = e[30], A = e[31]);
+    let j;
+    e[32] !== _ || e[33] !== x ? (j = (0, q.jsx)(`div`, {
+        className: `flex w-full justify-end`,
+        children: (0, q.jsxs)(De, {
+            to: _,
+            className: `text-token-text-accent hover:text-token-text-accent/80 mt-3 inline-flex items-center gap-1 font-medium underline`,
+            onClick: x,
+            children: [k, A]
+        })
+    }), e[32] = _, e[33] = x, e[34] = j) : j = e[34];
+    let M;
+    return e[35] !== T || e[36] !== O || e[37] !== j ? (M = (0, q.jsx)(`div`, {
+        className: `pointer-events-none fixed end-4 bottom-4 z-50 flex justify-end`,
+        children: (0, q.jsxs)(`div`, {
+            className: `border-token-border-default bg-token-bg-primary dark:bg-token-bg-tertiary pointer-events-auto w-80 max-w-full rounded-2xl border p-4 shadow-[0px_16px_48px_rgba(0,0,0,0.16)]`,
+            children: [T, O, j]
+        })
+    }), e[35] = T, e[36] = O, e[37] = j, e[38] = M) : M = e[38], M
+}
+
+function Bn(e) {
+    return (0, q.jsx)(`b`, {
+        children: e
+    })
+}
+
+function Vn(e) {
+    return e.selectedRepositoryId
+}
+
+function Hn(e) {
+    return e.dismissEnvironmentOnboardingPopover
+}
+
+function Un(e) {
+    return e.showEnvironmentOnboardingPopover
+}
+
+function Wn(e) {
+    return e.autoCreatedEnvironmentId
+}
+var Gn, q, Kn = e((() => {
+    Gn = Ae(), F(), Lt(), Nt(), Mt(), te(), _t(), un(), R(), Fe(), ke(), Ce(), Se(), q = ve()
+}));
+
+function qn({
+    connectorError: e,
+    isConnected: t,
+    isGithubDisabledByAdmin: n,
+    isLoading: r
+}) {
+    return r ? `loading` : e ? `error` : n ? `disabled` : t ? `connected` : `disconnected`
+}
+
+function Jn({
+    githubAccessStatus: e,
+    hasAdminAccess: t = !1
+}) {
+    if (e === `loading`) return !1;
+    if (t === !0) return !0;
+    switch (e) {
+        case `connected`:
+        case `error`:
+            return !0;
+        case `disabled`:
+        case `disconnected`:
+            return !1
+    }
+}
+
+function Yn(e) {
+    "use forget";
+    let t = (0, Xn.c)(18),
+        n;
+    t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+    let {
+        redirectAfter: r
+    } = n, i = r === void 0 ? `/codex/cloud/security` : r, a;
+    t[2] === i ? a = t[3] : (a = {
+        redirectAfter: i
+    }, t[2] = i, t[3] = a);
+    let {
+        error: o,
+        isConnected: s,
+        isLoading: c,
+        openGithubModal: l,
+        platformConnector: u,
+        refetch: d
+    } = ln(a), f = u?.status === `DISABLED_BY_ADMIN`, p;
+    t[4] !== o || t[5] !== s || t[6] !== f || t[7] !== c ? (p = qn({
+        connectorError: o,
+        isConnected: s,
+        isGithubDisabledByAdmin: f,
+        isLoading: c
+    }), t[4] = o, t[5] = s, t[6] = f, t[7] = c, t[8] = p) : p = t[8];
+    let m = p,
+        h;
+    return t[9] !== o || t[10] !== s || t[11] !== f || t[12] !== c || t[13] !== l || t[14] !== u || t[15] !== d || t[16] !== m ? (h = {
+        connectorError: o,
+        isConnected: s,
+        isGithubDisabledByAdmin: f,
+        isLoading: c,
+        openGithubModal: l,
+        platformConnector: u,
+        refetch: d,
+        status: m
+    }, t[9] = o, t[10] = s, t[11] = f, t[12] = c, t[13] = l, t[14] = u, t[15] = d, t[16] = m, t[17] = h) : h = t[17], h
+}
+var Xn, Zn = e((() => {
+    Xn = Ae(), un()
+}));
+
+function Qn(e) {
+    return e === -1 ? null : e
+}
+
+function $n() {
+    "use forget";
+    let e = (0, rr.c)(27),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = C()?.getWorkspaceId(), e[0] = t) : t = e[0];
+    let n = _n(t),
+        r, i, a, o, s, c, l, u, d, f;
+    if (e[1] !== n.hasLoadedAllPages || e[2] !== n.quotaUsedCount || e[3] !== n.scanMap) {
+        let t = pe(`3689744552`);
+        d = Qn(t.get(`scans_count`, ir.scans_count)), c = t.get(`lookback_days`, ir.lookback_days), i = Qn(c);
+        let p = t.get(`lookback_days_options`, ir.lookback_days_options).map(nr);
+        o = t.get(`min_commits`, ir.min_commits), a = t.get(`max_commits`, ir.max_commits), u = Qn(t.get(`remaining_scans_cta_threshold`, ir.remaining_scans_cta_threshold)), s = n.quotaUsedCount ?? (n.hasLoadedAllPages ? n.scanMap.size : void 0), l = d == null || s === void 0 ? null : Math.max(d - s, 0), r = l != null && u != null && l <= u, f = Array.from(new Set([...p, c].filter(tr))).sort(er), e[1] = n.hasLoadedAllPages, e[2] = n.quotaUsedCount, e[3] = n.scanMap, e[4] = r, e[5] = i, e[6] = a, e[7] = o, e[8] = s, e[9] = c, e[10] = l, e[11] = u, e[12] = d, e[13] = f
+    } else r = e[4], i = e[5], a = e[6], o = e[7], s = e[8], c = e[9], l = e[10], u = e[11], d = e[12], f = e[13];
+    let p = f,
+        m = l != null && l <= 0,
+        h = n.isLoading || s === void 0,
+        g = c === -1,
+        _;
+    return e[14] !== r || e[15] !== i || e[16] !== a || e[17] !== o || e[18] !== p || e[19] !== s || e[20] !== l || e[21] !== u || e[22] !== d || e[23] !== m || e[24] !== h || e[25] !== g ? (_ = {
+        isExhausted: m,
+        isLoading: h,
+        isNearScanLimit: r,
+        lookbackDaysLimit: i,
+        lookbackDaysOptions: p,
+        maxCommits: a,
+        minCommits: o,
+        ownedScanCount: s,
+        remainingScans: l,
+        remainingScansCtaThreshold: u,
+        scansCount: d,
+        supportsIndefiniteLookback: g
+    }, e[14] = r, e[15] = i, e[16] = a, e[17] = o, e[18] = p, e[19] = s, e[20] = l, e[21] = u, e[22] = d, e[23] = m, e[24] = h, e[25] = g, e[26] = _) : _ = e[26], _
+}
+
+function er(e, t) {
+    return e - t
+}
+
+function tr(e) {
+    return e > 0
+}
+
+function nr(e) {
+    return Number(e)
+}
+var rr, ir, ar = e((() => {
+    rr = Ae(), vn(), G(), ae(), ir = {
+        scans_count: -1,
+        lookback_days: -1,
+        lookback_days_options: [7, 14, 30, 60],
+        min_commits: 1e3,
+        max_commits: 1e4,
+        remaining_scans_cta_threshold: -1
+    }
+}));
+
+function or(e) {
+    "use forget";
+    let t = (0, lr.c)(34),
+        {
+            hasRecordedInterest: r,
+            isPopoverOpen: i,
+            onDismissPermanently: a,
+            onGetInTouch: o,
+            onMaybeLater: s,
+            onOpenChange: c
+        } = e,
+        l = je(),
+        u;
+    t[0] === l ? u = t[1] : (u = l.formatMessage({
+        id: `wham.whamHeader.getMoreScansAriaLabel`,
+        defaultMessage: `Open the get more scans dialog`
+    }), t[0] = l, t[1] = u);
+    let d;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, J.jsx)(`span`, {
+        className: `flex items-center gap-1`,
+        children: (0, J.jsx)(K, {
+            id: `wham.whamHeader.getMoreScans`,
+            defaultMessage: `Get more scans`
+        })
+    }), t[2] = d) : d = t[2];
+    let f;
+    t[3] === u ? f = t[4] : (f = (0, J.jsx)(n, {
+        type: `button`,
+        color: `secondary`,
+        label: u,
+        children: d
+    }), t[3] = u, t[4] = f);
+    let p;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, J.jsx)(`div`, {
+        className: `text-token-text-primary text-[15px] leading-5 font-medium`,
+        children: (0, J.jsx)(K, {
+            id: `wham.securityRateLimitModal.title`,
+            defaultMessage: `Codex Security is in Research Preview`
+        })
+    }), t[5] = p) : p = t[5];
+    let m;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, J.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [p, (0, J.jsx)(`div`, {
+            className: `text-token-text-secondary text-sm leading-5`,
+            children: (0, J.jsx)(K, {
+                id: `wham.securityRateLimitModal.description`,
+                defaultMessage: `Codex Security is in Research Preview with limits on the number of scans you can perform. If you'd like early access to the paid version, please let us know.`
+            })
+        })]
+    }), t[6] = m) : m = t[6];
+    let h;
+    t[7] === o ? h = t[8] : (h = () => void o(), t[7] = o, t[8] = h);
+    let g;
+    t[9] !== r || t[10] !== l ? (g = r ? l.formatMessage({
+        id: `wham.securityRateLimitModal.success`,
+        defaultMessage: `Thanks! Your response has been recorded`
+    }) : l.formatMessage({
+        id: `wham.securityRateLimitModal.getInTouch`,
+        defaultMessage: `Yes, get in touch with me`
+    }), t[9] = r, t[10] = l, t[11] = g) : g = t[11];
+    let _;
+    t[12] !== h || t[13] !== g ? (_ = (0, J.jsx)(n, {
+        color: `primary`,
+        fullWidth: !0,
+        onClick: h,
+        children: g
+    }), t[12] = h, t[13] = g, t[14] = _) : _ = t[14];
+    let v;
+    t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, J.jsx)(K, {
+        id: `wham.securityRateLimitModal.maybeLater`,
+        defaultMessage: `Maybe later`
+    }), t[15] = v) : v = t[15];
+    let y;
+    t[16] === s ? y = t[17] : (y = (0, J.jsx)(n, {
+        color: `ghost`,
+        onClick: s,
+        children: v
+    }), t[16] = s, t[17] = y);
+    let b;
+    t[18] === a ? b = t[19] : (b = () => void a(), t[18] = a, t[19] = b);
+    let x;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, J.jsx)(K, {
+        id: `wham.securityRateLimitModal.noThanks`,
+        defaultMessage: `No thanks`
+    }), t[20] = x) : x = t[20];
+    let S;
+    t[21] === b ? S = t[22] : (S = (0, J.jsx)(n, {
+        color: `secondary`,
+        onClick: b,
+        children: x
+    }), t[21] = b, t[22] = S);
+    let C;
+    t[23] !== y || t[24] !== S ? (C = (0, J.jsxs)(`div`, {
+        className: `flex items-center justify-end gap-2`,
+        children: [y, S]
+    }), t[23] = y, t[24] = S, t[25] = C) : C = t[25];
+    let w;
+    t[26] !== C || t[27] !== _ ? (w = (0, J.jsxs)(`div`, {
+        className: `flex flex-col gap-4`,
+        children: [m, (0, J.jsxs)(`div`, {
+            className: `flex flex-col gap-2`,
+            children: [_, C]
+        })]
+    }), t[26] = C, t[27] = _, t[28] = w) : w = t[28];
+    let T;
+    return t[29] !== i || t[30] !== c || t[31] !== w || t[32] !== f ? (T = (0, J.jsx)(Ie, {
+        open: i,
+        onOpenChange: c,
+        side: `bottom`,
+        alignAgainstAnchor: `start`,
+        sideOffset: 4,
+        disableAutofocus: !0,
+        className: `w-[440px] max-w-[440px] rounded-2xl p-4`,
+        triggerButton: f,
+        children: w
+    }), t[29] = i, t[30] = c, t[31] = w, t[32] = f, t[33] = T) : T = t[33], T
+}
+
+function sr() {
+    "use forget";
+    let e = (0, lr.c)(1),
+        {
+            hasAdminAccess: t
+        } = dn(),
+        {
+            status: n
+        } = Yn();
+    if (!Jn({
+            githubAccessStatus: n,
+            hasAdminAccess: t
+        })) return null;
+    let r;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, J.jsx)(cr, {}), e[0] = r) : r = e[0], r
+}
+
+function cr() {
+    "use forget";
+    let e = (0, lr.c)(7),
+        [t, n] = (0, ur.useState)(!1),
+        [r, i] = (0, ur.useState)(!1),
+        {
+            eligible: a,
+            isLoading: o
+        } = ie(de.hasAcknowledgedAardvarkScanLimitAnnouncement),
+        {
+            isNearScanLimit: s,
+            scansCount: c
+        } = $n(),
+        l = s && (!o && a && c != null && s || r),
+        u;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (u = () => {
+        n(!1), g.logStructuredEvent(`CodexSecurityScanLimitPromptAction`, {
+            actionType: $e.CODEX_SECURITY_SCAN_LIMIT_PROMPT_ACTION_TYPE_MAYBE_LATER
+        })
+    }, e[0] = u) : u = e[0];
+    let d = u,
+        f;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (f = async () => {
+        n(!1), g.logStructuredEvent(`CodexSecurityScanLimitPromptAction`, {
+            actionType: $e.CODEX_SECURITY_SCAN_LIMIT_PROMPT_ACTION_TYPE_DISMISS
+        }), await B(de.hasAcknowledgedAardvarkScanLimitAnnouncement)
+    }, e[1] = f) : f = e[1];
+    let p = f,
+        m;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (m = async () => {
+        i(!0), g.logStructuredEvent(`CodexSecurityScanLimitPromptAction`, {
+            actionType: $e.CODEX_SECURITY_SCAN_LIMIT_PROMPT_ACTION_TYPE_GET_IN_TOUCH
+        }), await B(de.hasAcknowledgedAardvarkScanLimitAnnouncement)
+    }, e[2] = m) : m = e[2];
+    let h = m,
+        _;
+    e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = e => {
+        n(e), e || i(!1)
+    }, e[3] = _) : _ = e[3];
+    let v = _,
+        y;
+    return e[4] !== r || e[5] !== t ? (y = (0, J.jsx)(or, {
+        hasRecordedInterest: r,
+        isPopoverOpen: t,
+        onDismissPermanently: p,
+        onGetInTouch: h,
+        onMaybeLater: d,
+        onOpenChange: v
+    }), e[4] = r, e[5] = t, e[6] = y) : y = e[6], l ? y : null
+}
+var lr, ur, J, dr = e((() => {
+    lr = Ae(), fn(), F(), Zn(), ar(), He(), te(), l(), Le(), ur = t(we()), Ce(), J = ve()
+}));
+
+function fr() {
+    return pe(`349697204`)
+}
+
+function pr() {
+    "use forget";
+    let e = (0, br.c)(2),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = h(), e[0] = t) : t = e[0];
+    let n = !t;
+    mt.markStart(`WhamLoginOrProfileMenu`), mt.markRendered(`WhamLoginOrProfileMenu`);
+    let r;
+    return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (r = n ? (0, Y.jsx)(Xt, {}) : (0, Y.jsx)(mr, {}), e[1] = r) : r = e[1], r
+}
+
+function mr() {
+    "use forget";
+    let e = (0, br.c)(57),
+        {
+            data: t
+        } = k(),
+        n = S(),
+        r = C(),
+        i = be(),
+        a = _e(),
+        o = je(),
+        s = fr(),
+        c = E(),
+        {
+            openSettings: l
+        } = vt(),
+        u = at(yr),
+        d = at(vr),
+        f;
+    e[0] === i ? f = e[1] : (f = () => {
+        i(`/codex/cloud/settings/general`)
+    }, e[0] = i, e[1] = f);
+    let p = f;
+    if (!r) {
+        let t;
+        return e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Y.jsx)(`div`, {
+            className: `flex h-10 w-10 items-center justify-center`,
+            children: (0, Y.jsx)(`div`, {
+                className: `bg-token-bg-tertiary h-8 w-8 rounded-full`
+            })
+        }), e[2] = t) : t = e[2], t
+    }
+    let {
+        showAccountSwitcher: m
+    } = Ke({
+        accountState: t,
+        currentSession: c,
+        user: n
+    }), h = m, g;
+    e[3] === h ? g = e[4] : (g = () => {
+        h && Ve()
+    }, e[3] = h, e[4] = g);
+    let _ = g,
+        v;
+    e[5] === a.pathname ? v = e[6] : (v = a.pathname.startsWith(`/codex/cloud/onboarding`), e[5] = a.pathname, e[6] = v);
+    let y = v,
+        b;
+    e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (b = ot(), e[7] = b) : b = e[7];
+    let x = b,
+        w = s.get(`changelog_date`, ``),
+        T = s.get(`changelog_url`, ``),
+        D;
+    bb0: {
+        if (!w) {
+            D = !1;
+            break bb0
+        }
+        let e = new Date(w);
+        if (Number.isNaN(e.getTime())) {
+            D = !1;
+            break bb0
+        }
+        D = Date.now() - e.getTime() < 6048e5
+    }
+    let O = D && u !== w,
+        A;
+    e[8] === O ? A = e[9] : (A = () => (0, Y.jsxs)(`span`, {
+        className: `relative`,
+        children: [(0, Y.jsx)(se, {
+            className: `icon`,
+            "aria-hidden": `true`
+        }), O && (0, Y.jsx)(Je, {
+            color: `blue`,
+            className: `border-token-bg-primary absolute end-0 top-0 border`
+        })]
+    }), e[8] = O, e[9] = A);
+    let j = A,
+        M;
+    e[10] === _ ? M = e[11] : (M = e => {
+        e && _()
+    }, e[10] = _, e[11] = M);
+    let N;
+    e[12] === o ? N = e[13] : (N = o.formatMessage({
+        id: `wham.whamProfile.openProfileMenu`,
+        defaultMessage: `Open Profile Menu`
+    }), e[12] = o, e[13] = N);
+    let P;
+    e[14] === Symbol.for(`react.memo_cache_sentinel`) ? (P = (0, Y.jsx)(ge, {
+        showPlanTypeBadge: !0
+    }), e[14] = P) : P = e[14];
+    let F;
+    e[15] === O ? F = e[16] : (F = O && (0, Y.jsx)(Je, {
+        color: `blue`,
+        className: `border-token-bg-primary absolute end-0 top-0 border`
+    }), e[15] = O, e[16] = F);
+    let I;
+    e[17] === F ? I = e[18] : (I = (0, Y.jsxs)(`span`, {
+        className: `relative`,
+        children: [P, F]
+    }), e[17] = F, e[18] = I);
+    let L;
+    e[19] !== _ || e[20] !== I || e[21] !== N ? (L = (0, Y.jsx)(`button`, {
+        onFocus: _,
+        onMouseEnter: _,
+        onClick: _r,
+        "aria-label": N,
+        "data-testid": `profile-button`,
+        className: `text-token-text-secondary hover:text-token-text-primary hover:bg-token-interactive-bg-secondary-hover radix-state-open:text-token-text-secondary flex h-10 w-10 items-center justify-center rounded-full px-1 transition focus-visible:outline-0`,
+        children: I
+    }), e[19] = _, e[20] = I, e[21] = N, e[22] = L) : L = e[22];
+    let R;
+    e[23] === h ? R = e[24] : (R = (0, Y.jsx)(rn, {
+        showAccountSwitcher: h,
+        accountSwitcherRedirectUrl: `/codex/cloud?refresh_account=true`
+    }), e[23] = h, e[24] = R);
+    let ee;
+    e[25] !== y || e[26] !== p ? (ee = !y && (0, Y.jsx)(Me.Item, {
+        onClick: p,
+        icon: zt,
+        "data-testid": `accounts-settings-button`,
+        children: (0, Y.jsx)(K, {
+            id: `wham.whamProfile.codexSettings`,
+            defaultMessage: `Codex settings`
+        })
+    }), e[25] = y, e[26] = p, e[27] = ee) : ee = e[27];
+    let z;
+    e[28] === Symbol.for(`react.memo_cache_sentinel`) ? (z = (0, Y.jsx)(Zt, {}), e[28] = z) : z = e[28];
+    let B;
+    e[29] === l ? B = e[30] : (B = () => l(), e[29] = l, e[30] = B);
+    let V;
+    e[31] === Symbol.for(`react.memo_cache_sentinel`) ? (V = (0, Y.jsx)(K, {
+        id: `wham.whamProfile.chatgptSettings`,
+        defaultMessage: `ChatGPT settings`
+    }), e[31] = V) : V = e[31];
+    let H;
+    e[32] === B ? H = e[33] : (H = (0, Y.jsx)(Me.Item, {
+        icon: It,
+        onClick: B,
+        "data-testid": `settings-menu-item`,
+        children: V
+    }), e[32] = B, e[33] = H);
+    let U;
+    e[34] === Symbol.for(`react.memo_cache_sentinel`) ? (U = (0, Y.jsx)(Me.Item, {
+        className: `touch:hidden`,
+        icon: At,
+        onPointerOver: gr,
+        onClick: hr,
+        children: (0, Y.jsx)(K, {
+            id: `wham.whamProfile.keyboardShortcutsMenu`,
+            defaultMessage: `Keyboard shortcuts`
+        })
+    }), e[34] = U) : U = e[34];
+    let W;
+    e[35] !== j || e[36] !== w || e[37] !== T || e[38] !== y || e[39] !== d ? (W = !y && T && (0, Y.jsx)(Me.LinkItem, {
+        icon: j,
+        external: !0,
+        to: T,
+        onClick: () => {
+            w && d(w)
+        },
+        children: (0, Y.jsx)(K, {
+            id: `wham.whamProfile.changelog`,
+            defaultMessage: `Changelog`
+        })
+    }), e[35] = j, e[36] = w, e[37] = T, e[38] = y, e[39] = d, e[40] = W) : W = e[40];
+    let te;
+    e[41] === Symbol.for(`react.memo_cache_sentinel`) ? (te = (0, Y.jsxs)(Y.Fragment, {
+        children: [(0, Y.jsx)(Me.Separator, {}), (0, Y.jsx)($t, {})]
+    }), e[41] = te) : te = e[41];
+    let ne;
+    e[42] === x ? ne = e[43] : (ne = (x || !1) && (0, Y.jsx)(Me.Separator, {}), e[42] = x, e[43] = ne);
+    let re;
+    e[44] === x ? re = e[45] : (re = x && (0, Y.jsx)(Be, {}), e[44] = x, e[45] = re);
+    let ie, ae;
+    e[46] === Symbol.for(`react.memo_cache_sentinel`) ? (ie = !1, ae = (0, Y.jsx)(nn, {}), e[46] = ie, e[47] = ae) : (ie = e[46], ae = e[47]);
+    let G;
+    return e[48] !== L || e[49] !== R || e[50] !== ee || e[51] !== H || e[52] !== W || e[53] !== ne || e[54] !== re || e[55] !== M ? (G = (0, Y.jsxs)(et, {
+        onOpenChange: M,
+        triggerButton: L,
+        children: [R, ee, z, H, U, W, te, ne, re, ie, ae]
+    }), e[48] = L, e[49] = R, e[50] = ee, e[51] = H, e[52] = W, e[53] = ne, e[54] = re, e[55] = M, e[56] = G) : G = e[56], G
+}
+
+function hr() {
+    P(xr)
+}
+
+function gr() {
+    return xr.prefetch()
+}
+
+function _r() {
+    g.logEvent(`Account: Open Profile Menu`), j.logEvent(`chatgpt_account_open_profile_menu`)
+}
+
+function vr(e) {
+    return e.setLastClickedChangelogDate
+}
+
+function yr(e) {
+    return e.lastClickedChangelogDate
+}
+var br, Y, xr, Sr = e((() => {
+    br = Ae(), me(), Xe(), dt(), Ft(), z(), Tt(), Ct(), M(), Re(), nt(), tn(), it(), St(), Qt(), ht(), G(), a(), o(), l(), bt(), ae(), Fe(), re(), Ce(), Se(), Y = ve(), Oe(), xr = A(() => Te(() => import(`./b0ac1aff-ir0sazghf28a0pjr.js`).then(e => (e.t(), e.r)).then(e => e.WhamKeyboardActionsModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])))
+}));
+
+function Cr() {
+    return le(`4285716042`)
+}
+var wr = e((() => {
+    ae()
+}));
+
+function Tr({
+    isUpsell: e = !1
+} = {}) {
+    return !e
+}
+var Er = e((() => {}));
+
+function Dr(e, t) {
+    return !e || !t ? null : kr({
+        workspaceId: e,
+        viewerId: E()?.user?.id
+    })
+}
+
+function Or(e) {
+    return Ze(Ne(`/agent-security`, e, void 0, typeof window > `u` ? `` : window.location.search), e)
+}
+var kr, Ar = e((() => {
+    Ue(), x(), V(), o(), v(), kr = b(({
+        workspaceId: e,
+        viewerId: t
+    }) => c(() => ({
+        queryKey: [`wham`, `agent-policy-editor`, e, t],
+        queryFn: async ({
+            signal: t
+        }) => {
+            let n = await d.safeGet(`/wham/config/agent-enterprise-managed`, {
+                signal: t,
+                additionalHeaders: he(e),
+                cache: `no-store`
+            });
+            if (typeof n.capabilities?.can_view != `boolean`) throw Error(`Policy editor status is unavailable`);
+            return n.editor_enabled === !0 && n.capabilities.can_view && !n.legacy_policy_editor_required
+        },
+        staleTime: 0,
+        retry: !1,
+        refetchOnWindowFocus: `always`
+    })))
+}));
+
+function jr(e) {
+    "use forget";
+    let t = (0, Nr.c)(22),
+        {
+            text: n,
+            path: r,
+            isActive: i,
+            trailing: a,
+            disabledReason: o
+        } = e,
+        s = be(),
+        c = o != null,
+        l = c || void 0,
+        u = c ? `text-token-text-tertiary cursor-not-allowed` : `hover:bg-token-bg-tertiary hover:cursor-pointer`,
+        d = i && !c && `bg-token-bg-tertiary font-semibold`,
+        f;
+    t[0] !== u || t[1] !== d ? (f = N(`flex w-full items-center gap-3 rounded-md p-2 text-start`, u, d), t[0] = u, t[1] = d, t[2] = f) : f = t[2];
+    let p;
+    t[3] !== c || t[4] !== s || t[5] !== r ? (p = () => {
+        c || s(r)
+    }, t[3] = c, t[4] = s, t[5] = r, t[6] = p) : p = t[6];
+    let m;
+    t[7] === n ? m = t[8] : (m = (0, X.jsx)(`span`, {
+        className: `min-w-0 flex-1 truncate`,
+        children: n
+    }), t[7] = n, t[8] = m);
+    let h;
+    t[9] !== c || t[10] !== a ? (h = c ? (0, X.jsx)(wt, {
+        "aria-hidden": !0,
+        className: `size-4 shrink-0`
+    }) : a, t[9] = c, t[10] = a, t[11] = h) : h = t[11];
+    let g;
+    t[12] !== l || t[13] !== f || t[14] !== p || t[15] !== m || t[16] !== h ? (g = (0, X.jsxs)(`button`, {
+        type: `button`,
+        "aria-disabled": l,
+        className: f,
+        onClick: p,
+        children: [m, h]
+    }), t[12] = l, t[13] = f, t[14] = p, t[15] = m, t[16] = h, t[17] = g) : g = t[17];
+    let _ = g,
+        v;
+    return t[18] !== _ || t[19] !== o || t[20] !== c ? (v = c ? (0, X.jsx)(O, {
+        label: o,
+        side: `right`,
+        className: `w-full`,
+        children: _
+    }) : _, t[18] = _, t[19] = o, t[20] = c, t[21] = v) : v = t[21], v
+}
+
+function Mr() {
+    "use forget";
+    let e = (0, Nr.c)(63),
+        t = ee(),
+        n = je(),
+        r = ne(),
+        i;
+    e[0] === r ? i = e[1] : (i = Gt(r), e[0] = r, e[1] = i);
+    let a = i,
+        o = _e(),
+        s = Nn(),
+        c = qe(),
+        l = Mn(),
+        u = kn(t),
+        d = oe(Dn),
+        f = l || !d.isError && d.data?.capabilities?.can_view === !0,
+        p;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (p = Tr(), e[2] = p) : p = e[2];
+    let m = p,
+        h = m,
+        g = s || m,
+        _ = c !== `DISABLED`,
+        v;
+    e[3] === r ? v = e[4] : (v = r?.getWorkspaceId(), e[3] = r, e[4] = v);
+    let y = v,
+        b;
+    e[5] !== l || e[6] !== u || e[7] !== y ? (b = () => Dr(y, l && u), e[5] = l, e[6] = u, e[7] = y, e[8] = b) : b = e[8];
+    let x = oe(b),
+        S;
+    e[9] !== x || e[10] !== y ? (S = y && x?.isSuccess && x.data ? Or(y) : void 0, e[9] = x, e[10] = y, e[11] = S) : S = e[11];
+    let C = S,
+        {
+            data: w
+        } = I(y),
+        T = r?.data.role != null && Qe(r.data.role),
+        E = y != null && (l || T),
+        D = Ye(),
+        O = E && D.isSuccess && D.data.codex_notifications_console_enabled === !0 ? Ze(Ne(`/general#workspace-codex-notifications`, y), y) : null,
+        k = _ && E && Cr(),
+        A = r?.planType,
+        j;
+    e[12] === A ? j = e[13] : (j = Kt(A), e[12] = A, e[13] = j);
+    let M = !j && Ut(w?.permissions, {
+            hasWorkspaceAdminRole: T,
+            planType: r?.planType
+        }) && (r?.isFedrampCompliantWorkspace !== !0 || In(y).adminConsoleUrl != null),
+        N;
+    e[14] === Symbol.for(`react.memo_cache_sentinel`) ? (N = (0, X.jsx)(`p`, {
+        className: `text-text-primary py-2 ps-2 text-xl leading-7 font-medium`,
+        children: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.settings`,
+            defaultMessage: `Settings`
+        })
+    }), e[14] = N) : N = e[14];
+    let P;
+    e[15] !== _ || e[16] !== o ? (P = _ && (0, X.jsx)(jr, {
+        text: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.general`,
+            defaultMessage: `General`
+        }),
+        path: `/codex/cloud/settings/general`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/general`)
+    }), e[15] = _, e[16] = o, e[17] = P) : P = e[17];
+    let F;
+    e[18] !== _ || e[19] !== o ? (F = _ && (0, X.jsx)(jr, {
+        text: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.environments`,
+            defaultMessage: `Environments`
+        }),
+        path: `/codex/cloud/settings/environments`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/environments`)
+    }), e[18] = _, e[19] = o, e[20] = F) : F = e[20];
+    let L;
+    e[21] !== _ || e[22] !== o ? (L = _ && (0, X.jsx)(jr, {
+        text: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.codeReview`,
+            defaultMessage: `Code review`
+        }),
+        path: `/codex/cloud/settings/code-review`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/code-review`)
+    }), e[21] = _, e[22] = o, e[23] = L) : L = e[23];
+    let R;
+    e[24] !== _ || e[25] !== o ? (R = _ && (0, X.jsx)(jr, {
+        text: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.connectors`,
+            defaultMessage: `Connectors`
+        }),
+        path: `/codex/cloud/settings/connectors`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/connectors`)
+    }), e[24] = _, e[25] = o, e[26] = R) : R = e[26];
+    let z;
+    e[27] !== _ || e[28] !== o ? (z = !_ || h ? null : (0, X.jsx)(jr, {
+        text: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.usage`,
+            defaultMessage: `Usage`
+        }),
+        path: `/codex/cloud/settings/usage`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/usage`)
+    }), e[27] = _, e[28] = o, e[29] = z) : z = e[29];
+    let B;
+    e[30] !== g || e[31] !== a || e[32] !== n || e[33] !== o ? (B = a == null ? g ? (0, X.jsx)(jr, {
+        text: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.analytics`,
+            defaultMessage: `Analytics`
+        }),
+        path: `/codex/cloud/settings/analytics`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/analytics`)
+    }) : null : (0, X.jsxs)(`a`, {
+        href: a,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        "aria-label": n.formatMessage({
+            id: `wham.settingsSidebar.analyticsAdminConsoleLink.ariaLabel`,
+            defaultMessage: `Analytics (opens in a new tab)`
+        }),
+        className: `interactive-button interactive-bg-secondary interactive-label-secondary interactive-outline-secondary flex w-full items-center gap-3 rounded-md p-2 text-start`,
+        children: [(0, X.jsx)(`span`, {
+            className: `min-w-0 flex-1 truncate`,
+            children: (0, X.jsx)(K, {
+                id: `wham.settingsSidebar.analytics`,
+                defaultMessage: `Analytics`
+            })
+        }), (0, X.jsx)(Bt, {
+            "aria-hidden": !0,
+            className: `icon-sm shrink-0`
+        })]
+    }), e[30] = g, e[31] = a, e[32] = n, e[33] = o, e[34] = B) : B = e[34];
+    let V;
+    e[35] !== _ || e[36] !== o ? (V = _ && (0, X.jsx)(jr, {
+        text: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.dataControls`,
+            defaultMessage: `Data controls`
+        }),
+        path: `/codex/cloud/settings/data`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/data`)
+    }), e[35] = _, e[36] = o, e[37] = V) : V = e[37];
+    let H;
+    e[38] !== k || e[39] !== n || e[40] !== o || e[41] !== O ? (H = O == null ? k ? (0, X.jsx)(jr, {
+        text: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.notifications`,
+            defaultMessage: `Notifications`
+        }),
+        path: `/codex/cloud/settings/notifications`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/notifications`)
+    }) : null : (0, X.jsxs)(`a`, {
+        href: O,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        "aria-label": n.formatMessage({
+            id: `wham.settingsSidebar.notificationsAdminConsoleLink.ariaLabel`,
+            defaultMessage: `Notifications (opens in a new tab)`
+        }),
+        className: `interactive-button interactive-bg-secondary interactive-label-secondary interactive-outline-secondary flex w-full items-center gap-3 rounded-md p-2 text-start`,
+        children: [(0, X.jsx)(`span`, {
+            className: `min-w-0 flex-1 truncate`,
+            children: (0, X.jsx)(K, {
+                id: `wham.settingsSidebar.notifications`,
+                defaultMessage: `Notifications`
+            })
+        }), (0, X.jsx)(Bt, {
+            "aria-hidden": !0,
+            className: `icon-sm shrink-0`
+        })]
+    }), e[38] = k, e[39] = n, e[40] = o, e[41] = O, e[42] = H) : H = e[42];
+    let U;
+    e[43] !== C || e[44] !== f || e[45] !== E || e[46] !== u || e[47] !== o ? (U = u && (f || E) && (C ? (0, X.jsxs)(`a`, {
+        href: C,
+        className: `hover:bg-token-bg-tertiary flex w-full items-center gap-3 rounded-md p-2 text-start`,
+        children: [(0, X.jsx)(`span`, {
+            className: `min-w-0 flex-1 truncate`,
+            children: (0, X.jsx)(K, {
+                id: `wham.settingsSidebar.managedConfigs`,
+                defaultMessage: `Policies & Configurations`
+            })
+        }), (0, X.jsx)(Bt, {
+            "aria-hidden": !0,
+            className: `icon-sm shrink-0`
+        })]
+    }) : (0, X.jsx)(jr, {
+        text: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.managedConfigs`,
+            defaultMessage: `Policies & Configurations`
+        }),
+        path: `/codex/cloud/settings/policies`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/policies`) || o.pathname.startsWith(`/codex/cloud/settings/managed-configs`),
+        disabledReason: f ? void 0 : (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.policyViewPermissionRequired`,
+            defaultMessage: `You need permission to view Codex policies. Ask a workspace owner to update your permissions.`
+        })
+    })), e[43] = C, e[44] = f, e[45] = E, e[46] = u, e[47] = o, e[48] = U) : U = e[48];
+    let W;
+    e[49] !== M || e[50] !== o ? (W = M && (0, X.jsx)(jr, {
+        text: (0, X.jsx)(K, {
+            id: `wham.settingsSidebar.accessTokens`,
+            defaultMessage: `Access tokens`
+        }),
+        path: `/codex/cloud/settings/access-tokens`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/access-tokens`),
+        trailing: (0, X.jsx)(Bt, {
+            "aria-hidden": !0,
+            "data-testid": `agent-identities-external-link-icon`,
+            className: `text-token-text-secondary ms-auto size-4 shrink-0`
+        })
+    }), e[49] = M, e[50] = o, e[51] = W) : W = e[51];
+    let te;
+    return e[52] !== L || e[53] !== R || e[54] !== z || e[55] !== B || e[56] !== V || e[57] !== H || e[58] !== U || e[59] !== W || e[60] !== P || e[61] !== F ? (te = (0, X.jsxs)(`div`, {
+        className: `flex w-64 flex-col gap-3 px-4`,
+        children: [N, (0, X.jsxs)(`div`, {
+            className: `flex flex-col gap-2 pe-3 text-sm`,
+            children: [P, F, L, R, z, B, V, H, U, W]
+        })]
+    }), e[52] = L, e[53] = R, e[54] = z, e[55] = B, e[56] = V, e[57] = H, e[58] = U, e[59] = W, e[60] = P, e[61] = F, e[62] = te) : te = e[62], te
+}
+var Nr, X, Pr = e((() => {
+    Nr = Ae(), Yt(), Jt(), Ue(), tt(), y(), Ot(), jt(), T(), L(), V(), G(), On(), We(), jn(), Pn(), wr(), Er(), Ar(), An(), Ge(), Fn(), U(), Ce(), Se(), X = ve()
+}));
+
+function Fr(e) {
+    "use forget";
+    let t = (0, Ir.c)(29),
+        [n, i] = (0, Lr.useState)(!1),
+        a = _e(),
+        o;
+    t[0] === a.pathname ? o = t[1] : (o = a.pathname.includes(`/codex/cloud/onboarding`), t[0] = a.pathname, t[1] = o);
+    let s = o,
+        c = je(),
+        {
+            hasAccess: l,
+            isWorkspaceAllowed: u
+        } = dn(),
+        d = l === !0 || u,
+        h;
+    t[2] === c ? h = t[3] : (h = c.formatMessage({
+        id: `wham.mobileSettingsSidebar.open`,
+        defaultMessage: `Open settings sidebar`
+    }), t[2] = c, t[3] = h);
+    let g;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, Z.jsx)(Dt, {
+        className: `icon`
+    }), t[4] = g) : g = t[4];
+    let _;
+    t[5] === h ? _ = t[6] : (_ = (0, Z.jsx)(r, {
+        asChild: !0,
+        children: (0, Z.jsx)(`button`, {
+            type: `button`,
+            className: `hover:bg-token-bg-tertiary text-token-text-secondary flex h-8 w-8 items-center justify-center rounded-md`,
+            "aria-label": h,
+            children: g
+        })
+    }), t[5] = h, t[6] = _);
+    let v;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, Z.jsx)(w, {
+        className: `fixed inset-0 z-40 bg-black/50`
+    }), t[7] = v) : v = t[7];
+    let y;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (y = () => i(!1), t[8] = y) : y = t[8];
+    let b;
+    t[9] === c ? b = t[10] : (b = c.formatMessage({
+        id: `wham.mobileSettingsSidebar.close`,
+        defaultMessage: `Close settings sidebar`
+    }), t[9] = c, t[10] = b);
+    let x;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, Z.jsx)(m, {
+        className: `icon`
+    }), t[11] = x) : x = t[11];
+    let S;
+    t[12] === b ? S = t[13] : (S = (0, Z.jsx)(`div`, {
+        className: `flex justify-end p-2`,
+        children: (0, Z.jsx)(`button`, {
+            type: `button`,
+            onClick: y,
+            className: `hover:bg-token-bg-tertiary text-token-text-secondary flex h-8 w-8 items-center justify-center rounded-md`,
+            "aria-label": b,
+            children: x
+        })
+    }), t[12] = b, t[13] = S);
+    let C;
+    t[14] !== c || t[15] !== s || t[16] !== d ? (C = d && !s && (0, Z.jsxs)(`div`, {
+        className: `mb-3 flex w-64 flex-col gap-3 px-4`,
+        children: [(0, Z.jsx)(`p`, {
+            className: `text-text-primary py-2 ps-2 text-xl leading-7 font-medium`,
+            children: (0, Z.jsx)(K, {
+                id: `wham.mobileSettingsSidebar.securityHeader`,
+                defaultMessage: `Security`
+            })
+        }), (0, Z.jsxs)(`div`, {
+            className: `flex flex-col gap-2 pe-3 text-sm`,
+            children: [le(`1908296950`) && (0, Z.jsx)(De, {
+                to: `/codex/cloud/security/overview`,
+                onClick: () => i(!1),
+                className: `hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2`,
+                children: (0, Z.jsx)(K, {
+                    id: `wham.mobileSettingsSidebar.overview`,
+                    defaultMessage: `Overview`
+                })
+            }), (0, Z.jsx)(De, {
+                to: `/codex/cloud/security/findings`,
+                onClick: () => i(!1),
+                className: `hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2`,
+                "aria-label": c.formatMessage({
+                    id: `wham.mobileSettingsSidebar.findingsAriaLabel`,
+                    defaultMessage: `Go to Security findings`
+                }),
+                children: (0, Z.jsx)(K, {
+                    id: `wham.mobileSettingsSidebar.findings`,
+                    defaultMessage: `Findings`
+                })
+            }), (0, Z.jsx)(De, {
+                to: `/codex/cloud/security/scans`,
+                onClick: () => i(!1),
+                className: `hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2`,
+                "aria-label": c.formatMessage({
+                    id: `wham.mobileSettingsSidebar.scansAriaLabel`,
+                    defaultMessage: `Go to Security scans`
+                }),
+                children: (0, Z.jsx)(K, {
+                    id: `wham.mobileSettingsSidebar.scans`,
+                    defaultMessage: `Scans`
+                })
+            })]
+        })]
+    }), t[14] = c, t[15] = s, t[16] = d, t[17] = C) : C = t[17];
+    let T;
+    t[18] === s ? T = t[19] : (T = !s && (0, Z.jsx)(Mr, {}), t[18] = s, t[19] = T);
+    let E;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, Z.jsx)(`div`, {
+        className: `px-4 py-2`,
+        children: (0, Z.jsx)(lt, {
+            href: `https://platform.openai.com/docs/codex/overview`,
+            target: `_blank`,
+            className: `hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2 text-sm`,
+            children: (0, Z.jsx)(K, {
+                id: `wham.mobileSettingsSidebar.docs`,
+                defaultMessage: `Docs`
+            })
+        })
+    }), t[20] = E) : E = t[20];
+    let O;
+    t[21] !== T || t[22] !== S || t[23] !== C ? (O = (0, Z.jsxs)(D, {
+        children: [v, (0, Z.jsxs)(f, {
+            className: `bg-token-bg-primary fixed inset-y-0 start-0 z-50 flex w-64 flex-col shadow-lg`,
+            children: [S, C, T, E]
+        })]
+    }), t[21] = T, t[22] = S, t[23] = C, t[24] = O) : O = t[24];
+    let k;
+    return t[25] !== n || t[26] !== O || t[27] !== _ ? (k = (0, Z.jsxs)(p, {
+        open: n,
+        onOpenChange: i,
+        children: [_, O]
+    }), t[25] = n, t[26] = O, t[27] = _, t[28] = k) : k = t[28], k
+}
+var Ir, Lr, Z, Rr = e((() => {
+    Ir = Ae(), fn(), _(), kt(), xt(), ae(), ue(), Lr = t(we()), Ce(), Se(), Pr(), Z = ve()
+}));
+
+function zr(e) {
+    "use forget";
+    let t = (0, Hr.c)(64),
+        {
+            hideNotificationBell: n,
+            hideSettingsLink: r,
+            className: i,
+            mobileLeadingContent: a,
+            mobileCenterContent: o,
+            mobileTrailingContent: c,
+            hideMobileLogo: l
+        } = e,
+        u = n !== void 0 && n,
+        d = r !== void 0 && r,
+        f = l !== void 0 && l,
+        p = !oe(fe),
+        m = je(),
+        h = _e(),
+        g = yn(),
+        _ = xn(),
+        v = gn(),
+        y;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (y = {
+        key: `chatgpt-codex-download`,
+        allowUnauthenticatedTracking: !0
+    }, t[0] = y) : y = t[0];
+    let {
+        trackSelectedPixels: b
+    } = Vt(y), x;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (x = {
+        key: Ht.CODEX_DOWNLOAD,
+        allowUnauthenticatedTracking: !0
+    }, t[1] = x) : x = t[1];
+    let {
+        trackSelectedPixels: S
+    } = Vt(x), {
+        hasAccess: C,
+        isWorkspaceAllowed: w
+    } = dn(), T = C === !0 || w, E = T ? `/codex/cloud/security` : `/aardvark`, D, k, A, j, M, P;
+    if (t[2] !== i || t[3] !== g || t[4] !== E || t[5] !== v || t[6] !== f || t[7] !== u || t[8] !== d || t[9] !== m || t[10] !== _ || t[11] !== p || t[12] !== h.pathname || t[13] !== o || t[14] !== a || t[15] !== c || t[16] !== T || t[17] !== S || t[18] !== b) {
+        let e = h.pathname.startsWith(`/codex/cloud/security`) || h.pathname.startsWith(`/aardvark`),
+            n;
+        t[25] === h.pathname ? n = t[26] : (n = h.pathname.startsWith(`/codex/cloud/settings`), t[25] = h.pathname, t[26] = n);
+        let r = !e && !n,
+            l = a != null || o != null || c != null,
+            y = !v || !_ || g.isLoadingOs || !g.canDownload,
+            x;
+        t[27] !== g.os || t[28] !== m ? (x = g.os === `linux` ? m.formatMessage(Ur.appNotAvailableOnLinuxTooltip) : void 0, t[27] = g.os, t[28] = m, t[29] = x) : x = t[29];
+        let C = x,
+            w;
+        t[30] !== g || t[31] !== m ? (w = Br(m, g), t[30] = g, t[31] = m, t[32] = w) : w = t[32];
+        let F = w,
+            I = !p && `ms-[5px] mt-[5px]`,
+            L;
+        t[33] === I ? L = t[34] : (L = N(`text-token-text-primary flex items-center gap-2 hover:cursor-pointer`, I), t[33] = I, t[34] = L);
+        let R = L;
+        t[35] !== i || t[36] !== l || t[37] !== p ? (P = N(p ? N(`grid w-full items-center gap-2`, l ? `grid-cols-[auto_minmax(0,1fr)_auto]` : `grid-cols-[1fr_auto_1fr]`) : `sticky top-0 flex w-full justify-end py-3 ps-3 pe-1`, i), t[35] = i, t[36] = l, t[37] = p, t[38] = P) : P = t[38], t[39] !== p || t[40] !== a ? (D = p ? a ?? (0, Q.jsx)(Fr, {}) : null, t[39] = p, t[40] = a, t[41] = D) : D = t[41];
+        let ee = p ? `flex min-w-0 items-center gap-3 self-center` : `absolute start-0 top-3 flex items-center gap-3 self-center`,
+            z;
+        t[42] === ee ? z = t[43] : (z = N(ee), t[42] = ee, t[43] = z);
+        let B;
+        t[44] !== R || t[45] !== f || t[46] !== m || t[47] !== p || t[48] !== o ? (B = p && o != null ? o : p && f ? null : (0, Q.jsx)(De, {
+            to: `/codex/cloud`,
+            className: R,
+            "aria-label": m.formatMessage({
+                id: `wham.whamHeader.codexHomeAriaLabel`,
+                defaultMessage: `Go to Codex`
+            }),
+            children: (0, Q.jsx)(ft, {
+                className: `h-[27px] w-auto shrink-0`
+            })
+        }), t[44] = R, t[45] = f, t[46] = m, t[47] = p, t[48] = o, t[49] = B) : B = t[49], t[50] !== z || t[51] !== B ? (k = (0, Q.jsx)(`div`, {
+            className: z,
+            children: B
+        }), t[50] = z, t[51] = B, t[52] = k) : k = t[52];
+        let V = p && `justify-end`;
+        t[53] === V ? A = t[54] : (A = N(`flex items-center gap-2`, V), t[53] = V, t[54] = A), j = p ? c ?? null : null, M = !p && (0, Q.jsx)(s, {
+            fallback: (0, Q.jsx)(`div`, {
+                className: `h-10 w-[320px]`
+            }),
+            children: (0, Q.jsxs)(`div`, {
+                className: `flex items-center`,
+                children: [e ? (0, Q.jsx)(sr, {}) : (0, Q.jsx)(wn, {}), (0, Q.jsxs)(`div`, {
+                    className: `ms-3 flex items-center gap-5`,
+                    children: [!1, (0, Q.jsxs)(`div`, {
+                        className: `flex items-center gap-5`,
+                        children: [(0, Q.jsx)(De, {
+                            to: `/codex/cloud`,
+                            className: Vr(r),
+                            "aria-label": m.formatMessage({
+                                id: `wham.whamHeader.codeAriaLabel`,
+                                defaultMessage: `Link to Code`
+                            }),
+                            children: (0, Q.jsx)(K, {
+                                id: `wham.whamHeader.code`,
+                                defaultMessage: `Code`
+                            })
+                        }), T && (0, Q.jsx)(De, {
+                            to: E,
+                            className: Vr(e),
+                            "aria-label": m.formatMessage({
+                                id: `wham.whamHeader.codexSecurityAriaLabel`,
+                                defaultMessage: `Link to Security`
+                            }),
+                            children: (0, Q.jsx)(K, {
+                                id: `wham.whamHeader.codexSecurity`,
+                                defaultMessage: `Security`
+                            })
+                        }), (0, Q.jsx)(O, {
+                            disabled: C == null,
+                            label: C,
+                            children: (0, Q.jsx)(`button`, {
+                                type: `button`,
+                                disabled: y,
+                                onClick: e => {
+                                    e.preventDefault(), !y && (Pe.recordCodexAppSurfaceAction(`header_download`, `download`), pn({
+                                        trackSelectedPixels: () => {
+                                            S(), b()
+                                        }
+                                    }))
+                                },
+                                className: Vr(!1, y),
+                                "aria-label": F,
+                                children: (0, Q.jsx)(K, {
+                                    id: `wham.whamHeader.app`,
+                                    defaultMessage: `App`
+                                })
+                            })
+                        }), (0, Q.jsx)(lt, {
+                            href: `https://platform.openai.com/docs/codex/overview`,
+                            target: `_blank`,
+                            className: Vr(!1),
+                            "aria-label": m.formatMessage({
+                                id: `wham.whamHeader.docsAriaLabel`,
+                                defaultMessage: `Link to the Codex docs page`
+                            }),
+                            children: (0, Q.jsx)(K, {
+                                id: `wham.whamHeader.docs`,
+                                defaultMessage: `Docs`
+                            })
+                        })]
+                    }), !d && (0, Q.jsxs)(`div`, {
+                        className: `flex items-center gap-0.5`,
+                        children: [(0, Q.jsx)(De, {
+                            to: `/codex/cloud/settings/general`,
+                            className: `no-draggable keyboard-focused:bg-token-interactive-bg-secondary-hover text-token-text-primary hover:bg-token-interactive-bg-secondary-hover flex h-8 w-8 items-center justify-center rounded-md focus:outline-none`,
+                            "aria-label": m.formatMessage({
+                                id: `wham.whamHeader.settingsAriaLabel`,
+                                defaultMessage: `Link to the Codex settings page`
+                            }),
+                            children: (0, Q.jsx)(It, {
+                                className: `icon-sm`
+                            })
+                        }), !u && (0, Q.jsx)(Tn, {
+                            className: `h-8! w-8! rounded-md!`
+                        })]
+                    }), d && !u && (0, Q.jsx)(`div`, {
+                        className: `flex items-center`,
+                        children: (0, Q.jsx)(Tn, {
+                            className: `h-8! w-8! rounded-md!`
+                        })
+                    })]
+                }), (0, Q.jsx)(pr, {})]
+            })
+        }), t[2] = i, t[3] = g, t[4] = E, t[5] = v, t[6] = f, t[7] = u, t[8] = d, t[9] = m, t[10] = _, t[11] = p, t[12] = h.pathname, t[13] = o, t[14] = a, t[15] = c, t[16] = T, t[17] = S, t[18] = b, t[19] = D, t[20] = k, t[21] = A, t[22] = j, t[23] = M, t[24] = P
+    } else D = t[19], k = t[20], A = t[21], j = t[22], M = t[23], P = t[24];
+    let F;
+    t[55] !== A || t[56] !== j || t[57] !== M ? (F = (0, Q.jsxs)(`div`, {
+        className: A,
+        children: [j, M]
+    }), t[55] = A, t[56] = j, t[57] = M, t[58] = F) : F = t[58];
+    let I;
+    return t[59] !== D || t[60] !== k || t[61] !== F || t[62] !== P ? (I = (0, Q.jsxs)(`div`, {
+        className: P,
+        children: [D, k, F]
+    }), t[59] = D, t[60] = k, t[61] = F, t[62] = P, t[63] = I) : I = t[63], I
+}
+
+function Br(e, t) {
+    switch (t.isLoadingOs ? `loading` : t.os) {
+        case `loading`:
+            return e.formatMessage(Ur.loadingOsAriaLabel);
+        case `linux`:
+            return e.formatMessage(Ur.appNotAvailableOnLinuxAriaLabel);
+        case `mac`:
+        case `windows`:
+        case null:
+            return e.formatMessage(Ur.downloadAppAriaLabel)
+    }
+}
+
+function Vr(e, t = !1) {
+    return N(`text-token-text-primary text-sm leading-5 font-medium tracking-[-0.18px] transition-opacity`, t ? `cursor-default opacity-40` : e ? `opacity-100` : `opacity-70 hover:opacity-100`)
+}
+var Hr, Q, Ur, Wr = e((() => {
+    Hr = Ae(), fn(), qt(), Wt(), gt(), Tt(), y(), xt(), V(), u(), ce(), hn(), dr(), bn(), Sn(), Cn(), mn(), Sr(), pt(), En(), Rr(), U(), Ce(), Se(), Q = ve(), Ur = ye({
+        appNotAvailableOnLinuxTooltip: {
+            id: `wham.whamHeader.appNotAvailableOnLinuxTooltip`,
+            defaultMessage: `Not available on Linux`
+        },
+        loadingOsAriaLabel: {
+            id: `wham.whamHeader.loadingOsAriaLabel`,
+            defaultMessage: `loading OS`
+        },
+        appNotAvailableOnLinuxAriaLabel: {
+            id: `wham.whamHeader.appNotAvailableOnLinuxAriaLabel`,
+            defaultMessage: `Codex app is not available on Linux`
+        },
+        downloadAppAriaLabel: {
+            id: `wham.whamHeader.downloadAppAriaLabel`,
+            defaultMessage: `Download the Codex app`
+        }
+    })
+}));
+
+function Gr() {
+    "use forget";
+    let e = (0, Jr.c)(2);
+    if (!le(`1437685011`)) {
+        let t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Xr.jsx)(qr, {}), e[0] = t) : t = e[0], t
+    }
+    let t;
+    return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Xr.jsx)(Kr, {}), e[1] = t) : t = e[1], t
+}
+
+function Kr() {
+    "use forget";
+    let e = (0, Jr.c)(1),
+        {
+            isConnected: t,
+            isLoading: n
+        } = Ln();
+    if (n || t) return null;
+    let r;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Xr.jsx)(qr, {}), e[0] = r) : r = e[0], r
+}
+
+function qr() {
+    "use forget";
+    let e = (0, Jr.c)(7),
+        [t, n] = (0, Yr.useState)(!1),
+        r;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = {
+        redirectAfter: `/codex/cloud/settings/environments`
+    }, e[0] = r) : r = e[0];
+    let {
+        isConnected: i,
+        isLoading: a,
+        error: o,
+        openGithubModal: s,
+        refetch: c
+    } = ln(r);
+    if (!cn() || (a || i) && !t) return null;
+    let l;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Xr.jsx)(sn, {
+        className: `icon`
+    }), e[1] = l) : l = e[1];
+    let u;
+    return e[2] !== o || e[3] !== a || e[4] !== s || e[5] !== c ? (u = (0, Xr.jsxs)(`div`, {
+        className: `draggable no-draggable-children bg-token-bg-secondary sticky top-0 z-20 flex h-12 w-full flex-row items-center justify-center gap-1.5`,
+        children: [l, (0, Xr.jsx)(`span`, {
+            className: `text-token-text-primary flex text-sm font-normal`,
+            children: (0, Xr.jsx)(K, {
+                id: `wham.connectGitHubAlert.message`,
+                defaultMessage: `Your GitHub account is not connected. <connect>Connect now</connect>.`,
+                values: {
+                    connect: e => a ? (0, Xr.jsx)(`span`, {
+                        className: `flex items-center ps-2`,
+                        children: (0, Xr.jsx)(rt, {
+                            className: `h-4 w-12`
+                        })
+                    }) : o ? (0, Xr.jsx)(`button`, {
+                        className: `ps-1 font-semibold underline hover:cursor-pointer`,
+                        onClick: () => {
+                            n(!0), c()
+                        },
+                        children: (0, Xr.jsx)(K, {
+                            id: `wham.connectGitHubAlert.retry`,
+                            defaultMessage: `Failed to load GitHub connection. Click retry.`
+                        })
+                    }) : (0, Xr.jsx)(`button`, {
+                        className: `ps-1 font-semibold underline hover:cursor-pointer`,
+                        onClick: s,
+                        children: e
+                    })
+                }
+            })
+        })]
+    }), e[2] = o, e[3] = a, e[4] = s, e[5] = c, e[6] = u) : u = e[6], u
+}
+var Jr, Yr, Xr, Zr = e((() => {
+    Jr = Ae(), on(), ze(), ae(), un(), Rn(), Yr = t(we()), Ce(), Xr = ve()
+}));
+
+function Qr(e) {
+    let [t, n] = (0, $r.useState)(!1);
+    return (0, $r.useEffect)(() => {
+        let t = e.current,
+            r = () => {
+                t && n(t.scrollTop > 0)
+            },
+            i, a = 0;
+
+        function o() {
+            if (t = e.current, !t) {
+                if (a++ >= 10) return;
+                i = requestAnimationFrame(o);
+                return
+            }
+            t.addEventListener(`scroll`, r), n(t.scrollTop > 0)
+        }
+        return o(), () => {
+            i !== void 0 && cancelAnimationFrame(i), t && t.removeEventListener(`scroll`, r)
+        }
+    }, [e]), t
+}
+var $r, ei = e((() => {
+    $r = t(we())
+}));
+
+function ti({
+    fillContentHeight: e,
+    flex: t,
+    horizontalPadding: n,
+    maxWidth: r,
+    topPadding: i
+}) {
+    return N(`mx-auto`, e && `h-full flex-1`, r, t && `flex flex-col`, n && `px-8`, i && `pt-8`)
+}
+
+function ni(e) {
+    "use forget";
+    let t = (0, ii.c)(51),
+        {
+            children: n,
+            flex: r,
+            fillContentHeight: i,
+            showSidebar: a,
+            leftRail: o,
+            canShowAlert: c,
+            connectionAlert: l,
+            hideHeaderNotificationBell: u,
+            hideHeaderSettings: d,
+            hideBorder: f,
+            alwaysShowBorder: p,
+            horizontalPadding: m,
+            maxWidth: h,
+            footerSpacePx: g,
+            topPadding: _,
+            mobileHeaderLeadingContent: v,
+            mobileHeaderCenterContent: y,
+            mobileHeaderTrailingContent: b,
+            hideMobileHeaderLogo: x
+        } = e,
+        S = r !== void 0 && r,
+        w = i === void 0 || i,
+        T = a === void 0 || a,
+        E = c === void 0 || c,
+        D = u !== void 0 && u,
+        O = d !== void 0 && d,
+        k = f !== void 0 && f,
+        A = p !== void 0 && p,
+        j = m !== void 0 && m,
+        M = h === void 0 ? `max-w-screen-2xl` : h,
+        N = g === void 0 ? 80 : g,
+        P = _ !== void 0 && _,
+        F = x !== void 0 && x,
+        I = (0, ai.useRef)(null),
+        [L, R] = (0, ai.useState)(null),
+        ee = Qr(I),
+        z = at(ri),
+        B = !oe(fe),
+        V = qe(),
+        H = C(),
+        U, W;
+    if (t[0] === L ? (U = t[1], W = t[2]) : (U = () => {
+            let e = L?.closest(`[data-scroll-root]`);
+            if (e == null) return;
+            let t = e.style.overflowY;
+            return e.style.overflowY = `hidden`, () => {
+                e.style.overflowY = t
+            }
+        }, W = [L], t[0] = L, t[1] = U, t[2] = W), (0, ai.useEffect)(U, W), V === `DISABLED` && !H?.isWorkspacePlan()) {
+        let e;
+        return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, $.jsx)(Ee, {
+            to: `/`,
+            replace: !0
+        }), t[3] = e) : e = t[3], e
+    }
+    let te = ut,
+        ne = en,
+        re = H?.getWorkspaceId(),
+        ie;
+    t[4] !== ne || t[5] !== re ? (ie = (0, $.jsx)(ne, {
+        page: `codex`
+    }, re), t[4] = ne, t[5] = re, t[6] = ie) : ie = t[6];
+    let ae = ee && !k || A ? `border-token-bg-secondary` : `border-transparent`,
+        G;
+    t[7] !== D || t[8] !== O || t[9] !== F || t[10] !== y || t[11] !== v || t[12] !== b ? (G = (0, $.jsx)(zr, {
+        hideNotificationBell: D,
+        className: `flex-1`,
+        hideSettingsLink: O,
+        mobileLeadingContent: v,
+        mobileCenterContent: y,
+        mobileTrailingContent: b,
+        hideMobileLogo: F
+    }), t[7] = D, t[8] = O, t[9] = F, t[10] = y, t[11] = v, t[12] = b, t[13] = G) : G = t[13];
+    let se;
+    t[14] !== ae || t[15] !== G ? (se = (0, $.jsx)(oi, {
+        className: ae,
+        children: G
+    }), t[14] = ae, t[15] = G, t[16] = se) : se = t[16];
+    let ce;
+    t[17] === z ? ce = t[18] : (ce = !1, t[17] = z, t[18] = ce);
+    let le;
+    t[19] !== E || t[20] !== l ? (le = l ?? (E && (0, $.jsx)(qr, {})), t[19] = E, t[20] = l, t[21] = le) : le = t[21];
+    let ue = `calc(100vh - var(--header-height) - ${N}px)`,
+        de;
+    t[22] === ue ? de = t[23] : (de = {
+        height: ue
+    }, t[22] = ue, t[23] = de);
+    let pe;
+    t[24] !== B || t[25] !== T ? (pe = T && !B && (0, $.jsx)(`div`, {
+        className: `h-full w-64 flex-shrink-0 overflow-y-auto pt-8`,
+        children: (0, $.jsx)(Mr, {})
+    }), t[24] = B, t[25] = T, t[26] = pe) : pe = t[26];
+    let me;
+    t[27] !== w || t[28] !== S || t[29] !== j || t[30] !== M || t[31] !== P ? (me = ti({
+        fillContentHeight: w,
+        flex: S,
+        horizontalPadding: j,
+        maxWidth: M,
+        topPadding: P
+    }), t[27] = w, t[28] = S, t[29] = j, t[30] = M, t[31] = P, t[32] = me) : me = t[32];
+    let he;
+    t[33] !== n || t[34] !== me ? (he = (0, $.jsx)(`div`, {
+        ref: I,
+        className: `bg-token-bg-primary dark:bg-token-bg-secondary-surface w-full overflow-y-auto`,
+        children: (0, $.jsx)(`div`, {
+            className: me,
+            children: n
+        })
+    }), t[33] = n, t[34] = me, t[35] = he) : he = t[35];
+    let ge;
+    t[36] !== o || t[37] !== de || t[38] !== pe || t[39] !== he ? (ge = (0, $.jsxs)(`div`, {
+        ref: R,
+        className: `flex flex-1 overflow-hidden`,
+        style: de,
+        children: [pe, o, he]
+    }), t[36] = o, t[37] = de, t[38] = pe, t[39] = he, t[40] = ge) : ge = t[40];
+    let _e;
+    t[41] !== le || t[42] !== ge ? (_e = (0, $.jsxs)(s, {
+        children: [le, ge]
+    }), t[41] = le, t[42] = ge, t[43] = _e) : _e = t[43];
+    let ve;
+    t[44] === Symbol.for(`react.memo_cache_sentinel`) ? (ve = (0, $.jsx)(zn, {}), t[44] = ve) : ve = t[44];
+    let ye;
+    return t[45] !== te || t[46] !== ie || t[47] !== se || t[48] !== ce || t[49] !== _e ? (ye = (0, $.jsxs)(te, {
+        mainContainerClassName: `overflow-hidden`,
+        children: [ie, se, ce, _e, ve]
+    }), t[45] = te, t[46] = ie, t[47] = se, t[48] = ce, t[49] = _e, t[50] = ye) : ye = t[50], ye
+}
+
+function ri(e) {
+    return e.showReactQueryDevtools
+}
+var ii, ai, $, oi, si = e((() => {
+    ii = Ae(), an(), yt(), V(), u(), G(), ce(), Kn(), We(), Wr(), Zr(), Pr(), ei(), Fe(), U(), ai = t(we()), Se(), i(), $ = ve(), oi = H.div`draggable no-draggable-children sticky top-0 p-3 flex items-center justify-between z-20 h-header-height border-b border-transparent font-semibold bg-token-bg-primary dark:bg-token-bg-secondary-surface`
+}));
+export {
+    zn as C, Yn as S, Cr as _, Qr as a, Zn as b, Zr as c, Dr as d, Or as f, wr as g, Tr as h, ei as i, zr as l, Er as m, oi as n, qr as o, Ar as p, si as r, Gr as s, ni as t, Wr as u, ar as v, Kn as w, Jn as x, $n as y
+};
 //# sourceMappingURL=3e72bb91-bcwf3koikkwl9bye.js.map

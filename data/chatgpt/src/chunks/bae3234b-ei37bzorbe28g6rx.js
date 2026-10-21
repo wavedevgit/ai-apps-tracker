@@ -1,2 +1,487 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$tt as n,A1 as r,Cat as i,Gz as a,JT as o,Kz as s,R1 as c,Snt as l,T5 as u,Uj as d,Wj as f,X5 as p,XI as m,Y5 as h,YT as g,ZI as _,Znt as v,_nt as ee,aat as y,cnt as te,fL as b,g8 as x,git as ne,gnt as S,hit as C,iat as re,ms as w,o as T,ont as E,q1 as ie,s as D,s5 as ae,sat as oe,trt as O,uL as k,vnt as se,vs as A,w5 as j,wG as M,wat as N,wnt as P,xG as ce}from"./4813494d-tap9fxyhk4ehe0bs.js";import{At as le,Bn as F,Ht as I,Ln as L,Nn as R,Nt as ue,Q as z,Rn as B,Ut as V,Vn as H,Zt as de,an as fe,wn as U,zn as pe}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Blt as W,E8 as me,Hlt as he,MJ as ge,T8 as _e,jJ as ve}from"./conversation-small-nmt18uiom3b14vca.js";import{Al as ye,bC as G,jl as be,xC as K}from"./30901919-niqyapppecmq5jkn.js";import{MS as xe,NS as q,VC as Se,dC as Ce}from"./c2675c8c-h5ybkhdzcoblzzdu.js";import{t as we}from"./9ac7a75a-om923aezu3ijmmhn.js";import{n as Te,o as Ee}from"./e19f3910-gr25pet5p06ryur7.js";import{a as De,o as J,r as Oe}from"./6313cbac-e5hl863fl4prr1xq.js";function ke(e){let t=e;try{let n=j().getQueryData(m.queryKey),r=v();if(S()&&!te()&&!E()&&n!=null&&(n.consent_analytics??!n.is_consent_required)&&!b()&&r.loadingStatus===`Ready`&&r.getContext().user.customIDs?.stableID){let n=crypto.randomUUID(),r=new URL(e);r.searchParams.set(`entry_id`,n),t=r.toString();let i=new URL(r);i.search=``,i.hash=``,s(new URL(`https://chatgpt.com/codex/open-app`),i,{surface:`browser`,fromSurface:`browser`,toSurface:`native_app`,reason:`desktop_login`,attribution:{source:`desktop_login`,entryId:n}}),l.flushStructuredEvents(250).catch(()=>{})}}catch{}J(t)}var Ae=e((()=>{a(),_(),k(),P(),u(),O(),n(),De()}));function je(){}function Me(e){return e.preventDefault()}function Ne(e){return e.preventDefault()}var Pe,Y,X,Fe=e((()=>{Pe=U(),g(),me(),K(),be(),he(),p(),B(),Y=F(),X=e=>{"use forget";let t=(0,Pe.c)(12),{appBrand:n,onOpen:r}=e,i;t[0]===n?i=t[1]:(i=n===`chatgpt`?(0,Y.jsx)(R,{id:`wham.codexOpenApp.loginSuccess.chatgptTitle`,defaultMessage:`Signed in to ChatGPT`}):(0,Y.jsx)(R,{id:`wham.codexOpenApp.loginSuccess.title`,defaultMessage:`Signed in to Codex`}),t[0]=n,t[1]=i);let a;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Y.jsx)(`div`,{className:`fixed start-5 top-[18px]`,children:(0,Y.jsx)(_e,{className:`w-[81px]`})}),t[2]=a):a=t[2];let s;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,Y.jsx)(`p`,{className:`text-gray-solid-500 [font-feature-settings:'liga'_off,'clig'_off] text-sm leading-5 tracking-[-0.18px] dark:text-white/65`,children:(0,Y.jsx)(R,{id:`wham.codexOpenApp.loginSuccess.status`,defaultMessage:`You’re signed in and may close this tab`})}),t[3]=s):s=t[3];let c;t[4]!==n||t[5]!==r?(c=r&&(0,Y.jsx)(o,{type:`button`,color:`custom`,className:h(`bg-gray-solid-0 text-gray-solid-1000 hover:border-gray-solid-150 hover:bg-gray-solid-50 dark:text-gray-solid-300 rounded-full border border-gray-100 text-sm leading-5 font-[510] tracking-[-0.154px] dark:border-white/[0.08] dark:bg-white/5 dark:hover:border-white/[0.16] dark:hover:bg-white/[0.08]`,n===`chatgpt`?`px-6 py-[13px]`:`min-h-9 py-2 ps-3.5 pe-4`),contentWrapperClassName:`gap-2`,onClick:r,children:n===`chatgpt`?(0,Y.jsxs)(Y.Fragment,{children:[(0,Y.jsx)(G,{className:`icon`,"aria-hidden":!0}),(0,Y.jsx)(R,{id:`wham.codexOpenApp.loginSuccess.openChatgptButton`,defaultMessage:`Open ChatGPT`})]}):(0,Y.jsxs)(Y.Fragment,{children:[(0,Y.jsx)(ye,{className:`icon`,"aria-hidden":!0}),(0,Y.jsx)(R,{id:`wham.codexOpenApp.loginSuccess.openButton`,defaultMessage:`Open Codex`})]})}),t[4]=n,t[5]=r,t[6]=c):c=t[6];let l;t[7]===c?l=t[8]:(l=(0,Y.jsx)(W.Contents,{className:`overflow-hidden`,children:(0,Y.jsxs)(`div`,{className:`bg-gray-solid-0 text-gray-solid-1000 dark:bg-gray-solid-900 dark:text-gray-solid-0 h-full`,children:[a,(0,Y.jsx)(`main`,{className:`flex h-full items-center justify-center px-6 py-14`,children:(0,Y.jsxs)(`div`,{className:`flex w-full max-w-[560px] flex-col items-center gap-8 text-center`,children:[s,c]})})]})}),t[7]=c,t[8]=l);let u;return t[9]!==i||t[10]!==l?(u=(0,Y.jsx)(W,{open:!0,onOpenChange:je,onEscapeKeyDown:Me,onOpenAutoFocus:Ne,accessibleTitle:i,children:l}),t[9]=i,t[10]=l,t[11]=u):u=t[11],u}}));function Ie(e){let t=new URLSearchParams(e),n=t.get(`plugin_id`)?.trim();if(t.get(`target`)===`plugin`&&n)return Oe(n);if(t.get(`target`)===`dots`)return Q;let r=t.get(`target`)===`launch`,i=Le(t,`codex_thread_id`),a=new URL(r?He:Ve);if(!r&&i!=null){a.pathname=`/${i}`;let e=t.get(`hostId`)?.trim();e&&a.searchParams.set(`hostId`,e)}let o=t.get(`q`)?.trim(),s=N(t.get(`browserUrl`)??``),c=t.getAll(`mode`),l=c.length===1&&We.has(c[0])?c[0]:null;return c.length===0&&t.get(`fallback`)===`work`&&o!=null&&o.length>0&&(l=`work`),!r&&o!=null&&o.length>0&&a.searchParams.set(`prompt`,o),!r&&i==null&&l!=null&&a.searchParams.set(`mode`,l),!r&&(s?.protocol===`http:`||s?.protocol===`https:`)&&s.username.length===0&&s.password.length===0&&a.searchParams.set(`browserUrl`,s.toString()),a.toString()}function Le(e,t){let n=e.get(t)?.trim();return n!=null&&fe(n)?n:null}function Re(){return f()&&document.visibilityState===`visible`}var ze,Be,Z,Ve,He,Q,Ue,We,Ge,Ke,qe,Je,$,Ye,Xe=e((()=>{z(),ze=U(),g(),xe(),Ce(),K(),x(),c(),A(),M(),C(),y(),i(),u(),n(),d(),Ee(),De(),Ae(),Fe(),ge(),D(),Be=t(H()),B(),de(),Z=F(),Ve=`codex://threads/new`,He=`codex://launch`,Q=`codex://dots`,Ue=1500,We=new Set([`chat`,`work`,`codex`]),Ge=`https://chatgpt.com/download`,Ke={hasRouteMeta:!0,useScrollRestoration:!0},qe=()=>[],Je=I(function(){"use forget";let e=(0,ze.c)(52),t=pe(),n=le(),i=new URLSearchParams(n.search),a=se()||i.get(`target`)===`plugin`&&ee(),s;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(s=we(),e[0]=s):s=e[0];let c=s,l=ue(),u;e[1]===n.search?u=e[2]:(u=Ie(n.search),e[1]=n.search,e[2]=u);let d=u,f;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(f={key:`chatgpt-codex-download`,allowUnauthenticatedTracking:!0},e[3]=f):f=e[3];let{trackSelectedPixels:p}=q(f),m;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(m={key:Se.CODEX_DOWNLOAD,allowUnauthenticatedTracking:!0},e[4]=m):m=e[4];let{trackSelectedPixels:h}=q(m),g;e[5]!==h||e[6]!==p?(g=()=>{h(),p()},e[5]=h,e[6]=p,e[7]=g):g=e[7];let _=g,v=i.get(`source`),y=i.get(`app_brand`)===`chatgpt`?`chatgpt`:`codex`,te=v===`login`||v===`cli-login`,b=v===`cli-login`,x=v===`login`&&y===`chatgpt`,S=i.get(`fallback`)===`work`&&i.get(`target`)!==`launch`&&i.get(`target`)!==`dots`&&i.get(`target`)!==`plugin`,C=S?i.get(`q`)?.trim():void 0,T=S?Le(i,`chatgpt_conversation_id`):null,E=i.get(`account_id`)?.trim(),D,O;e[8]!==T||e[9]!==C||e[10]!==d||e[11]!==E||e[12]!==x||e[13]!==b||e[14]!==a||e[15]!==n.pathname||e[16]!==n.search||e[17]!==l?(D=()=>{if(b)return;if(!C&&T==null){a||(x?ke(d):J(d));return}let e=new AbortController,t=async()=>{if(e.signal.aborted)return;if(!ne()){l(`/auth/login?next=${encodeURIComponent(`${n.pathname}${n.search}`)}`,{replace:!0});return}if(E&&re.getCookie(oe.Workspace)!==E){let t=j();if(await t.ensureQueryData(r()),e.signal.aborted)return;let{updatedAccount:n}=await ie(t,E);if(!n)return}if(e.signal.aborted)return;let t=new URLSearchParams(n.search),i=new URLSearchParams({surface:ce.TPP});if(T!=null){C&&(i.set(`prompt`,C),i.set(`promptSource`,`codex-app`)),window.location.replace(`/c/${encodeURIComponent(T)}?${i}`);return}let a=t.get(w);if(a){i.set(w,a);let e=t.get(`prompt`);e&&i.set(`prompt`,e)}else C&&(i.set(`prompt`,C),i.set(`promptSource`,`codex-app`));window.location.replace(`/?${i}`)};if(a)return t(),()=>e.abort();let i=!1,o=!1,s,c=()=>{window.clearTimeout(s),s=void 0},u=()=>{o=!0,c(),e.abort()},f=()=>{i&&document.visibilityState===`hidden`&&u()};window.addEventListener(`pagehide`,u,{once:!0}),document.addEventListener(`visibilitychange`,f);let p=ae(Re,e=>{if(!e){c();return}if(!(o||s!==void 0)&&(s=window.setTimeout(t,Ue),!i)){i=!0;try{J(d)}catch{c(),t()}}},{fireImmediately:!0});return()=>{e.abort(),c(),window.removeEventListener(`pagehide`,u),document.removeEventListener(`visibilitychange`,f),p()}},O=[C,T,d,b,x,a,E,n.pathname,n.search,l],e[8]=T,e[9]=C,e[10]=d,e[11]=E,e[12]=x,e[13]=b,e[14]=a,e[15]=n.pathname,e[16]=n.search,e[17]=l,e[18]=D,e[19]=O):(D=e[18],O=e[19]),(0,Be.useEffect)(D,O);let k;e[20]===t?k=e[21]:(k=t.formatMessage({id:`wham.codexOpenApp.pageTitle`,defaultMessage:`Open ChatGPT Desktop`}),e[20]=t,e[21]=k);let A;e[22]===k?A=e[23]:(A=(0,Z.jsx)(`title`,{children:k}),e[22]=k,e[23]=A);let M=A;if(te){let t;e[24]!==y||e[25]!==d||e[26]!==x||e[27]!==b?(t=b?(0,Z.jsx)(X,{appBrand:y}):(0,Z.jsx)(X,{appBrand:y,onOpen:()=>{x?ke(d):J(d)}}),e[24]=y,e[25]=d,e[26]=x,e[27]=b,e[28]=t):t=e[28];let n;return e[29]!==M||e[30]!==t?(n=(0,Z.jsxs)(Z.Fragment,{children:[M,t]}),e[29]=M,e[30]=t,e[31]=n):n=e[31],n}let N=a?$.chatgptMobileTitle:$.chatgptTitle,P;e[32]===Symbol.for(`react.memo_cache_sentinel`)?(P=(0,Z.jsx)(`div`,{className:`mb-10 flex size-[88px] items-center justify-center`,"aria-hidden":!0,children:(0,Z.jsx)(G,{className:`size-16`})}),e[32]=P):P=e[32];let F=a?`mb-9 text-[34px] leading-10 font-semibold tracking-[-0.02em]`:`mb-4 text-[34px] leading-10 font-semibold tracking-[-0.02em]`,I;e[33]===N?I=e[34]:(I=(0,Z.jsx)(R,{...N}),e[33]=N,e[34]=I);let L;e[35]!==F||e[36]!==I?(L=(0,Z.jsx)(`h1`,{className:F,children:I}),e[35]=F,e[36]=I,e[37]=L):L=e[37];let z;e[38]===a?z=e[39]:(z=!a&&(0,Z.jsx)(`p`,{className:`text-token-text-secondary mb-9 max-w-[520px] text-[15px] leading-[22px]`,children:(0,Z.jsx)(R,{...$.chatgptBody})}),e[38]=a,e[39]=z);let B;e[40]!==c||e[41]!==d||e[42]!==a||e[43]!==_?(B=(0,Z.jsx)(`div`,{className:`flex flex-wrap items-center justify-center gap-3`,children:a?(0,Z.jsx)(o,{as:`a`,to:Ge,color:`primary`,className:`h-[34px] min-w-[106px] rounded-full px-4 text-sm leading-[18px] font-medium`,children:(0,Z.jsx)(R,{...$.learnMoreButton})}):(0,Z.jsxs)(Z.Fragment,{children:[(0,Z.jsx)(o,{type:`button`,color:`primary`,className:`h-[34px] min-w-[106px] rounded-full px-4 text-sm leading-[18px] font-medium`,onClick:()=>{J(d)},children:(0,Z.jsx)(R,{...$.chatgptOpenButton})}),(0,Z.jsx)(Te,{color:`secondary`,className:`h-[34px] min-w-[106px] rounded-full px-4 text-sm leading-[18px] font-medium`,signalSurface:`codex_open_app`,size:`medium`,onClick:()=>{c!=null&&(ve.recordCodexAppSurfaceAction(`open_app`,`download`),_())}})]})}),e[40]=c,e[41]=d,e[42]=a,e[43]=_,e[44]=B):B=e[44];let V;e[45]!==L||e[46]!==z||e[47]!==B?(V=(0,Z.jsxs)(`section`,{className:`flex w-full max-w-[520px] -translate-y-2 flex-col items-center text-center`,children:[P,L,z,B]}),e[45]=L,e[46]=z,e[47]=B,e[48]=V):V=e[48];let H;return e[49]!==M||e[50]!==V?(H=(0,Z.jsxs)(`main`,{className:`light bg-token-bg-primary text-token-text-primary flex min-h-screen flex-col items-center justify-center px-6 py-10`,children:[M,V]}),e[49]=M,e[50]=V,e[51]=H):H=e[51],H}),$=L({chatgptTitle:{id:`wham.codexOpenApp.chatgptTitle`,defaultMessage:`Opening ChatGPT`},chatgptBody:{id:`wham.codexOpenApp.chatgptBody`,defaultMessage:`We’re opening your ChatGPT app. If it doesn’t open, click the button below.`},chatgptMobileTitle:{id:`wham.codexOpenApp.chatgptMobileTitle`,defaultMessage:`Open the ChatGPT desktop app on your computer`},chatgptOpenButton:{id:`wham.codexOpenApp.chatgptOpenButton`,defaultMessage:`Open ChatGPT`},learnMoreButton:{id:`wham.codexOpenApp.learnMoreButton`,defaultMessage:`Learn more`}}),Ye=V(T)}));export{qe as a,Xe as i,Je as n,Ke as r,Ye as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $tt as n,
+    A1 as r,
+    Cat as i,
+    Gz as a,
+    JT as o,
+    Kz as s,
+    R1 as c,
+    Snt as l,
+    T5 as u,
+    Uj as d,
+    Wj as f,
+    X5 as p,
+    XI as m,
+    Y5 as h,
+    YT as g,
+    ZI as _,
+    Znt as v,
+    _nt as ee,
+    aat as y,
+    cnt as te,
+    fL as b,
+    g8 as x,
+    git as ne,
+    gnt as S,
+    hit as C,
+    iat as re,
+    ms as w,
+    o as T,
+    ont as E,
+    q1 as ie,
+    s as D,
+    s5 as ae,
+    sat as oe,
+    trt as O,
+    uL as k,
+    vnt as se,
+    vs as A,
+    w5 as j,
+    wG as M,
+    wat as N,
+    wnt as P,
+    xG as ce
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    At as le,
+    Bn as F,
+    Ht as I,
+    Ln as L,
+    Nn as R,
+    Nt as ue,
+    Q as z,
+    Rn as B,
+    Ut as V,
+    Vn as H,
+    Zt as de,
+    an as fe,
+    wn as U,
+    zn as pe
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Blt as W,
+    E8 as me,
+    Hlt as he,
+    MJ as ge,
+    T8 as _e,
+    jJ as ve
+} from "./conversation-small-nmt18uiom3b14vca.js";
+import {
+    Al as ye,
+    bC as G,
+    jl as be,
+    xC as K
+} from "./30901919-niqyapppecmq5jkn.js";
+import {
+    MS as xe,
+    NS as q,
+    VC as Se,
+    dC as Ce
+} from "./c2675c8c-h5ybkhdzcoblzzdu.js";
+import {
+    t as we
+} from "./9ac7a75a-om923aezu3ijmmhn.js";
+import {
+    n as Te,
+    o as Ee
+} from "./e19f3910-gr25pet5p06ryur7.js";
+import {
+    a as De,
+    o as J,
+    r as Oe
+} from "./6313cbac-e5hl863fl4prr1xq.js";
+
+function ke(e) {
+    let t = e;
+    try {
+        let n = j().getQueryData(m.queryKey),
+            r = v();
+        if (S() && !te() && !E() && n != null && (n.consent_analytics ?? !n.is_consent_required) && !b() && r.loadingStatus === `Ready` && r.getContext().user.customIDs?.stableID) {
+            let n = crypto.randomUUID(),
+                r = new URL(e);
+            r.searchParams.set(`entry_id`, n), t = r.toString();
+            let i = new URL(r);
+            i.search = ``, i.hash = ``, s(new URL(`https://chatgpt.com/codex/open-app`), i, {
+                surface: `browser`,
+                fromSurface: `browser`,
+                toSurface: `native_app`,
+                reason: `desktop_login`,
+                attribution: {
+                    source: `desktop_login`,
+                    entryId: n
+                }
+            }), l.flushStructuredEvents(250).catch(() => {})
+        }
+    } catch {}
+    J(t)
+}
+var Ae = e((() => {
+    a(), _(), k(), P(), u(), O(), n(), De()
+}));
+
+function je() {}
+
+function Me(e) {
+    return e.preventDefault()
+}
+
+function Ne(e) {
+    return e.preventDefault()
+}
+var Pe, Y, X, Fe = e((() => {
+    Pe = U(), g(), me(), K(), be(), he(), p(), B(), Y = F(), X = e => {
+        "use forget";
+        let t = (0, Pe.c)(12),
+            {
+                appBrand: n,
+                onOpen: r
+            } = e,
+            i;
+        t[0] === n ? i = t[1] : (i = n === `chatgpt` ? (0, Y.jsx)(R, {
+            id: `wham.codexOpenApp.loginSuccess.chatgptTitle`,
+            defaultMessage: `Signed in to ChatGPT`
+        }) : (0, Y.jsx)(R, {
+            id: `wham.codexOpenApp.loginSuccess.title`,
+            defaultMessage: `Signed in to Codex`
+        }), t[0] = n, t[1] = i);
+        let a;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Y.jsx)(`div`, {
+            className: `fixed start-5 top-[18px]`,
+            children: (0, Y.jsx)(_e, {
+                className: `w-[81px]`
+            })
+        }), t[2] = a) : a = t[2];
+        let s;
+        t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, Y.jsx)(`p`, {
+            className: `text-gray-solid-500 [font-feature-settings:'liga'_off,'clig'_off] text-sm leading-5 tracking-[-0.18px] dark:text-white/65`,
+            children: (0, Y.jsx)(R, {
+                id: `wham.codexOpenApp.loginSuccess.status`,
+                defaultMessage: `You’re signed in and may close this tab`
+            })
+        }), t[3] = s) : s = t[3];
+        let c;
+        t[4] !== n || t[5] !== r ? (c = r && (0, Y.jsx)(o, {
+            type: `button`,
+            color: `custom`,
+            className: h(`bg-gray-solid-0 text-gray-solid-1000 hover:border-gray-solid-150 hover:bg-gray-solid-50 dark:text-gray-solid-300 rounded-full border border-gray-100 text-sm leading-5 font-[510] tracking-[-0.154px] dark:border-white/[0.08] dark:bg-white/5 dark:hover:border-white/[0.16] dark:hover:bg-white/[0.08]`, n === `chatgpt` ? `px-6 py-[13px]` : `min-h-9 py-2 ps-3.5 pe-4`),
+            contentWrapperClassName: `gap-2`,
+            onClick: r,
+            children: n === `chatgpt` ? (0, Y.jsxs)(Y.Fragment, {
+                children: [(0, Y.jsx)(G, {
+                    className: `icon`,
+                    "aria-hidden": !0
+                }), (0, Y.jsx)(R, {
+                    id: `wham.codexOpenApp.loginSuccess.openChatgptButton`,
+                    defaultMessage: `Open ChatGPT`
+                })]
+            }) : (0, Y.jsxs)(Y.Fragment, {
+                children: [(0, Y.jsx)(ye, {
+                    className: `icon`,
+                    "aria-hidden": !0
+                }), (0, Y.jsx)(R, {
+                    id: `wham.codexOpenApp.loginSuccess.openButton`,
+                    defaultMessage: `Open Codex`
+                })]
+            })
+        }), t[4] = n, t[5] = r, t[6] = c) : c = t[6];
+        let l;
+        t[7] === c ? l = t[8] : (l = (0, Y.jsx)(W.Contents, {
+            className: `overflow-hidden`,
+            children: (0, Y.jsxs)(`div`, {
+                className: `bg-gray-solid-0 text-gray-solid-1000 dark:bg-gray-solid-900 dark:text-gray-solid-0 h-full`,
+                children: [a, (0, Y.jsx)(`main`, {
+                    className: `flex h-full items-center justify-center px-6 py-14`,
+                    children: (0, Y.jsxs)(`div`, {
+                        className: `flex w-full max-w-[560px] flex-col items-center gap-8 text-center`,
+                        children: [s, c]
+                    })
+                })]
+            })
+        }), t[7] = c, t[8] = l);
+        let u;
+        return t[9] !== i || t[10] !== l ? (u = (0, Y.jsx)(W, {
+            open: !0,
+            onOpenChange: je,
+            onEscapeKeyDown: Me,
+            onOpenAutoFocus: Ne,
+            accessibleTitle: i,
+            children: l
+        }), t[9] = i, t[10] = l, t[11] = u) : u = t[11], u
+    }
+}));
+
+function Ie(e) {
+    let t = new URLSearchParams(e),
+        n = t.get(`plugin_id`)?.trim();
+    if (t.get(`target`) === `plugin` && n) return Oe(n);
+    if (t.get(`target`) === `dots`) return Q;
+    let r = t.get(`target`) === `launch`,
+        i = Le(t, `codex_thread_id`),
+        a = new URL(r ? He : Ve);
+    if (!r && i != null) {
+        a.pathname = `/${i}`;
+        let e = t.get(`hostId`)?.trim();
+        e && a.searchParams.set(`hostId`, e)
+    }
+    let o = t.get(`q`)?.trim(),
+        s = N(t.get(`browserUrl`) ?? ``),
+        c = t.getAll(`mode`),
+        l = c.length === 1 && We.has(c[0]) ? c[0] : null;
+    return c.length === 0 && t.get(`fallback`) === `work` && o != null && o.length > 0 && (l = `work`), !r && o != null && o.length > 0 && a.searchParams.set(`prompt`, o), !r && i == null && l != null && a.searchParams.set(`mode`, l), !r && (s?.protocol === `http:` || s?.protocol === `https:`) && s.username.length === 0 && s.password.length === 0 && a.searchParams.set(`browserUrl`, s.toString()), a.toString()
+}
+
+function Le(e, t) {
+    let n = e.get(t)?.trim();
+    return n != null && fe(n) ? n : null
+}
+
+function Re() {
+    return f() && document.visibilityState === `visible`
+}
+var ze, Be, Z, Ve, He, Q, Ue, We, Ge, Ke, qe, Je, $, Ye, Xe = e((() => {
+    z(), ze = U(), g(), xe(), Ce(), K(), x(), c(), A(), M(), C(), y(), i(), u(), n(), d(), Ee(), De(), Ae(), Fe(), ge(), D(), Be = t(H()), B(), de(), Z = F(), Ve = `codex://threads/new`, He = `codex://launch`, Q = `codex://dots`, Ue = 1500, We = new Set([`chat`, `work`, `codex`]), Ge = `https://chatgpt.com/download`, Ke = {
+        hasRouteMeta: !0,
+        useScrollRestoration: !0
+    }, qe = () => [], Je = I(function() {
+        "use forget";
+        let e = (0, ze.c)(52),
+            t = pe(),
+            n = le(),
+            i = new URLSearchParams(n.search),
+            a = se() || i.get(`target`) === `plugin` && ee(),
+            s;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (s = we(), e[0] = s) : s = e[0];
+        let c = s,
+            l = ue(),
+            u;
+        e[1] === n.search ? u = e[2] : (u = Ie(n.search), e[1] = n.search, e[2] = u);
+        let d = u,
+            f;
+        e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (f = {
+            key: `chatgpt-codex-download`,
+            allowUnauthenticatedTracking: !0
+        }, e[3] = f) : f = e[3];
+        let {
+            trackSelectedPixels: p
+        } = q(f), m;
+        e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (m = {
+            key: Se.CODEX_DOWNLOAD,
+            allowUnauthenticatedTracking: !0
+        }, e[4] = m) : m = e[4];
+        let {
+            trackSelectedPixels: h
+        } = q(m), g;
+        e[5] !== h || e[6] !== p ? (g = () => {
+            h(), p()
+        }, e[5] = h, e[6] = p, e[7] = g) : g = e[7];
+        let _ = g,
+            v = i.get(`source`),
+            y = i.get(`app_brand`) === `chatgpt` ? `chatgpt` : `codex`,
+            te = v === `login` || v === `cli-login`,
+            b = v === `cli-login`,
+            x = v === `login` && y === `chatgpt`,
+            S = i.get(`fallback`) === `work` && i.get(`target`) !== `launch` && i.get(`target`) !== `dots` && i.get(`target`) !== `plugin`,
+            C = S ? i.get(`q`)?.trim() : void 0,
+            T = S ? Le(i, `chatgpt_conversation_id`) : null,
+            E = i.get(`account_id`)?.trim(),
+            D, O;
+        e[8] !== T || e[9] !== C || e[10] !== d || e[11] !== E || e[12] !== x || e[13] !== b || e[14] !== a || e[15] !== n.pathname || e[16] !== n.search || e[17] !== l ? (D = () => {
+            if (b) return;
+            if (!C && T == null) {
+                a || (x ? ke(d) : J(d));
+                return
+            }
+            let e = new AbortController,
+                t = async () => {
+                    if (e.signal.aborted) return;
+                    if (!ne()) {
+                        l(`/auth/login?next=${encodeURIComponent(`${n.pathname}${n.search}`)}`, {
+                            replace: !0
+                        });
+                        return
+                    }
+                    if (E && re.getCookie(oe.Workspace) !== E) {
+                        let t = j();
+                        if (await t.ensureQueryData(r()), e.signal.aborted) return;
+                        let {
+                            updatedAccount: n
+                        } = await ie(t, E);
+                        if (!n) return
+                    }
+                    if (e.signal.aborted) return;
+                    let t = new URLSearchParams(n.search),
+                        i = new URLSearchParams({
+                            surface: ce.TPP
+                        });
+                    if (T != null) {
+                        C && (i.set(`prompt`, C), i.set(`promptSource`, `codex-app`)), window.location.replace(`/c/${encodeURIComponent(T)}?${i}`);
+                        return
+                    }
+                    let a = t.get(w);
+                    if (a) {
+                        i.set(w, a);
+                        let e = t.get(`prompt`);
+                        e && i.set(`prompt`, e)
+                    } else C && (i.set(`prompt`, C), i.set(`promptSource`, `codex-app`));
+                    window.location.replace(`/?${i}`)
+                };
+            if (a) return t(), () => e.abort();
+            let i = !1,
+                o = !1,
+                s, c = () => {
+                    window.clearTimeout(s), s = void 0
+                },
+                u = () => {
+                    o = !0, c(), e.abort()
+                },
+                f = () => {
+                    i && document.visibilityState === `hidden` && u()
+                };
+            window.addEventListener(`pagehide`, u, {
+                once: !0
+            }), document.addEventListener(`visibilitychange`, f);
+            let p = ae(Re, e => {
+                if (!e) {
+                    c();
+                    return
+                }
+                if (!(o || s !== void 0) && (s = window.setTimeout(t, Ue), !i)) {
+                    i = !0;
+                    try {
+                        J(d)
+                    } catch {
+                        c(), t()
+                    }
+                }
+            }, {
+                fireImmediately: !0
+            });
+            return () => {
+                e.abort(), c(), window.removeEventListener(`pagehide`, u), document.removeEventListener(`visibilitychange`, f), p()
+            }
+        }, O = [C, T, d, b, x, a, E, n.pathname, n.search, l], e[8] = T, e[9] = C, e[10] = d, e[11] = E, e[12] = x, e[13] = b, e[14] = a, e[15] = n.pathname, e[16] = n.search, e[17] = l, e[18] = D, e[19] = O) : (D = e[18], O = e[19]), (0, Be.useEffect)(D, O);
+        let k;
+        e[20] === t ? k = e[21] : (k = t.formatMessage({
+            id: `wham.codexOpenApp.pageTitle`,
+            defaultMessage: `Open ChatGPT Desktop`
+        }), e[20] = t, e[21] = k);
+        let A;
+        e[22] === k ? A = e[23] : (A = (0, Z.jsx)(`title`, {
+            children: k
+        }), e[22] = k, e[23] = A);
+        let M = A;
+        if (te) {
+            let t;
+            e[24] !== y || e[25] !== d || e[26] !== x || e[27] !== b ? (t = b ? (0, Z.jsx)(X, {
+                appBrand: y
+            }) : (0, Z.jsx)(X, {
+                appBrand: y,
+                onOpen: () => {
+                    x ? ke(d) : J(d)
+                }
+            }), e[24] = y, e[25] = d, e[26] = x, e[27] = b, e[28] = t) : t = e[28];
+            let n;
+            return e[29] !== M || e[30] !== t ? (n = (0, Z.jsxs)(Z.Fragment, {
+                children: [M, t]
+            }), e[29] = M, e[30] = t, e[31] = n) : n = e[31], n
+        }
+        let N = a ? $.chatgptMobileTitle : $.chatgptTitle,
+            P;
+        e[32] === Symbol.for(`react.memo_cache_sentinel`) ? (P = (0, Z.jsx)(`div`, {
+            className: `mb-10 flex size-[88px] items-center justify-center`,
+            "aria-hidden": !0,
+            children: (0, Z.jsx)(G, {
+                className: `size-16`
+            })
+        }), e[32] = P) : P = e[32];
+        let F = a ? `mb-9 text-[34px] leading-10 font-semibold tracking-[-0.02em]` : `mb-4 text-[34px] leading-10 font-semibold tracking-[-0.02em]`,
+            I;
+        e[33] === N ? I = e[34] : (I = (0, Z.jsx)(R, {
+            ...N
+        }), e[33] = N, e[34] = I);
+        let L;
+        e[35] !== F || e[36] !== I ? (L = (0, Z.jsx)(`h1`, {
+            className: F,
+            children: I
+        }), e[35] = F, e[36] = I, e[37] = L) : L = e[37];
+        let z;
+        e[38] === a ? z = e[39] : (z = !a && (0, Z.jsx)(`p`, {
+            className: `text-token-text-secondary mb-9 max-w-[520px] text-[15px] leading-[22px]`,
+            children: (0, Z.jsx)(R, {
+                ...$.chatgptBody
+            })
+        }), e[38] = a, e[39] = z);
+        let B;
+        e[40] !== c || e[41] !== d || e[42] !== a || e[43] !== _ ? (B = (0, Z.jsx)(`div`, {
+            className: `flex flex-wrap items-center justify-center gap-3`,
+            children: a ? (0, Z.jsx)(o, {
+                as: `a`,
+                to: Ge,
+                color: `primary`,
+                className: `h-[34px] min-w-[106px] rounded-full px-4 text-sm leading-[18px] font-medium`,
+                children: (0, Z.jsx)(R, {
+                    ...$.learnMoreButton
+                })
+            }) : (0, Z.jsxs)(Z.Fragment, {
+                children: [(0, Z.jsx)(o, {
+                    type: `button`,
+                    color: `primary`,
+                    className: `h-[34px] min-w-[106px] rounded-full px-4 text-sm leading-[18px] font-medium`,
+                    onClick: () => {
+                        J(d)
+                    },
+                    children: (0, Z.jsx)(R, {
+                        ...$.chatgptOpenButton
+                    })
+                }), (0, Z.jsx)(Te, {
+                    color: `secondary`,
+                    className: `h-[34px] min-w-[106px] rounded-full px-4 text-sm leading-[18px] font-medium`,
+                    signalSurface: `codex_open_app`,
+                    size: `medium`,
+                    onClick: () => {
+                        c != null && (ve.recordCodexAppSurfaceAction(`open_app`, `download`), _())
+                    }
+                })]
+            })
+        }), e[40] = c, e[41] = d, e[42] = a, e[43] = _, e[44] = B) : B = e[44];
+        let V;
+        e[45] !== L || e[46] !== z || e[47] !== B ? (V = (0, Z.jsxs)(`section`, {
+            className: `flex w-full max-w-[520px] -translate-y-2 flex-col items-center text-center`,
+            children: [P, L, z, B]
+        }), e[45] = L, e[46] = z, e[47] = B, e[48] = V) : V = e[48];
+        let H;
+        return e[49] !== M || e[50] !== V ? (H = (0, Z.jsxs)(`main`, {
+            className: `light bg-token-bg-primary text-token-text-primary flex min-h-screen flex-col items-center justify-center px-6 py-10`,
+            children: [M, V]
+        }), e[49] = M, e[50] = V, e[51] = H) : H = e[51], H
+    }), $ = L({
+        chatgptTitle: {
+            id: `wham.codexOpenApp.chatgptTitle`,
+            defaultMessage: `Opening ChatGPT`
+        },
+        chatgptBody: {
+            id: `wham.codexOpenApp.chatgptBody`,
+            defaultMessage: `We’re opening your ChatGPT app. If it doesn’t open, click the button below.`
+        },
+        chatgptMobileTitle: {
+            id: `wham.codexOpenApp.chatgptMobileTitle`,
+            defaultMessage: `Open the ChatGPT desktop app on your computer`
+        },
+        chatgptOpenButton: {
+            id: `wham.codexOpenApp.chatgptOpenButton`,
+            defaultMessage: `Open ChatGPT`
+        },
+        learnMoreButton: {
+            id: `wham.codexOpenApp.learnMoreButton`,
+            defaultMessage: `Learn more`
+        }
+    }), Ye = V(T)
+}));
+export {
+    qe as a, Xe as i, Je as n, Ke as r, Ye as t
+};
 //# sourceMappingURL=bae3234b-ei37bzorbe28g6rx.js.map

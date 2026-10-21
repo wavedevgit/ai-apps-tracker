@@ -1,2 +1,63 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Cg as t,Sg as n,_g as r,vg as i,wg as a}from"./c2675c8c-p3x4d0bnf7e77o1n.js";function o({requiresManualApproval:e,checkoutSessionId:t,processorEntity:n,planType:r,isCheckoutModalEnabled:i=!1}){return{started_at_ms:Date.now(),requires_manual_approval:e,checkout_session_id:t,processor_entity:n,plan_type:r,is_checkout_modal_enabled:i}}function s(e,t,n=Date.now()){let r=l.safeParse(e);if(!r.success)return{status:`discard`};let i=r.data,a=i.started_at_ms;return a==null||!Number.isFinite(a)||n-a>1800*1e3?{status:`discard`}:t&&i.checkout_session_id!=null&&t!==i.checkout_session_id?{status:`other_checkout`}:{status:`ready`,pending:i,durationMs:Math.max(0,Math.round(n-a))}}function c(e){return e===`success`||e===`pending`}var l,u=e((()=>{r(),l=t({started_at_ms:n().optional(),requires_manual_approval:i().optional(),checkout_session_id:a().optional(),processor_entity:a().optional(),plan_type:a().nullable().optional(),is_checkout_modal_enabled:i().optional()})}));export{o as i,u as n,c as r,s as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Cg as t,
+    Sg as n,
+    _g as r,
+    vg as i,
+    wg as a
+} from "./c2675c8c-p3x4d0bnf7e77o1n.js";
+
+function o({
+    requiresManualApproval: e,
+    checkoutSessionId: t,
+    processorEntity: n,
+    planType: r,
+    isCheckoutModalEnabled: i = !1
+}) {
+    return {
+        started_at_ms: Date.now(),
+        requires_manual_approval: e,
+        checkout_session_id: t,
+        processor_entity: n,
+        plan_type: r,
+        is_checkout_modal_enabled: i
+    }
+}
+
+function s(e, t, n = Date.now()) {
+    let r = l.safeParse(e);
+    if (!r.success) return {
+        status: `discard`
+    };
+    let i = r.data,
+        a = i.started_at_ms;
+    return a == null || !Number.isFinite(a) || n - a > 1800 * 1e3 ? {
+        status: `discard`
+    } : t && i.checkout_session_id != null && t !== i.checkout_session_id ? {
+        status: `other_checkout`
+    } : {
+        status: `ready`,
+        pending: i,
+        durationMs: Math.max(0, Math.round(n - a))
+    }
+}
+
+function c(e) {
+    return e === `success` || e === `pending`
+}
+var l, u = e((() => {
+    r(), l = t({
+        started_at_ms: n().optional(),
+        requires_manual_approval: i().optional(),
+        checkout_session_id: a().optional(),
+        processor_entity: a().optional(),
+        plan_type: a().nullable().optional(),
+        is_checkout_modal_enabled: i().optional()
+    })
+}));
+export {
+    o as i, u as n, c as r, s as t
+};
 //# sourceMappingURL=4cc06ac6-hlwg8bcmmuv0llar.js.map

@@ -1,2 +1,82 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{VU as t,_R as n,dl as r,fl as i,ml as a,pl as o,yR as s,zU as c}from"./4813494d-dfpv67hlp00pbohr.js";import{In as l,N as u,Rn as d,p as f,s as p,zn as m}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Xln as h,Yln as g,Zln as _,eun as v}from"./conversation-small-cy5f8pl0g26s86so.js";import{r as y,t as b}from"./ab92372e-km4nblnp8ngn05ru.js";function x({onSuccess:e,showSuccessToast:n=!0}){let a=u(),c=s(),d=t(),p=m();return f({mutationFn:e=>o.createEnvironment(e),onSuccess:async(t,r)=>{t&&v(a,t,{id:c?.id??``,email:c?.email??``,name:c?.name??``},{connectorId:r.githubConnectorId??t.github_connector_id??null}),await Promise.all([_(a),h(a,t?.id)]),n&&d.success(p.formatMessage({id:`wham.whamMutations.environmentCreatedSuccessfully`,defaultMessage:`Environment created successfully`})),e?.(t)},onError:(e,t)=>{let n=e instanceof r&&e.type===i.GITLAB_WEBHOOK_PERMISSION_REQUIRED,a=n&&(t.githubConnectorId==null||t.githubConnectorId===b)?l({id:`wham.whamMutations.gitlabWebhookPermissionRequired.canonical`,defaultMessage:`Creating a project webhook requires Maintainer or Owner access, administrator access, or a custom role with permission to administer webhooks. Ask someone with that access to create an environment with GitLab activity enabled.`}):n?l({id:`wham.whamMutations.gitlabWebhookPermissionRequired`,defaultMessage:`You can still create this environment without GitLab-triggered activity. Turn off “Enable Codex activity from GitLab” and try again. Creating a project webhook requires Maintainer or Owner access, administrator access, or a custom role with permission to administer webhooks.`}):e instanceof r&&e.type===i.GITLAB_WEBHOOK_SIGNING_UNSUPPORTED?S:l({id:`wham.whamMutations.failedToCreateEnvironment`,defaultMessage:`Failed to create environment`});d.danger(a,{toastId:`wham_mutations_failed_to_create_environment`})}})}var S,C=e((()=>{n(),c(),y(),g(),a(),p(),d(),S=l({id:`wham.whamMutations.gitlabWebhookSigningUnsupported`,defaultMessage:`Signed webhooks require GitLab 19.0 or newer; on GitLab 19.0, enable the webhook_signing_token feature flag.`})}));export{C as n,x as r,S as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    VU as t,
+    _R as n,
+    dl as r,
+    fl as i,
+    ml as a,
+    pl as o,
+    yR as s,
+    zU as c
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    In as l,
+    N as u,
+    Rn as d,
+    p as f,
+    s as p,
+    zn as m
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Xln as h,
+    Yln as g,
+    Zln as _,
+    eun as v
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+import {
+    r as y,
+    t as b
+} from "./ab92372e-km4nblnp8ngn05ru.js";
+
+function x({
+    onSuccess: e,
+    showSuccessToast: n = !0
+}) {
+    let a = u(),
+        c = s(),
+        d = t(),
+        p = m();
+    return f({
+        mutationFn: e => o.createEnvironment(e),
+        onSuccess: async (t, r) => {
+            t && v(a, t, {
+                id: c?.id ?? ``,
+                email: c?.email ?? ``,
+                name: c?.name ?? ``
+            }, {
+                connectorId: r.githubConnectorId ?? t.github_connector_id ?? null
+            }), await Promise.all([_(a), h(a, t?.id)]), n && d.success(p.formatMessage({
+                id: `wham.whamMutations.environmentCreatedSuccessfully`,
+                defaultMessage: `Environment created successfully`
+            })), e?.(t)
+        },
+        onError: (e, t) => {
+            let n = e instanceof r && e.type === i.GITLAB_WEBHOOK_PERMISSION_REQUIRED,
+                a = n && (t.githubConnectorId == null || t.githubConnectorId === b) ? l({
+                    id: `wham.whamMutations.gitlabWebhookPermissionRequired.canonical`,
+                    defaultMessage: `Creating a project webhook requires Maintainer or Owner access, administrator access, or a custom role with permission to administer webhooks. Ask someone with that access to create an environment with GitLab activity enabled.`
+                }) : n ? l({
+                    id: `wham.whamMutations.gitlabWebhookPermissionRequired`,
+                    defaultMessage: `You can still create this environment without GitLab-triggered activity. Turn off “Enable Codex activity from GitLab” and try again. Creating a project webhook requires Maintainer or Owner access, administrator access, or a custom role with permission to administer webhooks.`
+                }) : e instanceof r && e.type === i.GITLAB_WEBHOOK_SIGNING_UNSUPPORTED ? S : l({
+                    id: `wham.whamMutations.failedToCreateEnvironment`,
+                    defaultMessage: `Failed to create environment`
+                });
+            d.danger(a, {
+                toastId: `wham_mutations_failed_to_create_environment`
+            })
+        }
+    })
+}
+var S, C = e((() => {
+    n(), c(), y(), g(), a(), p(), d(), S = l({
+        id: `wham.whamMutations.gitlabWebhookSigningUnsupported`,
+        defaultMessage: `Signed webhooks require GitLab 19.0 or newer; on GitLab 19.0, enable the webhook_signing_token feature flag.`
+    })
+}));
+export {
+    C as n, x as r, S as t
+};
 //# sourceMappingURL=82d09521-i8rys99mwuoadx6f.js.map
