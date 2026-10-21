@@ -1,0 +1,35 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $Pt as t,
+    LEt as n,
+    PEt as r,
+    QPt as i,
+    eOt as a,
+    tOt as o
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+
+function s(e) {
+    if (e == null) return !1;
+    let {
+        mimeType: r,
+        name: i
+    } = e;
+    return !(a({
+        fileName: i,
+        mimeType: r
+    }) === `image` || t(e.libraryArtifactType) || e.libraryArtifactType === `flashcards` || i.toLowerCase().endsWith(`.flashcards`) || e.libraryArtifactType === `writing_block` || e.libraryArtifactType == null && n({
+        fileName: i,
+        fileSizeBytes: e.size,
+        isLibraryFile: !0,
+        mimeType: r
+    }))
+}
+var c = e((() => {
+    o(), i(), r()
+}));
+export {
+    s as n, c as t
+};
+//# sourceMappingURL=9f9dcbe6-ec5rp2lkkdk3xwl4.js.map

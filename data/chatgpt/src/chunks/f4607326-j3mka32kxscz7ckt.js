@@ -1,0 +1,46 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ajn as t,
+    Fft as n,
+    Ift as r,
+    wjn as i
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+
+function a({
+    source: e,
+    clientThreadId: t,
+    conversationId: n,
+    messageId: a,
+    assistantMessageId: o,
+    turnIndex: s,
+    contentReferenceStartIndex: c,
+    surfaceLocation: l,
+    entityId: u,
+    entityCategory: d,
+    contentReferenceType: f,
+    isGenui: p
+}) {
+    r({
+        clientThreadId: t,
+        conversationId: n,
+        messageId: a,
+        assistantMessageId: o,
+        turnIndex: s,
+        contentReferenceStartIndex: c ?? void 0,
+        surfaceLocation: l,
+        entityAffordance: e === `marker` ? i.CHATGPT_ENTITY_AFFORDANCE_MAP_MARKER : i.CHATGPT_ENTITY_AFFORDANCE_MAP_LIST,
+        entityId: u,
+        entityCategory: d,
+        contentReferenceType: f ?? void 0,
+        isGenui: p
+    })
+}
+var o = e((() => {
+    n(), t()
+}));
+export {
+    a as n, o as t
+};
+//# sourceMappingURL=f4607326-j3mka32kxscz7ckt.js.map

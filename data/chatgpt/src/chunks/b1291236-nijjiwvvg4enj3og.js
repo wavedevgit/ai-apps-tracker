@@ -1,0 +1,73 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    c7 as t,
+    l7 as n
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    Bn as r,
+    wn as i
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+var a, o, s, c = e((() => {
+        a = i(), n(), o = r(), s = e => {
+            "use forget";
+            let n = (0, a.c)(25),
+                {
+                    avatar: r,
+                    primaryLabel: i,
+                    secondaryLabel: s,
+                    endItem: c,
+                    className: l,
+                    endItemClassName: u,
+                    size: d,
+                    variant: f
+                } = e,
+                p = d === void 0 ? `compact` : d,
+                m = f === void 0 ? `floating` : f,
+                h = m === `floating` && `bg-surface-elevated border-thin relative z-[1] min-h-16 rounded-xl border-(--color-border) py-3 ps-3 pe-4 shadow-(--shadow-100)`,
+                g = m === `list` && `py-4`,
+                _;
+            n[0] !== l || n[1] !== h || n[2] !== g ? (_ = t(`flex items-center gap-3`, h, g, l), n[0] = l, n[1] = h, n[2] = g, n[3] = _) : _ = n[3];
+            let v = p === `compact` ? `text-sm leading-5` : `text-base leading-6`,
+                y;
+            n[4] === v ? y = n[5] : (y = t(`text-primary truncate font-medium`, v), n[4] = v, n[5] = y);
+            let b;
+            n[6] !== i || n[7] !== y ? (b = (0, o.jsx)(`div`, {
+                className: y,
+                children: i
+            }), n[6] = i, n[7] = y, n[8] = b) : b = n[8];
+            let x = p === `compact` ? `text-sm leading-[18px]` : `text-base leading-6`,
+                S;
+            n[9] === x ? S = n[10] : (S = t(`text-tertiary truncate`, x), n[9] = x, n[10] = S);
+            let C;
+            n[11] !== s || n[12] !== S ? (C = (0, o.jsx)(`div`, {
+                className: S,
+                children: s
+            }), n[11] = s, n[12] = S, n[13] = C) : C = n[13];
+            let w;
+            n[14] !== C || n[15] !== b ? (w = (0, o.jsxs)(`div`, {
+                className: `flex min-w-0 flex-1 flex-col gap-0.5`,
+                children: [b, C]
+            }), n[14] = C, n[15] = b, n[16] = w) : w = n[16];
+            let T;
+            n[17] !== c || n[18] !== u ? (T = c && (0, o.jsx)(`div`, {
+                className: t(`flex shrink-0 items-center gap-3 self-center`, u),
+                children: c
+            }), n[17] = c, n[18] = u, n[19] = T) : T = n[19];
+            let E;
+            return n[20] !== r || n[21] !== w || n[22] !== T || n[23] !== _ ? (E = (0, o.jsxs)(`div`, {
+                className: _,
+                children: [r, w, T]
+            }), n[20] = r, n[21] = w, n[22] = T, n[23] = _, n[24] = E) : E = n[24], E
+        }
+    })),
+    l, u, d = e((() => {
+        l = `QRoiXG_ForEveryoneSwitch`, u = {
+            ForEveryoneSwitch: l
+        }
+    }));
+export {
+    c as i, d as n, s as r, u as t
+};
+//# sourceMappingURL=b1291236-nijjiwvvg4enj3og.js.map

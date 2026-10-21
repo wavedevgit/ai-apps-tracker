@@ -1,2 +1,27 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{CG as t,bG as n,ms as r,vs as i}from"./4813494d-dfpv67hlp00pbohr.js";import{In as a,Rn as o}from"./2340486e-i7pjxgdhv0bs6apg.js";function s(e){return`/?${new URLSearchParams({surface:n.TPP,[r]:`site`,prompt:e}).toString()}`}var c,l=e((()=>{o(),i(),t(),c=a({id:`sites.empty_state.create_site_prompt.with_sites_mention`,defaultMessage:`Make me a {sitesMention} about ...`})}));export{s as n,l as r,c as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    CG as t,
+    bG as n,
+    ms as r,
+    vs as i
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    In as a,
+    Rn as o
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function s(e) {
+    return `/?${new URLSearchParams({surface:n.TPP,[r]:`site`,prompt:e}).toString()}`
+}
+var c, l = e((() => {
+    o(), i(), t(), c = a({
+        id: `sites.empty_state.create_site_prompt.with_sites_mention`,
+        defaultMessage: `Make me a {sitesMention} about ...`
+    })
+}));
+export {
+    s as n, l as r, c as t
+};
 //# sourceMappingURL=7e73986a-j0fnex7qbgr3qqsz.js.map

@@ -1,0 +1,617 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Crt as n,
+    HN as r,
+    KJ as i,
+    Mw as a,
+    SN as o,
+    Ttt as s,
+    dY as c,
+    eE as l,
+    eY as u,
+    gF as d,
+    ktt as f,
+    lF as p,
+    mF as m,
+    n9 as h,
+    nst as g,
+    pF as _,
+    r9 as ee,
+    rst as v,
+    sY as te,
+    utt as y,
+    vF as b,
+    wrt as x,
+    xN as S
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    At as C,
+    Bn as w,
+    Ct as ne,
+    Ht as T,
+    Kt as E,
+    Ln as D,
+    N as O,
+    Q as k,
+    Rn as A,
+    Vn as j,
+    kt as re,
+    s as M,
+    wn as N
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    A3t as P,
+    Ajt as F,
+    CVn as ie,
+    Fp as I,
+    H8 as ae,
+    Ip as oe,
+    O3t as se,
+    QGn as ce,
+    SVn as le,
+    ar as ue,
+    cr as de,
+    dA as fe,
+    dFt as pe,
+    dtn as me,
+    fA as he,
+    lUn as ge,
+    nL as _e,
+    or as ve,
+    rL as ye,
+    sr as be,
+    tKn as xe,
+    uFt as Se,
+    utn as Ce
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+import {
+    $x as L,
+    Kx as R,
+    Px as we,
+    Ux as z,
+    Wx as Te,
+    Xx as Ee,
+    Yx as B,
+    eS as V,
+    fS as H,
+    iS as U,
+    lS as W,
+    rS as De,
+    sS as Oe
+} from "./c2675c8c-p3x4d0bnf7e77o1n.js";
+import {
+    Lt as ke,
+    Rt as Ae,
+    T_ as je,
+    w_ as Me
+} from "./8b34dbc2-egl8cz04n8nmlktg.js";
+var Ne = e((() => {
+        we(), R(`kind`, [V({
+            type: L(`feather-live-preview`),
+            version: L(1),
+            kind: L(`event`),
+            channel: W().min(1),
+            payload: H()
+        }), V({
+            type: L(`feather-live-preview`),
+            version: L(1),
+            kind: L(`response`),
+            channel: W().min(1),
+            requestId: W(),
+            payload: H()
+        })]), R(`ok`, [U({
+            ok: L(!0),
+            result: H()
+        }), U({
+            ok: L(!1),
+            error: W()
+        })])
+    })),
+    Pe, Fe, G, Ie, Le, K, Re = e((() => {
+        we(), Ne(), Pe = 1e5, Fe = 1e3, G = W().min(1).max(128), Ie = V({
+            id: G,
+            message_id: G,
+            start_offset: B().nonnegative(),
+            end_offset: B().positive(),
+            substring: W().min(1).max(Pe),
+            rendered_anchor: V({
+                version: L(1),
+                text_hash: W().regex(/^[a-f0-9]{64}$/),
+                prefix: W().max(32),
+                suffix: W().max(32)
+            }),
+            form_data: Oe(W(), H())
+        }).refine(({
+            substring: e,
+            start_offset: t,
+            end_offset: n
+        }) => e.length === n - t), Le = V({
+            messageIds: z(G),
+            highlights: z(Ie).max(Fe)
+        }).refine(({
+            highlights: e
+        }) => new Set(e.map(({
+            id: e
+        }) => e)).size === e.length).refine(({
+            messageIds: e,
+            highlights: t
+        }) => {
+            let n = new Set(e);
+            return t.every(({
+                message_id: e
+            }) => n.has(e))
+        }), K = U({
+            canEdit: Te()
+        }), Ee(K, Le), R(`event`, [U({
+            event: L(`capabilities`),
+            capabilities: K
+        }), U({
+            event: L(`viewport`),
+            top: De().finite(),
+            bottom: De().finite()
+        })])
+    })),
+    ze = e((() => {
+        Re()
+    })),
+    Be = e((() => {
+        N(), l(), a(), F(), ge(), ae(), r(), j(), E(), A(), Re(), ze(), w(), D({
+            add: {
+                id: `chatgpt.feather_preview.highlights.editor.add.label`,
+                defaultMessage: `Add feedback`
+            },
+            edit: {
+                id: `chatgpt.feather_preview.highlights.editor.edit.title`,
+                defaultMessage: `Edit feedback`
+            },
+            feedback: {
+                id: `chatgpt.feather_preview.highlights.popup.feedback.label`,
+                defaultMessage: `Feedback`
+            },
+            reaction: {
+                id: `chatgpt.feather_preview.highlights.reaction.group.label`,
+                defaultMessage: `Feedback reaction`
+            },
+            good: {
+                id: `chatgpt.feather_preview.highlights.reaction.option.good`,
+                defaultMessage: `Good`
+            },
+            bad: {
+                id: `chatgpt.feather_preview.highlights.reaction.option.bad`,
+                defaultMessage: `Bad`
+            },
+            placeholder: {
+                id: `chatgpt.feather_preview.highlights.editor.feedback.placeholder`,
+                defaultMessage: `Add feedback…`
+            },
+            close: {
+                id: `chatgpt.feather_preview.highlights.popup.button.close.label`,
+                defaultMessage: `Close feedback`
+            },
+            delete: {
+                id: `chatgpt.feather_preview.highlights.editor.button.delete.label`,
+                defaultMessage: `Delete feedback`
+            },
+            save: {
+                id: `chatgpt.feather_preview.highlights.editor.button.save.label`,
+                defaultMessage: `Save`
+            },
+            retry: {
+                id: `chatgpt.feather_preview.highlights.error.button.retry.label`,
+                defaultMessage: `Retry`
+            },
+            overlapping: {
+                id: `chatgpt.feather_preview.highlights.overlap.group.label`,
+                defaultMessage: `Overlapping feedback`
+            },
+            commentCount: {
+                id: `chatgpt.feather_preview.highlights.overlap.count.label`,
+                defaultMessage: `{count, plural, one {# comment} other {# comments}}`
+            },
+            chooseToEdit: {
+                id: `chatgpt.feather_preview.highlights.overlap.edit.help_text`,
+                defaultMessage: `Choose a comment to edit`
+            },
+            clickToEdit: {
+                id: `chatgpt.feather_preview.highlights.popup.edit.help_text`,
+                defaultMessage: `Click to edit`
+            },
+            loadFailed: {
+                id: `chatgpt.feather_preview.highlights.status.load_failed`,
+                defaultMessage: `Could not load feedback.`
+            },
+            saveFailed: {
+                id: `chatgpt.feather_preview.highlights.status.save_failed`,
+                defaultMessage: `Could not save feedback.`
+            },
+            saved: {
+                id: `chatgpt.feather_preview.highlights.status.saved`,
+                defaultMessage: `Feedback saved.`
+            },
+            deleted: {
+                id: `chatgpt.feather_preview.highlights.status.deleted`,
+                defaultMessage: `Feedback deleted.`
+            },
+            readOnly: {
+                id: `chatgpt.feather_preview.highlights.status.read_only`,
+                defaultMessage: `Feedback is read only.`
+            }
+        })
+    }));
+
+function q(e) {
+    typeof window > `u` || (window.__internalRenderConversationStatus = e)
+}
+
+function Ve(e) {
+    return e instanceof Error ? e.message : String(e)
+}
+
+function He(e) {
+    "use forget";
+    let t = (0, J.c)(20),
+        {
+            conversation: n,
+            networkPolicy: r,
+            disableExternalMedia: i
+        } = e,
+        a = r === void 0 ? `none` : r,
+        s;
+    t[0] === a ? s = t[1] : (s = {
+        isInternalPreview: !0,
+        networkPolicy: a
+    }, t[0] = a, t[1] = s);
+    let c;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (c = {
+        lockSystemHints: !0
+    }, t[2] = c) : c = t[2];
+    let l, u;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, X.jsx)(I, {}), u = (0, X.jsx)(se, {}), t[3] = l, t[4] = u) : (l = t[3], u = t[4]);
+    let d;
+    t[5] !== n || t[6] !== i ? (d = (0, X.jsx)(ce, {
+        children: (0, X.jsxs)(Y.Suspense, {
+            fallback: l,
+            children: [u, (0, X.jsx)(`div`, {
+                className: `@container w-full`,
+                children: (0, X.jsx)(fe.Provider, {
+                    value: !0,
+                    children: (0, X.jsx)(ke, {
+                        conversation: n,
+                        disableExternalMedia: i,
+                        onRequestCompletion: o,
+                        clearPrefetchNavlink: o
+                    })
+                })
+            })]
+        })
+    }), t[5] = n, t[6] = i, t[7] = d) : d = t[7];
+    let f;
+    t[8] !== n || t[9] !== d ? (f = (0, X.jsx)(Me, {
+        conversation: n,
+        options: c,
+        children: d
+    }), t[8] = n, t[9] = d, t[10] = f) : f = t[10];
+    let m;
+    t[11] === n.id ? m = t[12] : (m = (0, X.jsx)(ue, {
+        conversationId: n.id
+    }), t[11] = n.id, t[12] = m);
+    let h;
+    t[13] !== s || t[14] !== f || t[15] !== m ? (h = (0, X.jsxs)(be.Provider, {
+        value: s,
+        children: [f, m]
+    }), t[13] = s, t[14] = f, t[15] = m, t[16] = h) : h = t[16];
+    let g;
+    return t[17] !== n || t[18] !== h ? (g = (0, X.jsx)(Se, {
+        children: (0, X.jsx)(p.Provider, {
+            value: n,
+            children: h
+        })
+    }), t[17] = n, t[18] = h, t[19] = g) : g = t[19], g
+}
+
+function Ue(e) {
+    let t = {},
+        n = `client-created-root`;
+    t[n] = {
+        id: n,
+        message: {
+            id: n,
+            author: {
+                role: s.Root
+            },
+            content: {
+                content_type: y.Text,
+                parts: []
+            }
+        },
+        parent: ``,
+        children: []
+    };
+    let r = n,
+        i = [],
+        a = new Set;
+    for (let t of e.messages) a.add(t.id);
+    for (let n of e.messages) {
+        let e = n.metadata?.parent_id ?? r;
+        a.has(e) || (e = r), t[n.id] = {
+            id: n.id,
+            message: n,
+            parent: e,
+            children: []
+        }, r = n.id, i.push(...n.metadata?.safe_urls ?? [])
+    }
+    for (let [e, n] of Object.entries(t)) n.parent !== `` && t[n.parent]?.children?.push(e);
+    let o = e.conversation_id ?? e.id;
+    return {
+        title: e.title ?? null,
+        conversation_id: o,
+        mapping: t,
+        current_node: r,
+        moderation_results: [],
+        safe_urls: e.safe_urls ?? i,
+        ...me(e, `conversation_template_id`, `gizmo_id`, `is_archived`, `conversation_origin`, `async_status`, `update_time`, `is_do_not_remember`)
+    }
+}
+
+function We(e) {
+    return typeof e == `string` && e.length > 0
+}
+
+function Ge() {
+    "use forget";
+    let e = (0, J.c)(14),
+        t = O(),
+        [n, r] = (0, Y.useState)(null),
+        i;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = {
+        active: null,
+        ready: !1,
+        resetting: null
+    }, e[0] = i) : i = e[0];
+    let a = (0, Y.useRef)(i),
+        o = C(),
+        s, c;
+    if (e[1] !== o.search) {
+        let t = new URLSearchParams(o.search);
+        s = t.get(Z) === `deps-only` ? `deps-only` : `none`, c = t.get(Q) === `1` || t.get($) === `1`, e[1] = o.search, e[2] = s, e[3] = c
+    } else s = e[2], c = e[3];
+    let l = c,
+        u, d;
+    e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (u = () => {
+        let e = a.current,
+            t = {
+                version: 1,
+                async render(n, i) {
+                    if (typeof n != `string` || !n.trim() || n.length > 128 || typeof i != `string`) throw Error(`Invalid render request`);
+                    if (e.active || window.__maraschinoRender !== t) throw Error(`Render page is not idle`);
+                    let a = JSON.parse(i);
+                    if (typeof a != `object` || !a || Array.isArray(a) || !(`messages` in a) || !Array.isArray(a.messages)) throw Error(`Invalid render conversation`);
+                    let o = Ue(a),
+                        s = o.conversation_id;
+                    if (!We(s)) throw Error(`Render conversation has no ID`);
+                    let c = _({
+                        sharedConversationId: s
+                    });
+                    q({
+                        status: `loading`,
+                        requestId: n
+                    });
+                    try {
+                        ye(), ie(c, o, {
+                            source: `internal-render-conversation`
+                        }), te(c.id, e => {
+                            e.continuingFromSharedConversationId = s
+                        })
+                    } catch (e) {
+                        let t = e;
+                        throw m(c), q({
+                            status: `error`,
+                            requestId: n,
+                            error: Ve(t)
+                        }), t
+                    }
+                    await new Promise((t, i) => {
+                        let a = {
+                            requestId: n,
+                            conversation: c,
+                            resolve: () => {
+                                e.active !== a || e.resetting || (e.ready = !0, q({
+                                    status: `ready`,
+                                    requestId: n
+                                }), t())
+                            },
+                            reject: i
+                        };
+                        e.active = a, e.ready = !1, r(a)
+                    })
+                },
+                async reset(n) {
+                    if (e.active?.requestId !== n || !e.ready || e.resetting || window.__maraschinoRender !== t) throw Error(`Render page cannot reset this request`);
+                    q({
+                        status: `loading`,
+                        requestId: n
+                    }), await new Promise((t, n) => {
+                        e.resetting = {
+                            resolve: t,
+                            reject: n
+                        }, r(null)
+                    })
+                }
+            };
+        return window.__maraschinoRender = t, q({
+            status: `idle`
+        }), () => {
+            window.__maraschinoRender === t && delete window.__maraschinoRender;
+            let n = Error(`Render page was removed`);
+            e.active?.reject(n), e.resetting?.reject(n), e.active && m(e.active.conversation), e.active = null, e.ready = !1, e.resetting = null
+        }
+    }, d = [], e[4] = u, e[5] = d) : (u = e[4], d = e[5]), (0, Y.useEffect)(u, d);
+    let f, p;
+    e[6] !== n || e[7] !== t ? (f = () => {
+        let e = a.current;
+        if (n || !e.active || !e.resetting) return;
+        let r = e.active,
+            i = e.resetting;
+        if (e.resetting = null, !m(r.conversation)) {
+            let e = Error(`Render conversation could not be discarded`);
+            q({
+                status: `error`,
+                requestId: r.requestId,
+                error: e.message
+            }), i.reject(e);
+            return
+        }
+        t.removeQueries({
+            queryKey: [`getFileDownloadLink`]
+        }), document.getElementById(`recharts_measurement_span`)?.remove(), e.active = null, e.ready = !1, q({
+            status: `idle`,
+            requestId: r.requestId
+        }), i.resolve()
+    }, p = [n, t], e[6] = n, e[7] = t, e[8] = f, e[9] = p) : (f = e[8], p = e[9]), (0, Y.useEffect)(f, p);
+    let h;
+    return e[10] !== n || e[11] !== l || e[12] !== s ? (h = n ? (0, X.jsx)(Ke, {
+        attempt: n,
+        networkPolicy: s,
+        disableExternalMedia: l
+    }, n.conversation.id) : null, e[10] = n, e[11] = l, e[12] = s, e[13] = h) : h = e[13], h
+}
+
+function Ke(e) {
+    "use forget";
+    let t = (0, J.c)(9),
+        {
+            attempt: n,
+            networkPolicy: r,
+            disableExternalMedia: i
+        } = e,
+        a = c(n.conversation.id, qe),
+        o, s;
+    t[0] !== n || t[1] !== a ? (o = () => {
+        a && n.resolve()
+    }, s = [n, a], t[0] = n, t[1] = a, t[2] = o, t[3] = s) : (o = t[2], s = t[3]), (0, Y.useEffect)(o, s);
+    let l;
+    return t[4] !== n.conversation || t[5] !== i || t[6] !== a || t[7] !== r ? (l = a ? (0, X.jsx)(He, {
+        conversation: n.conversation,
+        networkPolicy: r,
+        disableExternalMedia: i
+    }) : null, t[4] = n.conversation, t[5] = i, t[6] = a, t[7] = r, t[8] = l) : l = t[8], l
+}
+
+function qe(e) {
+    return e?.isLoading === !1
+}
+
+function Je() {
+    "use forget";
+    let e = (0, J.c)(31),
+        t = ne(),
+        n = re(),
+        r = C(),
+        a;
+    e[0] === t ? a = e[1] : (a = () => typeof t == `object` && t ? t : null, e[0] = t, e[1] = a);
+    let [o] = (0, Y.useState)(a), s = o?.parentOrigin ?? null, l = typeof t == `string` ? t : o?.payload ?? n, [u, f] = (0, Y.useState)(null), p = u ?? l;
+    x.debug(`IN: POST=${l.length}, GET=${n?.length}`);
+    let m, h;
+    e[2] === s ? (m = e[3], h = e[4]) : (m = () => {
+        if (!s || window.parent === window) return;
+        let e = e => {
+            if (e.origin !== s || e.source !== window.parent) return;
+            let t = e.data;
+            if (typeof t != `object` || !t || Array.isArray(t) || Object.keys(t).length !== 3 || !(`type` in t) || t.type !== `feather-render-update` || !(`requestId` in t) || typeof t.requestId != `string` || !t.requestId || t.requestId.length > 128 || !(`payload` in t) || typeof t.payload != `string`) return;
+            let n;
+            try {
+                n = JSON.parse(t.payload)
+            } catch {
+                return
+            }
+            typeof n != `object` || !n || Array.isArray(n) || Object.keys(n).some(Xe) || !(`conversation` in n) || n.conversation == null || typeof n.conversation != `object` || Array.isArray(n.conversation) || (f(t.payload), window.parent.postMessage({
+                type: `feather-render-updated`,
+                requestId: t.requestId
+            }, s))
+        };
+        return window.addEventListener(`message`, e), window.parent.postMessage({
+            type: `feather-render-ready`
+        }, s), () => window.removeEventListener(`message`, e)
+    }, h = [s], e[2] = s, e[3] = m, e[4] = h), (0, Y.useEffect)(m, h);
+    let _;
+    e[5] === p ? _ = e[6] : (_ = JSON.parse(p), e[5] = p, e[6] = _);
+    let v = _,
+        y = s ? v.conversation : v,
+        b = s ? v.asset_url_overrides ?? null : null,
+        S, w;
+    if (e[7] !== r) {
+        let t = new URLSearchParams(g().featherRenderUrlQueryParams ?? r.search);
+        S = t.get(Z) === `deps-only` ? `deps-only` : `none`, w = t.get(Q) === `1` || t.get($) === `1`, e[7] = r, e[8] = S, e[9] = w
+    } else S = e[8], w = e[9];
+    let T = w,
+        E = y.conversation_id ?? y.id,
+        D = E,
+        O = E,
+        k;
+    e[10] !== D || e[11] !== O ? (k = d(D, {
+        sharedConversationId: O
+    }), e[10] = D, e[11] = O, e[12] = k) : k = e[12];
+    let A = k,
+        j = c(D, Ye),
+        M, N;
+    e[13] !== A || e[14] !== y || e[15] !== D || e[16] !== s || e[17] !== b || e[18] !== O ? (M = () => {
+        ye(), q({
+            status: `loading`
+        });
+        try {
+            let e = Ue(y);
+            ee(D, b), ie(A, e, {
+                source: `internal-render-conversation`
+            }), te(D, t => {
+                t.continuingFromSharedConversationId = O, s && t.tree.currentLeafId !== e.current_node && i.setCurrentLeafId(t, e.current_node)
+            })
+        } catch (e) {
+            let t = Ve(e);
+            x.error(`Failed to load internal render conversation`, {
+                error: t
+            }), q({
+                status: `error`,
+                error: t
+            })
+        }
+        return () => ee(D, null)
+    }, N = [A, y, D, s, b, O], e[13] = A, e[14] = y, e[15] = D, e[16] = s, e[17] = b, e[18] = O, e[19] = M, e[20] = N) : (M = e[19], N = e[20]), (0, Y.useEffect)(M, N);
+    let P, F;
+    e[21] === j ? (P = e[22], F = e[23]) : (P = () => {
+        j && q({
+            status: `ready`
+        })
+    }, F = [j], e[21] = j, e[22] = P, e[23] = F), (0, Y.useEffect)(P, F), x.debug(`Ready ${D} (SERVER: false) : ${p.length} byte(s)`);
+    let I;
+    return e[24] !== A || e[25] !== y || e[26] !== T || e[27] !== j || e[28] !== S || e[29] !== s ? (I = null, e[24] = A, e[25] = y, e[26] = T, e[27] = j, e[28] = S, e[29] = s, e[30] = I) : I = e[30], I
+}
+
+function Ye(e) {
+    return e?.isLoading === !1
+}
+
+function Xe(e) {
+    return e !== `conversation` && e !== `asset_url_overrides`
+}
+var J, Y, X, Ze, Z, Q, $, Qe, $e, et, tt = e((() => {
+    k(), J = N(), f(), ve(), de(), je(), b(), pe(), le(), P(), Be(), h(), u(), xe(), oe(), _e(), he(), Ae(), n(), v(), M(), S(), Ce(), Y = t(j()), X = w(), Ze = !1, Z = `preview_network_policy`, Q = `disable_external_media`, $ = `disable_video_preview`, Qe = () => [{
+        title: `ChatGPT`
+    }], $e = () => !1, et = T(function() {
+        "use forget";
+        let e = (0, J.c)(5),
+            t = ne(),
+            n = C(),
+            r;
+        e[0] !== t || e[1] !== n ? (r = Ze, e[0] = t, e[1] = n, e[2] = r) : r = e[2];
+        let i = r,
+            a;
+        return e[3] === i ? a = e[4] : (a = i ? (0, X.jsx)(Ge, {}) : (0, X.jsx)(Je, {}), e[3] = i, e[4] = a), a
+    })
+}));
+export {
+    $e as i, et as n, Qe as r, tt as t
+};
+//# sourceMappingURL=8cc1dd94-imjrn9o303lk9k1c.js.map

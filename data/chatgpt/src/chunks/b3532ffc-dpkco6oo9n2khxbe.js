@@ -1,2 +1,287 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{J5 as n,JT as r,q5 as i,qT as a}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as ee,Hn as te,Pn as ne,Tn as o,Vn as s,zn as c}from"./2340486e-komxp8tzs51ny4jj.js";import{Hst as re,Vst as ie}from"./conversation-small-cawdu7il3ha6y70c.js";import{Gh as l,Kh as ae,vv as oe,yv as se}from"./30901919-jory365vq6ym5crx.js";import{$v as u,Qv as d}from"./c2675c8c-nxl2ic2ofk2vw70s.js";function ce(e){"use forget";let t=(0,ue.c)(108),{value:n,title:r,rootClassName:te,valueClassName:o,renderValue:s,valueDivClassName:c,valueVerticalAlign:re,deleteCellDivClassName:l,deleteVerticalAlign:oe,deleteButtonClassName:u,deleteButtonColor:ce,deleteButtonSize:de,deleteIconClassName:m,getDeleteButtonLabel:h,emptyMessageClassName:fe,emptyMessageDivClassName:pe,hideHeader:me,maxVisibleEntries:he,onChange:g,emptyMessage:_,addInputAriaLabel:ge,addButtonLabel:_e,confirmAddButtonLabel:ve,addFormClassName:ye,addInputClassName:be,addButtonClassName:xe,addRowDivClassName:Se,addEntryButtonClassName:Ce,placeholder:we,normalizeEntry:Te,getEntryKey:v,invalidEntryMessage:y,getAsyncErrorMessage:Ee,dedupeEntries:De,duplicateEntryMessage:Oe,disabled:ke,addDisabled:Ae}=e,je=te===void 0?`w-auto`:te,b=re===void 0?`top`:re,x=oe===void 0?`top`:oe,S=ce===void 0?`primary`:ce,C=de===void 0?`medium`:de,Me=me!==void 0&&me,Ne=be===void 0?`w-80`:be,Pe=xe===void 0?`grow-0`:xe,Fe=Se===void 0?`min-h-0 items-stretch`:Se,Ie=Ce===void 0?`mt-2`:Ce,Le=we===void 0?`example.com`:we,Re=De!==void 0&&De,w=ke!==void 0&&ke,T=Ae===void 0?w:Ae,[E,ze]=(0,f.useState)(!1),[D,Be]=(0,f.useState)(``),[O,k]=(0,f.useState)(null),A=ee(),j=(0,f.useRef)(null),M=(0,f.useId)(),Ve=(0,f.useRef)(y),N,P;t[0]===y?(N=t[1],P=t[2]):(N=()=>{let e=Ve.current;Ve.current=y,k(t=>t===e?null:t)},P=[y],t[0]=y,t[1]=N,t[2]=P),(0,f.useEffect)(N,P);let He=le,F;t[3]!==Re||t[4]!==Oe||t[5]!==Ee||t[6]!==v||t[7]!==A||t[8]!==y||t[9]!==D||t[10]!==Te||t[11]!==g||t[12]!==n?(F=()=>{k(null);let e=Te??He,t=e(D);if(!t){D.trim()&&y&&(k(y),j.current?.focus());return}let r=v??e,i=v?.(t)??t;if(Re&&n.some(e=>r(e)===i)){k(Oe??A.formatMessage({id:`y4cF0D`,defaultMessage:`This domain has already been added.`})),j.current?.focus();return}let a=g([...n,t]);if(a){a.then(()=>{ze(!1),Be(``)},e=>{let t=Ee?.(e);t&&k(t),j.current?.focus()});return}ze(!1),Be(``)},t[3]=Re,t[4]=Oe,t[5]=Ee,t[6]=v,t[7]=A,t[8]=y,t[9]=D,t[10]=Te,t[11]=g,t[12]=n,t[13]=F):F=t[13];let I=F,L;t[14]!==he||t[15]!==n?(L=he==null?n:n.slice(0,he),t[14]=he,t[15]=n,t[16]=L):L=t[16];let Ue=L,R;t[17]!==Me||t[18]!==r?(R=!Me&&(0,p.jsxs)(d.Header,{children:[(0,p.jsx)(d.HeaderCell,{children:r}),(0,p.jsx)(d.HeaderCell,{})]}),t[17]=Me,t[18]=r,t[19]=R):R=t[19];let z;if(t[20]!==u||t[21]!==S||t[22]!==C||t[23]!==l||t[24]!==m||t[25]!==x||t[26]!==w||t[27]!==h||t[28]!==g||t[29]!==s||t[30]!==n||t[31]!==o||t[32]!==c||t[33]!==b||t[34]!==Ue){let e;t[36]!==u||t[37]!==S||t[38]!==C||t[39]!==l||t[40]!==m||t[41]!==x||t[42]!==w||t[43]!==h||t[44]!==g||t[45]!==s||t[46]!==n||t[47]!==o||t[48]!==c||t[49]!==b?(e=(e,t)=>(0,p.jsxs)(d.Row,{children:[(0,p.jsx)(d.Cell,{className:o,divClassName:c,verticalAlign:b,children:s?.(e)??e}),(0,p.jsx)(d.Cell,{textAlign:`right`,divClassName:l,verticalAlign:x,children:(0,p.jsx)(a,{type:`button`,color:S,size:C,className:u,label:h?.(e),disabled:w,onClick:()=>{g(n.filter((e,n)=>n!==t))},children:(0,p.jsx)(se,{className:i(`icon-sm`,m)})})})]},t),t[36]=u,t[37]=S,t[38]=C,t[39]=l,t[40]=m,t[41]=x,t[42]=w,t[43]=h,t[44]=g,t[45]=s,t[46]=n,t[47]=o,t[48]=c,t[49]=b,t[50]=e):e=t[50],z=Ue.map(e),t[20]=u,t[21]=S,t[22]=C,t[23]=l,t[24]=m,t[25]=x,t[26]=w,t[27]=h,t[28]=g,t[29]=s,t[30]=n,t[31]=o,t[32]=c,t[33]=b,t[34]=Ue,t[35]=z}else z=t[35];let B;t[51]!==_||t[52]!==fe||t[53]!==pe||t[54]!==n?(B=_&&n.length===0?(0,p.jsx)(d.Row,{children:(0,p.jsx)(d.Cell,{colSpan:2,divClassName:pe,className:i(`text-center text-sm italic`,fe),children:_})}):null,t[51]=_,t[52]=fe,t[53]=pe,t[54]=n,t[55]=B):B=t[55];let We=!E&&`hidden`,V;t[56]===We?V=t[57]:(V=i(`mt-2 w-full p-1`,We),t[56]=We,t[57]=V);let H;t[58]===ye?H=t[59]:(H=i(`flex flex-row items-start gap-2`,ye),t[58]=ye,t[59]=H);let U;t[60]!==ge||t[61]!==A?(U=ge??A.formatMessage({id:`CgP6Du`,defaultMessage:`Add new domain`}),t[60]=ge,t[61]=A,t[62]=U):U=t[62];let Ge=O==null?void 0:M,Ke=O!=null,W;t[63]===Symbol.for(`react.memo_cache_sentinel`)?(W=e=>{Be(e.target.value),k(null)},t[63]=W):W=t[63];let G;t[64]!==T||t[65]!==Ne||t[66]!==I||t[67]!==D||t[68]!==Le||t[69]!==U||t[70]!==Ge||t[71]!==Ke?(G=(0,p.jsx)(ie,{ariaLabel:U,"aria-errormessage":Ge,"aria-invalid":Ke,className:Ne,name:`newEntry`,value:D,onChange:W,ref:j,disabled:T,onPressEnter:I,placeholder:Le}),t[64]=T,t[65]=Ne,t[66]=I,t[67]=D,t[68]=Le,t[69]=U,t[70]=Ge,t[71]=Ke,t[72]=G):G=t[72];let K;t[73]===ve?K=t[74]:(K=ve??(0,p.jsx)(ne,{id:`svRVol`,defaultMessage:`Add`}),t[73]=ve,t[74]=K);let q;t[75]!==Pe||t[76]!==T||t[77]!==I||t[78]!==K?(q=(0,p.jsx)(a,{className:Pe,onClick:I,disabled:T,children:K}),t[75]=Pe,t[76]=T,t[77]=I,t[78]=K,t[79]=q):q=t[79];let J;t[80]!==H||t[81]!==G||t[82]!==q?(J=(0,p.jsxs)(`div`,{className:H,children:[G,q]}),t[80]=H,t[81]=G,t[82]=q,t[83]=J):J=t[83];let Y;t[84]!==O||t[85]!==M?(Y=O!=null&&(0,p.jsx)(`p`,{id:M,role:`alert`,className:`text-token-interactive-label-danger-secondary-default mt-1 text-xs`,children:O}),t[84]=O,t[85]=M,t[86]=Y):Y=t[86];let X;t[87]!==V||t[88]!==J||t[89]!==Y?(X=(0,p.jsxs)(`div`,{className:V,children:[J,Y]}),t[87]=V,t[88]=J,t[89]=Y,t[90]=X):X=t[90];let Z;t[91]!==_e||t[92]!==T||t[93]!==Ie||t[94]!==E?(Z=!E&&(0,p.jsxs)(a,{type:`button`,onClick:()=>{k(null),ze(!0),setTimeout(()=>{j.current?.focus()},0)},disabled:T,className:Ie,children:[(0,p.jsx)(ae,{className:`icon-sm inline-block`}),_e??(0,p.jsx)(ne,{id:`J5y3+M`,defaultMessage:`Add new domain`})]}),t[91]=_e,t[92]=T,t[93]=Ie,t[94]=E,t[95]=Z):Z=t[95];let Q;t[96]!==Fe||t[97]!==X||t[98]!==Z?(Q=(0,p.jsx)(d.Row,{children:(0,p.jsxs)(d.Cell,{colSpan:2,divClassName:Fe,children:[X,Z]})}),t[96]=Fe,t[97]=X,t[98]=Z,t[99]=Q):Q=t[99];let $;t[100]!==z||t[101]!==B||t[102]!==Q?($=(0,p.jsxs)(d.Body,{children:[z,B,Q]}),t[100]=z,t[101]=B,t[102]=Q,t[103]=$):$=t[103];let qe;return t[104]!==je||t[105]!==R||t[106]!==$?(qe=(0,p.jsxs)(d.Root,{className:je,children:[R,$]}),t[104]=je,t[105]=R,t[106]=$,t[107]=qe):qe=t[107],qe}function le(e){let t=e.trim();return t?t.startsWith(`@`)?t.slice(1):t:``}var ue,f,p,de=e((()=>{ue=o(),r(),re(),u(),l(),oe(),n(),f=t(te()),c(),p=s()}));export{de as n,ce as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    J5 as n,
+    JT as r,
+    q5 as i,
+    qT as a
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as ee,
+    Hn as te,
+    Pn as ne,
+    Tn as o,
+    Vn as s,
+    zn as c
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Hst as re,
+    Vst as ie
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Gh as l,
+    Kh as ae,
+    vv as oe,
+    yv as se
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    $v as u,
+    Qv as d
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+
+function ce(e) {
+    "use forget";
+    let t = (0, ue.c)(108),
+        {
+            value: n,
+            title: r,
+            rootClassName: te,
+            valueClassName: o,
+            renderValue: s,
+            valueDivClassName: c,
+            valueVerticalAlign: re,
+            deleteCellDivClassName: l,
+            deleteVerticalAlign: oe,
+            deleteButtonClassName: u,
+            deleteButtonColor: ce,
+            deleteButtonSize: de,
+            deleteIconClassName: m,
+            getDeleteButtonLabel: h,
+            emptyMessageClassName: fe,
+            emptyMessageDivClassName: pe,
+            hideHeader: me,
+            maxVisibleEntries: he,
+            onChange: g,
+            emptyMessage: _,
+            addInputAriaLabel: ge,
+            addButtonLabel: _e,
+            confirmAddButtonLabel: ve,
+            addFormClassName: ye,
+            addInputClassName: be,
+            addButtonClassName: xe,
+            addRowDivClassName: Se,
+            addEntryButtonClassName: Ce,
+            placeholder: we,
+            normalizeEntry: Te,
+            getEntryKey: v,
+            invalidEntryMessage: y,
+            getAsyncErrorMessage: Ee,
+            dedupeEntries: De,
+            duplicateEntryMessage: Oe,
+            disabled: ke,
+            addDisabled: Ae
+        } = e,
+        je = te === void 0 ? `w-auto` : te,
+        b = re === void 0 ? `top` : re,
+        x = oe === void 0 ? `top` : oe,
+        S = ce === void 0 ? `primary` : ce,
+        C = de === void 0 ? `medium` : de,
+        Me = me !== void 0 && me,
+        Ne = be === void 0 ? `w-80` : be,
+        Pe = xe === void 0 ? `grow-0` : xe,
+        Fe = Se === void 0 ? `min-h-0 items-stretch` : Se,
+        Ie = Ce === void 0 ? `mt-2` : Ce,
+        Le = we === void 0 ? `example.com` : we,
+        Re = De !== void 0 && De,
+        w = ke !== void 0 && ke,
+        T = Ae === void 0 ? w : Ae,
+        [E, ze] = (0, f.useState)(!1),
+        [D, Be] = (0, f.useState)(``),
+        [O, k] = (0, f.useState)(null),
+        A = ee(),
+        j = (0, f.useRef)(null),
+        M = (0, f.useId)(),
+        Ve = (0, f.useRef)(y),
+        N, P;
+    t[0] === y ? (N = t[1], P = t[2]) : (N = () => {
+        let e = Ve.current;
+        Ve.current = y, k(t => t === e ? null : t)
+    }, P = [y], t[0] = y, t[1] = N, t[2] = P), (0, f.useEffect)(N, P);
+    let He = le,
+        F;
+    t[3] !== Re || t[4] !== Oe || t[5] !== Ee || t[6] !== v || t[7] !== A || t[8] !== y || t[9] !== D || t[10] !== Te || t[11] !== g || t[12] !== n ? (F = () => {
+        k(null);
+        let e = Te ?? He,
+            t = e(D);
+        if (!t) {
+            D.trim() && y && (k(y), j.current?.focus());
+            return
+        }
+        let r = v ?? e,
+            i = v?.(t) ?? t;
+        if (Re && n.some(e => r(e) === i)) {
+            k(Oe ?? A.formatMessage({
+                id: `y4cF0D`,
+                defaultMessage: `This domain has already been added.`
+            })), j.current?.focus();
+            return
+        }
+        let a = g([...n, t]);
+        if (a) {
+            a.then(() => {
+                ze(!1), Be(``)
+            }, e => {
+                let t = Ee?.(e);
+                t && k(t), j.current?.focus()
+            });
+            return
+        }
+        ze(!1), Be(``)
+    }, t[3] = Re, t[4] = Oe, t[5] = Ee, t[6] = v, t[7] = A, t[8] = y, t[9] = D, t[10] = Te, t[11] = g, t[12] = n, t[13] = F) : F = t[13];
+    let I = F,
+        L;
+    t[14] !== he || t[15] !== n ? (L = he == null ? n : n.slice(0, he), t[14] = he, t[15] = n, t[16] = L) : L = t[16];
+    let Ue = L,
+        R;
+    t[17] !== Me || t[18] !== r ? (R = !Me && (0, p.jsxs)(d.Header, {
+        children: [(0, p.jsx)(d.HeaderCell, {
+            children: r
+        }), (0, p.jsx)(d.HeaderCell, {})]
+    }), t[17] = Me, t[18] = r, t[19] = R) : R = t[19];
+    let z;
+    if (t[20] !== u || t[21] !== S || t[22] !== C || t[23] !== l || t[24] !== m || t[25] !== x || t[26] !== w || t[27] !== h || t[28] !== g || t[29] !== s || t[30] !== n || t[31] !== o || t[32] !== c || t[33] !== b || t[34] !== Ue) {
+        let e;
+        t[36] !== u || t[37] !== S || t[38] !== C || t[39] !== l || t[40] !== m || t[41] !== x || t[42] !== w || t[43] !== h || t[44] !== g || t[45] !== s || t[46] !== n || t[47] !== o || t[48] !== c || t[49] !== b ? (e = (e, t) => (0, p.jsxs)(d.Row, {
+            children: [(0, p.jsx)(d.Cell, {
+                className: o,
+                divClassName: c,
+                verticalAlign: b,
+                children: s?.(e) ?? e
+            }), (0, p.jsx)(d.Cell, {
+                textAlign: `right`,
+                divClassName: l,
+                verticalAlign: x,
+                children: (0, p.jsx)(a, {
+                    type: `button`,
+                    color: S,
+                    size: C,
+                    className: u,
+                    label: h?.(e),
+                    disabled: w,
+                    onClick: () => {
+                        g(n.filter((e, n) => n !== t))
+                    },
+                    children: (0, p.jsx)(se, {
+                        className: i(`icon-sm`, m)
+                    })
+                })
+            })]
+        }, t), t[36] = u, t[37] = S, t[38] = C, t[39] = l, t[40] = m, t[41] = x, t[42] = w, t[43] = h, t[44] = g, t[45] = s, t[46] = n, t[47] = o, t[48] = c, t[49] = b, t[50] = e) : e = t[50], z = Ue.map(e), t[20] = u, t[21] = S, t[22] = C, t[23] = l, t[24] = m, t[25] = x, t[26] = w, t[27] = h, t[28] = g, t[29] = s, t[30] = n, t[31] = o, t[32] = c, t[33] = b, t[34] = Ue, t[35] = z
+    } else z = t[35];
+    let B;
+    t[51] !== _ || t[52] !== fe || t[53] !== pe || t[54] !== n ? (B = _ && n.length === 0 ? (0, p.jsx)(d.Row, {
+        children: (0, p.jsx)(d.Cell, {
+            colSpan: 2,
+            divClassName: pe,
+            className: i(`text-center text-sm italic`, fe),
+            children: _
+        })
+    }) : null, t[51] = _, t[52] = fe, t[53] = pe, t[54] = n, t[55] = B) : B = t[55];
+    let We = !E && `hidden`,
+        V;
+    t[56] === We ? V = t[57] : (V = i(`mt-2 w-full p-1`, We), t[56] = We, t[57] = V);
+    let H;
+    t[58] === ye ? H = t[59] : (H = i(`flex flex-row items-start gap-2`, ye), t[58] = ye, t[59] = H);
+    let U;
+    t[60] !== ge || t[61] !== A ? (U = ge ?? A.formatMessage({
+        id: `CgP6Du`,
+        defaultMessage: `Add new domain`
+    }), t[60] = ge, t[61] = A, t[62] = U) : U = t[62];
+    let Ge = O == null ? void 0 : M,
+        Ke = O != null,
+        W;
+    t[63] === Symbol.for(`react.memo_cache_sentinel`) ? (W = e => {
+        Be(e.target.value), k(null)
+    }, t[63] = W) : W = t[63];
+    let G;
+    t[64] !== T || t[65] !== Ne || t[66] !== I || t[67] !== D || t[68] !== Le || t[69] !== U || t[70] !== Ge || t[71] !== Ke ? (G = (0, p.jsx)(ie, {
+        ariaLabel: U,
+        "aria-errormessage": Ge,
+        "aria-invalid": Ke,
+        className: Ne,
+        name: `newEntry`,
+        value: D,
+        onChange: W,
+        ref: j,
+        disabled: T,
+        onPressEnter: I,
+        placeholder: Le
+    }), t[64] = T, t[65] = Ne, t[66] = I, t[67] = D, t[68] = Le, t[69] = U, t[70] = Ge, t[71] = Ke, t[72] = G) : G = t[72];
+    let K;
+    t[73] === ve ? K = t[74] : (K = ve ?? (0, p.jsx)(ne, {
+        id: `svRVol`,
+        defaultMessage: `Add`
+    }), t[73] = ve, t[74] = K);
+    let q;
+    t[75] !== Pe || t[76] !== T || t[77] !== I || t[78] !== K ? (q = (0, p.jsx)(a, {
+        className: Pe,
+        onClick: I,
+        disabled: T,
+        children: K
+    }), t[75] = Pe, t[76] = T, t[77] = I, t[78] = K, t[79] = q) : q = t[79];
+    let J;
+    t[80] !== H || t[81] !== G || t[82] !== q ? (J = (0, p.jsxs)(`div`, {
+        className: H,
+        children: [G, q]
+    }), t[80] = H, t[81] = G, t[82] = q, t[83] = J) : J = t[83];
+    let Y;
+    t[84] !== O || t[85] !== M ? (Y = O != null && (0, p.jsx)(`p`, {
+        id: M,
+        role: `alert`,
+        className: `text-token-interactive-label-danger-secondary-default mt-1 text-xs`,
+        children: O
+    }), t[84] = O, t[85] = M, t[86] = Y) : Y = t[86];
+    let X;
+    t[87] !== V || t[88] !== J || t[89] !== Y ? (X = (0, p.jsxs)(`div`, {
+        className: V,
+        children: [J, Y]
+    }), t[87] = V, t[88] = J, t[89] = Y, t[90] = X) : X = t[90];
+    let Z;
+    t[91] !== _e || t[92] !== T || t[93] !== Ie || t[94] !== E ? (Z = !E && (0, p.jsxs)(a, {
+        type: `button`,
+        onClick: () => {
+            k(null), ze(!0), setTimeout(() => {
+                j.current?.focus()
+            }, 0)
+        },
+        disabled: T,
+        className: Ie,
+        children: [(0, p.jsx)(ae, {
+            className: `icon-sm inline-block`
+        }), _e ?? (0, p.jsx)(ne, {
+            id: `J5y3+M`,
+            defaultMessage: `Add new domain`
+        })]
+    }), t[91] = _e, t[92] = T, t[93] = Ie, t[94] = E, t[95] = Z) : Z = t[95];
+    let Q;
+    t[96] !== Fe || t[97] !== X || t[98] !== Z ? (Q = (0, p.jsx)(d.Row, {
+        children: (0, p.jsxs)(d.Cell, {
+            colSpan: 2,
+            divClassName: Fe,
+            children: [X, Z]
+        })
+    }), t[96] = Fe, t[97] = X, t[98] = Z, t[99] = Q) : Q = t[99];
+    let $;
+    t[100] !== z || t[101] !== B || t[102] !== Q ? ($ = (0, p.jsxs)(d.Body, {
+        children: [z, B, Q]
+    }), t[100] = z, t[101] = B, t[102] = Q, t[103] = $) : $ = t[103];
+    let qe;
+    return t[104] !== je || t[105] !== R || t[106] !== $ ? (qe = (0, p.jsxs)(d.Root, {
+        className: je,
+        children: [R, $]
+    }), t[104] = je, t[105] = R, t[106] = $, t[107] = qe) : qe = t[107], qe
+}
+
+function le(e) {
+    let t = e.trim();
+    return t ? t.startsWith(`@`) ? t.slice(1) : t : ``
+}
+var ue, f, p, de = e((() => {
+    ue = o(), r(), re(), u(), l(), oe(), n(), f = t(te()), c(), p = s()
+}));
+export {
+    de as n, ce as t
+};
 //# sourceMappingURL=b3532ffc-dpkco6oo9n2khxbe.js.map

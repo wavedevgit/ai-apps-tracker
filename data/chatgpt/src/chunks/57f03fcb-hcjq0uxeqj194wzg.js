@@ -1,0 +1,59 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    RS as n,
+    zS as r
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    Vn as i
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function a(e, t, r = `all`) {
+    if (!t) return e;
+    let i = n(e),
+        a = e => {
+            (e.ty === `fl` || e.ty === `st`) && e?.c?.k && (r === `all` || e.ty === `st`) && (e.c.k = t), Array.isArray(e.it) && e.it.forEach(a)
+        },
+        o = e => {
+            e.ty === 4 && Array.isArray(e.shapes) && e.shapes.forEach(a), Array.isArray(e.layers) && e.layers.forEach(o)
+        };
+    return o(i), Array.isArray(i.assets) && i.assets.forEach(o), i
+}
+
+function o(e) {
+    let t = (0, c.useRef)(null),
+        [n, r] = (0, c.useState)(() => s(window.document.documentElement));
+    return (0, c.useEffect)(() => {
+        if (!t.current) return;
+        let e = () => {
+                t.current && r(s(t.current))
+            },
+            n = new MutationObserver(() => {
+                e()
+            });
+        return n.observe(window.document.documentElement, {
+            attributes: !0,
+            attributeFilter: [`class`, `style`]
+        }), n.observe(t.current, {
+            attributes: !0,
+            attributeFilter: [`class`, `style`]
+        }), e(), () => n.disconnect()
+    }, []), {
+        processedAnimationData: (0, c.useMemo)(() => a(e, n), [e, n]),
+        containerRef: t
+    }
+}
+
+function s(e) {
+    let t = getComputedStyle(e).color?.match(/\d+/g)?.map(Number).map(e => e / 255);
+    return t ? (t.push(1), t) : null
+}
+var c, l = e((() => {
+    r(), c = t(i())
+}));
+export {
+    a as n, o as r, l as t
+};
+//# sourceMappingURL=57f03fcb-hcjq0uxeqj194wzg.js.map

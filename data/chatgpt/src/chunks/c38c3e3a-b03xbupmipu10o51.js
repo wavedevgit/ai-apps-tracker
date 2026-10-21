@@ -1,2 +1,1050 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Dat as n,I1 as r,J5 as i,JT as a,L7 as o,Mot as s,N7 as c,Nat as l,R4 as u,VU as d,Y1 as f,_R as p,_nt as m,b4 as h,b_ as g,cit as _,est as v,hnt as y,iat as b,lit as x,nat as S,q5 as C,qT as w,tst as T,x4 as E,yR as D,y_ as O,z4 as k,zU as A}from"./4813494d-qsuygr73qjc6rh65.js";import{$ as j,Bn as M,Hn as N,Ht as P,Pn as F,Pt as ee,Tn as I,Ut as te,Vn as L,jt as ne,p as re,s as R,zn as z}from"./2340486e-komxp8tzs51ny4jj.js";import{C8 as ie,S8 as ae}from"./conversation-small-cawdu7il3ha6y70c.js";import{Dh as oe,Th as se}from"./8b34dbc2-d4icgkio4i3wfm6q.js";import{n as ce,r as B,t as le}from"./bcd16462-iuu6p9b3bbtc6kid.js";import{a as ue,i as de,n as fe,t as pe}from"./cff09cfe-ph34lzcw3wlprbnj.js";import{n as me,t as he}from"./dd53ca11-3ewf7lpacttpyadn.js";function ge(e){"use forget";let t=(0,ve.c)(39),{workspace:n,onAction:r}=e,i=M(),a=d(),o=ee(),[s,l]=(0,ye.useState)(!1),u;t[0]===n.workspace_id?u=t[1]:(u={mutationFn:async()=>{await c.safePost(`/accounts/{account_id}/invites/request`,{parameters:{path:{account_id:n.workspace_id}}})}},t[0]=n.workspace_id,t[1]=u);let f=re(u),p;t[2]!==i||t[3]!==n.auto_accept_requests?(p=n.auto_accept_requests?i.formatMessage({id:`02uco2`,defaultMessage:`Join workspace`}):i.formatMessage({id:`SfHDEl`,defaultMessage:`Request to join`}),t[2]=i,t[3]=n.auto_accept_requests,t[4]=p):p=t[4];let m=p,g;t[5]!==i||t[6]!==n.auto_accept_requests?(g=n.auto_accept_requests?i.formatMessage({id:`389j56`,defaultMessage:`You'll be added automatically.`}):i.formatMessage({id:`r4OENK`,defaultMessage:`We'll notify the workspace admins so they can review your request.`}),t[5]=i,t[6]=n.auto_accept_requests,t[7]=g):g=t[7];let _=g,v;t[8]!==i||t[9]!==o||t[10]!==r||t[11]!==f||t[12]!==a||t[13]!==n.auto_accept_requests||t[14]!==n.workspace_id?(v=async()=>{l(!0),r?.(n.workspace_id,n.auto_accept_requests);try{await f.mutateAsync(),await new Promise(_e),n.auto_accept_requests?h():(a.success(i.formatMessage({id:`jXcezz`,defaultMessage:`Request sent. We'll email you once it's approved.`})),o(`/`,{replace:!0}))}catch{a.danger(i.formatMessage({id:`mcD8H3`,defaultMessage:`We couldn’t submit your request. Please refresh and try again.`}))}l(!1)},t[8]=i,t[9]=o,t[10]=r,t[11]=f,t[12]=a,t[13]=n.auto_accept_requests,t[14]=n.workspace_id,t[15]=v):v=t[15];let y=v,b;t[16]!==i||t[17]!==n.workspace_name?(b=n.workspace_name?n.workspace_name:i.formatMessage({id:`NeB5OP`,defaultMessage:`this workspace`}),t[16]=i,t[17]=n.workspace_name,t[18]=b):b=t[18];let x=b,S;t[19]===x?S=t[20]:(S=(0,V.jsx)(`span`,{className:`font-medium`,children:x}),t[19]=x,t[20]=S);let C;t[21]!==S||t[22]!==n.domain?(C=(0,V.jsx)(`p`,{children:(0,V.jsx)(F,{id:`6qLOzU`,defaultMessage:`The email domain {domain} has been claimed by {workspace}.`,values:{domain:n.domain,workspace:S}})}),t[21]=S,t[22]=n.domain,t[23]=C):C=t[23];let T;t[24]===Symbol.for(`react.memo_cache_sentinel`)?(T=(0,V.jsx)(`p`,{className:`mt-2`,children:(0,V.jsx)(F,{id:`/tMMFA`,defaultMessage:`Please join the workspace managed by your school/district by clicking the button below.`})}),t[24]=T):T=t[24];let E;t[25]===C?E=t[26]:(E=(0,V.jsxs)(`div`,{className:`text-token-text-secondary text-base`,children:[C,T]}),t[25]=C,t[26]=E);let D;t[27]!==m||t[28]!==y||t[29]!==s?(D=(0,V.jsx)(w,{onClick:y,loading:s,className:`w-fit`,children:m}),t[27]=m,t[28]=y,t[29]=s,t[30]=D):D=t[30];let O;t[31]===_?O=t[32]:(O=(0,V.jsx)(`p`,{className:`text-token-text-tertiary text-sm`,children:_}),t[31]=_,t[32]=O);let k;t[33]!==D||t[34]!==O?(k=(0,V.jsxs)(`div`,{className:`mt-6 flex flex-col gap-3 md:flex-row md:items-center`,children:[D,O]}),t[33]=D,t[34]=O,t[35]=k):k=t[35];let A;return t[36]!==k||t[37]!==E?(A=(0,V.jsx)(`section`,{className:`mx-auto w-full pt-0 pb-10 ${be}`,children:(0,V.jsxs)(`div`,{className:`border-token-border-strong bg-token-main-surface-secondary mx-auto w-full max-w-[900px] rounded-2xl border px-6 py-6 text-start`,children:[E,k]})}),t[36]=k,t[37]=E,t[38]=A):A=t[38],A}function _e(e){return setTimeout(e,3e3)}var ve,ye,V,be,xe=e((()=>{ve=I(),a(),A(),E(),o(),R(),ye=t(N()),z(),j(),V=L(),be=`max-w-(--breakpoint-2xl) px-4 md:px-8`}));function Se(e){"use forget";let t=(0,Ee.c)(6),n=M(),r=D()?.email??``,i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i={mutationFn:Ce},t[0]=i):i=t[0];let a=re(i),o;return t[1]!==a||t[2]!==e||t[3]!==n||t[4]!==r?(o=async()=>{K.setIsLoading(!0),K.setModalErrorMessage(void 0);try{let t;if(e)t=e;else{let{verification_id:e}=await a.mutateAsync();t=e}let n=Te(t,window.location.href);window.location.href=n,K.setIsLoading(!1)}catch(e){let t=e;S.addError(`Teachers: Failed verification: ${t}`),K.setIsLoading(!1);let i=H(t)?(0,U.createElement)(U.Fragment,null,n.formatMessage({id:`TtiJI1`,defaultMessage:`To help keep ChatGPT for Teachers secure and available to educators, we now require users to register with a school email address. Your email domain ({email}) isn't eligible for teacher verification. Please sign in and reverify with your school-issued email to continue. If you think you're seeing this message by mistake, OpenAI Support can help at`},{email:r}),` `,(0,U.createElement)(`a`,{className:`underline`,href:`mailto:support@openai.com`},`support@openai.com`)):n.formatMessage({id:`/Ei+Q8`,defaultMessage:`An error occurred during verification, please try again.`});K.setModalErrorMessage(i)}},t[1]=a,t[2]=e,t[3]=n,t[4]=r,t[5]=o):o=t[5],o}function Ce(){return c.safePost(`/teachers/create_verification`)}function we(){"use forget";let e=(0,Ee.c)(3),t=M(),n=ee(),r;return e[0]!==t||e[1]!==n?(r=async()=>{K.setIsLoading(!0),K.setModalErrorMessage(void 0);let e=t.formatMessage({id:`Etg1KW`,defaultMessage:`An error occurred while claiming your offer, please try again.`});try{K.setIsLoading(!1),n(pe)}catch{K.setIsLoading(!1),K.setModalErrorMessage(e)}},e[0]=t,e[1]=n,e[2]=r):r=e[2],r}function Te(e,t){let n=new URL(`https://services.sheerid.com/verify/68d47554aa292d20b9bec8f7/`);return n.searchParams.set(`verificationId`,e),n.searchParams.set(`redirectUrl`,t),n.toString()}function H(e){if(!(e instanceof n))return!1;let t=typeof e.detail==`string`?e.detail:e.message;return e.code===`k12_email_domain_rejected`||t===`Email domain is not eligible for teacher verification.`}var Ee,U,W,G,K,q=e((()=>{Ee=I(),p(),b(),l(),o(),fe(),R(),U=t(N()),z(),j(),T(),k(),W=v(u(()=>({isLoading:!1,isModalOpen:!1,modalErrorMessage:void 0}))),G=W.setState,K={setIsLoading:e=>{G({isLoading:e})},setModalErrorMessage:e=>{G({modalErrorMessage:e})},closeModal:()=>{G({isModalOpen:!1})},openModal:()=>{G({isModalOpen:!0})}}})),De,Oe=e((()=>{De=`k12_email_mismatch`}));function J(e){"use forget";let t=(0,ke.c)(9),{initialVerificationId:n,onVerifyClick:r,buttonLabel:i}=e,a=Se(n===void 0?null:n),{isLoading:o}=W(),s;t[0]!==r||t[1]!==a?(s=async()=>{r?.(`header`),await a()},t[0]=r,t[1]=a,t[2]=s):s=t[2];let c;t[3]===i?c=t[4]:(c=i??(0,Ae.jsx)(F,{id:`GpDdaK`,defaultMessage:`Verify status`}),t[3]=i,t[4]=c);let l;return t[5]!==o||t[6]!==s||t[7]!==c?(l=(0,Ae.jsx)(`div`,{children:(0,Ae.jsx)(w,{loading:o,onClick:s,children:c})}),t[5]=o,t[6]=s,t[7]=c,t[8]=l):l=t[8],l}var ke,Ae,je=e((()=>{ke=I(),a(),q(),z(),Ae=L()}));function Me(e){"use forget";let t=(0,Ne.c)(13),{buttonSource:n,onCreateWorkspaceClick:r}=e,[i]=P(),a;t[0]===i?a=t[1]:(a=i.get(`redirectedFromSheerId`),t[0]=i,t[1]=a);let o=a===`true`,s,c;t[2]===o?(s=t[3],c=t[4]):(s=()=>{o&&K.openModal()},c=[o],t[2]=o,t[3]=s,t[4]=c),(0,Pe.useEffect)(s,c);let{isLoading:l}=W(),u=we(),d;t[5]!==n||t[6]!==r||t[7]!==u?(d=async()=>{r?.(n),await u()},t[5]=n,t[6]=r,t[7]=u,t[8]=d):d=t[8];let f;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,Fe.jsx)(F,{id:`JFJXXC`,defaultMessage:`Create workspace`}),t[9]=f):f=t[9];let p;return t[10]!==l||t[11]!==d?(p=(0,Fe.jsx)(`div`,{children:(0,Fe.jsx)(w,{loading:l,onClick:d,children:f})}),t[10]=l,t[11]=d,t[12]=p):p=t[12],p}var Ne,Pe,Fe,Ie=e((()=>{Ne=I(),a(),q(),Pe=t(N()),z(),j(),Fe=L()}));function Le(e){"use forget";let t=(0,Re.c)(14),{enrollmentState:n,buttonSource:r,onVerifyClick:i,onCreateWorkspaceClick:a}=e;switch(n.name){case`coming-soon`:{let e;return t[0]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Y.jsx)(w,{disabled:!0,children:(0,Y.jsx)(F,{id:`penhJY`,defaultMessage:`Offer currently unavailable`})}),t[0]=e):e=t[0],e}case`loading`:{let e;return t[1]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Y.jsx)(w,{loading:!0,disabled:!0,children:(0,Y.jsx)(F,{id:`B0181a`,defaultMessage:`Checking eligibility...`})}),t[1]=e):e=t[1],e}case`error`:{let e;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Y.jsx)(F,{id:`OX0niz`,defaultMessage:`Try again`}),t[2]=e):e=t[2];let r=e,a;return t[3]!==n.canRetry||t[4]!==i?(a=n.canRetry?(0,Y.jsx)(J,{initialVerificationId:null,onVerifyClick:i,buttonLabel:r}):(0,Y.jsx)(w,{disabled:!0,children:r}),t[3]=n.canRetry,t[4]=i,t[5]=a):a=t[5],a}case`linked`:{let e;return t[6]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Y.jsx)(w,{disabled:!0,children:(0,Y.jsx)(F,{id:`nc9Am6`,defaultMessage:`Verification already used`})}),t[6]=e):e=t[6],e}case`domain-claimed`:{let e;return t[7]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Y.jsx)(w,{disabled:!0,children:(0,Y.jsx)(F,{id:`Fw04cV`,defaultMessage:`Join the workspace shown below`})}),t[7]=e):e=t[7],e}case`needs-verification`:{let e;return t[8]!==n.verificationId||t[9]!==i?(e=(0,Y.jsx)(J,{initialVerificationId:n.verificationId,onVerifyClick:i}),t[8]=n.verificationId,t[9]=i,t[10]=e):e=t[10],e}case`verified`:{let e;return t[11]!==r||t[12]!==a?(e=(0,Y.jsx)(Me,{buttonSource:r,onCreateWorkspaceClick:a}),t[11]=r,t[12]=a,t[13]=e):e=t[13],e}}}var Re,Y,ze=e((()=>{Re=I(),a(),je(),Ie(),z(),Y=L()}));function Be(e){"use forget";let t=(0,Ve.c)(24),{title:n,description:r,enrollmentState:i,ref:a,onSecondaryAction:o,onVerifyClick:s,onCreateWorkspaceClick:c,showActions:l}=e,u=l===void 0||l,d=i.name===`error`,f=d?i:null,p=f?.errorCode===De,m=D()?.email??``,{modalErrorMessage:h}=W(),g=u?`h-[calc(100vh-325px)] max-h-[600px]`:`h-auto`,_=u?`pb-32 md:pb-20`:`pb-16 md:pb-16`,v;t[0]!==g||t[1]!==_?(v=C(`mx-auto flex min-h-fit max-w-(--breakpoint-2xl) flex-col items-center justify-center gap-4 px-4 pt-16 md:px-8 md:pt-20`,g,_),t[0]=g,t[1]=_,t[2]=v):v=t[2];let y;t[3]===n?y=t[4]:(y=(0,X.jsx)(`h1`,{className:`relative max-w-[900px] text-center text-4xl text-balance after:pointer-events-none after:absolute after:end-0 after:top-[-95px] after:h-[144px] after:w-[113px] after:bg-[url(https://cdn.openai.com/chatgpt/ctf-cdn/student-landing/splash-stars-v2.png)] after:bg-contain after:bg-center after:bg-no-repeat after:opacity-100 after:content-[''] md:text-5xl md:text-pretty md:after:opacity-0 dark:after:invert`,children:(0,X.jsx)(`span`,{className:`relative after:pointer-events-none after:absolute after:start-[calc(100%_+_280px)] after:top-[-95px] after:h-[144px] after:w-[113px] after:bg-[url(https://cdn.openai.com/chatgpt/ctf-cdn/student-landing/splash-stars-v2.png)] after:bg-contain after:bg-center after:bg-no-repeat after:opacity-0 after:content-[''] md:after:opacity-100 dark:after:invert`,children:n})}),t[3]=n,t[4]=y);let b;t[5]===r?b=t[6]:(b=r&&(0,X.jsx)(`p`,{className:`max-w-[800px] text-center`,children:r}),t[5]=r,t[6]=b);let x;t[7]!==i||t[8]!==f?.canRetry||t[9]!==p||t[10]!==d||t[11]!==h||t[12]!==c||t[13]!==o||t[14]!==s||t[15]!==u||t[16]!==m?(x=u?(0,X.jsxs)(`div`,{className:`mt-2 flex flex-col items-center gap-2 text-center`,children:[d?(0,X.jsxs)(`div`,{className:`flex flex-col items-center gap-1 text-center text-sm`,children:[(0,X.jsx)(`p`,{className:`font-medium text-red-500`,children:p?(0,X.jsx)(F,{id:`5B85Hf`,defaultMessage:`The email you used for verification doesn't match your login email. Please sign in with the verified school email and try again. Current login email: {email}`,values:{email:m}}):(0,X.jsx)(F,{id:`JANzo6`,defaultMessage:`Your previous verification attempt failed.`})}),!p&&!f?.canRetry?(0,X.jsx)(`p`,{className:`text-red-500`,children:(0,X.jsx)(F,{id:`v0H4Fi`,defaultMessage:`You've reached the maximum number of attempts.`})}):null]}):null,h?(0,X.jsx)(`div`,{className:`text-token-text-error mx-auto max-w-[720px] text-sm`,children:h}):null,(0,X.jsxs)(`div`,{className:`relative flex flex-col items-center justify-center gap-2 pb-4 md:flex-row`,children:[(0,X.jsx)(Le,{enrollmentState:i,buttonSource:`splash`,onVerifyClick:s,onCreateWorkspaceClick:c}),(0,X.jsx)(w,{color:`ghost`,onClick:o,children:(0,X.jsx)(F,{id:`ng/0pH`,defaultMessage:`Learn more`})})]}),(0,X.jsx)(`div`,{className:`bg-token-main-surface-secondary text-token-text-secondary mt-4 max-w-[520px] rounded-3xl px-5 py-4 text-center text-sm leading-relaxed`,children:(0,X.jsx)(F,{id:`H3dGOo`,defaultMessage:`You’ll be sent to a trusted third-party verification partner called SheerID. Anything you upload is used only to confirm your educator status—OpenAI won’t see or store your documents.`})})]}):null,t[7]=i,t[8]=f?.canRetry,t[9]=p,t[10]=d,t[11]=h,t[12]=c,t[13]=o,t[14]=s,t[15]=u,t[16]=m,t[17]=x):x=t[17];let S;return t[18]!==a||t[19]!==v||t[20]!==y||t[21]!==b||t[22]!==x?(S=(0,X.jsxs)(`section`,{ref:a,className:v,children:[y,b,x]}),t[18]=a,t[19]=v,t[20]=y,t[21]=b,t[22]=x,t[23]=S):S=t[23],S}var Ve,X,He=e((()=>{Ve=I(),a(),p(),q(),Oe(),i(),z(),ze(),X=L()}));function Ue(){"use forget";let e=(0,Xe.c)(79),t=ue(),n=t.name===`domain-claimed`?t.workspace:null,r;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=x(),e[0]=r):r=e[0];let i=r,a;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(a=s(),e[1]=a):a=e[1];let o=a,c=f(),l=D(),u=ne(),d=ee(),p=c?.planType??o?.account?.planType??null,m=l?.email_domain_type??null,h;e[2]===u.search?h=e[3]:(h=new URLSearchParams(u.search).get(`referer`),e[2]=u.search,e[3]=h);let g=h,_=`verificationId`in t?t.verificationId??null:null,v;e[4]!==t.name||e[5]!==_?(v={enrollmentState:t.name,enrollmentVerificationId:_},e[4]=t.name,e[5]=_,e[6]=v):v=e[6];let b=v,S=i?p??`unknown`:null,C;e[7]!==m||e[8]!==b||e[9]!==S?(C={isLoggedIn:i,loggedInStatus:i?`logged_in`:`logged_out`,accountPlanType:S,emailDomainType:m,...b},e[7]=m,e[8]=b,e[9]=S,e[10]=C):C=e[10];let w=C,T;e[11]!==w||e[12]!==g?(T=(e,t,n)=>{y.logEventWithStatsig(e,t,{...w,referer:g??null,...n})},e[11]=w,e[12]=g,e[13]=T):T=e[13];let E=T,O=g??null,k;e[14]!==m||e[15]!==p||e[16]!==O?(k={loggedInStatus:i?`logged_in`:`logged_out`,accountPlanType:p,emailDomainType:m,referer:O},e[14]=m,e[15]=p,e[16]=O,e[17]=k):k=e[17];let A=k,j;e[18]!==t.name||e[19]!==E?(j=e=>{E($.verifyClick.segment,$.verifyClick.statsig,{source:e}),B(`verification`,`verify_click`,{source:e,verificationState:t.name})},e[18]=t.name,e[19]=E,e[20]=j):j=e[20];let M=j,N;e[21]===E?N=e[22]:(N=e=>{E($.createWorkspaceClick.segment,$.createWorkspaceClick.statsig,{source:e}),B(`verification`,`create_workspace_click`,{source:e})},e[21]=E,e[22]=N);let P=N,F=m!=null,I=t.name!==`loading`,te,L;e[23]===d?(te=e[24],L=e[25]):(te=()=>{i||d(`/k12-plan`,{replace:!0})},L=[i,d],e[23]=d,e[24]=te,e[25]=L),(0,Z.useEffect)(te,L);let re=t.name===`verified`,R=n!=null,z=R?tt:re?et:$e,ie=(0,Z.useRef)(null),ae=(0,Z.useRef)(null),oe=(0,Z.useRef)(null),se=(0,Z.useRef)(!1),le=(0,Z.useRef)(!1),de,fe;e[26]===Symbol.for(`react.memo_cache_sentinel`)?(de=[ie,ae],fe={threshold:.1},e[26]=de,e[27]=fe):(de=e[26],fe=e[27]);let[pe,me]=qe(de,fe),he=!R&&(!pe&&!me||!1),_e,ve;e[28]!==A||e[29]!==F||e[30]!==I||e[31]!==E?(_e=()=>{!i||!F||!I||se.current||(E($.impression.segment,$.impression.statsig),B(`verification`,`page_view`,A),se.current=!0)},ve=[A,F,I,i,E],e[28]=A,e[29]=F,e[30]=I,e[31]=E,e[32]=_e,e[33]=ve):(_e=e[32],ve=e[33]),(0,Z.useEffect)(_e,ve);let ye,V;e[34]!==A||e[35]!==t.name?(ye=()=>{t.name===`error`&&ce(`verification`,`enrollment_status_error`,Error(`enrollment_status_error`),A)},V=[A,t.name],e[34]=A,e[35]=t.name,e[36]=ye,e[37]=V):(ye=e[36],V=e[37]),(0,Z.useEffect)(ye,V);let be,xe;e[38]!==n||e[39]!==E?(be=()=>{!n||le.current||(E($.domainClaimedShown.segment,$.domainClaimedShown.statsig,{source:`domain-claimed`,workspace_id:n.workspace_id}),B(`verification`,`domain_claimed_notice_shown`,{workspaceId:n.workspace_id,domain:n.domain}),le.current=!0)},xe=[n,E],e[38]=n,e[39]=E,e[40]=be,e[41]=xe):(be=e[40],xe=e[41]),(0,Z.useEffect)(be,xe);let Se;e[42]===E?Se=e[43]:(Se=()=>{E($.learnMore.segment,$.learnMore.statsig),B(`verification`,`learn_more_click`),window.open(`https://chatgpt.com/plans/k12-teachers`,`_blank`,`noopener`)},e[42]=E,e[43]=Se);let Ce=Se,we;e[44]===E?we=e[45]:(we=(e,t)=>{E($.domainClaimedAction.segment,$.domainClaimedAction.statsig,{source:`domain-claimed`,workspaceId:e,workspace_auto_accepts_requests:t}),B(`verification`,`domain_claimed_action_clicked`,{workspaceId:e,workspaceAutoAcceptsRequests:t})},e[44]=E,e[45]=we);let Te=we;if(!i)return null;let H;e[46]!==t||e[47]!==P||e[48]!==M?(H=(0,Q.jsx)(We,{enrollmentState:t,onVerifyClick:M,onCreateWorkspaceClick:P}),e[46]=t,e[47]=P,e[48]=M,e[49]=H):H=e[49];let Ee=!R,U;e[50]!==t||e[51]!==P||e[52]!==Ce||e[53]!==M||e[54]!==z.description||e[55]!==z.title||e[56]!==Ee?(U=(0,Q.jsx)(Be,{ref:ie,description:z.description,title:z.title,enrollmentState:t,onSecondaryAction:Ce,onVerifyClick:M,onCreateWorkspaceClick:P,showActions:Ee}),e[50]=t,e[51]=P,e[52]=Ce,e[53]=M,e[54]=z.description,e[55]=z.title,e[56]=Ee,e[57]=U):U=e[57];let W;e[58]!==n||e[59]!==Te||e[60]!==R?(W=R&&n?(0,Q.jsx)(ge,{workspace:n,onAction:Te}):null,e[58]=n,e[59]=Te,e[60]=R,e[61]=W):W=e[61];let G;e[62]===Symbol.for(`react.memo_cache_sentinel`)?(G={question:`Who qualifies for this plan?`,answer:(0,Q.jsx)(`p`,{children:`You are eligible for this plan if you are currently employed by an accredited K-12 school or district in the United States. Teachers, staff, administrators, and district leaders are all eligible.`})},e[62]=G):G=e[62];let K;e[63]===Symbol.for(`react.memo_cache_sentinel`)?(K={question:`How do I sign up for this plan?`,answer:(0,Q.jsx)(Q.Fragment,{children:(0,Q.jsx)(`p`,{children:`First, you’ll need to verify your educator status through SheerID here. Once verified, you will be redirected back to ChatGPT to create a free workspace.`})})},e[63]=K):K=e[63];let q;e[64]===Symbol.for(`react.memo_cache_sentinel`)?(q={question:`Does OpenAI train its models on my data?`,answer:(0,Q.jsx)(`p`,{children:`No, anything you share with ChatGPT for Teachers is not used to train our models by default.`})},e[64]=q):q=e[64];let De;e[65]===Symbol.for(`react.memo_cache_sentinel`)?(De=[G,K,q,{question:`How is data kept secure?`,answer:(0,Q.jsx)(`p`,{children:`The plan includes multi-factor authentication (MFA), SAML SSO, and encryption to protect your data and assist your school meet its FERPA compliance obligations.`})}],e[65]=De):De=e[65];let Oe;e[66]===E?Oe=e[67]:(Oe=(0,Q.jsx)(Ke,{ref:oe,title:`FAQs`,faqs:De,logAnalyticsEvent:E}),e[66]=E,e[67]=Oe);let J;e[68]!==t||e[69]!==P||e[70]!==M||e[71]!==he?(J=(0,Q.jsx)(Ge,{enrollmentState:t,showBottomNav:he,onVerifyClick:M,onCreateWorkspaceClick:P}),e[68]=t,e[69]=P,e[70]=M,e[71]=he,e[72]=J):J=e[72];let ke;return e[73]!==H||e[74]!==U||e[75]!==W||e[76]!==Oe||e[77]!==J?(ke=(0,Q.jsxs)(`div`,{className:`font-oai overflow-hidden pt-[71px] pb-8`,children:[H,U,W,Oe,J]}),e[73]=H,e[74]=U,e[75]=W,e[76]=Oe,e[77]=J,e[78]=ke):ke=e[78],ke}function We(e){"use forget";let t=(0,Xe.c)(19),{enrollmentState:n,onVerifyClick:r,onCreateWorkspaceClick:i}=e,[a,o]=(0,Z.useState)(!1),[s,c]=(0,Z.useState)(!1),l=n.name!==`domain-claimed`,u,d;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(u=()=>{let e=g(()=>{o(window.scrollY>0),c(window.scrollY>300)},200);return window.addEventListener(`scroll`,e),()=>window.removeEventListener(`scroll`,e)},d=[],t[0]=u,t[1]=d):(u=t[0],d=t[1]),(0,Z.useEffect)(u,d);let f=!a,p;t[2]!==a||t[3]!==f?(p=C(`bg-token-main-surface-primary absolute start-0 end-0 top-0 z-10 py-4 transition-all duration-300 md:fixed md:border-b`,{"border-token-border-default":a,"border-transparent":f}),t[2]=a,t[3]=f,t[4]=p):p=t[4];let m;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(m=C(`mx-auto flex items-center justify-between`,Ze),t[5]=m):m=t[5];let h;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,Q.jsx)(`a`,{href:`/`,"aria-label":`ChatGPT Home`,children:(0,Q.jsx)(ae,{})}),t[6]=h):h=t[6];let _;t[7]!==n||t[8]!==i||t[9]!==r||t[10]!==l||t[11]!==s?(_=l?(0,Q.jsx)(`div`,{className:C(`opacity-0 transition-opacity`,{"md:opacity-100":s}),inert:!s,children:(0,Q.jsx)(Le,{enrollmentState:n,buttonSource:`header`,onVerifyClick:r,onCreateWorkspaceClick:i})}):null,t[7]=n,t[8]=i,t[9]=r,t[10]=l,t[11]=s,t[12]=_):_=t[12];let v;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,Q.jsx)(se,{}),t[13]=v):v=t[13];let y;t[14]===_?y=t[15]:(y=(0,Q.jsxs)(`div`,{className:m,children:[h,(0,Q.jsxs)(`div`,{className:`flex gap-2`,children:[_,v]})]}),t[14]=_,t[15]=y);let b;return t[16]!==p||t[17]!==y?(b=(0,Q.jsx)(`nav`,{className:p,children:y}),t[16]=p,t[17]=y,t[18]=b):b=t[18],b}function Ge(e){"use forget";let t=(0,Xe.c)(10),{enrollmentState:n,showBottomNav:r,onVerifyClick:i,onCreateWorkspaceClick:a}=e,o=r!==void 0&&r,s=!o,c;t[0]!==o||t[1]!==s?(c=C(`border-token-border-default bg-token-main-surface-primary fixed start-0 end-0 bottom-0 z-10 border-t py-4 text-center transition-[opacity_transform] duration-200 ease-in-out md:hidden`,{"translate-y-0 opacity-100":o,"translate-y-[100%] opacity-0":s}),t[0]=o,t[1]=s,t[2]=c):c=t[2];let l;t[3]!==n||t[4]!==a||t[5]!==i?(l=(0,Q.jsx)(Le,{enrollmentState:n,buttonSource:`header`,onVerifyClick:i,onCreateWorkspaceClick:a}),t[3]=n,t[4]=a,t[5]=i,t[6]=l):l=t[6];let u;return t[7]!==c||t[8]!==l?(u=(0,Q.jsx)(`nav`,{className:c,children:l}),t[7]=c,t[8]=l,t[9]=u):u=t[9],u}function Ke(e){"use forget";let t=(0,Xe.c)(21),{title:n,faqs:r,ref:i,logAnalyticsEvent:a}=e,[o,s]=(0,Z.useState)(0),c;t[0]!==r||t[1]!==a||t[2]!==o?(c=e=>{let t=o===e?-1:e,n=t===e;a($.faqToggle.segment,$.faqToggle.statsig,{question:r[e]?.question,action:n?`open`:`close`}),B(`verification`,`faq_toggle`,{question:r[e]?.question,action:n?`open`:`close`}),s(t)},t[0]=r,t[1]=a,t[2]=o,t[3]=c):c=t[3];let l=c,u,d;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(u=C(`mx-auto flex max-w-[596px] flex-col gap-8 px-4 py-20 md:gap-16 md:py-32`),d=C(Qe,`sm:text-center`),t[4]=u,t[5]=d):(u=t[4],d=t[5]);let f;t[6]===n?f=t[7]:(f=(0,Q.jsx)(`h2`,{className:d,children:(0,Q.jsx)(`span`,{className:`relative after:pointer-events-none after:absolute after:start-[calc(100%_-_25px)] after:bottom-[75%] after:h-[64px] after:w-[75px] after:bg-[url(https://cdn.openai.com/chatgpt/ctf-cdn/student-landing/faq-bubble-small-v2.png)] after:bg-contain after:bg-center after:bg-no-repeat after:content-[''] dark:after:invert`,children:n})}),t[6]=n,t[7]=f);let p;if(t[8]!==r||t[9]!==o||t[10]!==l){let e;t[12]!==o||t[13]!==l?(e=(e,t)=>(0,Q.jsx)(he,{question:e.question,answer:e.answer,isOpen:o===t,onToggle:()=>l(t)},t),t[12]=o,t[13]=l,t[14]=e):e=t[14],p=r.map(e),t[8]=r,t[9]=o,t[10]=l,t[11]=p}else p=t[11];let m;t[15]===p?m=t[16]:(m=(0,Q.jsx)(`div`,{className:``,children:p}),t[15]=p,t[16]=m);let h;return t[17]!==i||t[18]!==f||t[19]!==m?(h=(0,Q.jsxs)(`section`,{ref:i,className:u,children:[f,m]}),t[17]=i,t[18]=f,t[19]=m,t[20]=h):h=t[20],h}function qe(e,t){"use forget";let n=(0,Xe.c)(8),r;n[0]===t?r=n[1]:(r=t===void 0?{}:t,n[0]=t,n[1]=r);let i=r,a;n[2]===e?a=n[3]:(a=()=>e.map(Ye),n[2]=e,n[3]=a);let[o,s]=(0,Z.useState)(a),c,l;return n[4]!==i||n[5]!==e?(c=()=>{let t=e.map(Je),n=new IntersectionObserver(e=>{e.forEach(e=>{let n=t.findIndex(t=>t===e.target);n!==-1&&s(t=>{if(t[n]===e.isIntersecting)return t;let r=[...t];return r[n]=e.isIntersecting,r})})},i);return t.forEach(e=>{e&&n.observe(e)}),()=>{t.forEach(e=>{e&&n.unobserve(e)})}},l=[i,e],n[4]=i,n[5]=e,n[6]=c,n[7]=l):(c=n[6],l=n[7]),(0,Z.useEffect)(c,l),o}function Je(e){return e.current}function Ye(){return!1}var Xe,Z,Q,Ze,Qe,$e,et,tt,$,nt=e((()=>{Xe=I(),ie(),le(),oe(),r(),p(),xe(),He(),de(),_(),m(),i(),O(),Z=t(N()),j(),ze(),me(),Q=L(),Ze=`max-w-(--breakpoint-2xl) px-4 md:px-8`,Qe=`text-2xl md:text-3xl`,$e={description:`Once verified, you’ll set up your workspace and add colleagues if you’d like`,title:`Confirm you’re a U.S. K-12 educator to get started with your free ChatGPT for Teachers workspace`},et={description:`Information you share with ChatGPT is never used to train our models`,title:`You've been verified. Get started with your ChatGPT for Teachers workspace.`},tt={description:`Your school or district already has a ChatGPT workspace. Request access below to join your colleagues.`,title:`Join your existing ChatGPT for Teachers workspace`},$={impression:{segment:`K12 Verification: Shown`,statsig:`chatgpt_k12_verification_landing_shown`},learnMore:{segment:`K12 Verification: Learn More Clicked`,statsig:`chatgpt_k12_verification_learn_more_clicked`},faqToggle:{segment:`K12 Verification: FAQ Toggled`,statsig:`chatgpt_k12_verification_faq_toggled`},verifyClick:{segment:`K12 Verification: Verify Status Clicked`,statsig:`chatgpt_k12_verification_verify_clicked`},createWorkspaceClick:{segment:`K12 Verification: Create Workspace Clicked`,statsig:`chatgpt_k12_verification_create_workspace_clicked`},domainClaimedShown:{segment:`K12 Verification: Claimed Workspace Notice Shown`,statsig:`chatgpt_k12_verification_claimed_notice_shown`},domainClaimedAction:{segment:`K12 Verification: Claimed Workspace Action Clicked`,statsig:`chatgpt_k12_verification_claimed_notice_action_clicked`}}}));function rt(){return(0,it.jsx)(Ue,{})}var it,at=e((()=>{nt(),it=L()})),ot,st,ct,lt,ut,dt,ft=e((()=>{j(),ot=I(),at(),st=L(),ct=`/k12-verification`,lt=te(function(){"use forget";let e=(0,ot.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,st.jsx)(rt,{}),e[0]=t):t=e[0],t}),ut={hasRouteMeta:!0},dt=()=>{let e=`ChatGPT for Teachers`,t=`Discover ways to use ChatGPT for Teachers to help you teach, write, and stay organized.`;return[{title:e},{property:`og:site_name`,content:`ChatGPT for Teachers`},{property:`og:type`,content:`website`},{property:`og:title`,content:e},{property:`og:url`,content:`https://chatgpt.com/k12-verification`},{name:`description`,content:t},{property:`og:description`,content:t}]}}));export{dt as a,lt as i,ut as n,ft as r,ct as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Dat as n,
+    I1 as r,
+    J5 as i,
+    JT as a,
+    L7 as o,
+    Mot as s,
+    N7 as c,
+    Nat as l,
+    R4 as u,
+    VU as d,
+    Y1 as f,
+    _R as p,
+    _nt as m,
+    b4 as h,
+    b_ as g,
+    cit as _,
+    est as v,
+    hnt as y,
+    iat as b,
+    lit as x,
+    nat as S,
+    q5 as C,
+    qT as w,
+    tst as T,
+    x4 as E,
+    yR as D,
+    y_ as O,
+    z4 as k,
+    zU as A
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    $ as j,
+    Bn as M,
+    Hn as N,
+    Ht as P,
+    Pn as F,
+    Pt as ee,
+    Tn as I,
+    Ut as te,
+    Vn as L,
+    jt as ne,
+    p as re,
+    s as R,
+    zn as z
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    C8 as ie,
+    S8 as ae
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Dh as oe,
+    Th as se
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+import {
+    n as ce,
+    r as B,
+    t as le
+} from "./bcd16462-iuu6p9b3bbtc6kid.js";
+import {
+    a as ue,
+    i as de,
+    n as fe,
+    t as pe
+} from "./cff09cfe-ph34lzcw3wlprbnj.js";
+import {
+    n as me,
+    t as he
+} from "./dd53ca11-3ewf7lpacttpyadn.js";
+
+function ge(e) {
+    "use forget";
+    let t = (0, ve.c)(39),
+        {
+            workspace: n,
+            onAction: r
+        } = e,
+        i = M(),
+        a = d(),
+        o = ee(),
+        [s, l] = (0, ye.useState)(!1),
+        u;
+    t[0] === n.workspace_id ? u = t[1] : (u = {
+        mutationFn: async () => {
+            await c.safePost(`/accounts/{account_id}/invites/request`, {
+                parameters: {
+                    path: {
+                        account_id: n.workspace_id
+                    }
+                }
+            })
+        }
+    }, t[0] = n.workspace_id, t[1] = u);
+    let f = re(u),
+        p;
+    t[2] !== i || t[3] !== n.auto_accept_requests ? (p = n.auto_accept_requests ? i.formatMessage({
+        id: `02uco2`,
+        defaultMessage: `Join workspace`
+    }) : i.formatMessage({
+        id: `SfHDEl`,
+        defaultMessage: `Request to join`
+    }), t[2] = i, t[3] = n.auto_accept_requests, t[4] = p) : p = t[4];
+    let m = p,
+        g;
+    t[5] !== i || t[6] !== n.auto_accept_requests ? (g = n.auto_accept_requests ? i.formatMessage({
+        id: `389j56`,
+        defaultMessage: `You'll be added automatically.`
+    }) : i.formatMessage({
+        id: `r4OENK`,
+        defaultMessage: `We'll notify the workspace admins so they can review your request.`
+    }), t[5] = i, t[6] = n.auto_accept_requests, t[7] = g) : g = t[7];
+    let _ = g,
+        v;
+    t[8] !== i || t[9] !== o || t[10] !== r || t[11] !== f || t[12] !== a || t[13] !== n.auto_accept_requests || t[14] !== n.workspace_id ? (v = async () => {
+        l(!0), r?.(n.workspace_id, n.auto_accept_requests);
+        try {
+            await f.mutateAsync(), await new Promise(_e), n.auto_accept_requests ? h() : (a.success(i.formatMessage({
+                id: `jXcezz`,
+                defaultMessage: `Request sent. We'll email you once it's approved.`
+            })), o(`/`, {
+                replace: !0
+            }))
+        } catch {
+            a.danger(i.formatMessage({
+                id: `mcD8H3`,
+                defaultMessage: `We couldn’t submit your request. Please refresh and try again.`
+            }))
+        }
+        l(!1)
+    }, t[8] = i, t[9] = o, t[10] = r, t[11] = f, t[12] = a, t[13] = n.auto_accept_requests, t[14] = n.workspace_id, t[15] = v) : v = t[15];
+    let y = v,
+        b;
+    t[16] !== i || t[17] !== n.workspace_name ? (b = n.workspace_name ? n.workspace_name : i.formatMessage({
+        id: `NeB5OP`,
+        defaultMessage: `this workspace`
+    }), t[16] = i, t[17] = n.workspace_name, t[18] = b) : b = t[18];
+    let x = b,
+        S;
+    t[19] === x ? S = t[20] : (S = (0, V.jsx)(`span`, {
+        className: `font-medium`,
+        children: x
+    }), t[19] = x, t[20] = S);
+    let C;
+    t[21] !== S || t[22] !== n.domain ? (C = (0, V.jsx)(`p`, {
+        children: (0, V.jsx)(F, {
+            id: `6qLOzU`,
+            defaultMessage: `The email domain {domain} has been claimed by {workspace}.`,
+            values: {
+                domain: n.domain,
+                workspace: S
+            }
+        })
+    }), t[21] = S, t[22] = n.domain, t[23] = C) : C = t[23];
+    let T;
+    t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, V.jsx)(`p`, {
+        className: `mt-2`,
+        children: (0, V.jsx)(F, {
+            id: `/tMMFA`,
+            defaultMessage: `Please join the workspace managed by your school/district by clicking the button below.`
+        })
+    }), t[24] = T) : T = t[24];
+    let E;
+    t[25] === C ? E = t[26] : (E = (0, V.jsxs)(`div`, {
+        className: `text-token-text-secondary text-base`,
+        children: [C, T]
+    }), t[25] = C, t[26] = E);
+    let D;
+    t[27] !== m || t[28] !== y || t[29] !== s ? (D = (0, V.jsx)(w, {
+        onClick: y,
+        loading: s,
+        className: `w-fit`,
+        children: m
+    }), t[27] = m, t[28] = y, t[29] = s, t[30] = D) : D = t[30];
+    let O;
+    t[31] === _ ? O = t[32] : (O = (0, V.jsx)(`p`, {
+        className: `text-token-text-tertiary text-sm`,
+        children: _
+    }), t[31] = _, t[32] = O);
+    let k;
+    t[33] !== D || t[34] !== O ? (k = (0, V.jsxs)(`div`, {
+        className: `mt-6 flex flex-col gap-3 md:flex-row md:items-center`,
+        children: [D, O]
+    }), t[33] = D, t[34] = O, t[35] = k) : k = t[35];
+    let A;
+    return t[36] !== k || t[37] !== E ? (A = (0, V.jsx)(`section`, {
+        className: `mx-auto w-full pt-0 pb-10 ${be}`,
+        children: (0, V.jsxs)(`div`, {
+            className: `border-token-border-strong bg-token-main-surface-secondary mx-auto w-full max-w-[900px] rounded-2xl border px-6 py-6 text-start`,
+            children: [E, k]
+        })
+    }), t[36] = k, t[37] = E, t[38] = A) : A = t[38], A
+}
+
+function _e(e) {
+    return setTimeout(e, 3e3)
+}
+var ve, ye, V, be, xe = e((() => {
+    ve = I(), a(), A(), E(), o(), R(), ye = t(N()), z(), j(), V = L(), be = `max-w-(--breakpoint-2xl) px-4 md:px-8`
+}));
+
+function Se(e) {
+    "use forget";
+    let t = (0, Ee.c)(6),
+        n = M(),
+        r = D()?.email ?? ``,
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = {
+        mutationFn: Ce
+    }, t[0] = i) : i = t[0];
+    let a = re(i),
+        o;
+    return t[1] !== a || t[2] !== e || t[3] !== n || t[4] !== r ? (o = async () => {
+        K.setIsLoading(!0), K.setModalErrorMessage(void 0);
+        try {
+            let t;
+            if (e) t = e;
+            else {
+                let {
+                    verification_id: e
+                } = await a.mutateAsync();
+                t = e
+            }
+            let n = Te(t, window.location.href);
+            window.location.href = n, K.setIsLoading(!1)
+        } catch (e) {
+            let t = e;
+            S.addError(`Teachers: Failed verification: ${t}`), K.setIsLoading(!1);
+            let i = H(t) ? (0, U.createElement)(U.Fragment, null, n.formatMessage({
+                id: `TtiJI1`,
+                defaultMessage: `To help keep ChatGPT for Teachers secure and available to educators, we now require users to register with a school email address. Your email domain ({email}) isn't eligible for teacher verification. Please sign in and reverify with your school-issued email to continue. If you think you're seeing this message by mistake, OpenAI Support can help at`
+            }, {
+                email: r
+            }), ` `, (0, U.createElement)(`a`, {
+                className: `underline`,
+                href: `mailto:support@openai.com`
+            }, `support@openai.com`)) : n.formatMessage({
+                id: `/Ei+Q8`,
+                defaultMessage: `An error occurred during verification, please try again.`
+            });
+            K.setModalErrorMessage(i)
+        }
+    }, t[1] = a, t[2] = e, t[3] = n, t[4] = r, t[5] = o) : o = t[5], o
+}
+
+function Ce() {
+    return c.safePost(`/teachers/create_verification`)
+}
+
+function we() {
+    "use forget";
+    let e = (0, Ee.c)(3),
+        t = M(),
+        n = ee(),
+        r;
+    return e[0] !== t || e[1] !== n ? (r = async () => {
+        K.setIsLoading(!0), K.setModalErrorMessage(void 0);
+        let e = t.formatMessage({
+            id: `Etg1KW`,
+            defaultMessage: `An error occurred while claiming your offer, please try again.`
+        });
+        try {
+            K.setIsLoading(!1), n(pe)
+        } catch {
+            K.setIsLoading(!1), K.setModalErrorMessage(e)
+        }
+    }, e[0] = t, e[1] = n, e[2] = r) : r = e[2], r
+}
+
+function Te(e, t) {
+    let n = new URL(`https://services.sheerid.com/verify/68d47554aa292d20b9bec8f7/`);
+    return n.searchParams.set(`verificationId`, e), n.searchParams.set(`redirectUrl`, t), n.toString()
+}
+
+function H(e) {
+    if (!(e instanceof n)) return !1;
+    let t = typeof e.detail == `string` ? e.detail : e.message;
+    return e.code === `k12_email_domain_rejected` || t === `Email domain is not eligible for teacher verification.`
+}
+var Ee, U, W, G, K, q = e((() => {
+        Ee = I(), p(), b(), l(), o(), fe(), R(), U = t(N()), z(), j(), T(), k(), W = v(u(() => ({
+            isLoading: !1,
+            isModalOpen: !1,
+            modalErrorMessage: void 0
+        }))), G = W.setState, K = {
+            setIsLoading: e => {
+                G({
+                    isLoading: e
+                })
+            },
+            setModalErrorMessage: e => {
+                G({
+                    modalErrorMessage: e
+                })
+            },
+            closeModal: () => {
+                G({
+                    isModalOpen: !1
+                })
+            },
+            openModal: () => {
+                G({
+                    isModalOpen: !0
+                })
+            }
+        }
+    })),
+    De, Oe = e((() => {
+        De = `k12_email_mismatch`
+    }));
+
+function J(e) {
+    "use forget";
+    let t = (0, ke.c)(9),
+        {
+            initialVerificationId: n,
+            onVerifyClick: r,
+            buttonLabel: i
+        } = e,
+        a = Se(n === void 0 ? null : n),
+        {
+            isLoading: o
+        } = W(),
+        s;
+    t[0] !== r || t[1] !== a ? (s = async () => {
+        r?.(`header`), await a()
+    }, t[0] = r, t[1] = a, t[2] = s) : s = t[2];
+    let c;
+    t[3] === i ? c = t[4] : (c = i ?? (0, Ae.jsx)(F, {
+        id: `GpDdaK`,
+        defaultMessage: `Verify status`
+    }), t[3] = i, t[4] = c);
+    let l;
+    return t[5] !== o || t[6] !== s || t[7] !== c ? (l = (0, Ae.jsx)(`div`, {
+        children: (0, Ae.jsx)(w, {
+            loading: o,
+            onClick: s,
+            children: c
+        })
+    }), t[5] = o, t[6] = s, t[7] = c, t[8] = l) : l = t[8], l
+}
+var ke, Ae, je = e((() => {
+    ke = I(), a(), q(), z(), Ae = L()
+}));
+
+function Me(e) {
+    "use forget";
+    let t = (0, Ne.c)(13),
+        {
+            buttonSource: n,
+            onCreateWorkspaceClick: r
+        } = e,
+        [i] = P(),
+        a;
+    t[0] === i ? a = t[1] : (a = i.get(`redirectedFromSheerId`), t[0] = i, t[1] = a);
+    let o = a === `true`,
+        s, c;
+    t[2] === o ? (s = t[3], c = t[4]) : (s = () => {
+        o && K.openModal()
+    }, c = [o], t[2] = o, t[3] = s, t[4] = c), (0, Pe.useEffect)(s, c);
+    let {
+        isLoading: l
+    } = W(), u = we(), d;
+    t[5] !== n || t[6] !== r || t[7] !== u ? (d = async () => {
+        r?.(n), await u()
+    }, t[5] = n, t[6] = r, t[7] = u, t[8] = d) : d = t[8];
+    let f;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, Fe.jsx)(F, {
+        id: `JFJXXC`,
+        defaultMessage: `Create workspace`
+    }), t[9] = f) : f = t[9];
+    let p;
+    return t[10] !== l || t[11] !== d ? (p = (0, Fe.jsx)(`div`, {
+        children: (0, Fe.jsx)(w, {
+            loading: l,
+            onClick: d,
+            children: f
+        })
+    }), t[10] = l, t[11] = d, t[12] = p) : p = t[12], p
+}
+var Ne, Pe, Fe, Ie = e((() => {
+    Ne = I(), a(), q(), Pe = t(N()), z(), j(), Fe = L()
+}));
+
+function Le(e) {
+    "use forget";
+    let t = (0, Re.c)(14),
+        {
+            enrollmentState: n,
+            buttonSource: r,
+            onVerifyClick: i,
+            onCreateWorkspaceClick: a
+        } = e;
+    switch (n.name) {
+        case `coming-soon`: {
+            let e;
+            return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Y.jsx)(w, {
+                disabled: !0,
+                children: (0, Y.jsx)(F, {
+                    id: `penhJY`,
+                    defaultMessage: `Offer currently unavailable`
+                })
+            }), t[0] = e) : e = t[0], e
+        }
+        case `loading`: {
+            let e;
+            return t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Y.jsx)(w, {
+                loading: !0,
+                disabled: !0,
+                children: (0, Y.jsx)(F, {
+                    id: `B0181a`,
+                    defaultMessage: `Checking eligibility...`
+                })
+            }), t[1] = e) : e = t[1], e
+        }
+        case `error`: {
+            let e;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Y.jsx)(F, {
+                id: `OX0niz`,
+                defaultMessage: `Try again`
+            }), t[2] = e) : e = t[2];
+            let r = e,
+                a;
+            return t[3] !== n.canRetry || t[4] !== i ? (a = n.canRetry ? (0, Y.jsx)(J, {
+                initialVerificationId: null,
+                onVerifyClick: i,
+                buttonLabel: r
+            }) : (0, Y.jsx)(w, {
+                disabled: !0,
+                children: r
+            }), t[3] = n.canRetry, t[4] = i, t[5] = a) : a = t[5], a
+        }
+        case `linked`: {
+            let e;
+            return t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Y.jsx)(w, {
+                disabled: !0,
+                children: (0, Y.jsx)(F, {
+                    id: `nc9Am6`,
+                    defaultMessage: `Verification already used`
+                })
+            }), t[6] = e) : e = t[6], e
+        }
+        case `domain-claimed`: {
+            let e;
+            return t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Y.jsx)(w, {
+                disabled: !0,
+                children: (0, Y.jsx)(F, {
+                    id: `Fw04cV`,
+                    defaultMessage: `Join the workspace shown below`
+                })
+            }), t[7] = e) : e = t[7], e
+        }
+        case `needs-verification`: {
+            let e;
+            return t[8] !== n.verificationId || t[9] !== i ? (e = (0, Y.jsx)(J, {
+                initialVerificationId: n.verificationId,
+                onVerifyClick: i
+            }), t[8] = n.verificationId, t[9] = i, t[10] = e) : e = t[10], e
+        }
+        case `verified`: {
+            let e;
+            return t[11] !== r || t[12] !== a ? (e = (0, Y.jsx)(Me, {
+                buttonSource: r,
+                onCreateWorkspaceClick: a
+            }), t[11] = r, t[12] = a, t[13] = e) : e = t[13], e
+        }
+    }
+}
+var Re, Y, ze = e((() => {
+    Re = I(), a(), je(), Ie(), z(), Y = L()
+}));
+
+function Be(e) {
+    "use forget";
+    let t = (0, Ve.c)(24),
+        {
+            title: n,
+            description: r,
+            enrollmentState: i,
+            ref: a,
+            onSecondaryAction: o,
+            onVerifyClick: s,
+            onCreateWorkspaceClick: c,
+            showActions: l
+        } = e,
+        u = l === void 0 || l,
+        d = i.name === `error`,
+        f = d ? i : null,
+        p = f?.errorCode === De,
+        m = D()?.email ?? ``,
+        {
+            modalErrorMessage: h
+        } = W(),
+        g = u ? `h-[calc(100vh-325px)] max-h-[600px]` : `h-auto`,
+        _ = u ? `pb-32 md:pb-20` : `pb-16 md:pb-16`,
+        v;
+    t[0] !== g || t[1] !== _ ? (v = C(`mx-auto flex min-h-fit max-w-(--breakpoint-2xl) flex-col items-center justify-center gap-4 px-4 pt-16 md:px-8 md:pt-20`, g, _), t[0] = g, t[1] = _, t[2] = v) : v = t[2];
+    let y;
+    t[3] === n ? y = t[4] : (y = (0, X.jsx)(`h1`, {
+        className: `relative max-w-[900px] text-center text-4xl text-balance after:pointer-events-none after:absolute after:end-0 after:top-[-95px] after:h-[144px] after:w-[113px] after:bg-[url(https://cdn.openai.com/chatgpt/ctf-cdn/student-landing/splash-stars-v2.png)] after:bg-contain after:bg-center after:bg-no-repeat after:opacity-100 after:content-[''] md:text-5xl md:text-pretty md:after:opacity-0 dark:after:invert`,
+        children: (0, X.jsx)(`span`, {
+            className: `relative after:pointer-events-none after:absolute after:start-[calc(100%_+_280px)] after:top-[-95px] after:h-[144px] after:w-[113px] after:bg-[url(https://cdn.openai.com/chatgpt/ctf-cdn/student-landing/splash-stars-v2.png)] after:bg-contain after:bg-center after:bg-no-repeat after:opacity-0 after:content-[''] md:after:opacity-100 dark:after:invert`,
+            children: n
+        })
+    }), t[3] = n, t[4] = y);
+    let b;
+    t[5] === r ? b = t[6] : (b = r && (0, X.jsx)(`p`, {
+        className: `max-w-[800px] text-center`,
+        children: r
+    }), t[5] = r, t[6] = b);
+    let x;
+    t[7] !== i || t[8] !== f?.canRetry || t[9] !== p || t[10] !== d || t[11] !== h || t[12] !== c || t[13] !== o || t[14] !== s || t[15] !== u || t[16] !== m ? (x = u ? (0, X.jsxs)(`div`, {
+        className: `mt-2 flex flex-col items-center gap-2 text-center`,
+        children: [d ? (0, X.jsxs)(`div`, {
+            className: `flex flex-col items-center gap-1 text-center text-sm`,
+            children: [(0, X.jsx)(`p`, {
+                className: `font-medium text-red-500`,
+                children: p ? (0, X.jsx)(F, {
+                    id: `5B85Hf`,
+                    defaultMessage: `The email you used for verification doesn't match your login email. Please sign in with the verified school email and try again. Current login email: {email}`,
+                    values: {
+                        email: m
+                    }
+                }) : (0, X.jsx)(F, {
+                    id: `JANzo6`,
+                    defaultMessage: `Your previous verification attempt failed.`
+                })
+            }), !p && !f?.canRetry ? (0, X.jsx)(`p`, {
+                className: `text-red-500`,
+                children: (0, X.jsx)(F, {
+                    id: `v0H4Fi`,
+                    defaultMessage: `You've reached the maximum number of attempts.`
+                })
+            }) : null]
+        }) : null, h ? (0, X.jsx)(`div`, {
+            className: `text-token-text-error mx-auto max-w-[720px] text-sm`,
+            children: h
+        }) : null, (0, X.jsxs)(`div`, {
+            className: `relative flex flex-col items-center justify-center gap-2 pb-4 md:flex-row`,
+            children: [(0, X.jsx)(Le, {
+                enrollmentState: i,
+                buttonSource: `splash`,
+                onVerifyClick: s,
+                onCreateWorkspaceClick: c
+            }), (0, X.jsx)(w, {
+                color: `ghost`,
+                onClick: o,
+                children: (0, X.jsx)(F, {
+                    id: `ng/0pH`,
+                    defaultMessage: `Learn more`
+                })
+            })]
+        }), (0, X.jsx)(`div`, {
+            className: `bg-token-main-surface-secondary text-token-text-secondary mt-4 max-w-[520px] rounded-3xl px-5 py-4 text-center text-sm leading-relaxed`,
+            children: (0, X.jsx)(F, {
+                id: `H3dGOo`,
+                defaultMessage: `You’ll be sent to a trusted third-party verification partner called SheerID. Anything you upload is used only to confirm your educator status—OpenAI won’t see or store your documents.`
+            })
+        })]
+    }) : null, t[7] = i, t[8] = f?.canRetry, t[9] = p, t[10] = d, t[11] = h, t[12] = c, t[13] = o, t[14] = s, t[15] = u, t[16] = m, t[17] = x) : x = t[17];
+    let S;
+    return t[18] !== a || t[19] !== v || t[20] !== y || t[21] !== b || t[22] !== x ? (S = (0, X.jsxs)(`section`, {
+        ref: a,
+        className: v,
+        children: [y, b, x]
+    }), t[18] = a, t[19] = v, t[20] = y, t[21] = b, t[22] = x, t[23] = S) : S = t[23], S
+}
+var Ve, X, He = e((() => {
+    Ve = I(), a(), p(), q(), Oe(), i(), z(), ze(), X = L()
+}));
+
+function Ue() {
+    "use forget";
+    let e = (0, Xe.c)(79),
+        t = ue(),
+        n = t.name === `domain-claimed` ? t.workspace : null,
+        r;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = x(), e[0] = r) : r = e[0];
+    let i = r,
+        a;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (a = s(), e[1] = a) : a = e[1];
+    let o = a,
+        c = f(),
+        l = D(),
+        u = ne(),
+        d = ee(),
+        p = c?.planType ?? o?.account?.planType ?? null,
+        m = l?.email_domain_type ?? null,
+        h;
+    e[2] === u.search ? h = e[3] : (h = new URLSearchParams(u.search).get(`referer`), e[2] = u.search, e[3] = h);
+    let g = h,
+        _ = `verificationId` in t ? t.verificationId ?? null : null,
+        v;
+    e[4] !== t.name || e[5] !== _ ? (v = {
+        enrollmentState: t.name,
+        enrollmentVerificationId: _
+    }, e[4] = t.name, e[5] = _, e[6] = v) : v = e[6];
+    let b = v,
+        S = i ? p ?? `unknown` : null,
+        C;
+    e[7] !== m || e[8] !== b || e[9] !== S ? (C = {
+        isLoggedIn: i,
+        loggedInStatus: i ? `logged_in` : `logged_out`,
+        accountPlanType: S,
+        emailDomainType: m,
+        ...b
+    }, e[7] = m, e[8] = b, e[9] = S, e[10] = C) : C = e[10];
+    let w = C,
+        T;
+    e[11] !== w || e[12] !== g ? (T = (e, t, n) => {
+        y.logEventWithStatsig(e, t, {
+            ...w,
+            referer: g ?? null,
+            ...n
+        })
+    }, e[11] = w, e[12] = g, e[13] = T) : T = e[13];
+    let E = T,
+        O = g ?? null,
+        k;
+    e[14] !== m || e[15] !== p || e[16] !== O ? (k = {
+        loggedInStatus: i ? `logged_in` : `logged_out`,
+        accountPlanType: p,
+        emailDomainType: m,
+        referer: O
+    }, e[14] = m, e[15] = p, e[16] = O, e[17] = k) : k = e[17];
+    let A = k,
+        j;
+    e[18] !== t.name || e[19] !== E ? (j = e => {
+        E($.verifyClick.segment, $.verifyClick.statsig, {
+            source: e
+        }), B(`verification`, `verify_click`, {
+            source: e,
+            verificationState: t.name
+        })
+    }, e[18] = t.name, e[19] = E, e[20] = j) : j = e[20];
+    let M = j,
+        N;
+    e[21] === E ? N = e[22] : (N = e => {
+        E($.createWorkspaceClick.segment, $.createWorkspaceClick.statsig, {
+            source: e
+        }), B(`verification`, `create_workspace_click`, {
+            source: e
+        })
+    }, e[21] = E, e[22] = N);
+    let P = N,
+        F = m != null,
+        I = t.name !== `loading`,
+        te, L;
+    e[23] === d ? (te = e[24], L = e[25]) : (te = () => {
+        i || d(`/k12-plan`, {
+            replace: !0
+        })
+    }, L = [i, d], e[23] = d, e[24] = te, e[25] = L), (0, Z.useEffect)(te, L);
+    let re = t.name === `verified`,
+        R = n != null,
+        z = R ? tt : re ? et : $e,
+        ie = (0, Z.useRef)(null),
+        ae = (0, Z.useRef)(null),
+        oe = (0, Z.useRef)(null),
+        se = (0, Z.useRef)(!1),
+        le = (0, Z.useRef)(!1),
+        de, fe;
+    e[26] === Symbol.for(`react.memo_cache_sentinel`) ? (de = [ie, ae], fe = {
+        threshold: .1
+    }, e[26] = de, e[27] = fe) : (de = e[26], fe = e[27]);
+    let [pe, me] = qe(de, fe), he = !R && (!pe && !me || !1), _e, ve;
+    e[28] !== A || e[29] !== F || e[30] !== I || e[31] !== E ? (_e = () => {
+        !i || !F || !I || se.current || (E($.impression.segment, $.impression.statsig), B(`verification`, `page_view`, A), se.current = !0)
+    }, ve = [A, F, I, i, E], e[28] = A, e[29] = F, e[30] = I, e[31] = E, e[32] = _e, e[33] = ve) : (_e = e[32], ve = e[33]), (0, Z.useEffect)(_e, ve);
+    let ye, V;
+    e[34] !== A || e[35] !== t.name ? (ye = () => {
+        t.name === `error` && ce(`verification`, `enrollment_status_error`, Error(`enrollment_status_error`), A)
+    }, V = [A, t.name], e[34] = A, e[35] = t.name, e[36] = ye, e[37] = V) : (ye = e[36], V = e[37]), (0, Z.useEffect)(ye, V);
+    let be, xe;
+    e[38] !== n || e[39] !== E ? (be = () => {
+        !n || le.current || (E($.domainClaimedShown.segment, $.domainClaimedShown.statsig, {
+            source: `domain-claimed`,
+            workspace_id: n.workspace_id
+        }), B(`verification`, `domain_claimed_notice_shown`, {
+            workspaceId: n.workspace_id,
+            domain: n.domain
+        }), le.current = !0)
+    }, xe = [n, E], e[38] = n, e[39] = E, e[40] = be, e[41] = xe) : (be = e[40], xe = e[41]), (0, Z.useEffect)(be, xe);
+    let Se;
+    e[42] === E ? Se = e[43] : (Se = () => {
+        E($.learnMore.segment, $.learnMore.statsig), B(`verification`, `learn_more_click`), window.open(`https://chatgpt.com/plans/k12-teachers`, `_blank`, `noopener`)
+    }, e[42] = E, e[43] = Se);
+    let Ce = Se,
+        we;
+    e[44] === E ? we = e[45] : (we = (e, t) => {
+        E($.domainClaimedAction.segment, $.domainClaimedAction.statsig, {
+            source: `domain-claimed`,
+            workspaceId: e,
+            workspace_auto_accepts_requests: t
+        }), B(`verification`, `domain_claimed_action_clicked`, {
+            workspaceId: e,
+            workspaceAutoAcceptsRequests: t
+        })
+    }, e[44] = E, e[45] = we);
+    let Te = we;
+    if (!i) return null;
+    let H;
+    e[46] !== t || e[47] !== P || e[48] !== M ? (H = (0, Q.jsx)(We, {
+        enrollmentState: t,
+        onVerifyClick: M,
+        onCreateWorkspaceClick: P
+    }), e[46] = t, e[47] = P, e[48] = M, e[49] = H) : H = e[49];
+    let Ee = !R,
+        U;
+    e[50] !== t || e[51] !== P || e[52] !== Ce || e[53] !== M || e[54] !== z.description || e[55] !== z.title || e[56] !== Ee ? (U = (0, Q.jsx)(Be, {
+        ref: ie,
+        description: z.description,
+        title: z.title,
+        enrollmentState: t,
+        onSecondaryAction: Ce,
+        onVerifyClick: M,
+        onCreateWorkspaceClick: P,
+        showActions: Ee
+    }), e[50] = t, e[51] = P, e[52] = Ce, e[53] = M, e[54] = z.description, e[55] = z.title, e[56] = Ee, e[57] = U) : U = e[57];
+    let W;
+    e[58] !== n || e[59] !== Te || e[60] !== R ? (W = R && n ? (0, Q.jsx)(ge, {
+        workspace: n,
+        onAction: Te
+    }) : null, e[58] = n, e[59] = Te, e[60] = R, e[61] = W) : W = e[61];
+    let G;
+    e[62] === Symbol.for(`react.memo_cache_sentinel`) ? (G = {
+        question: `Who qualifies for this plan?`,
+        answer: (0, Q.jsx)(`p`, {
+            children: `You are eligible for this plan if you are currently employed by an accredited K-12 school or district in the United States. Teachers, staff, administrators, and district leaders are all eligible.`
+        })
+    }, e[62] = G) : G = e[62];
+    let K;
+    e[63] === Symbol.for(`react.memo_cache_sentinel`) ? (K = {
+        question: `How do I sign up for this plan?`,
+        answer: (0, Q.jsx)(Q.Fragment, {
+            children: (0, Q.jsx)(`p`, {
+                children: `First, you’ll need to verify your educator status through SheerID here. Once verified, you will be redirected back to ChatGPT to create a free workspace.`
+            })
+        })
+    }, e[63] = K) : K = e[63];
+    let q;
+    e[64] === Symbol.for(`react.memo_cache_sentinel`) ? (q = {
+        question: `Does OpenAI train its models on my data?`,
+        answer: (0, Q.jsx)(`p`, {
+            children: `No, anything you share with ChatGPT for Teachers is not used to train our models by default.`
+        })
+    }, e[64] = q) : q = e[64];
+    let De;
+    e[65] === Symbol.for(`react.memo_cache_sentinel`) ? (De = [G, K, q, {
+        question: `How is data kept secure?`,
+        answer: (0, Q.jsx)(`p`, {
+            children: `The plan includes multi-factor authentication (MFA), SAML SSO, and encryption to protect your data and assist your school meet its FERPA compliance obligations.`
+        })
+    }], e[65] = De) : De = e[65];
+    let Oe;
+    e[66] === E ? Oe = e[67] : (Oe = (0, Q.jsx)(Ke, {
+        ref: oe,
+        title: `FAQs`,
+        faqs: De,
+        logAnalyticsEvent: E
+    }), e[66] = E, e[67] = Oe);
+    let J;
+    e[68] !== t || e[69] !== P || e[70] !== M || e[71] !== he ? (J = (0, Q.jsx)(Ge, {
+        enrollmentState: t,
+        showBottomNav: he,
+        onVerifyClick: M,
+        onCreateWorkspaceClick: P
+    }), e[68] = t, e[69] = P, e[70] = M, e[71] = he, e[72] = J) : J = e[72];
+    let ke;
+    return e[73] !== H || e[74] !== U || e[75] !== W || e[76] !== Oe || e[77] !== J ? (ke = (0, Q.jsxs)(`div`, {
+        className: `font-oai overflow-hidden pt-[71px] pb-8`,
+        children: [H, U, W, Oe, J]
+    }), e[73] = H, e[74] = U, e[75] = W, e[76] = Oe, e[77] = J, e[78] = ke) : ke = e[78], ke
+}
+
+function We(e) {
+    "use forget";
+    let t = (0, Xe.c)(19),
+        {
+            enrollmentState: n,
+            onVerifyClick: r,
+            onCreateWorkspaceClick: i
+        } = e,
+        [a, o] = (0, Z.useState)(!1),
+        [s, c] = (0, Z.useState)(!1),
+        l = n.name !== `domain-claimed`,
+        u, d;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (u = () => {
+        let e = g(() => {
+            o(window.scrollY > 0), c(window.scrollY > 300)
+        }, 200);
+        return window.addEventListener(`scroll`, e), () => window.removeEventListener(`scroll`, e)
+    }, d = [], t[0] = u, t[1] = d) : (u = t[0], d = t[1]), (0, Z.useEffect)(u, d);
+    let f = !a,
+        p;
+    t[2] !== a || t[3] !== f ? (p = C(`bg-token-main-surface-primary absolute start-0 end-0 top-0 z-10 py-4 transition-all duration-300 md:fixed md:border-b`, {
+        "border-token-border-default": a,
+        "border-transparent": f
+    }), t[2] = a, t[3] = f, t[4] = p) : p = t[4];
+    let m;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (m = C(`mx-auto flex items-center justify-between`, Ze), t[5] = m) : m = t[5];
+    let h;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, Q.jsx)(`a`, {
+        href: `/`,
+        "aria-label": `ChatGPT Home`,
+        children: (0, Q.jsx)(ae, {})
+    }), t[6] = h) : h = t[6];
+    let _;
+    t[7] !== n || t[8] !== i || t[9] !== r || t[10] !== l || t[11] !== s ? (_ = l ? (0, Q.jsx)(`div`, {
+        className: C(`opacity-0 transition-opacity`, {
+            "md:opacity-100": s
+        }),
+        inert: !s,
+        children: (0, Q.jsx)(Le, {
+            enrollmentState: n,
+            buttonSource: `header`,
+            onVerifyClick: r,
+            onCreateWorkspaceClick: i
+        })
+    }) : null, t[7] = n, t[8] = i, t[9] = r, t[10] = l, t[11] = s, t[12] = _) : _ = t[12];
+    let v;
+    t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, Q.jsx)(se, {}), t[13] = v) : v = t[13];
+    let y;
+    t[14] === _ ? y = t[15] : (y = (0, Q.jsxs)(`div`, {
+        className: m,
+        children: [h, (0, Q.jsxs)(`div`, {
+            className: `flex gap-2`,
+            children: [_, v]
+        })]
+    }), t[14] = _, t[15] = y);
+    let b;
+    return t[16] !== p || t[17] !== y ? (b = (0, Q.jsx)(`nav`, {
+        className: p,
+        children: y
+    }), t[16] = p, t[17] = y, t[18] = b) : b = t[18], b
+}
+
+function Ge(e) {
+    "use forget";
+    let t = (0, Xe.c)(10),
+        {
+            enrollmentState: n,
+            showBottomNav: r,
+            onVerifyClick: i,
+            onCreateWorkspaceClick: a
+        } = e,
+        o = r !== void 0 && r,
+        s = !o,
+        c;
+    t[0] !== o || t[1] !== s ? (c = C(`border-token-border-default bg-token-main-surface-primary fixed start-0 end-0 bottom-0 z-10 border-t py-4 text-center transition-[opacity_transform] duration-200 ease-in-out md:hidden`, {
+        "translate-y-0 opacity-100": o,
+        "translate-y-[100%] opacity-0": s
+    }), t[0] = o, t[1] = s, t[2] = c) : c = t[2];
+    let l;
+    t[3] !== n || t[4] !== a || t[5] !== i ? (l = (0, Q.jsx)(Le, {
+        enrollmentState: n,
+        buttonSource: `header`,
+        onVerifyClick: i,
+        onCreateWorkspaceClick: a
+    }), t[3] = n, t[4] = a, t[5] = i, t[6] = l) : l = t[6];
+    let u;
+    return t[7] !== c || t[8] !== l ? (u = (0, Q.jsx)(`nav`, {
+        className: c,
+        children: l
+    }), t[7] = c, t[8] = l, t[9] = u) : u = t[9], u
+}
+
+function Ke(e) {
+    "use forget";
+    let t = (0, Xe.c)(21),
+        {
+            title: n,
+            faqs: r,
+            ref: i,
+            logAnalyticsEvent: a
+        } = e,
+        [o, s] = (0, Z.useState)(0),
+        c;
+    t[0] !== r || t[1] !== a || t[2] !== o ? (c = e => {
+        let t = o === e ? -1 : e,
+            n = t === e;
+        a($.faqToggle.segment, $.faqToggle.statsig, {
+            question: r[e]?.question,
+            action: n ? `open` : `close`
+        }), B(`verification`, `faq_toggle`, {
+            question: r[e]?.question,
+            action: n ? `open` : `close`
+        }), s(t)
+    }, t[0] = r, t[1] = a, t[2] = o, t[3] = c) : c = t[3];
+    let l = c,
+        u, d;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (u = C(`mx-auto flex max-w-[596px] flex-col gap-8 px-4 py-20 md:gap-16 md:py-32`), d = C(Qe, `sm:text-center`), t[4] = u, t[5] = d) : (u = t[4], d = t[5]);
+    let f;
+    t[6] === n ? f = t[7] : (f = (0, Q.jsx)(`h2`, {
+        className: d,
+        children: (0, Q.jsx)(`span`, {
+            className: `relative after:pointer-events-none after:absolute after:start-[calc(100%_-_25px)] after:bottom-[75%] after:h-[64px] after:w-[75px] after:bg-[url(https://cdn.openai.com/chatgpt/ctf-cdn/student-landing/faq-bubble-small-v2.png)] after:bg-contain after:bg-center after:bg-no-repeat after:content-[''] dark:after:invert`,
+            children: n
+        })
+    }), t[6] = n, t[7] = f);
+    let p;
+    if (t[8] !== r || t[9] !== o || t[10] !== l) {
+        let e;
+        t[12] !== o || t[13] !== l ? (e = (e, t) => (0, Q.jsx)(he, {
+            question: e.question,
+            answer: e.answer,
+            isOpen: o === t,
+            onToggle: () => l(t)
+        }, t), t[12] = o, t[13] = l, t[14] = e) : e = t[14], p = r.map(e), t[8] = r, t[9] = o, t[10] = l, t[11] = p
+    } else p = t[11];
+    let m;
+    t[15] === p ? m = t[16] : (m = (0, Q.jsx)(`div`, {
+        className: ``,
+        children: p
+    }), t[15] = p, t[16] = m);
+    let h;
+    return t[17] !== i || t[18] !== f || t[19] !== m ? (h = (0, Q.jsxs)(`section`, {
+        ref: i,
+        className: u,
+        children: [f, m]
+    }), t[17] = i, t[18] = f, t[19] = m, t[20] = h) : h = t[20], h
+}
+
+function qe(e, t) {
+    "use forget";
+    let n = (0, Xe.c)(8),
+        r;
+    n[0] === t ? r = n[1] : (r = t === void 0 ? {} : t, n[0] = t, n[1] = r);
+    let i = r,
+        a;
+    n[2] === e ? a = n[3] : (a = () => e.map(Ye), n[2] = e, n[3] = a);
+    let [o, s] = (0, Z.useState)(a), c, l;
+    return n[4] !== i || n[5] !== e ? (c = () => {
+        let t = e.map(Je),
+            n = new IntersectionObserver(e => {
+                e.forEach(e => {
+                    let n = t.findIndex(t => t === e.target);
+                    n !== -1 && s(t => {
+                        if (t[n] === e.isIntersecting) return t;
+                        let r = [...t];
+                        return r[n] = e.isIntersecting, r
+                    })
+                })
+            }, i);
+        return t.forEach(e => {
+            e && n.observe(e)
+        }), () => {
+            t.forEach(e => {
+                e && n.unobserve(e)
+            })
+        }
+    }, l = [i, e], n[4] = i, n[5] = e, n[6] = c, n[7] = l) : (c = n[6], l = n[7]), (0, Z.useEffect)(c, l), o
+}
+
+function Je(e) {
+    return e.current
+}
+
+function Ye() {
+    return !1
+}
+var Xe, Z, Q, Ze, Qe, $e, et, tt, $, nt = e((() => {
+    Xe = I(), ie(), le(), oe(), r(), p(), xe(), He(), de(), _(), m(), i(), O(), Z = t(N()), j(), ze(), me(), Q = L(), Ze = `max-w-(--breakpoint-2xl) px-4 md:px-8`, Qe = `text-2xl md:text-3xl`, $e = {
+        description: `Once verified, you’ll set up your workspace and add colleagues if you’d like`,
+        title: `Confirm you’re a U.S. K-12 educator to get started with your free ChatGPT for Teachers workspace`
+    }, et = {
+        description: `Information you share with ChatGPT is never used to train our models`,
+        title: `You've been verified. Get started with your ChatGPT for Teachers workspace.`
+    }, tt = {
+        description: `Your school or district already has a ChatGPT workspace. Request access below to join your colleagues.`,
+        title: `Join your existing ChatGPT for Teachers workspace`
+    }, $ = {
+        impression: {
+            segment: `K12 Verification: Shown`,
+            statsig: `chatgpt_k12_verification_landing_shown`
+        },
+        learnMore: {
+            segment: `K12 Verification: Learn More Clicked`,
+            statsig: `chatgpt_k12_verification_learn_more_clicked`
+        },
+        faqToggle: {
+            segment: `K12 Verification: FAQ Toggled`,
+            statsig: `chatgpt_k12_verification_faq_toggled`
+        },
+        verifyClick: {
+            segment: `K12 Verification: Verify Status Clicked`,
+            statsig: `chatgpt_k12_verification_verify_clicked`
+        },
+        createWorkspaceClick: {
+            segment: `K12 Verification: Create Workspace Clicked`,
+            statsig: `chatgpt_k12_verification_create_workspace_clicked`
+        },
+        domainClaimedShown: {
+            segment: `K12 Verification: Claimed Workspace Notice Shown`,
+            statsig: `chatgpt_k12_verification_claimed_notice_shown`
+        },
+        domainClaimedAction: {
+            segment: `K12 Verification: Claimed Workspace Action Clicked`,
+            statsig: `chatgpt_k12_verification_claimed_notice_action_clicked`
+        }
+    }
+}));
+
+function rt() {
+    return (0, it.jsx)(Ue, {})
+}
+var it, at = e((() => {
+        nt(), it = L()
+    })),
+    ot, st, ct, lt, ut, dt, ft = e((() => {
+        j(), ot = I(), at(), st = L(), ct = `/k12-verification`, lt = te(function() {
+            "use forget";
+            let e = (0, ot.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, st.jsx)(rt, {}), e[0] = t) : t = e[0], t
+        }), ut = {
+            hasRouteMeta: !0
+        }, dt = () => {
+            let e = `ChatGPT for Teachers`,
+                t = `Discover ways to use ChatGPT for Teachers to help you teach, write, and stay organized.`;
+            return [{
+                title: e
+            }, {
+                property: `og:site_name`,
+                content: `ChatGPT for Teachers`
+            }, {
+                property: `og:type`,
+                content: `website`
+            }, {
+                property: `og:title`,
+                content: e
+            }, {
+                property: `og:url`,
+                content: `https://chatgpt.com/k12-verification`
+            }, {
+                name: `description`,
+                content: t
+            }, {
+                property: `og:description`,
+                content: t
+            }]
+        }
+    }));
+export {
+    dt as a, lt as i, ut as n, ft as r, ct as t
+};
 //# sourceMappingURL=c38c3e3a-b03xbupmipu10o51.js.map

@@ -1,0 +1,156 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bh as t,
+    Vh as n
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    _C as r,
+    fb as i,
+    gC as a,
+    oC as o,
+    pb as s,
+    sC as c
+} from "./30901919-r9pahacmzqudnt4f.js";
+
+function l(e) {
+    let t = e.trim().toLowerCase().split(`.`);
+    return t.length > 1 ? t[t.length - 1] : ``
+}
+
+function u(e) {
+    let t = e.split(/[\\/]/).pop()?.toLowerCase() ?? ``;
+    return g.has(t) || t.startsWith(`.env`) || t === `.dockerignore` || t === `.editorconfig` || t === `.gitattributes` || t === `.gitignore` || t === `.npmrc` || t === `.prettierrc`
+}
+
+function d(e) {
+    let t = l(e);
+    return C[t] || (h.has(t) || m[t] || u(e) ? `text/plain` : `application/octet-stream`)
+}
+
+function f(e) {
+    let t = l(e.filename),
+        n = e.contentType.split(`;`)[0].trim().toLowerCase();
+    return t === `pdf` || n === `application/pdf` ? {
+        kind: `pdf`
+    } : y.has(t) || n.startsWith(`image/`) ? {
+        kind: `image`
+    } : b.has(t) || n.startsWith(`audio/`) ? {
+        kind: `audio`
+    } : x.has(t) || n.startsWith(`video/`) ? {
+        kind: `video`
+    } : m[t] ? {
+        kind: `text`,
+        language: m[t]
+    } : t === `json` || n.includes(`json`) ? {
+        kind: `text`,
+        language: `json`
+    } : n.includes(`yaml`) || n.includes(`yml`) ? {
+        kind: `text`,
+        language: `yaml`
+    } : h.has(t) || u(e.filename) || n.startsWith(`text/`) || n === `application/xml` || n.endsWith(`+xml`) || n.includes(`javascript`) ? {
+        kind: `text`,
+        language: null
+    } : null
+}
+
+function p(e) {
+    let n = l(e);
+    return y.has(n) ? o : S.has(n) ? i : _.has(n) || h.has(n) || b.has(n) || x.has(n) || n === `pdf` || v.has(n) ? t : a
+}
+var m, h, g, _, v, y, b, x, S, C, w = e((() => {
+    r(), s(), n(), c(), m = {
+        bash: `bash`,
+        c: `c`,
+        cc: `cpp`,
+        clj: `clojure`,
+        cpp: `cpp`,
+        cs: `csharp`,
+        css: `css`,
+        cjs: `javascript`,
+        cts: `typescript`,
+        cxx: `cpp`,
+        go: `go`,
+        h: `cpp`,
+        hpp: `cpp`,
+        hs: `haskell`,
+        html: `html`,
+        java: `java`,
+        jl: `julia`,
+        json: `json`,
+        js: `javascript`,
+        jsx: `javascript`,
+        kt: `kotlin`,
+        kts: `kotlin`,
+        less: `less`,
+        lua: `lua`,
+        mjs: `javascript`,
+        m: `objectivec`,
+        mm: `objectivec`,
+        php: `php`,
+        ps1: `powershell`,
+        py: `python`,
+        r: `r`,
+        rb: `ruby`,
+        rs: `rust`,
+        sass: `scss`,
+        scala: `scala`,
+        scss: `scss`,
+        sh: `bash`,
+        sql: `sql`,
+        swift: `swift`,
+        toml: `toml`,
+        ts: `typescript`,
+        tsx: `typescript`,
+        vue: `vue`,
+        xml: `xml`,
+        yml: `yaml`,
+        yaml: `yaml`
+    }, h = new Set([`conf`, `env`, `graphql`, `gql`, `jsonl`, `lock`, `log`, `md`, `markdown`, `mdx`, `ndjson`, `properties`, `txt`, `rst`, `csv`, `ini`, `tsv`]), g = new Set([`changelog`, `containerfile`, `dockerfile`, `gemfile`, `justfile`, `license`, `makefile`, `procfile`, `readme`]), _ = new Set([`md`, `markdown`]), v = new Set([`zip`, `rar`, `7z`, `tar`, `gz`, `tgz`, `bz2`, `xz`]), y = new Set([`png`, `jpg`, `jpeg`, `gif`, `webp`, `svg`, `bmp`, `tif`, `tiff`, `ico`, `heic`, `heif`, `avif`]), b = new Set([`aac`, `flac`, `m4a`, `mp3`, `oga`, `ogg`, `opus`, `wav`]), x = new Set([`m4v`, `mov`, `mp4`, `ogv`, `webm`]), S = new Set(Object.keys(m)), C = {
+        aac: `audio/aac`,
+        avif: `image/avif`,
+        bmp: `image/bmp`,
+        css: `text/css`,
+        csv: `text/csv`,
+        flac: `audio/flac`,
+        gif: `image/gif`,
+        heic: `image/heic`,
+        heif: `image/heif`,
+        htm: `text/html`,
+        html: `text/html`,
+        ico: `image/x-icon`,
+        jpeg: `image/jpeg`,
+        jpg: `image/jpeg`,
+        json: `application/json`,
+        jsonl: `application/x-ndjson`,
+        m4a: `audio/mp4`,
+        m4v: `video/mp4`,
+        markdown: `text/markdown`,
+        md: `text/markdown`,
+        mov: `video/quicktime`,
+        mp3: `audio/mpeg`,
+        mp4: `video/mp4`,
+        ndjson: `application/x-ndjson`,
+        oga: `audio/ogg`,
+        ogg: `audio/ogg`,
+        ogv: `video/ogg`,
+        opus: `audio/opus`,
+        pdf: `application/pdf`,
+        png: `image/png`,
+        svg: `image/svg+xml`,
+        tif: `image/tiff`,
+        tiff: `image/tiff`,
+        tsv: `text/tab-separated-values`,
+        wav: `audio/wav`,
+        webm: `video/webm`,
+        webp: `image/webp`,
+        xml: `application/xml`,
+        yaml: `text/yaml`,
+        yml: `text/yaml`
+    }
+}));
+export {
+    w as i, d as n, f as r, p as t
+};
+//# sourceMappingURL=328817d4-heatgfdykgr0a682.js.map
