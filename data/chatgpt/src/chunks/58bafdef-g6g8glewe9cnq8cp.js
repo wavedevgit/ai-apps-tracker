@@ -1,2 +1,264 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Ant as n,BU as r,Dw as i,Ew as a,F7 as o,JJ as s,JT as c,Mnt as l,YT as u,cat as d,fY as f,fat as p,g8 as m,jnt as h,mY as g,rY as _,w8 as v,z7 as y,zU as b}from"./4813494d-bo7e0c29ngt4zgx0.js";import{Bn as x,Ln as S,Nn as C,Rn as w,Vn as T,p as E,s as D,wn as O,zn as k}from"./2340486e-i7pjxgdhv0bs6apg.js";import{aT as A,oT as j}from"./conversation-small-ikg0dwuw782klweb.js";function M(e,t){let n=e.metadata==null?{}:{target_metadata:e.metadata};switch(e.kind){case`app_block`:return{code_block_type:`app_block`,language:`html`,...n};case`chart`:return{code_block_type:`chart_widget`,language:`recharts`,user_edited_code_block:t,...n}}}var N=e((()=>{}));function P(e){"use forget";let t=(0,F.c)(8),{reference:n,target:r}=e,i;t[0]===n.messageId?i=t[1]:(i=e=>{if(e)return s.getTree(e).getMaybeMessage(n.messageId)},t[0]=n.messageId,t[1]=i);let a=g(n.clientThreadId,i)?.metadata?.code_blocks?.[n.referenceIndex]?.content!==void 0,c=f(n.clientThreadId),l;return t[2]!==a||t[3]!==n.messageId||t[4]!==n.referenceIndex||t[5]!==c||t[6]!==r?(l={mutationFn:async e=>{try{await o.safePost(`/conversation/message/code-blocks/feedback`,{requestBody:{message_id:n.messageId,conversation_id:c??`unknown`,code_block_index:String(n.referenceIndex),feedback:e,...M(r,a)},authOption:d.SendIfAvailable})}catch{}}},t[2]=a,t[3]=n.messageId,t[4]=n.referenceIndex,t[5]=c,t[6]=r,t[7]=l):l=t[7],E(l)}var F,I=e((()=>{F=O(),_(),p(),y(),D(),N()}));function L(e){"use forget";let t=(0,R.c)(49),{onClose:n,onSubmitted:r,reference:i,target:o}=e,s=k(),l=(0,z.useId)(),[u,d]=(0,z.useState)(``),f;t[0]!==i||t[1]!==o?(f={reference:i,target:o},t[0]=i,t[1]=o,t[2]=f):f=t[2];let{mutate:p}=P(f),m;t[3]===u?m=t[4]:(m=u.trim(),t[3]=u,t[4]=m);let h=m===``,g;t[5]!==u||t[6]!==s||t[7]!==n||t[8]!==r||t[9]!==p?(g=()=>{let e=u.trim();e!==``&&(p(e),b().success(s.formatMessage(V.toastSubmitted)),d(``),r(),n())},t[5]=u,t[6]=s,t[7]=n,t[8]=r,t[9]=p,t[10]=g):g=t[10];let _=g,v;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,B.jsx)(`div`,{className:`flex-1 font-bold`,children:(0,B.jsx)(C,{...V.title})}),t[11]=v):v=t[11];let y;t[12]===s?y=t[13]:(y=s.formatMessage(V.closePopupAriaLabel),t[12]=s,t[13]=y);let x;t[14]!==n||t[15]!==y?(x=(0,B.jsxs)(`div`,{className:`mb-2 flex items-start justify-between gap-2`,children:[v,(0,B.jsx)(a,{onClick:n,"aria-label":y,className:`text-token-text-primary -m-1 -me-2 rounded-full!`})]}),t[14]=n,t[15]=y,t[16]=x):x=t[16];let S;t[17]===Symbol.for(`react.memo_cache_sentinel`)?(S=(0,B.jsx)(`div`,{className:`text-xs leading-relaxed`,children:(0,B.jsx)(C,{...V.description})}),t[17]=S):S=t[17];let w;t[18]===x?w=t[19]:(w=(0,B.jsxs)(`div`,{className:`mx-2 pt-1 pb-3 text-sm`,children:[x,S]}),t[18]=x,t[19]=w);let T;t[20]===_?T=t[21]:(T=e=>{e.preventDefault(),_()},t[20]=_,t[21]=T);let E;t[22]===Symbol.for(`react.memo_cache_sentinel`)?(E=(0,B.jsx)(C,{id:`codeBlocks.feedback.additionalLabel`,defaultMessage:`Additional feedback`}),t[22]=E):E=t[22];let D;t[23]===l?D=t[24]:(D=(0,B.jsx)(`label`,{htmlFor:l,className:`sr-only`,children:E}),t[23]=l,t[24]=D);let O;t[25]===Symbol.for(`react.memo_cache_sentinel`)?(O=e=>d(e.target.value),t[25]=O):O=t[25];let j;t[26]===s?j=t[27]:(j=s.formatMessage(V.placeholder),t[26]=s,t[27]=j);let M;t[28]!==u||t[29]!==l||t[30]!==j?(M=(0,B.jsx)(A,{autoFocus:!0,id:l,name:`block-feedback-text`,value:u,onChange:O,placeholder:j,rows:3,className:`border-token-border-heavy mt-1 self-stretch rounded-md bg-transparent px-2 py-2 text-sm focus:ring-0 focus:outline-none focus-visible:ring-0`}),t[28]=u,t[29]=l,t[30]=j,t[31]=M):M=t[31];let N;t[32]===h?N=t[33]:(N=e=>{h&&e.preventDefault()},t[32]=h,t[33]=N);let F;t[34]===s?F=t[35]:(F=s.formatMessage({id:`codeBlocks.feedback.submitAriaLabel`,defaultMessage:`Submit`}),t[34]=s,t[35]=F);let I;t[36]===Symbol.for(`react.memo_cache_sentinel`)?(I=(0,B.jsx)(C,{id:`codeBlocks.feedback.submitLabel`,defaultMessage:`Give feedback`}),t[36]=I):I=t[36];let L;t[37]!==h||t[38]!==N||t[39]!==F?(L=(0,B.jsx)(c,{type:`submit`,size:`small`,className:`mt-2 mb-1 self-center px-4 py-2`,visuallyDisabled:h,"aria-disabled":h,onClick:N,"aria-label":F,children:I}),t[37]=h,t[38]=N,t[39]=F,t[40]=L):L=t[40];let H;t[41]!==D||t[42]!==M||t[43]!==L||t[44]!==T?(H=(0,B.jsx)(`div`,{className:`relative flex flex-col justify-between rounded-lg`,children:(0,B.jsxs)(`form`,{className:`relative flex flex-col px-2`,onSubmit:T,children:[D,M,L]})}),t[41]=D,t[42]=M,t[43]=L,t[44]=T,t[45]=H):H=t[45];let U;return t[46]!==H||t[47]!==w?(U=(0,B.jsxs)(B.Fragment,{children:[w,H]}),t[46]=H,t[47]=w,t[48]=U):U=t[48],U}var R,z,B,V,H=e((()=>{R=O(),u(),I(),i(),j(),r(),z=t(T()),w(),B=x(),V=S({closePopupAriaLabel:{id:`codeBlocks.visualizationFeedback.closePopupAriaLabel`,defaultMessage:`Close visualization feedback popup`},description:{id:`codeBlocks.visualizationFeedback.description`,defaultMessage:`Tell us what’s working and what’s not about this visualization. The more specific the feedback, the better.`},placeholder:{id:`codeBlocks.visualizationFeedback.placeholder`,defaultMessage:`What did you like or dislike about this visualization?`},title:{id:`codeBlocks.visualizationFeedback.title`,defaultMessage:`This is a visualization, a new feature we’re testing`},toastSubmitted:{id:`codeBlocks.feedback.toastSubmitted`,defaultMessage:`Your feedback has been submitted`}})}));function U(e){let t=n.getItem(e);if(typeof t!=`string`)return!1;let r=Date.parse(t);return Number.isNaN(r)||Date.now()>=r+G?(n.removeItem(e),!1):!0}function W(){K.set(!0),n.setItem(h.HideVisualizationFeedback,new Date().toISOString())}var G,K,q=e((()=>{m(),l(),G=10080*60*1e3,K=v(()=>U(h.HideVisualizationFeedback),{getServerFallback:()=>!1})}));export{H as a,L as i,q as n,K as r,W as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ant as n,
+    BU as r,
+    Dw as i,
+    Ew as a,
+    F7 as o,
+    JJ as s,
+    JT as c,
+    Mnt as l,
+    YT as u,
+    cat as d,
+    fY as f,
+    fat as p,
+    g8 as m,
+    jnt as h,
+    mY as g,
+    rY as _,
+    w8 as v,
+    z7 as y,
+    zU as b
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+import {
+    Bn as x,
+    Ln as S,
+    Nn as C,
+    Rn as w,
+    Vn as T,
+    p as E,
+    s as D,
+    wn as O,
+    zn as k
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    aT as A,
+    oT as j
+} from "./conversation-small-ikg0dwuw782klweb.js";
+
+function M(e, t) {
+    let n = e.metadata == null ? {} : {
+        target_metadata: e.metadata
+    };
+    switch (e.kind) {
+        case `app_block`:
+            return {
+                code_block_type: `app_block`, language: `html`, ...n
+            };
+        case `chart`:
+            return {
+                code_block_type: `chart_widget`, language: `recharts`, user_edited_code_block: t, ...n
+            }
+    }
+}
+var N = e((() => {}));
+
+function P(e) {
+    "use forget";
+    let t = (0, F.c)(8),
+        {
+            reference: n,
+            target: r
+        } = e,
+        i;
+    t[0] === n.messageId ? i = t[1] : (i = e => {
+        if (e) return s.getTree(e).getMaybeMessage(n.messageId)
+    }, t[0] = n.messageId, t[1] = i);
+    let a = g(n.clientThreadId, i)?.metadata?.code_blocks?.[n.referenceIndex]?.content !== void 0,
+        c = f(n.clientThreadId),
+        l;
+    return t[2] !== a || t[3] !== n.messageId || t[4] !== n.referenceIndex || t[5] !== c || t[6] !== r ? (l = {
+        mutationFn: async e => {
+            try {
+                await o.safePost(`/conversation/message/code-blocks/feedback`, {
+                    requestBody: {
+                        message_id: n.messageId,
+                        conversation_id: c ?? `unknown`,
+                        code_block_index: String(n.referenceIndex),
+                        feedback: e,
+                        ...M(r, a)
+                    },
+                    authOption: d.SendIfAvailable
+                })
+            } catch {}
+        }
+    }, t[2] = a, t[3] = n.messageId, t[4] = n.referenceIndex, t[5] = c, t[6] = r, t[7] = l) : l = t[7], E(l)
+}
+var F, I = e((() => {
+    F = O(), _(), p(), y(), D(), N()
+}));
+
+function L(e) {
+    "use forget";
+    let t = (0, R.c)(49),
+        {
+            onClose: n,
+            onSubmitted: r,
+            reference: i,
+            target: o
+        } = e,
+        s = k(),
+        l = (0, z.useId)(),
+        [u, d] = (0, z.useState)(``),
+        f;
+    t[0] !== i || t[1] !== o ? (f = {
+        reference: i,
+        target: o
+    }, t[0] = i, t[1] = o, t[2] = f) : f = t[2];
+    let {
+        mutate: p
+    } = P(f), m;
+    t[3] === u ? m = t[4] : (m = u.trim(), t[3] = u, t[4] = m);
+    let h = m === ``,
+        g;
+    t[5] !== u || t[6] !== s || t[7] !== n || t[8] !== r || t[9] !== p ? (g = () => {
+        let e = u.trim();
+        e !== `` && (p(e), b().success(s.formatMessage(V.toastSubmitted)), d(``), r(), n())
+    }, t[5] = u, t[6] = s, t[7] = n, t[8] = r, t[9] = p, t[10] = g) : g = t[10];
+    let _ = g,
+        v;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, B.jsx)(`div`, {
+        className: `flex-1 font-bold`,
+        children: (0, B.jsx)(C, {
+            ...V.title
+        })
+    }), t[11] = v) : v = t[11];
+    let y;
+    t[12] === s ? y = t[13] : (y = s.formatMessage(V.closePopupAriaLabel), t[12] = s, t[13] = y);
+    let x;
+    t[14] !== n || t[15] !== y ? (x = (0, B.jsxs)(`div`, {
+        className: `mb-2 flex items-start justify-between gap-2`,
+        children: [v, (0, B.jsx)(a, {
+            onClick: n,
+            "aria-label": y,
+            className: `text-token-text-primary -m-1 -me-2 rounded-full!`
+        })]
+    }), t[14] = n, t[15] = y, t[16] = x) : x = t[16];
+    let S;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, B.jsx)(`div`, {
+        className: `text-xs leading-relaxed`,
+        children: (0, B.jsx)(C, {
+            ...V.description
+        })
+    }), t[17] = S) : S = t[17];
+    let w;
+    t[18] === x ? w = t[19] : (w = (0, B.jsxs)(`div`, {
+        className: `mx-2 pt-1 pb-3 text-sm`,
+        children: [x, S]
+    }), t[18] = x, t[19] = w);
+    let T;
+    t[20] === _ ? T = t[21] : (T = e => {
+        e.preventDefault(), _()
+    }, t[20] = _, t[21] = T);
+    let E;
+    t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, B.jsx)(C, {
+        id: `codeBlocks.feedback.additionalLabel`,
+        defaultMessage: `Additional feedback`
+    }), t[22] = E) : E = t[22];
+    let D;
+    t[23] === l ? D = t[24] : (D = (0, B.jsx)(`label`, {
+        htmlFor: l,
+        className: `sr-only`,
+        children: E
+    }), t[23] = l, t[24] = D);
+    let O;
+    t[25] === Symbol.for(`react.memo_cache_sentinel`) ? (O = e => d(e.target.value), t[25] = O) : O = t[25];
+    let j;
+    t[26] === s ? j = t[27] : (j = s.formatMessage(V.placeholder), t[26] = s, t[27] = j);
+    let M;
+    t[28] !== u || t[29] !== l || t[30] !== j ? (M = (0, B.jsx)(A, {
+        autoFocus: !0,
+        id: l,
+        name: `block-feedback-text`,
+        value: u,
+        onChange: O,
+        placeholder: j,
+        rows: 3,
+        className: `border-token-border-heavy mt-1 self-stretch rounded-md bg-transparent px-2 py-2 text-sm focus:ring-0 focus:outline-none focus-visible:ring-0`
+    }), t[28] = u, t[29] = l, t[30] = j, t[31] = M) : M = t[31];
+    let N;
+    t[32] === h ? N = t[33] : (N = e => {
+        h && e.preventDefault()
+    }, t[32] = h, t[33] = N);
+    let F;
+    t[34] === s ? F = t[35] : (F = s.formatMessage({
+        id: `codeBlocks.feedback.submitAriaLabel`,
+        defaultMessage: `Submit`
+    }), t[34] = s, t[35] = F);
+    let I;
+    t[36] === Symbol.for(`react.memo_cache_sentinel`) ? (I = (0, B.jsx)(C, {
+        id: `codeBlocks.feedback.submitLabel`,
+        defaultMessage: `Give feedback`
+    }), t[36] = I) : I = t[36];
+    let L;
+    t[37] !== h || t[38] !== N || t[39] !== F ? (L = (0, B.jsx)(c, {
+        type: `submit`,
+        size: `small`,
+        className: `mt-2 mb-1 self-center px-4 py-2`,
+        visuallyDisabled: h,
+        "aria-disabled": h,
+        onClick: N,
+        "aria-label": F,
+        children: I
+    }), t[37] = h, t[38] = N, t[39] = F, t[40] = L) : L = t[40];
+    let H;
+    t[41] !== D || t[42] !== M || t[43] !== L || t[44] !== T ? (H = (0, B.jsx)(`div`, {
+        className: `relative flex flex-col justify-between rounded-lg`,
+        children: (0, B.jsxs)(`form`, {
+            className: `relative flex flex-col px-2`,
+            onSubmit: T,
+            children: [D, M, L]
+        })
+    }), t[41] = D, t[42] = M, t[43] = L, t[44] = T, t[45] = H) : H = t[45];
+    let U;
+    return t[46] !== H || t[47] !== w ? (U = (0, B.jsxs)(B.Fragment, {
+        children: [w, H]
+    }), t[46] = H, t[47] = w, t[48] = U) : U = t[48], U
+}
+var R, z, B, V, H = e((() => {
+    R = O(), u(), I(), i(), j(), r(), z = t(T()), w(), B = x(), V = S({
+        closePopupAriaLabel: {
+            id: `codeBlocks.visualizationFeedback.closePopupAriaLabel`,
+            defaultMessage: `Close visualization feedback popup`
+        },
+        description: {
+            id: `codeBlocks.visualizationFeedback.description`,
+            defaultMessage: `Tell us what’s working and what’s not about this visualization. The more specific the feedback, the better.`
+        },
+        placeholder: {
+            id: `codeBlocks.visualizationFeedback.placeholder`,
+            defaultMessage: `What did you like or dislike about this visualization?`
+        },
+        title: {
+            id: `codeBlocks.visualizationFeedback.title`,
+            defaultMessage: `This is a visualization, a new feature we’re testing`
+        },
+        toastSubmitted: {
+            id: `codeBlocks.feedback.toastSubmitted`,
+            defaultMessage: `Your feedback has been submitted`
+        }
+    })
+}));
+
+function U(e) {
+    let t = n.getItem(e);
+    if (typeof t != `string`) return !1;
+    let r = Date.parse(t);
+    return Number.isNaN(r) || Date.now() >= r + G ? (n.removeItem(e), !1) : !0
+}
+
+function W() {
+    K.set(!0), n.setItem(h.HideVisualizationFeedback, new Date().toISOString())
+}
+var G, K, q = e((() => {
+    m(), l(), G = 10080 * 60 * 1e3, K = v(() => U(h.HideVisualizationFeedback), {
+        getServerFallback: () => !1
+    })
+}));
+export {
+    H as a, L as i, q as n, K as r, W as t
+};
 //# sourceMappingURL=58bafdef-g6g8glewe9cnq8cp.js.map

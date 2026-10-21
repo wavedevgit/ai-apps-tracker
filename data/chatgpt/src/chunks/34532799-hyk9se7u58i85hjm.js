@@ -1,0 +1,19365 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/e1661852-gb7m59qnfxyu7v2h.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-tap9fxyhk4ehe0bs.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-nmt18uiom3b14vca.js", "assets/30901919-niqyapppecmq5jkn.js", "assets/c470f5ab-uuoa2gfm4goj6p9f.js", "assets/0e5afe53-f7up6uuou2fv3lyg.js", "assets/conversation-small-bwtqiuwj.css", "assets/3cf4f9ac-o7yp6nyq41xpck0e.js", "assets/1af2f3f4-lwqy151pzi8qyyp9.js", "assets/8b34dbc2-ojcl97ddvu2212q0.js", "assets/82782bc9-g3liom11amtlr9kq.js", "assets/5c332f10-k45gqvizpnr5ph7r.js", "assets/181180d3-oup2xqaips6civqo.js", "assets/1f37ef3c-nbgwemra2bus9pl0.js", "assets/d6bb1c02-gc9qm8akqeb8zqe4.js", "assets/41426670-jx2oz51w0q601ja2.js", "assets/450f35ed-oz7ajgbngafp4js6.js", "assets/2227792c-jkqfv88sk1apw736.js", "assets/c2675c8c-h5ybkhdzcoblzzdu.js", "assets/global-modals-lv5n3ujm.css", "assets/37eb5e23-isyyqrxtapi2l4tb.js", "assets/3b813a7d-hmrd9qtqimunl5qj.js", "assets/artifacts-surface-joi9m9cq.css", "assets/7b147ad5-l20vszvnxx5tcqb1.js", "assets/3e7baffa-gf9f0q7t6gykggg5.js", "assets/6882fade-nqoubtmyi0aciw8q.js", "assets/c2b58743-hv0ihjy8uoae58om.js", "assets/03f00d69-gmsem9qq58ci9mew.js", "assets/55904901-g2k7hpqg48l8dn3a.js", "assets/85de7efc-ed5esjervuq2onas.js", "assets/f5cccfb7-omfq28qsvhujhxcn.js", "assets/65f98121-dgkbq78kcvkhx5wu.js", "assets/d326ecc6-m9ykcse4d64o8g88.js", "assets/edc1a985-oc9yxm11mj9ems45.js", "assets/8c1c50db-o1nyas1ah7am52zc.js", "assets/e60f01a5-pdu2gc0n54crsol7.js", "assets/9e958008-j41h94xum1v2asjn.js", "assets/6fd2d070-itafzfuwmykymcb9.js", "assets/page-table-row-d76ll5sg.css"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $0 as n,
+    $nt as r,
+    $p as i,
+    A1 as a,
+    At as o,
+    BU as s,
+    Bat as c,
+    C4 as l,
+    CE as u,
+    Ci as d,
+    Cm as f,
+    Cw as p,
+    Cy as m,
+    Dg as h,
+    Dq as g,
+    Eg as _,
+    F7 as v,
+    Fat as y,
+    Fnt as b,
+    Fp as x,
+    Get as S,
+    Go as C,
+    Ha as w,
+    Hh as T,
+    Hnt as E,
+    Hp as D,
+    IP as O,
+    Im as k,
+    Int as A,
+    Ip as j,
+    Iw as M,
+    JJ as N,
+    JT as P,
+    Jp as F,
+    Jt as I,
+    Ka as L,
+    Kot as R,
+    LN as z,
+    Lo as B,
+    M1 as V,
+    Met as H,
+    Mst as U,
+    Mz as ee,
+    N5 as W,
+    Nh as te,
+    Nm as ne,
+    Nq as re,
+    O1 as ie,
+    Oz as ae,
+    P1 as G,
+    P5 as K,
+    Pat as oe,
+    Ph as se,
+    Pnt as ce,
+    Pw as le,
+    Q0 as ue,
+    QK as de,
+    R1 as fe,
+    RN as pe,
+    Rk as me,
+    S5 as q,
+    Si as he,
+    Sm as ge,
+    Snt as _e,
+    T5 as ve,
+    Tet as ye,
+    Tm as be,
+    Tw as xe,
+    Ua as Se,
+    Uat as Ce,
+    Vh as we,
+    Vk as Te,
+    Wa as Ee,
+    Wat as De,
+    X0 as Oe,
+    X5 as ke,
+    XJ as Ae,
+    Xa as je,
+    Xy as Me,
+    Y5 as J,
+    YT as Ne,
+    Ya as Pe,
+    Ynt as Fe,
+    Z0 as Ie,
+    Z1 as Le,
+    Za as Re,
+    Zy as ze,
+    _T as Be,
+    _tt as Ve,
+    aB as He,
+    aat as Ue,
+    am as We,
+    aq as Ge,
+    bi as Ke,
+    bm as qe,
+    cF as Je,
+    cW as Ye,
+    cm as Xe,
+    cn as Ze,
+    dat as Qe,
+    drt as $e,
+    em as et,
+    eo as tt,
+    fE as nt,
+    fat as rt,
+    fq as it,
+    frt as at,
+    fy as ot,
+    g5 as st,
+    g8 as ct,
+    gat as lt,
+    git as ut,
+    gq as dt,
+    grt as ft,
+    hF as pt,
+    hit as mt,
+    hq as ht,
+    hrt as gt,
+    i0 as _t,
+    iE as vt,
+    iF as Y,
+    iat as yt,
+    iit as bt,
+    ist as xt,
+    jet as St,
+    jz as Ct,
+    k5 as wt,
+    km as Tt,
+    kz as Et,
+    lat as Dt,
+    mE as Ot,
+    mY as kt,
+    mq as At,
+    mrt as jt,
+    ms as Mt,
+    n2 as Nt,
+    nY as Pt,
+    oB as Ft,
+    oE as It,
+    oW as Lt,
+    oct as Rt,
+    oq as zt,
+    pF as Bt,
+    pq as Vt,
+    q1 as Ht,
+    qa as Ut,
+    qot as Wt,
+    r0 as Gt,
+    rY as Kt,
+    rst as qt,
+    sat as Jt,
+    sq as Yt,
+    tm as Xt,
+    tq as Zt,
+    trt as Qt,
+    v5 as $t,
+    vN as en,
+    vW as tn,
+    vY as nn,
+    vm as rn,
+    vs as an,
+    w1 as on,
+    w5 as sn,
+    wnt as cn,
+    x1 as ln,
+    x4 as un,
+    xP as dn,
+    xm as fn,
+    yE as pn,
+    yN as mn,
+    yT as hn,
+    yW as gn,
+    ym as _n,
+    z7 as vn,
+    zU as yn,
+    zk as bn,
+    znt as xn
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    A as Sn,
+    At as Cn,
+    Bn as wn,
+    Ft as Tn,
+    Ht as En,
+    Ln as Dn,
+    N as On,
+    Nn as X,
+    Nt as kn,
+    O as An,
+    On as jn,
+    Ot as Mn,
+    Q as Nn,
+    Rn as Pn,
+    Vn as Fn,
+    Vt as In,
+    W as Ln,
+    bt as Rn,
+    cn as zn,
+    ct as Bn,
+    g as Vn,
+    kt as Hn,
+    l as Un,
+    ln as Wn,
+    p as Gn,
+    s as Kn,
+    wn as qn,
+    xt as Jn,
+    zn as Yn
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $1 as Xn,
+    $5t as Zn,
+    $9t as Qn,
+    $Fn as $n,
+    $Nn as er,
+    $Ot as tr,
+    $Ut as nr,
+    $Wt as rr,
+    AIn as ir,
+    ANn as ar,
+    ANt as or,
+    APt as sr,
+    Ahn as cr,
+    B5t as lr,
+    BNt as ur,
+    BOt as dr,
+    BWt as fr,
+    Bdt as pr,
+    Bxn as mr,
+    CPt as hr,
+    CX as gr,
+    Cft as _r,
+    Cgn as vr,
+    Chn as yr,
+    DCn as br,
+    DIn as xr,
+    DNn as Sr,
+    DNt as Cr,
+    DPt as wr,
+    Dhn as Tr,
+    Dtn as Er,
+    ECn as Dr,
+    ENt as Or,
+    Edn as kr,
+    Ehn as Ar,
+    Eyn as jr,
+    F5t as Mr,
+    FNn as Nr,
+    FNt as Pr,
+    FOt as Fr,
+    FPt as Ir,
+    Ffn as Lr,
+    Fft as Rr,
+    Fgn as zr,
+    G5t as Br,
+    GEt as Vr,
+    GIn as Hr,
+    GNn as Ur,
+    GNt as Wr,
+    GOt as Gr,
+    H5t as Kr,
+    HIn as qr,
+    HNn as Jr,
+    HNt as Yr,
+    HOt as Xr,
+    HPt as Zr,
+    I5t as Qr,
+    IHn as $r,
+    INn as ei,
+    INt as ti,
+    IOt as ni,
+    IUt as ri,
+    Ijt as ii,
+    J5t as ai,
+    J9t as oi,
+    JHt as si,
+    JIn as ci,
+    JNn as li,
+    JWt as ui,
+    Jdt as di,
+    K5t as fi,
+    K9t as pi,
+    KHt as mi,
+    KIn as hi,
+    KNn as gi,
+    KNt as _i,
+    KOt as vi,
+    LHn as yi,
+    LNn as bi,
+    LNt as xi,
+    LOt as Si,
+    LUt as Ci,
+    Ljt as wi,
+    MDt as Ti,
+    MEt as Ei,
+    MNt as Di,
+    MPt as Oi,
+    Mpn as ki,
+    NNn as Ai,
+    NNt as ji,
+    NPt as Mi,
+    Npn as Ni,
+    OIn as Pi,
+    ONt as Fi,
+    OPt as Ii,
+    Ohn as Li,
+    Otn as Ri,
+    P9t as zi,
+    PNn as Bi,
+    PNt as Vi,
+    POt as Hi,
+    PPt as Ui,
+    PUt as Wi,
+    Pyn as Gi,
+    Q5t as Ki,
+    Q9t as qi,
+    QDt as Ji,
+    QHt as Yi,
+    QNn as Xi,
+    QOt as Zi,
+    QUt as Qi,
+    Qm as $i,
+    RHn as ea,
+    RNn as ta,
+    RNt as na,
+    ROt as ra,
+    RPt as ia,
+    RUt as aa,
+    RVt as oa,
+    Rfn as sa,
+    Rgn as ca,
+    SX as la,
+    Sft as ua,
+    Sgn as da,
+    Shn as fa,
+    Stn as pa,
+    TFn as ma,
+    TPt as ha,
+    Tdn as ga,
+    Tft as _a,
+    Thn as va,
+    U5t as ya,
+    U9t as ba,
+    UDt as xa,
+    UIn as Sa,
+    UNt as Ca,
+    UOt as wa,
+    UPt as Ta,
+    V5t as Ea,
+    VNn as Da,
+    VNt as Oa,
+    VOt as ka,
+    VPt as Aa,
+    VWt as ja,
+    Vdt as Ma,
+    W9t as Na,
+    WDt as Pa,
+    WIn as Fa,
+    WNt as Ia,
+    WOt as La,
+    X1 as Ra,
+    X5t as za,
+    X9t as Z,
+    XHt as Ba,
+    XNn as Va,
+    Xdt as Ha,
+    Xm as Ua,
+    Y1 as Wa,
+    Y5t as Ga,
+    Y9t as Ka,
+    YDt as qa,
+    YHt as Ja,
+    YNn as Ya,
+    YOt as Xa,
+    YWt as Za,
+    Ydt as Qa,
+    Ym as $a,
+    Z5t as eo,
+    ZHt as to,
+    ZIn as no,
+    ZNn as ro,
+    ZUt as io,
+    Zm as ao,
+    _7t as oo,
+    _Ft as so,
+    _Ln as co,
+    _Pn as lo,
+    _Pt as uo,
+    _ft as fo,
+    _pt as po,
+    aFn as mo,
+    aFt as ho,
+    aGt as go,
+    aKn as _o,
+    aLn as vo,
+    aUt as yo,
+    aWt as bo,
+    aen as xo,
+    bPn as So,
+    bPt as Co,
+    bUt as wo,
+    bft as To,
+    c as Eo,
+    cEt as Do,
+    cFn as Oo,
+    cLn as ko,
+    cPn as Ao,
+    cUt as jo,
+    cWt as Mo,
+    cen as No,
+    cft as Po,
+    d as Fo,
+    d5t as Io,
+    dGn as Lo,
+    dKn as Ro,
+    dPn as zo,
+    dPt as Bo,
+    dhn as Vo,
+    drn as Ho,
+    e7t as Uo,
+    eFn as Wo,
+    eGt as Go,
+    eUt as Ko,
+    eWt as qo,
+    ekt as Jo,
+    fCn as Yo,
+    fGn as Xo,
+    fPt as Zo,
+    fhn as Qo,
+    g7t as $o,
+    gLn as es,
+    gPn as ts,
+    gPt as ns,
+    gpt as rs,
+    h as is,
+    h4t as as,
+    hPt as os,
+    iEt as ss,
+    iFt as cs,
+    iLn as ls,
+    iUt as us,
+    iWt as ds,
+    ib as fs,
+    ien as ps,
+    ihn as ms,
+    ikt as hs,
+    jDt as gs,
+    jEt as _s,
+    jFn as vs,
+    jNt as ys,
+    jPt as bs,
+    kIn as xs,
+    kNn as Ss,
+    kPt as Cs,
+    khn as ws,
+    lFn as Ts,
+    lGt as Es,
+    lLn as Ds,
+    lPn as Os,
+    lPt as ks,
+    lUt as As,
+    lWt as js,
+    lft as Ms,
+    lhn as Ns,
+    ljt as Ps,
+    m as Fs,
+    m2t as Is,
+    m7t as Ls,
+    mDt as Rs,
+    mPn as zs,
+    mPt as Bs,
+    n7t as Vs,
+    nFn as Hs,
+    nGt as Us,
+    nIn as Ws,
+    nLn as Gs,
+    nSt as Ks,
+    nUt as qs,
+    nWt as Js,
+    nhn as Ys,
+    nkt as Xs,
+    oFn as Zs,
+    oFt as Qs,
+    oGt as $s,
+    oPn as ec,
+    oUt as tc,
+    oen as nc,
+    ojt as rc,
+    orn as ic,
+    p as ac,
+    p2t as oc,
+    pCn as sc,
+    pDt as cc,
+    pPt as lc,
+    pUt as uc,
+    q5t as dc,
+    qEt as fc,
+    qHt as pc,
+    qNn as mc,
+    qNt as hc,
+    qOt as gc,
+    rEt as _c,
+    rFn as vc,
+    rFt as yc,
+    rGt as bc,
+    rIn as xc,
+    rLn as Sc,
+    rPn as Cc,
+    rSt as wc,
+    rUt as Tc,
+    rWt as Ec,
+    rb as Dc,
+    rhn as Oc,
+    s as kc,
+    sEt as Ac,
+    sFn as jc,
+    sGt as Mc,
+    sLn as Nc,
+    sPn as Pc,
+    sPt as Fc,
+    sUt as Ic,
+    sWt as Lc,
+    sen as Rc,
+    sft as zc,
+    t0 as Bc,
+    t7t as Vc,
+    tGt as Hc,
+    tKn as Uc,
+    tLn as Wc,
+    tWt as Gc,
+    ten as Kc,
+    thn as qc,
+    tkt as Jc,
+    u5t as Yc,
+    uGt as Xc,
+    uKn as Zc,
+    uPn as Qc,
+    uPt as $c,
+    uhn as el,
+    vFt as tl,
+    vPn as nl,
+    vft as rl,
+    vgn as il,
+    vpt as al,
+    w4t as ol,
+    wNn as sl,
+    wft as cl,
+    wgn as ll,
+    whn as ul,
+    wtn as dl,
+    xNn as fl,
+    xft as pl,
+    xhn as ml,
+    yPn as hl,
+    yPt as gl,
+    yft as _l,
+    ygn as vl,
+    ypt as yl,
+    z5t as bl,
+    z9t as xl,
+    zNt as Sl,
+    zOt as Cl,
+    zPt as wl,
+    zUt as Tl,
+    zVt as El,
+    zft as Dl,
+    zxn as Ol
+} from "./conversation-small-nmt18uiom3b14vca.js";
+import {
+    $g as kl,
+    $p as Al,
+    $v as jl,
+    Ax as Ml,
+    By as Nl,
+    Cb as Pl,
+    Cx as Fl,
+    DC as Il,
+    DS as Ll,
+    Dp as Rl,
+    EC as zl,
+    Ep as Bl,
+    Fp as Vl,
+    Fv as Hl,
+    Gp as Ul,
+    Hp as Wl,
+    Iv as Gl,
+    Jp as Kl,
+    Kb as ql,
+    Km as Jl,
+    Kp as Yl,
+    Lv as Xl,
+    Mp as Zl,
+    Mv as Ql,
+    Mx as $l,
+    Ng as eu,
+    Np as tu,
+    Nv as nu,
+    Nx as ru,
+    OS as iu,
+    Op as au,
+    Pg as ou,
+    Pp as su,
+    Pv as cu,
+    Px as lu,
+    Qg as uu,
+    Qp as du,
+    Qv as fu,
+    Rm as pu,
+    Sx as mu,
+    TC as hu,
+    Tp as gu,
+    Up as _u,
+    VS as vu,
+    Vy as yu,
+    Wp as bu,
+    Xp as xu,
+    Yp as Su,
+    Zp as Cu,
+    _g as wu,
+    _p as Tu,
+    aS as Eu,
+    bS as Du,
+    dS as Ou,
+    eb as ku,
+    ey as Au,
+    fh as ju,
+    gS as Mu,
+    hv as Nu,
+    iS as Pu,
+    jx as Fu,
+    kp as Iu,
+    kx as Lu,
+    mS as Ru,
+    mv as zu,
+    nS as Bu,
+    oC as Vu,
+    oy as Hu,
+    ph as Uu,
+    qb as Wu,
+    qm as Gu,
+    qp as Ku,
+    rS as qu,
+    sC as Ju,
+    sy as Yu,
+    tb as Xu,
+    ty as Zu,
+    uS as Qu,
+    vg as $u,
+    vv as ed,
+    wC as td,
+    wb as nd,
+    wp as rd,
+    yS as id,
+    yp as ad,
+    yv as od,
+    zS as sd,
+    zm as cd
+} from "./30901919-niqyapppecmq5jkn.js";
+import {
+    Ex as ld,
+    Fx as ud,
+    Ix as dd,
+    Mx as fd,
+    Nx as pd,
+    Ox as md,
+    Px as hd,
+    jx as gd,
+    kx as _d
+} from "./c2675c8c-h5ybkhdzcoblzzdu.js";
+import {
+    S as vd,
+    x as yd
+} from "./82782bc9-g3liom11amtlr9kq.js";
+import {
+    $d as bd,
+    Ab as xd,
+    Am as Sd,
+    Cb as Cd,
+    Cm as wd,
+    Db as Td,
+    E_ as Ed,
+    Eb as Dd,
+    Em as Od,
+    Fb as kd,
+    Gn as Ad,
+    Hd as jd,
+    Hp as Md,
+    Jd as Nd,
+    Jy as Pd,
+    Kn as Fd,
+    Lb as Id,
+    Ld,
+    Ly as Rd,
+    Mb as zd,
+    Nb as Bd,
+    Ob as Vd,
+    Pb as Hd,
+    Qc as Ud,
+    Qd as Wd,
+    Qg as Gd,
+    Rd as Kd,
+    Sf as qd,
+    Sm as Jd,
+    T_ as Yd,
+    Tb as Xd,
+    Tm as Zd,
+    Vd as Qd,
+    Vp as $d,
+    Wy as ef,
+    Xd as tf,
+    Yd as nf,
+    Yy as rf,
+    Zd as af,
+    Zg as of,
+    _ as sf,
+    af as cf,
+    am as lf,
+    bf as uf,
+    bl as df,
+    bm as ff,
+    c as pf,
+    cc as mf,
+    cm as hf,
+    dm as gf,
+    ed as _f,
+    ef as vf,
+    eg as yf,
+    em as bf,
+    ff as xf,
+    fm as Sf,
+    gf as Cf,
+    hb as wf,
+    hc as Tf,
+    hf as Ef,
+    ib as Df,
+    if as Of,
+    im as kf,
+    jb as Af,
+    kb as jf,
+    km as Mf,
+    l as Nf,
+    lf as Pf,
+    lm as Ff,
+    mc as If,
+    mf as Lf,
+    nb as Rf,
+    nd as zf,
+    nf as Bf,
+    ng as Vf,
+    nm as Hf,
+    oc as Uf,
+    of as Wf,
+    om as Gf,
+    pb as Kf,
+    pc as qf,
+    pf as Jf,
+    qg as Yf,
+    qy as Xf,
+    r_ as Zf,
+    rb as Qf,
+    rf as $f,
+    rg as ep,
+    rl as tp,
+    rm as np,
+    sb as rp,
+    tb as ip,
+    tf as ap,
+    tl as op,
+    tm as sp,
+    uf as cp,
+    um as lp,
+    v as up,
+    vb as dp,
+    vf as fp,
+    w_ as pp,
+    xf as mp,
+    xl as hp,
+    yb as gp,
+    yl as _p,
+    ym as vp
+} from "./8b34dbc2-ojcl97ddvu2212q0.js";
+import {
+    at as yp,
+    ot as bp
+} from "./c470f5ab-uuoa2gfm4goj6p9f.js";
+import {
+    n as xp,
+    t as Sp
+} from "./9f7bb6d3-kkboxm9lulg7ha3p.js";
+import {
+    c as Cp,
+    n as wp,
+    o as Tp,
+    t as Ep
+} from "./f61cfa0c-bkubnnxe08nffno7.js";
+import {
+    c as Dp,
+    i as Op,
+    l as kp,
+    n as Ap,
+    r as jp
+} from "./9e958008-j41h94xum1v2asjn.js";
+import {
+    i as Mp,
+    n as Np,
+    r as Pp,
+    t as Fp
+} from "./8e5b4beb-ka7p5r92s7vu5os0.js";
+import {
+    a as Ip,
+    i as Lp,
+    n as Rp,
+    o as zp,
+    t as Bp
+} from "./f3a2e2fc-fejl1h9pe7da2tig.js";
+import {
+    n as Vp,
+    r as Hp
+} from "./3cf4f9ac-o7yp6nyq41xpck0e.js";
+import {
+    a as Up,
+    c as Wp,
+    i as Gp,
+    l as Kp,
+    n as qp,
+    o as Jp,
+    r as Yp,
+    s as Xp,
+    t as Zp
+} from "./3a7c78f6-eofsbvvn2eiroox9.js";
+import {
+    r as Qp,
+    t as $p
+} from "./6d8daa76-bf3l2ubxblsgddf6.js";
+import {
+    a as em,
+    i as tm,
+    n as nm,
+    o as rm,
+    r as im,
+    s as am,
+    t as om
+} from "./eed8f529-gmvnsyqoh95eoqrj.js";
+import {
+    n as sm,
+    t as cm
+} from "./429593da-owribwtekyv6ewkb.js";
+import {
+    a as lm,
+    c as um,
+    i as dm,
+    l as fm,
+    o as pm,
+    r as mm,
+    s as hm,
+    t as gm,
+    u as _m
+} from "./37eb5e23-isyyqrxtapi2l4tb.js";
+import {
+    i as vm,
+    n as ym,
+    t as bm
+} from "./fdefd9fe-e68be46ps8zfqnei.js";
+import {
+    n as xm,
+    r as Sm
+} from "./84bcef95-env99xsd0s1y2c3w.js";
+import {
+    C as Cm,
+    S as wm,
+    T as Tm,
+    _ as Em,
+    a as Dm,
+    b as Om,
+    c as km,
+    d as Am,
+    f as jm,
+    g as Mm,
+    h as Nm,
+    i as Pm,
+    l as Fm,
+    m as Im,
+    n as Lm,
+    o as Rm,
+    p as zm,
+    r as Bm,
+    s as Vm,
+    t as Hm,
+    u as Um,
+    v as Wm,
+    w as Gm,
+    x as Km,
+    y as qm
+} from "./ad8b328d-dr92kqhkf22qazq5.js";
+import {
+    n as Jm,
+    t as Ym
+} from "./3b813a7d-hmrd9qtqimunl5qj.js";
+import {
+    a as Xm,
+    i as Zm,
+    n as Qm,
+    o as $m,
+    r as eh,
+    t as th
+} from "./8c1c50db-o1nyas1ah7am52zc.js";
+import {
+    n as nh,
+    t as rh
+} from "./02cd0121-d6cv8sx0jvb92shv.js";
+import {
+    a as ih,
+    i as ah,
+    n as oh,
+    o as sh,
+    r as ch,
+    t as lh
+} from "./e60f01a5-pdu2gc0n54crsol7.js";
+import {
+    a as uh,
+    i as dh,
+    n as fh,
+    o as ph,
+    r as mh,
+    t as hh
+} from "./71279aa0-h0lww9okw9jtqzcj.js";
+import {
+    n as gh,
+    t as _h
+} from "./bc9edb57-n8bxky23p6vtq2u8.js";
+import {
+    a as vh,
+    c as yh,
+    d as bh,
+    i as xh,
+    l as Sh,
+    n as Ch,
+    o as wh,
+    r as Th,
+    s as Eh,
+    t as Dh,
+    u as Oh
+} from "./2227792c-jkqfv88sk1apw736.js";
+import {
+    i as kh,
+    r as Ah
+} from "./181180d3-oup2xqaips6civqo.js";
+import {
+    n as jh,
+    t as Mh
+} from "./f8da09fd-lcyp6v4yxpvh2vlf.js";
+import {
+    n as Nh,
+    t as Ph
+} from "./a31a7ba0-e2vv1zffglrfbqcu.js";
+import {
+    a as Fh,
+    o as Ih,
+    r as Lh,
+    t as Rh
+} from "./ede2e481-ewcqxgsmnjqfnla3.js";
+import {
+    A as zh,
+    D as Bh,
+    M as Vh,
+    N as Hh,
+    T as Uh,
+    y as Wh
+} from "./3acfc0b4-cob5pdb2ze1ekxv0.js";
+import {
+    a as Gh,
+    c as Kh,
+    i as qh,
+    l as Jh,
+    n as Yh,
+    o as Xh,
+    r as Zh,
+    s as Qh,
+    t as $h
+} from "./55904901-g2k7hpqg48l8dn3a.js";
+import {
+    r as eg,
+    t as tg
+} from "./1f37ef3c-nbgwemra2bus9pl0.js";
+import {
+    a as ng,
+    c as rg,
+    d as ig,
+    f as ag,
+    p as og,
+    r as sg,
+    s as cg,
+    u as lg
+} from "./90484768-e2lztr3h15fqwmny.js";
+import {
+    a as ug,
+    i as dg,
+    n as fg,
+    o as pg,
+    r as mg,
+    t as hg
+} from "./8ae7e063-h8p27x6u3v358c0e.js";
+import {
+    a as gg,
+    i as _g,
+    r as vg,
+    t as yg
+} from "./3e7baffa-gf9f0q7t6gykggg5.js";
+import {
+    i as bg,
+    t as xg
+} from "./accdf855-onyad413h7zvdrpz.js";
+import {
+    n as Sg,
+    t as Cg
+} from "./01fef440-dzztia4248zbgd54.js";
+import {
+    n as wg,
+    t as Tg
+} from "./70f18efa-nmttel16r0nxvawu.js";
+import {
+    n as Eg,
+    r as Dg,
+    t as Og
+} from "./02df22f1-arev7modsrk94112.js";
+import {
+    n as kg,
+    t as Ag
+} from "./b65ffe0c-fqvzxczbbbrxjblm.js";
+import {
+    n as jg,
+    t as Mg
+} from "./25afeb5a-g2peh2slwzdkzfpk.js";
+import {
+    t as Ng
+} from "./20a8d32f-f9jcwi2z4c41qzxg.js";
+import {
+    n as Pg,
+    t as Fg
+} from "./24fd10e2-j67dca1y0285q56b.js";
+import {
+    n as Ig,
+    t as Lg
+} from "./9302b335-gu6fsezjhzanrdx5.js";
+import {
+    n as Rg,
+    t as zg
+} from "./cc1aa8e1-oanp5zccp6s8hskt.js";
+import {
+    n as Bg,
+    t as Vg
+} from "./7bd2b610-n5wikybh9tdp7tmg.js";
+
+function Hg(e, t) {
+    return t.libraryFileId == null ? void 0 : af(e, t.libraryFileId)
+}
+
+function Ug({
+    artifact: e,
+    composerController: t,
+    fileReference: n,
+    ...r
+}) {
+    let i = If(t);
+    qf(i), Rp({
+        ...r,
+        artifact: e,
+        favoritesAnalyticsSource: `library`,
+        fileId: n.fileId,
+        libraryFileId: $c(e) ? void 0 : e.libraryFileId,
+        fileName: n.fileName,
+        mimeType: n.mimeType,
+        sizeBytes: n.sizeBytes,
+        fullscreenShellEnabled: !0,
+        onClose: () => qf(i)
+    })
+}
+
+function Wg(e, t, n) {
+    let r = _n(e);
+    if (r == null) {
+        n();
+        return
+    }
+    let i = Fp({
+            actor: `recipient`,
+            libraryFileId: r,
+            resourceKind: `folder`,
+            shareSessionId: t
+        }),
+        a = Np();
+    Mp(i, {
+        action: `open_shared_item`,
+        operationId: a,
+        outcome: `started`
+    });
+    try {
+        n(), Mp(i, {
+            action: `open_shared_item`,
+            operationId: a,
+            outcome: `succeeded`
+        })
+    } catch (e) {
+        throw Mp(i, {
+            action: `open_shared_item`,
+            error: e,
+            operationId: a,
+            outcome: `failed`
+        }), e
+    }
+}
+
+function Gg(e, t, n) {
+    if (t == null || $c(e)) return () => {};
+    let r = Fp({
+            actor: `recipient`,
+            libraryFileId: t,
+            resourceKind: `file`,
+            shareSessionId: n
+        }),
+        i = Np();
+    Mp(r, {
+        action: `open_shared_item`,
+        operationId: i,
+        outcome: `started`
+    });
+    let a = !1;
+    return (e, t) => {
+        a || (a = !0, Mp(r, {
+            action: `open_shared_item`,
+            error: t,
+            operationId: i,
+            outcome: e
+        }))
+    }
+}
+async function Kg({
+    artifact: e,
+    composerController: t,
+    analyticsSession: n,
+    onDelete: r,
+    onDownload: i,
+    onError: a,
+    onOpened: o,
+    previewOpen: s,
+    shareSessionId: c,
+    sharedLibraryFileId: l,
+    signal: u
+}) {
+    let d = Gg(e, l, c),
+        f = e => {
+            d(`failed`, e), a(e)
+        };
+    if (await qp(e, t, {
+            analyticsSession: n,
+            onDelete: r,
+            onDownload: i,
+            onError: f,
+            onOpened: o,
+            readOnly: r == null,
+            setArtifactMaterializing: s.setMaterializing,
+            sharedLibraryFileId: l,
+            signal: u
+        })) {
+        d(u.aborted ? `canceled` : `succeeded`);
+        return
+    }
+    let {
+        fileReference: p,
+        resolveFileReference: m
+    } = await Lp({
+        artifact: e,
+        onError: f,
+        resolveFileReference: () => s.getFileReference(e, {
+            indexForRetrieval: $c(e)
+        }),
+        signal: u
+    });
+    if (p == null) {
+        d(u.aborted ? `canceled` : `failed`);
+        return
+    }
+    return {
+        fileReference: p,
+        onOpened: () => {
+            d(`succeeded`), o?.()
+        },
+        resolveFileReference: m
+    }
+}
+var qg = e((() => {
+    Tf(), Pp(), Bp(), Bo(), cf(), fn(), Zp()
+}));
+
+function Jg(e) {
+    return e.current = {
+        operationId: globalThis.crypto.randomUUID(),
+        startedAtMs: globalThis.performance.now()
+    }, e.current
+}
+
+function Yg(e) {
+    return e.current ?? Jg(e)
+}
+
+function Xg({
+    analyticsSession: e,
+    state: t,
+    viewMode: n,
+    isNewEntry: r,
+    hasViewChanged: i
+}) {
+    t.isActive = !0, t.viewMode = n;
+    let a = t.current != null && t.pendingEntryOperationId === t.current.operationId,
+        o = i || r && !a ? Jg(t) : Yg(t);
+    return t.pendingEntryOperationId = void 0, r && t.hasShown && e != null && t.lastEntryOperationId !== o.operationId && (t.lastEntryOperationId = o.operationId, Vd({
+        analyticsSession: e,
+        category: Sr.CHATGPT_FILE_LIBRARY_CATEGORY_FAVORITES,
+        layout: n === `grid` ? bi.CHATGPT_FILE_LIBRARY_LAYOUT_GRID : bi.CHATGPT_FILE_LIBRARY_LAYOUT_LIST,
+        libraryOrigin: Pd,
+        operationId: o.operationId
+    })), () => {
+        t.isActive = !1
+    }
+}
+
+function Zg({
+    analyticsSession: e,
+    state: t,
+    visibleItemCount: n
+}) {
+    let r = t.current;
+    if (r == null || r.operationId === t.lastResultsOperationId) return;
+    let i = !1;
+    return queueMicrotask(() => {
+        i || !t.isActive || t.current !== r || t.lastResultsOperationId === r.operationId || (t.lastResultsOperationId = r.operationId, Td({
+            analyticsSession: e,
+            category: Sr.CHATGPT_FILE_LIBRARY_CATEGORY_FAVORITES,
+            latencyMs: globalThis.performance.now() - r.startedAtMs,
+            operationId: r.operationId,
+            visibleItemCount: n
+        }))
+    }), () => {
+        i = !0
+    }
+}
+
+function Qg(e) {
+    return e.current != null && e.current.operationId === e.lastResultsOperationId ? Jg(e) : Yg(e)
+}
+
+function $g({
+    accountUserId: e,
+    analyticsSession: t,
+    queryClient: n,
+    viewState: r
+}) {
+    let i = wt(Bf(e)),
+        a = {
+            analyticsSession: t,
+            category: Sr.CHATGPT_FILE_LIBRARY_CATEGORY_FAVORITES,
+            libraryOrigin: Pd
+        },
+        o;
+    return n.getQueryCache().subscribe(e => {
+        if (e.query.queryHash === i) {
+            if (e.type === `removed`) {
+                o = void 0;
+                return
+            }
+            if (e.type === `updated`) {
+                if (e.action.type === `fetch`) {
+                    o = {
+                        operationId: globalThis.crypto.randomUUID(),
+                        startedAtMs: globalThis.performance.now(),
+                        loadType: e.query.state.fetchMeta?.fetchMore?.direction === `forward` ? `append` : `refresh`
+                    }, Qg(r), Kf({
+                        ...a,
+                        loadType: o.loadType,
+                        operationId: o.operationId
+                    });
+                    return
+                }
+                if (o != null)
+                    if (e.action.type === `success` && e.action.manual !== !0) {
+                        let t = o;
+                        o = void 0;
+                        let r = n.getQueryData(e.query.queryKey);
+                        Kf({
+                            ...a,
+                            loadType: t.loadType,
+                            operationId: t.operationId,
+                            latencyMs: globalThis.performance.now() - t.startedAtMs,
+                            itemCount: r?.pages.reduce((e, t) => e + t.items.length, 0) ?? 0,
+                            success: !0
+                        })
+                    } else if (e.action.type === `error`) {
+                    let t = o;
+                    if (o = void 0, Ln(e.action.error)) return;
+                    Kf({
+                        ...a,
+                        loadType: t.loadType,
+                        operationId: t.operationId,
+                        latencyMs: globalThis.performance.now() - t.startedAtMs,
+                        errorType: Xf,
+                        error: Df(e.action.error),
+                        success: !1
+                    })
+                } else e.action.type === `setState` && e.query.state.fetchStatus === `idle` && (o = void 0)
+            }
+        }
+    })
+}
+var e_, t_, n_ = e((() => {
+    rp(), cf(), ve(), Id(), Kn(), e_ = t(Fn()), t_ = (0, e_.createContext)(null)
+}));
+
+function r_(e) {
+    "use forget";
+    let t = (0, o_.c)(26),
+        {
+            analyticsSession: n,
+            artifacts: r,
+            managementDeleteVisible: i,
+            directoryId: a,
+            folders: o,
+            getSearchQueryId: s,
+            hasActiveSearch: c,
+            hasFilters: l,
+            isDeleted: u,
+            isReady: d,
+            isStorageManagement: f,
+            libraryOrigin: p,
+            provider: m,
+            resultRevision: h,
+            selected: g,
+            visibleItemCount: _
+        } = e,
+        v = (0, s_.useRef)(null),
+        y = (0, s_.useRef)(null),
+        b = (0, s_.useRef)(!1),
+        x, S;
+    t[0] !== n || t[1] !== u || t[2] !== f || t[3] !== p || t[4] !== m || t[5] !== g ? (x = () => {
+        let e = {
+                isDeleted: u,
+                isStorageManagement: f,
+                selected: g
+            },
+            t = v.current;
+        v.current = e;
+        let r = e => {
+            zd({
+                analyticsSession: n,
+                libraryOrigin: p,
+                provider: m,
+                section: e
+            })
+        };
+        if (t == null) {
+            u ? r(Ya.CHATGPT_FILE_LIBRARY_SECTION_RECENTLY_DELETED) : f && r(Ya.CHATGPT_FILE_LIBRARY_SECTION_STORAGE_MANAGEMENT);
+            return
+        }!t.isDeleted && u ? r(Ya.CHATGPT_FILE_LIBRARY_SECTION_RECENTLY_DELETED) : !t.isStorageManagement && f && r(Ya.CHATGPT_FILE_LIBRARY_SECTION_STORAGE_MANAGEMENT), t.selected !== g && Bd({
+            analyticsSession: n,
+            libraryOrigin: p,
+            provider: m,
+            selectionMode: g ? ro.CHATGPT_FILE_LIBRARY_SELECTION_MODE_MANAGEMENT : ro.CHATGPT_FILE_LIBRARY_SELECTION_MODE_NONE
+        })
+    }, S = [n, u, f, p, m, g], t[0] = n, t[1] = u, t[2] = f, t[3] = p, t[4] = m, t[5] = g, t[6] = x, t[7] = S) : (x = t[6], S = t[7]), (0, s_.useEffect)(x, S);
+    let C, w;
+    t[8] !== n || t[9] !== a || t[10] !== s || t[11] !== c || t[12] !== l || t[13] !== u || t[14] !== d || t[15] !== m || t[16] !== h || t[17] !== _ ? (C = () => {
+        if (!d) return;
+        let e = c ? s?.() : void 0,
+            t = e != null,
+            r = [h, a ?? `root`, c, l, u, e ?? `none`, _, m ?? `none`].join(`:`);
+        if (y.current === r) return;
+        y.current = r;
+        let i = _ > 0 ? void 0 : t ? ar.CHATGPT_FILE_LIBRARY_EMPTY_REASON_QUERY_NO_MATCH : l ? ar.CHATGPT_FILE_LIBRARY_EMPTY_REASON_FILTER : a == null ? ar.CHATGPT_FILE_LIBRARY_EMPTY_REASON_NO_LIBRARY_FILES : ar.CHATGPT_FILE_LIBRARY_EMPTY_REASON_EMPTY_FOLDER;
+        Td({
+            analyticsSession: n,
+            emptyReason: i,
+            provider: m,
+            searchQueryId: e,
+            visibleItemCount: _
+        })
+    }, w = [n, a, s, c, l, u, d, m, h, _], t[8] = n, t[9] = a, t[10] = s, t[11] = c, t[12] = l, t[13] = u, t[14] = d, t[15] = m, t[16] = h, t[17] = _, t[18] = C, t[19] = w) : (C = t[18], w = t[19]), (0, s_.useEffect)(C, w);
+    let T, E;
+    return t[20] !== n || t[21] !== r || t[22] !== o || t[23] !== i ? (T = () => {
+        if (!i) {
+            b.current = !1;
+            return
+        }
+        b.current || (b.current = !0, lf({
+            analyticsSession: n,
+            folderIds: o.map(a_),
+            libraryFileIds: r.flatMap(i_)
+        }))
+    }, E = [n, r, i, o], t[20] = n, t[21] = r, t[22] = o, t[23] = i, t[24] = T, t[25] = E) : (T = t[24], E = t[25]), (0, s_.useEffect)(T, E), null
+}
+
+function i_(e) {
+    return e.libraryFileId == null ? [] : [e.libraryFileId]
+}
+
+function a_(e) {
+    let {
+        id: t
+    } = e;
+    return t
+}
+var o_, s_, c_ = e((() => {
+        o_ = qn(), rp(), np(), Id(), s_ = t(Fn())
+    })),
+    l_, u_, d_ = e((() => {
+        l_ = t(Fn()), u_ = (0, l_.createContext)(null)
+    })),
+    f_, p_ = e((() => {
+        ws(), Li(), Ar(), ul(), fa(), Vo(), Ns(), Oc(), qc(), f_ = cr({
+            id: `library-file-actions`,
+            icons: {
+                download: {
+                    normal: va,
+                    small: Tr
+                },
+                edit: {
+                    normal: el,
+                    small: Qo
+                },
+                share: {
+                    normal: ml,
+                    small: yr
+                },
+                trash: {
+                    normal: Ys,
+                    small: ms
+                }
+            }
+        })
+    }));
+
+function m_() {
+    return Fe(h_)
+}
+var h_, g_ = e((() => {
+        Qt(), h_ = `1609070199`
+    })),
+    __, v_, y_, b_, x_ = e((() => {
+        __ = qn(), Kl(), Yl(), bu(), Wl(), ke(), v_ = wn(), y_ = {
+            grid: {
+                place: Su,
+                product: _u
+            },
+            list: {
+                place: Ku,
+                product: Ul
+            }
+        }, b_ = e => {
+            "use forget";
+            let t = (0, __.c)(8),
+                {
+                    kind: n,
+                    surface: r,
+                    className: i
+                } = e,
+                a = y_[r][n],
+                o = r === `list` ? `h-5 w-5` : `h-12 w-12`,
+                s;
+            t[0] !== i || t[1] !== o ? (s = J(`inline-flex shrink-0 [&>.icon]:size-full`, o, i), t[0] = i, t[1] = o, t[2] = s) : s = t[2];
+            let c;
+            t[3] === a ? c = t[4] : (c = (0, v_.jsx)(a, {
+                className: `icon`
+            }), t[3] = a, t[4] = c);
+            let l;
+            return t[5] !== s || t[6] !== c ? (l = (0, v_.jsx)(`span`, {
+                "aria-hidden": `true`,
+                className: s,
+                children: c
+            }), t[5] = s, t[6] = c, t[7] = l) : l = t[7], l
+        }
+    })),
+    S_, C_, w_, T_, E_, D_, O_, k_, A_, j_, M_ = e((() => {
+        S_ = `xDcpsG_accountAnnotation`, C_ = `xDcpsG_accountName`, w_ = `xDcpsG_annotatedFileTitle`, T_ = `xDcpsG_dropTarget`, E_ = `xDcpsG_dropTargetRow`, D_ = `xDcpsG_fileRow`, O_ = `xDcpsG_rowItem`, k_ = `xDcpsG_rowSelectionGroupMergeWithNext`, A_ = `xDcpsG_rowSelectionGroupMergeWithPrevious`, j_ = {
+            accountAnnotation: S_,
+            accountName: C_,
+            annotatedFileTitle: w_,
+            dropTarget: T_,
+            dropTargetRow: E_,
+            fileRow: D_,
+            rowItem: O_,
+            rowSelectionGroupMergeWithNext: k_,
+            rowSelectionGroupMergeWithPrevious: A_
+        }
+    }));
+
+function N_(e, t) {
+    return `${e.replaceAll(`/`,`-`).trim()||`deep-research-report`}.${t===`markdown`?`md`:t}`
+}
+async function P_(e, t, n) {
+    let r = N_(t, n);
+    if (n === `markdown`) {
+        let t = await ym(e);
+        Dr(new Blob([t.attachment_content], {
+            type: `text/markdown;charset=utf-8`
+        }), r);
+        return
+    }
+    let i = await bm(e, `export`, {
+            export_type: n
+        }),
+        a = i.meta?.encoded_data,
+        o = i.meta?.content_disposition;
+    if (i.isError || typeof a != `string` || o != null && typeof o != `string`) throw Error(`Deep research report export returned an invalid response`);
+    let s = n === `pdf` ? `application/pdf` : `application/vnd.openxmlformats-officedocument.wordprocessingml.document`,
+        c = Yo(o ?? null) ?? r;
+    Dr(new Blob([be(a)], {
+        type: s
+    }), c)
+}
+
+function F_(e) {
+    "use forget";
+    let t = (0, I_.c)(27),
+        {
+            libraryFileId: n,
+            fileName: r,
+            disabled: i,
+            itemClassName: a
+        } = e,
+        o = Yn(),
+        s, c, l, u, d;
+    if (t[0] !== i || t[1] !== r || t[2] !== o || t[3] !== a || t[4] !== n) {
+        let e = yn(),
+            f = t => {
+                P_(n, r, t).catch(t => {
+                    e.danger(o.formatMessage(R_.downloadFailed), {
+                        error: t
+                    })
+                })
+            };
+        l = yi.Sub;
+        let p;
+        t[10] === a ? p = t[11] : (p = J(`keyboard-focused:focus-ring`, `text-token-text-primary`, a), t[10] = a, t[11] = p);
+        let m, h;
+        t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, L_.jsx)(ku, {
+            "aria-hidden": `true`,
+            className: `icon`
+        }), h = (0, L_.jsx)(X, {
+            ...R_.download
+        }), t[12] = m, t[13] = h) : (m = t[12], h = t[13]), t[14] !== i || t[15] !== p ? (d = (0, L_.jsx)(yi.SubMenuTrigger, {
+            size: `large`,
+            disabled: i,
+            className: p,
+            icon: m,
+            children: h
+        }), t[14] = i, t[15] = p, t[16] = d) : d = t[16], c = yi.Portal, s = yi.SubContent, u = z_.map(e => (0, L_.jsx)(yi.Item, {
+            size: `large`,
+            className: `keyboard-focused:focus-ring text-token-text-primary`,
+            label: (0, L_.jsx)(X, {
+                ...e.message
+            }),
+            onSelect: () => {
+                f(e.type)
+            }
+        }, e.type)), t[0] = i, t[1] = r, t[2] = o, t[3] = a, t[4] = n, t[5] = s, t[6] = c, t[7] = l, t[8] = u, t[9] = d
+    } else s = t[5], c = t[6], l = t[7], u = t[8], d = t[9];
+    let f;
+    t[17] !== s || t[18] !== u ? (f = (0, L_.jsx)(s, {
+        children: u
+    }), t[17] = s, t[18] = u, t[19] = f) : f = t[19];
+    let p;
+    t[20] !== c || t[21] !== f ? (p = (0, L_.jsx)(c, {
+        children: f
+    }), t[20] = c, t[21] = f, t[22] = p) : p = t[22];
+    let m;
+    return t[23] !== l || t[24] !== d || t[25] !== p ? (m = (0, L_.jsxs)(l, {
+        children: [d, p]
+    }), t[23] = l, t[24] = d, t[25] = p, t[26] = m) : m = t[26], m
+}
+var I_, L_, R_, z_, B_ = e((() => {
+    I_ = qn(), ea(), Xu(), vm(), s(), Tt(), br(), sc(), ke(), Pn(), L_ = wn(), R_ = Dn({
+        download: {
+            id: `artifacts.deep_research.actions.download`,
+            defaultMessage: `Download`
+        },
+        exportMarkdown: {
+            id: `artifacts.deep_research.actions.export_markdown`,
+            defaultMessage: `Export to Markdown`
+        },
+        exportDocx: {
+            id: `artifacts.deep_research.actions.export_docx`,
+            defaultMessage: `Export to Word`
+        },
+        exportPdf: {
+            id: `artifacts.deep_research.actions.export_pdf`,
+            defaultMessage: `Export to PDF`
+        },
+        downloadFailed: {
+            id: `artifacts.deep_research.actions.download_failed`,
+            defaultMessage: `Failed to download report.`
+        }
+    }), z_ = [{
+        type: `markdown`,
+        message: R_.exportMarkdown
+    }, {
+        type: `docx`,
+        message: R_.exportDocx
+    }, {
+        type: `pdf`,
+        message: R_.exportPdf
+    }]
+}));
+
+function V_(e, t) {
+    let n = `${gv}/${encodeURIComponent(e)}/${t}`;
+    return new URL(n, window.location.origin).toString()
+}
+
+function H_(e, t) {
+    return t == null || t === `` ? `-` : typeof t == `boolean` ? e.formatMessage(t ? hv.trueValue : hv.falseValue) : String(t)
+}
+
+function U_(e) {
+    "use forget";
+    let t = (0, pv.c)(7),
+        {
+            label: n,
+            value: r
+        } = e,
+        i;
+    t[0] === n ? i = t[1] : (i = (0, Q.jsx)(`div`, {
+        className: `text-token-text-tertiary`,
+        children: n
+    }), t[0] = n, t[1] = i);
+    let a;
+    t[2] === r ? a = t[3] : (a = (0, Q.jsx)(`div`, {
+        className: `text-token-text-primary min-w-0 break-all`,
+        children: r
+    }), t[2] = r, t[3] = a);
+    let o;
+    return t[4] !== i || t[5] !== a ? (o = (0, Q.jsxs)(`div`, {
+        className: `grid gap-1 text-sm sm:grid-cols-[180px_minmax(0,1fr)]`,
+        children: [i, a]
+    }), t[4] = i, t[5] = a, t[6] = o) : o = t[6], o
+}
+
+function W_(e) {
+    "use forget";
+    let t = (0, pv.c)(2),
+        {
+            url: n
+        } = e;
+    if (n == null || n.length === 0) return `-`;
+    let r;
+    return t[0] === n ? r = t[1] : (r = (0, Q.jsx)(`a`, {
+        href: n,
+        target: `_blank`,
+        rel: `noreferrer`,
+        className: `text-token-text-primary underline`,
+        children: n
+    }), t[0] = n, t[1] = r), r
+}
+
+function G_(e) {
+    return `file-debug-${e}-tab`
+}
+
+function K_(e) {
+    return `file-debug-${e}-panel`
+}
+
+function q_(e) {
+    return [`focus-visible:ring-token-ring flex h-10 items-center justify-center rounded-full border px-5 text-base leading-5 font-medium transition-colors focus-visible:ring-2 focus-visible:outline-none`, e ? `border-token-border-default bg-token-bg-secondary/40 text-token-text-primary` : `border-transparent bg-transparent text-token-text-secondary can-hover:hover:bg-token-bg-secondary/40 can-hover:hover:text-token-text-primary`].join(` `)
+}
+
+function J_(e) {
+    "use forget";
+    let t = (0, pv.c)(16),
+        {
+            activeTab: n,
+            children: r,
+            onSelect: i,
+            tab: a
+        } = e,
+        o = n === a,
+        s;
+    t[0] === a ? s = t[1] : (s = G_(a), t[0] = a, t[1] = s);
+    let c;
+    t[2] === a ? c = t[3] : (c = K_(a), t[2] = a, t[3] = c);
+    let l;
+    t[4] === o ? l = t[5] : (l = q_(o), t[4] = o, t[5] = l);
+    let u;
+    t[6] !== i || t[7] !== a ? (u = () => {
+        i(a)
+    }, t[6] = i, t[7] = a, t[8] = u) : u = t[8];
+    let d;
+    return t[9] !== r || t[10] !== o || t[11] !== s || t[12] !== c || t[13] !== l || t[14] !== u ? (d = (0, Q.jsx)(`button`, {
+        type: `button`,
+        role: `tab`,
+        id: s,
+        "aria-controls": c,
+        "aria-selected": o,
+        className: l,
+        onClick: u,
+        children: r
+    }), t[9] = r, t[10] = o, t[11] = s, t[12] = c, t[13] = l, t[14] = u, t[15] = d) : d = t[15], d
+}
+
+function Y_(e) {
+    "use forget";
+    let t = (0, pv.c)(8),
+        {
+            activeTab: n,
+            children: r,
+            tab: i
+        } = e;
+    if (n !== i) return null;
+    let a;
+    t[0] === i ? a = t[1] : (a = K_(i), t[0] = i, t[1] = a);
+    let o;
+    t[2] === i ? o = t[3] : (o = G_(i), t[2] = i, t[3] = o);
+    let s;
+    return t[4] !== r || t[5] !== a || t[6] !== o ? (s = (0, Q.jsx)(`div`, {
+        role: `tabpanel`,
+        id: a,
+        "aria-labelledby": o,
+        className: `pt-4`,
+        children: r
+    }), t[4] = r, t[5] = a, t[6] = o, t[7] = s) : s = t[7], s
+}
+
+function X_(e) {
+    "use forget";
+    let t = (0, pv.c)(7),
+        {
+            children: n,
+            title: r
+        } = e,
+        i;
+    t[0] === r ? i = t[1] : (i = (0, Q.jsx)(`div`, {
+        className: `text-token-text-secondary mb-1 text-xs font-medium`,
+        children: r
+    }), t[0] = r, t[1] = i);
+    let a;
+    t[2] === n ? a = t[3] : (a = (0, Q.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-primary w-full max-w-[640px] overflow-hidden rounded-lg border`,
+        children: (0, Q.jsx)(`div`, {
+            className: `bg-tertiary p-3`,
+            children: n
+        })
+    }), t[2] = n, t[3] = a);
+    let o;
+    return t[4] !== i || t[5] !== a ? (o = (0, Q.jsxs)(`div`, {
+        children: [i, a]
+    }), t[4] = i, t[5] = a, t[6] = o) : o = t[6], o
+}
+
+function Z_(e) {
+    "use forget";
+    let t = (0, pv.c)(3),
+        {
+            alt: n,
+            src: r
+        } = e,
+        i;
+    return t[0] !== n || t[1] !== r ? (i = (0, Q.jsx)(`img`, {
+        src: r,
+        alt: n,
+        className: `mx-auto max-h-[360px] max-w-full object-contain`
+    }), t[0] = n, t[1] = r, t[2] = i) : i = t[2], i
+}
+
+function Q_(e) {
+    "use forget";
+    let t = (0, pv.c)(9),
+        {
+            action: n,
+            alt: r,
+            libraryFileId: i,
+            title: a
+        } = e,
+        o;
+    t[0] !== n || t[1] !== i ? (o = V_(i, n), t[0] = n, t[1] = i, t[2] = o) : o = t[2];
+    let s = o,
+        c;
+    t[3] !== r || t[4] !== s ? (c = (0, Q.jsx)(Z_, {
+        src: s,
+        alt: r
+    }), t[3] = r, t[4] = s, t[5] = c) : c = t[5];
+    let l;
+    return t[6] !== c || t[7] !== a ? (l = (0, Q.jsx)(X_, {
+        title: a,
+        children: c
+    }), t[6] = c, t[7] = a, t[8] = l) : l = t[8], l
+}
+
+function $_(e) {
+    "use forget";
+    let t = (0, pv.c)(24),
+        {
+            alt: n,
+            libraryFileId: r,
+            loadingMessage: i,
+            loadFailedMessage: a,
+            missingMessage: o,
+            queryFn: s,
+            queryKey: c,
+            title: l
+        } = e,
+        u;
+    t[0] !== r || t[1] !== s ? (u = () => s(r), t[0] = r, t[1] = s, t[2] = u) : u = t[2];
+    let d = r.length > 0,
+        f;
+    t[3] !== c || t[4] !== u || t[5] !== d ? (f = {
+        queryKey: c,
+        queryFn: u,
+        enabled: d
+    }, t[3] = c, t[4] = u, t[5] = d, t[6] = f) : f = t[6];
+    let p = An(f),
+        m;
+    if (p.isLoading) {
+        let e;
+        t[7] === i ? e = t[8] : (e = (0, Q.jsx)(`p`, {
+            className: `text-token-text-secondary text-sm`,
+            children: i
+        }), t[7] = i, t[8] = e), m = e
+    } else if (p.isError) {
+        let e;
+        t[9] === a ? e = t[10] : (e = (0, Q.jsx)(`p`, {
+            className: `text-token-interactive-label-warning-secondary text-sm`,
+            children: a
+        }), t[9] = a, t[10] = e), m = e
+    } else if (p.data == null || p.data.length === 0) {
+        let e;
+        t[11] === o ? e = t[12] : (e = (0, Q.jsx)(`p`, {
+            className: `text-token-text-secondary text-sm`,
+            children: o
+        }), t[11] = o, t[12] = e), m = e
+    } else {
+        let e;
+        t[13] === p.data ? e = t[14] : (e = (0, Q.jsx)(W_, {
+            url: p.data
+        }), t[13] = p.data, t[14] = e);
+        let r;
+        t[15] !== n || t[16] !== p.data ? (r = (0, Q.jsx)(Z_, {
+            src: p.data,
+            alt: n
+        }), t[15] = n, t[16] = p.data, t[17] = r) : r = t[17];
+        let i;
+        t[18] !== e || t[19] !== r ? (i = (0, Q.jsxs)(`div`, {
+            className: `space-y-3`,
+            children: [e, r]
+        }), t[18] = e, t[19] = r, t[20] = i) : i = t[20], m = i
+    }
+    let h;
+    return t[21] !== m || t[22] !== l ? (h = (0, Q.jsx)(X_, {
+        title: l,
+        children: m
+    }), t[21] = m, t[22] = l, t[23] = h) : h = t[23], h
+}
+
+function ev(e) {
+    "use forget";
+    let t = (0, pv.c)(12),
+        {
+            libraryFileId: n
+        } = e,
+        r = Yn(),
+        i;
+    t[0] === r ? i = t[1] : (i = r.formatMessage(hv.thumbnailBackendPreviewAlt), t[0] = r, t[1] = i);
+    let a, o, s;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Q.jsx)(X, {
+        ...hv.thumbnailBackendApiLoading
+    }), o = (0, Q.jsx)(X, {
+        ...hv.thumbnailBackendApiLoadFailed
+    }), s = (0, Q.jsx)(X, {
+        ...hv.thumbnailBackendApiMissing
+    }), t[2] = a, t[3] = o, t[4] = s) : (a = t[2], o = t[3], s = t[4]);
+    let c;
+    t[5] === n ? c = t[6] : (c = [`file-debug`, `stable-thumbnail-url`, n], t[5] = n, t[6] = c);
+    let l;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Q.jsx)(X, {
+        ...hv.thumbnailBackendApiPreviewLabel
+    }), t[7] = l) : l = t[7];
+    let u;
+    return t[8] !== n || t[9] !== i || t[10] !== c ? (u = (0, Q.jsx)($_, {
+        alt: i,
+        libraryFileId: n,
+        loadingMessage: a,
+        loadFailedMessage: o,
+        missingMessage: s,
+        queryFn: tv,
+        queryKey: c,
+        title: l
+    }), t[8] = n, t[9] = i, t[10] = c, t[11] = u) : u = t[11], u
+}
+async function tv(e) {
+    return (await v.safeGet(`/files/library/files/{library_file_id}/thumbnail_url`, {
+        authOption: rt.SendIfAvailable,
+        parameters: {
+            path: {
+                library_file_id: e
+            }
+        }
+    })).thumbnail_url ?? null
+}
+
+function nv(e) {
+    "use forget";
+    let t = (0, pv.c)(12),
+        {
+            libraryFileId: n
+        } = e,
+        r = Yn(),
+        i;
+    t[0] === r ? i = t[1] : (i = r.formatMessage(hv.contentBackendPreviewAlt), t[0] = r, t[1] = i);
+    let a, o, s;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Q.jsx)(X, {
+        ...hv.contentBackendApiLoading
+    }), o = (0, Q.jsx)(X, {
+        ...hv.contentBackendApiLoadFailed
+    }), s = (0, Q.jsx)(X, {
+        ...hv.contentBackendApiMissing
+    }), t[2] = a, t[3] = o, t[4] = s) : (a = t[2], o = t[3], s = t[4]);
+    let c;
+    t[5] === n ? c = t[6] : (c = [`file-debug`, `stable-content-url`, n], t[5] = n, t[6] = c);
+    let l;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Q.jsx)(X, {
+        ...hv.contentBackendApiPreviewLabel
+    }), t[7] = l) : l = t[7];
+    let u;
+    return t[8] !== n || t[9] !== i || t[10] !== c ? (u = (0, Q.jsx)($_, {
+        alt: i,
+        libraryFileId: n,
+        loadingMessage: a,
+        loadFailedMessage: o,
+        missingMessage: s,
+        queryFn: rv,
+        queryKey: c,
+        title: l
+    }), t[8] = n, t[9] = i, t[10] = c, t[11] = u) : u = t[11], u
+}
+async function rv(e) {
+    return (await v.safeGet(`/files/library/files/{library_file_id}/content_url`, {
+        authOption: rt.SendIfAvailable,
+        parameters: {
+            path: {
+                library_file_id: e
+            }
+        }
+    })).content_url ?? null
+}
+
+function iv(e) {
+    "use forget";
+    let t = (0, pv.c)(19),
+        {
+            libraryFileId: n
+        } = e,
+        r = Yn(),
+        i;
+    t[0] === n ? i = t[1] : (i = (e, t, r) => (0, Q.jsx)(U_, {
+        label: t,
+        value: (0, Q.jsxs)(`div`, {
+            children: [(0, Q.jsx)(W_, {
+                url: V_(n, e)
+            }), (0, Q.jsxs)(`div`, {
+                className: `mt-2 space-y-3`,
+                children: [(0, Q.jsx)(Q_, {
+                    action: e,
+                    alt: r,
+                    libraryFileId: n,
+                    title: (0, Q.jsx)(X, {
+                        ...hv.webServerEmbedLabel
+                    })
+                }), e === `thumbnail` ? (0, Q.jsx)(ev, {
+                    libraryFileId: n
+                }) : (0, Q.jsx)(nv, {
+                    libraryFileId: n
+                })]
+            })]
+        })
+    }), t[0] = n, t[1] = i);
+    let a = i,
+        o;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Q.jsx)(X, {
+        ...hv.thumbnailUrlLabel
+    }), t[2] = o) : o = t[2];
+    let s;
+    t[3] !== r || t[4] !== a ? (s = a(`thumbnail`, o, r.formatMessage(hv.thumbnailPreviewAlt)), t[3] = r, t[4] = a, t[5] = s) : s = t[5];
+    let c;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, Q.jsx)(X, {
+        ...hv.contentUrlLabel
+    }), t[6] = c) : c = t[6];
+    let l;
+    t[7] !== r || t[8] !== a ? (l = a(`content`, c, r.formatMessage(hv.contentPreviewAlt)), t[7] = r, t[8] = a, t[9] = l) : l = t[9];
+    let u;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, Q.jsx)(X, {
+        ...hv.downloadUrlLabel
+    }), t[10] = u) : u = t[10];
+    let d;
+    t[11] === n ? d = t[12] : (d = V_(n, `download`), t[11] = n, t[12] = d);
+    let f;
+    t[13] === d ? f = t[14] : (f = (0, Q.jsx)(U_, {
+        label: u,
+        value: (0, Q.jsx)(W_, {
+            url: d
+        })
+    }), t[13] = d, t[14] = f);
+    let p;
+    return t[15] !== s || t[16] !== l || t[17] !== f ? (p = (0, Q.jsxs)(`div`, {
+        className: `space-y-4`,
+        children: [s, l, f]
+    }), t[15] = s, t[16] = l, t[17] = f, t[18] = p) : p = t[18], p
+}
+
+function av(e) {
+    return e?.type === `chat_upload` || e?.type === `google_drive` ? e.fileId : null
+}
+
+function ov(e) {
+    return e == null ? null : e.type === `mock` ? e.type : `${e.type}: ${e.fileId}`
+}
+
+function sv(e) {
+    return e.classifiers.library_file_category ?? null
+}
+
+function cv(e) {
+    "use forget";
+    let t = (0, pv.c)(141),
+        {
+            artifact: n,
+            libraryFileId: r,
+            status: i
+        } = e,
+        a = Yn(),
+        o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Q.jsx)(X, {
+        ...hv.artifactIdLabel
+    }), t[0] = o) : o = t[0];
+    let s;
+    t[1] === n.id ? s = t[2] : (s = (0, Q.jsx)(U_, {
+        label: o,
+        value: n.id
+    }), t[1] = n.id, t[2] = s);
+    let c;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, Q.jsx)(X, {
+        ...hv.libraryFileIdLabel
+    }), t[3] = c) : c = t[3];
+    let l;
+    t[4] === r ? l = t[5] : (l = (0, Q.jsx)(U_, {
+        label: c,
+        value: r
+    }), t[4] = r, t[5] = l);
+    let u;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, Q.jsx)(X, {
+        ...hv.fileIdLabel
+    }), t[6] = u) : u = t[6];
+    let d;
+    t[7] !== n.source || t[8] !== i?.file_id ? (d = i?.file_id ?? av(n.source), t[7] = n.source, t[8] = i?.file_id, t[9] = d) : d = t[9];
+    let f;
+    t[10] !== a || t[11] !== d ? (f = H_(a, d), t[10] = a, t[11] = d, t[12] = f) : f = t[12];
+    let p;
+    t[13] === f ? p = t[14] : (p = (0, Q.jsx)(U_, {
+        label: u,
+        value: f
+    }), t[13] = f, t[14] = p);
+    let m;
+    t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, Q.jsx)(X, {
+        ...hv.fileNameLabel
+    }), t[15] = m) : m = t[15];
+    let h = i?.file_name ?? n.originalFileName ?? n.title,
+        g;
+    t[16] !== a || t[17] !== h ? (g = H_(a, h), t[16] = a, t[17] = h, t[18] = g) : g = t[18];
+    let _;
+    t[19] === g ? _ = t[20] : (_ = (0, Q.jsx)(U_, {
+        label: m,
+        value: g
+    }), t[19] = g, t[20] = _);
+    let v;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, Q.jsx)(X, {
+        ...hv.originalFileNameLabel
+    }), t[21] = v) : v = t[21];
+    let y;
+    t[22] !== n.originalFileName || t[23] !== a ? (y = H_(a, n.originalFileName), t[22] = n.originalFileName, t[23] = a, t[24] = y) : y = t[24];
+    let b;
+    t[25] === y ? b = t[26] : (b = (0, Q.jsx)(U_, {
+        label: v,
+        value: y
+    }), t[25] = y, t[26] = b);
+    let x;
+    t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, Q.jsx)(X, {
+        ...hv.mimeTypeLabel
+    }), t[27] = x) : x = t[27];
+    let S = i?.mime_type ?? n.mimeType,
+        C;
+    t[28] !== a || t[29] !== S ? (C = H_(a, S), t[28] = a, t[29] = S, t[30] = C) : C = t[30];
+    let w;
+    t[31] === C ? w = t[32] : (w = (0, Q.jsx)(U_, {
+        label: x,
+        value: C
+    }), t[31] = C, t[32] = w);
+    let T;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, Q.jsx)(X, {
+        ...hv.sizeBytesLabel
+    }), t[33] = T) : T = t[33];
+    let E;
+    t[34] !== n.sizeBytes || t[35] !== a ? (E = H_(a, n.sizeBytes), t[34] = n.sizeBytes, t[35] = a, t[36] = E) : E = t[36];
+    let D;
+    t[37] === E ? D = t[38] : (D = (0, Q.jsx)(U_, {
+        label: T,
+        value: E
+    }), t[37] = E, t[38] = D);
+    let O;
+    t[39] === Symbol.for(`react.memo_cache_sentinel`) ? (O = (0, Q.jsx)(X, {
+        ...hv.categoryLabel
+    }), t[39] = O) : O = t[39];
+    let k;
+    t[40] !== n || t[41] !== i?.library_file_category ? (k = i?.library_file_category ?? sv(n), t[40] = n, t[41] = i?.library_file_category, t[42] = k) : k = t[42];
+    let A;
+    t[43] !== a || t[44] !== k ? (A = H_(a, k), t[43] = a, t[44] = k, t[45] = A) : A = t[45];
+    let j;
+    t[46] === A ? j = t[47] : (j = (0, Q.jsx)(U_, {
+        label: O,
+        value: A
+    }), t[46] = A, t[47] = j);
+    let M;
+    t[48] === Symbol.for(`react.memo_cache_sentinel`) ? (M = (0, Q.jsx)(X, {
+        ...hv.stateLabel
+    }), t[48] = M) : M = t[48];
+    let N = i?.state ?? n.status,
+        P;
+    t[49] !== a || t[50] !== N ? (P = H_(a, N), t[49] = a, t[50] = N, t[51] = P) : P = t[51];
+    let F;
+    t[52] === P ? F = t[53] : (F = (0, Q.jsx)(U_, {
+        label: M,
+        value: P
+    }), t[52] = P, t[53] = F);
+    let I;
+    t[54] === Symbol.for(`react.memo_cache_sentinel`) ? (I = (0, Q.jsx)(X, {
+        ...hv.currentVersionLabel
+    }), t[54] = I) : I = t[54];
+    let L = i?.current_version_number,
+        R;
+    t[55] !== a || t[56] !== L ? (R = H_(a, L), t[55] = a, t[56] = L, t[57] = R) : R = t[57];
+    let z;
+    t[58] === R ? z = t[59] : (z = (0, Q.jsx)(U_, {
+        label: I,
+        value: R
+    }), t[58] = R, t[59] = z);
+    let B;
+    t[60] === Symbol.for(`react.memo_cache_sentinel`) ? (B = (0, Q.jsx)(X, {
+        ...hv.sha256DigestLabel
+    }), t[60] = B) : B = t[60];
+    let V = i?.sha256_digest,
+        H;
+    t[61] !== a || t[62] !== V ? (H = H_(a, V), t[61] = a, t[62] = V, t[63] = H) : H = t[63];
+    let U;
+    t[64] === H ? U = t[65] : (U = (0, Q.jsx)(U_, {
+        label: B,
+        value: H
+    }), t[64] = H, t[65] = U);
+    let ee;
+    t[66] === Symbol.for(`react.memo_cache_sentinel`) ? (ee = (0, Q.jsx)(X, {
+        ...hv.gizmoIdLabel
+    }), t[66] = ee) : ee = t[66];
+    let W = i?.gizmo_id ?? n.gizmoId,
+        te;
+    t[67] !== a || t[68] !== W ? (te = H_(a, W), t[67] = a, t[68] = W, t[69] = te) : te = t[69];
+    let ne;
+    t[70] === te ? ne = t[71] : (ne = (0, Q.jsx)(U_, {
+        label: ee,
+        value: te
+    }), t[70] = te, t[71] = ne);
+    let re;
+    t[72] === Symbol.for(`react.memo_cache_sentinel`) ? (re = (0, Q.jsx)(X, {
+        ...hv.projectLabel
+    }), t[72] = re) : re = t[72];
+    let ie = i?.is_project,
+        ae;
+    t[73] !== a || t[74] !== ie ? (ae = H_(a, ie), t[73] = a, t[74] = ie, t[75] = ae) : ae = t[75];
+    let G;
+    t[76] === ae ? G = t[77] : (G = (0, Q.jsx)(U_, {
+        label: re,
+        value: ae
+    }), t[76] = ae, t[77] = G);
+    let K;
+    t[78] === Symbol.for(`react.memo_cache_sentinel`) ? (K = (0, Q.jsx)(X, {
+        ...hv.originationThreadIdLabel
+    }), t[78] = K) : K = t[78];
+    let oe;
+    t[79] !== n.originationThreadId || t[80] !== a ? (oe = H_(a, n.originationThreadId), t[79] = n.originationThreadId, t[80] = a, t[81] = oe) : oe = t[81];
+    let se;
+    t[82] === oe ? se = t[83] : (se = (0, Q.jsx)(U_, {
+        label: K,
+        value: oe
+    }), t[82] = oe, t[83] = se);
+    let ce;
+    t[84] === Symbol.for(`react.memo_cache_sentinel`) ? (ce = (0, Q.jsx)(X, {
+        ...hv.originationMessageIdLabel
+    }), t[84] = ce) : ce = t[84];
+    let le;
+    t[85] !== n.originationMessageId || t[86] !== a ? (le = H_(a, n.originationMessageId), t[85] = n.originationMessageId, t[86] = a, t[87] = le) : le = t[87];
+    let ue;
+    t[88] === le ? ue = t[89] : (ue = (0, Q.jsx)(U_, {
+        label: ce,
+        value: le
+    }), t[88] = le, t[89] = ue);
+    let de;
+    t[90] === Symbol.for(`react.memo_cache_sentinel`) ? (de = (0, Q.jsx)(X, {
+        ...hv.createdAtLabel
+    }), t[90] = de) : de = t[90];
+    let fe;
+    t[91] !== n.createdAt || t[92] !== a ? (fe = H_(a, n.createdAt), t[91] = n.createdAt, t[92] = a, t[93] = fe) : fe = t[93];
+    let pe;
+    t[94] === fe ? pe = t[95] : (pe = (0, Q.jsx)(U_, {
+        label: de,
+        value: fe
+    }), t[94] = fe, t[95] = pe);
+    let me;
+    t[96] === Symbol.for(`react.memo_cache_sentinel`) ? (me = (0, Q.jsx)(X, {
+        ...hv.updatedAtLabel
+    }), t[96] = me) : me = t[96];
+    let q;
+    t[97] !== n.updatedAt || t[98] !== a ? (q = H_(a, n.updatedAt), t[97] = n.updatedAt, t[98] = a, t[99] = q) : q = t[99];
+    let he;
+    t[100] === q ? he = t[101] : (he = (0, Q.jsx)(U_, {
+        label: me,
+        value: q
+    }), t[100] = q, t[101] = he);
+    let ge;
+    t[102] === Symbol.for(`react.memo_cache_sentinel`) ? (ge = (0, Q.jsx)(X, {
+        ...hv.deletedAtLabel
+    }), t[102] = ge) : ge = t[102];
+    let _e;
+    t[103] !== n.deletedAt || t[104] !== a ? (_e = H_(a, n.deletedAt), t[103] = n.deletedAt, t[104] = a, t[105] = _e) : _e = t[105];
+    let ve;
+    t[106] === _e ? ve = t[107] : (ve = (0, Q.jsx)(U_, {
+        label: ge,
+        value: _e
+    }), t[106] = _e, t[107] = ve);
+    let ye;
+    t[108] === Symbol.for(`react.memo_cache_sentinel`) ? (ye = (0, Q.jsx)(X, {
+        ...hv.sourceLabel
+    }), t[108] = ye) : ye = t[108];
+    let be;
+    t[109] !== n.source || t[110] !== a ? (be = H_(a, ov(n.source)), t[109] = n.source, t[110] = a, t[111] = be) : be = t[111];
+    let xe;
+    t[112] === be ? xe = t[113] : (xe = (0, Q.jsx)(U_, {
+        label: ye,
+        value: be
+    }), t[112] = be, t[113] = xe);
+    let Se;
+    t[114] === Symbol.for(`react.memo_cache_sentinel`) ? (Se = (0, Q.jsx)(X, {
+        ...hv.imageGenGenerationIdLabel
+    }), t[114] = Se) : Se = t[114];
+    let Ce = i?.image_gen_generation_id,
+        we;
+    t[115] !== a || t[116] !== Ce ? (we = H_(a, Ce), t[115] = a, t[116] = Ce, t[117] = we) : we = t[117];
+    let Te;
+    t[118] === we ? Te = t[119] : (Te = (0, Q.jsx)(U_, {
+        label: Se,
+        value: we
+    }), t[118] = we, t[119] = Te);
+    let Ee;
+    return t[120] !== _ || t[121] !== b || t[122] !== w || t[123] !== s || t[124] !== D || t[125] !== j || t[126] !== F || t[127] !== z || t[128] !== U || t[129] !== l || t[130] !== ne || t[131] !== G || t[132] !== se || t[133] !== ue || t[134] !== pe || t[135] !== he || t[136] !== ve || t[137] !== xe || t[138] !== Te || t[139] !== p ? (Ee = (0, Q.jsxs)(`div`, {
+        className: `space-y-1`,
+        children: [s, l, p, _, b, w, D, j, F, z, U, ne, G, se, ue, pe, he, ve, xe, Te]
+    }), t[120] = _, t[121] = b, t[122] = w, t[123] = s, t[124] = D, t[125] = j, t[126] = F, t[127] = z, t[128] = U, t[129] = l, t[130] = ne, t[131] = G, t[132] = se, t[133] = ue, t[134] = pe, t[135] = he, t[136] = ve, t[137] = xe, t[138] = Te, t[139] = p, t[140] = Ee) : Ee = t[140], Ee
+}
+
+function lv(e) {
+    "use forget";
+    let t = (0, pv.c)(57),
+        {
+            source: n
+        } = e,
+        r = Yn(),
+        i = n.width != null && n.height != null ? `${n.width} x ${n.height}` : null,
+        a;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Q.jsx)(X, {
+        ...hv.sourceIdLabel
+    }), t[0] = a) : a = t[0];
+    let o;
+    t[1] !== r || t[2] !== n.source_id ? (o = H_(r, n.source_id), t[1] = r, t[2] = n.source_id, t[3] = o) : o = t[3];
+    let s;
+    t[4] === o ? s = t[5] : (s = (0, Q.jsx)(U_, {
+        label: a,
+        value: o
+    }), t[4] = o, t[5] = s);
+    let c;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, Q.jsx)(X, {
+        ...hv.variantLabel
+    }), t[6] = c) : c = t[6];
+    let l;
+    t[7] !== r || t[8] !== n.variant ? (l = H_(r, n.variant), t[7] = r, t[8] = n.variant, t[9] = l) : l = t[9];
+    let u;
+    t[10] === l ? u = t[11] : (u = (0, Q.jsx)(U_, {
+        label: c,
+        value: l
+    }), t[10] = l, t[11] = u);
+    let d;
+    t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, Q.jsx)(X, {
+        ...hv.kindLabel
+    }), t[12] = d) : d = t[12];
+    let f;
+    t[13] !== r || t[14] !== n.kind ? (f = H_(r, n.kind), t[13] = r, t[14] = n.kind, t[15] = f) : f = t[15];
+    let p;
+    t[16] === f ? p = t[17] : (p = (0, Q.jsx)(U_, {
+        label: d,
+        value: f
+    }), t[16] = f, t[17] = p);
+    let m;
+    t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, Q.jsx)(X, {
+        ...hv.fileIdLabel
+    }), t[18] = m) : m = t[18];
+    let h;
+    t[19] !== r || t[20] !== n.file_id ? (h = H_(r, n.file_id), t[19] = r, t[20] = n.file_id, t[21] = h) : h = t[21];
+    let g;
+    t[22] === h ? g = t[23] : (g = (0, Q.jsx)(U_, {
+        label: m,
+        value: h
+    }), t[22] = h, t[23] = g);
+    let _;
+    t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = (0, Q.jsx)(X, {
+        ...hv.dimensionsLabel
+    }), t[24] = _) : _ = t[24];
+    let v;
+    t[25] !== i || t[26] !== r ? (v = H_(r, i), t[25] = i, t[26] = r, t[27] = v) : v = t[27];
+    let y;
+    t[28] === v ? y = t[29] : (y = (0, Q.jsx)(U_, {
+        label: _,
+        value: v
+    }), t[28] = v, t[29] = y);
+    let b;
+    t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (b = (0, Q.jsx)(X, {
+        ...hv.mimeTypeLabel
+    }), t[30] = b) : b = t[30];
+    let x;
+    t[31] !== r || t[32] !== n.mime_type ? (x = H_(r, n.mime_type), t[31] = r, t[32] = n.mime_type, t[33] = x) : x = t[33];
+    let S;
+    t[34] === x ? S = t[35] : (S = (0, Q.jsx)(U_, {
+        label: b,
+        value: x
+    }), t[34] = x, t[35] = S);
+    let C;
+    t[36] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, Q.jsx)(X, {
+        ...hv.sizeBytesLabel
+    }), t[36] = C) : C = t[36];
+    let w;
+    t[37] !== r || t[38] !== n.size_bytes ? (w = H_(r, n.size_bytes), t[37] = r, t[38] = n.size_bytes, t[39] = w) : w = t[39];
+    let T;
+    t[40] === w ? T = t[41] : (T = (0, Q.jsx)(U_, {
+        label: C,
+        value: w
+    }), t[40] = w, t[41] = T);
+    let E;
+    t[42] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, Q.jsx)(X, {
+        ...hv.generatedAtLabel
+    }), t[42] = E) : E = t[42];
+    let D;
+    t[43] !== r || t[44] !== n.generated_at ? (D = H_(r, n.generated_at), t[43] = r, t[44] = n.generated_at, t[45] = D) : D = t[45];
+    let O;
+    t[46] === D ? O = t[47] : (O = (0, Q.jsx)(U_, {
+        label: E,
+        value: D
+    }), t[46] = D, t[47] = O);
+    let k;
+    return t[48] !== g || t[49] !== y || t[50] !== S || t[51] !== T || t[52] !== O || t[53] !== s || t[54] !== u || t[55] !== p ? (k = (0, Q.jsxs)(`div`, {
+        className: `border-token-border-light space-y-1 rounded-lg border p-3`,
+        children: [s, u, p, g, y, S, T, O]
+    }), t[48] = g, t[49] = y, t[50] = S, t[51] = T, t[52] = O, t[53] = s, t[54] = u, t[55] = p, t[56] = k) : k = t[56], k
+}
+
+function uv(e) {
+    "use forget";
+    let t = (0, pv.c)(45),
+        {
+            status: n
+        } = e,
+        r = Yn(),
+        i;
+    t[0] === n.image_gen_fallback_encoding_keys ? i = t[1] : (i = n.image_gen_fallback_encoding_keys ?? [], t[0] = n.image_gen_fallback_encoding_keys, t[1] = i);
+    let a = i,
+        o;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Q.jsx)(X, {
+        ...hv.thumbnailVariantLabel
+    }), t[2] = o) : o = t[2];
+    let s;
+    t[3] !== r || t[4] !== n.thumbnail_variant ? (s = H_(r, n.thumbnail_variant), t[3] = r, t[4] = n.thumbnail_variant, t[5] = s) : s = t[5];
+    let c;
+    t[6] === s ? c = t[7] : (c = (0, Q.jsx)(U_, {
+        label: o,
+        value: s
+    }), t[6] = s, t[7] = c);
+    let l;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Q.jsx)(X, {
+        ...hv.canGenerateLabel
+    }), t[8] = l) : l = t[8];
+    let u;
+    t[9] !== r || t[10] !== n.can_generate_thumbnail ? (u = H_(r, n.can_generate_thumbnail), t[9] = r, t[10] = n.can_generate_thumbnail, t[11] = u) : u = t[11];
+    let d;
+    t[12] === u ? d = t[13] : (d = (0, Q.jsx)(U_, {
+        label: l,
+        value: u
+    }), t[12] = u, t[13] = d);
+    let f;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, Q.jsx)(X, {
+        ...hv.endpointGateEnabledLabel
+    }), t[14] = f) : f = t[14];
+    let p;
+    t[15] !== r || t[16] !== n.endpoint_gate_enabled ? (p = H_(r, n.endpoint_gate_enabled), t[15] = r, t[16] = n.endpoint_gate_enabled, t[17] = p) : p = t[17];
+    let m;
+    t[18] === p ? m = t[19] : (m = (0, Q.jsx)(U_, {
+        label: f,
+        value: p
+    }), t[18] = p, t[19] = m);
+    let h;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, Q.jsx)(X, {
+        ...hv.responseEnrichmentGateEnabledLabel
+    }), t[20] = h) : h = t[20];
+    let g;
+    t[21] !== r || t[22] !== n.response_enrichment_gate_enabled ? (g = H_(r, n.response_enrichment_gate_enabled), t[21] = r, t[22] = n.response_enrichment_gate_enabled, t[23] = g) : g = t[23];
+    let _;
+    t[24] === g ? _ = t[25] : (_ = (0, Q.jsx)(U_, {
+        label: h,
+        value: g
+    }), t[24] = g, t[25] = _);
+    let v;
+    t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, Q.jsx)(X, {
+        ...hv.imageGenFallbackKeysLabel
+    }), t[26] = v) : v = t[26];
+    let y;
+    t[27] === a ? y = t[28] : (y = a.length > 0 ? a.join(`, `) : `-`, t[27] = a, t[28] = y);
+    let b;
+    t[29] === y ? b = t[30] : (b = (0, Q.jsx)(U_, {
+        label: v,
+        value: y
+    }), t[29] = y, t[30] = b);
+    let x;
+    t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, Q.jsx)(X, {
+        ...hv.resolvedThumbnailUrlLabel
+    }), t[31] = x) : x = t[31];
+    let S;
+    t[32] === n.resolved_thumbnail_url ? S = t[33] : (S = (0, Q.jsx)(U_, {
+        label: x,
+        value: (0, Q.jsx)(W_, {
+            url: n.resolved_thumbnail_url
+        })
+    }), t[32] = n.resolved_thumbnail_url, t[33] = S);
+    let C;
+    t[34] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, Q.jsx)(X, {
+        ...hv.servedThumbnailUrlLabel
+    }), t[34] = C) : C = t[34];
+    let w;
+    t[35] === n.served_thumbnail_url ? w = t[36] : (w = (0, Q.jsx)(U_, {
+        label: C,
+        value: (0, Q.jsx)(W_, {
+            url: n.served_thumbnail_url
+        })
+    }), t[35] = n.served_thumbnail_url, t[36] = w);
+    let T;
+    return t[37] !== m || t[38] !== _ || t[39] !== b || t[40] !== S || t[41] !== w || t[42] !== c || t[43] !== d ? (T = (0, Q.jsxs)(`div`, {
+        className: `space-y-1`,
+        children: [c, d, m, _, b, S, w]
+    }), t[37] = m, t[38] = _, t[39] = b, t[40] = S, t[41] = w, t[42] = c, t[43] = d, t[44] = T) : T = t[44], T
+}
+
+function dv(e) {
+    "use forget";
+    let t = (0, pv.c)(98),
+        {
+            artifact: n,
+            onClose: r
+        } = e,
+        i = Yn(),
+        a = n.libraryFileId ?? n.id,
+        [o, s] = (0, mv.useState)(`file`),
+        c, l;
+    t[0] === a ? (c = t[1], l = t[2]) : (c = [`file-debug`, `thumbnail-status`, a], l = () => v.safeGet(`/files/library/debug/thumbnail_status`, {
+        parameters: {
+            query: {
+                library_file_id: a
+            }
+        }
+    }), t[0] = a, t[1] = c, t[2] = l);
+    let u = a.length > 0,
+        d;
+    t[3] !== c || t[4] !== l || t[5] !== u ? (d = {
+        queryKey: c,
+        queryFn: l,
+        enabled: u
+    }, t[3] = c, t[4] = l, t[5] = u, t[6] = d) : d = t[6];
+    let f = An(d),
+        m;
+    t[7] === a ? m = t[8] : (m = () => v.safePost(`/files/library/debug/generate_thumbnail`, {
+        requestBody: {
+            library_file_id: a
+        }
+    }), t[7] = a, t[8] = m);
+    let h;
+    t[9] === f ? h = t[10] : (h = async () => {
+        await f.refetch()
+    }, t[9] = f, t[10] = h);
+    let g;
+    t[11] !== m || t[12] !== h ? (g = {
+        mutationFn: m,
+        onSuccess: h
+    }, t[11] = m, t[12] = h, t[13] = g) : g = t[13];
+    let _ = Gn(g),
+        y = f.data,
+        b;
+    t[14] === y?.thumbnail_sources ? b = t[15] : (b = y?.thumbnail_sources ?? [], t[14] = y?.thumbnail_sources, t[15] = b);
+    let x = b,
+        S = y?.can_generate_thumbnail === !0 && !_.isPending,
+        C;
+    t[16] === i ? C = t[17] : (C = i.formatMessage(hv.title), t[16] = i, t[17] = C);
+    let w;
+    t[18] === i ? w = t[19] : (w = i.formatMessage(hv.title), t[18] = i, t[19] = w);
+    let T;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, Q.jsx)(X, {
+        ...hv.fileTab
+    }), t[20] = T) : T = t[20];
+    let E;
+    t[21] === o ? E = t[22] : (E = (0, Q.jsx)(J_, {
+        tab: `file`,
+        activeTab: o,
+        onSelect: s,
+        children: T
+    }), t[21] = o, t[22] = E);
+    let D;
+    t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (D = (0, Q.jsx)(X, {
+        ...hv.thumbnailsTab
+    }), t[23] = D) : D = t[23];
+    let O;
+    t[24] === o ? O = t[25] : (O = (0, Q.jsx)(J_, {
+        tab: `thumbnails`,
+        activeTab: o,
+        onSelect: s,
+        children: D
+    }), t[24] = o, t[25] = O);
+    let k;
+    t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (k = (0, Q.jsx)(X, {
+        ...hv.urls
+    }), t[26] = k) : k = t[26];
+    let A;
+    t[27] === o ? A = t[28] : (A = (0, Q.jsx)(J_, {
+        tab: `urls`,
+        activeTab: o,
+        onSelect: s,
+        children: k
+    }), t[27] = o, t[28] = A);
+    let j;
+    t[29] !== w || t[30] !== E || t[31] !== O || t[32] !== A ? (j = (0, Q.jsxs)(`div`, {
+        role: `tablist`,
+        "aria-label": w,
+        className: `flex flex-wrap items-center gap-4`,
+        children: [E, O, A]
+    }), t[29] = w, t[30] = E, t[31] = O, t[32] = A, t[33] = j) : j = t[33];
+    let M;
+    t[34] !== n || t[35] !== a || t[36] !== y ? (M = (0, Q.jsx)(cv, {
+        artifact: n,
+        libraryFileId: a,
+        status: y
+    }), t[34] = n, t[35] = a, t[36] = y, t[37] = M) : M = t[37];
+    let N;
+    t[38] !== o || t[39] !== M ? (N = (0, Q.jsx)(Y_, {
+        tab: `file`,
+        activeTab: o,
+        children: M
+    }), t[38] = o, t[39] = M, t[40] = N) : N = t[40];
+    let P;
+    t[41] === Symbol.for(`react.memo_cache_sentinel`) ? (P = (0, Q.jsx)(`h3`, {
+        className: `text-token-text-primary text-sm font-semibold`,
+        children: (0, Q.jsx)(X, {
+            ...hv.thumbnailStatus
+        })
+    }), t[41] = P) : P = t[41];
+    let F;
+    t[42] === f ? F = t[43] : (F = () => {
+        f.refetch()
+    }, t[42] = f, t[43] = F);
+    let I;
+    t[44] === Symbol.for(`react.memo_cache_sentinel`) ? (I = (0, Q.jsx)(X, {
+        ...hv.refresh
+    }), t[44] = I) : I = t[44];
+    let L;
+    t[45] === F ? L = t[46] : (L = (0, Q.jsx)(`button`, {
+        type: `button`,
+        className: `text-token-text-secondary hover:text-token-text-primary text-sm`,
+        onClick: F,
+        children: I
+    }), t[45] = F, t[46] = L);
+    let R;
+    t[47] === _ ? R = t[48] : (R = () => {
+        _.mutate()
+    }, t[47] = _, t[48] = R);
+    let z = !S,
+        B;
+    t[49] === _.isPending ? B = t[50] : (B = _.isPending ? (0, Q.jsx)(X, {
+        ...hv.generatingThumbnail
+    }) : (0, Q.jsx)(X, {
+        ...hv.generateThumbnail
+    }), t[49] = _.isPending, t[50] = B);
+    let V;
+    t[51] !== R || t[52] !== z || t[53] !== B ? (V = (0, Q.jsx)(`button`, {
+        type: `button`,
+        className: `interactive-button interactive-button-primary interactive-outline-primary px-3 py-1.5 text-sm`,
+        onClick: R,
+        disabled: z,
+        children: B
+    }), t[51] = R, t[52] = z, t[53] = B, t[54] = V) : V = t[54];
+    let H;
+    t[55] !== L || t[56] !== V ? (H = (0, Q.jsxs)(`div`, {
+        className: `flex flex-wrap items-center justify-between gap-3`,
+        children: [P, (0, Q.jsxs)(`div`, {
+            className: `flex items-center gap-3`,
+            children: [L, V]
+        })]
+    }), t[55] = L, t[56] = V, t[57] = H) : H = t[57];
+    let U;
+    t[58] !== y || t[59] !== f.isError || t[60] !== f.isLoading ? (U = f.isLoading ? (0, Q.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, Q.jsx)(X, {
+            ...hv.loading
+        })
+    }) : f.isError ? (0, Q.jsx)(`p`, {
+        className: `text-token-interactive-label-warning-secondary text-sm`,
+        children: (0, Q.jsx)(X, {
+            ...hv.loadFailed
+        })
+    }) : y == null ? null : (0, Q.jsx)(uv, {
+        status: y
+    }), t[58] = y, t[59] = f.isError, t[60] = f.isLoading, t[61] = U) : U = t[61];
+    let ee;
+    t[62] === y ? ee = t[63] : (ee = y != null && !y.can_generate_thumbnail ? (0, Q.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, Q.jsx)(X, {
+            ...hv.notImage
+        })
+    }) : null, t[62] = y, t[63] = ee);
+    let W;
+    t[64] === _.isSuccess ? W = t[65] : (W = _.isSuccess ? (0, Q.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, Q.jsx)(X, {
+            ...hv.generationQueued
+        })
+    }) : null, t[64] = _.isSuccess, t[65] = W);
+    let te;
+    t[66] === _.isError ? te = t[67] : (te = _.isError ? (0, Q.jsx)(`p`, {
+        className: `text-token-interactive-label-warning-secondary text-sm`,
+        children: (0, Q.jsx)(X, {
+            ...hv.generationFailed
+        })
+    }) : null, t[66] = _.isError, t[67] = te);
+    let ne;
+    t[68] === Symbol.for(`react.memo_cache_sentinel`) ? (ne = (0, Q.jsx)(`h3`, {
+        className: `text-token-text-primary text-sm font-semibold`,
+        children: (0, Q.jsx)(X, {
+            ...hv.thumbnailSources
+        })
+    }), t[68] = ne) : ne = t[68];
+    let re;
+    t[69] !== y || t[70] !== x ? (re = y == null ? null : x.length === 0 ? (0, Q.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, Q.jsx)(X, {
+            ...hv.noSources
+        })
+    }) : (0, Q.jsx)(`div`, {
+        className: `space-y-3`,
+        children: x.map(fv)
+    }), t[69] = y, t[70] = x, t[71] = re) : re = t[71];
+    let ie;
+    t[72] === re ? ie = t[73] : (ie = (0, Q.jsxs)(`div`, {
+        className: `border-token-border-light space-y-3 border-t pt-4`,
+        children: [ne, re]
+    }), t[72] = re, t[73] = ie);
+    let ae;
+    t[74] !== H || t[75] !== U || t[76] !== ee || t[77] !== W || t[78] !== te || t[79] !== ie ? (ae = (0, Q.jsxs)(`div`, {
+        className: `space-y-5`,
+        children: [H, U, ee, W, te, ie]
+    }), t[74] = H, t[75] = U, t[76] = ee, t[77] = W, t[78] = te, t[79] = ie, t[80] = ae) : ae = t[80];
+    let G;
+    t[81] !== o || t[82] !== ae ? (G = (0, Q.jsx)(Y_, {
+        tab: `thumbnails`,
+        activeTab: o,
+        children: ae
+    }), t[81] = o, t[82] = ae, t[83] = G) : G = t[83];
+    let K;
+    t[84] === a ? K = t[85] : (K = (0, Q.jsx)(iv, {
+        libraryFileId: a
+    }), t[84] = a, t[85] = K);
+    let oe;
+    t[86] !== o || t[87] !== K ? (oe = (0, Q.jsx)(Y_, {
+        tab: `urls`,
+        activeTab: o,
+        children: K
+    }), t[86] = o, t[87] = K, t[88] = oe) : oe = t[88];
+    let se;
+    t[89] !== j || t[90] !== N || t[91] !== G || t[92] !== oe ? (se = (0, Q.jsxs)(`div`, {
+        children: [j, N, G, oe]
+    }), t[89] = j, t[90] = N, t[91] = G, t[92] = oe, t[93] = se) : se = t[93];
+    let ce;
+    return t[94] !== r || t[95] !== se || t[96] !== C ? (ce = (0, Q.jsx)(p, {
+        testId: `modal-file-debug`,
+        isOpen: !0,
+        onClose: r,
+        showCloseButton: !0,
+        size: `xlarge`,
+        title: C,
+        children: se
+    }), t[94] = r, t[95] = se, t[96] = C, t[97] = ce) : ce = t[97], ce
+}
+
+function fv(e, t) {
+    return (0, Q.jsx)(lv, {
+        source: e
+    }, `${e.source_id??`unknown`}-${t}`)
+}
+var pv, mv, Q, hv, gv, _v = e((() => {
+    pv = qn(), xe(), lt(), vn(), Kn(), mv = t(Fn()), Pn(), Q = wn(), hv = Dn({
+        title: {
+            id: `artifacts.file_debug_modal.title`,
+            defaultMessage: `File Debug`
+        },
+        fileTab: {
+            id: `artifacts.file_debug_modal.file_tab`,
+            defaultMessage: `File`
+        },
+        thumbnailsTab: {
+            id: `artifacts.file_debug_modal.thumbnails_tab`,
+            defaultMessage: `Thumbnails`
+        },
+        generateThumbnail: {
+            id: `artifacts.file_debug_modal.generate_thumbnail`,
+            defaultMessage: `Generate thumbnail`
+        },
+        generatingThumbnail: {
+            id: `artifacts.file_debug_modal.generating_thumbnail`,
+            defaultMessage: `Generating...`
+        },
+        refresh: {
+            id: `artifacts.file_debug_modal.refresh`,
+            defaultMessage: `Refresh`
+        },
+        thumbnailStatus: {
+            id: `artifacts.file_debug_modal.thumbnail_status`,
+            defaultMessage: `Thumbnail status`
+        },
+        thumbnailSources: {
+            id: `artifacts.file_debug_modal.thumbnail_sources`,
+            defaultMessage: `Thumbnail sources`
+        },
+        urls: {
+            id: `artifacts.file_debug_modal.urls`,
+            defaultMessage: `URLs`
+        },
+        loading: {
+            id: `artifacts.file_debug_modal.loading`,
+            defaultMessage: `Loading thumbnail status...`
+        },
+        loadFailed: {
+            id: `artifacts.file_debug_modal.load_failed`,
+            defaultMessage: `Could not load thumbnail status.`
+        },
+        generationQueued: {
+            id: `artifacts.file_debug_modal.generation_queued`,
+            defaultMessage: `Thumbnail generation was queued.`
+        },
+        generationFailed: {
+            id: `artifacts.file_debug_modal.generation_failed`,
+            defaultMessage: `Could not trigger thumbnail generation.`
+        },
+        noSources: {
+            id: `artifacts.file_debug_modal.no_sources`,
+            defaultMessage: `No thumbnail sources are stored on this library file.`
+        },
+        notImage: {
+            id: `artifacts.file_debug_modal.not_image`,
+            defaultMessage: `Thumbnail generation is only available for image library files.`
+        },
+        trueValue: {
+            id: `artifacts.file_debug_modal.true_value`,
+            defaultMessage: `Yes`
+        },
+        falseValue: {
+            id: `artifacts.file_debug_modal.false_value`,
+            defaultMessage: `No`
+        },
+        artifactIdLabel: {
+            id: `artifacts.file_debug_modal.artifact_id_label`,
+            defaultMessage: `Artifact ID`
+        },
+        sourceIdLabel: {
+            id: `artifacts.file_debug_modal.source_id_label`,
+            defaultMessage: `Source ID`
+        },
+        variantLabel: {
+            id: `artifacts.file_debug_modal.variant_label`,
+            defaultMessage: `Variant`
+        },
+        kindLabel: {
+            id: `artifacts.file_debug_modal.kind_label`,
+            defaultMessage: `Kind`
+        },
+        fileIdLabel: {
+            id: `artifacts.file_debug_modal.file_id_label`,
+            defaultMessage: `File ID`
+        },
+        dimensionsLabel: {
+            id: `artifacts.file_debug_modal.dimensions_label`,
+            defaultMessage: `Dimensions`
+        },
+        mimeTypeLabel: {
+            id: `artifacts.file_debug_modal.mime_type_label`,
+            defaultMessage: `MIME type`
+        },
+        sizeBytesLabel: {
+            id: `artifacts.file_debug_modal.size_bytes_label`,
+            defaultMessage: `Size (bytes)`
+        },
+        generatedAtLabel: {
+            id: `artifacts.file_debug_modal.generated_at_label`,
+            defaultMessage: `Generated at`
+        },
+        libraryFileIdLabel: {
+            id: `artifacts.file_debug_modal.library_file_id_label`,
+            defaultMessage: `Library file ID`
+        },
+        fileNameLabel: {
+            id: `artifacts.file_debug_modal.file_name_label`,
+            defaultMessage: `File name`
+        },
+        originalFileNameLabel: {
+            id: `artifacts.file_debug_modal.original_file_name_label`,
+            defaultMessage: `Original file name`
+        },
+        categoryLabel: {
+            id: `artifacts.file_debug_modal.category_label`,
+            defaultMessage: `Category`
+        },
+        stateLabel: {
+            id: `artifacts.file_debug_modal.state_label`,
+            defaultMessage: `State`
+        },
+        currentVersionLabel: {
+            id: `artifacts.file_debug_modal.current_version_label`,
+            defaultMessage: `Current version`
+        },
+        sha256DigestLabel: {
+            id: `artifacts.file_debug_modal.sha256_digest_label`,
+            defaultMessage: `SHA-256 digest`
+        },
+        imageGenGenerationIdLabel: {
+            id: `artifacts.file_debug_modal.image_gen_generation_id_label`,
+            defaultMessage: `Image gen generation ID`
+        },
+        gizmoIdLabel: {
+            id: `artifacts.file_debug_modal.gizmo_id_label`,
+            defaultMessage: `Gizmo ID`
+        },
+        projectLabel: {
+            id: `artifacts.file_debug_modal.project_label`,
+            defaultMessage: `Project`
+        },
+        originationThreadIdLabel: {
+            id: `artifacts.file_debug_modal.origination_thread_id_label`,
+            defaultMessage: `Origination thread ID`
+        },
+        originationMessageIdLabel: {
+            id: `artifacts.file_debug_modal.origination_message_id_label`,
+            defaultMessage: `Origination message ID`
+        },
+        createdAtLabel: {
+            id: `artifacts.file_debug_modal.created_at_label`,
+            defaultMessage: `Created at`
+        },
+        updatedAtLabel: {
+            id: `artifacts.file_debug_modal.updated_at_label`,
+            defaultMessage: `Updated at`
+        },
+        deletedAtLabel: {
+            id: `artifacts.file_debug_modal.deleted_at_label`,
+            defaultMessage: `Deleted at`
+        },
+        sourceLabel: {
+            id: `artifacts.file_debug_modal.source_label`,
+            defaultMessage: `Source`
+        },
+        thumbnailVariantLabel: {
+            id: `artifacts.file_debug_modal.thumbnail_variant_label`,
+            defaultMessage: `Thumbnail variant`
+        },
+        canGenerateLabel: {
+            id: `artifacts.file_debug_modal.can_generate_label`,
+            defaultMessage: `Can generate`
+        },
+        endpointGateEnabledLabel: {
+            id: `artifacts.file_debug_modal.endpoint_gate_enabled_label`,
+            defaultMessage: `Endpoint gate enabled`
+        },
+        responseEnrichmentGateEnabledLabel: {
+            id: `artifacts.file_debug_modal.response_enrichment_gate_enabled_label`,
+            defaultMessage: `Response enrichment gate enabled`
+        },
+        imageGenFallbackKeysLabel: {
+            id: `artifacts.file_debug_modal.image_gen_fallback_keys_label`,
+            defaultMessage: `Image gen fallback keys`
+        },
+        resolvedThumbnailUrlLabel: {
+            id: `artifacts.file_debug_modal.resolved_thumbnail_url_label`,
+            defaultMessage: `Resolved thumbnail URL`
+        },
+        servedThumbnailUrlLabel: {
+            id: `artifacts.file_debug_modal.served_thumbnail_url_label`,
+            defaultMessage: `Served thumbnail URL`
+        },
+        thumbnailUrlLabel: {
+            id: `artifacts.file_debug_modal.thumbnail_url_label`,
+            defaultMessage: `Thumbnail URL`
+        },
+        webServerEmbedLabel: {
+            id: `artifacts.file_debug_modal.web_server_embed_label`,
+            defaultMessage: `Web-server img src`
+        },
+        thumbnailBackendApiPreviewLabel: {
+            id: `artifacts.file_debug_modal.thumbnail_backend_api_preview_label`,
+            defaultMessage: `Backend API safeGet resolved URL`
+        },
+        thumbnailBackendApiLoading: {
+            id: `artifacts.file_debug_modal.thumbnail_backend_api_loading`,
+            defaultMessage: `Loading backend-resolved thumbnail URL...`
+        },
+        thumbnailBackendApiLoadFailed: {
+            id: `artifacts.file_debug_modal.thumbnail_backend_api_load_failed`,
+            defaultMessage: `Could not load backend-resolved thumbnail URL.`
+        },
+        thumbnailBackendApiMissing: {
+            id: `artifacts.file_debug_modal.thumbnail_backend_api_missing`,
+            defaultMessage: `Backend API returned no thumbnail URL.`
+        },
+        thumbnailPreviewAlt: {
+            id: `artifacts.file_debug_modal.thumbnail_preview_alt`,
+            defaultMessage: `Library file thumbnail preview`
+        },
+        thumbnailBackendPreviewAlt: {
+            id: `artifacts.file_debug_modal.thumbnail_backend_preview_alt`,
+            defaultMessage: `Backend-resolved library file thumbnail preview`
+        },
+        contentBackendApiPreviewLabel: {
+            id: `artifacts.file_debug_modal.content_backend_api_preview_label`,
+            defaultMessage: `Backend API safeGet resolved URL`
+        },
+        contentBackendApiLoading: {
+            id: `artifacts.file_debug_modal.content_backend_api_loading`,
+            defaultMessage: `Loading backend-resolved content URL...`
+        },
+        contentBackendApiLoadFailed: {
+            id: `artifacts.file_debug_modal.content_backend_api_load_failed`,
+            defaultMessage: `Could not load backend-resolved content URL.`
+        },
+        contentBackendApiMissing: {
+            id: `artifacts.file_debug_modal.content_backend_api_missing`,
+            defaultMessage: `Backend API returned no content URL.`
+        },
+        contentBackendPreviewAlt: {
+            id: `artifacts.file_debug_modal.content_backend_preview_alt`,
+            defaultMessage: `Backend-resolved library file content preview`
+        },
+        contentPreviewAlt: {
+            id: `artifacts.file_debug_modal.content_preview_alt`,
+            defaultMessage: `Library file content preview`
+        },
+        contentUrlLabel: {
+            id: `artifacts.file_debug_modal.content_url_label`,
+            defaultMessage: `Content URL`
+        },
+        downloadUrlLabel: {
+            id: `artifacts.file_debug_modal.download_url_label`,
+            defaultMessage: `Download URL`
+        }
+    }), gv = `/api/library/files`
+}));
+
+function vv(e) {
+    "use forget";
+    let t = (0, Cv.c)(7),
+        n = (0, wv.useRef)(null),
+        r = (0, wv.useRef)(null),
+        [i, a] = (0, wv.useState)(!1),
+        o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = () => {
+        let e = n.current;
+        if (!e) return;
+        let t = [e, ...Array.from(e.querySelectorAll(`[data-file-name-truncation-target='true']`))].some(co);
+        a(e => e === t ? e : t)
+    }, t[0] = o) : o = t[0];
+    let s = o,
+        c;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (c = () => {
+        let e = document.fonts;
+        return s(), e?.ready.then(s).catch(yv), e?.addEventListener?.(`loadingdone`, s), () => {
+            e?.removeEventListener?.(`loadingdone`, s)
+        }
+    }, t[1] = c) : c = t[1];
+    let l;
+    t[2] === e ? l = t[3] : (l = [s, e], t[2] = e, t[3] = l), (0, wv.useEffect)(c, l);
+    let u;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (u = e => {
+        if (r.current?.disconnect(), r.current = null, n.current = e, !e || (s(), typeof ResizeObserver > `u`)) return;
+        let t = new ResizeObserver(s);
+        t.observe(e);
+        for (let n of e.querySelectorAll(`[data-file-name-truncation-target], [data-file-name-full-text]`)) t.observe(n);
+        r.current = t
+    }, t[4] = u) : u = t[4];
+    let d = u,
+        f;
+    return t[5] === i ? f = t[6] : (f = {
+        ref: d,
+        isTruncated: i
+    }, t[5] = i, t[6] = f), f
+}
+
+function yv() {}
+
+function bv(e, t) {
+    let n = t ?? sr(e),
+        r = e.libraryFileId ?? e.id,
+        i = e.thumbnailUrl?.trim() || null,
+        a = Oi(e).isImageLike || e.classifiers.library_file_category === `image`,
+        o = i != null && e.source?.type === `google_drive` && a && /^https?:\/\//i.test(i) ? j(r, 512) : i;
+    return n == null && o == null ? null : {
+        id: r,
+        file_id: n ?? ``,
+        file_name: bs(e),
+        mime_type: e.mimeType ?? ``,
+        library_file_category: a ? `image` : void 0,
+        state: e.status === `available` ? `ready` : `failed`,
+        file_upload_time: e.createdAt,
+        file_size_bytes: e.sizeBytes ?? null,
+        gizmo_id: e.gizmoId ?? null,
+        thumbnail_url: o
+    }
+}
+
+function xv(e) {
+    "use forget";
+    let t = (0, Cv.c)(29),
+        {
+            artifact: n,
+            fileType: r,
+            thumbnailFileId: i,
+            showThumbnail: a,
+            sharedLibraryFileId: o
+        } = e,
+        s = a === void 0 || a,
+        [c, l] = (0, wv.useState)(null),
+        u = s && n.source?.type === `saved_entity` ? n.thumbnailUrl : void 0,
+        d;
+    t[0] !== n || t[1] !== s || t[2] !== i ? (d = s ? bv(n, i) : null, t[0] = n, t[1] = s, t[2] = i, t[3] = d) : d = t[3];
+    let f = d,
+        p;
+    t[4] !== n || t[5] !== r || t[6] !== o ? (p = n.source?.type === `chat_upload` && !$c(n) && Jc(o) && (r.isImageLike || n.classifiers.library_file_category === `image`) && gr() ? x(o, `content`) : null, t[4] = n, t[5] = r, t[6] = o, t[7] = p) : p = t[7];
+    let m = p;
+    if (yl(n)) {
+        let e;
+        return t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Tv.jsx)(ch, {
+            children: (0, Tv.jsx)(Qu, {
+                "aria-hidden": `true`,
+                className: `h-5 w-5`
+            })
+        }), t[8] = e) : e = t[8], e
+    }
+    let h;
+    t[9] === n ? h = t[10] : (h = xl(n), t[9] = n, t[10] = h);
+    let g = h,
+        _ = n.savedEntity?.saved_target.sidebar_params.category,
+        v;
+    t[11] === _ ? v = t[12] : (v = Ld(_), t[11] = _, t[12] = v);
+    let y = v,
+        b;
+    t[13] !== n || t[14] !== r || t[15] !== y || t[16] !== g ? (b = y == null ? g == null || Zr(n.classifiers.library_artifact_type) != null ? (0, Tv.jsx)(Ac, {
+        iconKey: r.iconKey,
+        "aria-hidden": `true`,
+        className: `h-5 w-5`
+    }) : (0, Tv.jsx)(_c, {
+        fileName: bs(n),
+        mimeType: n.mimeType,
+        mountedLibraryFileId: g.itemId,
+        libraryProvider: g.provider,
+        "aria-hidden": `true`,
+        className: `h-5 w-5`
+    }) : (0, Tv.jsx)(b_, {
+        kind: y,
+        surface: `list`
+    }), t[13] = n, t[14] = r, t[15] = y, t[16] = g, t[17] = b) : b = t[17];
+    let S = b,
+        C;
+    t[18] !== n.classifiers || t[19] !== c || t[20] !== S || t[21] !== u || t[22] !== m || t[23] !== i || t[24] !== f ? (C = m != null && m !== c ? (0, Tv.jsx)(`img`, {
+        src: m,
+        alt: ``,
+        draggable: !1,
+        decoding: `async`,
+        className: `h-full w-full shrink-0 object-cover`,
+        onError: () => l(m)
+    }) : u != null && u !== c ? (0, Tv.jsx)(`img`, {
+        alt: ``,
+        className: `h-full w-full object-cover`,
+        loading: `lazy`,
+        onError: () => l(u),
+        src: u
+    }) : f == null ? S : (0, Tv.jsx)(Uf, {
+        file: f,
+        className: Qs(n.classifiers.library_artifact_type) ? `h-5 w-5 dark:invert` : `h-full w-full`,
+        fallback: S,
+        loadFullSizeImage: i != null,
+        skipLibraryThumbnailUrl: i != null
+    }), t[18] = n.classifiers, t[19] = c, t[20] = S, t[21] = u, t[22] = m, t[23] = i, t[24] = f, t[25] = C) : C = t[25];
+    let w;
+    return t[26] !== g || t[27] !== C ? (w = (0, Tv.jsx)(ch, {
+        className: `overflow-hidden`,
+        source: g,
+        children: C
+    }), t[26] = g, t[27] = C, t[28] = w) : w = t[28], w
+}
+
+function Sv(e) {
+    "use forget";
+    let t = (0, Cv.c)(105),
+        {
+            artifact: n,
+            displayTitle: r,
+            checked: i,
+            isActive: a,
+            hasSelection: o,
+            hasRenameAction: s,
+            hasMoveAction: c,
+            showSelectionControls: l,
+            selectionEnabled: u,
+            showActions: d,
+            isSharedAccess: f,
+            showSharedBy: p,
+            showSizeColumn: m,
+            showFavoriteAction: h,
+            isFavorited: g,
+            favoriteMutationLoading: _,
+            actionsMenuOpen: v,
+            mutationLoading: y,
+            onActionsMenuOpen: b,
+            onOpen: x,
+            onOpenPreview: S,
+            onStartChat: C,
+            onCheckedChange: w,
+            downloadFile: T,
+            onDownload: E,
+            onDelete: D,
+            onDeleteInitiated: O,
+            onToggleFavorite: k,
+            additionalMenuItems: A,
+            lastModifiedLabel: j,
+            rowClassName: M,
+            showDownloadAction: N,
+            showDeleteAction: P,
+            thumbnailFileId: F
+        } = e,
+        I = s !== void 0 && s,
+        L = c !== void 0 && c,
+        R = l !== void 0 && l,
+        z = u === void 0 || u,
+        B = d === void 0 || d,
+        V = f !== void 0 && f,
+        H = p !== void 0 && p,
+        U = m === void 0 || m,
+        ee = h === void 0 || h,
+        W = g !== void 0 && g,
+        te = _ !== void 0 && _,
+        ne = N === void 0 || N,
+        re = P === void 0 || P,
+        ie = (0, wv.useId)(),
+        ae = (0, wv.useId)(),
+        G = (0, wv.useId)(),
+        oe = K(on),
+        se;
+    t[0] === n ? se = t[1] : (se = () => (wl(), Mi(n)), t[0] = n, t[1] = se);
+    let ce = K(se),
+        le = Yn(),
+        ue = (0, wv.useContext)(u_),
+        de = On(),
+        fe;
+    t[2] === n ? fe = t[3] : (fe = Oi(n), t[2] = n, t[3] = fe);
+    let pe = fe,
+        me = n.source?.type === `chat_upload` ? n.source.fileId : null,
+        q = cs(n) ? n.libraryFileId : void 0,
+        he = n.classifiers.library_artifact_type === `writing_block`,
+        ge;
+    t[4] !== n || t[5] !== he ? (ge = he ? sr(n) ?? void 0 : void 0, t[4] = n, t[5] = he, t[6] = ge) : ge = t[6];
+    let _e = ge,
+        ve = he ? n.libraryFileId : void 0,
+        ye = !V && ne && ve != null && _e != null,
+        be = !ye && ne && (V ? E != null : q == null && (!!me || E != null)),
+        xe = ne && !V ? q : void 0,
+        Se = y || !me && E == null,
+        Ce;
+    t[7] === n ? Ce = t[8] : (Ce = bs(n), t[7] = n, t[8] = Ce);
+    let we = Ce,
+        Te;
+    t[9] !== n.sharedAt || t[10] !== n.updatedAt || t[11] !== le || t[12] !== j || t[13] !== H ? (Te = j ?? (H ? rc(le, n.sharedAt, le.formatMessage(Z.unknownValue)) : rc(le, n.updatedAt)), t[9] = n.sharedAt, t[10] = n.updatedAt, t[11] = le, t[12] = j, t[13] = H, t[14] = Te) : Te = t[14];
+    let Ee = Te,
+        De = r ?? Ui(ce, n.classifiers.library_artifact_type, le),
+        Oe = xl(n),
+        ke = K(() => {
+            let e = n.externalAccountKey ?? n.externalAccount?.key;
+            if (!(Oe == null || e == null || !At())) return gm().find(t => t.provider === Oe.provider && t.accountKey === e)?.accountLabel ?? Wi(n.externalAccount)
+        }),
+        Ae = Oe == null ? void 0 : le.formatMessage(ba(Oe.provider).label),
+        je = Ae ? le.formatMessage(ke ? Ev.itemWithAccount : Z.itemWithSource, {
+            name: De,
+            source: Ae,
+            account: ke
+        }) : De,
+        Me;
+    t[15] !== n || t[16] !== le ? (Me = yl(n) ? le.formatMessage(Z.unknownValue) : pd(le, n.sizeBytes) ?? `-`, t[15] = n, t[16] = le, t[17] = Me) : Me = t[17];
+    let Ne = Me,
+        {
+            ref: Pe,
+            isTruncated: Fe
+        } = vv(De),
+        Ie = i || o || R,
+        Le = S != null && !o && !y,
+        Re;
+    t[18] !== oe || t[19] !== n.isShared || t[20] !== n.source?.type || t[21] !== V ? (Re = n.isShared === !0 && (n.source?.type === `google_drive` || (n.source?.type === `chat_upload` || V) && Rc(oe)), t[18] = oe, t[19] = n.isShared, t[20] = n.source?.type, t[21] = V, t[22] = Re) : Re = t[22];
+    let ze = Re,
+        Be = ee && k != null,
+        Ve;
+    t[23] === V ? Ve = t[24] : (Ve = !V && m_(), t[23] = V, t[24] = Ve);
+    let He = Ve,
+        Ue = `artifact-checkbox-bridge-${n.id}`,
+        We;
+    t[25] === n.originationThreadId ? We = t[26] : (We = n.originationThreadId?.trim(), t[25] = n.originationThreadId, t[26] = We);
+    let Ge = We,
+        Ke;
+    t[27] !== V || t[28] !== Ge ? (Ke = !V && Ge != null && Ge.length > 0 && al(), t[27] = V, t[28] = Ge, t[29] = Ke) : Ke = t[29];
+    let qe = Ke,
+        Je;
+    t[30] !== n || t[31] !== D || t[32] !== O || t[33] !== de ? (Je = async () => {
+        let e = rm(de, {
+            libraryFileId: n.libraryFileId,
+            projectGizmoId: n.gizmoId
+        });
+        O?.(), await im({
+            deletedFilesEnabled: em(),
+            fileName: bs(n),
+            projectImpact: e,
+            onConfirmDelete: async () => await D() !== !1
+        })
+    }, t[30] = n, t[31] = D, t[32] = O, t[33] = de, t[34] = Je) : Je = t[34];
+    let Ye = Je,
+        Xe = e => {
+            let {
+                focusable$: t
+            } = e;
+            return (0, Tv.jsx)(ah, {
+                disabled: y,
+                label: le.formatMessage(Ev.openActions, {
+                    name: De
+                }),
+                focusable$: t,
+                open: v,
+                onOpenChange: e => {
+                    !e || y || (b?.(), ue != null && Gf({
+                        analyticsSession: ue,
+                        availableActionSet: [...!V && C != null ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_START_CHAT] : [], ...ye || xe != null || be && !Se ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_DOWNLOAD] : [], ...I ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_RENAME] : [], ...L ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_MOVE] : [], ...re ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_DELETE] : []],
+                        menuKind: Jr.CHATGPT_FILE_LIBRARY_MENU_KIND_FILE_CONTEXT,
+                        provider: Hf(n)
+                    }))
+                },
+                children: e => {
+                    let {
+                        itemClassName: t
+                    } = e;
+                    return (0, Tv.jsxs)(yi.Group, {
+                        children: [C == null ? null : (0, Tv.jsx)(Qm, {
+                            itemClassName: t,
+                            onSelect: C
+                        }), He ? (0, Tv.jsx)(yi.Item, {
+                            size: `large`,
+                            disabled: y,
+                            className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, t),
+                            icon: (0, Tv.jsx)(xu, {
+                                "aria-hidden": `true`,
+                                className: `icon`
+                            }),
+                            label: (0, Tv.jsx)(X, {
+                                ...Ev.fileDebugMenuItem
+                            }),
+                            onSelect: () => {
+                                Nt(dv, {
+                                    artifact: n
+                                })
+                            }
+                        }) : null, qe ? (0, Tv.jsx)(rh, {
+                            size: `large`,
+                            itemClassName: t,
+                            conversationId: Ge,
+                            messageId: n.originationMessageId
+                        }) : null, Be ? (0, Tv.jsx)(yi.Item, {
+                            size: `large`,
+                            disabled: y || te,
+                            className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, t),
+                            icon: W ? (0, Tv.jsx)(du, {
+                                "aria-hidden": `true`,
+                                className: `icon`
+                            }) : (0, Tv.jsx)(Ru, {
+                                "aria-hidden": `true`,
+                                className: `icon`
+                            }),
+                            label: (0, Tv.jsx)(X, {
+                                ...W ? Z.removeFavoriteFile : Z.favoriteFile
+                            }),
+                            onSelect: k
+                        }) : null, ye ? (0, Tv.jsx)(cm, {
+                            libraryFileId: ve,
+                            contentFileId: _e,
+                            downloadLibraryMarkdown: () => {
+                                _e != null && T(_e, we)
+                            },
+                            disabled: y,
+                            renderAsSubmenu: !0,
+                            submenuItemClassName: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, t),
+                            submenuSize: `large`
+                        }) : null, be ? (0, Tv.jsx)(yi.Item, {
+                            size: `large`,
+                            disabled: Se,
+                            className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, t),
+                            icon: (0, Tv.jsx)(f_.Download, {
+                                className: `icon`
+                            }),
+                            label: (0, Tv.jsx)(X, {
+                                ...Ev.downloadFileMenuItem
+                            }),
+                            onSelect: () => {
+                                if (E != null) {
+                                    E();
+                                    return
+                                }
+                                if (me) {
+                                    if (n.libraryFileId != null) {
+                                        T(me, we, {
+                                            libraryDownloadId: n.libraryFileId
+                                        });
+                                        return
+                                    }
+                                    T(me, we)
+                                }
+                            }
+                        }) : null, xe == null ? null : (0, Tv.jsx)(F_, {
+                            libraryFileId: xe,
+                            fileName: we,
+                            disabled: y,
+                            itemClassName: t
+                        }), A?.({
+                            itemClassName: t
+                        }), re ? (0, Tv.jsx)(yi.Item, {
+                            size: `large`,
+                            disabled: y,
+                            className: J(`keyboard-focused:focus-ring`, `interactive-label-danger-soft dark:text-red-75!`, t),
+                            icon: (0, Tv.jsx)(f_.Trash, {
+                                className: `icon`
+                            }),
+                            label: (0, Tv.jsx)(X, {
+                                ...Ev.deleteFileMenuItem
+                            }),
+                            onSelect: () => {
+                                Ye()
+                            }
+                        }) : null]
+                    })
+                }
+            })
+        },
+        Ze = lh,
+        Qe = n.id,
+        $e = le.formatMessage(Ev.selectRow, {
+            name: je
+        }),
+        et = B ? Xe : void 0,
+        tt = `file-row-actions-${n.id}`,
+        nt = !o,
+        rt;
+    t[35] !== M || t[36] !== H || t[37] !== U ? (rt = J(`artifacts-surface-library-selectable-row`, j_.fileRow, Cm({
+        showSharedBy: H,
+        showSizeColumn: U
+    }), M), t[35] = M, t[36] = H, t[37] = U, t[38] = rt) : rt = t[38];
+    let it = !V,
+        at = V ? n.libraryFileId : void 0,
+        ot;
+    t[39] !== n || t[40] !== pe || t[41] !== it || t[42] !== at || t[43] !== F ? (ot = (0, Tv.jsx)(xv, {
+        artifact: n,
+        fileType: pe,
+        thumbnailFileId: F,
+        showThumbnail: it,
+        sharedLibraryFileId: at
+    }), t[39] = n, t[40] = pe, t[41] = it, t[42] = at, t[43] = F, t[44] = ot) : ot = t[44];
+    let st;
+    t[45] === De ? st = t[46] : (st = (0, Tv.jsx)(`span`, {
+        className: `block max-w-[320px] text-start break-all`,
+        children: De
+    }), t[45] = De, t[46] = st);
+    let ct = !Fe,
+        lt;
+    t[47] !== je || t[48] !== ke || t[49] !== n.id || t[50] !== n.sharedBy || t[51] !== G || t[52] !== W || t[53] !== V || t[54] !== ze || t[55] !== Le || t[56] !== S || t[57] !== ie || t[58] !== ae || t[59] !== H || t[60] !== De || t[61] !== Pe ? (lt = e => (0, Tv.jsxs)(`button`, {
+        type: `button`,
+        ref: Pe,
+        disabled: !Le,
+        "aria-label": je,
+        "aria-describedby": J(e[`aria-describedby`], W && G, ze && ie, V && !H && n.sharedBy?.name?.trim() && ae) || void 0,
+        interestfor: e.interestfor,
+        onClick: e => {
+            Le && (e.stopPropagation(), S())
+        },
+        onKeyDown: e => {
+            Le && (e.key !== `Enter` && e.key !== ` ` || (e.preventDefault(), e.stopPropagation(), S()))
+        },
+        className: J(`text-token-text-primary disabled:text-token-text-primary min-w-0 overflow-hidden border-0 bg-transparent p-0 text-start text-[14px] leading-5`, ze || W ? `flex w-fit max-w-full items-center gap-2` : `block w-full`, ke != null && j_.annotatedFileTitle, Le && `cursor-pointer`),
+        style: e.style,
+        children: [(0, Tv.jsx)(th, {
+            fileName: De
+        }), ke == null ? null : (0, Tv.jsx)(`span`, {
+            "aria-hidden": `true`,
+            className: j_.accountAnnotation,
+            children: (0, Tv.jsx)(`span`, {
+                className: j_.accountName,
+                children: ke
+            })
+        }), W ? (0, Tv.jsx)(Hu, {
+            "aria-hidden": `true`,
+            className: `icon-xs text-token-text-secondary shrink-0`
+        }) : null, ze ? (0, Tv.jsx)(Xm, {
+            fileId: n.id
+        }) : null, V && !H ? (0, Tv.jsx)(`span`, {
+            id: ae,
+            className: `text-token-text-secondary max-w-[40%] shrink-0 truncate text-xs`,
+            children: n.sharedBy?.name?.trim() ? (0, Tv.jsx)(X, {
+                ...Z.sharedBySource,
+                values: {
+                    name: n.sharedBy.name.trim()
+                }
+            }) : (0, Tv.jsx)(X, {
+                ...Z.unknownSharedSource
+            })
+        }) : null]
+    }), t[47] = je, t[48] = ke, t[49] = n.id, t[50] = n.sharedBy, t[51] = G, t[52] = W, t[53] = V, t[54] = ze, t[55] = Le, t[56] = S, t[57] = ie, t[58] = ae, t[59] = H, t[60] = De, t[61] = Pe, t[62] = lt) : lt = t[62];
+    let ut;
+    t[63] !== st || t[64] !== ct || t[65] !== lt ? (ut = (0, Tv.jsx)(ii, {
+        content: st,
+        contentLayout: `multi-line`,
+        disabled: ct,
+        side: `top`,
+        children: lt
+    }), t[63] = st, t[64] = ct, t[65] = lt, t[66] = ut) : ut = t[66];
+    let dt;
+    t[67] !== G || t[68] !== W ? (dt = W ? (0, Tv.jsx)(`span`, {
+        id: G,
+        className: `sr-only`,
+        children: (0, Tv.jsx)(X, {
+            id: `artifacts.folder_surface.favorite_file.description`,
+            defaultMessage: `In Favorites`
+        })
+    }) : null, t[67] = G, t[68] = W, t[69] = dt) : dt = t[69];
+    let ft;
+    t[70] !== ze || t[71] !== ie ? (ft = ze ? (0, Tv.jsx)(`span`, {
+        id: ie,
+        className: `sr-only`,
+        children: (0, Tv.jsx)(X, {
+            ...Z.sharedFile
+        })
+    }) : null, t[70] = ze, t[71] = ie, t[72] = ft) : ft = t[72];
+    let pt;
+    t[73] !== ut || t[74] !== dt || t[75] !== ft ? (pt = (0, Tv.jsxs)(Tv.Fragment, {
+        children: [ut, dt, ft]
+    }), t[73] = ut, t[74] = dt, t[75] = ft, t[76] = pt) : pt = t[76];
+    let mt;
+    t[77] !== n.sharedBy?.avatarUrl || t[78] !== n.sharedBy?.name || t[79] !== n.sharedBy?.userId || t[80] !== H || t[81] !== U || t[82] !== Ne ? (mt = H ? (0, Tv.jsx)(eh, {
+        avatarUrl: n.sharedBy?.avatarUrl,
+        name: n.sharedBy?.name,
+        userId: n.sharedBy?.userId
+    }) : U ? Ne : null, t[77] = n.sharedBy?.avatarUrl, t[78] = n.sharedBy?.name, t[79] = n.sharedBy?.userId, t[80] = H, t[81] = U, t[82] = Ne, t[83] = mt) : mt = t[83];
+    let ht = H || U ? `sm:ps-4` : `hidden!`,
+        gt;
+    return t[84] !== Ze || t[85] !== n.id || t[86] !== Ue || t[87] !== i || t[88] !== o || t[89] !== a || t[90] !== w || t[91] !== x || t[92] !== Ee || t[93] !== z || t[94] !== Ie || t[95] !== $e || t[96] !== et || t[97] !== tt || t[98] !== nt || t[99] !== rt || t[100] !== ot || t[101] !== pt || t[102] !== mt || t[103] !== ht ? (gt = (0, Tv.jsx)(Ze, {
+        selectionEnabled: z,
+        selectionId: Qe,
+        checked: i,
+        active: a,
+        showCheckbox: Ie,
+        checkboxLabel: $e,
+        checkboxBridgeTestId: Ue,
+        onActivate: x,
+        onCheckedChange: w,
+        actions: et,
+        actionsHidden: o,
+        actionsWrapperTestId: tt,
+        actionsVisibility: `mobile-always`,
+        actionsFocusable: nt,
+        actionsClassName: `gap-2`,
+        className: rt,
+        leadingVisual: ot,
+        title: pt,
+        mobileMetadata: Ee,
+        secondaryContent: Ee,
+        tertiaryContent: mt,
+        tertiaryCellClassName: ht
+    }), t[84] = Ze, t[85] = n.id, t[86] = Ue, t[87] = i, t[88] = o, t[89] = a, t[90] = w, t[91] = x, t[92] = Ee, t[93] = z, t[94] = Ie, t[95] = $e, t[96] = et, t[97] = tt, t[98] = nt, t[99] = rt, t[100] = ot, t[101] = pt, t[102] = mt, t[103] = ht, t[104] = gt) : gt = t[104], gt
+}
+var Cv, wv, Tv, Ev, Dv, Ov = e((() => {
+        Cv = qn(), ho(), mf(), la(), ea(), Yu(), Al(), Mu(), Cu(), Ou(), n(), wi(), es(), Do(), ss(), ia(), D(), np(), d_(), p_(), Bo(), am(), hd(), pi(), Jo(), yc(), po(), xo(), g_(), tm(), ri(), x_(), Kd(), fe(), Ps(), sm(), Id(), Kn(), ke(), wv = t(Fn()), Pn(), ct(), zt(), M_(), lm(), Ir(), Ta(), B_(), nm(), _v(), Ka(), Tm(), $m(), nh(), sh(), Tv = wn(), Ev = Dn({
+            itemWithAccount: {
+                id: `artifacts.surface.file_with_account`,
+                defaultMessage: `{name}, {source}, {account}`
+            },
+            selectRow: {
+                id: `artifacts.surface.select_row`,
+                defaultMessage: `Select {name}`
+            },
+            openActions: {
+                id: `artifacts.surface.actions.open`,
+                defaultMessage: `Open actions menu for {name}`
+            },
+            downloadFileMenuItem: {
+                id: `artifacts.surface.actions.download_menu_item`,
+                defaultMessage: `Download`
+            },
+            fileDebugMenuItem: {
+                id: `artifacts.surface.actions.file_debug_menu_item`,
+                defaultMessage: `File Debug`
+            },
+            deleteFileMenuItem: {
+                id: `artifacts.surface.actions.delete_menu_item`,
+                defaultMessage: `Delete`
+            }
+        }), Dv = ih
+    })),
+    kv, Av, jv, Mv = e((() => {
+        kv = qn(), M(), xe(), Ka(), ct(), Pn(), Av = wn(), jv = e => {
+            "use forget";
+            let t = (0, kv.c)(34),
+                {
+                    confirmation: n,
+                    isLoading$: r,
+                    onClose: i,
+                    onConfirm: a
+                } = e,
+                o = Yn(),
+                s = K(r),
+                c;
+            t[0] !== n.name || t[1] !== o ? (c = o.formatMessage(Z.deleteFolderConfirmDescription, {
+                name: n.name
+            }), t[0] = n.name, t[1] = o, t[2] = c) : c = t[2];
+            let l = c,
+                u;
+            t[3] !== r || t[4] !== i ? (u = () => {
+                r() || i()
+            }, t[3] = r, t[4] = i, t[5] = u) : u = t[5];
+            let d = u,
+                f;
+            t[6] === o ? f = t[7] : (f = o.formatMessage(Z.deleteFolderConfirmTitle), t[6] = o, t[7] = f);
+            let m;
+            t[8] === o ? m = t[9] : (m = o.formatMessage(Z.deleteFolder), t[8] = o, t[9] = m);
+            let h;
+            t[10] === a ? h = t[11] : (h = () => {
+                a()
+            }, t[10] = a, t[11] = h);
+            let g;
+            t[12] !== s || t[13] !== m || t[14] !== h ? (g = (0, Av.jsx)(le.Button, {
+                title: m,
+                color: `danger`,
+                onClick: h,
+                disabled: s,
+                loading: s
+            }), t[12] = s, t[13] = m, t[14] = h, t[15] = g) : g = t[15];
+            let _;
+            t[16] === o ? _ = t[17] : (_ = o.formatMessage(Z.cancelCreateFolder), t[16] = o, t[17] = _);
+            let v;
+            t[18] !== d || t[19] !== s || t[20] !== _ ? (v = (0, Av.jsx)(le.Button, {
+                title: _,
+                color: `secondary`,
+                onClick: d,
+                disabled: s
+            }), t[18] = d, t[19] = s, t[20] = _, t[21] = v) : v = t[21];
+            let y;
+            t[22] === l ? y = t[23] : (y = (0, Av.jsx)(`p`, {
+                className: `text-token-text-primary text-sm leading-5`,
+                children: l
+            }), t[22] = l, t[23] = y);
+            let b;
+            t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (b = (0, Av.jsx)(`p`, {
+                className: `text-token-text-tertiary text-sm leading-5`,
+                children: (0, Av.jsx)(X, {
+                    ...Z.deleteFolderConfirmWarning
+                })
+            }), t[24] = b) : b = t[24];
+            let x;
+            t[25] === y ? x = t[26] : (x = (0, Av.jsxs)(`div`, {
+                className: `space-y-3 text-start`,
+                children: [y, b]
+            }), t[25] = y, t[26] = x);
+            let S;
+            return t[27] !== d || t[28] !== s || t[29] !== x || t[30] !== f || t[31] !== g || t[32] !== v ? (S = (0, Av.jsx)(p, {
+                testId: `modal-delete-confirm`,
+                isOpen: !0,
+                onClose: d,
+                shouldIgnoreClickOutside: s,
+                title: f,
+                headerClassName: `px-5 pt-5 pb-0`,
+                contentClassName: `px-5 pb-5 pt-4`,
+                footerClassName: `w-full`,
+                footerActionsWrapperClassName: `w-full`,
+                modalActionsClassName: `sm:flex-row`,
+                primaryButton: g,
+                secondaryButton: v,
+                children: x
+            }), t[27] = d, t[28] = s, t[29] = x, t[30] = f, t[31] = g, t[32] = v, t[33] = S) : S = t[33], S
+        }
+    }));
+
+function Nv(e) {
+    let t = e.lastUsedAt ? new Date(e.lastUsedAt) : null,
+        n = e.updatedAt ? new Date(e.updatedAt) : null,
+        r = t != null && !Number.isNaN(t.getTime()) ? t : null,
+        i = n != null && !Number.isNaN(n.getTime()) ? n : null;
+    return r != null && ($c(e) || i == null || r > i) ? {
+        timestamp: r,
+        kind: `opened`
+    } : {
+        timestamp: i,
+        kind: `modified`
+    }
+}
+
+function Pv({
+    isNativeSharedWithMe: e,
+    showSuggestedActivity: t
+}) {
+    if (t) return {
+        getLastModifiedValue: e => Nv(e).timestamp?.toISOString() ?? ``
+    };
+    if (e) return {
+        getLastModifiedValue: e => e.sharedAt ?? ``
+    }
+}
+
+function Fv(e, t) {
+    let n = Uv[t];
+    return e?.key === t ? e.direction === n ? {
+        key: t,
+        direction: n === `asc` ? `desc` : `asc`
+    } : null : {
+        key: t,
+        direction: n
+    }
+}
+
+function Iv(e, t, n) {
+    let r = e.trim(),
+        i = t.trim(),
+        a = r.length === 0,
+        o = i.length === 0;
+    if (a && o) return 0;
+    if (a) return 1;
+    if (o) return -1;
+    let s = Vv.compare(r, i);
+    return n === `asc` ? s : -s
+}
+
+function Lv(e) {
+    return typeof e == `number` && Number.isFinite(e)
+}
+
+function Rv(e, t, n) {
+    let r = Lv(e),
+        i = Lv(t);
+    if (!r && !i) return 0;
+    if (!r) return 1;
+    if (!i) return -1;
+    let a = e - t;
+    return a === 0 ? 0 : n === `asc` ? a : -a
+}
+
+function zv(e, t, n = {}) {
+    return t === `name` ? bs(e) : t === `lastModified` ? n.getLastModifiedValue?.(e) ?? e.updatedAt : t
+}
+
+function Bv(e, t, n = {}) {
+    let r = [...e];
+    return r.sort((e, r) => {
+        let i = t.key === `size` ? Rv(e.sizeBytes, r.sizeBytes, t.direction) : Iv(zv(e, t.key, n), zv(r, t.key, n), t.direction);
+        return i === 0 ? Iv(bs(e), bs(r), `asc`) : i
+    }), r
+}
+var Vv, Hv, Uv, Wv = e((() => {
+    Ir(), Bo(), Vv = new Intl.Collator(void 0, {
+        numeric: !0,
+        sensitivity: `base`
+    }), Hv = {
+        key: `lastModified`,
+        direction: `desc`
+    }, Uv = {
+        name: `asc`,
+        lastModified: `desc`,
+        size: `desc`
+    }
+}));
+
+function Gv(e, t, n, r, i, a) {
+    if (!t && i == null) return [...e];
+    let o = e => Nc(e.id) || f(e.id),
+        s = [...e];
+    if (t && n) {
+        let e = s.filter(e => !o(e)).sort((e, t) => Iv(e.record_creation_time ?? e.updated_at ?? ``, t.record_creation_time ?? t.updated_at ?? ``, `desc`) || Hi(e, t)),
+            t = 0;
+        s = s.map(n => o(n) ? n : e[t++] ?? n)
+    }
+    return s.filter(e => {
+        let n = Na(e.id)?.provider;
+        return n == null || (!t || !r.has(n)) && (i == null || i.includes(n)) && (!t || !gc(e.id, n, e.external_account?.key, a))
+    })
+}
+
+function Kv(e, t) {
+    let n = {
+        name: e
+    };
+    return t != null && (n.parent_directory_id = t), {
+        optimisticDirectory: {
+            id: `optimistic-directory:${Date.now()}:${Math.random().toString(36).slice(2)}`,
+            isPending: !0,
+            name: e,
+            parent_directory_id: t,
+            updated_at: new Date().toISOString()
+        },
+        requestBody: n
+    }
+}
+
+function qv(e, t, n) {
+    let r = ge(e),
+        i = ns(e) || r,
+        a = t && r,
+        o = Kr(e) || a;
+    return {
+        canRenameDirectoryNode: e => !i && !ge(e) && Fc(e),
+        isCurrentReadOnlyDirectory: i,
+        isHiddenSharedAccessDirectory: r && !t,
+        isNativeSharedWithMe: a,
+        isReadOnlyDirectoryNode: e => i || Zo(e) || ge(e),
+        isSharedAccessDirectory: r,
+        preserveProviderOrder: n && (o || r),
+        sharedWithMe: o
+    }
+}
+
+function Jv(e) {
+    return `${e.parent_directory_id??`__root__`}:${Xr(e.name)}`
+}
+
+function Yv(e) {
+    return ls(e.id) || f(e.id) || e.is_shared === !0 ? e.id : Jv(e)
+}
+
+function Xv(e, t, n) {
+    let r = rn(e, t) || Zv(e, t);
+    if (r !== 0) return r;
+    if (n.key === `lastModified`) {
+        let r = ge(e.parent_directory_id),
+            i = ge(t.parent_directory_id),
+            a = (r || i) && Rc(),
+            o = a && r ? e.shared_at : e.updated_at,
+            s = a && i ? t.shared_at : t.updated_at,
+            c = Iv(o ?? ``, s ?? ``, n.direction);
+        return c === 0 ? Hi(e, t) : c
+    }
+    let i = Hi(e, t);
+    return n.key !== `name` || n.direction === `asc` ? i : -i
+}
+
+function Zv(e, t) {
+    let n = Kr(e.id);
+    return n === Kr(t.id) ? 0 : n ? -1 : 1
+}
+
+function Qv(e, t) {
+    let n = Nc(e.id);
+    return n === Nc(t.id) ? n ? Hi(e, t) : 0 : n ? -1 : 1
+}
+
+function $v(e, t, n) {
+    return rn(e, t) || Qv(e, t) || Xv(e, t, n)
+}
+
+function ey({
+    globalSearchEnabled: e,
+    hiddenDeletedDirectoryIds: t,
+    preserveProviderOrder: n,
+    searchResults: r,
+    shouldSearchDirectories: i,
+    sortState: a,
+    tab: o,
+    visibleProviders: s
+}) {
+    if (!i || o !== `all` && o !== `folders` && !(e && o === `suggested`)) return [];
+    let c = r.filter(e => {
+        if (e.kind !== `directory` || t.has(e.id)) return !1;
+        let n = Na(e.id)?.provider;
+        return n == null || s == null || s.includes(n)
+    });
+    return e || n ? c : c.sort((e, t) => $v(e, t, a))
+}
+
+function ty(e) {
+    return no(e.id) === `gdrive` && e.is_shared === !0
+}
+
+function ny(e, t = V()) {
+    return no(e.id) == null && e.is_shared === !0 && Rc(t)
+}
+
+function ry(e, {
+    large: t = !1
+} = {}) {
+    let n = t ? `size-12 shrink-0` : void 0,
+        r = f(e.id) && Rc(),
+        i = Kr(e.id);
+    if (r || i) return (0, ly.jsx)(lu, {
+        "aria-hidden": `true`,
+        className: n ?? `icon shrink-0`,
+        "data-testid": `google-drive-shared-with-me-directory-icon`
+    });
+    let a = ny(e);
+    if (a || ty(e)) return (0, ly.jsx)(au, {
+        "aria-hidden": `true`,
+        className: n ?? `icon shrink-0`,
+        "data-testid": a ? `library-shared-directory-icon` : `google-drive-shared-with-me-directory-icon`
+    });
+    if (!Nc(e.id)) return;
+    if (no(e.id) === `sharepoint`) return (0, ly.jsx)(yp, {
+        "aria-hidden": `true`,
+        className: n ?? `h-5 w-5 shrink-0`,
+        "data-testid": `sharepoint-directory-icon`
+    });
+    let o = Na(e.id);
+    return o == null ? void 0 : (0, ly.jsx)(Es, {
+        provider: o.provider,
+        "aria-hidden": `true`,
+        className: n ?? `h-5 w-5 shrink-0`,
+        "data-testid": `${o.provider.replace(`_`,`-`)}-directory-icon`
+    })
+}
+
+function iy({
+    currentDirectoryId: e,
+    directoryItems: t,
+    optimisticDirectories: n
+}) {
+    return [...n.filter(t => t.parent_directory_id === e).filter(e => !t.some(t => t.id === e.id || !ls(t.id) && Jv(t) === Jv(e))).map(e => ({
+        kind: `directory`,
+        id: e.id,
+        isOptimistic: e.isPending,
+        name: e.name,
+        parent_directory_id: e.parent_directory_id,
+        updated_at: e.updated_at
+    })), ...t]
+}
+
+function ay(e) {
+    return iy(e).sort((e, t) => rn(e, t) || Zv(e, t) || Hi(e, t))
+}
+
+function oy({
+    currentDirectoryId: e,
+    directoryItems: t,
+    hiddenDeletedDirectoryIds: n,
+    optimisticDirectories: r,
+    preserveProviderOrder: i,
+    sortState: a
+}) {
+    let o = (i ? t : iy({
+        currentDirectoryId: e,
+        directoryItems: t,
+        optimisticDirectories: r
+    })).filter(e => !n.has(e.id));
+    return i ? o : o.sort((e, t) => $v(e, t, a))
+}
+
+function sy(e, t, n) {
+    return [t, ...e.filter(e => n != null && e.id === n ? !1 : e.id !== t.id && Jv(e) !== Jv(t))]
+}
+
+function cy(e, t, n, r) {
+    let i = {
+            id: t.id,
+            isPending: !1,
+            name: t.name,
+            parent_directory_id: n,
+            updated_at: r
+        },
+        a = e.filter(e => e.id !== t.id);
+    return a.push(i), a
+}
+var ly, uy = e((() => {
+        bp(), Iu(), ru(), Xc(), pi(), Bo(), lr(), Hr(), vi(), Wv(), fn(), xo(), fe(), ly = wn()
+    })),
+    dy = e((() => {
+        zt()
+    })),
+    fy = e((() => {
+        xr()
+    }));
+
+function py(e) {
+    let t = Ds(e.id);
+    if (t?.kind !== `root` || t.encodedAccountKey == null) return null;
+    if (t.providerSlug !== `gdrive`) {
+        if (!Tl(t.providerSlug)) return null;
+        let n = e.external_account?.email?.trim();
+        return n && n !== e.name ? n : null
+    }
+    let n = e.external_account?.nickname?.trim(),
+        r = e.external_account?.email?.trim();
+    return n && r && n !== r ? r : null
+}
+
+function my(e) {
+    let t = py(e);
+    return t ? `${e.name}, ${t}` : e.name
+}
+
+function hy(e) {
+    "use forget";
+    let t = (0, Ey.c)(7),
+        {
+            folderIcon: n,
+            node: r
+        } = e,
+        i;
+    t[0] === r.id ? i = t[1] : (i = Nc(r.id) ? void 0 : Na(r.id), t[0] = r.id, t[1] = i);
+    let a;
+    t[2] === n ? a = t[3] : (a = n ?? (0, $.jsx)(wu, {
+        "aria-hidden": `true`,
+        className: `h-5 w-5 shrink-0`
+    }), t[2] = n, t[3] = a);
+    let o;
+    return t[4] !== i || t[5] !== a ? (o = (0, $.jsx)(ch, {
+        source: i,
+        children: a
+    }), t[4] = i, t[5] = a, t[6] = o) : o = t[6], o
+}
+
+function gy(e) {
+    "use forget";
+    let t = (0, Ey.c)(5),
+        {
+            node: n,
+            onVisible: r
+        } = e,
+        i;
+    t[0] !== n || t[1] !== r ? (i = () => {
+        r(n)
+    }, t[0] = n, t[1] = r, t[2] = i) : i = t[2];
+    let a = gh(i, 0),
+        o;
+    return t[3] === a ? o = t[4] : (o = (0, $.jsx)(`span`, {
+        ref: a,
+        "aria-hidden": `true`,
+        className: `pointer-events-none absolute inset-0`
+    }), t[3] = a, t[4] = o), o
+}
+
+function _y(e) {
+    "use forget";
+    let t = (0, Ey.c)(50),
+        {
+            canRename: n,
+            canMove: r,
+            canDelete: i,
+            canViewSharingState: a,
+            folderId: o,
+            folderName: s,
+            sharingEntryId: c,
+            sharingCanManage: l,
+            parentDirectoryId: u,
+            rootDirectoryId: d,
+            mutationLoading: f,
+            onStartChatFolder: p,
+            onMoveFolder: m,
+            onRenameFolder: h,
+            onDeleteFolder: g,
+            onRemoveSharedFolder: _,
+            focusable$: v,
+            tabIndex: y,
+            variant: b,
+            analyticsSession: x
+        } = e,
+        S = n === void 0 || n,
+        C = r !== void 0 && r,
+        w = i === void 0 || i,
+        T = a !== void 0 && a,
+        E = Yn(),
+        D = K(on),
+        O;
+    t[0] !== D || t[1] !== S || t[2] !== T || t[3] !== o || t[4] !== l || t[5] !== c ? (O = (c == null || l !== !1) && (S || T) && !Zo(o) && No(D), t[0] = D, t[1] = S, t[2] = T, t[3] = o, t[4] = l, t[5] = c, t[6] = O) : O = t[6];
+    let k = O,
+        A;
+    t[7] === o ? A = t[8] : (A = fl(Fa(o)), t[7] = o, t[8] = A);
+    let j = A,
+        M;
+    t[9] !== w || t[10] !== C || t[11] !== S || t[12] !== k || t[13] !== f || t[14] !== m || t[15] !== p ? (M = f ? [] : [...p == null ? [] : [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_START_CHAT], ...k ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_SHARE] : [], ...S ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_RENAME] : [], ...C && m != null ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_MOVE] : [], ...w ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_DELETE] : []], t[9] = w, t[10] = C, t[11] = S, t[12] = k, t[13] = f, t[14] = m, t[15] = p, t[16] = M) : M = t[16];
+    let N = M,
+        P;
+    t[17] !== s || t[18] !== E ? (P = E.formatMessage(Z.openActions, {
+        name: s
+    }), t[17] = s, t[18] = E, t[19] = P) : P = t[19];
+    let F;
+    t[20] !== x || t[21] !== N || t[22] !== j ? (F = e => {
+        e && bh({
+            analyticsSession: x,
+            availableActionSet: N,
+            menuKind: Jr.CHATGPT_FILE_LIBRARY_MENU_KIND_FILE_CONTEXT,
+            provider: j
+        })
+    }, t[20] = x, t[21] = N, t[22] = j, t[23] = F) : F = t[23];
+    let I;
+    t[24] !== w || t[25] !== C || t[26] !== S || t[27] !== k || t[28] !== T || t[29] !== o || t[30] !== s || t[31] !== f || t[32] !== g || t[33] !== m || t[34] !== _ || t[35] !== h || t[36] !== p || t[37] !== u || t[38] !== d || t[39] !== l || t[40] !== c ? (I = e => {
+        let {
+            itemClassName: t
+        } = e;
+        return (0, $.jsxs)(yi.Group, {
+            children: [p == null ? null : (0, $.jsx)(Qm, {
+                itemClassName: t,
+                onSelect: p
+            }), k ? (0, $.jsx)(yi.Item, {
+                size: `large`,
+                disabled: f,
+                className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, t),
+                icon: (0, $.jsx)(f_.Share, {
+                    className: `icon`
+                }),
+                label: (0, $.jsx)(X, {
+                    ...kh.shareAction
+                }),
+                onSelect: () => {
+                    if (!Fh({
+                            libraryFileId: o,
+                            resourceKind: `folder`,
+                            sharingEntryId: c,
+                            sharingCanManage: l
+                        })) {
+                        if (T) {
+                            Nt(Ph, {
+                                fileName: s,
+                                libraryFileId: _n(o) ?? o,
+                                resourceKind: `folder`
+                            });
+                            return
+                        }
+                        Nt(Mh, {
+                            fileName: s,
+                            libraryFileId: o,
+                            resourceKind: `folder`
+                        })
+                    }
+                }
+            }) : null, S ? (0, $.jsx)(yi.Item, {
+                size: `large`,
+                disabled: f,
+                className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, t),
+                icon: (0, $.jsx)(f_.Edit, {
+                    className: `icon`
+                }),
+                label: (0, $.jsx)(X, {
+                    ...Z.rename
+                }),
+                onSelect: () => {
+                    h()
+                }
+            }) : null, C && m != null ? (0, $.jsx)(yi.Item, {
+                size: `large`,
+                disabled: f,
+                className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, t),
+                icon: (0, $.jsx)(Pu, {
+                    "aria-hidden": `true`,
+                    className: `icon text-token-text-primary`
+                }),
+                label: (0, $.jsx)(X, {
+                    ...Vs(u, d) ? Z.moveToFolder : Z.moveFolder
+                }),
+                onSelect: e => {
+                    e.preventDefault(), e.stopPropagation(), m()
+                }
+            }) : null, w ? (0, $.jsx)(yi.Item, {
+                size: `large`,
+                disabled: f,
+                className: J(`keyboard-focused:focus-ring`, `text-token-text-status-error`, t),
+                icon: (0, $.jsx)(f_.Trash, {
+                    className: `icon text-token-text-status-error`
+                }),
+                label: (0, $.jsx)(X, {
+                    ...Z.deleteFolder
+                }),
+                onSelect: () => {
+                    g()
+                }
+            }) : null, _ == null ? null : (0, $.jsx)(yi.Item, {
+                size: `large`,
+                disabled: f,
+                className: J(`keyboard-focused:focus-ring`, `text-token-text-status-error`, t),
+                icon: (0, $.jsx)(uu, {
+                    "aria-hidden": `true`,
+                    className: `icon`
+                }),
+                label: (0, $.jsx)(X, {
+                    ...kh.leaveAction
+                }),
+                onSelect: () => {
+                    _()
+                }
+            })]
+        })
+    }, t[24] = w, t[25] = C, t[26] = S, t[27] = k, t[28] = T, t[29] = o, t[30] = s, t[31] = f, t[32] = g, t[33] = m, t[34] = _, t[35] = h, t[36] = p, t[37] = u, t[38] = d, t[39] = l, t[40] = c, t[41] = I) : I = t[41];
+    let L;
+    return t[42] !== v || t[43] !== f || t[44] !== I || t[45] !== P || t[46] !== F || t[47] !== y || t[48] !== b ? (L = (0, $.jsx)(ah, {
+        disabled: f,
+        label: P,
+        focusable$: v,
+        tabIndex: y,
+        variant: b,
+        onOpenChange: F,
+        children: I
+    }), t[42] = v, t[43] = f, t[44] = I, t[45] = P, t[46] = F, t[47] = y, t[48] = b, t[49] = L) : L = t[49], L
+}
+
+function vy() {}
+
+function yy() {
+    return !1
+}
+
+function by() {}
+
+function xy() {
+    return !1
+}
+
+function Sy() {}
+
+function Cy() {
+    return !1
+}
+
+function wy() {}
+
+function Ty() {
+    return !1
+}
+var Ey, Dy, $, Oy, ky, Ay, jy = e((() => {
+    Ey = qn(), ll(), ea(), Fl(), kl(), $u(), Eu(), n(), _h(), Ot(), p_(), Ka(), Tm(), ff(), Oh(), sl(), uy(), Bo(), lr(), Hr(), Ah(), jh(), Nh(), dy(), Vc(), Lh(), ri(), pi(), fn(), fy(), xr(), Ci(), xo(), W(), fe(), zt(), Ps(), Lo(), ke(), Dy = t(Fn()), Pn(), Id(), M_(), Jm(), Xc(), $m(), sh(), $ = wn(), Oy = `240px`, ky = e => {
+        "use forget";
+        let t = (0, Ey.c)(167),
+            {
+                node: n,
+                rootDirectoryId: r,
+                checked: i,
+                hasSelection: a,
+                showSelectionControls: o,
+                mergeWithPrevious: s,
+                mergeWithNext: c,
+                canOpen: l,
+                canMove: u,
+                canDelete: d,
+                draggable: p,
+                onOpenFolder: m,
+                onStartChatFolder: h,
+                onCheckedChange: g,
+                onMoveFolder: _,
+                onRenameFolder: v,
+                onDeleteFolder: y,
+                onRemoveSharedFolder: b,
+                onVisibleForPrefetch: x,
+                onVisibleFolder: S,
+                onDragStartFolder: C,
+                onDragEndFolder: w,
+                onDragEnterFolder: T,
+                onDragLeaveFolder: E,
+                onDropFileOnFolder: D,
+                isDropTarget: O,
+                movePending: k,
+                mutationLoading: A,
+                showActions: j,
+                showSharedBy: M,
+                showSizeColumn: N,
+                folderIcon: P,
+                analyticsSession: F
+            } = e,
+            I = r === void 0 ? null : r,
+            L = o !== void 0 && o,
+            R = s !== void 0 && s,
+            z = c !== void 0 && c,
+            B = l === void 0 || l,
+            V = p !== void 0 && p,
+            H = w === void 0 ? vy : w,
+            U = T === void 0 ? yy : T,
+            ee = E === void 0 ? by : E,
+            W = D === void 0 ? xy : D,
+            te = O !== void 0 && O,
+            ne = k !== void 0 && k,
+            re = M !== void 0 && M,
+            ie = N === void 0 || N,
+            ae = K(on),
+            G;
+        t[0] === n.id ? G = t[1] : (G = Zo(n.id), t[0] = n.id, t[1] = G);
+        let oe = G,
+            se = Nc(n.id) ? void 0 : Na(n.id),
+            ce = n.id === Mr,
+            le = u ?? !oe,
+            ue = d ?? !oe,
+            de;
+        t[2] !== n.id || t[3] !== j ? (de = j ?? Fc(n.id), t[2] = n.id, t[3] = j, t[4] = de) : de = t[4];
+        let fe = de,
+            pe;
+        t[5] !== ae || t[6] !== oe || t[7] !== n || t[8] !== fe ? (pe = !fe && !oe && ny(n, ae) && No(ae), t[5] = ae, t[6] = oe, t[7] = n, t[8] = fe, t[9] = pe) : pe = t[9];
+        let me = pe,
+            q = !oe && (n.direct_share_id != null || n.has_opened_shared_membership === !0) && b != null,
+            he = fe || me || h != null || q,
+            _e = Yn(),
+            ve;
+        t[10] === n ? ve = t[11] : (ve = py(n), t[10] = n, t[11] = ve);
+        let ye = ve,
+            be = my(n),
+            xe = se == null ? be : _e.formatMessage(Z.itemWithSource, {
+                name: be,
+                source: _e.formatMessage(ba(se.provider).label)
+            }),
+            Se = n.globalSearchItem != null && !aa(n.id) ? n.external_account : void 0,
+            Ce = Wi(Se),
+            we = Ce == null ? xe : [xe, Ce].join(` · `),
+            Te = (0, Dy.useId)(),
+            Ee = (0, Dy.useId)(),
+            De;
+        t[12] !== ae || t[13] !== n ? (De = ny(n, ae) || ty(n), t[12] = ae, t[13] = n, t[14] = De) : De = t[14];
+        let Oe = De,
+            ke;
+        t[15] !== n.id || t[16] !== re ? (ke = !re && ge(n.id) && !f(n.id), t[15] = n.id, t[16] = re, t[17] = ke) : ke = t[17];
+        let Ae = ke,
+            je;
+        t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (je = {
+            rootMargin: Oy,
+            onlyOnce: !0
+        }, t[18] = je) : je = t[18];
+        let [Me, Ne] = Xo(je), Pe;
+        t[19] !== n.id || t[20] !== g ? (Pe = g != null && !Nc(n.id) && !Gs(n.id) && !f(n.id), t[19] = n.id, t[20] = g, t[21] = Pe) : Pe = t[21];
+        let Fe = Pe,
+            Ie = Fe && (i ?? !1),
+            Le = a ?? !1,
+            Re = B && !Le && !A,
+            ze = re ? n.shared_at : n.updated_at,
+            Be;
+        t[22] !== _e || t[23] !== ze ? (Be = ze == null ? _e.formatMessage(Z.unknownValue) : rc(_e, ze), t[22] = _e, t[23] = ze, t[24] = Be) : Be = t[24];
+        let Ve = Be,
+            He, Ue;
+        t[25] !== B || t[26] !== Me || t[27] !== n.id || t[28] !== x ? (He = () => {
+            !B || !Me || x?.(n.id)
+        }, Ue = [B, Me, n.id, x], t[25] = B, t[26] = Me, t[27] = n.id, t[28] = x, t[29] = He, t[30] = Ue) : (He = t[29], Ue = t[30]), (0, Dy.useEffect)(He, Ue);
+        let We;
+        t[31] !== Oe || t[32] !== n.shared_by?.name || t[33] !== Te || t[34] !== Ee || t[35] !== Ae ? (We = J(Oe && Te, Ae && n.shared_by?.name?.trim() && Ee) || void 0, t[31] = Oe, t[32] = n.shared_by?.name, t[33] = Te, t[34] = Ee, t[35] = Ae, t[36] = We) : We = t[36];
+        let Ge = _e.formatMessage(Z.folderRow, {
+                name: we
+            }),
+            Ke;
+        t[37] !== Re || t[38] !== n || t[39] !== m ? (Ke = e => {
+            Re && (e.stopPropagation(), m(n))
+        }, t[37] = Re, t[38] = n, t[39] = m, t[40] = Ke) : Ke = t[40];
+        let qe = Ce == null ? `w-full items-center overflow-hidden` : `w-fit max-w-full items-baseline`,
+            Je = ce && `gap-3`,
+            Ye = Re && `cursor-pointer`,
+            Xe;
+        t[41] !== qe || t[42] !== Je || t[43] !== Ye ? (Xe = J(`text-token-text-primary disabled:text-token-text-primary flex min-w-0 border-0 bg-transparent p-0 text-start text-[14px] leading-5`, qe, Je, Ye), t[41] = qe, t[42] = Je, t[43] = Ye, t[44] = Xe) : Xe = t[44];
+        let Ze;
+        t[45] !== P || t[46] !== ce || t[47] !== n ? (Ze = ce ? (0, $.jsx)(hy, {
+            folderIcon: P,
+            node: n
+        }) : null, t[45] = P, t[46] = ce, t[47] = n, t[48] = Ze) : Ze = t[48];
+        let Qe = Ce == null && `flex-1`,
+            $e;
+        t[49] === Qe ? $e = t[50] : ($e = J(`flex min-w-0 items-baseline overflow-hidden`, Qe), t[49] = Qe, t[50] = $e);
+        let et;
+        t[51] === n.name ? et = t[52] : (et = (0, $.jsx)(`span`, {
+            className: `min-w-0 truncate`,
+            children: n.name
+        }), t[51] = n.name, t[52] = et);
+        let tt;
+        t[53] === ye ? tt = t[54] : (tt = ye ? (0, $.jsx)(`span`, {
+            className: `text-token-text-secondary ms-1 min-w-0 truncate`,
+            children: (0, $.jsx)(X, {
+                ...Z.accountSecondaryLabel,
+                values: {
+                    label: ye
+                }
+            })
+        }) : null, t[53] = ye, t[54] = tt);
+        let rt;
+        t[55] !== $e || t[56] !== et || t[57] !== tt ? (rt = (0, $.jsxs)(`span`, {
+            className: $e,
+            children: [et, tt]
+        }), t[55] = $e, t[56] = et, t[57] = tt, t[58] = rt) : rt = t[58];
+        let it;
+        t[59] === Se ? it = t[60] : (it = (0, $.jsx)(oh, {
+            className: `ms-2`,
+            externalAccount: Se,
+            truncate: !1
+        }), t[59] = Se, t[60] = it);
+        let at;
+        t[61] !== n.shared_by || t[62] !== Ee || t[63] !== Ae ? (at = Ae ? (0, $.jsx)(`span`, {
+            id: Ee,
+            className: `text-token-text-secondary ms-2 max-w-[40%] shrink-0 truncate text-xs`,
+            children: n.shared_by?.name?.trim() ? (0, $.jsx)(X, {
+                ...Z.sharedBySource,
+                values: {
+                    name: n.shared_by.name.trim()
+                }
+            }) : (0, $.jsx)(X, {
+                ...Z.unknownSharedSource
+            })
+        }) : null, t[61] = n.shared_by, t[62] = Ee, t[63] = Ae, t[64] = at) : at = t[64];
+        let ot = (0, $.jsxs)(`button`, {
+                type: `button`,
+                disabled: !Re,
+                "aria-describedby": We,
+                "aria-label": Ge,
+                onClick: Ke,
+                className: Xe,
+                children: [Ze, rt, it, at]
+            }),
+            st = lh,
+            ct;
+        t[65] === H ? ct = t[66] : (ct = () => {
+            H()
+        }, t[65] = H, t[66] = ct);
+        let lt, ut;
+        t[67] !== A || t[68] !== U ? (lt = e => {
+            A || !U() || (e.preventDefault(), e.stopPropagation())
+        }, ut = e => {
+            A || !U() || (e.preventDefault(), e.stopPropagation(), e.dataTransfer.dropEffect = `move`)
+        }, t[67] = A, t[68] = U, t[69] = lt, t[70] = ut) : (lt = t[69], ut = t[70]);
+        let dt;
+        t[71] === ee ? dt = t[72] : (dt = e => {
+            e.relatedTarget instanceof Node && e.currentTarget.contains(e.relatedTarget) || ee()
+        }, t[71] = ee, t[72] = dt);
+        let ft;
+        t[73] !== A || t[74] !== W ? (ft = e => {
+            A || !W() || (e.preventDefault(), e.stopPropagation())
+        }, t[73] = A, t[74] = W, t[75] = ft) : ft = t[75];
+        let pt;
+        t[76] !== V || t[77] !== C || t[78] !== ct || t[79] !== lt || t[80] !== ut || t[81] !== dt || t[82] !== ft ? (pt = {
+            "data-page-table-row-item": `true`,
+            className: j_.rowItem,
+            draggable: V,
+            onDragStartCapture: C,
+            onDragEndCapture: ct,
+            onDragEnterCapture: lt,
+            onDragOverCapture: ut,
+            onDragLeaveCapture: dt,
+            onDropCapture: ft
+        }, t[76] = V, t[77] = C, t[78] = ct, t[79] = lt, t[80] = ut, t[81] = dt, t[82] = ft, t[83] = pt) : pt = t[83];
+        let mt = n.id,
+            ht = Fe && (Ie || Le || L),
+            gt = _e.formatMessage(Z.selectRow, {
+                name: we
+            }),
+            _t;
+        t[84] !== B || t[85] !== Le || t[86] !== Ie || t[87] !== A || t[88] !== n || t[89] !== g || t[90] !== m || t[91] !== Fe ? (_t = e => {
+            if (!A) {
+                if (Le) {
+                    Fe && g(!Ie, e);
+                    return
+                }
+                B && m(n)
+            }
+        }, t[84] = B, t[85] = Le, t[86] = Ie, t[87] = A, t[88] = n, t[89] = g, t[90] = m, t[91] = Fe, t[92] = _t) : _t = t[92];
+        let vt;
+        t[93] !== g || t[94] !== Fe ? (vt = (e, t) => {
+            Fe && (e || ih(), g(e, t))
+        }, t[93] = g, t[94] = Fe, t[95] = vt) : vt = t[95];
+        let Y;
+        t[96] !== F || t[97] !== q || t[98] !== me || t[99] !== A || t[100] !== n || t[101] !== y || t[102] !== _ || t[103] !== b || t[104] !== v || t[105] !== h || t[106] !== ue || t[107] !== le || t[108] !== fe || t[109] !== I || t[110] !== he ? (Y = he ? e => {
+            let {
+                focusable$: t
+            } = e;
+            return (0, $.jsx)(_y, {
+                canRename: fe,
+                canMove: fe && le,
+                canDelete: fe && ue,
+                canViewSharingState: me,
+                folderId: n.id,
+                folderName: n.name,
+                sharingEntryId: n.sharing_entry_id,
+                sharingCanManage: n.sharing_can_manage,
+                parentDirectoryId: n.parent_directory_id,
+                rootDirectoryId: I,
+                mutationLoading: A,
+                onStartChatFolder: h == null ? void 0 : () => h(n),
+                onMoveFolder: () => {
+                    _?.(n)
+                },
+                onRenameFolder: () => {
+                    v(n)
+                },
+                onDeleteFolder: y,
+                onRemoveSharedFolder: q ? () => b(n) : void 0,
+                focusable$: t,
+                analyticsSession: F
+            })
+        } : void 0, t[96] = F, t[97] = q, t[98] = me, t[99] = A, t[100] = n, t[101] = y, t[102] = _, t[103] = b, t[104] = v, t[105] = h, t[106] = ue, t[107] = le, t[108] = fe, t[109] = I, t[110] = he, t[111] = Y) : Y = t[111];
+        let yt = `folder-row-actions-${n.id}`,
+            bt = !Le,
+            xt;
+        t[112] !== te || t[113] !== z || t[114] !== R || t[115] !== A || t[116] !== re || t[117] !== ie ? (xt = J(`artifacts-surface-library-selectable-row`, Cm({
+            showSharedBy: re,
+            showSizeColumn: ie
+        }), R && j_.rowSelectionGroupMergeWithPrevious, z && j_.rowSelectionGroupMergeWithNext, te && j_.dropTargetRow, A && `pointer-events-none opacity-80`), t[112] = te, t[113] = z, t[114] = R, t[115] = A, t[116] = re, t[117] = ie, t[118] = xt) : xt = t[118];
+        let St;
+        t[119] !== P || t[120] !== ce || t[121] !== n ? (St = ce ? null : (0, $.jsx)(hy, {
+            folderIcon: P,
+            node: n
+        }), t[119] = P, t[120] = ce, t[121] = n, t[122] = St) : St = t[122];
+        let Ct;
+        t[123] !== n || t[124] !== S ? (Ct = S == null ? null : (0, $.jsx)(gy, {
+            node: n,
+            onVisible: S
+        }), t[123] = n, t[124] = S, t[125] = Ct) : Ct = t[125];
+        let wt = ce ? (0, $.jsx)(vp, {
+                children: ot
+            }) : ot,
+            Tt;
+        t[126] !== _e || t[127] !== Oe || t[128] !== Te ? (Tt = Oe ? (0, $.jsx)(`span`, {
+            id: Te,
+            className: `sr-only`,
+            title: _e.formatMessage(nt.projectSharedFolderIconLabel)
+        }) : null, t[126] = _e, t[127] = Oe, t[128] = Te, t[129] = Tt) : Tt = t[129];
+        let Et;
+        t[130] !== Ct || t[131] !== wt || t[132] !== Tt ? (Et = (0, $.jsxs)($.Fragment, {
+            children: [Ct, wt, Tt]
+        }), t[130] = Ct, t[131] = wt, t[132] = Tt, t[133] = Et) : Et = t[133];
+        let Dt;
+        t[134] !== ne || t[135] !== n.id ? (Dt = ne ? (0, $.jsx)(`span`, {
+            "data-testid": `folder-move-progress-${n.id}`,
+            className: `text-token-text-secondary shrink-0`,
+            children: (0, $.jsx)(da, {
+                size: 14,
+                className: `text-token-text-secondary`,
+                backgroundStrokeClassName: `stroke-token-border-light`
+            })
+        }) : null, t[134] = ne, t[135] = n.id, t[136] = Dt) : Dt = t[136];
+        let Ot;
+        t[137] !== _e || t[138] !== n.shared_by?.avatar_url || t[139] !== n.shared_by?.name || t[140] !== n.shared_by?.user_id || t[141] !== re || t[142] !== ie ? (Ot = re ? (0, $.jsx)(eh, {
+            avatarUrl: n.shared_by?.avatar_url,
+            name: n.shared_by?.name,
+            userId: n.shared_by?.user_id
+        }) : ie ? _e.formatMessage(Z.unknownValue) : null, t[137] = _e, t[138] = n.shared_by?.avatar_url, t[139] = n.shared_by?.name, t[140] = n.shared_by?.user_id, t[141] = re, t[142] = ie, t[143] = Ot) : Ot = t[143];
+        let kt = re || ie ? `sm:ps-4` : `hidden!`,
+            At;
+        return t[144] !== st || t[145] !== Ve || t[146] !== Le || t[147] !== Ie || t[148] !== te || t[149] !== n.id || t[150] !== Ne || t[151] !== Fe || t[152] !== pt || t[153] !== ht || t[154] !== gt || t[155] !== _t || t[156] !== vt || t[157] !== Y || t[158] !== yt || t[159] !== bt || t[160] !== xt || t[161] !== St || t[162] !== Et || t[163] !== Dt || t[164] !== Ot || t[165] !== kt ? (At = (0, $.jsx)(st, {
+            containerRef: Ne,
+            containerProps: pt,
+            selectionEnabled: Fe,
+            selectionId: mt,
+            checked: Ie,
+            active: te,
+            showCheckbox: ht,
+            checkboxLabel: gt,
+            onActivate: _t,
+            onCheckedChange: vt,
+            actions: Y,
+            actionsHidden: Le,
+            actionsWrapperTestId: yt,
+            actionsVisibility: `mobile-always`,
+            actionsFocusable: bt,
+            actionsClassName: `gap-2`,
+            className: xt,
+            leadingVisual: St,
+            title: Et,
+            titleAccessory: Dt,
+            mobileMetadata: Ve,
+            secondaryContent: Ve,
+            tertiaryContent: Ot,
+            tertiaryCellClassName: kt
+        }), t[144] = st, t[145] = Ve, t[146] = Le, t[147] = Ie, t[148] = te, t[149] = n.id, t[150] = Ne, t[151] = Fe, t[152] = pt, t[153] = ht, t[154] = gt, t[155] = _t, t[156] = vt, t[157] = Y, t[158] = yt, t[159] = bt, t[160] = xt, t[161] = St, t[162] = Et, t[163] = Dt, t[164] = Ot, t[165] = kt, t[166] = At) : At = t[166], At
+    }, Ay = e => {
+        "use forget";
+        let t = (0, Ey.c)(119),
+            {
+                node: n,
+                rootDirectoryId: r,
+                checked: i,
+                hasSelection: a,
+                showSelectionControls: o,
+                canOpen: s,
+                canMove: c,
+                canDelete: l,
+                draggable: u,
+                onOpenFolder: d,
+                onStartChatFolder: p,
+                onCheckedChange: m,
+                onMoveFolder: h,
+                onRenameFolder: g,
+                onDeleteFolder: _,
+                onRemoveSharedFolder: v,
+                onVisibleForPrefetch: y,
+                onVisibleFolder: b,
+                onDragStartFolder: x,
+                onDragEndFolder: S,
+                onDragEnterFolder: C,
+                onDragLeaveFolder: w,
+                onDropFileOnFolder: T,
+                isDropTarget: E,
+                movePending: D,
+                mutationLoading: O,
+                showActions: k,
+                showFolderCounts: A,
+                folderIcon: j,
+                analyticsSession: M
+            } = e,
+            N = r === void 0 ? null : r,
+            P = o !== void 0 && o,
+            F = s === void 0 || s,
+            I = u !== void 0 && u,
+            L = S === void 0 ? Sy : S,
+            R = C === void 0 ? Cy : C,
+            z = w === void 0 ? wy : w,
+            B = T === void 0 ? Ty : T,
+            V = E !== void 0 && E,
+            H = D !== void 0 && D,
+            U = A !== void 0 && A,
+            ee = K(on),
+            W;
+        t[0] === n.id ? W = t[1] : (W = Zo(n.id), t[0] = n.id, t[1] = W);
+        let te = W,
+            ne = Nc(n.id) ? void 0 : Na(n.id),
+            re = c ?? !te,
+            ie = l ?? !te,
+            ae;
+        t[2] !== n.id || t[3] !== k ? (ae = k ?? Fc(n.id), t[2] = n.id, t[3] = k, t[4] = ae) : ae = t[4];
+        let G = ae,
+            oe;
+        t[5] !== ee || t[6] !== te || t[7] !== n || t[8] !== G ? (oe = !G && !te && ny(n, ee) && No(ee), t[5] = ee, t[6] = te, t[7] = n, t[8] = G, t[9] = oe) : oe = t[9];
+        let se = oe,
+            ce = !te && (n.direct_share_id != null || n.has_opened_shared_membership === !0) && v != null,
+            le = G || se || p != null || ce,
+            ue = Yn(),
+            de;
+        t[10] === n ? de = t[11] : (de = py(n), t[10] = n, t[11] = de);
+        let fe = de,
+            pe = my(n),
+            me = ne == null ? pe : ue.formatMessage(Z.itemWithSource, {
+                name: pe,
+                source: ue.formatMessage(ba(ne.provider).label)
+            }),
+            q = (0, Dy.useId)(),
+            he = (0, Dy.useId)(),
+            ge;
+        t[12] !== ee || t[13] !== n ? (ge = ny(n, ee) || ty(n), t[12] = ee, t[13] = n, t[14] = ge) : ge = t[14];
+        let _e = ge,
+            ve;
+        t[15] !== n.id || t[16] !== m ? (ve = m != null && !Nc(n.id) && !Gs(n.id) && !f(n.id), t[15] = n.id, t[16] = m, t[17] = ve) : ve = t[17];
+        let ye = ve,
+            be = ye && (i ?? !1),
+            xe = a ?? !1,
+            Se = xe && !ye,
+            Ce = K(At),
+            we = K(Ge),
+            Te = K(Yt),
+            Ee = Ce && Te && !we,
+            De = be || xe || P || !Ee,
+            Oe = xs(),
+            ke = Oe && xs(),
+            Ae = U && Oe && n.item_count != null && n.folder_count != null ? {
+                itemCount: n.item_count,
+                folderCount: n.folder_count
+            } : null,
+            je = _e && Ae != null ? `${q} ${he}` : _e ? q : Ae == null ? void 0 : he,
+            Me = Oe ? n.thumbnail_url ?? null : null,
+            [Ne, Pe] = (0, Dy.useState)(null),
+            Fe = Me != null && Ne !== Me,
+            Ie;
+        t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (Ie = {
+            rootMargin: Oy,
+            onlyOnce: !0
+        }, t[18] = Ie) : Ie = t[18];
+        let [Le, Re] = Xo(Ie), ze, Be;
+        t[19] !== F || t[20] !== Le || t[21] !== n.id || t[22] !== y ? (ze = () => {
+            !F || !Le || y?.(n.id)
+        }, Be = [F, Le, n.id, y], t[19] = F, t[20] = Le, t[21] = n.id, t[22] = y, t[23] = ze, t[24] = Be) : (ze = t[23], Be = t[24]), (0, Dy.useEffect)(ze, Be);
+        let Ve;
+        t[25] === n.name ? Ve = t[26] : (Ve = (0, $.jsx)(`div`, {
+            title: n.name,
+            className: `text-token-text-primary line-clamp-2 text-[14px] leading-5 font-medium break-words`,
+            children: n.name
+        }), t[25] = n.name, t[26] = Ve);
+        let He;
+        t[27] === fe ? He = t[28] : (He = fe ? (0, $.jsx)(`div`, {
+            className: `text-token-text-secondary truncate text-[13px] leading-[18px]`,
+            children: fe
+        }) : null, t[27] = fe, t[28] = He);
+        let Ue;
+        t[29] !== Ve || t[30] !== He ? (Ue = (0, $.jsxs)(`div`, {
+            className: `min-w-0`,
+            children: [Ve, He]
+        }), t[29] = Ve, t[30] = He, t[31] = Ue) : Ue = t[31];
+        let We;
+        t[32] !== H || t[33] !== n.id ? (We = H ? (0, $.jsx)(`span`, {
+            "data-testid": `folder-move-progress-${n.id}`,
+            className: `text-token-text-secondary shrink-0`,
+            children: (0, $.jsx)(da, {
+                size: 14,
+                className: `text-token-text-secondary`,
+                backgroundStrokeClassName: `stroke-token-border-light`
+            })
+        }) : null, t[32] = H, t[33] = n.id, t[34] = We) : We = t[34];
+        let Ke;
+        t[35] !== Ue || t[36] !== We ? (Ke = (0, $.jsxs)(`div`, {
+            className: `flex w-full min-w-0 items-center gap-2`,
+            children: [Ue, We]
+        }), t[35] = Ue, t[36] = We, t[37] = Ke) : Ke = t[37];
+        let qe = Ke,
+            Je = ue.formatMessage(Z.folderRow, {
+                name: me
+            }),
+            Ye, Xe;
+        t[38] !== F || t[39] !== xe || t[40] !== be || t[41] !== Se || t[42] !== O || t[43] !== n || t[44] !== m || t[45] !== d || t[46] !== ye ? (Ye = e => {
+            if (!(O || Se)) {
+                if (ye && xe) {
+                    m(!be, {
+                        shiftKey: e.shiftKey
+                    });
+                    return
+                }
+                F && d(n)
+            }
+        }, Xe = e => {
+            if (e.target === e.currentTarget && (e.key === `Enter` || e.key === ` `)) {
+                if (e.preventDefault(), O || Se) return;
+                if (ye && xe) {
+                    m(!be, {
+                        shiftKey: e.shiftKey
+                    });
+                    return
+                }
+                F && d(n)
+            }
+        }, t[38] = F, t[39] = xe, t[40] = be, t[41] = Se, t[42] = O, t[43] = n, t[44] = m, t[45] = d, t[46] = ye, t[47] = Ye, t[48] = Xe) : (Ye = t[47], Xe = t[48]);
+        let Ze = J(`focus-visible:ring-token-ring focus-visible:ring-offset-token-bg-primary w-full text-start focus-visible:rounded-2xl focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none`, Oe && `flex flex-col gap-2`, Oe && (O || Se) && `cursor-default opacity-80`),
+            Qe;
+        t[49] !== ue || t[50] !== _e || t[51] !== q ? (Qe = _e ? (0, $.jsx)(`span`, {
+            id: q,
+            className: `sr-only`,
+            title: ue.formatMessage(nt.projectSharedFolderIconLabel)
+        }) : null, t[49] = ue, t[50] = _e, t[51] = q, t[52] = Qe) : Qe = t[52];
+        let $e = Oe ? `relative aspect-square w-full overflow-hidden rounded-2xl border` : `relative flex min-h-[104px] w-full flex-col items-start justify-between overflow-hidden rounded-2xl border p-4`,
+            et = !ke && `group-hover:bg-token-bg-tertiary/60 group-focus-within:bg-token-bg-tertiary/60`,
+            tt = V && `border-token-text-primary ring-token-text-primary ring-2`,
+            rt = be && `border-black ring-2 ring-black dark:border-white dark:ring-white`,
+            it = !Oe && (O || Se) && `cursor-default opacity-80`,
+            at;
+        t[53] !== $e || t[54] !== et || t[55] !== tt || t[56] !== rt || t[57] !== it ? (at = J(`border-token-border-light`, `bg-token-bg-primary dark:bg-token-bg-secondary`, $e, `shadow-elevation-01`, `transition-[background-color,border-color,ring-color] duration-200 ease-out`, et, tt, rt, it), t[53] = $e, t[54] = et, t[55] = tt, t[56] = rt, t[57] = it, t[58] = at) : at = t[58];
+        let ot = Oe ? Fe ? (0, $.jsx)(`img`, {
+                alt: ``,
+                className: `absolute inset-0 h-full w-full object-cover`,
+                loading: `lazy`,
+                onError: () => {
+                    Pe(Me)
+                },
+                src: Me
+            }) : (0, $.jsx)(`div`, {
+                className: `absolute inset-0 flex items-center justify-center`,
+                children: j == null && ne == null ? (0, $.jsx)(wu, {
+                    "aria-hidden": `true`,
+                    className: `size-12 shrink-0`
+                }) : (0, $.jsx)(ch, {
+                    className: `size-12! border-0! bg-transparent!`,
+                    source: ke ? void 0 : ne,
+                    children: j ?? (0, $.jsx)(wu, {
+                        "aria-hidden": `true`,
+                        className: `size-12 shrink-0`
+                    })
+                })
+            }) : (0, $.jsxs)($.Fragment, {
+                children: [qe, (0, $.jsx)(ch, {
+                    source: ne,
+                    children: j ?? (0, $.jsx)(wu, {
+                        "aria-hidden": `true`,
+                        className: `h-6 w-6 shrink-0`
+                    })
+                })]
+            }),
+            st;
+        t[59] === ke ? st = t[60] : (st = ke && (0, $.jsx)(`div`, {
+            className: Ym.gridHoverOverlay
+        }), t[59] = ke, t[60] = st);
+        let ct = ke && ne != null && (0, $.jsx)(Mc, {
+                ...ne,
+                className: J(Ym.gridSourceBadge, ye && (De ? `opacity-0` : `group-focus-within:opacity-0 group-hover:opacity-0`))
+            }),
+            lt;
+        t[61] === be ? lt = t[62] : (lt = be && (0, $.jsx)(`div`, {
+            "aria-hidden": !0,
+            className: `bg-token-text-primary/5 pointer-events-none absolute inset-0`
+        }), t[61] = be, t[62] = lt);
+        let ut;
+        t[63] !== at || t[64] !== ot || t[65] !== st || t[66] !== ct || t[67] !== lt ? (ut = (0, $.jsxs)(`div`, {
+            className: at,
+            children: [ot, st, ct, lt]
+        }), t[63] = at, t[64] = ot, t[65] = st, t[66] = ct, t[67] = lt, t[68] = ut) : ut = t[68];
+        let dt;
+        t[69] !== he || t[70] !== qe || t[71] !== Oe || t[72] !== ke || t[73] !== Ae ? (dt = Oe ? (0, $.jsxs)(`div`, {
+            className: J(`w-full min-w-0`, ke && Ym.folderGridMetadata),
+            children: [qe, Ae == null ? null : (0, $.jsx)(`div`, {
+                id: he,
+                className: `text-token-text-secondary w-full text-[13px] leading-[18px] tracking-[-0.08px]`,
+                children: (0, $.jsx)(X, {
+                    id: `artifacts.library.folder_grid.counts`,
+                    defaultMessage: `{hasItems, select, true {{itemCount, plural, one {# item} other {# items}}{folderCount, plural, =0 {} one { and # folder} other { and # folders}}} other {{folderCount, plural, =0 {0 items} one {# folder} other {# folders}}}}`,
+                    values: {
+                        hasItems: Ae.itemCount > 0,
+                        itemCount: Ae.itemCount,
+                        folderCount: Ae.folderCount
+                    }
+                })
+            })]
+        }) : null, t[69] = he, t[70] = qe, t[71] = Oe, t[72] = ke, t[73] = Ae, t[74] = dt) : dt = t[74];
+        let ft = (0, $.jsxs)(`div`, {
+                role: `button`,
+                tabIndex: 0,
+                "aria-describedby": je,
+                "aria-label": Je,
+                "aria-disabled": O || Se || !F && !xe || void 0,
+                onClick: Ye,
+                onKeyDown: Xe,
+                className: Ze,
+                children: [Qe, ut, dt]
+            }),
+            pt = ye && !O ? n.id : void 0,
+            mt, ht;
+        t[75] !== O || t[76] !== R ? (mt = e => {
+            O || !R() || (e.preventDefault(), e.stopPropagation())
+        }, ht = e => {
+            O || !R() || (e.preventDefault(), e.stopPropagation(), e.dataTransfer.dropEffect = `move`)
+        }, t[75] = O, t[76] = R, t[77] = mt, t[78] = ht) : (mt = t[77], ht = t[78]);
+        let gt;
+        t[79] === z ? gt = t[80] : (gt = e => {
+            e.relatedTarget instanceof Node && e.currentTarget.contains(e.relatedTarget) || z()
+        }, t[79] = z, t[80] = gt);
+        let _t;
+        t[81] !== O || t[82] !== B ? (_t = e => {
+            O || !B() || (e.preventDefault(), e.stopPropagation())
+        }, t[81] = O, t[82] = B, t[83] = _t) : _t = t[83];
+        let vt;
+        t[84] !== n || t[85] !== b ? (vt = b == null ? null : (0, $.jsx)(gy, {
+            node: n,
+            onVisible: b
+        }), t[84] = n, t[85] = b, t[86] = vt) : vt = t[86];
+        let Y = n.id === `external-gdrive:root` ? (0, $.jsx)(vp, {
+                children: ft
+            }) : ft,
+            yt;
+        t[87] !== M || t[88] !== ce || t[89] !== se || t[90] !== xe || t[91] !== O || t[92] !== n || t[93] !== _ || t[94] !== h || t[95] !== v || t[96] !== g || t[97] !== p || t[98] !== ie || t[99] !== re || t[100] !== G || t[101] !== N || t[102] !== Ee || t[103] !== le ? (yt = le ? (0, $.jsx)(`div`, {
+            "data-library-grid-actions": `true`,
+            "data-testid": `folder-grid-actions-${n.id}`,
+            "aria-hidden": xe || void 0,
+            className: J(`absolute end-3 top-3 z-10 flex items-center transition-opacity`, xe ? `pointer-events-none opacity-0` : Ee ? `pointer-events-none opacity-0 group-focus-within:pointer-events-auto group-focus-within:opacity-100 group-hover:pointer-events-auto group-hover:opacity-100` : `pointer-events-auto opacity-100`),
+            children: (0, $.jsx)(_y, {
+                canRename: G,
+                canMove: G && re,
+                canDelete: G && ie,
+                canViewSharingState: se,
+                folderId: n.id,
+                folderName: n.name,
+                sharingEntryId: n.sharing_entry_id,
+                sharingCanManage: n.sharing_can_manage,
+                parentDirectoryId: n.parent_directory_id,
+                rootDirectoryId: N,
+                mutationLoading: O,
+                onStartChatFolder: p == null ? void 0 : () => p(n),
+                onMoveFolder: () => {
+                    h?.(n)
+                },
+                onRenameFolder: () => {
+                    g(n)
+                },
+                onDeleteFolder: _,
+                onRemoveSharedFolder: ce ? () => v(n) : void 0,
+                tabIndex: xe ? -1 : void 0,
+                variant: `grid`,
+                analyticsSession: M
+            })
+        }) : null, t[87] = M, t[88] = ce, t[89] = se, t[90] = xe, t[91] = O, t[92] = n, t[93] = _, t[94] = h, t[95] = v, t[96] = g, t[97] = p, t[98] = ie, t[99] = re, t[100] = G, t[101] = N, t[102] = Ee, t[103] = le, t[104] = yt) : yt = t[104];
+        let bt = ye ? (0, $.jsx)(`div`, {
+                className: J(ke && Ym.folderThumbnailSelectionContainer, !ke && `absolute z-10`, !ke && (Oe ? `start-4 top-4` : `end-4 bottom-[18px]`)),
+                children: (0, $.jsxs)(`div`, {
+                    className: J(`flex h-5 w-5 items-center justify-center`, ke ? Ym.folderThumbnailSelectionControl : `relative`),
+                    children: [(0, $.jsx)(`input`, {
+                        type: `checkbox`,
+                        name: `folder-selection-${n.id}`,
+                        checked: be,
+                        readOnly: !0,
+                        "aria-disabled": O || void 0,
+                        onClick: e => {
+                            O || m(e.currentTarget.checked, {
+                                shiftKey: e.shiftKey
+                            })
+                        },
+                        "aria-label": ue.formatMessage(Z.selectRow, {
+                            name: me
+                        }),
+                        className: J(`bg-token-bg-primary/80 dark:bg-token-bg-secondary/80 peer border-token-border-heavy absolute inset-0 m-0 size-5 cursor-pointer appearance-none rounded-full border transition-[opacity,background-color,border-color,box-shadow] duration-200 ease-out dark:border-white/20`, `focus-visible:ring-token-ring focus-visible:ring-offset-token-bg-primary focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none`, be ? `border-black bg-white opacity-100 dark:border-white dark:bg-white` : De ? `opacity-100` : `opacity-0 group-focus-within:opacity-100 group-hover:opacity-100`)
+                    }), (0, $.jsx)(mu, {
+                        className: `pointer-events-none absolute h-3.5 w-3.5 text-black opacity-0 transition-opacity peer-checked:opacity-100 dark:text-black`,
+                        "aria-hidden": `true`
+                    })]
+                })
+            }) : null,
+            xt;
+        return t[105] !== I || t[106] !== L || t[107] !== x || t[108] !== Re || t[109] !== pt || t[110] !== mt || t[111] !== ht || t[112] !== gt || t[113] !== _t || t[114] !== vt || t[115] !== Y || t[116] !== yt || t[117] !== bt ? (xt = (0, $.jsxs)(`div`, {
+            ref: Re,
+            className: `group relative w-full min-w-0`,
+            "data-page-table-selection-id": pt,
+            draggable: I,
+            onDragStart: x,
+            onDragEnd: L,
+            onDragEnter: mt,
+            onDragOver: ht,
+            onDragLeave: gt,
+            onDrop: _t,
+            children: [vt, Y, yt, bt]
+        }), t[105] = I, t[106] = L, t[107] = x, t[108] = Re, t[109] = pt, t[110] = mt, t[111] = ht, t[112] = gt, t[113] = _t, t[114] = vt, t[115] = Y, t[116] = yt, t[117] = bt, t[118] = xt) : xt = t[118], xt
+    }
+}));
+
+function My(e) {
+    let t = e.classifiers.parent_directory_id;
+    return e.libraryFileId != null && !$c(e) && e.gizmoId == null && e.classifiers.library_file_is_project !== 1 && !yl(e) && e.source?.type !== `saved_entity` && e.directShareId == null && e.hasOpenedSharedMembership !== !0 && e.sharedBy == null && !ge(typeof t == `string` ? t : null)
+}
+
+function Ny(e, t, n) {
+    return t ? n ? `read_only` : zp(e) ? `available` : cc(e.classifiers.library_artifact_type).canShare ? e.status === `failed` || e.status === `deleted` ? e.status : `unavailable` : `unsupported_artifact` : `sharing_disabled`
+}
+var Py, Fy, Iy, Ly, Ry, zy = e((() => {
+    Py = qn(), Ir(), Bo(), Ip(), Rs(), fn(), po(), Qe(), jt(), Fy = t(Fn()), Nn(), Iy = wn(), Ly = e => {
+        "use forget";
+        return Mn() ? (0, Iy.jsx)(Ry, {
+            ...e
+        }) : null
+    }, Ry = e => {
+        "use forget";
+        let t = (0, Py.c)(11),
+            {
+                accountId: n,
+                artifacts: r,
+                directoryId: i,
+                isSharingEnabled: a,
+                isSharedScope: o,
+                pendingArtifactIds: s,
+                readOnly: c
+            } = e,
+            {
+                key: l
+            } = Cn(),
+            u;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (u = {
+            scope: ``,
+            keys: new Set
+        }, t[0] = u) : u = t[0];
+        let d = (0, Fy.useRef)(u),
+            f, p;
+        return t[1] !== n || t[2] !== r || t[3] !== i || t[4] !== o || t[5] !== a || t[6] !== l || t[7] !== s || t[8] !== c ? (f = () => {
+            try {
+                if (n == null || o || Zo(i) || ge(i)) return;
+                let e = JSON.stringify([n, l, i]);
+                d.current.scope !== e && (d.current = {
+                    scope: e,
+                    keys: new Set
+                });
+                let t = new Map;
+                for (let e of r) {
+                    if (s?.has(e.id) || !My(e)) continue;
+                    let n = Ny(e, a, c),
+                        r = Oi(e).category,
+                        i = JSON.stringify([e.libraryFileId, r, n]);
+                    if (d.current.keys.has(i)) continue;
+                    let o = `${r}:${n}`,
+                        l = t.get(o) ?? {
+                            tags: {
+                                surface: `library_items`,
+                                resource_type: `library_file`,
+                                file_type: r,
+                                outcome: n === `available` ? `available` : `unavailable`,
+                                reason: n
+                            },
+                            keys: new Set
+                        };
+                    l.keys.add(i), t.set(o, l)
+                }
+                for (let e of t.values()) {
+                    gt.count(ft.FILES, `library_share_availability`, e.tags, e.keys.size);
+                    for (let t of e.keys) d.current.keys.add(t)
+                }
+            } catch {
+                try {
+                    Dt.addError(`Library Share availability telemetry failed`)
+                } catch {}
+            }
+        }, p = [n, r, i, o, a, l, s, c], t[1] = n, t[2] = r, t[3] = i, t[4] = o, t[5] = a, t[6] = l, t[7] = s, t[8] = c, t[9] = f, t[10] = p) : (f = t[9], p = t[10]), (0, Fy.useEffect)(f, p), null
+    }
+}));
+
+function By(e) {
+    let t = Number.parseFloat(e);
+    return Number.isFinite(t) ? t : 0
+}
+
+function Vy({
+    isScreenAtLeastMd: e,
+    isScreenAtLeastLg: t,
+    isScreenAtLeastXl: n,
+    isScreenAtLeastXXL: r
+}) {
+    return r ? 6 : n ? 5 : t ? 4 : e ? 3 : 2
+}
+
+function Hy(e) {
+    "use forget";
+    let t = (0, Gy.c)(13),
+        {
+            items: n
+        } = e,
+        r = K(At),
+        i = K(Vt),
+        a = K(it),
+        o = K(dt),
+        s = K(ht),
+        c;
+    t[0] !== a || t[1] !== i || t[2] !== s || t[3] !== o ? (c = Vy({
+        isScreenAtLeastMd: i,
+        isScreenAtLeastLg: a,
+        isScreenAtLeastXl: o,
+        isScreenAtLeastXXL: s
+    }), t[0] = a, t[1] = i, t[2] = s, t[3] = o, t[4] = c) : c = t[4];
+    let l = c,
+        u;
+    t[5] !== r || t[6] !== n ? (u = r ? n : n.map(Wy), t[5] = r, t[6] = n, t[7] = u) : u = t[7];
+    let d = u,
+        f = (0, Ky.useRef)(null),
+        p;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (p = new Map, t[8] = p) : p = t[8];
+    let m = (0, Ky.useRef)(p),
+        [h, g] = (0, Ky.useState)(),
+        [_, v] = (0, Ky.useState)(Uy),
+        y;
+    t[9] !== l || t[10] !== d ? (y = () => Um(d, l), t[9] = l, t[10] = d, t[11] = y) : y = t[11];
+    let [b, x] = (0, Ky.useState)(y), S = zm(b, d, l, _, h), {
+        gridHeight: C,
+        placementsByItemId: w
+    } = jm(d, S, _, h);
+    pe(() => {
+        S !== b && x(S)
+    }, [b, S]);
+    let T;
+    return t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (T = () => {
+        if (typeof ResizeObserver > `u`) return;
+        let e = new ResizeObserver(e => {
+            let t = new Map;
+            e.forEach(e => {
+                if (!(e.target instanceof HTMLElement)) return;
+                if (e.target === f.current) {
+                    let t = getComputedStyle(e.target),
+                        n = {
+                            width: e.contentRect.width,
+                            columnGap: By(t.columnGap),
+                            rowGap: By(t.rowGap)
+                        };
+                    g(e => e?.width === n.width && e.columnGap === n.columnGap && e.rowGap === n.rowGap ? e : n);
+                    return
+                }
+                let n = e.target.dataset.masonryItemId;
+                n != null && t.set(n, e.contentRect.height)
+            }), t.size > 0 && v(e => [...t].some(t => {
+                let [n, r] = t;
+                return e.get(n) !== r
+            }) ? new Map([...e, ...t]) : e)
+        });
+        return f.current != null && e.observe(f.current), m.current.forEach(t => e.observe(t)), () => e.disconnect()
+    }, t[12] = T) : T = t[12], pe(T, [l, S.itemIds]), (0, qy.jsx)(`div`, {
+        ref: f,
+        className: Om,
+        "data-testid": `library-file-masonry`,
+        style: {
+            height: C
+        },
+        children: n.map(e => {
+            let t = w.get(e.id),
+                n = t?.columnIndex ?? S.columnIndexesByItemId.get(e.id) ?? 0;
+            return (0, qy.jsx)(`div`, {
+                ref: t => {
+                    t == null ? m.current.delete(e.id) : m.current.set(e.id, t)
+                },
+                className: `min-w-0 self-start`,
+                "data-masonry-column-index": n,
+                "data-masonry-item-id": e.id,
+                "data-testid": `library-file-masonry-item-${e.id}`,
+                style: t == null ? void 0 : {
+                    gridColumn: n + 1,
+                    gridRow: 1,
+                    transform: `translateY(${t.top}px)`
+                },
+                children: e.node
+            }, e.id)
+        })
+    })
+}
+
+function Uy() {
+    return new Map
+}
+
+function Wy(e) {
+    return e.minimumHeight == null ? e : {
+        ...e,
+        minimumHeight: void 0
+    }
+}
+var Gy, Ky, qy, Jy = e((() => {
+    Gy = qn(), Tm(), Im(), ct(), zt(), z(), Ky = t(Fn()), qy = wn()
+}));
+
+function Yy(e) {
+    "use forget";
+    let t = (0, Zy.c)(13),
+        n, r, i, a;
+    if (t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4]) : ({
+            artifact: n,
+            children: r,
+            onVisibleGoogleDriveFile: a,
+            ...i
+        } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a), !(n.status === `available` && n.source?.type === `google_drive` && a != null)) {
+        let e;
+        return t[5] !== r || t[6] !== i ? (e = (0, $y.jsx)(`div`, {
+            ...i,
+            children: r
+        }), t[5] = r, t[6] = i, t[7] = e) : e = t[7], e
+    }
+    let o;
+    return t[8] !== n || t[9] !== r || t[10] !== i || t[11] !== a ? (o = (0, $y.jsx)(Xy, {
+        artifact: n,
+        onVisibleGoogleDriveFile: a,
+        ...i,
+        children: r
+    }), t[8] = n, t[9] = r, t[10] = i, t[11] = a, t[12] = o) : o = t[12], o
+}
+
+function Xy(e) {
+    "use forget";
+    let t = (0, Zy.c)(15),
+        n, r, i, a;
+    t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4]) : ({
+        artifact: n,
+        children: r,
+        onVisibleGoogleDriveFile: a,
+        ...i
+    } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a);
+    let o;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (o = {
+        rootMargin: eb,
+        onlyOnce: !0
+    }, t[5] = o) : o = t[5];
+    let [s, c] = Xo(o), l, u;
+    t[6] !== n || t[7] !== s || t[8] !== a ? (l = () => {
+        s && a(n)
+    }, u = [n, s, a], t[6] = n, t[7] = s, t[8] = a, t[9] = l, t[10] = u) : (l = t[9], u = t[10]), (0, Qy.useEffect)(l, u);
+    let d;
+    return t[11] !== r || t[12] !== i || t[13] !== c ? (d = (0, $y.jsx)(`div`, {
+        ref: c,
+        ...i,
+        children: r
+    }), t[11] = r, t[12] = i, t[13] = c, t[14] = d) : d = t[14], d
+}
+var Zy, Qy, $y, eb, tb = e((() => {
+        Zy = qn(), Lo(), Qy = t(Fn()), $y = wn(), eb = `240px 0px`
+    })),
+    nb, rb = e((() => {
+        Ie(), Wn(), nb = Oe(() => zn(() => import(`./e1661852-gb7m59qnfxyu7v2h.js`).then(e => e.ArtifactsLibraryRenameFileModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])))
+    })),
+    ib, ab = e((() => {
+        Ie(), Wn(), ib = Oe(() => zn(() => import(`./5c332f10-k45gqvizpnr5ph7r.js`).then(e => e.ArtifactsLibraryLeaveShareModal), __vite__mapDeps([14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 15, 16])))
+    }));
+
+function ob({
+    enabled: e,
+    directoryId: t,
+    intl: n,
+    onRemovedSharedItem: r,
+    queryClient: i,
+    refreshDirectory: a,
+    refreshSearchResults: o
+}) {
+    if (!e) return {
+        onRemoveSharedArtifact: void 0,
+        onRemoveSharedFolder: void 0
+    };
+
+    function s({
+        fileName: e,
+        id: s,
+        libraryFileId: c,
+        resourceKind: l,
+        shareId: u
+    }) {
+        let f = Fp({
+                actor: `recipient`,
+                libraryFileId: c,
+                resourceKind: l
+            }),
+            p = `library-share-self-removal:${l}:${u}:`,
+            m = {
+                id: s,
+                resourceKind: l,
+                shareId: u
+            },
+            h = s.lastIndexOf(`.`),
+            g = l === `folder` && h !== -1 ? s.slice(0, h + 1) : null,
+            _ = [],
+            v, y = e => e.id === s && (l !== `file` || e.parent_directory_id === t) || g != null && (e.id.startsWith(g) || e.parent_directory_id?.startsWith(g) === !0),
+            b = async () => {
+                yn().success(n.formatMessage(kh.leaveSuccess), {
+                    id: p
+                });
+                let [e, r] = await Promise.allSettled([a(t), o()]);
+                if (e.status === `rejected`) {
+                    v?.();
+                    return
+                }
+                if (r.status === `rejected`) {
+                    let e = i.getQueriesData({
+                        queryKey: [d, t]
+                    }).flatMap(([, e]) => e?.pages.flatMap(e => e.items) ?? []).find(e => e.id === s);
+                    if (e == null) {
+                        v?.();
+                        return
+                    }
+                    for (let {
+                            queryKey: t,
+                            pages: n
+                        }
+                        of _) i.setQueryData(t, t => {
+                        if (t == null) return t;
+                        let r = !1,
+                            i = t.pages.map((t, i) => {
+                                let a = n[i] ?? [];
+                                if (a.length === 0) return t;
+                                let o = [...t.items],
+                                    c = new Set(o.map(e => e.id));
+                                for (let {
+                                        index: t,
+                                        node: n
+                                    }
+                                    of a) c.has(n.id) || (o.splice(Math.min(t, o.length), 0, n.id === s ? {
+                                    ...n,
+                                    ...e
+                                } : n), c.add(n.id), r = !0);
+                                return o.length === t.items.length ? t : {
+                                    ...t,
+                                    items: o
+                                }
+                            });
+                        return r ? {
+                            ...t,
+                            pages: i
+                        } : t
+                    })
+                }
+                v?.()
+            }, x = async () => {
+                let e = Np();
+                Mp(f, {
+                    action: `leave_share`,
+                    operationId: e,
+                    outcome: `started`
+                });
+                try {
+                    if (await Vh({
+                            libraryFileId: c,
+                            resourceKind: l,
+                            shareId: u
+                        }), v = r(m), await Promise.all([i.cancelQueries({
+                            queryKey: [d],
+                            predicate: ({
+                                queryKey: e
+                            }) => e[1] === t || g != null && typeof e[1] == `string` && e[1].startsWith(g)
+                        }), i.cancelQueries({
+                            queryKey: [he]
+                        })]), g != null) {
+                        let e = {
+                            queryKey: [$h],
+                            predicate: ({
+                                queryKey: e
+                            }) => typeof e[1] == `string` && e[1].startsWith(g)
+                        };
+                        await i.cancelQueries(e), i.removeQueries(e)
+                    }
+                    for (let [e, t] of i.getQueriesData({
+                            queryKey: [he]
+                        })) {
+                        if (t == null) continue;
+                        let n = t.pages.map(e => e.items.flatMap((e, t) => y(e) ? [{
+                            index: t,
+                            node: e
+                        }] : []));
+                        n.some(e => e.length > 0) && _.push({
+                            queryKey: e,
+                            pages: n
+                        })
+                    }
+                    for (let e of [d, he]) i.setQueriesData({
+                        queryKey: e === `recall-folder-view` && l === `file` ? [e, t] : [e]
+                    }, e => {
+                        if (e == null) return e;
+                        let t = !1,
+                            n = e.pages.map(e => {
+                                let n = e.items.filter(e => !y(e));
+                                return n.length === e.items.length ? e : (t = !0, {
+                                    ...e,
+                                    items: n
+                                })
+                            });
+                        return t ? {
+                            ...e,
+                            pages: n
+                        } : e
+                    });
+                    g != null && await i.invalidateQueries({
+                        queryKey: [d],
+                        predicate: ({
+                            queryKey: e
+                        }) => typeof e[1] == `string` && e[1].startsWith(g),
+                        refetchType: `none`
+                    })
+                } catch (t) {
+                    return Mp(f, {
+                        action: `leave_share`,
+                        error: t,
+                        operationId: e,
+                        outcome: `failed`
+                    }), yn().danger(n.formatMessage(kh.leaveError), {
+                        error: t,
+                        id: p
+                    }), !1
+                }
+                return Mp(f, {
+                    action: `leave_share`,
+                    operationId: e,
+                    outcome: `succeeded`
+                }), !0
+            };
+        if (eg()) {
+            yn().info(n.formatMessage(kh.leaveInProgress), {
+                duration: 0,
+                icon: $l,
+                iconClassName: `icon-sm motion-safe:animate-spin`,
+                id: p
+            }), x().then(async e => {
+                e && await b()
+            });
+            return
+        }
+        Nt(ib, {
+            fileName: e,
+            onCancel: () => Mp(f, {
+                action: `leave_share`,
+                operationId: Np(),
+                outcome: `canceled`
+            }),
+            onRemove: x,
+            onRemoved: b
+        })
+    }
+    async function c({
+        id: e,
+        libraryFileId: s,
+        resourceKind: c
+    }) {
+        try {
+            await Hh({
+                libraryFileId: s,
+                resourceKind: c
+            }), c === `folder` && await i.invalidateQueries({
+                queryKey: [$h, e],
+                exact: !0,
+                refetchType: `none`
+            });
+            let l = r({
+                id: e,
+                resourceKind: c
+            });
+            i.setQueriesData({
+                queryKey: [d, t]
+            }, t => t == null ? t : {
+                ...t,
+                pages: t.pages.map(t => ({
+                    ...t,
+                    items: t.items.filter(t => t.id !== e)
+                }))
+            }), yn().success(n.formatMessage(kh.removeOpenedSharedSuccess)), await Promise.allSettled([a(t), o()]), l()
+        } catch (e) {
+            yn().danger(n.formatMessage(kh.removeOpenedSharedError), {
+                error: e
+            })
+        }
+    }
+    return {
+        onRemoveSharedArtifact(e) {
+            if (!($c(e) || e.libraryFileId == null)) {
+                if (e.directShareId == null) {
+                    if (e.hasOpenedSharedMembership !== !0 || !f(t)) return;
+                    c({
+                        id: e.id,
+                        libraryFileId: e.libraryFileId,
+                        resourceKind: `file`
+                    });
+                    return
+                }
+                s({
+                    fileName: bs(e),
+                    id: e.id,
+                    libraryFileId: e.libraryFileId,
+                    resourceKind: `file`,
+                    shareId: e.directShareId
+                })
+            }
+        },
+        onRemoveSharedFolder(e) {
+            let n = e.direct_share_id == null ? _n(e.id) : qe(e.id);
+            if (!(Zo(e.id) || n == null)) {
+                if (e.direct_share_id == null) {
+                    if (e.has_opened_shared_membership !== !0 || !f(t)) return;
+                    c({
+                        id: e.id,
+                        libraryFileId: n,
+                        resourceKind: `folder`
+                    });
+                    return
+                }
+                s({
+                    fileName: e.name,
+                    id: e.id,
+                    libraryFileId: n,
+                    resourceKind: `folder`,
+                    shareId: e.direct_share_id
+                })
+            }
+        }
+    }
+}
+
+function sb({
+    directoryId: e,
+    path: t,
+    isCurrentReadOnlyDirectory: n,
+    canUploadIntoSharedFolder: r
+}) {
+    let i = t?.find(t => t.id === e),
+        a = ge(e) || i?.sharing_entry_id == null || i.access_kind !== `shared`;
+    return {
+        canCreateInNativeFolder: a,
+        canUploadIntoCurrentDirectory: a && (!n || Bs(e) || r)
+    }
+}
+
+function cb(e, t) {
+    return !ge(e) || ge(t)
+}
+
+function lb(e, t) {
+    let n = ub(e, t);
+    return {
+        isSharedLibraryArtifact: n,
+        sharedLibraryFileId: n ? e.libraryFileId : void 0
+    }
+}
+
+function ub(e, t) {
+    let n = typeof e.classifiers.parent_directory_id == `string` ? e.classifiers.parent_directory_id : null;
+    return ge(t) || e.isShared === !0 && ge(n)
+}
+
+function db(e, t) {
+    return e.some(e => ub(e, t))
+}
+
+function fb(e, t, n) {
+    let r = db(e, n);
+    return {
+        shared: r,
+        readOnly: r || t.some(e => Zo(e.id) || ge(e.id)) || e.some($c)
+    }
+}
+
+function pb(e, t, n, r) {
+    return e || t.length === 0 || n || t.every(e => !Pa(e) && !(ub(e, r) && cs(e)))
+}
+async function mb({
+    artifact: e,
+    directoryId: t,
+    resolveFileReference: n,
+    downloadFile: r
+}) {
+    if (!Pa(e) && !cs(e)) return null;
+    let {
+        isSharedLibraryArtifact: i,
+        sharedLibraryFileId: a
+    } = lb(e, t);
+    if (i) {
+        if (a == null) throw Error(`Shared Library file is missing a canonical ID`);
+        return {
+            completion: r(a, bs(e), {
+                sharedLibraryFileId: a
+            })
+        }
+    }
+    if (!Pa(e)) return null;
+    let o = await n(e);
+    if (o == null) return null;
+    let s = e.libraryFileId != null && !$c(e) ? {
+        libraryDownloadId: e.libraryFileId
+    } : null;
+    return {
+        completion: s == null ? r(o.fileId, o.fileName) : r(o.fileId, o.fileName, s)
+    }
+}
+var hb = e((() => {
+    Fu(), n(), Pp(), Ir(), qh(), Bo(), ab(), Ah(), zh(), Ic(), yc(), xa(), tg(), fn(), s()
+}));
+
+function gb({
+    savedEntity: e,
+    conversation: t,
+    intl: n,
+    viewMode: r,
+    libraryOrigin: i,
+    openSidebar: a,
+    messageId: o,
+    queryClient: s
+}) {
+    let {
+        saved_target: c
+    } = e, {
+        identity: l,
+        sidebar_params: u
+    } = c;
+    if (mp({
+            clickType: `library_item`,
+            target: c,
+            surface: fp(r)
+        }), !Dl(u.category)) {
+        yn().danger(n.formatMessage(_b.unsupportedCategory));
+        return
+    }
+    let d = s ?? sn(),
+        f = o ?? N.getCurrentLeafId(Pt(t.id)),
+        p = a ?? (e => Ws(t, e)),
+        m = {
+            saved_target: Ms(c),
+            display_data: e.display_data,
+            ...i == null ? {} : {
+                origin: {
+                    conversation_id: i.conversationId,
+                    message_id: i.messageId
+                }
+            }
+        };
+    if (d.setQueryData(Nd([c]), {
+            [zc(c)]: {
+                isSaved: !0,
+                libraryFileId: e.library_file_id ?? null
+            }
+        }), xc(t), u.category === `product_rationale_and_reviews`) {
+        let t = Qd({
+            name: e.display_data.name,
+            extraParams: u.extra_params ?? void 0,
+            imageThumbnailUrl: e.display_data.image_url ?? void 0
+        });
+        if (t != null) {
+            p({
+                type: `product_agent`,
+                messageId: f,
+                product: t.product,
+                rewrittenQueries: t.rewrittenQueries,
+                contentReferenceStartIndex: 0,
+                productIndex: 0,
+                interactionSource: `browse`,
+                libraryOrigin: i,
+                savedEntityRequest: m
+            });
+            return
+        }
+    }
+    p({
+        type: `entity`,
+        debugThreadId: void 0,
+        messageId: f,
+        contentReferenceStartIndex: 0,
+        query: u.name,
+        category: u.category,
+        entityId: l?.key ?? void 0,
+        extraParams: u.extra_params ?? void 0,
+        imageThumbnailUrl: e.display_data.image_url ?? void 0,
+        libraryOrigin: i,
+        savedEntityRequest: m
+    })
+}
+var _b, vb = e((() => {
+        $n(), jd(), nn(), Kt(), s(), ve(), Pn(), uf(), nf(), Rr(), Po(), _b = Dn({
+            unsupportedCategory: {
+                id: `chatgpt.saved_entities.library.unsupported_category`,
+                defaultMessage: `We do not support saving this entity category yet.`
+            }
+        })
+    })),
+    yb, bb, xb, Sb = e((() => {
+        yb = `mcQRXG_masonryHoverOverlay`, bb = `mcQRXG_pendingImage`, xb = {
+            masonryHoverOverlay: yb,
+            pendingImage: bb
+        }
+    }));
+
+function Cb(e) {
+    return e == null ? void 0 : {
+        "--saved-entity-grid-card-aspect-ratio": e
+    }
+}
+
+function wb(e) {
+    return typeof e == `string`
+}
+var Tb, Eb, Db, Ob, kb, Ab = e((() => {
+    Tb = qn(), Bu(), Au(), Ll(), fu(), Jm(), ke(), Eb = t(Fn()), Pn(), Sb(), Mm(), x_(), Kd(), Db = wn(), Ob = `•`, kb = e => {
+        "use forget";
+        let t = (0, Tb.c)(88),
+            {
+                metadataDescriptionId: n,
+                savedEntity: r,
+                selected: i,
+                square: a,
+                responsiveImageSizing: o
+            } = e,
+            s = i !== void 0 && i,
+            c = a === void 0 || a,
+            l = r.saved_target.sidebar_params.category,
+            u;
+        t[0] === l ? u = t[1] : (u = Ld(l), t[0] = l, t[1] = u);
+        let d = u,
+            f = r.display_data.image_url,
+            [p, m] = (0, Eb.useState)(null),
+            [h, g] = (0, Eb.useState)(null),
+            _ = f != null && p !== f,
+            v = o != null && d !== `place` && h?.imageUrl !== f,
+            y = o == null ? void 0 : d === `place` || !_ ? 1 : h?.imageUrl === f ? h.aspectRatio : o.initialAspectRatio,
+            b;
+        t[2] === y ? b = t[3] : (b = Cb(y), t[2] = y, t[3] = b);
+        let x = b,
+            S = r.saved_target.sidebar_params.extra_params,
+            C = typeof S == `object` && S && !Array.isArray(S) && `location` in S ? S.location : null,
+            w, T;
+        if (t[4] !== C || t[5] !== r.entity_data) {
+            let e = Array.isArray(C) ? C.find(wb) : C;
+            w = r.entity_data, T = typeof e == `string` && e.split(`,`)[0]?.trim() || null, t[4] = C, t[5] = r.entity_data, t[6] = w, t[7] = T
+        } else w = t[6], T = t[7];
+        let E = T,
+            D = d === `product`;
+        if (d === `place` || d === `product`) {
+            let e = w?.type === `product` ? w : null,
+                i = w?.type === `place` ? w : null,
+                a = D ? iu : Zu,
+                l = e?.price?.trim() ? e.price : null,
+                u;
+            t[8] === i ? u = t[9] : (u = typeof i?.rating == `number` && Number.isFinite(i.rating) ? i.rating : null, t[8] = i, t[9] = u);
+            let p = u,
+                h;
+            t[10] === i?.category ? h = t[11] : (h = i?.category?.trim() || null, t[10] = i?.category, t[11] = h);
+            let y = h,
+                b = o != null && D && Ym.masonryProductThumbnail,
+                S = o == null ? c || d === `place` ? `aspect-square` : `h-[249px]` : `aspect-[var(--saved-entity-grid-card-aspect-ratio)]`,
+                C = D ? `bg-token-bg-tertiary` : `bg-token-bg-primary dark:bg-token-bg-secondary`,
+                T = o == null && `motion-safe:group-hover:shadow-elevation-03 motion-safe:group-focus-within:shadow-elevation-03`,
+                E = o == null && !D && `group-hover:bg-token-bg-tertiary/60`,
+                O = s && `border-black ring-2 ring-black dark:border-white dark:ring-white`,
+                k;
+            t[12] !== C || t[13] !== T || t[14] !== E || t[15] !== O || t[16] !== b || t[17] !== S ? (k = J(`border-token-border-light relative w-full overflow-hidden rounded-2xl border`, b, S, C, `shadow-elevation-01 transition-[background-color,box-shadow] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]`, T, `motion-reduce:transition-[background-color,box-shadow]`, E, O), t[12] = C, t[13] = T, t[14] = E, t[15] = O, t[16] = b, t[17] = S, t[18] = k) : k = t[18];
+            let A;
+            t[19] !== a || t[20] !== d || t[21] !== f || t[22] !== v || t[23] !== D || t[24] !== o || t[25] !== _ ? (A = _ ? (0, Db.jsx)(`img`, {
+                alt: ``,
+                "data-testid": `saved-entity-grid-card-image`,
+                className: J(`absolute inset-0 h-full w-full`, D ? `object-contain` : `object-cover`, v && xb.pendingImage),
+                loading: `lazy`,
+                onLoad: e => {
+                    o == null || d === `place` || g({
+                        imageUrl: f,
+                        aspectRatio: o.getNaturalAspectRatio(e.currentTarget.naturalWidth, e.currentTarget.naturalHeight)
+                    })
+                },
+                onError: () => {
+                    m(f)
+                },
+                src: f
+            }) : (0, Db.jsx)(`div`, {
+                className: `absolute inset-0 flex items-center justify-center`,
+                children: (0, Db.jsx)(a, {
+                    "aria-hidden": `true`,
+                    className: `icon text-token-text-tertiary size-12`
+                })
+            }), t[19] = a, t[20] = d, t[21] = f, t[22] = v, t[23] = D, t[24] = o, t[25] = _, t[26] = A) : A = t[26];
+            let j;
+            t[27] === o ? j = t[28] : (j = o == null ? null : (0, Db.jsx)(`div`, {
+                className: xb.masonryHoverOverlay
+            }), t[27] = o, t[28] = j);
+            let M;
+            t[29] !== x || t[30] !== k || t[31] !== A || t[32] !== j ? (M = (0, Db.jsxs)(`div`, {
+                "data-testid": `saved-entity-grid-card`,
+                style: x,
+                className: k,
+                children: [A, j]
+            }), t[29] = x, t[30] = k, t[31] = A, t[32] = j, t[33] = M) : M = t[33];
+            let N;
+            t[34] !== D || t[35] !== l ? (N = D && l ? (0, Db.jsx)(`div`, {
+                className: `whitespace-nowrap`,
+                children: l
+            }) : null, t[34] = D, t[35] = l, t[36] = N) : N = t[36];
+            let P;
+            t[37] !== y || t[38] !== i || t[39] !== p ? (P = i != null && (p != null || y != null) ? (0, Db.jsxs)(`div`, {
+                className: `flex min-w-0 items-center gap-1`,
+                children: [p == null ? null : (0, Db.jsxs)(Db.Fragment, {
+                    children: [(0, Db.jsx)(jl, {
+                        "aria-hidden": `true`,
+                        className: `icon-xs`
+                    }), (0, Db.jsx)(`span`, {
+                        children: (0, Db.jsx)(jn, {
+                            value: p,
+                            minimumFractionDigits: 1,
+                            maximumFractionDigits: 1
+                        })
+                    })]
+                }), p != null && y != null ? (0, Db.jsx)(`span`, {
+                    "aria-hidden": `true`,
+                    children: Ob
+                }) : null, y == null ? null : (0, Db.jsx)(`span`, {
+                    className: `min-w-0 truncate`,
+                    children: y
+                })]
+            }) : null, t[37] = y, t[38] = i, t[39] = p, t[40] = P) : P = t[40];
+            let F;
+            t[41] !== N || t[42] !== P ? (F = (0, Db.jsxs)(Db.Fragment, {
+                children: [N, P]
+            }), t[41] = N, t[42] = P, t[43] = F) : F = t[43];
+            let I;
+            t[44] !== n || t[45] !== r.display_data.name || t[46] !== F ? (I = (0, Db.jsx)(Nm, {
+                title: r.display_data.name,
+                metadataDescriptionId: n,
+                metadata: F
+            }), t[44] = n, t[45] = r.display_data.name, t[46] = F, t[47] = I) : I = t[47];
+            let L;
+            return t[48] !== M || t[49] !== I ? (L = (0, Db.jsxs)(`div`, {
+                className: `flex w-full min-w-0 flex-col gap-2`,
+                children: [M, I]
+            }), t[48] = M, t[49] = I, t[50] = L) : L = t[50], L
+        }
+        let O = o == null ? c ? `aspect-square` : `h-[249px]` : `aspect-[var(--saved-entity-grid-card-aspect-ratio)]`,
+            k = D && _ ? `bg-white` : `bg-token-bg-primary dark:bg-token-bg-secondary`,
+            A = o == null && `motion-safe:group-hover:shadow-elevation-03 motion-safe:group-focus-within:shadow-elevation-03`,
+            j = o == null && !D && `group-hover:bg-token-bg-tertiary/60`,
+            M = s && `border-black ring-2 ring-black dark:border-white dark:ring-white`,
+            N;
+        t[51] !== M || t[52] !== O || t[53] !== k || t[54] !== A || t[55] !== j ? (N = J(`border-token-border-light relative w-full overflow-hidden rounded-2xl border`, O, k, `shadow-elevation-01 transition-[background-color,box-shadow] duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]`, A, `motion-reduce:transition-[background-color,box-shadow]`, j, M), t[51] = M, t[52] = O, t[53] = k, t[54] = A, t[55] = j, t[56] = N) : N = t[56];
+        let P;
+        t[57] !== f || t[58] !== v || t[59] !== D || t[60] !== o || t[61] !== _ ? (P = _ ? (0, Db.jsxs)(Db.Fragment, {
+            children: [(0, Db.jsx)(`img`, {
+                alt: ``,
+                "data-testid": `saved-entity-grid-card-image`,
+                className: J(`absolute inset-0 h-full w-full`, D ? `object-contain` : `object-cover`, v && xb.pendingImage),
+                loading: `lazy`,
+                onLoad: e => {
+                    o != null && g({
+                        imageUrl: f,
+                        aspectRatio: o.getNaturalAspectRatio(e.currentTarget.naturalWidth, e.currentTarget.naturalHeight)
+                    })
+                },
+                onError: () => {
+                    m(f)
+                },
+                src: f
+            }), (0, Db.jsx)(`div`, {
+                className: `pointer-events-none absolute inset-0 bg-black/15`
+            }), (0, Db.jsx)(`div`, {
+                className: `pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(13,13,13,0.60)_0%,rgba(13,13,13,0.30)_42%,rgba(13,13,13,0)_100%)]`
+            })]
+        }) : null, t[57] = f, t[58] = v, t[59] = D, t[60] = o, t[61] = _, t[62] = P) : P = t[62];
+        let F;
+        t[63] === o ? F = t[64] : (F = o == null ? null : (0, Db.jsx)(`div`, {
+            className: `pointer-events-none absolute inset-0 bg-black/5 opacity-0 group-focus-within:opacity-100 group-hover:opacity-100 motion-safe:transition-opacity`
+        }), t[63] = o, t[64] = F);
+        let I = _ ? `text-white` : `text-token-text-primary`,
+            L;
+        t[65] === I ? L = t[66] : (L = J(`pe-12 text-[14px] leading-[18px] font-medium`, I), t[65] = I, t[66] = L);
+        let R;
+        t[67] === r.display_data.name ? R = t[68] : (R = (0, Db.jsx)(`span`, {
+            className: `line-clamp-2 [overflow-wrap:anywhere] break-words`,
+            children: r.display_data.name
+        }), t[67] = r.display_data.name, t[68] = R);
+        let z;
+        t[69] !== E || t[70] !== _ ? (z = E != null && (0, Db.jsx)(`span`, {
+            className: J(`mt-0.5 block truncate font-normal`, _ ? `text-white/70` : `text-token-text-tertiary`),
+            children: E
+        }), t[69] = E, t[70] = _, t[71] = z) : z = t[71];
+        let B;
+        t[72] !== L || t[73] !== R || t[74] !== z ? (B = (0, Db.jsxs)(`div`, {
+            className: L,
+            children: [R, z]
+        }), t[72] = L, t[73] = R, t[74] = z, t[75] = B) : B = t[75];
+        let V;
+        t[76] !== d || t[77] !== _ ? (V = !_ && d != null ? (0, Db.jsx)(`div`, {
+            className: `flex flex-1 items-center justify-center`,
+            children: (0, Db.jsx)(b_, {
+                kind: d,
+                surface: `grid`,
+                className: `text-token-text-primary`
+            })
+        }) : _ ? null : (0, Db.jsx)(qu, {
+            "aria-hidden": `true`,
+            className: `text-token-text-tertiary mt-auto h-8 w-8`
+        }), t[76] = d, t[77] = _, t[78] = V) : V = t[78];
+        let H;
+        t[79] !== B || t[80] !== V ? (H = (0, Db.jsxs)(`div`, {
+            className: `pointer-events-none absolute inset-0 flex flex-col p-3`,
+            children: [B, V]
+        }), t[79] = B, t[80] = V, t[81] = H) : H = t[81];
+        let U;
+        return t[82] !== x || t[83] !== N || t[84] !== P || t[85] !== F || t[86] !== H ? (U = (0, Db.jsxs)(`div`, {
+            "data-testid": `saved-entity-grid-card`,
+            style: x,
+            className: N,
+            children: [P, F, H]
+        }), t[82] = x, t[83] = N, t[84] = P, t[85] = F, t[86] = H, t[87] = U) : U = t[87], U
+    }
+}));
+
+function jb(e, t, n) {
+    let r = e.savedEntity?.saved_target;
+    r == null || t.isPending || (mp({
+        clickType: `unsave`,
+        target: r,
+        surface: n
+    }), t.mutate({
+        savedTarget: r,
+        isSaved: !0,
+        analyticsSurface: n,
+        globalFavoritesAnalytics: Ef({
+            entityKind: xf(e.classifiers.library_artifact_type, r),
+            surface: n,
+            source: `library`,
+            action: `unsave`
+        })
+    }))
+}
+
+function Mb(e) {
+    "use forget";
+    let t = (0, Yb.c)(6),
+        {
+            artifact: n,
+            artifactIndex: r,
+            onVisible: i
+        } = e,
+        a;
+    t[0] !== n || t[1] !== r || t[2] !== i ? (a = () => {
+        i(n, r)
+    }, t[0] = n, t[1] = r, t[2] = i, t[3] = a) : a = t[3];
+    let o = gh(a, 0),
+        s;
+    return t[4] === o ? s = t[5] : (s = (0, Zb.jsx)(`span`, {
+        ref: o,
+        "aria-hidden": `true`,
+        className: `pointer-events-none absolute inset-0`
+    }), t[4] = o, t[5] = s), s
+}
+
+function Nb(e) {
+    return (0, Xb.isValidElement)(e) && e.type === $b
+}
+
+function Pb(e) {
+    "use forget";
+    let t = (0, Yb.c)(11),
+        {
+            enabled: n,
+            artifacts: r,
+            thumbnailItems: i,
+            renderItems: a,
+            children: o
+        } = e;
+    if (!n) {
+        let e;
+        return t[0] === o ? e = t[1] : (e = (0, Zb.jsx)(Zb.Fragment, {
+            children: o
+        }), t[0] = o, t[1] = e), e
+    }
+    let s, c;
+    if (t[2] !== r || t[3] !== o || t[4] !== a || t[5] !== i) {
+        let e = Xb.Children.toArray(o),
+            n = new Map(e.filter(Nb).map(Ib)),
+            l = r.flatMap((e, t) => {
+                let r = i[t],
+                    a = n.get(e.id);
+                return r == null || a == null ? [] : [{
+                    id: e.id,
+                    node: a,
+                    aspectRatio: !r.isSavedPlace && (r.isImageLike || r.isSavedEntity === !0) ? Am(r.width ?? 0, r.height ?? 0) : 1,
+                    minimumHeight: r.isSavedEntity === !0 ? void 0 : 160
+                }]
+            });
+        s = a?.(l) ?? (0, Zb.jsx)(Hy, {
+            items: l
+        }), c = e.filter(Fb), t[2] = r, t[3] = o, t[4] = a, t[5] = i, t[6] = s, t[7] = c
+    } else s = t[6], c = t[7];
+    let l;
+    return t[8] !== s || t[9] !== c ? (l = (0, Zb.jsxs)(Zb.Fragment, {
+        children: [s, c]
+    }), t[8] = s, t[9] = c, t[10] = l) : l = t[10], l
+}
+
+function Fb(e) {
+    return !Nb(e)
+}
+
+function Ib(e) {
+    return [e.props.artifact.id, e]
+}
+
+function Lb({
+    artifact: e,
+    conversation: t,
+    intl: n,
+    isArtifactReadOnly: r,
+    isNativeSharedWithMe: i,
+    viewMode: a,
+    onBeforeOpenSavedEntity: o
+}) {
+    if (e.source?.type !== `saved_entity` || e.savedEntity == null || t == null || r || i) return !1;
+    o?.();
+    let {
+        origin: s
+    } = e.savedEntity;
+    return gb({
+        savedEntity: e.savedEntity,
+        conversation: t,
+        intl: n,
+        viewMode: a,
+        libraryOrigin: s?.conversation_id != null && s.message_id != null ? {
+            conversationId: s.conversation_id,
+            messageId: s.message_id
+        } : void 0
+    }), !0
+}
+
+function Rb(e) {
+    let t = ks(e);
+    return e.kind === `file` && e.source?.type === `external_library` && ci(t, e.id, e.libraryFileId) === t && (ko(t) && Qn(e.mimeType) || no(t) === `imanage` && $s())
+}
+
+function zb({
+    artifact: e,
+    canViewSharingState: t,
+    isSharedAccess: n,
+    handleDownloadArtifact: r,
+    intl: i
+}) {
+    let a = e.libraryFileId;
+    if (a == null || Fh({
+            libraryFileId: a,
+            resourceKind: `file`,
+            sharingEntryId: e.sharingEntryId,
+            sharingCanManage: e.sharingCanManage
+        })) return;
+    let o = bs(e),
+        s = e.classifiers.library_artifact_type;
+    if (t) {
+        Nt(Ph, {
+            fileName: o,
+            libraryArtifactType: s,
+            libraryFileId: a
+        });
+        return
+    }
+    if (n) return;
+    let c = () => {
+        Nt(Mh, {
+            fileName: o,
+            libraryArtifactType: s,
+            libraryFileId: a,
+            onDownload: Pa(e) ? () => r(e) : void 0
+        })
+    };
+    if (!Oi(e).isImageLike || s !== `image` && s !== `image_gen`) {
+        c();
+        return
+    }
+    let l = G(),
+        u = () => G()?.id === l?.id && G()?.normalizedAccountUserId === l?.normalizedAccountUserId;
+    zn(async () => {
+        let {
+            openLibraryImageSharing: e
+        } = await import(`./d6bb1c02-gc9qm8akqeb8zqe4.js`).then(e => (e.t(), e.r));
+        return {
+            openLibraryImageSharing: e
+        }
+    }, __vite__mapDeps([17, 1, 2, 3, 4, 5, 6, 7, 8, 9, 15])).then(({
+        openLibraryImageSharing: t
+    }) => {
+        if (u()) return t({
+            target: {
+                fileId: sr(e) ?? void 0,
+                libraryArtifactType: s,
+                originConversationId: e.originationThreadId,
+                originMessageId: e.originationMessageId,
+                isSharedAccess: n
+            },
+            onShareFile: c,
+            intl: i
+        })
+    }).catch(() => {
+        u() && yn().danger(i.formatMessage(kh.openShareError))
+    })
+}
+
+function Bb(e, t) {
+    if (e.sharingEntryId != null && nc()) return;
+    Ph.prefetch();
+    let n = G(),
+        r = n?.normalizedAccountUserId,
+        i = e.libraryFileId;
+    n == null || !r || !i || t.prefetchQuery(Bh({
+        accountId: n.id,
+        accountUserId: r,
+        libraryFileId: i,
+        resourceKind: `file`
+    }))
+}
+
+function Vb(e) {
+    "use forget";
+    let t = (0, Yb.c)(114),
+        {
+            artifacts: n,
+            getArtifactDisplayTitle: r,
+            favoritedArtifactIds: i,
+            openActionsMenuForArtifactId: a,
+            allowDrag: o,
+            canMove: s,
+            rootDirectoryId: c,
+            selectionGroupFlagsById: l,
+            checkedIds: u,
+            hasSelection: d,
+            selectionEnabled: f,
+            showSelectionControls: p,
+            showSizeColumn: m,
+            isDeletingFileId: h,
+            isNativeSharedWithMe: g,
+            isSharedAccessDirectory: _,
+            materializingFileIds: v,
+            isMovingFileId: y,
+            isMovingDirectoryId: b,
+            readOnly: x,
+            isSearchViewActive: S,
+            showSuggestedActivity: C,
+            currentDirectoryStateId: w,
+            getDraggedItemsForRow: T,
+            setDraggedItems: E,
+            clearDraggedItems: D,
+            updateSelection: O,
+            handleOpenArtifact: k,
+            handleDownloadArtifact: A,
+            downloadFile: j,
+            deleteArtifact: M,
+            handleOpenMoveFileDialog: N,
+            onOpenArtifact: P,
+            onBeforeOpenSavedEntity: F,
+            onDeleteInitiated: I,
+            onStartChatWithArtifact: L,
+            onRemoveSharedArtifact: R,
+            onVisibleArtifact: z,
+            onVisibleGoogleDriveFile: B,
+            getGoogleDriveThumbnailFileId: V,
+            pendingArtifactIds: H,
+            favoritePendingArtifactIds: U,
+            onToggleFavorite: ee,
+            onPrefetchSavedEntity: W
+        } = e,
+        te = c === void 0 ? null : c,
+        ne = f === void 0 || f,
+        re = m === void 0 || m,
+        ie = g !== void 0 && g,
+        ae = _ !== void 0 && _,
+        G = x !== void 0 && x,
+        oe = C !== void 0 && C,
+        se = pt(),
+        ce = Yn(),
+        le = On(),
+        ue = K(on),
+        de;
+    t[0] === ue ? de = t[1] : (de = No(ue), t[0] = ue, t[1] = de);
+    let fe = de,
+        pe;
+    t[2] === ce ? pe = t[3] : (pe = {
+        onRemoveSuccess: () => cp({
+            intl: ce,
+            kind: `removed`
+        }),
+        onToggleError: () => yn().danger(ce.formatMessage(Z.favoriteFileFailed))
+    }, t[2] = ce, t[3] = pe);
+    let me = tf(pe),
+        q = ue?.id,
+        he = ie || ae,
+        ge;
+    t[4] !== n || t[5] !== w || t[6] !== fe || t[7] !== H || t[8] !== G || t[9] !== q || t[10] !== he ? (ge = (0, Zb.jsx)(Ly, {
+        accountId: q,
+        artifacts: n,
+        directoryId: w,
+        isSharingEnabled: fe,
+        isSharedScope: he,
+        pendingArtifactIds: H,
+        readOnly: G
+    }), t[4] = n, t[5] = w, t[6] = fe, t[7] = H, t[8] = G, t[9] = q, t[10] = he, t[11] = ge) : ge = t[11];
+    let _e;
+    if (t[12] !== o || t[13] !== n || t[14] !== s || t[15] !== u || t[16] !== D || t[17] !== se || t[18] !== w || t[19] !== M || t[20] !== j || t[21] !== U || t[22] !== i || t[23] !== r || t[24] !== T || t[25] !== V || t[26] !== A || t[27] !== k || t[28] !== N || t[29] !== d || t[30] !== ce || t[31] !== h || t[32] !== b || t[33] !== y || t[34] !== ie || t[35] !== S || t[36] !== ae || t[37] !== fe || t[38] !== v || t[39] !== F || t[40] !== I || t[41] !== P || t[42] !== W || t[43] !== R || t[44] !== L || t[45] !== ee || t[46] !== z || t[47] !== B || t[48] !== a || t[49] !== H || t[50] !== le || t[51] !== G || t[52] !== te || t[53] !== ne || t[54] !== l || t[55] !== E || t[56] !== p || t[57] !== re || t[58] !== oe || t[59] !== me || t[60] !== O) {
+        let e;
+        t[62] !== o || t[63] !== s || t[64] !== u || t[65] !== D || t[66] !== se || t[67] !== w || t[68] !== M || t[69] !== j || t[70] !== U || t[71] !== i || t[72] !== r || t[73] !== T || t[74] !== V || t[75] !== A || t[76] !== k || t[77] !== N || t[78] !== d || t[79] !== ce || t[80] !== h || t[81] !== b || t[82] !== y || t[83] !== ie || t[84] !== S || t[85] !== ae || t[86] !== fe || t[87] !== v || t[88] !== F || t[89] !== I || t[90] !== P || t[91] !== W || t[92] !== R || t[93] !== L || t[94] !== ee || t[95] !== z || t[96] !== B || t[97] !== a || t[98] !== H || t[99] !== le || t[100] !== G || t[101] !== te || t[102] !== ne || t[103] !== l || t[104] !== E || t[105] !== p || t[106] !== re || t[107] !== oe || t[108] !== me || t[109] !== O ? (e = (e, t) => {
+            let n = u.has(e.id),
+                c = l[e.id],
+                f = yl(e),
+                m = e.source?.type === `saved_entity`,
+                g = f || m,
+                _ = $c(e),
+                x = lb(e, w).isSharedLibraryArtifact,
+                C = ae || x,
+                K = G || C,
+                ue = G && Rb(e),
+                de = !g && Wp(e) && (!K || C || ue),
+                pe = !g && !K && Hp(e),
+                q = fe && !_ && K && (ie || C),
+                he = !g && fe && (!K || q) && zp(e),
+                ge = !K && !_ && s,
+                _e = ie && !_ && e.libraryFileId != null && (e.directShareId != null || e.hasOpenedSharedMembership === !0) && R != null,
+                ve = v.has(e.id),
+                ye = m || i?.has(e.id) === !0,
+                be = K ? void 0 : m && e.savedEntity != null ? () => jb(e, me, `library_list`) : e.libraryFileId != null && ee != null ? () => ee(e, ye) : void 0,
+                xe = U?.has(e.id) === !0,
+                Se = H?.has(e.id) === !0,
+                Ce = Se || h === e.id || ve || y === e.id || b != null,
+                we = o && !K && !_ && !Ce && (!d || n),
+                Te = !g && (cs(e) || Pa(e)),
+                Ee = Nv(e),
+                De = oe && Ee.timestamp != null ? ce.formatMessage(Ee.kind === `opened` ? Z.suggestedOpenedAt : Z.suggestedModifiedAt, {
+                    relativeTime: Dc({
+                        givenDate: Ee.timestamp,
+                        now: new Date,
+                        intl: ce
+                    })
+                }) : void 0;
+            return (0, Zb.jsxs)($b, {
+                artifact: e,
+                onVisibleGoogleDriveFile: B,
+                onPrefetchSavedEntity: W,
+                onFocus: he && q ? Ub : void 0,
+                onPointerEnter: he && q ? Hb : void 0,
+                "data-page-table-row-item": `true`,
+                className: j_.rowItem,
+                onDragStartCapture: t => {
+                    if (!we) {
+                        t.preventDefault();
+                        return
+                    }
+                    let n = T({
+                        rowId: e.id,
+                        kind: `artifact`
+                    });
+                    if (n == null) {
+                        t.preventDefault();
+                        return
+                    }
+                    E(n), t.dataTransfer.effectAllowed = `move`, t.dataTransfer.setData(`text/plain`, JSON.stringify(n))
+                },
+                onDragEndCapture: () => {
+                    D()
+                },
+                draggable: we,
+                children: [z == null ? null : (0, Zb.jsx)(Mb, {
+                    artifact: e,
+                    artifactIndex: t,
+                    onVisible: z
+                }), (0, Zb.jsx)(Sv, {
+                    artifact: e,
+                    thumbnailFileId: V?.(e) ?? void 0,
+                    displayTitle: r?.(e),
+                    checked: n,
+                    isActive: !1,
+                    hasSelection: d,
+                    hasRenameAction: pe,
+                    hasMoveAction: ge,
+                    showSelectionControls: p,
+                    selectionEnabled: ne && !Se,
+                    showActions: !Se,
+                    isSharedAccess: C,
+                    showSharedBy: ie,
+                    showSizeColumn: re,
+                    isFavorited: ye,
+                    favoriteMutationLoading: xe,
+                    actionsMenuOpen: a === e.id || void 0,
+                    mutationLoading: Ce,
+                    onActionsMenuOpen: he && q ? () => Bb(e, le) : void 0,
+                    rowClassName: J(c?.mergeWithPrevious && j_.rowSelectionGroupMergeWithPrevious, c?.mergeWithNext && j_.rowSelectionGroupMergeWithNext),
+                    onOpen: r => {
+                        if (!Ce) {
+                            if (d) {
+                                O(e.id, !n, r);
+                                return
+                            }
+                            P?.(e, t), !Lb({
+                                artifact: e,
+                                conversation: se,
+                                intl: ce,
+                                isArtifactReadOnly: K,
+                                isNativeSharedWithMe: ie,
+                                viewMode: `list`,
+                                onBeforeOpenSavedEntity: F
+                            }) && k(e, {
+                                clearCacheOnDelete: S
+                            })
+                        }
+                    },
+                    onOpenPreview: () => {
+                        Ce || (P?.(e, t), !Lb({
+                            artifact: e,
+                            conversation: se,
+                            intl: ce,
+                            isArtifactReadOnly: K,
+                            isNativeSharedWithMe: ie,
+                            viewMode: `list`,
+                            onBeforeOpenSavedEntity: F
+                        }) && k(e, {
+                            clearCacheOnDelete: S
+                        }))
+                    },
+                    onStartChat: !de || L == null ? void 0 : () => L(e),
+                    onCheckedChange: (t, n) => {
+                        t || Dv(), O(e.id, t, n)
+                    },
+                    lastModifiedLabel: ve ? ce.formatMessage(Z.prepareFile) : y === e.id ? ce.formatMessage(Z.movingFile) : De,
+                    downloadFile: j,
+                    showDownloadAction: Te,
+                    onDownload: () => {
+                        A(e)
+                    },
+                    onDelete: async () => await M(e, {
+                        clearCacheOnDelete: S
+                    }),
+                    onDeleteInitiated: I == null ? void 0 : () => I(e),
+                    onToggleFavorite: be,
+                    showDeleteAction: !K && !_ && !g,
+                    additionalMenuItems: he || pe || ge || _e ? t => {
+                        let {
+                            itemClassName: n
+                        } = t;
+                        return (0, Zb.jsxs)(Zb.Fragment, {
+                            children: [he ? (0, Zb.jsx)(yi.Item, {
+                                size: `large`,
+                                disabled: Ce,
+                                className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, n),
+                                icon: (0, Zb.jsx)(f_.Share, {
+                                    className: `icon`
+                                }),
+                                label: (0, Zb.jsx)(X, {
+                                    ...kh.shareAction
+                                }),
+                                onSelect: () => {
+                                    zb({
+                                        artifact: e,
+                                        canViewSharingState: q,
+                                        isSharedAccess: C,
+                                        handleDownloadArtifact: A,
+                                        intl: ce
+                                    })
+                                }
+                            }) : null, pe ? (0, Zb.jsx)(yi.Item, {
+                                size: `large`,
+                                disabled: Ce,
+                                className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, n),
+                                icon: (0, Zb.jsx)(f_.Edit, {
+                                    className: `icon`
+                                }),
+                                label: (0, Zb.jsx)(X, {
+                                    ...Z.rename
+                                }),
+                                onSelect: () => {
+                                    Nt(nb, {
+                                        artifact: e
+                                    })
+                                }
+                            }) : null, ge ? (0, Zb.jsx)(yi.Item, {
+                                size: `large`,
+                                disabled: Ce,
+                                className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, n),
+                                icon: (0, Zb.jsx)(Pu, {
+                                    "aria-hidden": `true`,
+                                    className: `icon text-token-text-primary`
+                                }),
+                                label: (0, Zb.jsx)(X, {
+                                    ...Vs(e.classifiers.parent_directory_id, te) ? Z.moveToFolder : Z.moveFile
+                                }),
+                                onSelect: t => {
+                                    t.preventDefault(), t.stopPropagation(), N(e, w)
+                                }
+                            }) : null, _e ? (0, Zb.jsx)(yi.Item, {
+                                size: `large`,
+                                disabled: Ce,
+                                className: J(`keyboard-focused:focus-ring`, `text-token-text-status-error`, n),
+                                icon: (0, Zb.jsx)(uu, {
+                                    "aria-hidden": `true`,
+                                    className: `icon`
+                                }),
+                                label: (0, Zb.jsx)(X, {
+                                    ...kh.leaveAction
+                                }),
+                                onSelect: () => {
+                                    R(e)
+                                }
+                            }) : null]
+                        })
+                    } : void 0
+                })]
+            }, e.id)
+        }, t[62] = o, t[63] = s, t[64] = u, t[65] = D, t[66] = se, t[67] = w, t[68] = M, t[69] = j, t[70] = U, t[71] = i, t[72] = r, t[73] = T, t[74] = V, t[75] = A, t[76] = k, t[77] = N, t[78] = d, t[79] = ce, t[80] = h, t[81] = b, t[82] = y, t[83] = ie, t[84] = S, t[85] = ae, t[86] = fe, t[87] = v, t[88] = F, t[89] = I, t[90] = P, t[91] = W, t[92] = R, t[93] = L, t[94] = ee, t[95] = z, t[96] = B, t[97] = a, t[98] = H, t[99] = le, t[100] = G, t[101] = te, t[102] = ne, t[103] = l, t[104] = E, t[105] = p, t[106] = re, t[107] = oe, t[108] = me, t[109] = O, t[110] = e) : e = t[110], _e = n.map(e), t[12] = o, t[13] = n, t[14] = s, t[15] = u, t[16] = D, t[17] = se, t[18] = w, t[19] = M, t[20] = j, t[21] = U, t[22] = i, t[23] = r, t[24] = T, t[25] = V, t[26] = A, t[27] = k, t[28] = N, t[29] = d, t[30] = ce, t[31] = h, t[32] = b, t[33] = y, t[34] = ie, t[35] = S, t[36] = ae, t[37] = fe, t[38] = v, t[39] = F, t[40] = I, t[41] = P, t[42] = W, t[43] = R, t[44] = L, t[45] = ee, t[46] = z, t[47] = B, t[48] = a, t[49] = H, t[50] = le, t[51] = G, t[52] = te, t[53] = ne, t[54] = l, t[55] = E, t[56] = p, t[57] = re, t[58] = oe, t[59] = me, t[60] = O, t[61] = _e
+    } else _e = t[61];
+    let ve;
+    return t[111] !== ge || t[112] !== _e ? (ve = (0, Zb.jsxs)(Zb.Fragment, {
+        children: [ge, _e]
+    }), t[111] = ge, t[112] = _e, t[113] = ve) : ve = t[113], ve
+}
+
+function Hb() {
+    Ph.prefetch()
+}
+
+function Ub() {
+    Ph.prefetch()
+}
+
+function Wb(e) {
+    "use forget";
+    let t = (0, Yb.c)(31),
+        {
+            artifacts: n,
+            getArtifactDisplayTitle: r,
+            isFetchingNextPage: i,
+            itemRole: a,
+            masonry: o,
+            renderMasonryItems: s,
+            renderListEndSentinel: c,
+            square: l,
+            checkedIds: u,
+            hasSelection: d,
+            selectionEnabled: f,
+            showSelectionControls: p,
+            isDeletingFileId: m,
+            shouldRevealGridFileActionsOnHover: h,
+            listEndRef: g,
+            updateSelection: _,
+            deletedFileActions: v,
+            dateKind: y,
+            showSuggestedActivity: b,
+            favoritedArtifactIds: x,
+            allowDrag: S,
+            canMove: C,
+            rootDirectoryId: w,
+            clearCacheOnDelete: T,
+            isNativeSharedWithMe: E,
+            isSharedAccessDirectory: D,
+            materializingFileIds: O,
+            isMovingFileId: k,
+            isMovingDirectoryId: A,
+            readOnly: j,
+            currentDirectoryStateId: M,
+            getDraggedItemsForRow: N,
+            setDraggedItems: P,
+            clearDraggedItems: F,
+            handleOpenArtifact: I,
+            handleOpenMoveFileDialog: L,
+            handleDownloadArtifact: R,
+            confirmDeleteArtifact: z,
+            onOpenArtifact: B,
+            onBeforeOpenSavedEntity: V,
+            onStartChatWithArtifact: H,
+            onRemoveSharedArtifact: U,
+            onVisibleArtifact: ee,
+            onVisibleGoogleDriveFile: W,
+            getGoogleDriveThumbnailFileId: te,
+            pendingArtifactIds: ne,
+            favoritePendingArtifactIds: re,
+            onToggleFavorite: ie,
+            onPrefetchSavedEntity: ae
+        } = e,
+        G = o !== void 0 && o,
+        oe = c === void 0 || c,
+        se = l !== void 0 && l,
+        ce = f === void 0 || f,
+        le = y === void 0 ? `modified` : y,
+        ue = b !== void 0 && b,
+        de = S !== void 0 && S,
+        fe = C !== void 0 && C,
+        pe = w === void 0 ? null : w,
+        me = T !== void 0 && T,
+        q = E !== void 0 && E,
+        he = D !== void 0 && D,
+        ge = j !== void 0 && j,
+        _e = M === void 0 ? null : M,
+        ve = pt(),
+        ye = (0, Xb.useContext)(u_),
+        be = Yn(),
+        xe = On(),
+        Se = (0, Xb.useId)(),
+        Ce = K(on),
+        we = v == null && No(Ce),
+        Te;
+    t[0] === be ? Te = t[1] : (Te = {
+        onRemoveSuccess: () => cp({
+            intl: be,
+            kind: `removed`
+        }),
+        onToggleError: () => yn().danger(be.formatMessage(Z.favoriteFileFailed))
+    }, t[0] = be, t[1] = Te);
+    let Ee = tf(Te),
+        De;
+    t[2] !== n || t[3] !== me || t[4] !== _e || t[5] !== v || t[6] !== r || t[7] !== te || t[8] !== I || t[9] !== be || t[10] !== he ? (De = () => (wl(), Rm(n, e => {
+        I?.(e, {
+            clearCacheOnDelete: me
+        })
+    }, v == null ? {
+        getDisplayTitle: r,
+        getThumbnailFileId: te,
+        getSharedLibraryFileId: e => he || lb(e, _e).isSharedLibraryArtifact ? e.libraryFileId ?? null : void 0,
+        intl: be,
+        showThumbnail: e => !he && !lb(e, _e).isSharedLibraryArtifact
+    } : {
+        getDisplayTitle: r,
+        intl: be
+    })), t[2] = n, t[3] = me, t[4] = _e, t[5] = v, t[6] = r, t[7] = te, t[8] = I, t[9] = be, t[10] = he, t[11] = De) : De = t[11];
+    let Oe = K(De),
+        ke;
+    t[12] === Oe ? ke = t[13] : (ke = (e, t) => {
+        let n = Oe[t];
+        return n == null ? [] : [
+            [e.id, n]
+        ]
+    }, t[12] = Oe, t[13] = ke);
+    let Ae = new Map(n.flatMap(ke)),
+        je = Pb,
+        Me = v == null ? (0, Zb.jsx)(Ly, {
+            accountId: Ce?.id,
+            artifacts: n,
+            directoryId: _e,
+            isSharingEnabled: we,
+            isSharedScope: q || he,
+            pendingArtifactIds: ne,
+            readOnly: ge
+        }) : null,
+        Ne = n.map((e, t) => {
+            let n = Ae.get(e.id);
+            if (n == null) return null;
+            let r = ue ? Nv(e) : void 0,
+                i = u.has(e.id),
+                o = yl(e),
+                s = e.source?.type === `saved_entity`,
+                c = e.savedEntity,
+                l = Ld(c?.saved_target.sidebar_params.category),
+                f = c?.entity_data?.type === `product` || c?.entity_data?.type === `place`,
+                g = o || s,
+                y = $c(e),
+                b = lb(e, _e).isSharedLibraryArtifact,
+                S = he || b,
+                C = v != null || ge || S,
+                w = I != null || s && c != null && ve != null && !C && !q,
+                T = e.originationThreadId?.trim(),
+                E = s && !S && T != null && T.length > 0 && al(),
+                D = s && !C && !q && f ? `${Se}-${t}` : void 0,
+                j = ge && Rb(e),
+                M = !g && Wp(e) && (!C || S || j),
+                te = s || x?.has(e.id) === !0,
+                K = C ? void 0 : s && c != null ? () => jb(e, Ee, `library_grid`) : e.libraryFileId != null && ie != null ? () => ie(e, te) : void 0,
+                oe = K != null,
+                Ce = !g && !C && Hp(e),
+                Te = we && !y && C && (q || S),
+                De = !g && we && R != null && (!C || Te) && zp(e),
+                Oe = !C && !y && fe && L != null,
+                ke = q && !y && e.libraryFileId != null && (e.directShareId != null || e.hasOpenedSharedMembership === !0) && U != null,
+                je = !g && R != null && (Pa(e) || S && cs(e)),
+                Me = !C && !y && !g && z != null,
+                Ne = v != null || M && H != null || E || De || oe || Ce || Oe || ke || je || Me,
+                Pe = v != null && !G,
+                Fe = (G || Pe) && (n.isImageLike || c?.display_data.image_url != null),
+                Ie = O?.has(e.id) === !0,
+                Le = re?.has(e.id) === !0,
+                Re = ne?.has(e.id) === !0,
+                ze = Re || m === e.id || v?.isRestoringFileId === e.id || Ie || k === e.id || A != null,
+                Be = de && N != null && P != null && F != null && !C && !y && !ze && (!d || i);
+            return (0, Zb.jsxs)($b, {
+                artifact: e,
+                onVisibleGoogleDriveFile: W,
+                onPrefetchSavedEntity: ae,
+                onFocus: De && Te ? Kb : void 0,
+                onPointerEnter: De && Te ? Gb : void 0,
+                className: `group relative w-full min-w-0`,
+                "data-page-table-selection-id": Re ? void 0 : e.id,
+                role: a,
+                draggable: Be,
+                onDragStart: t => {
+                    if (!Be) {
+                        t.preventDefault();
+                        return
+                    }
+                    let n = N?.({
+                        rowId: e.id,
+                        kind: `artifact`
+                    });
+                    if (n == null) {
+                        t.preventDefault();
+                        return
+                    }
+                    P?.(n), t.dataTransfer.effectAllowed = `move`, t.dataTransfer.setData(`text/plain`, JSON.stringify(n))
+                },
+                onDragEnd: () => {
+                    F?.()
+                },
+                children: [ee == null ? null : (0, Zb.jsx)(Mb, {
+                    artifact: e,
+                    artifactIndex: t,
+                    onVisible: ee
+                }), (0, Zb.jsx)(`div`, {
+                    "data-library-grid-actions": `true`,
+                    "data-testid": `${v==null?`grid-file-actions`:`grid-deleted-file-actions`}-${e.id}`,
+                    "aria-hidden": d || Re || void 0,
+                    className: J(`absolute z-10 transition-opacity`, Pe ? `end-4 top-1/2 -translate-y-1/2` : `end-3 top-3`, Fe && Ym.imageGridActionBackdrop, d || Re ? `pointer-events-none opacity-0` : i || !h ? `pointer-events-auto opacity-100` : `pointer-events-none opacity-0 group-focus-within:pointer-events-auto group-focus-within:opacity-100 group-hover:pointer-events-auto group-hover:opacity-100`),
+                    children: Ne && !Re ? (0, Zb.jsx)(ah, {
+                        disabled: ze,
+                        keepFocusableWhenDisabled: !0,
+                        label: be.formatMessage(Z.openActions, {
+                            name: n.fileName ?? n.title
+                        }),
+                        tabIndex: d ? -1 : void 0,
+                        variant: Fe ? `image-grid` : `grid`,
+                        onOpenChange: t => {
+                            !t || ze || v != null || (De && Te && Bb(e, xe), ye != null && Gf({
+                                analyticsSession: ye,
+                                availableActionSet: [...M && (!C || j) && H != null ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_START_CHAT] : [], ...je ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_DOWNLOAD] : [], ...Ce ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_RENAME] : [], ...Oe ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_MOVE] : [], ...Me ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_DELETE] : []],
+                                menuKind: Jr.CHATGPT_FILE_LIBRARY_MENU_KIND_FILE_CONTEXT,
+                                provider: Hf(e)
+                            }))
+                        },
+                        children: t => {
+                            let {
+                                itemClassName: n
+                            } = t;
+                            return v == null ? (0, Zb.jsxs)(yi.Group, {
+                                children: [M && H != null ? (0, Zb.jsx)(Qm, {
+                                    itemClassName: n,
+                                    onSelect: () => H(e)
+                                }) : null, E ? (0, Zb.jsx)(rh, {
+                                    size: `large`,
+                                    itemClassName: n,
+                                    conversationId: T,
+                                    messageId: e.originationMessageId
+                                }) : null, oe ? (0, Zb.jsx)(yi.Item, {
+                                    size: `large`,
+                                    disabled: ze || Le,
+                                    className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, n),
+                                    icon: te ? (0, Zb.jsx)(du, {
+                                        "aria-hidden": `true`,
+                                        className: `icon`
+                                    }) : (0, Zb.jsx)(Ru, {
+                                        "aria-hidden": `true`,
+                                        className: `icon`
+                                    }),
+                                    label: (0, Zb.jsx)(X, {
+                                        ...te ? Z.removeFavoriteFile : Z.favoriteFile
+                                    }),
+                                    onSelect: K
+                                }) : null, je ? (0, Zb.jsx)(yi.Item, {
+                                    size: `large`,
+                                    disabled: ze,
+                                    className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, n),
+                                    icon: (0, Zb.jsx)(f_.Download, {
+                                        className: `icon`
+                                    }),
+                                    label: (0, Zb.jsx)(X, {
+                                        ...Z.downloadFile
+                                    }),
+                                    onSelect: () => {
+                                        R?.(e)
+                                    }
+                                }) : null, De ? (0, Zb.jsx)(yi.Item, {
+                                    size: `large`,
+                                    disabled: ze,
+                                    className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, n),
+                                    icon: (0, Zb.jsx)(f_.Share, {
+                                        className: `icon`
+                                    }),
+                                    label: (0, Zb.jsx)(X, {
+                                        ...kh.shareAction
+                                    }),
+                                    onSelect: () => {
+                                        R != null && zb({
+                                            artifact: e,
+                                            canViewSharingState: Te,
+                                            isSharedAccess: S,
+                                            handleDownloadArtifact: R,
+                                            intl: be
+                                        })
+                                    }
+                                }) : null, Ce ? (0, Zb.jsx)(yi.Item, {
+                                    size: `large`,
+                                    disabled: ze,
+                                    className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, n),
+                                    icon: (0, Zb.jsx)(f_.Edit, {
+                                        className: `icon`
+                                    }),
+                                    label: (0, Zb.jsx)(X, {
+                                        ...Z.rename
+                                    }),
+                                    onSelect: () => {
+                                        Nt(nb, {
+                                            artifact: e
+                                        })
+                                    }
+                                }) : null, Oe ? (0, Zb.jsx)(yi.Item, {
+                                    size: `large`,
+                                    disabled: ze,
+                                    className: J(`keyboard-focused:focus-ring`, `text-token-text-primary`, n),
+                                    icon: (0, Zb.jsx)(Pu, {
+                                        "aria-hidden": `true`,
+                                        className: `icon`
+                                    }),
+                                    label: (0, Zb.jsx)(X, {
+                                        ...Vs(e.classifiers.parent_directory_id, pe) ? Z.moveToFolder : Z.moveFile
+                                    }),
+                                    onSelect: () => {
+                                        L?.(e, _e)
+                                    }
+                                }) : null, Me ? (0, Zb.jsx)(yi.Item, {
+                                    size: `large`,
+                                    disabled: ze,
+                                    className: J(`keyboard-focused:focus-ring`, `interactive-label-danger-soft dark:text-red-75!`, n),
+                                    icon: (0, Zb.jsx)(f_.Trash, {
+                                        className: `icon`
+                                    }),
+                                    label: (0, Zb.jsx)(X, {
+                                        ...Z.deleteFile
+                                    }),
+                                    onSelect: () => {
+                                        z?.(e, {
+                                            clearCacheOnDelete: me
+                                        })
+                                    }
+                                }) : null, ke ? (0, Zb.jsx)(yi.Item, {
+                                    size: `large`,
+                                    disabled: ze,
+                                    className: J(`keyboard-focused:focus-ring`, `interactive-label-danger-soft dark:text-red-75!`, n),
+                                    icon: (0, Zb.jsx)(uu, {
+                                        "aria-hidden": `true`,
+                                        className: `icon`
+                                    }),
+                                    label: (0, Zb.jsx)(X, {
+                                        ...kh.leaveAction
+                                    }),
+                                    onSelect: () => {
+                                        U(e)
+                                    }
+                                }) : null]
+                            }) : v.renderMenuItems({
+                                artifact: e,
+                                mutationLoading: ze,
+                                itemClassName: n
+                            })
+                        }
+                    }) : null
+                }), (0, Zb.jsx)(Dm, {
+                    item: n,
+                    dateKind: r?.kind ?? le,
+                    showSuggestedActivity: ue,
+                    openButtonDescriptionId: D,
+                    selectionControlWithinThumbnail: s && !C && !q && l != null,
+                    square: se,
+                    lastModifiedDate: v == null ? q ? e.sharedAt : r?.timestamp?.toISOString() ?? e.updatedAt : void 0,
+                    openButtonContent: s && c != null && !C && !q ? (0, Zb.jsx)(kb, {
+                        metadataDescriptionId: D,
+                        savedEntity: c,
+                        selected: i,
+                        square: se,
+                        responsiveImageSizing: G ? {
+                            initialAspectRatio: Am(n.width ?? 0, n.height ?? 0),
+                            getNaturalAspectRatio: Am
+                        } : void 0
+                    }) : void 0,
+                    selected: i,
+                    onToggleSelect: Re || !ce ? void 0 : (t, n) => {
+                        _(e.id, t, n)
+                    },
+                    onOpenPreview: n => {
+                        if (d) {
+                            _(e.id, !i, n);
+                            return
+                        }
+                        v != null || !w || (B?.(e, t), !Lb({
+                            artifact: e,
+                            conversation: ve,
+                            intl: be,
+                            isArtifactReadOnly: C,
+                            isNativeSharedWithMe: q,
+                            viewMode: `grid`,
+                            onBeforeOpenSavedEntity: V
+                        }) && I?.(e, {
+                            clearCacheOnDelete: me
+                        }))
+                    },
+                    alwaysShowSelectionControl: p || !h,
+                    openDisabled: v == null ? Ie || Re || !d && !w : !d,
+                    loading: Ie,
+                    loadingLabel: (0, Zb.jsx)(X, {
+                        ...Z.prepareFile
+                    }),
+                    className: `w-full min-w-0`,
+                    masonry: G
+                })]
+            }, e.id)
+        }),
+        Pe;
+    t[14] !== i || t[15] !== G ? (Pe = i ? (0, Zb.jsx)(`div`, {
+        className: J(`flex items-center justify-center py-4`, !G && `col-span-full`),
+        "data-testid": `library-file-grid-loading`,
+        children: (0, Zb.jsx)(Ct, {})
+    }) : null, t[14] = i, t[15] = G, t[16] = Pe) : Pe = t[16];
+    let Fe;
+    t[17] !== g || t[18] !== G || t[19] !== oe ? (Fe = oe ? (0, Zb.jsx)(`div`, {
+        ref: g,
+        className: J(`h-1 border-t-0!`, !G && `col-span-full`),
+        "data-testid": `library-file-grid-sentinel`
+    }) : null, t[17] = g, t[18] = G, t[19] = oe, t[20] = Fe) : Fe = t[20];
+    let Ie;
+    return t[21] !== je || t[22] !== n || t[23] !== Oe || t[24] !== G || t[25] !== s || t[26] !== Me || t[27] !== Ne || t[28] !== Pe || t[29] !== Fe ? (Ie = (0, Zb.jsxs)(je, {
+        enabled: G,
+        artifacts: n,
+        thumbnailItems: Oe,
+        renderItems: s,
+        children: [Me, Ne, Pe, Fe]
+    }), t[21] = je, t[22] = n, t[23] = Oe, t[24] = G, t[25] = s, t[26] = Me, t[27] = Ne, t[28] = Pe, t[29] = Fe, t[30] = Ie) : Ie = t[30], Ie
+}
+
+function Gb() {
+    Ph.prefetch()
+}
+
+function Kb() {
+    Ph.prefetch()
+}
+
+function qb(e) {
+    "use forget";
+    let t = (0, Yb.c)(8),
+        n, r;
+    t[0] === e ? (n = t[1], r = t[2]) : ({
+        folders: r,
+        ...n
+    } = e, t[0] = e, t[1] = n, t[2] = r);
+    let i;
+    t[3] === r ? i = t[4] : (i = e => (0, Zb.jsx)(Hy, {
+        items: [...r.map(Jb), ...e]
+    }), t[3] = r, t[4] = i);
+    let a;
+    return t[5] !== n || t[6] !== i ? (a = (0, Zb.jsx)(Wb, {
+        ...n,
+        masonry: !0,
+        renderMasonryItems: i
+    }), t[5] = n, t[6] = i, t[7] = a) : a = t[7], a
+}
+
+function Jb(e) {
+    let {
+        id: t,
+        cardProps: n
+    } = e;
+    return {
+        id: `folder:${t}`,
+        aspectRatio: 1,
+        node: (0, Zb.jsx)(Ay, {
+            ...n
+        })
+    }
+}
+var Yb, Xb, Zb, Qb, $b, ex = e((() => {
+    Yb = qn(), Bt(), ea(), Al(), Mu(), kl(), Eu(), n(), ia(), np(), d_(), Ov(), Vm(), jy(), zy(), p_(), M_(), Ka(), $m(), Jm(), sh(), nh(), Jy(), tb(), Bo(), qi(), Xp(), Hr(), go(), Ir(), rb(), jh(), Lh(), Ip(), Ah(), zh(), Nh(), Wv(), yc(), Pf(), xa(), Vc(), hb(), Vp(), Im(), po(), xo(), vb(), Lf(), uf(), nf(), Ab(), Kd(), ee(), fe(), s(), fs(), _h(), ct(), Id(), Kn(), ke(), Xb = t(Fn()), Pn(), Zb = wn(), Wn(), Qb = 150, $b = e => {
+        "use forget";
+        let t = (0, Yb.c)(26),
+            n, r, i, a, o, s;
+        t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4], o = t[5], s = t[6]) : ({
+            artifact: n,
+            onFocus: i,
+            onPointerEnter: a,
+            onPointerLeave: o,
+            onPrefetchSavedEntity: s,
+            ...r
+        } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a, t[5] = o, t[6] = s);
+        let c = (0, Xb.useRef)(null),
+            l;
+        t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (l = () => {
+            c.current != null && (clearTimeout(c.current), c.current = null)
+        }, t[7] = l) : l = t[7];
+        let u = l,
+            d, f;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (d = () => () => {
+            u()
+        }, f = [u], t[8] = d, t[9] = f) : (d = t[8], f = t[9]), (0, Xb.useEffect)(d, f);
+        let p = n.source?.type === `saved_entity` ? s : void 0,
+            m;
+        t[10] !== n || t[11] !== i || t[12] !== p ? (m = e => {
+            i?.(e), p != null && (u(), !(!(e.target instanceof HTMLElement) || !e.target.matches(`:focus-visible`)) && p(n))
+        }, t[10] = n, t[11] = i, t[12] = p, t[13] = m) : m = t[13];
+        let h = m,
+            g;
+        t[14] !== n || t[15] !== a || t[16] !== p ? (g = e => {
+            a?.(e), p != null && (u(), c.current = setTimeout(() => {
+                c.current = null, p(n)
+            }, Qb))
+        }, t[14] = n, t[15] = a, t[16] = p, t[17] = g) : g = t[17];
+        let _ = g,
+            v;
+        t[18] === o ? v = t[19] : (v = e => {
+            o?.(e), u()
+        }, t[18] = o, t[19] = v);
+        let y = v,
+            b;
+        return t[20] !== n || t[21] !== r || t[22] !== h || t[23] !== _ || t[24] !== y ? (b = (0, Zb.jsx)(Yy, {
+            ...r,
+            artifact: n,
+            onFocus: h,
+            onPointerEnter: _,
+            onPointerLeave: y
+        }), t[20] = n, t[21] = r, t[22] = h, t[23] = _, t[24] = y, t[25] = b) : b = t[25], b
+    }
+}));
+
+function tx(e, t) {
+    vl(e, {
+        params: new URLSearchParams({
+            [Mt]: t
+        })
+    })
+}
+
+function nx(e) {
+    "use forget";
+    let t = (0, ux.c)(66),
+        {
+            analyticsSession: n,
+            coordinateHeaderMenus: r,
+            disabled: i,
+            showNewFolderAction: a,
+            showNewNoteAction: o,
+            showUploadAction: s,
+            showNewProjectAction: c,
+            showTemplateGalleryAction: l,
+            triggerMessage: u,
+            onUploadFiles: d,
+            onCreateFolder: f,
+            onCreateNote: p
+        } = e,
+        m = r !== void 0 && r,
+        h = s === void 0 || s,
+        g = c !== void 0 && c,
+        _ = l !== void 0 && l,
+        v = u === void 0 ? Z.newAction : u,
+        y = Yn(),
+        b = kn(),
+        x = (0, dx.useId)(),
+        S;
+    t[0] !== m || t[1] !== x ? (S = () => ({
+        isHeaderMenuOpen: m ? hm() === x : !1,
+        availableSystemHints: zr() ?? [],
+        showConnectAccountsAction: ui({
+            connectableOnly: !Us()
+        })
+    }), t[0] = m, t[1] = x, t[2] = S) : S = t[2];
+    let {
+        isHeaderMenuOpen: C,
+        availableSystemHints: w,
+        showConnectAccountsAction: T
+    } = K(S), E = bg(w, `chat`), D = px.flatMap(e => {
+        let t = e.kind === `presentation` ? E.powerpoint : E[e.kind];
+        return t == null ? [] : [{
+            ...e,
+            systemHint: t
+        }]
+    }), O = D.find(ox), k = T || _ || D.length > 0, A = (0, dx.useContext)(u_), j = n ?? A, M = yi, N = m ? C : void 0, F;
+    t[3] !== j || t[4] !== m || t[5] !== i || t[6] !== x || t[7] !== f || t[8] !== p || t[9] !== a || t[10] !== o || t[11] !== h ? (F = e => {
+        m && um(x, e), !(!e || i || j == null) && Gf({
+            analyticsSession: j,
+            availableActionSet: [...h ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_UPLOAD_FILES] : [], ...a && f != null ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_NEW_FOLDER] : [], ...o && p != null ? [Da.CHATGPT_FILE_LIBRARY_MENU_ACTION_NEW_NOTE] : []],
+            menuKind: Jr.CHATGPT_FILE_LIBRARY_MENU_KIND_PAGE_MORE
+        })
+    }, t[3] = j, t[4] = m, t[5] = i, t[6] = x, t[7] = f, t[8] = p, t[9] = a, t[10] = o, t[11] = h, t[12] = F) : F = t[12];
+    let I = i && !k,
+        L;
+    t[13] === v ? L = t[14] : (L = (0, fx.jsx)(X, {
+        ...v
+    }), t[13] = v, t[14] = L);
+    let R;
+    t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (R = (0, fx.jsx)(Nl, {
+        className: `icon-sm`,
+        "aria-hidden": !0
+    }), t[15] = R) : R = t[15];
+    let z;
+    t[16] !== I || t[17] !== L ? (z = (0, fx.jsx)(yi.BasicTrigger, {
+        asChild: !0,
+        children: (0, fx.jsxs)(P, {
+            color: `primary`,
+            size: `medium`,
+            type: `button`,
+            disabled: I,
+            contentWrapperClassName: `gap-1.5`,
+            children: [L, R]
+        })
+    }), t[16] = I, t[17] = L, t[18] = z) : z = t[18];
+    let B = yi,
+        V = yi,
+        H = fg,
+        U = O == null ? null : (0, fx.jsx)(sx, {
+            action: O,
+            navigate: b
+        }),
+        ee;
+    t[19] !== i || t[20] !== y || t[21] !== p || t[22] !== o ? (ee = o && p != null && (0, fx.jsx)(yi.Item, {
+        disabled: i,
+        className: `text-token-text-primary`,
+        icon: (0, fx.jsx)(cg, {
+            "aria-hidden": `true`,
+            className: `icon text-token-text-primary`
+        }),
+        label: y.formatMessage(Z.newNoteAction),
+        onSelect: p
+    }), t[19] = i, t[20] = y, t[21] = p, t[22] = o, t[23] = ee) : ee = t[23];
+    let W;
+    t[24] === b ? W = t[25] : (W = e => (0, fx.jsx)(sx, {
+        action: e,
+        navigate: b
+    }, e.kind), t[24] = b, t[25] = W);
+    let te = D.filter(ax).map(W),
+        ne;
+    t[26] !== i || t[27] !== y || t[28] !== f || t[29] !== a ? (ne = a && f != null && (0, fx.jsx)(yi.Item, {
+        disabled: i,
+        className: `text-token-text-primary`,
+        icon: (0, fx.jsx)(ng, {
+            "aria-hidden": `true`,
+            className: `icon text-token-text-primary`
+        }),
+        label: y.formatMessage(Z.newFolderAction),
+        onSelect: f
+    }), t[26] = i, t[27] = y, t[28] = f, t[29] = a, t[30] = ne) : ne = t[30];
+    let re;
+    t[31] !== i || t[32] !== g ? (re = g && Fi() && (0, fx.jsx)(lx, {
+        disabled: i
+    }), t[31] = i, t[32] = g, t[33] = re) : re = t[33];
+    let ie;
+    t[34] !== y || t[35] !== _ ? (ie = _ && (0, fx.jsx)(yi.Group, {
+        children: (0, fx.jsx)(yi.Item, {
+            className: `text-token-text-primary`,
+            icon: (0, fx.jsx)(ou, {
+                "aria-hidden": `true`,
+                className: `icon text-token-text-primary`
+            }),
+            label: y.formatMessage(Z.startFromTemplatesAction),
+            onSelect: rx
+        })
+    }), t[34] = y, t[35] = _, t[36] = ie) : ie = t[36];
+    let ae;
+    t[37] !== i || t[38] !== y || t[39] !== d || t[40] !== h ? (ae = h && (0, fx.jsx)(yi.Item, {
+        disabled: i,
+        className: `text-token-text-primary`,
+        icon: (0, fx.jsx)(ag, {
+            "aria-hidden": `true`,
+            className: `icon text-token-text-primary`
+        }),
+        label: y.formatMessage(Z.newUploadAction),
+        onSelect: d
+    }), t[37] = i, t[38] = y, t[39] = d, t[40] = h, t[41] = ae) : ae = t[41];
+    let G;
+    t[42] === T ? G = t[43] : (G = T && (0, fx.jsx)(mg, {}), t[42] = T, t[43] = G);
+    let oe;
+    t[44] !== ae || t[45] !== G ? (oe = (0, fx.jsxs)(yi.Group, {
+        children: [ae, G]
+    }), t[44] = ae, t[45] = G, t[46] = oe) : oe = t[46];
+    let se;
+    t[47] !== V.Content || t[48] !== H.content || t[49] !== U || t[50] !== ee || t[51] !== te || t[52] !== ne || t[53] !== re || t[54] !== ie || t[55] !== oe ? (se = (0, fx.jsxs)(V.Content, {
+        align: `end`,
+        size: `medium`,
+        className: H.content,
+        children: [U, ee, te, ne, re, ie, oe]
+    }), t[47] = V.Content, t[48] = H.content, t[49] = U, t[50] = ee, t[51] = te, t[52] = ne, t[53] = re, t[54] = ie, t[55] = oe, t[56] = se) : se = t[56];
+    let ce;
+    t[57] !== B.Portal || t[58] !== se ? (ce = (0, fx.jsx)(B.Portal, {
+        children: se
+    }), t[57] = B.Portal, t[58] = se, t[59] = ce) : ce = t[59];
+    let le;
+    return t[60] !== z || t[61] !== ce || t[62] !== M.Root || t[63] !== N || t[64] !== F ? (le = (0, fx.jsxs)(M.Root, {
+        open: N,
+        onOpenChange: F,
+        children: [z, ce]
+    }), t[60] = z, t[61] = ce, t[62] = M.Root, t[63] = N, t[64] = F, t[65] = le) : le = t[65], le
+}
+
+function rx() {
+    gg().then(ix)
+}
+
+function ix() {
+    return Nt(yg)
+}
+
+function ax(e) {
+    let {
+        kind: t
+    } = e;
+    return t !== `image`
+}
+
+function ox(e) {
+    let {
+        kind: t
+    } = e;
+    return t === `image`
+}
+
+function sx(e) {
+    "use forget";
+    let t = (0, ux.c)(10),
+        {
+            action: n,
+            navigate: r
+        } = e,
+        {
+            icon: i,
+            label: a,
+            systemHint: o
+        } = n,
+        s = Yn(),
+        c;
+    t[0] !== s || t[1] !== a ? (c = s.formatMessage(a), t[0] = s, t[1] = a, t[2] = c) : c = t[2];
+    let l;
+    t[3] !== r || t[4] !== o ? (l = () => tx(r, o), t[3] = r, t[4] = o, t[5] = l) : l = t[5];
+    let u;
+    return t[6] !== i || t[7] !== c || t[8] !== l ? (u = (0, fx.jsx)(yi.Item, {
+        className: `text-token-text-primary`,
+        icon: i,
+        label: c,
+        onSelect: l
+    }), t[6] = i, t[7] = c, t[8] = l, t[9] = u) : u = t[9], u
+}
+
+function cx(e) {
+    "use forget";
+    let t = (0, ux.c)(9),
+        {
+            disabled: n
+        } = e,
+        r = n !== void 0 && n,
+        i = kn(),
+        a = K(zr) ?? [],
+        o;
+    t[0] === a ? o = t[1] : (o = bg(a, `chat`), t[0] = a, t[1] = o);
+    let s = o.image,
+        c = r || s == null,
+        l;
+    t[2] !== s || t[3] !== i ? (l = () => {
+        s != null && tx(i, s)
+    }, t[2] = s, t[3] = i, t[4] = l) : l = t[4];
+    let u;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, fx.jsx)(X, {
+        ...Z.createImageAction
+    }), t[5] = u) : u = t[5];
+    let d;
+    return t[6] !== c || t[7] !== l ? (d = (0, fx.jsx)(P, {
+        color: `primary`,
+        size: `medium`,
+        type: `button`,
+        disabled: c,
+        onClick: l,
+        children: u
+    }), t[6] = c, t[7] = l, t[8] = d) : d = t[8], d
+}
+
+function lx(e) {
+    "use forget";
+    let t = (0, ux.c)(10),
+        {
+            disabled: n
+        } = e,
+        r = Yn(),
+        i = kn(),
+        a = (0, dx.use)(w),
+        {
+            canCreate: o,
+            isLoading: s
+        } = h(),
+        c = n || s || !o,
+        l;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, fx.jsx)(Bl, {
+        "aria-hidden": `true`,
+        className: `icon text-token-text-primary`
+    }), t[0] = l) : l = t[0];
+    let u;
+    t[1] === r ? u = t[2] : (u = r.formatMessage(nt.libraryNewProjectAction), t[1] = r, t[2] = u);
+    let d;
+    t[3] !== i || t[4] !== a ? (d = () => {
+        ki.prefetch(), a?.({
+            for: ki,
+            withProps: {
+                onSuccess: e => {
+                    e && i(`/g/${e}/project`)
+                }
+            }
+        })
+    }, t[3] = i, t[4] = a, t[5] = d) : d = t[5];
+    let f;
+    return t[6] !== c || t[7] !== u || t[8] !== d ? (f = (0, fx.jsx)(yi.Item, {
+        disabled: c,
+        className: `text-token-text-primary`,
+        icon: l,
+        label: u,
+        onSelect: d
+    }), t[6] = c, t[7] = u, t[8] = d, t[9] = f) : f = t[9], f
+}
+var ux, dx, fx, px, mx = e((() => {
+    ux = qn(), Ne(), il(), Se(), ea(), yu(), og(), Rl(), eu(), n(), Ni(), Ot(), _(), np(), d_(), Ka(), dg(), rr(), hg(), Or(), Go(), lm(), _g(), vg(), xg(), ct(), an(), ca(), dx = t(Fn()), Pn(), Nn(), Id(), fx = wn(), px = [{
+        icon: (0, fx.jsx)(rg, {
+            "aria-hidden": `true`,
+            className: `icon`
+        }),
+        kind: `image`,
+        label: Z.newImageAction
+    }, {
+        icon: (0, fx.jsx)(sg, {
+            "aria-hidden": `true`,
+            className: `icon`
+        }),
+        kind: `document`,
+        label: Z.newDocumentAction
+    }, {
+        icon: (0, fx.jsx)(ig, {
+            "aria-hidden": `true`,
+            className: `icon`
+        }),
+        kind: `spreadsheet`,
+        label: Z.newSpreadsheetAction
+    }, {
+        icon: (0, fx.jsx)(lg, {
+            "aria-hidden": `true`,
+            className: `icon`
+        }),
+        kind: `presentation`,
+        label: Z.newPresentationAction
+    }]
+}));
+
+function hx(e) {
+    "use forget";
+    let t = (0, _x.c)(12),
+        {
+            analyticsSession: n,
+            disabled: r,
+            onCreateFolder: i,
+            onCreateNote: a,
+            onUploadFiles: o,
+            showNewFolderAction: s,
+            showNewNoteAction: c,
+            variant: l
+        } = e,
+        u;
+    t[0] !== n || t[1] !== r || t[2] !== i || t[3] !== a || t[4] !== o || t[5] !== s || t[6] !== c || t[7] !== l ? (u = (0, vx.jsx)(bx, {
+        variant: l,
+        analyticsSession: n,
+        disabled: r,
+        onCreateFolder: i,
+        onCreateNote: a,
+        onUploadFiles: o,
+        showNewFolderAction: s,
+        showNewNoteAction: c
+    }), t[0] = n, t[1] = r, t[2] = i, t[3] = a, t[4] = o, t[5] = s, t[6] = c, t[7] = l, t[8] = u) : u = t[8];
+    let d;
+    return t[9] !== u || t[10] !== l ? (d = (0, vx.jsx)(gx, {
+        hasSearchQuery: !1,
+        refreshedVariant: l,
+        refreshedAction: u
+    }), t[9] = u, t[10] = l, t[11] = d) : d = t[11], d
+}
+
+function gx(e) {
+    "use forget";
+    let t = (0, _x.c)(32),
+        {
+            canUpload: n,
+            hasSearchQuery: r,
+            isSharedWithMe: i,
+            onNew: a,
+            refreshedVariant: o,
+            refreshedAction: s
+        } = e,
+        c = n === void 0 || n,
+        l = i !== void 0 && i;
+    if (o != null) {
+        let e = yx[o],
+            n = e.icon,
+            r;
+        t[0] === n ? r = t[1] : (r = (0, vx.jsx)(`span`, {
+            className: Ym.refreshedEmptyStateIcon,
+            children: (0, vx.jsx)(n, {
+                "aria-hidden": `true`,
+                className: `text-token-text-primary size-6`
+            })
+        }), t[0] = n, t[1] = r);
+        let i;
+        t[2] === e.title ? i = t[3] : (i = (0, vx.jsx)(`h2`, {
+            className: Ym.refreshedEmptyStateTitle,
+            children: (0, vx.jsx)(X, {
+                ...e.title
+            })
+        }), t[2] = e.title, t[3] = i);
+        let a;
+        t[4] === e.description ? a = t[5] : (a = (0, vx.jsx)(`p`, {
+            className: Ym.refreshedEmptyStateDescription,
+            children: (0, vx.jsx)(X, {
+                ...e.description
+            })
+        }), t[4] = e.description, t[5] = a);
+        let c;
+        t[6] !== i || t[7] !== a ? (c = (0, vx.jsxs)(`div`, {
+            className: Ym.refreshedEmptyStateText,
+            children: [i, a]
+        }), t[6] = i, t[7] = a, t[8] = c) : c = t[8];
+        let l;
+        return t[9] !== s || t[10] !== r || t[11] !== c ? (l = (0, vx.jsxs)(`div`, {
+            className: Ym.refreshedEmptyState,
+            children: [r, c, s]
+        }), t[9] = s, t[10] = r, t[11] = c, t[12] = l) : l = t[12], l
+    }
+    let u = l ? `text-center` : `bg-token-bg-primary relative rounded-[28px] transition-colors sm:px-[106px]`,
+        d;
+    t[13] === u ? d = t[14] : (d = J(`flex min-h-[321px] w-full items-center justify-center px-6 py-6`, u), t[13] = u, t[14] = d);
+    let f;
+    t[15] === l ? f = t[16] : (f = l ? null : (0, vx.jsx)(`svg`, {
+        "aria-hidden": `true`,
+        className: `pointer-events-none absolute inset-0 h-full w-full`,
+        focusable: `false`,
+        children: (0, vx.jsx)(`rect`, {
+            x: `0.5`,
+            y: `0.5`,
+            width: `calc(100% - 1px)`,
+            height: `calc(100% - 1px)`,
+            rx: `28`,
+            ry: `28`,
+            fill: `none`,
+            stroke: `var(--border-heavy)`,
+            strokeDasharray: `5 3`,
+            strokeWidth: `1`,
+            vectorEffect: `non-scaling-stroke`
+        })
+    }), t[15] = l, t[16] = f);
+    let p;
+    t[17] !== r || t[18] !== l ? (p = r ? (0, vx.jsx)(se, {
+        height: 32,
+        width: 32,
+        className: `text-token-text-primary`,
+        "aria-hidden": `true`
+    }) : l ? (0, vx.jsx)(au, {
+        height: 32,
+        width: 32,
+        className: `text-token-text-primary`,
+        "aria-hidden": `true`
+    }) : (0, vx.jsx)(Du, {
+        height: 32,
+        width: 32,
+        className: `text-token-text-primary`,
+        "aria-hidden": `true`
+    }), t[17] = r, t[18] = l, t[19] = p) : p = t[19];
+    let m;
+    t[20] !== c || t[21] !== r || t[22] !== l || t[23] !== a ? (m = r ? (0, vx.jsx)(`div`, {
+        className: `text-token-text-primary text-[16px] leading-6 font-medium`,
+        children: (0, vx.jsx)(X, {
+            id: `artifacts.empty_state.no_matches`,
+            defaultMessage: `No files found`
+        })
+    }) : l ? (0, vx.jsxs)(`div`, {
+        className: `flex flex-col gap-1`,
+        children: [(0, vx.jsx)(`h2`, {
+            className: `text-token-text-primary text-base leading-6 font-semibold`,
+            children: (0, vx.jsx)(X, {
+                ...Z.sharedWithMeEmptyTitle
+            })
+        }), (0, vx.jsx)(`p`, {
+            className: `text-token-text-secondary text-sm leading-5`,
+            children: (0, vx.jsx)(X, {
+                ...Z.sharedWithMeEmptyDescription
+            })
+        })]
+    }) : c && a != null ? (0, vx.jsxs)(vx.Fragment, {
+        children: [(0, vx.jsx)(P, {
+            onClick: a,
+            color: `secondary`,
+            size: `large`,
+            type: `button`,
+            children: (0, vx.jsx)(X, {
+                id: `artifacts.empty_state.cta`,
+                defaultMessage: `Upload files`
+            })
+        }), (0, vx.jsxs)(`div`, {
+            className: `sr-only`,
+            children: [(0, vx.jsx)(`div`, {
+                children: (0, vx.jsx)(X, {
+                    id: `artifacts.empty_state.title`,
+                    defaultMessage: `No files yet`
+                })
+            }), (0, vx.jsx)(`div`, {
+                children: (0, vx.jsx)(X, {
+                    id: `artifacts.empty_state.description`,
+                    defaultMessage: `Upload a file to start building your library.`
+                })
+            })]
+        })]
+    }) : (0, vx.jsx)(`div`, {
+        className: `text-token-text-primary text-[16px] leading-6 font-medium`,
+        children: (0, vx.jsx)(X, {
+            ...Z.empty
+        })
+    }), t[20] = c, t[21] = r, t[22] = l, t[23] = a, t[24] = m) : m = t[24];
+    let h;
+    t[25] !== p || t[26] !== m ? (h = (0, vx.jsxs)(`div`, {
+        className: `flex flex-col items-center gap-4 text-center`,
+        children: [p, m]
+    }), t[25] = p, t[26] = m, t[27] = h) : h = t[27];
+    let g;
+    return t[28] !== d || t[29] !== f || t[30] !== h ? (g = (0, vx.jsxs)(`div`, {
+        className: d,
+        children: [f, h]
+    }), t[28] = d, t[29] = f, t[30] = h, t[31] = g) : g = t[31], g
+}
+var _x, vx, yx, bx, xx = e((() => {
+    _x = qn(), Ne(), Iu(), vu(), te(), id(), Ju(), cd(), Mu(), Ka(), mx(), Or(), si(), ke(), Pn(), Jm(), vx = wn(), yx = {
+        creation: {
+            description: Z.createSomethingEmptyDescription,
+            icon: pu,
+            title: Z.createSomethingEmptyTitle
+        },
+        image: {
+            description: Z.createImageEmptyDescription,
+            icon: Vu,
+            title: Z.createImageEmptyTitle
+        },
+        folder: {
+            description: Z.createFolderEmptyDescription,
+            icon: sd,
+            title: Z.createFolderEmptyTitle
+        },
+        favorites: {
+            description: Z.favoritesEmptyDescription,
+            icon: Ru,
+            title: Z.favoritesEmptyTitle
+        }
+    }, bx = e => {
+        "use forget";
+        let t = (0, _x.c)(16),
+            {
+                analyticsSession: n,
+                disabled: r,
+                onCreateFolder: i,
+                onCreateNote: a,
+                onUploadFiles: o,
+                showNewFolderAction: s,
+                showNewNoteAction: c,
+                variant: l
+            } = e;
+        switch (l) {
+            case `image`: {
+                let e;
+                return t[0] === r ? e = t[1] : (e = (0, vx.jsx)(cx, {
+                    disabled: r
+                }), t[0] = r, t[1] = e), e
+            }
+            case `folder`: {
+                let e = r || !s,
+                    n;
+                t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, vx.jsx)(X, {
+                    ...Z.createFolderAction
+                }), t[2] = n) : n = t[2];
+                let a;
+                return t[3] !== i || t[4] !== e ? (a = (0, vx.jsx)(P, {
+                    color: `primary`,
+                    disabled: e,
+                    onClick: i,
+                    size: `medium`,
+                    type: `button`,
+                    children: n
+                }), t[3] = i, t[4] = e, t[5] = a) : a = t[5], a
+            }
+            case `creation`: {
+                let e, l;
+                t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (e = Fi(), l = to(), t[6] = e, t[7] = l) : (e = t[6], l = t[7]);
+                let u;
+                return t[8] !== n || t[9] !== r || t[10] !== i || t[11] !== a || t[12] !== o || t[13] !== s || t[14] !== c ? (u = (0, vx.jsx)(nx, {
+                    analyticsSession: n,
+                    disabled: r,
+                    triggerMessage: Z.startCreatingAction,
+                    showNewFolderAction: s,
+                    showNewNoteAction: c,
+                    showUploadAction: !0,
+                    showNewProjectAction: e,
+                    showTemplateGalleryAction: l,
+                    onUploadFiles: o,
+                    onCreateFolder: i,
+                    onCreateNote: a
+                }), t[8] = n, t[9] = r, t[10] = i, t[11] = a, t[12] = o, t[13] = s, t[14] = c, t[15] = u) : u = t[15], u
+            }
+        }
+    }
+}));
+
+function Sx(e) {
+    return typeof e == `object` && !!e && !Array.isArray(e)
+}
+
+function Cx(e) {
+    let t = [],
+        n = [e.json];
+    for (let e = 0; e < 4; e += 1) {
+        let e = [];
+        for (let r of n) Sx(r) && (t.push(r), e.push(r.detail, r.error, r.error_data));
+        n = e
+    }
+    return t
+}
+
+function wx(e) {
+    if (!(e instanceof oe) || e.status !== 400 && e.status !== 403) return !1;
+    let t = Cx(e);
+    return t.some(e => e.action === `TRIGGER_REAUTHENTICATION` || e.reauth_required === !0 || e.requires_reauth === !0 || e.requires_reauthentication === !0 || [e.code, e.type, e.reason].some(e => typeof e == `string` && Nx.has(e.toLowerCase()))) ? !1 : e.status === 403 || t.some(e => [e.code, e.error_code, e.type].some(e => typeof e == `string` && Mx.has(e)))
+}
+
+function Tx(e) {
+    "use forget";
+    let t = (0, kx.c)(13),
+        {
+            title: n,
+            message: r,
+            onRetry: i,
+            isRetrying: a
+        } = e,
+        o = a !== void 0 && a,
+        s;
+    t[0] === n ? s = t[1] : (s = n ?? (0, jx.jsx)(X, {
+        id: `artifacts.error_state.title`,
+        defaultMessage: `Something went wrong`
+    }), t[0] = n, t[1] = s);
+    let c;
+    t[2] === s ? c = t[3] : (c = (0, jx.jsx)(`div`, {
+        className: `text-base font-semibold`,
+        children: s
+    }), t[2] = s, t[3] = c);
+    let l;
+    t[4] === r ? l = t[5] : (l = r && (0, jx.jsx)(`div`, {
+        className: `text-token-text-secondary text-sm`,
+        children: r
+    }), t[4] = r, t[5] = l);
+    let u;
+    t[6] !== o || t[7] !== i ? (u = i && (0, jx.jsx)(`div`, {
+        className: `pt-2`,
+        children: (0, jx.jsx)(P, {
+            onClick: i,
+            color: `secondary`,
+            size: `small`,
+            loading: o,
+            children: (0, jx.jsx)(X, {
+                id: `artifacts.error_state.retry`,
+                defaultMessage: `Retry`
+            })
+        })
+    }), t[6] = o, t[7] = i, t[8] = u) : u = t[8];
+    let d;
+    return t[9] !== c || t[10] !== l || t[11] !== u ? (d = (0, jx.jsxs)(`div`, {
+        className: `flex flex-col gap-2 p-6`,
+        children: [c, l, u]
+    }), t[9] = c, t[10] = l, t[11] = u, t[12] = d) : d = t[12], d
+}
+
+function Ex(e) {
+    "use forget";
+    let t = (0, kx.c)(10),
+        {
+            enabled: n,
+            error: r,
+            queryKey: i
+        } = e,
+        a = On(),
+        o;
+    t[0] === i ? o = t[1] : (o = wt(i), t[0] = i, t[1] = o);
+    let s = o,
+        c;
+    t[2] === s ? c = t[3] : (c = {
+        queryKeyHash: s,
+        restarted: !1
+    }, t[2] = s, t[3] = c);
+    let l = (0, Ax.useRef)(c),
+        u, d;
+    return t[4] !== n || t[5] !== r || t[6] !== a || t[7] !== s ? (u = () => {
+        l.current.queryKeyHash !== s && (l.current = {
+            queryKeyHash: s,
+            restarted: !1
+        }), !(!n || !jo(r) || l.current.restarted) && (l.current.restarted = !0, a.resetQueries({
+            predicate: e => e.queryHash === s
+        }))
+    }, d = [n, r, a, s], t[4] = n, t[5] = r, t[6] = a, t[7] = s, t[8] = u, t[9] = d) : (u = t[8], d = t[9]), (0, Ax.useEffect)(u, d), null
+}
+
+function Dx(e) {
+    "use forget";
+    let t = (0, kx.c)(14),
+        {
+            children: n,
+            isError: r,
+            isErrorWithResults: i,
+            isGridView: a,
+            onRetry: o,
+            isRetrying: s
+        } = e,
+        c = s !== void 0 && s;
+    if (r) {
+        let e;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, jx.jsx)(X, {
+            ...Z.loadError
+        }), t[0] = e) : e = t[0];
+        let n;
+        return t[1] !== c || t[2] !== o ? (n = (0, jx.jsx)(Tx, {
+            title: e,
+            onRetry: o,
+            isRetrying: c
+        }), t[1] = c, t[2] = o, t[3] = n) : n = t[3], n
+    }
+    let l = a ? `gap-4 pt-4` : `pt-0`,
+        u;
+    t[4] === l ? u = t[5] : (u = J(`flex flex-col`, l), t[4] = l, t[5] = u);
+    let d;
+    t[6] !== i || t[7] !== c || t[8] !== o ? (d = i ? (0, jx.jsx)(Tx, {
+        title: (0, jx.jsx)(X, {
+            ...Z.loadError
+        }),
+        onRetry: o,
+        isRetrying: c
+    }) : null, t[6] = i, t[7] = c, t[8] = o, t[9] = d) : d = t[9];
+    let f;
+    return t[10] !== n || t[11] !== u || t[12] !== d ? (f = (0, jx.jsxs)(`div`, {
+        className: u,
+        children: [d, n]
+    }), t[10] = n, t[11] = u, t[12] = d, t[13] = f) : f = t[13], f
+}
+
+function Ox(e) {
+    "use forget";
+    let t = (0, kx.c)(19),
+        {
+            directoryQuery: n,
+            goToBreadcrumb: r,
+            onRetry: i,
+            path: a,
+            searchParams: o
+        } = e,
+        s;
+    t[0] !== n || t[1] !== a ? (s = Wc(no(a.at(-1)?.id)) && wx(n.error), t[0] = n, t[1] = a, t[2] = s) : s = t[2];
+    let c = s,
+        l;
+    t[3] === c ? l = t[4] : (l = (0, jx.jsx)(`p`, {
+        className: `text-token-text-secondary`,
+        children: c ? (0, jx.jsx)(X, {
+            ...Z.sharePointPermissionDenied
+        }) : (0, jx.jsx)(X, {
+            ...Z.loadError
+        })
+    }), t[3] = c, t[4] = l);
+    let u;
+    t[5] !== r || t[6] !== c || t[7] !== i || t[8] !== a || t[9] !== o ? (u = c ? () => r(a.at(-2)?.id ?? null, o) : i, t[5] = r, t[6] = c, t[7] = i, t[8] = a, t[9] = o, t[10] = u) : u = t[10];
+    let d;
+    t[11] === c ? d = t[12] : (d = c ? (0, jx.jsx)(X, {
+        ...Z.sharePointPermissionDeniedGoBack
+    }) : (0, jx.jsx)(X, {
+        ...Z.retry
+    }), t[11] = c, t[12] = d);
+    let f;
+    t[13] !== u || t[14] !== d ? (f = (0, jx.jsx)(`button`, {
+        type: `button`,
+        className: `bg-token-bg-secondary text-token-text-primary rounded-full px-4 py-2 text-sm font-medium`,
+        onClick: u,
+        children: d
+    }), t[13] = u, t[14] = d, t[15] = f) : f = t[15];
+    let p;
+    return t[16] !== l || t[17] !== f ? (p = (0, jx.jsxs)(`div`, {
+        className: `flex flex-col items-center gap-4 px-6 py-14 text-center`,
+        children: [l, f]
+    }), t[16] = l, t[17] = f, t[18] = p) : p = t[18], p
+}
+var kx, Ax, jx, Mx, Nx, Px = e((() => {
+        kx = qn(), Ne(), Ka(), Hr(), Ic(), c(), ve(), Kn(), ke(), Ax = t(Fn()), Pn(), jx = wn(), Mx = new Set([`sharepoint_site_collection_access_denied`, `sharepoint_onedrive_access_denied`, `sharepoint_graph_item_access_denied`, `sharepoint_sensitivity_label_access_denied`]), Nx = new Set([`authentication_interactionrequired`, `authorization_requestdenied`, `connector_reauth_required`, `consent_required`, `insufficient_claims`, `interaction_required`, `invalid_grant`, `microsoft_graph_reauthentication_required`, `reauth_required`, `reauthentication_required`])
+    })),
+    Fx, Ix, Lx, Rx, zx = e((() => {
+        Fx = `_3gFTza_listSkeleton`, Ix = `_3gFTza_masonryGrid`, Lx = `_3gFTza_masonryThumbnail`, Rx = {
+            "artifacts-list-skeleton-shimmer": `_3gFTza_artifacts-list-skeleton-shimmer`,
+            listSkeleton: Fx,
+            masonryGrid: Ix,
+            masonryThumbnail: Lx
+        }
+    }));
+
+function Bx() {
+    return 1
+}
+
+function Vx(e) {
+    return e.node
+}
+var Hx, Ux, Wx, Gx, Kx, qx, Jx, Yx, Xx, Zx, Qx, $x, eS = e((() => {
+    Hx = qn(), kp(), ke(), Ux = t(Fn()), Pn(), Vm(), Fm(), Ka(), Tm(), zx(), Jy(), ct(), Wx = wn(), Gx = 10, Kx = 8, qx = [1.2, 1.4, 1, 1.35, 1.2, 1.4, 1, 1.35, 1.2, 1.4, 1, 1.2, 1.4, 1, 1.2, 1.4, 1, 1.35, 1.2, 1.4], Jx = Dn({
+        listLoadingStatus: {
+            id: `artifacts.surface.loading.list`,
+            defaultMessage: `Loading files`
+        },
+        columnName: {
+            id: `artifacts.surface.columns.name`,
+            defaultMessage: `Name`
+        },
+        columnLastModified: {
+            id: `artifacts.surface.columns.last_modified`,
+            defaultMessage: `Modified`
+        },
+        columnSize: {
+            id: `artifacts.surface.columns.size`,
+            defaultMessage: `Size`
+        }
+    }), Yx = e => {
+        "use forget";
+        let t = (0, Hx.c)(2),
+            {
+                deleted: n,
+                shared: r,
+                showSuggestedActivity: i
+            } = e,
+            a = n !== void 0 && n,
+            o = r !== void 0 && r,
+            s = i !== void 0 && i ? Z.columnLastActivity : Z.columnLastModified,
+            c = a ? Z.columnDeleted : o ? Z.columnDateShared : s,
+            l;
+        return t[0] === c ? l = t[1] : (l = (0, Wx.jsx)(X, {
+            ...c
+        }), t[0] = c, t[1] = l), l
+    }, Xx = e => {
+        "use forget";
+        let t = (0, Hx.c)(33),
+            {
+                leading: n,
+                primary: r,
+                lastModified: i,
+                size: a,
+                actions: o,
+                compact: s,
+                showSharedBy: c,
+                showSizeColumn: l,
+                className: u,
+                insetClassName: d,
+                testId: f
+            } = e,
+            p = s !== void 0 && s,
+            m = c !== void 0 && c,
+            h = l === void 0 || l,
+            g = d ?? `ps-0 pe-2`,
+            _;
+        t[0] !== u || t[1] !== p || t[2] !== m || t[3] !== h || t[4] !== g ? (_ = J(`relative grid min-h-15 items-center gap-4 overflow-visible`, `py-2.5`, g, Cm({
+            compact: p,
+            showSharedBy: m,
+            showSizeColumn: h
+        }), u), t[0] = u, t[1] = p, t[2] = m, t[3] = h, t[4] = g, t[5] = _) : _ = t[5];
+        let v;
+        t[6] === n ? v = t[7] : (v = n != null && (0, Wx.jsx)(`div`, {
+            className: `absolute -start-12 top-0 flex h-full w-6 items-center justify-center`,
+            children: n
+        }), t[6] = n, t[7] = v);
+        let y;
+        t[8] !== p || t[9] !== r ? (y = r ?? (0, Wx.jsxs)(Wx.Fragment, {
+            children: [(0, Wx.jsx)(`div`, {
+                "aria-hidden": `true`,
+                className: `skeleton-child size-8 shrink-0 rounded-[8px]`,
+                "data-testid": `artifacts-list-loading-primary-icon-placeholder`
+            }), (0, Wx.jsxs)(`div`, {
+                className: `min-w-0 flex-1`,
+                children: [(0, Wx.jsx)(`div`, {
+                    className: `skeleton-child h-3 w-[70%] rounded-md`,
+                    "data-library-list-title-placeholder": `true`
+                }), p && (0, Wx.jsx)(`div`, {
+                    className: `skeleton-child mt-2 h-3 w-16 rounded-md sm:hidden`
+                })]
+            })]
+        }), t[8] = p, t[9] = r, t[10] = y) : y = t[10];
+        let b;
+        t[11] === y ? b = t[12] : (b = (0, Wx.jsx)(`div`, {
+            className: `flex min-w-0 items-center gap-3 text-start`,
+            children: y
+        }), t[11] = y, t[12] = b);
+        let x = p && `hidden sm:block`,
+            S;
+        t[13] === x ? S = t[14] : (S = J(x, `text-start`), t[13] = x, t[14] = S);
+        let C;
+        t[15] === i ? C = t[16] : (C = i ?? (0, Wx.jsx)(`div`, {
+            className: `skeleton-child h-3 w-24 rounded-md`
+        }), t[15] = i, t[16] = C);
+        let w;
+        t[17] !== S || t[18] !== C ? (w = (0, Wx.jsx)(`div`, {
+            className: S,
+            children: C
+        }), t[17] = S, t[18] = C, t[19] = w) : w = t[19];
+        let T;
+        t[20] !== h || t[21] !== a ? (T = h ? (0, Wx.jsx)(`div`, {
+            className: `hidden w-full text-start sm:flex sm:justify-start sm:ps-4`,
+            children: a ?? (0, Wx.jsx)(`div`, {
+                className: `skeleton-child h-3 w-16 rounded-md`
+            })
+        }) : null, t[20] = h, t[21] = a, t[22] = T) : T = t[22];
+        let E;
+        t[23] === o ? E = t[24] : (E = (0, Wx.jsx)(`div`, {
+            className: `-me-2 flex items-center justify-end gap-2`,
+            "data-testid": `artifacts-list-loading-actions`,
+            children: o
+        }), t[23] = o, t[24] = E);
+        let D;
+        return t[25] !== w || t[26] !== T || t[27] !== E || t[28] !== _ || t[29] !== v || t[30] !== b || t[31] !== f ? (D = (0, Wx.jsxs)(`div`, {
+            "data-testid": f,
+            className: _,
+            children: [v, b, w, T, E]
+        }), t[25] = w, t[26] = T, t[27] = E, t[28] = _, t[29] = v, t[30] = b, t[31] = f, t[32] = D) : D = t[32], D
+    }, Zx = e => {
+        "use forget";
+        let t = (0, Hx.c)(3),
+            {
+                showSharedBy: n
+            } = e,
+            r;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = Array.from({
+            length: 3
+        }), t[0] = r) : r = t[0];
+        let i;
+        return t[1] === n ? i = t[2] : (i = (0, Wx.jsx)(Wx.Fragment, {
+            children: r.map((e, t) => (0, Wx.jsx)(Xx, {
+                compact: !0,
+                showSharedBy: n,
+                className: `skeleton group [--skeleton-opacity:0.75]`
+            }, t))
+        }), t[1] = n, t[2] = i), i
+    }, Qx = e => {
+        "use forget";
+        let t = (0, Hx.c)(16),
+            {
+                headerInsetClassName: n,
+                rowInsetClassName: r,
+                shared: i,
+                showHeader: a,
+                showSharedBy: o,
+                showSuggestedActivity: s,
+                showSizeColumn: c
+            } = e === void 0 ? {} : e,
+            l = i !== void 0 && i,
+            u = a === void 0 || a,
+            d = o !== void 0 && o,
+            f = s !== void 0 && s,
+            p = c === void 0 || c,
+            m = (0, Ux.useId)();
+        if (K($t)) return null;
+        let h;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (h = J(`group skeleton [--skeleton-opacity:0.75]`, Rx.listSkeleton), t[0] = h) : h = t[0];
+        let g;
+        t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, Wx.jsx)(X, {
+            ...Jx.listLoadingStatus
+        }), t[1] = g) : g = t[1];
+        let _;
+        t[2] === m ? _ = t[3] : (_ = (0, Wx.jsx)(`h2`, {
+            id: m,
+            className: `sr-only`,
+            children: g
+        }), t[2] = m, t[3] = _);
+        let v = u ? (0, Wx.jsxs)(Op, {
+                testId: `artifacts-list-loading-header`,
+                className: J(n ?? `ps-0 pe-2`, Cm({
+                    showSharedBy: d,
+                    showSizeColumn: p
+                })),
+                children: [(0, Wx.jsx)(`div`, {
+                    children: (0, Wx.jsx)(X, {
+                        ...Jx.columnName
+                    })
+                }), (0, Wx.jsx)(`div`, {
+                    className: `hidden w-full text-start sm:block`,
+                    children: l || f ? (0, Wx.jsx)(Yx, {
+                        shared: l,
+                        showSuggestedActivity: f
+                    }) : (0, Wx.jsx)(X, {
+                        ...Jx.columnLastModified
+                    })
+                }), d || p ? (0, Wx.jsx)(`div`, {
+                    className: `hidden w-full sm:block sm:ps-4`,
+                    children: d ? (0, Wx.jsx)(X, {
+                        ...Z.columnSharedBy
+                    }) : (0, Wx.jsx)(X, {
+                        ...Jx.columnSize
+                    })
+                }) : null]
+            }) : null,
+            y;
+        t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (y = Array.from({
+            length: Gx
+        }), t[4] = y) : y = t[4];
+        let b;
+        t[5] !== r || t[6] !== d || t[7] !== p || t[8] !== y ? (b = (0, Wx.jsx)(jp, {
+            children: y.map((e, t) => (0, Wx.jsx)(Xx, {
+                compact: !0,
+                showSharedBy: d,
+                showSizeColumn: p,
+                insetClassName: r,
+                testId: `artifacts-list-loading-row`
+            }, `list-skeleton-${t}`))
+        }), t[5] = r, t[6] = d, t[7] = p, t[8] = y, t[9] = b) : b = t[9];
+        let x;
+        return t[10] !== m || t[11] !== _ || t[12] !== v || t[13] !== b || t[14] !== h ? (x = (0, Wx.jsxs)(`section`, {
+            "data-testid": `artifacts-list-loading-skeleton`,
+            className: h,
+            "aria-busy": `true`,
+            "aria-labelledby": m,
+            children: [_, v, b]
+        }), t[10] = m, t[11] = _, t[12] = v, t[13] = b, t[14] = h, t[15] = x) : x = t[15], x
+    }, $x = e => {
+        "use forget";
+        let t = (0, Hx.c)(32),
+            {
+                className: n,
+                gridClassName: r,
+                masonry: i,
+                thumbnailClassName: a
+            } = e,
+            o = i !== void 0 && i,
+            s = (0, Ux.useId)();
+        if (K($t)) return null;
+        let c, l, u, d, f, p, m;
+        if (t[0] !== n || t[1] !== r || t[2] !== s || t[3] !== o || t[4] !== a) {
+            let e = o ? qx : Array.from({
+                    length: Kx
+                }, Bx),
+                i;
+            t[12] !== o || t[13] !== a ? (i = (e, t) => ({
+                id: `grid-skeleton-${t}`,
+                aspectRatio: e,
+                node: (0, Wx.jsx)(`div`, {
+                    role: `listitem`,
+                    className: `flex min-w-0 flex-col gap-2.5`,
+                    children: (0, Wx.jsx)(`div`, {
+                        "data-library-grid-tile": !0,
+                        className: J(`skeleton-child w-full`, !o && `h-[249px]`, o ? Rx.masonryThumbnail : Pm, a),
+                        style: o ? {
+                            aspectRatio: e
+                        } : void 0
+                    })
+                }, `grid-skeleton-${t}`)
+            }), t[12] = o, t[13] = a, t[14] = i) : i = t[14];
+            let h = e.map(i),
+                g;
+            t[15] === r ? g = t[16] : (g = r == null ? km.thumbnailGrid : J(`w-full pt-4`, r), t[15] = r, t[16] = g);
+            let _ = g;
+            t[17] === n ? d = t[18] : (d = J(`group skeleton [--skeleton-opacity:0.75]`, n), t[17] = n, t[18] = d), f = `true`, p = s;
+            let v;
+            t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, Wx.jsx)(X, {
+                ...Jx.listLoadingStatus
+            }), t[19] = v) : v = t[19], t[20] === s ? m = t[21] : (m = (0, Wx.jsx)(`h2`, {
+                id: s,
+                className: `sr-only`,
+                children: v
+            }), t[20] = s, t[21] = m), c = `list`, l = o ? Rx.masonryGrid : _, u = o ? (0, Wx.jsx)(Hy, {
+                items: h
+            }) : h.map(Vx), t[0] = n, t[1] = r, t[2] = s, t[3] = o, t[4] = a, t[5] = c, t[6] = l, t[7] = u, t[8] = d, t[9] = f, t[10] = p, t[11] = m
+        } else c = t[5], l = t[6], u = t[7], d = t[8], f = t[9], p = t[10], m = t[11];
+        let h;
+        t[22] !== c || t[23] !== l || t[24] !== u ? (h = (0, Wx.jsx)(`div`, {
+            role: c,
+            className: l,
+            children: u
+        }), t[22] = c, t[23] = l, t[24] = u, t[25] = h) : h = t[25];
+        let g;
+        return t[26] !== d || t[27] !== f || t[28] !== p || t[29] !== m || t[30] !== h ? (g = (0, Wx.jsxs)(`section`, {
+            className: d,
+            "aria-busy": f,
+            "aria-labelledby": p,
+            children: [m, h]
+        }), t[26] = d, t[27] = f, t[28] = p, t[29] = m, t[30] = h, t[31] = g) : g = t[31], g
+    }
+}));
+
+function tS(e, {
+    isDeletingFileId: t,
+    isRestoringFileId: n
+}) {
+    return t === e.id || n === e.id
+}
+
+function nS(e) {
+    return e.deletedAt ?? e.updatedAt
+}
+
+function rS(e) {
+    "use forget";
+    let t = (0, lS.c)(23),
+        {
+            artifacts: n,
+            getArtifactDisplayTitle: r,
+            checkedIds: i,
+            hasSelection: a,
+            isDeletingFileId: o,
+            isRestoringFileId: s,
+            updateSelection: c,
+            downloadFile: l,
+            onRequestAction: u
+        } = e,
+        d = Yn(),
+        f;
+    if (t[0] !== n || t[1] !== i || t[2] !== l || t[3] !== r || t[4] !== a || t[5] !== d || t[6] !== o || t[7] !== s || t[8] !== u || t[9] !== c) {
+        let e;
+        t[11] !== i || t[12] !== l || t[13] !== r || t[14] !== a || t[15] !== d || t[16] !== o || t[17] !== s || t[18] !== u || t[19] !== c ? (e = e => {
+            let t = i.has(e.id),
+                n = tS(e, {
+                    isDeletingFileId: o,
+                    isRestoringFileId: s
+                });
+            return (0, dS.jsx)(`div`, {
+                "data-page-table-row-item": `true`,
+                className: j_.rowItem,
+                children: (0, dS.jsx)(Sv, {
+                    artifact: e,
+                    displayTitle: r?.(e),
+                    checked: t,
+                    isActive: !1,
+                    hasSelection: a,
+                    mutationLoading: n,
+                    showDownloadAction: !1,
+                    showDeleteAction: !1,
+                    showFavoriteAction: !1,
+                    onOpen: n => {
+                        a && c(e.id, !t, n)
+                    },
+                    onCheckedChange: (t, n) => {
+                        t || Dv(), c(e.id, t, n)
+                    },
+                    lastModifiedLabel: rc(d, nS(e)),
+                    downloadFile: l,
+                    onDelete: iS,
+                    additionalMenuItems: t => {
+                        let {
+                            itemClassName: r
+                        } = t;
+                        return (0, dS.jsx)(mS, {
+                            artifact: e,
+                            mutationLoading: n,
+                            itemClassName: r,
+                            onRequestAction: u
+                        })
+                    }
+                })
+            }, e.id)
+        }, t[11] = i, t[12] = l, t[13] = r, t[14] = a, t[15] = d, t[16] = o, t[17] = s, t[18] = u, t[19] = c, t[20] = e) : e = t[20], f = n.map(e), t[0] = n, t[1] = i, t[2] = l, t[3] = r, t[4] = a, t[5] = d, t[6] = o, t[7] = s, t[8] = u, t[9] = c, t[10] = f
+    } else f = t[10];
+    let p;
+    return t[21] === f ? p = t[22] : (p = (0, dS.jsx)(dS.Fragment, {
+        children: f
+    }), t[21] = f, t[22] = p), p
+}
+
+function iS() {}
+
+function aS(e) {
+    "use forget";
+    let t = (0, lS.c)(46),
+        {
+            artifacts: n,
+            getArtifactDisplayTitle: r,
+            isGridView: i,
+            isError: a,
+            isEmpty: o,
+            isFetchingNextPage: s,
+            shouldRevealGridFileActionsOnHover: c,
+            listEndRef: l,
+            onRetry: u,
+            downloadFile: d,
+            onRequestAction: f,
+            checkedIds: p,
+            hasSelection: m,
+            isDeletingFileId: h,
+            isRestoringFileId: g,
+            updateSelection: _,
+            gridClassName: v,
+            masonry: y
+        } = e,
+        b = y !== void 0 && y,
+        x = Yn();
+    if (a) {
+        let e;
+        t[0] === x ? e = t[1] : (e = x.formatMessage(Z.loadError), t[0] = x, t[1] = e);
+        let n;
+        return t[2] !== u || t[3] !== e ? (n = (0, dS.jsx)(Tx, {
+            title: e,
+            onRetry: u
+        }), t[2] = u, t[3] = e, t[4] = n) : n = t[4], n
+    }
+    if (o) {
+        let e;
+        return t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, dS.jsx)(`div`, {
+            className: `mt-6`,
+            children: (0, dS.jsx)(gx, {
+                hasSearchQuery: !0,
+                onNew: sS
+            })
+        }), t[5] = e) : e = t[5], e
+    }
+    if (i) {
+        let e = b ? `pt-4` : v ?? fS,
+            i;
+        t[6] === f ? i = t[7] : (i = e => (0, dS.jsx)(mS, {
+            ...e,
+            onRequestAction: f
+        }), t[6] = f, t[7] = i);
+        let a;
+        t[8] !== g || t[9] !== i ? (a = {
+            isRestoringFileId: g,
+            renderMenuItems: i
+        }, t[8] = g, t[9] = i, t[10] = a) : a = t[10];
+        let o;
+        t[11] !== n || t[12] !== p || t[13] !== r || t[14] !== m || t[15] !== h || t[16] !== s || t[17] !== l || t[18] !== b || t[19] !== c || t[20] !== a || t[21] !== _ ? (o = (0, dS.jsx)(Wb, {
+            artifacts: n,
+            getArtifactDisplayTitle: r,
+            checkedIds: p,
+            hasSelection: m,
+            isDeletingFileId: h,
+            shouldRevealGridFileActionsOnHover: c,
+            updateSelection: _,
+            deletedFileActions: a,
+            showSelectionControls: !1,
+            isFetchingNextPage: s,
+            listEndRef: l,
+            masonry: b
+        }), t[11] = n, t[12] = p, t[13] = r, t[14] = m, t[15] = h, t[16] = s, t[17] = l, t[18] = b, t[19] = c, t[20] = a, t[21] = _, t[22] = o) : o = t[22];
+        let u;
+        return t[23] !== e || t[24] !== o ? (u = (0, dS.jsx)(`div`, {
+            className: e,
+            children: o
+        }), t[23] = e, t[24] = o, t[25] = u) : u = t[25], u
+    }
+    let S;
+    t[26] !== n || t[27] !== p || t[28] !== d || t[29] !== r || t[30] !== m || t[31] !== h || t[32] !== g || t[33] !== f || t[34] !== _ ? (S = (0, dS.jsx)(rS, {
+        artifacts: n,
+        getArtifactDisplayTitle: r,
+        checkedIds: p,
+        hasSelection: m,
+        isDeletingFileId: h,
+        isRestoringFileId: g,
+        updateSelection: _,
+        downloadFile: d,
+        onRequestAction: f
+    }), t[26] = n, t[27] = p, t[28] = d, t[29] = r, t[30] = m, t[31] = h, t[32] = g, t[33] = f, t[34] = _, t[35] = S) : S = t[35];
+    let C;
+    t[36] === s ? C = t[37] : (C = s ? Array.from({
+        length: pS
+    }).map(oS) : null, t[36] = s, t[37] = C);
+    let w;
+    t[38] !== S || t[39] !== C ? (w = (0, dS.jsxs)(jp, {
+        children: [S, C]
+    }), t[38] = S, t[39] = C, t[40] = w) : w = t[40];
+    let T;
+    t[41] === l ? T = t[42] : (T = (0, dS.jsx)(`div`, {
+        ref: l,
+        className: `h-1`
+    }), t[41] = l, t[42] = T);
+    let E;
+    return t[43] !== w || t[44] !== T ? (E = (0, dS.jsxs)(`div`, {
+        className: `flex flex-col`,
+        children: [w, T]
+    }), t[43] = w, t[44] = T, t[45] = E) : E = t[45], E
+}
+
+function oS(e, t) {
+    return (0, dS.jsx)(Xx, {
+        compact: !0,
+        className: `group skeleton [--skeleton-opacity:0.75]`
+    }, `deleted-files-load-more-row-${t}`)
+}
+
+function sS() {}
+
+function cS(e) {
+    "use forget";
+    let t = (0, lS.c)(36),
+        {
+            confirmation: n,
+            isLoading$: r,
+            onClose: i,
+            onConfirm: a
+        } = e,
+        o = Yn(),
+        s = K(r),
+        c;
+    t[0] !== r || t[1] !== i ? (c = () => {
+        r() || i()
+    }, t[0] = r, t[1] = i, t[2] = c) : c = t[2];
+    let l = c,
+        u = (0, uS.useRef)(null),
+        d = n?.artifacts[0],
+        f = (n?.artifacts.length ?? 0) > 1,
+        m = n?.kind === `restore` ? f ? Z.bulkRestoreFilesConfirmDescription : Z.restoreFileConfirmDescription : f ? Z.bulkPermanentDeleteFilesConfirmDescription : Z.permanentDeleteFileConfirmDescription,
+        h;
+    t[3] === n ? h = t[4] : (h = e => {
+        n != null && (e.preventDefault(), u.current?.focus())
+    }, t[3] = n, t[4] = h);
+    let g;
+    t[5] !== n || t[6] !== o ? (g = n == null ? `` : n.kind === `restore` ? o.formatMessage(n.artifacts.length > 1 ? Z.bulkRestoreFilesConfirmTitle : Z.restoreFileConfirmTitle) : o.formatMessage(Z.permanentDeleteFileConfirmTitle), t[5] = n, t[6] = o, t[7] = g) : g = t[7];
+    let _;
+    t[8] !== n?.kind || t[9] !== o ? (_ = o.formatMessage(n?.kind === `restore` ? Z.restoreFile : Z.permanentDeleteFile), t[8] = n?.kind, t[9] = o, t[10] = _) : _ = t[10];
+    let v = n?.kind === `restore` ? `primary` : `danger`,
+        y;
+    t[11] === a ? y = t[12] : (y = () => {
+        a()
+    }, t[11] = a, t[12] = y);
+    let b;
+    t[13] !== s || t[14] !== _ || t[15] !== v || t[16] !== y ? (b = (0, dS.jsx)(le.Button, {
+        title: _,
+        color: v,
+        onClick: y,
+        disabled: s,
+        loading: s
+    }), t[13] = s, t[14] = _, t[15] = v, t[16] = y, t[17] = b) : b = t[17];
+    let x;
+    t[18] === o ? x = t[19] : (x = o.formatMessage(Z.cancelCreateFolder), t[18] = o, t[19] = x);
+    let S;
+    t[20] !== l || t[21] !== s || t[22] !== x ? (S = (0, dS.jsx)(le.Button, {
+        title: x,
+        color: `secondary`,
+        onClick: l,
+        disabled: s
+    }), t[20] = l, t[21] = s, t[22] = x, t[23] = S) : S = t[23];
+    let C;
+    t[24] !== n || t[25] !== m || t[26] !== d ? (C = n != null && d != null ? (0, dS.jsx)(`div`, {
+        ref: u,
+        "data-testid": `deleted-file-action-confirm-description`,
+        tabIndex: -1,
+        className: `space-y-3 text-start outline-none`,
+        children: (0, dS.jsx)(`p`, {
+            className: `text-token-text-primary text-sm leading-5`,
+            children: (0, dS.jsx)(X, {
+                ...m,
+                values: {
+                    count: n.artifacts.length,
+                    name: bs(d)
+                }
+            })
+        })
+    }) : null, t[24] = n, t[25] = m, t[26] = d, t[27] = C) : C = t[27];
+    let w;
+    return t[28] !== l || t[29] !== s || t[30] !== C || t[31] !== h || t[32] !== g || t[33] !== b || t[34] !== S ? (w = (0, dS.jsx)(p, {
+        testId: `modal-deleted-file-action-confirm`,
+        isOpen: !0,
+        onClose: l,
+        shouldIgnoreClickOutside: s,
+        onOpenAutoFocus: h,
+        title: g,
+        headerClassName: `px-5 pt-5 pb-0`,
+        contentClassName: `px-5 pb-5 pt-4`,
+        footerClassName: `w-full`,
+        footerActionsWrapperClassName: `w-full`,
+        modalActionsClassName: `sm:flex-row`,
+        primaryButton: b,
+        secondaryButton: S,
+        children: C
+    }), t[28] = l, t[29] = s, t[30] = C, t[31] = h, t[32] = g, t[33] = b, t[34] = S, t[35] = w) : w = t[35], w
+}
+var lS, uS, dS, fS, pS, mS, hS = e((() => {
+    lS = qn(), ea(), su(), Zl(), M(), xe(), kp(), Ov(), ex(), M_(), Ka(), xx(), Px(), eS(), Ir(), ct(), Ps(), ke(), uS = t(Fn()), Pn(), dS = wn(), fS = `grid grid-cols-1 gap-4 pt-4 sm:grid-cols-2 lg:grid-cols-3`, pS = 3, mS = e => {
+        "use forget";
+        let t = (0, lS.c)(25),
+            {
+                artifact: n,
+                mutationLoading: r,
+                itemClassName: i,
+                onRequestAction: a
+            } = e,
+            o;
+        t[0] === i ? o = t[1] : (o = J(`keyboard-focused:focus-ring`, `text-token-text-primary`, i), t[0] = i, t[1] = o);
+        let s, c;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, dS.jsx)(tu, {
+            "aria-hidden": `true`,
+            className: `icon text-token-text-primary`
+        }), c = (0, dS.jsx)(X, {
+            ...Z.restoreFile
+        }), t[2] = s, t[3] = c) : (s = t[2], c = t[3]);
+        let l;
+        t[4] !== n || t[5] !== a ? (l = e => {
+            e.preventDefault(), e.stopPropagation(), a(`restore`, n)
+        }, t[4] = n, t[5] = a, t[6] = l) : l = t[6];
+        let u;
+        t[7] !== r || t[8] !== o || t[9] !== l ? (u = (0, dS.jsx)(yi.Item, {
+            size: `large`,
+            disabled: r,
+            className: o,
+            icon: s,
+            label: c,
+            onSelect: l
+        }), t[7] = r, t[8] = o, t[9] = l, t[10] = u) : u = t[10];
+        let d;
+        t[11] === i ? d = t[12] : (d = J(`keyboard-focused:focus-ring`, `text-token-text-status-error`, i), t[11] = i, t[12] = d);
+        let f, p;
+        t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, dS.jsx)(Vl, {
+            "aria-hidden": `true`,
+            className: `icon text-token-text-status-error`
+        }), p = (0, dS.jsx)(X, {
+            ...Z.permanentDeleteFile
+        }), t[13] = f, t[14] = p) : (f = t[13], p = t[14]);
+        let m;
+        t[15] !== n || t[16] !== a ? (m = e => {
+            e.preventDefault(), e.stopPropagation(), a(`permanent-delete`, n)
+        }, t[15] = n, t[16] = a, t[17] = m) : m = t[17];
+        let h;
+        t[18] !== r || t[19] !== d || t[20] !== m ? (h = (0, dS.jsx)(yi.Item, {
+            size: `large`,
+            disabled: r,
+            className: d,
+            icon: f,
+            label: p,
+            onSelect: m
+        }), t[18] = r, t[19] = d, t[20] = m, t[21] = h) : h = t[21];
+        let g;
+        return t[22] !== h || t[23] !== u ? (g = (0, dS.jsxs)(dS.Fragment, {
+            children: [u, h]
+        }), t[22] = h, t[23] = u, t[24] = g) : g = t[24], g
+    }
+}));
+
+function gS(e) {
+    "use forget";
+    let t = (0, _S.c)(59),
+        {
+            analyticsSession: n,
+            hasDeletedFiles: r,
+            libraryOrigin: i,
+            refreshed: a
+        } = e,
+        o = a !== void 0 && a,
+        s = Yn(),
+        c = On(),
+        l;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (l = yn(), t[0] = l) : l = t[0];
+    let u = l,
+        [d, f] = (0, vS.useState)(!1),
+        [m, h] = (0, vS.useState)(!1),
+        g;
+    t[1] !== n || t[2] !== i ? (g = function(e, t) {
+        _e.logStructuredEvent(`ChatgptFileLibraryFileInteraction`, {
+            interactionType: e,
+            ...n,
+            productExperience: ec(),
+            libraryOrigin: i,
+            operation: Ur.CHATGPT_FILE_LIBRARY_OPERATION_PERMANENT_DELETE,
+            scope: li.CHATGPT_FILE_LIBRARY_SCOPE_ALL,
+            ...t == null ? {} : {
+                error: t
+            }
+        })
+    }, t[1] = n, t[2] = i, t[3] = g) : g = t[3];
+    let _ = g,
+        y;
+    t[4] === m ? y = t[5] : (y = function() {
+        m || f(!1)
+    }, t[4] = m, t[5] = y);
+    let b = y,
+        x;
+    t[6] !== r || t[7] !== m || t[8] !== _ ? (x = function() {
+        m || !r || (f(!0), _(Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE_INITIATED))
+    }, t[6] = r, t[7] = m, t[8] = _, t[9] = x) : x = t[9];
+    let S = x,
+        C;
+    t[10] !== s || t[11] !== m || t[12] !== _ || t[13] !== c ? (C = async function() {
+        if (!m) {
+            h(!0), _(Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE);
+            try {
+                let e = await v.safeDelete(`/files/library/trash`);
+                Ke(), await Promise.all([c.invalidateQueries({
+                    queryKey: [Yi],
+                    refetchType: `all`
+                }), c.invalidateQueries({
+                    queryKey: [he]
+                }), c.invalidateQueries({
+                    queryKey: zs
+                })]), f(!1), e.failed_count > 0 ? (_(e.deleted_count === 0 ? Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE_FAILED : Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE_PARTIAL), u.danger(s.formatMessage(Z.emptyTrashPartialFailure))) : (_(Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE_SUCCEEDED), u.success(s.formatMessage(Z.emptyTrashSuccess)))
+            } catch (e) {
+                let t = e;
+                _(Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE_FAILED, Df(t)), u.danger(s.formatMessage(Z.emptyTrashFailed), {
+                    error: t
+                })
+            }
+            h(!1)
+        }
+    }, t[10] = s, t[11] = m, t[12] = _, t[13] = c, t[14] = C) : C = t[14];
+    let w = C,
+        T = o ? `rounded-xl` : `rounded-[16px]`,
+        E;
+    t[15] === T ? E = t[16] : (E = J(`bg-token-bg-secondary/60 text-token-text-primary mb-3 flex flex-col gap-3 px-4 py-3 text-sm leading-5 sm:flex-row sm:items-center sm:justify-between`, T), t[15] = T, t[16] = E);
+    let D;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (D = (0, yS.jsx)(X, {
+        ...Z.deletedFilesBanner
+    }), t[17] = D) : D = t[17];
+    let O = o ? `border-token-border-default bg-token-bg-primary hover:bg-token-bg-secondary rounded-full border px-3 py-1 text-xs transition-colors disabled:cursor-not-allowed` : `transition-opacity hover:opacity-80 disabled:opacity-100`,
+        k;
+    t[18] === O ? k = t[19] : (k = J(`text-token-text-primary disabled:text-token-text-tertiary self-end font-medium sm:self-auto`, O), t[18] = O, t[19] = k);
+    let A = m || !r,
+        j;
+    t[20] === S ? j = t[21] : (j = () => {
+        S()
+    }, t[20] = S, t[21] = j);
+    let M = o ? Z.emptyTrash : Z.deleteAllRecentlyDeletedFiles,
+        N;
+    t[22] === M ? N = t[23] : (N = (0, yS.jsx)(X, {
+        ...M
+    }), t[22] = M, t[23] = N);
+    let P;
+    t[24] !== k || t[25] !== A || t[26] !== j || t[27] !== N ? (P = (0, yS.jsx)(`button`, {
+        type: `button`,
+        className: k,
+        disabled: A,
+        onClick: j,
+        children: N
+    }), t[24] = k, t[25] = A, t[26] = j, t[27] = N, t[28] = P) : P = t[28];
+    let F;
+    t[29] !== P || t[30] !== E ? (F = (0, yS.jsxs)(`div`, {
+        className: E,
+        children: [D, P]
+    }), t[29] = P, t[30] = E, t[31] = F) : F = t[31];
+    let I;
+    t[32] === s ? I = t[33] : (I = s.formatMessage(Z.deleteAllRecentlyDeletedFilesConfirmTitle), t[32] = s, t[33] = I);
+    let L;
+    t[34] === s ? L = t[35] : (L = s.formatMessage(Z.deleteAllRecentlyDeletedFilesConfirmButton), t[34] = s, t[35] = L);
+    let R;
+    t[36] === w ? R = t[37] : (R = () => {
+        w()
+    }, t[36] = w, t[37] = R);
+    let z;
+    t[38] !== m || t[39] !== L || t[40] !== R ? (z = (0, yS.jsx)(le.Button, {
+        title: L,
+        color: `danger`,
+        onClick: R,
+        disabled: m,
+        loading: m
+    }), t[38] = m, t[39] = L, t[40] = R, t[41] = z) : z = t[41];
+    let B;
+    t[42] === s ? B = t[43] : (B = s.formatMessage(Z.cancelCreateFolder), t[42] = s, t[43] = B);
+    let V;
+    t[44] !== b || t[45] !== m || t[46] !== B ? (V = (0, yS.jsx)(le.Button, {
+        title: B,
+        color: `secondary`,
+        onClick: b,
+        disabled: m
+    }), t[44] = b, t[45] = m, t[46] = B, t[47] = V) : V = t[47];
+    let H;
+    t[48] === Symbol.for(`react.memo_cache_sentinel`) ? (H = (0, yS.jsx)(`p`, {
+        className: `text-token-text-primary text-sm leading-5`,
+        children: (0, yS.jsx)(X, {
+            ...Z.deleteAllRecentlyDeletedFilesConfirmDescription
+        })
+    }), t[48] = H) : H = t[48];
+    let U;
+    t[49] !== b || t[50] !== m || t[51] !== d || t[52] !== I || t[53] !== z || t[54] !== V ? (U = (0, yS.jsx)(p, {
+        testId: `modal-empty-trash-confirm`,
+        isOpen: d,
+        onClose: b,
+        shouldIgnoreClickOutside: m,
+        title: I,
+        headerClassName: `px-5 pt-5 pb-0`,
+        contentClassName: `px-5 pb-5 pt-4`,
+        footerClassName: `w-full`,
+        footerActionsWrapperClassName: `w-full`,
+        modalActionsClassName: `sm:flex-row`,
+        primaryButton: z,
+        secondaryButton: V,
+        children: H
+    }), t[49] = b, t[50] = m, t[51] = d, t[52] = I, t[53] = z, t[54] = V, t[55] = U) : U = t[55];
+    let ee;
+    return t[56] !== F || t[57] !== U ? (ee = (0, yS.jsxs)(yS.Fragment, {
+        children: [F, U]
+    }), t[56] = F, t[57] = U, t[58] = ee) : ee = t[58], ee
+}
+var _S, vS, yS, bS = e((() => {
+    _S = qn(), zi(), M(), xe(), nl(), Pc(), rp(), Ka(), Ic(), s(), cn(), vn(), Kn(), vS = t(Fn()), Pn(), ke(), Id(), yS = wn()
+}));
+
+function xS({
+    checkedIds: e,
+    folderStartChatEnabled: t,
+    isDeleted: n,
+    pendingOptimisticArtifactIds: r,
+    unifiedComposerSelectionStateEnabled: i,
+    visibleArtifacts: a,
+    visibleDirectories: o
+}) {
+    let s = o.filter(e => !Gs(e.id)),
+        c = n ? [] : s.filter(t => e.has(t.id)),
+        l = a.filter(t => e.has(t.id) && !r.has(t.id)),
+        u = n ? a.map(e => e.id) : [...s.map(e => e.id), ...a.flatMap(e => r.has(e.id) ? [] : [e.id])],
+        d = c.length + l.length,
+        f = d > 0,
+        p = u.length > 0 && u.every(t => e.has(t)),
+        m = u.length > 0 && u.some(t => e.has(t));
+    return {
+        allSelected: p,
+        folderChatEnabled: t && i,
+        hasSelectableVisibleRows: u.length > 0,
+        hasSavedMessage: l.some(CS),
+        hasSelectedDirectories: c.length > 0,
+        hasSelection: f,
+        picked: l,
+        selectableRowIds: u,
+        selectedCount: d,
+        selectedDirectories: c,
+        showSelect: f || p || m,
+        someSelected: m
+    }
+}
+
+function SS(e, t, n) {
+    let r = !t && !e.some(CS);
+    return {
+        showBulkStartChat: r && n,
+        showBulkDownload: r && e.some(e => Pa(e) || cs(e))
+    }
+}
+var CS, wS = e((() => {
+    Hr(), yc(), xa(), po(), CS = e => yl(e) || e.source?.type === `saved_entity` || e.classifiers.library_artifact_type === `saved_entity`
+}));
+
+function TS(e) {
+    "use forget";
+    let t = (0, ES.c)(4),
+        {
+            conversation: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = {
+        kind: S.PrimaryAssistant
+    }, t[0] = r) : r = t[0], up(n.id, r);
+    let i, a;
+    return t[1] === n.id ? (i = t[2], a = t[3]) : (i = () => (Ae.retainThread(n.id), () => {
+        Ae.releaseThread(n.id)
+    }), a = [n.id], t[1] = n.id, t[2] = i, t[3] = a), (0, DS.useEffect)(i, a), null
+}
+var ES, DS, OS = e((() => {
+    ES = qn(), Ve(), sf(), Kt(), DS = t(Fn())
+}));
+
+function kS(e) {
+    return e === `queued` || e === `uploading` || e === `processing`
+}
+
+function AS(e, t) {
+    return e.status === `failed` ? e.errorMessage ?? t.formatMessage(Z.uploadFailed) : e.status === `queued` ? t.formatMessage(Z.queuedUpload) : e.status === `processing` ? t.formatMessage(Z.processingUpload) : e.status === `success` ? t.formatMessage(Z.uploadComplete) : t.formatMessage(Z.pendingUpload, {
+        progress: Math.round(e.progress ?? 0)
+    })
+}
+
+function jS(e) {
+    return e.status === `success`
+}
+
+function MS(e) {
+    return kS(e.status)
+}
+
+function NS(e) {
+    return !e
+}
+
+function PS(e) {
+    return (0, LS.jsx)(RS, {
+        item: e
+    }, e.id)
+}
+var FS, IS, LS, RS, zS, BS = e((() => {
+    FS = qn(), gu(), nu(), Il(), Xl(), gn(), Gu(), ll(), ee(), ke(), IS = t(Fn()), Pn(), $m(), Ka(), LS = wn(), RS = e => {
+        "use forget";
+        let t = (0, FS.c)(49),
+            {
+                item: n
+            } = e,
+            r = Yn(),
+            i = n.status === `failed`,
+            a = n.status === `success`,
+            o;
+        t[0] !== r || t[1] !== n ? (o = AS(n, r), t[0] = r, t[1] = n, t[2] = o) : o = t[2];
+        let s = o,
+            c = i && n.retryable === !0 && n.onRetry != null,
+            l = n.onRemove != null,
+            u;
+        t[3] !== n.onCancel || t[4] !== n.status ? (u = kS(n.status) && n.onCancel != null, t[3] = n.onCancel, t[4] = n.status, t[5] = u) : u = t[5];
+        let d = u,
+            f = n.retryDisabled ?? n.actionDisabled ?? !1,
+            p = n.removeDisabled ?? !1,
+            m = n.cancelDisabled ?? n.actionDisabled ?? !1,
+            h = i && `bg-token-bg-status-error`,
+            g;
+        t[6] === h ? g = t[7] : (g = J(`flex min-w-0 items-center gap-3 px-4 py-2.5`, `border-token-border-light/60 border-t first:border-t-0`, h), t[6] = h, t[7] = g);
+        let _ = i && `border-token-border-status-error`,
+            v;
+        t[8] === _ ? v = t[9] : (v = J(`border-token-border-light bg-token-bg-primary flex size-8 shrink-0 items-center justify-center rounded-[8px] border`, _), t[8] = _, t[9] = v);
+        let y;
+        t[10] !== i || t[11] !== a || t[12] !== n.status ? (y = i ? (0, LS.jsx)(Jl, {
+            "aria-hidden": `true`,
+            className: `icon-sm text-token-text-status-error`
+        }) : a ? (0, LS.jsx)(Ql, {
+            "aria-hidden": `true`,
+            className: `icon-sm text-token-text-status-success`
+        }) : n.status === `queued` ? (0, LS.jsx)(Gl, {
+            "aria-hidden": `true`,
+            className: `icon-sm text-token-text-secondary`
+        }) : (0, LS.jsx)(Ct, {
+            className: `text-token-text-secondary h-4 w-4`
+        }), t[10] = i, t[11] = a, t[12] = n.status, t[13] = y) : y = t[13];
+        let b;
+        t[14] !== v || t[15] !== y ? (b = (0, LS.jsx)(`div`, {
+            className: v,
+            children: y
+        }), t[14] = v, t[15] = y, t[16] = b) : b = t[16];
+        let x;
+        t[17] === n.fileName ? x = t[18] : (x = (0, LS.jsx)(th, {
+            fileName: n.fileName,
+            className: `text-token-text-primary text-[14px] leading-[18px]`
+        }), t[17] = n.fileName, t[18] = x);
+        let S = i ? `text-token-interactive-label-danger-secondary-press dark:text-token-text-status-error` : `text-token-text-secondary`,
+            C;
+        t[19] === S ? C = t[20] : (C = J(`mt-1 truncate text-[12px] leading-[16px]`, S), t[19] = S, t[20] = C);
+        let w;
+        t[21] !== s || t[22] !== C ? (w = (0, LS.jsx)(`div`, {
+            className: C,
+            title: s,
+            children: s
+        }), t[21] = s, t[22] = C, t[23] = w) : w = t[23];
+        let T;
+        t[24] !== w || t[25] !== x ? (T = (0, LS.jsxs)(`div`, {
+            className: `min-w-0 flex-1`,
+            children: [x, w]
+        }), t[24] = w, t[25] = x, t[26] = T) : T = t[26];
+        let E;
+        t[27] !== r || t[28] !== n || t[29] !== f || t[30] !== c ? (E = c ? (0, LS.jsxs)(`button`, {
+            type: `button`,
+            "aria-label": r.formatMessage(Z.retryUploadFile, {
+                fileName: n.fileName
+            }),
+            "aria-disabled": f,
+            onClick: e => {
+                if (f) {
+                    e.preventDefault();
+                    return
+                }
+                n.onRetry?.()
+            },
+            className: J(`text-token-text-primary flex items-center gap-1 rounded-md px-1.5 py-1 text-[12px] leading-[16px] font-medium whitespace-nowrap`, `focus-visible:ring-token-ring focus-visible:ring-2 focus-visible:outline-none`, f ? `opacity-40` : `interactive-bg-danger-ghost`),
+            children: [(0, LS.jsx)(rd, {
+                "aria-hidden": `true`,
+                className: `icon-xs`
+            }), (0, LS.jsx)(X, {
+                ...Z.retry
+            })]
+        }) : null, t[27] = r, t[28] = n, t[29] = f, t[30] = c, t[31] = E) : E = t[31];
+        let D;
+        t[32] !== n || t[33] !== p || t[34] !== l ? (D = l ? (0, LS.jsx)(Zm, {
+            disabled: p,
+            onClick: () => n.onRemove?.(),
+            tone: `danger`,
+            label: (0, LS.jsx)(X, {
+                ...Z.removeFailedUploadFile,
+                values: {
+                    fileName: n.fileName
+                }
+            }),
+            children: (0, LS.jsx)(tn, {
+                "aria-hidden": `true`,
+                className: `icon-sm`
+            })
+        }) : null, t[32] = n, t[33] = p, t[34] = l, t[35] = D) : D = t[35];
+        let O;
+        t[36] !== m || t[37] !== n || t[38] !== d ? (O = d ? (0, LS.jsx)(Zm, {
+            disabled: m,
+            onClick: () => n.onCancel?.(),
+            label: (0, LS.jsx)(X, {
+                ...Z.cancelUpload
+            }),
+            children: (0, LS.jsx)(tn, {
+                "aria-hidden": `true`,
+                className: `icon-sm`
+            })
+        }) : null, t[36] = m, t[37] = n, t[38] = d, t[39] = O) : O = t[39];
+        let k;
+        t[40] !== E || t[41] !== D || t[42] !== O ? (k = (0, LS.jsxs)(`div`, {
+            className: `flex shrink-0 items-center gap-1`,
+            children: [E, D, O]
+        }), t[40] = E, t[41] = D, t[42] = O, t[43] = k) : k = t[43];
+        let A;
+        return t[44] !== T || t[45] !== k || t[46] !== g || t[47] !== b ? (A = (0, LS.jsxs)(`div`, {
+            role: `listitem`,
+            className: g,
+            children: [b, T, k]
+        }), t[44] = T, t[45] = k, t[46] = g, t[47] = b, t[48] = A) : A = t[48], A
+    }, zS = e => {
+        "use forget";
+        let t = (0, FS.c)(65),
+            {
+                completedCount: n,
+                onClose: r,
+                totalCount: i,
+                uploads: a
+            } = e,
+            o = Yn(),
+            s = (0, IS.useId)(),
+            c = (0, IS.useId)(),
+            [l, u] = (0, IS.useState)(!1);
+        if (a.length === 0) return null;
+        let d;
+        t[0] !== n || t[1] !== a ? (d = n ?? a.filter(jS).length, t[0] = n, t[1] = a, t[2] = d) : d = t[2];
+        let f = Math.max(0, d),
+            p = a.length,
+            m = Math.max(i ?? p, p, f),
+            h;
+        t[3] === a ? h = t[4] : (h = a.some(MS), t[3] = a, t[4] = h);
+        let g = !h && r != null,
+            _;
+        t[5] !== f || t[6] !== m ? (_ = m === 0 ? 0 : Math.round(f / m * 100), t[5] = f, t[6] = m, t[7] = _) : _ = t[7];
+        let v = _,
+            y;
+        t[8] !== f || t[9] !== m || t[10] !== o ? (y = o.formatMessage(Z.uploadPanelProgress, {
+            completedCount: f,
+            totalCount: m
+        }), t[8] = f, t[9] = m, t[10] = o, t[11] = y) : y = t[11];
+        let b = y,
+            x = !l && `border-b`,
+            S;
+        t[12] === x ? S = t[13] : (S = J(`border-token-border-light flex items-center justify-between gap-3 px-4 py-3`, x), t[12] = x, t[13] = S);
+        let C;
+        t[14] === m ? C = t[15] : (C = (0, LS.jsx)(X, {
+            ...Z.uploadPanelTitle,
+            values: {
+                count: m
+            }
+        }), t[14] = m, t[15] = C);
+        let w;
+        t[16] !== C || t[17] !== s ? (w = (0, LS.jsx)(`div`, {
+            className: `min-w-0`,
+            children: (0, LS.jsx)(`h2`, {
+                id: s,
+                className: `text-token-text-primary truncate text-[14px] leading-[18px] font-medium`,
+                children: C
+            })
+        }), t[16] = C, t[17] = s, t[18] = w) : w = t[18];
+        let T;
+        t[19] === v ? T = t[20] : (T = (0, LS.jsx)(vr, {
+            percentage: v,
+            sizeOverride: 14,
+            thickness: .125,
+            className: `text-token-text-primary size-[14px]`,
+            backgroundStrokeClassName: `stroke-token-border-light`,
+            transitionDuration: `300ms`,
+            transitionTimingFunction: `ease-out`
+        }), t[19] = v, t[20] = T);
+        let E;
+        t[21] !== f || t[22] !== m ? (E = (0, LS.jsx)(`span`, {
+            className: `text-token-text-primary min-w-8 text-[12px] leading-none font-medium`,
+            children: (0, LS.jsx)(X, {
+                ...Z.uploadPanelProgressShort,
+                values: {
+                    completedCount: f,
+                    totalCount: m
+                }
+            })
+        }), t[21] = f, t[22] = m, t[23] = E) : E = t[23];
+        let D;
+        t[24] !== b || t[25] !== E || t[26] !== T ? (D = (0, LS.jsxs)(`div`, {
+            "aria-label": b,
+            className: `flex shrink-0 items-center gap-1.5`,
+            role: `img`,
+            children: [T, E]
+        }), t[24] = b, t[25] = E, t[26] = T, t[27] = D) : D = t[27];
+        let O = !l,
+            k;
+        t[28] !== o || t[29] !== l ? (k = o.formatMessage(l ? Z.expandUploadPanel : Z.collapseUploadPanel), t[28] = o, t[29] = l, t[30] = k) : k = t[30];
+        let A;
+        t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (A = () => u(NS), t[31] = A) : A = t[31];
+        let j = l && `rotate-180`,
+            M;
+        t[32] === j ? M = t[33] : (M = J(`icon-sm text-token-text-secondary transition-transform`, j), t[32] = j, t[33] = M);
+        let N;
+        t[34] === M ? N = t[35] : (N = (0, LS.jsx)(zl, {
+            "aria-hidden": `true`,
+            className: M
+        }), t[34] = M, t[35] = N);
+        let P;
+        t[36] !== c || t[37] !== O || t[38] !== k || t[39] !== N ? (P = (0, LS.jsx)(`button`, {
+            type: `button`,
+            "aria-controls": c,
+            "aria-expanded": O,
+            "aria-label": k,
+            onClick: A,
+            className: `hover:bg-token-bg-tertiary focus-visible:bg-token-bg-tertiary flex size-6 items-center justify-center rounded-md border-0 bg-transparent p-0 shadow-none focus-visible:ring-2 focus-visible:outline-none`,
+            children: N
+        }), t[36] = c, t[37] = O, t[38] = k, t[39] = N, t[40] = P) : P = t[40];
+        let F;
+        t[41] !== o || t[42] !== r || t[43] !== g ? (F = g ? (0, LS.jsx)(`button`, {
+            type: `button`,
+            "aria-label": o.formatMessage(Z.closeUploadPanel),
+            onClick: r,
+            className: `hover:bg-token-bg-tertiary focus-visible:bg-token-bg-tertiary flex size-6 items-center justify-center rounded-md border-0 bg-transparent p-0 shadow-none focus-visible:ring-2 focus-visible:outline-none`,
+            children: (0, LS.jsx)(tn, {
+                "aria-hidden": `true`,
+                className: `icon-sm`
+            })
+        }) : null, t[41] = o, t[42] = r, t[43] = g, t[44] = F) : F = t[44];
+        let I;
+        t[45] !== D || t[46] !== P || t[47] !== F ? (I = (0, LS.jsxs)(`div`, {
+            className: `flex shrink-0 items-center gap-2`,
+            children: [D, P, F]
+        }), t[45] = D, t[46] = P, t[47] = F, t[48] = I) : I = t[48];
+        let L;
+        t[49] !== I || t[50] !== S || t[51] !== w ? (L = (0, LS.jsxs)(`div`, {
+            className: S,
+            children: [w, I]
+        }), t[49] = I, t[50] = S, t[51] = w, t[52] = L) : L = t[52];
+        let R;
+        t[53] === a ? R = t[54] : (R = a.map(PS), t[53] = a, t[54] = R);
+        let z;
+        t[55] !== l || t[56] !== c || t[57] !== R ? (z = (0, LS.jsx)(`div`, {
+            id: c,
+            role: `list`,
+            hidden: l,
+            className: `max-h-[min(264px,calc(100vh-160px))] overflow-y-auto`,
+            children: R
+        }), t[55] = l, t[56] = c, t[57] = R, t[58] = z) : z = t[58];
+        let B;
+        t[59] !== L || t[60] !== z ? (B = (0, LS.jsxs)(`div`, {
+            className: `border-token-border-light bg-token-bg-primary overflow-hidden rounded-2xl border`,
+            children: [L, z]
+        }), t[59] = L, t[60] = z, t[61] = B) : B = t[61];
+        let V;
+        return t[62] !== B || t[63] !== s ? (V = (0, LS.jsx)(`section`, {
+            "aria-labelledby": s,
+            className: `shadow-elevation-03 fixed end-4 bottom-4 z-[1000] w-[min(420px,calc(100vw-2rem))] overflow-hidden rounded-2xl max-sm:end-3 max-sm:bottom-3 max-sm:w-[calc(100vw-1.5rem)]`,
+            children: B
+        }), t[62] = B, t[63] = s, t[64] = V) : V = t[64], V
+    }
+}));
+
+function VS(e, t) {
+    let n = e.filter(e => e.tempId !== t.tempId);
+    return n.push(t), n.sort((e, t) => HS(e.uploadOrder, t.uploadOrder)), n
+}
+
+function HS(e, t) {
+    return e == null && t == null ? 0 : e == null ? 1 : t == null ? -1 : e.batchId === t.batchId ? e.index - t.index : t.batchId - e.batchId
+}
+
+function US(e, t, n) {
+    if (!n) return;
+    let r = sr(e);
+    return (r ? t.get(r) : void 0) ?? (e.libraryFileId ? t.get(e.libraryFileId) : void 0) ?? t.get(e.id)
+}
+
+function WS(e, t, n) {
+    return !n || t.size === 0 ? e : [...e].sort((e, r) => HS(US(e, t, n), US(r, t, n)))
+}
+var GS = e((() => {
+    Ir()
+}));
+
+function KS({
+    completedUploads: e,
+    onRemove: t,
+    onRetry: n,
+    pendingUploads: r
+}) {
+    let i = new Set(e.map(e => e.tempId));
+    return [...r.filter(e => !i.has(e.tempId)).map(e => ({
+        kind: `pending`,
+        upload: e,
+        uploadOrder: e.uploadOrder
+    })), ...e.map(e => ({
+        kind: `completed`,
+        upload: e,
+        uploadOrder: e.uploadOrder
+    }))].sort((e, t) => HS(e.uploadOrder, t.uploadOrder)).map(e => {
+        if (e.kind === `completed`) return {
+            id: e.upload.tempId,
+            fileName: e.upload.name,
+            status: `success`
+        };
+        let {
+            upload: r
+        } = e;
+        return {
+            id: r.tempId,
+            fileName: r.name,
+            status: r.status,
+            progress: r.progress,
+            errorMessage: r.errorMessage,
+            retryable: r.retryable,
+            ...r.status === `failed` && r.retryable === !0 ? {
+                onRetry: () => n(r)
+            } : {},
+            ...r.status === `failed` ? {
+                onRemove: () => t(r.tempId)
+            } : {}
+        }
+    })
+}
+var qS = e((() => {
+    GS()
+}));
+
+function JS() {
+    let e = r(YS),
+        t = e.get(`batch_size`, XS),
+        n = typeof t == `number` && Number.isFinite(t) ? Math.min(Math.max(Math.floor(t), 1), ZS) : XS;
+    return {
+        enabled: e.get(`variant`, `control`) === `test`,
+        batchSize: n
+    }
+}
+var YS, XS, ZS, QS = e((() => {
+    Qt(), YS = `803147005`, XS = 25, ZS = 25
+}));
+
+function $S(e) {
+    let t = sr(e);
+    if (!e.id || !t) return null;
+    let n = typeof e.classifiers.parent_directory_id == `string` ? e.classifiers.parent_directory_id : null,
+        r = bs(e).trim();
+    return {
+        libraryFileId: e.id,
+        fileId: t,
+        parentDirectoryId: n ?? void 0,
+        fileName: r.length > 0 ? r : void 0
+    }
+}
+async function eC({
+    batchSize: e,
+    clearCacheOnDelete: t,
+    deleteInputs: n,
+    directoryId: r,
+    refreshAfterDelete: i,
+    restoreOptimisticallyDeletedArtifact: a,
+    showDeleteError: o
+}) {
+    at.info(`Library files soft delete requested`, {
+        batch_count: Math.ceil(n.length / e),
+        batch_size: e,
+        file_count: n.length
+    });
+    let s = [],
+        c = [],
+        l = 0,
+        u = null;
+    try {
+        for (l = 0; l < n.length; l += e) {
+            let t = n.slice(l, l + e),
+                r = await Qa({
+                    files: t
+                }),
+                i = new Set(r.files.filter(e => e.success).map(e => e.libraryFileId));
+            s.push(...t.filter(e => !i.has(e.libraryFileId)))
+        }
+    } catch (t) {
+        let r = Math.min(l + e, n.length);
+        c.push(...n.slice(l, r)), s.push(...n.slice(r)), u = t, at.error(`Library files batch soft delete request outcome unknown`, {
+            ambiguous_count: c.length,
+            error: t,
+            failed_count: s.length,
+            file_count: n.length
+        })
+    }
+    for (let e of s) a(e.libraryFileId);
+    if (u != null) o(u);
+    else if (s.length > 0) {
+        let e = Error(`Failed to delete file.`);
+        at.error(`Library files soft delete failed`, {
+            error: e,
+            failed_count: s.length,
+            file_count: n.length
+        }), o(e)
+    }
+    try {
+        await i(r, {
+            clearCacheOnDelete: t
+        })
+    } catch (e) {
+        at.error(`Library files soft delete refresh failed`, {
+            ambiguous_count: c.length,
+            error: e,
+            file_count: n.length
+        })
+    } finally {
+        for (let e of c) a(e.libraryFileId)
+    }
+    return new Set([...s, ...c].map(e => e.libraryFileId))
+}
+async function tC({
+    artifacts: e,
+    hideDeletedArtifact: t,
+    ...n
+}) {
+    let r = e.map(e => $S(e)).filter(e => e != null);
+    if (r.length === 0) return !1;
+    for (let e of r) t(e.libraryFileId);
+    let i = new Set(await eC({
+            ...n,
+            deleteInputs: r
+        })),
+        a = new Set(r.map(e => e.libraryFileId));
+    for (let t of e) a.has(t.id) || i.add(t.id);
+    return n.onRetryableArtifactIds?.(i), i.size === 0
+}
+
+function nC(e, t, n) {
+    let r = e;
+    return e => {
+        let i = r;
+        return t(i, {
+            ...e,
+            onRetryableArtifactIds: e => {
+                r = i.filter(t => e.has(t.id)), n?.(r)
+            }
+        })
+    }
+}
+
+function rC({
+    deleteArtifactLegacy: e,
+    deleteArtifactsLegacy: t,
+    deletedFilesEnabled: n,
+    directoryId: r,
+    pendingOptimisticArtifactIds: i,
+    refreshAfterDelete: a,
+    setCheckedIds: o,
+    setHiddenDeletedArtifactIds: s,
+    showDeleteError: c
+}) {
+    async function l(e, t, n) {
+        let l = e.filter(e => !i.has(e.id)),
+            u = e.filter(e => i.has(e.id)).map(e => e.id);
+        return l.length === 0 ? (n.onRetryableArtifactIds?.(new Set(u)), !1) : await tC({
+            artifacts: l,
+            batchSize: t,
+            clearCacheOnDelete: n.clearCacheOnDelete,
+            directoryId: r,
+            hideDeletedArtifact: e => {
+                s(t => {
+                    let n = new Set(t);
+                    return n.add(e), n
+                }), o(t => {
+                    let n = new Set(t);
+                    return n.delete(e), n
+                })
+            },
+            onRetryableArtifactIds: e => {
+                n.onRetryableArtifactIds?.(new Set([...e, ...u]))
+            },
+            refreshAfterDelete: a,
+            restoreOptimisticallyDeletedArtifact: e => {
+                s(t => {
+                    let n = new Set(t);
+                    return n.delete(e), n
+                })
+            },
+            showDeleteError: c
+        }) && l.length === e.length
+    }
+    async function u(e, t, r) {
+        let i = n ? t?.enabled ? `treatment` : `control` : `ineligible`,
+            a = t?.enabled ? Math.ceil(e.length / t.batchSize) : e.length,
+            o = Date.now(),
+            s = `failure`;
+        try {
+            let e = await r();
+            return s = e ? `success` : `failure`, e
+        } finally {
+            let t = Date.now() - o;
+            gt.hist(ft.FILES, `library_delete.duration_ms`, {
+                mode: i,
+                outcome: s
+            }, t), at.info(`Library files delete completed`, {
+                batch_count: a,
+                duration_ms: t,
+                file_count: e.length,
+                mode: i,
+                outcome: s
+            })
+        }
+    }
+
+    function d(t, r = {}) {
+        let i = r.nonBlockingConfig ?? (n ? JS() : null);
+        return u([t], i, () => i?.enabled ? l([t], i.batchSize, r) : e(t, {
+            clearCacheOnDelete: r.clearCacheOnDelete
+        }))
+    }
+
+    function f(e, r = {}) {
+        let i = r.nonBlockingConfig ?? (n ? JS() : null);
+        return u(e, i, () => i?.enabled ? l(e, i.batchSize, r) : t(e, r))
+    }
+    return {
+        deleteArtifact: d,
+        deleteArtifacts: f
+    }
+}
+var iC = e((() => {
+    Ha(), Ir(), QS(), $e(), jt()
+}));
+
+function aC(e) {
+    return e ? rf : Pd
+}
+
+function oC(e) {
+    return e.map(e => e.libraryFileId ?? e.id)
+}
+
+function sC(e, t) {
+    let n = ya(e) ? `google_drive` : Fa(e);
+    return n === `native` && t ? void 0 : fl(n)
+}
+
+function cC(e) {
+    switch (e) {
+        case `suggested`:
+        case `folders`:
+        case `uploads`:
+        case `all`:
+            return Sr.CHATGPT_FILE_LIBRARY_CATEGORY_ALL;
+        case `images`:
+            return Sr.CHATGPT_FILE_LIBRARY_CATEGORY_IMAGES;
+        case `files`:
+            return Sr.CHATGPT_FILE_LIBRARY_CATEGORY_FILES;
+        case `favorites`:
+            return Sr.CHATGPT_FILE_LIBRARY_CATEGORY_FAVORITES;
+        case `widgets`:
+            return Sr.CHATGPT_FILE_LIBRARY_CATEGORY_WIDGETS;
+        default:
+            return
+    }
+}
+
+function lC(e) {
+    switch (e) {
+        case `uploaded`:
+            return Xi.CHATGPT_FILE_LIBRARY_SOURCE_FILTER_UPLOADED;
+        case `generated`:
+            return Xi.CHATGPT_FILE_LIBRARY_SOURCE_FILTER_GENERATED;
+        case null:
+            return Xi.CHATGPT_FILE_LIBRARY_SOURCE_FILTER_NONE
+    }
+}
+
+function uC(e) {
+    switch (e) {
+        case `images`:
+            return Bi.CHATGPT_FILE_LIBRARY_FILE_TYPE_FILTER_IMAGES;
+        case `documents`:
+            return Bi.CHATGPT_FILE_LIBRARY_FILE_TYPE_FILTER_DOCUMENTS;
+        case `spreadsheets`:
+            return Bi.CHATGPT_FILE_LIBRARY_FILE_TYPE_FILTER_SPREADSHEETS;
+        case `presentations`:
+            return Bi.CHATGPT_FILE_LIBRARY_FILE_TYPE_FILTER_PRESENTATIONS;
+        case `pdfs`:
+            return Bi.CHATGPT_FILE_LIBRARY_FILE_TYPE_FILTER_PDFS;
+        case null:
+            return Bi.CHATGPT_FILE_LIBRARY_FILE_TYPE_FILTER_NONE
+    }
+}
+
+function dC({
+    analytics: e,
+    analyticsSession: t,
+    deletedFilesEnabled: n,
+    isDeleted: r,
+    libraryOrigin: i
+}) {
+    return ({
+        artifacts: a = [],
+        directoryIds: o = [],
+        origin: s = i
+    }) => {
+        let c = a.length > 0 && n && !r ? Ur.CHATGPT_FILE_LIBRARY_OPERATION_MOVE_TO_RECENTLY_DELETED : Ur.CHATGPT_FILE_LIBRARY_OPERATION_PERMANENT_DELETE;
+        (s === i ? e : fC(s, t)).deleteInitiated({
+            artifacts: a,
+            directoryIds: o,
+            operation: c
+        })
+    }
+}
+
+function fC(e, t, {
+    tab: n,
+    viewMode: r,
+    favoritesViewState: i,
+    getIsFavorited: a
+} = {}) {
+    let o = n == null ? void 0 : cC(n),
+        s = {
+            productExperience: ec(),
+            ...t == null ? {} : {
+                sessionId: t.sessionId,
+                libraryVariant: t.libraryVariant
+            }
+        };
+
+    function c(e, t = e.length > 1) {
+        let n = !t && e.length === 1 ? e[0] : void 0,
+            r = n == null || n.savedEntity != null ? void 0 : Jf(n.classifiers.library_artifact_type),
+            i = n != null && (r === `library_file` || r === `assistant_response`) ? a?.(n) : void 0;
+        return {
+            ...o == null ? {} : {
+                category: o
+            },
+            ...r == null ? {} : {
+                entityKind: r
+            },
+            ...i == null ? {} : {
+                isFavorited: i
+            }
+        }
+    }
+
+    function l(...e) {
+        let t = new Set(e.map(e => sC(e ?? null, no(e) != null)));
+        return t.size === 1 ? t.values().next().value : void 0
+    }
+
+    function u({
+        artifacts: t,
+        directories: n,
+        previousSelectedIds: r,
+        selectedIds: i,
+        changedIds: a,
+        selectionMethod: o
+    }) {
+        let c = a ?? [...r, ...i],
+            u = new Set(c.filter(e => r.has(e) !== i.has(e)));
+        if (u.size === 0) return;
+        let d = t.filter(e => i.has(e.id)),
+            f = n.filter(e => i.has(e.id)),
+            p = t.filter(e => u.has(e.id)),
+            m = n.filter(e => u.has(e.id)),
+            h = oC(d),
+            g = f.map(e => e.id),
+            _ = oC(p),
+            v = m.map(e => e.id),
+            y = Array.from(u).some(e => i.has(e)),
+            b = Array.from(u).some(e => !i.has(e)),
+            x = y && (!b || i.size > 0) ? Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_SELECTED : Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DESELECTED,
+            S = l(...p.map(e => e.id), ...m.map(e => e.id));
+        _e.logStructuredEvent(`ChatgptFileLibraryFileInteraction`, {
+            interactionType: x,
+            ...s,
+            ...S == null ? {} : {
+                provider: S
+            },
+            libraryOrigin: e,
+            selectionMethod: o,
+            libraryFileIds: h,
+            folderIds: g,
+            changedLibraryFileIds: _,
+            changedFolderIds: v,
+            ...p[0] == null ? {} : {
+                artifactId: p[0].libraryFileId ?? p[0].id,
+                fileCategory: Qf(p[0])
+            },
+            selectedCount: E(d.length)
+        })
+    }
+    let d = (e, n, r, i) => {
+        t != null && kf({
+            action: e,
+            analyticsSession: t,
+            parentFolderId: n,
+            ...r == null ? {} : {
+                folderId: r
+            },
+            ...i == null ? {} : {
+                error: i
+            }
+        })
+    };
+
+    function f({
+        action: e,
+        folderId: t,
+        provider: n,
+        folderKind: r
+    }) {
+        _e.logStructuredEvent(`ChatgptFileLibraryFolderNavigated`, {
+            action: e,
+            ...s,
+            ...t == null ? {} : {
+                folderId: t
+            },
+            ...n == null ? {} : {
+                provider: n
+            },
+            ...r == null ? {} : {
+                folderKind: r
+            }
+        })
+    }
+
+    function p(t, n, r, {
+        error: i,
+        operation: a
+    } = {}) {
+        let o = Array.from(new Set(t.flatMap(e => e.libraryFileId == null ? [] : [e.libraryFileId]))),
+            c = Array.from(new Set(n)),
+            u = {
+                ...o.length > 0 ? {
+                    libraryFileIds: o
+                } : {},
+                ...c.length > 0 ? {
+                    folderIds: c
+                } : {}
+            },
+            d = JSON.stringify(u).length <= mC ? u : {},
+            f = l(...t.map(e => e.id), ...n);
+        _e.logStructuredEvent(`ChatgptFileLibraryFileInteraction`, {
+            interactionType: r,
+            ...s,
+            ...f == null ? {} : {
+                provider: f
+            },
+            libraryOrigin: e,
+            ...a == null ? {} : {
+                operation: a
+            },
+            ...d,
+            selectedCount: E(t.length),
+            ...i == null ? {} : {
+                error: i
+            }
+        })
+    }
+    return {
+        categoryChanged(n) {
+            if (t == null) return;
+            let a = cC(n);
+            if (a == null) return;
+            let o = a === Sr.CHATGPT_FILE_LIBRARY_CATEGORY_FAVORITES && i != null ? Jg(i.current) : void 0;
+            Vd({
+                analyticsSession: t,
+                category: a,
+                libraryOrigin: e,
+                ...o == null ? {} : {
+                    layout: r === `grid` ? bi.CHATGPT_FILE_LIBRARY_LAYOUT_GRID : bi.CHATGPT_FILE_LIBRARY_LAYOUT_LIST,
+                    operationId: o.operationId
+                }
+            }), i != null && (i.current.pendingEntryOperationId = o?.operationId, o != null && (i.current.lastEntryOperationId = o.operationId))
+        },
+        deleteInitiated({
+            artifacts: e = [],
+            directoryIds: t = [],
+            operation: n
+        }) {
+            e.length === 0 && t.length === 0 || p(e, t, Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE_INITIATED, {
+                operation: n
+            })
+        },
+        deleteRequested({
+            artifacts: e,
+            directoryIds: t = []
+        }) {
+            e.length !== 0 && p(e, t, Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE)
+        },
+        deleteConfirmed({
+            artifacts: t = [],
+            directoryIds: n = []
+        }) {
+            Cd({
+                artifactIds: t.map(e => e.id),
+                directoryIds: n,
+                libraryOrigin: e
+            })
+        },
+        folderCanceled(e) {
+            d(Ss.CHATGPT_FILE_LIBRARY_CREATE_FOLDER_ACTION_CANCELED, e)
+        },
+        folderConfirmed(e) {
+            d(Ss.CHATGPT_FILE_LIBRARY_CREATE_FOLDER_ACTION_CONFIRMED, e)
+        },
+        folderCompleted(e, t) {
+            d(t == null ? Ss.CHATGPT_FILE_LIBRARY_CREATE_FOLDER_ACTION_FAILED : Ss.CHATGPT_FILE_LIBRARY_CREATE_FOLDER_ACTION_CREATED, e, t)
+        },
+        folderFailed(e, t) {
+            d(Ss.CHATGPT_FILE_LIBRARY_CREATE_FOLDER_ACTION_FAILED, e, void 0, t)
+        },
+        folderShown(e) {
+            d(Ss.CHATGPT_FILE_LIBRARY_CREATE_FOLDER_ACTION_SHOWN, e)
+        },
+        fileOpened(n) {
+            Xd({
+                artifact: n,
+                libraryOrigin: e,
+                analyticsSession: t,
+                provider: l(n.id)
+            })
+        },
+        deleteOutcome(e, t, n) {
+            p(e, [], t, {
+                error: n
+            })
+        },
+        folderNavigated: f,
+        download(n, r, i = n.length > 1) {
+            Sg({
+                libraryFileIds: n.flatMap(e => vo(e.id) ? [e.id] : e.libraryFileId == null ? [] : [e.libraryFileId]),
+                selectedCount: n.length,
+                isBulkSelection: i,
+                libraryOrigin: e,
+                analyticsSession: t,
+                ...r,
+                ...c(n, i)
+            })
+        },
+        fileTypeFilterChanged(n) {
+            t != null && xd({
+                analyticsSession: t,
+                fileTypeFilter: uC(n),
+                libraryOrigin: e
+            })
+        },
+        selectionChanged: u,
+        startChat(t, n = [], r = t.length + n.length > 1) {
+            let i = t.flatMap(e => vo(e.id) ? [e.id] : e.libraryFileId == null ? [] : [e.libraryFileId]);
+            if (i.length === 0 && n.length === 0) return;
+            let a = Array.from(new Set(i)),
+                o = Array.from(new Set(n.map(e => e.id))),
+                u = {
+                    ...a.length > 0 ? {
+                        libraryFileIds: a
+                    } : {},
+                    ...o.length > 0 ? {
+                        folderIds: o
+                    } : {}
+                },
+                d = JSON.stringify(u).length <= mC ? u : {},
+                f = l(...t.map(e => e.id), ...n.map(e => e.id));
+            _e.logStructuredEvent(`ChatgptFileLibraryFileInteraction`, {
+                interactionType: Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_START_CHAT,
+                ...s,
+                ...f == null ? {} : {
+                    provider: f
+                },
+                libraryOrigin: e,
+                ...c(n.length === 0 ? t : [], r),
+                ...d,
+                selectedCount: E(a.length + o.length)
+            })
+        },
+        sourceFilterChanged(n) {
+            t != null && kd({
+                analyticsSession: t,
+                libraryOrigin: e,
+                sourceFilter: lC(n)
+            })
+        },
+        uploadTapped(e) {
+            t != null && Sf({
+                analyticsSession: t,
+                destinationProvider: e
+            })
+        }
+    }
+}
+
+function pC({
+    analytics: e,
+    currentFileTypeFilter: t,
+    currentSourceFilter: n,
+    currentTab: r,
+    goTo: i,
+    showFavorites: a,
+    showWidgetsInspector: o,
+    libraryIARefreshEnabled: s = !1
+}) {
+    return (c, l, u, d) => {
+        if (i(c, l, u), d === `category`) {
+            let t = Oa(l.get(`tab`), o, a, s);
+            t !== r && e.categoryChanged(t)
+        } else if (d === `source_filter`) {
+            let t = Sh(l.get(wh));
+            t !== n && e.sourceFilterChanged(t)
+        } else if (d === `file_type_filter`) {
+            let n = yh(l.get(Dh));
+            n !== t && e.fileTypeFilterChanged(n)
+        }
+    }
+}
+var mC, hC = e((() => {
+    Pc(), n_(), Lf(), sl(), rp(), np(), Eh(), lr(), Hr(), Cg(), cn(), xn(), xi(), Id(), mC = 2e3
+}));
+
+function gC(e, t, n) {
+    return t === TC ? e.formatMessage(kC.fileTooLarge) : ne(e, t, {
+        fileName: n
+    })
+}
+
+function _C(e) {
+    let t = Ao(e, {
+        allowRequestStatusFallback: !1
+    });
+    return t != null && EC.has(t) ? t : void 0
+}
+
+function vC(e) {
+    return e instanceof y ? Qc(e) === wC : e instanceof oe && Ao(e, {
+        allowRequestStatusFallback: !1
+    }) === wC
+}
+
+function yC({
+    error: e,
+    file: t
+}) {
+    vC(e) && Nt(Er, {
+        fileMimeType: t.type || void 0,
+        fileName: t.name,
+        fileSizeBytes: t.size,
+        variant: `uploadFailed`
+    })
+}
+
+function bC(e, t, n) {
+    if (n instanceof y && n.code != null) {
+        let r = Os(n);
+        return gC(e, r === wC ? `default_upload_error` : r, t.name)
+    }
+    if (n instanceof oe) {
+        if (n.detail?.type === `throttled`) return n.message;
+        let r = _C(n);
+        if (r != null) return gC(e, r, t.name);
+        if (n.isClientError()) return De(n) ?? Ce(n) ?? ne(e, `default_upload_error`, {
+            fileName: t.name
+        })
+    }
+    return ne(e, `default_upload_error`, {
+        fileName: t.name
+    })
+}
+
+function xC(e) {
+    if (e instanceof y) return !OC.has(Qc(e));
+    if (e instanceof oe) {
+        let t = Ao(e, {
+            allowRequestStatusFallback: !1
+        });
+        return t == null ? e.status === 408 || e.status === 429 || e.status === 504 ? !0 : e.status >= 400 && e.status < 500 ? !1 : e.isServerError() : !OC.has(t)
+    }
+    return !0
+}
+
+function SC(e, t, n) {
+    return n instanceof oe && n.isClientError() ? bC(e, t, n) : e.formatMessage(kC.mountedUploadUnconfirmed)
+}
+
+function CC(e) {
+    if (e instanceof y) return DC.has(Qc(e));
+    if (e instanceof oe) {
+        let t = Ao(e, {
+            allowRequestStatusFallback: !1
+        });
+        return t == null ? e.status === 408 || e.status === 429 || e.status === 504 || e.isServerError() : DC.has(t)
+    }
+    return !1
+}
+var wC, TC, EC, DC, OC, kC, AC = e((() => {
+    n(), k(), Ri(), zo(), c(), Pn(), wC = `library_storage_limit_exceeded`, TC = `file_too_large`, EC = new Set([TC, `request_transport_error`, `unhandled_mime_type`]), DC = new Set([`failed_upload_to_blobstore`, `request_transport_error`, `throttled`]), OC = new Set([`ace_pod_expired`, `file_corrupted`, `file_empty`, `file_encrypted`, `file_expired`, `file_not_found`, `file_rejected`, TC, `file_zero_bytes`, wC, `over_user_quota`, `permission_error`, `too_many_tokens`, `unhandled_mime_type`]), kC = Dn({
+        mountedUploadUnconfirmed: {
+            id: `artifacts.library.upload.mountedUploadUnconfirmed`,
+            defaultMessage: `The upload could not be confirmed. Check the destination folder before trying again.`
+        },
+        fileTooLarge: {
+            id: `artifacts.library.upload.fileTooLarge`,
+            defaultMessage: `This file is too large to upload. Try a smaller file.`
+        }
+    })
+}));
+
+function jC(e, t, n) {
+    return e.map((e, r) => {
+        let i = uh(e.name) ? n.formatMessage(Z.uploadFileHiddenName) : void 0;
+        return {
+            file: e,
+            tempId: yf(e),
+            uploadOrder: {
+                batchId: t,
+                index: r
+            },
+            ...i == null ? {} : {
+                hiddenNameErrorMessage: i
+            }
+        }
+    })
+}
+var MC = e((() => {
+    Vf(), Ka(), ph()
+}));
+
+function NC(e, t) {
+    return Bs(e) ? {
+        usesRetrievalIndex: !1,
+        storeInLibrary: !1,
+        uploadSource: zC[Fa(e)],
+        entrySurface: `artifacts_folder`,
+        ...t ? {
+            selectionMethod: t
+        } : {}
+    } : {
+        usesRetrievalIndex: !0,
+        storeInLibrary: !0,
+        isProjectThread: !1,
+        entrySurface: `artifacts_folder`,
+        ...t ? {
+            selectionMethod: t
+        } : {},
+        isTemporaryChat: !1,
+        ...e != null && {
+            directoryId: e
+        }
+    }
+}
+
+function PC(e, t, n, r, i) {
+    e(e => e.map(e => e.tempId === t ? {
+        ...e,
+        file: n,
+        name: n.name,
+        progress: 0,
+        status: `failed`,
+        errorMessage: r,
+        retryable: i.retryable
+    } : e))
+}
+async function FC(e, t, n, {
+    intl: r,
+    toaster: i,
+    refreshDirectory: a,
+    setPendingUploads: o,
+    selectionMethod: s,
+    uploadOrder: c,
+    onUploadFinished: l
+}, {
+    appendPendingUpload: u
+}) {
+    let d = 0,
+        f = !1,
+        p = Bs(n) && !ya(n),
+        m = !1,
+        h = e => !m && d < RC && CC(e),
+        g = (e, i) => {
+            h(i) || (f = !0, !p && !ge(n) && yC({
+                error: i,
+                file: e
+            }), PC(o, t, e, m ? SC(r, e, i) : bC(r, e, i), {
+                retryable: xC(i)
+            }))
+        },
+        _ = {
+            ...NC(n, s),
+            onUploadError: g,
+            suppressDefaultErrorToast: !0
+        },
+        v = {
+            kind: U.MyFiles
+        },
+        y = {
+            tempId: t,
+            name: e.name,
+            directoryId: n,
+            progress: 0,
+            status: `uploading`,
+            file: e,
+            uploadOrder: c
+        };
+    o(r => {
+        if (u) return [...r, y];
+        let i = !1,
+            a = r.map(r => r.tempId === t ? (i = !0, {
+                ...r,
+                tempId: t,
+                name: e.name,
+                directoryId: n,
+                progress: 0,
+                status: `uploading`,
+                file: e,
+                uploadOrder: c
+            }) : r);
+        return i ? a : [...r, y]
+    });
+    let b = () => {
+            o(e => e.filter(e => e.tempId !== t))
+        },
+        x = () => {
+            o(n => n.map(n => n.tempId === t ? {
+                ...n,
+                name: e.name,
+                progress: 0,
+                status: `uploading`,
+                file: e,
+                errorMessage: void 0,
+                retryable: void 0
+            } : n))
+        },
+        S = () => new Promise((s, u) => {
+            let d = !1,
+                f = e => {
+                    d || (d = !0, e())
+                };
+            ep(t, e, r, i, v, {
+                onFileCreated: () => {},
+                onFileUploadProgress: (e, t) => {
+                    o(n => n.map(n => n.tempId === e ? {
+                        ...n,
+                        progress: t,
+                        status: `uploading`
+                    } : n))
+                },
+                onFileUploaded: (d, p, h, _) => {
+                    f(() => {
+                        (async () => {
+                            try {
+                                let r;
+                                ya(n) ? await Qr({
+                                    parentDirectoryId: n,
+                                    fileId: p,
+                                    fileName: _?.libraryFileName ?? e.name,
+                                    mimeType: e.type || _?.mimeType || null
+                                }) : Bs(n) && (m = !0, r = await fi({
+                                    parentDirectoryId: n,
+                                    fileId: p,
+                                    fileName: _?.libraryFileName ?? e.name,
+                                    mimeType: e.type || _?.mimeType || null
+                                }, {
+                                    disableAutomaticRetry: !0
+                                }));
+                                let i = r?.name ?? _?.libraryFileName ?? e.name,
+                                    u = r?.id ?? _?.libraryFileId,
+                                    d = {
+                                        fileId: r?.id ?? p,
+                                        fileName: i,
+                                        ...u == null ? {} : {
+                                            libraryFileId: u
+                                        },
+                                        tempId: t
+                                    };
+                                o(e => e.map(e => e.tempId === t ? {
+                                    ...e,
+                                    name: i,
+                                    progress: 100,
+                                    status: `success`,
+                                    file: void 0,
+                                    errorMessage: void 0,
+                                    retryable: void 0
+                                } : e)), l?.(c, d), a(n).catch(() => void 0), s()
+                            } catch (t) {
+                                m ? (g(e, t), a(n).catch(() => void 0)) : (b(), i.danger(r.formatMessage(Z.uploadFileToDriveFailed), {
+                                    error: t
+                                })), u(t)
+                            }
+                        })()
+                    })
+                },
+                onError: () => {
+                    f(() => {
+                        let t = Error(`Failed to upload ${e.name}`);
+                        g(e, t), u(t)
+                    })
+                }
+            }, _).then(() => {
+                d || f(s)
+            }).catch(e => {
+                f(() => {
+                    u(e)
+                })
+            })
+        });
+    for (d = 0; d <= RC; d += 1) {
+        f = !1;
+        try {
+            await S();
+            return
+        } catch (t) {
+            if (h(t)) {
+                x();
+                continue
+            }
+            throw f || g(e, t), t instanceof Error ? t : Error(`Failed to upload ${e.name}`)
+        }
+    }
+}
+async function IC(e, t, n) {
+    if (uh(e.name)) {
+        let e = n.intl.formatMessage(Z.uploadFileHiddenName);
+        throw n.toaster.danger(e), Error(e)
+    }
+    let r = await F(e);
+    `failureReason` in r && i(r.failureReason, n.intl, n.toaster);
+    let a = r.file;
+    if (!a) throw Error(`Failed to normalize ${e.name}`);
+    await FC(a, yf(a), t, n, {
+        appendPendingUpload: !0
+    })
+}
+async function LC(e, t, {
+    batchId: n,
+    intl: r,
+    toaster: a,
+    refreshDirectory: o,
+    selectionMethod: s,
+    setPendingUploads: c,
+    onUploadFinished: l
+}) {
+    let u = jC(e, n, r),
+        d = [],
+        f = new Set,
+        p = {
+            succeededCount: 0,
+            failedCount: 0,
+            libraryFileIds: []
+        },
+        m = (e, t) => {
+            p.failedCount += 1, p.firstFailure ??= {
+                reason: e,
+                ...t == null ? {} : {
+                    error: t
+                }
+            }
+        },
+        h = (e, t) => {
+            t.libraryFileId?.trim() && f.add(t.libraryFileId), l?.(e, t)
+        };
+    for (let e of u) d.push({
+        tempId: e.tempId,
+        name: e.file.name,
+        directoryId: t,
+        progress: 0,
+        status: e.hiddenNameErrorMessage == null ? `queued` : `failed`,
+        file: e.file,
+        uploadOrder: e.uploadOrder,
+        ...e.hiddenNameErrorMessage == null ? {} : {
+            errorMessage: e.hiddenNameErrorMessage,
+            retryable: !1
+        }
+    });
+    c(e => [...e, ...d]);
+    for (let e of u) {
+        if (e.hiddenNameErrorMessage != null) {
+            m(`hidden_name`);
+            continue
+        }
+        let n = !1;
+        try {
+            let l = await F(e.file);
+            `failureReason` in l && i(l.failureReason, r, a);
+            let u = l.file;
+            if (!u) {
+                PC(c, e.tempId, e.file, r.formatMessage(Z.uploadFailed), {
+                    retryable: !1
+                }), m(`normalization_failed`);
+                continue
+            }
+            n = !0, await FC(u, e.tempId, t, {
+                intl: r,
+                toaster: a,
+                refreshDirectory: o,
+                selectionMethod: s,
+                setPendingUploads: c,
+                uploadOrder: e.uploadOrder,
+                onUploadFinished: h
+            }, {
+                appendPendingUpload: !1
+            }), p.succeededCount += 1
+        } catch (e) {
+            m(n ? `upload_failed` : `normalization_failed`, e)
+        }
+    }
+    return p.libraryFileIds = [...f], p
+}
+var RC, zC, BC = e((() => {
+    Rt(), Vf(), D(), Ka(), Bo(), lr(), Hr(), Vc(), fn(), AC(), MC(), ph(), RC = 2, zC = {
+        google_drive: `google_drive_library_upload`,
+        dropbox: `dropbox_library_upload`,
+        box: `box_library_upload`,
+        sharepoint: `sharepoint_library_upload`
+    }
+}));
+
+function VC() {
+    let e = null,
+        t = null,
+        n = () => {
+            t != null && (globalThis.clearTimeout(t), t = null)
+        },
+        r = () => {
+            n(), e = null
+        },
+        i = () => {
+            if (e == null) return;
+            let t = e;
+            r(), hf(t)
+        };
+    return {
+        dispose: i,
+        settleActiveDialogCancellation: i,
+        onFileDialogCancel() {
+            e != null && (n(), t = globalThis.setTimeout(i, XC))
+        },
+        onFileDialogOpen(t) {
+            i(), e = t, gf(t)
+        },
+        onFileInputCancel: i,
+        onFileInputChange: r,
+        onFilesSelected(e) {
+            e === `file_picker` && r()
+        }
+    }
+}
+
+function HC({
+    disabled: e,
+    analyticsSession: t,
+    destinationProvider: n,
+    uploadDialogLifecycle: r,
+    dropzoneAcceptProp: i,
+    intl: a,
+    maxFiles: o,
+    toaster: s
+}) {
+    return {
+        disabled: e,
+        noClick: !0,
+        noKeyboard: !0,
+        multiple: !0,
+        maxFiles: o,
+        maxSize: pa,
+        onFileDialogOpen: () => {
+            r.onFileDialogOpen({
+                analyticsSession: t,
+                destinationProvider: n
+            })
+        },
+        onFileDialogCancel: () => {
+            r.onFileDialogCancel()
+        },
+        onDrop: (e, i, a) => {
+            e.length + i.length !== 0 && (ZC.set(a, {
+                acceptedCount: e.length,
+                rejectedCount: i.length
+            }), r.onFilesSelected(Ra(a)), e.length === 0 && lp({
+                analyticsSession: t,
+                destinationProvider: n
+            }))
+        },
+        onDropRejected: (e, r) => {
+            op(e, a, s, We.Retrieval, ut());
+            let i = ZC.get(r);
+            i?.acceptedCount === 0 && i.rejectedCount > 0 && Ff({
+                analyticsSession: t,
+                destinationProvider: n,
+                succeededCount: 0,
+                failedCount: i.rejectedCount,
+                libraryFileIds: [],
+                failureReason: `file_rejected`
+            })
+        },
+        ...i
+    }
+}
+
+function UC(e, t, n, r, i) {
+    if (e.length > 0) {
+        let a = ZC.get(t)?.rejectedCount ?? 0,
+            o = i,
+            s = !1,
+            c = e => {
+                s || (o = e, s = !0, lp({
+                    analyticsSession: r,
+                    destinationProvider: o
+                }))
+            },
+            l = () => {
+                c(o)
+            };
+        n(e, Ra(t), c).then(e => {
+            l();
+            let t = e.firstFailure ?? (a > 0 ? {
+                reason: `file_rejected`
+            } : void 0);
+            Ff({
+                analyticsSession: r,
+                destinationProvider: o,
+                succeededCount: e.succeededCount,
+                failedCount: e.failedCount + a,
+                libraryFileIds: e.libraryFileIds,
+                error: t?.error,
+                failureReason: t?.reason
+            })
+        }).catch(t => {
+            throw l(), Ff({
+                analyticsSession: r,
+                destinationProvider: o,
+                succeededCount: 0,
+                failedCount: e.length + a,
+                libraryFileIds: [],
+                error: t,
+                failureReason: `unexpected_error`
+            }), t
+        })
+    }
+}
+async function WC(e, {
+    allocateBatchId: t,
+    getTargetDirectoryId: n,
+    onDestinationProviderResolved: r,
+    canUploadToSharedDirectory: i,
+    isLibraryStorageLimitUploadBlocked: a,
+    showLibraryStorageLimitBlockedUploadNotice: o,
+    ...s
+}) {
+    let c = n();
+    if (ns(c) && !Bs(c) || ge(c) && !i(c)) return {
+        succeededCount: 0,
+        failedCount: e.length,
+        libraryFileIds: [],
+        firstFailure: {
+            reason: `destination_unavailable`
+        }
+    };
+    if (!Bs(c) && !ge(c) && await a()) return o(), {
+        succeededCount: 0,
+        failedCount: e.length,
+        libraryFileIds: [],
+        firstFailure: {
+            reason: `storage_limit`
+        }
+    };
+    let l = n();
+    return ns(l) && !Bs(l) || ge(l) && !i(l) ? {
+        succeededCount: 0,
+        failedCount: e.length,
+        libraryFileIds: [],
+        firstFailure: {
+            reason: `destination_unavailable`
+        }
+    } : (r(sC(l, ns(l))), LC(e, l, {
+        ...s,
+        batchId: t()
+    }))
+}
+
+function GC(e, {
+    fileId: t,
+    fileName: n,
+    libraryFileId: r,
+    tempId: i
+}, a, o) {
+    a(t => VS(t, {
+        tempId: i,
+        name: n,
+        uploadOrder: e
+    })), o(n => {
+        let i = new Map(n);
+        return i.set(t, e), r != null && i.set(r, e), i
+    })
+}
+async function KC(e, t, {
+    removePendingUpload: n,
+    uploadBatchIdRef: r,
+    ...i
+}) {
+    if (e.status !== `failed` || e.file == null || !e.retryable) return;
+    n(e.tempId), r.current = Math.max(r.current, e.uploadOrder.batchId);
+    let a = [],
+        o = sC(e.directoryId, ns(e.directoryId));
+    try {
+        await IC(e.file, e.directoryId, {
+            ...i,
+            uploadOrder: e.uploadOrder,
+            onUploadFinished: (e, t) => {
+                i.onUploadFinished?.(e, t), t.libraryFileId?.trim() && a.push(t.libraryFileId)
+            }
+        }), Ff({
+            analyticsSession: t,
+            destinationProvider: o,
+            succeededCount: 1,
+            failedCount: 0,
+            libraryFileIds: a
+        })
+    } catch (e) {
+        Ff({
+            analyticsSession: t,
+            destinationProvider: o,
+            succeededCount: 0,
+            failedCount: 1,
+            libraryFileIds: [],
+            error: e,
+            failureReason: `upload_failed`
+        })
+    }
+}
+
+function qC(e, t, n) {
+    t(t => t.filter(t => t.tempId !== e)), n(t => t.filter(t => t.tempId !== e))
+}
+
+function JC(e, t) {
+    t([]), e(e => e.filter(({
+        status: e
+    }) => e !== `failed` && e !== `success`))
+}
+
+function YC({
+    disabled: e,
+    onUploadTapped: t,
+    open: n
+}) {
+    return () => {
+        e || (t(), n())
+    }
+}
+var XC, ZC, QC = e((() => {
+    dl(), tp(), Xe(), Wa(), np(), Bo(), hC(), fn(), BC(), GS(), mt(), XC = 2e3, ZC = new WeakMap
+}));
+
+function $C(e) {
+    "use forget";
+    let t = (0, rw.c)(4),
+        {
+            disabled: n,
+            onUpload: r
+        } = e,
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, iw.jsx)(X, {
+        ...Z.uploadFiles
+    }), t[0] = i) : i = t[0];
+    let a;
+    return t[1] !== n || t[2] !== r ? (a = (0, iw.jsx)(P, {
+        color: `primary`,
+        size: `medium`,
+        type: `button`,
+        disabled: n,
+        onClick: r,
+        children: i
+    }), t[1] = n, t[2] = r, t[3] = a) : a = t[3], a
+}
+
+function ew(e) {
+    "use forget";
+    let t = (0, rw.c)(3),
+        {
+            intl: n,
+            showStorageLimit: r
+        } = e,
+        i;
+    return t[0] !== n || t[1] !== r ? (i = r ? (0, iw.jsx)(iw.Fragment, {
+        children: wp(n)
+    }) : (0, iw.jsx)(X, {
+        ...Z.dragInstructions
+    }), t[0] = n, t[1] = r, t[2] = i) : i = t[2], i
+}
+
+function tw(e) {
+    "use forget";
+    let t = (0, rw.c)(3),
+        {
+            intl: n,
+            showStorageLimit: r
+        } = e,
+        i;
+    return t[0] !== n || t[1] !== r ? (i = r ? (0, iw.jsx)(iw.Fragment, {
+        children: Ep(n)
+    }) : (0, iw.jsx)(X, {
+        ...Z.dropPrompt
+    }), t[0] = n, t[1] = r, t[2] = i) : i = t[2], i
+}
+
+function nw(e) {
+    "use forget";
+    let t = (0, rw.c)(4),
+        {
+            showRecentFiles: n,
+            isSharedWithMe: r,
+            onUpload: i
+        } = e,
+        a;
+    return t[0] !== r || t[1] !== i || t[2] !== n ? (a = (0, iw.jsx)(`div`, {
+        "data-testid": `artifacts-surface-library-search-empty-state`,
+        children: n ? (0, iw.jsx)(`div`, {
+            className: `text-token-text-secondary px-6 py-14 text-center`,
+            children: (0, iw.jsx)(X, {
+                ...Z.noRecentFiles
+            })
+        }) : (0, iw.jsx)(`div`, {
+            className: `mt-6`,
+            children: (0, iw.jsx)(gx, {
+                hasSearchQuery: !0,
+                isSharedWithMe: r,
+                onNew: i
+            })
+        })
+    }), t[0] = r, t[1] = i, t[2] = n, t[3] = a) : a = t[3], a
+}
+var rw, iw, aw = e((() => {
+    rw = qn(), Ne(), Tp(), Ka(), xx(), Pn(), iw = wn()
+}));
+
+function ow(e, t, n, r, i, a) {
+    return async (o, s) => {
+        let c = Array.isArray(o),
+            l = Array.isArray(o) ? o : [o],
+            u = [];
+        for (let t of l) try {
+            let i = await mb({
+                artifact: t,
+                directoryId: e,
+                resolveFileReference: n,
+                downloadFile: r
+            });
+            i != null && u.push(i.completion.then(e => e ? t : null, e => (a(e), null)))
+        } catch (e) {
+            a(e)
+        }
+        let d = (await Promise.all(u)).filter(e => e != null);
+        if (d.length > 0) {
+            if (s !== !1)
+                for (let e of d) Qf(e) === `image` && _e.logStructuredEvent(`ChatgptImageDownload`, {});
+            s === !0 ? i(d, {
+                libraryOrigin: gi.CHATGPT_FILE_LIBRARY_ORIGIN_FILE_PREVIEW,
+                analyticsSession: t
+            }, c) : s ?? i(d, void 0, c)
+        }
+    }
+}
+var sw = e((() => {
+    rp(), hb(), cn(), Id()
+}));
+
+function cw(e, t, n) {
+    return {
+        artifacts: e.artifactIds.flatMap(e => {
+            let n = t.find(t => t.id === e);
+            return n == null ? [] : [n]
+        }),
+        directories: e.directoryIds.flatMap(e => {
+            let t = n.find(t => t.id === e);
+            return t == null ? [] : [t]
+        })
+    }
+}
+
+function lw({
+    currentDirectoryId: e,
+    currentDirectoryStateId: t,
+    currentPath: n,
+    hasCurrentDirectoryPath: r,
+    isGlobalFileMode: i,
+    items: a,
+    rootBreadcrumbLabel: o,
+    rootDirId: s
+}) {
+    let c = mw(a, e, r, i, s);
+    return {
+        state: {
+            ...a,
+            isResolvingRootDirectoryId: i && c != null,
+            rootDirectoryId: s,
+            selectedTargetDirectoryId: a.sourceDirectoryId,
+            destinationPath: rl({
+                currentDirectoryStateId: t,
+                currentPath: n,
+                rootBreadcrumbLabel: o,
+                rootDirId: s,
+                sourceDirectoryId: a.sourceDirectoryId
+            })
+        },
+        unresolvedSourceDirectoryId: c
+    }
+}
+
+function uw(e, t, n) {
+    return Object.fromEntries(e.map(e => [e.id, t && typeof e.classifiers.parent_directory_id == `string` ? e.classifiers.parent_directory_id : n]))
+}
+
+function dw(e, t) {
+    return e.artifactSourceDirectoryIds != null && Object.hasOwn(e.artifactSourceDirectoryIds, t) ? e.artifactSourceDirectoryIds[t] : e.sourceDirectoryId
+}
+
+function fw(e, t) {
+    return Object.fromEntries(Object.entries(e).map(([e, n]) => [e, ai(n, t)]))
+}
+
+function pw(e, t = null) {
+    return Object.values(e).find(e => e != null && !Zo(e)) ?? (t != null && !Zo(t) ? t : null)
+}
+
+function mw(e, t, n, r, i) {
+    return e.sourceDirectoryId != null && (e.sourceDirectoryId !== t || !n) ? e.sourceDirectoryId : r && i == null ? pw(e.artifactSourceDirectoryIds ?? {}) : null
+}
+
+function hw(e, t, n, r) {
+    return {
+        sourceDirectoryId: ai(dw(e, t), r),
+        targetDirectoryId: ai(n, r)
+    }
+}
+
+function gw({
+    currentDirectoryId: e,
+    currentDirectoryStateId: t,
+    currentPath: n,
+    initialState: r,
+    intl: i,
+    isGlobalFileMode: a,
+    resolvedDirectoryPath: o,
+    rootBreadcrumbLabel: s,
+    state: c
+}) {
+    if (c == null || c.artifactIds !== r.artifactIds || c.directoryIds !== r.directoryIds) return null;
+    let l = Uo(o),
+        u = !a || c.sourceDirectoryId != null,
+        d = c.sourceDirectoryId ?? e;
+    return {
+        ...c,
+        artifactSourceDirectoryIds: fw(c.artifactSourceDirectoryIds, l),
+        isResolvingRootDirectoryId: !1,
+        rootDirectoryId: l,
+        destinationPath: c === r ? rl({
+            currentDirectoryStateId: u ? Zn(d, o) : t,
+            currentPath: u ? Br({
+                currentDirectoryId: d,
+                directoryPath: o,
+                intl: i
+            }) : n,
+            rootBreadcrumbLabel: s,
+            rootDirId: l,
+            sourceDirectoryId: c.sourceDirectoryId
+        }) : c.destinationPath
+    }
+}
+
+function _w(e, t) {
+    return e == null || e.artifactIds !== t.artifactIds || e.directoryIds !== t.directoryIds ? null : {
+        ...e,
+        isResolvingRootDirectoryId: !1
+    }
+}
+async function vw({
+    currentDirectoryId: e,
+    currentDirectoryStateId: t,
+    currentPath: n,
+    getCurrentState: r,
+    initialState: i,
+    intl: a,
+    isGlobalFileMode: o,
+    queryClient: s,
+    rootBreadcrumbLabel: c,
+    sourceDirectoryId: l
+}) {
+    try {
+        return gw({
+            currentDirectoryId: e,
+            currentDirectoryStateId: t,
+            currentPath: n,
+            initialState: i,
+            intl: a,
+            isGlobalFileMode: o,
+            resolvedDirectoryPath: await s.ensureQueryData({
+                queryKey: Yh(l),
+                queryFn: () => dc(l),
+                staleTime: 3e4
+            }),
+            rootBreadcrumbLabel: c,
+            state: r()
+        })
+    } catch {
+        return _w(r(), i)
+    }
+}
+async function yw(e, t, n) {
+    let r = e.rootDirectoryId ?? t,
+        i = ai(e.sourceDirectoryId, r),
+        a = ai(e.selectedTargetDirectoryId, r),
+        o = pw(e.artifactSourceDirectoryIds, e.sourceDirectoryId);
+    if (a == null && r == null && o != null) try {
+        r = Uo(await n.ensureQueryData({
+            queryKey: Yh(o),
+            queryFn: () => dc(o),
+            staleTime: 3e4
+        })), i = ai(e.sourceDirectoryId, r), a = ai(e.selectedTargetDirectoryId, r)
+    } catch {}
+    let s = fw(e.artifactSourceDirectoryIds, r);
+    return {
+        artifactSourceDirectoryIds: s,
+        hasItemsToMove: e.artifactIds.some(e => dw({
+            artifactSourceDirectoryIds: s,
+            sourceDirectoryId: i
+        }, e) !== a) || e.directoryIds.length > 0 && i !== a,
+        rootDirectoryId: r,
+        sourceDirectoryId: i,
+        targetDirectoryId: a
+    }
+}
+var bw = e((() => {
+    qh(), Bo(), _r(), Vc()
+}));
+
+function xw(e, t) {
+    if (t.length === 1) return e[t[0]] ?? Em;
+    let n = new Set;
+    for (let r of t) e[r]?.forEach(e => {
+        n.add(e)
+    });
+    return n.size === 0 ? Em : n
+}
+
+function Sw(e, t) {
+    return Object.entries(e).filter(([, e]) => e?.has(t) === !0).map(([e]) => e === Ki(null) ? null : e)
+}
+
+function Cw(e, t, n) {
+    let r = e,
+        i = !1;
+    return Object.entries(r).forEach(([e, t]) => {
+        if (t == null || !t.has(n)) return;
+        i ||= (r = {
+            ...r
+        }, !0);
+        let a = new Set(t);
+        if (a.delete(n), a.size === 0) {
+            delete r[e];
+            return
+        }
+        r[e] = a
+    }), t.forEach(e => {
+        let t = r[e] ?? Em;
+        t.has(n) || (i ||= (r = {
+            ...r
+        }, !0), r[e] = new Set(t).add(n))
+    }), i ? r : e
+}
+
+function ww(e, t) {
+    return {
+        sourceDirectoryId: ai(e.sourceDirectoryId, t),
+        targetDirectoryId: ai(e.selectedTargetDirectoryId, t)
+    }
+}
+
+function Tw(e) {
+    return e.destinationPath.some(t => t.id != null && e.directoryIds.includes(t.id))
+}
+
+function Ew(e, t) {
+    if (e.isResolvingRootDirectoryId) return !0;
+    let {
+        sourceDirectoryId: n,
+        targetDirectoryId: r
+    } = ww(e, t), i = [...e.artifactIds.map(t => dw(e, t)), ...e.directoryIds.length > 0 ? [n] : []].map(e => ai(e, t));
+    return i.length > 0 && i.every(e => e === r) || !os({
+        directoryId: r,
+        allowGoogleDrive: To(e)
+    }) || Tw(e)
+}
+
+function Dw(e, t) {
+    return t == null || Zo(e) || ge(e) || t.directoryIds.includes(e) ? !1 : t.artifactIds.length > 0 || t.directoryIds.length > 0
+}
+
+function Ow({
+    rowId: e,
+    kind: t,
+    hasSelection: n,
+    checkedIds: r,
+    hasSelectedExternalItems: i,
+    selectedArtifacts: a,
+    selectedDirectories: o,
+    sourceDirectoryId: s
+}) {
+    if (Zo(e) || lc(e) || ge(e)) return null;
+    let c = n && r.has(e);
+    if (c && i) return null;
+    let l = c ? a.map(e => e.id) : t === `artifact` ? [e] : [],
+        u = c ? o.map(e => e.id) : t === `directory` ? [e] : [];
+    return l.length === 0 && u.length === 0 ? null : {
+        artifactIds: l,
+        directoryIds: u,
+        sourceDirectoryId: s
+    }
+}
+
+function kw(e, t, n) {
+    let r = (e[t] ?? 0) + n;
+    if (r <= 0) {
+        if (!(t in e)) return e;
+        let n = {
+            ...e
+        };
+        return delete n[t], n
+    }
+    return {
+        ...e,
+        [t]: r
+    }
+}
+var Aw = e((() => {
+    Tm(), bw(), Bo(), _r(), Vc(), fn()
+}));
+
+function jw(e, t, n) {
+    if (t === `upload`) {
+        let t = document.createElement(`input`);
+        t.type = `file`, t.multiple = !0, t.addEventListener(`change`, () => {
+            let r = Array.from(t.files ?? []);
+            r.length > 0 ? (n?.onFileInputChange?.(), e(`/library`, {
+                state: {
+                    [Fw]: {
+                        kind: `upload`,
+                        files: r
+                    }
+                }
+            })) : n?.onFileInputCancel?.()
+        }, {
+            once: !0
+        }), t.addEventListener(`cancel`, () => n?.onFileInputCancel?.(), {
+            once: !0
+        }), n?.onFileDialogOpen?.(), t.click();
+        return
+    }
+    e(`/library`, {
+        state: {
+            [Fw]: {
+                kind: t
+            }
+        }
+    })
+}
+async function Mw(e, t, n) {
+    let r = null;
+    switch (n) {
+        case `documents`:
+            r = `document`;
+            break;
+        case `spreadsheets`:
+            r = `spreadsheet`;
+            break;
+        case `presentations`:
+            r = `presentation`;
+            break;
+        case `site`:
+            Ba() && (r = `site`);
+            break
+    }
+    let {
+        createArtifactTemplateCreatorConversationOptions: i
+    } = await zn(async () => {
+        let {
+            createArtifactTemplateCreatorConversationOptions: e
+        } = await import(`./41426670-jx2oz51w0q601ja2.js`).then(e => (e.r(), e.c));
+        return {
+            createArtifactTemplateCreatorConversationOptions: e
+        }
+    }, __vite__mapDeps([18, 1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 12]));
+    vl(e, i(t, {
+        type: `create`,
+        templateKind: r
+    }))
+}
+
+function Nw(e) {
+    if (typeof e != `object` || !e) return null;
+    let t = Reflect.get(e, Fw);
+    if (typeof t != `object` || !t) return null;
+    let n = Reflect.get(t, `kind`);
+    if (n === `folder` || n === `note`) return {
+        kind: n
+    };
+    if (n !== `upload`) return null;
+    let r = Reflect.get(t, `files`);
+    return !Array.isArray(r) || !r.every(e => e instanceof File) ? null : {
+        kind: n,
+        files: r
+    }
+}
+
+function Pw(e, t) {
+    if (e == null || t.length === 0) return;
+    let n = new DataTransfer;
+    for (let e of t) n.items.add(e);
+    e.files = n.files, e.dispatchEvent(new Event(`change`, {
+        bubbles: !0
+    }))
+}
+var Fw, Iw = e((() => {
+        il(), si(), Wn(), Fw = `libraryNavigationAction`
+    })),
+    Lw, Rw = e((() => {
+        Ie(), Wn(), Lw = Oe(() => zn(() => import(`./450f35ed-oz7ajgbngafp4js6.js`).then(e => e.LibraryTemplatesContent), __vite__mapDeps([19, 1, 3, 5, 2, 4, 6, 7, 8, 9, 20, 21, 13, 12, 22, 23, 24, 25, 26, 27])))
+    }));
+
+function zw(e, t, n) {
+    let {
+        isSharedLibraryArtifact: r,
+        sharedLibraryFileId: i
+    } = lb(e, t);
+    return {
+        isSharedLibraryArtifact: r,
+        sharedLibraryFileId: i,
+        canDeleteArtifact: !n && !r && !$c(e) && !yl(e),
+        originalConversationUrl: r && i == null ? null : rs(e)
+    }
+}
+
+function Bw(e, {
+    sharedLibraryFileId: t,
+    libraryIAEnabled: n
+}) {
+    e.libraryFileId == null || t != null || $c(e) || !n || v.safePost(`/files/library/files/{library_file_id}/opened`, {
+        parameters: {
+            path: {
+                library_file_id: e.libraryFileId
+            }
+        },
+        skipJsonTransform: !0
+    }).catch(() => {})
+}
+
+function Vw(e) {
+    let t = null,
+        n = () => {
+            t?.abort(), t = null
+        },
+        r = (t, n) => {
+            e(e => {
+                if (e.has(t) === n) return e;
+                let r = new Set(e);
+                return n ? r.add(t) : r.delete(t), r
+            })
+        };
+    return {
+        begin: () => (n(), t = new AbortController, t.signal),
+        cancel: n,
+        getFileReference: (e, {
+            indexForRetrieval: t = !1
+        } = {}) => uo({
+            artifact: e,
+            indexForRetrieval: t,
+            setArtifactMaterializing: r
+        }),
+        setMaterializing: r
+    }
+}
+var Hw = e((() => {
+        Bo(), hb(), po(), vn()
+    })),
+    Uw, Ww, Gw, Kw = e((() => {
+        Uw = qn(), o(), Ww = wn(), Gw = e => {
+            "use forget";
+            let t = (0, Uw.c)(12),
+                n, r;
+            t[0] === e ? (n = t[1], r = t[2]) : ({
+                enabled: n,
+                ...r
+            } = e, t[0] = e, t[1] = n, t[2] = r);
+            let i = I(),
+                a = n && !i,
+                o;
+            t[3] === a ? o = t[4] : (o = a ? {
+                opacity: 0
+            } : !1, t[3] = a, t[4] = o);
+            let s;
+            t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (s = {
+                opacity: 1
+            }, t[5] = s) : s = t[5];
+            let c;
+            t[6] === a ? c = t[7] : (c = a ? {
+                duration: .2,
+                ease: `easeOut`
+            } : void 0, t[6] = a, t[7] = c);
+            let l;
+            return t[8] !== r || t[9] !== o || t[10] !== c ? (l = (0, Ww.jsx)(Ze.div, {
+                ...r,
+                initial: o,
+                animate: s,
+                transition: c
+            }), t[8] = r, t[9] = o, t[10] = c, t[11] = l) : l = t[11], l
+        }
+    })),
+    qw, Jw, Yw, Xw = e((() => {
+        qw = qn(), kp(), Ka(), Tm(), eS(), Pn(), Jw = wn(), Yw = e => {
+            "use forget";
+            let t = (0, qw.c)(44),
+                {
+                    allSelected: n,
+                    hasSelectableRows: r,
+                    isDeleted: i,
+                    isShared: a,
+                    showSharedBy: o,
+                    showSuggestedActivity: s,
+                    showSizeColumn: c,
+                    onSelectAllChange: l,
+                    onSort: u,
+                    showSelect: d,
+                    someSelected: f,
+                    sortDisabled: p,
+                    sortOverride: m,
+                    sortState: h
+                } = e,
+                g = o !== void 0 && o,
+                _ = s !== void 0 && s,
+                v = c === void 0 || c,
+                y = Yn(),
+                b = f && !n,
+                x;
+            t[0] !== g || t[1] !== v ? (x = Cm({
+                showSharedBy: g,
+                showSizeColumn: v
+            }), t[0] = g, t[1] = v, t[2] = x) : x = t[2];
+            let S;
+            t[3] !== n || t[4] !== b || t[5] !== r || t[6] !== y || t[7] !== l || t[8] !== d || t[9] !== f ? (S = r ? {
+                checked: n,
+                indeterminate: f && !n,
+                visible: d,
+                ariaLabel: y.formatMessage(b ? Z.clearSelection : Z.selectAll),
+                onChange: b ? () => l(!1) : l
+            } : void 0, t[3] = n, t[4] = b, t[5] = r, t[6] = y, t[7] = l, t[8] = d, t[9] = f, t[10] = S) : S = t[10];
+            let C = !p && m?.key === `name`,
+                w;
+            t[11] === u ? w = t[12] : (w = () => u(`name`), t[11] = u, t[12] = w);
+            let T;
+            t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, Jw.jsx)(X, {
+                ...Z.columnName
+            }), t[13] = T) : T = t[13];
+            let E;
+            t[14] !== p || t[15] !== h.direction || t[16] !== C || t[17] !== w ? (E = (0, Jw.jsx)(Dp, {
+                active: C,
+                direction: h.direction,
+                disabled: p,
+                onClick: w,
+                children: T
+            }), t[14] = p, t[15] = h.direction, t[16] = C, t[17] = w, t[18] = E) : E = t[18];
+            let D = !p && (m?.key === `lastModified` || g && m == null),
+                O;
+            t[19] === u ? O = t[20] : (O = () => u(`lastModified`), t[19] = u, t[20] = O);
+            let k;
+            t[21] !== i || t[22] !== a || t[23] !== _ ? (k = (0, Jw.jsx)(Yx, {
+                deleted: i,
+                shared: a,
+                showSuggestedActivity: _
+            }), t[21] = i, t[22] = a, t[23] = _, t[24] = k) : k = t[24];
+            let A;
+            t[25] !== p || t[26] !== h.direction || t[27] !== D || t[28] !== O || t[29] !== k ? (A = (0, Jw.jsx)(Dp, {
+                active: D,
+                direction: h.direction,
+                disabled: p,
+                onClick: O,
+                className: `hidden w-full justify-start text-start sm:flex`,
+                children: k
+            }), t[25] = p, t[26] = h.direction, t[27] = D, t[28] = O, t[29] = k, t[30] = A) : A = t[30];
+            let j;
+            t[31] !== u || t[32] !== g || t[33] !== v || t[34] !== p || t[35] !== m?.key || t[36] !== h.direction ? (j = g ? (0, Jw.jsx)(Ap, {
+                className: `hidden w-full text-start sm:block sm:ps-4`,
+                children: (0, Jw.jsx)(X, {
+                    ...Z.columnSharedBy
+                })
+            }) : v ? (0, Jw.jsx)(Dp, {
+                active: !p && m?.key === `size`,
+                direction: h.direction,
+                disabled: p,
+                onClick: () => u(`size`),
+                className: `hidden w-full justify-start sm:flex sm:ps-4`,
+                children: (0, Jw.jsx)(X, {
+                    ...Z.columnSize
+                })
+            }) : null, t[31] = u, t[32] = g, t[33] = v, t[34] = p, t[35] = m?.key, t[36] = h.direction, t[37] = j) : j = t[37];
+            let M;
+            return t[38] !== A || t[39] !== j || t[40] !== x || t[41] !== S || t[42] !== E ? (M = (0, Jw.jsxs)(Op, {
+                testId: `artifacts-surface-library-list-header`,
+                className: x,
+                selectAll: S,
+                children: [E, A, j]
+            }), t[38] = A, t[39] = j, t[40] = x, t[41] = S, t[42] = E, t[43] = M) : M = t[43], M
+        }
+    }));
+
+function Zw({
+    fileName: e,
+    optimisticDocumentId: t
+}) {
+    let n = new Date().toISOString();
+    return {
+        id: t,
+        title: e,
+        kind: `file`,
+        status: `available`,
+        createdAt: n,
+        updatedAt: n,
+        mimeType: `text/markdown`,
+        originalFileName: e,
+        source: {
+            type: `chat_upload`,
+            fileId: t
+        },
+        classifiers: {
+            domain: `recall`,
+            created_via: `file_upload`,
+            library_file_category: `text`,
+            library_artifact_type: `writing_block`
+        }
+    }
+}
+
+function Qw({
+    file: e,
+    fileName: t,
+    surface: n
+}) {
+    let r = e.record_creation_time ?? e.file_upload_time,
+        i = e.updated_at ?? e.file_processed_time ?? e.file_upload_time ?? r;
+    return {
+        id: n === `flat` ? e.file_id : e.id,
+        title: t,
+        kind: `file`,
+        status: Ii(e.state, e.library_artifact_type ?? `writing_block`),
+        createdAt: r,
+        updatedAt: i,
+        mimeType: e.mime_type ?? void 0,
+        sizeBytes: e.file_size_bytes ?? void 0,
+        originalFileName: t,
+        gizmoId: e.gizmo_id ?? void 0,
+        libraryFileId: e.id,
+        sharingEntryId: e.sharing_entry_id ?? void 0,
+        sharingCanManage: e.sharing_can_manage ?? void 0,
+        thumbnailUrl: e.thumbnail_url ?? void 0,
+        width: e.width ?? void 0,
+        height: e.height ?? void 0,
+        originationThreadId: e.origination_thread_id ?? void 0,
+        originationMessageId: e.origination_message_id ?? void 0,
+        source: {
+            type: `chat_upload`,
+            fileId: e.file_id
+        },
+        classifiers: {
+            domain: `recall`,
+            created_via: `file_upload`,
+            library_file_category: e.library_file_category ?? null,
+            library_artifact_type: e.library_artifact_type ?? `writing_block`,
+            parent_directory_id: e.directory_id ?? null
+        }
+    }
+}
+
+function $w({
+    equivalentDirectoryIds: e,
+    includeOptimisticNotes: t = !0,
+    notes: n,
+    serverArtifacts: r
+}) {
+    if (!t) return r;
+    let i = new Map(r.flatMap(e => e.libraryFileId == null ? [] : [
+            [e.libraryFileId, e]
+        ])),
+        a = n.filter(t => {
+            if (e != null && !e.includes(t.directoryId)) return !1;
+            let n = t.artifact.libraryFileId;
+            return n == null || i.get(n)?.title !== t.artifact.title
+        }),
+        o = new Set(a.flatMap(({
+            artifact: e
+        }) => {
+            let t = e.libraryFileId;
+            if (t == null) return [];
+            let n = i.get(t);
+            return n == null ? [] : [n.id]
+        }));
+    return [...a.map(({
+        artifact: e
+    }) => e), ...r.filter(e => !o.has(e.id))]
+}
+
+function eT({
+    notes$: e,
+    serverArtifacts: t
+}) {
+    let n = new Map(t.flatMap(e => e.libraryFileId == null ? [] : [
+        [e.libraryFileId, e]
+    ]));
+    e.set(e => {
+        let t = e.filter(({
+            artifact: e,
+            pending: t
+        }) => {
+            let r = e.libraryFileId;
+            return t || r == null || n.get(r)?.title !== e.title
+        });
+        return t.length === e.length ? e : t
+    })
+}
+
+function tT(e) {
+    "use forget";
+    let t = (0, iT.c)(19),
+        {
+            equivalentDirectoryIds: n,
+            includeOptimisticNotes: r,
+            serverArtifacts: i
+        } = e,
+        a = r === void 0 || r,
+        o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = [], t[0] = o) : o = t[0];
+    let s = dd(o),
+        c = K(s),
+        l;
+    t[1] === c ? l = t[2] : (l = new Set(c.flatMap(nT)), t[1] = c, t[2] = l);
+    let u = l,
+        d;
+    t[3] !== n || t[4] !== a || t[5] !== c || t[6] !== i ? (d = $w({
+        equivalentDirectoryIds: n,
+        includeOptimisticNotes: a,
+        notes: c,
+        serverArtifacts: i
+    }), t[3] = n, t[4] = a, t[5] = c, t[6] = i, t[7] = d) : d = t[7];
+    let f = d,
+        p;
+    t[8] !== s || t[9] !== i ? (p = () => {
+        eT({
+            notes$: s,
+            serverArtifacts: i
+        })
+    }, t[8] = s, t[9] = i, t[10] = p) : p = t[10];
+    let m;
+    t[11] !== c || t[12] !== s || t[13] !== i ? (m = [c, s, i], t[11] = c, t[12] = s, t[13] = i, t[14] = m) : m = t[14], (0, aT.useEffect)(p, m);
+    let h;
+    return t[15] !== s || t[16] !== u || t[17] !== f ? (h = {
+        notes$: s,
+        pendingArtifactIds: u,
+        visibleArtifacts: f
+    }, t[15] = s, t[16] = u, t[17] = f, t[18] = h) : h = t[18], h
+}
+
+function nT(e) {
+    let {
+        artifact: t,
+        pending: n
+    } = e;
+    return n ? [t.id] : []
+}
+
+function rT({
+    directoryId: e = null,
+    notes$: t,
+    surface: n
+}) {
+    function r(e) {
+        t.set(t => t.filter(t => t.optimisticDocumentId !== e))
+    }
+
+    function i(n) {
+        t.set(t => [...t.filter(e => e.optimisticDocumentId !== n.optimisticDocumentId), {
+            artifact: Zw(n),
+            directoryId: e,
+            optimisticDocumentId: n.optimisticDocumentId,
+            pending: !0
+        }])
+    }
+
+    function a({
+        file: r,
+        fileName: i,
+        optimisticDocumentId: a
+    }) {
+        i !== r.file_name && Aa({
+            libraryFileId: r.id,
+            fileName: i
+        }), t.set(t => [...t.filter(e => e.optimisticDocumentId !== a && e.artifact.libraryFileId !== r.id), {
+            artifact: Qw({
+                file: r,
+                fileName: i,
+                surface: n
+            }),
+            directoryId: e,
+            optimisticDocumentId: a,
+            pending: !1
+        }])
+    }
+
+    function o({
+        fileName: e,
+        libraryFileId: n,
+        optimisticDocumentId: r
+    }) {
+        n != null && Aa({
+            libraryFileId: n,
+            fileName: e
+        }), t.set(t => t.map(t => t.optimisticDocumentId === r && t.artifact.title !== e ? {
+            ...t,
+            artifact: {
+                ...t.artifact,
+                title: e,
+                originalFileName: e
+            }
+        } : t))
+    }
+
+    function s({
+        fileId: e,
+        fileName: r,
+        libraryFileId: i
+    }) {
+        Aa({
+            libraryFileId: i,
+            fileName: r
+        }), t.set(t => t.map(t => t.artifact.libraryFileId === i ? {
+            ...t,
+            artifact: {
+                ...t.artifact,
+                id: n === `flat` ? e : t.artifact.id,
+                title: r,
+                originalFileName: r,
+                source: {
+                    type: `chat_upload`,
+                    fileId: e
+                }
+            }
+        } : t))
+    }
+    return {
+        onCreateFailed: r,
+        onCreateStarted: i,
+        onCreated: a,
+        onNoteNameChanged: o,
+        onNoteSaved: s
+    }
+}
+var iT, aT, oT = e((() => {
+    iT = qn(), ia(), Cs(), W(), ud(), aT = t(Fn())
+}));
+
+function sT(e, t, n = !1) {
+    if (t.get(fT) !== `1` || !n && t.get(`account_id`)?.trim()) return null;
+    let r = t.get(Rh)?.trim(),
+        {
+            directoryId: i
+        } = Xa(e);
+    return r == null ? Xs(i) ? {
+        resourceId: i,
+        resourceKind: `folder`
+    } : null : Jc(r) && i == null && Zi(e) == null ? {
+        resourceId: r,
+        resourceKind: `file`
+    } : null
+}
+
+function cT(e) {
+    "use forget";
+    let t = (0, lT.c)(54),
+        n;
+    t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+    let {
+        onSharedFilePreviewPendingChange: r
+    } = n, i = Cn(), a = kn(), o = Yn(), s = On(), [c, l] = In(), u;
+    t[2] !== i.pathname || t[3] !== c ? (u = sT(i.pathname, c), t[2] = i.pathname, t[3] = c, t[4] = u) : u = t[4];
+    let d = u,
+        f = d?.resourceId ?? null,
+        p = d?.resourceKind ?? null,
+        m;
+    t[5] !== d || t[6] !== i.pathname || t[7] !== c ? (m = d != null || !!c.get(`account_id`)?.trim() && sT(i.pathname, c, !0) != null, t[5] = d, t[6] = i.pathname, t[7] = c, t[8] = m) : m = t[8];
+    let h = m,
+        g;
+    t[9] !== i.pathname || t[10] !== c ? (g = Zi(i.pathname) || c.get(`file_id`)?.trim() || null, t[9] = i.pathname, t[10] = c, t[11] = g) : g = t[11];
+    let _ = g,
+        v = K(on),
+        y;
+    t[12] === v ? y = t[13] : (y = No(v), t[12] = v, t[13] = y);
+    let b = y,
+        x;
+    t[14] !== v || t[15] !== _ || t[16] !== c ? (x = _ != null && !c.get(`account_id`)?.trim() && Rc(v), t[14] = v, t[15] = _, t[16] = c, t[17] = x) : x = t[17];
+    let S = x,
+        C = i.state?.libraryFilePreview,
+        w = (0, uT.useRef)(0),
+        [T, E] = (0, uT.useState)(null),
+        D = S && !h && (T?.libraryFileId !== _ || T?.locationKey !== i.key || T?.navigationScope !== i),
+        O = (0, uT.useRef)(null),
+        k = (0, uT.useRef)(null),
+        A = (0, uT.useRef)(i.key),
+        j = (0, uT.useRef)(i.pathname),
+        M = (0, uT.useRef)(c),
+        N = (0, uT.useRef)(null),
+        P = (0, uT.useRef)(void 0),
+        F = (0, uT.useRef)(null),
+        I, L;
+    t[18] !== i.key || t[19] !== i.pathname || t[20] !== c ? (I = () => {
+        A.current = i.key, j.current = i.pathname, M.current = c
+    }, L = [i.key, i.pathname, c], t[18] = i.key, t[19] = i.pathname, t[20] = c, t[21] = I, t[22] = L) : (I = t[21], L = t[22]), pe(I, L);
+    let R, z;
+    t[23] !== D || t[24] !== r ? (z = () => (r?.(D), () => {
+        r?.(!1)
+    }), R = [D, r], t[23] = D, t[24] = r, t[25] = R, t[26] = z) : (R = t[25], z = t[26]), pe(z, R);
+    let B, V;
+    t[27] !== C || t[28] !== i || t[29] !== a ? (B = () => {
+        if (C != null) {
+            P.current = C, a(i, {
+                replace: !0,
+                state: null
+            });
+            return
+        }
+        let e = P.current;
+        if (e == null) return;
+        P.current = void 0;
+        let t = qa({
+            mountedLibraryFileId: e.libraryFileId,
+            sourceMimeType: e.librarySourceMimeType
+        });
+        Nt(gs, {
+            ...e,
+            fullscreenShellEnabled: !0,
+            libraryProvider: t == null ? `native` : `google_drive`,
+            ...t == null ? {} : {
+                librarySourceFileName: e.fileName,
+                librarySourceMimeType: e.librarySourceMimeType,
+                librarySourceUrl: t,
+                mountedLibraryFileId: e.libraryFileId
+            },
+            libraryEntrypoint: `library_start_chat`
+        })
+    }, V = [C, i, a], t[27] = C, t[28] = i, t[29] = a, t[30] = B, t[31] = V) : (B = t[30], V = t[31]), (0, uT.useEffect)(B, V);
+    let H, U;
+    t[32] === Symbol.for(`react.memo_cache_sentinel`) ? (H = () => () => {
+        let e = N.current;
+        e != null && (N.current = null, ue(e))
+    }, U = [], t[32] = H, t[33] = U) : (H = t[32], U = t[33]), (0, uT.useEffect)(H, U);
+    let ee, W;
+    t[34] !== f || t[35] !== p || t[36] !== v || t[37] !== o || t[38] !== s || t[39] !== l || t[40] !== b ? (ee = () => {
+        if (f == null || p == null || !b) {
+            F.current = null;
+            return
+        }
+        let e = v?.normalizedAccountUserId;
+        if (v == null || e == null) return;
+        let t = f,
+            n = p,
+            r = `${v.id}:${e}:${n}:${t}`;
+        if (F.current === r) return;
+        let i = new AbortController,
+            a = () => {
+                let t = G();
+                return t?.id === v.id && t.normalizedAccountUserId === e
+            };
+        return Promise.all([s.fetchQuery(Wh(t, n)), s.fetchQuery(Bh({
+            accountId: v.id,
+            accountUserId: e,
+            libraryFileId: t,
+            resourceKind: n
+        }))]).then(async s => {
+            let [c, u] = s;
+            if (i.signal.aborted || !a()) return;
+            if (c.resource.resource_type !== `library_${n}` || c.resource.resource_id !== t || c.owner.principal_type !== `user` || c.owner.principal_id !== e || u.resource.resource_type !== `library_${n}` || u.resource.resource_id !== t || u.owner.principal.principal_type !== `user` || u.owner.principal.principal_id !== e || u.viewer.principal.principal_type !== `user` || u.viewer.principal.principal_id !== e || u.capabilities?.can_manage_access_requests !== !0) throw Error(`The current account does not own this Library item.`);
+            let d = n === `folder` ? await dc(t).then(e => {
+                let n = e.items.find(e => e.id === t);
+                if (n == null || !n.is_root && (n.name == null || n.name.trim() === ``)) throw Error(`The owned Library folder could not be found.`);
+                return {
+                    fileName: n.is_root ? o.formatMessage(Z.rootBreadcrumb) : n.name,
+                    libraryFileId: t,
+                    resourceKind: `folder`
+                }
+            }) : await Ih(t, i.signal).then(e => {
+                let {
+                    artifact: n,
+                    sharedLibraryFileId: r
+                } = e;
+                if (r != null || n.libraryFileId !== t) throw Error(`The owned Library file could not be found.`);
+                return {
+                    fileName: bs(n),
+                    libraryArtifactType: n.classifiers.library_artifact_type,
+                    libraryFileId: t,
+                    resourceKind: `file`
+                }
+            });
+            if (i.signal.aborted || !a()) return;
+            let f = sT(j.current, M.current);
+            if (f?.resourceId !== t || f.resourceKind !== n) return;
+            F.current = r;
+            let p = new URLSearchParams(M.current);
+            p.delete(fT), n === `file` && p.delete(Rh), l(p, {
+                replace: !0
+            }), No() && Nt(Mh, d)
+        }).catch(e => {
+            i.signal.aborted || !a() || (F.current = r, yn().danger(o.formatMessage(Z.openFileFailed), {
+                error: e
+            }))
+        }), () => {
+            i.abort()
+        }
+    }, W = [f, p, v, o, s, l, b], t[34] = f, t[35] = p, t[36] = v, t[37] = o, t[38] = s, t[39] = l, t[40] = b, t[41] = ee, t[42] = W) : (ee = t[41], W = t[42]), (0, uT.useEffect)(ee, W);
+    let te, re;
+    if (t[43] !== o || t[44] !== h || t[45] !== _ || t[46] !== S || t[47] !== i || t[48] !== a || t[49] !== l ? (te = () => {
+            if (h) {
+                let e = N.current;
+                e != null && (N.current = null, ue(e));
+                return
+            }
+            if (!S || _ == null) {
+                let e = N.current;
+                e != null && (N.current = null, ue(e)), O.current = null, k.current = null, w.current += 1;
+                return
+            }
+            if (O.current === _ && k.current === i.key) return;
+            let e = N.current;
+            e != null && (N.current = null, ue(e));
+            let t = new AbortController,
+                n = G(),
+                r = i.key,
+                s = i,
+                c = w.current,
+                u = () => {
+                    if (t.signal.aborted || A.current !== r || w.current !== c) return !1;
+                    let e = G();
+                    return e?.id !== n?.id || e?.normalizedAccountUserId !== n?.normalizedAccountUserId ? !1 : (Zi(j.current) || M.current.get(`file_id`)?.trim() || null) === _
+                };
+            return Ih(_, t.signal).then(async e => {
+                let {
+                    artifact: t,
+                    sharedLibraryFileId: n
+                } = e;
+                if (!u()) return;
+                let i = sr(t);
+                if (i == null) throw Error(`Library file ${_} has no backing file.`);
+                let o = n == null && cs(t) ? Ks : gs;
+                await o.prefetch(), u() && (O.current = _, k.current = r, Rp({
+                    artifact: t,
+                    fileId: i,
+                    fullscreenShellEnabled: !0,
+                    sharedLibraryFileId: n,
+                    showDelete: !1,
+                    onClose: () => {
+                        let e = window.history.state,
+                            t = typeof e?.key == `string` && e.key !== A.current,
+                            n = t ? window.location.pathname : j.current,
+                            r = t ? new URLSearchParams(window.location.search) : M.current,
+                            i = Zi(n) || r.get(`file_id`)?.trim();
+                        if (O.current !== _ || i !== _) return;
+                        N.current = null;
+                        let o = new URLSearchParams(r);
+                        if (o.delete(Rh), Zi(n) != null) {
+                            let {
+                                basePathname: e,
+                                directoryId: t
+                            } = Xa(n);
+                            a({
+                                pathname: ka(e, t),
+                                search: o.toString()
+                            }, {
+                                replace: !0
+                            });
+                            return
+                        }
+                        l(o, {
+                            replace: !0
+                        })
+                    }
+                }), N.current = o)
+            }).catch(e => {
+                if (!u()) return;
+                O.current = _, k.current = r;
+                let t = e instanceof oe && [403, 404].includes(e.status);
+                yn().danger(t ? ne(o, `permission_error`) : o.formatMessage(Z.openFileFailed), {
+                    error: e
+                })
+            }).finally(() => {
+                u() && E({
+                    libraryFileId: _,
+                    locationKey: r,
+                    navigationScope: s,
+                    scopeEpoch: c
+                })
+            }), () => {
+                t.abort()
+            }
+        }, re = [o, h, _, S, i, a, l], t[43] = o, t[44] = h, t[45] = _, t[46] = S, t[47] = i, t[48] = a, t[49] = l, t[50] = te, t[51] = re) : (te = t[50], re = t[51]), (0, uT.useEffect)(te, re), D) {
+        let e;
+        t[52] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, dT.jsx)(Ct, {
+            className: `icon-lg text-token-text-secondary`
+        }), t[52] = e) : e = t[52];
+        let n;
+        return t[53] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, dT.jsxs)(`div`, {
+            "aria-live": `polite`,
+            className: `bg-token-bg-primary absolute inset-0 z-20 flex flex-col items-center justify-center gap-3`,
+            role: `status`,
+            children: [e, (0, dT.jsx)(`span`, {
+                className: `text-token-text-secondary text-sm`,
+                children: (0, dT.jsx)(X, {
+                    id: `chatgpt.library.share.preview.loading.status`,
+                    defaultMessage: `Opening shared file…`
+                })
+            })]
+        }), t[53] = n) : n = t[53], n
+    }
+    return null
+}
+var lT, uT, dT, fT, pT = e((() => {
+    lT = qn(), n(), k(), Ir(), Ti(), Ka(), wc(), Bp(), jh(), zh(), vi(), Jo(), yc(), Ji(), Vc(), Lh(), xo(), ee(), ct(), fe(), s(), c(), z(), Kn(), uT = t(Fn()), Pn(), Nn(), dT = wn(), fT = `review_access_requests`
+}));
+
+function mT(e) {
+    let t = e.querySelector(`.${Ym.refreshedStickyHeaderContent}`);
+    if (t == null || typeof ResizeObserver > `u`) return;
+    let n = () => {
+            let n = t.querySelector(`.${Ym.refreshedTabListContent}`),
+                r = t.querySelector(`.${Ym.refreshedHeaderControls}`),
+                i = getComputedStyle(t);
+            if (n == null || r == null || i.display !== `grid`) {
+                e.removeAttribute(hT);
+                return
+            }
+            let a = getComputedStyle(r);
+            if (a.display !== `flex`) {
+                e.removeAttribute(hT);
+                return
+            }
+            let o = e => t.querySelector(`.${e}`)?.getBoundingClientRect().width ?? 0,
+                s = t.querySelector(`.${Ym.refreshedHeaderSearch}`),
+                c = [o(Ym.refreshedHeaderFilterTagsContent), o(Ym.refreshedHeaderViewControls), s == null ? 0 : parseFloat(getComputedStyle(s).flexBasis), o(Ym.refreshedHeaderActions)].filter(e => e > 0),
+                l = t.clientWidth - parseFloat(i.paddingLeft) - parseFloat(i.paddingRight),
+                u = c.reduce((e, t) => e + t, 0) + Math.max(0, c.length - 1) * (parseFloat(a.columnGap) || 0),
+                d = n.getBoundingClientRect().width + u + (parseFloat(i.columnGap) || 0);
+            e.toggleAttribute(hT, l > 0 && Math.ceil(d) <= Math.floor(l))
+        },
+        r = !1,
+        i = new ResizeObserver(() => {
+            r = !1, n()
+        }),
+        a = () => {
+            r || (r = !0, i.unobserve(t), i.observe(t))
+        },
+        o = new Set,
+        s = () => {
+            let e = new Set(t.querySelectorAll(`.${Ym.refreshedTabListContent}, .${Ym.refreshedHeaderControls}, .${Ym.refreshedHeaderFilterTagsContent}, .${Ym.refreshedHeaderViewControls}, .${Ym.refreshedHeaderSearch}, .${Ym.refreshedHeaderActions}`));
+            for (let t of o) e.has(t) || i.unobserve(t);
+            for (let t of e) o.has(t) || i.observe(t);
+            o = e, a()
+        },
+        c = new MutationObserver(s);
+    return c.observe(t, {
+        childList: !0,
+        characterData: !0,
+        subtree: !0
+    }), s(), () => {
+        i.disconnect(), c.disconnect(), e.removeAttribute(hT)
+    }
+}
+var hT, gT = e((() => {
+    Jm(), hT = `data-library-header-collapsible`
+}));
+
+function _T(e, t) {
+    return typeof e == `number` && Number.isFinite(e) && t - e < jT
+}
+
+function vT(e) {
+    let t = ce.getItem(NT[e]);
+    return typeof t == `number` && Number.isFinite(t) ? t : null
+}
+
+function yT() {
+    return {
+        full: vT(`full`),
+        almostFull: vT(`almostFull`)
+    }
+}
+
+function bT(e, t) {
+    ce.setItem(NT[e], t)
+}
+
+function xT(e) {
+    ce.removeItem(NT[e])
+}
+
+function ST(e) {
+    return So(e) ? `full` : hl(e) ? `almostFull` : null
+}
+
+function CT(e, t) {
+    let n = null;
+    for (let r of Object.values(e)) {
+        if (r == null) continue;
+        let e = jT - (t - r);
+        e <= 0 || (n = n == null ? e : Math.min(n, e))
+    }
+    return n
+}
+
+function wT() {
+    "use forget";
+    let e = (0, OT.c)(48),
+        t = kn(),
+        {
+            openSettings: n
+        } = Is(),
+        r = (0, kT.useRef)(null),
+        [i, a] = (0, kT.useState)(null),
+        [o, s] = (0, kT.useState)(null),
+        c = i != null && o != null,
+        l;
+    e[0] === c ? l = e[1] : (l = c && Fe(`2767344663`), e[0] = c, e[1] = l);
+    let u = l,
+        d;
+    e[2] === u ? d = e[3] : (d = u && Fe(`4231797315`), e[2] = u, e[3] = d);
+    let f = d,
+        p;
+    e[4] === f ? p = e[5] : (p = {
+        queryKey: zs,
+        queryFn: lo,
+        enabled: f,
+        staleTime: 0,
+        refetchOnMount: `always`
+    }, e[4] = f, e[5] = p);
+    let m = An(p),
+        h, g;
+    e[6] === Symbol.for(`react.memo_cache_sentinel`) ? (h = () => {
+        a(Date.now()), s(yT())
+    }, g = [], e[6] = h, e[7] = g) : (h = e[6], g = e[7]), (0, kT.useEffect)(h, g);
+    let _, v;
+    e[8] !== o || e[9] !== c || e[10] !== i ? (_ = () => {
+        if (!c || o == null || i == null) return;
+        let e = CT(o, i);
+        if (e == null) return;
+        let t = window.setTimeout(() => {
+            a(Date.now())
+        }, e);
+        return () => window.clearTimeout(t)
+    }, v = [o, c, i], e[8] = o, e[9] = c, e[10] = i, e[11] = _, e[12] = v) : (_ = e[11], v = e[12]), (0, kT.useEffect)(_, v);
+    let y;
+    e[13] === m.data ? y = e[14] : (y = m.data == null ? null : ST(m.data), e[13] = m.data, e[14] = y);
+    let b = y,
+        x = b == null || o == null ? null : o[b],
+        S;
+    e[15] !== b || e[16] !== x || e[17] !== i ? (S = b != null && i != null && _T(x, i), e[15] = b, e[16] = x, e[17] = i, e[18] = S) : S = e[18];
+    let C = f && c && !S && b != null,
+        w, T;
+    e[19] !== b || e[20] !== C || e[21] !== m.data ? (T = () => {
+        if (!C) {
+            r.current = null;
+            return
+        }
+        b == null || m.data == null || r.current === b || (r.current = b, gp({
+            surface: ef,
+            source: Rd,
+            usage: m.data
+        }))
+    }, w = [b, C, m.data], e[19] = b, e[20] = C, e[21] = m.data, e[22] = w, e[23] = T) : (w = e[22], T = e[23]), (0, kT.useEffect)(T, w);
+    let E;
+    e[24] !== o?.full || e[25] !== c || e[26] !== m.data ? (E = () => {
+        !c || o?.full == null || m.data == null || ST(m.data) !== `full` && (xT(`full`), s(TT))
+    }, e[24] = o?.full, e[25] = c, e[26] = m.data, e[27] = E) : E = e[27];
+    let D = o?.full,
+        O;
+    if (e[28] !== c || e[29] !== D || e[30] !== m.data ? (O = [D, c, m.data], e[28] = c, e[29] = D, e[30] = m.data, e[31] = O) : O = e[31], (0, kT.useEffect)(E, O), !C) return null;
+    let k;
+    e[32] === b ? k = e[33] : (k = () => {
+        let e = Date.now();
+        bT(b, e), a(e), s(t => ({
+            full: t?.full ?? null,
+            almostFull: t?.almostFull ?? null,
+            [b]: e
+        }))
+    }, e[32] = b, e[33] = k);
+    let A = k,
+        j;
+    e[34] === m.data ? j = e[35] : (j = ts(m.data) && St({
+        openModalLocation: MT
+    }), e[34] = m.data, e[35] = j);
+    let M = j,
+        N;
+    e[36] !== n || e[37] !== m.data ? (N = () => {
+        dp({
+            surface: ef,
+            source: Rd,
+            usage: m.data,
+            cta: er.CHATGPT_FILE_LIBRARY_STORAGE_CTA_MANAGE_STORAGE
+        }), wf({
+            surface: ef,
+            source: Rd,
+            usage: m.data
+        }), n(ot.Storage)
+    }, e[36] = n, e[37] = m.data, e[38] = N) : N = e[38];
+    let P;
+    e[39] !== t || e[40] !== M || e[41] !== m.data ? (P = M ? () => {
+        dp({
+            surface: ef,
+            source: Rd,
+            usage: m.data,
+            cta: er.CHATGPT_FILE_LIBRARY_STORAGE_CTA_UPGRADE,
+            openModalLocation: MT
+        }), Ho({
+            navigate: t,
+            checkoutOriginProvenance: {
+                checkoutOriginProductExperience: ga.CHAT,
+                checkoutOriginDeliverySurface: `web`
+            },
+            openModalLocation: MT
+        })
+    } : void 0, e[39] = t, e[40] = M, e[41] = m.data, e[42] = P) : P = e[42];
+    let F;
+    return e[43] !== b || e[44] !== A || e[45] !== N || e[46] !== P ? (F = (0, AT.jsx)(ET, {
+        state: b,
+        onDismiss: A,
+        onManage: N,
+        onUpgrade: P
+    }), e[43] = b, e[44] = A, e[45] = N, e[46] = P, e[47] = F) : F = e[47], F
+}
+
+function TT(e) {
+    return e == null || e.full == null ? e : {
+        ...e,
+        full: null
+    }
+}
+
+function ET(e) {
+    "use forget";
+    let t = (0, OT.c)(50),
+        {
+            className: n,
+            state: r,
+            onDismiss: i,
+            onManage: a,
+            onUpgrade: o
+        } = e,
+        s = r === void 0 ? `full` : r,
+        c = Yn(),
+        l;
+    t[0] === c ? l = t[1] : (l = c.formatMessage(PT.dismiss), t[0] = c, t[1] = l);
+    let u = l,
+        d = s === `full`,
+        f = d ? PT.title : PT.almostFullTitle,
+        p = d ? PT.desktopMessage : PT.desktopAlmostFullMessage,
+        m = d ? PT.description : PT.almostFullDescription;
+    o ?? (p = d ? PT.desktopManageOnlyMessage : PT.desktopAlmostFullManageOnlyMessage, m = d ? PT.manageOnlyDescription : PT.almostFullManageOnlyDescription);
+    let h;
+    t[2] === c ? h = t[3] : (h = c.formatMessage(PT.bannerLabel), t[2] = c, t[3] = h);
+    let g;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, AT.jsx)(He, {
+        "aria-hidden": `true`,
+        className: `icon text-token-text-primary shrink-0`
+    }), t[4] = g) : g = t[4];
+    let _;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = {
+        emphasis: DT
+    }, t[5] = _) : _ = t[5];
+    let v;
+    t[6] === p ? v = t[7] : (v = (0, AT.jsx)(`p`, {
+        className: `text-token-text-primary min-w-0 flex-1 truncate text-sm leading-5 font-normal`,
+        children: (0, AT.jsx)(X, {
+            ...p,
+            values: _
+        })
+    }), t[6] = p, t[7] = v);
+    let y;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, AT.jsx)(X, {
+        ...PT.manage
+    }), t[8] = y) : y = t[8];
+    let b;
+    t[9] === a ? b = t[10] : (b = (0, AT.jsx)(P, {
+        type: `button`,
+        color: `secondary`,
+        size: `medium`,
+        className: `rounded-full px-3`,
+        onClick: a,
+        children: y
+    }), t[9] = a, t[10] = b);
+    let x;
+    t[11] === o ? x = t[12] : (x = o && (0, AT.jsx)(P, {
+        type: `button`,
+        color: `custom`,
+        size: `medium`,
+        "data-no-hover-bg": !0,
+        className: `border-transparent bg-blue-400/[.09] text-blue-400 hover:bg-blue-400/[.09] active:bg-blue-400/[.09] dark:bg-blue-100/20 dark:text-blue-200 dark:hover:bg-blue-100/20 dark:active:bg-blue-100/20 rounded-full px-3`,
+        onClick: o,
+        children: (0, AT.jsx)(X, {
+            ...PT.upgrade
+        })
+    }), t[11] = o, t[12] = x);
+    let S;
+    t[13] !== u || t[14] !== i ? (S = (0, AT.jsx)(P, {
+        type: `button`,
+        color: `ghost`,
+        label: u,
+        icon: zu,
+        iconClassName: `icon`,
+        className: `size-8 min-h-8 rounded-full px-0`,
+        onClick: i
+    }), t[13] = u, t[14] = i, t[15] = S) : S = t[15];
+    let C;
+    t[16] !== S || t[17] !== b || t[18] !== x ? (C = (0, AT.jsxs)(`div`, {
+        className: `flex shrink-0 items-center gap-2`,
+        children: [b, x, S]
+    }), t[16] = S, t[17] = b, t[18] = x, t[19] = C) : C = t[19];
+    let w;
+    t[20] !== C || t[21] !== v ? (w = (0, AT.jsxs)(`div`, {
+        className: `border-token-border-light hidden min-h-13 items-center gap-2 border-b px-5 md:flex`,
+        children: [g, v, C]
+    }), t[20] = C, t[21] = v, t[22] = w) : w = t[22];
+    let T;
+    t[23] === f ? T = t[24] : (T = (0, AT.jsx)(`p`, {
+        className: `text-token-text-primary text-sm leading-5 font-medium`,
+        children: (0, AT.jsx)(X, {
+            ...f
+        })
+    }), t[23] = f, t[24] = T);
+    let E;
+    t[25] !== u || t[26] !== i ? (E = (0, AT.jsx)(P, {
+        type: `button`,
+        color: `ghost`,
+        label: u,
+        icon: zu,
+        iconClassName: `icon`,
+        className: `-me-1 -mt-1 size-8 min-h-8 shrink-0 rounded-full px-0`,
+        onClick: i
+    }), t[25] = u, t[26] = i, t[27] = E) : E = t[27];
+    let D;
+    t[28] !== T || t[29] !== E ? (D = (0, AT.jsxs)(`div`, {
+        className: `flex items-start justify-between gap-3`,
+        children: [T, E]
+    }), t[28] = T, t[29] = E, t[30] = D) : D = t[30];
+    let O;
+    t[31] === m ? O = t[32] : (O = (0, AT.jsx)(`p`, {
+        className: `text-token-text-primary mt-1 max-w-[32rem] text-sm leading-5 font-normal`,
+        children: (0, AT.jsx)(X, {
+            ...m
+        })
+    }), t[31] = m, t[32] = O);
+    let k = o ? `custom` : `secondary`,
+        A = o ? !0 : void 0,
+        j = o ? `${as} mt-3 rounded-full` : `mt-3 rounded-full`,
+        M = o ?? a,
+        N = o ? PT.upgrade : PT.manage,
+        F;
+    t[33] === N ? F = t[34] : (F = (0, AT.jsx)(X, {
+        ...N
+    }), t[33] = N, t[34] = F);
+    let I;
+    t[35] !== k || t[36] !== A || t[37] !== j || t[38] !== M || t[39] !== F ? (I = (0, AT.jsx)(P, {
+        type: `button`,
+        color: k,
+        size: `medium`,
+        fullWidth: !0,
+        "data-no-hover-bg": A,
+        className: j,
+        onClick: M,
+        children: F
+    }), t[35] = k, t[36] = A, t[37] = j, t[38] = M, t[39] = F, t[40] = I) : I = t[40];
+    let L;
+    t[41] !== D || t[42] !== O || t[43] !== I ? (L = (0, AT.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-primary mx-4 mt-4 mb-5 rounded-2xl border px-4 py-4 md:hidden`,
+        children: (0, AT.jsx)(`div`, {
+            className: `flex items-start gap-3`,
+            children: (0, AT.jsxs)(`div`, {
+                className: `min-w-0 flex-1`,
+                children: [D, O, I]
+            })
+        })
+    }), t[41] = D, t[42] = O, t[43] = I, t[44] = L) : L = t[44];
+    let R;
+    return t[45] !== n || t[46] !== w || t[47] !== L || t[48] !== h ? (R = (0, AT.jsxs)(`section`, {
+        "aria-label": h,
+        className: n,
+        "data-testid": `library-storage-limit-banner`,
+        children: [w, L]
+    }), t[45] = n, t[46] = w, t[47] = L, t[48] = h, t[49] = R) : R = t[49], R
+}
+
+function DT(e) {
+    return (0, AT.jsx)(`span`, {
+        className: `font-medium`,
+        children: e
+    })
+}
+var OT, kT, AT, jT, MT, NT, PT, FT = e((() => {
+        OT = qn(), kr(), Ne(), Nu(), Ft(), nl(), ye(), ol(), ic(), rp(), oc(), m(), A(), Qt(), Kn(), kT = t(Fn()), Pn(), Nn(), AT = wn(), jT = 10080 * 60 * 1e3, MT = H.LibraryStorageLimitBanner, NT = {
+            full: b.LibraryStorageFullBannerDismissedAt,
+            almostFull: b.LibraryStorageAlmostFullBannerDismissedAt
+        }, PT = Dn({
+            bannerLabel: {
+                id: `chatgpt.library.storage_limit_banner.region.label`,
+                defaultMessage: `Library storage warning`
+            },
+            desktopMessage: {
+                id: `chatgpt.library.storage_limit_banner.desktop.message`,
+                defaultMessage: `<emphasis>Your library is full.</emphasis> New files can't be added until you free up space or upgrade for more storage.`
+            },
+            desktopManageOnlyMessage: {
+                id: `chatgpt.library.storage_limit_banner.desktop.message.manage_only`,
+                defaultMessage: `<emphasis>Your library is full.</emphasis> Free up space to keep adding files.`
+            },
+            desktopAlmostFullMessage: {
+                id: `chatgpt.library.storage_limit_banner.desktop.almost_full.message`,
+                defaultMessage: `<emphasis>Your library is almost full.</emphasis> Manage your storage space or upgrade for more.`
+            },
+            desktopAlmostFullManageOnlyMessage: {
+                id: `chatgpt.library.storage_limit_banner.desktop.almost_full.message.manage_only`,
+                defaultMessage: `<emphasis>Your library is almost full.</emphasis> Manage your storage space.`
+            },
+            title: {
+                id: `chatgpt.library.storage_limit_banner.title`,
+                defaultMessage: `Your library is full`
+            },
+            almostFullTitle: {
+                id: `chatgpt.library.storage_limit_banner.almost_full.title`,
+                defaultMessage: `Your library is almost full`
+            },
+            description: {
+                id: `chatgpt.library.storage_limit_banner.description`,
+                defaultMessage: `New files can't be added until you free up space or upgrade for more storage.`
+            },
+            manageOnlyDescription: {
+                id: `chatgpt.library.storage_limit_banner.description.manage_only`,
+                defaultMessage: `New files can't be added until you free up space.`
+            },
+            almostFullDescription: {
+                id: `chatgpt.library.storage_limit_banner.almost_full.description`,
+                defaultMessage: `Manage your storage space or upgrade for more.`
+            },
+            almostFullManageOnlyDescription: {
+                id: `chatgpt.library.storage_limit_banner.almost_full.description.manage_only`,
+                defaultMessage: `Manage your storage space.`
+            },
+            manage: {
+                id: `chatgpt.library.storage_limit_banner.manage.button.label`,
+                defaultMessage: `Manage`
+            },
+            upgrade: {
+                id: `chatgpt.library.storage_limit_banner.upgrade.button.label`,
+                defaultMessage: `Upgrade`
+            },
+            dismiss: {
+                id: `chatgpt.library.storage_limit_banner.dismiss.button.label`,
+                defaultMessage: `Dismiss Library storage warning`
+            }
+        })
+    })),
+    IT, LT, RT, zT = e((() => {
+        IT = qn(), Ne(), ea(), Nu(), Ml(), kg(), o(), LT = wn(), RT = e => {
+            "use forget";
+            let t = (0, IT.c)(24),
+                {
+                    selectedCountLabel: n,
+                    children: r,
+                    overflowActions: i,
+                    overflowLabel: a,
+                    clearSelectionLabel: o,
+                    onClearSelection: s,
+                    testId: c
+                } = e,
+                l = I(),
+                u;
+            t[0] === l ? u = t[1] : (u = !l && {
+                opacity: 0,
+                x: `-50%`,
+                y: 8,
+                scale: .98
+            }, t[0] = l, t[1] = u);
+            let d;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (d = {
+                opacity: 1,
+                x: `-50%`,
+                y: 0,
+                scale: 1
+            }, t[2] = d) : d = t[2];
+            let f, p;
+            t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (f = {
+                duration: .18,
+                ease: [.2, .8, .2, 1]
+            }, p = {
+                left: `50%`
+            }, t[3] = f, t[4] = p) : (f = t[3], p = t[4]);
+            let m;
+            t[5] === s ? m = t[6] : (m = e => {
+                e.key === `Escape` && !e.defaultPrevented && !e.nativeEvent.isComposing && (e.preventDefault(), s?.())
+            }, t[5] = s, t[6] = m);
+            let h;
+            t[7] === n ? h = t[8] : (h = (0, LT.jsx)(`div`, {
+                className: `min-w-[12ch] shrink-0 pe-1 text-sm tabular-nums`,
+                children: n
+            }), t[7] = n, t[8] = h);
+            let g;
+            t[9] !== i || t[10] !== a ? (g = i != null && a != null && (0, LT.jsxs)(yi.Root, {
+                children: [(0, LT.jsx)(yi.BasicTrigger, {
+                    asChild: !0,
+                    children: (0, LT.jsx)(P, {
+                        color: `ghost`,
+                        size: `medium`,
+                        type: `button`,
+                        label: a,
+                        className: `size-9 min-h-9 shrink-0 rounded-full bg-transparent p-0 data-[state=open]:bg-white/10`,
+                        children: (0, LT.jsx)(Lu, {
+                            className: `icon`,
+                            "aria-hidden": `true`
+                        })
+                    })
+                }), (0, LT.jsx)(yi.Portal, {
+                    children: (0, LT.jsx)(yi.Content, {
+                        side: `top`,
+                        sideOffset: 8,
+                        align: `end`,
+                        size: `small`,
+                        className: `dark bg-token-bg-primary w-44 min-w-44 rounded-xl p-1 shadow-xl`,
+                        children: (0, LT.jsx)(yi.Group, {
+                            children: i
+                        })
+                    })
+                })]
+            }), t[9] = i, t[10] = a, t[11] = g) : g = t[11];
+            let _;
+            t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = (0, LT.jsx)(zu, {
+                className: `icon`,
+                "aria-hidden": `true`
+            }), t[12] = _) : _ = t[12];
+            let v;
+            t[13] !== o || t[14] !== s ? (v = (0, LT.jsx)(P, {
+                color: `ghost`,
+                size: `medium`,
+                type: `button`,
+                label: o,
+                className: `size-9 min-h-9 shrink-0 rounded-full bg-transparent p-0`,
+                onClick: s,
+                children: _
+            }), t[13] = o, t[14] = s, t[15] = v) : v = t[15];
+            let y;
+            return t[16] !== r || t[17] !== u || t[18] !== m || t[19] !== h || t[20] !== g || t[21] !== v || t[22] !== c ? (y = (0, LT.jsx)(Ag, {
+                children: (0, LT.jsxs)(Ze.div, {
+                    "data-testid": c,
+                    initial: u,
+                    animate: d,
+                    transition: f,
+                    style: p,
+                    className: `dark bg-token-bg-primary text-token-text-primary fixed bottom-6 z-50 flex min-h-16 max-w-[calc(100vw-2rem)] origin-bottom items-center gap-3.5 overflow-x-auto rounded-full py-3.5 ps-7 pe-4 shadow-xl`,
+                    onKeyDown: m,
+                    children: [h, r, g, v]
+                })
+            }), t[16] = r, t[17] = u, t[18] = m, t[19] = h, t[20] = g, t[21] = v, t[22] = c, t[23] = y) : y = t[23], y
+        }
+    }));
+
+function BT(e, t, n, r) {
+    let i = t?.trim();
+    if (i != null && i.length > 0) return i;
+    if (!(n == null || r == null || r <= 0)) return n <= 0 ? e.formatMessage(qT.bulkStartChatAttachmentLimitTooltipNone) : n === 1 ? e.formatMessage(qT.bulkStartChatAttachmentLimitTooltipSingle, {
+        excessFileCount: r
+    }) : e.formatMessage(qT.bulkStartChatAttachmentLimitTooltipPlural, {
+        excessFileCount: r,
+        remainingFileUploads: n
+    })
+}
+
+function VT(e) {
+    "use forget";
+    let t = (0, WT.c)(114),
+        {
+            hasSelection: n,
+            tabs: r,
+            filterControl: i,
+            selectedCount: a,
+            maxStartChatFiles: o,
+            maxStartChatFolders: s,
+            viewMode: c,
+            onViewModeChange: l,
+            onStartChat: u,
+            onDownload: d,
+            onMove: f,
+            onRestore: p,
+            onDelete: m,
+            isBulkStartChatLoading: h,
+            bulkStartChatSelectionHint: g,
+            bulkStartChatDisabledByFolderLimit: _,
+            bulkStartChatDisabledByLimit: v,
+            bulkStartChatDisabledByUploadLimit: y,
+            bulkStartChatButtonDisabled: b,
+            bulkStartChatRateLimitTooltipLabel: x,
+            bulkStartChatRemainingFileUploads: S,
+            bulkStartChatExcessFileCount: C,
+            bulkDownloadDisabled: w,
+            bulkMoveDisabled: T,
+            bulkRestoreDisabled: E,
+            bulkDeleteDisabled: D,
+            bulkDeleteLabel: O,
+            showBulkStartChat: k,
+            showBulkDownload: A,
+            showBulkMove: j,
+            showBulkRestore: M,
+            showBulkDelete: N,
+            floatingSelection: F,
+            onClearSelection: I
+        } = e,
+        L = k === void 0 || k,
+        R = A === void 0 || A,
+        z = j !== void 0 && j,
+        B = M !== void 0 && M,
+        V = N === void 0 || N,
+        H = F !== void 0 && F,
+        U = Yn(),
+        [ee, W] = (0, GT.useState)(!1),
+        te;
+    t[0] !== U || t[1] !== a ? (te = U.formatMessage(qT.bulkSelectionCount, {
+        count: a
+    }), t[0] = U, t[1] = a, t[2] = te) : te = t[2];
+    let ne = te,
+        re = r != null && r !== !1 || i != null && i !== !1 || c != null,
+        ie;
+    t[3] === U ? ie = t[4] : (ie = U.formatMessage(qT.bulkStartChat), t[3] = U, t[4] = ie);
+    let ae = ie,
+        G;
+    t[5] !== g || t[6] !== U ? (G = g === `files-only` ? U.formatMessage(qT.bulkStartChatFilesOnlyTooltip) : void 0, t[5] = g, t[6] = U, t[7] = G) : G = t[7];
+    let K = G,
+        oe;
+    t[8] !== _ || t[9] !== v || t[10] !== y || t[11] !== C || t[12] !== x || t[13] !== S || t[14] !== U || t[15] !== o || t[16] !== s || t[17] !== K ? (oe = K ?? (v ? U.formatMessage(qT.bulkStartChatSelectionLimitTooltip, {
+        max: o
+    }) : _ ? U.formatMessage(qT.bulkStartChatFolderSelectionLimitTooltip, {
+        max: s
+    }) : y ? BT(U, x, S, C) : void 0), t[8] = _, t[9] = v, t[10] = y, t[11] = C, t[12] = x, t[13] = S, t[14] = U, t[15] = o, t[16] = s, t[17] = K, t[18] = oe) : oe = t[18];
+    let se = oe,
+        ce;
+    t[19] === U ? ce = t[20] : (ce = U.formatMessage(qT.bulkDownload), t[19] = U, t[20] = ce);
+    let le = ce,
+        ue;
+    t[21] === U ? ue = t[22] : (ue = U.formatMessage(qT.bulkMove), t[21] = U, t[22] = ue);
+    let de = ue,
+        fe;
+    t[23] === U ? fe = t[24] : (fe = U.formatMessage(qT.bulkRestore), t[23] = U, t[24] = fe);
+    let pe = fe,
+        me;
+    t[25] !== O || t[26] !== U ? (me = O ?? U.formatMessage(qT.bulkDelete), t[25] = O, t[26] = U, t[27] = me) : me = t[27];
+    let q = me,
+        he;
+    t[28] === L ? he = t[29] : (he = {
+        id: `chat`,
+        visible: L
+    }, t[28] = L, t[29] = he);
+    let ge;
+    t[30] === R ? ge = t[31] : (ge = {
+        id: `download`,
+        visible: R
+    }, t[30] = R, t[31] = ge);
+    let _e;
+    t[32] === B ? _e = t[33] : (_e = {
+        id: `restore`,
+        visible: B
+    }, t[32] = B, t[33] = _e);
+    let ve;
+    t[34] === V ? ve = t[35] : (ve = {
+        id: `delete`,
+        visible: V
+    }, t[34] = V, t[35] = ve);
+    let ye;
+    t[36] === z ? ye = t[37] : (ye = {
+        id: `move`,
+        visible: z
+    }, t[36] = z, t[37] = ye);
+    let be;
+    t[38] !== he || t[39] !== ge || t[40] !== _e || t[41] !== ve || t[42] !== ye ? (be = [he, ge, _e, ve, ye].filter(UT), t[38] = he, t[39] = ge, t[40] = _e, t[41] = ve, t[42] = ye, t[43] = be) : be = t[43];
+    let xe = be,
+        Se;
+    t[44] !== xe || t[45] !== H ? (Se = new Set((H ? xe.slice(0, 3) : xe).map(HT)), t[44] = xe, t[45] = H, t[46] = Se) : Se = t[46];
+    let Ce = Se,
+        we;
+    t[47] !== xe || t[48] !== H ? (we = H ? xe.slice(3) : [], t[47] = xe, t[48] = H, t[49] = we) : we = t[49];
+    let Te = we,
+        Ee;
+    if (t[50] !== D || t[51] !== w || t[52] !== T || t[53] !== E || t[54] !== b || t[55] !== q || t[56] !== le || t[57] !== H || t[58] !== n || t[59] !== Ce || t[60] !== h || t[61] !== ee || t[62] !== de || t[63] !== m || t[64] !== d || t[65] !== f || t[66] !== p || t[67] !== u || t[68] !== pe || t[69] !== se || t[70] !== ae || t[71] !== r) {
+        let e = J(`shrink-0 rounded-full text-subheadline-emphasized transition-colors`, H ? `h-9! min-h-9! px-3.5!` : `h-9 min-h-9 px-4`),
+            i = H ? `gap-1.5!` : `gap-1.5`,
+            a;
+        t[73] === i ? a = t[74] : (a = J(i), t[73] = i, t[74] = a);
+        let o = a;
+        Ee = n ? (0, KT.jsxs)(KT.Fragment, {
+            children: [Ce.has(`chat`) ? (0, KT.jsx)(Me, {
+                label: se ?? ae,
+                side: `top`,
+                triggerAs: null,
+                open: se != null && ee,
+                onOpenChange: e => {
+                    W(se != null && e)
+                },
+                children: (0, KT.jsxs)(P, {
+                    color: H ? `custom` : `primary`,
+                    size: `medium`,
+                    type: `button`,
+                    "aria-disabled": b,
+                    visuallyDisabled: b,
+                    contentWrapperClassName: o,
+                    className: J(e, H && `bg-white! text-[#1f1f1f]! hover:bg-gray-100!`, b && `cursor-default opacity-40`),
+                    onClick: e => {
+                        if (b) {
+                            e.preventDefault();
+                            return
+                        }
+                        u(e)
+                    },
+                    children: [h ? (0, KT.jsx)(Ct, {
+                        className: `text-token-text-inverted h-4 w-4`
+                    }) : (0, KT.jsx)(Pl, {
+                        className: `h-4 w-4`,
+                        "aria-hidden": !0
+                    }), ae]
+                })
+            }) : null, Ce.has(`download`) ? (0, KT.jsxs)(P, {
+                color: H ? `custom` : `secondary`,
+                size: `medium`,
+                type: `button`,
+                disabled: w,
+                contentWrapperClassName: o,
+                className: J(e, H && Ym.floatingSelectionSecondaryAction),
+                onClick: () => d(),
+                children: [(0, KT.jsx)(ku, {
+                    className: `h-4 w-4`,
+                    "aria-hidden": !0
+                }), le]
+            }) : null, Ce.has(`move`) ? (0, KT.jsxs)(P, {
+                color: H ? `custom` : `secondary`,
+                size: `medium`,
+                type: `button`,
+                disabled: T,
+                contentWrapperClassName: o,
+                className: J(e, H && Ym.floatingSelectionSecondaryAction),
+                onClick: () => {
+                    f?.()
+                },
+                children: [(0, KT.jsx)(Pu, {
+                    className: `h-4 w-4`,
+                    "aria-hidden": !0
+                }), de]
+            }) : null, Ce.has(`restore`) ? (0, KT.jsxs)(P, {
+                color: `secondary`,
+                size: `medium`,
+                type: `button`,
+                disabled: E,
+                contentWrapperClassName: o,
+                className: e,
+                onClick: () => {
+                    p?.()
+                },
+                children: [(0, KT.jsx)(tu, {
+                    className: `h-4 w-4`,
+                    "aria-hidden": !0
+                }), pe]
+            }) : null, Ce.has(`delete`) ? (0, KT.jsxs)(P, {
+                color: H ? `custom` : `danger-outline`,
+                size: `medium`,
+                type: `button`,
+                disabled: D,
+                contentWrapperClassName: o,
+                className: J(e, H && `border-token-interactive-border-danger-secondary-default text-token-interactive-label-danger-secondary-default border bg-transparent! hover:bg-red-500/15!`),
+                onClick: () => m(),
+                children: [(0, KT.jsx)(od, {
+                    className: `h-4 w-4`,
+                    "aria-hidden": !0
+                }), q]
+            }) : null]
+        }) : r, t[50] = D, t[51] = w, t[52] = T, t[53] = E, t[54] = b, t[55] = q, t[56] = le, t[57] = H, t[58] = n, t[59] = Ce, t[60] = h, t[61] = ee, t[62] = de, t[63] = m, t[64] = d, t[65] = f, t[66] = p, t[67] = u, t[68] = pe, t[69] = se, t[70] = ae, t[71] = r, t[72] = Ee
+    } else Ee = t[72];
+    let De = Ee,
+        Oe;
+    t[75] !== i || t[76] !== n || t[77] !== ne ? (Oe = n ? (0, KT.jsx)(`div`, {
+        "data-testid": `artifacts-surface-selected-count`,
+        className: `text-token-text-primary min-w-[12ch] text-[14px] leading-5 tabular-nums`,
+        children: ne
+    }) : i, t[75] = i, t[76] = n, t[77] = ne, t[78] = Oe) : Oe = t[78];
+    let ke = Oe;
+    if (n && H) {
+        let e;
+        t[79] !== i || t[80] !== l || t[81] !== re || t[82] !== r || t[83] !== c ? (e = re ? (0, KT.jsx)(Ua, {
+            testId: `artifacts-surface-top-controls`,
+            className: Ym.refreshedTabToolbar,
+            leadingContent: r,
+            trailingContent: i,
+            viewMode: c,
+            onViewModeChange: l
+        }) : null, t[79] = i, t[80] = l, t[81] = re, t[82] = r, t[83] = c, t[84] = e) : e = t[84];
+        let n;
+        t[85] === U ? n = t[86] : (n = U.formatMessage(qT.clearSelection), t[85] = U, t[86] = n);
+        let a;
+        t[87] === U ? a = t[88] : (a = U.formatMessage(qT.moreBulkActions), t[87] = U, t[88] = a);
+        let o;
+        t[89] !== D || t[90] !== T || t[91] !== q || t[92] !== de || t[93] !== m || t[94] !== f || t[95] !== Te ? (o = Te.length > 0 ? Te.map(e => {
+            let {
+                id: t
+            } = e, n = t === `delete` ? {
+                label: q,
+                disabled: D,
+                Icon: od,
+                onSelect: m
+            } : {
+                label: de,
+                disabled: T,
+                Icon: Pu,
+                onSelect: f
+            };
+            return (0, KT.jsx)(yi.Item, {
+                disabled: n.disabled,
+                icon: (0, KT.jsx)(n.Icon, {
+                    className: `icon`,
+                    "aria-hidden": `true`
+                }),
+                label: n.label,
+                onSelect: () => n.onSelect?.()
+            }, t)
+        }) : void 0, t[89] = D, t[90] = T, t[91] = q, t[92] = de, t[93] = m, t[94] = f, t[95] = Te, t[96] = o) : o = t[96];
+        let s;
+        t[97] !== I || t[98] !== De || t[99] !== ne || t[100] !== n || t[101] !== a || t[102] !== o ? (s = (0, KT.jsx)(RT, {
+            testId: `artifacts-surface-floating-selection-controls`,
+            selectedCountLabel: ne,
+            clearSelectionLabel: n,
+            onClearSelection: I,
+            overflowLabel: a,
+            overflowActions: o,
+            children: De
+        }), t[97] = I, t[98] = De, t[99] = ne, t[100] = n, t[101] = a, t[102] = o, t[103] = s) : s = t[103];
+        let u;
+        return t[104] !== e || t[105] !== s ? (u = (0, KT.jsxs)(KT.Fragment, {
+            children: [e, s]
+        }), t[104] = e, t[105] = s, t[106] = u) : u = t[106], u
+    }
+    if (H && !re) return null;
+    let Ae = H ? Ym.refreshedTabToolbar : void 0,
+        je = n ? `gap-2` : `gap-0`,
+        Ne;
+    return t[107] !== l || t[108] !== De || t[109] !== ke || t[110] !== Ae || t[111] !== je || t[112] !== c ? (Ne = (0, KT.jsx)(Ua, {
+        testId: `artifacts-surface-top-controls`,
+        className: Ae,
+        leadingContentClassName: je,
+        leadingContent: De,
+        trailingContent: ke,
+        viewMode: c,
+        onViewModeChange: l
+    }), t[107] = l, t[108] = De, t[109] = ke, t[110] = Ae, t[111] = je, t[112] = c, t[113] = Ne) : Ne = t[113], Ne
+}
+
+function HT(e) {
+    return e.id
+}
+
+function UT(e) {
+    return e.visible
+}
+var WT, GT, KT, qT, JT = e((() => {
+    WT = qn(), Ne(), ea(), nd(), Xu(), Eu(), ed(), Zl(), ze(), zT(), $i(), ee(), ke(), GT = t(Fn()), Pn(), Jm(), KT = wn(), qT = Dn({
+        bulkSelectionCount: {
+            id: `artifacts.surface.bulk.selected_count`,
+            defaultMessage: `{count, plural, one {# selected} other {# selected}}`
+        },
+        bulkStartChat: {
+            id: `artifacts.surface.bulk.start_chat`,
+            defaultMessage: `Start chat`
+        },
+        bulkStartChatFilesOnlyTooltip: {
+            id: `artifacts.surface.bulk.start_chat_selection_tooltip.files_only`,
+            defaultMessage: `Select files only to start a chat`
+        },
+        bulkStartChatSelectionLimitTooltip: {
+            id: `artifacts.surface.bulk.start_chat_selection_limit_tooltip`,
+            defaultMessage: `Select {max} or fewer files to start a chat`
+        },
+        bulkStartChatFolderSelectionLimitTooltip: {
+            id: `artifacts.surface.bulk.start_chat_folder_selection_limit_tooltip`,
+            defaultMessage: `Select {max} or fewer folders to start a chat`
+        },
+        bulkStartChatAttachmentLimitTooltipPlural: {
+            id: `artifacts.surface.bulk.start_chat_attachment_limit_tooltip_plural`,
+            defaultMessage: `You can chat with {remainingFileUploads} more file attachments today. Remove {excessFileCount} to continue.`
+        },
+        bulkStartChatAttachmentLimitTooltipSingle: {
+            id: `artifacts.surface.bulk.start_chat_attachment_limit_tooltip_single`,
+            defaultMessage: `You can chat with 1 more file attachment today. Remove {excessFileCount} to continue.`
+        },
+        bulkStartChatAttachmentLimitTooltipNone: {
+            id: `artifacts.surface.bulk.start_chat_attachment_limit_tooltip_none`,
+            defaultMessage: `You're out of file attachments. Remove all files to continue.`
+        },
+        bulkDownload: {
+            id: `artifacts.surface.bulk.download`,
+            defaultMessage: `Download`
+        },
+        bulkMove: {
+            id: `artifacts.surface.bulk.move`,
+            defaultMessage: `Move`
+        },
+        bulkRestore: {
+            id: `artifacts.surface.bulk.restore`,
+            defaultMessage: `Restore`
+        },
+        bulkDelete: {
+            id: `artifacts.surface.bulk.delete`,
+            defaultMessage: `Delete`
+        },
+        clearSelection: {
+            id: `artifacts.surface.bulk.clear_selection_button`,
+            defaultMessage: `Clear selection`
+        },
+        moreBulkActions: {
+            id: `artifacts.surface.bulk.more_actions`,
+            defaultMessage: `More bulk actions`
+        }
+    })
+}));
+
+function YT(e, t, n) {
+    let r = e.ownerDocument;
+    return t !== r.body && t !== r.documentElement && (!(t instanceof Node) || !e.contains(t)) ? !1 : t instanceof HTMLInputElement && t.id === n || !(t instanceof Element) || t.closest(oE) == null && (!(t instanceof HTMLElement) || !t.isContentEditable)
+}
+
+function XT(e) {
+    "use forget";
+    let t = (0, rE.c)(71),
+        {
+            rootProps: n,
+            beforeContent: r,
+            topBanner: i,
+            belowHeader: a,
+            input: o,
+            isDragActive: s,
+            dragInstructions: c,
+            dropPrompt: l,
+            header: u,
+            toolbar: d,
+            marqueeSelection: f,
+            onClearSelection: p,
+            pageView: m,
+            children: h,
+            viewMode: g,
+            onViewModeChange: _
+        } = e,
+        v = (0, iE.useRef)(null),
+        y, b, x;
+    t[0] === n ? (y = t[1], b = t[2], x = t[3]) : ({
+        className: b,
+        ref: x,
+        ...y
+    } = n, t[0] = n, t[1] = y, t[2] = b, t[3] = x);
+    let S = It(x, v),
+        C;
+    t[4] === m?.stickyHeader ? C = t[5] : (C = () => {
+        if (m?.stickyHeader && v.current != null) return mT(v.current)
+    }, t[4] = m?.stickyHeader, t[5] = C);
+    let w = m?.stickyHeader,
+        T;
+    t[6] === w ? T = t[7] : (T = [w], t[6] = w, t[7] = T), pe(C, T);
+    let E;
+    t[8] !== u.searchInput?.id || t[9] !== p ? (E = () => {
+        let e = v.current;
+        if (e == null || p == null) return;
+        let t = e.ownerDocument,
+            n = t => {
+                t.key !== `Escape` || t.defaultPrevented || t.isComposing || !YT(e, t.target, u.searchInput?.id) || (t.preventDefault(), p())
+            };
+        return t.addEventListener(`keydown`, n), () => t.removeEventListener(`keydown`, n)
+    }, t[8] = u.searchInput?.id, t[9] = p, t[10] = E) : E = t[10];
+    let D = u.searchInput?.id,
+        O;
+    t[11] !== p || t[12] !== D ? (O = [D, p], t[11] = p, t[12] = D, t[13] = O) : O = t[13], (0, iE.useEffect)(E, O);
+    let k = u.testId,
+        A = m?.stickyHeader ? Ym.refreshedHeaderContent : void 0,
+        j = u.title,
+        M = u.variant,
+        N = u.titlePrefix,
+        P = u.leadingActions,
+        F;
+    t[14] === u.searchInput ? F = t[15] : (F = u.searchInput == null ? void 0 : (0, aE.jsx)(gd, {
+        ...u.searchInput
+    }), t[14] = u.searchInput, t[15] = F);
+    let I = u.headerActions,
+        L = m?.stickyHeader && Ym.refreshedHeader,
+        R;
+    t[16] !== u.className || t[17] !== L ? (R = J(u.className, L), t[16] = u.className, t[17] = L, t[18] = R) : R = t[18];
+    let z;
+    t[19] !== u.classNames || t[20] !== m?.stickyHeader ? (z = m?.stickyHeader ? {
+        ...u.classNames,
+        controls: J(u.classNames?.controls, Ym.refreshedHeaderControls),
+        search: J(u.classNames?.search, Ym.refreshedHeaderSearch),
+        headerActions: J(u.classNames?.headerActions, Ym.refreshedHeaderActions)
+    } : u.classNames, t[19] = u.classNames, t[20] = m?.stickyHeader, t[21] = z) : z = t[21];
+    let B;
+    t[22] !== u.headerActions || t[23] !== u.leadingActions || t[24] !== u.title || t[25] !== u.titlePrefix || t[26] !== u.variant || t[27] !== F || t[28] !== R || t[29] !== z ? (B = (0, aE.jsx)(_d, {
+        title: j,
+        variant: M,
+        titlePrefix: N,
+        leadingActions: P,
+        searchInput: F,
+        headerActions: I,
+        className: R,
+        classNames: z
+    }), t[22] = u.headerActions, t[23] = u.leadingActions, t[24] = u.title, t[25] = u.titlePrefix, t[26] = u.variant, t[27] = F, t[28] = R, t[29] = z, t[30] = B) : B = t[30];
+    let V = !m?.stickyHeader && a,
+        H;
+    t[31] !== u.testId || t[32] !== B || t[33] !== V || t[34] !== A ? (H = (0, aE.jsxs)(`div`, {
+        "data-testid": k,
+        className: A,
+        children: [B, V]
+    }), t[31] = u.testId, t[32] = B, t[33] = V, t[34] = A, t[35] = H) : H = t[35];
+    let U = H,
+        ee = d != null && (!d.floatingSelection || d.tabs != null && d.tabs !== !1 || d.filterControl != null && d.filterControl !== !1 || d.viewMode != null),
+        W;
+    t[36] !== _ || t[37] !== d || t[38] !== g ? (W = d == null ? void 0 : (0, aE.jsx)(VT, {
+        hasSelection: d.hasSelection,
+        tabs: d.tabs,
+        filterControl: d.filterControl,
+        selectedCount: d.selectedCount,
+        maxStartChatFiles: d.maxStartChatFiles,
+        maxStartChatFolders: d.maxStartChatFolders,
+        viewMode: d.viewMode === void 0 ? g : d.viewMode,
+        onViewModeChange: _,
+        onStartChat: d.onStartChat,
+        onDownload: d.onDownload,
+        onMove: d.onMove,
+        onRestore: d.onRestore,
+        onDelete: d.onDelete,
+        isBulkStartChatLoading: d.isBulkStartChatLoading,
+        bulkStartChatSelectionHint: d.bulkStartChatSelectionHint,
+        bulkStartChatDisabledByFolderLimit: d.bulkStartChatDisabledByFolderLimit,
+        bulkStartChatDisabledByLimit: d.bulkStartChatDisabledByLimit,
+        bulkStartChatDisabledByUploadLimit: d.bulkStartChatDisabledByUploadLimit,
+        bulkStartChatButtonDisabled: d.bulkStartChatButtonDisabled,
+        bulkStartChatRateLimitTooltipLabel: d.bulkStartChatRateLimitTooltipLabel,
+        bulkStartChatRemainingFileUploads: d.bulkStartChatRemainingFileUploads,
+        bulkStartChatExcessFileCount: d.bulkStartChatExcessFileCount,
+        bulkDownloadDisabled: d.bulkDownloadDisabled,
+        bulkMoveDisabled: d.bulkMoveDisabled,
+        bulkRestoreDisabled: d.bulkRestoreDisabled,
+        bulkDeleteDisabled: d.bulkDeleteDisabled,
+        bulkDeleteLabel: d.bulkDeleteLabel,
+        showBulkStartChat: d.showBulkStartChat,
+        showBulkDownload: d.showBulkDownload,
+        showBulkMove: d.showBulkMove,
+        showBulkRestore: d.showBulkRestore,
+        showBulkDelete: d.showBulkDelete,
+        floatingSelection: d.floatingSelection,
+        onClearSelection: d.onClearSelection
+    }), t[36] = _, t[37] = d, t[38] = g, t[39] = W) : W = t[39];
+    let te = W,
+        ne;
+    t[40] !== ee || t[41] !== d || t[42] !== te ? (ne = d == null || !ee ? void 0 : (0, aE.jsx)(`div`, {
+        "data-testid": d.wrapperTestId,
+        className: J(`w-full`, d.wrapperClassName),
+        children: te
+    }), t[40] = ee, t[41] = d, t[42] = te, t[43] = ne) : ne = t[43];
+    let re = ne,
+        ie = d?.floatingSelection ? `wide-compact` : void 0,
+        ae = m?.stickyHeader && a,
+        G;
+    t[44] !== h || t[45] !== f || t[46] !== p || t[47] !== U || t[48] !== re || t[49] !== m || t[50] !== ie || t[51] !== ae ? (G = (0, aE.jsxs)(xm, {
+        ...m,
+        header: U,
+        toolbar: re,
+        layout: ie,
+        marqueeSelection: f,
+        onBackgroundDoubleClick: p,
+        children: [ae, h]
+    }), t[44] = h, t[45] = f, t[46] = p, t[47] = U, t[48] = re, t[49] = m, t[50] = ie, t[51] = ae, t[52] = G) : G = t[52];
+    let K = G,
+        oe = m?.stickyHeader && Ym.refreshedSurface,
+        se = f != null && `flex flex-col`,
+        ce;
+    t[53] !== b || t[54] !== oe || t[55] !== se ? (ce = J(b, oe, se), t[53] = b, t[54] = oe, t[55] = se, t[56] = ce) : ce = t[56];
+    let le;
+    t[57] !== c || t[58] !== l || t[59] !== s ? (le = s ? (0, aE.jsx)(Be, {
+        asChild: !0,
+        children: (0, aE.jsxs)(Ud, {
+            className: `fixed inset-0`,
+            inert: !0,
+            children: [(0, aE.jsx)(Xn, {}), (0, aE.jsx)(`h3`, {
+                children: c
+            }), (0, aE.jsx)(`h4`, {
+                className: `w-2/3 text-center`,
+                children: l
+            })]
+        })
+    }) : null, t[57] = c, t[58] = l, t[59] = s, t[60] = le) : le = t[60];
+    let ue = !ee && te,
+        de;
+    return t[61] !== r || t[62] !== o || t[63] !== K || t[64] !== y || t[65] !== S || t[66] !== ce || t[67] !== le || t[68] !== ue || t[69] !== i ? (de = (0, aE.jsxs)(`div`, {
+        ...y,
+        ref: S,
+        className: ce,
+        children: [r, o, le, i, K, ue]
+    }), t[61] = r, t[62] = o, t[63] = K, t[64] = y, t[65] = S, t[66] = ce, t[67] = le, t[68] = ue, t[69] = i, t[70] = de) : de = t[70], de
+}
+
+function ZT(e) {
+    "use forget";
+    let t = (0, rE.c)(10),
+        {
+            model: n,
+            viewMode: r,
+            onViewModeChange: i
+        } = e,
+        {
+            pathname: a,
+            search: o
+        } = Cn(),
+        s;
+    t[0] !== a || t[1] !== o ? (s = Xa(a).directoryId ?? new URLSearchParams(o).get(`directory_id`), t[0] = a, t[1] = o, t[2] = s) : s = t[2];
+    let c = s,
+        l;
+    t[3] === c ? l = t[4] : (l = [c], t[3] = c, t[4] = l), (0, iE.useEffect)(QT, l);
+    let u;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, aE.jsx)(wT, {}), t[5] = u) : u = t[5];
+    let d;
+    return t[6] !== n || t[7] !== i || t[8] !== r ? (d = (0, aE.jsx)(XT, {
+        ...n,
+        topBanner: u,
+        viewMode: r,
+        onViewModeChange: i
+    }), t[6] = n, t[7] = i, t[8] = r, t[9] = d) : d = t[9], d
+}
+
+function QT() {
+    let e = _o();
+    e != null && (e.scrollTop = 0)
+}
+
+function $T(e) {
+    return {
+        id: e.id,
+        name: e.name
+    }
+}
+
+function eE(e) {
+    return e.is_root
+}
+
+function tE(e) {
+    return !e.is_root
+}
+
+function nE() {
+    Dg.set(null)
+}
+var rE, iE, aE, oE, sE, cE = e((() => {
+    rE = qn(), Ne(), tp(), Bc(), Iu(), ru(), Eh(), Ka(), mx(), wg(), d_(), Tm(), qh(), gT(), Xc(), FT(), vi(), Or(), si(), Eg(), fd(), Sm(), Uc(), vt(), z(), hn(), Kn(), ke(), iE = t(Fn()), Pn(), Nn(), JT(), Jm(), aE = wn(), oE = `input:not([type='checkbox']):not([type='radio']), select, textarea, [contenteditable='true']`, sE = e => {
+        "use forget";
+        let t = (0, rE.c)(28),
+            {
+                currentDirectoryIdRef: n,
+                directoryPathItems: r,
+                goTo: i,
+                hasDesktopBreadcrumbs: a,
+                isDeleted: o,
+                isFavoritesTab: s,
+                isNewActionDisabled: c,
+                isUploadButtonDisabled: l,
+                onCreateFolder: u,
+                onCreateNote: d,
+                onCreateTemplate: f,
+                onUpload: p,
+                path: m,
+                searchParams: h,
+                settingsControl: g,
+                shouldCollapseBreadcrumbAncestors: _,
+                titleProvider: v,
+                showNewFolderAction: y,
+                showNewNoteAction: b,
+                isSharedFolder: x,
+                showSharedFolderUploadButton: S,
+                showSharedLibraryTitlePrefix: C,
+                title: w
+            } = e,
+            T = Yn(),
+            E = On(),
+            D = (0, iE.useContext)(u_),
+            O = x ? au : lu,
+            k, A;
+        return t[0] !== O || t[1] !== D || t[2] !== n || t[3] !== r || t[4] !== i || t[5] !== a || t[6] !== T || t[7] !== o || t[8] !== s || t[9] !== c || t[10] !== l || t[11] !== u || t[12] !== d || t[13] !== f || t[14] !== p || t[15] !== m || t[16] !== E || t[17] !== h || t[18] !== g || t[19] !== _ || t[20] !== y || t[21] !== b || t[22] !== S || t[23] !== C || t[24] !== w || t[25] !== v ? (k = () => {
+            let e = (e, t) => {
+                let r = t === void 0 ? h : t;
+                n.current = e;
+                let a = new URLSearchParams(r);
+                a.delete(qm), i(e, a)
+            };
+            return Dg.set({
+                onUpload: p,
+                title: w,
+                titlePrefix: v == null ? C ? (0, aE.jsx)(O, {
+                    "aria-hidden": `true`,
+                    className: `size-7 md:size-8`,
+                    "data-testid": `library-shared-directory-title-icon`
+                }) : void 0 : (0, aE.jsx)(Es, {
+                    provider: v,
+                    "aria-hidden": `true`,
+                    className: `size-7 md:size-8`,
+                    "data-testid": `library-${v.replace(`_`,`-`)}-title-icon`
+                }),
+                uploadDisabled: l,
+                showUploadButton: S,
+                rightContent: o || C ? void 0 : (0, aE.jsxs)(`div`, {
+                    className: `flex shrink-0 items-center gap-1`,
+                    "data-testid": `artifacts-surface-mobile-header-actions`,
+                    children: [f == null ? (0, aE.jsx)(nx, {
+                        analyticsSession: D ?? void 0,
+                        coordinateHeaderMenus: g != null,
+                        disabled: c,
+                        showNewFolderAction: y,
+                        showNewNoteAction: b,
+                        showUploadAction: !s,
+                        showNewProjectAction: !s && Fi(),
+                        showTemplateGalleryAction: to(),
+                        onUploadFiles: p,
+                        onCreateFolder: u,
+                        onCreateNote: d
+                    }) : (0, aE.jsx)(P, {
+                        color: `primary`,
+                        size: `medium`,
+                        type: `button`,
+                        onClick: f,
+                        children: (0, aE.jsx)(X, {
+                            ...Tg.createTemplate
+                        })
+                    }), g]
+                }),
+                desktopBreadcrumbs: a ? {
+                    items: m.map($T),
+                    shouldCollapseAncestors: _,
+                    activeIndex: m.length - 1,
+                    openParentFoldersLabel: T.formatMessage(Z.openParentFolders),
+                    separator: T.formatMessage(Z.breadcrumbSeparator),
+                    onSelect: (t, n) => {
+                        if (t == null) {
+                            let t = new URLSearchParams(h);
+                            o && t.delete(Ch), e(null, t);
+                            return
+                        }
+                        let i = r ?? [];
+                        if (i.length > 0) {
+                            let e = i.filter(eE),
+                                r = i.filter(tE).slice(0, n);
+                            Xh(E, t, [...e, ...r])
+                        }
+                        e(t)
+                    }
+                } : void 0
+            }), nE
+        }, A = [D, n, r, i, a, T, o, s, c, l, u, d, f, p, m, E, h, g, _, v, y, b, O, S, C, w], t[0] = O, t[1] = D, t[2] = n, t[3] = r, t[4] = i, t[5] = a, t[6] = T, t[7] = o, t[8] = s, t[9] = c, t[10] = l, t[11] = u, t[12] = d, t[13] = f, t[14] = p, t[15] = m, t[16] = E, t[17] = h, t[18] = g, t[19] = _, t[20] = y, t[21] = b, t[22] = S, t[23] = C, t[24] = w, t[25] = v, t[26] = k, t[27] = A) : (k = t[26], A = t[27]), (0, iE.useEffect)(k, A), null
+    }
+}));
+
+function lE(e) {
+    "use forget";
+    let t = (0, uE.c)(11),
+        n, r, i;
+    t[0] === e ? (n = t[1], r = t[2], i = t[3]) : ({
+        directoryId: i,
+        FolderedLibraryController: n,
+        ...r
+    } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i);
+    let a = hs(i),
+        o = K(on),
+        s = a != null && Rc(o),
+        c = {
+            accountId: o?.id ?? ``,
+            accountUserId: o?.normalizedAccountUserId ?? ``,
+            libraryFileId: a?.currentDirectoryId ?? ``,
+            resourceKind: `folder`
+        },
+        l = Bh(c),
+        u = s && c.accountId !== `` && c.accountUserId !== `` && c.libraryFileId !== ``,
+        d;
+    t[4] !== l || t[5] !== u ? (d = {
+        ...l,
+        enabled: u
+    }, t[4] = l, t[5] = u, t[6] = d) : d = t[6];
+    let f = An(d),
+        p = s && f.data?.viewer.principal.principal_type === `user` && f.data.viewer.principal.principal_id === c.accountUserId && Uh(f.data.viewer.role_id, `folder`) === `editor`,
+        m;
+    return t[7] !== n || t[8] !== p || t[9] !== r ? (m = (0, dE.jsx)(n, {
+        ...r,
+        canUploadIntoSharedFolder: p
+    }), t[7] = n, t[8] = p, t[9] = r, t[10] = m) : m = t[10], m
+}
+var uE, dE, fE = e((() => {
+    uE = qn(), zh(), Jo(), xo(), W(), fe(), Kn(), dE = wn()
+}));
+
+function pE(e) {
+    "use forget";
+    let t = (0, mE.c)(89),
+        {
+            tab: n,
+            onTabChange: r,
+            onProjectsTabClick: i,
+            showRefreshedLibraryTabs: a,
+            showProjectsTab: o,
+            showFavorites: s,
+            showTemplates: c,
+            showWidgetsInspector: l,
+            showAllResultsLabel: u
+        } = e,
+        d = a !== void 0 && a,
+        f = c !== void 0 && c,
+        p = u !== void 0 && u,
+        m = K(Ja),
+        h;
+    t[0] !== i || t[1] !== r || t[2] !== o || t[3] !== d || t[4] !== n ? (h = function(e) {
+        if ((d || o || n === `templates` || e === `templates`) && pc(e), e === `projects`) {
+            i();
+            return
+        }
+        r(e)
+    }, t[0] = i, t[1] = r, t[2] = o, t[3] = d, t[4] = n, t[5] = h) : h = t[5];
+    let g = h,
+        _;
+    t[6] !== g || t[7] !== f || t[8] !== n || t[9] !== m ? (_ = f && m ? (0, hE.jsx)($a, {
+        active: n === `templates`,
+        onClick: () => g(`templates`),
+        children: (0, hE.jsx)(X, {
+            ...Z.tabTemplates
+        })
+    }) : null, t[6] = g, t[7] = f, t[8] = n, t[9] = m, t[10] = _) : _ = t[10];
+    let v = _;
+    if (d) {
+        let e;
+        t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (e = J(`no-scrollbar`, Ym.refreshedTabList), t[11] = e) : e = t[11];
+        let r = n === `suggested`,
+            i;
+        t[12] === g ? i = t[13] : (i = () => g(`suggested`), t[12] = g, t[13] = i);
+        let a = p ? Z.tabAllResults : Z.tabSuggested,
+            o;
+        t[14] === a ? o = t[15] : (o = (0, hE.jsx)(X, {
+            ...a
+        }), t[14] = a, t[15] = o);
+        let c;
+        t[16] !== o || t[17] !== r || t[18] !== i ? (c = (0, hE.jsx)($a, {
+            active: r,
+            onClick: i,
+            children: o
+        }), t[16] = o, t[17] = r, t[18] = i, t[19] = c) : c = t[19];
+        let l;
+        t[20] !== g || t[21] !== s || t[22] !== n ? (l = s ? (0, hE.jsx)($a, {
+            active: n === `favorites`,
+            onClick: () => g(`favorites`),
+            children: (0, hE.jsx)(X, {
+                ...Z.tabRootFavorites
+            })
+        }) : null, t[20] = g, t[21] = s, t[22] = n, t[23] = l) : l = t[23];
+        let u = n === `folders`,
+            d;
+        t[24] === g ? d = t[25] : (d = () => g(`folders`), t[24] = g, t[25] = d);
+        let f;
+        t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, hE.jsx)(X, {
+            ...Z.tabFolders
+        }), t[26] = f) : f = t[26];
+        let m;
+        t[27] !== u || t[28] !== d ? (m = (0, hE.jsx)($a, {
+            active: u,
+            onClick: d,
+            children: f
+        }), t[27] = u, t[28] = d, t[29] = m) : m = t[29];
+        let h = n === `images`,
+            _;
+        t[30] === g ? _ = t[31] : (_ = () => g(`images`), t[30] = g, t[31] = _);
+        let y;
+        t[32] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, hE.jsx)(X, {
+            ...Z.tabImages
+        }), t[32] = y) : y = t[32];
+        let b;
+        t[33] !== h || t[34] !== _ ? (b = (0, hE.jsx)($a, {
+            active: h,
+            onClick: _,
+            children: y
+        }), t[33] = h, t[34] = _, t[35] = b) : b = t[35];
+        let x = n === `all`,
+            S;
+        t[36] === g ? S = t[37] : (S = () => g(`all`), t[36] = g, t[37] = S);
+        let C;
+        t[38] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, hE.jsx)(X, {
+            ...Z.tabAll
+        }), t[38] = C) : C = t[38];
+        let w;
+        t[39] !== x || t[40] !== S ? (w = (0, hE.jsx)($a, {
+            active: x,
+            onClick: S,
+            children: C
+        }), t[39] = x, t[40] = S, t[41] = w) : w = t[41];
+        let T;
+        t[42] === v ? T = t[43] : (T = v != null && (0, hE.jsxs)(hE.Fragment, {
+            children: [(0, hE.jsx)(`div`, {
+                "aria-hidden": `true`,
+                className: `bg-token-border-heavy mx-2 h-5 w-px shrink-0`
+            }), v]
+        }), t[42] = v, t[43] = T);
+        let E;
+        return t[44] !== c || t[45] !== l || t[46] !== m || t[47] !== b || t[48] !== w || t[49] !== T ? (E = (0, hE.jsx)(`div`, {
+            className: e,
+            children: (0, hE.jsxs)(`div`, {
+                className: Ym.refreshedTabListContent,
+                children: [c, l, m, b, w, T]
+            })
+        }), t[44] = c, t[45] = l, t[46] = m, t[47] = b, t[48] = w, t[49] = T, t[50] = E) : E = t[50], E
+    }
+    let y = n === `all`,
+        b;
+    t[51] === g ? b = t[52] : (b = () => g(`all`), t[51] = g, t[52] = b);
+    let x;
+    t[53] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, hE.jsx)(X, {
+        ...Z.tabAll
+    }), t[53] = x) : x = t[53];
+    let S;
+    t[54] !== y || t[55] !== b ? (S = (0, hE.jsx)($a, {
+        active: y,
+        onClick: b,
+        children: x
+    }), t[54] = y, t[55] = b, t[56] = S) : S = t[56];
+    let C;
+    t[57] !== g || t[58] !== s || t[59] !== n ? (C = s ? (0, hE.jsx)($a, {
+        active: n === `favorites`,
+        onClick: () => g(`favorites`),
+        children: (0, hE.jsx)(X, {
+            ...Z.tabFavorites
+        })
+    }) : null, t[57] = g, t[58] = s, t[59] = n, t[60] = C) : C = t[60];
+    let w;
+    t[61] !== g || t[62] !== o || t[63] !== n ? (w = o ? (0, hE.jsx)($a, {
+        active: n === `projects`,
+        onClick: () => g(`projects`),
+        children: (0, hE.jsx)(X, {
+            ...nt.projectsPageTitle
+        })
+    }) : null, t[61] = g, t[62] = o, t[63] = n, t[64] = w) : w = t[64];
+    let T = n === `images`,
+        E;
+    t[65] === g ? E = t[66] : (E = () => g(`images`), t[65] = g, t[66] = E);
+    let D;
+    t[67] === Symbol.for(`react.memo_cache_sentinel`) ? (D = (0, hE.jsx)(X, {
+        ...Z.tabImages
+    }), t[67] = D) : D = t[67];
+    let O;
+    t[68] !== T || t[69] !== E ? (O = (0, hE.jsx)($a, {
+        active: T,
+        onClick: E,
+        children: D
+    }), t[68] = T, t[69] = E, t[70] = O) : O = t[70];
+    let k = n === `files`,
+        A;
+    t[71] === g ? A = t[72] : (A = () => g(`files`), t[71] = g, t[72] = A);
+    let j;
+    t[73] === Symbol.for(`react.memo_cache_sentinel`) ? (j = (0, hE.jsx)(X, {
+        ...Z.tabFiles
+    }), t[73] = j) : j = t[73];
+    let M;
+    t[74] !== k || t[75] !== A ? (M = (0, hE.jsx)($a, {
+        active: k,
+        onClick: A,
+        children: j
+    }), t[74] = k, t[75] = A, t[76] = M) : M = t[76];
+    let N;
+    t[77] !== g || t[78] !== l || t[79] !== n ? (N = l ? (0, hE.jsx)($a, {
+        active: n === `widgets`,
+        onClick: () => g(`widgets`),
+        children: (0, hE.jsxs)(`span`, {
+            className: `flex items-center gap-1.5`,
+            children: [(0, hE.jsx)(X, {
+                ...Z.tabWidgets
+            }), (0, hE.jsx)(`span`, {
+                className: `bg-token-bg-secondary text-token-text-tertiary rounded-full px-1.5 py-0.5 text-[9px] font-semibold tracking-wide uppercase`,
+                children: (0, hE.jsx)(X, {
+                    ...Z.internalOnly
+                })
+            })]
+        })
+    }) : null, t[77] = g, t[78] = l, t[79] = n, t[80] = N) : N = t[80];
+    let P;
+    return t[81] !== C || t[82] !== w || t[83] !== O || t[84] !== M || t[85] !== N || t[86] !== S || t[87] !== v ? (P = (0, hE.jsxs)(hE.Fragment, {
+        children: [S, C, w, O, M, v, N]
+    }), t[81] = C, t[82] = w, t[83] = O, t[84] = M, t[85] = N, t[86] = S, t[87] = v, t[88] = P) : P = t[88], P
+}
+var mE, hE, gE = e((() => {
+    mE = qn(), $i(), Ot(), Ka(), mi(), si(), ct(), ke(), Pn(), Jm(), hE = wn()
+}));
+
+function _E() {
+    return !1
+}
+var vE, yE = e((() => {
+    mt(), Qt(), Ie(), Wn(), vE = Oe(() => zn(() => import(`./6882fade-nqoubtmyi0aciw8q.js`).then(e => e.WidgetsInspector), __vite__mapDeps([28, 1, 2, 3, 4, 5, 6, 7, 8, 9])))
+}));
+
+function bE() {
+    "use forget";
+    let e = (0, xE.c)(46),
+        t = Cn(),
+        n = kn(),
+        r = Yn(),
+        i = (0, SE.useContext)(u_),
+        a = (0, SE.useContext)(t_),
+        o = K(Lm),
+        s = i ?? void 0,
+        c;
+    e[0] !== a || e[1] !== s || e[2] !== o ? (c = fC(Pd, s, {
+        viewMode: o,
+        favoritesViewState: a
+    }), e[0] = a, e[1] = s, e[2] = o, e[3] = c) : c = e[3];
+    let l = c,
+        [u] = (0, SE.useState)(VC),
+        d, f;
+    e[4] === u ? (d = e[5], f = e[6]) : (d = () => () => u.dispose(), f = [u], e[4] = u, e[5] = d, e[6] = f), (0, SE.useEffect)(d, f);
+    let p;
+    e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (p = _E(), e[7] = p) : p = e[7];
+    let m = p,
+        h;
+    e[8] === Symbol.for(`react.memo_cache_sentinel`) ? (h = !1, e[8] = h) : h = e[8];
+    let g = h,
+        _;
+    e[9] !== l || e[10] !== t || e[11] !== n ? (_ = function(e) {
+        l.categoryChanged(e), n(nr(e === `all` ? `/library` : `/library?tab=${e}`, t))
+    }, e[9] = l, e[10] = t, e[11] = n, e[12] = _) : _ = e[12];
+    let v = _,
+        y;
+    e[13] !== l || e[14] !== i || e[15] !== n || e[16] !== u ? (y = function(e) {
+        if (e === `upload` && i != null) {
+            let t = mc.CHATGPT_FILE_LIBRARY_PROVIDER_LIBRARY;
+            u.settleActiveDialogCancellation(), l.uploadTapped(t), jw(n, e, {
+                onFileDialogOpen: () => {
+                    u.onFileDialogOpen({
+                        analyticsSession: i,
+                        destinationProvider: t
+                    })
+                },
+                onFileInputCancel: u.onFileInputCancel,
+                onFileInputChange: u.onFileInputChange
+            });
+            return
+        }
+        jw(n, e)
+    }, e[13] = l, e[14] = i, e[15] = n, e[16] = u, e[17] = y) : y = e[17];
+    let b = y,
+        x;
+    e[18] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, CE.jsx)(X, {
+        ...Z.pageTitle
+    }), e[18] = x) : x = e[18];
+    let S = vs(),
+        C, w, T;
+    e[19] === b ? (C = e[20], w = e[21], T = e[22]) : (C = () => b(`upload`), w = () => b(`folder`), T = () => b(`note`), e[19] = b, e[20] = C, e[21] = w, e[22] = T);
+    let E;
+    e[23] !== C || e[24] !== w || e[25] !== T || e[26] !== S ? (E = (0, CE.jsx)(nx, {
+        disabled: !1,
+        showNewFolderAction: !0,
+        showNewNoteAction: S,
+        showNewProjectAction: !0,
+        onUploadFiles: C,
+        onCreateFolder: w,
+        onCreateNote: T
+    }), e[23] = C, e[24] = w, e[25] = T, e[26] = S, e[27] = E) : E = e[27];
+    let D;
+    e[28] === r ? D = e[29] : (D = r.formatMessage(Z.search), e[28] = r, e[29] = D);
+    let O;
+    e[30] === r ? O = e[31] : (O = r.formatMessage(Z.clearSearch), e[30] = r, e[31] = O);
+    let k;
+    e[32] === r ? k = e[33] : (k = r.formatMessage(Z.search), e[32] = r, e[33] = k);
+    let A;
+    e[34] !== t || e[35] !== n ? (A = () => n(nr(pn, t)), e[34] = t, e[35] = n, e[36] = A) : A = e[36];
+    let j;
+    e[37] !== A || e[38] !== v ? (j = (0, CE.jsx)(`div`, {
+        className: `bg-surface-primary flex min-h-15 w-full flex-wrap items-center justify-between gap-4 py-2`,
+        children: (0, CE.jsx)(`div`, {
+            className: `relative min-w-0 flex-1 md:flex-initial`,
+            children: (0, CE.jsx)(`div`, {
+                className: `no-scrollbar flex min-w-0 flex-1 flex-nowrap items-center gap-0 overflow-x-auto md:flex-wrap md:overflow-visible`,
+                children: (0, CE.jsx)(pE, {
+                    tab: `projects`,
+                    onTabChange: v,
+                    onProjectsTabClick: A,
+                    showProjectsTab: !0,
+                    showTemplates: !0,
+                    showFavorites: g,
+                    showWidgetsInspector: m
+                })
+            })
+        })
+    }), e[37] = A, e[38] = v, e[39] = j) : j = e[39];
+    let M;
+    return e[40] !== E || e[41] !== D || e[42] !== O || e[43] !== k || e[44] !== j ? (M = (0, CE.jsx)(Mg, {
+        title: x,
+        headerActions: E,
+        searchLabel: D,
+        searchClearLabel: O,
+        searchPlaceholder: k,
+        useOuterScrollRoot: !0,
+        alignWithLibrarySelectionGutter: !0,
+        toolbar: j
+    }), e[40] = E, e[41] = D, e[42] = O, e[43] = k, e[44] = j, e[45] = M) : M = e[45], M
+}
+var xE, SE, CE, wE = e((() => {
+        xE = qn(), u(), jg(), n_(), d_(), rp(), Ka(), mx(), gE(), Iw(), QC(), hC(), Bm(), W(), Gc(), yE(), Ng(), ma(), Id(), SE = t(Fn()), Pn(), Nn(), CE = wn()
+    })),
+    TE, EE = e((() => {
+        Ie(), Wn(), TE = Oe(() => zn(() => import(`./c2b58743-hv0ihjy8uoae58om.js`).then(e => e.LibraryGoogleDriveOnboardingModal), __vite__mapDeps([29, 1, 2, 3, 4, 5, 6, 7, 8, 9, 30, 12, 13, 31])))
+    }));
+
+function DE(e) {
+    "use forget";
+    let t = (0, jE.c)(8),
+        {
+            FolderedLibraryController: n,
+            initialTab: r
+        } = e,
+        [i, a] = (0, ME.useState)(!1),
+        o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, NE.jsx)(cT, {
+        onSharedFilePreviewPendingChange: a
+    }), t[0] = o) : o = t[0];
+    let s = i || void 0,
+        c;
+    t[1] !== n || t[2] !== r ? (c = (0, NE.jsx)(OE, {
+        FolderedLibraryController: n,
+        initialTab: r
+    }), t[1] = n, t[2] = r, t[3] = c) : c = t[3];
+    let l;
+    return t[4] !== i || t[5] !== s || t[6] !== c ? (l = (0, NE.jsxs)(NE.Fragment, {
+        children: [o, (0, NE.jsx)(`div`, {
+            "aria-hidden": s,
+            className: `contents`,
+            "data-testid": `artifacts-surface-contents`,
+            inert: i,
+            children: c
+        })]
+    }), t[4] = i, t[5] = s, t[6] = c, t[7] = l) : l = t[7], l
+}
+
+function OE(e) {
+    "use forget";
+    let t = (0, jE.c)(56),
+        {
+            FolderedLibraryController: n,
+            initialTab: r
+        } = e,
+        i = On(),
+        a = K(Lm),
+        o = Cn(),
+        s = kn(),
+        [c] = In(),
+        l = K(Ja),
+        u = Js(o) ? FE : js(o) ? PE : null,
+        d = u != null,
+        f;
+    t[0] !== o || t[1] !== s || t[2] !== u ? (f = () => {
+        let e = window.history.state,
+            t = typeof e?.key == `string` && e.key !== o.key,
+            n = t ? window.location : o;
+        if (u == null || !u.isLocation(n)) return;
+        let r = new URLSearchParams(n.search);
+        r.delete(u.searchParam), r.delete(Jd), s({
+            search: r.toString(),
+            hash: n.hash
+        }, {
+            replace: !0,
+            state: t ? e.usr : o.state
+        })
+    }, t[0] = o, t[1] = s, t[2] = u, t[3] = f) : f = t[3];
+    let p = mn(f),
+        m, h, g;
+    t[4] !== o.pathname || t[5] !== c ? (m = Xa(o.pathname).directoryId ?? c.get(`directory_id`), h = m == null && c.get(`tab`)?.trim().toLowerCase() === `templates`, g = sC(m, Zo(m)), t[4] = o.pathname, t[5] = c, t[6] = m, t[7] = h, t[8] = g) : (m = t[6], h = t[7], g = t[8]);
+    let _ = g,
+        [v] = (0, ME.useState)(_),
+        y;
+    t[9] === c ? y = t[10] : (y = () => wd(c), t[9] = c, t[10] = y);
+    let [b] = (0, ME.useState)(y), [x] = (0, ME.useState)(AE), S;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (S = {}, t[11] = S) : S = t[11];
+    let C = (0, ME.useRef)(S),
+        w;
+    t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (w = em(), t[12] = w) : w = t[12];
+    let T = w,
+        E;
+    t[13] !== h || t[14] !== c ? (E = !h && T && Wr(c.get(`deleted`)), t[13] = h, t[14] = c, t[15] = E) : E = t[15];
+    let D = E,
+        O = D ? rf : Pd,
+        k;
+    t[16] !== x || t[17] !== O || t[18] !== _ || t[19] !== a ? (k = e => {
+        if (e === a && !ir()) return;
+        Hm.set(e);
+        let t = Lm();
+        t !== a && Af({
+            analyticsSession: x,
+            layout: t === `grid` ? bi.CHATGPT_FILE_LIBRARY_LAYOUT_GRID : bi.CHATGPT_FILE_LIBRARY_LAYOUT_LIST,
+            libraryOrigin: O,
+            provider: _
+        })
+    }, t[16] = x, t[17] = O, t[18] = _, t[19] = a, t[20] = k) : k = t[20];
+    let A = k,
+        j;
+    t[21] !== A || t[22] !== a ? (j = e => (0, NE.jsx)(ZT, {
+        model: e,
+        viewMode: a,
+        onViewModeChange: A
+    }), t[21] = A, t[22] = a, t[23] = j) : j = t[23];
+    let M = j,
+        N, P;
+    t[24] !== p || t[25] !== u || t[26] !== i ? (P = () => {
+        if (u == null) return;
+        let e = u.getRequest(),
+            t = V() ?? G();
+        if (e == null || e.accountId !== t?.id || !u.isEnabled()) {
+            e != null && u.consumeRequest(e), p();
+            return
+        }
+        let n = !1;
+        return u.fetchAvailability(i).then(t => {
+            if (n || !u.consumeRequest(e)) return;
+            let r = V() ?? G(),
+                i = u.isLocation(window.location);
+            i && p(), t && i && e.accountId === r?.id && u.isEnabled() && Nt(u.Modal, {
+                onboardingJourney: fr(`home_beacon`, u === FE ? `provider_picker` : `drive_only`, e)
+            })
+        }, kE), () => {
+            n = !0, u.isLocation(window.location) || u.consumeRequest(e)
+        }
+    }, N = [p, u, i], t[24] = p, t[25] = u, t[26] = i, t[27] = N, t[28] = P) : (N = t[27], P = t[28]), (0, ME.useEffect)(P, N);
+    let F, I;
+    t[29] !== d || t[30] !== o || t[31] !== s || t[32] !== c ? (F = () => {
+        d || !c.has(`entry_point`) || s(Zd(o), {
+            replace: !0,
+            state: o.state
+        })
+    }, I = [d, o, s, c], t[29] = d, t[30] = o, t[31] = s, t[32] = c, t[33] = F, t[34] = I) : (F = t[33], I = t[34]), (0, ME.useEffect)(F, I);
+    let L, R;
+    t[35] !== x || t[36] !== b || t[37] !== v || t[38] !== D || t[39] !== O ? (L = () => {
+        let e = {
+            analyticsSession: x,
+            libraryOrigin: O,
+            provider: D ? mc.CHATGPT_FILE_LIBRARY_PROVIDER_LIBRARY : v
+        };
+        xs({
+            disableExposureLog: !1
+        });
+        let t = Lm({
+                disableExposureLog: !1
+            }),
+            n = C.current,
+            r = n.isActive && n.current != null && n.lastEntryOperationId !== n.current.operationId;
+        return Hd({
+            ...e,
+            entryPoint: b,
+            ...r ? {
+                category: Sr.CHATGPT_FILE_LIBRARY_CATEGORY_FAVORITES,
+                operationId: n.current?.operationId
+            } : {},
+            layout: (n.isActive ? n.viewMode : t) === `grid` ? bi.CHATGPT_FILE_LIBRARY_LAYOUT_GRID : bi.CHATGPT_FILE_LIBRARY_LAYOUT_LIST
+        }), n.hasShown = !0, r && (n.lastEntryOperationId = n.current?.operationId), () => {
+            jf(e)
+        }
+    }, R = [x, b, v, C, D, O], t[35] = x, t[36] = b, t[37] = v, t[38] = D, t[39] = O, t[40] = L, t[41] = R) : (L = t[40], R = t[41]), (0, ME.useEffect)(L, R);
+    let z;
+    t[42] !== n || t[43] !== x || t[44] !== m || t[45] !== r || t[46] !== h || t[47] !== M || t[48] !== c || t[49] !== A || t[50] !== l || t[51] !== a ? (z = (0, NE.jsx)(t_.Provider, {
+        value: C,
+        children: h && !l ? (0, NE.jsx)(Bn, {
+            to: `/library`,
+            replace: !0
+        }) : Cr(c) ? (0, NE.jsx)(bE, {}) : (0, NE.jsx)(lE, {
+            FolderedLibraryController: n,
+            initialTab: r,
+            analyticsSession: x,
+            deletedFilesEnabled: T,
+            directoryId: m,
+            onViewModeChange: A,
+            viewMode: a,
+            children: M
+        })
+    }), t[42] = n, t[43] = x, t[44] = m, t[45] = r, t[46] = h, t[47] = M, t[48] = c, t[49] = A, t[50] = l, t[51] = a, t[52] = z) : z = t[52];
+    let B;
+    return t[53] !== x || t[54] !== z ? (B = (0, NE.jsx)(u_.Provider, {
+        value: x,
+        children: z
+    }), t[53] = x, t[54] = z, t[55] = B) : B = t[55], B
+}
+
+function kE() {}
+
+function AE() {
+    return ip(Cc.CHATGPT_FILE_LIBRARY_VARIANT_DEFAULT)
+}
+var jE, ME, NE, PE, FE, IE = e((() => {
+    jE = qn(), rr(), n(), ja(), pT(), rp(), d_(), n_(), xi(), Eh(), Tm(), cE(), fE(), hC(), wE(), si(), xr(), Bo(), pg(), EE(), tm(), Bm(), Ia(), Od(), vi(), Gc(), Go(), Mo(), Or(), W(), fe(), en(), Id(), Kn(), ME = t(Fn()), Nn(), NE = wn(), PE = {
+        Modal: TE,
+        searchParam: Ec,
+        isLocation: js,
+        getRequest: Lc,
+        consumeRequest: ds,
+        fetchAvailability: bo,
+        isEnabled: () => Hc(`google_drive`)
+    }, FE = {
+        Modal: ug,
+        searchParam: io,
+        isLocation: Js,
+        getRequest: qo,
+        consumeRequest: Qi,
+        fetchAvailability: Za,
+        isEnabled: bc
+    }
+}));
+
+function LE(e) {
+    return e.state.fetchMeta?.fetchMore?.direction === `forward` ? `append` : `refresh`
+}
+
+function RE(e) {
+    "use forget";
+    let t = (0, zE.c)(14),
+        {
+            queryKey: n,
+            state: r
+        } = e,
+        i = On(),
+        a;
+    t[0] === i ? a = t[1] : (a = i.getQueryCache(), t[0] = i, t[1] = a);
+    let o = a,
+        s;
+    t[2] === n ? s = t[3] : (s = wt(n), t[2] = n, t[3] = s);
+    let c = s,
+        l = n[0] === `recall-deleted-files` ? rf : Pd,
+        u = n[0] === `recall-deleted-files` ? null : n[0] === `recall-folder-search` ? n[2] : n[1],
+        d = typeof u == `string` ? u : null,
+        f;
+    t[4] === d ? f = t[5] : (f = sC(d, Zo(d)), t[4] = d, t[5] = f);
+    let p = f,
+        m, h;
+    return t[6] !== l || t[7] !== p || t[8] !== o || t[9] !== i || t[10] !== c || t[11] !== r ? (m = () => {
+        let e, t = (t, n) => {
+                let i = n !== void 0 && n;
+                if (t.queryHash !== c || t.state.fetchStatus === `idle`) return;
+                let a = LE(t);
+                if (!i && e?.loadType === a) return;
+                e = {
+                    loadType: a,
+                    operation: Rf()
+                };
+                let o = r.trigger;
+                r.trigger = void 0, Dd({
+                    analyticsSession: r.analyticsSession,
+                    libraryOrigin: l,
+                    loadType: a,
+                    operation: e.operation,
+                    provider: p,
+                    ...o == null ? {} : {
+                        trigger: o
+                    }
+                })
+            },
+            n = o.subscribe(n => {
+                let a = n.query;
+                if (a.queryHash === c) {
+                    if (n.type === `removed`) {
+                        e = void 0;
+                        return
+                    }
+                    if (n.type === `updated`) {
+                        if (n.action.type === `fetch` || n.action.type === `continue`) {
+                            t(a, n.action.type === `fetch`);
+                            return
+                        }
+                        if (e != null) {
+                            if (n.action.type === `success`) {
+                                if (n.action.manual === !0) return;
+                                let {
+                                    loadType: t,
+                                    operation: o
+                                } = e;
+                                e = void 0;
+                                let s = i.getQueryData(a.queryKey);
+                                Dd({
+                                    analyticsSession: r.analyticsSession,
+                                    libraryOrigin: l,
+                                    loadType: t,
+                                    operation: o,
+                                    provider: p,
+                                    success: !0,
+                                    itemCount: Ko(s?.pages).length
+                                });
+                                return
+                            }
+                            if (n.action.type === `error`) {
+                                let {
+                                    loadType: t,
+                                    operation: i
+                                } = e;
+                                if (e = void 0, Ln(n.action.error)) return;
+                                let a = Df(n.action.error);
+                                Dd({
+                                    analyticsSession: r.analyticsSession,
+                                    libraryOrigin: l,
+                                    loadType: t,
+                                    operation: i,
+                                    provider: p,
+                                    success: !1,
+                                    errorType: Xf,
+                                    ...a == null ? {} : {
+                                        error: a
+                                    }
+                                });
+                                return
+                            }
+                            n.action.type === `setState` && a.state.fetchStatus === `idle` && (e = void 0)
+                        }
+                    }
+                }
+            }),
+            a = o.get(c);
+        return a != null && a.state.fetchStatus !== `idle` && t(a), n
+    }, h = [l, p, o, i, c, r], t[6] = l, t[7] = p, t[8] = o, t[9] = i, t[10] = c, t[11] = r, t[12] = m, t[13] = h) : (m = t[12], h = t[13]), pe(m, h), null
+}
+var zE, BE = e((() => {
+        zE = qn(), rp(), hC(), Bo(), Ic(), ve(), z(), Kn()
+    })),
+    VE, HE, UE, WE, GE, KE, qE, JE, YE, XE, ZE, QE = e((() => {
+        VE = `GJDPEq_button`, HE = `GJDPEq_collapsedLabel`, UE = `GJDPEq_container`, WE = `GJDPEq_currentItem`, GE = `GJDPEq_item`, KE = `GJDPEq_label`, qE = `GJDPEq_measurements`, JE = `GJDPEq_measurementViewport`, YE = `GJDPEq_path`, XE = `GJDPEq_separator`, ZE = {
+            button: VE,
+            collapsedLabel: HE,
+            container: UE,
+            currentItem: WE,
+            item: GE,
+            label: KE,
+            measurements: qE,
+            measurementViewport: JE,
+            path: YE,
+            separator: XE
+        }
+    }));
+
+function $E(e, t, n) {
+    if (t.reduce((e, t) => e + t, 0) <= e) return Math.max(0, t.length - 1);
+    let r = (t[0] ?? 0) + n,
+        i = 0;
+    for (let n = t.length - 1; n > 0 && (r += t[n], !(r > e)); n--) i++;
+    return i
+}
+
+function eD(e) {
+    return e.getBoundingClientRect().width
+}
+
+function tD(e) {
+    return e?.()
+}
+
+function nD(e, t) {
+    return (0, aD.jsxs)(`span`, {
+        "data-breadcrumb-measurement": !0,
+        className: ZE.item,
+        children: [t > 0 && (0, aD.jsx)(td, {
+            className: ZE.separator
+        }), (0, aD.jsx)(`span`, {
+            className: ZE.label,
+            children: e.name
+        })]
+    }, `${e.id??`root`}-${t}`)
+}
+var rD, iD, aD, oD, sD, cD = e((() => {
+    rD = qn(), ea(), hu(), Ka(), Eg(), Ye(), z(), ke(), iD = t(Fn()), Pn(), QE(), aD = wn(), oD = `...`, sD = e => {
+        "use forget";
+        let t = (0, rD.c)(30),
+            {
+                items: n,
+                onSelect: r
+            } = e,
+            i = (0, iD.useRef)(null),
+            a = (0, iD.useRef)(null),
+            o = (0, iD.useRef)(null),
+            [s, c] = (0, iD.useState)(0),
+            l;
+        t[0] === n ? l = t[1] : (l = JSON.stringify(n), t[0] = n, t[1] = l);
+        let u = l,
+            d;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (d = () => {
+            let e = i.current,
+                t = a.current,
+                n = o.current;
+            if (!e || !t || !n) return;
+            let r = Array.from(t.querySelectorAll(`[data-breadcrumb-measurement]`)),
+                s = () => {
+                    c($E(e.getBoundingClientRect().width, r.map(eD), n.getBoundingClientRect().width))
+                };
+            s();
+            let l = [e, n, ...r].map(e => Lt({
+                target: e,
+                axis: `width`,
+                onChange: s
+            }));
+            return () => l.forEach(tD)
+        }, t[2] = d) : d = t[2];
+        let f;
+        t[3] === u ? f = t[4] : (f = [u], t[3] = u, t[4] = f), pe(d, f);
+        let p = Math.min(s, Math.max(0, n.length - 1)),
+            m, h, g, _, v;
+        if (t[5] !== n || t[6] !== r || t[7] !== p) {
+            let e = Og({
+                    items: n,
+                    maxUncollapsedItems: p + 1,
+                    shouldCollapseAncestors: p > 0,
+                    trailingItemCount: p
+                }),
+                a = p === 0 ? e.slice(-1) : e;
+            _ = i, v = ZE.container, m = ZE.path, h = `artifacts-surface-refreshed-breadcrumbs`;
+            let o;
+            t[13] !== n.length || t[14] !== r ? (o = (e, t) => {
+                let i = t > 0 && (0, aD.jsx)(td, {
+                    "aria-hidden": `true`,
+                    className: ZE.separator
+                });
+                if (e.type === `collapsed`) return (0, aD.jsxs)(`span`, {
+                    className: ZE.item,
+                    children: [i, (0, aD.jsxs)(yi.Root, {
+                        children: [(0, aD.jsx)(yi.BasicTrigger, {
+                            asChild: !0,
+                            children: (0, aD.jsxs)(`button`, {
+                                type: `button`,
+                                className: J(`interactive-button`, ZE.button, ZE.label, ZE.collapsedLabel),
+                                children: [(0, aD.jsx)(`span`, {
+                                    "aria-hidden": `true`,
+                                    children: oD
+                                }), (0, aD.jsx)(`span`, {
+                                    className: `sr-only`,
+                                    children: (0, aD.jsx)(X, {
+                                        ...Z.openParentFolders
+                                    })
+                                })]
+                            })
+                        }), (0, aD.jsx)(yi.Portal, {
+                            children: (0, aD.jsx)(yi.Content, {
+                                align: `start`,
+                                size: `medium`,
+                                children: e.hiddenItems.map(e => {
+                                    let {
+                                        item: t,
+                                        itemIndex: n
+                                    } = e;
+                                    return (0, aD.jsx)(yi.Item, {
+                                        label: t.name,
+                                        onSelect: () => r(t.id)
+                                    }, `${t.id??`root`}-${n}`)
+                                })
+                            })
+                        })]
+                    })]
+                }, `collapsed-ancestors`);
+                let {
+                    item: a,
+                    itemIndex: o
+                } = e, s = o === n.length - 1;
+                return (0, aD.jsxs)(`span`, {
+                    className: J(ZE.item, s && ZE.currentItem),
+                    children: [i, s ? (0, aD.jsx)(`span`, {
+                        "aria-current": `page`,
+                        className: ZE.label,
+                        children: a.name
+                    }) : (0, aD.jsx)(`button`, {
+                        type: `button`,
+                        className: J(`interactive-button`, ZE.button, ZE.label),
+                        onClick: () => r(a.id),
+                        children: a.name
+                    })]
+                }, `${a.id??`root`}-${o}`)
+            }, t[13] = n.length, t[14] = r, t[15] = o) : o = t[15], g = a.map(o), t[5] = n, t[6] = r, t[7] = p, t[8] = m, t[9] = h, t[10] = g, t[11] = _, t[12] = v
+        } else m = t[8], h = t[9], g = t[10], _ = t[11], v = t[12];
+        let y;
+        t[16] !== m || t[17] !== h || t[18] !== g ? (y = (0, aD.jsx)(`span`, {
+            className: m,
+            "data-testid": h,
+            children: g
+        }), t[16] = m, t[17] = h, t[18] = g, t[19] = y) : y = t[19];
+        let b;
+        t[20] === n ? b = t[21] : (b = n.map(nD), t[20] = n, t[21] = b);
+        let x;
+        t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, aD.jsxs)(`span`, {
+            ref: o,
+            className: ZE.item,
+            children: [(0, aD.jsx)(td, {
+                className: ZE.separator
+            }), (0, aD.jsx)(`span`, {
+                className: J(ZE.label, ZE.collapsedLabel),
+                children: oD
+            })]
+        }), t[22] = x) : x = t[22];
+        let S;
+        t[23] === b ? S = t[24] : (S = (0, aD.jsx)(`span`, {
+            "aria-hidden": `true`,
+            className: ZE.measurementViewport,
+            children: (0, aD.jsxs)(`span`, {
+                ref: a,
+                className: ZE.measurements,
+                children: [b, x]
+            })
+        }), t[23] = b, t[24] = S);
+        let C;
+        return t[25] !== S || t[26] !== _ || t[27] !== v || t[28] !== y ? (C = (0, aD.jsxs)(`span`, {
+            ref: _,
+            className: v,
+            children: [y, S]
+        }), t[25] = S, t[26] = _, t[27] = v, t[28] = y, t[29] = C) : C = t[29], C
+    }
+}));
+
+function lD() {
+    return Fe(uD)
+}
+var uD, dD = e((() => {
+        Qt(), uD = `3398978117`
+    })),
+    fD, pD, mD, hD = e((() => {
+        fD = `Hl_pzq_accountName`, pD = `Hl_pzq_content`, mD = {
+            accountName: fD,
+            content: pD
+        }
+    }));
+
+function gD(e) {
+    "use forget";
+    let t = (0, _D.c)(58),
+        {
+            onOpenTrash: n
+        } = e,
+        r = Yn(),
+        {
+            openSettings: i
+        } = Is(),
+        a = (0, vD.useId)(),
+        o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = lD(), t[0] = o) : o = t[0];
+    let s = o,
+        c = K(jc),
+        l;
+    t[1] === a ? l = t[2] : (l = () => ({
+        isOpen: hm() === a,
+        connectedSources: gm(),
+        hiddenSources: dm(),
+        showHiddenFiles: s && pm()
+    }), t[1] = a, t[2] = l);
+    let {
+        isOpen: u,
+        connectedSources: d,
+        hiddenSources: f,
+        showHiddenFiles: p
+    } = K(l), m;
+    t[3] === r ? m = t[4] : (m = r.formatMessage(bD.settings), t[3] = r, t[4] = m);
+    let h = m,
+        g;
+    t[5] === d ? g = t[6] : (g = oa(d, `provider`), t[5] = d, t[6] = g);
+    let _ = g,
+        v;
+    t[7] === a ? v = t[8] : (v = e => um(a, e), t[7] = a, t[8] = v);
+    let y;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, yD.jsx)(Wu, {
+        className: `icon`,
+        "aria-hidden": `true`
+    }), t[9] = y) : y = t[9];
+    let b;
+    t[10] === h ? b = t[11] : (b = (0, yD.jsx)(yi.BasicTrigger, {
+        asChild: !0,
+        children: (0, yD.jsx)(P, {
+            color: `ghost`,
+            size: `medium`,
+            type: `button`,
+            label: h,
+            className: `text-token-icon-tertiary flex size-9 min-h-9 items-center justify-center rounded-full border-0 p-0`,
+            children: y
+        })
+    }), t[10] = h, t[11] = b);
+    let x;
+    t[12] === h ? x = t[13] : (x = (0, yD.jsx)(yi.Label, {
+        className: `text-token-text-tertiary ps-3 pe-4 pt-3 pb-1 text-sm`,
+        children: h
+    }), t[12] = h, t[13] = x);
+    let S;
+    if (t[14] !== d || t[15] !== f || t[16] !== r || t[17] !== c || t[18] !== _) {
+        let e;
+        t[20] !== f || t[21] !== r || t[22] !== c || t[23] !== _ ? (e = e => {
+            let {
+                provider: t
+            } = e;
+            if (c && Wc(t)) return null;
+            let {
+                label: n
+            } = ba(t), i = e.accountLabel ?? (e.accountNumber == null ? void 0 : r.formatMessage(bD.unnamedAccount, {
+                number: e.accountNumber
+            }));
+            return (0, yD.jsx)(yi.CheckboxItem, {
+                checked: !f.has(t) && !f.has(e.id),
+                size: `large`,
+                icon: (0, yD.jsx)(Es, {
+                    provider: t,
+                    "aria-hidden": `true`,
+                    className: `icon`
+                }),
+                label: _[t] > 1 && i ? (0, yD.jsx)(X, {
+                    ...bD.providerAccount,
+                    values: {
+                        provider: r.formatMessage(n),
+                        account: (0, yD.jsx)(`span`, {
+                            className: mD.accountName,
+                            children: i
+                        })
+                    }
+                }) : r.formatMessage(n),
+                onCheckedChange: t => _m(e.id, t)
+            }, e.id)
+        }, t[20] = f, t[21] = r, t[22] = c, t[23] = _, t[24] = e) : e = t[24], S = d.map(e), t[14] = d, t[15] = f, t[16] = r, t[17] = c, t[18] = _, t[19] = S
+    } else S = t[19];
+    let C;
+    t[25] !== r || t[26] !== p ? (C = s && (0, yD.jsx)(yi.CheckboxItem, {
+        checked: p,
+        size: `large`,
+        icon: (0, yD.jsx)(Tu, {
+            "aria-hidden": `true`,
+            className: `icon`
+        }),
+        label: r.formatMessage(bD.showHiddenFiles),
+        onCheckedChange: fm
+    }), t[25] = r, t[26] = p, t[27] = C) : C = t[27];
+    let w;
+    t[28] !== C || t[29] !== x || t[30] !== S ? (w = (0, yD.jsxs)(yi.Group, {
+        children: [x, S, C]
+    }), t[28] = C, t[29] = x, t[30] = S, t[31] = w) : w = t[31];
+    let T;
+    t[32] === r ? T = t[33] : (T = r.formatMessage(bD.manage), t[32] = r, t[33] = T);
+    let E;
+    t[34] === T ? E = t[35] : (E = (0, yD.jsx)(yi.Label, {
+        className: `text-token-text-tertiary ps-3 pe-4 pt-1 pb-1 text-sm`,
+        children: T
+    }), t[34] = T, t[35] = E);
+    let D;
+    t[36] === r ? D = t[37] : (D = r.formatMessage(bD.storage), t[36] = r, t[37] = D);
+    let O;
+    t[38] === i ? O = t[39] : (O = () => i(ot.Storage), t[38] = i, t[39] = O);
+    let k;
+    t[40] !== D || t[41] !== O ? (k = (0, yD.jsx)(yi.Item, {
+        size: `large`,
+        icon: ju,
+        label: D,
+        onSelect: O
+    }), t[40] = D, t[41] = O, t[42] = k) : k = t[42];
+    let A;
+    t[43] !== r || t[44] !== n ? (A = n != null && (0, yD.jsx)(yi.Item, {
+        size: `large`,
+        icon: od,
+        label: r.formatMessage(bD.trash),
+        onSelect: n
+    }), t[43] = r, t[44] = n, t[45] = A) : A = t[45];
+    let j;
+    t[46] !== E || t[47] !== k || t[48] !== A ? (j = (0, yD.jsxs)(yi.Group, {
+        className: `before:my-2`,
+        children: [E, k, A]
+    }), t[46] = E, t[47] = k, t[48] = A, t[49] = j) : j = t[49];
+    let M;
+    t[50] !== w || t[51] !== j ? (M = (0, yD.jsx)(yi.Portal, {
+        children: (0, yD.jsxs)(yi.Content, {
+            align: `end`,
+            size: `large`,
+            className: mD.content,
+            children: [w, j]
+        })
+    }), t[50] = w, t[51] = j, t[52] = M) : M = t[52];
+    let N;
+    return t[53] !== u || t[54] !== M || t[55] !== v || t[56] !== b ? (N = (0, yD.jsxs)(yi.Root, {
+        open: u,
+        onOpenChange: v,
+        children: [b, M]
+    }), t[53] = u, t[54] = M, t[55] = v, t[56] = b, t[57] = N) : N = t[57], N
+}
+var _D, vD, yD, bD, xD = e((() => {
+    _D = qn(), ea(), Uu(), ad(), ql(), ed(), Ne(), Xc(), Hr(), Zs(), dD(), lm(), pi(), oc(), m(), ct(), El(), vD = t(Fn()), Pn(), hD(), yD = wn(), bD = Dn({
+        settings: {
+            id: `artifacts.library.settings.label`,
+            defaultMessage: `Settings`
+        },
+        providerAccount: {
+            id: `artifacts.library.settings.provider_account`,
+            defaultMessage: `{provider} · {account}`
+        },
+        unnamedAccount: {
+            id: `artifacts.library.settings.unnamed_account`,
+            defaultMessage: `Account {number}`
+        },
+        showHiddenFiles: {
+            id: `artifacts.library.settings.show_hidden_files`,
+            defaultMessage: `Show hidden files`
+        },
+        manage: {
+            id: `artifacts.library.settings.manage`,
+            defaultMessage: `Manage`
+        },
+        storage: {
+            id: `artifacts.library.settings.storage`,
+            defaultMessage: `Storage`
+        },
+        trash: {
+            id: `artifacts.library.settings.trash`,
+            defaultMessage: `Trash`
+        }
+    })
+}));
+
+function SD({
+    enabled: e,
+    isDeleted: t,
+    items: n,
+    onSelect: r,
+    searchParams: i
+}) {
+    return e ? {
+        title: (0, kD.jsx)(sD, {
+            items: n,
+            onSelect: e => {
+                let n = new URLSearchParams(i);
+                t && n.delete(Ch), r(e, n)
+            }
+        }),
+        titlePrefix: void 0
+    } : {}
+}
+
+function CD({
+    deletedFilesEnabled: e,
+    enabled: t,
+    navigateWithinLibrary: n
+}) {
+    if (t) return (0, kD.jsx)(gD, {
+        onOpenTrash: e ? () => {
+            let e = new URLSearchParams;
+            e.set(Ch, `true`), n(null, e)
+        } : void 0
+    })
+}
+
+function wD({
+    filterControl: e,
+    surface: t,
+    viewToggle: n
+}) {
+    let {
+        activeCategories: r,
+        activeSourceFilters: i,
+        currentDirectoryId: a,
+        navigateWithinLibrary: o,
+        searchParams: s
+    } = e, {
+        applyLibraryFilters: c,
+        isCurrentExternalDirectory: l,
+        isFavoritesTab: u,
+        isLibraryTab: d,
+        isTemplatesTab: f,
+        libraryIAEnabled: p,
+        sourceOnly: m,
+        imagesGridOnly: h
+    } = t, g = (d || u) && c || f, _ = (0, kD.jsx)(xh, {
+        ...e,
+        activeSourceFilters: c && !f ? i : [],
+        multiSelect: p && !f,
+        showAllFileTypesFilter: !p && !l && !f,
+        deletedFilesEnabled: !p && e.deletedFilesEnabled && !f,
+        showSourceFilters: !l && !f,
+        showTypeFilters: !m
+    });
+    return {
+        filters: _,
+        leadingActions: p ? (0, kD.jsxs)(kD.Fragment, {
+            children: [!f && (0, kD.jsx)(Th, {
+                sourceFilters: i,
+                categories: r,
+                currentDirectoryId: a,
+                searchParams: s,
+                navigateWithinLibrary: o
+            }), (0, kD.jsxs)(`div`, {
+                className: Ym.refreshedHeaderViewControls,
+                children: [g && _, !f && !h && (0, kD.jsxs)(kD.Fragment, {
+                    children: [g && (0, kD.jsx)(`div`, {
+                        "aria-hidden": `true`,
+                        className: Ym.refreshedHeaderViewSeparator
+                    }), (0, kD.jsx)(`div`, {
+                        className: Ym.refreshedHeaderViewToggle,
+                        children: (0, kD.jsx)(ao, {
+                            ...n
+                        })
+                    })]
+                })]
+            })]
+        }) : void 0
+    }
+}
+
+function TD({
+    refreshed: e,
+    sharedFolderUpload: t
+}) {
+    return {
+        testId: `artifacts-surface-library-search-controls`,
+        className: J(`max-md:mt-0 max-md:min-h-0`, e && `md:-mt-2 md:min-h-9`),
+        ...t == null ? {} : {
+            headerActions: (0, kD.jsx)($C, {
+                ...t
+            })
+        }
+    }
+}
+
+function ED(e, t) {
+    return {
+        id: `artifacts-library-search-input`,
+        label: e.formatMessage(t),
+        clearLabel: e.formatMessage(Z.clearSearch),
+        placeholder: e.formatMessage(t)
+    }
+}
+
+function DD({
+    compact: e,
+    isDeleted: t,
+    isFavoritesTab: n,
+    isNewActionDisabled: r,
+    onCreateFolder: i,
+    onCreateNote: a,
+    onCreateTemplate: o,
+    onUpload: s,
+    pageTitle: c,
+    titleProvider: l,
+    showNewFolderAction: u,
+    showNewNoteAction: d,
+    isSharedFolder: f,
+    showSharedLibraryTitlePrefix: p,
+    settingsControl: m
+}) {
+    let h = f ? au : lu,
+        g = e || m != null,
+        _;
+    return !t && !p && (_ = o == null ? (0, kD.jsx)(nx, {
+        coordinateHeaderMenus: g,
+        disabled: r,
+        showNewFolderAction: u,
+        showNewNoteAction: d,
+        showUploadAction: !n,
+        showNewProjectAction: !n && Fi(),
+        showTemplateGalleryAction: to(),
+        onUploadFiles: s,
+        onCreateFolder: i,
+        onCreateNote: a
+    }) : (0, kD.jsx)(P, {
+        color: `primary`,
+        size: `medium`,
+        type: `button`,
+        onClick: o,
+        children: (0, kD.jsx)(X, {
+            ...Tg.createTemplate
+        })
+    })), {
+        variant: e ? `compact` : void 0,
+        title: (0, kD.jsx)(`span`, {
+            className: `-my-1 block min-w-0 truncate py-1`,
+            children: c
+        }),
+        titlePrefix: l == null ? p ? (0, kD.jsx)(h, {
+            "aria-hidden": `true`,
+            className: `size-7 md:size-8`,
+            "data-testid": `library-shared-directory-title-icon`
+        }) : void 0 : (0, kD.jsx)(Es, {
+            provider: l,
+            "aria-hidden": `true`,
+            className: `size-7 md:size-8`,
+            "data-testid": `library-${l.replace(`_`,`-`)}-title-icon`
+        }),
+        headerActions: _ == null ? void 0 : m == null ? _ : (0, kD.jsxs)(`div`, {
+            className: `flex items-center gap-2`,
+            children: [_, m]
+        }),
+        classNames: {
+            title: J(e ? `max-md:hidden` : `text-heading-app box-trim-0.5 font-medium max-md:hidden`, g && [`md:flex-none md:shrink-0`, Ym.refreshedPageTitle]),
+            titlePrefix: `max-md:hidden self-center`,
+            controls: J(`max-md:w-full`, g && `md:flex-1 md:justify-end`),
+            leadingActions: g ? Ym.refreshedHeaderLeadingActions : void 0,
+            search: `max-md:w-full max-md:max-w-[400px] md:w-60`,
+            headerActions: `max-md:hidden`
+        }
+    }
+}
+
+function OD({
+    onProjectsTabClick: e,
+    onTabChange: t,
+    showFavorites: n,
+    showProjectsTab: r,
+    showTemplates: i,
+    showRefreshedLibraryTabs: a,
+    showWidgetsInspector: o,
+    tab: s,
+    showAllResultsLabel: c
+}) {
+    return (0, kD.jsx)(pE, {
+        tab: s,
+        onTabChange: t,
+        onProjectsTabClick: e,
+        showRefreshedLibraryTabs: a,
+        showProjectsTab: Fi() && r,
+        showTemplates: i,
+        showFavorites: n,
+        showWidgetsInspector: o,
+        showAllResultsLabel: c
+    })
+}
+var kD, AD, jD = e((() => {
+    Ne(), cD(), Iu(), ru(), $i(), mx(), xD(), Eh(), Ka(), aw(), gE(), Jm(), Xc(), wg(), Or(), si(), ke(), Pn(), kD = wn(), AD = Fi
+}));
+
+function MD(e) {
+    let t = {
+        analyticsSession: e,
+        retry(e) {
+            t.trigger = ta.CHATGPT_FILE_LIBRARY_LOAD_TRIGGER_USER_RETRY;
+            try {
+                e()
+            } finally {
+                t.trigger = void 0
+            }
+        }
+    };
+    return t
+}
+var ND = e((() => {
+    Id()
+}));
+
+function PD({
+    activeHasNextPage: e,
+    activeLoadedPageCount: t,
+    directoryHasError: n,
+    directoryId: r,
+    librarySearchEnabled: i,
+    hasSearchNextPage: a,
+    hasVisibleBrowseResults: o,
+    hasVisibleSearchResults: s,
+    isDeleted: c,
+    isLibraryTab: l,
+    isSearch: u,
+    lastSearchPageIsEmpty: d,
+    searchHasError: f
+}) {
+    let p = l && !c && ya(r),
+        m = p && !u,
+        h = p && e && t >= 5,
+        g = l && u && !c && ya(r) && !f && !s && a === !0,
+        _ = u && i && a && d,
+        v = l && !u && !n && !o && e;
+    return {
+        hasEmptyLibrarySearchPage: _,
+        hasIncompleteGoogleDriveSearch: g,
+        isGoogleDriveBrowse: m,
+        observeListEnd: l && !v && !_ && !h,
+        requiresManualLoadMore: _ || h || g,
+        shouldAutoDrainEmptyPages: v && !h
+    }
+}
+var FD = e((() => {
+        Tm(), lr()
+    })),
+    ID, LD = e((() => {
+        Ie(), Wn(), ID = Oe(() => zn(() => import(`./85de7efc-ed5esjervuq2onas.js`).then(e => e.ReferenceImagesLibraryRow), __vite__mapDeps([32, 1, 2, 3, 4, 5, 6, 7, 8, 9, 33, 34, 35, 12, 13])))
+    }));
+
+function RD(e) {
+    return e != null && !Zo(e) && !ge(e) ? e : null
+}
+
+function zD(e) {
+    return e == null ? void 0 : fl(Fa(e))
+}
+
+function BD(e) {
+    return e != null && (Kr(e) || f(e)) ? Nr.CHATGPT_FILE_LIBRARY_FOLDER_KIND_SHARED_WITH_ME : void 0
+}
+
+function VD(e, t = !1) {
+    let n = zD(e);
+    if (e != null && Zo(e) && n == null) return null;
+    let r = BD(e);
+    return {
+        ...!t && e != null ? {
+            folderId: e
+        } : {},
+        ...n == null ? {} : {
+            provider: n
+        },
+        ...r == null ? {} : {
+            folderKind: r
+        }
+    }
+}
+
+function HD(e, t, n) {
+    return VD(e ?? n, e == null || e === n || Nc(e) || Kr(e) || f(e) || t?.items.some(t => t.id === e && t.is_root) === !0)
+}
+
+function UD(e, t, n) {
+    let r = new URLSearchParams(n);
+    return r.delete(qm), {
+        pathname: ka(e, t),
+        search: r.size > 0 ? `?${r.toString()}` : ``
+    }
+}
+
+function WD(e, t) {
+    return e === `external-gdrive:root` ? t?.find(e => e.id !== `external-gdrive:root` && Ea(e.id))?.id ?? null : null
+}
+
+function GD({
+    directoryId: e,
+    directoryPath: t,
+    goTo: n,
+    isAccountChooserDirectory: r,
+    logNavigation: i,
+    navigation$: a,
+    queryClient: o,
+    rootDirectoryId: s,
+    searchParams: c,
+    shareSessionId: l
+}) {
+    function u(r, a, o = !1) {
+        let c = RD(s),
+            l = r ?? c,
+            u = e ?? c,
+            d = new Set((t?.items ?? []).map(e => e.id)),
+            f = u != null && l !== u && (r == null || l != null && d.has(l)),
+            p = HD(e, t, s);
+        f && p != null && i({
+            action: ei.CHATGPT_FILE_LIBRARY_FOLDER_NAVIGATION_ACTION_BACK,
+            ...p
+        }), n(r, a, o)
+    }
+
+    function d(e, t = !1) {
+        let n = a();
+        t && n != null && a.set({
+            ...n,
+            openedChildId: e
+        });
+        let r = VD(e);
+        r != null && i({
+            action: ei.CHATGPT_FILE_LIBRARY_FOLDER_NAVIGATION_ACTION_OPENED,
+            ...r
+        })
+    }
+
+    function f(i, a, s) {
+        let u = bl(i);
+        qD({
+            currentDirectoryId: e,
+            currentPathItems: t?.items,
+            nextNode: u,
+            queryClient: o
+        }), d(u.id, !0), Wg(u.id, l, () => {
+            let e = s?.clearSearchView || r ? ra(c) : c;
+            a.current = u.id, n(u.id, e)
+        })
+    }
+    return {
+        goToBreadcrumb: u,
+        logFolderOpened: d,
+        openDirectory: f
+    }
+}
+
+function KD({
+    directoryId: e,
+    directoryPath: t,
+    locationKey: n,
+    logNavigation: r,
+    navigationType: i,
+    navigation$: a,
+    rootDirectoryId: o
+}) {
+    let s = a(),
+        c = o ?? (e == null ? s?.rootDirectoryId ?? null : null),
+        l = e ?? c ?? (i === `POP` ? s?.rootDirectoryId ?? null : null),
+        u = s != null && n === s.locationKey,
+        d = s?.openedChildId === l ? s.directoryId : null,
+        f = new Set((t?.items ?? []).map(e => e.id));
+    t == null && u && s.pathIds.forEach(e => f.add(e)), d != null && s != null && (s.pathIds.forEach(e => f.add(e)), f.add(d));
+    let p = e == null && s?.directoryId != null,
+        m = l != null && l !== s?.directoryId && (l === s?.rootDirectoryId || s?.pathIds.has(l) === !0);
+    s != null && i === `POP` && n !== s.locationKey && (p || m) && s.eventContext != null && r({
+        action: ei.CHATGPT_FILE_LIBRARY_FOLDER_NAVIGATION_ACTION_BACK,
+        ...s.eventContext
+    }), a.set({
+        directoryId: l,
+        eventContext: HD(e, t, c),
+        locationKey: n,
+        openedChildId: u ? s.openedChildId : null,
+        pathIds: f,
+        rootDirectoryId: c
+    })
+}
+
+function qD({
+    currentDirectoryId: e,
+    currentPathItems: t,
+    nextNode: n,
+    queryClient: r
+}) {
+    if (!(ge(n.id) || aa(n.id)) && !(n.globalSearchItem != null && (n.parent_directory_id == null || n.parent_directory_id !== e))) {
+        if (e == null && n.globalSearchItem == null) {
+            Xh(r, n.id, [{
+                id: n.id,
+                name: n.name,
+                parent_directory_id: null,
+                is_root: !1,
+                sharing_entry_id: n.sharing_entry_id,
+                access_kind: n.access_kind
+            }]);
+            return
+        }
+        t != null && t.length > 0 && Xh(r, n.id, [...t, {
+            id: n.id,
+            name: n.name,
+            parent_directory_id: e,
+            is_root: !1,
+            sharing_entry_id: n.sharing_entry_id,
+            access_kind: n.access_kind
+        }])
+    }
+}
+var JD = e((() => {
+    sl(), qg(), Tm(), qh(), Bo(), lr(), vi(), Ci(), Hr(), fn(), Id()
+}));
+
+function YD(e, t, n, r, i) {
+    let a = t.has(r);
+    i ? e.add(r) : e.delete(r), a !== i && n.push(r)
+}
+
+function XD({
+    orderedIds: e,
+    checkedIds: t,
+    anchorId: n,
+    targetId: r,
+    nextChecked: i,
+    shiftKey: a = !1
+}) {
+    let o = new Set(t),
+        s = [],
+        c = n == null ? -1 : e.indexOf(n),
+        l = e.indexOf(r),
+        u = a && c !== -1 && l !== -1;
+    if (u) {
+        let n = Math.min(c, l),
+            r = Math.max(c, l);
+        for (let a = n; a <= r; a += 1) a !== c && YD(o, t, s, e[a], i)
+    } else YD(o, t, s, r, i);
+    let d = !u && (o.size === 0 || !i && n === r);
+    return {
+        nextCheckedIds: o,
+        changedIds: s,
+        didApplyRange: u,
+        nextAnchorId: u ? n : d ? null : r
+    }
+}
+var ZD = e((() => {}));
+
+function QD(e, t) {
+    let n = t();
+    n != null && (st(() => {
+        t.set(null)
+    }), e.selectionChanged({
+        ...n,
+        selectionMethod: Va.CHATGPT_FILE_LIBRARY_SELECTION_METHOD_RANGE
+    }))
+}
+
+function $D(e, t) {
+    let n = [`pointerup`, `pointercancel`, `lostpointercapture`];
+    for (let t of n) window.addEventListener(t, e);
+    return () => {
+        for (let t of n) window.removeEventListener(t, e);
+        st(() => {
+            t.set(null)
+        })
+    }
+}
+
+function eO(e, t) {
+    let n = e();
+    n != null && t.has(n) && st(() => {
+        e.set(null)
+    })
+}
+
+function tO({
+    analytics: e,
+    artifacts: t,
+    checkedIds: n,
+    directories: r,
+    pendingMarqueeSelection$: i,
+    selectableRowIds: a,
+    selectionAnchorId$: o,
+    setCheckedIds: s
+}) {
+    function c(i, c, l) {
+        if (!a.includes(i)) return;
+        let u = XD({
+            orderedIds: a,
+            checkedIds: n,
+            anchorId: o(),
+            targetId: i,
+            nextChecked: c,
+            shiftKey: l?.shiftKey
+        });
+        e.selectionChanged({
+            artifacts: t,
+            directories: r,
+            previousSelectedIds: n,
+            selectedIds: u.nextCheckedIds,
+            changedIds: u.changedIds,
+            selectionMethod: u.didApplyRange ? Va.CHATGPT_FILE_LIBRARY_SELECTION_METHOD_RANGE : Va.CHATGPT_FILE_LIBRARY_SELECTION_METHOD_SINGLE
+        }), s(u.nextCheckedIds), st(() => {
+            o.set(u.nextAnchorId)
+        })
+    }
+
+    function l(e, a) {
+        let c = i();
+        st(() => {
+            i.set({
+                artifacts: t,
+                directories: r,
+                previousSelectedIds: c?.previousSelectedIds ?? n,
+                selectedIds: e
+            }), s(e), o.set(a)
+        })
+    }
+
+    function u(i) {
+        st(() => {
+            o.set(null)
+        });
+        let c = i ? new Set(a) : new Set;
+        e.selectionChanged({
+            artifacts: t,
+            directories: r,
+            previousSelectedIds: n,
+            selectedIds: c,
+            selectionMethod: i ? Va.CHATGPT_FILE_LIBRARY_SELECTION_METHOD_SELECT_ALL : Va.CHATGPT_FILE_LIBRARY_SELECTION_METHOD_CLEAR_ALL
+        }), s(c)
+    }
+    return {
+        handleSelectAllChange: u,
+        updateMarqueeSelection: l,
+        updateSelection: c
+    }
+}
+var nO = e((() => {
+    ZD(), ct(), Id()
+}));
+
+function rO({
+    deletedFileActionConfirmation: e,
+    handleOpenArtifact: t,
+    intl: n,
+    isDeletedFileActionConfirmLoading: r,
+    onPermanentDeleteConfirmed: i,
+    onPermanentDeleteInitiated: a,
+    permanentlyDeleteDeletedArtifact: o,
+    restoreDeletedArtifact: s,
+    setDeletedFileActionConfirmation: c,
+    setIsDeletedFileActionConfirmLoading: l,
+    toaster: u
+}) {
+    function d() {
+        r || c(null)
+    }
+    async function f() {
+        let a = e;
+        if (a == null || r) return;
+        if (a.artifacts.length === 0) {
+            c(null);
+            return
+        }
+        a.kind === `permanent-delete` && i?.(a.artifacts), l(!0);
+        let d = !0;
+        for (let e of a.artifacts)(a.kind === `restore` ? await s(e) : await o(e)) || (d = !1);
+        if (l(!1), d) {
+            let e = a.artifacts[0];
+            if (a.kind === `restore` && a.artifacts.length === 1 && e != null) {
+                let r = n.formatMessage(Z.restoreFileViewAction);
+                u.success(n.formatMessage(Z.restoreFileSuccess, {
+                    name: bs(e)
+                }), {
+                    action: (0, iO.jsx)(`button`, {
+                        type: `button`,
+                        className: `rounded-sm font-medium text-white hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white`,
+                        onClick: () => {
+                            t(e)
+                        },
+                        children: r
+                    })
+                })
+            }
+            c(null)
+        }
+    }
+
+    function p(e, t) {
+        m(e, [t])
+    }
+
+    function m(e, t) {
+        t.length !== 0 && (e === `permanent-delete` && a?.(t), c({
+            kind: e,
+            artifacts: [...t]
+        }))
+    }
+    return {
+        close: d,
+        confirm: f,
+        open: p,
+        openForArtifacts: m
+    }
+}
+var iO, aO = e((() => {
+    Ir(), Ka(), iO = wn()
+}));
+
+function oO({
+    analytics: e,
+    selection: t,
+    deleteArtifacts: n,
+    deleteDirectory: r,
+    removeFavorites: i,
+    refreshAfterBatch: a,
+    deletedFilesEnabled: o,
+    options: s
+}) {
+    let c = t.artifacts,
+        l = t.directories,
+        u = t.favorites,
+        d = nC(t.artifacts, n, e => {
+            c = e
+        }),
+        f = () => ({
+            fileCount: c.length,
+            storageBytesToFree: La(c),
+            favoriteCount: u.length,
+            folderCount: l.length
+        });
+    return im({
+        deletedFilesEnabled: o,
+        ...f(),
+        getRetryContent: f,
+        retainedProviders: [...t.retainedProviders],
+        hasOtherRetainedItems: t.hasOtherRetainedItems,
+        onConfirmDelete: async () => {
+            let t = l.map(e => e.id);
+            (c.length > 0 || t.length > 0) && (e.deleteRequested({
+                artifacts: c,
+                directoryIds: t
+            }), e.deleteConfirmed({
+                artifacts: c,
+                directoryIds: t
+            }));
+            let n = o && c.length > 0 ? JS() : void 0,
+                f = {
+                    ...s,
+                    nonBlockingConfig: n,
+                    deferRefreshAfterBatch: !0
+                },
+                p = c.length > 0 && n?.enabled ? d(f) : null;
+            for (let e of [...l]) await r(e, {
+                deferRefreshAfterDelete: !0
+            }) && (l = l.filter(t => t.id !== e.id));
+            return u.length > 0 && (u = await i(u)), (p != null || c.length > 0) && await (p ?? d(f)) && (c = []), a(), c.length + l.length + u.length === 0
+        }
+    })
+}
+
+function sO({
+    analytics: e,
+    deleteDirectory: t,
+    deleteConfirmation: n,
+    isDeleteConfirmLoading$: r,
+    setDeleteConfirmation: i
+}) {
+    function a() {
+        r() || i(null)
+    }
+    async function o() {
+        let a = n;
+        if (a == null || r()) return;
+        e.deleteConfirmed({
+            directoryIds: [a.id]
+        }), r.set(!0);
+        let o = await t(a);
+        r.set(!1), o && i(null)
+    }
+    return {
+        closeDelete: a,
+        confirmDelete: o
+    }
+}
+var cO = e((() => {
+    nm(), iC(), vi(), QS()
+}));
+
+function lO(e, t, n) {
+    let r = {
+        artifacts: [],
+        favorites: [],
+        directories: [],
+        retainedProviders: new Set,
+        hasOtherRetainedItems: !1
+    };
+    for (let t of e)
+        if (fb([t], [], n).readOnly) {
+            let e = xl(t)?.provider;
+            e == null ? r.hasOtherRetainedItems = !0 : r.retainedProviders.add(e)
+        } else CS(t) ? t.libraryFileId != null && (t.savedEntity?.saved_target != null || yl(t)) ? r.favorites.push(t) : r.hasOtherRetainedItems = !0 : r.artifacts.push(t);
+    for (let e of t)
+        if (fb([], [e], n).readOnly) {
+            let t = Na(e.id)?.provider;
+            t == null ? r.hasOtherRetainedItems = !0 : r.retainedProviders.add(t)
+        } else r.directories.push(e);
+    return r
+}
+async function uO(e, t, n, r) {
+    let i = typeof e.classifiers.parent_directory_id == `string` ? e.classifiers.parent_directory_id : null,
+        a = bs(e).trim(),
+        o = i ?? void 0,
+        s = a.length > 0 ? a : void 0,
+        c = !1,
+        l = () => {
+            c = !0, r?.({
+                succeeded: !0
+            })
+        };
+    try {
+        n ? await pr({
+            libraryFileId: e.id,
+            fileId: t,
+            parentDirectoryId: o,
+            fileName: s,
+            softDelete: !0,
+            onRequestSucceeded: l
+        }) : await di({
+            libraryFileId: e.id,
+            fileId: t,
+            parentDirectoryId: o,
+            fileName: s,
+            onRequestSucceeded: l
+        })
+    } catch (e) {
+        throw c || r?.({
+            succeeded: !1,
+            error: e
+        }), e
+    }
+}
+
+function dO({
+    deletedFilesEnabled: e,
+    directoryId: t,
+    pendingOptimisticArtifactIds: n,
+    refreshAfterDelete: r,
+    setCheckedIds: i,
+    setHiddenDeletedArtifactIds: a,
+    setIsDeletingFileId: o,
+    showDeleteError: s
+}) {
+    return async function(c, l = {}, u) {
+        if (n.has(c.id)) return !1;
+        let d = sr(c);
+        if (!c.id || !d) return !1;
+        o(c.id);
+        let f = null;
+        try {
+            await uO(c, d, e, u), a(e => {
+                if (e.has(c.id)) return e;
+                let t = new Set(e);
+                return t.add(c.id), t
+            }), i(e => {
+                if (!e.has(c.id)) return e;
+                let t = new Set(e);
+                return t.delete(c.id), t
+            }), Ke(), l.deferRefreshAfterDelete || await r(t, {
+                clearCacheOnDelete: l.clearCacheOnDelete
+            })
+        } catch (e) {
+            f = e
+        }
+        return o(e => e === c.id ? null : e), f == null ? !0 : (s(f), !1)
+    }
+}
+async function fO(e, t, n, r, i) {
+    let a = !0,
+        o = 0,
+        s, c = new Set;
+    for (let n of e) {
+        let e;
+        await t(n, {
+            clearCacheOnDelete: i.clearCacheOnDelete,
+            deferRefreshAfterDelete: !0
+        }, t => e = t) || (a = !1, e?.succeeded || c.add(n.id)), e?.succeeded ? o++ : e != null && s == null && (s = Df(e.error))
+    }
+    return i.onRetryableArtifactIds?.(c), n(e, o === 0 ? Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE_FAILED : o === e.length ? Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE_SUCCEEDED : Ai.CHATGPT_FILE_LIBRARY_FILE_INTERACTION_TYPE_DELETE_PARTIAL, s), i.deferRefreshAfterBatch || r(i), a
+}
+
+function pO(e, t, n) {
+    return (r, i = {}) => fO(r, e, t, n, i)
+}
+var mO = e((() => {
+        zi(), rp(), Ha(), Ma(), Ir(), wS(), hb(), pi(), po(), Id()
+    })),
+    hO, gO = e((() => {
+        Ie(), Wn(), hO = Oe(() => zn(() => import(`./edc1a985-oc9yxm11mj9ems45.js`).then(e => e.ArtifactsLibraryMoveModal), __vite__mapDeps([36, 1, 2, 3, 4, 5, 6, 7, 8, 9, 37, 38, 39, 21, 13, 12, 22, 40, 41])))
+    }));
+
+function _O() {
+    "use forget";
+    let e = (0, yO.c)(5),
+        [, t] = (0, bO.useState)(0),
+        n;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (n = gl(), e[0] = n) : n = e[0];
+    let r = n,
+        i;
+    e[1] === t ? i = e[2] : (i = e => {
+        e.thumbnailUrl?.trim() || (Oi(e).isImageLike || e.classifiers.library_file_category === `image`) && r.warmGoogleDriveFile(e, () => {
+            t(vO)
+        })
+    }, e[1] = t, e[2] = i);
+    let a = mn(i),
+        o;
+    return e[3] === a ? o = e[4] : (o = {
+        onVisibleGoogleDriveFile: a,
+        getGoogleDriveThumbnailFileId: r.getMaterializedGoogleDriveFileId
+    }, e[3] = a, e[4] = o), o
+}
+
+function vO(e) {
+    return e + 1
+}
+var yO, bO, xO = e((() => {
+    yO = qn(), Ir(), Co(), en(), bO = t(Fn())
+}));
+
+function SO(e) {
+    let t = e.closest(`[data-scroll-root]`),
+        n = t ? t.getBoundingClientRect().bottom : window.innerHeight;
+    return e.getBoundingClientRect().bottom <= n
+}
+
+function CO(e) {
+    "use forget";
+    let t = (0, TO.c)(24),
+        {
+            rootMargin: n,
+            hasNextPage: r,
+            isLoading: i,
+            isError: a,
+            enabled: o,
+            onLoadMore: s
+        } = e,
+        c = o === void 0 || o,
+        [l, u] = (0, EO.useState)(!1),
+        [d, f] = (0, EO.useState)(!1),
+        [p, m] = (0, EO.useState)(null),
+        h = (0, EO.useRef)(null),
+        g;
+    t[0] === n ? g = t[1] : (g = {
+        rootMargin: n
+    }, t[0] = n, t[1] = g);
+    let [_, v] = Xo(g), y;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (y = e => {
+        h.current = e, m(e)
+    }, t[2] = y) : y = t[2];
+    let b = y,
+        x;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (x = () => {
+        u(!1), f(h.current != null && SO(h.current))
+    }, t[3] = x) : x = t[3];
+    let S = x,
+        C, w;
+    t[4] === p ? (C = t[5], w = t[6]) : (C = () => {
+        if (!p) return;
+        let e = p.closest(`[data-scroll-root]`),
+            t = () => {
+                f(e => {
+                    let t = SO(p);
+                    return e === t ? e : t
+                })
+            };
+        if (t(), window.addEventListener(`resize`, t), typeof ResizeObserver > `u`) return () => {
+            window.removeEventListener(`resize`, t)
+        };
+        let n = new ResizeObserver(t);
+        return n.observe(p), e && n.observe(e), () => {
+            n.disconnect(), window.removeEventListener(`resize`, t)
+        }
+    }, w = [p], t[4] = p, t[5] = C, t[6] = w), pe(C, w);
+    let T, E;
+    t[7] === p ? (T = t[8], E = t[9]) : (T = () => {
+        if (!p) return;
+        let e = p.closest(`[data-scroll-root]`),
+            t = () => {
+                u(wO)
+            },
+            n = e ?? window;
+        return (e ? e.scrollTop > 0 : window.scrollY > 0) && u(!0), n.addEventListener(`scroll`, t, {
+            passive: !0
+        }), () => {
+            n.removeEventListener(`scroll`, t)
+        }
+    }, E = [p], t[7] = p, t[8] = T, t[9] = E), (0, EO.useEffect)(T, E);
+    let D, O;
+    t[10] !== c || t[11] !== r || t[12] !== l || t[13] !== a || t[14] !== _ || t[15] !== i || t[16] !== d || t[17] !== s ? (O = () => {
+        !c || !l || !r || !_ || i || a || d || s()
+    }, D = [c, r, l, a, _, i, d, s], t[10] = c, t[11] = r, t[12] = l, t[13] = a, t[14] = _, t[15] = i, t[16] = d, t[17] = s, t[18] = D, t[19] = O) : (D = t[18], O = t[19]), (0, EO.useEffect)(O, D);
+    let k;
+    return t[20] !== l || t[21] !== v || t[22] !== d ? (k = {
+        hasUserScrolled: l,
+        listFitsViewport: d,
+        listEndRef: v,
+        listContainerRef: b,
+        resetPageTableInfiniteScroll: S
+    }, t[20] = l, t[21] = v, t[22] = d, t[23] = k) : k = t[23], k
+}
+
+function wO(e) {
+    return e || !0
+}
+var TO, EO, DO = e((() => {
+    TO = qn(), Lo(), z(), EO = t(Fn())
+}));
+
+function OO(e, t) {
+    return e ? Z.librarySearch : t ? Z.favoritesSearch : Z.search
+}
+
+function kO({
+    currentDirectoryId: e,
+    directoryPath: t,
+    enabled: n,
+    intl: r,
+    isDeleted: i,
+    isGlobalFileMode: a,
+    isLibraryTab: o,
+    isStandaloneTab: s,
+    searchQuery: c
+}) {
+    let l = Br({
+            currentDirectoryId: e,
+            directoryPath: t,
+            intl: r
+        }),
+        u = n && i ? [...l, {
+            id: `__trash__`,
+            name: r.formatMessage(Z.trashPageTitle)
+        }] : l,
+        d = s ? r.formatMessage(Z.pageTitle) : Ga({
+            currentDirectoryId: e,
+            directoryPath: t,
+            intl: r,
+            isGlobalFileMode: a
+        }),
+        f = n && !i && o && e == null && c.length > 0;
+    return {
+        path: u,
+        pageTitle: f ? r.formatMessage(Z.searchPageTitle) : n && i ? r.formatMessage(Z.trashPageTitle) : d,
+        rootBreadcrumbLabel: r.formatMessage(Z.rootBreadcrumb),
+        shouldCollapseBreadcrumbAncestors: u.length > 4,
+        showAllResultsLabel: f
+    }
+}
+
+function AO(e, t) {
+    return Array.from(new Set(e.map(e => t(e)).filter(e => e != null)))
+}
+
+function jO(e, t, n, r, i = !1) {
+    let a = t && Wr(e.get(`deleted`)),
+        o = r && !n && hc(e.get(`show_all_file_types`)),
+        s = i ? AO(e.getAll(wh), Sh) : [Sh(e.get(wh))].filter(e => e != null),
+        c = i ? AO(e.getAll(Dh), yh) : [yh(e.get(Dh))].filter(e => e != null),
+        l = a && !i,
+        u = l || n ? [] : s,
+        d = l || o ? [] : c;
+    return {
+        activeSearchQuery: e.get(`search`)?.trim() ?? ``,
+        activeSourceFilter: u.length === 1 ? u[0] : null,
+        activeSourceFilters: u,
+        activeSourceFilterFromUrl: s[0] ?? null,
+        activeSourceFiltersFromUrl: s,
+        activeTypeFilter: d.length === 1 ? d[0] : null,
+        activeTypeFilters: d,
+        activeTypeFilterFromUrl: c[0] ?? null,
+        activeTypeFiltersFromUrl: c,
+        isDeleted: a,
+        requestedLibraryMode: _i(e.get(vh)),
+        showAllFileTypes: o
+    }
+}
+
+function MO({
+    tab: e,
+    preferredViewMode: t,
+    directoryId: n,
+    pathname: r,
+    requestedLibraryMode: i,
+    activeSourceFilter: a,
+    forceFolderMode: o,
+    hideRefreshedLibraryTabs: s,
+    isDeleted: c,
+    libraryIARefreshEnabled: l,
+    activeSearchQuery: u,
+    activeTypeFilter: d,
+    activeTypeFilters: f,
+    activeSourceFilters: p,
+    showAllFileTypes: m,
+    isStandaloneTab: h
+}) {
+    let g = /\/library\/?$/.test(r),
+        _ = l && n == null && g && !s,
+        v = Di(e, _),
+        y = _ && v === `images`,
+        b = y ? `grid` : t,
+        x = _ && (v === `suggested` || v === `images`),
+        S = o || l && n != null || _ && (v === `folders` || v === `all`) ? `folder` : x ? `global` : i;
+    return {
+        activeLibraryMode: S,
+        contentTab: v,
+        imagesGridOnly: y,
+        viewMode: b,
+        effectiveSourceFilter: _ && v === `folders` ? null : a,
+        isFlatRootTab: x,
+        showRefreshedLibraryTabs: _,
+        ...FO({
+            activeLibraryMode: S,
+            activeSearchQuery: u,
+            activeSourceFilters: p,
+            activeTypeFilter: d,
+            activeTypeFilters: f,
+            isDeleted: c,
+            isStandaloneTab: h,
+            showAllFileTypes: m,
+            showRefreshedTabs: _,
+            viewTab: v
+        })
+    }
+}
+
+function NO(e, t) {
+    return or(e, t)
+}
+
+function PO(e, t, n, r, i) {
+    if (e || t) return null;
+    if (r.length > 1) {
+        let e = r.map(e => Vi(e));
+        return e.some(e => e == null) ? null : Array.from(new Set(e.flatMap(e => e ?? [])))
+    }
+    return Vi(n) ?? ji(i)
+}
+
+function FO({
+    activeSearchQuery: e,
+    activeSourceFilters: t,
+    activeTypeFilter: n,
+    activeTypeFilters: r,
+    activeLibraryMode: i,
+    isDeleted: a,
+    isStandaloneTab: o,
+    showAllFileTypes: s,
+    showRefreshedTabs: c,
+    viewTab: l
+}) {
+    let u = !c || l === `suggested` || l === `all` || l === `favorites` || l === `images`,
+        d = u && !(c && l === `images`),
+        f = d ? n : null,
+        p = d ? r : [],
+        m = d ? s : !1,
+        h = u ? t : [],
+        g = i === `global`,
+        _ = e.length > 0 || p.length > 0 || h.length > 0;
+    return {
+        appliedShowAllTypes: m,
+        applyLibraryFilters: u,
+        fileCategories: PO(o, m, f, p, l),
+        hasSearchCriteria: _,
+        isGlobalFileMode: g,
+        isSearch: a || g || _,
+        shouldSearchDirectories: !a && (!g || c && l === `suggested`) && e.length > 0 && p.length === 0 && h.length === 0,
+        sourceFilters: h,
+        typeFilter: f,
+        typeFilters: p
+    }
+}
+
+function IO(e, t, n, r = !1) {
+    let i = Pr(e, t, r);
+    if (t === `templates` && i.delete(Ch), n)
+        for (let e of [vh, Dh, wh, Yr]) i.delete(e);
+    return i
+}
+
+function LO({
+    directoryId: e,
+    enabled: t,
+    showRefreshedTabs: n
+}) {
+    let r = e == null;
+    return {
+        showListHeader: !0,
+        showProjectsTab: t ? !n : r,
+        showTabs: !t || r
+    }
+}
+var RO = e((() => {
+    Eh(), Ka(), Tm(), Ia(), xi(), Vc(), Eg()
+}));
+
+function zO(e) {
+    if (!ls(e) || Sc(e)) return !1;
+    switch (no(e)) {
+        case `box`:
+            return Sa();
+        case `dropbox`:
+            return Ts();
+        case `sharepoint`:
+            return mo();
+        case `onedrive`:
+            return Hs();
+        default:
+            return !1
+    }
+}
+var BO = e((() => {
+    qr(), Oo(), vc(), Wo(), Hr()
+}));
+
+function VO(e) {
+    switch (e) {
+        case `images`:
+            return `images`;
+        case `uploads`:
+        case `files`:
+            return `files`;
+        case `suggested`:
+        case `folders`:
+        case `all`:
+        case `favorites`:
+        case `templates`:
+        case `widgets`:
+            return `all`;
+        default:
+            return e
+    }
+}
+
+function HO() {
+    let e = ld(),
+        t = 0,
+        n = !1;
+    return {
+        logger: e,
+        mount(r) {
+            n && !r && e.closeSession(`navigation_away`), n = r;
+            let i = ++t;
+            return () => {
+                queueMicrotask(() => {
+                    t === i && e.closeSession(`navigation_away`)
+                })
+            }
+        }
+    }
+}
+
+function UO({
+    activeSearchQuery: e,
+    directoryId: t,
+    fileTypes: n,
+    isDeletedFilesView: r,
+    isExternalDirectory: i,
+    logger: a,
+    showAllFileTypes: o,
+    source: s,
+    tab: c
+}) {
+    let l = Na(t),
+        u = zO(t),
+        d = c !== `favorites` && c !== `templates` && c !== `widgets` && !r && (!i || u || ls(t) && l != null && (Nc(t) || !Sc(t) && oi(l.provider))) && !ge(t) && !o && Lr(),
+        f = d && e.length > 0,
+        p = VO(c);
+    return {
+        enabled: f,
+        logger: a,
+        eligible: d,
+        thirdPartyLibrarySearchEnabled: d && u,
+        queryOptions: f ? {
+            logger: a,
+            ...u ? {
+                thirdPartyLibrarySearchEnabled: !0
+            } : {},
+            context: {
+                query: e,
+                directoryId: t,
+                resultTab: p,
+                source: s,
+                fileType: n.length === 1 ? n[0] : null,
+                ...n.length > 1 ? {
+                    fileTypes: n
+                } : {},
+                deleted: !1
+            }
+        } : void 0,
+        onSearchInputChange(e) {
+            d && (e.trim().length > 0 ? a.openSession() : a.closeSession(`query_cleared`))
+        },
+        onSearchClear() {
+            d && a.closeSession(`query_cleared`)
+        },
+        onSearchFocus() {
+            d && (a.openSession(), wo(), ps())
+        },
+        onTabOpen(e) {
+            d && e !== `widgets` && a.logTabOpen(VO(e))
+        }
+    }
+}
+
+function WO({
+    enabled: e,
+    query: t,
+    hasVisibleResults: n,
+    isSearch: r,
+    isDeleted: i,
+    autoLoading: a,
+    requiresManualLoadMore: o
+}) {
+    let s = e && t.data?.pages.some(e => e.partialResults === !0) === !0,
+        c = e && n,
+        l = r && !i && !n && (t.isPending || a);
+    return {
+        showSearchLoading: l,
+        shouldShowSearchEmptyState: r && !i && !l && !t.isError && !s && !o && !n,
+        showSearchError: t.isError && (e || !t.isFetchNextPageError) && !c,
+        showSearchErrorWithResults: c && t.isError
+    }
+}
+
+function GO(e) {
+    return new Map(e.flatMap((e, t) => e.globalSearchItem == null ? [] : [
+        [e.id, {
+            globalIndex: t,
+            item: e.globalSearchItem
+        }]
+    ]))
+}
+
+function KO(e, t, n, r, i, a = !1, o) {
+    let s = ys(e, t).filter(e => !n.has(e.id));
+    return i || a ? s : Bv(s, r, o)
+}
+
+function qO(e, t, n) {
+    return r => {
+        let i = n.get(r.id);
+        !t.enabled || i == null || (e === `impression` ? t.logger.logResultImpression(i.item, i.globalIndex) : t.logger.logResultOpen(i.item, i.globalIndex))
+    }
+}
+
+function JO(e, t) {
+    return {
+        impression: qO(`impression`, e, t),
+        open: qO(`open`, e, t)
+    }
+}
+var YO = e((() => {
+    sa(), md(), Kc(), Hr(), Wv(), xi(), fn(), pi(), uc(), BO()
+}));
+async function XO({
+    artifact: e,
+    analyticsSurface: t,
+    queryClient: n,
+    pendingToggles: r,
+    removeSavedEntity: i,
+    toggleFavorite: a
+}) {
+    let o = e.libraryFileId;
+    if (o == null) return !1;
+    let s = e.savedEntity?.saved_target;
+    if (s != null) return mp({
+        clickType: `unsave`,
+        target: s,
+        surface: t
+    }), await i({
+        savedTarget: s,
+        isSaved: !0,
+        analyticsSurface: t,
+        globalFavoritesAnalytics: Ef({
+            entityKind: xf(e.classifiers.library_artifact_type, s),
+            surface: t,
+            source: `library`,
+            action: `unsave`
+        })
+    }), !0;
+    if (!yl(e) || r.some(e => e.targetRef.library_file_id === o)) return !1;
+    let c = vf(o),
+        l = await n.fetchQuery(Wd([c], {
+            enabled: !0
+        })),
+        u = l[o];
+    return u == null || u.isFavorited && u.favoriteId == null ? !1 : (u.isFavorited && await nk({
+        artifacts: [e],
+        analyticsSurface: t,
+        enabled: !0,
+        targetBatches: [
+            [c]
+        ],
+        queries: [{
+            data: l
+        }],
+        pendingToggles: [],
+        mutate: a
+    }).onToggleFavorite?.(e), !0)
+}
+async function ZO(e, t) {
+    let n = [],
+        r = new Set,
+        i;
+    for (let a of e) try {
+        await XO({
+            ...t,
+            artifact: a
+        }) ? r.add(a.id) : n.push(a)
+    } catch (e) {
+        i = e, n.push(a)
+    }
+    return {
+        failedArtifacts: n,
+        removedArtifactIds: r,
+        lastError: i
+    }
+}
+var QO, $O, ek, tk, nk, rk = e((() => {
+    uf(), Lf(), cf(), po(), QO = e => bd(e.flatMap(e => e.libraryFileId == null ? [] : [vf(e.libraryFileId)])), $O = e => Object.assign({}, ...e.flatMap(e => e.data == null ? [] : [e.data])), ek = ({
+        enabled: e,
+        targetBatches: t,
+        queries: n
+    }) => new Set(t.flatMap((t, r) => {
+        let i = n[r];
+        return e ? t.flatMap(e => i?.data?.[e.library_file_id] == null ? [e.library_file_id] : []) : []
+    })), tk = ({
+        artifacts: e,
+        analyticsSurface: t = `library_list`,
+        enabled: n,
+        statusByLibraryFileId: r,
+        statusUnavailableLibraryFileIds: i,
+        pendingToggles: a,
+        mutate: o
+    }) => {
+        let s = new Map(a.map(e => [e.targetRef.library_file_id, e])),
+            c = new Set,
+            l = new Set;
+        for (let t of e) {
+            let e = t.libraryFileId;
+            if (e == null) continue;
+            let n = s.get(e),
+                a = r[e];
+            (n == null ? a?.isFavorited : !n.isFavorited) && c.add(t.id), (n != null || i.has(e)) && l.add(t.id)
+        }
+        return {
+            favoritedArtifactIds: c,
+            favoritePendingArtifactIds: l,
+            onToggleFavorite: n ? e => {
+                let n = e.libraryFileId;
+                if (n == null || s.has(n)) return;
+                let i = r[n];
+                if (i == null) return;
+                let a = vf(n),
+                    c = yl(e) && e.originationThreadId != null && e.originationMessageId != null ? {
+                        conversationId: e.originationThreadId,
+                        messageId: e.originationMessageId
+                    } : void 0,
+                    l = i.isFavorited && i.favoriteId != null ? {
+                        targetRef: a,
+                        isFavorited: !0,
+                        favoriteId: i.favoriteId,
+                        ...yl(e) && {
+                            deleteTarget: !0
+                        },
+                        ...c != null && {
+                            conversationBookmark: c
+                        }
+                    } : {
+                        targetRef: a,
+                        isFavorited: !1,
+                        ...c != null && {
+                            conversationBookmark: c
+                        }
+                    };
+                return o({
+                    ...l,
+                    globalFavoritesAnalytics: Ef({
+                        entityKind: xf(e.classifiers.library_artifact_type, e.savedEntity?.saved_target),
+                        surface: t,
+                        source: `library`,
+                        action: l.isFavorited ? `unsave` : `save`
+                    })
+                })
+            } : void 0
+        }
+    }, nk = ({
+        artifacts: e,
+        analyticsSurface: t,
+        enabled: n,
+        targetBatches: r,
+        queries: i,
+        pendingToggles: a,
+        mutate: o
+    }) => tk({
+        artifacts: e,
+        analyticsSurface: t,
+        enabled: n,
+        statusByLibraryFileId: $O(i),
+        statusUnavailableLibraryFileIds: ek({
+            enabled: n,
+            targetBatches: r,
+            queries: i
+        }),
+        pendingToggles: a,
+        mutate: o
+    })
+}));
+
+function ik(e) {
+    "use forget";
+    let t = (0, ok.c)(28),
+        {
+            artifacts: n,
+            confirmDeleteArtifact: r,
+            deleteArtifact: i,
+            downloadFile: a,
+            favoritedArtifactIds: o,
+            favoritePendingArtifactIds: s,
+            isDeletingFileId: c,
+            isMovingFileId: l,
+            isFetchingNextPage: u,
+            listEndRef: d,
+            onDeleteInitiated: f,
+            onDownloadArtifact: p,
+            onMoveArtifact: m,
+            rootDirectoryId: h,
+            onPrefetchSavedEntity: g,
+            masonryGridCards: _,
+            renderGridListEndSentinel: v,
+            shouldRevealGridFileActionsOnHover: y,
+            showSizeColumn: b,
+            squareGridCards: x,
+            viewMode: S,
+            onOpen: C,
+            onToggleFavorite: w
+        } = e,
+        T = o === void 0 ? ck : o,
+        E = s === void 0 ? ck : s,
+        D = l === void 0 ? null : l,
+        O = _ !== void 0 && _,
+        k = v === void 0 || v,
+        A = y === void 0 || y,
+        j = b === void 0 || b,
+        M = x !== void 0 && x,
+        N = m != null,
+        P = m ?? uk,
+        F;
+    t[0] !== n || t[1] !== E || t[2] !== T || t[3] !== c || t[4] !== D || t[5] !== p || t[6] !== C || t[7] !== g || t[8] !== w || t[9] !== h || t[10] !== j || t[11] !== P || t[12] !== N ? (F = {
+        artifacts: n,
+        favoritedArtifactIds: T,
+        favoritePendingArtifactIds: E,
+        allowDrag: !1,
+        canMove: N,
+        rootDirectoryId: h,
+        checkedIds: ck,
+        hasSelection: !1,
+        selectionEnabled: !1,
+        showSelectionControls: !1,
+        showSizeColumn: j,
+        isDeletingFileId: c,
+        materializingFileIds: ck,
+        isMovingFileId: D,
+        isMovingDirectoryId: null,
+        currentDirectoryStateId: null,
+        getDraggedItemsForRow: ak,
+        setDraggedItems: uk,
+        clearDraggedItems: uk,
+        updateSelection: uk,
+        handleOpenArtifact: C,
+        handleOpenMoveFileDialog: P,
+        handleDownloadArtifact: p,
+        onPrefetchSavedEntity: g,
+        onToggleFavorite: w
+    }, t[0] = n, t[1] = E, t[2] = T, t[3] = c, t[4] = D, t[5] = p, t[6] = C, t[7] = g, t[8] = w, t[9] = h, t[10] = j, t[11] = P, t[12] = N, t[13] = F) : F = t[13];
+    let I = F;
+    if (S === `grid`) {
+        let e;
+        return t[14] !== r || t[15] !== u || t[16] !== d || t[17] !== O || t[18] !== k || t[19] !== I || t[20] !== A || t[21] !== M ? (e = (0, sk.jsx)(Wb, {
+            ...I,
+            isFetchingNextPage: u,
+            itemRole: `listitem`,
+            masonry: O,
+            renderListEndSentinel: k,
+            square: M,
+            shouldRevealGridFileActionsOnHover: A,
+            listEndRef: d,
+            confirmDeleteArtifact: r
+        }), t[14] = r, t[15] = u, t[16] = d, t[17] = O, t[18] = k, t[19] = I, t[20] = A, t[21] = M, t[22] = e) : e = t[22], e
+    }
+    let L;
+    return t[23] !== i || t[24] !== a || t[25] !== f || t[26] !== I ? (L = (0, sk.jsx)(Vb, {
+        ...I,
+        selectionGroupFlagsById: lk,
+        isSearchViewActive: !1,
+        downloadFile: a,
+        deleteArtifact: i,
+        onDeleteInitiated: f
+    }), t[23] = i, t[24] = a, t[25] = f, t[26] = I, t[27] = L) : L = t[27], L
+}
+
+function ak() {
+    return null
+}
+var ok, sk, ck, lk, uk, dk = e((() => {
+    ok = qn(), ex(), sk = wn(), ck = new Set, lk = {}, uk = () => {
+        "use no forget";
+    }
+}));
+
+function fk(e) {
+    if (e.availability !== `available` || e.item == null) return null;
+    let t = hr(e.item);
+    return t == null ? null : {
+        favoriteId: e.favorite_id,
+        artifact: {
+            ...t,
+            updatedAt: e.created_at
+        }
+    }
+}
+
+function pk(e) {
+    "use forget";
+    let t = (0, yk.c)(133),
+        {
+            confirmDeleteArtifact: n,
+            deleteArtifact: r,
+            downloadFile: i,
+            favoritesEnabled: a,
+            hiddenDeletedArtifactIds: o,
+            isDeletingFileId: s,
+            isMovingFileId: c,
+            onDeleteInitiated: l,
+            onDownloadLibraryArtifact: u,
+            onMoveLibraryArtifact: d,
+            rootDirectoryId: f,
+            searchQuery: p,
+            viewMode: m,
+            onOpenLibraryArtifact: h,
+            gridClassName: g,
+            fadeGrid: _,
+            masonryGridCards: v,
+            refreshed: y,
+            refreshedEmptyState: b,
+            sourceFilters: x,
+            typeFilters: S
+        } = e,
+        C = g === void 0 ? Wm : g,
+        w = _ !== void 0 && _,
+        T = v !== void 0 && v,
+        E = y !== void 0 && y,
+        D = b !== void 0 && b,
+        O = x === void 0 ? [] : x,
+        k = S === void 0 ? [] : S,
+        A = pt(),
+        j;
+    t[0] === A ? j = t[1] : (j = Wt(A), t[0] = A, t[1] = j);
+    let M = j,
+        P = (0, bk.useContext)(u_),
+        F = (0, bk.useContext)(t_),
+        I = Yn(),
+        L = K(on)?.normalizedAccountUserId,
+        R = K(At),
+        z = K(Ge),
+        B = K(Yt),
+        V = R && B && !z,
+        H = On(),
+        U = Pi(),
+        ee;
+    t[2] === I ? ee = t[3] : (ee = () => {
+        yn().danger(I.formatMessage(Sk.deleteError))
+    }, t[2] = I, t[3] = ee);
+    let W;
+    t[4] === H ? W = t[5] : (W = e => {
+        e.isFavorited && H.setQueryData(Bf(), t => t == null ? t : {
+            ...t,
+            pages: t.pages.map(t => ({
+                ...t,
+                items: t.items.filter(t => t.favorite_id !== e.favoriteId)
+            }))
+        })
+    }, t[4] = H, t[5] = W);
+    let te;
+    t[6] !== H || t[7] !== ee || t[8] !== W ? (te = Of(H, {
+        onError: ee,
+        onSuccess: W
+    }), t[6] = H, t[7] = ee, t[8] = W, t[9] = te) : te = t[9];
+    let ne = Gn(te),
+        re;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (re = $f(), t[10] = re) : re = t[10];
+    let ie = Vn(re),
+        ae;
+    t[11] === H ? ae = t[12] : (ae = async function(e, t) {
+        return await t ? (e.libraryFileId != null && Wf(H, vf(e.libraryFileId), {
+            favoriteId: null,
+            isFavorited: !1
+        }), H.invalidateQueries({
+            queryKey: [`library-favorites`],
+            refetchType: `all`
+        }), !0) : !1
+    }, t[11] = H, t[12] = ae);
+    let G = ae,
+        oe = kt(M.id, N.getCurrentLeafId),
+        se = p.trim().toLocaleLowerCase(),
+        ce = JSON.stringify([se, O, k, m]),
+        le = (0, bk.useRef)(void 0);
+    pe(() => {
+        let e = F?.current;
+        if (!a || e == null) return;
+        let t = Xg({
+            analyticsSession: P,
+            state: e,
+            viewMode: m,
+            isNewEntry: le.current == null,
+            hasViewChanged: le.current != null && le.current !== ce
+        });
+        return le.current = ce, t
+    }, [P, a, ce, m, F]);
+    let ue, de;
+    t[13] !== L || t[14] !== P || t[15] !== a || t[16] !== H || t[17] !== F ? (ue = () => {
+        let e = F?.current;
+        if (!(!a || P == null || e == null)) return $g({
+            accountUserId: L ?? null,
+            analyticsSession: P,
+            queryClient: H,
+            viewState: e
+        })
+    }, de = [L, P, a, H, F], t[13] = L, t[14] = P, t[15] = a, t[16] = H, t[17] = F, t[18] = ue, t[19] = de) : (ue = t[18], de = t[19]), pe(ue, de);
+    let fe = L ?? null,
+        me;
+    t[20] !== a || t[21] !== fe ? (me = ap({
+        enabled: a,
+        accountUserId: fe
+    }), t[20] = a, t[21] = fe, t[22] = me) : me = t[22];
+    let q = Un(me),
+        {
+            fetchNextPage: he,
+            hasNextPage: ge,
+            isFetchingNextPage: _e,
+            isError: ve
+        } = q,
+        ye = (0, bk.useRef)(!1),
+        be = (0, bk.useRef)(!1),
+        xe = q.data?.pages.length ?? 0,
+        Se = a && ge && !ve,
+        Ce = Se,
+        we = a && _e,
+        Te = a && ve,
+        Ee = O.length > 0 || k.length > 0,
+        De, Oe;
+    t[23] !== a || t[24] !== m ? (De = () => {
+        !a || ye.current || (ye.current = !0, qd({
+            event: Cf.BOOKMARKS_TAB_VIEWED,
+            surface: fp(m),
+            viewMode: m
+        }))
+    }, Oe = [a, m], t[23] = a, t[24] = m, t[25] = De, t[26] = Oe) : (De = t[25], Oe = t[26]), (0, bk.useEffect)(De, Oe);
+    let ke, Ae;
+    t[27] !== Te || t[28] !== m ? (ke = () => {
+        Te && !be.current && qd({
+            event: Cf.BOOKMARKS_LOAD_ERROR,
+            surface: fp(m),
+            result: `error`,
+            viewMode: m
+        }), be.current = Te
+    }, Ae = [Te, m], t[27] = Te, t[28] = m, t[29] = ke, t[30] = Ae) : (ke = t[29], Ae = t[30]), (0, bk.useEffect)(ke, Ae);
+    let je;
+    t[31] !== Se || t[32] !== he || t[33] !== Ee || t[34] !== _e || t[35] !== p ? (je = () => {
+        !Se || p.trim().length === 0 && !Ee || _e || he()
+    }, t[31] = Se, t[32] = he, t[33] = Ee, t[34] = _e, t[35] = p, t[36] = je) : je = t[36];
+    let Me;
+    t[37] !== Se || t[38] !== he || t[39] !== Ee || t[40] !== _e || t[41] !== xe || t[42] !== p ? (Me = [Se, he, Ee, _e, xe, p], t[37] = Se, t[38] = he, t[39] = Ee, t[40] = _e, t[41] = xe, t[42] = p, t[43] = Me) : Me = t[43], (0, bk.useEffect)(je, Me);
+    let Ne;
+    t[44] !== Se || t[45] !== he ? (Ne = () => {
+        Se && he()
+    }, t[44] = Se, t[45] = he, t[46] = Ne) : Ne = t[46];
+    let Pe = Ne,
+        Fe;
+    t[47] !== M.id || t[48] !== I.locale || t[49] !== oe ? (Fe = e => {
+        let t = e.savedEntity;
+        if (t == null) return;
+        let {
+            sidebar_params: n
+        } = t.saved_target;
+        n.category !== `product_rationale_and_reviews` && Pg({
+            clientThreadId: M.id,
+            messageId: oe,
+            query: n.name,
+            category: n.category,
+            extraParams: n.extra_params ?? void 0,
+            locale: I.locale
+        })
+    }, t[47] = M.id, t[48] = I.locale, t[49] = oe, t[50] = Fe) : Fe = t[50];
+    let Ie = Fe,
+        Le = (a ? q.data?.pages : void 0)?.flatMap(vk).flatMap(_k) ?? [],
+        Re = tk({
+            artifacts: Le.map(gk),
+            analyticsSurface: m === `grid` ? `library_grid` : `library_list`,
+            enabled: U,
+            statusByLibraryFileId: Object.fromEntries(Le.flatMap(hk)),
+            statusUnavailableLibraryFileIds: new Set,
+            pendingToggles: ie,
+            mutate: ne.mutate
+        }),
+        ze = Le.filter(e => {
+            let {
+                artifact: t
+            } = e;
+            return !o.has(t.id) && t.title.toLocaleLowerCase().includes(se) && (O.length === 0 || O.some(e => Sl(t, e))) && (k.length === 0 || k.some(e => ur(t, e)))
+        }),
+        Be;
+    t[51] !== P || t[52] !== ze.length || t[53] !== a || t[54] !== Ee || t[55] !== ge || t[56] !== q.data || t[57] !== q.isError || t[58] !== q.isFetching || t[59] !== q.isPending || t[60] !== se || t[61] !== F ? (Be = () => {
+        let e = F?.current;
+        if (!(!a || P == null || e == null || q.data == null || q.isPending || q.isFetching || q.isError || (se.length > 0 || Ee) && ge)) return Zg({
+            analyticsSession: P,
+            state: e,
+            visibleItemCount: ze.length
+        })
+    }, t[51] = P, t[52] = ze.length, t[53] = a, t[54] = Ee, t[55] = ge, t[56] = q.data, t[57] = q.isError, t[58] = q.isFetching, t[59] = q.isPending, t[60] = se, t[61] = F, t[62] = Be) : Be = t[62];
+    let Ve;
+    t[63] !== P || t[64] !== ze.length || t[65] !== a || t[66] !== Ee || t[67] !== ge || t[68] !== q.data || t[69] !== q.isError || t[70] !== q.isFetching || t[71] !== q.isPending || t[72] !== se || t[73] !== ce || t[74] !== F ? (Ve = [P, ze.length, a, Ee, ge, q.data, q.isError, q.isFetching, q.isPending, se, ce, F], t[63] = P, t[64] = ze.length, t[65] = a, t[66] = Ee, t[67] = ge, t[68] = q.data, t[69] = q.isError, t[70] = q.isFetching, t[71] = q.isPending, t[72] = se, t[73] = ce, t[74] = F, t[75] = Ve) : Ve = t[75], (0, bk.useEffect)(Be, Ve);
+    let He;
+    t[76] === ze ? He = t[77] : (He = ze.map(mk), t[76] = ze, t[77] = He);
+    let Ue;
+    t[78] !== n || t[79] !== G ? (Ue = (e, t) => G(e, n(e, t)), t[78] = n, t[79] = G, t[80] = Ue) : Ue = t[80];
+    let We;
+    t[81] !== r || t[82] !== G ? (We = (e, t) => G(e, r(e, t)), t[81] = r, t[82] = G, t[83] = We) : We = t[83];
+    let Ke = !E,
+        qe = !T,
+        Je;
+    t[84] !== i || t[85] !== s || t[86] !== c || t[87] !== Re.favoritePendingArtifactIds || t[88] !== Re.favoritedArtifactIds || t[89] !== Re.onToggleFavorite || t[90] !== T || t[91] !== l || t[92] !== u || t[93] !== d || t[94] !== h || t[95] !== Ie || t[96] !== f || t[97] !== V || t[98] !== He || t[99] !== Ue || t[100] !== We || t[101] !== Ke || t[102] !== qe || t[103] !== m ? (Je = (0, xk.jsx)(ik, {
+        artifacts: He,
+        confirmDeleteArtifact: Ue,
+        deleteArtifact: We,
+        downloadFile: i,
+        favoritedArtifactIds: Re.favoritedArtifactIds,
+        favoritePendingArtifactIds: Re.favoritePendingArtifactIds,
+        isDeletingFileId: s,
+        isMovingFileId: c,
+        isFetchingNextPage: !1,
+        listEndRef: Ck,
+        onDeleteInitiated: l,
+        onDownloadArtifact: u,
+        onMoveArtifact: d,
+        rootDirectoryId: f,
+        onPrefetchSavedEntity: Ie,
+        masonryGridCards: T,
+        renderGridListEndSentinel: !1,
+        shouldRevealGridFileActionsOnHover: V,
+        showSizeColumn: Ke,
+        squareGridCards: qe,
+        viewMode: m,
+        onOpen: h,
+        onToggleFavorite: Re.onToggleFavorite
+    }), t[84] = i, t[85] = s, t[86] = c, t[87] = Re.favoritePendingArtifactIds, t[88] = Re.favoritedArtifactIds, t[89] = Re.onToggleFavorite, t[90] = T, t[91] = l, t[92] = u, t[93] = d, t[94] = h, t[95] = Ie, t[96] = f, t[97] = V, t[98] = He, t[99] = Ue, t[100] = We, t[101] = Ke, t[102] = qe, t[103] = m, t[104] = Je) : Je = t[104];
+    let Ye = Je,
+        Xe;
+    t[105] !== a || t[106] !== q ? (Xe = () => {
+        a && q.refetch()
+    }, t[105] = a, t[106] = q, t[107] = Xe) : Xe = t[107];
+    let Ze = Xe,
+        Qe;
+    t[108] === Symbol.for(`react.memo_cache_sentinel`) ? (Qe = (0, xk.jsx)(X, {
+        ...Sk.loadError
+    }), t[108] = Qe) : Qe = t[108];
+    let $e;
+    t[109] === Ze ? $e = t[110] : ($e = (0, xk.jsx)(Tx, {
+        title: Qe,
+        onRetry: Ze
+    }), t[109] = Ze, t[110] = $e);
+    let et = $e;
+    if (a && q.isPending && ze.length === 0) {
+        let e;
+        return t[111] !== C || t[112] !== T || t[113] !== m ? (e = m === `grid` ? (0, xk.jsx)($x, {
+            gridClassName: C,
+            masonry: T,
+            thumbnailClassName: T ? void 0 : `aspect-square h-auto rounded-2xl`
+        }) : (0, xk.jsx)(Qx, {}), t[111] = C, t[112] = T, t[113] = m, t[114] = e) : e = t[114], e
+    }
+    if (Te && ze.length === 0 && !Ce && !we) return et;
+    if (ze.length === 0 && !Ce && !we) {
+        if (D && se.length === 0 && !Ee) {
+            let e;
+            return t[115] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, xk.jsx)(gx, {
+                hasSearchQuery: !1,
+                refreshedVariant: `favorites`
+            }), t[115] = e) : e = t[115], e
+        }
+        let e = se.length > 0 || Ee ? Sk.searchEmpty : Sk.empty,
+            n;
+        return t[116] === e ? n = t[117] : (n = (0, xk.jsx)(`div`, {
+            className: `text-token-text-secondary px-6 py-14 text-center`,
+            children: (0, xk.jsx)(X, {
+                ...e
+            })
+        }), t[116] = e, t[117] = n), n
+    }
+    let tt;
+    t[118] !== w || t[119] !== Ye || t[120] !== C || t[121] !== T || t[122] !== E || t[123] !== m ? (tt = m === `grid` ? (0, xk.jsx)(Gw, {
+        enabled: w,
+        role: `list`,
+        className: J(!T && C, `pt-4`),
+        children: Ye
+    }) : (0, xk.jsxs)(xk.Fragment, {
+        children: [(0, xk.jsxs)(Op, {
+            testId: `saved-entities-library-list-header`,
+            className: Cm({
+                showSizeColumn: !E
+            }),
+            children: [(0, xk.jsx)(Ap, {
+                children: (0, xk.jsx)(X, {
+                    ...Sk.columnName
+                })
+            }), (0, xk.jsx)(Ap, {
+                className: `hidden sm:block`,
+                children: (0, xk.jsx)(X, {
+                    ...Sk.columnSaved
+                })
+            }), !E && (0, xk.jsx)(Ap, {
+                className: `hidden sm:block sm:ps-4`,
+                children: (0, xk.jsx)(X, {
+                    ...Z.columnSize
+                })
+            })]
+        }), (0, xk.jsx)(jp, {
+            children: Ye
+        })]
+    }), t[118] = w, t[119] = Ye, t[120] = C, t[121] = T, t[122] = E, t[123] = m, t[124] = tt) : tt = t[124];
+    let nt = Te ? et : null,
+        rt;
+    t[125] !== Ce || t[126] !== we || t[127] !== Pe ? (rt = Ce || we ? (0, xk.jsx)(`div`, {
+        className: `flex justify-center pt-3`,
+        children: (0, xk.jsx)(`button`, {
+            "aria-busy": we,
+            className: J(`border-token-border-light text-token-text-primary rounded-full border px-4 py-2 text-[14px] leading-[18px] font-medium`, `hover:bg-token-bg-secondary focus-visible:ring-token-ring focus-visible:ring-2 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50`),
+            disabled: we || !Ce,
+            onClick: Pe,
+            type: `button`,
+            children: (0, xk.jsx)(X, {
+                ...Sk.loadMore
+            })
+        })
+    }) : null, t[125] = Ce, t[126] = we, t[127] = Pe, t[128] = rt) : rt = t[128];
+    let it;
+    return t[129] !== tt || t[130] !== nt || t[131] !== rt ? (it = (0, xk.jsxs)(`div`, {
+        className: `flex flex-col`,
+        children: [tt, nt, rt]
+    }), t[129] = tt, t[130] = nt, t[131] = rt, t[132] = it) : it = t[132], it
+}
+
+function mk(e) {
+    return e.artifact
+}
+
+function hk(e) {
+    return e.artifact.libraryFileId == null ? [] : [
+        [e.artifact.libraryFileId, {
+            favoriteId: e.favoriteId,
+            isFavorited: !0
+        }]
+    ]
+}
+
+function gk(e) {
+    return e.artifact
+}
+
+function _k(e) {
+    let t = fk(e);
+    return t == null ? [] : [t]
+}
+
+function vk(e) {
+    return e.items
+}
+var yk, bk, xk, Sk, Ck, wk = e((() => {
+    yk = qn(), Bt(), Fg(), n_(), d_(), kp(), Px(), xx(), Kw(), Tm(), eS(), Ka(), rk(), Ng(), wr(), cf(), dy(), xi(), jd(), Kt(), fe(), s(), W(), zt(), R(), z(), Kn(), ke(), bk = t(Fn()), Pn(), uf(), dk(), xk = wn(), Sk = Dn({
+        columnName: {
+            id: `chatgpt.saved_entities.library.column.name`,
+            defaultMessage: `Name`
+        },
+        columnSaved: {
+            id: `chatgpt.saved_entities.library.column.saved`,
+            defaultMessage: `Saved`
+        },
+        empty: {
+            id: `chatgpt.saved_entities.library.empty`,
+            defaultMessage: `No favorites yet.`
+        },
+        searchEmpty: {
+            id: `chatgpt.saved_entities.library.search_empty`,
+            defaultMessage: `No favorites found.`
+        },
+        loadError: {
+            id: `chatgpt.saved_entities.library.load_error`,
+            defaultMessage: `Failed to load favorites.`
+        },
+        loadMore: {
+            id: `chatgpt.saved_entities.library.load_more`,
+            defaultMessage: `Load more`
+        },
+        deleteError: {
+            id: `chatgpt.saved_entities.library.delete_error`,
+            defaultMessage: `Could not remove favorite.`
+        }
+    }), Ck = () => {
+        "use no forget";
+    }
+}));
+
+function Tk() {
+    "use forget";
+    let e = (0, Ek.c)(5),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = Pi(), e[0] = t) : t = e[0];
+    let n = t,
+        r;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (r = Pi(), e[1] = r) : r = e[1];
+    let i = r,
+        a;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = $f(), e[2] = a) : a = e[2];
+    let o = Vn(a),
+        s;
+    return e[3] === o ? s = e[4] : (s = {
+        libraryFavoritesEnabled: n,
+        libraryFileFavoriteEnabled: i,
+        showFavorites: n,
+        pendingFavoriteToggles: o
+    }, e[3] = o, e[4] = s), s
+}
+var Ek, Dk = e((() => {
+    Ek = qn(), cf(), Ng(), Kn()
+}));
+
+function Ok(e, t = () => void 0) {
+    Promise.resolve().then(e).catch(t)
+}
+
+function kk(e, t, n, r) {
+    function i(n, {
+        refetchInactiveLibrary: r = !1,
+        rootDirectoryId: i = t
+    } = {}, a) {
+        return Ke(), Promise.all(za(n, i).flatMap(t => [e.invalidateQueries({
+            queryKey: [d, t],
+            refetchType: r ? `all` : `active`
+        }, a), e.invalidateQueries({
+            queryKey: pl(t),
+            refetchType: `all`
+        }, a)]))
+    }
+
+    function a(t) {
+        return e.invalidateQueries({
+            queryKey: [he]
+        }, t)
+    }
+
+    function o(t) {
+        return e.invalidateQueries({
+            queryKey: [Yi],
+            refetchType: `all`
+        }, t)
+    }
+
+    function s(t) {
+        return e.invalidateQueries({
+            queryKey: zs
+        }, t)
+    }
+
+    function c(t, {
+        clearCacheOnDelete: n = !1,
+        includeArtifactQueries: r = !0
+    } = {}, c) {
+        n && e.removeQueries({
+            queryKey: [d]
+        });
+        let l = [i(t, void 0, c), a(c)];
+        return r && l.push(o(c), s(c)), Promise.all(l)
+    }
+
+    function l(e, t) {
+        Ok(() => i(e, t))
+    }
+
+    function u(e, t, n) {
+        for (let r of e) l(r, {
+            refetchInactiveLibrary: r === t,
+            rootDirectoryId: n
+        })
+    }
+    return {
+        refreshDirectory: i,
+        refreshSearchResults: a,
+        refreshDeletedFiles: o,
+        refreshLibraryStorageUsage: s,
+        refreshAfterDelete: c,
+        refreshDirectoryInBackground: l,
+        refreshMovedArtifactDirectoriesInBackground: u,
+        refreshAfterDeleteInBackground: (e = {}) => Ok(() => c(n, e, {
+            throwOnError: !0
+        }), r),
+        refreshSearchResultsInBackground: () => Ok(a),
+        refreshDirectoryPathInBackground: () => Ok(() => e.invalidateQueries({
+            queryKey: [$h]
+        }))
+    }
+}
+var Ak = e((() => {
+    zi(), nl(), qh(), _r(), Ic(), Vc()
+}));
+
+function jk(e) {
+    "use forget";
+    let t = (0, mA.c)(4),
+        n;
+    t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+    let {
+        initialTab: r
+    } = n, i;
+    return t[2] === r ? i = t[3] : (i = (0, gA.jsx)(DE, {
+        FolderedLibraryController: Mk,
+        initialTab: r
+    }), t[2] = r, t[3] = i), i
+}
+
+function Mk(e) {
+    "use forget";
+    let t = (0, mA.c)(228),
+        {
+            analyticsSession: n,
+            canUploadIntoSharedFolder: r,
+            children: i,
+            deletedFilesEnabled: a,
+            initialTab: o,
+            onViewModeChange: s,
+            viewMode: c
+        } = e,
+        l = qt(),
+        u = Ed(),
+        p = pt(),
+        m = Yn(),
+        h = dd(!0),
+        {
+            maxUploads: g
+        } = oo(We.Retrieval),
+        _ = K(At),
+        y = K(Ge),
+        b = K(Yt),
+        x = K(Zt),
+        S = _ && b && !y,
+        C = yn(l),
+        {
+            isLibraryStorageLimitFull: w,
+            isLibraryStorageLimitUploadBlocked: T,
+            showLibraryStorageLimitBlockedUploadNotice: E
+        } = Cp({
+            intl: m,
+            toaster: C
+        }),
+        D = et(),
+        k = On(),
+        A = Cn(),
+        j = kn(),
+        M = Tn(),
+        [N] = In(),
+        [F, I] = (0, hA.useState)(Gr),
+        L;
+    t[0] === F ? L = t[1] : (L = F ? {
+        key: `size`,
+        direction: Uv.size
+    } : null, t[0] = F, t[1] = L);
+    let [R, z] = (0, hA.useState)(L), B = R ?? Hv, V = R == null, H;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (H = e => {
+        z(t => Fv(t, e))
+    }, t[2] = H) : H = t[2];
+    let U = H,
+        [ee, W] = (0, hA.useState)(!1),
+        [te, ne] = (0, hA.useState)(null),
+        re = dd(``),
+        ie = dd(!1),
+        ae = dd(``),
+        G = dd(null),
+        [oe, se] = (0, hA.useState)(null),
+        [ce, le] = (0, hA.useState)(pA),
+        de;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (de = () => Vw(le), t[3] = de) : de = t[3];
+    let [fe] = (0, hA.useState)(de), [me, q] = (0, hA.useState)(null), [he, _e] = (0, hA.useState)(null), [ve, ye] = (0, hA.useState)(null), [be, xe] = (0, hA.useState)(null), [Se, Ce] = (0, hA.useState)(null), we;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (we = [], t[4] = we) : we = t[4];
+    let [Te, Ee] = (0, hA.useState)(we), De;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (De = [], t[5] = De) : De = t[5];
+    let [Oe, ke] = (0, hA.useState)(De), Ae;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (Ae = [], t[6] = Ae) : Ae = t[6];
+    let [je, Me] = (0, hA.useState)(Ae), Ne;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (Ne = [], t[7] = Ne) : Ne = t[7];
+    let [Pe, Fe] = (0, hA.useState)(Ne), [Ie, Le] = (0, hA.useState)(0), [Re, ze] = (0, hA.useState)(fA), [Be, Ve] = (0, hA.useState)(dA), [He, Ue] = (0, hA.useState)(uA), [qe, Je] = (0, hA.useState)(lA), [Ye, Xe] = (0, hA.useState)(cA), [Ze, Qe] = (0, hA.useState)(sA), [$e, tt] = (0, hA.useState)(null), [nt, rt] = (0, hA.useState)(null), [it, at] = (0, hA.useState)(!1), [ot] = (0, hA.useState)(oA), st = dd(!1), ct = dd(!1), lt = dd(null), ut = dd(null), dt = dd(null), ft;
+    t[8] === fe.cancel ? ft = t[9] : (ft = () => fe.cancel, t[8] = fe.cancel, t[9] = ft);
+    let mt;
+    t[10] !== A.key || t[11] !== fe ? (mt = [fe, A.key], t[10] = A.key, t[11] = fe, t[12] = mt) : mt = t[12], pe(ft, mt);
+    let ht;
+    t[13] === A.pathname ? ht = t[14] : (ht = Xa(A.pathname), t[13] = A.pathname, t[14] = ht);
+    let {
+        basePathname: gt,
+        directoryId: _t
+    } = ht, vt = N.get(qm), Y = _t ?? vt, yt = K(on), bt;
+    t[15] === yt ? bt = t[16] : (bt = Rc(yt), t[15] = yt, t[16] = bt);
+    let xt = bt,
+        St = Zo(Y),
+        Ct = ge(Y),
+        wt = Ct && !xt,
+        Tt = ns(Y) || Ct,
+        Et = w && !St && !Ct,
+        Dt = lD(),
+        Ot;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (Ot = xs(), t[17] = Ot) : Ot = t[17];
+    let kt = Ot,
+        jt;
+    t[18] !== ie || t[19] !== ct || t[20] !== G ? (jt = () => ({
+        isCreatingFolder: ie(),
+        isDeletedFileActionConfirmLoading: ct(),
+        isRenamingDirectoryId: G(),
+        showHiddenFiles: pm(),
+        ...mm(kt)
+    }), t[18] = ie, t[19] = ct, t[20] = G, t[21] = jt) : jt = t[21];
+    let {
+        isCreatingFolder: Mt,
+        isDeletedFileActionConfirmLoading: Pt,
+        isRenamingDirectoryId: Ft,
+        showHiddenFiles: It,
+        hiddenProviders: Lt,
+        hiddenSources: Rt,
+        browseVisibility: zt,
+        suggestedRequestSelection: Bt,
+        visibleProviders: Vt
+    } = K(jt), Ht = wm(kt), Ut = aa(Y), {
+        activeSearchQuery: Wt,
+        activeSourceFilter: Gt,
+        activeSourceFilters: Kt,
+        activeSourceFilterFromUrl: Jt,
+        activeTypeFilter: Qt,
+        activeTypeFilters: $t,
+        activeTypeFilterFromUrl: en,
+        isDeleted: tn,
+        requestedLibraryMode: nn,
+        showAllFileTypes: rn
+    } = jO(Ut ? new URLSearchParams : N, a, St, Dt, kt), an = _E(), {
+        libraryFavoritesEnabled: sn,
+        libraryFileFavoriteEnabled: cn,
+        showFavorites: ln,
+        pendingFavoriteToggles: un
+    } = Tk(), dn = K(aA), fn = ti(N.get(`tab`) ?? o ?? null, an, ln, kt, Y == null), pn = kt && !tn && Y == null && Wt.length > 0 ? `suggested` : fn.initialTab, [hn, gn] = (0, hA.useState)(pn), {
+        isFavoritesTab: _n,
+        isLibraryTab: vn,
+        isStandaloneTab: bn,
+        isTemplatesTab: xn,
+        isWidgetsTab: wn
+    } = fn.resolve(hn), {
+        activeLibraryMode: En,
+        appliedShowAllTypes: Dn,
+        applyLibraryFilters: jn,
+        contentTab: Mn,
+        effectiveSourceFilter: Nn,
+        fileCategories: Pn,
+        hasSearchCriteria: Fn,
+        imagesGridOnly: Ln,
+        isGlobalFileMode: Rn,
+        isFlatRootTab: zn,
+        isSearch: Bn,
+        shouldSearchDirectories: Vn,
+        showRefreshedLibraryTabs: Hn,
+        sourceFilters: Wn,
+        typeFilters: Kn,
+        viewMode: qn
+    } = MO({
+        tab: hn,
+        preferredViewMode: c,
+        directoryId: Y,
+        pathname: A.pathname,
+        requestedLibraryMode: nn,
+        activeSourceFilter: Gt,
+        forceFolderMode: St || Ct,
+        hideRefreshedLibraryTabs: tn || wn,
+        isDeleted: tn,
+        libraryIARefreshEnabled: kt,
+        activeSearchQuery: Wt,
+        activeTypeFilter: Qt,
+        activeTypeFilters: $t,
+        activeSourceFilters: Kt,
+        showAllFileTypes: rn || kt && Dt && It,
+        isStandaloneTab: bn
+    }), Jn = Mn === `suggested` && Wt.length === 0, Xn = qn === `grid`, Qn = Xn && xs(), $n = aC(tn), er = sC(Y, St), tr = (0, hA.useContext)(t_), rr;
+    t[22] === k ? rr = t[23] : (rr = e => Hg(k, e), t[22] = k, t[23] = rr);
+    let ir = fC($n, n, {
+            tab: tn ? void 0 : Mn,
+            viewMode: c,
+            favoritesViewState: tr,
+            getIsFavorited: rr
+        }),
+        ar;
+    t[24] === n ? ar = t[25] : (ar = () => MD(n), t[24] = n, t[25] = ar);
+    let [or] = (0, hA.useState)(ar), cr = or.retry, lr = dC({
+        analytics: ir,
+        analyticsSession: n,
+        deletedFilesEnabled: a,
+        isDeleted: tn,
+        libraryOrigin: $n
+    }), ur = vn && !tn && cn, fr = OO(kt, _n), [pr, mr] = (0, hA.useState)(Wt), hr = (0, hA.useRef)(Wt), gr = (0, hA.useRef)(Y), _r = (0, hA.useRef)(null), vr = _O(), yr = (0, hA.useRef)(null), br = (0, hA.useRef)(null), xr = (0, hA.useRef)(null), Sr;
+    t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (Sr = new Set, t[26] = Sr) : Sr = t[26];
+    let Cr = (0, hA.useRef)(Sr),
+        wr;
+    t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (wr = new Set, t[27] = wr) : wr = t[27];
+    let Tr = (0, hA.useRef)(wr),
+        Er = (0, hA.useRef)(0),
+        Dr = Xt(void 0),
+        [Or, kr] = (0, hA.useState)(iA),
+        Ar;
+    t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (Ar = () => {
+        Fr() && I(!0)
+    }, t[28] = Ar) : Ar = t[28];
+    let jr;
+    t[29] === A.key ? jr = t[30] : (jr = [A.key], t[29] = A.key, t[30] = jr), (0, hA.useEffect)(Ar, jr);
+    let Mr, Nr;
+    t[31] === F ? (Mr = t[32], Nr = t[33]) : (Mr = () => {
+        F && (z({
+            key: `size`,
+            direction: Uv.size
+        }), I(!1))
+    }, Nr = [F], t[31] = F, t[32] = Mr, t[33] = Nr), (0, hA.useEffect)(Mr, Nr);
+    let Pr = An({
+            queryKey: K(() => Zh(Y)),
+            queryFn: () => dc(Y),
+            staleTime: Ut ? 0 : 3e4,
+            refetchOnMount: Ut ? `always` : void 0,
+            enabled: (vn || _n) && (Y != null || !Wt) && !tn && !wt
+        }),
+        {
+            canCreateInNativeFolder: Ir,
+            canUploadIntoCurrentDirectory: Lr
+        } = sb({
+            directoryId: Y,
+            path: Pr.data?.items,
+            isCurrentReadOnlyDirectory: Tt,
+            canUploadIntoSharedFolder: r
+        }),
+        Rr = Uo(Pr.data),
+        zr = Zn(Y, Pr.data),
+        Br = {
+            analyticsSession: n,
+            rootDirectoryId: Rr,
+            showSelectionControls: !1,
+            showSizeColumn: !zn && !(Hn && Mn === `folders`)
+        },
+        Hr = !bn && (kt && tn || !tn && !Rn && zr != null),
+        Ur = Rn ? null : Y,
+        [Wr] = (0, hA.useState)(HO),
+        Kr = UO({
+            activeSearchQuery: Wt,
+            directoryId: Ur,
+            fileTypes: Kn,
+            isDeletedFilesView: tn,
+            isExternalDirectory: St,
+            logger: Wr.logger,
+            showAllFileTypes: Dn,
+            source: Nn,
+            tab: Mn
+        }),
+        qr = kt && vn && Bn && !tn && !wt && Kn.length > 0 && !Kr.enabled ? Kn : void 0;
+    (0, hA.useEffect)(() => Wr.mount(Kr.eligible), [Kr.eligible, Wr]);
+    let {
+        path: Jr,
+        pageTitle: Yr,
+        rootBreadcrumbLabel: Xr,
+        shouldCollapseBreadcrumbAncestors: Zr,
+        showAllResultsLabel: Qr
+    } = kO({
+        currentDirectoryId: Y,
+        directoryPath: Pr.data,
+        enabled: kt,
+        intl: m,
+        isDeleted: tn,
+        isGlobalFileMode: Rn,
+        isLibraryTab: vn,
+        isStandaloneTab: bn,
+        searchQuery: Wt
+    }), $r = Mn !== `folders`, ei = K(() => us(En, Ur, Wt, Pn, Nn, Dn, Jn ? `suggested` : null, qs(Kr.queryOptions, Vt), Vt, qr, {
+        includeFiles: $r,
+        suggestedRequestSelection: Y == null ? Bt : void 0
+    })), ri = Un({
+        ...ei,
+        enabled: vn && Bn && !tn && !wt && (!Jn || Bt?.isReady !== !1)
+    }), ii = ei.meta?.preservePartialResults === !0, ai = Tc(Wt, Pn, Dn, Nn), oi = Un({
+        ...ai,
+        enabled: vn && tn
+    }), si = K(() => yo(Y, Pn, Dn, {
+        includeFiles: $r
+    })), ci = Un({
+        ...si,
+        enabled: vn && !Bn && !wt
+    }), {
+        data: li,
+        fetchNextPage: ui,
+        hasNextPage: fi,
+        isFetchingNextPage: pi
+    } = ci, {
+        data: mi,
+        fetchNextPage: hi,
+        hasNextPage: _i,
+        isFetchingNextPage: vi
+    } = ri, yi = ii && ri.isFetchNextPageError, bi;
+    t[34] !== hi || t[35] !== yi || t[36] !== vi || t[37] !== cr || t[38] !== ri.refetch ? (bi = function() {
+        if (yi) {
+            vi || cr(() => hi({
+                cancelRefetch: !1
+            }));
+            return
+        }
+        cr(ri.refetch)
+    }, t[34] = hi, t[35] = yi, t[36] = vi, t[37] = cr, t[38] = ri.refetch, t[39] = bi) : bi = t[39];
+    let xi = bi,
+        Ci = mi?.pages[0]?.searchQueryId ?? (Kr.enabled ? Wr.logger.getCurrentQueryId() : void 0),
+        wi;
+    t[40] === Ci ? wi = t[41] : (wi = () => Ci, t[40] = Ci, t[41] = wi);
+    let Ti = mn(wi),
+        {
+            data: Ei,
+            fetchNextPage: Di,
+            isFetchingNextPage: Oi
+        } = oi,
+        ki = tn ? oi : Bn ? ri : ci,
+        Ai = tn ? ai.queryKey : Bn ? ei.queryKey : si.queryKey,
+        ji = !!ki.hasNextPage,
+        Mi = ki.isFetchingNextPage,
+        Ni = ki.isFetchNextPageError,
+        Pi = ki.isError,
+        Fi = async function() {
+            if (tn) {
+                await Di();
+                return
+            }
+            if (Bn) {
+                await hi();
+                return
+            }
+            await ui()
+        }, Ii;
+    t[42] !== gt || t[43] !== j || t[44] !== fe ? (Ii = (e, t, n) => {
+        let r = n !== void 0 && n;
+        fe.cancel(), j(UD(gt, e, t), {
+            replace: r
+        })
+    }, t[42] = gt, t[43] = j, t[44] = fe, t[45] = Ii) : Ii = t[45];
+    let Li = Ii,
+        Ri = Pr.data?.items,
+        zi;
+    t[46] !== Y || t[47] !== Ri ? (zi = WD(Y, Ri), t[46] = Y, t[47] = Ri, t[48] = zi) : zi = t[48];
+    let Bi = zi,
+        Vi, Hi;
+    t[49] !== Bi || t[50] !== Li || t[51] !== N ? (Vi = () => {
+        Bi != null && Li(Bi, N, !0)
+    }, Hi = [Bi, Li, N], t[49] = Bi, t[50] = Li, t[51] = N, t[52] = Vi, t[53] = Hi) : (Vi = t[52], Hi = t[53]), (0, hA.useEffect)(Vi, Hi);
+    let Ui;
+    t[54] !== Y || t[55] !== Pr.data || t[56] !== Pr.isError || t[57] !== Pr.isFetchedAfterMount || t[58] !== Pr.isFetching || t[59] !== Li || t[60] !== k || t[61] !== N ? (Ui = [Y, Pr.data, Pr.isError, Pr.isFetchedAfterMount, Pr.isFetching, Li, k, N], t[54] = Y, t[55] = Pr.data, t[56] = Pr.isError, t[57] = Pr.isFetchedAfterMount, t[58] = Pr.isFetching, t[59] = Li, t[60] = k, t[61] = N, t[62] = Ui) : Ui = t[62], (0, hA.useEffect)(() => {
+        let e = Pr.data;
+        if (!Pr.isFetchedAfterMount || Pr.isFetching || Pr.isError || e == null) return;
+        let t = Si(Y, e.items);
+        t != null && (Xh(k, t.id, e.items), Li(t.id, N, !0))
+    }, Ui);
+    let Wi = pC({
+            analytics: ir,
+            currentFileTypeFilter: en,
+            currentSourceFilter: Jt,
+            currentTab: hn,
+            goTo: Li,
+            showFavorites: ln,
+            showWidgetsInspector: an,
+            libraryIARefreshEnabled: kt
+        }),
+        Gi = mn(ir.folderNavigated),
+        {
+            goToBreadcrumb: Ki,
+            logFolderOpened: qi,
+            openDirectory: Ji
+        } = GD({
+            directoryId: Y,
+            directoryPath: Pr.data,
+            goTo: Li,
+            isAccountChooserDirectory: Ut,
+            logNavigation: Gi,
+            navigation$: dt,
+            queryClient: k,
+            rootDirectoryId: Rr,
+            searchParams: N,
+            shareSessionId: n.sessionId
+        });
+    (0, hA.useEffect)(() => KD({
+        directoryId: Y,
+        directoryPath: Pr.data,
+        locationKey: A.key,
+        logNavigation: Gi,
+        navigationType: M,
+        navigation$: dt,
+        rootDirectoryId: Rr
+    }), [Y, Pr.data, A.key, Gi, M, dt, Rr]);
+    let Yi;
+    t[63] !== Y || t[64] !== Li || t[65] !== N ? (Yi = [Y, Li, N], t[63] = Y, t[64] = Li, t[65] = N, t[66] = Yi) : Yi = t[66], (0, hA.useEffect)(() => {
+        if (N.get(`tab`) !== `notes`) return;
+        let e = new URLSearchParams(N);
+        e.delete(`tab`), Li(Y, e, !0)
+    }, Yi);
+    let Xi = function(e) {
+            gn(e), Kr.onTabOpen(e);
+            let t = IO(N, e, Hn || e === `favorites` || e === `templates` || xn, kt);
+            Wi(e === `favorites` || e === `templates` ? null : Y, t, !0, `category`)
+        },
+        Zi;
+    t[67] === pn ? Zi = t[68] : (Zi = [pn], t[67] = pn, t[68] = Zi), (0, hA.useEffect)(() => {
+        gn(pn)
+    }, Zi);
+    let Qi;
+    t[69] === Symbol.for(`react.memo_cache_sentinel`) ? (Qi = e => {
+        Fe(t => t.includes(e) ? t : [...t, e])
+    }, t[69] = Qi) : Qi = t[69];
+    let $i = Qi,
+        ea;
+    t[70] !== Li || t[71] !== vt || t[72] !== _t || t[73] !== N ? (ea = [vt, Li, _t, N], t[70] = Li, t[71] = vt, t[72] = _t, t[73] = N, t[74] = ea) : ea = t[74], (0, hA.useEffect)(() => {
+        if (vt == null) return;
+        let e = new URLSearchParams(N);
+        e.delete(qm), Li(_t ?? vt, e, !0)
+    }, ea), (0, hA.useEffect)(() => {
+        let e = Ca({
+            categoryQueryParam: Dh,
+            isCurrentExternalLibraryDirectory: St,
+            isDeletedFilesView: tn && !kt,
+            modeQueryParam: vh,
+            searchParams: N,
+            sourceQueryParam: wh
+        });
+        (wt || tn && Y != null || e != null) && Li(tn || wt ? null : Y, e ?? N, !0)
+    }, [Y, St, tn, wt, kt, Li, N]);
+    let ta;
+    t[75] === Y ? ta = t[76] : (ta = [Y], t[75] = Y, t[76] = ta), (0, hA.useEffect)(() => {
+        gr.current = Y
+    }, ta);
+    let ia;
+    t[77] !== Wt || t[78] !== pr ? (ia = [Wt, pr], t[77] = Wt, t[78] = pr, t[79] = ia) : ia = t[79], (0, hA.useEffect)(() => {
+        pr.trim() === hr.current && mr(Wt), hr.current = Wt
+    }, ia);
+    let oa;
+    t[80] !== Wt || t[81] !== Y || t[82] !== Li || t[83] !== pr || t[84] !== N ? (oa = [Wt, Y, Li, pr, N], t[80] = Wt, t[81] = Y, t[82] = Li, t[83] = pr, t[84] = N, t[85] = oa) : oa = t[85], (0, hA.useEffect)(() => {
+        let e = pr.trim();
+        if (e === Wt) return;
+        let t = window.setTimeout(() => {
+            let t = new URLSearchParams(N);
+            e.length === 0 ? t.delete(Km) : t.set(Km, e), Li(Y, t, !0)
+        }, 200);
+        return () => {
+            window.clearTimeout(t)
+        }
+    }, oa);
+    let sa = li?.pages,
+        ca;
+    t[86] === sa ? ca = t[87] : (ca = Ko(sa), t[86] = sa, t[87] = ca);
+    let la = ca,
+        da = mi?.pages,
+        fa;
+    t[88] === da ? fa = t[89] : (fa = Ko(da), t[88] = da, t[89] = fa);
+    let pa = fa,
+        ma;
+    t[90] === pa ? ma = t[91] : (ma = GO(pa), t[90] = pa, t[91] = ma);
+    let ga = ma,
+        va;
+    t[92] !== Kr || t[93] !== ga ? (va = JO(Kr, ga), t[92] = Kr, t[93] = ga, t[94] = va) : va = t[94];
+    let ba = va,
+        xa = mn(ba.impression),
+        Sa = mn(ba.open),
+        Ta = Kr.enabled ? {
+            onOpenArtifact: Sa,
+            onVisibleArtifact: xa
+        } : {},
+        Ea;
+    t[95] === Ei?.pages ? Ea = t[96] : (Ea = Ei?.pages.flatMap(rA) ?? [], t[95] = Ei?.pages, t[96] = Ea);
+    let Da = Ea,
+        Oa;
+    t[97] === li?.pages ? Oa = t[98] : (Oa = li?.pages.at(-1)?.cursor ?? null, t[97] = li?.pages, t[98] = Oa);
+    let ka = Oa,
+        Aa;
+    if (t[99] !== xt || t[100] !== la) {
+        let e;
+        t[102] === xt ? e = t[103] : (e = e => e.kind === `directory` && (xt || !f(e.id)), t[102] = xt, t[103] = e), Aa = la.filter(e), t[99] = xt, t[100] = la, t[101] = Aa
+    } else Aa = t[101];
+    let ja = Aa,
+        {
+            canRenameDirectoryNode: Ma,
+            isNativeSharedWithMe: Pa,
+            isReadOnlyDirectoryNode: Fa,
+            preserveProviderOrder: Ia,
+            sharedWithMe: La
+        } = qv(Y, xt, V),
+        Ra = Gv(oy({
+            currentDirectoryId: Y,
+            directoryItems: ja,
+            hiddenDeletedDirectoryIds: Ze,
+            optimisticDirectories: je,
+            preserveProviderOrder: Ia,
+            sortState: B
+        }), kt, Mn === `folders` && V, zt.hiddenProviders, zt.visibleProviders, zt.hiddenSources),
+        Ba = Mn === `all` || Mn === `folders` ? Ra : [],
+        Va = ey({
+            globalSearchEnabled: Kr.enabled,
+            hiddenDeletedDirectoryIds: Ze,
+            preserveProviderOrder: Ia,
+            searchResults: pa,
+            shouldSearchDirectories: Vn,
+            sortState: B,
+            tab: Mn,
+            visibleProviders: Vt
+        }),
+        Ha = Bn ? Va : Ba,
+        Ua = fo({
+            canUseVisibleDirectoryItems: !Bn && Pn == null,
+            currentDirectoryId: Y,
+            directoryDataUpdatedAt: ci.dataUpdatedAt,
+            directoryItems: la,
+            hiddenDeletedDirectoryIds: Ze,
+            queryClient: k
+        }),
+        Wa;
+    t[104] === Symbol.for(`react.memo_cache_sentinel`) ? (Wa = () => {
+        Fe([]), Le(0), Cr.current.clear(), Tr.current.clear()
+    }, t[104] = Wa) : Wa = t[104], (0, hA.useEffect)(Wa, [Y, Bn]), (0, hA.useEffect)(() => {
+        if (!vn || Bn || ge(Y) || Pe.length === 0) return;
+        let e = 14 - Cr.current.size - Tr.current.size,
+            t = 2 - Tr.current.size;
+        if (e <= 0 || t <= 0) return;
+        let n = new Set(Pe);
+        ay({
+            currentDirectoryId: Y,
+            directoryItems: ja,
+            optimisticDirectories: je
+        }).filter(nA).map(tA).filter(e => n.has(e)).filter(e => !Cr.current.has(e) && !Tr.current.has(e) && k.getQueryData(tc(e)) == null).slice(0, Math.min(e, t)).forEach(e => {
+            let t = !Zo(e) && !ge(e);
+            Tr.current.add(e), As({
+                queryClient: k,
+                parentDirectoryId: e,
+                isSpeculativePrefetch: t
+            }).catch(eA).finally(() => {
+                Cr.current.add(e), Tr.current.delete(e), Le($k)
+            })
+        })
+    }, [Y, ja, Bn, je, k, Pe, Ie, vn]);
+    let Ga;
+    t[105] !== yt || t[106] !== la ? (Ga = ha(la, yt), t[105] = yt, t[106] = la, t[107] = Ga) : Ga = t[107];
+    let Ka = Ga,
+        qa;
+    t[108] !== Y || t[109] !== Rr ? (qa = za(Y, Rr), t[108] = Y, t[109] = Rr, t[110] = qa) : qa = t[110];
+    let Ja;
+    t[111] !== Ka || t[112] !== qa ? (Ja = {
+        equivalentDirectoryIds: qa,
+        serverArtifacts: Ka
+    }, t[111] = Ka, t[112] = qa, t[113] = Ja) : Ja = t[113];
+    let {
+        notes$: Ya,
+        pendingArtifactIds: Za,
+        visibleArtifacts: Qa
+    } = tT(Ja), $a;
+    t[114] !== yt || t[115] !== pa ? ($a = ha(pa, yt), t[114] = yt, t[115] = pa, t[116] = $a) : $a = t[116];
+    let to = $a,
+        no;
+    t[117] !== yt || t[118] !== Da ? (no = ha(Da, yt), t[117] = yt, t[118] = Da, t[119] = no) : no = t[119];
+    let ro = no,
+        io = xw(qe, eo(zr, Rr)),
+        ao = ni(ys(Qa, Kn), kt, Jn ? Lt : zt.hiddenProviders, Jn ? Rt : zt.hiddenSources).filter(e => !Be.has(e.id) && !io.has(e.id)),
+        so = Hn && Mn === `suggested`,
+        co = Pv({
+            isNativeSharedWithMe: Pa,
+            showSuggestedActivity: so
+        }),
+        lo = WS(V ? ao : Bv(ao, B, co), Or, V && !Ia),
+        uo = ni(KO(to, Kn, Be, B, Kr.enabled, V, co), kt, Lt, Rt),
+        po;
+    t[120] === He ? po = t[121] : (po = e => !He.has(e.id), t[120] = He, t[121] = po);
+    let mo = Bv(ro.filter(po), B, {
+            getLastModifiedValue: Cl
+        }),
+        ho = NO(lo, Mn),
+        go = NO(uo, Mn),
+        _o = NO(mo, Mn),
+        vo = Va.length > 0 || go.length > 0,
+        bo = ki.data?.pages.length ?? 0,
+        xo;
+    t[122] === mi?.pages ? xo = t[123] : (xo = mi?.pages.at(-1)?.items.length, t[122] = mi?.pages, t[123] = xo);
+    let {
+        hasIncompleteGoogleDriveSearch: So,
+        isGoogleDriveBrowse: Co,
+        observeListEnd: wo,
+        requiresManualLoadMore: Eo,
+        shouldAutoDrainEmptyPages: Do
+    } = PD({
+        activeHasNextPage: ji,
+        activeLoadedPageCount: bo,
+        directoryHasError: ci.isError,
+        directoryId: Y,
+        librarySearchEnabled: Kr.enabled,
+        hasSearchNextPage: _i,
+        hasVisibleBrowseResults: Ra.length > 0 || lo.length > 0,
+        hasVisibleSearchResults: vo,
+        isDeleted: tn,
+        isLibraryTab: vn,
+        isSearch: Bn,
+        lastSearchPageIsEmpty: xo === 0,
+        searchHasError: ri.isError
+    }), {
+        listContainerRef: Oo,
+        listEndRef: ko,
+        listFitsViewport: Ao,
+        resetPageTableInfiniteScroll: jo
+    } = CO({
+        rootMargin: `160px`,
+        hasNextPage: ji,
+        isLoading: Mi,
+        isError: Pi,
+        enabled: wo,
+        onLoadMore: Fi
+    }), Mo = vn && !(Bn && yi) && ji && !Mi && (!Pi || Ni) && (Ni || Ao || Eo), No;
+    t[124] === Kn ? No = t[125] : (No = Kn.join(`,`), t[124] = Kn, t[125] = No);
+    let Po = No,
+        Fo;
+    t[126] !== En || t[127] !== Wt || t[128] !== Y || t[129] !== st || t[130] !== tn || t[131] !== ct || t[132] !== re || t[133] !== ae || t[134] !== jo || t[135] !== lt || t[136] !== Nn || t[137] !== hn || t[138] !== Po ? (Fo = [En, Wt, st, ct, re, ae, Nn, Po, Y, tn, jo, lt, hn], t[126] = En, t[127] = Wt, t[128] = Y, t[129] = st, t[130] = tn, t[131] = ct, t[132] = re, t[133] = ae, t[134] = jo, t[135] = lt, t[136] = Nn, t[137] = hn, t[138] = Po, t[139] = Fo) : Fo = t[139], (0, hA.useEffect)(() => {
+        st.set(!1), ct.set(!1), jo(), ae.set(``), W(!1), ne(null), ye(null), xe(null), re.set(``), ze(new Set), Xe({}), lt.set(null), yr.current = null, Ce(null), _r.current != null && (ue(_r.current), _r.current = null), tn || Ue(new Set)
+    }, Fo);
+    let Io = tn ? _o : Bn ? go : ho,
+        Lo = QO(Io),
+        Ro = Sn({
+            queries: Lo.map(e => Wd(e, {
+                enabled: ur
+            }))
+        }),
+        zo = tf(),
+        Bo;
+    t[140] === k ? Bo = t[141] : (Bo = Of(k), t[140] = k, t[141] = Bo);
+    let Vo = Gn(Bo),
+        Ho;
+    t[142] === m ? Ho = t[143] : (Ho = e => {
+        cp({
+            intl: m,
+            kind: e.isFavorited ? `removed` : `added`
+        })
+    }, t[142] = m, t[143] = Ho);
+    let Wo = Gn(Of(k, {
+            onSuccess: Ho,
+            onError: e => {
+                C.danger(m.formatMessage(Z.favoriteFileFailed), {
+                    error: e
+                })
+            }
+        })),
+        Go = nk({
+            artifacts: Io,
+            analyticsSurface: qn === `grid` ? `library_grid` : `library_list`,
+            enabled: ur,
+            targetBatches: Lo,
+            queries: Ro,
+            pendingToggles: un,
+            mutate: Wo.mutate
+        }),
+        qo = vn && !Do && !Eo && (Mn !== `all` || Kn.length > 0) && Io.length === 0 && ji && !Pi && bo < 5,
+        Jo;
+    t[144] !== Mi || t[145] !== qo || t[146] !== Di || t[147] !== ui || t[148] !== hi || t[149] !== tn || t[150] !== Bn ? (Jo = [Mi, Di, ui, hi, tn, qo, Bn], t[144] = Mi, t[145] = qo, t[146] = Di, t[147] = ui, t[148] = hi, t[149] = tn, t[150] = Bn, t[151] = Jo) : Jo = t[151], (0, hA.useEffect)(() => {
+        if (!(!qo || Mi)) {
+            if (tn) {
+                Di();
+                return
+            }
+            if (Bn) {
+                hi();
+                return
+            }
+            ui()
+        }
+    }, Jo);
+    let {
+        allSelected: Yo,
+        hasSelectableVisibleRows: Xo,
+        hasSelectedDirectories: Qo,
+        hasSelection: es,
+        picked: ts,
+        selectableRowIds: rs,
+        selectedCount: is,
+        selectedDirectories: as,
+        showSelect: os,
+        someSelected: ss
+    } = xS({
+        checkedIds: Re,
+        folderStartChatEnabled: Qp(),
+        isDeleted: tn,
+        pendingOptimisticArtifactIds: Za,
+        unifiedComposerSelectionStateEnabled: !x,
+        visibleArtifacts: Io,
+        visibleDirectories: Ha.filter(Qk)
+    }), cs = mn(() => QD(ir, ut)), ls, ds;
+    t[152] !== cs || t[153] !== ut ? (ls = () => $D(cs, ut), ds = [cs, ut], t[152] = cs, t[153] = ut, t[154] = ls, t[155] = ds) : (ls = t[154], ds = t[155]), (0, hA.useEffect)(ls, ds);
+    let {
+        handleSelectAllChange: fs,
+        updateMarqueeSelection: ps,
+        updateSelection: ms
+    } = tO({
+        analytics: ir,
+        artifacts: Io,
+        checkedIds: Re,
+        directories: Ha,
+        pendingMarqueeSelection$: ut,
+        selectableRowIds: rs,
+        selectionAnchorId$: lt,
+        setCheckedIds: ze
+    }), hs = {
+        checkedIds: Re,
+        hasSelection: es,
+        updateSelection: ms,
+        ...Br
+    }, gs = fb(ts, as, Y), Ss = ce.size > 0, Cs = Tt || gs.readOnly, ws = he != null || nt != null, Ts = !tn && Wt.length === 0 && !Tt, Es = !Bn && (ci.isFetching && la.length === 0 && Qa.length === 0 || Do || qo && Ha.length === 0 && Io.length === 0), {
+        showSearchLoading: Ds,
+        shouldShowSearchEmptyState: Os,
+        showSearchError: ks,
+        showSearchErrorWithResults: js
+    } = WO({
+        enabled: ii,
+        query: ri,
+        hasVisibleResults: vo,
+        isSearch: Bn,
+        isDeleted: tn,
+        autoLoading: qo,
+        requiresManualLoadMore: Eo
+    }), {
+        showDeletedFilesLoading: Ms,
+        shouldShowDeletedFilesEmptyState: Ns
+    } = dr({
+        isDeleted: tn,
+        artifacts: _o,
+        query: oi,
+        autoLoading: qo
+    }), Ps = Os && Rn && !Fn && Mn === (kt ? `suggested` : `all`), Fs = xn && Qt != null ? [Qt] : Kn, Is = Wn.length + Fs.length + Number(rn) + Number(tn && !kt), Ls = kt && Hn && (Mn === `suggested` || Mn === `all` || Mn === `images` || Mn === `folders`) && Wt.length === 0 && !Fn && Is === 0 && !Es && !Ds && !So && !(Bn ? ri.isError : ci.isError) && (Bn ? !vo : Ba.length === 0 && ho.length === 0), Rs = na({
+        referenceImagesEnabled: dn,
+        tab: Mn,
+        directoryId: Y,
+        searchQuery: Wt,
+        isDeleted: tn
+    }), zs = Mn !== `all` && Mn !== `suggested` || Is > 0, Bs = !Bn && !Es && !ci.isError && (!Co || !fi) && Ha.length === 0 && Io.length === 0 && zs && !f(Y), Vs = O(), Hs = $o(), Us = Qp() && !x, Ws = xt, Gs = e => lb(e, Y).isSharedLibraryArtifact, Ks = {
+        folderChatEnabled: Us,
+        sharedFolderChatEnabled: Ws,
+        isSharedArtifact: Gs,
+        maxFileCount: 10,
+        remainingFileUploads: Hs,
+        hasFileUploadRateLimit: Vs != null,
+        isLoading: it,
+        isMaterializingFile: Ss
+    }, {
+        bulkStartChatSelectionHint: Js,
+        bulkStartChatDisabledByFolderLimit: Ys,
+        bulkStartChatDisabledByLimit: Xs,
+        bulkStartChatDisabledByUploadLimit: Zs,
+        bulkStartChatButtonDisabled: Qs,
+        bulkStartChatExcessFileCount: $s,
+        showBulkStartChatForSelection: ec
+    } = Up({
+        artifacts: ts,
+        selectedDirectories: as,
+        ...Ks
+    }), nc = Vs?.title ?? Vs?.description, rc = Te.some(Zk), ic = pb(Qo, ts, Ss, Y), ac = es && Ts && !Cs, oc = !ac || ws, sc = tn && (oe != null || $e != null || Pt), cc = ts.length === 0 || sc, lc = lO(ts, as, Y), uc = is === 0 || sc || Tt || !tn && lc.artifacts.length + lc.favorites.length + lc.directories.length === 0, fc = !vn || tn || Bn && (!zn || Fn) || !Lr || rc, pc = fc || Mt || oe != null || Ft != null || me != null, mc = tn || Bn && !zn || Fn || Is > 0 || (bn ? Mt : pc), hc = mn(fu), gc = mn(pu), _c;
+    t[156] !== Oe || t[157] !== Te || t[158] !== hc || t[159] !== gc ? (_c = KS({
+        completedUploads: Oe,
+        onRemove: hc,
+        onRetry: gc,
+        pendingUploads: Te
+    }), t[156] = Oe, t[157] = Te, t[158] = hc, t[159] = gc, t[160] = _c) : _c = t[160];
+    let vc = _c,
+        yc = wa(Re, [...Ba.map(Xk), ...ho.map(Yk)]),
+        bc = wa(Re, [...Va.map(Jk), ...go.map(qk)]),
+        xc = !Tt && Ir,
+        Sc = vs() && !St && !Ct && Ir,
+        {
+            filters: Cc,
+            leadingActions: wc
+        } = wD({
+            filterControl: {
+                activeCategories: Fs,
+                activeFilterCount: Is,
+                activeSourceFilters: Wn,
+                analyticsSession: n,
+                currentDirectoryId: Y,
+                deletedFilesEnabled: a,
+                isDeletedFilesView: tn,
+                isShowingAllFileTypes: Dn,
+                navigateWithinLibrary: Wi,
+                provider: er,
+                searchParams: N
+            },
+            surface: {
+                applyLibraryFilters: jn && !Ut,
+                isCurrentExternalDirectory: St,
+                isFavoritesTab: _n,
+                isLibraryTab: vn,
+                isTemplatesTab: xn,
+                libraryIAEnabled: kt,
+                sourceOnly: Hn && Mn === `images`,
+                imagesGridOnly: Ln
+            },
+            viewToggle: {
+                onViewModeChange: s,
+                viewMode: qn
+            }
+        }),
+        Ec;
+    t[161] === Symbol.for(`react.memo_cache_sentinel`) ? (Ec = () => {
+        xr.current = null
+    }, t[161] = Ec) : Ec = t[161];
+    let Dc;
+    t[162] !== Y || t[163] !== ci.dataUpdatedAt || t[164] !== Bn ? (Dc = [Y, Bn, ci.dataUpdatedAt], t[162] = Y, t[163] = ci.dataUpdatedAt, t[164] = Bn, t[165] = Dc) : Dc = t[165], (0, hA.useEffect)(Ec, Dc);
+    let Oc;
+    t[166] !== Do || t[167] !== ci.isLoading || t[168] !== ui || t[169] !== pi || t[170] !== ka ? (Oc = () => {
+        !Do || ci.isLoading || pi || ka == null || xr.current === ka || (xr.current = ka, ui())
+    }, t[166] = Do, t[167] = ci.isLoading, t[168] = ui, t[169] = pi, t[170] = ka, t[171] = Oc) : Oc = t[171];
+    let kc;
+    t[172] !== Do || t[173] !== Y || t[174] !== ci.isLoading || t[175] !== ui || t[176] !== pi || t[177] !== Bn || t[178] !== ka ? (kc = [Y, ci.isLoading, ui, pi, Bn, ka, Do], t[172] = Do, t[173] = Y, t[174] = ci.isLoading, t[175] = ui, t[176] = pi, t[177] = Bn, t[178] = ka, t[179] = kc) : kc = t[179], (0, hA.useEffect)(Oc, kc);
+    let Ac;
+    t[180] !== Y || t[181] !== ja ? (Ac = [Y, ja], t[180] = Y, t[181] = ja, t[182] = Ac) : Ac = t[182], (0, hA.useEffect)(() => {
+        Me(e => {
+            let t = new Set(ja.map(Kk)),
+                n = new Set(ja.filter(Gk).map(Wk)),
+                r = e.filter(e => e.parent_directory_id !== Y || !t.has(e.id) && !n.has(Jv(e)));
+            return r.length === e.length ? e : r
+        })
+    }, Ac);
+    let jc = function(e, t) {
+            Ji(e, gr, t)
+        },
+        Mc = function(e) {
+            Sa(e), Kr.onSearchClear(), jc(e, {
+                clearSearchView: !0
+            })
+        },
+        {
+            refreshDirectory: Nc,
+            refreshSearchResults: Pc,
+            refreshDeletedFiles: Fc,
+            refreshLibraryStorageUsage: Ic,
+            refreshAfterDelete: Lc,
+            refreshDirectoryInBackground: zc,
+            refreshMovedArtifactDirectoriesInBackground: Bc,
+            refreshAfterDeleteInBackground: Vc,
+            refreshSearchResultsInBackground: Hc,
+            refreshDirectoryPathInBackground: Uc
+        } = kk(k, Rr, Y, e => C.danger(m.formatMessage(Z.deleteRefreshFailed), {
+            error: e
+        })),
+        Wc;
+    t[183] !== Be || t[184] !== Ze ? (Wc = e => {
+        let {
+            id: t,
+            resourceKind: n
+        } = e, r = n === `file` ? Ve : Qe, i = n === `file` ? Be.has(t) : Ze.has(t);
+        return r(e => {
+            if (e.has(t)) return e;
+            let n = new Set(e);
+            return n.add(t), n
+        }), ze(e => {
+            if (!e.has(t)) return e;
+            let n = new Set(e);
+            return n.delete(t), n
+        }), () => {
+            i || r(e => {
+                if (!e.has(t)) return e;
+                let n = new Set(e);
+                return n.delete(t), n
+            })
+        }
+    }, t[183] = Be, t[184] = Ze, t[185] = Wc) : Wc = t[185];
+    let {
+        onRemoveSharedArtifact: Gc,
+        onRemoveSharedFolder: Kc
+    } = ob({
+        enabled: xt && f(Y),
+        directoryId: Y,
+        intl: m,
+        onRemovedSharedItem: Wc,
+        queryClient: k,
+        refreshDirectory: e => Nc(e, {
+            refetchInactiveLibrary: !0
+        }, {
+            throwOnError: !0
+        }),
+        refreshSearchResults: () => Pc({
+            throwOnError: !0
+        })
+    }), qc = function() {
+        yr.current = null, Ce(null)
+    }, Jc = function(e) {
+        yr.current = e
+    }, Yc;
+    t[186] === Symbol.for(`react.memo_cache_sentinel`) ? (Yc = function(e, t) {
+        e != null && Xe(n => kw(n, e, t))
+    }, t[186] = Yc) : Yc = t[186];
+    let Xc = Yc,
+        Zc = function(e) {
+            let {
+                rowId: t,
+                kind: n
+            } = e;
+            return Ow({
+                rowId: t,
+                kind: n,
+                hasSelection: es,
+                checkedIds: Re,
+                hasSelectedExternalItems: Cs,
+                selectedArtifacts: ts,
+                selectedDirectories: as,
+                sourceDirectoryId: zr
+            })
+        },
+        Qc = function(e, t, n) {
+            let r = eo(e, n === void 0 ? Rr : n);
+            Je(e => Cw(e, r, t))
+        },
+        $c = function(e, t) {
+            Je(n => Cw(n, t.flatMap(e => eo(e, Rr)), e))
+        },
+        el;
+    t[187] === Symbol.for(`react.memo_cache_sentinel`) ? (el = function(e, t, n) {
+        Me(r => cy(r, e, t, n))
+    }, t[187] = el) : el = t[187];
+    let tl = el,
+        nl;
+    t[188] !== p || t[189] !== fe ? (nl = function() {
+        fe.cancel(), Vr(p)
+    }, t[188] = p, t[189] = fe, t[190] = nl) : nl = t[190];
+    let rl = nl,
+        il = async function(e, t) {
+            let r = t === void 0 ? {} : t;
+            if (Za.has(e.id)) return;
+            rl();
+            let i = fe.begin(),
+                {
+                    isSharedLibraryArtifact: a,
+                    sharedLibraryFileId: o,
+                    canDeleteArtifact: s,
+                    originalConversationUrl: c
+                } = zw(e, Y, Tt),
+                l = s ? () => al(e, {
+                    clearCacheOnDelete: r.clearCacheOnDelete,
+                    libraryOrigin: gi.CHATGPT_FILE_LIBRARY_ORIGIN_FILE_PREVIEW
+                }) : void 0;
+            if (a && o == null) {
+                C.danger(m.formatMessage(Z.openFileFailed));
+                return
+            }
+            if (c != null && o == null) {
+                j(c), ir.fileOpened(e);
+                return
+            }
+            _s(o)();
+            let d = await Kg({
+                artifact: e,
+                analyticsSession: n,
+                composerController: u,
+                onDelete: l,
+                onDownload: () => void ql(e, !0),
+                onError: e => C.danger(m.formatMessage(Z.openFileFailed), {
+                    error: e
+                }),
+                onOpened: () => Bw(e, {
+                    sharedLibraryFileId: o,
+                    libraryIAEnabled: kt
+                }),
+                previewOpen: fe,
+                shareSessionId: n.sessionId,
+                sharedLibraryFileId: o,
+                signal: i
+            });
+            if (d == null || i.aborted) return;
+            let {
+                fileReference: f,
+                onOpened: p,
+                resolveFileReference: h
+            } = d;
+            Ug({
+                artifact: e,
+                composerController: u,
+                analyticsSession: n,
+                fileReference: f,
+                sharedLibraryFileId: o,
+                resolveFileReference: h,
+                readOnly: Tt || a,
+                onSaved: () => {
+                    zc(Y), Hc()
+                },
+                onDownload: t => {
+                    ql(e, t === void 0 || t)
+                },
+                onDelete: l,
+                showDelete: s
+            }), ir.fileOpened(e), p()
+        };
+
+    function al(e, t) {
+        let n = t === void 0 ? {} : t,
+            r = rm(k, {
+                libraryFileId: e.libraryFileId,
+                projectGizmoId: e.gizmoId
+            });
+        return lr({
+            artifacts: [e],
+            ...n.libraryOrigin == null ? {} : {
+                origin: n.libraryOrigin
+            }
+        }), im({
+            deletedFilesEnabled: a,
+            fileName: bs(e),
+            projectImpact: r,
+            onConfirmDelete: () => ((n.libraryOrigin == null ? ir : fC(n.libraryOrigin)).deleteConfirmed({
+                artifacts: [e]
+            }), fl(t => Ol(e, {
+                clearCacheOnDelete: n.clearCacheOnDelete,
+                nonBlockingConfig: t
+            })))
+        })
+    }
+    let ol = function(e) {
+            C.danger(m.formatMessage(Z.deleteFileFailed), {
+                error: e
+            })
+        },
+        sl = dO({
+            deletedFilesEnabled: a,
+            directoryId: Y,
+            pendingOptimisticArtifactIds: Za,
+            refreshAfterDelete: Lc,
+            setCheckedIds: ze,
+            setHiddenDeletedArtifactIds: Ve,
+            setIsDeletingFileId: se,
+            showDeleteError: ol
+        }),
+        ll = pO(sl, ir.deleteOutcome, Vc),
+        ul = async function(e) {
+            let {
+                failedArtifacts: t,
+                removedArtifactIds: n,
+                lastError: r
+            } = await ZO(e, {
+                analyticsSurface: qn === `grid` ? `library_grid` : `library_list`,
+                queryClient: k,
+                pendingToggles: un,
+                removeSavedEntity: zo.mutateAsync,
+                toggleFavorite: Vo.mutateAsync
+            });
+            return n.size > 0 && (ze(e => new Set([...e].filter(e => !n.has(e)))), Ve(e => new Set([...e, ...n]))), t.length > 0 ? C.danger(m.formatMessage(Z.bulkFavoriteRemovalFailed, {
+                count: t.length
+            }), {
+                error: r
+            }) : e.length > 0 && cp({
+                intl: m,
+                kind: `removed`
+            }), t
+        }, dl = function(e, t) {
+            return ir.deleteConfirmed({
+                artifacts: [e]
+            }), fl(n => Ol(e, {
+                ...t,
+                nonBlockingConfig: n
+            }))
+        };
+
+    function fl(e) {
+        return e(a ? JS() : void 0)
+    }
+    let ml = function(e) {
+            lr({
+                directoryIds: [e.id]
+            }), ye(e), _r.current = jv, Nt(jv, {
+                confirmation: e,
+                isLoading$: st,
+                onConfirm: () => Il(),
+                onClose: () => ye(null)
+            })
+        },
+        hl;
+    t[191] === Symbol.for(`react.memo_cache_sentinel`) ? (hl = e => {
+        xe(e), e === null && ue(cS)
+    }, t[191] = hl) : hl = t[191];
+    let {
+        confirm: gl,
+        open: vl,
+        openForArtifacts: yl
+    } = rO({
+        deletedFileActionConfirmation: be,
+        handleOpenArtifact: il,
+        intl: m,
+        isDeletedFileActionConfirmLoading: Pt,
+        onPermanentDeleteConfirmed: e => {
+            ir.deleteConfirmed({
+                artifacts: e
+            })
+        },
+        onPermanentDeleteInitiated: e => {
+            lr({
+                artifacts: e
+            })
+        },
+        permanentlyDeleteDeletedArtifact: Ml,
+        restoreDeletedArtifact: jl,
+        setDeletedFileActionConfirmation: hl,
+        setIsDeletedFileActionConfirmLoading: ct.set,
+        toaster: C
+    }), xl = mn(gl), Sl = function(e) {
+        _r.current = cS, Nt(cS, {
+            confirmation: e,
+            isLoading$: ct,
+            onConfirm: xl,
+            onClose: () => xe(null)
+        })
+    }, wl = (...e) => {
+        let t = e;
+        vl(...t), Sl({
+            kind: t[0],
+            artifacts: [t[1]]
+        })
+    }, Tl = (...e) => {
+        let t = e;
+        t[1].length !== 0 && (yl(...t), Sl({
+            kind: t[0],
+            artifacts: [...t[1]]
+        }))
+    }, {
+        deleteArtifact: El,
+        deleteArtifacts: Dl
+    } = rC({
+        deleteArtifactLegacy: sl,
+        deleteArtifactsLegacy: ll,
+        deletedFilesEnabled: a,
+        directoryId: Y,
+        pendingOptimisticArtifactIds: Za,
+        refreshAfterDelete: Lc,
+        setCheckedIds: ze,
+        setHiddenDeletedArtifactIds: Ve,
+        showDeleteError: ol
+    }), Ol = El, kl;
+    t[192] === Symbol.for(`react.memo_cache_sentinel`) ? (kl = function(e) {
+        Ue(t => {
+            if (t.has(e)) return t;
+            let n = new Set(t);
+            return n.add(e), n
+        }), ze(t => {
+            if (!t.has(e)) return t;
+            let n = new Set(t);
+            return n.delete(e), n
+        })
+    }, t[192] = kl) : kl = t[192];
+    let Al = kl;
+    async function jl(e) {
+        tt(e.id);
+        let t = null;
+        try {
+            await v.safePost(`/files/library/files/{library_file_id}/restore`, {
+                parameters: {
+                    path: {
+                        library_file_id: e.id
+                    }
+                }
+            }), Al(e.id), Ve(t => {
+                if (!t.has(e.id)) return t;
+                let n = new Set(t);
+                return n.delete(e.id), n
+            }), Ke(), await Fc(), Ok(() => Promise.all([k.invalidateQueries({
+                queryKey: [d],
+                refetchType: `all`
+            }), k.invalidateQueries({
+                queryKey: ua(),
+                refetchType: `all`
+            }), k.invalidateQueries({
+                queryKey: [`library-favorites`],
+                refetchType: `all`
+            }), Pc(), Ic()]))
+        } catch (e) {
+            t = e
+        }
+        return tt(t => t === e.id ? null : t), t == null ? !0 : (C.danger(m.formatMessage(Z.restoreFileFailed), {
+            error: t
+        }), !1)
+    }
+    async function Ml(e) {
+        let t = sr(e);
+        if (!e.id || !t) return !1;
+        let n = bs(e).trim(),
+            r = n.length > 0 ? n : void 0;
+        se(e.id);
+        let i = null;
+        try {
+            await di({
+                libraryFileId: e.id,
+                fileId: t,
+                fileName: r,
+                softDelete: !1
+            }), Al(e.id), Ke(), await Promise.all([Fc(), Pc(), Ic()])
+        } catch (e) {
+            i = e
+        }
+        return se(t => t === e.id ? null : t), i == null ? !0 : (C.danger(m.formatMessage(Z.permanentDeleteFileFailed), {
+            error: i
+        }), !1)
+    }
+    let Nl = async function(e, t) {
+        let n = t === void 0 ? {} : t;
+        q(e.id);
+        let r = null;
+        try {
+            await v.safeDelete(`/files/library/directories/{directory_id}`, {
+                parameters: {
+                    path: {
+                        directory_id: e.id
+                    }
+                }
+            }), Me(t => t.filter(t => t.id !== e.id)), Qe(t => {
+                if (t.has(e.id)) return t;
+                let n = new Set(t);
+                return n.add(e.id), n
+            }), ze(t => {
+                if (!t.has(e.id)) return t;
+                let n = new Set(t);
+                return n.delete(e.id), n
+            }), n.deferRefreshAfterDelete || (zc(Y), Hc())
+        } catch (e) {
+            r = e
+        }
+        return q(t => t === e.id ? null : t), r == null ? !0 : (C.danger(m.formatMessage(Z.deleteFolderFailed), {
+            error: r
+        }), !1)
+    }, Pl;
+    t[193] === Symbol.for(`react.memo_cache_sentinel`) ? (Pl = e => {
+        ye(e), e === null && ue(jv)
+    }, t[193] = Pl) : Pl = t[193];
+    let {
+        confirmDelete: Fl
+    } = sO({
+        analytics: ir,
+        deleteDirectory: Nl,
+        deleteConfirmation: ve,
+        isDeleteConfirmLoading$: st,
+        setDeleteConfirmation: Pl
+    }), Il = mn(Fl), Ll = function(e) {
+        ae.set(e.name), _r.current = fh, Nt(fh, {
+            directory: e,
+            name$: ae,
+            renamingDirectoryId$: G,
+            onRename: () => Bl(e),
+            onClose: () => Vl(e)
+        })
+    }, Rl;
+    t[194] !== G || t[195] !== ae ? (Rl = function(e) {
+        G() !== e.id && ae.set(``)
+    }, t[194] = G, t[195] = ae, t[196] = Rl) : Rl = t[196];
+    let zl = Rl,
+        Bl = mn(async function(e) {
+            let t = ae().trim();
+            if (!t) {
+                C.danger(m.formatMessage(Z.createFolderEmptyName));
+                return
+            }
+            if (dh(m, t) != null) return;
+            if (t === e.name) {
+                zl(e), ue(fh);
+                return
+            }
+            G.set(e.id);
+            let n = null;
+            try {
+                await v.safePatch(`/files/library/directories/{directory_id}`, {
+                    parameters: {
+                        path: {
+                            directory_id: e.id
+                        }
+                    },
+                    requestBody: {
+                        name: t
+                    }
+                }), Jh(k, e.id, t), Kh(k, e.id, t, new Date().toISOString()), ae.set(``), ue(fh), zc(Y), Uc(), Hc()
+            } catch (e) {
+                n = e
+            }
+            G.set(t => t === e.id ? null : t), n != null && Qh(C, n, m.formatMessage(Z.renameFolderFailed))
+        }),
+        Vl = mn(zl),
+        Hl = async function(e, t) {
+            let {
+                sourceDirectoryId: n,
+                targetDirectoryId: r,
+                optimistic: i,
+                rootDirectoryId: a
+            } = t, o = i !== void 0 && i, s = a === void 0 ? Rr : a, c = o ? Sw(qe, e.id) : null;
+            _e(e.id), Ce(null), o && Qc(n, e.id, s);
+            let l = null;
+            try {
+                await v.safePatch(`/files/library/files/{library_file_id}/move`, {
+                    parameters: {
+                        path: {
+                            library_file_id: e.id
+                        }
+                    },
+                    requestBody: {
+                        directory_id: r
+                    }
+                }), ze(t => {
+                    if (!t.has(e.id)) return t;
+                    let n = new Set(t);
+                    return n.delete(e.id), n
+                });
+                let t = Sw(qe, e.id);
+                o || Qc(n, e.id, s);
+                let i = new Set([...t, Y, n, r]),
+                    a = Array.from(i);
+                Bc(a, r, s), Hc(), _n && Ok(() => k.invalidateQueries({
+                    queryKey: Bf()
+                }))
+            } catch (t) {
+                l = t, c != null && $c(e.id, c)
+            }
+            return _e(t => t === e.id ? null : t), l == null ? !0 : (C.danger(m.formatMessage(Z.moveFileFailed), {
+                error: l
+            }), !1)
+        }, Ul = async function(e, t) {
+            let {
+                sourceDirectoryId: n,
+                targetDirectoryId: r
+            } = t;
+            if (e.id === r) return !1;
+            let i = e.parent_directory_id;
+            rt(e.id), Ce(null), tl(e, r, new Date().toISOString());
+            let a = null;
+            try {
+                await v.safePatch(`/files/library/directories/{directory_id}`, {
+                    parameters: {
+                        path: {
+                            directory_id: e.id
+                        }
+                    },
+                    requestBody: {
+                        parent_directory_id: r
+                    }
+                }), ze(t => {
+                    if (!t.has(e.id)) return t;
+                    let n = new Set(t);
+                    return n.delete(e.id), n
+                }), zc(n, {
+                    refetchInactiveLibrary: n === r
+                }), zc(r, {
+                    refetchInactiveLibrary: !0
+                }), Uc(), Hc()
+            } catch (t) {
+                a = t, tl(e, i, e.updated_at ?? null)
+            }
+            return rt(t => t === e.id ? null : t), a == null ? !0 : (Qh(C, a, m.formatMessage(Z.moveFolderFailed)), !1)
+        }, Wl = async function(e, t, n, r, i) {
+            let a = r === void 0 ? Rr : r,
+                {
+                    artifacts: o,
+                    directories: s
+                } = cw(e, i === void 0 ? Io : i, Ha);
+            if (s.length === 0 && o.length === 0) return;
+            let c = new Set([...s.map(Uk), ...o.map(Hk)]);
+            ze(e => {
+                let t = !1,
+                    n = new Set(e);
+                return c.forEach(e => {
+                    n.delete(e) && (t = !0)
+                }), t ? n : e
+            }), eO(lt, c), Xc(t, 1);
+            let l = !1;
+            await Promise.resolve().then(async () => {
+                for (let n of s) await Ul(n, {
+                    sourceDirectoryId: e.sourceDirectoryId,
+                    targetDirectoryId: t
+                }) && (l = !0)
+            }).then(async () => {
+                for (let n of o) {
+                    let r = hw(e, n.id, t, a);
+                    r.sourceDirectoryId !== r.targetDirectoryId && await Hl(n, {
+                        ...r,
+                        optimistic: !0,
+                        rootDirectoryId: a
+                    }) && (l = !0)
+                }
+            }).finally(() => {
+                Xc(t, -1)
+            }), l && e.directoryIds.length === 0 && ya(t) && Ok(Ic), l && cl({
+                destinationName: n ?? Ha.find(e => e.id === t)?.name ?? Xr,
+                intl: m,
+                onView: () => {
+                    t != null && qi(t), Li(t, ra(N))
+                },
+                toaster: C
+            })
+        }, Gl = function(e) {
+            let t = yr.current;
+            return qc(), t == null || !Dw(e, t) ? !1 : (Wl(t, e, Ha.find(t => t.id === e)?.name ?? Xr), !0)
+        }, Kl = function(e) {
+            ir.folderShown(e.parentDirectoryId), ne(e), W(!0), _r.current = hh, Nt(hh, {
+                name$: re,
+                isCreating$: ie,
+                overlayClassName: e.kind === `move-modal` ? `z-[60]` : void 0,
+                onCreate: () => Ql(),
+                onClose: () => $l()
+            })
+        }, ql = ow(Y, n, fe.getFileReference, D, ir.download, e => C.danger(m.formatMessage(Z.downloadFileFailed), {
+            error: e
+        })), Jl = async function() {
+            let e = re().trim();
+            if (!e) {
+                C.danger(m.formatMessage(Z.createFolderEmptyName));
+                return
+            }
+            if (dh(m, e) != null) return;
+            let t = te ?? {
+                    kind: `library`,
+                    parentDirectoryId: Y
+                },
+                n = t.parentDirectoryId;
+            if (ns(n) || ge(n) || t.kind === `library` && n === Y && !Ir) return;
+            ir.folderConfirmed(n);
+            let {
+                optimisticDirectory: r,
+                requestBody: i
+            } = Kv(e, n), a = r.id, o = r.updated_at;
+            Me(e => sy(e, r)), ie.set(!0);
+            let s = null;
+            try {
+                let r = Gh(await v.safePost(`/files/library/directories`, {
+                    requestBody: i
+                }), e, n, o);
+                if (ir.folderCompleted(n, r?.id), r != null && (Me(e => sy(e, r, a)), t.kind === `move-modal`)) {
+                    let e = {
+                        kind: `directory`,
+                        id: r.id,
+                        name: r.name,
+                        parent_directory_id: r.parent_directory_id,
+                        updated_at: r.updated_at
+                    };
+                    k.setQueryData(pl(t.pickerDirectoryId), t => _a(t ?? [], e)), k.setQueryData(pl(r.id), Vk);
+                    let n = br.current;
+                    n != null && Zl({
+                        ...n,
+                        selectedTargetDirectoryId: r.id,
+                        destinationPath: [...t.destinationPath, {
+                            id: r.id,
+                            name: r.name
+                        }]
+                    })
+                }
+                re.set(``), W(!1), ne(null), ue(hh), zc(n), kt && t.kind === `library` && n == null && hn !== `all` && hn !== `folders` && Xi(`all`)
+            } catch (e) {
+                let t = e;
+                ir.folderFailed(n, t), s = t
+            }
+            ie.set(!1), s != null && (Me(e => e.filter(e => e.id !== a)), Qh(C, s, m.formatMessage(Z.createFolderFailed)))
+        }, Yl = function() {
+            ie() || (ee && ir.folderCanceled(te == null ? Y : te.parentDirectoryId), W(!1), ne(null), re.set(``))
+        }, Xl = function(e) {
+            let t = e.rootDirectoryId,
+                {
+                    targetDirectoryId: n
+                } = ww(e, t),
+                r = Tw(e);
+            Nt(hO, {
+                isOpen: !0,
+                destinationPath: e.destinationPath,
+                currentDirectoryId: n,
+                disabledDirectoryIds: new Set(e.directoryIds),
+                hiddenDirectoryIds: Ze,
+                initialItemsByParentId: Ua,
+                isCreateFolderDisabled: r || Zo(n) || ge(n),
+                isMoveHereDisabled: Ew(e, t),
+                onClose: iu,
+                onCreateFolder: () => {
+                    au(e)
+                },
+                onMoveHere: () => {
+                    cu(e)
+                },
+                onOpenDirectory: t => {
+                    ou(e, t)
+                },
+                onSelectDestinationBreadcrumb: t => {
+                    su(e, t)
+                },
+                showGoogleDriveDestinations: To(e)
+            })
+        };
+
+    function Zl(e) {
+        br.current = e, Xl(e)
+    }
+    let Ql = mn(Jl),
+        $l = mn(Yl),
+        eu = function(e) {
+            let {
+                state: t,
+                unresolvedSourceDirectoryId: n
+            } = lw({
+                currentDirectoryId: Y,
+                currentDirectoryStateId: zr,
+                currentPath: Jr,
+                hasCurrentDirectoryPath: Pr.data != null,
+                isGlobalFileMode: Rn || _n,
+                items: e,
+                rootBreadcrumbLabel: Xr,
+                rootDirId: Rr
+            });
+            Zl(t), n != null && vw({
+                currentDirectoryId: Y,
+                currentDirectoryStateId: zr,
+                currentPath: Jr,
+                getCurrentState: () => br.current,
+                initialState: t,
+                intl: m,
+                isGlobalFileMode: Rn || _n,
+                queryClient: k,
+                rootBreadcrumbLabel: Xr,
+                sourceDirectoryId: n
+            }).then(e => {
+                e != null && Zl(e)
+            })
+        },
+        tu = function(e, t) {
+            eu({
+                artifacts: [e],
+                artifactIds: [e.id],
+                artifactSourceDirectoryIds: uw([e], Rn || _n, t),
+                canMoveFilesToGoogleDrive: !_n && _l(e),
+                directoryIds: [],
+                sourceDirectoryId: Rn || _n ? null : t
+            })
+        },
+        nu = function(e, t) {
+            eu({
+                artifactIds: [],
+                artifactSourceDirectoryIds: {},
+                canMoveFilesToGoogleDrive: !1,
+                directoryIds: [e.id],
+                sourceDirectoryId: t
+            })
+        },
+        ru = function() {
+            oc || eu({
+                artifactIds: ts.map(Bk),
+                artifactSourceDirectoryIds: uw(ts, Rn, zr),
+                canMoveFilesToGoogleDrive: ts.length > 0 && ts.every(_l),
+                directoryIds: as.map(zk),
+                sourceDirectoryId: Rn ? null : zr
+            })
+        };
+
+    function iu() {
+        br.current = null
+    }
+
+    function au(e) {
+        if (Tw(e)) return;
+        let {
+            targetDirectoryId: t
+        } = ww(e, Rr);
+        Kl({
+            kind: `move-modal`,
+            destinationPath: e.destinationPath,
+            parentDirectoryId: e.selectedTargetDirectoryId,
+            pickerDirectoryId: t
+        })
+    }
+
+    function ou(e, t) {
+        let n = bl(t);
+        Zl({
+            ...e,
+            selectedTargetDirectoryId: n.id,
+            destinationPath: [...e.destinationPath, {
+                id: n.id,
+                name: n.name
+            }]
+        })
+    }
+
+    function su(e, t) {
+        let n = e.destinationPath.slice(0, t + 1),
+            r = n[n.length - 1]?.id ?? null;
+        Zl({
+            ...e,
+            selectedTargetDirectoryId: r,
+            destinationPath: n
+        })
+    }
+    async function cu(e) {
+        let {
+            artifactSourceDirectoryIds: t,
+            hasItemsToMove: n,
+            rootDirectoryId: r,
+            sourceDirectoryId: i,
+            targetDirectoryId: a
+        } = await yw(e, Rr, k);
+        n && (br.current = null, ue(hO), Wl({
+            artifactIds: e.artifactIds,
+            artifactSourceDirectoryIds: t,
+            directoryIds: e.directoryIds,
+            sourceDirectoryId: i
+        }, a, e.destinationPath[e.destinationPath.length - 1]?.name ?? Xr, r, e.artifacts))
+    }
+    let lu = async function(e) {
+        await Promise.all([Nc(e), Pc(), Ic()])
+    }, uu;
+    t[197] === Symbol.for(`react.memo_cache_sentinel`) ? (uu = function(e, t) {
+        GC(e, t, ke, kr)
+    }, t[197] = uu) : uu = t[197];
+    let du = uu;
+
+    function fu(e) {
+        qC(e, Ee, ke)
+    }
+
+    function pu(e) {
+        KC(e, n, {
+            intl: m,
+            toaster: C,
+            removePendingUpload: fu,
+            uploadBatchIdRef: Er,
+            refreshDirectory: lu,
+            setPendingUploads: Ee,
+            onUploadFinished: du
+        })
+    }
+    let mu;
+    t[198] === Symbol.for(`react.memo_cache_sentinel`) ? (mu = function() {
+        JC(Ee, ke)
+    }, t[198] = mu) : mu = t[198];
+    let hu = mu,
+        gu = function() {
+            !Ir || Zo(Y) || Ct || sp({
+                analyticsSession: n,
+                deferCreationUntilEdited: !0,
+                directoryId: Y,
+                optimisticNoteCallbacks: rT({
+                    directoryId: Y,
+                    notes$: Ya,
+                    surface: `folder`
+                }),
+                refreshLibrary: () => Promise.all([Nc(Y), Pc()]),
+                refreshStorageUsage: Ic
+            })
+        },
+        [_u] = (0, hA.useState)(VC),
+        vu, yu;
+    t[199] === _u ? (vu = t[200], yu = t[201]) : (vu = () => () => _u.dispose(), yu = [_u], t[199] = _u, t[200] = vu, t[201] = yu), (0, hA.useEffect)(vu, yu);
+    let {
+        getInputProps: bu,
+        getRootProps: xu,
+        inputRef: Su,
+        isDragActive: Cu,
+        open: wu
+    } = vd({
+        ...HC({
+            disabled: fc,
+            analyticsSession: n,
+            destinationProvider: er,
+            uploadDialogLifecycle: _u,
+            dropzoneAcceptProp: Dr,
+            intl: m,
+            maxFiles: g,
+            toaster: C
+        }),
+        onDropAccepted: (e, t) => {
+            UC(e, t, (e, t, n) => WC(e, {
+                allocateBatchId: () => {
+                    let e = Er.current + 1;
+                    return Er.current = e, e
+                },
+                getTargetDirectoryId: () => gr.current,
+                onDestinationProviderResolved: n,
+                canUploadToSharedDirectory: e => r && e === Y,
+                intl: m,
+                toaster: C,
+                refreshDirectory: lu,
+                selectionMethod: t,
+                setPendingUploads: Ee,
+                onUploadFinished: du,
+                isLibraryStorageLimitUploadBlocked: T,
+                showLibraryStorageLimitBlockedUploadNotice: E
+            }), n, er)
+        }
+    }), Tu = YC({
+        disabled: fc,
+        onUploadTapped: () => {
+            _u.settleActiveDialogCancellation(), ir.uploadTapped(er)
+        },
+        open: wu
+    }), Eu = mn(e => {
+        e.kind === `upload` ? Pw(Su?.current, e.files) : e.kind === `folder` ? Kl({
+            kind: `library`,
+            parentDirectoryId: Y
+        }) : gu()
+    }), Du = (0, hA.useRef)(void 0), Ou, ku;
+    t[202] !== A.hash || t[203] !== A.pathname || t[204] !== A.search || t[205] !== A.state || t[206] !== j || t[207] !== Eu ? (Ou = () => {
+        let e = Nw(A.state);
+        if (e != null) {
+            AD() && (Du.current = e), j({
+                pathname: A.pathname,
+                search: A.search,
+                hash: A.hash
+            }, {
+                replace: !0,
+                state: void 0
+            });
+            return
+        }
+        let t = Du.current;
+        t != null && (Du.current = void 0, AD() && Eu(t))
+    }, ku = [A.hash, A.pathname, A.search, A.state, j, Eu], t[202] = A.hash, t[203] = A.pathname, t[204] = A.search, t[205] = A.state, t[206] = j, t[207] = Eu, t[208] = Ou, t[209] = ku) : (Ou = t[208], ku = t[209]), (0, hA.useEffect)(Ou, ku);
+    let Au = mn(Tu),
+        ju = mn(() => {
+            Kl({
+                kind: `library`,
+                parentDirectoryId: Y
+            })
+        }),
+        Mu = mn(gu),
+        Nu;
+    t[210] !== m || t[211] !== j || t[212] !== N ? (Nu = () => Mw(j, m, N.get(Dh)), t[210] = m, t[211] = j, t[212] = N, t[213] = Nu) : Nu = t[213];
+    let Pu = mn(Nu),
+        Fu = xn ? Pu : void 0,
+        Iu = LO({
+            directoryId: Y,
+            enabled: kt,
+            showRefreshedTabs: Hn
+        }),
+        Lu = Na(vn && !tn && St ? Y : null)?.provider,
+        Ru = xt && vn && !tn && !Rn && Ct,
+        zu = Ru && !f(Y),
+        Bu = CD({
+            deletedFilesEnabled: a,
+            enabled: kt && !tn && !xn,
+            navigateWithinLibrary: Li
+        }),
+        Vu = {
+            ...DD({
+                compact: kt,
+                isDeleted: tn && !kt,
+                isFavoritesTab: _n,
+                isNewActionDisabled: mc,
+                onCreateFolder: ju,
+                onCreateNote: Mu,
+                onCreateTemplate: Fu,
+                onUpload: Au,
+                pageTitle: Yr,
+                titleProvider: Lu,
+                showNewFolderAction: xc,
+                showNewNoteAction: Sc,
+                isSharedFolder: zu,
+                showSharedLibraryTitlePrefix: Ru,
+                settingsControl: Bu
+            }),
+            ...TD({
+                refreshed: kt,
+                sharedFolderUpload: r ? {
+                    disabled: pc,
+                    onUpload: Au
+                } : void 0
+            }),
+            ...SD({
+                enabled: kt && Hr,
+                isDeleted: tn,
+                items: Jr,
+                onSelect: Ki,
+                searchParams: N
+            }),
+            leadingActions: wc,
+            searchInput: xn || Ut ? void 0 : {
+                ...ED(m, fr),
+                value: pr,
+                onChange: e => {
+                    let t = e.target.value;
+                    mr(t), Kr.onSearchInputChange(t)
+                },
+                onClear: () => {
+                    mr(``), Kr.onSearchClear();
+                    let e = new URLSearchParams(N);
+                    e.delete(Km), Li(Y, e, !0)
+                },
+                onFocus: Kr.onSearchFocus
+            }
+        },
+        Hu = fc ? {
+            className: `relative min-h-full`
+        } : xu({
+            className: `relative min-h-full`
+        }),
+        Uu = async function() {
+            if (uc) return;
+            if (tn) {
+                Tl(`permanent-delete`, ts);
+                return
+            }
+            let e = lc;
+            lr({
+                artifacts: e.artifacts,
+                directoryIds: e.directories.map(Rk)
+            }), _r.current = om, await oO({
+                analytics: ir,
+                selection: e,
+                deleteArtifacts: Dl,
+                deleteDirectory: Nl,
+                removeFavorites: ul,
+                refreshAfterBatch: () => Vc({
+                    clearCacheOnDelete: Bn,
+                    includeArtifactQueries: e.artifacts.length > 0 || e.favorites.length > 0
+                }),
+                deletedFilesEnabled: a,
+                options: {
+                    clearCacheOnDelete: Bn
+                }
+            })
+        }, Wu = function(e, t, n) {
+            let r = e === void 0 ? ts : e,
+                i = t === void 0 ? as : t,
+                a = n === void 0 || n,
+                o = Up({
+                    artifacts: r,
+                    selectedDirectories: i,
+                    ...Ks
+                });
+            if (o.bulkStartChatButtonDisabled) return;
+            let s = o.eligibleSelectedDirectories;
+            if (o.bulkStartChatFolderLocationState != null) {
+                Jp(j, o.bulkStartChatFolderLocationState), ir.startChat(r, s, a);
+                return
+            }
+            at(!0), Kp({
+                artifacts: r,
+                selectedDirectories: s,
+                getArtifactFileReference: fe.getFileReference,
+                inlineLibraryFileReferencesEnabled: !x,
+                isSharedArtifact: Gs,
+                onMaterializeError: e => {
+                    C.danger(m.formatMessage(Z.openFileFailed), {
+                        error: e
+                    })
+                },
+                onResolvedArtifacts: e => r = e
+            }).then(e => {
+                if (e == null) {
+                    at(!1);
+                    return
+                }
+                let t = new Set(e.composerPrefillInlineSelectionPills?.flatMap(Lk) ?? []);
+                Jp(j, e), ir.startChat(r, s.filter(e => t.has(e.id)), a)
+            })
+        }, {
+            getFolderChatHandler: Gu,
+            startChatWithFile: Ku
+        } = Gp({
+            folderChatEnabled: Us,
+            sharedFolderChatEnabled: Ws,
+            isReadOnlyDirectoryNode: Fa,
+            handleBulkStartChat: Wu
+        }), qu = vn && es ? () => fs(!1) : void 0, Ju = function(e) {
+            return {
+                node: e,
+                ...Br,
+                checked: Re.has(e.id),
+                hasSelection: es,
+                showFolderCounts: Qn,
+                canOpen: cb(Y, e.id),
+                draggable: !1,
+                onOpenFolder: Mc,
+                onStartChatFolder: Gu(e),
+                onVisibleFolder: xa,
+                canMove: Ts && !Fa(e.id),
+                onCheckedChange: (t, n) => {
+                    !Xn && !t && Dv(), ms(e.id, t, n)
+                },
+                onRenameFolder: Ll,
+                onDeleteFolder: () => ml(e),
+                onDragStartFolder: Ik,
+                onDragEndFolder: qc,
+                onDragEnterFolder: Fk,
+                onDragLeaveFolder: Pk,
+                onDropFileOnFolder: Nk,
+                isDropTarget: !1,
+                movePending: !1,
+                folderIcon: ry(e, {
+                    large: Qn
+                }),
+                mutationLoading: me === e.id || Ft === e.id || ws,
+                showActions: Ma(e.id)
+            }
+        }, Yu = {
+            artifacts: go,
+            dateKind: La ? `shared` : `modified`,
+            showSuggestedActivity: so,
+            ...Go,
+            allowDrag: !1,
+            canMove: Ts,
+            readOnly: Tt,
+            isNativeSharedWithMe: Pa,
+            isSharedAccessDirectory: Ct,
+            clearCacheOnDelete: !0,
+            isFetchingNextPage: ri.isLoading || vi,
+            ...hs,
+            isDeletingFileId: oe,
+            materializingFileIds: ce,
+            isMovingFileId: he,
+            isMovingDirectoryId: nt,
+            shouldRevealGridFileActionsOnHover: S,
+            currentDirectoryStateId: zr,
+            listEndRef: ko,
+            getDraggedItemsForRow: Zc,
+            setDraggedItems: Jc,
+            clearDraggedItems: qc,
+            handleOpenArtifact: il,
+            onBeforeOpenSavedEntity: rl,
+            onStartChatWithArtifact: Ku,
+            handleOpenMoveFileDialog: tu,
+            handleDownloadArtifact: ql,
+            confirmDeleteArtifact: al,
+            ...Ta,
+            ...vr
+        }, Xu = function(e) {
+            let t = Re.has(e.id),
+                n = Fa(e.id),
+                r = e.isOptimistic === !0 || me === e.id || Ft === e.id || ws,
+                i = !n && !r && (!es || t);
+            return {
+                node: e,
+                ...Br,
+                checked: t,
+                hasSelection: es,
+                canOpen: cb(Y, e.id),
+                draggable: i,
+                onOpenFolder: jc,
+                onStartChatFolder: Gu(e),
+                onMoveFolder: e => nu(e, zr),
+                onCheckedChange: (t, n) => {
+                    !Xn && !t && Dv(), ms(e.id, t, n)
+                },
+                onRenameFolder: Ll,
+                onDeleteFolder: () => ml(e),
+                onRemoveSharedFolder: Kc,
+                onVisibleForPrefetch: $i,
+                onDragStartFolder: t => {
+                    if (!i) {
+                        t.preventDefault();
+                        return
+                    }
+                    let n = Zc({
+                        rowId: e.id,
+                        kind: `directory`
+                    });
+                    if (n == null) {
+                        t.preventDefault();
+                        return
+                    }
+                    yr.current = n, t.dataTransfer.effectAllowed = `move`, t.dataTransfer.setData(`text/plain`, JSON.stringify(n))
+                },
+                onDragEndFolder: qc,
+                onDragEnterFolder: () => n || !Dw(e.id, yr.current) ? !1 : (Ce(e.id), !0),
+                onDragLeaveFolder: () => {
+                    Ce(t => t === e.id ? null : t)
+                },
+                onDropFileOnFolder: () => Gl(e.id),
+                isDropTarget: Se === e.id,
+                movePending: (Ye[e.id] ?? 0) > 0,
+                folderIcon: ry(e, {
+                    large: Qn
+                }),
+                mutationLoading: r,
+                showActions: Ma(e.id)
+            }
+        }, Zu = {
+            wrapperTestId: `artifacts-surface-library-toolbar-controls`,
+            viewMode: kt || xn ? null : qn,
+            floatingSelection: kt,
+            onClearSelection: qu,
+            hasSelection: es,
+            tabs: Iu.showTabs && (!kt || !tn && Wt.length === 0) && OD({
+                onProjectsTabClick: () => j(nr(`/library?tab=projects`, A)),
+                onTabChange: Xi,
+                showFavorites: ln,
+                showProjectsTab: Iu.showProjectsTab,
+                showTemplates: Y == null && Wt.length === 0,
+                showRefreshedLibraryTabs: Hn,
+                showWidgetsInspector: an,
+                tab: Mn,
+                showAllResultsLabel: Qr
+            }),
+            filterControl: !kt && !Ut && (xn || vn && jn) ? Cc : null,
+            selectedCount: is,
+            maxStartChatFiles: 10,
+            maxStartChatFolders: Yp,
+            onStartChat: () => Wu(),
+            onDownload: () => {
+                ql(ts)
+            },
+            onMove: ru,
+            onRestore: () => {
+                Tl(`restore`, ts)
+            },
+            onDelete: () => {
+                Uu()
+            },
+            isBulkStartChatLoading: it,
+            bulkStartChatSelectionHint: Js,
+            bulkStartChatDisabledByFolderLimit: Ys,
+            bulkStartChatDisabledByLimit: Xs,
+            bulkStartChatDisabledByUploadLimit: Zs,
+            bulkStartChatButtonDisabled: Qs,
+            bulkStartChatRateLimitTooltipLabel: nc,
+            bulkStartChatRemainingFileUploads: Hs,
+            bulkStartChatExcessFileCount: $s,
+            bulkDownloadDisabled: ic,
+            bulkMoveDisabled: oc,
+            bulkRestoreDisabled: cc,
+            bulkDeleteDisabled: uc,
+            bulkDeleteLabel: tn ? m.formatMessage(Z.permanentDeleteFile) : void 0,
+            ...SS(ts, tn, ec),
+            showBulkMove: ac,
+            showBulkRestore: tn && es,
+            showBulkDelete: !0
+        }, Qu;
+    t[214] !== ii || t[215] !== ei.queryKey || t[216] !== ri.error ? (Qu = (0, gA.jsx)(Ex, {
+        enabled: ii,
+        error: ri.error,
+        queryKey: ei.queryKey
+    }), t[214] = ii, t[215] = ei.queryKey, t[216] = ri.error, t[217] = Qu) : Qu = t[217];
+    let $u;
+    t[218] === ot ? $u = t[219] : ($u = (0, gA.jsx)(TS, {
+        conversation: ot
+    }), t[218] = ot, t[219] = $u);
+    let ed;
+    t[220] === vc ? ed = t[221] : (ed = (0, gA.jsx)(zS, {
+        onClose: hu,
+        uploads: vc
+    }), t[220] = vc, t[221] = ed);
+    let td = bu({
+            "aria-label": m.formatMessage(Z.uploadFiles),
+            disabled: fc,
+            onCancel: _u.onFileInputCancel,
+            onChange: _u.onFileInputChange
+        }),
+        nd;
+    t[222] === td ? nd = t[223] : (nd = (0, gA.jsx)(`input`, {
+        ...td
+    }), t[222] = td, t[223] = nd);
+    let rd, id;
+    return t[224] !== m || t[225] !== Et ? (rd = (0, gA.jsx)(ew, {
+        intl: m,
+        showStorageLimit: Et
+    }), id = (0, gA.jsx)(tw, {
+        intl: m,
+        showStorageLimit: Et
+    }), t[224] = m, t[225] = Et, t[226] = rd, t[227] = id) : (rd = t[226], id = t[227]), i({
+        rootProps: Hu,
+        beforeContent: (0, gA.jsxs)(gA.Fragment, {
+            children: [(0, gA.jsx)(RE, {
+                queryKey: Ai,
+                state: or
+            }), Qu, (0, gA.jsx)(sE, {
+                currentDirectoryIdRef: gr,
+                directoryPathItems: Pr.data?.items,
+                goTo: Ki,
+                hasDesktopBreadcrumbs: Hr && !kt,
+                isDeleted: tn,
+                isFavoritesTab: _n,
+                isNewActionDisabled: mc,
+                isUploadButtonDisabled: pc,
+                onCreateFolder: ju,
+                onCreateNote: Mu,
+                onCreateTemplate: Fu,
+                onUpload: Au,
+                path: Jr,
+                searchParams: N,
+                settingsControl: Bu,
+                shouldCollapseBreadcrumbAncestors: Zr,
+                titleProvider: Lu,
+                showNewFolderAction: xc,
+                showNewNoteAction: Sc,
+                isSharedFolder: zu,
+                showSharedFolderUploadButton: r,
+                showSharedLibraryTitlePrefix: Ru,
+                title: Yr
+            }), (0, gA.jsx)(r_, {
+                analyticsSession: n,
+                artifacts: ts,
+                managementDeleteVisible: !tn && es,
+                directoryId: Y,
+                folders: as,
+                getSearchQueryId: Ti,
+                hasActiveSearch: Wt.length > 0,
+                hasFilters: zs,
+                isDeleted: tn,
+                isReady: vn && !ki.isFetching && !ki.isError && !Es && !Ds && !Ms && !So,
+                isStorageManagement: F,
+                libraryOrigin: $n,
+                provider: er,
+                resultRevision: ki.dataUpdatedAt,
+                selected: es,
+                visibleItemCount: Io.length + Ha.length
+            }), $u, ed]
+        }),
+        input: nd,
+        isDragActive: Cu,
+        dragInstructions: rd,
+        dropPrompt: id,
+        header: Vu,
+        toolbar: Zu,
+        marqueeSelection: wn ? void 0 : {
+            checkedIds: Re,
+            enabled: vn,
+            selectableIds: vn ? rs : [],
+            onSelectionChange: ps
+        },
+        onClearSelection: qu,
+        pageView: {
+            disableMultiselectMobile: !0,
+            multiselectEnabled$: wn ? void 0 : h,
+            ...Gm(kt, Hr),
+            contentInnerRef: Oo
+        },
+        children: wn ? (0, gA.jsx)(vE, {}) : _n ? (0, gA.jsx)(pk, {
+            favoritesEnabled: sn,
+            confirmDeleteArtifact: al,
+            deleteArtifact: dl,
+            downloadFile: D,
+            hiddenDeletedArtifactIds: Be,
+            isDeletingFileId: oe,
+            isMovingFileId: he,
+            rootDirectoryId: Rr,
+            onDeleteInitiated: e => lr({
+                artifacts: [e]
+            }),
+            onDownloadLibraryArtifact: ql,
+            onMoveLibraryArtifact: Ts ? tu : void 0,
+            searchQuery: Wt,
+            viewMode: qn,
+            onOpenLibraryArtifact: il,
+            gridClassName: Ht,
+            fadeGrid: kt,
+            masonryGridCards: kt,
+            refreshed: kt,
+            refreshedEmptyState: kt && Hn,
+            sourceFilters: kt ? Wn : [],
+            typeFilters: kt ? Kn : []
+        }) : xn ? (0, gA.jsx)(Lw, {}) : (0, gA.jsxs)(gA.Fragment, {
+            children: [Rs ? (0, gA.jsx)(ID, {}) : null, tn ? (0, gA.jsx)(gS, {
+                analyticsSession: n,
+                hasDeletedFiles: Da.length > 0,
+                libraryOrigin: $n,
+                refreshed: kt
+            }) : null, Es || Ds || Ms ? Xn ? (0, gA.jsx)($x, {
+                gridClassName: Ht,
+                masonry: kt && Mn !== `folders`
+            }) : (0, gA.jsx)(Qx, {
+                shared: La,
+                showHeader: Iu.showListHeader,
+                showSharedBy: Pa,
+                showSuggestedActivity: so,
+                showSizeColumn: Br.showSizeColumn
+            }) : Ls ? (0, gA.jsx)(hx, {
+                analyticsSession: n,
+                disabled: mc,
+                variant: Mn === `images` ? `image` : Mn === `folders` ? `folder` : `creation`,
+                showNewFolderAction: xc,
+                showNewNoteAction: Sc,
+                onUploadFiles: Au,
+                onCreateFolder: ju,
+                onCreateNote: Mu
+            }) : Os ? (0, gA.jsx)(nw, {
+                showRecentFiles: Ps,
+                isSharedWithMe: Pa,
+                onUpload: Tu
+            }) : (0, gA.jsxs)(Gw, {
+                enabled: kt && Xn && ki.data != null,
+                className: J(Xn && `relative`),
+                children: [!Xn && Iu.showListHeader ? (0, gA.jsx)(Yw, {
+                    allSelected: Yo,
+                    hasSelectableRows: Xo,
+                    isDeleted: tn,
+                    isShared: La,
+                    showSharedBy: Pa,
+                    showSuggestedActivity: so,
+                    showSizeColumn: Br.showSizeColumn,
+                    onSelectAllChange: fs,
+                    onSort: U,
+                    showSelect: os,
+                    someSelected: ss,
+                    sortDisabled: Kr.enabled,
+                    sortOverride: R,
+                    sortState: B
+                }) : null, tn ? (0, gA.jsx)(aS, {
+                    artifacts: _o,
+                    gridClassName: Ht,
+                    masonry: kt,
+                    isGridView: Xn,
+                    isError: oi.isError && !oi.isFetchNextPageError,
+                    isEmpty: Ns,
+                    isFetchingNextPage: Oi,
+                    shouldRevealGridFileActionsOnHover: S,
+                    listEndRef: ko,
+                    onRetry: () => cr(oi.refetch),
+                    downloadFile: D,
+                    onRequestAction: wl,
+                    ...hs,
+                    isDeletingFileId: oe,
+                    isRestoringFileId: $e
+                }) : Bn ? (0, gA.jsx)(Dx, {
+                    isError: ks,
+                    isErrorWithResults: js,
+                    isGridView: Xn,
+                    onRetry: xi,
+                    isRetrying: yi && vi,
+                    children: Xn ? (0, gA.jsxs)(gA.Fragment, {
+                        children: [!kt && Va.length > 0 ? (0, gA.jsx)(`div`, {
+                            className: J(Ht, `items-start`),
+                            children: Va.map(e => (0, gA.jsx)(Ay, {
+                                ...Ju(e)
+                            }, Yv(e)))
+                        }) : null, go.length > 0 || kt && Va.length > 0 || ri.isLoading || vi || _i ? (0, gA.jsx)(`div`, {
+                            className: kt ? void 0 : Ht,
+                            children: kt ? (0, gA.jsx)(qb, {
+                                folders: Va.map(e => ({
+                                    id: e.id,
+                                    cardProps: Ju(e)
+                                })),
+                                ...Yu
+                            }) : (0, gA.jsx)(Wb, {
+                                ...Yu
+                            })
+                        }) : null]
+                    }) : (0, gA.jsxs)(`div`, {
+                        className: `flex flex-col`,
+                        children: [(0, gA.jsxs)(jp, {
+                            children: [Va.map(e => (0, gA.jsx)(ky, {
+                                ...Ju(e),
+                                mergeWithPrevious: bc[e.id]?.mergeWithPrevious ?? !1,
+                                mergeWithNext: bc[e.id]?.mergeWithNext ?? !1,
+                                showSharedBy: Pa
+                            }, Yv(e))), go.length > 0 || ri.isLoading || vi || _i ? (0, gA.jsx)(Vb, {
+                                artifacts: go,
+                                showSuggestedActivity: so,
+                                ...Go,
+                                allowDrag: !1,
+                                canMove: Ts,
+                                readOnly: Tt,
+                                isNativeSharedWithMe: Pa,
+                                isSharedAccessDirectory: Ct,
+                                selectionGroupFlagsById: bc,
+                                ...hs,
+                                isDeletingFileId: oe,
+                                materializingFileIds: ce,
+                                isMovingFileId: he,
+                                isMovingDirectoryId: nt,
+                                isSearchViewActive: Bn,
+                                currentDirectoryStateId: zr,
+                                getDraggedItemsForRow: Zc,
+                                setDraggedItems: Jc,
+                                clearDraggedItems: qc,
+                                handleOpenArtifact: il,
+                                onBeforeOpenSavedEntity: rl,
+                                onStartChatWithArtifact: Ku,
+                                handleDownloadArtifact: ql,
+                                downloadFile: D,
+                                deleteArtifact: dl,
+                                onDeleteInitiated: e => lr({
+                                    artifacts: [e]
+                                }),
+                                handleOpenMoveFileDialog: tu,
+                                ...Ta,
+                                ...vr
+                            }) : null, ri.isLoading || vi ? (0, gA.jsx)(Zx, {
+                                showSharedBy: Pa
+                            }) : null]
+                        }), (0, gA.jsx)(`div`, {
+                            ref: ko,
+                            className: `h-1`
+                        })]
+                    })
+                }) : ci.isError && !ci.isFetchNextPageError ? (0, gA.jsx)(Ox, {
+                    directoryQuery: ci,
+                    path: Jr,
+                    searchParams: N,
+                    goToBreadcrumb: Ki,
+                    onRetry: () => cr(ci.refetch)
+                }) : Bs ? (0, gA.jsx)(`div`, {
+                    className: `mt-6`,
+                    children: (0, gA.jsx)(gx, {
+                        hasSearchQuery: !0,
+                        isSharedWithMe: Pa,
+                        onNew: Tu
+                    })
+                }) : (!Co || !fi) && Ba.length === 0 && ho.length === 0 ? (0, gA.jsx)(`div`, {
+                    className: `mt-6`,
+                    children: (0, gA.jsx)(gx, {
+                        canUpload: Lr,
+                        hasSearchQuery: !1,
+                        isSharedWithMe: Pa,
+                        onNew: Tu
+                    })
+                }) : Xn ? (0, gA.jsxs)(`div`, {
+                    className: `flex flex-col gap-4 pt-4`,
+                    children: [kt && Ba.length > 0 && ho.length > 0 ? (0, gA.jsx)(`h2`, {
+                        className: `text-token-text-primary text-lg font-medium`,
+                        children: (0, gA.jsx)(X, {
+                            ...Z.gridFoldersSection
+                        })
+                    }) : null, Ba.length > 0 ? (0, gA.jsx)(`div`, {
+                        className: J(Ht, `items-start`),
+                        children: Ba.map(e => (0, gA.jsx)(Ay, {
+                            ...Xu(e),
+                            showFolderCounts: Qn
+                        }, Yv(e)))
+                    }) : null, ho.length > 0 || fi || pi ? (0, gA.jsxs)(gA.Fragment, {
+                        children: [kt && Ba.length > 0 && ho.length > 0 ? (0, gA.jsx)(`h2`, {
+                            className: `text-token-text-primary mt-2 text-lg font-medium`,
+                            children: (0, gA.jsx)(X, {
+                                ...Z.gridItemsSection
+                            })
+                        }) : null, (0, gA.jsx)(`div`, {
+                            className: kt ? void 0 : Ht,
+                            children: (0, gA.jsx)(Wb, {
+                                artifacts: ho,
+                                dateKind: La ? `shared` : `modified`,
+                                showSuggestedActivity: so,
+                                ...Go,
+                                allowDrag: !0,
+                                canMove: !0,
+                                readOnly: Tt,
+                                isNativeSharedWithMe: Pa,
+                                isSharedAccessDirectory: Ct,
+                                isFetchingNextPage: pi,
+                                masonry: kt,
+                                ...hs,
+                                isDeletingFileId: oe,
+                                materializingFileIds: ce,
+                                isMovingFileId: he,
+                                isMovingDirectoryId: nt,
+                                shouldRevealGridFileActionsOnHover: S,
+                                currentDirectoryStateId: zr,
+                                listEndRef: ko,
+                                getDraggedItemsForRow: Zc,
+                                setDraggedItems: Jc,
+                                clearDraggedItems: qc,
+                                handleOpenArtifact: il,
+                                onBeforeOpenSavedEntity: rl,
+                                onStartChatWithArtifact: Ku,
+                                onRemoveSharedArtifact: Gc,
+                                handleOpenMoveFileDialog: tu,
+                                handleDownloadArtifact: ql,
+                                confirmDeleteArtifact: al,
+                                ...vr,
+                                pendingArtifactIds: Za
+                            })
+                        })]
+                    }) : null]
+                }) : (0, gA.jsxs)(`div`, {
+                    className: `flex flex-col`,
+                    children: [(0, gA.jsxs)(jp, {
+                        children: [Ba.map(e => (0, gA.jsx)(ky, {
+                            ...Xu(e),
+                            mergeWithPrevious: yc[e.id]?.mergeWithPrevious ?? !1,
+                            mergeWithNext: yc[e.id]?.mergeWithNext ?? !1,
+                            showSharedBy: Pa
+                        }, Yv(e))), (0, gA.jsx)(Vb, {
+                            artifacts: ho,
+                            showSuggestedActivity: so,
+                            ...Go,
+                            allowDrag: !0,
+                            canMove: !0,
+                            readOnly: Tt,
+                            isNativeSharedWithMe: Pa,
+                            isSharedAccessDirectory: Ct,
+                            selectionGroupFlagsById: yc,
+                            ...hs,
+                            isDeletingFileId: oe,
+                            materializingFileIds: ce,
+                            isMovingFileId: he,
+                            isMovingDirectoryId: nt,
+                            isSearchViewActive: Bn,
+                            currentDirectoryStateId: zr,
+                            getDraggedItemsForRow: Zc,
+                            setDraggedItems: Jc,
+                            clearDraggedItems: qc,
+                            handleOpenArtifact: il,
+                            onBeforeOpenSavedEntity: rl,
+                            onStartChatWithArtifact: Ku,
+                            onRemoveSharedArtifact: Gc,
+                            handleDownloadArtifact: ql,
+                            downloadFile: D,
+                            deleteArtifact: dl,
+                            onDeleteInitiated: e => lr({
+                                artifacts: [e]
+                            }),
+                            handleOpenMoveFileDialog: tu,
+                            ...vr,
+                            pendingArtifactIds: Za
+                        }), pi ? (0, gA.jsx)(Zx, {
+                            showSharedBy: Pa
+                        }) : null]
+                    }), (0, gA.jsx)(`div`, {
+                        ref: ko,
+                        className: `h-1`
+                    })]
+                })]
+            }, Mn), Mo && !qo ? (0, gA.jsx)(`div`, {
+                className: `flex justify-center pt-3`,
+                children: (0, gA.jsx)(P, {
+                    color: `secondary`,
+                    onClick: () => void Fi(),
+                    children: (0, gA.jsx)(X, {
+                        ...Z.loadMore
+                    })
+                })
+            }) : null]
+        })
+    })
+}
+
+function Nk() {
+    return !1
+}
+
+function Pk() {}
+
+function Fk() {
+    return !1
+}
+
+function Ik(e) {
+    return e.preventDefault()
+}
+
+function Lk(e) {
+    return e.kind === `folder-reference` ? [e.directoryId] : []
+}
+
+function Rk(e) {
+    return e.id
+}
+
+function zk(e) {
+    return e.id
+}
+
+function Bk(e) {
+    return e.id
+}
+
+function Vk(e) {
+    return e ?? []
+}
+
+function Hk(e) {
+    return e.id
+}
+
+function Uk(e) {
+    return e.id
+}
+
+function Wk(e) {
+    return Jv(e)
+}
+
+function Gk(e) {
+    return !Zo(e.id)
+}
+
+function Kk(e) {
+    return e.id
+}
+
+function qk(e) {
+    return e.id
+}
+
+function Jk(e) {
+    return e.id
+}
+
+function Yk(e) {
+    return e.id
+}
+
+function Xk(e) {
+    return e.id
+}
+
+function Zk(e) {
+    return e.status !== `failed` && e.status !== `success`
+}
+
+function Qk(e) {
+    return !Nc(e.id) && !f(e.id)
+}
+
+function $k(e) {
+    return e + 1
+}
+
+function eA() {}
+
+function tA(e) {
+    return e.id
+}
+
+function nA(e) {
+    return e.isOptimistic !== !0 && !hi(e.id)
+}
+
+function rA(e) {
+    return e.items
+}
+
+function iA() {
+    return new Map
+}
+
+function aA() {
+    return mr()
+}
+
+function oA() {
+    return Je()
+}
+
+function sA() {
+    return new Set
+}
+
+function cA() {
+    return {}
+}
+
+function lA() {
+    return {}
+}
+
+function uA() {
+    return new Set
+}
+
+function dA() {
+    return new Set
+}
+
+function fA() {
+    return new Set
+}
+
+function pA() {
+    return new Set
+}
+var mA, hA, gA, _A = e((() => {
+    mA = qn(), Hr(), Ne(), Ei(), zi(), Yd(), Bt(), fc(), n(), Tp(), Xe(), Ls(), D(), kp(), ud(), de(), Ha(), qg(), n_(), c_(), Ov(), bf(), Mv(), mh(), Xp(), hS(), bS(), ex(), wS(), OS(), BS(), qS(), iC(), QC(), aw(), GS(), ph(), jy(), Eh(), Ka(), Pf(), sw(), Tm(), Aw(), hb(), bw(), Ia(), qh(), Vc(), _r(), Iw(), Rw(), Hw(), xx(), Kw(), Px(), uy(), eS(), Xw(), wr(), oT(), IE(), BE(), cE(), jD(), ND(), FD(), Ol(), LD(), yE(), nm(), am(), $p(), fy(), QS(), xo(), Ir(), hC(), JD(), nO(), aO(), cO(), mO(), gO(), lr(), Gc(), Ci(), pi(), xO(), Bo(), Ic(), fn(), dy(), Wv(), vi(), DO(), xi(), RO(), dD(), xr(), lm(), YO(), nf(), wk(), Dk(), rk(), cf(), Ak(), xt(), W(), fe(), dn(), s(), zt(), vn(), en(), z(), ma(), Id(), Kn(), ke(), hA = t(Fn()), yd(), Pn(), Nn(), gA = wn()
+}));
+
+function vA(e) {
+    "use forget";
+    let t = (0, bA.c)(22),
+        {
+            children: n,
+            onOpen: r,
+            onClose: i,
+            fragmentHash: a,
+            disableLightDismiss: o,
+            disableCloseOnBackdropClick: s,
+            disableCloseOnEscape: c,
+            ref: l
+        } = e,
+        u = o !== void 0 && o,
+        d = s === void 0 ? u : s,
+        f = c === void 0 ? u : c,
+        p;
+    t[0] === a ? p = t[1] : (p = () => a == null || window.location.hash === a, t[0] = a, t[1] = p);
+    let [m, h] = (0, xA.useState)(p), g;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (g = () => ({
+        open() {
+            (0, xA.startTransition)(() => {
+                h(!0)
+            })
+        },
+        close() {
+            (0, xA.startTransition)(() => {
+                h(!1)
+            })
+        },
+        toggle() {
+            (0, xA.startTransition)(() => {
+                h(yA)
+            })
+        }
+    }), t[2] = g) : g = t[2], (0, xA.useImperativeHandle)(l, g);
+    let _;
+    t[3] === r ? _ = t[4] : (_ = () => {
+        r?.()
+    }, t[3] = r, t[4] = _);
+    let v = mn(_),
+        y;
+    t[5] === i ? y = t[6] : (y = () => {
+        i?.()
+    }, t[5] = i, t[6] = y);
+    let b = mn(y),
+        x, S;
+    t[7] === a ? (x = t[8], S = t[9]) : (x = () => {
+        if (a == null) return;
+        let e = () => {
+            (0, xA.startTransition)(() => {
+                h(window.location.hash === a)
+            })
+        };
+        return window.addEventListener(`hashchange`, e), () => {
+            window.removeEventListener(`hashchange`, e)
+        }
+    }, S = [a], t[7] = a, t[8] = x, t[9] = S), (0, xA.useEffect)(x, S);
+    let C;
+    t[10] === n ? C = t[11] : (C = {
+        children: n
+    }, t[10] = n, t[11] = C);
+    let w;
+    t[12] === b ? w = t[13] : (w = () => {
+        (0, xA.startTransition)(() => {
+            b(), h(!1)
+        })
+    }, t[12] = b, t[13] = w);
+    let T;
+    return t[14] !== d || t[15] !== f || t[16] !== u || t[17] !== m || t[18] !== v || t[19] !== C || t[20] !== w ? (T = (0, SA.jsx)(Ee, {
+        for: CA,
+        withProps: C,
+        open: m,
+        onOpen: v,
+        onClose: w,
+        disableLightDismiss: u,
+        disableCloseOnBackdropClick: d,
+        disableCloseOnEscape: f
+    }), t[14] = d, t[15] = f, t[16] = u, t[17] = m, t[18] = v, t[19] = C, t[20] = w, t[21] = T) : T = t[21], T
+}
+
+function yA(e) {
+    return !e
+}
+var bA, xA, SA, CA, wA = e((() => {
+    bA = qn(), en(), xA = t(Fn()), L(), SA = wn(), CA = Object.assign(({
+        children: e
+    }) => e, {
+        prefetch: async () => {},
+        skipSuspense: () => {}
+    })
+}));
+async function TA({
+    resourceType: e,
+    resourceId: t
+}) {
+    let n = new Set,
+        r;
+    for (let i = 0; i < 10; i += 1) {
+        let {
+            invitations: i,
+            next_cursor: a
+        } = await v.safeGet(`/sharing/invitations`, {
+            parameters: {
+                query: {
+                    resource_type: e,
+                    limit: 100,
+                    ...r == null ? {} : {
+                        cursor: r
+                    }
+                }
+            }
+        }), o = i.find(n => n.status === `pending` && n.resource.resource_type === e && n.resource.resource_id === t);
+        if (o != null) return o;
+        if (a == null || n.has(a)) return null;
+        n.add(a), r = a
+    }
+    return null
+}
+var EA, DA = e((() => {
+    vn(), EA = `library-sharing-recipient-invitations`
+}));
+
+function OA(e, t, n) {
+    let r = Zi(t) || new URLSearchParams(n).get(`file_id`)?.trim();
+    if (r != null) return e.resource.resource_type === `library_file` && e.resource.resource_id === r;
+    let {
+        directoryId: i
+    } = Xa(t);
+    return e.resource.resource_type === `library_folder` && e.resource.resource_id === qe(i)
+}
+
+function kA(e) {
+    "use forget";
+    let t = (0, NA.c)(2),
+        {
+            invitationId: n
+        } = e,
+        r;
+    return t[0] === n ? r = t[1] : (r = (0, FA.jsx)(AA, {
+        invitationId: n
+    }, n), t[0] = n, t[1] = r), r
+}
+
+function AA(e) {
+    "use forget";
+    let t = (0, NA.c)(151),
+        {
+            invitationId: n
+        } = e,
+        r = Yn(),
+        i = Cn(),
+        a = kn(),
+        o = On(),
+        s = Le(),
+        c;
+    t[0] === s ? c = t[1] : (c = Rc(s), t[0] = s, t[1] = c);
+    let l = c,
+        u;
+    t[2] === s ? u = t[3] : (u = s?.isPersonalAccount() ?? !1, t[2] = s, t[3] = u);
+    let d = u,
+        [f] = (0, PA.useState)(Np),
+        p = (0, PA.useRef)(!1),
+        m = (0, PA.useRef)(!1),
+        h = (0, PA.useRef)(!1),
+        [g, _] = (0, PA.useState)(null),
+        y, b;
+    t[4] === n ? (y = t[5], b = t[6]) : (y = [`library-sharing-invitation`, n], b = () => v.safeGet(`/sharing/invitations/{invitation_id}`, {
+        parameters: {
+            path: {
+                invitation_id: n
+            }
+        }
+    }), t[4] = n, t[5] = y, t[6] = b);
+    let x;
+    t[7] !== l || t[8] !== y || t[9] !== b ? (x = {
+        queryKey: y,
+        queryFn: b,
+        enabled: l,
+        retry: !1
+    }, t[7] = l, t[8] = y, t[9] = b, t[10] = x) : x = t[10];
+    let S = An(x),
+        C = S.data,
+        w;
+    t[11] !== C || t[12] !== i.pathname || t[13] !== i.search ? (w = C != null && OA(C, i.pathname, i.search), t[11] = C, t[12] = i.pathname, t[13] = i.search, t[14] = w) : w = t[14];
+    let T = w,
+        E = C?.resource.resource_type === `library_folder` ? `folder` : `file`,
+        D;
+    t[15] !== C || t[16] !== T || t[17] !== E || t[18] !== f ? (D = T && C != null ? Fp({
+        actor: `recipient`,
+        resourceKind: E,
+        libraryFileId: C.resource.resource_id,
+        shareSessionId: f
+    }) : void 0, t[15] = C, t[16] = T, t[17] = E, t[18] = f, t[19] = D) : D = t[19];
+    let O = D,
+        k;
+    t[20] !== C || t[21] !== T || t[22] !== E ? (k = T && C != null ? Uh(C.role_id, E) : void 0, t[20] = C, t[21] = T, t[22] = E, t[23] = k) : k = t[23];
+    let A = k,
+        j;
+    t[24] !== A || t[25] !== i.pathname || t[26] !== i.search || t[27] !== a || t[28] !== O ? (j = async e => {
+        let t = e ?? Np();
+        O != null && Mp(O, {
+            action: `open_shared_item`,
+            outcome: `started`,
+            operationId: t,
+            ...A == null ? {} : {
+                role: A
+            }
+        });
+        let n = new URLSearchParams(i.search);
+        n.delete(`invitation_id`);
+        try {
+            await a({
+                pathname: i.pathname,
+                search: n.toString()
+            }, {
+                replace: !0
+            }), O != null && Mp(O, {
+                action: `open_shared_item`,
+                outcome: `succeeded`,
+                operationId: t,
+                ...A == null ? {} : {
+                    role: A
+                }
+            })
+        } catch (e) {
+            let n = e;
+            O != null && Mp(O, {
+                action: `open_shared_item`,
+                outcome: `failed`,
+                operationId: t,
+                ...A == null ? {} : {
+                    role: A
+                },
+                error: n
+            })
+        }
+    }, t[24] = A, t[25] = i.pathname, t[26] = i.search, t[27] = a, t[28] = O, t[29] = j) : j = t[29];
+    let M = j,
+        N;
+    t[30] !== g || t[31] !== C?.inviter_email || t[32] !== C?.inviter_name || t[33] !== n || t[34] !== d ? (N = g === n && d && !!C?.inviter_name?.trim() && !!C?.inviter_email?.trim(), t[30] = g, t[31] = C?.inviter_email, t[32] = C?.inviter_name, t[33] = n, t[34] = d, t[35] = N) : N = t[35];
+    let F = N,
+        I;
+    t[36] !== A || t[37] !== O ? (I = () => {
+        if (O == null) return;
+        let e = Np();
+        return Mp(O, {
+            action: `accept_invitation`,
+            outcome: `started`,
+            operationId: e,
+            ...A == null ? {} : {
+                role: A
+            }
+        }), {
+            analytics: O,
+            operationId: e,
+            role: A
+        }
+    }, t[36] = A, t[37] = O, t[38] = I) : I = t[38];
+    let L;
+    t[39] !== F || t[40] !== n ? (L = () => v.safePost(`/sharing/invitations/{invitation_id}/accept`, {
+        parameters: {
+            path: {
+                invitation_id: n
+            }
+        },
+        ...F ? {
+            requestBody: {
+                always_accept_from_inviter: !0
+            }
+        } : {}
+    }), t[39] = F, t[40] = n, t[41] = L) : L = t[41];
+    let R;
+    t[42] !== i.pathname || t[43] !== M || t[44] !== o ? (R = async (e, t, n) => {
+        n != null && Mp(n.analytics, {
+            action: `accept_invitation`,
+            outcome: `succeeded`,
+            operationId: n.operationId,
+            ...n.role == null ? {} : {
+                role: n.role
+            }
+        });
+        let {
+            directoryId: r
+        } = Xa(i.pathname);
+        qe(r) != null && await o.invalidateQueries({
+            queryKey: Yh(r)
+        }), await o.invalidateQueries({
+            queryKey: [EA]
+        }), M(n?.operationId)
+    }, t[42] = i.pathname, t[43] = M, t[44] = o, t[45] = R) : R = t[45];
+    let z;
+    t[46] !== I || t[47] !== L || t[48] !== R ? (z = {
+        onMutate: I,
+        mutationFn: L,
+        onSuccess: R,
+        onError: MA
+    }, t[46] = I, t[47] = L, t[48] = R, t[49] = z) : z = t[49];
+    let B = Gn(z),
+        V;
+    t[50] !== A || t[51] !== O ? (V = () => {
+        if (O == null) return;
+        let e = Np();
+        return Mp(O, {
+            action: `decline_invitation`,
+            outcome: `started`,
+            operationId: e,
+            ...A == null ? {} : {
+                role: A
+            }
+        }), {
+            analytics: O,
+            operationId: e,
+            role: A
+        }
+    }, t[50] = A, t[51] = O, t[52] = V) : V = t[52];
+    let H;
+    t[53] === n ? H = t[54] : (H = () => v.safePost(`/sharing/invitations/{invitation_id}/decline`, {
+        parameters: {
+            path: {
+                invitation_id: n
+            }
+        }
+    }), t[53] = n, t[54] = H);
+    let U;
+    t[55] === a ? U = t[56] : (U = (e, t, n) => {
+        n != null && Mp(n.analytics, {
+            action: `decline_invitation`,
+            outcome: `succeeded`,
+            operationId: n.operationId,
+            ...n.role == null ? {} : {
+                role: n.role
+            }
+        }), a(`/library`, {
+            replace: !0
+        })
+    }, t[55] = a, t[56] = U);
+    let ee;
+    t[57] !== V || t[58] !== H || t[59] !== U ? (ee = {
+        onMutate: V,
+        mutationFn: H,
+        onSuccess: U,
+        onError: jA
+    }, t[57] = V, t[58] = H, t[59] = U, t[60] = ee) : ee = t[60];
+    let W = Gn(ee),
+        te = C?.expires_at != null && Date.parse(C.expires_at) <= S.dataUpdatedAt,
+        ne = T && C?.status === `pending` && !te,
+        re = ne ? C?.resource.resource_id : void 0,
+        ie = T && C?.status === `accepted`,
+        ae;
+    t[61] !== S.error || t[62] !== S.isError ? (ae = S.isError && (!(S.error instanceof oe) || S.error.isServerError() || S.error.isTransportError || S.error.status === 408 || S.error.status === 429), t[61] = S.error, t[62] = S.isError, t[63] = ae) : ae = t[63];
+    let G = ae,
+        K = B.isPending || W.isPending,
+        se, ce;
+    if (t[64] !== A || t[65] !== re || t[66] !== E || t[67] !== f || t[68] !== l ? (se = () => {
+            if (!l || re == null) return;
+            let e = Fp({
+                actor: `recipient`,
+                resourceKind: E,
+                libraryFileId: re,
+                shareSessionId: f
+            });
+            return p.current = !0, m.current || (m.current = !0, Mp(e, {
+                action: `dialog_opened`,
+                ...A == null ? {} : {
+                    role: A
+                }
+            })), () => {
+                p.current = !1, queueMicrotask(() => {
+                    p.current || Mp(e, {
+                        action: `dialog_closed`,
+                        ...h.current ? {
+                            outcome: `canceled`
+                        } : {},
+                        ...A == null ? {} : {
+                            role: A
+                        }
+                    })
+                })
+            }
+        }, ce = [A, re, E, f, l], t[64] = A, t[65] = re, t[66] = E, t[67] = f, t[68] = l, t[69] = se, t[70] = ce) : (se = t[69], ce = t[70]), (0, PA.useEffect)(se, ce), !l) return null;
+    if (ne && C != null) {
+        let e, i, o, s;
+        if (t[71] !== r || t[72] !== C.inviter_email || t[73] !== C.inviter_name || t[74] !== C.resource_name || t[75] !== C.role_id || t[76] !== E) {
+            i = C.inviter_name?.trim();
+            let n;
+            t[81] === C.inviter_email ? n = t[82] : (n = C.inviter_email?.trim(), t[81] = C.inviter_email, t[82] = n), e = n;
+            let a = C.resource_name?.trim(),
+                c;
+            if (t[83] !== C.role_id || t[84] !== E ? (c = Uh(C.role_id, E), t[83] = C.role_id, t[84] = E, t[85] = c) : c = t[85], o = c === `editor`, o && i && a) s = r.formatMessage({
+                id: `chatgpt.library.share.invitation.personalized.title.editor`,
+                defaultMessage: `{inviterName} invited you to edit “{resourceName}”`
+            }, {
+                inviterName: i,
+                resourceName: a
+            });
+            else if (o) {
+                let e;
+                t[86] !== r || t[87] !== E ? (e = r.formatMessage({
+                    id: `chatgpt.library.share.invitation.pending.title.editor`,
+                    defaultMessage: `You’ve been invited to edit a {resourceKind, select, folder {folder} other {file}}`
+                }, {
+                    resourceKind: E
+                }), t[86] = r, t[87] = E, t[88] = e) : e = t[88], s = e
+            } else if (i && a) s = r.formatMessage({
+                id: `chatgpt.library.share.invitation.personalized.title`,
+                defaultMessage: `{inviterName} invited you to view “{resourceName}”`
+            }, {
+                inviterName: i,
+                resourceName: a
+            });
+            else if (E === `folder`) {
+                let e;
+                t[89] === r ? e = t[90] : (e = r.formatMessage({
+                    id: `chatgpt.library.share.invitation.folder.title`,
+                    defaultMessage: `You’ve been invited to view a folder`
+                }), t[89] = r, t[90] = e), s = e
+            } else {
+                let e;
+                t[91] === r ? e = t[92] : (e = r.formatMessage({
+                    id: `chatgpt.library.share.invitation.file.title`,
+                    defaultMessage: `You’ve been invited to view a file`
+                }), t[91] = r, t[92] = e), s = e
+            }
+            t[71] = r, t[72] = C.inviter_email, t[73] = C.inviter_name, t[74] = C.resource_name, t[75] = C.role_id, t[76] = E, t[77] = e, t[78] = i, t[79] = o, t[80] = s
+        } else e = t[77], i = t[78], o = t[79], s = t[80];
+        let c;
+        t[93] !== K || t[94] !== a ? (c = () => {
+            K || (h.current = !0, a(`/library`, {
+                replace: !0
+            }))
+        }, t[93] = K, t[94] = a, t[95] = c) : c = t[95];
+        let l;
+        t[96] !== K || t[97] !== s ? (l = (0, FA.jsx)(je, {
+            hideCloseButton: K,
+            title: s
+        }), t[96] = K, t[97] = s, t[98] = l) : l = t[98];
+        let u;
+        t[99] !== e || t[100] !== i || t[101] !== o || t[102] !== E ? (u = (0, FA.jsx)(`p`, {
+            className: `text-token-text-secondary text-sm leading-5`,
+            children: o && i && e ? (0, FA.jsx)(X, {
+                id: `chatgpt.library.share.invitation.personalized.description.editor`,
+                defaultMessage: `{inviterName} ({inviterEmail}) invited you to edit this {resourceKind, select, folder {folder} other {file}}. Only accept files from people you know.`,
+                values: {
+                    inviterEmail: e,
+                    inviterName: i,
+                    resourceKind: E
+                }
+            }) : o ? (0, FA.jsx)(X, {
+                id: `chatgpt.library.share.invitation.pending.safety.description.editor`,
+                defaultMessage: `Accept this invitation to edit the {resourceKind, select, folder {folder} other {file}} in ChatGPT. Only accept files from people you know.`,
+                values: {
+                    resourceKind: E
+                }
+            }) : i && e ? (0, FA.jsx)(X, {
+                id: `chatgpt.library.share.invitation.personalized.description`,
+                defaultMessage: `{inviterName} ({inviterEmail}) invited you to view this {resourceKind, select, folder {folder} other {file}}. Only accept files from people you know.`,
+                values: {
+                    inviterEmail: e,
+                    inviterName: i,
+                    resourceKind: E
+                }
+            }) : (0, FA.jsx)(X, {
+                id: `chatgpt.library.share.invitation.pending.safety.description`,
+                defaultMessage: `Accept this invitation to view the {resourceKind, select, folder {folder} other {file}} in ChatGPT. Only accept files from people you know.`,
+                values: {
+                    resourceKind: E
+                }
+            })
+        }), t[99] = e, t[100] = i, t[101] = o, t[102] = E, t[103] = u) : u = t[103];
+        let f;
+        t[104] !== F || t[105] !== n || t[106] !== e || t[107] !== i || t[108] !== d || t[109] !== K ? (f = d && i && e ? (0, FA.jsx)(Zc, {
+            id: `library-sharing-always-accept-${n}`,
+            checked: F,
+            disabled: K,
+            onChange: e => _(e.target.checked ? n : null),
+            containerClassName: `mt-3`,
+            labelClassName: `text-sm leading-5`,
+            label: (0, FA.jsx)(X, {
+                id: `chatgpt.library.share.invitation.trust_inviter.checkbox.label`,
+                defaultMessage: `Always accept files and folders from {inviterName}`,
+                values: {
+                    inviterName: i
+                }
+            })
+        }) : null, t[104] = F, t[105] = n, t[106] = e, t[107] = i, t[108] = d, t[109] = K, t[110] = f) : f = t[110];
+        let p;
+        t[111] !== B.isError || t[112] !== W.isError ? (p = (B.isError || W.isError) && (0, FA.jsx)(`p`, {
+            className: `text-token-interactive-label-warning-secondary mt-3 text-sm`,
+            role: `alert`,
+            children: (0, FA.jsx)(X, {
+                id: `chatgpt.library.share.invitation.action.error`,
+                defaultMessage: `We couldn’t update your invitation. Please try again.`
+            })
+        }), t[111] = B.isError, t[112] = W.isError, t[113] = p) : p = t[113];
+        let m;
+        t[114] !== u || t[115] !== f || t[116] !== p ? (m = (0, FA.jsxs)(Re, {
+            children: [u, f, p]
+        }), t[114] = u, t[115] = f, t[116] = p, t[117] = m) : m = t[117];
+        let g;
+        t[118] === B ? g = t[119] : (g = () => B.mutate(), t[118] = B, t[119] = g);
+        let v;
+        t[120] === o ? v = t[121] : (v = o ? (0, FA.jsx)(X, {
+            id: `chatgpt.library.share.invitation.accept.button.editor`,
+            defaultMessage: `Accept invite`
+        }) : (0, FA.jsx)(X, {
+            id: `chatgpt.library.share.invitation.accept.button`,
+            defaultMessage: `Accept invite`
+        }), t[120] = o, t[121] = v);
+        let y;
+        t[122] !== B.isPending || t[123] !== K || t[124] !== g || t[125] !== v ? (y = (0, FA.jsx)(P, {
+            disabled: K,
+            loading: B.isPending,
+            onClick: g,
+            children: v
+        }), t[122] = B.isPending, t[123] = K, t[124] = g, t[125] = v, t[126] = y) : y = t[126];
+        let b;
+        t[127] === W ? b = t[128] : (b = () => W.mutate(), t[127] = W, t[128] = b);
+        let x;
+        t[129] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, FA.jsx)(X, {
+            id: `chatgpt.library.share.invitation.decline.button`,
+            defaultMessage: `Decline`
+        }), t[129] = x) : x = t[129];
+        let S;
+        t[130] !== W.isPending || t[131] !== K || t[132] !== b ? (S = (0, FA.jsx)(P, {
+            color: `danger-outline`,
+            disabled: K,
+            loading: W.isPending,
+            onClick: b,
+            children: x
+        }), t[130] = W.isPending, t[131] = K, t[132] = b, t[133] = S) : S = t[133];
+        let w;
+        t[134] !== y || t[135] !== S ? (w = (0, FA.jsx)(Pe, {
+            primaryButton: y,
+            secondaryButton: S
+        }), t[134] = y, t[135] = S, t[136] = w) : w = t[136];
+        let T;
+        t[137] !== l || t[138] !== m || t[139] !== w ? (T = (0, FA.jsxs)(Ut, {
+            className: `[&_h2]:font-semibold [&_h2]:focus:outline-hidden`,
+            testId: `modal-library-sharing-invitation`,
+            children: [l, m, w]
+        }), t[137] = l, t[138] = m, t[139] = w, t[140] = T) : T = t[140];
+        let D;
+        return t[141] !== K || t[142] !== c || t[143] !== T ? (D = (0, FA.jsx)(vA, {
+            disableLightDismiss: K,
+            onClose: c,
+            children: T
+        }), t[141] = K, t[142] = c, t[143] = T, t[144] = D) : D = t[144], D
+    }
+    let le;
+    return t[145] !== G || t[146] !== S || t[147] !== ie || t[148] !== a || t[149] !== M ? (le = (0, FA.jsx)(`div`, {
+        className: `flex h-full min-h-80 items-center justify-center p-6`,
+        children: (0, FA.jsx)(`div`, {
+            className: `flex w-full max-w-md flex-col items-center gap-4 text-center`,
+            children: S.isPending ? (0, FA.jsxs)(FA.Fragment, {
+                children: [(0, FA.jsx)(Ct, {
+                    className: `icon-lg text-token-text-secondary`
+                }), (0, FA.jsx)(`h1`, {
+                    className: `text-lg font-semibold`,
+                    children: (0, FA.jsx)(X, {
+                        id: `chatgpt.library.share.invitation.loading.title`,
+                        defaultMessage: `Checking your invitation`
+                    })
+                })]
+            }) : G ? (0, FA.jsxs)(FA.Fragment, {
+                children: [(0, FA.jsx)(`h1`, {
+                    className: `text-lg font-semibold`,
+                    children: (0, FA.jsx)(X, {
+                        id: `chatgpt.library.share.invitation.load.error.title`,
+                        defaultMessage: `We couldn’t load your invitation`
+                    })
+                }), (0, FA.jsx)(`p`, {
+                    className: `text-token-text-secondary text-sm`,
+                    children: (0, FA.jsx)(X, {
+                        id: `chatgpt.library.share.invitation.load.error.description`,
+                        defaultMessage: `Please try again in a moment.`
+                    })
+                }), (0, FA.jsx)(P, {
+                    loading: S.isFetching,
+                    onClick: () => void S.refetch(),
+                    children: (0, FA.jsx)(X, {
+                        id: `chatgpt.library.share.invitation.load.error.retry.button`,
+                        defaultMessage: `Try again`
+                    })
+                })]
+            }) : ie ? (0, FA.jsxs)(FA.Fragment, {
+                children: [(0, FA.jsx)(`h1`, {
+                    className: `text-lg font-semibold`,
+                    children: (0, FA.jsx)(X, {
+                        id: `chatgpt.library.share.invitation.accepted.title`,
+                        defaultMessage: `This invitation was already accepted`
+                    })
+                }), (0, FA.jsx)(P, {
+                    onClick: () => {
+                        M()
+                    },
+                    children: (0, FA.jsx)(X, {
+                        id: `chatgpt.library.share.invitation.accepted.open.button`,
+                        defaultMessage: `Open in ChatGPT`
+                    })
+                })]
+            }) : (0, FA.jsxs)(FA.Fragment, {
+                children: [(0, FA.jsx)(`h1`, {
+                    className: `text-lg font-semibold`,
+                    children: (0, FA.jsx)(X, {
+                        id: `chatgpt.library.share.invitation.unavailable.title`,
+                        defaultMessage: `This invitation is no longer available`
+                    })
+                }), (0, FA.jsx)(`p`, {
+                    className: `text-token-text-secondary text-sm`,
+                    children: (0, FA.jsx)(X, {
+                        id: `chatgpt.library.share.invitation.unavailable.description`,
+                        defaultMessage: `Ask the person who shared it to send you a new invitation.`
+                    })
+                }), (0, FA.jsx)(P, {
+                    color: `secondary`,
+                    onClick: () => a(`/library`),
+                    children: (0, FA.jsx)(X, {
+                        id: `chatgpt.library.share.invitation.unavailable.back.button`,
+                        defaultMessage: `Back to Library`
+                    })
+                })]
+            })
+        })
+    }), t[145] = G, t[146] = S, t[147] = ie, t[148] = a, t[149] = M, t[150] = le) : le = t[150], le
+}
+
+function jA(e, t, n) {
+    n != null && Mp(n.analytics, {
+        action: `decline_invitation`,
+        outcome: `failed`,
+        operationId: n.operationId,
+        ...n.role == null ? {} : {
+            role: n.role
+        },
+        error: e
+    })
+}
+
+function MA(e, t, n) {
+    n != null && Mp(n.analytics, {
+        action: `accept_invitation`,
+        outcome: `failed`,
+        operationId: n.operationId,
+        ...n.role == null ? {} : {
+            role: n.role
+        },
+        error: e
+    })
+}
+var NA, PA, FA, IA = e((() => {
+        NA = qn(), Ne(), Ro(), tt(), wA(), Pp(), qh(), zh(), vi(), Jo(), fn(), Lh(), DA(), xo(), ee(), fe(), c(), vn(), Kn(), PA = t(Fn()), Pn(), Nn(), FA = wn()
+    })),
+    LA, RA, zA, BA = e((() => {
+        LA = qn(), ke(), Pn(), RA = wn(), zA = e => {
+            "use forget";
+            let t = (0, LA.c)(6),
+                {
+                    borderless: n
+                } = e,
+                r = !n && `border`,
+                i;
+            t[0] === r ? i = t[1] : (i = J(`flex h-full w-full flex-col items-center justify-center gap-2 rounded-xl p-8`, r), t[0] = r, t[1] = i);
+            let a;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, RA.jsx)(`div`, {
+                className: `text-token-text-secondary -mt-[100px] text-xl`,
+                children: (0, RA.jsx)(X, {
+                    id: `D9mM+/`,
+                    defaultMessage: `Visualize anything, find it here`
+                })
+            }), t[2] = a) : a = t[2];
+            let o;
+            t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, RA.jsx)(`div`, {
+                className: `text-token-text-tertiary text-center text-base text-balance`,
+                children: (0, RA.jsx)(X, {
+                    id: `fnxt50`,
+                    defaultMessage: `Ask ChatGPT to turn any idea into an image, diagram, or visual.`
+                })
+            }), t[3] = o) : o = t[3];
+            let s;
+            return t[4] === i ? s = t[5] : (s = (0, RA.jsxs)(`div`, {
+                className: i,
+                children: [a, o]
+            }), t[4] = i, t[5] = s), s
+        }
+    })),
+    VA, HA, UA, WA = e((() => {
+        VA = qn(), ea(), Hl(), T(), Gd(), Io(), W(), en(), Fn(), Pn(), HA = wn(), UA = e => {
+            "use forget";
+            let t = (0, VA.c)(18),
+                {
+                    onShowHidden: n
+                } = e,
+                r = Yn(),
+                i;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = of(), t[0] = i) : i = t[0];
+            let {
+                isShowingHiddenImages$: a
+            } = i, o = K(a), s;
+            t[1] === n ? s = t[2] : (s = () => {
+                n ? n() : Zf()
+            }, t[1] = n, t[2] = s);
+            let c = mn(s),
+                l;
+            t[3] === r ? l = t[4] : (l = r.formatMessage({
+                id: `NaTncQ`,
+                defaultMessage: `Library menu`
+            }), t[3] = r, t[4] = l);
+            let u;
+            t[5] === l ? u = t[6] : (u = (0, HA.jsx)(Yc, {
+                "aria-label": l
+            }), t[5] = l, t[6] = u);
+            let d;
+            t[7] === o ? d = t[8] : (d = o ? (0, HA.jsx)(we, {
+                className: `h-4 w-4`
+            }) : (0, HA.jsx)(cu, {
+                className: `h-4 w-4`
+            }), t[7] = o, t[8] = d);
+            let f;
+            t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, HA.jsx)(X, {
+                id: `H788Jv`,
+                defaultMessage: `Show hidden images`
+            }), t[9] = f) : f = t[9];
+            let p;
+            t[10] === d ? p = t[11] : (p = (0, HA.jsxs)(`div`, {
+                className: `flex items-center gap-2`,
+                children: [d, f]
+            }), t[10] = d, t[11] = p);
+            let m;
+            t[12] !== c || t[13] !== p ? (m = (0, HA.jsx)(yi.Item, {
+                onClick: c,
+                children: p
+            }), t[12] = c, t[13] = p, t[14] = m) : m = t[14];
+            let h;
+            return t[15] !== u || t[16] !== m ? (h = (0, HA.jsx)($r, {
+                triggerButton: u,
+                contentAlign: `end`,
+                children: m
+            }), t[15] = u, t[16] = m, t[17] = h) : h = t[17], h
+        }
+    }));
+
+function GA(e) {
+    "use forget";
+    let t = (0, KA.c)(7),
+        {
+            onShowHidden: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, qA.jsx)($d, {}), t[0] = r) : r = t[0];
+    let i;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, qA.jsxs)(`div`, {
+        className: `flex flex-1 items-center`,
+        children: [r, (0, qA.jsx)(zg, {
+            className: `text-heading-3 ms-2 font-normal`,
+            children: (0, qA.jsx)(X, {
+                id: `image-gen.library.header.title`,
+                defaultMessage: `Library`
+            })
+        })]
+    }), t[1] = i) : i = t[1];
+    let a;
+    t[2] === n ? a = t[3] : (a = (0, qA.jsx)(UA, {
+        onShowHidden: n
+    }), t[2] = n, t[3] = a);
+    let o;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, qA.jsx)(_f, {}), t[4] = o) : o = t[4];
+    let s;
+    return t[5] === a ? s = t[6] : (s = (0, qA.jsxs)(`header`, {
+        "data-landing-page-load-target": !0,
+        className: `h-header-height bg-token-main-surface-primary sticky top-0 z-20 flex w-full items-center p-2`,
+        children: [i, (0, qA.jsxs)(`div`, {
+            className: `flex items-center gap-2`,
+            children: [a, o]
+        })]
+    }), t[5] = a, t[6] = s), s
+}
+var KA, qA, JA = e((() => {
+    KA = qn(), zf(), Md(), Pn(), Rg(), WA(), qA = wn()
+}));
+
+function YA(e) {
+    "use forget";
+    let t = (0, ZA.c)(24),
+        {
+            conversation: n
+        } = e,
+        r = Yf(),
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = {
+        includeArchived: !0,
+        visibilityFilter: `archived`,
+        enabled: !0,
+        dataset: r ? `media` : `images`
+    }, t[0] = i) : i = t[0];
+    let {
+        images: a,
+        hasNextPage: o,
+        fetchNextPage: s,
+        isFetchingNextPage: c,
+        isLoading: l
+    } = Fs(i), {
+        archiveMutation: u
+    } = ac(), d;
+    t[1] === u ? d = t[2] : (d = async e => {
+        await Promise.all(e.map(e => u.mutateAsync({
+            imageId: e,
+            operation: `unarchive`
+        })))
+    }, t[1] = u, t[2] = d);
+    let f = d,
+        p, m;
+    t[3] !== s || t[4] !== o || t[5] !== a.length ? (p = () => {
+        a.length === 0 && o && s()
+    }, m = [a.length, o, s], t[3] = s, t[4] = o, t[5] = a.length, t[6] = p, t[7] = m) : (p = t[6], m = t[7]), (0, QA.useEffect)(p, m);
+    let h;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, $A.jsx)(`header`, {
+        "data-landing-page-load-target": !0,
+        className: `h-header-height bg-token-main-surface-primary sticky top-0 z-20 flex w-full items-center justify-between py-3 max-md:hidden`,
+        children: (0, $A.jsx)(GA, {
+            onShowHidden: XA
+        })
+    }), t[8] = h) : h = t[8];
+    let g;
+    t[9] === f ? g = t[10] : (g = e => f([e]), t[9] = f, t[10] = g);
+    let _ = o ?? !1,
+        v = c || l,
+        y;
+    t[11] !== n || t[12] !== s || t[13] !== a || t[14] !== g || t[15] !== _ || t[16] !== v ? (y = (0, $A.jsx)(Vg, {
+        conversation: n,
+        images: a,
+        count: a.length,
+        includeArchived: !0,
+        isHiddenView: !0,
+        onUnhide: g,
+        hasMoreImages: _,
+        isFetchingMore: v,
+        onScrollToEnd: s
+    }), t[11] = n, t[12] = s, t[13] = a, t[14] = g, t[15] = _, t[16] = v, t[17] = y) : y = t[17];
+    let b;
+    t[18] !== a.length || t[19] !== l ? (b = a.length === 0 && !l && (0, $A.jsx)(`p`, {
+        className: `text-token-text-secondary py-8 text-center`,
+        children: (0, $A.jsx)(X, {
+            id: `BdZGOW`,
+            defaultMessage: `No hidden images`
+        })
+    }), t[18] = a.length, t[19] = l, t[20] = b) : b = t[20];
+    let x;
+    return t[21] !== b || t[22] !== y ? (x = (0, $A.jsxs)(`div`, {
+        className: `max-md:bg-token-main-surface-primary flex w-full flex-col items-center max-md:fixed max-md:inset-0 max-md:z-50 max-md:overflow-y-auto`,
+        children: [h, (0, $A.jsxs)(`div`, {
+            className: `w-full max-w-[1800px]`,
+            children: [y, b]
+        })]
+    }), t[21] = b, t[22] = y, t[23] = x) : x = t[23], x
+}
+
+function XA() {
+    return Zf()
+}
+var ZA, QA, $A, ej = e((() => {
+    ZA = qn(), Gd(), JA(), QA = t(Fn()), Pn(), Bg(), Fo(), $A = wn()
+}));
+
+function tj(e) {
+    "use forget";
+    let t = (0, rj.c)(42),
+        {
+            conversation: n
+        } = e,
+        r = n ?? Wt((0, ij.use)(Y)),
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = of(), t[0] = i) : i = t[0];
+    let {
+        isShowingHiddenImages$: a
+    } = i, o = K(a), s = Yf(), c;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (c = {
+        includeArchived: !1,
+        visibilityFilter: `unarchived`,
+        enabled: !0,
+        dataset: s ? `media` : `images`
+    }, t[1] = c) : c = t[1];
+    let {
+        images: l,
+        hasNextPage: u,
+        isLoading: d,
+        isFetchingNextPage: f,
+        fetchNextPage: p
+    } = Fs(c), {
+        data: m,
+        isLoading: h
+    } = is(), _;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = [], t[2] = _) : _ = t[2], (0, ij.useEffect)(nj, _);
+    let v = d || h,
+        y = m?.images_count ?? 0,
+        b = !v && !y,
+        x = y;
+    s && (v = d, b = !v && l.length === 0 && !(u ?? !1), x = l.length);
+    let S;
+    t[3] === r ? S = t[4] : (S = () => jr(r).id, t[3] = r, t[4] = S);
+    let w = K(S),
+        T = C();
+    if (o) {
+        let e;
+        return t[5] === r ? e = t[6] : (e = (0, aj.jsx)(YA, {
+            conversation: r
+        }), t[5] = r, t[6] = e), e
+    }
+    let E;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, aj.jsx)(GA, {
+        onShowHidden: () => a.set(!0)
+    }), t[7] = E) : E = t[7];
+    let D = b ? `pt-8` : `max-md:pt-0`,
+        O;
+    t[8] === D ? O = t[9] : (O = J(`h-full w-full max-w-[1800px]`, D), t[8] = D, t[9] = O);
+    let k;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (k = {
+        initialSystemHint: g.PictureV2,
+        lockSystemHints: !0
+    }, t[10] = k) : k = t[10];
+    let A;
+    t[11] !== r || t[12] !== p || t[13] !== x || t[14] !== u || t[15] !== l || t[16] !== f || t[17] !== d || t[18] !== b ? (A = b ? (0, aj.jsx)(zA, {
+        borderless: !0
+    }) : (0, aj.jsx)(Vg, {
+        conversation: r,
+        count: x,
+        images: l,
+        hasMoreImages: u ?? !1,
+        isFetchingMore: f || d,
+        onScrollToEnd: p
+    }), t[11] = r, t[12] = p, t[13] = x, t[14] = u, t[15] = l, t[16] = f, t[17] = d, t[18] = b, t[19] = A) : A = t[19];
+    let j = T ? `w-[calc(100%-var(--sidebar-width))]` : `w-full`,
+        M;
+    t[20] === j ? M = t[21] : (M = J(`transition-width pointer-events-none fixed end-0 bottom-4 z-10 flex justify-center px-4`, j), t[20] = j, t[21] = M);
+    let N, P;
+    t[22] === r ? (N = t[23], P = t[24]) : (N = e => Sd({
+        callsiteId: `request_completion.tool_landing_pages.image_gen.library.1`,
+        conversation: r,
+        ..._p(e)
+    }), P = async e => {
+        _e.logEventWithStatsig(`chatgpt_web_image_library_composer_submitted`, `chatgpt_web_image_library_composer_submitted`), Sd({
+            callsiteId: `request_completion.tool_landing_pages.image_gen.library.2`,
+            conversation: r,
+            ...await df(e)
+        })
+    }, t[22] = r, t[23] = N, t[24] = P);
+    let F;
+    t[25] !== r || t[26] !== w || t[27] !== N || t[28] !== P ? (F = (0, aj.jsx)(`div`, {
+        className: `pointer-events-auto w-full max-w-[768px]`,
+        children: (0, aj.jsx)(Ad, {
+            conversation: r,
+            isNewThread: !0,
+            isProjectThread: !1,
+            entrySurface: `image_gen_composer`,
+            layoutMode: `bottom`,
+            currentModelId: w,
+            onContinueGenerating: N,
+            onRequestCompletion: P,
+            hideHeader: !0
+        })
+    }), t[25] = r, t[26] = w, t[27] = N, t[28] = P, t[29] = F) : F = t[29];
+    let I;
+    t[30] !== M || t[31] !== F ? (I = (0, aj.jsx)(ae, {
+        children: (0, aj.jsx)(Ag, {
+            children: (0, aj.jsx)(`div`, {
+                className: M,
+                children: F
+            })
+        })
+    }), t[30] = M, t[31] = F, t[32] = I) : I = t[32];
+    let L;
+    t[33] !== I || t[34] !== A ? (L = (0, aj.jsxs)(so, {
+        children: [A, I]
+    }), t[33] = I, t[34] = A, t[35] = L) : L = t[35];
+    let R;
+    t[36] !== r || t[37] !== L ? (R = (0, aj.jsx)(pp, {
+        conversation: r,
+        ignoreParentComposerController: !0,
+        options: k,
+        children: L
+    }), t[36] = r, t[37] = L, t[38] = R) : R = t[38];
+    let z;
+    return t[39] !== R || t[40] !== O ? (z = (0, aj.jsxs)(`div`, {
+        className: `bg-token-main-surface-primary text-token-text-primary flex h-full w-full flex-1 flex-col items-center justify-self-center`,
+        children: [E, (0, aj.jsx)(`div`, {
+            className: O,
+            children: R
+        })]
+    }), t[39] = R, t[40] = O, t[41] = z) : z = t[41], z
+}
+
+function nj() {
+    _e.logEventWithStatsig(`chatgpt_web_image_library_page_viewed`, `chatgpt_web_image_library_page_viewed`)
+}
+var rj, ij, aj, oj = e((() => {
+    rj = qn(), Mf(), Bt(), Gd(), Gi(), kg(), hp(), tl(), Fd(), ct(), Et(), B(), re(), BA(), cn(), R(), ke(), ij = t(Fn()), ej(), Bg(), JA(), Fo(), Yd(), aj = wn()
+}));
+
+function sj() {
+    return {
+        isOutletBasedRoute: !0,
+        pageType: `recall`,
+        prefetchSearch: null,
+        routeVariant: `recall`
+    }
+}
+
+function cj() {
+    return {
+        isOutletBasedRoute: !0,
+        pageType: `library`,
+        routeVariant: `legacy`
+    }
+}
+
+function lj(e) {
+    if (e.searchParams.get(Sj) !== `1`) return !1;
+    let t = e.searchParams.get(Rh)?.trim(),
+        {
+            directoryId: n
+        } = Xa(e.pathname);
+    return t == null ? Xs(n) : Jc(t) && n == null && Zi(e.pathname) == null
+}
+
+function uj(e) {
+    if (lj(e) || e.searchParams.get(`invitation_id`)?.trim() || e.searchParams.get(`file_id`)?.trim() || Zi(e.pathname) != null) return !0;
+    let {
+        directoryId: t
+    } = Xa(e.pathname);
+    return ge(t) && !f(t)
+}
+async function dj(e) {
+    let t = new URL(e.url),
+        n = t.searchParams.get(`account_id`)?.trim(),
+        r = lj(t);
+    if (!n || !uj(t)) return !1;
+    if (!r) {
+        let {
+            basePathname: e,
+            directoryId: n
+        } = Xa(t.pathname);
+        if (Zi(t.pathname) == null) {
+            let r = t.searchParams.get(Rh)?.trim(),
+                i = ka(e, null),
+                a = ka(e, n),
+                o = ge(n) && !f(n);
+            Jc(r) && (n == null || o && a.startsWith(`${i}/share/`)) ? (t.pathname = tr(i, r, n == null ? null : a), t.searchParams.delete(Rh)) : o && (t.pathname = a)
+        } else t.searchParams.delete(Rh)
+    }
+    t.searchParams.delete(`account_id`);
+    let i = `${t.pathname}${t.search}${t.hash}`;
+    if (n === (yt.getCookie(Jt.Workspace) ?? `personal`)) throw Rn(i);
+    let o = sn(),
+        s = ie(await o.ensureQueryData(a())).find(e => n === `personal` ? e.isPersonalAccount() : e.id === n);
+    if (s == null) throw Rn(`/`);
+    let {
+        updatedAccount: c
+    } = await Ht(o, s.id);
+    if (!c) throw Rn(`/`);
+    if (!s.canAccessWithCurrentSession) return await _t({
+        fallbackScreenHint: `login`,
+        callbackUrl: e.url,
+        ...s.ssoConnectionName == null ? {} : {
+            additionalAuthParams: {
+                connection: s.ssoConnectionName
+            }
+        }
+    }), !0;
+    throw await un(), Jn(i)
+}
+
+function fj() {
+    "use forget";
+    let e = (0, gj.c)(13),
+        t = Cn(),
+        n = kn(),
+        {
+            basePathname: r,
+            directoryId: i
+        } = Xa(t.pathname),
+        a;
+    e[0] === t.pathname ? a = e[1] : (a = Zi(t.pathname), e[0] = t.pathname, e[1] = a);
+    let o = a,
+        s = qe(i),
+        c = Rc(K(on)),
+        l = s != null && !new URLSearchParams(t.search).get(`account_id`)?.trim() && c,
+        u = An({
+            queryKey: Yh(i),
+            queryFn: () => dc(i),
+            enabled: l,
+            staleTime: 3e4
+        }),
+        d = Wh(s ?? ``, `folder`),
+        f = l && u.failureCount > 0,
+        p;
+    e[2] !== d || e[3] !== f ? (p = {
+        ...d,
+        enabled: f
+    }, e[2] = d, e[3] = f, e[4] = p) : p = e[4];
+    let m = An(p),
+        h, g;
+    return e[5] !== r || e[6] !== t.search || e[7] !== n || e[8] !== m.isSuccess || e[9] !== o || e[10] !== s ? (h = () => {
+        if (!m.isSuccess || s == null) return;
+        let e = new URLSearchParams(t.search);
+        o != null && e.set(Rh, o), n({
+            pathname: ka(r, s),
+            search: o == null ? t.search : e.toString()
+        }, {
+            replace: !0
+        })
+    }, g = [r, t.search, n, m.isSuccess, o, s], e[5] = r, e[6] = t.search, e[7] = n, e[8] = m.isSuccess, e[9] = o, e[10] = s, e[11] = h, e[12] = g) : (h = e[11], g = e[12]), (0, _j.useEffect)(h, g), null
+}
+
+function pj() {
+    "use forget";
+    let e = (0, gj.c)(46),
+        t = Cn(),
+        n = K(Te),
+        r = K(on),
+        i;
+    e[0] === r ? i = e[1] : (i = Rc(r), e[0] = r, e[1] = i);
+    let a = i,
+        o = K(hj),
+        s, c, l, u, d, f, p, m, h, g, _;
+    if (e[2] !== o || e[3] !== t.pathname || e[4] !== t.search || e[5] !== n || e[6] !== a) {
+        let r = new URLSearchParams(t.search),
+            i = {
+                pathname: t.pathname,
+                searchParams: r
+            };
+        c = uj(i), u = lj(i), l = r.get(`invitation_id`)?.trim();
+        let v = Zi(t.pathname) || r.get(`file_id`)?.trim();
+        ({
+            directoryId: s
+        } = Xa(t.pathname));
+        let y = qe(s);
+        f = v ? {
+            resourceType: `library_file`,
+            resourceId: v
+        } : y ? {
+            resourceType: `library_folder`,
+            resourceId: y
+        } : void 0, d = c && !!r.get(`account_id`)?.trim(), p = (l != null || f != null) && !d && !o && a, h = n && p && !u && l == null, m = h && f?.resourceType === `library_folder`, _ = An, g = Yh(s), e[2] = o, e[3] = t.pathname, e[4] = t.search, e[5] = n, e[6] = a, e[7] = s, e[8] = c, e[9] = l, e[10] = u, e[11] = d, e[12] = f, e[13] = p, e[14] = m, e[15] = h, e[16] = g, e[17] = _
+    } else s = e[7], c = e[8], l = e[9], u = e[10], d = e[11], f = e[12], p = e[13], m = e[14], h = e[15], g = e[16], _ = e[17];
+    let v;
+    e[18] === s ? v = e[19] : (v = () => dc(s), e[18] = s, e[19] = v);
+    let y;
+    e[20] !== m || e[21] !== g || e[22] !== v ? (y = {
+        queryKey: g,
+        queryFn: v,
+        enabled: m,
+        staleTime: 3e4
+    }, e[20] = m, e[21] = g, e[22] = v, e[23] = y) : y = e[23];
+    let b = _(y),
+        x;
+    e[24] === b.error ? x = e[25] : (x = b.error instanceof oe && [403, 404].includes(b.error.status), e[24] = b.error, e[25] = x);
+    let S = x,
+        C = h && (f?.resourceType === `library_file` || S),
+        w = f?.resourceType,
+        T = f?.resourceId,
+        E;
+    e[26] !== w || e[27] !== T ? (E = [EA, w, T], e[26] = w, e[27] = T, e[28] = E) : E = e[28];
+    let D;
+    e[29] === f ? D = e[30] : (D = () => f == null ? Promise.resolve(null) : TA(f), e[29] = f, e[30] = D);
+    let O;
+    e[31] !== C || e[32] !== E || e[33] !== D ? (O = {
+        queryKey: E,
+        queryFn: D,
+        enabled: C,
+        retry: !1
+    }, e[31] = C, e[32] = E, e[33] = D, e[34] = O) : O = e[34];
+    let k = An(O),
+        A = u ? void 0 : l ?? (C ? k.data?.invitation_id : void 0),
+        j = c && o || d || m && b.isLoading || C && (k.isLoading || m && S && k.isFetching && k.data == null);
+    if (!n) {
+        let t;
+        return e[35] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, vj.jsx)(pf, {
+            children: (0, vj.jsx)(tj, {})
+        }), e[35] = t) : t = e[35], t
+    }
+    let M;
+    return e[36] !== r || e[37] !== c || e[38] !== j || e[39] !== A || e[40] !== k || e[41] !== S || e[42] !== p || e[43] !== C || e[44] !== m ? (M = (0, vj.jsx)(Sp, {
+        children: (0, vj.jsx)(Lg, {
+            children: A && p ? (0, vj.jsx)(kA, {
+                invitationId: A
+            }) : j ? (0, vj.jsx)(`div`, {
+                className: `flex h-full items-center justify-center`,
+                children: (0, vj.jsx)(Ct, {
+                    className: `icon-lg text-token-text-secondary`
+                })
+            }) : c && r == null ? (0, vj.jsx)(`div`, {
+                className: `flex h-full min-h-80 items-center justify-center p-6`,
+                children: (0, vj.jsxs)(`div`, {
+                    className: `flex w-full max-w-md flex-col items-center gap-4 text-center`,
+                    children: [(0, vj.jsx)(`h1`, {
+                        className: `text-lg font-semibold`,
+                        children: (0, vj.jsx)(X, {
+                            id: `chatgpt.library.share.workspace.load.error.title`,
+                            defaultMessage: `We couldn’t load your workspace`
+                        })
+                    }), (0, vj.jsx)(P, {
+                        type: `button`,
+                        onClick: mj,
+                        children: (0, vj.jsx)(X, {
+                            id: `chatgpt.library.share.workspace.load.error.retry.button`,
+                            defaultMessage: `Try again`
+                        })
+                    })]
+                })
+            }) : C && k.isError ? (0, vj.jsx)(`div`, {
+                className: `flex h-full min-h-80 items-center justify-center p-6`,
+                children: (0, vj.jsxs)(`div`, {
+                    className: `flex w-full max-w-md flex-col items-center gap-4 text-center`,
+                    children: [(0, vj.jsx)(`h1`, {
+                        className: `text-lg font-semibold`,
+                        children: (0, vj.jsx)(X, {
+                            id: `chatgpt.library.share.invitation.load.error.title`,
+                            defaultMessage: `We couldn’t load your invitation`
+                        })
+                    }), (0, vj.jsx)(`p`, {
+                        className: `text-token-text-secondary text-sm`,
+                        children: (0, vj.jsx)(X, {
+                            id: `chatgpt.library.share.invitation.load.error.description`,
+                            defaultMessage: `Please try again in a moment.`
+                        })
+                    }), (0, vj.jsx)(P, {
+                        loading: k.isFetching,
+                        onClick: () => void k.refetch(),
+                        children: (0, vj.jsx)(X, {
+                            id: `chatgpt.library.share.invitation.load.error.retry.button`,
+                            defaultMessage: `Try again`
+                        })
+                    })]
+                })
+            }) : m && C && S && k.isSuccess && !k.isFetching && k.data == null ? (0, vj.jsxs)(vj.Fragment, {
+                children: [(0, vj.jsx)(fj, {}), (0, vj.jsx)(`div`, {
+                    className: `flex h-full min-h-80 items-center justify-center p-6`,
+                    children: (0, vj.jsxs)(`div`, {
+                        className: `flex w-full max-w-md flex-col items-center gap-4 text-center`,
+                        children: [(0, vj.jsx)(`h1`, {
+                            className: `text-lg font-semibold`,
+                            children: (0, vj.jsx)(X, {
+                                id: `chatgpt.library.share.folder.access.denied.title`,
+                                defaultMessage: `You don’t have access to this folder`
+                            })
+                        }), (0, vj.jsx)(`p`, {
+                            className: `text-token-text-secondary text-sm`,
+                            children: (0, vj.jsx)(X, {
+                                id: `chatgpt.library.share.folder.access.denied.description`,
+                                defaultMessage: `Ask the owner to share it with you, or switch to an account with access.`
+                            })
+                        })]
+                    })
+                })]
+            }) : (0, vj.jsxs)(vj.Fragment, {
+                children: [(0, vj.jsx)(fj, {}), (0, vj.jsx)(jk, {})]
+            })
+        })
+    }), e[36] = r, e[37] = c, e[38] = j, e[39] = A, e[40] = k, e[41] = S, e[42] = p, e[43] = C, e[44] = m, e[45] = M) : M = e[45], M
+}
+
+function mj() {
+    return window.location.reload()
+}
+
+function hj() {
+    return ln().isLoading
+}
+var gj, _j, vj, yj, bj, xj, Sj, Cj, wj, Tj, Ej, Dj = e((() => {
+    Nn(), gj = qn(), Ne(), Nf(), xp(), bt(), _A(), IA(), qh(), zh(), vi(), Jo(), Vc(), Lh(), DA(), fn(), xo(), bn(), Ig(), ct(), ee(), fe(), Gt(), oj(), Ue(), c(), ve(), l(), Qt(), kc(), Kn(), _j = t(Fn()), Pn(), vj = wn(), yj = {
+        hasRouteMeta: !0,
+        useScrollRestoration: !0
+    }, bj = Dn({
+        title: {
+            id: `library.meta.title`,
+            defaultMessage: `ChatGPT - Library`
+        }
+    }), xj = `4219931330`, Sj = `review_access_requests`, Cj = () => [], wj = async ({
+        request: e
+    }) => {
+        if (Eo(), await dj(e) || await me() && q(Te)) return sj();
+        if (Fe(xj)) throw Rn(`/images`);
+        return cj()
+    }, wj.hydrate = !0, Tj = ({
+        nextUrl: e
+    }) => !!(e.searchParams.get(`account_id`)?.trim() && uj(e)), Ej = En(function() {
+        "use forget";
+        let e = (0, gj.c)(9),
+            t = Yn(),
+            n;
+        e[0] === t ? n = e[1] : (n = t.formatMessage(bj.title), e[0] = t, e[1] = n);
+        let r = n,
+            {
+                routeVariant: i
+            } = Hn(),
+            a;
+        e[2] === i ? a = e[3] : (a = i === `recall` ? (0, vj.jsx)(pj, {}) : (0, vj.jsx)(pf, {
+            children: (0, vj.jsx)(tj, {})
+        }), e[2] = i, e[3] = a);
+        let o = a,
+            s;
+        e[4] === r ? s = e[5] : (s = (0, vj.jsx)(`head`, {
+            children: (0, vj.jsx)(`title`, {
+                children: r
+            })
+        }), e[4] = r, e[5] = s);
+        let c;
+        return e[6] !== o || e[7] !== s ? (c = (0, vj.jsxs)(vj.Fragment, {
+            children: [s, o]
+        }), e[6] = o, e[7] = s, e[8] = c) : c = e[8], c
+    })
+}));
+export {
+    Cj as a, Dj as i, wj as n, Tj as o, yj as r, Ej as t
+};
+//# sourceMappingURL=34532799-hyk9se7u58i85hjm.js.map

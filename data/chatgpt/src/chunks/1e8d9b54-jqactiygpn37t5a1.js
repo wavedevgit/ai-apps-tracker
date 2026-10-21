@@ -1,2 +1,32 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{GE as t,JE as n}from"./4813494d-dfpv67hlp00pbohr.js";import{FCn as r,LCn as i,nxn as a,rxn as o}from"./conversation-small-cy5f8pl0g26s86so.js";var s,c,l,u,d,f,p,m,h=e((()=>{n(),i(),o(),s=e=>t(e),c=e=>e.canonical_app_id??r(e),l=e=>s(c(e)),u=e=>r(e),d=(e,t)=>{let n=new Set(t.map(u));return e.filter(e=>!n.has(u(e)))},f=(e,t,n)=>n.includeInstalled?[...e]:d(e,t),p=(e,t)=>{let n=new Set(t.map(u)),r=[],i=[];for(let t of e)(n.has(u(t))?r:i).push(t);return{installed:r,uninstalled:i}},m=e=>s(a(e))}));export{h as a,m as i,f as n,s as o,c as r,p as s,l as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    GE as t,
+    JE as n
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    FCn as r,
+    LCn as i,
+    nxn as a,
+    rxn as o
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+var s, c, l, u, d, f, p, m, h = e((() => {
+    n(), i(), o(), s = e => t(e), c = e => e.canonical_app_id ?? r(e), l = e => s(c(e)), u = e => r(e), d = (e, t) => {
+        let n = new Set(t.map(u));
+        return e.filter(e => !n.has(u(e)))
+    }, f = (e, t, n) => n.includeInstalled ? [...e] : d(e, t), p = (e, t) => {
+        let n = new Set(t.map(u)),
+            r = [],
+            i = [];
+        for (let t of e)(n.has(u(t)) ? r : i).push(t);
+        return {
+            installed: r,
+            uninstalled: i
+        }
+    }, m = e => s(a(e))
+}));
+export {
+    h as a, m as i, f as n, s as o, c as r, p as s, l as t
+};
 //# sourceMappingURL=1e8d9b54-jqactiygpn37t5a1.js.map

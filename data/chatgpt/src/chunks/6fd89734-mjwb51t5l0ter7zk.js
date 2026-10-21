@@ -1,2 +1,190 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{$st as t,Cst as n,L7 as r,N7 as i,Vp as a,iat as o,jp as s,nat as c}from"./4813494d-qsuygr73qjc6rh65.js";import{Rn as l,zn as u}from"./2340486e-komxp8tzs51ny4jj.js";import{Yvt as d,czt as f,lzt as p,ntn as m,nyt as h,rtn as g,ryt as _}from"./conversation-small-cawdu7il3ha6y70c.js";import{$_ as v,ev as y,iv as b,nv as x,rv as S,tv as C}from"./c2675c8c-nxl2ic2ofk2vw70s.js";async function w(e,t){let n=y(e.files);if(!n)return;let[r,i]=n;if(!i||typeof i.start!=`number`||typeof i.length!=`number`||i.length<=0)return;let a=await d({hazelnutId:e.id,path:r,range:{start:Math.max(0,i.start),length:i.length},sedimentId:e.sediment_id,signal:t});if(!t?.aborted)return v(new TextDecoder(`utf-8`).decode(a))}async function T({file:e,filename:t,contentType:n}){let r=(await h([{filename:t,content_type:n}])).uploads?.[0];if(!r)throw Error(`Failed to initialize upload`);return await p.put(r.upload_url,e,{headers:m(r.upload_url,n)}),await i.safePost(`/hazelnuts/uploads/finish`,{requestBody:{file_id:r.file_id}}),r.file_id}function E(e,t,n){let r=t.trim();if(!r)return e.formatMessage(j.validationPathEmpty);let i=r.replace(/\\/g,`/`);if(i.startsWith(`/`))return e.formatMessage(j.validationPathAbsolute);let a=i.split(`/`);return a.some(e=>e===``||e===`.`)||a.some(e=>e===`..`)?e.formatMessage(j.validationPathDot):i.trim().toLowerCase()===`skill.md`?e.formatMessage(j.validationPathSkillMd):n>1?e.formatMessage(j.validationPathDuplicate):null}async function D(e,t,n,r){let i=await d({hazelnutId:e,path:r,range:n&&typeof n.start==`number`&&typeof n.length==`number`&&n.length>0?{start:Math.max(0,n.start),length:n.length}:void 0,sedimentId:t});return new TextDecoder(`utf-8`).decode(i)}async function O(e){if(!e)throw Error(`Missing file id`);let t=await s(e,{downloadIntent:!1});if(t.status!==n.Success||!t.download_url)throw Error(`Unable to fetch download URL`);let r=await fetch(t.download_url,{headers:{}});if(!r.ok)throw Error(`Unable to download file content`);let i=await r.arrayBuffer();return new TextDecoder(`utf-8`).decode(i)}var k,A,j,M=e((()=>{t(),g(),a(),x(),_(),o(),r(),f(),u(),k=async(e,t,n,r,i)=>{let a=new Set(i.map(e=>S(e.path||e.filename).toLowerCase())),o=e.map(e=>e.webkitRelativePath&&e.webkitRelativePath.length>0?e.webkitRelativePath:void 0),s=o.every(e=>typeof e==`string`&&e.length>0),l=null;s&&o[0]&&(l=o[0].replace(/\\/g,`/`).split(`/`)[0]||null);for(let i=0;i<e.length;i++){let u=e[i],d,f=o[i];if(s&&f){let e=f.replace(/\\/g,`/`);d=S(l?e.split(`/`).slice(1).join(`/`):e)}else d=b(u.name);let p=S(d).toLowerCase();if(a.has(p)){r.danger(n.formatMessage(A.uploadDuplicateName,{name:d}));continue}a.add(p);let m=C();t(e=>[...e,{clientId:m,filename:u.name,size:u.size,contentType:u.type||`application/octet-stream`,path:d,localFile:u,status:`uploading`}]);try{let e=await T({file:u,filename:u.name,contentType:u.type||`application/octet-stream`});t(t=>t.map(t=>t.clientId===m?{...t,fileId:e,status:`uploaded`}:t))}catch(e){c.addError(e),t(e=>e.map(e=>e.clientId===m?{...e,status:`error`,error:n.formatMessage(A.uploadFailed)}:e)),r.danger(n.formatMessage(A.uploadFailed))}}},A=l({uploadFailed:{id:`363wGD`,defaultMessage:`Failed to upload file.`},uploadDuplicateName:{id:`TqOtV2`,defaultMessage:`File name already exists: {name}.`}}),j=l({validationPathEmpty:{id:`Z7PcWS`,defaultMessage:`Path cannot be empty.`},validationPathAbsolute:{id:`X9fb9/`,defaultMessage:`Path cannot start with a '/'.`},validationPathDot:{id:`LhWbnQ`,defaultMessage:`Path cannot contain '.' or '..' segments.`},validationPathSkillMd:{id:`eQhwwM`,defaultMessage:`Path cannot be 'SKILL.md'.`},validationPathDuplicate:{id:`v/Kr1j`,defaultMessage:`Path is duplicated.`}})}));export{k as a,M as i,O as n,T as o,w as r,E as s,D as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $st as t,
+    Cst as n,
+    L7 as r,
+    N7 as i,
+    Vp as a,
+    iat as o,
+    jp as s,
+    nat as c
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Rn as l,
+    zn as u
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Yvt as d,
+    czt as f,
+    lzt as p,
+    ntn as m,
+    nyt as h,
+    rtn as g,
+    ryt as _
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    $_ as v,
+    ev as y,
+    iv as b,
+    nv as x,
+    rv as S,
+    tv as C
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+async function w(e, t) {
+    let n = y(e.files);
+    if (!n) return;
+    let [r, i] = n;
+    if (!i || typeof i.start != `number` || typeof i.length != `number` || i.length <= 0) return;
+    let a = await d({
+        hazelnutId: e.id,
+        path: r,
+        range: {
+            start: Math.max(0, i.start),
+            length: i.length
+        },
+        sedimentId: e.sediment_id,
+        signal: t
+    });
+    if (!t?.aborted) return v(new TextDecoder(`utf-8`).decode(a))
+}
+async function T({
+    file: e,
+    filename: t,
+    contentType: n
+}) {
+    let r = (await h([{
+        filename: t,
+        content_type: n
+    }])).uploads?.[0];
+    if (!r) throw Error(`Failed to initialize upload`);
+    return await p.put(r.upload_url, e, {
+        headers: m(r.upload_url, n)
+    }), await i.safePost(`/hazelnuts/uploads/finish`, {
+        requestBody: {
+            file_id: r.file_id
+        }
+    }), r.file_id
+}
+
+function E(e, t, n) {
+    let r = t.trim();
+    if (!r) return e.formatMessage(j.validationPathEmpty);
+    let i = r.replace(/\\/g, `/`);
+    if (i.startsWith(`/`)) return e.formatMessage(j.validationPathAbsolute);
+    let a = i.split(`/`);
+    return a.some(e => e === `` || e === `.`) || a.some(e => e === `..`) ? e.formatMessage(j.validationPathDot) : i.trim().toLowerCase() === `skill.md` ? e.formatMessage(j.validationPathSkillMd) : n > 1 ? e.formatMessage(j.validationPathDuplicate) : null
+}
+async function D(e, t, n, r) {
+    let i = await d({
+        hazelnutId: e,
+        path: r,
+        range: n && typeof n.start == `number` && typeof n.length == `number` && n.length > 0 ? {
+            start: Math.max(0, n.start),
+            length: n.length
+        } : void 0,
+        sedimentId: t
+    });
+    return new TextDecoder(`utf-8`).decode(i)
+}
+async function O(e) {
+    if (!e) throw Error(`Missing file id`);
+    let t = await s(e, {
+        downloadIntent: !1
+    });
+    if (t.status !== n.Success || !t.download_url) throw Error(`Unable to fetch download URL`);
+    let r = await fetch(t.download_url, {
+        headers: {}
+    });
+    if (!r.ok) throw Error(`Unable to download file content`);
+    let i = await r.arrayBuffer();
+    return new TextDecoder(`utf-8`).decode(i)
+}
+var k, A, j, M = e((() => {
+    t(), g(), a(), x(), _(), o(), r(), f(), u(), k = async (e, t, n, r, i) => {
+        let a = new Set(i.map(e => S(e.path || e.filename).toLowerCase())),
+            o = e.map(e => e.webkitRelativePath && e.webkitRelativePath.length > 0 ? e.webkitRelativePath : void 0),
+            s = o.every(e => typeof e == `string` && e.length > 0),
+            l = null;
+        s && o[0] && (l = o[0].replace(/\\/g, `/`).split(`/`)[0] || null);
+        for (let i = 0; i < e.length; i++) {
+            let u = e[i],
+                d, f = o[i];
+            if (s && f) {
+                let e = f.replace(/\\/g, `/`);
+                d = S(l ? e.split(`/`).slice(1).join(`/`) : e)
+            } else d = b(u.name);
+            let p = S(d).toLowerCase();
+            if (a.has(p)) {
+                r.danger(n.formatMessage(A.uploadDuplicateName, {
+                    name: d
+                }));
+                continue
+            }
+            a.add(p);
+            let m = C();
+            t(e => [...e, {
+                clientId: m,
+                filename: u.name,
+                size: u.size,
+                contentType: u.type || `application/octet-stream`,
+                path: d,
+                localFile: u,
+                status: `uploading`
+            }]);
+            try {
+                let e = await T({
+                    file: u,
+                    filename: u.name,
+                    contentType: u.type || `application/octet-stream`
+                });
+                t(t => t.map(t => t.clientId === m ? {
+                    ...t,
+                    fileId: e,
+                    status: `uploaded`
+                } : t))
+            } catch (e) {
+                c.addError(e), t(e => e.map(e => e.clientId === m ? {
+                    ...e,
+                    status: `error`,
+                    error: n.formatMessage(A.uploadFailed)
+                } : e)), r.danger(n.formatMessage(A.uploadFailed))
+            }
+        }
+    }, A = l({
+        uploadFailed: {
+            id: `363wGD`,
+            defaultMessage: `Failed to upload file.`
+        },
+        uploadDuplicateName: {
+            id: `TqOtV2`,
+            defaultMessage: `File name already exists: {name}.`
+        }
+    }), j = l({
+        validationPathEmpty: {
+            id: `Z7PcWS`,
+            defaultMessage: `Path cannot be empty.`
+        },
+        validationPathAbsolute: {
+            id: `X9fb9/`,
+            defaultMessage: `Path cannot start with a '/'.`
+        },
+        validationPathDot: {
+            id: `LhWbnQ`,
+            defaultMessage: `Path cannot contain '.' or '..' segments.`
+        },
+        validationPathSkillMd: {
+            id: `eQhwwM`,
+            defaultMessage: `Path cannot be 'SKILL.md'.`
+        },
+        validationPathDuplicate: {
+            id: `v/Kr1j`,
+            defaultMessage: `Path is duplicated.`
+        }
+    })
+}));
+export {
+    k as a, M as i, O as n, T as o, w as r, E as s, D as t
+};
 //# sourceMappingURL=6fd89734-mjwb51t5l0ter7zk.js.map

@@ -1,0 +1,235 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    X5 as n,
+    Y5 as r,
+    nx as ee,
+    tx as i
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    Bn as a,
+    Vn as o,
+    wn as s
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Kst as te,
+    Z8t as ne,
+    e5t as re,
+    n5t as ie,
+    o5t as c,
+    qst as l,
+    r5t as ae
+} from "./conversation-small-nmt18uiom3b14vca.js";
+import {
+    n as oe,
+    t as u
+} from "./83dae604-ouqjqme8ut81e5su.js";
+
+function d(e) {
+    "use forget";
+    let t = (0, le.c)(77),
+        {
+            children: n,
+            className: i,
+            disabled: a,
+            displayName: o,
+            inputClassName: s,
+            inputValue: c,
+            label: l,
+            name: u,
+            onInputChange: d,
+            openOnlyOnInputChange: ue,
+            placeholder: de,
+            popoverClassName: fe,
+            required: pe,
+            suggestions: m,
+            suggestionsFooter: h,
+            onTabChange: me,
+            RenderTab: g,
+            type: _
+        } = e,
+        v = ue !== void 0 && ue,
+        y = de === void 0 ? l : de,
+        b;
+    t[0] === m ? b = t[1] : (b = typeof m == `object` ? Object.keys(m) : [], t[0] = m, t[1] = b);
+    let x = b,
+        [he, ge] = (0, f.useState)(x),
+        [S, _e] = (0, f.useState)(0),
+        C;
+    t[2] !== me || t[3] !== m ? (C = e => {
+        _e(e);
+        let t = Object.keys(m)[e];
+        t && me?.(t)
+    }, t[2] = me, t[3] = m, t[4] = C) : C = t[4];
+    let w = C;
+    (x.length !== he.length || x.some((e, t) => e !== he[t])) && (ge(x), _e(0));
+    let [T, E] = (0, f.useState)(-1), [ve, D] = (0, f.useState)(!1), [O, k] = (0, f.useState)(!1), A;
+    t[5] === m ? A = t[6] : (A = Array.isArray(m) ? m.length > 0 : Object.values(m).some(ce), t[5] = m, t[6] = A);
+    let ye = A,
+        j = Array.isArray(m) ? m : m[Object.keys(m)[S] ?? Object.keys(m)[0]],
+        M;
+    t[7] !== O || t[8] !== c || t[9] !== v ? (M = v ? O && c.trim() !== `` : c.trim() !== ``, t[7] = O, t[8] = c, t[9] = v, t[10] = M) : M = t[10];
+    let N = (n != null || M && ye) && ve,
+        P = ee(),
+        F = (0, f.useId)(),
+        be = (0, f.useRef)(null),
+        I = (0, f.useRef)(null),
+        L = (0, f.useRef)(null),
+        xe = (0, f.useRef)(null),
+        R;
+    t[11] !== c || t[12] !== d ? (R = e => {
+        let t = e.target.value;
+        t !== c && (E(-1), L.current && (L.current.scrollTop = 0), d(t), k(!0), D(!0))
+    }, t[11] = c, t[12] = d, t[13] = R) : R = t[13];
+    let Se = R,
+        z;
+    t[14] !== j.length || t[15] !== h ? (z = e => {
+        E(e), e === j.length - 1 && h != null && L.current ? L.current.scrollTop = L.current.scrollHeight : I.current?.children.item(e)?.scrollIntoView({
+            block: `nearest`
+        })
+    }, t[14] = j.length, t[15] = h, t[16] = z) : z = t[16];
+    let B = z,
+        V;
+    t[17] !== j || t[18] !== B || t[19] !== T || t[20] !== S || t[21] !== N || t[22] !== w || t[23] !== m ? (V = e => {
+        e.key === `Escape` && (e.preventDefault(), e.stopPropagation(), E(-1), k(!1), D(!1)), e.key === `Tab` && (E(-1), k(!1), D(!1)), e.key === `ArrowDown` && j.length > 0 && (e.preventDefault(), B((T + 1) % j.length)), e.key === `ArrowUp` && j.length > 0 && (e.preventDefault(), B((T - 1 + j.length) % j.length)), T > -1 && !Array.isArray(m) && (e.key === `ArrowRight` && (e.preventDefault(), w((S + 1) % Object.keys(m).length), E(0)), e.key === `ArrowLeft` && (e.preventDefault(), w((S - 1 + Object.keys(m).length) % Object.keys(m).length), E(0)));
+        let t = j[T];
+        e.key === `Enter` && N && t && (e.preventDefault(), t.onClick(), E(-1), k(!1), D(!1))
+    }, t[17] = j, t[18] = B, t[19] = T, t[20] = S, t[21] = N, t[22] = w, t[23] = m, t[24] = V) : V = t[24];
+    let Ce = V,
+        H;
+    t[25] === Symbol.for(`react.memo_cache_sentinel`) ? (H = [be, I, L, xe], t[25] = H) : H = t[25];
+    let we = H,
+        U;
+    t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (U = () => {
+        E(-1), k(!1), D(!1)
+    }, t[26] = U) : U = t[26], oe(we, U);
+    let Te = N && j[T]?.id != null ? F + j[T].id : void 0,
+        W;
+    t[27] !== o || t[28] !== l ? (W = o == null ? {
+        ariaLabel: l
+    } : {
+        displayName: o
+    }, t[27] = o, t[28] = l, t[29] = W) : W = t[29];
+    let G;
+    t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (G = () => {
+        k(!1), D(!0)
+    }, t[30] = G) : G = t[30];
+    let Ee = T > -1,
+        K;
+    t[31] !== i || t[32] !== a || t[33] !== F || t[34] !== s || t[35] !== c || t[36] !== N || t[37] !== u || t[38] !== Se || t[39] !== Ce || t[40] !== y || t[41] !== pe || t[42] !== Te || t[43] !== W || t[44] !== Ee || t[45] !== _ ? (K = (0, p.jsx)(ne, {
+        asChild: !0,
+        children: (0, p.jsx)(`div`, {
+            className: `relative z-10 grow`,
+            ref: be,
+            children: (0, p.jsx)(te, {
+                "aria-activedescendant": Te,
+                "aria-autocomplete": `list`,
+                "aria-controls": F,
+                "aria-expanded": N,
+                ...W,
+                autoCapitalize: `off`,
+                autoComplete: `off`,
+                className: i,
+                disabled: a,
+                inputClassName: s,
+                list: `suggested-choices`,
+                name: u,
+                onChange: Se,
+                onFocus: G,
+                onKeyDown: Ce,
+                placeholder: y,
+                required: pe,
+                role: `combobox`,
+                spellCheck: !1,
+                suppressFocus: Ee,
+                type: _,
+                value: c
+            })
+        })
+    }), t[31] = i, t[32] = a, t[33] = F, t[34] = s, t[35] = c, t[36] = N, t[37] = u, t[38] = Se, t[39] = Ce, t[40] = y, t[41] = pe, t[42] = Te, t[43] = W, t[44] = Ee, t[45] = _, t[46] = K) : K = t[46];
+    let q;
+    t[47] === fe ? q = t[48] : (q = r(`border-token-border-default bg-token-main-surface-secondary group-has-focus:border-token-border-xheavy relative -top-1 z-50 m-0 max-h-[calc(var(--radix-popper-available-height)-2rem)] w-[var(--radix-popper-anchor-width)] cursor-pointer overflow-y-auto rounded-lg rounded-t-none border border-t-0 px-1 py-1`, fe), t[47] = fe, t[48] = q);
+    let J;
+    t[49] !== g || t[50] !== S || t[51] !== w || t[52] !== m ? (J = !Array.isArray(m) && (0, p.jsx)(`div`, {
+        className: `mb-1 flex`,
+        role: `tablist`,
+        ref: xe,
+        children: Object.keys(m).map((e, t) => (0, p.jsx)(`button`, {
+            role: `tab`,
+            className: r(`text-token-text-tertiary px-3 pb-2 text-xs font-bold`, S === t ? `border-b-2 font-bold` : `hover:text-token-text-primary cursor-pointer font-semibold`),
+            "aria-selected": S === t,
+            onClick: () => {
+                w(t), E(0)
+            },
+            children: g ? (0, p.jsx)(g, {
+                tab: e
+            }) : e
+        }, e))
+    }), t[49] = g, t[50] = S, t[51] = w, t[52] = m, t[53] = J) : J = t[53];
+    let Y;
+    if (t[54] !== j || t[55] !== F || t[56] !== T) {
+        let e;
+        t[58] !== F || t[59] !== T ? (e = (e, t) => {
+            let {
+                id: n,
+                className: ee,
+                focusedClassName: i,
+                onClick: a,
+                children: o
+            } = e;
+            return (0, p.jsx)(`li`, {
+                id: F + n,
+                role: `option`,
+                className: r(ee, T === t && i),
+                onClick: () => {
+                    a(), E(-1), k(!1), D(!1)
+                },
+                "aria-selected": T === t,
+                children: o
+            }, n)
+        }, t[58] = F, t[59] = T, t[60] = e) : e = t[60], Y = j.map(e), t[54] = j, t[55] = F, t[56] = T, t[57] = Y
+    } else Y = t[57];
+    let X;
+    t[61] !== F || t[62] !== Y ? (X = (0, p.jsx)(`ul`, {
+        id: F,
+        role: `listbox`,
+        ref: I,
+        children: Y
+    }), t[61] = F, t[62] = Y, t[63] = X) : X = t[63];
+    let De = j.length === 0 && n,
+        Z;
+    t[64] !== h || t[65] !== q || t[66] !== J || t[67] !== X || t[68] !== De ? (Z = (0, p.jsxs)(re, {
+        ref: L,
+        className: q,
+        onOpenAutoFocus: se,
+        children: [J, X, De, h]
+    }), t[64] = h, t[65] = q, t[66] = J, t[67] = X, t[68] = De, t[69] = Z) : Z = t[69];
+    let Q;
+    t[70] !== P || t[71] !== Z ? (Q = (0, p.jsx)(ie, {
+        ...P,
+        children: Z
+    }), t[70] = P, t[71] = Z, t[72] = Q) : Q = t[72];
+    let $;
+    return t[73] !== N || t[74] !== K || t[75] !== Q ? ($ = (0, p.jsxs)(ae, {
+        open: N,
+        modal: !1,
+        children: [K, Q]
+    }), t[73] = N, t[74] = K, t[75] = Q, t[76] = $) : $ = t[76], $
+}
+
+function se(e) {
+    e.preventDefault()
+}
+
+function ce(e) {
+    return e.length > 0
+}
+var le, f, p, ue = e((() => {
+    le = s(), l(), i(), u(), c(), n(), f = t(o()), p = a()
+}));
+export {
+    ue as n, d as t
+};
+//# sourceMappingURL=92b4bb27-ca4bj56704e89tgd.js.map

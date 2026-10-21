@@ -1,3 +1,83 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/abd2ec81-pchvslrl19hs0eh1.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-dfpv67hlp00pbohr.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/d329f11d-ridnmd7r9hnwmjvg.js","assets/conversation-small-cy5f8pl0g26s86so.js","assets/30901919-7dzdc1ou0jtwkwpt.js","assets/c470f5ab-d4g7lc53n1e1ao7o.js","assets/0e5afe53-o2mcfq1ky1uaktz5.js","assets/conversation-small-j5v9ogf2.css","assets/db34ae56-f9vquw92vk7x807b.js","assets/948fe603-cpky6ejpmy9ea971.js","assets/e9df0b0e-jl1tbzhp3dpvaepa.js","assets/e8b55dd1-5kkpcds3pw3lbf2q.js","assets/9e18a103-mg1py3qq0l0cajgf.js","assets/3f385189-n3sls8prf0uwjnan.js","assets/e7a416e4-kh49v4apq6fd000a.js","assets/5f4d7fa0-ecwvalz9rud7vc7c.js","assets/ab92372e-km4nblnp8ngn05ru.js","assets/0f28d127-i5imaalj1guqvomt.js","assets/3a774aaf-f6h0h6n22ezaac5h.js","assets/c2675c8c-9bs3zsr3vq259es7.js","assets/82782bc9-mb60yg1xlggwvqri.js","assets/8b34dbc2-k1zgxrtsww83602u.js","assets/global-modals-lv5n3ujm.css","assets/82d09521-i8rys99mwuoadx6f.js","assets/5b59f3e4-f9v1k69a0tdaqzc0.js","assets/4e7cf3cf-jjmswzibvit67skx.js","assets/6ab34ef3-iimzclcjfq1a3ym8.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{JT as n,Q0 as r,X0 as i,Y0 as a,qT as o,t2 as s}from"./4813494d-dfpv67hlp00pbohr.js";import{Bn as c,Nn as l,Rn as u,Vn as d,cn as f,ln as p,wn as m}from"./2340486e-i7pjxgdhv0bs6apg.js";var h,g=e((()=>{i(),p(),h=a(()=>f(()=>import(`./abd2ec81-pchvslrl19hs0eh1.js`).then(e=>e.AardvarkScanConfigurationSettingsDrawer),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29])))})),_,v,y,b,x,S=e((()=>{_=m(),g(),n(),r(),v=t(d()),u(),y=c(),b={configure:{id:`aardvark.whamRepos.configureButton`,defaultMessage:`Configure`,description:`Button label on the Scans page configured repositories table that opens the full scan settings drawer for owners/editors. Triggered by clicking this button in the table row. Audience: repository owners/editors. Short call-to-action with no placeholders or punctuation.`},view:{id:`aardvark.whamRepos.viewSettings`,defaultMessage:`View`,description:`Button label on the Scans page configured repositories table that opens the full scan settings drawer in read-only mode. Triggered by clicking this button in the table row. Audience: read-only workspace members. Short CTA text with no placeholders or punctuation.`}},x=e=>{"use forget";let t=(0,_.c)(12),{children:n,repoId:r,repoFullName:i,canEdit:a,icon:c,size:u}=e,d=a===void 0||a,f=u===void 0?`small`:u,p;t[0]!==d||t[1]!==i||t[2]!==r?(p=()=>{(0,v.startTransition)(()=>{s(h,{repoId:r,repoFullName:i,canEdit:d})})},t[0]=d,t[1]=i,t[2]=r,t[3]=p):p=t[3];let m=p,g;t[4]!==d||t[5]!==n?(g=n??(d?(0,y.jsx)(l,{...b.configure}):(0,y.jsx)(l,{...b.view})),t[4]=d,t[5]=n,t[6]=g):g=t[6];let x;return t[7]!==m||t[8]!==c||t[9]!==f||t[10]!==g?(x=(0,y.jsx)(o,{as:`button`,color:`secondary`,icon:c,size:f,type:`button`,onClick:m,children:g}),t[7]=m,t[8]=c,t[9]=f,t[10]=g,t[11]=x):x=t[11],x}}));export{S as n,x as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/abd2ec81-pchvslrl19hs0eh1.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-dfpv67hlp00pbohr.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/d329f11d-ridnmd7r9hnwmjvg.js", "assets/conversation-small-cy5f8pl0g26s86so.js", "assets/30901919-7dzdc1ou0jtwkwpt.js", "assets/c470f5ab-d4g7lc53n1e1ao7o.js", "assets/0e5afe53-o2mcfq1ky1uaktz5.js", "assets/conversation-small-j5v9ogf2.css", "assets/db34ae56-f9vquw92vk7x807b.js", "assets/948fe603-cpky6ejpmy9ea971.js", "assets/e9df0b0e-jl1tbzhp3dpvaepa.js", "assets/e8b55dd1-5kkpcds3pw3lbf2q.js", "assets/9e18a103-mg1py3qq0l0cajgf.js", "assets/3f385189-n3sls8prf0uwjnan.js", "assets/e7a416e4-kh49v4apq6fd000a.js", "assets/5f4d7fa0-ecwvalz9rud7vc7c.js", "assets/ab92372e-km4nblnp8ngn05ru.js", "assets/0f28d127-i5imaalj1guqvomt.js", "assets/3a774aaf-f6h0h6n22ezaac5h.js", "assets/c2675c8c-9bs3zsr3vq259es7.js", "assets/82782bc9-mb60yg1xlggwvqri.js", "assets/8b34dbc2-k1zgxrtsww83602u.js", "assets/global-modals-lv5n3ujm.css", "assets/82d09521-i8rys99mwuoadx6f.js", "assets/5b59f3e4-f9v1k69a0tdaqzc0.js", "assets/4e7cf3cf-jjmswzibvit67skx.js", "assets/6ab34ef3-iimzclcjfq1a3ym8.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    JT as n,
+    Q0 as r,
+    X0 as i,
+    Y0 as a,
+    qT as o,
+    t2 as s
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    Bn as c,
+    Nn as l,
+    Rn as u,
+    Vn as d,
+    cn as f,
+    ln as p,
+    wn as m
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+var h, g = e((() => {
+        i(), p(), h = a(() => f(() => import(`./abd2ec81-pchvslrl19hs0eh1.js`).then(e => e.AardvarkScanConfigurationSettingsDrawer), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29])))
+    })),
+    _, v, y, b, x, S = e((() => {
+        _ = m(), g(), n(), r(), v = t(d()), u(), y = c(), b = {
+            configure: {
+                id: `aardvark.whamRepos.configureButton`,
+                defaultMessage: `Configure`,
+                description: `Button label on the Scans page configured repositories table that opens the full scan settings drawer for owners/editors. Triggered by clicking this button in the table row. Audience: repository owners/editors. Short call-to-action with no placeholders or punctuation.`
+            },
+            view: {
+                id: `aardvark.whamRepos.viewSettings`,
+                defaultMessage: `View`,
+                description: `Button label on the Scans page configured repositories table that opens the full scan settings drawer in read-only mode. Triggered by clicking this button in the table row. Audience: read-only workspace members. Short CTA text with no placeholders or punctuation.`
+            }
+        }, x = e => {
+            "use forget";
+            let t = (0, _.c)(12),
+                {
+                    children: n,
+                    repoId: r,
+                    repoFullName: i,
+                    canEdit: a,
+                    icon: c,
+                    size: u
+                } = e,
+                d = a === void 0 || a,
+                f = u === void 0 ? `small` : u,
+                p;
+            t[0] !== d || t[1] !== i || t[2] !== r ? (p = () => {
+                (0, v.startTransition)(() => {
+                    s(h, {
+                        repoId: r,
+                        repoFullName: i,
+                        canEdit: d
+                    })
+                })
+            }, t[0] = d, t[1] = i, t[2] = r, t[3] = p) : p = t[3];
+            let m = p,
+                g;
+            t[4] !== d || t[5] !== n ? (g = n ?? (d ? (0, y.jsx)(l, {
+                ...b.configure
+            }) : (0, y.jsx)(l, {
+                ...b.view
+            })), t[4] = d, t[5] = n, t[6] = g) : g = t[6];
+            let x;
+            return t[7] !== m || t[8] !== c || t[9] !== f || t[10] !== g ? (x = (0, y.jsx)(o, {
+                as: `button`,
+                color: `secondary`,
+                icon: c,
+                size: f,
+                type: `button`,
+                onClick: m,
+                children: g
+            }), t[7] = m, t[8] = c, t[9] = f, t[10] = g, t[11] = x) : x = t[11], x
+        }
+    }));
+export {
+    S as n, x as t
+};
 //# sourceMappingURL=28ea772c-i7wcypkhhry6h66e.js.map

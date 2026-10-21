@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,r as n,t as r}from"./39e3b9e4-kl30g79zy0s1bfji.js";var i=e((()=>{t()}));e((()=>{i()}))();export{n as default,r as handle};
-//# sourceMappingURL=academic-researchers.invite-hitnkhop.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,r as n,t as r}from"./39e3b9e4-dpc9n3tuw9e3ijbp.js";var i=e((()=>{t()}));e((()=>{i()}))();export{n as default,r as handle};
+//# sourceMappingURL=academic-researchers.invite-emjb9a4n.js.map

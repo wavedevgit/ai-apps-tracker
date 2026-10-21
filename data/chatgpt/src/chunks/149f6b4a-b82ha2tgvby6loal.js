@@ -1,2 +1,1088 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$V as n,Hot as r,IN as i,JT as a,Jtt as o,LN as s,Mz as c,N5 as l,Nz as u,QV as d,Vot as f,aq as p,dq as m,fF as h,gnt as g,h8 as _,lY as v,mJ as y,nY as b,pY as x,qT as S,rF as C,vJ as w}from"./4813494d-dfpv67hlp00pbohr.js";import{Bn as T,Ln as E,Nn as D,Rn as O,Vn as k,wn as A,zn as j}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Ai as ee,Dhn as M,Di as N,Ehn as te,FGn as ne,Fi as re,NGn as ie,Oi as ae,PGn as oe,Pi as se,ci as ce,ea as le,ki as ue,li as de,ta as fe}from"./conversation-small-cy5f8pl0g26s86so.js";import{hm as pe,mm as me}from"./30901919-7dzdc1ou0jtwkwpt.js";import{B as he,Nt as ge,Pt as _e,R as ve,V as ye,z as be}from"./8b34dbc2-k1zgxrtsww83602u.js";var P,xe=e((()=>{w(),P=y({name:`calendar-light-16`,canvas:{width:16,height:16,viewBox:`0 0 16 16`,frame:{x:0,y:0,width:16,height:16},inkBounds:{x:1.814697,y:1.474609,width:12.370117,height:12.71582},visualBounds:{x:1.814697,y:1.474609,width:12.370117,height:12.71582}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:1.814697,y:1.474609,width:12.370117,height:12.71582},center:{x:7.999756,y:7.832519},insets:{top:1.474609,right:1.815186,bottom:1.809571,left:1.814697},anchors:{frame:{x:8,y:8},ink:{x:7.999756,y:7.832519},foreground:{x:7.999756,y:7.832519}}},capabilities:[`icon`],body:`<path d="M10.6672 1.47461C10.957 1.47487 11.1926 1.71021 11.1926 2V2.47363H11.6604C13.0548 2.4738 14.1848 3.60461 14.1848 4.99902V11.666C14.1844 13.0601 13.0545 14.1903 11.6604 14.1904H4.34009C2.94584 14.1904 1.81514 13.0602 1.8147 11.666V4.99902C1.8147 3.60451 2.94557 2.47363 4.34009 2.47363H4.80786V2C4.80786 1.71005 5.0433 1.47461 5.33325 1.47461C5.6232 1.47461 5.85864 1.71005 5.85864 2V2.47363H10.1418V2C10.1418 1.71005 10.3773 1.47461 10.6672 1.47461ZM2.86548 7.52148V11.666C2.86592 12.4803 3.52574 13.1406 4.34009 13.1406H11.6604C12.4746 13.1405 13.1346 12.4802 13.135 11.666V7.52148H2.86548ZM4.34009 3.52441C3.52547 3.52441 2.86548 4.1844 2.86548 4.99902V6.4707H13.135V4.99902C13.135 4.18451 12.4749 3.52458 11.6604 3.52441H11.1926V4.33105C11.1926 4.62084 10.957 4.85618 10.6672 4.85645C10.3773 4.85645 10.1418 4.621 10.1418 4.33105V3.52441H5.85864V4.33105C5.85864 4.621 5.6232 4.85645 5.33325 4.85645C5.0433 4.85645 4.80786 4.621 4.80786 4.33105V3.52441H4.34009Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>`})})),F,Se=e((()=>{w(),F=y({name:`calendar-light-20`,canvas:{width:20,height:20,viewBox:`0 0 20 20`,frame:{x:0,y:0,width:20,height:20},inkBounds:{x:2.26001,y:1.834961,width:15.480469,height:15.910156},visualBounds:{x:2.26001,y:1.834961,width:15.480469,height:15.910156}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:2.26001,y:1.834961,width:15.480469,height:15.910156},center:{x:10.000245,y:9.790039},insets:{top:1.834961,right:2.259521,bottom:2.254883,left:2.26001},anchors:{frame:{x:10,y:10},ink:{x:10.000245,y:9.790039},foreground:{x:10.000245,y:9.790039}}},capabilities:[`icon`],body:`<path d="M13.3333 1.83496C13.7005 1.83496 13.9983 2.13273 13.9983 2.5V3.08203H14.675C16.3678 3.08203 17.7405 4.45471 17.7405 6.14746V14.6807C17.7401 16.3731 16.3676 17.7451 14.675 17.7451H5.32544C3.63294 17.7451 2.26041 16.3731 2.26001 14.6807V6.14746C2.26001 4.45471 3.63269 3.08203 5.32544 3.08203H6.0022V2.5C6.0022 2.13273 6.29997 1.83496 6.66724 1.83496C7.03428 1.83522 7.33228 2.13289 7.33228 2.5V3.08203H12.6682V2.5C12.6682 2.13273 12.966 1.83496 13.3333 1.83496ZM3.59009 9.41016V14.6807C3.59049 15.6385 4.36747 16.415 5.32544 16.415H14.675C15.633 16.415 16.41 15.6385 16.4104 14.6807V9.41016H3.59009ZM5.32544 4.41211C4.36722 4.41211 3.59009 5.18925 3.59009 6.14746V8.08008H16.4104V6.14746C16.4104 5.18925 15.6333 4.41211 14.675 4.41211H13.9983V5.41406C13.9983 5.78131 13.7005 6.0791 13.3333 6.0791C12.966 6.0791 12.6682 5.78131 12.6682 5.41406V4.41211H7.33228V5.41406C7.33225 5.78115 7.03427 6.07884 6.66724 6.0791C6.29998 6.0791 6.00222 5.78131 6.0022 5.41406V4.41211H5.32544Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>`})})),I,Ce=e((()=>{w(),I=y({name:`minus-lg-light-16`,canvas:{width:16,height:16,viewBox:`0 0 16 16`,frame:{x:0,y:0,width:16,height:16},inkBounds:{x:2.141113,y:7.474609,width:11.716797,height:1.050781},visualBounds:{x:2.141113,y:7.474609,width:11.716797,height:1.050781}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:2.141113,y:7.474609,width:11.716797,height:1.050781},center:{x:7.999512,y:8},insets:{top:7.474609,right:2.14209,bottom:7.47461,left:2.141113},anchors:{frame:{x:8,y:8},ink:{x:7.999512,y:8},foreground:{x:7.999512,y:8}}},capabilities:[`icon`],body:`<path d="M13.3335 8.52539H2.6665C2.37655 8.52539 2.14111 8.28995 2.14111 8C2.14111 7.71005 2.37655 7.47461 2.6665 7.47461H13.3335C13.6233 7.47478 13.8579 7.71016 13.8579 8C13.8579 8.28984 13.6233 8.52522 13.3335 8.52539Z" fill="currentColor"/>`})})),L,we=e((()=>{w(),L=y({name:`minus-lg-light-20`,canvas:{width:20,height:20,viewBox:`0 0 20 20`,frame:{x:0,y:0,width:20,height:20},inkBounds:{x:2.668457,y:9.334961,width:14.663086,height:1.330078},visualBounds:{x:2.668457,y:9.334961,width:14.663086,height:1.330078}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:2.668457,y:9.334961,width:14.663086,height:1.330078},center:{x:10,y:10},insets:{top:9.334961,right:2.668457,bottom:9.334961,left:2.668457},anchors:{frame:{x:10,y:10},ink:{x:10,y:10},foreground:{x:10,y:10}}},capabilities:[`icon`],body:`<path d="M16.6665 10.665H3.3335C2.96623 10.665 2.66846 10.3673 2.66846 10C2.66846 9.63273 2.96623 9.33496 3.3335 9.33496H16.6665C17.0338 9.33496 17.3315 9.63273 17.3315 10C17.3315 10.3673 17.0338 10.665 16.6665 10.665Z" fill="currentColor"/>`})})),R,Te=e((()=>{w(),R=y({name:`pin-location-light-16`,canvas:{width:16,height:16,viewBox:`0 0 16 16`,frame:{x:0,y:0,width:16,height:16},inkBounds:{x:1.474609,y:1.474609,width:13.050781,height:13.050781},visualBounds:{x:1.474609,y:1.474609,width:13.050781,height:13.050781}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:1.474609,y:1.474609,width:13.050781,height:13.050781},center:{x:8,y:8},insets:{top:1.474609,right:1.47461,bottom:1.47461,left:1.474609},anchors:{frame:{x:8,y:8},ink:{x:8,y:8},foreground:{x:8,y:8}}},capabilities:[`icon`],body:`<path d="M10.7666 9.06055C11.7908 9.25851 12.6902 9.56903 13.3486 9.97363C13.985 10.3649 14.5254 10.9301 14.5254 11.667C14.5252 12.1855 14.2525 12.6229 13.8838 12.9619C13.5155 13.3004 13.011 13.5817 12.4326 13.8066C11.2722 14.2578 9.70477 14.5254 8 14.5254C6.29524 14.5254 4.72777 14.2578 3.56738 13.8066C2.989 13.5817 2.48452 13.3004 2.11621 12.9619C1.74752 12.6229 1.47475 12.1855 1.47461 11.667C1.47461 10.9302 2.01412 10.3649 2.65039 9.97363C3.30882 9.56889 4.20893 9.25856 5.2334 9.06055C5.51807 9.00553 5.79361 9.19189 5.84863 9.47656C5.90342 9.76111 5.71718 10.0368 5.43262 10.0918C4.48207 10.2755 3.71535 10.5522 3.20117 10.8682C2.66499 11.1978 2.52539 11.4878 2.52539 11.667C2.52553 11.7926 2.58895 11.9695 2.82715 12.1885C3.06598 12.408 3.44043 12.63 3.94727 12.8271C4.95839 13.2203 6.39139 13.4756 8 13.4756C9.60863 13.4756 11.0416 13.2203 12.0527 12.8271C12.5596 12.63 12.934 12.408 13.1729 12.1885C13.411 11.9695 13.4745 11.7926 13.4746 11.667C13.4746 11.4878 13.335 11.1978 12.7988 10.8682C12.2846 10.5522 11.5179 10.2755 10.5674 10.0918C10.2828 10.0368 10.0966 9.76111 10.1514 9.47656C10.2064 9.19189 10.4819 9.00553 10.7666 9.06055Z" fill="currentColor"/> <path d="M8 1.47461C9.39452 1.47461 10.5254 2.60548 10.5254 4C10.5254 5.21423 9.66764 6.22677 8.52539 6.46875V11.333C8.52539 11.623 8.28995 11.8584 8 11.8584C7.71005 11.8584 7.47461 11.623 7.47461 11.333V6.46875C6.33236 6.22677 5.47461 5.21423 5.47461 4C5.47461 2.60548 6.60548 1.47461 8 1.47461ZM8 2.52539C7.18538 2.52539 6.52539 3.18538 6.52539 4C6.52539 4.81462 7.18538 5.47461 8 5.47461C8.81462 5.47461 9.47461 4.81462 9.47461 4C9.47461 3.18538 8.81462 2.52539 8 2.52539Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>`})})),z,Ee=e((()=>{w(),z=y({name:`pin-location-light-20`,canvas:{width:20,height:20,viewBox:`0 0 20 20`,frame:{x:0,y:0,width:20,height:20},inkBounds:{x:1.834961,y:1.834961,width:16.330078,height:16.330078},visualBounds:{x:1.834961,y:1.834961,width:16.330078,height:16.330078}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:1.834961,y:1.834961,width:16.330078,height:16.330078},center:{x:10,y:10},insets:{top:1.834961,right:1.834961,bottom:1.834961,left:1.834961},anchors:{frame:{x:10,y:10},ink:{x:10,y:10},foreground:{x:10,y:10}}},capabilities:[`icon`],body:`<path d="M13.46 11.3164C14.7412 11.564 15.8672 11.9533 16.6914 12.46C17.4875 12.9495 18.1649 13.6575 18.165 14.583C18.165 15.2347 17.8224 15.7832 17.3604 16.208C16.8989 16.6323 16.2676 16.9842 15.5439 17.2656C14.0922 17.8301 12.1319 18.165 10 18.165C7.86812 18.165 5.90781 17.8301 4.45605 17.2656C3.73236 16.9842 3.10113 16.6323 2.63965 16.208C2.17759 15.7832 1.83497 15.2347 1.83496 14.583C1.83507 13.6575 2.5125 12.9495 3.30859 12.46C4.13284 11.9533 5.2588 11.564 6.54004 11.3164C6.90064 11.2467 7.24965 11.4832 7.31934 11.8438C7.38891 12.2043 7.15348 12.5534 6.79297 12.623C5.60491 12.8526 4.64748 13.1984 4.00586 13.5928C3.33652 14.0042 3.16515 14.3637 3.16504 14.583C3.16505 14.7367 3.24249 14.9557 3.53906 15.2285C3.83655 15.502 4.30424 15.7791 4.9375 16.0254C6.20017 16.5164 7.98996 16.835 10 16.835C12.0101 16.835 13.7998 16.5164 15.0625 16.0254C15.6958 15.7791 16.1635 15.502 16.4609 15.2285C16.7575 14.9557 16.835 14.7367 16.835 14.583C16.8348 14.3637 16.6635 14.0042 15.9941 13.5928C15.3525 13.1984 14.3951 12.8526 13.207 12.623C12.8465 12.5534 12.6111 12.2043 12.6807 11.8438C12.7504 11.4832 13.0994 11.2467 13.46 11.3164Z" fill="currentColor"/> <path d="M10 1.83496C11.748 1.83496 13.165 3.25202 13.165 5C13.165 6.51977 12.0936 7.78814 10.665 8.09375V14.167C10.6649 14.5341 10.3672 14.832 10 14.832C9.63284 14.832 9.33514 14.5341 9.33496 14.167V8.09375C7.90642 7.78814 6.83496 6.51977 6.83496 5C6.83496 3.25202 8.25202 1.83496 10 1.83496ZM10 3.16504C8.98656 3.16504 8.16504 3.98656 8.16504 5C8.16504 6.01344 8.98656 6.83496 10 6.83496C11.0134 6.83496 11.835 6.01344 11.835 5C11.835 3.98656 11.0134 3.16504 10 3.16504Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>`})})),B,V,De,Oe,ke,Ae=e((()=>{u(),te(),xe(),Se(),Ce(),we(),Te(),Ee(),B=M({id:`world-cup-banner`,icons:{"map-pin":{normal:Object.freeze({...z,body:z.body.replace(/>\s+</g,`><`)}),small:Object.freeze({...R,body:R.body.replace(/>\s+</g,`><`)})},calendar:{normal:F,small:P},minus:{normal:L,small:I}}}),V=B.MapPin,De=B.Calendar,Oe=B.Minus,ke=c.Plus}));function je(e,t){e.dataset.worldCupFallbackApplied!==`true`&&(e.dataset.worldCupFallbackApplied=`true`,e.src=t)}function Me(e){"use forget";let t=(0,H.c)(10),{model:n}=e;switch(n.state){case`group`:{let e;return t[0]===n.country.group?e=t[1]:(e=(0,U.jsx)(D,{...W.group,values:{group:n.country.group}}),t[0]=n.country.group,t[1]=e),e}case`roundOf32`:{let e;return t[2]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,U.jsx)(D,{...W.roundOf32}),t[2]=e):e=t[2],e}case`roundOf16`:{let e;return t[3]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,U.jsx)(D,{...W.roundOf16}),t[3]=e):e=t[3],e}case`quarterfinal`:{let e;return t[4]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,U.jsx)(D,{...W.quarterfinal}),t[4]=e):e=t[4],e}case`semifinal`:{let e;return t[5]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,U.jsx)(D,{...W.semifinal}),t[5]=e):e=t[5],e}case`final`:{let e;return t[6]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,U.jsx)(D,{...W.final}),t[6]=e):e=t[6],e}case`knockedOut`:{let e;return t[7]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,U.jsx)(D,{...W.knockedOut}),t[7]=e):e=t[7],e}case`runnerUp`:{let e;return t[8]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,U.jsx)(D,{...W.runnerUp}),t[8]=e):e=t[8],e}case`champion`:{let e;return t[9]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,U.jsx)(D,{...W.champion}),t[9]=e):e=t[9],e}}}function Ne(e){"use forget";let t=(0,H.c)(41),{conversation:n,country:r}=e,i=j(),a=l(m),o;t[0]!==n||t[1]!==a?(o=()=>ae(n,a),t[0]=n,t[1]=a,t[2]=o):o=t[2];let s=l(o),c=s?W.viewLess:W.viewMore,u=r?.imageAssets??se,d=`url(${u.narrowBannerUrl})`,f=`url(${u.wideBannerUrl})`,p;t[3]!==d||t[4]!==f?(p={"--world-cup-narrow-banner-image":d,"--world-cup-wide-banner-image":f},t[3]=d,t[4]=f,t[5]=p):p=t[5];let h=p,g;t[6]===u.wideBannerUrl?g=t[7]:(g=(0,U.jsx)(`div`,{"aria-hidden":!0,className:`@w-sm/world-cup-banner:block absolute inset-0 hidden overflow-hidden`,"data-testid":`world-cup-banner-background`,children:(0,U.jsx)(`img`,{alt:``,className:`absolute -inset-10 h-[calc(100%+5rem)] w-[calc(100%+5rem)] max-w-none object-cover opacity-25 mix-blend-color blur-[180px]`,onError:Pe,src:u.wideBannerUrl})}),t[6]=u.wideBannerUrl,t[7]=g);let _=`ring-token-border-light @w-sm/world-cup-banner:h-[90px] @w-sm/world-cup-banner:w-[113px] @w-sm/world-cup-banner:rounded-[20px] @w-sm/world-cup-banner:bg-(image:--world-cup-wide-banner-image) h-full w-full bg-(image:--world-cup-narrow-banner-image) bg-cover bg-center ring-1 ring-inset ${r==null?`@w-sm/world-cup-banner:bg-[length:auto_129.34%]`:``}`,v;t[8]!==h||t[9]!==_?(v=(0,U.jsx)(`div`,{className:`@w-sm/world-cup-banner:relative @w-sm/world-cup-banner:inset-auto @w-sm/world-cup-banner:col-start-1 @w-sm/world-cup-banner:row-start-1 @w-sm/world-cup-banner:h-auto @w-sm/world-cup-banner:w-auto @w-sm/world-cup-banner:shrink-0 @w-sm/world-cup-banner:self-center absolute inset-0 overflow-hidden`,children:(0,U.jsx)(`div`,{"aria-hidden":!0,className:_,style:h})}),t[8]=h,t[9]=_,t[10]=v):v=t[10];let y;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(y=(0,U.jsx)(`div`,{"aria-hidden":!0,className:`@w-sm/world-cup-banner:hidden absolute inset-0 bg-[#29333c]/45 backdrop-blur-[16px]`}),t[11]=y):y=t[11];let b;t[12]!==r||t[13]!==i?(b=(0,U.jsx)(`h1`,{id:`world-cup-banner-title`,className:`@w-sm/world-cup-banner:text-token-text-primary @w-sm/world-cup-banner:col-start-1 @w-sm/world-cup-banner:row-start-1 @w-sm/world-cup-banner:self-auto @w-sm/world-cup-banner:pt-1 @w-sm/world-cup-banner:text-[28px] @w-sm/world-cup-banner:leading-[34px] @w-sm/world-cup-banner:tracking-[0.39px] self-center text-[22px] leading-[28px] font-[590] tracking-[-0.26px]`,children:r==null?(0,U.jsx)(D,{...W.title}):(0,U.jsx)(D,{...W.countryTitle,values:{countryName:i.formatMessage(r.country.displayName)}})}),t[12]=r,t[13]=i,t[14]=b):b=t[14];let x;t[15]===r?x=t[16]:(x=(0,U.jsx)(`div`,{className:`@w-sm/world-cup-banner:text-token-text-secondary @w-sm/world-cup-banner:col-span-1 @w-sm/world-cup-banner:col-start-1 @w-sm/world-cup-banner:row-start-2 @w-sm/world-cup-banner:text-[14px] @w-sm/world-cup-banner:leading-[18px] @w-sm/world-cup-banner:tracking-[-0.15px] col-span-2 flex flex-wrap items-center gap-4 text-[12px] leading-4 text-[#cdcdcd]`,children:r==null?(0,U.jsxs)(U.Fragment,{children:[(0,U.jsxs)(`span`,{className:`flex items-center gap-1`,children:[(0,U.jsx)(V,{className:`icon-sm shrink-0`}),(0,U.jsx)(D,{...W.location})]}),(0,U.jsxs)(`span`,{className:`flex items-center gap-1`,children:[(0,U.jsx)(De,{className:`icon-sm shrink-0`}),(0,U.jsx)(D,{...W.dates})]})]}):(0,U.jsxs)(U.Fragment,{children:[(0,U.jsxs)(`span`,{className:`flex items-center gap-1`,children:[(0,U.jsx)(de,{"aria-hidden":`true`,className:`icon-sm shrink-0`}),(0,U.jsx)(D,{...W.title})]}),(0,U.jsxs)(`span`,{className:`flex items-center gap-1`,children:[(0,U.jsx)(me,{className:`icon-sm shrink-0`}),(0,U.jsx)(Me,{model:r})]})]})}),t[15]=r,t[16]=x);let C;t[17]!==x||t[18]!==b?(C=(0,U.jsxs)(`div`,{className:`@w-sm/world-cup-banner:col-start-2 @w-sm/world-cup-banner:row-start-1 @w-sm/world-cup-banner:ms-6 @w-sm/world-cup-banner:me-2.5 @w-sm/world-cup-banner:mb-4 @w-sm/world-cup-banner:grid @w-sm/world-cup-banner:min-w-0 @w-sm/world-cup-banner:self-end @w-sm/world-cup-banner:grid-rows-[auto_auto] @w-sm/world-cup-banner:gap-y-2 contents`,children:[b,x]}),t[17]=x,t[18]=b,t[19]=C):C=t[19];let w=s?Oe:ke,T;t[20]!==i||t[21]!==c?(T=i.formatMessage(c),t[20]=i,t[21]=c,t[22]=T):T=t[22];let E;t[23]!==n||t[24]!==a?(E=()=>{ee(n,a)},t[23]=n,t[24]=a,t[25]=E):E=t[25];let O;t[26]===c?O=t[27]:(O=(0,U.jsx)(`span`,{className:`@w-sm/world-cup-banner:inline hidden`,children:(0,U.jsx)(D,{...c})}),t[26]=c,t[27]=O);let k;t[28]!==s||t[29]!==w||t[30]!==T||t[31]!==E||t[32]!==O?(k=(0,U.jsx)(S,{"aria-expanded":s,className:`@w-sm/world-cup-banner:border-token-interactive-border-secondary-default! @w-sm/world-cup-banner:bg-token-interactive-bg-secondary-default! @w-sm/world-cup-banner:text-token-interactive-label-secondary-default! @w-sm/world-cup-banner:hover:border-token-interactive-border-secondary-hover! @w-sm/world-cup-banner:hover:bg-token-interactive-bg-secondary-hover! @w-sm/world-cup-banner:hover:text-token-interactive-label-secondary-hover! @w-sm/world-cup-banner:active:border-token-interactive-border-secondary-press! @w-sm/world-cup-banner:active:bg-token-interactive-bg-secondary-press! @w-sm/world-cup-banner:active:text-token-interactive-label-secondary-press! @w-sm/world-cup-banner:active:opacity-100! @w-sm/world-cup-banner:col-start-3 @w-sm/world-cup-banner:row-start-1 @w-sm/world-cup-banner:mb-2 @w-sm/world-cup-banner:h-auto @w-sm/world-cup-banner:min-h-9 @w-sm/world-cup-banner:w-auto @w-sm/world-cup-banner:self-end @w-sm/world-cup-banner:px-3 col-start-2 row-start-1 size-[35px] min-h-[35px] shrink-0 rounded-full border border-white/20 bg-white/5! px-0 text-sm font-medium whitespace-nowrap text-white hover:bg-white/10!`,color:`custom`,icon:w,iconClassName:`icon-sm ms-0! @w-sm/world-cup-banner:-ms-0.5!`,label:T,onClick:E,size:`medium`,children:O}),t[28]=s,t[29]=w,t[30]=T,t[31]=E,t[32]=O,t[33]=k):k=t[33];let A;t[34]!==C||t[35]!==k?(A=(0,U.jsxs)(`div`,{className:`@w-sm/world-cup-banner:contents relative mt-[127px] min-w-0 flex-1`,children:[y,(0,U.jsxs)(`div`,{className:`@w-sm/world-cup-banner:contents relative grid h-full min-w-0 grid-cols-[1fr_auto] content-start gap-y-2 p-4`,children:[C,k]})]}),t[34]=C,t[35]=k,t[36]=A):A=t[36];let M;return t[37]!==A||t[38]!==g||t[39]!==v?(M=(0,U.jsxs)(`section`,{"aria-labelledby":`world-cup-banner-title`,className:`after:ring-token-border-default bg-token-bg-tertiary dark:bg-token-bg-primary @w-sm/world-cup-banner:grid @w-sm/world-cup-banner:min-h-[106px] @w-sm/world-cup-banner:grid-cols-[auto_minmax(0,1fr)_auto] @w-sm/world-cup-banner:rounded-[28px] @w-sm/world-cup-banner:py-2 @w-sm/world-cup-banner:pe-4 @w-sm/world-cup-banner:ps-2 relative flex min-h-[218px] w-full flex-col overflow-hidden rounded-[24px] text-white after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-[inherit] after:ring-1 after:content-[''] after:ring-inset`,children:[g,v,A]}),t[37]=A,t[38]=g,t[39]=v,t[40]=M):M=t[40],M}function Pe(e){let{currentTarget:t}=e;je(t,se.wideBannerUrl)}var H,U,W,Fe=e((()=>{H=A(),a(),pe(),Ae(),ce(),re(),_(),p(),O(),N(),U=T(),W=E({title:{id:`chatgpt.football.banner.title`,defaultMessage:`2026 World Cup`},countryTitle:{id:`chatgpt.football.country.banner.title`,defaultMessage:`{countryName} at the World Cup`},location:{id:`chatgpt.football.banner.location`,defaultMessage:`North America`},dates:{id:`chatgpt.football.banner.dates`,defaultMessage:`June 11 - July 19th, 2026`},viewMore:{id:`chatgpt.football.banner.button.view_more.label`,defaultMessage:`View more`},viewLess:{id:`chatgpt.football.banner.button.view_less.label`,defaultMessage:`View less`},group:{id:`chatgpt.football.country.banner.state.label.group`,defaultMessage:`Group {group}`},roundOf32:{id:`chatgpt.football.country.banner.state.label.round_of_32`,defaultMessage:`Round of 32`},roundOf16:{id:`chatgpt.football.country.banner.state.label.round_of_16`,defaultMessage:`Round of 16`},quarterfinal:{id:`chatgpt.football.country.banner.state.label.quarterfinal`,defaultMessage:`Quarterfinal`},semifinal:{id:`chatgpt.football.country.banner.state.label.semifinal`,defaultMessage:`Semifinal`},final:{id:`chatgpt.football.country.banner.state.label.final`,defaultMessage:`Final`},knockedOut:{id:`chatgpt.football.country.banner.state.label.knocked_out`,defaultMessage:`Knocked out`},runnerUp:{id:`chatgpt.football.country.banner.state.label.runner_up`,defaultMessage:`Runner-up`},champion:{id:`chatgpt.football.country.banner.state.label.champion`,defaultMessage:`Champion`}})}));function Ie(e){return e==null?null:`${Le}/${e}.png`}var Le,Re=e((()=>{Le=`https://persistent.oaistatic.com/sonic/flags`}));function ze(e){"use forget";let t=(0,Be.c)(12),n,r,i,a;t[0]===e?(n=t[1],r=t[2],i=t[3],a=t[4]):({alt:n,className:r,flagCode:i,...a}=e,t[0]=e,t[1]=n,t[2]=r,t[3]=i,t[4]=a);let o;t[5]===i?o=t[6]:(o=Ie(i),t[5]=i,t[6]=o);let s=o;if(s==null)return null;let c;return t[7]!==n||t[8]!==r||t[9]!==a||t[10]!==s?(c=(0,Ve.jsx)(`img`,{...a,alt:n,className:r,draggable:!1,src:s}),t[7]=n,t[8]=r,t[9]=a,t[10]=s,t[11]=c):c=t[11],c}var Be,Ve,He=e((()=>{Be=A(),Re(),Ve=T()}));function Ue(){try{return g()}catch{return!1}}function We(e){"use forget";let t=(0,Ge.c)(8),{flagCode:n,flagEmoji:r,iconClassName:i,emojiClassName:a,testId:o}=e;if(Ue()){let e;return t[0]!==n||t[1]!==i||t[2]!==o?(e=(0,G.jsx)(ze,{alt:``,className:i,"data-testid":o,flagCode:n}),t[0]=n,t[1]=i,t[2]=o,t[3]=e):e=t[3],e}if(r==null||r===``)return null;let s;return t[4]!==a||t[5]!==r||t[6]!==o?(s=(0,G.jsx)(`span`,{"aria-hidden":!0,className:a,"data-testid":o,children:r}),t[4]=a,t[5]=r,t[6]=o,t[7]=s):s=t[7],s}var Ge,G,Ke=e((()=>{Ge=A(),He(),o(),G=T()}));function qe(e){"use forget";let t=(0,Ye.c)(4),{countryLinks:n}=e,r;t[0]===n?r=t[1]:(r=n.map(Je),t[0]=n,t[1]=r);let i;return t[2]===r?i=t[3]:(i=(0,K.jsx)(`div`,{className:`max-w-full min-w-0`,children:(0,K.jsx)(`div`,{className:`horizontal-scroll-fade-mask no-scrollbar flex max-w-full min-w-0 touch-pan-x flex-nowrap gap-2 overflow-x-auto overscroll-x-contain [--edge-fade-distance:1rem]`,children:r})}),t[2]=r,t[3]=i),i}function Je(e){return(0,K.jsxs)(`a`,{className:`${Xe} ${q}`,href:n(`/football/${e.slug}/`),children:[(0,K.jsx)(We,{emojiClassName:`shrink-0 text-[18px] leading-5`,flagCode:e.flagCode,flagEmoji:e.flagEmoji,iconClassName:`h-3.5 w-5 shrink-0 rounded-[2px] object-cover`,testId:`world-cup-country-link-flag`}),(0,K.jsx)(`span`,{className:`shrink-0`,children:(0,K.jsx)(D,{...e.displayName})})]},e.slug)}var Ye,K,Xe,q,Ze=e((()=>{Ye=A(),Ke(),d(),O(),K=T(),Xe=`btn relative h-9! min-h-9! shrink-0 gap-1 px-3! text-sm! leading-5! tracking-[-0.18px]! whitespace-nowrap active:opacity-100!`,q=`btn-secondary border-token-interactive-border-secondary-default! bg-token-interactive-bg-secondary-default! text-token-interactive-label-secondary-default! hover:border-token-interactive-border-secondary-hover! hover:bg-token-interactive-bg-secondary-hover! hover:text-token-interactive-label-secondary-hover! active:border-token-interactive-border-secondary-press! active:bg-token-interactive-bg-secondary-press! active:text-token-interactive-label-secondary-press!`}));function Qe(e){"use forget";let t=(0,$e.c)(11),{conversation:n,country:r,countryLinks:i}=e,a;t[0]===i?a=t[1]:(a=i===void 0?[]:i,t[0]=i,t[1]=a);let o=a,s=o.length>0,c;t[2]!==n||t[3]!==r?(c=(0,J.jsx)(Ne,{conversation:n,country:r}),t[2]=n,t[3]=r,t[4]=c):c=t[4];let l;t[5]!==o||t[6]!==s?(l=s&&(0,J.jsx)(`div`,{className:`mt-4`,children:(0,J.jsx)(qe,{countryLinks:o})}),t[5]=o,t[6]=s,t[7]=l):l=t[7];let u;return t[8]!==c||t[9]!==l?(u=(0,J.jsx)(oe,{horizontalMargin:`none`,horizontalPadding:`standard`,verticalMargin:`none`,children:(0,J.jsxs)(ie,{className:`@container/world-cup-banner pb-4`,children:[c,l]})}),t[8]=c,t[9]=l,t[10]=u):u=t[10],u}var $e,J,et=e((()=>{$e=A(),Fe(),Ze(),ne(),J=T()}));function tt(e){"use forget";let t=(0,rt.c)(30),{country:n,countryLinks:i,documentTitle:a}=e,o=(0,Y.use)(C),c;t[0]===o?c=t[1]:(c=r(o),t[0]=o,t[1]=c);let u=c,d=he(u),f;t[2]===u.id?f=t[3]:(f=()=>ye(u.id),t[2]=u.id,t[3]=f);let p=l(f),m=d||p===`pending`,h=n==null?`football`:`country:${n.country.slug}`,g=x(u.id,nt),_=(0,Y.useRef)(!1),y=(0,Y.useRef)(void 0),b,S;t[4]===u.id?(b=t[5],S=t[6]):(b=()=>(v(u.id,e=>{y.current===void 0&&(y.current=e.disableConversationNavigation),e.disableConversationNavigation=!0}),()=>{let e=y.current;y.current=void 0,v(u.id,t=>{t.disableConversationNavigation=e})}),S=[u.id],t[4]=u.id,t[5]=b,t[6]=S),(0,Y.useEffect)(b,S);let w,T;t[7]===u?(w=t[8],T=t[9]):(w=()=>(_.current=!0,()=>{_.current=!1,queueMicrotask(()=>{_.current||ue(u)})}),T=[u],t[7]=u,t[8]=w,t[9]=T),(0,Y.useEffect)(w,T);let E,D;t[10]!==h||t[11]!==u||t[12]!==g||t[13]!==d?(E=()=>{!d||!g||be(u,h)},D=[h,u,g,d],t[10]=h,t[11]=u,t[12]=g,t[13]=d,t[14]=E,t[15]=D):(E=t[14],D=t[15]),s(E,D);let O;t[16]===n?.country.slug?O=t[17]:(O=()=>fe({countrySlug:n?.country.slug}),t[16]=n?.country.slug,t[17]=O);let k;t[18]!==u||t[19]!==n||t[20]!==i?(k=(0,X.jsx)(Qe,{conversation:u,country:n,countryLinks:i}),t[18]=u,t[19]=n,t[20]=i,t[21]=k):k=t[21];let A;t[22]===m?A=t[23]:(A=m?(0,X.jsx)(X.Fragment,{}):void 0,t[22]=m,t[23]=A);let j;return t[24]!==u||t[25]!==a||t[26]!==O||t[27]!==k||t[28]!==A?(j=(0,X.jsx)(ge,{conversation:u,disableInitialScroll:!0,documentTitleOverride:a,hideInstantAnswerMessageHeader:!0,onComposerSubmit:O,threadPrelude:k,renderEmptyState:A},u.id),t[24]=u,t[25]=a,t[26]=O,t[27]=k,t[28]=A,t[29]=j):j=t[29],j}function nt(e){return e!=null}var rt,Y,X,it=e((()=>{rt=A(),h(),le(),ve(),N(),et(),b(),_e(),_(),f(),i(),Y=t(k()),X=T()})),Z,at,ot,st=e((()=>{O(),Z=`/football`,at=`${Z}/`,ot=E({title:{id:`chatgpt.football.page.meta.title.v2`,defaultMessage:`2026 World Cup on ChatGPT | Scores, Schedules, Standings & Predictions`},description:{id:`chatgpt.football.page.meta.description.v2`,defaultMessage:`Follow the 2026 World Cup on ChatGPT with match updates, schedules, standings, team insights, predictions, and quick recaps.`},socialImageAlt:{id:`chatgpt.football.page.meta.social_image_alt`,defaultMessage:`Football fans cheering in a stadium at the World Cup`},socialBallImageAlt:{id:`chatgpt.football.page.meta.social_ball_image_alt`,defaultMessage:`A football with the ChatGPT logo in a stadium`}})}));function ct(e){"use forget";let t=(0,Q.c)(21),{imageAlt:n,imageUrl:r,url:i}=e,a;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,$.jsx)(`meta`,{property:`og:type`,content:`website`}),t[0]=a):a=t[0];let o;t[1]===i?o=t[2]:(o=(0,$.jsx)(`meta`,{property:`og:url`,content:i}),t[1]=i,t[2]=o);let s;t[3]===r?s=t[4]:(s=(0,$.jsx)(`meta`,{property:`og:image`,content:r}),t[3]=r,t[4]=s);let c,l;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,$.jsx)(`meta`,{property:`og:image:width`,content:`786`}),l=(0,$.jsx)(`meta`,{property:`og:image:height`,content:`442`}),t[5]=c,t[6]=l):(c=t[5],l=t[6]);let u;t[7]===n?u=t[8]:(u=(0,$.jsx)(`meta`,{property:`og:image:alt`,content:n}),t[7]=n,t[8]=u);let d,f;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,$.jsx)(`meta`,{name:`twitter:card`,content:`summary_large_image`}),f=(0,$.jsx)(`meta`,{name:`twitter:site`,content:`@ChatGPTapp`}),t[9]=d,t[10]=f):(d=t[9],f=t[10]);let p;t[11]===r?p=t[12]:(p=(0,$.jsx)(`meta`,{name:`twitter:image`,content:r}),t[11]=r,t[12]=p);let m;t[13]===n?m=t[14]:(m=(0,$.jsx)(`meta`,{name:`twitter:image:alt`,content:n}),t[13]=n,t[14]=m);let h;return t[15]!==m||t[16]!==o||t[17]!==s||t[18]!==u||t[19]!==p?(h=(0,$.jsxs)($.Fragment,{children:[a,o,s,c,l,u,d,f,p,m]}),t[15]=m,t[16]=o,t[17]=s,t[18]=u,t[19]=p,t[20]=h):h=t[20],h}var Q,$,lt=e((()=>{Q=A(),$=T()}));export{at as a,it as c,Z as i,lt as n,st as o,ot as r,tt as s,ct as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $V as n,
+    Hot as r,
+    IN as i,
+    JT as a,
+    Jtt as o,
+    LN as s,
+    Mz as c,
+    N5 as l,
+    Nz as u,
+    QV as d,
+    Vot as f,
+    aq as p,
+    dq as m,
+    fF as h,
+    gnt as g,
+    h8 as _,
+    lY as v,
+    mJ as y,
+    nY as b,
+    pY as x,
+    qT as S,
+    rF as C,
+    vJ as w
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    Bn as T,
+    Ln as E,
+    Nn as D,
+    Rn as O,
+    Vn as k,
+    wn as A,
+    zn as j
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Ai as ee,
+    Dhn as M,
+    Di as N,
+    Ehn as te,
+    FGn as ne,
+    Fi as re,
+    NGn as ie,
+    Oi as ae,
+    PGn as oe,
+    Pi as se,
+    ci as ce,
+    ea as le,
+    ki as ue,
+    li as de,
+    ta as fe
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+import {
+    hm as pe,
+    mm as me
+} from "./30901919-7dzdc1ou0jtwkwpt.js";
+import {
+    B as he,
+    Nt as ge,
+    Pt as _e,
+    R as ve,
+    V as ye,
+    z as be
+} from "./8b34dbc2-k1zgxrtsww83602u.js";
+var P, xe = e((() => {
+        w(), P = y({
+            name: `calendar-light-16`,
+            canvas: {
+                width: 16,
+                height: 16,
+                viewBox: `0 0 16 16`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 16,
+                    height: 16
+                },
+                inkBounds: {
+                    x: 1.814697,
+                    y: 1.474609,
+                    width: 12.370117,
+                    height: 12.71582
+                },
+                visualBounds: {
+                    x: 1.814697,
+                    y: 1.474609,
+                    width: 12.370117,
+                    height: 12.71582
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 1.814697,
+                    y: 1.474609,
+                    width: 12.370117,
+                    height: 12.71582
+                },
+                center: {
+                    x: 7.999756,
+                    y: 7.832519
+                },
+                insets: {
+                    top: 1.474609,
+                    right: 1.815186,
+                    bottom: 1.809571,
+                    left: 1.814697
+                },
+                anchors: {
+                    frame: {
+                        x: 8,
+                        y: 8
+                    },
+                    ink: {
+                        x: 7.999756,
+                        y: 7.832519
+                    },
+                    foreground: {
+                        x: 7.999756,
+                        y: 7.832519
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M10.6672 1.47461C10.957 1.47487 11.1926 1.71021 11.1926 2V2.47363H11.6604C13.0548 2.4738 14.1848 3.60461 14.1848 4.99902V11.666C14.1844 13.0601 13.0545 14.1903 11.6604 14.1904H4.34009C2.94584 14.1904 1.81514 13.0602 1.8147 11.666V4.99902C1.8147 3.60451 2.94557 2.47363 4.34009 2.47363H4.80786V2C4.80786 1.71005 5.0433 1.47461 5.33325 1.47461C5.6232 1.47461 5.85864 1.71005 5.85864 2V2.47363H10.1418V2C10.1418 1.71005 10.3773 1.47461 10.6672 1.47461ZM2.86548 7.52148V11.666C2.86592 12.4803 3.52574 13.1406 4.34009 13.1406H11.6604C12.4746 13.1405 13.1346 12.4802 13.135 11.666V7.52148H2.86548ZM4.34009 3.52441C3.52547 3.52441 2.86548 4.1844 2.86548 4.99902V6.4707H13.135V4.99902C13.135 4.18451 12.4749 3.52458 11.6604 3.52441H11.1926V4.33105C11.1926 4.62084 10.957 4.85618 10.6672 4.85645C10.3773 4.85645 10.1418 4.621 10.1418 4.33105V3.52441H5.85864V4.33105C5.85864 4.621 5.6232 4.85645 5.33325 4.85645C5.0433 4.85645 4.80786 4.621 4.80786 4.33105V3.52441H4.34009Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>`
+        })
+    })),
+    F, Se = e((() => {
+        w(), F = y({
+            name: `calendar-light-20`,
+            canvas: {
+                width: 20,
+                height: 20,
+                viewBox: `0 0 20 20`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 20,
+                    height: 20
+                },
+                inkBounds: {
+                    x: 2.26001,
+                    y: 1.834961,
+                    width: 15.480469,
+                    height: 15.910156
+                },
+                visualBounds: {
+                    x: 2.26001,
+                    y: 1.834961,
+                    width: 15.480469,
+                    height: 15.910156
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 2.26001,
+                    y: 1.834961,
+                    width: 15.480469,
+                    height: 15.910156
+                },
+                center: {
+                    x: 10.000245,
+                    y: 9.790039
+                },
+                insets: {
+                    top: 1.834961,
+                    right: 2.259521,
+                    bottom: 2.254883,
+                    left: 2.26001
+                },
+                anchors: {
+                    frame: {
+                        x: 10,
+                        y: 10
+                    },
+                    ink: {
+                        x: 10.000245,
+                        y: 9.790039
+                    },
+                    foreground: {
+                        x: 10.000245,
+                        y: 9.790039
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M13.3333 1.83496C13.7005 1.83496 13.9983 2.13273 13.9983 2.5V3.08203H14.675C16.3678 3.08203 17.7405 4.45471 17.7405 6.14746V14.6807C17.7401 16.3731 16.3676 17.7451 14.675 17.7451H5.32544C3.63294 17.7451 2.26041 16.3731 2.26001 14.6807V6.14746C2.26001 4.45471 3.63269 3.08203 5.32544 3.08203H6.0022V2.5C6.0022 2.13273 6.29997 1.83496 6.66724 1.83496C7.03428 1.83522 7.33228 2.13289 7.33228 2.5V3.08203H12.6682V2.5C12.6682 2.13273 12.966 1.83496 13.3333 1.83496ZM3.59009 9.41016V14.6807C3.59049 15.6385 4.36747 16.415 5.32544 16.415H14.675C15.633 16.415 16.41 15.6385 16.4104 14.6807V9.41016H3.59009ZM5.32544 4.41211C4.36722 4.41211 3.59009 5.18925 3.59009 6.14746V8.08008H16.4104V6.14746C16.4104 5.18925 15.6333 4.41211 14.675 4.41211H13.9983V5.41406C13.9983 5.78131 13.7005 6.0791 13.3333 6.0791C12.966 6.0791 12.6682 5.78131 12.6682 5.41406V4.41211H7.33228V5.41406C7.33225 5.78115 7.03427 6.07884 6.66724 6.0791C6.29998 6.0791 6.00222 5.78131 6.0022 5.41406V4.41211H5.32544Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>`
+        })
+    })),
+    I, Ce = e((() => {
+        w(), I = y({
+            name: `minus-lg-light-16`,
+            canvas: {
+                width: 16,
+                height: 16,
+                viewBox: `0 0 16 16`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 16,
+                    height: 16
+                },
+                inkBounds: {
+                    x: 2.141113,
+                    y: 7.474609,
+                    width: 11.716797,
+                    height: 1.050781
+                },
+                visualBounds: {
+                    x: 2.141113,
+                    y: 7.474609,
+                    width: 11.716797,
+                    height: 1.050781
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 2.141113,
+                    y: 7.474609,
+                    width: 11.716797,
+                    height: 1.050781
+                },
+                center: {
+                    x: 7.999512,
+                    y: 8
+                },
+                insets: {
+                    top: 7.474609,
+                    right: 2.14209,
+                    bottom: 7.47461,
+                    left: 2.141113
+                },
+                anchors: {
+                    frame: {
+                        x: 8,
+                        y: 8
+                    },
+                    ink: {
+                        x: 7.999512,
+                        y: 8
+                    },
+                    foreground: {
+                        x: 7.999512,
+                        y: 8
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M13.3335 8.52539H2.6665C2.37655 8.52539 2.14111 8.28995 2.14111 8C2.14111 7.71005 2.37655 7.47461 2.6665 7.47461H13.3335C13.6233 7.47478 13.8579 7.71016 13.8579 8C13.8579 8.28984 13.6233 8.52522 13.3335 8.52539Z" fill="currentColor"/>`
+        })
+    })),
+    L, we = e((() => {
+        w(), L = y({
+            name: `minus-lg-light-20`,
+            canvas: {
+                width: 20,
+                height: 20,
+                viewBox: `0 0 20 20`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 20,
+                    height: 20
+                },
+                inkBounds: {
+                    x: 2.668457,
+                    y: 9.334961,
+                    width: 14.663086,
+                    height: 1.330078
+                },
+                visualBounds: {
+                    x: 2.668457,
+                    y: 9.334961,
+                    width: 14.663086,
+                    height: 1.330078
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 2.668457,
+                    y: 9.334961,
+                    width: 14.663086,
+                    height: 1.330078
+                },
+                center: {
+                    x: 10,
+                    y: 10
+                },
+                insets: {
+                    top: 9.334961,
+                    right: 2.668457,
+                    bottom: 9.334961,
+                    left: 2.668457
+                },
+                anchors: {
+                    frame: {
+                        x: 10,
+                        y: 10
+                    },
+                    ink: {
+                        x: 10,
+                        y: 10
+                    },
+                    foreground: {
+                        x: 10,
+                        y: 10
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M16.6665 10.665H3.3335C2.96623 10.665 2.66846 10.3673 2.66846 10C2.66846 9.63273 2.96623 9.33496 3.3335 9.33496H16.6665C17.0338 9.33496 17.3315 9.63273 17.3315 10C17.3315 10.3673 17.0338 10.665 16.6665 10.665Z" fill="currentColor"/>`
+        })
+    })),
+    R, Te = e((() => {
+        w(), R = y({
+            name: `pin-location-light-16`,
+            canvas: {
+                width: 16,
+                height: 16,
+                viewBox: `0 0 16 16`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 16,
+                    height: 16
+                },
+                inkBounds: {
+                    x: 1.474609,
+                    y: 1.474609,
+                    width: 13.050781,
+                    height: 13.050781
+                },
+                visualBounds: {
+                    x: 1.474609,
+                    y: 1.474609,
+                    width: 13.050781,
+                    height: 13.050781
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 1.474609,
+                    y: 1.474609,
+                    width: 13.050781,
+                    height: 13.050781
+                },
+                center: {
+                    x: 8,
+                    y: 8
+                },
+                insets: {
+                    top: 1.474609,
+                    right: 1.47461,
+                    bottom: 1.47461,
+                    left: 1.474609
+                },
+                anchors: {
+                    frame: {
+                        x: 8,
+                        y: 8
+                    },
+                    ink: {
+                        x: 8,
+                        y: 8
+                    },
+                    foreground: {
+                        x: 8,
+                        y: 8
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M10.7666 9.06055C11.7908 9.25851 12.6902 9.56903 13.3486 9.97363C13.985 10.3649 14.5254 10.9301 14.5254 11.667C14.5252 12.1855 14.2525 12.6229 13.8838 12.9619C13.5155 13.3004 13.011 13.5817 12.4326 13.8066C11.2722 14.2578 9.70477 14.5254 8 14.5254C6.29524 14.5254 4.72777 14.2578 3.56738 13.8066C2.989 13.5817 2.48452 13.3004 2.11621 12.9619C1.74752 12.6229 1.47475 12.1855 1.47461 11.667C1.47461 10.9302 2.01412 10.3649 2.65039 9.97363C3.30882 9.56889 4.20893 9.25856 5.2334 9.06055C5.51807 9.00553 5.79361 9.19189 5.84863 9.47656C5.90342 9.76111 5.71718 10.0368 5.43262 10.0918C4.48207 10.2755 3.71535 10.5522 3.20117 10.8682C2.66499 11.1978 2.52539 11.4878 2.52539 11.667C2.52553 11.7926 2.58895 11.9695 2.82715 12.1885C3.06598 12.408 3.44043 12.63 3.94727 12.8271C4.95839 13.2203 6.39139 13.4756 8 13.4756C9.60863 13.4756 11.0416 13.2203 12.0527 12.8271C12.5596 12.63 12.934 12.408 13.1729 12.1885C13.411 11.9695 13.4745 11.7926 13.4746 11.667C13.4746 11.4878 13.335 11.1978 12.7988 10.8682C12.2846 10.5522 11.5179 10.2755 10.5674 10.0918C10.2828 10.0368 10.0966 9.76111 10.1514 9.47656C10.2064 9.19189 10.4819 9.00553 10.7666 9.06055Z" fill="currentColor"/> <path d="M8 1.47461C9.39452 1.47461 10.5254 2.60548 10.5254 4C10.5254 5.21423 9.66764 6.22677 8.52539 6.46875V11.333C8.52539 11.623 8.28995 11.8584 8 11.8584C7.71005 11.8584 7.47461 11.623 7.47461 11.333V6.46875C6.33236 6.22677 5.47461 5.21423 5.47461 4C5.47461 2.60548 6.60548 1.47461 8 1.47461ZM8 2.52539C7.18538 2.52539 6.52539 3.18538 6.52539 4C6.52539 4.81462 7.18538 5.47461 8 5.47461C8.81462 5.47461 9.47461 4.81462 9.47461 4C9.47461 3.18538 8.81462 2.52539 8 2.52539Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>`
+        })
+    })),
+    z, Ee = e((() => {
+        w(), z = y({
+            name: `pin-location-light-20`,
+            canvas: {
+                width: 20,
+                height: 20,
+                viewBox: `0 0 20 20`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 20,
+                    height: 20
+                },
+                inkBounds: {
+                    x: 1.834961,
+                    y: 1.834961,
+                    width: 16.330078,
+                    height: 16.330078
+                },
+                visualBounds: {
+                    x: 1.834961,
+                    y: 1.834961,
+                    width: 16.330078,
+                    height: 16.330078
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 1.834961,
+                    y: 1.834961,
+                    width: 16.330078,
+                    height: 16.330078
+                },
+                center: {
+                    x: 10,
+                    y: 10
+                },
+                insets: {
+                    top: 1.834961,
+                    right: 1.834961,
+                    bottom: 1.834961,
+                    left: 1.834961
+                },
+                anchors: {
+                    frame: {
+                        x: 10,
+                        y: 10
+                    },
+                    ink: {
+                        x: 10,
+                        y: 10
+                    },
+                    foreground: {
+                        x: 10,
+                        y: 10
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M13.46 11.3164C14.7412 11.564 15.8672 11.9533 16.6914 12.46C17.4875 12.9495 18.1649 13.6575 18.165 14.583C18.165 15.2347 17.8224 15.7832 17.3604 16.208C16.8989 16.6323 16.2676 16.9842 15.5439 17.2656C14.0922 17.8301 12.1319 18.165 10 18.165C7.86812 18.165 5.90781 17.8301 4.45605 17.2656C3.73236 16.9842 3.10113 16.6323 2.63965 16.208C2.17759 15.7832 1.83497 15.2347 1.83496 14.583C1.83507 13.6575 2.5125 12.9495 3.30859 12.46C4.13284 11.9533 5.2588 11.564 6.54004 11.3164C6.90064 11.2467 7.24965 11.4832 7.31934 11.8438C7.38891 12.2043 7.15348 12.5534 6.79297 12.623C5.60491 12.8526 4.64748 13.1984 4.00586 13.5928C3.33652 14.0042 3.16515 14.3637 3.16504 14.583C3.16505 14.7367 3.24249 14.9557 3.53906 15.2285C3.83655 15.502 4.30424 15.7791 4.9375 16.0254C6.20017 16.5164 7.98996 16.835 10 16.835C12.0101 16.835 13.7998 16.5164 15.0625 16.0254C15.6958 15.7791 16.1635 15.502 16.4609 15.2285C16.7575 14.9557 16.835 14.7367 16.835 14.583C16.8348 14.3637 16.6635 14.0042 15.9941 13.5928C15.3525 13.1984 14.3951 12.8526 13.207 12.623C12.8465 12.5534 12.6111 12.2043 12.6807 11.8438C12.7504 11.4832 13.0994 11.2467 13.46 11.3164Z" fill="currentColor"/> <path d="M10 1.83496C11.748 1.83496 13.165 3.25202 13.165 5C13.165 6.51977 12.0936 7.78814 10.665 8.09375V14.167C10.6649 14.5341 10.3672 14.832 10 14.832C9.63284 14.832 9.33514 14.5341 9.33496 14.167V8.09375C7.90642 7.78814 6.83496 6.51977 6.83496 5C6.83496 3.25202 8.25202 1.83496 10 1.83496ZM10 3.16504C8.98656 3.16504 8.16504 3.98656 8.16504 5C8.16504 6.01344 8.98656 6.83496 10 6.83496C11.0134 6.83496 11.835 6.01344 11.835 5C11.835 3.98656 11.0134 3.16504 10 3.16504Z" fill-rule="evenodd" clip-rule="evenodd" fill="currentColor"/>`
+        })
+    })),
+    B, V, De, Oe, ke, Ae = e((() => {
+        u(), te(), xe(), Se(), Ce(), we(), Te(), Ee(), B = M({
+            id: `world-cup-banner`,
+            icons: {
+                "map-pin": {
+                    normal: Object.freeze({
+                        ...z,
+                        body: z.body.replace(/>\s+</g, `><`)
+                    }),
+                    small: Object.freeze({
+                        ...R,
+                        body: R.body.replace(/>\s+</g, `><`)
+                    })
+                },
+                calendar: {
+                    normal: F,
+                    small: P
+                },
+                minus: {
+                    normal: L,
+                    small: I
+                }
+            }
+        }), V = B.MapPin, De = B.Calendar, Oe = B.Minus, ke = c.Plus
+    }));
+
+function je(e, t) {
+    e.dataset.worldCupFallbackApplied !== `true` && (e.dataset.worldCupFallbackApplied = `true`, e.src = t)
+}
+
+function Me(e) {
+    "use forget";
+    let t = (0, H.c)(10),
+        {
+            model: n
+        } = e;
+    switch (n.state) {
+        case `group`: {
+            let e;
+            return t[0] === n.country.group ? e = t[1] : (e = (0, U.jsx)(D, {
+                ...W.group,
+                values: {
+                    group: n.country.group
+                }
+            }), t[0] = n.country.group, t[1] = e), e
+        }
+        case `roundOf32`: {
+            let e;
+            return t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, U.jsx)(D, {
+                ...W.roundOf32
+            }), t[2] = e) : e = t[2], e
+        }
+        case `roundOf16`: {
+            let e;
+            return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, U.jsx)(D, {
+                ...W.roundOf16
+            }), t[3] = e) : e = t[3], e
+        }
+        case `quarterfinal`: {
+            let e;
+            return t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, U.jsx)(D, {
+                ...W.quarterfinal
+            }), t[4] = e) : e = t[4], e
+        }
+        case `semifinal`: {
+            let e;
+            return t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, U.jsx)(D, {
+                ...W.semifinal
+            }), t[5] = e) : e = t[5], e
+        }
+        case `final`: {
+            let e;
+            return t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, U.jsx)(D, {
+                ...W.final
+            }), t[6] = e) : e = t[6], e
+        }
+        case `knockedOut`: {
+            let e;
+            return t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, U.jsx)(D, {
+                ...W.knockedOut
+            }), t[7] = e) : e = t[7], e
+        }
+        case `runnerUp`: {
+            let e;
+            return t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, U.jsx)(D, {
+                ...W.runnerUp
+            }), t[8] = e) : e = t[8], e
+        }
+        case `champion`: {
+            let e;
+            return t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, U.jsx)(D, {
+                ...W.champion
+            }), t[9] = e) : e = t[9], e
+        }
+    }
+}
+
+function Ne(e) {
+    "use forget";
+    let t = (0, H.c)(41),
+        {
+            conversation: n,
+            country: r
+        } = e,
+        i = j(),
+        a = l(m),
+        o;
+    t[0] !== n || t[1] !== a ? (o = () => ae(n, a), t[0] = n, t[1] = a, t[2] = o) : o = t[2];
+    let s = l(o),
+        c = s ? W.viewLess : W.viewMore,
+        u = r?.imageAssets ?? se,
+        d = `url(${u.narrowBannerUrl})`,
+        f = `url(${u.wideBannerUrl})`,
+        p;
+    t[3] !== d || t[4] !== f ? (p = {
+        "--world-cup-narrow-banner-image": d,
+        "--world-cup-wide-banner-image": f
+    }, t[3] = d, t[4] = f, t[5] = p) : p = t[5];
+    let h = p,
+        g;
+    t[6] === u.wideBannerUrl ? g = t[7] : (g = (0, U.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `@w-sm/world-cup-banner:block absolute inset-0 hidden overflow-hidden`,
+        "data-testid": `world-cup-banner-background`,
+        children: (0, U.jsx)(`img`, {
+            alt: ``,
+            className: `absolute -inset-10 h-[calc(100%+5rem)] w-[calc(100%+5rem)] max-w-none object-cover opacity-25 mix-blend-color blur-[180px]`,
+            onError: Pe,
+            src: u.wideBannerUrl
+        })
+    }), t[6] = u.wideBannerUrl, t[7] = g);
+    let _ = `ring-token-border-light @w-sm/world-cup-banner:h-[90px] @w-sm/world-cup-banner:w-[113px] @w-sm/world-cup-banner:rounded-[20px] @w-sm/world-cup-banner:bg-(image:--world-cup-wide-banner-image) h-full w-full bg-(image:--world-cup-narrow-banner-image) bg-cover bg-center ring-1 ring-inset ${r==null?`@w-sm/world-cup-banner:bg-[length:auto_129.34%]`:``}`,
+        v;
+    t[8] !== h || t[9] !== _ ? (v = (0, U.jsx)(`div`, {
+        className: `@w-sm/world-cup-banner:relative @w-sm/world-cup-banner:inset-auto @w-sm/world-cup-banner:col-start-1 @w-sm/world-cup-banner:row-start-1 @w-sm/world-cup-banner:h-auto @w-sm/world-cup-banner:w-auto @w-sm/world-cup-banner:shrink-0 @w-sm/world-cup-banner:self-center absolute inset-0 overflow-hidden`,
+        children: (0, U.jsx)(`div`, {
+            "aria-hidden": !0,
+            className: _,
+            style: h
+        })
+    }), t[8] = h, t[9] = _, t[10] = v) : v = t[10];
+    let y;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, U.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `@w-sm/world-cup-banner:hidden absolute inset-0 bg-[#29333c]/45 backdrop-blur-[16px]`
+    }), t[11] = y) : y = t[11];
+    let b;
+    t[12] !== r || t[13] !== i ? (b = (0, U.jsx)(`h1`, {
+        id: `world-cup-banner-title`,
+        className: `@w-sm/world-cup-banner:text-token-text-primary @w-sm/world-cup-banner:col-start-1 @w-sm/world-cup-banner:row-start-1 @w-sm/world-cup-banner:self-auto @w-sm/world-cup-banner:pt-1 @w-sm/world-cup-banner:text-[28px] @w-sm/world-cup-banner:leading-[34px] @w-sm/world-cup-banner:tracking-[0.39px] self-center text-[22px] leading-[28px] font-[590] tracking-[-0.26px]`,
+        children: r == null ? (0, U.jsx)(D, {
+            ...W.title
+        }) : (0, U.jsx)(D, {
+            ...W.countryTitle,
+            values: {
+                countryName: i.formatMessage(r.country.displayName)
+            }
+        })
+    }), t[12] = r, t[13] = i, t[14] = b) : b = t[14];
+    let x;
+    t[15] === r ? x = t[16] : (x = (0, U.jsx)(`div`, {
+        className: `@w-sm/world-cup-banner:text-token-text-secondary @w-sm/world-cup-banner:col-span-1 @w-sm/world-cup-banner:col-start-1 @w-sm/world-cup-banner:row-start-2 @w-sm/world-cup-banner:text-[14px] @w-sm/world-cup-banner:leading-[18px] @w-sm/world-cup-banner:tracking-[-0.15px] col-span-2 flex flex-wrap items-center gap-4 text-[12px] leading-4 text-[#cdcdcd]`,
+        children: r == null ? (0, U.jsxs)(U.Fragment, {
+            children: [(0, U.jsxs)(`span`, {
+                className: `flex items-center gap-1`,
+                children: [(0, U.jsx)(V, {
+                    className: `icon-sm shrink-0`
+                }), (0, U.jsx)(D, {
+                    ...W.location
+                })]
+            }), (0, U.jsxs)(`span`, {
+                className: `flex items-center gap-1`,
+                children: [(0, U.jsx)(De, {
+                    className: `icon-sm shrink-0`
+                }), (0, U.jsx)(D, {
+                    ...W.dates
+                })]
+            })]
+        }) : (0, U.jsxs)(U.Fragment, {
+            children: [(0, U.jsxs)(`span`, {
+                className: `flex items-center gap-1`,
+                children: [(0, U.jsx)(de, {
+                    "aria-hidden": `true`,
+                    className: `icon-sm shrink-0`
+                }), (0, U.jsx)(D, {
+                    ...W.title
+                })]
+            }), (0, U.jsxs)(`span`, {
+                className: `flex items-center gap-1`,
+                children: [(0, U.jsx)(me, {
+                    className: `icon-sm shrink-0`
+                }), (0, U.jsx)(Me, {
+                    model: r
+                })]
+            })]
+        })
+    }), t[15] = r, t[16] = x);
+    let C;
+    t[17] !== x || t[18] !== b ? (C = (0, U.jsxs)(`div`, {
+        className: `@w-sm/world-cup-banner:col-start-2 @w-sm/world-cup-banner:row-start-1 @w-sm/world-cup-banner:ms-6 @w-sm/world-cup-banner:me-2.5 @w-sm/world-cup-banner:mb-4 @w-sm/world-cup-banner:grid @w-sm/world-cup-banner:min-w-0 @w-sm/world-cup-banner:self-end @w-sm/world-cup-banner:grid-rows-[auto_auto] @w-sm/world-cup-banner:gap-y-2 contents`,
+        children: [b, x]
+    }), t[17] = x, t[18] = b, t[19] = C) : C = t[19];
+    let w = s ? Oe : ke,
+        T;
+    t[20] !== i || t[21] !== c ? (T = i.formatMessage(c), t[20] = i, t[21] = c, t[22] = T) : T = t[22];
+    let E;
+    t[23] !== n || t[24] !== a ? (E = () => {
+        ee(n, a)
+    }, t[23] = n, t[24] = a, t[25] = E) : E = t[25];
+    let O;
+    t[26] === c ? O = t[27] : (O = (0, U.jsx)(`span`, {
+        className: `@w-sm/world-cup-banner:inline hidden`,
+        children: (0, U.jsx)(D, {
+            ...c
+        })
+    }), t[26] = c, t[27] = O);
+    let k;
+    t[28] !== s || t[29] !== w || t[30] !== T || t[31] !== E || t[32] !== O ? (k = (0, U.jsx)(S, {
+        "aria-expanded": s,
+        className: `@w-sm/world-cup-banner:border-token-interactive-border-secondary-default! @w-sm/world-cup-banner:bg-token-interactive-bg-secondary-default! @w-sm/world-cup-banner:text-token-interactive-label-secondary-default! @w-sm/world-cup-banner:hover:border-token-interactive-border-secondary-hover! @w-sm/world-cup-banner:hover:bg-token-interactive-bg-secondary-hover! @w-sm/world-cup-banner:hover:text-token-interactive-label-secondary-hover! @w-sm/world-cup-banner:active:border-token-interactive-border-secondary-press! @w-sm/world-cup-banner:active:bg-token-interactive-bg-secondary-press! @w-sm/world-cup-banner:active:text-token-interactive-label-secondary-press! @w-sm/world-cup-banner:active:opacity-100! @w-sm/world-cup-banner:col-start-3 @w-sm/world-cup-banner:row-start-1 @w-sm/world-cup-banner:mb-2 @w-sm/world-cup-banner:h-auto @w-sm/world-cup-banner:min-h-9 @w-sm/world-cup-banner:w-auto @w-sm/world-cup-banner:self-end @w-sm/world-cup-banner:px-3 col-start-2 row-start-1 size-[35px] min-h-[35px] shrink-0 rounded-full border border-white/20 bg-white/5! px-0 text-sm font-medium whitespace-nowrap text-white hover:bg-white/10!`,
+        color: `custom`,
+        icon: w,
+        iconClassName: `icon-sm ms-0! @w-sm/world-cup-banner:-ms-0.5!`,
+        label: T,
+        onClick: E,
+        size: `medium`,
+        children: O
+    }), t[28] = s, t[29] = w, t[30] = T, t[31] = E, t[32] = O, t[33] = k) : k = t[33];
+    let A;
+    t[34] !== C || t[35] !== k ? (A = (0, U.jsxs)(`div`, {
+        className: `@w-sm/world-cup-banner:contents relative mt-[127px] min-w-0 flex-1`,
+        children: [y, (0, U.jsxs)(`div`, {
+            className: `@w-sm/world-cup-banner:contents relative grid h-full min-w-0 grid-cols-[1fr_auto] content-start gap-y-2 p-4`,
+            children: [C, k]
+        })]
+    }), t[34] = C, t[35] = k, t[36] = A) : A = t[36];
+    let M;
+    return t[37] !== A || t[38] !== g || t[39] !== v ? (M = (0, U.jsxs)(`section`, {
+        "aria-labelledby": `world-cup-banner-title`,
+        className: `after:ring-token-border-default bg-token-bg-tertiary dark:bg-token-bg-primary @w-sm/world-cup-banner:grid @w-sm/world-cup-banner:min-h-[106px] @w-sm/world-cup-banner:grid-cols-[auto_minmax(0,1fr)_auto] @w-sm/world-cup-banner:rounded-[28px] @w-sm/world-cup-banner:py-2 @w-sm/world-cup-banner:pe-4 @w-sm/world-cup-banner:ps-2 relative flex min-h-[218px] w-full flex-col overflow-hidden rounded-[24px] text-white after:pointer-events-none after:absolute after:inset-0 after:z-10 after:rounded-[inherit] after:ring-1 after:content-[''] after:ring-inset`,
+        children: [g, v, A]
+    }), t[37] = A, t[38] = g, t[39] = v, t[40] = M) : M = t[40], M
+}
+
+function Pe(e) {
+    let {
+        currentTarget: t
+    } = e;
+    je(t, se.wideBannerUrl)
+}
+var H, U, W, Fe = e((() => {
+    H = A(), a(), pe(), Ae(), ce(), re(), _(), p(), O(), N(), U = T(), W = E({
+        title: {
+            id: `chatgpt.football.banner.title`,
+            defaultMessage: `2026 World Cup`
+        },
+        countryTitle: {
+            id: `chatgpt.football.country.banner.title`,
+            defaultMessage: `{countryName} at the World Cup`
+        },
+        location: {
+            id: `chatgpt.football.banner.location`,
+            defaultMessage: `North America`
+        },
+        dates: {
+            id: `chatgpt.football.banner.dates`,
+            defaultMessage: `June 11 - July 19th, 2026`
+        },
+        viewMore: {
+            id: `chatgpt.football.banner.button.view_more.label`,
+            defaultMessage: `View more`
+        },
+        viewLess: {
+            id: `chatgpt.football.banner.button.view_less.label`,
+            defaultMessage: `View less`
+        },
+        group: {
+            id: `chatgpt.football.country.banner.state.label.group`,
+            defaultMessage: `Group {group}`
+        },
+        roundOf32: {
+            id: `chatgpt.football.country.banner.state.label.round_of_32`,
+            defaultMessage: `Round of 32`
+        },
+        roundOf16: {
+            id: `chatgpt.football.country.banner.state.label.round_of_16`,
+            defaultMessage: `Round of 16`
+        },
+        quarterfinal: {
+            id: `chatgpt.football.country.banner.state.label.quarterfinal`,
+            defaultMessage: `Quarterfinal`
+        },
+        semifinal: {
+            id: `chatgpt.football.country.banner.state.label.semifinal`,
+            defaultMessage: `Semifinal`
+        },
+        final: {
+            id: `chatgpt.football.country.banner.state.label.final`,
+            defaultMessage: `Final`
+        },
+        knockedOut: {
+            id: `chatgpt.football.country.banner.state.label.knocked_out`,
+            defaultMessage: `Knocked out`
+        },
+        runnerUp: {
+            id: `chatgpt.football.country.banner.state.label.runner_up`,
+            defaultMessage: `Runner-up`
+        },
+        champion: {
+            id: `chatgpt.football.country.banner.state.label.champion`,
+            defaultMessage: `Champion`
+        }
+    })
+}));
+
+function Ie(e) {
+    return e == null ? null : `${Le}/${e}.png`
+}
+var Le, Re = e((() => {
+    Le = `https://persistent.oaistatic.com/sonic/flags`
+}));
+
+function ze(e) {
+    "use forget";
+    let t = (0, Be.c)(12),
+        n, r, i, a;
+    t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4]) : ({
+        alt: n,
+        className: r,
+        flagCode: i,
+        ...a
+    } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a);
+    let o;
+    t[5] === i ? o = t[6] : (o = Ie(i), t[5] = i, t[6] = o);
+    let s = o;
+    if (s == null) return null;
+    let c;
+    return t[7] !== n || t[8] !== r || t[9] !== a || t[10] !== s ? (c = (0, Ve.jsx)(`img`, {
+        ...a,
+        alt: n,
+        className: r,
+        draggable: !1,
+        src: s
+    }), t[7] = n, t[8] = r, t[9] = a, t[10] = s, t[11] = c) : c = t[11], c
+}
+var Be, Ve, He = e((() => {
+    Be = A(), Re(), Ve = T()
+}));
+
+function Ue() {
+    try {
+        return g()
+    } catch {
+        return !1
+    }
+}
+
+function We(e) {
+    "use forget";
+    let t = (0, Ge.c)(8),
+        {
+            flagCode: n,
+            flagEmoji: r,
+            iconClassName: i,
+            emojiClassName: a,
+            testId: o
+        } = e;
+    if (Ue()) {
+        let e;
+        return t[0] !== n || t[1] !== i || t[2] !== o ? (e = (0, G.jsx)(ze, {
+            alt: ``,
+            className: i,
+            "data-testid": o,
+            flagCode: n
+        }), t[0] = n, t[1] = i, t[2] = o, t[3] = e) : e = t[3], e
+    }
+    if (r == null || r === ``) return null;
+    let s;
+    return t[4] !== a || t[5] !== r || t[6] !== o ? (s = (0, G.jsx)(`span`, {
+        "aria-hidden": !0,
+        className: a,
+        "data-testid": o,
+        children: r
+    }), t[4] = a, t[5] = r, t[6] = o, t[7] = s) : s = t[7], s
+}
+var Ge, G, Ke = e((() => {
+    Ge = A(), He(), o(), G = T()
+}));
+
+function qe(e) {
+    "use forget";
+    let t = (0, Ye.c)(4),
+        {
+            countryLinks: n
+        } = e,
+        r;
+    t[0] === n ? r = t[1] : (r = n.map(Je), t[0] = n, t[1] = r);
+    let i;
+    return t[2] === r ? i = t[3] : (i = (0, K.jsx)(`div`, {
+        className: `max-w-full min-w-0`,
+        children: (0, K.jsx)(`div`, {
+            className: `horizontal-scroll-fade-mask no-scrollbar flex max-w-full min-w-0 touch-pan-x flex-nowrap gap-2 overflow-x-auto overscroll-x-contain [--edge-fade-distance:1rem]`,
+            children: r
+        })
+    }), t[2] = r, t[3] = i), i
+}
+
+function Je(e) {
+    return (0, K.jsxs)(`a`, {
+        className: `${Xe} ${q}`,
+        href: n(`/football/${e.slug}/`),
+        children: [(0, K.jsx)(We, {
+            emojiClassName: `shrink-0 text-[18px] leading-5`,
+            flagCode: e.flagCode,
+            flagEmoji: e.flagEmoji,
+            iconClassName: `h-3.5 w-5 shrink-0 rounded-[2px] object-cover`,
+            testId: `world-cup-country-link-flag`
+        }), (0, K.jsx)(`span`, {
+            className: `shrink-0`,
+            children: (0, K.jsx)(D, {
+                ...e.displayName
+            })
+        })]
+    }, e.slug)
+}
+var Ye, K, Xe, q, Ze = e((() => {
+    Ye = A(), Ke(), d(), O(), K = T(), Xe = `btn relative h-9! min-h-9! shrink-0 gap-1 px-3! text-sm! leading-5! tracking-[-0.18px]! whitespace-nowrap active:opacity-100!`, q = `btn-secondary border-token-interactive-border-secondary-default! bg-token-interactive-bg-secondary-default! text-token-interactive-label-secondary-default! hover:border-token-interactive-border-secondary-hover! hover:bg-token-interactive-bg-secondary-hover! hover:text-token-interactive-label-secondary-hover! active:border-token-interactive-border-secondary-press! active:bg-token-interactive-bg-secondary-press! active:text-token-interactive-label-secondary-press!`
+}));
+
+function Qe(e) {
+    "use forget";
+    let t = (0, $e.c)(11),
+        {
+            conversation: n,
+            country: r,
+            countryLinks: i
+        } = e,
+        a;
+    t[0] === i ? a = t[1] : (a = i === void 0 ? [] : i, t[0] = i, t[1] = a);
+    let o = a,
+        s = o.length > 0,
+        c;
+    t[2] !== n || t[3] !== r ? (c = (0, J.jsx)(Ne, {
+        conversation: n,
+        country: r
+    }), t[2] = n, t[3] = r, t[4] = c) : c = t[4];
+    let l;
+    t[5] !== o || t[6] !== s ? (l = s && (0, J.jsx)(`div`, {
+        className: `mt-4`,
+        children: (0, J.jsx)(qe, {
+            countryLinks: o
+        })
+    }), t[5] = o, t[6] = s, t[7] = l) : l = t[7];
+    let u;
+    return t[8] !== c || t[9] !== l ? (u = (0, J.jsx)(oe, {
+        horizontalMargin: `none`,
+        horizontalPadding: `standard`,
+        verticalMargin: `none`,
+        children: (0, J.jsxs)(ie, {
+            className: `@container/world-cup-banner pb-4`,
+            children: [c, l]
+        })
+    }), t[8] = c, t[9] = l, t[10] = u) : u = t[10], u
+}
+var $e, J, et = e((() => {
+    $e = A(), Fe(), Ze(), ne(), J = T()
+}));
+
+function tt(e) {
+    "use forget";
+    let t = (0, rt.c)(30),
+        {
+            country: n,
+            countryLinks: i,
+            documentTitle: a
+        } = e,
+        o = (0, Y.use)(C),
+        c;
+    t[0] === o ? c = t[1] : (c = r(o), t[0] = o, t[1] = c);
+    let u = c,
+        d = he(u),
+        f;
+    t[2] === u.id ? f = t[3] : (f = () => ye(u.id), t[2] = u.id, t[3] = f);
+    let p = l(f),
+        m = d || p === `pending`,
+        h = n == null ? `football` : `country:${n.country.slug}`,
+        g = x(u.id, nt),
+        _ = (0, Y.useRef)(!1),
+        y = (0, Y.useRef)(void 0),
+        b, S;
+    t[4] === u.id ? (b = t[5], S = t[6]) : (b = () => (v(u.id, e => {
+        y.current === void 0 && (y.current = e.disableConversationNavigation), e.disableConversationNavigation = !0
+    }), () => {
+        let e = y.current;
+        y.current = void 0, v(u.id, t => {
+            t.disableConversationNavigation = e
+        })
+    }), S = [u.id], t[4] = u.id, t[5] = b, t[6] = S), (0, Y.useEffect)(b, S);
+    let w, T;
+    t[7] === u ? (w = t[8], T = t[9]) : (w = () => (_.current = !0, () => {
+        _.current = !1, queueMicrotask(() => {
+            _.current || ue(u)
+        })
+    }), T = [u], t[7] = u, t[8] = w, t[9] = T), (0, Y.useEffect)(w, T);
+    let E, D;
+    t[10] !== h || t[11] !== u || t[12] !== g || t[13] !== d ? (E = () => {
+        !d || !g || be(u, h)
+    }, D = [h, u, g, d], t[10] = h, t[11] = u, t[12] = g, t[13] = d, t[14] = E, t[15] = D) : (E = t[14], D = t[15]), s(E, D);
+    let O;
+    t[16] === n?.country.slug ? O = t[17] : (O = () => fe({
+        countrySlug: n?.country.slug
+    }), t[16] = n?.country.slug, t[17] = O);
+    let k;
+    t[18] !== u || t[19] !== n || t[20] !== i ? (k = (0, X.jsx)(Qe, {
+        conversation: u,
+        country: n,
+        countryLinks: i
+    }), t[18] = u, t[19] = n, t[20] = i, t[21] = k) : k = t[21];
+    let A;
+    t[22] === m ? A = t[23] : (A = m ? (0, X.jsx)(X.Fragment, {}) : void 0, t[22] = m, t[23] = A);
+    let j;
+    return t[24] !== u || t[25] !== a || t[26] !== O || t[27] !== k || t[28] !== A ? (j = (0, X.jsx)(ge, {
+        conversation: u,
+        disableInitialScroll: !0,
+        documentTitleOverride: a,
+        hideInstantAnswerMessageHeader: !0,
+        onComposerSubmit: O,
+        threadPrelude: k,
+        renderEmptyState: A
+    }, u.id), t[24] = u, t[25] = a, t[26] = O, t[27] = k, t[28] = A, t[29] = j) : j = t[29], j
+}
+
+function nt(e) {
+    return e != null
+}
+var rt, Y, X, it = e((() => {
+        rt = A(), h(), le(), ve(), N(), et(), b(), _e(), _(), f(), i(), Y = t(k()), X = T()
+    })),
+    Z, at, ot, st = e((() => {
+        O(), Z = `/football`, at = `${Z}/`, ot = E({
+            title: {
+                id: `chatgpt.football.page.meta.title.v2`,
+                defaultMessage: `2026 World Cup on ChatGPT | Scores, Schedules, Standings & Predictions`
+            },
+            description: {
+                id: `chatgpt.football.page.meta.description.v2`,
+                defaultMessage: `Follow the 2026 World Cup on ChatGPT with match updates, schedules, standings, team insights, predictions, and quick recaps.`
+            },
+            socialImageAlt: {
+                id: `chatgpt.football.page.meta.social_image_alt`,
+                defaultMessage: `Football fans cheering in a stadium at the World Cup`
+            },
+            socialBallImageAlt: {
+                id: `chatgpt.football.page.meta.social_ball_image_alt`,
+                defaultMessage: `A football with the ChatGPT logo in a stadium`
+            }
+        })
+    }));
+
+function ct(e) {
+    "use forget";
+    let t = (0, Q.c)(21),
+        {
+            imageAlt: n,
+            imageUrl: r,
+            url: i
+        } = e,
+        a;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, $.jsx)(`meta`, {
+        property: `og:type`,
+        content: `website`
+    }), t[0] = a) : a = t[0];
+    let o;
+    t[1] === i ? o = t[2] : (o = (0, $.jsx)(`meta`, {
+        property: `og:url`,
+        content: i
+    }), t[1] = i, t[2] = o);
+    let s;
+    t[3] === r ? s = t[4] : (s = (0, $.jsx)(`meta`, {
+        property: `og:image`,
+        content: r
+    }), t[3] = r, t[4] = s);
+    let c, l;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, $.jsx)(`meta`, {
+        property: `og:image:width`,
+        content: `786`
+    }), l = (0, $.jsx)(`meta`, {
+        property: `og:image:height`,
+        content: `442`
+    }), t[5] = c, t[6] = l) : (c = t[5], l = t[6]);
+    let u;
+    t[7] === n ? u = t[8] : (u = (0, $.jsx)(`meta`, {
+        property: `og:image:alt`,
+        content: n
+    }), t[7] = n, t[8] = u);
+    let d, f;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, $.jsx)(`meta`, {
+        name: `twitter:card`,
+        content: `summary_large_image`
+    }), f = (0, $.jsx)(`meta`, {
+        name: `twitter:site`,
+        content: `@ChatGPTapp`
+    }), t[9] = d, t[10] = f) : (d = t[9], f = t[10]);
+    let p;
+    t[11] === r ? p = t[12] : (p = (0, $.jsx)(`meta`, {
+        name: `twitter:image`,
+        content: r
+    }), t[11] = r, t[12] = p);
+    let m;
+    t[13] === n ? m = t[14] : (m = (0, $.jsx)(`meta`, {
+        name: `twitter:image:alt`,
+        content: n
+    }), t[13] = n, t[14] = m);
+    let h;
+    return t[15] !== m || t[16] !== o || t[17] !== s || t[18] !== u || t[19] !== p ? (h = (0, $.jsxs)($.Fragment, {
+        children: [a, o, s, c, l, u, d, f, p, m]
+    }), t[15] = m, t[16] = o, t[17] = s, t[18] = u, t[19] = p, t[20] = h) : h = t[20], h
+}
+var Q, $, lt = e((() => {
+    Q = A(), $ = T()
+}));
+export {
+    at as a, it as c, Z as i, lt as n, st as o, ot as r, tt as s, ct as t
+};
 //# sourceMappingURL=149f6b4a-b82ha2tgvby6loal.js.map

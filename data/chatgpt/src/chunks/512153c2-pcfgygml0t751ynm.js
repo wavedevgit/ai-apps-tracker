@@ -1,0 +1,96 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    EP as t,
+    Get as n,
+    Qet as r,
+    S5 as i,
+    Tc as a,
+    VZ as o,
+    _tt as s,
+    g8 as c,
+    tQ as l,
+    ttt as u,
+    wc as d,
+    xP as f
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    Adt as p,
+    Gyn as m,
+    Odt as h,
+    Sbn as g,
+    Tbn as _,
+    Yyn as v,
+    kdt as y
+} from "./conversation-small-nmt18uiom3b14vca.js";
+import {
+    Am as b,
+    km as x
+} from "./8b34dbc2-ojcl97ddvu2212q0.js";
+async function S({
+    conversation: e,
+    image: t,
+    onAfterOptimisticThreadUpdate: a,
+    shopThisLookPrompt: s
+}) {
+    let c = await w(t),
+        l = i(() => d(e)) ?? {
+            kind: n.PrimaryAssistant
+        },
+        u = i(() => C(e));
+    await b({
+        callsiteId: `request_completion.shopping.shop_this_look.1`,
+        conversation: e,
+        eventSource: `mouse`,
+        promptMessage: o({
+            content_type: r.MultimodalText,
+            parts: [c, s]
+        }, {
+            is_shop_this_look: !0
+        }),
+        ...u == null ? {} : {
+            requestedModelId: u
+        },
+        thinkingEffort: `standard`,
+        extraStreamParams: {
+            forceUseSearch: !0
+        },
+        completionMetadata: {
+            conversationMode: l
+        },
+        callbacks: {
+            onAfterOptimisticThreadUpdate: a
+        }
+    })
+}
+
+function C(e) {
+    let n = m(e),
+        r = t();
+    return [g(n, u.THINKING), g(n, u.THINKING_MINI)].find(e => e != null && !r.some(t => t.model_slug === e))
+}
+async function w(e) {
+    let t;
+    for (let n of T(e)) try {
+        return await h({
+            imageUrl: n,
+            uploadSource: E
+        })
+    } catch (e) {
+        t = e
+    }
+    throw t ?? Error(`shop_this_look_image_import_failed`)
+}
+
+function T(e) {
+    let t = e.is_proxied_image ? e.url : e.content_url;
+    return [...new Set([t, e.thumbnail_url])].map(p)
+}
+var E, D = e((() => {
+    s(), x(), a(), y(), _(), v(), c(), f(), l(), E = `shop_this_look`
+}));
+export {
+    D as n, S as r, w as t
+};
+//# sourceMappingURL=512153c2-pcfgygml0t751ynm.js.map

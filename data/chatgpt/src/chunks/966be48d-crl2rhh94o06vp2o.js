@@ -1,0 +1,46 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    X5 as t,
+    Y5 as n
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    Bn as r,
+    wn as i
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+var a, o, s, c = e((() => {
+    a = i(), t(), o = r(), s = e => {
+        "use forget";
+        let t = (0, a.c)(9),
+            {
+                children: r,
+                className: i
+            } = e,
+            s;
+        t[0] === i ? s = t[1] : (s = n(`grid grid-cols-[1fr_max-content_1fr] items-center dark:text-gray-500`, `my-2`, i), t[0] = i, t[1] = s);
+        let c;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, o.jsx)(`div`, {
+            className: `h-px bg-[var(--border-heavy)]`
+        }), t[2] = c) : c = t[2];
+        let l;
+        t[3] === r ? l = t[4] : (l = (0, o.jsx)(`div`, {
+            className: `mx-6 text-[13px] font-medium uppercase`,
+            children: r
+        }), t[3] = r, t[4] = l);
+        let u;
+        t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, o.jsx)(`div`, {
+            className: `h-px bg-[var(--border-heavy)]`,
+            "gray-500": !0
+        }), t[5] = u) : u = t[5];
+        let d;
+        return t[6] !== s || t[7] !== l ? (d = (0, o.jsxs)(`div`, {
+            className: s,
+            children: [c, l, u]
+        }), t[6] = s, t[7] = l, t[8] = d) : d = t[8], d
+    }
+}));
+export {
+    c as n, s as t
+};
+//# sourceMappingURL=966be48d-crl2rhh94o06vp2o.js.map

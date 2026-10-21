@@ -1,0 +1,299 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    BU as n,
+    zU as r
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    Bn as i,
+    Ln as a,
+    Rn as o,
+    Vn as s,
+    p as c,
+    s as l,
+    wn as u,
+    zn as d
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $Rt as f,
+    DHt as p,
+    QRt as m,
+    czt as h,
+    ozt as g
+} from "./conversation-small-nmt18uiom3b14vca.js";
+import {
+    _t as _
+} from "./1c919af1-n3qwx9w7ipxrf1ap.js";
+import {
+    d as v,
+    t as y
+} from "./707eab0c-fwyop6b3ijt0i6j7.js";
+import {
+    t as b
+} from "./a35abcd6-fl6iafxr1mqknzi0.js";
+import {
+    a as x,
+    f as S,
+    o as C,
+    s as w,
+    t as T,
+    x as E
+} from "./4285e798-d12vw91yd8v2awo6.js";
+import {
+    t as D
+} from "./500b4410-qh7czvfio52gphel.js";
+import {
+    t as O
+} from "./500b4410-ffz830dib8mnubkz.js";
+import {
+    n as k,
+    t as A
+} from "./14bfa043-j099hvf56gfathms.js";
+var j, M, N, P, F, I = e((() => {
+        j = `-BM_JW_BreadcrumbLink`, M = `-BM_JW_FileName`, N = `-BM_JW_FileNameMeasure`, P = `-BM_JW_FileNameStem`, F = {
+            BreadcrumbLink: j,
+            FileName: M,
+            FileNameMeasure: N,
+            FileNameStem: P
+        }
+    })),
+    L, R, z, B, V, H, U, W, G = e((() => {
+        L = u(), O(), R = t(s()), o(), I(), z = i(), B = e => {
+            "use forget";
+            let t = (0, L.c)(22),
+                {
+                    rootUrl: n,
+                    rootLabel: r,
+                    node: i
+                } = e,
+                a = d(),
+                o, s, c, l;
+            if (t[0] !== a || t[1] !== i.recursive_parents || t[2] !== r || t[3] !== n) {
+                let [, ...e] = i.recursive_parents ?? [];
+                o = `text-tertiary flex flex-wrap gap-1 text-xs`, t[8] === a ? s = t[9] : (s = a.formatMessage(W.pathLabel), t[8] = a, t[9] = s), t[10] !== r || t[11] !== n ? (c = (0, z.jsx)(D, {
+                    color: `tertiary`,
+                    underline: `hover`,
+                    to: n,
+                    children: r
+                }), t[10] = r, t[11] = n, t[12] = c) : c = t[12], l = e.map((t, r) => (0, z.jsxs)(R.Fragment, {
+                    children: [(0, z.jsx)(`span`, {
+                        children: `/`
+                    }), (0, z.jsx)(D, {
+                        color: `tertiary`,
+                        underline: `hover`,
+                        to: `${n}/${t.id}`,
+                        className: F.BreadcrumbLink,
+                        title: t.name,
+                        children: r < e.length - 1 ? U : t.name
+                    })]
+                }, t.id)), t[0] = a, t[1] = i.recursive_parents, t[2] = r, t[3] = n, t[4] = o, t[5] = s, t[6] = c, t[7] = l
+            } else o = t[4], s = t[5], c = t[6], l = t[7];
+            let u;
+            t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, z.jsx)(`span`, {
+                children: `/`
+            }), t[13] = u) : u = t[13];
+            let f;
+            t[14] === i.name ? f = t[15] : (f = (0, z.jsx)(V, {
+                name: i.name
+            }), t[14] = i.name, t[15] = f);
+            let p;
+            return t[16] !== o || t[17] !== s || t[18] !== c || t[19] !== l || t[20] !== f ? (p = (0, z.jsxs)(`nav`, {
+                className: o,
+                "aria-label": s,
+                children: [c, l, u, f]
+            }), t[16] = o, t[17] = s, t[18] = c, t[19] = l, t[20] = f, t[21] = p) : p = t[21], p
+        }, V = e => {
+            "use forget";
+            let t = (0, L.c)(22),
+                {
+                    name: n
+                } = e,
+                r = (0, R.useRef)(null),
+                i = (0, R.useRef)(null),
+                [a, o] = (0, R.useState)(!1),
+                s;
+            t[0] === n ? s = t[1] : (s = H(n), t[0] = n, t[1] = s);
+            let {
+                extension: c,
+                stem: l
+            } = s, u;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (u = () => {
+                let e = r.current,
+                    t = i.current;
+                if (e == null || t == null) return;
+                let n = () => {
+                    o(t.offsetWidth > e.clientWidth)
+                };
+                n();
+                let a = new ResizeObserver(n);
+                return a.observe(e), () => {
+                    a.disconnect()
+                }
+            }, t[2] = u) : u = t[2];
+            let d;
+            if (t[3] === n ? d = t[4] : (d = [n], t[3] = n, t[4] = d), (0, R.useEffect)(u, d), c.length === 0) {
+                let e;
+                return t[5] === l ? e = t[6] : (e = (0, z.jsx)(`span`, {
+                    className: `max-w-[280px] truncate`,
+                    children: l
+                }), t[5] = l, t[6] = e), e
+            }
+            let f = a ? !0 : void 0,
+                p;
+            t[7] === l ? p = t[8] : (p = (0, z.jsx)(`span`, {
+                className: F.FileNameStem,
+                children: l
+            }), t[7] = l, t[8] = p);
+            let m;
+            t[9] === a ? m = t[10] : (m = a && (0, z.jsx)(`span`, {
+                "aria-hidden": !0,
+                children: U
+            }), t[9] = a, t[10] = m);
+            let h;
+            t[11] === c ? h = t[12] : (h = c && (0, z.jsx)(`span`, {
+                children: c
+            }), t[11] = c, t[12] = h);
+            let g;
+            t[13] === n ? g = t[14] : (g = (0, z.jsx)(`span`, {
+                ref: i,
+                className: F.FileNameMeasure,
+                "aria-hidden": !0,
+                children: n
+            }), t[13] = n, t[14] = g);
+            let _;
+            return t[15] !== n || t[16] !== f || t[17] !== p || t[18] !== m || t[19] !== h || t[20] !== g ? (_ = (0, z.jsxs)(`span`, {
+                ref: r,
+                className: F.FileName,
+                "data-truncated": f,
+                title: n,
+                children: [p, m, h, g]
+            }), t[15] = n, t[16] = f, t[17] = p, t[18] = m, t[19] = h, t[20] = g, t[21] = _) : _ = t[21], _
+        }, H = e => {
+            let t = e.lastIndexOf(`.`);
+            return t <= 0 || t === e.length - 1 ? {
+                stem: e,
+                extension: ``
+            } : {
+                stem: e.slice(0, t),
+                extension: e.slice(t)
+            }
+        }, U = `...`, W = a({
+            pathLabel: {
+                id: `Hermes.GptStudio.Builder.FileBreadcrumbs.pathLabel`,
+                defaultMessage: `Path`
+            }
+        })
+    }));
+
+function K(e) {
+    return e.kind === `folder` ? S.FOLDER : S.FILE
+}
+var q, J, Y, X = e((() => {
+    k(), T(), f(), n(), y(), b(), l(), o(), h(), q = i(), J = ({
+        gptId: e,
+        node: t,
+        skillId: n,
+        versionId: i
+    }) => {
+        "use no forget";
+        let a = d(),
+            o = c({
+                mutationFn: async () => {
+                    if (e == null) throw Error(`Missing agent id`);
+                    let r = p(),
+                        a = {
+                            fileNodeId: t.id,
+                            parentFileNodeId: t.parent_node_id ?? void 0,
+                            fileKind: K(t)
+                        };
+                    x({
+                        actionType: C.FILE_DOWNLOAD,
+                        actionResult: w.STARTED,
+                        actionInstanceId: r.actionInstanceId,
+                        source: E.FILES_DETAIL,
+                        agentId: e,
+                        file: a,
+                        ...n == null ? {} : {
+                            skill: {
+                                skillId: n
+                            }
+                        }
+                    });
+                    try {
+                        A((n == null ? await g({
+                            gptId: e,
+                            versionId: i,
+                            nodeId: t.id,
+                            download: !0
+                        }) : await m({
+                            gptId: e,
+                            skillId: n,
+                            versionId: i,
+                            nodeId: t.id,
+                            download: !0
+                        })).download_url, t.name), x({
+                            actionType: C.FILE_DOWNLOAD,
+                            actionResult: w.SUCCEEDED,
+                            source: E.FILES_DETAIL,
+                            agentId: e,
+                            file: a,
+                            request: r(),
+                            ...n == null ? {} : {
+                                skill: {
+                                    skillId: n
+                                }
+                            }
+                        })
+                    } catch (t) {
+                        throw x({
+                            actionType: C.FILE_DOWNLOAD,
+                            actionResult: w.FAILED,
+                            source: E.FILES_DETAIL,
+                            agentId: e,
+                            file: a,
+                            request: r({
+                                error: t
+                            }),
+                            ...n == null ? {} : {
+                                skill: {
+                                    skillId: n
+                                }
+                            }
+                        }), t
+                    }
+                },
+                onError: () => {
+                    r().danger(a.formatMessage(Y.downloadFileFailed))
+                }
+            });
+        return e == null || t.upload_status === `pending` ? null : (0, q.jsx)(v, {
+            "aria-label": a.formatMessage(Y.downloadFileLabel, {
+                fileName: t.name
+            }),
+            color: `primary`,
+            loading: o.isPending,
+            onClick: () => o.mutate(),
+            pill: !0,
+            size: `lg`,
+            iconSize: `lg`,
+            uniform: !0,
+            variant: `ghost`,
+            children: (0, q.jsx)(_, {})
+        })
+    }, Y = a({
+        downloadFileLabel: {
+            id: `Hermes.GptStudio.Builder.FileDownloadButton.downloadFileLabel`,
+            defaultMessage: `Download {fileName}`
+        },
+        downloadFileFailed: {
+            id: `Hermes.GptStudio.Builder.FileDownloadButton.downloadFileFailed`,
+            defaultMessage: `Couldn’t download this file.`
+        }
+    })
+}));
+export {
+    G as i, X as n, B as r, J as t
+};
+//# sourceMappingURL=e7105c78-d4b00qjt2vhb6s9m.js.map

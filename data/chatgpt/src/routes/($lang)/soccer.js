@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{o as t,s as n}from"./4813494d-bo7e0c29ngt4zgx0.js";import{Ht as r,Q as i,Ut as a}from"./2340486e-i7pjxgdhv0bs6apg.js";var o,s,c=e((()=>{i(),n(),o=r(function(){"use forget";return null}),s=a(t)}));e((()=>{c()}))();export{s as ErrorBoundary,o as default};
-//# sourceMappingURL=(_lang).soccer-k5yyh77r.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{o as t,s as n}from"./4813494d-tap9fxyhk4ehe0bs.js";import{Ht as r,Q as i,Ut as a}from"./2340486e-i7pjxgdhv0bs6apg.js";var o,s,c=e((()=>{i(),n(),o=r(function(){"use forget";return null}),s=a(t)}));e((()=>{c()}))();export{s as ErrorBoundary,o as default};
+//# sourceMappingURL=(_lang).soccer-eniiboa1.js.map

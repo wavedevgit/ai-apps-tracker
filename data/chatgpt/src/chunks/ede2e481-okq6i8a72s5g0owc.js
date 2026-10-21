@@ -1,2 +1,229 @@
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{A1 as r,Cm as i,Dat as a,I1 as o,L7 as s,M1 as c,N7 as l,Nat as u,RU as d,Zrt as f,bm as p,gm as m,zU as h}from"./4813494d-qsuygr73qjc6rh65.js";import{Hn as g,Pn as _,zn as v}from"./2340486e-komxp8tzs51ny4jj.js";import{A9t as y,BOt as b,DEt as x,FOt as S,GOt as C,JOt as w,OEt as T,QOt as E,UOt as D,YOt as O,b9t as k,kEt as A,nen as j,qHt as M,qOt as N,tUt as P,ten as F,vPt as I,xPt as L}from"./conversation-small-cawdu7il3ha6y70c.js";import{i as R,r as z}from"./181180d3-hqssxnzxqba14p2l.js";var B=t({LIBRARY_SHARE_FILE_ID_QUERY_PARAM:()=>Y,getLibraryShareLink:()=>H,openNativeLibrarySharing:()=>V,resolveLibraryShareLinkArtifact:()=>q});function V({libraryFileId:e,resourceKind:t,sharingEntryId:n,sharingCanManage:i}){if(n==null)return!1;if(i===!1)return!0;if(!j())return!1;let a=r()??c();if(e!=null&&a!=null){let n=H({libraryFileId:e,resourceKind:t,workspaceId:a.getWorkspaceId()});n.searchParams.set(`native_sharing`,`1`),n.searchParams.set(`open_sharing`,`1`);let r=window.open(n.href,`_blank`);r!=null&&!r.closed?r.opener=null:d().notify(R.nativePopupBlocked,{id:`native-library-sharing-popup-blocked`,duration:0,hasCloseButton:!0,action:(0,J.createElement)(`a`,{href:n.href,target:`_blank`,rel:`noopener noreferrer`,className:`underline`},(0,J.createElement)(_,R.nativePopupOpen))})}return!0}function H({libraryFileId:e,resourceKind:t,sharedDirectoryId:n,workspaceId:r}){let a=i(n)?n:null,o=t===`folder`?C(a==null?e:E(a)?.rootDirectoryId??e,e):a,s=o==null?`/library`:S(`/library`,o),c=t===`file`&&O(e)&&(o==null||s.startsWith(`/library/share/`)),l=new URL(c?N(`/library`,e,o==null?null:s):s,window.location.origin);return t===`file`&&!c&&l.searchParams.set(Y,e),l.searchParams.set(`account_id`,r??`personal`),l}async function U(e,t){let n=null;do{t.throwIfAborted();let r=await k({cursor:n,includeHiddenFiles:!0,includeSavedEntities:!0,limit:X});t.throwIfAborted();let i=r.items.find(t=>t.id===e);if(i!=null){let e=I({...i,kind:`file`,name:i.file_name,parent_directory_id:i.directory_id??null});if(e!=null)return{artifact:e}}if(r.cursor==null||r.cursor===n)break;n=r.cursor}while(n!=null);throw new Z(`Library file ${e} was not found.`)}async function W(e,t,n){let r=null;do{t.throwIfAborted();let i=await M({parentDirectoryId:n,cursor:r,includeHiddenFiles:!0});t.throwIfAborted();let a=i.items.find(t=>t.kind===`file`&&t.id===e);if(a!=null){let t=I(a);if(t!=null)return{artifact:t,sharedLibraryFileId:e}}if(i.cursor==null||i.cursor===r)break;r=i.cursor}while(r!=null);throw new Z(`Shared Library file ${e} was not found.`)}function G(e,t){return typeof e==`object`&&!!e&&!Array.isArray(e)&&`kind`in e&&e.kind===`file`&&`id`in e&&e.id===t&&(!(`canonical_file_id`in e)||e.canonical_file_id==null||typeof e.canonical_file_id==`string`&&!/^libfile_fde[123]_/.test(t)&&O(e.canonical_file_id)&&/^libfile_fde[123]_/.test(e.canonical_file_id))&&`name`in e&&typeof e.name==`string`&&`is_shared`in e&&e.is_shared===!0&&`parent_directory_id`in e&&e.parent_directory_id===`library:collection:shared-with-me`}async function K(e,t){let n=r()??c(),i=n?.normalizedAccountUserId;if(n==null||i==null)throw Error(`Shared Library read account is unavailable.`);let a={accountId:n.id,accountUserId:i,libraryFileId:e},o=T(a,t);t.throwIfAborted();let s=await l.safeGet(`/files/library/files/{library_file_id}/node`,{...o,parameters:{path:{library_file_id:e}},skipJsonTransform:!0});t.throwIfAborted(),x(a);let u=await s.json();if(t.throwIfAborted(),x(a),!G(u,e))throw Error(`Invalid shared Library file response.`);let d=u.canonical_file_id==null?u:{...u,id:u.canonical_file_id},f=I(d);if(f==null)throw Error(`Shared Library file ${e} could not be opened.`);return{artifact:f,sharedLibraryFileId:d.id}}async function q(e,t){let n=new AbortController,o=()=>n.abort();t?.aborted?o():t?.addEventListener(`abort`,o,{once:!0});try{let t=D(window.location.pathname).directoryId,o=i(t)?[t,m]:[m],s=r()??c(),l=s?.normalizedAccountUserId==null?void 0:{accountId:s.id,accountUserId:s.normalizedAccountUserId,libraryFileId:e},u=o.length===1?K(e,n.signal):void 0;try{return await Promise.any([U(e,n.signal),...o.map(t=>W(e,n.signal,t)),...u==null?[]:[u]])}catch(t){n.signal.throwIfAborted(),l!=null&&x(l);try{return await K(e,n.signal)}catch(e){throw(t instanceof AggregateError?t.errors.find(e=>!(e instanceof Z)&&(!(e instanceof a)||![403,404].includes(e.status))):void 0)??e}}}finally{t?.removeEventListener(`abort`,o),n.abort()}}var J,Y,X,Z,Q=e((()=>{y(),f(),L(),P(),b(),A(),w(),p(),o(),u(),s(),h(),z(),J=n(g()),v(),F(),Y=`file_id`,X=100,Z=class extends Error{}}));export{V as a,B as i,H as n,q as o,Q as r,Y as t};
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as r,
+    Cm as i,
+    Dat as a,
+    I1 as o,
+    L7 as s,
+    M1 as c,
+    N7 as l,
+    Nat as u,
+    RU as d,
+    Zrt as f,
+    bm as p,
+    gm as m,
+    zU as h
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Hn as g,
+    Pn as _,
+    zn as v
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    A9t as y,
+    BOt as b,
+    DEt as x,
+    FOt as S,
+    GOt as C,
+    JOt as w,
+    OEt as T,
+    QOt as E,
+    UOt as D,
+    YOt as O,
+    b9t as k,
+    kEt as A,
+    nen as j,
+    qHt as M,
+    qOt as N,
+    tUt as P,
+    ten as F,
+    vPt as I,
+    xPt as L
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    i as R,
+    r as z
+} from "./181180d3-hqssxnzxqba14p2l.js";
+var B = t({
+    LIBRARY_SHARE_FILE_ID_QUERY_PARAM: () => Y,
+    getLibraryShareLink: () => H,
+    openNativeLibrarySharing: () => V,
+    resolveLibraryShareLinkArtifact: () => q
+});
+
+function V({
+    libraryFileId: e,
+    resourceKind: t,
+    sharingEntryId: n,
+    sharingCanManage: i
+}) {
+    if (n == null) return !1;
+    if (i === !1) return !0;
+    if (!j()) return !1;
+    let a = r() ?? c();
+    if (e != null && a != null) {
+        let n = H({
+            libraryFileId: e,
+            resourceKind: t,
+            workspaceId: a.getWorkspaceId()
+        });
+        n.searchParams.set(`native_sharing`, `1`), n.searchParams.set(`open_sharing`, `1`);
+        let r = window.open(n.href, `_blank`);
+        r != null && !r.closed ? r.opener = null : d().notify(R.nativePopupBlocked, {
+            id: `native-library-sharing-popup-blocked`,
+            duration: 0,
+            hasCloseButton: !0,
+            action: (0, J.createElement)(`a`, {
+                href: n.href,
+                target: `_blank`,
+                rel: `noopener noreferrer`,
+                className: `underline`
+            }, (0, J.createElement)(_, R.nativePopupOpen))
+        })
+    }
+    return !0
+}
+
+function H({
+    libraryFileId: e,
+    resourceKind: t,
+    sharedDirectoryId: n,
+    workspaceId: r
+}) {
+    let a = i(n) ? n : null,
+        o = t === `folder` ? C(a == null ? e : E(a)?.rootDirectoryId ?? e, e) : a,
+        s = o == null ? `/library` : S(`/library`, o),
+        c = t === `file` && O(e) && (o == null || s.startsWith(`/library/share/`)),
+        l = new URL(c ? N(`/library`, e, o == null ? null : s) : s, window.location.origin);
+    return t === `file` && !c && l.searchParams.set(Y, e), l.searchParams.set(`account_id`, r ?? `personal`), l
+}
+async function U(e, t) {
+    let n = null;
+    do {
+        t.throwIfAborted();
+        let r = await k({
+            cursor: n,
+            includeHiddenFiles: !0,
+            includeSavedEntities: !0,
+            limit: X
+        });
+        t.throwIfAborted();
+        let i = r.items.find(t => t.id === e);
+        if (i != null) {
+            let e = I({
+                ...i,
+                kind: `file`,
+                name: i.file_name,
+                parent_directory_id: i.directory_id ?? null
+            });
+            if (e != null) return {
+                artifact: e
+            }
+        }
+        if (r.cursor == null || r.cursor === n) break;
+        n = r.cursor
+    } while (n != null);
+    throw new Z(`Library file ${e} was not found.`)
+}
+async function W(e, t, n) {
+    let r = null;
+    do {
+        t.throwIfAborted();
+        let i = await M({
+            parentDirectoryId: n,
+            cursor: r,
+            includeHiddenFiles: !0
+        });
+        t.throwIfAborted();
+        let a = i.items.find(t => t.kind === `file` && t.id === e);
+        if (a != null) {
+            let t = I(a);
+            if (t != null) return {
+                artifact: t,
+                sharedLibraryFileId: e
+            }
+        }
+        if (i.cursor == null || i.cursor === r) break;
+        r = i.cursor
+    } while (r != null);
+    throw new Z(`Shared Library file ${e} was not found.`)
+}
+
+function G(e, t) {
+    return typeof e == `object` && !!e && !Array.isArray(e) && `kind` in e && e.kind === `file` && `id` in e && e.id === t && (!(`canonical_file_id` in e) || e.canonical_file_id == null || typeof e.canonical_file_id == `string` && !/^libfile_fde[123]_/.test(t) && O(e.canonical_file_id) && /^libfile_fde[123]_/.test(e.canonical_file_id)) && `name` in e && typeof e.name == `string` && `is_shared` in e && e.is_shared === !0 && `parent_directory_id` in e && e.parent_directory_id === `library:collection:shared-with-me`
+}
+async function K(e, t) {
+    let n = r() ?? c(),
+        i = n?.normalizedAccountUserId;
+    if (n == null || i == null) throw Error(`Shared Library read account is unavailable.`);
+    let a = {
+            accountId: n.id,
+            accountUserId: i,
+            libraryFileId: e
+        },
+        o = T(a, t);
+    t.throwIfAborted();
+    let s = await l.safeGet(`/files/library/files/{library_file_id}/node`, {
+        ...o,
+        parameters: {
+            path: {
+                library_file_id: e
+            }
+        },
+        skipJsonTransform: !0
+    });
+    t.throwIfAborted(), x(a);
+    let u = await s.json();
+    if (t.throwIfAborted(), x(a), !G(u, e)) throw Error(`Invalid shared Library file response.`);
+    let d = u.canonical_file_id == null ? u : {
+            ...u,
+            id: u.canonical_file_id
+        },
+        f = I(d);
+    if (f == null) throw Error(`Shared Library file ${e} could not be opened.`);
+    return {
+        artifact: f,
+        sharedLibraryFileId: d.id
+    }
+}
+async function q(e, t) {
+    let n = new AbortController,
+        o = () => n.abort();
+    t?.aborted ? o() : t?.addEventListener(`abort`, o, {
+        once: !0
+    });
+    try {
+        let t = D(window.location.pathname).directoryId,
+            o = i(t) ? [t, m] : [m],
+            s = r() ?? c(),
+            l = s?.normalizedAccountUserId == null ? void 0 : {
+                accountId: s.id,
+                accountUserId: s.normalizedAccountUserId,
+                libraryFileId: e
+            },
+            u = o.length === 1 ? K(e, n.signal) : void 0;
+        try {
+            return await Promise.any([U(e, n.signal), ...o.map(t => W(e, n.signal, t)), ...u == null ? [] : [u]])
+        } catch (t) {
+            n.signal.throwIfAborted(), l != null && x(l);
+            try {
+                return await K(e, n.signal)
+            } catch (e) {
+                throw (t instanceof AggregateError ? t.errors.find(e => !(e instanceof Z) && (!(e instanceof a) || ![403, 404].includes(e.status))) : void 0) ?? e
+            }
+        }
+    } finally {
+        t?.removeEventListener(`abort`, o), n.abort()
+    }
+}
+var J, Y, X, Z, Q = e((() => {
+    y(), f(), L(), P(), b(), A(), w(), p(), o(), u(), s(), h(), z(), J = n(g()), v(), F(), Y = `file_id`, X = 100, Z = class extends Error {}
+}));
+export {
+    V as a, B as i, H as n, q as o, Q as r, Y as t
+};
 //# sourceMappingURL=ede2e481-okq6i8a72s5g0owc.js.map

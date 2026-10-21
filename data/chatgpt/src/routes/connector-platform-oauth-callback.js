@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,t as n}from"./e590b368-kfxzj0a76si37ufv.js";var r=e((()=>{t()}));e((()=>{r()}))();export{n as default};
-//# sourceMappingURL=connector-platform-oauth-callback-kz5cmapv.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,t as n}from"./e590b368-mzqxnni7ze2prwqq.js";var r=e((()=>{t()}));e((()=>{r()}))();export{n as default};
+//# sourceMappingURL=connector-platform-oauth-callback-i4c339kx.js.map
