@@ -1,0 +1,60 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Dq as t,
+    Lq as n,
+    Mq as r,
+    Nq as i
+} from "./4813494d-lxa3wniynbx9ka2a.js";
+import {
+    CZ as a,
+    F2 as o,
+    I2 as s,
+    P2 as c,
+    SZ as l,
+    U5 as u,
+    W5 as d
+} from "./conversation-small-kzsalymynzuddxee.js";
+
+function f(e) {
+    return o(e) || n(e) && r(e) === h
+}
+
+function p(e) {
+    return e === t.PictureV2 || f(e)
+}
+
+function m(e, n) {
+    let r = e.filter(e => a(e, n)),
+        i = u(r),
+        o = s(i, `document`)?.systemHint,
+        c = s(i, `presentation`)?.systemHint,
+        l = s(i, `spreadsheet`)?.systemHint,
+        d = s(i, `site`)?.systemHint,
+        f = r.find(e => e.systemHint === t.PictureV2)?.systemHint;
+    return {
+        ...o == null ? {} : {
+            document: o
+        },
+        ...f == null ? {} : {
+            image: f
+        },
+        ...c == null ? {} : {
+            powerpoint: c
+        },
+        ...d == null ? {} : {
+            site: d
+        },
+        ...l == null ? {} : {
+            spreadsheet: l
+        }
+    }
+}
+var h, g = e((() => {
+    c(), l(), d(), i(), h = `visualize`
+}));
+export {
+    m as i, f as n, p as r, g as t
+};
+//# sourceMappingURL=accdf855-br1el2rv3xuchueu.js.map

@@ -1,2 +1,54 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{BU as t,HU as n,JT as r,YT as i,oC as a,sC as o}from"./4813494d-bo7e0c29ngt4zgx0.js";import{Bn as s}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Ky as c,qy as l}from"./30901919-e8h11sw136qen6v0.js";var u,d,f=e((()=>{i(),l(),t(),o(),u=s(),d=({label:e,value:t,onCopied:i,tooltip:o})=>{let s=n(),l=e=>{a(t,s,e),i()};return(0,u.jsxs)(`div`,{className:`flex flex-col space-y-2`,children:[e!==void 0&&(0,u.jsx)(`label`,{className:`font-semibold`,children:e}),(0,u.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,u.jsx)(`div`,{onClick:l,className:`bg-token-main-surface-tertiary text-token-text-primary w-full cursor-pointer rounded-lg px-4 py-2 font-mono text-sm break-all`,title:o,children:t}),(0,u.jsx)(r,{color:`ghost`,onClick:l,icon:c})]})]})}}));export{f as n,d as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    BU as t,
+    HU as n,
+    JT as r,
+    YT as i,
+    oC as a,
+    sC as o
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+import {
+    Bn as s
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Ky as c,
+    qy as l
+} from "./30901919-e8h11sw136qen6v0.js";
+var u, d, f = e((() => {
+    i(), l(), t(), o(), u = s(), d = ({
+        label: e,
+        value: t,
+        onCopied: i,
+        tooltip: o
+    }) => {
+        let s = n(),
+            l = e => {
+                a(t, s, e), i()
+            };
+        return (0, u.jsxs)(`div`, {
+            className: `flex flex-col space-y-2`,
+            children: [e !== void 0 && (0, u.jsx)(`label`, {
+                className: `font-semibold`,
+                children: e
+            }), (0, u.jsxs)(`div`, {
+                className: `flex items-center gap-2`,
+                children: [(0, u.jsx)(`div`, {
+                    onClick: l,
+                    className: `bg-token-main-surface-tertiary text-token-text-primary w-full cursor-pointer rounded-lg px-4 py-2 font-mono text-sm break-all`,
+                    title: o,
+                    children: t
+                }), (0, u.jsx)(r, {
+                    color: `ghost`,
+                    onClick: l,
+                    icon: c
+                })]
+            })]
+        })
+    }
+}));
+export {
+    f as n, d as t
+};
 //# sourceMappingURL=b129bf1f-i7bqqs4h7azf6lbx.js.map

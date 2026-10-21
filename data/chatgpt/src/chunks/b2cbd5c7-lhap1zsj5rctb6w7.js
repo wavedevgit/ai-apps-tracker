@@ -1,2 +1,26 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{C1 as t,Fot as n,Iot as r,L1 as i,Lot as a,Pot as o,b1 as s,g8 as c,h8 as l}from"./4813494d-dfpv67hlp00pbohr.js";function u(){let e=s();return d()&&!e.isError&&t()?.data.orbitAvailable===!0}var d,f=e((()=>{l(),i(),n(),d=c(()=>!r()&&o()?.user?.id!=null,a)}));export{u as n,f as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    C1 as t,
+    Fot as n,
+    Iot as r,
+    L1 as i,
+    Lot as a,
+    Pot as o,
+    b1 as s,
+    g8 as c,
+    h8 as l
+} from "./4813494d-dfpv67hlp00pbohr.js";
+
+function u() {
+    let e = s();
+    return d() && !e.isError && t()?.data.orbitAvailable === !0
+}
+var d, f = e((() => {
+    l(), i(), n(), d = c(() => !r() && o()?.user?.id != null, a)
+}));
+export {
+    u as n, f as t
+};
 //# sourceMappingURL=b2cbd5c7-lhap1zsj5rctb6w7.js.map

@@ -1,0 +1,428 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    F7 as t,
+    Mz as n,
+    jz as r,
+    z7 as i
+} from "./4813494d-lxa3wniynbx9ka2a.js";
+import {
+    Bn as a,
+    Ln as o,
+    Nn as s,
+    O as c,
+    Rn as l,
+    s as u,
+    w as d,
+    wn as f
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    DCn as p,
+    ECn as m,
+    hzt as h,
+    mzt as g
+} from "./conversation-small-kzsalymynzuddxee.js";
+import {
+    rt as ee,
+    st as _
+} from "./1c919af1-n3qwx9w7ipxrf1ap.js";
+import {
+    b as v,
+    d as y,
+    t as te,
+    x as b
+} from "./707eab0c-dz0lipu7j9i9zym4.js";
+import {
+    t as x
+} from "./a35abcd6-fl6iafxr1mqknzi0.js";
+import {
+    n as S,
+    t as C
+} from "./14bfa043-j099hvf56gfathms.js";
+
+function ne({
+    agentId: e,
+    channelBinding: n,
+    signal: r
+}) {
+    return t.safeGet(`/hermes/agent/{agent_id}/persistent-folder/tree`, {
+        parameters: {
+            path: {
+                agent_id: e
+            },
+            query: n.type === `slack` ? {
+                channel_binding_type: `slack`,
+                channel_binding_link_id: n.linkId,
+                channel_binding_channel_id: n.channelId
+            } : n.type === `api` ? {
+                channel_binding_type: `api`
+            } : {
+                channel_binding_type: `chatgpt`
+            }
+        },
+        signal: r
+    })
+}
+
+function w(e, t) {
+    let n = [...e];
+    for (; n.length > 0;) {
+        let e = n.pop();
+        if (e != null) {
+            if (e.id === t) return e;
+            e.children?.length && n.push(...e.children)
+        }
+    }
+    return null
+}
+
+function T({
+    agentId: e,
+    fileId: n,
+    download: r,
+    signal: i
+}) {
+    return t.safeGet(`/hermes/agent/{agent_id}/persistent-folder/files/{file_id}/download_url`, {
+        parameters: {
+            path: {
+                agent_id: e,
+                file_id: n
+            }
+        },
+        overrideUrl: E(n, r),
+        signal: i
+    })
+}
+
+function E(e, t) {
+    return n => (n.pathname = n.pathname.replace(encodeURIComponent(e), e), t && n.searchParams.set(`download`, `true`), n)
+}
+
+function D({
+    agentId: e,
+    fileId: n,
+    signal: r
+}) {
+    return t.safeGet(`/hermes/agent/{agent_id}/persistent-folder/files/{file_id}/download_raw`, {
+        parameters: {
+            path: {
+                agent_id: e,
+                file_id: n
+            }
+        },
+        overrideUrl: E(n),
+        signal: r,
+        skipJsonTransform: !0
+    })
+}
+async function O({
+    agentId: e,
+    node: t
+}) {
+    let n = t.file_id;
+    if (n == null) throw Error(`Missing persistent folder file id`);
+    let r = await T({
+        agentId: e,
+        fileId: n,
+        download: !0
+    });
+    if (r.needs_auth_token) {
+        m(await (await D({
+            agentId: e,
+            fileId: n
+        })).blob(), t.name);
+        return
+    }
+    C(r.download_url, t.name)
+}
+
+function k({
+    agentId: e,
+    node: t,
+    enabled: n = !0
+}) {
+    return d({
+        queryKey: [I, e, t.id, t.file_id ?? null, t.updated_at],
+        enabled: n && t.kind === `file` && t.file_id != null,
+        queryFn: async ({
+            signal: n
+        }) => {
+            if (t.file_id == null) throw Error(`Missing persistent folder file id`);
+            let r = await T({
+                agentId: e,
+                fileId: t.file_id,
+                signal: n
+            });
+            return r.needs_auth_token === !0 ? await (await D({
+                agentId: e,
+                fileId: t.file_id,
+                signal: n
+            })).text() : (await h.get(r.download_url, {
+                responseType: `text`,
+                signal: n
+            })).data
+        },
+        refetchOnMount: `always`,
+        retry: !1
+    })
+}
+
+function A({
+    agentId: e,
+    node: t,
+    enabled: n = !0
+}) {
+    return d({
+        queryKey: [L, e, t.id, t.file_id ?? null, t.updated_at],
+        enabled: n && t.kind === `file` && t.file_id != null,
+        queryFn: async ({
+            signal: n
+        }) => {
+            if (t.file_id == null) throw Error(`Missing persistent folder file id`);
+            let r = await T({
+                agentId: e,
+                fileId: t.file_id,
+                signal: n
+            });
+            return r.needs_auth_token === !0 ? {
+                kind: `buffer`,
+                buffer: await (await D({
+                    agentId: e,
+                    fileId: t.file_id,
+                    signal: n
+                })).arrayBuffer(),
+                name: t.name
+            } : {
+                kind: `download_url`,
+                downloadUrl: r.download_url
+            }
+        },
+        refetchOnMount: `always`,
+        retry: !1
+    })
+}
+
+function j(e) {
+    let t = e.root_node_id;
+    return t ? w(e.nodes, t) : null
+}
+
+function M(e) {
+    "use forget";
+    let t = (0, P.c)(10),
+        {
+            agentId: n,
+            channelBinding: r,
+            enabled: i
+        } = e,
+        a = i === void 0 || i,
+        o;
+    t[0] !== n || t[1] !== r ? (o = [F, n, r], t[0] = n, t[1] = r, t[2] = o) : o = t[2];
+    let s;
+    t[3] !== n || t[4] !== r ? (s = e => {
+        let {
+            signal: t
+        } = e;
+        return ne({
+            agentId: n,
+            channelBinding: r,
+            signal: t
+        })
+    }, t[3] = n, t[4] = r, t[5] = s) : s = t[5];
+    let l;
+    return t[6] !== a || t[7] !== o || t[8] !== s ? (l = {
+        queryKey: o,
+        enabled: a,
+        refetchOnMount: `always`,
+        retry: !1,
+        queryFn: s
+    }, t[6] = a, t[7] = o, t[8] = s, t[9] = l) : l = t[9], c(l)
+}
+
+function re(e) {
+    "use forget";
+    let t = (0, P.c)(4),
+        {
+            agentId: n,
+            node: r,
+            enabled: i
+        } = e,
+        a = i === void 0 || i,
+        o;
+    return t[0] !== n || t[1] !== a || t[2] !== r ? (o = k({
+        agentId: n,
+        node: r,
+        enabled: a
+    }), t[0] = n, t[1] = a, t[2] = r, t[3] = o) : o = t[3], c(o)
+}
+
+function N(e) {
+    "use forget";
+    let t = (0, P.c)(4),
+        {
+            agentId: n,
+            node: r,
+            enabled: i
+        } = e,
+        a = i === void 0 || i,
+        o;
+    return t[0] !== n || t[1] !== a || t[2] !== r ? (o = A({
+        agentId: n,
+        node: r,
+        enabled: a
+    }), t[0] = n, t[1] = a, t[2] = r, t[3] = o) : o = t[3], c(o)
+}
+var P, F, I, L, R, z = e((() => {
+        P = f(), p(), i(), u(), g(), S(), F = `hermes-persistent-folder-tree`, I = `hermes-persistent-folder-file-content`, L = `hermes-persistent-folder-file-preview`, R = e => {
+            "use forget";
+            let t = (0, P.c)(18),
+                {
+                    agentId: n,
+                    selectedNodeId: r,
+                    channelBinding: i,
+                    enabled: a
+                } = e,
+                o;
+            t[0] === i ? o = t[1] : (o = i === void 0 ? {
+                type: `chatgpt`
+            } : i, t[0] = i, t[1] = o);
+            let s = o,
+                c = a === void 0 || a,
+                l;
+            t[2] !== n || t[3] !== s || t[4] !== c ? (l = {
+                agentId: n,
+                channelBinding: s,
+                enabled: c
+            }, t[2] = n, t[3] = s, t[4] = c, t[5] = l) : l = t[5];
+            let u = M(l),
+                d;
+            t[6] === u.data ? d = t[7] : (d = u.data == null ? null : j(u.data), t[6] = u.data, t[7] = d);
+            let f = d,
+                p;
+            bb0: {
+                if (!u.data || r == null) {
+                    p = f;
+                    break bb0
+                }
+                let e;t[8] !== f || t[9] !== r || t[10] !== u.data.nodes ? (e = w(u.data.nodes, r) ?? f, t[8] = f, t[9] = r, t[10] = u.data.nodes, t[11] = e) : e = t[11],
+                p = e
+            }
+            let m = p,
+                h;
+            return t[12] !== f || t[13] !== m || t[14] !== u.isError || t[15] !== u.isLoading || t[16] !== u.refetch ? (h = {
+                isLoading: u.isLoading,
+                isError: u.isError,
+                refetch: u.refetch,
+                rootNode: f,
+                selectedNode: m
+            }, t[12] = f, t[13] = m, t[14] = u.isError, t[15] = u.isLoading, t[16] = u.refetch, t[17] = h) : h = t[17], h
+        }
+    })),
+    B, V, H, U = e((() => {
+        B = f(), x(), V = a(), H = e => {
+            "use forget";
+            let t = (0, B.c)(7),
+                n, r;
+            if (t[0] === e ? (n = t[1], r = t[2]) : ({
+                    node: n,
+                    ...r
+                } = e, t[0] = e, t[1] = n, t[2] = r), n.kind === `folder`) {
+                let e;
+                return t[3] === r ? e = t[4] : (e = (0, V.jsx)(ee, {
+                    ...r
+                }), t[3] = r, t[4] = e), e
+            }
+            let i;
+            return t[5] === r ? i = t[6] : (i = (0, V.jsx)(_, {
+                ...r
+            }), t[5] = r, t[6] = i), i
+        }
+    })),
+    W, G, K, q = e((() => {
+        W = `sUwaaG_FallbackContainer`, G = `sUwaaG_FallbackIcon`, K = {
+            FallbackContainer: W,
+            FallbackIcon: G
+        }
+    })),
+    J, Y, X, Z, Q, $, ie = e((() => {
+        J = f(), n(), te(), v(), l(), U(), q(), Y = a(), X = e => {
+            "use forget";
+            let t = (0, J.c)(7),
+                {
+                    node: n
+                } = e,
+                r;
+            t[0] === n ? r = t[1] : (r = (0, Y.jsx)(`div`, {
+                className: K.FallbackIcon,
+                children: (0, Y.jsx)(H, {
+                    node: n,
+                    className: `text-primary size-6`
+                })
+            }), t[0] = n, t[1] = r);
+            let i;
+            t[2] === n.name ? i = t[3] : (i = (0, Y.jsx)(`span`, {
+                className: `text-primary`,
+                children: n.name
+            }), t[2] = n.name, t[3] = i);
+            let a;
+            return t[4] !== r || t[5] !== i ? (a = (0, Y.jsxs)(`div`, {
+                className: K.FallbackContainer,
+                children: [r, i]
+            }), t[4] = r, t[5] = i, t[6] = a) : a = t[6], a
+        }, Z = e => {
+            "use forget";
+            let t = (0, J.c)(6),
+                {
+                    onRetry: n,
+                    isRefetching: r
+                } = e,
+                i;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, Y.jsx)(`span`, {
+                className: `text-sm`,
+                children: (0, Y.jsx)(s, {
+                    ...$.loadFileFailedTitle
+                })
+            }), t[0] = i) : i = t[0];
+            let a;
+            t[1] !== r || t[2] !== n ? (a = n != null && (0, Y.jsx)(y, {
+                color: `secondary`,
+                size: `xs`,
+                pill: !0,
+                onClick: n,
+                loading: r,
+                children: (0, Y.jsx)(s, {
+                    ...$.retry
+                })
+            }), t[1] = r, t[2] = n, t[3] = a) : a = t[3];
+            let o;
+            return t[4] === a ? o = t[5] : (o = (0, Y.jsxs)(`div`, {
+                className: K.FallbackContainer,
+                children: [i, a]
+            }), t[4] = a, t[5] = o), o
+        }, Q = e => {
+            "use forget";
+            let t = (0, J.c)(2),
+                {
+                    isAgentStartPage: n
+                } = e,
+                i;
+            return t[0] === n ? i = t[1] : (i = (0, Y.jsx)(`div`, {
+                className: K.FallbackContainer,
+                children: n ? (0, Y.jsx)(r, {}) : (0, Y.jsx)(b, {})
+            }), t[0] = n, t[1] = i), i
+        }, $ = o({
+            loadFileFailedTitle: {
+                id: `Hermes.GptStudio.Builder.Messages.loadFileFailedTitle`,
+                defaultMessage: `Couldn’t load this file.`
+            },
+            retry: {
+                id: `Hermes.GptStudio.Builder.Messages.retry`,
+                defaultMessage: `Retry`
+            }
+        })
+    }));
+export {
+    H as a, z as c, R as d, ie as i, re as l, X as n, U as o, Q as r, O as s, Z as t, N as u
+};
+//# sourceMappingURL=5334be9f-08peektd1fju0hue.js.map

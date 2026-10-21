@@ -1,0 +1,299 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A1 as t,
+    BU as n,
+    F7 as r,
+    HU as i,
+    R1 as a,
+    nct as o,
+    oct as s,
+    z7 as c,
+    zU as l
+} from "./4813494d-lxa3wniynbx9ka2a.js";
+import {
+    Ln as u,
+    N as d,
+    Rn as f,
+    p,
+    s as m,
+    wn as h,
+    zn as g
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+var _, v, y, b, x, S, C, w, T = e((() => {
+    _ = h(), s(), a(), n(), c(), m(), f(), v = ({
+        workspaceId: e,
+        optimisticallyUpdateWorkspaceSettings: n = !1
+    }) => {
+        let a = i(),
+            s = d(),
+            c = g(),
+            l = [`workspace-settings`, e];
+        return p({
+            mutationFn: ({
+                feature: t,
+                enabled: n
+            }) => r.safePost(`/accounts/{account_id}/beta_features`, {
+                parameters: {
+                    path: {
+                        account_id: e
+                    }
+                },
+                requestBody: {
+                    feature: t,
+                    value: n
+                }
+            }),
+            onMutate: n ? async ({
+                feature: e,
+                enabled: t
+            }) => {
+                await s.cancelQueries({
+                    queryKey: l
+                });
+                let n = s.getQueryData(l),
+                    r = n != null && Object.hasOwn(n.beta_settings, e),
+                    i = n?.beta_settings[e];
+                return s.setQueryData(l, n => n == null ? n : {
+                    ...n,
+                    beta_settings: {
+                        ...n.beta_settings,
+                        [e]: t
+                    }
+                }), {
+                    hadWorkspaceSettings: n != null,
+                    hadPreviousValue: r,
+                    previousEnabled: i
+                }
+            } : void 0,
+            onSettled: (r, i, a) => {
+                let c = s.invalidateQueries({
+                    queryKey: n ? l : [`workspace-settings`]
+                });
+                return a.feature === o.LIBRARY_SHARING_ENABLED && s.invalidateQueries(t()), a.feature === o.TASK_SUGGESTIONS_ENABLED && (s.invalidateQueries({
+                    queryKey: [`userSettings`]
+                }), s.invalidateQueries({
+                    queryKey: [`task-suggestion-prompts`]
+                })), a.feature === o.ENABLE_VALUE_SURVEY_CAMPAIGN && s.invalidateQueries({
+                    queryKey: [`workspace-analytics-enterprise-surveys`, {
+                        workspaceId: e
+                    }]
+                }), n ? c : void 0
+            },
+            onError: (e, t, n) => {
+                n?.hadWorkspaceSettings && s.setQueryData(l, e => {
+                    if (e == null) return e;
+                    let r = {
+                        ...e.beta_settings
+                    };
+                    return n.hadPreviousValue ? r[t.feature] = n.previousEnabled ?? !1 : delete r[t.feature], {
+                        ...e,
+                        beta_settings: r
+                    }
+                }), a.danger(c.formatMessage(w.featureSettingsUpdateFailed, {
+                    toastId: `workspace_settings`
+                }))
+            }
+        })
+    }, y = ({
+        workspaceId: e
+    }) => {
+        let t = i(),
+            n = d(),
+            a = g();
+        return p({
+            mutationFn: ({
+                setting: t,
+                value: n
+            }) => r.safePost(`/accounts/{account_id}/settings/share_settings`, {
+                parameters: {
+                    path: {
+                        account_id: e
+                    }
+                },
+                requestBody: {
+                    setting: t,
+                    value: n
+                }
+            }),
+            onSettled: () => {
+                n.invalidateQueries({
+                    queryKey: [`workspace-settings`]
+                })
+            },
+            onError: () => {
+                t.danger(a.formatMessage(w.featureSettingsUpdateFailed, {
+                    toastId: `share_settings_row`
+                }))
+            }
+        })
+    }, b = ({
+        workspaceId: e
+    }) => {
+        let t = i(),
+            n = d(),
+            a = g();
+        return p({
+            mutationFn: ({
+                enabled: t
+            }) => r.safePost(`/accounts/{account_id}/settings/enable_account_switching`, {
+                parameters: {
+                    path: {
+                        account_id: e
+                    }
+                },
+                requestBody: {
+                    value: t
+                }
+            }),
+            onError: () => {
+                t.danger(a.formatMessage(w.featureSettingsUpdateFailed, {
+                    toastId: `workspace_settings_enable_account_switching`
+                }))
+            },
+            onSettled: () => {
+                n.invalidateQueries({
+                    queryKey: [`workspace-settings`, e]
+                }), n.invalidateQueries({
+                    queryKey: [`account-status`]
+                })
+            }
+        })
+    }, x = ({
+        workspaceId: e
+    }) => {
+        let t = i(),
+            n = d(),
+            a = g();
+        return p({
+            mutationFn: ({
+                enabled: t
+            }) => r.safePost(`/accounts/{account_id}/settings/workspace_referrals_enabled`, {
+                parameters: {
+                    path: {
+                        account_id: e
+                    }
+                },
+                requestBody: {
+                    value: t
+                }
+            }),
+            onError: () => {
+                t.danger(a.formatMessage(w.featureSettingsUpdateFailed, {
+                    toastId: `workspace_settings_workspace_referrals_enabled`
+                }))
+            },
+            onSettled: () => {
+                n.invalidateQueries({
+                    queryKey: [`workspace-settings`, e]
+                })
+            }
+        })
+    }, S = ({
+        workspaceId: e,
+        settingName: t = `member_profiles_enabled`
+    }) => {
+        let n = l(),
+            i = d(),
+            a = g();
+        return p({
+            mutationKey: [`workspace-member-profiles`, e, t],
+            mutationFn: ({
+                enabled: n
+            }) => r.safePost(t === `member_profile_activity_enabled` ? `/accounts/{account_id}/settings/member_profile_activity_enabled` : `/accounts/{account_id}/settings/member_profiles_enabled`, {
+                parameters: {
+                    path: {
+                        account_id: e
+                    }
+                },
+                requestBody: {
+                    value: n
+                }
+            }),
+            onSuccess: n => {
+                i.setQueryData([`workspace-settings`, e], e => e == null ? e : {
+                    ...e,
+                    [t]: n[t]
+                })
+            },
+            onError: () => {
+                n.danger(a.formatMessage(w.featureSettingsUpdateFailed, {
+                    toastId: `workspace_settings_${t}`
+                }))
+            },
+            onSettled: () => i.invalidateQueries({
+                queryKey: [`workspace-settings`, e]
+            })
+        })
+    }, C = e => {
+        "use forget";
+        let t = (0, _.c)(18),
+            {
+                workspaceId: n
+            } = e,
+            a = i(),
+            o = d(),
+            s = g(),
+            c;
+        t[0] === n ? c = t[1] : (c = e => {
+            let {
+                maxTtlSeconds: t
+            } = e;
+            return r.safePost(`/accounts/{account_id}/settings/access_token_max_ttl`, {
+                parameters: {
+                    path: {
+                        account_id: n
+                    }
+                },
+                requestBody: {
+                    value: t
+                }
+            })
+        }, t[0] = n, t[1] = c);
+        let l;
+        t[2] !== o || t[3] !== n ? (l = async e => {
+            let {
+                maxTtlSeconds: t
+            } = e, r = [`workspace-settings`, n];
+            await o.cancelQueries({
+                queryKey: r
+            });
+            let i = o.getQueryData(r);
+            return o.setQueryData(r, e => e == null ? e : {
+                ...e,
+                access_token_max_ttl: t
+            }), {
+                previousWorkspaceSettings: i
+            }
+        }, t[2] = o, t[3] = n, t[4] = l) : l = t[4];
+        let u;
+        t[5] !== s || t[6] !== o || t[7] !== a || t[8] !== n ? (u = (e, t, r) => {
+            r?.previousWorkspaceSettings != null && o.setQueryData([`workspace-settings`, n], r.previousWorkspaceSettings), a.danger(s.formatMessage(w.featureSettingsUpdateFailed, {
+                toastId: `workspace_settings_access_token_max_ttl`
+            }))
+        }, t[5] = s, t[6] = o, t[7] = a, t[8] = n, t[9] = u) : u = t[9];
+        let f;
+        t[10] !== o || t[11] !== n ? (f = () => {
+            o.invalidateQueries({
+                queryKey: [`workspace-settings`, n]
+            })
+        }, t[10] = o, t[11] = n, t[12] = f) : f = t[12];
+        let m;
+        return t[13] !== c || t[14] !== l || t[15] !== u || t[16] !== f ? (m = {
+            mutationFn: c,
+            onMutate: l,
+            onError: u,
+            onSettled: f
+        }, t[13] = c, t[14] = l, t[15] = u, t[16] = f, t[17] = m) : m = t[17], p(m)
+    }, w = u({
+        featureSettingsUpdateFailed: {
+            id: `workspaceSettings.featureSettingsUpdateFailed`,
+            defaultMessage: `Failed to update feature setting`
+        }
+    })
+}));
+export {
+    v as a, S as i, C as n, y as o, b as r, x as s, T as t
+};
+//# sourceMappingURL=191ef300-gve5wwijkoz3cfqk.js.map

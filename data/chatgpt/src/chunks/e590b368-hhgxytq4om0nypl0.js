@@ -1,0 +1,532 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/3660315a-gcuze7wfdnmpijci.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-lxa3wniynbx9ka2a.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/1dc5ae5b-kgu4frw8s46vbrkt.js", "assets/conversation-small-kzsalymynzuddxee.js", "assets/30901919-i8ip8r0znvgcym38.js", "assets/c470f5ab-poh7ivjvb3j2jlfz.js", "assets/0e5afe53-dz59mkfveu52getp.js", "assets/conversation-small-bwtqiuwj.css", "assets/06dfbf77-cjezfb3wis51jdr7.js", "assets/b2cbd5c7-n1o75daptua6iarl.js", "assets/b5b42835-lx9enyfyc698fdgg.js", "assets/b15d5b53-i0eiy69qs5qqmsfe.js", "assets/c2675c8c-ossqum2x3eut0sh8.js", "assets/82782bc9-idqd90kxtp4zogpp.js", "assets/8b34dbc2-ba6wt3zxvh7jce7p.js", "assets/global-modals-lv5n3ujm.css", "assets/94e0eb8c-mqwt1kqbh7ozdq6x.js", "assets/47ed0b35-gdaqna0vux77izyy.js", "assets/760cdbab-i3fmnmb1eedof0jx.js", "assets/d5b03218-nxqe3sveod4xxy3x.js", "assets/7517017f-m0e7hb8h6fyirvew.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $x as n,
+    Bat as r,
+    Bst as i,
+    Cy as a,
+    F7 as o,
+    Fnt as s,
+    Fv as c,
+    Gv as l,
+    Int as u,
+    Jx as d,
+    Kx as f,
+    Pat as p,
+    Pnt as m,
+    Qit as h,
+    Qv as g,
+    Snt as ee,
+    Sy as te,
+    Wv as _,
+    Wx as v,
+    X0 as y,
+    Xv as b,
+    Xx as x,
+    Y_ as ne,
+    Yv as re,
+    Yx as ie,
+    Z0 as S,
+    Z_ as C,
+    Zv as w,
+    by as ae,
+    eB as T,
+    eat as E,
+    fS as D,
+    fy as O,
+    iS as k,
+    ist as A,
+    lS as j,
+    nB as M,
+    nS as oe,
+    oS as N,
+    oct as P,
+    pS as F,
+    qx as I,
+    rS as L,
+    rst as R,
+    tB as z,
+    uS as B,
+    wnt as V,
+    z7 as H
+} from "./4813494d-lxa3wniynbx9ka2a.js";
+import {
+    Bn as U,
+    Ht as se,
+    Ln as ce,
+    N as le,
+    Nt as ue,
+    Q as de,
+    Rn as fe,
+    Vn as pe,
+    cn as me,
+    kt as he,
+    ln as ge,
+    pt as W,
+    s as _e,
+    wn as ve,
+    zn as ye
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $vn as be,
+    Bit as xe,
+    Crt as G,
+    Git as Se,
+    Irt as Ce,
+    Lrt as we,
+    Qvn as Te,
+    Rrt as Ee,
+    Trt as De,
+    Uit as Oe,
+    Vit as ke,
+    Wit as Ae,
+    vst as je,
+    yst as Me
+} from "./conversation-small-kzsalymynzuddxee.js";
+import {
+    Bb as Ne,
+    Cb as Pe,
+    Eb as Fe,
+    Ob as Ie,
+    Rb as K,
+    kb as Le,
+    wb as Re
+} from "./c2675c8c-ossqum2x3eut0sh8.js";
+import {
+    Bv as ze,
+    Uv as Be
+} from "./8b34dbc2-ba6wt3zxvh7jce7p.js";
+import {
+    n as Ve,
+    t as q
+} from "./af004db9-dosti8w470xzos4t.js";
+import {
+    n as He,
+    r as Ue,
+    t as We
+} from "./d6a45810-lhim3j7a0s3szqea.js";
+import {
+    l as J,
+    n as Ge,
+    o as Ke,
+    r as qe
+} from "./501976a3-f1hpleepfqj844i0.js";
+import {
+    c as Je,
+    f as Y,
+    n as Ye,
+    p as Xe,
+    t as Ze,
+    u as Qe
+} from "./a8575090-mfw1k6cnzfh96ayw.js";
+
+function $e(e) {
+    let t = new URL(e).searchParams.get(`state`);
+    if (t == null) return !1;
+    let n = `${X}:${t}`;
+    return window.sessionStorage.getItem(n) == null ? (window.sessionStorage.setItem(n, `true`), !0) : !1
+}
+
+function et(e) {
+    $e(e) && (window.location.assign(e), window.setTimeout(() => {
+        window.location.replace(nt)
+    }, tt))
+}
+var X, tt, nt, rt = e((() => {
+    X = `codex_oauth_relayed_state`, tt = 1e3, nt = `/plugins`
+}));
+async function it(e) {
+    if (e.auth_type !== `OAUTH` || !e.connector_id) return !1;
+    try {
+        let [t, r] = await Promise.all([o.safeGet(`/aip/connectors/{connector_id}`, {
+            parameters: {
+                path: {
+                    connector_id: e.connector_id
+                },
+                query: {
+                    include_actions: !1
+                }
+            }
+        }), o.safeGet(`/aip/connectors/{connector_id}/actions`, {
+            parameters: {
+                path: {
+                    connector_id: e.connector_id
+                }
+            },
+            additionalHeaders: {
+                [h]: `CONNECTOR_SETTING`
+            }
+        })]);
+        return n({
+            actions: r.actions ?? [],
+            connector: t,
+            link: e,
+            includeNetNewOAuthScopes: !1
+        })
+    } catch {
+        return !1
+    }
+}
+
+function at() {
+    "use no forget";
+    let e = R(),
+        t = ye(),
+        n = he(),
+        r = ue(),
+        a = Te(),
+        c = n?.nativeRedirectUrl,
+        l = (0, Z.useRef)(!1),
+        u = le();
+    return (0, Z.useEffect)(() => {
+        if (l.current) return;
+        l.current = !0;
+        let n = _(window.location.href);
+        if (n != null) {
+            window.history.replaceState(null, ``, window.location.pathname), n.redirectUrl == null ? r(M(T.OAUTH_FAILED_GENERIC, `/#settings/${O.Connectors}`), {
+                replace: !0
+            }) : window.location.replace(n.redirectUrl);
+            return
+        }
+        if (c) {
+            et(c);
+            return
+        }
+        let g = w(window.location.href) ?? window.location.href;
+        async function v() {
+            let n = e => {
+                    window.close(), window.setTimeout(() => {
+                        r(e)
+                    }, 150)
+                },
+                c = Ae(),
+                l = c === `workspace_microsoft_auto_link` ? Ge() : null,
+                _ = l == null ? null : performance.now(),
+                v = c === `redirect` ? Oe() : void 0,
+                y = new URL(g).searchParams,
+                b = y.get(`oauth_state_id`) ?? y.get(`state`),
+                x = j(b),
+                S = k(b),
+                w = x ? {
+                    [h]: x
+                } : void 0,
+                E = S == null && l == null && (c === `popup` || a),
+                D = S ?? (c === `recommended_onboarding_redirect` ? `/` : l?.returnPath ?? `#settings/${O.Connectors}`),
+                A = Je(g),
+                N = xe(g),
+                P = A == null ? void 0 : Fe(A.oauthStateId),
+                L = ({
+                    outcome: e,
+                    reason: t,
+                    connectorId: n
+                }) => {
+                    l == null || _ == null || (J({
+                        phase: `oauth_callback`,
+                        outcome: e,
+                        reason: t,
+                        connectorId: n,
+                        durationMs: performance.now() - _
+                    }), J({
+                        phase: `end_to_end`,
+                        outcome: e,
+                        reason: t,
+                        connectorId: n,
+                        durationMs: Date.now() - l.startedAt
+                    }))
+                };
+            try {
+                if (A) {
+                    let e = y.get(`tenant`);
+                    if (e != null && A.approvedTenantId != null && e.toLowerCase() !== A.approvedTenantId.toLowerCase()) throw Error(`ADMIN_CONSENT_TENANT_MISMATCH`);
+                    Le({
+                        attemptId: P,
+                        lifecycleStep: Re.callbackReceived,
+                        callbackSource: Pe.callbackPage
+                    });
+                    let t = await Ze({
+                            workspaceId: A.workspaceId ?? ``,
+                            useDirectRouting: A.useDirectRouting ?? !1,
+                            requestBody: {
+                                full_redirect_url: re(g)
+                            }
+                        }),
+                        [r, ...i] = A.remainingStages ?? [];
+                    if (t.status === `COMPLETE` && r != null) {
+                        if (e == null) throw Error(`ADMIN_CONSENT_TENANT_MISSING`);
+                        let t = new URL(r.redirectUrl);
+                        if (t.origin !== `https://login.microsoftonline.com` || t.pathname !== `/organizations/v2.0/adminconsent`) throw Error(`INVALID_ADMIN_CONSENT_REDIRECT`);
+                        t.pathname = `/${e}/v2.0/adminconsent`, Xe({
+                            oauthStateId: r.oauthStateId,
+                            expiresAt: r.expiresAt,
+                            useDirectRouting: A.useDirectRouting,
+                            workspaceId: A.workspaceId,
+                            finalOauthStateId: A.finalOauthStateId,
+                            approvedTenantId: e,
+                            remainingStages: i
+                        }), window.location.replace(t.toString());
+                        return
+                    }
+                    let a = A.finalOauthStateId ?? A.oauthStateId;
+                    Y({
+                        oauthStateId: a,
+                        result: {
+                            ...t,
+                            oauth_state_id: a
+                        }
+                    }), n(`/admin/apps`);
+                    return
+                }
+                if (N) {
+                    let e = await o.safePost(`/aip/connectors/links/oauth/verification/callback`, {
+                        requestBody: {
+                            full_redirect_url: g
+                        },
+                        additionalHeaders: w
+                    });
+                    if (E) {
+                        let t = e => {
+                            e.origin === window.location.origin && e.data.connectorId === N.connectorId && (f.removeEventListener(`message`, t, !1), window.location.href = e.data.redirectUrl)
+                        };
+                        f.addEventListener(`message`, t, !1), I({
+                            success: !0,
+                            connectorId: N.connectorId,
+                            oauthStateId: N.oauthStateId,
+                            verificationToken: e.verification_token
+                        });
+                        return
+                    }
+                    r(`#settings/${O.Connectors}`);
+                    return
+                }
+                let a = await o.safePost(`/aip/connectors/links/oauth/callback`, {
+                    requestBody: {
+                        full_redirect_url: g
+                    },
+                    additionalHeaders: w
+                });
+                if (await u.invalidateQueries({
+                        refetchType: `all`,
+                        queryKey: [`fetchConnectorLinkData`]
+                    }), !a?.post_auth_url) {
+                    if (l != null) {
+                        L({
+                            outcome: `failure`,
+                            reason: `missing_post_auth_url`,
+                            connectorId: a?.link?.connector_id
+                        }), r(l.returnPath, {
+                            replace: !0
+                        });
+                        return
+                    }
+                    r(M(T.OAUTH_FAILED_GENERIC, K(D)));
+                    return
+                }
+                let c = We({
+                        enableMultiLinks: a.link.enable_multi_links,
+                        url: new URL(a.post_auth_url, location.origin),
+                        connectorId: a.link.connector_id,
+                        linkId: a.link.id,
+                        suggestedAccountName: a.suggested_account_name ?? void 0
+                    }),
+                    p = a?.link?.connector_id === C[i.GITHUB_CONNECTOR],
+                    h = ae(c.hash),
+                    _ = h != null,
+                    v = h === O.Connectors;
+                if (!_) {
+                    let e = ne[a.link.connector_id];
+                    e && c.searchParams.set(`add_source`, e)
+                }
+                let x;
+                if (v) {
+                    let e = new URLSearchParams;
+                    e.set(`connector`, a.link.connector_id), p && e.set(`github_onboarding`, `configure-repos`), x = W({
+                        ...c,
+                        search: ``,
+                        hash: te(O.Connectors).hash + `?${e.toString()}`
+                    })
+                } else p && c.searchParams.set(`github_onboarding`, `configure-repos`), x = W({
+                    pathname: c.pathname,
+                    search: c.search,
+                    hash: c.hash
+                });
+                m.removeItem(s.ConnectorUpgradeToSyncRequest);
+                let S = a.link.connector_id === `connector_bd313622bce5485cb3d0b338715f7108` ? t.formatMessage($.chatGPTForSlackInstallSuccess) : t.formatMessage($.genericSuccess, {
+                        connector: a.link.name
+                    }),
+                    {
+                        microsoftTeamsUnavailable: k,
+                        scopeCheckLink: j
+                    } = ie({
+                        link: a.link,
+                        isMicrosoftConnector: Me(a.link.connector_id) && a.link.connector_id !== C[i.TEAMS_CONNECTOR]
+                    }),
+                    R = a.connected_connector_ids == null ? void 0 : new Set(a.connected_connector_ids).size,
+                    z = l == null && (k && oe({
+                        link: j
+                    }) || await it(j)),
+                    B = t.formatMessage($.partialSuccess, {
+                        connector: a.link.name
+                    }),
+                    V = d({
+                        intl: t,
+                        connectorName: a.link.name,
+                        microsoftTeamsUnavailable: k,
+                        hasPotentialMissingScopes: z,
+                        installedPluginCount: R
+                    }) ?? (z ? B : S);
+                if (E) {
+                    I({
+                        success: !0,
+                        connectorId: a.link.connector_id,
+                        oauthStateId: b ?? void 0,
+                        linkId: a.link.id,
+                        suggestedAccountName: a.suggested_account_name ?? void 0,
+                        hasPotentialMissingScopes: z,
+                        microsoftTeamsUnavailable: k,
+                        installedPluginCount: R
+                    }), n(M(z ? T.CUSTOM_ERROR : T.CUSTOM_MSG, x, V));
+                    return
+                }
+                let H = `chatgpt_connectors_oauth_connect_success`,
+                    U = F(H, `succeeded`, a.link.connector_id);
+                if (ee.logValueEventWithStatsig({
+                        segmentEventName: `Connector OAuth Connect`,
+                        statsigEventName: H,
+                        data: {
+                            success: !0,
+                            type: a.link.connector_id
+                        },
+                        eventId: U
+                    }), G.logOAuthCompleted({
+                        connector_id_metadata: G.createIdMetadataFromId(e, a.link.connector_id, `unknown_referrer`),
+                        referrer: `unknown_referrer`,
+                        authType: `OAUTH`,
+                        scopes: null,
+                        success: !0
+                    }), l != null) {
+                    L({
+                        outcome: `success`,
+                        connectorId: a.link.connector_id
+                    }), r(l.returnPath, {
+                        replace: !0
+                    });
+                    return
+                }
+                r(M(z ? T.CUSTOM_ERROR : T.CUSTOM_MSG, x, V))
+            } catch (e) {
+                if (A) {
+                    Y({
+                        oauthStateId: A.finalOauthStateId ?? A.oauthStateId,
+                        error: e instanceof Error ? e.message : `Microsoft admin consent failed`
+                    }), n(`/admin/apps`);
+                    return
+                }
+                let t, i;
+                try {
+                    if (b) {
+                        let e = await o.safeGet(`/aip/connectors/links/oauth/state/{oauth_state_id}`, {
+                            parameters: {
+                                path: {
+                                    oauth_state_id: b
+                                }
+                            },
+                            additionalHeaders: w
+                        });
+                        (e?.status === `PENDING` || e?.status === `COMPLETE` || e?.status === `ERROR`) && (i = e.status), e?.connector_id && (t = e.connector_id)
+                    }
+                } catch {}
+                i === `ERROR` && m.removeItem(s.ConnectorUpgradeToSyncRequest);
+                let a = e instanceof p ? e.detail : void 0,
+                    c = He(typeof a?.error_code == `string` ? a.error_code : void 0, a?.enable_multi_links === !0),
+                    u = c === T.CUSTOM_ERROR && typeof a?.message == `string` ? a.message : e instanceof Error ? e.message : void 0,
+                    d = c === T.OAUTH_FAILED_USER_CANCEL || c === T.CUSTOM_ERROR ? u : void 0;
+                if (v && t && we({
+                        connectorId: t,
+                        installAttemptId: v
+                    }) && (ze(v), Ce(v)), E) {
+                    I({
+                        success: !1,
+                        connectorId: N?.connectorId ?? t ?? ``,
+                        oauthStateId: N?.oauthStateId ?? b ?? void 0,
+                        errorType: c,
+                        error: u
+                    }), n(M(c, D, d));
+                    return
+                }
+                let f = `chatgpt_connectors_oauth_connect_error`,
+                    h = F(f, c === T.OAUTH_FAILED_USER_CANCEL ? `cancelled` : `failed`, t ?? `unknown`, c);
+                if (ee.logValueEventWithStatsig({
+                        segmentEventName: `Connector OAuth Connect`,
+                        statsigEventName: f,
+                        data: {
+                            errorType: c,
+                            success: !1,
+                            type: t ?? `unknown`
+                        },
+                        eventId: h
+                    }), l != null) {
+                    L({
+                        outcome: `failure`,
+                        reason: `oauth_callback_failed`,
+                        connectorId: t
+                    }), r(l.returnPath, {
+                        replace: !0
+                    });
+                    return
+                }
+                r(M(c, K(D), d))
+            }
+        }
+        v().finally(() => {
+            let e = new URL(g).searchParams;
+            b(e.get(`oauth_state_id`) ?? e.get(`state`))
+        })
+    }, [e, a, t, c, r, u]), (0, Q.jsx)(`div`, {
+        className: `flex h-screen w-screen items-center justify-center`,
+        children: (0, Q.jsx)(q, {
+            size: 36
+        })
+    })
+}
+var ot, Z, Q, $, st, ct, lt = e((() => {
+    de(), ot = ve(), S(), D(), P(), je(), Ke(), L(), qe(), Se(), B(), N(), ke(), Ve(), Ie(), Qe(), Ye(), c(), be(), x(), v(), Ee(), Be(), Ne(), A(), a(), z(), V(), De(), g(), l(), rt(), r(), E(), u(), H(), _e(), Z = t(pe()), fe(), Ue(), Q = U(), ge(), $ = ce({
+        genericSuccess: {
+            id: `connectorPlatformOauthRedirect.genericSuccess`,
+            defaultMessage: `{connector} is now connected`
+        },
+        chatGPTForSlackInstallSuccess: {
+            id: `connectorPlatformOauthRedirect.chatGPTForSlackInstallSuccess`,
+            defaultMessage: `ChatGPT for Slack is now installed`
+        },
+        partialSuccess: {
+            id: `connectorPlatformOauthRedirect.partialSuccess`,
+            defaultMessage: `{connector} is connected, but not all requested permissions were granted. Some actions may not work until you reconnect.`
+        }
+    }), st = y(async () => (await me(async () => {
+        let {
+            ConnectorAuthCallbackBoundary: e
+        } = await import(`./3660315a-gcuze7wfdnmpijci.js`).then(e => (e.n(), e.r));
+        return {
+            ConnectorAuthCallbackBoundary: e
+        }
+    }, __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]))).ConnectorAuthCallbackBoundary, {
+        loading: () => (0, Q.jsx)(q, {
+            size: 36
+        })
+    }), ct = se(function() {
+        "use forget";
+        let e = (0, ot.c)(1),
+            t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Q.jsx)(st, {
+            url: typeof window > `u` ? `` : w(window.location.href) ?? window.location.href,
+            children: (0, Q.jsx)(at, {})
+        }), e[0] = t) : t = e[0], t
+    })
+}));
+export {
+    lt as n, ct as t
+};
+//# sourceMappingURL=e590b368-hhgxytq4om0nypl0.js.map

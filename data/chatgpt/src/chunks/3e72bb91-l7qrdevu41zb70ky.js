@@ -1,0 +1,1860 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/b0ac1aff-c2ctn87a02p8w2c0.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-lxa3wniynbx9ka2a.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/0f28d127-nerckj7ev4uundx3.js", "assets/conversation-small-kzsalymynzuddxee.js", "assets/30901919-i8ip8r0znvgcym38.js", "assets/c470f5ab-poh7ivjvb3j2jlfz.js", "assets/0e5afe53-dz59mkfveu52getp.js", "assets/conversation-small-bwtqiuwj.css"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $0 as n,
+    C8 as r,
+    Ch as i,
+    F7 as a,
+    Gw as o,
+    JT as s,
+    Jw as c,
+    Kw as l,
+    Ow as u,
+    Oz as d,
+    P1 as f,
+    P5 as p,
+    Qnt as m,
+    R1 as h,
+    Snt as g,
+    T8 as _,
+    TE as v,
+    TK as y,
+    Uw as b,
+    Vw as x,
+    X0 as S,
+    X1 as C,
+    X5 as w,
+    Xw as T,
+    Xy as E,
+    Y5 as D,
+    YT as O,
+    Ynt as k,
+    Z0 as A,
+    Z1 as j,
+    Zy as M,
+    bR as N,
+    bh as ee,
+    eK as P,
+    g8 as F,
+    git as I,
+    hit as L,
+    ist as R,
+    it as z,
+    kw as B,
+    kz as V,
+    ml as H,
+    n2 as U,
+    na as te,
+    nt as W,
+    oq as ne,
+    ot as re,
+    pl as ie,
+    pq as ae,
+    qnt as oe,
+    rK as se,
+    ra as ce,
+    rst as le,
+    trt as ue,
+    tt as de,
+    vR as fe,
+    wE as pe,
+    wK as me,
+    wnt as he,
+    z7 as ge,
+    zot as _e
+} from "./4813494d-lxa3wniynbx9ka2a.js";
+import {
+    At as ve,
+    Bn as ye,
+    Ln as be,
+    Nn as G,
+    Nt as xe,
+    O as Se,
+    Q as Ce,
+    Rn as we,
+    Vn as Te,
+    cn as Ee,
+    ct as De,
+    it as Oe,
+    ln as ke,
+    s as Ae,
+    wn as je,
+    zn as Me
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Bjt as Ne,
+    G7 as Pe,
+    GGn as Fe,
+    Gun as Ie,
+    IHn as Le,
+    Iun as Re,
+    J4t as ze,
+    K4t as Be,
+    L8t as Ve,
+    LHn as He,
+    MJ as Ue,
+    Q3t as We,
+    Qln as Ge,
+    Qst as Ke,
+    RHn as qe,
+    TCn as Je,
+    U8t as Ye,
+    UGn as Xe,
+    UMt as Ze,
+    V8t as Qe,
+    W4t as $e,
+    W7 as et,
+    WMt as tt,
+    Wun as nt,
+    X3t as rt,
+    XUn as it,
+    Xst as at,
+    Y3t as ot,
+    Y4t as st,
+    Z3t as ct,
+    ZMt as lt,
+    ZUn as ut,
+    _kt as dt,
+    eNt as ft,
+    gkt as pt,
+    jJ as mt,
+    m2t as ht,
+    p2t as gt,
+    rNt as _t,
+    rWn as vt,
+    tWn as yt,
+    vNn as bt,
+    xCn as xt,
+    yNn as St,
+    zjt as Ct
+} from "./conversation-small-kzsalymynzuddxee.js";
+import {
+    $f as wt,
+    $x as Tt,
+    Kb as Et,
+    Kv as Dt,
+    Qf as Ot,
+    Qx as kt,
+    Zf as At,
+    ep as jt,
+    ex as Mt,
+    hv as Nt,
+    ip as Pt,
+    mv as Ft,
+    np as It,
+    qb as Lt,
+    qv as Rt,
+    rp as zt,
+    tp as Bt,
+    tx as Vt
+} from "./30901919-i8ip8r0znvgcym38.js";
+import {
+    MS as Ht,
+    NS as Ut,
+    VC as Wt,
+    cx as Gt,
+    dC as Kt,
+    hx as qt,
+    ix as Jt,
+    px as Yt,
+    rx as Xt
+} from "./c2675c8c-ossqum2x3eut0sh8.js";
+import {
+    $u as Zt,
+    Ch as Qt,
+    Oh as $t,
+    Sh as en,
+    bu as tn,
+    nd as nn,
+    wh as rn,
+    xh as an,
+    xu as on
+} from "./8b34dbc2-ba6wt3zxvh7jce7p.js";
+import {
+    Ht as sn,
+    Vt as cn
+} from "./c470f5ab-poh7ivjvb3j2jlfz.js";
+import {
+    a as ln,
+    i as un,
+    n as dn
+} from "./5f4d7fa0-iup2y8safm6e3rns.js";
+import {
+    n as fn,
+    t as pn
+} from "./673c0d9b-hy3gosteleontu6t.js";
+import {
+    i as mn,
+    l as hn,
+    o as gn,
+    u as _n
+} from "./e19f3910-lgeeqbhmp0xakbkl.js";
+import {
+    d as vn,
+    o as yn
+} from "./e9df0b0e-ozryisgig49a1a51.js";
+import {
+    r as bn,
+    t as xn
+} from "./f23f926c-mko9045d9b1einur.js";
+import {
+    n as Sn,
+    t as Cn
+} from "./ab4d12c6-pmy46pdq8adgqj8s.js";
+import {
+    n as wn,
+    t as Tn
+} from "./dd81d43b-bcgh71lbv54es820.js";
+import {
+    n as En,
+    t as Dn
+} from "./19189336-gn6jzwpxryifj33p.js";
+import {
+    n as On,
+    o as kn,
+    s as An,
+    t as jn
+} from "./a0561fd6-fh1idbddavjixqlz.js";
+import {
+    n as Mn,
+    r as Nn
+} from "./333fd2ad-gvlenczmc54lab1e.js";
+import {
+    i as Pn,
+    t as Fn
+} from "./fab52ad7-pn49xkwssmm0erwp.js";
+import {
+    r as In,
+    t as Ln
+} from "./d848de1a-mfr5ixs5a236l7ec.js";
+import {
+    i as Rn,
+    r as zn
+} from "./ab92372e-hjdw4ozpna7s95h0.js";
+
+function Bn() {
+    "use forget";
+    let e = (0, Kn.c)(39),
+        t = Me(),
+        n = Ie(Gn),
+        r = Ie(Wn),
+        i = Ie(Un),
+        a = Ie(Hn),
+        {
+            connectorId: o
+        } = un(),
+        {
+            eligible: c,
+            isLoading: l
+        } = _t(),
+        u;
+    e[0] === a ? u = e[1] : (u = !!a && !a.startsWith(`gitlab-`), e[0] = a, e[1] = u);
+    let d = u,
+        f = a ?? ``,
+        p;
+    e[2] !== o || e[3] !== f ? (p = [`wham`, `repository`, f, o], e[2] = o, e[3] = f, e[4] = p) : p = e[4];
+    let m;
+    e[5] !== o || e[6] !== a ? (m = () => ie.getRepository(a ?? ``, o), e[5] = o, e[6] = a, e[7] = m) : m = e[7];
+    let h;
+    e[8] !== d || e[9] !== p || e[10] !== m ? (h = {
+        queryKey: p,
+        enabled: d,
+        queryFn: m,
+        staleTime: 3e5
+    }, e[8] = d, e[9] = p, e[10] = m, e[11] = h) : h = e[11];
+    let {
+        data: g
+    } = Se(h);
+    if (!n || !r || l || !c) return null;
+    let _ = `/codex/cloud/settings/environment/${n}/edit`,
+        v;
+    e[12] !== i || e[13] !== c ? (v = () => {
+        i(), c && z(lt)
+    }, e[12] = i, e[13] = c, e[14] = v) : v = e[14];
+    let y = v,
+        b;
+    e[15] !== i || e[16] !== c ? (b = () => {
+        c && z(lt), i()
+    }, e[15] = i, e[16] = c, e[17] = b) : b = e[17];
+    let x = b,
+        S;
+    e[18] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, K.jsx)(`div`, {
+        className: `rounded-full p-1`,
+        children: (0, K.jsx)(zt, {
+            className: `text-token-text-primary size-4`
+        })
+    }), e[18] = S) : S = e[18];
+    let C;
+    e[19] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, K.jsx)(`div`, {
+        className: `flex-1 text-sm`,
+        children: (0, K.jsx)(`p`, {
+            className: `text-token-text-primary font-medium`,
+            children: (0, K.jsx)(G, {
+                id: `wham.envlessEnvironmentPopover.title`,
+                defaultMessage: `Environment created`
+            })
+        })
+    }), e[19] = C) : C = e[19];
+    let w;
+    e[20] === t ? w = e[21] : (w = t.formatMessage({
+        id: `wham.envlessEnvironmentPopover.dismiss`,
+        defaultMessage: `Dismiss environment onboarding popover`
+    }), e[20] = t, e[21] = w);
+    let T;
+    e[22] !== y || e[23] !== w ? (T = (0, K.jsxs)(`div`, {
+        className: `flex items-center gap-3`,
+        children: [S, C, (0, K.jsx)(s, {
+            size: `small`,
+            color: `ghost`,
+            icon: Ft,
+            "aria-label": w,
+            onClick: y
+        })]
+    }), e[22] = y, e[23] = w, e[24] = T) : T = e[24];
+    let E;
+    e[25] === g ? E = e[26] : (E = (0, K.jsx)(`p`, {
+        children: g?.name ? (0, K.jsx)(G, {
+            id: `wham.envlessEnvironmentPopover.bodyRest1`,
+            defaultMessage: `Codex has created a default environment for your repo: <b>{repoName}</b>.`,
+            values: {
+                b: Vn,
+                repoName: g.name
+            }
+        }) : (0, K.jsx)(G, {
+            id: `wham.envlessEnvironmentPopover.bodyRest1NoRepo`,
+            defaultMessage: `To get the most out of Codex, add the packages and tools your project depends on.`
+        })
+    }), e[25] = g, e[26] = E);
+    let D;
+    e[27] === Symbol.for(`react.memo_cache_sentinel`) ? (D = (0, K.jsx)(`p`, {
+        children: (0, K.jsx)(G, {
+            id: `wham.envlessEnvironmentPopover.bodyRest2`,
+            defaultMessage: `To enable full testing and framework support, customize it with the languages and tools you use.`
+        })
+    }), e[27] = D) : D = e[27];
+    let O;
+    e[28] === E ? O = e[29] : (O = (0, K.jsx)(`p`, {
+        className: `text-token-text-primary pt-2 text-sm`,
+        children: (0, K.jsxs)(`div`, {
+            className: `flex flex-col gap-2`,
+            children: [E, D]
+        })
+    }), e[28] = E, e[29] = O);
+    let k, A;
+    e[30] === Symbol.for(`react.memo_cache_sentinel`) ? (k = (0, K.jsx)(G, {
+        id: `wham.envlessEnvironmentPopover.editLink`,
+        defaultMessage: `Edit environment`
+    }), A = (0, K.jsx)(Dt, {
+        className: `size-3.5`
+    }), e[30] = k, e[31] = A) : (k = e[30], A = e[31]);
+    let j;
+    e[32] !== _ || e[33] !== x ? (j = (0, K.jsx)(`div`, {
+        className: `flex w-full justify-end`,
+        children: (0, K.jsxs)(Oe, {
+            to: _,
+            className: `text-token-text-accent hover:text-token-text-accent/80 mt-3 inline-flex items-center gap-1 font-medium underline`,
+            onClick: x,
+            children: [k, A]
+        })
+    }), e[32] = _, e[33] = x, e[34] = j) : j = e[34];
+    let M;
+    return e[35] !== T || e[36] !== O || e[37] !== j ? (M = (0, K.jsx)(`div`, {
+        className: `pointer-events-none fixed end-4 bottom-4 z-50 flex justify-end`,
+        children: (0, K.jsxs)(`div`, {
+            className: `border-token-border-default bg-token-bg-primary dark:bg-token-bg-tertiary pointer-events-auto w-80 max-w-full rounded-2xl border p-4 shadow-[0px_16px_48px_rgba(0,0,0,0.16)]`,
+            children: [T, O, j]
+        })
+    }), e[35] = T, e[36] = O, e[37] = j, e[38] = M) : M = e[38], M
+}
+
+function Vn(e) {
+    return (0, K.jsx)(`b`, {
+        children: e
+    })
+}
+
+function Hn(e) {
+    return e.selectedRepositoryId
+}
+
+function Un(e) {
+    return e.dismissEnvironmentOnboardingPopover
+}
+
+function Wn(e) {
+    return e.showEnvironmentOnboardingPopover
+}
+
+function Gn(e) {
+    return e.autoCreatedEnvironmentId
+}
+var Kn, K, qn = e((() => {
+    Kn = je(), O(), Rt(), Pt(), Nt(), W(), ft(), dn(), H(), nt(), Ae(), we(), Ce(), K = ye()
+}));
+
+function Jn({
+    connectorError: e,
+    isConnected: t,
+    isGithubDisabledByAdmin: n,
+    isLoading: r
+}) {
+    return r ? `loading` : e ? `error` : n ? `disabled` : t ? `connected` : `disconnected`
+}
+
+function Yn({
+    githubAccessStatus: e,
+    hasAdminAccess: t = !1
+}) {
+    if (e === `loading`) return !1;
+    if (t === !0) return !0;
+    switch (e) {
+        case `connected`:
+        case `error`:
+            return !0;
+        case `disabled`:
+        case `disconnected`:
+            return !1
+    }
+}
+
+function Xn(e) {
+    "use forget";
+    let t = (0, Zn.c)(18),
+        n;
+    t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+    let {
+        redirectAfter: r
+    } = n, i = r === void 0 ? `/codex/cloud/security` : r, a;
+    t[2] === i ? a = t[3] : (a = {
+        redirectAfter: i
+    }, t[2] = i, t[3] = a);
+    let {
+        error: o,
+        isConnected: s,
+        isLoading: c,
+        openGithubModal: l,
+        platformConnector: u,
+        refetch: d
+    } = un(a), f = u?.status === `DISABLED_BY_ADMIN`, p;
+    t[4] !== o || t[5] !== s || t[6] !== f || t[7] !== c ? (p = Jn({
+        connectorError: o,
+        isConnected: s,
+        isGithubDisabledByAdmin: f,
+        isLoading: c
+    }), t[4] = o, t[5] = s, t[6] = f, t[7] = c, t[8] = p) : p = t[8];
+    let m = p,
+        h;
+    return t[9] !== o || t[10] !== s || t[11] !== f || t[12] !== c || t[13] !== l || t[14] !== u || t[15] !== d || t[16] !== m ? (h = {
+        connectorError: o,
+        isConnected: s,
+        isGithubDisabledByAdmin: f,
+        isLoading: c,
+        openGithubModal: l,
+        platformConnector: u,
+        refetch: d,
+        status: m
+    }, t[9] = o, t[10] = s, t[11] = f, t[12] = c, t[13] = l, t[14] = u, t[15] = d, t[16] = m, t[17] = h) : h = t[17], h
+}
+var Zn, Qn = e((() => {
+    Zn = je(), dn()
+}));
+
+function $n(e) {
+    return e === -1 ? null : e
+}
+
+function er() {
+    "use forget";
+    let e = (0, ir.c)(27),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = f()?.getWorkspaceId(), e[0] = t) : t = e[0];
+    let n = vn(t),
+        r, i, a, o, s, c, l, u, d, p;
+    if (e[1] !== n.hasLoadedAllPages || e[2] !== n.quotaUsedCount || e[3] !== n.scanMap) {
+        let t = m(`3689744552`);
+        d = $n(t.get(`scans_count`, ar.scans_count)), c = t.get(`lookback_days`, ar.lookback_days), i = $n(c);
+        let f = t.get(`lookback_days_options`, ar.lookback_days_options).map(rr);
+        o = t.get(`min_commits`, ar.min_commits), a = t.get(`max_commits`, ar.max_commits), u = $n(t.get(`remaining_scans_cta_threshold`, ar.remaining_scans_cta_threshold)), s = n.quotaUsedCount ?? (n.hasLoadedAllPages ? n.scanMap.size : void 0), l = d == null || s === void 0 ? null : Math.max(d - s, 0), r = l != null && u != null && l <= u, p = Array.from(new Set([...f, c].filter(nr))).sort(tr), e[1] = n.hasLoadedAllPages, e[2] = n.quotaUsedCount, e[3] = n.scanMap, e[4] = r, e[5] = i, e[6] = a, e[7] = o, e[8] = s, e[9] = c, e[10] = l, e[11] = u, e[12] = d, e[13] = p
+    } else r = e[4], i = e[5], a = e[6], o = e[7], s = e[8], c = e[9], l = e[10], u = e[11], d = e[12], p = e[13];
+    let h = p,
+        g = l != null && l <= 0,
+        _ = n.isLoading || s === void 0,
+        v = c === -1,
+        y;
+    return e[14] !== r || e[15] !== i || e[16] !== a || e[17] !== o || e[18] !== h || e[19] !== s || e[20] !== l || e[21] !== u || e[22] !== d || e[23] !== g || e[24] !== _ || e[25] !== v ? (y = {
+        isExhausted: g,
+        isLoading: _,
+        isNearScanLimit: r,
+        lookbackDaysLimit: i,
+        lookbackDaysOptions: h,
+        maxCommits: a,
+        minCommits: o,
+        ownedScanCount: s,
+        remainingScans: l,
+        remainingScansCtaThreshold: u,
+        scansCount: d,
+        supportsIndefiniteLookback: v
+    }, e[14] = r, e[15] = i, e[16] = a, e[17] = o, e[18] = h, e[19] = s, e[20] = l, e[21] = u, e[22] = d, e[23] = g, e[24] = _, e[25] = v, e[26] = y) : y = e[26], y
+}
+
+function tr(e, t) {
+    return e - t
+}
+
+function nr(e) {
+    return e > 0
+}
+
+function rr(e) {
+    return Number(e)
+}
+var ir, ar, or = e((() => {
+    ir = je(), yn(), h(), ue(), ar = {
+        scans_count: -1,
+        lookback_days: -1,
+        lookback_days_options: [7, 14, 30, 60],
+        min_commits: 1e3,
+        max_commits: 1e4,
+        remaining_scans_cta_threshold: -1
+    }
+}));
+
+function sr(e) {
+    "use forget";
+    let t = (0, ur.c)(34),
+        {
+            hasRecordedInterest: n,
+            isPopoverOpen: r,
+            onDismissPermanently: i,
+            onGetInTouch: a,
+            onMaybeLater: o,
+            onOpenChange: c
+        } = e,
+        l = Me(),
+        u;
+    t[0] === l ? u = t[1] : (u = l.formatMessage({
+        id: `wham.whamHeader.getMoreScansAriaLabel`,
+        defaultMessage: `Open the get more scans dialog`
+    }), t[0] = l, t[1] = u);
+    let d;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, q.jsx)(`span`, {
+        className: `flex items-center gap-1`,
+        children: (0, q.jsx)(G, {
+            id: `wham.whamHeader.getMoreScans`,
+            defaultMessage: `Get more scans`
+        })
+    }), t[2] = d) : d = t[2];
+    let f;
+    t[3] === u ? f = t[4] : (f = (0, q.jsx)(s, {
+        type: `button`,
+        color: `secondary`,
+        label: u,
+        children: d
+    }), t[3] = u, t[4] = f);
+    let p;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, q.jsx)(`div`, {
+        className: `text-token-text-primary text-[15px] leading-5 font-medium`,
+        children: (0, q.jsx)(G, {
+            id: `wham.securityRateLimitModal.title`,
+            defaultMessage: `Codex Security is in Research Preview`
+        })
+    }), t[5] = p) : p = t[5];
+    let m;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, q.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [p, (0, q.jsx)(`div`, {
+            className: `text-token-text-secondary text-sm leading-5`,
+            children: (0, q.jsx)(G, {
+                id: `wham.securityRateLimitModal.description`,
+                defaultMessage: `Codex Security is in Research Preview with limits on the number of scans you can perform. If you'd like early access to the paid version, please let us know.`
+            })
+        })]
+    }), t[6] = m) : m = t[6];
+    let h;
+    t[7] === a ? h = t[8] : (h = () => void a(), t[7] = a, t[8] = h);
+    let g;
+    t[9] !== n || t[10] !== l ? (g = n ? l.formatMessage({
+        id: `wham.securityRateLimitModal.success`,
+        defaultMessage: `Thanks! Your response has been recorded`
+    }) : l.formatMessage({
+        id: `wham.securityRateLimitModal.getInTouch`,
+        defaultMessage: `Yes, get in touch with me`
+    }), t[9] = n, t[10] = l, t[11] = g) : g = t[11];
+    let _;
+    t[12] !== h || t[13] !== g ? (_ = (0, q.jsx)(s, {
+        color: `primary`,
+        fullWidth: !0,
+        onClick: h,
+        children: g
+    }), t[12] = h, t[13] = g, t[14] = _) : _ = t[14];
+    let v;
+    t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, q.jsx)(G, {
+        id: `wham.securityRateLimitModal.maybeLater`,
+        defaultMessage: `Maybe later`
+    }), t[15] = v) : v = t[15];
+    let y;
+    t[16] === o ? y = t[17] : (y = (0, q.jsx)(s, {
+        color: `ghost`,
+        onClick: o,
+        children: v
+    }), t[16] = o, t[17] = y);
+    let b;
+    t[18] === i ? b = t[19] : (b = () => void i(), t[18] = i, t[19] = b);
+    let x;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, q.jsx)(G, {
+        id: `wham.securityRateLimitModal.noThanks`,
+        defaultMessage: `No thanks`
+    }), t[20] = x) : x = t[20];
+    let S;
+    t[21] === b ? S = t[22] : (S = (0, q.jsx)(s, {
+        color: `secondary`,
+        onClick: b,
+        children: x
+    }), t[21] = b, t[22] = S);
+    let C;
+    t[23] !== y || t[24] !== S ? (C = (0, q.jsxs)(`div`, {
+        className: `flex items-center justify-end gap-2`,
+        children: [y, S]
+    }), t[23] = y, t[24] = S, t[25] = C) : C = t[25];
+    let w;
+    t[26] !== C || t[27] !== _ ? (w = (0, q.jsxs)(`div`, {
+        className: `flex flex-col gap-4`,
+        children: [m, (0, q.jsxs)(`div`, {
+            className: `flex flex-col gap-2`,
+            children: [_, C]
+        })]
+    }), t[26] = C, t[27] = _, t[28] = w) : w = t[28];
+    let T;
+    return t[29] !== r || t[30] !== c || t[31] !== w || t[32] !== f ? (T = (0, q.jsx)(et, {
+        open: r,
+        onOpenChange: c,
+        side: `bottom`,
+        alignAgainstAnchor: `start`,
+        sideOffset: 4,
+        disableAutofocus: !0,
+        className: `w-[440px] max-w-[440px] rounded-2xl p-4`,
+        triggerButton: f,
+        children: w
+    }), t[29] = r, t[30] = c, t[31] = w, t[32] = f, t[33] = T) : T = t[33], T
+}
+
+function cr() {
+    "use forget";
+    let e = (0, ur.c)(1),
+        {
+            hasAdminAccess: t
+        } = fn(),
+        {
+            status: n
+        } = Xn();
+    if (!Yn({
+            githubAccessStatus: n,
+            hasAdminAccess: t
+        })) return null;
+    let r;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, q.jsx)(lr, {}), e[0] = r) : r = e[0], r
+}
+
+function lr() {
+    "use forget";
+    let e = (0, ur.c)(7),
+        [t, n] = (0, dr.useState)(!1),
+        [r, i] = (0, dr.useState)(!1),
+        {
+            eligible: a,
+            isLoading: o
+        } = re(de.hasAcknowledgedAardvarkScanLimitAnnouncement),
+        {
+            isNearScanLimit: s,
+            scansCount: c
+        } = er(),
+        l = s && (!o && a && c != null && s || r),
+        u;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (u = () => {
+        n(!1), g.logStructuredEvent(`CodexSecurityScanLimitPromptAction`, {
+            actionType: bt.CODEX_SECURITY_SCAN_LIMIT_PROMPT_ACTION_TYPE_MAYBE_LATER
+        })
+    }, e[0] = u) : u = e[0];
+    let d = u,
+        f;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (f = async () => {
+        n(!1), g.logStructuredEvent(`CodexSecurityScanLimitPromptAction`, {
+            actionType: bt.CODEX_SECURITY_SCAN_LIMIT_PROMPT_ACTION_TYPE_DISMISS
+        }), await z(de.hasAcknowledgedAardvarkScanLimitAnnouncement)
+    }, e[1] = f) : f = e[1];
+    let p = f,
+        m;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (m = async () => {
+        i(!0), g.logStructuredEvent(`CodexSecurityScanLimitPromptAction`, {
+            actionType: bt.CODEX_SECURITY_SCAN_LIMIT_PROMPT_ACTION_TYPE_GET_IN_TOUCH
+        }), await z(de.hasAcknowledgedAardvarkScanLimitAnnouncement)
+    }, e[2] = m) : m = e[2];
+    let h = m,
+        _;
+    e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = e => {
+        n(e), e || i(!1)
+    }, e[3] = _) : _ = e[3];
+    let v = _,
+        y;
+    return e[4] !== r || e[5] !== t ? (y = (0, q.jsx)(sr, {
+        hasRecordedInterest: r,
+        isPopoverOpen: t,
+        onDismissPermanently: p,
+        onGetInTouch: h,
+        onMaybeLater: d,
+        onOpenChange: v
+    }), e[4] = r, e[5] = t, e[6] = y) : y = e[6], l ? y : null
+}
+var ur, dr, q, fr = e((() => {
+    ur = je(), pn(), O(), Qn(), or(), Pe(), W(), he(), St(), dr = t(Te()), we(), q = ye()
+}));
+
+function pr() {
+    return m(`349697204`)
+}
+
+function mr() {
+    "use forget";
+    let e = (0, xr.c)(2),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = I(), e[0] = t) : t = e[0];
+    let n = !t;
+    pt.markStart(`WhamLoginOrProfileMenu`), pt.markRendered(`WhamLoginOrProfileMenu`);
+    let r;
+    return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (r = n ? (0, J.jsx)(Zt, {}) : (0, J.jsx)(hr, {}), e[1] = r) : r = e[1], r
+}
+
+function hr() {
+    "use forget";
+    let e = (0, xr.c)(57),
+        {
+            data: t
+        } = C(),
+        n = N(),
+        r = f(),
+        i = xe(),
+        a = ve(),
+        o = Me(),
+        s = pr(),
+        c = _e(),
+        {
+            openSettings: l
+        } = ht(),
+        u = Ie(br),
+        d = Ie(yr),
+        p;
+    e[0] === i ? p = e[1] : (p = () => {
+        i(`/codex/cloud/settings/general`)
+    }, e[0] = i, e[1] = p);
+    let m = p;
+    if (!r) {
+        let t;
+        return e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, J.jsx)(`div`, {
+            className: `flex h-10 w-10 items-center justify-center`,
+            children: (0, J.jsx)(`div`, {
+                className: `bg-token-bg-tertiary h-8 w-8 rounded-full`
+            })
+        }), e[2] = t) : t = e[2], t
+    }
+    let {
+        showAccountSwitcher: h
+    } = $e({
+        accountState: t,
+        currentSession: c,
+        user: n
+    }), g = h, _;
+    e[3] === g ? _ = e[4] : (_ = () => {
+        g && st()
+    }, e[3] = g, e[4] = _);
+    let v = _,
+        y;
+    e[5] === a.pathname ? y = e[6] : (y = a.pathname.startsWith(`/codex/cloud/onboarding`), e[5] = a.pathname, e[6] = y);
+    let b = y,
+        x;
+    e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (x = ct(), e[7] = x) : x = e[7];
+    let S = x,
+        w = s.get(`changelog_date`, ``),
+        T = s.get(`changelog_url`, ``),
+        E;
+    bb0: {
+        if (!w) {
+            E = !1;
+            break bb0
+        }
+        let e = new Date(w);
+        if (Number.isNaN(e.getTime())) {
+            E = !1;
+            break bb0
+        }
+        E = Date.now() - e.getTime() < 6048e5
+    }
+    let D = E && u !== w,
+        O;
+    e[8] === D ? O = e[9] : (O = () => (0, J.jsxs)(`span`, {
+        className: `relative`,
+        children: [(0, J.jsx)(te, {
+            className: `icon`,
+            "aria-hidden": `true`
+        }), D && (0, J.jsx)(Ct, {
+            color: `blue`,
+            className: `border-token-bg-primary absolute end-0 top-0 border`
+        })]
+    }), e[8] = D, e[9] = O);
+    let k = O,
+        A;
+    e[10] === v ? A = e[11] : (A = e => {
+        e && v()
+    }, e[10] = v, e[11] = A);
+    let j;
+    e[12] === o ? j = e[13] : (j = o.formatMessage({
+        id: `wham.whamProfile.openProfileMenu`,
+        defaultMessage: `Open Profile Menu`
+    }), e[12] = o, e[13] = j);
+    let M;
+    e[14] === Symbol.for(`react.memo_cache_sentinel`) ? (M = (0, J.jsx)(ee, {
+        showPlanTypeBadge: !0
+    }), e[14] = M) : M = e[14];
+    let P;
+    e[15] === D ? P = e[16] : (P = D && (0, J.jsx)(Ct, {
+        color: `blue`,
+        className: `border-token-bg-primary absolute end-0 top-0 border`
+    }), e[15] = D, e[16] = P);
+    let F;
+    e[17] === P ? F = e[18] : (F = (0, J.jsxs)(`span`, {
+        className: `relative`,
+        children: [M, P]
+    }), e[17] = P, e[18] = F);
+    let I;
+    e[19] !== v || e[20] !== F || e[21] !== j ? (I = (0, J.jsx)(`button`, {
+        onFocus: v,
+        onMouseEnter: v,
+        onClick: vr,
+        "aria-label": j,
+        "data-testid": `profile-button`,
+        className: `text-token-text-secondary hover:text-token-text-primary hover:bg-token-interactive-bg-secondary-hover radix-state-open:text-token-text-secondary flex h-10 w-10 items-center justify-center rounded-full px-1 transition focus-visible:outline-0`,
+        children: F
+    }), e[19] = v, e[20] = F, e[21] = j, e[22] = I) : I = e[22];
+    let L;
+    e[23] === g ? L = e[24] : (L = (0, J.jsx)(an, {
+        showAccountSwitcher: g,
+        accountSwitcherRedirectUrl: `/codex/cloud?refresh_account=true`
+    }), e[23] = g, e[24] = L);
+    let R;
+    e[25] !== b || e[26] !== m ? (R = !b && (0, J.jsx)(He.Item, {
+        onClick: m,
+        icon: Bt,
+        "data-testid": `accounts-settings-button`,
+        children: (0, J.jsx)(G, {
+            id: `wham.whamProfile.codexSettings`,
+            defaultMessage: `Codex settings`
+        })
+    }), e[25] = b, e[26] = m, e[27] = R) : R = e[27];
+    let z;
+    e[28] === Symbol.for(`react.memo_cache_sentinel`) ? (z = (0, J.jsx)(Qt, {}), e[28] = z) : z = e[28];
+    let B;
+    e[29] === l ? B = e[30] : (B = () => l(), e[29] = l, e[30] = B);
+    let V;
+    e[31] === Symbol.for(`react.memo_cache_sentinel`) ? (V = (0, J.jsx)(G, {
+        id: `wham.whamProfile.chatgptSettings`,
+        defaultMessage: `ChatGPT settings`
+    }), e[31] = V) : V = e[31];
+    let H;
+    e[32] === B ? H = e[33] : (H = (0, J.jsx)(He.Item, {
+        icon: Lt,
+        onClick: B,
+        "data-testid": `settings-menu-item`,
+        children: V
+    }), e[32] = B, e[33] = H);
+    let U;
+    e[34] === Symbol.for(`react.memo_cache_sentinel`) ? (U = (0, J.jsx)(He.Item, {
+        className: `touch:hidden`,
+        icon: jt,
+        onPointerOver: _r,
+        onClick: gr,
+        children: (0, J.jsx)(G, {
+            id: `wham.whamProfile.keyboardShortcutsMenu`,
+            defaultMessage: `Keyboard shortcuts`
+        })
+    }), e[34] = U) : U = e[34];
+    let W;
+    e[35] !== k || e[36] !== w || e[37] !== T || e[38] !== b || e[39] !== d ? (W = !b && T && (0, J.jsx)(He.LinkItem, {
+        icon: k,
+        external: !0,
+        to: T,
+        onClick: () => {
+            w && d(w)
+        },
+        children: (0, J.jsx)(G, {
+            id: `wham.whamProfile.changelog`,
+            defaultMessage: `Changelog`
+        })
+    }), e[35] = k, e[36] = w, e[37] = T, e[38] = b, e[39] = d, e[40] = W) : W = e[40];
+    let ne;
+    e[41] === Symbol.for(`react.memo_cache_sentinel`) ? (ne = (0, J.jsxs)(J.Fragment, {
+        children: [(0, J.jsx)(He.Separator, {}), (0, J.jsx)(en, {})]
+    }), e[41] = ne) : ne = e[41];
+    let re;
+    e[42] === S ? re = e[43] : (re = (S || !1) && (0, J.jsx)(He.Separator, {}), e[42] = S, e[43] = re);
+    let ie;
+    e[44] === S ? ie = e[45] : (ie = S && (0, J.jsx)(ot, {}), e[44] = S, e[45] = ie);
+    let ae, oe;
+    e[46] === Symbol.for(`react.memo_cache_sentinel`) ? (ae = !1, oe = (0, J.jsx)(rn, {}), e[46] = ae, e[47] = oe) : (ae = e[46], oe = e[47]);
+    let se;
+    return e[48] !== I || e[49] !== L || e[50] !== R || e[51] !== H || e[52] !== W || e[53] !== re || e[54] !== ie || e[55] !== A ? (se = (0, J.jsxs)(Le, {
+        onOpenChange: A,
+        triggerButton: I,
+        children: [L, R, z, H, U, W, ne, re, ie, ae, oe]
+    }), e[48] = I, e[49] = L, e[50] = R, e[51] = H, e[52] = W, e[53] = re, e[54] = ie, e[55] = A, e[56] = se) : se = e[56], se
+}
+
+function gr() {
+    U(Sr)
+}
+
+function _r() {
+    return Sr.prefetch()
+}
+
+function vr() {
+    g.logEvent(`Account: Open Profile Menu`), oe.logEvent(`chatgpt_account_open_profile_menu`)
+}
+
+function yr(e) {
+    return e.setLastClickedChangelogDate
+}
+
+function br(e) {
+    return e.lastClickedChangelogDate
+}
+var xr, J, Sr, Cr = e((() => {
+    xr = je(), i(), Ne(), qe(), It(), ce(), Et(), wt(), n(), We(), rt(), nn(), ze(), Be(), $t(), gt(), h(), fe(), L(), he(), dt(), ue(), nt(), A(), we(), Ce(), J = ye(), ke(), Sr = S(() => Ee(() => import(`./b0ac1aff-c2ctn87a02p8w2c0.js`).then(e => (e.t(), e.r)).then(e => e.WhamKeyboardActionsModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])))
+}));
+
+function wr() {
+    return k(`4285716042`)
+}
+var Tr = e((() => {
+    ue()
+}));
+
+function Er({
+    isUpsell: e = !1
+} = {}) {
+    return !e
+}
+var Dr = e((() => {}));
+
+function Or(e, t) {
+    return !e || !t ? null : Ar({
+        workspaceId: e,
+        viewerId: _e()?.user?.id
+    })
+}
+
+function kr(e) {
+    return Qe(Ve(`/agent-security`, e, void 0, typeof window > `u` ? `` : window.location.search), e)
+}
+var Ar, jr = e((() => {
+    Ye(), y(), F(), L(), ge(), Ar = _(({
+        workspaceId: e,
+        viewerId: t
+    }) => r(() => ({
+        queryKey: [`wham`, `agent-policy-editor`, e, t],
+        queryFn: async ({
+            signal: t
+        }) => {
+            let n = await a.safeGet(`/wham/config/agent-enterprise-managed`, {
+                signal: t,
+                additionalHeaders: me(e),
+                cache: `no-store`
+            });
+            if (typeof n.capabilities?.can_view != `boolean`) throw Error(`Policy editor status is unavailable`);
+            return n.editor_enabled === !0 && n.capabilities.can_view && !n.legacy_policy_editor_required
+        },
+        staleTime: 0,
+        retry: !1,
+        refetchOnWindowFocus: `always`
+    })))
+}));
+
+function Mr(e) {
+    "use forget";
+    let t = (0, Pr.c)(22),
+        {
+            text: n,
+            path: r,
+            isActive: i,
+            trailing: a,
+            disabledReason: o
+        } = e,
+        s = xe(),
+        c = o != null,
+        l = c || void 0,
+        u = c ? `text-token-text-tertiary cursor-not-allowed` : `hover:bg-token-bg-tertiary hover:cursor-pointer`,
+        d = i && !c && `bg-token-bg-tertiary font-semibold`,
+        f;
+    t[0] !== u || t[1] !== d ? (f = D(`flex w-full items-center gap-3 rounded-md p-2 text-start`, u, d), t[0] = u, t[1] = d, t[2] = f) : f = t[2];
+    let p;
+    t[3] !== c || t[4] !== s || t[5] !== r ? (p = () => {
+        c || s(r)
+    }, t[3] = c, t[4] = s, t[5] = r, t[6] = p) : p = t[6];
+    let m;
+    t[7] === n ? m = t[8] : (m = (0, Y.jsx)(`span`, {
+        className: `min-w-0 flex-1 truncate`,
+        children: n
+    }), t[7] = n, t[8] = m);
+    let h;
+    t[9] !== c || t[10] !== a ? (h = c ? (0, Y.jsx)(Tt, {
+        "aria-hidden": !0,
+        className: `size-4 shrink-0`
+    }) : a, t[9] = c, t[10] = a, t[11] = h) : h = t[11];
+    let g;
+    t[12] !== l || t[13] !== f || t[14] !== p || t[15] !== m || t[16] !== h ? (g = (0, Y.jsxs)(`button`, {
+        type: `button`,
+        "aria-disabled": l,
+        className: f,
+        onClick: p,
+        children: [m, h]
+    }), t[12] = l, t[13] = f, t[14] = p, t[15] = m, t[16] = h, t[17] = g) : g = t[17];
+    let _ = g,
+        v;
+    return t[18] !== _ || t[19] !== o || t[20] !== c ? (v = c ? (0, Y.jsx)(E, {
+        label: o,
+        side: `right`,
+        className: `w-full`,
+        children: _
+    }) : _, t[18] = _, t[19] = o, t[20] = c, t[21] = v) : v = t[21], v
+}
+
+function Nr() {
+    "use forget";
+    let e = (0, Pr.c)(63),
+        t = le(),
+        n = Me(),
+        r = j(),
+        i;
+    e[0] === r ? i = e[1] : (i = Xt(r), e[0] = r, e[1] = i);
+    let a = i,
+        o = ve(),
+        s = Pn(),
+        c = tt(),
+        l = Nn(),
+        u = An(t),
+        d = p(On),
+        f = l || !d.isError && d.data?.capabilities?.can_view === !0,
+        m;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (m = Er(), e[2] = m) : m = e[2];
+    let h = m,
+        g = h,
+        _ = s || h,
+        v = c !== `DISABLED`,
+        y;
+    e[3] === r ? y = e[4] : (y = r?.getWorkspaceId(), e[3] = r, e[4] = y);
+    let b = y,
+        x;
+    e[5] !== l || e[6] !== u || e[7] !== b ? (x = () => Or(b, l && u), e[5] = l, e[6] = u, e[7] = b, e[8] = x) : x = e[8];
+    let S = p(x),
+        C;
+    e[9] !== S || e[10] !== b ? (C = b && S?.isSuccess && S.data ? kr(b) : void 0, e[9] = S, e[10] = b, e[11] = C) : C = e[11];
+    let w = C,
+        {
+            data: T
+        } = se(b),
+        E = r?.data.role != null && xt(r.data.role),
+        D = b != null && (l || E),
+        O = Re(),
+        k = D && O.isSuccess && O.data.codex_notifications_console_enabled === !0 ? Qe(Ve(`/general#workspace-codex-notifications`, b), b) : null,
+        A = v && D && wr(),
+        M = r?.planType,
+        N;
+    e[12] === M ? N = e[13] : (N = qt(M), e[12] = M, e[13] = N);
+    let ee = !N && Gt(T?.permissions, {
+            hasWorkspaceAdminRole: E,
+            planType: r?.planType
+        }) && (r?.isFedrampCompliantWorkspace !== !0 || Ln(b).adminConsoleUrl != null),
+        P;
+    e[14] === Symbol.for(`react.memo_cache_sentinel`) ? (P = (0, Y.jsx)(`p`, {
+        className: `text-text-primary py-2 ps-2 text-xl leading-7 font-medium`,
+        children: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.settings`,
+            defaultMessage: `Settings`
+        })
+    }), e[14] = P) : P = e[14];
+    let F;
+    e[15] !== v || e[16] !== o ? (F = v && (0, Y.jsx)(Mr, {
+        text: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.general`,
+            defaultMessage: `General`
+        }),
+        path: `/codex/cloud/settings/general`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/general`)
+    }), e[15] = v, e[16] = o, e[17] = F) : F = e[17];
+    let I;
+    e[18] !== v || e[19] !== o ? (I = v && (0, Y.jsx)(Mr, {
+        text: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.environments`,
+            defaultMessage: `Environments`
+        }),
+        path: `/codex/cloud/settings/environments`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/environments`)
+    }), e[18] = v, e[19] = o, e[20] = I) : I = e[20];
+    let L;
+    e[21] !== v || e[22] !== o ? (L = v && (0, Y.jsx)(Mr, {
+        text: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.codeReview`,
+            defaultMessage: `Code review`
+        }),
+        path: `/codex/cloud/settings/code-review`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/code-review`)
+    }), e[21] = v, e[22] = o, e[23] = L) : L = e[23];
+    let R;
+    e[24] !== v || e[25] !== o ? (R = v && (0, Y.jsx)(Mr, {
+        text: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.connectors`,
+            defaultMessage: `Connectors`
+        }),
+        path: `/codex/cloud/settings/connectors`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/connectors`)
+    }), e[24] = v, e[25] = o, e[26] = R) : R = e[26];
+    let z;
+    e[27] !== v || e[28] !== o ? (z = !v || g ? null : (0, Y.jsx)(Mr, {
+        text: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.usage`,
+            defaultMessage: `Usage`
+        }),
+        path: `/codex/cloud/settings/usage`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/usage`)
+    }), e[27] = v, e[28] = o, e[29] = z) : z = e[29];
+    let B;
+    e[30] !== _ || e[31] !== a || e[32] !== n || e[33] !== o ? (B = a == null ? _ ? (0, Y.jsx)(Mr, {
+        text: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.analytics`,
+            defaultMessage: `Analytics`
+        }),
+        path: `/codex/cloud/settings/analytics`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/analytics`)
+    }) : null : (0, Y.jsxs)(`a`, {
+        href: a,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        "aria-label": n.formatMessage({
+            id: `wham.settingsSidebar.analyticsAdminConsoleLink.ariaLabel`,
+            defaultMessage: `Analytics (opens in a new tab)`
+        }),
+        className: `interactive-button interactive-bg-secondary interactive-label-secondary interactive-outline-secondary flex w-full items-center gap-3 rounded-md p-2 text-start`,
+        children: [(0, Y.jsx)(`span`, {
+            className: `min-w-0 flex-1 truncate`,
+            children: (0, Y.jsx)(G, {
+                id: `wham.settingsSidebar.analytics`,
+                defaultMessage: `Analytics`
+            })
+        }), (0, Y.jsx)(Vt, {
+            "aria-hidden": !0,
+            className: `icon-sm shrink-0`
+        })]
+    }), e[30] = _, e[31] = a, e[32] = n, e[33] = o, e[34] = B) : B = e[34];
+    let V;
+    e[35] !== v || e[36] !== o ? (V = v && (0, Y.jsx)(Mr, {
+        text: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.dataControls`,
+            defaultMessage: `Data controls`
+        }),
+        path: `/codex/cloud/settings/data`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/data`)
+    }), e[35] = v, e[36] = o, e[37] = V) : V = e[37];
+    let H;
+    e[38] !== A || e[39] !== n || e[40] !== o || e[41] !== k ? (H = k == null ? A ? (0, Y.jsx)(Mr, {
+        text: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.notifications`,
+            defaultMessage: `Notifications`
+        }),
+        path: `/codex/cloud/settings/notifications`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/notifications`)
+    }) : null : (0, Y.jsxs)(`a`, {
+        href: k,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        "aria-label": n.formatMessage({
+            id: `wham.settingsSidebar.notificationsAdminConsoleLink.ariaLabel`,
+            defaultMessage: `Notifications (opens in a new tab)`
+        }),
+        className: `interactive-button interactive-bg-secondary interactive-label-secondary interactive-outline-secondary flex w-full items-center gap-3 rounded-md p-2 text-start`,
+        children: [(0, Y.jsx)(`span`, {
+            className: `min-w-0 flex-1 truncate`,
+            children: (0, Y.jsx)(G, {
+                id: `wham.settingsSidebar.notifications`,
+                defaultMessage: `Notifications`
+            })
+        }), (0, Y.jsx)(Vt, {
+            "aria-hidden": !0,
+            className: `icon-sm shrink-0`
+        })]
+    }), e[38] = A, e[39] = n, e[40] = o, e[41] = k, e[42] = H) : H = e[42];
+    let U;
+    e[43] !== w || e[44] !== f || e[45] !== D || e[46] !== u || e[47] !== o ? (U = u && (f || D) && (w ? (0, Y.jsxs)(`a`, {
+        href: w,
+        className: `hover:bg-token-bg-tertiary flex w-full items-center gap-3 rounded-md p-2 text-start`,
+        children: [(0, Y.jsx)(`span`, {
+            className: `min-w-0 flex-1 truncate`,
+            children: (0, Y.jsx)(G, {
+                id: `wham.settingsSidebar.managedConfigs`,
+                defaultMessage: `Policies & Configurations`
+            })
+        }), (0, Y.jsx)(Vt, {
+            "aria-hidden": !0,
+            className: `icon-sm shrink-0`
+        })]
+    }) : (0, Y.jsx)(Mr, {
+        text: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.managedConfigs`,
+            defaultMessage: `Policies & Configurations`
+        }),
+        path: `/codex/cloud/settings/policies`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/policies`) || o.pathname.startsWith(`/codex/cloud/settings/managed-configs`),
+        disabledReason: f ? void 0 : (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.policyViewPermissionRequired`,
+            defaultMessage: `You need permission to view Codex policies. Ask a workspace owner to update your permissions.`
+        })
+    })), e[43] = w, e[44] = f, e[45] = D, e[46] = u, e[47] = o, e[48] = U) : U = e[48];
+    let te;
+    e[49] !== ee || e[50] !== o ? (te = ee && (0, Y.jsx)(Mr, {
+        text: (0, Y.jsx)(G, {
+            id: `wham.settingsSidebar.accessTokens`,
+            defaultMessage: `Access tokens`
+        }),
+        path: `/codex/cloud/settings/access-tokens`,
+        isActive: o.pathname.startsWith(`/codex/cloud/settings/access-tokens`),
+        trailing: (0, Y.jsx)(Vt, {
+            "aria-hidden": !0,
+            "data-testid": `agent-identities-external-link-icon`,
+            className: `text-token-text-secondary ms-auto size-4 shrink-0`
+        })
+    }), e[49] = ee, e[50] = o, e[51] = te) : te = e[51];
+    let W;
+    return e[52] !== L || e[53] !== R || e[54] !== z || e[55] !== B || e[56] !== V || e[57] !== H || e[58] !== U || e[59] !== te || e[60] !== F || e[61] !== I ? (W = (0, Y.jsxs)(`div`, {
+        className: `flex w-64 flex-col gap-3 px-4`,
+        children: [P, (0, Y.jsxs)(`div`, {
+            className: `flex flex-col gap-2 pe-3 text-sm`,
+            children: [F, I, L, R, z, B, V, H, U, te]
+        })]
+    }), e[52] = L, e[53] = R, e[54] = z, e[55] = B, e[56] = V, e[57] = H, e[58] = U, e[59] = te, e[60] = F, e[61] = I, e[62] = W) : W = e[62], W
+}
+var Pr, Y, Fr = e((() => {
+    Pr = je(), Yt(), Jt(), Ye(), Je(), M(), kt(), Mt(), P(), R(), F(), h(), kn(), Ze(), Mn(), Fn(), Tr(), Dr(), jr(), jn(), Ge(), In(), w(), we(), Ce(), Y = ye()
+}));
+
+function Ir(e) {
+    "use forget";
+    let t = (0, Lr.c)(29),
+        [n, r] = (0, Rr.useState)(!1),
+        i = ve(),
+        a;
+    t[0] === i.pathname ? a = t[1] : (a = i.pathname.includes(`/codex/cloud/onboarding`), t[0] = i.pathname, t[1] = a);
+    let s = a,
+        d = Me(),
+        {
+            hasAccess: f,
+            isWorkspaceAllowed: p
+        } = fn(),
+        m = f === !0 || p,
+        h;
+    t[2] === d ? h = t[3] : (h = d.formatMessage({
+        id: `wham.mobileSettingsSidebar.open`,
+        defaultMessage: `Open settings sidebar`
+    }), t[2] = d, t[3] = h);
+    let g;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, X.jsx)(Ot, {
+        className: `icon`
+    }), t[4] = g) : g = t[4];
+    let _;
+    t[5] === h ? _ = t[6] : (_ = (0, X.jsx)(c, {
+        asChild: !0,
+        children: (0, X.jsx)(`button`, {
+            type: `button`,
+            className: `hover:bg-token-bg-tertiary text-token-text-secondary flex h-8 w-8 items-center justify-center rounded-md`,
+            "aria-label": h,
+            children: g
+        })
+    }), t[5] = h, t[6] = _);
+    let v;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, X.jsx)(o, {
+        className: `fixed inset-0 z-40 bg-black/50`
+    }), t[7] = v) : v = t[7];
+    let y;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (y = () => r(!1), t[8] = y) : y = t[8];
+    let S;
+    t[9] === d ? S = t[10] : (S = d.formatMessage({
+        id: `wham.mobileSettingsSidebar.close`,
+        defaultMessage: `Close settings sidebar`
+    }), t[9] = d, t[10] = S);
+    let C;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, X.jsx)(u, {
+        className: `icon`
+    }), t[11] = C) : C = t[11];
+    let w;
+    t[12] === S ? w = t[13] : (w = (0, X.jsx)(`div`, {
+        className: `flex justify-end p-2`,
+        children: (0, X.jsx)(`button`, {
+            type: `button`,
+            onClick: y,
+            className: `hover:bg-token-bg-tertiary text-token-text-secondary flex h-8 w-8 items-center justify-center rounded-md`,
+            "aria-label": S,
+            children: C
+        })
+    }), t[12] = S, t[13] = w);
+    let T;
+    t[14] !== d || t[15] !== s || t[16] !== m ? (T = m && !s && (0, X.jsxs)(`div`, {
+        className: `mb-3 flex w-64 flex-col gap-3 px-4`,
+        children: [(0, X.jsx)(`p`, {
+            className: `text-text-primary py-2 ps-2 text-xl leading-7 font-medium`,
+            children: (0, X.jsx)(G, {
+                id: `wham.mobileSettingsSidebar.securityHeader`,
+                defaultMessage: `Security`
+            })
+        }), (0, X.jsxs)(`div`, {
+            className: `flex flex-col gap-2 pe-3 text-sm`,
+            children: [k(`1908296950`) && (0, X.jsx)(Oe, {
+                to: `/codex/cloud/security/overview`,
+                onClick: () => r(!1),
+                className: `hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2`,
+                children: (0, X.jsx)(G, {
+                    id: `wham.mobileSettingsSidebar.overview`,
+                    defaultMessage: `Overview`
+                })
+            }), (0, X.jsx)(Oe, {
+                to: `/codex/cloud/security/findings`,
+                onClick: () => r(!1),
+                className: `hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2`,
+                "aria-label": d.formatMessage({
+                    id: `wham.mobileSettingsSidebar.findingsAriaLabel`,
+                    defaultMessage: `Go to Security findings`
+                }),
+                children: (0, X.jsx)(G, {
+                    id: `wham.mobileSettingsSidebar.findings`,
+                    defaultMessage: `Findings`
+                })
+            }), (0, X.jsx)(Oe, {
+                to: `/codex/cloud/security/scans`,
+                onClick: () => r(!1),
+                className: `hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2`,
+                "aria-label": d.formatMessage({
+                    id: `wham.mobileSettingsSidebar.scansAriaLabel`,
+                    defaultMessage: `Go to Security scans`
+                }),
+                children: (0, X.jsx)(G, {
+                    id: `wham.mobileSettingsSidebar.scans`,
+                    defaultMessage: `Scans`
+                })
+            })]
+        })]
+    }), t[14] = d, t[15] = s, t[16] = m, t[17] = T) : T = t[17];
+    let E;
+    t[18] === s ? E = t[19] : (E = !s && (0, X.jsx)(Nr, {}), t[18] = s, t[19] = E);
+    let D;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (D = (0, X.jsx)(`div`, {
+        className: `px-4 py-2`,
+        children: (0, X.jsx)(yt, {
+            href: `https://platform.openai.com/docs/codex/overview`,
+            target: `_blank`,
+            className: `hover:bg-token-bg-tertiary text-token-text-secondary flex items-center gap-3 rounded-md p-2 text-sm`,
+            children: (0, X.jsx)(G, {
+                id: `wham.mobileSettingsSidebar.docs`,
+                defaultMessage: `Docs`
+            })
+        })
+    }), t[20] = D) : D = t[20];
+    let O;
+    t[21] !== E || t[22] !== w || t[23] !== T ? (O = (0, X.jsxs)(l, {
+        children: [v, (0, X.jsxs)(b, {
+            className: `bg-token-bg-primary fixed inset-y-0 start-0 z-50 flex w-64 flex-col shadow-lg`,
+            children: [w, T, E, D]
+        })]
+    }), t[21] = E, t[22] = w, t[23] = T, t[24] = O) : O = t[24];
+    let A;
+    return t[25] !== n || t[26] !== O || t[27] !== _ ? (A = (0, X.jsxs)(x, {
+        open: n,
+        onOpenChange: r,
+        children: [_, O]
+    }), t[25] = n, t[26] = O, t[27] = _, t[28] = A) : A = t[28], A
+}
+var Lr, Rr, X, zr = e((() => {
+    Lr = je(), pn(), B(), At(), vt(), ue(), T(), Rr = t(Te()), we(), Ce(), Fr(), X = ye()
+}));
+
+function Br(e) {
+    "use forget";
+    let t = (0, Ur.c)(64),
+        {
+            hideNotificationBell: n,
+            hideSettingsLink: r,
+            className: i,
+            mobileLeadingContent: a,
+            mobileCenterContent: o,
+            mobileTrailingContent: s,
+            hideMobileLogo: c
+        } = e,
+        l = n !== void 0 && n,
+        u = r !== void 0 && r,
+        f = c !== void 0 && c,
+        m = !p(ae),
+        h = Me(),
+        g = ve(),
+        _ = bn(),
+        v = Sn(),
+        y = _n(),
+        b;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (b = {
+        key: `chatgpt-codex-download`,
+        allowUnauthenticatedTracking: !0
+    }, t[0] = b) : b = t[0];
+    let {
+        trackSelectedPixels: x
+    } = Ut(b), S;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (S = {
+        key: Wt.CODEX_DOWNLOAD,
+        allowUnauthenticatedTracking: !0
+    }, t[1] = S) : S = t[1];
+    let {
+        trackSelectedPixels: C
+    } = Ut(S), {
+        hasAccess: w,
+        isWorkspaceAllowed: T
+    } = fn(), O = w === !0 || T, k = O ? `/codex/cloud/security` : `/aardvark`, A, j, M, N, ee, P;
+    if (t[2] !== i || t[3] !== _ || t[4] !== k || t[5] !== y || t[6] !== f || t[7] !== l || t[8] !== u || t[9] !== h || t[10] !== v || t[11] !== m || t[12] !== g.pathname || t[13] !== o || t[14] !== a || t[15] !== s || t[16] !== O || t[17] !== C || t[18] !== x) {
+        let e = g.pathname.startsWith(`/codex/cloud/security`) || g.pathname.startsWith(`/aardvark`),
+            n;
+        t[25] === g.pathname ? n = t[26] : (n = g.pathname.startsWith(`/codex/cloud/settings`), t[25] = g.pathname, t[26] = n);
+        let r = !e && !n,
+            c = a != null || o != null || s != null,
+            p = !y || !v || _.isLoadingOs || !_.canDownload,
+            b;
+        t[27] !== _.os || t[28] !== h ? (b = _.os === `linux` ? h.formatMessage(Wr.appNotAvailableOnLinuxTooltip) : void 0, t[27] = _.os, t[28] = h, t[29] = b) : b = t[29];
+        let S = b,
+            w;
+        t[30] !== _ || t[31] !== h ? (w = Vr(h, _), t[30] = _, t[31] = h, t[32] = w) : w = t[32];
+        let T = w,
+            F = !m && `ms-[5px] mt-[5px]`,
+            I;
+        t[33] === F ? I = t[34] : (I = D(`text-token-text-primary flex items-center gap-2 hover:cursor-pointer`, F), t[33] = F, t[34] = I);
+        let L = I;
+        t[35] !== i || t[36] !== c || t[37] !== m ? (P = D(m ? D(`grid w-full items-center gap-2`, c ? `grid-cols-[auto_minmax(0,1fr)_auto]` : `grid-cols-[1fr_auto_1fr]`) : `sticky top-0 flex w-full justify-end py-3 ps-3 pe-1`, i), t[35] = i, t[36] = c, t[37] = m, t[38] = P) : P = t[38], t[39] !== m || t[40] !== a ? (A = m ? a ?? (0, Z.jsx)(Ir, {}) : null, t[39] = m, t[40] = a, t[41] = A) : A = t[41];
+        let R = m ? `flex min-w-0 items-center gap-3 self-center` : `absolute start-0 top-3 flex items-center gap-3 self-center`,
+            z;
+        t[42] === R ? z = t[43] : (z = D(R), t[42] = R, t[43] = z);
+        let B;
+        t[44] !== L || t[45] !== f || t[46] !== h || t[47] !== m || t[48] !== o ? (B = m && o != null ? o : m && f ? null : (0, Z.jsx)(Oe, {
+            to: `/codex/cloud`,
+            className: L,
+            "aria-label": h.formatMessage({
+                id: `wham.whamHeader.codexHomeAriaLabel`,
+                defaultMessage: `Go to Codex`
+            }),
+            children: (0, Z.jsx)(it, {
+                className: `h-[27px] w-auto shrink-0`
+            })
+        }), t[44] = L, t[45] = f, t[46] = h, t[47] = m, t[48] = o, t[49] = B) : B = t[49], t[50] !== z || t[51] !== B ? (j = (0, Z.jsx)(`div`, {
+            className: z,
+            children: B
+        }), t[50] = z, t[51] = B, t[52] = j) : j = t[52];
+        let V = m && `justify-end`;
+        t[53] === V ? M = t[54] : (M = D(`flex items-center gap-2`, V), t[53] = V, t[54] = M), N = m ? s ?? null : null, ee = !m && (0, Z.jsx)(d, {
+            fallback: (0, Z.jsx)(`div`, {
+                className: `h-10 w-[320px]`
+            }),
+            children: (0, Z.jsxs)(`div`, {
+                className: `flex items-center`,
+                children: [e ? (0, Z.jsx)(cr, {}) : (0, Z.jsx)(Tn, {}), (0, Z.jsxs)(`div`, {
+                    className: `ms-3 flex items-center gap-5`,
+                    children: [!1, (0, Z.jsxs)(`div`, {
+                        className: `flex items-center gap-5`,
+                        children: [(0, Z.jsx)(Oe, {
+                            to: `/codex/cloud`,
+                            className: Hr(r),
+                            "aria-label": h.formatMessage({
+                                id: `wham.whamHeader.codeAriaLabel`,
+                                defaultMessage: `Link to Code`
+                            }),
+                            children: (0, Z.jsx)(G, {
+                                id: `wham.whamHeader.code`,
+                                defaultMessage: `Code`
+                            })
+                        }), O && (0, Z.jsx)(Oe, {
+                            to: k,
+                            className: Hr(e),
+                            "aria-label": h.formatMessage({
+                                id: `wham.whamHeader.codexSecurityAriaLabel`,
+                                defaultMessage: `Link to Security`
+                            }),
+                            children: (0, Z.jsx)(G, {
+                                id: `wham.whamHeader.codexSecurity`,
+                                defaultMessage: `Security`
+                            })
+                        }), (0, Z.jsx)(E, {
+                            disabled: S == null,
+                            label: S,
+                            children: (0, Z.jsx)(`button`, {
+                                type: `button`,
+                                disabled: p,
+                                onClick: e => {
+                                    e.preventDefault(), !p && (mt.recordCodexAppSurfaceAction(`header_download`, `download`), mn({
+                                        trackSelectedPixels: () => {
+                                            C(), x()
+                                        }
+                                    }))
+                                },
+                                className: Hr(!1, p),
+                                "aria-label": T,
+                                children: (0, Z.jsx)(G, {
+                                    id: `wham.whamHeader.app`,
+                                    defaultMessage: `App`
+                                })
+                            })
+                        }), (0, Z.jsx)(yt, {
+                            href: `https://platform.openai.com/docs/codex/overview`,
+                            target: `_blank`,
+                            className: Hr(!1),
+                            "aria-label": h.formatMessage({
+                                id: `wham.whamHeader.docsAriaLabel`,
+                                defaultMessage: `Link to the Codex docs page`
+                            }),
+                            children: (0, Z.jsx)(G, {
+                                id: `wham.whamHeader.docs`,
+                                defaultMessage: `Docs`
+                            })
+                        })]
+                    }), !u && (0, Z.jsxs)(`div`, {
+                        className: `flex items-center gap-0.5`,
+                        children: [(0, Z.jsx)(Oe, {
+                            to: `/codex/cloud/settings/general`,
+                            className: `no-draggable keyboard-focused:bg-token-interactive-bg-secondary-hover text-token-text-primary hover:bg-token-interactive-bg-secondary-hover flex h-8 w-8 items-center justify-center rounded-md focus:outline-none`,
+                            "aria-label": h.formatMessage({
+                                id: `wham.whamHeader.settingsAriaLabel`,
+                                defaultMessage: `Link to the Codex settings page`
+                            }),
+                            children: (0, Z.jsx)(Lt, {
+                                className: `icon-sm`
+                            })
+                        }), !l && (0, Z.jsx)(En, {
+                            className: `h-8! w-8! rounded-md!`
+                        })]
+                    }), u && !l && (0, Z.jsx)(`div`, {
+                        className: `flex items-center`,
+                        children: (0, Z.jsx)(En, {
+                            className: `h-8! w-8! rounded-md!`
+                        })
+                    })]
+                }), (0, Z.jsx)(mr, {})]
+            })
+        }), t[2] = i, t[3] = _, t[4] = k, t[5] = y, t[6] = f, t[7] = l, t[8] = u, t[9] = h, t[10] = v, t[11] = m, t[12] = g.pathname, t[13] = o, t[14] = a, t[15] = s, t[16] = O, t[17] = C, t[18] = x, t[19] = A, t[20] = j, t[21] = M, t[22] = N, t[23] = ee, t[24] = P
+    } else A = t[19], j = t[20], M = t[21], N = t[22], ee = t[23], P = t[24];
+    let F;
+    t[55] !== M || t[56] !== N || t[57] !== ee ? (F = (0, Z.jsxs)(`div`, {
+        className: M,
+        children: [N, ee]
+    }), t[55] = M, t[56] = N, t[57] = ee, t[58] = F) : F = t[58];
+    let I;
+    return t[59] !== A || t[60] !== j || t[61] !== F || t[62] !== P ? (I = (0, Z.jsxs)(`div`, {
+        className: P,
+        children: [A, j, F]
+    }), t[59] = A, t[60] = j, t[61] = F, t[62] = P, t[63] = I) : I = t[63], I
+}
+
+function Vr(e, t) {
+    switch (t.isLoadingOs ? `loading` : t.os) {
+        case `loading`:
+            return e.formatMessage(Wr.loadingOsAriaLabel);
+        case `linux`:
+            return e.formatMessage(Wr.appNotAvailableOnLinuxAriaLabel);
+        case `mac`:
+        case `windows`:
+        case null:
+            return e.formatMessage(Wr.downloadAppAriaLabel)
+    }
+}
+
+function Hr(e, t = !1) {
+    return D(`text-token-text-primary text-sm leading-5 font-medium tracking-[-0.18px] transition-opacity`, t ? `cursor-default opacity-40` : e ? `opacity-100` : `opacity-70 hover:opacity-100`)
+}
+var Ur, Z, Wr, Gr = e((() => {
+    Ur = je(), pn(), Ht(), Kt(), ut(), Et(), M(), vt(), F(), V(), ne(), gn(), fr(), xn(), Cn(), wn(), hn(), Cr(), Ue(), Dn(), zr(), w(), we(), Ce(), Z = ye(), Wr = be({
+        appNotAvailableOnLinuxTooltip: {
+            id: `wham.whamHeader.appNotAvailableOnLinuxTooltip`,
+            defaultMessage: `Not available on Linux`
+        },
+        loadingOsAriaLabel: {
+            id: `wham.whamHeader.loadingOsAriaLabel`,
+            defaultMessage: `loading OS`
+        },
+        appNotAvailableOnLinuxAriaLabel: {
+            id: `wham.whamHeader.appNotAvailableOnLinuxAriaLabel`,
+            defaultMessage: `Codex app is not available on Linux`
+        },
+        downloadAppAriaLabel: {
+            id: `wham.whamHeader.downloadAppAriaLabel`,
+            defaultMessage: `Download the Codex app`
+        }
+    })
+}));
+
+function Kr() {
+    "use forget";
+    let e = (0, Yr.c)(2);
+    if (!k(`1437685011`)) {
+        let t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Q.jsx)(Jr, {}), e[0] = t) : t = e[0], t
+    }
+    let t;
+    return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Q.jsx)(qr, {}), e[1] = t) : t = e[1], t
+}
+
+function qr() {
+    "use forget";
+    let e = (0, Yr.c)(1),
+        {
+            isConnected: t,
+            isLoading: n
+        } = Rn();
+    if (n || t) return null;
+    let r;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Q.jsx)(Jr, {}), e[0] = r) : r = e[0], r
+}
+
+function Jr() {
+    "use forget";
+    let e = (0, Yr.c)(7),
+        [t, n] = (0, Xr.useState)(!1),
+        r;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = {
+        redirectAfter: `/codex/cloud/settings/environments`
+    }, e[0] = r) : r = e[0];
+    let {
+        isConnected: i,
+        isLoading: a,
+        error: o,
+        openGithubModal: s,
+        refetch: c
+    } = un(r);
+    if (!ln() || (a || i) && !t) return null;
+    let l;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Q.jsx)(cn, {
+        className: `icon`
+    }), e[1] = l) : l = e[1];
+    let u;
+    return e[2] !== o || e[3] !== a || e[4] !== s || e[5] !== c ? (u = (0, Q.jsxs)(`div`, {
+        className: `draggable no-draggable-children bg-token-bg-secondary sticky top-0 z-20 flex h-12 w-full flex-row items-center justify-center gap-1.5`,
+        children: [l, (0, Q.jsx)(`span`, {
+            className: `text-token-text-primary flex text-sm font-normal`,
+            children: (0, Q.jsx)(G, {
+                id: `wham.connectGitHubAlert.message`,
+                defaultMessage: `Your GitHub account is not connected. <connect>Connect now</connect>.`,
+                values: {
+                    connect: e => a ? (0, Q.jsx)(`span`, {
+                        className: `flex items-center ps-2`,
+                        children: (0, Q.jsx)(at, {
+                            className: `h-4 w-12`
+                        })
+                    }) : o ? (0, Q.jsx)(`button`, {
+                        className: `ps-1 font-semibold underline hover:cursor-pointer`,
+                        onClick: () => {
+                            n(!0), c()
+                        },
+                        children: (0, Q.jsx)(G, {
+                            id: `wham.connectGitHubAlert.retry`,
+                            defaultMessage: `Failed to load GitHub connection. Click retry.`
+                        })
+                    }) : (0, Q.jsx)(`button`, {
+                        className: `ps-1 font-semibold underline hover:cursor-pointer`,
+                        onClick: s,
+                        children: e
+                    })
+                }
+            })
+        })]
+    }), e[2] = o, e[3] = a, e[4] = s, e[5] = c, e[6] = u) : u = e[6], u
+}
+var Yr, Xr, Q, Zr = e((() => {
+    Yr = je(), sn(), Ke(), ue(), dn(), zn(), Xr = t(Te()), we(), Q = ye()
+}));
+
+function Qr(e) {
+    let [t, n] = (0, $r.useState)(!1);
+    return (0, $r.useEffect)(() => {
+        let t = e.current,
+            r = () => {
+                t && n(t.scrollTop > 0)
+            },
+            i, a = 0;
+
+        function o() {
+            if (t = e.current, !t) {
+                if (a++ >= 10) return;
+                i = requestAnimationFrame(o);
+                return
+            }
+            t.addEventListener(`scroll`, r), n(t.scrollTop > 0)
+        }
+        return o(), () => {
+            i !== void 0 && cancelAnimationFrame(i), t && t.removeEventListener(`scroll`, r)
+        }
+    }, [e]), t
+}
+var $r, ei = e((() => {
+    $r = t(Te())
+}));
+
+function ti({
+    fillContentHeight: e,
+    flex: t,
+    horizontalPadding: n,
+    maxWidth: r,
+    topPadding: i
+}) {
+    return D(`mx-auto`, e && `h-full flex-1`, r, t && `flex flex-col`, n && `px-8`, i && `pt-8`)
+}
+
+function ni(e) {
+    "use forget";
+    let t = (0, ii.c)(51),
+        {
+            children: n,
+            flex: r,
+            fillContentHeight: i,
+            showSidebar: a,
+            leftRail: o,
+            canShowAlert: s,
+            connectionAlert: c,
+            hideHeaderNotificationBell: l,
+            hideHeaderSettings: u,
+            hideBorder: m,
+            alwaysShowBorder: h,
+            horizontalPadding: g,
+            maxWidth: _,
+            footerSpacePx: v,
+            topPadding: y,
+            mobileHeaderLeadingContent: b,
+            mobileHeaderCenterContent: x,
+            mobileHeaderTrailingContent: S,
+            hideMobileHeaderLogo: C
+        } = e,
+        w = r !== void 0 && r,
+        T = i === void 0 || i,
+        E = a === void 0 || a,
+        D = s === void 0 || s,
+        O = l !== void 0 && l,
+        k = u !== void 0 && u,
+        A = m !== void 0 && m,
+        j = h !== void 0 && h,
+        M = g !== void 0 && g,
+        N = _ === void 0 ? `max-w-screen-2xl` : _,
+        ee = v === void 0 ? 80 : v,
+        P = y !== void 0 && y,
+        F = C !== void 0 && C,
+        I = (0, ai.useRef)(null),
+        [L, R] = (0, ai.useState)(null),
+        z = Qr(I),
+        B = Ie(ri),
+        V = !p(ae),
+        H = tt(),
+        U = f(),
+        te, W;
+    if (t[0] === L ? (te = t[1], W = t[2]) : (te = () => {
+            let e = L?.closest(`[data-scroll-root]`);
+            if (e == null) return;
+            let t = e.style.overflowY;
+            return e.style.overflowY = `hidden`, () => {
+                e.style.overflowY = t
+            }
+        }, W = [L], t[0] = L, t[1] = te, t[2] = W), (0, ai.useEffect)(te, W), H === `DISABLED` && !U?.isWorkspacePlan()) {
+        let e;
+        return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, $.jsx)(De, {
+            to: `/`,
+            replace: !0
+        }), t[3] = e) : e = t[3], e
+    }
+    let ne = Xe,
+        re = tn,
+        ie = U?.getWorkspaceId(),
+        oe;
+    t[4] !== re || t[5] !== ie ? (oe = (0, $.jsx)(re, {
+        page: `codex`
+    }, ie), t[4] = re, t[5] = ie, t[6] = oe) : oe = t[6];
+    let se = z && !A || j ? `border-token-bg-secondary` : `border-transparent`,
+        ce;
+    t[7] !== O || t[8] !== k || t[9] !== F || t[10] !== x || t[11] !== b || t[12] !== S ? (ce = (0, $.jsx)(Br, {
+        hideNotificationBell: O,
+        className: `flex-1`,
+        hideSettingsLink: k,
+        mobileLeadingContent: b,
+        mobileCenterContent: x,
+        mobileTrailingContent: S,
+        hideMobileLogo: F
+    }), t[7] = O, t[8] = k, t[9] = F, t[10] = x, t[11] = b, t[12] = S, t[13] = ce) : ce = t[13];
+    let le;
+    t[14] !== se || t[15] !== ce ? (le = (0, $.jsx)(oi, {
+        className: se,
+        children: ce
+    }), t[14] = se, t[15] = ce, t[16] = le) : le = t[16];
+    let ue;
+    t[17] === B ? ue = t[18] : (ue = !1, t[17] = B, t[18] = ue);
+    let de;
+    t[19] !== D || t[20] !== c ? (de = c ?? (D && (0, $.jsx)(Jr, {})), t[19] = D, t[20] = c, t[21] = de) : de = t[21];
+    let fe = `calc(100vh - var(--header-height) - ${ee}px)`,
+        pe;
+    t[22] === fe ? pe = t[23] : (pe = {
+        height: fe
+    }, t[22] = fe, t[23] = pe);
+    let me;
+    t[24] !== V || t[25] !== E ? (me = E && !V && (0, $.jsx)(`div`, {
+        className: `h-full w-64 flex-shrink-0 overflow-y-auto pt-8`,
+        children: (0, $.jsx)(Nr, {})
+    }), t[24] = V, t[25] = E, t[26] = me) : me = t[26];
+    let he;
+    t[27] !== T || t[28] !== w || t[29] !== M || t[30] !== N || t[31] !== P ? (he = ti({
+        fillContentHeight: T,
+        flex: w,
+        horizontalPadding: M,
+        maxWidth: N,
+        topPadding: P
+    }), t[27] = T, t[28] = w, t[29] = M, t[30] = N, t[31] = P, t[32] = he) : he = t[32];
+    let ge;
+    t[33] !== n || t[34] !== he ? (ge = (0, $.jsx)(`div`, {
+        ref: I,
+        className: `bg-token-bg-primary dark:bg-token-bg-secondary-surface w-full overflow-y-auto`,
+        children: (0, $.jsx)(`div`, {
+            className: he,
+            children: n
+        })
+    }), t[33] = n, t[34] = he, t[35] = ge) : ge = t[35];
+    let _e;
+    t[36] !== o || t[37] !== pe || t[38] !== me || t[39] !== ge ? (_e = (0, $.jsxs)(`div`, {
+        ref: R,
+        className: `flex flex-1 overflow-hidden`,
+        style: pe,
+        children: [me, o, ge]
+    }), t[36] = o, t[37] = pe, t[38] = me, t[39] = ge, t[40] = _e) : _e = t[40];
+    let ve;
+    t[41] !== de || t[42] !== _e ? (ve = (0, $.jsxs)(d, {
+        children: [de, _e]
+    }), t[41] = de, t[42] = _e, t[43] = ve) : ve = t[43];
+    let ye;
+    t[44] === Symbol.for(`react.memo_cache_sentinel`) ? (ye = (0, $.jsx)(Bn, {}), t[44] = ye) : ye = t[44];
+    let be;
+    return t[45] !== ne || t[46] !== oe || t[47] !== le || t[48] !== ue || t[49] !== ve ? (be = (0, $.jsxs)(ne, {
+        mainContainerClassName: `overflow-hidden`,
+        children: [oe, le, ue, ve, ye]
+    }), t[45] = ne, t[46] = oe, t[47] = le, t[48] = ue, t[49] = ve, t[50] = be) : be = t[50], be
+}
+
+function ri(e) {
+    return e.showReactQueryDevtools
+}
+var ii, ai, $, oi, si = e((() => {
+    ii = je(), on(), Fe(), F(), V(), h(), ne(), qn(), Ze(), Gr(), Zr(), Fr(), ei(), nt(), w(), ai = t(Te()), Ce(), v(), $ = ye(), oi = pe.div`draggable no-draggable-children sticky top-0 p-3 flex items-center justify-between z-20 h-header-height border-b border-transparent font-semibold bg-token-bg-primary dark:bg-token-bg-secondary-surface`
+}));
+export {
+    Bn as C, Xn as S, wr as _, Qr as a, Qn as b, Zr as c, Or as d, kr as f, Tr as g, Er as h, ei as i, Br as l, Dr as m, oi as n, Jr as o, jr as p, si as r, Kr as s, ni as t, Gr as u, or as v, qn as w, Yn as x, er as y
+};
+//# sourceMappingURL=3e72bb91-l7qrdevu41zb70ky.js.map

@@ -1,3 +1,1718 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/1d084ec4-ddqw3vp66v62mdxq.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-bo7e0c29ngt4zgx0.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/conversation-small-ikg0dwuw782klweb.js","assets/30901919-e8h11sw136qen6v0.js","assets/c470f5ab-ab47eubabs8jspdc.js","assets/0e5afe53-esm68l11os61djoy.js","assets/conversation-small-oilgsqfa.css","assets/c2675c8c-ejvs9hq3rwjwsbcv.js","assets/82782bc9-fcii2id0x6lspwtj.js","assets/8b34dbc2-dtawqv9t1aqckqj4.js","assets/global-modals-lv5n3ujm.css","assets/44fdb285-cr6ypnobt1vt5irj.js","assets/540191af-bsnwm8m7nrxh45sh.js","assets/85557f11-mqqr1coukt2floak.js","assets/e4fe0dae-l4vxeim4wpwl76rs.js","assets/b9e74381-h0z6cp6y2ptcf91m.js","assets/62331d8d-fuhg61wuia2eqezb.js","assets/971592ec-mffthpbxok58crpy.js","assets/4c0f1f8e-o4zbuwgknf8ay6gx.js","assets/86793a97-ongmaxxxm7ura7r1.js","assets/183f19de-b4keljrxqzf9e2ih.js","assets/656cec6a-bi1c2h5s2xqg9tvb.js","assets/cb56d84a-l5xbecmayz0u2zwt.js","assets/image-viewer-b098kzr0.css","assets/d93502a4-i8tgld21b94ibra0.js","assets/a35b0b5c-hf0tgvfsfklzj209.js","assets/7f792745-distvoirix4yruog.js","assets/95afbc26-fw1jvbulbugkm67w.js","assets/3aecc39e-fatzzktpc4b9hwyq.js","assets/57388dad-m59sib62g3bfmdzv.js","assets/5ff32e89-ore2wia7yalsvws1.js","assets/43119cb7-eb7ksgc4szdm78y1.js","assets/b8c3b71b-dm6ktlulkpolaidm.js","assets/dca5af77-jtjl86dkw8b4xokx.js","assets/20a8d32f-mf0q8zhl9h455nem.js","assets/1cfd0849-cstfhrhsh5t65i40.js","assets/97fef780-bn3a0srl5okayskg.js","assets/ee0eeb85-ogu5n050pym7fbik.js","assets/20fadd5c-if6fb0jw1ekiz152.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$0 as n,AU as r,BU as i,Dq as a,F7 as o,Fnt as s,HR as c,Ha as l,Hot as u,Hp as d,Int as f,JT as p,LR as m,MR as h,Nq as g,P5 as _,Pm as v,Q0 as y,RU as b,S5 as x,S8 as S,UR as C,Ua as w,Uot as ee,VR as T,Vk as E,X0 as D,X5 as O,XR as k,Y5 as A,YT as j,Ytt as M,Z0 as N,bnt as P,bq as F,cW as I,cat as L,dit as R,fat as z,fit as B,g5 as V,g8 as H,i0 as U,iF as te,jR as ne,mnt as W,n2 as re,oW as ie,oq as ae,pF as oe,pq as se,r0 as ce,s5 as le,vN as ue,vnt as G,x8 as de,xq as fe,yN as pe,yq as me,z7 as he,zU as ge,zk as _e}from"./4813494d-bo7e0c29ngt4zgx0.js";import{Bn as K,In as ve,Nn as ye,Q as be,Rn as xe,Vn as Se,Vt as Ce,Zt as we,cn as Te,it as Ee,ln as De,rn as Oe,s as ke,wn as q,x as Ae,zn as je}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$m as Me,A7 as Ne,D7 as Pe,Eyn as Fe,Hm as Ie,Jm as J,Jz as Le,M7 as Re,N7 as ze,Nfn as Be,O7 as Ve,Ofn as He,P7 as Ue,Pfn as We,Pyn as Ge,QHn as Ke,Sfn as qe,Tfn as Je,Um as Ye,Vm as Xe,Wm as Ze,Wzn as Qe,XHn as $e,Xzn as et,_Ft as tt,ah as nt,cMn as rt,d as it,eKn as at,eVn as ot,eh as st,g7 as ct,h as lt,h7 as ut,hkt as dt,iKn as ft,ih as pt,j7 as mt,jfn as ht,k7 as gt,m7 as _t,mkt as vt,nh as yt,qm as bt,qz as xt,rVn as St,rh as Ct,sMn as wt,th as Tt,vFt as Et,wfn as Dt}from"./conversation-small-ikg0dwuw782klweb.js";import{Dm as Ot,Em as kt,Oc as At,kc as jt}from"./30901919-e8h11sw136qen6v0.js";import{Am as Mt,An as Nt,Bl as Pt,Cn as Ft,Da as It,ES as Lt,E_ as Rt,Fl as zt,Gn as Bt,Hl as Vt,Il as Ht,Jg as Ut,Kh as Wt,Kn as Gt,L_ as Kt,Ll as qt,Ml as Jt,Nl as Yt,Oa as Xt,Pl as Zt,Qg as Qt,Sn as $t,T_ as en,Tn as tn,Ul as nn,Vl as rn,Wl as an,Xg as on,Zg as sn,_S as cn,_u as ln,a_ as un,au as dn,bl as fn,bp as pn,du as mn,e_ as hn,hu as gn,i_ as _n,jl as vn,jn as yn,km as bn,mu as xn,n_ as Sn,ou as Cn,qg as wn,qh as Tn,su as En,t_ as Y,w_ as Dn,wn as On,xl as kn,xp as An,yl as jn,z_ as Mn,zl as Nn}from"./8b34dbc2-dtawqv9t1aqckqj4.js";import{n as Pn}from"./cc1aa8e1-hdp04obhew1srhzz.js";import{n as Fn,t as In}from"./7bd2b610-h3bj0lusjr0h408j.js";import{a as Ln,i as Rn,o as zn}from"./53bdf712-j6jjhs4hsamejcpy.js";import{a as Bn,i as Vn,o as Hn,r as Un,s as Wn,t as Gn}from"./9521ff6d-elhiyski2fu1irpu.js";import{n as Kn,t as qn}from"./4775c8e0-cf8z0iqytpu7rdtk.js";var Jn,Yn=e((()=>{xe(),Jn=ve({id:`image-gen.images-app.header.title`,defaultMessage:`Images`})}));function Xn(){"use forget";let e=(0,$n.c)(7),[t,n]=(0,er.useState)(null),r=_(Qn),i,a;e[0]===t?(i=e[1],a=e[2]):(i=()=>le(Zn,e=>{if(e)return $e({target:t,onChange(e){let t=!e;(0,er.startTransition)(()=>{hn.set(t)})}})},{fireImmediately:!0}),a=[t],e[0]=t,e[1]=i,e[2]=a),(0,er.useEffect)(i,a);let o=!r&&`hidden`,s;e[3]===o?s=e[4]:(s=A(`pointer-events-none top-0 h-px w-full`,o),e[3]=o,e[4]=s);let c;return e[5]===s?c=e[6]:(c=(0,tr.jsx)(`div`,{ref:n,className:s}),e[5]=s,e[6]=c),c}function Zn(){return nr()}function Qn(){return nr()}var $n,er,tr,nr,rr=e((()=>{$n=q(),Qt(),H(),R(),Ke(),ae(),O(),er=t(Se()),tr=K(),nr=de(()=>{let e=se();return!B()||!e})}));function ir(e,t,n){Lt(e,t,e=>Qe(e.attrs)?.kind===`system-hint`,n)}var ar=e((()=>{et(),cn()}));function or(e){"use forget";let t=(0,sr.c)(47),{onComposerInteraction:n,promptOverride:r,disableDraftPersistence:i,disableAutoFocus:o,draftRestorationMode:s,hideComposerSurface:c}=e,l=i!==void 0&&i,u=o!==void 0&&o,d=c!==void 0&&c,p=(0,cr.use)(te),m;t[0]===p?m=t[1]:(m=ee(p),t[0]=p,t[1]=m);let h=m,g;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(g=B(),t[2]=g):g=t[2];let v=g,y;t[3]===h?y=t[4]:(y=()=>Fe(h),t[3]=h,t[4]=y);let b=_(y),S=b.id,C;t[5]===h?C=t[6]:(C=()=>on(h)(),t[5]=h,t[6]=C);let w=_(C),T=_(Le),D=_(E),O;if(t[7]!==D){let{persistFilesToLibrary:e}=_t(D);O=ut({persistFilesToLibrary:e,isConversationNavigationDisabled:!1,isGizmoThread:!1,isProjectThread:!1,isBespokeLandingPage:!1},D),t[7]=D,t[8]=O}else O=t[8];let k=O,A;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(A=mn.isImagesTabRevampEnabled(),t[9]=A):A=t[9];let j=A,M=Rt(),N=Tn(),[P]=Ce(),F;t[10]===P?F=t[11]:(F=P.get(`prompt`),t[10]=P,t[11]=F);let I=F,L,R;t[12]!==M||t[13]!==r||t[14]!==I?(L=()=>{let e=(r??I)?.trim();e&&ir(Kt(M),e,{scrollIntoView:!1})},R=[M,r,I],t[12]=M,t[13]=r,t[14]=I,t[15]=L,t[16]=R):(L=t[15],R=t[16]),(0,cr.useEffect)(L,R);let z;t[17]!==h||t[18]!==N||t[19]!==T?(z=async e=>{let t=T?N.readyFiles$():[];T&&on(h).set(!0),await It({content:e.content,attachments:e.attachments,hasSelectedFiles:N.files$().length>0,readyFiles:t,isPromptCarryoverEnabled:T,systemHints:[a.PictureV2]}).finally(()=>{T&&on(h).set(!1)})},t[17]=h,t[18]=N,t[19]=T,t[20]=z):z=t[20];let V=z,H;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(H=v?void 0:(0,lr.jsx)(Ot,{className:`icon`}),t[21]=H):H=t[21];let U=!v&&w,ne=v||T,W;t[22]===h?W=t[23]:(W=e=>Mt({callsiteId:`request_completion.tool_landing_pages.image_gen.images_app.images_app_composer.1`,conversation:h,...jn(e)}),t[22]=h,t[23]=W);let re;t[24]!==h||t[25]!==b||t[26]!==N||t[27]!==V?(re=async e=>{if(!v){await V(e);return}let t=G.logStructuredEvent(`ChatgptImageHomeComposerTextSent`,{attachmentCount:f(N.readyFiles$().length)});if(G.logValueEventWithStatsig({segmentEventName:`chatgpt_web_image_library_composer_submitted`,statsigEventName:`chatgpt_web_image_library_composer_submitted`,eventId:t}),!j||e.systemHints.length!==1||e.systemHints[0]!==a.PictureV2){Mt({callsiteId:`request_completion.tool_landing_pages.image_gen.images_app.images_app_composer.2`,conversation:h,...await fn(e)});return}let n=x(()=>Y(h)),r=await fn(e);if(!r.promptMessage)return;if(n.promptItem!=null&&r.promptMessage.metadata?.image_prompt_id===n.promptItem.id){let e=Oe();r.promptMessage.metadata={...r.promptMessage.metadata,image_feature:`prompt`,image_prompt_group_id:n.group.id,image_prompt_group_presentation:n.group.presentation,image_send_uuid:e},Ue({item:n.promptItem,group:n.group,surface:n.surface,position:n.position,imageSendUuid:e})}let i=(r.promptMessage.metadata?.attachments?.length??0)>0?[r.promptMessage,Pt(`Uploading`)]:[r.promptMessage];ot(void 0),Ht(Oe(),{conversation:h,model:b,systemHints:r.completionMetadata?.systemHints,optimisticMessages:i,asyncWork:()=>Promise.resolve(r)})},t[24]=h,t[25]=b,t[26]=N,t[27]=V,t[28]=re):re=t[28];let ie;t[29]!==h||t[30]!==S||t[31]!==u||t[32]!==l||t[33]!==s||t[34]!==d||t[35]!==k.isEnabled||t[36]!==k.reason||t[37]!==U||t[38]!==ne||t[39]!==W||t[40]!==re?(ie=(0,lr.jsx)(Bt,{conversation:h,isNewThread:!0,isProjectThread:!1,isLibraryEnabled:k.isEnabled,libraryEligibilityReason:k.reason,entrySurface:`image_gen_composer`,disableDraftPersistence:l,disableAutoFocus:u,draftRestorationMode:s,hideComposerSurface:d,layoutMode:`bottom`,systemHintMenuSide:`bottom`,currentModelId:S,onlyAllowImageUploads:!v,plusButtonAddsFiles:!v||void 0,plusButtonIcon:H,disabledOverride:U,commitComposerStateOnSubmit:ne,onContinueGenerating:W,onRequestCompletion:re,hideHeader:!v,disableAdvancedVoiceMode:!v}),t[29]=h,t[30]=S,t[31]=u,t[32]=l,t[33]=s,t[34]=d,t[35]=k.isEnabled,t[36]=k.reason,t[37]=U,t[38]=ne,t[39]=W,t[40]=re,t[41]=ie):ie=t[41];let ae;t[42]===Symbol.for(`react.memo_cache_sentinel`)?(ae=(0,lr.jsx)(Hn,{}),t[42]=ae):ae=t[42];let oe;return t[43]!==d||t[44]!==n||t[45]!==ie?(oe=(0,lr.jsx)(tt,{children:(0,lr.jsxs)(`div`,{id:`image-app-composer`,hidden:d,className:`max-w-app-content transition-width z-10 mx-auto flex w-full flex-col justify-center gap-2 self-end px-(--images-app-padding) [&_[data-composer-surface][data-expanded-composer]]:max-h-[50svh]`,onKeyDownCapture:n,onPointerDownCapture:n,children:[ie,ae]})}),t[43]=d,t[44]=n,t[45]=ie,t[46]=oe):oe=t[46],oe}var sr,cr,lr,ur=e((()=>{sr=q(),bn(),en(),oe(),kt(),Wt(),ct(),Wn(),Zt(),Nn(),Qt(),mt(),ln(),Ge(),_e(),Mn(),kn(),Et(),Gt(),H(),St(),g(),xt(),Xt(),ar(),R(),P(),u(),s(),cr=t(Se()),be(),we(),lr=K()}));function dr(e){"use forget";let t=(0,fr.c)(5),{children:n,className:r}=e,i;t[0]===r?i=t[1]:(i=A(`text-token-text-primary text-heading-3 ms-4 font-medium`,r),t[0]=r,t[1]=i);let a;return t[2]!==n||t[3]!==i?(a=(0,pr.jsx)(`h2`,{className:i,children:n}),t[2]=n,t[3]=i,t[4]=a):a=t[4],a}var fr,pr,mr=e((()=>{fr=q(),O(),Pn(),pr=K()}));function hr(e){"use forget";let t=(0,yr.c)(32),n,r,i,a,o,s,c,l;t[0]===e?(n=t[1],r=t[2],i=t[3],a=t[4],o=t[5],s=t[6],c=t[7],l=t[8]):({className:r,label:a,iconSrc:i,onMount:s,onClick:o,skeleton:c,title:l,...n}=e,t[0]=e,t[1]=n,t[2]=r,t[3]=i,t[4]=a,t[5]=o,t[6]=s,t[7]=c,t[8]=l);let u;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(u=B(),t[9]=u):u=t[9];let d=u,f;t[10]===s?f=t[11]:(f=()=>{s?.()},t[10]=s,t[11]=f),dt(f);let m;t[12]===o?m=t[13]:(m=()=>{if(!d&&!Le()){U({fallbackScreenHint:`login_or_signup`,skipLoginModal:!1,loginModalSubtitleVariant:`create-image`});return}o?.()},t[12]=o,t[13]=m);let h=c&&`skeleton-child skeleton-translucent pointer-events-none rounded-xl! leading-normal!`,g;t[14]!==r||t[15]!==h?(g=A(`w-auto max-w-full min-w-45 select-none`,`group/button flex items-start justify-start rounded-xl py-0 ps-0 pe-4 text-base font-normal outline-offset-4 outline-(--interactive-label-accent-default,var(--bg-primary-inverted))`,h,r),t[14]=r,t[15]=h,t[16]=g):g=t[16];let _;t[17]===i?_=t[18]:(_=(0,Z.jsx)(`img`,{src:i,alt:``,className:`corner-superellipse/1.1 ease-spring-elegant pointer-events-none aspect-square h-12 w-12 origin-center rounded-xl object-cover select-none motion-safe:transition-[scale,filter] motion-safe:group-hover/button:brightness-120 motion-safe:group-hover/button:motion-safe:will-change-[scale,filter] motion-safe:group-active/button:scale-98 motion-safe:group-active/button:motion-safe:will-change-[scale,filter]`}),t[17]=i,t[18]=_);let v=c&&`w-24 leading-[150%]`,y;t[19]===v?y=t[20]:(y=A(`text-token-text-primary/60 group-hover/button:text-token-text-primary ease-spring-elegant line-clamp-2 max-h-[2lh] text-start text-pretty wrap-break-word select-none motion-safe:transition-colors`,v),t[19]=v,t[20]=y);let b;t[21]!==a||t[22]!==y?(b=(0,Z.jsx)(`span`,{className:y,children:a}),t[21]=a,t[22]=y,t[23]=b):b=t[23];let x;return t[24]!==n||t[25]!==c||t[26]!==m||t[27]!==g||t[28]!==_||t[29]!==b||t[30]!==l?(x=(0,Z.jsxs)(p,{type:`button`,...n,"aria-hidden":c,disabled:c,color:`custom`,onClick:m,contentWrapperClassName:`gap-3`,className:g,title:l,children:[_,b]}),t[24]=n,t[25]=c,t[26]=m,t[27]=g,t[28]=_,t[29]=b,t[30]=l,t[31]=x):x=t[31],x}function gr(e){"use forget";let t=(0,yr.c)(26),n,r,i,a,o,s;t[0]===e?(n=t[1],r=t[2],i=t[3],a=t[4],o=t[5],s=t[6]):({className:r,label:i,onClick:a,onMount:o,skeleton:s,...n}=e,t[0]=e,t[1]=n,t[2]=r,t[3]=i,t[4]=a,t[5]=o,t[6]=s);let c;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(c=B(),t[7]=c):c=t[7];let l=c,u;t[8]===o?u=t[9]:(u=()=>{o?.()},t[8]=o,t[9]=u),dt(u);let d;t[10]===a?d=t[11]:(d=()=>{if(!l&&!Le()){U({fallbackScreenHint:`login_or_signup`,skipLoginModal:!1,loginModalSubtitleVariant:`create-image`});return}a?.()},t[10]=a,t[11]=d);let f=s&&`skeleton-child skeleton-translucent pointer-events-none rounded-full! leading-normal!`,m;t[12]!==r||t[13]!==f?(m=A(`corner-superellipse/1.1 w-auto max-w-full select-none`,`bg-token-bg-tertiary hover:bg-token-interactive-bg-tertiary-hover active:bg-token-interactive-bg-tertiary-press`,`rounded-full px-4 py-2 text-base font-normal`,f,r),t[12]=r,t[13]=f,t[14]=m):m=t[14];let h=s&&`w-24 leading-[1lh]`,g;t[15]===h?g=t[16]:(g=A(`inline-block`,h),t[15]=h,t[16]=g);let _;t[17]!==i||t[18]!==g?(_=(0,Z.jsx)(`span`,{className:g,children:i}),t[17]=i,t[18]=g,t[19]=_):_=t[19];let v;return t[20]!==n||t[21]!==s||t[22]!==d||t[23]!==m||t[24]!==_?(v=(0,Z.jsx)(p,{type:`button`,...n,"aria-hidden":s,disabled:s,color:`custom`,onClick:d,className:m,children:_}),t[20]=n,t[21]=s,t[22]=d,t[23]=m,t[24]=_,t[25]=v):v=t[25],v}function _r(){return me()}function vr(e,t){return(0,Z.jsx)(gr,{skeleton:!0,label:``},`skeleton-${t}`)}var yr,X,Z,br,xr,Sr=e((()=>{yr=q(),O(),X=t(Se()),xe(),j(),Bn(),H(),ce(),mr(),xt(),R(),I(),ae(),vt(),M(),Kn(),We(),Z=K(),br=e=>{"use forget";let t=(0,yr.c)(55),{items:n,onSelectPromptItem:r,onShowPromptItem:i,header:a,className:o,skeleton:s,showAllItems:c}=e,l=c!==void 0&&c,u=(0,X.useRef)(null),d=(0,X.useRef)(0),f;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(f=x(_r),t[0]=f):f=t[0];let p=f,[m,h]=(0,X.useState)(0),g=s??n.length===0,_=Math.max(Math.ceil(n.length/6),1),v;t[1]===_?v=t[2]:(v=()=>{let e=u.current;if(!e)return;let t=d.current,n=Math.round(e.scrollLeft/t);(0,X.startTransition)(()=>{h(Math.max(0,Math.min(n,_-1)))})},t[1]=_,t[2]=v);let y=v,b;t[3]===_?b=t[4]:(b=e=>{let t=u.current;if(!t)return;let n=d.current,r=Math.max(0,Math.min(e,_-1));t.scrollTo({left:r*n,behavior:p?`auto`:`smooth`})},t[3]=_,t[4]=b);let S=b,C,w;t[5]===y?(C=t[6],w=t[7]):(C=()=>{y()},w=[y],t[5]=y,t[6]=C,t[7]=w),(0,X.useEffect)(C,w);let ee,T;t[8]===y?(ee=t[9],T=t[10]):(ee=()=>{if(W())return;let e=u.current;if(!(!e||typeof ResizeObserver>`u`))return ie({axis:`width`,onChange:e=>{let{width:t}=e;d.current=Math.round(t),(0,X.startTransition)(()=>{y()})},target:e})},T=[y],t[8]=y,t[9]=ee,t[10]=T),(0,X.useEffect)(ee,T);let E=g&&`group skeleton`,D;t[11]!==o||t[12]!==E?(D=A(o,E),t[11]=o,t[12]=E,t[13]=D):D=t[13];let O;t[14]===a?O=t[15]:(O=a??(0,Z.jsx)(dr,{children:(0,Z.jsx)(ye,{id:`imageGenComposerActions.heading`,defaultMessage:`Try making an image`})}),t[14]=a,t[15]=O);let k;t[16]!==g||t[17]!==_||t[18]!==m||t[19]!==S||t[20]!==l?(k=!g&&!l&&(0,Z.jsx)(qn,{pageIndex:m,pageCount:_,onPreviousPage:()=>S(m-1),onNextPage:()=>S(m+1)}),t[16]=g,t[17]=_,t[18]=m,t[19]=S,t[20]=l,t[21]=k):k=t[21];let j;t[22]!==O||t[23]!==k?(j=(0,Z.jsxs)(`div`,{className:`flex items-center justify-between gap-4 pe-4`,children:[O,k]}),t[22]=O,t[23]=k,t[24]=j):j=t[24];let M=l?void 0:y,N=l?`mx-4 flex flex-wrap gap-4 py-1.5 max-md:mx-0 max-md:px-4`:`relative mx-4 -my-1.5 grid snap-x snap-proximity auto-cols-[50%] grid-flow-col grid-rows-3 gap-4 overflow-x-auto overscroll-x-contain py-1.5 whitespace-nowrap [scrollbar-width:none] max-md:mx-0 max-md:scroll-px-4 max-md:px-4 @max-lg:auto-cols-[70%]`,P=g&&`group skeleton`,F;t[25]!==N||t[26]!==P?(F=A(N,P),t[25]=N,t[26]=P,t[27]=F):F=t[27];let I=g?`visible`:`hidden`,L;t[28]===Symbol.for(`react.memo_cache_sentinel`)?(L=Array.from({length:6}),t[28]=L):L=t[28];let R;t[29]===l?R=t[30]:(R=L.map((e,t)=>(0,Z.jsx)(hr,{className:A(!l&&`snap-start`,l&&`max-w-80`),skeleton:!0,iconSrc:`data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`,label:``},`skeleton-${t}`)),t[29]=l,t[30]=R);let z;t[31]!==I||t[32]!==R?(z=(0,Z.jsx)(X.Activity,{mode:I,children:R}),t[31]=I,t[32]=R,t[33]=z):z=t[33];let B=g?`hidden`:`visible`,V;if(t[34]!==n||t[35]!==r||t[36]!==i||t[37]!==l){let e;t[39]!==r||t[40]!==i||t[41]!==l?(e=e=>(0,Z.jsx)(hr,{className:A(!l&&`snap-start`,l&&`max-w-80`),"aria-label":ht(e),iconSrc:Be(e)??`data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`,label:e.title,title:e.title,onMount:()=>i?.(e),onClick:()=>r?.(e)},e.id),t[39]=r,t[40]=i,t[41]=l,t[42]=e):e=t[42],V=n.map(e),t[34]=n,t[35]=r,t[36]=i,t[37]=l,t[38]=V}else V=t[38];let H;t[43]!==B||t[44]!==V?(H=(0,Z.jsx)(X.Activity,{mode:B,children:V}),t[43]=B,t[44]=V,t[45]=H):H=t[45];let U;t[46]!==M||t[47]!==F||t[48]!==z||t[49]!==H?(U=(0,Z.jsxs)(`div`,{ref:u,onScrollEnd:M,className:F,children:[z,H]}),t[46]=M,t[47]=F,t[48]=z,t[49]=H,t[50]=U):U=t[50];let te;return t[51]!==D||t[52]!==j||t[53]!==U?(te=(0,Z.jsxs)(Vn,{className:D,children:[j,U]}),t[51]=D,t[52]=j,t[53]=U,t[54]=te):te=t[54],te},xr=e=>{"use forget";let t=(0,yr.c)(25),{items:n,onSelectPromptItem:r,onShowPromptItem:i,header:a,className:o}=e,s=n.length===0,c;t[0]===a?c=t[1]:(c=a??(0,Z.jsx)(dr,{children:(0,Z.jsx)(ye,{id:`imageGenComposerActions.heading`,defaultMessage:`Try making an image`})}),t[0]=a,t[1]=c);let l=s&&`group skeleton`,u;t[2]===l?u=t[3]:(u=A(`flex flex-col items-start gap-2`,l),t[2]=l,t[3]=u);let d=s?`visible`:`hidden`,f;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(f=Array.from({length:6}).map(vr),t[4]=f):f=t[4];let p;t[5]===d?p=t[6]:(p=(0,Z.jsx)(X.Activity,{mode:d,children:f}),t[5]=d,t[6]=p);let m=s?`hidden`:`visible`,h;if(t[7]!==n||t[8]!==r||t[9]!==i){let e;t[11]!==r||t[12]!==i?(e=e=>(0,Z.jsx)(gr,{"aria-label":e.title,label:e.title,onMount:()=>i?.(e),onClick:()=>r?.(e)},e.id),t[11]=r,t[12]=i,t[13]=e):e=t[13],h=n.map(e),t[7]=n,t[8]=r,t[9]=i,t[10]=h}else h=t[10];let g;t[14]!==m||t[15]!==h?(g=(0,Z.jsx)(X.Activity,{mode:m,children:h}),t[14]=m,t[15]=h,t[16]=g):g=t[16];let _;t[17]!==u||t[18]!==p||t[19]!==g?(_=(0,Z.jsxs)(`div`,{className:u,children:[p,g]}),t[17]=u,t[18]=p,t[19]=g,t[20]=_):_=t[20];let v;return t[21]!==o||t[22]!==c||t[23]!==_?(v=(0,Z.jsxs)(Vn,{className:o,children:[c,_]}),t[21]=o,t[22]=c,t[23]=_,t[24]=v):v=t[24],v}})),Cr,wr,Tr,Er=e((()=>{Cr=q(),O(),xe(),nt(),st(),Un(),yt(),Sr(),We(),wr=K(),Tr=e=>{"use forget";let t=(0,Cr.c)(29),{header:n,presentation:r,items:i,showAllItems:a,hideRateLimitMessage:o,unblurredPromptCount:s,onAuthRequired:c,onSelectPromptItem:l,onShowPromptItem:u,onPredictPromptItem:d,onEditPhoto:f,skeleton:p}=e,m=je();switch(r){case`icon_pill`:{let e;return t[0]!==n||t[1]!==i||t[2]!==l||t[3]!==u||t[4]!==a||t[5]!==p?(e=(0,wr.jsx)(br,{items:i,skeleton:p,showAllItems:a,onSelectPromptItem:l,onShowPromptItem:u,header:n}),t[0]=n,t[1]=i,t[2]=l,t[3]=u,t[4]=a,t[5]=p,t[6]=e):e=t[6],e}case`text_pill`:{let e;return t[7]!==n||t[8]!==i||t[9]!==l||t[10]!==u||t[11]!==p?(e=(0,wr.jsx)(xr,{items:i,skeleton:p,onSelectPromptItem:l,onShowPromptItem:u,header:n}),t[7]=n,t[8]=i,t[9]=l,t[10]=u,t[11]=p,t[12]=e):e=t[12],e}case`portrait`:case`image_card`:{let e;t[13]!==m||t[14]!==c||t[15]!==d||t[16]!==l||t[17]!==u||t[18]!==a||t[19]!==s?(e=e=>{let{ariaHidden:t,item:n,index:r,itemClassName:i,itemFrameClassName:o}=e;return(0,wr.jsx)(Ct,{ariaHidden:t||s!=null&&r>=s,ariaLabel:ht(n,n.badge?.trim()||(n.requires_thinking?m.formatMessage(Tt):null)),className:A(i,s!=null&&r>=s&&`pointer-events-none opacity-50 blur-sm`),frameClassName:o,badge:(0,wr.jsx)(Me,{className:a?`max-md:px-3 max-md:py-1.5 max-md:text-sm max-md:leading-5`:void 0,item:n}),label:a?(0,wr.jsx)(`span`,{className:`max-md:text-sm max-md:leading-5`,children:n.title??``}):n.title??``,onAuthRequired:c,onClick:()=>l?.(n),onMount:s!=null&&r>=s?void 0:()=>u?.(n),onPredictClick:()=>d?.(n),content:(0,wr.jsx)(pt,{src:Be(n)??``,alt:``,fetchPriority:r===0?`high`:`auto`},Be(n)??``),labelPosition:`overlay`,desktopLabelSize:a?`body-small`:`caption`,strongCaptionGradient:!n.section,type:`apply-style`})},t[13]=m,t[14]=c,t[15]=d,t[16]=l,t[17]=u,t[18]=a,t[19]=s,t[20]=e):e=t[20];let r;return t[21]!==n||t[22]!==o||t[23]!==i||t[24]!==f||t[25]!==a||t[26]!==p||t[27]!==e?(r=(0,wr.jsx)(Gn,{items:i,skeleton:p,showAllItems:a,hideControls:!0,hideRateLimitMessage:o,headerClassName:`pe-(--images-app-padding)`,rateLimitMessageClassName:`ps-(--images-app-padding)`,scrollContainerWrapperClassName:`overflow-hidden px-(--images-app-padding)`,scrollContainerClassName:`[overflow-clip-margin:0px]`,onEditPhoto:f,header:n,renderItem:e}),t[21]=n,t[22]=o,t[23]=i,t[24]=f,t[25]=a,t[26]=p,t[27]=e,t[28]=r):r=t[28],r}default:return null}}}));function Dr(){return Ae({queryKey:[`recentMedia`],staleTime:120*1e3,queryFn:({pageParam:e})=>o.safeGet(`/my/recent/media_gen`,{authOption:L.SendIfAvailable,parameters:{query:{limit:Or,after:e}}}),enabled:()=>B(),initialPageParam:null,getNextPageParam:e=>e.cursor??void 0,select:e=>e.pages.flatMap(e=>e.items).map(e=>({...e,archived:e.is_archived??!1,messageId:e.message_id??null,conversationId:e.conversation_id??void 0,imageGenAttribution:e.image_gen_attribution,transformationId:e.transformation_id??null,assetPointer:e.asset_pointer??null,thumbnail:e.encodings?.thumbnail?.path??null,createdAt:e.created_at?new Date(e.created_at*1e3):void 0}))})}var Or,kr,Ar,jr=e((()=>{fe(),H(),R(),z(),he(),ke(),Or=25,kr=F(()=>S(Dr)),Ar=de(()=>{let e=kr();return{images:e.data,isLoading:e.status===`pending`,hasNextPage:e.hasNextPage,isFetchingNextPage:e.isFetchingNextPage,fetchNextPage:kr.fetchNextPage,refetch:kr.refetch}})}));function Mr(){G.logStructuredEvent(`ChatgptImageHomeLibraryShortcutInteraction`,{interactionType:`CHATGPT_IMAGE_HOME_LIBRARY_SHORTCUT_INTERACTION_TYPE_CLICKED`})}var Nr,Pr,Fr,Ir=e((()=>{Nr=q(),At(),mr(),P(),xe(),be(),Pr=K(),Fr=e=>{"use forget";let t=(0,Nr.c)(10),{showLibraryShortcut:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Pr.jsx)(dr,{children:(0,Pr.jsx)(ye,{id:`image-gen.images-app.my-images.heading`,defaultMessage:`My images`})}),t[0]=r):r=t[0];let i;t[1]===n?i=t[2]:(i=n&&(0,Pr.jsx)(`p`,{className:`text-token-text-secondary ms-4 text-sm`,children:(0,Pr.jsx)(ye,{id:`image-gen.images-app.my-images.library-shortcut.description`,defaultMessage:`Find all your images and more in Library`})}),t[1]=n,t[2]=i);let a;t[3]===i?a=t[4]:(a=(0,Pr.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[r,i]}),t[3]=i,t[4]=a);let o;t[5]===n?o=t[6]:(o=n&&(0,Pr.jsxs)(Ee,{to:`/library?tab=images`,className:`interactive-button interactive-button-secondary interactive-outline-secondary ms-4 inline-flex min-h-10 shrink-0 items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-medium`,onClick:Mr,children:[(0,Pr.jsx)(jt,{className:`icon`,"aria-hidden":`true`}),(0,Pr.jsx)(ye,{id:`image-gen.images-app.my-images.library-shortcut.link.label`,defaultMessage:`Open Library`})]}),t[5]=n,t[6]=o);let s;return t[7]!==a||t[8]!==o?(s=(0,Pr.jsxs)(`div`,{className:`flex flex-wrap items-center justify-between gap-x-6 gap-y-3 pe-4`,children:[a,o]}),t[7]=a,t[8]=o,t[9]=s):s=t[9],s}}));function Lr(e){"use forget";let t=(0,Br.c)(34),{className:n,images:r}=e,i=(0,Vr.use)(te),a;t[0]===i?a=t[1]:(a=ee(i),t[0]=i,t[1]=a);let o=a,s=_(zr),c;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(c=sn(),t[2]=c):c=t[2];let l=_(c.isShowingHiddenImages$),u;t[3]===o?u=t[4]:(u=()=>Fe(o).id,t[3]=o,t[4]=u);let d=_(u),f=wn()?Ar:Dt,{data:p}=lt(),m=p?.images_count??0,h;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(h=()=>f(),t[5]=h):h=t[5];let{images:g,hasNextPage:v,isLoading:y,isFetchingNextPage:b,fetchNextPage:x}=_(h),S;t[6]===g?S=t[7]:(S=g===void 0?[]:g,t[6]=g,t[7]=S);let C=S,[w,T]=(0,Vr.useState)(null),E=r??C,D=E,O=m+(E.length-D.length),k;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(k=()=>{T(null)},t[8]=k):k=t[8];let j=k,M;t[9]===s?M=t[10]:(M=(0,Hr.jsx)(`div`,{className:`mx-auto w-[min(100cqw,800px)]`,children:(0,Hr.jsx)(Fr,{showLibraryShortcut:s})}),t[9]=s,t[10]=M);let N;t[11]===D?N=t[12]:(N=(e,t)=>{let n=Ln(e),r=D.map(Rr);T({images:r,initialIndex:t,...n?{initialVideoMuted:!1,preferInitialVideoMuted:!0}:{}})},t[11]=D,t[12]=N);let P;t[13]===n?P=t[14]:(P=A(`mx-auto max-w-[calc(800px-(var(--images-app-padding)*2))]`,n),t[13]=n,t[14]=P);let F=v??!1,I=b||y,L;t[15]!==o||t[16]!==x||t[17]!==D||t[18]!==l||t[19]!==N||t[20]!==P||t[21]!==F||t[22]!==I||t[23]!==O?(L=(0,Hr.jsx)(In,{onOpenLightbox:N,className:P,conversation:o,count:O,images:D,includeArchived:l,isHiddenView:l,hasMoreImages:F,onlyUseThumbnail:!0,isFetchingMore:I,onScrollToEnd:x}),t[15]=o,t[16]=x,t[17]=D,t[18]=l,t[19]=N,t[20]=P,t[21]=F,t[22]=I,t[23]=O,t[24]=L):L=t[24];let R;t[25]!==o||t[26]!==d||t[27]!==w?(R=w!=null&&(0,Hr.jsx)(Ur,{images:w.images,initialIndex:w.initialIndex,initialVideoMuted:w.initialVideoMuted,preferInitialVideoMuted:w.preferInitialVideoMuted,conversation:o,currentModelId:d,fullscreenShellEnabled:!0,noRatings:!0,onClose:j}),t[25]=o,t[26]=d,t[27]=w,t[28]=R):R=t[28];let z;return t[29]!==n||t[30]!==L||t[31]!==R||t[32]!==M?(z=(0,Hr.jsxs)(Vn,{className:n,children:[M,L,R]}),t[29]=n,t[30]=L,t[31]=R,t[32]=M,t[33]=z):z=t[33],z}function Rr(e){return zn(e)}function zr(){return E()&&b().data!=null}var Br,Vr,Hr,Ur,Wr=e((()=>{Br=q(),oe(),Qt(),Bn(),qe(),jr(),Ge(),r(),_e(),H(),Fn(),Ir(),Rn(),it(),u(),N(),O(),Vr=t(Se()),Hr=K(),De(),Ur=D(()=>Te(()=>import(`./1d084ec4-ddqw3vp66v62mdxq.js`).then(e=>e.ImageGenConversationLightboxNew),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41])))}));function Gr(){h({actionType:T.ACCESS_FLOW_ENTRY_ACTION_TYPE_LOGIN_OR_SIGNUP,entryPoint:c.ACCESS_FLOW_ENTRY_POINT_LOGIN_MODAL,entryTrigger:C.ACCESS_FLOW_ENTRY_TRIGGER_AUTOMATIC,cta:`images_prompt_card`})}function Kr(e,{focus:t=!0}={}){t&&Kt(e).focus(),document.getElementById(`image-app-composer`)?.scrollIntoView({behavior:`smooth`,block:`start`})}function qr(e){"use forget";let t=(0,ri.c)(114),{images:n,hideImagesAppList:r,hidePromptRateLimitMessage:i,suggestedPromptGroups:a,suggestedPromptGroupTitleOverride:o,showPromptTabs:s,skeleton:c,showAllPromptItems:u,unblurredPromptCount:d,enablePromptClickRevamp:f,preselectedPromptId:m,eightiesUploadFlow:h}=e,g=i!==void 0&&i,b=s!==void 0&&s,x=u!==void 0&&u,S=f!==void 0&&f,C=(0,Q.use)(l),w=(0,Q.use)(te),T;t[0]===w?T=t[1]:(T=ee(w),t[0]=w,t[1]=T);let E=T,D=Tn(),O=_(Ve),k=Rt(),j=(0,Q.useRef)(0),M=(0,Q.useRef)(null),N=(0,Q.useRef)(null),P=_(Le),F;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(F=()=>()=>{j.current+=1},t[2]=F):F=t[2];let I;t[3]!==k||t[4]!==E||t[5]!==S?(I=[k,E,S],t[3]=k,t[4]=E,t[5]=S,t[6]=I):I=t[6],(0,Q.useEffect)(F,I);let L=je(),[R,z]=(0,Q.useState)(null),H;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(H=mn.isImagesTabRevampEnabled(),t[7]=H):H=t[7];let U=H,ne;t[8]===S?ne=t[9]:(ne=()=>U&&S?Je():null,t[8]=S,t[9]=ne);let W=_(ne),ie;t[10]===W?.data?ie=t[11]:(ie=W?.data??[],t[10]=W?.data,t[11]=ie);let ae=ie,oe=W?.status===`pending`,[se,ce]=(0,Q.useState)(null),ue=U&&se!=null,G=_(B),de=!G&&m===`80s-flashback`&&h!=null,fe,me,he,_e;if(t[12]!==G||t[13]!==R||t[14]!==b||t[15]!==a){fe=G?a:a.flatMap(ni),he=b?gn(fe.flatMap(ti)):[],me=he.some(Boolean);let e=he[0]??``;_e=R!==null&&he.includes(R)?R:e,t[12]=G,t[13]=R,t[14]=b,t[15]=a,t[16]=fe,t[17]=me,t[18]=he,t[19]=_e}else fe=t[16],me=t[17],he=t[18],_e=t[19];let K=_e,ve;t[20]!==K||t[21]!==fe||t[22]!==me?(ve=me?fe.flatMap(e=>{if(e.kind!==`prompt_collection`)return[e];let t=e.items?.filter(e=>xn(e)===K);return t?.length?[t.length===e.items?.length?e:{...e,items:t}]:[]}):fe,t[20]=K,t[21]=fe,t[22]=me,t[23]=ve):ve=t[23];let be=ve,xe;t[24]!==K||t[25]!==he||t[26]!==b?(xe=b?(0,$.jsx)(bt,{sections:he,activeSection:K,onSectionChange:z,surface:wt.CHATGPT_IMAGE_PROMPT_SENT_SURFACE_TYPE_IMAGES,className:`ps-(--images-app-padding)`}):void 0,t[24]=K,t[25]=he,t[26]=b,t[27]=xe):xe=t[27];let Se=xe,{data:Ce}=lt(),we=Ce?.images_count??0,Te=x||U,Ee;t[28]===Symbol.for(`react.memo_cache_sentinel`)?(Ee=(0,$.jsx)(`div`,{className:`skeleton-child skeleton-translucent ms-4 h-8 w-32 rounded-full max-md:w-24`}),t[28]=Ee):Ee=t[28];let De=Ee,Oe;t[29]!==k||t[30]!==E||t[31]!==D?(Oe=e=>{if(!(e.length===0||N.current?.conversation===E&&N.current.composerController===k)){if(!B()&&Le()){let{promptItem:t}=Y(E);if(t==null)return;(async()=>{let n=await rn(e,D);if(!n.success){ge().danger(n.error.message,{toastId:`no-auth-image-gen-pending-draft-upload-error`,loggingTitle:`Failed to upload ImageGen prompt draft images`,loggingDescription:n.error.message});return}let r=new Set(e),i=D.readyFiles$().filter(e=>r.has(e.tempId)),a=_n(k).trim(),o=on(E);o.set(!0),await An({content:a.length>0?a:t.prompt_text,attachments:[],readyFiles:i,authOptions:{callback:Gr}}).finally(()=>{o.set(!1)})})();return}Yt({conversation:E,tempIds:e,filePickerStore:D})}},t[29]=k,t[30]=E,t[31]=D,t[32]=Oe):Oe=t[32];let ke=pe(Oe),q,Ae;t[33]!==E||t[34]!==ke?(q=()=>le(()=>Ut(E)(),ke,{fireImmediately:!0}),Ae=[E,ke],t[33]=E,t[34]=ke,t[35]=q,t[36]=Ae):(q=t[35],Ae=t[36]),(0,Q.useEffect)(q,Ae);let Me;t[37]===C?Me=t[38]:(Me=()=>{let e=document.getElementById(`upload-photos`);e instanceof HTMLInputElement&&gt({openDialog:C,openPicker:()=>e.click()})},t[37]=C,t[38]=Me);let Pe=pe(Me),Fe;t[39]!==k||t[40]!==E||t[41]!==h||t[42]!==S||t[43]!==D||t[44]!==de||t[45]!==ke||t[46]!==C||t[47]!==m||t[48]!==x?(Fe=(e,t,n)=>{let r=n!==void 0&&n;N.current=r?{conversation:E,composerController:k}:null,m!=null&&(M.current={conversation:E,composerController:k,promptId:m});let i=j.current+1,a=Ne(e.items,t.id),o={promptItem:t,group:e,surface:wt.CHATGPT_IMAGE_PROMPT_SENT_SURFACE_TYPE_IMAGES,position:a};ze({item:t,group:e,position:a,surface:wt.CHATGPT_IMAGE_PROMPT_SENT_SURFACE_TYPE_IMAGES});let s=t.action??e.action,c=s.input_requirements?.source;if(S&&c===`sketch`){yn({composerController:k,conversation:E,isRequestCurrent:()=>j.current===i,onSave:e=>{zt(E,t),ir(e,t.prompt_text,{scrollIntoView:!1}),V(()=>{Y.set(E,o),Sn.set(E,t.id)}),ce(null)}})&&(j.current=i,Kr(k,{focus:!1}));return}if(j.current=i,zt(E,t),S&&B()&&s.strategy===`auto_send`&&c!==`styles`){ir(Kt(k),t.prompt_text,{scrollIntoView:!1}),V(()=>{Y.set(E,o),Sn.set(E,t.id)}),ce(c===`prompt_only`?null:{promptItem:t,group:e,position:a}),Kr(k);return}let l=s.strategy;bb265:switch(l){case`prefill_composer`:{let e=Kt(k);ir(e,t.prompt_text),B()&&Cn(t)?V(()=>{Y.set(E,o),Sn.set(E,t.id)}):(S&&B()||Cn(dn(E)))&&V(()=>{Y.set(E,{promptItem:null,group:null}),Sn.set(E,null)}),x?Kr(k):e.focus();break bb265}case`auto_send`:{let n=r&&de&&t.id===m;if(r&&(V(()=>{Y.set(E,o),Sn.set(E,t.id)}),ir(Kt(k),t.prompt_text,{scrollIntoView:!1})),n&&h===`direct`)break bb265;if(!B()&&Le()&&!r){Y.set(E,o);let e=Kt(k);ir(e,t.prompt_text),e.focus(),x&&ft()?.scrollTo({top:0,behavior:`instant`});let n=D.files$().map(ei);n.length>0?ke(n):gt({openDialog:C,openPicker:$r});break bb265}if(!r&&He()&&D.files$().length>0){V(()=>{Y.set(E,o),Yt({conversation:E,tempIds:D.files$().map(Qr),filePickerStore:D})});return}re(On,{conversation:E,isNoAuthEightiesPromo:n,recents:r&&!B()?[]:void 0,filePickerStore:r?D:void 0,publishChosenPhotoTempIds:!r,onClose:Zr,onCreateImage:()=>{vn({conversation:E,group:e,promptItem:t,surface:o.surface,position:o.position}),y(On)},onSelectFiles:e=>{if(r){y(On),Kr(k);return}V(()=>{Y.set(E,o),Yt({conversation:E,tempIds:e,filePickerStore:D}),y(On)})},onSelectRecent:e=>{if(r){if(!B())return;$t(D,e),y(On),Kr(k);return}let n=v(e.file_id);n&&(0,Q.startTransition)(()=>{V(()=>{Y.set(E,o),Jt({conversation:E,prompt:t.prompt_text,images:[{asset_pointer:n,width:1,height:1}]})}),y(On)})},onChooseNewPhoto:()=>{gt({openDialog:C,openPicker:()=>{V(()=>{Y.set(E,o),qt({source:`photos`}),y(On)})}})},prompt:t,group:e})}}},t[39]=k,t[40]=E,t[41]=h,t[42]=S,t[43]=D,t[44]=de,t[45]=ke,t[46]=C,t[47]=m,t[48]=x,t[49]=Fe):Fe=t[49];let Ie=pe(Fe),J,Re;if(t[50]!==m||t[51]!==a){let e;t[54]===m?e=t[55]:(e=e=>e.kind===`prompt_collection`&&e.items?.some(e=>e.id===m),t[54]=m,t[55]=e),J=a.find(e),Re=J?.items?.find(e=>e.id===m),t[50]=m,t[51]=a,t[52]=J,t[53]=Re}else J=t[52],Re=t[53];let Be=Re,Ue,We;t[56]!==k||t[57]!==E||t[58]!==G||t[59]!==P||t[60]!==Ie||t[61]!==J||t[62]!==Be||t[63]!==m||t[64]!==d?(Ue=()=>{if(m==null||J==null||Be==null||!G&&!P)return;let e=Ne(J.items,Be.id);if(!G&&d!=null&&e!=null&&e>=d)return;let t=Be.action??J.action;if(t.strategy!==`auto_send`||t.input_requirements?.source!==`camera_or_gallery`)return;let n=M.current;n?.conversation===E&&n.composerController===k&&n.promptId===m||Ie(J,Be,!0)},We=[k,E,G,P,Ie,J,Be,m,d],t[56]=k,t[57]=E,t[58]=G,t[59]=P,t[60]=Ie,t[61]=J,t[62]=Be,t[63]=m,t[64]=d,t[65]=Ue,t[66]=We):(Ue=t[65],We=t[66]),(0,Q.useEffect)(Ue,We);let Ge;t[67]===se?Ge=t[68]:(Ge=se==null?null:Ye({view:`uploads`,onBack:()=>{ce(null)},canUseUploadsExperience:!0}),t[67]=se,t[68]=Ge);let Ke=Ge,qe=Xr,Ze=x&&`gap-4`,Qe;t[69]===Ze?Qe=t[70]:(Qe=A(`max-w-app-content mx-auto flex w-full flex-col gap-(--image-page-spacing)`,Ze),t[69]=Ze,t[70]=Qe);let $e=c?!0:void 0,et=c?`visible`:`hidden`,tt;t[71]!==g||t[72]!==Te?(tt=Te?(0,$.jsx)(Tr,{hideRateLimitMessage:g,items:[],presentation:`image_card`,showAllItems:!0,skeleton:!0,header:De}):(0,$.jsxs)($.Fragment,{children:[(0,$.jsx)(Tr,{hideRateLimitMessage:g,items:[],presentation:`image_card`,skeleton:!0,header:De}),(0,$.jsx)(Tr,{hideRateLimitMessage:g,presentation:`icon_pill`,items:[],skeleton:!0,header:De})]}),t[71]=g,t[72]=Te,t[73]=tt):tt=t[73];let nt;t[74]!==et||t[75]!==tt?(nt=(0,$.jsx)(Q.Activity,{mode:et,children:tt}),t[74]=et,t[75]=tt,t[76]=nt):nt=t[76];let rt=c?`hidden`:`visible`,it;t[77]!==h||t[78]!==D||t[79]!==g||t[80]!==L||t[81]!==O||t[82]!==de||t[83]!==oe||t[84]!==Pe||t[85]!==Ie||t[86]!==C||t[87]!==m||t[88]!==Se||t[89]!==ae||t[90]!==se||t[91]!==x||t[92]!==ue||t[93]!==o||t[94]!==d||t[95]!==Ke||t[96]!==be?(it=ue?(0,$.jsx)(Xe,{header:Ke,headerAction:null,isUploadDisabled:O,intl:L,items:ae,skeleton:oe,onEditPhoto:Pe,onSelectRecentUpload:e=>{let{item:t}=e;$t(D,t)},selectedPrompt:{item:se.promptItem,group:se.group,position:se.position}}):be.map((e,t)=>{if(e.kind!==`prompt_collection`||!e.items)return null;let n=t===0&&d!=null&&e.items.length>d?d:void 0,r=(0,$.jsx)(Tr,{hideRateLimitMessage:g,onAuthRequired:Gr,onShowPromptItem:t=>qe(e,t),onSelectPromptItem:t=>{let n=t.action??e.action,r=de&&t.id===m&&n.strategy===`auto_send`&&n.input_requirements?.source===`camera_or_gallery`;Ie(e,t,r),r&&h===`direct`&&qt({openDialog:C,source:`photos`})},items:n==null?e.items:e.items.slice(0,n*2),presentation:e.presentation,showAllItems:x,unblurredPromptCount:n,header:t===0&&Se?Se:(0,$.jsx)(dr,{children:t===0&&o?o:e.title})},e.id);return n==null?r:(0,$.jsxs)(`div`,{className:`relative overflow-hidden`,children:[r,(0,$.jsx)(`div`,{className:A(`from-token-bg-primary via-token-bg-primary/50 pointer-events-none absolute inset-x-0 bottom-0 z-10 grid place-items-center bg-linear-to-t to-transparent px-4`,e.items.length-n>n/2?`h-1/2 grid-rows-2`:`h-1/3 grid-rows-1`),children:(0,$.jsx)(p,{className:`pointer-events-auto rounded-full`,color:`primary`,size:`large`,onClick:Jr,children:(0,$.jsx)(ye,{id:`imagesApp.promptSections.loginGate.button.label`,defaultMessage:`Log in or sign up to see more`})})})]},e.id)}),t[77]=h,t[78]=D,t[79]=g,t[80]=L,t[81]=O,t[82]=de,t[83]=oe,t[84]=Pe,t[85]=Ie,t[86]=C,t[87]=m,t[88]=Se,t[89]=ae,t[90]=se,t[91]=x,t[92]=ue,t[93]=o,t[94]=d,t[95]=Ke,t[96]=be,t[97]=it):it=t[97];let at;t[98]!==rt||t[99]!==it?(at=(0,$.jsx)(Q.Activity,{mode:rt,children:it}),t[98]=rt,t[99]=it,t[100]=at):at=t[100];let ot;t[101]!==Qe||t[102]!==$e||t[103]!==nt||t[104]!==at?(ot=(0,$.jsxs)(`div`,{className:Qe,"aria-busy":$e,children:[nt,at]}),t[101]=Qe,t[102]=$e,t[103]=nt,t[104]=at,t[105]=ot):ot=t[105];let st=!r&&!ue&&we>0&&!(c&&Te)?`visible`:`hidden`,ct;t[106]===n?ct=t[107]:(ct=(0,$.jsx)(Lr,{images:n}),t[106]=n,t[107]=ct);let ut;t[108]!==st||t[109]!==ct?(ut=(0,$.jsx)(Q.Activity,{mode:st,children:ct}),t[108]=st,t[109]=ct,t[110]=ut):ut=t[110];let dt;return t[111]!==ot||t[112]!==ut?(dt=(0,$.jsxs)($.Fragment,{children:[ot,ut]}),t[111]=ot,t[112]=ut,t[113]=dt):dt=t[113],dt}function Jr(){U({fallbackScreenHint:`login_or_signup`,callback:Yr,skipLoginModal:!1,loginModalSubtitleVariant:`create-image`})}function Yr(){m(c.ACCESS_FLOW_ENTRY_POINT_LOGIN_MODAL)}function Xr(e,t){Re({item:t,group:e,position:Ne(e.items,t.id),surface:wt.CHATGPT_IMAGE_PROMPT_SENT_SURFACE_TYPE_IMAGES})}function Zr(){y(On)}function Qr(e){return e.tempId}function $r(){return qt({source:`photos`})}function ei(e){return e.tempId}function ti(e){return e.kind===`prompt_collection`?e.items??[]:[]}function ni(e){if(e.kind!==`prompt_collection`)return[e];let t=e.items?.filter(t=>(t.action??e.action)?.input_requirements?.source!==`sketch`);return t?.length?[{...e,items:t}]:[]}var ri,Q,$,ii=e((()=>{ri=q(),ne(),j(),en(),oe(),w(),n(),Wt(),d(),Zt(),Nn(),Er(),En(),Qt(),mt(),J(),qe(),Nt(),ln(),Mn(),Pe(),un(),at(),H(),ce(),Ze(),Ie(),Ft(),i(),mr(),Wr(),pn(),xt(),ar(),tn(),it(),R(),u(),ue(),k(),rt(),O(),Q=t(Se()),xe(),$=K()}));function ai(e){"use forget";let t=(0,oi.c)(14),{children:n,onFilesSelected:r}=e,i=(0,si.use)(te),o;t[0]===i?o=t[1]:(o=ee(i),t[0]=i,t[1]=o);let s=o,c=Tn(),l;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(l={initialSystemHint:a.PictureV2,hideInitialSystemHintPill:!0,lockSystemHints:!B()},t[2]=l):l=t[2];let u;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(u=A(`z-0 grid w-[min(1800px,100cqw)] grid-rows-[minmax(0,min-content)_minmax(0,1fr)_minmax(0,min-content)] justify-self-center`),t[3]=u):u=t[3];let d;t[4]!==s||t[5]!==c||t[6]!==r?(d=(0,ci.jsx)(Vt,{onUploadFiles:e=>{let{tempIds:t}=an({...e,conversation:s,filePickerStore:c});t.length>0&&r?.()}}),t[4]=s,t[5]=c,t[6]=r,t[7]=d):d=t[7];let f;t[8]!==n||t[9]!==d?(f=(0,ci.jsx)(`div`,{className:`@container/images-app-shell relative grid min-h-svh w-full [--image-page-spacing:44px] [--images-app-padding:16px] [--skeleton-opacity:0.75]`,children:(0,ci.jsxs)(`div`,{className:u,children:[d,n]})}),t[8]=n,t[9]=d,t[10]=f):f=t[10];let p;return t[11]!==s||t[12]!==f?(p=(0,ci.jsx)(Dn,{conversation:s,ignoreParentComposerController:!0,options:l,children:f}),t[11]=s,t[12]=f,t[13]=p):p=t[13],p}var oi,si,ci,li=e((()=>{oi=q(),en(),oe(),Wt(),g(),nn(),R(),u(),O(),si=t(Se()),ci=K()}));export{or as a,rr as c,ii as i,Jn as l,li as n,ur as o,qr as r,Xn as s,ai as t,Yn as u};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/1d084ec4-ddqw3vp66v62mdxq.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-bo7e0c29ngt4zgx0.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-ikg0dwuw782klweb.js", "assets/30901919-e8h11sw136qen6v0.js", "assets/c470f5ab-ab47eubabs8jspdc.js", "assets/0e5afe53-esm68l11os61djoy.js", "assets/conversation-small-oilgsqfa.css", "assets/c2675c8c-ejvs9hq3rwjwsbcv.js", "assets/82782bc9-fcii2id0x6lspwtj.js", "assets/8b34dbc2-dtawqv9t1aqckqj4.js", "assets/global-modals-lv5n3ujm.css", "assets/44fdb285-cr6ypnobt1vt5irj.js", "assets/540191af-bsnwm8m7nrxh45sh.js", "assets/85557f11-mqqr1coukt2floak.js", "assets/e4fe0dae-l4vxeim4wpwl76rs.js", "assets/b9e74381-h0z6cp6y2ptcf91m.js", "assets/62331d8d-fuhg61wuia2eqezb.js", "assets/971592ec-mffthpbxok58crpy.js", "assets/4c0f1f8e-o4zbuwgknf8ay6gx.js", "assets/86793a97-ongmaxxxm7ura7r1.js", "assets/183f19de-b4keljrxqzf9e2ih.js", "assets/656cec6a-bi1c2h5s2xqg9tvb.js", "assets/cb56d84a-l5xbecmayz0u2zwt.js", "assets/image-viewer-b098kzr0.css", "assets/d93502a4-i8tgld21b94ibra0.js", "assets/a35b0b5c-hf0tgvfsfklzj209.js", "assets/7f792745-distvoirix4yruog.js", "assets/95afbc26-fw1jvbulbugkm67w.js", "assets/3aecc39e-fatzzktpc4b9hwyq.js", "assets/57388dad-m59sib62g3bfmdzv.js", "assets/5ff32e89-ore2wia7yalsvws1.js", "assets/43119cb7-eb7ksgc4szdm78y1.js", "assets/b8c3b71b-dm6ktlulkpolaidm.js", "assets/dca5af77-jtjl86dkw8b4xokx.js", "assets/20a8d32f-mf0q8zhl9h455nem.js", "assets/1cfd0849-cstfhrhsh5t65i40.js", "assets/97fef780-bn3a0srl5okayskg.js", "assets/ee0eeb85-ogu5n050pym7fbik.js", "assets/20fadd5c-if6fb0jw1ekiz152.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $0 as n,
+    AU as r,
+    BU as i,
+    Dq as a,
+    F7 as o,
+    Fnt as s,
+    HR as c,
+    Ha as l,
+    Hot as u,
+    Hp as d,
+    Int as f,
+    JT as p,
+    LR as m,
+    MR as h,
+    Nq as g,
+    P5 as _,
+    Pm as v,
+    Q0 as y,
+    RU as b,
+    S5 as x,
+    S8 as S,
+    UR as C,
+    Ua as w,
+    Uot as ee,
+    VR as T,
+    Vk as E,
+    X0 as D,
+    X5 as O,
+    XR as k,
+    Y5 as A,
+    YT as j,
+    Ytt as M,
+    Z0 as N,
+    bnt as P,
+    bq as F,
+    cW as I,
+    cat as L,
+    dit as R,
+    fat as z,
+    fit as B,
+    g5 as V,
+    g8 as H,
+    i0 as U,
+    iF as te,
+    jR as ne,
+    mnt as W,
+    n2 as re,
+    oW as ie,
+    oq as ae,
+    pF as oe,
+    pq as se,
+    r0 as ce,
+    s5 as le,
+    vN as ue,
+    vnt as G,
+    x8 as de,
+    xq as fe,
+    yN as pe,
+    yq as me,
+    z7 as he,
+    zU as ge,
+    zk as _e
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+import {
+    Bn as K,
+    In as ve,
+    Nn as ye,
+    Q as be,
+    Rn as xe,
+    Vn as Se,
+    Vt as Ce,
+    Zt as we,
+    cn as Te,
+    it as Ee,
+    ln as De,
+    rn as Oe,
+    s as ke,
+    wn as q,
+    x as Ae,
+    zn as je
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $m as Me,
+    A7 as Ne,
+    D7 as Pe,
+    Eyn as Fe,
+    Hm as Ie,
+    Jm as J,
+    Jz as Le,
+    M7 as Re,
+    N7 as ze,
+    Nfn as Be,
+    O7 as Ve,
+    Ofn as He,
+    P7 as Ue,
+    Pfn as We,
+    Pyn as Ge,
+    QHn as Ke,
+    Sfn as qe,
+    Tfn as Je,
+    Um as Ye,
+    Vm as Xe,
+    Wm as Ze,
+    Wzn as Qe,
+    XHn as $e,
+    Xzn as et,
+    _Ft as tt,
+    ah as nt,
+    cMn as rt,
+    d as it,
+    eKn as at,
+    eVn as ot,
+    eh as st,
+    g7 as ct,
+    h as lt,
+    h7 as ut,
+    hkt as dt,
+    iKn as ft,
+    ih as pt,
+    j7 as mt,
+    jfn as ht,
+    k7 as gt,
+    m7 as _t,
+    mkt as vt,
+    nh as yt,
+    qm as bt,
+    qz as xt,
+    rVn as St,
+    rh as Ct,
+    sMn as wt,
+    th as Tt,
+    vFt as Et,
+    wfn as Dt
+} from "./conversation-small-ikg0dwuw782klweb.js";
+import {
+    Dm as Ot,
+    Em as kt,
+    Oc as At,
+    kc as jt
+} from "./30901919-e8h11sw136qen6v0.js";
+import {
+    Am as Mt,
+    An as Nt,
+    Bl as Pt,
+    Cn as Ft,
+    Da as It,
+    ES as Lt,
+    E_ as Rt,
+    Fl as zt,
+    Gn as Bt,
+    Hl as Vt,
+    Il as Ht,
+    Jg as Ut,
+    Kh as Wt,
+    Kn as Gt,
+    L_ as Kt,
+    Ll as qt,
+    Ml as Jt,
+    Nl as Yt,
+    Oa as Xt,
+    Pl as Zt,
+    Qg as Qt,
+    Sn as $t,
+    T_ as en,
+    Tn as tn,
+    Ul as nn,
+    Vl as rn,
+    Wl as an,
+    Xg as on,
+    Zg as sn,
+    _S as cn,
+    _u as ln,
+    a_ as un,
+    au as dn,
+    bl as fn,
+    bp as pn,
+    du as mn,
+    e_ as hn,
+    hu as gn,
+    i_ as _n,
+    jl as vn,
+    jn as yn,
+    km as bn,
+    mu as xn,
+    n_ as Sn,
+    ou as Cn,
+    qg as wn,
+    qh as Tn,
+    su as En,
+    t_ as Y,
+    w_ as Dn,
+    wn as On,
+    xl as kn,
+    xp as An,
+    yl as jn,
+    z_ as Mn,
+    zl as Nn
+} from "./8b34dbc2-dtawqv9t1aqckqj4.js";
+import {
+    n as Pn
+} from "./cc1aa8e1-hdp04obhew1srhzz.js";
+import {
+    n as Fn,
+    t as In
+} from "./7bd2b610-h3bj0lusjr0h408j.js";
+import {
+    a as Ln,
+    i as Rn,
+    o as zn
+} from "./53bdf712-j6jjhs4hsamejcpy.js";
+import {
+    a as Bn,
+    i as Vn,
+    o as Hn,
+    r as Un,
+    s as Wn,
+    t as Gn
+} from "./9521ff6d-elhiyski2fu1irpu.js";
+import {
+    n as Kn,
+    t as qn
+} from "./4775c8e0-cf8z0iqytpu7rdtk.js";
+var Jn, Yn = e((() => {
+    xe(), Jn = ve({
+        id: `image-gen.images-app.header.title`,
+        defaultMessage: `Images`
+    })
+}));
+
+function Xn() {
+    "use forget";
+    let e = (0, $n.c)(7),
+        [t, n] = (0, er.useState)(null),
+        r = _(Qn),
+        i, a;
+    e[0] === t ? (i = e[1], a = e[2]) : (i = () => le(Zn, e => {
+        if (e) return $e({
+            target: t,
+            onChange(e) {
+                let t = !e;
+                (0, er.startTransition)(() => {
+                    hn.set(t)
+                })
+            }
+        })
+    }, {
+        fireImmediately: !0
+    }), a = [t], e[0] = t, e[1] = i, e[2] = a), (0, er.useEffect)(i, a);
+    let o = !r && `hidden`,
+        s;
+    e[3] === o ? s = e[4] : (s = A(`pointer-events-none top-0 h-px w-full`, o), e[3] = o, e[4] = s);
+    let c;
+    return e[5] === s ? c = e[6] : (c = (0, tr.jsx)(`div`, {
+        ref: n,
+        className: s
+    }), e[5] = s, e[6] = c), c
+}
+
+function Zn() {
+    return nr()
+}
+
+function Qn() {
+    return nr()
+}
+var $n, er, tr, nr, rr = e((() => {
+    $n = q(), Qt(), H(), R(), Ke(), ae(), O(), er = t(Se()), tr = K(), nr = de(() => {
+        let e = se();
+        return !B() || !e
+    })
+}));
+
+function ir(e, t, n) {
+    Lt(e, t, e => Qe(e.attrs)?.kind === `system-hint`, n)
+}
+var ar = e((() => {
+    et(), cn()
+}));
+
+function or(e) {
+    "use forget";
+    let t = (0, sr.c)(47),
+        {
+            onComposerInteraction: n,
+            promptOverride: r,
+            disableDraftPersistence: i,
+            disableAutoFocus: o,
+            draftRestorationMode: s,
+            hideComposerSurface: c
+        } = e,
+        l = i !== void 0 && i,
+        u = o !== void 0 && o,
+        d = c !== void 0 && c,
+        p = (0, cr.use)(te),
+        m;
+    t[0] === p ? m = t[1] : (m = ee(p), t[0] = p, t[1] = m);
+    let h = m,
+        g;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (g = B(), t[2] = g) : g = t[2];
+    let v = g,
+        y;
+    t[3] === h ? y = t[4] : (y = () => Fe(h), t[3] = h, t[4] = y);
+    let b = _(y),
+        S = b.id,
+        C;
+    t[5] === h ? C = t[6] : (C = () => on(h)(), t[5] = h, t[6] = C);
+    let w = _(C),
+        T = _(Le),
+        D = _(E),
+        O;
+    if (t[7] !== D) {
+        let {
+            persistFilesToLibrary: e
+        } = _t(D);
+        O = ut({
+            persistFilesToLibrary: e,
+            isConversationNavigationDisabled: !1,
+            isGizmoThread: !1,
+            isProjectThread: !1,
+            isBespokeLandingPage: !1
+        }, D), t[7] = D, t[8] = O
+    } else O = t[8];
+    let k = O,
+        A;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (A = mn.isImagesTabRevampEnabled(), t[9] = A) : A = t[9];
+    let j = A,
+        M = Rt(),
+        N = Tn(),
+        [P] = Ce(),
+        F;
+    t[10] === P ? F = t[11] : (F = P.get(`prompt`), t[10] = P, t[11] = F);
+    let I = F,
+        L, R;
+    t[12] !== M || t[13] !== r || t[14] !== I ? (L = () => {
+        let e = (r ?? I)?.trim();
+        e && ir(Kt(M), e, {
+            scrollIntoView: !1
+        })
+    }, R = [M, r, I], t[12] = M, t[13] = r, t[14] = I, t[15] = L, t[16] = R) : (L = t[15], R = t[16]), (0, cr.useEffect)(L, R);
+    let z;
+    t[17] !== h || t[18] !== N || t[19] !== T ? (z = async e => {
+        let t = T ? N.readyFiles$() : [];
+        T && on(h).set(!0), await It({
+            content: e.content,
+            attachments: e.attachments,
+            hasSelectedFiles: N.files$().length > 0,
+            readyFiles: t,
+            isPromptCarryoverEnabled: T,
+            systemHints: [a.PictureV2]
+        }).finally(() => {
+            T && on(h).set(!1)
+        })
+    }, t[17] = h, t[18] = N, t[19] = T, t[20] = z) : z = t[20];
+    let V = z,
+        H;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (H = v ? void 0 : (0, lr.jsx)(Ot, {
+        className: `icon`
+    }), t[21] = H) : H = t[21];
+    let U = !v && w,
+        ne = v || T,
+        W;
+    t[22] === h ? W = t[23] : (W = e => Mt({
+        callsiteId: `request_completion.tool_landing_pages.image_gen.images_app.images_app_composer.1`,
+        conversation: h,
+        ...jn(e)
+    }), t[22] = h, t[23] = W);
+    let re;
+    t[24] !== h || t[25] !== b || t[26] !== N || t[27] !== V ? (re = async e => {
+        if (!v) {
+            await V(e);
+            return
+        }
+        let t = G.logStructuredEvent(`ChatgptImageHomeComposerTextSent`, {
+            attachmentCount: f(N.readyFiles$().length)
+        });
+        if (G.logValueEventWithStatsig({
+                segmentEventName: `chatgpt_web_image_library_composer_submitted`,
+                statsigEventName: `chatgpt_web_image_library_composer_submitted`,
+                eventId: t
+            }), !j || e.systemHints.length !== 1 || e.systemHints[0] !== a.PictureV2) {
+            Mt({
+                callsiteId: `request_completion.tool_landing_pages.image_gen.images_app.images_app_composer.2`,
+                conversation: h,
+                ...await fn(e)
+            });
+            return
+        }
+        let n = x(() => Y(h)),
+            r = await fn(e);
+        if (!r.promptMessage) return;
+        if (n.promptItem != null && r.promptMessage.metadata?.image_prompt_id === n.promptItem.id) {
+            let e = Oe();
+            r.promptMessage.metadata = {
+                ...r.promptMessage.metadata,
+                image_feature: `prompt`,
+                image_prompt_group_id: n.group.id,
+                image_prompt_group_presentation: n.group.presentation,
+                image_send_uuid: e
+            }, Ue({
+                item: n.promptItem,
+                group: n.group,
+                surface: n.surface,
+                position: n.position,
+                imageSendUuid: e
+            })
+        }
+        let i = (r.promptMessage.metadata?.attachments?.length ?? 0) > 0 ? [r.promptMessage, Pt(`Uploading`)] : [r.promptMessage];
+        ot(void 0), Ht(Oe(), {
+            conversation: h,
+            model: b,
+            systemHints: r.completionMetadata?.systemHints,
+            optimisticMessages: i,
+            asyncWork: () => Promise.resolve(r)
+        })
+    }, t[24] = h, t[25] = b, t[26] = N, t[27] = V, t[28] = re) : re = t[28];
+    let ie;
+    t[29] !== h || t[30] !== S || t[31] !== u || t[32] !== l || t[33] !== s || t[34] !== d || t[35] !== k.isEnabled || t[36] !== k.reason || t[37] !== U || t[38] !== ne || t[39] !== W || t[40] !== re ? (ie = (0, lr.jsx)(Bt, {
+        conversation: h,
+        isNewThread: !0,
+        isProjectThread: !1,
+        isLibraryEnabled: k.isEnabled,
+        libraryEligibilityReason: k.reason,
+        entrySurface: `image_gen_composer`,
+        disableDraftPersistence: l,
+        disableAutoFocus: u,
+        draftRestorationMode: s,
+        hideComposerSurface: d,
+        layoutMode: `bottom`,
+        systemHintMenuSide: `bottom`,
+        currentModelId: S,
+        onlyAllowImageUploads: !v,
+        plusButtonAddsFiles: !v || void 0,
+        plusButtonIcon: H,
+        disabledOverride: U,
+        commitComposerStateOnSubmit: ne,
+        onContinueGenerating: W,
+        onRequestCompletion: re,
+        hideHeader: !v,
+        disableAdvancedVoiceMode: !v
+    }), t[29] = h, t[30] = S, t[31] = u, t[32] = l, t[33] = s, t[34] = d, t[35] = k.isEnabled, t[36] = k.reason, t[37] = U, t[38] = ne, t[39] = W, t[40] = re, t[41] = ie) : ie = t[41];
+    let ae;
+    t[42] === Symbol.for(`react.memo_cache_sentinel`) ? (ae = (0, lr.jsx)(Hn, {}), t[42] = ae) : ae = t[42];
+    let oe;
+    return t[43] !== d || t[44] !== n || t[45] !== ie ? (oe = (0, lr.jsx)(tt, {
+        children: (0, lr.jsxs)(`div`, {
+            id: `image-app-composer`,
+            hidden: d,
+            className: `max-w-app-content transition-width z-10 mx-auto flex w-full flex-col justify-center gap-2 self-end px-(--images-app-padding) [&_[data-composer-surface][data-expanded-composer]]:max-h-[50svh]`,
+            onKeyDownCapture: n,
+            onPointerDownCapture: n,
+            children: [ie, ae]
+        })
+    }), t[43] = d, t[44] = n, t[45] = ie, t[46] = oe) : oe = t[46], oe
+}
+var sr, cr, lr, ur = e((() => {
+    sr = q(), bn(), en(), oe(), kt(), Wt(), ct(), Wn(), Zt(), Nn(), Qt(), mt(), ln(), Ge(), _e(), Mn(), kn(), Et(), Gt(), H(), St(), g(), xt(), Xt(), ar(), R(), P(), u(), s(), cr = t(Se()), be(), we(), lr = K()
+}));
+
+function dr(e) {
+    "use forget";
+    let t = (0, fr.c)(5),
+        {
+            children: n,
+            className: r
+        } = e,
+        i;
+    t[0] === r ? i = t[1] : (i = A(`text-token-text-primary text-heading-3 ms-4 font-medium`, r), t[0] = r, t[1] = i);
+    let a;
+    return t[2] !== n || t[3] !== i ? (a = (0, pr.jsx)(`h2`, {
+        className: i,
+        children: n
+    }), t[2] = n, t[3] = i, t[4] = a) : a = t[4], a
+}
+var fr, pr, mr = e((() => {
+    fr = q(), O(), Pn(), pr = K()
+}));
+
+function hr(e) {
+    "use forget";
+    let t = (0, yr.c)(32),
+        n, r, i, a, o, s, c, l;
+    t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4], o = t[5], s = t[6], c = t[7], l = t[8]) : ({
+        className: r,
+        label: a,
+        iconSrc: i,
+        onMount: s,
+        onClick: o,
+        skeleton: c,
+        title: l,
+        ...n
+    } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a, t[5] = o, t[6] = s, t[7] = c, t[8] = l);
+    let u;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (u = B(), t[9] = u) : u = t[9];
+    let d = u,
+        f;
+    t[10] === s ? f = t[11] : (f = () => {
+        s?.()
+    }, t[10] = s, t[11] = f), dt(f);
+    let m;
+    t[12] === o ? m = t[13] : (m = () => {
+        if (!d && !Le()) {
+            U({
+                fallbackScreenHint: `login_or_signup`,
+                skipLoginModal: !1,
+                loginModalSubtitleVariant: `create-image`
+            });
+            return
+        }
+        o?.()
+    }, t[12] = o, t[13] = m);
+    let h = c && `skeleton-child skeleton-translucent pointer-events-none rounded-xl! leading-normal!`,
+        g;
+    t[14] !== r || t[15] !== h ? (g = A(`w-auto max-w-full min-w-45 select-none`, `group/button flex items-start justify-start rounded-xl py-0 ps-0 pe-4 text-base font-normal outline-offset-4 outline-(--interactive-label-accent-default,var(--bg-primary-inverted))`, h, r), t[14] = r, t[15] = h, t[16] = g) : g = t[16];
+    let _;
+    t[17] === i ? _ = t[18] : (_ = (0, Z.jsx)(`img`, {
+        src: i,
+        alt: ``,
+        className: `corner-superellipse/1.1 ease-spring-elegant pointer-events-none aspect-square h-12 w-12 origin-center rounded-xl object-cover select-none motion-safe:transition-[scale,filter] motion-safe:group-hover/button:brightness-120 motion-safe:group-hover/button:motion-safe:will-change-[scale,filter] motion-safe:group-active/button:scale-98 motion-safe:group-active/button:motion-safe:will-change-[scale,filter]`
+    }), t[17] = i, t[18] = _);
+    let v = c && `w-24 leading-[150%]`,
+        y;
+    t[19] === v ? y = t[20] : (y = A(`text-token-text-primary/60 group-hover/button:text-token-text-primary ease-spring-elegant line-clamp-2 max-h-[2lh] text-start text-pretty wrap-break-word select-none motion-safe:transition-colors`, v), t[19] = v, t[20] = y);
+    let b;
+    t[21] !== a || t[22] !== y ? (b = (0, Z.jsx)(`span`, {
+        className: y,
+        children: a
+    }), t[21] = a, t[22] = y, t[23] = b) : b = t[23];
+    let x;
+    return t[24] !== n || t[25] !== c || t[26] !== m || t[27] !== g || t[28] !== _ || t[29] !== b || t[30] !== l ? (x = (0, Z.jsxs)(p, {
+        type: `button`,
+        ...n,
+        "aria-hidden": c,
+        disabled: c,
+        color: `custom`,
+        onClick: m,
+        contentWrapperClassName: `gap-3`,
+        className: g,
+        title: l,
+        children: [_, b]
+    }), t[24] = n, t[25] = c, t[26] = m, t[27] = g, t[28] = _, t[29] = b, t[30] = l, t[31] = x) : x = t[31], x
+}
+
+function gr(e) {
+    "use forget";
+    let t = (0, yr.c)(26),
+        n, r, i, a, o, s;
+    t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4], o = t[5], s = t[6]) : ({
+        className: r,
+        label: i,
+        onClick: a,
+        onMount: o,
+        skeleton: s,
+        ...n
+    } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a, t[5] = o, t[6] = s);
+    let c;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (c = B(), t[7] = c) : c = t[7];
+    let l = c,
+        u;
+    t[8] === o ? u = t[9] : (u = () => {
+        o?.()
+    }, t[8] = o, t[9] = u), dt(u);
+    let d;
+    t[10] === a ? d = t[11] : (d = () => {
+        if (!l && !Le()) {
+            U({
+                fallbackScreenHint: `login_or_signup`,
+                skipLoginModal: !1,
+                loginModalSubtitleVariant: `create-image`
+            });
+            return
+        }
+        a?.()
+    }, t[10] = a, t[11] = d);
+    let f = s && `skeleton-child skeleton-translucent pointer-events-none rounded-full! leading-normal!`,
+        m;
+    t[12] !== r || t[13] !== f ? (m = A(`corner-superellipse/1.1 w-auto max-w-full select-none`, `bg-token-bg-tertiary hover:bg-token-interactive-bg-tertiary-hover active:bg-token-interactive-bg-tertiary-press`, `rounded-full px-4 py-2 text-base font-normal`, f, r), t[12] = r, t[13] = f, t[14] = m) : m = t[14];
+    let h = s && `w-24 leading-[1lh]`,
+        g;
+    t[15] === h ? g = t[16] : (g = A(`inline-block`, h), t[15] = h, t[16] = g);
+    let _;
+    t[17] !== i || t[18] !== g ? (_ = (0, Z.jsx)(`span`, {
+        className: g,
+        children: i
+    }), t[17] = i, t[18] = g, t[19] = _) : _ = t[19];
+    let v;
+    return t[20] !== n || t[21] !== s || t[22] !== d || t[23] !== m || t[24] !== _ ? (v = (0, Z.jsx)(p, {
+        type: `button`,
+        ...n,
+        "aria-hidden": s,
+        disabled: s,
+        color: `custom`,
+        onClick: d,
+        className: m,
+        children: _
+    }), t[20] = n, t[21] = s, t[22] = d, t[23] = m, t[24] = _, t[25] = v) : v = t[25], v
+}
+
+function _r() {
+    return me()
+}
+
+function vr(e, t) {
+    return (0, Z.jsx)(gr, {
+        skeleton: !0,
+        label: ``
+    }, `skeleton-${t}`)
+}
+var yr, X, Z, br, xr, Sr = e((() => {
+        yr = q(), O(), X = t(Se()), xe(), j(), Bn(), H(), ce(), mr(), xt(), R(), I(), ae(), vt(), M(), Kn(), We(), Z = K(), br = e => {
+            "use forget";
+            let t = (0, yr.c)(55),
+                {
+                    items: n,
+                    onSelectPromptItem: r,
+                    onShowPromptItem: i,
+                    header: a,
+                    className: o,
+                    skeleton: s,
+                    showAllItems: c
+                } = e,
+                l = c !== void 0 && c,
+                u = (0, X.useRef)(null),
+                d = (0, X.useRef)(0),
+                f;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (f = x(_r), t[0] = f) : f = t[0];
+            let p = f,
+                [m, h] = (0, X.useState)(0),
+                g = s ?? n.length === 0,
+                _ = Math.max(Math.ceil(n.length / 6), 1),
+                v;
+            t[1] === _ ? v = t[2] : (v = () => {
+                let e = u.current;
+                if (!e) return;
+                let t = d.current,
+                    n = Math.round(e.scrollLeft / t);
+                (0, X.startTransition)(() => {
+                    h(Math.max(0, Math.min(n, _ - 1)))
+                })
+            }, t[1] = _, t[2] = v);
+            let y = v,
+                b;
+            t[3] === _ ? b = t[4] : (b = e => {
+                let t = u.current;
+                if (!t) return;
+                let n = d.current,
+                    r = Math.max(0, Math.min(e, _ - 1));
+                t.scrollTo({
+                    left: r * n,
+                    behavior: p ? `auto` : `smooth`
+                })
+            }, t[3] = _, t[4] = b);
+            let S = b,
+                C, w;
+            t[5] === y ? (C = t[6], w = t[7]) : (C = () => {
+                y()
+            }, w = [y], t[5] = y, t[6] = C, t[7] = w), (0, X.useEffect)(C, w);
+            let ee, T;
+            t[8] === y ? (ee = t[9], T = t[10]) : (ee = () => {
+                if (W()) return;
+                let e = u.current;
+                if (!(!e || typeof ResizeObserver > `u`)) return ie({
+                    axis: `width`,
+                    onChange: e => {
+                        let {
+                            width: t
+                        } = e;
+                        d.current = Math.round(t), (0, X.startTransition)(() => {
+                            y()
+                        })
+                    },
+                    target: e
+                })
+            }, T = [y], t[8] = y, t[9] = ee, t[10] = T), (0, X.useEffect)(ee, T);
+            let E = g && `group skeleton`,
+                D;
+            t[11] !== o || t[12] !== E ? (D = A(o, E), t[11] = o, t[12] = E, t[13] = D) : D = t[13];
+            let O;
+            t[14] === a ? O = t[15] : (O = a ?? (0, Z.jsx)(dr, {
+                children: (0, Z.jsx)(ye, {
+                    id: `imageGenComposerActions.heading`,
+                    defaultMessage: `Try making an image`
+                })
+            }), t[14] = a, t[15] = O);
+            let k;
+            t[16] !== g || t[17] !== _ || t[18] !== m || t[19] !== S || t[20] !== l ? (k = !g && !l && (0, Z.jsx)(qn, {
+                pageIndex: m,
+                pageCount: _,
+                onPreviousPage: () => S(m - 1),
+                onNextPage: () => S(m + 1)
+            }), t[16] = g, t[17] = _, t[18] = m, t[19] = S, t[20] = l, t[21] = k) : k = t[21];
+            let j;
+            t[22] !== O || t[23] !== k ? (j = (0, Z.jsxs)(`div`, {
+                className: `flex items-center justify-between gap-4 pe-4`,
+                children: [O, k]
+            }), t[22] = O, t[23] = k, t[24] = j) : j = t[24];
+            let M = l ? void 0 : y,
+                N = l ? `mx-4 flex flex-wrap gap-4 py-1.5 max-md:mx-0 max-md:px-4` : `relative mx-4 -my-1.5 grid snap-x snap-proximity auto-cols-[50%] grid-flow-col grid-rows-3 gap-4 overflow-x-auto overscroll-x-contain py-1.5 whitespace-nowrap [scrollbar-width:none] max-md:mx-0 max-md:scroll-px-4 max-md:px-4 @max-lg:auto-cols-[70%]`,
+                P = g && `group skeleton`,
+                F;
+            t[25] !== N || t[26] !== P ? (F = A(N, P), t[25] = N, t[26] = P, t[27] = F) : F = t[27];
+            let I = g ? `visible` : `hidden`,
+                L;
+            t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (L = Array.from({
+                length: 6
+            }), t[28] = L) : L = t[28];
+            let R;
+            t[29] === l ? R = t[30] : (R = L.map((e, t) => (0, Z.jsx)(hr, {
+                className: A(!l && `snap-start`, l && `max-w-80`),
+                skeleton: !0,
+                iconSrc: `data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`,
+                label: ``
+            }, `skeleton-${t}`)), t[29] = l, t[30] = R);
+            let z;
+            t[31] !== I || t[32] !== R ? (z = (0, Z.jsx)(X.Activity, {
+                mode: I,
+                children: R
+            }), t[31] = I, t[32] = R, t[33] = z) : z = t[33];
+            let B = g ? `hidden` : `visible`,
+                V;
+            if (t[34] !== n || t[35] !== r || t[36] !== i || t[37] !== l) {
+                let e;
+                t[39] !== r || t[40] !== i || t[41] !== l ? (e = e => (0, Z.jsx)(hr, {
+                    className: A(!l && `snap-start`, l && `max-w-80`),
+                    "aria-label": ht(e),
+                    iconSrc: Be(e) ?? `data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=`,
+                    label: e.title,
+                    title: e.title,
+                    onMount: () => i?.(e),
+                    onClick: () => r?.(e)
+                }, e.id), t[39] = r, t[40] = i, t[41] = l, t[42] = e) : e = t[42], V = n.map(e), t[34] = n, t[35] = r, t[36] = i, t[37] = l, t[38] = V
+            } else V = t[38];
+            let H;
+            t[43] !== B || t[44] !== V ? (H = (0, Z.jsx)(X.Activity, {
+                mode: B,
+                children: V
+            }), t[43] = B, t[44] = V, t[45] = H) : H = t[45];
+            let U;
+            t[46] !== M || t[47] !== F || t[48] !== z || t[49] !== H ? (U = (0, Z.jsxs)(`div`, {
+                ref: u,
+                onScrollEnd: M,
+                className: F,
+                children: [z, H]
+            }), t[46] = M, t[47] = F, t[48] = z, t[49] = H, t[50] = U) : U = t[50];
+            let te;
+            return t[51] !== D || t[52] !== j || t[53] !== U ? (te = (0, Z.jsxs)(Vn, {
+                className: D,
+                children: [j, U]
+            }), t[51] = D, t[52] = j, t[53] = U, t[54] = te) : te = t[54], te
+        }, xr = e => {
+            "use forget";
+            let t = (0, yr.c)(25),
+                {
+                    items: n,
+                    onSelectPromptItem: r,
+                    onShowPromptItem: i,
+                    header: a,
+                    className: o
+                } = e,
+                s = n.length === 0,
+                c;
+            t[0] === a ? c = t[1] : (c = a ?? (0, Z.jsx)(dr, {
+                children: (0, Z.jsx)(ye, {
+                    id: `imageGenComposerActions.heading`,
+                    defaultMessage: `Try making an image`
+                })
+            }), t[0] = a, t[1] = c);
+            let l = s && `group skeleton`,
+                u;
+            t[2] === l ? u = t[3] : (u = A(`flex flex-col items-start gap-2`, l), t[2] = l, t[3] = u);
+            let d = s ? `visible` : `hidden`,
+                f;
+            t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (f = Array.from({
+                length: 6
+            }).map(vr), t[4] = f) : f = t[4];
+            let p;
+            t[5] === d ? p = t[6] : (p = (0, Z.jsx)(X.Activity, {
+                mode: d,
+                children: f
+            }), t[5] = d, t[6] = p);
+            let m = s ? `hidden` : `visible`,
+                h;
+            if (t[7] !== n || t[8] !== r || t[9] !== i) {
+                let e;
+                t[11] !== r || t[12] !== i ? (e = e => (0, Z.jsx)(gr, {
+                    "aria-label": e.title,
+                    label: e.title,
+                    onMount: () => i?.(e),
+                    onClick: () => r?.(e)
+                }, e.id), t[11] = r, t[12] = i, t[13] = e) : e = t[13], h = n.map(e), t[7] = n, t[8] = r, t[9] = i, t[10] = h
+            } else h = t[10];
+            let g;
+            t[14] !== m || t[15] !== h ? (g = (0, Z.jsx)(X.Activity, {
+                mode: m,
+                children: h
+            }), t[14] = m, t[15] = h, t[16] = g) : g = t[16];
+            let _;
+            t[17] !== u || t[18] !== p || t[19] !== g ? (_ = (0, Z.jsxs)(`div`, {
+                className: u,
+                children: [p, g]
+            }), t[17] = u, t[18] = p, t[19] = g, t[20] = _) : _ = t[20];
+            let v;
+            return t[21] !== o || t[22] !== c || t[23] !== _ ? (v = (0, Z.jsxs)(Vn, {
+                className: o,
+                children: [c, _]
+            }), t[21] = o, t[22] = c, t[23] = _, t[24] = v) : v = t[24], v
+        }
+    })),
+    Cr, wr, Tr, Er = e((() => {
+        Cr = q(), O(), xe(), nt(), st(), Un(), yt(), Sr(), We(), wr = K(), Tr = e => {
+            "use forget";
+            let t = (0, Cr.c)(29),
+                {
+                    header: n,
+                    presentation: r,
+                    items: i,
+                    showAllItems: a,
+                    hideRateLimitMessage: o,
+                    unblurredPromptCount: s,
+                    onAuthRequired: c,
+                    onSelectPromptItem: l,
+                    onShowPromptItem: u,
+                    onPredictPromptItem: d,
+                    onEditPhoto: f,
+                    skeleton: p
+                } = e,
+                m = je();
+            switch (r) {
+                case `icon_pill`: {
+                    let e;
+                    return t[0] !== n || t[1] !== i || t[2] !== l || t[3] !== u || t[4] !== a || t[5] !== p ? (e = (0, wr.jsx)(br, {
+                        items: i,
+                        skeleton: p,
+                        showAllItems: a,
+                        onSelectPromptItem: l,
+                        onShowPromptItem: u,
+                        header: n
+                    }), t[0] = n, t[1] = i, t[2] = l, t[3] = u, t[4] = a, t[5] = p, t[6] = e) : e = t[6], e
+                }
+                case `text_pill`: {
+                    let e;
+                    return t[7] !== n || t[8] !== i || t[9] !== l || t[10] !== u || t[11] !== p ? (e = (0, wr.jsx)(xr, {
+                        items: i,
+                        skeleton: p,
+                        onSelectPromptItem: l,
+                        onShowPromptItem: u,
+                        header: n
+                    }), t[7] = n, t[8] = i, t[9] = l, t[10] = u, t[11] = p, t[12] = e) : e = t[12], e
+                }
+                case `portrait`:
+                case `image_card`: {
+                    let e;
+                    t[13] !== m || t[14] !== c || t[15] !== d || t[16] !== l || t[17] !== u || t[18] !== a || t[19] !== s ? (e = e => {
+                        let {
+                            ariaHidden: t,
+                            item: n,
+                            index: r,
+                            itemClassName: i,
+                            itemFrameClassName: o
+                        } = e;
+                        return (0, wr.jsx)(Ct, {
+                            ariaHidden: t || s != null && r >= s,
+                            ariaLabel: ht(n, n.badge?.trim() || (n.requires_thinking ? m.formatMessage(Tt) : null)),
+                            className: A(i, s != null && r >= s && `pointer-events-none opacity-50 blur-sm`),
+                            frameClassName: o,
+                            badge: (0, wr.jsx)(Me, {
+                                className: a ? `max-md:px-3 max-md:py-1.5 max-md:text-sm max-md:leading-5` : void 0,
+                                item: n
+                            }),
+                            label: a ? (0, wr.jsx)(`span`, {
+                                className: `max-md:text-sm max-md:leading-5`,
+                                children: n.title ?? ``
+                            }) : n.title ?? ``,
+                            onAuthRequired: c,
+                            onClick: () => l?.(n),
+                            onMount: s != null && r >= s ? void 0 : () => u?.(n),
+                            onPredictClick: () => d?.(n),
+                            content: (0, wr.jsx)(pt, {
+                                src: Be(n) ?? ``,
+                                alt: ``,
+                                fetchPriority: r === 0 ? `high` : `auto`
+                            }, Be(n) ?? ``),
+                            labelPosition: `overlay`,
+                            desktopLabelSize: a ? `body-small` : `caption`,
+                            strongCaptionGradient: !n.section,
+                            type: `apply-style`
+                        })
+                    }, t[13] = m, t[14] = c, t[15] = d, t[16] = l, t[17] = u, t[18] = a, t[19] = s, t[20] = e) : e = t[20];
+                    let r;
+                    return t[21] !== n || t[22] !== o || t[23] !== i || t[24] !== f || t[25] !== a || t[26] !== p || t[27] !== e ? (r = (0, wr.jsx)(Gn, {
+                        items: i,
+                        skeleton: p,
+                        showAllItems: a,
+                        hideControls: !0,
+                        hideRateLimitMessage: o,
+                        headerClassName: `pe-(--images-app-padding)`,
+                        rateLimitMessageClassName: `ps-(--images-app-padding)`,
+                        scrollContainerWrapperClassName: `overflow-hidden px-(--images-app-padding)`,
+                        scrollContainerClassName: `[overflow-clip-margin:0px]`,
+                        onEditPhoto: f,
+                        header: n,
+                        renderItem: e
+                    }), t[21] = n, t[22] = o, t[23] = i, t[24] = f, t[25] = a, t[26] = p, t[27] = e, t[28] = r) : r = t[28], r
+                }
+                default:
+                    return null
+            }
+        }
+    }));
+
+function Dr() {
+    return Ae({
+        queryKey: [`recentMedia`],
+        staleTime: 120 * 1e3,
+        queryFn: ({
+            pageParam: e
+        }) => o.safeGet(`/my/recent/media_gen`, {
+            authOption: L.SendIfAvailable,
+            parameters: {
+                query: {
+                    limit: Or,
+                    after: e
+                }
+            }
+        }),
+        enabled: () => B(),
+        initialPageParam: null,
+        getNextPageParam: e => e.cursor ?? void 0,
+        select: e => e.pages.flatMap(e => e.items).map(e => ({
+            ...e,
+            archived: e.is_archived ?? !1,
+            messageId: e.message_id ?? null,
+            conversationId: e.conversation_id ?? void 0,
+            imageGenAttribution: e.image_gen_attribution,
+            transformationId: e.transformation_id ?? null,
+            assetPointer: e.asset_pointer ?? null,
+            thumbnail: e.encodings?.thumbnail?.path ?? null,
+            createdAt: e.created_at ? new Date(e.created_at * 1e3) : void 0
+        }))
+    })
+}
+var Or, kr, Ar, jr = e((() => {
+    fe(), H(), R(), z(), he(), ke(), Or = 25, kr = F(() => S(Dr)), Ar = de(() => {
+        let e = kr();
+        return {
+            images: e.data,
+            isLoading: e.status === `pending`,
+            hasNextPage: e.hasNextPage,
+            isFetchingNextPage: e.isFetchingNextPage,
+            fetchNextPage: kr.fetchNextPage,
+            refetch: kr.refetch
+        }
+    })
+}));
+
+function Mr() {
+    G.logStructuredEvent(`ChatgptImageHomeLibraryShortcutInteraction`, {
+        interactionType: `CHATGPT_IMAGE_HOME_LIBRARY_SHORTCUT_INTERACTION_TYPE_CLICKED`
+    })
+}
+var Nr, Pr, Fr, Ir = e((() => {
+    Nr = q(), At(), mr(), P(), xe(), be(), Pr = K(), Fr = e => {
+        "use forget";
+        let t = (0, Nr.c)(10),
+            {
+                showLibraryShortcut: n
+            } = e,
+            r;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Pr.jsx)(dr, {
+            children: (0, Pr.jsx)(ye, {
+                id: `image-gen.images-app.my-images.heading`,
+                defaultMessage: `My images`
+            })
+        }), t[0] = r) : r = t[0];
+        let i;
+        t[1] === n ? i = t[2] : (i = n && (0, Pr.jsx)(`p`, {
+            className: `text-token-text-secondary ms-4 text-sm`,
+            children: (0, Pr.jsx)(ye, {
+                id: `image-gen.images-app.my-images.library-shortcut.description`,
+                defaultMessage: `Find all your images and more in Library`
+            })
+        }), t[1] = n, t[2] = i);
+        let a;
+        t[3] === i ? a = t[4] : (a = (0, Pr.jsxs)(`div`, {
+            className: `flex flex-col gap-1`,
+            children: [r, i]
+        }), t[3] = i, t[4] = a);
+        let o;
+        t[5] === n ? o = t[6] : (o = n && (0, Pr.jsxs)(Ee, {
+            to: `/library?tab=images`,
+            className: `interactive-button interactive-button-secondary interactive-outline-secondary ms-4 inline-flex min-h-10 shrink-0 items-center justify-center gap-2 rounded-full px-4 py-2 text-sm font-medium`,
+            onClick: Mr,
+            children: [(0, Pr.jsx)(jt, {
+                className: `icon`,
+                "aria-hidden": `true`
+            }), (0, Pr.jsx)(ye, {
+                id: `image-gen.images-app.my-images.library-shortcut.link.label`,
+                defaultMessage: `Open Library`
+            })]
+        }), t[5] = n, t[6] = o);
+        let s;
+        return t[7] !== a || t[8] !== o ? (s = (0, Pr.jsxs)(`div`, {
+            className: `flex flex-wrap items-center justify-between gap-x-6 gap-y-3 pe-4`,
+            children: [a, o]
+        }), t[7] = a, t[8] = o, t[9] = s) : s = t[9], s
+    }
+}));
+
+function Lr(e) {
+    "use forget";
+    let t = (0, Br.c)(34),
+        {
+            className: n,
+            images: r
+        } = e,
+        i = (0, Vr.use)(te),
+        a;
+    t[0] === i ? a = t[1] : (a = ee(i), t[0] = i, t[1] = a);
+    let o = a,
+        s = _(zr),
+        c;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (c = sn(), t[2] = c) : c = t[2];
+    let l = _(c.isShowingHiddenImages$),
+        u;
+    t[3] === o ? u = t[4] : (u = () => Fe(o).id, t[3] = o, t[4] = u);
+    let d = _(u),
+        f = wn() ? Ar : Dt,
+        {
+            data: p
+        } = lt(),
+        m = p?.images_count ?? 0,
+        h;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (h = () => f(), t[5] = h) : h = t[5];
+    let {
+        images: g,
+        hasNextPage: v,
+        isLoading: y,
+        isFetchingNextPage: b,
+        fetchNextPage: x
+    } = _(h), S;
+    t[6] === g ? S = t[7] : (S = g === void 0 ? [] : g, t[6] = g, t[7] = S);
+    let C = S,
+        [w, T] = (0, Vr.useState)(null),
+        E = r ?? C,
+        D = E,
+        O = m + (E.length - D.length),
+        k;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (k = () => {
+        T(null)
+    }, t[8] = k) : k = t[8];
+    let j = k,
+        M;
+    t[9] === s ? M = t[10] : (M = (0, Hr.jsx)(`div`, {
+        className: `mx-auto w-[min(100cqw,800px)]`,
+        children: (0, Hr.jsx)(Fr, {
+            showLibraryShortcut: s
+        })
+    }), t[9] = s, t[10] = M);
+    let N;
+    t[11] === D ? N = t[12] : (N = (e, t) => {
+        let n = Ln(e),
+            r = D.map(Rr);
+        T({
+            images: r,
+            initialIndex: t,
+            ...n ? {
+                initialVideoMuted: !1,
+                preferInitialVideoMuted: !0
+            } : {}
+        })
+    }, t[11] = D, t[12] = N);
+    let P;
+    t[13] === n ? P = t[14] : (P = A(`mx-auto max-w-[calc(800px-(var(--images-app-padding)*2))]`, n), t[13] = n, t[14] = P);
+    let F = v ?? !1,
+        I = b || y,
+        L;
+    t[15] !== o || t[16] !== x || t[17] !== D || t[18] !== l || t[19] !== N || t[20] !== P || t[21] !== F || t[22] !== I || t[23] !== O ? (L = (0, Hr.jsx)(In, {
+        onOpenLightbox: N,
+        className: P,
+        conversation: o,
+        count: O,
+        images: D,
+        includeArchived: l,
+        isHiddenView: l,
+        hasMoreImages: F,
+        onlyUseThumbnail: !0,
+        isFetchingMore: I,
+        onScrollToEnd: x
+    }), t[15] = o, t[16] = x, t[17] = D, t[18] = l, t[19] = N, t[20] = P, t[21] = F, t[22] = I, t[23] = O, t[24] = L) : L = t[24];
+    let R;
+    t[25] !== o || t[26] !== d || t[27] !== w ? (R = w != null && (0, Hr.jsx)(Ur, {
+        images: w.images,
+        initialIndex: w.initialIndex,
+        initialVideoMuted: w.initialVideoMuted,
+        preferInitialVideoMuted: w.preferInitialVideoMuted,
+        conversation: o,
+        currentModelId: d,
+        fullscreenShellEnabled: !0,
+        noRatings: !0,
+        onClose: j
+    }), t[25] = o, t[26] = d, t[27] = w, t[28] = R) : R = t[28];
+    let z;
+    return t[29] !== n || t[30] !== L || t[31] !== R || t[32] !== M ? (z = (0, Hr.jsxs)(Vn, {
+        className: n,
+        children: [M, L, R]
+    }), t[29] = n, t[30] = L, t[31] = R, t[32] = M, t[33] = z) : z = t[33], z
+}
+
+function Rr(e) {
+    return zn(e)
+}
+
+function zr() {
+    return E() && b().data != null
+}
+var Br, Vr, Hr, Ur, Wr = e((() => {
+    Br = q(), oe(), Qt(), Bn(), qe(), jr(), Ge(), r(), _e(), H(), Fn(), Ir(), Rn(), it(), u(), N(), O(), Vr = t(Se()), Hr = K(), De(), Ur = D(() => Te(() => import(`./1d084ec4-ddqw3vp66v62mdxq.js`).then(e => e.ImageGenConversationLightboxNew), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41])))
+}));
+
+function Gr() {
+    h({
+        actionType: T.ACCESS_FLOW_ENTRY_ACTION_TYPE_LOGIN_OR_SIGNUP,
+        entryPoint: c.ACCESS_FLOW_ENTRY_POINT_LOGIN_MODAL,
+        entryTrigger: C.ACCESS_FLOW_ENTRY_TRIGGER_AUTOMATIC,
+        cta: `images_prompt_card`
+    })
+}
+
+function Kr(e, {
+    focus: t = !0
+} = {}) {
+    t && Kt(e).focus(), document.getElementById(`image-app-composer`)?.scrollIntoView({
+        behavior: `smooth`,
+        block: `start`
+    })
+}
+
+function qr(e) {
+    "use forget";
+    let t = (0, ri.c)(114),
+        {
+            images: n,
+            hideImagesAppList: r,
+            hidePromptRateLimitMessage: i,
+            suggestedPromptGroups: a,
+            suggestedPromptGroupTitleOverride: o,
+            showPromptTabs: s,
+            skeleton: c,
+            showAllPromptItems: u,
+            unblurredPromptCount: d,
+            enablePromptClickRevamp: f,
+            preselectedPromptId: m,
+            eightiesUploadFlow: h
+        } = e,
+        g = i !== void 0 && i,
+        b = s !== void 0 && s,
+        x = u !== void 0 && u,
+        S = f !== void 0 && f,
+        C = (0, Q.use)(l),
+        w = (0, Q.use)(te),
+        T;
+    t[0] === w ? T = t[1] : (T = ee(w), t[0] = w, t[1] = T);
+    let E = T,
+        D = Tn(),
+        O = _(Ve),
+        k = Rt(),
+        j = (0, Q.useRef)(0),
+        M = (0, Q.useRef)(null),
+        N = (0, Q.useRef)(null),
+        P = _(Le),
+        F;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (F = () => () => {
+        j.current += 1
+    }, t[2] = F) : F = t[2];
+    let I;
+    t[3] !== k || t[4] !== E || t[5] !== S ? (I = [k, E, S], t[3] = k, t[4] = E, t[5] = S, t[6] = I) : I = t[6], (0, Q.useEffect)(F, I);
+    let L = je(),
+        [R, z] = (0, Q.useState)(null),
+        H;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (H = mn.isImagesTabRevampEnabled(), t[7] = H) : H = t[7];
+    let U = H,
+        ne;
+    t[8] === S ? ne = t[9] : (ne = () => U && S ? Je() : null, t[8] = S, t[9] = ne);
+    let W = _(ne),
+        ie;
+    t[10] === W?.data ? ie = t[11] : (ie = W?.data ?? [], t[10] = W?.data, t[11] = ie);
+    let ae = ie,
+        oe = W?.status === `pending`,
+        [se, ce] = (0, Q.useState)(null),
+        ue = U && se != null,
+        G = _(B),
+        de = !G && m === `80s-flashback` && h != null,
+        fe, me, he, _e;
+    if (t[12] !== G || t[13] !== R || t[14] !== b || t[15] !== a) {
+        fe = G ? a : a.flatMap(ni), he = b ? gn(fe.flatMap(ti)) : [], me = he.some(Boolean);
+        let e = he[0] ?? ``;
+        _e = R !== null && he.includes(R) ? R : e, t[12] = G, t[13] = R, t[14] = b, t[15] = a, t[16] = fe, t[17] = me, t[18] = he, t[19] = _e
+    } else fe = t[16], me = t[17], he = t[18], _e = t[19];
+    let K = _e,
+        ve;
+    t[20] !== K || t[21] !== fe || t[22] !== me ? (ve = me ? fe.flatMap(e => {
+        if (e.kind !== `prompt_collection`) return [e];
+        let t = e.items?.filter(e => xn(e) === K);
+        return t?.length ? [t.length === e.items?.length ? e : {
+            ...e,
+            items: t
+        }] : []
+    }) : fe, t[20] = K, t[21] = fe, t[22] = me, t[23] = ve) : ve = t[23];
+    let be = ve,
+        xe;
+    t[24] !== K || t[25] !== he || t[26] !== b ? (xe = b ? (0, $.jsx)(bt, {
+        sections: he,
+        activeSection: K,
+        onSectionChange: z,
+        surface: wt.CHATGPT_IMAGE_PROMPT_SENT_SURFACE_TYPE_IMAGES,
+        className: `ps-(--images-app-padding)`
+    }) : void 0, t[24] = K, t[25] = he, t[26] = b, t[27] = xe) : xe = t[27];
+    let Se = xe,
+        {
+            data: Ce
+        } = lt(),
+        we = Ce?.images_count ?? 0,
+        Te = x || U,
+        Ee;
+    t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (Ee = (0, $.jsx)(`div`, {
+        className: `skeleton-child skeleton-translucent ms-4 h-8 w-32 rounded-full max-md:w-24`
+    }), t[28] = Ee) : Ee = t[28];
+    let De = Ee,
+        Oe;
+    t[29] !== k || t[30] !== E || t[31] !== D ? (Oe = e => {
+        if (!(e.length === 0 || N.current?.conversation === E && N.current.composerController === k)) {
+            if (!B() && Le()) {
+                let {
+                    promptItem: t
+                } = Y(E);
+                if (t == null) return;
+                (async () => {
+                    let n = await rn(e, D);
+                    if (!n.success) {
+                        ge().danger(n.error.message, {
+                            toastId: `no-auth-image-gen-pending-draft-upload-error`,
+                            loggingTitle: `Failed to upload ImageGen prompt draft images`,
+                            loggingDescription: n.error.message
+                        });
+                        return
+                    }
+                    let r = new Set(e),
+                        i = D.readyFiles$().filter(e => r.has(e.tempId)),
+                        a = _n(k).trim(),
+                        o = on(E);
+                    o.set(!0), await An({
+                        content: a.length > 0 ? a : t.prompt_text,
+                        attachments: [],
+                        readyFiles: i,
+                        authOptions: {
+                            callback: Gr
+                        }
+                    }).finally(() => {
+                        o.set(!1)
+                    })
+                })();
+                return
+            }
+            Yt({
+                conversation: E,
+                tempIds: e,
+                filePickerStore: D
+            })
+        }
+    }, t[29] = k, t[30] = E, t[31] = D, t[32] = Oe) : Oe = t[32];
+    let ke = pe(Oe),
+        q, Ae;
+    t[33] !== E || t[34] !== ke ? (q = () => le(() => Ut(E)(), ke, {
+        fireImmediately: !0
+    }), Ae = [E, ke], t[33] = E, t[34] = ke, t[35] = q, t[36] = Ae) : (q = t[35], Ae = t[36]), (0, Q.useEffect)(q, Ae);
+    let Me;
+    t[37] === C ? Me = t[38] : (Me = () => {
+        let e = document.getElementById(`upload-photos`);
+        e instanceof HTMLInputElement && gt({
+            openDialog: C,
+            openPicker: () => e.click()
+        })
+    }, t[37] = C, t[38] = Me);
+    let Pe = pe(Me),
+        Fe;
+    t[39] !== k || t[40] !== E || t[41] !== h || t[42] !== S || t[43] !== D || t[44] !== de || t[45] !== ke || t[46] !== C || t[47] !== m || t[48] !== x ? (Fe = (e, t, n) => {
+        let r = n !== void 0 && n;
+        N.current = r ? {
+            conversation: E,
+            composerController: k
+        } : null, m != null && (M.current = {
+            conversation: E,
+            composerController: k,
+            promptId: m
+        });
+        let i = j.current + 1,
+            a = Ne(e.items, t.id),
+            o = {
+                promptItem: t,
+                group: e,
+                surface: wt.CHATGPT_IMAGE_PROMPT_SENT_SURFACE_TYPE_IMAGES,
+                position: a
+            };
+        ze({
+            item: t,
+            group: e,
+            position: a,
+            surface: wt.CHATGPT_IMAGE_PROMPT_SENT_SURFACE_TYPE_IMAGES
+        });
+        let s = t.action ?? e.action,
+            c = s.input_requirements?.source;
+        if (S && c === `sketch`) {
+            yn({
+                composerController: k,
+                conversation: E,
+                isRequestCurrent: () => j.current === i,
+                onSave: e => {
+                    zt(E, t), ir(e, t.prompt_text, {
+                        scrollIntoView: !1
+                    }), V(() => {
+                        Y.set(E, o), Sn.set(E, t.id)
+                    }), ce(null)
+                }
+            }) && (j.current = i, Kr(k, {
+                focus: !1
+            }));
+            return
+        }
+        if (j.current = i, zt(E, t), S && B() && s.strategy === `auto_send` && c !== `styles`) {
+            ir(Kt(k), t.prompt_text, {
+                scrollIntoView: !1
+            }), V(() => {
+                Y.set(E, o), Sn.set(E, t.id)
+            }), ce(c === `prompt_only` ? null : {
+                promptItem: t,
+                group: e,
+                position: a
+            }), Kr(k);
+            return
+        }
+        let l = s.strategy;
+        bb265: switch (l) {
+            case `prefill_composer`: {
+                let e = Kt(k);
+                ir(e, t.prompt_text), B() && Cn(t) ? V(() => {
+                    Y.set(E, o), Sn.set(E, t.id)
+                }) : (S && B() || Cn(dn(E))) && V(() => {
+                    Y.set(E, {
+                        promptItem: null,
+                        group: null
+                    }), Sn.set(E, null)
+                }), x ? Kr(k) : e.focus();
+                break bb265
+            }
+            case `auto_send`: {
+                let n = r && de && t.id === m;
+                if (r && (V(() => {
+                        Y.set(E, o), Sn.set(E, t.id)
+                    }), ir(Kt(k), t.prompt_text, {
+                        scrollIntoView: !1
+                    })), n && h === `direct`) break bb265;
+                if (!B() && Le() && !r) {
+                    Y.set(E, o);
+                    let e = Kt(k);
+                    ir(e, t.prompt_text), e.focus(), x && ft()?.scrollTo({
+                        top: 0,
+                        behavior: `instant`
+                    });
+                    let n = D.files$().map(ei);
+                    n.length > 0 ? ke(n) : gt({
+                        openDialog: C,
+                        openPicker: $r
+                    });
+                    break bb265
+                }
+                if (!r && He() && D.files$().length > 0) {
+                    V(() => {
+                        Y.set(E, o), Yt({
+                            conversation: E,
+                            tempIds: D.files$().map(Qr),
+                            filePickerStore: D
+                        })
+                    });
+                    return
+                }
+                re(On, {
+                    conversation: E,
+                    isNoAuthEightiesPromo: n,
+                    recents: r && !B() ? [] : void 0,
+                    filePickerStore: r ? D : void 0,
+                    publishChosenPhotoTempIds: !r,
+                    onClose: Zr,
+                    onCreateImage: () => {
+                        vn({
+                            conversation: E,
+                            group: e,
+                            promptItem: t,
+                            surface: o.surface,
+                            position: o.position
+                        }), y(On)
+                    },
+                    onSelectFiles: e => {
+                        if (r) {
+                            y(On), Kr(k);
+                            return
+                        }
+                        V(() => {
+                            Y.set(E, o), Yt({
+                                conversation: E,
+                                tempIds: e,
+                                filePickerStore: D
+                            }), y(On)
+                        })
+                    },
+                    onSelectRecent: e => {
+                        if (r) {
+                            if (!B()) return;
+                            $t(D, e), y(On), Kr(k);
+                            return
+                        }
+                        let n = v(e.file_id);
+                        n && (0, Q.startTransition)(() => {
+                            V(() => {
+                                Y.set(E, o), Jt({
+                                    conversation: E,
+                                    prompt: t.prompt_text,
+                                    images: [{
+                                        asset_pointer: n,
+                                        width: 1,
+                                        height: 1
+                                    }]
+                                })
+                            }), y(On)
+                        })
+                    },
+                    onChooseNewPhoto: () => {
+                        gt({
+                            openDialog: C,
+                            openPicker: () => {
+                                V(() => {
+                                    Y.set(E, o), qt({
+                                        source: `photos`
+                                    }), y(On)
+                                })
+                            }
+                        })
+                    },
+                    prompt: t,
+                    group: e
+                })
+            }
+        }
+    }, t[39] = k, t[40] = E, t[41] = h, t[42] = S, t[43] = D, t[44] = de, t[45] = ke, t[46] = C, t[47] = m, t[48] = x, t[49] = Fe) : Fe = t[49];
+    let Ie = pe(Fe),
+        J, Re;
+    if (t[50] !== m || t[51] !== a) {
+        let e;
+        t[54] === m ? e = t[55] : (e = e => e.kind === `prompt_collection` && e.items?.some(e => e.id === m), t[54] = m, t[55] = e), J = a.find(e), Re = J?.items?.find(e => e.id === m), t[50] = m, t[51] = a, t[52] = J, t[53] = Re
+    } else J = t[52], Re = t[53];
+    let Be = Re,
+        Ue, We;
+    t[56] !== k || t[57] !== E || t[58] !== G || t[59] !== P || t[60] !== Ie || t[61] !== J || t[62] !== Be || t[63] !== m || t[64] !== d ? (Ue = () => {
+        if (m == null || J == null || Be == null || !G && !P) return;
+        let e = Ne(J.items, Be.id);
+        if (!G && d != null && e != null && e >= d) return;
+        let t = Be.action ?? J.action;
+        if (t.strategy !== `auto_send` || t.input_requirements?.source !== `camera_or_gallery`) return;
+        let n = M.current;
+        n?.conversation === E && n.composerController === k && n.promptId === m || Ie(J, Be, !0)
+    }, We = [k, E, G, P, Ie, J, Be, m, d], t[56] = k, t[57] = E, t[58] = G, t[59] = P, t[60] = Ie, t[61] = J, t[62] = Be, t[63] = m, t[64] = d, t[65] = Ue, t[66] = We) : (Ue = t[65], We = t[66]), (0, Q.useEffect)(Ue, We);
+    let Ge;
+    t[67] === se ? Ge = t[68] : (Ge = se == null ? null : Ye({
+        view: `uploads`,
+        onBack: () => {
+            ce(null)
+        },
+        canUseUploadsExperience: !0
+    }), t[67] = se, t[68] = Ge);
+    let Ke = Ge,
+        qe = Xr,
+        Ze = x && `gap-4`,
+        Qe;
+    t[69] === Ze ? Qe = t[70] : (Qe = A(`max-w-app-content mx-auto flex w-full flex-col gap-(--image-page-spacing)`, Ze), t[69] = Ze, t[70] = Qe);
+    let $e = c ? !0 : void 0,
+        et = c ? `visible` : `hidden`,
+        tt;
+    t[71] !== g || t[72] !== Te ? (tt = Te ? (0, $.jsx)(Tr, {
+        hideRateLimitMessage: g,
+        items: [],
+        presentation: `image_card`,
+        showAllItems: !0,
+        skeleton: !0,
+        header: De
+    }) : (0, $.jsxs)($.Fragment, {
+        children: [(0, $.jsx)(Tr, {
+            hideRateLimitMessage: g,
+            items: [],
+            presentation: `image_card`,
+            skeleton: !0,
+            header: De
+        }), (0, $.jsx)(Tr, {
+            hideRateLimitMessage: g,
+            presentation: `icon_pill`,
+            items: [],
+            skeleton: !0,
+            header: De
+        })]
+    }), t[71] = g, t[72] = Te, t[73] = tt) : tt = t[73];
+    let nt;
+    t[74] !== et || t[75] !== tt ? (nt = (0, $.jsx)(Q.Activity, {
+        mode: et,
+        children: tt
+    }), t[74] = et, t[75] = tt, t[76] = nt) : nt = t[76];
+    let rt = c ? `hidden` : `visible`,
+        it;
+    t[77] !== h || t[78] !== D || t[79] !== g || t[80] !== L || t[81] !== O || t[82] !== de || t[83] !== oe || t[84] !== Pe || t[85] !== Ie || t[86] !== C || t[87] !== m || t[88] !== Se || t[89] !== ae || t[90] !== se || t[91] !== x || t[92] !== ue || t[93] !== o || t[94] !== d || t[95] !== Ke || t[96] !== be ? (it = ue ? (0, $.jsx)(Xe, {
+        header: Ke,
+        headerAction: null,
+        isUploadDisabled: O,
+        intl: L,
+        items: ae,
+        skeleton: oe,
+        onEditPhoto: Pe,
+        onSelectRecentUpload: e => {
+            let {
+                item: t
+            } = e;
+            $t(D, t)
+        },
+        selectedPrompt: {
+            item: se.promptItem,
+            group: se.group,
+            position: se.position
+        }
+    }) : be.map((e, t) => {
+        if (e.kind !== `prompt_collection` || !e.items) return null;
+        let n = t === 0 && d != null && e.items.length > d ? d : void 0,
+            r = (0, $.jsx)(Tr, {
+                hideRateLimitMessage: g,
+                onAuthRequired: Gr,
+                onShowPromptItem: t => qe(e, t),
+                onSelectPromptItem: t => {
+                    let n = t.action ?? e.action,
+                        r = de && t.id === m && n.strategy === `auto_send` && n.input_requirements?.source === `camera_or_gallery`;
+                    Ie(e, t, r), r && h === `direct` && qt({
+                        openDialog: C,
+                        source: `photos`
+                    })
+                },
+                items: n == null ? e.items : e.items.slice(0, n * 2),
+                presentation: e.presentation,
+                showAllItems: x,
+                unblurredPromptCount: n,
+                header: t === 0 && Se ? Se : (0, $.jsx)(dr, {
+                    children: t === 0 && o ? o : e.title
+                })
+            }, e.id);
+        return n == null ? r : (0, $.jsxs)(`div`, {
+            className: `relative overflow-hidden`,
+            children: [r, (0, $.jsx)(`div`, {
+                className: A(`from-token-bg-primary via-token-bg-primary/50 pointer-events-none absolute inset-x-0 bottom-0 z-10 grid place-items-center bg-linear-to-t to-transparent px-4`, e.items.length - n > n / 2 ? `h-1/2 grid-rows-2` : `h-1/3 grid-rows-1`),
+                children: (0, $.jsx)(p, {
+                    className: `pointer-events-auto rounded-full`,
+                    color: `primary`,
+                    size: `large`,
+                    onClick: Jr,
+                    children: (0, $.jsx)(ye, {
+                        id: `imagesApp.promptSections.loginGate.button.label`,
+                        defaultMessage: `Log in or sign up to see more`
+                    })
+                })
+            })]
+        }, e.id)
+    }), t[77] = h, t[78] = D, t[79] = g, t[80] = L, t[81] = O, t[82] = de, t[83] = oe, t[84] = Pe, t[85] = Ie, t[86] = C, t[87] = m, t[88] = Se, t[89] = ae, t[90] = se, t[91] = x, t[92] = ue, t[93] = o, t[94] = d, t[95] = Ke, t[96] = be, t[97] = it) : it = t[97];
+    let at;
+    t[98] !== rt || t[99] !== it ? (at = (0, $.jsx)(Q.Activity, {
+        mode: rt,
+        children: it
+    }), t[98] = rt, t[99] = it, t[100] = at) : at = t[100];
+    let ot;
+    t[101] !== Qe || t[102] !== $e || t[103] !== nt || t[104] !== at ? (ot = (0, $.jsxs)(`div`, {
+        className: Qe,
+        "aria-busy": $e,
+        children: [nt, at]
+    }), t[101] = Qe, t[102] = $e, t[103] = nt, t[104] = at, t[105] = ot) : ot = t[105];
+    let st = !r && !ue && we > 0 && !(c && Te) ? `visible` : `hidden`,
+        ct;
+    t[106] === n ? ct = t[107] : (ct = (0, $.jsx)(Lr, {
+        images: n
+    }), t[106] = n, t[107] = ct);
+    let ut;
+    t[108] !== st || t[109] !== ct ? (ut = (0, $.jsx)(Q.Activity, {
+        mode: st,
+        children: ct
+    }), t[108] = st, t[109] = ct, t[110] = ut) : ut = t[110];
+    let dt;
+    return t[111] !== ot || t[112] !== ut ? (dt = (0, $.jsxs)($.Fragment, {
+        children: [ot, ut]
+    }), t[111] = ot, t[112] = ut, t[113] = dt) : dt = t[113], dt
+}
+
+function Jr() {
+    U({
+        fallbackScreenHint: `login_or_signup`,
+        callback: Yr,
+        skipLoginModal: !1,
+        loginModalSubtitleVariant: `create-image`
+    })
+}
+
+function Yr() {
+    m(c.ACCESS_FLOW_ENTRY_POINT_LOGIN_MODAL)
+}
+
+function Xr(e, t) {
+    Re({
+        item: t,
+        group: e,
+        position: Ne(e.items, t.id),
+        surface: wt.CHATGPT_IMAGE_PROMPT_SENT_SURFACE_TYPE_IMAGES
+    })
+}
+
+function Zr() {
+    y(On)
+}
+
+function Qr(e) {
+    return e.tempId
+}
+
+function $r() {
+    return qt({
+        source: `photos`
+    })
+}
+
+function ei(e) {
+    return e.tempId
+}
+
+function ti(e) {
+    return e.kind === `prompt_collection` ? e.items ?? [] : []
+}
+
+function ni(e) {
+    if (e.kind !== `prompt_collection`) return [e];
+    let t = e.items?.filter(t => (t.action ?? e.action)?.input_requirements?.source !== `sketch`);
+    return t?.length ? [{
+        ...e,
+        items: t
+    }] : []
+}
+var ri, Q, $, ii = e((() => {
+    ri = q(), ne(), j(), en(), oe(), w(), n(), Wt(), d(), Zt(), Nn(), Er(), En(), Qt(), mt(), J(), qe(), Nt(), ln(), Mn(), Pe(), un(), at(), H(), ce(), Ze(), Ie(), Ft(), i(), mr(), Wr(), pn(), xt(), ar(), tn(), it(), R(), u(), ue(), k(), rt(), O(), Q = t(Se()), xe(), $ = K()
+}));
+
+function ai(e) {
+    "use forget";
+    let t = (0, oi.c)(14),
+        {
+            children: n,
+            onFilesSelected: r
+        } = e,
+        i = (0, si.use)(te),
+        o;
+    t[0] === i ? o = t[1] : (o = ee(i), t[0] = i, t[1] = o);
+    let s = o,
+        c = Tn(),
+        l;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (l = {
+        initialSystemHint: a.PictureV2,
+        hideInitialSystemHintPill: !0,
+        lockSystemHints: !B()
+    }, t[2] = l) : l = t[2];
+    let u;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (u = A(`z-0 grid w-[min(1800px,100cqw)] grid-rows-[minmax(0,min-content)_minmax(0,1fr)_minmax(0,min-content)] justify-self-center`), t[3] = u) : u = t[3];
+    let d;
+    t[4] !== s || t[5] !== c || t[6] !== r ? (d = (0, ci.jsx)(Vt, {
+        onUploadFiles: e => {
+            let {
+                tempIds: t
+            } = an({
+                ...e,
+                conversation: s,
+                filePickerStore: c
+            });
+            t.length > 0 && r?.()
+        }
+    }), t[4] = s, t[5] = c, t[6] = r, t[7] = d) : d = t[7];
+    let f;
+    t[8] !== n || t[9] !== d ? (f = (0, ci.jsx)(`div`, {
+        className: `@container/images-app-shell relative grid min-h-svh w-full [--image-page-spacing:44px] [--images-app-padding:16px] [--skeleton-opacity:0.75]`,
+        children: (0, ci.jsxs)(`div`, {
+            className: u,
+            children: [d, n]
+        })
+    }), t[8] = n, t[9] = d, t[10] = f) : f = t[10];
+    let p;
+    return t[11] !== s || t[12] !== f ? (p = (0, ci.jsx)(Dn, {
+        conversation: s,
+        ignoreParentComposerController: !0,
+        options: l,
+        children: f
+    }), t[11] = s, t[12] = f, t[13] = p) : p = t[13], p
+}
+var oi, si, ci, li = e((() => {
+    oi = q(), en(), oe(), Wt(), g(), nn(), R(), u(), O(), si = t(Se()), ci = K()
+}));
+export {
+    or as a, rr as c, ii as i, Jn as l, li as n, ur as o, qr as r, Xn as s, ai as t, Yn as u
+};
 //# sourceMappingURL=cbffa3f1-de47xw2tcyqzi8r9.js.map

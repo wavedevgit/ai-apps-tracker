@@ -1,0 +1,48 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    X5 as t,
+    Y5 as n
+} from "./4813494d-lxa3wniynbx9ka2a.js";
+import {
+    Bn as r,
+    Nn as i,
+    Rn as a
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function o({
+    className: e,
+    linesAdded: t,
+    linesRemoved: r
+}) {
+    return !t && !r ? null : (0, s.jsxs)(`div`, {
+        className: n(`flex flex-row gap-1 font-medium`, e),
+        children: [(0, s.jsx)(`span`, {
+            className: `text-green-500`,
+            children: (0, s.jsx)(i, {
+                id: `wham.message.modal.repoAndDiffStats.linesAdded`,
+                defaultMessage: `+{linesAdded}`,
+                values: {
+                    linesAdded: t
+                }
+            })
+        }), (0, s.jsx)(`span`, {
+            className: `text-red-500`,
+            children: (0, s.jsx)(i, {
+                id: `wham.message.modal.repoAndDiffStats.linesRemoved`,
+                defaultMessage: `-{linesRemoved}`,
+                values: {
+                    linesRemoved: r
+                }
+            })
+        })]
+    })
+}
+var s, c = e((() => {
+    t(), a(), s = r()
+}));
+export {
+    c as n, o as t
+};
+//# sourceMappingURL=1f8ec761-bmtyk12tnmxci4if.js.map

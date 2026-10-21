@@ -1,0 +1,137 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    BU as t,
+    JT as n,
+    P5 as r,
+    X5 as i,
+    Y5 as a,
+    YT as o,
+    g8 as s,
+    zU as c
+} from "./4813494d-lxa3wniynbx9ka2a.js";
+import {
+    Bn as l,
+    Nn as u,
+    Rn as d,
+    wn as f,
+    zn as p
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    IHn as m,
+    LHn as h,
+    RHn as g,
+    l5 as _,
+    o5 as v,
+    u5 as y
+} from "./conversation-small-kzsalymynzuddxee.js";
+import {
+    Jy as b,
+    Yy as x
+} from "./30901919-i8ip8r0znvgcym38.js";
+
+function S(e) {
+    return e.stopPropagation()
+}
+
+function C(e) {
+    return e.currentTarget.blur()
+}
+var w, T, E, D = e((() => {
+    w = f(), g(), o(), x(), t(), i(), s(), d(), y(), T = l(), E = e => {
+        "use forget";
+        let t = (0, w.c)(26),
+            {
+                source: i,
+                disabled: o,
+                inline: s,
+                onChange: l
+            } = e,
+            d = o !== void 0 && o,
+            f = s !== void 0 && s,
+            g = p(),
+            y;
+        t[0] === i ? y = t[1] : (y = () => _(i), t[0] = i, t[1] = y);
+        let x = r(y),
+            {
+                speed: E,
+                busy: D
+            } = r(x.state$),
+            O;
+        if (t[2] !== D || t[3] !== x || t[4] !== d || t[5] !== f || t[6] !== g || t[7] !== l || t[8] !== i || t[9] !== E) {
+            let e = c(),
+                r = d || D,
+                o = f ? `h-10 bg-black/15! px-3! font-medium text-white! backdrop-blur-md hover:bg-black/30! focus:bg-black/30!` : `size-11 px-0!`,
+                s = !f && String(E).length > 3 && `text-xs`,
+                p;
+            t[11] !== o || t[12] !== s ? (p = a(`pointer-events-auto shrink-0 rounded-full! py-0! tabular-nums`, o, s), t[11] = o, t[12] = s, t[13] = p) : p = t[13];
+            let _;
+            t[14] === g ? _ = t[15] : (_ = g.formatMessage({
+                id: `gifEditor.speed`,
+                defaultMessage: `Playback speed`
+            }), t[14] = g, t[15] = _);
+            let y;
+            t[16] === E ? y = t[17] : (y = (0, T.jsx)(u, {
+                id: `gifEditor.speedValue`,
+                defaultMessage: `{speed}×`,
+                values: {
+                    speed: E
+                }
+            }), t[16] = E, t[17] = y);
+            let w;
+            t[18] !== D || t[19] !== y || t[20] !== r || t[21] !== p || t[22] !== _ ? (w = (0, T.jsx)(n, {
+                type: `button`,
+                color: `ghost`,
+                onClick: S,
+                onPointerUp: C,
+                disabled: r,
+                "aria-busy": D,
+                className: p,
+                "aria-label": _,
+                children: y
+            }), t[18] = D, t[19] = y, t[20] = r, t[21] = p, t[22] = _, t[23] = w) : w = t[23];
+            let k;
+            t[24] === f ? k = t[25] : (k = f && (0, T.jsx)(h.Label, {
+                children: (0, T.jsx)(u, {
+                    id: `gifEditor.speedMenuLabel`,
+                    defaultMessage: `GIF speed`
+                })
+            }), t[24] = f, t[25] = k), O = (0, T.jsxs)(m, {
+                side: `top`,
+                contentAlign: f ? `start` : void 0,
+                triggerButton: w,
+                children: [k, v.map(t => (0, T.jsx)(h.Item, {
+                    role: `menuitemradio`,
+                    "aria-checked": E === t,
+                    disabled: d || D,
+                    trailing: E === t ? (0, T.jsx)(b, {
+                        className: `icon-sm`
+                    }) : void 0,
+                    onClick: n => {
+                        n.stopPropagation(), l?.(t), x.changeSpeed(t, i).then(() => {
+                            x.state$().error && e.danger(g.formatMessage({
+                                id: `gifEditor.saveSpeedFailed`,
+                                defaultMessage: `Couldn’t save GIF speed. Try again`
+                            }), {
+                                toastId: `gifEditor.saveSpeedFailed`
+                            })
+                        })
+                    },
+                    children: (0, T.jsx)(u, {
+                        id: `gifEditor.speedValue`,
+                        defaultMessage: `{speed}×`,
+                        values: {
+                            speed: t
+                        }
+                    })
+                }, t))]
+            }), t[2] = D, t[3] = x, t[4] = d, t[5] = f, t[6] = g, t[7] = l, t[8] = i, t[9] = E, t[10] = O
+        } else O = t[10];
+        return O
+    }
+}));
+export {
+    D as n, E as t
+};
+//# sourceMappingURL=429c9f5e-lp2rcy8xpavhw4bl.js.map

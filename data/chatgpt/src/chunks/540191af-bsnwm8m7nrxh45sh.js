@@ -1,2 +1,31 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Vn as n}from"./2340486e-i7pjxgdhv0bs6apg.js";function r(e,t){let n=[],r={};return i.Children.forEach(e,e=>{if(!i.isValidElement(e)){n.push(e);return}let a=!1;for(let n of Object.keys(t))(e.type?.extends??e.type)===t[n]&&(r[n]=e,a=!0);a||n.push(e)}),{...r,children:n}}var i,a=e((()=>{i=t(n())}));export{a as n,r as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Vn as n
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function r(e, t) {
+    let n = [],
+        r = {};
+    return i.Children.forEach(e, e => {
+        if (!i.isValidElement(e)) {
+            n.push(e);
+            return
+        }
+        let a = !1;
+        for (let n of Object.keys(t))(e.type?.extends ?? e.type) === t[n] && (r[n] = e, a = !0);
+        a || n.push(e)
+    }), {
+        ...r,
+        children: n
+    }
+}
+var i, a = e((() => {
+    i = t(n())
+}));
+export {
+    a as n, r as t
+};
 //# sourceMappingURL=540191af-bsnwm8m7nrxh45sh.js.map

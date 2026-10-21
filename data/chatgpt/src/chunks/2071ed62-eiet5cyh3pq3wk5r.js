@@ -1,2 +1,86 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$c as n,Bk as r,HF as i,IN as a,LN as o,M5 as s,Qb as c,Rk as l,VF as u,ex as d,m8 as f,ol as p}from"./4813494d-qsuygr73qjc6rh65.js";import{Hn as m,Tn as h,Vn as g}from"./2340486e-komxp8tzs51ny4jj.js";import{Oo as _,SFn as v,ko as y,yFn as b}from"./conversation-small-cawdu7il3ha6y70c.js";import{n as x,t as S}from"./109df894-jvsq68w21vjvufnp.js";function C(e){"use forget";let t=(0,w.c)(8),{conversationId:n}=e,r=(0,T.use)(c),i;t[0]===r?i=t[1]:(i=r(),t[0]=r,t[1]=i);let a=i,[s,l]=(0,T.useState)(null),u,d;t[2]!==n||t[3]!==a||t[4]!==s?(u=()=>{if(s!=null)return x(n,{portalContainer:a,target:s})},d=[n,a,s],t[2]=n,t[3]=a,t[4]=s,t[5]=u,t[6]=d):(u=t[5],d=t[6]),o(u,d);let f;return t[7]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,E.jsx)(`span`,{ref:l,className:`contents`}),t[7]=f):f=t[7],f}var w,T,E,D=e((()=>{w=h(),d(),a(),S(),T=t(m()),E=g()}));function O(e){"use forget";let t=(0,k.c)(9),n=i(),a;t[0]!==e||t[1]!==n?(a=()=>e!=null&&y({conversation:e,isInSharedPost:n}),t[0]=e,t[1]=n,t[2]=a):a=t[2];let o=s(a),c;t[3]===e?c=t[4]:(c=()=>e!=null&&p(e),t[3]=e,t[4]=c);let l=s(c),u=s(r),d;return t[5]!==o||t[6]!==u||t[7]!==l?(d=o&&v(l?`work`:`chat`,u),t[5]=o,t[6]=u,t[7]=l,t[8]=d):d=t[8],d}var k,A=e((()=>{k=h(),b(),l(),u(),f(),n(),_()}));export{D as i,O as n,C as r,A as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $c as n,
+    Bk as r,
+    HF as i,
+    IN as a,
+    LN as o,
+    M5 as s,
+    Qb as c,
+    Rk as l,
+    VF as u,
+    ex as d,
+    m8 as f,
+    ol as p
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Hn as m,
+    Tn as h,
+    Vn as g
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Oo as _,
+    SFn as v,
+    ko as y,
+    yFn as b
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    n as x,
+    t as S
+} from "./109df894-jvsq68w21vjvufnp.js";
+
+function C(e) {
+    "use forget";
+    let t = (0, w.c)(8),
+        {
+            conversationId: n
+        } = e,
+        r = (0, T.use)(c),
+        i;
+    t[0] === r ? i = t[1] : (i = r(), t[0] = r, t[1] = i);
+    let a = i,
+        [s, l] = (0, T.useState)(null),
+        u, d;
+    t[2] !== n || t[3] !== a || t[4] !== s ? (u = () => {
+        if (s != null) return x(n, {
+            portalContainer: a,
+            target: s
+        })
+    }, d = [n, a, s], t[2] = n, t[3] = a, t[4] = s, t[5] = u, t[6] = d) : (u = t[5], d = t[6]), o(u, d);
+    let f;
+    return t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, E.jsx)(`span`, {
+        ref: l,
+        className: `contents`
+    }), t[7] = f) : f = t[7], f
+}
+var w, T, E, D = e((() => {
+    w = h(), d(), a(), S(), T = t(m()), E = g()
+}));
+
+function O(e) {
+    "use forget";
+    let t = (0, k.c)(9),
+        n = i(),
+        a;
+    t[0] !== e || t[1] !== n ? (a = () => e != null && y({
+        conversation: e,
+        isInSharedPost: n
+    }), t[0] = e, t[1] = n, t[2] = a) : a = t[2];
+    let o = s(a),
+        c;
+    t[3] === e ? c = t[4] : (c = () => e != null && p(e), t[3] = e, t[4] = c);
+    let l = s(c),
+        u = s(r),
+        d;
+    return t[5] !== o || t[6] !== u || t[7] !== l ? (d = o && v(l ? `work` : `chat`, u), t[5] = o, t[6] = u, t[7] = l, t[8] = d) : d = t[8], d
+}
+var k, A = e((() => {
+    k = h(), b(), l(), u(), f(), n(), _()
+}));
+export {
+    D as i, O as n, C as r, A as t
+};
 //# sourceMappingURL=2071ed62-eiet5cyh3pq3wk5r.js.map

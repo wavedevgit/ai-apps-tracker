@@ -1,2 +1,30 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e){let t=e.trim();if(!t)return null;let n=/^https?:\/\//i.test(t)?t:`https://${t}`;try{let e=new URL(n);if(!e.hostname)return null;let t=e.hostname.toLowerCase();return/^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(t)?(e.protocol=`https:`,e.pathname=`/`,e.hash=``,e.search=``,e.origin):null}catch{return null}}function n(e){try{return new URL(e).hostname||e}catch{return e}}var r=e((()=>{}));export{r as n,t as r,n as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e) {
+    let t = e.trim();
+    if (!t) return null;
+    let n = /^https?:\/\//i.test(t) ? t : `https://${t}`;
+    try {
+        let e = new URL(n);
+        if (!e.hostname) return null;
+        let t = e.hostname.toLowerCase();
+        return /^[a-z0-9-]+(\.[a-z0-9-]+)+$/i.test(t) ? (e.protocol = `https:`, e.pathname = `/`, e.hash = ``, e.search = ``, e.origin) : null
+    } catch {
+        return null
+    }
+}
+
+function n(e) {
+    try {
+        return new URL(e).hostname || e
+    } catch {
+        return e
+    }
+}
+var r = e((() => {}));
+export {
+    r as n, t as r, n as t
+};
 //# sourceMappingURL=d04399f3-byqrmanidl1b1yqw.js.map
