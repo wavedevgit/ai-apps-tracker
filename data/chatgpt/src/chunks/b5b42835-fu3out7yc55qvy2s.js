@@ -1,2 +1,43 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{I1 as n,O1 as r}from"./4813494d-qsuygr73qjc6rh65.js";import{Hn as i,N as a,Tn as o,s}from"./2340486e-komxp8tzs51ny4jj.js";function c(){"use forget";let e=(0,l.c)(3),t=a(),n,i;return e[0]===t?(n=e[1],i=e[2]):(n=()=>{let e=()=>{let e=r();t.getQueryState(e.queryKey)!=null&&t.refetchQueries(e,{cancelRefetch:!1})},n=()=>{document.visibilityState===`visible`&&e()},i=t.getQueryState(r().queryKey);return i&&Date.now()-i.dataUpdatedAt>=d&&e(),document.addEventListener(`visibilitychange`,n),window.addEventListener(`focus`,e),window.addEventListener(`online`,e),()=>{document.removeEventListener(`visibilitychange`,n),window.removeEventListener(`focus`,e),window.removeEventListener(`online`,e)}},i=[t],e[0]=t,e[1]=n,e[2]=i),(0,u.useEffect)(n,i),null}var l,u,d,f=e((()=>{l=o(),n(),s(),u=t(i()),d=6e4}));export{f as n,c as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    I1 as n,
+    O1 as r
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Hn as i,
+    N as a,
+    Tn as o,
+    s
+} from "./2340486e-komxp8tzs51ny4jj.js";
+
+function c() {
+    "use forget";
+    let e = (0, l.c)(3),
+        t = a(),
+        n, i;
+    return e[0] === t ? (n = e[1], i = e[2]) : (n = () => {
+        let e = () => {
+                let e = r();
+                t.getQueryState(e.queryKey) != null && t.refetchQueries(e, {
+                    cancelRefetch: !1
+                })
+            },
+            n = () => {
+                document.visibilityState === `visible` && e()
+            },
+            i = t.getQueryState(r().queryKey);
+        return i && Date.now() - i.dataUpdatedAt >= d && e(), document.addEventListener(`visibilitychange`, n), window.addEventListener(`focus`, e), window.addEventListener(`online`, e), () => {
+            document.removeEventListener(`visibilitychange`, n), window.removeEventListener(`focus`, e), window.removeEventListener(`online`, e)
+        }
+    }, i = [t], e[0] = t, e[1] = n, e[2] = i), (0, u.useEffect)(n, i), null
+}
+var l, u, d, f = e((() => {
+    l = o(), n(), s(), u = t(i()), d = 6e4
+}));
+export {
+    f as n, c as t
+};
 //# sourceMappingURL=b5b42835-fu3out7yc55qvy2s.js.map

@@ -1,2 +1,22 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{oL as t,sL as n}from"./4813494d-bo7e0c29ngt4zgx0.js";function r(e){return e?.toUpperCase()===`KR`}function i(){return r(t().country)}var a=e((()=>{n()}));export{i as n,a as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    oL as t,
+    sL as n
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+
+function r(e) {
+    return e?.toUpperCase() === `KR`
+}
+
+function i() {
+    return r(t().country)
+}
+var a = e((() => {
+    n()
+}));
+export {
+    i as n, a as t
+};
 //# sourceMappingURL=f0880031-npa3dwg6pf9tgaql.js.map

@@ -1,3 +1,1453 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/df9194ad-czdof2jzx6dr2vb4.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-bo7e0c29ngt4zgx0.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/30901919-e8h11sw136qen6v0.js","assets/a05edf66-gqfpouxeybbsnkkp.js","assets/conversation-small-ikg0dwuw782klweb.js","assets/c470f5ab-ab47eubabs8jspdc.js","assets/0e5afe53-esm68l11os61djoy.js","assets/conversation-small-oilgsqfa.css","assets/8742b478-dn4h2mddd9nbsw05.js","assets/8d505c06-ifpsms1ym5okckbj.js","assets/3e574439-bb1l9ylugse4n76k.js","assets/c2675c8c-ejvs9hq3rwjwsbcv.js","assets/82782bc9-fcii2id0x6lspwtj.js","assets/8b34dbc2-dtawqv9t1aqckqj4.js","assets/global-modals-lv5n3ujm.css","assets/25a66342-fyxcour1v5qeyhn6.js","assets/2ea88c7a-lxyla91xs6iv7odf.js","assets/25a66342-j7cd8h2bqav7weve.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$0 as n,C5 as r,Cw as i,D1 as a,ER as o,F7 as s,Fot as c,Gnt as l,Hot as u,Jnt as d,Oz as f,P5 as p,R1 as m,S2 as h,S5 as g,Tw as _,Uot as v,X0 as y,X5 as b,Xtt as x,Y5 as ee,Ytt as S,Z0 as C,Znt as w,_nt as T,_tt as E,bnt as D,dit as O,dst as k,fnt as A,fst as j,g8 as M,gtt as te,hnt as N,iE as P,int as ne,kz as re,mnt as ie,n2 as ae,oE as oe,oq as se,snt as ce,sq as le,uit as ue,unt as de,uq as fe,vN as pe,vR as F,vnt as me,w1 as he,w8 as ge,x1 as _e,x2 as I,yN as L,z7 as ve}from"./4813494d-bo7e0c29ngt4zgx0.js";import{Bn as R,N as ye,O as be,Vn as xe,cn as Se,ln as Ce,p as we,s as Te,wn as Ee}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Ajn as z,DCn as B,ECn as De,Sjn as Oe,d6 as ke,h0t as Ae,m0t as je,u6 as V,xjn as Me,zWt as Ne}from"./conversation-small-ikg0dwuw782klweb.js";import{Ic as Pe,Kx as Fe,Lc as Ie,qx as Le}from"./30901919-e8h11sw136qen6v0.js";import{n as Re,r as ze}from"./2ea88c7a-lxyla91xs6iv7odf.js";import{n as Be,t as Ve}from"./8d846022-bvik3sltoydb2o43.js";import{n as He,t as Ue}from"./84983163-ffise5mey03qfr6b.js";import{n as We,o as H,r as Ge}from"./7517017f-cnj2rxr4yngroauq.js";import{a as Ke,r as qe}from"./6601bf01-cb75jozqzlngul1j.js";import{i as Je,n as Ye,t as Xe}from"./d86ca127-kooy2aoa63oybngm.js";function Ze(e){if(!e)return null;let t=e.trim();if(!t||t.includes(`\\`))return null;try{return{url:new URL(t)}}catch{if(!/^[a-z][a-z0-9+.-]*:/.test(t))try{let e=t.startsWith(`//`)?`https:${t}`:`https://${t}`;return{url:new URL(e)}}catch{return null}return null}}function U(e){let t=e.trim();if(!t)return null;let n=/^([a-z][a-z0-9+.-]*):$/i.exec(t);if(n)return{kind:`scheme`,scheme:`${n[1].toLowerCase()}:`};let r=/^([a-z][a-z0-9+.-]*):\/\/$/i.exec(t);if(r)return{kind:`scheme`,scheme:`${r[1].toLowerCase()}:`};let i=/^(?:([a-z][a-z0-9+.+-]*):\/\/)?(\*|\*\.[^/:]+|[^/:]+)(?::(\*|\d+))?(\/.*)?$/i.exec(t);if(!i)return null;let a=i[1]?`${i[1].toLowerCase()}:`:void 0,o=i[2],s=i[3]??null,c=i[4]??null,l=o.startsWith(`*.`),u=(l?o.slice(2):o).toLowerCase().replace(/\.$/,``),d=null,f=!1;return s!==null&&(f=!0,d=s===`*`?`*`:Number(s),d!==`*`&&(!Number.isFinite(d)||d<0))?null:{kind:`host`,scheme:a,host:u,wildcard:l,portExplicit:f,port:d,path:c}}function W(e){return e.toLowerCase().replace(/\.$/,``)}function Qe(e,t){let n=W(e),r=W(t);return n===r||n.endsWith(`.`+r)}function $e(e,t,n){return n?Qe(e,t):W(e)===W(t)}function et(e,t){if(t.port===`*`)return!0;let n=e.port?Number(e.port):ot[e.protocol]??null;return t.portExplicit?typeof t.port==`number`&&n===t.port:n===(ot[e.protocol]??null)}function tt(e){let t=e.scheme??`https:`;if(!at.has(t)||!e.host)return null;let n=typeof e.port==`number`?`:${e.port}`:``,r=e.path??``;try{return new URL(`${t}//${e.host}${n}${r}`)}catch{return null}}function nt(e){let t=Ze(e??void 0);if(t&&at.has(t.url.protocol)&&!t.url.hostname.includes(`*`))return t.url.toString();if(!e)return null;let n=U(e);return!n||n.kind===`scheme`?null:tt(n)?.toString()??null}function rt(e,t,n){let r=[];t?.connectDomains?.length&&r.push(...t.connectDomains);let i=n?.trim();return i&&r.push(i),it(e,r)}function it(e,t){if(!e)return!1;let n=Ze(e);if(!n)return!1;let r=n.url;return r.username||r.password||!t?.length?!1:t.some(e=>{let t=U(e);if(!t)return!1;if(t.kind===`scheme`)return r.protocol===t.scheme;if(t.scheme)return!(r.protocol!==t.scheme||!$e(r.hostname,t.host,t.wildcard)||!et(r,t));{let e=t.host;return!!Qe(r.hostname,e)}})}var at,ot,st=e((()=>{at=new Set([`http:`,`https:`]),ot={"http:":80,"https:":443,"ws:":80,"wss:":443}}));function ct(e,t){if(!t)return e;let n=e.startsWith(`http://`)||e.startsWith(`https://`)||/^[a-z][a-z0-9+.-]*:\/\//i.test(e),r;try{r=new URL(e)}catch{return e}return!n||r.searchParams.get(`redirectUrl`)?e:(r.searchParams.set(lt,t),r.toString())}var lt,ut=e((()=>{lt=`redirectUrl`}));function dt(){let e=Math.floor(window.screenX+(window.outerWidth-ht)/2),t=Math.floor(window.screenY+(window.outerHeight-gt)/2);return[`popup=yes`,`width=${ht}`,`height=${gt}`,`left=${e}`,`top=${t}`,`noopener`,`noreferrer`].join(`,`)}async function ft(e,t){try{return(await s.safePost(`/ecosystem/url_safe`,{requestBody:{url:e,resolved_pineapple_uri:t}})).safe}catch{return!1}}var pt,mt,ht,gt,_t,vt,yt=e((()=>{E(),n(),st(),ut(),D(),ve(),S(),C(),Ce(),pt=y(()=>Se(()=>import(`./df9194ad-czdof2jzx6dr2vb4.js`).then(e=>e.ConfirmExternalLinkModal),__vite__mapDeps([0,1,2,3,4,5]))),mt=y(()=>Se(()=>import(`./a05edf66-gqfpouxeybbsnkkp.js`).then(e=>e.SafeLinkWarningModal),__vite__mapDeps([6,1,2,3,4,7,5,8,9,10,11]))),ht=600,gt=750,_t=(e,t,n=`tab`)=>{let r=ct(e,t);if(N())ae(pt,{url:r});else{let e=n===`popup`?dt():`noopener,noreferrer`;window.open(r,`_blank`,e);return}},vt=async({href:e,resolvedPineappleUri:t,csp:n,redirectDomains:r,domain:i,distributionChannel:a,redirectUrl:o,openMode:s,attributionId:c,conversationId:l,messageId:u,sectionLocation:d,widgetName:f,widgetSessionId:p})=>{if(!e){console.error(`No href provided to handleExternalLink`);return}let m=a===te.OPENAI&&s===`popup`?`popup`:`tab`;if(me.logEvent(`link_action`,{action:`click`,action_type:`open_external`,attribution_id:c,conversation_id:l,link_type:`widget`,message_id:u,section_location:d,url:e,domain:i,distribution_channel:a,open_mode:m,widget_name:f,widget_session_id:p}),rt(e,n,i)||it(e,r)){_t(e,o,m);return}if(a===te.OPENAI&&await ft(e,t)){_t(e,null,m);return}ae(mt,{urls:e,displayUrls:e})}})),bt,xt,St=e((()=>{M(),se(),S(),bt=()=>{let e=`unknown`;return ie()?e=`mobile`:de()?e=`tablet`:ce()&&(e=`desktop`),e},xt=e=>{let t=bt(),n=`web`;e===`skybridge`&&(n=`native`);let r=`unknown`;return ne()?r=`ios`:x()?r=`android`:T()?r=`windows`:A()&&(r=`macos`),{device:{type:t,platform:n,os:r},capabilities:{hover:g(le),touch:g(fe)}}}})),Ct,wt,Tt=e((()=>{C(),Ce(),Ct=y(()=>Se(()=>import(`./8d505c06-ifpsms1ym5okckbj.js`).then(e=>e.AutofillConsentDialogContent),__vite__mapDeps([12,1,2,3,4,7,5,8,9,10]))),wt=y(()=>Se(()=>import(`./8d505c06-ifpsms1ym5okckbj.js`).then(e=>e.AutofillConsentSheetContent),__vite__mapDeps([12,1,2,3,4,7,5,8,9,10])))}));function Et(e){"use forget";let t=(0,kt.c)(28),{host:n,features:i,isInert:a,title:o,colorScheme:s,ref:c,subdomain:l,iframeRef:u,api:d,locale:p}=e,m=n===void 0?`chatgpt`:n,h=a!==void 0&&a,[g]=(0,G.useState)(Dt),_;t[0]===g?_=t[1]:(_=async(e,...t)=>{let n=t;return await r(()=>!!g()),v(g()?.[e],`Method ${String(e)} not found`)(...n)},t[0]=g,t[1]=_);let y=L(_),b,x;t[2]===y?(b=t[3],x=t[4]):(b=()=>new Proxy({},{get:(e,t)=>(...e)=>y(t,...e)}),x=[y],t[2]=y,t[3]=b,t[4]=x),(0,G.useImperativeHandle)(c,b,x);let ee=(0,G.useRef)(d),S,C;t[5]===d?(S=t[6],C=t[7]):(S=()=>{ee.current=d},C=[d],t[5]=d,t[6]=S,t[7]=C),(0,G.useEffect)(S,C);let w;t[8]===g?w=t[9]:(w=e=>e?(Ue(e,new Proxy(ee.current,{get:(e,t)=>ee.current[t]}),[`runUserCode`,`runWidgetCode`,`runComponent`]).then(e=>{g.set(e)}),()=>{g.set(null)}):g.set(null),t[8]=g,t[9]=w);let T=L(w),E;t[10]===l?E=t[11]:(E=Nt(l),t[10]=l,t[11]=E);let D=E,O=`sandbox-${D}`,k;t[12]!==m||t[13]!==p?(k=Mt(m,p,K),t[12]=m,t[13]=p,t[14]=k):k=t[14];let A=`${D}${k}`,j=oe(T,u),M;t[15]===i?M=t[16]:(M=i?.length?jt(i):void 0,t[15]=i,t[16]=M);let te=i?.includes(`fullscreen`)?!0:void 0,N;t[17]===s?N=t[18]:(N=s?{colorScheme:s}:void 0,t[17]=s,t[18]=N);let P;return t[19]!==h||t[20]!==O||t[21]!==A||t[22]!==j||t[23]!==M||t[24]!==te||t[25]!==N||t[26]!==o?(P=(0,At.jsx)(f,{children:(0,At.jsx)(`iframe`,{title:o,inert:h,src:A,ref:j,sandbox:`allow-scripts allow-same-origin allow-forms`,allow:M,allowFullScreen:te,className:`h-full w-full max-w-full`,style:N},O)}),t[19]=h,t[20]=O,t[21]=A,t[22]=j,t[23]=M,t[24]=te,t[25]=N,t[26]=o,t[27]=P):P=t[27],P}function Dt(){return ge(null)}function Ot(e){"use forget";let t=(0,kt.c)(8),n,r;if(t[0]===e?(n=t[1],r=t[2]):({frameComponent:n,...r}=e,t[0]=e,t[1]=n,t[2]=r),n){let e;return t[3]!==n||t[4]!==r?(e=(0,At.jsx)(n,{...r}),t[3]=n,t[4]=r,t[5]=e):e=t[5],e}let i;return t[6]===r?i=t[7]:(i=(0,At.jsx)(Et,{...r}),t[6]=r,t[7]=i),i}var kt,G,At,K,jt,Mt,Nt,Pt=e((()=>{kt=Ee(),H(),He(),St(),M(),re(),u(),P(),pe(),G=t(xe()),At=R(),K=!1,jt=e=>e.concat().sort().map(e=>`${e} *`).join(`; `),Mt=(e,t,n)=>`?`+[``,`app=${e}`,e===`chatgpt`?`darkModeType=increased`:``,`locale=${t}`,`deviceType=${xt(e).device.type}`,n?`unsafeSkipTargetOriginCheck=true`:``].filter(Boolean).join(`&`),Nt=e=>{if(e){let t=new URL(We);return t.hostname=`${e}.${t.hostname}`,t.protocol=Ge,t.origin}return We}}));function Ft(e){return e+1}var It,q,J,Lt,Rt,zt,Bt,Vt,Ht,Ut,Wt,Gt,Kt=e((()=>{It=Ee(),Pe(),Fe(),_(),b(),q=t(xe()),J=R(),Lt=[`toolInput`,`toolOutput`,`toolResponseMetadata`,`widgetState`],Rt=`text-xs uppercase tracking-wide text-token-text-tertiary`,zt=`max-h-[70vh] overflow-auto whitespace-pre-wrap break-words rounded-md border border-token-border-light bg-token-main-surface-secondary p-3 font-mono text-xs leading-relaxed`,Bt=`pointer-events-none absolute inset-0 z-20 border border-token-text-primary`,Vt=e=>Lt.find(t=>e[t]!=null)??`toolInput`,Ht=e=>{if(e==null)return`null`;let t=new WeakSet;try{return JSON.stringify(e,(e,n)=>{if(typeof n==`bigint`)return`${n}n`;if(n instanceof Error)return{name:n.name,message:n.message,stack:n.stack};if(typeof n==`function`)return`[function ${n.name||`anonymous`}]`;if(typeof n==`object`&&n){if(t.has(n))return`[Circular]`;t.add(n)}return n},2)??String(e)}catch{return String(e)}},Ut=e=>{"use forget";let t=(0,It.c)(6),{isActive:n,label:r,onClick:i}=e,a=n?`bg-token-text-primary text-token-bg-primary`:`bg-token-main-surface-secondary text-token-text-secondary hover:bg-token-bg-secondary`,o;t[0]===a?o=t[1]:(o=ee(`rounded-full px-3 py-1.5 text-xs font-medium transition-colors`,a),t[0]=a,t[1]=o);let s;return t[2]!==r||t[3]!==i||t[4]!==o?(s=(0,J.jsx)(`button`,{type:`button`,className:o,onClick:i,children:r}),t[2]=r,t[3]=i,t[4]=o,t[5]=s):s=t[5],s},Wt=e=>{"use forget";let t=(0,It.c)(22),{isOpen:n,widgetId:r,selectedPanel:a,values:o,onClose:s,onSelectPanel:c}=e,l=o[a],u;t[0]===l?u=t[1]:(u=Ht(l),t[0]=l,t[1]=u);let d=u,f=`Widget ID: ${r}`,p;t[2]!==c||t[3]!==a?(p=Lt.map(e=>(0,J.jsx)(Ut,{isActive:e===a,label:e,onClick:()=>c(e)},e)),t[2]=c,t[3]=a,t[4]=p):p=t[4];let m;t[5]===p?m=t[6]:(m=(0,J.jsx)(`div`,{className:`flex flex-wrap gap-2`,children:p}),t[5]=p,t[6]=m);let h;t[7]===a?h=t[8]:(h=(0,J.jsx)(`div`,{className:Rt,children:a}),t[7]=a,t[8]=h);let g;t[9]===d?g=t[10]:(g=(0,J.jsx)(`pre`,{className:zt,children:d}),t[9]=d,t[10]=g);let _;t[11]!==h||t[12]!==g?(_=(0,J.jsxs)(`div`,{className:`flex min-h-0 flex-col gap-2`,children:[h,g]}),t[11]=h,t[12]=g,t[13]=_):_=t[13];let v;t[14]!==m||t[15]!==_?(v=(0,J.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[m,_]}),t[14]=m,t[15]=_,t[16]=v):v=t[16];let y;return t[17]!==n||t[18]!==s||t[19]!==f||t[20]!==v?(y=(0,J.jsx)(i,{isOpen:n,onClose:s,showCloseButton:!0,size:`xlarge`,title:`Widget debug data`,description:f,testId:`modal-ecosystem-app-debug-inspector`,children:v}),t[17]=n,t[18]=s,t[19]=f,t[20]=v,t[21]=y):y=t[21],y},Gt=e=>{"use forget";let t=(0,It.c)(30),{widgetId:n,widgetState:r,toolInput:i,toolOutput:a,toolResponseMetadata:o,children:s}=e,[c,l]=(0,q.useState)(0),[u,d]=(0,q.useState)(!1),[f,p]=(0,q.useState)(!1),m;t[0]!==i||t[1]!==a||t[2]!==o||t[3]!==r?(m={toolInput:i,toolOutput:a,toolResponseMetadata:o,widgetState:r},t[0]=i,t[1]=a,t[2]=o,t[3]=r,t[4]=m):m=t[4];let h=m,g;t[5]===h?g=t[6]:(g=()=>Vt(h),t[5]=h,t[6]=g);let[_,v]=(0,q.useState)(g),y,b;t[7]===h?(y=t[8],b=t[9]):(y=()=>{v(e=>h[e]==null?Vt(h):e)},b=[h],t[7]=h,t[8]=y,t[9]=b),(0,q.useEffect)(y,b);let x,S;t[10]===f?(x=t[11],S=t[12]):(x=()=>{if(!f)return;let e=window.setTimeout(()=>{p(!1)},2e3);return()=>{window.clearTimeout(e)}},S=[f],t[10]=f,t[11]=x,t[12]=S),(0,q.useEffect)(x,S);let C;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(C=(0,J.jsx)(`div`,{className:Bt}),t[13]=C):C=t[13];let w;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(w=ee(`border-token-text-primary bg-token-bg-primary text-token-text-primary hover:bg-token-bg-secondary flex h-6 w-6 items-center justify-center border-s border-t border-b p-0 transition-colors`),t[14]=w):w=t[14];let T;t[15]===Symbol.for(`react.memo_cache_sentinel`)?(T=(0,J.jsx)(`button`,{type:`button`,className:w,"aria-label":`Reload widget`,title:`Reload widget`,onClick:()=>l(Ft),children:(0,J.jsx)(Le,{className:`icon-sm`})}),t[15]=T):T=t[15];let E;t[16]===Symbol.for(`react.memo_cache_sentinel`)?(E=ee(`border-token-text-primary bg-token-bg-primary text-token-text-primary hover:bg-token-bg-secondary flex h-6 w-6 items-center justify-center border p-0 transition-colors`),t[16]=E):E=t[16];let D;t[17]===Symbol.for(`react.memo_cache_sentinel`)?(D=(0,J.jsxs)(`div`,{className:`absolute end-0 top-0 z-30 flex`,children:[T,(0,J.jsx)(`button`,{type:`button`,className:E,"aria-label":`Inspect widget data`,title:`Inspect widget data`,onClick:()=>d(!0),children:(0,J.jsx)(Ie,{className:`icon-sm`})})]}),t[17]=D):D=t[17];let O;t[18]!==s||t[19]!==c?(O=s(c),t[18]=s,t[19]=c,t[20]=O):O=t[20];let k;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(k=()=>d(!1),t[21]=k):k=t[21];let A;t[22]!==h||t[23]!==u||t[24]!==_||t[25]!==n?(A=(0,J.jsx)(Wt,{isOpen:u,widgetId:n,selectedPanel:_,values:h,onClose:k,onSelectPanel:v}),t[22]=h,t[23]=u,t[24]=_,t[25]=n,t[26]=A):A=t[26];let j;return t[27]!==O||t[28]!==A?(j=(0,J.jsxs)(`div`,{className:`relative h-full w-full max-w-full`,children:[C,D,O,A]}),t[27]=O,t[28]=A,t[29]=j):j=t[29],j}}));function qt(e,t,n){let r=window.getComputedStyle(e).getPropertyValue(t).trim();if(!r)return``;if(!/(?:var|light-dark|alpha)\(/.test(r))return r;e.style.setProperty(n,`var(${t})`);let i=window.getComputedStyle(e).getPropertyValue(n).trim();return e.style.removeProperty(n),i}function Jt(e){if(typeof document>`u`||typeof window>`u`)return;let t=Object.create(null),n=document.createElement(`span`);n.className=`puik-root`,n.dataset.theme=e,n.hidden=!0,(document.body??document.documentElement).appendChild(n);try{for(let[e,[r,i]]of Object.entries(Yt)){let a=qt(n,r,i);a&&(t[e]=a)}}finally{n.remove()}if(Object.keys(t).length!==0)return{variables:t}}var Yt,Xt=e((()=>{Yt={"--color-background-primary":[`--color-surface`,`background-color`],"--color-background-secondary":[`--color-surface-secondary`,`background-color`],"--color-background-tertiary":[`--color-surface-tertiary`,`background-color`],"--color-background-inverse":[`--color-background-primary-solid`,`background-color`],"--color-background-ghost":[`--alpha-0`,`background-color`],"--color-background-info":[`--color-background-info-surface`,`background-color`],"--color-background-danger":[`--color-background-danger-surface`,`background-color`],"--color-background-success":[`--color-background-success-surface`,`background-color`],"--color-background-warning":[`--color-background-warning-surface`,`background-color`],"--color-background-disabled":[`--color-background-disabled`,`background-color`],"--color-text-primary":[`--color-text-primary`,`color`],"--color-text-secondary":[`--color-text-secondary`,`color`],"--color-text-tertiary":[`--color-text-tertiary`,`color`],"--color-text-inverse":[`--color-text-inverse`,`color`],"--color-text-ghost":[`--color-text-primary-ghost`,`color`],"--color-text-info":[`--color-text-info`,`color`],"--color-text-danger":[`--color-text-danger`,`color`],"--color-text-success":[`--color-text-success`,`color`],"--color-text-warning":[`--color-text-warning`,`color`],"--color-text-disabled":[`--color-text-disabled`,`color`],"--color-border-primary":[`--color-border`,`border-color`],"--color-border-secondary":[`--color-border-subtle`,`border-color`],"--color-border-tertiary":[`--color-border-strong`,`border-color`],"--color-border-inverse":[`--color-text-inverse`,`border-color`],"--color-border-ghost":[`--alpha-0`,`border-color`],"--color-border-info":[`--color-border-info-surface`,`border-color`],"--color-border-danger":[`--color-border-danger-surface`,`border-color`],"--color-border-success":[`--color-border-success-surface`,`border-color`],"--color-border-warning":[`--color-border-warning-surface`,`border-color`],"--color-border-disabled":[`--color-border-disabled`,`border-color`],"--color-ring-primary":[`--color-ring-primary`,`outline-color`],"--color-ring-secondary":[`--color-ring-secondary`,`outline-color`],"--color-ring-inverse":[`--color-ring-primary-solid`,`outline-color`],"--color-ring-info":[`--color-ring-info`,`outline-color`],"--color-ring-danger":[`--color-ring-danger`,`outline-color`],"--color-ring-success":[`--color-ring-success`,`outline-color`],"--color-ring-warning":[`--color-ring-warning`,`outline-color`],"--font-sans":[`--font-sans`,`font-family`],"--font-mono":[`--font-mono`,`font-family`],"--font-weight-normal":[`--font-weight-normal`,`font-weight`],"--font-weight-medium":[`--font-weight-medium`,`font-weight`],"--font-weight-semibold":[`--font-weight-semibold`,`font-weight`],"--font-weight-bold":[`--font-weight-bold`,`font-weight`],"--font-text-xs-size":[`--font-text-xs-size`,`font-size`],"--font-text-sm-size":[`--font-text-sm-size`,`font-size`],"--font-text-md-size":[`--font-text-md-size`,`font-size`],"--font-text-lg-size":[`--font-text-lg-size`,`font-size`],"--font-heading-xs-size":[`--font-heading-xs-size`,`font-size`],"--font-heading-sm-size":[`--font-heading-sm-size`,`font-size`],"--font-heading-md-size":[`--font-heading-md-size`,`font-size`],"--font-heading-lg-size":[`--font-heading-lg-size`,`font-size`],"--font-heading-xl-size":[`--font-heading-xl-size`,`font-size`],"--font-heading-2xl-size":[`--font-heading-2xl-size`,`font-size`],"--font-heading-3xl-size":[`--font-heading-3xl-size`,`font-size`],"--font-text-xs-line-height":[`--font-text-xs-line-height`,`line-height`],"--font-text-sm-line-height":[`--font-text-sm-line-height`,`line-height`],"--font-text-md-line-height":[`--font-text-md-line-height`,`line-height`],"--font-text-lg-line-height":[`--font-text-lg-line-height`,`line-height`],"--font-heading-xs-line-height":[`--font-heading-xs-line-height`,`line-height`],"--font-heading-sm-line-height":[`--font-heading-sm-line-height`,`line-height`],"--font-heading-md-line-height":[`--font-heading-md-line-height`,`line-height`],"--font-heading-lg-line-height":[`--font-heading-lg-line-height`,`line-height`],"--font-heading-xl-line-height":[`--font-heading-xl-line-height`,`line-height`],"--font-heading-2xl-line-height":[`--font-heading-2xl-line-height`,`line-height`],"--font-heading-3xl-line-height":[`--font-heading-3xl-line-height`,`line-height`],"--border-radius-xs":[`--radius-xs`,`border-radius`],"--border-radius-sm":[`--radius-sm`,`border-radius`],"--border-radius-md":[`--radius-md`,`border-radius`],"--border-radius-lg":[`--radius-lg`,`border-radius`],"--border-radius-xl":[`--radius-xl`,`border-radius`],"--border-radius-full":[`--radius-full`,`border-radius`],"--border-width-regular":[`--hairline`,`border-width`],"--shadow-hairline":[`--shadow-hairline`,`box-shadow`],"--shadow-sm":[`--shadow-100`,`box-shadow`],"--shadow-md":[`--shadow-200`,`box-shadow`],"--shadow-lg":[`--shadow-300`,`box-shadow`]}})),Zt,Qt,$t=e((()=>{Zt=e=>{if(!e)return[];let t=[];return e.camera&&t.push(`camera`),e.microphone&&t.push(`microphone`),e.geolocation&&t.push(`geolocation`),e.fullscreen&&t.push(`fullscreen`),e.clipboardWrite&&t.push(`clipboard-write`),t},Qt=(e,t)=>{let n=Zt(t);if(!n.length)return e;let r=new Set(e??[]);for(let e of n)r.add(e);return Array.from(r)}}));function en(){return ke()}var tn,Y,X,Z,Q,nn,rn,an,on,sn,cn,ln,un,dn,$,fn=e((()=>{tn=Ee(),E(),Ne(),Ae(),V(),St(),Tt(),Pt(),Kt(),Xt(),qe(),$t(),Ye(),M(),m(),F(),O(),D(),B(),u(),w(),P(),pe(),z(),Te(),Ve(),I(),k(),Y=t(xe()),X=R(),Ce(),Z=e=>Se(()=>import(`./3e574439-bb1l9ylugse4n76k.js`).then(e=>(e.n(),e.l)).then(e),__vite__mapDeps([13,1,2,3,4,7,5,8,9,10,14,15,16,17,18,19,20])),Q=e=>typeof e==`object`&&!!e,nn=e=>{if(!e)return{};let t={},[n,...r]=(e.name??``).trim().split(/\s+/);return n&&(t.name=e.name,t[`given-name`]=n,r.length>0&&(t[`family-name`]=r.join(` `))),e.email&&(t.email=e.email),e.phone_number&&(t.tel=e.phone_number),t},rn=e=>{if(!e)return null;if(!e.includes(`://`))return e;try{return new URL(e).hostname||null}catch{return null}},an=e=>Object.values(d(`3726720227`).value).some(t=>typeof t==`string`&&rn(t)===e),on=e=>{if(!e)return null;try{return j(e).sub??null}catch{return null}},sn=e=>{if(!e||!Q(e))return null;let t=e.status;return(e.cancelled===!0||e.is_cancelled===!0||t===`cancelled`)&&typeof e.reason==`string`?e.reason:null},cn=(e,t)=>{if(sn(e))return null;for(let t of[e,e?.call_tool_result,e?.mcp_tool_result,e?.mcpToolResult]){if(!Q(t))continue;let e=Be(t);if(e)return e}if(!Q(t))return null;let n=typeof t.result==`string`?t.result:null,r=n||`[structured content]`;if(!n)try{r=JSON.stringify(t)}catch{}return Be({content:[{type:`text`,text:r}],structuredContent:t,isError:typeof t.isError==`boolean`?t.isError:void 0,_meta:Q(t._meta)?t._meta:e??void 0})},ln=({displayMode:e,viewParams:t,toolOutput:n})=>{if(e===`modal`)return t??null;let r=Q(n)?n:null,i=Q(t)?t:null;return!r&&!i?null:{...r??{},...i??{}}},un={insets:{top:0,bottom:0,left:0,right:0}},dn=({host:e,mcpApps:t,accountId:n,ref:r,iframeRef:i,html:s,measureWidth:u,expectReadySignal:d,expectedReadySignal:f,features:m,permissions:g,safeArea:_=un,attributionId:y,appDisplayName:b,conversationId:x,appPackageName:ee,supportsOAuthCompletion:S,widgetId:C,widgetSessionId:w,widgetParent:T,widgetDistributionChannel:E,allowPrivilegedActions:D=!0,suggestionMessageId:O,widgetType:k,csp:A,subdomain:j,viewParams:M,widgetState:N=null,deepLink:P,toolInput:ne=null,toolOutput:re=null,toolResponseMetadata:ie=null,toolInfo:ae=null,subjectId:se=null,isTombstone:ce=!1,maxHeight:le,maxWidth:de,containerHeight:fe,containerWidth:pe,theme:F,title:ge,api:I,locale:ve,displayMode:R=`inline`,availableDisplayModes:xe,isSidebarOpen:Se,onReady:Ce,onError:Te,frameComponent:Ee})=>{"use no forget";let z=(0,Y.useMemo)(()=>({attribution_id:y??T??``,name:k,conversation_id:x??null,message_id:C||null,suggestion_message_id:O??null,distribution_channel:E,host:e}),[e,E,y,T,k,x,C,O]),[B,ke]=(0,Y.useState)(null),Ae=oe(ke,r),[V,Ne]=(0,Y.useState)(null),[Pe,Fe]=(0,Y.useState)([]),[Ie,Le]=(0,Y.useState)(null),Be=Pe??[],Ve=Pe!=null,[He]=(0,Y.useState)(()=>new WeakMap),[Ue,We]=(0,Y.useState)(!1),H=e===`skybridge`,{user:Ge=null,accessToken:qe}=c()??{},Ye=H?ue(qe):null,Ze=H?on(qe):null,U=rn(y??T),W=D&&(H||Ge!=null)&&U!=null&&an(U),Qe=W&&l(`1850361504`),$e=p(()=>Qe?H?n==null?null:a(_e().data,n):he():null),et=$e?.normalizedAccountUserId,tt=H?`${n??``}:${Ze??``}`:et??Ge?.id,nt=n===$e?.id&&Ze!=null&&(Ye==null||Ye===n),rt=Qe&&$e!=null&&et!=null&&(!H||nt),{data:it,isLoading:at}=be({...o,queryKey:H?[...o.queryKey,`skybridge`,n??``,Ze??``]:o.queryKey,enabled:H&&W}),ot=be({...Je(et),enabled:rt}),st=ye(),ct=we({mutationFn:({app_uri:e,provider_name:t})=>Xe({app_uri:e,provider_name:t}),onSuccess:(e,{accountUserId:t})=>st.setQueryData(Je(t).queryKey,(t=[])=>[...t.filter(({app_uri:t})=>t!==e.app_uri),e])}),lt=rt&&ot.data?.some(({app_uri:e})=>rn(e)===U)===!0,ut=H?it??null:Ge,dt=ut?{name:ut.name,email:ut.email,phone_number:ut.phone_number}:null,ft=nn(dt),pt=Ie!=null&&Ie.appId===U&&Ie.accountIdentity===tt&&Ie.frame===B&&Ie.html===s&&Ie.widgetId===C&&Be.some(e=>!!ft[e.fieldType]),mt=H&&at||rt&&ot.isLoading,ht=Ve&&pt&&!mt,gt=ht&&lt&&!ct.isPending,_t=b??ge??k??U??``,vt=W&&ht&&!lt&&dt!=null,yt=L(t=>{U!=null&&me.logStructuredEvent(`ChatgptAppAutofillEvent`,{action:t,appId:U,surface:e===`skybridge`?Oe.CHATGPT_APP_AUTOFILL_SURFACE_SKYBRIDGE:Oe.CHATGPT_APP_AUTOFILL_SURFACE_WEB,alwaysAllowAvailable:rt})}),bt=L(e=>{Z(({trackAutofillConsent:t})=>t(z,e,U,Be))});(0,Y.useEffect)(()=>{if(!vt||!V||He.get(V)?.has(C))return;let e=He.get(V)??new Set;e.add(C),He.set(V,e),bt(`shown`),yt(Me.CHATGPT_APP_AUTOFILL_ACTION_CONSENT_SHOWN)},[He,vt,yt,V,bt,C]);let St=L((e=Me.CHATGPT_APP_AUTOFILL_ACTION_ALLOW_ONCE)=>{if(Ve){e!==Me.CHATGPT_APP_AUTOFILL_ACTION_AUTO_APPLIED&&bt(`accepted`);for(let e of Be){let t=ft[e.fieldType];t&&B?.applyAutofillCandidate({id:e.id,value:t})}Fe(null),yt(e)}}),Tt=L(e=>V?.isCurrent()===!0&&e.appId===U&&e.accountUserId===et&&e.frame===B&&e.html===s&&e.widgetId===C&&e.candidates===Be&&Ve),Et=L(async()=>{if(!U||!et)return;let e={appId:U,accountUserId:et,frame:B,html:s,widgetId:C,candidates:Be};We(!1);try{await ct.mutateAsync({app_uri:U,provider_name:_t,accountUserId:et}),Tt(e)&&St(Me.CHATGPT_APP_AUTOFILL_ACTION_ALWAYS_ALLOW)}catch{Tt(e)&&(We(!0),yt(Me.CHATGPT_APP_AUTOFILL_ACTION_GRANT_SAVE_FAILED))}}),Dt=L(()=>{Ve&&bt(`declined`),Fe(null),yt(Me.CHATGPT_APP_AUTOFILL_ACTION_DENIED)}),kt=L(()=>{Ve&&bt(`declined`),Fe(null),yt(Me.CHATGPT_APP_AUTOFILL_ACTION_DISMISSED)});(0,Y.useEffect)(()=>{gt&&St(Me.CHATGPT_APP_AUTOFILL_ACTION_AUTO_APPLIED)},[St,gt]);let G=R===`fullscreen`?`fullscreen`:R===`pip`?`pip`:`inline`,At=(0,Y.useMemo)(()=>Qt(m,g),[m,g]),K=(0,Y.useMemo)(()=>xt(e),[e]),jt=K.device.type===`mobile`||K.device.type===`tablet`?`mobile`:K.device.type===`desktop`?`desktop`:`web`,Mt=(0,Y.useMemo)(()=>{let e={};return G===`fullscreen`?typeof window<`u`&&(e.width=window.innerWidth,e.height=window.innerHeight):(fe==null?le!=null&&(e.maxHeight=le):e.height=fe,pe==null?de!=null&&(e.maxWidth=de):e.width=pe),Object.keys(e).length>0?e:void 0},[G,fe,pe,le,de]),Nt=(0,Y.useMemo)(()=>{if(!(typeof Intl>`u`))return Intl.DateTimeFormat().resolvedOptions().timeZone},[]),Pt=D?t?.hostContext[`openai/modelContext`]:void 0,Ft=D?t?.hostContext[`openai/chat`]:void 0,It=(0,Y.useMemo)(()=>{let t=e===`skybridge`?(xe??[`inline`,`fullscreen`]).filter(e=>e===`inline`||e===`fullscreen`):[`inline`,`fullscreen`,`pip`];(e!==`skybridge`||G!==`pip`)&&!t.includes(G)&&t.push(G);let n={theme:F,displayMode:G,availableDisplayModes:t,containerDimensions:Mt,locale:ve,safeAreaInsets:_.insets,userAgent:`chatgpt`,platform:jt,deviceCapabilities:{touch:K.capabilities.touch,hover:K.capabilities.hover}};return ae&&(n.toolInfo=ae),Nt&&(n.timeZone=Nt),P!==void 0&&(n[`openai/deepLink`]=P),Pt!==void 0&&(n[`openai/modelContext`]=Pt),Ft!==void 0&&(n[`openai/chat`]=Ft),n},[Ft,Mt,P,ve,G,Pt,e,xe,jt,_.insets,F,Nt,ae,K.capabilities.hover,K.capabilities.touch]),q=(0,Y.useMemo)(()=>{if(!m||m.length===0)return;let e={},t=new Set(m);return t.has(`camera`)&&(e.camera={}),t.has(`microphone`)&&(e.microphone={}),t.has(`geolocation`)&&(e.geolocation={}),t.has(`clipboard-write`)&&(e.clipboardWrite={}),Object.keys(e).length>0?e:void 0},[m]),J=(0,Y.useMemo)(()=>{if(!A)return;let e={};return A.connectDomains&&A.connectDomains.length>0&&(e.connectDomains=A.connectDomains),A.resourceDomains&&A.resourceDomains.length>0&&(e.resourceDomains=A.resourceDomains),A.frameDomains&&A.frameDomains.length>0&&(e.frameDomains=A.frameDomains),Object.keys(e).length>0?e:void 0},[A]),Lt=(0,Y.useMemo)(()=>{let e={openLinks:{},logging:{},...D?{serverTools:{},serverResources:{},...t?.forwardedRequestMethods.includes(`ui/message`)?{}:{message:{}},...t?.forwardedRequestMethods.includes(`ui/update-model-context`)?{}:{updateModelContext:{}},...t?.hostCapabilities}:{}};return(q||J)&&(e.sandbox={},q&&(e.sandbox.permissions=q),J&&(e.sandbox.csp=J)),e},[D,t?.forwardedRequestMethods,t?.hostCapabilities,J,q]),[Rt]=(0,Y.useState)(()=>new Map),zt=L(()=>{let e=Rt.get(F);return e||(e=Jt(F),e&&Rt.set(F,e)),e?{...It,styles:e}:It}),Bt=L(()=>{Te?.()}),Vt=L(e=>{Z(({trackFatalWidgetError:t})=>t(z,e)),Bt()}),Ht=L(()=>{Ce?.()}),Ut=L(()=>{let e=z,t=R,n=d===!0,r=performance.now(),i=!1,a=a=>{if(i)return;i=!0,clearTimeout(o);let s=performance.now()-r;Z(({trackWidgetLoadOutcome:r})=>r(e,{outcome:a,displayMode:t,durationMs:s,expectsReadySignal:n}))},o=setTimeout(()=>a(`timeout`),3e4);return a}),Wt=L(async(e,n,r,i)=>{Ne(null),Fe([]),Le(null),We(!1);let a=e.runWidgetCode({html:n,measureWidth:u,expectReadySignal:d,expectedReadySignal:f,isFirstParty:D&&E===te.OPENAI,widgetId:C,...W?{enableAutofill:!0}:{},viewParams:ln({displayMode:R,viewParams:M,toolOutput:re??null}),widgetState:N,toolInput:ne,toolOutput:re,toolResponseMetadata:ie,subjectId:se,appPackageName:ee,supportsOAuthCompletion:S,isTombstone:ce,features:At,maxHeight:le??void 0,maxWidth:de??void 0,theme:F,displayMode:R,isSidebarOpen:Se??!1,safeArea:_,userAgent:K,csp:A,mcpApps:{forwardedRequestMethods:D?t?.forwardedRequestMethods:void 0,hostContext:zt(),hostCapabilities:Lt,hostInfo:{name:`chatgpt`}}}),o=null;for await(let t of await a){if(!r())return;t.type===ze.ENVIRONMENT_STATUS&&t.status===Re.RUNNING_CODE?(i(`ready`),Ht(),Ne(t=>t?.frame===e&&t.html===n&&t.isCurrent===r?t:{frame:e,html:n,expectsReadySignal:d===!0,expectedReadySignal:f??null,isCurrent:r})):t.type===ze.ERROR?(Z(({trackWidgetError:e})=>e(z,t.error)),o=t.error):t.type===ze.RUN_COMPLETE&&t.wasFatalError&&(i(`error`),Vt(o))}}),Gt=d===!0,Kt=f??null;(0,Y.useEffect)(()=>{if(!B||!s)return;let e=!0,t=Ut();return Wt(B,s,()=>e,t).catch(()=>{e&&(t(`error`),Vt(null))}),()=>{e=!1,t(`aborted`)}},[Gt,B,s,Kt,Vt,Wt,Ut]);let qt=(0,Y.useMemo)(()=>cn(ie,re),[ie,re]),Yt=sn(ie),Xt={widgetId:C,widgetState:N,toolInput:ne,toolOutput:re,toolResponseMetadata:ie,subjectId:se},[Zt,$t]=(0,Y.useState)(Xt),[en,tn]=(0,Y.useState)(null),[Q,dn]=(0,Y.useState)(null);h(Zt,Xt)||$t(Xt);let $=V?.frame===B&&V.html===s&&V.expectsReadySignal===Gt&&V.expectedReadySignal===Kt&&V.isCurrent()?V:null;$&&ne&&(en?.widget!==$||en.widgetId!==C||!h(en.input,ne))&&tn({widget:$,widgetId:C,input:ne}),$&&qt&&(Q?.widget!==$||Q.widgetId!==C||!h(Q.result,qt))&&dn({widget:$,widgetId:C,result:qt}),(0,Y.useEffect)(()=>{$&&$.frame.setWidgetData(Zt)},[$,Zt]),(0,Y.useEffect)(()=>{en?.widget.isCurrent()&&en.widget.frame.notifyMcpAppsToolInput({arguments:en.input})},[en]),(0,Y.useEffect)(()=>{Q?.widget.isCurrent()&&Q.widget.frame.notifyMcpAppsToolResult(Q.result)},[Q]),(0,Y.useEffect)(()=>{$&&Yt!=null&&$.frame.notifyMcpAppsToolCancelled({reason:Yt})},[$,Yt,C]),(0,Y.useEffect)(()=>{$&&$.frame.notifyMcpAppsHostContext({hostContext:zt()})},[$,zt,It]),(0,Y.useEffect)(()=>{if(B)return()=>{B.requestMcpAppsResourceTeardown({timeoutMs:500})}},[B]),(0,Y.useEffect)(()=>{$&&$.frame.setWidgetView({widgetId:C,displayMode:R,viewParams:ln({displayMode:R,viewParams:M,toolOutput:re??null}),isTombstone:ce})},[$,C,R,M,re,ce]),(0,Y.useEffect)(()=>{$&&$.frame.setAdditionalGlobals({additionalGlobals:{isSidebarOpen:Se??!1}})},[$,Se]),(0,Y.useEffect)(()=>{$&&$.frame.setAdditionalGlobals({additionalGlobals:{maxHeight:le,maxWidth:de}})},[$,le,de]),(0,Y.useEffect)(()=>{$&&$.frame.setTheme({theme:F})},[$,F]),(0,Y.useEffect)(()=>{$&&$.frame.setSafeArea({safeArea:_})},[$,_]);let fn=e===`skybridge`||l(`1610966033`),pn=L(e=>v(I.callMcp)(e)),mn=I.scanCard?JSON.stringify([`card-scan`,tt,C,w??null,s,Gt,Kt]):`default`,hn=(0,Y.useMemo)(()=>({frameKey:mn}),[mn]),gn=L(()=>({owner:hn,readyWidget:$,scanCard:I.scanCard})),_n=(0,Y.useMemo)(()=>async()=>{let e=gn();if(e.owner!==hn||!e.readyWidget?.isCurrent()||!e.scanCard)return{status:`unavailable`};let t=await e.scanCard(),n=gn();return n.owner===hn&&n.readyWidget===e.readyWidget&&e.readyWidget.isCurrent()?t:{status:`cancelled`}},[gn,hn]),vn=D?I.openPlaidLink??(e===`chatgpt`&&E===te.OPENAI&&T===`connectors://connector_693864f100e4819093e6ed9b651239f1`?Ke:void 0):void 0;return(0,X.jsxs)(X.Fragment,{children:[(0,X.jsx)(Ot,{frameComponent:Ee,title:ge,host:e,colorScheme:F,subdomain:j,features:At,api:{...I,callMcp:I.callMcp?pn:void 0,scanCard:I.scanCard?_n:void 0,notifyIntrinsicHeight:e=>I.notifyIntrinsicHeight?.(e),updateWidgetState:I.updateWidgetState?(e,t,n)=>I.updateWidgetState?.(C,t,fn?n:void 0):void 0,openPlaidLink:vn,downloadBlob:D&&E===te.OPENAI?({blob:e,name:t})=>{De(e,t)}:void 0,notifyAutofillCandidates:W?e=>{Ve&&(Le({appId:U,accountIdentity:tt,frame:B,html:s,widgetId:C}),Fe(e))}:void 0,notifyNavigation:e=>{Z(({trackWidgetNavigation:t})=>t(z,e)),I.notifyNavigation?.(e)},requestCheckout:I.requestCheckout?e=>(Z(({trackWidgetCheckoutSession:e})=>e(z)),I.requestCheckout?.(e)):void 0,requestDisplayMode:e=>{let{mode:t}=e;return t!==R&&Z(({trackWidgetDisplayMode:e})=>e(z,t)),I.requestDisplayMode?.(e)??{mode:t}},share:async e=>{let{url:t,title:n,text:r,files:i}=e;return await navigator.share({url:t,title:n,text:r,files:i})},openExternal:async e=>{Z(({trackWidgetLinkOut:e})=>e(z)),await I.openExternal?.(e)},sendInstrument:e=>{Z(({trackSandboxInstrument:t})=>t(e,z))},notifySecurityPolicyViolation:e=>{Z(({trackSecurityPolicyViolation:t})=>t({...z,violation:e}))}},iframeRef:i,ref:Ae,locale:ve},mn),vt&&dt&&(e===`skybridge`?(0,X.jsx)(wt,{appName:_t,user:dt,onAllow:()=>St(),onAlwaysAllow:rt?Et:void 0,isSavingGrant:ct.isPending,hasGrantError:Ue,onDecline:Dt,onDismiss:kt}):(0,X.jsx)(je,{for:Ct,withProps:{appName:_t,user:dt,onAllow:()=>St(),onAlwaysAllow:rt?Et:void 0,isSavingGrant:ct.isPending,hasGrantError:Ue,onDecline:Dt,onDismiss:kt},open:!0,onClose:kt}))]})},$=e=>{"use forget";let t=(0,tn.c)(11);if(!p(en)){let n;return t[0]===e?n=t[1]:(n=(0,X.jsx)(dn,{...e}),t[0]=e,t[1]=n),n}let n=e.widgetState??null,r=e.toolInput??null,i=e.toolOutput??null,a=e.toolResponseMetadata??null,o;t[2]===e?o=t[3]:(o=t=>(0,X.jsx)(dn,{...e},t),t[2]=e,t[3]=o);let s;return t[4]!==e.widgetId||t[5]!==n||t[6]!==r||t[7]!==i||t[8]!==a||t[9]!==o?(s=(0,X.jsx)(Gt,{widgetId:e.widgetId,widgetState:n,toolInput:r,toolOutput:i,toolResponseMetadata:a,children:o}),t[4]=e.widgetId,t[5]=n,t[6]=r,t[7]=i,t[8]=a,t[9]=o,t[10]=s):s=t[10],s}}));export{nt as a,yt as i,fn as n,st as o,vt as r,rt as s,$ as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/df9194ad-czdof2jzx6dr2vb4.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-bo7e0c29ngt4zgx0.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/30901919-e8h11sw136qen6v0.js", "assets/a05edf66-gqfpouxeybbsnkkp.js", "assets/conversation-small-ikg0dwuw782klweb.js", "assets/c470f5ab-ab47eubabs8jspdc.js", "assets/0e5afe53-esm68l11os61djoy.js", "assets/conversation-small-oilgsqfa.css", "assets/8742b478-dn4h2mddd9nbsw05.js", "assets/8d505c06-ifpsms1ym5okckbj.js", "assets/3e574439-bb1l9ylugse4n76k.js", "assets/c2675c8c-ejvs9hq3rwjwsbcv.js", "assets/82782bc9-fcii2id0x6lspwtj.js", "assets/8b34dbc2-dtawqv9t1aqckqj4.js", "assets/global-modals-lv5n3ujm.css", "assets/25a66342-fyxcour1v5qeyhn6.js", "assets/2ea88c7a-lxyla91xs6iv7odf.js", "assets/25a66342-j7cd8h2bqav7weve.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $0 as n,
+    C5 as r,
+    Cw as i,
+    D1 as a,
+    ER as o,
+    F7 as s,
+    Fot as c,
+    Gnt as l,
+    Hot as u,
+    Jnt as d,
+    Oz as f,
+    P5 as p,
+    R1 as m,
+    S2 as h,
+    S5 as g,
+    Tw as _,
+    Uot as v,
+    X0 as y,
+    X5 as b,
+    Xtt as x,
+    Y5 as ee,
+    Ytt as S,
+    Z0 as C,
+    Znt as w,
+    _nt as T,
+    _tt as E,
+    bnt as D,
+    dit as O,
+    dst as k,
+    fnt as A,
+    fst as j,
+    g8 as M,
+    gtt as te,
+    hnt as N,
+    iE as P,
+    int as ne,
+    kz as re,
+    mnt as ie,
+    n2 as ae,
+    oE as oe,
+    oq as se,
+    snt as ce,
+    sq as le,
+    uit as ue,
+    unt as de,
+    uq as fe,
+    vN as pe,
+    vR as F,
+    vnt as me,
+    w1 as he,
+    w8 as ge,
+    x1 as _e,
+    x2 as I,
+    yN as L,
+    z7 as ve
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+import {
+    Bn as R,
+    N as ye,
+    O as be,
+    Vn as xe,
+    cn as Se,
+    ln as Ce,
+    p as we,
+    s as Te,
+    wn as Ee
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Ajn as z,
+    DCn as B,
+    ECn as De,
+    Sjn as Oe,
+    d6 as ke,
+    h0t as Ae,
+    m0t as je,
+    u6 as V,
+    xjn as Me,
+    zWt as Ne
+} from "./conversation-small-ikg0dwuw782klweb.js";
+import {
+    Ic as Pe,
+    Kx as Fe,
+    Lc as Ie,
+    qx as Le
+} from "./30901919-e8h11sw136qen6v0.js";
+import {
+    n as Re,
+    r as ze
+} from "./2ea88c7a-lxyla91xs6iv7odf.js";
+import {
+    n as Be,
+    t as Ve
+} from "./8d846022-bvik3sltoydb2o43.js";
+import {
+    n as He,
+    t as Ue
+} from "./84983163-ffise5mey03qfr6b.js";
+import {
+    n as We,
+    o as H,
+    r as Ge
+} from "./7517017f-cnj2rxr4yngroauq.js";
+import {
+    a as Ke,
+    r as qe
+} from "./6601bf01-cb75jozqzlngul1j.js";
+import {
+    i as Je,
+    n as Ye,
+    t as Xe
+} from "./d86ca127-kooy2aoa63oybngm.js";
+
+function Ze(e) {
+    if (!e) return null;
+    let t = e.trim();
+    if (!t || t.includes(`\\`)) return null;
+    try {
+        return {
+            url: new URL(t)
+        }
+    } catch {
+        if (!/^[a-z][a-z0-9+.-]*:/.test(t)) try {
+            let e = t.startsWith(`//`) ? `https:${t}` : `https://${t}`;
+            return {
+                url: new URL(e)
+            }
+        } catch {
+            return null
+        }
+        return null
+    }
+}
+
+function U(e) {
+    let t = e.trim();
+    if (!t) return null;
+    let n = /^([a-z][a-z0-9+.-]*):$/i.exec(t);
+    if (n) return {
+        kind: `scheme`,
+        scheme: `${n[1].toLowerCase()}:`
+    };
+    let r = /^([a-z][a-z0-9+.-]*):\/\/$/i.exec(t);
+    if (r) return {
+        kind: `scheme`,
+        scheme: `${r[1].toLowerCase()}:`
+    };
+    let i = /^(?:([a-z][a-z0-9+.+-]*):\/\/)?(\*|\*\.[^/:]+|[^/:]+)(?::(\*|\d+))?(\/.*)?$/i.exec(t);
+    if (!i) return null;
+    let a = i[1] ? `${i[1].toLowerCase()}:` : void 0,
+        o = i[2],
+        s = i[3] ?? null,
+        c = i[4] ?? null,
+        l = o.startsWith(`*.`),
+        u = (l ? o.slice(2) : o).toLowerCase().replace(/\.$/, ``),
+        d = null,
+        f = !1;
+    return s !== null && (f = !0, d = s === `*` ? `*` : Number(s), d !== `*` && (!Number.isFinite(d) || d < 0)) ? null : {
+        kind: `host`,
+        scheme: a,
+        host: u,
+        wildcard: l,
+        portExplicit: f,
+        port: d,
+        path: c
+    }
+}
+
+function W(e) {
+    return e.toLowerCase().replace(/\.$/, ``)
+}
+
+function Qe(e, t) {
+    let n = W(e),
+        r = W(t);
+    return n === r || n.endsWith(`.` + r)
+}
+
+function $e(e, t, n) {
+    return n ? Qe(e, t) : W(e) === W(t)
+}
+
+function et(e, t) {
+    if (t.port === `*`) return !0;
+    let n = e.port ? Number(e.port) : ot[e.protocol] ?? null;
+    return t.portExplicit ? typeof t.port == `number` && n === t.port : n === (ot[e.protocol] ?? null)
+}
+
+function tt(e) {
+    let t = e.scheme ?? `https:`;
+    if (!at.has(t) || !e.host) return null;
+    let n = typeof e.port == `number` ? `:${e.port}` : ``,
+        r = e.path ?? ``;
+    try {
+        return new URL(`${t}//${e.host}${n}${r}`)
+    } catch {
+        return null
+    }
+}
+
+function nt(e) {
+    let t = Ze(e ?? void 0);
+    if (t && at.has(t.url.protocol) && !t.url.hostname.includes(`*`)) return t.url.toString();
+    if (!e) return null;
+    let n = U(e);
+    return !n || n.kind === `scheme` ? null : tt(n)?.toString() ?? null
+}
+
+function rt(e, t, n) {
+    let r = [];
+    t?.connectDomains?.length && r.push(...t.connectDomains);
+    let i = n?.trim();
+    return i && r.push(i), it(e, r)
+}
+
+function it(e, t) {
+    if (!e) return !1;
+    let n = Ze(e);
+    if (!n) return !1;
+    let r = n.url;
+    return r.username || r.password || !t?.length ? !1 : t.some(e => {
+        let t = U(e);
+        if (!t) return !1;
+        if (t.kind === `scheme`) return r.protocol === t.scheme;
+        if (t.scheme) return !(r.protocol !== t.scheme || !$e(r.hostname, t.host, t.wildcard) || !et(r, t));
+        {
+            let e = t.host;
+            return !!Qe(r.hostname, e)
+        }
+    })
+}
+var at, ot, st = e((() => {
+    at = new Set([`http:`, `https:`]), ot = {
+        "http:": 80,
+        "https:": 443,
+        "ws:": 80,
+        "wss:": 443
+    }
+}));
+
+function ct(e, t) {
+    if (!t) return e;
+    let n = e.startsWith(`http://`) || e.startsWith(`https://`) || /^[a-z][a-z0-9+.-]*:\/\//i.test(e),
+        r;
+    try {
+        r = new URL(e)
+    } catch {
+        return e
+    }
+    return !n || r.searchParams.get(`redirectUrl`) ? e : (r.searchParams.set(lt, t), r.toString())
+}
+var lt, ut = e((() => {
+    lt = `redirectUrl`
+}));
+
+function dt() {
+    let e = Math.floor(window.screenX + (window.outerWidth - ht) / 2),
+        t = Math.floor(window.screenY + (window.outerHeight - gt) / 2);
+    return [`popup=yes`, `width=${ht}`, `height=${gt}`, `left=${e}`, `top=${t}`, `noopener`, `noreferrer`].join(`,`)
+}
+async function ft(e, t) {
+    try {
+        return (await s.safePost(`/ecosystem/url_safe`, {
+            requestBody: {
+                url: e,
+                resolved_pineapple_uri: t
+            }
+        })).safe
+    } catch {
+        return !1
+    }
+}
+var pt, mt, ht, gt, _t, vt, yt = e((() => {
+        E(), n(), st(), ut(), D(), ve(), S(), C(), Ce(), pt = y(() => Se(() => import(`./df9194ad-czdof2jzx6dr2vb4.js`).then(e => e.ConfirmExternalLinkModal), __vite__mapDeps([0, 1, 2, 3, 4, 5]))), mt = y(() => Se(() => import(`./a05edf66-gqfpouxeybbsnkkp.js`).then(e => e.SafeLinkWarningModal), __vite__mapDeps([6, 1, 2, 3, 4, 7, 5, 8, 9, 10, 11]))), ht = 600, gt = 750, _t = (e, t, n = `tab`) => {
+            let r = ct(e, t);
+            if (N()) ae(pt, {
+                url: r
+            });
+            else {
+                let e = n === `popup` ? dt() : `noopener,noreferrer`;
+                window.open(r, `_blank`, e);
+                return
+            }
+        }, vt = async ({
+            href: e,
+            resolvedPineappleUri: t,
+            csp: n,
+            redirectDomains: r,
+            domain: i,
+            distributionChannel: a,
+            redirectUrl: o,
+            openMode: s,
+            attributionId: c,
+            conversationId: l,
+            messageId: u,
+            sectionLocation: d,
+            widgetName: f,
+            widgetSessionId: p
+        }) => {
+            if (!e) {
+                console.error(`No href provided to handleExternalLink`);
+                return
+            }
+            let m = a === te.OPENAI && s === `popup` ? `popup` : `tab`;
+            if (me.logEvent(`link_action`, {
+                    action: `click`,
+                    action_type: `open_external`,
+                    attribution_id: c,
+                    conversation_id: l,
+                    link_type: `widget`,
+                    message_id: u,
+                    section_location: d,
+                    url: e,
+                    domain: i,
+                    distribution_channel: a,
+                    open_mode: m,
+                    widget_name: f,
+                    widget_session_id: p
+                }), rt(e, n, i) || it(e, r)) {
+                _t(e, o, m);
+                return
+            }
+            if (a === te.OPENAI && await ft(e, t)) {
+                _t(e, null, m);
+                return
+            }
+            ae(mt, {
+                urls: e,
+                displayUrls: e
+            })
+        }
+    })),
+    bt, xt, St = e((() => {
+        M(), se(), S(), bt = () => {
+            let e = `unknown`;
+            return ie() ? e = `mobile` : de() ? e = `tablet` : ce() && (e = `desktop`), e
+        }, xt = e => {
+            let t = bt(),
+                n = `web`;
+            e === `skybridge` && (n = `native`);
+            let r = `unknown`;
+            return ne() ? r = `ios` : x() ? r = `android` : T() ? r = `windows` : A() && (r = `macos`), {
+                device: {
+                    type: t,
+                    platform: n,
+                    os: r
+                },
+                capabilities: {
+                    hover: g(le),
+                    touch: g(fe)
+                }
+            }
+        }
+    })),
+    Ct, wt, Tt = e((() => {
+        C(), Ce(), Ct = y(() => Se(() => import(`./8d505c06-ifpsms1ym5okckbj.js`).then(e => e.AutofillConsentDialogContent), __vite__mapDeps([12, 1, 2, 3, 4, 7, 5, 8, 9, 10]))), wt = y(() => Se(() => import(`./8d505c06-ifpsms1ym5okckbj.js`).then(e => e.AutofillConsentSheetContent), __vite__mapDeps([12, 1, 2, 3, 4, 7, 5, 8, 9, 10])))
+    }));
+
+function Et(e) {
+    "use forget";
+    let t = (0, kt.c)(28),
+        {
+            host: n,
+            features: i,
+            isInert: a,
+            title: o,
+            colorScheme: s,
+            ref: c,
+            subdomain: l,
+            iframeRef: u,
+            api: d,
+            locale: p
+        } = e,
+        m = n === void 0 ? `chatgpt` : n,
+        h = a !== void 0 && a,
+        [g] = (0, G.useState)(Dt),
+        _;
+    t[0] === g ? _ = t[1] : (_ = async (e, ...t) => {
+        let n = t;
+        return await r(() => !!g()), v(g()?.[e], `Method ${String(e)} not found`)(...n)
+    }, t[0] = g, t[1] = _);
+    let y = L(_),
+        b, x;
+    t[2] === y ? (b = t[3], x = t[4]) : (b = () => new Proxy({}, {
+        get: (e, t) => (...e) => y(t, ...e)
+    }), x = [y], t[2] = y, t[3] = b, t[4] = x), (0, G.useImperativeHandle)(c, b, x);
+    let ee = (0, G.useRef)(d),
+        S, C;
+    t[5] === d ? (S = t[6], C = t[7]) : (S = () => {
+        ee.current = d
+    }, C = [d], t[5] = d, t[6] = S, t[7] = C), (0, G.useEffect)(S, C);
+    let w;
+    t[8] === g ? w = t[9] : (w = e => e ? (Ue(e, new Proxy(ee.current, {
+        get: (e, t) => ee.current[t]
+    }), [`runUserCode`, `runWidgetCode`, `runComponent`]).then(e => {
+        g.set(e)
+    }), () => {
+        g.set(null)
+    }) : g.set(null), t[8] = g, t[9] = w);
+    let T = L(w),
+        E;
+    t[10] === l ? E = t[11] : (E = Nt(l), t[10] = l, t[11] = E);
+    let D = E,
+        O = `sandbox-${D}`,
+        k;
+    t[12] !== m || t[13] !== p ? (k = Mt(m, p, K), t[12] = m, t[13] = p, t[14] = k) : k = t[14];
+    let A = `${D}${k}`,
+        j = oe(T, u),
+        M;
+    t[15] === i ? M = t[16] : (M = i?.length ? jt(i) : void 0, t[15] = i, t[16] = M);
+    let te = i?.includes(`fullscreen`) ? !0 : void 0,
+        N;
+    t[17] === s ? N = t[18] : (N = s ? {
+        colorScheme: s
+    } : void 0, t[17] = s, t[18] = N);
+    let P;
+    return t[19] !== h || t[20] !== O || t[21] !== A || t[22] !== j || t[23] !== M || t[24] !== te || t[25] !== N || t[26] !== o ? (P = (0, At.jsx)(f, {
+        children: (0, At.jsx)(`iframe`, {
+            title: o,
+            inert: h,
+            src: A,
+            ref: j,
+            sandbox: `allow-scripts allow-same-origin allow-forms`,
+            allow: M,
+            allowFullScreen: te,
+            className: `h-full w-full max-w-full`,
+            style: N
+        }, O)
+    }), t[19] = h, t[20] = O, t[21] = A, t[22] = j, t[23] = M, t[24] = te, t[25] = N, t[26] = o, t[27] = P) : P = t[27], P
+}
+
+function Dt() {
+    return ge(null)
+}
+
+function Ot(e) {
+    "use forget";
+    let t = (0, kt.c)(8),
+        n, r;
+    if (t[0] === e ? (n = t[1], r = t[2]) : ({
+            frameComponent: n,
+            ...r
+        } = e, t[0] = e, t[1] = n, t[2] = r), n) {
+        let e;
+        return t[3] !== n || t[4] !== r ? (e = (0, At.jsx)(n, {
+            ...r
+        }), t[3] = n, t[4] = r, t[5] = e) : e = t[5], e
+    }
+    let i;
+    return t[6] === r ? i = t[7] : (i = (0, At.jsx)(Et, {
+        ...r
+    }), t[6] = r, t[7] = i), i
+}
+var kt, G, At, K, jt, Mt, Nt, Pt = e((() => {
+    kt = Ee(), H(), He(), St(), M(), re(), u(), P(), pe(), G = t(xe()), At = R(), K = !1, jt = e => e.concat().sort().map(e => `${e} *`).join(`; `), Mt = (e, t, n) => `?` + [``, `app=${e}`, e === `chatgpt` ? `darkModeType=increased` : ``, `locale=${t}`, `deviceType=${xt(e).device.type}`, n ? `unsafeSkipTargetOriginCheck=true` : ``].filter(Boolean).join(`&`), Nt = e => {
+        if (e) {
+            let t = new URL(We);
+            return t.hostname = `${e}.${t.hostname}`, t.protocol = Ge, t.origin
+        }
+        return We
+    }
+}));
+
+function Ft(e) {
+    return e + 1
+}
+var It, q, J, Lt, Rt, zt, Bt, Vt, Ht, Ut, Wt, Gt, Kt = e((() => {
+    It = Ee(), Pe(), Fe(), _(), b(), q = t(xe()), J = R(), Lt = [`toolInput`, `toolOutput`, `toolResponseMetadata`, `widgetState`], Rt = `text-xs uppercase tracking-wide text-token-text-tertiary`, zt = `max-h-[70vh] overflow-auto whitespace-pre-wrap break-words rounded-md border border-token-border-light bg-token-main-surface-secondary p-3 font-mono text-xs leading-relaxed`, Bt = `pointer-events-none absolute inset-0 z-20 border border-token-text-primary`, Vt = e => Lt.find(t => e[t] != null) ?? `toolInput`, Ht = e => {
+        if (e == null) return `null`;
+        let t = new WeakSet;
+        try {
+            return JSON.stringify(e, (e, n) => {
+                if (typeof n == `bigint`) return `${n}n`;
+                if (n instanceof Error) return {
+                    name: n.name,
+                    message: n.message,
+                    stack: n.stack
+                };
+                if (typeof n == `function`) return `[function ${n.name||`anonymous`}]`;
+                if (typeof n == `object` && n) {
+                    if (t.has(n)) return `[Circular]`;
+                    t.add(n)
+                }
+                return n
+            }, 2) ?? String(e)
+        } catch {
+            return String(e)
+        }
+    }, Ut = e => {
+        "use forget";
+        let t = (0, It.c)(6),
+            {
+                isActive: n,
+                label: r,
+                onClick: i
+            } = e,
+            a = n ? `bg-token-text-primary text-token-bg-primary` : `bg-token-main-surface-secondary text-token-text-secondary hover:bg-token-bg-secondary`,
+            o;
+        t[0] === a ? o = t[1] : (o = ee(`rounded-full px-3 py-1.5 text-xs font-medium transition-colors`, a), t[0] = a, t[1] = o);
+        let s;
+        return t[2] !== r || t[3] !== i || t[4] !== o ? (s = (0, J.jsx)(`button`, {
+            type: `button`,
+            className: o,
+            onClick: i,
+            children: r
+        }), t[2] = r, t[3] = i, t[4] = o, t[5] = s) : s = t[5], s
+    }, Wt = e => {
+        "use forget";
+        let t = (0, It.c)(22),
+            {
+                isOpen: n,
+                widgetId: r,
+                selectedPanel: a,
+                values: o,
+                onClose: s,
+                onSelectPanel: c
+            } = e,
+            l = o[a],
+            u;
+        t[0] === l ? u = t[1] : (u = Ht(l), t[0] = l, t[1] = u);
+        let d = u,
+            f = `Widget ID: ${r}`,
+            p;
+        t[2] !== c || t[3] !== a ? (p = Lt.map(e => (0, J.jsx)(Ut, {
+            isActive: e === a,
+            label: e,
+            onClick: () => c(e)
+        }, e)), t[2] = c, t[3] = a, t[4] = p) : p = t[4];
+        let m;
+        t[5] === p ? m = t[6] : (m = (0, J.jsx)(`div`, {
+            className: `flex flex-wrap gap-2`,
+            children: p
+        }), t[5] = p, t[6] = m);
+        let h;
+        t[7] === a ? h = t[8] : (h = (0, J.jsx)(`div`, {
+            className: Rt,
+            children: a
+        }), t[7] = a, t[8] = h);
+        let g;
+        t[9] === d ? g = t[10] : (g = (0, J.jsx)(`pre`, {
+            className: zt,
+            children: d
+        }), t[9] = d, t[10] = g);
+        let _;
+        t[11] !== h || t[12] !== g ? (_ = (0, J.jsxs)(`div`, {
+            className: `flex min-h-0 flex-col gap-2`,
+            children: [h, g]
+        }), t[11] = h, t[12] = g, t[13] = _) : _ = t[13];
+        let v;
+        t[14] !== m || t[15] !== _ ? (v = (0, J.jsxs)(`div`, {
+            className: `flex flex-col gap-4`,
+            children: [m, _]
+        }), t[14] = m, t[15] = _, t[16] = v) : v = t[16];
+        let y;
+        return t[17] !== n || t[18] !== s || t[19] !== f || t[20] !== v ? (y = (0, J.jsx)(i, {
+            isOpen: n,
+            onClose: s,
+            showCloseButton: !0,
+            size: `xlarge`,
+            title: `Widget debug data`,
+            description: f,
+            testId: `modal-ecosystem-app-debug-inspector`,
+            children: v
+        }), t[17] = n, t[18] = s, t[19] = f, t[20] = v, t[21] = y) : y = t[21], y
+    }, Gt = e => {
+        "use forget";
+        let t = (0, It.c)(30),
+            {
+                widgetId: n,
+                widgetState: r,
+                toolInput: i,
+                toolOutput: a,
+                toolResponseMetadata: o,
+                children: s
+            } = e,
+            [c, l] = (0, q.useState)(0),
+            [u, d] = (0, q.useState)(!1),
+            [f, p] = (0, q.useState)(!1),
+            m;
+        t[0] !== i || t[1] !== a || t[2] !== o || t[3] !== r ? (m = {
+            toolInput: i,
+            toolOutput: a,
+            toolResponseMetadata: o,
+            widgetState: r
+        }, t[0] = i, t[1] = a, t[2] = o, t[3] = r, t[4] = m) : m = t[4];
+        let h = m,
+            g;
+        t[5] === h ? g = t[6] : (g = () => Vt(h), t[5] = h, t[6] = g);
+        let [_, v] = (0, q.useState)(g), y, b;
+        t[7] === h ? (y = t[8], b = t[9]) : (y = () => {
+            v(e => h[e] == null ? Vt(h) : e)
+        }, b = [h], t[7] = h, t[8] = y, t[9] = b), (0, q.useEffect)(y, b);
+        let x, S;
+        t[10] === f ? (x = t[11], S = t[12]) : (x = () => {
+            if (!f) return;
+            let e = window.setTimeout(() => {
+                p(!1)
+            }, 2e3);
+            return () => {
+                window.clearTimeout(e)
+            }
+        }, S = [f], t[10] = f, t[11] = x, t[12] = S), (0, q.useEffect)(x, S);
+        let C;
+        t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, J.jsx)(`div`, {
+            className: Bt
+        }), t[13] = C) : C = t[13];
+        let w;
+        t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (w = ee(`border-token-text-primary bg-token-bg-primary text-token-text-primary hover:bg-token-bg-secondary flex h-6 w-6 items-center justify-center border-s border-t border-b p-0 transition-colors`), t[14] = w) : w = t[14];
+        let T;
+        t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, J.jsx)(`button`, {
+            type: `button`,
+            className: w,
+            "aria-label": `Reload widget`,
+            title: `Reload widget`,
+            onClick: () => l(Ft),
+            children: (0, J.jsx)(Le, {
+                className: `icon-sm`
+            })
+        }), t[15] = T) : T = t[15];
+        let E;
+        t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (E = ee(`border-token-text-primary bg-token-bg-primary text-token-text-primary hover:bg-token-bg-secondary flex h-6 w-6 items-center justify-center border p-0 transition-colors`), t[16] = E) : E = t[16];
+        let D;
+        t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (D = (0, J.jsxs)(`div`, {
+            className: `absolute end-0 top-0 z-30 flex`,
+            children: [T, (0, J.jsx)(`button`, {
+                type: `button`,
+                className: E,
+                "aria-label": `Inspect widget data`,
+                title: `Inspect widget data`,
+                onClick: () => d(!0),
+                children: (0, J.jsx)(Ie, {
+                    className: `icon-sm`
+                })
+            })]
+        }), t[17] = D) : D = t[17];
+        let O;
+        t[18] !== s || t[19] !== c ? (O = s(c), t[18] = s, t[19] = c, t[20] = O) : O = t[20];
+        let k;
+        t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (k = () => d(!1), t[21] = k) : k = t[21];
+        let A;
+        t[22] !== h || t[23] !== u || t[24] !== _ || t[25] !== n ? (A = (0, J.jsx)(Wt, {
+            isOpen: u,
+            widgetId: n,
+            selectedPanel: _,
+            values: h,
+            onClose: k,
+            onSelectPanel: v
+        }), t[22] = h, t[23] = u, t[24] = _, t[25] = n, t[26] = A) : A = t[26];
+        let j;
+        return t[27] !== O || t[28] !== A ? (j = (0, J.jsxs)(`div`, {
+            className: `relative h-full w-full max-w-full`,
+            children: [C, D, O, A]
+        }), t[27] = O, t[28] = A, t[29] = j) : j = t[29], j
+    }
+}));
+
+function qt(e, t, n) {
+    let r = window.getComputedStyle(e).getPropertyValue(t).trim();
+    if (!r) return ``;
+    if (!/(?:var|light-dark|alpha)\(/.test(r)) return r;
+    e.style.setProperty(n, `var(${t})`);
+    let i = window.getComputedStyle(e).getPropertyValue(n).trim();
+    return e.style.removeProperty(n), i
+}
+
+function Jt(e) {
+    if (typeof document > `u` || typeof window > `u`) return;
+    let t = Object.create(null),
+        n = document.createElement(`span`);
+    n.className = `puik-root`, n.dataset.theme = e, n.hidden = !0, (document.body ?? document.documentElement).appendChild(n);
+    try {
+        for (let [e, [r, i]] of Object.entries(Yt)) {
+            let a = qt(n, r, i);
+            a && (t[e] = a)
+        }
+    } finally {
+        n.remove()
+    }
+    if (Object.keys(t).length !== 0) return {
+        variables: t
+    }
+}
+var Yt, Xt = e((() => {
+        Yt = {
+            "--color-background-primary": [`--color-surface`, `background-color`],
+            "--color-background-secondary": [`--color-surface-secondary`, `background-color`],
+            "--color-background-tertiary": [`--color-surface-tertiary`, `background-color`],
+            "--color-background-inverse": [`--color-background-primary-solid`, `background-color`],
+            "--color-background-ghost": [`--alpha-0`, `background-color`],
+            "--color-background-info": [`--color-background-info-surface`, `background-color`],
+            "--color-background-danger": [`--color-background-danger-surface`, `background-color`],
+            "--color-background-success": [`--color-background-success-surface`, `background-color`],
+            "--color-background-warning": [`--color-background-warning-surface`, `background-color`],
+            "--color-background-disabled": [`--color-background-disabled`, `background-color`],
+            "--color-text-primary": [`--color-text-primary`, `color`],
+            "--color-text-secondary": [`--color-text-secondary`, `color`],
+            "--color-text-tertiary": [`--color-text-tertiary`, `color`],
+            "--color-text-inverse": [`--color-text-inverse`, `color`],
+            "--color-text-ghost": [`--color-text-primary-ghost`, `color`],
+            "--color-text-info": [`--color-text-info`, `color`],
+            "--color-text-danger": [`--color-text-danger`, `color`],
+            "--color-text-success": [`--color-text-success`, `color`],
+            "--color-text-warning": [`--color-text-warning`, `color`],
+            "--color-text-disabled": [`--color-text-disabled`, `color`],
+            "--color-border-primary": [`--color-border`, `border-color`],
+            "--color-border-secondary": [`--color-border-subtle`, `border-color`],
+            "--color-border-tertiary": [`--color-border-strong`, `border-color`],
+            "--color-border-inverse": [`--color-text-inverse`, `border-color`],
+            "--color-border-ghost": [`--alpha-0`, `border-color`],
+            "--color-border-info": [`--color-border-info-surface`, `border-color`],
+            "--color-border-danger": [`--color-border-danger-surface`, `border-color`],
+            "--color-border-success": [`--color-border-success-surface`, `border-color`],
+            "--color-border-warning": [`--color-border-warning-surface`, `border-color`],
+            "--color-border-disabled": [`--color-border-disabled`, `border-color`],
+            "--color-ring-primary": [`--color-ring-primary`, `outline-color`],
+            "--color-ring-secondary": [`--color-ring-secondary`, `outline-color`],
+            "--color-ring-inverse": [`--color-ring-primary-solid`, `outline-color`],
+            "--color-ring-info": [`--color-ring-info`, `outline-color`],
+            "--color-ring-danger": [`--color-ring-danger`, `outline-color`],
+            "--color-ring-success": [`--color-ring-success`, `outline-color`],
+            "--color-ring-warning": [`--color-ring-warning`, `outline-color`],
+            "--font-sans": [`--font-sans`, `font-family`],
+            "--font-mono": [`--font-mono`, `font-family`],
+            "--font-weight-normal": [`--font-weight-normal`, `font-weight`],
+            "--font-weight-medium": [`--font-weight-medium`, `font-weight`],
+            "--font-weight-semibold": [`--font-weight-semibold`, `font-weight`],
+            "--font-weight-bold": [`--font-weight-bold`, `font-weight`],
+            "--font-text-xs-size": [`--font-text-xs-size`, `font-size`],
+            "--font-text-sm-size": [`--font-text-sm-size`, `font-size`],
+            "--font-text-md-size": [`--font-text-md-size`, `font-size`],
+            "--font-text-lg-size": [`--font-text-lg-size`, `font-size`],
+            "--font-heading-xs-size": [`--font-heading-xs-size`, `font-size`],
+            "--font-heading-sm-size": [`--font-heading-sm-size`, `font-size`],
+            "--font-heading-md-size": [`--font-heading-md-size`, `font-size`],
+            "--font-heading-lg-size": [`--font-heading-lg-size`, `font-size`],
+            "--font-heading-xl-size": [`--font-heading-xl-size`, `font-size`],
+            "--font-heading-2xl-size": [`--font-heading-2xl-size`, `font-size`],
+            "--font-heading-3xl-size": [`--font-heading-3xl-size`, `font-size`],
+            "--font-text-xs-line-height": [`--font-text-xs-line-height`, `line-height`],
+            "--font-text-sm-line-height": [`--font-text-sm-line-height`, `line-height`],
+            "--font-text-md-line-height": [`--font-text-md-line-height`, `line-height`],
+            "--font-text-lg-line-height": [`--font-text-lg-line-height`, `line-height`],
+            "--font-heading-xs-line-height": [`--font-heading-xs-line-height`, `line-height`],
+            "--font-heading-sm-line-height": [`--font-heading-sm-line-height`, `line-height`],
+            "--font-heading-md-line-height": [`--font-heading-md-line-height`, `line-height`],
+            "--font-heading-lg-line-height": [`--font-heading-lg-line-height`, `line-height`],
+            "--font-heading-xl-line-height": [`--font-heading-xl-line-height`, `line-height`],
+            "--font-heading-2xl-line-height": [`--font-heading-2xl-line-height`, `line-height`],
+            "--font-heading-3xl-line-height": [`--font-heading-3xl-line-height`, `line-height`],
+            "--border-radius-xs": [`--radius-xs`, `border-radius`],
+            "--border-radius-sm": [`--radius-sm`, `border-radius`],
+            "--border-radius-md": [`--radius-md`, `border-radius`],
+            "--border-radius-lg": [`--radius-lg`, `border-radius`],
+            "--border-radius-xl": [`--radius-xl`, `border-radius`],
+            "--border-radius-full": [`--radius-full`, `border-radius`],
+            "--border-width-regular": [`--hairline`, `border-width`],
+            "--shadow-hairline": [`--shadow-hairline`, `box-shadow`],
+            "--shadow-sm": [`--shadow-100`, `box-shadow`],
+            "--shadow-md": [`--shadow-200`, `box-shadow`],
+            "--shadow-lg": [`--shadow-300`, `box-shadow`]
+        }
+    })),
+    Zt, Qt, $t = e((() => {
+        Zt = e => {
+            if (!e) return [];
+            let t = [];
+            return e.camera && t.push(`camera`), e.microphone && t.push(`microphone`), e.geolocation && t.push(`geolocation`), e.fullscreen && t.push(`fullscreen`), e.clipboardWrite && t.push(`clipboard-write`), t
+        }, Qt = (e, t) => {
+            let n = Zt(t);
+            if (!n.length) return e;
+            let r = new Set(e ?? []);
+            for (let e of n) r.add(e);
+            return Array.from(r)
+        }
+    }));
+
+function en() {
+    return ke()
+}
+var tn, Y, X, Z, Q, nn, rn, an, on, sn, cn, ln, un, dn, $, fn = e((() => {
+    tn = Ee(), E(), Ne(), Ae(), V(), St(), Tt(), Pt(), Kt(), Xt(), qe(), $t(), Ye(), M(), m(), F(), O(), D(), B(), u(), w(), P(), pe(), z(), Te(), Ve(), I(), k(), Y = t(xe()), X = R(), Ce(), Z = e => Se(() => import(`./3e574439-bb1l9ylugse4n76k.js`).then(e => (e.n(), e.l)).then(e), __vite__mapDeps([13, 1, 2, 3, 4, 7, 5, 8, 9, 10, 14, 15, 16, 17, 18, 19, 20])), Q = e => typeof e == `object` && !!e, nn = e => {
+        if (!e) return {};
+        let t = {},
+            [n, ...r] = (e.name ?? ``).trim().split(/\s+/);
+        return n && (t.name = e.name, t[`given-name`] = n, r.length > 0 && (t[`family-name`] = r.join(` `))), e.email && (t.email = e.email), e.phone_number && (t.tel = e.phone_number), t
+    }, rn = e => {
+        if (!e) return null;
+        if (!e.includes(`://`)) return e;
+        try {
+            return new URL(e).hostname || null
+        } catch {
+            return null
+        }
+    }, an = e => Object.values(d(`3726720227`).value).some(t => typeof t == `string` && rn(t) === e), on = e => {
+        if (!e) return null;
+        try {
+            return j(e).sub ?? null
+        } catch {
+            return null
+        }
+    }, sn = e => {
+        if (!e || !Q(e)) return null;
+        let t = e.status;
+        return (e.cancelled === !0 || e.is_cancelled === !0 || t === `cancelled`) && typeof e.reason == `string` ? e.reason : null
+    }, cn = (e, t) => {
+        if (sn(e)) return null;
+        for (let t of [e, e?.call_tool_result, e?.mcp_tool_result, e?.mcpToolResult]) {
+            if (!Q(t)) continue;
+            let e = Be(t);
+            if (e) return e
+        }
+        if (!Q(t)) return null;
+        let n = typeof t.result == `string` ? t.result : null,
+            r = n || `[structured content]`;
+        if (!n) try {
+            r = JSON.stringify(t)
+        } catch {}
+        return Be({
+            content: [{
+                type: `text`,
+                text: r
+            }],
+            structuredContent: t,
+            isError: typeof t.isError == `boolean` ? t.isError : void 0,
+            _meta: Q(t._meta) ? t._meta : e ?? void 0
+        })
+    }, ln = ({
+        displayMode: e,
+        viewParams: t,
+        toolOutput: n
+    }) => {
+        if (e === `modal`) return t ?? null;
+        let r = Q(n) ? n : null,
+            i = Q(t) ? t : null;
+        return !r && !i ? null : {
+            ...r ?? {},
+            ...i ?? {}
+        }
+    }, un = {
+        insets: {
+            top: 0,
+            bottom: 0,
+            left: 0,
+            right: 0
+        }
+    }, dn = ({
+        host: e,
+        mcpApps: t,
+        accountId: n,
+        ref: r,
+        iframeRef: i,
+        html: s,
+        measureWidth: u,
+        expectReadySignal: d,
+        expectedReadySignal: f,
+        features: m,
+        permissions: g,
+        safeArea: _ = un,
+        attributionId: y,
+        appDisplayName: b,
+        conversationId: x,
+        appPackageName: ee,
+        supportsOAuthCompletion: S,
+        widgetId: C,
+        widgetSessionId: w,
+        widgetParent: T,
+        widgetDistributionChannel: E,
+        allowPrivilegedActions: D = !0,
+        suggestionMessageId: O,
+        widgetType: k,
+        csp: A,
+        subdomain: j,
+        viewParams: M,
+        widgetState: N = null,
+        deepLink: P,
+        toolInput: ne = null,
+        toolOutput: re = null,
+        toolResponseMetadata: ie = null,
+        toolInfo: ae = null,
+        subjectId: se = null,
+        isTombstone: ce = !1,
+        maxHeight: le,
+        maxWidth: de,
+        containerHeight: fe,
+        containerWidth: pe,
+        theme: F,
+        title: ge,
+        api: I,
+        locale: ve,
+        displayMode: R = `inline`,
+        availableDisplayModes: xe,
+        isSidebarOpen: Se,
+        onReady: Ce,
+        onError: Te,
+        frameComponent: Ee
+    }) => {
+        "use no forget";
+        let z = (0, Y.useMemo)(() => ({
+                attribution_id: y ?? T ?? ``,
+                name: k,
+                conversation_id: x ?? null,
+                message_id: C || null,
+                suggestion_message_id: O ?? null,
+                distribution_channel: E,
+                host: e
+            }), [e, E, y, T, k, x, C, O]),
+            [B, ke] = (0, Y.useState)(null),
+            Ae = oe(ke, r),
+            [V, Ne] = (0, Y.useState)(null),
+            [Pe, Fe] = (0, Y.useState)([]),
+            [Ie, Le] = (0, Y.useState)(null),
+            Be = Pe ?? [],
+            Ve = Pe != null,
+            [He] = (0, Y.useState)(() => new WeakMap),
+            [Ue, We] = (0, Y.useState)(!1),
+            H = e === `skybridge`,
+            {
+                user: Ge = null,
+                accessToken: qe
+            } = c() ?? {},
+            Ye = H ? ue(qe) : null,
+            Ze = H ? on(qe) : null,
+            U = rn(y ?? T),
+            W = D && (H || Ge != null) && U != null && an(U),
+            Qe = W && l(`1850361504`),
+            $e = p(() => Qe ? H ? n == null ? null : a(_e().data, n) : he() : null),
+            et = $e?.normalizedAccountUserId,
+            tt = H ? `${n??``}:${Ze??``}` : et ?? Ge?.id,
+            nt = n === $e?.id && Ze != null && (Ye == null || Ye === n),
+            rt = Qe && $e != null && et != null && (!H || nt),
+            {
+                data: it,
+                isLoading: at
+            } = be({
+                ...o,
+                queryKey: H ? [...o.queryKey, `skybridge`, n ?? ``, Ze ?? ``] : o.queryKey,
+                enabled: H && W
+            }),
+            ot = be({
+                ...Je(et),
+                enabled: rt
+            }),
+            st = ye(),
+            ct = we({
+                mutationFn: ({
+                    app_uri: e,
+                    provider_name: t
+                }) => Xe({
+                    app_uri: e,
+                    provider_name: t
+                }),
+                onSuccess: (e, {
+                    accountUserId: t
+                }) => st.setQueryData(Je(t).queryKey, (t = []) => [...t.filter(({
+                    app_uri: t
+                }) => t !== e.app_uri), e])
+            }),
+            lt = rt && ot.data?.some(({
+                app_uri: e
+            }) => rn(e) === U) === !0,
+            ut = H ? it ?? null : Ge,
+            dt = ut ? {
+                name: ut.name,
+                email: ut.email,
+                phone_number: ut.phone_number
+            } : null,
+            ft = nn(dt),
+            pt = Ie != null && Ie.appId === U && Ie.accountIdentity === tt && Ie.frame === B && Ie.html === s && Ie.widgetId === C && Be.some(e => !!ft[e.fieldType]),
+            mt = H && at || rt && ot.isLoading,
+            ht = Ve && pt && !mt,
+            gt = ht && lt && !ct.isPending,
+            _t = b ?? ge ?? k ?? U ?? ``,
+            vt = W && ht && !lt && dt != null,
+            yt = L(t => {
+                U != null && me.logStructuredEvent(`ChatgptAppAutofillEvent`, {
+                    action: t,
+                    appId: U,
+                    surface: e === `skybridge` ? Oe.CHATGPT_APP_AUTOFILL_SURFACE_SKYBRIDGE : Oe.CHATGPT_APP_AUTOFILL_SURFACE_WEB,
+                    alwaysAllowAvailable: rt
+                })
+            }),
+            bt = L(e => {
+                Z(({
+                    trackAutofillConsent: t
+                }) => t(z, e, U, Be))
+            });
+        (0, Y.useEffect)(() => {
+            if (!vt || !V || He.get(V)?.has(C)) return;
+            let e = He.get(V) ?? new Set;
+            e.add(C), He.set(V, e), bt(`shown`), yt(Me.CHATGPT_APP_AUTOFILL_ACTION_CONSENT_SHOWN)
+        }, [He, vt, yt, V, bt, C]);
+        let St = L((e = Me.CHATGPT_APP_AUTOFILL_ACTION_ALLOW_ONCE) => {
+                if (Ve) {
+                    e !== Me.CHATGPT_APP_AUTOFILL_ACTION_AUTO_APPLIED && bt(`accepted`);
+                    for (let e of Be) {
+                        let t = ft[e.fieldType];
+                        t && B?.applyAutofillCandidate({
+                            id: e.id,
+                            value: t
+                        })
+                    }
+                    Fe(null), yt(e)
+                }
+            }),
+            Tt = L(e => V?.isCurrent() === !0 && e.appId === U && e.accountUserId === et && e.frame === B && e.html === s && e.widgetId === C && e.candidates === Be && Ve),
+            Et = L(async () => {
+                if (!U || !et) return;
+                let e = {
+                    appId: U,
+                    accountUserId: et,
+                    frame: B,
+                    html: s,
+                    widgetId: C,
+                    candidates: Be
+                };
+                We(!1);
+                try {
+                    await ct.mutateAsync({
+                        app_uri: U,
+                        provider_name: _t,
+                        accountUserId: et
+                    }), Tt(e) && St(Me.CHATGPT_APP_AUTOFILL_ACTION_ALWAYS_ALLOW)
+                } catch {
+                    Tt(e) && (We(!0), yt(Me.CHATGPT_APP_AUTOFILL_ACTION_GRANT_SAVE_FAILED))
+                }
+            }),
+            Dt = L(() => {
+                Ve && bt(`declined`), Fe(null), yt(Me.CHATGPT_APP_AUTOFILL_ACTION_DENIED)
+            }),
+            kt = L(() => {
+                Ve && bt(`declined`), Fe(null), yt(Me.CHATGPT_APP_AUTOFILL_ACTION_DISMISSED)
+            });
+        (0, Y.useEffect)(() => {
+            gt && St(Me.CHATGPT_APP_AUTOFILL_ACTION_AUTO_APPLIED)
+        }, [St, gt]);
+        let G = R === `fullscreen` ? `fullscreen` : R === `pip` ? `pip` : `inline`,
+            At = (0, Y.useMemo)(() => Qt(m, g), [m, g]),
+            K = (0, Y.useMemo)(() => xt(e), [e]),
+            jt = K.device.type === `mobile` || K.device.type === `tablet` ? `mobile` : K.device.type === `desktop` ? `desktop` : `web`,
+            Mt = (0, Y.useMemo)(() => {
+                let e = {};
+                return G === `fullscreen` ? typeof window < `u` && (e.width = window.innerWidth, e.height = window.innerHeight) : (fe == null ? le != null && (e.maxHeight = le) : e.height = fe, pe == null ? de != null && (e.maxWidth = de) : e.width = pe), Object.keys(e).length > 0 ? e : void 0
+            }, [G, fe, pe, le, de]),
+            Nt = (0, Y.useMemo)(() => {
+                if (!(typeof Intl > `u`)) return Intl.DateTimeFormat().resolvedOptions().timeZone
+            }, []),
+            Pt = D ? t?.hostContext[`openai/modelContext`] : void 0,
+            Ft = D ? t?.hostContext[`openai/chat`] : void 0,
+            It = (0, Y.useMemo)(() => {
+                let t = e === `skybridge` ? (xe ?? [`inline`, `fullscreen`]).filter(e => e === `inline` || e === `fullscreen`) : [`inline`, `fullscreen`, `pip`];
+                (e !== `skybridge` || G !== `pip`) && !t.includes(G) && t.push(G);
+                let n = {
+                    theme: F,
+                    displayMode: G,
+                    availableDisplayModes: t,
+                    containerDimensions: Mt,
+                    locale: ve,
+                    safeAreaInsets: _.insets,
+                    userAgent: `chatgpt`,
+                    platform: jt,
+                    deviceCapabilities: {
+                        touch: K.capabilities.touch,
+                        hover: K.capabilities.hover
+                    }
+                };
+                return ae && (n.toolInfo = ae), Nt && (n.timeZone = Nt), P !== void 0 && (n[`openai/deepLink`] = P), Pt !== void 0 && (n[`openai/modelContext`] = Pt), Ft !== void 0 && (n[`openai/chat`] = Ft), n
+            }, [Ft, Mt, P, ve, G, Pt, e, xe, jt, _.insets, F, Nt, ae, K.capabilities.hover, K.capabilities.touch]),
+            q = (0, Y.useMemo)(() => {
+                if (!m || m.length === 0) return;
+                let e = {},
+                    t = new Set(m);
+                return t.has(`camera`) && (e.camera = {}), t.has(`microphone`) && (e.microphone = {}), t.has(`geolocation`) && (e.geolocation = {}), t.has(`clipboard-write`) && (e.clipboardWrite = {}), Object.keys(e).length > 0 ? e : void 0
+            }, [m]),
+            J = (0, Y.useMemo)(() => {
+                if (!A) return;
+                let e = {};
+                return A.connectDomains && A.connectDomains.length > 0 && (e.connectDomains = A.connectDomains), A.resourceDomains && A.resourceDomains.length > 0 && (e.resourceDomains = A.resourceDomains), A.frameDomains && A.frameDomains.length > 0 && (e.frameDomains = A.frameDomains), Object.keys(e).length > 0 ? e : void 0
+            }, [A]),
+            Lt = (0, Y.useMemo)(() => {
+                let e = {
+                    openLinks: {},
+                    logging: {},
+                    ...D ? {
+                        serverTools: {},
+                        serverResources: {},
+                        ...t?.forwardedRequestMethods.includes(`ui/message`) ? {} : {
+                            message: {}
+                        },
+                        ...t?.forwardedRequestMethods.includes(`ui/update-model-context`) ? {} : {
+                            updateModelContext: {}
+                        },
+                        ...t?.hostCapabilities
+                    } : {}
+                };
+                return (q || J) && (e.sandbox = {}, q && (e.sandbox.permissions = q), J && (e.sandbox.csp = J)), e
+            }, [D, t?.forwardedRequestMethods, t?.hostCapabilities, J, q]),
+            [Rt] = (0, Y.useState)(() => new Map),
+            zt = L(() => {
+                let e = Rt.get(F);
+                return e || (e = Jt(F), e && Rt.set(F, e)), e ? {
+                    ...It,
+                    styles: e
+                } : It
+            }),
+            Bt = L(() => {
+                Te?.()
+            }),
+            Vt = L(e => {
+                Z(({
+                    trackFatalWidgetError: t
+                }) => t(z, e)), Bt()
+            }),
+            Ht = L(() => {
+                Ce?.()
+            }),
+            Ut = L(() => {
+                let e = z,
+                    t = R,
+                    n = d === !0,
+                    r = performance.now(),
+                    i = !1,
+                    a = a => {
+                        if (i) return;
+                        i = !0, clearTimeout(o);
+                        let s = performance.now() - r;
+                        Z(({
+                            trackWidgetLoadOutcome: r
+                        }) => r(e, {
+                            outcome: a,
+                            displayMode: t,
+                            durationMs: s,
+                            expectsReadySignal: n
+                        }))
+                    },
+                    o = setTimeout(() => a(`timeout`), 3e4);
+                return a
+            }),
+            Wt = L(async (e, n, r, i) => {
+                Ne(null), Fe([]), Le(null), We(!1);
+                let a = e.runWidgetCode({
+                        html: n,
+                        measureWidth: u,
+                        expectReadySignal: d,
+                        expectedReadySignal: f,
+                        isFirstParty: D && E === te.OPENAI,
+                        widgetId: C,
+                        ...W ? {
+                            enableAutofill: !0
+                        } : {},
+                        viewParams: ln({
+                            displayMode: R,
+                            viewParams: M,
+                            toolOutput: re ?? null
+                        }),
+                        widgetState: N,
+                        toolInput: ne,
+                        toolOutput: re,
+                        toolResponseMetadata: ie,
+                        subjectId: se,
+                        appPackageName: ee,
+                        supportsOAuthCompletion: S,
+                        isTombstone: ce,
+                        features: At,
+                        maxHeight: le ?? void 0,
+                        maxWidth: de ?? void 0,
+                        theme: F,
+                        displayMode: R,
+                        isSidebarOpen: Se ?? !1,
+                        safeArea: _,
+                        userAgent: K,
+                        csp: A,
+                        mcpApps: {
+                            forwardedRequestMethods: D ? t?.forwardedRequestMethods : void 0,
+                            hostContext: zt(),
+                            hostCapabilities: Lt,
+                            hostInfo: {
+                                name: `chatgpt`
+                            }
+                        }
+                    }),
+                    o = null;
+                for await (let t of await a) {
+                    if (!r()) return;
+                    t.type === ze.ENVIRONMENT_STATUS && t.status === Re.RUNNING_CODE ? (i(`ready`), Ht(), Ne(t => t?.frame === e && t.html === n && t.isCurrent === r ? t : {
+                        frame: e,
+                        html: n,
+                        expectsReadySignal: d === !0,
+                        expectedReadySignal: f ?? null,
+                        isCurrent: r
+                    })) : t.type === ze.ERROR ? (Z(({
+                        trackWidgetError: e
+                    }) => e(z, t.error)), o = t.error) : t.type === ze.RUN_COMPLETE && t.wasFatalError && (i(`error`), Vt(o))
+                }
+            }),
+            Gt = d === !0,
+            Kt = f ?? null;
+        (0, Y.useEffect)(() => {
+            if (!B || !s) return;
+            let e = !0,
+                t = Ut();
+            return Wt(B, s, () => e, t).catch(() => {
+                e && (t(`error`), Vt(null))
+            }), () => {
+                e = !1, t(`aborted`)
+            }
+        }, [Gt, B, s, Kt, Vt, Wt, Ut]);
+        let qt = (0, Y.useMemo)(() => cn(ie, re), [ie, re]),
+            Yt = sn(ie),
+            Xt = {
+                widgetId: C,
+                widgetState: N,
+                toolInput: ne,
+                toolOutput: re,
+                toolResponseMetadata: ie,
+                subjectId: se
+            },
+            [Zt, $t] = (0, Y.useState)(Xt),
+            [en, tn] = (0, Y.useState)(null),
+            [Q, dn] = (0, Y.useState)(null);
+        h(Zt, Xt) || $t(Xt);
+        let $ = V?.frame === B && V.html === s && V.expectsReadySignal === Gt && V.expectedReadySignal === Kt && V.isCurrent() ? V : null;
+        $ && ne && (en?.widget !== $ || en.widgetId !== C || !h(en.input, ne)) && tn({
+            widget: $,
+            widgetId: C,
+            input: ne
+        }), $ && qt && (Q?.widget !== $ || Q.widgetId !== C || !h(Q.result, qt)) && dn({
+            widget: $,
+            widgetId: C,
+            result: qt
+        }), (0, Y.useEffect)(() => {
+            $ && $.frame.setWidgetData(Zt)
+        }, [$, Zt]), (0, Y.useEffect)(() => {
+            en?.widget.isCurrent() && en.widget.frame.notifyMcpAppsToolInput({
+                arguments: en.input
+            })
+        }, [en]), (0, Y.useEffect)(() => {
+            Q?.widget.isCurrent() && Q.widget.frame.notifyMcpAppsToolResult(Q.result)
+        }, [Q]), (0, Y.useEffect)(() => {
+            $ && Yt != null && $.frame.notifyMcpAppsToolCancelled({
+                reason: Yt
+            })
+        }, [$, Yt, C]), (0, Y.useEffect)(() => {
+            $ && $.frame.notifyMcpAppsHostContext({
+                hostContext: zt()
+            })
+        }, [$, zt, It]), (0, Y.useEffect)(() => {
+            if (B) return () => {
+                B.requestMcpAppsResourceTeardown({
+                    timeoutMs: 500
+                })
+            }
+        }, [B]), (0, Y.useEffect)(() => {
+            $ && $.frame.setWidgetView({
+                widgetId: C,
+                displayMode: R,
+                viewParams: ln({
+                    displayMode: R,
+                    viewParams: M,
+                    toolOutput: re ?? null
+                }),
+                isTombstone: ce
+            })
+        }, [$, C, R, M, re, ce]), (0, Y.useEffect)(() => {
+            $ && $.frame.setAdditionalGlobals({
+                additionalGlobals: {
+                    isSidebarOpen: Se ?? !1
+                }
+            })
+        }, [$, Se]), (0, Y.useEffect)(() => {
+            $ && $.frame.setAdditionalGlobals({
+                additionalGlobals: {
+                    maxHeight: le,
+                    maxWidth: de
+                }
+            })
+        }, [$, le, de]), (0, Y.useEffect)(() => {
+            $ && $.frame.setTheme({
+                theme: F
+            })
+        }, [$, F]), (0, Y.useEffect)(() => {
+            $ && $.frame.setSafeArea({
+                safeArea: _
+            })
+        }, [$, _]);
+        let fn = e === `skybridge` || l(`1610966033`),
+            pn = L(e => v(I.callMcp)(e)),
+            mn = I.scanCard ? JSON.stringify([`card-scan`, tt, C, w ?? null, s, Gt, Kt]) : `default`,
+            hn = (0, Y.useMemo)(() => ({
+                frameKey: mn
+            }), [mn]),
+            gn = L(() => ({
+                owner: hn,
+                readyWidget: $,
+                scanCard: I.scanCard
+            })),
+            _n = (0, Y.useMemo)(() => async () => {
+                let e = gn();
+                if (e.owner !== hn || !e.readyWidget?.isCurrent() || !e.scanCard) return {
+                    status: `unavailable`
+                };
+                let t = await e.scanCard(),
+                    n = gn();
+                return n.owner === hn && n.readyWidget === e.readyWidget && e.readyWidget.isCurrent() ? t : {
+                    status: `cancelled`
+                }
+            }, [gn, hn]),
+            vn = D ? I.openPlaidLink ?? (e === `chatgpt` && E === te.OPENAI && T === `connectors://connector_693864f100e4819093e6ed9b651239f1` ? Ke : void 0) : void 0;
+        return (0, X.jsxs)(X.Fragment, {
+            children: [(0, X.jsx)(Ot, {
+                frameComponent: Ee,
+                title: ge,
+                host: e,
+                colorScheme: F,
+                subdomain: j,
+                features: At,
+                api: {
+                    ...I,
+                    callMcp: I.callMcp ? pn : void 0,
+                    scanCard: I.scanCard ? _n : void 0,
+                    notifyIntrinsicHeight: e => I.notifyIntrinsicHeight?.(e),
+                    updateWidgetState: I.updateWidgetState ? (e, t, n) => I.updateWidgetState?.(C, t, fn ? n : void 0) : void 0,
+                    openPlaidLink: vn,
+                    downloadBlob: D && E === te.OPENAI ? ({
+                        blob: e,
+                        name: t
+                    }) => {
+                        De(e, t)
+                    } : void 0,
+                    notifyAutofillCandidates: W ? e => {
+                        Ve && (Le({
+                            appId: U,
+                            accountIdentity: tt,
+                            frame: B,
+                            html: s,
+                            widgetId: C
+                        }), Fe(e))
+                    } : void 0,
+                    notifyNavigation: e => {
+                        Z(({
+                            trackWidgetNavigation: t
+                        }) => t(z, e)), I.notifyNavigation?.(e)
+                    },
+                    requestCheckout: I.requestCheckout ? e => (Z(({
+                        trackWidgetCheckoutSession: e
+                    }) => e(z)), I.requestCheckout?.(e)) : void 0,
+                    requestDisplayMode: e => {
+                        let {
+                            mode: t
+                        } = e;
+                        return t !== R && Z(({
+                            trackWidgetDisplayMode: e
+                        }) => e(z, t)), I.requestDisplayMode?.(e) ?? {
+                            mode: t
+                        }
+                    },
+                    share: async e => {
+                        let {
+                            url: t,
+                            title: n,
+                            text: r,
+                            files: i
+                        } = e;
+                        return await navigator.share({
+                            url: t,
+                            title: n,
+                            text: r,
+                            files: i
+                        })
+                    },
+                    openExternal: async e => {
+                        Z(({
+                            trackWidgetLinkOut: e
+                        }) => e(z)), await I.openExternal?.(e)
+                    },
+                    sendInstrument: e => {
+                        Z(({
+                            trackSandboxInstrument: t
+                        }) => t(e, z))
+                    },
+                    notifySecurityPolicyViolation: e => {
+                        Z(({
+                            trackSecurityPolicyViolation: t
+                        }) => t({
+                            ...z,
+                            violation: e
+                        }))
+                    }
+                },
+                iframeRef: i,
+                ref: Ae,
+                locale: ve
+            }, mn), vt && dt && (e === `skybridge` ? (0, X.jsx)(wt, {
+                appName: _t,
+                user: dt,
+                onAllow: () => St(),
+                onAlwaysAllow: rt ? Et : void 0,
+                isSavingGrant: ct.isPending,
+                hasGrantError: Ue,
+                onDecline: Dt,
+                onDismiss: kt
+            }) : (0, X.jsx)(je, {
+                for: Ct,
+                withProps: {
+                    appName: _t,
+                    user: dt,
+                    onAllow: () => St(),
+                    onAlwaysAllow: rt ? Et : void 0,
+                    isSavingGrant: ct.isPending,
+                    hasGrantError: Ue,
+                    onDecline: Dt,
+                    onDismiss: kt
+                },
+                open: !0,
+                onClose: kt
+            }))]
+        })
+    }, $ = e => {
+        "use forget";
+        let t = (0, tn.c)(11);
+        if (!p(en)) {
+            let n;
+            return t[0] === e ? n = t[1] : (n = (0, X.jsx)(dn, {
+                ...e
+            }), t[0] = e, t[1] = n), n
+        }
+        let n = e.widgetState ?? null,
+            r = e.toolInput ?? null,
+            i = e.toolOutput ?? null,
+            a = e.toolResponseMetadata ?? null,
+            o;
+        t[2] === e ? o = t[3] : (o = t => (0, X.jsx)(dn, {
+            ...e
+        }, t), t[2] = e, t[3] = o);
+        let s;
+        return t[4] !== e.widgetId || t[5] !== n || t[6] !== r || t[7] !== i || t[8] !== a || t[9] !== o ? (s = (0, X.jsx)(Gt, {
+            widgetId: e.widgetId,
+            widgetState: n,
+            toolInput: r,
+            toolOutput: i,
+            toolResponseMetadata: a,
+            children: o
+        }), t[4] = e.widgetId, t[5] = n, t[6] = r, t[7] = i, t[8] = a, t[9] = o, t[10] = s) : s = t[10], s
+    }
+}));
+export {
+    nt as a, yt as i, fn as n, st as o, vt as r, rt as s, $ as t
+};
 //# sourceMappingURL=1c86a5ac-kd1q8329865wq6om.js.map

@@ -1,3 +1,199 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/dedae8f8-jtru6qy8oyk38xbo.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/2340486e-komxp8tzs51ny4jj.js","assets/58bafdef-e37ztwhy6y06i0v6.js","assets/4813494d-qsuygr73qjc6rh65.js","assets/root-lelxp0l2.css","assets/conversation-small-cawdu7il3ha6y70c.js","assets/30901919-jory365vq6ym5crx.js","assets/c470f5ab-in0lllrdrzeo67gs.js","assets/0e5afe53-f9gmgfmgrr83ziw3.js","assets/conversation-small-czggvj2v.css"])))=>i.map(i=>d[i]);
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{J0 as t,M5 as n,Y0 as r,m8 as i}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as a,Rn as o,Tn as s,Vn as c,ln as l,un as u,zn as d}from"./2340486e-komxp8tzs51ny4jj.js";import{H7 as f,RHn as p,V7 as m,a_ as h,ckt as g,d3t as _,i_ as v,lkt as y,r3t as b,s3t as x,u3t as S,zHn as C}from"./conversation-small-cawdu7il3ha6y70c.js";import{mg as w,pg as T}from"./30901919-jory365vq6ym5crx.js";import{a as E,i as D,n as O,r as k,t as A}from"./58bafdef-e37ztwhy6y06i0v6.js";var j,M=e((()=>{d(),j=o({openFeedback:{id:`codeBlocks.feedback.button`,defaultMessage:`Give feedback`},popupAriaLabel:{id:`codeBlocks.visualizationFeedback.popupAriaLabel`,defaultMessage:`Give feedback`}})}));function N(e){"use forget";let t=(0,H.c)(14),{onOpenChange:r,open:i,reference:o,target:s,triggerButton:c}=e,l=a();if(n(P))return null;let u;t[0]===l?u=t[1]:(u=l.formatMessage(j.popupAriaLabel),t[0]=l,t[1]=u);let d;t[2]===r?d=t[3]:(d=()=>r(!1),t[2]=r,t[3]=d);let f;t[4]!==o||t[5]!==d||t[6]!==s?(f=(0,U.jsx)(D,{onClose:d,onSubmitted:A,reference:o,target:s}),t[4]=o,t[5]=d,t[6]=s,t[7]=f):f=t[7];let p;return t[8]!==r||t[9]!==i||t[10]!==u||t[11]!==f||t[12]!==c?(p=(0,U.jsx)(m,{open:i,onOpenChange:r,triggerButton:c,alignAgainstAnchor:`end`,side:`bottom`,sideOffset:4,size:`none`,className:`z-50 flex w-70 flex-col p-2`,contentAriaLabel:u,children:f}),t[8]=r,t[9]=i,t[10]=u,t[11]=f,t[12]=c,t[13]=p):p=t[13],p}function P(){return k()}function F(e){"use forget";let t=(0,H.c)(9),{anchorName:r,onOpenChange:i,open:a,reference:o,source:s,target:c}=e,l=n(L);if(y(I),l)return null;let u;t[0]!==o||t[1]!==c?(u={reference:o,target:c},t[0]=o,t[1]=c,t[2]=u):u=t[2];let d=u,f;return t[3]!==r||t[4]!==i||t[5]!==a||t[6]!==s||t[7]!==d?(f=(0,U.jsx)(S,{anchorName:r,className:`z-50`,for:W,onOpenChange:i,open:a,side:`bottom-end`,source:s,withProps:d}),t[3]=r,t[4]=i,t[5]=a,t[6]=s,t[7]=d,t[8]=f):f=t[8],f}function I(){W.prefetch()}function L(){return k()}function R(e){"use forget";let t=(0,H.c)(5),{gates:r,onSelectFeedback:i}=e,o=r??v(),s=a(),c=n(z);if(o.widgetFeedbackEnabled!==!0||c)return null;let l;t[0]===s?l=t[1]:(l=s.formatMessage(j.openFeedback),t[0]=s,t[1]=l);let u=l,d;return t[2]!==u||t[3]!==i?(d=(0,U.jsx)(p.Item,{icon:w,onSelect:i,children:u}),t[2]=u,t[3]=i,t[4]=d):d=t[4],d}function z(){return k()}function B(e){"use forget";let t=(0,H.c)(7),{gates:r,onSelectFeedback:i}=e,o=r??v(),s=a(),c=n(V);if(o.widgetFeedbackEnabled!==!0||c)return null;let l;t[0]===s?l=t[1]:(l=s.formatMessage(j.openFeedback),t[0]=s,t[1]=l);let u=l,d;t[2]===i?d=t[3]:(d=()=>i(),t[2]=i,t[3]=d);let f;return t[4]!==u||t[5]!==d?(f=(0,U.jsx)(b,{icon:w,onClick:d,children:u}),t[4]=u,t[5]=d,t[6]=f):f=t[6],f}function V(){return k()}var H,U,W,G=e((()=>{H=s(),E(),M(),O(),h(),C(),T(),f(),x(),_(),i(),g(),r(),d(),U=c(),u(),W=t(()=>l(()=>import(`./dedae8f8-jtru6qy8oyk38xbo.js`).then(e=>e.BlockFeedbackMenuContent),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10])))}));export{G as a,N as i,F as n,B as r,R as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/dedae8f8-jtru6qy8oyk38xbo.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/2340486e-komxp8tzs51ny4jj.js", "assets/58bafdef-e37ztwhy6y06i0v6.js", "assets/4813494d-qsuygr73qjc6rh65.js", "assets/root-lelxp0l2.css", "assets/conversation-small-cawdu7il3ha6y70c.js", "assets/30901919-jory365vq6ym5crx.js", "assets/c470f5ab-in0lllrdrzeo67gs.js", "assets/0e5afe53-f9gmgfmgrr83ziw3.js", "assets/conversation-small-czggvj2v.css"]))) => i.map(i => d[i]);
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    J0 as t,
+    M5 as n,
+    Y0 as r,
+    m8 as i
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as a,
+    Rn as o,
+    Tn as s,
+    Vn as c,
+    ln as l,
+    un as u,
+    zn as d
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    H7 as f,
+    RHn as p,
+    V7 as m,
+    a_ as h,
+    ckt as g,
+    d3t as _,
+    i_ as v,
+    lkt as y,
+    r3t as b,
+    s3t as x,
+    u3t as S,
+    zHn as C
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    mg as w,
+    pg as T
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    a as E,
+    i as D,
+    n as O,
+    r as k,
+    t as A
+} from "./58bafdef-e37ztwhy6y06i0v6.js";
+var j, M = e((() => {
+    d(), j = o({
+        openFeedback: {
+            id: `codeBlocks.feedback.button`,
+            defaultMessage: `Give feedback`
+        },
+        popupAriaLabel: {
+            id: `codeBlocks.visualizationFeedback.popupAriaLabel`,
+            defaultMessage: `Give feedback`
+        }
+    })
+}));
+
+function N(e) {
+    "use forget";
+    let t = (0, H.c)(14),
+        {
+            onOpenChange: r,
+            open: i,
+            reference: o,
+            target: s,
+            triggerButton: c
+        } = e,
+        l = a();
+    if (n(P)) return null;
+    let u;
+    t[0] === l ? u = t[1] : (u = l.formatMessage(j.popupAriaLabel), t[0] = l, t[1] = u);
+    let d;
+    t[2] === r ? d = t[3] : (d = () => r(!1), t[2] = r, t[3] = d);
+    let f;
+    t[4] !== o || t[5] !== d || t[6] !== s ? (f = (0, U.jsx)(D, {
+        onClose: d,
+        onSubmitted: A,
+        reference: o,
+        target: s
+    }), t[4] = o, t[5] = d, t[6] = s, t[7] = f) : f = t[7];
+    let p;
+    return t[8] !== r || t[9] !== i || t[10] !== u || t[11] !== f || t[12] !== c ? (p = (0, U.jsx)(m, {
+        open: i,
+        onOpenChange: r,
+        triggerButton: c,
+        alignAgainstAnchor: `end`,
+        side: `bottom`,
+        sideOffset: 4,
+        size: `none`,
+        className: `z-50 flex w-70 flex-col p-2`,
+        contentAriaLabel: u,
+        children: f
+    }), t[8] = r, t[9] = i, t[10] = u, t[11] = f, t[12] = c, t[13] = p) : p = t[13], p
+}
+
+function P() {
+    return k()
+}
+
+function F(e) {
+    "use forget";
+    let t = (0, H.c)(9),
+        {
+            anchorName: r,
+            onOpenChange: i,
+            open: a,
+            reference: o,
+            source: s,
+            target: c
+        } = e,
+        l = n(L);
+    if (y(I), l) return null;
+    let u;
+    t[0] !== o || t[1] !== c ? (u = {
+        reference: o,
+        target: c
+    }, t[0] = o, t[1] = c, t[2] = u) : u = t[2];
+    let d = u,
+        f;
+    return t[3] !== r || t[4] !== i || t[5] !== a || t[6] !== s || t[7] !== d ? (f = (0, U.jsx)(S, {
+        anchorName: r,
+        className: `z-50`,
+        for: W,
+        onOpenChange: i,
+        open: a,
+        side: `bottom-end`,
+        source: s,
+        withProps: d
+    }), t[3] = r, t[4] = i, t[5] = a, t[6] = s, t[7] = d, t[8] = f) : f = t[8], f
+}
+
+function I() {
+    W.prefetch()
+}
+
+function L() {
+    return k()
+}
+
+function R(e) {
+    "use forget";
+    let t = (0, H.c)(5),
+        {
+            gates: r,
+            onSelectFeedback: i
+        } = e,
+        o = r ?? v(),
+        s = a(),
+        c = n(z);
+    if (o.widgetFeedbackEnabled !== !0 || c) return null;
+    let l;
+    t[0] === s ? l = t[1] : (l = s.formatMessage(j.openFeedback), t[0] = s, t[1] = l);
+    let u = l,
+        d;
+    return t[2] !== u || t[3] !== i ? (d = (0, U.jsx)(p.Item, {
+        icon: w,
+        onSelect: i,
+        children: u
+    }), t[2] = u, t[3] = i, t[4] = d) : d = t[4], d
+}
+
+function z() {
+    return k()
+}
+
+function B(e) {
+    "use forget";
+    let t = (0, H.c)(7),
+        {
+            gates: r,
+            onSelectFeedback: i
+        } = e,
+        o = r ?? v(),
+        s = a(),
+        c = n(V);
+    if (o.widgetFeedbackEnabled !== !0 || c) return null;
+    let l;
+    t[0] === s ? l = t[1] : (l = s.formatMessage(j.openFeedback), t[0] = s, t[1] = l);
+    let u = l,
+        d;
+    t[2] === i ? d = t[3] : (d = () => i(), t[2] = i, t[3] = d);
+    let f;
+    return t[4] !== u || t[5] !== d ? (f = (0, U.jsx)(b, {
+        icon: w,
+        onClick: d,
+        children: u
+    }), t[4] = u, t[5] = d, t[6] = f) : f = t[6], f
+}
+
+function V() {
+    return k()
+}
+var H, U, W, G = e((() => {
+    H = s(), E(), M(), O(), h(), C(), T(), f(), x(), _(), i(), g(), r(), d(), U = c(), u(), W = t(() => l(() => import(`./dedae8f8-jtru6qy8oyk38xbo.js`).then(e => e.BlockFeedbackMenuContent), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])))
+}));
+export {
+    G as a, N as i, F as n, B as r, R as t
+};
 //# sourceMappingURL=e01e2324-gw4vrvd9lu7s24tu.js.map

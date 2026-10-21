@@ -1,3 +1,361 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/0a2afdfe-ltxcnvemlsbqfn89.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-qsuygr73qjc6rh65.js","assets/2340486e-komxp8tzs51ny4jj.js","assets/root-lelxp0l2.css","assets/conversation-small-cawdu7il3ha6y70c.js","assets/30901919-jory365vq6ym5crx.js","assets/c470f5ab-in0lllrdrzeo67gs.js","assets/0e5afe53-f9gmgfmgrr83ziw3.js","assets/conversation-small-czggvj2v.css","assets/c2675c8c-nxl2ic2ofk2vw70s.js","assets/82782bc9-jj605vonxg0iyc7p.js","assets/8b34dbc2-d4icgkio4i3wfm6q.js","assets/global-modals-lv5n3ujm.css","assets/32d062bc-hcsbkmcfqvmossyg.js","assets/d12af438-lbyto6rka2340ohw.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Az as n,J0 as r,J5 as i,Mz as a,Nz as o,Sw as s,VU as c,Y0 as l,Z0 as u,e2 as d,jz as f,q5 as p,ww as m,zU as h}from"./4813494d-qsuygr73qjc6rh65.js";import{$ as g,Bn as ee,Hn as _,Ht as te,Pn as ne,Pt as re,Rn as v,Tn as y,Vn as b,jt as ie,ln as x,un as S,zn as C}from"./2340486e-komxp8tzs51ny4jj.js";import{$b as ae,Gx as oe,Qb as w,Wx as se,bC as ce,xC as T}from"./30901919-jory365vq6ym5crx.js";import{A_ as le,D_ as E,L_ as ue,M_ as de,O_ as fe,P_ as pe,j_ as D,k_ as O}from"./c2675c8c-nxl2ic2ofk2vw70s.js";function k(e){if(e.get(`action`)!==`enable`)return null;let t=e.get(`factor`);return t===`totp`||t===`sms`?t:null}function me(e){return`${e.pathname}${e.search}${e.hash}`}function A(e){"use forget";let t=(0,ge.c)(11),n;t[0]===e?n=t[1]:(n=e===void 0?{}:e,t[0]=e,t[1]=n);let{enabled:r,redirectUrl:i,source:a,onMfaEnabled:o,restoreParentFlowOnResume:s}=n,c=r===void 0||r,l=ie(),{status:u}=de(),f=(0,j.useRef)(!1),p,m;t[2]!==c||t[3]!==l||t[4]!==o||t[5]!==i||t[6]!==s||t[7]!==a||t[8]!==u?(p=()=>{!(typeof c==`function`?c():c)||f.current||u!==`enabled`&&k(new URLSearchParams(l.search))&&(f.current=!0,s?.()!==!0&&d(F,{onClose:()=>{f.current=!1},onMfaEnabled:o,redirectUrl:i,source:a}))},m=[c,l,o,s,i,a,u],t[2]=c,t[3]=l,t[4]=o,t[5]=i,t[6]=s,t[7]=a,t[8]=u,t[9]=p,t[10]=m):(p=t[9],m=t[10]),(0,j.useEffect)(p,m)}function he(){}var ge,j,M,N,P,_e,ve,F,I=e((()=>{ge=y(),T(),w(),se(),o(),m(),u(),pe(),D(),le(),f(),h(),E(),l(),i(),j=t(_()),C(),g(),M=b(),S(),N=v({authenticatorLabel:{id:`mfaEnrollmentModal.authenticatorLabel`,defaultMessage:`Authenticator App`},textCodeLabel:{id:`mfaEnrollmentModal.textCodeLabel`,defaultMessage:`Text a code to your phone number`},title:{id:`mfaEnrollmentModal.title`,defaultMessage:`Enable a second factor to continue`},genericStartError:{id:`mfaEnrollmentModal.genericStartError`,defaultMessage:`We couldn't start setup. Please try again.`}}),P=r(()=>x(()=>import(`./0a2afdfe-ltxcnvemlsbqfn89.js`).then(e=>e.EnterOtpCodeModal),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14]))),_e=r(()=>x(()=>import(`./d12af438-lbyto6rka2340ohw.js`).then(e=>e.EnrollTotpModal),__vite__mapDeps([15,1,2,3,4,5,6,7,8,9,10,11,12,13,14]))),ve=e=>{d(O,{source:e,onOtpRequested:({phoneNumber:t,enrollmentSessionId:n,factorId:r})=>{d(P,{phoneNumber:t,enrollmentSessionId:n,factorId:r,onActivated:()=>{},source:e,onBack:()=>{ve(e)}})}})},F=e=>{"use forget";let t=(0,ge.c)(57),{isOpen:r,onClose:i,onMfaEnabled:o,onSelectFactor:l,redirectUrl:u,source:f}=e,m=r===void 0||r,h=i===void 0?he:i,g=ee(),_=c(),v=ue(),y=ie(),b;t[0]!==y||t[1]!==u?(b=u??me(y),t[0]=y,t[1]=u,t[2]=b):b=t[2];let x=b,S;t[3]!==x||t[4]!==f?(S={redirectUrl:x,source:f},t[3]=x,t[4]=f,t[5]=S):S=t[5];let{setupMfa:C}=fe(S),{status:w,show_sms:se}=de(),[T,le]=(0,j.useState)(null),E=(0,j.useRef)(!1),pe=(0,j.useRef)(!1),[D]=te(),O=re(),A;t[6]!==v||t[7]!==g||t[8]!==f||t[9]!==_?(A=async()=>{if(!E.current){E.current=!0;try{let e=await v.mutateAsync({factor:`totp`,source:f});d(_e,{sessionId:e.session_id,secret:e.secret,source:f,onCancelled:()=>{E.current=!1},onActivated:()=>{E.current=!1}})}catch(e){let t=e;E.current=!1,_.danger(g.formatMessage(N.genericStartError),{error:t})}}},t[6]=v,t[7]=g,t[8]=f,t[9]=_,t[10]=A):A=t[10];let P=A,F;t[11]!==g||t[12]!==l||t[13]!==C||t[14]!==f||t[15]!==P||t[16]!==_?(F=async e=>{le(e);let t=()=>le(null);try{if(l?.(e),e===`totp`){await C(`totp`,{native_modal:!0})||await P(),t();return}else if(e===`sms`){await C(`sms`)||ve(f),t();return}else{_.danger(g.formatMessage(N.genericStartError)),t();return}}catch(e){let n=e;_.danger(g.formatMessage(N.genericStartError),{error:n}),t()}},t[11]=g,t[12]=l,t[13]=C,t[14]=f,t[15]=P,t[16]=_,t[17]=F):F=t[17];let I=F,L,R;t[18]!==w||t[19]!==h||t[20]!==o?(L=()=>{w===`enabled`&&(o?.(),h?.())},R=[w,o,h],t[18]=w,t[19]=h,t[20]=o,t[21]=L,t[22]=R):(L=t[21],R=t[22]),(0,j.useEffect)(L,R);let z,B;t[23]!==I||t[24]!==y.hash||t[25]!==y.pathname||t[26]!==y.search||t[27]!==O||t[28]!==D?(B=()=>{if(pe.current)return;let e=k(D);if(!e)return;pe.current=!0;let t=new URLSearchParams(y.search);t.delete(`action`),t.delete(`factor`),t.delete(`factor_id`),y.pathname===`/connector-auth`&&t.getAll(`connector_action`).length===1&&t.get(`connector_action`)===`connect`&&(t.set(`action`,`connect`),t.delete(`connector_action`));let n=t.toString();O({pathname:y.pathname,search:n?`?${n}`:``,hash:y.hash},{replace:!0}),I(e)},z=[I,y.hash,y.pathname,y.search,O,D],t[23]=I,t[24]=y.hash,t[25]=y.pathname,t[26]=y.search,t[27]=O,t[28]=D,t[29]=z,t[30]=B):(z=t[29],B=t[30]),(0,j.useEffect)(B,z);let ye=w!==`enabled`&&se,V;t[31]===Symbol.for(`react.memo_cache_sentinel`)?(V={id:`totp`,icon:oe,label:(0,M.jsx)(ne,{...N.authenticatorLabel})},t[31]=V):V=t[31];let H;t[32]===ye?H=t[33]:(H=[V,...ye?[{id:`sms`,icon:ae,label:(0,M.jsx)(ne,{...N.textCodeLabel})}]:[]],t[32]=ye,t[33]=H);let U=H;if(w===`enabled`)return null;let W;t[34]===g?W=t[35]:(W=g.formatMessage(N.title),t[34]=g,t[35]=W);let G;t[36]===W?G=t[37]:(G=(0,M.jsx)(`span`,{className:`sr-only`,children:W}),t[36]=W,t[37]=G);let K;t[38]===Symbol.for(`react.memo_cache_sentinel`)?(K=(0,M.jsxs)(`div`,{className:`flex gap-1`,children:[(0,M.jsx)(`span`,{className:`h-1.5 w-1.5 rounded-full bg-gray-200`}),(0,M.jsx)(`span`,{className:`h-1.5 w-1.5 rounded-full bg-gray-200`}),(0,M.jsx)(`span`,{className:`h-1.5 w-1.5 rounded-full bg-gray-200`})]}),t[38]=K):K=t[38];let q;t[39]===Symbol.for(`react.memo_cache_sentinel`)?(q=(0,M.jsx)(`div`,{className:`rounded-xl border-[0.5px] p-2 shadow-sm`,children:(0,M.jsx)(ce,{className:`icon-2xl`})}),t[39]=q):q=t[39];let J;t[40]===Symbol.for(`react.memo_cache_sentinel`)?(J=(0,M.jsxs)(`div`,{className:`flex items-center justify-center gap-4`,children:[K,q,(0,M.jsxs)(`div`,{className:`flex gap-1`,children:[(0,M.jsx)(`span`,{className:`h-1.5 w-1.5 rounded-full bg-gray-200`}),(0,M.jsx)(`span`,{className:`h-1.5 w-1.5 rounded-full bg-gray-200`}),(0,M.jsx)(`span`,{className:`h-1.5 w-1.5 rounded-full bg-gray-200`})]})]}),t[40]=J):J=t[40];let Y;t[41]===g?Y=t[42]:(Y=g.formatMessage(N.title),t[41]=g,t[42]=Y);let X;t[43]===Y?X=t[44]:(X=(0,M.jsx)(`div`,{className:`flex flex-col items-center justify-center`,children:(0,M.jsx)(`h1`,{className:`max-w-[420px] px-4 text-center text-2xl font-semibold`,children:Y})}),t[43]=Y,t[44]=X);let Z;t[45]!==T||t[46]!==I||t[47]!==U?(Z=(0,M.jsx)(`div`,{className:`border-token-border-default bg-token-bg-primary overflow-hidden rounded-2xl border`,role:`list`,children:U.map((e,t)=>{let{id:r,icon:i,label:o}=e;return(0,M.jsx)(`div`,{role:`listitem`,children:(0,M.jsxs)(`button`,{type:`button`,className:p(`text-token-text-primary hover:bg-token-bg-tertiary focus-visible:ring-token-focus`,`flex w-full items-center gap-3 px-4 py-4 text-start text-sm`,`focus-visible:ring-2 focus-visible:ring-offset-2`,t!==U.length-1&&`after:bg-token-border-default relative after:absolute after:start-4 after:end-4 after:bottom-0 after:h-px`),onClick:e=>{if(T!=null){e.preventDefault();return}I(r)},children:[(0,M.jsx)(i,{className:`h-6 w-6`}),(0,M.jsx)(`div`,{className:`flex flex-1 items-center gap-2`,children:o}),T===r?(0,M.jsx)(n,{className:`h-4 w-4`}):(0,M.jsx)(a.ChevronRightSm,{className:`icon-sm`})]})},r)})}),t[45]=T,t[46]=I,t[47]=U,t[48]=Z):Z=t[48];let Q;t[49]!==X||t[50]!==Z?(Q=(0,M.jsxs)(`div`,{className:`flex flex-col gap-6`,children:[J,X,Z]}),t[49]=X,t[50]=Z,t[51]=Q):Q=t[51];let $;return t[52]!==m||t[53]!==h||t[54]!==G||t[55]!==Q?($=(0,M.jsx)(s,{testId:`modal-mfa-enrollment`,isOpen:m,onClose:h,showCloseButton:!0,contentClassName:`!px-6 !pt-6 md:!pb-[24px]`,headerClassName:`!px-6 !h-[76px] !items-center`,title:G,children:Q}),t[52]=m,t[53]=h,t[54]=G,t[55]=Q,t[56]=$):$=t[56],$}}));export{A as i,k as n,I as r,F as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/0a2afdfe-ltxcnvemlsbqfn89.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-qsuygr73qjc6rh65.js", "assets/2340486e-komxp8tzs51ny4jj.js", "assets/root-lelxp0l2.css", "assets/conversation-small-cawdu7il3ha6y70c.js", "assets/30901919-jory365vq6ym5crx.js", "assets/c470f5ab-in0lllrdrzeo67gs.js", "assets/0e5afe53-f9gmgfmgrr83ziw3.js", "assets/conversation-small-czggvj2v.css", "assets/c2675c8c-nxl2ic2ofk2vw70s.js", "assets/82782bc9-jj605vonxg0iyc7p.js", "assets/8b34dbc2-d4icgkio4i3wfm6q.js", "assets/global-modals-lv5n3ujm.css", "assets/32d062bc-hcsbkmcfqvmossyg.js", "assets/d12af438-lbyto6rka2340ohw.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Az as n,
+    J0 as r,
+    J5 as i,
+    Mz as a,
+    Nz as o,
+    Sw as s,
+    VU as c,
+    Y0 as l,
+    Z0 as u,
+    e2 as d,
+    jz as f,
+    q5 as p,
+    ww as m,
+    zU as h
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    $ as g,
+    Bn as ee,
+    Hn as _,
+    Ht as te,
+    Pn as ne,
+    Pt as re,
+    Rn as v,
+    Tn as y,
+    Vn as b,
+    jt as ie,
+    ln as x,
+    un as S,
+    zn as C
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    $b as ae,
+    Gx as oe,
+    Qb as w,
+    Wx as se,
+    bC as ce,
+    xC as T
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    A_ as le,
+    D_ as E,
+    L_ as ue,
+    M_ as de,
+    O_ as fe,
+    P_ as pe,
+    j_ as D,
+    k_ as O
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+
+function k(e) {
+    if (e.get(`action`) !== `enable`) return null;
+    let t = e.get(`factor`);
+    return t === `totp` || t === `sms` ? t : null
+}
+
+function me(e) {
+    return `${e.pathname}${e.search}${e.hash}`
+}
+
+function A(e) {
+    "use forget";
+    let t = (0, ge.c)(11),
+        n;
+    t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+    let {
+        enabled: r,
+        redirectUrl: i,
+        source: a,
+        onMfaEnabled: o,
+        restoreParentFlowOnResume: s
+    } = n, c = r === void 0 || r, l = ie(), {
+        status: u
+    } = de(), f = (0, j.useRef)(!1), p, m;
+    t[2] !== c || t[3] !== l || t[4] !== o || t[5] !== i || t[6] !== s || t[7] !== a || t[8] !== u ? (p = () => {
+        !(typeof c == `function` ? c() : c) || f.current || u !== `enabled` && k(new URLSearchParams(l.search)) && (f.current = !0, s?.() !== !0 && d(F, {
+            onClose: () => {
+                f.current = !1
+            },
+            onMfaEnabled: o,
+            redirectUrl: i,
+            source: a
+        }))
+    }, m = [c, l, o, s, i, a, u], t[2] = c, t[3] = l, t[4] = o, t[5] = i, t[6] = s, t[7] = a, t[8] = u, t[9] = p, t[10] = m) : (p = t[9], m = t[10]), (0, j.useEffect)(p, m)
+}
+
+function he() {}
+var ge, j, M, N, P, _e, ve, F, I = e((() => {
+    ge = y(), T(), w(), se(), o(), m(), u(), pe(), D(), le(), f(), h(), E(), l(), i(), j = t(_()), C(), g(), M = b(), S(), N = v({
+        authenticatorLabel: {
+            id: `mfaEnrollmentModal.authenticatorLabel`,
+            defaultMessage: `Authenticator App`
+        },
+        textCodeLabel: {
+            id: `mfaEnrollmentModal.textCodeLabel`,
+            defaultMessage: `Text a code to your phone number`
+        },
+        title: {
+            id: `mfaEnrollmentModal.title`,
+            defaultMessage: `Enable a second factor to continue`
+        },
+        genericStartError: {
+            id: `mfaEnrollmentModal.genericStartError`,
+            defaultMessage: `We couldn't start setup. Please try again.`
+        }
+    }), P = r(() => x(() => import(`./0a2afdfe-ltxcnvemlsbqfn89.js`).then(e => e.EnterOtpCodeModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]))), _e = r(() => x(() => import(`./d12af438-lbyto6rka2340ohw.js`).then(e => e.EnrollTotpModal), __vite__mapDeps([15, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]))), ve = e => {
+        d(O, {
+            source: e,
+            onOtpRequested: ({
+                phoneNumber: t,
+                enrollmentSessionId: n,
+                factorId: r
+            }) => {
+                d(P, {
+                    phoneNumber: t,
+                    enrollmentSessionId: n,
+                    factorId: r,
+                    onActivated: () => {},
+                    source: e,
+                    onBack: () => {
+                        ve(e)
+                    }
+                })
+            }
+        })
+    }, F = e => {
+        "use forget";
+        let t = (0, ge.c)(57),
+            {
+                isOpen: r,
+                onClose: i,
+                onMfaEnabled: o,
+                onSelectFactor: l,
+                redirectUrl: u,
+                source: f
+            } = e,
+            m = r === void 0 || r,
+            h = i === void 0 ? he : i,
+            g = ee(),
+            _ = c(),
+            v = ue(),
+            y = ie(),
+            b;
+        t[0] !== y || t[1] !== u ? (b = u ?? me(y), t[0] = y, t[1] = u, t[2] = b) : b = t[2];
+        let x = b,
+            S;
+        t[3] !== x || t[4] !== f ? (S = {
+            redirectUrl: x,
+            source: f
+        }, t[3] = x, t[4] = f, t[5] = S) : S = t[5];
+        let {
+            setupMfa: C
+        } = fe(S), {
+            status: w,
+            show_sms: se
+        } = de(), [T, le] = (0, j.useState)(null), E = (0, j.useRef)(!1), pe = (0, j.useRef)(!1), [D] = te(), O = re(), A;
+        t[6] !== v || t[7] !== g || t[8] !== f || t[9] !== _ ? (A = async () => {
+            if (!E.current) {
+                E.current = !0;
+                try {
+                    let e = await v.mutateAsync({
+                        factor: `totp`,
+                        source: f
+                    });
+                    d(_e, {
+                        sessionId: e.session_id,
+                        secret: e.secret,
+                        source: f,
+                        onCancelled: () => {
+                            E.current = !1
+                        },
+                        onActivated: () => {
+                            E.current = !1
+                        }
+                    })
+                } catch (e) {
+                    let t = e;
+                    E.current = !1, _.danger(g.formatMessage(N.genericStartError), {
+                        error: t
+                    })
+                }
+            }
+        }, t[6] = v, t[7] = g, t[8] = f, t[9] = _, t[10] = A) : A = t[10];
+        let P = A,
+            F;
+        t[11] !== g || t[12] !== l || t[13] !== C || t[14] !== f || t[15] !== P || t[16] !== _ ? (F = async e => {
+            le(e);
+            let t = () => le(null);
+            try {
+                if (l?.(e), e === `totp`) {
+                    await C(`totp`, {
+                        native_modal: !0
+                    }) || await P(), t();
+                    return
+                } else if (e === `sms`) {
+                    await C(`sms`) || ve(f), t();
+                    return
+                } else {
+                    _.danger(g.formatMessage(N.genericStartError)), t();
+                    return
+                }
+            } catch (e) {
+                let n = e;
+                _.danger(g.formatMessage(N.genericStartError), {
+                    error: n
+                }), t()
+            }
+        }, t[11] = g, t[12] = l, t[13] = C, t[14] = f, t[15] = P, t[16] = _, t[17] = F) : F = t[17];
+        let I = F,
+            L, R;
+        t[18] !== w || t[19] !== h || t[20] !== o ? (L = () => {
+            w === `enabled` && (o?.(), h?.())
+        }, R = [w, o, h], t[18] = w, t[19] = h, t[20] = o, t[21] = L, t[22] = R) : (L = t[21], R = t[22]), (0, j.useEffect)(L, R);
+        let z, B;
+        t[23] !== I || t[24] !== y.hash || t[25] !== y.pathname || t[26] !== y.search || t[27] !== O || t[28] !== D ? (B = () => {
+            if (pe.current) return;
+            let e = k(D);
+            if (!e) return;
+            pe.current = !0;
+            let t = new URLSearchParams(y.search);
+            t.delete(`action`), t.delete(`factor`), t.delete(`factor_id`), y.pathname === `/connector-auth` && t.getAll(`connector_action`).length === 1 && t.get(`connector_action`) === `connect` && (t.set(`action`, `connect`), t.delete(`connector_action`));
+            let n = t.toString();
+            O({
+                pathname: y.pathname,
+                search: n ? `?${n}` : ``,
+                hash: y.hash
+            }, {
+                replace: !0
+            }), I(e)
+        }, z = [I, y.hash, y.pathname, y.search, O, D], t[23] = I, t[24] = y.hash, t[25] = y.pathname, t[26] = y.search, t[27] = O, t[28] = D, t[29] = z, t[30] = B) : (z = t[29], B = t[30]), (0, j.useEffect)(B, z);
+        let ye = w !== `enabled` && se,
+            V;
+        t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (V = {
+            id: `totp`,
+            icon: oe,
+            label: (0, M.jsx)(ne, {
+                ...N.authenticatorLabel
+            })
+        }, t[31] = V) : V = t[31];
+        let H;
+        t[32] === ye ? H = t[33] : (H = [V, ...ye ? [{
+            id: `sms`,
+            icon: ae,
+            label: (0, M.jsx)(ne, {
+                ...N.textCodeLabel
+            })
+        }] : []], t[32] = ye, t[33] = H);
+        let U = H;
+        if (w === `enabled`) return null;
+        let W;
+        t[34] === g ? W = t[35] : (W = g.formatMessage(N.title), t[34] = g, t[35] = W);
+        let G;
+        t[36] === W ? G = t[37] : (G = (0, M.jsx)(`span`, {
+            className: `sr-only`,
+            children: W
+        }), t[36] = W, t[37] = G);
+        let K;
+        t[38] === Symbol.for(`react.memo_cache_sentinel`) ? (K = (0, M.jsxs)(`div`, {
+            className: `flex gap-1`,
+            children: [(0, M.jsx)(`span`, {
+                className: `h-1.5 w-1.5 rounded-full bg-gray-200`
+            }), (0, M.jsx)(`span`, {
+                className: `h-1.5 w-1.5 rounded-full bg-gray-200`
+            }), (0, M.jsx)(`span`, {
+                className: `h-1.5 w-1.5 rounded-full bg-gray-200`
+            })]
+        }), t[38] = K) : K = t[38];
+        let q;
+        t[39] === Symbol.for(`react.memo_cache_sentinel`) ? (q = (0, M.jsx)(`div`, {
+            className: `rounded-xl border-[0.5px] p-2 shadow-sm`,
+            children: (0, M.jsx)(ce, {
+                className: `icon-2xl`
+            })
+        }), t[39] = q) : q = t[39];
+        let J;
+        t[40] === Symbol.for(`react.memo_cache_sentinel`) ? (J = (0, M.jsxs)(`div`, {
+            className: `flex items-center justify-center gap-4`,
+            children: [K, q, (0, M.jsxs)(`div`, {
+                className: `flex gap-1`,
+                children: [(0, M.jsx)(`span`, {
+                    className: `h-1.5 w-1.5 rounded-full bg-gray-200`
+                }), (0, M.jsx)(`span`, {
+                    className: `h-1.5 w-1.5 rounded-full bg-gray-200`
+                }), (0, M.jsx)(`span`, {
+                    className: `h-1.5 w-1.5 rounded-full bg-gray-200`
+                })]
+            })]
+        }), t[40] = J) : J = t[40];
+        let Y;
+        t[41] === g ? Y = t[42] : (Y = g.formatMessage(N.title), t[41] = g, t[42] = Y);
+        let X;
+        t[43] === Y ? X = t[44] : (X = (0, M.jsx)(`div`, {
+            className: `flex flex-col items-center justify-center`,
+            children: (0, M.jsx)(`h1`, {
+                className: `max-w-[420px] px-4 text-center text-2xl font-semibold`,
+                children: Y
+            })
+        }), t[43] = Y, t[44] = X);
+        let Z;
+        t[45] !== T || t[46] !== I || t[47] !== U ? (Z = (0, M.jsx)(`div`, {
+            className: `border-token-border-default bg-token-bg-primary overflow-hidden rounded-2xl border`,
+            role: `list`,
+            children: U.map((e, t) => {
+                let {
+                    id: r,
+                    icon: i,
+                    label: o
+                } = e;
+                return (0, M.jsx)(`div`, {
+                    role: `listitem`,
+                    children: (0, M.jsxs)(`button`, {
+                        type: `button`,
+                        className: p(`text-token-text-primary hover:bg-token-bg-tertiary focus-visible:ring-token-focus`, `flex w-full items-center gap-3 px-4 py-4 text-start text-sm`, `focus-visible:ring-2 focus-visible:ring-offset-2`, t !== U.length - 1 && `after:bg-token-border-default relative after:absolute after:start-4 after:end-4 after:bottom-0 after:h-px`),
+                        onClick: e => {
+                            if (T != null) {
+                                e.preventDefault();
+                                return
+                            }
+                            I(r)
+                        },
+                        children: [(0, M.jsx)(i, {
+                            className: `h-6 w-6`
+                        }), (0, M.jsx)(`div`, {
+                            className: `flex flex-1 items-center gap-2`,
+                            children: o
+                        }), T === r ? (0, M.jsx)(n, {
+                            className: `h-4 w-4`
+                        }) : (0, M.jsx)(a.ChevronRightSm, {
+                            className: `icon-sm`
+                        })]
+                    })
+                }, r)
+            })
+        }), t[45] = T, t[46] = I, t[47] = U, t[48] = Z) : Z = t[48];
+        let Q;
+        t[49] !== X || t[50] !== Z ? (Q = (0, M.jsxs)(`div`, {
+            className: `flex flex-col gap-6`,
+            children: [J, X, Z]
+        }), t[49] = X, t[50] = Z, t[51] = Q) : Q = t[51];
+        let $;
+        return t[52] !== m || t[53] !== h || t[54] !== G || t[55] !== Q ? ($ = (0, M.jsx)(s, {
+            testId: `modal-mfa-enrollment`,
+            isOpen: m,
+            onClose: h,
+            showCloseButton: !0,
+            contentClassName: `!px-6 !pt-6 md:!pb-[24px]`,
+            headerClassName: `!px-6 !h-[76px] !items-center`,
+            title: G,
+            children: Q
+        }), t[52] = m, t[53] = h, t[54] = G, t[55] = Q, t[56] = $) : $ = t[56], $
+    }
+}));
+export {
+    A as i, k as n, I as r, F as t
+};
 //# sourceMappingURL=94e0eb8c-ythfm4ybtszwhr06.js.map

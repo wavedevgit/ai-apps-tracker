@@ -1,2 +1,174 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Ast as t,Bat as n,DJ as r,F7 as i,Fat as a,Qnt as o,TJ as s,U7 as c,bV as l,fat as u,gat as d,oct as f,pV as p,trt as m,z7 as h}from"./4813494d-tap9fxyhk4ehe0bs.js";function g(e){if(typeof e!=`object`||!e)return;let t=Reflect.get(e,`library_file_reference`);if(typeof t!=`object`||!t)return;let n=Reflect.get(t,`file_id`),r=Reflect.get(t,`library_file_id`),i=Reflect.get(t,`file_name`),a=Reflect.get(t,`directory_id`);if(!(typeof n!=`string`||typeof r!=`string`||typeof i!=`string`||a!=null&&typeof a!=`string`))return{fileId:n,libraryFileId:r,fileName:i,directoryId:a??null}}async function _(e,n,r,o,c={}){let l={...y(c),...o?void 0:s({conversationId:n,projectId:c.projectId}),...c.requestSource?{"x-chatgpt-sandbox-download-source":c.requestSource}:{}},d=o?await i.safeGet(`/share/{shared_conversation_id}/file_from_message/{message_id}`,{parameters:{path:{shared_conversation_id:n,message_id:e},query:{file_path:r}},authOption:u.SendIfAvailable,signal:c.signal}):await i.safeGet(`/conversation/{conversation_id}/interpreter/download`,{parameters:{path:{conversation_id:n},query:{message_id:e,sandbox_path:r,...c.downloadIntent===void 0?{}:{download_intent:c.downloadIntent}}},...l?{additionalHeaders:l}:{},signal:c.signal});if(d.status===t.Success){let e=o?void 0:g(d.metadata),n=d.metadata?.file_id;return{status:t.Success,download_url:d.download_url,...e?{libraryFileReference:e}:{},...typeof n==`string`?{file_id:n}:{}}}if(d.status===t.Retry)return{status:t.Retry};throw new a(`Could not download file from advanced data analysis`,`error_code`in d?d.error_code:`unknown_error`)}async function v(e,n,r,i,a={}){let o=b(a.waitForLibraryFileReference?{...a,maxAttempts:a.maxAttempts??20,maxRetryDurationMs:a.maxRetryDurationMs??6e4}:a),s=performance.now(),c=o.initialDelayMs,l=0;for(;;){a.signal?.throwIfAborted(),l+=1;let u=await _(e,n,r,i,a),d=a.waitForLibraryFileReference===!0&&u.status===t.Success&&u.libraryFileReference==null;if(u.status!==t.Retry&&!d||l>=o.maxAttempts)return u;let f=o.maxRetryDurationMs-(performance.now()-s);if(f<=0)return u;await S(Math.min(c,f),a.signal),c=Math.min(Math.ceil(c*o.backoffMultiplier),o.maxDelayMs)}}function y({projectId:e,ownerUserId:t}){if(!(!e||!l(e)))return{"chatgpt-project-id":e,...t?{"chatgpt-conv-owner-id":t}:{}}}function b(e={}){let t=o(C),n=x(e.initialRetryDelayMs??e.retryIntervalMs??t.get(`initial_retry_delay_ms`,500),500,250,w),r=x(e.maxAttempts??t.get(`max_attempts`,10),10,1,20);return{initialDelayMs:n,maxDelayMs:x(e.maxRetryDelayMs??t.get(`max_retry_delay_ms`,4e3),w,n,D),maxRetryDurationMs:x(e.maxRetryDurationMs??t.get(`max_retry_duration_ms`,15e3),T,0,D),backoffMultiplier:x(e.retryBackoffMultiplier??t.get(`backoff_multiplier`,1.6),E,1,10),maxAttempts:r}}function x(e,t,n,r){let i=Number(e);return Number.isFinite(i)?Math.min(Math.max(i,n),r):t}function S(e,t){return new Promise((n,r)=>{if(t?.aborted){r(Object.assign(Error(`Aborted`),{name:`AbortError`}));return}let i=setTimeout(()=>{t?.removeEventListener(`abort`,a),n()},e),a=()=>{clearTimeout(i),r(Object.assign(Error(`Aborted`),{name:`AbortError`}))};t?.addEventListener(`abort`,a,{once:!0})})}var C,w,T,E,D,O=e((()=>{f(),r(),p(),d(),n(),h(),m(),c(),C=`777542316`,w=4e3,T=15e3,E=1.6,D=6e4}));export{O as n,v as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ast as t,
+    Bat as n,
+    DJ as r,
+    F7 as i,
+    Fat as a,
+    Qnt as o,
+    TJ as s,
+    U7 as c,
+    bV as l,
+    fat as u,
+    gat as d,
+    oct as f,
+    pV as p,
+    trt as m,
+    z7 as h
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+
+function g(e) {
+    if (typeof e != `object` || !e) return;
+    let t = Reflect.get(e, `library_file_reference`);
+    if (typeof t != `object` || !t) return;
+    let n = Reflect.get(t, `file_id`),
+        r = Reflect.get(t, `library_file_id`),
+        i = Reflect.get(t, `file_name`),
+        a = Reflect.get(t, `directory_id`);
+    if (!(typeof n != `string` || typeof r != `string` || typeof i != `string` || a != null && typeof a != `string`)) return {
+        fileId: n,
+        libraryFileId: r,
+        fileName: i,
+        directoryId: a ?? null
+    }
+}
+async function _(e, n, r, o, c = {}) {
+    let l = {
+            ...y(c),
+            ...o ? void 0 : s({
+                conversationId: n,
+                projectId: c.projectId
+            }),
+            ...c.requestSource ? {
+                "x-chatgpt-sandbox-download-source": c.requestSource
+            } : {}
+        },
+        d = o ? await i.safeGet(`/share/{shared_conversation_id}/file_from_message/{message_id}`, {
+            parameters: {
+                path: {
+                    shared_conversation_id: n,
+                    message_id: e
+                },
+                query: {
+                    file_path: r
+                }
+            },
+            authOption: u.SendIfAvailable,
+            signal: c.signal
+        }) : await i.safeGet(`/conversation/{conversation_id}/interpreter/download`, {
+            parameters: {
+                path: {
+                    conversation_id: n
+                },
+                query: {
+                    message_id: e,
+                    sandbox_path: r,
+                    ...c.downloadIntent === void 0 ? {} : {
+                        download_intent: c.downloadIntent
+                    }
+                }
+            },
+            ...l ? {
+                additionalHeaders: l
+            } : {},
+            signal: c.signal
+        });
+    if (d.status === t.Success) {
+        let e = o ? void 0 : g(d.metadata),
+            n = d.metadata?.file_id;
+        return {
+            status: t.Success,
+            download_url: d.download_url,
+            ...e ? {
+                libraryFileReference: e
+            } : {},
+            ...typeof n == `string` ? {
+                file_id: n
+            } : {}
+        }
+    }
+    if (d.status === t.Retry) return {
+        status: t.Retry
+    };
+    throw new a(`Could not download file from advanced data analysis`, `error_code` in d ? d.error_code : `unknown_error`)
+}
+async function v(e, n, r, i, a = {}) {
+    let o = b(a.waitForLibraryFileReference ? {
+            ...a,
+            maxAttempts: a.maxAttempts ?? 20,
+            maxRetryDurationMs: a.maxRetryDurationMs ?? 6e4
+        } : a),
+        s = performance.now(),
+        c = o.initialDelayMs,
+        l = 0;
+    for (;;) {
+        a.signal?.throwIfAborted(), l += 1;
+        let u = await _(e, n, r, i, a),
+            d = a.waitForLibraryFileReference === !0 && u.status === t.Success && u.libraryFileReference == null;
+        if (u.status !== t.Retry && !d || l >= o.maxAttempts) return u;
+        let f = o.maxRetryDurationMs - (performance.now() - s);
+        if (f <= 0) return u;
+        await S(Math.min(c, f), a.signal), c = Math.min(Math.ceil(c * o.backoffMultiplier), o.maxDelayMs)
+    }
+}
+
+function y({
+    projectId: e,
+    ownerUserId: t
+}) {
+    if (!(!e || !l(e))) return {
+        "chatgpt-project-id": e,
+        ...t ? {
+            "chatgpt-conv-owner-id": t
+        } : {}
+    }
+}
+
+function b(e = {}) {
+    let t = o(C),
+        n = x(e.initialRetryDelayMs ?? e.retryIntervalMs ?? t.get(`initial_retry_delay_ms`, 500), 500, 250, w),
+        r = x(e.maxAttempts ?? t.get(`max_attempts`, 10), 10, 1, 20);
+    return {
+        initialDelayMs: n,
+        maxDelayMs: x(e.maxRetryDelayMs ?? t.get(`max_retry_delay_ms`, 4e3), w, n, D),
+        maxRetryDurationMs: x(e.maxRetryDurationMs ?? t.get(`max_retry_duration_ms`, 15e3), T, 0, D),
+        backoffMultiplier: x(e.retryBackoffMultiplier ?? t.get(`backoff_multiplier`, 1.6), E, 1, 10),
+        maxAttempts: r
+    }
+}
+
+function x(e, t, n, r) {
+    let i = Number(e);
+    return Number.isFinite(i) ? Math.min(Math.max(i, n), r) : t
+}
+
+function S(e, t) {
+    return new Promise((n, r) => {
+        if (t?.aborted) {
+            r(Object.assign(Error(`Aborted`), {
+                name: `AbortError`
+            }));
+            return
+        }
+        let i = setTimeout(() => {
+                t?.removeEventListener(`abort`, a), n()
+            }, e),
+            a = () => {
+                clearTimeout(i), r(Object.assign(Error(`Aborted`), {
+                    name: `AbortError`
+                }))
+            };
+        t?.addEventListener(`abort`, a, {
+            once: !0
+        })
+    })
+}
+var C, w, T, E, D, O = e((() => {
+    f(), r(), p(), d(), n(), h(), m(), c(), C = `777542316`, w = 4e3, T = 15e3, E = 1.6, D = 6e4
+}));
+export {
+    O as n, v as t
+};
 //# sourceMappingURL=19ad7347-iukyqy7fln323m3u.js.map

@@ -1,2 +1,26 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Aot as t,I1 as n,Mot as r,Not as i,S1 as a,b1 as o,f8 as s,jot as c,p8 as l}from"./4813494d-ed29bs6yiwucn7st.js";function u(){let e=o();return d()&&!e.isError&&a()?.data.orbitAvailable===!0}var d,f=e((()=>{s(),n(),c(),d=l(()=>!r()&&t()?.user?.id!=null,i)}));export{u as n,f as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Aot as t,
+    I1 as n,
+    Mot as r,
+    Not as i,
+    S1 as a,
+    b1 as o,
+    f8 as s,
+    jot as c,
+    p8 as l
+} from "./4813494d-ed29bs6yiwucn7st.js";
+
+function u() {
+    let e = o();
+    return d() && !e.isError && a()?.data.orbitAvailable === !0
+}
+var d, f = e((() => {
+    s(), n(), c(), d = l(() => !r() && t()?.user?.id != null, i)
+}));
+export {
+    u as n, f as t
+};
 //# sourceMappingURL=b2cbd5c7-cm7m8nsgjlc7qeyb.js.map

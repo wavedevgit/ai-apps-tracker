@@ -1,3 +1,3608 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/34e6c69f-nbujtc1fg2jjndft.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-tap9fxyhk4ehe0bs.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/conversation-small-nmt18uiom3b14vca.js","assets/30901919-niqyapppecmq5jkn.js","assets/c470f5ab-uuoa2gfm4goj6p9f.js","assets/0e5afe53-f7up6uuou2fv3lyg.js","assets/conversation-small-bwtqiuwj.css","assets/18931466-e88cyrkcd720jjph.js","assets/c2675c8c-h5ybkhdzcoblzzdu.js","assets/82782bc9-g3liom11amtlr9kq.js","assets/8b34dbc2-ojcl97ddvu2212q0.js","assets/global-modals-lv5n3ujm.css","assets/486ed215-eoa8mzpfuwusahxf.js","assets/1c919af1-n3qwx9w7ipxrf1ap.js","assets/74a883a0-0bl4w620esk73bmz.js","assets/4b68ab38-hqs0yc0b0yhvv7p6.js","assets/9d60841e-e49t3yx590vsf159.js","assets/e981ddae-jmgg6ibiidqeeif6.js","assets/3e47c24c-fk412hm0sfn783fi.js","assets/707eab0c-fwyop6b3ijt0i6j7.js","assets/bcae0416-kg7dr2sbww6cg1yo.js","assets/d4c740a3-m98a0dejurzr8grq.js","assets/Button-ijivgymd.css","assets/8d3260bc-np6v8cydoj4utapm.js","assets/170322a3-osj2nsczby2m2x8s.js","assets/620167af-jq8ioyd5itarfde4.js","assets/b453068a-lz9p8iypelcxzs6g.js","assets/65b7af15-fodmmka45ske14tt.js","assets/38f75407-meu5vz7s7g1vq3zn.js","assets/203d6bff-fv9pwh0hujue6nz0.js","assets/db2560a5-extao3ot6g6ykxmg.js","assets/d91ece2a-gttdbdrglazyr8rn.js","assets/b26e60ff-f8jg7r08bi0azhkw.js","assets/5054a313-jswom1iph68k881l.js","assets/0b24e85b-gj7lxfooquzo5tub.js","assets/20e2c00e-dsex7gmdhijvqlfo.js","assets/0b0692ab-ii8bdlhgdua9grxz.js","assets/4e1f6607-dgpgw6d7oytc9f85.js","assets/06dfbf77-luzq88v2c6lb7odb.js","assets/76d6530a-jzfyy5ghc250rlg8.js","assets/a4e570c1-iuksjeff1siuy8s1.js","assets/ComposerDictationWaveform-d73bir8z.css","assets/1aa4cb0b-oafna8jt4rb2nmz2.js","assets/7004d116-dtkyeg51rb6ho84f.js","assets/Image-nnxrmk5d.css","assets/3cb8201e-c1qyptripmosnrr0.js","assets/b08afc98-hhrzqa96jwiah246.js","assets/bcae0416-hovub9z7ufk8htsh.js","assets/d1a7b01b-lcaxsndjp9a3w14h.js","assets/0d978407-ceckrisx59r1sg1c.js","assets/eadfdb53-h8cgx8llg62bz4d9.js","assets/852051ee-o16p7ek375wtpbbu.js","assets/6313cbac-e5hl863fl4prr1xq.js","assets/e231198e-jl2ibjby4prulgvg.js","assets/82a96f05-falqj54vlsynpsc2.js","assets/16a2233e-okjuup9p892pg3e7.js","assets/94e0eb8c-ihzxs0mxwp6wywyq.js","assets/plugin-details-page-ew49talu.css","assets/621a6c6d-oykkxrz3n3699seq.js","assets/16091175-lj7ybyfr4b0kr6tl.js","assets/b1fefae4-eth7ns9gh1x1tnkt.js","assets/266db272-i5gxiexjiqqlb4sj.js","assets/24cdbdd5-dx8bpwke3u75tts9.js","assets/profile-v2-dialog-f6kvsp0h.css","assets/acf00cb5-oyut24yxlkfcr3wz.js","assets/5208238a-omwmalu36fu8jxtz.js","assets/af004db9-pfp7d41sgaj6mosy.js","assets/07c7be17-cudbbmm3g1bbd3ld.js","assets/33a2cedd-cdennatkjfxa1di4.js","assets/d880ef91-kuqyg17ckdsfs5dk.js","assets/96098dcc-klq0jt85cyrba19u.js","assets/f6a81ab7-h235d7cojfv2jsnu.js","assets/f8d34c7f-bgpf1el3dr1j1jiy.js","assets/0fbccedd-g9ixjjesydyljcto.js","assets/c19d65aa-m63j5yal71riy79r.js","assets/051ead45-hajnnq1kur4ayj67.js","assets/8f504e8b-h2tw778yv9csz4m0.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$0 as n,$tt as r,At as i,B1 as a,Bat as o,DG as s,F7 as c,Iy as l,J3 as u,JT as d,Jt as f,KT as p,Ka as m,Lk as h,Ly as g,Nk as _,P1 as v,P5 as ee,Pat as y,Q3 as b,R1 as x,S5 as S,SJ as te,Snt as C,Wa as w,X0 as T,X1 as E,YT as D,Ynt as ne,Z0 as O,_q as k,aJ as A,cn as j,dat as re,g8 as M,hn as N,iJ as P,ih as F,ix as I,lJ as L,lat as R,mJ as z,n2 as ie,oct as ae,oq as B,qT as oe,rx as se,th as V,trt as ce,uJ as le,vn as ue,wG as de,wnt as H,xG as fe,xnt as pe,yst as me,z7 as he}from"./4813494d-tap9fxyhk4ehe0bs.js";import{A as ge,At as _e,Bn as ve,Ht as ye,Kt as be,N as xe,Nn as U,Nt as Se,O as W,Q as Ce,Rn as we,Rt as Te,Ut as Ee,Vn as De,cn as Oe,gt as ke,it as Ae,kt as je,ln as Me,s as Ne,tt as Pe,wn as Fe,zn as Ie,zt as Le}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$ot as Re,Aat as ze,BCn as Be,Blt as Ve,Dot as He,Eat as Ue,Eot as We,Fot as G,GGn as Ge,Got as Ke,HCn as qe,Hlt as Je,IHn as Ye,Ijt as Xe,Jot as Ze,Kot as Qe,LHn as $e,Ljt as et,Mat as tt,Oat as nt,Oot as rt,Pat as it,Qot as at,RHn as ot,Tat as K,UGn as st,Uat as ct,Uot as lt,Vot as ut,WCn as dt,Wat as ft,Wot as pt,X4t as mt,Yot as ht,Z4t as gt,Zot as _t,aD as vt,aKn as yt,ast as bt,dst as xt,est as q,fst as St,grt as Ct,hkt as wt,hrt as Tt,i6t as Et,iTn as Dt,jot as Ot,kot as kt,l$ as At,lst as jt,m6t as Mt,mkt as Nt,mst as Pt,nTn as Ft,not as It,nst as Lt,oD as Rt,oot as zt,ost as Bt,pst as Vt,rTn as Ht,rst as Ut,tKn as Wt,tTn as Gt,tst as Kt,u$ as qt,ust as Jt,wat as Yt,xat as Xt,yat as Zt,zot as Qt}from"./conversation-small-nmt18uiom3b14vca.js";import{$x as $t,Av as en,Bp as tn,By as nn,Cf as rn,Fx as an,Ix as on,Kr as sn,Mv as cn,Nv as ln,Qx as un,Vp as dn,Vy as fn,bS as pn,dC as mn,gb as hn,jv as gn,mb as _n,nS as vn,qr as yn,rS as bn,uC as xn,wf as Sn,yS as Cn}from"./30901919-niqyapppecmq5jkn.js";import{Dd as wn,Lx as Tn,M_ as En,N_ as Dn,Xd as On,ba as kn,fS as An,qx as jn,sS as Mn,ya as Nn}from"./c2675c8c-h5ybkhdzcoblzzdu.js";import{$x as Pn,Bp as Fn,Bx as In,D as Ln,G as Rn,Gx as zn,Hp as Bn,Hx as Vn,Kx as Hn,O as Un,Py as Wn,Qx as Gn,U as Kn,Ux as qn,Vp as Jn,Vx as Yn,W as Xn,Wx as Zn,Xx as Qn,bu as $n,cy as er,iS as tr,qx as nr,rS as rr,sy as ir,tS as ar,uy as or,xu as sr,xy as cr}from"./8b34dbc2-ojcl97ddvu2212q0.js";import{G as lr,K as ur}from"./c470f5ab-uuoa2gfm4goj6p9f.js";import{n as dr,t as fr}from"./5b6acc4d-c2wgpuw8ywb03on8.js";import{n as pr,t as mr}from"./e18c46cf-gso23y5yqg4kmxo6.js";import{n as hr,t as gr}from"./b5855e1f-fqhtch8d4kztu3y2.js";import{n as _r,t as vr}from"./c96c6d5b-jac8f7pyzb9q5hre.js";import{n as yr,t as br}from"./9f2e6d33-h33rm8r24h08gyr1.js";import{n as xr,r as Sr,t as Cr}from"./7e73986a-fm3qy57kflthjdu6.js";import{a as wr,i as Tr,r as Er,t as Dr}from"./16091175-lj7ybyfr4b0kr6tl.js";import{i as Or,n as kr,r as Ar,t as jr}from"./266db272-i5gxiexjiqqlb4sj.js";import{a as Mr,i as Nr,n as Pr,r as Fr}from"./57f927e1-ja5g2676gqqw4nvu.js";import{n as Ir,t as Lr}from"./24cdbdd5-dx8bpwke3u75tts9.js";import{n as Rr,t as zr}from"./33a2cedd-cdennatkjfxa1di4.js";function Br(e){"use forget";let t=(0,Vr.c)(3),n=!!f(),r;return t[0]!==e||t[1]!==n?(r=(0,Hr.jsx)(ze,{...e,reducedMotion:n,Presence:N,MotionDiv:j.div}),t[0]=e,t[1]=n,t[2]=r):r=t[2],r}var Vr,Hr,Ur=e((()=>{Vr=Fe(),K(),i(),Hr=ve()}));function Wr(e){let{plugin_id:t}=e;return t!=null&&!dt(t)?[t]:[]}function Gr(e){return e.data==null?[]:[e.data.plugin]}function Kr(e){return[e.id,e]}function qr(e){return[e.id,e]}function Jr(e){return e.isLoading}function Yr(e){return(0,J.jsx)(Br,{...e})}function Xr(e){return(0,J.jsx)(U,{id:`profile.v2.fastMode.value`,defaultMessage:`{percent, number, percent} of runs`,values:{percent:e/100}})}function Zr(e,t){return(0,J.jsx)(Tt,{className:`size-14 rounded-md`},e.plugin_id??t)}function Qr(e){let{children:t,tooltip:n}=e;return(0,J.jsx)(Xe,{content:n,children:e=>(0,J.jsx)(`button`,{...e,type:`button`,"aria-label":n,className:`interactive-button cursor-default rounded-md`,children:t})})}function $r(e){let{children:t,name:n}=e;return(0,J.jsx)(Xe,{content:n,contentTheme:`unstyled`,hoverDelayMs:0,side:`bottom-center`,sideOffset:0,children:e=>(0,ni.cloneElement)(t,e)})}function ei(e){return e===`connector_openai_browser`||e===`plugin_connector_1p_51c1ba70f47481919149861084681943`}var ti,ni,J,ri,ii,ai,oi,si,ci,li,ui,di,fi=e((()=>{ti=Fe(),K(),le(),ur(),sn(),tn(),vn(),rn(),xn(),A(),et(),m(),qt(),Ct(),Dt(),Be(),Yt(),cr(),x(),O(),Ne(),ni=t(De()),we(),Ce(),Ur(),Dr(),o(),re(),J=ve(),Me(),ri=At(),ii=T(()=>Oe(()=>import(`./34e6c69f-nbujtc1fg2jjndft.js`).then(e=>e.ProfilePluginDetails),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60]))),ai={browser:At(`search`),chrome:L,computer_use:At(`cursor`),documents:dn,library:bn,openai_library:bn,pdf:At(`pdf`),ponytail:At(`default`),presentations:yn,sites:mn,spreadsheets:lr,visualize:At(`chart`)},oi=e=>{"use forget";let t=(0,ti.c)(76),{stats:n,insights:r,isProfileV2:i,showInsights:a,showPlugins:o}=e,s=i!==void 0&&i,c=o===void 0||o,l=Ie(),[u,d]=(0,ni.useState)(null),f=xe(),p=r??(n?xt(n):{}),m=s?c?Bt(p.invocations):[]:p.invocations??[],h=v(),g={accountId:h?.id,hasWorkspace:!!h?.getWorkspaceId(),locale:l.locale,platform:`chat`,productSku:Ht.CONNECTOR_SETTING},{data:_}=W({...ir(g),enabled:s&&m.length>0&&h!=null}),ee;t[0]!==_||t[1]!==s?(ee=e=>e.plugin_id!=null&&dt(e.plugin_id)&&!(s&&_?.some(t=>t.id===e.plugin_id))?[e.plugin_id]:[],t[0]=_,t[1]=s,t[2]=ee):ee=t[2];let b=[...new Set(m.flatMap(ee))],x=W({...or(b,g,{hydrateApps:!0}),enabled:b.length>0&&(s||!0)}),S=s?[...new Set(m.flatMap(Wr))]:[],te=ge({queries:S.map(e=>({queryKey:[`profile-plugin-alias`,h?.normalizedAccountUserId,g,e],staleTime:6e4,retry:!1,enabled:!0,queryFn:async()=>{try{let t=await bt(e,async e=>{let{name:t,scope:n,pageToken:r}=e,i=await Wn(t,r,g,50,n);return{plugins:i.plugins,nextPageToken:i.page.cursor}});return Tr(t==null?`failure`:`success`),t}catch(e){let t=e;throw t instanceof y||R.addError(Error(`Profile plugin resolution failed`)),Tr(`failure`),t}}}))}),C;t[3]===s?C=t[4]:(C=e=>!s&&e.plugin_id!=null&&qe(e.plugin_id)&&e.plugin_id.endsWith(`@openai-curated-remote`)&&ci(e)==null?[e.plugin_id]:[],t[3]=s,t[4]=C);let T=ge({queries:[...new Set(m.flatMap(C))].map(e=>({...er(f,e,g,{includeInstalledPlugins:!1}),enabled:!0,retry:!1}))}),E;t[5]===x.data?E=t[6]:(E=x.data??[],t[5]=x.data,t[6]=E);let D;t[7]!==T||t[8]!==E?(D=[...E,...T.flatMap(Gr)],t[7]=T,t[8]=E,t[9]=D):D=t[9];let ne=D,O=new Map([...(x.data??[]).map(Kr),...te.flatMap((e,t)=>e.data==null?[]:[[S[t],e.data]]),...(_??[]).map(qr)]),k=s&&(b.length>0&&x.isLoading||te.some(Jr)),A=s&&p.invocations!=null?{...p,invocations:k?m:m.filter(e=>{let{plugin_id:t}=e;return t!=null&&O.has(t)})}:p,j=s?(e,t)=>{let n=e.plugin_id==null?null:O.get(e.plugin_id);n!=null&&(t.focus(),d({invocation:e,plugin:n}))}:void 0,re=s?`stacked`:`columns`,M=s?Yr:void 0,N=s?Xr:void 0,P;t[10]===s?P=t[11]:(P=s?(0,J.jsxs)(J.Fragment,{children:[(0,J.jsx)(Sn,{"aria-hidden":`true`,className:`icon-xs`}),(0,J.jsxs)(`div`,{className:`flex items-center gap-1`,children:[(0,J.jsx)(U,{id:`profile.activity.plugins.empty`,defaultMessage:`No plugins used yet ·`}),(0,J.jsx)(Ae,{className:`text-token-text-tertiary hover:text-token-text-secondary underline underline-offset-2`,to:`/plugins`,children:(0,J.jsx)(U,{id:`profile.activity.plugins.browse`,defaultMessage:`Browse`})})]})]}):(0,J.jsxs)(J.Fragment,{children:[(0,J.jsx)(Sn,{"aria-hidden":`true`,className:`icon-xs`}),(0,J.jsx)(U,{id:`chatgpt.profile.activity.invocations.empty`,defaultMessage:`No plugins or skills used yet`})]}),t[10]=s,t[11]=P);let F,I,L;t[12]===l?(F=t[13],I=t[14],L=t[15]):(F=e=>l.formatNumber(e),I=e=>l.formatNumber(e/100,{maximumFractionDigits:0,style:`percent`}),L=e=>l.formatMessage({id:`chatgpt.profile.activity.invocations.run_count`,defaultMessage:`{runs, plural, one {# run} other {# runs}}`},{runs:e}),t[12]=l,t[13]=F,t[14]=I,t[15]=L);let z;t[16]!==m||t[17]!==k?(z=k?(0,J.jsx)(`div`,{"aria-busy":`true`,className:`flex flex-wrap gap-x-4 gap-y-8 pb-6`,children:m.map(Zr)}):void 0,t[16]=m,t[17]=k,t[18]=z):z=t[18];let ie;t[19]===l?ie=t[20]:(ie=l.formatMessage({id:`chatgpt.profile.activity.section.aria_label`,defaultMessage:`Activity`}),t[19]=l,t[20]=ie);let ae;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(ae=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.fast_mode.label`,defaultMessage:`Fast Mode`}),t[21]=ae):ae=t[21];let B;t[22]===l?B=t[23]:(B=l.formatMessage({id:`chatgpt.profile.activity.insights.fast_mode.tooltip`,defaultMessage:`How often you use /fast mode`}),t[22]=l,t[23]=B);let oe;t[24]===s?oe=t[25]:(oe=s?(0,J.jsx)(U,{id:`profile.v2.insights.title`,defaultMessage:`Insights`}):(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.heading`,defaultMessage:`Activity insights`}),t[24]=s,t[25]=oe);let se;t[26]===Symbol.for(`react.memo_cache_sentinel`)?(se=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.reasoning_effort.label`,defaultMessage:`Most used reasoning`}),t[26]=se):se=t[26];let V;t[27]===l?V=t[28]:(V=l.formatMessage({id:`chatgpt.profile.activity.insights.reasoning_effort.tooltip`,defaultMessage:`Your most used reasoning effort`}),t[27]=l,t[28]=V);let ce,le;t[29]===Symbol.for(`react.memo_cache_sentinel`)?(ce=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.value.none`,defaultMessage:`None`}),le=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.value.not_used`,defaultMessage:`Not used`}),t[29]=ce,t[30]=le):(ce=t[29],le=t[30]);let ue;t[31]===s?ue=t[32]:(ue=s?(0,J.jsx)(U,{id:`profile.v2.plugins.title`,defaultMessage:`Top plugins`}):(0,J.jsx)(U,{id:`chatgpt.profile.activity.invocations.heading`,defaultMessage:`Most used plugins`}),t[31]=s,t[32]=ue);let de;t[33]===Symbol.for(`react.memo_cache_sentinel`)?(de=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.skills_explored.label`,defaultMessage:`Skills explored`}),t[33]=de):de=t[33];let H;t[34]===l?H=t[35]:(H=l.formatMessage({id:`chatgpt.profile.activity.insights.skills_explored.tooltip`,defaultMessage:`The number of unique skills you've used`}),t[34]=l,t[35]=H);let fe;t[36]===Symbol.for(`react.memo_cache_sentinel`)?(fe=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.total_skills_used.label`,defaultMessage:`Total skills used`}),t[36]=fe):fe=t[36];let pe;t[37]===l?pe=t[38]:(pe=l.formatMessage({id:`chatgpt.profile.activity.insights.total_skills_used.tooltip`,defaultMessage:`Total skill uses`}),t[37]=l,t[38]=pe);let me;t[39]===Symbol.for(`react.memo_cache_sentinel`)?(me=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.total_chats.label`,defaultMessage:`Total chats`}),t[39]=me):me=t[39];let he;t[40]===l?he=t[41]:(he=l.formatMessage({id:`chatgpt.profile.activity.insights.total_chats.tooltip`,defaultMessage:`Total unique conversations`}),t[40]=l,t[41]=he);let _e;t[42]!==ie||t[43]!==B||t[44]!==oe||t[45]!==V||t[46]!==ue||t[47]!==H||t[48]!==pe||t[49]!==he?(_e={ariaLabel:ie,fastModeLabel:ae,fastModeTooltip:B,insightsTitle:oe,mostUsedReasoningLabel:se,mostUsedReasoningTooltip:V,none:ce,notUsed:le,pluginsTitle:ue,skillsExploredLabel:de,skillsExploredTooltip:H,totalSkillsUsedLabel:fe,totalSkillsUsedTooltip:pe,totalThreadsLabel:me,totalThreadsTooltip:he},t[42]=ie,t[43]=B,t[44]=oe,t[45]=V,t[46]=ue,t[47]=H,t[48]=pe,t[49]=he,t[50]=_e):_e=t[50];let ve=e=>{let{invocation:t,name:n}=e;return(0,J.jsx)(si,{invocation:t,isProfileV2:s,name:n,plugin:s?_?.find(e=>e.id===O.get(t.plugin_id??``)?.id)??null:ui(t,ne)})},ye;t[51]!==l||t[52]!==s?(ye=e=>s?tt(l,e):(0,J.jsx)(di,{effort:e}),t[51]=l,t[52]=s,t[53]=ye):ye=t[53];let be=s?$r:void 0,Se;t[54]!==a||t[55]!==c||t[56]!==j||t[57]!==re||t[58]!==M||t[59]!==N||t[60]!==P||t[61]!==F||t[62]!==I||t[63]!==L||t[64]!==z||t[65]!==_e||t[66]!==ve||t[67]!==ye||t[68]!==be||t[69]!==A?(Se=(0,J.jsx)(_t,{onInvocationClick:j,layout:re,renderSection:M,formatFastModeUsage:N,textSizeClassName:`text-sm`,showInsights:a,showPlugins:c,emptyInvocations:P,formatNumber:F,formatPercent:I,formatRuns:L,loadingInvocations:z,insights:A,messages:_e,renderFeatureValue:Qr,renderInvocationIcon:ve,renderReasoningEffort:ye,secondaryTextClassName:`text-token-text-secondary`,renderInvocationTooltip:be}),t[54]=a,t[55]=c,t[56]=j,t[57]=re,t[58]=M,t[59]=N,t[60]=P,t[61]=F,t[62]=I,t[63]=L,t[64]=z,t[65]=_e,t[66]=ve,t[67]=ye,t[68]=be,t[69]=A,t[70]=Se):Se=t[70];let Ce;t[71]===u?Ce=t[72]:(Ce=u!=null&&(0,J.jsx)(w,{for:ii,withProps:{name:u.invocation.plugin_name??``,pluginId:u.plugin.id},open:!0,onClose:()=>d(null)}),t[71]=u,t[72]=Ce);let we;return t[73]!==Se||t[74]!==Ce?(we=(0,J.jsxs)(J.Fragment,{children:[Se,Ce]}),t[73]=Se,t[74]=Ce,t[75]=we):we=t[75],we},si=e=>{"use forget";let t=(0,ti.c)(32),{invocation:n,name:r,plugin:i,isProfileV2:a}=e,o=a?`size-10 shrink-0`:`icon-sm shrink-0`,s;t[0]!==n.plugin_id||t[1]!==a||t[2]!==r||t[3]!==i?.id||t[4]!==i?.name?(s=a&&[i?.name,i?.id,n.plugin_id?.split(`@`)[0],r].some(ei)?P():null,t[0]=n.plugin_id,t[1]=a,t[2]=r,t[3]=i?.id,t[4]=i?.name,t[5]=s):s=t[5];let c=s,l;t[6]!==c||t[7]!==o?(l=c==null?null:(0,J.jsx)(`img`,{alt:``,className:o,src:c.logo}),t[6]=c,t[7]=o,t[8]=l):l=t[8];let u=l,d=n.type===`skill`?ri:Sn,f=a?`size-8 shrink-0`:o,p;t[9]!==d||t[10]!==f?(p=(0,J.jsx)(d,{"aria-hidden":`true`,className:f}),t[9]=d,t[10]=f,t[11]=p):p=t[11];let m=p,h;if(t[12]!==u||t[13]!==m||t[14]!==o||t[15]!==n||t[16]!==r){let e=ci(n,n.type===`plugin`?r:void 0);h=u??(e==null?m:(0,ni.createElement)(e,{"aria-hidden":!0,className:o})),t[12]=u,t[13]=m,t[14]=o,t[15]=n,t[16]=r,t[17]=h}else h=t[17];let g=h;if(a&&u==null&&n.logo_url!=null){let e;t[18]!==m||t[19]!==n.logo_url||t[20]!==r?(e=(0,J.jsx)(Zt,{fallbackIcon:m,iconUrl:n.logo_url,isNextToLabel:!0,name:r,variant:`inlineLarge`}),t[18]=m,t[19]=n.logo_url,t[20]=r,t[21]=e):e=t[21],g=e}if(i==null&&(a||n.logo_url==null))return g;let _;t[22]!==a||t[23]!==i?(_=a?{pluginIconDarkUrl:i?.interface?.logo_dark,pluginIconUrl:i?.interface?.logo}:i==null?{}:Xt(i),t[22]=a,t[23]=i,t[24]=_):_=t[24];let{pluginIconDarkUrl:v,pluginIconUrl:ee}=_,y=a?void 0:`size-4! shrink-0`,b=ee??(a?void 0:n.logo_url),x=a?`inlineLarge`:`inline`,S;return t[25]!==g||t[26]!==r||t[27]!==v||t[28]!==y||t[29]!==b||t[30]!==x?(S=(0,J.jsx)(Zt,{className:y,fallbackIcon:g,iconDarkUrl:v,iconUrl:b,isNextToLabel:!0,name:r,variant:x}),t[25]=g,t[26]=r,t[27]=v,t[28]=y,t[29]=b,t[30]=x,t[31]=S):S=t[31],S},ci=(e,t)=>{for(let n of li(e,t)){let e=ai[n];if(e!=null)return e;let t=Gt[n];if(t!=null)return Ft[t]?.icon??null}return null},li=(e,t)=>[e.plugin_id?.split(`@`)[0],e.plugin_name,t].flatMap(e=>{let t=e?.trim().toLowerCase().replace(/^(?:connector|plugin)[_-]/u,``).split(/[^a-z0-9]+/gu).filter(e=>e.length>0).join(`_`);return t==null?[]:[t]}),ui=(e,t)=>{if(e.plugin_id!=null){let n=t.find(({id:t})=>t===e.plugin_id);if(n!=null)return n}let n=e.plugin_name??(e.plugin_id!=null&&qe(e.plugin_id)?e.plugin_id.slice(0,e.plugin_id.lastIndexOf(`@`)):e.type===`skill`?e.skill_name?.split(`:`)[0]:null);return t.find(({name:e})=>e.toLowerCase()===n?.toLowerCase())??null},di=e=>{"use forget";let t=(0,ti.c)(10),{effort:n}=e;switch(n){case`none`:{let e;return t[0]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.reasoning_effort.value.none`,defaultMessage:`None`}),t[0]=e):e=t[0],e}case`minimal`:{let e;return t[1]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.reasoning_effort.value.minimal`,defaultMessage:`Minimal`}),t[1]=e):e=t[1],e}case`low`:{let e;return t[2]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.reasoning_effort.value.low`,defaultMessage:`Low`}),t[2]=e):e=t[2],e}case`medium`:{let e;return t[3]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.reasoning_effort.value.medium`,defaultMessage:`Medium`}),t[3]=e):e=t[3],e}case`high`:{let e;return t[4]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.reasoning_effort.value.high`,defaultMessage:`High`}),t[4]=e):e=t[4],e}case`xhigh`:{let e;return t[5]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.reasoning_effort.value.extra_high`,defaultMessage:`Extra high`}),t[5]=e):e=t[5],e}case`max`:{let e;return t[6]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.reasoning_effort.value.max`,defaultMessage:`Max`}),t[6]=e):e=t[6],e}case`ultra`:{let e;return t[7]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,J.jsx)(U,{id:`chatgpt.profile.activity.insights.reasoning_effort.value.ultra`,defaultMessage:`Ultra`}),t[7]=e):e=t[7],e}default:{let e;return t[8]===n?e=t[9]:(e=(0,J.jsx)(J.Fragment,{children:n}),t[8]=n,t[9]=e),e}}}}));function pi(e){let{stats:t,activity_graph:n,insights:r,top_plugins:i}=e.page;return{activity:{daily:mi(n?.daily_usage_buckets),weekly:mi(n?.weekly_usage_buckets),cumulative:mi(n?.cumulative_daily_usage_buckets)},insights:r==null&&i==null?null:{fastModePercent:r?.agentic?.fast_mode_usage_percentage,reasoningEffort:r?.agentic?.most_used_reasoning_effort,reasoningEffortPercent:r?.agentic?.most_used_reasoning_effort_percentage,totalThreads:r?.agentic?.total_threads,totalSkillsUsed:r?.total_skills_used,skillsExplored:r?.unique_skills_used,invocations:i?.map(e=>({type:`plugin`,plugin_id:e.plugin_id,plugin_name:e.plugin_name?.trim()||e.plugin_id,logo_url:e.logo_url,usage_count:e.usage_count}))},summary:{currentStreakDays:t?.current_streak_days??null,longestStreakDays:t?.longest_streak_days??null,totalTextTokens:t?.agentic?.lifetime_tokens??null,peakTokens:t?.agentic?.peak_daily_tokens??null,longestTaskDurationMs:t?.agentic?.longest_running_turn_sec==null?null:t.agentic.longest_running_turn_sec*1e3}}}function mi(e){return e==null?void 0:{tokens:e.map(e=>({date:e.start_date,credits:e.tokens})),chats:e.map(e=>({date:e.start_date,credits:e.chat_turns}))}}var hi=e((()=>{})),gi,_i,vi,yi,bi,xi,Si=e((()=>{gi=`qVnQjG_editDrawer`,_i=`qVnQjG_page`,vi=`qVnQjG_scopeMenu`,yi=`qVnQjG_scopeTrigger`,bi=`qVnQjG_usageTooltip`,xi={editDrawer:gi,page:_i,scopeMenu:vi,scopeTrigger:yi,usageTooltip:bi}}));function Ci(e){"use forget";let t=(0,Di.c)(194),{accountId:n,page:r,saving:i,setSaving:a,draft:o,onDraftChange:s,fieldTargets:l,photoInputId:u,usernameEditor:p,onClose:m,onChanged:h}=e,_=Ie(),v=ee(k),y=oe(),b=ue(),x=f(),S=g()===`rtl`?`-100%`:`100%`,T;t[0]===x?T=t[1]:(T=x?{duration:0}:{type:`spring`,duration:.5,bounce:.1},t[0]=x,t[1]=T);let E=T,D=(0,Oi.useId)(),ne=Ei,O=(0,Oi.useRef)(null),[A]=(0,Oi.useState)(r),[re]=(0,Oi.useState)(o),M=r.profile_details,N=r.page.workspace_id==null?zn.CODEX_PROFILE_PAGE_SCOPE_PERSONAL:zn.CODEX_PROFILE_PAGE_SCOPE_WORKSPACE,{displayName:P,bio:I,photo:L,photoShape:R,settings:z}=o,[ie,ae]=(0,Oi.useState)(null),[B,se]=(0,Oi.useState)(!1),[V,ce]=(0,Oi.useState)(null),le;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(le={displayName:!1,bio:!1},t[2]=le):le=t[2];let de=(0,Oi.useRef)(le),H=L?.previewUrl,fe,pe;t[3]===H?(fe=t[4],pe=t[5]):(fe=()=>()=>{H!=null&&URL.revokeObjectURL(H)},pe=[H],t[3]=H,t[4]=fe,t[5]=pe),(0,Oi.useEffect)(fe,pe);let me;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(me=[`displayName`,`bio`],t[6]=me):me=t[6];let he=me,ge,_e;if(t[7]!==A||t[8]!==z){ge={};for(let e of ji)z[e]!==!1!=(A.page.display_settings?.[e]!==!1)&&(ge[e]=z[e]!==!1);_e=Object.keys(ge),t[7]=A,t[8]=z,t[9]=ge,t[10]=_e}else ge=t[9],_e=t[10];let ve=_e.length>0,ye;t[11]===P?ye=t[12]:(ye=P.trim(),t[11]=P,t[12]=ye);let be=M.display_name??re.displayName,xe;t[13]===be?xe=t[14]:(xe=be.trim(),t[13]=be,t[14]=xe);let Se=ye!==xe,W;t[15]===I?W=t[16]:(W=I.trim(),t[15]=I,t[16]=W);let Ce=M.description??``,we;t[17]===Ce?we=t[18]:(we=Ce.trim(),t[17]=Ce,t[18]=we);let Te=W!==we,Ee;t[19]===M.photo_frame_style?Ee=t[20]:(Ee=Object.values(Mi).find(e=>e===M.photo_frame_style)??`circle`,t[19]=M.photo_frame_style,t[20]=Ee);let De=R!==Ee,Oe=Te&&I.length>140,ke=Se||Te||L!=null||De||ve,Ae;t[21]!==n||t[22]!==I||t[23]!==ke||t[24]!==P||t[25]!==ve||t[26]!==ge||t[27]!==_||t[28]!==Te||t[29]!==Oe||t[30]!==Se||t[31]!==De||t[32]!==b||t[33]!==h||t[34]!==m||t[35]!==N||t[36]!==L||t[37]!==R||t[38]!==i||t[39]!==a?(Ae=async function(e){if(e.preventDefault(),!b||i||Oe||P.trim()===``)return;if(C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:N,action:In.CODEX_PROFILE_EDIT_ACTION_SAVE_CLICKED}),!ke){m();return}a(!0),ce(null);let t=Vn.CODEX_PROFILE_EDIT_SAVE_API_STATUS_NOT_ATTEMPTED,r=!1,o=!1;try{let e={};if(Se&&(e.display_name=P.trim()),Te&&(e.description=I.trim()),De&&(e.photo_frame_style=R===`circle`?null:R),L!=null&&(r=!0,t=Vn.CODEX_PROFILE_EDIT_SAVE_API_STATUS_FAILED,e.profile_asset_pointer=await F(L.file),r=!1),Object.keys(e).length>0){t=Vn.CODEX_PROFILE_EDIT_SAVE_API_STATUS_FAILED;let r=await c.safePatch(`/profiles/me`,{additionalHeaders:n==null?void 0:{"ChatGPT-Account-ID":n},requestBody:e});t=Vn.CODEX_PROFILE_EDIT_SAVE_API_STATUS_SUCCEEDED,Se&&C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:N,action:In.CODEX_PROFILE_EDIT_ACTION_DISPLAY_NAME_SAVE_SUCCEEDED}),Te&&C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:N,action:In.CODEX_PROFILE_EDIT_ACTION_BIO_SAVE_SUCCEEDED}),h(e=>({...e,profile_details:{...e.profile_details,...r}}))}if(ve){o=!0;let e=await c.safePatch(`/profiles/me/page`,{additionalHeaders:n==null?void 0:{"ChatGPT-Account-ID":n},requestBody:{display_settings:ge}});h(t=>({...t,page:{...t.page,display_settings:e.display_settings,page_version:e.page_version}}))}C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:N,action:In.CODEX_PROFILE_EDIT_ACTION_SAVE_SUCCEEDED}),m(),L!=null&&Er(`success`)}catch(e){let n=e;L!=null&&Er(`failure`);let i=r?`photo`:o||Te||De||Se&&L!=null?`profile`:Se?`displayName`:`photo`,a=i===`displayName`?_.formatMessage({id:`profile.displayNameUpdateError`,defaultMessage:`Unable to update display name`}):i===`photo`?_.formatMessage({id:`profile.photoUpdateError`,defaultMessage:`Unable to update profile picture`}):_.formatMessage({id:`profile.updateError`,defaultMessage:`Unable to update profile`});ce({field:i,message:Nr(n)??a}),C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:N,action:In.CODEX_PROFILE_EDIT_ACTION_SAVE_FAILED,profileDetailsUpdateApiStatus:t,usernameUpdateApiStatus:Vn.CODEX_PROFILE_EDIT_SAVE_API_STATUS_NOT_ATTEMPTED})}a(!1)},t[21]=n,t[22]=I,t[23]=ke,t[24]=P,t[25]=ve,t[26]=ge,t[27]=_,t[28]=Te,t[29]=Oe,t[30]=Se,t[31]=De,t[32]=b,t[33]=h,t[34]=m,t[35]=N,t[36]=L,t[37]=R,t[38]=i,t[39]=a,t[40]=Ae):Ae=t[40];let je=Ae,Me;t[41]!==o||t[42]!==V||t[43]!==l||t[44]!==D||t[45]!==_||t[46]!==Oe||t[47]!==v||t[48]!==b||t[49]!==m||t[50]!==s||t[51]!==N||t[52]!==i?(Me=he.map(e=>{let t=l[e];if(!v&&t==null)return null;let n=(0,Y.jsx)(it,{field:e,formId:D,value:o[e],disabled:i,inert:!b,error:e===`displayName`&&V?.field===`displayName`?V.message:null,isBioTooLong:Oe,maxLength:e===`bio`?140:64,intl:_,renderInput:v?t=>(0,Y.jsxs)(`span`,{className:`flex w-full gap-4 px-4 py-3 ${e===`bio`?`flex-col`:`items-center`}`,children:[(0,Y.jsx)(`label`,{htmlFor:t.id,className:`shrink-0 text-sm font-normal`,children:t[`aria-label`]}),e===`bio`?(0,Y.jsx)(`textarea`,{...t,rows:3,className:`focus-visible:ring-token-border-heavy min-h-24 w-full resize-y rounded-md border-0 bg-transparent p-0 text-sm outline-none focus-visible:ring-1`}):(0,Y.jsx)(`input`,{...t,className:`focus-visible:ring-token-border-heavy h-7 min-w-0 flex-1 rounded-md border-0 bg-transparent p-0 text-end text-sm outline-none focus-visible:ring-1`})]}):void 0,onCancel:m,onChange:t=>{t!==o[e]&&!de.current[e]&&(de.current[e]=!0,C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:N,action:e===`bio`?In.CODEX_PROFILE_EDIT_ACTION_BIO_CHANGE_STARTED:In.CODEX_PROFILE_EDIT_ACTION_DISPLAY_NAME_CHANGE_STARTED})),s({...o,[e]:t}),(V?.field===e||V?.field===`profile`)&&ce(null)}},e);return v?n:t==null?null:(0,ki.createPortal)(n,t,e)}),t[41]=o,t[42]=V,t[43]=l,t[44]=D,t[45]=_,t[46]=Oe,t[47]=v,t[48]=b,t[49]=m,t[50]=s,t[51]=N,t[52]=i,t[53]=Me):Me=t[53];let Ne=Me,Pe=v?Ni:He,Fe;t[54]===_?Fe=t[55]:(Fe=_.formatMessage({id:`profile.editProfileTitle`,defaultMessage:`Edit profile`}),t[54]=_,t[55]=Fe);let Le;t[56]!==b||t[57]!==m||t[58]!==i?(Le=e=>{b&&e.key===`Escape`&&!i&&!e.nativeEvent.isComposing&&(e.preventDefault(),m())},t[56]=b,t[57]=m,t[58]=i,t[59]=Le):Le=t[59];let Re;t[60]===je?Re=t[61]:(Re=e=>void je(e),t[60]=je,t[61]=Re);let ze;t[62]!==D||t[63]!==Re?(ze=(0,Y.jsx)(`form`,{id:D,onSubmit:Re}),t[62]=D,t[63]=Re,t[64]=ze):ze=t[64];let Be;t[65]===Symbol.for(`react.memo_cache_sentinel`)?(Be=(0,Y.jsx)(`h2`,{className:`text-sm leading-[1.4] font-medium`,children:(0,Y.jsx)(U,{id:`profile.editProfileTitle`,defaultMessage:`Edit profile`})}),t[65]=Be):Be=t[65];let Ue;t[66]===Symbol.for(`react.memo_cache_sentinel`)?(Ue=(0,Y.jsx)(U,{id:`profile.editProfileCancel`,defaultMessage:`Cancel`}),t[66]=Ue):Ue=t[66];let G;t[67]!==m||t[68]!==i?(G=(0,Y.jsx)(`button`,{className:`btn btn-toolbar interactive-button interactive-bg-secondary text-token-text-tertiary`,type:`button`,disabled:i,onClick:m,children:Ue}),t[67]=m,t[68]=i,t[69]=G):G=t[69];let Ge;t[70]!==P||t[71]!==Oe||t[72]!==i?(Ge=i||Oe||P.trim()===``,t[70]=P,t[71]=Oe,t[72]=i,t[73]=Ge):Ge=t[73];let Ke;t[74]===Symbol.for(`react.memo_cache_sentinel`)?(Ke=(0,Y.jsx)(U,{id:`profile.editProfileSave`,defaultMessage:`Save`}),t[74]=Ke):Ke=t[74];let qe;t[75]!==D||t[76]!==i||t[77]!==Ge?(qe=(0,Y.jsx)(d,{type:`submit`,form:D,size:`toolbar`,loading:i,disabled:Ge,children:Ke}),t[75]=D,t[76]=i,t[77]=Ge,t[78]=qe):qe=t[78];let Je;t[79]!==G||t[80]!==qe?(Je=(0,Y.jsxs)(Y.Fragment,{children:[G,qe]}),t[79]=G,t[80]=qe,t[81]=Je):Je=t[81];let Ye;t[82]!==M.profile_picture_url||t[83]!==P||t[84]!==Ne||t[85]!==_||t[86]!==v||t[87]!==R||t[88]!==H||t[89]!==i||t[90]!==p?(Ye=v&&(0,Y.jsxs)(Y.Fragment,{children:[(0,Y.jsx)(`div`,{className:`flex shrink-0 justify-center py-4`,children:(0,Y.jsxs)(`button`,{type:`button`,className:`interactive-button relative flex size-28 rounded-full`,disabled:i,"aria-label":_.formatMessage({id:`profile.photoInputLabel`,defaultMessage:`Change profile picture`}),onClick:()=>O.current?.click(),children:[(0,Y.jsx)(Ar,{frame:R,animateShape:!0,children:(0,Y.jsx)(jr,{src:H??M.profile_picture_url,name:P,alt:``})}),(0,Y.jsx)(`span`,{className:`bg-token-bg-primary-inverted text-token-text-inverted pointer-events-none absolute end-0 bottom-0 flex size-8 items-center justify-center rounded-full`,children:(0,Y.jsx)(on,{className:`icon`})})]})}),(0,Y.jsxs)(`div`,{className:`border-token-border-default divide-token-border-default flex shrink-0 flex-col divide-y overflow-hidden rounded-2xl border`,children:[Ne[0],p,Ne[1]]})]}),t[82]=M.profile_picture_url,t[83]=P,t[84]=Ne,t[85]=_,t[86]=v,t[87]=R,t[88]=H,t[89]=i,t[90]=p,t[91]=Ye):Ye=t[91];let Xe=!v&&Ne,Ze;t[92]===V?Ze=t[93]:(Ze=V!=null&&V.field!==`displayName`&&(0,Y.jsx)(`p`,{role:`alert`,className:`text-interactive-label-warning-secondary`,children:V.message}),t[92]=V,t[93]=Ze);let Qe;t[94]===Symbol.for(`react.memo_cache_sentinel`)?(Qe=(0,Y.jsx)(U,{id:`profile.edit.photo`,defaultMessage:`Photo`}),t[94]=Qe):Qe=t[94];let $e,et;t[95]===Symbol.for(`react.memo_cache_sentinel`)?($e=()=>O.current?.click(),et=(0,Y.jsx)(U,{id:`profile.edit.uploadPhoto`,defaultMessage:`Upload photo`}),t[95]=$e,t[96]=et):($e=t[95],et=t[96]);let tt;t[97]===Symbol.for(`react.memo_cache_sentinel`)?(tt=(0,Y.jsx)(`svg`,{"aria-hidden":!0,className:`icon`,width:dr.canvas.width,height:dr.canvas.height,viewBox:dr.canvas.viewBox,fill:`currentColor`,dangerouslySetInnerHTML:{__html:te(dr)}}),t[97]=tt):tt=t[97];let nt;t[98]===i?nt=t[99]:(nt=(0,Y.jsxs)(`button`,{type:`button`,className:`interactive-button interactive-bg-secondary flex w-full items-center justify-between px-4 py-3 text-start`,disabled:i,onClick:$e,children:[et,tt]}),t[98]=i,t[99]=nt);let at;t[100]===_?at=t[101]:(at=_.formatMessage({id:`profile.photoInputLabel`,defaultMessage:`Change profile picture`}),t[100]=_,t[101]=at);let ot,K;t[102]===N?(ot=t[103],K=t[104]):(ot=()=>C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:N,action:In.CODEX_PROFILE_EDIT_ACTION_MODAL_PHOTO_CHANGE_STARTED}),K=e=>{let t=e.currentTarget.files?.[0];e.currentTarget.value=``,t!=null&&(C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:N,action:In.CODEX_PROFILE_EDIT_ACTION_MODAL_PHOTO_CHANGE_IMAGE_SELECTED}),ae(t))},t[102]=N,t[103]=ot,t[104]=K);let st;t[105]!==u||t[106]!==i||t[107]!==at||t[108]!==ot||t[109]!==K?(st=(0,Y.jsx)(`input`,{id:u,ref:O,type:`file`,name:`photo`,accept:`image/*`,tabIndex:-1,className:`sr-only`,disabled:i,"aria-label":at,onClick:ot,onChange:K}),t[105]=u,t[106]=i,t[107]=at,t[108]=ot,t[109]=K,t[110]=st):st=t[110];let ct=R===`scalloped_circle`?`blossom`:R===`rounded_square`?`square`:R===`scalloped_oval`?`scalloped`:R===`oval`?`oval`:`circle`,lt;t[111]!==o||t[112]!==s?(lt=e=>s({...o,photoShape:Mi[e]}),t[111]=o,t[112]=s,t[113]=lt):lt=t[113];let ut;t[114]!==M.profile_picture_url||t[115]!==P||t[116]!==H?(ut=e=>(0,Y.jsx)(Ot,{shape:e,children:(0,Y.jsx)(jr,{src:H??M.profile_picture_url,alt:``,name:P,size:`picker`})}),t[114]=M.profile_picture_url,t[115]=P,t[116]=H,t[117]=ut):ut=t[117];let dt;t[118]===Symbol.for(`react.memo_cache_sentinel`)?(dt=(0,Y.jsx)(cn,{className:`icon-sm`,"aria-hidden":!0}),t[118]=dt):dt=t[118];let ft;t[119]!==_||t[120]!==i||t[121]!==ct||t[122]!==lt||t[123]!==ut?(ft=(0,Y.jsx)(kt,{intl:_,disabled:i,selected:ct,onChange:lt,renderPhoto:ut,selectedIcon:dt}),t[119]=_,t[120]=i,t[121]=ct,t[122]=lt,t[123]=ut,t[124]=ft):ft=t[124];let pt;t[125]!==nt||t[126]!==st||t[127]!==ft?(pt=(0,Y.jsxs)(rt,{title:Qe,children:[nt,st,ft]}),t[125]=nt,t[126]=st,t[127]=ft,t[128]=pt):pt=t[128];let mt=r.page.visibility.value!==`private`,ht=r.page.workspace_display_settings?.activity_enabled!==!1,gt=z.show_usage_stats_section!==!1,_t=z.show_activity_graph_section!==!1,vt=z.show_top_plugins_section!==!1,yt=z.show_insights_section!==!1,bt;t[129]!==gt||t[130]!==_t||t[131]!==vt||t[132]!==yt?(bt={showUsageStatistics:gt,showActivityGraph:_t,showTopPlugins:vt,showInsights:yt},t[129]=gt,t[130]=_t,t[131]=vt,t[132]=yt,t[133]=bt):bt=t[133];let xt;t[134]!==o||t[135]!==s||t[136]!==z?(xt=e=>s({...o,settings:{...z,show_usage_stats_section:e.showUsageStatistics,show_activity_graph_section:e.showActivityGraph,show_top_plugins_section:e.showTopPlugins,show_insights_section:e.showInsights}}),t[134]=o,t[135]=s,t[136]=z,t[137]=xt):xt=t[137];let q;t[138]!==_||t[139]!==i||t[140]!==mt||t[141]!==ht||t[142]!==bt||t[143]!==xt?(q=(0,Y.jsx)(We,{intl:_,disabled:i,isProfileShared:mt,activityEnabled:ht,options:bt,onChange:xt,renderToggle:Ti}),t[138]=_,t[139]=i,t[140]=mt,t[141]=ht,t[142]=bt,t[143]=xt,t[144]=q):q=t[144];let St;t[145]!==Pe||t[146]!==Je||t[147]!==Ye||t[148]!==Xe||t[149]!==Ze||t[150]!==pt||t[151]!==q?(St=(0,Y.jsxs)(Pe,{header:Be,actions:Je,children:[Ye,Xe,Ze,pt,q]}),t[145]=Pe,t[146]=Je,t[147]=Ye,t[148]=Xe,t[149]=Ze,t[150]=pt,t[151]=q,t[152]=St):St=t[152];let Ct;t[153]!==Fe||t[154]!==Le||t[155]!==ze||t[156]!==St?(Ct=(0,Y.jsxs)(`div`,{ref:ne,role:`group`,className:`flex h-full min-h-0 flex-col text-sm outline-none`,tabIndex:-1,"aria-label":Fe,onKeyDown:Le,children:[ze,St]}),t[153]=Fe,t[154]=Le,t[155]=ze,t[156]=St,t[157]=Ct):Ct=t[157];let wt=Ct,Tt;t[158]!==o||t[159]!==V?.field||t[160]!==b||t[161]!==B||t[162]!==s||t[163]!==ie?(Tt=ie!=null&&b&&(0,Y.jsx)(w,{for:Ai,withProps:{file:ie,saving:B,setSaving:se,onCancel:()=>ae(null),onSave:e=>{s({...o,photo:{file:e,previewUrl:URL.createObjectURL(e)}}),ae(null),V?.field!==`displayName`&&ce(null)}},open:!0,disableLightDismiss:B,onClose:()=>ae(null)}),t[158]=o,t[159]=V?.field,t[160]=b,t[161]=B,t[162]=s,t[163]=ie,t[164]=Tt):Tt=t[164];let Et=Tt,Dt=x?`auto`:0,At;t[165]===Dt?At=t[166]:(At={width:Dt},t[165]=Dt,t[166]=At);let jt,Mt;t[167]===Symbol.for(`react.memo_cache_sentinel`)?(jt={width:`auto`},Mt={width:0},t[167]=jt,t[168]=Mt):(jt=t[167],Mt=t[168]);let Nt;t[169]===Symbol.for(`react.memo_cache_sentinel`)?(Nt=(0,Y.jsx)(`div`,{className:`w-80`}),t[169]=Nt):Nt=t[169];let Pt;t[170]!==At||t[171]!==E?(Pt=(0,Y.jsx)(j.div,{className:`hidden shrink-0 overflow-hidden sm:block`,"aria-hidden":!0,initial:At,animate:jt,exit:Mt,transition:E,children:Nt}),t[170]=At,t[171]=E,t[172]=Pt):Pt=t[172];let Ft;t[173]!==S||t[174]!==wt||t[175]!==v||t[176]!==b||t[177]!==x||t[178]!==E?(Ft=!v&&(0,Y.jsx)(j.aside,{className:`${xi.editDrawer} bg-primary border-token-border-default absolute inset-y-0 end-0 z-20 w-80 max-w-full overflow-hidden border-s antialiased max-sm:w-full`,"aria-hidden":!b,inert:!b,initial:{x:x?0:S},animate:{x:0},exit:{x:S},transition:E,children:wt}),t[173]=S,t[174]=wt,t[175]=v,t[176]=b,t[177]=x,t[178]=E,t[179]=Ft):Ft=t[179];let It;t[180]!==y?.document||t[181]!==wt||t[182]!==_||t[183]!==v||t[184]!==b||t[185]!==m||t[186]!==Et||t[187]!==i?(It=v&&(0,Y.jsxs)(Ve,{open:b,modal:!0,forceMount:!0,className:xi.editDrawer,portalContainer:y?.document.body,onOpenChange:e=>{!e&&!i&&b&&m()},onEscapeKeyDown:e=>{let t=y?.document.activeElement?.closest(`dialog`);t?.open?(e.preventDefault(),typeof t.requestClose==`function`?t.requestClose():t.dispatchEvent(new Event(`cancel`,{cancelable:!0}))&&t.close()):i&&e.preventDefault()},onCloseAutoFocus:wi,accessibleTitle:_.formatMessage({id:`profile.editProfileTitle`,defaultMessage:`Edit profile`}),children:[wt,Et]}),t[180]=y?.document,t[181]=wt,t[182]=_,t[183]=v,t[184]=b,t[185]=m,t[186]=Et,t[187]=i,t[188]=It):It=t[188];let Lt=!v&&Et,Rt;return t[189]!==Pt||t[190]!==Ft||t[191]!==It||t[192]!==Lt?(Rt=(0,Y.jsxs)(Y.Fragment,{children:[Pt,Ft,It,Lt]}),t[189]=Pt,t[190]=Ft,t[191]=It,t[192]=Lt,t[193]=Rt):Rt=t[193],Rt}function wi(e){return e.preventDefault()}function Ti(e){let{label:t,onChange:n,...r}=e;return(0,Y.jsx)(se,{...r,"aria-label":t,onCheckedChange:n})}function Ei(e){e?.focus({preventScroll:!0})}var Di,Oi,ki,Y,Ai,ji,Mi,Ni,Pi=e((()=>{Di=Fe(),D(),V(),m(),ln(),an(),Je(),M(),B(),p(),I(),H(),he(),tr(),z(),fr(),K(),O(),l(),i(),Oi=t(De()),ki=t(be()),we(),Mr(),Or(),kr(),Si(),Dr(),Y=ve(),Me(),Ai=T(()=>Oe(()=>import(`./621a6c6d-oykkxrz3n3699seq.js`).then(e=>e.ProfileV2PhotoCrop),__vite__mapDeps([61,1,2,3,4,5,6,7,8,9,62]))),ji=[`show_usage_stats_section`,`show_activity_graph_section`,`show_top_plugins_section`,`show_insights_section`],Mi={circle:`circle`,blossom:`scalloped_circle`,square:`rounded_square`,oval:`oval`,scalloped:`scalloped_oval`},Ni=e=>{"use forget";let t=(0,Di.c)(10),{header:n,actions:r,children:i}=e,a;t[0]===r?a=t[1]:(a=(0,Y.jsx)(`div`,{className:`flex items-center gap-2`,children:r}),t[0]=r,t[1]=a);let o;t[2]!==n||t[3]!==a?(o=(0,Y.jsxs)(Ve.Header,{className:`justify-between border-0 px-4`,children:[n,a]}),t[2]=n,t[3]=a,t[4]=o):o=t[4];let s;t[5]===i?s=t[6]:(s=(0,Y.jsx)(Ve.Contents,{className:`flex flex-col gap-5 p-4`,children:i}),t[5]=i,t[6]=s);let c;return t[7]!==o||t[8]!==s?(c=(0,Y.jsxs)(Y.Fragment,{children:[o,s]}),t[7]=o,t[8]=s,t[9]=c):c=t[9],c}}));function Fi(e){"use forget";let t=(0,Ii.c)(20),{children:n,isWorkspace:r,onOpenChange:i,onCloseAutoFocus:a}=e,o=Ie(),s;t[0]===o?s=t[1]:(s=o.formatMessage({id:`profile.preview.title`,defaultMessage:`Profile preview`}),t[0]=o,t[1]=s);let c;t[2]===r?c=t[3]:(c=(0,Li.jsx)(`span`,{className:`text-token-text-secondary ms-3 text-sm`,children:r?(0,Li.jsx)(U,{id:`profile.preview.workspaceViewer`,defaultMessage:`Viewing as a workspace member`}):(0,Li.jsx)(U,{id:`profile.preview.publicViewer`,defaultMessage:`Previewing as a public visitor`})}),t[2]=r,t[3]=c);let l;t[4]===i?l=t[5]:(l=()=>i(!1),t[4]=i,t[5]=l);let u;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,Li.jsx)(U,{id:`profile.preview.exit`,defaultMessage:`Exit preview`}),t[6]=u):u=t[6];let f;t[7]===l?f=t[8]:(f=(0,Li.jsx)(d,{className:`ms-auto`,color:`ghost`,size:`toolbar`,icon:en,onClick:l,children:u}),t[7]=l,t[8]=f);let p;t[9]!==c||t[10]!==f?(p=(0,Li.jsxs)(Ve.Header,{className:`-mb-14`,children:[c,f]}),t[9]=c,t[10]=f,t[11]=p):p=t[11];let m;t[12]===n?m=t[13]:(m=(0,Li.jsx)(Ve.Contents,{children:n}),t[12]=n,t[13]=m);let h;return t[14]!==a||t[15]!==i||t[16]!==s||t[17]!==p||t[18]!==m?(h=(0,Li.jsxs)(Ve,{open:!0,preserveSidebar:!0,onOpenChange:i,accessibleTitle:s,onCloseAutoFocus:a,children:[p,m]}),t[14]=a,t[15]=i,t[16]=s,t[17]=p,t[18]=m,t[19]=h):h=t[19],h}var Ii,Li,Ri=e((()=>{Ii=Fe(),D(),gn(),Je(),we(),Li=ve()})),zi,Bi,Vi,Hi=e((()=>{zi=Fe(),H(),he(),tr(),K(),we(),Mr(),Bi=ve(),Vi=e=>{"use forget";let t=(0,zi.c)(18),{field:n,value:r,accountId:i,pageScope:a,isSaving:o,setSaving:s,onEditStarted:l,onSaved:u}=e,d=Ie(),f=n===`bio`?140:64,p;t[0]!==n||t[1]!==a?(p=()=>{C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:a,action:n===`bio`?In.CODEX_PROFILE_EDIT_ACTION_BIO_CHANGE_STARTED:In.CODEX_PROFILE_EDIT_ACTION_DISPLAY_NAME_CHANGE_STARTED})},t[0]=n,t[1]=a,t[2]=p):p=t[2];let m;t[3]!==i||t[4]!==n||t[5]!==u||t[6]!==a||t[7]!==s?(m=e=>(s(!0),c.safePatch(`/profiles/me`,{additionalHeaders:{"ChatGPT-Account-ID":i},requestBody:n===`bio`?{description:e}:{display_name:e}}).then(e=>{C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:a,action:n===`bio`?In.CODEX_PROFILE_EDIT_ACTION_BIO_SAVE_SUCCEEDED:In.CODEX_PROFILE_EDIT_ACTION_DISPLAY_NAME_SAVE_SUCCEEDED}),u(e)}).finally(()=>s(!1))),t[3]=i,t[4]=n,t[5]=u,t[6]=a,t[7]=s,t[8]=m):m=t[8];let h;return t[9]!==n||t[10]!==d||t[11]!==o||t[12]!==l||t[13]!==f||t[14]!==p||t[15]!==m||t[16]!==r?(h=(0,Bi.jsx)(ft,{field:n,value:r,maxLength:f,isSaving:o,intl:d,formatSaveError:Nr,onEditStarted:l,onChangeStarted:p,onSave:m}),t[9]=n,t[10]=d,t[11]=o,t[12]=l,t[13]=f,t[14]=p,t[15]=m,t[16]=r,t[17]=h):h=t[17],h}}));function Ui(e){"use forget";let t=(0,Wi.c)(2),n;return t[0]===e?n=t[1]:(n=(0,Gi.jsx)(w,{for:Ki,withProps:e,backdropClassName:Ir.backdrop,disableViewTransitions:!0,open:!0,onClose:e.onClose}),t[0]=e,t[1]=n),n}var Wi,Gi,Ki,qi=e((()=>{Wi=Fe(),m(),O(),Lr(),Gi=ve(),Me(),Ki=T(()=>Oe(()=>import(`./b1fefae4-eth7ns9gh1x1tnkt.js`).then(e=>e.ProfileV2SharingContent),__vite__mapDeps([63,1,2,3,4,5,6,7,8,9,13,12,64,65,66,67])))}));function Ji(e){"use forget";let t=(0,Yi.c)(7),[n,r]=(0,Xi.useState)(!1),i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i=vt({measure:e=>r(e.scrollWidth>e.clientWidth),rerunOn:[`element-resize`,`text-mutation`]}),t[0]=i):i=t[0];let a=i,o;t[1]!==n||t[2]!==e.value?(o=t=>(0,Zi.jsx)(Xe,{content:e.value,disabled:!n,children:n=>(0,Xi.cloneElement)(t,{...n,ref:a,"aria-label":typeof e.value==`string`?e.value:void 0})}),t[1]=n,t[2]=e.value,t[3]=o):o=t[3];let s;return t[4]!==e||t[5]!==o?(s=(0,Zi.jsx)(Re,{...e,wrapLabel:!0,renderValue:o}),t[4]=e,t[5]=o,t[6]=s):s=t[6],s}var Yi,Xi,Zi,Qi=e((()=>{Yi=Fe(),et(),Rt(),K(),Xi=t(De()),Zi=ve()}));function $i(e){"use forget";let t=(0,ea.c)(7),[n,r]=(0,ta.useState)(!1),i;t[0]!==e||t[1]!==n?(i={...e,saving:n,setSaving:r},t[0]=e,t[1]=n,t[2]=i):i=t[2];let a;return t[3]!==e.onClose||t[4]!==n||t[5]!==i?(a=(0,na.jsx)(w,{for:ra,withProps:i,backdropClassName:Ir.backdrop,open:!0,disableLightDismiss:n,onClose:e.onClose}),t[3]=e.onClose,t[4]=n,t[5]=i,t[6]=a):a=t[6],a}var ea,ta,na,ra,ia=e((()=>{ea=Fe(),m(),O(),ta=t(De()),Lr(),na=ve(),Me(),ra=T(()=>Oe(()=>import(`./5208238a-omwmalu36fu8jxtz.js`).then(e=>e.ProfileV2ShowcaseEditorContent),__vite__mapDeps([68,1,2,3,4,5,6,7,8,9,13,12,69,70,62,65,66,71])))}));function aa(e){"use forget";let t=(0,pa.c)(16),{accountId:n,allowSkills:r,fallback:i,readOnly:a,children:o}=e,s=a!==void 0&&a,[l,u]=(0,ma.useState)(null),[d,f]=(0,ma.useState)(!0),p,m;if(t[0]!==n||t[1]!==r?(p=()=>{let e=new AbortController,t=n==null?void 0:{"ChatGPT-Account-ID":n},i=0,a;async function o(){if(!e.signal.aborted)try{let[n,i]=await Promise.all([c.safeGet(`/profiles/me/page/pin_options`,{signal:e.signal,additionalHeaders:t,parameters:{query:{kind:`site`,limit:3}}}),r?c.safeGet(`/profiles/me/page/pin_options`,{signal:e.signal,additionalHeaders:t,parameters:{query:{kind:`skill`,limit:1}}}):void 0]);if(e.signal.aborted)return;u({pins:[...n.items.slice(0,3),...i?.items.slice(0,1)??[]].map(la),hasMore:n.next_cursor!=null||i?.next_cursor!=null}),f(!1)}catch(t){let n=t,r=n instanceof y?n.isServerError()||n.status===408||n.status===429:n instanceof TypeError,s=_a[i];if(e.signal.aborted)return;if(!r||s==null){f(!1);return}i+=1,a=setTimeout(()=>void o(),s)}}return o(),()=>{e.abort(),clearTimeout(a)}},m=[n,r],t[0]=n,t[1]=r,t[2]=p,t[3]=m):(p=t[2],m=t[3]),(0,ma.useEffect)(p,m),s){let e;return t[4]===o?e=t[5]:(e=o(null,!1,!1),t[4]=o,t[5]=e),e}let h,g;if(t[6]!==o||t[7]!==l?.pins||t[8]!==i){let e=l?.pins.filter(ca)??[],n=e.length===0?l?.pins.find(sa):void 0;h=o,g=e.length>0?(0,ha.jsx)(ua,{sites:e,fallback:i},JSON.stringify(e.map(oa))):n==null?i:(0,ha.jsx)(`div`,{className:`flex h-[78px] items-center justify-center`,"aria-hidden":`true`,children:(0,ha.jsx)(Ue,{skillName:n?.title,skillIcon:(0,ha.jsx)(ga,{"aria-hidden":!0,className:`size-6`})})}),t[6]=o,t[7]=l?.pins,t[8]=i,t[9]=h,t[10]=g}else h=t[9],g=t[10];let _=l!=null&&l.pins.length===0&&!l.hasMore,v;return t[11]!==d||t[12]!==h||t[13]!==g||t[14]!==_?(v=h(g,_,d),t[11]=d,t[12]=h,t[13]=g,t[14]=_,t[15]=v):v=t[15],v}function oa(e){return[e.pin_id,e.thumbnail_url]}function sa(e){return e.kind===`skill`}function ca(e){return e.kind===`site`}function la(e){let{pin:t}=e;return t}function ua(e){"use forget";let t=(0,pa.c)(21),{sites:n,fallback:r}=e,i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i=[],t[0]=i):i=t[0];let[a,o]=(0,ma.useState)(i),s;if(t[1]!==a||t[2]!==n){let e=n.flatMap(da);s=e.length>0&&e.every(e=>a.includes(e)),t[1]=a,t[2]=n,t[3]=s}else s=t[3];let c=s,l;if(t[4]!==n){let e;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(e=e=>(0,ha.jsx)(fa,{screenshotUrl:e.thumbnail_url,onLoad:()=>o(t=>t.includes(e.pin_id)?t:[...t,e.pin_id])},e.pin_id),t[6]=e):e=t[6],l=n.map(e),t[4]=n,t[5]=l}else l=t[5];let u=l,d=c?`visible`:`invisible`,f;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,ha.jsx)(ga,{"aria-hidden":!0,className:`size-6`}),t[7]=f):f=t[7];let p;t[8]!==u[0]||t[9]!==u[1]||t[10]!==u[2]?(p=(0,ha.jsx)(Ue,{front:u[0],left:u[1],right:u[2],skillIcon:f}),t[8]=u[0],t[9]=u[1],t[10]=u[2],t[11]=p):p=t[11];let m;t[12]!==d||t[13]!==p?(m=(0,ha.jsx)(`div`,{className:d,children:p}),t[12]=d,t[13]=p,t[14]=m):m=t[14];let h;t[15]!==r||t[16]!==c?(h=!c&&(0,ha.jsx)(`div`,{className:`absolute inset-0 flex items-center justify-center`,children:r}),t[15]=r,t[16]=c,t[17]=h):h=t[17];let g;return t[18]!==m||t[19]!==h?(g=(0,ha.jsxs)(`div`,{className:`relative flex h-[78px] items-center justify-center`,"aria-hidden":`true`,children:[m,h]}),t[18]=m,t[19]=h,t[20]=g):g=t[20],g}function da(e){return e.thumbnail_url?[e.pin_id]:[]}function fa(e){"use forget";let t=(0,pa.c)(13),{screenshotUrl:n,onLoad:r}=e,i;t[0]===n?i=t[1]:(i=gr(n),t[0]=n,t[1]=i);let a=i,[o,s]=(0,ma.useState)();if(!a||!n)return null;let c=+(o===a),l;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,ha.jsx)(`rect`,{width:`100%`,height:`100%`,fill:`var(--profile-illustration-surface)`}),t[2]=l):l=t[2];let u;t[3]!==r||t[4]!==a?(u=()=>{s(a),r()},t[3]=r,t[4]=a,t[5]=u):u=t[5];let d;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(d=()=>s(void 0),t[6]=d):d=t[6];let f;t[7]!==a||t[8]!==u?(f=(0,ha.jsx)(`image`,{href:a,width:`100%`,height:`100%`,preserveAspectRatio:`xMidYMid slice`,onLoad:u,onError:d},a),t[7]=a,t[8]=u,t[9]=f):f=t[9];let p;return t[10]!==c||t[11]!==f?(p=(0,ha.jsxs)(`g`,{opacity:c,children:[l,f]}),t[10]=c,t[11]=f,t[12]=p):p=t[12],p}var pa,ma,ha,ga,_a,va=e((()=>{pa=Fe(),qt(),hr(),he(),o(),K(),ma=t(De()),ha=ve(),ga=At(),_a=[1e3,2e3,4e3]})),ya,ba,xa,Sa=e((()=>{ya=`DKBASq_emptyAction`,ba=`DKBASq_emptyActionLoading`,xa={emptyAction:ya,emptyActionLoading:ba,"profile-loading-page-sweep":`DKBASq_profile-loading-page-sweep`}}));function Ca(e){"use forget";let t=(0,Ea.c)(88),{accountId:n,page:r,plan:i,onChanged:a,editDisabledReason:o,readOnly:s}=e,c=s!==void 0&&s,l=Ie(),u=(0,Da.useRef)(null),f=r.page.workspace_id==null?zn.CODEX_PROFILE_PAGE_SCOPE_PERSONAL:zn.CODEX_PROFILE_PAGE_SCOPE_WORKSPACE,p=r.is_self?Zn.CODEX_PROFILE_OWNER_SELF:Zn.CODEX_PROFILE_OWNER_OTHER,m;t[0]!==f||t[1]!==p?(m={pageScope:f,profileOwner:p},t[0]=f,t[1]=p,t[2]=m):m=t[2];let h=m,g;t[3]===h?g=t[4]:(g=e=>{C.logStructuredEvent(`CodexProfileShowcaseCardShown`,{...h,kind:e===`site`?Qn.CODEX_PROFILE_PIN_KIND_SITE:Qn.CODEX_PROFILE_PIN_KIND_SKILL})},t[3]=h,t[4]=g);let _=(0,Da.useEffectEvent)(g),v=r.is_self?null:r.profile_details.username,ee;t[5]===_?ee=t[6]:(ee=()=>{if(u.current!=null)return ct(u.current,_)},t[5]=_,t[6]=ee);let y;t[7]!==n||t[8]!==r.is_self||t[9]!==r.page.workspace_id||t[10]!==v?(y=[n,v,r.is_self,r.page.workspace_id],t[7]=n,t[8]=r.is_self,t[9]=r.page.workspace_id,t[10]=v,t[11]=y):y=t[11],(0,Da.useEffect)(ee,y);let b;t[12]===h?b=t[13]:(b=function(e,t){C.logStructuredEvent(`CodexProfileShowcaseCardAction`,{...h,action:t,kind:e===`site`?Qn.CODEX_PROFILE_PIN_KIND_SITE:Qn.CODEX_PROFILE_PIN_KIND_SKILL})},t[12]=h,t[13]=b);let x=b,[S,te]=(0,Da.useState)(!1),[T,E]=(0,Da.useState)(null),D,O,k;if(t[14]!==r.page.pins?.items||t[15]!==r.page.workspace_id||t[16]!==x){D=r.page.workspace_id!=null||ne(`1844917240`),O=r.page.pins?.items??[];let e;t[20]===x?e=t[21]:(e=e=>({id:e.pin_id,kind:e.kind,content:(0,X.jsx)(ut,{itemId:e.artifact_id,title:e.title??``,onClick:()=>{x(e.kind,ar.CODEX_PROFILE_SHOWCASE_CARD_ACTION_TYPE_CARD_CLICKED),E(e)},...e.kind===`site`?{kind:`site`,preview:(0,X.jsx)(Qt,{aspectRatio:`landscape`,screenshotSrc:e.thumbnail_url,variant:`flat`,viewMode:`grid`,thumbnail:(0,X.jsx)(G,{"aria-hidden":!0,platform:pe()?`windows`:`mac`})})}:{kind:`skill`,description:e.description,icon:(0,X.jsx)(zr,{icon:e.icon})}})}),t[20]=x,t[21]=e),k=O.filter(e=>e.kind===`site`||D).map(e),t[14]=r.page.pins?.items,t[15]=r.page.workspace_id,t[16]=x,t[17]=D,t[18]=O,t[19]=k}else D=t[17],O=t[18],k=t[19];let A=k,j=r.is_self&&r.can_edit&&(i===me.FREE||i===me.GO)&&O.length===0,re;t[22]!==h||t[23]!==S||t[24]!==r.can_edit?(re=function(){!r.can_edit||S||(C.logStructuredEvent(`CodexProfileEditEntered`,{entryPoint:Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_SHOWCASE,pageScope:h.pageScope}),te(!0))},t[22]=h,t[23]=S,t[24]=r.can_edit,t[25]=re):re=t[25];let M=re,N;t[26]!==o||t[27]!==l||t[28]!==M||t[29]!==r.can_edit||t[30]!==r.is_self||t[31]!==c||t[32]!==j?(N=r.is_self&&!c?j?(0,X.jsx)(d,{as:`link`,to:`#pricing`,color:`custom`,className:xa.emptyAction,children:(0,X.jsx)(U,{id:`profile.showcase.upgradeToEdit`,defaultMessage:`Upgrade to edit your showcase`})}):(0,X.jsx)(Xe,{content:o,disabled:o==null,children:e=>(0,X.jsx)(d,{...e,color:`custom`,className:xa.emptyAction,"aria-disabled":!r.can_edit,visuallyDisabled:!r.can_edit,onClick:M,"aria-label":l.formatMessage({id:`profile.showcase.edit`,defaultMessage:`Edit showcase`}),children:(0,X.jsx)(U,{id:`profile.showcase.edit`,defaultMessage:`Edit showcase`})})}):null,t[26]=o,t[27]=l,t[28]=M,t[29]=r.can_edit,t[30]=r.is_self,t[31]=c,t[32]=j,t[33]=N):N=t[33];let P=N,F;t[34]!==P||t[35]!==D||t[36]!==r.profile_details?(F=P==null?r.profile_details.display_name||r.profile_details.username?(0,X.jsx)(U,{id:`profile.showcase.empty.other`,defaultMessage:`{name} hasn't added anything to their showcase yet`,values:{name:r.profile_details.display_name||r.profile_details.username}}):(0,X.jsx)(U,{id:`profile.showcase.empty`,defaultMessage:`Nothing in showcase yet`}):D?(0,X.jsx)(U,{id:`profile.showcase.empty.self`,defaultMessage:`Feature sites and skills on your profile`}):(0,X.jsx)(U,{id:`profile.showcase.empty.self.sitesOnly`,defaultMessage:`Feature sites on your profile`}),t[34]=P,t[35]=D,t[36]=r.profile_details,t[37]=F):F=t[37];let I=F,L=D&&!j,R;t[38]===L?R=t[39]:(R=(0,X.jsx)(nt,{allowSkills:L}),t[38]=L,t[39]=R);let z=R,ie;t[40]!==P||t[41]!==l||t[42]!==I?(ie=(e,t,n)=>(0,X.jsx)(Ke,{artwork:e,editAction:n!==void 0&&n?(0,X.jsx)(`div`,{"aria-hidden":!0,className:`${xa.emptyActionLoading} h-9 w-28 rounded-full`}):t?(0,X.jsx)(d,{as:`link`,to:xr(l.formatMessage(Cr,{sitesMention:`@Sites`})),onClick:Ta,color:`custom`,className:xa.emptyAction,children:(0,X.jsx)(U,{id:`profile.showcase.empty.createSite`,defaultMessage:`Create a site`})}):P,children:I}),t[40]=P,t[41]=l,t[42]=I,t[43]=ie):ie=t[43];let ae=ie,B;t[44]!==o||t[45]!==l||t[46]!==A.length||t[47]!==M||t[48]!==r.can_edit||t[49]!==r.is_self||t[50]!==c?(B=A.length>0&&r.is_self&&!c?(0,X.jsx)(Xe,{content:o,disabled:o==null,children:e=>(0,X.jsxs)(`button`,{...e,"aria-disabled":!r.can_edit,type:`button`,className:`interactive-button text-token-text-tertiary flex items-center gap-1 text-sm aria-disabled:pointer-events-auto!`,"aria-label":l.formatMessage({id:`profile.showcase.edit`,defaultMessage:`Edit showcase`}),onClick:M,children:[(0,X.jsx)(on,{"aria-hidden":!0,className:`icon`}),(0,X.jsx)(U,{id:`profile.showcase.edit.label`,defaultMessage:`Edit`})]})}):null,t[44]=o,t[45]=l,t[46]=A.length,t[47]=M,t[48]=r.can_edit,t[49]=r.is_self,t[50]=c,t[51]=B):B=t[51];let oe;t[52]!==n||t[53]!==P||t[54]!==D||t[55]!==ae||t[56]!==z||t[57]!==A.length||t[58]!==r.can_edit||t[59]!==r.is_self||t[60]!==r.page.workspace_id||t[61]!==r.profile_details||t[62]!==c||t[63]!==j?(oe=A.length===0&&r.is_self&&r.can_edit&&!j?(0,X.jsx)(aa,{accountId:n,allowSkills:D,readOnly:c,fallback:z,children:ae},`${n}:${r.profile_details.username}:${r.page.workspace_id}:${D}`):ae(P==null?null:z,!1),t[52]=n,t[53]=P,t[54]=D,t[55]=ae,t[56]=z,t[57]=A.length,t[58]=r.can_edit,t[59]=r.is_self,t[60]=r.page.workspace_id,t[61]=r.profile_details,t[62]=c,t[63]=j,t[64]=oe):oe=t[64];let se;t[65]!==D||t[66]!==l||t[67]!==A||t[68]!==B||t[69]!==oe?(se=(0,X.jsx)(Ze,{intl:l,items:A,showSkills:D,editAction:B,empty:oe,renderExpandButton:wa}),t[65]=D,t[66]=l,t[67]=A,t[68]=B,t[69]=oe,t[70]=se):se=t[70];let V;t[71]!==n||t[72]!==D||t[73]!==S||t[74]!==a||t[75]!==r||t[76]!==c||t[77]!==j?(V=S&&r.can_edit&&!c&&!j&&(0,X.jsx)($i,{accountId:n,page:r,allowSkills:D,onClose:()=>te(!1),onChanged:a},n),t[71]=n,t[72]=D,t[73]=S,t[74]=a,t[75]=r,t[76]=c,t[77]=j,t[78]=V):V=t[78];let ce;t[79]!==n||t[80]!==T||t[81]!==r.profile_details||t[82]!==x?(ce=T&&(0,X.jsx)(w,{for:Oa,withProps:{accountId:n,pin:T,creatorName:r.profile_details.display_name??r.profile_details.username??null,onClose:()=>E(null),onOpenSite:()=>x(`site`,ar.CODEX_PROFILE_SHOWCASE_CARD_ACTION_TYPE_OPEN_SITE_CLICKED)},open:!0,onClose:()=>E(null)}),t[79]=n,t[80]=T,t[81]=r.profile_details,t[82]=x,t[83]=ce):ce=t[83];let le;return t[84]!==se||t[85]!==V||t[86]!==ce?(le=(0,X.jsxs)(`div`,{ref:u,children:[se,V,ce]}),t[84]=se,t[85]=V,t[86]=ce,t[87]=le):le=t[87],le}function wa(e){let{expanded:t,onClick:n}=e;return(0,X.jsxs)(d,{color:`secondary`,size:`small`,"aria-expanded":t,onClick:n,children:[t?(0,X.jsx)(U,{id:`profile.showcase.showLess`,defaultMessage:`Show less`}):(0,X.jsx)(U,{id:`profile.showcase.showMore`,defaultMessage:`Show more`}),(0,X.jsx)(nn,{"aria-hidden":!0,className:t?`icon-sm rotate-180`:`icon-sm`})]})}function Ta(){return s(fe.TPP)}var Ea,Da,X,Oa,ka=e((()=>{Ea=Fe(),Sr(),de(),et(),D(),ae(),m(),r(),ce(),H(),tr(),K(),an(),fn(),O(),Da=t(De()),we(),ia(),Rr(),va(),Sa(),X=ve(),Me(),Oa=T(()=>Oe(()=>import(`./d880ef91-kuqyg17ckdsfs5dk.js`).then(e=>e.ProfileV2ShowcaseDetailsContent),__vite__mapDeps([72,1,2,3,4,5,6,7,8,9,11,12,13,14,73,74,75,76,77,78,79,62,71,67])))}));function Aa(e){"use forget";let t=(0,Na.c)(30),{username:n,blockedSuffix:r,canEdit:i,onSaved:a}=e,o=Ie(),s=xe(),c;t[0]===n?c=t[1]:(c=n.split(`~`),t[0]=n,t[1]=c);let l=c[0],[u,d]=(0,Pa.useState)(l),[f,p]=(0,Pa.useState)(!1),[m,h]=(0,Pa.useState)(null),g,_,v;if(t[2]!==u||t[3]!==m||t[4]!==o||t[5]!==l){v=Pt(u);let e;t[9]===u?e=t[10]:(e=Vt(u,!1),t[9]=u,t[10]=e),g=e,_=m??(u===l?null:g?(0,Fa.jsx)(U,{id:`profile.usernameLink.blockedSuffix`,defaultMessage:`Your username cannot end with “{suffix}”`,values:{suffix:g}}):v.ok?null:zt(v.reason,o)),t[2]=u,t[3]=m,t[4]=o,t[5]=l,t[6]=g,t[7]=_,t[8]=v}else g=t[6],_=t[7],v=t[8];let ee=_,y=i&&!f&&v.ok&&g==null&&u!==l,b;t[11]!==y||t[12]!==o||t[13]!==a||t[14]!==s||t[15]!==v.username?(b=async function(){if(y){p(!0),h(null);try{await kn(v.username),s.invalidateQueries({queryKey:[`account-username`]}),a()}catch(e){h(Nr(e)??o.formatMessage({id:`profile.usernameUpdateError`,defaultMessage:`Unable to update username`}))}p(!1)}},t[11]=y,t[12]=o,t[13]=a,t[14]=s,t[15]=v.username,t[16]=b):b=t[16];let x=b,S=!i||f,te=!v.ok||g!=null||m!=null,C;t[17]===x?C=t[18]:(C=()=>void x(),t[17]=x,t[18]=C);let w;t[19]===Symbol.for(`react.memo_cache_sentinel`)?(w=e=>{d(e),h(null)},t[19]=w):w=t[19];let T;return t[20]!==r||t[21]!==y||t[22]!==u||t[23]!==ee||t[24]!==o||t[25]!==f||t[26]!==S||t[27]!==te||t[28]!==C?(T=(0,Fa.jsx)(En,{className:`w-full`,children:(0,Fa.jsx)(It,{blockedSuffix:r,value:u,disabled:S,invalid:te,saving:f,error:ee,intl:o,canSave:y,onSubmit:C,onChange:w,renderInput:Ma,renderSubmit:ja})}),t[20]=r,t[21]=y,t[22]=u,t[23]=ee,t[24]=o,t[25]=f,t[26]=S,t[27]=te,t[28]=C,t[29]=T):T=t[29],T}function ja(e){return(0,Fa.jsx)(On,{...e})}function Ma(e){return(0,Fa.jsx)(_r,{...e})}var Na,Pa,Fa,Ia=e((()=>{Na=Fe(),Dn(),Nn(),wn(),vr(),K(),Ne(),Pa=t(De()),we(),Mr(),Fa=ve()}));async function La(e){let{uploadWhamProfileAvatar:t}=await Oe(async()=>{let{uploadWhamProfileAvatar:e}=await import(`./4813494d-tap9fxyhk4ehe0bs.js`).then(e=>(e.th(),e.nh));return{uploadWhamProfileAvatar:e}},__vite__mapDeps([2,1,3,4]));return t(e)}function Ra(e){return e.isPersonalAccount()&&!e.isDeactivated()}function za(e){return e+1}function Ba(e){return e+1}function Va(e){return(0,Q.jsx)(Ji,{...e})}function Ha(e){return(0,Q.jsx)(Br,{...e})}function Ua(e){let{children:t,label:n,onOpenChange:r}=e;return(0,Q.jsx)(Xe,{className:xi.usageTooltip,content:(0,Q.jsx)(Qe,{children:n}),contentLayout:`multi-line`,hoverDelayMs:0,onOpenChange:r,children:e=>(0,Z.cloneElement)(t,{...e,"aria-label":n})})}function Wa(e){return e.preventDefault()}var Ga,Z,Q,Ka,qa,Ja,Ya,Xa,Za=e((()=>{Ga=Fe(),sr(),D(),Rn(),ot(),fn(),Cn(),hn(),m(),un(),an(),et(),Un(),gt(),h(),Ge(),Wt(),Bn(),M(),x(),H(),o(),he(),u(),tr(),K(),O(),yr(),i(),Z=t(De()),we(),Ce(),Tn(),fi(),Or(),kr(),hi(),Pi(),Ri(),Hi(),qi(),Ur(),Qi(),ka(),Fr(),Ia(),Si(),Dr(),Q=ve(),Me(),Ka=Mn({profileVisitKey:An(),profileFromSelfEntry:jn()}),qa={private:nr.CODEX_PROFILE_PAGE_VISIBILITY_PRIVATE,workspace:nr.CODEX_PROFILE_PAGE_VISIBILITY_WORKSPACE,public:nr.CODEX_PROFILE_PAGE_VISIBILITY_PUBLIC},Ja=T(()=>Oe(()=>import(`./621a6c6d-oykkxrz3n3699seq.js`).then(e=>e.ProfileV2PhotoCrop),__vite__mapDeps([61,1,2,3,4,5,6,7,8,9,62]))),Ya=e=>{"use forget";let t=(0,Ga.c)(8),n=_e(),r;t[0]!==n.key||t[1]!==n.state||t[2]!==e.routeUsername?(r=Ka.safeParse(n.state).data??{profileVisitKey:n.key,profileFromSelfEntry:e.routeUsername==null},t[0]=n.key,t[1]=n.state,t[2]=e.routeUsername,t[3]=r):r=t[3];let i=r,a=`${e.accountId}:${i.profileVisitKey}`,o;return t[4]!==e||t[5]!==a||t[6]!==i?(o=(0,Q.jsx)(Xa,{...e,visit:i},a),t[4]=e,t[5]=a,t[6]=i,t[7]=o):o=t[7],o},Xa=e=>{"use forget";let t=(0,Ga.c)(282),{accountId:n,accountName:r,initialPersonal:i,profilePage:o,routeUsername:s,todayIso:l,visit:u}=e,f=Ie(),p=_e(),m=Se(),{profileVisitKey:h,profileFromSelfEntry:g}=u,x=Te(),[te,T]=(0,Z.useState)(null),D=te?.source===o?te.page:o,ne=(0,Z.useRef)(null),O;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(O=()=>()=>ne.current?.abort(),t[0]=O):O=t[0];let k;t[1]===o?k=t[2]:(k=[o],t[1]=o,t[2]=k),(0,Z.useEffect)(O,k);let A=(0,Z.useRef)(null),j=(0,Z.useRef)(!1),re;t[3]===p.search?re=t[4]:(re=new URLSearchParams(p.search).get(`preview`),t[3]=p.search,t[4]=re);let[M,P]=(0,Z.useState)(re===`true`),F=D.is_self&&M,I=(0,Z.useRef)(null),L=(0,Z.useRef)(0),R;t[5]!==p.hash||t[6]!==p.pathname||t[7]!==p.search||t[8]!==m||t[9]!==u?(R=function(e){if(e&&(L.current=S(yt)?.scrollTop??0),P(e),!e){let e=new URLSearchParams(p.search);e.has(`preview`)&&(e.delete(`preview`),m({pathname:p.pathname,search:e.toString(),hash:p.hash},{replace:!0,state:u})),requestAnimationFrame(()=>{let e=S(yt);e!=null&&(e.scrollTop=L.current),I.current?.focus({preventScroll:!0})})}},t[5]=p.hash,t[6]=p.pathname,t[7]=p.search,t[8]=m,t[9]=u,t[10]=R):R=t[10];let z=R,ie=(0,Z.useId)(),ae;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(ae=v(),t[11]=ae):ae=t[11];let B=ae,oe=E(),se;t[12]===f?se=t[13]:(se=()=>mt({account:B,intl:f}),t[12]=f,t[13]=se);let V=ee(se),ce;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(ce=()=>Jt({accountStructure:B?.structure,plan:B?.planType,workspaceName:B?.isWorkspaceAccount()?a()?.account.name:null}),t[14]=ce):ce=t[14];let le=ee(ce),[ue,de]=(0,Z.useState)(i),[H,fe]=(0,Z.useState)(!1),[pe,me]=(0,Z.useState)(null),[he,ge]=(0,Z.useState)(!1),[ve,ye]=(0,Z.useState)(0),[be,xe]=(0,Z.useState)(null),W=be!=null,Ce=(0,Z.useRef)(null),[we,Ee]=(0,Z.useState)(null),[De,Oe]=(0,Z.useState)(null),[ke,Ae]=(0,Z.useState)(!1),[je,Me]=(0,Z.useState)(null),[Ne,Pe]=(0,Z.useState)(!1),[Fe,Le]=(0,Z.useState)(null),[Re,ze]=(0,Z.useState)(!1),[Be,Ve]=(0,Z.useState)(!1),He=s??D.profile_details.username,Ue;t[15]!==n||t[16]!==oe||t[17]!==i||t[18]!==F||t[19]!==D.has_public_personal_profile||t[20]!==D.is_self||t[21]!==D.page?(Ue=!F&&!i&&B?.isWorkspaceAccount()===!0&&D.page.workspace_id===n&&(D.is_self?oe.data?.accountItems.some(Ra)===!0:D.has_public_personal_profile===!0),t[15]=n,t[16]=oe,t[17]=i,t[18]=F,t[19]=D.has_public_personal_profile,t[20]=D.is_self,t[21]=D.page,t[22]=Ue):Ue=t[22];let We=Ue,G=i||We&&ue,Ge;t[23]!==n||t[24]!==i||t[25]!==G||t[26]!==He?(Ge=()=>{if(!G||i||He==null)return;let e=new AbortController;return c.safeGet(`/profiles/{username}/page`,{signal:e.signal,parameters:{path:{username:He},query:{personal:!0}},additionalHeaders:n==null?void 0:{"ChatGPT-Account-ID":n}}).then(t=>{e.signal.aborted||(wr(`success`,t.is_self?`self`:`other`),me(t),ge(!1))}).catch(t=>{e.signal.aborted||(wr(`failure`,`unknown`),ge(!0),t instanceof y&&[401,403,404].includes(t.status)&&me(null))}),()=>e.abort()},t[23]=n,t[24]=i,t[25]=G,t[26]=He,t[27]=Ge):Ge=t[27];let Ke;t[28]!==n||t[29]!==i||t[30]!==G||t[31]!==ve||t[32]!==He?(Ke=[n,i,G,ve,He],t[28]=n,t[29]=i,t[30]=G,t[31]=ve,t[32]=He,t[33]=Ke):Ke=t[33],(0,Z.useEffect)(Ge,Ke);let qe;t[34]!==n||t[35]!==i||t[36]!==o||t[37]!==x||t[38]!==s?(qe=function(){ne.current?.abort();let e=new AbortController;ne.current=e;let t={signal:e.signal,additionalHeaders:n==null?void 0:{"ChatGPT-Account-ID":n}};(s==null?c.safeGet(`/profiles/me/page`,t):c.safeGet(`/profiles/{username}/page`,{...t,parameters:{path:{username:s},query:{personal:i}}})).then(t=>{e.signal.aborted||(wr(`success`,t.is_self?`self`:`other`),T({source:o,page:t}))}).catch(t=>{e.signal.aborted||(wr(`failure`,o.is_self?`self`:`other`),t instanceof y&&[401,403,404].includes(t.status)&&x.revalidate())})},t[34]=n,t[35]=i,t[36]=o,t[37]=x,t[38]=s,t[39]=qe):qe=t[39];let Je=qe,Ze;t[40]!==o||t[41]!==Je?(Ze=function(e){if(e==null){Je();return}ne.current?.abort(),T(t=>({source:o,page:e(t?.source===o?t.page:o)}))},t[40]=o,t[41]=Je,t[42]=Ze):Ze=t[42];let Qe=Ze,et;t[43]===Qe?et=t[44]:(et=function(e){Qe(t=>({...t,profile_details:{...t.profile_details,...e}}))},t[43]=Qe,t[44]=et);let tt=et,nt;t[45]!==W||t[46]!==i||t[47]!==G||t[48]!==D.is_self||t[49]!==Je?(nt=()=>{!D.is_self||W||(Je(),G&&!i&&ye(za))},t[45]=W,t[46]=i,t[47]=G,t[48]=D.is_self,t[49]=Je,t[50]=nt):nt=t[50];let rt=(0,Z.useEffectEvent)(nt),it;t[51]===rt?it=t[52]:(it=()=>(window.addEventListener(`focus`,rt),()=>window.removeEventListener(`focus`,rt)),t[51]=rt,t[52]=it);let ot;t[53]===Symbol.for(`react.memo_cache_sentinel`)?(ot=[],t[53]=ot):ot=t[53],(0,Z.useEffect)(it,ot);let K=D.profile_details.username,ct;t[54]===K?ct=t[55]:(ct=Vt(K,!1),t[54]=K,t[55]=ct);let ut=ct,dt=D.is_self&&!F&&ut!=null&&!W,ft;t[56]!==ut||t[57]!==W||t[58]!==K||t[59]!==s?(ft=s==null&&!W&&K!=null&&Pt(K.split(`~`)[0]).ok&&ut==null,t[56]=ut,t[57]=W,t[58]=K,t[59]=s,t[60]=ft):ft=t[60];let gt=ft,_t,vt;t[61]!==D.is_self||t[62]!==gt?(_t=()=>{gt||j.current||(j.current=!0,C.logStructuredEvent(`CodexProfilePageViewed`,{profileOwner:D.is_self?`self`:`other`,surface:`web`}))},vt=[D.is_self,gt],t[61]=D.is_self,t[62]=gt,t[63]=_t,t[64]=vt):(_t=t[63],vt=t[64]),(0,Z.useEffect)(_t,vt);let bt,xt;t[65]!==K||t[66]!==p.search||t[67]!==m||t[68]!==g||t[69]!==h||t[70]!==gt?(bt=()=>{gt&&m({pathname:`/u/${encodeURIComponent(K)}`,search:p.search},{replace:!0,state:{profileVisitKey:h,profileFromSelfEntry:g}})},xt=[K,p.search,m,gt,h,g],t[65]=K,t[66]=p.search,t[67]=m,t[68]=g,t[69]=h,t[70]=gt,t[71]=bt,t[72]=xt):(bt=t[71],xt=t[72]),(0,Z.useEffect)(bt,xt);let q=G&&!i?pe:D,Ct=G&&!i&&pe==null&&!he,wt=q?.page.workspace_id==null?zn.CODEX_PROFILE_PAGE_SCOPE_PERSONAL:zn.CODEX_PROFILE_PAGE_SCOPE_WORKSPACE,Tt,Et;t[73]!==n||t[74]!==H||t[75]!==i||t[76]!==wt||t[77]!==G||t[78]!==g||t[79]!==h||t[80]!==gt||t[81]!==dt||t[82]!==q?(Tt=()=>{if(q==null||gt||dt)return;let e=JSON.stringify([h,n,q.page.workspace_id]);A.current!==e&&(A.current=e,C.logStructuredEvent(`CodexProfilePageShown`,{context:{pageScope:wt,effectiveVisibility:qa[q.page.visibility.value],profileOwner:q.is_self?Zn.CODEX_PROFILE_OWNER_SELF:Zn.CODEX_PROFILE_OWNER_OTHER,viewedUsername:q.profile_details.username??void 0},entryPoint:g?rr.CODEX_PROFILE_VIEW_ENTRY_POINT_SELF_ENTRY:rr.CODEX_PROFILE_VIEW_ENTRY_POINT_USERNAME,selectionReason:i?Hn.CODEX_PROFILE_PAGE_SELECTION_REASON_PUBLIC_PERSONAL_FALLBACK:G?Hn.CODEX_PROFILE_PAGE_SELECTION_REASON_SELECTED_PERSONAL:H?Hn.CODEX_PROFILE_PAGE_SELECTION_REASON_SELECTED_WORKSPACE:Hn.CODEX_PROFILE_PAGE_SELECTION_REASON_ACTIVE_ACCOUNT}))},Et=[n,H,i,h,g,G,wt,gt,dt,q],t[73]=n,t[74]=H,t[75]=i,t[76]=wt,t[77]=G,t[78]=g,t[79]=h,t[80]=gt,t[81]=dt,t[82]=q,t[83]=Tt,t[84]=Et):(Tt=t[83],Et=t[84]),(0,Z.useEffect)(Tt,Et);let Dt=q?.profile_details??D.profile_details,Ot=q?.is_self===!0,kt=Ot&&!F&&q?.can_edit,At;t[85]!==wt||t[86]!==q?(At=function(e){q!=null&&C.logStructuredEvent(`CodexProfileEditEntered`,{entryPoint:e,pageScope:wt})},t[85]=wt,t[86]=q,t[87]=At):At=t[87];let jt=At,Mt;t[88]!==kt||t[89]!==F||t[90]!==Ot||t[91]!==G?(Mt=Ot&&!F&&G&&!kt?(0,Q.jsx)(U,{id:`profile.view.personalReadOnly`,defaultMessage:`Switch to your personal account to edit your personal profile`}):null,t[88]=kt,t[89]=F,t[90]=Ot,t[91]=G,t[92]=Mt):Mt=t[92];let Nt=Mt,Ft;t[93]!==F||t[94]!==Ot||t[95]!==G?(Ft=G||F||!Ot||!b(B?.planType),t[93]=F,t[94]=Ot,t[95]=G,t[96]=Ft):Ft=t[96];let It=Ft,Lt,Rt,zt,Bt,Ht,Ut,Wt,Gt,Kt,qt,Yt,Xt,Zt,Qt,en;if(t[97]!==n||t[98]!==le||t[99]!==r||t[100]!==ut||t[101]!==kt||t[102]!==We||t[103]!==z||t[104]!==Dt.description||t[105]!==Dt.display_name||t[106]!==Dt.photo_frame_style||t[107]!==Dt.profile_picture_url||t[108]!==Dt.username||t[109]!==Nt||t[110]!==be?.displayName||t[111]!==be?.photo?.previewUrl||t[112]!==be?.photoShape||t[113]!==W||t[114]!==K||t[115]!==Be||t[116]!==Re||t[117]!==f||t[118]!==F||t[119]!==Ot||t[120]!==p.search||t[121]!==jt||t[122]!==m||t[123]!==Qe||t[124]!==tt||t[125]!==wt||t[126]!==G||t[127]!==Ct||t[128]!==ie||t[129]!==D.can_edit||t[130]!==D.page||t[131]!==ke||t[132]!==De||t[133]!==x||t[134]!==Ne||t[135]!==It||t[136]!==dt||t[137]!==l||t[138]!==q||t[139]!==u||t[140]!==V){let e=(De??Dt.username)?.trim()||null,i=e?.split(`~`)[0]??null;en=It?i:null;let a=St({accountName:Ot&&!F&&!G?r:null,displayName:Dt.display_name?.trim()||null,username:en}),o=be?.displayName??a,s;t[156]===q?s=t[157]:(s=q==null?null:pi(q),t[156]=q,t[157]=s);let h=s,g=Ot&&!F?void 0:q?.page.display_settings,v=be?.photo?.previewUrl??Dt.profile_picture_url,ee=g?.show_activity_graph_section!==!1&&q?.page.workspace_display_settings?.activity_enabled!==!1,y=g?.show_usage_stats_section!==!1,b=g?.show_insights_section!==!1,S=g?.show_top_plugins_section!==!1,te;t[158]===f?te=t[159]:(te=f.formatMessage({id:`chatgpt.profile.header.private.label`,defaultMessage:`Private`}),t[158]=f,t[159]=te);let w=te,T;t[160]===f?T=t[161]:(T=f.formatMessage({id:`chatgpt.profile.identity.avatar.alt`,defaultMessage:`Profile picture`}),t[160]=f,t[161]=T);let E=(0,Q.jsx)(Ar,{frame:be?.photoShape??Dt.photo_frame_style,animateShape:!0,children:(0,Q.jsx)(jr,{alt:T,name:o,src:v})}),ne;t[162]!==n||t[163]!==tt?(ne=async function(e){Le(null),ze(!0),Ve(!1);try{let t=await La(e),r=await c.safePatch(`/profiles/me`,{additionalHeaders:n==null?void 0:{"ChatGPT-Account-ID":n},requestBody:{profile_asset_pointer:t}});C.logStructuredEvent(`CodexProfileInlinePhotoChangeEvent`,{action:qn.CODEX_PROFILE_INLINE_PHOTO_CHANGE_ACTION_SUCCEEDED}),tt(r)}catch{Ve(!0),C.logStructuredEvent(`CodexProfileInlinePhotoChangeEvent`,{action:qn.CODEX_PROFILE_INLINE_PHOTO_CHANGE_ACTION_FAILED})}ze(!1)},t[162]=n,t[163]=tt,t[164]=ne):ne=t[164],Bt=ne;let O;if(dt&&K!=null&&ut!=null){let e;t[165]!==p.search||t[166]!==m||t[167]!==x||t[168]!==u?(e=()=>{m({pathname:`/profile`,search:p.search},{replace:!0,state:u}),x.revalidate()},t[165]=p.search,t[166]=m,t[167]=x,t[168]=u,t[169]=e):e=t[169];let n;t[170]!==ut||t[171]!==K||t[172]!==D.can_edit||t[173]!==e?(n=(0,Q.jsx)(Aa,{username:K,blockedSuffix:ut,canEdit:D.can_edit,onSaved:e}),t[170]=ut,t[171]=K,t[172]=D.can_edit,t[173]=e,t[174]=n):n=t[174],O=n}else if(Ct){let e;t[175]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Q.jsx)(`p`,{className:`text-token-text-secondary text-center text-sm`,role:`status`,children:(0,Q.jsx)(U,{id:`chatgpt.profile.v2.personal.loading`,defaultMessage:`Loading personal profile…`})}),t[175]=e):e=t[175],O=e}else if(q==null){let e;t[176]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Q.jsx)(U,{id:`chatgpt.profile.v2.personal.error`,defaultMessage:`This profile couldn’t be loaded`}),t[176]=e):e=t[176];let n;t[177]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Q.jsx)(d,{color:`secondary`,onClick:()=>{me(null),ge(!1),ye(Ba)},children:(0,Q.jsx)(U,{id:`chatgpt.profile.v2.personal.retry`,defaultMessage:`Try again`})}),t[177]=n):n=t[177];let r;t[178]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Q.jsxs)(`div`,{className:`flex flex-col items-center gap-3 text-center`,role:`alert`,children:[e,(0,Q.jsxs)(`div`,{className:`flex gap-2`,children:[n,(0,Q.jsx)(d,{color:`secondary`,onClick:()=>{de(!1),fe(!0)},children:(0,Q.jsx)(U,{id:`chatgpt.profile.v2.personal.back`,defaultMessage:`Back to workspace profile`})})]})]}),t[178]=r):r=t[178],O=r}else{let e=h?.activity,r=q.page.stats==null?null:h?.summary,i;t[179]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,Q.jsx)(`p`,{className:`text-token-text-secondary text-sm`,role:`status`,children:(0,Q.jsx)(U,{id:`chatgpt.profile.v2.stats.unavailable`,defaultMessage:`Profile stats unavailable`})}),t[179]=i):i=t[179];let a;t[180]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Q.jsx)(`p`,{className:`text-token-text-secondary text-sm`,role:`status`,children:(0,Q.jsx)(U,{id:`chatgpt.profile.v2.activity.unavailable`,defaultMessage:`Token usage unavailable`})}),t[180]=a):a=t[180];let o;t[181]!==n||t[182]!==Nt||t[183]!==F||t[184]!==Qe||t[185]!==q?(o=(0,Q.jsx)(Ca,{accountId:n,page:q,plan:B?.planType,editDisabledReason:Nt,readOnly:F,onChanged:Qe}),t[181]=n,t[182]=Nt,t[183]=F,t[184]=Qe,t[185]=q,t[186]=o):o=t[186];let s;t[187]!==f||t[188]!==ee||t[189]!==y||t[190]!==e||t[191]!==r||t[192]!==o||t[193]!==l?(s=(0,Q.jsx)(ht,{renderStat:Va,renderSection:Ha,activity:e,summary:r,statsFallback:i,activityFallback:a,intl:f,renderTooltip:Ua,showActivityGraph:ee,showUsageStatistics:y,showcase:o,todayIso:l}),t[187]=f,t[188]=ee,t[189]=y,t[190]=e,t[191]=r,t[192]=o,t[193]=l,t[194]=s):s=t[194];let c;t[195]!==b||t[196]!==S||t[197]!==h||t[198]!==q.page.insights||t[199]!==q.page.top_plugins?(c=h?.insights==null?(0,Q.jsx)(Br,{visible:b||S,children:(0,Q.jsxs)(`section`,{className:`flex flex-col gap-2`,children:[(0,Q.jsx)(`h2`,{className:`text-base font-medium`,children:b?(0,Q.jsx)(U,{id:`profile.v2.insights.title`,defaultMessage:`Insights`}):(0,Q.jsx)(U,{id:`profile.v2.plugins.title`,defaultMessage:`Top plugins`})}),(0,Q.jsx)(`div`,{className:`border-token-border-default text-token-text-secondary flex min-h-40 items-center justify-center rounded-2xl border px-4 text-center text-sm`,children:b?(0,Q.jsx)(U,{id:`profile.activity.unavailable`,defaultMessage:`Activity insights unavailable`}):(0,Q.jsx)(U,{id:`profile.activity.plugins.unavailable`,defaultMessage:`Plugin activity unavailable`})})]})}):(0,Q.jsx)(oi,{insights:h.insights,isProfileV2:!0,showInsights:b&&q.page.insights!=null,showPlugins:S&&q.page.top_plugins!=null}),t[195]=b,t[196]=S,t[197]=h,t[198]=q.page.insights,t[199]=q.page.top_plugins,t[200]=c):c=t[200];let u;t[201]!==s||t[202]!==c?(u=(0,Q.jsxs)(Q.Fragment,{children:[s,c]}),t[201]=s,t[202]=c,t[203]=u):u=t[203],O=u}let k=!dt&&(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsxs)(`section`,{className:`relative isolate flex flex-col items-center`,children:[(0,Q.jsx)(at,{layout:`inline-fields`,avatar:kt?(0,Q.jsxs)(`label`,{htmlFor:W?ie:void 0,className:`focus-within:ring-ring group relative flex rounded-full focus-within:ring-2 ${Re?`cursor-default`:`cursor-pointer`}`,children:[E,!Re&&(0,Q.jsx)(`span`,{className:`bg-token-text-primary/30 pointer-events-none absolute end-0 bottom-0 flex size-8 items-center justify-center rounded-full text-white opacity-0 backdrop-blur-lg group-focus-within:opacity-100 group-hover:opacity-100`,children:(0,Q.jsx)(on,{"aria-hidden":`true`,className:`icon`})}),!W&&(0,Q.jsx)(`input`,{name:`profile-photo`,type:`file`,accept:`image/*`,className:`sr-only`,disabled:Re,"aria-label":f.formatMessage({id:`profile.photoInputLabel`,defaultMessage:`Change profile picture`}),onClick:()=>{jt(Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_PROFILE_PHOTO),C.logStructuredEvent(`CodexProfileInlinePhotoChangeEvent`,{action:qn.CODEX_PROFILE_INLINE_PHOTO_CHANGE_ACTION_STARTED})},onChange:e=>{let t=e.currentTarget.files?.[0];e.currentTarget.value=``,t!=null&&(C.logStructuredEvent(`CodexProfileInlinePhotoChangeEvent`,{action:qn.CODEX_PROFILE_INLINE_PHOTO_CHANGE_ACTION_IMAGE_SELECTED}),Le(t))}})]}):E,displayName:W?(0,Q.jsx)(`span`,{ref:Ee,className:`block`}):kt&&n!=null?(0,Q.jsx)(Vi,{pageScope:wt,field:`displayName`,value:a??``,onEditStarted:()=>jt(Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_INLINE_DISPLAY_NAME),accountId:n,isSaving:ke,setSaving:Ae,onSaved:tt},n):o,username:It&&kt&&n!=null?(0,Q.jsx)(Pr,{pageScope:wt,value:en??``,accountId:n,isSaving:ke,isProfileEditing:W,onEditStarted:()=>{W||jt(Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_USERNAME)},onSaved:e=>{W?Oe(e):m({pathname:`/u/${encodeURIComponent(e)}`,search:p.search},{replace:!0,state:u})}}):en==null?null:(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsx)(U,{id:`profile.username.prefix`,defaultMessage:`@`}),en]})}),Be&&(0,Q.jsx)(`p`,{role:`alert`,className:`text-interactive-label-warning-secondary text-sm`,children:(0,Q.jsx)(U,{id:`profile.photoCrop.error`,defaultMessage:`Unable to process the profile picture`})})]}),(W||!!Dt.description?.trim())&&(0,Q.jsx)(lt,{children:W?(0,Q.jsx)(`span`,{ref:Me,className:`block`},`editor`):kt&&n!=null?(0,Q.jsx)(Vi,{pageScope:wt,field:`bio`,onEditStarted:()=>jt(Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_INLINE_BIO),value:(Dt.description??``).replace(/\r\n|[\r\n\u2028\u2029]/g,` `),accountId:n,isSaving:ke,setSaving:Ae,onSaved:tt},n):(0,Q.jsx)(`span`,{className:`block px-2.5 py-1.25`,children:Dt.description},`saved`)})]}),A;t[204]!==O||t[205]!==k?(A=(0,Q.jsx)(`div`,{className:`${xi.page} bg-primary text-token-text-primary min-h-full w-full`,children:(0,Q.jsxs)(pt,{children:[k,O]})}),t[204]=O,t[205]=k,t[206]=A):A=t[206],zt=A,Rt=st,Xt=`overflow-hidden`,Zt=e!=null&&(0,Q.jsx)(br,{children:(0,Q.jsx)(`title`,{children:f.formatMessage({id:`profile.page.documentTitle`,defaultMessage:`{displayName} (@{username}) | ChatGPT`},{displayName:a??i,username:i})})});let j;t[207]===Symbol.for(`react.memo_cache_sentinel`)?(j=(0,Q.jsx)(Kn,{}),t[207]=j):j=t[207],t[208]===Symbol.for(`react.memo_cache_sentinel`)?(Qt=(0,Q.jsx)(st.Navbar,{children:(0,Q.jsx)(Fn,{children:(0,Q.jsx)(Ln,{navHeader:j,children:(0,Q.jsx)(Xn,{isProjectsEnabled:_()})})})}),t[208]=Qt):Qt=t[208],Lt=st.Header,Kt=F,qt=`${F?`invisible`:``} h-header-height sticky top-0 z-10 -mb-(--header-height) flex shrink-0 items-center justify-between gap-2 px-2 ${W?``:`group-data-scroll-from-top/scroll-root:bg-token-main-surface-primary/80 group-data-scroll-from-top/scroll-root:backdrop-blur-xl`}`,t[209]===Symbol.for(`react.memo_cache_sentinel`)?(Yt=(0,Q.jsx)(Jn,{}),t[209]=Yt):Yt=t[209],Wt=`flex min-w-0 flex-1 items-center gap-2`,t[210]!==le||t[211]!==We||t[212]!==W||t[213]!==f||t[214]!==G||t[215]!==D.page||t[216]!==dt||t[217]!==V?(Gt=We&&!dt&&(0,Q.jsxs)(Ye,{size:`auto`,sideOffset:1,contentClassName:xi.scopeMenu,triggerButton:(0,Q.jsxs)(d,{className:xi.scopeTrigger,disabled:W,color:`ghost`,size:`toolbar`,"aria-label":f.formatMessage({id:`profile.viewScope`,defaultMessage:`Profile page`}),children:[(0,Q.jsx)(`span`,{className:`hidden max-w-48 truncate sm:inline`,children:G?f.formatMessage({id:`profile.viewPersonal`,defaultMessage:`Personal`}):D.page.workspace_name??le}),(0,Q.jsx)(nn,{"aria-hidden":!0,className:`icon-sm`})]}),children:[(0,Q.jsx)($e.Label,{children:(0,Q.jsx)(U,{id:`profile.viewScope.heading`,defaultMessage:`View profile`})}),(0,Q.jsxs)($e.RadioGroup,{value:G?`personal`:`workspace`,onValueChange:e=>{de(e===`personal`),fe(!0)},children:[(0,Q.jsx)($e.RadioItem,{value:`personal`,children:(0,Q.jsx)(U,{id:`profile.viewPersonal`,defaultMessage:`Personal`})}),(0,Q.jsx)($e.RadioItem,{value:`workspace`,children:(0,Q.jsxs)(`span`,{className:`inline-flex items-center gap-1`,children:[D.page.workspace_name??le,V!=null&&(0,Q.jsx)(`span`,{className:`text-token-text-tertiary`,children:V})]})})]})]}),t[210]=le,t[211]=We,t[212]=W,t[213]=f,t[214]=G,t[215]=D.page,t[216]=dt,t[217]=V,t[218]=Gt):Gt=t[218],Ht=`ms-auto flex shrink-0 items-center gap-1.5 antialiased ${W?`invisible`:``}`,Ut=q?.is_self&&!F&&!dt&&(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsx)(Xe,{content:Nt,disabled:Nt==null,children:e=>(0,Q.jsx)(d,{color:`ghost`,size:`toolbar`,icon:on,ref:Ce,...e,"aria-label":f.formatMessage({id:`chatgpt.profile.header.edit.label`,defaultMessage:`Edit`}),disabled:ke||W,"aria-disabled":!kt||ke||W,visuallyDisabled:!kt,onClick:()=>{!kt||ke||W||(jt(Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_EDIT_BUTTON),C.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:wt,action:In.CODEX_PROFILE_EDIT_ACTION_OPENED}),xe({displayName:o??``,bio:Dt.description??``,photo:null,photoShape:[`circle`,`oval`,`rounded_square`,`scalloped_circle`,`scalloped_oval`].find(e=>e===Dt.photo_frame_style)??`circle`,settings:q.page.display_settings??{}}))},children:(0,Q.jsx)(U,{id:`chatgpt.profile.header.edit.label`,defaultMessage:`Edit`})})}),!W&&!G&&e!=null&&ut==null&&Pt(e.split(`~`)[0]).ok&&q.page.visibility.value!==`private`&&(0,Q.jsx)(d,{ref:I,onClick:()=>z(!0),color:`ghost`,size:`toolbar`,icon:_n,children:(0,Q.jsx)(U,{id:`profile.preview`,defaultMessage:`Preview`})}),!G&&(0,Q.jsxs)(Q.Fragment,{children:[q.page.visibility.value===`private`?(0,Q.jsx)(Xe,{content:(0,Q.jsx)(`span`,{className:`font-normal`,children:(0,Q.jsx)(U,{id:`profile.privateTooltip`,defaultMessage:`Only visible to you`})}),children:e=>(0,Q.jsxs)(`span`,{...e,className:`btn-toolbar text-token-text-secondary inline-flex cursor-default items-center gap-1 select-none`,"aria-label":w,children:[(0,Q.jsx)($t,{"aria-hidden":`true`,className:`icon-sm`}),w]})}):null,(q.page.workspace_id==null||q.page.visibility.value===`workspace`)&&(0,Q.jsx)(d,{color:`ghost`,size:`toolbar`,icon:pn,"aria-haspopup":`dialog`,"aria-expanded":Ne,className:`aria-expanded:bg-black/5 dark:aria-expanded:bg-white/10`,disabled:W,onClick:()=>{C.logStructuredEvent(`CodexProfileSharingAction`,{context:{profileOwner:Zn.CODEX_PROFILE_OWNER_SELF,viewedUsername:q.profile_details.username??void 0},action:Gn.CODEX_PROFILE_SHARING_ACTION_TYPE_OPEN,result:Pn.CODEX_PROFILE_SHARING_RESULT_CLICKED}),Pe(!0)},children:(0,Q.jsx)(U,{id:`chatgpt.profile.v2.share.button`,defaultMessage:`Share`})})]})]}),t[97]=n,t[98]=le,t[99]=r,t[100]=ut,t[101]=kt,t[102]=We,t[103]=z,t[104]=Dt.description,t[105]=Dt.display_name,t[106]=Dt.photo_frame_style,t[107]=Dt.profile_picture_url,t[108]=Dt.username,t[109]=Nt,t[110]=be?.displayName,t[111]=be?.photo?.previewUrl,t[112]=be?.photoShape,t[113]=W,t[114]=K,t[115]=Be,t[116]=Re,t[117]=f,t[118]=F,t[119]=Ot,t[120]=p.search,t[121]=jt,t[122]=m,t[123]=Qe,t[124]=tt,t[125]=wt,t[126]=G,t[127]=Ct,t[128]=ie,t[129]=D.can_edit,t[130]=D.page,t[131]=ke,t[132]=De,t[133]=x,t[134]=Ne,t[135]=It,t[136]=dt,t[137]=l,t[138]=q,t[139]=u,t[140]=V,t[141]=Lt,t[142]=Rt,t[143]=zt,t[144]=Bt,t[145]=Ht,t[146]=Ut,t[147]=Wt,t[148]=Gt,t[149]=Kt,t[150]=qt,t[151]=Yt,t[152]=Xt,t[153]=Zt,t[154]=Qt,t[155]=en}else Lt=t[141],Rt=t[142],zt=t[143],Bt=t[144],Ht=t[145],Ut=t[146],Wt=t[147],Gt=t[148],Kt=t[149],qt=t[150],Yt=t[151],Xt=t[152],Zt=t[153],Qt=t[154],en=t[155];let tn;t[219]!==Ht||t[220]!==Ut?(tn=(0,Q.jsx)(`div`,{className:Ht,children:Ut}),t[219]=Ht,t[220]=Ut,t[221]=tn):tn=t[221];let rn;t[222]!==Wt||t[223]!==Gt||t[224]!==tn?(rn=(0,Q.jsxs)(`div`,{className:Wt,children:[Gt,tn]}),t[222]=Wt,t[223]=Gt,t[224]=tn,t[225]=rn):rn=t[225];let an;t[226]!==Kt||t[227]!==qt||t[228]!==Yt||t[229]!==rn?(an=(0,Q.jsxs)(`header`,{inert:Kt,className:qt,children:[Yt,rn]}),t[226]=Kt,t[227]=qt,t[228]=Yt,t[229]=rn,t[230]=an):an=t[230];let sn;t[231]!==Lt||t[232]!==an?(sn=(0,Q.jsx)(Lt,{children:an}),t[231]=Lt,t[232]=an,t[233]=sn):sn=t[233];let cn;t[234]===Symbol.for(`react.memo_cache_sentinel`)?(cn=(0,Q.jsx)($n,{page:`chat`}),t[234]=cn):cn=t[234];let ln;t[235]!==z||t[236]!==F||t[237]!==zt||t[238]!==q?.page?(ln=F?(0,Q.jsx)(Fi,{isWorkspace:q?.page.visibility.value===`workspace`,onOpenChange:z,onCloseAutoFocus:Wa,children:zt}):zt,t[235]=z,t[236]=F,t[237]=zt,t[238]=q?.page,t[239]=ln):ln=t[239];let un;t[240]!==n||t[241]!==je||t[242]!==kt||t[243]!==we||t[244]!==be||t[245]!==p.search||t[246]!==m||t[247]!==Qe||t[248]!==wt||t[249]!==ie||t[250]!==ke||t[251]!==De||t[252]!==It||t[253]!==q||t[254]!==en||t[255]!==u?(un=be!=null&&kt&&q&&(0,Q.jsx)(Ci,{accountId:n,page:q,saving:ke,setSaving:Ae,draft:be,onDraftChange:xe,photoInputId:ie,usernameEditor:n!=null&&It?(0,Q.jsx)(Pr,{pageScope:wt,value:en??``,accountId:n,isSaving:ke,isProfileEditing:!0,presentation:`row`,onSaved:Oe}):null,fieldTargets:{displayName:we,bio:je},onClose:()=>{xe(null),De==null?requestAnimationFrame(()=>Ce.current?.focus()):(Oe(null),m({pathname:`/u/${encodeURIComponent(De)}`,search:p.search},{replace:!0,state:u}))},onChanged:Qe},`profile-editor`),t[240]=n,t[241]=je,t[242]=kt,t[243]=we,t[244]=be,t[245]=p.search,t[246]=m,t[247]=Qe,t[248]=wt,t[249]=ie,t[250]=ke,t[251]=De,t[252]=It,t[253]=q,t[254]=en,t[255]=u,t[256]=un):un=t[256];let dn;t[257]===un?dn=t[258]:(dn=(0,Q.jsx)(st.ContentSidebar,{children:(0,Q.jsx)(N,{initial:!1,children:un})}),t[257]=un,t[258]=dn);let fn;t[259]!==n||t[260]!==F||t[261]!==Ot||t[262]!==Qe||t[263]!==G||t[264]!==Ne||t[265]!==dt||t[266]!==q?(fn=Ne&&Ot&&!F&&!G&&!dt&&q&&(0,Q.jsx)(Ui,{accountId:n,page:q,onClose:()=>Pe(!1),onChanged:Qe}),t[259]=n,t[260]=F,t[261]=Ot,t[262]=Qe,t[263]=G,t[264]=Ne,t[265]=dt,t[266]=q,t[267]=fn):fn=t[267];let mn;t[268]!==Fe||t[269]!==Re||t[270]!==Bt?(mn=Fe!=null&&(0,Q.jsx)(w,{for:Ja,withProps:{file:Fe,saving:Re,setSaving:ze,onCancel:()=>Le(null),onSave:e=>void Bt(e)},open:!0,disableLightDismiss:Re,onClose:()=>Le(null)}),t[268]=Fe,t[269]=Re,t[270]=Bt,t[271]=mn):mn=t[271];let hn;return t[272]!==Rt||t[273]!==Xt||t[274]!==Zt||t[275]!==Qt||t[276]!==sn||t[277]!==ln||t[278]!==dn||t[279]!==fn||t[280]!==mn?(hn=(0,Q.jsxs)(Rt,{className:Xt,children:[Zt,Qt,sn,cn,ln,dn,fn,mn]}),t[272]=Rt,t[273]=Xt,t[274]=Zt,t[275]=Qt,t[276]=sn,t[277]=ln,t[278]=dn,t[279]=fn,t[280]=mn,t[281]=hn):hn=t[281],hn}}));function Qa(e){return{credits:e.tokens,date:e.start_date}}function $a(e){let{children:t,label:n,onOpenChange:r}=e;return(0,$.jsx)(Xe,{content:(0,$.jsx)(`span`,{className:`font-normal`,children:n}),hoverDelayMs:0,onOpenChange:r,children:e=>(0,no.cloneElement)(t,{...e,"aria-label":n})})}function eo(){C.logStructuredEvent(`CodexProfilePageViewed`,{profileOwner:`self`,surface:`web`})}var to,no,$,ro,io,ao,oo,so,co,lo,uo=e((()=>{Ce(),to=Fe(),sr(),D(),Mt(),Rn(),un(),an(),n(),et(),Un(),fi(),Za(),h(),Ge(),Bn(),M(),x(),H(),Nt(),pr(),K(),no=t(De()),we(),$=ve(),ro=e=>{"use forget";let t=(0,to.c)(5),{active:n,children:r,onSelect:i}=e,a=`interactive-button text-sm ${n?`text-token-text-primary`:`text-token-text-tertiary`}`,o;return t[0]!==n||t[1]!==r||t[2]!==i||t[3]!==a?(o=(0,$.jsx)(`button`,{type:`button`,"aria-pressed":n,className:a,onClick:i,children:r}),t[0]=n,t[1]=r,t[2]=i,t[3]=a,t[4]=o):o=t[4],o},io=(e,t)=>e.formatMessage({id:`chatgpt.profile.stats.streak.value`,defaultMessage:`{days, plural, one {# day} other {# days}}`},{days:t??0}),ao=e=>{"use forget";let t=(0,to.c)(41),{profileStats:n,todayIso:r}=e,i=Ie(),[a,o]=(0,no.useState)(`daily`),s=n?.stats,c;t[0]===s?.daily_usage_buckets?c=t[1]:(c=s?.daily_usage_buckets??[],t[0]=s?.daily_usage_buckets,t[1]=c);let l;t[2]===c?l=t[3]:(l=c.map(Qa),t[2]=c,t[3]=l);let u=l,d=s!=null&&!n?.metadata.stats_error,f;t[4]!==i||t[5]!==s||t[6]!==d?(f=d?(0,$.jsxs)(Kt,{children:[(0,$.jsx)(Re,{textSizeClassName:`text-sm`,value:i.formatNumber(s.lifetime_tokens??0,{notation:`compact`,maximumFractionDigits:1}),label:(0,$.jsx)(U,{id:`chatgpt.profile.stats.lifetime_tokens.label`,defaultMessage:`Lifetime tokens`})}),(0,$.jsx)(q,{}),(0,$.jsx)(Re,{textSizeClassName:`text-sm`,value:i.formatNumber(s.peak_daily_tokens??0,{notation:`compact`,maximumFractionDigits:1}),label:(0,$.jsx)(U,{id:`chatgpt.profile.stats.peak_tokens.label`,defaultMessage:`Peak tokens`})}),(0,$.jsx)(q,{}),(0,$.jsx)(Re,{textSizeClassName:`text-sm`,value:io(i,s.current_streak_days),label:(0,$.jsx)(U,{id:`chatgpt.profile.stats.current_streak.label`,defaultMessage:`Current streak`})}),(0,$.jsx)(q,{}),(0,$.jsx)(Re,{textSizeClassName:`text-sm`,value:io(i,s.longest_streak_days),label:(0,$.jsx)(U,{id:`chatgpt.profile.stats.longest_streak.label`,defaultMessage:`Longest streak`})})]}):null,t[4]=i,t[5]=s,t[6]=d,t[7]=f):f=t[7];let p;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,$.jsx)(U,{id:`chatgpt.profile.usage.title`,defaultMessage:`Token activity`}),t[8]=p):p=t[8];let m=a===`daily`,h,g;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(h=()=>o(`daily`),g=(0,$.jsx)(U,{id:`chatgpt.profile.usage.view.daily`,defaultMessage:`Daily`}),t[9]=h,t[10]=g):(h=t[9],g=t[10]);let _;t[11]===m?_=t[12]:(_=(0,$.jsx)(ro,{active:m,onSelect:h,children:g}),t[11]=m,t[12]=_);let v=a===`weekly`,ee,y;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(ee=()=>o(`weekly`),y=(0,$.jsx)(U,{id:`chatgpt.profile.usage.view.weekly`,defaultMessage:`Weekly`}),t[13]=ee,t[14]=y):(ee=t[13],y=t[14]);let b;t[15]===v?b=t[16]:(b=(0,$.jsx)(ro,{active:v,onSelect:ee,children:y}),t[15]=v,t[16]=b);let x=a===`cumulative`,S,te;t[17]===Symbol.for(`react.memo_cache_sentinel`)?(S=()=>o(`cumulative`),te=(0,$.jsx)(U,{id:`chatgpt.profile.usage.view.cumulative`,defaultMessage:`Cumulative`}),t[17]=S,t[18]=te):(S=t[17],te=t[18]);let C;t[19]===x?C=t[20]:(C=(0,$.jsx)(ro,{active:x,onSelect:S,children:te}),t[19]=x,t[20]=C);let w;t[21]!==b||t[22]!==C||t[23]!==_?(w=(0,$.jsxs)($.Fragment,{children:[_,b,C]}),t[21]=b,t[22]=C,t[23]=_,t[24]=w):w=t[24];let T;t[25]!==a||t[26]!==u||t[27]!==i||t[28]!==d||t[29]!==r?(T=d?(0,$.jsx)(Lt,{dailyUsage:u,intl:i,renderTooltip:$a,todayIso:r,view:a}):(0,$.jsx)(`p`,{className:`text-token-text-secondary text-sm`,role:`status`,children:(0,$.jsx)(U,{id:`chatgpt.profile.usage.unavailable`,defaultMessage:`Token activity is temporarily unavailable.`})}),t[25]=a,t[26]=u,t[27]=i,t[28]=d,t[29]=r,t[30]=T):T=t[30];let E;t[31]!==w||t[32]!==T?(E=(0,$.jsx)(Ut,{titleTextSizeClassName:`text-sm`,title:p,controls:w,children:T}),t[31]=w,t[32]=T,t[33]=E):E=t[33];let D;t[34]!==s||t[35]!==d?(D=d?(0,$.jsx)(oi,{stats:s}):null,t[34]=s,t[35]=d,t[36]=D):D=t[36];let ne;return t[37]!==E||t[38]!==D||t[39]!==f?(ne=(0,$.jsxs)($.Fragment,{children:[f,E,D]}),t[37]=E,t[38]=D,t[39]=f,t[40]=ne):ne=t[40],ne},oo=()=>{"use forget";let e=(0,to.c)(4),t=je();if(t.v2){let n;return e[0]===t?n=e[1]:(n=(0,$.jsx)(Ya,{...t}),e[0]=t,e[1]=n),n}let n;return e[2]===t?n=e[3]:(n=(0,$.jsx)(so,{loaderData:t}),e[2]=t,e[3]=n),n},so=e=>{"use forget";let t=(0,to.c)(78),{loaderData:n}=e;wt(eo);let r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=_(),t[0]=r):r=t[0];let i=r,{accountName:o,profile:s,profileStats:c,todayIso:l,userId:u}=n,f;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(f=v(),t[1]=f):f=t[1];let p=f,m;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(m=()=>Jt({accountStructure:p?.structure,plan:p?.planType,workspaceName:p?.isWorkspaceAccount()?a()?.account.name:null}),t[2]=m):m=t[2];let h=ee(m),g=Ie(),y=Te(),b=v()?.normalizedAccountUserId??u,x;t[3]===g?x=t[4]:(x=g.formatMessage({id:`chatgpt.profile.header.private.label`,defaultMessage:`Private`}),t[3]=g,t[4]=x);let S=x,te,C,w,T,E,D,ne,O,k,A,j,re;if(t[5]!==h||t[6]!==o||t[7]!==b||t[8]!==g||t[9]!==S||t[10]!==s.profile_details.display_name||t[11]!==s.profile_details.profile_picture_url||t[12]!==s.profile_details.username||t[13]!==s.viewer_access.can_edit||t[14]!==y){w=St({accountName:o,displayName:s.profile_details.display_name,username:s.profile_details.username}),C=st,t[27]===Symbol.for(`react.memo_cache_sentinel`)?(E=(0,$.jsx)(st.Navbar,{children:(0,$.jsx)(Fn,{children:(0,$.jsx)(Ln,{navHeader:(0,$.jsx)(Kn,{}),children:(0,$.jsx)(Xn,{isProjectsEnabled:i})})})}),t[27]=E):E=t[27];let e;t[28]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,$.jsx)(Jn,{}),t[28]=e):e=t[28];let n;t[29]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,$.jsxs)(`div`,{className:`flex min-w-0 items-center gap-2`,children:[e,(0,$.jsx)(`h1`,{className:`truncate text-sm font-normal`,children:(0,$.jsx)(U,{id:`chatgpt.profile.header.title`,defaultMessage:`Profile`})})]}),t[29]=n):n=t[29];let r;t[30]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,$.jsx)(U,{id:`chatgpt.profile.header.private.tooltip`,defaultMessage:`Your profile is only visible to you`}),t[30]=r):r=t[30];let a;t[31]===S?a=t[32]:(a=(0,$.jsx)(Xe,{content:r,children:e=>(0,$.jsxs)(`button`,{...e,type:`button`,"aria-label":S,className:`interactive-button text-token-text-tertiary flex cursor-default items-center gap-1.5 rounded-lg px-2 py-1 text-sm`,children:[(0,$.jsx)($t,{"aria-hidden":`true`,className:`icon-sm`}),S]})}),t[31]=S,t[32]=a);let c=!s.viewer_access.can_edit||b==null,l;t[33]===g?l=t[34]:(l=g.formatMessage({id:`chatgpt.profile.header.edit.aria_label`,defaultMessage:`Edit profile`}),t[33]=g,t[34]=l);let u;t[35]!==b||t[36]!==y?(u=()=>{b!=null&&ie(Et,{accountUserId:b,onClose:()=>{y.revalidate()}})},t[35]=b,t[36]=y,t[37]=u):u=t[37];let f,p;t[38]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,$.jsx)(on,{"aria-hidden":`true`,className:`icon-sm`}),p=(0,$.jsx)(U,{id:`chatgpt.profile.header.edit.label`,defaultMessage:`Edit`}),t[38]=f,t[39]=p):(f=t[38],p=t[39]);let m;t[40]!==c||t[41]!==l||t[42]!==u?(m=(0,$.jsxs)(d,{color:`ghost`,size:`small`,className:`text-sm`,contentWrapperClassName:`gap-1.5`,disabled:c,"aria-label":l,onClick:u,children:[f,p]}),t[40]=c,t[41]=l,t[42]=u,t[43]=m):m=t[43],t[44]!==a||t[45]!==m?(D=(0,$.jsx)(st.Header,{children:(0,$.jsxs)(`header`,{className:`h-header-height bg-token-main-surface-primary sticky top-0 z-10 flex items-center justify-between gap-2 px-3 py-2`,children:[n,(0,$.jsxs)(`div`,{className:`flex shrink-0 items-center gap-2`,children:[a,m]})]})}),t[44]=a,t[45]=m,t[46]=D):D=t[46],t[47]===Symbol.for(`react.memo_cache_sentinel`)?(ne=(0,$.jsx)($n,{page:`chat`}),t[47]=ne):ne=t[47],T=`bg-token-main-surface-primary text-token-text-primary flex min-h-full w-full justify-center px-5 py-16 sm:px-8`,re=`flex w-full max-w-[720px] flex-col gap-8`,j=`flex flex-col items-center text-center`,te=at,O=`text-sm`,t[48]===h?k=t[49]:(k=h==null?null:(0,$.jsx)(`span`,{className:`border-token-border-light text-token-text-tertiary inline-flex h-6 items-center rounded-lg border px-[5px] text-sm leading-5`,children:h}),t[48]=h,t[49]=k),A=s.profile_details.profile_picture_url?(0,$.jsx)(`img`,{alt:g.formatMessage({id:`chatgpt.profile.identity.avatar.alt`,defaultMessage:`Profile picture`}),className:`size-20 rounded-full object-cover`,src:s.profile_details.profile_picture_url}):(0,$.jsx)(`span`,{"aria-hidden":`true`,className:`bg-token-bg-tertiary text-token-text-primary flex size-20 items-center justify-center rounded-full text-2xl`,children:jt(w)}),t[5]=h,t[6]=o,t[7]=b,t[8]=g,t[9]=S,t[10]=s.profile_details.display_name,t[11]=s.profile_details.profile_picture_url,t[12]=s.profile_details.username,t[13]=s.viewer_access.can_edit,t[14]=y,t[15]=te,t[16]=C,t[17]=w,t[18]=T,t[19]=E,t[20]=D,t[21]=ne,t[22]=O,t[23]=k,t[24]=A,t[25]=j,t[26]=re}else te=t[15],C=t[16],w=t[17],T=t[18],E=t[19],D=t[20],ne=t[21],O=t[22],k=t[23],A=t[24],j=t[25],re=t[26];let M=s.profile_details.username?`@${s.profile_details.username}`:null,N;t[50]!==te||t[51]!==w||t[52]!==M||t[53]!==O||t[54]!==k||t[55]!==A?(N=(0,$.jsx)(te,{usernameTextSizeClassName:O,account:k,avatar:A,displayName:w,username:M}),t[50]=te,t[51]=w,t[52]=M,t[53]=O,t[54]=k,t[55]=A,t[56]=N):N=t[56];let P;t[57]!==N||t[58]!==j?(P=(0,$.jsx)(`section`,{className:j,children:N}),t[57]=N,t[58]=j,t[59]=P):P=t[59];let F;t[60]===l?F=t[61]:(F=e=>(0,$.jsx)(ao,{profileStats:e,todayIso:l}),t[60]=l,t[61]=F);let I;t[62]!==c||t[63]!==F?(I=(0,$.jsx)(no.Suspense,{fallback:null,children:(0,$.jsx)(Pe,{resolve:c,children:F})}),t[62]=c,t[63]=F,t[64]=I):I=t[64];let L;t[65]!==P||t[66]!==I||t[67]!==re?(L=(0,$.jsxs)(`div`,{className:re,children:[P,I]}),t[65]=P,t[66]=I,t[67]=re,t[68]=L):L=t[68];let R;t[69]!==T||t[70]!==L?(R=(0,$.jsx)(`div`,{className:T,children:L}),t[69]=T,t[70]=L,t[71]=R):R=t[71];let z;return t[72]!==C||t[73]!==E||t[74]!==D||t[75]!==ne||t[76]!==R?(z=(0,$.jsxs)(C,{children:[E,D,ne,R]}),t[72]=C,t[73]=E,t[74]=D,t[75]=ne,t[76]=R,t[77]=z):z=t[77],z},co=ye(oo),lo=Ee(function(){"use forget";let e=(0,to.c)(1),t=Le();if(ke(t)&&t.status===404){let t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(mr,{}),e[0]=t):t=e[0],t}throw t})}));export{uo as n,co as r,lo as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/34e6c69f-nbujtc1fg2jjndft.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-tap9fxyhk4ehe0bs.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-nmt18uiom3b14vca.js", "assets/30901919-niqyapppecmq5jkn.js", "assets/c470f5ab-uuoa2gfm4goj6p9f.js", "assets/0e5afe53-f7up6uuou2fv3lyg.js", "assets/conversation-small-bwtqiuwj.css", "assets/18931466-e88cyrkcd720jjph.js", "assets/c2675c8c-h5ybkhdzcoblzzdu.js", "assets/82782bc9-g3liom11amtlr9kq.js", "assets/8b34dbc2-ojcl97ddvu2212q0.js", "assets/global-modals-lv5n3ujm.css", "assets/486ed215-eoa8mzpfuwusahxf.js", "assets/1c919af1-n3qwx9w7ipxrf1ap.js", "assets/74a883a0-0bl4w620esk73bmz.js", "assets/4b68ab38-hqs0yc0b0yhvv7p6.js", "assets/9d60841e-e49t3yx590vsf159.js", "assets/e981ddae-jmgg6ibiidqeeif6.js", "assets/3e47c24c-fk412hm0sfn783fi.js", "assets/707eab0c-fwyop6b3ijt0i6j7.js", "assets/bcae0416-kg7dr2sbww6cg1yo.js", "assets/d4c740a3-m98a0dejurzr8grq.js", "assets/Button-ijivgymd.css", "assets/8d3260bc-np6v8cydoj4utapm.js", "assets/170322a3-osj2nsczby2m2x8s.js", "assets/620167af-jq8ioyd5itarfde4.js", "assets/b453068a-lz9p8iypelcxzs6g.js", "assets/65b7af15-fodmmka45ske14tt.js", "assets/38f75407-meu5vz7s7g1vq3zn.js", "assets/203d6bff-fv9pwh0hujue6nz0.js", "assets/db2560a5-extao3ot6g6ykxmg.js", "assets/d91ece2a-gttdbdrglazyr8rn.js", "assets/b26e60ff-f8jg7r08bi0azhkw.js", "assets/5054a313-jswom1iph68k881l.js", "assets/0b24e85b-gj7lxfooquzo5tub.js", "assets/20e2c00e-dsex7gmdhijvqlfo.js", "assets/0b0692ab-ii8bdlhgdua9grxz.js", "assets/4e1f6607-dgpgw6d7oytc9f85.js", "assets/06dfbf77-luzq88v2c6lb7odb.js", "assets/76d6530a-jzfyy5ghc250rlg8.js", "assets/a4e570c1-iuksjeff1siuy8s1.js", "assets/ComposerDictationWaveform-d73bir8z.css", "assets/1aa4cb0b-oafna8jt4rb2nmz2.js", "assets/7004d116-dtkyeg51rb6ho84f.js", "assets/Image-nnxrmk5d.css", "assets/3cb8201e-c1qyptripmosnrr0.js", "assets/b08afc98-hhrzqa96jwiah246.js", "assets/bcae0416-hovub9z7ufk8htsh.js", "assets/d1a7b01b-lcaxsndjp9a3w14h.js", "assets/0d978407-ceckrisx59r1sg1c.js", "assets/eadfdb53-h8cgx8llg62bz4d9.js", "assets/852051ee-o16p7ek375wtpbbu.js", "assets/6313cbac-e5hl863fl4prr1xq.js", "assets/e231198e-jl2ibjby4prulgvg.js", "assets/82a96f05-falqj54vlsynpsc2.js", "assets/16a2233e-okjuup9p892pg3e7.js", "assets/94e0eb8c-ihzxs0mxwp6wywyq.js", "assets/plugin-details-page-ew49talu.css", "assets/621a6c6d-oykkxrz3n3699seq.js", "assets/16091175-lj7ybyfr4b0kr6tl.js", "assets/b1fefae4-eth7ns9gh1x1tnkt.js", "assets/266db272-i5gxiexjiqqlb4sj.js", "assets/24cdbdd5-dx8bpwke3u75tts9.js", "assets/profile-v2-dialog-f6kvsp0h.css", "assets/acf00cb5-oyut24yxlkfcr3wz.js", "assets/5208238a-omwmalu36fu8jxtz.js", "assets/af004db9-pfp7d41sgaj6mosy.js", "assets/07c7be17-cudbbmm3g1bbd3ld.js", "assets/33a2cedd-cdennatkjfxa1di4.js", "assets/d880ef91-kuqyg17ckdsfs5dk.js", "assets/96098dcc-klq0jt85cyrba19u.js", "assets/f6a81ab7-h235d7cojfv2jsnu.js", "assets/f8d34c7f-bgpf1el3dr1j1jiy.js", "assets/0fbccedd-g9ixjjesydyljcto.js", "assets/c19d65aa-m63j5yal71riy79r.js", "assets/051ead45-hajnnq1kur4ayj67.js", "assets/8f504e8b-h2tw778yv9csz4m0.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $0 as n,
+    $tt as r,
+    At as i,
+    B1 as a,
+    Bat as o,
+    DG as s,
+    F7 as c,
+    Iy as l,
+    J3 as u,
+    JT as d,
+    Jt as f,
+    KT as p,
+    Ka as m,
+    Lk as h,
+    Ly as g,
+    Nk as _,
+    P1 as v,
+    P5 as ee,
+    Pat as y,
+    Q3 as b,
+    R1 as x,
+    S5 as S,
+    SJ as te,
+    Snt as C,
+    Wa as w,
+    X0 as T,
+    X1 as E,
+    YT as D,
+    Ynt as ne,
+    Z0 as O,
+    _q as k,
+    aJ as A,
+    cn as j,
+    dat as re,
+    g8 as M,
+    hn as N,
+    iJ as P,
+    ih as F,
+    ix as I,
+    lJ as L,
+    lat as R,
+    mJ as z,
+    n2 as ie,
+    oct as ae,
+    oq as B,
+    qT as oe,
+    rx as se,
+    th as V,
+    trt as ce,
+    uJ as le,
+    vn as ue,
+    wG as de,
+    wnt as H,
+    xG as fe,
+    xnt as pe,
+    yst as me,
+    z7 as he
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    A as ge,
+    At as _e,
+    Bn as ve,
+    Ht as ye,
+    Kt as be,
+    N as xe,
+    Nn as U,
+    Nt as Se,
+    O as W,
+    Q as Ce,
+    Rn as we,
+    Rt as Te,
+    Ut as Ee,
+    Vn as De,
+    cn as Oe,
+    gt as ke,
+    it as Ae,
+    kt as je,
+    ln as Me,
+    s as Ne,
+    tt as Pe,
+    wn as Fe,
+    zn as Ie,
+    zt as Le
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $ot as Re,
+    Aat as ze,
+    BCn as Be,
+    Blt as Ve,
+    Dot as He,
+    Eat as Ue,
+    Eot as We,
+    Fot as G,
+    GGn as Ge,
+    Got as Ke,
+    HCn as qe,
+    Hlt as Je,
+    IHn as Ye,
+    Ijt as Xe,
+    Jot as Ze,
+    Kot as Qe,
+    LHn as $e,
+    Ljt as et,
+    Mat as tt,
+    Oat as nt,
+    Oot as rt,
+    Pat as it,
+    Qot as at,
+    RHn as ot,
+    Tat as K,
+    UGn as st,
+    Uat as ct,
+    Uot as lt,
+    Vot as ut,
+    WCn as dt,
+    Wat as ft,
+    Wot as pt,
+    X4t as mt,
+    Yot as ht,
+    Z4t as gt,
+    Zot as _t,
+    aD as vt,
+    aKn as yt,
+    ast as bt,
+    dst as xt,
+    est as q,
+    fst as St,
+    grt as Ct,
+    hkt as wt,
+    hrt as Tt,
+    i6t as Et,
+    iTn as Dt,
+    jot as Ot,
+    kot as kt,
+    l$ as At,
+    lst as jt,
+    m6t as Mt,
+    mkt as Nt,
+    mst as Pt,
+    nTn as Ft,
+    not as It,
+    nst as Lt,
+    oD as Rt,
+    oot as zt,
+    ost as Bt,
+    pst as Vt,
+    rTn as Ht,
+    rst as Ut,
+    tKn as Wt,
+    tTn as Gt,
+    tst as Kt,
+    u$ as qt,
+    ust as Jt,
+    wat as Yt,
+    xat as Xt,
+    yat as Zt,
+    zot as Qt
+} from "./conversation-small-nmt18uiom3b14vca.js";
+import {
+    $x as $t,
+    Av as en,
+    Bp as tn,
+    By as nn,
+    Cf as rn,
+    Fx as an,
+    Ix as on,
+    Kr as sn,
+    Mv as cn,
+    Nv as ln,
+    Qx as un,
+    Vp as dn,
+    Vy as fn,
+    bS as pn,
+    dC as mn,
+    gb as hn,
+    jv as gn,
+    mb as _n,
+    nS as vn,
+    qr as yn,
+    rS as bn,
+    uC as xn,
+    wf as Sn,
+    yS as Cn
+} from "./30901919-niqyapppecmq5jkn.js";
+import {
+    Dd as wn,
+    Lx as Tn,
+    M_ as En,
+    N_ as Dn,
+    Xd as On,
+    ba as kn,
+    fS as An,
+    qx as jn,
+    sS as Mn,
+    ya as Nn
+} from "./c2675c8c-h5ybkhdzcoblzzdu.js";
+import {
+    $x as Pn,
+    Bp as Fn,
+    Bx as In,
+    D as Ln,
+    G as Rn,
+    Gx as zn,
+    Hp as Bn,
+    Hx as Vn,
+    Kx as Hn,
+    O as Un,
+    Py as Wn,
+    Qx as Gn,
+    U as Kn,
+    Ux as qn,
+    Vp as Jn,
+    Vx as Yn,
+    W as Xn,
+    Wx as Zn,
+    Xx as Qn,
+    bu as $n,
+    cy as er,
+    iS as tr,
+    qx as nr,
+    rS as rr,
+    sy as ir,
+    tS as ar,
+    uy as or,
+    xu as sr,
+    xy as cr
+} from "./8b34dbc2-ojcl97ddvu2212q0.js";
+import {
+    G as lr,
+    K as ur
+} from "./c470f5ab-uuoa2gfm4goj6p9f.js";
+import {
+    n as dr,
+    t as fr
+} from "./5b6acc4d-c2wgpuw8ywb03on8.js";
+import {
+    n as pr,
+    t as mr
+} from "./e18c46cf-gso23y5yqg4kmxo6.js";
+import {
+    n as hr,
+    t as gr
+} from "./b5855e1f-fqhtch8d4kztu3y2.js";
+import {
+    n as _r,
+    t as vr
+} from "./c96c6d5b-jac8f7pyzb9q5hre.js";
+import {
+    n as yr,
+    t as br
+} from "./9f2e6d33-h33rm8r24h08gyr1.js";
+import {
+    n as xr,
+    r as Sr,
+    t as Cr
+} from "./7e73986a-fm3qy57kflthjdu6.js";
+import {
+    a as wr,
+    i as Tr,
+    r as Er,
+    t as Dr
+} from "./16091175-lj7ybyfr4b0kr6tl.js";
+import {
+    i as Or,
+    n as kr,
+    r as Ar,
+    t as jr
+} from "./266db272-i5gxiexjiqqlb4sj.js";
+import {
+    a as Mr,
+    i as Nr,
+    n as Pr,
+    r as Fr
+} from "./57f927e1-ja5g2676gqqw4nvu.js";
+import {
+    n as Ir,
+    t as Lr
+} from "./24cdbdd5-dx8bpwke3u75tts9.js";
+import {
+    n as Rr,
+    t as zr
+} from "./33a2cedd-cdennatkjfxa1di4.js";
+
+function Br(e) {
+    "use forget";
+    let t = (0, Vr.c)(3),
+        n = !!f(),
+        r;
+    return t[0] !== e || t[1] !== n ? (r = (0, Hr.jsx)(ze, {
+        ...e,
+        reducedMotion: n,
+        Presence: N,
+        MotionDiv: j.div
+    }), t[0] = e, t[1] = n, t[2] = r) : r = t[2], r
+}
+var Vr, Hr, Ur = e((() => {
+    Vr = Fe(), K(), i(), Hr = ve()
+}));
+
+function Wr(e) {
+    let {
+        plugin_id: t
+    } = e;
+    return t != null && !dt(t) ? [t] : []
+}
+
+function Gr(e) {
+    return e.data == null ? [] : [e.data.plugin]
+}
+
+function Kr(e) {
+    return [e.id, e]
+}
+
+function qr(e) {
+    return [e.id, e]
+}
+
+function Jr(e) {
+    return e.isLoading
+}
+
+function Yr(e) {
+    return (0, J.jsx)(Br, {
+        ...e
+    })
+}
+
+function Xr(e) {
+    return (0, J.jsx)(U, {
+        id: `profile.v2.fastMode.value`,
+        defaultMessage: `{percent, number, percent} of runs`,
+        values: {
+            percent: e / 100
+        }
+    })
+}
+
+function Zr(e, t) {
+    return (0, J.jsx)(Tt, {
+        className: `size-14 rounded-md`
+    }, e.plugin_id ?? t)
+}
+
+function Qr(e) {
+    let {
+        children: t,
+        tooltip: n
+    } = e;
+    return (0, J.jsx)(Xe, {
+        content: n,
+        children: e => (0, J.jsx)(`button`, {
+            ...e,
+            type: `button`,
+            "aria-label": n,
+            className: `interactive-button cursor-default rounded-md`,
+            children: t
+        })
+    })
+}
+
+function $r(e) {
+    let {
+        children: t,
+        name: n
+    } = e;
+    return (0, J.jsx)(Xe, {
+        content: n,
+        contentTheme: `unstyled`,
+        hoverDelayMs: 0,
+        side: `bottom-center`,
+        sideOffset: 0,
+        children: e => (0, ni.cloneElement)(t, e)
+    })
+}
+
+function ei(e) {
+    return e === `connector_openai_browser` || e === `plugin_connector_1p_51c1ba70f47481919149861084681943`
+}
+var ti, ni, J, ri, ii, ai, oi, si, ci, li, ui, di, fi = e((() => {
+    ti = Fe(), K(), le(), ur(), sn(), tn(), vn(), rn(), xn(), A(), et(), m(), qt(), Ct(), Dt(), Be(), Yt(), cr(), x(), O(), Ne(), ni = t(De()), we(), Ce(), Ur(), Dr(), o(), re(), J = ve(), Me(), ri = At(), ii = T(() => Oe(() => import(`./34e6c69f-nbujtc1fg2jjndft.js`).then(e => e.ProfilePluginDetails), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]))), ai = {
+        browser: At(`search`),
+        chrome: L,
+        computer_use: At(`cursor`),
+        documents: dn,
+        library: bn,
+        openai_library: bn,
+        pdf: At(`pdf`),
+        ponytail: At(`default`),
+        presentations: yn,
+        sites: mn,
+        spreadsheets: lr,
+        visualize: At(`chart`)
+    }, oi = e => {
+        "use forget";
+        let t = (0, ti.c)(76),
+            {
+                stats: n,
+                insights: r,
+                isProfileV2: i,
+                showInsights: a,
+                showPlugins: o
+            } = e,
+            s = i !== void 0 && i,
+            c = o === void 0 || o,
+            l = Ie(),
+            [u, d] = (0, ni.useState)(null),
+            f = xe(),
+            p = r ?? (n ? xt(n) : {}),
+            m = s ? c ? Bt(p.invocations) : [] : p.invocations ?? [],
+            h = v(),
+            g = {
+                accountId: h?.id,
+                hasWorkspace: !!h?.getWorkspaceId(),
+                locale: l.locale,
+                platform: `chat`,
+                productSku: Ht.CONNECTOR_SETTING
+            },
+            {
+                data: _
+            } = W({
+                ...ir(g),
+                enabled: s && m.length > 0 && h != null
+            }),
+            ee;
+        t[0] !== _ || t[1] !== s ? (ee = e => e.plugin_id != null && dt(e.plugin_id) && !(s && _?.some(t => t.id === e.plugin_id)) ? [e.plugin_id] : [], t[0] = _, t[1] = s, t[2] = ee) : ee = t[2];
+        let b = [...new Set(m.flatMap(ee))],
+            x = W({
+                ...or(b, g, {
+                    hydrateApps: !0
+                }),
+                enabled: b.length > 0 && (s || !0)
+            }),
+            S = s ? [...new Set(m.flatMap(Wr))] : [],
+            te = ge({
+                queries: S.map(e => ({
+                    queryKey: [`profile-plugin-alias`, h?.normalizedAccountUserId, g, e],
+                    staleTime: 6e4,
+                    retry: !1,
+                    enabled: !0,
+                    queryFn: async () => {
+                        try {
+                            let t = await bt(e, async e => {
+                                let {
+                                    name: t,
+                                    scope: n,
+                                    pageToken: r
+                                } = e, i = await Wn(t, r, g, 50, n);
+                                return {
+                                    plugins: i.plugins,
+                                    nextPageToken: i.page.cursor
+                                }
+                            });
+                            return Tr(t == null ? `failure` : `success`), t
+                        } catch (e) {
+                            let t = e;
+                            throw t instanceof y || R.addError(Error(`Profile plugin resolution failed`)), Tr(`failure`), t
+                        }
+                    }
+                }))
+            }),
+            C;
+        t[3] === s ? C = t[4] : (C = e => !s && e.plugin_id != null && qe(e.plugin_id) && e.plugin_id.endsWith(`@openai-curated-remote`) && ci(e) == null ? [e.plugin_id] : [], t[3] = s, t[4] = C);
+        let T = ge({
+                queries: [...new Set(m.flatMap(C))].map(e => ({
+                    ...er(f, e, g, {
+                        includeInstalledPlugins: !1
+                    }),
+                    enabled: !0,
+                    retry: !1
+                }))
+            }),
+            E;
+        t[5] === x.data ? E = t[6] : (E = x.data ?? [], t[5] = x.data, t[6] = E);
+        let D;
+        t[7] !== T || t[8] !== E ? (D = [...E, ...T.flatMap(Gr)], t[7] = T, t[8] = E, t[9] = D) : D = t[9];
+        let ne = D,
+            O = new Map([...(x.data ?? []).map(Kr), ...te.flatMap((e, t) => e.data == null ? [] : [
+                [S[t], e.data]
+            ]), ...(_ ?? []).map(qr)]),
+            k = s && (b.length > 0 && x.isLoading || te.some(Jr)),
+            A = s && p.invocations != null ? {
+                ...p,
+                invocations: k ? m : m.filter(e => {
+                    let {
+                        plugin_id: t
+                    } = e;
+                    return t != null && O.has(t)
+                })
+            } : p,
+            j = s ? (e, t) => {
+                let n = e.plugin_id == null ? null : O.get(e.plugin_id);
+                n != null && (t.focus(), d({
+                    invocation: e,
+                    plugin: n
+                }))
+            } : void 0,
+            re = s ? `stacked` : `columns`,
+            M = s ? Yr : void 0,
+            N = s ? Xr : void 0,
+            P;
+        t[10] === s ? P = t[11] : (P = s ? (0, J.jsxs)(J.Fragment, {
+            children: [(0, J.jsx)(Sn, {
+                "aria-hidden": `true`,
+                className: `icon-xs`
+            }), (0, J.jsxs)(`div`, {
+                className: `flex items-center gap-1`,
+                children: [(0, J.jsx)(U, {
+                    id: `profile.activity.plugins.empty`,
+                    defaultMessage: `No plugins used yet ·`
+                }), (0, J.jsx)(Ae, {
+                    className: `text-token-text-tertiary hover:text-token-text-secondary underline underline-offset-2`,
+                    to: `/plugins`,
+                    children: (0, J.jsx)(U, {
+                        id: `profile.activity.plugins.browse`,
+                        defaultMessage: `Browse`
+                    })
+                })]
+            })]
+        }) : (0, J.jsxs)(J.Fragment, {
+            children: [(0, J.jsx)(Sn, {
+                "aria-hidden": `true`,
+                className: `icon-xs`
+            }), (0, J.jsx)(U, {
+                id: `chatgpt.profile.activity.invocations.empty`,
+                defaultMessage: `No plugins or skills used yet`
+            })]
+        }), t[10] = s, t[11] = P);
+        let F, I, L;
+        t[12] === l ? (F = t[13], I = t[14], L = t[15]) : (F = e => l.formatNumber(e), I = e => l.formatNumber(e / 100, {
+            maximumFractionDigits: 0,
+            style: `percent`
+        }), L = e => l.formatMessage({
+            id: `chatgpt.profile.activity.invocations.run_count`,
+            defaultMessage: `{runs, plural, one {# run} other {# runs}}`
+        }, {
+            runs: e
+        }), t[12] = l, t[13] = F, t[14] = I, t[15] = L);
+        let z;
+        t[16] !== m || t[17] !== k ? (z = k ? (0, J.jsx)(`div`, {
+            "aria-busy": `true`,
+            className: `flex flex-wrap gap-x-4 gap-y-8 pb-6`,
+            children: m.map(Zr)
+        }) : void 0, t[16] = m, t[17] = k, t[18] = z) : z = t[18];
+        let ie;
+        t[19] === l ? ie = t[20] : (ie = l.formatMessage({
+            id: `chatgpt.profile.activity.section.aria_label`,
+            defaultMessage: `Activity`
+        }), t[19] = l, t[20] = ie);
+        let ae;
+        t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (ae = (0, J.jsx)(U, {
+            id: `chatgpt.profile.activity.insights.fast_mode.label`,
+            defaultMessage: `Fast Mode`
+        }), t[21] = ae) : ae = t[21];
+        let B;
+        t[22] === l ? B = t[23] : (B = l.formatMessage({
+            id: `chatgpt.profile.activity.insights.fast_mode.tooltip`,
+            defaultMessage: `How often you use /fast mode`
+        }), t[22] = l, t[23] = B);
+        let oe;
+        t[24] === s ? oe = t[25] : (oe = s ? (0, J.jsx)(U, {
+            id: `profile.v2.insights.title`,
+            defaultMessage: `Insights`
+        }) : (0, J.jsx)(U, {
+            id: `chatgpt.profile.activity.insights.heading`,
+            defaultMessage: `Activity insights`
+        }), t[24] = s, t[25] = oe);
+        let se;
+        t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (se = (0, J.jsx)(U, {
+            id: `chatgpt.profile.activity.insights.reasoning_effort.label`,
+            defaultMessage: `Most used reasoning`
+        }), t[26] = se) : se = t[26];
+        let V;
+        t[27] === l ? V = t[28] : (V = l.formatMessage({
+            id: `chatgpt.profile.activity.insights.reasoning_effort.tooltip`,
+            defaultMessage: `Your most used reasoning effort`
+        }), t[27] = l, t[28] = V);
+        let ce, le;
+        t[29] === Symbol.for(`react.memo_cache_sentinel`) ? (ce = (0, J.jsx)(U, {
+            id: `chatgpt.profile.activity.insights.value.none`,
+            defaultMessage: `None`
+        }), le = (0, J.jsx)(U, {
+            id: `chatgpt.profile.activity.insights.value.not_used`,
+            defaultMessage: `Not used`
+        }), t[29] = ce, t[30] = le) : (ce = t[29], le = t[30]);
+        let ue;
+        t[31] === s ? ue = t[32] : (ue = s ? (0, J.jsx)(U, {
+            id: `profile.v2.plugins.title`,
+            defaultMessage: `Top plugins`
+        }) : (0, J.jsx)(U, {
+            id: `chatgpt.profile.activity.invocations.heading`,
+            defaultMessage: `Most used plugins`
+        }), t[31] = s, t[32] = ue);
+        let de;
+        t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (de = (0, J.jsx)(U, {
+            id: `chatgpt.profile.activity.insights.skills_explored.label`,
+            defaultMessage: `Skills explored`
+        }), t[33] = de) : de = t[33];
+        let H;
+        t[34] === l ? H = t[35] : (H = l.formatMessage({
+            id: `chatgpt.profile.activity.insights.skills_explored.tooltip`,
+            defaultMessage: `The number of unique skills you've used`
+        }), t[34] = l, t[35] = H);
+        let fe;
+        t[36] === Symbol.for(`react.memo_cache_sentinel`) ? (fe = (0, J.jsx)(U, {
+            id: `chatgpt.profile.activity.insights.total_skills_used.label`,
+            defaultMessage: `Total skills used`
+        }), t[36] = fe) : fe = t[36];
+        let pe;
+        t[37] === l ? pe = t[38] : (pe = l.formatMessage({
+            id: `chatgpt.profile.activity.insights.total_skills_used.tooltip`,
+            defaultMessage: `Total skill uses`
+        }), t[37] = l, t[38] = pe);
+        let me;
+        t[39] === Symbol.for(`react.memo_cache_sentinel`) ? (me = (0, J.jsx)(U, {
+            id: `chatgpt.profile.activity.insights.total_chats.label`,
+            defaultMessage: `Total chats`
+        }), t[39] = me) : me = t[39];
+        let he;
+        t[40] === l ? he = t[41] : (he = l.formatMessage({
+            id: `chatgpt.profile.activity.insights.total_chats.tooltip`,
+            defaultMessage: `Total unique conversations`
+        }), t[40] = l, t[41] = he);
+        let _e;
+        t[42] !== ie || t[43] !== B || t[44] !== oe || t[45] !== V || t[46] !== ue || t[47] !== H || t[48] !== pe || t[49] !== he ? (_e = {
+            ariaLabel: ie,
+            fastModeLabel: ae,
+            fastModeTooltip: B,
+            insightsTitle: oe,
+            mostUsedReasoningLabel: se,
+            mostUsedReasoningTooltip: V,
+            none: ce,
+            notUsed: le,
+            pluginsTitle: ue,
+            skillsExploredLabel: de,
+            skillsExploredTooltip: H,
+            totalSkillsUsedLabel: fe,
+            totalSkillsUsedTooltip: pe,
+            totalThreadsLabel: me,
+            totalThreadsTooltip: he
+        }, t[42] = ie, t[43] = B, t[44] = oe, t[45] = V, t[46] = ue, t[47] = H, t[48] = pe, t[49] = he, t[50] = _e) : _e = t[50];
+        let ve = e => {
+                let {
+                    invocation: t,
+                    name: n
+                } = e;
+                return (0, J.jsx)(si, {
+                    invocation: t,
+                    isProfileV2: s,
+                    name: n,
+                    plugin: s ? _?.find(e => e.id === O.get(t.plugin_id ?? ``)?.id) ?? null : ui(t, ne)
+                })
+            },
+            ye;
+        t[51] !== l || t[52] !== s ? (ye = e => s ? tt(l, e) : (0, J.jsx)(di, {
+            effort: e
+        }), t[51] = l, t[52] = s, t[53] = ye) : ye = t[53];
+        let be = s ? $r : void 0,
+            Se;
+        t[54] !== a || t[55] !== c || t[56] !== j || t[57] !== re || t[58] !== M || t[59] !== N || t[60] !== P || t[61] !== F || t[62] !== I || t[63] !== L || t[64] !== z || t[65] !== _e || t[66] !== ve || t[67] !== ye || t[68] !== be || t[69] !== A ? (Se = (0, J.jsx)(_t, {
+            onInvocationClick: j,
+            layout: re,
+            renderSection: M,
+            formatFastModeUsage: N,
+            textSizeClassName: `text-sm`,
+            showInsights: a,
+            showPlugins: c,
+            emptyInvocations: P,
+            formatNumber: F,
+            formatPercent: I,
+            formatRuns: L,
+            loadingInvocations: z,
+            insights: A,
+            messages: _e,
+            renderFeatureValue: Qr,
+            renderInvocationIcon: ve,
+            renderReasoningEffort: ye,
+            secondaryTextClassName: `text-token-text-secondary`,
+            renderInvocationTooltip: be
+        }), t[54] = a, t[55] = c, t[56] = j, t[57] = re, t[58] = M, t[59] = N, t[60] = P, t[61] = F, t[62] = I, t[63] = L, t[64] = z, t[65] = _e, t[66] = ve, t[67] = ye, t[68] = be, t[69] = A, t[70] = Se) : Se = t[70];
+        let Ce;
+        t[71] === u ? Ce = t[72] : (Ce = u != null && (0, J.jsx)(w, {
+            for: ii,
+            withProps: {
+                name: u.invocation.plugin_name ?? ``,
+                pluginId: u.plugin.id
+            },
+            open: !0,
+            onClose: () => d(null)
+        }), t[71] = u, t[72] = Ce);
+        let we;
+        return t[73] !== Se || t[74] !== Ce ? (we = (0, J.jsxs)(J.Fragment, {
+            children: [Se, Ce]
+        }), t[73] = Se, t[74] = Ce, t[75] = we) : we = t[75], we
+    }, si = e => {
+        "use forget";
+        let t = (0, ti.c)(32),
+            {
+                invocation: n,
+                name: r,
+                plugin: i,
+                isProfileV2: a
+            } = e,
+            o = a ? `size-10 shrink-0` : `icon-sm shrink-0`,
+            s;
+        t[0] !== n.plugin_id || t[1] !== a || t[2] !== r || t[3] !== i?.id || t[4] !== i?.name ? (s = a && [i?.name, i?.id, n.plugin_id?.split(`@`)[0], r].some(ei) ? P() : null, t[0] = n.plugin_id, t[1] = a, t[2] = r, t[3] = i?.id, t[4] = i?.name, t[5] = s) : s = t[5];
+        let c = s,
+            l;
+        t[6] !== c || t[7] !== o ? (l = c == null ? null : (0, J.jsx)(`img`, {
+            alt: ``,
+            className: o,
+            src: c.logo
+        }), t[6] = c, t[7] = o, t[8] = l) : l = t[8];
+        let u = l,
+            d = n.type === `skill` ? ri : Sn,
+            f = a ? `size-8 shrink-0` : o,
+            p;
+        t[9] !== d || t[10] !== f ? (p = (0, J.jsx)(d, {
+            "aria-hidden": `true`,
+            className: f
+        }), t[9] = d, t[10] = f, t[11] = p) : p = t[11];
+        let m = p,
+            h;
+        if (t[12] !== u || t[13] !== m || t[14] !== o || t[15] !== n || t[16] !== r) {
+            let e = ci(n, n.type === `plugin` ? r : void 0);
+            h = u ?? (e == null ? m : (0, ni.createElement)(e, {
+                "aria-hidden": !0,
+                className: o
+            })), t[12] = u, t[13] = m, t[14] = o, t[15] = n, t[16] = r, t[17] = h
+        } else h = t[17];
+        let g = h;
+        if (a && u == null && n.logo_url != null) {
+            let e;
+            t[18] !== m || t[19] !== n.logo_url || t[20] !== r ? (e = (0, J.jsx)(Zt, {
+                fallbackIcon: m,
+                iconUrl: n.logo_url,
+                isNextToLabel: !0,
+                name: r,
+                variant: `inlineLarge`
+            }), t[18] = m, t[19] = n.logo_url, t[20] = r, t[21] = e) : e = t[21], g = e
+        }
+        if (i == null && (a || n.logo_url == null)) return g;
+        let _;
+        t[22] !== a || t[23] !== i ? (_ = a ? {
+            pluginIconDarkUrl: i?.interface?.logo_dark,
+            pluginIconUrl: i?.interface?.logo
+        } : i == null ? {} : Xt(i), t[22] = a, t[23] = i, t[24] = _) : _ = t[24];
+        let {
+            pluginIconDarkUrl: v,
+            pluginIconUrl: ee
+        } = _, y = a ? void 0 : `size-4! shrink-0`, b = ee ?? (a ? void 0 : n.logo_url), x = a ? `inlineLarge` : `inline`, S;
+        return t[25] !== g || t[26] !== r || t[27] !== v || t[28] !== y || t[29] !== b || t[30] !== x ? (S = (0, J.jsx)(Zt, {
+            className: y,
+            fallbackIcon: g,
+            iconDarkUrl: v,
+            iconUrl: b,
+            isNextToLabel: !0,
+            name: r,
+            variant: x
+        }), t[25] = g, t[26] = r, t[27] = v, t[28] = y, t[29] = b, t[30] = x, t[31] = S) : S = t[31], S
+    }, ci = (e, t) => {
+        for (let n of li(e, t)) {
+            let e = ai[n];
+            if (e != null) return e;
+            let t = Gt[n];
+            if (t != null) return Ft[t]?.icon ?? null
+        }
+        return null
+    }, li = (e, t) => [e.plugin_id?.split(`@`)[0], e.plugin_name, t].flatMap(e => {
+        let t = e?.trim().toLowerCase().replace(/^(?:connector|plugin)[_-]/u, ``).split(/[^a-z0-9]+/gu).filter(e => e.length > 0).join(`_`);
+        return t == null ? [] : [t]
+    }), ui = (e, t) => {
+        if (e.plugin_id != null) {
+            let n = t.find(({
+                id: t
+            }) => t === e.plugin_id);
+            if (n != null) return n
+        }
+        let n = e.plugin_name ?? (e.plugin_id != null && qe(e.plugin_id) ? e.plugin_id.slice(0, e.plugin_id.lastIndexOf(`@`)) : e.type === `skill` ? e.skill_name?.split(`:`)[0] : null);
+        return t.find(({
+            name: e
+        }) => e.toLowerCase() === n?.toLowerCase()) ?? null
+    }, di = e => {
+        "use forget";
+        let t = (0, ti.c)(10),
+            {
+                effort: n
+            } = e;
+        switch (n) {
+            case `none`: {
+                let e;
+                return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, J.jsx)(U, {
+                    id: `chatgpt.profile.activity.insights.reasoning_effort.value.none`,
+                    defaultMessage: `None`
+                }), t[0] = e) : e = t[0], e
+            }
+            case `minimal`: {
+                let e;
+                return t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, J.jsx)(U, {
+                    id: `chatgpt.profile.activity.insights.reasoning_effort.value.minimal`,
+                    defaultMessage: `Minimal`
+                }), t[1] = e) : e = t[1], e
+            }
+            case `low`: {
+                let e;
+                return t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, J.jsx)(U, {
+                    id: `chatgpt.profile.activity.insights.reasoning_effort.value.low`,
+                    defaultMessage: `Low`
+                }), t[2] = e) : e = t[2], e
+            }
+            case `medium`: {
+                let e;
+                return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, J.jsx)(U, {
+                    id: `chatgpt.profile.activity.insights.reasoning_effort.value.medium`,
+                    defaultMessage: `Medium`
+                }), t[3] = e) : e = t[3], e
+            }
+            case `high`: {
+                let e;
+                return t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, J.jsx)(U, {
+                    id: `chatgpt.profile.activity.insights.reasoning_effort.value.high`,
+                    defaultMessage: `High`
+                }), t[4] = e) : e = t[4], e
+            }
+            case `xhigh`: {
+                let e;
+                return t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, J.jsx)(U, {
+                    id: `chatgpt.profile.activity.insights.reasoning_effort.value.extra_high`,
+                    defaultMessage: `Extra high`
+                }), t[5] = e) : e = t[5], e
+            }
+            case `max`: {
+                let e;
+                return t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, J.jsx)(U, {
+                    id: `chatgpt.profile.activity.insights.reasoning_effort.value.max`,
+                    defaultMessage: `Max`
+                }), t[6] = e) : e = t[6], e
+            }
+            case `ultra`: {
+                let e;
+                return t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, J.jsx)(U, {
+                    id: `chatgpt.profile.activity.insights.reasoning_effort.value.ultra`,
+                    defaultMessage: `Ultra`
+                }), t[7] = e) : e = t[7], e
+            }
+            default: {
+                let e;
+                return t[8] === n ? e = t[9] : (e = (0, J.jsx)(J.Fragment, {
+                    children: n
+                }), t[8] = n, t[9] = e), e
+            }
+        }
+    }
+}));
+
+function pi(e) {
+    let {
+        stats: t,
+        activity_graph: n,
+        insights: r,
+        top_plugins: i
+    } = e.page;
+    return {
+        activity: {
+            daily: mi(n?.daily_usage_buckets),
+            weekly: mi(n?.weekly_usage_buckets),
+            cumulative: mi(n?.cumulative_daily_usage_buckets)
+        },
+        insights: r == null && i == null ? null : {
+            fastModePercent: r?.agentic?.fast_mode_usage_percentage,
+            reasoningEffort: r?.agentic?.most_used_reasoning_effort,
+            reasoningEffortPercent: r?.agentic?.most_used_reasoning_effort_percentage,
+            totalThreads: r?.agentic?.total_threads,
+            totalSkillsUsed: r?.total_skills_used,
+            skillsExplored: r?.unique_skills_used,
+            invocations: i?.map(e => ({
+                type: `plugin`,
+                plugin_id: e.plugin_id,
+                plugin_name: e.plugin_name?.trim() || e.plugin_id,
+                logo_url: e.logo_url,
+                usage_count: e.usage_count
+            }))
+        },
+        summary: {
+            currentStreakDays: t?.current_streak_days ?? null,
+            longestStreakDays: t?.longest_streak_days ?? null,
+            totalTextTokens: t?.agentic?.lifetime_tokens ?? null,
+            peakTokens: t?.agentic?.peak_daily_tokens ?? null,
+            longestTaskDurationMs: t?.agentic?.longest_running_turn_sec == null ? null : t.agentic.longest_running_turn_sec * 1e3
+        }
+    }
+}
+
+function mi(e) {
+    return e == null ? void 0 : {
+        tokens: e.map(e => ({
+            date: e.start_date,
+            credits: e.tokens
+        })),
+        chats: e.map(e => ({
+            date: e.start_date,
+            credits: e.chat_turns
+        }))
+    }
+}
+var hi = e((() => {})),
+    gi, _i, vi, yi, bi, xi, Si = e((() => {
+        gi = `qVnQjG_editDrawer`, _i = `qVnQjG_page`, vi = `qVnQjG_scopeMenu`, yi = `qVnQjG_scopeTrigger`, bi = `qVnQjG_usageTooltip`, xi = {
+            editDrawer: gi,
+            page: _i,
+            scopeMenu: vi,
+            scopeTrigger: yi,
+            usageTooltip: bi
+        }
+    }));
+
+function Ci(e) {
+    "use forget";
+    let t = (0, Di.c)(194),
+        {
+            accountId: n,
+            page: r,
+            saving: i,
+            setSaving: a,
+            draft: o,
+            onDraftChange: s,
+            fieldTargets: l,
+            photoInputId: u,
+            usernameEditor: p,
+            onClose: m,
+            onChanged: h
+        } = e,
+        _ = Ie(),
+        v = ee(k),
+        y = oe(),
+        b = ue(),
+        x = f(),
+        S = g() === `rtl` ? `-100%` : `100%`,
+        T;
+    t[0] === x ? T = t[1] : (T = x ? {
+        duration: 0
+    } : {
+        type: `spring`,
+        duration: .5,
+        bounce: .1
+    }, t[0] = x, t[1] = T);
+    let E = T,
+        D = (0, Oi.useId)(),
+        ne = Ei,
+        O = (0, Oi.useRef)(null),
+        [A] = (0, Oi.useState)(r),
+        [re] = (0, Oi.useState)(o),
+        M = r.profile_details,
+        N = r.page.workspace_id == null ? zn.CODEX_PROFILE_PAGE_SCOPE_PERSONAL : zn.CODEX_PROFILE_PAGE_SCOPE_WORKSPACE,
+        {
+            displayName: P,
+            bio: I,
+            photo: L,
+            photoShape: R,
+            settings: z
+        } = o,
+        [ie, ae] = (0, Oi.useState)(null),
+        [B, se] = (0, Oi.useState)(!1),
+        [V, ce] = (0, Oi.useState)(null),
+        le;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (le = {
+        displayName: !1,
+        bio: !1
+    }, t[2] = le) : le = t[2];
+    let de = (0, Oi.useRef)(le),
+        H = L?.previewUrl,
+        fe, pe;
+    t[3] === H ? (fe = t[4], pe = t[5]) : (fe = () => () => {
+        H != null && URL.revokeObjectURL(H)
+    }, pe = [H], t[3] = H, t[4] = fe, t[5] = pe), (0, Oi.useEffect)(fe, pe);
+    let me;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (me = [`displayName`, `bio`], t[6] = me) : me = t[6];
+    let he = me,
+        ge, _e;
+    if (t[7] !== A || t[8] !== z) {
+        ge = {};
+        for (let e of ji) z[e] !== !1 != (A.page.display_settings?.[e] !== !1) && (ge[e] = z[e] !== !1);
+        _e = Object.keys(ge), t[7] = A, t[8] = z, t[9] = ge, t[10] = _e
+    } else ge = t[9], _e = t[10];
+    let ve = _e.length > 0,
+        ye;
+    t[11] === P ? ye = t[12] : (ye = P.trim(), t[11] = P, t[12] = ye);
+    let be = M.display_name ?? re.displayName,
+        xe;
+    t[13] === be ? xe = t[14] : (xe = be.trim(), t[13] = be, t[14] = xe);
+    let Se = ye !== xe,
+        W;
+    t[15] === I ? W = t[16] : (W = I.trim(), t[15] = I, t[16] = W);
+    let Ce = M.description ?? ``,
+        we;
+    t[17] === Ce ? we = t[18] : (we = Ce.trim(), t[17] = Ce, t[18] = we);
+    let Te = W !== we,
+        Ee;
+    t[19] === M.photo_frame_style ? Ee = t[20] : (Ee = Object.values(Mi).find(e => e === M.photo_frame_style) ?? `circle`, t[19] = M.photo_frame_style, t[20] = Ee);
+    let De = R !== Ee,
+        Oe = Te && I.length > 140,
+        ke = Se || Te || L != null || De || ve,
+        Ae;
+    t[21] !== n || t[22] !== I || t[23] !== ke || t[24] !== P || t[25] !== ve || t[26] !== ge || t[27] !== _ || t[28] !== Te || t[29] !== Oe || t[30] !== Se || t[31] !== De || t[32] !== b || t[33] !== h || t[34] !== m || t[35] !== N || t[36] !== L || t[37] !== R || t[38] !== i || t[39] !== a ? (Ae = async function(e) {
+        if (e.preventDefault(), !b || i || Oe || P.trim() === ``) return;
+        if (C.logStructuredEvent(`CodexProfileEditEvent`, {
+                pageScope: N,
+                action: In.CODEX_PROFILE_EDIT_ACTION_SAVE_CLICKED
+            }), !ke) {
+            m();
+            return
+        }
+        a(!0), ce(null);
+        let t = Vn.CODEX_PROFILE_EDIT_SAVE_API_STATUS_NOT_ATTEMPTED,
+            r = !1,
+            o = !1;
+        try {
+            let e = {};
+            if (Se && (e.display_name = P.trim()), Te && (e.description = I.trim()), De && (e.photo_frame_style = R === `circle` ? null : R), L != null && (r = !0, t = Vn.CODEX_PROFILE_EDIT_SAVE_API_STATUS_FAILED, e.profile_asset_pointer = await F(L.file), r = !1), Object.keys(e).length > 0) {
+                t = Vn.CODEX_PROFILE_EDIT_SAVE_API_STATUS_FAILED;
+                let r = await c.safePatch(`/profiles/me`, {
+                    additionalHeaders: n == null ? void 0 : {
+                        "ChatGPT-Account-ID": n
+                    },
+                    requestBody: e
+                });
+                t = Vn.CODEX_PROFILE_EDIT_SAVE_API_STATUS_SUCCEEDED, Se && C.logStructuredEvent(`CodexProfileEditEvent`, {
+                    pageScope: N,
+                    action: In.CODEX_PROFILE_EDIT_ACTION_DISPLAY_NAME_SAVE_SUCCEEDED
+                }), Te && C.logStructuredEvent(`CodexProfileEditEvent`, {
+                    pageScope: N,
+                    action: In.CODEX_PROFILE_EDIT_ACTION_BIO_SAVE_SUCCEEDED
+                }), h(e => ({
+                    ...e,
+                    profile_details: {
+                        ...e.profile_details,
+                        ...r
+                    }
+                }))
+            }
+            if (ve) {
+                o = !0;
+                let e = await c.safePatch(`/profiles/me/page`, {
+                    additionalHeaders: n == null ? void 0 : {
+                        "ChatGPT-Account-ID": n
+                    },
+                    requestBody: {
+                        display_settings: ge
+                    }
+                });
+                h(t => ({
+                    ...t,
+                    page: {
+                        ...t.page,
+                        display_settings: e.display_settings,
+                        page_version: e.page_version
+                    }
+                }))
+            }
+            C.logStructuredEvent(`CodexProfileEditEvent`, {
+                pageScope: N,
+                action: In.CODEX_PROFILE_EDIT_ACTION_SAVE_SUCCEEDED
+            }), m(), L != null && Er(`success`)
+        } catch (e) {
+            let n = e;
+            L != null && Er(`failure`);
+            let i = r ? `photo` : o || Te || De || Se && L != null ? `profile` : Se ? `displayName` : `photo`,
+                a = i === `displayName` ? _.formatMessage({
+                    id: `profile.displayNameUpdateError`,
+                    defaultMessage: `Unable to update display name`
+                }) : i === `photo` ? _.formatMessage({
+                    id: `profile.photoUpdateError`,
+                    defaultMessage: `Unable to update profile picture`
+                }) : _.formatMessage({
+                    id: `profile.updateError`,
+                    defaultMessage: `Unable to update profile`
+                });
+            ce({
+                field: i,
+                message: Nr(n) ?? a
+            }), C.logStructuredEvent(`CodexProfileEditEvent`, {
+                pageScope: N,
+                action: In.CODEX_PROFILE_EDIT_ACTION_SAVE_FAILED,
+                profileDetailsUpdateApiStatus: t,
+                usernameUpdateApiStatus: Vn.CODEX_PROFILE_EDIT_SAVE_API_STATUS_NOT_ATTEMPTED
+            })
+        }
+        a(!1)
+    }, t[21] = n, t[22] = I, t[23] = ke, t[24] = P, t[25] = ve, t[26] = ge, t[27] = _, t[28] = Te, t[29] = Oe, t[30] = Se, t[31] = De, t[32] = b, t[33] = h, t[34] = m, t[35] = N, t[36] = L, t[37] = R, t[38] = i, t[39] = a, t[40] = Ae) : Ae = t[40];
+    let je = Ae,
+        Me;
+    t[41] !== o || t[42] !== V || t[43] !== l || t[44] !== D || t[45] !== _ || t[46] !== Oe || t[47] !== v || t[48] !== b || t[49] !== m || t[50] !== s || t[51] !== N || t[52] !== i ? (Me = he.map(e => {
+        let t = l[e];
+        if (!v && t == null) return null;
+        let n = (0, Y.jsx)(it, {
+            field: e,
+            formId: D,
+            value: o[e],
+            disabled: i,
+            inert: !b,
+            error: e === `displayName` && V?.field === `displayName` ? V.message : null,
+            isBioTooLong: Oe,
+            maxLength: e === `bio` ? 140 : 64,
+            intl: _,
+            renderInput: v ? t => (0, Y.jsxs)(`span`, {
+                className: `flex w-full gap-4 px-4 py-3 ${e===`bio`?`flex-col`:`items-center`}`,
+                children: [(0, Y.jsx)(`label`, {
+                    htmlFor: t.id,
+                    className: `shrink-0 text-sm font-normal`,
+                    children: t[`aria-label`]
+                }), e === `bio` ? (0, Y.jsx)(`textarea`, {
+                    ...t,
+                    rows: 3,
+                    className: `focus-visible:ring-token-border-heavy min-h-24 w-full resize-y rounded-md border-0 bg-transparent p-0 text-sm outline-none focus-visible:ring-1`
+                }) : (0, Y.jsx)(`input`, {
+                    ...t,
+                    className: `focus-visible:ring-token-border-heavy h-7 min-w-0 flex-1 rounded-md border-0 bg-transparent p-0 text-end text-sm outline-none focus-visible:ring-1`
+                })]
+            }) : void 0,
+            onCancel: m,
+            onChange: t => {
+                t !== o[e] && !de.current[e] && (de.current[e] = !0, C.logStructuredEvent(`CodexProfileEditEvent`, {
+                    pageScope: N,
+                    action: e === `bio` ? In.CODEX_PROFILE_EDIT_ACTION_BIO_CHANGE_STARTED : In.CODEX_PROFILE_EDIT_ACTION_DISPLAY_NAME_CHANGE_STARTED
+                })), s({
+                    ...o,
+                    [e]: t
+                }), (V?.field === e || V?.field === `profile`) && ce(null)
+            }
+        }, e);
+        return v ? n : t == null ? null : (0, ki.createPortal)(n, t, e)
+    }), t[41] = o, t[42] = V, t[43] = l, t[44] = D, t[45] = _, t[46] = Oe, t[47] = v, t[48] = b, t[49] = m, t[50] = s, t[51] = N, t[52] = i, t[53] = Me) : Me = t[53];
+    let Ne = Me,
+        Pe = v ? Ni : He,
+        Fe;
+    t[54] === _ ? Fe = t[55] : (Fe = _.formatMessage({
+        id: `profile.editProfileTitle`,
+        defaultMessage: `Edit profile`
+    }), t[54] = _, t[55] = Fe);
+    let Le;
+    t[56] !== b || t[57] !== m || t[58] !== i ? (Le = e => {
+        b && e.key === `Escape` && !i && !e.nativeEvent.isComposing && (e.preventDefault(), m())
+    }, t[56] = b, t[57] = m, t[58] = i, t[59] = Le) : Le = t[59];
+    let Re;
+    t[60] === je ? Re = t[61] : (Re = e => void je(e), t[60] = je, t[61] = Re);
+    let ze;
+    t[62] !== D || t[63] !== Re ? (ze = (0, Y.jsx)(`form`, {
+        id: D,
+        onSubmit: Re
+    }), t[62] = D, t[63] = Re, t[64] = ze) : ze = t[64];
+    let Be;
+    t[65] === Symbol.for(`react.memo_cache_sentinel`) ? (Be = (0, Y.jsx)(`h2`, {
+        className: `text-sm leading-[1.4] font-medium`,
+        children: (0, Y.jsx)(U, {
+            id: `profile.editProfileTitle`,
+            defaultMessage: `Edit profile`
+        })
+    }), t[65] = Be) : Be = t[65];
+    let Ue;
+    t[66] === Symbol.for(`react.memo_cache_sentinel`) ? (Ue = (0, Y.jsx)(U, {
+        id: `profile.editProfileCancel`,
+        defaultMessage: `Cancel`
+    }), t[66] = Ue) : Ue = t[66];
+    let G;
+    t[67] !== m || t[68] !== i ? (G = (0, Y.jsx)(`button`, {
+        className: `btn btn-toolbar interactive-button interactive-bg-secondary text-token-text-tertiary`,
+        type: `button`,
+        disabled: i,
+        onClick: m,
+        children: Ue
+    }), t[67] = m, t[68] = i, t[69] = G) : G = t[69];
+    let Ge;
+    t[70] !== P || t[71] !== Oe || t[72] !== i ? (Ge = i || Oe || P.trim() === ``, t[70] = P, t[71] = Oe, t[72] = i, t[73] = Ge) : Ge = t[73];
+    let Ke;
+    t[74] === Symbol.for(`react.memo_cache_sentinel`) ? (Ke = (0, Y.jsx)(U, {
+        id: `profile.editProfileSave`,
+        defaultMessage: `Save`
+    }), t[74] = Ke) : Ke = t[74];
+    let qe;
+    t[75] !== D || t[76] !== i || t[77] !== Ge ? (qe = (0, Y.jsx)(d, {
+        type: `submit`,
+        form: D,
+        size: `toolbar`,
+        loading: i,
+        disabled: Ge,
+        children: Ke
+    }), t[75] = D, t[76] = i, t[77] = Ge, t[78] = qe) : qe = t[78];
+    let Je;
+    t[79] !== G || t[80] !== qe ? (Je = (0, Y.jsxs)(Y.Fragment, {
+        children: [G, qe]
+    }), t[79] = G, t[80] = qe, t[81] = Je) : Je = t[81];
+    let Ye;
+    t[82] !== M.profile_picture_url || t[83] !== P || t[84] !== Ne || t[85] !== _ || t[86] !== v || t[87] !== R || t[88] !== H || t[89] !== i || t[90] !== p ? (Ye = v && (0, Y.jsxs)(Y.Fragment, {
+        children: [(0, Y.jsx)(`div`, {
+            className: `flex shrink-0 justify-center py-4`,
+            children: (0, Y.jsxs)(`button`, {
+                type: `button`,
+                className: `interactive-button relative flex size-28 rounded-full`,
+                disabled: i,
+                "aria-label": _.formatMessage({
+                    id: `profile.photoInputLabel`,
+                    defaultMessage: `Change profile picture`
+                }),
+                onClick: () => O.current?.click(),
+                children: [(0, Y.jsx)(Ar, {
+                    frame: R,
+                    animateShape: !0,
+                    children: (0, Y.jsx)(jr, {
+                        src: H ?? M.profile_picture_url,
+                        name: P,
+                        alt: ``
+                    })
+                }), (0, Y.jsx)(`span`, {
+                    className: `bg-token-bg-primary-inverted text-token-text-inverted pointer-events-none absolute end-0 bottom-0 flex size-8 items-center justify-center rounded-full`,
+                    children: (0, Y.jsx)(on, {
+                        className: `icon`
+                    })
+                })]
+            })
+        }), (0, Y.jsxs)(`div`, {
+            className: `border-token-border-default divide-token-border-default flex shrink-0 flex-col divide-y overflow-hidden rounded-2xl border`,
+            children: [Ne[0], p, Ne[1]]
+        })]
+    }), t[82] = M.profile_picture_url, t[83] = P, t[84] = Ne, t[85] = _, t[86] = v, t[87] = R, t[88] = H, t[89] = i, t[90] = p, t[91] = Ye) : Ye = t[91];
+    let Xe = !v && Ne,
+        Ze;
+    t[92] === V ? Ze = t[93] : (Ze = V != null && V.field !== `displayName` && (0, Y.jsx)(`p`, {
+        role: `alert`,
+        className: `text-interactive-label-warning-secondary`,
+        children: V.message
+    }), t[92] = V, t[93] = Ze);
+    let Qe;
+    t[94] === Symbol.for(`react.memo_cache_sentinel`) ? (Qe = (0, Y.jsx)(U, {
+        id: `profile.edit.photo`,
+        defaultMessage: `Photo`
+    }), t[94] = Qe) : Qe = t[94];
+    let $e, et;
+    t[95] === Symbol.for(`react.memo_cache_sentinel`) ? ($e = () => O.current?.click(), et = (0, Y.jsx)(U, {
+        id: `profile.edit.uploadPhoto`,
+        defaultMessage: `Upload photo`
+    }), t[95] = $e, t[96] = et) : ($e = t[95], et = t[96]);
+    let tt;
+    t[97] === Symbol.for(`react.memo_cache_sentinel`) ? (tt = (0, Y.jsx)(`svg`, {
+        "aria-hidden": !0,
+        className: `icon`,
+        width: dr.canvas.width,
+        height: dr.canvas.height,
+        viewBox: dr.canvas.viewBox,
+        fill: `currentColor`,
+        dangerouslySetInnerHTML: {
+            __html: te(dr)
+        }
+    }), t[97] = tt) : tt = t[97];
+    let nt;
+    t[98] === i ? nt = t[99] : (nt = (0, Y.jsxs)(`button`, {
+        type: `button`,
+        className: `interactive-button interactive-bg-secondary flex w-full items-center justify-between px-4 py-3 text-start`,
+        disabled: i,
+        onClick: $e,
+        children: [et, tt]
+    }), t[98] = i, t[99] = nt);
+    let at;
+    t[100] === _ ? at = t[101] : (at = _.formatMessage({
+        id: `profile.photoInputLabel`,
+        defaultMessage: `Change profile picture`
+    }), t[100] = _, t[101] = at);
+    let ot, K;
+    t[102] === N ? (ot = t[103], K = t[104]) : (ot = () => C.logStructuredEvent(`CodexProfileEditEvent`, {
+        pageScope: N,
+        action: In.CODEX_PROFILE_EDIT_ACTION_MODAL_PHOTO_CHANGE_STARTED
+    }), K = e => {
+        let t = e.currentTarget.files?.[0];
+        e.currentTarget.value = ``, t != null && (C.logStructuredEvent(`CodexProfileEditEvent`, {
+            pageScope: N,
+            action: In.CODEX_PROFILE_EDIT_ACTION_MODAL_PHOTO_CHANGE_IMAGE_SELECTED
+        }), ae(t))
+    }, t[102] = N, t[103] = ot, t[104] = K);
+    let st;
+    t[105] !== u || t[106] !== i || t[107] !== at || t[108] !== ot || t[109] !== K ? (st = (0, Y.jsx)(`input`, {
+        id: u,
+        ref: O,
+        type: `file`,
+        name: `photo`,
+        accept: `image/*`,
+        tabIndex: -1,
+        className: `sr-only`,
+        disabled: i,
+        "aria-label": at,
+        onClick: ot,
+        onChange: K
+    }), t[105] = u, t[106] = i, t[107] = at, t[108] = ot, t[109] = K, t[110] = st) : st = t[110];
+    let ct = R === `scalloped_circle` ? `blossom` : R === `rounded_square` ? `square` : R === `scalloped_oval` ? `scalloped` : R === `oval` ? `oval` : `circle`,
+        lt;
+    t[111] !== o || t[112] !== s ? (lt = e => s({
+        ...o,
+        photoShape: Mi[e]
+    }), t[111] = o, t[112] = s, t[113] = lt) : lt = t[113];
+    let ut;
+    t[114] !== M.profile_picture_url || t[115] !== P || t[116] !== H ? (ut = e => (0, Y.jsx)(Ot, {
+        shape: e,
+        children: (0, Y.jsx)(jr, {
+            src: H ?? M.profile_picture_url,
+            alt: ``,
+            name: P,
+            size: `picker`
+        })
+    }), t[114] = M.profile_picture_url, t[115] = P, t[116] = H, t[117] = ut) : ut = t[117];
+    let dt;
+    t[118] === Symbol.for(`react.memo_cache_sentinel`) ? (dt = (0, Y.jsx)(cn, {
+        className: `icon-sm`,
+        "aria-hidden": !0
+    }), t[118] = dt) : dt = t[118];
+    let ft;
+    t[119] !== _ || t[120] !== i || t[121] !== ct || t[122] !== lt || t[123] !== ut ? (ft = (0, Y.jsx)(kt, {
+        intl: _,
+        disabled: i,
+        selected: ct,
+        onChange: lt,
+        renderPhoto: ut,
+        selectedIcon: dt
+    }), t[119] = _, t[120] = i, t[121] = ct, t[122] = lt, t[123] = ut, t[124] = ft) : ft = t[124];
+    let pt;
+    t[125] !== nt || t[126] !== st || t[127] !== ft ? (pt = (0, Y.jsxs)(rt, {
+        title: Qe,
+        children: [nt, st, ft]
+    }), t[125] = nt, t[126] = st, t[127] = ft, t[128] = pt) : pt = t[128];
+    let mt = r.page.visibility.value !== `private`,
+        ht = r.page.workspace_display_settings?.activity_enabled !== !1,
+        gt = z.show_usage_stats_section !== !1,
+        _t = z.show_activity_graph_section !== !1,
+        vt = z.show_top_plugins_section !== !1,
+        yt = z.show_insights_section !== !1,
+        bt;
+    t[129] !== gt || t[130] !== _t || t[131] !== vt || t[132] !== yt ? (bt = {
+        showUsageStatistics: gt,
+        showActivityGraph: _t,
+        showTopPlugins: vt,
+        showInsights: yt
+    }, t[129] = gt, t[130] = _t, t[131] = vt, t[132] = yt, t[133] = bt) : bt = t[133];
+    let xt;
+    t[134] !== o || t[135] !== s || t[136] !== z ? (xt = e => s({
+        ...o,
+        settings: {
+            ...z,
+            show_usage_stats_section: e.showUsageStatistics,
+            show_activity_graph_section: e.showActivityGraph,
+            show_top_plugins_section: e.showTopPlugins,
+            show_insights_section: e.showInsights
+        }
+    }), t[134] = o, t[135] = s, t[136] = z, t[137] = xt) : xt = t[137];
+    let q;
+    t[138] !== _ || t[139] !== i || t[140] !== mt || t[141] !== ht || t[142] !== bt || t[143] !== xt ? (q = (0, Y.jsx)(We, {
+        intl: _,
+        disabled: i,
+        isProfileShared: mt,
+        activityEnabled: ht,
+        options: bt,
+        onChange: xt,
+        renderToggle: Ti
+    }), t[138] = _, t[139] = i, t[140] = mt, t[141] = ht, t[142] = bt, t[143] = xt, t[144] = q) : q = t[144];
+    let St;
+    t[145] !== Pe || t[146] !== Je || t[147] !== Ye || t[148] !== Xe || t[149] !== Ze || t[150] !== pt || t[151] !== q ? (St = (0, Y.jsxs)(Pe, {
+        header: Be,
+        actions: Je,
+        children: [Ye, Xe, Ze, pt, q]
+    }), t[145] = Pe, t[146] = Je, t[147] = Ye, t[148] = Xe, t[149] = Ze, t[150] = pt, t[151] = q, t[152] = St) : St = t[152];
+    let Ct;
+    t[153] !== Fe || t[154] !== Le || t[155] !== ze || t[156] !== St ? (Ct = (0, Y.jsxs)(`div`, {
+        ref: ne,
+        role: `group`,
+        className: `flex h-full min-h-0 flex-col text-sm outline-none`,
+        tabIndex: -1,
+        "aria-label": Fe,
+        onKeyDown: Le,
+        children: [ze, St]
+    }), t[153] = Fe, t[154] = Le, t[155] = ze, t[156] = St, t[157] = Ct) : Ct = t[157];
+    let wt = Ct,
+        Tt;
+    t[158] !== o || t[159] !== V?.field || t[160] !== b || t[161] !== B || t[162] !== s || t[163] !== ie ? (Tt = ie != null && b && (0, Y.jsx)(w, {
+        for: Ai,
+        withProps: {
+            file: ie,
+            saving: B,
+            setSaving: se,
+            onCancel: () => ae(null),
+            onSave: e => {
+                s({
+                    ...o,
+                    photo: {
+                        file: e,
+                        previewUrl: URL.createObjectURL(e)
+                    }
+                }), ae(null), V?.field !== `displayName` && ce(null)
+            }
+        },
+        open: !0,
+        disableLightDismiss: B,
+        onClose: () => ae(null)
+    }), t[158] = o, t[159] = V?.field, t[160] = b, t[161] = B, t[162] = s, t[163] = ie, t[164] = Tt) : Tt = t[164];
+    let Et = Tt,
+        Dt = x ? `auto` : 0,
+        At;
+    t[165] === Dt ? At = t[166] : (At = {
+        width: Dt
+    }, t[165] = Dt, t[166] = At);
+    let jt, Mt;
+    t[167] === Symbol.for(`react.memo_cache_sentinel`) ? (jt = {
+        width: `auto`
+    }, Mt = {
+        width: 0
+    }, t[167] = jt, t[168] = Mt) : (jt = t[167], Mt = t[168]);
+    let Nt;
+    t[169] === Symbol.for(`react.memo_cache_sentinel`) ? (Nt = (0, Y.jsx)(`div`, {
+        className: `w-80`
+    }), t[169] = Nt) : Nt = t[169];
+    let Pt;
+    t[170] !== At || t[171] !== E ? (Pt = (0, Y.jsx)(j.div, {
+        className: `hidden shrink-0 overflow-hidden sm:block`,
+        "aria-hidden": !0,
+        initial: At,
+        animate: jt,
+        exit: Mt,
+        transition: E,
+        children: Nt
+    }), t[170] = At, t[171] = E, t[172] = Pt) : Pt = t[172];
+    let Ft;
+    t[173] !== S || t[174] !== wt || t[175] !== v || t[176] !== b || t[177] !== x || t[178] !== E ? (Ft = !v && (0, Y.jsx)(j.aside, {
+        className: `${xi.editDrawer} bg-primary border-token-border-default absolute inset-y-0 end-0 z-20 w-80 max-w-full overflow-hidden border-s antialiased max-sm:w-full`,
+        "aria-hidden": !b,
+        inert: !b,
+        initial: {
+            x: x ? 0 : S
+        },
+        animate: {
+            x: 0
+        },
+        exit: {
+            x: S
+        },
+        transition: E,
+        children: wt
+    }), t[173] = S, t[174] = wt, t[175] = v, t[176] = b, t[177] = x, t[178] = E, t[179] = Ft) : Ft = t[179];
+    let It;
+    t[180] !== y?.document || t[181] !== wt || t[182] !== _ || t[183] !== v || t[184] !== b || t[185] !== m || t[186] !== Et || t[187] !== i ? (It = v && (0, Y.jsxs)(Ve, {
+        open: b,
+        modal: !0,
+        forceMount: !0,
+        className: xi.editDrawer,
+        portalContainer: y?.document.body,
+        onOpenChange: e => {
+            !e && !i && b && m()
+        },
+        onEscapeKeyDown: e => {
+            let t = y?.document.activeElement?.closest(`dialog`);
+            t?.open ? (e.preventDefault(), typeof t.requestClose == `function` ? t.requestClose() : t.dispatchEvent(new Event(`cancel`, {
+                cancelable: !0
+            })) && t.close()) : i && e.preventDefault()
+        },
+        onCloseAutoFocus: wi,
+        accessibleTitle: _.formatMessage({
+            id: `profile.editProfileTitle`,
+            defaultMessage: `Edit profile`
+        }),
+        children: [wt, Et]
+    }), t[180] = y?.document, t[181] = wt, t[182] = _, t[183] = v, t[184] = b, t[185] = m, t[186] = Et, t[187] = i, t[188] = It) : It = t[188];
+    let Lt = !v && Et,
+        Rt;
+    return t[189] !== Pt || t[190] !== Ft || t[191] !== It || t[192] !== Lt ? (Rt = (0, Y.jsxs)(Y.Fragment, {
+        children: [Pt, Ft, It, Lt]
+    }), t[189] = Pt, t[190] = Ft, t[191] = It, t[192] = Lt, t[193] = Rt) : Rt = t[193], Rt
+}
+
+function wi(e) {
+    return e.preventDefault()
+}
+
+function Ti(e) {
+    let {
+        label: t,
+        onChange: n,
+        ...r
+    } = e;
+    return (0, Y.jsx)(se, {
+        ...r,
+        "aria-label": t,
+        onCheckedChange: n
+    })
+}
+
+function Ei(e) {
+    e?.focus({
+        preventScroll: !0
+    })
+}
+var Di, Oi, ki, Y, Ai, ji, Mi, Ni, Pi = e((() => {
+    Di = Fe(), D(), V(), m(), ln(), an(), Je(), M(), B(), p(), I(), H(), he(), tr(), z(), fr(), K(), O(), l(), i(), Oi = t(De()), ki = t(be()), we(), Mr(), Or(), kr(), Si(), Dr(), Y = ve(), Me(), Ai = T(() => Oe(() => import(`./621a6c6d-oykkxrz3n3699seq.js`).then(e => e.ProfileV2PhotoCrop), __vite__mapDeps([61, 1, 2, 3, 4, 5, 6, 7, 8, 9, 62]))), ji = [`show_usage_stats_section`, `show_activity_graph_section`, `show_top_plugins_section`, `show_insights_section`], Mi = {
+        circle: `circle`,
+        blossom: `scalloped_circle`,
+        square: `rounded_square`,
+        oval: `oval`,
+        scalloped: `scalloped_oval`
+    }, Ni = e => {
+        "use forget";
+        let t = (0, Di.c)(10),
+            {
+                header: n,
+                actions: r,
+                children: i
+            } = e,
+            a;
+        t[0] === r ? a = t[1] : (a = (0, Y.jsx)(`div`, {
+            className: `flex items-center gap-2`,
+            children: r
+        }), t[0] = r, t[1] = a);
+        let o;
+        t[2] !== n || t[3] !== a ? (o = (0, Y.jsxs)(Ve.Header, {
+            className: `justify-between border-0 px-4`,
+            children: [n, a]
+        }), t[2] = n, t[3] = a, t[4] = o) : o = t[4];
+        let s;
+        t[5] === i ? s = t[6] : (s = (0, Y.jsx)(Ve.Contents, {
+            className: `flex flex-col gap-5 p-4`,
+            children: i
+        }), t[5] = i, t[6] = s);
+        let c;
+        return t[7] !== o || t[8] !== s ? (c = (0, Y.jsxs)(Y.Fragment, {
+            children: [o, s]
+        }), t[7] = o, t[8] = s, t[9] = c) : c = t[9], c
+    }
+}));
+
+function Fi(e) {
+    "use forget";
+    let t = (0, Ii.c)(20),
+        {
+            children: n,
+            isWorkspace: r,
+            onOpenChange: i,
+            onCloseAutoFocus: a
+        } = e,
+        o = Ie(),
+        s;
+    t[0] === o ? s = t[1] : (s = o.formatMessage({
+        id: `profile.preview.title`,
+        defaultMessage: `Profile preview`
+    }), t[0] = o, t[1] = s);
+    let c;
+    t[2] === r ? c = t[3] : (c = (0, Li.jsx)(`span`, {
+        className: `text-token-text-secondary ms-3 text-sm`,
+        children: r ? (0, Li.jsx)(U, {
+            id: `profile.preview.workspaceViewer`,
+            defaultMessage: `Viewing as a workspace member`
+        }) : (0, Li.jsx)(U, {
+            id: `profile.preview.publicViewer`,
+            defaultMessage: `Previewing as a public visitor`
+        })
+    }), t[2] = r, t[3] = c);
+    let l;
+    t[4] === i ? l = t[5] : (l = () => i(!1), t[4] = i, t[5] = l);
+    let u;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, Li.jsx)(U, {
+        id: `profile.preview.exit`,
+        defaultMessage: `Exit preview`
+    }), t[6] = u) : u = t[6];
+    let f;
+    t[7] === l ? f = t[8] : (f = (0, Li.jsx)(d, {
+        className: `ms-auto`,
+        color: `ghost`,
+        size: `toolbar`,
+        icon: en,
+        onClick: l,
+        children: u
+    }), t[7] = l, t[8] = f);
+    let p;
+    t[9] !== c || t[10] !== f ? (p = (0, Li.jsxs)(Ve.Header, {
+        className: `-mb-14`,
+        children: [c, f]
+    }), t[9] = c, t[10] = f, t[11] = p) : p = t[11];
+    let m;
+    t[12] === n ? m = t[13] : (m = (0, Li.jsx)(Ve.Contents, {
+        children: n
+    }), t[12] = n, t[13] = m);
+    let h;
+    return t[14] !== a || t[15] !== i || t[16] !== s || t[17] !== p || t[18] !== m ? (h = (0, Li.jsxs)(Ve, {
+        open: !0,
+        preserveSidebar: !0,
+        onOpenChange: i,
+        accessibleTitle: s,
+        onCloseAutoFocus: a,
+        children: [p, m]
+    }), t[14] = a, t[15] = i, t[16] = s, t[17] = p, t[18] = m, t[19] = h) : h = t[19], h
+}
+var Ii, Li, Ri = e((() => {
+        Ii = Fe(), D(), gn(), Je(), we(), Li = ve()
+    })),
+    zi, Bi, Vi, Hi = e((() => {
+        zi = Fe(), H(), he(), tr(), K(), we(), Mr(), Bi = ve(), Vi = e => {
+            "use forget";
+            let t = (0, zi.c)(18),
+                {
+                    field: n,
+                    value: r,
+                    accountId: i,
+                    pageScope: a,
+                    isSaving: o,
+                    setSaving: s,
+                    onEditStarted: l,
+                    onSaved: u
+                } = e,
+                d = Ie(),
+                f = n === `bio` ? 140 : 64,
+                p;
+            t[0] !== n || t[1] !== a ? (p = () => {
+                C.logStructuredEvent(`CodexProfileEditEvent`, {
+                    pageScope: a,
+                    action: n === `bio` ? In.CODEX_PROFILE_EDIT_ACTION_BIO_CHANGE_STARTED : In.CODEX_PROFILE_EDIT_ACTION_DISPLAY_NAME_CHANGE_STARTED
+                })
+            }, t[0] = n, t[1] = a, t[2] = p) : p = t[2];
+            let m;
+            t[3] !== i || t[4] !== n || t[5] !== u || t[6] !== a || t[7] !== s ? (m = e => (s(!0), c.safePatch(`/profiles/me`, {
+                additionalHeaders: {
+                    "ChatGPT-Account-ID": i
+                },
+                requestBody: n === `bio` ? {
+                    description: e
+                } : {
+                    display_name: e
+                }
+            }).then(e => {
+                C.logStructuredEvent(`CodexProfileEditEvent`, {
+                    pageScope: a,
+                    action: n === `bio` ? In.CODEX_PROFILE_EDIT_ACTION_BIO_SAVE_SUCCEEDED : In.CODEX_PROFILE_EDIT_ACTION_DISPLAY_NAME_SAVE_SUCCEEDED
+                }), u(e)
+            }).finally(() => s(!1))), t[3] = i, t[4] = n, t[5] = u, t[6] = a, t[7] = s, t[8] = m) : m = t[8];
+            let h;
+            return t[9] !== n || t[10] !== d || t[11] !== o || t[12] !== l || t[13] !== f || t[14] !== p || t[15] !== m || t[16] !== r ? (h = (0, Bi.jsx)(ft, {
+                field: n,
+                value: r,
+                maxLength: f,
+                isSaving: o,
+                intl: d,
+                formatSaveError: Nr,
+                onEditStarted: l,
+                onChangeStarted: p,
+                onSave: m
+            }), t[9] = n, t[10] = d, t[11] = o, t[12] = l, t[13] = f, t[14] = p, t[15] = m, t[16] = r, t[17] = h) : h = t[17], h
+        }
+    }));
+
+function Ui(e) {
+    "use forget";
+    let t = (0, Wi.c)(2),
+        n;
+    return t[0] === e ? n = t[1] : (n = (0, Gi.jsx)(w, {
+        for: Ki,
+        withProps: e,
+        backdropClassName: Ir.backdrop,
+        disableViewTransitions: !0,
+        open: !0,
+        onClose: e.onClose
+    }), t[0] = e, t[1] = n), n
+}
+var Wi, Gi, Ki, qi = e((() => {
+    Wi = Fe(), m(), O(), Lr(), Gi = ve(), Me(), Ki = T(() => Oe(() => import(`./b1fefae4-eth7ns9gh1x1tnkt.js`).then(e => e.ProfileV2SharingContent), __vite__mapDeps([63, 1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 12, 64, 65, 66, 67])))
+}));
+
+function Ji(e) {
+    "use forget";
+    let t = (0, Yi.c)(7),
+        [n, r] = (0, Xi.useState)(!1),
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = vt({
+        measure: e => r(e.scrollWidth > e.clientWidth),
+        rerunOn: [`element-resize`, `text-mutation`]
+    }), t[0] = i) : i = t[0];
+    let a = i,
+        o;
+    t[1] !== n || t[2] !== e.value ? (o = t => (0, Zi.jsx)(Xe, {
+        content: e.value,
+        disabled: !n,
+        children: n => (0, Xi.cloneElement)(t, {
+            ...n,
+            ref: a,
+            "aria-label": typeof e.value == `string` ? e.value : void 0
+        })
+    }), t[1] = n, t[2] = e.value, t[3] = o) : o = t[3];
+    let s;
+    return t[4] !== e || t[5] !== o ? (s = (0, Zi.jsx)(Re, {
+        ...e,
+        wrapLabel: !0,
+        renderValue: o
+    }), t[4] = e, t[5] = o, t[6] = s) : s = t[6], s
+}
+var Yi, Xi, Zi, Qi = e((() => {
+    Yi = Fe(), et(), Rt(), K(), Xi = t(De()), Zi = ve()
+}));
+
+function $i(e) {
+    "use forget";
+    let t = (0, ea.c)(7),
+        [n, r] = (0, ta.useState)(!1),
+        i;
+    t[0] !== e || t[1] !== n ? (i = {
+        ...e,
+        saving: n,
+        setSaving: r
+    }, t[0] = e, t[1] = n, t[2] = i) : i = t[2];
+    let a;
+    return t[3] !== e.onClose || t[4] !== n || t[5] !== i ? (a = (0, na.jsx)(w, {
+        for: ra,
+        withProps: i,
+        backdropClassName: Ir.backdrop,
+        open: !0,
+        disableLightDismiss: n,
+        onClose: e.onClose
+    }), t[3] = e.onClose, t[4] = n, t[5] = i, t[6] = a) : a = t[6], a
+}
+var ea, ta, na, ra, ia = e((() => {
+    ea = Fe(), m(), O(), ta = t(De()), Lr(), na = ve(), Me(), ra = T(() => Oe(() => import(`./5208238a-omwmalu36fu8jxtz.js`).then(e => e.ProfileV2ShowcaseEditorContent), __vite__mapDeps([68, 1, 2, 3, 4, 5, 6, 7, 8, 9, 13, 12, 69, 70, 62, 65, 66, 71])))
+}));
+
+function aa(e) {
+    "use forget";
+    let t = (0, pa.c)(16),
+        {
+            accountId: n,
+            allowSkills: r,
+            fallback: i,
+            readOnly: a,
+            children: o
+        } = e,
+        s = a !== void 0 && a,
+        [l, u] = (0, ma.useState)(null),
+        [d, f] = (0, ma.useState)(!0),
+        p, m;
+    if (t[0] !== n || t[1] !== r ? (p = () => {
+            let e = new AbortController,
+                t = n == null ? void 0 : {
+                    "ChatGPT-Account-ID": n
+                },
+                i = 0,
+                a;
+            async function o() {
+                if (!e.signal.aborted) try {
+                    let [n, i] = await Promise.all([c.safeGet(`/profiles/me/page/pin_options`, {
+                        signal: e.signal,
+                        additionalHeaders: t,
+                        parameters: {
+                            query: {
+                                kind: `site`,
+                                limit: 3
+                            }
+                        }
+                    }), r ? c.safeGet(`/profiles/me/page/pin_options`, {
+                        signal: e.signal,
+                        additionalHeaders: t,
+                        parameters: {
+                            query: {
+                                kind: `skill`,
+                                limit: 1
+                            }
+                        }
+                    }) : void 0]);
+                    if (e.signal.aborted) return;
+                    u({
+                        pins: [...n.items.slice(0, 3), ...i?.items.slice(0, 1) ?? []].map(la),
+                        hasMore: n.next_cursor != null || i?.next_cursor != null
+                    }), f(!1)
+                } catch (t) {
+                    let n = t,
+                        r = n instanceof y ? n.isServerError() || n.status === 408 || n.status === 429 : n instanceof TypeError,
+                        s = _a[i];
+                    if (e.signal.aborted) return;
+                    if (!r || s == null) {
+                        f(!1);
+                        return
+                    }
+                    i += 1, a = setTimeout(() => void o(), s)
+                }
+            }
+            return o(), () => {
+                e.abort(), clearTimeout(a)
+            }
+        }, m = [n, r], t[0] = n, t[1] = r, t[2] = p, t[3] = m) : (p = t[2], m = t[3]), (0, ma.useEffect)(p, m), s) {
+        let e;
+        return t[4] === o ? e = t[5] : (e = o(null, !1, !1), t[4] = o, t[5] = e), e
+    }
+    let h, g;
+    if (t[6] !== o || t[7] !== l?.pins || t[8] !== i) {
+        let e = l?.pins.filter(ca) ?? [],
+            n = e.length === 0 ? l?.pins.find(sa) : void 0;
+        h = o, g = e.length > 0 ? (0, ha.jsx)(ua, {
+            sites: e,
+            fallback: i
+        }, JSON.stringify(e.map(oa))) : n == null ? i : (0, ha.jsx)(`div`, {
+            className: `flex h-[78px] items-center justify-center`,
+            "aria-hidden": `true`,
+            children: (0, ha.jsx)(Ue, {
+                skillName: n?.title,
+                skillIcon: (0, ha.jsx)(ga, {
+                    "aria-hidden": !0,
+                    className: `size-6`
+                })
+            })
+        }), t[6] = o, t[7] = l?.pins, t[8] = i, t[9] = h, t[10] = g
+    } else h = t[9], g = t[10];
+    let _ = l != null && l.pins.length === 0 && !l.hasMore,
+        v;
+    return t[11] !== d || t[12] !== h || t[13] !== g || t[14] !== _ ? (v = h(g, _, d), t[11] = d, t[12] = h, t[13] = g, t[14] = _, t[15] = v) : v = t[15], v
+}
+
+function oa(e) {
+    return [e.pin_id, e.thumbnail_url]
+}
+
+function sa(e) {
+    return e.kind === `skill`
+}
+
+function ca(e) {
+    return e.kind === `site`
+}
+
+function la(e) {
+    let {
+        pin: t
+    } = e;
+    return t
+}
+
+function ua(e) {
+    "use forget";
+    let t = (0, pa.c)(21),
+        {
+            sites: n,
+            fallback: r
+        } = e,
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = [], t[0] = i) : i = t[0];
+    let [a, o] = (0, ma.useState)(i), s;
+    if (t[1] !== a || t[2] !== n) {
+        let e = n.flatMap(da);
+        s = e.length > 0 && e.every(e => a.includes(e)), t[1] = a, t[2] = n, t[3] = s
+    } else s = t[3];
+    let c = s,
+        l;
+    if (t[4] !== n) {
+        let e;
+        t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (e = e => (0, ha.jsx)(fa, {
+            screenshotUrl: e.thumbnail_url,
+            onLoad: () => o(t => t.includes(e.pin_id) ? t : [...t, e.pin_id])
+        }, e.pin_id), t[6] = e) : e = t[6], l = n.map(e), t[4] = n, t[5] = l
+    } else l = t[5];
+    let u = l,
+        d = c ? `visible` : `invisible`,
+        f;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, ha.jsx)(ga, {
+        "aria-hidden": !0,
+        className: `size-6`
+    }), t[7] = f) : f = t[7];
+    let p;
+    t[8] !== u[0] || t[9] !== u[1] || t[10] !== u[2] ? (p = (0, ha.jsx)(Ue, {
+        front: u[0],
+        left: u[1],
+        right: u[2],
+        skillIcon: f
+    }), t[8] = u[0], t[9] = u[1], t[10] = u[2], t[11] = p) : p = t[11];
+    let m;
+    t[12] !== d || t[13] !== p ? (m = (0, ha.jsx)(`div`, {
+        className: d,
+        children: p
+    }), t[12] = d, t[13] = p, t[14] = m) : m = t[14];
+    let h;
+    t[15] !== r || t[16] !== c ? (h = !c && (0, ha.jsx)(`div`, {
+        className: `absolute inset-0 flex items-center justify-center`,
+        children: r
+    }), t[15] = r, t[16] = c, t[17] = h) : h = t[17];
+    let g;
+    return t[18] !== m || t[19] !== h ? (g = (0, ha.jsxs)(`div`, {
+        className: `relative flex h-[78px] items-center justify-center`,
+        "aria-hidden": `true`,
+        children: [m, h]
+    }), t[18] = m, t[19] = h, t[20] = g) : g = t[20], g
+}
+
+function da(e) {
+    return e.thumbnail_url ? [e.pin_id] : []
+}
+
+function fa(e) {
+    "use forget";
+    let t = (0, pa.c)(13),
+        {
+            screenshotUrl: n,
+            onLoad: r
+        } = e,
+        i;
+    t[0] === n ? i = t[1] : (i = gr(n), t[0] = n, t[1] = i);
+    let a = i,
+        [o, s] = (0, ma.useState)();
+    if (!a || !n) return null;
+    let c = +(o === a),
+        l;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, ha.jsx)(`rect`, {
+        width: `100%`,
+        height: `100%`,
+        fill: `var(--profile-illustration-surface)`
+    }), t[2] = l) : l = t[2];
+    let u;
+    t[3] !== r || t[4] !== a ? (u = () => {
+        s(a), r()
+    }, t[3] = r, t[4] = a, t[5] = u) : u = t[5];
+    let d;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (d = () => s(void 0), t[6] = d) : d = t[6];
+    let f;
+    t[7] !== a || t[8] !== u ? (f = (0, ha.jsx)(`image`, {
+        href: a,
+        width: `100%`,
+        height: `100%`,
+        preserveAspectRatio: `xMidYMid slice`,
+        onLoad: u,
+        onError: d
+    }, a), t[7] = a, t[8] = u, t[9] = f) : f = t[9];
+    let p;
+    return t[10] !== c || t[11] !== f ? (p = (0, ha.jsxs)(`g`, {
+        opacity: c,
+        children: [l, f]
+    }), t[10] = c, t[11] = f, t[12] = p) : p = t[12], p
+}
+var pa, ma, ha, ga, _a, va = e((() => {
+        pa = Fe(), qt(), hr(), he(), o(), K(), ma = t(De()), ha = ve(), ga = At(), _a = [1e3, 2e3, 4e3]
+    })),
+    ya, ba, xa, Sa = e((() => {
+        ya = `DKBASq_emptyAction`, ba = `DKBASq_emptyActionLoading`, xa = {
+            emptyAction: ya,
+            emptyActionLoading: ba,
+            "profile-loading-page-sweep": `DKBASq_profile-loading-page-sweep`
+        }
+    }));
+
+function Ca(e) {
+    "use forget";
+    let t = (0, Ea.c)(88),
+        {
+            accountId: n,
+            page: r,
+            plan: i,
+            onChanged: a,
+            editDisabledReason: o,
+            readOnly: s
+        } = e,
+        c = s !== void 0 && s,
+        l = Ie(),
+        u = (0, Da.useRef)(null),
+        f = r.page.workspace_id == null ? zn.CODEX_PROFILE_PAGE_SCOPE_PERSONAL : zn.CODEX_PROFILE_PAGE_SCOPE_WORKSPACE,
+        p = r.is_self ? Zn.CODEX_PROFILE_OWNER_SELF : Zn.CODEX_PROFILE_OWNER_OTHER,
+        m;
+    t[0] !== f || t[1] !== p ? (m = {
+        pageScope: f,
+        profileOwner: p
+    }, t[0] = f, t[1] = p, t[2] = m) : m = t[2];
+    let h = m,
+        g;
+    t[3] === h ? g = t[4] : (g = e => {
+        C.logStructuredEvent(`CodexProfileShowcaseCardShown`, {
+            ...h,
+            kind: e === `site` ? Qn.CODEX_PROFILE_PIN_KIND_SITE : Qn.CODEX_PROFILE_PIN_KIND_SKILL
+        })
+    }, t[3] = h, t[4] = g);
+    let _ = (0, Da.useEffectEvent)(g),
+        v = r.is_self ? null : r.profile_details.username,
+        ee;
+    t[5] === _ ? ee = t[6] : (ee = () => {
+        if (u.current != null) return ct(u.current, _)
+    }, t[5] = _, t[6] = ee);
+    let y;
+    t[7] !== n || t[8] !== r.is_self || t[9] !== r.page.workspace_id || t[10] !== v ? (y = [n, v, r.is_self, r.page.workspace_id], t[7] = n, t[8] = r.is_self, t[9] = r.page.workspace_id, t[10] = v, t[11] = y) : y = t[11], (0, Da.useEffect)(ee, y);
+    let b;
+    t[12] === h ? b = t[13] : (b = function(e, t) {
+        C.logStructuredEvent(`CodexProfileShowcaseCardAction`, {
+            ...h,
+            action: t,
+            kind: e === `site` ? Qn.CODEX_PROFILE_PIN_KIND_SITE : Qn.CODEX_PROFILE_PIN_KIND_SKILL
+        })
+    }, t[12] = h, t[13] = b);
+    let x = b,
+        [S, te] = (0, Da.useState)(!1),
+        [T, E] = (0, Da.useState)(null),
+        D, O, k;
+    if (t[14] !== r.page.pins?.items || t[15] !== r.page.workspace_id || t[16] !== x) {
+        D = r.page.workspace_id != null || ne(`1844917240`), O = r.page.pins?.items ?? [];
+        let e;
+        t[20] === x ? e = t[21] : (e = e => ({
+            id: e.pin_id,
+            kind: e.kind,
+            content: (0, X.jsx)(ut, {
+                itemId: e.artifact_id,
+                title: e.title ?? ``,
+                onClick: () => {
+                    x(e.kind, ar.CODEX_PROFILE_SHOWCASE_CARD_ACTION_TYPE_CARD_CLICKED), E(e)
+                },
+                ...e.kind === `site` ? {
+                    kind: `site`,
+                    preview: (0, X.jsx)(Qt, {
+                        aspectRatio: `landscape`,
+                        screenshotSrc: e.thumbnail_url,
+                        variant: `flat`,
+                        viewMode: `grid`,
+                        thumbnail: (0, X.jsx)(G, {
+                            "aria-hidden": !0,
+                            platform: pe() ? `windows` : `mac`
+                        })
+                    })
+                } : {
+                    kind: `skill`,
+                    description: e.description,
+                    icon: (0, X.jsx)(zr, {
+                        icon: e.icon
+                    })
+                }
+            })
+        }), t[20] = x, t[21] = e), k = O.filter(e => e.kind === `site` || D).map(e), t[14] = r.page.pins?.items, t[15] = r.page.workspace_id, t[16] = x, t[17] = D, t[18] = O, t[19] = k
+    } else D = t[17], O = t[18], k = t[19];
+    let A = k,
+        j = r.is_self && r.can_edit && (i === me.FREE || i === me.GO) && O.length === 0,
+        re;
+    t[22] !== h || t[23] !== S || t[24] !== r.can_edit ? (re = function() {
+        !r.can_edit || S || (C.logStructuredEvent(`CodexProfileEditEntered`, {
+            entryPoint: Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_SHOWCASE,
+            pageScope: h.pageScope
+        }), te(!0))
+    }, t[22] = h, t[23] = S, t[24] = r.can_edit, t[25] = re) : re = t[25];
+    let M = re,
+        N;
+    t[26] !== o || t[27] !== l || t[28] !== M || t[29] !== r.can_edit || t[30] !== r.is_self || t[31] !== c || t[32] !== j ? (N = r.is_self && !c ? j ? (0, X.jsx)(d, {
+        as: `link`,
+        to: `#pricing`,
+        color: `custom`,
+        className: xa.emptyAction,
+        children: (0, X.jsx)(U, {
+            id: `profile.showcase.upgradeToEdit`,
+            defaultMessage: `Upgrade to edit your showcase`
+        })
+    }) : (0, X.jsx)(Xe, {
+        content: o,
+        disabled: o == null,
+        children: e => (0, X.jsx)(d, {
+            ...e,
+            color: `custom`,
+            className: xa.emptyAction,
+            "aria-disabled": !r.can_edit,
+            visuallyDisabled: !r.can_edit,
+            onClick: M,
+            "aria-label": l.formatMessage({
+                id: `profile.showcase.edit`,
+                defaultMessage: `Edit showcase`
+            }),
+            children: (0, X.jsx)(U, {
+                id: `profile.showcase.edit`,
+                defaultMessage: `Edit showcase`
+            })
+        })
+    }) : null, t[26] = o, t[27] = l, t[28] = M, t[29] = r.can_edit, t[30] = r.is_self, t[31] = c, t[32] = j, t[33] = N) : N = t[33];
+    let P = N,
+        F;
+    t[34] !== P || t[35] !== D || t[36] !== r.profile_details ? (F = P == null ? r.profile_details.display_name || r.profile_details.username ? (0, X.jsx)(U, {
+        id: `profile.showcase.empty.other`,
+        defaultMessage: `{name} hasn't added anything to their showcase yet`,
+        values: {
+            name: r.profile_details.display_name || r.profile_details.username
+        }
+    }) : (0, X.jsx)(U, {
+        id: `profile.showcase.empty`,
+        defaultMessage: `Nothing in showcase yet`
+    }) : D ? (0, X.jsx)(U, {
+        id: `profile.showcase.empty.self`,
+        defaultMessage: `Feature sites and skills on your profile`
+    }) : (0, X.jsx)(U, {
+        id: `profile.showcase.empty.self.sitesOnly`,
+        defaultMessage: `Feature sites on your profile`
+    }), t[34] = P, t[35] = D, t[36] = r.profile_details, t[37] = F) : F = t[37];
+    let I = F,
+        L = D && !j,
+        R;
+    t[38] === L ? R = t[39] : (R = (0, X.jsx)(nt, {
+        allowSkills: L
+    }), t[38] = L, t[39] = R);
+    let z = R,
+        ie;
+    t[40] !== P || t[41] !== l || t[42] !== I ? (ie = (e, t, n) => (0, X.jsx)(Ke, {
+        artwork: e,
+        editAction: n !== void 0 && n ? (0, X.jsx)(`div`, {
+            "aria-hidden": !0,
+            className: `${xa.emptyActionLoading} h-9 w-28 rounded-full`
+        }) : t ? (0, X.jsx)(d, {
+            as: `link`,
+            to: xr(l.formatMessage(Cr, {
+                sitesMention: `@Sites`
+            })),
+            onClick: Ta,
+            color: `custom`,
+            className: xa.emptyAction,
+            children: (0, X.jsx)(U, {
+                id: `profile.showcase.empty.createSite`,
+                defaultMessage: `Create a site`
+            })
+        }) : P,
+        children: I
+    }), t[40] = P, t[41] = l, t[42] = I, t[43] = ie) : ie = t[43];
+    let ae = ie,
+        B;
+    t[44] !== o || t[45] !== l || t[46] !== A.length || t[47] !== M || t[48] !== r.can_edit || t[49] !== r.is_self || t[50] !== c ? (B = A.length > 0 && r.is_self && !c ? (0, X.jsx)(Xe, {
+        content: o,
+        disabled: o == null,
+        children: e => (0, X.jsxs)(`button`, {
+            ...e,
+            "aria-disabled": !r.can_edit,
+            type: `button`,
+            className: `interactive-button text-token-text-tertiary flex items-center gap-1 text-sm aria-disabled:pointer-events-auto!`,
+            "aria-label": l.formatMessage({
+                id: `profile.showcase.edit`,
+                defaultMessage: `Edit showcase`
+            }),
+            onClick: M,
+            children: [(0, X.jsx)(on, {
+                "aria-hidden": !0,
+                className: `icon`
+            }), (0, X.jsx)(U, {
+                id: `profile.showcase.edit.label`,
+                defaultMessage: `Edit`
+            })]
+        })
+    }) : null, t[44] = o, t[45] = l, t[46] = A.length, t[47] = M, t[48] = r.can_edit, t[49] = r.is_self, t[50] = c, t[51] = B) : B = t[51];
+    let oe;
+    t[52] !== n || t[53] !== P || t[54] !== D || t[55] !== ae || t[56] !== z || t[57] !== A.length || t[58] !== r.can_edit || t[59] !== r.is_self || t[60] !== r.page.workspace_id || t[61] !== r.profile_details || t[62] !== c || t[63] !== j ? (oe = A.length === 0 && r.is_self && r.can_edit && !j ? (0, X.jsx)(aa, {
+        accountId: n,
+        allowSkills: D,
+        readOnly: c,
+        fallback: z,
+        children: ae
+    }, `${n}:${r.profile_details.username}:${r.page.workspace_id}:${D}`) : ae(P == null ? null : z, !1), t[52] = n, t[53] = P, t[54] = D, t[55] = ae, t[56] = z, t[57] = A.length, t[58] = r.can_edit, t[59] = r.is_self, t[60] = r.page.workspace_id, t[61] = r.profile_details, t[62] = c, t[63] = j, t[64] = oe) : oe = t[64];
+    let se;
+    t[65] !== D || t[66] !== l || t[67] !== A || t[68] !== B || t[69] !== oe ? (se = (0, X.jsx)(Ze, {
+        intl: l,
+        items: A,
+        showSkills: D,
+        editAction: B,
+        empty: oe,
+        renderExpandButton: wa
+    }), t[65] = D, t[66] = l, t[67] = A, t[68] = B, t[69] = oe, t[70] = se) : se = t[70];
+    let V;
+    t[71] !== n || t[72] !== D || t[73] !== S || t[74] !== a || t[75] !== r || t[76] !== c || t[77] !== j ? (V = S && r.can_edit && !c && !j && (0, X.jsx)($i, {
+        accountId: n,
+        page: r,
+        allowSkills: D,
+        onClose: () => te(!1),
+        onChanged: a
+    }, n), t[71] = n, t[72] = D, t[73] = S, t[74] = a, t[75] = r, t[76] = c, t[77] = j, t[78] = V) : V = t[78];
+    let ce;
+    t[79] !== n || t[80] !== T || t[81] !== r.profile_details || t[82] !== x ? (ce = T && (0, X.jsx)(w, {
+        for: Oa,
+        withProps: {
+            accountId: n,
+            pin: T,
+            creatorName: r.profile_details.display_name ?? r.profile_details.username ?? null,
+            onClose: () => E(null),
+            onOpenSite: () => x(`site`, ar.CODEX_PROFILE_SHOWCASE_CARD_ACTION_TYPE_OPEN_SITE_CLICKED)
+        },
+        open: !0,
+        onClose: () => E(null)
+    }), t[79] = n, t[80] = T, t[81] = r.profile_details, t[82] = x, t[83] = ce) : ce = t[83];
+    let le;
+    return t[84] !== se || t[85] !== V || t[86] !== ce ? (le = (0, X.jsxs)(`div`, {
+        ref: u,
+        children: [se, V, ce]
+    }), t[84] = se, t[85] = V, t[86] = ce, t[87] = le) : le = t[87], le
+}
+
+function wa(e) {
+    let {
+        expanded: t,
+        onClick: n
+    } = e;
+    return (0, X.jsxs)(d, {
+        color: `secondary`,
+        size: `small`,
+        "aria-expanded": t,
+        onClick: n,
+        children: [t ? (0, X.jsx)(U, {
+            id: `profile.showcase.showLess`,
+            defaultMessage: `Show less`
+        }) : (0, X.jsx)(U, {
+            id: `profile.showcase.showMore`,
+            defaultMessage: `Show more`
+        }), (0, X.jsx)(nn, {
+            "aria-hidden": !0,
+            className: t ? `icon-sm rotate-180` : `icon-sm`
+        })]
+    })
+}
+
+function Ta() {
+    return s(fe.TPP)
+}
+var Ea, Da, X, Oa, ka = e((() => {
+    Ea = Fe(), Sr(), de(), et(), D(), ae(), m(), r(), ce(), H(), tr(), K(), an(), fn(), O(), Da = t(De()), we(), ia(), Rr(), va(), Sa(), X = ve(), Me(), Oa = T(() => Oe(() => import(`./d880ef91-kuqyg17ckdsfs5dk.js`).then(e => e.ProfileV2ShowcaseDetailsContent), __vite__mapDeps([72, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 73, 74, 75, 76, 77, 78, 79, 62, 71, 67])))
+}));
+
+function Aa(e) {
+    "use forget";
+    let t = (0, Na.c)(30),
+        {
+            username: n,
+            blockedSuffix: r,
+            canEdit: i,
+            onSaved: a
+        } = e,
+        o = Ie(),
+        s = xe(),
+        c;
+    t[0] === n ? c = t[1] : (c = n.split(`~`), t[0] = n, t[1] = c);
+    let l = c[0],
+        [u, d] = (0, Pa.useState)(l),
+        [f, p] = (0, Pa.useState)(!1),
+        [m, h] = (0, Pa.useState)(null),
+        g, _, v;
+    if (t[2] !== u || t[3] !== m || t[4] !== o || t[5] !== l) {
+        v = Pt(u);
+        let e;
+        t[9] === u ? e = t[10] : (e = Vt(u, !1), t[9] = u, t[10] = e), g = e, _ = m ?? (u === l ? null : g ? (0, Fa.jsx)(U, {
+            id: `profile.usernameLink.blockedSuffix`,
+            defaultMessage: `Your username cannot end with “{suffix}”`,
+            values: {
+                suffix: g
+            }
+        }) : v.ok ? null : zt(v.reason, o)), t[2] = u, t[3] = m, t[4] = o, t[5] = l, t[6] = g, t[7] = _, t[8] = v
+    } else g = t[6], _ = t[7], v = t[8];
+    let ee = _,
+        y = i && !f && v.ok && g == null && u !== l,
+        b;
+    t[11] !== y || t[12] !== o || t[13] !== a || t[14] !== s || t[15] !== v.username ? (b = async function() {
+        if (y) {
+            p(!0), h(null);
+            try {
+                await kn(v.username), s.invalidateQueries({
+                    queryKey: [`account-username`]
+                }), a()
+            } catch (e) {
+                h(Nr(e) ?? o.formatMessage({
+                    id: `profile.usernameUpdateError`,
+                    defaultMessage: `Unable to update username`
+                }))
+            }
+            p(!1)
+        }
+    }, t[11] = y, t[12] = o, t[13] = a, t[14] = s, t[15] = v.username, t[16] = b) : b = t[16];
+    let x = b,
+        S = !i || f,
+        te = !v.ok || g != null || m != null,
+        C;
+    t[17] === x ? C = t[18] : (C = () => void x(), t[17] = x, t[18] = C);
+    let w;
+    t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (w = e => {
+        d(e), h(null)
+    }, t[19] = w) : w = t[19];
+    let T;
+    return t[20] !== r || t[21] !== y || t[22] !== u || t[23] !== ee || t[24] !== o || t[25] !== f || t[26] !== S || t[27] !== te || t[28] !== C ? (T = (0, Fa.jsx)(En, {
+        className: `w-full`,
+        children: (0, Fa.jsx)(It, {
+            blockedSuffix: r,
+            value: u,
+            disabled: S,
+            invalid: te,
+            saving: f,
+            error: ee,
+            intl: o,
+            canSave: y,
+            onSubmit: C,
+            onChange: w,
+            renderInput: Ma,
+            renderSubmit: ja
+        })
+    }), t[20] = r, t[21] = y, t[22] = u, t[23] = ee, t[24] = o, t[25] = f, t[26] = S, t[27] = te, t[28] = C, t[29] = T) : T = t[29], T
+}
+
+function ja(e) {
+    return (0, Fa.jsx)(On, {
+        ...e
+    })
+}
+
+function Ma(e) {
+    return (0, Fa.jsx)(_r, {
+        ...e
+    })
+}
+var Na, Pa, Fa, Ia = e((() => {
+    Na = Fe(), Dn(), Nn(), wn(), vr(), K(), Ne(), Pa = t(De()), we(), Mr(), Fa = ve()
+}));
+async function La(e) {
+    let {
+        uploadWhamProfileAvatar: t
+    } = await Oe(async () => {
+        let {
+            uploadWhamProfileAvatar: e
+        } = await import(`./4813494d-tap9fxyhk4ehe0bs.js`).then(e => (e.th(), e.nh));
+        return {
+            uploadWhamProfileAvatar: e
+        }
+    }, __vite__mapDeps([2, 1, 3, 4]));
+    return t(e)
+}
+
+function Ra(e) {
+    return e.isPersonalAccount() && !e.isDeactivated()
+}
+
+function za(e) {
+    return e + 1
+}
+
+function Ba(e) {
+    return e + 1
+}
+
+function Va(e) {
+    return (0, Q.jsx)(Ji, {
+        ...e
+    })
+}
+
+function Ha(e) {
+    return (0, Q.jsx)(Br, {
+        ...e
+    })
+}
+
+function Ua(e) {
+    let {
+        children: t,
+        label: n,
+        onOpenChange: r
+    } = e;
+    return (0, Q.jsx)(Xe, {
+        className: xi.usageTooltip,
+        content: (0, Q.jsx)(Qe, {
+            children: n
+        }),
+        contentLayout: `multi-line`,
+        hoverDelayMs: 0,
+        onOpenChange: r,
+        children: e => (0, Z.cloneElement)(t, {
+            ...e,
+            "aria-label": n
+        })
+    })
+}
+
+function Wa(e) {
+    return e.preventDefault()
+}
+var Ga, Z, Q, Ka, qa, Ja, Ya, Xa, Za = e((() => {
+    Ga = Fe(), sr(), D(), Rn(), ot(), fn(), Cn(), hn(), m(), un(), an(), et(), Un(), gt(), h(), Ge(), Wt(), Bn(), M(), x(), H(), o(), he(), u(), tr(), K(), O(), yr(), i(), Z = t(De()), we(), Ce(), Tn(), fi(), Or(), kr(), hi(), Pi(), Ri(), Hi(), qi(), Ur(), Qi(), ka(), Fr(), Ia(), Si(), Dr(), Q = ve(), Me(), Ka = Mn({
+        profileVisitKey: An(),
+        profileFromSelfEntry: jn()
+    }), qa = {
+        private: nr.CODEX_PROFILE_PAGE_VISIBILITY_PRIVATE,
+        workspace: nr.CODEX_PROFILE_PAGE_VISIBILITY_WORKSPACE,
+        public: nr.CODEX_PROFILE_PAGE_VISIBILITY_PUBLIC
+    }, Ja = T(() => Oe(() => import(`./621a6c6d-oykkxrz3n3699seq.js`).then(e => e.ProfileV2PhotoCrop), __vite__mapDeps([61, 1, 2, 3, 4, 5, 6, 7, 8, 9, 62]))), Ya = e => {
+        "use forget";
+        let t = (0, Ga.c)(8),
+            n = _e(),
+            r;
+        t[0] !== n.key || t[1] !== n.state || t[2] !== e.routeUsername ? (r = Ka.safeParse(n.state).data ?? {
+            profileVisitKey: n.key,
+            profileFromSelfEntry: e.routeUsername == null
+        }, t[0] = n.key, t[1] = n.state, t[2] = e.routeUsername, t[3] = r) : r = t[3];
+        let i = r,
+            a = `${e.accountId}:${i.profileVisitKey}`,
+            o;
+        return t[4] !== e || t[5] !== a || t[6] !== i ? (o = (0, Q.jsx)(Xa, {
+            ...e,
+            visit: i
+        }, a), t[4] = e, t[5] = a, t[6] = i, t[7] = o) : o = t[7], o
+    }, Xa = e => {
+        "use forget";
+        let t = (0, Ga.c)(282),
+            {
+                accountId: n,
+                accountName: r,
+                initialPersonal: i,
+                profilePage: o,
+                routeUsername: s,
+                todayIso: l,
+                visit: u
+            } = e,
+            f = Ie(),
+            p = _e(),
+            m = Se(),
+            {
+                profileVisitKey: h,
+                profileFromSelfEntry: g
+            } = u,
+            x = Te(),
+            [te, T] = (0, Z.useState)(null),
+            D = te?.source === o ? te.page : o,
+            ne = (0, Z.useRef)(null),
+            O;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (O = () => () => ne.current?.abort(), t[0] = O) : O = t[0];
+        let k;
+        t[1] === o ? k = t[2] : (k = [o], t[1] = o, t[2] = k), (0, Z.useEffect)(O, k);
+        let A = (0, Z.useRef)(null),
+            j = (0, Z.useRef)(!1),
+            re;
+        t[3] === p.search ? re = t[4] : (re = new URLSearchParams(p.search).get(`preview`), t[3] = p.search, t[4] = re);
+        let [M, P] = (0, Z.useState)(re === `true`), F = D.is_self && M, I = (0, Z.useRef)(null), L = (0, Z.useRef)(0), R;
+        t[5] !== p.hash || t[6] !== p.pathname || t[7] !== p.search || t[8] !== m || t[9] !== u ? (R = function(e) {
+            if (e && (L.current = S(yt)?.scrollTop ?? 0), P(e), !e) {
+                let e = new URLSearchParams(p.search);
+                e.has(`preview`) && (e.delete(`preview`), m({
+                    pathname: p.pathname,
+                    search: e.toString(),
+                    hash: p.hash
+                }, {
+                    replace: !0,
+                    state: u
+                })), requestAnimationFrame(() => {
+                    let e = S(yt);
+                    e != null && (e.scrollTop = L.current), I.current?.focus({
+                        preventScroll: !0
+                    })
+                })
+            }
+        }, t[5] = p.hash, t[6] = p.pathname, t[7] = p.search, t[8] = m, t[9] = u, t[10] = R) : R = t[10];
+        let z = R,
+            ie = (0, Z.useId)(),
+            ae;
+        t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (ae = v(), t[11] = ae) : ae = t[11];
+        let B = ae,
+            oe = E(),
+            se;
+        t[12] === f ? se = t[13] : (se = () => mt({
+            account: B,
+            intl: f
+        }), t[12] = f, t[13] = se);
+        let V = ee(se),
+            ce;
+        t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (ce = () => Jt({
+            accountStructure: B?.structure,
+            plan: B?.planType,
+            workspaceName: B?.isWorkspaceAccount() ? a()?.account.name : null
+        }), t[14] = ce) : ce = t[14];
+        let le = ee(ce),
+            [ue, de] = (0, Z.useState)(i),
+            [H, fe] = (0, Z.useState)(!1),
+            [pe, me] = (0, Z.useState)(null),
+            [he, ge] = (0, Z.useState)(!1),
+            [ve, ye] = (0, Z.useState)(0),
+            [be, xe] = (0, Z.useState)(null),
+            W = be != null,
+            Ce = (0, Z.useRef)(null),
+            [we, Ee] = (0, Z.useState)(null),
+            [De, Oe] = (0, Z.useState)(null),
+            [ke, Ae] = (0, Z.useState)(!1),
+            [je, Me] = (0, Z.useState)(null),
+            [Ne, Pe] = (0, Z.useState)(!1),
+            [Fe, Le] = (0, Z.useState)(null),
+            [Re, ze] = (0, Z.useState)(!1),
+            [Be, Ve] = (0, Z.useState)(!1),
+            He = s ?? D.profile_details.username,
+            Ue;
+        t[15] !== n || t[16] !== oe || t[17] !== i || t[18] !== F || t[19] !== D.has_public_personal_profile || t[20] !== D.is_self || t[21] !== D.page ? (Ue = !F && !i && B?.isWorkspaceAccount() === !0 && D.page.workspace_id === n && (D.is_self ? oe.data?.accountItems.some(Ra) === !0 : D.has_public_personal_profile === !0), t[15] = n, t[16] = oe, t[17] = i, t[18] = F, t[19] = D.has_public_personal_profile, t[20] = D.is_self, t[21] = D.page, t[22] = Ue) : Ue = t[22];
+        let We = Ue,
+            G = i || We && ue,
+            Ge;
+        t[23] !== n || t[24] !== i || t[25] !== G || t[26] !== He ? (Ge = () => {
+            if (!G || i || He == null) return;
+            let e = new AbortController;
+            return c.safeGet(`/profiles/{username}/page`, {
+                signal: e.signal,
+                parameters: {
+                    path: {
+                        username: He
+                    },
+                    query: {
+                        personal: !0
+                    }
+                },
+                additionalHeaders: n == null ? void 0 : {
+                    "ChatGPT-Account-ID": n
+                }
+            }).then(t => {
+                e.signal.aborted || (wr(`success`, t.is_self ? `self` : `other`), me(t), ge(!1))
+            }).catch(t => {
+                e.signal.aborted || (wr(`failure`, `unknown`), ge(!0), t instanceof y && [401, 403, 404].includes(t.status) && me(null))
+            }), () => e.abort()
+        }, t[23] = n, t[24] = i, t[25] = G, t[26] = He, t[27] = Ge) : Ge = t[27];
+        let Ke;
+        t[28] !== n || t[29] !== i || t[30] !== G || t[31] !== ve || t[32] !== He ? (Ke = [n, i, G, ve, He], t[28] = n, t[29] = i, t[30] = G, t[31] = ve, t[32] = He, t[33] = Ke) : Ke = t[33], (0, Z.useEffect)(Ge, Ke);
+        let qe;
+        t[34] !== n || t[35] !== i || t[36] !== o || t[37] !== x || t[38] !== s ? (qe = function() {
+            ne.current?.abort();
+            let e = new AbortController;
+            ne.current = e;
+            let t = {
+                signal: e.signal,
+                additionalHeaders: n == null ? void 0 : {
+                    "ChatGPT-Account-ID": n
+                }
+            };
+            (s == null ? c.safeGet(`/profiles/me/page`, t) : c.safeGet(`/profiles/{username}/page`, {
+                ...t,
+                parameters: {
+                    path: {
+                        username: s
+                    },
+                    query: {
+                        personal: i
+                    }
+                }
+            })).then(t => {
+                e.signal.aborted || (wr(`success`, t.is_self ? `self` : `other`), T({
+                    source: o,
+                    page: t
+                }))
+            }).catch(t => {
+                e.signal.aborted || (wr(`failure`, o.is_self ? `self` : `other`), t instanceof y && [401, 403, 404].includes(t.status) && x.revalidate())
+            })
+        }, t[34] = n, t[35] = i, t[36] = o, t[37] = x, t[38] = s, t[39] = qe) : qe = t[39];
+        let Je = qe,
+            Ze;
+        t[40] !== o || t[41] !== Je ? (Ze = function(e) {
+            if (e == null) {
+                Je();
+                return
+            }
+            ne.current?.abort(), T(t => ({
+                source: o,
+                page: e(t?.source === o ? t.page : o)
+            }))
+        }, t[40] = o, t[41] = Je, t[42] = Ze) : Ze = t[42];
+        let Qe = Ze,
+            et;
+        t[43] === Qe ? et = t[44] : (et = function(e) {
+            Qe(t => ({
+                ...t,
+                profile_details: {
+                    ...t.profile_details,
+                    ...e
+                }
+            }))
+        }, t[43] = Qe, t[44] = et);
+        let tt = et,
+            nt;
+        t[45] !== W || t[46] !== i || t[47] !== G || t[48] !== D.is_self || t[49] !== Je ? (nt = () => {
+            !D.is_self || W || (Je(), G && !i && ye(za))
+        }, t[45] = W, t[46] = i, t[47] = G, t[48] = D.is_self, t[49] = Je, t[50] = nt) : nt = t[50];
+        let rt = (0, Z.useEffectEvent)(nt),
+            it;
+        t[51] === rt ? it = t[52] : (it = () => (window.addEventListener(`focus`, rt), () => window.removeEventListener(`focus`, rt)), t[51] = rt, t[52] = it);
+        let ot;
+        t[53] === Symbol.for(`react.memo_cache_sentinel`) ? (ot = [], t[53] = ot) : ot = t[53], (0, Z.useEffect)(it, ot);
+        let K = D.profile_details.username,
+            ct;
+        t[54] === K ? ct = t[55] : (ct = Vt(K, !1), t[54] = K, t[55] = ct);
+        let ut = ct,
+            dt = D.is_self && !F && ut != null && !W,
+            ft;
+        t[56] !== ut || t[57] !== W || t[58] !== K || t[59] !== s ? (ft = s == null && !W && K != null && Pt(K.split(`~`)[0]).ok && ut == null, t[56] = ut, t[57] = W, t[58] = K, t[59] = s, t[60] = ft) : ft = t[60];
+        let gt = ft,
+            _t, vt;
+        t[61] !== D.is_self || t[62] !== gt ? (_t = () => {
+            gt || j.current || (j.current = !0, C.logStructuredEvent(`CodexProfilePageViewed`, {
+                profileOwner: D.is_self ? `self` : `other`,
+                surface: `web`
+            }))
+        }, vt = [D.is_self, gt], t[61] = D.is_self, t[62] = gt, t[63] = _t, t[64] = vt) : (_t = t[63], vt = t[64]), (0, Z.useEffect)(_t, vt);
+        let bt, xt;
+        t[65] !== K || t[66] !== p.search || t[67] !== m || t[68] !== g || t[69] !== h || t[70] !== gt ? (bt = () => {
+            gt && m({
+                pathname: `/u/${encodeURIComponent(K)}`,
+                search: p.search
+            }, {
+                replace: !0,
+                state: {
+                    profileVisitKey: h,
+                    profileFromSelfEntry: g
+                }
+            })
+        }, xt = [K, p.search, m, gt, h, g], t[65] = K, t[66] = p.search, t[67] = m, t[68] = g, t[69] = h, t[70] = gt, t[71] = bt, t[72] = xt) : (bt = t[71], xt = t[72]), (0, Z.useEffect)(bt, xt);
+        let q = G && !i ? pe : D,
+            Ct = G && !i && pe == null && !he,
+            wt = q?.page.workspace_id == null ? zn.CODEX_PROFILE_PAGE_SCOPE_PERSONAL : zn.CODEX_PROFILE_PAGE_SCOPE_WORKSPACE,
+            Tt, Et;
+        t[73] !== n || t[74] !== H || t[75] !== i || t[76] !== wt || t[77] !== G || t[78] !== g || t[79] !== h || t[80] !== gt || t[81] !== dt || t[82] !== q ? (Tt = () => {
+            if (q == null || gt || dt) return;
+            let e = JSON.stringify([h, n, q.page.workspace_id]);
+            A.current !== e && (A.current = e, C.logStructuredEvent(`CodexProfilePageShown`, {
+                context: {
+                    pageScope: wt,
+                    effectiveVisibility: qa[q.page.visibility.value],
+                    profileOwner: q.is_self ? Zn.CODEX_PROFILE_OWNER_SELF : Zn.CODEX_PROFILE_OWNER_OTHER,
+                    viewedUsername: q.profile_details.username ?? void 0
+                },
+                entryPoint: g ? rr.CODEX_PROFILE_VIEW_ENTRY_POINT_SELF_ENTRY : rr.CODEX_PROFILE_VIEW_ENTRY_POINT_USERNAME,
+                selectionReason: i ? Hn.CODEX_PROFILE_PAGE_SELECTION_REASON_PUBLIC_PERSONAL_FALLBACK : G ? Hn.CODEX_PROFILE_PAGE_SELECTION_REASON_SELECTED_PERSONAL : H ? Hn.CODEX_PROFILE_PAGE_SELECTION_REASON_SELECTED_WORKSPACE : Hn.CODEX_PROFILE_PAGE_SELECTION_REASON_ACTIVE_ACCOUNT
+            }))
+        }, Et = [n, H, i, h, g, G, wt, gt, dt, q], t[73] = n, t[74] = H, t[75] = i, t[76] = wt, t[77] = G, t[78] = g, t[79] = h, t[80] = gt, t[81] = dt, t[82] = q, t[83] = Tt, t[84] = Et) : (Tt = t[83], Et = t[84]), (0, Z.useEffect)(Tt, Et);
+        let Dt = q?.profile_details ?? D.profile_details,
+            Ot = q?.is_self === !0,
+            kt = Ot && !F && q?.can_edit,
+            At;
+        t[85] !== wt || t[86] !== q ? (At = function(e) {
+            q != null && C.logStructuredEvent(`CodexProfileEditEntered`, {
+                entryPoint: e,
+                pageScope: wt
+            })
+        }, t[85] = wt, t[86] = q, t[87] = At) : At = t[87];
+        let jt = At,
+            Mt;
+        t[88] !== kt || t[89] !== F || t[90] !== Ot || t[91] !== G ? (Mt = Ot && !F && G && !kt ? (0, Q.jsx)(U, {
+            id: `profile.view.personalReadOnly`,
+            defaultMessage: `Switch to your personal account to edit your personal profile`
+        }) : null, t[88] = kt, t[89] = F, t[90] = Ot, t[91] = G, t[92] = Mt) : Mt = t[92];
+        let Nt = Mt,
+            Ft;
+        t[93] !== F || t[94] !== Ot || t[95] !== G ? (Ft = G || F || !Ot || !b(B?.planType), t[93] = F, t[94] = Ot, t[95] = G, t[96] = Ft) : Ft = t[96];
+        let It = Ft,
+            Lt, Rt, zt, Bt, Ht, Ut, Wt, Gt, Kt, qt, Yt, Xt, Zt, Qt, en;
+        if (t[97] !== n || t[98] !== le || t[99] !== r || t[100] !== ut || t[101] !== kt || t[102] !== We || t[103] !== z || t[104] !== Dt.description || t[105] !== Dt.display_name || t[106] !== Dt.photo_frame_style || t[107] !== Dt.profile_picture_url || t[108] !== Dt.username || t[109] !== Nt || t[110] !== be?.displayName || t[111] !== be?.photo?.previewUrl || t[112] !== be?.photoShape || t[113] !== W || t[114] !== K || t[115] !== Be || t[116] !== Re || t[117] !== f || t[118] !== F || t[119] !== Ot || t[120] !== p.search || t[121] !== jt || t[122] !== m || t[123] !== Qe || t[124] !== tt || t[125] !== wt || t[126] !== G || t[127] !== Ct || t[128] !== ie || t[129] !== D.can_edit || t[130] !== D.page || t[131] !== ke || t[132] !== De || t[133] !== x || t[134] !== Ne || t[135] !== It || t[136] !== dt || t[137] !== l || t[138] !== q || t[139] !== u || t[140] !== V) {
+            let e = (De ?? Dt.username)?.trim() || null,
+                i = e?.split(`~`)[0] ?? null;
+            en = It ? i : null;
+            let a = St({
+                    accountName: Ot && !F && !G ? r : null,
+                    displayName: Dt.display_name?.trim() || null,
+                    username: en
+                }),
+                o = be?.displayName ?? a,
+                s;
+            t[156] === q ? s = t[157] : (s = q == null ? null : pi(q), t[156] = q, t[157] = s);
+            let h = s,
+                g = Ot && !F ? void 0 : q?.page.display_settings,
+                v = be?.photo?.previewUrl ?? Dt.profile_picture_url,
+                ee = g?.show_activity_graph_section !== !1 && q?.page.workspace_display_settings?.activity_enabled !== !1,
+                y = g?.show_usage_stats_section !== !1,
+                b = g?.show_insights_section !== !1,
+                S = g?.show_top_plugins_section !== !1,
+                te;
+            t[158] === f ? te = t[159] : (te = f.formatMessage({
+                id: `chatgpt.profile.header.private.label`,
+                defaultMessage: `Private`
+            }), t[158] = f, t[159] = te);
+            let w = te,
+                T;
+            t[160] === f ? T = t[161] : (T = f.formatMessage({
+                id: `chatgpt.profile.identity.avatar.alt`,
+                defaultMessage: `Profile picture`
+            }), t[160] = f, t[161] = T);
+            let E = (0, Q.jsx)(Ar, {
+                    frame: be?.photoShape ?? Dt.photo_frame_style,
+                    animateShape: !0,
+                    children: (0, Q.jsx)(jr, {
+                        alt: T,
+                        name: o,
+                        src: v
+                    })
+                }),
+                ne;
+            t[162] !== n || t[163] !== tt ? (ne = async function(e) {
+                Le(null), ze(!0), Ve(!1);
+                try {
+                    let t = await La(e),
+                        r = await c.safePatch(`/profiles/me`, {
+                            additionalHeaders: n == null ? void 0 : {
+                                "ChatGPT-Account-ID": n
+                            },
+                            requestBody: {
+                                profile_asset_pointer: t
+                            }
+                        });
+                    C.logStructuredEvent(`CodexProfileInlinePhotoChangeEvent`, {
+                        action: qn.CODEX_PROFILE_INLINE_PHOTO_CHANGE_ACTION_SUCCEEDED
+                    }), tt(r)
+                } catch {
+                    Ve(!0), C.logStructuredEvent(`CodexProfileInlinePhotoChangeEvent`, {
+                        action: qn.CODEX_PROFILE_INLINE_PHOTO_CHANGE_ACTION_FAILED
+                    })
+                }
+                ze(!1)
+            }, t[162] = n, t[163] = tt, t[164] = ne) : ne = t[164], Bt = ne;
+            let O;
+            if (dt && K != null && ut != null) {
+                let e;
+                t[165] !== p.search || t[166] !== m || t[167] !== x || t[168] !== u ? (e = () => {
+                    m({
+                        pathname: `/profile`,
+                        search: p.search
+                    }, {
+                        replace: !0,
+                        state: u
+                    }), x.revalidate()
+                }, t[165] = p.search, t[166] = m, t[167] = x, t[168] = u, t[169] = e) : e = t[169];
+                let n;
+                t[170] !== ut || t[171] !== K || t[172] !== D.can_edit || t[173] !== e ? (n = (0, Q.jsx)(Aa, {
+                    username: K,
+                    blockedSuffix: ut,
+                    canEdit: D.can_edit,
+                    onSaved: e
+                }), t[170] = ut, t[171] = K, t[172] = D.can_edit, t[173] = e, t[174] = n) : n = t[174], O = n
+            } else if (Ct) {
+                let e;
+                t[175] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Q.jsx)(`p`, {
+                    className: `text-token-text-secondary text-center text-sm`,
+                    role: `status`,
+                    children: (0, Q.jsx)(U, {
+                        id: `chatgpt.profile.v2.personal.loading`,
+                        defaultMessage: `Loading personal profile…`
+                    })
+                }), t[175] = e) : e = t[175], O = e
+            } else if (q == null) {
+                let e;
+                t[176] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Q.jsx)(U, {
+                    id: `chatgpt.profile.v2.personal.error`,
+                    defaultMessage: `This profile couldn’t be loaded`
+                }), t[176] = e) : e = t[176];
+                let n;
+                t[177] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Q.jsx)(d, {
+                    color: `secondary`,
+                    onClick: () => {
+                        me(null), ge(!1), ye(Ba)
+                    },
+                    children: (0, Q.jsx)(U, {
+                        id: `chatgpt.profile.v2.personal.retry`,
+                        defaultMessage: `Try again`
+                    })
+                }), t[177] = n) : n = t[177];
+                let r;
+                t[178] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Q.jsxs)(`div`, {
+                    className: `flex flex-col items-center gap-3 text-center`,
+                    role: `alert`,
+                    children: [e, (0, Q.jsxs)(`div`, {
+                        className: `flex gap-2`,
+                        children: [n, (0, Q.jsx)(d, {
+                            color: `secondary`,
+                            onClick: () => {
+                                de(!1), fe(!0)
+                            },
+                            children: (0, Q.jsx)(U, {
+                                id: `chatgpt.profile.v2.personal.back`,
+                                defaultMessage: `Back to workspace profile`
+                            })
+                        })]
+                    })]
+                }), t[178] = r) : r = t[178], O = r
+            } else {
+                let e = h?.activity,
+                    r = q.page.stats == null ? null : h?.summary,
+                    i;
+                t[179] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, Q.jsx)(`p`, {
+                    className: `text-token-text-secondary text-sm`,
+                    role: `status`,
+                    children: (0, Q.jsx)(U, {
+                        id: `chatgpt.profile.v2.stats.unavailable`,
+                        defaultMessage: `Profile stats unavailable`
+                    })
+                }), t[179] = i) : i = t[179];
+                let a;
+                t[180] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Q.jsx)(`p`, {
+                    className: `text-token-text-secondary text-sm`,
+                    role: `status`,
+                    children: (0, Q.jsx)(U, {
+                        id: `chatgpt.profile.v2.activity.unavailable`,
+                        defaultMessage: `Token usage unavailable`
+                    })
+                }), t[180] = a) : a = t[180];
+                let o;
+                t[181] !== n || t[182] !== Nt || t[183] !== F || t[184] !== Qe || t[185] !== q ? (o = (0, Q.jsx)(Ca, {
+                    accountId: n,
+                    page: q,
+                    plan: B?.planType,
+                    editDisabledReason: Nt,
+                    readOnly: F,
+                    onChanged: Qe
+                }), t[181] = n, t[182] = Nt, t[183] = F, t[184] = Qe, t[185] = q, t[186] = o) : o = t[186];
+                let s;
+                t[187] !== f || t[188] !== ee || t[189] !== y || t[190] !== e || t[191] !== r || t[192] !== o || t[193] !== l ? (s = (0, Q.jsx)(ht, {
+                    renderStat: Va,
+                    renderSection: Ha,
+                    activity: e,
+                    summary: r,
+                    statsFallback: i,
+                    activityFallback: a,
+                    intl: f,
+                    renderTooltip: Ua,
+                    showActivityGraph: ee,
+                    showUsageStatistics: y,
+                    showcase: o,
+                    todayIso: l
+                }), t[187] = f, t[188] = ee, t[189] = y, t[190] = e, t[191] = r, t[192] = o, t[193] = l, t[194] = s) : s = t[194];
+                let c;
+                t[195] !== b || t[196] !== S || t[197] !== h || t[198] !== q.page.insights || t[199] !== q.page.top_plugins ? (c = h?.insights == null ? (0, Q.jsx)(Br, {
+                    visible: b || S,
+                    children: (0, Q.jsxs)(`section`, {
+                        className: `flex flex-col gap-2`,
+                        children: [(0, Q.jsx)(`h2`, {
+                            className: `text-base font-medium`,
+                            children: b ? (0, Q.jsx)(U, {
+                                id: `profile.v2.insights.title`,
+                                defaultMessage: `Insights`
+                            }) : (0, Q.jsx)(U, {
+                                id: `profile.v2.plugins.title`,
+                                defaultMessage: `Top plugins`
+                            })
+                        }), (0, Q.jsx)(`div`, {
+                            className: `border-token-border-default text-token-text-secondary flex min-h-40 items-center justify-center rounded-2xl border px-4 text-center text-sm`,
+                            children: b ? (0, Q.jsx)(U, {
+                                id: `profile.activity.unavailable`,
+                                defaultMessage: `Activity insights unavailable`
+                            }) : (0, Q.jsx)(U, {
+                                id: `profile.activity.plugins.unavailable`,
+                                defaultMessage: `Plugin activity unavailable`
+                            })
+                        })]
+                    })
+                }) : (0, Q.jsx)(oi, {
+                    insights: h.insights,
+                    isProfileV2: !0,
+                    showInsights: b && q.page.insights != null,
+                    showPlugins: S && q.page.top_plugins != null
+                }), t[195] = b, t[196] = S, t[197] = h, t[198] = q.page.insights, t[199] = q.page.top_plugins, t[200] = c) : c = t[200];
+                let u;
+                t[201] !== s || t[202] !== c ? (u = (0, Q.jsxs)(Q.Fragment, {
+                    children: [s, c]
+                }), t[201] = s, t[202] = c, t[203] = u) : u = t[203], O = u
+            }
+            let k = !dt && (0, Q.jsxs)(Q.Fragment, {
+                    children: [(0, Q.jsxs)(`section`, {
+                        className: `relative isolate flex flex-col items-center`,
+                        children: [(0, Q.jsx)(at, {
+                            layout: `inline-fields`,
+                            avatar: kt ? (0, Q.jsxs)(`label`, {
+                                htmlFor: W ? ie : void 0,
+                                className: `focus-within:ring-ring group relative flex rounded-full focus-within:ring-2 ${Re?`cursor-default`:`cursor-pointer`}`,
+                                children: [E, !Re && (0, Q.jsx)(`span`, {
+                                    className: `bg-token-text-primary/30 pointer-events-none absolute end-0 bottom-0 flex size-8 items-center justify-center rounded-full text-white opacity-0 backdrop-blur-lg group-focus-within:opacity-100 group-hover:opacity-100`,
+                                    children: (0, Q.jsx)(on, {
+                                        "aria-hidden": `true`,
+                                        className: `icon`
+                                    })
+                                }), !W && (0, Q.jsx)(`input`, {
+                                    name: `profile-photo`,
+                                    type: `file`,
+                                    accept: `image/*`,
+                                    className: `sr-only`,
+                                    disabled: Re,
+                                    "aria-label": f.formatMessage({
+                                        id: `profile.photoInputLabel`,
+                                        defaultMessage: `Change profile picture`
+                                    }),
+                                    onClick: () => {
+                                        jt(Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_PROFILE_PHOTO), C.logStructuredEvent(`CodexProfileInlinePhotoChangeEvent`, {
+                                            action: qn.CODEX_PROFILE_INLINE_PHOTO_CHANGE_ACTION_STARTED
+                                        })
+                                    },
+                                    onChange: e => {
+                                        let t = e.currentTarget.files?.[0];
+                                        e.currentTarget.value = ``, t != null && (C.logStructuredEvent(`CodexProfileInlinePhotoChangeEvent`, {
+                                            action: qn.CODEX_PROFILE_INLINE_PHOTO_CHANGE_ACTION_IMAGE_SELECTED
+                                        }), Le(t))
+                                    }
+                                })]
+                            }) : E,
+                            displayName: W ? (0, Q.jsx)(`span`, {
+                                ref: Ee,
+                                className: `block`
+                            }) : kt && n != null ? (0, Q.jsx)(Vi, {
+                                pageScope: wt,
+                                field: `displayName`,
+                                value: a ?? ``,
+                                onEditStarted: () => jt(Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_INLINE_DISPLAY_NAME),
+                                accountId: n,
+                                isSaving: ke,
+                                setSaving: Ae,
+                                onSaved: tt
+                            }, n) : o,
+                            username: It && kt && n != null ? (0, Q.jsx)(Pr, {
+                                pageScope: wt,
+                                value: en ?? ``,
+                                accountId: n,
+                                isSaving: ke,
+                                isProfileEditing: W,
+                                onEditStarted: () => {
+                                    W || jt(Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_USERNAME)
+                                },
+                                onSaved: e => {
+                                    W ? Oe(e) : m({
+                                        pathname: `/u/${encodeURIComponent(e)}`,
+                                        search: p.search
+                                    }, {
+                                        replace: !0,
+                                        state: u
+                                    })
+                                }
+                            }) : en == null ? null : (0, Q.jsxs)(Q.Fragment, {
+                                children: [(0, Q.jsx)(U, {
+                                    id: `profile.username.prefix`,
+                                    defaultMessage: `@`
+                                }), en]
+                            })
+                        }), Be && (0, Q.jsx)(`p`, {
+                            role: `alert`,
+                            className: `text-interactive-label-warning-secondary text-sm`,
+                            children: (0, Q.jsx)(U, {
+                                id: `profile.photoCrop.error`,
+                                defaultMessage: `Unable to process the profile picture`
+                            })
+                        })]
+                    }), (W || !!Dt.description?.trim()) && (0, Q.jsx)(lt, {
+                        children: W ? (0, Q.jsx)(`span`, {
+                            ref: Me,
+                            className: `block`
+                        }, `editor`) : kt && n != null ? (0, Q.jsx)(Vi, {
+                            pageScope: wt,
+                            field: `bio`,
+                            onEditStarted: () => jt(Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_INLINE_BIO),
+                            value: (Dt.description ?? ``).replace(/\r\n|[\r\n\u2028\u2029]/g, ` `),
+                            accountId: n,
+                            isSaving: ke,
+                            setSaving: Ae,
+                            onSaved: tt
+                        }, n) : (0, Q.jsx)(`span`, {
+                            className: `block px-2.5 py-1.25`,
+                            children: Dt.description
+                        }, `saved`)
+                    })]
+                }),
+                A;
+            t[204] !== O || t[205] !== k ? (A = (0, Q.jsx)(`div`, {
+                className: `${xi.page} bg-primary text-token-text-primary min-h-full w-full`,
+                children: (0, Q.jsxs)(pt, {
+                    children: [k, O]
+                })
+            }), t[204] = O, t[205] = k, t[206] = A) : A = t[206], zt = A, Rt = st, Xt = `overflow-hidden`, Zt = e != null && (0, Q.jsx)(br, {
+                children: (0, Q.jsx)(`title`, {
+                    children: f.formatMessage({
+                        id: `profile.page.documentTitle`,
+                        defaultMessage: `{displayName} (@{username}) | ChatGPT`
+                    }, {
+                        displayName: a ?? i,
+                        username: i
+                    })
+                })
+            });
+            let j;
+            t[207] === Symbol.for(`react.memo_cache_sentinel`) ? (j = (0, Q.jsx)(Kn, {}), t[207] = j) : j = t[207], t[208] === Symbol.for(`react.memo_cache_sentinel`) ? (Qt = (0, Q.jsx)(st.Navbar, {
+                children: (0, Q.jsx)(Fn, {
+                    children: (0, Q.jsx)(Ln, {
+                        navHeader: j,
+                        children: (0, Q.jsx)(Xn, {
+                            isProjectsEnabled: _()
+                        })
+                    })
+                })
+            }), t[208] = Qt) : Qt = t[208], Lt = st.Header, Kt = F, qt = `${F?`invisible`:``} h-header-height sticky top-0 z-10 -mb-(--header-height) flex shrink-0 items-center justify-between gap-2 px-2 ${W?``:`group-data-scroll-from-top/scroll-root:bg-token-main-surface-primary/80 group-data-scroll-from-top/scroll-root:backdrop-blur-xl`}`, t[209] === Symbol.for(`react.memo_cache_sentinel`) ? (Yt = (0, Q.jsx)(Jn, {}), t[209] = Yt) : Yt = t[209], Wt = `flex min-w-0 flex-1 items-center gap-2`, t[210] !== le || t[211] !== We || t[212] !== W || t[213] !== f || t[214] !== G || t[215] !== D.page || t[216] !== dt || t[217] !== V ? (Gt = We && !dt && (0, Q.jsxs)(Ye, {
+                size: `auto`,
+                sideOffset: 1,
+                contentClassName: xi.scopeMenu,
+                triggerButton: (0, Q.jsxs)(d, {
+                    className: xi.scopeTrigger,
+                    disabled: W,
+                    color: `ghost`,
+                    size: `toolbar`,
+                    "aria-label": f.formatMessage({
+                        id: `profile.viewScope`,
+                        defaultMessage: `Profile page`
+                    }),
+                    children: [(0, Q.jsx)(`span`, {
+                        className: `hidden max-w-48 truncate sm:inline`,
+                        children: G ? f.formatMessage({
+                            id: `profile.viewPersonal`,
+                            defaultMessage: `Personal`
+                        }) : D.page.workspace_name ?? le
+                    }), (0, Q.jsx)(nn, {
+                        "aria-hidden": !0,
+                        className: `icon-sm`
+                    })]
+                }),
+                children: [(0, Q.jsx)($e.Label, {
+                    children: (0, Q.jsx)(U, {
+                        id: `profile.viewScope.heading`,
+                        defaultMessage: `View profile`
+                    })
+                }), (0, Q.jsxs)($e.RadioGroup, {
+                    value: G ? `personal` : `workspace`,
+                    onValueChange: e => {
+                        de(e === `personal`), fe(!0)
+                    },
+                    children: [(0, Q.jsx)($e.RadioItem, {
+                        value: `personal`,
+                        children: (0, Q.jsx)(U, {
+                            id: `profile.viewPersonal`,
+                            defaultMessage: `Personal`
+                        })
+                    }), (0, Q.jsx)($e.RadioItem, {
+                        value: `workspace`,
+                        children: (0, Q.jsxs)(`span`, {
+                            className: `inline-flex items-center gap-1`,
+                            children: [D.page.workspace_name ?? le, V != null && (0, Q.jsx)(`span`, {
+                                className: `text-token-text-tertiary`,
+                                children: V
+                            })]
+                        })
+                    })]
+                })]
+            }), t[210] = le, t[211] = We, t[212] = W, t[213] = f, t[214] = G, t[215] = D.page, t[216] = dt, t[217] = V, t[218] = Gt) : Gt = t[218], Ht = `ms-auto flex shrink-0 items-center gap-1.5 antialiased ${W?`invisible`:``}`, Ut = q?.is_self && !F && !dt && (0, Q.jsxs)(Q.Fragment, {
+                children: [(0, Q.jsx)(Xe, {
+                    content: Nt,
+                    disabled: Nt == null,
+                    children: e => (0, Q.jsx)(d, {
+                        color: `ghost`,
+                        size: `toolbar`,
+                        icon: on,
+                        ref: Ce,
+                        ...e,
+                        "aria-label": f.formatMessage({
+                            id: `chatgpt.profile.header.edit.label`,
+                            defaultMessage: `Edit`
+                        }),
+                        disabled: ke || W,
+                        "aria-disabled": !kt || ke || W,
+                        visuallyDisabled: !kt,
+                        onClick: () => {
+                            !kt || ke || W || (jt(Yn.CODEX_PROFILE_EDIT_ENTRY_POINT_EDIT_BUTTON), C.logStructuredEvent(`CodexProfileEditEvent`, {
+                                pageScope: wt,
+                                action: In.CODEX_PROFILE_EDIT_ACTION_OPENED
+                            }), xe({
+                                displayName: o ?? ``,
+                                bio: Dt.description ?? ``,
+                                photo: null,
+                                photoShape: [`circle`, `oval`, `rounded_square`, `scalloped_circle`, `scalloped_oval`].find(e => e === Dt.photo_frame_style) ?? `circle`,
+                                settings: q.page.display_settings ?? {}
+                            }))
+                        },
+                        children: (0, Q.jsx)(U, {
+                            id: `chatgpt.profile.header.edit.label`,
+                            defaultMessage: `Edit`
+                        })
+                    })
+                }), !W && !G && e != null && ut == null && Pt(e.split(`~`)[0]).ok && q.page.visibility.value !== `private` && (0, Q.jsx)(d, {
+                    ref: I,
+                    onClick: () => z(!0),
+                    color: `ghost`,
+                    size: `toolbar`,
+                    icon: _n,
+                    children: (0, Q.jsx)(U, {
+                        id: `profile.preview`,
+                        defaultMessage: `Preview`
+                    })
+                }), !G && (0, Q.jsxs)(Q.Fragment, {
+                    children: [q.page.visibility.value === `private` ? (0, Q.jsx)(Xe, {
+                        content: (0, Q.jsx)(`span`, {
+                            className: `font-normal`,
+                            children: (0, Q.jsx)(U, {
+                                id: `profile.privateTooltip`,
+                                defaultMessage: `Only visible to you`
+                            })
+                        }),
+                        children: e => (0, Q.jsxs)(`span`, {
+                            ...e,
+                            className: `btn-toolbar text-token-text-secondary inline-flex cursor-default items-center gap-1 select-none`,
+                            "aria-label": w,
+                            children: [(0, Q.jsx)($t, {
+                                "aria-hidden": `true`,
+                                className: `icon-sm`
+                            }), w]
+                        })
+                    }) : null, (q.page.workspace_id == null || q.page.visibility.value === `workspace`) && (0, Q.jsx)(d, {
+                        color: `ghost`,
+                        size: `toolbar`,
+                        icon: pn,
+                        "aria-haspopup": `dialog`,
+                        "aria-expanded": Ne,
+                        className: `aria-expanded:bg-black/5 dark:aria-expanded:bg-white/10`,
+                        disabled: W,
+                        onClick: () => {
+                            C.logStructuredEvent(`CodexProfileSharingAction`, {
+                                context: {
+                                    profileOwner: Zn.CODEX_PROFILE_OWNER_SELF,
+                                    viewedUsername: q.profile_details.username ?? void 0
+                                },
+                                action: Gn.CODEX_PROFILE_SHARING_ACTION_TYPE_OPEN,
+                                result: Pn.CODEX_PROFILE_SHARING_RESULT_CLICKED
+                            }), Pe(!0)
+                        },
+                        children: (0, Q.jsx)(U, {
+                            id: `chatgpt.profile.v2.share.button`,
+                            defaultMessage: `Share`
+                        })
+                    })]
+                })]
+            }), t[97] = n, t[98] = le, t[99] = r, t[100] = ut, t[101] = kt, t[102] = We, t[103] = z, t[104] = Dt.description, t[105] = Dt.display_name, t[106] = Dt.photo_frame_style, t[107] = Dt.profile_picture_url, t[108] = Dt.username, t[109] = Nt, t[110] = be?.displayName, t[111] = be?.photo?.previewUrl, t[112] = be?.photoShape, t[113] = W, t[114] = K, t[115] = Be, t[116] = Re, t[117] = f, t[118] = F, t[119] = Ot, t[120] = p.search, t[121] = jt, t[122] = m, t[123] = Qe, t[124] = tt, t[125] = wt, t[126] = G, t[127] = Ct, t[128] = ie, t[129] = D.can_edit, t[130] = D.page, t[131] = ke, t[132] = De, t[133] = x, t[134] = Ne, t[135] = It, t[136] = dt, t[137] = l, t[138] = q, t[139] = u, t[140] = V, t[141] = Lt, t[142] = Rt, t[143] = zt, t[144] = Bt, t[145] = Ht, t[146] = Ut, t[147] = Wt, t[148] = Gt, t[149] = Kt, t[150] = qt, t[151] = Yt, t[152] = Xt, t[153] = Zt, t[154] = Qt, t[155] = en
+        } else Lt = t[141], Rt = t[142], zt = t[143], Bt = t[144], Ht = t[145], Ut = t[146], Wt = t[147], Gt = t[148], Kt = t[149], qt = t[150], Yt = t[151], Xt = t[152], Zt = t[153], Qt = t[154], en = t[155];
+        let tn;
+        t[219] !== Ht || t[220] !== Ut ? (tn = (0, Q.jsx)(`div`, {
+            className: Ht,
+            children: Ut
+        }), t[219] = Ht, t[220] = Ut, t[221] = tn) : tn = t[221];
+        let rn;
+        t[222] !== Wt || t[223] !== Gt || t[224] !== tn ? (rn = (0, Q.jsxs)(`div`, {
+            className: Wt,
+            children: [Gt, tn]
+        }), t[222] = Wt, t[223] = Gt, t[224] = tn, t[225] = rn) : rn = t[225];
+        let an;
+        t[226] !== Kt || t[227] !== qt || t[228] !== Yt || t[229] !== rn ? (an = (0, Q.jsxs)(`header`, {
+            inert: Kt,
+            className: qt,
+            children: [Yt, rn]
+        }), t[226] = Kt, t[227] = qt, t[228] = Yt, t[229] = rn, t[230] = an) : an = t[230];
+        let sn;
+        t[231] !== Lt || t[232] !== an ? (sn = (0, Q.jsx)(Lt, {
+            children: an
+        }), t[231] = Lt, t[232] = an, t[233] = sn) : sn = t[233];
+        let cn;
+        t[234] === Symbol.for(`react.memo_cache_sentinel`) ? (cn = (0, Q.jsx)($n, {
+            page: `chat`
+        }), t[234] = cn) : cn = t[234];
+        let ln;
+        t[235] !== z || t[236] !== F || t[237] !== zt || t[238] !== q?.page ? (ln = F ? (0, Q.jsx)(Fi, {
+            isWorkspace: q?.page.visibility.value === `workspace`,
+            onOpenChange: z,
+            onCloseAutoFocus: Wa,
+            children: zt
+        }) : zt, t[235] = z, t[236] = F, t[237] = zt, t[238] = q?.page, t[239] = ln) : ln = t[239];
+        let un;
+        t[240] !== n || t[241] !== je || t[242] !== kt || t[243] !== we || t[244] !== be || t[245] !== p.search || t[246] !== m || t[247] !== Qe || t[248] !== wt || t[249] !== ie || t[250] !== ke || t[251] !== De || t[252] !== It || t[253] !== q || t[254] !== en || t[255] !== u ? (un = be != null && kt && q && (0, Q.jsx)(Ci, {
+            accountId: n,
+            page: q,
+            saving: ke,
+            setSaving: Ae,
+            draft: be,
+            onDraftChange: xe,
+            photoInputId: ie,
+            usernameEditor: n != null && It ? (0, Q.jsx)(Pr, {
+                pageScope: wt,
+                value: en ?? ``,
+                accountId: n,
+                isSaving: ke,
+                isProfileEditing: !0,
+                presentation: `row`,
+                onSaved: Oe
+            }) : null,
+            fieldTargets: {
+                displayName: we,
+                bio: je
+            },
+            onClose: () => {
+                xe(null), De == null ? requestAnimationFrame(() => Ce.current?.focus()) : (Oe(null), m({
+                    pathname: `/u/${encodeURIComponent(De)}`,
+                    search: p.search
+                }, {
+                    replace: !0,
+                    state: u
+                }))
+            },
+            onChanged: Qe
+        }, `profile-editor`), t[240] = n, t[241] = je, t[242] = kt, t[243] = we, t[244] = be, t[245] = p.search, t[246] = m, t[247] = Qe, t[248] = wt, t[249] = ie, t[250] = ke, t[251] = De, t[252] = It, t[253] = q, t[254] = en, t[255] = u, t[256] = un) : un = t[256];
+        let dn;
+        t[257] === un ? dn = t[258] : (dn = (0, Q.jsx)(st.ContentSidebar, {
+            children: (0, Q.jsx)(N, {
+                initial: !1,
+                children: un
+            })
+        }), t[257] = un, t[258] = dn);
+        let fn;
+        t[259] !== n || t[260] !== F || t[261] !== Ot || t[262] !== Qe || t[263] !== G || t[264] !== Ne || t[265] !== dt || t[266] !== q ? (fn = Ne && Ot && !F && !G && !dt && q && (0, Q.jsx)(Ui, {
+            accountId: n,
+            page: q,
+            onClose: () => Pe(!1),
+            onChanged: Qe
+        }), t[259] = n, t[260] = F, t[261] = Ot, t[262] = Qe, t[263] = G, t[264] = Ne, t[265] = dt, t[266] = q, t[267] = fn) : fn = t[267];
+        let mn;
+        t[268] !== Fe || t[269] !== Re || t[270] !== Bt ? (mn = Fe != null && (0, Q.jsx)(w, {
+            for: Ja,
+            withProps: {
+                file: Fe,
+                saving: Re,
+                setSaving: ze,
+                onCancel: () => Le(null),
+                onSave: e => void Bt(e)
+            },
+            open: !0,
+            disableLightDismiss: Re,
+            onClose: () => Le(null)
+        }), t[268] = Fe, t[269] = Re, t[270] = Bt, t[271] = mn) : mn = t[271];
+        let hn;
+        return t[272] !== Rt || t[273] !== Xt || t[274] !== Zt || t[275] !== Qt || t[276] !== sn || t[277] !== ln || t[278] !== dn || t[279] !== fn || t[280] !== mn ? (hn = (0, Q.jsxs)(Rt, {
+            className: Xt,
+            children: [Zt, Qt, sn, cn, ln, dn, fn, mn]
+        }), t[272] = Rt, t[273] = Xt, t[274] = Zt, t[275] = Qt, t[276] = sn, t[277] = ln, t[278] = dn, t[279] = fn, t[280] = mn, t[281] = hn) : hn = t[281], hn
+    }
+}));
+
+function Qa(e) {
+    return {
+        credits: e.tokens,
+        date: e.start_date
+    }
+}
+
+function $a(e) {
+    let {
+        children: t,
+        label: n,
+        onOpenChange: r
+    } = e;
+    return (0, $.jsx)(Xe, {
+        content: (0, $.jsx)(`span`, {
+            className: `font-normal`,
+            children: n
+        }),
+        hoverDelayMs: 0,
+        onOpenChange: r,
+        children: e => (0, no.cloneElement)(t, {
+            ...e,
+            "aria-label": n
+        })
+    })
+}
+
+function eo() {
+    C.logStructuredEvent(`CodexProfilePageViewed`, {
+        profileOwner: `self`,
+        surface: `web`
+    })
+}
+var to, no, $, ro, io, ao, oo, so, co, lo, uo = e((() => {
+    Ce(), to = Fe(), sr(), D(), Mt(), Rn(), un(), an(), n(), et(), Un(), fi(), Za(), h(), Ge(), Bn(), M(), x(), H(), Nt(), pr(), K(), no = t(De()), we(), $ = ve(), ro = e => {
+        "use forget";
+        let t = (0, to.c)(5),
+            {
+                active: n,
+                children: r,
+                onSelect: i
+            } = e,
+            a = `interactive-button text-sm ${n?`text-token-text-primary`:`text-token-text-tertiary`}`,
+            o;
+        return t[0] !== n || t[1] !== r || t[2] !== i || t[3] !== a ? (o = (0, $.jsx)(`button`, {
+            type: `button`,
+            "aria-pressed": n,
+            className: a,
+            onClick: i,
+            children: r
+        }), t[0] = n, t[1] = r, t[2] = i, t[3] = a, t[4] = o) : o = t[4], o
+    }, io = (e, t) => e.formatMessage({
+        id: `chatgpt.profile.stats.streak.value`,
+        defaultMessage: `{days, plural, one {# day} other {# days}}`
+    }, {
+        days: t ?? 0
+    }), ao = e => {
+        "use forget";
+        let t = (0, to.c)(41),
+            {
+                profileStats: n,
+                todayIso: r
+            } = e,
+            i = Ie(),
+            [a, o] = (0, no.useState)(`daily`),
+            s = n?.stats,
+            c;
+        t[0] === s?.daily_usage_buckets ? c = t[1] : (c = s?.daily_usage_buckets ?? [], t[0] = s?.daily_usage_buckets, t[1] = c);
+        let l;
+        t[2] === c ? l = t[3] : (l = c.map(Qa), t[2] = c, t[3] = l);
+        let u = l,
+            d = s != null && !n?.metadata.stats_error,
+            f;
+        t[4] !== i || t[5] !== s || t[6] !== d ? (f = d ? (0, $.jsxs)(Kt, {
+            children: [(0, $.jsx)(Re, {
+                textSizeClassName: `text-sm`,
+                value: i.formatNumber(s.lifetime_tokens ?? 0, {
+                    notation: `compact`,
+                    maximumFractionDigits: 1
+                }),
+                label: (0, $.jsx)(U, {
+                    id: `chatgpt.profile.stats.lifetime_tokens.label`,
+                    defaultMessage: `Lifetime tokens`
+                })
+            }), (0, $.jsx)(q, {}), (0, $.jsx)(Re, {
+                textSizeClassName: `text-sm`,
+                value: i.formatNumber(s.peak_daily_tokens ?? 0, {
+                    notation: `compact`,
+                    maximumFractionDigits: 1
+                }),
+                label: (0, $.jsx)(U, {
+                    id: `chatgpt.profile.stats.peak_tokens.label`,
+                    defaultMessage: `Peak tokens`
+                })
+            }), (0, $.jsx)(q, {}), (0, $.jsx)(Re, {
+                textSizeClassName: `text-sm`,
+                value: io(i, s.current_streak_days),
+                label: (0, $.jsx)(U, {
+                    id: `chatgpt.profile.stats.current_streak.label`,
+                    defaultMessage: `Current streak`
+                })
+            }), (0, $.jsx)(q, {}), (0, $.jsx)(Re, {
+                textSizeClassName: `text-sm`,
+                value: io(i, s.longest_streak_days),
+                label: (0, $.jsx)(U, {
+                    id: `chatgpt.profile.stats.longest_streak.label`,
+                    defaultMessage: `Longest streak`
+                })
+            })]
+        }) : null, t[4] = i, t[5] = s, t[6] = d, t[7] = f) : f = t[7];
+        let p;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, $.jsx)(U, {
+            id: `chatgpt.profile.usage.title`,
+            defaultMessage: `Token activity`
+        }), t[8] = p) : p = t[8];
+        let m = a === `daily`,
+            h, g;
+        t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (h = () => o(`daily`), g = (0, $.jsx)(U, {
+            id: `chatgpt.profile.usage.view.daily`,
+            defaultMessage: `Daily`
+        }), t[9] = h, t[10] = g) : (h = t[9], g = t[10]);
+        let _;
+        t[11] === m ? _ = t[12] : (_ = (0, $.jsx)(ro, {
+            active: m,
+            onSelect: h,
+            children: g
+        }), t[11] = m, t[12] = _);
+        let v = a === `weekly`,
+            ee, y;
+        t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (ee = () => o(`weekly`), y = (0, $.jsx)(U, {
+            id: `chatgpt.profile.usage.view.weekly`,
+            defaultMessage: `Weekly`
+        }), t[13] = ee, t[14] = y) : (ee = t[13], y = t[14]);
+        let b;
+        t[15] === v ? b = t[16] : (b = (0, $.jsx)(ro, {
+            active: v,
+            onSelect: ee,
+            children: y
+        }), t[15] = v, t[16] = b);
+        let x = a === `cumulative`,
+            S, te;
+        t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (S = () => o(`cumulative`), te = (0, $.jsx)(U, {
+            id: `chatgpt.profile.usage.view.cumulative`,
+            defaultMessage: `Cumulative`
+        }), t[17] = S, t[18] = te) : (S = t[17], te = t[18]);
+        let C;
+        t[19] === x ? C = t[20] : (C = (0, $.jsx)(ro, {
+            active: x,
+            onSelect: S,
+            children: te
+        }), t[19] = x, t[20] = C);
+        let w;
+        t[21] !== b || t[22] !== C || t[23] !== _ ? (w = (0, $.jsxs)($.Fragment, {
+            children: [_, b, C]
+        }), t[21] = b, t[22] = C, t[23] = _, t[24] = w) : w = t[24];
+        let T;
+        t[25] !== a || t[26] !== u || t[27] !== i || t[28] !== d || t[29] !== r ? (T = d ? (0, $.jsx)(Lt, {
+            dailyUsage: u,
+            intl: i,
+            renderTooltip: $a,
+            todayIso: r,
+            view: a
+        }) : (0, $.jsx)(`p`, {
+            className: `text-token-text-secondary text-sm`,
+            role: `status`,
+            children: (0, $.jsx)(U, {
+                id: `chatgpt.profile.usage.unavailable`,
+                defaultMessage: `Token activity is temporarily unavailable.`
+            })
+        }), t[25] = a, t[26] = u, t[27] = i, t[28] = d, t[29] = r, t[30] = T) : T = t[30];
+        let E;
+        t[31] !== w || t[32] !== T ? (E = (0, $.jsx)(Ut, {
+            titleTextSizeClassName: `text-sm`,
+            title: p,
+            controls: w,
+            children: T
+        }), t[31] = w, t[32] = T, t[33] = E) : E = t[33];
+        let D;
+        t[34] !== s || t[35] !== d ? (D = d ? (0, $.jsx)(oi, {
+            stats: s
+        }) : null, t[34] = s, t[35] = d, t[36] = D) : D = t[36];
+        let ne;
+        return t[37] !== E || t[38] !== D || t[39] !== f ? (ne = (0, $.jsxs)($.Fragment, {
+            children: [f, E, D]
+        }), t[37] = E, t[38] = D, t[39] = f, t[40] = ne) : ne = t[40], ne
+    }, oo = () => {
+        "use forget";
+        let e = (0, to.c)(4),
+            t = je();
+        if (t.v2) {
+            let n;
+            return e[0] === t ? n = e[1] : (n = (0, $.jsx)(Ya, {
+                ...t
+            }), e[0] = t, e[1] = n), n
+        }
+        let n;
+        return e[2] === t ? n = e[3] : (n = (0, $.jsx)(so, {
+            loaderData: t
+        }), e[2] = t, e[3] = n), n
+    }, so = e => {
+        "use forget";
+        let t = (0, to.c)(78),
+            {
+                loaderData: n
+            } = e;
+        wt(eo);
+        let r;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = _(), t[0] = r) : r = t[0];
+        let i = r,
+            {
+                accountName: o,
+                profile: s,
+                profileStats: c,
+                todayIso: l,
+                userId: u
+            } = n,
+            f;
+        t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (f = v(), t[1] = f) : f = t[1];
+        let p = f,
+            m;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (m = () => Jt({
+            accountStructure: p?.structure,
+            plan: p?.planType,
+            workspaceName: p?.isWorkspaceAccount() ? a()?.account.name : null
+        }), t[2] = m) : m = t[2];
+        let h = ee(m),
+            g = Ie(),
+            y = Te(),
+            b = v()?.normalizedAccountUserId ?? u,
+            x;
+        t[3] === g ? x = t[4] : (x = g.formatMessage({
+            id: `chatgpt.profile.header.private.label`,
+            defaultMessage: `Private`
+        }), t[3] = g, t[4] = x);
+        let S = x,
+            te, C, w, T, E, D, ne, O, k, A, j, re;
+        if (t[5] !== h || t[6] !== o || t[7] !== b || t[8] !== g || t[9] !== S || t[10] !== s.profile_details.display_name || t[11] !== s.profile_details.profile_picture_url || t[12] !== s.profile_details.username || t[13] !== s.viewer_access.can_edit || t[14] !== y) {
+            w = St({
+                accountName: o,
+                displayName: s.profile_details.display_name,
+                username: s.profile_details.username
+            }), C = st, t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, $.jsx)(st.Navbar, {
+                children: (0, $.jsx)(Fn, {
+                    children: (0, $.jsx)(Ln, {
+                        navHeader: (0, $.jsx)(Kn, {}),
+                        children: (0, $.jsx)(Xn, {
+                            isProjectsEnabled: i
+                        })
+                    })
+                })
+            }), t[27] = E) : E = t[27];
+            let e;
+            t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, $.jsx)(Jn, {}), t[28] = e) : e = t[28];
+            let n;
+            t[29] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, $.jsxs)(`div`, {
+                className: `flex min-w-0 items-center gap-2`,
+                children: [e, (0, $.jsx)(`h1`, {
+                    className: `truncate text-sm font-normal`,
+                    children: (0, $.jsx)(U, {
+                        id: `chatgpt.profile.header.title`,
+                        defaultMessage: `Profile`
+                    })
+                })]
+            }), t[29] = n) : n = t[29];
+            let r;
+            t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, $.jsx)(U, {
+                id: `chatgpt.profile.header.private.tooltip`,
+                defaultMessage: `Your profile is only visible to you`
+            }), t[30] = r) : r = t[30];
+            let a;
+            t[31] === S ? a = t[32] : (a = (0, $.jsx)(Xe, {
+                content: r,
+                children: e => (0, $.jsxs)(`button`, {
+                    ...e,
+                    type: `button`,
+                    "aria-label": S,
+                    className: `interactive-button text-token-text-tertiary flex cursor-default items-center gap-1.5 rounded-lg px-2 py-1 text-sm`,
+                    children: [(0, $.jsx)($t, {
+                        "aria-hidden": `true`,
+                        className: `icon-sm`
+                    }), S]
+                })
+            }), t[31] = S, t[32] = a);
+            let c = !s.viewer_access.can_edit || b == null,
+                l;
+            t[33] === g ? l = t[34] : (l = g.formatMessage({
+                id: `chatgpt.profile.header.edit.aria_label`,
+                defaultMessage: `Edit profile`
+            }), t[33] = g, t[34] = l);
+            let u;
+            t[35] !== b || t[36] !== y ? (u = () => {
+                b != null && ie(Et, {
+                    accountUserId: b,
+                    onClose: () => {
+                        y.revalidate()
+                    }
+                })
+            }, t[35] = b, t[36] = y, t[37] = u) : u = t[37];
+            let f, p;
+            t[38] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, $.jsx)(on, {
+                "aria-hidden": `true`,
+                className: `icon-sm`
+            }), p = (0, $.jsx)(U, {
+                id: `chatgpt.profile.header.edit.label`,
+                defaultMessage: `Edit`
+            }), t[38] = f, t[39] = p) : (f = t[38], p = t[39]);
+            let m;
+            t[40] !== c || t[41] !== l || t[42] !== u ? (m = (0, $.jsxs)(d, {
+                color: `ghost`,
+                size: `small`,
+                className: `text-sm`,
+                contentWrapperClassName: `gap-1.5`,
+                disabled: c,
+                "aria-label": l,
+                onClick: u,
+                children: [f, p]
+            }), t[40] = c, t[41] = l, t[42] = u, t[43] = m) : m = t[43], t[44] !== a || t[45] !== m ? (D = (0, $.jsx)(st.Header, {
+                children: (0, $.jsxs)(`header`, {
+                    className: `h-header-height bg-token-main-surface-primary sticky top-0 z-10 flex items-center justify-between gap-2 px-3 py-2`,
+                    children: [n, (0, $.jsxs)(`div`, {
+                        className: `flex shrink-0 items-center gap-2`,
+                        children: [a, m]
+                    })]
+                })
+            }), t[44] = a, t[45] = m, t[46] = D) : D = t[46], t[47] === Symbol.for(`react.memo_cache_sentinel`) ? (ne = (0, $.jsx)($n, {
+                page: `chat`
+            }), t[47] = ne) : ne = t[47], T = `bg-token-main-surface-primary text-token-text-primary flex min-h-full w-full justify-center px-5 py-16 sm:px-8`, re = `flex w-full max-w-[720px] flex-col gap-8`, j = `flex flex-col items-center text-center`, te = at, O = `text-sm`, t[48] === h ? k = t[49] : (k = h == null ? null : (0, $.jsx)(`span`, {
+                className: `border-token-border-light text-token-text-tertiary inline-flex h-6 items-center rounded-lg border px-[5px] text-sm leading-5`,
+                children: h
+            }), t[48] = h, t[49] = k), A = s.profile_details.profile_picture_url ? (0, $.jsx)(`img`, {
+                alt: g.formatMessage({
+                    id: `chatgpt.profile.identity.avatar.alt`,
+                    defaultMessage: `Profile picture`
+                }),
+                className: `size-20 rounded-full object-cover`,
+                src: s.profile_details.profile_picture_url
+            }) : (0, $.jsx)(`span`, {
+                "aria-hidden": `true`,
+                className: `bg-token-bg-tertiary text-token-text-primary flex size-20 items-center justify-center rounded-full text-2xl`,
+                children: jt(w)
+            }), t[5] = h, t[6] = o, t[7] = b, t[8] = g, t[9] = S, t[10] = s.profile_details.display_name, t[11] = s.profile_details.profile_picture_url, t[12] = s.profile_details.username, t[13] = s.viewer_access.can_edit, t[14] = y, t[15] = te, t[16] = C, t[17] = w, t[18] = T, t[19] = E, t[20] = D, t[21] = ne, t[22] = O, t[23] = k, t[24] = A, t[25] = j, t[26] = re
+        } else te = t[15], C = t[16], w = t[17], T = t[18], E = t[19], D = t[20], ne = t[21], O = t[22], k = t[23], A = t[24], j = t[25], re = t[26];
+        let M = s.profile_details.username ? `@${s.profile_details.username}` : null,
+            N;
+        t[50] !== te || t[51] !== w || t[52] !== M || t[53] !== O || t[54] !== k || t[55] !== A ? (N = (0, $.jsx)(te, {
+            usernameTextSizeClassName: O,
+            account: k,
+            avatar: A,
+            displayName: w,
+            username: M
+        }), t[50] = te, t[51] = w, t[52] = M, t[53] = O, t[54] = k, t[55] = A, t[56] = N) : N = t[56];
+        let P;
+        t[57] !== N || t[58] !== j ? (P = (0, $.jsx)(`section`, {
+            className: j,
+            children: N
+        }), t[57] = N, t[58] = j, t[59] = P) : P = t[59];
+        let F;
+        t[60] === l ? F = t[61] : (F = e => (0, $.jsx)(ao, {
+            profileStats: e,
+            todayIso: l
+        }), t[60] = l, t[61] = F);
+        let I;
+        t[62] !== c || t[63] !== F ? (I = (0, $.jsx)(no.Suspense, {
+            fallback: null,
+            children: (0, $.jsx)(Pe, {
+                resolve: c,
+                children: F
+            })
+        }), t[62] = c, t[63] = F, t[64] = I) : I = t[64];
+        let L;
+        t[65] !== P || t[66] !== I || t[67] !== re ? (L = (0, $.jsxs)(`div`, {
+            className: re,
+            children: [P, I]
+        }), t[65] = P, t[66] = I, t[67] = re, t[68] = L) : L = t[68];
+        let R;
+        t[69] !== T || t[70] !== L ? (R = (0, $.jsx)(`div`, {
+            className: T,
+            children: L
+        }), t[69] = T, t[70] = L, t[71] = R) : R = t[71];
+        let z;
+        return t[72] !== C || t[73] !== E || t[74] !== D || t[75] !== ne || t[76] !== R ? (z = (0, $.jsxs)(C, {
+            children: [E, D, ne, R]
+        }), t[72] = C, t[73] = E, t[74] = D, t[75] = ne, t[76] = R, t[77] = z) : z = t[77], z
+    }, co = ye(oo), lo = Ee(function() {
+        "use forget";
+        let e = (0, to.c)(1),
+            t = Le();
+        if (ke(t) && t.status === 404) {
+            let t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(mr, {}), e[0] = t) : t = e[0], t
+        }
+        throw t
+    })
+}));
+export {
+    uo as n, co as r, lo as t
+};
 //# sourceMappingURL=1900eab6-i8tgkwxmhr5gbptf.js.map

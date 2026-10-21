@@ -1,2 +1,56 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{f5 as t,f8 as n}from"./4813494d-ed29bs6yiwucn7st.js";import{$Fn as r,nIn as i}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{n as a,t as o}from"./cd7c6193-lflqverpdvrcclwq.js";import{i as s,n as c}from"./a81eda00-k7iwfu3y7mfi86il.js";import{o as l,t as u}from"./4cf35c7a-drgejtr1y0lhb3xn.js";function d({conversation:e,sensitiveValuesHidden:n,query:r,category:a=`ask_sidebar`,extraParams:c,clientParams:l}){if(!e||!r)return;let d=s({type:`entity`,messageId:`mattress-ledger-widget`,contentReferenceStartIndex:0,query:r,category:a,extraParams:c,clientParams:l,widgetStateOverride:a===`ledger_detail_sidebar`?{[u]:n}:void 0},n);t(()=>{o.set(e,null),i(e,d)})}var f=e((()=>{c(),a(),l(),r(),n()}));export{d as n,f as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    f5 as t,
+    f8 as n
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    $Fn as r,
+    nIn as i
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    n as a,
+    t as o
+} from "./cd7c6193-lflqverpdvrcclwq.js";
+import {
+    i as s,
+    n as c
+} from "./a81eda00-k7iwfu3y7mfi86il.js";
+import {
+    o as l,
+    t as u
+} from "./4cf35c7a-drgejtr1y0lhb3xn.js";
+
+function d({
+    conversation: e,
+    sensitiveValuesHidden: n,
+    query: r,
+    category: a = `ask_sidebar`,
+    extraParams: c,
+    clientParams: l
+}) {
+    if (!e || !r) return;
+    let d = s({
+        type: `entity`,
+        messageId: `mattress-ledger-widget`,
+        contentReferenceStartIndex: 0,
+        query: r,
+        category: a,
+        extraParams: c,
+        clientParams: l,
+        widgetStateOverride: a === `ledger_detail_sidebar` ? {
+            [u]: n
+        } : void 0
+    }, n);
+    t(() => {
+        o.set(e, null), i(e, d)
+    })
+}
+var f = e((() => {
+    c(), a(), l(), r(), n()
+}));
+export {
+    d as n, f as t
+};
 //# sourceMappingURL=22f0e71d-nhb2ciynj6k9waki.js.map

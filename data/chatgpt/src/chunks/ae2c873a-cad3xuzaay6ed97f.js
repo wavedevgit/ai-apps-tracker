@@ -1,2 +1,73 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{J5 as t,JT as n,q5 as r,qT as i}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as a,Pn as o,Tn as s,Vn as c,zn as l}from"./2340486e-komxp8tzs51ny4jj.js";import{Di as u,Ei as d,_y as f,gy as p}from"./30901919-jory365vq6ym5crx.js";function m(e){"use forget";let t=(0,h.c)(15),{isCodeRunning:n,onClick:s,disabled:c,className:l}=e,d=a(),p=n?f:u,m=n?`primary`:`ghost`,_;t[0]===l?_=t[1]:(_=r(`border-token-border-default ms-2 border font-sans`,l),t[0]=l,t[1]=_);let v;t[2]!==d||t[3]!==n?(v=n?d.formatMessage({id:`CodeBlockRunButton.stopCodeLabel`,defaultMessage:`Stop code`}):d.formatMessage({id:`CodeBlockRunButton.runCodeLabel`,defaultMessage:`Run code`}),t[2]=d,t[3]=n,t[4]=v):v=t[4];let y;t[5]===n?y=t[6]:(y=n?(0,g.jsx)(o,{id:`CodeBlockRunButton.stopCodeText`,defaultMessage:`Stop`}):(0,g.jsx)(o,{id:`CodeBlockRunButton.runCodeText`,defaultMessage:`Run`}),t[5]=n,t[6]=y);let b;return t[7]!==c||t[8]!==s||t[9]!==p||t[10]!==m||t[11]!==_||t[12]!==v||t[13]!==y?(b=(0,g.jsx)(i,{icon:p,color:m,size:`medium`,className:_,type:`button`,onClick:s,disabled:c,"aria-label":v,children:y}),t[7]=c,t[8]=s,t[9]=p,t[10]=m,t[11]=_,t[12]=v,t[13]=y,t[14]=b):b=t[14],b}var h,g,_=e((()=>{h=s(),n(),d(),p(),t(),l(),g=c()}));export{_ as n,m as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    J5 as t,
+    JT as n,
+    q5 as r,
+    qT as i
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as a,
+    Pn as o,
+    Tn as s,
+    Vn as c,
+    zn as l
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Di as u,
+    Ei as d,
+    _y as f,
+    gy as p
+} from "./30901919-jory365vq6ym5crx.js";
+
+function m(e) {
+    "use forget";
+    let t = (0, h.c)(15),
+        {
+            isCodeRunning: n,
+            onClick: s,
+            disabled: c,
+            className: l
+        } = e,
+        d = a(),
+        p = n ? f : u,
+        m = n ? `primary` : `ghost`,
+        _;
+    t[0] === l ? _ = t[1] : (_ = r(`border-token-border-default ms-2 border font-sans`, l), t[0] = l, t[1] = _);
+    let v;
+    t[2] !== d || t[3] !== n ? (v = n ? d.formatMessage({
+        id: `CodeBlockRunButton.stopCodeLabel`,
+        defaultMessage: `Stop code`
+    }) : d.formatMessage({
+        id: `CodeBlockRunButton.runCodeLabel`,
+        defaultMessage: `Run code`
+    }), t[2] = d, t[3] = n, t[4] = v) : v = t[4];
+    let y;
+    t[5] === n ? y = t[6] : (y = n ? (0, g.jsx)(o, {
+        id: `CodeBlockRunButton.stopCodeText`,
+        defaultMessage: `Stop`
+    }) : (0, g.jsx)(o, {
+        id: `CodeBlockRunButton.runCodeText`,
+        defaultMessage: `Run`
+    }), t[5] = n, t[6] = y);
+    let b;
+    return t[7] !== c || t[8] !== s || t[9] !== p || t[10] !== m || t[11] !== _ || t[12] !== v || t[13] !== y ? (b = (0, g.jsx)(i, {
+        icon: p,
+        color: m,
+        size: `medium`,
+        className: _,
+        type: `button`,
+        onClick: s,
+        disabled: c,
+        "aria-label": v,
+        children: y
+    }), t[7] = c, t[8] = s, t[9] = p, t[10] = m, t[11] = _, t[12] = v, t[13] = y, t[14] = b) : b = t[14], b
+}
+var h, g, _ = e((() => {
+    h = s(), n(), d(), p(), t(), l(), g = c()
+}));
+export {
+    _ as n, m as t
+};
 //# sourceMappingURL=ae2c873a-cad3xuzaay6ed97f.js.map

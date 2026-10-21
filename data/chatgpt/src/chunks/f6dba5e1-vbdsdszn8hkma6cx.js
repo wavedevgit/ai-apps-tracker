@@ -1,2 +1,53 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{CFn as t,Q9t as n,_Dt as r,cLn as i,cOt as a,sOt as o,vFn as s,xDt as c}from"./conversation-small-nmt18uiom3b14vca.js";import{n as l,t as u}from"./6bfd3273-n5acpuvzlqrl3xfn.js";function d({artifact:e,fileName:t,mimeType:n,mountedLibraryFileId:a}){let s=o({fileName:t,mimeType:n})===`image`,c=a!=null&&n!=null&&!n.startsWith(`image/`);return s&&!i(a)&&(c||!l())||!f(e,a)?null:{providerPreview:r({fileName:t,mimeType:n,mountedLibraryFileId:a,sourceMimeType:e.mimeType}),supportsPersistentHostTransfer:!0}}function f(e,n){return t({isWritingBlock:e.classifiers.library_artifact_type===`writing_block`,mountedLibraryFileId:n})}var p=e((()=>{u(),s(),a(),c(),n()}));export{p as n,f as r,d as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    CFn as t,
+    Q9t as n,
+    _Dt as r,
+    cLn as i,
+    cOt as a,
+    sOt as o,
+    vFn as s,
+    xDt as c
+} from "./conversation-small-nmt18uiom3b14vca.js";
+import {
+    n as l,
+    t as u
+} from "./6bfd3273-n5acpuvzlqrl3xfn.js";
+
+function d({
+    artifact: e,
+    fileName: t,
+    mimeType: n,
+    mountedLibraryFileId: a
+}) {
+    let s = o({
+            fileName: t,
+            mimeType: n
+        }) === `image`,
+        c = a != null && n != null && !n.startsWith(`image/`);
+    return s && !i(a) && (c || !l()) || !f(e, a) ? null : {
+        providerPreview: r({
+            fileName: t,
+            mimeType: n,
+            mountedLibraryFileId: a,
+            sourceMimeType: e.mimeType
+        }),
+        supportsPersistentHostTransfer: !0
+    }
+}
+
+function f(e, n) {
+    return t({
+        isWritingBlock: e.classifiers.library_artifact_type === `writing_block`,
+        mountedLibraryFileId: n
+    })
+}
+var p = e((() => {
+    u(), s(), a(), c(), n()
+}));
+export {
+    p as n, f as r, d as t
+};
 //# sourceMappingURL=f6dba5e1-vbdsdszn8hkma6cx.js.map

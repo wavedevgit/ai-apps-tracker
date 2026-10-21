@@ -1,2 +1,685 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Al as n,Dl as r,J5 as i,JT as a,Ktt as o,L7 as s,M7 as c,Ol as l,SN as u,Sj as d,Utt as f,Wtt as ee,aC as te,aat as p,cj as ne,dW as m,dnt as h,gj as g,lat as _,lnt as v,mj as y,mnt as b,oC as x,q5 as S,qT as C,sj as re,uW as w,yN as ie}from"./4813494d-qsuygr73qjc6rh65.js";import{$ as T,Bn as ae,Hn as oe,Rn as se,Tn as E,Vn as D,jt as O,p as k,s as ce,zn as le}from"./2340486e-komxp8tzs51ny4jj.js";import{$8t as ue,Lrt as de,Q8t as fe,Rrt as pe,X8t as me,e5t as he,n5t as ge}from"./conversation-small-cawdu7il3ha6y70c.js";import{By as _e,Jy as ve,Ky as ye,Rl as be,Vy as A,Yy as j,qy as M,zl as N}from"./30901919-jory365vq6ym5crx.js";import{KC as P,Sw as xe,mC as Se,pC as F}from"./c2675c8c-nxl2ic2ofk2vw70s.js";import{a as Ce}from"./9ac7a75a-o42ejieyzry8c3s2.js";import{a as we,i as I,n as Te,r as L,t as Ee}from"./9dade4c6-ba3nmy7no2d9k9my.js";import{o as R}from"./e19f3910-gqf6e2pgn5z6k0mv.js";async function z({email:e,routePath:t,templateId:n}){let i=r(null,null,null,await l(U));return await c.safePost(`/codex/download-email`,{authOption:p.Anonymous,additionalHeaders:i,requestBody:{email:e,route_path:t,template_id:n}})}function De(e){"use forget";let t=(0,B.c)(26),{templateId:n,emailSendData:r}=e,i=(0,V.useRef)(null),a=(0,V.useRef)(!1),o=ae(),s=O(),[c,l]=(0,V.useState)(``),[u,d]=(0,V.useState)(),[f,ee]=(0,V.useState)(!1),te;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(te={key:`codex-mobile-start-legacy`,allowUnauthenticatedTracking:!0},t[0]=te):te=t[0];let{trackSelectedPixels:p}=Se(te),ne;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(ne={key:xe.CODEX_MOBILE_START,allowUnauthenticatedTracking:!0},t[1]=ne):ne=t[1];let{trackSelectedPixels:m}=Se(ne),h;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(h=()=>{ee(!0),d(void 0),l(``)},t[2]=h):h=t[2];let g;t[3]===o?g=t[4]:(g=()=>{ee(!1),d(o.formatMessage({id:`keVamY`,defaultMessage:`Failed to send email.`}))},t[3]=o,t[4]=g);let _;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(_=()=>{a.current=!1},t[5]=_):_=t[5];let v;t[6]===g?v=t[7]:(v={mutationFn:z,onSuccess:h,onError:g,onSettled:_},t[6]=g,t[7]=v);let y=k(v),b;t[8]!==r?.successText||t[9]!==f||t[10]!==o?(b=f&&(0,H.jsxs)(H.Fragment,{children:[(0,H.jsx)(w,{fontSize:`small`}),(0,H.jsx)(`div`,{className:`text-mkt-h6 mt-2 font-semibold`,children:o.formatMessage({id:`codex.downloadEmail.success.title`,defaultMessage:`Check your inbox`})}),(0,H.jsx)(`div`,{className:`text-token-text-primary/60 mt-3 px-4`,children:r?.successText})]}),t[8]=r?.successText,t[9]=f,t[10]=o,t[11]=b):b=t[11];let x;t[12]!==c||t[13]!==r||t[14]!==u||t[15]!==f||t[16]!==o||t[17]!==s||t[18]!==y||t[19]!==n||t[20]!==m||t[21]!==p?(x=!f&&(0,H.jsxs)(`form`,{className:`flex w-full flex-col items-center gap-4`,noValidate:!0,onSubmit:e=>{if(e.preventDefault(),a.current||y.isPending)return;let t=i.current;if(t){if(!t.checkValidity()){d(o.formatMessage({id:`s1wH8Z`,defaultMessage:`Enter a valid email address.`}));return}d(void 0),a.current=!0,n!==`chatgpt-dots-download-transactional`&&(p(),m()),y.mutate({email:c.trim(),routePath:s.pathname,templateId:n})}},children:[(0,H.jsxs)(`div`,{className:`flex w-full max-w-[275px] flex-col gap-2`,children:[r?.title&&(0,H.jsx)(`div`,{className:`text-token-text-primary text-mkt-h5 font-semibold`,children:r.title}),(r?.subtitle??r?.heading)&&(0,H.jsx)(`div`,{className:`text-token-text-secondary text-body-small`,children:r?.subtitle??r?.heading})]}),(0,H.jsxs)(`div`,{className:`flex w-full flex-col gap-2`,children:[(0,H.jsx)(de,{ariaLabel:o.formatMessage({id:`Rr9CE5`,defaultMessage:`Email address`}),autoComplete:`email`,className:`bg-token-bg-elevated-primary box-border flex h-11.5 flex-col justify-center rounded-full! px-6! py-2.5!`,error:u,inputClassName:`placeholder:text-body-small placeholder:text-token-text-tertiary bg-transparent!`,name:`codex-download-email`,onChange:e=>{l(e.target.value),u&&d(void 0),f&&ee(!1)},placeholder:o.formatMessage({id:`So08Qm`,defaultMessage:`Email address`}),ref:i,required:!0,type:`email`,value:c}),(0,H.jsx)(C,{fullWidth:!0,loading:y.isPending,size:`large`,type:`submit`,children:o.formatMessage({id:`codex.downloadEmail.submit.label`,defaultMessage:`Email me the link`})})]})]}),t[12]=c,t[13]=r,t[14]=u,t[15]=f,t[16]=o,t[17]=s,t[18]=y,t[19]=n,t[20]=m,t[21]=p,t[22]=x):x=t[22];let S;return t[23]!==b||t[24]!==x?(S=(0,H.jsxs)(`div`,{className:`border-token-border-light bg-token-bg-elevated-primary mt-10 box-border flex w-full flex-col items-center rounded-[36px] border px-4 pt-6 pb-4 text-center shadow-[0_4px_16px_0_rgba(0,0,0,0.05)]`,children:[b,x]}),t[23]=b,t[24]=x,t[25]=S):S=t[25],S}var B,V,H,U,Oe=e((()=>{B=E(),F(),P(),a(),m(),pe(),_(),s(),n(),ce(),V=t(oe()),le(),T(),H=D(),U=`codex_download_email`}));function ke(e,t,n){return e===`purple`?`purple`:e===`primary`?`primary`:e===`secondary`?t?`primary`:`secondary`:e===`link`?`ghost`:t?n??`secondary`:`primary`}function W(e){"use forget";let t=(0,ze.c)(106),{data:n,platformOverride:r,onLinkClick:i,className:a,buttonWidthClassName:o,defaultDarkModeButtonColor:s,marketingDownloadSource:c}=e,l=o===void 0?`w-56`:o,p=ae(),m=u(),[h,_]=(0,q.useState)(null),[v,b]=(0,q.useState)(null),[x,re]=(0,q.useState)(r??null),[w,ie]=(0,q.useState)(null),[T,oe]=(0,q.useState)(null),se;t[0]===n?.mac?se=t[1]:(se=n?.mac.some(Le)??!1,t[0]=n?.mac,t[1]=se);let E=se,D;t[2]!==n?.mac||t[3]!==c||t[4]!==x?(D=x===`mac`&&c!=null&&(n?.mac.some(Fe)??!1),t[2]=n?.mac,t[3]=c,t[4]=x,t[5]=D):D=t[5];let O=D,k=O&&T===`micro_installer`,ce;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(ce={key:`chatgpt-codex-download`,allowUnauthenticatedTracking:!0},t[6]=ce):ce=t[6];let{trackSelectedPixels:le}=Se(ce),de;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(de={key:xe.CODEX_DOWNLOAD,allowUnauthenticatedTracking:!0},t[7]=de):de=t[7];let{trackSelectedPixels:pe}=Se(de),ge;t[8]!==pe||t[9]!==le?(ge=()=>{pe(),le()},t[8]=pe,t[9]=le,t[10]=ge):ge=t[10];let A=ge,j,M;t[11]===r?(j=t[12],M=t[13]):(j=()=>{if(r){re(r);return}re(Be())},M=[r],t[11]=r,t[12]=j,t[13]=M),(0,q.useEffect)(j,M);let N,P;t[14]!==E||t[15]!==O||t[16]!==x?(P=()=>{let e=!1;return(async()=>{if(x!==`mac`||!E)return{mode:null,architecture:null};let e=O?Te():`full_app`;return{mode:e,architecture:e===`micro_installer`?null:await ee()}})().then(t=>{let{mode:n,architecture:r}=t;e||(oe(n),ie(r))}),()=>{e=!0}},N=[x,E,O],t[14]=E,t[15]=O,t[16]=x,t[17]=N,t[18]=P):(N=t[17],P=t[18]),(0,q.useEffect)(P,N);let F,L;t[19]===v?(F=t[20],L=t[21]):(F=()=>{if(!v)return;let e=setTimeout(()=>{b(null)},2e3);return()=>clearTimeout(e)},L=[v],t[19]=v,t[20]=F,t[21]=L),(0,q.useEffect)(F,L);let R;t[22]!==n||t[23]!==x?(R=x==null?[]:We(n,x),t[22]=n,t[23]=x,t[24]=R):R=t[24];let z=R,B;t[25]!==i||t[26]!==A?(B=(e,t,n)=>{i?.(e),A(),te(n).then(()=>b(t)).catch(Pe)},t[25]=i,t[26]=A,t[27]=B):B=t[27];let V=B,H;t[28]===p?H=t[29]:(H=e=>typeof e==`string`?e:p.formatMessage(e),t[28]=p,t[29]=H);let U=H,Oe;t[30]!==s||t[31]!==m?(Oe=e=>ke(e,m,s),t[30]=s,t[31]=m,t[32]=Oe):Oe=t[32];let W=Oe,Ne;t[33]!==T||t[34]!==c||t[35]!==A?(Ne=(e,t)=>{let n=c?we(e,c,T??`full_app`,t):e;ne({downloadUrl:n,surface:`codex_app_announcement`}),window.location.assign(n),window.setTimeout(A,Ue)},t[33]=T,t[34]=c,t[35]=A,t[36]=Ne):Ne=t[36];let G=Ne,Ie;t[37]!==G||t[38]!==T||t[39]!==O||t[40]!==i||t[41]!==x||t[42]!==A||t[43]!==k?(Ie=async e=>{if(!Ve(e.href)&&!(O&&I(e.href)&&T==null)&&(i?.(e),!(typeof window>`u`))){if(k&&I(e.href)){G(e.href,e.analyticsAction);return}if(x!==`desktop`&&d(e.href)){let t=await Ce();if(t==null)return;G(t,e.analyticsAction);return}if(A(),He(e.href)){window.open(e.href,`_blank`,`noopener,noreferrer`);return}window.location.assign(e.href)}},t[37]=G,t[38]=T,t[39]=O,t[40]=i,t[41]=x,t[42]=A,t[43]=k,t[44]=Ie):Ie=t[44];let K=Ie,Re;t[45]!==G||t[46]!==l||t[47]!==p||t[48]!==i||t[49]!==W?(Re=(e,t,n)=>{let r=[{label:X.downloadAppleSilicon,url:y,color:W(n)},{label:X.downloadIntelMac,url:g,color:W(`secondary`)}];return(0,J.jsx)(`div`,{className:S(`flex gap-3`,{"w-full flex-col":t,"flex-row flex-wrap items-center justify-center":!t}),children:r.map(n=>(0,J.jsx)(C,{type:`button`,size:`large`,color:n.color,className:S(t?`w-full`:l),"data-analytics-action":e.analyticsAction,onClick:()=>{i?.(e),!(typeof window>`u`)&&G(n.url,e.analyticsAction)},children:p.formatMessage(n.label)},n.url))})},t[45]=G,t[46]=l,t[47]=p,t[48]=i,t[49]=W,t[50]=Re):Re=t[50];let Y=Re,Z;t[51]!==l||t[52]!==v||t[53]!==V||t[54]!==W||t[55]!==U?(Z=(e,t,n,r,i)=>{let a=v===n?ve:ye,o=U(e.label);return(0,J.jsx)(C,{type:`button`,size:`large`,color:W(r),className:S(`[container-type:inline-size] font-mono text-[clamp(10px,1.8vw,14px)]`,{"w-full":t},!t&&l),"data-analytics-action":e.analyticsAction,onClick:()=>V(e,n,e.copyValue??``),children:(0,J.jsxs)(`span`,{className:S(`flex w-full items-center gap-[calc(0.3em+4px)]`,{"justify-start":i,"justify-center":!i}),children:[(0,J.jsx)(`span`,{className:`text-[clamp(10px,3.4cqw,14px)] whitespace-nowrap`,children:o}),(0,J.jsx)(a,{className:`icon-sm`})]})})},t[51]=l,t[52]=v,t[53]=V,t[54]=W,t[55]=U,t[56]=Z):Z=t[56];let Ge=Z,Ke;t[57]!==l||t[58]!==W||t[59]!==U?(Ke=(e,t,n)=>{let r=U(e.label);return(0,J.jsx)(C,{type:`button`,size:`large`,disabled:!0,color:W(n),className:S(t?`w-full`:l),children:r})},t[57]=l,t[58]=W,t[59]=U,t[60]=Ke):Ke=t[60];let qe=Ke,Je;t[61]!==w||t[62]!==l||t[63]!==K||t[64]!==p||t[65]!==c||t[66]!==x||t[67]!==Ge||t[68]!==Y||t[69]!==qe||t[70]!==W||t[71]!==U||t[72]!==k?(Je=(e,t)=>{let n=t.fullWidth??!1,r=!Ve(e.href),i=t.ctaStyle,a=t.ctaStyle===`link`,o=k&&!e.copyValue&&I(e.href),s=o?p.formatMessage(Ee.downloadMac):U(e.label);if(e.copyValue){let t=`${s}-${e.copyValue}`;return Ge(e,n,t,i,a)}if(!r)return x===`mobile`&&c===`contentful_ctas`?(0,J.jsx)(`p`,{className:`text-token-text-secondary text-center text-sm leading-relaxed`,children:s}):qe(e,n,i);if(x===`mac`&&d(e.href)&&!o){if(w==null)return qe({...e,label:X.loading},n,i);if(w===f.UNKNOWN)return Y(e,n,i)}return(0,J.jsx)(C,{type:`button`,size:`large`,color:W(i),className:S(n?`w-full`:l),"data-analytics-action":e.analyticsAction,onClick:()=>K(e),children:s})},t[61]=w,t[62]=l,t[63]=K,t[64]=p,t[65]=c,t[66]=x,t[67]=Ge,t[68]=Y,t[69]=qe,t[70]=W,t[71]=U,t[72]=k,t[73]=Je):Je=t[73];let Ye=Je,Xe;t[74]!==l||t[75]!==v||t[76]!==V||t[77]!==K||t[78]!==p||t[79]!==h||t[80]!==W||t[81]!==U||t[82]!==k?(Xe=(e,t,n)=>{let r=t.fullWidth??!1,i=t.dropdownCtaLabel??e[0]?.label,a=i?U(i):``,o=h===n,s=W(t.ctaStyle);return i?(0,J.jsxs)(ue,{open:o,onOpenChange:e=>{_(t=>e?n:t===n?null:t)},children:[(0,J.jsx)(he,{asChild:!0,children:(0,J.jsx)(C,{type:`button`,size:`large`,color:s,className:S(r?`w-full`:l),children:(0,J.jsxs)(`span`,{className:`flex w-full items-center justify-center gap-2`,children:[(0,J.jsx)(`span`,{className:`truncate`,children:a}),o?(0,J.jsx)(be,{className:`icon-sm`}):(0,J.jsx)(_e,{className:`icon-sm`})]})})}),(0,J.jsx)(fe,{children:(0,J.jsx)(me,{sideOffset:8,align:`start`,className:`z-50 w-[var(--radix-popover-trigger-width)] min-w-[var(--radix-popover-trigger-width)]`,children:(0,J.jsx)(`div`,{className:`border-token-border-light bg-token-bg-primary text-token-text-primary w-full rounded-lg border p-1 shadow-lg`,children:(0,J.jsx)(`ul`,{className:`flex flex-col`,children:e.map((e,t)=>{let n=!!e.copyValue,r=Ve(e.href)&&!n,i=k&&!n&&I(e.href)?p.formatMessage(Ee.downloadMac):U(e.label),a=`${i}-${e.copyValue??``}`;return r?(0,J.jsx)(`li`,{children:(0,J.jsx)(`span`,{className:`text-token-text-tertiary block rounded-md px-3 py-2 text-sm`,children:i})},`${i}-${t}`):(0,J.jsx)(`li`,{children:(0,J.jsxs)(`button`,{type:`button`,className:`hover:bg-token-bg-tertiary focus-visible:bg-token-bg-tertiary flex w-full items-center justify-between rounded-md px-3 py-2 text-start text-sm`,"data-analytics-action":e.analyticsAction,onClick:()=>{n?V(e,a,e.copyValue??``):K(e),_(null)},children:[(0,J.jsx)(`span`,{children:i}),n?(0,J.jsx)(`span`,{className:`text-token-text-tertiary`,children:v===a?p.formatMessage(X.copied):p.formatMessage(X.copy)}):null]})},`${i}-${t}`)})})})})})]}):null},t[74]=l,t[75]=v,t[76]=V,t[77]=K,t[78]=p,t[79]=h,t[80]=W,t[81]=U,t[82]=k,t[83]=Xe):Xe=t[83];let Ze=Xe,Qe;t[84]!==Ze||t[85]!==Ye||t[86]!==k?(Qe=(e,t,n)=>{let r=!1,i=(e.links??[]).filter(e=>!k||e.copyValue||!I(e.href)?!0:r?!1:(r=!0,!0));return i.length?i.length>1?Ze(i,e,`${t}-${n}`):Ye(i[0],e):null},t[84]=Ze,t[85]=Ye,t[86]=k,t[87]=Qe):Qe=t[87];let $e=Qe;if(x!=null&&!z.length)return null;let Q,$;if(t[88]!==l||t[89]!==a||t[90]!==p||t[91]!==m||t[92]!==x||t[93]!==z||t[94]!==$e){let e=z.some(Me);t[97]!==l||t[98]!==a||t[99]!==p||t[100]!==m||t[101]!==x?(Q=x==null?(0,J.jsx)(`div`,{className:S(`flex flex-col gap-3`,a),children:(0,J.jsx)(`div`,{className:`relative z-10 flex flex-row flex-wrap items-center justify-center gap-3`,children:(0,J.jsx)(C,{type:`button`,size:`large`,disabled:!0,loading:!0,color:ke(`primary`,m),className:S(`min-w-40`,l),children:p.formatMessage(X.loading)})})}):null,t[97]=l,t[98]=a,t[99]=p,t[100]=m,t[101]=x,t[102]=Q):Q=t[102],$=x==null?null:(0,J.jsx)(`div`,{className:S(`flex flex-col gap-3`,e&&`w-full flex-1`,a),children:z.map((e,t)=>{let n=e.some(je),r=e.find(Ae)?.alignmentCollapsed;return(0,J.jsx)(`div`,{className:S(`relative z-10 flex gap-3`,{"w-full flex-col items-stretch":n,"flex-row flex-wrap items-center justify-center":!n,"justify-start":r===`start`&&!n,"justify-center":r===`center`&&!n,"justify-end":r===`end`&&!n}),children:e.map((e,r)=>{if(e.emailSendType)return(0,J.jsx)(De,{templateId:e.emailSendType,emailSendData:e.emailSendData},`cta-${t}-${r}`);let i=$e(e,t,r);return i?(0,J.jsx)(`div`,{className:S({"w-full":n}),children:i},`cta-${t}-${r}`):null})},`cta-row-${t}`)})}),t[88]=l,t[89]=a,t[90]=p,t[91]=m,t[92]=x,t[93]=z,t[94]=$e,t[95]=Q,t[96]=$}else Q=t[95],$=t[96];let et;return t[103]!==Q||t[104]!==$?(et=(0,J.jsxs)(J.Fragment,{children:[Q,$]}),t[103]=Q,t[104]=$,t[105]=et):et=t[105],et}function Ae(e){return e.alignmentCollapsed}function je(e){return e.fullWidth}function Me(e){return e.some(Ne)}function Ne(e){return e.fullWidth}function Pe(){}function Fe(e){return e.some(G)}function G(e){return e.links?.some(Ie)}function Ie(e){return!e.copyValue&&I(e.href)}function Le(e){return e.some(K)}function K(e){return e.links?.some(Re)}function Re(e){return!e.copyValue&&d(e.href)}var ze,q,J,Be,Ve,Y,He,Ue,We,X,Z=e((()=>{ze=E(),F(),P(),a(),j(),A(),N(),M(),x(),ie(),o(),R(),re(),L(),ge(),i(),q=t(oe()),le(),Oe(),J=D(),Be=()=>typeof navigator>`u`?`desktop`:h()?`mobile`:b()?`windows`:v()?`mac`:`desktop`,Ve=e=>e.trim().length===0,Y=e=>/^https?:\/\//i.test(e)||e.startsWith(`//`),He=e=>Y(e),Ue=50,We=(e,t)=>e?t===`mobile`?e.mobile??[]:t===`mac`?e.mac??[]:t===`windows`?e.windows??e.desktop??[]:e.desktop??[]:[],X=se({loading:{id:`wham.codexAppAnnouncement.cta.loading`,defaultMessage:`Loading`},downloadAppleSilicon:{id:`wham.codexAppAnnouncement.cta.downloadAppleSilicon`,defaultMessage:`Download for Apple Silicon`},downloadIntelMac:{id:`wham.codexAppAnnouncement.cta.downloadIntelMac`,defaultMessage:`Download for Intel Mac`},copy:{id:`wham.codexAppAnnouncement.cta.copy`,defaultMessage:`Copy`},copied:{id:`wham.codexAppAnnouncement.cta.copied`,defaultMessage:`Copied`}})}));export{Z as n,W as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Al as n,
+    Dl as r,
+    J5 as i,
+    JT as a,
+    Ktt as o,
+    L7 as s,
+    M7 as c,
+    Ol as l,
+    SN as u,
+    Sj as d,
+    Utt as f,
+    Wtt as ee,
+    aC as te,
+    aat as p,
+    cj as ne,
+    dW as m,
+    dnt as h,
+    gj as g,
+    lat as _,
+    lnt as v,
+    mj as y,
+    mnt as b,
+    oC as x,
+    q5 as S,
+    qT as C,
+    sj as re,
+    uW as w,
+    yN as ie
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    $ as T,
+    Bn as ae,
+    Hn as oe,
+    Rn as se,
+    Tn as E,
+    Vn as D,
+    jt as O,
+    p as k,
+    s as ce,
+    zn as le
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    $8t as ue,
+    Lrt as de,
+    Q8t as fe,
+    Rrt as pe,
+    X8t as me,
+    e5t as he,
+    n5t as ge
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    By as _e,
+    Jy as ve,
+    Ky as ye,
+    Rl as be,
+    Vy as A,
+    Yy as j,
+    qy as M,
+    zl as N
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    KC as P,
+    Sw as xe,
+    mC as Se,
+    pC as F
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+import {
+    a as Ce
+} from "./9ac7a75a-o42ejieyzry8c3s2.js";
+import {
+    a as we,
+    i as I,
+    n as Te,
+    r as L,
+    t as Ee
+} from "./9dade4c6-ba3nmy7no2d9k9my.js";
+import {
+    o as R
+} from "./e19f3910-gqf6e2pgn5z6k0mv.js";
+async function z({
+    email: e,
+    routePath: t,
+    templateId: n
+}) {
+    let i = r(null, null, null, await l(U));
+    return await c.safePost(`/codex/download-email`, {
+        authOption: p.Anonymous,
+        additionalHeaders: i,
+        requestBody: {
+            email: e,
+            route_path: t,
+            template_id: n
+        }
+    })
+}
+
+function De(e) {
+    "use forget";
+    let t = (0, B.c)(26),
+        {
+            templateId: n,
+            emailSendData: r
+        } = e,
+        i = (0, V.useRef)(null),
+        a = (0, V.useRef)(!1),
+        o = ae(),
+        s = O(),
+        [c, l] = (0, V.useState)(``),
+        [u, d] = (0, V.useState)(),
+        [f, ee] = (0, V.useState)(!1),
+        te;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (te = {
+        key: `codex-mobile-start-legacy`,
+        allowUnauthenticatedTracking: !0
+    }, t[0] = te) : te = t[0];
+    let {
+        trackSelectedPixels: p
+    } = Se(te), ne;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (ne = {
+        key: xe.CODEX_MOBILE_START,
+        allowUnauthenticatedTracking: !0
+    }, t[1] = ne) : ne = t[1];
+    let {
+        trackSelectedPixels: m
+    } = Se(ne), h;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (h = () => {
+        ee(!0), d(void 0), l(``)
+    }, t[2] = h) : h = t[2];
+    let g;
+    t[3] === o ? g = t[4] : (g = () => {
+        ee(!1), d(o.formatMessage({
+            id: `keVamY`,
+            defaultMessage: `Failed to send email.`
+        }))
+    }, t[3] = o, t[4] = g);
+    let _;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = () => {
+        a.current = !1
+    }, t[5] = _) : _ = t[5];
+    let v;
+    t[6] === g ? v = t[7] : (v = {
+        mutationFn: z,
+        onSuccess: h,
+        onError: g,
+        onSettled: _
+    }, t[6] = g, t[7] = v);
+    let y = k(v),
+        b;
+    t[8] !== r?.successText || t[9] !== f || t[10] !== o ? (b = f && (0, H.jsxs)(H.Fragment, {
+        children: [(0, H.jsx)(w, {
+            fontSize: `small`
+        }), (0, H.jsx)(`div`, {
+            className: `text-mkt-h6 mt-2 font-semibold`,
+            children: o.formatMessage({
+                id: `codex.downloadEmail.success.title`,
+                defaultMessage: `Check your inbox`
+            })
+        }), (0, H.jsx)(`div`, {
+            className: `text-token-text-primary/60 mt-3 px-4`,
+            children: r?.successText
+        })]
+    }), t[8] = r?.successText, t[9] = f, t[10] = o, t[11] = b) : b = t[11];
+    let x;
+    t[12] !== c || t[13] !== r || t[14] !== u || t[15] !== f || t[16] !== o || t[17] !== s || t[18] !== y || t[19] !== n || t[20] !== m || t[21] !== p ? (x = !f && (0, H.jsxs)(`form`, {
+        className: `flex w-full flex-col items-center gap-4`,
+        noValidate: !0,
+        onSubmit: e => {
+            if (e.preventDefault(), a.current || y.isPending) return;
+            let t = i.current;
+            if (t) {
+                if (!t.checkValidity()) {
+                    d(o.formatMessage({
+                        id: `s1wH8Z`,
+                        defaultMessage: `Enter a valid email address.`
+                    }));
+                    return
+                }
+                d(void 0), a.current = !0, n !== `chatgpt-dots-download-transactional` && (p(), m()), y.mutate({
+                    email: c.trim(),
+                    routePath: s.pathname,
+                    templateId: n
+                })
+            }
+        },
+        children: [(0, H.jsxs)(`div`, {
+            className: `flex w-full max-w-[275px] flex-col gap-2`,
+            children: [r?.title && (0, H.jsx)(`div`, {
+                className: `text-token-text-primary text-mkt-h5 font-semibold`,
+                children: r.title
+            }), (r?.subtitle ?? r?.heading) && (0, H.jsx)(`div`, {
+                className: `text-token-text-secondary text-body-small`,
+                children: r?.subtitle ?? r?.heading
+            })]
+        }), (0, H.jsxs)(`div`, {
+            className: `flex w-full flex-col gap-2`,
+            children: [(0, H.jsx)(de, {
+                ariaLabel: o.formatMessage({
+                    id: `Rr9CE5`,
+                    defaultMessage: `Email address`
+                }),
+                autoComplete: `email`,
+                className: `bg-token-bg-elevated-primary box-border flex h-11.5 flex-col justify-center rounded-full! px-6! py-2.5!`,
+                error: u,
+                inputClassName: `placeholder:text-body-small placeholder:text-token-text-tertiary bg-transparent!`,
+                name: `codex-download-email`,
+                onChange: e => {
+                    l(e.target.value), u && d(void 0), f && ee(!1)
+                },
+                placeholder: o.formatMessage({
+                    id: `So08Qm`,
+                    defaultMessage: `Email address`
+                }),
+                ref: i,
+                required: !0,
+                type: `email`,
+                value: c
+            }), (0, H.jsx)(C, {
+                fullWidth: !0,
+                loading: y.isPending,
+                size: `large`,
+                type: `submit`,
+                children: o.formatMessage({
+                    id: `codex.downloadEmail.submit.label`,
+                    defaultMessage: `Email me the link`
+                })
+            })]
+        })]
+    }), t[12] = c, t[13] = r, t[14] = u, t[15] = f, t[16] = o, t[17] = s, t[18] = y, t[19] = n, t[20] = m, t[21] = p, t[22] = x) : x = t[22];
+    let S;
+    return t[23] !== b || t[24] !== x ? (S = (0, H.jsxs)(`div`, {
+        className: `border-token-border-light bg-token-bg-elevated-primary mt-10 box-border flex w-full flex-col items-center rounded-[36px] border px-4 pt-6 pb-4 text-center shadow-[0_4px_16px_0_rgba(0,0,0,0.05)]`,
+        children: [b, x]
+    }), t[23] = b, t[24] = x, t[25] = S) : S = t[25], S
+}
+var B, V, H, U, Oe = e((() => {
+    B = E(), F(), P(), a(), m(), pe(), _(), s(), n(), ce(), V = t(oe()), le(), T(), H = D(), U = `codex_download_email`
+}));
+
+function ke(e, t, n) {
+    return e === `purple` ? `purple` : e === `primary` ? `primary` : e === `secondary` ? t ? `primary` : `secondary` : e === `link` ? `ghost` : t ? n ?? `secondary` : `primary`
+}
+
+function W(e) {
+    "use forget";
+    let t = (0, ze.c)(106),
+        {
+            data: n,
+            platformOverride: r,
+            onLinkClick: i,
+            className: a,
+            buttonWidthClassName: o,
+            defaultDarkModeButtonColor: s,
+            marketingDownloadSource: c
+        } = e,
+        l = o === void 0 ? `w-56` : o,
+        p = ae(),
+        m = u(),
+        [h, _] = (0, q.useState)(null),
+        [v, b] = (0, q.useState)(null),
+        [x, re] = (0, q.useState)(r ?? null),
+        [w, ie] = (0, q.useState)(null),
+        [T, oe] = (0, q.useState)(null),
+        se;
+    t[0] === n?.mac ? se = t[1] : (se = n?.mac.some(Le) ?? !1, t[0] = n?.mac, t[1] = se);
+    let E = se,
+        D;
+    t[2] !== n?.mac || t[3] !== c || t[4] !== x ? (D = x === `mac` && c != null && (n?.mac.some(Fe) ?? !1), t[2] = n?.mac, t[3] = c, t[4] = x, t[5] = D) : D = t[5];
+    let O = D,
+        k = O && T === `micro_installer`,
+        ce;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (ce = {
+        key: `chatgpt-codex-download`,
+        allowUnauthenticatedTracking: !0
+    }, t[6] = ce) : ce = t[6];
+    let {
+        trackSelectedPixels: le
+    } = Se(ce), de;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (de = {
+        key: xe.CODEX_DOWNLOAD,
+        allowUnauthenticatedTracking: !0
+    }, t[7] = de) : de = t[7];
+    let {
+        trackSelectedPixels: pe
+    } = Se(de), ge;
+    t[8] !== pe || t[9] !== le ? (ge = () => {
+        pe(), le()
+    }, t[8] = pe, t[9] = le, t[10] = ge) : ge = t[10];
+    let A = ge,
+        j, M;
+    t[11] === r ? (j = t[12], M = t[13]) : (j = () => {
+        if (r) {
+            re(r);
+            return
+        }
+        re(Be())
+    }, M = [r], t[11] = r, t[12] = j, t[13] = M), (0, q.useEffect)(j, M);
+    let N, P;
+    t[14] !== E || t[15] !== O || t[16] !== x ? (P = () => {
+        let e = !1;
+        return (async () => {
+            if (x !== `mac` || !E) return {
+                mode: null,
+                architecture: null
+            };
+            let e = O ? Te() : `full_app`;
+            return {
+                mode: e,
+                architecture: e === `micro_installer` ? null : await ee()
+            }
+        })().then(t => {
+            let {
+                mode: n,
+                architecture: r
+            } = t;
+            e || (oe(n), ie(r))
+        }), () => {
+            e = !0
+        }
+    }, N = [x, E, O], t[14] = E, t[15] = O, t[16] = x, t[17] = N, t[18] = P) : (N = t[17], P = t[18]), (0, q.useEffect)(P, N);
+    let F, L;
+    t[19] === v ? (F = t[20], L = t[21]) : (F = () => {
+        if (!v) return;
+        let e = setTimeout(() => {
+            b(null)
+        }, 2e3);
+        return () => clearTimeout(e)
+    }, L = [v], t[19] = v, t[20] = F, t[21] = L), (0, q.useEffect)(F, L);
+    let R;
+    t[22] !== n || t[23] !== x ? (R = x == null ? [] : We(n, x), t[22] = n, t[23] = x, t[24] = R) : R = t[24];
+    let z = R,
+        B;
+    t[25] !== i || t[26] !== A ? (B = (e, t, n) => {
+        i?.(e), A(), te(n).then(() => b(t)).catch(Pe)
+    }, t[25] = i, t[26] = A, t[27] = B) : B = t[27];
+    let V = B,
+        H;
+    t[28] === p ? H = t[29] : (H = e => typeof e == `string` ? e : p.formatMessage(e), t[28] = p, t[29] = H);
+    let U = H,
+        Oe;
+    t[30] !== s || t[31] !== m ? (Oe = e => ke(e, m, s), t[30] = s, t[31] = m, t[32] = Oe) : Oe = t[32];
+    let W = Oe,
+        Ne;
+    t[33] !== T || t[34] !== c || t[35] !== A ? (Ne = (e, t) => {
+        let n = c ? we(e, c, T ?? `full_app`, t) : e;
+        ne({
+            downloadUrl: n,
+            surface: `codex_app_announcement`
+        }), window.location.assign(n), window.setTimeout(A, Ue)
+    }, t[33] = T, t[34] = c, t[35] = A, t[36] = Ne) : Ne = t[36];
+    let G = Ne,
+        Ie;
+    t[37] !== G || t[38] !== T || t[39] !== O || t[40] !== i || t[41] !== x || t[42] !== A || t[43] !== k ? (Ie = async e => {
+        if (!Ve(e.href) && !(O && I(e.href) && T == null) && (i?.(e), !(typeof window > `u`))) {
+            if (k && I(e.href)) {
+                G(e.href, e.analyticsAction);
+                return
+            }
+            if (x !== `desktop` && d(e.href)) {
+                let t = await Ce();
+                if (t == null) return;
+                G(t, e.analyticsAction);
+                return
+            }
+            if (A(), He(e.href)) {
+                window.open(e.href, `_blank`, `noopener,noreferrer`);
+                return
+            }
+            window.location.assign(e.href)
+        }
+    }, t[37] = G, t[38] = T, t[39] = O, t[40] = i, t[41] = x, t[42] = A, t[43] = k, t[44] = Ie) : Ie = t[44];
+    let K = Ie,
+        Re;
+    t[45] !== G || t[46] !== l || t[47] !== p || t[48] !== i || t[49] !== W ? (Re = (e, t, n) => {
+        let r = [{
+            label: X.downloadAppleSilicon,
+            url: y,
+            color: W(n)
+        }, {
+            label: X.downloadIntelMac,
+            url: g,
+            color: W(`secondary`)
+        }];
+        return (0, J.jsx)(`div`, {
+            className: S(`flex gap-3`, {
+                "w-full flex-col": t,
+                "flex-row flex-wrap items-center justify-center": !t
+            }),
+            children: r.map(n => (0, J.jsx)(C, {
+                type: `button`,
+                size: `large`,
+                color: n.color,
+                className: S(t ? `w-full` : l),
+                "data-analytics-action": e.analyticsAction,
+                onClick: () => {
+                    i?.(e), !(typeof window > `u`) && G(n.url, e.analyticsAction)
+                },
+                children: p.formatMessage(n.label)
+            }, n.url))
+        })
+    }, t[45] = G, t[46] = l, t[47] = p, t[48] = i, t[49] = W, t[50] = Re) : Re = t[50];
+    let Y = Re,
+        Z;
+    t[51] !== l || t[52] !== v || t[53] !== V || t[54] !== W || t[55] !== U ? (Z = (e, t, n, r, i) => {
+        let a = v === n ? ve : ye,
+            o = U(e.label);
+        return (0, J.jsx)(C, {
+            type: `button`,
+            size: `large`,
+            color: W(r),
+            className: S(`[container-type:inline-size] font-mono text-[clamp(10px,1.8vw,14px)]`, {
+                "w-full": t
+            }, !t && l),
+            "data-analytics-action": e.analyticsAction,
+            onClick: () => V(e, n, e.copyValue ?? ``),
+            children: (0, J.jsxs)(`span`, {
+                className: S(`flex w-full items-center gap-[calc(0.3em+4px)]`, {
+                    "justify-start": i,
+                    "justify-center": !i
+                }),
+                children: [(0, J.jsx)(`span`, {
+                    className: `text-[clamp(10px,3.4cqw,14px)] whitespace-nowrap`,
+                    children: o
+                }), (0, J.jsx)(a, {
+                    className: `icon-sm`
+                })]
+            })
+        })
+    }, t[51] = l, t[52] = v, t[53] = V, t[54] = W, t[55] = U, t[56] = Z) : Z = t[56];
+    let Ge = Z,
+        Ke;
+    t[57] !== l || t[58] !== W || t[59] !== U ? (Ke = (e, t, n) => {
+        let r = U(e.label);
+        return (0, J.jsx)(C, {
+            type: `button`,
+            size: `large`,
+            disabled: !0,
+            color: W(n),
+            className: S(t ? `w-full` : l),
+            children: r
+        })
+    }, t[57] = l, t[58] = W, t[59] = U, t[60] = Ke) : Ke = t[60];
+    let qe = Ke,
+        Je;
+    t[61] !== w || t[62] !== l || t[63] !== K || t[64] !== p || t[65] !== c || t[66] !== x || t[67] !== Ge || t[68] !== Y || t[69] !== qe || t[70] !== W || t[71] !== U || t[72] !== k ? (Je = (e, t) => {
+        let n = t.fullWidth ?? !1,
+            r = !Ve(e.href),
+            i = t.ctaStyle,
+            a = t.ctaStyle === `link`,
+            o = k && !e.copyValue && I(e.href),
+            s = o ? p.formatMessage(Ee.downloadMac) : U(e.label);
+        if (e.copyValue) {
+            let t = `${s}-${e.copyValue}`;
+            return Ge(e, n, t, i, a)
+        }
+        if (!r) return x === `mobile` && c === `contentful_ctas` ? (0, J.jsx)(`p`, {
+            className: `text-token-text-secondary text-center text-sm leading-relaxed`,
+            children: s
+        }) : qe(e, n, i);
+        if (x === `mac` && d(e.href) && !o) {
+            if (w == null) return qe({
+                ...e,
+                label: X.loading
+            }, n, i);
+            if (w === f.UNKNOWN) return Y(e, n, i)
+        }
+        return (0, J.jsx)(C, {
+            type: `button`,
+            size: `large`,
+            color: W(i),
+            className: S(n ? `w-full` : l),
+            "data-analytics-action": e.analyticsAction,
+            onClick: () => K(e),
+            children: s
+        })
+    }, t[61] = w, t[62] = l, t[63] = K, t[64] = p, t[65] = c, t[66] = x, t[67] = Ge, t[68] = Y, t[69] = qe, t[70] = W, t[71] = U, t[72] = k, t[73] = Je) : Je = t[73];
+    let Ye = Je,
+        Xe;
+    t[74] !== l || t[75] !== v || t[76] !== V || t[77] !== K || t[78] !== p || t[79] !== h || t[80] !== W || t[81] !== U || t[82] !== k ? (Xe = (e, t, n) => {
+        let r = t.fullWidth ?? !1,
+            i = t.dropdownCtaLabel ?? e[0]?.label,
+            a = i ? U(i) : ``,
+            o = h === n,
+            s = W(t.ctaStyle);
+        return i ? (0, J.jsxs)(ue, {
+            open: o,
+            onOpenChange: e => {
+                _(t => e ? n : t === n ? null : t)
+            },
+            children: [(0, J.jsx)(he, {
+                asChild: !0,
+                children: (0, J.jsx)(C, {
+                    type: `button`,
+                    size: `large`,
+                    color: s,
+                    className: S(r ? `w-full` : l),
+                    children: (0, J.jsxs)(`span`, {
+                        className: `flex w-full items-center justify-center gap-2`,
+                        children: [(0, J.jsx)(`span`, {
+                            className: `truncate`,
+                            children: a
+                        }), o ? (0, J.jsx)(be, {
+                            className: `icon-sm`
+                        }) : (0, J.jsx)(_e, {
+                            className: `icon-sm`
+                        })]
+                    })
+                })
+            }), (0, J.jsx)(fe, {
+                children: (0, J.jsx)(me, {
+                    sideOffset: 8,
+                    align: `start`,
+                    className: `z-50 w-[var(--radix-popover-trigger-width)] min-w-[var(--radix-popover-trigger-width)]`,
+                    children: (0, J.jsx)(`div`, {
+                        className: `border-token-border-light bg-token-bg-primary text-token-text-primary w-full rounded-lg border p-1 shadow-lg`,
+                        children: (0, J.jsx)(`ul`, {
+                            className: `flex flex-col`,
+                            children: e.map((e, t) => {
+                                let n = !!e.copyValue,
+                                    r = Ve(e.href) && !n,
+                                    i = k && !n && I(e.href) ? p.formatMessage(Ee.downloadMac) : U(e.label),
+                                    a = `${i}-${e.copyValue??``}`;
+                                return r ? (0, J.jsx)(`li`, {
+                                    children: (0, J.jsx)(`span`, {
+                                        className: `text-token-text-tertiary block rounded-md px-3 py-2 text-sm`,
+                                        children: i
+                                    })
+                                }, `${i}-${t}`) : (0, J.jsx)(`li`, {
+                                    children: (0, J.jsxs)(`button`, {
+                                        type: `button`,
+                                        className: `hover:bg-token-bg-tertiary focus-visible:bg-token-bg-tertiary flex w-full items-center justify-between rounded-md px-3 py-2 text-start text-sm`,
+                                        "data-analytics-action": e.analyticsAction,
+                                        onClick: () => {
+                                            n ? V(e, a, e.copyValue ?? ``) : K(e), _(null)
+                                        },
+                                        children: [(0, J.jsx)(`span`, {
+                                            children: i
+                                        }), n ? (0, J.jsx)(`span`, {
+                                            className: `text-token-text-tertiary`,
+                                            children: v === a ? p.formatMessage(X.copied) : p.formatMessage(X.copy)
+                                        }) : null]
+                                    })
+                                }, `${i}-${t}`)
+                            })
+                        })
+                    })
+                })
+            })]
+        }) : null
+    }, t[74] = l, t[75] = v, t[76] = V, t[77] = K, t[78] = p, t[79] = h, t[80] = W, t[81] = U, t[82] = k, t[83] = Xe) : Xe = t[83];
+    let Ze = Xe,
+        Qe;
+    t[84] !== Ze || t[85] !== Ye || t[86] !== k ? (Qe = (e, t, n) => {
+        let r = !1,
+            i = (e.links ?? []).filter(e => !k || e.copyValue || !I(e.href) ? !0 : r ? !1 : (r = !0, !0));
+        return i.length ? i.length > 1 ? Ze(i, e, `${t}-${n}`) : Ye(i[0], e) : null
+    }, t[84] = Ze, t[85] = Ye, t[86] = k, t[87] = Qe) : Qe = t[87];
+    let $e = Qe;
+    if (x != null && !z.length) return null;
+    let Q, $;
+    if (t[88] !== l || t[89] !== a || t[90] !== p || t[91] !== m || t[92] !== x || t[93] !== z || t[94] !== $e) {
+        let e = z.some(Me);
+        t[97] !== l || t[98] !== a || t[99] !== p || t[100] !== m || t[101] !== x ? (Q = x == null ? (0, J.jsx)(`div`, {
+            className: S(`flex flex-col gap-3`, a),
+            children: (0, J.jsx)(`div`, {
+                className: `relative z-10 flex flex-row flex-wrap items-center justify-center gap-3`,
+                children: (0, J.jsx)(C, {
+                    type: `button`,
+                    size: `large`,
+                    disabled: !0,
+                    loading: !0,
+                    color: ke(`primary`, m),
+                    className: S(`min-w-40`, l),
+                    children: p.formatMessage(X.loading)
+                })
+            })
+        }) : null, t[97] = l, t[98] = a, t[99] = p, t[100] = m, t[101] = x, t[102] = Q) : Q = t[102], $ = x == null ? null : (0, J.jsx)(`div`, {
+            className: S(`flex flex-col gap-3`, e && `w-full flex-1`, a),
+            children: z.map((e, t) => {
+                let n = e.some(je),
+                    r = e.find(Ae)?.alignmentCollapsed;
+                return (0, J.jsx)(`div`, {
+                    className: S(`relative z-10 flex gap-3`, {
+                        "w-full flex-col items-stretch": n,
+                        "flex-row flex-wrap items-center justify-center": !n,
+                        "justify-start": r === `start` && !n,
+                        "justify-center": r === `center` && !n,
+                        "justify-end": r === `end` && !n
+                    }),
+                    children: e.map((e, r) => {
+                        if (e.emailSendType) return (0, J.jsx)(De, {
+                            templateId: e.emailSendType,
+                            emailSendData: e.emailSendData
+                        }, `cta-${t}-${r}`);
+                        let i = $e(e, t, r);
+                        return i ? (0, J.jsx)(`div`, {
+                            className: S({
+                                "w-full": n
+                            }),
+                            children: i
+                        }, `cta-${t}-${r}`) : null
+                    })
+                }, `cta-row-${t}`)
+            })
+        }), t[88] = l, t[89] = a, t[90] = p, t[91] = m, t[92] = x, t[93] = z, t[94] = $e, t[95] = Q, t[96] = $
+    } else Q = t[95], $ = t[96];
+    let et;
+    return t[103] !== Q || t[104] !== $ ? (et = (0, J.jsxs)(J.Fragment, {
+        children: [Q, $]
+    }), t[103] = Q, t[104] = $, t[105] = et) : et = t[105], et
+}
+
+function Ae(e) {
+    return e.alignmentCollapsed
+}
+
+function je(e) {
+    return e.fullWidth
+}
+
+function Me(e) {
+    return e.some(Ne)
+}
+
+function Ne(e) {
+    return e.fullWidth
+}
+
+function Pe() {}
+
+function Fe(e) {
+    return e.some(G)
+}
+
+function G(e) {
+    return e.links?.some(Ie)
+}
+
+function Ie(e) {
+    return !e.copyValue && I(e.href)
+}
+
+function Le(e) {
+    return e.some(K)
+}
+
+function K(e) {
+    return e.links?.some(Re)
+}
+
+function Re(e) {
+    return !e.copyValue && d(e.href)
+}
+var ze, q, J, Be, Ve, Y, He, Ue, We, X, Z = e((() => {
+    ze = E(), F(), P(), a(), j(), A(), N(), M(), x(), ie(), o(), R(), re(), L(), ge(), i(), q = t(oe()), le(), Oe(), J = D(), Be = () => typeof navigator > `u` ? `desktop` : h() ? `mobile` : b() ? `windows` : v() ? `mac` : `desktop`, Ve = e => e.trim().length === 0, Y = e => /^https?:\/\//i.test(e) || e.startsWith(`//`), He = e => Y(e), Ue = 50, We = (e, t) => e ? t === `mobile` ? e.mobile ?? [] : t === `mac` ? e.mac ?? [] : t === `windows` ? e.windows ?? e.desktop ?? [] : e.desktop ?? [] : [], X = se({
+        loading: {
+            id: `wham.codexAppAnnouncement.cta.loading`,
+            defaultMessage: `Loading`
+        },
+        downloadAppleSilicon: {
+            id: `wham.codexAppAnnouncement.cta.downloadAppleSilicon`,
+            defaultMessage: `Download for Apple Silicon`
+        },
+        downloadIntelMac: {
+            id: `wham.codexAppAnnouncement.cta.downloadIntelMac`,
+            defaultMessage: `Download for Intel Mac`
+        },
+        copy: {
+            id: `wham.codexAppAnnouncement.cta.copy`,
+            defaultMessage: `Copy`
+        },
+        copied: {
+            id: `wham.codexAppAnnouncement.cta.copied`,
+            defaultMessage: `Copied`
+        }
+    })
+}));
+export {
+    Z as n, W as t
+};
 //# sourceMappingURL=50217878-jiqz6xihz0msoh0e.js.map

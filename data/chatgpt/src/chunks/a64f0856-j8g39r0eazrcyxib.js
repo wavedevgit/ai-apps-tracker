@@ -1,2 +1,53 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{JJ as n,mY as r,rY as i}from"./4813494d-tap9fxyhk4ehe0bs.js";import{Vn as a,wn as o}from"./2340486e-i7pjxgdhv0bs6apg.js";import{fF as s,lF as c}from"./conversation-small-nmt18uiom3b14vca.js";function l(e){"use forget";let t=(0,f.c)(8),{conversation:i}=e,a=r(i.id,u),o=r(i.id,n.getCurrentLeafId),c;t[0]!==i||t[1]!==o?(c=()=>{s(i,o)},t[0]=i,t[1]=o,t[2]=c):c=t[2];let l=(0,p.useEffectEvent)(c),d;t[3]!==a||t[4]!==l?(d=()=>{a&&l()},t[3]=a,t[4]=l,t[5]=d):d=t[5];let m;return t[6]===a?m=t[7]:(m=[a],t[6]=a,t[7]=m),(0,p.useEffect)(d,m),null}function u(e){return n.someMessage(e,d)}function d(e){return e.metadata?.n7jupd_message}var f,p,m=e((()=>{f=o(),i(),p=t(a(),1),c()}));export{m as n,l as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    JJ as n,
+    mY as r,
+    rY as i
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    Vn as a,
+    wn as o
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    fF as s,
+    lF as c
+} from "./conversation-small-nmt18uiom3b14vca.js";
+
+function l(e) {
+    "use forget";
+    let t = (0, f.c)(8),
+        {
+            conversation: i
+        } = e,
+        a = r(i.id, u),
+        o = r(i.id, n.getCurrentLeafId),
+        c;
+    t[0] !== i || t[1] !== o ? (c = () => {
+        s(i, o)
+    }, t[0] = i, t[1] = o, t[2] = c) : c = t[2];
+    let l = (0, p.useEffectEvent)(c),
+        d;
+    t[3] !== a || t[4] !== l ? (d = () => {
+        a && l()
+    }, t[3] = a, t[4] = l, t[5] = d) : d = t[5];
+    let m;
+    return t[6] === a ? m = t[7] : (m = [a], t[6] = a, t[7] = m), (0, p.useEffect)(d, m), null
+}
+
+function u(e) {
+    return n.someMessage(e, d)
+}
+
+function d(e) {
+    return e.metadata?.n7jupd_message
+}
+var f, p, m = e((() => {
+    f = o(), i(), p = t(a(), 1), c()
+}));
+export {
+    m as n, l as t
+};
 //# sourceMappingURL=a64f0856-j8g39r0eazrcyxib.js.map

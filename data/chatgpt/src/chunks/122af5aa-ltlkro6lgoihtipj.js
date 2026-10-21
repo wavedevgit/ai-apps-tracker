@@ -1,2 +1,48 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e){return e!=null&&(e.installation_policy===`AVAILABLE`||e.installation_policy===`INSTALLED_BY_DEFAULT`||e.installation_policy===`NOT_AVAILABLE`)&&(e.authentication_policy===`ON_INSTALL`||e.authentication_policy===`ON_USE`)}function n(e){return(e.scope===`GLOBAL`||e.scope===`WORKSPACE`||e.scope===`USER`)&&(e.discoverability===`LISTED`||e.discoverability===`UNLISTED`||e.discoverability===`PRIVATE`)}function r(e){return e===`ENABLED`||e===`DISABLED_BY_ADMIN`}function i(e,t){return{id:e.id,name:e.name,description:e.description??``,logo_url:e.logo_url??null,logo_url_dark:null,template_id:t,...r(e.status)?{status:e.status}:{}}}function a(e){return e!=null&&(e.installation_policy===`AVAILABLE`||e.installation_policy===`INSTALLED_BY_DEFAULT`||e.installation_policy===`NOT_AVAILABLE`)}var o,s,c,l=e((()=>{o=e=>e.scope===`USER`||e.discoverability===`PRIVATE`,s=e=>o(e)||e.scope===`WORKSPACE`?`workspace`:`openai`,c=e=>(e.release.app_templates??[]).filter(e=>e.reason===`NOT_CONFIGURED_FOR_WORKSPACE`)}));export{a,o as c,n as i,r as l,i as n,t as o,c as r,l as s,s as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e) {
+    return e != null && (e.installation_policy === `AVAILABLE` || e.installation_policy === `INSTALLED_BY_DEFAULT` || e.installation_policy === `NOT_AVAILABLE`) && (e.authentication_policy === `ON_INSTALL` || e.authentication_policy === `ON_USE`)
+}
+
+function n(e) {
+    return (e.scope === `GLOBAL` || e.scope === `WORKSPACE` || e.scope === `USER`) && (e.discoverability === `LISTED` || e.discoverability === `UNLISTED` || e.discoverability === `PRIVATE`)
+}
+
+function r(e) {
+    return e === `ENABLED` || e === `DISABLED_BY_ADMIN`
+}
+
+function i(e, t) {
+    return {
+        id: e.id,
+        name: e.name,
+        description: e.description ?? ``,
+        logo_url: e.logo_url ?? null,
+        logo_url_dark: null,
+        template_id: t,
+        ...r(e.status) ? {
+            status: e.status
+        } : {}
+    }
+}
+
+function a(e) {
+    return e != null && (e.installation_policy === `AVAILABLE` || e.installation_policy === `INSTALLED_BY_DEFAULT` || e.installation_policy === `NOT_AVAILABLE`)
+}
+var o, s, c, l = e((() => {
+    o = e => e.scope === `USER` || e.discoverability === `PRIVATE`, s = e => o(e) || e.scope === `WORKSPACE` ? `workspace` : `openai`, c = e => (e.release.app_templates ?? []).filter(e => e.reason === `NOT_CONFIGURED_FOR_WORKSPACE`)
+}));
+export {
+    a,
+    o as c,
+    n as i,
+    r as l,
+    i as n,
+    t as o,
+    c as r,
+    l as s,
+    s as t
+};
 //# sourceMappingURL=122af5aa-ltlkro6lgoihtipj.js.map

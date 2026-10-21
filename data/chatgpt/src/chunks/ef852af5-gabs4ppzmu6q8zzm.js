@@ -1,2 +1,304 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Cw as n,JT as r,Tw as i,YT as a}from"./4813494d-tap9fxyhk4ehe0bs.js";import{Bn as o,Ln as ee,Nn as s,Rn as c,Vn as l,wn as u,zn as te}from"./2340486e-i7pjxgdhv0bs6apg.js";import{asn as ne,fH as re,hH as d,isn as ie,osn as ae,ssn as f}from"./conversation-small-nmt18uiom3b14vca.js";import{n as p,t as m}from"./bcae0416-fbgy5fste5392aua.js";import{n as h,t as oe}from"./4a5c97e1-k2y2ynn9nb5opk5l.js";function g({intl:e,limit:t,minimumLimit:n}){return{errorMessage:t!=null&&t<n?e.formatMessage(x.minimumLimitError,{minimumLimit:n}):void 0,isValid:t==null||t>=n}}function _(e){"use forget";let t=(0,se.c)(72),{currentLimit:i,getValidationResult:a,onClose:o,placeholder:ee,renderLimitContext:c}=e,l=te(),u=e.allowUnlimited===!0,d=e.previousStep==null,[f,p]=(0,v.useState)(typeof i==`number`?i:null),[h,g]=(0,v.useState)(u&&i===`unlimited_platform_max`),[_,S]=(0,v.useState)(!1),C;t[0]!==u||t[1]!==i?(C=()=>{p(typeof i==`number`?i:null),g(u&&i===`unlimited_platform_max`)},t[0]=u,t[1]=i,t[2]=C):C=t[2];let w;t[3]!==u||t[4]!==i||t[5]!==d?(w=[u,i,d],t[3]=u,t[4]=i,t[5]=d,t[6]=w):w=t[6],(0,v.useEffect)(C,w);let T=h?re:f,le=!(!u&&i===`unlimited_platform_max`&&f==null)&&T!==i,E;t[7]!==a||t[8]!==h||t[9]!==f?(E=h?void 0:a?.(f),t[7]=a,t[8]=h,t[9]=f,t[10]=E):E=t[10];let D=E,O=ee??D?.placeholder??`0`,k;t[11]!==h||t[12]!==f?(k=h||f==null||Number.isInteger(f)&&f>=0,t[11]=h,t[12]=f,t[13]=k):k=t[13];let A=k,j=D?.isValid??!0,M=A&&j,N;t[14]!==D?.errorMessage||t[15]!==A||t[16]!==l||t[17]!==j?(N=A?j?void 0:D?.errorMessage:l.formatMessage(x.amountValidationError),t[14]=D?.errorMessage,t[15]=A,t[16]=l,t[17]=j,t[18]=N):N=t[18];let P=N,F=le&&M&&!_&&(!e.requireLimit||T!=null),I=(T!=null||!u&&i===`unlimited_platform_max`)&&!_,L;t[19]===e?L=t[20]:(L=async t=>{if(e.allowUnlimited){await e.onSave(t);return}await e.onSave(typeof t==`number`?t:null)},t[19]=e,t[20]=L);let R=L,z;t[21]!==F||t[22]!==T||t[23]!==R?(z=async()=>{F&&(S(!0),await R(T).finally(()=>S(!1)))},t[21]=F,t[22]=T,t[23]=R,t[24]=z):z=t[24];let B=z,V;t[25]!==I||t[26]!==i||t[27]!==R?(V=async()=>{if(I){if(i==null){p(null),g(!1);return}S(!0),await R(null).finally(()=>S(!1))}},t[25]=I,t[26]=i,t[27]=R,t[28]=V):V=t[28];let H=V,U;t[29]===e.title?U=t[30]:(U=e.title??(0,y.jsx)(s,{...x.title}),t[29]=e.title,t[30]=U);let W=!F,G;t[31]!==T||t[32]!==e.renderSaveLabel?(G=e.renderSaveLabel?.(T)??(0,y.jsx)(s,{...x.saveButton}),t[31]=T,t[32]=e.renderSaveLabel,t[33]=G):G=t[33];let K;t[34]!==B||t[35]!==_||t[36]!==G||t[37]!==W?(K=(0,y.jsx)(r,{loading:_,disabled:W,onClick:B,children:G}),t[34]=B,t[35]=_,t[36]=G,t[37]=W,t[38]=K):K=t[38];let q;t[39]!==I||t[40]!==H||t[41]!==_||t[42]!==e.onBack?(q=e.onBack?(0,y.jsx)(r,{color:`secondary`,disabled:_,onClick:e.onBack,children:(0,y.jsx)(s,{...x.backButton})}):(0,y.jsx)(r,{color:`danger-outline`,disabled:!I,onClick:H,children:(0,y.jsx)(s,{...x.removeButton})}),t[39]=I,t[40]=H,t[41]=_,t[42]=e.onBack,t[43]=q):q=t[43];let J;t[44]!==u||t[45]!==B||t[46]!==O||t[47]!==l||t[48]!==_||t[49]!==h||t[50]!==f?(J=u?(0,y.jsxs)(ie,{"aria-label":l.formatMessage(x.limitModeLabel),className:`mt-4 flex flex-col gap-3`,disabled:_,value:h?`unlimited`:`amount`,onValueChange:e=>g(e===`unlimited`),children:[(0,y.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,y.jsx)(ae,{id:`seat-type-usage-limit-amount`,value:`amount`,"aria-label":l.formatMessage(x.amountOptionLabel),className:b,children:(0,y.jsx)(ne,{className:ce})}),(0,y.jsxs)(`fieldset`,{disabled:h,className:h?`min-w-0 flex-1 opacity-50`:`min-w-0 flex-1`,children:[(0,y.jsx)(m,{htmlFor:`seat-type-usage-limit-field`,className:`sr-only`,children:(0,y.jsx)(s,{...x.amountLabel})}),(0,y.jsx)(oe,{value:f,name:`seat-type-usage-limit-field`,onChange:p,onPressEnter:B,placeholder:O,unitLabel:(0,y.jsx)(s,{...x.unitLabel})})]})]}),(0,y.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,y.jsx)(ae,{id:`seat-type-usage-limit-unlimited`,value:`unlimited`,className:b,children:(0,y.jsx)(ne,{className:ce})}),(0,y.jsx)(m,{htmlFor:`seat-type-usage-limit-unlimited`,className:`cursor-pointer`,children:(0,y.jsx)(s,{...x.unlimitedLabel})})]})]}):(0,y.jsxs)(`fieldset`,{children:[(0,y.jsx)(m,{htmlFor:`seat-type-usage-limit-field`,className:`mt-4 mb-2 block font-medium`,children:(0,y.jsx)(s,{...x.amountLabel})}),(0,y.jsx)(oe,{value:f,name:`seat-type-usage-limit-field`,onChange:p,onPressEnter:B,placeholder:O,unitLabel:(0,y.jsx)(s,{...x.unitLabel})})]}),t[44]=u,t[45]=B,t[46]=O,t[47]=l,t[48]=_,t[49]=h,t[50]=f,t[51]=J):J=t[51];let Y;t[52]===P?Y=t[53]:(Y=P?(0,y.jsx)(`div`,{className:`text-interactive-label-warning-secondary mt-2 text-sm`,children:P}):null,t[52]=P,t[53]=Y);let X;t[54]!==h||t[55]!==M||t[56]!==f||t[57]!==c?(X=!h&&M?c?.(f):null,t[54]=h,t[55]=M,t[56]=f,t[57]=c,t[58]=X):X=t[58];let Z;t[59]!==J||t[60]!==Y||t[61]!==X?(Z=(0,y.jsxs)(`div`,{className:`px-6 pb-6`,children:[J,Y,X]}),t[59]=J,t[60]=Y,t[61]=X,t[62]=Z):Z=t[62];let Q;t[63]!==o||t[64]!==e.contentRef||t[65]!==K||t[66]!==q||t[67]!==Z||t[68]!==U?(Q={testId:`modal-seat-type-usage-limit`,isOpen:!0,onClose:o,type:`success`,title:U,hideSeparator:!0,noPadding:!0,showCloseButton:!0,size:`large`,contentRef:e.contentRef,footerClassName:`p-6 pt-0`,primaryButton:K,secondaryButton:q,children:Z},t[63]=o,t[64]=e.contentRef,t[65]=K,t[66]=q,t[67]=Z,t[68]=U,t[69]=Q):Q=t[69];let ue=Q,de=e.previousStep??ue,$;return t[70]===de?$=t[71]:($=(0,y.jsx)(n,{...de}),t[70]=de,t[71]=$),$}var se,v,y,b,ce,x,S=e((()=>{se=u(),d(),a(),i(),p(),f(),v=t(l()),c(),h(),y=o(),b=`border-token-text-tertiary hover:bg-token-main-surface-tertiary h-4 w-4 shrink-0 rounded-full border bg-transparent shadow-sm outline-hidden`,ce=`after:bg-token-text-primary relative flex h-full w-full items-center justify-center after:block after:h-2 after:w-2 after:rounded-[50%] after:content-['']`,x=ee({title:{id:`organizationBillingInfo.monthlyUsageLimits.modal.title`,defaultMessage:`Set custom usage limit`},amountLabel:{id:`organizationBillingInfo.monthlyUsageLimits.modal.amountLabel`,defaultMessage:`Amount:`},amountOptionLabel:{id:`organizationBillingInfo.monthlyUsageLimits.modal.amount.option.label`,defaultMessage:`Credit amount`},limitModeLabel:{id:`organizationBillingInfo.monthlyUsageLimits.modal.limitMode.label`,defaultMessage:`Usage limit type`},unlimitedLabel:{id:`organizationBillingInfo.monthlyUsageLimits.modal.unlimited.label`,defaultMessage:`Unlimited usage`},amountValidationError:{id:`organizationBillingInfo.monthlyUsageLimits.modal.amountValidationError`,defaultMessage:`Enter a whole number of 0 or more credits.`},minimumLimitError:{id:`organizationBillingInfo.monthlyUsageLimits.modal.minimumLimitError`,defaultMessage:`Enter at least {minimumLimit} {minimumLimit, plural, one {credit} other {credits}}.`},unitLabel:{id:`organizationBillingInfo.monthlyUsageLimits.modal.unitLabel`,defaultMessage:`credits / month`},saveButton:{id:`organizationBillingInfo.monthlyUsageLimits.modal.saveButton`,defaultMessage:`Save`},backButton:{id:`organizationBillingInfo.monthlyUsageLimits.modal.backButton`,defaultMessage:`Back`},removeButton:{id:`organizationBillingInfo.monthlyUsageLimits.modal.removeButton`,defaultMessage:`Remove`}})}));export{g as n,S as r,_ as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Cw as n,
+    JT as r,
+    Tw as i,
+    YT as a
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    Bn as o,
+    Ln as ee,
+    Nn as s,
+    Rn as c,
+    Vn as l,
+    wn as u,
+    zn as te
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    asn as ne,
+    fH as re,
+    hH as d,
+    isn as ie,
+    osn as ae,
+    ssn as f
+} from "./conversation-small-nmt18uiom3b14vca.js";
+import {
+    n as p,
+    t as m
+} from "./bcae0416-fbgy5fste5392aua.js";
+import {
+    n as h,
+    t as oe
+} from "./4a5c97e1-k2y2ynn9nb5opk5l.js";
+
+function g({
+    intl: e,
+    limit: t,
+    minimumLimit: n
+}) {
+    return {
+        errorMessage: t != null && t < n ? e.formatMessage(x.minimumLimitError, {
+            minimumLimit: n
+        }) : void 0,
+        isValid: t == null || t >= n
+    }
+}
+
+function _(e) {
+    "use forget";
+    let t = (0, se.c)(72),
+        {
+            currentLimit: i,
+            getValidationResult: a,
+            onClose: o,
+            placeholder: ee,
+            renderLimitContext: c
+        } = e,
+        l = te(),
+        u = e.allowUnlimited === !0,
+        d = e.previousStep == null,
+        [f, p] = (0, v.useState)(typeof i == `number` ? i : null),
+        [h, g] = (0, v.useState)(u && i === `unlimited_platform_max`),
+        [_, S] = (0, v.useState)(!1),
+        C;
+    t[0] !== u || t[1] !== i ? (C = () => {
+        p(typeof i == `number` ? i : null), g(u && i === `unlimited_platform_max`)
+    }, t[0] = u, t[1] = i, t[2] = C) : C = t[2];
+    let w;
+    t[3] !== u || t[4] !== i || t[5] !== d ? (w = [u, i, d], t[3] = u, t[4] = i, t[5] = d, t[6] = w) : w = t[6], (0, v.useEffect)(C, w);
+    let T = h ? re : f,
+        le = !(!u && i === `unlimited_platform_max` && f == null) && T !== i,
+        E;
+    t[7] !== a || t[8] !== h || t[9] !== f ? (E = h ? void 0 : a?.(f), t[7] = a, t[8] = h, t[9] = f, t[10] = E) : E = t[10];
+    let D = E,
+        O = ee ?? D?.placeholder ?? `0`,
+        k;
+    t[11] !== h || t[12] !== f ? (k = h || f == null || Number.isInteger(f) && f >= 0, t[11] = h, t[12] = f, t[13] = k) : k = t[13];
+    let A = k,
+        j = D?.isValid ?? !0,
+        M = A && j,
+        N;
+    t[14] !== D?.errorMessage || t[15] !== A || t[16] !== l || t[17] !== j ? (N = A ? j ? void 0 : D?.errorMessage : l.formatMessage(x.amountValidationError), t[14] = D?.errorMessage, t[15] = A, t[16] = l, t[17] = j, t[18] = N) : N = t[18];
+    let P = N,
+        F = le && M && !_ && (!e.requireLimit || T != null),
+        I = (T != null || !u && i === `unlimited_platform_max`) && !_,
+        L;
+    t[19] === e ? L = t[20] : (L = async t => {
+        if (e.allowUnlimited) {
+            await e.onSave(t);
+            return
+        }
+        await e.onSave(typeof t == `number` ? t : null)
+    }, t[19] = e, t[20] = L);
+    let R = L,
+        z;
+    t[21] !== F || t[22] !== T || t[23] !== R ? (z = async () => {
+        F && (S(!0), await R(T).finally(() => S(!1)))
+    }, t[21] = F, t[22] = T, t[23] = R, t[24] = z) : z = t[24];
+    let B = z,
+        V;
+    t[25] !== I || t[26] !== i || t[27] !== R ? (V = async () => {
+        if (I) {
+            if (i == null) {
+                p(null), g(!1);
+                return
+            }
+            S(!0), await R(null).finally(() => S(!1))
+        }
+    }, t[25] = I, t[26] = i, t[27] = R, t[28] = V) : V = t[28];
+    let H = V,
+        U;
+    t[29] === e.title ? U = t[30] : (U = e.title ?? (0, y.jsx)(s, {
+        ...x.title
+    }), t[29] = e.title, t[30] = U);
+    let W = !F,
+        G;
+    t[31] !== T || t[32] !== e.renderSaveLabel ? (G = e.renderSaveLabel?.(T) ?? (0, y.jsx)(s, {
+        ...x.saveButton
+    }), t[31] = T, t[32] = e.renderSaveLabel, t[33] = G) : G = t[33];
+    let K;
+    t[34] !== B || t[35] !== _ || t[36] !== G || t[37] !== W ? (K = (0, y.jsx)(r, {
+        loading: _,
+        disabled: W,
+        onClick: B,
+        children: G
+    }), t[34] = B, t[35] = _, t[36] = G, t[37] = W, t[38] = K) : K = t[38];
+    let q;
+    t[39] !== I || t[40] !== H || t[41] !== _ || t[42] !== e.onBack ? (q = e.onBack ? (0, y.jsx)(r, {
+        color: `secondary`,
+        disabled: _,
+        onClick: e.onBack,
+        children: (0, y.jsx)(s, {
+            ...x.backButton
+        })
+    }) : (0, y.jsx)(r, {
+        color: `danger-outline`,
+        disabled: !I,
+        onClick: H,
+        children: (0, y.jsx)(s, {
+            ...x.removeButton
+        })
+    }), t[39] = I, t[40] = H, t[41] = _, t[42] = e.onBack, t[43] = q) : q = t[43];
+    let J;
+    t[44] !== u || t[45] !== B || t[46] !== O || t[47] !== l || t[48] !== _ || t[49] !== h || t[50] !== f ? (J = u ? (0, y.jsxs)(ie, {
+        "aria-label": l.formatMessage(x.limitModeLabel),
+        className: `mt-4 flex flex-col gap-3`,
+        disabled: _,
+        value: h ? `unlimited` : `amount`,
+        onValueChange: e => g(e === `unlimited`),
+        children: [(0, y.jsxs)(`div`, {
+            className: `flex items-center gap-2`,
+            children: [(0, y.jsx)(ae, {
+                id: `seat-type-usage-limit-amount`,
+                value: `amount`,
+                "aria-label": l.formatMessage(x.amountOptionLabel),
+                className: b,
+                children: (0, y.jsx)(ne, {
+                    className: ce
+                })
+            }), (0, y.jsxs)(`fieldset`, {
+                disabled: h,
+                className: h ? `min-w-0 flex-1 opacity-50` : `min-w-0 flex-1`,
+                children: [(0, y.jsx)(m, {
+                    htmlFor: `seat-type-usage-limit-field`,
+                    className: `sr-only`,
+                    children: (0, y.jsx)(s, {
+                        ...x.amountLabel
+                    })
+                }), (0, y.jsx)(oe, {
+                    value: f,
+                    name: `seat-type-usage-limit-field`,
+                    onChange: p,
+                    onPressEnter: B,
+                    placeholder: O,
+                    unitLabel: (0, y.jsx)(s, {
+                        ...x.unitLabel
+                    })
+                })]
+            })]
+        }), (0, y.jsxs)(`div`, {
+            className: `flex items-center gap-2`,
+            children: [(0, y.jsx)(ae, {
+                id: `seat-type-usage-limit-unlimited`,
+                value: `unlimited`,
+                className: b,
+                children: (0, y.jsx)(ne, {
+                    className: ce
+                })
+            }), (0, y.jsx)(m, {
+                htmlFor: `seat-type-usage-limit-unlimited`,
+                className: `cursor-pointer`,
+                children: (0, y.jsx)(s, {
+                    ...x.unlimitedLabel
+                })
+            })]
+        })]
+    }) : (0, y.jsxs)(`fieldset`, {
+        children: [(0, y.jsx)(m, {
+            htmlFor: `seat-type-usage-limit-field`,
+            className: `mt-4 mb-2 block font-medium`,
+            children: (0, y.jsx)(s, {
+                ...x.amountLabel
+            })
+        }), (0, y.jsx)(oe, {
+            value: f,
+            name: `seat-type-usage-limit-field`,
+            onChange: p,
+            onPressEnter: B,
+            placeholder: O,
+            unitLabel: (0, y.jsx)(s, {
+                ...x.unitLabel
+            })
+        })]
+    }), t[44] = u, t[45] = B, t[46] = O, t[47] = l, t[48] = _, t[49] = h, t[50] = f, t[51] = J) : J = t[51];
+    let Y;
+    t[52] === P ? Y = t[53] : (Y = P ? (0, y.jsx)(`div`, {
+        className: `text-interactive-label-warning-secondary mt-2 text-sm`,
+        children: P
+    }) : null, t[52] = P, t[53] = Y);
+    let X;
+    t[54] !== h || t[55] !== M || t[56] !== f || t[57] !== c ? (X = !h && M ? c?.(f) : null, t[54] = h, t[55] = M, t[56] = f, t[57] = c, t[58] = X) : X = t[58];
+    let Z;
+    t[59] !== J || t[60] !== Y || t[61] !== X ? (Z = (0, y.jsxs)(`div`, {
+        className: `px-6 pb-6`,
+        children: [J, Y, X]
+    }), t[59] = J, t[60] = Y, t[61] = X, t[62] = Z) : Z = t[62];
+    let Q;
+    t[63] !== o || t[64] !== e.contentRef || t[65] !== K || t[66] !== q || t[67] !== Z || t[68] !== U ? (Q = {
+        testId: `modal-seat-type-usage-limit`,
+        isOpen: !0,
+        onClose: o,
+        type: `success`,
+        title: U,
+        hideSeparator: !0,
+        noPadding: !0,
+        showCloseButton: !0,
+        size: `large`,
+        contentRef: e.contentRef,
+        footerClassName: `p-6 pt-0`,
+        primaryButton: K,
+        secondaryButton: q,
+        children: Z
+    }, t[63] = o, t[64] = e.contentRef, t[65] = K, t[66] = q, t[67] = Z, t[68] = U, t[69] = Q) : Q = t[69];
+    let ue = Q,
+        de = e.previousStep ?? ue,
+        $;
+    return t[70] === de ? $ = t[71] : ($ = (0, y.jsx)(n, {
+        ...de
+    }), t[70] = de, t[71] = $), $
+}
+var se, v, y, b, ce, x, S = e((() => {
+    se = u(), d(), a(), i(), p(), f(), v = t(l()), c(), h(), y = o(), b = `border-token-text-tertiary hover:bg-token-main-surface-tertiary h-4 w-4 shrink-0 rounded-full border bg-transparent shadow-sm outline-hidden`, ce = `after:bg-token-text-primary relative flex h-full w-full items-center justify-center after:block after:h-2 after:w-2 after:rounded-[50%] after:content-['']`, x = ee({
+        title: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.title`,
+            defaultMessage: `Set custom usage limit`
+        },
+        amountLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.amountLabel`,
+            defaultMessage: `Amount:`
+        },
+        amountOptionLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.amount.option.label`,
+            defaultMessage: `Credit amount`
+        },
+        limitModeLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.limitMode.label`,
+            defaultMessage: `Usage limit type`
+        },
+        unlimitedLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.unlimited.label`,
+            defaultMessage: `Unlimited usage`
+        },
+        amountValidationError: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.amountValidationError`,
+            defaultMessage: `Enter a whole number of 0 or more credits.`
+        },
+        minimumLimitError: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.minimumLimitError`,
+            defaultMessage: `Enter at least {minimumLimit} {minimumLimit, plural, one {credit} other {credits}}.`
+        },
+        unitLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.unitLabel`,
+            defaultMessage: `credits / month`
+        },
+        saveButton: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.saveButton`,
+            defaultMessage: `Save`
+        },
+        backButton: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.backButton`,
+            defaultMessage: `Back`
+        },
+        removeButton: {
+            id: `organizationBillingInfo.monthlyUsageLimits.modal.removeButton`,
+            defaultMessage: `Remove`
+        }
+    })
+}));
+export {
+    g as n, S as r, _ as t
+};
 //# sourceMappingURL=ef852af5-gabs4ppzmu6q8zzm.js.map

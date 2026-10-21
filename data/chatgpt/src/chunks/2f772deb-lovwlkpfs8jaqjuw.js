@@ -1,2 +1,123 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Lrt as t,Ol as n,Sot as r,bV as i,gat as a,hat as o,jl as s,pV as c,z7 as l}from"./4813494d-tap9fxyhk4ehe0bs.js";import{QZt as u,ZZt as d,n$t as f,nQt as p,r$t as m,tQt as h}from"./conversation-small-nmt18uiom3b14vca.js";function g({conversationId:e,sharedConversationId:t,messageId:n,category:i,refId:a,pinnedImage:o,multiMessageMode:s=!1,locale:c}){return{conversation_id:e,message_id:n,category:`reference_entity`,reference_entity_params:{category:i,ref_id:a,...t?{shared_conversation_id:t}:{},...i===`business`?{multi_message_mode:s,pinned_image:o}:{}},locale:c,supported_encodings:[r.V1]}}var _=e((()=>{p()}));function v(e){return typeof e==`object`&&!!e}function y(e){return v(e)&&(e.type===`__debug`||e.type===`message`)?v(e.data):!1}async function b({requestBody:e,signal:t,onEvent:n,isAuthOptional:r,requestContext:i}){for await(let a of x({requestBody:e,signal:t,isAuthOptional:r,requestContext:i}))n(a)}async function*x({requestBody:e,signal:r,isAuthOptional:a=!0,requestContext:s}){if(r?.aborted)return;let{chatReq:c,turnstileToken:l,proofToken:d}=await m(void 0);if(r?.aborted)return;let f=n(c,l,d,null),p=u(`${o}/sidebar/conversation`,{method:`POST`,headers:{...t({isAuthOptional:a}),"Content-Type":`application/json`,...f,...s?.projectId&&i(s.projectId)?{"chatgpt-project-id":s.projectId,...s.ownerUserId?{"chatgpt-conv-owner-id":s.ownerUserId}:{}}:{}},body:e,routeName:`/sidebar/conversation`,requireDoneEvent:e.category===`shop_image`,signal:r});for await(let e of h(p)){if(r?.aborted)break;`data`in e&&y(e.data)&&(yield e.data)}}var S=e((()=>{f(),a(),p(),l(),d(),s(),c()}));export{_ as a,g as i,x as n,b as r,S as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Lrt as t,
+    Ol as n,
+    Sot as r,
+    bV as i,
+    gat as a,
+    hat as o,
+    jl as s,
+    pV as c,
+    z7 as l
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    QZt as u,
+    ZZt as d,
+    n$t as f,
+    nQt as p,
+    r$t as m,
+    tQt as h
+} from "./conversation-small-nmt18uiom3b14vca.js";
+
+function g({
+    conversationId: e,
+    sharedConversationId: t,
+    messageId: n,
+    category: i,
+    refId: a,
+    pinnedImage: o,
+    multiMessageMode: s = !1,
+    locale: c
+}) {
+    return {
+        conversation_id: e,
+        message_id: n,
+        category: `reference_entity`,
+        reference_entity_params: {
+            category: i,
+            ref_id: a,
+            ...t ? {
+                shared_conversation_id: t
+            } : {},
+            ...i === `business` ? {
+                multi_message_mode: s,
+                pinned_image: o
+            } : {}
+        },
+        locale: c,
+        supported_encodings: [r.V1]
+    }
+}
+var _ = e((() => {
+    p()
+}));
+
+function v(e) {
+    return typeof e == `object` && !!e
+}
+
+function y(e) {
+    return v(e) && (e.type === `__debug` || e.type === `message`) ? v(e.data) : !1
+}
+async function b({
+    requestBody: e,
+    signal: t,
+    onEvent: n,
+    isAuthOptional: r,
+    requestContext: i
+}) {
+    for await (let a of x({
+        requestBody: e,
+        signal: t,
+        isAuthOptional: r,
+        requestContext: i
+    })) n(a)
+}
+async function* x({
+    requestBody: e,
+    signal: r,
+    isAuthOptional: a = !0,
+    requestContext: s
+}) {
+    if (r?.aborted) return;
+    let {
+        chatReq: c,
+        turnstileToken: l,
+        proofToken: d
+    } = await m(void 0);
+    if (r?.aborted) return;
+    let f = n(c, l, d, null),
+        p = u(`${o}/sidebar/conversation`, {
+            method: `POST`,
+            headers: {
+                ...t({
+                    isAuthOptional: a
+                }),
+                "Content-Type": `application/json`,
+                ...f,
+                ...s?.projectId && i(s.projectId) ? {
+                    "chatgpt-project-id": s.projectId,
+                    ...s.ownerUserId ? {
+                        "chatgpt-conv-owner-id": s.ownerUserId
+                    } : {}
+                } : {}
+            },
+            body: e,
+            routeName: `/sidebar/conversation`,
+            requireDoneEvent: e.category === `shop_image`,
+            signal: r
+        });
+    for await (let e of h(p)) {
+        if (r?.aborted) break;
+        `data` in e && y(e.data) && (yield e.data)
+    }
+}
+var S = e((() => {
+    f(), a(), p(), l(), d(), s(), c()
+}));
+export {
+    _ as a, g as i, x as n, b as r, S as t
+};
 //# sourceMappingURL=2f772deb-lovwlkpfs8jaqjuw.js.map

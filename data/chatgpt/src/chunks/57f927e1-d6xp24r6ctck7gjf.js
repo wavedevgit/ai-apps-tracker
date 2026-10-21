@@ -1,3 +1,291 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/c87b043a-k9fcghneix2w2wqg.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-bo7e0c29ngt4zgx0.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/conversation-small-ikg0dwuw782klweb.js","assets/30901919-e8h11sw136qen6v0.js","assets/c470f5ab-ab47eubabs8jspdc.js","assets/0e5afe53-esm68l11os61djoy.js","assets/conversation-small-oilgsqfa.css","assets/c2675c8c-ejvs9hq3rwjwsbcv.js","assets/82782bc9-fcii2id0x6lspwtj.js","assets/8b34dbc2-dtawqv9t1aqckqj4.js","assets/global-modals-lv5n3ujm.css"])))=>i.map(i=>d[i]);
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Aat as t,F7 as n,Iat as r,J3 as i,JT as a,Ka as o,Mz as s,P1 as c,Q3 as l,R1 as u,Wa as d,X0 as f,YT as p,Z0 as m,bnt as h,jz as g,vnt as _,z7 as v}from"./4813494d-bo7e0c29ngt4zgx0.js";import{Bn as y,N as b,Nn as x,Rn as S,cn as C,ln as w,s as T,wn as E,zn as D}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Kst as O,Tat as k,aot as A,qst as j}from"./conversation-small-ikg0dwuw782klweb.js";import{TC as M,wC as N}from"./30901919-e8h11sw136qen6v0.js";import{Lx as P,ba as F,fS as I,sS as L,ya as R}from"./c2675c8c-ejvs9hq3rwjwsbcv.js";import{Bx as z,Hx as B,iS as V}from"./8b34dbc2-dtawqv9t1aqckqj4.js";function H(e){if(!(e instanceof Error)||!e.message)return null;let n=e instanceof t&&typeof e.detail?.message==`string`?e.detail.message:e.message;try{let e=L({type:I(),msg:I()}).safeParse(JSON.parse(n));if(e.success)return e.data.msg}catch{}return n}var U=e((()=>{r(),P()}));function W(e){let{open:t,onOpenChange:n,isSubmitting:r,...i}=e;return(0,Y.jsx)(d,{for:X,withProps:{...i,open:t,onOpenChange:n,isSubmitting:r},open:t,disableLightDismiss:r,onClose:()=>n(!1)})}function G(e){let{leadingControl:t,trailingControl:n,...r}=e;return(0,Y.jsx)(`div`,{className:`relative`,children:(0,Y.jsx)(O,{...r,name:r.id,ariaLabel:!1,color:`tertiary`,autoCapitalize:`off`,containerInputClassName:`ps-4 pe-6`,insideContainerChildren:(0,Y.jsxs)(Y.Fragment,{children:[(0,Y.jsx)(`span`,{className:`pointer-events-none absolute inset-y-0 start-0 flex items-center`,children:t}),(0,Y.jsx)(`span`,{className:`pointer-events-none absolute inset-y-0 end-0 flex items-center`,children:n})]})})})}function K(e){let{variant:t,...n}=e;return(0,Y.jsx)(a,{...n,color:t})}function q(e){return(0,Y.jsx)(`p`,{className:`border-token-border-status-warning bg-token-bg-status-warning text-token-text-status-warning rounded-2xl border px-4 py-3 text-sm leading-5`,children:e})}var J,Y,X,Z,Q,$=e((()=>{J=E(),p(),j(),s(),o(),M(),R(),u(),h(),v(),i(),V(),k(),m(),T(),S(),U(),Y=y(),w(),X=f(()=>C(()=>import(`./c87b043a-k9fcghneix2w2wqg.js`).then(e=>e.ProfileV2UsernameDialogContent),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13]))),Z=e=>{"use forget";let t=(0,J.c)(15),{value:n,accountId:r,pageScope:i,isSaving:a,isProfileEditing:o,presentation:s,onEditStarted:c,onSaved:l}=e,u=s===void 0?`inline`:s,d=b(),f;t[0]===i?f=t[1]:(f=()=>_.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:i,action:z.CODEX_PROFILE_EDIT_ACTION_USERNAME_CHANGE_STARTED}),t[0]=i,t[1]=f);let p;t[2]!==l||t[3]!==i||t[4]!==d?(p=async e=>{let t;try{t=await F(e)}catch(e){let t=e;throw _.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:i,action:z.CODEX_PROFILE_EDIT_ACTION_SAVE_FAILED,profileDetailsUpdateApiStatus:B.CODEX_PROFILE_EDIT_SAVE_API_STATUS_NOT_ATTEMPTED,usernameUpdateApiStatus:B.CODEX_PROFILE_EDIT_SAVE_API_STATUS_FAILED}),t}d.invalidateQueries({queryKey:[`account-username`]}),_.logStructuredEvent(`CodexProfileEditEvent`,{pageScope:i,action:z.CODEX_PROFILE_EDIT_ACTION_SAVE_SUCCEEDED,usernameUpdateApiStatus:B.CODEX_PROFILE_EDIT_SAVE_API_STATUS_SUCCEEDED}),l(t)},t[2]=l,t[3]=i,t[4]=d,t[5]=p):p=t[5];let m;return t[6]!==r||t[7]!==o||t[8]!==a||t[9]!==c||t[10]!==u||t[11]!==f||t[12]!==p||t[13]!==n?(m=(0,Y.jsx)(Q,{value:n,accountId:r,isSaving:a,isProfileEditing:o,presentation:u,onEditStarted:c,onChangeStarted:f,onSave:p}),t[6]=r,t[7]=o,t[8]=a,t[9]=c,t[10]=u,t[11]=f,t[12]=p,t[13]=n,t[14]=m):m=t[14],m},Q=e=>{"use forget";let t=(0,J.c)(24),{value:r,accountId:i,isSaving:a,isProfileEditing:o,presentation:s,onClose:u,onEditStarted:d,onChangeStarted:f,onSave:p}=e,m=o!==void 0&&o,h=s===void 0?`inline`:s,_=D(),v=b(),y=h===`dialog`,S;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(S=l(c()?.planType),t[0]=S):S=t[0];let C;t[1]!==a||t[2]!==h?(C=h===`inline`?void 0:e=>{let{children:t,...n}=e;return h===`dialog`?null:(0,Y.jsxs)(`button`,{...n,type:`button`,disabled:a,className:`interactive-button interactive-bg-secondary flex w-full items-center justify-between gap-4 px-4 py-3 text-sm`,children:[(0,Y.jsx)(x,{id:`profile.usernameInputLabel`,defaultMessage:`Username`}),(0,Y.jsxs)(`span`,{className:`text-token-text-secondary flex min-w-0 items-center gap-2`,children:[(0,Y.jsx)(`span`,{className:`truncate`,children:t}),(0,Y.jsx)(N,{className:`icon-sm shrink-0`})]})]})},t[1]=a,t[2]=h,t[3]=C):C=t[3];let w;t[4]!==i||t[5]!==v?(w=e=>v.fetchQuery({queryKey:[`profile`,`username-availability`,i,e],queryFn:()=>n.safePost(`/wham/profiles/username/check`,{additionalHeaders:{"ChatGPT-Account-ID":i},requestBody:{username:e}}),retry:!1,staleTime:1e4}),t[4]=i,t[5]=v,t[6]=w):w=t[6];let T;t[7]===_?T=t[8]:(T=e=>H(e)??_.formatMessage({id:`profile.usernameUpdateError`,defaultMessage:`Unable to update username`}),t[7]=_,t[8]=T);let E;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(E=(0,Y.jsx)(g,{className:`size-4`}),t[9]=E):E=t[9];let O;return t[10]!==i||t[11]!==_||t[12]!==m||t[13]!==a||t[14]!==f||t[15]!==u||t[16]!==d||t[17]!==p||t[18]!==y||t[19]!==C||t[20]!==w||t[21]!==T||t[22]!==r?(O=(0,Y.jsx)(A,{defaultOpen:y,showSiteUrlWarning:!S,onClose:u,value:r,accountId:i,isSaving:a,isProfileEditing:m,onEditStarted:d,intl:_,renderTrigger:C,checkAvailability:w,formatSaveError:T,onChangeStarted:f,onSave:p,renderDialog:W,renderInput:G,renderButton:K,renderWarning:q,spinner:E}),t[10]=i,t[11]=_,t[12]=m,t[13]=a,t[14]=f,t[15]=u,t[16]=d,t[17]=p,t[18]=y,t[19]=C,t[20]=w,t[21]=T,t[22]=r,t[23]=O):O=t[23],O}}));export{U as a,H as i,Z as n,$ as r,Q as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/c87b043a-k9fcghneix2w2wqg.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-bo7e0c29ngt4zgx0.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-ikg0dwuw782klweb.js", "assets/30901919-e8h11sw136qen6v0.js", "assets/c470f5ab-ab47eubabs8jspdc.js", "assets/0e5afe53-esm68l11os61djoy.js", "assets/conversation-small-oilgsqfa.css", "assets/c2675c8c-ejvs9hq3rwjwsbcv.js", "assets/82782bc9-fcii2id0x6lspwtj.js", "assets/8b34dbc2-dtawqv9t1aqckqj4.js", "assets/global-modals-lv5n3ujm.css"]))) => i.map(i => d[i]);
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Aat as t,
+    F7 as n,
+    Iat as r,
+    J3 as i,
+    JT as a,
+    Ka as o,
+    Mz as s,
+    P1 as c,
+    Q3 as l,
+    R1 as u,
+    Wa as d,
+    X0 as f,
+    YT as p,
+    Z0 as m,
+    bnt as h,
+    jz as g,
+    vnt as _,
+    z7 as v
+} from "./4813494d-bo7e0c29ngt4zgx0.js";
+import {
+    Bn as y,
+    N as b,
+    Nn as x,
+    Rn as S,
+    cn as C,
+    ln as w,
+    s as T,
+    wn as E,
+    zn as D
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Kst as O,
+    Tat as k,
+    aot as A,
+    qst as j
+} from "./conversation-small-ikg0dwuw782klweb.js";
+import {
+    TC as M,
+    wC as N
+} from "./30901919-e8h11sw136qen6v0.js";
+import {
+    Lx as P,
+    ba as F,
+    fS as I,
+    sS as L,
+    ya as R
+} from "./c2675c8c-ejvs9hq3rwjwsbcv.js";
+import {
+    Bx as z,
+    Hx as B,
+    iS as V
+} from "./8b34dbc2-dtawqv9t1aqckqj4.js";
+
+function H(e) {
+    if (!(e instanceof Error) || !e.message) return null;
+    let n = e instanceof t && typeof e.detail?.message == `string` ? e.detail.message : e.message;
+    try {
+        let e = L({
+            type: I(),
+            msg: I()
+        }).safeParse(JSON.parse(n));
+        if (e.success) return e.data.msg
+    } catch {}
+    return n
+}
+var U = e((() => {
+    r(), P()
+}));
+
+function W(e) {
+    let {
+        open: t,
+        onOpenChange: n,
+        isSubmitting: r,
+        ...i
+    } = e;
+    return (0, Y.jsx)(d, {
+        for: X,
+        withProps: {
+            ...i,
+            open: t,
+            onOpenChange: n,
+            isSubmitting: r
+        },
+        open: t,
+        disableLightDismiss: r,
+        onClose: () => n(!1)
+    })
+}
+
+function G(e) {
+    let {
+        leadingControl: t,
+        trailingControl: n,
+        ...r
+    } = e;
+    return (0, Y.jsx)(`div`, {
+        className: `relative`,
+        children: (0, Y.jsx)(O, {
+            ...r,
+            name: r.id,
+            ariaLabel: !1,
+            color: `tertiary`,
+            autoCapitalize: `off`,
+            containerInputClassName: `ps-4 pe-6`,
+            insideContainerChildren: (0, Y.jsxs)(Y.Fragment, {
+                children: [(0, Y.jsx)(`span`, {
+                    className: `pointer-events-none absolute inset-y-0 start-0 flex items-center`,
+                    children: t
+                }), (0, Y.jsx)(`span`, {
+                    className: `pointer-events-none absolute inset-y-0 end-0 flex items-center`,
+                    children: n
+                })]
+            })
+        })
+    })
+}
+
+function K(e) {
+    let {
+        variant: t,
+        ...n
+    } = e;
+    return (0, Y.jsx)(a, {
+        ...n,
+        color: t
+    })
+}
+
+function q(e) {
+    return (0, Y.jsx)(`p`, {
+        className: `border-token-border-status-warning bg-token-bg-status-warning text-token-text-status-warning rounded-2xl border px-4 py-3 text-sm leading-5`,
+        children: e
+    })
+}
+var J, Y, X, Z, Q, $ = e((() => {
+    J = E(), p(), j(), s(), o(), M(), R(), u(), h(), v(), i(), V(), k(), m(), T(), S(), U(), Y = y(), w(), X = f(() => C(() => import(`./c87b043a-k9fcghneix2w2wqg.js`).then(e => e.ProfileV2UsernameDialogContent), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))), Z = e => {
+        "use forget";
+        let t = (0, J.c)(15),
+            {
+                value: n,
+                accountId: r,
+                pageScope: i,
+                isSaving: a,
+                isProfileEditing: o,
+                presentation: s,
+                onEditStarted: c,
+                onSaved: l
+            } = e,
+            u = s === void 0 ? `inline` : s,
+            d = b(),
+            f;
+        t[0] === i ? f = t[1] : (f = () => _.logStructuredEvent(`CodexProfileEditEvent`, {
+            pageScope: i,
+            action: z.CODEX_PROFILE_EDIT_ACTION_USERNAME_CHANGE_STARTED
+        }), t[0] = i, t[1] = f);
+        let p;
+        t[2] !== l || t[3] !== i || t[4] !== d ? (p = async e => {
+            let t;
+            try {
+                t = await F(e)
+            } catch (e) {
+                let t = e;
+                throw _.logStructuredEvent(`CodexProfileEditEvent`, {
+                    pageScope: i,
+                    action: z.CODEX_PROFILE_EDIT_ACTION_SAVE_FAILED,
+                    profileDetailsUpdateApiStatus: B.CODEX_PROFILE_EDIT_SAVE_API_STATUS_NOT_ATTEMPTED,
+                    usernameUpdateApiStatus: B.CODEX_PROFILE_EDIT_SAVE_API_STATUS_FAILED
+                }), t
+            }
+            d.invalidateQueries({
+                queryKey: [`account-username`]
+            }), _.logStructuredEvent(`CodexProfileEditEvent`, {
+                pageScope: i,
+                action: z.CODEX_PROFILE_EDIT_ACTION_SAVE_SUCCEEDED,
+                usernameUpdateApiStatus: B.CODEX_PROFILE_EDIT_SAVE_API_STATUS_SUCCEEDED
+            }), l(t)
+        }, t[2] = l, t[3] = i, t[4] = d, t[5] = p) : p = t[5];
+        let m;
+        return t[6] !== r || t[7] !== o || t[8] !== a || t[9] !== c || t[10] !== u || t[11] !== f || t[12] !== p || t[13] !== n ? (m = (0, Y.jsx)(Q, {
+            value: n,
+            accountId: r,
+            isSaving: a,
+            isProfileEditing: o,
+            presentation: u,
+            onEditStarted: c,
+            onChangeStarted: f,
+            onSave: p
+        }), t[6] = r, t[7] = o, t[8] = a, t[9] = c, t[10] = u, t[11] = f, t[12] = p, t[13] = n, t[14] = m) : m = t[14], m
+    }, Q = e => {
+        "use forget";
+        let t = (0, J.c)(24),
+            {
+                value: r,
+                accountId: i,
+                isSaving: a,
+                isProfileEditing: o,
+                presentation: s,
+                onClose: u,
+                onEditStarted: d,
+                onChangeStarted: f,
+                onSave: p
+            } = e,
+            m = o !== void 0 && o,
+            h = s === void 0 ? `inline` : s,
+            _ = D(),
+            v = b(),
+            y = h === `dialog`,
+            S;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (S = l(c()?.planType), t[0] = S) : S = t[0];
+        let C;
+        t[1] !== a || t[2] !== h ? (C = h === `inline` ? void 0 : e => {
+            let {
+                children: t,
+                ...n
+            } = e;
+            return h === `dialog` ? null : (0, Y.jsxs)(`button`, {
+                ...n,
+                type: `button`,
+                disabled: a,
+                className: `interactive-button interactive-bg-secondary flex w-full items-center justify-between gap-4 px-4 py-3 text-sm`,
+                children: [(0, Y.jsx)(x, {
+                    id: `profile.usernameInputLabel`,
+                    defaultMessage: `Username`
+                }), (0, Y.jsxs)(`span`, {
+                    className: `text-token-text-secondary flex min-w-0 items-center gap-2`,
+                    children: [(0, Y.jsx)(`span`, {
+                        className: `truncate`,
+                        children: t
+                    }), (0, Y.jsx)(N, {
+                        className: `icon-sm shrink-0`
+                    })]
+                })]
+            })
+        }, t[1] = a, t[2] = h, t[3] = C) : C = t[3];
+        let w;
+        t[4] !== i || t[5] !== v ? (w = e => v.fetchQuery({
+            queryKey: [`profile`, `username-availability`, i, e],
+            queryFn: () => n.safePost(`/wham/profiles/username/check`, {
+                additionalHeaders: {
+                    "ChatGPT-Account-ID": i
+                },
+                requestBody: {
+                    username: e
+                }
+            }),
+            retry: !1,
+            staleTime: 1e4
+        }), t[4] = i, t[5] = v, t[6] = w) : w = t[6];
+        let T;
+        t[7] === _ ? T = t[8] : (T = e => H(e) ?? _.formatMessage({
+            id: `profile.usernameUpdateError`,
+            defaultMessage: `Unable to update username`
+        }), t[7] = _, t[8] = T);
+        let E;
+        t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, Y.jsx)(g, {
+            className: `size-4`
+        }), t[9] = E) : E = t[9];
+        let O;
+        return t[10] !== i || t[11] !== _ || t[12] !== m || t[13] !== a || t[14] !== f || t[15] !== u || t[16] !== d || t[17] !== p || t[18] !== y || t[19] !== C || t[20] !== w || t[21] !== T || t[22] !== r ? (O = (0, Y.jsx)(A, {
+            defaultOpen: y,
+            showSiteUrlWarning: !S,
+            onClose: u,
+            value: r,
+            accountId: i,
+            isSaving: a,
+            isProfileEditing: m,
+            onEditStarted: d,
+            intl: _,
+            renderTrigger: C,
+            checkAvailability: w,
+            formatSaveError: T,
+            onChangeStarted: f,
+            onSave: p,
+            renderDialog: W,
+            renderInput: G,
+            renderButton: K,
+            renderWarning: q,
+            spinner: E
+        }), t[10] = i, t[11] = _, t[12] = m, t[13] = a, t[14] = f, t[15] = u, t[16] = d, t[17] = p, t[18] = y, t[19] = C, t[20] = w, t[21] = T, t[22] = r, t[23] = O) : O = t[23], O
+    }
+}));
+export {
+    U as a, H as i, Z as n, $ as r, Q as t
+};
 //# sourceMappingURL=57f927e1-d6xp24r6ctck7gjf.js.map

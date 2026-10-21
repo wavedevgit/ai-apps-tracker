@@ -1,2 +1,250 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Jy as ee,Ky as n,Xy as r,Yy as te}from"./4813494d-qsuygr73qjc6rh65.js";import{Bn as ne,Hn as i,Rn as a,Tn as o,Vn as s,zn as c}from"./2340486e-komxp8tzs51ny4jj.js";import{d_ as l,f_ as u}from"./8b34dbc2-d4icgkio4i3wfm6q.js";import{i as d,n as f,r as re,t as ie}from"./74bc827c-g6f4ojoj3km3iq09.js";import{a as p,l as m,r as ae,u as oe}from"./a99a60c9-lbvi2f4bdeuixh3h.js";function h(e){"use forget";let t=(0,ce.c)(97),{ariaLabel:r,role:i,defaultRole:a,permissionName:o,parentPermissionName:s,dependencyDisabledMessage:c,additionalPermissionNames:u,permissionNamesToAddWhenEnabled:d,permissionNamesToRemoveWhenDisabled:p,onChange:m,enableConfirmation:h,disabled:ue,disabledReason:v,renderDisabledAsOff:de,highlightEnabledStates:fe,preventDisabling:pe,preventDisablingReason:y,renderTrigger:me}=e,b=u===void 0?[]:u,x;t[0]===d?x=t[1]:(x=d===void 0?[]:d,t[0]=d,t[1]=x);let S=x,C;t[2]===p?C=t[3]:(C=p===void 0?[]:p,t[2]=p,t[3]=C);let w=C,T=ue!==void 0&&ue,he=de!==void 0&&de,ge=fe!==void 0&&fe,E=pe!==void 0&&pe,D=ne(),[O,k]=(0,le.useState)(null),_e=f({role:i,permissionName:o,additionalPermissionNames:b}),A=T&&he?`off`:_e,j,M;t[4]!==a||t[5]!==s||t[6]!==i?(j=ie({role:i,defaultRole:a}),M=s==null||j.includes(s),t[4]=a,t[5]=s,t[6]=i,t[7]=j,t[8]=M):(j=t[7],M=t[8]);let N=M,P;t[9]!==N||t[10]!==c||t[11]!==D?(P=!N&&c!=null?D.formatMessage(c):void 0,t[9]=N,t[10]=c,t[11]=D,t[12]=P):P=t[12];let F=P,I=[o,...b].every(e=>a.permissions.includes(e)),L,R,z,B,V,H,U,W,G,K,q;if(t[13]!==b||t[14]!==r||t[15]!==N||t[16]!==a||t[17]!==F||t[18]!==T||t[19]!==j||t[20]!==h||t[21]!==ge||t[22]!==D||t[23]!==I||t[24]!==m||t[25]!==o||t[26]!==S||t[27]!==w||t[28]!==E||t[29]!==y||t[30]!==me||t[31]!==i||t[32]!==k||t[33]!==A){let e=D.formatMessage(oe.on),n=D.formatMessage(oe.off),ne=D.formatMessage(_.defaultOn),s=D.formatMessage(_.defaultOff);V={on:e,off:n,default:I?ne:s};let c=[e,n,ne,s],u=ge&&(A===`on`||A==="default"&&I),d;t[45]!==I||t[46]!==E?(d=e=>E&&(e===`off`||e==="default"&&!I),t[45]=I,t[46]=E,t[47]=d):d=t[47];let f=d;B=l.Root,W=A,G=T,t[48]!==b||t[49]!==N||t[50]!==a||t[51]!==j||t[52]!==h||t[53]!==m||t[54]!==o||t[55]!==S||t[56]!==w||t[57]!==i||t[58]!==k||t[59]!==f?(K=e=>{if(e!==`on`&&e!==`off`&&e!=="default"||f(e)||e===`on`&&!N)return;let t={...i,...re({role:i,state:e,permissionName:o,additionalPermissionNames:e===`on`?[...b,...S]:b,permissionNamesToRemoveWhenDisabled:w,defaultRole:a})},ee=[o,...b],n=ee.every(e=>j.includes(e)),r=ie({role:t,defaultRole:a}),te=ee.every(e=>r.includes(e));if(h!=null&&!n&&te){k(t);return}m(t)},t[48]=b,t[49]=N,t[50]=a,t[51]=j,t[52]=h,t[53]=m,t[54]=o,t[55]=S,t[56]=w,t[57]=i,t[58]=k,t[59]=f,t[60]=K):K=t[60],q=me?.({enabled:A===`on`||A==="default"&&I,inherited:A==="default"})??(0,g.jsx)(te,{label:V[A],className:`inline-flex w-max max-w-[240px] min-w-[140px]`,disabled:T,children:(0,g.jsxs)(l.Trigger,{"aria-label":r,className:`w-max max-w-[240px] min-w-[140px] justify-between rounded-lg border ${u?`border-token-theme-blue-default bg-token-theme-blue-background text-token-theme-blue-text-on-background hover:bg-token-theme-blue-default/15 transition-colors`:`border-token-border-default`}`,children:[(0,g.jsxs)(`span`,{className:`grid min-w-0 overflow-hidden [&>*]:col-start-1 [&>*]:row-start-1`,children:[(0,g.jsx)(`span`,{className:`min-w-0 truncate text-start`,children:(0,g.jsx)(l.Value,{children:V[A]})}),c.map(se)]}),(0,g.jsx)(`span`,{className:`shrink-0`,children:(0,g.jsx)(l.Icon,{})})]})}),z=l.Portal,R=l.Content,U=`w-[var(--radix-select-trigger-width)] min-w-[var(--radix-select-trigger-width)]!`,L=ee,H=[`default`,`on`,`off`].map(e=>(0,g.jsx)(te,{triggerAs:null,label:y?D.formatMessage(y):void 0,disabled:!y||!f(e),children:(0,g.jsx)(l.Item,{value:e,disabled:e===`on`&&!N||f(e),secondary:e==="default"?D.formatMessage(_.currentDefault,{value:V[I?`on`:`off`]}):e===`on`?F:void 0,children:e==="default"?D.formatMessage(_.defaultOption):V[e]})},e)),t[13]=b,t[14]=r,t[15]=N,t[16]=a,t[17]=F,t[18]=T,t[19]=j,t[20]=h,t[21]=ge,t[22]=D,t[23]=I,t[24]=m,t[25]=o,t[26]=S,t[27]=w,t[28]=E,t[29]=y,t[30]=me,t[31]=i,t[32]=k,t[33]=A,t[34]=L,t[35]=R,t[36]=z,t[37]=B,t[38]=V,t[39]=H,t[40]=U,t[41]=W,t[42]=G,t[43]=K,t[44]=q}else L=t[34],R=t[35],z=t[36],B=t[37],V=t[38],H=t[39],U=t[40],W=t[41],G=t[42],K=t[43],q=t[44];let J;t[61]!==L||t[62]!==H?(J=(0,g.jsx)(L,{children:H}),t[61]=L,t[62]=H,t[63]=J):J=t[63];let Y;t[64]!==R||t[65]!==U||t[66]!==J?(Y=(0,g.jsx)(R,{className:U,children:J}),t[64]=R,t[65]=U,t[66]=J,t[67]=Y):Y=t[67];let X;t[68]!==z||t[69]!==Y?(X=(0,g.jsx)(z,{children:Y}),t[68]=z,t[69]=Y,t[70]=X):X=t[70];let Z;t[71]!==B||t[72]!==W||t[73]!==G||t[74]!==K||t[75]!==q||t[76]!==X?(Z=(0,g.jsx)(n,{children:(0,g.jsxs)(B,{value:W,disabled:G,onValueChange:K,children:[q,X]})}),t[71]=B,t[72]=W,t[73]=G,t[74]=K,t[75]=q,t[76]=X,t[77]=Z):Z=t[77];let ve=Z,ye;t[78]!==T||t[79]!==v||t[80]!==D||t[81]!==V||t[82]!==ve||t[83]!==A?(ye=T&&v?(0,g.jsx)(te,{label:D.formatMessage(v),secondaryLabel:V[A],children:(0,g.jsx)(`div`,{className:`flex min-w-0`,children:ve})}):ve,t[78]=T,t[79]=v,t[80]=D,t[81]=V,t[82]=ve,t[83]=A,t[84]=ye):ye=t[84];let be=ye,Q;t[85]===F?Q=t[86]:(Q=F!=null&&(0,g.jsx)(`div`,{className:`text-token-text-tertiary max-w-[240px] text-end text-xs`,children:F}),t[85]=F,t[86]=Q);let $;t[87]!==r||t[88]!==h||t[89]!==m||t[90]!==O||t[91]!==k?($=O!=null&&h!=null&&(0,g.jsx)(ae,{title:r,confirmation:h,onConfirm:()=>{m(O),k(null)},onClose:()=>k(null)}),t[87]=r,t[88]=h,t[89]=m,t[90]=O,t[91]=k,t[92]=$):$=t[92];let xe;return t[93]!==be||t[94]!==Q||t[95]!==$?(xe=(0,g.jsxs)(`div`,{className:`flex flex-col items-end gap-1`,children:[be,Q,$]}),t[93]=be,t[94]=Q,t[95]=$,t[96]=xe):xe=t[96],xe}function se(e,t){return(0,g.jsx)(`span`,{"aria-hidden":!0,className:`invisible min-w-0 whitespace-nowrap`,children:e},t)}var ce,le,g,_,ue=e((()=>{ce=o(),m(),p(),d(),u(),r(),le=t(i()),c(),g=s(),_=a({defaultOn:{id:`workspaceSettings.roles.permissionOverride.defaultOn`,defaultMessage:`On (Default)`},defaultOff:{id:`workspaceSettings.roles.permissionOverride.defaultOff`,defaultMessage:`Off (Default)`},defaultOption:{id:`workspaceSettings.roles.permissionOverride.default`,defaultMessage:`Default`},currentDefault:{id:`workspaceSettings.roles.permissionOverride.currentDefault`,defaultMessage:`Current: {value}`}})}));export{ue as n,h as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Jy as ee,
+    Ky as n,
+    Xy as r,
+    Yy as te
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Bn as ne,
+    Hn as i,
+    Rn as a,
+    Tn as o,
+    Vn as s,
+    zn as c
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    d_ as l,
+    f_ as u
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+import {
+    i as d,
+    n as f,
+    r as re,
+    t as ie
+} from "./74bc827c-g6f4ojoj3km3iq09.js";
+import {
+    a as p,
+    l as m,
+    r as ae,
+    u as oe
+} from "./a99a60c9-lbvi2f4bdeuixh3h.js";
+
+function h(e) {
+    "use forget";
+    let t = (0, ce.c)(97),
+        {
+            ariaLabel: r,
+            role: i,
+            defaultRole: a,
+            permissionName: o,
+            parentPermissionName: s,
+            dependencyDisabledMessage: c,
+            additionalPermissionNames: u,
+            permissionNamesToAddWhenEnabled: d,
+            permissionNamesToRemoveWhenDisabled: p,
+            onChange: m,
+            enableConfirmation: h,
+            disabled: ue,
+            disabledReason: v,
+            renderDisabledAsOff: de,
+            highlightEnabledStates: fe,
+            preventDisabling: pe,
+            preventDisablingReason: y,
+            renderTrigger: me
+        } = e,
+        b = u === void 0 ? [] : u,
+        x;
+    t[0] === d ? x = t[1] : (x = d === void 0 ? [] : d, t[0] = d, t[1] = x);
+    let S = x,
+        C;
+    t[2] === p ? C = t[3] : (C = p === void 0 ? [] : p, t[2] = p, t[3] = C);
+    let w = C,
+        T = ue !== void 0 && ue,
+        he = de !== void 0 && de,
+        ge = fe !== void 0 && fe,
+        E = pe !== void 0 && pe,
+        D = ne(),
+        [O, k] = (0, le.useState)(null),
+        _e = f({
+            role: i,
+            permissionName: o,
+            additionalPermissionNames: b
+        }),
+        A = T && he ? `off` : _e,
+        j, M;
+    t[4] !== a || t[5] !== s || t[6] !== i ? (j = ie({
+        role: i,
+        defaultRole: a
+    }), M = s == null || j.includes(s), t[4] = a, t[5] = s, t[6] = i, t[7] = j, t[8] = M) : (j = t[7], M = t[8]);
+    let N = M,
+        P;
+    t[9] !== N || t[10] !== c || t[11] !== D ? (P = !N && c != null ? D.formatMessage(c) : void 0, t[9] = N, t[10] = c, t[11] = D, t[12] = P) : P = t[12];
+    let F = P,
+        I = [o, ...b].every(e => a.permissions.includes(e)),
+        L, R, z, B, V, H, U, W, G, K, q;
+    if (t[13] !== b || t[14] !== r || t[15] !== N || t[16] !== a || t[17] !== F || t[18] !== T || t[19] !== j || t[20] !== h || t[21] !== ge || t[22] !== D || t[23] !== I || t[24] !== m || t[25] !== o || t[26] !== S || t[27] !== w || t[28] !== E || t[29] !== y || t[30] !== me || t[31] !== i || t[32] !== k || t[33] !== A) {
+        let e = D.formatMessage(oe.on),
+            n = D.formatMessage(oe.off),
+            ne = D.formatMessage(_.defaultOn),
+            s = D.formatMessage(_.defaultOff);
+        V = {
+            on: e,
+            off: n,
+            default: I ? ne : s
+        };
+        let c = [e, n, ne, s],
+            u = ge && (A === `on` || A === "default" && I),
+            d;
+        t[45] !== I || t[46] !== E ? (d = e => E && (e === `off` || e === "default" && !I), t[45] = I, t[46] = E, t[47] = d) : d = t[47];
+        let f = d;
+        B = l.Root, W = A, G = T, t[48] !== b || t[49] !== N || t[50] !== a || t[51] !== j || t[52] !== h || t[53] !== m || t[54] !== o || t[55] !== S || t[56] !== w || t[57] !== i || t[58] !== k || t[59] !== f ? (K = e => {
+            if (e !== `on` && e !== `off` && e !== "default" || f(e) || e === `on` && !N) return;
+            let t = {
+                    ...i,
+                    ...re({
+                        role: i,
+                        state: e,
+                        permissionName: o,
+                        additionalPermissionNames: e === `on` ? [...b, ...S] : b,
+                        permissionNamesToRemoveWhenDisabled: w,
+                        defaultRole: a
+                    })
+                },
+                ee = [o, ...b],
+                n = ee.every(e => j.includes(e)),
+                r = ie({
+                    role: t,
+                    defaultRole: a
+                }),
+                te = ee.every(e => r.includes(e));
+            if (h != null && !n && te) {
+                k(t);
+                return
+            }
+            m(t)
+        }, t[48] = b, t[49] = N, t[50] = a, t[51] = j, t[52] = h, t[53] = m, t[54] = o, t[55] = S, t[56] = w, t[57] = i, t[58] = k, t[59] = f, t[60] = K) : K = t[60], q = me?.({
+            enabled: A === `on` || A === "default" && I,
+            inherited: A === "default"
+        }) ?? (0, g.jsx)(te, {
+            label: V[A],
+            className: `inline-flex w-max max-w-[240px] min-w-[140px]`,
+            disabled: T,
+            children: (0, g.jsxs)(l.Trigger, {
+                "aria-label": r,
+                className: `w-max max-w-[240px] min-w-[140px] justify-between rounded-lg border ${u?`border-token-theme-blue-default bg-token-theme-blue-background text-token-theme-blue-text-on-background hover:bg-token-theme-blue-default/15 transition-colors`:`border-token-border-default`}`,
+                children: [(0, g.jsxs)(`span`, {
+                    className: `grid min-w-0 overflow-hidden [&>*]:col-start-1 [&>*]:row-start-1`,
+                    children: [(0, g.jsx)(`span`, {
+                        className: `min-w-0 truncate text-start`,
+                        children: (0, g.jsx)(l.Value, {
+                            children: V[A]
+                        })
+                    }), c.map(se)]
+                }), (0, g.jsx)(`span`, {
+                    className: `shrink-0`,
+                    children: (0, g.jsx)(l.Icon, {})
+                })]
+            })
+        }), z = l.Portal, R = l.Content, U = `w-[var(--radix-select-trigger-width)] min-w-[var(--radix-select-trigger-width)]!`, L = ee, H = [`default`, `on`, `off`].map(e => (0, g.jsx)(te, {
+            triggerAs: null,
+            label: y ? D.formatMessage(y) : void 0,
+            disabled: !y || !f(e),
+            children: (0, g.jsx)(l.Item, {
+                value: e,
+                disabled: e === `on` && !N || f(e),
+                secondary: e === "default" ? D.formatMessage(_.currentDefault, {
+                    value: V[I ? `on` : `off`]
+                }) : e === `on` ? F : void 0,
+                children: e === "default" ? D.formatMessage(_.defaultOption) : V[e]
+            })
+        }, e)), t[13] = b, t[14] = r, t[15] = N, t[16] = a, t[17] = F, t[18] = T, t[19] = j, t[20] = h, t[21] = ge, t[22] = D, t[23] = I, t[24] = m, t[25] = o, t[26] = S, t[27] = w, t[28] = E, t[29] = y, t[30] = me, t[31] = i, t[32] = k, t[33] = A, t[34] = L, t[35] = R, t[36] = z, t[37] = B, t[38] = V, t[39] = H, t[40] = U, t[41] = W, t[42] = G, t[43] = K, t[44] = q
+    } else L = t[34], R = t[35], z = t[36], B = t[37], V = t[38], H = t[39], U = t[40], W = t[41], G = t[42], K = t[43], q = t[44];
+    let J;
+    t[61] !== L || t[62] !== H ? (J = (0, g.jsx)(L, {
+        children: H
+    }), t[61] = L, t[62] = H, t[63] = J) : J = t[63];
+    let Y;
+    t[64] !== R || t[65] !== U || t[66] !== J ? (Y = (0, g.jsx)(R, {
+        className: U,
+        children: J
+    }), t[64] = R, t[65] = U, t[66] = J, t[67] = Y) : Y = t[67];
+    let X;
+    t[68] !== z || t[69] !== Y ? (X = (0, g.jsx)(z, {
+        children: Y
+    }), t[68] = z, t[69] = Y, t[70] = X) : X = t[70];
+    let Z;
+    t[71] !== B || t[72] !== W || t[73] !== G || t[74] !== K || t[75] !== q || t[76] !== X ? (Z = (0, g.jsx)(n, {
+        children: (0, g.jsxs)(B, {
+            value: W,
+            disabled: G,
+            onValueChange: K,
+            children: [q, X]
+        })
+    }), t[71] = B, t[72] = W, t[73] = G, t[74] = K, t[75] = q, t[76] = X, t[77] = Z) : Z = t[77];
+    let ve = Z,
+        ye;
+    t[78] !== T || t[79] !== v || t[80] !== D || t[81] !== V || t[82] !== ve || t[83] !== A ? (ye = T && v ? (0, g.jsx)(te, {
+        label: D.formatMessage(v),
+        secondaryLabel: V[A],
+        children: (0, g.jsx)(`div`, {
+            className: `flex min-w-0`,
+            children: ve
+        })
+    }) : ve, t[78] = T, t[79] = v, t[80] = D, t[81] = V, t[82] = ve, t[83] = A, t[84] = ye) : ye = t[84];
+    let be = ye,
+        Q;
+    t[85] === F ? Q = t[86] : (Q = F != null && (0, g.jsx)(`div`, {
+        className: `text-token-text-tertiary max-w-[240px] text-end text-xs`,
+        children: F
+    }), t[85] = F, t[86] = Q);
+    let $;
+    t[87] !== r || t[88] !== h || t[89] !== m || t[90] !== O || t[91] !== k ? ($ = O != null && h != null && (0, g.jsx)(ae, {
+        title: r,
+        confirmation: h,
+        onConfirm: () => {
+            m(O), k(null)
+        },
+        onClose: () => k(null)
+    }), t[87] = r, t[88] = h, t[89] = m, t[90] = O, t[91] = k, t[92] = $) : $ = t[92];
+    let xe;
+    return t[93] !== be || t[94] !== Q || t[95] !== $ ? (xe = (0, g.jsxs)(`div`, {
+        className: `flex flex-col items-end gap-1`,
+        children: [be, Q, $]
+    }), t[93] = be, t[94] = Q, t[95] = $, t[96] = xe) : xe = t[96], xe
+}
+
+function se(e, t) {
+    return (0, g.jsx)(`span`, {
+        "aria-hidden": !0,
+        className: `invisible min-w-0 whitespace-nowrap`,
+        children: e
+    }, t)
+}
+var ce, le, g, _, ue = e((() => {
+    ce = o(), m(), p(), d(), u(), r(), le = t(i()), c(), g = s(), _ = a({
+        defaultOn: {
+            id: `workspaceSettings.roles.permissionOverride.defaultOn`,
+            defaultMessage: `On (Default)`
+        },
+        defaultOff: {
+            id: `workspaceSettings.roles.permissionOverride.defaultOff`,
+            defaultMessage: `Off (Default)`
+        },
+        defaultOption: {
+            id: `workspaceSettings.roles.permissionOverride.default`,
+            defaultMessage: `Default`
+        },
+        currentDefault: {
+            id: `workspaceSettings.roles.permissionOverride.currentDefault`,
+            defaultMessage: `Current: {value}`
+        }
+    })
+}));
+export {
+    ue as n, h as t
+};
 //# sourceMappingURL=1f14d113-bzm956gbzbwltmsm.js.map

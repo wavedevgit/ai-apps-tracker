@@ -1,2 +1,229 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{X5 as t,Y5 as n}from"./4813494d-tap9fxyhk4ehe0bs.js";import{Bn as r,Ln as i,Rn as a,wn as o}from"./2340486e-i7pjxgdhv0bs6apg.js";import{IHn as s,LHn as c,RHn as l}from"./conversation-small-nmt18uiom3b14vca.js";import{DC as u,EC as d,Kc as f,ay as p,iy as m,qc as h}from"./30901919-niqyapppecmq5jkn.js";function g(e){"use forget";let t=(0,E.c)(45),{disabled:r,labelId:i,onChange:a,options:o,placeholder:l,triggerVariant:u,triggerId:p,value:h}=e,g=r!==void 0&&r,_=u===void 0?`default`:u,v;if(t[0]!==o||t[1]!==h){let e;t[3]===h?e=t[4]:(e=e=>e.value===h,t[3]=h,t[4]=e),v=o.find(e),t[0]=o,t[1]=h,t[2]=v}else v=t[2];let y=v,b=y?.triggerLabel??l,x=y==null,S=`${p}-value`,C=_===`inline`,w=C?`end`:`start`,T=C?`min-w-44 p-0`:`w-[var(--trigger-width)] p-0`,O=`${p}-trigger`,k=`${i} ${S}`,A=C?`focus-visible:outline-token-border-default -m-2 inline-flex items-center gap-1.5 rounded-md px-2 py-2 text-start text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2`:`border-token-border-heavy bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary flex h-10 w-full items-center gap-2 rounded-xl border px-3 text-sm focus:ring-1 focus:outline-hidden`,j=g?`cursor-not-allowed opacity-60`:`radix-state-open:bg-token-interactive-bg-secondary-press cursor-pointer hover:bg-token-interactive-bg-secondary-hover hover:text-token-text-secondary active:bg-token-interactive-bg-secondary-press`,M;t[5]!==A||t[6]!==j?(M=n(A,j),t[5]=A,t[6]=j,t[7]=M):M=t[7];let N;t[8]===C?N=t[9]:(N=!C&&(0,D.jsx)(m,{"aria-hidden":!0,className:`icon-sm text-token-text-tertiary shrink-0`}),t[8]=C,t[9]=N);let P=C?`text-token-text-primary truncate font-medium whitespace-nowrap`:`min-w-0 flex-1 truncate text-start`,F=x&&`text-token-text-tertiary`,I;t[10]!==P||t[11]!==F?(I=n(P,F),t[10]=P,t[11]=F,t[12]=I):I=t[12];let L;t[13]!==b||t[14]!==I||t[15]!==S?(L=(0,D.jsx)(`span`,{id:S,className:I,children:b}),t[13]=b,t[14]=I,t[15]=S,t[16]=L):L=t[16];let R;t[17]===C?R=t[18]:(R=C?(0,D.jsx)(d,{"aria-hidden":!0,className:`icon-sm text-token-text-tertiary shrink-0`}):(0,D.jsx)(f,{"aria-hidden":!0,className:`icon-sm text-token-text-tertiary shrink-0`}),t[17]=C,t[18]=R);let z;t[19]!==g||t[20]!==M||t[21]!==N||t[22]!==L||t[23]!==R||t[24]!==O||t[25]!==k||t[26]!==p?(z=(0,D.jsxs)(`button`,{id:p,"data-testid":O,type:`button`,disabled:g,"aria-labelledby":k,className:M,children:[N,L,R]}),t[19]=g,t[20]=M,t[21]=N,t[22]=L,t[23]=R,t[24]=O,t[25]=k,t[26]=p,t[27]=z):z=t[27];let B=y?.value,V;t[28]!==a||t[29]!==o?(V=e=>{let t=o.find(t=>t.value===e);t!=null&&a(t.value)},t[28]=a,t[29]=o,t[30]=V):V=t[30];let H;if(t[31]!==o||t[32]!==p){let e;t[34]===p?e=t[35]:(e=e=>(0,D.jsx)(c.RadioItem,{value:e.value,label:e.label,className:`mx-0 w-full rounded-none px-3 py-2 first:rounded-t-2xl last:rounded-b-2xl`,"data-testid":`${p}-option-${e.value}`},e.value),t[34]=p,t[35]=e),H=o.map(e),t[31]=o,t[32]=p,t[33]=H}else H=t[33];let U;t[36]!==B||t[37]!==V||t[38]!==H?(U=(0,D.jsx)(c.RadioGroup,{value:B,onValueChange:V,children:H}),t[36]=B,t[37]=V,t[38]=H,t[39]=U):U=t[39];let W;return t[40]!==z||t[41]!==U||t[42]!==w||t[43]!==T?(W=(0,D.jsx)(s,{contentAlign:w,contentClassName:T,size:`auto`,sideOffset:0,triggerButton:z,children:U}),t[40]=z,t[41]=U,t[42]=w,t[43]=T,t[44]=W):W=t[44],W}function _({intl:e,maxTtlSeconds:t,customLabel:n,noneLabel:r,showPresetDates:i}){return[...M.filter(e=>t==null||e.days*86400<=t).map(t=>({value:t.value,label:i?w(t.days,e):T(t.days,e),triggerLabel:T(t.days,e)})),...t==null||t>=86400?[{value:`custom`,label:n,triggerLabel:n}]:[],...r==null?[]:[{value:`none`,label:r,triggerLabel:r}]]}function v(e){return e===`7d`||e===`30d`||e===`60d`||e===`90d`}function y(e,t){return t.formatDate(new Date(Date.now()+e*O*1e3),{month:`short`,day:`2-digit`,year:`numeric`})}function b(){let e=new Date(Date.now()+k);return e.setHours(0,0,0,0),e}function x(e){let t=new Date(Date.now()+e*1e3);return t.setHours(0,0,0,0),t}function S(e){return`${e.getFullYear()}-${String(e.getMonth()+1).padStart(2,`0`)}-${String(e.getDate()).padStart(2,`0`)}`}function C(e){let t=/^(\d{4})-(\d{2})-(\d{2})$/.exec(e);if(t==null)return null;let n=Number(t[1]),r=Number(t[2]),i=Number(t[3]),a=new Date(n,r-1,i);return a.getFullYear()!==n||a.getMonth()!==r-1||a.getDate()!==i?null:a}function w(e,t){return t.formatMessage(N.expirationPresetOption,{days:e,date:y(e,t)})}function T(e,t){return t.formatMessage(N.expirationPresetDuration,{days:e})}var E,D,O,k,A,j,M,N,P=e((()=>{E=o(),l(),p(),u(),h(),t(),a(),D=r(),O=1440*60,k=O*1e3,A=k/1e3,j={"7d":7,"30d":30,"60d":60,"90d":90},M=[{value:`7d`,days:7},{value:`30d`,days:30},{value:`60d`,days:60},{value:`90d`,days:90}],N=i({expirationPresetOption:{id:`chatgpt.access_tokens.create_modal.expiration.preset.option`,defaultMessage:`{days} days ({date})`},expirationPresetDuration:{id:`chatgpt.access_tokens.create_modal.expiration.preset.duration`,defaultMessage:`{days} days`}})}));export{_ as a,x as c,v as d,C as f,O as i,b as l,j as n,S as o,A as r,y as s,g as t,P as u};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    X5 as t,
+    Y5 as n
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    Bn as r,
+    Ln as i,
+    Rn as a,
+    wn as o
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    IHn as s,
+    LHn as c,
+    RHn as l
+} from "./conversation-small-nmt18uiom3b14vca.js";
+import {
+    DC as u,
+    EC as d,
+    Kc as f,
+    ay as p,
+    iy as m,
+    qc as h
+} from "./30901919-niqyapppecmq5jkn.js";
+
+function g(e) {
+    "use forget";
+    let t = (0, E.c)(45),
+        {
+            disabled: r,
+            labelId: i,
+            onChange: a,
+            options: o,
+            placeholder: l,
+            triggerVariant: u,
+            triggerId: p,
+            value: h
+        } = e,
+        g = r !== void 0 && r,
+        _ = u === void 0 ? `default` : u,
+        v;
+    if (t[0] !== o || t[1] !== h) {
+        let e;
+        t[3] === h ? e = t[4] : (e = e => e.value === h, t[3] = h, t[4] = e), v = o.find(e), t[0] = o, t[1] = h, t[2] = v
+    } else v = t[2];
+    let y = v,
+        b = y?.triggerLabel ?? l,
+        x = y == null,
+        S = `${p}-value`,
+        C = _ === `inline`,
+        w = C ? `end` : `start`,
+        T = C ? `min-w-44 p-0` : `w-[var(--trigger-width)] p-0`,
+        O = `${p}-trigger`,
+        k = `${i} ${S}`,
+        A = C ? `focus-visible:outline-token-border-default -m-2 inline-flex items-center gap-1.5 rounded-md px-2 py-2 text-start text-sm transition-colors focus-visible:outline-2 focus-visible:outline-offset-2` : `border-token-border-heavy bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary flex h-10 w-full items-center gap-2 rounded-xl border px-3 text-sm focus:ring-1 focus:outline-hidden`,
+        j = g ? `cursor-not-allowed opacity-60` : `radix-state-open:bg-token-interactive-bg-secondary-press cursor-pointer hover:bg-token-interactive-bg-secondary-hover hover:text-token-text-secondary active:bg-token-interactive-bg-secondary-press`,
+        M;
+    t[5] !== A || t[6] !== j ? (M = n(A, j), t[5] = A, t[6] = j, t[7] = M) : M = t[7];
+    let N;
+    t[8] === C ? N = t[9] : (N = !C && (0, D.jsx)(m, {
+        "aria-hidden": !0,
+        className: `icon-sm text-token-text-tertiary shrink-0`
+    }), t[8] = C, t[9] = N);
+    let P = C ? `text-token-text-primary truncate font-medium whitespace-nowrap` : `min-w-0 flex-1 truncate text-start`,
+        F = x && `text-token-text-tertiary`,
+        I;
+    t[10] !== P || t[11] !== F ? (I = n(P, F), t[10] = P, t[11] = F, t[12] = I) : I = t[12];
+    let L;
+    t[13] !== b || t[14] !== I || t[15] !== S ? (L = (0, D.jsx)(`span`, {
+        id: S,
+        className: I,
+        children: b
+    }), t[13] = b, t[14] = I, t[15] = S, t[16] = L) : L = t[16];
+    let R;
+    t[17] === C ? R = t[18] : (R = C ? (0, D.jsx)(d, {
+        "aria-hidden": !0,
+        className: `icon-sm text-token-text-tertiary shrink-0`
+    }) : (0, D.jsx)(f, {
+        "aria-hidden": !0,
+        className: `icon-sm text-token-text-tertiary shrink-0`
+    }), t[17] = C, t[18] = R);
+    let z;
+    t[19] !== g || t[20] !== M || t[21] !== N || t[22] !== L || t[23] !== R || t[24] !== O || t[25] !== k || t[26] !== p ? (z = (0, D.jsxs)(`button`, {
+        id: p,
+        "data-testid": O,
+        type: `button`,
+        disabled: g,
+        "aria-labelledby": k,
+        className: M,
+        children: [N, L, R]
+    }), t[19] = g, t[20] = M, t[21] = N, t[22] = L, t[23] = R, t[24] = O, t[25] = k, t[26] = p, t[27] = z) : z = t[27];
+    let B = y?.value,
+        V;
+    t[28] !== a || t[29] !== o ? (V = e => {
+        let t = o.find(t => t.value === e);
+        t != null && a(t.value)
+    }, t[28] = a, t[29] = o, t[30] = V) : V = t[30];
+    let H;
+    if (t[31] !== o || t[32] !== p) {
+        let e;
+        t[34] === p ? e = t[35] : (e = e => (0, D.jsx)(c.RadioItem, {
+            value: e.value,
+            label: e.label,
+            className: `mx-0 w-full rounded-none px-3 py-2 first:rounded-t-2xl last:rounded-b-2xl`,
+            "data-testid": `${p}-option-${e.value}`
+        }, e.value), t[34] = p, t[35] = e), H = o.map(e), t[31] = o, t[32] = p, t[33] = H
+    } else H = t[33];
+    let U;
+    t[36] !== B || t[37] !== V || t[38] !== H ? (U = (0, D.jsx)(c.RadioGroup, {
+        value: B,
+        onValueChange: V,
+        children: H
+    }), t[36] = B, t[37] = V, t[38] = H, t[39] = U) : U = t[39];
+    let W;
+    return t[40] !== z || t[41] !== U || t[42] !== w || t[43] !== T ? (W = (0, D.jsx)(s, {
+        contentAlign: w,
+        contentClassName: T,
+        size: `auto`,
+        sideOffset: 0,
+        triggerButton: z,
+        children: U
+    }), t[40] = z, t[41] = U, t[42] = w, t[43] = T, t[44] = W) : W = t[44], W
+}
+
+function _({
+    intl: e,
+    maxTtlSeconds: t,
+    customLabel: n,
+    noneLabel: r,
+    showPresetDates: i
+}) {
+    return [...M.filter(e => t == null || e.days * 86400 <= t).map(t => ({
+        value: t.value,
+        label: i ? w(t.days, e) : T(t.days, e),
+        triggerLabel: T(t.days, e)
+    })), ...t == null || t >= 86400 ? [{
+        value: `custom`,
+        label: n,
+        triggerLabel: n
+    }] : [], ...r == null ? [] : [{
+        value: `none`,
+        label: r,
+        triggerLabel: r
+    }]]
+}
+
+function v(e) {
+    return e === `7d` || e === `30d` || e === `60d` || e === `90d`
+}
+
+function y(e, t) {
+    return t.formatDate(new Date(Date.now() + e * O * 1e3), {
+        month: `short`,
+        day: `2-digit`,
+        year: `numeric`
+    })
+}
+
+function b() {
+    let e = new Date(Date.now() + k);
+    return e.setHours(0, 0, 0, 0), e
+}
+
+function x(e) {
+    let t = new Date(Date.now() + e * 1e3);
+    return t.setHours(0, 0, 0, 0), t
+}
+
+function S(e) {
+    return `${e.getFullYear()}-${String(e.getMonth()+1).padStart(2,`0`)}-${String(e.getDate()).padStart(2,`0`)}`
+}
+
+function C(e) {
+    let t = /^(\d{4})-(\d{2})-(\d{2})$/.exec(e);
+    if (t == null) return null;
+    let n = Number(t[1]),
+        r = Number(t[2]),
+        i = Number(t[3]),
+        a = new Date(n, r - 1, i);
+    return a.getFullYear() !== n || a.getMonth() !== r - 1 || a.getDate() !== i ? null : a
+}
+
+function w(e, t) {
+    return t.formatMessage(N.expirationPresetOption, {
+        days: e,
+        date: y(e, t)
+    })
+}
+
+function T(e, t) {
+    return t.formatMessage(N.expirationPresetDuration, {
+        days: e
+    })
+}
+var E, D, O, k, A, j, M, N, P = e((() => {
+    E = o(), l(), p(), u(), h(), t(), a(), D = r(), O = 1440 * 60, k = O * 1e3, A = k / 1e3, j = {
+        "7d": 7,
+        "30d": 30,
+        "60d": 60,
+        "90d": 90
+    }, M = [{
+        value: `7d`,
+        days: 7
+    }, {
+        value: `30d`,
+        days: 30
+    }, {
+        value: `60d`,
+        days: 60
+    }, {
+        value: `90d`,
+        days: 90
+    }], N = i({
+        expirationPresetOption: {
+            id: `chatgpt.access_tokens.create_modal.expiration.preset.option`,
+            defaultMessage: `{days} days ({date})`
+        },
+        expirationPresetDuration: {
+            id: `chatgpt.access_tokens.create_modal.expiration.preset.duration`,
+            defaultMessage: `{days} days`
+        }
+    })
+}));
+export {
+    _ as a, x as c, v as d, C as f, O as i, b as l, j as n, S as o, A as r, y as s, g as t, P as u
+};
 //# sourceMappingURL=54aa3ef4-mz8x55ow8ckvhvz8.js.map

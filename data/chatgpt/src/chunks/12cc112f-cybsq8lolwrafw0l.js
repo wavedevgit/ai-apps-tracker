@@ -1,2 +1,109 @@
-import{n as e,r as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Det as n,Eet as r,G5 as i,JT as a,K5 as o,bH as s,bet as c,qT as l}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as u,Ln as d,Nn as f,Pt as p,Rn as m,wn as h}from"./2340486e-oc6d2eodbcrmxur3.js";import{bdn as g,orn as _,trn as v,xdn as y}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{$x as b,Qx as x}from"./30901919-om7b3qf5hp4j9x4l.js";var S=t({FreeWorkspaceLockedSection:()=>C});function C(){"use forget";let e=(0,w.c)(10),t=p(),a;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(a=r({openModalLocation:n.WorkspaceSettings}),e[0]=a):a=e[0];let o=a,s;e[1]===t?s=e[2]:(s=()=>{_({navigate:t,checkoutOriginProvenance:{checkoutOriginProductExperience:g.WORK,checkoutOriginDeliverySurface:`web`},openModalLocation:n.WorkspaceSettings})},e[1]=t,e[2]=s);let c=s,u;e[3]===Symbol.for(`react.memo_cache_sentinel`)?(u=i(`text-token-text-primary flex min-h-[60vh] items-center justify-center`),e[3]=u):u=e[3];let d;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,T.jsx)(`div`,{className:`bg-token-main-surface-tertiary text-token-text-tertiary flex h-8 w-8 items-center justify-center rounded-full`,children:(0,T.jsx)(b,{"aria-hidden":`true`})}),e[4]=d):d=e[4];let m;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,T.jsx)(`div`,{className:`flex flex-col gap-2`,children:(0,T.jsx)(`p`,{className:`text-token-text-secondary text-sm`,children:(0,T.jsx)(f,{...E.description})})}),e[5]=m):m=e[5];let h;e[6]===c?h=e[7]:(h=o&&(0,T.jsx)(l,{onClick:c,size:`medium`,children:(0,T.jsx)(f,{...E.action})}),e[6]=c,e[7]=h);let v;return e[8]===h?v=e[9]:(v=(0,T.jsx)(`div`,{className:u,children:(0,T.jsxs)(`div`,{className:`flex max-w-xl flex-col items-center gap-4 text-center`,children:[d,m,h]})}),e[8]=h,e[9]=v),v}var w,T,E,D=e((()=>{w=h(),y(),a(),x(),c(),v(),o(),m(),s(),T=u(),E=d({description:{id:`NrIQ1Z`,defaultMessage:`Upgrade to unlock advanced features like permissions, workspace connectors, themes, SSO, and more.`},action:{id:`iH3Gz7`,defaultMessage:`Upgrade`}})}));export{S as n,D as r,C as t};
+import {
+    n as e,
+    r as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Det as n,
+    Eet as r,
+    G5 as i,
+    JT as a,
+    K5 as o,
+    bH as s,
+    bet as c,
+    qT as l
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as u,
+    Ln as d,
+    Nn as f,
+    Pt as p,
+    Rn as m,
+    wn as h
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    bdn as g,
+    orn as _,
+    trn as v,
+    xdn as y
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    $x as b,
+    Qx as x
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+var S = t({
+    FreeWorkspaceLockedSection: () => C
+});
+
+function C() {
+    "use forget";
+    let e = (0, w.c)(10),
+        t = p(),
+        a;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = r({
+        openModalLocation: n.WorkspaceSettings
+    }), e[0] = a) : a = e[0];
+    let o = a,
+        s;
+    e[1] === t ? s = e[2] : (s = () => {
+        _({
+            navigate: t,
+            checkoutOriginProvenance: {
+                checkoutOriginProductExperience: g.WORK,
+                checkoutOriginDeliverySurface: `web`
+            },
+            openModalLocation: n.WorkspaceSettings
+        })
+    }, e[1] = t, e[2] = s);
+    let c = s,
+        u;
+    e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (u = i(`text-token-text-primary flex min-h-[60vh] items-center justify-center`), e[3] = u) : u = e[3];
+    let d;
+    e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, T.jsx)(`div`, {
+        className: `bg-token-main-surface-tertiary text-token-text-tertiary flex h-8 w-8 items-center justify-center rounded-full`,
+        children: (0, T.jsx)(b, {
+            "aria-hidden": `true`
+        })
+    }), e[4] = d) : d = e[4];
+    let m;
+    e[5] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, T.jsx)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: (0, T.jsx)(`p`, {
+            className: `text-token-text-secondary text-sm`,
+            children: (0, T.jsx)(f, {
+                ...E.description
+            })
+        })
+    }), e[5] = m) : m = e[5];
+    let h;
+    e[6] === c ? h = e[7] : (h = o && (0, T.jsx)(l, {
+        onClick: c,
+        size: `medium`,
+        children: (0, T.jsx)(f, {
+            ...E.action
+        })
+    }), e[6] = c, e[7] = h);
+    let v;
+    return e[8] === h ? v = e[9] : (v = (0, T.jsx)(`div`, {
+        className: u,
+        children: (0, T.jsxs)(`div`, {
+            className: `flex max-w-xl flex-col items-center gap-4 text-center`,
+            children: [d, m, h]
+        })
+    }), e[8] = h, e[9] = v), v
+}
+var w, T, E, D = e((() => {
+    w = h(), y(), a(), x(), c(), v(), o(), m(), s(), T = u(), E = d({
+        description: {
+            id: `NrIQ1Z`,
+            defaultMessage: `Upgrade to unlock advanced features like permissions, workspace connectors, themes, SSO, and more.`
+        },
+        action: {
+            id: `iH3Gz7`,
+            defaultMessage: `Upgrade`
+        }
+    })
+}));
+export {
+    S as n, D as r, C as t
+};
 //# sourceMappingURL=12cc112f-cybsq8lolwrafw0l.js.map

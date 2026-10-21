@@ -1,2 +1,24 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{$st as t,Lot as n,Rot as r,pst as i}from"./4813494d-qsuygr73qjc6rh65.js";function a(e){return e.some(e=>e.isEnterprisey()&&!e.isQuorum())}function o(){return n().session?.account?.structure===i.WORKSPACE}var s=e((()=>{t(),r()}));export{s as n,o as r,a as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $st as t,
+    Lot as n,
+    Rot as r,
+    pst as i
+} from "./4813494d-qsuygr73qjc6rh65.js";
+
+function a(e) {
+    return e.some(e => e.isEnterprisey() && !e.isQuorum())
+}
+
+function o() {
+    return n().session?.account?.structure === i.WORKSPACE
+}
+var s = e((() => {
+    t(), r()
+}));
+export {
+    s as n, o as r, a as t
+};
 //# sourceMappingURL=5d04b0af-hv3r8q23ju33p6oj.js.map

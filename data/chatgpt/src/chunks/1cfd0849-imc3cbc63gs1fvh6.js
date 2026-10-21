@@ -1,2 +1,213 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{A5 as n,Ant as r,Az as i,JT as a,f8 as o,hnt as s,jnt as c,jz as l,pnt as u,qT as d}from"./4813494d-ed29bs6yiwucn7st.js";import{Bn as f,Ln as p,Rn as m,Vn as h,zn as g}from"./2340486e-oc6d2eodbcrmxur3.js";import{IHn as _,K8 as v,LHn as y,M5 as b,N5 as x,RHn as S,Thn as C,XL as w,YL as T,_hn as E,ghn as D,q8 as O,vhn as k,whn as A,yhn as j}from"./conversation-small-l6tnsr2xfn2d55kk.js";import{Rm as M,lp as N,oC as P,sC as F,up as I,zm as L}from"./30901919-om7b3qf5hp4j9x4l.js";import{ca as R,pa as z}from"./8b34dbc2-j8rcexxiltkm8ucr.js";var B,V=e((()=>{A(),j(),E(),B=C({id:`imagegen-share`,icons:{share:{normal:D,small:k}}}).Share})),H,U,W,G,K=e((()=>{x(),a(),S(),I(),F(),L(),w(),R(),O(),o(),l(),V(),s(),r(),H=t(h()),m(),U=f(),W=({assetPointer:e,messageId:t,isAnimated:r=!1,conversation:a,canPublishPromptShare:o=!0,seriesMessageSliceIds:s,seriesAssetPointers:l,seriesImageCount:f,shareFlowSource:p,variant:m=`legacy`})=>{"use no forget";let h=g(),[x,S]=(0,H.useState)(!1),C=z({canPublishPromptShare:o,assetPointer:e,conversation:a,imageGenMessageId:t,shareFlowSource:p}),w=z({conversation:a,imageGenMessageIds:s,imageGenAssetPointers:l,shareFlowSource:p}),E=(0,H.useCallback)(e=>{u.logEventWithStatsig(`Share Post: Share Button Clicked`,`chatgpt_post_share_button_clicked`,{source:`image_library_lightbox`,attachment_type:e,...e===`image_series_share`?{}:{message_id:t}})},[t]),D=(0,H.useCallback)(async()=>{S(!0);try{await C()}finally{S(!1)}let e=u.logStructuredEvent(`ChatgptImageLightboxShareRequestReturned`,{legacyStatsigEventName:`chatgpt_web_image_library_lightbox_image_share_clicked`});u.logValueEventWithStatsig({segmentEventName:`chatgpt_web_image_library_lightbox_image_share_clicked`,statsigEventName:`chatgpt_web_image_library_lightbox_image_share_clicked`,eventId:e}),E(`media_generation`)},[E,C]),O=(0,H.useCallback)(async e=>{e===v.PromptShare&&E(`prompt`),S(!0);try{await C({shareType:e})}finally{S(!1)}u.logEventWithStatsig(`chatgpt_image_lightbox_share_current_image_selected`,`chatgpt_image_lightbox_share_current_image_selected`),e===v.ImageGen&&E(`media_generation`)},[E,C]),k=(0,H.useCallback)(async()=>{S(!0);try{await w()}finally{S(!1)}u.logEventWithStatsig(`chatgpt_image_lightbox_share_all_images_selected`,`chatgpt_image_lightbox_share_all_images_selected`),E(`image_series_share`)},[E,w]),A=h.formatMessage({id:`lqgWN2`,defaultMessage:`Share`}),j=m!==`revamp`,F=m===`revamp`&&(f??0)>1&&(s?.length??0)>0,I=n(()=>o&&T());return!F&&!I?(0,U.jsx)(d,{color:`primary`,icon:j?x?i:B:void 0,loading:!j&&x,onClick:D,disabled:x,children:A}):(0,U.jsxs)(_,{side:`bottom`,sideOffset:10,size:`auto`,onOpenChange:e=>{if(!e)return;let t=u.logStructuredEvent(`ChatgptImageLightboxButtonTapped`,{button:`CHATGPT_IMAGE_LIGHTBOX_BUTTON_TYPE_SHARE`,legacyStatsigEventName:`chatgpt_web_image_library_lightbox_image_share_clicked`,selectionState:`CHATGPT_IMAGEGEN_SELECTION_STATE_PENDING_SELECTION`,imageSeriesCount:c(f)});u.logValueEventWithStatsig({segmentEventName:`chatgpt_web_image_library_lightbox_image_share_clicked`,statsigEventName:`chatgpt_web_image_library_lightbox_image_share_clicked`,data:{selection_state:`pending_selection`,image_series_count:f},eventId:t})},triggerButton:(0,U.jsx)(d,{color:`primary`,icon:j?x?i:B:void 0,loading:!j&&x,disabled:x,children:A}),children:[(0,U.jsx)(y.Item,{icon:P,onClick:()=>O(v.ImageGen),children:h.formatMessage(b({isAnimated:r}).shareSelectionLabel)}),F&&(0,U.jsx)(y.Item,{icon:M,onClick:k,children:h.formatMessage(G.imageSeries,{imageCount:f})}),I&&(0,U.jsx)(y.Item,{icon:N,onClick:()=>O(v.PromptShare),children:h.formatMessage(G.promptTemplate)})]})},G=p({imageSeries:{id:`dk/Wt8`,defaultMessage:`All {imageCount, plural, one {# image} other {# images}} in this series`},promptTemplate:{id:`imageGenShareButton.promptTemplate`,defaultMessage:`Share prompt template`}})}));export{K as n,G as r,W as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A5 as n,
+    Ant as r,
+    Az as i,
+    JT as a,
+    f8 as o,
+    hnt as s,
+    jnt as c,
+    jz as l,
+    pnt as u,
+    qT as d
+} from "./4813494d-ed29bs6yiwucn7st.js";
+import {
+    Bn as f,
+    Ln as p,
+    Rn as m,
+    Vn as h,
+    zn as g
+} from "./2340486e-oc6d2eodbcrmxur3.js";
+import {
+    IHn as _,
+    K8 as v,
+    LHn as y,
+    M5 as b,
+    N5 as x,
+    RHn as S,
+    Thn as C,
+    XL as w,
+    YL as T,
+    _hn as E,
+    ghn as D,
+    q8 as O,
+    vhn as k,
+    whn as A,
+    yhn as j
+} from "./conversation-small-l6tnsr2xfn2d55kk.js";
+import {
+    Rm as M,
+    lp as N,
+    oC as P,
+    sC as F,
+    up as I,
+    zm as L
+} from "./30901919-om7b3qf5hp4j9x4l.js";
+import {
+    ca as R,
+    pa as z
+} from "./8b34dbc2-j8rcexxiltkm8ucr.js";
+var B, V = e((() => {
+        A(), j(), E(), B = C({
+            id: `imagegen-share`,
+            icons: {
+                share: {
+                    normal: D,
+                    small: k
+                }
+            }
+        }).Share
+    })),
+    H, U, W, G, K = e((() => {
+        x(), a(), S(), I(), F(), L(), w(), R(), O(), o(), l(), V(), s(), r(), H = t(h()), m(), U = f(), W = ({
+            assetPointer: e,
+            messageId: t,
+            isAnimated: r = !1,
+            conversation: a,
+            canPublishPromptShare: o = !0,
+            seriesMessageSliceIds: s,
+            seriesAssetPointers: l,
+            seriesImageCount: f,
+            shareFlowSource: p,
+            variant: m = `legacy`
+        }) => {
+            "use no forget";
+            let h = g(),
+                [x, S] = (0, H.useState)(!1),
+                C = z({
+                    canPublishPromptShare: o,
+                    assetPointer: e,
+                    conversation: a,
+                    imageGenMessageId: t,
+                    shareFlowSource: p
+                }),
+                w = z({
+                    conversation: a,
+                    imageGenMessageIds: s,
+                    imageGenAssetPointers: l,
+                    shareFlowSource: p
+                }),
+                E = (0, H.useCallback)(e => {
+                    u.logEventWithStatsig(`Share Post: Share Button Clicked`, `chatgpt_post_share_button_clicked`, {
+                        source: `image_library_lightbox`,
+                        attachment_type: e,
+                        ...e === `image_series_share` ? {} : {
+                            message_id: t
+                        }
+                    })
+                }, [t]),
+                D = (0, H.useCallback)(async () => {
+                    S(!0);
+                    try {
+                        await C()
+                    } finally {
+                        S(!1)
+                    }
+                    let e = u.logStructuredEvent(`ChatgptImageLightboxShareRequestReturned`, {
+                        legacyStatsigEventName: `chatgpt_web_image_library_lightbox_image_share_clicked`
+                    });
+                    u.logValueEventWithStatsig({
+                        segmentEventName: `chatgpt_web_image_library_lightbox_image_share_clicked`,
+                        statsigEventName: `chatgpt_web_image_library_lightbox_image_share_clicked`,
+                        eventId: e
+                    }), E(`media_generation`)
+                }, [E, C]),
+                O = (0, H.useCallback)(async e => {
+                    e === v.PromptShare && E(`prompt`), S(!0);
+                    try {
+                        await C({
+                            shareType: e
+                        })
+                    } finally {
+                        S(!1)
+                    }
+                    u.logEventWithStatsig(`chatgpt_image_lightbox_share_current_image_selected`, `chatgpt_image_lightbox_share_current_image_selected`), e === v.ImageGen && E(`media_generation`)
+                }, [E, C]),
+                k = (0, H.useCallback)(async () => {
+                    S(!0);
+                    try {
+                        await w()
+                    } finally {
+                        S(!1)
+                    }
+                    u.logEventWithStatsig(`chatgpt_image_lightbox_share_all_images_selected`, `chatgpt_image_lightbox_share_all_images_selected`), E(`image_series_share`)
+                }, [E, w]),
+                A = h.formatMessage({
+                    id: `lqgWN2`,
+                    defaultMessage: `Share`
+                }),
+                j = m !== `revamp`,
+                F = m === `revamp` && (f ?? 0) > 1 && (s?.length ?? 0) > 0,
+                I = n(() => o && T());
+            return !F && !I ? (0, U.jsx)(d, {
+                color: `primary`,
+                icon: j ? x ? i : B : void 0,
+                loading: !j && x,
+                onClick: D,
+                disabled: x,
+                children: A
+            }) : (0, U.jsxs)(_, {
+                side: `bottom`,
+                sideOffset: 10,
+                size: `auto`,
+                onOpenChange: e => {
+                    if (!e) return;
+                    let t = u.logStructuredEvent(`ChatgptImageLightboxButtonTapped`, {
+                        button: `CHATGPT_IMAGE_LIGHTBOX_BUTTON_TYPE_SHARE`,
+                        legacyStatsigEventName: `chatgpt_web_image_library_lightbox_image_share_clicked`,
+                        selectionState: `CHATGPT_IMAGEGEN_SELECTION_STATE_PENDING_SELECTION`,
+                        imageSeriesCount: c(f)
+                    });
+                    u.logValueEventWithStatsig({
+                        segmentEventName: `chatgpt_web_image_library_lightbox_image_share_clicked`,
+                        statsigEventName: `chatgpt_web_image_library_lightbox_image_share_clicked`,
+                        data: {
+                            selection_state: `pending_selection`,
+                            image_series_count: f
+                        },
+                        eventId: t
+                    })
+                },
+                triggerButton: (0, U.jsx)(d, {
+                    color: `primary`,
+                    icon: j ? x ? i : B : void 0,
+                    loading: !j && x,
+                    disabled: x,
+                    children: A
+                }),
+                children: [(0, U.jsx)(y.Item, {
+                    icon: P,
+                    onClick: () => O(v.ImageGen),
+                    children: h.formatMessage(b({
+                        isAnimated: r
+                    }).shareSelectionLabel)
+                }), F && (0, U.jsx)(y.Item, {
+                    icon: M,
+                    onClick: k,
+                    children: h.formatMessage(G.imageSeries, {
+                        imageCount: f
+                    })
+                }), I && (0, U.jsx)(y.Item, {
+                    icon: N,
+                    onClick: () => O(v.PromptShare),
+                    children: h.formatMessage(G.promptTemplate)
+                })]
+            })
+        }, G = p({
+            imageSeries: {
+                id: `dk/Wt8`,
+                defaultMessage: `All {imageCount, plural, one {# image} other {# images}} in this series`
+            },
+            promptTemplate: {
+                id: `imageGenShareButton.promptTemplate`,
+                defaultMessage: `Share prompt template`
+            }
+        })
+    }));
+export {
+    K as n, G as r, W as t
+};
 //# sourceMappingURL=1cfd0849-imc3cbc63gs1fvh6.js.map

@@ -1,2 +1,31 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e,t){if(!(!t.id||!t.normalizedAccountUserId))try{window.sessionStorage.setItem(i+e,JSON.stringify([t.id,t.normalizedAccountUserId]))}catch{}}function n(e,t){if(!t.id||!t.normalizedAccountUserId)return!1;try{return window.sessionStorage.getItem(i+e)===JSON.stringify([t.id,t.normalizedAccountUserId])}catch{return!1}}function r(e){try{window.sessionStorage.removeItem(i+e)}catch{}}var i,a=e((()=>{i=`oai/apps/noPaymentTrialCheckout/`}));export{t as i,n,a as r,r as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e, t) {
+    if (!(!t.id || !t.normalizedAccountUserId)) try {
+        window.sessionStorage.setItem(i + e, JSON.stringify([t.id, t.normalizedAccountUserId]))
+    } catch {}
+}
+
+function n(e, t) {
+    if (!t.id || !t.normalizedAccountUserId) return !1;
+    try {
+        return window.sessionStorage.getItem(i + e) === JSON.stringify([t.id, t.normalizedAccountUserId])
+    } catch {
+        return !1
+    }
+}
+
+function r(e) {
+    try {
+        window.sessionStorage.removeItem(i + e)
+    } catch {}
+}
+var i, a = e((() => {
+    i = `oai/apps/noPaymentTrialCheckout/`
+}));
+export {
+    t as i, n, a as r, r as t
+};
 //# sourceMappingURL=97a55ca1-ob1vz7gjgz2uk2e8.js.map
