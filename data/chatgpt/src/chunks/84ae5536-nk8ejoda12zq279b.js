@@ -1,2 +1,55 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{VU as t,ml as n,pl as r,zU as i}from"./4813494d-dfpv67hlp00pbohr.js";import{In as a,N as o,Rn as s,p as c,s as l,zn as u}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Qln as d,Yln as f}from"./conversation-small-cy5f8pl0g26s86so.js";function p({showToast:e=!0}={}){let n=o(),i=t(),s=u();return c({mutationFn:e=>r.updateUserPreferences(e),onSuccess:async()=>{await d(n),e&&i.success(s.formatMessage({id:`wham.preferencesPage.preferencesUpdated`,defaultMessage:`Preferences updated`}),{duration:2})},onError:()=>{i.danger(a({id:`wham.preferencesPage.preferencesUpdateError`,defaultMessage:`Failed to update preferences`}),{toastId:`wham_preferences_page_preferences_update_error`})}})}var m=e((()=>{i(),f(),n(),l(),s()}));export{p as n,m as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    VU as t,
+    ml as n,
+    pl as r,
+    zU as i
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    In as a,
+    N as o,
+    Rn as s,
+    p as c,
+    s as l,
+    zn as u
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Qln as d,
+    Yln as f
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+
+function p({
+    showToast: e = !0
+} = {}) {
+    let n = o(),
+        i = t(),
+        s = u();
+    return c({
+        mutationFn: e => r.updateUserPreferences(e),
+        onSuccess: async () => {
+            await d(n), e && i.success(s.formatMessage({
+                id: `wham.preferencesPage.preferencesUpdated`,
+                defaultMessage: `Preferences updated`
+            }), {
+                duration: 2
+            })
+        },
+        onError: () => {
+            i.danger(a({
+                id: `wham.preferencesPage.preferencesUpdateError`,
+                defaultMessage: `Failed to update preferences`
+            }), {
+                toastId: `wham_preferences_page_preferences_update_error`
+            })
+        }
+    })
+}
+var m = e((() => {
+    i(), f(), n(), l(), s()
+}));
+export {
+    p as n, m as t
+};
 //# sourceMappingURL=84ae5536-nk8ejoda12zq279b.js.map

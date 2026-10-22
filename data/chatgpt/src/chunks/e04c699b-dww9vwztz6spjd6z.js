@@ -1,2 +1,84 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Cat as n,Da as r,Ea as i,Qat as a,Up as o,_tt as s,eY as c,ktt as l,lY as u,qat as d,rm as f,xat as p}from"./4813494d-itnrgnth03y1sm9d.js";import{O as m,Vn as h,s as g}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Hxn as _,Vxn as v,edt as y,iVn as b,rVn as x,tdt as S}from"./conversation-small-i79e9c315w50am5f.js";function C(e,t,n,r,a,o){let c=(0,w.useContext)(i)?.serverSharedThreadId,l=S(n),h=(0,w.useMemo)(()=>({asset_pointer:l,content_type:s.ArbitraryAssetPointer}),[l]),g=_(),v=u(t),y=x.makeQueryOptions({asset:h,sharedThreadId:c,postId:g,gizmoId:void 0,conversationId:c?void 0:v,downloadIntent:o?.downloadIntent??!0}),b=f(),C=!!(e&&(v||c||g)&&l&&y.enabled),D=y.queryFn;if(typeof D==`symbol`)throw Error(`Unexpected symbol query fn...`);return m({queryKey:y.queryKey,queryFn:async e=>{try{let t=await D(e);return r?.(t.url),{status:`success`,download_url:t.url}}catch(e){p.addError(e);let t=b(`default_download_link_error`,{fileName:l});throw e instanceof d&&e.code!=null&&(t=b(e.code)),a?.(t),e}},enabled:C,staleTime:T,gcTime:E,refetchInterval:T,refetchOnWindowFocus:!0})}var w,T,E,D=e((()=>{l(),o(),y(),v(),c(),r(),n(),a(),b(),g(),w=t(h()),T=300*1e3,E=30*1e3}));export{C as n,D as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Cat as n,
+    Da as r,
+    Ea as i,
+    Qat as a,
+    Up as o,
+    _tt as s,
+    eY as c,
+    ktt as l,
+    lY as u,
+    qat as d,
+    rm as f,
+    xat as p
+} from "./4813494d-itnrgnth03y1sm9d.js";
+import {
+    O as m,
+    Vn as h,
+    s as g
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Hxn as _,
+    Vxn as v,
+    edt as y,
+    iVn as b,
+    rVn as x,
+    tdt as S
+} from "./conversation-small-i79e9c315w50am5f.js";
+
+function C(e, t, n, r, a, o) {
+    let c = (0, w.useContext)(i)?.serverSharedThreadId,
+        l = S(n),
+        h = (0, w.useMemo)(() => ({
+            asset_pointer: l,
+            content_type: s.ArbitraryAssetPointer
+        }), [l]),
+        g = _(),
+        v = u(t),
+        y = x.makeQueryOptions({
+            asset: h,
+            sharedThreadId: c,
+            postId: g,
+            gizmoId: void 0,
+            conversationId: c ? void 0 : v,
+            downloadIntent: o?.downloadIntent ?? !0
+        }),
+        b = f(),
+        C = !!(e && (v || c || g) && l && y.enabled),
+        D = y.queryFn;
+    if (typeof D == `symbol`) throw Error(`Unexpected symbol query fn...`);
+    return m({
+        queryKey: y.queryKey,
+        queryFn: async e => {
+            try {
+                let t = await D(e);
+                return r?.(t.url), {
+                    status: `success`,
+                    download_url: t.url
+                }
+            } catch (e) {
+                p.addError(e);
+                let t = b(`default_download_link_error`, {
+                    fileName: l
+                });
+                throw e instanceof d && e.code != null && (t = b(e.code)), a?.(t), e
+            }
+        },
+        enabled: C,
+        staleTime: T,
+        gcTime: E,
+        refetchInterval: T,
+        refetchOnWindowFocus: !0
+    })
+}
+var w, T, E, D = e((() => {
+    l(), o(), y(), v(), c(), r(), n(), a(), b(), g(), w = t(h()), T = 300 * 1e3, E = 30 * 1e3
+}));
+export {
+    C as n, D as t
+};
 //# sourceMappingURL=e04c699b-dww9vwztz6spjd6z.js.map

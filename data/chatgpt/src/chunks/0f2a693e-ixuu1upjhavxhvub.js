@@ -1,10 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-var t, n, r, i, a, o, s, c = e((() => {
-    t = `min-w-0`, n = `dots-grid`, r = `dots-full`, i = `dots-primary`, a = `dots-narrow`, o = `dots-grid-gap`, s = `min-w-0`
-}));
-export {
-    n as a, c, r as i, i as n, o, a as r, s, t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n,r,i,a,o,s,c=e((()=>{t=`min-w-0`,n=`dots-grid`,r=`dots-full`,i=`dots-primary`,a=`dots-narrow`,o=`dots-grid-gap`,s=`min-w-0`}));export{n as a,c,r as i,i as n,o,a as r,s,t};
 //# sourceMappingURL=0f2a693e-ixuu1upjhavxhvub.js.map

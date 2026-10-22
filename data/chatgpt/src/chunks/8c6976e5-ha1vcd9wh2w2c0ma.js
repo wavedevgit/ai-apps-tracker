@@ -1,2 +1,81 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{CR as n,ER as r,Krt as i,hrt as a,ost as o,q1 as s,sst as c}from"./4813494d-nxpmzchfjvwqts17.js";import{At as l,Bt as u,Nt as d,Q as f,Vn as p}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$Cn as m,$yn as h,JGn as g,ewn as _,rwn as v,twn as y}from"./conversation-small-m08q51xmfe7gjq3d.js";function b(){return c(u(`routes/admin`))}function x(){"use no forget";let e=r(e=>e.currentWorkspace);return b()?.role??e?.role}function S(){let e=x(),t=e==null?void 0:m(e),n=d(),{search:r}=l();(0,T.useEffect)(()=>{t===!1&&n(i(`/admin/members`,r))},[t,n,r])}function C(){let e=x(),t=e==null?void 0:y(e),n=d(),{search:r}=l();(0,T.useEffect)(()=>{t===!1&&n(i(`/admin/members`,r))},[t,n,r])}function w(){let e=x(),t=e==null?void 0:_(e),n=d(),{search:r}=l();(0,T.useEffect)(()=>{t===!1&&n(i(`/admin/members`,r))},[t,n,r])}var T,E=e((()=>{h(),v(),g(),s(),n(),o(),a(),T=t(p()),f()}));export{C as a,w as i,b as n,S as r,E as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    CR as n,
+    ER as r,
+    Krt as i,
+    hrt as a,
+    ost as o,
+    q1 as s,
+    sst as c
+} from "./4813494d-nxpmzchfjvwqts17.js";
+import {
+    At as l,
+    Bt as u,
+    Nt as d,
+    Q as f,
+    Vn as p
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $Cn as m,
+    $yn as h,
+    JGn as g,
+    ewn as _,
+    rwn as v,
+    twn as y
+} from "./conversation-small-m08q51xmfe7gjq3d.js";
+
+function b() {
+    return c(u(`routes/admin`))
+}
+
+function x() {
+    "use no forget";
+    let e = r(e => e.currentWorkspace);
+    return b()?.role ?? e?.role
+}
+
+function S() {
+    let e = x(),
+        t = e == null ? void 0 : m(e),
+        n = d(),
+        {
+            search: r
+        } = l();
+    (0, T.useEffect)(() => {
+        t === !1 && n(i(`/admin/members`, r))
+    }, [t, n, r])
+}
+
+function C() {
+    let e = x(),
+        t = e == null ? void 0 : y(e),
+        n = d(),
+        {
+            search: r
+        } = l();
+    (0, T.useEffect)(() => {
+        t === !1 && n(i(`/admin/members`, r))
+    }, [t, n, r])
+}
+
+function w() {
+    let e = x(),
+        t = e == null ? void 0 : _(e),
+        n = d(),
+        {
+            search: r
+        } = l();
+    (0, T.useEffect)(() => {
+        t === !1 && n(i(`/admin/members`, r))
+    }, [t, n, r])
+}
+var T, E = e((() => {
+    h(), v(), g(), s(), n(), o(), a(), T = t(p()), f()
+}));
+export {
+    C as a, w as i, b as n, S as r, E as t
+};
 //# sourceMappingURL=8c6976e5-ha1vcd9wh2w2c0ma.js.map

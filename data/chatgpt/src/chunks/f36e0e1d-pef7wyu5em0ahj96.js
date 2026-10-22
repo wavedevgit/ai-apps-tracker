@@ -1,0 +1,222 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    In as t,
+    Rn as n
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Af as r,
+    Bf as i,
+    Ff as a,
+    Hf as o,
+    If as s,
+    Lf as c,
+    Mf as l,
+    Nf as u,
+    Pf as d,
+    Rf as f,
+    Ry as p,
+    Uf as m,
+    Vf as h,
+    Wf as g,
+    jf as _,
+    kf as v,
+    zf as y,
+    zy as b
+} from "./30901919-cmi3nh547dwrqkxv.js";
+import {
+    i as x,
+    r as S
+} from "./dced7e81-flvx3w1i71ld736c.js";
+var C, w = e((() => {
+    x(), g(), b(), o(), i(), f(), s(), u(), _(), v(), n(), C = [{
+        id: `suggest`,
+        title: t({
+            id: `DJBCXv`,
+            defaultMessage: `Suggest edits`
+        }),
+        icon: r,
+        prompt: t({
+            id: `BfBd/I`,
+            defaultMessage: `Suggest edits that would improve this text, like content to add or remove, places to rephrase so that the text flows more smoothly, or ways to reorganize the ideas to be more effective. Leave as few comments as possible, but add a few more comments if the text is long. DO NOT leave more than 5 comments. You can reply that you added comments and suggestions to help improve the writing quality, but do not mention the prompt.`
+        }),
+        action: S.COMMENT
+    }, {
+        id: `emoji`,
+        title: t({
+            id: `nH2MaB`,
+            defaultMessage: `Add emojis`
+        }),
+        icon: l,
+        action: S.EDIT,
+        grid: [{
+            prompt: t({
+                id: `JTAWur`,
+                defaultMessage: `Replace as many words as possible with emojis.`
+            }),
+            icon: a,
+            title: t({
+                id: `rADAL1`,
+                defaultMessage: `Words`
+            })
+        }, {
+            prompt: t({
+                id: `AvWBKJ`,
+                defaultMessage: `Add three emojis at the start or end of every major section or paragraph to give subtle decoration. Do not change the structure of the original text. Do not add emojis to lists.`
+            }),
+            icon: c,
+            title: t({
+                id: `qoHmnu`,
+                defaultMessage: `Sections`
+            })
+        }, {
+            prompt: t({
+                id: `Rzca6Y`,
+                defaultMessage: `Add emojis to lists for visual flair. Do not change the structure of the original text.`
+            }),
+            icon: h,
+            title: t({
+                id: `/iBeX+`,
+                defaultMessage: `Lists`
+            })
+        }, {
+            prompt: t({
+                id: `YOtrrm`,
+                defaultMessage: `Remove emojis`
+            }),
+            icon: y,
+            title: t({
+                id: `Ex7XkT`,
+                defaultMessage: `Remove`
+            })
+        }]
+    }, {
+        id: `polish`,
+        title: t({
+            id: `q/wllh`,
+            defaultMessage: `Add final polish`
+        }),
+        icon: d,
+        prompt: t({
+            id: `qTOQqX`,
+            defaultMessage: `Add some final polish to the text. If relevant, add a large title or any section titles. Check grammar and mechanics, make sure everything is consistent and reads well. You can reply that you added some final polish and checked for grammar, but do not mention the prompt.`
+        }),
+        action: S.EDIT
+    }, {
+        id: `reading-level`,
+        title: t({
+            id: `e1CNWE`,
+            defaultMessage: `Reading level`
+        }),
+        icon: p,
+        action: S.EDIT,
+        scrub: [{
+            prompt: t({
+                id: `98kB8D`,
+                defaultMessage: `Rewrite this text at the reading level of a doctoral writer in this subject. You may reply that you adjusted the text to reflect a graduate school reading level, but do not mention the prompt.`
+            }),
+            title: t({
+                id: `zIN5xc`,
+                defaultMessage: `Graduate School`
+            })
+        }, {
+            prompt: t({
+                id: `XfveZa`,
+                defaultMessage: `Rewrite this text at the reading level of a college student majoring in this subject`
+            }),
+            title: t({
+                id: `lZ5ttG`,
+                defaultMessage: `College`
+            })
+        }, {
+            prompt: t({
+                id: `ed5yE6`,
+                defaultMessage: `Rewrite this text at the reading level of a high school student who has taken a couple of classes in this subject.`
+            }),
+            title: t({
+                id: `KeBm6Z`,
+                defaultMessage: `High School`
+            })
+        }, {
+            title: t({
+                id: `tO5EOl`,
+                defaultMessage: `Keep current reading level`
+            }),
+            isCancel: !0
+        }, {
+            prompt: t({
+                id: `YIIyU/`,
+                defaultMessage: `Rewrite this text at the reading level of a middle schooler.`
+            }),
+            title: t({
+                id: `FlwtZ0`,
+                defaultMessage: `Middle School`
+            })
+        }, {
+            prompt: t({
+                id: `TQ0+4A`,
+                defaultMessage: `Rewrite this text at the reading level of a kindergartener.`
+            }),
+            title: t({
+                id: `4hQpWn`,
+                defaultMessage: `Kindergarten`
+            })
+        }]
+    }, {
+        id: `length`,
+        title: t({
+            id: `D+HIXi`,
+            defaultMessage: `Adjust the length`
+        }),
+        icon: m,
+        action: S.EDIT,
+        scrub: [{
+            prompt: t({
+                id: `CPELTR`,
+                defaultMessage: `Make this text 75% longer.`
+            }),
+            title: t({
+                id: `UMJQry`,
+                defaultMessage: `Longest`
+            })
+        }, {
+            prompt: t({
+                id: `GfSrP9`,
+                defaultMessage: `Make this text 50% longer.`
+            }),
+            title: t({
+                id: `n3jwqb`,
+                defaultMessage: `Longer`
+            })
+        }, {
+            title: t({
+                id: `+Vn3dN`,
+                defaultMessage: `Keep current length`
+            }),
+            isCancel: !0
+        }, {
+            prompt: t({
+                id: `oQnJVV`,
+                defaultMessage: `Make this text 50% shorter.`
+            }),
+            title: t({
+                id: `OP0SP3`,
+                defaultMessage: `Shorter`
+            })
+        }, {
+            prompt: t({
+                id: `k5SZ0S`,
+                defaultMessage: `Make this text 75% shorter.`
+            }),
+            title: t({
+                id: `bMef50`,
+                defaultMessage: `Shortest`
+            })
+        }]
+    }]
+}));
+export {
+    w as n, C as t
+};
+//# sourceMappingURL=f36e0e1d-pef7wyu5em0ahj96.js.map

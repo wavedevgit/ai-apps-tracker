@@ -1,2 +1,2743 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$st as n,Dat as r,I1 as i,J1 as a,JT as o,L7 as s,N7 as c,Nat as l,Sw as u,Y1 as d,_R as f,aB as p,iB as m,iat as h,mst as g,nat as _,qT as v,ww as y,yR as b}from"./4813494d-qsuygr73qjc6rh65.js";import{$ as x,Bn as ee,Hn as te,N as ne,O as S,Pn as C,Pt as re,Rn as w,Tn as T,Vn as E,at as D,p as ie,s as O,w as k,zn as ae}from"./2340486e-komxp8tzs51ny4jj.js";import{$rn as oe,I8 as se,L8 as A,_in as ce,drn as le,frn as ue,lrn as de,min as j,oln as fe,sln as pe}from"./conversation-small-cawdu7il3ha6y70c.js";import{Jy as M,Km as N,Yy as P,qm as F}from"./30901919-jory365vq6ym5crx.js";import{fx as me,px as he}from"./c2675c8c-nxl2ic2ofk2vw70s.js";import{f_ as I,u_ as ge}from"./8b34dbc2-d4icgkio4i3wfm6q.js";import{i as L,n as _e,r as R,t as z}from"./533f7052-dy10fylhzk5bdils.js";function ve(e){"use forget";let t=(0,be.c)(36),{loadingFallback:n}=e,r=ee(),i=ne(),[a,o]=(0,xe.useState)(``),[s,c]=(0,xe.useState)(``),[l,u]=(0,xe.useState)(``),[d,f]=(0,xe.useState)(``),p;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(p={queryKey:[`sophia-waitlist-status`],queryFn:B,retry:!1},t[0]=p):p=t[0];let m=S(p),h;t[1]===i?h=t[2]:(h={mutationFn:ye,onSuccess:e=>{i.setQueryData([`sophia-waitlist-status`],{is_enrolled:!0,submitted_at:e.submitted_at})}},t[1]=i,t[2]=h);let g=ie(h),_=m.data?.is_enrolled===!0,y;t[3]!==l||t[4]!==s||t[5]!==a||t[6]!==d?(y=a.trim().length>0&&a.trim().length<=200&&/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s.trim())&&s.trim().length<=320&&l.trim().length>0&&l.trim().length<=200&&d.trim().length>0&&d.trim().length<=4e3,t[3]=l,t[4]=s,t[5]=a,t[6]=d,t[7]=y):y=t[7];let b=y,x;t[8]!==b||t[9]!==l||t[10]!==s||t[11]!==_||t[12]!==g||t[13]!==a||t[14]!==d?(x=e=>{e.preventDefault(),!(!b||g.isPending||_)&&g.mutate({name:a.trim(),institutional_email:s.trim(),field_of_research:l.trim(),research_intent:d.trim()})},t[8]=b,t[9]=l,t[10]=s,t[11]=_,t[12]=g,t[13]=a,t[14]=d,t[15]=x):x=t[15];let te=x;if(m.isPending)return n;let re;t[16]===Symbol.for(`react.memo_cache_sentinel`)?(re=(0,V.jsx)(`header`,{className:`flex h-16 items-center px-6`,children:(0,V.jsx)(`a`,{className:`text-token-text-primary text-lg font-semibold tracking-tight`,href:`/`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.header.product_name`,defaultMessage:`ChatGPT`})})}),t[16]=re):re=t[16];let w;t[17]===Symbol.for(`react.memo_cache_sentinel`)?(w=(0,V.jsx)(`p`,{className:`text-token-text-secondary text-xs font-semibold tracking-[0.18em] uppercase`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.eyebrow`,defaultMessage:`ChatGPT for Academic Researchers`})}),t[17]=w):w=t[17];let T;t[18]===Symbol.for(`react.memo_cache_sentinel`)?(T=(0,V.jsx)(`h1`,{className:`mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.title`,defaultMessage:`Join the waitlist`})}),t[18]=T):T=t[18];let E;t[19]===Symbol.for(`react.memo_cache_sentinel`)?(E=(0,V.jsxs)(`div`,{className:`text-center`,children:[w,T,(0,V.jsx)(`p`,{className:`text-token-text-secondary mx-auto mt-4 max-w-md text-base leading-7 text-balance`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.description`,defaultMessage:`Share your details and we’ll email you when applications become available again.`})})]}),t[19]=E):E=t[19];let D;t[20]===_?D=t[21]:(D=_?null:(0,V.jsx)(`h2`,{id:`sophia-waitlist-card-title`,className:`text-lg font-semibold`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.form.title`,defaultMessage:`Tell us about yourself`})}),t[20]=_,t[21]=D);let O;t[22]!==b||t[23]!==l||t[24]!==s||t[25]!==r||t[26]!==_||t[27]!==g||t[28]!==a||t[29]!==d||t[30]!==m||t[31]!==te?(O=_?(0,V.jsxs)(`div`,{"aria-live":`polite`,className:`space-y-2`,children:[(0,V.jsx)(`h2`,{id:`sophia-waitlist-card-title`,className:`font-medium`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.success.title`,defaultMessage:`You’re on the waitlist`})}),(0,V.jsx)(`p`,{className:`text-token-text-secondary text-sm leading-6`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.success.description`,defaultMessage:`We’ll email you when applications become available again.`})})]}):m.isError?(0,V.jsxs)(`div`,{className:`mt-5 space-y-4`,children:[(0,V.jsx)(`p`,{role:`alert`,className:`text-token-text-secondary text-sm`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.status.error`,defaultMessage:`We couldn’t check your waitlist status. Please try again.`})}),(0,V.jsx)(v,{color:`secondary`,loading:m.isFetching,onClick:()=>{m.refetch()},children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.status.retry`,defaultMessage:`Try again`})})]}):(0,V.jsxs)(`form`,{className:`mt-6 space-y-5`,onSubmit:te,children:[(0,V.jsxs)(`div`,{className:`space-y-2`,children:[(0,V.jsx)(`label`,{className:`block text-sm font-medium`,htmlFor:`sophia-waitlist-name`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.form.name.label`,defaultMessage:`1. Name`})}),(0,V.jsx)(`input`,{id:`sophia-waitlist-name`,autoComplete:`name`,className:`border-token-border-default bg-token-interactive-bg-tertiary-default text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-text-primary focus:ring-token-text-primary w-full rounded-lg border px-3 py-2.5 text-sm focus:outline-hidden`,maxLength:200,name:`name`,onChange:e=>o(e.currentTarget.value),placeholder:r.formatMessage({id:`chatgpt.sophia.waitlist.form.name.placeholder`,defaultMessage:`Your full name`}),required:!0,value:a})]}),(0,V.jsxs)(`div`,{className:`space-y-2`,children:[(0,V.jsx)(`label`,{className:`block text-sm font-medium`,htmlFor:`sophia-waitlist-institutional-email`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.form.email.label`,defaultMessage:`2. Institutional email`})}),(0,V.jsx)(`input`,{id:`sophia-waitlist-institutional-email`,"aria-describedby":`sophia-waitlist-email-help`,autoComplete:`email`,className:`border-token-border-default bg-token-interactive-bg-tertiary-default text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-text-primary focus:ring-token-text-primary w-full rounded-lg border px-3 py-2.5 text-sm focus:outline-hidden`,maxLength:320,name:`institutional_email`,onChange:e=>c(e.currentTarget.value),placeholder:r.formatMessage({id:`chatgpt.sophia.waitlist.form.email.placeholder`,defaultMessage:`you@research-institution.org`}),required:!0,type:`email`,value:s}),(0,V.jsx)(`p`,{id:`sophia-waitlist-email-help`,className:`text-token-text-secondary text-xs leading-5`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.form.email.helper`,defaultMessage:`Use the email associated with your research institution.`})})]}),(0,V.jsxs)(`div`,{className:`space-y-2`,children:[(0,V.jsx)(`label`,{className:`block text-sm font-medium`,htmlFor:`sophia-waitlist-field-of-research`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.form.field_of_research.label`,defaultMessage:`3. What is your scientific field?`})}),(0,V.jsx)(`input`,{id:`sophia-waitlist-field-of-research`,"aria-describedby":`sophia-waitlist-field-of-research-help`,className:`border-token-border-default bg-token-interactive-bg-tertiary-default text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-text-primary focus:ring-token-text-primary w-full rounded-lg border px-3 py-2.5 text-sm focus:outline-hidden`,maxLength:200,name:`field_of_research`,onChange:e=>u(e.currentTarget.value),placeholder:r.formatMessage({id:`chatgpt.sophia.waitlist.form.field_of_research.placeholder`,defaultMessage:`Your scientific field`}),required:!0,type:`text`,value:l}),(0,V.jsx)(`p`,{id:`sophia-waitlist-field-of-research-help`,className:`text-token-text-secondary text-xs leading-5 italic`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.form.field_of_research.helper`,defaultMessage:`For example: theoretical physics, biology, statistics`})})]}),(0,V.jsxs)(`div`,{className:`space-y-2`,children:[(0,V.jsx)(`label`,{className:`block text-sm font-medium`,htmlFor:`sophia-waitlist-research-intent`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.form.research.label`,defaultMessage:`4. What are you working on?`})}),(0,V.jsx)(se,{id:`sophia-waitlist-research-intent`,"aria-describedby":`sophia-waitlist-research-help`,className:`bg-token-interactive-bg-tertiary-default! placeholder:text-token-text-tertiary min-h-28 px-3 py-2.5`,maxLength:4e3,name:`research_intent`,onChange:e=>f(e.currentTarget.value),placeholder:r.formatMessage({id:`chatgpt.sophia.waitlist.form.research.placeholder`,defaultMessage:`Tell us about your research or ideas`}),required:!0,value:d}),(0,V.jsx)(`p`,{id:`sophia-waitlist-research-help`,className:`text-token-text-secondary text-xs leading-5`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.form.research.helper`,defaultMessage:`You don’t need a specific project. Tell us what you’d like to explore with AI.`})})]}),g.isError?(0,V.jsx)(`p`,{role:`alert`,className:`text-token-text-secondary text-sm`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.form.submit_error`,defaultMessage:`We couldn’t add you to the waitlist. Please try again.`})}):null,(0,V.jsx)(v,{color:`primary`,disabled:!b||g.isPending||m.isPending,fullWidth:!0,loading:g.isPending,type:`submit`,children:(0,V.jsx)(C,{id:`chatgpt.sophia.waitlist.form.submit`,defaultMessage:`Join the waitlist`})})]}),t[22]=b,t[23]=l,t[24]=s,t[25]=r,t[26]=_,t[27]=g,t[28]=a,t[29]=d,t[30]=m,t[31]=te,t[32]=O):O=t[32];let k;return t[33]!==O||t[34]!==D?(k=(0,V.jsxs)(`div`,{className:`bg-primary text-token-text-primary flex min-h-screen flex-col`,children:[re,(0,V.jsxs)(`main`,{className:`mx-auto flex w-full max-w-xl flex-1 flex-col px-5 pt-12 pb-16 sm:px-8 sm:pt-20`,children:[E,(0,V.jsxs)(`section`,{"aria-labelledby":`sophia-waitlist-card-title`,className:`border-token-border-light bg-primary mt-10 rounded-2xl border p-5 sm:p-7`,children:[D,O]})]})]}),t[33]=O,t[34]=D,t[35]=k):k=t[35],k}function ye(e){return c.safePost(`/sophia/waitlist`,{requestBody:e})}function B(){return c.safeGet(`/sophia/waitlist`)}var be,xe,V,Se=e((()=>{be=T(),o(),A(),s(),O(),xe=t(te()),ae(),V=E()}));function Ce(){return k({queryKey:[`sophia-promo-code`],queryFn:()=>c.safeGet(`/promotions/sci`,{})})}var H=e((()=>{s(),O()}));function U(){"use forget";let e=(0,Y.c)(154),t=ee(),n=re(),r=ne(),i=d(),{data:o}=a(),s=b(),{country:l}=ue(),{prepareCheckoutSession:u,navigateToCheckout:f}=ce(),[p,m]=(0,X.useState)(!1),[h,y]=(0,X.useState)(!1),[x,te]=(0,X.useState)(!1),[w,T]=(0,X.useState)(!1),[E,D]=(0,X.useState)(null),[O,k]=(0,X.useState)(!1),[ae,se]=(0,X.useState)(!1),[A,de]=(0,X.useState)(null),[j,fe]=(0,X.useState)(!1),M;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(M={queryKey:[`sophia-verification-status`],queryFn:ke,retry:!1,refetchOnWindowFocus:`always`},e[0]=M):M=e[0];let N=S(M),P=N.data?.metadata?.verification_status,F;e[1]!==P||e[2]!==N.isError||e[3]!==N.isPending?(F=at(N.isPending,N.isError,P),e[1]=P,e[2]=N.isError,e[3]=N.isPending,e[4]=F):F=e[4];let me=F,I=h?`verified`:E!=null&&me!==`refresh-error`&&N.data?.metadata?.verification_id!==E.verificationId?`pending`:me,ge=N.data?.metadata?.error_reason,L;e[5]===N.data?.metadata?.pending_invite_url?L=e[6]:(L=N.data?.metadata?.pending_invite_url?.replace(/^\/sophia\/invite(?=\?|$)/,_e())??null,e[5]=N.data?.metadata?.pending_invite_url,e[6]=L);let R=L,z=N.data?.metadata?.workspace_membership_error_code===`sci_workspace_membership_conflict`,ye=N.data?.disable_new_verifications===!0||O,B=ye&&I===`needs-verification`,be;e[7]===Symbol.for(`react.memo_cache_sentinel`)?(be={mutationFn:Oe,onSuccess:e=>{if(m(!1),k(!1),se(!1),e.verification_status===`verified`){D(null),y(!0),T(!1);return}if(e.verification_url!=null){D({verificationId:e.verification_id,verificationUrl:e.verification_url});return}m(!0)},onError:e=>{if(ot(e)){m(!1),k(!0),se(!1),T(!1);return}if(st(e)){m(!1),k(!1),se(!0),T(!1);return}k(!1),se(!1),m(!0)}},e[7]=be):be=e[7];let xe=ie(be),V=xe.isPending,Se=!B&&!p&&(I===`needs-verification`||I===`pending`),H=I===`verified`,U=H&&N.data?.metadata?.verification_type===`student`,Me=R!=null,Ne=(N.data?.is_waitlist_enabled===!0||ae)&&I===`needs-verification`&&!Me&&!ye,Pe=Me||U,W=E!=null&&I!==`verified`&&I!==`error`,He;e[8]!==W||e[9]!==xe||e[10]!==B||e[11]!==V?(He=()=>{B||(T(!0),!(W||V)&&(m(!1),xe.mutate()))},e[8]=W,e[9]=xe,e[10]=B,e[11]=V,e[12]=He):He=e[12];let Ke=He,qe;e[13]===N?qe=e[14]:(qe=async()=>{let e=await N.refetch();te(e.data?.metadata?.verification_status===`pending`)},e[13]=N,e[14]=qe);let Xe=qe,Ze=H&&!Pe,Qe;e[15]===Symbol.for(`react.memo_cache_sentinel`)?(Qe=[`sophia-application`],e[15]=Qe):Qe=e[15];let et;e[16]===Ze?et=e[17]:(et={enabled:Ze,queryKey:Qe,queryFn:De,retry:!1},e[16]=Ze,e[17]=et);let K=S(et),q=K.data?.application_data,J=K.data?.application_status,tt=K.data?.identity_editable===!0,rt=J===`pending`||J===`approved`,it=J===`pending`,ct=J===`approved`,ft=J===`rejected`,pt;e[18]===o?.accountItems?pt=e[19]:(pt=o?.accountItems.some(Ee),e[18]=o?.accountItems,e[19]=pt);let mt=!!pt,gt;e[20]===Symbol.for(`react.memo_cache_sentinel`)?(gt=Ce(),e[20]=gt):gt=e[20];let _t=ct&&!z,vt;e[21]===_t?vt=e[22]:(vt={...gt,enabled:_t,retry:!1},e[21]=_t,e[22]=vt);let yt=S(vt),bt=ct&&!z,xt;e[23]!==l||e[24]!==i||e[25]!==bt?(xt={country:l,currentAccount:i,enabled:bt,location:`SophiaCheckoutRoute`,pricingPlanIsTypeBusiness:!1,shouldUsePaidSubscriptionBillingCurrency:!1},e[23]=l,e[24]=i,e[25]=bt,e[26]=xt):xt=e[26];let St=le(xt),Ct=St.billingDetails,wt=yt.data?.promo_code??null,Tt=St.status===`error`,Et=ct&&!z&&wt!=null&&Ct!=null,Dt=(0,X.useRef)(J),Ot;e[27]!==Ct||e[28]!==t||e[29]!==j||e[30]!==f||e[31]!==u||e[32]!==wt||e[33]!==s?(Ot=async()=>{if(Ct==null||wt==null||j)return;de(null),fe(!0);let e=pe.SOPHIA_CHECKOUT_PAGE_CONTENT,n={entry_point:e,billing_details:Ct,cancel_url:window.location.href,checkout_ui_mode:`custom`,plan_name:g.SCI,team_plan_data:{workspace_name:lt(t,s),price_interval:`month`,seat_quantity:dt},promo_code:wt};try{let t=await u(n,{});await f(t,{reloadDocument:!0,checkoutPayload:n,state:{[oe]:e}}),fe(!1)}catch(e){let t=e;_.addError(t),de(he(t)?`country_not_supported`:`generic`),fe(!1)}},e[27]=Ct,e[28]=t,e[29]=j,e[30]=f,e[31]=u,e[32]=wt,e[33]=s,e[34]=Ot):Ot=e[34];let kt=Ot,At,jt;e[35]===J?(At=e[36],jt=e[37]):(At=()=>{let e=Dt.current;if(Dt.current=J,e==null||e===J||J==null||![`pending`,`approved`,`rejected`].includes(J))return;let t=J===`pending`?`sophia-verification-step-two-title`:J===`approved`?`sophia-verification-step-three-title`:`sophia-verification-application-outcome-title`;document.getElementById(t)?.focus()},jt=[J],e[35]=J,e[36]=At,e[37]=jt),(0,X.useEffect)(At,jt);let[Q,Mt]=(0,X.useState)(null),[Nt,Pt]=(0,X.useState)(``),[Ft,It]=(0,X.useState)(``),[Lt,Rt]=(0,X.useState)(``),[zt,Bt]=(0,X.useState)(``),[Vt,Ht]=(0,X.useState)(``),[Ut,Wt]=(0,X.useState)(`arxiv_id`),[Gt,Kt]=(0,X.useState)(!1),qt,Jt;e[38]===q?(qt=e[39],Jt=e[40]):(qt=()=>{if(q==null)return;let e=Je(q.field_of_research,q.field_of_research_other);Mt(e),Pt(q.name),It(q.institution),Rt(e===`other`?q.field_of_research_other??``:``),Bt(q.planned_ai_use??``),Ht(q.paper_id??``),Wt(q.paper_id_type??`arxiv_id`)},Jt=[q],e[38]=q,e[39]=qt,e[40]=Jt),(0,X.useEffect)(qt,Jt);let Yt;e[41]!==Ft||e[42]!==Nt||e[43]!==Q||e[44]!==tt||e[45]!==Lt||e[46]!==Vt||e[47]!==Ut||e[48]!==zt?(Yt=()=>{if(Q==null)throw Error(`Application form is incomplete`);let e=Ye(Q,Lt);return c.safePost(`/sophia/application`,{requestBody:{...tt?{name:Nt.trim(),institution:Ft.trim()}:{},field_of_research:e.fieldOfResearch,field_of_research_other:e.otherFieldOfResearch,planned_ai_use:zt,paper_id:Vt.trim(),paper_id_type:Ut,wants_existing_institutional_workspace:!1,opt_in_economic_analysis:!1,opt_in_workspace_training:!1}})},e[41]=Ft,e[42]=Nt,e[43]=Q,e[44]=tt,e[45]=Lt,e[46]=Vt,e[47]=Ut,e[48]=zt,e[49]=Yt):Yt=e[49];let Xt;e[50]===r?Xt=e[51]:(Xt=e=>{r.setQueryData([`sophia-application`],e)},e[50]=r,e[51]=Xt);let Zt;e[52]!==Yt||e[53]!==Xt?(Zt={mutationFn:Yt,onSuccess:Xt},e[52]=Yt,e[53]=Xt,e[54]=Zt):Zt=e[54];let $=ie(Zt),Qt;e[55]!==Ft||e[56]!==Nt||e[57]!==J||e[58]!==Q||e[59]!==tt||e[60]!==Lt||e[61]!==Vt||e[62]!==zt?(Qt=J===`draft`&&(!tt||Nt.trim().length>0&&Ft.trim().length>0)&&Q!=null&&(Q!==`other`||Lt.trim().length>0)&&zt.trim().length>0&&Vt.trim().length>0,e[55]=Ft,e[56]=Nt,e[57]=J,e[58]=Q,e[59]=tt,e[60]=Lt,e[61]=Vt,e[62]=zt,e[63]=Qt):Qt=e[63];let $t=Qt,en;e[64]!==$t||e[65]!==$?(en=e=>{e.preventDefault(),!(!$t||$.isPending)&&Kt(!0)},e[64]=$t,e[65]=$,e[66]=en):en=e[66];let tn=en,nn;e[67]!==$t||e[68]!==$?(nn=()=>{!$t||$.isPending||(Kt(!1),$.mutate())},e[67]=$t,e[68]=$,e[69]=nn):nn=e[69];let rn=nn;if(N.isPending){let t;return e[70]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(Fe,{}),e[70]=t):t=e[70],t}if(Ne){let t;return e[71]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(ve,{loadingFallback:(0,Z.jsx)(Fe,{})}),e[71]=t):t=e[71],t}let an;e[72]===Symbol.for(`react.memo_cache_sentinel`)?(an={value:`biology`,label:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.option.biological_sciences`,defaultMessage:`Biological Sciences`})},e[72]=an):an=e[72];let on;e[73]===Symbol.for(`react.memo_cache_sentinel`)?(on={value:`chemistry`,label:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.option.chemistry_and_materials`,defaultMessage:`Chemistry and Materials`})},e[73]=on):on=e[73];let sn;e[74]===Symbol.for(`react.memo_cache_sentinel`)?(sn={value:`computer_science`,label:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.option.computer_science`,defaultMessage:`Computer Science`})},e[74]=sn):sn=e[74];let cn;e[75]===Symbol.for(`react.memo_cache_sentinel`)?(cn={value:`earth_and_planetary_sciences`,label:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.option.earth_and_planetary_sciences`,defaultMessage:`Earth and Planetary Sciences`})},e[75]=cn):cn=e[75];let ln;e[76]===Symbol.for(`react.memo_cache_sentinel`)?(ln={value:`engineering`,label:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.option.engineering`,defaultMessage:`Engineering`})},e[76]=ln):ln=e[76];let un;e[77]===Symbol.for(`react.memo_cache_sentinel`)?(un={value:`mathematics`,label:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.option.mathematics`,defaultMessage:`Mathematics`})},e[77]=un):un=e[77];let dn;e[78]===Symbol.for(`react.memo_cache_sentinel`)?(dn={value:`physics`,label:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.option.physics`,defaultMessage:`Physics`})},e[78]=dn):dn=e[78];let fn;e[79]===Symbol.for(`react.memo_cache_sentinel`)?(fn=[an,on,sn,cn,ln,un,dn,{value:`other`,label:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.option.other`,defaultMessage:`Other`})}],e[79]=fn):fn=e[79];let pn=fn,mn;e[80]===Symbol.for(`react.memo_cache_sentinel`)?(mn=(0,Z.jsx)(`header`,{className:`flex h-16 items-center px-6`,children:(0,Z.jsx)(`a`,{className:`text-token-text-primary text-lg font-semibold tracking-tight`,href:`/`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.header.product_name`,defaultMessage:`ChatGPT`})})}),e[80]=mn):mn=e[80];let hn;e[81]===U?hn=e[82]:(hn=(0,Z.jsx)(`h1`,{className:`text-3xl leading-9 font-semibold tracking-tight text-balance sm:text-4xl sm:leading-10 md:text-5xl md:leading-12`,children:(0,Z.jsx)(`span`,{children:U?(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.student.title`,defaultMessage:`Your student eligibility is verified`}):(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.eligibility.title`,defaultMessage:`Verify your eligibility`})})}),e[81]=U,e[82]=hn);let gn;e[83]!==U||e[84]!==Me?(gn=(0,Z.jsx)(`p`,{className:`text-token-text-secondary mx-auto mt-5 max-w-xl text-lg leading-7 text-balance`,children:Me?(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.invite_continuation.page_description`,defaultMessage:`Continue with your workspace invitation.`}):U?(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.student.page_description`,defaultMessage:`Your student verification can be used to join invited Academic Researcher workspaces.`}):(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.eligibility.subtitle.application`,defaultMessage:`Complete the steps below to apply for a ChatGPT for Academic Researchers workspace.`})}),e[83]=U,e[84]=Me,e[85]=gn):gn=e[85];let _n;e[86]!==Ft||e[87]!==Nt||e[88]!==q||e[89]!==K||e[90]!==J||e[91]!==Et||e[92]!==W||e[93]!==Se||e[94]!==$t||e[95]!==Xe||e[96]!==A||e[97]!==Q||e[98]!==Tt||e[99]!==x||e[100]!==p||e[101]!==z||e[102]!==ct||e[103]!==tt||e[104]!==it||e[105]!==ft||e[106]!==rt||e[107]!==mt||e[108]!==B||e[109]!==j||e[110]!==V||e[111]!==U||e[112]!==H||e[113]!==n||e[114]!==Ke||e[115]!==Lt||e[116]!==Vt||e[117]!==Ut||e[118]!==R||e[119]!==zt||e[120]!==yt||e[121]!==Me||e[122]!==Pe||e[123]!==kt||e[124]!==tn||e[125]!==$||e[126]!==ge||e[127]!==I||e[128]!==N?(_n=I===`loading`?(0,Z.jsx)(Ie,{}):(0,Z.jsxs)(`div`,{className:`mt-8 space-y-3 text-start md:mt-10`,children:[Me?(0,Z.jsx)(Ue,{onContinue:()=>{n(R)}}):U?(0,Z.jsx)(We,{}):ct?(0,Z.jsx)(Re,{}):(0,Z.jsx)(`section`,{"aria-current":H?void 0:`step`,"aria-labelledby":`sophia-verification-step-one-title`,className:`bg-token-bg-primary relative rounded-2xl border shadow-sm ${H?`border-token-border-light`:`border-token-border-heavy`} ${ft?``:`after:bg-token-border-heavy after:absolute after:start-[39px] after:top-full after:h-3 after:w-px after:content-['']`}`,children:(0,Z.jsxs)(`div`,{className:`flex items-start gap-4 px-6 py-5`,children:[(0,Z.jsx)(nt,{isComplete:H,stepNumber:1}),(0,Z.jsxs)(`div`,{className:`min-w-0 flex-1`,children:[(0,Z.jsxs)(`div`,{className:`flex flex-wrap items-center justify-between gap-2`,children:[(0,Z.jsx)(`h2`,{className:`text-base font-semibold`,id:`sophia-verification-step-one-title`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.verify.eligibility.title`,defaultMessage:`Verify that you are a research faculty member or postdoctoral researcher at an eligible institution.`})}),H?(0,Z.jsx)(Ve,{variant:`success`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.verify.complete`,defaultMessage:`Verified`})}):null]}),H?(0,Z.jsx)(`p`,{className:`text-token-text-primary mt-1 text-sm leading-6 font-medium`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.status.verified`,defaultMessage:`You’re verified and ready for the next step.`})}):(0,Z.jsxs)(`div`,{className:`mt-4`,children:[B?(0,Z.jsx)(`p`,{className:`text-token-text-primary text-sm leading-6 font-medium`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.status.new_verifications_disabled`,defaultMessage:`New verifications are currently paused. Please check back later.`})}):null,!B&&I===`pending`?(0,Z.jsx)(`p`,{className:`text-token-text-primary mb-4 text-sm font-medium`,children:x?(0,Z.jsx)(`span`,{role:`status`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.status.pending_after_check`,defaultMessage:`Your verification is still in progress. Complete it in SheerID, then check again.`})}):(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.status.pending`,defaultMessage:`Your verification isn’t finished yet. Continue when you’re ready.`})}):null,!B&&I===`error`?(0,Z.jsx)(G,{children:ge===`email_mismatch`?(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.status.error.email_mismatch.self_recovery`,defaultMessage:`The email you used for verification doesn’t match the email associated with your ChatGPT account. Please sign in to ChatGPT using your institutional email address and try the verification again. If the issue persists, please contact Support for assistance.`}):(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.status.error`,defaultMessage:`We couldn’t complete your verification. Contact support if you think this is a mistake.`})}):null,!B&&I===`refresh-error`?(0,Z.jsx)(G,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.status.refresh_error`,defaultMessage:`We couldn’t check your verification status. Try again.`})}):null,!B&&p?(0,Z.jsx)(G,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.status.create_error`,defaultMessage:`We couldn’t start verification. Contact support if you think this is a mistake.`})}):null,W||I===`error`?(0,Z.jsx)(`div`,{children:(0,Z.jsxs)(`div`,{className:`flex flex-wrap gap-2`,children:[W?(0,Z.jsx)(v,{color:`primary`,size:`large`,onClick:Ke,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.verify.button.open_sheerid`,defaultMessage:`Continue verification`})}):null,(0,Z.jsx)(v,{color:W?`secondary`:`primary`,loading:N.isFetching,size:`large`,onClick:()=>{Xe()},children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.verify.button.check_status`,defaultMessage:`Check verification status`})})]})}):I===`refresh-error`?(0,Z.jsx)(v,{color:`primary`,size:`large`,onClick:()=>{N.refetch()},children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.button.retry_status`,defaultMessage:`Check again`})}):(0,Z.jsx)(v,{color:`primary`,size:`large`,disabled:!Se,loading:V,onClick:Ke,children:(0,Z.jsx)(ut,{verificationState:I})})]})]})]})}),Pe?null:H&&K.isPending?(0,Z.jsx)(Le,{}):ct?(0,Z.jsx)(ze,{canCreateWorkspace:Et,checkoutError:A,hasBillingDetailsError:Tt,hasWorkspaceAccessError:yt.isError,hasWorkspaceMembershipConflict:z,isPreparingCheckout:j,isRetryingWorkspaceAccess:yt.isFetching,onContinue:()=>{kt()},onRetryBillingDetails:Te,onRetryCheckout:()=>{kt()},onRetryWorkspaceAccess:()=>{yt.refetch()}}):ft?(0,Z.jsx)(Be,{}):(0,Z.jsxs)(Z.Fragment,{children:[(0,Z.jsx)(`fieldset`,{"aria-current":H&&!rt?`step`:void 0,"aria-labelledby":`sophia-verification-step-two-title`,className:`after:bg-token-border-heavy relative rounded-2xl border shadow-sm after:absolute after:start-[39px] after:top-full after:h-3 after:w-px after:content-[''] ${H&&!rt?`border-token-border-heavy`:`border-token-border-light`} ${H?`bg-token-bg-primary`:`bg-token-bg-secondary/30 text-token-text-secondary`}`,disabled:!H,children:(0,Z.jsxs)(`div`,{className:`flex items-start gap-4 px-6 py-5`,children:[(0,Z.jsx)(nt,{isComplete:rt,isAvailable:H,stepNumber:2}),(0,Z.jsxs)(`div`,{className:`min-w-0 flex-1`,children:[(0,Z.jsxs)(`div`,{className:`flex flex-wrap items-center justify-between gap-2`,children:[(0,Z.jsx)(`h2`,{className:`text-base font-semibold focus:outline-none ${H?`text-token-text-primary`:`text-token-text-secondary`}`,id:`sophia-verification-step-two-title`,tabIndex:it?-1:void 0,children:it?mt?(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.status.enterprisey_pending.review.title`,defaultMessage:`Your application will be reviewed soon.`}):(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.status.in_review.title`,defaultMessage:`Application in review`}):(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.research.title`,defaultMessage:`Tell us about your research.`})}),it?(0,Z.jsx)(Ve,{variant:`neutral`,children:mt?(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.status.enterprisey_pending`,defaultMessage:`Approval pending`}):(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.status.in_review`,defaultMessage:`In review`})}):null]}),H?K.isPending?(0,Z.jsx)(`p`,{className:`text-token-text-secondary mt-4 text-sm leading-6`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.loading`,defaultMessage:`Getting your application ready…`})}):K.isError?(0,Z.jsxs)(`div`,{className:`mt-4`,children:[(0,Z.jsx)(G,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.error.load`,defaultMessage:`We couldn’t load your application. Please try again.`})}),(0,Z.jsx)(v,{color:`secondary`,size:`large`,onClick:()=>{K.refetch()},children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.button.retry`,defaultMessage:`Try again`})})]}):it?(0,Z.jsx)(`div`,{className:`mt-4`,children:(0,Z.jsx)(`p`,{className:`text-token-text-primary text-sm leading-6 font-medium`,children:mt?(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.status.enterprisey_pending.description`,defaultMessage:`We’ll contact your institution to coordinate your ChatGPT for Academic Researchers access. You’ll receive an email update within 5 business days. If you have questions, <helpLink>see the Help section below</helpLink>.`,values:{helpLink:we}}):(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.status.in_review.description`,defaultMessage:`Your application has been submitted and is now in review.`})})}):J===`draft`?(0,Z.jsx)(Ge,{applicationData:q,applicantInstitution:Ft,applicantName:Nt,canSubmit:$t,fieldOfResearch:Q,isIdentityEditable:tt,isSubmitting:$.isPending,hasSubmitError:$.isError,otherFieldOfResearch:Lt,paperId:Vt,paperIdType:Ut,plannedAiUse:zt,researchFieldOptions:pn,onFieldOfResearchChange:Mt,onInstitutionChange:It,onNameChange:Pt,onOtherFieldOfResearchChange:Rt,onPaperIdChange:Ht,onPaperIdTypeChange:Wt,onPlannedAiUseChange:Bt,onSubmit:tn}):null:(0,Z.jsx)(`p`,{className:`text-token-text-primary mt-1 text-sm leading-6 font-medium`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.prerequisite`,defaultMessage:`Complete step 1 to start your application.`})})]})]})}),(0,Z.jsx)(`fieldset`,{"aria-labelledby":`sophia-verification-step-three-title`,className:`bg-token-bg-secondary/30 border-token-border-light text-token-text-secondary rounded-2xl border shadow-sm`,disabled:!0,children:(0,Z.jsxs)(`div`,{className:`flex items-start gap-4 px-6 py-5`,children:[(0,Z.jsx)(nt,{isAvailable:ct,stepNumber:3}),(0,Z.jsxs)(`div`,{className:`min-w-0 flex-1`,children:[(0,Z.jsx)(`h2`,{className:`text-token-text-secondary text-base font-semibold`,id:`sophia-verification-step-three-title`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.title`,defaultMessage:`Set up your Academic Researcher workspace`})}),it?(0,Z.jsx)(ht,{description:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.status.pending`,defaultMessage:`Workspace setup will be available after your application is approved.`})}):(0,Z.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-sm leading-6 font-medium`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.prerequisite`,defaultMessage:`Complete and submit your research application to continue.`})})]})]})})]})]}),e[86]=Ft,e[87]=Nt,e[88]=q,e[89]=K,e[90]=J,e[91]=Et,e[92]=W,e[93]=Se,e[94]=$t,e[95]=Xe,e[96]=A,e[97]=Q,e[98]=Tt,e[99]=x,e[100]=p,e[101]=z,e[102]=ct,e[103]=tt,e[104]=it,e[105]=ft,e[106]=rt,e[107]=mt,e[108]=B,e[109]=j,e[110]=V,e[111]=U,e[112]=H,e[113]=n,e[114]=Ke,e[115]=Lt,e[116]=Vt,e[117]=Ut,e[118]=R,e[119]=zt,e[120]=yt,e[121]=Me,e[122]=Pe,e[123]=kt,e[124]=tn,e[125]=$,e[126]=ge,e[127]=I,e[128]=N,e[129]=_n):_n=e[129];let vn;e[130]!==hn||e[131]!==gn||e[132]!==_n?(vn=(0,Z.jsx)(`section`,{className:`flex flex-1 items-center justify-center px-6 pt-12 pb-6 md:pt-16 md:pb-8`,children:(0,Z.jsxs)(`div`,{className:`w-full max-w-2xl text-center`,children:[hn,gn,_n]})}),e[130]=hn,e[131]=gn,e[132]=_n,e[133]=vn):vn=e[133];let yn=N.data?.is_waitlist_enabled!==!0,bn;e[134]===yn?bn=e[135]:(bn=(0,Z.jsx)($e,{showFaq:yn}),e[134]=yn,e[135]=bn);let xn;e[136]!==vn||e[137]!==bn?(xn=(0,Z.jsxs)(`main`,{className:`flex flex-1 flex-col`,children:[vn,bn]}),e[136]=vn,e[137]=bn,e[138]=xn):xn=e[138];let Sn=E?.verificationUrl??null,Cn;e[139]===Symbol.for(`react.memo_cache_sentinel`)?(Cn=()=>T(!1),e[139]=Cn):Cn=e[139];let wn;e[140]!==p||e[141]!==V||e[142]!==w||e[143]!==Sn||e[144]!==s?(wn=(0,Z.jsx)(je,{hasError:p,isLoading:V,isOpen:w,user:s,verificationUrl:Sn,onClose:Cn}),e[140]=p,e[141]=V,e[142]=w,e[143]=Sn,e[144]=s,e[145]=wn):wn=e[145];let Tn;e[146]===Symbol.for(`react.memo_cache_sentinel`)?(Tn=()=>Kt(!1),e[146]=Tn):Tn=e[146];let En;e[147]!==rn||e[148]!==Gt?(En=(0,Z.jsx)(Ae,{isOpen:Gt,onClose:Tn,onConfirm:rn}),e[147]=rn,e[148]=Gt,e[149]=En):En=e[149];let Dn;return e[150]!==xn||e[151]!==wn||e[152]!==En?(Dn=(0,Z.jsxs)(`div`,{className:`bg-primary text-token-text-primary flex min-h-screen flex-col`,children:[mn,xn,wn,En]}),e[150]=xn,e[151]=wn,e[152]=En,e[153]=Dn):Dn=e[153],Dn}function we(e){return(0,Z.jsx)(`a`,{className:`text-token-text-primary underline underline-offset-2`,href:`#sophia-verification-help`,children:e})}function Te(){window.location.reload()}function Ee(e){return e.isEnterprisey()}function De(){return c.safeGet(`/sophia/application`)}function Oe(){return c.safePost(`/sophia/create_verification`,{requestBody:{redirect_url:ct()}})}function ke(){return c.safePost(`/sophia/refresh_verification_status`)}function Ae(e){"use forget";let t=(0,Y.c)(15),{isOpen:n,onClose:r,onConfirm:i}=e,a;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.submit_confirmation.title`,defaultMessage:`Submit your application?`}),t[0]=a):a=t[0];let o;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.submit_confirmation.button.confirm`,defaultMessage:`Confirm and submit`}),t[1]=o):o=t[1];let s;t[2]===i?s=t[3]:(s=(0,Z.jsx)(v,{color:`primary`,onClick:i,children:o}),t[2]=i,t[3]=s);let c;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.submit_confirmation.button.back`,defaultMessage:`Go back`}),t[4]=c):c=t[4];let l;t[5]===r?l=t[6]:(l=(0,Z.jsx)(v,{color:`secondary`,onClick:r,children:c}),t[5]=r,t[6]=l);let d;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,Z.jsx)(`p`,{className:`text-token-text-secondary text-sm leading-6`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.submit_confirmation.description`,defaultMessage:`Please review your answers before submitting.`})}),t[7]=d):d=t[7];let f;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,Z.jsx)(N,{"aria-hidden":`true`,className:`text-token-text-secondary mt-0.5 h-4 w-4 shrink-0`}),t[8]=f):f=t[8];let p;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,Z.jsxs)(`div`,{className:`space-y-4`,children:[d,(0,Z.jsxs)(`div`,{className:`border-token-border-light bg-token-bg-secondary text-token-text-primary flex items-start gap-2.5 rounded-xl border p-4 text-sm leading-5`,children:[f,(0,Z.jsx)(`p`,{className:`min-w-0 font-medium`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.submit_confirmation.locked_warning`,defaultMessage:`You won’t be able to update your application after you submit it.`})})]})]}),t[9]=p):p=t[9];let m;return t[10]!==n||t[11]!==r||t[12]!==s||t[13]!==l?(m=(0,Z.jsx)(u,{testId:`modal-sophia-application-submit-confirmation`,isOpen:n,onClose:r,showCloseButton:!0,title:a,primaryButton:s,secondaryButton:l,children:p}),t[10]=n,t[11]=r,t[12]=s,t[13]=l,t[14]=m):m=t[14],m}function je(e){"use forget";let t=(0,Y.c)(24),{hasError:n,isLoading:r,isOpen:i,user:a,verificationUrl:o,onClose:s}=e,c=a?.email_domain_type===`social`?a.email:void 0,l=a?.email_domain_type===`missing`,d;t[0]!==n||t[1]!==r||t[2]!==s||t[3]!==o?(d=o==null?n?void 0:(0,Z.jsx)(v,{color:`primary`,loading:r,disabled:!0,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.modal.button.preparing`,defaultMessage:`Preparing verification…`})}):(0,Z.jsx)(v,{as:`a`,color:`primary`,openNewTab:!0,rel:`noopener noreferrer`,to:o,onClick:s,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.modal.button.continue_to_sheerid`,defaultMessage:`Continue to SheerID`})}),t[0]=n,t[1]=r,t[2]=s,t[3]=o,t[4]=d):d=t[4];let f=d,p;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.modal.title`,defaultMessage:`Before you continue`}),t[5]=p):p=t[5];let h;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.modal.button.cancel`,defaultMessage:`Cancel`}),t[6]=h):h=t[6];let g;t[7]===s?g=t[8]:(g=(0,Z.jsx)(v,{color:`secondary`,onClick:s,children:h}),t[7]=s,t[8]=g);let _;t[9]!==l||t[10]!==c?(_=c==null?l?(0,Z.jsxs)(`div`,{className:`border-token-border-status-warning bg-token-bg-status-warning text-token-text-primary flex items-start gap-2.5 rounded-xl border p-4 text-sm leading-5`,role:`alert`,children:[(0,Z.jsx)(N,{"aria-hidden":`true`,className:`icon-sm text-token-text-status-warning mt-0.5 shrink-0`}),(0,Z.jsx)(`p`,{className:`min-w-0`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.modal.account_email_warning.missing`,defaultMessage:`<strong>You’re signed in to ChatGPT without an email address.</strong> Sign in to ChatGPT with your institutional email before continuing. Turn off any VPN or proxy before continuing.`,values:{strong:Ne}})})]}):(0,Z.jsxs)(`div`,{className:`border-token-border-light bg-token-bg-secondary text-token-text-primary flex items-start gap-2.5 rounded-xl border p-4 text-sm leading-5`,children:[(0,Z.jsx)(m,{"aria-hidden":`true`,className:`text-token-text-secondary mt-0.5 h-4 w-4 shrink-0`}),(0,Z.jsx)(`p`,{className:`min-w-0`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.verify.institution_email_vpn_reminder`,defaultMessage:`<strong>Make sure you’re signed in to ChatGPT with the institutional email you’ll use for verification.</strong> Turn off any VPN or proxy before continuing.`,values:{strong:Me}})})]}):(0,Z.jsxs)(`div`,{className:`border-token-border-status-warning bg-token-bg-status-warning text-token-text-primary flex items-start gap-2.5 rounded-xl border p-4 text-sm leading-5`,role:`alert`,children:[(0,Z.jsx)(N,{"aria-hidden":`true`,className:`icon-sm text-token-text-status-warning mt-0.5 shrink-0`}),(0,Z.jsx)(`p`,{className:`min-w-0`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.modal.account_email_warning.social`,defaultMessage:`<strong>You’re signed in to ChatGPT as {email}.</strong> This looks like a personal email address. Please confirm you are signed into ChatGPT with your institutional email and turn off any VPN or proxy before continuing`,values:{email:c,strong:Pe}})})]}),t[9]=l,t[10]=c,t[11]=_):_=t[11];let y;t[12]===Symbol.for(`react.memo_cache_sentinel`)?(y=(0,Z.jsx)(`p`,{className:`text-token-text-primary text-sm leading-6`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.verify.sheerid_new_tab_instructions`,defaultMessage:`SheerID, a third-party verification provider, will open in a new tab. Return to this page when you’re done.`})}),t[12]=y):y=t[12];let b;t[13]===n?b=t[14]:(b=n?(0,Z.jsx)(G,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.modal.status.create_error`,defaultMessage:`We couldn’t start verification. Contact support if you think this is a mistake.`})}):null,t[13]=n,t[14]=b);let x;t[15]!==_||t[16]!==b?(x=(0,Z.jsxs)(`div`,{className:`space-y-4`,children:[_,y,b]}),t[15]=_,t[16]=b,t[17]=x):x=t[17];let ee;return t[18]!==i||t[19]!==s||t[20]!==f||t[21]!==g||t[22]!==x?(ee=(0,Z.jsx)(u,{testId:`modal-sophia-verification-instructions`,isOpen:i,onClose:s,showCloseButton:!0,title:p,primaryButton:f,secondaryButton:g,children:x}),t[18]=i,t[19]=s,t[20]=f,t[21]=g,t[22]=x,t[23]=ee):ee=t[23],ee}function Me(e){return(0,Z.jsx)(`strong`,{className:`font-semibold`,children:e})}function Ne(e){return(0,Z.jsx)(`strong`,{className:`font-semibold`,children:e})}function Pe(e){return(0,Z.jsx)(`strong`,{className:`block font-semibold`,children:e})}function Fe(){"use forget";let e=(0,Y.c)(2),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(`header`,{className:`flex h-16 items-center px-6`,children:(0,Z.jsx)(`a`,{className:`text-token-text-primary text-lg font-semibold tracking-tight`,href:`/`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.header.product_name`,defaultMessage:`ChatGPT`})})}),e[0]=t):t=e[0];let n;return e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Z.jsxs)(`div`,{className:`bg-primary text-token-text-primary flex min-h-screen flex-col`,children:[t,(0,Z.jsx)(`main`,{className:`flex flex-1 items-center justify-center px-6 pb-6`,children:(0,Z.jsx)(`div`,{className:`w-full max-w-2xl`,children:(0,Z.jsx)(Ie,{})})})]}),e[1]=n):n=e[1],n}function Ie(){"use forget";let e=(0,Y.c)(4),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(`span`,{"aria-hidden":`true`,className:`bg-token-bg-secondary h-9 w-9 animate-pulse rounded-full`}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Z.jsx)(`h2`,{className:`text-token-text-primary text-base font-semibold`,id:`sophia-verification-loading-title`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.loading.title`,defaultMessage:`Loading your eligibility`})}),e[1]=n):n=e[1];let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Z.jsxs)(`div`,{className:`flex items-center gap-3`,children:[t,(0,Z.jsxs)(`div`,{className:`min-w-0 flex-1`,children:[n,(0,Z.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-sm leading-6`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.loading.description`,defaultMessage:`Checking your verification and application status…`})})]})]}),e[2]=r):r=e[2];let i;return e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,Z.jsxs)(`section`,{"aria-busy":`true`,"aria-labelledby":`sophia-verification-loading-title`,"aria-live":`polite`,className:`border-token-border-light bg-token-bg-primary mt-8 rounded-2xl border p-6 text-start shadow-sm md:mt-10`,children:[r,(0,Z.jsxs)(`div`,{"aria-hidden":`true`,className:`mt-6 space-y-3`,children:[(0,Z.jsx)(`div`,{className:`bg-token-bg-secondary h-3 w-3/4 animate-pulse rounded-full`}),(0,Z.jsx)(`div`,{className:`bg-token-bg-secondary h-3 w-1/2 animate-pulse rounded-full`})]})]}),e[3]=i):i=e[3],i}function Le(){"use forget";let e=(0,Y.c)(3),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(nt,{isAvailable:!0,stepNumber:2}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Z.jsx)(`h2`,{className:`text-token-text-primary text-base font-semibold`,id:`sophia-application-loading-title`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.loading.title`,defaultMessage:`Loading your application`})}),e[1]=n):n=e[1];let r;return e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Z.jsx)(`section`,{"aria-busy":`true`,"aria-labelledby":`sophia-application-loading-title`,"aria-live":`polite`,className:`border-token-border-light bg-token-bg-primary rounded-2xl border p-6 shadow-sm`,children:(0,Z.jsxs)(`div`,{className:`flex items-start gap-4`,children:[t,(0,Z.jsxs)(`div`,{className:`min-w-0 flex-1`,children:[n,(0,Z.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-sm leading-6`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.loading`,defaultMessage:`Getting your application ready…`})})]})]})}),e[2]=r):r=e[2],r}function Re(){"use forget";let e=(0,Y.c)(4),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(nt,{isComplete:!0,stepNumber:2}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Z.jsx)(`h2`,{className:`text-token-text-primary text-base font-semibold`,id:`sophia-eligibility-complete-title`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.completed_summary.title`,defaultMessage:`Verification and application complete`})}),e[1]=n):n=e[1];let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Z.jsx)(W,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.completed_summary.verification`,defaultMessage:`Researcher status verified`})}),e[2]=r):r=e[2];let i;return e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,Z.jsx)(`section`,{"aria-labelledby":`sophia-eligibility-complete-title`,className:`border-token-border-light bg-token-bg-primary after:bg-token-border-heavy relative rounded-2xl border px-6 py-5 shadow-sm after:absolute after:start-[39px] after:top-full after:h-3 after:w-px after:content-['']`,children:(0,Z.jsxs)(`div`,{className:`flex items-start gap-4`,children:[t,(0,Z.jsxs)(`div`,{className:`min-w-0 flex-1`,children:[n,(0,Z.jsxs)(`div`,{className:`mt-4 grid gap-3 sm:grid-cols-2`,children:[r,(0,Z.jsx)(W,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.completed_summary.application`,defaultMessage:`Application approved`})})]})]})]})}),e[3]=i):i=e[3],i}function W(e){"use forget";let t=(0,Y.c)(3),{children:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Z.jsx)(`span`,{"aria-hidden":`true`,className:`bg-token-bg-secondary text-token-text-success flex h-6 w-6 shrink-0 items-center justify-center rounded-full`,children:(0,Z.jsx)(M,{className:`h-3.5 w-3.5`})}),t[0]=r):r=t[0];let i;return t[1]===n?i=t[2]:(i=(0,Z.jsxs)(`div`,{className:`text-token-text-primary flex items-center gap-2 text-sm font-medium`,children:[r,n]}),t[1]=n,t[2]=i),i}function ze(e){"use forget";let t=(0,Y.c)(14),{canCreateWorkspace:n,checkoutError:r,hasBillingDetailsError:i,hasWorkspaceAccessError:a,hasWorkspaceMembershipConflict:o,isPreparingCheckout:s,isRetryingWorkspaceAccess:c,onContinue:l,onRetryBillingDetails:u,onRetryCheckout:d,onRetryWorkspaceAccess:f}=e,p;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,Z.jsx)(nt,{isAvailable:!0,stepNumber:3}),t[0]=p):p=t[0];let m;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,Z.jsx)(`h2`,{className:`text-token-text-primary text-base font-semibold focus:outline-none`,id:`sophia-verification-step-three-title`,tabIndex:-1,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.title`,defaultMessage:`Set up your Academic Researcher workspace`})}),t[1]=m):m=t[1];let h;return t[2]!==n||t[3]!==r||t[4]!==i||t[5]!==a||t[6]!==o||t[7]!==s||t[8]!==c||t[9]!==l||t[10]!==u||t[11]!==d||t[12]!==f?(h=(0,Z.jsx)(`section`,{"aria-current":`step`,"aria-labelledby":`sophia-verification-step-three-title`,className:`border-token-border-heavy bg-token-bg-primary rounded-2xl border px-6 py-5 shadow-sm`,children:(0,Z.jsxs)(`div`,{className:`flex items-start gap-4`,children:[p,(0,Z.jsxs)(`div`,{className:`min-w-0 flex-1`,children:[m,o?(0,Z.jsx)(`div`,{className:`mt-4`,children:(0,Z.jsx)(G,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.status.membership_conflict`,defaultMessage:`You already belong to an Academic Researcher workspace.`})})}):i?(0,Z.jsxs)(`div`,{className:`mt-4`,children:[(0,Z.jsx)(G,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.status.billing_details_error`,defaultMessage:`We couldn’t load your billing details. Reload this page to try again.`})}),(0,Z.jsx)(v,{color:`secondary`,size:`large`,type:`button`,onClick:u,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.button.reload_billing_details`,defaultMessage:`Reload page`})})]}):r===`country_not_supported`?(0,Z.jsx)(`div`,{className:`mt-4`,children:(0,Z.jsx)(G,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.status.checkout_country_not_supported`,defaultMessage:`Checkout is not available in your region.`})})}):r===`generic`?(0,Z.jsxs)(`div`,{className:`mt-4`,children:[(0,Z.jsx)(G,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.status.checkout_error`,defaultMessage:`We couldn’t start checkout. Try again.`})}),(0,Z.jsx)(v,{color:`secondary`,loading:s,size:`large`,type:`button`,onClick:d,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.button.retry_checkout`,defaultMessage:`Try again`})})]}):n?(0,Z.jsxs)(`div`,{className:`mt-4`,children:[(0,Z.jsx)(`p`,{className:`text-token-text-primary mb-4 text-sm leading-6 font-medium`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.status.approved.ready`,defaultMessage:`You’re approved and ready to set up your Academic Researcher workspace.`})}),(0,Z.jsx)(v,{color:`primary`,loading:s,size:`large`,type:`button`,onClick:l,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.button.continue`,defaultMessage:`Continue to workspace setup`})}),s?(0,Z.jsx)(`p`,{"aria-live":`polite`,className:`text-token-text-secondary mt-3 text-sm leading-6 font-medium`,role:`status`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.status.preparing_checkout`,defaultMessage:`Preparing your checkout. This may take a moment. Please keep this page open.`})}):null]}):a?(0,Z.jsxs)(`div`,{className:`mt-4`,children:[(0,Z.jsx)(G,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.status.approved.access_error`,defaultMessage:`We couldn’t finish preparing your workspace access. Try again.`})}),(0,Z.jsx)(v,{color:`secondary`,loading:c,size:`large`,type:`button`,onClick:f,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.button.retry_access`,defaultMessage:`Try again`})})]}):(0,Z.jsxs)(`div`,{"aria-live":`polite`,className:`bg-token-bg-secondary mt-4 flex items-start gap-3 rounded-xl px-4 py-3`,children:[(0,Z.jsx)(`span`,{"aria-hidden":`true`,className:`bg-token-text-secondary mt-2 h-2 w-2 shrink-0 animate-pulse rounded-full`}),(0,Z.jsx)(`p`,{className:`text-token-text-primary text-sm leading-6 font-medium`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.step.workspace.status.approved.preparing`,defaultMessage:`Your application is approved. We’re getting your workspace access ready.`})})]})]})]})}),t[2]=n,t[3]=r,t[4]=i,t[5]=a,t[6]=o,t[7]=s,t[8]=c,t[9]=l,t[10]=u,t[11]=d,t[12]=f,t[13]=h):h=t[13],h}function Be(){"use forget";let e=(0,Y.c)(4),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(He,{}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Z.jsx)(Ve,{variant:`neutral`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.status.not_approved`,defaultMessage:`Not approved`})}),e[1]=n):n=e[1];let r;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Z.jsx)(`h2`,{className:`text-token-text-primary mt-3 text-base font-semibold focus:outline-none`,id:`sophia-verification-application-outcome-title`,tabIndex:-1,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.rejected.title`,defaultMessage:`We couldn’t approve your application`})}),e[2]=r):r=e[2];let i;return e[3]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,Z.jsx)(`section`,{"aria-labelledby":`sophia-verification-application-outcome-title`,"aria-live":`polite`,className:`border-token-border-default bg-token-bg-primary rounded-2xl border p-6 shadow-sm`,children:(0,Z.jsxs)(`div`,{className:`flex items-start gap-4`,children:[t,(0,Z.jsxs)(`div`,{className:`w-full min-w-0 flex-1`,children:[n,r,(0,Z.jsx)(`p`,{className:`text-token-text-primary mt-2 text-sm leading-6`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.rejected.description`,defaultMessage:`Thanks for applying. Based on the information provided, your application isn’t eligible for ChatGPT for Academic Researchers at this time.`})})]})]})}),e[3]=i):i=e[3],i}function Ve(e){"use forget";let t=(0,Y.c)(6),{children:n,variant:r}=e,i=`inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs font-medium ${r===`success`?`border-token-border-light bg-token-bg-secondary text-token-text-success`:`border-token-border-light bg-token-bg-secondary text-token-text-secondary`}`,a;t[0]===r?a=t[1]:(a=r===`success`?(0,Z.jsx)(M,{"aria-hidden":`true`,className:`h-3.5 w-3.5`}):(0,Z.jsx)(`span`,{"aria-hidden":`true`,className:`bg-token-text-secondary h-1.5 w-1.5 rounded-full`}),t[0]=r,t[1]=a);let o;return t[2]!==n||t[3]!==i||t[4]!==a?(o=(0,Z.jsxs)(`span`,{className:i,children:[a,n]}),t[2]=n,t[3]=i,t[4]=a,t[5]=o):o=t[5],o}function G(e){"use forget";let t=(0,Y.c)(3),{children:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Z.jsx)(N,{"aria-hidden":`true`,className:`text-token-interactive-label-warning-secondary mt-0.5 h-5 w-5 shrink-0`}),t[0]=r):r=t[0];let i;return t[1]===n?i=t[2]:(i=(0,Z.jsxs)(`div`,{className:`border-token-border-light bg-token-bg-secondary text-token-text-primary mb-4 flex items-start gap-3 rounded-xl border px-4 py-3 text-sm leading-6`,role:`alert`,children:[r,(0,Z.jsx)(`div`,{className:`min-w-0`,children:n})]}),t[1]=n,t[2]=i),i}function He(){"use forget";let e=(0,Y.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(`span`,{"aria-hidden":`true`,className:`bg-token-bg-secondary text-token-text-secondary flex h-8 w-8 shrink-0 items-center justify-center rounded-full`,children:(0,Z.jsx)(m,{className:`h-4 w-4`})}),e[0]=t):t=e[0],t}function Ue(e){"use forget";let t=(0,Y.c)(6),{onContinue:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Z.jsx)(He,{}),t[0]=r):r=t[0];let i;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,Z.jsx)(`h2`,{className:`text-base font-semibold`,id:`sophia-verification-invite-continuation-title`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.invite_continuation.title`,defaultMessage:`Continue your workspace invitation`})}),t[1]=i):i=t[1];let a;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Z.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-sm leading-6`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.invite_continuation.description`,defaultMessage:`You started verification from an Academic Researcher workspace invitation. Continue with that invitation to join the workspace.`})}),t[2]=a):a=t[2];let o;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.invite_continuation.button`,defaultMessage:`Continue joining the workspace`}),t[3]=o):o=t[3];let s;return t[4]===n?s=t[5]:(s=(0,Z.jsx)(`section`,{"aria-labelledby":`sophia-verification-invite-continuation-title`,className:`border-token-border-light bg-token-bg-primary rounded-2xl border px-6 py-5 shadow-sm`,children:(0,Z.jsxs)(`div`,{className:`flex items-start gap-4`,children:[r,(0,Z.jsxs)(`div`,{className:`min-w-0`,children:[i,a,(0,Z.jsx)(v,{className:`mt-4`,color:`primary`,size:`large`,onClick:n,children:o})]})]})}),t[4]=n,t[5]=s),s}function We(){"use forget";let e=(0,Y.c)(3),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(He,{}),e[0]=t):t=e[0];let n;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Z.jsx)(`h2`,{className:`text-base font-semibold`,id:`sophia-verification-student-title`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.student.card.title`,defaultMessage:`You’re verified to join invited workspaces`})}),e[1]=n):n=e[1];let r;return e[2]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Z.jsx)(`section`,{"aria-labelledby":`sophia-verification-student-title`,className:`border-token-border-light bg-token-bg-primary rounded-2xl border px-6 py-5 shadow-sm`,children:(0,Z.jsxs)(`div`,{className:`flex items-start gap-4`,children:[t,(0,Z.jsxs)(`div`,{className:`min-w-0`,children:[n,(0,Z.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-sm leading-6`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.student.card.description`,defaultMessage:`Student verification does not include creating a new Academic Researcher workspace.`})})]})]})}),e[2]=r):r=e[2],r}function Ge(e){"use forget";let t=(0,Y.c)(74),{applicationData:n,applicantInstitution:r,applicantName:i,canSubmit:a,fieldOfResearch:o,hasSubmitError:s,isIdentityEditable:c,isSubmitting:l,otherFieldOfResearch:u,paperId:d,paperIdType:f,plannedAiUse:p,researchFieldOptions:m,onFieldOfResearchChange:h,onInstitutionChange:g,onNameChange:_,onOtherFieldOfResearchChange:y,onPaperIdChange:b,onPaperIdTypeChange:x,onPlannedAiUseChange:te,onSubmit:ne}=e,S=ee(),re;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(re={value:`arxiv_id`,label:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.paper_reference.identifier_type.arxiv_id`,defaultMessage:`arXiv ID`})},t[0]=re):re=t[0];let w;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(w=[re,{value:`doi`,label:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.paper_reference.identifier_type.doi`,defaultMessage:`DOI (bioRxiv or ChemRxiv only)`})}],t[1]=w):w=t[1];let T=w,E=f===`arxiv_id`;if(n==null)return null;let D;t[2]!==r||t[3]!==i||t[4]!==n||t[5]!==c||t[6]!==g||t[7]!==_?(D=c?(0,Z.jsx)(gt,{applicationData:n,institution:r,name:i,onInstitutionChange:g,onNameChange:_}):(0,Z.jsx)(Ke,{applicationData:n}),t[2]=r,t[3]=i,t[4]=n,t[5]=c,t[6]=g,t[7]=_,t[8]=D):D=t[8];let ie;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(ie=(0,Z.jsx)(`label`,{className:`text-token-text-primary mb-2 block text-sm font-medium`,htmlFor:`sophia-application-field`,id:`sophia-application-field-label`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.primary.label`,defaultMessage:`1. Primary research field`})}),t[9]=ie):ie=t[9];let O;t[10]===Symbol.for(`react.memo_cache_sentinel`)?(O=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.placeholder`,defaultMessage:`Choose a field`}),t[10]=O):O=t[10];let k=o??void 0,ae;t[11]===h?ae=t[12]:(ae=e=>{Ze(e)&&h(e)},t[11]=h,t[12]=ae);let oe;t[13]!==m||t[14]!==k||t[15]!==ae?(oe=(0,Z.jsxs)(`div`,{children:[ie,(0,Z.jsx)(ge,{ariaLabelledBy:`sophia-application-field-label`,options:m,placeholder:O,triggerClassName:`border-token-border-heavy bg-primary flex w-full justify-between rounded-lg border px-3 py-2 text-sm`,triggerId:`sophia-application-field`,value:k,onValueChange:ae})]}),t[13]=m,t[14]=k,t[15]=ae,t[16]=oe):oe=t[16];let A;t[17]!==o||t[18]!==y||t[19]!==u?(A=o===`other`?(0,Z.jsxs)(`div`,{children:[(0,Z.jsx)(`label`,{className:`text-token-text-primary mb-2 block text-sm font-medium`,htmlFor:`sophia-application-other-field`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.field.other.label`,defaultMessage:`Your research field`})}),(0,Z.jsx)(`input`,{className:`border-token-border-heavy bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-lg border px-3 py-2 text-sm focus:ring-1 focus:outline-hidden`,id:`sophia-application-other-field`,maxLength:200,name:`field_of_research_other`,required:!0,type:`text`,value:u,onChange:e=>{y(e.target.value)}})]}):null,t[17]=o,t[18]=y,t[19]=u,t[20]=A):A=t[20];let ce;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(ce=(0,Z.jsx)(`label`,{className:`text-token-text-primary mb-2 block text-sm font-medium`,htmlFor:`sophia-application-ai-use`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.research_question.label`,defaultMessage:`2. What research question or problem are you working on?`})}),t[21]=ce):ce=t[21];let le;t[22]===Symbol.for(`react.memo_cache_sentinel`)?(le=(0,Z.jsx)(`p`,{className:`text-token-text-secondary mb-3 text-xs leading-5`,id:`sophia-application-ai-use-help`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.research_question.help_text`,defaultMessage:`You don’t need a specific project. Tell us what you’d like to explore with AI. 2–3 sentences is enough.`})}),t[22]=le):le=t[22];let ue;t[23]===S?ue=t[24]:(ue=S.formatMessage({id:`chatgpt.sophia.verification.application.research_question.placeholder`,defaultMessage:`I’m studying [topic] and trying to understand [question or problem]. My current work involves [brief context]. I want to use AI for [idea for a task]`}),t[23]=S,t[24]=ue);let de;t[25]===te?de=t[26]:(de=e=>{te(e.target.value)},t[25]=te,t[26]=de);let j;t[27]!==p||t[28]!==ue||t[29]!==de?(j=(0,Z.jsxs)(`div`,{children:[ce,le,(0,Z.jsx)(se,{"aria-describedby":`sophia-application-ai-use-help`,className:`min-h-28 resize-y`,id:`sophia-application-ai-use`,maxLength:4e3,name:`planned_ai_use`,placeholder:ue,required:!0,value:p,onChange:de})]}),t[27]=p,t[28]=ue,t[29]=de,t[30]=j):j=t[30];let fe;t[31]===Symbol.for(`react.memo_cache_sentinel`)?(fe=(0,Z.jsx)(`p`,{className:`text-token-text-primary text-sm font-medium`,id:`sophia-application-publication-heading`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.publication.heading`,defaultMessage:`3. Add a recent paper to help us confirm your research background.`})}),t[31]=fe):fe=t[31];let pe;t[32]===Symbol.for(`react.memo_cache_sentinel`)?(pe=(0,Z.jsx)(`p`,{className:`text-token-text-secondary text-xs leading-5`,id:`sophia-application-publication-requirement`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.publication.requirement.help_text`,defaultMessage:`Use a paper from arXiv, bioRxiv, or ChemRxiv. The paper must have been posted within the last 3 years, relate to your selected research field, and list you as an author.`})}),t[32]=pe):pe=t[32];let M;t[33]===Symbol.for(`react.memo_cache_sentinel`)?(M=(0,Z.jsx)(`p`,{className:`text-token-text-primary mb-2 block text-sm font-medium`,id:`sophia-application-paper-reference-format-label`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.paper_reference.identifier_type.label`,defaultMessage:`Identifier format`})}),t[33]=M):M=t[33];let N;t[34]!==b||t[35]!==x?(N=e=>{Qe(e)&&(x(e),b(``))},t[34]=b,t[35]=x,t[36]=N):N=t[36];let P;t[37]!==f||t[38]!==N?(P=(0,Z.jsx)(ge,{ariaLabelledBy:`sophia-application-paper-reference-format-label`,options:T,triggerClassName:`border-token-border-heavy bg-primary flex w-full justify-between rounded-lg border px-3 py-2 text-sm`,triggerId:`sophia-application-paper-reference-format`,value:f,onValueChange:N}),t[37]=f,t[38]=N,t[39]=P):P=t[39];let F;t[40]===E?F=t[41]:(F=(0,Z.jsx)(`label`,{className:`text-token-text-primary mt-4 mb-2 block text-sm font-medium`,htmlFor:`sophia-application-paper-reference`,children:E?(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.paper_reference.arxiv_id.label`,defaultMessage:`arXiv ID`}):(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.paper_reference.doi.label`,defaultMessage:`DOI (bioRxiv or ChemRxiv only)`})}),t[40]=E,t[41]=F);let me=E?`\\s*\\d{4}\\.\\d{4,5}(?:v\\d+)?\\s*`:`\\s*10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+\\s*`,he;t[42]!==S||t[43]!==E?(he=E?S.formatMessage({id:`chatgpt.sophia.verification.application.paper_reference.arxiv_id.placeholder`,defaultMessage:`2401.12345`}):S.formatMessage({id:`chatgpt.sophia.verification.application.paper_reference.doi.placeholder`,defaultMessage:`10.1101/2024.04.15.589616`}),t[42]=S,t[43]=E,t[44]=he):he=t[44];let I;t[45]===b?I=t[46]:(I=e=>{b(e.target.value)},t[45]=b,t[46]=I);let L;t[47]!==d||t[48]!==me||t[49]!==he||t[50]!==I?(L=(0,Z.jsx)(`input`,{"aria-describedby":`sophia-application-publication-requirement sophia-application-paper-reference-help`,className:`border-token-border-heavy bg-token-bg-primary text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-lg border px-3 py-2 text-sm focus:ring-1 focus:outline-hidden`,id:`sophia-application-paper-reference`,maxLength:200,name:`paper_id`,pattern:me,placeholder:he,required:!0,type:`text`,value:d,onChange:I}),t[47]=d,t[48]=me,t[49]=he,t[50]=I,t[51]=L):L=t[51];let _e;t[52]===E?_e=t[53]:(_e=(0,Z.jsx)(`p`,{className:`text-token-text-secondary mt-2 text-xs leading-5`,id:`sophia-application-paper-reference-help`,children:E?(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.paper_reference.arxiv_id.help_text`,defaultMessage:`For arXiv papers, enter the arXiv ID, such as 2401.12345 — not the DOI.`}):(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.paper_reference.doi.help_text`,defaultMessage:`Enter a DOI from bioRxiv or ChemRxiv. Journal DOIs and other repositories aren’t supported.`})}),t[52]=E,t[53]=_e);let R;t[54]!==P||t[55]!==F||t[56]!==L||t[57]!==_e?(R=(0,Z.jsxs)(`div`,{className:`space-y-3`,children:[fe,pe,M,P,F,L,_e]}),t[54]=P,t[55]=F,t[56]=L,t[57]=_e,t[58]=R):R=t[58];let z;t[59]===s?z=t[60]:(z=s?(0,Z.jsx)(G,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.error.submit`,defaultMessage:`We couldn’t submit your application. Your responses are still here—please try again.`})}):null,t[59]=s,t[60]=z);let ve=!a,ye;t[61]===Symbol.for(`react.memo_cache_sentinel`)?(ye=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.button.submit`,defaultMessage:`Submit application`}),t[61]=ye):ye=t[61];let B;t[62]!==l||t[63]!==ve?(B=(0,Z.jsx)(v,{color:`primary`,disabled:ve,loading:l,size:`large`,type:`submit`,children:ye}),t[62]=l,t[63]=ve,t[64]=B):B=t[64];let be;return t[65]!==ne||t[66]!==j||t[67]!==R||t[68]!==z||t[69]!==D||t[70]!==B||t[71]!==oe||t[72]!==A?(be=(0,Z.jsxs)(`form`,{className:`mt-5 space-y-5`,onSubmit:ne,children:[D,oe,A,j,R,z,B]}),t[65]=ne,t[66]=j,t[67]=R,t[68]=z,t[69]=D,t[70]=B,t[71]=oe,t[72]=A,t[73]=be):be=t[73],be}function Ke(e){"use forget";let t=(0,Y.c)(16),{applicationData:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Z.jsx)(M,{"aria-hidden":`true`,className:`text-token-text-success h-4 w-4`}),t[0]=r):r=t[0];let i;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,Z.jsxs)(`div`,{className:`flex items-center gap-2`,children:[r,(0,Z.jsx)(`h3`,{className:`text-token-text-primary text-sm font-semibold`,id:`sophia-verified-identity-title`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.identity.summary.title`,defaultMessage:`Verified identity`})})]}),t[1]=i):i=t[1];let a;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Z.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-xs leading-5`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.identity.summary.description`,defaultMessage:`Provided by SheerID and not editable here.`})}),t[2]=a):a=t[2];let o;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.identity.name.label`,defaultMessage:`Name`}),t[3]=o):o=t[3];let s;t[4]===n.name?s=t[5]:(s=(0,Z.jsx)(qe,{label:o,value:n.name}),t[4]=n.name,t[5]=s);let c;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.identity.email.label`,defaultMessage:`Verified email`}),t[6]=c):c=t[6];let l;t[7]===n.verified_email?l=t[8]:(l=(0,Z.jsx)(qe,{label:c,value:n.verified_email}),t[7]=n.verified_email,t[8]=l);let u;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.identity.institution.label`,defaultMessage:`Institution`}),t[9]=u):u=t[9];let d;t[10]===n.institution?d=t[11]:(d=(0,Z.jsx)(`div`,{className:`sm:col-span-2`,children:(0,Z.jsx)(qe,{label:u,value:n.institution})}),t[10]=n.institution,t[11]=d);let f;return t[12]!==s||t[13]!==l||t[14]!==d?(f=(0,Z.jsxs)(`section`,{"aria-labelledby":`sophia-verified-identity-title`,className:`border-token-border-light bg-token-bg-secondary rounded-xl border px-4 py-3`,children:[i,a,(0,Z.jsxs)(`dl`,{className:`mt-3 grid gap-x-5 gap-y-3 sm:grid-cols-2`,children:[s,l,d]})]}),t[12]=s,t[13]=l,t[14]=d,t[15]=f):f=t[15],f}function qe(e){"use forget";let t=(0,Y.c)(7),{label:n,value:r}=e,i;t[0]===n?i=t[1]:(i=(0,Z.jsx)(`dt`,{className:`text-token-text-secondary text-xs leading-5`,children:n}),t[0]=n,t[1]=i);let a;t[2]===r?a=t[3]:(a=(0,Z.jsx)(`dd`,{className:`text-token-text-primary truncate text-sm font-medium`,children:r}),t[2]=r,t[3]=a);let o;return t[4]!==i||t[5]!==a?(o=(0,Z.jsxs)(`div`,{className:`min-w-0`,children:[i,a]}),t[4]=i,t[5]=a,t[6]=o):o=t[6],o}function Je(e,t){if(e!==`other`)return e??null;let n=Object.entries(mt).find(([,e])=>e===t);return n==null?`other`:n[0]}function Ye(e,t){return Xe(e)?{fieldOfResearch:`other`,otherFieldOfResearch:mt[e]}:{fieldOfResearch:e,otherFieldOfResearch:e===`other`?t:null}}function Xe(e){return e in mt}function Ze(e){return[`mathematics`,`physics`,`chemistry`,`biology`,`computer_science`,`earth_and_planetary_sciences`,`engineering`,`other`].includes(e)}function Qe(e){return e===`arxiv_id`||e===`doi`}function $e(e){"use forget";let t=(0,Y.c)(13),{showFaq:n}=e,[r,i]=(0,X.useState)(-1),a;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.eligibility.question`,defaultMessage:`Who is eligible?`}),t[0]=a):a=t[0];let o,s,c,l;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(o={question:a,answer:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.eligibility.answer.published_research_and_institution_link`,defaultMessage:`Faculty and postdoctoral researchers in eligible scientific fields at <institutionLink>eligible institutions</institutionLink> may apply. Applicants must provide a paper posted on arXiv, bioRxiv, or ChemRxiv within the past three years that lists them as an author and a brief description of their intended research use.`,values:{institutionLink:J}})},s={question:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.application.question`,defaultMessage:`How do I apply?`}),answer:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.application.answer.institutional_email_sheerid_research_application`,defaultMessage:`Sign in with your institutional email, verify your affiliation through SheerID, and complete a short research application. Approved applicants will then receive instructions for accessing their research workspace.`})},c={question:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.program_free.question`,defaultMessage:`Is the program free?`}),answer:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.program_free.answer.complimentary_workspace_and_collaborators`,defaultMessage:`Yes. Approved researchers receive a complimentary workspace for 12 months and may invite up to four verified students or collaborators from the same institution. Students can join by invitation but cannot apply independently. A payment method is required at checkout, but your plan will not renew automatically and you will only be charged if you choose to continue after the first 12 months.`})},l=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.existing_workspace.question`,defaultMessage:`What if I already have ChatGPT or my institution has a workspace?`}),t[1]=o,t[2]=s,t[3]=c,t[4]=l):(o=t[1],s=t[2],c=t[3],l=t[4]);let u;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(u=[o,s,c,{question:l,answer:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.existing_workspace.answer.institutional_and_personal_workspaces`,defaultMessage:`You can apply using an existing ChatGPT account associated with your institutional email. If your application is approved and your institution already uses ChatGPT Edu or Enterprise, your workspace administrator can coordinate access through the existing enterprise agreement. Personal workspaces are governed by our <termsLink>Terms of Use</termsLink> and <privacyLink>Privacy Policy</privacyLink>.`,values:{termsLink:q,privacyLink:K}})},{question:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.training.question`,defaultMessage:`Does OpenAI train its models on my data?`}),answer:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.training.answer.not_used_by_default`,defaultMessage:`No. Content you share in your ChatGPT for Academic Researchers workspace is not used to train OpenAI’s models by default.`})}],t[5]=u):u=t[5];let d=u,f;t[6]!==r||t[7]!==n?(f=n&&(0,Z.jsxs)(Z.Fragment,{children:[(0,Z.jsx)(`h2`,{className:`text-token-text-primary text-start text-lg font-semibold tracking-tight`,children:(0,Z.jsx)(`span`,{children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.faq.title`,defaultMessage:`FAQs`})})}),(0,Z.jsx)(`div`,{className:`border-token-border-light bg-token-bg-primary rounded-2xl border px-6 shadow-sm`,children:d.map((e,t)=>(0,Z.jsx)(tt,{answer:e.answer,index:t,isOpen:r===t,question:e.question,onToggle:()=>{i(r===t?-1:t)}},t))})]}),t[6]=r,t[7]=n,t[8]=f):f=t[8];let p;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,Z.jsx)(`h3`,{className:`text-token-text-primary text-base font-semibold`,id:`sophia-verification-help-title`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.help.title`,defaultMessage:`Need help?`})}),t[9]=p):p=t[9];let m;t[10]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,Z.jsxs)(`section`,{"aria-labelledby":`sophia-verification-help-title`,className:`border-token-border-light bg-token-bg-primary scroll-mt-8 rounded-2xl border px-6 py-5 shadow-sm`,id:`sophia-verification-help`,children:[p,(0,Z.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-sm leading-6`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.help.description`,defaultMessage:`For questions about ChatGPT for Academic Researchers or your application, <helpCenterLink>visit our Help Center</helpCenterLink>.`,values:{helpCenterLink:et}})})]}),t[10]=m):m=t[10];let h;return t[11]===f?h=t[12]:(h=(0,Z.jsxs)(`section`,{className:`mx-auto flex w-full max-w-2xl scroll-mt-8 flex-col gap-5 px-6 pt-6 pb-14 md:pt-8 md:pb-16`,id:`sophia-verification-faq`,children:[f,m]}),t[11]=f,t[12]=h),h}function et(e){return(0,Z.jsx)(`a`,{className:`text-token-text-primary underline underline-offset-2`,href:`https://help.openai.com/en/articles/20001406`,rel:`noopener noreferrer`,target:`_blank`,children:e})}function K(e){return(0,Z.jsx)(`a`,{className:`text-token-text-primary underline underline-offset-2`,href:`https://openai.com/policies/privacy-policy/`,rel:`noopener noreferrer`,target:`_blank`,children:e})}function q(e){return(0,Z.jsx)(`a`,{className:`text-token-text-primary underline underline-offset-2`,href:`https://openai.com/policies/row-terms-of-use/`,rel:`noopener noreferrer`,target:`_blank`,children:e})}function J(e){return(0,Z.jsx)(D,{className:`text-token-text-primary underline underline-offset-2`,rel:`noopener noreferrer`,target:`_blank`,to:z(),children:e})}function tt(e){"use forget";let t=(0,Y.c)(23),{answer:n,index:r,isOpen:i,question:a,onToggle:o}=e,s=`sophia-verification-faq-${r}-answer`,c=`sophia-verification-faq-${r}-question`,l;t[0]===a?l=t[1]:(l=(0,Z.jsx)(`span`,{children:a}),t[0]=a,t[1]=l);let u;t[2]===i?u=t[3]:(u=i?(0,Z.jsx)(it,{}):(0,Z.jsx)(rt,{}),t[2]=i,t[3]=u);let d;t[4]!==s||t[5]!==i||t[6]!==o||t[7]!==c||t[8]!==l||t[9]!==u?(d=(0,Z.jsxs)(`button`,{"aria-controls":s,"aria-expanded":i,className:`text-token-text-primary flex w-full items-center justify-between gap-6 py-4 text-start text-[15px] font-normal md:text-[16px]`,id:c,onClick:o,type:`button`,children:[l,u]}),t[4]=s,t[5]=i,t[6]=o,t[7]=c,t[8]=l,t[9]=u,t[10]=d):d=t[10];let f=!i,p=i?`grid grid-rows-[1fr] transition-all duration-200`:`grid grid-rows-[0fr] transition-all duration-200`,m=!i,h;t[11]===n?h=t[12]:(h=(0,Z.jsx)(`div`,{className:`overflow-hidden`,children:(0,Z.jsx)(`p`,{className:`text-token-text-secondary mb-4 max-w-4xl text-sm leading-6`,children:n})}),t[11]=n,t[12]=h);let g;t[13]!==s||t[14]!==c||t[15]!==f||t[16]!==p||t[17]!==m||t[18]!==h?(g=(0,Z.jsx)(`div`,{"aria-hidden":f,"aria-labelledby":c,className:p,id:s,inert:m,role:`region`,children:h}),t[13]=s,t[14]=c,t[15]=f,t[16]=p,t[17]=m,t[18]=h,t[19]=g):g=t[19];let _;return t[20]!==d||t[21]!==g?(_=(0,Z.jsxs)(`div`,{className:`border-token-border-light border-b`,children:[d,g]}),t[20]=d,t[21]=g,t[22]=_):_=t[22],_}function nt(e){"use forget";let t=(0,Y.c)(6),{isComplete:n,isAvailable:r,stepNumber:i}=e,a=n!==void 0&&n,o=a?`border-token-border-light bg-token-bg-secondary text-token-text-success flex h-8 w-8 shrink-0 items-center justify-center rounded-full border`:r===void 0||r?`border-token-border-heavy text-token-text-secondary flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-sm font-medium`:`border-token-border-light text-token-text-tertiary flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-sm font-medium`,s;t[0]!==a||t[1]!==i?(s=a?(0,Z.jsx)(M,{className:`h-4 w-4`}):i,t[0]=a,t[1]=i,t[2]=s):s=t[2];let c;return t[3]!==o||t[4]!==s?(c=(0,Z.jsx)(`span`,{"aria-hidden":`true`,className:o,children:s}),t[3]=o,t[4]=s,t[5]=c):c=t[5],c}function rt(){"use forget";let e=(0,Y.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(`svg`,{"aria-hidden":`true`,className:`h-5 w-5 shrink-0`,fill:`none`,viewBox:`0 0 20 20`,children:(0,Z.jsx)(`path`,{d:`M10 4.5v11M4.5 10h11`,stroke:`currentColor`,strokeLinecap:`round`,strokeWidth:`2`})}),e[0]=t):t=e[0],t}function it(){"use forget";let e=(0,Y.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(`svg`,{"aria-hidden":`true`,className:`h-5 w-5 shrink-0`,fill:`none`,viewBox:`0 0 20 20`,children:(0,Z.jsx)(`path`,{d:`M4.5 10h11`,stroke:`currentColor`,strokeLinecap:`round`,strokeWidth:`2`})}),e[0]=t):t=e[0],t}function at(e,t,n){if(e)return`loading`;if(t)return`refresh-error`;switch(n){case`pending`:return`pending`;case`verified`:return`verified`;case`error`:return`error`;case`none`:case void 0:return`needs-verification`}}function ot(e){return e instanceof r&&e.status===409&&e.code===ft}function st(e){return e instanceof r&&e.status===409&&e.code===pt}function ct(){return new URL(R(),window.location.origin).toString()}function lt(e,t){let n=t?.name?.trim();return n?e.formatMessage(_t.personalWorkspaceTitle,{name:n}):e.formatMessage(_t.defaultWorkspaceTitle)}function ut(e){"use forget";let t=(0,Y.c)(3),{verificationState:n}=e;switch(n){case`loading`:{let e;return t[0]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.button.loading`,defaultMessage:`Checking your status…`}),t[0]=e):e=t[0],e}case`pending`:{let e;return t[1]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.button.continue`,defaultMessage:`Continue verification`}),t[1]=e):e=t[1],e}case`error`:return null;case`verified`:return null;case`needs-verification`:{let e;return t[2]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.button.start`,defaultMessage:`Start verification`}),t[2]=e):e=t[2],e}case`refresh-error`:return null}}var Y,X,Z,dt,ft,pt,mt,ht,gt,_t,vt=e((()=>{Y=T(),n(),o(),A(),fe(),j(),P(),F(),p(),y(),I(),de(),me(),L(),Se(),H(),i(),f(),h(),l(),s(),O(),X=t(te()),ae(),x(),Z=E(),dt=1,ft=`sci_new_verifications_disabled`,pt=`sci_workspace_cap_reached`,mt={computer_science:`Computer Science`,earth_and_planetary_sciences:`Earth and Planetary Sciences`,engineering:`Engineering`},ht=e=>{"use forget";let t=(0,Y.c)(2),{description:n}=e,r;return t[0]===n?r=t[1]:(r=(0,Z.jsx)(`div`,{className:`mt-4`,children:(0,Z.jsx)(`p`,{className:`text-token-text-primary text-sm leading-6 font-medium`,children:n})}),t[0]=n,t[1]=r),r},gt=e=>{"use forget";let t=(0,Y.c)(24),{applicationData:n,institution:r,name:i,onInstitutionChange:a,onNameChange:o}=e,s;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,Z.jsx)(M,{"aria-hidden":`true`,className:`text-token-text-success h-4 w-4`}),t[0]=s):s=t[0];let c;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,Z.jsxs)(`div`,{className:`flex items-center gap-2`,children:[s,(0,Z.jsx)(`h3`,{className:`text-token-text-primary text-sm font-semibold`,id:`sophia-account-verification-title`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.identity.account_verification.title`,defaultMessage:`Account verification`})})]}),t[1]=c):c=t[1];let l;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,Z.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-xs leading-5`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.identity.account_verification.description`,defaultMessage:`Your account email is verified. Tell us your name and institution.`})}),t[2]=l):l=t[2];let u;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.identity.email.label`,defaultMessage:`Verified email`}),t[3]=u):u=t[3];let d;t[4]===n.verified_email?d=t[5]:(d=(0,Z.jsx)(`dl`,{className:`mt-3`,children:(0,Z.jsx)(qe,{label:u,value:n.verified_email})}),t[4]=n.verified_email,t[5]=d);let f;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,Z.jsx)(`label`,{className:`text-token-text-primary mb-2 block text-sm font-medium`,htmlFor:`sophia-application-name`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.identity.name.editable.label`,defaultMessage:`Name`})}),t[6]=f):f=t[6];let p;t[7]===o?p=t[8]:(p=e=>{o(e.target.value)},t[7]=o,t[8]=p);let m;t[9]!==i||t[10]!==p?(m=(0,Z.jsxs)(`div`,{children:[f,(0,Z.jsx)(`input`,{className:`border-token-border-heavy bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-lg border px-3 py-2 text-sm focus:ring-1 focus:outline-hidden`,id:`sophia-application-name`,maxLength:200,name:`name`,required:!0,type:`text`,value:i,onChange:p})]}),t[9]=i,t[10]=p,t[11]=m):m=t[11];let h;t[12]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,Z.jsx)(`label`,{className:`text-token-text-primary mb-2 block text-sm font-medium`,htmlFor:`sophia-application-institution`,children:(0,Z.jsx)(C,{id:`chatgpt.sophia.verification.application.identity.institution.editable.label`,defaultMessage:`Institution`})}),t[12]=h):h=t[12];let g;t[13]===a?g=t[14]:(g=e=>{a(e.target.value)},t[13]=a,t[14]=g);let _;t[15]!==r||t[16]!==g?(_=(0,Z.jsxs)(`div`,{children:[h,(0,Z.jsx)(`input`,{className:`border-token-border-heavy bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-lg border px-3 py-2 text-sm focus:ring-1 focus:outline-hidden`,id:`sophia-application-institution`,maxLength:200,name:`institution`,required:!0,type:`text`,value:r,onChange:g})]}),t[15]=r,t[16]=g,t[17]=_):_=t[17];let v;t[18]!==_||t[19]!==m?(v=(0,Z.jsxs)(`div`,{className:`mt-4 grid gap-4 sm:grid-cols-2`,children:[m,_]}),t[18]=_,t[19]=m,t[20]=v):v=t[20];let y;return t[21]!==v||t[22]!==d?(y=(0,Z.jsxs)(`section`,{"aria-labelledby":`sophia-account-verification-title`,className:`border-token-border-light bg-token-bg-secondary rounded-xl border px-4 py-3`,children:[c,l,d,v]}),t[21]=v,t[22]=d,t[23]=y):y=t[23],y},_t=w({personalWorkspaceTitle:{id:`SophiaCheckoutRoute.personalSophiaWorkspaceTitle`,defaultMessage:`{name}'s Researcher Workspace`},defaultWorkspaceTitle:{id:`SophiaCheckoutRoute.defaultSophiaWorkspaceTitle`,defaultMessage:`Workspace`}})}));export{vt as n,U as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $st as n,
+    Dat as r,
+    I1 as i,
+    J1 as a,
+    JT as o,
+    L7 as s,
+    N7 as c,
+    Nat as l,
+    Sw as u,
+    Y1 as d,
+    _R as f,
+    aB as p,
+    iB as m,
+    iat as h,
+    mst as g,
+    nat as _,
+    qT as v,
+    ww as y,
+    yR as b
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    $ as x,
+    Bn as ee,
+    Hn as te,
+    N as ne,
+    O as S,
+    Pn as C,
+    Pt as re,
+    Rn as w,
+    Tn as T,
+    Vn as E,
+    at as D,
+    p as ie,
+    s as O,
+    w as k,
+    zn as ae
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    $rn as oe,
+    I8 as se,
+    L8 as A,
+    _in as ce,
+    drn as le,
+    frn as ue,
+    lrn as de,
+    min as j,
+    oln as fe,
+    sln as pe
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    Jy as M,
+    Km as N,
+    Yy as P,
+    qm as F
+} from "./30901919-jory365vq6ym5crx.js";
+import {
+    fx as me,
+    px as he
+} from "./c2675c8c-nxl2ic2ofk2vw70s.js";
+import {
+    f_ as I,
+    u_ as ge
+} from "./8b34dbc2-d4icgkio4i3wfm6q.js";
+import {
+    i as L,
+    n as _e,
+    r as R,
+    t as z
+} from "./533f7052-dy10fylhzk5bdils.js";
+
+function ve(e) {
+    "use forget";
+    let t = (0, be.c)(36),
+        {
+            loadingFallback: n
+        } = e,
+        r = ee(),
+        i = ne(),
+        [a, o] = (0, xe.useState)(``),
+        [s, c] = (0, xe.useState)(``),
+        [l, u] = (0, xe.useState)(``),
+        [d, f] = (0, xe.useState)(``),
+        p;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (p = {
+        queryKey: [`sophia-waitlist-status`],
+        queryFn: B,
+        retry: !1
+    }, t[0] = p) : p = t[0];
+    let m = S(p),
+        h;
+    t[1] === i ? h = t[2] : (h = {
+        mutationFn: ye,
+        onSuccess: e => {
+            i.setQueryData([`sophia-waitlist-status`], {
+                is_enrolled: !0,
+                submitted_at: e.submitted_at
+            })
+        }
+    }, t[1] = i, t[2] = h);
+    let g = ie(h),
+        _ = m.data?.is_enrolled === !0,
+        y;
+    t[3] !== l || t[4] !== s || t[5] !== a || t[6] !== d ? (y = a.trim().length > 0 && a.trim().length <= 200 && /^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(s.trim()) && s.trim().length <= 320 && l.trim().length > 0 && l.trim().length <= 200 && d.trim().length > 0 && d.trim().length <= 4e3, t[3] = l, t[4] = s, t[5] = a, t[6] = d, t[7] = y) : y = t[7];
+    let b = y,
+        x;
+    t[8] !== b || t[9] !== l || t[10] !== s || t[11] !== _ || t[12] !== g || t[13] !== a || t[14] !== d ? (x = e => {
+        e.preventDefault(), !(!b || g.isPending || _) && g.mutate({
+            name: a.trim(),
+            institutional_email: s.trim(),
+            field_of_research: l.trim(),
+            research_intent: d.trim()
+        })
+    }, t[8] = b, t[9] = l, t[10] = s, t[11] = _, t[12] = g, t[13] = a, t[14] = d, t[15] = x) : x = t[15];
+    let te = x;
+    if (m.isPending) return n;
+    let re;
+    t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (re = (0, V.jsx)(`header`, {
+        className: `flex h-16 items-center px-6`,
+        children: (0, V.jsx)(`a`, {
+            className: `text-token-text-primary text-lg font-semibold tracking-tight`,
+            href: `/`,
+            children: (0, V.jsx)(C, {
+                id: `chatgpt.sophia.waitlist.header.product_name`,
+                defaultMessage: `ChatGPT`
+            })
+        })
+    }), t[16] = re) : re = t[16];
+    let w;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (w = (0, V.jsx)(`p`, {
+        className: `text-token-text-secondary text-xs font-semibold tracking-[0.18em] uppercase`,
+        children: (0, V.jsx)(C, {
+            id: `chatgpt.sophia.waitlist.eyebrow`,
+            defaultMessage: `ChatGPT for Academic Researchers`
+        })
+    }), t[17] = w) : w = t[17];
+    let T;
+    t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, V.jsx)(`h1`, {
+        className: `mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl`,
+        children: (0, V.jsx)(C, {
+            id: `chatgpt.sophia.waitlist.title`,
+            defaultMessage: `Join the waitlist`
+        })
+    }), t[18] = T) : T = t[18];
+    let E;
+    t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (E = (0, V.jsxs)(`div`, {
+        className: `text-center`,
+        children: [w, T, (0, V.jsx)(`p`, {
+            className: `text-token-text-secondary mx-auto mt-4 max-w-md text-base leading-7 text-balance`,
+            children: (0, V.jsx)(C, {
+                id: `chatgpt.sophia.waitlist.description`,
+                defaultMessage: `Share your details and we’ll email you when applications become available again.`
+            })
+        })]
+    }), t[19] = E) : E = t[19];
+    let D;
+    t[20] === _ ? D = t[21] : (D = _ ? null : (0, V.jsx)(`h2`, {
+        id: `sophia-waitlist-card-title`,
+        className: `text-lg font-semibold`,
+        children: (0, V.jsx)(C, {
+            id: `chatgpt.sophia.waitlist.form.title`,
+            defaultMessage: `Tell us about yourself`
+        })
+    }), t[20] = _, t[21] = D);
+    let O;
+    t[22] !== b || t[23] !== l || t[24] !== s || t[25] !== r || t[26] !== _ || t[27] !== g || t[28] !== a || t[29] !== d || t[30] !== m || t[31] !== te ? (O = _ ? (0, V.jsxs)(`div`, {
+        "aria-live": `polite`,
+        className: `space-y-2`,
+        children: [(0, V.jsx)(`h2`, {
+            id: `sophia-waitlist-card-title`,
+            className: `font-medium`,
+            children: (0, V.jsx)(C, {
+                id: `chatgpt.sophia.waitlist.success.title`,
+                defaultMessage: `You’re on the waitlist`
+            })
+        }), (0, V.jsx)(`p`, {
+            className: `text-token-text-secondary text-sm leading-6`,
+            children: (0, V.jsx)(C, {
+                id: `chatgpt.sophia.waitlist.success.description`,
+                defaultMessage: `We’ll email you when applications become available again.`
+            })
+        })]
+    }) : m.isError ? (0, V.jsxs)(`div`, {
+        className: `mt-5 space-y-4`,
+        children: [(0, V.jsx)(`p`, {
+            role: `alert`,
+            className: `text-token-text-secondary text-sm`,
+            children: (0, V.jsx)(C, {
+                id: `chatgpt.sophia.waitlist.status.error`,
+                defaultMessage: `We couldn’t check your waitlist status. Please try again.`
+            })
+        }), (0, V.jsx)(v, {
+            color: `secondary`,
+            loading: m.isFetching,
+            onClick: () => {
+                m.refetch()
+            },
+            children: (0, V.jsx)(C, {
+                id: `chatgpt.sophia.waitlist.status.retry`,
+                defaultMessage: `Try again`
+            })
+        })]
+    }) : (0, V.jsxs)(`form`, {
+        className: `mt-6 space-y-5`,
+        onSubmit: te,
+        children: [(0, V.jsxs)(`div`, {
+            className: `space-y-2`,
+            children: [(0, V.jsx)(`label`, {
+                className: `block text-sm font-medium`,
+                htmlFor: `sophia-waitlist-name`,
+                children: (0, V.jsx)(C, {
+                    id: `chatgpt.sophia.waitlist.form.name.label`,
+                    defaultMessage: `1. Name`
+                })
+            }), (0, V.jsx)(`input`, {
+                id: `sophia-waitlist-name`,
+                autoComplete: `name`,
+                className: `border-token-border-default bg-token-interactive-bg-tertiary-default text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-text-primary focus:ring-token-text-primary w-full rounded-lg border px-3 py-2.5 text-sm focus:outline-hidden`,
+                maxLength: 200,
+                name: `name`,
+                onChange: e => o(e.currentTarget.value),
+                placeholder: r.formatMessage({
+                    id: `chatgpt.sophia.waitlist.form.name.placeholder`,
+                    defaultMessage: `Your full name`
+                }),
+                required: !0,
+                value: a
+            })]
+        }), (0, V.jsxs)(`div`, {
+            className: `space-y-2`,
+            children: [(0, V.jsx)(`label`, {
+                className: `block text-sm font-medium`,
+                htmlFor: `sophia-waitlist-institutional-email`,
+                children: (0, V.jsx)(C, {
+                    id: `chatgpt.sophia.waitlist.form.email.label`,
+                    defaultMessage: `2. Institutional email`
+                })
+            }), (0, V.jsx)(`input`, {
+                id: `sophia-waitlist-institutional-email`,
+                "aria-describedby": `sophia-waitlist-email-help`,
+                autoComplete: `email`,
+                className: `border-token-border-default bg-token-interactive-bg-tertiary-default text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-text-primary focus:ring-token-text-primary w-full rounded-lg border px-3 py-2.5 text-sm focus:outline-hidden`,
+                maxLength: 320,
+                name: `institutional_email`,
+                onChange: e => c(e.currentTarget.value),
+                placeholder: r.formatMessage({
+                    id: `chatgpt.sophia.waitlist.form.email.placeholder`,
+                    defaultMessage: `you@research-institution.org`
+                }),
+                required: !0,
+                type: `email`,
+                value: s
+            }), (0, V.jsx)(`p`, {
+                id: `sophia-waitlist-email-help`,
+                className: `text-token-text-secondary text-xs leading-5`,
+                children: (0, V.jsx)(C, {
+                    id: `chatgpt.sophia.waitlist.form.email.helper`,
+                    defaultMessage: `Use the email associated with your research institution.`
+                })
+            })]
+        }), (0, V.jsxs)(`div`, {
+            className: `space-y-2`,
+            children: [(0, V.jsx)(`label`, {
+                className: `block text-sm font-medium`,
+                htmlFor: `sophia-waitlist-field-of-research`,
+                children: (0, V.jsx)(C, {
+                    id: `chatgpt.sophia.waitlist.form.field_of_research.label`,
+                    defaultMessage: `3. What is your scientific field?`
+                })
+            }), (0, V.jsx)(`input`, {
+                id: `sophia-waitlist-field-of-research`,
+                "aria-describedby": `sophia-waitlist-field-of-research-help`,
+                className: `border-token-border-default bg-token-interactive-bg-tertiary-default text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-text-primary focus:ring-token-text-primary w-full rounded-lg border px-3 py-2.5 text-sm focus:outline-hidden`,
+                maxLength: 200,
+                name: `field_of_research`,
+                onChange: e => u(e.currentTarget.value),
+                placeholder: r.formatMessage({
+                    id: `chatgpt.sophia.waitlist.form.field_of_research.placeholder`,
+                    defaultMessage: `Your scientific field`
+                }),
+                required: !0,
+                type: `text`,
+                value: l
+            }), (0, V.jsx)(`p`, {
+                id: `sophia-waitlist-field-of-research-help`,
+                className: `text-token-text-secondary text-xs leading-5 italic`,
+                children: (0, V.jsx)(C, {
+                    id: `chatgpt.sophia.waitlist.form.field_of_research.helper`,
+                    defaultMessage: `For example: theoretical physics, biology, statistics`
+                })
+            })]
+        }), (0, V.jsxs)(`div`, {
+            className: `space-y-2`,
+            children: [(0, V.jsx)(`label`, {
+                className: `block text-sm font-medium`,
+                htmlFor: `sophia-waitlist-research-intent`,
+                children: (0, V.jsx)(C, {
+                    id: `chatgpt.sophia.waitlist.form.research.label`,
+                    defaultMessage: `4. What are you working on?`
+                })
+            }), (0, V.jsx)(se, {
+                id: `sophia-waitlist-research-intent`,
+                "aria-describedby": `sophia-waitlist-research-help`,
+                className: `bg-token-interactive-bg-tertiary-default! placeholder:text-token-text-tertiary min-h-28 px-3 py-2.5`,
+                maxLength: 4e3,
+                name: `research_intent`,
+                onChange: e => f(e.currentTarget.value),
+                placeholder: r.formatMessage({
+                    id: `chatgpt.sophia.waitlist.form.research.placeholder`,
+                    defaultMessage: `Tell us about your research or ideas`
+                }),
+                required: !0,
+                value: d
+            }), (0, V.jsx)(`p`, {
+                id: `sophia-waitlist-research-help`,
+                className: `text-token-text-secondary text-xs leading-5`,
+                children: (0, V.jsx)(C, {
+                    id: `chatgpt.sophia.waitlist.form.research.helper`,
+                    defaultMessage: `You don’t need a specific project. Tell us what you’d like to explore with AI.`
+                })
+            })]
+        }), g.isError ? (0, V.jsx)(`p`, {
+            role: `alert`,
+            className: `text-token-text-secondary text-sm`,
+            children: (0, V.jsx)(C, {
+                id: `chatgpt.sophia.waitlist.form.submit_error`,
+                defaultMessage: `We couldn’t add you to the waitlist. Please try again.`
+            })
+        }) : null, (0, V.jsx)(v, {
+            color: `primary`,
+            disabled: !b || g.isPending || m.isPending,
+            fullWidth: !0,
+            loading: g.isPending,
+            type: `submit`,
+            children: (0, V.jsx)(C, {
+                id: `chatgpt.sophia.waitlist.form.submit`,
+                defaultMessage: `Join the waitlist`
+            })
+        })]
+    }), t[22] = b, t[23] = l, t[24] = s, t[25] = r, t[26] = _, t[27] = g, t[28] = a, t[29] = d, t[30] = m, t[31] = te, t[32] = O) : O = t[32];
+    let k;
+    return t[33] !== O || t[34] !== D ? (k = (0, V.jsxs)(`div`, {
+        className: `bg-primary text-token-text-primary flex min-h-screen flex-col`,
+        children: [re, (0, V.jsxs)(`main`, {
+            className: `mx-auto flex w-full max-w-xl flex-1 flex-col px-5 pt-12 pb-16 sm:px-8 sm:pt-20`,
+            children: [E, (0, V.jsxs)(`section`, {
+                "aria-labelledby": `sophia-waitlist-card-title`,
+                className: `border-token-border-light bg-primary mt-10 rounded-2xl border p-5 sm:p-7`,
+                children: [D, O]
+            })]
+        })]
+    }), t[33] = O, t[34] = D, t[35] = k) : k = t[35], k
+}
+
+function ye(e) {
+    return c.safePost(`/sophia/waitlist`, {
+        requestBody: e
+    })
+}
+
+function B() {
+    return c.safeGet(`/sophia/waitlist`)
+}
+var be, xe, V, Se = e((() => {
+    be = T(), o(), A(), s(), O(), xe = t(te()), ae(), V = E()
+}));
+
+function Ce() {
+    return k({
+        queryKey: [`sophia-promo-code`],
+        queryFn: () => c.safeGet(`/promotions/sci`, {})
+    })
+}
+var H = e((() => {
+    s(), O()
+}));
+
+function U() {
+    "use forget";
+    let e = (0, Y.c)(154),
+        t = ee(),
+        n = re(),
+        r = ne(),
+        i = d(),
+        {
+            data: o
+        } = a(),
+        s = b(),
+        {
+            country: l
+        } = ue(),
+        {
+            prepareCheckoutSession: u,
+            navigateToCheckout: f
+        } = ce(),
+        [p, m] = (0, X.useState)(!1),
+        [h, y] = (0, X.useState)(!1),
+        [x, te] = (0, X.useState)(!1),
+        [w, T] = (0, X.useState)(!1),
+        [E, D] = (0, X.useState)(null),
+        [O, k] = (0, X.useState)(!1),
+        [ae, se] = (0, X.useState)(!1),
+        [A, de] = (0, X.useState)(null),
+        [j, fe] = (0, X.useState)(!1),
+        M;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (M = {
+        queryKey: [`sophia-verification-status`],
+        queryFn: ke,
+        retry: !1,
+        refetchOnWindowFocus: `always`
+    }, e[0] = M) : M = e[0];
+    let N = S(M),
+        P = N.data?.metadata?.verification_status,
+        F;
+    e[1] !== P || e[2] !== N.isError || e[3] !== N.isPending ? (F = at(N.isPending, N.isError, P), e[1] = P, e[2] = N.isError, e[3] = N.isPending, e[4] = F) : F = e[4];
+    let me = F,
+        I = h ? `verified` : E != null && me !== `refresh-error` && N.data?.metadata?.verification_id !== E.verificationId ? `pending` : me,
+        ge = N.data?.metadata?.error_reason,
+        L;
+    e[5] === N.data?.metadata?.pending_invite_url ? L = e[6] : (L = N.data?.metadata?.pending_invite_url?.replace(/^\/sophia\/invite(?=\?|$)/, _e()) ?? null, e[5] = N.data?.metadata?.pending_invite_url, e[6] = L);
+    let R = L,
+        z = N.data?.metadata?.workspace_membership_error_code === `sci_workspace_membership_conflict`,
+        ye = N.data?.disable_new_verifications === !0 || O,
+        B = ye && I === `needs-verification`,
+        be;
+    e[7] === Symbol.for(`react.memo_cache_sentinel`) ? (be = {
+        mutationFn: Oe,
+        onSuccess: e => {
+            if (m(!1), k(!1), se(!1), e.verification_status === `verified`) {
+                D(null), y(!0), T(!1);
+                return
+            }
+            if (e.verification_url != null) {
+                D({
+                    verificationId: e.verification_id,
+                    verificationUrl: e.verification_url
+                });
+                return
+            }
+            m(!0)
+        },
+        onError: e => {
+            if (ot(e)) {
+                m(!1), k(!0), se(!1), T(!1);
+                return
+            }
+            if (st(e)) {
+                m(!1), k(!1), se(!0), T(!1);
+                return
+            }
+            k(!1), se(!1), m(!0)
+        }
+    }, e[7] = be) : be = e[7];
+    let xe = ie(be),
+        V = xe.isPending,
+        Se = !B && !p && (I === `needs-verification` || I === `pending`),
+        H = I === `verified`,
+        U = H && N.data?.metadata?.verification_type === `student`,
+        Me = R != null,
+        Ne = (N.data?.is_waitlist_enabled === !0 || ae) && I === `needs-verification` && !Me && !ye,
+        Pe = Me || U,
+        W = E != null && I !== `verified` && I !== `error`,
+        He;
+    e[8] !== W || e[9] !== xe || e[10] !== B || e[11] !== V ? (He = () => {
+        B || (T(!0), !(W || V) && (m(!1), xe.mutate()))
+    }, e[8] = W, e[9] = xe, e[10] = B, e[11] = V, e[12] = He) : He = e[12];
+    let Ke = He,
+        qe;
+    e[13] === N ? qe = e[14] : (qe = async () => {
+        let e = await N.refetch();
+        te(e.data?.metadata?.verification_status === `pending`)
+    }, e[13] = N, e[14] = qe);
+    let Xe = qe,
+        Ze = H && !Pe,
+        Qe;
+    e[15] === Symbol.for(`react.memo_cache_sentinel`) ? (Qe = [`sophia-application`], e[15] = Qe) : Qe = e[15];
+    let et;
+    e[16] === Ze ? et = e[17] : (et = {
+        enabled: Ze,
+        queryKey: Qe,
+        queryFn: De,
+        retry: !1
+    }, e[16] = Ze, e[17] = et);
+    let K = S(et),
+        q = K.data?.application_data,
+        J = K.data?.application_status,
+        tt = K.data?.identity_editable === !0,
+        rt = J === `pending` || J === `approved`,
+        it = J === `pending`,
+        ct = J === `approved`,
+        ft = J === `rejected`,
+        pt;
+    e[18] === o?.accountItems ? pt = e[19] : (pt = o?.accountItems.some(Ee), e[18] = o?.accountItems, e[19] = pt);
+    let mt = !!pt,
+        gt;
+    e[20] === Symbol.for(`react.memo_cache_sentinel`) ? (gt = Ce(), e[20] = gt) : gt = e[20];
+    let _t = ct && !z,
+        vt;
+    e[21] === _t ? vt = e[22] : (vt = {
+        ...gt,
+        enabled: _t,
+        retry: !1
+    }, e[21] = _t, e[22] = vt);
+    let yt = S(vt),
+        bt = ct && !z,
+        xt;
+    e[23] !== l || e[24] !== i || e[25] !== bt ? (xt = {
+        country: l,
+        currentAccount: i,
+        enabled: bt,
+        location: `SophiaCheckoutRoute`,
+        pricingPlanIsTypeBusiness: !1,
+        shouldUsePaidSubscriptionBillingCurrency: !1
+    }, e[23] = l, e[24] = i, e[25] = bt, e[26] = xt) : xt = e[26];
+    let St = le(xt),
+        Ct = St.billingDetails,
+        wt = yt.data?.promo_code ?? null,
+        Tt = St.status === `error`,
+        Et = ct && !z && wt != null && Ct != null,
+        Dt = (0, X.useRef)(J),
+        Ot;
+    e[27] !== Ct || e[28] !== t || e[29] !== j || e[30] !== f || e[31] !== u || e[32] !== wt || e[33] !== s ? (Ot = async () => {
+        if (Ct == null || wt == null || j) return;
+        de(null), fe(!0);
+        let e = pe.SOPHIA_CHECKOUT_PAGE_CONTENT,
+            n = {
+                entry_point: e,
+                billing_details: Ct,
+                cancel_url: window.location.href,
+                checkout_ui_mode: `custom`,
+                plan_name: g.SCI,
+                team_plan_data: {
+                    workspace_name: lt(t, s),
+                    price_interval: `month`,
+                    seat_quantity: dt
+                },
+                promo_code: wt
+            };
+        try {
+            let t = await u(n, {});
+            await f(t, {
+                reloadDocument: !0,
+                checkoutPayload: n,
+                state: {
+                    [oe]: e
+                }
+            }), fe(!1)
+        } catch (e) {
+            let t = e;
+            _.addError(t), de(he(t) ? `country_not_supported` : `generic`), fe(!1)
+        }
+    }, e[27] = Ct, e[28] = t, e[29] = j, e[30] = f, e[31] = u, e[32] = wt, e[33] = s, e[34] = Ot) : Ot = e[34];
+    let kt = Ot,
+        At, jt;
+    e[35] === J ? (At = e[36], jt = e[37]) : (At = () => {
+        let e = Dt.current;
+        if (Dt.current = J, e == null || e === J || J == null || ![`pending`, `approved`, `rejected`].includes(J)) return;
+        let t = J === `pending` ? `sophia-verification-step-two-title` : J === `approved` ? `sophia-verification-step-three-title` : `sophia-verification-application-outcome-title`;
+        document.getElementById(t)?.focus()
+    }, jt = [J], e[35] = J, e[36] = At, e[37] = jt), (0, X.useEffect)(At, jt);
+    let [Q, Mt] = (0, X.useState)(null), [Nt, Pt] = (0, X.useState)(``), [Ft, It] = (0, X.useState)(``), [Lt, Rt] = (0, X.useState)(``), [zt, Bt] = (0, X.useState)(``), [Vt, Ht] = (0, X.useState)(``), [Ut, Wt] = (0, X.useState)(`arxiv_id`), [Gt, Kt] = (0, X.useState)(!1), qt, Jt;
+    e[38] === q ? (qt = e[39], Jt = e[40]) : (qt = () => {
+        if (q == null) return;
+        let e = Je(q.field_of_research, q.field_of_research_other);
+        Mt(e), Pt(q.name), It(q.institution), Rt(e === `other` ? q.field_of_research_other ?? `` : ``), Bt(q.planned_ai_use ?? ``), Ht(q.paper_id ?? ``), Wt(q.paper_id_type ?? `arxiv_id`)
+    }, Jt = [q], e[38] = q, e[39] = qt, e[40] = Jt), (0, X.useEffect)(qt, Jt);
+    let Yt;
+    e[41] !== Ft || e[42] !== Nt || e[43] !== Q || e[44] !== tt || e[45] !== Lt || e[46] !== Vt || e[47] !== Ut || e[48] !== zt ? (Yt = () => {
+        if (Q == null) throw Error(`Application form is incomplete`);
+        let e = Ye(Q, Lt);
+        return c.safePost(`/sophia/application`, {
+            requestBody: {
+                ...tt ? {
+                    name: Nt.trim(),
+                    institution: Ft.trim()
+                } : {},
+                field_of_research: e.fieldOfResearch,
+                field_of_research_other: e.otherFieldOfResearch,
+                planned_ai_use: zt,
+                paper_id: Vt.trim(),
+                paper_id_type: Ut,
+                wants_existing_institutional_workspace: !1,
+                opt_in_economic_analysis: !1,
+                opt_in_workspace_training: !1
+            }
+        })
+    }, e[41] = Ft, e[42] = Nt, e[43] = Q, e[44] = tt, e[45] = Lt, e[46] = Vt, e[47] = Ut, e[48] = zt, e[49] = Yt) : Yt = e[49];
+    let Xt;
+    e[50] === r ? Xt = e[51] : (Xt = e => {
+        r.setQueryData([`sophia-application`], e)
+    }, e[50] = r, e[51] = Xt);
+    let Zt;
+    e[52] !== Yt || e[53] !== Xt ? (Zt = {
+        mutationFn: Yt,
+        onSuccess: Xt
+    }, e[52] = Yt, e[53] = Xt, e[54] = Zt) : Zt = e[54];
+    let $ = ie(Zt),
+        Qt;
+    e[55] !== Ft || e[56] !== Nt || e[57] !== J || e[58] !== Q || e[59] !== tt || e[60] !== Lt || e[61] !== Vt || e[62] !== zt ? (Qt = J === `draft` && (!tt || Nt.trim().length > 0 && Ft.trim().length > 0) && Q != null && (Q !== `other` || Lt.trim().length > 0) && zt.trim().length > 0 && Vt.trim().length > 0, e[55] = Ft, e[56] = Nt, e[57] = J, e[58] = Q, e[59] = tt, e[60] = Lt, e[61] = Vt, e[62] = zt, e[63] = Qt) : Qt = e[63];
+    let $t = Qt,
+        en;
+    e[64] !== $t || e[65] !== $ ? (en = e => {
+        e.preventDefault(), !(!$t || $.isPending) && Kt(!0)
+    }, e[64] = $t, e[65] = $, e[66] = en) : en = e[66];
+    let tn = en,
+        nn;
+    e[67] !== $t || e[68] !== $ ? (nn = () => {
+        !$t || $.isPending || (Kt(!1), $.mutate())
+    }, e[67] = $t, e[68] = $, e[69] = nn) : nn = e[69];
+    let rn = nn;
+    if (N.isPending) {
+        let t;
+        return e[70] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(Fe, {}), e[70] = t) : t = e[70], t
+    }
+    if (Ne) {
+        let t;
+        return e[71] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(ve, {
+            loadingFallback: (0, Z.jsx)(Fe, {})
+        }), e[71] = t) : t = e[71], t
+    }
+    let an;
+    e[72] === Symbol.for(`react.memo_cache_sentinel`) ? (an = {
+        value: `biology`,
+        label: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.field.option.biological_sciences`,
+            defaultMessage: `Biological Sciences`
+        })
+    }, e[72] = an) : an = e[72];
+    let on;
+    e[73] === Symbol.for(`react.memo_cache_sentinel`) ? (on = {
+        value: `chemistry`,
+        label: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.field.option.chemistry_and_materials`,
+            defaultMessage: `Chemistry and Materials`
+        })
+    }, e[73] = on) : on = e[73];
+    let sn;
+    e[74] === Symbol.for(`react.memo_cache_sentinel`) ? (sn = {
+        value: `computer_science`,
+        label: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.field.option.computer_science`,
+            defaultMessage: `Computer Science`
+        })
+    }, e[74] = sn) : sn = e[74];
+    let cn;
+    e[75] === Symbol.for(`react.memo_cache_sentinel`) ? (cn = {
+        value: `earth_and_planetary_sciences`,
+        label: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.field.option.earth_and_planetary_sciences`,
+            defaultMessage: `Earth and Planetary Sciences`
+        })
+    }, e[75] = cn) : cn = e[75];
+    let ln;
+    e[76] === Symbol.for(`react.memo_cache_sentinel`) ? (ln = {
+        value: `engineering`,
+        label: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.field.option.engineering`,
+            defaultMessage: `Engineering`
+        })
+    }, e[76] = ln) : ln = e[76];
+    let un;
+    e[77] === Symbol.for(`react.memo_cache_sentinel`) ? (un = {
+        value: `mathematics`,
+        label: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.field.option.mathematics`,
+            defaultMessage: `Mathematics`
+        })
+    }, e[77] = un) : un = e[77];
+    let dn;
+    e[78] === Symbol.for(`react.memo_cache_sentinel`) ? (dn = {
+        value: `physics`,
+        label: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.field.option.physics`,
+            defaultMessage: `Physics`
+        })
+    }, e[78] = dn) : dn = e[78];
+    let fn;
+    e[79] === Symbol.for(`react.memo_cache_sentinel`) ? (fn = [an, on, sn, cn, ln, un, dn, {
+        value: `other`,
+        label: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.field.option.other`,
+            defaultMessage: `Other`
+        })
+    }], e[79] = fn) : fn = e[79];
+    let pn = fn,
+        mn;
+    e[80] === Symbol.for(`react.memo_cache_sentinel`) ? (mn = (0, Z.jsx)(`header`, {
+        className: `flex h-16 items-center px-6`,
+        children: (0, Z.jsx)(`a`, {
+            className: `text-token-text-primary text-lg font-semibold tracking-tight`,
+            href: `/`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.header.product_name`,
+                defaultMessage: `ChatGPT`
+            })
+        })
+    }), e[80] = mn) : mn = e[80];
+    let hn;
+    e[81] === U ? hn = e[82] : (hn = (0, Z.jsx)(`h1`, {
+        className: `text-3xl leading-9 font-semibold tracking-tight text-balance sm:text-4xl sm:leading-10 md:text-5xl md:leading-12`,
+        children: (0, Z.jsx)(`span`, {
+            children: U ? (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.student.title`,
+                defaultMessage: `Your student eligibility is verified`
+            }) : (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.eligibility.title`,
+                defaultMessage: `Verify your eligibility`
+            })
+        })
+    }), e[81] = U, e[82] = hn);
+    let gn;
+    e[83] !== U || e[84] !== Me ? (gn = (0, Z.jsx)(`p`, {
+        className: `text-token-text-secondary mx-auto mt-5 max-w-xl text-lg leading-7 text-balance`,
+        children: Me ? (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.invite_continuation.page_description`,
+            defaultMessage: `Continue with your workspace invitation.`
+        }) : U ? (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.student.page_description`,
+            defaultMessage: `Your student verification can be used to join invited Academic Researcher workspaces.`
+        }) : (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.eligibility.subtitle.application`,
+            defaultMessage: `Complete the steps below to apply for a ChatGPT for Academic Researchers workspace.`
+        })
+    }), e[83] = U, e[84] = Me, e[85] = gn) : gn = e[85];
+    let _n;
+    e[86] !== Ft || e[87] !== Nt || e[88] !== q || e[89] !== K || e[90] !== J || e[91] !== Et || e[92] !== W || e[93] !== Se || e[94] !== $t || e[95] !== Xe || e[96] !== A || e[97] !== Q || e[98] !== Tt || e[99] !== x || e[100] !== p || e[101] !== z || e[102] !== ct || e[103] !== tt || e[104] !== it || e[105] !== ft || e[106] !== rt || e[107] !== mt || e[108] !== B || e[109] !== j || e[110] !== V || e[111] !== U || e[112] !== H || e[113] !== n || e[114] !== Ke || e[115] !== Lt || e[116] !== Vt || e[117] !== Ut || e[118] !== R || e[119] !== zt || e[120] !== yt || e[121] !== Me || e[122] !== Pe || e[123] !== kt || e[124] !== tn || e[125] !== $ || e[126] !== ge || e[127] !== I || e[128] !== N ? (_n = I === `loading` ? (0, Z.jsx)(Ie, {}) : (0, Z.jsxs)(`div`, {
+        className: `mt-8 space-y-3 text-start md:mt-10`,
+        children: [Me ? (0, Z.jsx)(Ue, {
+            onContinue: () => {
+                n(R)
+            }
+        }) : U ? (0, Z.jsx)(We, {}) : ct ? (0, Z.jsx)(Re, {}) : (0, Z.jsx)(`section`, {
+            "aria-current": H ? void 0 : `step`,
+            "aria-labelledby": `sophia-verification-step-one-title`,
+            className: `bg-token-bg-primary relative rounded-2xl border shadow-sm ${H?`border-token-border-light`:`border-token-border-heavy`} ${ft?``:`after:bg-token-border-heavy after:absolute after:start-[39px] after:top-full after:h-3 after:w-px after:content-['']`}`,
+            children: (0, Z.jsxs)(`div`, {
+                className: `flex items-start gap-4 px-6 py-5`,
+                children: [(0, Z.jsx)(nt, {
+                    isComplete: H,
+                    stepNumber: 1
+                }), (0, Z.jsxs)(`div`, {
+                    className: `min-w-0 flex-1`,
+                    children: [(0, Z.jsxs)(`div`, {
+                        className: `flex flex-wrap items-center justify-between gap-2`,
+                        children: [(0, Z.jsx)(`h2`, {
+                            className: `text-base font-semibold`,
+                            id: `sophia-verification-step-one-title`,
+                            children: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.step.verify.eligibility.title`,
+                                defaultMessage: `Verify that you are a research faculty member or postdoctoral researcher at an eligible institution.`
+                            })
+                        }), H ? (0, Z.jsx)(Ve, {
+                            variant: `success`,
+                            children: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.step.verify.complete`,
+                                defaultMessage: `Verified`
+                            })
+                        }) : null]
+                    }), H ? (0, Z.jsx)(`p`, {
+                        className: `text-token-text-primary mt-1 text-sm leading-6 font-medium`,
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.status.verified`,
+                            defaultMessage: `You’re verified and ready for the next step.`
+                        })
+                    }) : (0, Z.jsxs)(`div`, {
+                        className: `mt-4`,
+                        children: [B ? (0, Z.jsx)(`p`, {
+                            className: `text-token-text-primary text-sm leading-6 font-medium`,
+                            children: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.status.new_verifications_disabled`,
+                                defaultMessage: `New verifications are currently paused. Please check back later.`
+                            })
+                        }) : null, !B && I === `pending` ? (0, Z.jsx)(`p`, {
+                            className: `text-token-text-primary mb-4 text-sm font-medium`,
+                            children: x ? (0, Z.jsx)(`span`, {
+                                role: `status`,
+                                children: (0, Z.jsx)(C, {
+                                    id: `chatgpt.sophia.verification.status.pending_after_check`,
+                                    defaultMessage: `Your verification is still in progress. Complete it in SheerID, then check again.`
+                                })
+                            }) : (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.status.pending`,
+                                defaultMessage: `Your verification isn’t finished yet. Continue when you’re ready.`
+                            })
+                        }) : null, !B && I === `error` ? (0, Z.jsx)(G, {
+                            children: ge === `email_mismatch` ? (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.status.error.email_mismatch.self_recovery`,
+                                defaultMessage: `The email you used for verification doesn’t match the email associated with your ChatGPT account. Please sign in to ChatGPT using your institutional email address and try the verification again. If the issue persists, please contact Support for assistance.`
+                            }) : (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.status.error`,
+                                defaultMessage: `We couldn’t complete your verification. Contact support if you think this is a mistake.`
+                            })
+                        }) : null, !B && I === `refresh-error` ? (0, Z.jsx)(G, {
+                            children: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.status.refresh_error`,
+                                defaultMessage: `We couldn’t check your verification status. Try again.`
+                            })
+                        }) : null, !B && p ? (0, Z.jsx)(G, {
+                            children: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.status.create_error`,
+                                defaultMessage: `We couldn’t start verification. Contact support if you think this is a mistake.`
+                            })
+                        }) : null, W || I === `error` ? (0, Z.jsx)(`div`, {
+                            children: (0, Z.jsxs)(`div`, {
+                                className: `flex flex-wrap gap-2`,
+                                children: [W ? (0, Z.jsx)(v, {
+                                    color: `primary`,
+                                    size: `large`,
+                                    onClick: Ke,
+                                    children: (0, Z.jsx)(C, {
+                                        id: `chatgpt.sophia.verification.step.verify.button.open_sheerid`,
+                                        defaultMessage: `Continue verification`
+                                    })
+                                }) : null, (0, Z.jsx)(v, {
+                                    color: W ? `secondary` : `primary`,
+                                    loading: N.isFetching,
+                                    size: `large`,
+                                    onClick: () => {
+                                        Xe()
+                                    },
+                                    children: (0, Z.jsx)(C, {
+                                        id: `chatgpt.sophia.verification.step.verify.button.check_status`,
+                                        defaultMessage: `Check verification status`
+                                    })
+                                })]
+                            })
+                        }) : I === `refresh-error` ? (0, Z.jsx)(v, {
+                            color: `primary`,
+                            size: `large`,
+                            onClick: () => {
+                                N.refetch()
+                            },
+                            children: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.button.retry_status`,
+                                defaultMessage: `Check again`
+                            })
+                        }) : (0, Z.jsx)(v, {
+                            color: `primary`,
+                            size: `large`,
+                            disabled: !Se,
+                            loading: V,
+                            onClick: Ke,
+                            children: (0, Z.jsx)(ut, {
+                                verificationState: I
+                            })
+                        })]
+                    })]
+                })]
+            })
+        }), Pe ? null : H && K.isPending ? (0, Z.jsx)(Le, {}) : ct ? (0, Z.jsx)(ze, {
+            canCreateWorkspace: Et,
+            checkoutError: A,
+            hasBillingDetailsError: Tt,
+            hasWorkspaceAccessError: yt.isError,
+            hasWorkspaceMembershipConflict: z,
+            isPreparingCheckout: j,
+            isRetryingWorkspaceAccess: yt.isFetching,
+            onContinue: () => {
+                kt()
+            },
+            onRetryBillingDetails: Te,
+            onRetryCheckout: () => {
+                kt()
+            },
+            onRetryWorkspaceAccess: () => {
+                yt.refetch()
+            }
+        }) : ft ? (0, Z.jsx)(Be, {}) : (0, Z.jsxs)(Z.Fragment, {
+            children: [(0, Z.jsx)(`fieldset`, {
+                "aria-current": H && !rt ? `step` : void 0,
+                "aria-labelledby": `sophia-verification-step-two-title`,
+                className: `after:bg-token-border-heavy relative rounded-2xl border shadow-sm after:absolute after:start-[39px] after:top-full after:h-3 after:w-px after:content-[''] ${H&&!rt?`border-token-border-heavy`:`border-token-border-light`} ${H?`bg-token-bg-primary`:`bg-token-bg-secondary/30 text-token-text-secondary`}`,
+                disabled: !H,
+                children: (0, Z.jsxs)(`div`, {
+                    className: `flex items-start gap-4 px-6 py-5`,
+                    children: [(0, Z.jsx)(nt, {
+                        isComplete: rt,
+                        isAvailable: H,
+                        stepNumber: 2
+                    }), (0, Z.jsxs)(`div`, {
+                        className: `min-w-0 flex-1`,
+                        children: [(0, Z.jsxs)(`div`, {
+                            className: `flex flex-wrap items-center justify-between gap-2`,
+                            children: [(0, Z.jsx)(`h2`, {
+                                className: `text-base font-semibold focus:outline-none ${H?`text-token-text-primary`:`text-token-text-secondary`}`,
+                                id: `sophia-verification-step-two-title`,
+                                tabIndex: it ? -1 : void 0,
+                                children: it ? mt ? (0, Z.jsx)(C, {
+                                    id: `chatgpt.sophia.verification.application.status.enterprisey_pending.review.title`,
+                                    defaultMessage: `Your application will be reviewed soon.`
+                                }) : (0, Z.jsx)(C, {
+                                    id: `chatgpt.sophia.verification.application.status.in_review.title`,
+                                    defaultMessage: `Application in review`
+                                }) : (0, Z.jsx)(C, {
+                                    id: `chatgpt.sophia.verification.application.research.title`,
+                                    defaultMessage: `Tell us about your research.`
+                                })
+                            }), it ? (0, Z.jsx)(Ve, {
+                                variant: `neutral`,
+                                children: mt ? (0, Z.jsx)(C, {
+                                    id: `chatgpt.sophia.verification.application.status.enterprisey_pending`,
+                                    defaultMessage: `Approval pending`
+                                }) : (0, Z.jsx)(C, {
+                                    id: `chatgpt.sophia.verification.application.status.in_review`,
+                                    defaultMessage: `In review`
+                                })
+                            }) : null]
+                        }), H ? K.isPending ? (0, Z.jsx)(`p`, {
+                            className: `text-token-text-secondary mt-4 text-sm leading-6`,
+                            children: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.application.loading`,
+                                defaultMessage: `Getting your application ready…`
+                            })
+                        }) : K.isError ? (0, Z.jsxs)(`div`, {
+                            className: `mt-4`,
+                            children: [(0, Z.jsx)(G, {
+                                children: (0, Z.jsx)(C, {
+                                    id: `chatgpt.sophia.verification.application.error.load`,
+                                    defaultMessage: `We couldn’t load your application. Please try again.`
+                                })
+                            }), (0, Z.jsx)(v, {
+                                color: `secondary`,
+                                size: `large`,
+                                onClick: () => {
+                                    K.refetch()
+                                },
+                                children: (0, Z.jsx)(C, {
+                                    id: `chatgpt.sophia.verification.application.button.retry`,
+                                    defaultMessage: `Try again`
+                                })
+                            })]
+                        }) : it ? (0, Z.jsx)(`div`, {
+                            className: `mt-4`,
+                            children: (0, Z.jsx)(`p`, {
+                                className: `text-token-text-primary text-sm leading-6 font-medium`,
+                                children: mt ? (0, Z.jsx)(C, {
+                                    id: `chatgpt.sophia.verification.application.status.enterprisey_pending.description`,
+                                    defaultMessage: `We’ll contact your institution to coordinate your ChatGPT for Academic Researchers access. You’ll receive an email update within 5 business days. If you have questions, <helpLink>see the Help section below</helpLink>.`,
+                                    values: {
+                                        helpLink: we
+                                    }
+                                }) : (0, Z.jsx)(C, {
+                                    id: `chatgpt.sophia.verification.application.status.in_review.description`,
+                                    defaultMessage: `Your application has been submitted and is now in review.`
+                                })
+                            })
+                        }) : J === `draft` ? (0, Z.jsx)(Ge, {
+                            applicationData: q,
+                            applicantInstitution: Ft,
+                            applicantName: Nt,
+                            canSubmit: $t,
+                            fieldOfResearch: Q,
+                            isIdentityEditable: tt,
+                            isSubmitting: $.isPending,
+                            hasSubmitError: $.isError,
+                            otherFieldOfResearch: Lt,
+                            paperId: Vt,
+                            paperIdType: Ut,
+                            plannedAiUse: zt,
+                            researchFieldOptions: pn,
+                            onFieldOfResearchChange: Mt,
+                            onInstitutionChange: It,
+                            onNameChange: Pt,
+                            onOtherFieldOfResearchChange: Rt,
+                            onPaperIdChange: Ht,
+                            onPaperIdTypeChange: Wt,
+                            onPlannedAiUseChange: Bt,
+                            onSubmit: tn
+                        }) : null : (0, Z.jsx)(`p`, {
+                            className: `text-token-text-primary mt-1 text-sm leading-6 font-medium`,
+                            children: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.application.prerequisite`,
+                                defaultMessage: `Complete step 1 to start your application.`
+                            })
+                        })]
+                    })]
+                })
+            }), (0, Z.jsx)(`fieldset`, {
+                "aria-labelledby": `sophia-verification-step-three-title`,
+                className: `bg-token-bg-secondary/30 border-token-border-light text-token-text-secondary rounded-2xl border shadow-sm`,
+                disabled: !0,
+                children: (0, Z.jsxs)(`div`, {
+                    className: `flex items-start gap-4 px-6 py-5`,
+                    children: [(0, Z.jsx)(nt, {
+                        isAvailable: ct,
+                        stepNumber: 3
+                    }), (0, Z.jsxs)(`div`, {
+                        className: `min-w-0 flex-1`,
+                        children: [(0, Z.jsx)(`h2`, {
+                            className: `text-token-text-secondary text-base font-semibold`,
+                            id: `sophia-verification-step-three-title`,
+                            children: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.step.workspace.title`,
+                                defaultMessage: `Set up your Academic Researcher workspace`
+                            })
+                        }), it ? (0, Z.jsx)(ht, {
+                            description: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.step.workspace.status.pending`,
+                                defaultMessage: `Workspace setup will be available after your application is approved.`
+                            })
+                        }) : (0, Z.jsx)(`p`, {
+                            className: `text-token-text-secondary mt-1 text-sm leading-6 font-medium`,
+                            children: (0, Z.jsx)(C, {
+                                id: `chatgpt.sophia.verification.step.workspace.prerequisite`,
+                                defaultMessage: `Complete and submit your research application to continue.`
+                            })
+                        })]
+                    })]
+                })
+            })]
+        })]
+    }), e[86] = Ft, e[87] = Nt, e[88] = q, e[89] = K, e[90] = J, e[91] = Et, e[92] = W, e[93] = Se, e[94] = $t, e[95] = Xe, e[96] = A, e[97] = Q, e[98] = Tt, e[99] = x, e[100] = p, e[101] = z, e[102] = ct, e[103] = tt, e[104] = it, e[105] = ft, e[106] = rt, e[107] = mt, e[108] = B, e[109] = j, e[110] = V, e[111] = U, e[112] = H, e[113] = n, e[114] = Ke, e[115] = Lt, e[116] = Vt, e[117] = Ut, e[118] = R, e[119] = zt, e[120] = yt, e[121] = Me, e[122] = Pe, e[123] = kt, e[124] = tn, e[125] = $, e[126] = ge, e[127] = I, e[128] = N, e[129] = _n) : _n = e[129];
+    let vn;
+    e[130] !== hn || e[131] !== gn || e[132] !== _n ? (vn = (0, Z.jsx)(`section`, {
+        className: `flex flex-1 items-center justify-center px-6 pt-12 pb-6 md:pt-16 md:pb-8`,
+        children: (0, Z.jsxs)(`div`, {
+            className: `w-full max-w-2xl text-center`,
+            children: [hn, gn, _n]
+        })
+    }), e[130] = hn, e[131] = gn, e[132] = _n, e[133] = vn) : vn = e[133];
+    let yn = N.data?.is_waitlist_enabled !== !0,
+        bn;
+    e[134] === yn ? bn = e[135] : (bn = (0, Z.jsx)($e, {
+        showFaq: yn
+    }), e[134] = yn, e[135] = bn);
+    let xn;
+    e[136] !== vn || e[137] !== bn ? (xn = (0, Z.jsxs)(`main`, {
+        className: `flex flex-1 flex-col`,
+        children: [vn, bn]
+    }), e[136] = vn, e[137] = bn, e[138] = xn) : xn = e[138];
+    let Sn = E?.verificationUrl ?? null,
+        Cn;
+    e[139] === Symbol.for(`react.memo_cache_sentinel`) ? (Cn = () => T(!1), e[139] = Cn) : Cn = e[139];
+    let wn;
+    e[140] !== p || e[141] !== V || e[142] !== w || e[143] !== Sn || e[144] !== s ? (wn = (0, Z.jsx)(je, {
+        hasError: p,
+        isLoading: V,
+        isOpen: w,
+        user: s,
+        verificationUrl: Sn,
+        onClose: Cn
+    }), e[140] = p, e[141] = V, e[142] = w, e[143] = Sn, e[144] = s, e[145] = wn) : wn = e[145];
+    let Tn;
+    e[146] === Symbol.for(`react.memo_cache_sentinel`) ? (Tn = () => Kt(!1), e[146] = Tn) : Tn = e[146];
+    let En;
+    e[147] !== rn || e[148] !== Gt ? (En = (0, Z.jsx)(Ae, {
+        isOpen: Gt,
+        onClose: Tn,
+        onConfirm: rn
+    }), e[147] = rn, e[148] = Gt, e[149] = En) : En = e[149];
+    let Dn;
+    return e[150] !== xn || e[151] !== wn || e[152] !== En ? (Dn = (0, Z.jsxs)(`div`, {
+        className: `bg-primary text-token-text-primary flex min-h-screen flex-col`,
+        children: [mn, xn, wn, En]
+    }), e[150] = xn, e[151] = wn, e[152] = En, e[153] = Dn) : Dn = e[153], Dn
+}
+
+function we(e) {
+    return (0, Z.jsx)(`a`, {
+        className: `text-token-text-primary underline underline-offset-2`,
+        href: `#sophia-verification-help`,
+        children: e
+    })
+}
+
+function Te() {
+    window.location.reload()
+}
+
+function Ee(e) {
+    return e.isEnterprisey()
+}
+
+function De() {
+    return c.safeGet(`/sophia/application`)
+}
+
+function Oe() {
+    return c.safePost(`/sophia/create_verification`, {
+        requestBody: {
+            redirect_url: ct()
+        }
+    })
+}
+
+function ke() {
+    return c.safePost(`/sophia/refresh_verification_status`)
+}
+
+function Ae(e) {
+    "use forget";
+    let t = (0, Y.c)(15),
+        {
+            isOpen: n,
+            onClose: r,
+            onConfirm: i
+        } = e,
+        a;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.application.submit_confirmation.title`,
+        defaultMessage: `Submit your application?`
+    }), t[0] = a) : a = t[0];
+    let o;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.application.submit_confirmation.button.confirm`,
+        defaultMessage: `Confirm and submit`
+    }), t[1] = o) : o = t[1];
+    let s;
+    t[2] === i ? s = t[3] : (s = (0, Z.jsx)(v, {
+        color: `primary`,
+        onClick: i,
+        children: o
+    }), t[2] = i, t[3] = s);
+    let c;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.application.submit_confirmation.button.back`,
+        defaultMessage: `Go back`
+    }), t[4] = c) : c = t[4];
+    let l;
+    t[5] === r ? l = t[6] : (l = (0, Z.jsx)(v, {
+        color: `secondary`,
+        onClick: r,
+        children: c
+    }), t[5] = r, t[6] = l);
+    let d;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, Z.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm leading-6`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.submit_confirmation.description`,
+            defaultMessage: `Please review your answers before submitting.`
+        })
+    }), t[7] = d) : d = t[7];
+    let f;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, Z.jsx)(N, {
+        "aria-hidden": `true`,
+        className: `text-token-text-secondary mt-0.5 h-4 w-4 shrink-0`
+    }), t[8] = f) : f = t[8];
+    let p;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, Z.jsxs)(`div`, {
+        className: `space-y-4`,
+        children: [d, (0, Z.jsxs)(`div`, {
+            className: `border-token-border-light bg-token-bg-secondary text-token-text-primary flex items-start gap-2.5 rounded-xl border p-4 text-sm leading-5`,
+            children: [f, (0, Z.jsx)(`p`, {
+                className: `min-w-0 font-medium`,
+                children: (0, Z.jsx)(C, {
+                    id: `chatgpt.sophia.verification.application.submit_confirmation.locked_warning`,
+                    defaultMessage: `You won’t be able to update your application after you submit it.`
+                })
+            })]
+        })]
+    }), t[9] = p) : p = t[9];
+    let m;
+    return t[10] !== n || t[11] !== r || t[12] !== s || t[13] !== l ? (m = (0, Z.jsx)(u, {
+        testId: `modal-sophia-application-submit-confirmation`,
+        isOpen: n,
+        onClose: r,
+        showCloseButton: !0,
+        title: a,
+        primaryButton: s,
+        secondaryButton: l,
+        children: p
+    }), t[10] = n, t[11] = r, t[12] = s, t[13] = l, t[14] = m) : m = t[14], m
+}
+
+function je(e) {
+    "use forget";
+    let t = (0, Y.c)(24),
+        {
+            hasError: n,
+            isLoading: r,
+            isOpen: i,
+            user: a,
+            verificationUrl: o,
+            onClose: s
+        } = e,
+        c = a?.email_domain_type === `social` ? a.email : void 0,
+        l = a?.email_domain_type === `missing`,
+        d;
+    t[0] !== n || t[1] !== r || t[2] !== s || t[3] !== o ? (d = o == null ? n ? void 0 : (0, Z.jsx)(v, {
+        color: `primary`,
+        loading: r,
+        disabled: !0,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.modal.button.preparing`,
+            defaultMessage: `Preparing verification…`
+        })
+    }) : (0, Z.jsx)(v, {
+        as: `a`,
+        color: `primary`,
+        openNewTab: !0,
+        rel: `noopener noreferrer`,
+        to: o,
+        onClick: s,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.modal.button.continue_to_sheerid`,
+            defaultMessage: `Continue to SheerID`
+        })
+    }), t[0] = n, t[1] = r, t[2] = s, t[3] = o, t[4] = d) : d = t[4];
+    let f = d,
+        p;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.modal.title`,
+        defaultMessage: `Before you continue`
+    }), t[5] = p) : p = t[5];
+    let h;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.modal.button.cancel`,
+        defaultMessage: `Cancel`
+    }), t[6] = h) : h = t[6];
+    let g;
+    t[7] === s ? g = t[8] : (g = (0, Z.jsx)(v, {
+        color: `secondary`,
+        onClick: s,
+        children: h
+    }), t[7] = s, t[8] = g);
+    let _;
+    t[9] !== l || t[10] !== c ? (_ = c == null ? l ? (0, Z.jsxs)(`div`, {
+        className: `border-token-border-status-warning bg-token-bg-status-warning text-token-text-primary flex items-start gap-2.5 rounded-xl border p-4 text-sm leading-5`,
+        role: `alert`,
+        children: [(0, Z.jsx)(N, {
+            "aria-hidden": `true`,
+            className: `icon-sm text-token-text-status-warning mt-0.5 shrink-0`
+        }), (0, Z.jsx)(`p`, {
+            className: `min-w-0`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.modal.account_email_warning.missing`,
+                defaultMessage: `<strong>You’re signed in to ChatGPT without an email address.</strong> Sign in to ChatGPT with your institutional email before continuing. Turn off any VPN or proxy before continuing.`,
+                values: {
+                    strong: Ne
+                }
+            })
+        })]
+    }) : (0, Z.jsxs)(`div`, {
+        className: `border-token-border-light bg-token-bg-secondary text-token-text-primary flex items-start gap-2.5 rounded-xl border p-4 text-sm leading-5`,
+        children: [(0, Z.jsx)(m, {
+            "aria-hidden": `true`,
+            className: `text-token-text-secondary mt-0.5 h-4 w-4 shrink-0`
+        }), (0, Z.jsx)(`p`, {
+            className: `min-w-0`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.step.verify.institution_email_vpn_reminder`,
+                defaultMessage: `<strong>Make sure you’re signed in to ChatGPT with the institutional email you’ll use for verification.</strong> Turn off any VPN or proxy before continuing.`,
+                values: {
+                    strong: Me
+                }
+            })
+        })]
+    }) : (0, Z.jsxs)(`div`, {
+        className: `border-token-border-status-warning bg-token-bg-status-warning text-token-text-primary flex items-start gap-2.5 rounded-xl border p-4 text-sm leading-5`,
+        role: `alert`,
+        children: [(0, Z.jsx)(N, {
+            "aria-hidden": `true`,
+            className: `icon-sm text-token-text-status-warning mt-0.5 shrink-0`
+        }), (0, Z.jsx)(`p`, {
+            className: `min-w-0`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.modal.account_email_warning.social`,
+                defaultMessage: `<strong>You’re signed in to ChatGPT as {email}.</strong> This looks like a personal email address. Please confirm you are signed into ChatGPT with your institutional email and turn off any VPN or proxy before continuing`,
+                values: {
+                    email: c,
+                    strong: Pe
+                }
+            })
+        })]
+    }), t[9] = l, t[10] = c, t[11] = _) : _ = t[11];
+    let y;
+    t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, Z.jsx)(`p`, {
+        className: `text-token-text-primary text-sm leading-6`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.step.verify.sheerid_new_tab_instructions`,
+            defaultMessage: `SheerID, a third-party verification provider, will open in a new tab. Return to this page when you’re done.`
+        })
+    }), t[12] = y) : y = t[12];
+    let b;
+    t[13] === n ? b = t[14] : (b = n ? (0, Z.jsx)(G, {
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.modal.status.create_error`,
+            defaultMessage: `We couldn’t start verification. Contact support if you think this is a mistake.`
+        })
+    }) : null, t[13] = n, t[14] = b);
+    let x;
+    t[15] !== _ || t[16] !== b ? (x = (0, Z.jsxs)(`div`, {
+        className: `space-y-4`,
+        children: [_, y, b]
+    }), t[15] = _, t[16] = b, t[17] = x) : x = t[17];
+    let ee;
+    return t[18] !== i || t[19] !== s || t[20] !== f || t[21] !== g || t[22] !== x ? (ee = (0, Z.jsx)(u, {
+        testId: `modal-sophia-verification-instructions`,
+        isOpen: i,
+        onClose: s,
+        showCloseButton: !0,
+        title: p,
+        primaryButton: f,
+        secondaryButton: g,
+        children: x
+    }), t[18] = i, t[19] = s, t[20] = f, t[21] = g, t[22] = x, t[23] = ee) : ee = t[23], ee
+}
+
+function Me(e) {
+    return (0, Z.jsx)(`strong`, {
+        className: `font-semibold`,
+        children: e
+    })
+}
+
+function Ne(e) {
+    return (0, Z.jsx)(`strong`, {
+        className: `font-semibold`,
+        children: e
+    })
+}
+
+function Pe(e) {
+    return (0, Z.jsx)(`strong`, {
+        className: `block font-semibold`,
+        children: e
+    })
+}
+
+function Fe() {
+    "use forget";
+    let e = (0, Y.c)(2),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(`header`, {
+        className: `flex h-16 items-center px-6`,
+        children: (0, Z.jsx)(`a`, {
+            className: `text-token-text-primary text-lg font-semibold tracking-tight`,
+            href: `/`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.header.product_name`,
+                defaultMessage: `ChatGPT`
+            })
+        })
+    }), e[0] = t) : t = e[0];
+    let n;
+    return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Z.jsxs)(`div`, {
+        className: `bg-primary text-token-text-primary flex min-h-screen flex-col`,
+        children: [t, (0, Z.jsx)(`main`, {
+            className: `flex flex-1 items-center justify-center px-6 pb-6`,
+            children: (0, Z.jsx)(`div`, {
+                className: `w-full max-w-2xl`,
+                children: (0, Z.jsx)(Ie, {})
+            })
+        })]
+    }), e[1] = n) : n = e[1], n
+}
+
+function Ie() {
+    "use forget";
+    let e = (0, Y.c)(4),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(`span`, {
+        "aria-hidden": `true`,
+        className: `bg-token-bg-secondary h-9 w-9 animate-pulse rounded-full`
+    }), e[0] = t) : t = e[0];
+    let n;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Z.jsx)(`h2`, {
+        className: `text-token-text-primary text-base font-semibold`,
+        id: `sophia-verification-loading-title`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.loading.title`,
+            defaultMessage: `Loading your eligibility`
+        })
+    }), e[1] = n) : n = e[1];
+    let r;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Z.jsxs)(`div`, {
+        className: `flex items-center gap-3`,
+        children: [t, (0, Z.jsxs)(`div`, {
+            className: `min-w-0 flex-1`,
+            children: [n, (0, Z.jsx)(`p`, {
+                className: `text-token-text-secondary mt-1 text-sm leading-6`,
+                children: (0, Z.jsx)(C, {
+                    id: `chatgpt.sophia.verification.loading.description`,
+                    defaultMessage: `Checking your verification and application status…`
+                })
+            })]
+        })]
+    }), e[2] = r) : r = e[2];
+    let i;
+    return e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, Z.jsxs)(`section`, {
+        "aria-busy": `true`,
+        "aria-labelledby": `sophia-verification-loading-title`,
+        "aria-live": `polite`,
+        className: `border-token-border-light bg-token-bg-primary mt-8 rounded-2xl border p-6 text-start shadow-sm md:mt-10`,
+        children: [r, (0, Z.jsxs)(`div`, {
+            "aria-hidden": `true`,
+            className: `mt-6 space-y-3`,
+            children: [(0, Z.jsx)(`div`, {
+                className: `bg-token-bg-secondary h-3 w-3/4 animate-pulse rounded-full`
+            }), (0, Z.jsx)(`div`, {
+                className: `bg-token-bg-secondary h-3 w-1/2 animate-pulse rounded-full`
+            })]
+        })]
+    }), e[3] = i) : i = e[3], i
+}
+
+function Le() {
+    "use forget";
+    let e = (0, Y.c)(3),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(nt, {
+        isAvailable: !0,
+        stepNumber: 2
+    }), e[0] = t) : t = e[0];
+    let n;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Z.jsx)(`h2`, {
+        className: `text-token-text-primary text-base font-semibold`,
+        id: `sophia-application-loading-title`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.loading.title`,
+            defaultMessage: `Loading your application`
+        })
+    }), e[1] = n) : n = e[1];
+    let r;
+    return e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Z.jsx)(`section`, {
+        "aria-busy": `true`,
+        "aria-labelledby": `sophia-application-loading-title`,
+        "aria-live": `polite`,
+        className: `border-token-border-light bg-token-bg-primary rounded-2xl border p-6 shadow-sm`,
+        children: (0, Z.jsxs)(`div`, {
+            className: `flex items-start gap-4`,
+            children: [t, (0, Z.jsxs)(`div`, {
+                className: `min-w-0 flex-1`,
+                children: [n, (0, Z.jsx)(`p`, {
+                    className: `text-token-text-secondary mt-1 text-sm leading-6`,
+                    children: (0, Z.jsx)(C, {
+                        id: `chatgpt.sophia.verification.application.loading`,
+                        defaultMessage: `Getting your application ready…`
+                    })
+                })]
+            })]
+        })
+    }), e[2] = r) : r = e[2], r
+}
+
+function Re() {
+    "use forget";
+    let e = (0, Y.c)(4),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(nt, {
+        isComplete: !0,
+        stepNumber: 2
+    }), e[0] = t) : t = e[0];
+    let n;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Z.jsx)(`h2`, {
+        className: `text-token-text-primary text-base font-semibold`,
+        id: `sophia-eligibility-complete-title`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.completed_summary.title`,
+            defaultMessage: `Verification and application complete`
+        })
+    }), e[1] = n) : n = e[1];
+    let r;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Z.jsx)(W, {
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.completed_summary.verification`,
+            defaultMessage: `Researcher status verified`
+        })
+    }), e[2] = r) : r = e[2];
+    let i;
+    return e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, Z.jsx)(`section`, {
+        "aria-labelledby": `sophia-eligibility-complete-title`,
+        className: `border-token-border-light bg-token-bg-primary after:bg-token-border-heavy relative rounded-2xl border px-6 py-5 shadow-sm after:absolute after:start-[39px] after:top-full after:h-3 after:w-px after:content-['']`,
+        children: (0, Z.jsxs)(`div`, {
+            className: `flex items-start gap-4`,
+            children: [t, (0, Z.jsxs)(`div`, {
+                className: `min-w-0 flex-1`,
+                children: [n, (0, Z.jsxs)(`div`, {
+                    className: `mt-4 grid gap-3 sm:grid-cols-2`,
+                    children: [r, (0, Z.jsx)(W, {
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.completed_summary.application`,
+                            defaultMessage: `Application approved`
+                        })
+                    })]
+                })]
+            })]
+        })
+    }), e[3] = i) : i = e[3], i
+}
+
+function W(e) {
+    "use forget";
+    let t = (0, Y.c)(3),
+        {
+            children: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Z.jsx)(`span`, {
+        "aria-hidden": `true`,
+        className: `bg-token-bg-secondary text-token-text-success flex h-6 w-6 shrink-0 items-center justify-center rounded-full`,
+        children: (0, Z.jsx)(M, {
+            className: `h-3.5 w-3.5`
+        })
+    }), t[0] = r) : r = t[0];
+    let i;
+    return t[1] === n ? i = t[2] : (i = (0, Z.jsxs)(`div`, {
+        className: `text-token-text-primary flex items-center gap-2 text-sm font-medium`,
+        children: [r, n]
+    }), t[1] = n, t[2] = i), i
+}
+
+function ze(e) {
+    "use forget";
+    let t = (0, Y.c)(14),
+        {
+            canCreateWorkspace: n,
+            checkoutError: r,
+            hasBillingDetailsError: i,
+            hasWorkspaceAccessError: a,
+            hasWorkspaceMembershipConflict: o,
+            isPreparingCheckout: s,
+            isRetryingWorkspaceAccess: c,
+            onContinue: l,
+            onRetryBillingDetails: u,
+            onRetryCheckout: d,
+            onRetryWorkspaceAccess: f
+        } = e,
+        p;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, Z.jsx)(nt, {
+        isAvailable: !0,
+        stepNumber: 3
+    }), t[0] = p) : p = t[0];
+    let m;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, Z.jsx)(`h2`, {
+        className: `text-token-text-primary text-base font-semibold focus:outline-none`,
+        id: `sophia-verification-step-three-title`,
+        tabIndex: -1,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.step.workspace.title`,
+            defaultMessage: `Set up your Academic Researcher workspace`
+        })
+    }), t[1] = m) : m = t[1];
+    let h;
+    return t[2] !== n || t[3] !== r || t[4] !== i || t[5] !== a || t[6] !== o || t[7] !== s || t[8] !== c || t[9] !== l || t[10] !== u || t[11] !== d || t[12] !== f ? (h = (0, Z.jsx)(`section`, {
+        "aria-current": `step`,
+        "aria-labelledby": `sophia-verification-step-three-title`,
+        className: `border-token-border-heavy bg-token-bg-primary rounded-2xl border px-6 py-5 shadow-sm`,
+        children: (0, Z.jsxs)(`div`, {
+            className: `flex items-start gap-4`,
+            children: [p, (0, Z.jsxs)(`div`, {
+                className: `min-w-0 flex-1`,
+                children: [m, o ? (0, Z.jsx)(`div`, {
+                    className: `mt-4`,
+                    children: (0, Z.jsx)(G, {
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.status.membership_conflict`,
+                            defaultMessage: `You already belong to an Academic Researcher workspace.`
+                        })
+                    })
+                }) : i ? (0, Z.jsxs)(`div`, {
+                    className: `mt-4`,
+                    children: [(0, Z.jsx)(G, {
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.status.billing_details_error`,
+                            defaultMessage: `We couldn’t load your billing details. Reload this page to try again.`
+                        })
+                    }), (0, Z.jsx)(v, {
+                        color: `secondary`,
+                        size: `large`,
+                        type: `button`,
+                        onClick: u,
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.button.reload_billing_details`,
+                            defaultMessage: `Reload page`
+                        })
+                    })]
+                }) : r === `country_not_supported` ? (0, Z.jsx)(`div`, {
+                    className: `mt-4`,
+                    children: (0, Z.jsx)(G, {
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.status.checkout_country_not_supported`,
+                            defaultMessage: `Checkout is not available in your region.`
+                        })
+                    })
+                }) : r === `generic` ? (0, Z.jsxs)(`div`, {
+                    className: `mt-4`,
+                    children: [(0, Z.jsx)(G, {
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.status.checkout_error`,
+                            defaultMessage: `We couldn’t start checkout. Try again.`
+                        })
+                    }), (0, Z.jsx)(v, {
+                        color: `secondary`,
+                        loading: s,
+                        size: `large`,
+                        type: `button`,
+                        onClick: d,
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.button.retry_checkout`,
+                            defaultMessage: `Try again`
+                        })
+                    })]
+                }) : n ? (0, Z.jsxs)(`div`, {
+                    className: `mt-4`,
+                    children: [(0, Z.jsx)(`p`, {
+                        className: `text-token-text-primary mb-4 text-sm leading-6 font-medium`,
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.status.approved.ready`,
+                            defaultMessage: `You’re approved and ready to set up your Academic Researcher workspace.`
+                        })
+                    }), (0, Z.jsx)(v, {
+                        color: `primary`,
+                        loading: s,
+                        size: `large`,
+                        type: `button`,
+                        onClick: l,
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.button.continue`,
+                            defaultMessage: `Continue to workspace setup`
+                        })
+                    }), s ? (0, Z.jsx)(`p`, {
+                        "aria-live": `polite`,
+                        className: `text-token-text-secondary mt-3 text-sm leading-6 font-medium`,
+                        role: `status`,
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.status.preparing_checkout`,
+                            defaultMessage: `Preparing your checkout. This may take a moment. Please keep this page open.`
+                        })
+                    }) : null]
+                }) : a ? (0, Z.jsxs)(`div`, {
+                    className: `mt-4`,
+                    children: [(0, Z.jsx)(G, {
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.status.approved.access_error`,
+                            defaultMessage: `We couldn’t finish preparing your workspace access. Try again.`
+                        })
+                    }), (0, Z.jsx)(v, {
+                        color: `secondary`,
+                        loading: c,
+                        size: `large`,
+                        type: `button`,
+                        onClick: f,
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.button.retry_access`,
+                            defaultMessage: `Try again`
+                        })
+                    })]
+                }) : (0, Z.jsxs)(`div`, {
+                    "aria-live": `polite`,
+                    className: `bg-token-bg-secondary mt-4 flex items-start gap-3 rounded-xl px-4 py-3`,
+                    children: [(0, Z.jsx)(`span`, {
+                        "aria-hidden": `true`,
+                        className: `bg-token-text-secondary mt-2 h-2 w-2 shrink-0 animate-pulse rounded-full`
+                    }), (0, Z.jsx)(`p`, {
+                        className: `text-token-text-primary text-sm leading-6 font-medium`,
+                        children: (0, Z.jsx)(C, {
+                            id: `chatgpt.sophia.verification.step.workspace.status.approved.preparing`,
+                            defaultMessage: `Your application is approved. We’re getting your workspace access ready.`
+                        })
+                    })]
+                })]
+            })]
+        })
+    }), t[2] = n, t[3] = r, t[4] = i, t[5] = a, t[6] = o, t[7] = s, t[8] = c, t[9] = l, t[10] = u, t[11] = d, t[12] = f, t[13] = h) : h = t[13], h
+}
+
+function Be() {
+    "use forget";
+    let e = (0, Y.c)(4),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(He, {}), e[0] = t) : t = e[0];
+    let n;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Z.jsx)(Ve, {
+        variant: `neutral`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.status.not_approved`,
+            defaultMessage: `Not approved`
+        })
+    }), e[1] = n) : n = e[1];
+    let r;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Z.jsx)(`h2`, {
+        className: `text-token-text-primary mt-3 text-base font-semibold focus:outline-none`,
+        id: `sophia-verification-application-outcome-title`,
+        tabIndex: -1,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.rejected.title`,
+            defaultMessage: `We couldn’t approve your application`
+        })
+    }), e[2] = r) : r = e[2];
+    let i;
+    return e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, Z.jsx)(`section`, {
+        "aria-labelledby": `sophia-verification-application-outcome-title`,
+        "aria-live": `polite`,
+        className: `border-token-border-default bg-token-bg-primary rounded-2xl border p-6 shadow-sm`,
+        children: (0, Z.jsxs)(`div`, {
+            className: `flex items-start gap-4`,
+            children: [t, (0, Z.jsxs)(`div`, {
+                className: `w-full min-w-0 flex-1`,
+                children: [n, r, (0, Z.jsx)(`p`, {
+                    className: `text-token-text-primary mt-2 text-sm leading-6`,
+                    children: (0, Z.jsx)(C, {
+                        id: `chatgpt.sophia.verification.application.rejected.description`,
+                        defaultMessage: `Thanks for applying. Based on the information provided, your application isn’t eligible for ChatGPT for Academic Researchers at this time.`
+                    })
+                })]
+            })]
+        })
+    }), e[3] = i) : i = e[3], i
+}
+
+function Ve(e) {
+    "use forget";
+    let t = (0, Y.c)(6),
+        {
+            children: n,
+            variant: r
+        } = e,
+        i = `inline-flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-xs font-medium ${r===`success`?`border-token-border-light bg-token-bg-secondary text-token-text-success`:`border-token-border-light bg-token-bg-secondary text-token-text-secondary`}`,
+        a;
+    t[0] === r ? a = t[1] : (a = r === `success` ? (0, Z.jsx)(M, {
+        "aria-hidden": `true`,
+        className: `h-3.5 w-3.5`
+    }) : (0, Z.jsx)(`span`, {
+        "aria-hidden": `true`,
+        className: `bg-token-text-secondary h-1.5 w-1.5 rounded-full`
+    }), t[0] = r, t[1] = a);
+    let o;
+    return t[2] !== n || t[3] !== i || t[4] !== a ? (o = (0, Z.jsxs)(`span`, {
+        className: i,
+        children: [a, n]
+    }), t[2] = n, t[3] = i, t[4] = a, t[5] = o) : o = t[5], o
+}
+
+function G(e) {
+    "use forget";
+    let t = (0, Y.c)(3),
+        {
+            children: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Z.jsx)(N, {
+        "aria-hidden": `true`,
+        className: `text-token-interactive-label-warning-secondary mt-0.5 h-5 w-5 shrink-0`
+    }), t[0] = r) : r = t[0];
+    let i;
+    return t[1] === n ? i = t[2] : (i = (0, Z.jsxs)(`div`, {
+        className: `border-token-border-light bg-token-bg-secondary text-token-text-primary mb-4 flex items-start gap-3 rounded-xl border px-4 py-3 text-sm leading-6`,
+        role: `alert`,
+        children: [r, (0, Z.jsx)(`div`, {
+            className: `min-w-0`,
+            children: n
+        })]
+    }), t[1] = n, t[2] = i), i
+}
+
+function He() {
+    "use forget";
+    let e = (0, Y.c)(1),
+        t;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(`span`, {
+        "aria-hidden": `true`,
+        className: `bg-token-bg-secondary text-token-text-secondary flex h-8 w-8 shrink-0 items-center justify-center rounded-full`,
+        children: (0, Z.jsx)(m, {
+            className: `h-4 w-4`
+        })
+    }), e[0] = t) : t = e[0], t
+}
+
+function Ue(e) {
+    "use forget";
+    let t = (0, Y.c)(6),
+        {
+            onContinue: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Z.jsx)(He, {}), t[0] = r) : r = t[0];
+    let i;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, Z.jsx)(`h2`, {
+        className: `text-base font-semibold`,
+        id: `sophia-verification-invite-continuation-title`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.invite_continuation.title`,
+            defaultMessage: `Continue your workspace invitation`
+        })
+    }), t[1] = i) : i = t[1];
+    let a;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Z.jsx)(`p`, {
+        className: `text-token-text-secondary mt-1 text-sm leading-6`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.invite_continuation.description`,
+            defaultMessage: `You started verification from an Academic Researcher workspace invitation. Continue with that invitation to join the workspace.`
+        })
+    }), t[2] = a) : a = t[2];
+    let o;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.invite_continuation.button`,
+        defaultMessage: `Continue joining the workspace`
+    }), t[3] = o) : o = t[3];
+    let s;
+    return t[4] === n ? s = t[5] : (s = (0, Z.jsx)(`section`, {
+        "aria-labelledby": `sophia-verification-invite-continuation-title`,
+        className: `border-token-border-light bg-token-bg-primary rounded-2xl border px-6 py-5 shadow-sm`,
+        children: (0, Z.jsxs)(`div`, {
+            className: `flex items-start gap-4`,
+            children: [r, (0, Z.jsxs)(`div`, {
+                className: `min-w-0`,
+                children: [i, a, (0, Z.jsx)(v, {
+                    className: `mt-4`,
+                    color: `primary`,
+                    size: `large`,
+                    onClick: n,
+                    children: o
+                })]
+            })]
+        })
+    }), t[4] = n, t[5] = s), s
+}
+
+function We() {
+    "use forget";
+    let e = (0, Y.c)(3),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(He, {}), e[0] = t) : t = e[0];
+    let n;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Z.jsx)(`h2`, {
+        className: `text-base font-semibold`,
+        id: `sophia-verification-student-title`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.student.card.title`,
+            defaultMessage: `You’re verified to join invited workspaces`
+        })
+    }), e[1] = n) : n = e[1];
+    let r;
+    return e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Z.jsx)(`section`, {
+        "aria-labelledby": `sophia-verification-student-title`,
+        className: `border-token-border-light bg-token-bg-primary rounded-2xl border px-6 py-5 shadow-sm`,
+        children: (0, Z.jsxs)(`div`, {
+            className: `flex items-start gap-4`,
+            children: [t, (0, Z.jsxs)(`div`, {
+                className: `min-w-0`,
+                children: [n, (0, Z.jsx)(`p`, {
+                    className: `text-token-text-secondary mt-1 text-sm leading-6`,
+                    children: (0, Z.jsx)(C, {
+                        id: `chatgpt.sophia.verification.student.card.description`,
+                        defaultMessage: `Student verification does not include creating a new Academic Researcher workspace.`
+                    })
+                })]
+            })]
+        })
+    }), e[2] = r) : r = e[2], r
+}
+
+function Ge(e) {
+    "use forget";
+    let t = (0, Y.c)(74),
+        {
+            applicationData: n,
+            applicantInstitution: r,
+            applicantName: i,
+            canSubmit: a,
+            fieldOfResearch: o,
+            hasSubmitError: s,
+            isIdentityEditable: c,
+            isSubmitting: l,
+            otherFieldOfResearch: u,
+            paperId: d,
+            paperIdType: f,
+            plannedAiUse: p,
+            researchFieldOptions: m,
+            onFieldOfResearchChange: h,
+            onInstitutionChange: g,
+            onNameChange: _,
+            onOtherFieldOfResearchChange: y,
+            onPaperIdChange: b,
+            onPaperIdTypeChange: x,
+            onPlannedAiUseChange: te,
+            onSubmit: ne
+        } = e,
+        S = ee(),
+        re;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (re = {
+        value: `arxiv_id`,
+        label: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.paper_reference.identifier_type.arxiv_id`,
+            defaultMessage: `arXiv ID`
+        })
+    }, t[0] = re) : re = t[0];
+    let w;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (w = [re, {
+        value: `doi`,
+        label: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.paper_reference.identifier_type.doi`,
+            defaultMessage: `DOI (bioRxiv or ChemRxiv only)`
+        })
+    }], t[1] = w) : w = t[1];
+    let T = w,
+        E = f === `arxiv_id`;
+    if (n == null) return null;
+    let D;
+    t[2] !== r || t[3] !== i || t[4] !== n || t[5] !== c || t[6] !== g || t[7] !== _ ? (D = c ? (0, Z.jsx)(gt, {
+        applicationData: n,
+        institution: r,
+        name: i,
+        onInstitutionChange: g,
+        onNameChange: _
+    }) : (0, Z.jsx)(Ke, {
+        applicationData: n
+    }), t[2] = r, t[3] = i, t[4] = n, t[5] = c, t[6] = g, t[7] = _, t[8] = D) : D = t[8];
+    let ie;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (ie = (0, Z.jsx)(`label`, {
+        className: `text-token-text-primary mb-2 block text-sm font-medium`,
+        htmlFor: `sophia-application-field`,
+        id: `sophia-application-field-label`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.field.primary.label`,
+            defaultMessage: `1. Primary research field`
+        })
+    }), t[9] = ie) : ie = t[9];
+    let O;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (O = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.application.field.placeholder`,
+        defaultMessage: `Choose a field`
+    }), t[10] = O) : O = t[10];
+    let k = o ?? void 0,
+        ae;
+    t[11] === h ? ae = t[12] : (ae = e => {
+        Ze(e) && h(e)
+    }, t[11] = h, t[12] = ae);
+    let oe;
+    t[13] !== m || t[14] !== k || t[15] !== ae ? (oe = (0, Z.jsxs)(`div`, {
+        children: [ie, (0, Z.jsx)(ge, {
+            ariaLabelledBy: `sophia-application-field-label`,
+            options: m,
+            placeholder: O,
+            triggerClassName: `border-token-border-heavy bg-primary flex w-full justify-between rounded-lg border px-3 py-2 text-sm`,
+            triggerId: `sophia-application-field`,
+            value: k,
+            onValueChange: ae
+        })]
+    }), t[13] = m, t[14] = k, t[15] = ae, t[16] = oe) : oe = t[16];
+    let A;
+    t[17] !== o || t[18] !== y || t[19] !== u ? (A = o === `other` ? (0, Z.jsxs)(`div`, {
+        children: [(0, Z.jsx)(`label`, {
+            className: `text-token-text-primary mb-2 block text-sm font-medium`,
+            htmlFor: `sophia-application-other-field`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.application.field.other.label`,
+                defaultMessage: `Your research field`
+            })
+        }), (0, Z.jsx)(`input`, {
+            className: `border-token-border-heavy bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-lg border px-3 py-2 text-sm focus:ring-1 focus:outline-hidden`,
+            id: `sophia-application-other-field`,
+            maxLength: 200,
+            name: `field_of_research_other`,
+            required: !0,
+            type: `text`,
+            value: u,
+            onChange: e => {
+                y(e.target.value)
+            }
+        })]
+    }) : null, t[17] = o, t[18] = y, t[19] = u, t[20] = A) : A = t[20];
+    let ce;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (ce = (0, Z.jsx)(`label`, {
+        className: `text-token-text-primary mb-2 block text-sm font-medium`,
+        htmlFor: `sophia-application-ai-use`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.research_question.label`,
+            defaultMessage: `2. What research question or problem are you working on?`
+        })
+    }), t[21] = ce) : ce = t[21];
+    let le;
+    t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (le = (0, Z.jsx)(`p`, {
+        className: `text-token-text-secondary mb-3 text-xs leading-5`,
+        id: `sophia-application-ai-use-help`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.research_question.help_text`,
+            defaultMessage: `You don’t need a specific project. Tell us what you’d like to explore with AI. 2–3 sentences is enough.`
+        })
+    }), t[22] = le) : le = t[22];
+    let ue;
+    t[23] === S ? ue = t[24] : (ue = S.formatMessage({
+        id: `chatgpt.sophia.verification.application.research_question.placeholder`,
+        defaultMessage: `I’m studying [topic] and trying to understand [question or problem]. My current work involves [brief context]. I want to use AI for [idea for a task]`
+    }), t[23] = S, t[24] = ue);
+    let de;
+    t[25] === te ? de = t[26] : (de = e => {
+        te(e.target.value)
+    }, t[25] = te, t[26] = de);
+    let j;
+    t[27] !== p || t[28] !== ue || t[29] !== de ? (j = (0, Z.jsxs)(`div`, {
+        children: [ce, le, (0, Z.jsx)(se, {
+            "aria-describedby": `sophia-application-ai-use-help`,
+            className: `min-h-28 resize-y`,
+            id: `sophia-application-ai-use`,
+            maxLength: 4e3,
+            name: `planned_ai_use`,
+            placeholder: ue,
+            required: !0,
+            value: p,
+            onChange: de
+        })]
+    }), t[27] = p, t[28] = ue, t[29] = de, t[30] = j) : j = t[30];
+    let fe;
+    t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (fe = (0, Z.jsx)(`p`, {
+        className: `text-token-text-primary text-sm font-medium`,
+        id: `sophia-application-publication-heading`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.publication.heading`,
+            defaultMessage: `3. Add a recent paper to help us confirm your research background.`
+        })
+    }), t[31] = fe) : fe = t[31];
+    let pe;
+    t[32] === Symbol.for(`react.memo_cache_sentinel`) ? (pe = (0, Z.jsx)(`p`, {
+        className: `text-token-text-secondary text-xs leading-5`,
+        id: `sophia-application-publication-requirement`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.publication.requirement.help_text`,
+            defaultMessage: `Use a paper from arXiv, bioRxiv, or ChemRxiv. The paper must have been posted within the last 3 years, relate to your selected research field, and list you as an author.`
+        })
+    }), t[32] = pe) : pe = t[32];
+    let M;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (M = (0, Z.jsx)(`p`, {
+        className: `text-token-text-primary mb-2 block text-sm font-medium`,
+        id: `sophia-application-paper-reference-format-label`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.paper_reference.identifier_type.label`,
+            defaultMessage: `Identifier format`
+        })
+    }), t[33] = M) : M = t[33];
+    let N;
+    t[34] !== b || t[35] !== x ? (N = e => {
+        Qe(e) && (x(e), b(``))
+    }, t[34] = b, t[35] = x, t[36] = N) : N = t[36];
+    let P;
+    t[37] !== f || t[38] !== N ? (P = (0, Z.jsx)(ge, {
+        ariaLabelledBy: `sophia-application-paper-reference-format-label`,
+        options: T,
+        triggerClassName: `border-token-border-heavy bg-primary flex w-full justify-between rounded-lg border px-3 py-2 text-sm`,
+        triggerId: `sophia-application-paper-reference-format`,
+        value: f,
+        onValueChange: N
+    }), t[37] = f, t[38] = N, t[39] = P) : P = t[39];
+    let F;
+    t[40] === E ? F = t[41] : (F = (0, Z.jsx)(`label`, {
+        className: `text-token-text-primary mt-4 mb-2 block text-sm font-medium`,
+        htmlFor: `sophia-application-paper-reference`,
+        children: E ? (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.paper_reference.arxiv_id.label`,
+            defaultMessage: `arXiv ID`
+        }) : (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.paper_reference.doi.label`,
+            defaultMessage: `DOI (bioRxiv or ChemRxiv only)`
+        })
+    }), t[40] = E, t[41] = F);
+    let me = E ? `\\s*\\d{4}\\.\\d{4,5}(?:v\\d+)?\\s*` : `\\s*10\\.\\d{4,9}/[-._;()/:A-Za-z0-9]+\\s*`,
+        he;
+    t[42] !== S || t[43] !== E ? (he = E ? S.formatMessage({
+        id: `chatgpt.sophia.verification.application.paper_reference.arxiv_id.placeholder`,
+        defaultMessage: `2401.12345`
+    }) : S.formatMessage({
+        id: `chatgpt.sophia.verification.application.paper_reference.doi.placeholder`,
+        defaultMessage: `10.1101/2024.04.15.589616`
+    }), t[42] = S, t[43] = E, t[44] = he) : he = t[44];
+    let I;
+    t[45] === b ? I = t[46] : (I = e => {
+        b(e.target.value)
+    }, t[45] = b, t[46] = I);
+    let L;
+    t[47] !== d || t[48] !== me || t[49] !== he || t[50] !== I ? (L = (0, Z.jsx)(`input`, {
+        "aria-describedby": `sophia-application-publication-requirement sophia-application-paper-reference-help`,
+        className: `border-token-border-heavy bg-token-bg-primary text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-lg border px-3 py-2 text-sm focus:ring-1 focus:outline-hidden`,
+        id: `sophia-application-paper-reference`,
+        maxLength: 200,
+        name: `paper_id`,
+        pattern: me,
+        placeholder: he,
+        required: !0,
+        type: `text`,
+        value: d,
+        onChange: I
+    }), t[47] = d, t[48] = me, t[49] = he, t[50] = I, t[51] = L) : L = t[51];
+    let _e;
+    t[52] === E ? _e = t[53] : (_e = (0, Z.jsx)(`p`, {
+        className: `text-token-text-secondary mt-2 text-xs leading-5`,
+        id: `sophia-application-paper-reference-help`,
+        children: E ? (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.paper_reference.arxiv_id.help_text`,
+            defaultMessage: `For arXiv papers, enter the arXiv ID, such as 2401.12345 — not the DOI.`
+        }) : (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.paper_reference.doi.help_text`,
+            defaultMessage: `Enter a DOI from bioRxiv or ChemRxiv. Journal DOIs and other repositories aren’t supported.`
+        })
+    }), t[52] = E, t[53] = _e);
+    let R;
+    t[54] !== P || t[55] !== F || t[56] !== L || t[57] !== _e ? (R = (0, Z.jsxs)(`div`, {
+        className: `space-y-3`,
+        children: [fe, pe, M, P, F, L, _e]
+    }), t[54] = P, t[55] = F, t[56] = L, t[57] = _e, t[58] = R) : R = t[58];
+    let z;
+    t[59] === s ? z = t[60] : (z = s ? (0, Z.jsx)(G, {
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.error.submit`,
+            defaultMessage: `We couldn’t submit your application. Your responses are still here—please try again.`
+        })
+    }) : null, t[59] = s, t[60] = z);
+    let ve = !a,
+        ye;
+    t[61] === Symbol.for(`react.memo_cache_sentinel`) ? (ye = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.application.button.submit`,
+        defaultMessage: `Submit application`
+    }), t[61] = ye) : ye = t[61];
+    let B;
+    t[62] !== l || t[63] !== ve ? (B = (0, Z.jsx)(v, {
+        color: `primary`,
+        disabled: ve,
+        loading: l,
+        size: `large`,
+        type: `submit`,
+        children: ye
+    }), t[62] = l, t[63] = ve, t[64] = B) : B = t[64];
+    let be;
+    return t[65] !== ne || t[66] !== j || t[67] !== R || t[68] !== z || t[69] !== D || t[70] !== B || t[71] !== oe || t[72] !== A ? (be = (0, Z.jsxs)(`form`, {
+        className: `mt-5 space-y-5`,
+        onSubmit: ne,
+        children: [D, oe, A, j, R, z, B]
+    }), t[65] = ne, t[66] = j, t[67] = R, t[68] = z, t[69] = D, t[70] = B, t[71] = oe, t[72] = A, t[73] = be) : be = t[73], be
+}
+
+function Ke(e) {
+    "use forget";
+    let t = (0, Y.c)(16),
+        {
+            applicationData: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Z.jsx)(M, {
+        "aria-hidden": `true`,
+        className: `text-token-text-success h-4 w-4`
+    }), t[0] = r) : r = t[0];
+    let i;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, Z.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [r, (0, Z.jsx)(`h3`, {
+            className: `text-token-text-primary text-sm font-semibold`,
+            id: `sophia-verified-identity-title`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.application.identity.summary.title`,
+                defaultMessage: `Verified identity`
+            })
+        })]
+    }), t[1] = i) : i = t[1];
+    let a;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Z.jsx)(`p`, {
+        className: `text-token-text-secondary mt-1 text-xs leading-5`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.identity.summary.description`,
+            defaultMessage: `Provided by SheerID and not editable here.`
+        })
+    }), t[2] = a) : a = t[2];
+    let o;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.application.identity.name.label`,
+        defaultMessage: `Name`
+    }), t[3] = o) : o = t[3];
+    let s;
+    t[4] === n.name ? s = t[5] : (s = (0, Z.jsx)(qe, {
+        label: o,
+        value: n.name
+    }), t[4] = n.name, t[5] = s);
+    let c;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.application.identity.email.label`,
+        defaultMessage: `Verified email`
+    }), t[6] = c) : c = t[6];
+    let l;
+    t[7] === n.verified_email ? l = t[8] : (l = (0, Z.jsx)(qe, {
+        label: c,
+        value: n.verified_email
+    }), t[7] = n.verified_email, t[8] = l);
+    let u;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.application.identity.institution.label`,
+        defaultMessage: `Institution`
+    }), t[9] = u) : u = t[9];
+    let d;
+    t[10] === n.institution ? d = t[11] : (d = (0, Z.jsx)(`div`, {
+        className: `sm:col-span-2`,
+        children: (0, Z.jsx)(qe, {
+            label: u,
+            value: n.institution
+        })
+    }), t[10] = n.institution, t[11] = d);
+    let f;
+    return t[12] !== s || t[13] !== l || t[14] !== d ? (f = (0, Z.jsxs)(`section`, {
+        "aria-labelledby": `sophia-verified-identity-title`,
+        className: `border-token-border-light bg-token-bg-secondary rounded-xl border px-4 py-3`,
+        children: [i, a, (0, Z.jsxs)(`dl`, {
+            className: `mt-3 grid gap-x-5 gap-y-3 sm:grid-cols-2`,
+            children: [s, l, d]
+        })]
+    }), t[12] = s, t[13] = l, t[14] = d, t[15] = f) : f = t[15], f
+}
+
+function qe(e) {
+    "use forget";
+    let t = (0, Y.c)(7),
+        {
+            label: n,
+            value: r
+        } = e,
+        i;
+    t[0] === n ? i = t[1] : (i = (0, Z.jsx)(`dt`, {
+        className: `text-token-text-secondary text-xs leading-5`,
+        children: n
+    }), t[0] = n, t[1] = i);
+    let a;
+    t[2] === r ? a = t[3] : (a = (0, Z.jsx)(`dd`, {
+        className: `text-token-text-primary truncate text-sm font-medium`,
+        children: r
+    }), t[2] = r, t[3] = a);
+    let o;
+    return t[4] !== i || t[5] !== a ? (o = (0, Z.jsxs)(`div`, {
+        className: `min-w-0`,
+        children: [i, a]
+    }), t[4] = i, t[5] = a, t[6] = o) : o = t[6], o
+}
+
+function Je(e, t) {
+    if (e !== `other`) return e ?? null;
+    let n = Object.entries(mt).find(([, e]) => e === t);
+    return n == null ? `other` : n[0]
+}
+
+function Ye(e, t) {
+    return Xe(e) ? {
+        fieldOfResearch: `other`,
+        otherFieldOfResearch: mt[e]
+    } : {
+        fieldOfResearch: e,
+        otherFieldOfResearch: e === `other` ? t : null
+    }
+}
+
+function Xe(e) {
+    return e in mt
+}
+
+function Ze(e) {
+    return [`mathematics`, `physics`, `chemistry`, `biology`, `computer_science`, `earth_and_planetary_sciences`, `engineering`, `other`].includes(e)
+}
+
+function Qe(e) {
+    return e === `arxiv_id` || e === `doi`
+}
+
+function $e(e) {
+    "use forget";
+    let t = (0, Y.c)(13),
+        {
+            showFaq: n
+        } = e,
+        [r, i] = (0, X.useState)(-1),
+        a;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.faq.eligibility.question`,
+        defaultMessage: `Who is eligible?`
+    }), t[0] = a) : a = t[0];
+    let o, s, c, l;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (o = {
+        question: a,
+        answer: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.faq.eligibility.answer.published_research_and_institution_link`,
+            defaultMessage: `Faculty and postdoctoral researchers in eligible scientific fields at <institutionLink>eligible institutions</institutionLink> may apply. Applicants must provide a paper posted on arXiv, bioRxiv, or ChemRxiv within the past three years that lists them as an author and a brief description of their intended research use.`,
+            values: {
+                institutionLink: J
+            }
+        })
+    }, s = {
+        question: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.faq.application.question`,
+            defaultMessage: `How do I apply?`
+        }),
+        answer: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.faq.application.answer.institutional_email_sheerid_research_application`,
+            defaultMessage: `Sign in with your institutional email, verify your affiliation through SheerID, and complete a short research application. Approved applicants will then receive instructions for accessing their research workspace.`
+        })
+    }, c = {
+        question: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.faq.program_free.question`,
+            defaultMessage: `Is the program free?`
+        }),
+        answer: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.faq.program_free.answer.complimentary_workspace_and_collaborators`,
+            defaultMessage: `Yes. Approved researchers receive a complimentary workspace for 12 months and may invite up to four verified students or collaborators from the same institution. Students can join by invitation but cannot apply independently. A payment method is required at checkout, but your plan will not renew automatically and you will only be charged if you choose to continue after the first 12 months.`
+        })
+    }, l = (0, Z.jsx)(C, {
+        id: `chatgpt.sophia.verification.faq.existing_workspace.question`,
+        defaultMessage: `What if I already have ChatGPT or my institution has a workspace?`
+    }), t[1] = o, t[2] = s, t[3] = c, t[4] = l) : (o = t[1], s = t[2], c = t[3], l = t[4]);
+    let u;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (u = [o, s, c, {
+        question: l,
+        answer: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.faq.existing_workspace.answer.institutional_and_personal_workspaces`,
+            defaultMessage: `You can apply using an existing ChatGPT account associated with your institutional email. If your application is approved and your institution already uses ChatGPT Edu or Enterprise, your workspace administrator can coordinate access through the existing enterprise agreement. Personal workspaces are governed by our <termsLink>Terms of Use</termsLink> and <privacyLink>Privacy Policy</privacyLink>.`,
+            values: {
+                termsLink: q,
+                privacyLink: K
+            }
+        })
+    }, {
+        question: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.faq.training.question`,
+            defaultMessage: `Does OpenAI train its models on my data?`
+        }),
+        answer: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.faq.training.answer.not_used_by_default`,
+            defaultMessage: `No. Content you share in your ChatGPT for Academic Researchers workspace is not used to train OpenAI’s models by default.`
+        })
+    }], t[5] = u) : u = t[5];
+    let d = u,
+        f;
+    t[6] !== r || t[7] !== n ? (f = n && (0, Z.jsxs)(Z.Fragment, {
+        children: [(0, Z.jsx)(`h2`, {
+            className: `text-token-text-primary text-start text-lg font-semibold tracking-tight`,
+            children: (0, Z.jsx)(`span`, {
+                children: (0, Z.jsx)(C, {
+                    id: `chatgpt.sophia.verification.faq.title`,
+                    defaultMessage: `FAQs`
+                })
+            })
+        }), (0, Z.jsx)(`div`, {
+            className: `border-token-border-light bg-token-bg-primary rounded-2xl border px-6 shadow-sm`,
+            children: d.map((e, t) => (0, Z.jsx)(tt, {
+                answer: e.answer,
+                index: t,
+                isOpen: r === t,
+                question: e.question,
+                onToggle: () => {
+                    i(r === t ? -1 : t)
+                }
+            }, t))
+        })]
+    }), t[6] = r, t[7] = n, t[8] = f) : f = t[8];
+    let p;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, Z.jsx)(`h3`, {
+        className: `text-token-text-primary text-base font-semibold`,
+        id: `sophia-verification-help-title`,
+        children: (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.help.title`,
+            defaultMessage: `Need help?`
+        })
+    }), t[9] = p) : p = t[9];
+    let m;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, Z.jsxs)(`section`, {
+        "aria-labelledby": `sophia-verification-help-title`,
+        className: `border-token-border-light bg-token-bg-primary scroll-mt-8 rounded-2xl border px-6 py-5 shadow-sm`,
+        id: `sophia-verification-help`,
+        children: [p, (0, Z.jsx)(`p`, {
+            className: `text-token-text-secondary mt-1 text-sm leading-6`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.help.description`,
+                defaultMessage: `For questions about ChatGPT for Academic Researchers or your application, <helpCenterLink>visit our Help Center</helpCenterLink>.`,
+                values: {
+                    helpCenterLink: et
+                }
+            })
+        })]
+    }), t[10] = m) : m = t[10];
+    let h;
+    return t[11] === f ? h = t[12] : (h = (0, Z.jsxs)(`section`, {
+        className: `mx-auto flex w-full max-w-2xl scroll-mt-8 flex-col gap-5 px-6 pt-6 pb-14 md:pt-8 md:pb-16`,
+        id: `sophia-verification-faq`,
+        children: [f, m]
+    }), t[11] = f, t[12] = h), h
+}
+
+function et(e) {
+    return (0, Z.jsx)(`a`, {
+        className: `text-token-text-primary underline underline-offset-2`,
+        href: `https://help.openai.com/en/articles/20001406`,
+        rel: `noopener noreferrer`,
+        target: `_blank`,
+        children: e
+    })
+}
+
+function K(e) {
+    return (0, Z.jsx)(`a`, {
+        className: `text-token-text-primary underline underline-offset-2`,
+        href: `https://openai.com/policies/privacy-policy/`,
+        rel: `noopener noreferrer`,
+        target: `_blank`,
+        children: e
+    })
+}
+
+function q(e) {
+    return (0, Z.jsx)(`a`, {
+        className: `text-token-text-primary underline underline-offset-2`,
+        href: `https://openai.com/policies/row-terms-of-use/`,
+        rel: `noopener noreferrer`,
+        target: `_blank`,
+        children: e
+    })
+}
+
+function J(e) {
+    return (0, Z.jsx)(D, {
+        className: `text-token-text-primary underline underline-offset-2`,
+        rel: `noopener noreferrer`,
+        target: `_blank`,
+        to: z(),
+        children: e
+    })
+}
+
+function tt(e) {
+    "use forget";
+    let t = (0, Y.c)(23),
+        {
+            answer: n,
+            index: r,
+            isOpen: i,
+            question: a,
+            onToggle: o
+        } = e,
+        s = `sophia-verification-faq-${r}-answer`,
+        c = `sophia-verification-faq-${r}-question`,
+        l;
+    t[0] === a ? l = t[1] : (l = (0, Z.jsx)(`span`, {
+        children: a
+    }), t[0] = a, t[1] = l);
+    let u;
+    t[2] === i ? u = t[3] : (u = i ? (0, Z.jsx)(it, {}) : (0, Z.jsx)(rt, {}), t[2] = i, t[3] = u);
+    let d;
+    t[4] !== s || t[5] !== i || t[6] !== o || t[7] !== c || t[8] !== l || t[9] !== u ? (d = (0, Z.jsxs)(`button`, {
+        "aria-controls": s,
+        "aria-expanded": i,
+        className: `text-token-text-primary flex w-full items-center justify-between gap-6 py-4 text-start text-[15px] font-normal md:text-[16px]`,
+        id: c,
+        onClick: o,
+        type: `button`,
+        children: [l, u]
+    }), t[4] = s, t[5] = i, t[6] = o, t[7] = c, t[8] = l, t[9] = u, t[10] = d) : d = t[10];
+    let f = !i,
+        p = i ? `grid grid-rows-[1fr] transition-all duration-200` : `grid grid-rows-[0fr] transition-all duration-200`,
+        m = !i,
+        h;
+    t[11] === n ? h = t[12] : (h = (0, Z.jsx)(`div`, {
+        className: `overflow-hidden`,
+        children: (0, Z.jsx)(`p`, {
+            className: `text-token-text-secondary mb-4 max-w-4xl text-sm leading-6`,
+            children: n
+        })
+    }), t[11] = n, t[12] = h);
+    let g;
+    t[13] !== s || t[14] !== c || t[15] !== f || t[16] !== p || t[17] !== m || t[18] !== h ? (g = (0, Z.jsx)(`div`, {
+        "aria-hidden": f,
+        "aria-labelledby": c,
+        className: p,
+        id: s,
+        inert: m,
+        role: `region`,
+        children: h
+    }), t[13] = s, t[14] = c, t[15] = f, t[16] = p, t[17] = m, t[18] = h, t[19] = g) : g = t[19];
+    let _;
+    return t[20] !== d || t[21] !== g ? (_ = (0, Z.jsxs)(`div`, {
+        className: `border-token-border-light border-b`,
+        children: [d, g]
+    }), t[20] = d, t[21] = g, t[22] = _) : _ = t[22], _
+}
+
+function nt(e) {
+    "use forget";
+    let t = (0, Y.c)(6),
+        {
+            isComplete: n,
+            isAvailable: r,
+            stepNumber: i
+        } = e,
+        a = n !== void 0 && n,
+        o = a ? `border-token-border-light bg-token-bg-secondary text-token-text-success flex h-8 w-8 shrink-0 items-center justify-center rounded-full border` : r === void 0 || r ? `border-token-border-heavy text-token-text-secondary flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-sm font-medium` : `border-token-border-light text-token-text-tertiary flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-sm font-medium`,
+        s;
+    t[0] !== a || t[1] !== i ? (s = a ? (0, Z.jsx)(M, {
+        className: `h-4 w-4`
+    }) : i, t[0] = a, t[1] = i, t[2] = s) : s = t[2];
+    let c;
+    return t[3] !== o || t[4] !== s ? (c = (0, Z.jsx)(`span`, {
+        "aria-hidden": `true`,
+        className: o,
+        children: s
+    }), t[3] = o, t[4] = s, t[5] = c) : c = t[5], c
+}
+
+function rt() {
+    "use forget";
+    let e = (0, Y.c)(1),
+        t;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(`svg`, {
+        "aria-hidden": `true`,
+        className: `h-5 w-5 shrink-0`,
+        fill: `none`,
+        viewBox: `0 0 20 20`,
+        children: (0, Z.jsx)(`path`, {
+            d: `M10 4.5v11M4.5 10h11`,
+            stroke: `currentColor`,
+            strokeLinecap: `round`,
+            strokeWidth: `2`
+        })
+    }), e[0] = t) : t = e[0], t
+}
+
+function it() {
+    "use forget";
+    let e = (0, Y.c)(1),
+        t;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(`svg`, {
+        "aria-hidden": `true`,
+        className: `h-5 w-5 shrink-0`,
+        fill: `none`,
+        viewBox: `0 0 20 20`,
+        children: (0, Z.jsx)(`path`, {
+            d: `M4.5 10h11`,
+            stroke: `currentColor`,
+            strokeLinecap: `round`,
+            strokeWidth: `2`
+        })
+    }), e[0] = t) : t = e[0], t
+}
+
+function at(e, t, n) {
+    if (e) return `loading`;
+    if (t) return `refresh-error`;
+    switch (n) {
+        case `pending`:
+            return `pending`;
+        case `verified`:
+            return `verified`;
+        case `error`:
+            return `error`;
+        case `none`:
+        case void 0:
+            return `needs-verification`
+    }
+}
+
+function ot(e) {
+    return e instanceof r && e.status === 409 && e.code === ft
+}
+
+function st(e) {
+    return e instanceof r && e.status === 409 && e.code === pt
+}
+
+function ct() {
+    return new URL(R(), window.location.origin).toString()
+}
+
+function lt(e, t) {
+    let n = t?.name?.trim();
+    return n ? e.formatMessage(_t.personalWorkspaceTitle, {
+        name: n
+    }) : e.formatMessage(_t.defaultWorkspaceTitle)
+}
+
+function ut(e) {
+    "use forget";
+    let t = (0, Y.c)(3),
+        {
+            verificationState: n
+        } = e;
+    switch (n) {
+        case `loading`: {
+            let e;
+            return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.button.loading`,
+                defaultMessage: `Checking your status…`
+            }), t[0] = e) : e = t[0], e
+        }
+        case `pending`: {
+            let e;
+            return t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.button.continue`,
+                defaultMessage: `Continue verification`
+            }), t[1] = e) : e = t[1], e
+        }
+        case `error`:
+            return null;
+        case `verified`:
+            return null;
+        case `needs-verification`: {
+            let e;
+            return t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.button.start`,
+                defaultMessage: `Start verification`
+            }), t[2] = e) : e = t[2], e
+        }
+        case `refresh-error`:
+            return null
+    }
+}
+var Y, X, Z, dt, ft, pt, mt, ht, gt, _t, vt = e((() => {
+    Y = T(), n(), o(), A(), fe(), j(), P(), F(), p(), y(), I(), de(), me(), L(), Se(), H(), i(), f(), h(), l(), s(), O(), X = t(te()), ae(), x(), Z = E(), dt = 1, ft = `sci_new_verifications_disabled`, pt = `sci_workspace_cap_reached`, mt = {
+        computer_science: `Computer Science`,
+        earth_and_planetary_sciences: `Earth and Planetary Sciences`,
+        engineering: `Engineering`
+    }, ht = e => {
+        "use forget";
+        let t = (0, Y.c)(2),
+            {
+                description: n
+            } = e,
+            r;
+        return t[0] === n ? r = t[1] : (r = (0, Z.jsx)(`div`, {
+            className: `mt-4`,
+            children: (0, Z.jsx)(`p`, {
+                className: `text-token-text-primary text-sm leading-6 font-medium`,
+                children: n
+            })
+        }), t[0] = n, t[1] = r), r
+    }, gt = e => {
+        "use forget";
+        let t = (0, Y.c)(24),
+            {
+                applicationData: n,
+                institution: r,
+                name: i,
+                onInstitutionChange: a,
+                onNameChange: o
+            } = e,
+            s;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, Z.jsx)(M, {
+            "aria-hidden": `true`,
+            className: `text-token-text-success h-4 w-4`
+        }), t[0] = s) : s = t[0];
+        let c;
+        t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, Z.jsxs)(`div`, {
+            className: `flex items-center gap-2`,
+            children: [s, (0, Z.jsx)(`h3`, {
+                className: `text-token-text-primary text-sm font-semibold`,
+                id: `sophia-account-verification-title`,
+                children: (0, Z.jsx)(C, {
+                    id: `chatgpt.sophia.verification.application.identity.account_verification.title`,
+                    defaultMessage: `Account verification`
+                })
+            })]
+        }), t[1] = c) : c = t[1];
+        let l;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Z.jsx)(`p`, {
+            className: `text-token-text-secondary mt-1 text-xs leading-5`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.application.identity.account_verification.description`,
+                defaultMessage: `Your account email is verified. Tell us your name and institution.`
+            })
+        }), t[2] = l) : l = t[2];
+        let u;
+        t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, Z.jsx)(C, {
+            id: `chatgpt.sophia.verification.application.identity.email.label`,
+            defaultMessage: `Verified email`
+        }), t[3] = u) : u = t[3];
+        let d;
+        t[4] === n.verified_email ? d = t[5] : (d = (0, Z.jsx)(`dl`, {
+            className: `mt-3`,
+            children: (0, Z.jsx)(qe, {
+                label: u,
+                value: n.verified_email
+            })
+        }), t[4] = n.verified_email, t[5] = d);
+        let f;
+        t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, Z.jsx)(`label`, {
+            className: `text-token-text-primary mb-2 block text-sm font-medium`,
+            htmlFor: `sophia-application-name`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.application.identity.name.editable.label`,
+                defaultMessage: `Name`
+            })
+        }), t[6] = f) : f = t[6];
+        let p;
+        t[7] === o ? p = t[8] : (p = e => {
+            o(e.target.value)
+        }, t[7] = o, t[8] = p);
+        let m;
+        t[9] !== i || t[10] !== p ? (m = (0, Z.jsxs)(`div`, {
+            children: [f, (0, Z.jsx)(`input`, {
+                className: `border-token-border-heavy bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-lg border px-3 py-2 text-sm focus:ring-1 focus:outline-hidden`,
+                id: `sophia-application-name`,
+                maxLength: 200,
+                name: `name`,
+                required: !0,
+                type: `text`,
+                value: i,
+                onChange: p
+            })]
+        }), t[9] = i, t[10] = p, t[11] = m) : m = t[11];
+        let h;
+        t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, Z.jsx)(`label`, {
+            className: `text-token-text-primary mb-2 block text-sm font-medium`,
+            htmlFor: `sophia-application-institution`,
+            children: (0, Z.jsx)(C, {
+                id: `chatgpt.sophia.verification.application.identity.institution.editable.label`,
+                defaultMessage: `Institution`
+            })
+        }), t[12] = h) : h = t[12];
+        let g;
+        t[13] === a ? g = t[14] : (g = e => {
+            a(e.target.value)
+        }, t[13] = a, t[14] = g);
+        let _;
+        t[15] !== r || t[16] !== g ? (_ = (0, Z.jsxs)(`div`, {
+            children: [h, (0, Z.jsx)(`input`, {
+                className: `border-token-border-heavy bg-token-bg-primary text-token-text-primary focus:border-token-border-heavy focus:ring-token-text-secondary w-full rounded-lg border px-3 py-2 text-sm focus:ring-1 focus:outline-hidden`,
+                id: `sophia-application-institution`,
+                maxLength: 200,
+                name: `institution`,
+                required: !0,
+                type: `text`,
+                value: r,
+                onChange: g
+            })]
+        }), t[15] = r, t[16] = g, t[17] = _) : _ = t[17];
+        let v;
+        t[18] !== _ || t[19] !== m ? (v = (0, Z.jsxs)(`div`, {
+            className: `mt-4 grid gap-4 sm:grid-cols-2`,
+            children: [m, _]
+        }), t[18] = _, t[19] = m, t[20] = v) : v = t[20];
+        let y;
+        return t[21] !== v || t[22] !== d ? (y = (0, Z.jsxs)(`section`, {
+            "aria-labelledby": `sophia-account-verification-title`,
+            className: `border-token-border-light bg-token-bg-secondary rounded-xl border px-4 py-3`,
+            children: [c, l, d, v]
+        }), t[21] = v, t[22] = d, t[23] = y) : y = t[23], y
+    }, _t = w({
+        personalWorkspaceTitle: {
+            id: `SophiaCheckoutRoute.personalSophiaWorkspaceTitle`,
+            defaultMessage: `{name}'s Researcher Workspace`
+        },
+        defaultWorkspaceTitle: {
+            id: `SophiaCheckoutRoute.defaultSophiaWorkspaceTitle`,
+            defaultMessage: `Workspace`
+        }
+    })
+}));
+export {
+    vt as n, U as t
+};
 //# sourceMappingURL=3cf20a61-n5ad55tstiwo3t88.js.map

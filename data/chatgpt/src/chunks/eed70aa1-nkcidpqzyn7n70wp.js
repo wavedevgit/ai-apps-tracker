@@ -1,2 +1,55 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bx as t,Fx as n,Hx as r,eS as i,fS as a,iS as o,lS as s,uS as c}from"./c2675c8c-otyjprdiowg2v8hl.js";var l,u,d,f,p,m,h,g,_,v=e((()=>{n(),l=s({version:i(1),delivery:t([`none`,`paid`])}),u=s({version:i(1),delivery:i(`free`),scope:i(`all_orders`)}),d=s({version:i(1),delivery:i(`free`),scope:i(`minimum_order`),minimum_order_amount:c(),currency:c().nullable()}),f=s({version:i(1),returns:i(`none`)}),p=s({version:i(1),returns:t([`fees`,`free`]),window_days:o().nullable()}),m=a([l,u,d.extend({minimum_order_amount:c().regex(/^(?:\d+(?:\.\d*)?|\.\d+)$/).refine(e=>Number.isFinite(Number(e))&&Number(e)>0),currency:c().regex(/^[A-Z]{3}$/)})]),h=a([f,p.extend({window_days:o().int().positive()})]),g=a([s({version:i(1),delivery:r()}),l,u,s({version:i(1),delivery:i(`free`),scope:r()}),d]),_=a([s({version:i(1),returns:r()}),f,p])}));export{v as a,h as i,m as n,_ as r,g as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bx as t,
+    Fx as n,
+    Hx as r,
+    eS as i,
+    fS as a,
+    iS as o,
+    lS as s,
+    uS as c
+} from "./c2675c8c-otyjprdiowg2v8hl.js";
+var l, u, d, f, p, m, h, g, _, v = e((() => {
+    n(), l = s({
+        version: i(1),
+        delivery: t([`none`, `paid`])
+    }), u = s({
+        version: i(1),
+        delivery: i(`free`),
+        scope: i(`all_orders`)
+    }), d = s({
+        version: i(1),
+        delivery: i(`free`),
+        scope: i(`minimum_order`),
+        minimum_order_amount: c(),
+        currency: c().nullable()
+    }), f = s({
+        version: i(1),
+        returns: i(`none`)
+    }), p = s({
+        version: i(1),
+        returns: t([`fees`, `free`]),
+        window_days: o().nullable()
+    }), m = a([l, u, d.extend({
+        minimum_order_amount: c().regex(/^(?:\d+(?:\.\d*)?|\.\d+)$/).refine(e => Number.isFinite(Number(e)) && Number(e) > 0),
+        currency: c().regex(/^[A-Z]{3}$/)
+    })]), h = a([f, p.extend({
+        window_days: o().int().positive()
+    })]), g = a([s({
+        version: i(1),
+        delivery: r()
+    }), l, u, s({
+        version: i(1),
+        delivery: i(`free`),
+        scope: r()
+    }), d]), _ = a([s({
+        version: i(1),
+        returns: r()
+    }), f, p])
+}));
+export {
+    v as a, h as i, m as n, _ as r, g as t
+};
 //# sourceMappingURL=eed70aa1-nkcidpqzyn7n70wp.js.map

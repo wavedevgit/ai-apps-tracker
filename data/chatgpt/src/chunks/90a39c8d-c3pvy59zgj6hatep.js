@@ -1,2 +1,2910 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Az as n,BU as r,C_ as i,Cw as a,F7 as o,JT as s,Mz as c,QG as l,Qnt as u,R1 as d,S_ as f,Tw as p,X5 as m,Xy as h,Y5 as g,YT as _,Ynt as v,Z1 as ee,Zy as y,eK as b,jz as x,tK as S,trt as C,vR as w,xR as te,z7 as T,zU as E}from"./4813494d-tap9fxyhk4ehe0bs.js";import{At as D,Bn as O,Ht as k,Ln as A,Lt as j,N as ne,Nn as M,Nt as N,O as re,Q as P,Rn as F,Vn as I,Vt as L,it as R,p as ie,q as z,s as B,wn as V,zn as ae}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Bjt as H,IHn as U,LHn as W,RHn as oe,Sdn as se,TCn as G,U8t as ce,dH as le,dKn as K,fH as ue,gH as de,hH as fe,mH as pe,nw as me,rw as he,uH as ge,uKn as _e,xCn as ve,xdn as ye,z8t as be,zjt as xe}from"./conversation-small-nmt18uiom3b14vca.js";import{Ax as Se,Kl as Ce,Ol as we,hm as Te,kl as Ee,kx as De,mm as Oe,ql as ke}from"./30901919-niqyapppecmq5jkn.js";import{Ev as Ae,Tv as q,as as je,cs as Me,dl as Ne,es as Pe,ns as Fe,os as Ie,ul as Le}from"./c2675c8c-h5ybkhdzcoblzzdu.js";import{f_ as Re,p_ as ze}from"./8b34dbc2-ojcl97ddvu2212q0.js";import{n as Be,t as Ve}from"./e18c46cf-gso23y5yqg4kmxo6.js";import{n as He,t as Ue}from"./18a8b3b4-h5oakx6qki6vuxyj.js";import{n as We,t as Ge}from"./9f2e6d33-h33rm8r24h08gyr1.js";import{i as Ke,n as qe,r as Je,t as Ye}from"./e6141aca-j4t3r5a9dq2k26sz.js";import{r as Xe,t as Ze}from"./8c6976e5-izsecvkl5ajbj9v5.js";import{a as Qe,i as $e,n as et,o as tt,r as nt,s as rt,t as it}from"./0bd66cc9-ja41shgipc3umets.js";import{i as at,r as ot}from"./af584902-cxhub1ai3ltfwk9v.js";import{r as st,t as ct}from"./ef852af5-gabs4ppzmu6q8zzm.js";import{i as lt,n as ut,r as dt,t as ft}from"./543878e5-m9p63zgxnk4c1a4b.js";function pt(e){return[`workspace-admin-requests`,e]}function mt(e){return[`workspace-admin-requests-indicator`,e]}async function ht(e,{fetchAllPages:t=!0,pageSize:n=zt}={}){let r,i=[];do{let t=await o.safeGet(`/accounts/{account_id}/admin/workspace_admin_requests`,{parameters:{path:{account_id:e},query:{limit:n,...r==null?{}:{cursor:r}}}});i.push(...t.items),r=t.cursor??void 0}while(t&&r!=null);return{items:i,...r==null?{}:{cursor:r}}}function gt(e){return e.payloads.find(e=>e.kind===`spend_limit`)??e.payloads[0]??null}function _t(e){let t=gt(e)?.update;return t!=null&&`requested_limit`in t?t.requested_limit??null:null}function vt(e){let t=_t(e);return t==null?``:String(t)}function yt(e){return{value:vt(e),dirty:!1}}function bt(e){let t=e.trim();if(!/^\d+$/.test(t))return null;let n=Number(t);return!Number.isSafeInteger(n)||n>Bt?null:n}function xt(e,t){return e.payloads.map((e,n)=>n===0?{...e,update:{kind:`increase_with_amount`,requested_limit:t}}:e)}function St(e){return gt(e)?.original_limit_snapshot??null}function Ct(e,t){return t==null?e.formatMessage(Y.notSet):e.formatMessage(Y.creditsValue,{credits:e.formatNumber(t)})}function wt(e){return e.requester_name||e.requester_email||e.requester_account_user_id}function Tt(e){return e.requester_email||e.requester_account_user_id}function Et(){"use forget";let e=(0,Lt.c)(70),t=ae(),n;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(n=E(),e[0]=n):n=e[0];let r=n,i=ne(),a=ee(),s=te(Pt),{role:c}=Ne(),l=a?.id,u;e[1]!==c||e[2]!==s?(u=c==null?s!=null&&ve(s.role):ve(c),e[1]=c,e[2]=s,e[3]=u):u=e[3];let d=u,[f,p]=(0,Rt.useState)(``),[m,h]=(0,Rt.useState)(Nt),g;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(g={},e[4]=g):g=e[4];let[_,v]=(0,Rt.useState)(g),y;e[5]===l?y=e[6]:(y=pt(l),e[5]=l,e[6]=y);let b;e[7]===l?b=e[8]:(b=async()=>{if(!l)throw Error(`Workspace id is required`);return await ht(l)},e[7]=l,e[8]=b);let S=!!l,C;e[9]!==y||e[10]!==b||e[11]!==S?(C={queryKey:y,queryFn:b,enabled:S,staleTime:0,refetchOnMount:`always`,refetchOnWindowFocus:`always`},e[9]=y,e[10]=b,e[11]=S,e[12]=C):C=e[12];let w=re(C);w.data?.items;let T;e[13]===w.data?.items?T=e[14]:(T=w.data?.items??[],e[13]=w.data?.items,e[14]=T);let D;e[15]===T?D=e[16]:(D=T.filter(Mt),e[15]=T,e[16]=D);let O=D,k,A;e[17]===O?(k=e[18],A=e[19]):(A=()=>{let e=new Set(O.map(jt));h(t=>{let n=new Set(Array.from(t).filter(t=>e.has(t)));return n.size===t.size?t:n})},k=[O],e[17]=O,e[18]=k,e[19]=A),(0,Rt.useEffect)(A,k);let j,N;e[20]===O?(j=e[21],N=e[22]):(j=()=>{let e=new Set(O.map(At));v(t=>{let n=!1,r={};for(let e of O){let i=t[e.id];r[e.id]=i?.dirty?i:yt(e),n||=r[e.id]!==t[e.id]}return n||=Object.keys(t).some(t=>!e.has(t)),n?r:t})},N=[O],e[20]=O,e[21]=j,e[22]=N),(0,Rt.useEffect)(j,N);let P;if(e[23]!==O||e[24]!==_||e[25]!==f){bb0:{let e=f.trim().toLowerCase();if(e===``){P=O;break bb0}P=O.filter(t=>{let n=_t(t),r=_[t.id]?.value??(n==null?``:String(n));return[wt(t),Tt(t),t.requester_account_user_id,t.justification,r].join(` `).toLowerCase().includes(e)})}e[23]=O,e[24]=_,e[25]=f,e[26]=P}else P=e[26];let F=P,I;e[27]===F?I=e[28]:(I=F.map(kt),e[27]=F,e[28]=I);let L=I,R;e[29]!==m||e[30]!==L?(R=L.length>0&&L.every(e=>m.has(e)),e[29]=m,e[30]=L,e[31]=R):R=e[31];let z=R,B;if(e[32]!==m||e[33]!==L){let t;e[35]===m?t=e[36]:(t=e=>m.has(e),e[35]=m,e[36]=t),B=L.filter(t),e[32]=m,e[33]=L,e[34]=B}else B=e[34];let V=B.length,H;e[37]===l?H=e[38]:(H=async e=>{let{requests:t,status:n}=e;if(!l)throw Error(`Workspace id is required`);if(n===`approved`&&t.some(Ot))throw Error(`Requested limit is required`);let r=await Promise.allSettled(t.map(async e=>{let{request:t,requestedLimit:r}=e,i=n===`approved`&&r!=null?{status:n,payloads:xt(t,r)}:{status:n};return await o.safePatch(`/accounts/{account_id}/admin/workspace_admin_requests/{request_id}`,{parameters:{path:{account_id:l,request_id:t.id}},requestBody:i}),t.id})),i=r.flatMap(Dt),a=r.length-i.length;if(i.length===0&&a>0)throw Error(`Unable to update usage limit requests`);return{failedCount:a,succeededRequestIds:i}},e[37]=l,e[38]=H);let U;e[39]!==t||e[40]!==i||e[41]!==l?(U=async(e,n)=>{let a=new Set(e.succeededRequestIds);h(e=>{let t=new Set(e);for(let e of a)t.delete(e);return t}),i.setQueryData(pt(l),e=>e==null?e:{...e,items:e.items.filter(e=>!a.has(e.id))}),await i.invalidateQueries({queryKey:pt(l)}),await i.invalidateQueries({queryKey:mt(l)}),n.status===`approved`&&l!=null&&await Promise.all([Qe({queryClient:i,workspaceId:l}),at({queryClient:i,workspaceId:l})]),e.failedCount>0?r.warning(t.formatMessage(Y.resolvePartialError,{succeededCount:e.succeededRequestIds.length,totalCount:n.requests.length}),{hasCloseButton:!0}):r.success(t.formatMessage(n.status===`approved`?Y.approveSuccess:Y.denySuccess,{count:n.requests.length}),{hasCloseButton:!0})},e[39]=t,e[40]=i,e[41]=l,e[42]=U):U=e[42];let W;e[43]===t?W=e[44]:(W=()=>{r.warning(t.formatMessage(Y.resolveError),{hasCloseButton:!0})},e[43]=t,e[44]=W);let oe;e[45]!==H||e[46]!==U||e[47]!==W?(oe={mutationFn:H,onSuccess:U,onError:W},e[45]=H,e[46]=U,e[47]=W,e[48]=oe):oe=e[48];let se=ie(oe);if(l==null){let t;return e[49]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,J.jsx)(`div`,{className:`flex min-h-[40vh] items-center justify-center`,children:(0,J.jsx)(x,{})}),e[49]=t):t=e[49],t}let G;e[50]===Symbol.for(`react.memo_cache_sentinel`)?(G=e=>p(e.target.value),e[50]=G):G=e[50];let ce;e[51]===t?ce=e[52]:(ce=t.formatMessage(Y.searchPlaceholder),e[51]=t,e[52]=ce);let le;e[53]!==f||e[54]!==ce?(le=(0,J.jsx)(`div`,{className:`mb-4.5 flex items-center justify-between`,children:(0,J.jsx)(ye,{id:`workspace-admin-requests-search`,className:`w-full`,inputClassName:`w-full rounded-full! text-sm`,value:f,onChange:G,placeholder:ce})}),e[53]=f,e[54]=ce,e[55]=le):le=e[55];let K;e[56]!==z||e[57]!==F||e[58]!==d||e[59]!==_||e[60]!==se||e[61]!==m||e[62]!==V||e[63]!==L||e[64]!==w.isError||e[65]!==w.isLoading?(K=w.isLoading?(0,J.jsx)(`div`,{className:`flex min-h-[40vh] items-center justify-center`,children:(0,J.jsx)(x,{})}):w.isError?(0,J.jsx)(`div`,{className:`border-token-border-heavy bg-token-bg-tertiary text-token-text-primary rounded-md border px-4 py-3`,children:(0,J.jsx)(M,{...Y.loadError})}):(0,J.jsx)(Ft,{requests:F,selectedRequestIds:m,requestedLimitDrafts:_,allVisibleRequestsSelected:z,selectedVisibleRequestCount:V,hasAdminPrivileges:d,isResolving:se.isPending,onToggleRequest:(e,t)=>{h(n=>{let r=new Set(n);return t?r.add(e):r.delete(e),r})},onToggleAllVisibleRequests:e=>{h(t=>{let n=new Set(t);for(let t of L)e?n.add(t):n.delete(t);return n})},onRequestedLimitChange:(e,t)=>{v(n=>({...n,[e.id]:{...n[e.id]??yt(e),value:t,dirty:!0}}))},onResolveRequests:(e,t)=>{se.mutateAsync({requests:e.map(e=>({request:e,requestedLimit:bt((_[e.id]??yt(e)).value)})),status:t})}}),e[56]=z,e[57]=F,e[58]=d,e[59]=_,e[60]=se,e[61]=m,e[62]=V,e[63]=L,e[64]=w.isError,e[65]=w.isLoading,e[66]=K):K=e[66];let ue;return e[67]!==le||e[68]!==K?(ue=(0,J.jsxs)(`div`,{className:`max-w-[72rem]`,children:[le,K]}),e[67]=le,e[68]=K,e[69]=ue):ue=e[69],ue}function Dt(e){return e.status===`fulfilled`?[e.value]:[]}function Ot(e){let{requestedLimit:t}=e;return t==null}function kt(e){return e.id}function At(e){return e.id}function jt(e){return e.id}function Mt(e){return e.status===`pending`}function Nt(){return new Set}function Pt(e){return e.currentWorkspace}function Ft(e){"use forget";let t=(0,Lt.c)(81),{requests:n,selectedRequestIds:r,requestedLimitDrafts:i,allVisibleRequestsSelected:a,selectedVisibleRequestCount:o,hasAdminPrivileges:s,isResolving:c,onToggleRequest:l,onToggleAllVisibleRequests:u,onRequestedLimitChange:d,onResolveRequests:f}=e,p=ae(),m,g;if(t[0]!==i||t[1]!==n||t[2]!==r){let e;t[5]===r?e=t[6]:(e=e=>r.has(e.id),t[5]=r,t[6]=e),m=n.filter(e);let a;t[7]===i?a=t[8]:(a=e=>bt(i[e.id]?.value??vt(e))!=null,t[7]=i,t[8]=a),g=m.every(a),t[0]=i,t[1]=n,t[2]=r,t[3]=m,t[4]=g}else m=t[3],g=t[4];let _=g,v;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,J.jsxs)(`colgroup`,{children:[(0,J.jsx)(`col`,{className:`w-12`}),(0,J.jsx)(`col`,{className:`w-[28%]`}),(0,J.jsx)(`col`,{className:`w-[15%]`}),(0,J.jsx)(`col`,{className:`w-[15%]`}),(0,J.jsx)(`col`,{className:`w-[28%]`}),(0,J.jsx)(`col`,{className:`w-[14%]`})]}),t[9]=v):v=t[9];let ee=o>0&&!a,y=n.length===0,b;t[10]===u?b=t[11]:(b=e=>u(e.target.checked),t[10]=u,t[11]=b);let x;t[12]===Symbol.for(`react.memo_cache_sentinel`)?(x=(0,J.jsx)(`span`,{className:`sr-only`,children:(0,J.jsx)(M,{...Y.selectAllRequests})}),t[12]=x):x=t[12];let S;t[13]!==a||t[14]!==ee||t[15]!==y||t[16]!==b?(S=(0,J.jsx)(q.HeaderCell,{className:`ps-2`,children:(0,J.jsx)(_e,{id:`workspace-admin-requests-select-all`,checked:a,indeterminate:ee,disabled:y,onChange:b,label:x})}),t[13]=a,t[14]=ee,t[15]=y,t[16]=b,t[17]=S):S=t[17];let C;t[18]===Symbol.for(`react.memo_cache_sentinel`)?(C=(0,J.jsx)(q.HeaderCell,{children:(0,J.jsx)(M,{...Y.nameColumn})}),t[18]=C):C=t[18];let w;t[19]===Symbol.for(`react.memo_cache_sentinel`)?(w=(0,J.jsx)(q.HeaderCell,{children:(0,J.jsx)(M,{...Y.currentLimitColumn})}),t[19]=w):w=t[19];let te;t[20]===Symbol.for(`react.memo_cache_sentinel`)?(te=(0,J.jsx)(q.HeaderCell,{children:(0,J.jsx)(M,{...Y.recommendedColumn})}),t[20]=te):te=t[20];let T;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(T=(0,J.jsx)(q.HeaderCell,{children:(0,J.jsx)(M,{...Y.justificationColumn})}),t[21]=T):T=t[21];let E;t[22]===o?E=t[23]:(E=o>0?(0,J.jsx)(M,{...Y.selectedCount,values:{count:o}}):null,t[22]=o,t[23]=E);let D;t[24]===p?D=t[25]:(D=p.formatMessage(Y.bulkActionsLabel),t[24]=p,t[25]=D);let O=c||m.length===0,k;t[26]===Symbol.for(`react.memo_cache_sentinel`)?(k=(0,J.jsx)(De,{"aria-hidden":`true`,className:`icon-sm`}),t[26]=k):k=t[26];let A;t[27]!==D||t[28]!==O?(A=(0,J.jsx)(`button`,{type:`button`,"aria-label":D,className:`interactive-button-secondary inline-flex size-8 items-center justify-center rounded-md p-0`,disabled:O,children:k}),t[27]=D,t[28]=O,t[29]=A):A=t[29];let j=c||!s||!_,ne;t[30]!==f||t[31]!==m?(ne=()=>f(m,`approved`),t[30]=f,t[31]=m,t[32]=ne):ne=t[32];let N;t[33]===Symbol.for(`react.memo_cache_sentinel`)?(N=(0,J.jsx)(M,{...Y.approveSelectedButton}),t[33]=N):N=t[33];let re;t[34]!==j||t[35]!==ne?(re=(0,J.jsx)(W.Item,{disabled:j,onClick:ne,children:N}),t[34]=j,t[35]=ne,t[36]=re):re=t[36];let P;t[37]!==f||t[38]!==m?(P=()=>f(m,`denied`),t[37]=f,t[38]=m,t[39]=P):P=t[39];let F;t[40]===Symbol.for(`react.memo_cache_sentinel`)?(F=(0,J.jsx)(M,{...Y.denySelectedButton}),t[40]=F):F=t[40];let I;t[41]!==c||t[42]!==P?(I=(0,J.jsx)(W.Item,{color:`danger`,disabled:c,onClick:P,children:F}),t[41]=c,t[42]=P,t[43]=I):I=t[43];let L;t[44]!==A||t[45]!==re||t[46]!==I?(L=(0,J.jsxs)(U,{side:`bottom`,sideOffset:4,contentAlign:`end`,triggerButton:A,children:[re,I]}),t[44]=A,t[45]=re,t[46]=I,t[47]=L):L=t[47];let R;t[48]!==E||t[49]!==L?(R=(0,J.jsx)(q.HeaderCell,{textAlign:`right`,children:(0,J.jsxs)(`div`,{className:`text-token-text-primary flex items-center justify-end gap-2`,children:[E,L]})}),t[48]=E,t[49]=L,t[50]=R):R=t[50];let ie;t[51]!==R||t[52]!==S?(ie=(0,J.jsxs)(q.Header,{children:[S,C,w,te,T,R]}),t[51]=R,t[52]=S,t[53]=ie):ie=t[53];let z;if(t[54]!==s||t[55]!==p||t[56]!==c||t[57]!==d||t[58]!==f||t[59]!==l||t[60]!==i||t[61]!==n||t[62]!==r){let e;t[64]!==s||t[65]!==p||t[66]!==c||t[67]!==d||t[68]!==f||t[69]!==l||t[70]!==i||t[71]!==r?(e=e=>{let t=wt(e),n=Tt(e),a=i[e.id]?.value??vt(e),o=bt(a)!=null;return(0,J.jsxs)(q.Row,{className:`[&>td]:py-2`,children:[(0,J.jsx)(q.Cell,{className:`ps-2`,divClassName:`min-h-[48px] items-center`,children:(0,J.jsx)(_e,{id:`workspace-admin-request-${e.id}`,checked:r.has(e.id),onChange:t=>l(e.id,t.target.checked),label:(0,J.jsx)(`span`,{className:`sr-only`,children:(0,J.jsx)(M,{...Y.selectRequest,values:{name:t}})})})}),(0,J.jsxs)(q.Cell,{divClassName:`min-h-[48px] min-w-0 items-center`,children:[(0,J.jsx)(`div`,{className:`relative shrink-0 pe-3`,children:(0,J.jsx)(Ue,{userName:t,isScimManaged:!1})}),(0,J.jsxs)(`div`,{className:`min-w-0`,children:[(0,J.jsx)(`div`,{className:`flex min-w-0 items-center gap-1`,children:(0,J.jsx)(`span`,{className:`min-w-0 truncate`,title:t,children:t})}),(0,J.jsx)(`div`,{className:`text-body-small-regular text-token-text-secondary truncate`,title:n,children:n})]})]}),(0,J.jsx)(q.Cell,{divClassName:`min-h-[48px] items-center`,children:Ct(p,St(e))}),(0,J.jsx)(q.Cell,{divClassName:`min-h-[48px] items-center`,children:(0,J.jsx)(`input`,{"aria-label":p.formatMessage(Y.recommendedLimitInput,{name:t}),"aria-invalid":!o,inputMode:`numeric`,min:0,max:Bt,name:`requested-limit-${e.id}`,onChange:t=>d(e,t.target.value),step:1,type:`number`,value:a,className:`border-token-border-light bg-token-bg-primary h-9 w-24 rounded-lg border px-3 text-sm`})}),(0,J.jsx)(q.Cell,{divClassName:`min-h-[48px] items-center`,children:(0,J.jsx)(h,{label:e.justification,children:(0,J.jsx)(`span`,{className:`line-clamp-2`,children:e.justification})})}),(0,J.jsxs)(q.Cell,{textAlign:`right`,divClassName:`min-h-[48px] items-center justify-end gap-4`,children:[(0,J.jsx)(`button`,{type:`button`,disabled:c,className:`text-sm text-[#FF002A] hover:underline focus-visible:underline focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50`,onClick:()=>f([e],`denied`),children:(0,J.jsx)(M,{...Y.denyButton})}),(0,J.jsx)(It,{disabled:!s,testId:`${e.id}-usage-limits-approve-admin-disabled-tooltip-trigger`,children:(0,J.jsx)(`button`,{type:`button`,disabled:c||!o||!s,className:`text-sm text-[#0285FF] hover:underline focus-visible:underline focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50`,onClick:()=>f([e],`approved`),children:(0,J.jsx)(M,{...Y.approveButton})})})]})]},e.id)},t[64]=s,t[65]=p,t[66]=c,t[67]=d,t[68]=f,t[69]=l,t[70]=i,t[71]=r,t[72]=e):e=t[72],z=n.map(e),t[54]=s,t[55]=p,t[56]=c,t[57]=d,t[58]=f,t[59]=l,t[60]=i,t[61]=n,t[62]=r,t[63]=z}else z=t[63];let B;t[73]===n.length?B=t[74]:(B=n.length===0&&(0,J.jsx)(q.Row,{className:`[&>td]:py-2`,children:(0,J.jsx)(q.Cell,{colSpan:6,children:(0,J.jsx)(`div`,{className:`text-token-text-tertiary`,children:(0,J.jsx)(M,{...Y.noRequests})})})}),t[73]=n.length,t[74]=B);let V;t[75]!==z||t[76]!==B?(V=(0,J.jsxs)(q.Body,{children:[z,B]}),t[75]=z,t[76]=B,t[77]=V):V=t[77];let H;return t[78]!==ie||t[79]!==V?(H=(0,J.jsxs)(q.Root,{fixed:!0,size:`normal`,children:[v,ie,V]}),t[78]=ie,t[79]=V,t[80]=H):H=t[80],H}function It(e){"use forget";let t=(0,Lt.c)(6),{children:n,disabled:r,testId:i}=e;if(!r){let e;return t[0]===n?e=t[1]:(e=(0,J.jsx)(J.Fragment,{children:n}),t[0]=n,t[1]=e),e}let a;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,J.jsx)(M,{...Y.adminDisabledTooltip}),t[2]=a):a=t[2];let o;return t[3]!==n||t[4]!==i?(o=(0,J.jsx)(h,{label:a,children:(0,J.jsx)(`span`,{className:`inline-flex`,"data-testid":i,children:n})}),t[3]=n,t[4]=i,t[5]=o):o=t[5],o}var Lt,Rt,J,zt,Bt,Y,Vt=e((()=>{Lt=V(),Le(),He(),$e(),G(),ot(),K(),oe(),Ae(),y(),Se(),se(),c(),d(),w(),r(),T(),B(),Rt=t(I()),F(),J=O(),zt=100,Bt=2147483647,Y=A({adminDisabledTooltip:{id:`workspaceUsageLimits.adminDisabledTooltip`,defaultMessage:`Contact a workspace admin to change this setting.`},approveButton:{id:`workspaceUsageLimits.approveButton`,defaultMessage:`Approve`},approveSelectedButton:{id:`workspaceUsageLimits.approveSelectedButton`,defaultMessage:`Approve selected`},approveSuccess:{id:`workspaceUsageLimits.approveSuccessWithCount`,defaultMessage:`{count, plural, one {Usage limit request approved} other {# usage limit requests approved}}`},bulkActionsLabel:{id:`workspaceUsageLimits.bulkActionsLabel`,defaultMessage:`Bulk request actions`},creditsValue:{id:`workspaceUsageLimits.creditsValue`,defaultMessage:`{credits} credits`},currentLimitColumn:{id:`workspaceUsageLimits.limitWhenRequestedColumn`,defaultMessage:`Limit when requested`},denyButton:{id:`workspaceUsageLimits.denyButton`,defaultMessage:`Deny`},denySelectedButton:{id:`workspaceUsageLimits.denySelectedButton`,defaultMessage:`Deny selected`},denySuccess:{id:`workspaceUsageLimits.denySuccessWithCount`,defaultMessage:`{count, plural, one {Usage limit request denied} other {# usage limit requests denied}}`},justificationColumn:{id:`workspaceUsageLimits.justificationColumn`,defaultMessage:`Justification`},loadError:{id:`workspaceUsageLimits.loadError`,defaultMessage:`Unable to load pending requests.`},nameColumn:{id:`workspaceUsageLimits.nameColumn`,defaultMessage:`Name`},noRequests:{id:`workspaceUsageLimits.noRequests`,defaultMessage:`No pending requests`},notSet:{id:`workspaceUsageLimits.notSet`,defaultMessage:`Not set`},recommendedColumn:{id:`workspaceUsageLimits.recommendedColumn`,defaultMessage:`Recommended`},recommendedLimitInput:{id:`workspaceUsageLimits.recommendedLimitInput`,defaultMessage:`Recommended limit for {name}`},resolveError:{id:`workspaceUsageLimits.resolveError`,defaultMessage:`Unable to update the usage limit request`},resolvePartialError:{id:`workspaceUsageLimits.resolvePartialError`,defaultMessage:`Updated {succeededCount} of {totalCount} usage limit requests. Try again for the rest.`},searchPlaceholder:{id:`workspaceUsageLimits.searchPlaceholder`,defaultMessage:`Search by name`},selectAllRequests:{id:`workspaceUsageLimits.selectAllRequests`,defaultMessage:`Select all pending requests`},selectedCount:{id:`workspaceUsageLimits.selectedCount`,defaultMessage:`{count} selected`},selectRequest:{id:`workspaceUsageLimits.selectRequest`,defaultMessage:`Select request from {name}`}})}));function Ht(e){"use forget";let t=(0,Jt.c)(27),{workspaceId:n,canEdit:r}=e,i=ae(),a=ne(),[s,c]=(0,Yt.useState)(!1),u=S(n),d=u.data??l,f;t[0]===n?f=t[1]:(f=e=>{if(n==null)throw Error(`Workspace id is required`);return o.safePost(`/accounts/{account_id}/settings/usage_limit_increase_request`,{parameters:{path:{account_id:n}},requestBody:{usage_limit_increase_request:e}})},t[0]=n,t[1]=f);let p;t[2]!==a||t[3]!==n?(p=async e=>{a.setQueryData([`workspace-settings`,n],e),await a.invalidateQueries({queryKey:[`workspace-settings`,n]})},t[2]=a,t[3]=n,t[4]=p):p=t[4];let m;t[5]!==f||t[6]!==p?(m={mutationFn:f,onSuccess:p},t[5]=f,t[6]=p,t[7]=m):m=t[7];let h=ie(m),g;t[8]!==i||t[9]!==h?(g=async e=>{try{await h.mutateAsync(e),E().success(i.formatMessage(Z.saveSuccess),{hasCloseButton:!0}),c(!1)}catch{E().warning(i.formatMessage(Z.saveError),{hasCloseButton:!0})}},t[8]=i,t[9]=h,t[10]=g):g=t[10];let _=g,v;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,X.jsx)(`div`,{className:`text-token-text-primary text-base leading-[26px] font-semibold tracking-[-0.32px]`,children:(0,X.jsx)(M,{...Z.settingLabel})}),t[11]=v):v=t[11];let ee;t[12]===Symbol.for(`react.memo_cache_sentinel`)?(ee=(0,X.jsxs)(`div`,{className:`min-w-0 pe-6`,children:[v,(0,X.jsx)(`div`,{className:`text-token-text-tertiary text-sm leading-[18px] tracking-[-0.15px]`,children:(0,X.jsx)(M,{...Z.settingDescription})})]}),t[12]=ee):ee=t[12];let y;t[13]!==r||t[14]!==d||t[15]!==i||t[16]!==u.isError||t[17]!==u.isLoading?(y=(0,X.jsxs)(`div`,{className:`border-token-border-default flex w-full items-start justify-between border-b py-4`,children:[ee,u.isLoading?(0,X.jsx)(`div`,{className:`text-token-text-tertiary text-sm`,children:(0,X.jsx)(M,{...Z.loading})}):(0,X.jsxs)(`div`,{className:`flex shrink-0 flex-col items-end gap-0.5`,children:[(0,X.jsx)(`div`,{className:`text-token-text-primary text-base`,children:(0,X.jsx)(M,{...Kt(d.kind)})}),(0,X.jsx)(`button`,{type:`button`,"aria-label":i.formatMessage(Z.editRequestPolicy),className:`disabled:text-token-text-tertiary text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline focus-visible:underline focus-visible:outline-none disabled:cursor-not-allowed disabled:no-underline dark:text-blue-400 dark:hover:text-blue-300`,disabled:!r||u.isError,onClick:()=>c(!0),children:(0,X.jsx)(M,{...Z.edit})})]})]}),t[13]=r,t[14]=d,t[15]=i,t[16]=u.isError,t[17]=u.isLoading,t[18]=y):y=t[18];let b;t[19]!==d||t[20]!==_||t[21]!==s||t[22]!==h?(b=s?(0,X.jsx)(Ut,{config:d,isSaving:h.isPending,onClose:()=>c(!1),onSave:_}):null,t[19]=d,t[20]=_,t[21]=s,t[22]=h,t[23]=b):b=t[23];let x;return t[24]!==y||t[25]!==b?(x=(0,X.jsxs)(X.Fragment,{children:[y,b]}),t[24]=y,t[25]=b,t[26]=x):x=t[26],x}function Ut(e){"use forget";let t=(0,Jt.c)(52),{config:n,isSaving:r,onClose:i,onSave:o}=e,c=ae(),[l,u]=(0,Yt.useState)(n.kind),[d,f]=(0,Yt.useState)(n.kind===`custom`?n.instructions??``:``),[p,m]=(0,Yt.useState)(n.kind===`custom`?n.request_url??``:``),h;t[0]===d?h=t[1]:(h=d.trim(),t[0]=d,t[1]=h);let g=h,_,v;t[2]===p?(_=t[3],v=t[4]):(v=p.trim(),_=Gt(v),t[2]=p,t[3]=_,t[4]=v);let ee=_,y=!r&&(l!==`custom`||ee),b;t[5]!==y||t[6]!==l||t[7]!==o||t[8]!==g||t[9]!==v?(b=async()=>{if(y){if(l===`custom`){await o({kind:l,instructions:g.length===0?null:g,request_url:v.length===0?null:v});return}await o({kind:l})}},t[5]=y,t[6]=l,t[7]=o,t[8]=g,t[9]=v,t[10]=b):b=t[10];let x=b,S;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(S=(0,X.jsx)(M,{...Z.modalTitle}),t[11]=S):S=t[11];let C=!y,w;t[12]===Symbol.for(`react.memo_cache_sentinel`)?(w=(0,X.jsx)(M,{...Z.save}),t[12]=w):w=t[12];let te;t[13]!==x||t[14]!==r||t[15]!==C?(te=(0,X.jsx)(s,{color:`primary`,loading:r,disabled:C,onClick:x,children:w}),t[13]=x,t[14]=r,t[15]=C,t[16]=te):te=t[16];let T;t[17]===Symbol.for(`react.memo_cache_sentinel`)?(T=(0,X.jsx)(M,{...Z.cancel}),t[17]=T):T=t[17];let E;t[18]!==r||t[19]!==i?(E=(0,X.jsx)(s,{color:`secondary`,disabled:r,onClick:i,children:T}),t[18]=r,t[19]=i,t[20]=E):E=t[20];let D;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(D=e=>{u(e)},t[21]=D):D=t[21];let O;t[22]===c?O=t[23]:(O=c.formatMessage(Z.requestExperienceLabel),t[22]=c,t[23]=O);let k,A;t[24]===Symbol.for(`react.memo_cache_sentinel`)?(k=(0,X.jsx)(Re.Value,{}),A=(0,X.jsx)(Re.Icon,{}),t[24]=k,t[25]=A):(k=t[24],A=t[25]);let j;t[26]===O?j=t[27]:(j=(0,X.jsxs)(Re.Trigger,{"aria-label":O,className:`border-token-border-default w-full justify-between border`,children:[k,A]}),t[26]=O,t[27]=j);let ne;t[28]===Symbol.for(`react.memo_cache_sentinel`)?(ne=(0,X.jsx)(Re.Portal,{children:(0,X.jsx)(Re.Content,{className:`w-[var(--radix-select-trigger-width)]`,children:[`openai_native`,`custom`,`disabled`].map(Wt)})}),t[28]=ne):ne=t[28];let N;t[29]!==l||t[30]!==j?(N=(0,X.jsxs)(Re.Root,{value:l,onValueChange:D,children:[j,ne]}),t[29]=l,t[30]=j,t[31]=N):N=t[31];let re;t[32]===l?re=t[33]:(re=qt(l),t[32]=l,t[33]=re);let P;t[34]===re?P=t[35]:(P=(0,X.jsx)(`div`,{className:`text-token-text-tertiary text-sm leading-5`,children:(0,X.jsx)(M,{...re})}),t[34]=re,t[35]=P);let F;t[36]!==ee||t[37]!==d||t[38]!==c||t[39]!==l||t[40]!==p||t[41]!==v?(F=l===`custom`?(0,X.jsxs)(X.Fragment,{children:[(0,X.jsxs)(`div`,{className:`flex flex-col gap-1.5`,children:[(0,X.jsx)(`label`,{htmlFor:`usage-limit-request-description`,className:`text-token-text-primary text-sm font-medium`,children:(0,X.jsx)(M,{...Z.customDescriptionLabel})}),(0,X.jsx)(`textarea`,{id:`usage-limit-request-description`,name:`usage-limit-request-description`,value:d,maxLength:500,rows:4,placeholder:c.formatMessage(Z.customDescriptionPlaceholder),className:`border-token-border-default bg-token-bg-primary text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-border-heavy resize-none rounded-lg border px-3 py-2 text-sm font-normal outline-none`,onChange:e=>f(e.target.value)})]}),(0,X.jsxs)(`div`,{className:`flex flex-col gap-1.5`,children:[(0,X.jsx)(`label`,{htmlFor:`usage-limit-request-url`,className:`text-token-text-primary text-sm font-medium`,children:(0,X.jsx)(M,{...Z.customUrlLabel})}),(0,X.jsx)(`input`,{id:`usage-limit-request-url`,name:`usage-limit-request-url`,type:`url`,required:!0,value:p,placeholder:c.formatMessage(Z.customUrlPlaceholder),className:`border-token-border-default bg-token-bg-primary text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-border-heavy rounded-lg border px-3 py-2 text-sm font-normal outline-none`,"aria-invalid":v.length>0&&!ee,onChange:e=>m(e.target.value)}),v.length>0&&!ee?(0,X.jsx)(`span`,{className:`text-token-interactive-label-warning-secondary text-sm font-normal`,children:(0,X.jsx)(M,{...Z.invalidHttps})}):null]})]}):null,t[36]=ee,t[37]=d,t[38]=c,t[39]=l,t[40]=p,t[41]=v,t[42]=F):F=t[42];let I;t[43]!==N||t[44]!==P||t[45]!==F?(I=(0,X.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[N,P,F]}),t[43]=N,t[44]=P,t[45]=F,t[46]=I):I=t[46];let L;return t[47]!==i||t[48]!==I||t[49]!==te||t[50]!==E?(L=(0,X.jsx)(a,{isOpen:!0,showCloseButton:!0,testId:`modal-usage-limit-increase-request`,title:S,onClose:i,primaryButton:te,secondaryButton:E,children:I}),t[47]=i,t[48]=I,t[49]=te,t[50]=E,t[51]=L):L=t[51],L}function Wt(e){return(0,X.jsx)(Re.Item,{value:e,children:(0,X.jsx)(M,{...Kt(e)})},e)}function Gt(e){try{return new URL(e).protocol===`https:`}catch{return!1}}function Kt(e){switch(e){case`openai_native`:return Z.openaiNativeLabel;case`custom`:return Z.customLabel;case`disabled`:return Z.disabledLabel}}function qt(e){switch(e){case`openai_native`:return Z.openaiNativeDescription;case`custom`:return Z.customDescription;case`disabled`:return Z.disabledDescription}}var Jt,Yt,X,Z,Xt=e((()=>{Jt=V(),_(),p(),ze(),b(),r(),T(),B(),Yt=t(I()),F(),X=O(),Z=A({settingLabel:{id:`admin.usageLimits.increaseRequests.setting.title`,defaultMessage:`Usage increase request process`},settingDescription:{id:`admin.usageLimits.increaseRequests.setting.description`,defaultMessage:`Choose how members request more usage when they reach their monthly limit.`},modalTitle:{id:`admin.usageLimits.increaseRequests.modal.title.usageLimit`,defaultMessage:`Usage increase request process`},requestExperienceLabel:{id:`admin.usageLimits.increaseRequests.requestExperience.label`,defaultMessage:`Request experience`},openaiNativeLabel:{id:`admin.usageLimits.increaseRequests.openaiNative.label`,defaultMessage:`Default`},openaiNativeDescription:{id:`admin.usageLimits.increaseRequests.openaiNative.description.v2`,defaultMessage:`Members can request more usage in ChatGPT and Codex. Requests appear in Pending requests.`},customLabel:{id:`admin.usageLimits.increaseRequests.custom.label`,defaultMessage:`Custom`},customDescription:{id:`admin.usageLimits.increaseRequests.custom.description`,defaultMessage:`Send members to a URL you choose to request more usage.`},disabledLabel:{id:`admin.usageLimits.increaseRequests.disabled.label`,defaultMessage:`Disabled`},disabledDescription:{id:`admin.usageLimits.increaseRequests.disabled.description`,defaultMessage:`Members cannot request more usage when they reach their monthly limit.`},customDescriptionLabel:{id:`admin.usageLimits.increaseRequests.custom.descriptionLabel`,defaultMessage:`Description`},customDescriptionPlaceholder:{id:`admin.usageLimits.increaseRequests.custom.descriptionPlaceholder`,defaultMessage:`Contact your manager before requesting additional monthly usage.`},customUrlLabel:{id:`admin.usageLimits.increaseRequests.custom.urlLabel`,defaultMessage:`URL`},customUrlPlaceholder:{id:`admin.usageLimits.increaseRequests.custom.urlPlaceholder`,defaultMessage:`https://requests.example.com`},invalidHttps:{id:`admin.usageLimits.increaseRequests.invalidHttps`,defaultMessage:`Enter a valid URL that starts with https://.`},loading:{id:`admin.usageLimits.increaseRequests.loading`,defaultMessage:`Loading…`},edit:{id:`admin.usageLimits.increaseRequests.edit`,defaultMessage:`Edit`},editRequestPolicy:{id:`admin.usageLimits.increaseRequests.editRequestPolicy`,defaultMessage:`Edit usage increase request process`},save:{id:`admin.usageLimits.increaseRequests.save`,defaultMessage:`Save`},cancel:{id:`admin.usageLimits.increaseRequests.cancel`,defaultMessage:`Cancel`},saveSuccess:{id:`admin.usageLimits.increaseRequests.saveSuccess`,defaultMessage:`Usage increase request process updated.`},saveError:{id:`admin.usageLimits.increaseRequests.saveError`,defaultMessage:`We couldn’t update this setting. Please try again.`}})}));function Zt({pathname:e,search:t,workspaceId:n}){let r=new URL(be(`/usage-limits`,n,{includeWorkspaceLoginMethodHint:!0}));switch(dt(e.split(`/`).at(-1))){case`groups`:r.searchParams.set(`tab`,`groups`);break;case`users`:{r.searchParams.set(`tab`,`users`);let e=new URLSearchParams(t).get(`query`);e&&r.searchParams.set(`user_name`,e);break}case`pending-requests`:r.searchParams.set(`tab`,`requests`);break;case`workspace`:break}return r.toString()}function Qt(){"use forget";let e=(0,Tn.c)(5),t=Me(),r=ee(),i=r?.isEnterprisey()===!0&&v(`3778045255`);if(!t.isLoaded){let t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Q.jsx)(n,{className:`icon-xl`}),e[0]=t):t=e[0],t}if(!t.isEnabled){let t;return e[1]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Q.jsx)(Ve,{}),e[1]=t):t=e[1],t}if(i){let t=r?.id,n;return e[2]===t?n=e[3]:(n=(0,Q.jsx)($t,{workspaceId:t}),e[2]=t,e[3]=n),n}let a;return e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Q.jsx)(en,{}),e[4]=a):a=e[4],a}function $t(e){"use forget";let t=(0,Tn.c)(16),{workspaceId:n}=e,r=ae(),i=D(),a;t[0]===r?a=t[1]:(a=r.formatMessage($.browserTitle),t[0]=r,t[1]=a);let o;t[2]===a?o=t[3]:(o=(0,Q.jsx)(Ge,{children:(0,Q.jsx)(`title`,{children:a})}),t[2]=a,t[3]=o);let c;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,Q.jsx)(`p`,{className:`text-token-text-primary font-[590]`,children:(0,Q.jsx)(M,{...$.usageLimitsMovedToAdminConsoleTitle})}),t[4]=c):c=t[4];let l;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,Q.jsxs)(`div`,{className:`flex flex-col gap-1 pb-1 text-[16px] leading-[26px] tracking-[-0.32px]`,children:[c,(0,Q.jsx)(`p`,{className:`text-token-text-secondary font-normal`,children:(0,Q.jsx)(M,{...$.usageLimitsMovedToAdminConsoleBody})})]}),t[5]=l):l=t[5];let u;t[6]!==i.pathname||t[7]!==i.search||t[8]!==n?(u=Zt({pathname:i.pathname,search:i.search,workspaceId:n}),t[6]=i.pathname,t[7]=i.search,t[8]=n,t[9]=u):u=t[9];let d;t[10]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,Q.jsx)(M,{...$.usageLimitsMovedToAdminConsoleAction}),t[10]=d):d=t[10];let f;t[11]===u?f=t[12]:(f=(0,Q.jsx)(Pe,{className:`flex min-h-[80vh] items-center justify-center`,children:(0,Q.jsxs)(`div`,{className:`flex flex-col items-center justify-center gap-4 text-center`,children:[l,(0,Q.jsx)(s,{as:`a`,color:`secondary`,openNewTab:!0,rel:`noopener noreferrer`,size:`large`,to:u,children:d})]})}),t[11]=u,t[12]=f);let p;return t[13]!==o||t[14]!==f?(p=(0,Q.jsxs)(Q.Fragment,{children:[o,f]}),t[13]=o,t[14]=f,t[15]=p):p=t[15],p}function en(){"use forget";let e=(0,Tn.c)(88),t=ae(),n=j(),r=N(),i=ee(),a=te(nn),{role:s}=Ne(),c=i?.id,l;e[0]!==s||e[1]!==a?(l=s==null?a!=null&&ve(a.role):ve(s),e[0]=s,e[1]=a,e[2]=l):l=e[2];let d=l,f;e[3]===n.tab?f=e[4]:(f=dt(n.tab),e[3]=n.tab,e[4]=f);let p=f,m;e[5]===i?m=e[6]:(m=i==null?null:i.isEnterprisey()||i.isEdu(),e[5]=i,e[6]=m);let h=m,_=S(c),y;e[7]!==i||e[8]!==d||e[9]!==_?(y=d&&i!=null&&_.data!=null&&ge(i)&&v(jn),e[7]=i,e[8]=d,e[9]=_,e[10]=y):y=e[10];let b=y,x;e[11]!==p||e[12]!==c?(x=p===`pending-requests`?pt(c):mt(c),e[11]=p,e[12]=c,e[13]=x):x=e[13];let C;e[14]!==p||e[15]!==c?(C=async()=>{if(c==null)throw Error(`Workspace id is required`);return await ht(c,p===`pending-requests`?void 0:{fetchAllPages:!1,pageSize:An})},e[14]=p,e[15]=c,e[16]=C):C=e[16];let w=c!=null&&b,T;e[17]!==x||e[18]!==C||e[19]!==w?(T={queryKey:x,queryFn:C,enabled:w,staleTime:0,refetchOnMount:`always`,refetchOnWindowFocus:`always`},e[17]=x,e[18]=C,e[19]=w,e[20]=T):T=e[20];let E=re(T),D;e[21]===E.data?.items?D=e[22]:(D=E.data?.items.some(tn)??!1,e[21]=E.data?.items,e[22]=D);let O=D,k=i==null||_.isLoading?null:b?_.data?.kind===`openai_native`||p===`pending-requests`&&E.fetchStatus!==`idle`?!0:E.isPending?null:E.isError||O||!!E.data?.cursor:!1,A=h===!1&&p===`groups`||k!==!0&&p===`pending-requests`?`workspace`:p,ne;e[23]!==i||e[24]!==d||e[25]!==p?(ne=p!==`pending-requests`&&d&&i!=null&&(i.isEnterprisey()||i.isEdu())&&v(Mn),e[23]=i,e[24]=d,e[25]=p,e[26]=ne):ne=e[26];let P=ne,F=p!==`pending-requests`&&d&&i!=null,I;e[27]!==h||e[28]!==k?(I=e=>!(h===!1&&e===`groups`||k!==!0&&e===`pending-requests`),e[27]=h,e[28]=k,e[29]=I):I=e[29];let L=ft.filter(I),R,ie;e[30]===c?(R=e[31],ie=e[32]):(R=[`spend-controls-explainability`,c],ie=async()=>{if(c==null)throw Error(`Workspace id is required`);return await o.safeGet(`/accounts/{account_id}/spend-controls/explainability`,{parameters:{path:{account_id:c}}})},e[30]=c,e[31]=R,e[32]=ie);let z=c!=null&&P,B;e[33]!==R||e[34]!==ie||e[35]!==z?(B={queryKey:R,queryFn:ie,enabled:z},e[33]=R,e[34]=ie,e[35]=z,e[36]=B):B=e[36];let V=re(B),H=P?V.data:void 0,U;if(e[37]!==F){let t=F?u(Pn):null;U=t==null?void 0:{thresholdCreditsPerMember:t.get(`low_limit_warning_threshold_credits_per_member`,Fn),averageMonthlyCreditsPerMember:t.get(`low_limit_warning_average_monthly_credits_per_member`,In),powerUserMonthlyCreditsPerMember:t.get(`low_limit_warning_power_user_monthly_credits_per_member`,Ln)},e[37]=F,e[38]=U}else U=e[38];let W=U,oe,se;e[39]!==r||e[40]!==E.isFetching||e[41]!==p||e[42]!==h||e[43]!==k?(oe=()=>{(h===!1&&p===`groups`||k===!1&&!E.isFetching&&p===`pending-requests`)&&r(ut(`workspace`),{replace:!0})},se=[r,E.isFetching,p,h,k],e[39]=r,e[40]=E.isFetching,e[41]=p,e[42]=h,e[43]=k,e[44]=oe,e[45]=se):(oe=e[44],se=e[45]),(0,En.useEffect)(oe,se);let G;e[46]===t?G=e[47]:(G=t.formatMessage($.browserTitle),e[46]=t,e[47]=G);let ce;e[48]===G?ce=e[49]:(ce=(0,Q.jsx)(Ge,{children:(0,Q.jsx)(`title`,{children:G})}),e[48]=G,e[49]=ce);let le=Fe,K;e[50]===t?K=e[51]:(K=t.formatMessage($.pageTitle),e[50]=t,e[51]=K);let ue=P?$.pageSubtitleWithEstimatedValues:$.pageSubtitle,de;e[52]===ue?de=e[53]:(de=(0,Q.jsx)(M,{...ue}),e[52]=ue,e[53]=de);let fe;e[54]!==A||e[55]!==O||e[56]!==r?(fe=e=>(0,Q.jsx)(`button`,{type:`button`,className:g(`min-h-[32px] border-b py-[10px] text-[14px] leading-5 whitespace-nowrap`,A===e?`text-token-text-primary border-current`:`text-token-text-tertiary hover:text-token-text-secondary cursor-pointer border-transparent`),onClick:()=>r(ut(e)),children:(0,Q.jsxs)(`span`,{className:`inline-flex items-center gap-1.5`,children:[(0,Q.jsx)(M,{...$[e]}),e===`pending-requests`&&O?(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsx)(xe,{color:`blue`,className:`shrink-0`}),(0,Q.jsx)(`span`,{className:`sr-only`,children:(0,Q.jsx)(M,{...$.pendingRequestsAvailable})})]}):null]})},e),e[54]=A,e[55]=O,e[56]=r,e[57]=fe):fe=e[57];let pe=L.map(fe),me;e[58]===pe?me=e[59]:(me=(0,Q.jsx)(`div`,{className:`flex items-end justify-between gap-4`,children:(0,Q.jsx)(`div`,{className:`flex items-center gap-4`,children:pe})}),e[58]=pe,e[59]=me);let he;e[60]!==le||e[61]!==K||e[62]!==de||e[63]!==me?(he=(0,Q.jsx)(le,{contentWidth:`medium`,title:K,subtitle:de,tabsHeader:me}),e[60]=le,e[61]=K,e[62]=de,e[63]=me,e[64]=he):he=e[64];let _e;e[65]!==A||e[66]!==H||e[67]!==W?(_e=A===`workspace`?(0,Q.jsx)(rn,{explainabilityContext:H,lowLimitWarningConfig:W}):null,e[65]=A,e[66]=H,e[67]=W,e[68]=_e):_e=e[68];let ye;e[69]!==A||e[70]!==H||e[71]!==W?(ye=A===`users`?(0,Q.jsx)(on,{explainabilityContext:H,lowLimitWarningConfig:W}):null,e[69]=A,e[70]=H,e[71]=W,e[72]=ye):ye=e[72];let be;e[73]!==A||e[74]!==H||e[75]!==W?(be=A===`groups`?(0,Q.jsx)(fn,{explainabilityContext:H,lowLimitWarningConfig:W}):null,e[73]=A,e[74]=H,e[75]=W,e[76]=be):be=e[76];let Se;e[77]===A?Se=e[78]:(Se=A===`pending-requests`?(0,Q.jsx)(Et,{}):null,e[77]=A,e[78]=Se);let Ce;e[79]!==_e||e[80]!==ye||e[81]!==be||e[82]!==Se?(Ce=(0,Q.jsx)(Pe,{contentWidth:`medium`,showSpinner:!1,children:(0,Q.jsxs)(`div`,{className:`pt-4 pb-8`,children:[_e,ye,be,Se]})}),e[79]=_e,e[80]=ye,e[81]=be,e[82]=Se,e[83]=Ce):Ce=e[83];let we;return e[84]!==ce||e[85]!==he||e[86]!==Ce?(we=(0,Q.jsxs)(Q.Fragment,{children:[ce,he,Ce]}),e[84]=ce,e[85]=he,e[86]=Ce,e[87]=we):we=e[87],we}function tn(e){return e.status===`pending`}function nn(e){return e.currentWorkspace}function rn(e){"use forget";let t=(0,Tn.c)(58),{explainabilityContext:n,lowLimitWarningConfig:r}=e,i=ae(),a=ne(),s=ee(),c=te(an),{role:l}=Ne(),[u,d]=(0,En.useState)(!1),f=s?.id,p;t[0]!==l||t[1]!==c?(p=l==null?c!=null&&ve(c.role):ve(l),t[0]=l,t[1]=c,t[2]=p):p=t[2];let m=p,h,g;t[3]===f?(h=t[4],g=t[5]):(h=[`workspace-spend-controls`,f],g=async()=>{if(!f)throw Error(`Workspace id is required`);return await o.safeGet(`/accounts/{account_id}/spend-controls/workspace`,{parameters:{path:{account_id:f}}})},t[3]=f,t[4]=h,t[5]=g);let _=!!f,y;t[6]!==h||t[7]!==g||t[8]!==_?(y={queryKey:h,queryFn:g,enabled:_},t[6]=h,t[7]=g,t[8]=_,t[9]=y):y=t[9];let b=re(y),S;t[10]===f?S=t[11]:(S=async e=>{if(!f)throw Error(`Workspace id is required`);return await o.safePost(`/accounts/{account_id}/settings/seat_type_credit_limits`,{parameters:{path:{account_id:f}},requestBody:wn(e)})},t[10]=f,t[11]=S);let C;t[12]!==a||t[13]!==f?(C=async e=>{if(!f)throw Error(`Workspace id is required`);a.setQueryData([`workspace-settings`,f],e),await a.invalidateQueries({queryKey:[`workspace-settings`,f]}),await a.invalidateQueries({queryKey:[`workspace-spend-controls`,f]}),await Qe({queryClient:a,workspaceId:f,refetchType:`all`})},t[12]=a,t[13]=f,t[14]=C):C=t[14];let w;t[15]!==S||t[16]!==C?(w={mutationFn:S,onSuccess:C},t[15]=S,t[16]=C,t[17]=w):w=t[17];let T=ie(w),D=b.data?.default_user_credit_limits,O;t[18]===D?O=t[19]:(O=pe(D),t[18]=D,t[19]=O);let k=O,A=typeof k==`number`?k:null,j=r!=null&&(u||A!=null&&A<r.thresholdCreditsPerMember)&&v(Nn)?r:void 0,N;t[20]!==i||t[21]!==T?(N=async e=>{try{await T.mutateAsync(e),E().success(i.formatMessage($.limitSaveSuccess),{hasCloseButton:!0}),d(!1)}catch{E().warning(i.formatMessage($.limitSaveError),{hasCloseButton:!0})}},t[20]=i,t[21]=T,t[22]=N):N=t[22];let P=N,F;t[23]!==u||t[24]!==P?(F=async e=>{u&&await P(e)},t[23]=u,t[24]=P,t[25]=F):F=t[25];let I=F,L;t[26]===Symbol.for(`react.memo_cache_sentinel`)?(L=(0,Q.jsx)(`div`,{className:`text-token-text-primary text-base leading-[26px] font-semibold tracking-[-0.32px]`,children:(0,Q.jsx)(M,{...$.workspaceDefaultLimitLabel})}),t[26]=L):L=t[26];let R;t[27]===Symbol.for(`react.memo_cache_sentinel`)?(R=(0,Q.jsxs)(`div`,{children:[L,(0,Q.jsx)(`div`,{className:`text-token-text-tertiary text-sm leading-5 tracking-[-0.15px]`,children:(0,Q.jsx)(M,{...$.workspaceDefaultLimitDescription})})]}),t[27]=R):R=t[27];let z;t[28]!==k||t[29]!==n||t[30]!==m||t[31]!==T||t[32]!==b.isError||t[33]!==b.isFetching||t[34]!==b.isLoading?(z=(0,Q.jsxs)(`div`,{className:`flex w-full items-start justify-between`,children:[R,b.isLoading||b.isFetching?(0,Q.jsx)(x,{className:`text-token-text-tertiary mt-1 h-4 w-4`}):(0,Q.jsxs)(`div`,{className:`flex flex-col items-end gap-0.5`,children:[(0,Q.jsx)(Ye,{explainabilityContext:n,limit:k}),(0,Q.jsx)(vn,{disabled:!m,testId:`workspace-usage-limits-admin-disabled-tooltip-trigger`,children:(0,Q.jsx)(_n,{disabled:!m||b.isError||T.isPending,onClick:()=>d(!0),label:k==null?$.addButton:$.editButton})})]})]}),t[28]=k,t[29]=n,t[30]=m,t[31]=T,t[32]=b.isError,t[33]=b.isFetching,t[34]=b.isLoading,t[35]=z):z=t[35];let B;t[36]!==j||t[37]!==A||t[38]!==n?(B=(0,Q.jsx)(Je,{className:`mt-4`,explainabilityContext:n,limit:A,lowLimitWarningConfig:j,variant:`workspace-default`}),t[36]=j,t[37]=A,t[38]=n,t[39]=B):B=t[39];let V;t[40]!==z||t[41]!==B?(V=(0,Q.jsxs)(`div`,{className:`border-token-border-default border-b pb-4`,children:[z,B]}),t[40]=z,t[41]=B,t[42]=V):V=t[42];let H;t[43]!==m||t[44]!==f?(H=(0,Q.jsx)(Ht,{workspaceId:f,canEdit:m}),t[43]=m,t[44]=f,t[45]=H):H=t[45];let U;t[46]!==V||t[47]!==H?(U=(0,Q.jsxs)(`section`,{children:[V,H]}),t[46]=V,t[47]=H,t[48]=U):U=t[48];let W;t[49]!==j||t[50]!==k||t[51]!==n||t[52]!==I||t[53]!==u?(W=u?(0,Q.jsx)(ct,{currentLimit:k,placeholder:``,onClose:()=>d(!1),onSave:I,renderLimitContext:e=>(0,Q.jsx)(qe,{explainabilityContext:n,limit:e,lowLimitWarningConfig:j})}):null,t[49]=j,t[50]=k,t[51]=n,t[52]=I,t[53]=u,t[54]=W):W=t[54];let oe;return t[55]!==U||t[56]!==W?(oe=(0,Q.jsxs)(Q.Fragment,{children:[U,W]}),t[55]=U,t[56]=W,t[57]=oe):oe=t[57],oe}function an(e){return e.currentWorkspace}function on(e){"use forget";let t=(0,Tn.c)(83),{explainabilityContext:n,lowLimitWarningConfig:r}=e,i=ae(),a=ne(),s=ee(),c=te(dn),{role:l}=Ne(),[u]=L(),d;t[0]===u?d=t[1]:(d=u.get(`query`)??``,t[0]=u,t[1]=d);let p=d,[m,h]=(0,En.useState)(0),[_,y]=(0,En.useState)(p),[b,S]=(0,En.useState)(p),C;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(C={field:`name`,direction:`ASC`},t[2]=C):C=t[2];let[w,T]=(0,En.useState)(C),[D,O]=(0,En.useState)(null),k=D!=null&&r!=null&&v(Nn)?r:void 0,A=s?.id,j;t[3]!==l||t[4]!==c?(j=l==null?c!=null&&ve(c.role):ve(l),t[3]=l,t[4]=c,t[5]=j):j=t[5];let N=j,P;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(P=f(e=>{h(0),S(e)},300,{leading:!1,trailing:!0}),t[6]=P):P=t[6];let F=P,I,R;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(I=()=>()=>F.cancel(),R=[F],t[7]=I,t[8]=R):(I=t[7],R=t[8]),(0,En.useEffect)(I,R);let B,V;t[9]===p?(B=t[10],V=t[11]):(B=()=>{h(0),y(p),S(p)},V=[p],t[9]=p,t[10]=B,t[11]=V),(0,En.useEffect)(B,V);let H=m*kn,U;t[12]!==b||t[13]!==w.direction||t[14]!==w.field||t[15]!==H||t[16]!==A?(U=nt(A,H,b,kn,w.field,w.direction),t[12]=b,t[13]=w.direction,t[14]=w.field,t[15]=H,t[16]=A,t[17]=U):U=t[17];let W;t[18]!==b||t[19]!==m||t[20]!==w.direction||t[21]!==w.field||t[22]!==A?(W=async()=>{if(!A)throw Error(`Workspace id is required`);return await o.safeGet(`/accounts/{account_id}/spend-controls/users`,{parameters:{path:{account_id:A},query:{offset:m*kn,limit:kn,query:b,order_by_field:w.field,order_by_direction:w.direction}}})},t[18]=b,t[19]=m,t[20]=w.direction,t[21]=w.field,t[22]=A,t[23]=W):W=t[23];let oe=!!A,se;t[24]!==U||t[25]!==W||t[26]!==oe?(se={queryKey:U,queryFn:W,enabled:oe,placeholderData:z},t[24]=U,t[25]=W,t[26]=oe,t[27]=se):se=t[27];let G=re(se),ce=G.data,le;t[28]===A?le=t[29]:(le=async e=>{let{userId:t,limit:n}=e;if(!A)throw Error(`Workspace id is required`);return await o.safePatch(`/accounts/{account_id}/users/{user_id}`,{parameters:{path:{account_id:A,user_id:t}},requestBody:{credit_limits:de(n)}})},t[28]=A,t[29]=le);let K;t[30]!==a||t[31]!==A?(K=async e=>{if(!A)return{previousCacheEntries:[]};await it({queryClient:a,workspaceId:A});let t=et({queryClient:a,workspaceId:A});return rt({queryClient:a,workspaceId:A,userId:e.userId,creditLimits:de(e.limit)}),{previousCacheEntries:t}},t[30]=a,t[31]=A,t[32]=K):K=t[32];let ue;t[33]===a?ue=t[34]:(ue=(e,t,n)=>{n!=null&&tt({queryClient:a,snapshot:n.previousCacheEntries})},t[33]=a,t[34]=ue);let fe;t[35]!==a||t[36]!==A?(fe=async(e,t)=>{A&&(await Qe({queryClient:a,workspaceId:A,refetchType:`active`}),rt({queryClient:a,workspaceId:A,userId:t.userId,creditLimits:de(t.limit),updateEffectiveHardCap:t.limit!=null}),await at({queryClient:a,workspaceId:A,refetchType:`active`}))},t[35]=a,t[36]=A,t[37]=fe):fe=t[37];let he;t[38]!==le||t[39]!==K||t[40]!==ue||t[41]!==fe?(he={mutationFn:le,onMutate:K,onError:ue,onSuccess:fe},t[38]=le,t[39]=K,t[40]=ue,t[41]=fe,t[42]=he):he=t[42];let ge=ie(he),_e;t[43]!==D||t[44]!==i||t[45]!==ge?(_e=async e=>{if(D!=null)try{await ge.mutateAsync({userId:D.id,limit:e}),E().success(i.formatMessage($.limitSaveSuccess),{hasCloseButton:!0}),O(null)}catch{E().warning(i.formatMessage($.limitSaveError),{hasCloseButton:!0})}},t[43]=D,t[44]=i,t[45]=ge,t[46]=_e):_e=t[46];let be=_e,xe;t[47]!==ce?.items||t[48]!==G.isError?(xe=G.isError?[]:ce?.items??[],t[47]=ce?.items,t[48]=G.isError,t[49]=xe):xe=t[49];let Se=xe,Ce=Math.ceil((ce?.total??0)/kn),we=A==null||ce===void 0&&(G.isPending||G.isFetching),Te=G.isPlaceholderData,Ee,De;t[50]!==Ce||t[51]!==m?(Ee=()=>{m>=Ce&&Ce!==0&&h(Math.max(Ce-1,0))},De=[Ce,m],t[50]=Ce,t[51]=m,t[52]=Ee,t[53]=De):(Ee=t[52],De=t[53]),(0,En.useEffect)(Ee,De);let Oe;t[54]===Symbol.for(`react.memo_cache_sentinel`)?(Oe=e=>{y(e.target.value),F(e.target.value)},t[54]=Oe):Oe=t[54];let ke;t[55]===i?ke=t[56]:(ke=i.formatMessage($.searchUsersPlaceholder),t[55]=i,t[56]=ke);let Ae;t[57]!==_||t[58]!==ke?(Ae=(0,Q.jsx)(`div`,{className:`mb-4.5 flex items-center justify-between`,children:(0,Q.jsx)(ye,{className:`w-full`,value:_,onChange:Oe,placeholder:ke,inputClassName:`w-full rounded-full! text-sm`})}),t[57]=_,t[58]=ke,t[59]=Ae):Ae=t[59];let je;t[60]!==n||t[61]!==N||t[62]!==i||t[63]!==we||t[64]!==Te||t[65]!==Se||t[66]!==Ce||t[67]!==m||t[68]!==w.direction||t[69]!==w.field||t[70]!==G.isError?(je=we?(0,Q.jsx)(`div`,{className:`flex min-h-[18rem] items-center justify-center`,children:(0,Q.jsx)(x,{})}):(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsxs)(`div`,{className:`relative`,children:[(0,Q.jsxs)(q.Root,{fixed:!0,size:`normal`,children:[(0,Q.jsxs)(`colgroup`,{children:[(0,Q.jsx)(`col`,{className:`w-[38%]`}),(0,Q.jsx)(`col`,{className:`w-[18%]`}),(0,Q.jsx)(`col`,{className:`w-[22%]`}),(0,Q.jsx)(`col`,{className:`w-[22%]`})]}),(0,Q.jsxs)(q.Header,{children:[(0,Q.jsx)(yn,{active:w.field===`name`,direction:w.direction,onSort:()=>{h(0),T(un)},children:(0,Q.jsx)(M,{...$.nameColumn})}),(0,Q.jsx)(yn,{active:w.field===`current_month_usage`,direction:w.direction,onSort:()=>{h(0),T(ln)},children:(0,Q.jsx)(M,{...$.usedThisMonthColumn})}),(0,Q.jsx)(yn,{active:w.field===`effective_hard_cap_limit`,direction:w.direction,onSort:()=>{h(0),T(cn)},children:(0,Q.jsx)(M,{...$.currentLimitColumn})}),(0,Q.jsx)(yn,{active:w.field===`override_hard_cap_limit`,direction:w.direction,onSort:()=>{h(0),T(sn)},children:(0,Q.jsx)(M,{...$.overrideLimitColumn})})]}),(0,Q.jsxs)(q.Body,{className:g(Te&&`pointer-events-none opacity-50`),children:[G.isError?(0,Q.jsx)(q.Row,{className:`[&>td]:py-3`,children:(0,Q.jsx)(q.Cell,{colSpan:4,children:(0,Q.jsx)(`div`,{className:`text-token-text-tertiary`,children:(0,Q.jsx)(M,{...$.usersLoadError})})})}):null,Se.map(e=>{let t=e.name||e.email||e.id,r=e.email||i.formatMessage($.noEmail),a=pe(e.override_credit_limits);return(0,Q.jsxs)(q.Row,{className:`[&>td]:py-3`,children:[(0,Q.jsxs)(q.Cell,{divClassName:`min-h-[40px] min-w-0 items-center`,children:[(0,Q.jsx)(`div`,{className:`relative shrink-0 pe-3`,children:(0,Q.jsx)(Ue,{userName:t,isScimManaged:e.is_scim_managed})}),(0,Q.jsxs)(`div`,{className:`min-w-0`,children:[(0,Q.jsx)(`div`,{className:`min-w-0 truncate`,title:t,children:t}),(0,Q.jsx)(`div`,{className:`text-body-small-regular text-token-text-secondary truncate`,title:r,children:r})]})]}),(0,Q.jsx)(q.Cell,{children:(0,Q.jsx)(M,{...$.creditValue,values:{limit:i.formatNumber(e.current_month_usage??0,{maximumFractionDigits:1})}})}),(0,Q.jsx)(q.Cell,{children:(0,Q.jsx)(xn,{effectiveHardCap:e.effective_hard_cap,inheritedHardCap:e.inherited_hard_cap,explainabilityContext:n})}),(0,Q.jsx)(q.Cell,{children:(0,Q.jsxs)(`div`,{className:`flex flex-col items-start gap-0.5`,children:[a==null?(0,Q.jsx)(`span`,{className:`text-token-text-secondary`,children:(0,Q.jsx)(M,{...$.noOverride})}):(0,Q.jsx)(Ye,{explainabilityContext:n,limit:a}),(0,Q.jsx)(vn,{disabled:!N,testId:`${e.id}-usage-limits-admin-disabled-tooltip-trigger`,children:(0,Q.jsx)(_n,{disabled:!N||Te,onClick:()=>O(e),label:a==null?$.addButton:$.editButton})})]})})]},e.id)}),!G.isError&&Se.length===0?(0,Q.jsx)(q.Row,{className:`[&>td]:py-3`,children:(0,Q.jsx)(q.Cell,{colSpan:4,children:(0,Q.jsx)(`div`,{className:`text-token-text-tertiary`,children:(0,Q.jsx)(M,{...$.noUsersFound})})})}):null]})]}),Te?(0,Q.jsx)(`div`,{className:`pointer-events-none absolute inset-0 flex items-center justify-center`,children:(0,Q.jsx)(x,{className:`text-token-text-tertiary h-5 w-5`})}):null]}),(0,Q.jsx)(`div`,{className:`relative mt-4 min-h-[20px]`,children:Ce>1?(0,Q.jsx)(`div`,{className:`absolute start-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 justify-center`,children:(0,Q.jsx)(me,{currentPage:m,onChangeIndex:h,length:Ce})}):null})]}),t[60]=n,t[61]=N,t[62]=i,t[63]=we,t[64]=Te,t[65]=Se,t[66]=Ce,t[67]=m,t[68]=w.direction,t[69]=w.field,t[70]=G.isError,t[71]=je):je=t[71];let Me;t[72]!==Ae||t[73]!==je?(Me=(0,Q.jsxs)(`section`,{children:[Ae,je]}),t[72]=Ae,t[73]=je,t[74]=Me):Me=t[74];let Pe;t[75]!==k||t[76]!==D||t[77]!==n||t[78]!==be?(Pe=D==null?null:(0,Q.jsx)(ct,{allowUnlimited:!0,currentLimit:pe(D.override_credit_limits),getValidationResult:void 0,placeholder:``,onClose:()=>O(null),onSave:be,renderLimitContext:e=>(0,Q.jsx)(qe,{explainabilityContext:n,limit:e,lowLimitWarningConfig:k})}),t[75]=k,t[76]=D,t[77]=n,t[78]=be,t[79]=Pe):Pe=t[79];let Fe;return t[80]!==Me||t[81]!==Pe?(Fe=(0,Q.jsxs)(Q.Fragment,{children:[Me,Pe]}),t[80]=Me,t[81]=Pe,t[82]=Fe):Fe=t[82],Fe}function sn(e){return bn(e,`override_hard_cap_limit`,`DESC`)}function cn(e){return bn(e,`effective_hard_cap_limit`,`DESC`)}function ln(e){return bn(e,`current_month_usage`,`DESC`)}function un(e){return bn(e,`name`,`ASC`)}function dn(e){return e.currentWorkspace}function fn(e){"use forget";let t=(0,Tn.c)(52),{explainabilityContext:n,lowLimitWarningConfig:r}=e,i=ae(),a=ne(),s=ee(),c=te(gn),{role:l}=Ne(),[u,d]=(0,En.useState)(``),f;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(f={field:`group_name`,direction:`ASC`},t[0]=f):f=t[0];let[p,m]=(0,En.useState)(f),[h,g]=(0,En.useState)(null),_=h!=null&&r!=null&&v(Nn)?r:void 0,y=s?.id,b;t[1]!==l||t[2]!==c?(b=l==null?c!=null&&ve(c.role):ve(l),t[1]=l,t[2]=c,t[3]=b):b=t[3];let S=b,C,w;t[4]===y?(C=t[5],w=t[6]):(C=[`group-spend-controls`,y],w=async()=>{if(!y)throw Error(`Workspace id is required`);return await o.safeGet(`/accounts/{account_id}/spend-controls/groups`,{parameters:{path:{account_id:y}}})},t[4]=y,t[5]=C,t[6]=w);let T=!!y,D;t[7]!==C||t[8]!==w||t[9]!==T?(D={queryKey:C,queryFn:w,enabled:T},t[7]=C,t[8]=w,t[9]=T,t[10]=D):D=t[10];let O=re(D),k;t[11]===y?k=t[12]:(k=async e=>{let{groupId:t,limit:n}=e;if(!y)throw Error(`Workspace id is required`);return await o.safePatch(`/accounts/{account_id}/groups/{group_id}/spend-controls`,{parameters:{path:{account_id:y,group_id:t}},requestBody:{default_user_credit_limits:de(n)}})},t[11]=y,t[12]=k);let A;t[13]!==a||t[14]!==y?(A=async()=>{y&&(await a.invalidateQueries({queryKey:[`group-spend-controls`,y]}),await Qe({queryClient:a,workspaceId:y,refetchType:`all`}))},t[13]=a,t[14]=y,t[15]=A):A=t[15];let j;t[16]!==k||t[17]!==A?(j={mutationFn:k,onSuccess:A},t[16]=k,t[17]=A,t[18]=j):j=t[18];let N=ie(j),P=O.data,F,I;if(t[19]!==h||t[20]!==n||t[21]!==u||t[22]!==O.isFetching||t[23]!==O.isPending||t[24]!==P||t[25]!==S||t[26]!==i||t[27]!==p||t[28]!==N||t[29]!==y){let e=Array.isArray(P)?P:P?.items??[],r=y==null||O.isPending||O.isFetching,a=u.trim().toLowerCase(),o=a===``?e:e.filter(e=>e.group_name.toLowerCase().includes(a)),s;t[32]===p?s=t[33]:(s=(e,t)=>{let n;if(p.field===`group_name`)n=e.group_name.localeCompare(t.group_name);else if(p.field===`num_members`)n=e.num_members-t.num_members;else{let r=pe(e.default_user_credit_limits),i=pe(t.default_user_credit_limits);if(r==null)return i==null?0:1;if(i==null)return-1;let a=[r===ue,typeof r==`number`?r:0],o=[i===ue,typeof i==`number`?i:0];n=Number(a[0])-Number(o[0])||a[1]-o[1]}return p.direction===`ASC`?n:-n},t[32]=p,t[33]=s);let c=o.toSorted(s),l;t[34]!==h||t[35]!==i||t[36]!==N?(l=async e=>{if(h!=null)try{await N.mutateAsync({groupId:h.group_id,limit:e}),E().success(i.formatMessage($.limitSaveSuccess),{hasCloseButton:!0}),g(null)}catch{E().warning(i.formatMessage($.limitSaveError),{hasCloseButton:!0})}},t[34]=h,t[35]=i,t[36]=N,t[37]=l):l=t[37],F=l;let f;t[38]===Symbol.for(`react.memo_cache_sentinel`)?(f=e=>d(e.target.value),t[38]=f):f=t[38];let _;t[39]===i?_=t[40]:(_=i.formatMessage($.searchGroupsPlaceholder),t[39]=i,t[40]=_);let v;t[41]!==u||t[42]!==_?(v=(0,Q.jsx)(`div`,{className:`mb-4.5 flex items-center justify-between`,children:(0,Q.jsx)(ye,{className:`w-full`,value:u,onChange:f,placeholder:_,inputClassName:`w-full rounded-full! text-sm`})}),t[41]=u,t[42]=_,t[43]=v):v=t[43],I=(0,Q.jsxs)(`section`,{children:[v,r?(0,Q.jsx)(`div`,{className:`flex min-h-[18rem] items-center justify-center`,children:(0,Q.jsx)(x,{})}):(0,Q.jsxs)(q.Root,{fixed:!0,size:`normal`,children:[(0,Q.jsxs)(`colgroup`,{children:[(0,Q.jsx)(`col`,{className:`w-[34%]`}),(0,Q.jsx)(`col`,{className:`w-[27%]`}),(0,Q.jsx)(`col`,{className:`w-[39%]`})]}),(0,Q.jsxs)(q.Header,{children:[(0,Q.jsx)(yn,{active:p.field===`group_name`,direction:p.direction,onSort:()=>m(hn),children:(0,Q.jsx)(M,{...$.groupColumn})}),(0,Q.jsx)(yn,{active:p.field===`num_members`,direction:p.direction,onSort:()=>m(mn),children:(0,Q.jsx)(M,{...$.membersColumn})}),(0,Q.jsx)(yn,{active:p.field===`default_limit`,direction:p.direction,onSort:()=>m(pn),children:(0,Q.jsx)(M,{...$.defaultMonthlyLimitColumn})})]}),(0,Q.jsxs)(q.Body,{children:[c.map(e=>{let t=pe(e.default_user_credit_limits);return(0,Q.jsxs)(q.Row,{className:`[&>td]:py-3`,children:[(0,Q.jsxs)(q.Cell,{divClassName:`min-h-[40px] min-w-0 items-center`,children:[(0,Q.jsx)(`div`,{className:`bg-token-bg-tertiary text-token-text-secondary me-3 flex size-8 shrink-0 items-center justify-center rounded-full`,children:(0,Q.jsx)(Oe,{className:`icon-sm`})}),(0,Q.jsx)(R,{className:`min-w-0 truncate hover:underline focus-visible:underline focus-visible:outline-none`,to:`/admin/groups/${e.group_id}`,title:e.group_name,children:e.group_name})]}),(0,Q.jsx)(q.Cell,{children:i.formatNumber(e.num_members)}),(0,Q.jsx)(q.Cell,{children:(0,Q.jsxs)(`div`,{className:`flex flex-col items-start gap-0.5`,children:[(0,Q.jsx)(Ye,{explainabilityContext:n,limit:t}),(0,Q.jsx)(_n,{disabled:!S,onClick:()=>g(e),label:t==null?$.addButton:$.editButton})]})})]},e.group_id)}),c.length===0?(0,Q.jsx)(q.Row,{className:`[&>td]:py-3`,children:(0,Q.jsx)(q.Cell,{colSpan:3,children:(0,Q.jsx)(`div`,{className:`text-token-text-tertiary`,children:(0,Q.jsx)(M,{...$.noGroupsFound})})})}):null]})]})]}),t[19]=h,t[20]=n,t[21]=u,t[22]=O.isFetching,t[23]=O.isPending,t[24]=P,t[25]=S,t[26]=i,t[27]=p,t[28]=N,t[29]=y,t[30]=F,t[31]=I}else F=t[30],I=t[31];let L;t[44]!==_||t[45]!==h||t[46]!==n||t[47]!==F?(L=h==null?null:(0,Q.jsx)(ct,{allowUnlimited:!0,currentLimit:pe(h.default_user_credit_limits),getValidationResult:void 0,placeholder:``,onClose:()=>g(null),onSave:F,renderLimitContext:e=>(0,Q.jsx)(qe,{explainabilityContext:n,limit:e,lowLimitWarningConfig:_})}),t[44]=_,t[45]=h,t[46]=n,t[47]=F,t[48]=L):L=t[48];let z;return t[49]!==I||t[50]!==L?(z=(0,Q.jsxs)(Q.Fragment,{children:[I,L]}),t[49]=I,t[50]=L,t[51]=z):z=t[51],z}function pn(e){return bn(e,`default_limit`,`DESC`)}function mn(e){return bn(e,`num_members`,`DESC`)}function hn(e){return bn(e,`group_name`,`ASC`)}function gn(e){return e.currentWorkspace}function _n(e){"use forget";let t=(0,Tn.c)(6),{disabled:n,label:r,onClick:i}=e,a;t[0]===r?a=t[1]:(a=(0,Q.jsx)(M,{...r}),t[0]=r,t[1]=a);let o;return t[2]!==n||t[3]!==i||t[4]!==a?(o=(0,Q.jsx)(`button`,{type:`button`,className:`disabled:text-token-text-tertiary text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline focus-visible:underline focus-visible:outline-none disabled:cursor-not-allowed disabled:no-underline dark:text-blue-400 dark:hover:text-blue-300`,disabled:n,onClick:i,children:a}),t[2]=n,t[3]=i,t[4]=a,t[5]=o):o=t[5],o}function vn(e){"use forget";let t=(0,Tn.c)(6),{children:n,disabled:r,testId:i}=e;if(!r){let e;return t[0]===n?e=t[1]:(e=(0,Q.jsx)(Q.Fragment,{children:n}),t[0]=n,t[1]=e),e}let a;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Q.jsx)(M,{...$.adminDisabledTooltip}),t[2]=a):a=t[2];let o;return t[3]!==n||t[4]!==i?(o=(0,Q.jsx)(h,{label:a,children:(0,Q.jsx)(`span`,{className:`inline-flex`,"data-testid":i,children:n})}),t[3]=n,t[4]=i,t[5]=o):o=t[5],o}function yn(e){"use forget";let t=(0,Tn.c)(7),{active:n,children:r,direction:i,onSort:a}=e,o=i===`ASC`?Ce:we,s;t[0]!==o||t[1]!==n?(s=n?(0,Q.jsx)(o,{"aria-hidden":`true`,className:`icon-xs text-token-interactive-icon-tertiary-default`}):null,t[0]=o,t[1]=n,t[2]=s):s=t[2];let c;return t[3]!==r||t[4]!==a||t[5]!==s?(c=(0,Q.jsx)(q.HeaderCell,{children:(0,Q.jsxs)(`button`,{type:`button`,className:`flex items-center gap-1 text-start`,onClick:a,children:[r,s]})}),t[3]=r,t[4]=a,t[5]=s,t[6]=c):c=t[6],c}function bn(e,t,n){return{field:t,direction:e.field===t?e.direction===`ASC`?`DESC`:`ASC`:n}}function xn(e){"use forget";let t=(0,Tn.c)(10),{effectiveHardCap:n,inheritedHardCap:r,explainabilityContext:i}=e;if(n==null||n.source.kind===`role_based_personal_budget`){let e;return t[0]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Q.jsx)(Ye,{limit:null}),t[0]=e):e=t[0],e}let a=r?.source.kind===`role_based_personal_budget`?null:r,o;t[1]!==n.source||t[2]!==a?(o=Sn(n.source,a),t[1]=n.source,t[2]=a,t[3]=o):o=t[3];let s=o,c;t[4]===n.limit?c=t[5]:(c=pe([n.limit]),t[4]=n.limit,t[5]=c);let l;return t[6]!==i||t[7]!==c||t[8]!==s?(l=(0,Q.jsx)(Ye,{creditValueTooltip:s,explainabilityContext:i,limit:c}),t[6]=i,t[7]=c,t[8]=s,t[9]=l):l=t[9],l}function Sn(e,t){switch(e.kind){case`individual_override`:return{label:(0,Q.jsx)(M,{...$.userOverrideHardCapTooltipTitle}),secondaryLabel:(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsx)(M,{...$.userOverrideHardCapTooltipDescription}),t==null?null:(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsx)(`br`,{}),(0,Q.jsx)(Cn,{inheritedHardCap:t})]})]})};case`group_default`:return{label:(0,Q.jsx)(M,{...$.groupDefaultHardCapTooltipTitle,values:{groupName:e.group_name}}),secondaryLabel:(0,Q.jsx)(M,{...$.groupDefaultHardCapTooltipDescription})};case`workspace_default`:return{label:(0,Q.jsx)(M,{...$.workspaceDefaultHardCapTooltipTitle}),secondaryLabel:(0,Q.jsx)(M,{...$.workspaceDefaultHardCapTooltipDescription,values:{seatType:e.seat_type===Dn?(0,Q.jsx)(M,{...$.chatgptSeatLabel}):(0,Q.jsx)(M,{...$.codexSeatLabel})}})}}}function Cn(e){"use forget";let t=(0,Tn.c)(10),{inheritedHardCap:n}=e,r;t[0]===n.limit?r=t[1]:(r=pe([n.limit]),t[0]=n.limit,t[1]=r);let i=r;switch(n.source.kind){case`group_default`:{let e;return t[2]!==n.limit||t[3]!==n.source.group_name||t[4]!==i?(e=i===`unlimited_platform_max`?(0,Q.jsx)(M,{...$.groupUnlimitedOutsideOverride,values:{groupName:n.source.group_name}}):(0,Q.jsx)(M,{...$.groupLimitOutsideOverride,values:{groupName:n.source.group_name,limit:n.limit.limit}}),t[2]=n.limit,t[3]=n.source.group_name,t[4]=i,t[5]=e):e=t[5],e}case`workspace_default`:{let e;return t[6]!==n.limit||t[7]!==n.source.seat_type||t[8]!==i?(e=i===`unlimited_platform_max`?(0,Q.jsx)(M,{...$.workspaceUnlimitedOutsideOverride,values:{seatType:n.source.seat_type===Dn?(0,Q.jsx)(M,{...$.chatgptSeatLabel}):(0,Q.jsx)(M,{...$.codexSeatLabel})}}):(0,Q.jsx)(M,{...$.workspaceLimitOutsideOverride,values:{limit:n.limit.limit,seatType:n.source.seat_type===Dn?(0,Q.jsx)(M,{...$.chatgptSeatLabel}):(0,Q.jsx)(M,{...$.codexSeatLabel})}}),t[6]=n.limit,t[7]=n.source.seat_type,t[8]=i,t[9]=e):e=t[9],e}case`role_based_personal_budget`:return null;case`individual_override`:return null}}function wn(e){let t=de(e);return{seat_type_credit_limits:{[Dn]:t,[On]:t}}}var Tn,En,Q,Dn,On,kn,An,jn,Mn,Nn,Pn,Fn,In,Ln,$,Rn=e((()=>{Tn=V(),Le(),je(),ce(),Vt(),_(),He(),G(),ot(),Ae(),y(),H(),Ee(),ke(),Te(),he(),se(),c(),Be(),d(),w(),b(),r(),T(),C(),We(),B(),m(),i(),En=t(I()),F(),P(),st(),Ke(),fe(),le(),Xt(),$e(),lt(),Ie(),Q=O(),Dn=`default`,On=`usage_based`,kn=25,An=50,jn=`3909937021`,Mn=`3002192639`,Nn=`3581456201`,Pn=`3421588596`,Fn=400,In=1250,Ln=5e3,$=A({addButton:{id:`admin.usageLimits.addButton`,defaultMessage:`Add`},adminDisabledTooltip:{id:`admin.usageLimits.adminDisabledTooltip`,defaultMessage:`Contact a workspace admin to change this setting.`},browserTitle:{id:`admin.usageLimits.browserTitle`,defaultMessage:`ChatGPT - Admin | Usage limits`},chatgptSeatLabel:{id:`admin.usageLimits.chatgptSeatLabel`,defaultMessage:`ChatGPT seat`},codexSeatLabel:{id:`admin.usageLimits.codexSeatLabel`,defaultMessage:`Codex seat`},currentLimitColumn:{id:`admin.usageLimits.currentLimitColumn`,defaultMessage:`Current monthly limit`},defaultMonthlyLimitColumn:{id:`admin.usageLimits.defaultMonthlyLimitColumn`,defaultMessage:`Default monthly limit`},editButton:{id:`admin.usageLimits.editButton`,defaultMessage:`Edit`},groupColumn:{id:`admin.usageLimits.groupColumn`,defaultMessage:`Group name`},membersColumn:{id:`admin.usageLimits.membersColumn`,defaultMessage:`Members`},groups:{id:`admin.usageLimits.groupsTab`,defaultMessage:`Groups`},creditValue:{id:`admin.usageLimits.creditValue`,defaultMessage:`{limit} credits`},limitSaveError:{id:`admin.usageLimits.limitSaveError`,defaultMessage:`Unable to update the usage limit.`},limitSaveSuccess:{id:`admin.usageLimits.limitSaveSuccess`,defaultMessage:`Usage limit updated`},nameColumn:{id:`admin.usageLimits.nameColumn`,defaultMessage:`Name`},noEmail:{id:`admin.usageLimits.noEmail`,defaultMessage:`No email`},noGroupsFound:{id:`admin.usageLimits.noGroupsFound`,defaultMessage:`No groups found.`},noOverride:{id:`admin.usageLimits.noOverride`,defaultMessage:`No override`},noUsersFound:{id:`admin.usageLimits.noUsersFound`,defaultMessage:`No users found.`},usersLoadError:{id:`admin.usageLimits.usersLoadError`,defaultMessage:`Unable to load users. Narrow your search or try again.`},overrideLimitColumn:{id:`admin.usageLimits.overrideLimitColumn`,defaultMessage:`Override limit`},pageSubtitle:{id:`admin.usageLimits.pageSubtitle`,defaultMessage:`Set monthly credit limits for the workspace, individual users, and groups.`},pageSubtitleWithEstimatedValues:{id:`admin.usageLimits.pageSubtitleWithEstimatedValues`,defaultMessage:`Set monthly credit limits for workspace, individual usage and groups. Dollar amounts are estimated based on credit rate.`},pageTitle:{id:`admin.usageLimits.pageTitle`,defaultMessage:`Usage limits`},usageLimitsMovedToAdminConsoleTitle:{id:`admin.usageLimits.adminConsoleMovedScreen.title`,defaultMessage:`Usage limits aren’t available here`},usageLimitsMovedToAdminConsoleBody:{id:`admin.usageLimits.adminConsoleMovedScreen.body`,defaultMessage:`To view or manage usage limits for this workspace, go to the Admin Console.`},usageLimitsMovedToAdminConsoleAction:{id:`admin.usageLimits.adminConsoleMovedScreen.action`,defaultMessage:`Go to Admin Console`},"pending-requests":{id:`admin.usageLimits.pendingRequestsTab`,defaultMessage:`Pending requests`},pendingRequestsAvailable:{id:`admin.usageLimits.pendingRequestsAvailable`,defaultMessage:`has pending requests`},searchGroupsPlaceholder:{id:`admin.usageLimits.searchGroupsPlaceholder`,defaultMessage:`Search by group name`},searchUsersPlaceholder:{id:`admin.usageLimits.searchUsersPlaceholder`,defaultMessage:`Search by user's name`},usedThisMonthColumn:{id:`admin.usageLimits.usedThisResetPeriodColumn`,defaultMessage:`Used this reset period`},users:{id:`admin.usageLimits.usersTab`,defaultMessage:`Users`},workspace:{id:`admin.usageLimits.workspaceTab`,defaultMessage:`Workspace`},workspaceDefaultLimitLabel:{id:`admin.usageLimits.workspaceDefaultLimitLabel`,defaultMessage:`Default monthly limit`},workspaceDefaultLimitDescription:{id:`admin.usageLimits.workspaceDefaultLimitDescription`,defaultMessage:`Applies to each member unless a group or user override is more specific.`},groupDefaultHardCapTooltipDescription:{id:`admin.usageLimits.groupDefaultHardCapTooltipDescription`,defaultMessage:`This is the active limit after evaluating the user’s available limits.`},groupDefaultHardCapTooltipTitle:{id:`admin.usageLimits.groupDefaultHardCapTooltipTitle`,defaultMessage:`Inherited from group: {groupName}`},groupLimitOutsideOverride:{id:`admin.usageLimits.groupLimitOutsideOverride`,defaultMessage:`Outside this override, this user inherits {limit, number} credits from {groupName}.`},groupUnlimitedOutsideOverride:{id:`admin.usageLimits.groupUnlimitedOutsideOverride`,defaultMessage:`Outside this override, this user inherits unlimited usage from {groupName}.`},userOverrideHardCapTooltipDescription:{id:`admin.usageLimits.userOverrideHardCapTooltipDescription`,defaultMessage:`This explicit per-user override currently determines the limit.`},userOverrideHardCapTooltipTitle:{id:`admin.usageLimits.userOverrideHardCapTooltipTitle`,defaultMessage:`Set by this user’s limit override`},workspaceDefaultHardCapTooltipDescription:{id:`admin.usageLimits.workspaceDefaultHardCapTooltipDescription`,defaultMessage:`This user inherits the {seatType} workspace default.`},workspaceDefaultHardCapTooltipTitle:{id:`admin.usageLimits.workspaceDefaultHardCapTooltipTitle`,defaultMessage:`Inherited from workspace default`},workspaceLimitOutsideOverride:{id:`admin.usageLimits.workspaceLimitOutsideOverride`,defaultMessage:`Outside this override, this user inherits the {limit, number} credit {seatType} workspace default.`},workspaceUnlimitedOutsideOverride:{id:`admin.usageLimits.workspaceUnlimitedOutsideOverride`,defaultMessage:`Outside this override, this user inherits the unlimited {seatType} workspace default.`}})})),zn,Bn,Vn,Hn=e((()=>{P(),zn=V(),Rn(),Ze(),Bn=O(),Vn=k(function(){"use forget";let e=(0,zn.c)(1);Xe();let t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Bn.jsx)(Qt,{}),e[0]=t):t=e[0],t})}));export{Hn as n,Vn as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Az as n,
+    BU as r,
+    C_ as i,
+    Cw as a,
+    F7 as o,
+    JT as s,
+    Mz as c,
+    QG as l,
+    Qnt as u,
+    R1 as d,
+    S_ as f,
+    Tw as p,
+    X5 as m,
+    Xy as h,
+    Y5 as g,
+    YT as _,
+    Ynt as v,
+    Z1 as ee,
+    Zy as y,
+    eK as b,
+    jz as x,
+    tK as S,
+    trt as C,
+    vR as w,
+    xR as te,
+    z7 as T,
+    zU as E
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    At as D,
+    Bn as O,
+    Ht as k,
+    Ln as A,
+    Lt as j,
+    N as ne,
+    Nn as M,
+    Nt as N,
+    O as re,
+    Q as P,
+    Rn as F,
+    Vn as I,
+    Vt as L,
+    it as R,
+    p as ie,
+    q as z,
+    s as B,
+    wn as V,
+    zn as ae
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Bjt as H,
+    IHn as U,
+    LHn as W,
+    RHn as oe,
+    Sdn as se,
+    TCn as G,
+    U8t as ce,
+    dH as le,
+    dKn as K,
+    fH as ue,
+    gH as de,
+    hH as fe,
+    mH as pe,
+    nw as me,
+    rw as he,
+    uH as ge,
+    uKn as _e,
+    xCn as ve,
+    xdn as ye,
+    z8t as be,
+    zjt as xe
+} from "./conversation-small-nmt18uiom3b14vca.js";
+import {
+    Ax as Se,
+    Kl as Ce,
+    Ol as we,
+    hm as Te,
+    kl as Ee,
+    kx as De,
+    mm as Oe,
+    ql as ke
+} from "./30901919-niqyapppecmq5jkn.js";
+import {
+    Ev as Ae,
+    Tv as q,
+    as as je,
+    cs as Me,
+    dl as Ne,
+    es as Pe,
+    ns as Fe,
+    os as Ie,
+    ul as Le
+} from "./c2675c8c-h5ybkhdzcoblzzdu.js";
+import {
+    f_ as Re,
+    p_ as ze
+} from "./8b34dbc2-ojcl97ddvu2212q0.js";
+import {
+    n as Be,
+    t as Ve
+} from "./e18c46cf-gso23y5yqg4kmxo6.js";
+import {
+    n as He,
+    t as Ue
+} from "./18a8b3b4-h5oakx6qki6vuxyj.js";
+import {
+    n as We,
+    t as Ge
+} from "./9f2e6d33-h33rm8r24h08gyr1.js";
+import {
+    i as Ke,
+    n as qe,
+    r as Je,
+    t as Ye
+} from "./e6141aca-j4t3r5a9dq2k26sz.js";
+import {
+    r as Xe,
+    t as Ze
+} from "./8c6976e5-izsecvkl5ajbj9v5.js";
+import {
+    a as Qe,
+    i as $e,
+    n as et,
+    o as tt,
+    r as nt,
+    s as rt,
+    t as it
+} from "./0bd66cc9-ja41shgipc3umets.js";
+import {
+    i as at,
+    r as ot
+} from "./af584902-cxhub1ai3ltfwk9v.js";
+import {
+    r as st,
+    t as ct
+} from "./ef852af5-gabs4ppzmu6q8zzm.js";
+import {
+    i as lt,
+    n as ut,
+    r as dt,
+    t as ft
+} from "./543878e5-m9p63zgxnk4c1a4b.js";
+
+function pt(e) {
+    return [`workspace-admin-requests`, e]
+}
+
+function mt(e) {
+    return [`workspace-admin-requests-indicator`, e]
+}
+async function ht(e, {
+    fetchAllPages: t = !0,
+    pageSize: n = zt
+} = {}) {
+    let r, i = [];
+    do {
+        let t = await o.safeGet(`/accounts/{account_id}/admin/workspace_admin_requests`, {
+            parameters: {
+                path: {
+                    account_id: e
+                },
+                query: {
+                    limit: n,
+                    ...r == null ? {} : {
+                        cursor: r
+                    }
+                }
+            }
+        });
+        i.push(...t.items), r = t.cursor ?? void 0
+    } while (t && r != null);
+    return {
+        items: i,
+        ...r == null ? {} : {
+            cursor: r
+        }
+    }
+}
+
+function gt(e) {
+    return e.payloads.find(e => e.kind === `spend_limit`) ?? e.payloads[0] ?? null
+}
+
+function _t(e) {
+    let t = gt(e)?.update;
+    return t != null && `requested_limit` in t ? t.requested_limit ?? null : null
+}
+
+function vt(e) {
+    let t = _t(e);
+    return t == null ? `` : String(t)
+}
+
+function yt(e) {
+    return {
+        value: vt(e),
+        dirty: !1
+    }
+}
+
+function bt(e) {
+    let t = e.trim();
+    if (!/^\d+$/.test(t)) return null;
+    let n = Number(t);
+    return !Number.isSafeInteger(n) || n > Bt ? null : n
+}
+
+function xt(e, t) {
+    return e.payloads.map((e, n) => n === 0 ? {
+        ...e,
+        update: {
+            kind: `increase_with_amount`,
+            requested_limit: t
+        }
+    } : e)
+}
+
+function St(e) {
+    return gt(e)?.original_limit_snapshot ?? null
+}
+
+function Ct(e, t) {
+    return t == null ? e.formatMessage(Y.notSet) : e.formatMessage(Y.creditsValue, {
+        credits: e.formatNumber(t)
+    })
+}
+
+function wt(e) {
+    return e.requester_name || e.requester_email || e.requester_account_user_id
+}
+
+function Tt(e) {
+    return e.requester_email || e.requester_account_user_id
+}
+
+function Et() {
+    "use forget";
+    let e = (0, Lt.c)(70),
+        t = ae(),
+        n;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (n = E(), e[0] = n) : n = e[0];
+    let r = n,
+        i = ne(),
+        a = ee(),
+        s = te(Pt),
+        {
+            role: c
+        } = Ne(),
+        l = a?.id,
+        u;
+    e[1] !== c || e[2] !== s ? (u = c == null ? s != null && ve(s.role) : ve(c), e[1] = c, e[2] = s, e[3] = u) : u = e[3];
+    let d = u,
+        [f, p] = (0, Rt.useState)(``),
+        [m, h] = (0, Rt.useState)(Nt),
+        g;
+    e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (g = {}, e[4] = g) : g = e[4];
+    let [_, v] = (0, Rt.useState)(g), y;
+    e[5] === l ? y = e[6] : (y = pt(l), e[5] = l, e[6] = y);
+    let b;
+    e[7] === l ? b = e[8] : (b = async () => {
+        if (!l) throw Error(`Workspace id is required`);
+        return await ht(l)
+    }, e[7] = l, e[8] = b);
+    let S = !!l,
+        C;
+    e[9] !== y || e[10] !== b || e[11] !== S ? (C = {
+        queryKey: y,
+        queryFn: b,
+        enabled: S,
+        staleTime: 0,
+        refetchOnMount: `always`,
+        refetchOnWindowFocus: `always`
+    }, e[9] = y, e[10] = b, e[11] = S, e[12] = C) : C = e[12];
+    let w = re(C);
+    w.data?.items;
+    let T;
+    e[13] === w.data?.items ? T = e[14] : (T = w.data?.items ?? [], e[13] = w.data?.items, e[14] = T);
+    let D;
+    e[15] === T ? D = e[16] : (D = T.filter(Mt), e[15] = T, e[16] = D);
+    let O = D,
+        k, A;
+    e[17] === O ? (k = e[18], A = e[19]) : (A = () => {
+        let e = new Set(O.map(jt));
+        h(t => {
+            let n = new Set(Array.from(t).filter(t => e.has(t)));
+            return n.size === t.size ? t : n
+        })
+    }, k = [O], e[17] = O, e[18] = k, e[19] = A), (0, Rt.useEffect)(A, k);
+    let j, N;
+    e[20] === O ? (j = e[21], N = e[22]) : (j = () => {
+        let e = new Set(O.map(At));
+        v(t => {
+            let n = !1,
+                r = {};
+            for (let e of O) {
+                let i = t[e.id];
+                r[e.id] = i?.dirty ? i : yt(e), n ||= r[e.id] !== t[e.id]
+            }
+            return n ||= Object.keys(t).some(t => !e.has(t)), n ? r : t
+        })
+    }, N = [O], e[20] = O, e[21] = j, e[22] = N), (0, Rt.useEffect)(j, N);
+    let P;
+    if (e[23] !== O || e[24] !== _ || e[25] !== f) {
+        bb0: {
+            let e = f.trim().toLowerCase();
+            if (e === ``) {
+                P = O;
+                break bb0
+            }
+            P = O.filter(t => {
+                let n = _t(t),
+                    r = _[t.id]?.value ?? (n == null ? `` : String(n));
+                return [wt(t), Tt(t), t.requester_account_user_id, t.justification, r].join(` `).toLowerCase().includes(e)
+            })
+        }
+        e[23] = O,
+        e[24] = _,
+        e[25] = f,
+        e[26] = P
+    }
+    else P = e[26];
+    let F = P,
+        I;
+    e[27] === F ? I = e[28] : (I = F.map(kt), e[27] = F, e[28] = I);
+    let L = I,
+        R;
+    e[29] !== m || e[30] !== L ? (R = L.length > 0 && L.every(e => m.has(e)), e[29] = m, e[30] = L, e[31] = R) : R = e[31];
+    let z = R,
+        B;
+    if (e[32] !== m || e[33] !== L) {
+        let t;
+        e[35] === m ? t = e[36] : (t = e => m.has(e), e[35] = m, e[36] = t), B = L.filter(t), e[32] = m, e[33] = L, e[34] = B
+    } else B = e[34];
+    let V = B.length,
+        H;
+    e[37] === l ? H = e[38] : (H = async e => {
+        let {
+            requests: t,
+            status: n
+        } = e;
+        if (!l) throw Error(`Workspace id is required`);
+        if (n === `approved` && t.some(Ot)) throw Error(`Requested limit is required`);
+        let r = await Promise.allSettled(t.map(async e => {
+                let {
+                    request: t,
+                    requestedLimit: r
+                } = e, i = n === `approved` && r != null ? {
+                    status: n,
+                    payloads: xt(t, r)
+                } : {
+                    status: n
+                };
+                return await o.safePatch(`/accounts/{account_id}/admin/workspace_admin_requests/{request_id}`, {
+                    parameters: {
+                        path: {
+                            account_id: l,
+                            request_id: t.id
+                        }
+                    },
+                    requestBody: i
+                }), t.id
+            })),
+            i = r.flatMap(Dt),
+            a = r.length - i.length;
+        if (i.length === 0 && a > 0) throw Error(`Unable to update usage limit requests`);
+        return {
+            failedCount: a,
+            succeededRequestIds: i
+        }
+    }, e[37] = l, e[38] = H);
+    let U;
+    e[39] !== t || e[40] !== i || e[41] !== l ? (U = async (e, n) => {
+        let a = new Set(e.succeededRequestIds);
+        h(e => {
+            let t = new Set(e);
+            for (let e of a) t.delete(e);
+            return t
+        }), i.setQueryData(pt(l), e => e == null ? e : {
+            ...e,
+            items: e.items.filter(e => !a.has(e.id))
+        }), await i.invalidateQueries({
+            queryKey: pt(l)
+        }), await i.invalidateQueries({
+            queryKey: mt(l)
+        }), n.status === `approved` && l != null && await Promise.all([Qe({
+            queryClient: i,
+            workspaceId: l
+        }), at({
+            queryClient: i,
+            workspaceId: l
+        })]), e.failedCount > 0 ? r.warning(t.formatMessage(Y.resolvePartialError, {
+            succeededCount: e.succeededRequestIds.length,
+            totalCount: n.requests.length
+        }), {
+            hasCloseButton: !0
+        }) : r.success(t.formatMessage(n.status === `approved` ? Y.approveSuccess : Y.denySuccess, {
+            count: n.requests.length
+        }), {
+            hasCloseButton: !0
+        })
+    }, e[39] = t, e[40] = i, e[41] = l, e[42] = U) : U = e[42];
+    let W;
+    e[43] === t ? W = e[44] : (W = () => {
+        r.warning(t.formatMessage(Y.resolveError), {
+            hasCloseButton: !0
+        })
+    }, e[43] = t, e[44] = W);
+    let oe;
+    e[45] !== H || e[46] !== U || e[47] !== W ? (oe = {
+        mutationFn: H,
+        onSuccess: U,
+        onError: W
+    }, e[45] = H, e[46] = U, e[47] = W, e[48] = oe) : oe = e[48];
+    let se = ie(oe);
+    if (l == null) {
+        let t;
+        return e[49] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, J.jsx)(`div`, {
+            className: `flex min-h-[40vh] items-center justify-center`,
+            children: (0, J.jsx)(x, {})
+        }), e[49] = t) : t = e[49], t
+    }
+    let G;
+    e[50] === Symbol.for(`react.memo_cache_sentinel`) ? (G = e => p(e.target.value), e[50] = G) : G = e[50];
+    let ce;
+    e[51] === t ? ce = e[52] : (ce = t.formatMessage(Y.searchPlaceholder), e[51] = t, e[52] = ce);
+    let le;
+    e[53] !== f || e[54] !== ce ? (le = (0, J.jsx)(`div`, {
+        className: `mb-4.5 flex items-center justify-between`,
+        children: (0, J.jsx)(ye, {
+            id: `workspace-admin-requests-search`,
+            className: `w-full`,
+            inputClassName: `w-full rounded-full! text-sm`,
+            value: f,
+            onChange: G,
+            placeholder: ce
+        })
+    }), e[53] = f, e[54] = ce, e[55] = le) : le = e[55];
+    let K;
+    e[56] !== z || e[57] !== F || e[58] !== d || e[59] !== _ || e[60] !== se || e[61] !== m || e[62] !== V || e[63] !== L || e[64] !== w.isError || e[65] !== w.isLoading ? (K = w.isLoading ? (0, J.jsx)(`div`, {
+        className: `flex min-h-[40vh] items-center justify-center`,
+        children: (0, J.jsx)(x, {})
+    }) : w.isError ? (0, J.jsx)(`div`, {
+        className: `border-token-border-heavy bg-token-bg-tertiary text-token-text-primary rounded-md border px-4 py-3`,
+        children: (0, J.jsx)(M, {
+            ...Y.loadError
+        })
+    }) : (0, J.jsx)(Ft, {
+        requests: F,
+        selectedRequestIds: m,
+        requestedLimitDrafts: _,
+        allVisibleRequestsSelected: z,
+        selectedVisibleRequestCount: V,
+        hasAdminPrivileges: d,
+        isResolving: se.isPending,
+        onToggleRequest: (e, t) => {
+            h(n => {
+                let r = new Set(n);
+                return t ? r.add(e) : r.delete(e), r
+            })
+        },
+        onToggleAllVisibleRequests: e => {
+            h(t => {
+                let n = new Set(t);
+                for (let t of L) e ? n.add(t) : n.delete(t);
+                return n
+            })
+        },
+        onRequestedLimitChange: (e, t) => {
+            v(n => ({
+                ...n,
+                [e.id]: {
+                    ...n[e.id] ?? yt(e),
+                    value: t,
+                    dirty: !0
+                }
+            }))
+        },
+        onResolveRequests: (e, t) => {
+            se.mutateAsync({
+                requests: e.map(e => ({
+                    request: e,
+                    requestedLimit: bt((_[e.id] ?? yt(e)).value)
+                })),
+                status: t
+            })
+        }
+    }), e[56] = z, e[57] = F, e[58] = d, e[59] = _, e[60] = se, e[61] = m, e[62] = V, e[63] = L, e[64] = w.isError, e[65] = w.isLoading, e[66] = K) : K = e[66];
+    let ue;
+    return e[67] !== le || e[68] !== K ? (ue = (0, J.jsxs)(`div`, {
+        className: `max-w-[72rem]`,
+        children: [le, K]
+    }), e[67] = le, e[68] = K, e[69] = ue) : ue = e[69], ue
+}
+
+function Dt(e) {
+    return e.status === `fulfilled` ? [e.value] : []
+}
+
+function Ot(e) {
+    let {
+        requestedLimit: t
+    } = e;
+    return t == null
+}
+
+function kt(e) {
+    return e.id
+}
+
+function At(e) {
+    return e.id
+}
+
+function jt(e) {
+    return e.id
+}
+
+function Mt(e) {
+    return e.status === `pending`
+}
+
+function Nt() {
+    return new Set
+}
+
+function Pt(e) {
+    return e.currentWorkspace
+}
+
+function Ft(e) {
+    "use forget";
+    let t = (0, Lt.c)(81),
+        {
+            requests: n,
+            selectedRequestIds: r,
+            requestedLimitDrafts: i,
+            allVisibleRequestsSelected: a,
+            selectedVisibleRequestCount: o,
+            hasAdminPrivileges: s,
+            isResolving: c,
+            onToggleRequest: l,
+            onToggleAllVisibleRequests: u,
+            onRequestedLimitChange: d,
+            onResolveRequests: f
+        } = e,
+        p = ae(),
+        m, g;
+    if (t[0] !== i || t[1] !== n || t[2] !== r) {
+        let e;
+        t[5] === r ? e = t[6] : (e = e => r.has(e.id), t[5] = r, t[6] = e), m = n.filter(e);
+        let a;
+        t[7] === i ? a = t[8] : (a = e => bt(i[e.id]?.value ?? vt(e)) != null, t[7] = i, t[8] = a), g = m.every(a), t[0] = i, t[1] = n, t[2] = r, t[3] = m, t[4] = g
+    } else m = t[3], g = t[4];
+    let _ = g,
+        v;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, J.jsxs)(`colgroup`, {
+        children: [(0, J.jsx)(`col`, {
+            className: `w-12`
+        }), (0, J.jsx)(`col`, {
+            className: `w-[28%]`
+        }), (0, J.jsx)(`col`, {
+            className: `w-[15%]`
+        }), (0, J.jsx)(`col`, {
+            className: `w-[15%]`
+        }), (0, J.jsx)(`col`, {
+            className: `w-[28%]`
+        }), (0, J.jsx)(`col`, {
+            className: `w-[14%]`
+        })]
+    }), t[9] = v) : v = t[9];
+    let ee = o > 0 && !a,
+        y = n.length === 0,
+        b;
+    t[10] === u ? b = t[11] : (b = e => u(e.target.checked), t[10] = u, t[11] = b);
+    let x;
+    t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, J.jsx)(`span`, {
+        className: `sr-only`,
+        children: (0, J.jsx)(M, {
+            ...Y.selectAllRequests
+        })
+    }), t[12] = x) : x = t[12];
+    let S;
+    t[13] !== a || t[14] !== ee || t[15] !== y || t[16] !== b ? (S = (0, J.jsx)(q.HeaderCell, {
+        className: `ps-2`,
+        children: (0, J.jsx)(_e, {
+            id: `workspace-admin-requests-select-all`,
+            checked: a,
+            indeterminate: ee,
+            disabled: y,
+            onChange: b,
+            label: x
+        })
+    }), t[13] = a, t[14] = ee, t[15] = y, t[16] = b, t[17] = S) : S = t[17];
+    let C;
+    t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, J.jsx)(q.HeaderCell, {
+        children: (0, J.jsx)(M, {
+            ...Y.nameColumn
+        })
+    }), t[18] = C) : C = t[18];
+    let w;
+    t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (w = (0, J.jsx)(q.HeaderCell, {
+        children: (0, J.jsx)(M, {
+            ...Y.currentLimitColumn
+        })
+    }), t[19] = w) : w = t[19];
+    let te;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (te = (0, J.jsx)(q.HeaderCell, {
+        children: (0, J.jsx)(M, {
+            ...Y.recommendedColumn
+        })
+    }), t[20] = te) : te = t[20];
+    let T;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, J.jsx)(q.HeaderCell, {
+        children: (0, J.jsx)(M, {
+            ...Y.justificationColumn
+        })
+    }), t[21] = T) : T = t[21];
+    let E;
+    t[22] === o ? E = t[23] : (E = o > 0 ? (0, J.jsx)(M, {
+        ...Y.selectedCount,
+        values: {
+            count: o
+        }
+    }) : null, t[22] = o, t[23] = E);
+    let D;
+    t[24] === p ? D = t[25] : (D = p.formatMessage(Y.bulkActionsLabel), t[24] = p, t[25] = D);
+    let O = c || m.length === 0,
+        k;
+    t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (k = (0, J.jsx)(De, {
+        "aria-hidden": `true`,
+        className: `icon-sm`
+    }), t[26] = k) : k = t[26];
+    let A;
+    t[27] !== D || t[28] !== O ? (A = (0, J.jsx)(`button`, {
+        type: `button`,
+        "aria-label": D,
+        className: `interactive-button-secondary inline-flex size-8 items-center justify-center rounded-md p-0`,
+        disabled: O,
+        children: k
+    }), t[27] = D, t[28] = O, t[29] = A) : A = t[29];
+    let j = c || !s || !_,
+        ne;
+    t[30] !== f || t[31] !== m ? (ne = () => f(m, `approved`), t[30] = f, t[31] = m, t[32] = ne) : ne = t[32];
+    let N;
+    t[33] === Symbol.for(`react.memo_cache_sentinel`) ? (N = (0, J.jsx)(M, {
+        ...Y.approveSelectedButton
+    }), t[33] = N) : N = t[33];
+    let re;
+    t[34] !== j || t[35] !== ne ? (re = (0, J.jsx)(W.Item, {
+        disabled: j,
+        onClick: ne,
+        children: N
+    }), t[34] = j, t[35] = ne, t[36] = re) : re = t[36];
+    let P;
+    t[37] !== f || t[38] !== m ? (P = () => f(m, `denied`), t[37] = f, t[38] = m, t[39] = P) : P = t[39];
+    let F;
+    t[40] === Symbol.for(`react.memo_cache_sentinel`) ? (F = (0, J.jsx)(M, {
+        ...Y.denySelectedButton
+    }), t[40] = F) : F = t[40];
+    let I;
+    t[41] !== c || t[42] !== P ? (I = (0, J.jsx)(W.Item, {
+        color: `danger`,
+        disabled: c,
+        onClick: P,
+        children: F
+    }), t[41] = c, t[42] = P, t[43] = I) : I = t[43];
+    let L;
+    t[44] !== A || t[45] !== re || t[46] !== I ? (L = (0, J.jsxs)(U, {
+        side: `bottom`,
+        sideOffset: 4,
+        contentAlign: `end`,
+        triggerButton: A,
+        children: [re, I]
+    }), t[44] = A, t[45] = re, t[46] = I, t[47] = L) : L = t[47];
+    let R;
+    t[48] !== E || t[49] !== L ? (R = (0, J.jsx)(q.HeaderCell, {
+        textAlign: `right`,
+        children: (0, J.jsxs)(`div`, {
+            className: `text-token-text-primary flex items-center justify-end gap-2`,
+            children: [E, L]
+        })
+    }), t[48] = E, t[49] = L, t[50] = R) : R = t[50];
+    let ie;
+    t[51] !== R || t[52] !== S ? (ie = (0, J.jsxs)(q.Header, {
+        children: [S, C, w, te, T, R]
+    }), t[51] = R, t[52] = S, t[53] = ie) : ie = t[53];
+    let z;
+    if (t[54] !== s || t[55] !== p || t[56] !== c || t[57] !== d || t[58] !== f || t[59] !== l || t[60] !== i || t[61] !== n || t[62] !== r) {
+        let e;
+        t[64] !== s || t[65] !== p || t[66] !== c || t[67] !== d || t[68] !== f || t[69] !== l || t[70] !== i || t[71] !== r ? (e = e => {
+            let t = wt(e),
+                n = Tt(e),
+                a = i[e.id]?.value ?? vt(e),
+                o = bt(a) != null;
+            return (0, J.jsxs)(q.Row, {
+                className: `[&>td]:py-2`,
+                children: [(0, J.jsx)(q.Cell, {
+                    className: `ps-2`,
+                    divClassName: `min-h-[48px] items-center`,
+                    children: (0, J.jsx)(_e, {
+                        id: `workspace-admin-request-${e.id}`,
+                        checked: r.has(e.id),
+                        onChange: t => l(e.id, t.target.checked),
+                        label: (0, J.jsx)(`span`, {
+                            className: `sr-only`,
+                            children: (0, J.jsx)(M, {
+                                ...Y.selectRequest,
+                                values: {
+                                    name: t
+                                }
+                            })
+                        })
+                    })
+                }), (0, J.jsxs)(q.Cell, {
+                    divClassName: `min-h-[48px] min-w-0 items-center`,
+                    children: [(0, J.jsx)(`div`, {
+                        className: `relative shrink-0 pe-3`,
+                        children: (0, J.jsx)(Ue, {
+                            userName: t,
+                            isScimManaged: !1
+                        })
+                    }), (0, J.jsxs)(`div`, {
+                        className: `min-w-0`,
+                        children: [(0, J.jsx)(`div`, {
+                            className: `flex min-w-0 items-center gap-1`,
+                            children: (0, J.jsx)(`span`, {
+                                className: `min-w-0 truncate`,
+                                title: t,
+                                children: t
+                            })
+                        }), (0, J.jsx)(`div`, {
+                            className: `text-body-small-regular text-token-text-secondary truncate`,
+                            title: n,
+                            children: n
+                        })]
+                    })]
+                }), (0, J.jsx)(q.Cell, {
+                    divClassName: `min-h-[48px] items-center`,
+                    children: Ct(p, St(e))
+                }), (0, J.jsx)(q.Cell, {
+                    divClassName: `min-h-[48px] items-center`,
+                    children: (0, J.jsx)(`input`, {
+                        "aria-label": p.formatMessage(Y.recommendedLimitInput, {
+                            name: t
+                        }),
+                        "aria-invalid": !o,
+                        inputMode: `numeric`,
+                        min: 0,
+                        max: Bt,
+                        name: `requested-limit-${e.id}`,
+                        onChange: t => d(e, t.target.value),
+                        step: 1,
+                        type: `number`,
+                        value: a,
+                        className: `border-token-border-light bg-token-bg-primary h-9 w-24 rounded-lg border px-3 text-sm`
+                    })
+                }), (0, J.jsx)(q.Cell, {
+                    divClassName: `min-h-[48px] items-center`,
+                    children: (0, J.jsx)(h, {
+                        label: e.justification,
+                        children: (0, J.jsx)(`span`, {
+                            className: `line-clamp-2`,
+                            children: e.justification
+                        })
+                    })
+                }), (0, J.jsxs)(q.Cell, {
+                    textAlign: `right`,
+                    divClassName: `min-h-[48px] items-center justify-end gap-4`,
+                    children: [(0, J.jsx)(`button`, {
+                        type: `button`,
+                        disabled: c,
+                        className: `text-sm text-[#FF002A] hover:underline focus-visible:underline focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50`,
+                        onClick: () => f([e], `denied`),
+                        children: (0, J.jsx)(M, {
+                            ...Y.denyButton
+                        })
+                    }), (0, J.jsx)(It, {
+                        disabled: !s,
+                        testId: `${e.id}-usage-limits-approve-admin-disabled-tooltip-trigger`,
+                        children: (0, J.jsx)(`button`, {
+                            type: `button`,
+                            disabled: c || !o || !s,
+                            className: `text-sm text-[#0285FF] hover:underline focus-visible:underline focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50`,
+                            onClick: () => f([e], `approved`),
+                            children: (0, J.jsx)(M, {
+                                ...Y.approveButton
+                            })
+                        })
+                    })]
+                })]
+            }, e.id)
+        }, t[64] = s, t[65] = p, t[66] = c, t[67] = d, t[68] = f, t[69] = l, t[70] = i, t[71] = r, t[72] = e) : e = t[72], z = n.map(e), t[54] = s, t[55] = p, t[56] = c, t[57] = d, t[58] = f, t[59] = l, t[60] = i, t[61] = n, t[62] = r, t[63] = z
+    } else z = t[63];
+    let B;
+    t[73] === n.length ? B = t[74] : (B = n.length === 0 && (0, J.jsx)(q.Row, {
+        className: `[&>td]:py-2`,
+        children: (0, J.jsx)(q.Cell, {
+            colSpan: 6,
+            children: (0, J.jsx)(`div`, {
+                className: `text-token-text-tertiary`,
+                children: (0, J.jsx)(M, {
+                    ...Y.noRequests
+                })
+            })
+        })
+    }), t[73] = n.length, t[74] = B);
+    let V;
+    t[75] !== z || t[76] !== B ? (V = (0, J.jsxs)(q.Body, {
+        children: [z, B]
+    }), t[75] = z, t[76] = B, t[77] = V) : V = t[77];
+    let H;
+    return t[78] !== ie || t[79] !== V ? (H = (0, J.jsxs)(q.Root, {
+        fixed: !0,
+        size: `normal`,
+        children: [v, ie, V]
+    }), t[78] = ie, t[79] = V, t[80] = H) : H = t[80], H
+}
+
+function It(e) {
+    "use forget";
+    let t = (0, Lt.c)(6),
+        {
+            children: n,
+            disabled: r,
+            testId: i
+        } = e;
+    if (!r) {
+        let e;
+        return t[0] === n ? e = t[1] : (e = (0, J.jsx)(J.Fragment, {
+            children: n
+        }), t[0] = n, t[1] = e), e
+    }
+    let a;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, J.jsx)(M, {
+        ...Y.adminDisabledTooltip
+    }), t[2] = a) : a = t[2];
+    let o;
+    return t[3] !== n || t[4] !== i ? (o = (0, J.jsx)(h, {
+        label: a,
+        children: (0, J.jsx)(`span`, {
+            className: `inline-flex`,
+            "data-testid": i,
+            children: n
+        })
+    }), t[3] = n, t[4] = i, t[5] = o) : o = t[5], o
+}
+var Lt, Rt, J, zt, Bt, Y, Vt = e((() => {
+    Lt = V(), Le(), He(), $e(), G(), ot(), K(), oe(), Ae(), y(), Se(), se(), c(), d(), w(), r(), T(), B(), Rt = t(I()), F(), J = O(), zt = 100, Bt = 2147483647, Y = A({
+        adminDisabledTooltip: {
+            id: `workspaceUsageLimits.adminDisabledTooltip`,
+            defaultMessage: `Contact a workspace admin to change this setting.`
+        },
+        approveButton: {
+            id: `workspaceUsageLimits.approveButton`,
+            defaultMessage: `Approve`
+        },
+        approveSelectedButton: {
+            id: `workspaceUsageLimits.approveSelectedButton`,
+            defaultMessage: `Approve selected`
+        },
+        approveSuccess: {
+            id: `workspaceUsageLimits.approveSuccessWithCount`,
+            defaultMessage: `{count, plural, one {Usage limit request approved} other {# usage limit requests approved}}`
+        },
+        bulkActionsLabel: {
+            id: `workspaceUsageLimits.bulkActionsLabel`,
+            defaultMessage: `Bulk request actions`
+        },
+        creditsValue: {
+            id: `workspaceUsageLimits.creditsValue`,
+            defaultMessage: `{credits} credits`
+        },
+        currentLimitColumn: {
+            id: `workspaceUsageLimits.limitWhenRequestedColumn`,
+            defaultMessage: `Limit when requested`
+        },
+        denyButton: {
+            id: `workspaceUsageLimits.denyButton`,
+            defaultMessage: `Deny`
+        },
+        denySelectedButton: {
+            id: `workspaceUsageLimits.denySelectedButton`,
+            defaultMessage: `Deny selected`
+        },
+        denySuccess: {
+            id: `workspaceUsageLimits.denySuccessWithCount`,
+            defaultMessage: `{count, plural, one {Usage limit request denied} other {# usage limit requests denied}}`
+        },
+        justificationColumn: {
+            id: `workspaceUsageLimits.justificationColumn`,
+            defaultMessage: `Justification`
+        },
+        loadError: {
+            id: `workspaceUsageLimits.loadError`,
+            defaultMessage: `Unable to load pending requests.`
+        },
+        nameColumn: {
+            id: `workspaceUsageLimits.nameColumn`,
+            defaultMessage: `Name`
+        },
+        noRequests: {
+            id: `workspaceUsageLimits.noRequests`,
+            defaultMessage: `No pending requests`
+        },
+        notSet: {
+            id: `workspaceUsageLimits.notSet`,
+            defaultMessage: `Not set`
+        },
+        recommendedColumn: {
+            id: `workspaceUsageLimits.recommendedColumn`,
+            defaultMessage: `Recommended`
+        },
+        recommendedLimitInput: {
+            id: `workspaceUsageLimits.recommendedLimitInput`,
+            defaultMessage: `Recommended limit for {name}`
+        },
+        resolveError: {
+            id: `workspaceUsageLimits.resolveError`,
+            defaultMessage: `Unable to update the usage limit request`
+        },
+        resolvePartialError: {
+            id: `workspaceUsageLimits.resolvePartialError`,
+            defaultMessage: `Updated {succeededCount} of {totalCount} usage limit requests. Try again for the rest.`
+        },
+        searchPlaceholder: {
+            id: `workspaceUsageLimits.searchPlaceholder`,
+            defaultMessage: `Search by name`
+        },
+        selectAllRequests: {
+            id: `workspaceUsageLimits.selectAllRequests`,
+            defaultMessage: `Select all pending requests`
+        },
+        selectedCount: {
+            id: `workspaceUsageLimits.selectedCount`,
+            defaultMessage: `{count} selected`
+        },
+        selectRequest: {
+            id: `workspaceUsageLimits.selectRequest`,
+            defaultMessage: `Select request from {name}`
+        }
+    })
+}));
+
+function Ht(e) {
+    "use forget";
+    let t = (0, Jt.c)(27),
+        {
+            workspaceId: n,
+            canEdit: r
+        } = e,
+        i = ae(),
+        a = ne(),
+        [s, c] = (0, Yt.useState)(!1),
+        u = S(n),
+        d = u.data ?? l,
+        f;
+    t[0] === n ? f = t[1] : (f = e => {
+        if (n == null) throw Error(`Workspace id is required`);
+        return o.safePost(`/accounts/{account_id}/settings/usage_limit_increase_request`, {
+            parameters: {
+                path: {
+                    account_id: n
+                }
+            },
+            requestBody: {
+                usage_limit_increase_request: e
+            }
+        })
+    }, t[0] = n, t[1] = f);
+    let p;
+    t[2] !== a || t[3] !== n ? (p = async e => {
+        a.setQueryData([`workspace-settings`, n], e), await a.invalidateQueries({
+            queryKey: [`workspace-settings`, n]
+        })
+    }, t[2] = a, t[3] = n, t[4] = p) : p = t[4];
+    let m;
+    t[5] !== f || t[6] !== p ? (m = {
+        mutationFn: f,
+        onSuccess: p
+    }, t[5] = f, t[6] = p, t[7] = m) : m = t[7];
+    let h = ie(m),
+        g;
+    t[8] !== i || t[9] !== h ? (g = async e => {
+        try {
+            await h.mutateAsync(e), E().success(i.formatMessage(Z.saveSuccess), {
+                hasCloseButton: !0
+            }), c(!1)
+        } catch {
+            E().warning(i.formatMessage(Z.saveError), {
+                hasCloseButton: !0
+            })
+        }
+    }, t[8] = i, t[9] = h, t[10] = g) : g = t[10];
+    let _ = g,
+        v;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, X.jsx)(`div`, {
+        className: `text-token-text-primary text-base leading-[26px] font-semibold tracking-[-0.32px]`,
+        children: (0, X.jsx)(M, {
+            ...Z.settingLabel
+        })
+    }), t[11] = v) : v = t[11];
+    let ee;
+    t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (ee = (0, X.jsxs)(`div`, {
+        className: `min-w-0 pe-6`,
+        children: [v, (0, X.jsx)(`div`, {
+            className: `text-token-text-tertiary text-sm leading-[18px] tracking-[-0.15px]`,
+            children: (0, X.jsx)(M, {
+                ...Z.settingDescription
+            })
+        })]
+    }), t[12] = ee) : ee = t[12];
+    let y;
+    t[13] !== r || t[14] !== d || t[15] !== i || t[16] !== u.isError || t[17] !== u.isLoading ? (y = (0, X.jsxs)(`div`, {
+        className: `border-token-border-default flex w-full items-start justify-between border-b py-4`,
+        children: [ee, u.isLoading ? (0, X.jsx)(`div`, {
+            className: `text-token-text-tertiary text-sm`,
+            children: (0, X.jsx)(M, {
+                ...Z.loading
+            })
+        }) : (0, X.jsxs)(`div`, {
+            className: `flex shrink-0 flex-col items-end gap-0.5`,
+            children: [(0, X.jsx)(`div`, {
+                className: `text-token-text-primary text-base`,
+                children: (0, X.jsx)(M, {
+                    ...Kt(d.kind)
+                })
+            }), (0, X.jsx)(`button`, {
+                type: `button`,
+                "aria-label": i.formatMessage(Z.editRequestPolicy),
+                className: `disabled:text-token-text-tertiary text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline focus-visible:underline focus-visible:outline-none disabled:cursor-not-allowed disabled:no-underline dark:text-blue-400 dark:hover:text-blue-300`,
+                disabled: !r || u.isError,
+                onClick: () => c(!0),
+                children: (0, X.jsx)(M, {
+                    ...Z.edit
+                })
+            })]
+        })]
+    }), t[13] = r, t[14] = d, t[15] = i, t[16] = u.isError, t[17] = u.isLoading, t[18] = y) : y = t[18];
+    let b;
+    t[19] !== d || t[20] !== _ || t[21] !== s || t[22] !== h ? (b = s ? (0, X.jsx)(Ut, {
+        config: d,
+        isSaving: h.isPending,
+        onClose: () => c(!1),
+        onSave: _
+    }) : null, t[19] = d, t[20] = _, t[21] = s, t[22] = h, t[23] = b) : b = t[23];
+    let x;
+    return t[24] !== y || t[25] !== b ? (x = (0, X.jsxs)(X.Fragment, {
+        children: [y, b]
+    }), t[24] = y, t[25] = b, t[26] = x) : x = t[26], x
+}
+
+function Ut(e) {
+    "use forget";
+    let t = (0, Jt.c)(52),
+        {
+            config: n,
+            isSaving: r,
+            onClose: i,
+            onSave: o
+        } = e,
+        c = ae(),
+        [l, u] = (0, Yt.useState)(n.kind),
+        [d, f] = (0, Yt.useState)(n.kind === `custom` ? n.instructions ?? `` : ``),
+        [p, m] = (0, Yt.useState)(n.kind === `custom` ? n.request_url ?? `` : ``),
+        h;
+    t[0] === d ? h = t[1] : (h = d.trim(), t[0] = d, t[1] = h);
+    let g = h,
+        _, v;
+    t[2] === p ? (_ = t[3], v = t[4]) : (v = p.trim(), _ = Gt(v), t[2] = p, t[3] = _, t[4] = v);
+    let ee = _,
+        y = !r && (l !== `custom` || ee),
+        b;
+    t[5] !== y || t[6] !== l || t[7] !== o || t[8] !== g || t[9] !== v ? (b = async () => {
+        if (y) {
+            if (l === `custom`) {
+                await o({
+                    kind: l,
+                    instructions: g.length === 0 ? null : g,
+                    request_url: v.length === 0 ? null : v
+                });
+                return
+            }
+            await o({
+                kind: l
+            })
+        }
+    }, t[5] = y, t[6] = l, t[7] = o, t[8] = g, t[9] = v, t[10] = b) : b = t[10];
+    let x = b,
+        S;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, X.jsx)(M, {
+        ...Z.modalTitle
+    }), t[11] = S) : S = t[11];
+    let C = !y,
+        w;
+    t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (w = (0, X.jsx)(M, {
+        ...Z.save
+    }), t[12] = w) : w = t[12];
+    let te;
+    t[13] !== x || t[14] !== r || t[15] !== C ? (te = (0, X.jsx)(s, {
+        color: `primary`,
+        loading: r,
+        disabled: C,
+        onClick: x,
+        children: w
+    }), t[13] = x, t[14] = r, t[15] = C, t[16] = te) : te = t[16];
+    let T;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, X.jsx)(M, {
+        ...Z.cancel
+    }), t[17] = T) : T = t[17];
+    let E;
+    t[18] !== r || t[19] !== i ? (E = (0, X.jsx)(s, {
+        color: `secondary`,
+        disabled: r,
+        onClick: i,
+        children: T
+    }), t[18] = r, t[19] = i, t[20] = E) : E = t[20];
+    let D;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (D = e => {
+        u(e)
+    }, t[21] = D) : D = t[21];
+    let O;
+    t[22] === c ? O = t[23] : (O = c.formatMessage(Z.requestExperienceLabel), t[22] = c, t[23] = O);
+    let k, A;
+    t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (k = (0, X.jsx)(Re.Value, {}), A = (0, X.jsx)(Re.Icon, {}), t[24] = k, t[25] = A) : (k = t[24], A = t[25]);
+    let j;
+    t[26] === O ? j = t[27] : (j = (0, X.jsxs)(Re.Trigger, {
+        "aria-label": O,
+        className: `border-token-border-default w-full justify-between border`,
+        children: [k, A]
+    }), t[26] = O, t[27] = j);
+    let ne;
+    t[28] === Symbol.for(`react.memo_cache_sentinel`) ? (ne = (0, X.jsx)(Re.Portal, {
+        children: (0, X.jsx)(Re.Content, {
+            className: `w-[var(--radix-select-trigger-width)]`,
+            children: [`openai_native`, `custom`, `disabled`].map(Wt)
+        })
+    }), t[28] = ne) : ne = t[28];
+    let N;
+    t[29] !== l || t[30] !== j ? (N = (0, X.jsxs)(Re.Root, {
+        value: l,
+        onValueChange: D,
+        children: [j, ne]
+    }), t[29] = l, t[30] = j, t[31] = N) : N = t[31];
+    let re;
+    t[32] === l ? re = t[33] : (re = qt(l), t[32] = l, t[33] = re);
+    let P;
+    t[34] === re ? P = t[35] : (P = (0, X.jsx)(`div`, {
+        className: `text-token-text-tertiary text-sm leading-5`,
+        children: (0, X.jsx)(M, {
+            ...re
+        })
+    }), t[34] = re, t[35] = P);
+    let F;
+    t[36] !== ee || t[37] !== d || t[38] !== c || t[39] !== l || t[40] !== p || t[41] !== v ? (F = l === `custom` ? (0, X.jsxs)(X.Fragment, {
+        children: [(0, X.jsxs)(`div`, {
+            className: `flex flex-col gap-1.5`,
+            children: [(0, X.jsx)(`label`, {
+                htmlFor: `usage-limit-request-description`,
+                className: `text-token-text-primary text-sm font-medium`,
+                children: (0, X.jsx)(M, {
+                    ...Z.customDescriptionLabel
+                })
+            }), (0, X.jsx)(`textarea`, {
+                id: `usage-limit-request-description`,
+                name: `usage-limit-request-description`,
+                value: d,
+                maxLength: 500,
+                rows: 4,
+                placeholder: c.formatMessage(Z.customDescriptionPlaceholder),
+                className: `border-token-border-default bg-token-bg-primary text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-border-heavy resize-none rounded-lg border px-3 py-2 text-sm font-normal outline-none`,
+                onChange: e => f(e.target.value)
+            })]
+        }), (0, X.jsxs)(`div`, {
+            className: `flex flex-col gap-1.5`,
+            children: [(0, X.jsx)(`label`, {
+                htmlFor: `usage-limit-request-url`,
+                className: `text-token-text-primary text-sm font-medium`,
+                children: (0, X.jsx)(M, {
+                    ...Z.customUrlLabel
+                })
+            }), (0, X.jsx)(`input`, {
+                id: `usage-limit-request-url`,
+                name: `usage-limit-request-url`,
+                type: `url`,
+                required: !0,
+                value: p,
+                placeholder: c.formatMessage(Z.customUrlPlaceholder),
+                className: `border-token-border-default bg-token-bg-primary text-token-text-primary placeholder:text-token-text-tertiary focus:border-token-border-heavy rounded-lg border px-3 py-2 text-sm font-normal outline-none`,
+                "aria-invalid": v.length > 0 && !ee,
+                onChange: e => m(e.target.value)
+            }), v.length > 0 && !ee ? (0, X.jsx)(`span`, {
+                className: `text-token-interactive-label-warning-secondary text-sm font-normal`,
+                children: (0, X.jsx)(M, {
+                    ...Z.invalidHttps
+                })
+            }) : null]
+        })]
+    }) : null, t[36] = ee, t[37] = d, t[38] = c, t[39] = l, t[40] = p, t[41] = v, t[42] = F) : F = t[42];
+    let I;
+    t[43] !== N || t[44] !== P || t[45] !== F ? (I = (0, X.jsxs)(`div`, {
+        className: `flex flex-col gap-4`,
+        children: [N, P, F]
+    }), t[43] = N, t[44] = P, t[45] = F, t[46] = I) : I = t[46];
+    let L;
+    return t[47] !== i || t[48] !== I || t[49] !== te || t[50] !== E ? (L = (0, X.jsx)(a, {
+        isOpen: !0,
+        showCloseButton: !0,
+        testId: `modal-usage-limit-increase-request`,
+        title: S,
+        onClose: i,
+        primaryButton: te,
+        secondaryButton: E,
+        children: I
+    }), t[47] = i, t[48] = I, t[49] = te, t[50] = E, t[51] = L) : L = t[51], L
+}
+
+function Wt(e) {
+    return (0, X.jsx)(Re.Item, {
+        value: e,
+        children: (0, X.jsx)(M, {
+            ...Kt(e)
+        })
+    }, e)
+}
+
+function Gt(e) {
+    try {
+        return new URL(e).protocol === `https:`
+    } catch {
+        return !1
+    }
+}
+
+function Kt(e) {
+    switch (e) {
+        case `openai_native`:
+            return Z.openaiNativeLabel;
+        case `custom`:
+            return Z.customLabel;
+        case `disabled`:
+            return Z.disabledLabel
+    }
+}
+
+function qt(e) {
+    switch (e) {
+        case `openai_native`:
+            return Z.openaiNativeDescription;
+        case `custom`:
+            return Z.customDescription;
+        case `disabled`:
+            return Z.disabledDescription
+    }
+}
+var Jt, Yt, X, Z, Xt = e((() => {
+    Jt = V(), _(), p(), ze(), b(), r(), T(), B(), Yt = t(I()), F(), X = O(), Z = A({
+        settingLabel: {
+            id: `admin.usageLimits.increaseRequests.setting.title`,
+            defaultMessage: `Usage increase request process`
+        },
+        settingDescription: {
+            id: `admin.usageLimits.increaseRequests.setting.description`,
+            defaultMessage: `Choose how members request more usage when they reach their monthly limit.`
+        },
+        modalTitle: {
+            id: `admin.usageLimits.increaseRequests.modal.title.usageLimit`,
+            defaultMessage: `Usage increase request process`
+        },
+        requestExperienceLabel: {
+            id: `admin.usageLimits.increaseRequests.requestExperience.label`,
+            defaultMessage: `Request experience`
+        },
+        openaiNativeLabel: {
+            id: `admin.usageLimits.increaseRequests.openaiNative.label`,
+            defaultMessage: `Default`
+        },
+        openaiNativeDescription: {
+            id: `admin.usageLimits.increaseRequests.openaiNative.description.v2`,
+            defaultMessage: `Members can request more usage in ChatGPT and Codex. Requests appear in Pending requests.`
+        },
+        customLabel: {
+            id: `admin.usageLimits.increaseRequests.custom.label`,
+            defaultMessage: `Custom`
+        },
+        customDescription: {
+            id: `admin.usageLimits.increaseRequests.custom.description`,
+            defaultMessage: `Send members to a URL you choose to request more usage.`
+        },
+        disabledLabel: {
+            id: `admin.usageLimits.increaseRequests.disabled.label`,
+            defaultMessage: `Disabled`
+        },
+        disabledDescription: {
+            id: `admin.usageLimits.increaseRequests.disabled.description`,
+            defaultMessage: `Members cannot request more usage when they reach their monthly limit.`
+        },
+        customDescriptionLabel: {
+            id: `admin.usageLimits.increaseRequests.custom.descriptionLabel`,
+            defaultMessage: `Description`
+        },
+        customDescriptionPlaceholder: {
+            id: `admin.usageLimits.increaseRequests.custom.descriptionPlaceholder`,
+            defaultMessage: `Contact your manager before requesting additional monthly usage.`
+        },
+        customUrlLabel: {
+            id: `admin.usageLimits.increaseRequests.custom.urlLabel`,
+            defaultMessage: `URL`
+        },
+        customUrlPlaceholder: {
+            id: `admin.usageLimits.increaseRequests.custom.urlPlaceholder`,
+            defaultMessage: `https://requests.example.com`
+        },
+        invalidHttps: {
+            id: `admin.usageLimits.increaseRequests.invalidHttps`,
+            defaultMessage: `Enter a valid URL that starts with https://.`
+        },
+        loading: {
+            id: `admin.usageLimits.increaseRequests.loading`,
+            defaultMessage: `Loading…`
+        },
+        edit: {
+            id: `admin.usageLimits.increaseRequests.edit`,
+            defaultMessage: `Edit`
+        },
+        editRequestPolicy: {
+            id: `admin.usageLimits.increaseRequests.editRequestPolicy`,
+            defaultMessage: `Edit usage increase request process`
+        },
+        save: {
+            id: `admin.usageLimits.increaseRequests.save`,
+            defaultMessage: `Save`
+        },
+        cancel: {
+            id: `admin.usageLimits.increaseRequests.cancel`,
+            defaultMessage: `Cancel`
+        },
+        saveSuccess: {
+            id: `admin.usageLimits.increaseRequests.saveSuccess`,
+            defaultMessage: `Usage increase request process updated.`
+        },
+        saveError: {
+            id: `admin.usageLimits.increaseRequests.saveError`,
+            defaultMessage: `We couldn’t update this setting. Please try again.`
+        }
+    })
+}));
+
+function Zt({
+    pathname: e,
+    search: t,
+    workspaceId: n
+}) {
+    let r = new URL(be(`/usage-limits`, n, {
+        includeWorkspaceLoginMethodHint: !0
+    }));
+    switch (dt(e.split(`/`).at(-1))) {
+        case `groups`:
+            r.searchParams.set(`tab`, `groups`);
+            break;
+        case `users`: {
+            r.searchParams.set(`tab`, `users`);
+            let e = new URLSearchParams(t).get(`query`);
+            e && r.searchParams.set(`user_name`, e);
+            break
+        }
+        case `pending-requests`:
+            r.searchParams.set(`tab`, `requests`);
+            break;
+        case `workspace`:
+            break
+    }
+    return r.toString()
+}
+
+function Qt() {
+    "use forget";
+    let e = (0, Tn.c)(5),
+        t = Me(),
+        r = ee(),
+        i = r?.isEnterprisey() === !0 && v(`3778045255`);
+    if (!t.isLoaded) {
+        let t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Q.jsx)(n, {
+            className: `icon-xl`
+        }), e[0] = t) : t = e[0], t
+    }
+    if (!t.isEnabled) {
+        let t;
+        return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Q.jsx)(Ve, {}), e[1] = t) : t = e[1], t
+    }
+    if (i) {
+        let t = r?.id,
+            n;
+        return e[2] === t ? n = e[3] : (n = (0, Q.jsx)($t, {
+            workspaceId: t
+        }), e[2] = t, e[3] = n), n
+    }
+    let a;
+    return e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Q.jsx)(en, {}), e[4] = a) : a = e[4], a
+}
+
+function $t(e) {
+    "use forget";
+    let t = (0, Tn.c)(16),
+        {
+            workspaceId: n
+        } = e,
+        r = ae(),
+        i = D(),
+        a;
+    t[0] === r ? a = t[1] : (a = r.formatMessage($.browserTitle), t[0] = r, t[1] = a);
+    let o;
+    t[2] === a ? o = t[3] : (o = (0, Q.jsx)(Ge, {
+        children: (0, Q.jsx)(`title`, {
+            children: a
+        })
+    }), t[2] = a, t[3] = o);
+    let c;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, Q.jsx)(`p`, {
+        className: `text-token-text-primary font-[590]`,
+        children: (0, Q.jsx)(M, {
+            ...$.usageLimitsMovedToAdminConsoleTitle
+        })
+    }), t[4] = c) : c = t[4];
+    let l;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Q.jsxs)(`div`, {
+        className: `flex flex-col gap-1 pb-1 text-[16px] leading-[26px] tracking-[-0.32px]`,
+        children: [c, (0, Q.jsx)(`p`, {
+            className: `text-token-text-secondary font-normal`,
+            children: (0, Q.jsx)(M, {
+                ...$.usageLimitsMovedToAdminConsoleBody
+            })
+        })]
+    }), t[5] = l) : l = t[5];
+    let u;
+    t[6] !== i.pathname || t[7] !== i.search || t[8] !== n ? (u = Zt({
+        pathname: i.pathname,
+        search: i.search,
+        workspaceId: n
+    }), t[6] = i.pathname, t[7] = i.search, t[8] = n, t[9] = u) : u = t[9];
+    let d;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, Q.jsx)(M, {
+        ...$.usageLimitsMovedToAdminConsoleAction
+    }), t[10] = d) : d = t[10];
+    let f;
+    t[11] === u ? f = t[12] : (f = (0, Q.jsx)(Pe, {
+        className: `flex min-h-[80vh] items-center justify-center`,
+        children: (0, Q.jsxs)(`div`, {
+            className: `flex flex-col items-center justify-center gap-4 text-center`,
+            children: [l, (0, Q.jsx)(s, {
+                as: `a`,
+                color: `secondary`,
+                openNewTab: !0,
+                rel: `noopener noreferrer`,
+                size: `large`,
+                to: u,
+                children: d
+            })]
+        })
+    }), t[11] = u, t[12] = f);
+    let p;
+    return t[13] !== o || t[14] !== f ? (p = (0, Q.jsxs)(Q.Fragment, {
+        children: [o, f]
+    }), t[13] = o, t[14] = f, t[15] = p) : p = t[15], p
+}
+
+function en() {
+    "use forget";
+    let e = (0, Tn.c)(88),
+        t = ae(),
+        n = j(),
+        r = N(),
+        i = ee(),
+        a = te(nn),
+        {
+            role: s
+        } = Ne(),
+        c = i?.id,
+        l;
+    e[0] !== s || e[1] !== a ? (l = s == null ? a != null && ve(a.role) : ve(s), e[0] = s, e[1] = a, e[2] = l) : l = e[2];
+    let d = l,
+        f;
+    e[3] === n.tab ? f = e[4] : (f = dt(n.tab), e[3] = n.tab, e[4] = f);
+    let p = f,
+        m;
+    e[5] === i ? m = e[6] : (m = i == null ? null : i.isEnterprisey() || i.isEdu(), e[5] = i, e[6] = m);
+    let h = m,
+        _ = S(c),
+        y;
+    e[7] !== i || e[8] !== d || e[9] !== _ ? (y = d && i != null && _.data != null && ge(i) && v(jn), e[7] = i, e[8] = d, e[9] = _, e[10] = y) : y = e[10];
+    let b = y,
+        x;
+    e[11] !== p || e[12] !== c ? (x = p === `pending-requests` ? pt(c) : mt(c), e[11] = p, e[12] = c, e[13] = x) : x = e[13];
+    let C;
+    e[14] !== p || e[15] !== c ? (C = async () => {
+        if (c == null) throw Error(`Workspace id is required`);
+        return await ht(c, p === `pending-requests` ? void 0 : {
+            fetchAllPages: !1,
+            pageSize: An
+        })
+    }, e[14] = p, e[15] = c, e[16] = C) : C = e[16];
+    let w = c != null && b,
+        T;
+    e[17] !== x || e[18] !== C || e[19] !== w ? (T = {
+        queryKey: x,
+        queryFn: C,
+        enabled: w,
+        staleTime: 0,
+        refetchOnMount: `always`,
+        refetchOnWindowFocus: `always`
+    }, e[17] = x, e[18] = C, e[19] = w, e[20] = T) : T = e[20];
+    let E = re(T),
+        D;
+    e[21] === E.data?.items ? D = e[22] : (D = E.data?.items.some(tn) ?? !1, e[21] = E.data?.items, e[22] = D);
+    let O = D,
+        k = i == null || _.isLoading ? null : b ? _.data?.kind === `openai_native` || p === `pending-requests` && E.fetchStatus !== `idle` ? !0 : E.isPending ? null : E.isError || O || !!E.data?.cursor : !1,
+        A = h === !1 && p === `groups` || k !== !0 && p === `pending-requests` ? `workspace` : p,
+        ne;
+    e[23] !== i || e[24] !== d || e[25] !== p ? (ne = p !== `pending-requests` && d && i != null && (i.isEnterprisey() || i.isEdu()) && v(Mn), e[23] = i, e[24] = d, e[25] = p, e[26] = ne) : ne = e[26];
+    let P = ne,
+        F = p !== `pending-requests` && d && i != null,
+        I;
+    e[27] !== h || e[28] !== k ? (I = e => !(h === !1 && e === `groups` || k !== !0 && e === `pending-requests`), e[27] = h, e[28] = k, e[29] = I) : I = e[29];
+    let L = ft.filter(I),
+        R, ie;
+    e[30] === c ? (R = e[31], ie = e[32]) : (R = [`spend-controls-explainability`, c], ie = async () => {
+        if (c == null) throw Error(`Workspace id is required`);
+        return await o.safeGet(`/accounts/{account_id}/spend-controls/explainability`, {
+            parameters: {
+                path: {
+                    account_id: c
+                }
+            }
+        })
+    }, e[30] = c, e[31] = R, e[32] = ie);
+    let z = c != null && P,
+        B;
+    e[33] !== R || e[34] !== ie || e[35] !== z ? (B = {
+        queryKey: R,
+        queryFn: ie,
+        enabled: z
+    }, e[33] = R, e[34] = ie, e[35] = z, e[36] = B) : B = e[36];
+    let V = re(B),
+        H = P ? V.data : void 0,
+        U;
+    if (e[37] !== F) {
+        let t = F ? u(Pn) : null;
+        U = t == null ? void 0 : {
+            thresholdCreditsPerMember: t.get(`low_limit_warning_threshold_credits_per_member`, Fn),
+            averageMonthlyCreditsPerMember: t.get(`low_limit_warning_average_monthly_credits_per_member`, In),
+            powerUserMonthlyCreditsPerMember: t.get(`low_limit_warning_power_user_monthly_credits_per_member`, Ln)
+        }, e[37] = F, e[38] = U
+    } else U = e[38];
+    let W = U,
+        oe, se;
+    e[39] !== r || e[40] !== E.isFetching || e[41] !== p || e[42] !== h || e[43] !== k ? (oe = () => {
+        (h === !1 && p === `groups` || k === !1 && !E.isFetching && p === `pending-requests`) && r(ut(`workspace`), {
+            replace: !0
+        })
+    }, se = [r, E.isFetching, p, h, k], e[39] = r, e[40] = E.isFetching, e[41] = p, e[42] = h, e[43] = k, e[44] = oe, e[45] = se) : (oe = e[44], se = e[45]), (0, En.useEffect)(oe, se);
+    let G;
+    e[46] === t ? G = e[47] : (G = t.formatMessage($.browserTitle), e[46] = t, e[47] = G);
+    let ce;
+    e[48] === G ? ce = e[49] : (ce = (0, Q.jsx)(Ge, {
+        children: (0, Q.jsx)(`title`, {
+            children: G
+        })
+    }), e[48] = G, e[49] = ce);
+    let le = Fe,
+        K;
+    e[50] === t ? K = e[51] : (K = t.formatMessage($.pageTitle), e[50] = t, e[51] = K);
+    let ue = P ? $.pageSubtitleWithEstimatedValues : $.pageSubtitle,
+        de;
+    e[52] === ue ? de = e[53] : (de = (0, Q.jsx)(M, {
+        ...ue
+    }), e[52] = ue, e[53] = de);
+    let fe;
+    e[54] !== A || e[55] !== O || e[56] !== r ? (fe = e => (0, Q.jsx)(`button`, {
+        type: `button`,
+        className: g(`min-h-[32px] border-b py-[10px] text-[14px] leading-5 whitespace-nowrap`, A === e ? `text-token-text-primary border-current` : `text-token-text-tertiary hover:text-token-text-secondary cursor-pointer border-transparent`),
+        onClick: () => r(ut(e)),
+        children: (0, Q.jsxs)(`span`, {
+            className: `inline-flex items-center gap-1.5`,
+            children: [(0, Q.jsx)(M, {
+                ...$[e]
+            }), e === `pending-requests` && O ? (0, Q.jsxs)(Q.Fragment, {
+                children: [(0, Q.jsx)(xe, {
+                    color: `blue`,
+                    className: `shrink-0`
+                }), (0, Q.jsx)(`span`, {
+                    className: `sr-only`,
+                    children: (0, Q.jsx)(M, {
+                        ...$.pendingRequestsAvailable
+                    })
+                })]
+            }) : null]
+        })
+    }, e), e[54] = A, e[55] = O, e[56] = r, e[57] = fe) : fe = e[57];
+    let pe = L.map(fe),
+        me;
+    e[58] === pe ? me = e[59] : (me = (0, Q.jsx)(`div`, {
+        className: `flex items-end justify-between gap-4`,
+        children: (0, Q.jsx)(`div`, {
+            className: `flex items-center gap-4`,
+            children: pe
+        })
+    }), e[58] = pe, e[59] = me);
+    let he;
+    e[60] !== le || e[61] !== K || e[62] !== de || e[63] !== me ? (he = (0, Q.jsx)(le, {
+        contentWidth: `medium`,
+        title: K,
+        subtitle: de,
+        tabsHeader: me
+    }), e[60] = le, e[61] = K, e[62] = de, e[63] = me, e[64] = he) : he = e[64];
+    let _e;
+    e[65] !== A || e[66] !== H || e[67] !== W ? (_e = A === `workspace` ? (0, Q.jsx)(rn, {
+        explainabilityContext: H,
+        lowLimitWarningConfig: W
+    }) : null, e[65] = A, e[66] = H, e[67] = W, e[68] = _e) : _e = e[68];
+    let ye;
+    e[69] !== A || e[70] !== H || e[71] !== W ? (ye = A === `users` ? (0, Q.jsx)(on, {
+        explainabilityContext: H,
+        lowLimitWarningConfig: W
+    }) : null, e[69] = A, e[70] = H, e[71] = W, e[72] = ye) : ye = e[72];
+    let be;
+    e[73] !== A || e[74] !== H || e[75] !== W ? (be = A === `groups` ? (0, Q.jsx)(fn, {
+        explainabilityContext: H,
+        lowLimitWarningConfig: W
+    }) : null, e[73] = A, e[74] = H, e[75] = W, e[76] = be) : be = e[76];
+    let Se;
+    e[77] === A ? Se = e[78] : (Se = A === `pending-requests` ? (0, Q.jsx)(Et, {}) : null, e[77] = A, e[78] = Se);
+    let Ce;
+    e[79] !== _e || e[80] !== ye || e[81] !== be || e[82] !== Se ? (Ce = (0, Q.jsx)(Pe, {
+        contentWidth: `medium`,
+        showSpinner: !1,
+        children: (0, Q.jsxs)(`div`, {
+            className: `pt-4 pb-8`,
+            children: [_e, ye, be, Se]
+        })
+    }), e[79] = _e, e[80] = ye, e[81] = be, e[82] = Se, e[83] = Ce) : Ce = e[83];
+    let we;
+    return e[84] !== ce || e[85] !== he || e[86] !== Ce ? (we = (0, Q.jsxs)(Q.Fragment, {
+        children: [ce, he, Ce]
+    }), e[84] = ce, e[85] = he, e[86] = Ce, e[87] = we) : we = e[87], we
+}
+
+function tn(e) {
+    return e.status === `pending`
+}
+
+function nn(e) {
+    return e.currentWorkspace
+}
+
+function rn(e) {
+    "use forget";
+    let t = (0, Tn.c)(58),
+        {
+            explainabilityContext: n,
+            lowLimitWarningConfig: r
+        } = e,
+        i = ae(),
+        a = ne(),
+        s = ee(),
+        c = te(an),
+        {
+            role: l
+        } = Ne(),
+        [u, d] = (0, En.useState)(!1),
+        f = s?.id,
+        p;
+    t[0] !== l || t[1] !== c ? (p = l == null ? c != null && ve(c.role) : ve(l), t[0] = l, t[1] = c, t[2] = p) : p = t[2];
+    let m = p,
+        h, g;
+    t[3] === f ? (h = t[4], g = t[5]) : (h = [`workspace-spend-controls`, f], g = async () => {
+        if (!f) throw Error(`Workspace id is required`);
+        return await o.safeGet(`/accounts/{account_id}/spend-controls/workspace`, {
+            parameters: {
+                path: {
+                    account_id: f
+                }
+            }
+        })
+    }, t[3] = f, t[4] = h, t[5] = g);
+    let _ = !!f,
+        y;
+    t[6] !== h || t[7] !== g || t[8] !== _ ? (y = {
+        queryKey: h,
+        queryFn: g,
+        enabled: _
+    }, t[6] = h, t[7] = g, t[8] = _, t[9] = y) : y = t[9];
+    let b = re(y),
+        S;
+    t[10] === f ? S = t[11] : (S = async e => {
+        if (!f) throw Error(`Workspace id is required`);
+        return await o.safePost(`/accounts/{account_id}/settings/seat_type_credit_limits`, {
+            parameters: {
+                path: {
+                    account_id: f
+                }
+            },
+            requestBody: wn(e)
+        })
+    }, t[10] = f, t[11] = S);
+    let C;
+    t[12] !== a || t[13] !== f ? (C = async e => {
+        if (!f) throw Error(`Workspace id is required`);
+        a.setQueryData([`workspace-settings`, f], e), await a.invalidateQueries({
+            queryKey: [`workspace-settings`, f]
+        }), await a.invalidateQueries({
+            queryKey: [`workspace-spend-controls`, f]
+        }), await Qe({
+            queryClient: a,
+            workspaceId: f,
+            refetchType: `all`
+        })
+    }, t[12] = a, t[13] = f, t[14] = C) : C = t[14];
+    let w;
+    t[15] !== S || t[16] !== C ? (w = {
+        mutationFn: S,
+        onSuccess: C
+    }, t[15] = S, t[16] = C, t[17] = w) : w = t[17];
+    let T = ie(w),
+        D = b.data?.default_user_credit_limits,
+        O;
+    t[18] === D ? O = t[19] : (O = pe(D), t[18] = D, t[19] = O);
+    let k = O,
+        A = typeof k == `number` ? k : null,
+        j = r != null && (u || A != null && A < r.thresholdCreditsPerMember) && v(Nn) ? r : void 0,
+        N;
+    t[20] !== i || t[21] !== T ? (N = async e => {
+        try {
+            await T.mutateAsync(e), E().success(i.formatMessage($.limitSaveSuccess), {
+                hasCloseButton: !0
+            }), d(!1)
+        } catch {
+            E().warning(i.formatMessage($.limitSaveError), {
+                hasCloseButton: !0
+            })
+        }
+    }, t[20] = i, t[21] = T, t[22] = N) : N = t[22];
+    let P = N,
+        F;
+    t[23] !== u || t[24] !== P ? (F = async e => {
+        u && await P(e)
+    }, t[23] = u, t[24] = P, t[25] = F) : F = t[25];
+    let I = F,
+        L;
+    t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (L = (0, Q.jsx)(`div`, {
+        className: `text-token-text-primary text-base leading-[26px] font-semibold tracking-[-0.32px]`,
+        children: (0, Q.jsx)(M, {
+            ...$.workspaceDefaultLimitLabel
+        })
+    }), t[26] = L) : L = t[26];
+    let R;
+    t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (R = (0, Q.jsxs)(`div`, {
+        children: [L, (0, Q.jsx)(`div`, {
+            className: `text-token-text-tertiary text-sm leading-5 tracking-[-0.15px]`,
+            children: (0, Q.jsx)(M, {
+                ...$.workspaceDefaultLimitDescription
+            })
+        })]
+    }), t[27] = R) : R = t[27];
+    let z;
+    t[28] !== k || t[29] !== n || t[30] !== m || t[31] !== T || t[32] !== b.isError || t[33] !== b.isFetching || t[34] !== b.isLoading ? (z = (0, Q.jsxs)(`div`, {
+        className: `flex w-full items-start justify-between`,
+        children: [R, b.isLoading || b.isFetching ? (0, Q.jsx)(x, {
+            className: `text-token-text-tertiary mt-1 h-4 w-4`
+        }) : (0, Q.jsxs)(`div`, {
+            className: `flex flex-col items-end gap-0.5`,
+            children: [(0, Q.jsx)(Ye, {
+                explainabilityContext: n,
+                limit: k
+            }), (0, Q.jsx)(vn, {
+                disabled: !m,
+                testId: `workspace-usage-limits-admin-disabled-tooltip-trigger`,
+                children: (0, Q.jsx)(_n, {
+                    disabled: !m || b.isError || T.isPending,
+                    onClick: () => d(!0),
+                    label: k == null ? $.addButton : $.editButton
+                })
+            })]
+        })]
+    }), t[28] = k, t[29] = n, t[30] = m, t[31] = T, t[32] = b.isError, t[33] = b.isFetching, t[34] = b.isLoading, t[35] = z) : z = t[35];
+    let B;
+    t[36] !== j || t[37] !== A || t[38] !== n ? (B = (0, Q.jsx)(Je, {
+        className: `mt-4`,
+        explainabilityContext: n,
+        limit: A,
+        lowLimitWarningConfig: j,
+        variant: `workspace-default`
+    }), t[36] = j, t[37] = A, t[38] = n, t[39] = B) : B = t[39];
+    let V;
+    t[40] !== z || t[41] !== B ? (V = (0, Q.jsxs)(`div`, {
+        className: `border-token-border-default border-b pb-4`,
+        children: [z, B]
+    }), t[40] = z, t[41] = B, t[42] = V) : V = t[42];
+    let H;
+    t[43] !== m || t[44] !== f ? (H = (0, Q.jsx)(Ht, {
+        workspaceId: f,
+        canEdit: m
+    }), t[43] = m, t[44] = f, t[45] = H) : H = t[45];
+    let U;
+    t[46] !== V || t[47] !== H ? (U = (0, Q.jsxs)(`section`, {
+        children: [V, H]
+    }), t[46] = V, t[47] = H, t[48] = U) : U = t[48];
+    let W;
+    t[49] !== j || t[50] !== k || t[51] !== n || t[52] !== I || t[53] !== u ? (W = u ? (0, Q.jsx)(ct, {
+        currentLimit: k,
+        placeholder: ``,
+        onClose: () => d(!1),
+        onSave: I,
+        renderLimitContext: e => (0, Q.jsx)(qe, {
+            explainabilityContext: n,
+            limit: e,
+            lowLimitWarningConfig: j
+        })
+    }) : null, t[49] = j, t[50] = k, t[51] = n, t[52] = I, t[53] = u, t[54] = W) : W = t[54];
+    let oe;
+    return t[55] !== U || t[56] !== W ? (oe = (0, Q.jsxs)(Q.Fragment, {
+        children: [U, W]
+    }), t[55] = U, t[56] = W, t[57] = oe) : oe = t[57], oe
+}
+
+function an(e) {
+    return e.currentWorkspace
+}
+
+function on(e) {
+    "use forget";
+    let t = (0, Tn.c)(83),
+        {
+            explainabilityContext: n,
+            lowLimitWarningConfig: r
+        } = e,
+        i = ae(),
+        a = ne(),
+        s = ee(),
+        c = te(dn),
+        {
+            role: l
+        } = Ne(),
+        [u] = L(),
+        d;
+    t[0] === u ? d = t[1] : (d = u.get(`query`) ?? ``, t[0] = u, t[1] = d);
+    let p = d,
+        [m, h] = (0, En.useState)(0),
+        [_, y] = (0, En.useState)(p),
+        [b, S] = (0, En.useState)(p),
+        C;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (C = {
+        field: `name`,
+        direction: `ASC`
+    }, t[2] = C) : C = t[2];
+    let [w, T] = (0, En.useState)(C), [D, O] = (0, En.useState)(null), k = D != null && r != null && v(Nn) ? r : void 0, A = s?.id, j;
+    t[3] !== l || t[4] !== c ? (j = l == null ? c != null && ve(c.role) : ve(l), t[3] = l, t[4] = c, t[5] = j) : j = t[5];
+    let N = j,
+        P;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (P = f(e => {
+        h(0), S(e)
+    }, 300, {
+        leading: !1,
+        trailing: !0
+    }), t[6] = P) : P = t[6];
+    let F = P,
+        I, R;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (I = () => () => F.cancel(), R = [F], t[7] = I, t[8] = R) : (I = t[7], R = t[8]), (0, En.useEffect)(I, R);
+    let B, V;
+    t[9] === p ? (B = t[10], V = t[11]) : (B = () => {
+        h(0), y(p), S(p)
+    }, V = [p], t[9] = p, t[10] = B, t[11] = V), (0, En.useEffect)(B, V);
+    let H = m * kn,
+        U;
+    t[12] !== b || t[13] !== w.direction || t[14] !== w.field || t[15] !== H || t[16] !== A ? (U = nt(A, H, b, kn, w.field, w.direction), t[12] = b, t[13] = w.direction, t[14] = w.field, t[15] = H, t[16] = A, t[17] = U) : U = t[17];
+    let W;
+    t[18] !== b || t[19] !== m || t[20] !== w.direction || t[21] !== w.field || t[22] !== A ? (W = async () => {
+        if (!A) throw Error(`Workspace id is required`);
+        return await o.safeGet(`/accounts/{account_id}/spend-controls/users`, {
+            parameters: {
+                path: {
+                    account_id: A
+                },
+                query: {
+                    offset: m * kn,
+                    limit: kn,
+                    query: b,
+                    order_by_field: w.field,
+                    order_by_direction: w.direction
+                }
+            }
+        })
+    }, t[18] = b, t[19] = m, t[20] = w.direction, t[21] = w.field, t[22] = A, t[23] = W) : W = t[23];
+    let oe = !!A,
+        se;
+    t[24] !== U || t[25] !== W || t[26] !== oe ? (se = {
+        queryKey: U,
+        queryFn: W,
+        enabled: oe,
+        placeholderData: z
+    }, t[24] = U, t[25] = W, t[26] = oe, t[27] = se) : se = t[27];
+    let G = re(se),
+        ce = G.data,
+        le;
+    t[28] === A ? le = t[29] : (le = async e => {
+        let {
+            userId: t,
+            limit: n
+        } = e;
+        if (!A) throw Error(`Workspace id is required`);
+        return await o.safePatch(`/accounts/{account_id}/users/{user_id}`, {
+            parameters: {
+                path: {
+                    account_id: A,
+                    user_id: t
+                }
+            },
+            requestBody: {
+                credit_limits: de(n)
+            }
+        })
+    }, t[28] = A, t[29] = le);
+    let K;
+    t[30] !== a || t[31] !== A ? (K = async e => {
+        if (!A) return {
+            previousCacheEntries: []
+        };
+        await it({
+            queryClient: a,
+            workspaceId: A
+        });
+        let t = et({
+            queryClient: a,
+            workspaceId: A
+        });
+        return rt({
+            queryClient: a,
+            workspaceId: A,
+            userId: e.userId,
+            creditLimits: de(e.limit)
+        }), {
+            previousCacheEntries: t
+        }
+    }, t[30] = a, t[31] = A, t[32] = K) : K = t[32];
+    let ue;
+    t[33] === a ? ue = t[34] : (ue = (e, t, n) => {
+        n != null && tt({
+            queryClient: a,
+            snapshot: n.previousCacheEntries
+        })
+    }, t[33] = a, t[34] = ue);
+    let fe;
+    t[35] !== a || t[36] !== A ? (fe = async (e, t) => {
+        A && (await Qe({
+            queryClient: a,
+            workspaceId: A,
+            refetchType: `active`
+        }), rt({
+            queryClient: a,
+            workspaceId: A,
+            userId: t.userId,
+            creditLimits: de(t.limit),
+            updateEffectiveHardCap: t.limit != null
+        }), await at({
+            queryClient: a,
+            workspaceId: A,
+            refetchType: `active`
+        }))
+    }, t[35] = a, t[36] = A, t[37] = fe) : fe = t[37];
+    let he;
+    t[38] !== le || t[39] !== K || t[40] !== ue || t[41] !== fe ? (he = {
+        mutationFn: le,
+        onMutate: K,
+        onError: ue,
+        onSuccess: fe
+    }, t[38] = le, t[39] = K, t[40] = ue, t[41] = fe, t[42] = he) : he = t[42];
+    let ge = ie(he),
+        _e;
+    t[43] !== D || t[44] !== i || t[45] !== ge ? (_e = async e => {
+        if (D != null) try {
+            await ge.mutateAsync({
+                userId: D.id,
+                limit: e
+            }), E().success(i.formatMessage($.limitSaveSuccess), {
+                hasCloseButton: !0
+            }), O(null)
+        } catch {
+            E().warning(i.formatMessage($.limitSaveError), {
+                hasCloseButton: !0
+            })
+        }
+    }, t[43] = D, t[44] = i, t[45] = ge, t[46] = _e) : _e = t[46];
+    let be = _e,
+        xe;
+    t[47] !== ce?.items || t[48] !== G.isError ? (xe = G.isError ? [] : ce?.items ?? [], t[47] = ce?.items, t[48] = G.isError, t[49] = xe) : xe = t[49];
+    let Se = xe,
+        Ce = Math.ceil((ce?.total ?? 0) / kn),
+        we = A == null || ce === void 0 && (G.isPending || G.isFetching),
+        Te = G.isPlaceholderData,
+        Ee, De;
+    t[50] !== Ce || t[51] !== m ? (Ee = () => {
+        m >= Ce && Ce !== 0 && h(Math.max(Ce - 1, 0))
+    }, De = [Ce, m], t[50] = Ce, t[51] = m, t[52] = Ee, t[53] = De) : (Ee = t[52], De = t[53]), (0, En.useEffect)(Ee, De);
+    let Oe;
+    t[54] === Symbol.for(`react.memo_cache_sentinel`) ? (Oe = e => {
+        y(e.target.value), F(e.target.value)
+    }, t[54] = Oe) : Oe = t[54];
+    let ke;
+    t[55] === i ? ke = t[56] : (ke = i.formatMessage($.searchUsersPlaceholder), t[55] = i, t[56] = ke);
+    let Ae;
+    t[57] !== _ || t[58] !== ke ? (Ae = (0, Q.jsx)(`div`, {
+        className: `mb-4.5 flex items-center justify-between`,
+        children: (0, Q.jsx)(ye, {
+            className: `w-full`,
+            value: _,
+            onChange: Oe,
+            placeholder: ke,
+            inputClassName: `w-full rounded-full! text-sm`
+        })
+    }), t[57] = _, t[58] = ke, t[59] = Ae) : Ae = t[59];
+    let je;
+    t[60] !== n || t[61] !== N || t[62] !== i || t[63] !== we || t[64] !== Te || t[65] !== Se || t[66] !== Ce || t[67] !== m || t[68] !== w.direction || t[69] !== w.field || t[70] !== G.isError ? (je = we ? (0, Q.jsx)(`div`, {
+        className: `flex min-h-[18rem] items-center justify-center`,
+        children: (0, Q.jsx)(x, {})
+    }) : (0, Q.jsxs)(Q.Fragment, {
+        children: [(0, Q.jsxs)(`div`, {
+            className: `relative`,
+            children: [(0, Q.jsxs)(q.Root, {
+                fixed: !0,
+                size: `normal`,
+                children: [(0, Q.jsxs)(`colgroup`, {
+                    children: [(0, Q.jsx)(`col`, {
+                        className: `w-[38%]`
+                    }), (0, Q.jsx)(`col`, {
+                        className: `w-[18%]`
+                    }), (0, Q.jsx)(`col`, {
+                        className: `w-[22%]`
+                    }), (0, Q.jsx)(`col`, {
+                        className: `w-[22%]`
+                    })]
+                }), (0, Q.jsxs)(q.Header, {
+                    children: [(0, Q.jsx)(yn, {
+                        active: w.field === `name`,
+                        direction: w.direction,
+                        onSort: () => {
+                            h(0), T(un)
+                        },
+                        children: (0, Q.jsx)(M, {
+                            ...$.nameColumn
+                        })
+                    }), (0, Q.jsx)(yn, {
+                        active: w.field === `current_month_usage`,
+                        direction: w.direction,
+                        onSort: () => {
+                            h(0), T(ln)
+                        },
+                        children: (0, Q.jsx)(M, {
+                            ...$.usedThisMonthColumn
+                        })
+                    }), (0, Q.jsx)(yn, {
+                        active: w.field === `effective_hard_cap_limit`,
+                        direction: w.direction,
+                        onSort: () => {
+                            h(0), T(cn)
+                        },
+                        children: (0, Q.jsx)(M, {
+                            ...$.currentLimitColumn
+                        })
+                    }), (0, Q.jsx)(yn, {
+                        active: w.field === `override_hard_cap_limit`,
+                        direction: w.direction,
+                        onSort: () => {
+                            h(0), T(sn)
+                        },
+                        children: (0, Q.jsx)(M, {
+                            ...$.overrideLimitColumn
+                        })
+                    })]
+                }), (0, Q.jsxs)(q.Body, {
+                    className: g(Te && `pointer-events-none opacity-50`),
+                    children: [G.isError ? (0, Q.jsx)(q.Row, {
+                        className: `[&>td]:py-3`,
+                        children: (0, Q.jsx)(q.Cell, {
+                            colSpan: 4,
+                            children: (0, Q.jsx)(`div`, {
+                                className: `text-token-text-tertiary`,
+                                children: (0, Q.jsx)(M, {
+                                    ...$.usersLoadError
+                                })
+                            })
+                        })
+                    }) : null, Se.map(e => {
+                        let t = e.name || e.email || e.id,
+                            r = e.email || i.formatMessage($.noEmail),
+                            a = pe(e.override_credit_limits);
+                        return (0, Q.jsxs)(q.Row, {
+                            className: `[&>td]:py-3`,
+                            children: [(0, Q.jsxs)(q.Cell, {
+                                divClassName: `min-h-[40px] min-w-0 items-center`,
+                                children: [(0, Q.jsx)(`div`, {
+                                    className: `relative shrink-0 pe-3`,
+                                    children: (0, Q.jsx)(Ue, {
+                                        userName: t,
+                                        isScimManaged: e.is_scim_managed
+                                    })
+                                }), (0, Q.jsxs)(`div`, {
+                                    className: `min-w-0`,
+                                    children: [(0, Q.jsx)(`div`, {
+                                        className: `min-w-0 truncate`,
+                                        title: t,
+                                        children: t
+                                    }), (0, Q.jsx)(`div`, {
+                                        className: `text-body-small-regular text-token-text-secondary truncate`,
+                                        title: r,
+                                        children: r
+                                    })]
+                                })]
+                            }), (0, Q.jsx)(q.Cell, {
+                                children: (0, Q.jsx)(M, {
+                                    ...$.creditValue,
+                                    values: {
+                                        limit: i.formatNumber(e.current_month_usage ?? 0, {
+                                            maximumFractionDigits: 1
+                                        })
+                                    }
+                                })
+                            }), (0, Q.jsx)(q.Cell, {
+                                children: (0, Q.jsx)(xn, {
+                                    effectiveHardCap: e.effective_hard_cap,
+                                    inheritedHardCap: e.inherited_hard_cap,
+                                    explainabilityContext: n
+                                })
+                            }), (0, Q.jsx)(q.Cell, {
+                                children: (0, Q.jsxs)(`div`, {
+                                    className: `flex flex-col items-start gap-0.5`,
+                                    children: [a == null ? (0, Q.jsx)(`span`, {
+                                        className: `text-token-text-secondary`,
+                                        children: (0, Q.jsx)(M, {
+                                            ...$.noOverride
+                                        })
+                                    }) : (0, Q.jsx)(Ye, {
+                                        explainabilityContext: n,
+                                        limit: a
+                                    }), (0, Q.jsx)(vn, {
+                                        disabled: !N,
+                                        testId: `${e.id}-usage-limits-admin-disabled-tooltip-trigger`,
+                                        children: (0, Q.jsx)(_n, {
+                                            disabled: !N || Te,
+                                            onClick: () => O(e),
+                                            label: a == null ? $.addButton : $.editButton
+                                        })
+                                    })]
+                                })
+                            })]
+                        }, e.id)
+                    }), !G.isError && Se.length === 0 ? (0, Q.jsx)(q.Row, {
+                        className: `[&>td]:py-3`,
+                        children: (0, Q.jsx)(q.Cell, {
+                            colSpan: 4,
+                            children: (0, Q.jsx)(`div`, {
+                                className: `text-token-text-tertiary`,
+                                children: (0, Q.jsx)(M, {
+                                    ...$.noUsersFound
+                                })
+                            })
+                        })
+                    }) : null]
+                })]
+            }), Te ? (0, Q.jsx)(`div`, {
+                className: `pointer-events-none absolute inset-0 flex items-center justify-center`,
+                children: (0, Q.jsx)(x, {
+                    className: `text-token-text-tertiary h-5 w-5`
+                })
+            }) : null]
+        }), (0, Q.jsx)(`div`, {
+            className: `relative mt-4 min-h-[20px]`,
+            children: Ce > 1 ? (0, Q.jsx)(`div`, {
+                className: `absolute start-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 justify-center`,
+                children: (0, Q.jsx)(me, {
+                    currentPage: m,
+                    onChangeIndex: h,
+                    length: Ce
+                })
+            }) : null
+        })]
+    }), t[60] = n, t[61] = N, t[62] = i, t[63] = we, t[64] = Te, t[65] = Se, t[66] = Ce, t[67] = m, t[68] = w.direction, t[69] = w.field, t[70] = G.isError, t[71] = je) : je = t[71];
+    let Me;
+    t[72] !== Ae || t[73] !== je ? (Me = (0, Q.jsxs)(`section`, {
+        children: [Ae, je]
+    }), t[72] = Ae, t[73] = je, t[74] = Me) : Me = t[74];
+    let Pe;
+    t[75] !== k || t[76] !== D || t[77] !== n || t[78] !== be ? (Pe = D == null ? null : (0, Q.jsx)(ct, {
+        allowUnlimited: !0,
+        currentLimit: pe(D.override_credit_limits),
+        getValidationResult: void 0,
+        placeholder: ``,
+        onClose: () => O(null),
+        onSave: be,
+        renderLimitContext: e => (0, Q.jsx)(qe, {
+            explainabilityContext: n,
+            limit: e,
+            lowLimitWarningConfig: k
+        })
+    }), t[75] = k, t[76] = D, t[77] = n, t[78] = be, t[79] = Pe) : Pe = t[79];
+    let Fe;
+    return t[80] !== Me || t[81] !== Pe ? (Fe = (0, Q.jsxs)(Q.Fragment, {
+        children: [Me, Pe]
+    }), t[80] = Me, t[81] = Pe, t[82] = Fe) : Fe = t[82], Fe
+}
+
+function sn(e) {
+    return bn(e, `override_hard_cap_limit`, `DESC`)
+}
+
+function cn(e) {
+    return bn(e, `effective_hard_cap_limit`, `DESC`)
+}
+
+function ln(e) {
+    return bn(e, `current_month_usage`, `DESC`)
+}
+
+function un(e) {
+    return bn(e, `name`, `ASC`)
+}
+
+function dn(e) {
+    return e.currentWorkspace
+}
+
+function fn(e) {
+    "use forget";
+    let t = (0, Tn.c)(52),
+        {
+            explainabilityContext: n,
+            lowLimitWarningConfig: r
+        } = e,
+        i = ae(),
+        a = ne(),
+        s = ee(),
+        c = te(gn),
+        {
+            role: l
+        } = Ne(),
+        [u, d] = (0, En.useState)(``),
+        f;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (f = {
+        field: `group_name`,
+        direction: `ASC`
+    }, t[0] = f) : f = t[0];
+    let [p, m] = (0, En.useState)(f), [h, g] = (0, En.useState)(null), _ = h != null && r != null && v(Nn) ? r : void 0, y = s?.id, b;
+    t[1] !== l || t[2] !== c ? (b = l == null ? c != null && ve(c.role) : ve(l), t[1] = l, t[2] = c, t[3] = b) : b = t[3];
+    let S = b,
+        C, w;
+    t[4] === y ? (C = t[5], w = t[6]) : (C = [`group-spend-controls`, y], w = async () => {
+        if (!y) throw Error(`Workspace id is required`);
+        return await o.safeGet(`/accounts/{account_id}/spend-controls/groups`, {
+            parameters: {
+                path: {
+                    account_id: y
+                }
+            }
+        })
+    }, t[4] = y, t[5] = C, t[6] = w);
+    let T = !!y,
+        D;
+    t[7] !== C || t[8] !== w || t[9] !== T ? (D = {
+        queryKey: C,
+        queryFn: w,
+        enabled: T
+    }, t[7] = C, t[8] = w, t[9] = T, t[10] = D) : D = t[10];
+    let O = re(D),
+        k;
+    t[11] === y ? k = t[12] : (k = async e => {
+        let {
+            groupId: t,
+            limit: n
+        } = e;
+        if (!y) throw Error(`Workspace id is required`);
+        return await o.safePatch(`/accounts/{account_id}/groups/{group_id}/spend-controls`, {
+            parameters: {
+                path: {
+                    account_id: y,
+                    group_id: t
+                }
+            },
+            requestBody: {
+                default_user_credit_limits: de(n)
+            }
+        })
+    }, t[11] = y, t[12] = k);
+    let A;
+    t[13] !== a || t[14] !== y ? (A = async () => {
+        y && (await a.invalidateQueries({
+            queryKey: [`group-spend-controls`, y]
+        }), await Qe({
+            queryClient: a,
+            workspaceId: y,
+            refetchType: `all`
+        }))
+    }, t[13] = a, t[14] = y, t[15] = A) : A = t[15];
+    let j;
+    t[16] !== k || t[17] !== A ? (j = {
+        mutationFn: k,
+        onSuccess: A
+    }, t[16] = k, t[17] = A, t[18] = j) : j = t[18];
+    let N = ie(j),
+        P = O.data,
+        F, I;
+    if (t[19] !== h || t[20] !== n || t[21] !== u || t[22] !== O.isFetching || t[23] !== O.isPending || t[24] !== P || t[25] !== S || t[26] !== i || t[27] !== p || t[28] !== N || t[29] !== y) {
+        let e = Array.isArray(P) ? P : P?.items ?? [],
+            r = y == null || O.isPending || O.isFetching,
+            a = u.trim().toLowerCase(),
+            o = a === `` ? e : e.filter(e => e.group_name.toLowerCase().includes(a)),
+            s;
+        t[32] === p ? s = t[33] : (s = (e, t) => {
+            let n;
+            if (p.field === `group_name`) n = e.group_name.localeCompare(t.group_name);
+            else if (p.field === `num_members`) n = e.num_members - t.num_members;
+            else {
+                let r = pe(e.default_user_credit_limits),
+                    i = pe(t.default_user_credit_limits);
+                if (r == null) return i == null ? 0 : 1;
+                if (i == null) return -1;
+                let a = [r === ue, typeof r == `number` ? r : 0],
+                    o = [i === ue, typeof i == `number` ? i : 0];
+                n = Number(a[0]) - Number(o[0]) || a[1] - o[1]
+            }
+            return p.direction === `ASC` ? n : -n
+        }, t[32] = p, t[33] = s);
+        let c = o.toSorted(s),
+            l;
+        t[34] !== h || t[35] !== i || t[36] !== N ? (l = async e => {
+            if (h != null) try {
+                await N.mutateAsync({
+                    groupId: h.group_id,
+                    limit: e
+                }), E().success(i.formatMessage($.limitSaveSuccess), {
+                    hasCloseButton: !0
+                }), g(null)
+            } catch {
+                E().warning(i.formatMessage($.limitSaveError), {
+                    hasCloseButton: !0
+                })
+            }
+        }, t[34] = h, t[35] = i, t[36] = N, t[37] = l) : l = t[37], F = l;
+        let f;
+        t[38] === Symbol.for(`react.memo_cache_sentinel`) ? (f = e => d(e.target.value), t[38] = f) : f = t[38];
+        let _;
+        t[39] === i ? _ = t[40] : (_ = i.formatMessage($.searchGroupsPlaceholder), t[39] = i, t[40] = _);
+        let v;
+        t[41] !== u || t[42] !== _ ? (v = (0, Q.jsx)(`div`, {
+            className: `mb-4.5 flex items-center justify-between`,
+            children: (0, Q.jsx)(ye, {
+                className: `w-full`,
+                value: u,
+                onChange: f,
+                placeholder: _,
+                inputClassName: `w-full rounded-full! text-sm`
+            })
+        }), t[41] = u, t[42] = _, t[43] = v) : v = t[43], I = (0, Q.jsxs)(`section`, {
+            children: [v, r ? (0, Q.jsx)(`div`, {
+                className: `flex min-h-[18rem] items-center justify-center`,
+                children: (0, Q.jsx)(x, {})
+            }) : (0, Q.jsxs)(q.Root, {
+                fixed: !0,
+                size: `normal`,
+                children: [(0, Q.jsxs)(`colgroup`, {
+                    children: [(0, Q.jsx)(`col`, {
+                        className: `w-[34%]`
+                    }), (0, Q.jsx)(`col`, {
+                        className: `w-[27%]`
+                    }), (0, Q.jsx)(`col`, {
+                        className: `w-[39%]`
+                    })]
+                }), (0, Q.jsxs)(q.Header, {
+                    children: [(0, Q.jsx)(yn, {
+                        active: p.field === `group_name`,
+                        direction: p.direction,
+                        onSort: () => m(hn),
+                        children: (0, Q.jsx)(M, {
+                            ...$.groupColumn
+                        })
+                    }), (0, Q.jsx)(yn, {
+                        active: p.field === `num_members`,
+                        direction: p.direction,
+                        onSort: () => m(mn),
+                        children: (0, Q.jsx)(M, {
+                            ...$.membersColumn
+                        })
+                    }), (0, Q.jsx)(yn, {
+                        active: p.field === `default_limit`,
+                        direction: p.direction,
+                        onSort: () => m(pn),
+                        children: (0, Q.jsx)(M, {
+                            ...$.defaultMonthlyLimitColumn
+                        })
+                    })]
+                }), (0, Q.jsxs)(q.Body, {
+                    children: [c.map(e => {
+                        let t = pe(e.default_user_credit_limits);
+                        return (0, Q.jsxs)(q.Row, {
+                            className: `[&>td]:py-3`,
+                            children: [(0, Q.jsxs)(q.Cell, {
+                                divClassName: `min-h-[40px] min-w-0 items-center`,
+                                children: [(0, Q.jsx)(`div`, {
+                                    className: `bg-token-bg-tertiary text-token-text-secondary me-3 flex size-8 shrink-0 items-center justify-center rounded-full`,
+                                    children: (0, Q.jsx)(Oe, {
+                                        className: `icon-sm`
+                                    })
+                                }), (0, Q.jsx)(R, {
+                                    className: `min-w-0 truncate hover:underline focus-visible:underline focus-visible:outline-none`,
+                                    to: `/admin/groups/${e.group_id}`,
+                                    title: e.group_name,
+                                    children: e.group_name
+                                })]
+                            }), (0, Q.jsx)(q.Cell, {
+                                children: i.formatNumber(e.num_members)
+                            }), (0, Q.jsx)(q.Cell, {
+                                children: (0, Q.jsxs)(`div`, {
+                                    className: `flex flex-col items-start gap-0.5`,
+                                    children: [(0, Q.jsx)(Ye, {
+                                        explainabilityContext: n,
+                                        limit: t
+                                    }), (0, Q.jsx)(_n, {
+                                        disabled: !S,
+                                        onClick: () => g(e),
+                                        label: t == null ? $.addButton : $.editButton
+                                    })]
+                                })
+                            })]
+                        }, e.group_id)
+                    }), c.length === 0 ? (0, Q.jsx)(q.Row, {
+                        className: `[&>td]:py-3`,
+                        children: (0, Q.jsx)(q.Cell, {
+                            colSpan: 3,
+                            children: (0, Q.jsx)(`div`, {
+                                className: `text-token-text-tertiary`,
+                                children: (0, Q.jsx)(M, {
+                                    ...$.noGroupsFound
+                                })
+                            })
+                        })
+                    }) : null]
+                })]
+            })]
+        }), t[19] = h, t[20] = n, t[21] = u, t[22] = O.isFetching, t[23] = O.isPending, t[24] = P, t[25] = S, t[26] = i, t[27] = p, t[28] = N, t[29] = y, t[30] = F, t[31] = I
+    } else F = t[30], I = t[31];
+    let L;
+    t[44] !== _ || t[45] !== h || t[46] !== n || t[47] !== F ? (L = h == null ? null : (0, Q.jsx)(ct, {
+        allowUnlimited: !0,
+        currentLimit: pe(h.default_user_credit_limits),
+        getValidationResult: void 0,
+        placeholder: ``,
+        onClose: () => g(null),
+        onSave: F,
+        renderLimitContext: e => (0, Q.jsx)(qe, {
+            explainabilityContext: n,
+            limit: e,
+            lowLimitWarningConfig: _
+        })
+    }), t[44] = _, t[45] = h, t[46] = n, t[47] = F, t[48] = L) : L = t[48];
+    let z;
+    return t[49] !== I || t[50] !== L ? (z = (0, Q.jsxs)(Q.Fragment, {
+        children: [I, L]
+    }), t[49] = I, t[50] = L, t[51] = z) : z = t[51], z
+}
+
+function pn(e) {
+    return bn(e, `default_limit`, `DESC`)
+}
+
+function mn(e) {
+    return bn(e, `num_members`, `DESC`)
+}
+
+function hn(e) {
+    return bn(e, `group_name`, `ASC`)
+}
+
+function gn(e) {
+    return e.currentWorkspace
+}
+
+function _n(e) {
+    "use forget";
+    let t = (0, Tn.c)(6),
+        {
+            disabled: n,
+            label: r,
+            onClick: i
+        } = e,
+        a;
+    t[0] === r ? a = t[1] : (a = (0, Q.jsx)(M, {
+        ...r
+    }), t[0] = r, t[1] = a);
+    let o;
+    return t[2] !== n || t[3] !== i || t[4] !== a ? (o = (0, Q.jsx)(`button`, {
+        type: `button`,
+        className: `disabled:text-token-text-tertiary text-sm font-medium text-blue-600 hover:text-blue-700 hover:underline focus-visible:underline focus-visible:outline-none disabled:cursor-not-allowed disabled:no-underline dark:text-blue-400 dark:hover:text-blue-300`,
+        disabled: n,
+        onClick: i,
+        children: a
+    }), t[2] = n, t[3] = i, t[4] = a, t[5] = o) : o = t[5], o
+}
+
+function vn(e) {
+    "use forget";
+    let t = (0, Tn.c)(6),
+        {
+            children: n,
+            disabled: r,
+            testId: i
+        } = e;
+    if (!r) {
+        let e;
+        return t[0] === n ? e = t[1] : (e = (0, Q.jsx)(Q.Fragment, {
+            children: n
+        }), t[0] = n, t[1] = e), e
+    }
+    let a;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Q.jsx)(M, {
+        ...$.adminDisabledTooltip
+    }), t[2] = a) : a = t[2];
+    let o;
+    return t[3] !== n || t[4] !== i ? (o = (0, Q.jsx)(h, {
+        label: a,
+        children: (0, Q.jsx)(`span`, {
+            className: `inline-flex`,
+            "data-testid": i,
+            children: n
+        })
+    }), t[3] = n, t[4] = i, t[5] = o) : o = t[5], o
+}
+
+function yn(e) {
+    "use forget";
+    let t = (0, Tn.c)(7),
+        {
+            active: n,
+            children: r,
+            direction: i,
+            onSort: a
+        } = e,
+        o = i === `ASC` ? Ce : we,
+        s;
+    t[0] !== o || t[1] !== n ? (s = n ? (0, Q.jsx)(o, {
+        "aria-hidden": `true`,
+        className: `icon-xs text-token-interactive-icon-tertiary-default`
+    }) : null, t[0] = o, t[1] = n, t[2] = s) : s = t[2];
+    let c;
+    return t[3] !== r || t[4] !== a || t[5] !== s ? (c = (0, Q.jsx)(q.HeaderCell, {
+        children: (0, Q.jsxs)(`button`, {
+            type: `button`,
+            className: `flex items-center gap-1 text-start`,
+            onClick: a,
+            children: [r, s]
+        })
+    }), t[3] = r, t[4] = a, t[5] = s, t[6] = c) : c = t[6], c
+}
+
+function bn(e, t, n) {
+    return {
+        field: t,
+        direction: e.field === t ? e.direction === `ASC` ? `DESC` : `ASC` : n
+    }
+}
+
+function xn(e) {
+    "use forget";
+    let t = (0, Tn.c)(10),
+        {
+            effectiveHardCap: n,
+            inheritedHardCap: r,
+            explainabilityContext: i
+        } = e;
+    if (n == null || n.source.kind === `role_based_personal_budget`) {
+        let e;
+        return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Q.jsx)(Ye, {
+            limit: null
+        }), t[0] = e) : e = t[0], e
+    }
+    let a = r?.source.kind === `role_based_personal_budget` ? null : r,
+        o;
+    t[1] !== n.source || t[2] !== a ? (o = Sn(n.source, a), t[1] = n.source, t[2] = a, t[3] = o) : o = t[3];
+    let s = o,
+        c;
+    t[4] === n.limit ? c = t[5] : (c = pe([n.limit]), t[4] = n.limit, t[5] = c);
+    let l;
+    return t[6] !== i || t[7] !== c || t[8] !== s ? (l = (0, Q.jsx)(Ye, {
+        creditValueTooltip: s,
+        explainabilityContext: i,
+        limit: c
+    }), t[6] = i, t[7] = c, t[8] = s, t[9] = l) : l = t[9], l
+}
+
+function Sn(e, t) {
+    switch (e.kind) {
+        case `individual_override`:
+            return {
+                label: (0, Q.jsx)(M, {
+                    ...$.userOverrideHardCapTooltipTitle
+                }), secondaryLabel: (0, Q.jsxs)(Q.Fragment, {
+                    children: [(0, Q.jsx)(M, {
+                        ...$.userOverrideHardCapTooltipDescription
+                    }), t == null ? null : (0, Q.jsxs)(Q.Fragment, {
+                        children: [(0, Q.jsx)(`br`, {}), (0, Q.jsx)(Cn, {
+                            inheritedHardCap: t
+                        })]
+                    })]
+                })
+            };
+        case `group_default`:
+            return {
+                label: (0, Q.jsx)(M, {
+                    ...$.groupDefaultHardCapTooltipTitle,
+                    values: {
+                        groupName: e.group_name
+                    }
+                }), secondaryLabel: (0, Q.jsx)(M, {
+                    ...$.groupDefaultHardCapTooltipDescription
+                })
+            };
+        case `workspace_default`:
+            return {
+                label: (0, Q.jsx)(M, {
+                    ...$.workspaceDefaultHardCapTooltipTitle
+                }), secondaryLabel: (0, Q.jsx)(M, {
+                    ...$.workspaceDefaultHardCapTooltipDescription,
+                    values: {
+                        seatType: e.seat_type === Dn ? (0, Q.jsx)(M, {
+                            ...$.chatgptSeatLabel
+                        }) : (0, Q.jsx)(M, {
+                            ...$.codexSeatLabel
+                        })
+                    }
+                })
+            }
+    }
+}
+
+function Cn(e) {
+    "use forget";
+    let t = (0, Tn.c)(10),
+        {
+            inheritedHardCap: n
+        } = e,
+        r;
+    t[0] === n.limit ? r = t[1] : (r = pe([n.limit]), t[0] = n.limit, t[1] = r);
+    let i = r;
+    switch (n.source.kind) {
+        case `group_default`: {
+            let e;
+            return t[2] !== n.limit || t[3] !== n.source.group_name || t[4] !== i ? (e = i === `unlimited_platform_max` ? (0, Q.jsx)(M, {
+                ...$.groupUnlimitedOutsideOverride,
+                values: {
+                    groupName: n.source.group_name
+                }
+            }) : (0, Q.jsx)(M, {
+                ...$.groupLimitOutsideOverride,
+                values: {
+                    groupName: n.source.group_name,
+                    limit: n.limit.limit
+                }
+            }), t[2] = n.limit, t[3] = n.source.group_name, t[4] = i, t[5] = e) : e = t[5], e
+        }
+        case `workspace_default`: {
+            let e;
+            return t[6] !== n.limit || t[7] !== n.source.seat_type || t[8] !== i ? (e = i === `unlimited_platform_max` ? (0, Q.jsx)(M, {
+                ...$.workspaceUnlimitedOutsideOverride,
+                values: {
+                    seatType: n.source.seat_type === Dn ? (0, Q.jsx)(M, {
+                        ...$.chatgptSeatLabel
+                    }) : (0, Q.jsx)(M, {
+                        ...$.codexSeatLabel
+                    })
+                }
+            }) : (0, Q.jsx)(M, {
+                ...$.workspaceLimitOutsideOverride,
+                values: {
+                    limit: n.limit.limit,
+                    seatType: n.source.seat_type === Dn ? (0, Q.jsx)(M, {
+                        ...$.chatgptSeatLabel
+                    }) : (0, Q.jsx)(M, {
+                        ...$.codexSeatLabel
+                    })
+                }
+            }), t[6] = n.limit, t[7] = n.source.seat_type, t[8] = i, t[9] = e) : e = t[9], e
+        }
+        case `role_based_personal_budget`:
+            return null;
+        case `individual_override`:
+            return null
+    }
+}
+
+function wn(e) {
+    let t = de(e);
+    return {
+        seat_type_credit_limits: {
+            [Dn]: t,
+            [On]: t
+        }
+    }
+}
+var Tn, En, Q, Dn, On, kn, An, jn, Mn, Nn, Pn, Fn, In, Ln, $, Rn = e((() => {
+        Tn = V(), Le(), je(), ce(), Vt(), _(), He(), G(), ot(), Ae(), y(), H(), Ee(), ke(), Te(), he(), se(), c(), Be(), d(), w(), b(), r(), T(), C(), We(), B(), m(), i(), En = t(I()), F(), P(), st(), Ke(), fe(), le(), Xt(), $e(), lt(), Ie(), Q = O(), Dn = `default`, On = `usage_based`, kn = 25, An = 50, jn = `3909937021`, Mn = `3002192639`, Nn = `3581456201`, Pn = `3421588596`, Fn = 400, In = 1250, Ln = 5e3, $ = A({
+            addButton: {
+                id: `admin.usageLimits.addButton`,
+                defaultMessage: `Add`
+            },
+            adminDisabledTooltip: {
+                id: `admin.usageLimits.adminDisabledTooltip`,
+                defaultMessage: `Contact a workspace admin to change this setting.`
+            },
+            browserTitle: {
+                id: `admin.usageLimits.browserTitle`,
+                defaultMessage: `ChatGPT - Admin | Usage limits`
+            },
+            chatgptSeatLabel: {
+                id: `admin.usageLimits.chatgptSeatLabel`,
+                defaultMessage: `ChatGPT seat`
+            },
+            codexSeatLabel: {
+                id: `admin.usageLimits.codexSeatLabel`,
+                defaultMessage: `Codex seat`
+            },
+            currentLimitColumn: {
+                id: `admin.usageLimits.currentLimitColumn`,
+                defaultMessage: `Current monthly limit`
+            },
+            defaultMonthlyLimitColumn: {
+                id: `admin.usageLimits.defaultMonthlyLimitColumn`,
+                defaultMessage: `Default monthly limit`
+            },
+            editButton: {
+                id: `admin.usageLimits.editButton`,
+                defaultMessage: `Edit`
+            },
+            groupColumn: {
+                id: `admin.usageLimits.groupColumn`,
+                defaultMessage: `Group name`
+            },
+            membersColumn: {
+                id: `admin.usageLimits.membersColumn`,
+                defaultMessage: `Members`
+            },
+            groups: {
+                id: `admin.usageLimits.groupsTab`,
+                defaultMessage: `Groups`
+            },
+            creditValue: {
+                id: `admin.usageLimits.creditValue`,
+                defaultMessage: `{limit} credits`
+            },
+            limitSaveError: {
+                id: `admin.usageLimits.limitSaveError`,
+                defaultMessage: `Unable to update the usage limit.`
+            },
+            limitSaveSuccess: {
+                id: `admin.usageLimits.limitSaveSuccess`,
+                defaultMessage: `Usage limit updated`
+            },
+            nameColumn: {
+                id: `admin.usageLimits.nameColumn`,
+                defaultMessage: `Name`
+            },
+            noEmail: {
+                id: `admin.usageLimits.noEmail`,
+                defaultMessage: `No email`
+            },
+            noGroupsFound: {
+                id: `admin.usageLimits.noGroupsFound`,
+                defaultMessage: `No groups found.`
+            },
+            noOverride: {
+                id: `admin.usageLimits.noOverride`,
+                defaultMessage: `No override`
+            },
+            noUsersFound: {
+                id: `admin.usageLimits.noUsersFound`,
+                defaultMessage: `No users found.`
+            },
+            usersLoadError: {
+                id: `admin.usageLimits.usersLoadError`,
+                defaultMessage: `Unable to load users. Narrow your search or try again.`
+            },
+            overrideLimitColumn: {
+                id: `admin.usageLimits.overrideLimitColumn`,
+                defaultMessage: `Override limit`
+            },
+            pageSubtitle: {
+                id: `admin.usageLimits.pageSubtitle`,
+                defaultMessage: `Set monthly credit limits for the workspace, individual users, and groups.`
+            },
+            pageSubtitleWithEstimatedValues: {
+                id: `admin.usageLimits.pageSubtitleWithEstimatedValues`,
+                defaultMessage: `Set monthly credit limits for workspace, individual usage and groups. Dollar amounts are estimated based on credit rate.`
+            },
+            pageTitle: {
+                id: `admin.usageLimits.pageTitle`,
+                defaultMessage: `Usage limits`
+            },
+            usageLimitsMovedToAdminConsoleTitle: {
+                id: `admin.usageLimits.adminConsoleMovedScreen.title`,
+                defaultMessage: `Usage limits aren’t available here`
+            },
+            usageLimitsMovedToAdminConsoleBody: {
+                id: `admin.usageLimits.adminConsoleMovedScreen.body`,
+                defaultMessage: `To view or manage usage limits for this workspace, go to the Admin Console.`
+            },
+            usageLimitsMovedToAdminConsoleAction: {
+                id: `admin.usageLimits.adminConsoleMovedScreen.action`,
+                defaultMessage: `Go to Admin Console`
+            },
+            "pending-requests": {
+                id: `admin.usageLimits.pendingRequestsTab`,
+                defaultMessage: `Pending requests`
+            },
+            pendingRequestsAvailable: {
+                id: `admin.usageLimits.pendingRequestsAvailable`,
+                defaultMessage: `has pending requests`
+            },
+            searchGroupsPlaceholder: {
+                id: `admin.usageLimits.searchGroupsPlaceholder`,
+                defaultMessage: `Search by group name`
+            },
+            searchUsersPlaceholder: {
+                id: `admin.usageLimits.searchUsersPlaceholder`,
+                defaultMessage: `Search by user's name`
+            },
+            usedThisMonthColumn: {
+                id: `admin.usageLimits.usedThisResetPeriodColumn`,
+                defaultMessage: `Used this reset period`
+            },
+            users: {
+                id: `admin.usageLimits.usersTab`,
+                defaultMessage: `Users`
+            },
+            workspace: {
+                id: `admin.usageLimits.workspaceTab`,
+                defaultMessage: `Workspace`
+            },
+            workspaceDefaultLimitLabel: {
+                id: `admin.usageLimits.workspaceDefaultLimitLabel`,
+                defaultMessage: `Default monthly limit`
+            },
+            workspaceDefaultLimitDescription: {
+                id: `admin.usageLimits.workspaceDefaultLimitDescription`,
+                defaultMessage: `Applies to each member unless a group or user override is more specific.`
+            },
+            groupDefaultHardCapTooltipDescription: {
+                id: `admin.usageLimits.groupDefaultHardCapTooltipDescription`,
+                defaultMessage: `This is the active limit after evaluating the user’s available limits.`
+            },
+            groupDefaultHardCapTooltipTitle: {
+                id: `admin.usageLimits.groupDefaultHardCapTooltipTitle`,
+                defaultMessage: `Inherited from group: {groupName}`
+            },
+            groupLimitOutsideOverride: {
+                id: `admin.usageLimits.groupLimitOutsideOverride`,
+                defaultMessage: `Outside this override, this user inherits {limit, number} credits from {groupName}.`
+            },
+            groupUnlimitedOutsideOverride: {
+                id: `admin.usageLimits.groupUnlimitedOutsideOverride`,
+                defaultMessage: `Outside this override, this user inherits unlimited usage from {groupName}.`
+            },
+            userOverrideHardCapTooltipDescription: {
+                id: `admin.usageLimits.userOverrideHardCapTooltipDescription`,
+                defaultMessage: `This explicit per-user override currently determines the limit.`
+            },
+            userOverrideHardCapTooltipTitle: {
+                id: `admin.usageLimits.userOverrideHardCapTooltipTitle`,
+                defaultMessage: `Set by this user’s limit override`
+            },
+            workspaceDefaultHardCapTooltipDescription: {
+                id: `admin.usageLimits.workspaceDefaultHardCapTooltipDescription`,
+                defaultMessage: `This user inherits the {seatType} workspace default.`
+            },
+            workspaceDefaultHardCapTooltipTitle: {
+                id: `admin.usageLimits.workspaceDefaultHardCapTooltipTitle`,
+                defaultMessage: `Inherited from workspace default`
+            },
+            workspaceLimitOutsideOverride: {
+                id: `admin.usageLimits.workspaceLimitOutsideOverride`,
+                defaultMessage: `Outside this override, this user inherits the {limit, number} credit {seatType} workspace default.`
+            },
+            workspaceUnlimitedOutsideOverride: {
+                id: `admin.usageLimits.workspaceUnlimitedOutsideOverride`,
+                defaultMessage: `Outside this override, this user inherits the unlimited {seatType} workspace default.`
+            }
+        })
+    })),
+    zn, Bn, Vn, Hn = e((() => {
+        P(), zn = V(), Rn(), Ze(), Bn = O(), Vn = k(function() {
+            "use forget";
+            let e = (0, zn.c)(1);
+            Xe();
+            let t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Bn.jsx)(Qt, {}), e[0] = t) : t = e[0], t
+        })
+    }));
+export {
+    Hn as n, Vn as t
+};
 //# sourceMappingURL=90a39c8d-c3pvy59zgj6hatep.js.map

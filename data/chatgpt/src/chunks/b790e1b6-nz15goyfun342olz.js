@@ -1,2 +1,143 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Ln as t,Rn as n}from"./2340486e-i7pjxgdhv0bs6apg.js";var r,i=e((()=>{n(),r=t({usage:{id:`workspaceSeatRecommendations.usageHeader`,defaultMessage:`Usage limits consumed`},recommendation:{id:`workspaceSeatRecommendations.recommendationHeader`,defaultMessage:`Recommendation`},weekly:{id:`workspaceSeatRecommendations.weeklyAverage`,defaultMessage:`W: {percent} <secondary>avg</secondary>`},fiveHour:{id:`workspaceSeatRecommendations.fiveHourAverage`,defaultMessage:`5hr: {percent} <secondary>avg</secondary>`},partialDates:{id:`workspaceSeatRecommendations.partialHistoryDateRange`,defaultMessage:`Partial history: {dateRange}`},lessThanOnePercent:{id:`workspaceSeatRecommendations.lessThanOnePercent`,defaultMessage:`<{percent}`},missingValue:{id:`workspaceSeatRecommendations.missingValue`,defaultMessage:`—`},keep_standard:{id:`workspaceSeatRecommendations.keepStandard`,defaultMessage:`Keep on Standard`},keep_premium:{id:`workspaceSeatRecommendations.keepPremium`,defaultMessage:`Keep on Premium`},upgrade_to_premium:{id:`workspaceSeatRecommendations.upgradePremium`,defaultMessage:`Upgrade to Premium`},insufficient_data:{id:`workspaceSeatRecommendations.insufficientData`,defaultMessage:`Not enough reliable history`},unsupported_plan:{id:`workspaceSeatRecommendations.unsupportedPlan`,defaultMessage:`No recommendation for this seat`},loading:{id:`workspaceSeatRecommendations.loading`,defaultMessage:`Loading usage…`},unavailable:{id:`workspaceSeatRecommendations.table.history.unavailable`,defaultMessage:`Unavailable`},noRecommendation:{id:`workspaceSeatRecommendations.table.recommendation.unavailable`,defaultMessage:`N/A`},details:{id:`workspaceSeatRecommendations.details`,defaultMessage:`View usage details for {member}`},detailsTitle:{id:`workspaceSeatRecommendations.detailsTitle`,defaultMessage:`Usage details`},weeklyTab:{id:`workspaceSeatRecommendations.weeklyTab`,defaultMessage:`Weekly`},fiveHourTab:{id:`workspaceSeatRecommendations.fiveHourTab`,defaultMessage:`5hr`},weeklyLimit:{id:`workspaceSeatRecommendations.weeklyLimit`,defaultMessage:`Weekly usage limit`},fiveHourLimit:{id:`workspaceSeatRecommendations.fiveHourLimit`,defaultMessage:`5-hour usage limit`},reset:{id:`workspaceSeatRecommendations.resetAt`,defaultMessage:`Resets {date} at {time}`},currentUnavailable:{id:`workspaceSeatRecommendations.currentUnavailable`,defaultMessage:`Current usage unavailable`},notApplicable:{id:`workspaceSeatRecommendations.notApplicable`,defaultMessage:`No included usage limit`},hits:{id:`workspaceSeatRecommendations.limitHitsLabel`,defaultMessage:`Times a usage limit was hit`},hitsExplanation:{id:`workspaceSeatRecommendations.limitHitsExplanation`,defaultMessage:`Limits first observed exhausted in the selected dates. Repeated blocked requests count only once.`},credits:{id:`workspaceSeatRecommendations.creditsSpent`,defaultMessage:`Credits spent`},standardSeat:{id:`workspaceSeatRecommendations.standardSeat`,defaultMessage:`Standard seat`},premiumSeat:{id:`workspaceSeatRecommendations.premiumSeat`,defaultMessage:`Premium seat`},manage:{id:`workspaceSeatRecommendations.manage`,defaultMessage:`Manage member's seat`},more:{id:`workspaceSeatRecommendations.moreActions`,defaultMessage:`Member actions`},retry:{id:`workspaceSeatRecommendations.retryCurrentUsage`,defaultMessage:`Refresh usage`}})}));export{r as n,i as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ln as t,
+    Rn as n
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+var r, i = e((() => {
+    n(), r = t({
+        usage: {
+            id: `workspaceSeatRecommendations.usageHeader`,
+            defaultMessage: `Usage limits consumed`
+        },
+        recommendation: {
+            id: `workspaceSeatRecommendations.recommendationHeader`,
+            defaultMessage: `Recommendation`
+        },
+        weekly: {
+            id: `workspaceSeatRecommendations.weeklyAverage`,
+            defaultMessage: `W: {percent} <secondary>avg</secondary>`
+        },
+        fiveHour: {
+            id: `workspaceSeatRecommendations.fiveHourAverage`,
+            defaultMessage: `5hr: {percent} <secondary>avg</secondary>`
+        },
+        partialDates: {
+            id: `workspaceSeatRecommendations.partialHistoryDateRange`,
+            defaultMessage: `Partial history: {dateRange}`
+        },
+        lessThanOnePercent: {
+            id: `workspaceSeatRecommendations.lessThanOnePercent`,
+            defaultMessage: `<{percent}`
+        },
+        missingValue: {
+            id: `workspaceSeatRecommendations.missingValue`,
+            defaultMessage: `—`
+        },
+        keep_standard: {
+            id: `workspaceSeatRecommendations.keepStandard`,
+            defaultMessage: `Keep on Standard`
+        },
+        keep_premium: {
+            id: `workspaceSeatRecommendations.keepPremium`,
+            defaultMessage: `Keep on Premium`
+        },
+        upgrade_to_premium: {
+            id: `workspaceSeatRecommendations.upgradePremium`,
+            defaultMessage: `Upgrade to Premium`
+        },
+        insufficient_data: {
+            id: `workspaceSeatRecommendations.insufficientData`,
+            defaultMessage: `Not enough reliable history`
+        },
+        unsupported_plan: {
+            id: `workspaceSeatRecommendations.unsupportedPlan`,
+            defaultMessage: `No recommendation for this seat`
+        },
+        loading: {
+            id: `workspaceSeatRecommendations.loading`,
+            defaultMessage: `Loading usage…`
+        },
+        unavailable: {
+            id: `workspaceSeatRecommendations.table.history.unavailable`,
+            defaultMessage: `Unavailable`
+        },
+        noRecommendation: {
+            id: `workspaceSeatRecommendations.table.recommendation.unavailable`,
+            defaultMessage: `N/A`
+        },
+        details: {
+            id: `workspaceSeatRecommendations.details`,
+            defaultMessage: `View usage details for {member}`
+        },
+        detailsTitle: {
+            id: `workspaceSeatRecommendations.detailsTitle`,
+            defaultMessage: `Usage details`
+        },
+        weeklyTab: {
+            id: `workspaceSeatRecommendations.weeklyTab`,
+            defaultMessage: `Weekly`
+        },
+        fiveHourTab: {
+            id: `workspaceSeatRecommendations.fiveHourTab`,
+            defaultMessage: `5hr`
+        },
+        weeklyLimit: {
+            id: `workspaceSeatRecommendations.weeklyLimit`,
+            defaultMessage: `Weekly usage limit`
+        },
+        fiveHourLimit: {
+            id: `workspaceSeatRecommendations.fiveHourLimit`,
+            defaultMessage: `5-hour usage limit`
+        },
+        reset: {
+            id: `workspaceSeatRecommendations.resetAt`,
+            defaultMessage: `Resets {date} at {time}`
+        },
+        currentUnavailable: {
+            id: `workspaceSeatRecommendations.currentUnavailable`,
+            defaultMessage: `Current usage unavailable`
+        },
+        notApplicable: {
+            id: `workspaceSeatRecommendations.notApplicable`,
+            defaultMessage: `No included usage limit`
+        },
+        hits: {
+            id: `workspaceSeatRecommendations.limitHitsLabel`,
+            defaultMessage: `Times a usage limit was hit`
+        },
+        hitsExplanation: {
+            id: `workspaceSeatRecommendations.limitHitsExplanation`,
+            defaultMessage: `Limits first observed exhausted in the selected dates. Repeated blocked requests count only once.`
+        },
+        credits: {
+            id: `workspaceSeatRecommendations.creditsSpent`,
+            defaultMessage: `Credits spent`
+        },
+        standardSeat: {
+            id: `workspaceSeatRecommendations.standardSeat`,
+            defaultMessage: `Standard seat`
+        },
+        premiumSeat: {
+            id: `workspaceSeatRecommendations.premiumSeat`,
+            defaultMessage: `Premium seat`
+        },
+        manage: {
+            id: `workspaceSeatRecommendations.manage`,
+            defaultMessage: `Manage member's seat`
+        },
+        more: {
+            id: `workspaceSeatRecommendations.moreActions`,
+            defaultMessage: `Member actions`
+        },
+        retry: {
+            id: `workspaceSeatRecommendations.retryCurrentUsage`,
+            defaultMessage: `Refresh usage`
+        }
+    })
+}));
+export {
+    r as n, i as t
+};
 //# sourceMappingURL=b790e1b6-nz15goyfun342olz.js.map

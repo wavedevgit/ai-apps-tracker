@@ -1,0 +1,36 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A5 as t,
+    A8 as n,
+    F8 as r,
+    Q8 as i,
+    R8 as a,
+    U1 as o,
+    Z8 as s,
+    q1 as c,
+    z8 as l
+} from "./4813494d-i89nb6zlze66idsz.js";
+
+function u(e) {
+    let n = o()?.normalizedAccountUserId;
+    n != null && t(() => {
+        d.set(n, t => ({
+            ...t,
+            [e]: Math.min((t[e] ?? 0) + 1, 2 ** 53 - 1)
+        }))
+    })
+}
+var d, f, p = e((() => {
+    n(), c(), s(), d = l(e => a({})), f = r(() => {
+        let e = o()?.normalizedAccountUserId;
+        return e == null ? [] : Object.entries(d(e)).sort((e, t) => t[1] - e[1]).map(([e]) => e)
+    }, {
+        equals: i
+    })
+}));
+export {
+    f as n, u as r, p as t
+};
+//# sourceMappingURL=a0c3e3cc-g2cggpn8i8xtq9y5.js.map

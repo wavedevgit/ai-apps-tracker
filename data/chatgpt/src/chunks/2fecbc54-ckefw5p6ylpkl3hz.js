@@ -1,0 +1,122 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    rKn as t,
+    sKn as n
+} from "./conversation-small-fh0oqifngkf5rvl1.js";
+
+function r(e) {
+    return e ? {
+        hasDismissed: !0,
+        eligibleOpensSinceDismissal: 0
+    } : h
+}
+
+function i(e) {
+    return c(e) ? e : 0
+}
+
+function a({
+    isEnabled: e,
+    surfaceOpenInterval: t
+}) {
+    return e === !0 ? i(t) : 0
+}
+
+function o(e) {
+    if (typeof e != `object` || !e) return h;
+    let t = Reflect.get(e, `hasDismissed`) === !0,
+        n = i(Reflect.get(e, `eligibleOpensSinceDismissal`));
+    return {
+        hasDismissed: t,
+        eligibleOpensSinceDismissal: t ? n : 0
+    }
+}
+
+function s({
+    dismissalState: e,
+    surfaceOpenInterval: t
+}) {
+    if (t === 0) return {
+        dismissalState: e,
+        shouldShow: !1,
+        shouldSuppressFallback: !1
+    };
+    if (!e.hasDismissed) return {
+        dismissalState: e,
+        shouldShow: !0,
+        shouldSuppressFallback: !1
+    };
+    let n = {
+        ...e,
+        eligibleOpensSinceDismissal: e.eligibleOpensSinceDismissal + 1
+    };
+    return {
+        dismissalState: n,
+        shouldShow: n.eligibleOpensSinceDismissal >= t,
+        shouldSuppressFallback: !0
+    }
+}
+
+function c(e) {
+    return typeof e == `number` && Number.isInteger(e) && e >= 0
+}
+
+function l({
+    dlid: e
+}) {
+    return t({
+        referrer: `images/prompt/caricature?` + new URLSearchParams({
+            dlid: e
+        }).toString()
+    })
+}
+
+function u(e) {
+    let t = new URL(m, `https://chatgpt.com/`);
+    return t.searchParams.set(`dlid`, e), t
+}
+
+function d({
+    dlid: e
+}) {
+    let t = u(e),
+        n = l({
+            dlid: e
+        });
+    return `intent://` + t.host + t.pathname + t.search + `#Intent;scheme=https;package=com.openai.chatgpt;S.browser_fallback_url=` + encodeURIComponent(n) + `;end`
+}
+
+function f({
+    dlid: e,
+    logClick: t,
+    assignLocation: n
+}) {
+    let r = d({
+        dlid: e
+    });
+    try {
+        t()
+    } catch {}
+    n(r)
+}
+
+function p({
+    isLoggedIn: e,
+    isAndroid: t,
+    isMobileViewport: n,
+    isTablet: r
+}) {
+    return e && t && n && !r
+}
+var m, h, g = e((() => {
+    n(), m = `images/prompt/caricature`, h = {
+        hasDismissed: !1,
+        eligibleOpensSinceDismissal: 0
+    }
+}));
+export {
+    p as a, g as i, s as n, f as o, r, o as s, a as t
+};
+//# sourceMappingURL=2fecbc54-ckefw5p6ylpkl3hz.js.map

@@ -1,3 +1,332 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/a05edf66-e1xi342cs8q8fx50.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-nxpmzchfjvwqts17.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/conversation-small-m08q51xmfe7gjq3d.js","assets/30901919-lgbmg5s09xld40kt.js","assets/c470f5ab-hgik953cu5ujlhdm.js","assets/0e5afe53-i4tqvmyg38miikw0.js","assets/conversation-small-dtc7tvsx.css","assets/8742b478-jj0s7j062zyuagle.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{B0 as n,Da as ee,Dtt as r,Int as i,JF as te,K0 as ne,Oa as re,Qc as ie,Rnt as ae,a2 as a,ai as oe,al as se,bF as ce,c2 as o,c7 as le,d2 as ue,dE as de,ii as s,jtt as c,k8 as l,l7 as u,lE as d,ni as fe,o2 as pe,q5 as f,qF as p,ri as me,ti as he,tl as m,vF as ge}from"./4813494d-nxpmzchfjvwqts17.js";import{Bn as h,Vn as g,cn as _,ln as v,wn as y}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$g as _e,Bwt as b,CEt as x,Hwt as ve,JSt as ye,KSt as be,NFn as S,PFn as xe,Qg as Se,RBn as C,VBn as Ce,Vgt as we,YSt as Te,ZSt as w,fTt as T,jFn as Ee,lTt as De,xEt as Oe,zgt as ke}from"./conversation-small-m08q51xmfe7gjq3d.js";import{l as Ae,n as E,r as D}from"./3ed411a3-bir32qfoow57sy42.js";import{n as je,t as O}from"./8baac9c1-gli0troy9z0w2shj.js";import{n as Me,r as k}from"./8742b478-jj0s7j062zyuagle.js";function Ne(e){if(D(e))return!1;try{let t=new URL(e,window.location.href);return(t.protocol===`http:`||t.protocol===`https:`)&&(t.pathname.endsWith(`/bing/redirect`)||t.origin!==window.location.origin)}catch{return!1}}var A=e((()=>{E()}));function j(e,t){return`${e}::${t}`}function Pe(e){return L[e]}function Fe(e){L[e]=!0}function Ie(e){return F[e]}function Le(e){F[e]=!0}function Re(e,t){return I[j(e,t)]}function ze(e,t){I[j(e,t)]=!0}function M(e){"use forget";let t=(0,Be.c)(29),{node:n,onClick:ee,onAuxClick:ae,children:a,messageId:o,href:s,disableSafeURLs:c,trackLinkAction:l,trackSavedContentAnalytics:u,prepareOutboundUrl:d,ref:pe,...p}=e,m=l===void 0||l,ge=u===void 0||u,h=ce(),g,_=n?.properties?.href,v=(0,N.useContext)(Oe),y=v?.isActivelyStreaming,b;t[0]===h?b=t[1]:(b=()=>h?.serverId$(),t[0]=h,t[1]=b);let x=f(b),S;t[2]===h?S=t[3]:(S=()=>h!=null&&se(h),t[2]=h,t[3]=S);let Se=f(S),C=re(),w=te(),T;t[4]!==h||t[5]!==w||t[6]!==C?(T=()=>h!=null&&ie(h)===`work`&&!ne()&&!C&&!w,t[4]=h,t[5]=w,t[6]=C,t[7]=T):T=t[7];let ke=f(T),E=v?.useSafeUrls!==!1&&!c,D;t[8]!==s||t[9]!==E?(D=E&&typeof s==`string`&&(s.toLowerCase().startsWith(`mailto:`)||s.toLowerCase().startsWith(`tel:`)&&!fe(s)),t[8]=s,t[9]=E,t[10]=D):D=t[10];let O=D,k=Te(h?.id,o),A=v?.message??k,M=n?.children.length===1&&n.children[0]?.type===`text`?n.children[0].value:a,{safeUrl:F,isPending:I,isUnsafe:L,isBlocked:Ue,isPolicySuppressed:We}=Ae(x,O?void 0:s,E,h?.id),R=O?A?.author.role===r.Assistant&&A.metadata?.safe_urls?.includes(s)&&M===s.slice(s.indexOf(`:`)+1)&&(!s.toLowerCase().startsWith(`tel:`)||/^\+?[0-9]{1,15}$/.test(s.slice(4)))?s:void 0:F,z=!O&&I,Ge=!O&&L,B=!O&&Ue,Ke=!O&&We,qe=v?.analyticsMetadata?.isGenui===!0||ve(v?.message?.metadata)||ve(k?.metadata),Je=k?.metadata?.__internal?.utm_tags??{},Ye=ye(h?.id),Xe=(0,N.useRef)(null),V=de(Xe,pe),Ze=je({includeElementText:!1,rootRef:Xe,searchableText:[s,typeof _==`string`?_:void 0,p.title]}),H=!c&&R===void 0&&!B,U=typeof s==`string`?oe(s):s,W=typeof R==`string`?oe(R):R,Qe=W!=null||!z&&!Ge&&!B&&!Ke,G=Qe&&!c&&v?.message?.author.role===r.Assistant&&typeof U==`string`?Ee(U,{allowGenericDriveFile:Se,requireGoogleDriveLibrary:!1}):void 0,K=W??(Qe?G?.previewTarget.url:void 0),$e=ge&&ke&&A?.author.role===r.Assistant&&!z&&!B&&!Ke&&K!=null?Ce(K):null,et=$e?.kind,tt=$e?.id,nt=A?.metadata?.turn_exchange_id,rt=(0,N.useRef)(void 0),it=e=>{we(rt,e,x,nt,et,tt)};(0,N.useEffect)(()=>{we(rt,`show`,x,nt,et,tt)},[x,nt,et,tt]);let q=typeof _==`string`?_:typeof s==`string`?s:void 0,J,Y;t[11]!==y||t[12]!==o||t[13]!==m||t[14]!==q?(J=()=>{if(!m||!o||!q||y)return;let e=j(o,q);if(Pe(e))return;let t=window.setTimeout(()=>{Pe(e)||(i.logEvent(`link_action`,{action:`show`,id:o,link_type:`url`,section_location:`response`,url:q}),Fe(e))},He);return()=>window.clearTimeout(t)},Y=[y,o,m,q],t[11]=y,t[12]=o,t[13]=m,t[14]=q,t[15]=J,t[16]=Y):(J=t[15],Y=t[16]),(0,N.useEffect)(J,Y),o!=null&&typeof _==`string`&&_.includes(`/bing/redirect`)&&(Ie(o)||(i.logEvent(`Browsing Show Bing Link`,{id:o,content:_}),Le(o)));let X;t[17]===s?X=t[18]:(X=()=>{if(!fe(s))return;let e=me(s);e&&i.logStructuredEvent(`ChatgptDisclaimerLinkClicked`,{protocol:e,via:`pointer`,disclaimerSource:he})},t[17]=s,t[18]=X);let at=X,Z;t[19]===h?Z=t[20]:(Z=e=>{Ne(e)&&_e(h)},t[19]=h,t[20]=Z);let ot=Z,st=e=>{ue(Ve,{urls:d?d(e):be(e,Je,Ye),contactLinkWarningMetadata:Me({href:s,message:A,visibleLabel:M,node:n,shouldUseSafeUrls:E}),analyticsMetadata:{clientThreadId:h?.id,messageId:o},onAction:t=>{t===`open`&&ot(e)}})};g=e=>{if(z){e.preventDefault();return}if(B){e.preventDefault();return}e.button===0&&e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey||it(`click`);let t=``+_;if(m&&q&&i.logEvent(`link_action`,{action:`click`,id:o,...qe?{is_genui:!0}:{},link_type:`url`,section_location:`response`,url:q}),o&&!Re(o,t)){let e=R||H?`URL Clicked Allowed`:`URL Clicked Blocked`;i.logEvent(e,{id:o,content:t}),ze(o,t)}at(),ee?.(e);let n=e.button===0&&!e.altKey&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey;if(G&&h&&n){e.preventDefault();let t=()=>{st(W??G.previewTarget.url)};xe({messageId:o,conversation:h,providerKey:G.providerKey,target:G.previewTarget,title:e.currentTarget.textContent??void 0}).then(e=>{e||t()},t);return}H&&s&&G==null&&(e.preventDefault(),st(typeof U==`string`?U:String(U))),!e.defaultPrevented&&typeof K==`string`&&ot(K)};let ct=g,lt=e=>{e.button===1&&it(`click`),ae?.(e),e.button===1&&!e.defaultPrevented&&!z&&!B&&typeof K==`string`&&ot(K)},Q=le(p.className,H&&!z&&`cursor-pointer`,Ze&&De),ut=K&&(d?d(K):be(K,Je,Ye)),$;return t[21]!==a||t[22]!==V||t[23]!==g||t[24]!==p||t[25]!==lt||t[26]!==Q||t[27]!==ut?($=(0,P.jsx)(P.Fragment,{children:(0,P.jsx)(`a`,{ref:V,onClick:ct,onAuxClick:lt,...p,className:Q,href:ut,rel:`noopener`,children:a})}),t[21]=a,t[22]=V,t[23]=g,t[24]=p,t[25]=lt,t[26]=Q,t[27]=ut,t[28]=$):$=t[28],$}var Be,N,P,Ve,F,I,L,He,Ue=e((()=>{Be=y(),c(),n(),Se(),ge(),o(),O(),T(),s(),E(),l(),p(),m(),ae(),ee(),d(),C(),pe(),u(),N=t(g()),x(),k(),S(),b(),w(),A(),ke(),P=h(),v(),Ve=a(()=>_(()=>import(`./a05edf66-e1xi342cs8q8fx50.js`).then(e=>e.SafeLinkWarningModal),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10]))),F={},I={},L={},He=1e3}));export{Ne as i,Ue as n,A as r,M as t};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/a05edf66-e1xi342cs8q8fx50.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-nxpmzchfjvwqts17.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-m08q51xmfe7gjq3d.js", "assets/30901919-lgbmg5s09xld40kt.js", "assets/c470f5ab-hgik953cu5ujlhdm.js", "assets/0e5afe53-i4tqvmyg38miikw0.js", "assets/conversation-small-dtc7tvsx.css", "assets/8742b478-jj0s7j062zyuagle.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    B0 as n,
+    Da as ee,
+    Dtt as r,
+    Int as i,
+    JF as te,
+    K0 as ne,
+    Oa as re,
+    Qc as ie,
+    Rnt as ae,
+    a2 as a,
+    ai as oe,
+    al as se,
+    bF as ce,
+    c2 as o,
+    c7 as le,
+    d2 as ue,
+    dE as de,
+    ii as s,
+    jtt as c,
+    k8 as l,
+    l7 as u,
+    lE as d,
+    ni as fe,
+    o2 as pe,
+    q5 as f,
+    qF as p,
+    ri as me,
+    ti as he,
+    tl as m,
+    vF as ge
+} from "./4813494d-nxpmzchfjvwqts17.js";
+import {
+    Bn as h,
+    Vn as g,
+    cn as _,
+    ln as v,
+    wn as y
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $g as _e,
+    Bwt as b,
+    CEt as x,
+    Hwt as ve,
+    JSt as ye,
+    KSt as be,
+    NFn as S,
+    PFn as xe,
+    Qg as Se,
+    RBn as C,
+    VBn as Ce,
+    Vgt as we,
+    YSt as Te,
+    ZSt as w,
+    fTt as T,
+    jFn as Ee,
+    lTt as De,
+    xEt as Oe,
+    zgt as ke
+} from "./conversation-small-m08q51xmfe7gjq3d.js";
+import {
+    l as Ae,
+    n as E,
+    r as D
+} from "./3ed411a3-bir32qfoow57sy42.js";
+import {
+    n as je,
+    t as O
+} from "./8baac9c1-gli0troy9z0w2shj.js";
+import {
+    n as Me,
+    r as k
+} from "./8742b478-jj0s7j062zyuagle.js";
+
+function Ne(e) {
+    if (D(e)) return !1;
+    try {
+        let t = new URL(e, window.location.href);
+        return (t.protocol === `http:` || t.protocol === `https:`) && (t.pathname.endsWith(`/bing/redirect`) || t.origin !== window.location.origin)
+    } catch {
+        return !1
+    }
+}
+var A = e((() => {
+    E()
+}));
+
+function j(e, t) {
+    return `${e}::${t}`
+}
+
+function Pe(e) {
+    return L[e]
+}
+
+function Fe(e) {
+    L[e] = !0
+}
+
+function Ie(e) {
+    return F[e]
+}
+
+function Le(e) {
+    F[e] = !0
+}
+
+function Re(e, t) {
+    return I[j(e, t)]
+}
+
+function ze(e, t) {
+    I[j(e, t)] = !0
+}
+
+function M(e) {
+    "use forget";
+    let t = (0, Be.c)(29),
+        {
+            node: n,
+            onClick: ee,
+            onAuxClick: ae,
+            children: a,
+            messageId: o,
+            href: s,
+            disableSafeURLs: c,
+            trackLinkAction: l,
+            trackSavedContentAnalytics: u,
+            prepareOutboundUrl: d,
+            ref: pe,
+            ...p
+        } = e,
+        m = l === void 0 || l,
+        ge = u === void 0 || u,
+        h = ce(),
+        g, _ = n?.properties?.href,
+        v = (0, N.useContext)(Oe),
+        y = v?.isActivelyStreaming,
+        b;
+    t[0] === h ? b = t[1] : (b = () => h?.serverId$(), t[0] = h, t[1] = b);
+    let x = f(b),
+        S;
+    t[2] === h ? S = t[3] : (S = () => h != null && se(h), t[2] = h, t[3] = S);
+    let Se = f(S),
+        C = re(),
+        w = te(),
+        T;
+    t[4] !== h || t[5] !== w || t[6] !== C ? (T = () => h != null && ie(h) === `work` && !ne() && !C && !w, t[4] = h, t[5] = w, t[6] = C, t[7] = T) : T = t[7];
+    let ke = f(T),
+        E = v?.useSafeUrls !== !1 && !c,
+        D;
+    t[8] !== s || t[9] !== E ? (D = E && typeof s == `string` && (s.toLowerCase().startsWith(`mailto:`) || s.toLowerCase().startsWith(`tel:`) && !fe(s)), t[8] = s, t[9] = E, t[10] = D) : D = t[10];
+    let O = D,
+        k = Te(h?.id, o),
+        A = v?.message ?? k,
+        M = n?.children.length === 1 && n.children[0]?.type === `text` ? n.children[0].value : a,
+        {
+            safeUrl: F,
+            isPending: I,
+            isUnsafe: L,
+            isBlocked: Ue,
+            isPolicySuppressed: We
+        } = Ae(x, O ? void 0 : s, E, h?.id),
+        R = O ? A?.author.role === r.Assistant && A.metadata?.safe_urls?.includes(s) && M === s.slice(s.indexOf(`:`) + 1) && (!s.toLowerCase().startsWith(`tel:`) || /^\+?[0-9]{1,15}$/.test(s.slice(4))) ? s : void 0 : F,
+        z = !O && I,
+        Ge = !O && L,
+        B = !O && Ue,
+        Ke = !O && We,
+        qe = v?.analyticsMetadata?.isGenui === !0 || ve(v?.message?.metadata) || ve(k?.metadata),
+        Je = k?.metadata?.__internal?.utm_tags ?? {},
+        Ye = ye(h?.id),
+        Xe = (0, N.useRef)(null),
+        V = de(Xe, pe),
+        Ze = je({
+            includeElementText: !1,
+            rootRef: Xe,
+            searchableText: [s, typeof _ == `string` ? _ : void 0, p.title]
+        }),
+        H = !c && R === void 0 && !B,
+        U = typeof s == `string` ? oe(s) : s,
+        W = typeof R == `string` ? oe(R) : R,
+        Qe = W != null || !z && !Ge && !B && !Ke,
+        G = Qe && !c && v?.message?.author.role === r.Assistant && typeof U == `string` ? Ee(U, {
+            allowGenericDriveFile: Se,
+            requireGoogleDriveLibrary: !1
+        }) : void 0,
+        K = W ?? (Qe ? G?.previewTarget.url : void 0),
+        $e = ge && ke && A?.author.role === r.Assistant && !z && !B && !Ke && K != null ? Ce(K) : null,
+        et = $e?.kind,
+        tt = $e?.id,
+        nt = A?.metadata?.turn_exchange_id,
+        rt = (0, N.useRef)(void 0),
+        it = e => {
+            we(rt, e, x, nt, et, tt)
+        };
+    (0, N.useEffect)(() => {
+        we(rt, `show`, x, nt, et, tt)
+    }, [x, nt, et, tt]);
+    let q = typeof _ == `string` ? _ : typeof s == `string` ? s : void 0,
+        J, Y;
+    t[11] !== y || t[12] !== o || t[13] !== m || t[14] !== q ? (J = () => {
+        if (!m || !o || !q || y) return;
+        let e = j(o, q);
+        if (Pe(e)) return;
+        let t = window.setTimeout(() => {
+            Pe(e) || (i.logEvent(`link_action`, {
+                action: `show`,
+                id: o,
+                link_type: `url`,
+                section_location: `response`,
+                url: q
+            }), Fe(e))
+        }, He);
+        return () => window.clearTimeout(t)
+    }, Y = [y, o, m, q], t[11] = y, t[12] = o, t[13] = m, t[14] = q, t[15] = J, t[16] = Y) : (J = t[15], Y = t[16]), (0, N.useEffect)(J, Y), o != null && typeof _ == `string` && _.includes(`/bing/redirect`) && (Ie(o) || (i.logEvent(`Browsing Show Bing Link`, {
+        id: o,
+        content: _
+    }), Le(o)));
+    let X;
+    t[17] === s ? X = t[18] : (X = () => {
+        if (!fe(s)) return;
+        let e = me(s);
+        e && i.logStructuredEvent(`ChatgptDisclaimerLinkClicked`, {
+            protocol: e,
+            via: `pointer`,
+            disclaimerSource: he
+        })
+    }, t[17] = s, t[18] = X);
+    let at = X,
+        Z;
+    t[19] === h ? Z = t[20] : (Z = e => {
+        Ne(e) && _e(h)
+    }, t[19] = h, t[20] = Z);
+    let ot = Z,
+        st = e => {
+            ue(Ve, {
+                urls: d ? d(e) : be(e, Je, Ye),
+                contactLinkWarningMetadata: Me({
+                    href: s,
+                    message: A,
+                    visibleLabel: M,
+                    node: n,
+                    shouldUseSafeUrls: E
+                }),
+                analyticsMetadata: {
+                    clientThreadId: h?.id,
+                    messageId: o
+                },
+                onAction: t => {
+                    t === `open` && ot(e)
+                }
+            })
+        };
+    g = e => {
+        if (z) {
+            e.preventDefault();
+            return
+        }
+        if (B) {
+            e.preventDefault();
+            return
+        }
+        e.button === 0 && e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey || it(`click`);
+        let t = `` + _;
+        if (m && q && i.logEvent(`link_action`, {
+                action: `click`,
+                id: o,
+                ...qe ? {
+                    is_genui: !0
+                } : {},
+                link_type: `url`,
+                section_location: `response`,
+                url: q
+            }), o && !Re(o, t)) {
+            let e = R || H ? `URL Clicked Allowed` : `URL Clicked Blocked`;
+            i.logEvent(e, {
+                id: o,
+                content: t
+            }), ze(o, t)
+        }
+        at(), ee?.(e);
+        let n = e.button === 0 && !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey;
+        if (G && h && n) {
+            e.preventDefault();
+            let t = () => {
+                st(W ?? G.previewTarget.url)
+            };
+            xe({
+                messageId: o,
+                conversation: h,
+                providerKey: G.providerKey,
+                target: G.previewTarget,
+                title: e.currentTarget.textContent ?? void 0
+            }).then(e => {
+                e || t()
+            }, t);
+            return
+        }
+        H && s && G == null && (e.preventDefault(), st(typeof U == `string` ? U : String(U))), !e.defaultPrevented && typeof K == `string` && ot(K)
+    };
+    let ct = g,
+        lt = e => {
+            e.button === 1 && it(`click`), ae?.(e), e.button === 1 && !e.defaultPrevented && !z && !B && typeof K == `string` && ot(K)
+        },
+        Q = le(p.className, H && !z && `cursor-pointer`, Ze && De),
+        ut = K && (d ? d(K) : be(K, Je, Ye)),
+        $;
+    return t[21] !== a || t[22] !== V || t[23] !== g || t[24] !== p || t[25] !== lt || t[26] !== Q || t[27] !== ut ? ($ = (0, P.jsx)(P.Fragment, {
+        children: (0, P.jsx)(`a`, {
+            ref: V,
+            onClick: ct,
+            onAuxClick: lt,
+            ...p,
+            className: Q,
+            href: ut,
+            rel: `noopener`,
+            children: a
+        })
+    }), t[21] = a, t[22] = V, t[23] = g, t[24] = p, t[25] = lt, t[26] = Q, t[27] = ut, t[28] = $) : $ = t[28], $
+}
+var Be, N, P, Ve, F, I, L, He, Ue = e((() => {
+    Be = y(), c(), n(), Se(), ge(), o(), O(), T(), s(), E(), l(), p(), m(), ae(), ee(), d(), C(), pe(), u(), N = t(g()), x(), k(), S(), b(), w(), A(), ke(), P = h(), v(), Ve = a(() => _(() => import(`./a05edf66-e1xi342cs8q8fx50.js`).then(e => e.SafeLinkWarningModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))), F = {}, I = {}, L = {}, He = 1e3
+}));
+export {
+    Ne as i, Ue as n, A as r, M as t
+};
 //# sourceMappingURL=edb73080-k5l3ialumhxgqltm.js.map

@@ -1,0 +1,32 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Vn as n,
+    wn as r
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    O_ as i,
+    Xf as a,
+    Yf as o,
+    k_ as s
+} from "./8b34dbc2-peb5nzi8z3rrflnv.js";
+var c, l, u, d = e((() => {
+    c = r(), i(), a(), l = t(n()), u = e => {
+        "use forget";
+        let t = (0, c.c)(4),
+            {
+                skillId: n
+            } = e,
+            r = s(),
+            i, a;
+        return t[0] !== r || t[1] !== n ? (i = () => {
+            o.set(r, () => new Set(n == null ? [] : [n]))
+        }, a = [r, n], t[0] = r, t[1] = n, t[2] = i, t[3] = a) : (i = t[2], a = t[3]), (0, l.useEffect)(i, a), null
+    }
+}));
+export {
+    d as n, u as t
+};
+//# sourceMappingURL=01c56089-pb5fju24qmhmqomw.js.map

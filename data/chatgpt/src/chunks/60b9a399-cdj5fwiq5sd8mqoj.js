@@ -1,0 +1,196 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    grt as t,
+    prt as n
+} from "./4813494d-i89nb6zlze66idsz.js";
+import {
+    n as r,
+    t as i
+} from "./6421f715-frsrkqf2x08ztq4r.js";
+import {
+    n as a,
+    t as o
+} from "./02961831-bxnjzy4sdtxoe0hp.js";
+var s, c, l, u, d, f, p, m, h, g, ee, _, te, v, y, b, x, S, C, w, T, E, D, O, k, ne, A, j, M, N, P, F, I, L, re, ie, ae, oe, se, R, z, B, V, H, U, W, G, K, ce, le, q, ue, de, J, fe, pe, me, he, Y, X, ge, Z, _e, ve, ye, be, xe, Se, Q, Ce, $, we, Te = e((() => {
+    i(), o(), t(), s = `email_recipient_domains`, c = `gmail_recipient_domains`, l = `google_drive_allowed_domains`, u = `google_drive_access_policy`, d = `google_drive_personal_drive`, f = `trusted_target_audiences`, p = `sharepoint_site_access_policy`, m = `allow_list`, h = `deny_list`, g = `sharepoint_site_access_deny_list`, ee = `collection`, _ = 1e4, te = 12e4, v = `sharepoint_user_onedrive`, y = `allow_user_onedrive`, b = `sharepoint_excluded_labels`, x = `excluded_labels`, S = `outlook_email_excluded_labels`, C = `excluded_labels`, w = `teams_channel_access_policy`, T = `allow_list`, E = `teams_group_access_policy`, D = `allow_list`, O = `deny_list`, k = `teams_group_access_deny_list`, ne = 1e4, A = `teams_excluded_labels`, j = `excluded_labels`, M = `get_team_sensitivity_labels`, N = `Group.Read.All`, P = e => e === `sharepoint_excluded_labels` || e === `outlook_email_excluded_labels` || e === `teams_excluded_labels`, F = `371023604`, I = [s, c], L = {
+        [s]: [`allowed_recipient_domains`],
+        [c]: [`allowed_recipient_domains`],
+        [l]: [`allowed_domains`, f],
+        [u]: [`allow_list`, `deny_list`],
+        [p]: [m, h],
+        [b]: [x],
+        [S]: [C],
+        [w]: [T],
+        [E]: [D, O],
+        [A]: [j]
+    }, re = {
+        [d]: `allow_personal_drive`,
+        [v]: y
+    }, ie = `.audience.googledomains.com`, ae = `https://admin.google.com/ac/targetaudiences/`, oe = /^(?=.{1,63}$)[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?$/, se = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i, R = e => typeof e == `object` && !!e && !Array.isArray(e), z = e => typeof e == `object` && !!e && !Array.isArray(e), B = e => I.some(t => t === e), V = (e, t) => {
+        let n = {
+            ...e
+        };
+        for (let [e, r] of Object.entries(t)) {
+            if (r === void 0) continue;
+            let t = n[e];
+            if (R(t) && R(r)) {
+                n[e] = V(t, r);
+                continue
+            }
+            n[e] = r
+        }
+        return n
+    }, H = (e, t) => {
+        let n = e?.[t];
+        if (!n) return;
+        let r = n.allowed_recipient_domains;
+        if (r == null) return {};
+        if (Array.isArray(r)) return {
+            allowed_recipient_domains: r.filter(e => typeof e == `string`)
+        }
+    }, U = (e, t) => {
+        let n = t ? [t, ...I.filter(e => e !== t)] : I;
+        for (let t of n) {
+            let n = H(e, t);
+            if (n !== void 0) return n
+        }
+    }, W = (e, t, n) => {
+        let r = e?.[t]?.[n];
+        if (t === `sharepoint_site_access_policy` && (n === `allow_list` || n === `deny_list`)) return R(r) ? Object.entries(r).flatMap(([e, t]) => {
+            if (!R(t) || t.type !== `collection`) return [];
+            let n = Q(e);
+            return n ? [n] : []
+        }) : void 0;
+        if (Array.isArray(r)) return r.filter(e => typeof e == `string`)
+    }, G = e => {
+        let t = {
+            ...e
+        };
+        for (let [e, n] of Object.entries(L)) {
+            if (e === `sharepoint_site_access_policy` || e === `google_drive_access_policy` || e === `teams_group_access_policy` && n.some(n => {
+                    let i = t[e]?.[n];
+                    return i !== void 0 && (!Array.isArray(i) || i.some(e => typeof e != `string` || !r(e)))
+                })) continue;
+            let i = n.map(n => W(t, e, n));
+            i.some(e => e !== void 0) && i.every(e => (e?.length ?? 0) === 0) && delete t[e]
+        }
+        return t
+    }, K = (e, t) => {
+        let r = t === `google_drive_access_policy` || t === `google_drive_personal_drive` || t === `sharepoint_site_access_policy` || t === `sharepoint_site_access_deny_list` || t === `sharepoint_user_onedrive` || t === `sharepoint_excluded_labels` || t === `outlook_email_excluded_labels` || t === `teams_channel_access_policy` || t === `teams_group_access_policy` || t === `teams_group_access_deny_list` || t === `teams_excluded_labels`,
+            i = n(F).get(`controls`, {});
+        if (!z(i)) return !r;
+        let a = i[e];
+        if (!z(a)) return !r;
+        let o = a[t];
+        return z(o) ? r ? o.display_in_ui === !0 : o.display_in_ui !== !1 : !r
+    }, ce = e => K(e, g), le = e => {
+        let t = n(F).get(`controls`, {}),
+            r = z(t) ? t[e] : void 0,
+            i = z(r) ? r.google_drive_access_deny_list : void 0;
+        return z(i) && i.enforce === !0
+    }, q = (e, t, r) => {
+        let i = n(F).get(`controls`, {}),
+            a = z(i) ? i[e] : void 0,
+            o = z(a) ? a[t] : void 0,
+            s = z(o) ? o.max_entries : void 0;
+        return typeof s == `number` && Number.isInteger(s) && s > 0 ? Math.max(r, Math.min(s, te)) : r
+    }, ue = e => q(e, p, _), de = e => q(e, E, ne), J = e => {
+        if (!K(e, `teams_group_access_deny_list`)) return !1;
+        let t = n(F).get(`controls`, {}),
+            r = z(t) ? t[e] : void 0,
+            i = z(r) ? r[k] : void 0;
+        return z(i) && i.enforce === !0
+    }, fe = e => q(e, u, 1e3), pe = e => /^[A-Za-z0-9_-]{5,512}$/.test(e.trim()) ? e.trim() : ``, me = (e, t) => [`google-drive-shared-drives-csv`, e, t], he = (e, t) => (t ?? []).filter(t => K(e, t.id)), Y = e => {
+        let t = L[e.id];
+        return t ? t.flatMap(t => e.inputs?.find(e => e.name === t && e.input_type === `string_list`) ?? []) : []
+    }, X = e => {
+        let t = re[e.id];
+        return t ? e.inputs?.find(e => e.name === t && e.input_type === `boolean`) ?? null : null
+    }, ge = (e, t, n, r) => {
+        let i = n?.[e.id]?.[t.name];
+        if (typeof i == `boolean`) return i;
+        let a = r?.[e.id]?.[t.name];
+        return typeof a != `boolean` || a
+    }, Z = (e, t) => {
+        let n = he(e, t),
+            r = n.some(e => e.id === `email_recipient_domains` && Y(e).length > 0);
+        return n.filter(e => (Y(e).length > 0 || X(e) != null) && !(e.id === `gmail_recipient_domains` && r))
+    }, _e = (e, t) => Z(e, t).length > 0, ve = (e, t) => e === `sharepoint` && (t?.some(e => e.id === `sharepoint_site_access_policy` && Y(e).some(e => e.name === `deny_list`)) ?? !1), ye = e => {
+        let t = e?.[p]?.[h];
+        return z(t) && Object.keys(t).length > 0
+    }, be = (e, t, n) => {
+        let r = U(e, n),
+            i = U(t, n);
+        return r?.allowed_recipient_domains ?? i?.allowed_recipient_domains ?? []
+    }, xe = (e, t, n, r) => B(e.id) && t.name === `allowed_recipient_domains` ? be(n, r, e.id) : W(n, e.id, t.name) ?? W(r, e.id, t.name) ?? [], Se = e => {
+        let t = e.trim().toLowerCase();
+        if (!t) return ``;
+        let n = t;
+        if (t.startsWith(ae)) try {
+            let e = new URL(t);
+            if (e.origin !== `https://admin.google.com` || !e.pathname.startsWith(`/ac/targetaudiences/`)) return ``;
+            n = e.pathname.replace(`/ac/targetaudiences/`, ``).replace(/\/$/, ``)
+        } catch {
+            return ``
+        } else t.endsWith(ie) && (n = t.slice(0, -27));
+        return oe.test(n) ? n : ``
+    }, Q = e => {
+        let t = e.trim().toLowerCase();
+        return se.test(t) ? t : ``
+    }, Ce = e => {
+        try {
+            let t = new URL(e.trim()),
+                n = [`sharepoint.com`, `sharepoint.de`].some(e => t.hostname === e || t.hostname.endsWith(`.${e}`));
+            return t.protocol !== `https:` || !n || t.username || t.password || t.port ? `` : (t.search = ``, t.hash = ``, t.toString())
+        } catch {
+            return ``
+        }
+    }, $ = (e, t) => {
+        let n = {
+            ...e ?? {}
+        };
+        for (let [e, r] of Object.entries(t)) {
+            let t = n[e];
+            if (n[e] = t == null ? r : V(t, r), (e === `sharepoint_site_access_policy` || e === `google_drive_access_policy`) && (Object.hasOwn(r, `allow_list`) || Object.hasOwn(r, `deny_list`)))
+                for (let t of [m, h]) Object.hasOwn(r, t) && (n[e][t] = r[t])
+        }
+        return n
+    }, we = (e, t) => {
+        let n = t == null ? e ?? void 0 : G($(e, t)),
+            i = n?.[u];
+        if (i?.deny_list === null && !Object.hasOwn(e?.google_drive_access_policy ?? {}, `deny_list`)) {
+            let e = {
+                ...i
+            };
+            delete e.deny_list, n = {
+                ...n,
+                [u]: e
+            }
+        }
+        let o = n;
+        for (let e of [D, O]) {
+            let t = o?.[E]?.[e];
+            Array.isArray(t) && t.every(e => typeof e == `string`) && (o = {
+                ...o,
+                [E]: {
+                    ...o?.[E],
+                    [e]: [...new Set(t.map(e => r(e) || e))]
+                }
+            })
+        }
+        let s = o?.[w]?.[T];
+        return !Array.isArray(s) || !s.every(e => typeof e == `string`) ? o : {
+            ...o,
+            [w]: {
+                ...o?.[w],
+                [T]: [...new Set(s.map(e => a(e)?.channelId ?? e))]
+            }
+        }
+    }
+}));
+export {
+    xe as A, J as B, N as C, Z as D, fe as E, ve as F, Q as G, $ as H, Te as I, Ce as K, le as L, me as M, ye as N, ue as O, _e as P, P as R, M as S, ge as T, pe as U, we as V, Se as W, A as _, f as a, O as b, b as c, h as d, p as f, w as g, T as h, d as i, de as j, Y as k, x as l, v as m, u as n, S as o, ee as p, l as r, C as s, _ as t, m as u, j as v, X as w, E as x, D as y, ce as z
+};
+//# sourceMappingURL=60b9a399-cdj5fwiq5sd8mqoj.js.map

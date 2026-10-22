@@ -1,2 +1,246 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{B8 as n,J5 as r,Q8 as i,R8 as a,VU as o,aC as s,oC as c,q5 as l,zU as u}from"./4813494d-qsuygr73qjc6rh65.js";import{Hn as d,Vn as f}from"./2340486e-komxp8tzs51ny4jj.js";import{Fbt as p,Ibt as m}from"./conversation-small-cawdu7il3ha6y70c.js";import{TC as h,_h as g,gh as _,wC as v}from"./30901919-jory365vq6ym5crx.js";var y,b,x,S,C,w,T,E,D,O,k,A,j,M,N,P,F=e((()=>{a(),m(),g(),h(),u(),c(),r(),y=t(d()),b=f(),x=e=>Array.isArray(e)||n(e)||e instanceof Map||e instanceof Set,S=e=>e==null||typeof e==`string`||typeof e==`number`||typeof e==`boolean`,C=e=>n(e)?Object.entries(e):Array.from(e.entries()),w=e=>`${typeof e}:${typeof e==`object`?JSON.stringify(e):e}`,T=({isPreview:e=!1,isInitialLevelExpanded:t=!1,unwrap:n=!1,value:r,className:i})=>{let[a,o]=(0,y.useState)(t);if(S(r)){let e=(0,b.jsx)(k,{value:r,depth:0});return i?(0,b.jsx)(`span`,{className:i,children:e}):e}return x(r)?n?(0,b.jsx)(`span`,{className:l(`text-sm`,i),children:(0,b.jsx)(O,{value:r,depth:0})}):(0,b.jsxs)(`span`,{className:l(`relative z-0 max-w-full font-mono text-sm leading-6`,a&&`w-full flex-auto`,i),children:[(0,b.jsxs)(`span`,{role:`button`,className:`group/row flex flex-wrap items-center gap-x-1`,onClick:()=>o(!a),children:[!e&&(0,b.jsx)(N,{isExpanded:a}),(0,b.jsx)(D,{value:r,depth:0}),(0,b.jsx)(P,{value:r})]}),a&&!e&&(0,b.jsx)(`div`,{className:`ps-6`,children:(0,b.jsx)(O,{value:r,depth:0})})]}):(0,b.jsx)(`span`,{className:l(`truncate`,i),children:String(r)})},E=({value:e,depth:t=0})=>x(e)?(0,b.jsx)(O,{depth:t,value:e}):S(e)?(0,b.jsx)(k,{depth:t,value:e}):(0,b.jsx)(`span`,{className:`truncate`,children:String(e)}),D=({value:e,depth:t=0})=>{let r=Array.isArray(e),i=C(e);return(0,b.jsxs)(`div`,{className:`inline-flex max-w-fit min-w-0 grow basis-0`,children:[!n(e)&&(0,b.jsx)(j,{isShort:!0,isSecondary:!0,collection:e}),r?`[`:`{`,(0,b.jsx)(`span`,{className:`inline-flex max-w-fit min-w-0 shrink grow basis-0 overflow-hidden`,children:i.map(([r,a],o)=>{let s=null;return s=x(a)?(0,b.jsx)(j,{collection:a}):S(a)?(0,b.jsx)(k,{truncate:!0,depth:t+1,value:a}):(0,b.jsx)(E,{depth:t+1,value:a}),(0,b.jsxs)(y.Fragment,{children:[(n(e)||e instanceof Map)&&(0,b.jsx)(`span`,{className:`text-token-text-secondary min-w-[2em] shrink truncate whitespace-pre`,children:(0,b.jsx)(M,{value:e,propertyKey:r})}),s,o<i.length-1&&(0,b.jsx)(`span`,{className:`whitespace-pre`,children:`, `})]},w(r))})}),r?`]`:`}`]})},O=({value:e,depth:t=0})=>{let[r,i]=(0,y.useState)(()=>new Set);return(0,b.jsx)(`ol`,{className:`flex flex-col ps-6 font-mono`,children:C(e).map(([a,o])=>{let s=w(a),c=r.has(s),u=x(o);return(0,b.jsxs)(`li`,{className:l(`flex ps-1 whitespace-nowrap`,u&&`flex-col`,!u&&`group/row flex-wrap`),onClick:e=>e.stopPropagation(),children:[(0,b.jsxs)(`span`,{onClick:u?()=>{i(e=>{let t=new Set(e);return t.has(s)?t.delete(s):t.add(s),t})}:void 0,role:u?`button`:void 0,className:l(`group/row z-10 -ms-1 min-w-0 items-center gap-x-1`,u?`flex`:`inline-flex`),children:[u&&(0,b.jsxs)(b.Fragment,{children:[(0,b.jsx)(A,{}),(0,b.jsx)(N,{shiftLeft:!0,isExpanded:c})]}),(0,b.jsx)(`span`,{className:l(`font-bold`,(n(e)||Array.isArray(e))&&`text-red-900 dark:text-blue-400`),children:(0,b.jsx)(M,{value:e,propertyKey:a})}),u&&!c&&(0,b.jsx)(D,{value:o,depth:t+1}),u&&c&&(0,b.jsx)(j,{isSecondary:!0,collection:o}),u&&(0,b.jsx)(P,{value:o})]}),(!u||c)&&(0,b.jsx)(E,{value:o,depth:t+1}),(typeof o==`string`||typeof o==`number`)&&(0,b.jsx)(P,{value:o})]},s)})})},k=({value:e,truncate:t=!1})=>typeof e==`string`?(0,b.jsxs)(`span`,{className:l(`dark:text-blue-75 text-red-500`,t&&`max-w-fit min-w-[2em] shrink-0 grow basis-0 overflow-hidden text-ellipsis whitespace-nowrap`,!t&&`break-words break-all whitespace-normal`),children:[`"`,e,`"`]}):(0,b.jsx)(`span`,{className:l(`whitespace-nowrap`,e==null?`text-token-text-secondary`:`dark:text-brand-purple-600 text-blue-500`),children:String(e)}),A=()=>(0,b.jsx)(`span`,{className:`absolute start-0 end-0 z-[-1] h-6 rounded-md group-hover/row:bg-gray-50 dark:group-hover/row:bg-gray-700`}),j=({collection:e,isSecondary:t=!1,isShort:r=!1})=>{let i=null;return Array.isArray(e)&&e.length>0?i=r?`(${e.length})`:`Array(${e.length})`:e instanceof Set?i=`Set(${e.size})`:e instanceof Map?i=`Map(${e.size})`:n(e)&&(i=`{…}`),i&&(0,b.jsx)(`span`,{className:l(t&&`text-token-text-secondary`),children:i})},M=({value:e,propertyKey:t})=>n(e)||Array.isArray(e)?`${i(t)}: `:e instanceof Map?(0,b.jsxs)(`span`,{className:`inline-flex items-center gap-1`,children:[S(t)?(0,b.jsx)(k,{value:t,depth:0}):(0,b.jsx)(`span`,{className:`text-token-text-secondary`,children:JSON.stringify(t)}),(0,b.jsx)(_,{className:`icon-sm text-token-text-secondary`})]}):null,N=({isExpanded:e,shiftLeft:t=!1})=>(0,b.jsx)(`button`,{className:l(`flex h-5 shrink-0 items-center overflow-hidden`,t&&`ms-[-16px]`),children:(0,b.jsx)(v,{className:l(`icon-sm text-token-text-secondary transition-transform`,e&&`rotate-90`)})}),P=({value:e})=>{let t=o();return(0,b.jsx)(`span`,{className:l(`text-token-text-secondary relative inline-block h-4 self-center opacity-0 transition-opacity`,`group-hover/row:opacity-100 group-hover/row:delay-500`,`hover:after:bg-token-main-surface-tertiary after:pointer-events-none after:absolute after:inset-[-4px] after:z-0 after:rounded-lg after:content-['']`),children:(0,b.jsx)(p,{iconClassName:`icon-sm z-10`,iconOnly:!0,onCopy:()=>{s(JSON.stringify(e),t)}})})}}));export{F as n,T as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    B8 as n,
+    J5 as r,
+    Q8 as i,
+    R8 as a,
+    VU as o,
+    aC as s,
+    oC as c,
+    q5 as l,
+    zU as u
+} from "./4813494d-qsuygr73qjc6rh65.js";
+import {
+    Hn as d,
+    Vn as f
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    Fbt as p,
+    Ibt as m
+} from "./conversation-small-cawdu7il3ha6y70c.js";
+import {
+    TC as h,
+    _h as g,
+    gh as _,
+    wC as v
+} from "./30901919-jory365vq6ym5crx.js";
+var y, b, x, S, C, w, T, E, D, O, k, A, j, M, N, P, F = e((() => {
+    a(), m(), g(), h(), u(), c(), r(), y = t(d()), b = f(), x = e => Array.isArray(e) || n(e) || e instanceof Map || e instanceof Set, S = e => e == null || typeof e == `string` || typeof e == `number` || typeof e == `boolean`, C = e => n(e) ? Object.entries(e) : Array.from(e.entries()), w = e => `${typeof e}:${typeof e==`object`?JSON.stringify(e):e}`, T = ({
+        isPreview: e = !1,
+        isInitialLevelExpanded: t = !1,
+        unwrap: n = !1,
+        value: r,
+        className: i
+    }) => {
+        let [a, o] = (0, y.useState)(t);
+        if (S(r)) {
+            let e = (0, b.jsx)(k, {
+                value: r,
+                depth: 0
+            });
+            return i ? (0, b.jsx)(`span`, {
+                className: i,
+                children: e
+            }) : e
+        }
+        return x(r) ? n ? (0, b.jsx)(`span`, {
+            className: l(`text-sm`, i),
+            children: (0, b.jsx)(O, {
+                value: r,
+                depth: 0
+            })
+        }) : (0, b.jsxs)(`span`, {
+            className: l(`relative z-0 max-w-full font-mono text-sm leading-6`, a && `w-full flex-auto`, i),
+            children: [(0, b.jsxs)(`span`, {
+                role: `button`,
+                className: `group/row flex flex-wrap items-center gap-x-1`,
+                onClick: () => o(!a),
+                children: [!e && (0, b.jsx)(N, {
+                    isExpanded: a
+                }), (0, b.jsx)(D, {
+                    value: r,
+                    depth: 0
+                }), (0, b.jsx)(P, {
+                    value: r
+                })]
+            }), a && !e && (0, b.jsx)(`div`, {
+                className: `ps-6`,
+                children: (0, b.jsx)(O, {
+                    value: r,
+                    depth: 0
+                })
+            })]
+        }) : (0, b.jsx)(`span`, {
+            className: l(`truncate`, i),
+            children: String(r)
+        })
+    }, E = ({
+        value: e,
+        depth: t = 0
+    }) => x(e) ? (0, b.jsx)(O, {
+        depth: t,
+        value: e
+    }) : S(e) ? (0, b.jsx)(k, {
+        depth: t,
+        value: e
+    }) : (0, b.jsx)(`span`, {
+        className: `truncate`,
+        children: String(e)
+    }), D = ({
+        value: e,
+        depth: t = 0
+    }) => {
+        let r = Array.isArray(e),
+            i = C(e);
+        return (0, b.jsxs)(`div`, {
+            className: `inline-flex max-w-fit min-w-0 grow basis-0`,
+            children: [!n(e) && (0, b.jsx)(j, {
+                isShort: !0,
+                isSecondary: !0,
+                collection: e
+            }), r ? `[` : `{`, (0, b.jsx)(`span`, {
+                className: `inline-flex max-w-fit min-w-0 shrink grow basis-0 overflow-hidden`,
+                children: i.map(([r, a], o) => {
+                    let s = null;
+                    return s = x(a) ? (0, b.jsx)(j, {
+                        collection: a
+                    }) : S(a) ? (0, b.jsx)(k, {
+                        truncate: !0,
+                        depth: t + 1,
+                        value: a
+                    }) : (0, b.jsx)(E, {
+                        depth: t + 1,
+                        value: a
+                    }), (0, b.jsxs)(y.Fragment, {
+                        children: [(n(e) || e instanceof Map) && (0, b.jsx)(`span`, {
+                            className: `text-token-text-secondary min-w-[2em] shrink truncate whitespace-pre`,
+                            children: (0, b.jsx)(M, {
+                                value: e,
+                                propertyKey: r
+                            })
+                        }), s, o < i.length - 1 && (0, b.jsx)(`span`, {
+                            className: `whitespace-pre`,
+                            children: `, `
+                        })]
+                    }, w(r))
+                })
+            }), r ? `]` : `}`]
+        })
+    }, O = ({
+        value: e,
+        depth: t = 0
+    }) => {
+        let [r, i] = (0, y.useState)(() => new Set);
+        return (0, b.jsx)(`ol`, {
+            className: `flex flex-col ps-6 font-mono`,
+            children: C(e).map(([a, o]) => {
+                let s = w(a),
+                    c = r.has(s),
+                    u = x(o);
+                return (0, b.jsxs)(`li`, {
+                    className: l(`flex ps-1 whitespace-nowrap`, u && `flex-col`, !u && `group/row flex-wrap`),
+                    onClick: e => e.stopPropagation(),
+                    children: [(0, b.jsxs)(`span`, {
+                        onClick: u ? () => {
+                            i(e => {
+                                let t = new Set(e);
+                                return t.has(s) ? t.delete(s) : t.add(s), t
+                            })
+                        } : void 0,
+                        role: u ? `button` : void 0,
+                        className: l(`group/row z-10 -ms-1 min-w-0 items-center gap-x-1`, u ? `flex` : `inline-flex`),
+                        children: [u && (0, b.jsxs)(b.Fragment, {
+                            children: [(0, b.jsx)(A, {}), (0, b.jsx)(N, {
+                                shiftLeft: !0,
+                                isExpanded: c
+                            })]
+                        }), (0, b.jsx)(`span`, {
+                            className: l(`font-bold`, (n(e) || Array.isArray(e)) && `text-red-900 dark:text-blue-400`),
+                            children: (0, b.jsx)(M, {
+                                value: e,
+                                propertyKey: a
+                            })
+                        }), u && !c && (0, b.jsx)(D, {
+                            value: o,
+                            depth: t + 1
+                        }), u && c && (0, b.jsx)(j, {
+                            isSecondary: !0,
+                            collection: o
+                        }), u && (0, b.jsx)(P, {
+                            value: o
+                        })]
+                    }), (!u || c) && (0, b.jsx)(E, {
+                        value: o,
+                        depth: t + 1
+                    }), (typeof o == `string` || typeof o == `number`) && (0, b.jsx)(P, {
+                        value: o
+                    })]
+                }, s)
+            })
+        })
+    }, k = ({
+        value: e,
+        truncate: t = !1
+    }) => typeof e == `string` ? (0, b.jsxs)(`span`, {
+        className: l(`dark:text-blue-75 text-red-500`, t && `max-w-fit min-w-[2em] shrink-0 grow basis-0 overflow-hidden text-ellipsis whitespace-nowrap`, !t && `break-words break-all whitespace-normal`),
+        children: [`"`, e, `"`]
+    }) : (0, b.jsx)(`span`, {
+        className: l(`whitespace-nowrap`, e == null ? `text-token-text-secondary` : `dark:text-brand-purple-600 text-blue-500`),
+        children: String(e)
+    }), A = () => (0, b.jsx)(`span`, {
+        className: `absolute start-0 end-0 z-[-1] h-6 rounded-md group-hover/row:bg-gray-50 dark:group-hover/row:bg-gray-700`
+    }), j = ({
+        collection: e,
+        isSecondary: t = !1,
+        isShort: r = !1
+    }) => {
+        let i = null;
+        return Array.isArray(e) && e.length > 0 ? i = r ? `(${e.length})` : `Array(${e.length})` : e instanceof Set ? i = `Set(${e.size})` : e instanceof Map ? i = `Map(${e.size})` : n(e) && (i = `{…}`), i && (0, b.jsx)(`span`, {
+            className: l(t && `text-token-text-secondary`),
+            children: i
+        })
+    }, M = ({
+        value: e,
+        propertyKey: t
+    }) => n(e) || Array.isArray(e) ? `${i(t)}: ` : e instanceof Map ? (0, b.jsxs)(`span`, {
+        className: `inline-flex items-center gap-1`,
+        children: [S(t) ? (0, b.jsx)(k, {
+            value: t,
+            depth: 0
+        }) : (0, b.jsx)(`span`, {
+            className: `text-token-text-secondary`,
+            children: JSON.stringify(t)
+        }), (0, b.jsx)(_, {
+            className: `icon-sm text-token-text-secondary`
+        })]
+    }) : null, N = ({
+        isExpanded: e,
+        shiftLeft: t = !1
+    }) => (0, b.jsx)(`button`, {
+        className: l(`flex h-5 shrink-0 items-center overflow-hidden`, t && `ms-[-16px]`),
+        children: (0, b.jsx)(v, {
+            className: l(`icon-sm text-token-text-secondary transition-transform`, e && `rotate-90`)
+        })
+    }), P = ({
+        value: e
+    }) => {
+        let t = o();
+        return (0, b.jsx)(`span`, {
+            className: l(`text-token-text-secondary relative inline-block h-4 self-center opacity-0 transition-opacity`, `group-hover/row:opacity-100 group-hover/row:delay-500`, `hover:after:bg-token-main-surface-tertiary after:pointer-events-none after:absolute after:inset-[-4px] after:z-0 after:rounded-lg after:content-['']`),
+            children: (0, b.jsx)(p, {
+                iconClassName: `icon-sm z-10`,
+                iconOnly: !0,
+                onCopy: () => {
+                    s(JSON.stringify(e), t)
+                }
+            })
+        })
+    }
+}));
+export {
+    F as n, T as t
+};
 //# sourceMappingURL=c8f38d6c-oq27omdnxv2lnk59.js.map

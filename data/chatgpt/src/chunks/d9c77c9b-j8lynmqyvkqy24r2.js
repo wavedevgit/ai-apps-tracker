@@ -1,2 +1,803 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Az as n,CI as r,JT as i,L1 as a,U8 as o,VU as s,X1 as c,Y1 as l,_nt as u,d6 as d,iat as f,jz as p,mst as m,oat as h,p6 as g,qT as _,tct as v,ynt as y,z8 as b,zU as x}from"./4813494d-dfpv67hlp00pbohr.js";import{At as S,Bn as C,Ft as w,Ht as T,Ln as E,Nn as ee,Nt as D,Q as O,Rn as k,Vn as A,wn as j,zn as M}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Brn as N,Cdn as P,Cet as te,Det as ne,Eet as re,Llt as F,Oet as ie,Sdn as ae,Vrn as oe,Wsn as se,aln as ce,cln as le,csn as ue,drn as de,hin as fe,oln as pe,prn as me,sln as he,ssn as ge,tcn as _e,urn as ve,vin as ye,zlt as be}from"./conversation-small-cy5f8pl0g26s86so.js";import{Bu as xe,Cd as Se,Df as Ce,Ef as we,Hu as Te,Sd as Ee,Sf as De,Vu as Oe,bd as ke,bf as Ae,hd as je,md as Me,yd as Ne}from"./c2675c8c-9bs3zsr3vq259es7.js";import{a as I,c as L,n as Pe,o as R,r as z,s as B,t as Fe}from"./b288024a-f2pym2zhb5t9hare.js";import{a as V,i as Ie,n as H}from"./8e7d0a25-byhabj0b0o4clis1.js";var U,Le,W,Re,ze=e((()=>{U=t(A()),k(),L(),R(),ie(),Le=t(A()),W=C(),Re=({formData:e,onNext:t})=>{let n=M(),[r,i]=(0,U.useState)({role:e.role??``,department:e.department??``}),[a,o]=(0,U.useState)({}),s=(e,t)=>{i(n=>({...n,[e]:t})),o(t=>({...t,[e]:``}))},c=(0,U.useMemo)(()=>{let e=te.map(e=>({label:n.formatMessage(e.displayValue),value:e.id}));return e.sort((e,t)=>e.label.localeCompare(t.label)),e},[n]),l=(0,U.useMemo)(()=>{let e=re.map(e=>({label:n.formatMessage(e.displayValue),value:e.id}));return e.sort((e,t)=>e.label.localeCompare(t.label)),e},[n]),u=(0,U.useMemo)(()=>[{formType:`select`,label:n.formatMessage(B.roleLabel),name:`role`,placeholder:n.formatMessage(B.rolePlaceholder),value:r.role,onChange:e=>s(`role`,e),error:a.role,required:!0,options:l},{formType:`select`,label:n.formatMessage(B.workspaceDepartmentLabel),name:`department`,placeholder:n.formatMessage(B.workspaceDepartmentPlaceholder),value:r.department,onChange:e=>s(`department`,e),error:a.department,required:!0,options:c}],[c,a.department,a.role,r.department,r.role,n,l]),d=()=>{let e={};return u.forEach(t=>{t.required&&!r[t.name]&&(e[t.name]=n.formatMessage(B.fieldRequired,{fieldName:t.label}))}),o(e),Object.values(e).every(e=>!e)};return(0,W.jsx)(I,{content:(0,W.jsxs)(z,{title:n.formatMessage(B.tellUsAboutWorkStepTitle),subTitle:n.formatMessage(B.tellUsAboutWorkStepSubtitle),children:[(0,W.jsx)(`div`,{className:`flex flex-col gap-6`,children:u.map(e=>(0,Le.createElement)(Pe,{...e,key:e.name}))}),(0,W.jsx)(Fe,{onClick:async()=>{d()&&await t(r)}})]})})}})),G,K,Be,Ve,He=e((()=>{L(),i(),ke(),Me(),se(),p(),a(),y(),d(),G=t(A()),k(),R(),K=C(),Be=1e4,Ve=e=>{let{onNext:t,pendingWorkspace:r,initialBillingDetails:i,formData:a}=e,[o,s]=(0,G.useState)(0),[c,d]=(0,G.useState)(!1),f=(0,G.useRef)(!1),p=(0,G.useRef)(null),m=(0,G.useRef)(!1),h=(0,G.useRef)(!1),{isLoading:v}=l(),y=M(),{data:b,isLoading:x,error:S}=g({countryCode:i?.country,currency:i?.currency,enabled:i!=null}),C=new URLSearchParams(r?.query_params??``).get(`promo_campaign`)??void 0,{selectedPlan:w,numSeats:T,promoData:E,promoDataIsFromQueryParam:D,isPromoDataLoading:O}=je({initialSeats:a?.numSeats,initialPromoCoupon:C,initialPromoCouponFromQueryParam:C!=null}),{eligible:k,campaignId:A}=_e(),j=!C&&k,N=(0,G.useMemo)(()=>E??(j?{coupon:A,state:`eligible`,redemption:null}:void 0),[E,j,A]),P=E?D:!j&&void 0;return(0,G.useEffect)(()=>{p.current??=Date.now(),S!=null&&!m.current&&(m.current=!0,u.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`checkout_pricing_config_failed`,flow:`standard_business`,severity:`error`,durationMs:Date.now()-p.current,hasBillingDetails:i!=null,errorType:S instanceof Error?S.name:typeof S})),!(f.current||!i||v||O||x||S!=null||!b)&&(f.current=!0,u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`checkout_dependencies_ready`,flow:`standard_business`,durationMs:Date.now()-p.current,seatCount:T,hasPromo:N!=null}),Promise.resolve(t({priceInterval:w,billingDetails:i,numSeats:T,promoData:N,promoDataIsFromQueryParam:P})).catch(e=>{u.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`checkout_start_failed`,flow:`standard_business`,severity:`error`,durationMs:Date.now()-(p.current??Date.now()),errorType:e instanceof Error?e.name:typeof e}),d(!0)}))},[o,b,S,i,v,O,x,T,t,N,P,w]),(0,G.useEffect)(()=>{if(f.current||c||h.current)return;let e=Date.now()-(p.current??Date.now()),t=setTimeout(()=>{f.current||(h.current=!0,u.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`checkout_dependencies_timed_out`,flow:`standard_business`,severity:`warning`,durationMs:Date.now()-(p.current??Date.now()),timeoutMs:Be,hasBillingDetails:i!=null,accountsLoading:v,promoLoading:O,pricingConfigLoading:x,pricingConfigFailed:S!=null,pricingConfigAvailable:b!=null}))},Math.max(0,Be-e));return()=>clearTimeout(t)},[c,b,S,i,v,x,O]),c?(0,K.jsx)(I,{content:(0,K.jsx)(z,{title:y.formatMessage(B.autoCheckoutErrorTitle),subTitle:y.formatMessage(B.autoCheckoutErrorSubtitle),children:(0,K.jsx)(_,{size:`large`,onClick:()=>{f.current=!1,d(!1),s(e=>e+1)},children:(0,K.jsx)(ee,{...B.autoCheckoutRetryButton})})})}):(0,K.jsx)(I,{content:(0,K.jsx)(n,{className:`text-token-text-secondary h-8 w-8`})})}})),q,Ue,J,We,Ge=e((()=>{q=t(A()),k(),L(),R(),ie(),Ue=t(A()),J=C(),We=({formData:e,onNext:t,onPrevious:n})=>{let r=M(),[i,a]=(0,q.useState)({workspaceName:e.workspaceName??``,companySize:e.companySize??``}),[o,s]=(0,q.useState)({}),c=(e,t)=>{a(n=>({...n,[e]:t})),s(t=>({...t,[e]:``}))},l=ne.map(e=>({label:typeof e.displayValue==`string`?e.displayValue:r.formatMessage(e.displayValue),value:e.id})),u=(0,q.useMemo)(()=>[{formType:`input`,label:r.formatMessage(B.workspaceNameLabel),name:`workspaceName`,placeholder:r.formatMessage(B.workspaceNamePlaceholder),value:i.workspaceName,onChange:e=>c(`workspaceName`,e),error:o.workspaceName,required:!0,autoFocus:!0},{formType:`select`,label:r.formatMessage(B.workspaceCompanySizeLabel),name:`companySize`,placeholder:r.formatMessage(B.workspaceCompanySizePlaceholder),value:i.companySize,onChange:e=>c(`companySize`,e),error:o.companySize,required:!1,options:l}],[o.companySize,o.workspaceName,i.companySize,i.workspaceName,r,l]),d=()=>{let e={};return u.forEach(t=>{t.required&&!i[t.name]&&(e[t.name]=r.formatMessage(B.fieldRequired,{fieldName:t.label}))}),s(e),Object.values(e).every(e=>!e)};return(0,J.jsx)(I,{onPrevious:n?()=>n({...i}):void 0,content:(0,J.jsxs)(z,{title:r.formatMessage(B.workspaceNameStepTitle),subTitle:r.formatMessage(B.workspaceNameStepSubtitle),children:[(0,J.jsx)(`div`,{className:`flex flex-col gap-6`,children:u.map(e=>(0,Ue.createElement)(Pe,{...e,key:e.name}))}),(0,J.jsx)(Fe,{disabled:!i.workspaceName,onClick:async()=>{d()&&await t({...i})}})]})})}})),Y,X,Ke,qe,Je,Ye,Xe,Z,Ze,Qe=e((()=>{Ce(),P(),v(),b(),L(),he(),Oe(),ue(),fe(),pe(),N(),Ae(),Ee(),ke(),ve(),a(),x(),y(),h(),Y=t(A()),k(),O(),Ie(),ze(),He(),Ge(),X=C(),Ke=function(e){return e.AboutWork=`about-work`,e.WorkspaceInfo=`workspace-info`,e.ConfigurePlan=`configure-plan`,e}(Ke||{}),qe=o(Object.values(Ke),void 0),Je=({pendingWorkspace:e})=>{let t=M(),[n,r]=(0,Y.useState)({workspaceName:e?.workspace_name??void 0,role:e?.role??void 0,department:e?.department??void 0,companySize:e?.company_size??void 0,numSeats:e?.seat_quantity??void 0}),i=new URLSearchParams(e?.query_params??``).get(Ne);Se(i??``,!!i);let a=Ye({data:n}),o=c(),s=S(),l=new URLSearchParams(s.search).get(`country_code`)??new URLSearchParams(e?.query_params??``).get(`country_code`)??void 0,d=w(),{country:f,userCountry:p}=me({initialCountryCode:l}),m=de({country:f,currentAccount:o,location:`TeamDirectSignUpFlow`,pricingPlanIsTypeBusiness:!0,shouldUsePaidSubscriptionBillingCurrency:oe(o)}),h=qe(e?.step_name),{step:g,nextStep:_}=Ze({initialStep:h&&Z.includes(h)?h:void 0});return(0,Y.useEffect)(()=>{e||(()=>{let t=Date.now();u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`pending_workspace_save_started`,flow:`standard_business`,step:e?.step_name??Z[0]}),V({step_name:e?.step_name??Z[0],query_params:s.search,user_segment:`v1`}).then(()=>{u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`pending_workspace_saved`,flow:`standard_business`,durationMs:Date.now()-t})}).catch(e=>{throw u.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`pending_workspace_save_failed`,flow:`standard_business`,severity:`error`,durationMs:Date.now()-t,errorType:e instanceof Error?e.name:typeof e}),e})})()},[]),(0,Y.useEffect)(()=>{let t=s.key,n=new URLSearchParams(window.location.search).get(`referrer`)||document.referrer,r=u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{...we(n),checkpoint:`signup_step_viewed`,flow:`standard_business`,entryPoint:le.TEAM_DIRECT_SIGNUP,step:g,initialStep:e?.step_name===h?h:void 0});u.logValueEventWithStatsig({segmentEventName:`Account Pay: Team Direct Sign Up Flow`,statsigEventName:`chatgpt_account_payment_team_direct_sign_up_flow`,...r?{eventId:r}:{},data:{...o?.subscriptionAnalyticsParams,referrer:n,initialTab:e?.step_name,currentTab:g,locationKey:t,navigationType:d,initialCountrySelectorCountry:l??f,selectedCountry:m?.country??``,selectedCurrency:m?.currency??``,userCountry:p??``}})},[g]),(0,X.jsxs)(X.Fragment,{children:[(0,X.jsx)(`title`,{children:t.formatMessage(B.teamSignUpPageTitle)}),(()=>{switch(g){case`about-work`:return(0,X.jsx)(Re,{formData:n,onNext:async e=>{let t={...n,...e};r(t),await _(t)}});case`workspace-info`:return(0,X.jsx)(We,{formData:n,onNext:async e=>{let t={...n,...e};r(t),await _(t)}});case`configure-plan`:return(0,X.jsx)(Ve,{formData:n,initialBillingDetails:m??void 0,onNext:async e=>{await a({...n,...e},{throwOnError:!0})},pendingWorkspace:e});default:return null}})()]})},Ye=({data:e})=>{let{prepareCheckoutSession:t,navigateToCheckout:n}=ye(),i=s(),a=M(),o=c();return(0,Y.useCallback)(async({priceInterval:s,billingDetails:c,numSeats:l,promoData:d,promoDataIsFromQueryParam:p},h)=>{let g=Date.now(),_=!1;try{let i=u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{...we(document.referrer),checkpoint:`checkout_started`,flow:`standard_business`,seatCount:l,billingCountry:c.country,priceInterval:s});u.logEvent(`Account Pay: Payment Checkout Clicked`,{planType:m.SELF_SERVE_BUSINESS,...o?.subscriptionAnalyticsParams,referrer:document.referrer,...ce({checkoutOriginProductExperience:ae.WORK,checkoutOriginDeliverySurface:`web`})},{eventId:i});let a={entry_point:le.TEAM_DIRECT_SIGNUP,plan_name:`chatgptteamplan`,team_plan_data:{workspace_name:e.workspaceName??``,price_interval:s,seat_quantity:l},billing_details:c,checkout_ui_mode:`custom`,...s===r.FLEXIBLE&&d?.coupon?{promo_campaign:{promo_campaign_id:d?.coupon,is_coupon_from_query_param:!!p}}:{},cancel_url:window.location.href},f=await t(a,{});_=!0,u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`checkout_session_created`,flow:`standard_business`,checkoutSessionId:ge(f),durationMs:Date.now()-g,seatCount:l,priceInterval:s}),await n(f,{checkoutPayload:a,checkoutOriginProvenance:{checkoutOriginProductExperience:ae.WORK,checkoutOriginDeliverySurface:`web`}})}catch(e){if(u.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:_?`checkout_navigation_failed`:`checkout_creation_failed`,flow:`standard_business`,severity:`error`,durationMs:Date.now()-g,seatCount:l,priceInterval:s,errorType:e instanceof Error?e.name:typeof e}),f.addError(e),i.warning(a.formatMessage(Te(e)?xe:De.paymentErrorWarning),{hasCloseButton:!0}),h?.throwOnError)throw e}},[o,e.workspaceName,a,n,t,i])},Xe=(e,t)=>{let n=new URLSearchParams(window.location.search);Object.entries(e).forEach(([e,t])=>{n.set(e,t)});let r=`${window.location.pathname}?${n.toString()}`;t?t(r,{replace:!1}):window.history.replaceState(null,``,r)},Z=[`configure-plan`],Ze=({initialStep:e})=>{let t=D(),n=S(),[r,i]=(0,Y.useState)(()=>{let t=e??Z[0];return Xe({[H]:t}),t}),a=(0,Y.useCallback)(e=>{i(e),Xe({[H]:e},t)},[t]),o=(0,Y.useRef)(null);return(0,Y.useEffect)(()=>{let e=new URLSearchParams(n.search).get(H);e!==o.current&&e&&Z.includes(e)&&e!==r&&a(e),o.current=e},[n.search,a,r]),{step:r,nextStep:async e=>{let t=r,i=Z.indexOf(r);i>=0&&i<Z.length-1&&(t=Z[i+1],a(t));try{await V({workspace_name:e.workspaceName,company_size:e.companySize,department:e.department,role:e.role,step_name:t,query_params:n.search,user_segment:`v1`})}catch(e){f.addError(e)}},previousStep:(0,Y.useCallback)(async e=>{let t=r,i=Z.indexOf(r);i>0&&(t=Z[i-1],a(t));try{await V({workspace_name:e.workspaceName,company_size:e.companySize,department:e.department,role:e.role,step_name:t,query_params:n.search,user_segment:`v1`})}catch(e){f.addError(e)}},[n.search,a,r])}}})),$e,Q,et,$,tt=e((()=>{$e=j(),i(),be(),k(),Q=C(),et=e=>{"use forget";let t=(0,$e.c)(34),{onResume:n,onCreate:r,onClose:i}=e,a=M(),o;t[0]===a?o=t[1]:(o=a.formatMessage($.title),t[0]=a,t[1]=o);let s=o,c;t[2]===i?c=t[3]:(c=e=>{e||i()},t[2]=i,t[3]=c);let l;t[4]===a?l=t[5]:(l=a.formatMessage($.close),t[4]=a,t[5]=l);let u;t[6]===l?u=t[7]:(u=(0,Q.jsx)(F.Header,{children:(0,Q.jsx)(F.CloseButton,{"aria-label":l})}),t[6]=l,t[7]=u);let d;t[8]===s?d=t[9]:(d=(0,Q.jsx)(`h1`,{className:`text-xl font-semibold`,children:s}),t[8]=s,t[9]=d);let f;t[10]===a?f=t[11]:(f=a.formatMessage($.description),t[10]=a,t[11]=f);let p;t[12]===f?p=t[13]:(p=(0,Q.jsx)(`p`,{className:`text-token-text-secondary text-sm leading-6`,children:f}),t[12]=f,t[13]=p);let m;t[14]===a?m=t[15]:(m=a.formatMessage($.resume),t[14]=a,t[15]=m);let h;t[16]!==n||t[17]!==m?(h=(0,Q.jsx)(_,{type:`button`,color:`primary`,onClick:n,children:m}),t[16]=n,t[17]=m,t[18]=h):h=t[18];let g;t[19]===a?g=t[20]:(g=a.formatMessage($.create),t[19]=a,t[20]=g);let v;t[21]!==r||t[22]!==g?(v=(0,Q.jsx)(_,{type:`button`,color:`secondary`,onClick:r,children:g}),t[21]=r,t[22]=g,t[23]=v):v=t[23];let y;t[24]!==v||t[25]!==d||t[26]!==p||t[27]!==h?(y=(0,Q.jsx)(F.Contents,{className:`flex h-full items-center justify-center px-6`,children:(0,Q.jsxs)(`div`,{className:`flex w-full max-w-md flex-col gap-5 text-center`,children:[d,p,h,v]})}),t[24]=v,t[25]=d,t[26]=p,t[27]=h,t[28]=y):y=t[28];let b;return t[29]!==y||t[30]!==c||t[31]!==u||t[32]!==s?(b=(0,Q.jsxs)(F,{open:!0,renderInPlace:!0,accessibleTitle:s,onOpenChange:c,children:[u,y]}),t[29]=y,t[30]=c,t[31]=u,t[32]=s,t[33]=b):b=t[33],b},$=E({title:{id:`businessWorkspaceResumeChoice.title`,defaultMessage:`Your workspace is ready`},description:{id:`businessWorkspaceResumeChoice.description`,defaultMessage:`Your previous checkout already created a workspace. You can continue its setup or create another workspace.`},resume:{id:`businessWorkspaceResumeChoice.resume`,defaultMessage:`Continue previous setup`},create:{id:`businessWorkspaceResumeChoice.create`,defaultMessage:`Create another workspace`},close:{id:`businessWorkspaceResumeChoice.close`,defaultMessage:`Back to ChatGPT`}})})),nt,rt,it,at,ot,st=e((()=>{O(),nt=j(),Qe(),tt(),Ie(),rt=t(A()),it=C(),at=`/create-workspace`,ot=T(function(e){"use forget";let t=(0,nt.c)(25),{loaderData:n}=e,r=S(),i=D(),[a,o]=(0,rt.useState)(null),s=n.completedWorkspaceResumeUrl,c=s!=null&&a!==s,l;t[0]!==n.pendingWorkspace?.query_params||t[1]!==r.pathname||t[2]!==r.search||t[3]!==i||t[4]!==c?(l=()=>{if(c)return;let e=n.pendingWorkspace?.query_params;if(!e)return;let t=new URLSearchParams(r.search),a=new URLSearchParams(e),o=!1;for(let[e,n]of a)!t.get(e)&&e!==`step`&&(t.set(e,n),o=!0);o&&i(`${r.pathname}?${t.toString()}`,{replace:!0})},t[0]=n.pendingWorkspace?.query_params,t[1]=r.pathname,t[2]=r.search,t[3]=i,t[4]=c,t[5]=l):l=t[5];let u=n.pendingWorkspace?.query_params,d;if(t[6]!==r.pathname||t[7]!==r.search||t[8]!==i||t[9]!==c||t[10]!==u?(d=[u,r.pathname,r.search,i,c],t[6]=r.pathname,t[7]=r.search,t[8]=i,t[9]=c,t[10]=u,t[11]=d):d=t[11],(0,rt.useEffect)(l,d),c){let e;t[12]!==i||t[13]!==s?(e=()=>i(s),t[12]=i,t[13]=s,t[14]=e):e=t[14];let n;t[15]===s?n=t[16]:(n=()=>o(s),t[15]=s,t[16]=n);let r;t[17]===i?r=t[18]:(r=()=>i(`/`),t[17]=i,t[18]=r);let a;return t[19]!==e||t[20]!==n||t[21]!==r?(a=(0,it.jsx)(et,{onResume:e,onCreate:n,onClose:r}),t[19]=e,t[20]=n,t[21]=r,t[22]=a):a=t[22],a}let f;return t[23]===n.pendingWorkspace?f=t[24]:(f=(0,it.jsx)(Je,{pendingWorkspace:n.pendingWorkspace}),t[23]=n.pendingWorkspace,t[24]=f),f})}));export{ot as n,st as r,at as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Az as n,
+    CI as r,
+    JT as i,
+    L1 as a,
+    U8 as o,
+    VU as s,
+    X1 as c,
+    Y1 as l,
+    _nt as u,
+    d6 as d,
+    iat as f,
+    jz as p,
+    mst as m,
+    oat as h,
+    p6 as g,
+    qT as _,
+    tct as v,
+    ynt as y,
+    z8 as b,
+    zU as x
+} from "./4813494d-dfpv67hlp00pbohr.js";
+import {
+    At as S,
+    Bn as C,
+    Ft as w,
+    Ht as T,
+    Ln as E,
+    Nn as ee,
+    Nt as D,
+    Q as O,
+    Rn as k,
+    Vn as A,
+    wn as j,
+    zn as M
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Brn as N,
+    Cdn as P,
+    Cet as te,
+    Det as ne,
+    Eet as re,
+    Llt as F,
+    Oet as ie,
+    Sdn as ae,
+    Vrn as oe,
+    Wsn as se,
+    aln as ce,
+    cln as le,
+    csn as ue,
+    drn as de,
+    hin as fe,
+    oln as pe,
+    prn as me,
+    sln as he,
+    ssn as ge,
+    tcn as _e,
+    urn as ve,
+    vin as ye,
+    zlt as be
+} from "./conversation-small-cy5f8pl0g26s86so.js";
+import {
+    Bu as xe,
+    Cd as Se,
+    Df as Ce,
+    Ef as we,
+    Hu as Te,
+    Sd as Ee,
+    Sf as De,
+    Vu as Oe,
+    bd as ke,
+    bf as Ae,
+    hd as je,
+    md as Me,
+    yd as Ne
+} from "./c2675c8c-9bs3zsr3vq259es7.js";
+import {
+    a as I,
+    c as L,
+    n as Pe,
+    o as R,
+    r as z,
+    s as B,
+    t as Fe
+} from "./b288024a-f2pym2zhb5t9hare.js";
+import {
+    a as V,
+    i as Ie,
+    n as H
+} from "./8e7d0a25-byhabj0b0o4clis1.js";
+var U, Le, W, Re, ze = e((() => {
+        U = t(A()), k(), L(), R(), ie(), Le = t(A()), W = C(), Re = ({
+            formData: e,
+            onNext: t
+        }) => {
+            let n = M(),
+                [r, i] = (0, U.useState)({
+                    role: e.role ?? ``,
+                    department: e.department ?? ``
+                }),
+                [a, o] = (0, U.useState)({}),
+                s = (e, t) => {
+                    i(n => ({
+                        ...n,
+                        [e]: t
+                    })), o(t => ({
+                        ...t,
+                        [e]: ``
+                    }))
+                },
+                c = (0, U.useMemo)(() => {
+                    let e = te.map(e => ({
+                        label: n.formatMessage(e.displayValue),
+                        value: e.id
+                    }));
+                    return e.sort((e, t) => e.label.localeCompare(t.label)), e
+                }, [n]),
+                l = (0, U.useMemo)(() => {
+                    let e = re.map(e => ({
+                        label: n.formatMessage(e.displayValue),
+                        value: e.id
+                    }));
+                    return e.sort((e, t) => e.label.localeCompare(t.label)), e
+                }, [n]),
+                u = (0, U.useMemo)(() => [{
+                    formType: `select`,
+                    label: n.formatMessage(B.roleLabel),
+                    name: `role`,
+                    placeholder: n.formatMessage(B.rolePlaceholder),
+                    value: r.role,
+                    onChange: e => s(`role`, e),
+                    error: a.role,
+                    required: !0,
+                    options: l
+                }, {
+                    formType: `select`,
+                    label: n.formatMessage(B.workspaceDepartmentLabel),
+                    name: `department`,
+                    placeholder: n.formatMessage(B.workspaceDepartmentPlaceholder),
+                    value: r.department,
+                    onChange: e => s(`department`, e),
+                    error: a.department,
+                    required: !0,
+                    options: c
+                }], [c, a.department, a.role, r.department, r.role, n, l]),
+                d = () => {
+                    let e = {};
+                    return u.forEach(t => {
+                        t.required && !r[t.name] && (e[t.name] = n.formatMessage(B.fieldRequired, {
+                            fieldName: t.label
+                        }))
+                    }), o(e), Object.values(e).every(e => !e)
+                };
+            return (0, W.jsx)(I, {
+                content: (0, W.jsxs)(z, {
+                    title: n.formatMessage(B.tellUsAboutWorkStepTitle),
+                    subTitle: n.formatMessage(B.tellUsAboutWorkStepSubtitle),
+                    children: [(0, W.jsx)(`div`, {
+                        className: `flex flex-col gap-6`,
+                        children: u.map(e => (0, Le.createElement)(Pe, {
+                            ...e,
+                            key: e.name
+                        }))
+                    }), (0, W.jsx)(Fe, {
+                        onClick: async () => {
+                            d() && await t(r)
+                        }
+                    })]
+                })
+            })
+        }
+    })),
+    G, K, Be, Ve, He = e((() => {
+        L(), i(), ke(), Me(), se(), p(), a(), y(), d(), G = t(A()), k(), R(), K = C(), Be = 1e4, Ve = e => {
+            let {
+                onNext: t,
+                pendingWorkspace: r,
+                initialBillingDetails: i,
+                formData: a
+            } = e, [o, s] = (0, G.useState)(0), [c, d] = (0, G.useState)(!1), f = (0, G.useRef)(!1), p = (0, G.useRef)(null), m = (0, G.useRef)(!1), h = (0, G.useRef)(!1), {
+                isLoading: v
+            } = l(), y = M(), {
+                data: b,
+                isLoading: x,
+                error: S
+            } = g({
+                countryCode: i?.country,
+                currency: i?.currency,
+                enabled: i != null
+            }), C = new URLSearchParams(r?.query_params ?? ``).get(`promo_campaign`) ?? void 0, {
+                selectedPlan: w,
+                numSeats: T,
+                promoData: E,
+                promoDataIsFromQueryParam: D,
+                isPromoDataLoading: O
+            } = je({
+                initialSeats: a?.numSeats,
+                initialPromoCoupon: C,
+                initialPromoCouponFromQueryParam: C != null
+            }), {
+                eligible: k,
+                campaignId: A
+            } = _e(), j = !C && k, N = (0, G.useMemo)(() => E ?? (j ? {
+                coupon: A,
+                state: `eligible`,
+                redemption: null
+            } : void 0), [E, j, A]), P = E ? D : !j && void 0;
+            return (0, G.useEffect)(() => {
+                p.current ??= Date.now(), S != null && !m.current && (m.current = !0, u.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                    checkpoint: `checkout_pricing_config_failed`,
+                    flow: `standard_business`,
+                    severity: `error`,
+                    durationMs: Date.now() - p.current,
+                    hasBillingDetails: i != null,
+                    errorType: S instanceof Error ? S.name : typeof S
+                })), !(f.current || !i || v || O || x || S != null || !b) && (f.current = !0, u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                    checkpoint: `checkout_dependencies_ready`,
+                    flow: `standard_business`,
+                    durationMs: Date.now() - p.current,
+                    seatCount: T,
+                    hasPromo: N != null
+                }), Promise.resolve(t({
+                    priceInterval: w,
+                    billingDetails: i,
+                    numSeats: T,
+                    promoData: N,
+                    promoDataIsFromQueryParam: P
+                })).catch(e => {
+                    u.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                        checkpoint: `checkout_start_failed`,
+                        flow: `standard_business`,
+                        severity: `error`,
+                        durationMs: Date.now() - (p.current ?? Date.now()),
+                        errorType: e instanceof Error ? e.name : typeof e
+                    }), d(!0)
+                }))
+            }, [o, b, S, i, v, O, x, T, t, N, P, w]), (0, G.useEffect)(() => {
+                if (f.current || c || h.current) return;
+                let e = Date.now() - (p.current ?? Date.now()),
+                    t = setTimeout(() => {
+                        f.current || (h.current = !0, u.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                            checkpoint: `checkout_dependencies_timed_out`,
+                            flow: `standard_business`,
+                            severity: `warning`,
+                            durationMs: Date.now() - (p.current ?? Date.now()),
+                            timeoutMs: Be,
+                            hasBillingDetails: i != null,
+                            accountsLoading: v,
+                            promoLoading: O,
+                            pricingConfigLoading: x,
+                            pricingConfigFailed: S != null,
+                            pricingConfigAvailable: b != null
+                        }))
+                    }, Math.max(0, Be - e));
+                return () => clearTimeout(t)
+            }, [c, b, S, i, v, x, O]), c ? (0, K.jsx)(I, {
+                content: (0, K.jsx)(z, {
+                    title: y.formatMessage(B.autoCheckoutErrorTitle),
+                    subTitle: y.formatMessage(B.autoCheckoutErrorSubtitle),
+                    children: (0, K.jsx)(_, {
+                        size: `large`,
+                        onClick: () => {
+                            f.current = !1, d(!1), s(e => e + 1)
+                        },
+                        children: (0, K.jsx)(ee, {
+                            ...B.autoCheckoutRetryButton
+                        })
+                    })
+                })
+            }) : (0, K.jsx)(I, {
+                content: (0, K.jsx)(n, {
+                    className: `text-token-text-secondary h-8 w-8`
+                })
+            })
+        }
+    })),
+    q, Ue, J, We, Ge = e((() => {
+        q = t(A()), k(), L(), R(), ie(), Ue = t(A()), J = C(), We = ({
+            formData: e,
+            onNext: t,
+            onPrevious: n
+        }) => {
+            let r = M(),
+                [i, a] = (0, q.useState)({
+                    workspaceName: e.workspaceName ?? ``,
+                    companySize: e.companySize ?? ``
+                }),
+                [o, s] = (0, q.useState)({}),
+                c = (e, t) => {
+                    a(n => ({
+                        ...n,
+                        [e]: t
+                    })), s(t => ({
+                        ...t,
+                        [e]: ``
+                    }))
+                },
+                l = ne.map(e => ({
+                    label: typeof e.displayValue == `string` ? e.displayValue : r.formatMessage(e.displayValue),
+                    value: e.id
+                })),
+                u = (0, q.useMemo)(() => [{
+                    formType: `input`,
+                    label: r.formatMessage(B.workspaceNameLabel),
+                    name: `workspaceName`,
+                    placeholder: r.formatMessage(B.workspaceNamePlaceholder),
+                    value: i.workspaceName,
+                    onChange: e => c(`workspaceName`, e),
+                    error: o.workspaceName,
+                    required: !0,
+                    autoFocus: !0
+                }, {
+                    formType: `select`,
+                    label: r.formatMessage(B.workspaceCompanySizeLabel),
+                    name: `companySize`,
+                    placeholder: r.formatMessage(B.workspaceCompanySizePlaceholder),
+                    value: i.companySize,
+                    onChange: e => c(`companySize`, e),
+                    error: o.companySize,
+                    required: !1,
+                    options: l
+                }], [o.companySize, o.workspaceName, i.companySize, i.workspaceName, r, l]),
+                d = () => {
+                    let e = {};
+                    return u.forEach(t => {
+                        t.required && !i[t.name] && (e[t.name] = r.formatMessage(B.fieldRequired, {
+                            fieldName: t.label
+                        }))
+                    }), s(e), Object.values(e).every(e => !e)
+                };
+            return (0, J.jsx)(I, {
+                onPrevious: n ? () => n({
+                    ...i
+                }) : void 0,
+                content: (0, J.jsxs)(z, {
+                    title: r.formatMessage(B.workspaceNameStepTitle),
+                    subTitle: r.formatMessage(B.workspaceNameStepSubtitle),
+                    children: [(0, J.jsx)(`div`, {
+                        className: `flex flex-col gap-6`,
+                        children: u.map(e => (0, Ue.createElement)(Pe, {
+                            ...e,
+                            key: e.name
+                        }))
+                    }), (0, J.jsx)(Fe, {
+                        disabled: !i.workspaceName,
+                        onClick: async () => {
+                            d() && await t({
+                                ...i
+                            })
+                        }
+                    })]
+                })
+            })
+        }
+    })),
+    Y, X, Ke, qe, Je, Ye, Xe, Z, Ze, Qe = e((() => {
+        Ce(), P(), v(), b(), L(), he(), Oe(), ue(), fe(), pe(), N(), Ae(), Ee(), ke(), ve(), a(), x(), y(), h(), Y = t(A()), k(), O(), Ie(), ze(), He(), Ge(), X = C(), Ke = function(e) {
+            return e.AboutWork = `about-work`, e.WorkspaceInfo = `workspace-info`, e.ConfigurePlan = `configure-plan`, e
+        }(Ke || {}), qe = o(Object.values(Ke), void 0), Je = ({
+            pendingWorkspace: e
+        }) => {
+            let t = M(),
+                [n, r] = (0, Y.useState)({
+                    workspaceName: e?.workspace_name ?? void 0,
+                    role: e?.role ?? void 0,
+                    department: e?.department ?? void 0,
+                    companySize: e?.company_size ?? void 0,
+                    numSeats: e?.seat_quantity ?? void 0
+                }),
+                i = new URLSearchParams(e?.query_params ?? ``).get(Ne);
+            Se(i ?? ``, !!i);
+            let a = Ye({
+                    data: n
+                }),
+                o = c(),
+                s = S(),
+                l = new URLSearchParams(s.search).get(`country_code`) ?? new URLSearchParams(e?.query_params ?? ``).get(`country_code`) ?? void 0,
+                d = w(),
+                {
+                    country: f,
+                    userCountry: p
+                } = me({
+                    initialCountryCode: l
+                }),
+                m = de({
+                    country: f,
+                    currentAccount: o,
+                    location: `TeamDirectSignUpFlow`,
+                    pricingPlanIsTypeBusiness: !0,
+                    shouldUsePaidSubscriptionBillingCurrency: oe(o)
+                }),
+                h = qe(e?.step_name),
+                {
+                    step: g,
+                    nextStep: _
+                } = Ze({
+                    initialStep: h && Z.includes(h) ? h : void 0
+                });
+            return (0, Y.useEffect)(() => {
+                e || (() => {
+                    let t = Date.now();
+                    u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                        checkpoint: `pending_workspace_save_started`,
+                        flow: `standard_business`,
+                        step: e?.step_name ?? Z[0]
+                    }), V({
+                        step_name: e?.step_name ?? Z[0],
+                        query_params: s.search,
+                        user_segment: `v1`
+                    }).then(() => {
+                        u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                            checkpoint: `pending_workspace_saved`,
+                            flow: `standard_business`,
+                            durationMs: Date.now() - t
+                        })
+                    }).catch(e => {
+                        throw u.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                            checkpoint: `pending_workspace_save_failed`,
+                            flow: `standard_business`,
+                            severity: `error`,
+                            durationMs: Date.now() - t,
+                            errorType: e instanceof Error ? e.name : typeof e
+                        }), e
+                    })
+                })()
+            }, []), (0, Y.useEffect)(() => {
+                let t = s.key,
+                    n = new URLSearchParams(window.location.search).get(`referrer`) || document.referrer,
+                    r = u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                        ...we(n),
+                        checkpoint: `signup_step_viewed`,
+                        flow: `standard_business`,
+                        entryPoint: le.TEAM_DIRECT_SIGNUP,
+                        step: g,
+                        initialStep: e?.step_name === h ? h : void 0
+                    });
+                u.logValueEventWithStatsig({
+                    segmentEventName: `Account Pay: Team Direct Sign Up Flow`,
+                    statsigEventName: `chatgpt_account_payment_team_direct_sign_up_flow`,
+                    ...r ? {
+                        eventId: r
+                    } : {},
+                    data: {
+                        ...o?.subscriptionAnalyticsParams,
+                        referrer: n,
+                        initialTab: e?.step_name,
+                        currentTab: g,
+                        locationKey: t,
+                        navigationType: d,
+                        initialCountrySelectorCountry: l ?? f,
+                        selectedCountry: m?.country ?? ``,
+                        selectedCurrency: m?.currency ?? ``,
+                        userCountry: p ?? ``
+                    }
+                })
+            }, [g]), (0, X.jsxs)(X.Fragment, {
+                children: [(0, X.jsx)(`title`, {
+                    children: t.formatMessage(B.teamSignUpPageTitle)
+                }), (() => {
+                    switch (g) {
+                        case `about-work`:
+                            return (0, X.jsx)(Re, {
+                                formData: n,
+                                onNext: async e => {
+                                    let t = {
+                                        ...n,
+                                        ...e
+                                    };
+                                    r(t), await _(t)
+                                }
+                            });
+                        case `workspace-info`:
+                            return (0, X.jsx)(We, {
+                                formData: n,
+                                onNext: async e => {
+                                    let t = {
+                                        ...n,
+                                        ...e
+                                    };
+                                    r(t), await _(t)
+                                }
+                            });
+                        case `configure-plan`:
+                            return (0, X.jsx)(Ve, {
+                                formData: n,
+                                initialBillingDetails: m ?? void 0,
+                                onNext: async e => {
+                                    await a({
+                                        ...n,
+                                        ...e
+                                    }, {
+                                        throwOnError: !0
+                                    })
+                                },
+                                pendingWorkspace: e
+                            });
+                        default:
+                            return null
+                    }
+                })()]
+            })
+        }, Ye = ({
+            data: e
+        }) => {
+            let {
+                prepareCheckoutSession: t,
+                navigateToCheckout: n
+            } = ye(), i = s(), a = M(), o = c();
+            return (0, Y.useCallback)(async ({
+                priceInterval: s,
+                billingDetails: c,
+                numSeats: l,
+                promoData: d,
+                promoDataIsFromQueryParam: p
+            }, h) => {
+                let g = Date.now(),
+                    _ = !1;
+                try {
+                    let i = u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                        ...we(document.referrer),
+                        checkpoint: `checkout_started`,
+                        flow: `standard_business`,
+                        seatCount: l,
+                        billingCountry: c.country,
+                        priceInterval: s
+                    });
+                    u.logEvent(`Account Pay: Payment Checkout Clicked`, {
+                        planType: m.SELF_SERVE_BUSINESS,
+                        ...o?.subscriptionAnalyticsParams,
+                        referrer: document.referrer,
+                        ...ce({
+                            checkoutOriginProductExperience: ae.WORK,
+                            checkoutOriginDeliverySurface: `web`
+                        })
+                    }, {
+                        eventId: i
+                    });
+                    let a = {
+                            entry_point: le.TEAM_DIRECT_SIGNUP,
+                            plan_name: `chatgptteamplan`,
+                            team_plan_data: {
+                                workspace_name: e.workspaceName ?? ``,
+                                price_interval: s,
+                                seat_quantity: l
+                            },
+                            billing_details: c,
+                            checkout_ui_mode: `custom`,
+                            ...s === r.FLEXIBLE && d?.coupon ? {
+                                promo_campaign: {
+                                    promo_campaign_id: d?.coupon,
+                                    is_coupon_from_query_param: !!p
+                                }
+                            } : {},
+                            cancel_url: window.location.href
+                        },
+                        f = await t(a, {});
+                    _ = !0, u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                        checkpoint: `checkout_session_created`,
+                        flow: `standard_business`,
+                        checkoutSessionId: ge(f),
+                        durationMs: Date.now() - g,
+                        seatCount: l,
+                        priceInterval: s
+                    }), await n(f, {
+                        checkoutPayload: a,
+                        checkoutOriginProvenance: {
+                            checkoutOriginProductExperience: ae.WORK,
+                            checkoutOriginDeliverySurface: `web`
+                        }
+                    })
+                } catch (e) {
+                    if (u.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                            checkpoint: _ ? `checkout_navigation_failed` : `checkout_creation_failed`,
+                            flow: `standard_business`,
+                            severity: `error`,
+                            durationMs: Date.now() - g,
+                            seatCount: l,
+                            priceInterval: s,
+                            errorType: e instanceof Error ? e.name : typeof e
+                        }), f.addError(e), i.warning(a.formatMessage(Te(e) ? xe : De.paymentErrorWarning), {
+                            hasCloseButton: !0
+                        }), h?.throwOnError) throw e
+                }
+            }, [o, e.workspaceName, a, n, t, i])
+        }, Xe = (e, t) => {
+            let n = new URLSearchParams(window.location.search);
+            Object.entries(e).forEach(([e, t]) => {
+                n.set(e, t)
+            });
+            let r = `${window.location.pathname}?${n.toString()}`;
+            t ? t(r, {
+                replace: !1
+            }) : window.history.replaceState(null, ``, r)
+        }, Z = [`configure-plan`], Ze = ({
+            initialStep: e
+        }) => {
+            let t = D(),
+                n = S(),
+                [r, i] = (0, Y.useState)(() => {
+                    let t = e ?? Z[0];
+                    return Xe({
+                        [H]: t
+                    }), t
+                }),
+                a = (0, Y.useCallback)(e => {
+                    i(e), Xe({
+                        [H]: e
+                    }, t)
+                }, [t]),
+                o = (0, Y.useRef)(null);
+            return (0, Y.useEffect)(() => {
+                let e = new URLSearchParams(n.search).get(H);
+                e !== o.current && e && Z.includes(e) && e !== r && a(e), o.current = e
+            }, [n.search, a, r]), {
+                step: r,
+                nextStep: async e => {
+                    let t = r,
+                        i = Z.indexOf(r);
+                    i >= 0 && i < Z.length - 1 && (t = Z[i + 1], a(t));
+                    try {
+                        await V({
+                            workspace_name: e.workspaceName,
+                            company_size: e.companySize,
+                            department: e.department,
+                            role: e.role,
+                            step_name: t,
+                            query_params: n.search,
+                            user_segment: `v1`
+                        })
+                    } catch (e) {
+                        f.addError(e)
+                    }
+                },
+                previousStep: (0, Y.useCallback)(async e => {
+                    let t = r,
+                        i = Z.indexOf(r);
+                    i > 0 && (t = Z[i - 1], a(t));
+                    try {
+                        await V({
+                            workspace_name: e.workspaceName,
+                            company_size: e.companySize,
+                            department: e.department,
+                            role: e.role,
+                            step_name: t,
+                            query_params: n.search,
+                            user_segment: `v1`
+                        })
+                    } catch (e) {
+                        f.addError(e)
+                    }
+                }, [n.search, a, r])
+            }
+        }
+    })),
+    $e, Q, et, $, tt = e((() => {
+        $e = j(), i(), be(), k(), Q = C(), et = e => {
+            "use forget";
+            let t = (0, $e.c)(34),
+                {
+                    onResume: n,
+                    onCreate: r,
+                    onClose: i
+                } = e,
+                a = M(),
+                o;
+            t[0] === a ? o = t[1] : (o = a.formatMessage($.title), t[0] = a, t[1] = o);
+            let s = o,
+                c;
+            t[2] === i ? c = t[3] : (c = e => {
+                e || i()
+            }, t[2] = i, t[3] = c);
+            let l;
+            t[4] === a ? l = t[5] : (l = a.formatMessage($.close), t[4] = a, t[5] = l);
+            let u;
+            t[6] === l ? u = t[7] : (u = (0, Q.jsx)(F.Header, {
+                children: (0, Q.jsx)(F.CloseButton, {
+                    "aria-label": l
+                })
+            }), t[6] = l, t[7] = u);
+            let d;
+            t[8] === s ? d = t[9] : (d = (0, Q.jsx)(`h1`, {
+                className: `text-xl font-semibold`,
+                children: s
+            }), t[8] = s, t[9] = d);
+            let f;
+            t[10] === a ? f = t[11] : (f = a.formatMessage($.description), t[10] = a, t[11] = f);
+            let p;
+            t[12] === f ? p = t[13] : (p = (0, Q.jsx)(`p`, {
+                className: `text-token-text-secondary text-sm leading-6`,
+                children: f
+            }), t[12] = f, t[13] = p);
+            let m;
+            t[14] === a ? m = t[15] : (m = a.formatMessage($.resume), t[14] = a, t[15] = m);
+            let h;
+            t[16] !== n || t[17] !== m ? (h = (0, Q.jsx)(_, {
+                type: `button`,
+                color: `primary`,
+                onClick: n,
+                children: m
+            }), t[16] = n, t[17] = m, t[18] = h) : h = t[18];
+            let g;
+            t[19] === a ? g = t[20] : (g = a.formatMessage($.create), t[19] = a, t[20] = g);
+            let v;
+            t[21] !== r || t[22] !== g ? (v = (0, Q.jsx)(_, {
+                type: `button`,
+                color: `secondary`,
+                onClick: r,
+                children: g
+            }), t[21] = r, t[22] = g, t[23] = v) : v = t[23];
+            let y;
+            t[24] !== v || t[25] !== d || t[26] !== p || t[27] !== h ? (y = (0, Q.jsx)(F.Contents, {
+                className: `flex h-full items-center justify-center px-6`,
+                children: (0, Q.jsxs)(`div`, {
+                    className: `flex w-full max-w-md flex-col gap-5 text-center`,
+                    children: [d, p, h, v]
+                })
+            }), t[24] = v, t[25] = d, t[26] = p, t[27] = h, t[28] = y) : y = t[28];
+            let b;
+            return t[29] !== y || t[30] !== c || t[31] !== u || t[32] !== s ? (b = (0, Q.jsxs)(F, {
+                open: !0,
+                renderInPlace: !0,
+                accessibleTitle: s,
+                onOpenChange: c,
+                children: [u, y]
+            }), t[29] = y, t[30] = c, t[31] = u, t[32] = s, t[33] = b) : b = t[33], b
+        }, $ = E({
+            title: {
+                id: `businessWorkspaceResumeChoice.title`,
+                defaultMessage: `Your workspace is ready`
+            },
+            description: {
+                id: `businessWorkspaceResumeChoice.description`,
+                defaultMessage: `Your previous checkout already created a workspace. You can continue its setup or create another workspace.`
+            },
+            resume: {
+                id: `businessWorkspaceResumeChoice.resume`,
+                defaultMessage: `Continue previous setup`
+            },
+            create: {
+                id: `businessWorkspaceResumeChoice.create`,
+                defaultMessage: `Create another workspace`
+            },
+            close: {
+                id: `businessWorkspaceResumeChoice.close`,
+                defaultMessage: `Back to ChatGPT`
+            }
+        })
+    })),
+    nt, rt, it, at, ot, st = e((() => {
+        O(), nt = j(), Qe(), tt(), Ie(), rt = t(A()), it = C(), at = `/create-workspace`, ot = T(function(e) {
+            "use forget";
+            let t = (0, nt.c)(25),
+                {
+                    loaderData: n
+                } = e,
+                r = S(),
+                i = D(),
+                [a, o] = (0, rt.useState)(null),
+                s = n.completedWorkspaceResumeUrl,
+                c = s != null && a !== s,
+                l;
+            t[0] !== n.pendingWorkspace?.query_params || t[1] !== r.pathname || t[2] !== r.search || t[3] !== i || t[4] !== c ? (l = () => {
+                if (c) return;
+                let e = n.pendingWorkspace?.query_params;
+                if (!e) return;
+                let t = new URLSearchParams(r.search),
+                    a = new URLSearchParams(e),
+                    o = !1;
+                for (let [e, n] of a) !t.get(e) && e !== `step` && (t.set(e, n), o = !0);
+                o && i(`${r.pathname}?${t.toString()}`, {
+                    replace: !0
+                })
+            }, t[0] = n.pendingWorkspace?.query_params, t[1] = r.pathname, t[2] = r.search, t[3] = i, t[4] = c, t[5] = l) : l = t[5];
+            let u = n.pendingWorkspace?.query_params,
+                d;
+            if (t[6] !== r.pathname || t[7] !== r.search || t[8] !== i || t[9] !== c || t[10] !== u ? (d = [u, r.pathname, r.search, i, c], t[6] = r.pathname, t[7] = r.search, t[8] = i, t[9] = c, t[10] = u, t[11] = d) : d = t[11], (0, rt.useEffect)(l, d), c) {
+                let e;
+                t[12] !== i || t[13] !== s ? (e = () => i(s), t[12] = i, t[13] = s, t[14] = e) : e = t[14];
+                let n;
+                t[15] === s ? n = t[16] : (n = () => o(s), t[15] = s, t[16] = n);
+                let r;
+                t[17] === i ? r = t[18] : (r = () => i(`/`), t[17] = i, t[18] = r);
+                let a;
+                return t[19] !== e || t[20] !== n || t[21] !== r ? (a = (0, it.jsx)(et, {
+                    onResume: e,
+                    onCreate: n,
+                    onClose: r
+                }), t[19] = e, t[20] = n, t[21] = r, t[22] = a) : a = t[22], a
+            }
+            let f;
+            return t[23] === n.pendingWorkspace ? f = t[24] : (f = (0, it.jsx)(Je, {
+                pendingWorkspace: n.pendingWorkspace
+            }), t[23] = n.pendingWorkspace, t[24] = f), f
+        })
+    }));
+export {
+    ot as n, st as r, at as t
+};
 //# sourceMappingURL=d9c77c9b-j8lynmqyvkqy24r2.js.map

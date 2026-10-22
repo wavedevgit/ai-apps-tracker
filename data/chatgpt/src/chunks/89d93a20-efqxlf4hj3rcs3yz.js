@@ -1,0 +1,89 @@
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ait as r,
+    V1 as i,
+    est as a,
+    q1 as o
+} from "./4813494d-i89nb6zlze66idsz.js";
+import {
+    Vn as s
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    TS as c,
+    kS as l
+} from "./c2675c8c-4fpunyxk1uf8cfp1.js";
+import {
+    a as u,
+    c as d,
+    o as f,
+    s as p,
+    t as m
+} from "./b34a84d1-iu4mx28dknmvhphx.js";
+var h = t({
+    getCreditCheckoutAnalyticsForPage: () => v,
+    readCreditCheckoutDocumentHandoff: () => y,
+    rememberCreditCheckoutDocumentHandoff: () => _,
+    rememberCreditCheckoutEventContext: () => g,
+    useCreditRecoveryPayload: () => b
+});
+
+function g(e, t) {
+    d({
+        context: e,
+        analytics: t,
+        accountId: i()?.id,
+        userId: a()?.user?.id
+    })
+}
+
+function _(e, t, n) {
+    p({
+        checkoutSessionId: e,
+        checkoutPayload: t,
+        analytics: n,
+        userId: a()?.user?.id
+    })
+}
+
+function v({
+    navigationState: e,
+    accountId: t,
+    checkoutSessionId: n,
+    processorEntity: r
+}) {
+    return m({
+        navigationState: e,
+        accountId: t,
+        checkoutSessionId: n,
+        processorEntity: r,
+        userId: a()?.user?.id
+    })
+}
+
+function y(e) {
+    return f({
+        checkoutSessionId: e,
+        userId: a()?.user?.id
+    })?.checkoutPayload
+}
+
+function b(e, t) {
+    let [n, r] = (0, x.useState)(null);
+    return l(() => {
+        r({
+            checkoutSessionId: e,
+            checkoutPayload: y(e)
+        })
+    }, [e]), t ?? (n?.checkoutSessionId === e ? n.checkoutPayload : void 0)
+}
+var x, S = e((() => {
+    u(), o(), r(), x = n(s()), c()
+}));
+export {
+    b as a, g as i, v as n, S as r, h as t
+};
+//# sourceMappingURL=89d93a20-efqxlf4hj3rcs3yz.js.map

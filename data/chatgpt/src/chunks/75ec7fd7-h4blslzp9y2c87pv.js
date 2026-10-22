@@ -1,2 +1,52 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Hst as t,P5 as n,Wst as r,fD as i,g8 as a,lD as o,oct as s}from"./4813494d-tap9fxyhk4ehe0bs.js";import{Bn as c,Rn as l,zn as u}from"./2340486e-i7pjxgdhv0bs6apg.js";import{I8 as d,L8 as f,M8 as p,P8 as m,R8 as h}from"./conversation-small-nmt18uiom3b14vca.js";function g({gizmoId:e,onClose:i}){let a=n(()=>o(e).data),{data:s}=h(t.Gizmo),c=f(u(),e,t.Gizmo,r.GPTs);if(s==null)return null;let l=a==null?`Report`:`Report ${a.gizmo.display.name}`;return(0,_.jsx)(p,{reasons:s.reasons,submitReport:c,title:l,onClose:i,header:s.header,subHeader:s.header_explanation})}var _,v=e((()=>{s(),i(),m(),a(),d(),l(),_=c()}));export{v as n,g as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Hst as t,
+    P5 as n,
+    Wst as r,
+    fD as i,
+    g8 as a,
+    lD as o,
+    oct as s
+} from "./4813494d-tap9fxyhk4ehe0bs.js";
+import {
+    Bn as c,
+    Rn as l,
+    zn as u
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    I8 as d,
+    L8 as f,
+    M8 as p,
+    P8 as m,
+    R8 as h
+} from "./conversation-small-nmt18uiom3b14vca.js";
+
+function g({
+    gizmoId: e,
+    onClose: i
+}) {
+    let a = n(() => o(e).data),
+        {
+            data: s
+        } = h(t.Gizmo),
+        c = f(u(), e, t.Gizmo, r.GPTs);
+    if (s == null) return null;
+    let l = a == null ? `Report` : `Report ${a.gizmo.display.name}`;
+    return (0, _.jsx)(p, {
+        reasons: s.reasons,
+        submitReport: c,
+        title: l,
+        onClose: i,
+        header: s.header,
+        subHeader: s.header_explanation
+    })
+}
+var _, v = e((() => {
+    s(), i(), m(), a(), d(), l(), _ = c()
+}));
+export {
+    v as n, g as t
+};
 //# sourceMappingURL=75ec7fd7-h4blslzp9y2c87pv.js.map

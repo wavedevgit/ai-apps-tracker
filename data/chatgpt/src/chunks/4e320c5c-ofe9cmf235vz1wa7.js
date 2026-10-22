@@ -1,2 +1,40 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Pn as t,Vn as n,zn as r}from"./2340486e-komxp8tzs51ny4jj.js";import{a as i,o as a,s as o}from"./f531ca99-j1nat5a9at43z4ke.js";function s({diffFile:e,fallback:n=null}){let r=o(e);return a(e)?(0,c.jsx)(`div`,{className:`-my-1 flex rounded-full bg-green-500/10 px-2 py-1 text-xs text-green-500`,children:(0,c.jsx)(t,{id:`wham.fileTag.new`,defaultMessage:`New`})}):r?(0,c.jsx)(`div`,{className:`-my-1 flex rounded-full bg-red-500/10 px-2 py-1 text-xs text-red-500`,children:(0,c.jsx)(t,{id:`wham.fileTag.deleted`,defaultMessage:`Deleted`})}):n}var c,l=e((()=>{i(),r(),c=n()}));export{l as n,s as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Pn as t,
+    Vn as n,
+    zn as r
+} from "./2340486e-komxp8tzs51ny4jj.js";
+import {
+    a as i,
+    o as a,
+    s as o
+} from "./f531ca99-j1nat5a9at43z4ke.js";
+
+function s({
+    diffFile: e,
+    fallback: n = null
+}) {
+    let r = o(e);
+    return a(e) ? (0, c.jsx)(`div`, {
+        className: `-my-1 flex rounded-full bg-green-500/10 px-2 py-1 text-xs text-green-500`,
+        children: (0, c.jsx)(t, {
+            id: `wham.fileTag.new`,
+            defaultMessage: `New`
+        })
+    }) : r ? (0, c.jsx)(`div`, {
+        className: `-my-1 flex rounded-full bg-red-500/10 px-2 py-1 text-xs text-red-500`,
+        children: (0, c.jsx)(t, {
+            id: `wham.fileTag.deleted`,
+            defaultMessage: `Deleted`
+        })
+    }) : n
+}
+var c, l = e((() => {
+    i(), r(), c = n()
+}));
+export {
+    l as n, s as t
+};
 //# sourceMappingURL=4e320c5c-ofe9cmf235vz1wa7.js.map

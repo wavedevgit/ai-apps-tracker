@@ -1,0 +1,110 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Rz as n,
+    f0 as r,
+    p0 as i,
+    zz as a
+} from "./4813494d-i89nb6zlze66idsz.js";
+import {
+    Bn as o,
+    Ht as s,
+    Nn as c,
+    Nt as l,
+    Q as u,
+    Rn as d,
+    Vn as f,
+    kt as p,
+    zn as m
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    la as h,
+    ua as g
+} from "./conversation-small-fh0oqifngkf5rvl1.js";
+import {
+    $n as _,
+    Ea as v,
+    Qn as y,
+    Ta as b
+} from "./c2675c8c-4fpunyxk1uf8cfp1.js";
+import {
+    n as x,
+    t as S
+} from "./68b36cc8-b4t3ax7liydnquw9.js";
+
+function C() {
+    let e = m(),
+        t = l(),
+        r = p(),
+        [a, o] = (0, w.useState)(!1);
+    return (0, w.useEffect)(() => {
+        if (r?.wantsModal) {
+            let e = setTimeout(() => o(!0), 3e3);
+            return () => clearTimeout(e)
+        }
+        o(!0)
+    }, [r]), (0, w.useEffect)(() => {
+        if (r) {
+            if (r.wantsModal) {
+                if (!a) return;
+                r.isLoggedIn ? window.location.assign(`/#settings/Security`) : i({
+                    callbackUrl: `/#settings/Security`,
+                    fallbackScreenHint: `login`,
+                    useFallbackScreenHint: !0
+                });
+                return
+            }
+            r.wantsAuth && !r.isLoggedIn ? i({
+                callbackUrl: `/security-settings`,
+                fallbackScreenHint: `login`,
+                useFallbackScreenHint: !0
+            }) : r.wantsAuth && r.isLoggedIn && t({
+                pathname: `/security-settings`,
+                search: ``
+            }, {
+                replace: !0
+            })
+        }
+    }, [r, t, a]), (0, T.jsx)(h, {
+        ariaLabel: e.formatMessage(v.securityTab),
+        anchor: `vertical`,
+        className: S.screen,
+        children: r?.wantsModal ? (0, T.jsx)(`main`, {
+            className: `flex h-full w-full items-center justify-center p-6`,
+            role: `status`,
+            "aria-live": `polite`,
+            "aria-busy": `true`,
+            children: (0, T.jsxs)(`div`, {
+                className: `flex flex-col items-center gap-4 text-center`,
+                children: [(0, T.jsx)(n, {
+                    className: `text-token-text-primary h-10 w-10`
+                }), (0, T.jsx)(`p`, {
+                    className: `text-token-text-primary text-sm`,
+                    children: (0, T.jsx)(c, {
+                        id: `security-settings.redirect-message`,
+                        defaultMessage: `Security settings live in ChatGPT. You’re being redirected in a new tab.`
+                    })
+                })]
+            })
+        }) : (0, T.jsx)(`div`, {
+            className: `flex w-full justify-center`,
+            children: (0, T.jsx)(`div`, {
+                className: `w-full max-w-[720px] px-4 sm:max-w-[820px] sm:px-6 md:max-w-[900px] md:px-8 lg:max-w-[1024px] xl:max-w-[1120px]`,
+                children: r?.wantsAuth && !r?.isLoggedIn ? null : (0, T.jsx)(_, {
+                    isFullPage: !0
+                })
+            })
+        })
+    })
+}
+var w, T, E, D = e((() => {
+    u(), g(), x(), d(), a(), y(), b(), r(), w = t(f()), T = o(), E = s(function() {
+        return (0, T.jsx)(C, {})
+    })
+}));
+export {
+    E as n, D as t
+};
+//# sourceMappingURL=85299807-l6v8318i0kro1bw4.js.map

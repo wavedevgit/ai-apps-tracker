@@ -1,0 +1,207 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as t,
+    Mw as n,
+    Nnt as r,
+    Vw as i,
+    Xh as a,
+    eE as o,
+    jw as s,
+    mnt as c,
+    qh as l,
+    zw as u
+} from "./4813494d-i89nb6zlze66idsz.js";
+import {
+    Bn as d,
+    Ln as f,
+    Nn as p,
+    Rn as m,
+    wn as h
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    IWt as g,
+    RUn as _,
+    mWt as v,
+    zUn as y
+} from "./conversation-small-fh0oqifngkf5rvl1.js";
+import {
+    A as b,
+    k as x
+} from "./c470f5ab-ctk9cdujw17c2exz.js";
+
+function S(e, t) {
+    return (0, w.jsx)(`a`, {
+        className: `interactive-label-secondary font-medium`,
+        href: e,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        children: t
+    })
+}
+var C, w, T, E, D, O, k = e((() => {
+    C = h(), g(), o(), y(), n(), b(), i(), a(), c(), m(), w = d(), T = f({
+        title: {
+            id: `chatgpt.connectors.google_oauth_bundle.interstitial.title`,
+            defaultMessage: `Connect to Google plugins`
+        },
+        description: {
+            id: `chatgpt.connectors.google_oauth_bundle.interstitial.description`,
+            defaultMessage: `Connect to multiple Google plugins at once`
+        },
+        dataSharingDisclosure: {
+            id: `chatgpt.connectors.google_oauth_bundle.interstitial.disclosure.data_sharing`,
+            defaultMessage: `ChatGPT may share relevant chats and memories with this plugin to support interactions with it. {connectorName} use of this data is subject to their <termsLink>terms</termsLink> and <privacyPolicyLink>privacy policy</privacyPolicyLink>. You can <learnMoreLink>learn more</learnMoreLink> and <settingsLink>manage your settings</settingsLink>.`
+        },
+        connectButton: {
+            id: `chatgpt.connectors.google_oauth_bundle.interstitial.button.connect`,
+            defaultMessage: `Connect to Google`
+        }
+    }), E = () => {
+        "use forget";
+        let e = (0, C.c)(1),
+            t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, w.jsx)(`div`, {
+            "aria-hidden": !0,
+            className: `pointer-events-none absolute inset-x-0 top-0 h-36 bg-[url('https://persistent.oaistatic.com/assets/m/bundled-oauth-background-mobile-light.webp')] [mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] bg-cover bg-top bg-no-repeat [-webkit-mask-image:linear-gradient(to_bottom,black_40%,transparent_100%)] sm:h-[217px] sm:bg-[url('https://persistent.oaistatic.com/assets/m/bundled-oauth-background-desktop-light.webp')] dark:bg-[url('https://persistent.oaistatic.com/assets/m/bundled-oauth-background-mobile-dark.webp')] dark:sm:bg-[url('https://persistent.oaistatic.com/assets/m/bundled-oauth-background-desktop-dark.webp')]`
+        }), e[0] = t) : t = e[0], t
+    }, D = e => {
+        "use forget";
+        let t = (0, C.c)(2),
+            {
+                Icon: n
+            } = e,
+            r;
+        return t[0] === n ? r = t[1] : (r = (0, w.jsx)(`div`, {
+            className: `bg-token-bg-primary flex h-18 w-18 shrink-0 items-center justify-center rounded-2xl border-[0.5px] shadow-sm`,
+            children: (0, w.jsx)(n, {
+                className: `h-11 w-11`,
+                "aria-hidden": !0
+            })
+        }), t[0] = n, t[1] = r), r
+    }, O = e => {
+        "use forget";
+        let n = (0, C.c)(27),
+            {
+                connector: i,
+                connectorRows: a,
+                isConnecting: o,
+                isContinueDisabled: c,
+                isEU: d,
+                onClose: f,
+                onContinue: m,
+                tos: h
+            } = e,
+            g;
+        n[0] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, w.jsx)(p, {
+            ...T.title
+        }), n[0] = g) : g = n[0];
+        let y = g,
+            b = i?.branding?.terms_of_service ?? `https://policies.google.com/terms`,
+            O = i?.branding?.privacy_policy ?? `https://policies.google.com/privacy`,
+            k = S,
+            A;
+        n[1] === Symbol.for(`react.memo_cache_sentinel`) ? (A = (0, w.jsx)(E, {}), n[1] = A) : A = n[1];
+        let j;
+        n[2] === f ? j = n[3] : (j = (0, w.jsx)(`div`, {
+            className: `absolute end-5 top-5 z-10`,
+            children: (0, w.jsx)(s, {
+                onClick: f,
+                radius: `full`,
+                className: `bg-token-bg-primary/60 dark:bg-black/20`
+            })
+        }), n[2] = f, n[3] = j);
+        let M;
+        n[4] === Symbol.for(`react.memo_cache_sentinel`) ? (M = (0, w.jsx)(D, {
+            Icon: l
+        }), n[4] = M) : M = n[4];
+        let N;
+        n[5] === Symbol.for(`react.memo_cache_sentinel`) ? (N = (0, w.jsxs)(`div`, {
+            className: `mb-4 flex items-center justify-center gap-4`,
+            children: [M, (0, w.jsxs)(`div`, {
+                "aria-hidden": !0,
+                className: `flex gap-1`,
+                children: [(0, w.jsx)(`span`, {
+                    className: `h-1.5 w-1.5 rounded-full bg-white/75`
+                }), (0, w.jsx)(`span`, {
+                    className: `h-1.5 w-1.5 rounded-full bg-white/75`
+                }), (0, w.jsx)(`span`, {
+                    className: `h-1.5 w-1.5 rounded-full bg-white/75`
+                })]
+            }), (0, w.jsx)(D, {
+                Icon: x
+            })]
+        }), n[5] = N) : N = n[5];
+        let P;
+        n[6] === Symbol.for(`react.memo_cache_sentinel`) ? (P = r() ? (0, w.jsx)(_.Title, {
+            className: `text-center text-xl font-semibold`,
+            children: y
+        }) : (0, w.jsx)(u.Title, {
+            title: (0, w.jsx)(`span`, {
+                className: `text-xl font-semibold`,
+                children: y
+            })
+        }), n[6] = P) : P = n[6];
+        let F;
+        n[7] === Symbol.for(`react.memo_cache_sentinel`) ? (F = (0, w.jsxs)(`div`, {
+            className: `flex flex-col items-center gap-1 text-center`,
+            children: [P, (0, w.jsx)(`p`, {
+                className: `text-token-text-secondary text-base`,
+                children: (0, w.jsx)(p, {
+                    ...T.description
+                })
+            })]
+        }), n[7] = F) : F = n[7];
+        let I;
+        n[8] !== i?.name || n[9] !== d || n[10] !== f || n[11] !== O || n[12] !== b || n[13] !== h ? (I = d && (0, w.jsx)(`p`, {
+            className: `text-token-text-secondary text-xs leading-5`,
+            children: (0, w.jsx)(p, {
+                ...T.dataSharingDisclosure,
+                values: {
+                    connectorName: i?.name ?? h.genericName,
+                    termsLink: e => k(b, e),
+                    privacyPolicyLink: e => k(O, e),
+                    learnMoreLink: e => k(`https://help.openai.com/en/articles/10408842`, e),
+                    settingsLink: e => (0, w.jsx)(`a`, {
+                        className: `interactive-label-secondary font-medium`,
+                        href: v,
+                        onClick: f,
+                        children: e
+                    })
+                }
+            })
+        }), n[8] = i?.name, n[9] = d, n[10] = f, n[11] = O, n[12] = b, n[13] = h, n[14] = I) : I = n[14];
+        let L = c || o,
+            R;
+        n[15] === Symbol.for(`react.memo_cache_sentinel`) ? (R = (0, w.jsx)(p, {
+            ...T.connectButton
+        }), n[15] = R) : R = n[15];
+        let z;
+        n[16] !== o || n[17] !== m || n[18] !== L ? (z = (0, w.jsx)(t, {
+            type: `button`,
+            color: `primary`,
+            size: `large`,
+            className: `w-full rounded-full`,
+            disabled: L,
+            loading: o,
+            onClick: m,
+            children: R
+        }), n[16] = o, n[17] = m, n[18] = L, n[19] = z) : z = n[19];
+        let B;
+        n[20] !== a || n[21] !== z || n[22] !== I ? (B = (0, w.jsxs)(`div`, {
+            className: `relative flex flex-col gap-6 px-6 pt-16 pb-8 sm:px-8`,
+            children: [N, F, a, I, z]
+        }), n[20] = a, n[21] = z, n[22] = I, n[23] = B) : B = n[23];
+        let V;
+        return n[24] !== B || n[25] !== j ? (V = (0, w.jsxs)(`section`, {
+            "data-google-oauth-bundle-interstitial": !0,
+            className: `bg-token-bg-primary relative overflow-hidden rounded-t-2xl sm:rounded-2xl`,
+            children: [A, j, B]
+        }), n[24] = B, n[25] = j, n[26] = V) : V = n[26], V
+    }
+}));
+export {
+    O as n, k as r, E as t
+};
+//# sourceMappingURL=d5b03218-dzjlw7e1d5bw6ffm.js.map

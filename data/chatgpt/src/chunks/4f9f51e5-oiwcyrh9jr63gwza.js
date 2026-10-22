@@ -1,2 +1,13 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n=e((()=>{t=function(e){return e.NoGithubConnection=`no_github_connection`,e.NoEnvironmentsCreated=`no_environments_created`,e.NoTasksCreated=`no_tasks_created`,e.Loading=`loading`,e.Error=`error`,e.Complete=`complete`,e}({})}));export{n,t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t, n = e((() => {
+    t = function(e) {
+        return e.NoGithubConnection = `no_github_connection`, e.NoEnvironmentsCreated = `no_environments_created`, e.NoTasksCreated = `no_tasks_created`, e.Loading = `loading`, e.Error = `error`, e.Complete = `complete`, e
+    }({})
+}));
+export {
+    n,
+    t
+};
 //# sourceMappingURL=4f9f51e5-oiwcyrh9jr63gwza.js.map

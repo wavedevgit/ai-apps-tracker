@@ -1,0 +1,80 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Qy as t,
+    Zy as n,
+    l7 as r,
+    u7 as i
+} from "./4813494d-i89nb6zlze66idsz.js";
+import {
+    Bn as a,
+    wn as o
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    n as s
+} from "./44246d2c-i8814db627yufuxp.js";
+
+function c(e) {
+    "use forget";
+    let t = (0, l.c)(38),
+        i, a, o, s, c, d, f, p, m, h, g, _;
+    t[0] === e ? (i = t[1], a = t[2], o = t[3], s = t[4], c = t[5], d = t[6], f = t[7], p = t[8], m = t[9], h = t[10], g = t[11], _ = t[12]) : ({
+        icon: i,
+        label: s,
+        tooltip: g,
+        tooltipCustomPaddingClassName: _,
+        text: m,
+        disabled: f,
+        rounded: p,
+        onClick: c,
+        iconColor: o,
+        textColor: h,
+        className: a,
+        ...d
+    } = e, t[0] = e, t[1] = i, t[2] = a, t[3] = o, t[4] = s, t[5] = c, t[6] = d, t[7] = f, t[8] = p, t[9] = m, t[10] = h, t[11] = g, t[12] = _);
+    let v = f !== void 0 && f,
+        y = p === void 0 || p,
+        b = v ? `cursor-default opacity-40` : `hover:[&_.icon]:text-token-text-primary hover:bg-token-bg-tertiary`,
+        x = y ? `rounded-full` : `rounded-lg`,
+        S = m ? `h-9 gap-1.5 px-3` : `size-9 justify-center p-1.5`,
+        C;
+    t[13] !== a || t[14] !== b || t[15] !== x || t[16] !== S ? (C = r(`flex items-center transition-colors select-none`, b, x, S, a), t[13] = a, t[14] = b, t[15] = x, t[16] = S, t[17] = C) : C = t[17];
+    let w = o ?? `text-token-text-primary`,
+        T;
+    t[18] === w ? T = t[19] : (T = r(`icon`, w), t[18] = w, t[19] = T);
+    let E;
+    t[20] !== i || t[21] !== T ? (E = (0, u.jsx)(i, {
+        className: T
+    }), t[20] = i, t[21] = T, t[22] = E) : E = t[22];
+    let D;
+    t[23] !== m || t[24] !== h ? (D = m && (0, u.jsx)(`span`, {
+        className: r(`text-sm font-medium`, h ?? `text-token-text-primary`),
+        children: m
+    }), t[23] = m, t[24] = h, t[25] = D) : D = t[25];
+    let O;
+    t[26] !== v || t[27] !== s || t[28] !== c || t[29] !== d || t[30] !== D || t[31] !== C || t[32] !== E ? (O = (0, u.jsxs)(`button`, {
+        "aria-label": s,
+        className: C,
+        onClick: c,
+        disabled: v,
+        ...d,
+        children: [E, D]
+    }), t[26] = v, t[27] = s, t[28] = c, t[29] = d, t[30] = D, t[31] = C, t[32] = E, t[33] = O) : O = t[33];
+    let k = O;
+    if (!g) return k;
+    let A;
+    return t[34] !== k || t[35] !== g || t[36] !== _ ? (A = (0, u.jsx)(n, {
+        label: g,
+        sideOffset: 0,
+        customPaddingClassName: _,
+        children: k
+    }), t[34] = k, t[35] = g, t[36] = _, t[37] = A) : A = t[37], A
+}
+var l, u, d = e((() => {
+    l = o(), t(), i(), s(), u = a()
+}));
+export {
+    d as n, c as t
+};
+//# sourceMappingURL=4b2c6e28-i4wcyx6oakrz60ix.js.map

@@ -1,2 +1,40 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{_zn as t,hzn as n}from"./conversation-small-m7dgsxtvvivh3e6t.js";function r(){let e=this;e.compiler=n;function n(n){let r=e.data(`toMarkdownExtensions`)||[];return t(n,{...e.data(`settings`),fences:!0,bullet:`-`,bulletOther:`*`,listItemIndent:`one`,resourceLink:!0,tightDefinitions:!0,rule:`-`,extensions:[{handlers:{text:a,startend:i,inlineMath:o}},...r]})}}var i,a,o,s=e((()=>{n(),i=(e,t,n,r)=>e.children.map(e=>n.handle(e,void 0,n,r)).join(``),a=(e,t,n,r)=>n.safe(e.value,r).replaceAll(`\\[`,`[`).replaceAll(`\\&`,`&`),o=e=>`\\(${e.value}\\)`}));export{r as n,s as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    _zn as t,
+    hzn as n
+} from "./conversation-small-m7dgsxtvvivh3e6t.js";
+
+function r() {
+    let e = this;
+    e.compiler = n;
+
+    function n(n) {
+        let r = e.data(`toMarkdownExtensions`) || [];
+        return t(n, {
+            ...e.data(`settings`),
+            fences: !0,
+            bullet: `-`,
+            bulletOther: `*`,
+            listItemIndent: `one`,
+            resourceLink: !0,
+            tightDefinitions: !0,
+            rule: `-`,
+            extensions: [{
+                handlers: {
+                    text: a,
+                    startend: i,
+                    inlineMath: o
+                }
+            }, ...r]
+        })
+    }
+}
+var i, a, o, s = e((() => {
+    n(), i = (e, t, n, r) => e.children.map(e => n.handle(e, void 0, n, r)).join(``), a = (e, t, n, r) => n.safe(e.value, r).replaceAll(`\\[`, `[`).replaceAll(`\\&`, `&`), o = e => `\\(${e.value}\\)`
+}));
+export {
+    r as n, s as t
+};
 //# sourceMappingURL=fc5e7148-pd7me0wcrno404vk.js.map

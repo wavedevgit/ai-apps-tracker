@@ -1,0 +1,124 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/90f621d9-iq0a12wpjisa1wo1.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-i89nb6zlze66idsz.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/30901919-cmi3nh547dwrqkxv.js", "assets/966be48d-bidfasb67iq9o2d8.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    E0 as n,
+    IR as r,
+    JR as i,
+    LR as a,
+    QR as o,
+    VR as s,
+    XR as c,
+    YR as l,
+    a2 as u,
+    c2 as d,
+    d2 as f,
+    drt as p,
+    ez as m,
+    f0 as h,
+    grt as g,
+    mrt as _,
+    o2 as v,
+    p0 as y,
+    r2 as b,
+    rz as x,
+    s2 as S,
+    t2 as C,
+    w0 as w
+} from "./4813494d-i89nb6zlze66idsz.js";
+import {
+    Nt as T,
+    Q as E,
+    Vn as D,
+    cn as O,
+    ln as k,
+    wn as A
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+var j, M = e((() => {
+    v(), k(), j = u(() => O(() => import(`./90f621d9-iq0a12wpjisa1wo1.js`).then(e => e.WorkspaceShareSsoModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6])))
+}));
+
+function N() {}
+
+function P() {
+    S(j), S(C)
+}
+
+function F() {
+    return S(C)
+}
+var I, L, R, z = e((() => {
+    I = A(), r(), d(), b(), M(), n(), h(), g(), x(), L = t(D()), E(), R = e => {
+        "use forget";
+        let t = (0, I.c)(10),
+            {
+                contentType: n,
+                entryCta: r,
+                loginModalExperiment: u,
+                returnPath: d,
+                ssoConnection: h,
+                ssoRequired: g,
+                workspaceId: v
+            } = e,
+            b = T(),
+            x = (0, L.useRef)(!1),
+            C, E;
+        return t[0] !== n || t[1] !== r || t[2] !== u || t[3] !== b || t[4] !== d || t[5] !== h || t[6] !== g || t[7] !== v ? (C = () => {
+            if (u != null) {
+                let e = _(u).get(`show_login_modal`, !1);
+                if (p().catch(N), !e) return
+            }
+            let e = v == null ? window.location.href : `/auth/login?${new URLSearchParams({next:d+window.location.hash,wId:v})}`;
+            return h == null ? (y({
+                callbackUrl: e,
+                skipLoginModal: !1,
+                onLoginModalDismiss: () => b(`/`, {
+                    replace: !0
+                }),
+                callback: () => {
+                    x.current || (x.current = !0, a({
+                        actionType: i.ACCESS_FLOW_ENTRY_ACTION_TYPE_PAGE_LOADED,
+                        entryPoint: l.ACCESS_FLOW_ENTRY_POINT_LOGIN_MODAL,
+                        entryTrigger: c.ACCESS_FLOW_ENTRY_TRIGGER_AUTOMATIC,
+                        cta: r ?? (n === `app` ? `app_connect_sign_in` : n === `gpt` ? `workspace_gpt_sign_in` : `workspace_share_sign_in`)
+                    }))
+                }
+            }), F) : (x.current || (x.current = !0, a({
+                actionType: i.ACCESS_FLOW_ENTRY_ACTION_TYPE_PAGE_LOADED,
+                entryPoint: l.ACCESS_FLOW_ENTRY_POINT_LOGIN_MODAL,
+                entryTrigger: c.ACCESS_FLOW_ENTRY_TRIGGER_AUTOMATIC,
+                cta: r ?? (n === `app` ? `app_connect_sso_sign_in` : n === `gpt` ? `workspace_gpt_sso_sign_in` : `workspace_share_sso_sign_in`)
+            })), f(j, {
+                contentType: n,
+                ssoRequired: g,
+                onClose: () => b(`/`, {
+                    replace: !0
+                }),
+                onContinueWithSso: () => {
+                    s(w(), m.ACCESS_FLOW_USER_ACTION_TYPE_CONTINUE_WITH_SSO, o.ACCESS_FLOW_PAGE_TYPE_CHATGPT_WEB_LOGIN_MODAL);
+                    let e = new URLSearchParams({
+                        next: d + window.location.hash,
+                        sso: `true`,
+                        connection: h
+                    });
+                    v != null && e.set(`wId`, v), window.location.replace(`/auth/login?${e}`)
+                },
+                onUseAnotherSignInMethod: () => {
+                    s(w(), m.ACCESS_FLOW_USER_ACTION_TYPE_SWITCH_TO_GENERIC_LOGIN_CLICKED, o.ACCESS_FLOW_PAGE_TYPE_CHATGPT_WEB_LOGIN_MODAL), S(j), y({
+                        callbackUrl: e,
+                        skipLoginModal: !1,
+                        onLoginModalDismiss: () => b(`/`, {
+                            replace: !0
+                        })
+                    })
+                }
+            }), P)
+        }, E = [n, r, u, b, d, h, g, v], t[0] = n, t[1] = r, t[2] = u, t[3] = b, t[4] = d, t[5] = h, t[6] = g, t[7] = v, t[8] = C, t[9] = E) : (C = t[8], E = t[9]), (0, L.useEffect)(C, E), null
+    }
+}));
+export {
+    z as n, R as t
+};
+//# sourceMappingURL=1a794ff6-irs749oyq2m2kuyq.js.map
