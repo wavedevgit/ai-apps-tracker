@@ -1,7 +1,15 @@
 [
     {
+        "id": "gpt-5-thinking",
+        "codenames": [
+            "gpt-5-thinking"
+        ],
+        "aliases": []
+    },
+    {
         "id": "gpt-5.6-luna",
         "codenames": [
+            "luna56",
             "5.6 Luna",
             "56luna"
         ],
@@ -13,6 +21,7 @@
     {
         "id": "gpt-5.6-sol",
         "codenames": [
+            "sol56",
             "5.6 Sol",
             "56sol"
         ],
@@ -29,6 +38,7 @@
     {
         "id": "gpt-5.6-terra",
         "codenames": [
+            "terra56",
             "5.6 Terra",
             "56terra"
         ],
@@ -40,47 +50,44 @@
     {
         "id": "gpt-6-astra",
         "codenames": [
+            "astra6",
             "6 Astra"
         ],
         "aliases": [
             "gpt-6-astra-wm",
+            "gpt-6-astra-priority",
             "gpt-6-pro"
         ]
     },
     {
-        "id": "gpt-daybreak-5.6-sol",
+        "id": "gpt-6-luna",
         "codenames": [
-            "Daybreak Blue",
-            "daybreak56sol"
+            "luna6"
         ],
         "aliases": [
-            "gpt-daybreak-blue-latest"
+            "gpt-6-luna-wm",
+            "gpt-6-luna-priority"
         ]
     },
     {
-        "id": "gpt-daybreak-red-5.6-sol",
+        "id": "gpt-6-sol",
         "codenames": [
-            "Daybreak Red",
-            "daybreakred56sol"
+            "sol6"
         ],
         "aliases": [
-            "gpt-5.4-cyber",
-            "gpt-5.5-cyber-preview",
-            "gpt-5.6-cyber",
-            "gpt-daybreak-red-latest"
+            "gpt-6-sol-wm",
+            "gpt-6-sol-priority"
         ]
     },
     {
-        "id": "gpt-rosalind-5.5",
+        "id": "gpt-6.1-sol",
         "codenames": [
-            "Rosalind",
-            "lifesciences"
+            "sol61"
         ],
         "aliases": [
-            "gpt-lifesciences",
-            "gpt-rosalind-5.5-wm",
-            "gpt-rosalind-discovery",
-            "gpt-rosalind-discovery-wm"
+            "gpt-6.1-sol-wm",
+            "gpt-6.1-sol-priority",
+            "gpt-6.1-sol-ultrafast"
         ]
     }
 ]

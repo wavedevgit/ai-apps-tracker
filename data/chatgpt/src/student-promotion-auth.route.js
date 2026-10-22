@@ -1,0 +1,736 @@
+export const __rspack_esm_id = 24435;
+export const __rspack_esm_ids = [24435];
+export const __webpack_modules__ = {
+    HKP: (function(e, s, t) {
+        t.d(s, {
+            a: () => c,
+            b: () => d
+        });
+        var a = t("HZ"),
+            o = t("A"),
+            n = t("Qo"),
+            i = t("zd"),
+            r = t("xvA"),
+            l = t("L10");
+        r.b, (0, a.gb)(function() {
+            let e, s = (0, n.c)(1);
+            return s[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, o.jsx)(i.Suspense, {
+                fallback: (0, o.jsx)(r.b, {}),
+                children: (0, o.jsx)(a.m, {})
+            }), s[0] = e) : e = s[0], e
+        }), (0, a.ib)(function() {
+            let e, s = (0, n.c)(1);
+            return s[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, o.jsx)(r.b, {}), s[0] = e) : e = s[0], e
+        });
+        let c = (0, a.gb)(l.a),
+            d = {
+                loadingPage: (0, o.jsx)(r.b, {})
+            }
+    }),
+    CZ: (function(e, s, t) {
+        e.exports = t.p + "assets/am.9b3c90bd4b.json"
+    }),
+    ex: (function(e, s, t) {
+        e.exports = t.p + "assets/ar.4c0af1a27a.json"
+    }),
+    Zl: (function(e, s, t) {
+        e.exports = t.p + "assets/bg-BG.9e3a0612d1.json"
+    }),
+    UN: (function(e, s, t) {
+        e.exports = t.p + "assets/bn-BD.8c3b4b1815.json"
+    }),
+    xu: (function(e, s, t) {
+        e.exports = t.p + "assets/bs-BA.33de83da7f.json"
+    }),
+    gG: (function(e, s, t) {
+        e.exports = t.p + "assets/ca-ES.56b832d74f.json"
+    }),
+    Ie: (function(e, s, t) {
+        e.exports = t.p + "assets/cs-CZ.4e9914aa6e.json"
+    }),
+    rk: (function(e, s, t) {
+        e.exports = t.p + "assets/da-DK.a113d60cc4.json"
+    }),
+    vu: (function(e, s, t) {
+        e.exports = t.p + "assets/de-DE.11438e94fb.json"
+    }),
+    Xs: (function(e, s, t) {
+        e.exports = t.p + "assets/el-GR.4efc71a028.json"
+    }),
+    SA: (function(e, s, t) {
+        e.exports = t.p + "assets/es-419.5c4ce5cea9.json"
+    }),
+    Kg: (function(e, s, t) {
+        e.exports = t.p + "assets/es-ES.f681ff9eb7.json"
+    }),
+    el: (function(e, s, t) {
+        e.exports = t.p + "assets/et-EE.64bfe9571b.json"
+    }),
+    Ix: (function(e, s, t) {
+        e.exports = t.p + "assets/fa.00bd1c6ae4.json"
+    }),
+    kPR: (function(e, s, t) {
+        e.exports = t.p + "assets/fi-FI.5acb55b5fe.json"
+    }),
+    ivH: (function(e, s, t) {
+        e.exports = t.p + "assets/fr-CA.3af771f11d.json"
+    }),
+    Ju: (function(e, s, t) {
+        e.exports = t.p + "assets/fr-FR.4c40c3db04.json"
+    }),
+    W3: (function(e, s, t) {
+        e.exports = t.p + "assets/gu-IN.e43b803189.json"
+    }),
+    HIR: (function(e, s, t) {
+        e.exports = t.p + "assets/hi-IN.ec550cbb76.json"
+    }),
+    Hr: (function(e, s, t) {
+        e.exports = t.p + "assets/hr-HR.b844a2ea0b.json"
+    }),
+    DAi: (function(e, s, t) {
+        e.exports = t.p + "assets/hu-HU.c7b0104e6f.json"
+    }),
+    za: (function(e, s, t) {
+        e.exports = t.p + "assets/hy-AM.e82a1acc10.json"
+    }),
+    NK: (function(e, s, t) {
+        e.exports = t.p + "assets/id-ID.3867b5de0a.json"
+    }),
+    Yl: (function(e, s, t) {
+        e.exports = t.p + "assets/is-IS.251a9a3d41.json"
+    }),
+    r0: (function(e, s, t) {
+        e.exports = t.p + "assets/it-IT.f43b538284.json"
+    }),
+    lG9: (function(e, s, t) {
+        e.exports = t.p + "assets/ja-JP.337a97f761.json"
+    }),
+    dB: (function(e, s, t) {
+        e.exports = t.p + "assets/ka-GE.cf7366cbe8.json"
+    }),
+    Bn: (function(e, s, t) {
+        e.exports = t.p + "assets/kk.8e242f82e9.json"
+    }),
+    Sg: (function(e, s, t) {
+        e.exports = t.p + "assets/kn-IN.e3722c33f2.json"
+    }),
+    S4: (function(e, s, t) {
+        e.exports = t.p + "assets/ko-KR.6bc4265842.json"
+    }),
+    UKx: (function(e, s, t) {
+        e.exports = t.p + "assets/lt.f9f4848218.json"
+    }),
+    tu: (function(e, s, t) {
+        e.exports = t.p + "assets/lv-LV.c5ff92901a.json"
+    }),
+    GE: (function(e, s, t) {
+        e.exports = t.p + "assets/mk-MK.f299ce7546.json"
+    }),
+    bH: (function(e, s, t) {
+        e.exports = t.p + "assets/ml.18d9f65cb7.json"
+    }),
+    f7: (function(e, s, t) {
+        e.exports = t.p + "assets/mn.de61367e79.json"
+    }),
+    L7: (function(e, s, t) {
+        e.exports = t.p + "assets/mr-IN.addbfd3026.json"
+    }),
+    fa: (function(e, s, t) {
+        e.exports = t.p + "assets/ms-MY.a7bd1dfcdf.json"
+    }),
+    Vv: (function(e, s, t) {
+        e.exports = t.p + "assets/my-MM.d3adf3d3b1.json"
+    }),
+    j6u: (function(e, s, t) {
+        e.exports = t.p + "assets/nb-NO.fd16b37040.json"
+    }),
+    ff: (function(e, s, t) {
+        e.exports = t.p + "assets/nl-NL.d6c28daa42.json"
+    }),
+    Ps: (function(e, s, t) {
+        e.exports = t.p + "assets/pa.e4e7cd51d5.json"
+    }),
+    mz: (function(e, s, t) {
+        e.exports = t.p + "assets/pl-PL.e27fe3edf4.json"
+    }),
+    C5: (function(e, s, t) {
+        e.exports = t.p + "assets/pt-BR.1478437bdb.json"
+    }),
+    yV: (function(e, s, t) {
+        e.exports = t.p + "assets/pt-PT.974da71911.json"
+    }),
+    dI: (function(e, s, t) {
+        e.exports = t.p + "assets/ro-RO.504cbc52eb.json"
+    }),
+    gs: (function(e, s, t) {
+        e.exports = t.p + "assets/ru-RU.07bf446886.json"
+    }),
+    vJK: (function(e, s, t) {
+        e.exports = t.p + "assets/sk-SK.4f6b95faec.json"
+    }),
+    Rf: (function(e, s, t) {
+        e.exports = t.p + "assets/sl-SI.856b807b22.json"
+    }),
+    VS: (function(e, s, t) {
+        e.exports = t.p + "assets/so-SO.b3d7368d3d.json"
+    }),
+    cu: (function(e, s, t) {
+        e.exports = t.p + "assets/sq-AL.744e0e6421.json"
+    }),
+    NX: (function(e, s, t) {
+        e.exports = t.p + "assets/sr-RS.99be398c07.json"
+    }),
+    oY: (function(e, s, t) {
+        e.exports = t.p + "assets/sv-SE.f396eca42d.json"
+    }),
+    A1: (function(e, s, t) {
+        e.exports = t.p + "assets/sw-TZ.96e40e45d4.json"
+    }),
+    MU: (function(e, s, t) {
+        e.exports = t.p + "assets/ta-IN.2d1b6f0684.json"
+    }),
+    G9: (function(e, s, t) {
+        e.exports = t.p + "assets/te-IN.bd1bf8e795.json"
+    }),
+    RR: (function(e, s, t) {
+        e.exports = t.p + "assets/th-TH.17883edbb4.json"
+    }),
+    TX: (function(e, s, t) {
+        e.exports = t.p + "assets/tl.994b95e228.json"
+    }),
+    jy: (function(e, s, t) {
+        e.exports = t.p + "assets/tr-TR.954a238167.json"
+    }),
+    Lo: (function(e, s, t) {
+        e.exports = t.p + "assets/uk-UA.755c63e1d4.json"
+    }),
+    Yza: (function(e, s, t) {
+        e.exports = t.p + "assets/ur.160428128d.json"
+    }),
+    bo: (function(e, s, t) {
+        e.exports = t.p + "assets/vi-VN.6303a852ad.json"
+    }),
+    fH: (function(e, s, t) {
+        e.exports = t.p + "assets/zh-CN.c4914bff40.json"
+    }),
+    QL: (function(e, s, t) {
+        e.exports = t.p + "assets/zh-HK.f4f39c6835.json"
+    }),
+    LG: (function(e, s, t) {
+        e.exports = t.p + "assets/zh-TW.18cc9f813a.json"
+    }),
+    BJ: (function(e) {
+        e.exports = '<svg width="716" height="716" viewBox="149 149 418 418" fill="none" xmlns="http://www.w3.org/2000/svg">\n  <path d="M508.749 317.399C516.777 287.314 508.991 253.884 485.389 230.282C461.788 206.681 428.36 198.895 398.273 206.923C376.231 184.928 343.39 174.956 311.148 183.596C278.906 192.234 255.45 217.292 247.36 247.361C217.291 255.451 192.233 278.91 183.595 311.149C174.957 343.391 184.927 376.232 206.924 398.274C198.896 428.359 206.683 461.789 230.284 485.391C253.885 508.992 287.313 516.779 317.401 508.75C339.442 530.745 372.286 540.717 404.525 532.079C436.767 523.441 460.223 498.384 468.313 468.315C498.383 460.224 523.44 436.766 532.078 404.526C540.716 372.285 530.747 339.443 508.749 317.402V317.399ZM470.899 244.776C486.892 260.77 493.488 282.601 490.687 303.412L415.577 260.046C412.411 258.218 408.509 258.218 405.345 260.046L317.401 310.82V277.526C317.401 275.191 318.652 273.005 320.676 271.837L387.644 233.174C414.178 218.353 448.346 222.223 470.901 244.776H470.899ZM357.837 311.144L398.275 334.491V381.185L357.837 404.532L317.398 381.185V334.491L357.837 311.144ZM264.776 269.693C265.207 239.305 285.644 211.649 316.453 203.393C338.3 197.54 360.505 202.744 377.127 215.573L302.014 258.937C298.848 260.764 296.898 264.144 296.898 267.798V369.346L268.065 352.699C266.043 351.531 264.776 349.353 264.776 347.017V269.691V269.693ZM203.391 316.454C209.244 294.608 224.854 277.978 244.276 269.999V356.73C244.276 360.384 246.226 363.763 249.392 365.591L337.337 416.365L308.503 433.013C306.481 434.181 303.961 434.188 301.939 433.02L234.971 394.357C208.868 378.789 195.138 347.261 203.391 316.454ZM244.775 470.9C228.781 454.906 222.186 433.075 224.986 412.264L300.096 455.63C303.263 457.457 307.164 457.457 310.328 455.63L398.273 404.856V438.149C398.273 440.485 397.022 442.671 394.997 443.839L328.029 482.502C301.495 497.322 267.327 493.452 244.772 470.9H244.775ZM450.897 445.982C450.466 476.371 430.029 504.027 399.22 512.283C377.373 518.136 355.168 512.932 338.547 500.102L413.659 456.738C416.826 454.911 418.775 451.532 418.775 447.877V346.329L447.609 362.977C449.631 364.145 450.897 366.323 450.897 368.659V445.985V445.982ZM512.282 399.221C506.429 421.068 490.819 437.697 471.397 445.676V358.946C471.397 355.292 469.448 351.912 466.281 350.085L378.336 299.311L407.17 282.663C409.192 281.495 411.712 281.487 413.734 282.655L480.702 321.318C506.805 336.887 520.536 368.415 512.282 399.221Z" fill="currentColor"/>\n</svg>\n'
+    }),
+    Wi: (function(e) {
+        e.exports = '<svg\n  width="21"\n  height="21"\n  viewBox="0 0 21 21"\n  fill="none"\n  xmlns="http://www.w3.org/2000/svg"\n>\n  <path\n    d="M11.6475 18.3409C11.0975 18.3409 10.575 18.2364 10.08 18.0274C9.58502 17.8184 9.14502 17.5269 8.76002 17.1529C8.34202 17.2959 7.90751 17.3674 7.45651 17.3674C6.71951 17.3674 6.03751 17.1859 5.41051 16.8229C4.78351 16.4599 4.27751 15.9649 3.89251 15.3379C3.51851 14.7109 3.33151 14.0124 3.33151 13.2424C3.33151 12.9234 3.37551 12.5769 3.46351 12.2029C3.02351 11.7959 2.68251 11.3284 2.44051 10.8004C2.19851 10.2614 2.07751 9.70044 2.07751 9.11744C2.07751 8.52344 2.20401 7.95144 2.45701 7.40144C2.71001 6.85144 3.06201 6.37844 3.51301 5.98244C3.97501 5.57544 4.50851 5.29494 5.11351 5.14094C5.23451 4.51394 5.48751 3.95294 5.87251 3.45794C6.26851 2.95194 6.75252 2.55594 7.32452 2.26994C7.89652 1.98394 8.50702 1.84094 9.15602 1.84094C9.70602 1.84094 10.2285 1.94544 10.7235 2.15444C11.2185 2.36344 11.6585 2.65494 12.0435 3.02894C12.4615 2.88594 12.896 2.81444 13.347 2.81444C14.084 2.81444 14.766 2.99594 15.393 3.35894C16.02 3.72194 16.5205 4.21694 16.8945 4.84394C17.2795 5.47094 17.472 6.16944 17.472 6.93944C17.472 7.25844 17.428 7.60494 17.34 7.97894C17.78 8.38594 18.121 8.85894 18.363 9.39794C18.605 9.92594 18.726 10.4814 18.726 11.0644C18.726 11.6584 18.5995 12.2304 18.3465 12.7804C18.0935 13.3304 17.736 13.8089 17.274 14.2159C16.823 14.6119 16.295 14.8869 15.69 15.0409C15.569 15.6679 15.3105 16.2289 14.9145 16.7239C14.5295 17.2299 14.051 17.6259 13.479 17.9119C12.907 18.1979 12.2965 18.3409 11.6475 18.3409ZM7.57201 16.2784C8.12201 16.2784 8.60051 16.1629 9.00751 15.9319L12.1095 14.1499C12.2195 14.0729 12.2745 13.9684 12.2745 13.8364V12.4174L8.28152 14.7109C8.03952 14.8539 7.79751 14.8539 7.55552 14.7109L4.43701 12.9124C4.43701 12.9454 4.43151 12.9839 4.42051 13.0279C4.42051 13.0719 4.42051 13.1379 4.42051 13.2259C4.42051 13.7869 4.55252 14.3039 4.81651 14.7769C5.09152 15.2389 5.47101 15.6019 5.95501 15.8659C6.43901 16.1409 6.97801 16.2784 7.57201 16.2784ZM7.73701 13.5889C7.80301 13.6219 7.86351 13.6384 7.91851 13.6384C7.97351 13.6384 8.02852 13.6219 8.08352 13.5889L9.32101 12.8794L5.34451 10.5694C5.10251 10.4264 4.98151 10.2119 4.98151 9.92594V6.34544C4.43151 6.58744 3.99151 6.96144 3.66151 7.46744C3.33151 7.96244 3.16651 8.51244 3.16651 9.11744C3.16651 9.65644 3.30401 10.1734 3.57901 10.6684C3.85401 11.1634 4.21151 11.5374 4.65151 11.7904L7.73701 13.5889ZM11.6475 17.2519C12.2305 17.2519 12.7585 17.1199 13.2315 16.8559C13.7045 16.5919 14.0785 16.2289 14.3535 15.7669C14.6285 15.3049 14.766 14.7879 14.766 14.2159V10.6519C14.766 10.5199 14.711 10.4209 14.601 10.3549L13.347 9.62894V14.2324C13.347 14.5184 13.226 14.7329 12.984 14.8759L9.86551 16.6744C10.4045 17.0594 10.9985 17.2519 11.6475 17.2519ZM12.2745 11.2129V8.96894L10.41 7.91294L8.52902 8.96894V11.2129L10.41 12.2689L12.2745 11.2129ZM7.45651 5.94944C7.45651 5.66344 7.57752 5.44894 7.81952 5.30594L10.938 3.50744C10.399 3.12244 9.80502 2.92994 9.15602 2.92994C8.57302 2.92994 8.04501 3.06194 7.57201 3.32594C7.09902 3.58994 6.72502 3.95294 6.45002 4.41494C6.18602 4.87694 6.05401 5.39394 6.05401 5.96594V9.51344C6.05401 9.64544 6.10901 9.74994 6.21902 9.82694L7.45651 10.5529V5.94944ZM15.8385 13.8364C16.3885 13.5944 16.823 13.2204 17.142 12.7144C17.472 12.2084 17.637 11.6584 17.637 11.0644C17.637 10.5254 17.4995 10.0084 17.2245 9.51344C16.9495 9.01844 16.592 8.64444 16.152 8.39144L13.0665 6.60944C13.0005 6.56544 12.94 6.54894 12.885 6.55994C12.83 6.55994 12.775 6.57644 12.72 6.60944L11.4825 7.30244L15.4755 9.62894C15.5965 9.69494 15.6845 9.78294 15.7395 9.89294C15.8055 9.99194 15.8385 10.1129 15.8385 10.2559V13.8364ZM12.522 5.45444C12.764 5.30044 13.006 5.30044 13.248 5.45444L16.383 7.28594C16.383 7.20894 16.383 7.10994 16.383 6.98894C16.383 6.46094 16.251 5.96044 15.987 5.48744C15.734 5.00344 15.3655 4.61844 14.8815 4.33244C14.4085 4.04644 13.8585 3.90344 13.2315 3.90344C12.6815 3.90344 12.203 4.01894 11.796 4.24994L8.69402 6.03194C8.58402 6.10894 8.52902 6.21344 8.52902 6.34544V7.76444L12.522 5.45444Z"\n    fill="currentColor"\n  />\n</svg>\n'
+    }),
+    L10: (function(e, s, t) {
+        var a = t("A"),
+            o = t("Qo"),
+            n = t("HZ"),
+            i = t("AXD"),
+            r = t("Bb"),
+            l = t("wvh"),
+            c = t("xvA"),
+            d = t("vhd");
+        let f = (0, r.a)(async () => (await Promise.all([t.e(418851), t.e(109308), t.e(399565), t.e(257798), t.e(447351), t.e(617936), t.e(807489), t.e(337882), t.e(955979), t.e(646436), t.e(7078), t.e(200429), t.e(698524), t.e(956483), t.e(87162), t.e(396705), t.e(155568), t.e(731863), t.e(767086), t.e(76629), t.e(514085), t.e(204542), t.e(982651), t.e(673108), t.e(487481), t.e(226913), t.e(931360)]).then(t.bind(t, "gzJ"))).StudentPromotionSignIn, {
+            fallback: (0, a.jsx)(c.b, {}),
+            errorFallback: () => (0, a.jsx)(l.a, {
+                result: void 0,
+                pending: !1,
+                onRetry: () => window.location.reload()
+            })
+        });
+
+        function m() {
+            let e, s, t, r, l = (0, o.c)(8),
+                {
+                    search: m
+                } = (0, n.X)();
+            if (l[0] !== m) {
+                let t = new URLSearchParams(m);
+                e = t.getAll("callback_path"), s = t.getAll("entry"), l[0] = m, l[1] = e, l[2] = s
+            } else e = l[1], s = l[2];
+            let p = s,
+                x = 0 === p.length ? "claim" : p[0];
+            return l[3] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(c.b, {}), l[3] = t) : t = l[3], l[4] !== e || l[5] !== p.length || l[6] !== x ? (r = (0, a.jsx)(i.a, {
+                fallback: t,
+                children: p.length > 1 || "claim" !== x && "verify" !== x ? (0, a.jsx)(d.a, {
+                    children: (0, a.jsx)(d.c, {})
+                }) : (0, a.jsx)(f, {
+                    callbackUrl: 1 === e.length ? e[0] ?? "" : "",
+                    entry: x
+                })
+            }), l[4] = e, l[5] = p.length, l[6] = x, l[7] = r) : r = l[7], r
+        }
+        t.d(s, {
+            a: () => m
+        })
+    }),
+    xvA: (function(e, s, t) {
+        var a = t("A"),
+            o = t("Qo"),
+            n = t("G8"),
+            i = t("HZ"),
+            r = t("M8l"),
+            l = t("rH"),
+            c = t("cX"),
+            d = t("hen"),
+            f = t("vhd"),
+            m = t("Xqh");
+
+        function p(e) {
+            let s, t, n = (0, o.c)(7),
+                {
+                    entry: r
+                } = e,
+                {
+                    pathname: l,
+                    search: c
+                } = (0, i.X)();
+            if (n[0] !== l || n[1] !== c) {
+                let e = new URLSearchParams(c);
+                if ("/auth/students" === l) {
+                    let s = e.getAll("callback_path");
+                    try {
+                        e = new URL(1 === s.length ? s[0] ?? "" : "", "https://chatgpt.com").searchParams
+                    } catch {
+                        let s;
+                        n[3] === Symbol.for("react.memo_cache_sentinel") ? (s = new URLSearchParams, n[3] = s) : s = n[3], e = s
+                    }
+                }
+                s = e.getAll("partner_id"), n[0] = l, n[1] = c, n[2] = s
+            } else s = n[2];
+            let p = s;
+            return n[4] !== r || n[5] !== p ? (t = (0, a.jsx)(f.a, {
+                children: "verify" === r ? (0, a.jsx)(m.a, {
+                    accountEmail: null,
+                    verificationHelpPath: `/students/2026${1===p.length&&"handshake"===p[0]?"?partner_id=handshake":""}#trigger_students-2026-faq-verification`
+                }) : (0, a.jsx)(d.a, {
+                    signingIn: !0
+                })
+            }), n[4] = r, n[5] = p, n[6] = t) : t = n[6], t
+        }
+
+        function x() {
+            let e, s = (0, o.c)(1);
+            if (s[0] === Symbol.for("react.memo_cache_sentinel")) {
+                let {
+                    locale: t
+                } = (0, r.getClientBootstrap)();
+                e = (0, a.jsx)(n.a, {
+                    locale: t,
+                    defaultLocale: "en-US",
+                    messages: (0, c.d)("72216192")?.value.enable_i18n === !0 ? (0, l.c)(t)?.messages : void 0,
+                    children: (0, a.jsx)(u, {})
+                }), s[0] = e
+            } else e = s[0];
+            return e
+        }
+
+        function u() {
+            let e, s = (0, o.c)(3),
+                {
+                    pathname: t,
+                    search: n
+                } = (0, i.X)(),
+                l = new URLSearchParams(n).getAll("entry");
+            if ("logged_out" === (0, r.getClientBootstrap)().authStatus) {
+                let e, o = "/students/verify" === t.replace(/\/$/, "") || "/auth/students" === t && 1 === l.length && "verify" === l[0] ? "verify" : "claim";
+                return s[0] !== o ? (e = (0, a.jsx)(p, {
+                    entry: o
+                }), s[0] = o, s[1] = e) : e = s[1], e
+            }
+            return s[2] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(f.a, {
+                children: (0, a.jsx)(d.a, {})
+            }), s[2] = e) : e = s[2], e
+        }
+        t.d(s, {
+            a: () => p,
+            b: () => x
+        })
+    }),
+    hen: (function(e, s, t) {
+        var a = t("A"),
+            o = t("Qo"),
+            n = t("oy"),
+            i = t("RN"),
+            r = t("vhd");
+
+        function l(e) {
+            let s, t, l, c, d = (0, o.c)(9),
+                {
+                    signingIn: f
+                } = e,
+                m = void 0 !== f && f;
+            return d[0] !== m ? (s = m ? void 0 : (0, a.jsx)(i.a, {}), d[0] = m, d[1] = s) : s = d[1], d[2] !== m ? (t = m ? (0, a.jsx)(n.a, {
+                id: "chatgpt.students.back_to_school_2026.claim.sign_in.title",
+                defaultMessage: "Redirecting to sign in",
+                description: "Heading shown while a logged-out college student is redirected to sign in before starting the 2026 student-offer verification flow"
+            }) : (0, a.jsx)(n.a, {
+                id: "chatgpt.students.back_to_school_2026.claim.verifying.title",
+                defaultMessage: "Verifying your student status",
+                description: "Progress heading while checking the student's eligibility and verification status for the 2026 offer"
+            }), l = m ? (0, a.jsx)(n.a, {
+                id: "chatgpt.students.back_to_school_2026.claim.sign_in.description",
+                defaultMessage: "Sign in to your ChatGPT account before verifying your student status.",
+                description: "Supporting message explaining that students must sign in before the secure 2026 student verification experience opens"
+            }) : (0, a.jsx)(n.a, {
+                id: "chatgpt.students.back_to_school_2026.claim.verifying.description",
+                defaultMessage: "This may take a minute. Please keep this page open.",
+                description: "Supporting message asking students to keep the page open while their 2026 student verification is confirmed"
+            }), d[2] = m, d[3] = t, d[4] = l) : (t = d[3], l = d[4]), d[5] !== s || d[6] !== t || d[7] !== l ? (c = (0, a.jsx)(r.b, {
+                variant: "loading",
+                illustration: s,
+                title: t,
+                description: l
+            }), d[5] = s, d[6] = t, d[7] = l, d[8] = c) : c = d[8], c
+        }
+        t.d(s, {
+            a: () => l
+        })
+    }),
+    vhd: (function(e, s, t) {
+        var a = t("A"),
+            o = t("Qo"),
+            n = t("on"),
+            i = t("oy");
+
+        function r(e) {
+            let s, t = (0, o.c)(2),
+                {
+                    children: n
+                } = e;
+            return t[0] !== n ? (s = (0, a.jsx)("div", {
+                className: "flex min-h-svh flex-col bg-surface text-default max-sm:h-svh",
+                "data-theme": "light",
+                children: (0, a.jsx)("main", {
+                    className: "flex min-h-0 w-full flex-1 flex-col items-center max-sm:overflow-y-auto",
+                    children: n
+                })
+            }), t[0] = n, t[1] = s) : s = t[1], s
+        }
+
+        function l(e) {
+            let s, t, i, r, l, c, d, f, m = (0, o.c)(24),
+                {
+                    title: p,
+                    description: x,
+                    illustration: u,
+                    details: h,
+                    variant: g,
+                    children: b
+                } = e,
+                j = void 0 === g ? "standard" : g;
+            m[0] !== b || m[1] !== j ? (s = null != b ? (0, a.jsx)("div", {
+                className: (0, n.b)("flex w-full items-center", "recovery" === j ? "mt-10 flex-wrap justify-center gap-4 max-sm:flex-col max-sm:gap-3" : "flex-col gap-4", {
+                    "mt-6": "activated" === j || "confirmation" === j,
+                    "mt-8": "recovery" !== j && "activated" !== j && "confirmation" !== j,
+                    "max-sm:mx-auto max-sm:mt-0 max-sm:max-w-72 max-sm:flex-none max-sm:items-stretch max-sm:pt-4 max-sm:pb-[max(env(safe-area-inset-bottom),--spacing(6))]": "confirmation" !== j
+                }),
+                children: b
+            }) : null, m[0] = b, m[1] = j, m[2] = s) : s = m[2];
+            let C = s;
+            m[3] !== u || m[4] !== j ? (t = null != u ? (0, a.jsx)("div", {
+                className: (0, n.b)("flex w-full justify-center", {
+                    "mb-6 sm:mb-14": "verified" === j || "activated" === j,
+                    "mb-6": "loading" === j,
+                    "mb-4 sm:mb-8": "verified" !== j && "activated" !== j && "loading" !== j
+                }),
+                children: u
+            }) : null, m[3] = u, m[4] = j, m[5] = t) : t = m[5], m[6] !== p ? (i = (0, a.jsx)("h1", {
+                className: "text-3xl font-semibold",
+                "aria-live": "polite",
+                "aria-atomic": "true",
+                children: p
+            }), m[6] = p, m[7] = i) : i = m[7];
+            let v = "activated" === j ? "mt-4 font-medium text-tertiary" : "mt-2 text-secondary";
+            m[8] !== v ? (r = (0, n.b)("text-base", v), m[8] = v, m[9] = r) : r = m[9], m[10] !== x || m[11] !== r ? (l = (0, a.jsx)("div", {
+                className: r,
+                children: x
+            }), m[10] = x, m[11] = r, m[12] = l) : l = m[12], m[13] !== h ? (c = null != h ? (0, a.jsx)("div", {
+                className: "mt-4 flex max-w-full flex-col items-center empty:hidden",
+                children: h
+            }) : null, m[13] = h, m[14] = c) : c = m[14];
+            let _ = "confirmation" === j ? C : null;
+            m[15] !== t || m[16] !== i || m[17] !== l || m[18] !== c || m[19] !== _ ? (d = (0, a.jsx)("div", {
+                className: "contents max-sm:flex max-sm:min-h-0 max-sm:w-full max-sm:flex-1 max-sm:flex-col max-sm:overflow-y-auto",
+                children: (0, a.jsxs)("div", {
+                    className: "contents max-sm:my-auto max-sm:flex max-sm:w-full max-sm:flex-none max-sm:flex-col max-sm:items-center max-sm:py-6",
+                    children: [t, i, l, c, _]
+                })
+            }), m[15] = t, m[16] = i, m[17] = l, m[18] = c, m[19] = _, m[20] = d) : d = m[20];
+            let y = "confirmation" !== j ? C : null;
+            return m[21] !== d || m[22] !== y ? (f = (0, a.jsx)("section", {
+                className: "my-auto flex w-full flex-col items-center px-6 py-12 text-center max-sm:min-h-0 max-sm:flex-1 max-sm:py-0",
+                children: (0, a.jsxs)("div", {
+                    className: "flex w-full max-w-xl flex-col items-center max-sm:min-h-0 max-sm:flex-1",
+                    children: [d, y]
+                })
+            }), m[21] = d, m[22] = y, m[23] = f) : f = m[23], f
+        }
+
+        function c() {
+            let e, s = (0, o.c)(1);
+            return s[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(l, {
+                title: (0, a.jsx)(i.a, {
+                    id: "chatgpt.students.back_to_school_2026.claim.unavailable.title",
+                    defaultMessage: "Offer unavailable",
+                    description: "Heading when this account cannot use the student offer"
+                }),
+                description: (0, a.jsx)(i.a, {
+                    id: "chatgpt.students.back_to_school_2026.claim.unavailable.description",
+                    defaultMessage: "This student offer isn’t available for your account.",
+                    description: "Explains that the current account cannot start the student offer"
+                })
+            }), s[0] = e) : e = s[0], e
+        }
+        t.d(s, {
+            a: () => r,
+            b: () => l,
+            c: () => c
+        })
+    }),
+    Xqh: (function(e, s, t) {
+        var a = t("A"),
+            o = t("Qo"),
+            n = t("Wf"),
+            i = t("oy");
+
+        function r(e) {
+            let s, t, r, l, c, d, f, m, p, x, u, h, g, b = (0, o.c)(26),
+                {
+                    accountEmail: j,
+                    verificationHelpPath: C,
+                    children: v
+                } = e,
+                _ = (0, n.a)();
+            return b[0] !== _ ? (s = _.formatMessage({
+                id: "chatgpt.students.back_to_school_2026.embedded_verification.artwork.alt.campus_lawn",
+                defaultMessage: "Students sitting together on a college campus lawn",
+                description: "Alternative text for the campus photo beside the student verification form"
+            }), b[0] = _, b[1] = s) : s = b[1], b[2] !== s ? (t = (0, a.jsx)("img", {
+                className: "order-first h-57 w-full object-cover lg:order-last lg:mt-14 lg:h-114 lg:rounded-3xl",
+                src: "https://cdn.openai.com/chatgpt/ctf-cdn/students-2026/verification-campus-lawn-e5c8ee276936.webp",
+                alt: s
+            }), b[2] = s, b[3] = t) : t = b[3], b[4] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, a.jsx)("span", {
+                className: "lg:hidden",
+                children: (0, a.jsx)(i.a, {
+                    id: "chatgpt.students.back_to_school_2026.embedded_verification.title.work.four_month",
+                    defaultMessage: "Get 4 months of ChatGPT Work free",
+                    description: "Mobile headline advertising four free months of ChatGPT Work to eligible college students"
+                })
+            }), b[4] = r) : r = b[4], b[5] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, a.jsxs)("h1", {
+                className: "text-3xl leading-tight font-medium lg:text-6xl lg:leading-none",
+                children: [r, (0, a.jsx)("span", {
+                    className: "hidden lg:inline",
+                    children: (0, a.jsx)(i.a, {
+                        id: "chatgpt.students.back_to_school_2026.embedded_verification.title.desktop.work.four_month",
+                        defaultMessage: "Study. Build. Launch. Get 4 months of ChatGPT Work on us.",
+                        description: "Desktop headline advertising four free months of ChatGPT Work to eligible college students"
+                    })
+                })]
+            }), b[5] = l) : l = b[5], b[6] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, a.jsx)("span", {
+                className: "lg:hidden",
+                children: (0, a.jsx)(i.a, {
+                    id: "chatgpt.students.back_to_school_2026.embedded_verification.description.college",
+                    defaultMessage: "An $80 value for eligible U.S. college students. Verify your student status to claim.",
+                    description: "Supporting copy on the ChatGPT-hosted student verification page stating the offer value, eligibility for U.S. college students, and the need to verify student status."
+                })
+            }), b[6] = c) : c = b[6], b[7] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, a.jsx)("span", {
+                className: "hidden lg:inline",
+                children: (0, a.jsx)(i.a, {
+                    id: "chatgpt.students.back_to_school_2026.embedded_verification.description.desktop.college",
+                    defaultMessage: "An $80 value for eligible U.S. college students. Verify your student status to claim.",
+                    description: "Desktop supporting copy on the ChatGPT-hosted student verification page stating the offer value, eligibility for U.S. college students, and the need to verify student status."
+                })
+            }), b[7] = d) : d = b[7], b[8] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, a.jsx)(i.a, {
+                id: "chatgpt.students.back_to_school_2026.embedded_verification.help",
+                defaultMessage: "How does verifying work?",
+                description: "Link to the student offer FAQ explaining how verification works"
+            }), b[8] = f) : f = b[8], b[9] !== C ? (m = (0, a.jsxs)("div", {
+                className: "px-8 pt-8 lg:px-0 lg:pt-0",
+                children: [l, (0, a.jsxs)("p", {
+                    className: "mt-6 text-base leading-relaxed text-secondary",
+                    children: [c, d, (0, a.jsx)("a", {
+                        className: "ms-1 text-secondary underline underline-offset-4",
+                        href: C,
+                        rel: "noopener noreferrer",
+                        target: "_blank",
+                        children: f
+                    })]
+                })]
+            }), b[9] = C, b[10] = m) : m = b[10], b[11] !== t || b[12] !== m ? (p = (0, a.jsxs)("section", {
+                className: "flex min-w-0 flex-col lg:flex-5",
+                children: [t, m]
+            }), b[11] = t, b[12] = m, b[13] = p) : p = b[13], b[14] !== _ ? (x = _.formatMessage({
+                id: "chatgpt.students.back_to_school_2026.embedded_verification.form.label",
+                defaultMessage: "Student verification form",
+                description: "Accessible label for the account-bound student verification form"
+            }), b[14] = _, b[15] = x) : x = b[15], b[16] !== v || b[17] !== _ ? (u = v ?? (0, a.jsx)("div", {
+                className: "min-h-24 w-full",
+                role: "status",
+                "aria-busy": "true",
+                "aria-label": _.formatMessage({
+                    id: "chatgpt.students.back_to_school_2026.embedded_verification.loading",
+                    defaultMessage: "Loading student verification",
+                    description: "Accessible label while the student verification form loads"
+                })
+            }), b[16] = v, b[17] = _, b[18] = u) : u = b[18], b[19] !== j || b[20] !== x || b[21] !== u ? (h = (0, a.jsxs)("section", {
+                className: "min-w-0 px-8 pt-8 lg:flex-4 lg:px-0 lg:pt-0",
+                "aria-label": x,
+                children: [j, u]
+            }), b[19] = j, b[20] = x, b[21] = u, b[22] = h) : h = b[22], b[23] !== h || b[24] !== p ? (g = (0, a.jsxs)("div", {
+                className: "mx-auto flex w-full max-w-7xl flex-col pb-16 lg:flex-row lg:gap-20 lg:px-10 lg:pt-20",
+                children: [p, h]
+            }), b[23] = h, b[24] = p, b[25] = g) : g = b[25], g
+        }
+        t.d(s, {
+            a: () => r
+        })
+    }),
+    wvh: (function(e, s, t) {
+        var a = t("A"),
+            o = t("Qo"),
+            n = t("oy"),
+            i = t("ygO"),
+            r = t("gL");
+
+        function l(e) {
+            let s, t, l, c, d, f, m = (0, o.c)(21),
+                {
+                    result: p,
+                    pending: x,
+                    onRetry: u,
+                    validateBeforeNavigate: h,
+                    pendingPage: g
+                } = e;
+            m[0] !== p || m[1] !== h ? (s = function(e) {
+                e && p?.ok && h?.() !== !1 && window.location.replace(p.url)
+            }, m[0] = p, m[1] = h, m[2] = s) : s = m[2];
+            let b = s;
+            if (null != g && (x || p?.ok)) {
+                let e;
+                return m[3] !== b || m[4] !== g ? (e = (0, a.jsx)("div", {
+                    className: "contents",
+                    ref: b,
+                    children: g
+                }), m[3] = b, m[4] = g, m[5] = e) : e = m[5], e
+            }
+            return m[6] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(n.a, {
+                id: "browser.auth.handoff.title",
+                defaultMessage: "Continue to sign in",
+                description: "Heading while automatically continuing an authentication flow"
+            }), m[6] = t) : t = m[6], m[7] !== b || m[8] !== p ? (l = p?.ok ? (0, a.jsx)("a", {
+                ref: b,
+                className: "text-center",
+                href: p.url,
+                children: (0, a.jsx)(n.a, {
+                    id: "browser.auth.handoff.continue",
+                    defaultMessage: "Continue",
+                    description: "Fallback link to continue authentication if automatic navigation did not occur"
+                })
+            }) : null, m[7] = b, m[8] = p, m[9] = l) : l = m[9], m[10] !== x || m[11] !== p?.ok ? (c = !p?.ok && x ? (0, a.jsx)("p", {
+                className: "text-center",
+                role: "status",
+                children: (0, a.jsx)(n.a, {
+                    id: "browser.auth.login.pending",
+                    defaultMessage: "Connecting…",
+                    description: "Label while the ChatGPT browser login page waits for the selected authentication provider"
+                })
+            }) : null, m[10] = x, m[11] = p?.ok, m[12] = c) : c = m[12], m[13] !== u || m[14] !== x || m[15] !== p?.ok ? (d = p?.ok || x ? null : (0, a.jsxs)(a.Fragment, {
+                children: [(0, a.jsx)("p", {
+                    className: "text-center text-sm text-danger",
+                    role: "alert",
+                    children: (0, a.jsx)(n.a, {
+                        id: "browser.auth.handoff.failed",
+                        defaultMessage: "We couldn’t sign you in. Please try again",
+                        description: "Error after an automatic authentication handoff fails; the user can retry the same handoff"
+                    })
+                }), (0, a.jsx)(i.a, {
+                    type: "button",
+                    color: "primary",
+                    size: "auth",
+                    onClick: u,
+                    children: (0, a.jsx)(n.a, {
+                        id: "browser.auth.handoff.retry",
+                        defaultMessage: "Try again",
+                        description: "Button to retry the same authentication handoff after it fails"
+                    })
+                })]
+            }), m[13] = u, m[14] = x, m[15] = p?.ok, m[16] = d) : d = m[16], m[17] !== l || m[18] !== c || m[19] !== d ? (f = (0, a.jsxs)(r.a, {
+                contentAlignment: "start",
+                title: t,
+                children: [l, c, d]
+            }), m[17] = l, m[18] = c, m[19] = d, m[20] = f) : f = m[20], f
+        }
+        t.d(s, {
+            a: () => l
+        })
+    })
+};
+import {
+    __webpack_require__ as e
+} from "./633146.1acff1fd97.js";
+import * as s from "./418851.26885c363c.js";
+e.C(s);
+import * as t from "./109308.2b1d9d6c81.js";
+e.C(t);
+import * as a from "./399565.a1117ca8b4.js";
+e.C(a);
+import * as o from "./257798.d843b1936f.js";
+e.C(o);
+import * as n from "./447351.932e2385aa.js";
+e.C(n);
+import * as i from "./617936.c1e603d513.js";
+e.C(i);
+import * as r from "./807489.b7e7128b38.js";
+e.C(r);
+import * as l from "./337882.9e4ade9102.js";
+e.C(l);
+import * as c from "./955979.3c3e4491c9.js";
+e.C(c);
+import * as d from "./646436.ae52bce54a.js";
+e.C(d);
+import * as f from "./7078.1d3962d820.js";
+e.C(f);
+import * as m from "./200429.6f42405259.js";
+e.C(m);
+import * as p from "./698524.d5e486fc8c.js";
+e.C(p);
+import * as x from "./956483.54777e5de5.js";
+e.C(x);
+import * as u from "./87162.b75f4ffcd0.js";
+e.C(u);
+import * as h from "./396705.fee9cdb4c3.js";
+e.C(h);
+import * as g from "./155568.a8a70a96a2.js";
+e.C(g);
+import * as b from "./731863.debd0d0a4a.js";
+e.C(b);
+import * as j from "./767086.14c8de4b86.js";
+e.C(j);
+import * as C from "./76629.7179268415.js";
+e.C(C);
+import * as v from "./514085.ccac72088d.js";
+e.C(v);
+import * as _ from "./204542.c2b519874e.js";
+e.C(_);
+import * as y from "./982651.d0b6d5b191.js";
+e.C(y);
+import * as w from "./673108.68f9b92566.js";
+e.C(w);
+import * as k from "./487481.27ec69afbb.js";
+e.C(k);
+import * as L from "./226913.4f6f289942.js";
+e.C(L);
+import * as M from "./24435.53d15f1859.js";
+e.C(M);
+var S = e(e.s = "HKP"),
+    N = S.a,
+    A = S.b;
+export {
+    N as
+    default, A as handle
+};
