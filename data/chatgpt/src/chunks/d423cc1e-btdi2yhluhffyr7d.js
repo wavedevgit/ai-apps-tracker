@@ -1,0 +1,698 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $7 as n,
+    $T as r,
+    Ait as i,
+    Art as a,
+    Aw as o,
+    Fz as s,
+    Iz as c,
+    Lnt as l,
+    O4 as u,
+    Ow as d,
+    Qy as f,
+    Xh as p,
+    Y7 as m,
+    Zy as h,
+    eE as g,
+    f0 as _,
+    jit as v,
+    jrt as y,
+    k4 as ee,
+    krt as b,
+    l7 as x,
+    p0 as S,
+    qh as C,
+    u7 as w,
+    znt as T
+} from "./4813494d-d7xm9wsvhdfbag9a.js";
+import {
+    Bn as E,
+    Ln as D,
+    Rn as O,
+    Vn as k,
+    p as te,
+    s as ne,
+    zn as A
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Bmn as re,
+    Kmn as j,
+    Umn as ie,
+    _sn as ae,
+    gsn as oe,
+    msn as se
+} from "./conversation-small-m7dgsxtvvivh3e6t.js";
+import {
+    af as ce,
+    if as le,
+    of as ue,
+    rf as de
+} from "./30901919-lc79rizhhepnsl3q.js";
+import {
+    n as fe,
+    r as pe
+} from "./a4ef304b-gboe7m232kzymz1x.js";
+import {
+    c as me,
+    l as M,
+    n as he,
+    s as N,
+    t as ge
+} from "./cc445a0e-ec73fo5dulzjoxjz.js";
+import {
+    o as _e,
+    r as P,
+    s as F,
+    t as I
+} from "./d3304073-febrkdgb2ud9msja.js";
+import {
+    n as ve,
+    t as ye
+} from "./4d271a7b-bo4tdex91c01cvmx.js";
+import {
+    n as be,
+    t as xe
+} from "./073fd849-k6p8487bt4m6ob7t.js";
+import {
+    a as Se,
+    o as Ce
+} from "./e74608d1-ic08gxko57ezokx5.js";
+import {
+    n as we,
+    t as Te
+} from "./5ba997e8-mq8vouyfopo43ja6.js";
+import {
+    n as Ee,
+    t as De
+} from "./ed61b531-bjvti6xph5q8x03o.js";
+import {
+    n as L,
+    t as Oe
+} from "./bcae0416-mhlrvfq0zzgu9xh7.js";
+
+function ke(e) {
+    return `/?model=gpt-4o&sharedCanvas=${e.sharedTextdocId}`
+}
+var R, z, B, V, Ae = e((() => {
+        g(), N(), he(), f(), p(), _(), i(), T(), b(), w(), k(), O(), R = E(), z = `https://openai.com/form/report-content/`, B = ({
+            areButtonsFullWidth: e,
+            sharedTextdoc: t,
+            onClickCodePreview: n,
+            isCodeRunning: i,
+            showRunCodeButton: o,
+            setIsReportModalOpen: s
+        }) => {
+            let c = !v(),
+                u = M(t.type, t.content),
+                d = o && (u || me(t.type)),
+                f = A(),
+                p = ke(t),
+                m = () => {
+                    a.count(y.CANVAS, `shared.click_edit_button`, [{
+                        key: `type`,
+                        value: t.type
+                    }, {
+                        key: `authed`,
+                        value: c ? `false` : `true`
+                    }]), l.logEvent(`Canvas Shared Edit Button Clicked`, {
+                        textdocId: t.sharedTextdocId,
+                        textdocType: t.type
+                    })
+                };
+            return (0, R.jsx)(`div`, {
+                className: `border-token-border-default flex w-full justify-center border-b-[0.5px] px-6`,
+                children: (0, R.jsxs)(`div`, {
+                    className: x(`flex w-full items-center justify-between gap-4 py-4`, !e && `max-w-[1200px]`),
+                    children: [(0, R.jsxs)(`div`, {
+                        children: [(0, R.jsx)(`h1`, {
+                            className: `text-token-text-primary line-clamp-1 text-base font-semibold`,
+                            children: t.title
+                        }), (0, R.jsxs)(`div`, {
+                            className: `text-token-text-secondary xs:flex-col flex flex-col gap-1.5 text-xs sm:flex-row`,
+                            children: [(0, R.jsx)(`div`, {
+                                className: `cursor-default`,
+                                children: (0, R.jsx)(h, {
+                                    align: `start`,
+                                    theme: `primary`,
+                                    labelTextAlign: `left`,
+                                    wide: !0,
+                                    contentClassName: `![&>*]:font-normal *:font-normal`,
+                                    label: f.formatMessage({
+                                        id: `RkWIbL`,
+                                        defaultMessage: `The content you’re seeing was made by a ChatGPT user. It may be unverified or contain potentially unsafe content that doesn’t reflect the views of OpenAI.`
+                                    }),
+                                    children: f.formatMessage(V.madeWithCanvas)
+                                })
+                            }), (0, R.jsx)(`div`, {
+                                children: c ? (0, R.jsx)(`a`, {
+                                    className: `underline`,
+                                    href: z,
+                                    target: `_blank`,
+                                    rel: `noreferrer`,
+                                    onClick: () => {
+                                        a.count(y.CANVAS, `shared.click_report_button`, [{
+                                            key: `type`,
+                                            value: t.type
+                                        }, {
+                                            key: `authed`,
+                                            value: `false`
+                                        }]), l.logEvent(`Canvas Shared Unauthed Report Button Clicked`, {
+                                            textdocId: t.sharedTextdocId,
+                                            textdocType: t.type
+                                        })
+                                    },
+                                    children: f.formatMessage(V.report)
+                                }) : (0, R.jsx)(`button`, {
+                                    className: `underline`,
+                                    onClick: () => {
+                                        a.count(y.CANVAS, `shared.click_report_button`, [{
+                                            key: `type`,
+                                            value: t.type
+                                        }, {
+                                            key: `authed`,
+                                            value: `true`
+                                        }]), l.logEvent(`Canvas Shared Authed Report Button Clicked`, {
+                                            textdocId: t.sharedTextdocId,
+                                            textdocType: t.type
+                                        }), s(!0)
+                                    },
+                                    children: f.formatMessage(V.report)
+                                })
+                            })]
+                        })]
+                    }), (0, R.jsxs)(`div`, {
+                        className: `flex items-center gap-4`,
+                        children: [d && (0, R.jsx)(ge, {
+                            isCodePreviewable: u,
+                            onClick: () => {
+                                a.count(y.CANVAS, `shared.click_run_button`, [{
+                                    key: `type`,
+                                    value: t.type
+                                }, {
+                                    key: `authed`,
+                                    value: c ? `false` : `true`
+                                }]), l.logEvent(`Canvas Shared Run Button Clicked`, {
+                                    textdocId: t.sharedTextdocId,
+                                    textdocType: t.type
+                                }), n()
+                            },
+                            isCodeRunning: i
+                        }), c ? (0, R.jsxs)(r, {
+                            onClick: () => {
+                                S({
+                                    fallbackScreenHint: `login`,
+                                    callbackUrl: p
+                                }), m()
+                            },
+                            icon: C,
+                            children: [(0, R.jsx)(`span`, {
+                                className: `hidden sm:inline`,
+                                children: f.formatMessage(V.editWithChatGPT)
+                            }), (0, R.jsx)(`span`, {
+                                className: `inline sm:hidden`,
+                                children: f.formatMessage(V.edit)
+                            })]
+                        }) : (0, R.jsxs)(r, {
+                            as: `link`,
+                            to: p,
+                            openNewTab: !0,
+                            icon: C,
+                            onClick: m,
+                            children: [(0, R.jsx)(`span`, {
+                                className: `hidden sm:inline`,
+                                children: f.formatMessage(V.editWithChatGPT)
+                            }), (0, R.jsx)(`span`, {
+                                className: `inline sm:hidden`,
+                                children: f.formatMessage(V.edit)
+                            })]
+                        })]
+                    })]
+                })
+            })
+        }, V = D({
+            report: {
+                id: `DHsq+d`,
+                defaultMessage: `Report`
+            },
+            editWithChatGPT: {
+                id: `DrcR8S`,
+                defaultMessage: `Edit with ChatGPT`
+            },
+            edit: {
+                id: `PpEliN`,
+                defaultMessage: `Edit`
+            },
+            madeWithCanvas: {
+                id: `h8SGou`,
+                defaultMessage: `You’re viewing user-generated content that may be unverified or unsafe.`
+            }
+        })
+    })),
+    H, je = e((() => {
+        H = function(e) {
+            return e.NUDITY_SEXUAL_ADULT = `nudity_sexual/adult`, e.NUDITY_SEXUAL_ABUSE = `nudity_sexual/abuse`, e.NUDITY_SEXUAL_NCII = `nudity_sexual/ncii`, e.CHILD_EXPLOITATION = `child_exploitation`, e.VIOLENCE_SELF_HARM = `violence/self_harm`, e.VIOLENCE_EATING = `violence/eating_disorder`, e.VIOLENCE_TERRORISM = `violence/terrorism`, e.VIOLENCE_THREATS = `violence/threats`, e.VIOLENCE_GENDER = `violence/gender`, e.VIOLENCE_WEAPONS = `violence/weapons`, e.DECEPTIVE_IMPERSONATION = `deceptive/impersonation`, e.DECEPTIVE_SCAM = `deceptive/scam`, e.DECEPTIVE_MISINFO = `deceptive/misinfo`, e.HATE_SPEECH = `hate/speech`, e.HATE_BULLYING = `hate/bullying`, e.HATE_UNWANTED = `hate/unwanted`, e.HATE_PRIVACY = `hate/privacy`, e.HATE_SPAM = `hate/spam`, e.OTHER_ILLEGAL = `other/illegal`, e.OTHER_UNSAFE = `other/unsafe`, e.OTHER_ANIMAL = `other/animal`, e.OTHER_HEALTH = `other/health`, e.OTHER_POLITICAL = `other/political`, e.OTHER_DONT_LIKE = `other/dont_like`, e.IP_COPYRIGHT = `ip/copyright`, e.IP_TRADEMARK = `ip/trademark`, e.MODERATION_INCORRECT = `moderation/incorrect`, e
+        }({})
+    })),
+    U, W, G, K, q, J, Y, Me = e((() => {
+        g(), ce(), de(), o(), je(), L(), ae(), ne(), U = t(k()), O(), W = E(), G = [{
+            id: `NUDITY_SEXUAL`,
+            label: `Nudity & Sexual Content`
+        }, {
+            id: `CHILD_EXPLOITATION`,
+            label: `Child Exploitation`
+        }, {
+            id: `VIOLENCE_SELF_HARM`,
+            label: `Violence & Self-Harm`
+        }, {
+            id: `DECEPTIVE_SCAM`,
+            label: `Deceptive Behavior & Scams`
+        }, {
+            id: `HATE_SPAM`,
+            label: `Hate, Harrassment & Spam`
+        }, {
+            id: `OTHER_ILLEGAL`,
+            label: `Other inappropriate or illegal content`
+        }, {
+            id: `IP`,
+            label: `Intellectual Property`
+        }], K = {
+            NUDITY_SEXUAL: [{
+                id: H.NUDITY_SEXUAL_ADULT,
+                label: `Adult nudity & sexual content`
+            }, {
+                id: H.NUDITY_SEXUAL_ABUSE,
+                label: `Sexual exploitation & abuse`
+            }, {
+                id: H.NUDITY_SEXUAL_NCII,
+                label: `Non-consensual or deepfake intimate imagery`
+            }],
+            CHILD_EXPLOITATION: [{
+                id: H.CHILD_EXPLOITATION,
+                label: `Child exploitation`
+            }],
+            VIOLENCE_SELF_HARM: [{
+                id: H.VIOLENCE_SELF_HARM,
+                label: `Suicide & self-harm`
+            }, {
+                id: H.VIOLENCE_EATING,
+                label: `Eating disorders`
+            }, {
+                id: H.VIOLENCE_TERRORISM,
+                label: `Terrorism`
+            }, {
+                id: H.VIOLENCE_THREATS,
+                label: `Threats or incitement to violence`
+            }, {
+                id: H.VIOLENCE_GENDER,
+                label: `Gender-based violence`
+            }, {
+                id: H.VIOLENCE_WEAPONS,
+                label: `Weapons creation & procurement`
+            }],
+            DECEPTIVE_SCAM: [{
+                id: H.DECEPTIVE_IMPERSONATION,
+                label: `Impersonation`
+            }, {
+                id: H.DECEPTIVE_SCAM,
+                label: `Fraud or scam`
+            }, {
+                id: H.DECEPTIVE_MISINFO,
+                label: `Misleading information`
+            }],
+            HATE_SPAM: [{
+                id: H.HATE_SPEECH,
+                label: `Hate speech or symbols`
+            }, {
+                id: H.HATE_BULLYING,
+                label: `Bullying & harassment`
+            }, {
+                id: H.HATE_UNWANTED,
+                label: `Unwanted depiction of real person`
+            }, {
+                id: H.HATE_PRIVACY,
+                label: `Privacy violating activities`
+            }, {
+                id: H.HATE_SPAM,
+                label: `Spam`
+            }],
+            OTHER_ILLEGAL: [{
+                id: H.OTHER_UNSAFE,
+                label: `Unsafe or prohibited products or activities`
+            }, {
+                id: H.OTHER_ANIMAL,
+                label: `Animal harm or welfare issues`
+            }, {
+                id: H.OTHER_HEALTH,
+                label: `Risks to public health and safety`
+            }, {
+                id: H.OTHER_POLITICAL,
+                label: `Deceptive content of political candidate or election equipment`
+            }, {
+                id: H.OTHER_ILLEGAL,
+                label: `Other inappropriate or illegal content`
+            }, {
+                id: H.OTHER_DONT_LIKE,
+                label: `I just don’t like it`
+            }],
+            IP: [{
+                id: H.IP_COPYRIGHT,
+                label: `Copyright`,
+                url: `https://openai.com/form/copyright-disputes`
+            }, {
+                id: H.IP_TRADEMARK,
+                label: `Trademark`,
+                url: `https://openai.com/form/trademark-disputes`
+            }]
+        }, q = {
+            [H.IP_COPYRIGHT]: `https://openai.com/form/copyright-disputes`,
+            [H.IP_TRADEMARK]: `https://openai.com/form/trademark-disputes`
+        }, J = D({
+            dialogTitle: {
+                id: `reportModal.dialogTitle`,
+                defaultMessage: `Why are you reporting this content?`
+            },
+            cancelButton: {
+                id: `reportModal.cancelButton`,
+                defaultMessage: `Cancel`
+            },
+            reportButton: {
+                id: `reportModal.reportButton`,
+                defaultMessage: `Report`
+            },
+            submittingButton: {
+                id: `reportModal.submittingButton`,
+                defaultMessage: `Submitting...`
+            },
+            submitSuccessMessage: {
+                id: `reportModal.submitSuccessMessage`,
+                defaultMessage: `Your report has been submitted.`
+            },
+            errorMessage: {
+                id: `reportModal.errorMessage`,
+                defaultMessage: `An error occurred while submitting your report.`
+            },
+            formRedirectMessage: {
+                id: `reportModal.formRedirectMessage`,
+                defaultMessage: `Please use this form to report unlawful use of your work:`
+            }
+        }), Y = ({
+            reportFunction: e,
+            isOpen: t,
+            dismissModal: n
+        }) => {
+            let i = A(),
+                [a, o] = (0, U.useState)(null),
+                [s, c] = (0, U.useState)(null),
+                [l, u] = (0, U.useState)(null),
+                [f, p] = (0, U.useState)(`toplevel`),
+                m = () => {
+                    c(null), u(null), p(`toplevel`), o(null), n()
+                },
+                {
+                    mutate: h,
+                    isPending: g
+                } = te({
+                    mutationFn: async () => {
+                        if (l) return e(l)
+                    },
+                    onSuccess: () => {
+                        p(`success`)
+                    },
+                    onError: () => {
+                        o(i.formatMessage(J.errorMessage))
+                    }
+                }),
+                _ = l && q[l];
+            return (0, W.jsxs)(d, {
+                testId: `modal-report`,
+                isOpen: t,
+                showCloseButton: !0,
+                onClose: m,
+                title: i.formatMessage(J.dialogTitle),
+                type: `success`,
+                primaryButton: f === `takedown` && !_ && (0, W.jsx)(r, {
+                    onClick: () => h(),
+                    disabled: !l,
+                    loading: g,
+                    children: g ? i.formatMessage(J.submittingButton) : i.formatMessage(J.reportButton)
+                }),
+                secondaryButton: f === `takedown` && !_ && (0, W.jsx)(r, {
+                    onClick: m,
+                    color: `secondary`,
+                    children: i.formatMessage(J.cancelButton)
+                }),
+                children: [f === `success` && (0, W.jsx)(`div`, {
+                    children: i.formatMessage(J.submitSuccessMessage)
+                }), f === `toplevel` && (0, W.jsx)(`div`, {
+                    className: `flex flex-col gap-4`,
+                    children: G.map(e => (0, W.jsx)(`div`, {
+                        className: `flex items-start gap-2`,
+                        children: (0, W.jsx)(r, {
+                            className: `text-sm`,
+                            color: `secondary`,
+                            onClick: () => {
+                                c(e.id), p(`takedown`)
+                            },
+                            children: e.label
+                        })
+                    }, e.id))
+                }), f === `takedown` && s && (0, W.jsxs)(W.Fragment, {
+                    children: [(0, W.jsx)(se, {
+                        className: `flex grow flex-col gap-4`,
+                        children: K[s].map(e => {
+                            let t = e.id === l;
+                            return (0, W.jsx)(oe, {
+                                className: `flex grow items-center justify-start gap-2`,
+                                value: e.id,
+                                children: (0, W.jsx)(Oe, {
+                                    htmlFor: e.id,
+                                    className: `items-center text-start text-sm`,
+                                    onClick: () => {
+                                        u(e.id)
+                                    },
+                                    children: (0, W.jsxs)(`div`, {
+                                        className: `text-token-text-primary flex items-center gap-2`,
+                                        children: [t && (0, W.jsx)(ue, {
+                                            className: `icon`
+                                        }), !t && (0, W.jsx)(le, {
+                                            className: `icon text-token-text-tertiary`
+                                        }), e.label]
+                                    })
+                                }, e.id)
+                            }, e.id)
+                        })
+                    }), _ && (0, W.jsxs)(`div`, {
+                        className: `justify-between p-4 text-sm`,
+                        children: [(0, W.jsx)(`p`, {
+                            children: i.formatMessage(J.formRedirectMessage)
+                        }), (0, W.jsx)(`a`, {
+                            href: q[l],
+                            target: `_blank`,
+                            rel: `noreferrer`,
+                            className: `text-primary underline`,
+                            children: q[l]
+                        })]
+                    }), a && (0, W.jsx)(`div`, {
+                        className: `p-4`,
+                        children: (0, W.jsx)(`p`, {
+                            className: `text-xs text-red-500`,
+                            children: a
+                        })
+                    })]
+                })]
+            })
+        }
+    }));
+
+function X(e, t) {
+    m.safePost(`/textdoc/shared/{shared_textdoc_id}/report`, {
+        parameters: {
+            path: {
+                shared_textdoc_id: e.sharedTextdocId
+            }
+        },
+        requestBody: {
+            takedown_type: t
+        }
+    })
+}
+
+function Ne({
+    sharedTextdoc: e,
+    disableCodeExecution: t = !1,
+    disableNetworkRequests: n,
+    disablePermissions: r,
+    unsafeAllowAllNetworkRequests: i,
+    showHeader: a = !0
+}) {
+    let o = j(e.type) && M(e.type, e.content),
+        c = !t && o,
+        [l, u] = (0, Z.useState)(c),
+        [d, f] = (0, Z.useState)(!1),
+        p = A(),
+        m = (0, Z.useRef)(null),
+        h = (0, Z.useRef)(null),
+        g = (0, Z.useRef)(null),
+        [_, v] = (0, Z.useState)(!1),
+        y = c && l,
+        b = () => {
+            t || (l ? (g.current?.stopCode(), u(!1)) : (u(!0), g.current?.runCode(e.type, e.content).finally(() => u(!1))))
+        },
+        {
+            type: S,
+            content: C
+        } = e,
+        w = ee(),
+        T = !n && i,
+        E = n ? p.formatMessage($.networkAccessDenied) : void 0;
+    (0, Z.useEffect)(() => {
+        if (w) {
+            if (t) {
+                u(!1), g.current?.stopCode();
+                return
+            }
+            o && (u(!0), g.current?.runCode(S, C))
+        }
+    }, [t, o, w, C, S]);
+    let {
+        isOpen: D,
+        currentTime: O
+    } = Ce();
+    return e.type === re.DOCUMENT ? (0, Q.jsxs)(`div`, {
+        className: `flex h-full w-full flex-col items-center overflow-hidden`,
+        children: [(0, Q.jsxs)(`div`, {
+            className: x(`flex h-full w-full max-w-[1000px]`, D && `max-w-[1200px]`),
+            style: {
+                boxShadow: `0px 4px 32px 0px rgba(0, 0, 0, 0.08)`
+            },
+            children: [(0, Q.jsx)(`div`, {
+                className: `flex w-full grow justify-center`,
+                children: (0, Q.jsxs)(`div`, {
+                    className: `bg-token-bg-primary w-full overflow-y-auto`,
+                    children: [a && (0, Q.jsx)(B, {
+                        areButtonsFullWidth: !1,
+                        sharedTextdoc: e,
+                        onClickCodePreview: () => {},
+                        isCodeRunning: l,
+                        showRunCodeButton: !1,
+                        setIsReportModalOpen: v
+                    }), (0, Q.jsx)(`div`, {
+                        className: `px-12 pt-12`,
+                        children: (0, Q.jsx)(De, {
+                            value: e.content,
+                            onChange: () => {},
+                            isDisabled: !0,
+                            showChanges: !1,
+                            comments: [],
+                            diff: null,
+                            safeUrls: [],
+                            contentReferences: [],
+                            wrapperClassName: `pb-12`
+                        })
+                    })]
+                })
+            }), typeof O == `number` && D && (0, Q.jsx)(I, {
+                sharedTextDocId: e.sharedTextdocId
+            })]
+        }), (0, Q.jsx)(Y, {
+            reportFunction: t => {
+                X(e, t)
+            },
+            isOpen: _,
+            dismissModal: () => v(!1)
+        })]
+    }) : j(e.type) ? (0, Q.jsxs)(`div`, {
+        className: `justify-top flex h-full w-full flex-col justify-between overflow-auto`,
+        children: [(0, Q.jsxs)(`div`, {
+            className: `flex grow flex-col justify-start overflow-auto`,
+            children: [a && (0, Q.jsx)(B, {
+                areButtonsFullWidth: !0,
+                sharedTextdoc: e,
+                onClickCodePreview: b,
+                isCodeRunning: l,
+                showRunCodeButton: !o && !t,
+                setIsReportModalOpen: v
+            }), (0, Q.jsx)(`div`, {
+                className: y ? `grow` : void 0,
+                children: (0, Q.jsx)(s, {
+                    children: (0, Q.jsx)(ve, {
+                        id: e.sharedTextdocId,
+                        isSharedSurface: !0,
+                        ref: h,
+                        enableTransition: o,
+                        visuallyHidden: !y,
+                        title: e.title,
+                        networkPolicy: n ? `none` : `deps-and-user-approved`,
+                        networkAccessDeniedMessage: E,
+                        disablePermissions: r,
+                        unsafeAllowAllNetworkRequests: T,
+                        onRetryCodeRun: () => {
+                            t || g.current?.runCode(S, C)
+                        }
+                    })
+                })
+            }), !y && (0, Q.jsx)(`div`, {
+                children: (0, Q.jsx)(Te, {
+                    id: `published-codemirror`,
+                    value: e.content,
+                    hoveredCommentId: null,
+                    focusedCommentId: null,
+                    language: fe(e.type),
+                    readonlyReason: xe({
+                        isReadonly: !0,
+                        isRequestActive: !1,
+                        isTextdocStreaming: !1,
+                        isHistoricalVersion: !1,
+                        isShowingChanges: !1,
+                        isReadonlyFromQueryParam: !1
+                    }),
+                    editorRef: m,
+                    isPreview: !0
+                })
+            })]
+        }), (0, Q.jsx)(`div`, {
+            className: t || !l && o ? `hidden` : ``,
+            children: (0, Q.jsx)(_e, {
+                ref: g,
+                isOpen: d,
+                onOpenChange: f,
+                sandboxRef: h,
+                textdocId: `publishedCanvasTextdoc`,
+                textdocContent: e.content,
+                textdocTitle: e.title,
+                isTextdocAttachedPending: !1,
+                highlightLine: e => m.current?.highlightLine(e),
+                isRequestActive: !1,
+                createTextdocTurn: async () => {}
+            })
+        }), (0, Q.jsx)(Y, {
+            isOpen: _,
+            dismissModal: () => v(!1),
+            reportFunction: t => {
+                X(e, t)
+            }
+        })]
+    }) : (0, Q.jsx)(`p`, {
+        children: p.formatMessage($.unsupportedTextdocType)
+    })
+}
+var Z, Q, $, Pe = e((() => {
+    we(), Ee(), N(), pe(), F(), be(), Ae(), ie(), ye(), P(), Se(), Me(), c(), n(), u(), w(), Z = t(k()), O(), Q = E(), $ = D({
+        networkAccessDenied: {
+            id: `lvOcJE`,
+            defaultMessage: `Network requests in shared Canvas are disabled for this workspace. Contact an admin to enable this feature.`
+        },
+        unsupportedTextdocType: {
+            id: `4hdXQX`,
+            defaultMessage: `Content type is not supported`
+        }
+    })
+}));
+export {
+    Pe as n, Ne as t
+};
+//# sourceMappingURL=d423cc1e-btdi2yhluhffyr7d.js.map

@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bn as t,Ht as n,Q as r}from"./2340486e-i7pjxgdhv0bs6apg.js";import{n as i,t as a}from"./8c6976e5-ha1vcd9wh2w2c0ma.js";import{n as o,t as s}from"./16d1957c-fqxngbaz8hnvx46b.js";var c,l,u=e((()=>{r(),o(),a(),c=t(),l=n(function(){return(0,c.jsx)(s,{...i()})})}));e((()=>{u()}))();export{l as default};
-//# sourceMappingURL=admin.groups._index-elszpy72.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bn as t,Ht as n,Q as r}from"./2340486e-i7pjxgdhv0bs6apg.js";import{n as i,t as a}from"./8c6976e5-gslcvvotcp514w6d.js";import{n as o,t as s}from"./16d1957c-n2ckibxt7k833nw8.js";var c,l,u=e((()=>{r(),o(),a(),c=t(),l=n(function(){return(0,c.jsx)(s,{...i()})})}));e((()=>{u()}))();export{l as default};
+//# sourceMappingURL=admin.groups._index-mvx9jxms.js.map

@@ -1,0 +1,42 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ex as t
+} from "./c2675c8c-f8x469cgefxzeo6l.js";
+import {
+    c as n,
+    s as r
+} from "./e1258b01-otkub0iw7ve83c6x.js";
+var i, a, o, s, c, l, u, d, f, p, m = e((() => {
+    t(), r(), i = (e, t) => e.size === t.size && [...e].every(e => t.has(e)), a = `custom_new_all`, o = ({
+        actionPolicy: e,
+        enabledActions: t
+    }) => e ?? (t == null ? null : `custom`), s = e => Array.isArray(e) ? e.filter(e => typeof e == `string`) : [], c = e => {
+        let t = s(e);
+        return t.length > 0 && !t.includes(`model`)
+    }, l = e => {
+        let t = s(e);
+        return t.includes(`app`) && !t.includes(`model`)
+    }, u = e => {
+        let t = e.meta;
+        if (n(t)) {
+            if (t[`openai/visibility`] === `private`) return !0;
+            let e = t[`ui/visibility`],
+                r = t.ui,
+                i = n(r) ? r.visibility : void 0;
+            if (l(e) || l(i)) return !1;
+            if (c(e) || c(i)) return !0
+        }
+        return e.visibility === `private`
+    }, d = e => !u(e), f = e => e === `all` ? `custom_new_all` : e === `read_only` ? `custom_new_read_only` : e ?? `custom_new_all`, p = ({
+        actionIds: e,
+        readOnlyActionIds: t,
+        enabledActions: n,
+        customNewActionPolicy: r
+    }) => r === `custom_new_all` && i(n, new Set(e)) ? `all` : r === `custom_new_read_only` && t.length > 0 && i(n, new Set(t)) ? `read_only` : r
+}));
+export {
+    o as a, d as i, p as n, f as o, m as r, a as t
+};
+//# sourceMappingURL=16e34fcb-orrouh5z4jdntc7g.js.map

@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{i as t,n,r,t as i}from"./48eff304-bd6051rkfj72vkok.js";var a=e((()=>{t(),n()}));e((()=>{a()}))();export{i as clientLoader,r as default};
-//# sourceMappingURL=gifts.credits_.claim._claimCode-eucxfxxd.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{i as t,n,r,t as i}from"./48eff304-ki0no5h92qz03n45.js";var a=e((()=>{t(),n()}));e((()=>{a()}))();export{i as clientLoader,r as default};
+//# sourceMappingURL=gifts.credits_.claim._claimCode-54aaqhmu.js.map

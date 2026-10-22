@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,r as n,t as r}from"./e3d36c63-hxuys415ktxasxx7.js";e((()=>{t()}))();export{n as default,r as handle};
-//# sourceMappingURL=sophia.eligible-institutions-pe84xkp5.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,r as n,t as r}from"./e3d36c63-hlfaqr4pbqy03aco.js";e((()=>{t()}))();export{n as default,r as handle};
+//# sourceMappingURL=sophia.eligible-institutions-jhvgp2a6.js.map

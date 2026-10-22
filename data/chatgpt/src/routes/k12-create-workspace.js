@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,r as n}from"./cff09cfe-j6ucgem0sat9uird.js";e((()=>{t()}))();export{n as default};
-//# sourceMappingURL=k12-create-workspace-ckwmzaji.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,r as n}from"./cff09cfe-buidcpezxt7vrswh.js";e((()=>{t()}))();export{n as default};
+//# sourceMappingURL=k12-create-workspace-jyx5fiti.js.map
