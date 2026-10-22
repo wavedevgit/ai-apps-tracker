@@ -1,0 +1,355 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ap as t,
+    Cot as n,
+    Dtt as r,
+    QZ as i,
+    Up as a,
+    YW as o,
+    dF as s,
+    jtt as c,
+    qW as l,
+    vF as u,
+    wot as d
+} from "./4813494d-nxpmzchfjvwqts17.js";
+import {
+    $x as f,
+    BLn as p,
+    DEt as m,
+    ELn as h,
+    FEt as g,
+    HF as ee,
+    J5t as _,
+    Jl as v,
+    LEt as y,
+    OEt as b,
+    PEt as te,
+    UF as ne,
+    W5t as re,
+    _N as ie,
+    cB as ae,
+    dOt as x,
+    fOt as S,
+    oB as C,
+    ql as w,
+    rM as T,
+    sB as E,
+    tM as D,
+    tS as O,
+    vN as k,
+    zEt as A
+} from "./conversation-small-m08q51xmfe7gjq3d.js";
+import {
+    a as j,
+    o as M
+} from "./3c02c844-ff7ddp8o9adww7mv.js";
+import {
+    i as N,
+    t as P
+} from "./32a2db56-fwpfzn8x3sh961oe.js";
+import {
+    r as F,
+    s as I
+} from "./70ccb607-n3gg6awdit6ys9ol.js";
+import {
+    a as L,
+    c as R,
+    d as z,
+    n as oe,
+    t as B
+} from "./4aa1bb90-hz3a9jpivf6r883s.js";
+
+function V(e) {
+    let t = e.mountedLibraryFileId ?? (p(e.libraryFileId) ? e.libraryFileId : p(e.fileId) ? e.fileId : null);
+    return p(t) ? t : null
+}
+
+function H(e, t) {
+    let n = e.librarySourceMimeType ?? (_(t) ? e.mimeType : void 0);
+    return {
+        mountedLibraryFileId: t,
+        ...n ? {
+            librarySourceMimeType: n
+        } : {}
+    }
+}
+
+function U(e) {
+    let t = e.isSharedConversation === !0;
+    t && e.sharedLibraryFileId != null && m(e.sharedLibraryFileId)();
+    let n = V(e),
+        {
+            libraryFileId: r,
+            ...i
+        } = e,
+        a = p(r) ? void 0 : r,
+        s = (a != null || n != null) && A({
+            fileName: e.fileName,
+            mimeType: e.mimeType
+        });
+    return g({
+        ...i,
+        ...a == null ? {} : {
+            libraryFileId: a
+        },
+        ...n && H(e, n),
+        ...a != null && !t && W(e.fileName, e.mimeType) && o() && e.providesOpenLibraryFileContext == null ? {
+            providesOpenLibraryFileContext: !0
+        } : {},
+        onPdfPreviewViewed: n => {
+            N({
+                conversation: e.conversation,
+                isSharedConversation: t,
+                pageCount: n
+            })
+        },
+        ...s ? {
+            preferSidebarForMarkdown: !0,
+            ...e.providesOpenLibraryFileContext == null ? {
+                providesOpenLibraryFileContext: !0
+            } : {}
+        } : {},
+        previewMode: e.libraryImageViewer == null ? `sidebar` : `legacy-modal`
+    })
+}
+
+function W(e, n) {
+    let r = x(e, n);
+    if (r == null) return !1;
+    let i = t(r);
+    return i === `pptx` || i === `xlsx` || i === `csv` || i === `tsv`
+}
+var G = e((() => {
+    S(), te(), a(), re(), h(), b(), y(), P(), l()
+}));
+
+function K(e, t, n = {}) {
+    let r = [],
+        i = new Set,
+        a = [],
+        o = t == null ? -1 : e.findIndex(e => e.messageId === t),
+        s = ({
+            fallbackTitle: e,
+            id: t,
+            title: a
+        }) => {
+            if (typeof t != `string` || !t || i.has(t)) return !1;
+            let o = n[t]?.title.trim(),
+                s = typeof a == `string` && a.trim() ? a.trim() : o ?? e;
+            return i.add(t), r.push({
+                id: t,
+                ...s ? {
+                    title: s
+                } : {}
+            }), !0
+        };
+    for (let t of e.slice(o === -1 ? 0 : o)) {
+        for (let e of t.directTasks) s(e);
+        if (t.pendingCreate != null) {
+            a.push({
+                ...t.pendingCreate,
+                settled: !1
+            });
+            continue
+        }
+        let e = t.mutation;
+        if (e == null) continue;
+        let n;
+        for (let t = a.length - 1; t >= 0; t--) {
+            let r = a[t];
+            if (!r.settled && (e.turnExchangeId == null || r.turnExchangeId == null || r.turnExchangeId === e.turnExchangeId)) {
+                n = r;
+                break
+            }
+        }
+        if (e.isError) {
+            n != null && (n.settled = !0);
+            continue
+        }
+        let r = !1;
+        for (let t of e.automations) r = s({
+            fallbackTitle: n?.title,
+            id: t.id,
+            title: t.title
+        }) || r;
+        r && n != null && (n.settled = !0)
+    }
+    return r
+}
+
+function q(e) {
+    let t = e.metadata,
+        i = [];
+    typeof t?.automation_id == `string` && t.automation_id.length > 0 && i.push({
+        id: t.automation_id,
+        title: t.automation_title
+    }), t?.real_author_type === `automation` && typeof t.real_author_id == `string` && t.real_author_id.length > 0 && i.push({
+        id: t.real_author_id,
+        title: t.real_author_title
+    });
+    let a = {
+            directTasks: i,
+            messageId: e.id
+        },
+        o = d(e.author.name ?? e.recipient),
+        s = o?.namespace === n.DE1D73E || o?.namespace === `automations`,
+        c = e.author.role === r.Assistant && o?.functionName === `create`,
+        l = e.author.role === r.Tool && (o?.functionName === `create` || o?.functionName === `update`);
+    if (!s || !c && !l) return a;
+    let u = ae(e, C(e));
+    if (typeof u != `object` || !u) return a;
+    if (c) {
+        let e = Reflect.get(u, `title`);
+        return typeof e == `string` && e.trim() && (a.pendingCreate = {
+            title: e.trim(),
+            turnExchangeId: t?.turn_exchange_id
+        }), a
+    }
+    return a.mutation = {
+        automations: [Reflect.get(u, `jawbone`), Reflect.get(u, `automation`)].flatMap(e => typeof e != `object` || !e ? [] : [{
+            id: Reflect.get(e, `id`),
+            title: Reflect.get(e, `title`)
+        }]),
+        isError: Reflect.get(u, `status`) === `ERROR`,
+        turnExchangeId: t?.turn_exchange_id
+    }, a
+}
+var J = e((() => {
+    c(), E(), i()
+}));
+
+function se() {
+    let e, t;
+    return n => {
+        if (n === e && t != null) return t;
+        let r = e ?? [],
+            i = t?.contributions ?? [],
+            a = ue(),
+            o = n.length !== i.length,
+            s = n.length !== i.length,
+            c = !1,
+            l = !1,
+            u = n.map((e, t) => {
+                let n = e === r[t] ? i[t] ?? X(e) : X(e),
+                    u = i[t];
+                return o ||= n !== u, s ||= n.summary.messageId !== u?.summary.messageId, Y(a, u, n), c ||= n.hasLibrarySearchResults, l ||= n.plugin.invocation != null || n.keys.mcpResources != null, n
+            });
+        for (let e = u.length; e < i.length; e += 1) Y(a, i[e], void 0);
+        if (e = n, !o && t != null) return t;
+        let d = {
+            contributions: u,
+            hasLibrarySearchResults: c,
+            hasPluginInvocations: l,
+            revisions: le(t?.revisions, a, s)
+        };
+        return t = d, d
+    }
+}
+
+function ce(e, t) {
+    return $(e)(t)
+}
+
+function le(e, t, n) {
+    return {
+        browserScreenshots: (e?.browserScreenshots ?? 0) + Number(t.browserScreenshots),
+        messageIds: (e?.messageIds ?? 0) + Number(n),
+        mcpResources: (e?.mcpResources ?? 0) + Number(t.mcpResources),
+        plugin: (e?.plugin ?? 0) + Number(t.plugin),
+        progress: (e?.progress ?? 0) + Number(t.progress),
+        site: (e?.site ?? 0) + Number(t.site),
+        skills: (e?.skills ?? 0) + Number(t.skills),
+        subagents: (e?.subagents ?? 0) + Number(t.subagents),
+        summary: (e?.summary ?? 0) + Number(t.summary),
+        summaryAssistantText: (e?.summaryAssistantText ?? 0) + Number(t.summaryAssistantText),
+        tasks: (e?.tasks ?? 0) + Number(t.tasks),
+        webSources: (e?.webSources ?? 0) + Number(t.webSources)
+    }
+}
+
+function ue() {
+    return {
+        browserScreenshots: !1,
+        mcpResources: !1,
+        plugin: !1,
+        progress: !1,
+        site: !1,
+        skills: !1,
+        subagents: !1,
+        summary: !1,
+        summaryAssistantText: !1,
+        tasks: !1,
+        webSources: !1
+    }
+}
+
+function Y(e, t, n) {
+    e.browserScreenshots ||= t?.keys.browserScreenshots !== n?.keys.browserScreenshots, e.plugin ||= t?.keys.plugin !== n?.keys.plugin, e.mcpResources ||= t?.keys.mcpResources !== n?.keys.mcpResources, e.progress ||= t?.keys.progress !== n?.keys.progress, e.site ||= t?.keys.site !== n?.keys.site, e.skills ||= t?.keys.skills !== n?.keys.skills, e.subagents ||= t?.keys.subagents !== n?.keys.subagents, e.summary ||= t?.keys.summary !== n?.keys.summary, e.summaryAssistantText ||= t?.keys.summaryAssistantText !== n?.keys.summaryAssistantText, e.tasks ||= t?.keys.tasks !== n?.keys.tasks, e.webSources ||= t?.keys.webSources !== n?.keys.webSources
+}
+
+function X(e) {
+    let t = Q.get(e);
+    if (t != null) return t;
+    let n = ee(e),
+        i = n.length > 0 ? n : void 0,
+        a = R(e),
+        o = oe(e),
+        s = B(e),
+        c = w(e),
+        l = e.author.role === r.Assistant && e.channel === `final` && e.recipient === `all` && e.status === `finished_successfully`,
+        u = q(e),
+        d = D(e),
+        p = ie([e]).find(e => e.pluginId == null) ?? null,
+        m = F(e),
+        h = j(e),
+        {
+            assistantText: g,
+            ..._
+        } = h,
+        v = {
+            browserScreenshots: i,
+            completesTurnPlan: l,
+            keys: {
+                browserScreenshots: (i?.length ?? 0) > 0 ? Z(i) : void 0,
+                plugin: a.catalogActions.length > 0 || a.invocation != null || a.privateConnectorId != null ? Z(a) : void 0,
+                mcpResources: o == null ? s.length > 0 ? Z(s) : void 0 : Z(o),
+                progress: c != null || l ? Z({
+                    completesTurnPlan: l,
+                    turnPlan: c
+                }) : void 0,
+                site: d.invocationCandidate != null || d.resultCandidate != null ? Z({
+                    invocationCandidate: d.invocationCandidate,
+                    resultCandidate: d.resultCandidate
+                }) : void 0,
+                skills: p == null ? void 0 : Z(p),
+                subagents: m.activity != null || m.toolCall != null || m.isUser ? Z(m) : void 0,
+                summary: Z(_),
+                summaryAssistantText: g,
+                tasks: u.directTasks.length > 0 || u.mutation != null || u.pendingCreate != null ? Z(u) : void 0,
+                webSources: f(e)
+            },
+            hasLibrarySearchResults: h.librarySearchResults.length > 0,
+            mcpResources: o,
+            plugin: a,
+            site: d,
+            skillSource: p,
+            subagents: m,
+            summary: h,
+            tasks: u,
+            turnPlan: c
+        };
+    return Q.set(e, v), v
+}
+
+function Z(e) {
+    return JSON.stringify(e)
+}
+var Q, $, de = e((() => {
+    c(), u(), k(), I(), T(), z(), O(), L(), J(), M(), ne(), v(), Q = new WeakMap, $ = s(() => se())
+}));
+export {
+    G as a, J as i, de as n, W as o, K as r, U as s, ce as t
+};
+//# sourceMappingURL=23ad950b-cks07gptzw73ah3c.js.map

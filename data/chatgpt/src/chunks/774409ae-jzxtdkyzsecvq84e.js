@@ -1,2 +1,132 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{J7 as t,Q7 as n}from"./4813494d-itnrgnth03y1sm9d.js";function r({query:e,limit:n,providers:r,signal:i}){return t.safeGet(`/files/library/mounted/search`,{parameters:{query:{q:e,limit:n,...r==null?{}:{providers:[...r]}}},signal:i})}async function i({query:e,limit:n,signal:r,provider:i}){let a=await t.safeGet(`/files/library/mounted/search/cache`,{parameters:{query:{q:e,limit:n,provider:i}},signal:r,skipJsonTransform:!0});return a.status===204?null:await a.json()}function a(e,t,n){let r=[],i=new Set;for(let a=0;r.length<n;a+=1){let o=!1;for(let s of e){let e=t.get(s)?.items[a];if(e!=null&&(o=!0,!i.has(e.id)&&(i.add(e.id),r.push(e),r.length===n)))break}if(!o)break}return{items:r,cursor:null}}async function o({query:e,limit:t,providers:n,signal:o,useCache:s,includeGoogleDriveCache:c=!0,includeBoxCache:l=!1,onCachedResult:u,onResult:d,onLiveError:f}){if(n?.length===0){o?.aborted||d({items:[],cursor:null});return}let p=null,m=new Set,h=!1;if(s){let r=[];c&&r.push(`google_drive`),l&&r.push(`box`);let s=new Map,f=async c=>{let l;try{l=await i({query:e,limit:t,signal:o,provider:c})}catch{return}l==null||h&&(n==null||n.includes(c))||o?.aborted||(s.set(c,l),m.add(c),p=a(r,s,t),u==null?d(p):u(p,{provider:c,providerPage:l}))};for(let e of r)f(e)}let g;try{g=await r({query:e,limit:t,providers:n,signal:o})}catch{o?.aborted||f({cachedPage:p,cachedProviders:new Set(m)});return}o?.aborted||(h=!0,d(g))}var s=e((()=>{n()}));export{r as i,o as n,i as r,s as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    J7 as t,
+    Q7 as n
+} from "./4813494d-itnrgnth03y1sm9d.js";
+
+function r({
+    query: e,
+    limit: n,
+    providers: r,
+    signal: i
+}) {
+    return t.safeGet(`/files/library/mounted/search`, {
+        parameters: {
+            query: {
+                q: e,
+                limit: n,
+                ...r == null ? {} : {
+                    providers: [...r]
+                }
+            }
+        },
+        signal: i
+    })
+}
+async function i({
+    query: e,
+    limit: n,
+    signal: r,
+    provider: i
+}) {
+    let a = await t.safeGet(`/files/library/mounted/search/cache`, {
+        parameters: {
+            query: {
+                q: e,
+                limit: n,
+                provider: i
+            }
+        },
+        signal: r,
+        skipJsonTransform: !0
+    });
+    return a.status === 204 ? null : await a.json()
+}
+
+function a(e, t, n) {
+    let r = [],
+        i = new Set;
+    for (let a = 0; r.length < n; a += 1) {
+        let o = !1;
+        for (let s of e) {
+            let e = t.get(s)?.items[a];
+            if (e != null && (o = !0, !i.has(e.id) && (i.add(e.id), r.push(e), r.length === n))) break
+        }
+        if (!o) break
+    }
+    return {
+        items: r,
+        cursor: null
+    }
+}
+async function o({
+    query: e,
+    limit: t,
+    providers: n,
+    signal: o,
+    useCache: s,
+    includeGoogleDriveCache: c = !0,
+    includeBoxCache: l = !1,
+    onCachedResult: u,
+    onResult: d,
+    onLiveError: f
+}) {
+    if (n?.length === 0) {
+        o?.aborted || d({
+            items: [],
+            cursor: null
+        });
+        return
+    }
+    let p = null,
+        m = new Set,
+        h = !1;
+    if (s) {
+        let r = [];
+        c && r.push(`google_drive`), l && r.push(`box`);
+        let s = new Map,
+            f = async c => {
+                let l;
+                try {
+                    l = await i({
+                        query: e,
+                        limit: t,
+                        signal: o,
+                        provider: c
+                    })
+                } catch {
+                    return
+                }
+                l == null || h && (n == null || n.includes(c)) || o?.aborted || (s.set(c, l), m.add(c), p = a(r, s, t), u == null ? d(p) : u(p, {
+                    provider: c,
+                    providerPage: l
+                }))
+            };
+        for (let e of r) f(e)
+    }
+    let g;
+    try {
+        g = await r({
+            query: e,
+            limit: t,
+            providers: n,
+            signal: o
+        })
+    } catch {
+        o?.aborted || f({
+            cachedPage: p,
+            cachedProviders: new Set(m)
+        });
+        return
+    }
+    o?.aborted || (h = !0, d(g))
+}
+var s = e((() => {
+    n()
+}));
+export {
+    r as i, o as n, i as r, s as t
+};
 //# sourceMappingURL=774409ae-jzxtdkyzsecvq84e.js.map

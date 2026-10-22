@@ -1,14 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-
-function t(e, t) {
-    return [`codex`, `gitlab-group-activity`, e, t]
-}
-var n, r = e((() => {
-    n = `/codex/cloud/settings/environments/gitlab/groups`
-}));
-export {
-    t as n, r, n as t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e,t){return[`codex`,`gitlab-group-activity`,e,t]}var n,r=e((()=>{n=`/codex/cloud/settings/environments/gitlab/groups`}));export{t as n,r,n as t};
 //# sourceMappingURL=139cb2d0-igzjge95hvas5us3.js.map

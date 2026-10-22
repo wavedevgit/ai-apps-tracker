@@ -1,0 +1,126 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    fl as n,
+    hl as r,
+    hrt as i,
+    lrt as a,
+    pl as o
+} from "./4813494d-nxpmzchfjvwqts17.js";
+import {
+    Vn as s,
+    wn as c
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Vun as l,
+    dun as u,
+    idn as d,
+    rdn as f,
+    yun as p
+} from "./conversation-small-m08q51xmfe7gjq3d.js";
+import {
+    i as m,
+    n as h
+} from "./5f4d7fa0-lv5dqr39i3rotm55.js";
+import {
+    i as g,
+    r as _
+} from "./ab92372e-iclt8thnn00e7ucs.js";
+import {
+    n as v,
+    t as y
+} from "./4f9f51e5-oiwcyrh9jr63gwza.js";
+
+function b(e) {
+    return e instanceof n && e.type === o.MISSING_GITHUB_CONNECTOR_LINK
+}
+
+function x() {
+    "use forget";
+    let e = (0, D.c)(29),
+        t;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = {
+        redirectAfter: `/codex/cloud`
+    }, e[0] = t) : t = e[0];
+    let {
+        isConnected: n,
+        isLoading: r,
+        error: i
+    } = m(t), o;
+    e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (o = a(`1437685011`), e[1] = o) : o = e[1];
+    let s = o,
+        c = !r && s && !n,
+        u;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (u = {
+        redirectAfter: `/codex/cloud`
+    }, e[2] = u) : u = e[2];
+    let {
+        isConnected: f
+    } = g(u), h = c && f, _ = s && n ? `github` : h ? `gitlab` : void 0, v = !r && (n || h), x;
+    e[3] !== _ || e[4] !== v ? (x = {
+        enabled: v,
+        pageSize: 1,
+        provider: _
+    }, e[3] = _, e[4] = v, e[5] = x) : x = e[5];
+    let {
+        data: A,
+        isLoading: j,
+        error: M
+    } = p(x), {
+        data: N,
+        isLoading: P,
+        error: F
+    } = l(), I = k(E), L = k(T), R = d(w), z = d(C), B = v && j, V = v ? M : null, H;
+    if (e[6] !== A?.pages || e[7] !== V || e[8] !== B || e[9] !== i || e[10] !== N || e[11] !== h || e[12] !== n || e[13] !== r || e[14] !== L || e[15] !== I || e[16] !== F || e[17] !== P) {
+        if (I) H = L;
+        else if (N) H = y.Complete;
+        else {
+            let e = A?.pages.some(S) ?? !1;
+            H = !F && b(V) && !h && !P ? y.NoGithubConnection : (n || h) && !B && V == null && !P ? e ? y.NoTasksCreated : y.NoEnvironmentsCreated : n && !B && !P ? y.NoEnvironmentsCreated : i || V || F ? y.Error : r || B || P ? y.Loading : y.NoGithubConnection
+        }
+        e[6] = A?.pages, e[7] = V, e[8] = B, e[9] = i, e[10] = N, e[11] = h, e[12] = n, e[13] = r, e[14] = L, e[15] = I, e[16] = F, e[17] = P, e[18] = H
+    } else H = e[18];
+    let U;
+    e[19] !== z || e[20] !== H || e[21] !== R ? (U = () => {
+        H !== y.Loading && H !== y.Error && H !== R && z(H)
+    }, e[19] = z, e[20] = H, e[21] = R, e[22] = U) : U = e[22];
+    let W;
+    e[23] !== z || e[24] !== H || e[25] !== R ? (W = [H, R, z], e[23] = z, e[24] = H, e[25] = R, e[26] = W) : W = e[26], (0, O.useEffect)(U, W);
+    let G = H === y.Loading || H === y.Error ? R ?? H : H,
+        K;
+    return e[27] === G ? K = e[28] : (K = {
+        state: G
+    }, e[27] = G, e[28] = K), K
+}
+
+function S(e) {
+    return e.items.length > 0
+}
+
+function C(e) {
+    return e.setCodexOnboardingState
+}
+
+function w(e) {
+    return e.codexOnboardingState
+}
+
+function T(e) {
+    return e.codexOnboardingStateOverride
+}
+
+function E(e) {
+    return e.showDevOnboardingOverrides
+}
+var D, O, k, A = e((() => {
+    D = c(), i(), v(), h(), _(), u(), r(), f(), O = t(s()), k = e => e({
+        showDevOnboardingOverrides: !1,
+        codexOnboardingStateOverride: y.Complete
+    })
+}));
+export {
+    x as n, A as t
+};
+//# sourceMappingURL=ab335e4b-kzjvvoehd1ep90s2.js.map

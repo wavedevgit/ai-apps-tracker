@@ -1,2 +1,96 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{B0 as t,CN as n,Drt as r,Ert as i,K0 as a,LU as o,Ort as s,c7 as c,dC as l,eY as u,fC as d,k8 as f,l7 as p,lY as m,q5 as h,wN as g,zU as _}from"./4813494d-itnrgnth03y1sm9d.js";import{Bn as v,Rn as y,wn as b,zn as x}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Fbt as S,Pbt as C,_L as w,gL as T}from"./conversation-small-i79e9c315w50am5f.js";function E(e){"use forget";let t=(0,D.c)(18),{code:n,messageId:i,clientThreadId:o,disabled:u,className:d,withText:f}=e,p=f!==void 0&&f,v=x(),y=_(),b=h(a),S=m(o),T;t[0]===v?T=t[1]:(T=v.formatMessage({id:`CodeBlockCopyButton.copyCode`,defaultMessage:`Copy code`}),t[0]=v,t[1]=T);let E=T,k;t[2]!==n||t[3]!==b||t[4]!==i||t[5]!==S||t[6]!==y?(k=e=>{let t={"text/plain":n};r.count(s.CODE_BLOCKS,`chatgpt_code_block_copy_button_clicked`),l(t,y,e),!(b||S==null||i==null)&&w({source:`mouse`,type:`copy`,messageId:i,serverThreadId:S,selectedText:n,location:`code-block`,contentType:`code`})},t[2]=n,t[3]=b,t[4]=i,t[5]=S,t[6]=y,t[7]=k):k=t[7];let A=g(k),j=!p,M=p?E:void 0,N=p?`h-9 rounded-lg px-3 whitespace-nowrap`:`size-9 rounded-full px-2`,P=u&&`cursor-not-allowed opacity-50 hover:bg-transparent`,F;t[8]!==d||t[9]!==N||t[10]!==P?(F=c(d,`py-2 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/10`,N,P),t[8]=d,t[9]=N,t[10]=P,t[11]=F):F=t[11];let I;return t[12]!==u||t[13]!==A||t[14]!==j||t[15]!==M||t[16]!==F?(I=(0,O.jsx)(C,{onCopy:A,iconClassName:`icon-md`,disabled:u,iconOnly:j,buttonText:M,className:F}),t[12]=u,t[13]=A,t[14]=j,t[15]=M,t[16]=F,t[17]=I):I=t[17],I}var D,O,k=e((()=>{D=b(),S(),t(),T(),f(),u(),o(),d(),i(),n(),p(),y(),O=v()}));export{k as n,E as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    B0 as t,
+    CN as n,
+    Drt as r,
+    Ert as i,
+    K0 as a,
+    LU as o,
+    Ort as s,
+    c7 as c,
+    dC as l,
+    eY as u,
+    fC as d,
+    k8 as f,
+    l7 as p,
+    lY as m,
+    q5 as h,
+    wN as g,
+    zU as _
+} from "./4813494d-itnrgnth03y1sm9d.js";
+import {
+    Bn as v,
+    Rn as y,
+    wn as b,
+    zn as x
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Fbt as S,
+    Pbt as C,
+    _L as w,
+    gL as T
+} from "./conversation-small-i79e9c315w50am5f.js";
+
+function E(e) {
+    "use forget";
+    let t = (0, D.c)(18),
+        {
+            code: n,
+            messageId: i,
+            clientThreadId: o,
+            disabled: u,
+            className: d,
+            withText: f
+        } = e,
+        p = f !== void 0 && f,
+        v = x(),
+        y = _(),
+        b = h(a),
+        S = m(o),
+        T;
+    t[0] === v ? T = t[1] : (T = v.formatMessage({
+        id: `CodeBlockCopyButton.copyCode`,
+        defaultMessage: `Copy code`
+    }), t[0] = v, t[1] = T);
+    let E = T,
+        k;
+    t[2] !== n || t[3] !== b || t[4] !== i || t[5] !== S || t[6] !== y ? (k = e => {
+        let t = {
+            "text/plain": n
+        };
+        r.count(s.CODE_BLOCKS, `chatgpt_code_block_copy_button_clicked`), l(t, y, e), !(b || S == null || i == null) && w({
+            source: `mouse`,
+            type: `copy`,
+            messageId: i,
+            serverThreadId: S,
+            selectedText: n,
+            location: `code-block`,
+            contentType: `code`
+        })
+    }, t[2] = n, t[3] = b, t[4] = i, t[5] = S, t[6] = y, t[7] = k) : k = t[7];
+    let A = g(k),
+        j = !p,
+        M = p ? E : void 0,
+        N = p ? `h-9 rounded-lg px-3 whitespace-nowrap` : `size-9 rounded-full px-2`,
+        P = u && `cursor-not-allowed opacity-50 hover:bg-transparent`,
+        F;
+    t[8] !== d || t[9] !== N || t[10] !== P ? (F = c(d, `py-2 text-sm font-medium hover:bg-black/5 dark:hover:bg-white/10`, N, P), t[8] = d, t[9] = N, t[10] = P, t[11] = F) : F = t[11];
+    let I;
+    return t[12] !== u || t[13] !== A || t[14] !== j || t[15] !== M || t[16] !== F ? (I = (0, O.jsx)(C, {
+        onCopy: A,
+        iconClassName: `icon-md`,
+        disabled: u,
+        iconOnly: j,
+        buttonText: M,
+        className: F
+    }), t[12] = u, t[13] = A, t[14] = j, t[15] = M, t[16] = F, t[17] = I) : I = t[17], I
+}
+var D, O, k = e((() => {
+    D = b(), S(), t(), T(), f(), u(), o(), d(), i(), n(), p(), y(), O = v()
+}));
+export {
+    k as n, E as t
+};
 //# sourceMappingURL=2ab5aa6c-dz9vfahz8wuftpyq.js.map

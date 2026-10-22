@@ -1,2 +1,2369 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,D6 as r,Drt as i,Ert as a,Hn as o,IU as s,Int as c,J7 as l,Kat as u,LU as d,Ort as f,Pnt as p,Q7 as m,Qat as h,Qy as g,Rz as _,T6 as v,Un as y,V1 as ee,Wrt as b,ZG as x,Znt as S,Zy as te,c7 as C,eE as w,eK as T,ert as E,gct as D,iO as O,jst as ne,l7 as k,lO as re,lrt as ie,mrt as ae,nO as oe,o0 as se,oW as ce,prt as A,q1 as le,sW as ue,urt as de,vct as fe,zz as j}from"./4813494d-itnrgnth03y1sm9d.js";import{At as pe,Bn as me,Ln as he,N as ge,Nn as M,Q as N,Rn as _e,Vn as P,Zt as ve,p as F,rn as ye,s as be,wn as xe,zn as Se}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Bst as Ce,G0t as we,K0t as Te,K6t as Ee,S6t as De,TDn as Oe,W6t as ke,ag as Ae,drn as je,frn as Me,jGn as Ne,k6t as Pe,lrn as Fe,og as I,p6t as Ie,q0t as Le,rg as L,t8t as Re,tg as ze,wDn as Be,y6t as Ve,zst as He}from"./conversation-small-i79e9c315w50am5f.js";import{Gh as Ue,Hm as We,Kh as Ge,Um as Ke,vv as qe,yv as Je}from"./30901919-ikyi1r55w2i02fom.js";import{$c as Ye,$s as Xe,Av as Ze,Cc as Qe,Cd as $e,Ec as et,Fc as tt,Mc as nt,Mm as rt,Nc as it,Qs as R,Sd as at,Tc as ot,bc as st,bf as ct,cc as z,dc as lt,fc as ut,jc as dt,jm as ft,kv as B,lc as pt,mc as mt,mf as ht,pc as gt,qc as _t,uc as vt,wc as yt,xc as bt}from"./c2675c8c-d62p1sdq1sy52umm.js";import{h_ as xt,m_ as V}from"./8b34dbc2-m4883pai3e8fx8q6.js";import{r as St,t as Ct}from"./53a75fa3-bklxa5k9lzwvemyo.js";import{n as wt,t as Tt}from"./0453f9ca-jt1b3vkjrzhbofva.js";import{n as Et,t as H}from"./dc59de7a-j52tgczvvxbfm50r.js";import{i as U,r as Dt,t as W}from"./cedb005c-nmxozkzj1omwnokh.js";import{i as Ot,r as kt,t as At}from"./730b64e6-oj446hp6vt40fefu.js";import{n as jt,t as Mt}from"./37b207d4-veub4z755g2t3ww0.js";import{c as Nt,o as Pt,r as Ft,s as It,t as Lt}from"./1212b029-ngzpll0lwwfu80de.js";function Rt({context:e,emit:t}){let n=e,r=!1,i=!1,a=0,o=!1,s=!1,c=()=>{r&&!i&&a===0&&!o&&!s&&n.isPaidBusiness&&n.canInvite&&((n.availableDefaultSeatCount??0)>0||(n.availableProliteSeatCount??0)>0)&&(i=!0,t(n))};return{updateContext(e){r||(n=e)},startAction(){a+=1;let e=!1;return(t=!0)=>{e||(e=!0,--a,s||=!t,c())}},recordResult(e,t){o||=e>0,s||=!t,c()},exit(){r=!0,c()}}}var G=e((()=>{}));function zt({affectedTargetCount:e,successfulTargetCount:t,alreadyMemberCount:n=0}){let r={failedTargetCount:Math.max(0,e-t-n),successfulTargetCount:t};return t+n>0?{...r,step:`action_succeeded`}:{...r,actionFailureType:`mutation_failed`,step:`action_failed`}}function Bt(e){let t=0,n=0;return e.forEach(({seatType:e})=>{if(e!==`usage_based`){t+=1;return}n+=1}),{numSubmittedInvites:e.length,defaultSeatInvites:t,usageBasedSeatInvites:n}}function Vt(e){p.logStructuredEvent(`ChatgptWorkspaceInviteFlowDroppedOff`,{dropoffType:e})}function Ht(e){let t={default:0,prolite:0,usage_based:0};for(let{seatType:n}of e)t[n]+=1;return t}function Ut(e){return e.isOwnerOfAccount()?`workspace_owner`:e.isAdminOfAccount()?`workspace_admin`:e.data.role===D.ANALYTICS_VIEWER?`workspace_analytics_viewer`:`workspace_member`}function Wt(e,t){let n=e=>t==null?void 0:z(t,e)??void 0;return{isPaidBusiness:e.isSelfServeBusiness()&&e.hasPaidSubscription()&&e.data.subscriptionStatus.trial?.isTrialing!==!0,canInvite:e.canInviteMembers(),availableDefaultSeatCount:n(`default`),availableProliteSeatCount:n(`prolite`)}}function Gt(e){let t={workspace_owner:`CHATGPT_WORKSPACE_INVITE_FLOW_ACTOR_ROLE_WORKSPACE_OWNER`,workspace_admin:`CHATGPT_WORKSPACE_INVITE_FLOW_ACTOR_ROLE_WORKSPACE_ADMIN`,workspace_member:`CHATGPT_WORKSPACE_INVITE_FLOW_ACTOR_ROLE_WORKSPACE_MEMBER`,workspace_analytics_viewer:`CHATGPT_WORKSPACE_INVITE_FLOW_ACTOR_ROLE_WORKSPACE_ANALYTICS_VIEWER`};return Rt({context:Wt(e),emit(n){ee()?.id!==e.id||ie().getContext().user.customIDs?.workspace_id!==e.id||p.logStructuredEvent(`ChatgptWorkspaceInviteAbandonedWithPaidSeat`,{actorRole:t[Ut(e)],availableDefaultSeatCount:E(n.availableDefaultSeatCount),availableProliteSeatCount:E(n.availableProliteSeatCount)})}})}var Kt=e((()=>{fe(),mt(),le(),A(),S(),G(),c()}));function qt(e){return e.trim().toLowerCase()}function Jt(e,t){if(t==null)return e;let n=new Set,r=[];for(let i of e){if(r.length>=t)break;let e=qt(i.email);n.has(e)||(n.add(e),r.push(i))}return r}function Yt(e){let t=new Set;return e.filter(({value:e})=>{let n=qt(e);return t.has(n)?!1:(t.add(n),!0)})}function Xt(e){let t=e.trim();if(!y.test(t))return null;let[,n=``]=t.split(`@`);return n.toLowerCase()||null}function Zt({email:e,index:t,emailInputList:n,inviteDomain:r,shouldCheckDomainMismatch:i}){let a=e.trim(),o=a.length>0&&!y.test(a),s=r?.toLowerCase()??null,c=Xt(a),l=a.length>0&&!o&&i&&s!=null&&c!=null&&c!==s,u=qt(a);return{hasMismatchedDomain:l,isDuplicate:u.length>0&&!o&&!l&&n.some((e,n)=>n<t&&qt(e)===u),isInvalid:o}}var Qt=e((()=>{o()}));function $t({subscription:e,workspaceSeatTypeCounts:t,paidStandardSeatCapacity:n,paidPremiumSeatCapacity:r}){return{availableStandardSeats:Math.max(0,e==null?0:z(e,`default`)??n-(t?.seat_type_counts?.default??0)),availablePremiumSeats:Math.max(0,e==null?0:z(e,`prolite`)??r-(t?.seat_type_counts?.prolite??0))}}function en({defaultInviteSeatTypeOverride:e,workspaceDefaultSeatType:t,isUsageBasedSeatEnabled:n,isPremiumSeatEnabled:r=!1,availablePaidSeatCounts:i}){let a=!n&&!r&&i==null?Lt:It(e??t,{includeUsageBased:n,includeProlite:r,preserveProlite:i!=null});if(i==null)return a;let o=a===`prolite`?`prolite`:`default`,s=o==="default"?`prolite`:`default`;return i[o]>0||i[s]<=0?o:s}function tn({rows:e,defaultInviteSeatType:t,availablePaidSeatCounts:n}){if(n==null)return[...e];let r=t===`prolite`?`prolite`:`default`,i=[r,r==="default"?`prolite`:`default`],a={default:0,prolite:0};return e.map(e=>{let t=e.seatType==="default"||e.seatType===`prolite`?e.seatType:null,r=t!=null&&a[t]<n[t]?t:i.find(e=>a[e]<n[e]);return r==null?e:(a[r]+=1,e.seatType===r?e:{...e,seatType:r})})}function nn({rows:e,currentSeatType:t,availablePaidSeatCounts:n}){if(n==null)return[];let r=e.reduce((e,t)=>((t.seatType==="default"||t.seatType===`prolite`)&&(e[t.seatType]+=1),e),{default:0,prolite:0});return[`default`,`prolite`].filter(e=>r[e]-+(e===t)>=n[e])}function rn({paidInviteEmails:e,availableSeats:t,existingActivePaidMemberEmails:n,existingPendingPaidInviteEmails:r}){let i=new Set([...n,...r].map(e=>e.trim().toLowerCase())),a=e.filter(e=>!i.has(e)).length;return a===0?0:Math.max(0,a-t)}function an({rows:e,showSeatTypeColumn:t,includeUsageBasedSeatType:n,includePremiumSeatType:r,defaultInviteSeatType:i,seatTypeToCount:a,maxInvites:o}){let s=new Set;return e.slice(0,o??1/0).forEach(e=>{let o=e.email.trim().toLowerCase();(t?It(e.seatType,{includeUsageBased:n,includeProlite:r}):i)!==a||o.length===0||s.add(o)}),[...s]}function on({rows:e,showSeatTypeColumn:t,includeUsageBasedSeatType:n,includePremiumSeatType:r,defaultInviteSeatType:i,maxInvites:a,subscription:o,workspaceSeatTypeCounts:s,hasPremiumSeats:c,hasActiveBusinessFreeTrial:l,isImmediateInvoiceRolloutEnabled:u,isBusinessPremiumSeatPurchaseReviewEnabled:d,existingActiveStandardMemberEmails:f,existingPendingStandardInviteEmails:p,existingActivePremiumMemberEmails:m,existingPendingPremiumInviteEmails:h}){let g=o!=null&&d?lt(o,`default`,c?0:o.seats_entitled):o?.seats_entitled??0,_=o!=null&&d?lt(o,`prolite`):0,v=!l&&o!=null&&s!=null,{availableStandardSeats:y,availablePremiumSeats:ee}=$t({subscription:o,workspaceSeatTypeCounts:s,paidStandardSeatCapacity:g,paidPremiumSeatCapacity:_}),b=u&&v?rn({paidInviteEmails:an({rows:e,showSeatTypeColumn:t,includeUsageBasedSeatType:n,includePremiumSeatType:r,defaultInviteSeatType:i,seatTypeToCount:`default`,maxInvites:a}),availableSeats:y,existingActivePaidMemberEmails:f,existingPendingPaidInviteEmails:p}):0,x=u&&d&&v?rn({paidInviteEmails:an({rows:e,showSeatTypeColumn:t,includeUsageBasedSeatType:n,includePremiumSeatType:r,defaultInviteSeatType:i,seatTypeToCount:`prolite`,maxInvites:a}),availableSeats:ee,existingActivePaidMemberEmails:m,existingPendingPaidInviteEmails:h}):0;return{paidStandardSeatCapacity:g,paidPremiumSeatCapacity:_,standardSeatCapacityShortfall:b,premiumSeatCapacityShortfall:x,totalSeatCapacityShortfall:b+x}}function sn({subscription:e,capacityShortfallSeatCounts:t}){if(e==null)return null;let n=ut(e),r=n.removals.standard,i=n.removals.premium,a=Math.min(r,t.standard),o=Math.min(i,t.premium),s=t.premium-o,c=n.downgrades.reduce((e,t)=>t.fromSeatType===`premium`&&t.toSeatType===`standard`?e+t.quantity:e,0),l=Math.min(c,s);return a+o===0&&l===0?null:{scheduledDowngradeCount:l,scheduledRemovalSeatCounts:{standard:a,premium:o}}}var cn=e((()=>{mt(),Pt()}));function ln({rows:e,defaultInviteRole:t,defaultInviteSeatType:n,includePremiumSeatType:r,includeUsageBasedSeatType:i,maxInvites:a,showRoleColumn:o,showSeatTypeColumn:s,availablePaidSeatCounts:c}){return e.map(e=>({email:e.email.trim(),role:o?e.role:t,seatType:s||c!=null?It(e.seatType,{includeUsageBased:i,includeProlite:r,preserveProlite:c!=null}):n})).filter(e=>e.email.length>0).slice(0,a??1/0)}function un({rows:e,workspace:t}){let n=Ht(e);return W({action:`send_invitations`,actorRole:t.isOwnerOfAccount()?`workspace_owner`:`workspace_admin`,surface:`admin_invite_modal`,affectedTargetCount:e.length,targetScope:e.length===1?`individual`:`bulk`,requestedSeatCounts:n})}function dn(e,t){return t==null?e:e.slice(0,t)}function fn(e){return e.trim().toLowerCase()}function pn(e,t,{availablePaidSeatCounts:n,defaultRole:r,defaultSeatType:i}){let a=new Map(t.map(e=>[fn(e.email),e]));return tn({rows:e.map(e=>{let t=a.get(fn(e.value));return An({email:e.value,role:t?.role??r,seatType:t?.seatType??i})}),defaultInviteSeatType:i,availablePaidSeatCounts:n})}function mn(e){return e.filter(e=>e.email.trim().length>0).length}function hn(e){return e.email.trim().length>0}function gn(e){let t=new Set,n=[];return e.forEach(e=>{if(!hn(e))return;let r=e.email.trim().toLowerCase();!r||t.has(r)||(t.add(r),n.push(r))}),n}function _n({rows:e,seatsInUse:t,seatsEntitled:n,existingActiveMemberEmails:r=Z,existingPendingInviteEmails:i,hasActiveBusinessFreeTrial:a}){if(!a||t==null||n==null||n>kn)return{isOverFreeTrialInviteLimit:!1,projectedTrialSeats:Math.max(0,t??0)};let o=new Set(i.map(e=>e.trim().toLowerCase())),s=new Set(r.map(e=>e.trim().toLowerCase())),c=gn(e).filter(e=>!o.has(e)&&!s.has(e)).length,l=Math.max(0,t)+Math.max(0,i.length)+c;return{isOverFreeTrialInviteLimit:l>kn,projectedTrialSeats:l}}function vn(e){let t=e.isOwnerOfAccount();return{showRoleColumn:!e.isFreeWorkspace()&&t,showSeatTypeColumn:t&&(jt(e.data)||rt(e.id))}}function yn(e){"use forget";let t=(0,Dn.c)(2),n;return t[0]===e?n=t[1]:(n=(0,Y.jsx)(bn,{...e},e.workspace.id),t[0]=e,t[1]=n),n}function bn({workspace:e,onCancel:t,cancelButtonText:r,onSuccess:i,fullWidthButtons:a=!1,showCancelButton:o=!0,csvButtonAlignedWithPrimary:s=!1,contentClassName:c,initialEmails:l,defaultInviteSeatType:u,showRoleColumn:d,showSeatTypeColumn:f,inviteLayout:p=`table`,initialEmptyRowCount:m=1,maxInvites:h=null,availablePaidSeatCounts:g,emptyStatePrimaryButtonText:v,onEmptySubmit:y,enableImmediateInvoiceSeatPurchase:ee=!1,onImmediateInvoiceStepChange:b,onImmediateInvoiceUpdatingChange:x}){"use no forget";let[S]=(0,J.useState)(()=>Gt(e)),te=(0,J.useRef)(!1);(0,J.useEffect)(()=>{te.current=!0;let e=e=>{e.persisted||S.exit()};return window.addEventListener(`pagehide`,e),()=>{te.current=!1,window.removeEventListener(`pagehide`,e),queueMicrotask(()=>{te.current||S.exit()})}},[S]);let w=jn(l),{showRoleColumn:E,showSeatTypeColumn:D}=vn(e),O=d??E,ne=f??D,k=jt(e.data),re=rt(e.id),{data:ie,isLoading:ae}=T(e.id),oe=e.isK12(),se=I(e.id,oe),ce=en({defaultInviteSeatTypeOverride:u,workspaceDefaultSeatType:ie?.default_seat_type,isUsageBasedSeatEnabled:k,isPremiumSeatEnabled:re,availablePaidSeatCounts:g}),A=oe?se:void 0,le=e.isFreeWorkspace()||oe&&!!se,ue=(0,J.useCallback)(()=>{Vt(Be.CHATGPT_WORKSPACE_INVITE_FLOW_DROPOFF_TYPE_CANCEL),t()},[t]);return ae?(0,Y.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,Y.jsx)(`div`,{className:C(`flex min-h-48 items-center justify-center`,c),children:(0,Y.jsx)(_,{className:`icon-lg text-token-text-tertiary`})}),o?(0,Y.jsx)(`div`,{className:C(`flex w-full flex-shrink-0 flex-col gap-2`,s?`mt-0`:`mt-8`),children:(0,Y.jsx)(n,{color:`ghost`,size:a?`large`:`medium`,onClick:ue,children:r})}):null]}):(0,Y.jsx)(xn,{inviteFlowAnalytics:S,onCancel:ue,cancelButtonText:r,fullWidthButtons:a,showCancelButton:o,csvButtonAlignedWithPrimary:s,contentClassName:c,workspace:e,onSuccess:i,initialEmails:w,k12InviteDomain:se,maxInvites:h,availablePaidSeatCounts:g,showRoleColumn:O,showSeatTypeColumn:ne,includeUsageBasedSeatType:k&&g==null,includePremiumSeatType:re,defaultInviteSeatType:ce,shouldCheckDomainMismatch:le,allowedDomain:A,inviteLayout:p,initialEmptyRowCount:m,emptyStatePrimaryButtonText:v,onEmptySubmit:y,enableImmediateInvoiceSeatPurchase:ee,onImmediateInvoiceStepChange:b,onImmediateInvoiceUpdatingChange:x})}function xn({inviteFlowAnalytics:e,onCancel:t,cancelButtonText:a,fullWidthButtons:o,showCancelButton:c,csvButtonAlignedWithPrimary:l,contentClassName:u,workspace:d,onSuccess:p,initialEmails:m,k12InviteDomain:h,maxInvites:g,availablePaidSeatCounts:_,showRoleColumn:v,showSeatTypeColumn:x,includeUsageBasedSeatType:S,includePremiumSeatType:w,defaultInviteSeatType:T,shouldCheckDomainMismatch:E,allowedDomain:D,inviteLayout:O,initialEmptyRowCount:ne,emptyStatePrimaryButtonText:k,onEmptySubmit:re,enableImmediateInvoiceSeatPurchase:ie,onImmediateInvoiceStepChange:ae,onImmediateInvoiceUpdatingChange:oe}){"use no forget";let{search:se}=pe(),ce=Mn({workspace:d,inviteFlowAnalytics:e,onSuccess:p,k12InviteDomain:h,initialEmails:m,maxInvites:g,availablePaidSeatCounts:_,showRoleColumn:v,showSeatTypeColumn:x,includeUsageBasedSeatType:S,includePremiumSeatType:w,defaultInviteSeatType:T}),A=Se(),le=s(),[de,fe]=(0,J.useState)(!1),[j,me]=(0,J.useState)(null),he=(0,J.useRef)(null),N=(0,J.useCallback)((e=!0)=>{he.current?.(e),he.current=null},[]);(0,J.useEffect)(()=>()=>{N(!1)},[N]);let{clearState:_e,emailTableRows:P,emailTextAreaValue:ve,emailsOutsideOfDomain:F,fileInputRef:ye,handleClickImportCSV:be,handleDeleteRow:xe,handleInputChange:Ce,handleSubmit:we,handleUploadCSV:Te,hasUploadedCsv:Ee,isInviting:De,setEmailTableRows:Oe,setEmailTextAreaValue:Ae,trackNavigationClick:Ne,defaultInviteRole:Fe,INVITE_ROLES:I}=ce,Ie=ge(),Le=mn(P),L=ie&&d.isOwnerOfAccount()&&d.isSelfServeBusiness()&&d.hasPaidSubscription()&&d.data.subscriptionStatus.trial?.isTrialing!==!0&&nt(d.id),ze=L&&rt(d.id),{billingPageConfigsQuery:Be,planManagementConfig:He,isError:Ue,isLoading:We}=Re({activeWorkspaceId:d.id,enabled:L}),qe=ke(He)?.can_change_paid_seat_quantity===!0,Ze=Be.data?.invite_prepurchase,Qe=Ze?.workspace_id===d.id&&Ze.skip_invite_prepurchase,tt=L&&!Qe&&qe,{data:R,isLoading:at}=Pe(),ot=Xe(R),{country:ct}=Me(),{billingDetails:z,status:ut}=je({country:ct,currentAccount:d,enabled:tt,location:`AdminInviteFlow.immediateInvoice`,pricingPlanIsTypeBusiness:!0}),dt=ot==null?ct:ot.countryCode,ft=ot?.billingCurrency??z?.currency,mt=r({countryCode:dt,currency:ft,enabled:L&&qe&&z!=null}),{data:_t,isError:xt,isLoading:St}=mt,Ct=ot==null||_t==null?null:it(_t,ot);(0,J.useEffect)(()=>{Ct!=null&&i.count(f.TEAMS,`business_manage_seats_checkout_pricing_identity_match`,{entry_point:`admin_invite`,matches_subscription_pricing_identity:String(Ct)})},[Ct]);let wt=_t,Et=[`checkout-pricing-config`,dt??null,ft??null],{data:H,isLoading:Dt}=yt(d.isSelfServeBusiness()?d.id:void 0),W=bt(H),Ot=H!=null&&st(H)>=W,jt=R!=null&&(lt(R,`prolite`)>0||(H?.seat_type_counts?.prolite??0)>0),{data:Mt,isLoading:Pt}=Ye(d.id,0,``),{data:Rt}=$e(d.isSelfServeBusiness()?At:``),G=L&&(!jt||ze)?pt({accountId:d.id,checkoutPricingConfig:wt,isSciAccount:!1,isSeatTypeCountsLoading:Dt,seatTypeCounts:H,showPremiumSeats:ze,subscription:R}):null,zt=L&&(St||xt||G==null),Bt=d.isSelfServeBusiness()&&kt(Rt),{data:Vt,isLoading:Ht}=Ve(Bt||L?d.id:void 0,0,``,100),Ut=(Mt?.items??[]).map(e=>e.email_address).filter(e=>!!e),Gt=(Vt?.items??[]).map(e=>e.email).filter(e=>!!e),Kt=(Vt?.items??[]).filter(e=>It(e.seat_type,{includeProlite:!0})===Lt).map(e=>e.email).filter(e=>!!e),qt=(Mt?.items??[]).filter(e=>It(e.seat_type,{includeProlite:!0})===Lt).map(e=>e.email_address).filter(e=>!!e),Jt=(Vt?.items??[]).filter(e=>It(e.seat_type,{includeProlite:!0})===`prolite`).map(e=>e.email).filter(e=>!!e),Xt=(Mt?.items??[]).filter(e=>It(e.seat_type,{includeProlite:!0})===`prolite`).map(e=>e.email_address).filter(e=>!!e),Zt=P.slice(0,g??1/0).some(e=>{let t=e.email.trim();return t.length>0&&!y.test(t)}),{isOverFreeTrialInviteLimit:Qt}=_n({rows:P,seatsInUse:R?.seats_in_use,seatsEntitled:R?.seats_entitled,existingActiveMemberEmails:Gt,existingPendingInviteEmails:Ut,hasActiveBusinessFreeTrial:Bt}),{paidStandardSeatCapacity:en,paidPremiumSeatCapacity:rn,standardSeatCapacityShortfall:an,premiumSeatCapacityShortfall:cn,totalSeatCapacityShortfall:fn}=on({rows:P,showSeatTypeColumn:x||_!=null,includeUsageBasedSeatType:S,includePremiumSeatType:w||_!=null,defaultInviteSeatType:T,maxInvites:g,subscription:R,workspaceSeatTypeCounts:H,hasPremiumSeats:jt,hasActiveBusinessFreeTrial:Bt,isImmediateInvoiceRolloutEnabled:L,isBusinessPremiumSeatPurchaseReviewEnabled:ze,existingActiveStandardMemberEmails:Kt,existingPendingStandardInviteEmails:qt,existingActivePremiumMemberEmails:Jt,existingPendingPremiumInviteEmails:Xt}),{availableStandardSeats:hn,availablePremiumSeats:gn}=$t({subscription:R,workspaceSeatTypeCounts:H,paidStandardSeatCapacity:en,paidPremiumSeatCapacity:rn});(0,J.useEffect)(()=>{ee()?.id===d.id&&e.updateContext(Wt(d,R))},[e,R,d]);let vn=R==null?null:gt(R,`default`,en)+gt(R,`prolite`,rn),yn=H!=null&&vn!=null&&vn>=W,bn=at||Dt||Ht||Pt||R==null||H==null||Vt==null||Mt==null,xn=L&&!Qe&&!Bt&&(qe||He==null&&(We||Ue)),Cn={standard:an,premium:cn},wn=G==null?null:{standard:en,premium:rn},Tn=G==null||R==null?null:{standard:gt(R,`default`,en),premium:gt(R,`prolite`,rn)},K=Tn==null||R==null?null:vt({capacityShortfallSeatCounts:Cn,initialRenewalSeatCounts:Tn,subscription:R}),q=sn({subscription:R,capacityShortfallSeatCounts:Cn}),En=q?.scheduledRemovalSeatCounts.standard??0,Dn=q?.scheduledRemovalSeatCounts.premium??0,On=q?.scheduledDowngradeCount??0,X=En+Dn,kn=X+On,Z=En===Cn.standard&&Dn+On===Cn.premium,jn=On===0||Tn!=null&&K!=null&&K.standard+On===Tn.standard+Cn.standard,Pn=xn&&fn>0,Fn=Pn&&(Ue||ut===`error`||xt),In=K==null?null:K.standard+K.premium,Ln=In!=null&&In>=W,Rn=In!=null&&In>W,zn=d.isAdminOfAccount()||d.isOwnerOfAccount(),Bn=Pn,Vn=Bn&&Ln,Hn=q!=null&&Z&&jn&&!Rn&&!Fn,Un=Bn?(0,Y.jsxs)(`div`,{className:`border-token-border-status-warning bg-token-bg-status-warning text-token-text-status-warning flex w-full items-center gap-5 rounded-[20px] border px-6 py-4 shadow-[0_1px_6px_rgba(0,0,0,0.06)]`,children:[(0,Y.jsx)(ue,{className:`size-6 shrink-0`}),(0,Y.jsxs)(`div`,{className:`flex min-w-0 flex-1 flex-col gap-0.5`,children:[(0,Y.jsx)(`div`,{className:`text-sm leading-5 font-semibold`,children:Hn?X>0&&q.scheduledDowngradeCount>0?(0,Y.jsx)(M,{...Q.scheduledSeatChangesCanceledWarningTitle,values:{scheduledSeatChangeCount:kn}}):X>0?(0,Y.jsx)(M,{...Q.scheduledSeatRemovalCanceledWarningTitle,values:{scheduledRemovalCount:X}}):(0,Y.jsx)(M,{...Q.scheduledSeatDowngradeCanceledWarningTitle,values:{scheduledDowngradeCount:q.scheduledDowngradeCount}}):(0,Y.jsx)(M,{...Q.additionalPaidSeatsNeededWarningTitle,values:{count:fn}})}),(0,Y.jsxs)(`div`,{className:`text-sm leading-5`,children:[Rn?(0,Y.jsx)(M,{...Q.additionalPaidSeatsExceedMaximumWarningBody,values:{maxSeats:W}}):Fn?(0,Y.jsx)(M,{...Q.additionalPaidSeatsBillingUnavailableWarningBody}):Hn?X>0&&q.scheduledDowngradeCount>0?(0,Y.jsx)(M,{...Q.scheduledSeatChangesCanceledWarningBody,values:{scheduledDowngradeCount:q.scheduledDowngradeCount,scheduledRemovalCount:X}}):En>0&&Dn>0?(0,Y.jsx)(M,{...Q.scheduledMultiTierSeatRemovalCanceledWarningBody,values:{scheduledRemovalCount:X}}):En>0?(0,Y.jsx)(M,{...Q.scheduledStandardSeatRemovalCanceledWarningBody,values:{scheduledRemovalCount:X}}):Dn>0?(0,Y.jsx)(M,{...Q.scheduledPremiumSeatRemovalCanceledWarningBody,values:{scheduledRemovalCount:X}}):(0,Y.jsx)(M,{...Q.scheduledSeatDowngradeCanceledWarningBody,values:{scheduledDowngradeCount:q.scheduledDowngradeCount}}):(0,Y.jsx)(M,{...Le===1?Q.additionalPaidSeatsNeededForSingleInviteWarningBody:Q.additionalPaidSeatsNeededWarningBody,values:{count:fn}}),Ln&&(0,Y.jsx)(ht,{className:`mt-1`,maximumSeats:W,seatCount:In??0,variant:`inline`})]})]}),Fn&&!Rn&&(0,Y.jsx)(n,{color:`secondary`,loading:Be.isFetching||mt.isFetching||Ie.isFetching({queryKey:Et})>0,size:`small`,type:`button`,onClick:()=>{Ue&&Be.refetch(),ut===`error`&&Ie.invalidateQueries({queryKey:Et}),xt&&mt.refetch()},children:(0,Y.jsx)(M,{...Q.retrySeatPurchaseBillingButton})})]}):null,Wn=(Ot||yn)&&!Vn?(0,Y.jsx)(ht,{maximumSeats:W,seatCount:Math.max(st(H),vn??0)}):null,Gn=Qt?(0,Y.jsxs)(`div`,{className:`border-token-border-light bg-token-main-surface-primary flex w-full items-center gap-5 rounded-[20px] border px-6 py-4 shadow-[0_1px_6px_rgba(0,0,0,0.06)]`,children:[(0,Y.jsx)(ue,{className:`text-token-text-secondary size-6 shrink-0`}),(0,Y.jsxs)(`div`,{className:`flex min-w-0 flex-1 flex-col gap-0.5`,children:[(0,Y.jsx)(`div`,{className:`text-token-text-primary text-sm leading-5 font-semibold`,children:(0,Y.jsx)(M,{...Q.freeTrialInviteLimitWarningTitle})}),(0,Y.jsx)(`div`,{className:C(`text-token-text-secondary text-sm leading-5`,!zn&&`max-w-[500px]`),children:zn?(0,Y.jsx)(M,{...Q.freeTrialInviteLimitWarning}):(0,Y.jsx)(M,{...Q.freeTrialInviteLimitWarningAskAdmin})})]}),zn&&(0,Y.jsx)(`a`,{href:b(`/admin/billing`,se),className:`bg-token-text-primary text-token-main-surface-primary inline-flex h-9 shrink-0 items-center justify-center rounded-full px-4 text-sm font-semibold hover:opacity-90`,children:(0,Y.jsx)(M,{...Q.upgradeButton})})]}):null,Kn=re!=null&&Le===0,$=O===`stacked`,qn=!v&&!x?`w-[calc(100%-3rem)]`:v===x?`w-[56%]`:`w-[68%]`;(0,J.useEffect)(()=>{de||P.length>0||Oe(tn({rows:Array.from({length:g==null?ne:Math.min(ne,g)},()=>An({role:Fe,seatType:T})),defaultInviteSeatType:T,availablePaidSeatCounts:_}))},[_,Fe,T,P.length,ne,de,g,Oe]);let Jn=(0,Y.jsx)(te,{label:A.formatMessage(Q.importCSVTooltip),contentClassName:`w-[280px]`,side:`top`,delayDuration:200,children:(0,Y.jsx)(n,{color:l?`ghost`:`secondary`,className:C($&&`h-11 rounded-full border-0 bg-transparent! px-5 text-[14px] font-normal text-[#5D5D5D] shadow-none hover:bg-[#F7F7F7]! dark:bg-transparent! dark:text-white/70 dark:hover:bg-white/6!`),icon:Ke,iconClassName:C($&&`text-[#5D5D5D] dark:text-white/70`),onClick:be,children:(0,Y.jsx)(M,{...Ee?Q.reimportCSVButton:Q.importCSVButton})})}),Yn=e=>{let t=g==null?e.filter((e,t,n)=>n.findIndex(t=>t.value===e.value)===t):Yt(e);g!=null&&t.length>g&&le.warning(A.formatMessage(Q.inviteLimitWarning,{maxInvites:g}),{duration:5,id:`admin_invite_limit`});let n=dn(t,g);Ae(n),Oe(e=>pn(n,e,{availablePaidSeatCounts:_,defaultRole:Fe,defaultSeatType:T}))},Xn=()=>c?(0,Y.jsx)(n,{color:`ghost`,size:o?`large`:`medium`,onClick:()=>{_e(),t(),Ne({buttonType:`Skip`})},children:a}):null,Zn=()=>{if(!R||R.active_until==null||z==null||zt||G==null||wn==null||Tn==null||K==null)return;let e=un({rows:ln({availablePaidSeatCounts:_,rows:P,defaultInviteRole:Fe,defaultInviteSeatType:T,includePremiumSeatType:w,includeUsageBasedSeatType:S,maxInvites:g,showRoleColumn:v,showSeatTypeColumn:x}),workspace:d}),t={default:Math.max(0,K.standard-wn.standard),prolite:Math.max(0,K.premium-wn.premium)};U(e,{step:`action_initiated`}),U(e,{step:`capacity_evaluated`,capacityResult:t.default+t.prolite>0?`purchase_required`:`capacity_change_required`,availablePaidSeatCounts:{default:hn,prolite:gn},additionalPaidSeatCounts:t,billingInterval:G.billingPeriod}),me({analyticsFlow:e,currentPaidSeatCounts:wn,initialRenewalSeatCounts:Tn,updatedSeatCounts:K}),ae?.(!0,!0)},Qn=e=>(0,Y.jsx)(n,{className:C(e,o&&!$&&`w-full`,$&&`mx-auto w-full max-w-[400px]`),color:`primary`,size:o?`large`:`medium`,loading:De,disabled:De||!Kn&&Le===0||F.length>0||Qt||xn&&bn||Pn&&(We||Ue||Zt||z==null||R?.active_until==null||Rn||zt),onClick:()=>{if(Kn){re?.(),Ne({buttonType:`Send`});return}if(!et({accountId:d.id,currentAccount:d,subscription:R,wouldChangePaidCapacity:L&&!Qe&&!bn&&fn>0})){if(Pn)Zn();else{let e=un({rows:ln({availablePaidSeatCounts:_,rows:P,defaultInviteRole:Fe,defaultInviteSeatType:T,includePremiumSeatType:w,includeUsageBasedSeatType:S,maxInvites:g,showRoleColumn:v,showSeatTypeColumn:x}),workspace:d});U(e,{step:`action_initiated`}),xn&&U(e,{step:`capacity_evaluated`,capacityResult:`seat_available`,availablePaidSeatCounts:{default:hn,prolite:gn},paymentRequired:!1}),we(e,xn)}Ne({buttonType:`Send`})}},children:Kn?k??A.formatMessage(Q.inviteMemberInviteSubmitButton):A.formatMessage(De?Q.inviteMemberInviteSubmitButtonLoading:Pn?Q.inviteMemberContinueButton:Q.inviteMemberInviteSubmitButton)});if(j!=null&&R!=null&&R.active_until!=null&&z!=null)return G==null?null:(0,Y.jsx)(Tt,{embedded:!0,accountId:d.id,analyticsFlow:j.analyticsFlow,billingPeriod:G.billingPeriod,confirmChangesButtonMessage:Q.inviteMemberUpdateSeatsAndSendInvitesButton,confirmPurchaseButtonMessage:Q.inviteMemberPurchaseSeatsAndSendInvitesButton,currency:G.currency,currentPaidSeatCounts:j.currentPaidSeatCounts,initialRenewalSeatCounts:j.initialRenewalSeatCounts,initialSeatCounts:j.currentPaidSeatCounts,maxSeats:W,nextBillingDate:G.nextBillingDate,onBack:()=>{},onBeforeInitialSubmit:()=>{he.current??=e.startAction()},onClose:()=>{N(),me(null),ae?.(!1)},onComplete:async e=>{e&&await we(j.analyticsFlow,!0,!0),N()},onUpdatingChange:oe,premiumSeatMonthlyPrice:G.premiumSeatMonthlyPrice,showPremiumSeats:ze,standardSeatMonthlyPrice:G.standardSeatMonthlyPrice,updatedSeatCounts:j.updatedSeatCounts});if(de)return(0,Y.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,Y.jsxs)(`div`,{className:C(`flex flex-col gap-4`,u),children:[(0,Y.jsx)(`input`,{ref:ye,type:`file`,accept:`.csv,text/csv`,id:`upload-csv`,className:`hidden`,onChange:e=>{(async()=>{await Te(e)&&fe(!0)})()}}),F.length>0&&(0,Y.jsx)(`div`,{className:`flex w-full items-center bg-red-100 p-4`,children:(0,Y.jsxs)(`div`,{className:`grow text-red-700`,children:[(0,Y.jsx)(M,{...Q.prohibitedExternalEmailDescription}),(0,Y.jsx)(`pre`,{className:`my-1`,children:F.join(`, `)}),(0,Y.jsx)(M,{...Q.prohibitedExternalEmailResolution})]})}),Gn,Un,Wn,(0,Y.jsx)(`label`,{htmlFor:`add-member-emails`,id:`add-emails-label`,className:`sr-only`,children:(0,Y.jsx)(M,{...Q.addEmailsFieldName})}),!l&&(0,Y.jsx)(`div`,{className:`flex w-full items-center justify-end`,children:Jn}),(0,Y.jsx)(Sn,{value:ve,onChange:Yn})]}),(0,Y.jsx)(`div`,{className:C(`flex w-full flex-shrink-0 flex-col gap-2`,l?`mt-0`:`mt-8`),children:l?(0,Y.jsxs)(Y.Fragment,{children:[(0,Y.jsxs)(`div`,{className:C(`flex w-full gap-2`,o?`flex-col`:`items-center justify-between`),children:[(0,Y.jsx)(`div`,{className:C(o?`w-full`:`flex-shrink-0`),children:Jn}),(0,Y.jsx)(`div`,{className:C(o?`w-full`:`flex-shrink-0`),children:Qn()})]}),Xn()]}):(0,Y.jsxs)(Y.Fragment,{children:[Qn(),Xn()]})})]});let $n=(0,Y.jsx)(`div`,{className:`mx-auto flex w-full max-w-[400px] flex-col gap-3.5`,children:P.map((e,t)=>(0,Y.jsx)(Nn,{email:e.email,index:t,emailInputList:P.map(({email:e})=>e),onEmailChange:e=>Ce(t,`email`,e),shouldCheckDomainMismatch:E,allowedDomain:D,layout:`stacked`},t))});return(0,Y.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,Y.jsxs)(`div`,{className:C(`flex flex-col gap-4`,u),children:[(0,Y.jsx)(`input`,{ref:ye,type:`file`,accept:`.csv,text/csv`,id:`upload-csv`,className:`hidden`,onChange:e=>{(async()=>{await Te(e)&&fe(!0)})()}}),F.length>0&&(0,Y.jsx)(`div`,{className:`flex w-full items-center bg-red-100 p-4`,children:(0,Y.jsxs)(`div`,{className:`grow text-red-700`,children:[(0,Y.jsx)(M,{...Q.prohibitedExternalEmailDescription}),(0,Y.jsx)(`pre`,{className:`my-1`,children:F.join(`, `)}),(0,Y.jsx)(M,{...Q.prohibitedExternalEmailResolution})]})}),Gn,Un,Wn,O===`stacked`?$n:(0,Y.jsxs)(B.Root,{size:`normal`,fixed:!0,children:[(0,Y.jsxs)(`colgroup`,{children:[(0,Y.jsx)(`col`,{className:qn}),v&&(0,Y.jsx)(`col`,{className:x?`w-[20%]`:`w-[28%]`}),x&&(0,Y.jsx)(`col`,{className:v?`w-[20%]`:`w-[28%]`}),(0,Y.jsx)(`col`,{className:`w-12`})]}),(0,Y.jsxs)(B.Header,{children:[(0,Y.jsx)(B.HeaderCell,{className:`dark:bg-transparent`,children:(0,Y.jsx)(M,{...Q.inviteTableHeaderEmail})}),v&&(0,Y.jsx)(B.HeaderCell,{className:`w-32 ps-3 dark:bg-transparent`,children:(0,Y.jsx)(M,{...Q.inviteTableHeaderRole})}),x&&(0,Y.jsx)(B.HeaderCell,{className:`w-36 ps-3 dark:bg-transparent`,children:(0,Y.jsx)(M,{...Nt.seatType})}),(0,Y.jsx)(B.HeaderCell,{className:`dark:bg-transparent`})]}),(0,Y.jsx)(B.Body,{children:P.map((e,t)=>(0,Y.jsxs)(B.Row,{children:[(0,Y.jsx)(B.Cell,{verticalAlign:`middle`,children:(0,Y.jsx)(Nn,{email:e.email,index:t,emailInputList:P.map(({email:e})=>e),onEmailChange:e=>Ce(t,`email`,e),shouldCheckDomainMismatch:E,allowedDomain:D,ariaLabel:A.formatMessage(Q.inviteTableHeaderEmail),layout:`table`})}),v&&(0,Y.jsx)(B.Cell,{verticalAlign:`middle`,divClassName:`min-h-14 items-center`,children:(0,Y.jsxs)(V.Root,{value:e.role,onValueChange:e=>Ce(t,`role`,e),children:[(0,Y.jsxs)(V.Trigger,{className:`w-32 justify-between`,children:[(0,Y.jsx)(V.Value,{}),(0,Y.jsx)(V.Icon,{})]}),(0,Y.jsx)(V.Portal,{children:(0,Y.jsxs)(V.Content,{className:`border-token-main-surface-secondary border`,children:[(0,Y.jsx)(V.Item,{value:I.member,children:(0,Y.jsx)(M,{...Q.inviteRoleMember})}),I.analytics_viewer&&(0,Y.jsx)(V.Item,{value:I.analytics_viewer,children:(0,Y.jsx)(M,{...Q.inviteRoleAnalyticsViewer})}),I.admin&&(0,Y.jsx)(V.Item,{value:I.admin,children:(0,Y.jsx)(M,{...Q.inviteRoleAdmin})}),I.owner&&(0,Y.jsx)(V.Item,{value:I.owner,children:(0,Y.jsx)(M,{...Q.inviteRoleOwner})})]})})]})}),x&&(0,Y.jsx)(B.Cell,{verticalAlign:`middle`,divClassName:`min-h-14 items-center`,children:(0,Y.jsx)(Ft,{workspaceId:d.id,currentSeatType:e.seatType,includeUsageBased:S,includeProlite:w,preserveProlite:_!=null,disabledSeatTypes:nn({rows:P,currentSeatType:e.seatType,availablePaidSeatCounts:_}),onUpdateSeatType:e=>{Ce(t,`seatType`,e)},triggerClassName:`w-36 justify-between`,contentClassName:`border-token-border-default border`})}),(0,Y.jsx)(B.Cell,{textAlign:`right`,verticalAlign:`middle`,divClassName:`min-h-14 items-center justify-end`,children:(0,Y.jsx)(Je,{onClick:()=>xe(t),className:`icon-sm text-token-text-secondary me-2 cursor-pointer`})})]},t))})]}),(0,Y.jsxs)(`div`,{className:C(`align-center mb-4 flex`,$?`mx-auto w-full max-w-[400px] items-center justify-between`:`justify-between`),children:[g==null||P.length<g?(0,Y.jsx)(n,{color:`secondary`,className:C($&&`h-11 rounded-full border border-black/10 bg-white px-5 text-[14px] font-normal text-[#5D5D5D] shadow-none hover:bg-[#F7F7F7] dark:border-white/12 dark:bg-transparent dark:text-white/70 dark:hover:bg-white/6`),iconClassName:C($&&`text-[#5D5D5D] dark:text-white/70`),onClick:()=>{Oe(e=>tn({rows:[...e,An({role:Fe,seatType:T})],defaultInviteSeatType:T,availablePaidSeatCounts:_}))},icon:Ge,children:(0,Y.jsx)(M,{...Q.addEmailButton})}):null,!l&&Jn]})]}),(0,Y.jsx)(`div`,{className:C(`flex w-full flex-shrink-0 flex-col gap-2`,l?`mt-0`:$?`mt-4`:`mt-8`),children:l?(0,Y.jsxs)(Y.Fragment,{children:[(0,Y.jsxs)(`div`,{className:C(`flex w-full gap-2`,o?`flex-col`:`items-center justify-between`),children:[(0,Y.jsx)(`div`,{className:C(o?`w-full`:`flex-shrink-0`),children:Jn}),(0,Y.jsx)(`div`,{className:C(o?`w-full`:`flex-shrink-0`),children:Qn()})]}),Xn()]}):(0,Y.jsxs)(Y.Fragment,{children:[Qn(),Xn()]})})]})}function Sn(e){"use no forget";let t=se(),n=(0,J.useMemo)(()=>t?.subscriptionAnalyticsParams,[t]);return(0,Y.jsx)(Ct,{trackEmailsAdded:(0,J.useCallback)(e=>{p.logEvent(`Account Pay: Collaborator Emails Added`,{...n,...e})},[n]),trackEmailRemoved:(0,J.useCallback)(e=>{p.logEvent(`Account Pay: Collaborator Email Removed`,{...n,...e})},[n]),...e})}function Cn(e){"use no forget";let t=Se(),r=s(),{search:i}=pe();return F({mutationFn:async({emails:a,role:o,seatType:s,analyticsFlowId:c,submissionId:d})=>{let f=[],p=Math.max(5,Math.round(a.length/10));for(let e=0;e<a.length;e+=p)f.push(a.slice(e,e+p));let m=async a=>{try{let n=await l.safePost(`/accounts/{account_id}/invites`,{parameters:{path:{account_id:e.id}},requestBody:{email_addresses:a,flow_id:c,role:o,seat_type:s,resend_emails:!0,submission_id:d}});return n.errored_emails.length>0&&r.danger(t.formatMessage(Q.inviteMessageFailure,{emailsStr:n.errored_emails.map(({email_address:e,error:t})=>`${e}: ${t}`).join(`, `)}),{loggingTitle:`Failed to invite members`,toastId:`admin_invite`,loggingDescription:Q.inviteMessageFailure.defaultMessage}),{firstError:void 0,paymentRequired:!1,successfulInviteCount:n.account_invites.length,alreadyMemberCount:n.already_member_emails?.length??0}}catch(a){let o=a instanceof u&&a.status===401&&(a.code===`workspace_subscription_delinquent`||a.code==null&&a.message===`Team has a delinquent subscription`),s=o?e.isOwnerOfAccount()?t.formatMessage({id:`admin-invite.paymentRequired.owner`,defaultMessage:`Invitations couldn't be sent because your workspace has an unpaid subscription. Update your payment details, then try sending the invitations again.`}):t.formatMessage({id:`admin-invite.paymentRequired.member`,defaultMessage:`Invitations couldn't be sent because your workspace has an unpaid subscription. Ask a workspace owner to update the payment details, then try again.`}):a instanceof Error?a.message:`Failed to invite members`;return r.danger(s,{toastId:`admin_invite`,loggingTitle:`Failed to invite members`,loggingDescription:s,action:o&&e.isOwnerOfAccount()?(0,Y.jsx)(n,{as:`a`,to:b(`/admin/billing`,i),openNewTab:!0,color:`primary`,size:`small`,children:(0,Y.jsx)(M,{id:`admin-invite.paymentRequired.updatePayment`,defaultMessage:`Update payment`})}):void 0}),{firstError:a,paymentRequired:o?!0:void 0,successfulInviteCount:0,alreadyMemberCount:0}}},h=await Promise.all(f.map(e=>m(e)));return{firstError:h.find(({firstError:e})=>e!=null)?.firstError,paymentRequired:h.some(e=>e.paymentRequired)?!0:!h.every(e=>e.paymentRequired===!1)&&void 0,successfulInviteCount:h.reduce((e,t)=>e+t.successfulInviteCount,0),alreadyMemberCount:h.reduce((e,t)=>e+t.alreadyMemberCount,0)}}})}function wn(e){let t=e?.trim()??``;return t.startsWith(`"`)&&t.endsWith(`"`)||t.startsWith(`'`)&&t.endsWith(`'`)?t.slice(1,-1).trim():t}function Tn(e,t,n){let r=wn(e).toLowerCase().replaceAll(`-`,`_`).replaceAll(` `,`_`);return t.has(r)?r:n}function K(e,t){switch(wn(e).toLowerCase().replaceAll(`-`,`_`).replaceAll(` `,`_`)){case`chatgpt`:case`default`:case`standard`:return`default`;case`codex`:case`usage_based`:return`usage_based`;case`premium`:case`prolite`:return`prolite`;default:return t}}function q(e,{allowedRoles:t,defaultRole:n,defaultSeatType:r}){let i=e.split(/\r?\n/),a=new Set;return i.reduce((e,i)=>{let[o=``,s=``,c=``]=i.split(`,`),l=wn(o);return y.test(l)&&!a.has(l)&&e.push(An({email:l,role:Tn(s,t,n),seatType:K(c,r)})),a.add(l),e},[])}function En(e,t,n,r){return new Promise(i=>{if(e.size/(1024*1024)>On)i({status:`error`,reason:`file_too_large`});else if(e.type!==`text/csv`)i({status:`error`,reason:`invalid_file_type`});else{let a=new FileReader;a.readAsText(e),a.onload=function(e){let a=e.target?.result;i({status:`success`,newRows:q(a,{allowedRoles:t,defaultRole:n,defaultSeatType:r})})}}})}var Dn,J,Y,On,X,kn,Z,An,jn,Mn,Nn,Pn,Q,Fn=e((()=>{Dn=xe(),w(),Ue(),qe(),We(),ce(),Ze(),g(),St(),Ce(),d(),fe(),Ee(),dt(),tt(),wt(),ft(),mt(),Et(),Dt(),Ot(),_t(),Pt(),De(),Ie(),ot(),Ne(),xt(),R(),ct(),at(),Qe(),Fe(),x(),j(),le(),c(),h(),Te(),o(),m(),v(),a(),A(),Mt(),be(),k(),J=t(P()),_e(),N(),ve(),Oe(),ze(),O(),Kt(),Qt(),cn(),Y=me(),On=25,X=3,kn=10,Z=[],An=({email:e=``,role:t,seatType:n})=>({email:e,role:t,seatType:n}),jn=e=>{if(!e?.length)return Z;let t=new Set,n=[];return e.slice(0,X).forEach(e=>{let r=e.trim();if(!r)return;let i=r.toLowerCase();t.has(i)||(t.add(i),n.push(r))}),n},Mn=({workspace:e,inviteFlowAnalytics:t,onSuccess:n,k12InviteDomain:r,initialEmails:i,maxInvites:a,showRoleColumn:o,showSeatTypeColumn:c,includeUsageBasedSeatType:l,includePremiumSeatType:u,defaultInviteSeatType:d,availablePaidSeatCounts:f})=>{"use no forget";let m=Se(),h=ge(),g=s(),_=de(`3528236309`).get(`can_see_analytics_viewer_role`,!1),v=se(),ee=e.isOwnerOfAccount(),b=(0,J.useRef)(null),x=Pn(ee,_,e.planType===ne.ROSALIND_ACADEMIC),S=(0,J.useMemo)(()=>{let t=e.isFreeWorkspace()?`owner`:`member`;return x[t]??x.member},[x,e]),te=tn({rows:(i??Z).map(e=>An({email:e,role:S,seatType:d})),defaultInviteSeatType:d,availablePaidSeatCounts:f}),[C,w]=(0,J.useState)(!1),[T,E]=(0,J.useState)(!1),[O,k]=(0,J.useState)(te),[re,ie]=(0,J.useState)([]),{mutateAsync:ce}=Cn(e),A=Ae(),le=L()??!0,[ue,fe]=(0,J.useState)(Z),j=(0,J.useMemo)(()=>v?.subscriptionAnalyticsParams,[v]);(0,J.useEffect)(()=>{let t=O.filter(({email:e})=>e.trim().length>0);if(!t.length){fe(Z);return}let n=new Set;if(e.isK12()&&r){let e=r.toLowerCase();t.forEach(({email:t})=>{let r=t.trim(),i=r.toLowerCase();!i.endsWith(`@${e}`)&&i.includes(`@`)&&n.add(r)})}if(!le&&A?.length){let e=A.map(e=>`@`+e.hostname.toLowerCase());t.map(({email:e})=>e.trim()).filter(t=>!e.some(e=>t.toLowerCase().endsWith(e))).forEach(e=>n.add(e))}let i=Array.from(n);fe(i.length?i:Z)},[A,le,O,r,e]);let pe=(0,J.useCallback)(e=>{let t={numEmailsAdded:e,uploadType:`Bulk`};p.logEvent(`Account Pay: Collaborator Emails Added`,{...j,...t})},[j]),me=(0,J.useCallback)(async e=>{let t=e.target.files?.[0];if(!t)return!1;let n=await En(t,new Set(Object.values(x)),S,d);if(n.status===`success`){let t=tn({rows:Jt(n.newRows,a),defaultInviteSeatType:d,availablePaidSeatCounts:f});return a!=null&&gn(n.newRows).length>a&&g.warning(m.formatMessage(Q.inviteLimitWarning,{maxInvites:a}),{duration:5,id:`admin_invite_limit`}),w(!0),k(t),ie(t.map(e=>({label:e.email,value:e.email,isValid:y.test(e.email)}))),pe(t.length),e.target.files=null,!0}return n.reason===`file_too_large`?g.danger(m.formatMessage(Q.fileTooLargeWarning,{maxSize:`${On}MB`}),{duration:5,loggingTitle:`CSV Upload: File too large`,toastId:`csv_upload_too_large`,loggingDescription:Q.fileTooLargeWarning.defaultMessage}):n.reason===`invalid_file_type`&&g.danger(m.formatMessage(Q.fileIncorrectTypeWarning),{duration:5,loggingTitle:`CSV Upload: File incorrect type`,toastId:`csv_upload`,loggingDescription:Q.fileIncorrectTypeWarning.defaultMessage}),!1},[x,f,S,d,m,a,g,pe]),he=(e,t,n)=>{let r=[...O];r[e]={...r[e],[t]:n},k(r)},M=(0,J.useCallback)(e=>{p.logEvent(`Account Pay: Add Collaborators Modal Clicked`,{...j,...e})},[j]),N=(0,J.useCallback)(()=>{p.logEvent(`Account Pay: Add Collaborators Upload Clicked`,j)},[j]),_e=(0,J.useCallback)(()=>{p.logEvent(`Account Pay: Collaborator Email Removed`,j)},[j]),P=(0,J.useCallback)(e=>{let t=Le(e);return p.logEvent(`Account Pay: Invite Collaborators Submitted`,{...j,...e},t?{eventId:t}:void 0),t},[j]),ve=e=>{let t=[...O.slice(0,e),...O.slice(e+1)];k(t),_e()},F=(0,J.useCallback)(()=>{k([]),E(!1),ie([]),w(!1)},[]),be=(0,J.useCallback)(async(r,i,a=!1)=>{E(!0);let o=!1;try{let s=ye();r.length>5&&g.info(m.formatMessage(Q.inviteMessageLoading,{numRows:r.length}),{hasCloseButton:!0});let c=[[`admin`,D.ADMIN],[`owner`,D.OWNER],[`member`,D.STANDARD],[`analytics_viewer`,D.ANALYTICS_VIEWER]],l=Array.from(r.reduce((e,t)=>{let n=c.find(([e])=>e===t.role)?.[1];if(!n)return e;let r=t.seatType,i=`${n}:${r}`,a=e.get(i);return a?(a.emails.push(t.email),e):(e.set(i,{emails:[t.email],role:n,seatType:r}),e)},new Map).values()),u=await Promise.allSettled(l.map(({emails:e,role:t,seatType:n})=>ce({emails:e,analyticsFlowId:i.flowId,role:t,seatType:n,submissionId:s}))),d=u.reduce((e,t)=>e+(t.status===`fulfilled`?t.value.successfulInviteCount:0),0),f=u.reduce((e,t)=>e+(t.status===`fulfilled`?t.value.alreadyMemberCount:0),0),p;for(let e of u){if(e.status===`rejected`){p=e.reason;break}if(e.value.firstError!=null){p=e.value.firstError;break}}t.recordResult(d+f,p==null),U(i,{...p!=null&&a?{actionFailureType:`mutation_failed`,failedTargetCount:Math.max(0,r.length-d-f),step:`action_attempt_failed`,successfulTargetCount:d}:zt({affectedTargetCount:r.length,successfulTargetCount:d,alreadyMemberCount:f}),paymentRequired:u.some(e=>e.status===`fulfilled`&&e.value.paymentRequired)?!0:!u.every(e=>e.status===`fulfilled`&&e.value.paymentRequired===!1)&&void 0}),o=!0;let _=P({...Bt(r),numSuccessfulInvites:d});if(d>0&&(setTimeout(()=>{h.invalidateQueries({queryKey:[`workspace`,e.id,`invites`,0,``],exact:!0})},1e3),g.success(m.formatMessage(Q.inviteSuccessToast,{numRows:d,userStr:d===1?`user`:`users`,workspaceName:oe(m,e)}))),f>0&&g.info(m.formatMessage({id:`admin-invite.toast.already_member`,defaultMessage:`{count, plural, one {Already a member — no invitation sent} other {# people are already members — no invitations sent}}`},{count:f})),ae(we,r.length,{action:`SubmitEmails`,location:`modal-submit-button`,text:`Submit`,step:`AdminModal-CollectEmails-Submit`,numSuccessfulInvites:d.toString(),..._?{unique_event_id:_}:{}}),p!=null)throw p;n?.(),F()}catch(e){throw t.recordResult(0,!1),o||U(i,{step:a?`action_attempt_failed`:`action_failed`,actionFailureType:`mutation_failed`}),e}finally{E(!1)}},[F,ce,t,m,n,h,g,P,e]),xe=(0,J.useCallback)(async(n,r=!1,i=!1)=>{let s=ln({rows:O,defaultInviteRole:S,defaultInviteSeatType:d,includePremiumSeatType:u,includeUsageBasedSeatType:l,maxInvites:a,showRoleColumn:o,showSeatTypeColumn:c,availablePaidSeatCounts:f}),p=s.filter(e=>e.seatType===Lt).length,m=n??un({rows:s,workspace:e});n??U(m,{step:`action_initiated`});let h=t.startAction();try{if(r){await be(s,m,i);return}if(p>0){await H({analyticsFlow:m,workspace:e,introducedDefaultSeatCount:p,entrypoint:`workspace_onboarding_admin_invite`,onContinue:async()=>{await be(s,m)}});return}U(m,{step:`capacity_evaluated`,capacityResult:`not_required`,paymentRequired:!1}),await be(s,m)}finally{h()}},[f,S,d,O,u,l,t,o,c,be,e,a]);return{INVITE_ROLES:x,defaultInviteRole:S,clearState:F,emailTableRows:O,emailTextAreaValue:re,emailsOutsideOfDomain:ue,fileInputRef:b,handleClickImportCSV:(0,J.useCallback)(()=>{b.current?.value&&(b.current.value=``),b.current?.click(),typeof document<`u`&&document.activeElement&&setTimeout(()=>{document.activeElement?.blur?.()},0),N()},[b,N]),handleDeleteRow:ve,handleInputChange:he,handleSubmit:xe,handleUploadCSV:me,hasUploadedCsv:C,isInviting:T,setEmailTableRows:k,setEmailTextAreaValue:ie,trackNavigationClick:M,trackUploadClick:N}},Nn=({email:e,index:t,emailInputList:n,onEmailChange:r,shouldCheckDomainMismatch:i,allowedDomain:a,ariaLabel:o,layout:s=`table`})=>{"use no forget";let c=Se(),[l,u]=(0,J.useState)(!1),d=re(),f=(0,J.useMemo)(()=>d?Xt(d):null,[d]),p=a??f,{hasMismatchedDomain:m,isDuplicate:h,isInvalid:g}=(0,J.useMemo)(()=>Zt({email:e,index:t,emailInputList:n,inviteDomain:p,shouldCheckDomainMismatch:i}),[e,n,t,p,i]),_=l&&g,v=l&&m,y=h&&!_&&!v,ee=_||v||y,b=c.formatMessage(Q.emailInputPlaceholder);return(0,Y.jsxs)(`div`,{className:`flex w-full flex-col gap-1`,children:[(0,Y.jsx)(He,{ariaLabel:o??b,name:`email`,type:`email`,value:e,placeholder:b,onBlur:()=>{u(!0),m&&ae(`chatgpt_business_workspace_invite_domain_mismatch`)},onChange:e=>{r(e.target.value)},color:`tertiary`,className:C(s===`stacked`?`min-h-[48px] w-full overflow-hidden rounded-full! border border-black/6 bg-[#F7F7F7] px-5 py-3 shadow-none dark:border-white/10 dark:bg-[#1F1F1F]`:`ms-px w-[90%] rounded-[20px] px-4 py-2`,ee&&`border-token-text-error focus:border-token-text-error`),containerInputClassName:`w-full`,inputClassName:C(`placeholder:text-token-text-tertiary dark:bg-transparent`,s===`stacked`&&`bg-transparent text-[16px] leading-6 text-[#1F1F1F] placeholder:text-[16px] placeholder:leading-6 placeholder:text-[#9B9B9B] dark:text-white/92 dark:placeholder:text-white/40`),displayNameLabelClassName:`hidden`}),_&&(0,Y.jsx)(`div`,{className:`text-token-text-error ms-1 flex text-xs`,children:(0,Y.jsx)(M,{...Q.invalidEmailWarning})}),v&&(0,Y.jsx)(`div`,{className:`text-token-text-error ms-1 flex text-xs`,children:(0,Y.jsx)(M,{...Q.mismatchedDomainWarning,values:{domain:p??``}})}),y&&(0,Y.jsx)(`div`,{className:`text-token-text-error ms-1 flex text-xs`,children:(0,Y.jsx)(M,{...Q.duplicateEmailWarning})})]})},Pn=(e,t,n)=>{let r={member:`member`};return e&&!n&&(r.admin=`admin`,r.owner=`owner`),e&&t&&(r.analytics_viewer=`analytics_viewer`),r},Q=he({addEmailsFieldName:{id:`admin-invite.addEmailsFieldName.0`,defaultMessage:`Emails`},prohibitedExternalEmailDescription:{id:`admin-invite.prohibitedExternalEmailDescription`,defaultMessage:`The following emails are not a part of your organization's verified domains:`},prohibitedExternalEmailResolution:{id:`admin-invite.prohibitedExternalEmailResolution`,defaultMessage:`Either remove these emails, enable "Allow External Domain Invites" from your workspace settings, or verify these email domains.`},inviteTableHeaderEmail:{id:`admin-invite.inviteTableHeaderEmail`,defaultMessage:`Email`},inviteTableHeaderRole:{id:`admin-invite.inviteTableHeaderRole`,defaultMessage:`Role`},inviteRoleMember:{id:`admin-invite.inviteRoleMember`,defaultMessage:`Member`},inviteRoleAnalyticsViewer:{id:`admin-invite.inviteRoleAnalyticsViewer`,defaultMessage:`Analytics viewer`},inviteRoleAdmin:{id:`admin-invite.inviteRoleAdmin`,defaultMessage:`Admin`},inviteRoleOwner:{id:`admin-invite.inviteRoleOwner`,defaultMessage:`Owner`},fileTooLargeWarning:{id:`admin-invite.fileTooLargeWarning`,defaultMessage:`File is too large. Please upload a CSV file smaller than {maxSize}.`},fileIncorrectTypeWarning:{id:`admin-invite.fileIncorrectTypeWarning`,defaultMessage:`Please upload a CSV file.`},inviteMessageLoading:{id:`admin-invite.inviteMessageLoading`,defaultMessage:`Sending out {numRows} invites, this may take a minute...`},inviteSuccessToast:{id:`admin-invite.inviteSuccessToast`,defaultMessage:`Invited {numRows} {userStr} to {workspaceName}`},inviteMemberInviteSubmitButton:{id:`admin-invite.inviteMemberInviteSubmitButton`,defaultMessage:`Send invites`},inviteMemberInviteSubmitButtonLoading:{id:`admin-invite.inviteMemberInviteSubmitButtonLoading`,defaultMessage:`Sending invites...`},inviteMemberContinueButton:{id:`admin-invite.immediate_invoice.button.continue`,defaultMessage:`Continue`},inviteMemberUpdateSeatsAndSendInvitesButton:{id:`admin-invite.immediate_invoice.button.update_seats_and_send_invites`,defaultMessage:`Update seats and send invites`},inviteMemberPurchaseSeatsAndSendInvitesButton:{id:`admin-invite.immediate_invoice.button.purchase_seats_and_send_invites`,defaultMessage:`Purchase seats and send invites`},inviteLimitWarning:{id:`admin-invite.inviteLimitWarning`,defaultMessage:`You can invite up to {maxInvites} people at a time. Extra emails were not added.`},inviteMessageFailure:{id:`admin-invite.inviteMessageFailure`,defaultMessage:`Unable to invite {emailsStr}`},freeTrialInviteLimitWarning:{id:`admin-invite.freeTrialInviteLimitWarning`,defaultMessage:`You can only invite 10 users while on an active free trial. Upgrade now to invite more.`},freeTrialInviteLimitWarningAskAdmin:{id:`admin-invite.freeTrialInviteLimitWarningAskAdmin`,defaultMessage:`You can only invite 10 users while on an active free trial. Ask your workspace admin to upgrade for more.`},freeTrialInviteLimitWarningTitle:{id:`admin-invite.freeTrialInviteLimitWarningTitle`,defaultMessage:`Trial invite limit reached`},additionalPaidSeatsNeededWarningTitle:{id:`admin-invite.immediate_invoice.warning.additional_seats_needed.title`,defaultMessage:`{count, plural, one {# additional seat needed} other {# additional seats needed}}`},additionalPaidSeatsNeededWarningBody:{id:`admin-invite.immediate_invoice.warning.additional_seats_needed.body.capacity_update`,defaultMessage:`{count, plural, one {Add # additional seat to send these invites.} other {Add # additional seats to send these invites.}}`},additionalPaidSeatsNeededForSingleInviteWarningBody:{id:`admin-invite.immediate_invoice.warning.additional_seats_needed.body.capacity_update.single_invite`,defaultMessage:`{count, plural, one {Add # additional seat to send this invite.} other {Add # additional seats to send this invite.}}`},scheduledSeatRemovalCanceledWarningTitle:{id:`admin-invite.immediate_invoice.warning.scheduled_change_cancellation.title.removal.exact_count`,defaultMessage:`{scheduledRemovalCount, plural, one {One scheduled removal will be canceled} other {# scheduled removals will be canceled}}`},scheduledSeatDowngradeCanceledWarningTitle:{id:`admin-invite.immediate_invoice.warning.scheduled_change_cancellation.title.downgrade.exact_count`,defaultMessage:`{scheduledDowngradeCount, plural, one {One scheduled downgrade will be canceled} other {# scheduled downgrades will be canceled}}`},scheduledSeatChangesCanceledWarningTitle:{id:`admin-invite.immediate_invoice.warning.scheduled_change_cancellation.title.mixed.exact_count`,defaultMessage:`{scheduledSeatChangeCount, plural, one {One scheduled seat change will be canceled} other {# scheduled seat changes will be canceled}}`},scheduledStandardSeatRemovalCanceledWarningBody:{id:`admin-invite.immediate_invoice.warning.scheduled_change_cancellation.body.removal.standard.exact_count`,defaultMessage:`{scheduledRemovalCount, plural, one {By inviting a new team member to a Standard seat, one scheduled Standard seat removal will be canceled.} other {By inviting new team members to Standard seats, # scheduled Standard seat removals will be canceled.}}`},scheduledPremiumSeatRemovalCanceledWarningBody:{id:`admin-invite.immediate_invoice.warning.scheduled_change_cancellation.body.removal.premium.exact_count`,defaultMessage:`{scheduledRemovalCount, plural, one {By inviting a new team member to a Premium seat, one scheduled Premium seat removal will be canceled.} other {By inviting new team members to Premium seats, # scheduled Premium seat removals will be canceled.}}`},scheduledMultiTierSeatRemovalCanceledWarningBody:{id:`admin-invite.immediate_invoice.warning.scheduled_change_cancellation.body.removal.multiple_tiers.exact_count`,defaultMessage:`By inviting new team members to Standard and Premium seats, {scheduledRemovalCount, plural, one {# scheduled seat removal} other {# scheduled seat removals}} will be canceled.`},scheduledSeatDowngradeCanceledWarningBody:{id:`admin-invite.immediate_invoice.warning.scheduled_change_cancellation.body.downgrade.exact_count`,defaultMessage:`{scheduledDowngradeCount, plural, one {By inviting a new team member to a Premium seat, one scheduled Premium-to-Standard downgrade will be canceled.} other {By inviting new team members to Premium seats, # scheduled Premium-to-Standard downgrades will be canceled.}}`},scheduledSeatChangesCanceledWarningBody:{id:`admin-invite.immediate_invoice.warning.scheduled_change_cancellation.body.mixed.counts_by_type.exact_count`,defaultMessage:`By inviting new team members, {scheduledRemovalCount, plural, one {# scheduled seat removal} other {# scheduled seat removals}} and {scheduledDowngradeCount, plural, one {# scheduled seat downgrade} other {# scheduled seat downgrades}} will be canceled.`},additionalPaidSeatsBillingUnavailableWarningBody:{id:`admin-invite.immediate_invoice.warning.billing_unavailable.body`,defaultMessage:`Seat purchase details are temporarily unavailable. Please try again.`},additionalPaidSeatsExceedMaximumWarningBody:{id:`admin-invite.immediate_invoice.warning.maximum_seats_exceeded.body`,defaultMessage:`This workspace cannot have more than {maxSeats, number} paid seats.`},retrySeatPurchaseBillingButton:{id:`admin-invite.immediate_invoice.button.retry_billing`,defaultMessage:`Retry`},upgradeButton:{id:`admin-invite.upgradeButton`,defaultMessage:`Upgrade`},importCSVButton:{id:`admin-invite.importCSVButton`,defaultMessage:`Upload CSV`},reimportCSVButton:{id:`admin-invite.reimportCSVButton`,defaultMessage:`Re-upload CSV`},importCSVTooltip:{id:`admin-invite.importCSVTooltip`,defaultMessage:`Upload a CSV file. Your file must include an email on each line.`},emailInputPlaceholder:{id:`admin-invite.emailInputPlaceholder`,defaultMessage:`Email`},addEmailButton:{id:`admin-invite.addEmailButton`,defaultMessage:`Add more`},duplicateEmailWarning:{id:`admin-invite.duplicateEmailWarning`,defaultMessage:`This email is a duplicate.`},invalidEmailWarning:{id:`admin-invite.invalidEmailWarning`,defaultMessage:`Please enter a valid email address.`},mismatchedDomainWarning:{id:`admin-invite.mismatchedDomainWarning`,defaultMessage:`Enter an email address with the {domain} domain.`}})}));export{Vt as a,Kt as i,vn as n,Fn as r,yn as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    D6 as r,
+    Drt as i,
+    Ert as a,
+    Hn as o,
+    IU as s,
+    Int as c,
+    J7 as l,
+    Kat as u,
+    LU as d,
+    Ort as f,
+    Pnt as p,
+    Q7 as m,
+    Qat as h,
+    Qy as g,
+    Rz as _,
+    T6 as v,
+    Un as y,
+    V1 as ee,
+    Wrt as b,
+    ZG as x,
+    Znt as S,
+    Zy as te,
+    c7 as C,
+    eE as w,
+    eK as T,
+    ert as E,
+    gct as D,
+    iO as O,
+    jst as ne,
+    l7 as k,
+    lO as re,
+    lrt as ie,
+    mrt as ae,
+    nO as oe,
+    o0 as se,
+    oW as ce,
+    prt as A,
+    q1 as le,
+    sW as ue,
+    urt as de,
+    vct as fe,
+    zz as j
+} from "./4813494d-itnrgnth03y1sm9d.js";
+import {
+    At as pe,
+    Bn as me,
+    Ln as he,
+    N as ge,
+    Nn as M,
+    Q as N,
+    Rn as _e,
+    Vn as P,
+    Zt as ve,
+    p as F,
+    rn as ye,
+    s as be,
+    wn as xe,
+    zn as Se
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Bst as Ce,
+    G0t as we,
+    K0t as Te,
+    K6t as Ee,
+    S6t as De,
+    TDn as Oe,
+    W6t as ke,
+    ag as Ae,
+    drn as je,
+    frn as Me,
+    jGn as Ne,
+    k6t as Pe,
+    lrn as Fe,
+    og as I,
+    p6t as Ie,
+    q0t as Le,
+    rg as L,
+    t8t as Re,
+    tg as ze,
+    wDn as Be,
+    y6t as Ve,
+    zst as He
+} from "./conversation-small-i79e9c315w50am5f.js";
+import {
+    Gh as Ue,
+    Hm as We,
+    Kh as Ge,
+    Um as Ke,
+    vv as qe,
+    yv as Je
+} from "./30901919-ikyi1r55w2i02fom.js";
+import {
+    $c as Ye,
+    $s as Xe,
+    Av as Ze,
+    Cc as Qe,
+    Cd as $e,
+    Ec as et,
+    Fc as tt,
+    Mc as nt,
+    Mm as rt,
+    Nc as it,
+    Qs as R,
+    Sd as at,
+    Tc as ot,
+    bc as st,
+    bf as ct,
+    cc as z,
+    dc as lt,
+    fc as ut,
+    jc as dt,
+    jm as ft,
+    kv as B,
+    lc as pt,
+    mc as mt,
+    mf as ht,
+    pc as gt,
+    qc as _t,
+    uc as vt,
+    wc as yt,
+    xc as bt
+} from "./c2675c8c-d62p1sdq1sy52umm.js";
+import {
+    h_ as xt,
+    m_ as V
+} from "./8b34dbc2-m4883pai3e8fx8q6.js";
+import {
+    r as St,
+    t as Ct
+} from "./53a75fa3-bklxa5k9lzwvemyo.js";
+import {
+    n as wt,
+    t as Tt
+} from "./0453f9ca-jt1b3vkjrzhbofva.js";
+import {
+    n as Et,
+    t as H
+} from "./dc59de7a-j52tgczvvxbfm50r.js";
+import {
+    i as U,
+    r as Dt,
+    t as W
+} from "./cedb005c-nmxozkzj1omwnokh.js";
+import {
+    i as Ot,
+    r as kt,
+    t as At
+} from "./730b64e6-oj446hp6vt40fefu.js";
+import {
+    n as jt,
+    t as Mt
+} from "./37b207d4-veub4z755g2t3ww0.js";
+import {
+    c as Nt,
+    o as Pt,
+    r as Ft,
+    s as It,
+    t as Lt
+} from "./1212b029-ngzpll0lwwfu80de.js";
+
+function Rt({
+    context: e,
+    emit: t
+}) {
+    let n = e,
+        r = !1,
+        i = !1,
+        a = 0,
+        o = !1,
+        s = !1,
+        c = () => {
+            r && !i && a === 0 && !o && !s && n.isPaidBusiness && n.canInvite && ((n.availableDefaultSeatCount ?? 0) > 0 || (n.availableProliteSeatCount ?? 0) > 0) && (i = !0, t(n))
+        };
+    return {
+        updateContext(e) {
+            r || (n = e)
+        },
+        startAction() {
+            a += 1;
+            let e = !1;
+            return (t = !0) => {
+                e || (e = !0, --a, s ||= !t, c())
+            }
+        },
+        recordResult(e, t) {
+            o ||= e > 0, s ||= !t, c()
+        },
+        exit() {
+            r = !0, c()
+        }
+    }
+}
+var G = e((() => {}));
+
+function zt({
+    affectedTargetCount: e,
+    successfulTargetCount: t,
+    alreadyMemberCount: n = 0
+}) {
+    let r = {
+        failedTargetCount: Math.max(0, e - t - n),
+        successfulTargetCount: t
+    };
+    return t + n > 0 ? {
+        ...r,
+        step: `action_succeeded`
+    } : {
+        ...r,
+        actionFailureType: `mutation_failed`,
+        step: `action_failed`
+    }
+}
+
+function Bt(e) {
+    let t = 0,
+        n = 0;
+    return e.forEach(({
+        seatType: e
+    }) => {
+        if (e !== `usage_based`) {
+            t += 1;
+            return
+        }
+        n += 1
+    }), {
+        numSubmittedInvites: e.length,
+        defaultSeatInvites: t,
+        usageBasedSeatInvites: n
+    }
+}
+
+function Vt(e) {
+    p.logStructuredEvent(`ChatgptWorkspaceInviteFlowDroppedOff`, {
+        dropoffType: e
+    })
+}
+
+function Ht(e) {
+    let t = {
+        default: 0,
+        prolite: 0,
+        usage_based: 0
+    };
+    for (let {
+            seatType: n
+        }
+        of e) t[n] += 1;
+    return t
+}
+
+function Ut(e) {
+    return e.isOwnerOfAccount() ? `workspace_owner` : e.isAdminOfAccount() ? `workspace_admin` : e.data.role === D.ANALYTICS_VIEWER ? `workspace_analytics_viewer` : `workspace_member`
+}
+
+function Wt(e, t) {
+    let n = e => t == null ? void 0 : z(t, e) ?? void 0;
+    return {
+        isPaidBusiness: e.isSelfServeBusiness() && e.hasPaidSubscription() && e.data.subscriptionStatus.trial?.isTrialing !== !0,
+        canInvite: e.canInviteMembers(),
+        availableDefaultSeatCount: n(`default`),
+        availableProliteSeatCount: n(`prolite`)
+    }
+}
+
+function Gt(e) {
+    let t = {
+        workspace_owner: `CHATGPT_WORKSPACE_INVITE_FLOW_ACTOR_ROLE_WORKSPACE_OWNER`,
+        workspace_admin: `CHATGPT_WORKSPACE_INVITE_FLOW_ACTOR_ROLE_WORKSPACE_ADMIN`,
+        workspace_member: `CHATGPT_WORKSPACE_INVITE_FLOW_ACTOR_ROLE_WORKSPACE_MEMBER`,
+        workspace_analytics_viewer: `CHATGPT_WORKSPACE_INVITE_FLOW_ACTOR_ROLE_WORKSPACE_ANALYTICS_VIEWER`
+    };
+    return Rt({
+        context: Wt(e),
+        emit(n) {
+            ee()?.id !== e.id || ie().getContext().user.customIDs?.workspace_id !== e.id || p.logStructuredEvent(`ChatgptWorkspaceInviteAbandonedWithPaidSeat`, {
+                actorRole: t[Ut(e)],
+                availableDefaultSeatCount: E(n.availableDefaultSeatCount),
+                availableProliteSeatCount: E(n.availableProliteSeatCount)
+            })
+        }
+    })
+}
+var Kt = e((() => {
+    fe(), mt(), le(), A(), S(), G(), c()
+}));
+
+function qt(e) {
+    return e.trim().toLowerCase()
+}
+
+function Jt(e, t) {
+    if (t == null) return e;
+    let n = new Set,
+        r = [];
+    for (let i of e) {
+        if (r.length >= t) break;
+        let e = qt(i.email);
+        n.has(e) || (n.add(e), r.push(i))
+    }
+    return r
+}
+
+function Yt(e) {
+    let t = new Set;
+    return e.filter(({
+        value: e
+    }) => {
+        let n = qt(e);
+        return t.has(n) ? !1 : (t.add(n), !0)
+    })
+}
+
+function Xt(e) {
+    let t = e.trim();
+    if (!y.test(t)) return null;
+    let [, n = ``] = t.split(`@`);
+    return n.toLowerCase() || null
+}
+
+function Zt({
+    email: e,
+    index: t,
+    emailInputList: n,
+    inviteDomain: r,
+    shouldCheckDomainMismatch: i
+}) {
+    let a = e.trim(),
+        o = a.length > 0 && !y.test(a),
+        s = r?.toLowerCase() ?? null,
+        c = Xt(a),
+        l = a.length > 0 && !o && i && s != null && c != null && c !== s,
+        u = qt(a);
+    return {
+        hasMismatchedDomain: l,
+        isDuplicate: u.length > 0 && !o && !l && n.some((e, n) => n < t && qt(e) === u),
+        isInvalid: o
+    }
+}
+var Qt = e((() => {
+    o()
+}));
+
+function $t({
+    subscription: e,
+    workspaceSeatTypeCounts: t,
+    paidStandardSeatCapacity: n,
+    paidPremiumSeatCapacity: r
+}) {
+    return {
+        availableStandardSeats: Math.max(0, e == null ? 0 : z(e, `default`) ?? n - (t?.seat_type_counts?.default ?? 0)),
+        availablePremiumSeats: Math.max(0, e == null ? 0 : z(e, `prolite`) ?? r - (t?.seat_type_counts?.prolite ?? 0))
+    }
+}
+
+function en({
+    defaultInviteSeatTypeOverride: e,
+    workspaceDefaultSeatType: t,
+    isUsageBasedSeatEnabled: n,
+    isPremiumSeatEnabled: r = !1,
+    availablePaidSeatCounts: i
+}) {
+    let a = !n && !r && i == null ? Lt : It(e ?? t, {
+        includeUsageBased: n,
+        includeProlite: r,
+        preserveProlite: i != null
+    });
+    if (i == null) return a;
+    let o = a === `prolite` ? `prolite` : `default`,
+        s = o === "default" ? `prolite` : `default`;
+    return i[o] > 0 || i[s] <= 0 ? o : s
+}
+
+function tn({
+    rows: e,
+    defaultInviteSeatType: t,
+    availablePaidSeatCounts: n
+}) {
+    if (n == null) return [...e];
+    let r = t === `prolite` ? `prolite` : `default`,
+        i = [r, r === "default" ? `prolite` : `default`],
+        a = {
+            default: 0,
+            prolite: 0
+        };
+    return e.map(e => {
+        let t = e.seatType === "default" || e.seatType === `prolite` ? e.seatType : null,
+            r = t != null && a[t] < n[t] ? t : i.find(e => a[e] < n[e]);
+        return r == null ? e : (a[r] += 1, e.seatType === r ? e : {
+            ...e,
+            seatType: r
+        })
+    })
+}
+
+function nn({
+    rows: e,
+    currentSeatType: t,
+    availablePaidSeatCounts: n
+}) {
+    if (n == null) return [];
+    let r = e.reduce((e, t) => ((t.seatType === "default" || t.seatType === `prolite`) && (e[t.seatType] += 1), e), {
+        default: 0,
+        prolite: 0
+    });
+    return [`default`, `prolite`].filter(e => r[e] - +(e === t) >= n[e])
+}
+
+function rn({
+    paidInviteEmails: e,
+    availableSeats: t,
+    existingActivePaidMemberEmails: n,
+    existingPendingPaidInviteEmails: r
+}) {
+    let i = new Set([...n, ...r].map(e => e.trim().toLowerCase())),
+        a = e.filter(e => !i.has(e)).length;
+    return a === 0 ? 0 : Math.max(0, a - t)
+}
+
+function an({
+    rows: e,
+    showSeatTypeColumn: t,
+    includeUsageBasedSeatType: n,
+    includePremiumSeatType: r,
+    defaultInviteSeatType: i,
+    seatTypeToCount: a,
+    maxInvites: o
+}) {
+    let s = new Set;
+    return e.slice(0, o ?? 1 / 0).forEach(e => {
+        let o = e.email.trim().toLowerCase();
+        (t ? It(e.seatType, {
+            includeUsageBased: n,
+            includeProlite: r
+        }) : i) !== a || o.length === 0 || s.add(o)
+    }), [...s]
+}
+
+function on({
+    rows: e,
+    showSeatTypeColumn: t,
+    includeUsageBasedSeatType: n,
+    includePremiumSeatType: r,
+    defaultInviteSeatType: i,
+    maxInvites: a,
+    subscription: o,
+    workspaceSeatTypeCounts: s,
+    hasPremiumSeats: c,
+    hasActiveBusinessFreeTrial: l,
+    isImmediateInvoiceRolloutEnabled: u,
+    isBusinessPremiumSeatPurchaseReviewEnabled: d,
+    existingActiveStandardMemberEmails: f,
+    existingPendingStandardInviteEmails: p,
+    existingActivePremiumMemberEmails: m,
+    existingPendingPremiumInviteEmails: h
+}) {
+    let g = o != null && d ? lt(o, `default`, c ? 0 : o.seats_entitled) : o?.seats_entitled ?? 0,
+        _ = o != null && d ? lt(o, `prolite`) : 0,
+        v = !l && o != null && s != null,
+        {
+            availableStandardSeats: y,
+            availablePremiumSeats: ee
+        } = $t({
+            subscription: o,
+            workspaceSeatTypeCounts: s,
+            paidStandardSeatCapacity: g,
+            paidPremiumSeatCapacity: _
+        }),
+        b = u && v ? rn({
+            paidInviteEmails: an({
+                rows: e,
+                showSeatTypeColumn: t,
+                includeUsageBasedSeatType: n,
+                includePremiumSeatType: r,
+                defaultInviteSeatType: i,
+                seatTypeToCount: `default`,
+                maxInvites: a
+            }),
+            availableSeats: y,
+            existingActivePaidMemberEmails: f,
+            existingPendingPaidInviteEmails: p
+        }) : 0,
+        x = u && d && v ? rn({
+            paidInviteEmails: an({
+                rows: e,
+                showSeatTypeColumn: t,
+                includeUsageBasedSeatType: n,
+                includePremiumSeatType: r,
+                defaultInviteSeatType: i,
+                seatTypeToCount: `prolite`,
+                maxInvites: a
+            }),
+            availableSeats: ee,
+            existingActivePaidMemberEmails: m,
+            existingPendingPaidInviteEmails: h
+        }) : 0;
+    return {
+        paidStandardSeatCapacity: g,
+        paidPremiumSeatCapacity: _,
+        standardSeatCapacityShortfall: b,
+        premiumSeatCapacityShortfall: x,
+        totalSeatCapacityShortfall: b + x
+    }
+}
+
+function sn({
+    subscription: e,
+    capacityShortfallSeatCounts: t
+}) {
+    if (e == null) return null;
+    let n = ut(e),
+        r = n.removals.standard,
+        i = n.removals.premium,
+        a = Math.min(r, t.standard),
+        o = Math.min(i, t.premium),
+        s = t.premium - o,
+        c = n.downgrades.reduce((e, t) => t.fromSeatType === `premium` && t.toSeatType === `standard` ? e + t.quantity : e, 0),
+        l = Math.min(c, s);
+    return a + o === 0 && l === 0 ? null : {
+        scheduledDowngradeCount: l,
+        scheduledRemovalSeatCounts: {
+            standard: a,
+            premium: o
+        }
+    }
+}
+var cn = e((() => {
+    mt(), Pt()
+}));
+
+function ln({
+    rows: e,
+    defaultInviteRole: t,
+    defaultInviteSeatType: n,
+    includePremiumSeatType: r,
+    includeUsageBasedSeatType: i,
+    maxInvites: a,
+    showRoleColumn: o,
+    showSeatTypeColumn: s,
+    availablePaidSeatCounts: c
+}) {
+    return e.map(e => ({
+        email: e.email.trim(),
+        role: o ? e.role : t,
+        seatType: s || c != null ? It(e.seatType, {
+            includeUsageBased: i,
+            includeProlite: r,
+            preserveProlite: c != null
+        }) : n
+    })).filter(e => e.email.length > 0).slice(0, a ?? 1 / 0)
+}
+
+function un({
+    rows: e,
+    workspace: t
+}) {
+    let n = Ht(e);
+    return W({
+        action: `send_invitations`,
+        actorRole: t.isOwnerOfAccount() ? `workspace_owner` : `workspace_admin`,
+        surface: `admin_invite_modal`,
+        affectedTargetCount: e.length,
+        targetScope: e.length === 1 ? `individual` : `bulk`,
+        requestedSeatCounts: n
+    })
+}
+
+function dn(e, t) {
+    return t == null ? e : e.slice(0, t)
+}
+
+function fn(e) {
+    return e.trim().toLowerCase()
+}
+
+function pn(e, t, {
+    availablePaidSeatCounts: n,
+    defaultRole: r,
+    defaultSeatType: i
+}) {
+    let a = new Map(t.map(e => [fn(e.email), e]));
+    return tn({
+        rows: e.map(e => {
+            let t = a.get(fn(e.value));
+            return An({
+                email: e.value,
+                role: t?.role ?? r,
+                seatType: t?.seatType ?? i
+            })
+        }),
+        defaultInviteSeatType: i,
+        availablePaidSeatCounts: n
+    })
+}
+
+function mn(e) {
+    return e.filter(e => e.email.trim().length > 0).length
+}
+
+function hn(e) {
+    return e.email.trim().length > 0
+}
+
+function gn(e) {
+    let t = new Set,
+        n = [];
+    return e.forEach(e => {
+        if (!hn(e)) return;
+        let r = e.email.trim().toLowerCase();
+        !r || t.has(r) || (t.add(r), n.push(r))
+    }), n
+}
+
+function _n({
+    rows: e,
+    seatsInUse: t,
+    seatsEntitled: n,
+    existingActiveMemberEmails: r = Z,
+    existingPendingInviteEmails: i,
+    hasActiveBusinessFreeTrial: a
+}) {
+    if (!a || t == null || n == null || n > kn) return {
+        isOverFreeTrialInviteLimit: !1,
+        projectedTrialSeats: Math.max(0, t ?? 0)
+    };
+    let o = new Set(i.map(e => e.trim().toLowerCase())),
+        s = new Set(r.map(e => e.trim().toLowerCase())),
+        c = gn(e).filter(e => !o.has(e) && !s.has(e)).length,
+        l = Math.max(0, t) + Math.max(0, i.length) + c;
+    return {
+        isOverFreeTrialInviteLimit: l > kn,
+        projectedTrialSeats: l
+    }
+}
+
+function vn(e) {
+    let t = e.isOwnerOfAccount();
+    return {
+        showRoleColumn: !e.isFreeWorkspace() && t,
+        showSeatTypeColumn: t && (jt(e.data) || rt(e.id))
+    }
+}
+
+function yn(e) {
+    "use forget";
+    let t = (0, Dn.c)(2),
+        n;
+    return t[0] === e ? n = t[1] : (n = (0, Y.jsx)(bn, {
+        ...e
+    }, e.workspace.id), t[0] = e, t[1] = n), n
+}
+
+function bn({
+    workspace: e,
+    onCancel: t,
+    cancelButtonText: r,
+    onSuccess: i,
+    fullWidthButtons: a = !1,
+    showCancelButton: o = !0,
+    csvButtonAlignedWithPrimary: s = !1,
+    contentClassName: c,
+    initialEmails: l,
+    defaultInviteSeatType: u,
+    showRoleColumn: d,
+    showSeatTypeColumn: f,
+    inviteLayout: p = `table`,
+    initialEmptyRowCount: m = 1,
+    maxInvites: h = null,
+    availablePaidSeatCounts: g,
+    emptyStatePrimaryButtonText: v,
+    onEmptySubmit: y,
+    enableImmediateInvoiceSeatPurchase: ee = !1,
+    onImmediateInvoiceStepChange: b,
+    onImmediateInvoiceUpdatingChange: x
+}) {
+    "use no forget";
+    let [S] = (0, J.useState)(() => Gt(e)), te = (0, J.useRef)(!1);
+    (0, J.useEffect)(() => {
+        te.current = !0;
+        let e = e => {
+            e.persisted || S.exit()
+        };
+        return window.addEventListener(`pagehide`, e), () => {
+            te.current = !1, window.removeEventListener(`pagehide`, e), queueMicrotask(() => {
+                te.current || S.exit()
+            })
+        }
+    }, [S]);
+    let w = jn(l),
+        {
+            showRoleColumn: E,
+            showSeatTypeColumn: D
+        } = vn(e),
+        O = d ?? E,
+        ne = f ?? D,
+        k = jt(e.data),
+        re = rt(e.id),
+        {
+            data: ie,
+            isLoading: ae
+        } = T(e.id),
+        oe = e.isK12(),
+        se = I(e.id, oe),
+        ce = en({
+            defaultInviteSeatTypeOverride: u,
+            workspaceDefaultSeatType: ie?.default_seat_type,
+            isUsageBasedSeatEnabled: k,
+            isPremiumSeatEnabled: re,
+            availablePaidSeatCounts: g
+        }),
+        A = oe ? se : void 0,
+        le = e.isFreeWorkspace() || oe && !!se,
+        ue = (0, J.useCallback)(() => {
+            Vt(Be.CHATGPT_WORKSPACE_INVITE_FLOW_DROPOFF_TYPE_CANCEL), t()
+        }, [t]);
+    return ae ? (0, Y.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [(0, Y.jsx)(`div`, {
+            className: C(`flex min-h-48 items-center justify-center`, c),
+            children: (0, Y.jsx)(_, {
+                className: `icon-lg text-token-text-tertiary`
+            })
+        }), o ? (0, Y.jsx)(`div`, {
+            className: C(`flex w-full flex-shrink-0 flex-col gap-2`, s ? `mt-0` : `mt-8`),
+            children: (0, Y.jsx)(n, {
+                color: `ghost`,
+                size: a ? `large` : `medium`,
+                onClick: ue,
+                children: r
+            })
+        }) : null]
+    }) : (0, Y.jsx)(xn, {
+        inviteFlowAnalytics: S,
+        onCancel: ue,
+        cancelButtonText: r,
+        fullWidthButtons: a,
+        showCancelButton: o,
+        csvButtonAlignedWithPrimary: s,
+        contentClassName: c,
+        workspace: e,
+        onSuccess: i,
+        initialEmails: w,
+        k12InviteDomain: se,
+        maxInvites: h,
+        availablePaidSeatCounts: g,
+        showRoleColumn: O,
+        showSeatTypeColumn: ne,
+        includeUsageBasedSeatType: k && g == null,
+        includePremiumSeatType: re,
+        defaultInviteSeatType: ce,
+        shouldCheckDomainMismatch: le,
+        allowedDomain: A,
+        inviteLayout: p,
+        initialEmptyRowCount: m,
+        emptyStatePrimaryButtonText: v,
+        onEmptySubmit: y,
+        enableImmediateInvoiceSeatPurchase: ee,
+        onImmediateInvoiceStepChange: b,
+        onImmediateInvoiceUpdatingChange: x
+    })
+}
+
+function xn({
+    inviteFlowAnalytics: e,
+    onCancel: t,
+    cancelButtonText: a,
+    fullWidthButtons: o,
+    showCancelButton: c,
+    csvButtonAlignedWithPrimary: l,
+    contentClassName: u,
+    workspace: d,
+    onSuccess: p,
+    initialEmails: m,
+    k12InviteDomain: h,
+    maxInvites: g,
+    availablePaidSeatCounts: _,
+    showRoleColumn: v,
+    showSeatTypeColumn: x,
+    includeUsageBasedSeatType: S,
+    includePremiumSeatType: w,
+    defaultInviteSeatType: T,
+    shouldCheckDomainMismatch: E,
+    allowedDomain: D,
+    inviteLayout: O,
+    initialEmptyRowCount: ne,
+    emptyStatePrimaryButtonText: k,
+    onEmptySubmit: re,
+    enableImmediateInvoiceSeatPurchase: ie,
+    onImmediateInvoiceStepChange: ae,
+    onImmediateInvoiceUpdatingChange: oe
+}) {
+    "use no forget";
+    let {
+        search: se
+    } = pe(), ce = Mn({
+        workspace: d,
+        inviteFlowAnalytics: e,
+        onSuccess: p,
+        k12InviteDomain: h,
+        initialEmails: m,
+        maxInvites: g,
+        availablePaidSeatCounts: _,
+        showRoleColumn: v,
+        showSeatTypeColumn: x,
+        includeUsageBasedSeatType: S,
+        includePremiumSeatType: w,
+        defaultInviteSeatType: T
+    }), A = Se(), le = s(), [de, fe] = (0, J.useState)(!1), [j, me] = (0, J.useState)(null), he = (0, J.useRef)(null), N = (0, J.useCallback)((e = !0) => {
+        he.current?.(e), he.current = null
+    }, []);
+    (0, J.useEffect)(() => () => {
+        N(!1)
+    }, [N]);
+    let {
+        clearState: _e,
+        emailTableRows: P,
+        emailTextAreaValue: ve,
+        emailsOutsideOfDomain: F,
+        fileInputRef: ye,
+        handleClickImportCSV: be,
+        handleDeleteRow: xe,
+        handleInputChange: Ce,
+        handleSubmit: we,
+        handleUploadCSV: Te,
+        hasUploadedCsv: Ee,
+        isInviting: De,
+        setEmailTableRows: Oe,
+        setEmailTextAreaValue: Ae,
+        trackNavigationClick: Ne,
+        defaultInviteRole: Fe,
+        INVITE_ROLES: I
+    } = ce, Ie = ge(), Le = mn(P), L = ie && d.isOwnerOfAccount() && d.isSelfServeBusiness() && d.hasPaidSubscription() && d.data.subscriptionStatus.trial?.isTrialing !== !0 && nt(d.id), ze = L && rt(d.id), {
+        billingPageConfigsQuery: Be,
+        planManagementConfig: He,
+        isError: Ue,
+        isLoading: We
+    } = Re({
+        activeWorkspaceId: d.id,
+        enabled: L
+    }), qe = ke(He)?.can_change_paid_seat_quantity === !0, Ze = Be.data?.invite_prepurchase, Qe = Ze?.workspace_id === d.id && Ze.skip_invite_prepurchase, tt = L && !Qe && qe, {
+        data: R,
+        isLoading: at
+    } = Pe(), ot = Xe(R), {
+        country: ct
+    } = Me(), {
+        billingDetails: z,
+        status: ut
+    } = je({
+        country: ct,
+        currentAccount: d,
+        enabled: tt,
+        location: `AdminInviteFlow.immediateInvoice`,
+        pricingPlanIsTypeBusiness: !0
+    }), dt = ot == null ? ct : ot.countryCode, ft = ot?.billingCurrency ?? z?.currency, mt = r({
+        countryCode: dt,
+        currency: ft,
+        enabled: L && qe && z != null
+    }), {
+        data: _t,
+        isError: xt,
+        isLoading: St
+    } = mt, Ct = ot == null || _t == null ? null : it(_t, ot);
+    (0, J.useEffect)(() => {
+        Ct != null && i.count(f.TEAMS, `business_manage_seats_checkout_pricing_identity_match`, {
+            entry_point: `admin_invite`,
+            matches_subscription_pricing_identity: String(Ct)
+        })
+    }, [Ct]);
+    let wt = _t,
+        Et = [`checkout-pricing-config`, dt ?? null, ft ?? null],
+        {
+            data: H,
+            isLoading: Dt
+        } = yt(d.isSelfServeBusiness() ? d.id : void 0),
+        W = bt(H),
+        Ot = H != null && st(H) >= W,
+        jt = R != null && (lt(R, `prolite`) > 0 || (H?.seat_type_counts?.prolite ?? 0) > 0),
+        {
+            data: Mt,
+            isLoading: Pt
+        } = Ye(d.id, 0, ``),
+        {
+            data: Rt
+        } = $e(d.isSelfServeBusiness() ? At : ``),
+        G = L && (!jt || ze) ? pt({
+            accountId: d.id,
+            checkoutPricingConfig: wt,
+            isSciAccount: !1,
+            isSeatTypeCountsLoading: Dt,
+            seatTypeCounts: H,
+            showPremiumSeats: ze,
+            subscription: R
+        }) : null,
+        zt = L && (St || xt || G == null),
+        Bt = d.isSelfServeBusiness() && kt(Rt),
+        {
+            data: Vt,
+            isLoading: Ht
+        } = Ve(Bt || L ? d.id : void 0, 0, ``, 100),
+        Ut = (Mt?.items ?? []).map(e => e.email_address).filter(e => !!e),
+        Gt = (Vt?.items ?? []).map(e => e.email).filter(e => !!e),
+        Kt = (Vt?.items ?? []).filter(e => It(e.seat_type, {
+            includeProlite: !0
+        }) === Lt).map(e => e.email).filter(e => !!e),
+        qt = (Mt?.items ?? []).filter(e => It(e.seat_type, {
+            includeProlite: !0
+        }) === Lt).map(e => e.email_address).filter(e => !!e),
+        Jt = (Vt?.items ?? []).filter(e => It(e.seat_type, {
+            includeProlite: !0
+        }) === `prolite`).map(e => e.email).filter(e => !!e),
+        Xt = (Mt?.items ?? []).filter(e => It(e.seat_type, {
+            includeProlite: !0
+        }) === `prolite`).map(e => e.email_address).filter(e => !!e),
+        Zt = P.slice(0, g ?? 1 / 0).some(e => {
+            let t = e.email.trim();
+            return t.length > 0 && !y.test(t)
+        }),
+        {
+            isOverFreeTrialInviteLimit: Qt
+        } = _n({
+            rows: P,
+            seatsInUse: R?.seats_in_use,
+            seatsEntitled: R?.seats_entitled,
+            existingActiveMemberEmails: Gt,
+            existingPendingInviteEmails: Ut,
+            hasActiveBusinessFreeTrial: Bt
+        }),
+        {
+            paidStandardSeatCapacity: en,
+            paidPremiumSeatCapacity: rn,
+            standardSeatCapacityShortfall: an,
+            premiumSeatCapacityShortfall: cn,
+            totalSeatCapacityShortfall: fn
+        } = on({
+            rows: P,
+            showSeatTypeColumn: x || _ != null,
+            includeUsageBasedSeatType: S,
+            includePremiumSeatType: w || _ != null,
+            defaultInviteSeatType: T,
+            maxInvites: g,
+            subscription: R,
+            workspaceSeatTypeCounts: H,
+            hasPremiumSeats: jt,
+            hasActiveBusinessFreeTrial: Bt,
+            isImmediateInvoiceRolloutEnabled: L,
+            isBusinessPremiumSeatPurchaseReviewEnabled: ze,
+            existingActiveStandardMemberEmails: Kt,
+            existingPendingStandardInviteEmails: qt,
+            existingActivePremiumMemberEmails: Jt,
+            existingPendingPremiumInviteEmails: Xt
+        }),
+        {
+            availableStandardSeats: hn,
+            availablePremiumSeats: gn
+        } = $t({
+            subscription: R,
+            workspaceSeatTypeCounts: H,
+            paidStandardSeatCapacity: en,
+            paidPremiumSeatCapacity: rn
+        });
+    (0, J.useEffect)(() => {
+        ee()?.id === d.id && e.updateContext(Wt(d, R))
+    }, [e, R, d]);
+    let vn = R == null ? null : gt(R, `default`, en) + gt(R, `prolite`, rn),
+        yn = H != null && vn != null && vn >= W,
+        bn = at || Dt || Ht || Pt || R == null || H == null || Vt == null || Mt == null,
+        xn = L && !Qe && !Bt && (qe || He == null && (We || Ue)),
+        Cn = {
+            standard: an,
+            premium: cn
+        },
+        wn = G == null ? null : {
+            standard: en,
+            premium: rn
+        },
+        Tn = G == null || R == null ? null : {
+            standard: gt(R, `default`, en),
+            premium: gt(R, `prolite`, rn)
+        },
+        K = Tn == null || R == null ? null : vt({
+            capacityShortfallSeatCounts: Cn,
+            initialRenewalSeatCounts: Tn,
+            subscription: R
+        }),
+        q = sn({
+            subscription: R,
+            capacityShortfallSeatCounts: Cn
+        }),
+        En = q?.scheduledRemovalSeatCounts.standard ?? 0,
+        Dn = q?.scheduledRemovalSeatCounts.premium ?? 0,
+        On = q?.scheduledDowngradeCount ?? 0,
+        X = En + Dn,
+        kn = X + On,
+        Z = En === Cn.standard && Dn + On === Cn.premium,
+        jn = On === 0 || Tn != null && K != null && K.standard + On === Tn.standard + Cn.standard,
+        Pn = xn && fn > 0,
+        Fn = Pn && (Ue || ut === `error` || xt),
+        In = K == null ? null : K.standard + K.premium,
+        Ln = In != null && In >= W,
+        Rn = In != null && In > W,
+        zn = d.isAdminOfAccount() || d.isOwnerOfAccount(),
+        Bn = Pn,
+        Vn = Bn && Ln,
+        Hn = q != null && Z && jn && !Rn && !Fn,
+        Un = Bn ? (0, Y.jsxs)(`div`, {
+            className: `border-token-border-status-warning bg-token-bg-status-warning text-token-text-status-warning flex w-full items-center gap-5 rounded-[20px] border px-6 py-4 shadow-[0_1px_6px_rgba(0,0,0,0.06)]`,
+            children: [(0, Y.jsx)(ue, {
+                className: `size-6 shrink-0`
+            }), (0, Y.jsxs)(`div`, {
+                className: `flex min-w-0 flex-1 flex-col gap-0.5`,
+                children: [(0, Y.jsx)(`div`, {
+                    className: `text-sm leading-5 font-semibold`,
+                    children: Hn ? X > 0 && q.scheduledDowngradeCount > 0 ? (0, Y.jsx)(M, {
+                        ...Q.scheduledSeatChangesCanceledWarningTitle,
+                        values: {
+                            scheduledSeatChangeCount: kn
+                        }
+                    }) : X > 0 ? (0, Y.jsx)(M, {
+                        ...Q.scheduledSeatRemovalCanceledWarningTitle,
+                        values: {
+                            scheduledRemovalCount: X
+                        }
+                    }) : (0, Y.jsx)(M, {
+                        ...Q.scheduledSeatDowngradeCanceledWarningTitle,
+                        values: {
+                            scheduledDowngradeCount: q.scheduledDowngradeCount
+                        }
+                    }) : (0, Y.jsx)(M, {
+                        ...Q.additionalPaidSeatsNeededWarningTitle,
+                        values: {
+                            count: fn
+                        }
+                    })
+                }), (0, Y.jsxs)(`div`, {
+                    className: `text-sm leading-5`,
+                    children: [Rn ? (0, Y.jsx)(M, {
+                        ...Q.additionalPaidSeatsExceedMaximumWarningBody,
+                        values: {
+                            maxSeats: W
+                        }
+                    }) : Fn ? (0, Y.jsx)(M, {
+                        ...Q.additionalPaidSeatsBillingUnavailableWarningBody
+                    }) : Hn ? X > 0 && q.scheduledDowngradeCount > 0 ? (0, Y.jsx)(M, {
+                        ...Q.scheduledSeatChangesCanceledWarningBody,
+                        values: {
+                            scheduledDowngradeCount: q.scheduledDowngradeCount,
+                            scheduledRemovalCount: X
+                        }
+                    }) : En > 0 && Dn > 0 ? (0, Y.jsx)(M, {
+                        ...Q.scheduledMultiTierSeatRemovalCanceledWarningBody,
+                        values: {
+                            scheduledRemovalCount: X
+                        }
+                    }) : En > 0 ? (0, Y.jsx)(M, {
+                        ...Q.scheduledStandardSeatRemovalCanceledWarningBody,
+                        values: {
+                            scheduledRemovalCount: X
+                        }
+                    }) : Dn > 0 ? (0, Y.jsx)(M, {
+                        ...Q.scheduledPremiumSeatRemovalCanceledWarningBody,
+                        values: {
+                            scheduledRemovalCount: X
+                        }
+                    }) : (0, Y.jsx)(M, {
+                        ...Q.scheduledSeatDowngradeCanceledWarningBody,
+                        values: {
+                            scheduledDowngradeCount: q.scheduledDowngradeCount
+                        }
+                    }) : (0, Y.jsx)(M, {
+                        ...Le === 1 ? Q.additionalPaidSeatsNeededForSingleInviteWarningBody : Q.additionalPaidSeatsNeededWarningBody,
+                        values: {
+                            count: fn
+                        }
+                    }), Ln && (0, Y.jsx)(ht, {
+                        className: `mt-1`,
+                        maximumSeats: W,
+                        seatCount: In ?? 0,
+                        variant: `inline`
+                    })]
+                })]
+            }), Fn && !Rn && (0, Y.jsx)(n, {
+                color: `secondary`,
+                loading: Be.isFetching || mt.isFetching || Ie.isFetching({
+                    queryKey: Et
+                }) > 0,
+                size: `small`,
+                type: `button`,
+                onClick: () => {
+                    Ue && Be.refetch(), ut === `error` && Ie.invalidateQueries({
+                        queryKey: Et
+                    }), xt && mt.refetch()
+                },
+                children: (0, Y.jsx)(M, {
+                    ...Q.retrySeatPurchaseBillingButton
+                })
+            })]
+        }) : null,
+        Wn = (Ot || yn) && !Vn ? (0, Y.jsx)(ht, {
+            maximumSeats: W,
+            seatCount: Math.max(st(H), vn ?? 0)
+        }) : null,
+        Gn = Qt ? (0, Y.jsxs)(`div`, {
+            className: `border-token-border-light bg-token-main-surface-primary flex w-full items-center gap-5 rounded-[20px] border px-6 py-4 shadow-[0_1px_6px_rgba(0,0,0,0.06)]`,
+            children: [(0, Y.jsx)(ue, {
+                className: `text-token-text-secondary size-6 shrink-0`
+            }), (0, Y.jsxs)(`div`, {
+                className: `flex min-w-0 flex-1 flex-col gap-0.5`,
+                children: [(0, Y.jsx)(`div`, {
+                    className: `text-token-text-primary text-sm leading-5 font-semibold`,
+                    children: (0, Y.jsx)(M, {
+                        ...Q.freeTrialInviteLimitWarningTitle
+                    })
+                }), (0, Y.jsx)(`div`, {
+                    className: C(`text-token-text-secondary text-sm leading-5`, !zn && `max-w-[500px]`),
+                    children: zn ? (0, Y.jsx)(M, {
+                        ...Q.freeTrialInviteLimitWarning
+                    }) : (0, Y.jsx)(M, {
+                        ...Q.freeTrialInviteLimitWarningAskAdmin
+                    })
+                })]
+            }), zn && (0, Y.jsx)(`a`, {
+                href: b(`/admin/billing`, se),
+                className: `bg-token-text-primary text-token-main-surface-primary inline-flex h-9 shrink-0 items-center justify-center rounded-full px-4 text-sm font-semibold hover:opacity-90`,
+                children: (0, Y.jsx)(M, {
+                    ...Q.upgradeButton
+                })
+            })]
+        }) : null,
+        Kn = re != null && Le === 0,
+        $ = O === `stacked`,
+        qn = !v && !x ? `w-[calc(100%-3rem)]` : v === x ? `w-[56%]` : `w-[68%]`;
+    (0, J.useEffect)(() => {
+        de || P.length > 0 || Oe(tn({
+            rows: Array.from({
+                length: g == null ? ne : Math.min(ne, g)
+            }, () => An({
+                role: Fe,
+                seatType: T
+            })),
+            defaultInviteSeatType: T,
+            availablePaidSeatCounts: _
+        }))
+    }, [_, Fe, T, P.length, ne, de, g, Oe]);
+    let Jn = (0, Y.jsx)(te, {
+            label: A.formatMessage(Q.importCSVTooltip),
+            contentClassName: `w-[280px]`,
+            side: `top`,
+            delayDuration: 200,
+            children: (0, Y.jsx)(n, {
+                color: l ? `ghost` : `secondary`,
+                className: C($ && `h-11 rounded-full border-0 bg-transparent! px-5 text-[14px] font-normal text-[#5D5D5D] shadow-none hover:bg-[#F7F7F7]! dark:bg-transparent! dark:text-white/70 dark:hover:bg-white/6!`),
+                icon: Ke,
+                iconClassName: C($ && `text-[#5D5D5D] dark:text-white/70`),
+                onClick: be,
+                children: (0, Y.jsx)(M, {
+                    ...Ee ? Q.reimportCSVButton : Q.importCSVButton
+                })
+            })
+        }),
+        Yn = e => {
+            let t = g == null ? e.filter((e, t, n) => n.findIndex(t => t.value === e.value) === t) : Yt(e);
+            g != null && t.length > g && le.warning(A.formatMessage(Q.inviteLimitWarning, {
+                maxInvites: g
+            }), {
+                duration: 5,
+                id: `admin_invite_limit`
+            });
+            let n = dn(t, g);
+            Ae(n), Oe(e => pn(n, e, {
+                availablePaidSeatCounts: _,
+                defaultRole: Fe,
+                defaultSeatType: T
+            }))
+        },
+        Xn = () => c ? (0, Y.jsx)(n, {
+            color: `ghost`,
+            size: o ? `large` : `medium`,
+            onClick: () => {
+                _e(), t(), Ne({
+                    buttonType: `Skip`
+                })
+            },
+            children: a
+        }) : null,
+        Zn = () => {
+            if (!R || R.active_until == null || z == null || zt || G == null || wn == null || Tn == null || K == null) return;
+            let e = un({
+                    rows: ln({
+                        availablePaidSeatCounts: _,
+                        rows: P,
+                        defaultInviteRole: Fe,
+                        defaultInviteSeatType: T,
+                        includePremiumSeatType: w,
+                        includeUsageBasedSeatType: S,
+                        maxInvites: g,
+                        showRoleColumn: v,
+                        showSeatTypeColumn: x
+                    }),
+                    workspace: d
+                }),
+                t = {
+                    default: Math.max(0, K.standard - wn.standard),
+                    prolite: Math.max(0, K.premium - wn.premium)
+                };
+            U(e, {
+                step: `action_initiated`
+            }), U(e, {
+                step: `capacity_evaluated`,
+                capacityResult: t.default+t.prolite > 0 ? `purchase_required` : `capacity_change_required`,
+                availablePaidSeatCounts: {
+                    default: hn,
+                    prolite: gn
+                },
+                additionalPaidSeatCounts: t,
+                billingInterval: G.billingPeriod
+            }), me({
+                analyticsFlow: e,
+                currentPaidSeatCounts: wn,
+                initialRenewalSeatCounts: Tn,
+                updatedSeatCounts: K
+            }), ae?.(!0, !0)
+        },
+        Qn = e => (0, Y.jsx)(n, {
+            className: C(e, o && !$ && `w-full`, $ && `mx-auto w-full max-w-[400px]`),
+            color: `primary`,
+            size: o ? `large` : `medium`,
+            loading: De,
+            disabled: De || !Kn && Le === 0 || F.length > 0 || Qt || xn && bn || Pn && (We || Ue || Zt || z == null || R?.active_until == null || Rn || zt),
+            onClick: () => {
+                if (Kn) {
+                    re?.(), Ne({
+                        buttonType: `Send`
+                    });
+                    return
+                }
+                if (!et({
+                        accountId: d.id,
+                        currentAccount: d,
+                        subscription: R,
+                        wouldChangePaidCapacity: L && !Qe && !bn && fn > 0
+                    })) {
+                    if (Pn) Zn();
+                    else {
+                        let e = un({
+                            rows: ln({
+                                availablePaidSeatCounts: _,
+                                rows: P,
+                                defaultInviteRole: Fe,
+                                defaultInviteSeatType: T,
+                                includePremiumSeatType: w,
+                                includeUsageBasedSeatType: S,
+                                maxInvites: g,
+                                showRoleColumn: v,
+                                showSeatTypeColumn: x
+                            }),
+                            workspace: d
+                        });
+                        U(e, {
+                            step: `action_initiated`
+                        }), xn && U(e, {
+                            step: `capacity_evaluated`,
+                            capacityResult: `seat_available`,
+                            availablePaidSeatCounts: {
+                                default: hn,
+                                prolite: gn
+                            },
+                            paymentRequired: !1
+                        }), we(e, xn)
+                    }
+                    Ne({
+                        buttonType: `Send`
+                    })
+                }
+            },
+            children: Kn ? k ?? A.formatMessage(Q.inviteMemberInviteSubmitButton) : A.formatMessage(De ? Q.inviteMemberInviteSubmitButtonLoading : Pn ? Q.inviteMemberContinueButton : Q.inviteMemberInviteSubmitButton)
+        });
+    if (j != null && R != null && R.active_until != null && z != null) return G == null ? null : (0, Y.jsx)(Tt, {
+        embedded: !0,
+        accountId: d.id,
+        analyticsFlow: j.analyticsFlow,
+        billingPeriod: G.billingPeriod,
+        confirmChangesButtonMessage: Q.inviteMemberUpdateSeatsAndSendInvitesButton,
+        confirmPurchaseButtonMessage: Q.inviteMemberPurchaseSeatsAndSendInvitesButton,
+        currency: G.currency,
+        currentPaidSeatCounts: j.currentPaidSeatCounts,
+        initialRenewalSeatCounts: j.initialRenewalSeatCounts,
+        initialSeatCounts: j.currentPaidSeatCounts,
+        maxSeats: W,
+        nextBillingDate: G.nextBillingDate,
+        onBack: () => {},
+        onBeforeInitialSubmit: () => {
+            he.current ??= e.startAction()
+        },
+        onClose: () => {
+            N(), me(null), ae?.(!1)
+        },
+        onComplete: async e => {
+            e && await we(j.analyticsFlow, !0, !0), N()
+        },
+        onUpdatingChange: oe,
+        premiumSeatMonthlyPrice: G.premiumSeatMonthlyPrice,
+        showPremiumSeats: ze,
+        standardSeatMonthlyPrice: G.standardSeatMonthlyPrice,
+        updatedSeatCounts: j.updatedSeatCounts
+    });
+    if (de) return (0, Y.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [(0, Y.jsxs)(`div`, {
+            className: C(`flex flex-col gap-4`, u),
+            children: [(0, Y.jsx)(`input`, {
+                ref: ye,
+                type: `file`,
+                accept: `.csv,text/csv`,
+                id: `upload-csv`,
+                className: `hidden`,
+                onChange: e => {
+                    (async () => {
+                        await Te(e) && fe(!0)
+                    })()
+                }
+            }), F.length > 0 && (0, Y.jsx)(`div`, {
+                className: `flex w-full items-center bg-red-100 p-4`,
+                children: (0, Y.jsxs)(`div`, {
+                    className: `grow text-red-700`,
+                    children: [(0, Y.jsx)(M, {
+                        ...Q.prohibitedExternalEmailDescription
+                    }), (0, Y.jsx)(`pre`, {
+                        className: `my-1`,
+                        children: F.join(`, `)
+                    }), (0, Y.jsx)(M, {
+                        ...Q.prohibitedExternalEmailResolution
+                    })]
+                })
+            }), Gn, Un, Wn, (0, Y.jsx)(`label`, {
+                htmlFor: `add-member-emails`,
+                id: `add-emails-label`,
+                className: `sr-only`,
+                children: (0, Y.jsx)(M, {
+                    ...Q.addEmailsFieldName
+                })
+            }), !l && (0, Y.jsx)(`div`, {
+                className: `flex w-full items-center justify-end`,
+                children: Jn
+            }), (0, Y.jsx)(Sn, {
+                value: ve,
+                onChange: Yn
+            })]
+        }), (0, Y.jsx)(`div`, {
+            className: C(`flex w-full flex-shrink-0 flex-col gap-2`, l ? `mt-0` : `mt-8`),
+            children: l ? (0, Y.jsxs)(Y.Fragment, {
+                children: [(0, Y.jsxs)(`div`, {
+                    className: C(`flex w-full gap-2`, o ? `flex-col` : `items-center justify-between`),
+                    children: [(0, Y.jsx)(`div`, {
+                        className: C(o ? `w-full` : `flex-shrink-0`),
+                        children: Jn
+                    }), (0, Y.jsx)(`div`, {
+                        className: C(o ? `w-full` : `flex-shrink-0`),
+                        children: Qn()
+                    })]
+                }), Xn()]
+            }) : (0, Y.jsxs)(Y.Fragment, {
+                children: [Qn(), Xn()]
+            })
+        })]
+    });
+    let $n = (0, Y.jsx)(`div`, {
+        className: `mx-auto flex w-full max-w-[400px] flex-col gap-3.5`,
+        children: P.map((e, t) => (0, Y.jsx)(Nn, {
+            email: e.email,
+            index: t,
+            emailInputList: P.map(({
+                email: e
+            }) => e),
+            onEmailChange: e => Ce(t, `email`, e),
+            shouldCheckDomainMismatch: E,
+            allowedDomain: D,
+            layout: `stacked`
+        }, t))
+    });
+    return (0, Y.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [(0, Y.jsxs)(`div`, {
+            className: C(`flex flex-col gap-4`, u),
+            children: [(0, Y.jsx)(`input`, {
+                ref: ye,
+                type: `file`,
+                accept: `.csv,text/csv`,
+                id: `upload-csv`,
+                className: `hidden`,
+                onChange: e => {
+                    (async () => {
+                        await Te(e) && fe(!0)
+                    })()
+                }
+            }), F.length > 0 && (0, Y.jsx)(`div`, {
+                className: `flex w-full items-center bg-red-100 p-4`,
+                children: (0, Y.jsxs)(`div`, {
+                    className: `grow text-red-700`,
+                    children: [(0, Y.jsx)(M, {
+                        ...Q.prohibitedExternalEmailDescription
+                    }), (0, Y.jsx)(`pre`, {
+                        className: `my-1`,
+                        children: F.join(`, `)
+                    }), (0, Y.jsx)(M, {
+                        ...Q.prohibitedExternalEmailResolution
+                    })]
+                })
+            }), Gn, Un, Wn, O === `stacked` ? $n : (0, Y.jsxs)(B.Root, {
+                size: `normal`,
+                fixed: !0,
+                children: [(0, Y.jsxs)(`colgroup`, {
+                    children: [(0, Y.jsx)(`col`, {
+                        className: qn
+                    }), v && (0, Y.jsx)(`col`, {
+                        className: x ? `w-[20%]` : `w-[28%]`
+                    }), x && (0, Y.jsx)(`col`, {
+                        className: v ? `w-[20%]` : `w-[28%]`
+                    }), (0, Y.jsx)(`col`, {
+                        className: `w-12`
+                    })]
+                }), (0, Y.jsxs)(B.Header, {
+                    children: [(0, Y.jsx)(B.HeaderCell, {
+                        className: `dark:bg-transparent`,
+                        children: (0, Y.jsx)(M, {
+                            ...Q.inviteTableHeaderEmail
+                        })
+                    }), v && (0, Y.jsx)(B.HeaderCell, {
+                        className: `w-32 ps-3 dark:bg-transparent`,
+                        children: (0, Y.jsx)(M, {
+                            ...Q.inviteTableHeaderRole
+                        })
+                    }), x && (0, Y.jsx)(B.HeaderCell, {
+                        className: `w-36 ps-3 dark:bg-transparent`,
+                        children: (0, Y.jsx)(M, {
+                            ...Nt.seatType
+                        })
+                    }), (0, Y.jsx)(B.HeaderCell, {
+                        className: `dark:bg-transparent`
+                    })]
+                }), (0, Y.jsx)(B.Body, {
+                    children: P.map((e, t) => (0, Y.jsxs)(B.Row, {
+                        children: [(0, Y.jsx)(B.Cell, {
+                            verticalAlign: `middle`,
+                            children: (0, Y.jsx)(Nn, {
+                                email: e.email,
+                                index: t,
+                                emailInputList: P.map(({
+                                    email: e
+                                }) => e),
+                                onEmailChange: e => Ce(t, `email`, e),
+                                shouldCheckDomainMismatch: E,
+                                allowedDomain: D,
+                                ariaLabel: A.formatMessage(Q.inviteTableHeaderEmail),
+                                layout: `table`
+                            })
+                        }), v && (0, Y.jsx)(B.Cell, {
+                            verticalAlign: `middle`,
+                            divClassName: `min-h-14 items-center`,
+                            children: (0, Y.jsxs)(V.Root, {
+                                value: e.role,
+                                onValueChange: e => Ce(t, `role`, e),
+                                children: [(0, Y.jsxs)(V.Trigger, {
+                                    className: `w-32 justify-between`,
+                                    children: [(0, Y.jsx)(V.Value, {}), (0, Y.jsx)(V.Icon, {})]
+                                }), (0, Y.jsx)(V.Portal, {
+                                    children: (0, Y.jsxs)(V.Content, {
+                                        className: `border-token-main-surface-secondary border`,
+                                        children: [(0, Y.jsx)(V.Item, {
+                                            value: I.member,
+                                            children: (0, Y.jsx)(M, {
+                                                ...Q.inviteRoleMember
+                                            })
+                                        }), I.analytics_viewer && (0, Y.jsx)(V.Item, {
+                                            value: I.analytics_viewer,
+                                            children: (0, Y.jsx)(M, {
+                                                ...Q.inviteRoleAnalyticsViewer
+                                            })
+                                        }), I.admin && (0, Y.jsx)(V.Item, {
+                                            value: I.admin,
+                                            children: (0, Y.jsx)(M, {
+                                                ...Q.inviteRoleAdmin
+                                            })
+                                        }), I.owner && (0, Y.jsx)(V.Item, {
+                                            value: I.owner,
+                                            children: (0, Y.jsx)(M, {
+                                                ...Q.inviteRoleOwner
+                                            })
+                                        })]
+                                    })
+                                })]
+                            })
+                        }), x && (0, Y.jsx)(B.Cell, {
+                            verticalAlign: `middle`,
+                            divClassName: `min-h-14 items-center`,
+                            children: (0, Y.jsx)(Ft, {
+                                workspaceId: d.id,
+                                currentSeatType: e.seatType,
+                                includeUsageBased: S,
+                                includeProlite: w,
+                                preserveProlite: _ != null,
+                                disabledSeatTypes: nn({
+                                    rows: P,
+                                    currentSeatType: e.seatType,
+                                    availablePaidSeatCounts: _
+                                }),
+                                onUpdateSeatType: e => {
+                                    Ce(t, `seatType`, e)
+                                },
+                                triggerClassName: `w-36 justify-between`,
+                                contentClassName: `border-token-border-default border`
+                            })
+                        }), (0, Y.jsx)(B.Cell, {
+                            textAlign: `right`,
+                            verticalAlign: `middle`,
+                            divClassName: `min-h-14 items-center justify-end`,
+                            children: (0, Y.jsx)(Je, {
+                                onClick: () => xe(t),
+                                className: `icon-sm text-token-text-secondary me-2 cursor-pointer`
+                            })
+                        })]
+                    }, t))
+                })]
+            }), (0, Y.jsxs)(`div`, {
+                className: C(`align-center mb-4 flex`, $ ? `mx-auto w-full max-w-[400px] items-center justify-between` : `justify-between`),
+                children: [g == null || P.length < g ? (0, Y.jsx)(n, {
+                    color: `secondary`,
+                    className: C($ && `h-11 rounded-full border border-black/10 bg-white px-5 text-[14px] font-normal text-[#5D5D5D] shadow-none hover:bg-[#F7F7F7] dark:border-white/12 dark:bg-transparent dark:text-white/70 dark:hover:bg-white/6`),
+                    iconClassName: C($ && `text-[#5D5D5D] dark:text-white/70`),
+                    onClick: () => {
+                        Oe(e => tn({
+                            rows: [...e, An({
+                                role: Fe,
+                                seatType: T
+                            })],
+                            defaultInviteSeatType: T,
+                            availablePaidSeatCounts: _
+                        }))
+                    },
+                    icon: Ge,
+                    children: (0, Y.jsx)(M, {
+                        ...Q.addEmailButton
+                    })
+                }) : null, !l && Jn]
+            })]
+        }), (0, Y.jsx)(`div`, {
+            className: C(`flex w-full flex-shrink-0 flex-col gap-2`, l ? `mt-0` : $ ? `mt-4` : `mt-8`),
+            children: l ? (0, Y.jsxs)(Y.Fragment, {
+                children: [(0, Y.jsxs)(`div`, {
+                    className: C(`flex w-full gap-2`, o ? `flex-col` : `items-center justify-between`),
+                    children: [(0, Y.jsx)(`div`, {
+                        className: C(o ? `w-full` : `flex-shrink-0`),
+                        children: Jn
+                    }), (0, Y.jsx)(`div`, {
+                        className: C(o ? `w-full` : `flex-shrink-0`),
+                        children: Qn()
+                    })]
+                }), Xn()]
+            }) : (0, Y.jsxs)(Y.Fragment, {
+                children: [Qn(), Xn()]
+            })
+        })]
+    })
+}
+
+function Sn(e) {
+    "use no forget";
+    let t = se(),
+        n = (0, J.useMemo)(() => t?.subscriptionAnalyticsParams, [t]);
+    return (0, Y.jsx)(Ct, {
+        trackEmailsAdded: (0, J.useCallback)(e => {
+            p.logEvent(`Account Pay: Collaborator Emails Added`, {
+                ...n,
+                ...e
+            })
+        }, [n]),
+        trackEmailRemoved: (0, J.useCallback)(e => {
+            p.logEvent(`Account Pay: Collaborator Email Removed`, {
+                ...n,
+                ...e
+            })
+        }, [n]),
+        ...e
+    })
+}
+
+function Cn(e) {
+    "use no forget";
+    let t = Se(),
+        r = s(),
+        {
+            search: i
+        } = pe();
+    return F({
+        mutationFn: async ({
+            emails: a,
+            role: o,
+            seatType: s,
+            analyticsFlowId: c,
+            submissionId: d
+        }) => {
+            let f = [],
+                p = Math.max(5, Math.round(a.length / 10));
+            for (let e = 0; e < a.length; e += p) f.push(a.slice(e, e + p));
+            let m = async a => {
+                try {
+                    let n = await l.safePost(`/accounts/{account_id}/invites`, {
+                        parameters: {
+                            path: {
+                                account_id: e.id
+                            }
+                        },
+                        requestBody: {
+                            email_addresses: a,
+                            flow_id: c,
+                            role: o,
+                            seat_type: s,
+                            resend_emails: !0,
+                            submission_id: d
+                        }
+                    });
+                    return n.errored_emails.length > 0 && r.danger(t.formatMessage(Q.inviteMessageFailure, {
+                        emailsStr: n.errored_emails.map(({
+                            email_address: e,
+                            error: t
+                        }) => `${e}: ${t}`).join(`, `)
+                    }), {
+                        loggingTitle: `Failed to invite members`,
+                        toastId: `admin_invite`,
+                        loggingDescription: Q.inviteMessageFailure.defaultMessage
+                    }), {
+                        firstError: void 0,
+                        paymentRequired: !1,
+                        successfulInviteCount: n.account_invites.length,
+                        alreadyMemberCount: n.already_member_emails?.length ?? 0
+                    }
+                } catch (a) {
+                    let o = a instanceof u && a.status === 401 && (a.code === `workspace_subscription_delinquent` || a.code == null && a.message === `Team has a delinquent subscription`),
+                        s = o ? e.isOwnerOfAccount() ? t.formatMessage({
+                            id: `admin-invite.paymentRequired.owner`,
+                            defaultMessage: `Invitations couldn't be sent because your workspace has an unpaid subscription. Update your payment details, then try sending the invitations again.`
+                        }) : t.formatMessage({
+                            id: `admin-invite.paymentRequired.member`,
+                            defaultMessage: `Invitations couldn't be sent because your workspace has an unpaid subscription. Ask a workspace owner to update the payment details, then try again.`
+                        }) : a instanceof Error ? a.message : `Failed to invite members`;
+                    return r.danger(s, {
+                        toastId: `admin_invite`,
+                        loggingTitle: `Failed to invite members`,
+                        loggingDescription: s,
+                        action: o && e.isOwnerOfAccount() ? (0, Y.jsx)(n, {
+                            as: `a`,
+                            to: b(`/admin/billing`, i),
+                            openNewTab: !0,
+                            color: `primary`,
+                            size: `small`,
+                            children: (0, Y.jsx)(M, {
+                                id: `admin-invite.paymentRequired.updatePayment`,
+                                defaultMessage: `Update payment`
+                            })
+                        }) : void 0
+                    }), {
+                        firstError: a,
+                        paymentRequired: o ? !0 : void 0,
+                        successfulInviteCount: 0,
+                        alreadyMemberCount: 0
+                    }
+                }
+            }, h = await Promise.all(f.map(e => m(e)));
+            return {
+                firstError: h.find(({
+                    firstError: e
+                }) => e != null)?.firstError,
+                paymentRequired: h.some(e => e.paymentRequired) ? !0 : !h.every(e => e.paymentRequired === !1) && void 0,
+                successfulInviteCount: h.reduce((e, t) => e + t.successfulInviteCount, 0),
+                alreadyMemberCount: h.reduce((e, t) => e + t.alreadyMemberCount, 0)
+            }
+        }
+    })
+}
+
+function wn(e) {
+    let t = e?.trim() ?? ``;
+    return t.startsWith(`"`) && t.endsWith(`"`) || t.startsWith(`'`) && t.endsWith(`'`) ? t.slice(1, -1).trim() : t
+}
+
+function Tn(e, t, n) {
+    let r = wn(e).toLowerCase().replaceAll(`-`, `_`).replaceAll(` `, `_`);
+    return t.has(r) ? r : n
+}
+
+function K(e, t) {
+    switch (wn(e).toLowerCase().replaceAll(`-`, `_`).replaceAll(` `, `_`)) {
+        case `chatgpt`:
+        case `default`:
+        case `standard`:
+            return `default`;
+        case `codex`:
+        case `usage_based`:
+            return `usage_based`;
+        case `premium`:
+        case `prolite`:
+            return `prolite`;
+        default:
+            return t
+    }
+}
+
+function q(e, {
+    allowedRoles: t,
+    defaultRole: n,
+    defaultSeatType: r
+}) {
+    let i = e.split(/\r?\n/),
+        a = new Set;
+    return i.reduce((e, i) => {
+        let [o = ``, s = ``, c = ``] = i.split(`,`), l = wn(o);
+        return y.test(l) && !a.has(l) && e.push(An({
+            email: l,
+            role: Tn(s, t, n),
+            seatType: K(c, r)
+        })), a.add(l), e
+    }, [])
+}
+
+function En(e, t, n, r) {
+    return new Promise(i => {
+        if (e.size / (1024 * 1024) > On) i({
+            status: `error`,
+            reason: `file_too_large`
+        });
+        else if (e.type !== `text/csv`) i({
+            status: `error`,
+            reason: `invalid_file_type`
+        });
+        else {
+            let a = new FileReader;
+            a.readAsText(e), a.onload = function(e) {
+                let a = e.target?.result;
+                i({
+                    status: `success`,
+                    newRows: q(a, {
+                        allowedRoles: t,
+                        defaultRole: n,
+                        defaultSeatType: r
+                    })
+                })
+            }
+        }
+    })
+}
+var Dn, J, Y, On, X, kn, Z, An, jn, Mn, Nn, Pn, Q, Fn = e((() => {
+    Dn = xe(), w(), Ue(), qe(), We(), ce(), Ze(), g(), St(), Ce(), d(), fe(), Ee(), dt(), tt(), wt(), ft(), mt(), Et(), Dt(), Ot(), _t(), Pt(), De(), Ie(), ot(), Ne(), xt(), R(), ct(), at(), Qe(), Fe(), x(), j(), le(), c(), h(), Te(), o(), m(), v(), a(), A(), Mt(), be(), k(), J = t(P()), _e(), N(), ve(), Oe(), ze(), O(), Kt(), Qt(), cn(), Y = me(), On = 25, X = 3, kn = 10, Z = [], An = ({
+        email: e = ``,
+        role: t,
+        seatType: n
+    }) => ({
+        email: e,
+        role: t,
+        seatType: n
+    }), jn = e => {
+        if (!e?.length) return Z;
+        let t = new Set,
+            n = [];
+        return e.slice(0, X).forEach(e => {
+            let r = e.trim();
+            if (!r) return;
+            let i = r.toLowerCase();
+            t.has(i) || (t.add(i), n.push(r))
+        }), n
+    }, Mn = ({
+        workspace: e,
+        inviteFlowAnalytics: t,
+        onSuccess: n,
+        k12InviteDomain: r,
+        initialEmails: i,
+        maxInvites: a,
+        showRoleColumn: o,
+        showSeatTypeColumn: c,
+        includeUsageBasedSeatType: l,
+        includePremiumSeatType: u,
+        defaultInviteSeatType: d,
+        availablePaidSeatCounts: f
+    }) => {
+        "use no forget";
+        let m = Se(),
+            h = ge(),
+            g = s(),
+            _ = de(`3528236309`).get(`can_see_analytics_viewer_role`, !1),
+            v = se(),
+            ee = e.isOwnerOfAccount(),
+            b = (0, J.useRef)(null),
+            x = Pn(ee, _, e.planType === ne.ROSALIND_ACADEMIC),
+            S = (0, J.useMemo)(() => {
+                let t = e.isFreeWorkspace() ? `owner` : `member`;
+                return x[t] ?? x.member
+            }, [x, e]),
+            te = tn({
+                rows: (i ?? Z).map(e => An({
+                    email: e,
+                    role: S,
+                    seatType: d
+                })),
+                defaultInviteSeatType: d,
+                availablePaidSeatCounts: f
+            }),
+            [C, w] = (0, J.useState)(!1),
+            [T, E] = (0, J.useState)(!1),
+            [O, k] = (0, J.useState)(te),
+            [re, ie] = (0, J.useState)([]),
+            {
+                mutateAsync: ce
+            } = Cn(e),
+            A = Ae(),
+            le = L() ?? !0,
+            [ue, fe] = (0, J.useState)(Z),
+            j = (0, J.useMemo)(() => v?.subscriptionAnalyticsParams, [v]);
+        (0, J.useEffect)(() => {
+            let t = O.filter(({
+                email: e
+            }) => e.trim().length > 0);
+            if (!t.length) {
+                fe(Z);
+                return
+            }
+            let n = new Set;
+            if (e.isK12() && r) {
+                let e = r.toLowerCase();
+                t.forEach(({
+                    email: t
+                }) => {
+                    let r = t.trim(),
+                        i = r.toLowerCase();
+                    !i.endsWith(`@${e}`) && i.includes(`@`) && n.add(r)
+                })
+            }
+            if (!le && A?.length) {
+                let e = A.map(e => `@` + e.hostname.toLowerCase());
+                t.map(({
+                    email: e
+                }) => e.trim()).filter(t => !e.some(e => t.toLowerCase().endsWith(e))).forEach(e => n.add(e))
+            }
+            let i = Array.from(n);
+            fe(i.length ? i : Z)
+        }, [A, le, O, r, e]);
+        let pe = (0, J.useCallback)(e => {
+                let t = {
+                    numEmailsAdded: e,
+                    uploadType: `Bulk`
+                };
+                p.logEvent(`Account Pay: Collaborator Emails Added`, {
+                    ...j,
+                    ...t
+                })
+            }, [j]),
+            me = (0, J.useCallback)(async e => {
+                let t = e.target.files?.[0];
+                if (!t) return !1;
+                let n = await En(t, new Set(Object.values(x)), S, d);
+                if (n.status === `success`) {
+                    let t = tn({
+                        rows: Jt(n.newRows, a),
+                        defaultInviteSeatType: d,
+                        availablePaidSeatCounts: f
+                    });
+                    return a != null && gn(n.newRows).length > a && g.warning(m.formatMessage(Q.inviteLimitWarning, {
+                        maxInvites: a
+                    }), {
+                        duration: 5,
+                        id: `admin_invite_limit`
+                    }), w(!0), k(t), ie(t.map(e => ({
+                        label: e.email,
+                        value: e.email,
+                        isValid: y.test(e.email)
+                    }))), pe(t.length), e.target.files = null, !0
+                }
+                return n.reason === `file_too_large` ? g.danger(m.formatMessage(Q.fileTooLargeWarning, {
+                    maxSize: `${On}MB`
+                }), {
+                    duration: 5,
+                    loggingTitle: `CSV Upload: File too large`,
+                    toastId: `csv_upload_too_large`,
+                    loggingDescription: Q.fileTooLargeWarning.defaultMessage
+                }) : n.reason === `invalid_file_type` && g.danger(m.formatMessage(Q.fileIncorrectTypeWarning), {
+                    duration: 5,
+                    loggingTitle: `CSV Upload: File incorrect type`,
+                    toastId: `csv_upload`,
+                    loggingDescription: Q.fileIncorrectTypeWarning.defaultMessage
+                }), !1
+            }, [x, f, S, d, m, a, g, pe]),
+            he = (e, t, n) => {
+                let r = [...O];
+                r[e] = {
+                    ...r[e],
+                    [t]: n
+                }, k(r)
+            },
+            M = (0, J.useCallback)(e => {
+                p.logEvent(`Account Pay: Add Collaborators Modal Clicked`, {
+                    ...j,
+                    ...e
+                })
+            }, [j]),
+            N = (0, J.useCallback)(() => {
+                p.logEvent(`Account Pay: Add Collaborators Upload Clicked`, j)
+            }, [j]),
+            _e = (0, J.useCallback)(() => {
+                p.logEvent(`Account Pay: Collaborator Email Removed`, j)
+            }, [j]),
+            P = (0, J.useCallback)(e => {
+                let t = Le(e);
+                return p.logEvent(`Account Pay: Invite Collaborators Submitted`, {
+                    ...j,
+                    ...e
+                }, t ? {
+                    eventId: t
+                } : void 0), t
+            }, [j]),
+            ve = e => {
+                let t = [...O.slice(0, e), ...O.slice(e + 1)];
+                k(t), _e()
+            },
+            F = (0, J.useCallback)(() => {
+                k([]), E(!1), ie([]), w(!1)
+            }, []),
+            be = (0, J.useCallback)(async (r, i, a = !1) => {
+                E(!0);
+                let o = !1;
+                try {
+                    let s = ye();
+                    r.length > 5 && g.info(m.formatMessage(Q.inviteMessageLoading, {
+                        numRows: r.length
+                    }), {
+                        hasCloseButton: !0
+                    });
+                    let c = [
+                            [`admin`, D.ADMIN],
+                            [`owner`, D.OWNER],
+                            [`member`, D.STANDARD],
+                            [`analytics_viewer`, D.ANALYTICS_VIEWER]
+                        ],
+                        l = Array.from(r.reduce((e, t) => {
+                            let n = c.find(([e]) => e === t.role)?.[1];
+                            if (!n) return e;
+                            let r = t.seatType,
+                                i = `${n}:${r}`,
+                                a = e.get(i);
+                            return a ? (a.emails.push(t.email), e) : (e.set(i, {
+                                emails: [t.email],
+                                role: n,
+                                seatType: r
+                            }), e)
+                        }, new Map).values()),
+                        u = await Promise.allSettled(l.map(({
+                            emails: e,
+                            role: t,
+                            seatType: n
+                        }) => ce({
+                            emails: e,
+                            analyticsFlowId: i.flowId,
+                            role: t,
+                            seatType: n,
+                            submissionId: s
+                        }))),
+                        d = u.reduce((e, t) => e + (t.status === `fulfilled` ? t.value.successfulInviteCount : 0), 0),
+                        f = u.reduce((e, t) => e + (t.status === `fulfilled` ? t.value.alreadyMemberCount : 0), 0),
+                        p;
+                    for (let e of u) {
+                        if (e.status === `rejected`) {
+                            p = e.reason;
+                            break
+                        }
+                        if (e.value.firstError != null) {
+                            p = e.value.firstError;
+                            break
+                        }
+                    }
+                    t.recordResult(d + f, p == null), U(i, {
+                        ...p != null && a ? {
+                            actionFailureType: `mutation_failed`,
+                            failedTargetCount: Math.max(0, r.length - d - f),
+                            step: `action_attempt_failed`,
+                            successfulTargetCount: d
+                        } : zt({
+                            affectedTargetCount: r.length,
+                            successfulTargetCount: d,
+                            alreadyMemberCount: f
+                        }),
+                        paymentRequired: u.some(e => e.status === `fulfilled` && e.value.paymentRequired) ? !0 : !u.every(e => e.status === `fulfilled` && e.value.paymentRequired === !1) && void 0
+                    }), o = !0;
+                    let _ = P({
+                        ...Bt(r),
+                        numSuccessfulInvites: d
+                    });
+                    if (d > 0 && (setTimeout(() => {
+                            h.invalidateQueries({
+                                queryKey: [`workspace`, e.id, `invites`, 0, ``],
+                                exact: !0
+                            })
+                        }, 1e3), g.success(m.formatMessage(Q.inviteSuccessToast, {
+                            numRows: d,
+                            userStr: d === 1 ? `user` : `users`,
+                            workspaceName: oe(m, e)
+                        }))), f > 0 && g.info(m.formatMessage({
+                            id: `admin-invite.toast.already_member`,
+                            defaultMessage: `{count, plural, one {Already a member — no invitation sent} other {# people are already members — no invitations sent}}`
+                        }, {
+                            count: f
+                        })), ae(we, r.length, {
+                            action: `SubmitEmails`,
+                            location: `modal-submit-button`,
+                            text: `Submit`,
+                            step: `AdminModal-CollectEmails-Submit`,
+                            numSuccessfulInvites: d.toString(),
+                            ..._ ? {
+                                unique_event_id: _
+                            } : {}
+                        }), p != null) throw p;
+                    n?.(), F()
+                } catch (e) {
+                    throw t.recordResult(0, !1), o || U(i, {
+                        step: a ? `action_attempt_failed` : `action_failed`,
+                        actionFailureType: `mutation_failed`
+                    }), e
+                } finally {
+                    E(!1)
+                }
+            }, [F, ce, t, m, n, h, g, P, e]),
+            xe = (0, J.useCallback)(async (n, r = !1, i = !1) => {
+                let s = ln({
+                        rows: O,
+                        defaultInviteRole: S,
+                        defaultInviteSeatType: d,
+                        includePremiumSeatType: u,
+                        includeUsageBasedSeatType: l,
+                        maxInvites: a,
+                        showRoleColumn: o,
+                        showSeatTypeColumn: c,
+                        availablePaidSeatCounts: f
+                    }),
+                    p = s.filter(e => e.seatType === Lt).length,
+                    m = n ?? un({
+                        rows: s,
+                        workspace: e
+                    });
+                n ?? U(m, {
+                    step: `action_initiated`
+                });
+                let h = t.startAction();
+                try {
+                    if (r) {
+                        await be(s, m, i);
+                        return
+                    }
+                    if (p > 0) {
+                        await H({
+                            analyticsFlow: m,
+                            workspace: e,
+                            introducedDefaultSeatCount: p,
+                            entrypoint: `workspace_onboarding_admin_invite`,
+                            onContinue: async () => {
+                                await be(s, m)
+                            }
+                        });
+                        return
+                    }
+                    U(m, {
+                        step: `capacity_evaluated`,
+                        capacityResult: `not_required`,
+                        paymentRequired: !1
+                    }), await be(s, m)
+                } finally {
+                    h()
+                }
+            }, [f, S, d, O, u, l, t, o, c, be, e, a]);
+        return {
+            INVITE_ROLES: x,
+            defaultInviteRole: S,
+            clearState: F,
+            emailTableRows: O,
+            emailTextAreaValue: re,
+            emailsOutsideOfDomain: ue,
+            fileInputRef: b,
+            handleClickImportCSV: (0, J.useCallback)(() => {
+                b.current?.value && (b.current.value = ``), b.current?.click(), typeof document < `u` && document.activeElement && setTimeout(() => {
+                    document.activeElement?.blur?.()
+                }, 0), N()
+            }, [b, N]),
+            handleDeleteRow: ve,
+            handleInputChange: he,
+            handleSubmit: xe,
+            handleUploadCSV: me,
+            hasUploadedCsv: C,
+            isInviting: T,
+            setEmailTableRows: k,
+            setEmailTextAreaValue: ie,
+            trackNavigationClick: M,
+            trackUploadClick: N
+        }
+    }, Nn = ({
+        email: e,
+        index: t,
+        emailInputList: n,
+        onEmailChange: r,
+        shouldCheckDomainMismatch: i,
+        allowedDomain: a,
+        ariaLabel: o,
+        layout: s = `table`
+    }) => {
+        "use no forget";
+        let c = Se(),
+            [l, u] = (0, J.useState)(!1),
+            d = re(),
+            f = (0, J.useMemo)(() => d ? Xt(d) : null, [d]),
+            p = a ?? f,
+            {
+                hasMismatchedDomain: m,
+                isDuplicate: h,
+                isInvalid: g
+            } = (0, J.useMemo)(() => Zt({
+                email: e,
+                index: t,
+                emailInputList: n,
+                inviteDomain: p,
+                shouldCheckDomainMismatch: i
+            }), [e, n, t, p, i]),
+            _ = l && g,
+            v = l && m,
+            y = h && !_ && !v,
+            ee = _ || v || y,
+            b = c.formatMessage(Q.emailInputPlaceholder);
+        return (0, Y.jsxs)(`div`, {
+            className: `flex w-full flex-col gap-1`,
+            children: [(0, Y.jsx)(He, {
+                ariaLabel: o ?? b,
+                name: `email`,
+                type: `email`,
+                value: e,
+                placeholder: b,
+                onBlur: () => {
+                    u(!0), m && ae(`chatgpt_business_workspace_invite_domain_mismatch`)
+                },
+                onChange: e => {
+                    r(e.target.value)
+                },
+                color: `tertiary`,
+                className: C(s === `stacked` ? `min-h-[48px] w-full overflow-hidden rounded-full! border border-black/6 bg-[#F7F7F7] px-5 py-3 shadow-none dark:border-white/10 dark:bg-[#1F1F1F]` : `ms-px w-[90%] rounded-[20px] px-4 py-2`, ee && `border-token-text-error focus:border-token-text-error`),
+                containerInputClassName: `w-full`,
+                inputClassName: C(`placeholder:text-token-text-tertiary dark:bg-transparent`, s === `stacked` && `bg-transparent text-[16px] leading-6 text-[#1F1F1F] placeholder:text-[16px] placeholder:leading-6 placeholder:text-[#9B9B9B] dark:text-white/92 dark:placeholder:text-white/40`),
+                displayNameLabelClassName: `hidden`
+            }), _ && (0, Y.jsx)(`div`, {
+                className: `text-token-text-error ms-1 flex text-xs`,
+                children: (0, Y.jsx)(M, {
+                    ...Q.invalidEmailWarning
+                })
+            }), v && (0, Y.jsx)(`div`, {
+                className: `text-token-text-error ms-1 flex text-xs`,
+                children: (0, Y.jsx)(M, {
+                    ...Q.mismatchedDomainWarning,
+                    values: {
+                        domain: p ?? ``
+                    }
+                })
+            }), y && (0, Y.jsx)(`div`, {
+                className: `text-token-text-error ms-1 flex text-xs`,
+                children: (0, Y.jsx)(M, {
+                    ...Q.duplicateEmailWarning
+                })
+            })]
+        })
+    }, Pn = (e, t, n) => {
+        let r = {
+            member: `member`
+        };
+        return e && !n && (r.admin = `admin`, r.owner = `owner`), e && t && (r.analytics_viewer = `analytics_viewer`), r
+    }, Q = he({
+        addEmailsFieldName: {
+            id: `admin-invite.addEmailsFieldName.0`,
+            defaultMessage: `Emails`
+        },
+        prohibitedExternalEmailDescription: {
+            id: `admin-invite.prohibitedExternalEmailDescription`,
+            defaultMessage: `The following emails are not a part of your organization's verified domains:`
+        },
+        prohibitedExternalEmailResolution: {
+            id: `admin-invite.prohibitedExternalEmailResolution`,
+            defaultMessage: `Either remove these emails, enable "Allow External Domain Invites" from your workspace settings, or verify these email domains.`
+        },
+        inviteTableHeaderEmail: {
+            id: `admin-invite.inviteTableHeaderEmail`,
+            defaultMessage: `Email`
+        },
+        inviteTableHeaderRole: {
+            id: `admin-invite.inviteTableHeaderRole`,
+            defaultMessage: `Role`
+        },
+        inviteRoleMember: {
+            id: `admin-invite.inviteRoleMember`,
+            defaultMessage: `Member`
+        },
+        inviteRoleAnalyticsViewer: {
+            id: `admin-invite.inviteRoleAnalyticsViewer`,
+            defaultMessage: `Analytics viewer`
+        },
+        inviteRoleAdmin: {
+            id: `admin-invite.inviteRoleAdmin`,
+            defaultMessage: `Admin`
+        },
+        inviteRoleOwner: {
+            id: `admin-invite.inviteRoleOwner`,
+            defaultMessage: `Owner`
+        },
+        fileTooLargeWarning: {
+            id: `admin-invite.fileTooLargeWarning`,
+            defaultMessage: `File is too large. Please upload a CSV file smaller than {maxSize}.`
+        },
+        fileIncorrectTypeWarning: {
+            id: `admin-invite.fileIncorrectTypeWarning`,
+            defaultMessage: `Please upload a CSV file.`
+        },
+        inviteMessageLoading: {
+            id: `admin-invite.inviteMessageLoading`,
+            defaultMessage: `Sending out {numRows} invites, this may take a minute...`
+        },
+        inviteSuccessToast: {
+            id: `admin-invite.inviteSuccessToast`,
+            defaultMessage: `Invited {numRows} {userStr} to {workspaceName}`
+        },
+        inviteMemberInviteSubmitButton: {
+            id: `admin-invite.inviteMemberInviteSubmitButton`,
+            defaultMessage: `Send invites`
+        },
+        inviteMemberInviteSubmitButtonLoading: {
+            id: `admin-invite.inviteMemberInviteSubmitButtonLoading`,
+            defaultMessage: `Sending invites...`
+        },
+        inviteMemberContinueButton: {
+            id: `admin-invite.immediate_invoice.button.continue`,
+            defaultMessage: `Continue`
+        },
+        inviteMemberUpdateSeatsAndSendInvitesButton: {
+            id: `admin-invite.immediate_invoice.button.update_seats_and_send_invites`,
+            defaultMessage: `Update seats and send invites`
+        },
+        inviteMemberPurchaseSeatsAndSendInvitesButton: {
+            id: `admin-invite.immediate_invoice.button.purchase_seats_and_send_invites`,
+            defaultMessage: `Purchase seats and send invites`
+        },
+        inviteLimitWarning: {
+            id: `admin-invite.inviteLimitWarning`,
+            defaultMessage: `You can invite up to {maxInvites} people at a time. Extra emails were not added.`
+        },
+        inviteMessageFailure: {
+            id: `admin-invite.inviteMessageFailure`,
+            defaultMessage: `Unable to invite {emailsStr}`
+        },
+        freeTrialInviteLimitWarning: {
+            id: `admin-invite.freeTrialInviteLimitWarning`,
+            defaultMessage: `You can only invite 10 users while on an active free trial. Upgrade now to invite more.`
+        },
+        freeTrialInviteLimitWarningAskAdmin: {
+            id: `admin-invite.freeTrialInviteLimitWarningAskAdmin`,
+            defaultMessage: `You can only invite 10 users while on an active free trial. Ask your workspace admin to upgrade for more.`
+        },
+        freeTrialInviteLimitWarningTitle: {
+            id: `admin-invite.freeTrialInviteLimitWarningTitle`,
+            defaultMessage: `Trial invite limit reached`
+        },
+        additionalPaidSeatsNeededWarningTitle: {
+            id: `admin-invite.immediate_invoice.warning.additional_seats_needed.title`,
+            defaultMessage: `{count, plural, one {# additional seat needed} other {# additional seats needed}}`
+        },
+        additionalPaidSeatsNeededWarningBody: {
+            id: `admin-invite.immediate_invoice.warning.additional_seats_needed.body.capacity_update`,
+            defaultMessage: `{count, plural, one {Add # additional seat to send these invites.} other {Add # additional seats to send these invites.}}`
+        },
+        additionalPaidSeatsNeededForSingleInviteWarningBody: {
+            id: `admin-invite.immediate_invoice.warning.additional_seats_needed.body.capacity_update.single_invite`,
+            defaultMessage: `{count, plural, one {Add # additional seat to send this invite.} other {Add # additional seats to send this invite.}}`
+        },
+        scheduledSeatRemovalCanceledWarningTitle: {
+            id: `admin-invite.immediate_invoice.warning.scheduled_change_cancellation.title.removal.exact_count`,
+            defaultMessage: `{scheduledRemovalCount, plural, one {One scheduled removal will be canceled} other {# scheduled removals will be canceled}}`
+        },
+        scheduledSeatDowngradeCanceledWarningTitle: {
+            id: `admin-invite.immediate_invoice.warning.scheduled_change_cancellation.title.downgrade.exact_count`,
+            defaultMessage: `{scheduledDowngradeCount, plural, one {One scheduled downgrade will be canceled} other {# scheduled downgrades will be canceled}}`
+        },
+        scheduledSeatChangesCanceledWarningTitle: {
+            id: `admin-invite.immediate_invoice.warning.scheduled_change_cancellation.title.mixed.exact_count`,
+            defaultMessage: `{scheduledSeatChangeCount, plural, one {One scheduled seat change will be canceled} other {# scheduled seat changes will be canceled}}`
+        },
+        scheduledStandardSeatRemovalCanceledWarningBody: {
+            id: `admin-invite.immediate_invoice.warning.scheduled_change_cancellation.body.removal.standard.exact_count`,
+            defaultMessage: `{scheduledRemovalCount, plural, one {By inviting a new team member to a Standard seat, one scheduled Standard seat removal will be canceled.} other {By inviting new team members to Standard seats, # scheduled Standard seat removals will be canceled.}}`
+        },
+        scheduledPremiumSeatRemovalCanceledWarningBody: {
+            id: `admin-invite.immediate_invoice.warning.scheduled_change_cancellation.body.removal.premium.exact_count`,
+            defaultMessage: `{scheduledRemovalCount, plural, one {By inviting a new team member to a Premium seat, one scheduled Premium seat removal will be canceled.} other {By inviting new team members to Premium seats, # scheduled Premium seat removals will be canceled.}}`
+        },
+        scheduledMultiTierSeatRemovalCanceledWarningBody: {
+            id: `admin-invite.immediate_invoice.warning.scheduled_change_cancellation.body.removal.multiple_tiers.exact_count`,
+            defaultMessage: `By inviting new team members to Standard and Premium seats, {scheduledRemovalCount, plural, one {# scheduled seat removal} other {# scheduled seat removals}} will be canceled.`
+        },
+        scheduledSeatDowngradeCanceledWarningBody: {
+            id: `admin-invite.immediate_invoice.warning.scheduled_change_cancellation.body.downgrade.exact_count`,
+            defaultMessage: `{scheduledDowngradeCount, plural, one {By inviting a new team member to a Premium seat, one scheduled Premium-to-Standard downgrade will be canceled.} other {By inviting new team members to Premium seats, # scheduled Premium-to-Standard downgrades will be canceled.}}`
+        },
+        scheduledSeatChangesCanceledWarningBody: {
+            id: `admin-invite.immediate_invoice.warning.scheduled_change_cancellation.body.mixed.counts_by_type.exact_count`,
+            defaultMessage: `By inviting new team members, {scheduledRemovalCount, plural, one {# scheduled seat removal} other {# scheduled seat removals}} and {scheduledDowngradeCount, plural, one {# scheduled seat downgrade} other {# scheduled seat downgrades}} will be canceled.`
+        },
+        additionalPaidSeatsBillingUnavailableWarningBody: {
+            id: `admin-invite.immediate_invoice.warning.billing_unavailable.body`,
+            defaultMessage: `Seat purchase details are temporarily unavailable. Please try again.`
+        },
+        additionalPaidSeatsExceedMaximumWarningBody: {
+            id: `admin-invite.immediate_invoice.warning.maximum_seats_exceeded.body`,
+            defaultMessage: `This workspace cannot have more than {maxSeats, number} paid seats.`
+        },
+        retrySeatPurchaseBillingButton: {
+            id: `admin-invite.immediate_invoice.button.retry_billing`,
+            defaultMessage: `Retry`
+        },
+        upgradeButton: {
+            id: `admin-invite.upgradeButton`,
+            defaultMessage: `Upgrade`
+        },
+        importCSVButton: {
+            id: `admin-invite.importCSVButton`,
+            defaultMessage: `Upload CSV`
+        },
+        reimportCSVButton: {
+            id: `admin-invite.reimportCSVButton`,
+            defaultMessage: `Re-upload CSV`
+        },
+        importCSVTooltip: {
+            id: `admin-invite.importCSVTooltip`,
+            defaultMessage: `Upload a CSV file. Your file must include an email on each line.`
+        },
+        emailInputPlaceholder: {
+            id: `admin-invite.emailInputPlaceholder`,
+            defaultMessage: `Email`
+        },
+        addEmailButton: {
+            id: `admin-invite.addEmailButton`,
+            defaultMessage: `Add more`
+        },
+        duplicateEmailWarning: {
+            id: `admin-invite.duplicateEmailWarning`,
+            defaultMessage: `This email is a duplicate.`
+        },
+        invalidEmailWarning: {
+            id: `admin-invite.invalidEmailWarning`,
+            defaultMessage: `Please enter a valid email address.`
+        },
+        mismatchedDomainWarning: {
+            id: `admin-invite.mismatchedDomainWarning`,
+            defaultMessage: `Enter an email address with the {domain} domain.`
+        }
+    })
+}));
+export {
+    Vt as a, Kt as i, vn as n, Fn as r, yn as t
+};
 //# sourceMappingURL=96bf3632-kz20n7lma2p0bzt5.js.map

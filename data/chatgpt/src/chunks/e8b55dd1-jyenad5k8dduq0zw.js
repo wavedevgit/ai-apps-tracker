@@ -1,2 +1,102 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{At as n,c7 as r,cn as i,gq as a,hn as o,k8 as s,l7 as c,q5 as l,rq as u}from"./4813494d-itnrgnth03y1sm9d.js";import{Bn as d,Vn as f}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$8t as p,AGt as m,OGt as h,Y8t as g,kGt as _,q8t as v}from"./conversation-small-i79e9c315w50am5f.js";var y,b,x,S=e((()=>{m(),s(),u(),p(),c(),n(),y=t(f()),b=d(),x=({children:e,sideOffset:t=6,isOpen:n,closePopover:s,popoverContentRef:c,...u})=>{let d=l(a);return(0,y.useEffect)(()=>{if(!n)return;let e=e=>{e.key===`Escape`&&s()};return document.addEventListener(`keydown`,e,{capture:!0,passive:!0}),()=>document.removeEventListener(`keydown`,e,{capture:!0})},[n,s]),(0,b.jsx)(g,{children:(0,b.jsx)(v,{forceMount:!0,asChild:!0,align:`center`,sideOffset:t,onOpenAutoFocus:e=>{e.preventDefault()},...u,style:{...u.style??{},zIndex:60},children:(0,b.jsx)(`div`,{ref:c,className:r(!n&&`pointer-events-none`,`z-20`),children:(0,b.jsx)(o,{mode:`sync`,children:n&&(0,b.jsx)(i.div,{className:r(`popover bg-token-main-surface-primary dark:bg-token-main-surface-primary shadow-long overflow-auto rounded-2xl bg-clip-padding`),variants:{open:{opacity:1,y:0,transition:d?_:{...h,duration:.1}},closed:{opacity:0,y:-4,transition:d?_:{...h,duration:.1}}},initial:`closed`,animate:`open`,exit:`closed`,children:e})})})})})}}));export{S as n,x as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    At as n,
+    c7 as r,
+    cn as i,
+    gq as a,
+    hn as o,
+    k8 as s,
+    l7 as c,
+    q5 as l,
+    rq as u
+} from "./4813494d-itnrgnth03y1sm9d.js";
+import {
+    Bn as d,
+    Vn as f
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $8t as p,
+    AGt as m,
+    OGt as h,
+    Y8t as g,
+    kGt as _,
+    q8t as v
+} from "./conversation-small-i79e9c315w50am5f.js";
+var y, b, x, S = e((() => {
+    m(), s(), u(), p(), c(), n(), y = t(f()), b = d(), x = ({
+        children: e,
+        sideOffset: t = 6,
+        isOpen: n,
+        closePopover: s,
+        popoverContentRef: c,
+        ...u
+    }) => {
+        let d = l(a);
+        return (0, y.useEffect)(() => {
+            if (!n) return;
+            let e = e => {
+                e.key === `Escape` && s()
+            };
+            return document.addEventListener(`keydown`, e, {
+                capture: !0,
+                passive: !0
+            }), () => document.removeEventListener(`keydown`, e, {
+                capture: !0
+            })
+        }, [n, s]), (0, b.jsx)(g, {
+            children: (0, b.jsx)(v, {
+                forceMount: !0,
+                asChild: !0,
+                align: `center`,
+                sideOffset: t,
+                onOpenAutoFocus: e => {
+                    e.preventDefault()
+                },
+                ...u,
+                style: {
+                    ...u.style ?? {},
+                    zIndex: 60
+                },
+                children: (0, b.jsx)(`div`, {
+                    ref: c,
+                    className: r(!n && `pointer-events-none`, `z-20`),
+                    children: (0, b.jsx)(o, {
+                        mode: `sync`,
+                        children: n && (0, b.jsx)(i.div, {
+                            className: r(`popover bg-token-main-surface-primary dark:bg-token-main-surface-primary shadow-long overflow-auto rounded-2xl bg-clip-padding`),
+                            variants: {
+                                open: {
+                                    opacity: 1,
+                                    y: 0,
+                                    transition: d ? _ : {
+                                        ...h,
+                                        duration: .1
+                                    }
+                                },
+                                closed: {
+                                    opacity: 0,
+                                    y: -4,
+                                    transition: d ? _ : {
+                                        ...h,
+                                        duration: .1
+                                    }
+                                }
+                            },
+                            initial: `closed`,
+                            animate: `open`,
+                            exit: `closed`,
+                            children: e
+                        })
+                    })
+                })
+            })
+        })
+    }
+}));
+export {
+    S as n, x as t
+};
 //# sourceMappingURL=e8b55dd1-jyenad5k8dduq0zw.js.map

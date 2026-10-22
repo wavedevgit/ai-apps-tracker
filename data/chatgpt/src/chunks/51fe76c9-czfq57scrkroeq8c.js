@@ -1,0 +1,145 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Qy as t,
+    Zy as n,
+    c7 as r,
+    l7 as i
+} from "./4813494d-nxpmzchfjvwqts17.js";
+import {
+    Bn as a,
+    wn as o
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function s(e) {
+    "use forget";
+    let t = (0, c.c)(8),
+        {
+            className: n,
+            backgroundClassName: i
+        } = e,
+        a;
+    t[0] === n ? a = t[1] : (a = r(`pointer-events-none absolute inset-px z-0 overflow-visible`, n), t[0] = n, t[1] = a);
+    let o;
+    t[2] === i ? o = t[3] : (o = i ? (0, l.jsx)(`rect`, {
+        className: i,
+        width: `100%`,
+        height: `100%`,
+        rx: 15,
+        fill: `currentColor`,
+        stroke: `none`
+    }) : null, t[2] = i, t[3] = o);
+    let s;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, l.jsx)(`rect`, {
+        width: `100%`,
+        height: `100%`,
+        rx: 15,
+        fill: `none`,
+        stroke: `currentColor`,
+        strokeWidth: `1`,
+        strokeDasharray: `7 6.3`
+    }), t[4] = s) : s = t[4];
+    let u;
+    return t[5] !== a || t[6] !== o ? (u = (0, l.jsxs)(`svg`, {
+        "aria-hidden": !0,
+        "data-testid": `project-dashed-border`,
+        className: a,
+        width: `100%`,
+        height: `100%`,
+        children: [o, s]
+    }), t[5] = a, t[6] = o, t[7] = u) : u = t[7], u
+}
+var c, l, u = e((() => {
+    c = o(), i(), l = a()
+}));
+
+function d(e) {
+    "use forget";
+    let t = (0, f.c)(36),
+        {
+            heading: i,
+            subheading: a,
+            icon: o,
+            actions: c,
+            headingContainerClassName: l,
+            onClick: u,
+            isClickable: d,
+            tooltipLabel: m,
+            borderStyle: h,
+            className: g
+        } = e,
+        _ = d !== void 0 && d,
+        v = u != null,
+        y = o != null,
+        b = _ && v,
+        x = h === `dashed`,
+        S = c ? `gap-6` : `gap-2`,
+        C = y ? `py-4` : `py-0`,
+        w;
+    t[0] !== S || t[1] !== C ? (w = r(`text-token-text-secondary relative z-10 flex flex-col items-center text-sm`, `[@media(max-width:767px)_and_(max-height:480px)]:z-auto!`, S, C), t[0] = S, t[1] = C, t[2] = w) : w = t[2];
+    let T;
+    t[3] === l ? T = t[4] : (T = r(`flex flex-col items-center gap-1 text-center`, l), t[3] = l, t[4] = T);
+    let E;
+    t[5] === i ? E = t[6] : (E = (0, p.jsx)(`h3`, {
+        className: `text-token-text-primary text-base leading-7 font-medium tracking-tight`,
+        children: i
+    }), t[5] = i, t[6] = E);
+    let D;
+    t[7] === a ? D = t[8] : (D = a && (0, p.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm leading-5 font-normal tracking-tight`,
+        children: a
+    }), t[7] = a, t[8] = D);
+    let O;
+    t[9] !== T || t[10] !== E || t[11] !== D ? (O = (0, p.jsxs)(`div`, {
+        className: T,
+        children: [E, D]
+    }), t[9] = T, t[10] = E, t[11] = D, t[12] = O) : O = t[12];
+    let k;
+    t[13] !== c || t[14] !== o || t[15] !== w || t[16] !== O ? (k = (0, p.jsxs)(`div`, {
+        className: w,
+        children: [o, O, c]
+    }), t[13] = c, t[14] = o, t[15] = w, t[16] = O, t[17] = k) : k = t[17];
+    let A = k,
+        j = y ? `px-4 py-3 pb-6` : `px-4 py-6`,
+        M = b && `can-hover:hover:bg-token-bg-secondary/30 active:bg-token-bg-tertiary transition-colors duration-150 focus-visible:outline-token-outline-primary focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2`,
+        N = b ? `cursor-pointer` : `cursor-default`,
+        P;
+    t[18] !== g || t[19] !== j || t[20] !== M || t[21] !== N ? (P = r(`isolate relative flex h-full min-h-80 w-full items-center justify-center rounded-2xl`, j, M, N, g), t[18] = g, t[19] = j, t[20] = M, t[21] = N, t[22] = P) : P = t[22];
+    let F = P,
+        I;
+    t[23] === x ? I = t[24] : (I = x ? (0, p.jsx)(s, {
+        className: `text-token-border-heavy`
+    }) : null, t[23] = x, t[24] = I);
+    let L;
+    t[25] !== A || t[26] !== I ? (L = (0, p.jsxs)(p.Fragment, {
+        children: [I, A]
+    }), t[25] = A, t[26] = I, t[27] = L) : L = t[27];
+    let R = L,
+        z;
+    t[28] !== R || t[29] !== F || t[30] !== _ || t[31] !== u ? (z = _ ? (0, p.jsx)(`button`, {
+        type: `button`,
+        className: F,
+        onClick: u,
+        children: R
+    }) : (0, p.jsx)(`div`, {
+        className: F,
+        children: R
+    }), t[28] = R, t[29] = F, t[30] = _, t[31] = u, t[32] = z) : z = t[32];
+    let B = z;
+    if (!m) return B;
+    let V;
+    return t[33] !== B || t[34] !== m ? (V = (0, p.jsx)(n, {
+        label: m,
+        side: `bottom`,
+        align: `center`,
+        children: B
+    }), t[33] = B, t[34] = m, t[35] = V) : V = t[35], V
+}
+var f, p, m = e((() => {
+    f = o(), t(), u(), i(), p = a()
+}));
+export {
+    u as i, m as n, s as r, d as t
+};
+//# sourceMappingURL=51fe76c9-czfq57scrkroeq8c.js.map

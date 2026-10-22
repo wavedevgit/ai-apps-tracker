@@ -1,2 +1,12 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n,r=e((()=>{t=`https://help.openai.com/en/articles/10847137`,n=`https://help.openai.com/en/articles/10929079`}));export{n,r,t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+var t, n, r = e((() => {
+    t = `https://help.openai.com/en/articles/10847137`, n = `https://help.openai.com/en/articles/10929079`
+}));
+export {
+    n,
+    r,
+    t
+};
 //# sourceMappingURL=7517017f-m0e7hb8h6fyirvew.js.map

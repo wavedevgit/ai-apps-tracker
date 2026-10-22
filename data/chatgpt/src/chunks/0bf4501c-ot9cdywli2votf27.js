@@ -1,0 +1,34 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Iv as t,
+    jv as n
+} from "./4813494d-nxpmzchfjvwqts17.js";
+
+function r(e, t) {
+    let r = n(`installations/select_target`);
+    if (e.length > 1) return r;
+    let i = e[0];
+    return t ? i.account_type === `user` ? `https://github.com/settings/installations/${i.id}/permissions/update` : `https://github.com/organizations/${i.account_login}/settings/installations/${i.id}/permissions/update` : `https://github.com/settings/installations/${i.id}`
+}
+
+function i(e) {
+    if (!e) return null;
+    let t = e.repo_id?.startsWith(`gitlab-`);
+    if (t && e.repo_id?.includes(`:`)) return null;
+    let {
+        repository_full_name: n,
+        pr_number: r,
+        comment_id: i,
+        comment_type: a
+    } = e;
+    return !n || !r || !i ? null : t ? `https://gitlab.com/${n}/-/${a===`issue`?`issues`:`merge_requests`}/${r}#note_${i}` : `${`https://github.com/${n}/pull/${r}`}${a===`review`?`#discussion_r${i}`:`#issuecomment-${i}`}`
+}
+var a = e((() => {
+    t()
+}));
+export {
+    r as n, a as r, i as t
+};
+//# sourceMappingURL=0bf4501c-ot9cdywli2votf27.js.map

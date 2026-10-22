@@ -1,2 +1,85 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Dit as n,Fl as r,L5 as i,Ml as a,Oit as o,R5 as s,gR as c,vR as l}from"./4813494d-itnrgnth03y1sm9d.js";import{At as u,Bn as d,Q as f,Vn as p,wn as m}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Fgn as h,N7 as g,Ngn as _,P7 as v,d as y,f as b,l as x,u as S}from"./conversation-small-i79e9c315w50am5f.js";import{J as C,Y as w,d as T,u as E}from"./8b34dbc2-m4883pai3e8fx8q6.js";function D(){r(`pageload`)}var O=e((()=>{a()}));function k(e){"use forget";let t=(0,M.c)(8),{children:n,conversationId:r}=e,i=h(),a=u(),o=S(r,void 0,i),s=a.state?.focusObject,c,d;t[0]===s?(c=t[1],d=t[2]):(c=()=>{s&&g.setFocusedObject(s)},d=[s],t[0]=s,t[1]=c,t[2]=d),(0,N.useEffect)(c,d);let f;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(f=[],t[3]=f):f=t[3],(0,N.useEffect)(j,f);let p;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(p=[],t[4]=p):p=t[4],(0,N.useEffect)(A,p),l(),T();let m;return t[5]!==n||t[6]!==o?(m=(0,P.jsx)(C,{conversation:o,children:n}),t[5]=n,t[6]=o,t[7]=m):m=t[7],m}function A(){o()&&b(i())}function j(){return D()}var M,N,P,F=e((()=>{M=m(),w(),_(),v(),O(),E(),c(),y(),x(),n(),s(),N=t(p()),f(),P=d()}));export{F as n,k as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Dit as n,
+    Fl as r,
+    L5 as i,
+    Ml as a,
+    Oit as o,
+    R5 as s,
+    gR as c,
+    vR as l
+} from "./4813494d-itnrgnth03y1sm9d.js";
+import {
+    At as u,
+    Bn as d,
+    Q as f,
+    Vn as p,
+    wn as m
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Fgn as h,
+    N7 as g,
+    Ngn as _,
+    P7 as v,
+    d as y,
+    f as b,
+    l as x,
+    u as S
+} from "./conversation-small-i79e9c315w50am5f.js";
+import {
+    J as C,
+    Y as w,
+    d as T,
+    u as E
+} from "./8b34dbc2-m4883pai3e8fx8q6.js";
+
+function D() {
+    r(`pageload`)
+}
+var O = e((() => {
+    a()
+}));
+
+function k(e) {
+    "use forget";
+    let t = (0, M.c)(8),
+        {
+            children: n,
+            conversationId: r
+        } = e,
+        i = h(),
+        a = u(),
+        o = S(r, void 0, i),
+        s = a.state?.focusObject,
+        c, d;
+    t[0] === s ? (c = t[1], d = t[2]) : (c = () => {
+        s && g.setFocusedObject(s)
+    }, d = [s], t[0] = s, t[1] = c, t[2] = d), (0, N.useEffect)(c, d);
+    let f;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (f = [], t[3] = f) : f = t[3], (0, N.useEffect)(j, f);
+    let p;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (p = [], t[4] = p) : p = t[4], (0, N.useEffect)(A, p), l(), T();
+    let m;
+    return t[5] !== n || t[6] !== o ? (m = (0, P.jsx)(C, {
+        conversation: o,
+        children: n
+    }), t[5] = n, t[6] = o, t[7] = m) : m = t[7], m
+}
+
+function A() {
+    o() && b(i())
+}
+
+function j() {
+    return D()
+}
+var M, N, P, F = e((() => {
+    M = m(), w(), _(), v(), O(), E(), c(), y(), x(), n(), s(), N = t(p()), f(), P = d()
+}));
+export {
+    F as n, k as t
+};
 //# sourceMappingURL=9f7bb6d3-lfo34lg620ysdehx.js.map
