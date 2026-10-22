@@ -1,17 +1,10 @@
 [
     {
-        "id": "gpt-5-thinking",
-        "codenames": [
-            "gpt-5-thinking"
-        ],
-        "aliases": []
-    },
-    {
         "id": "gpt-5.6-luna",
         "codenames": [
-            "luna56",
             "5.6 Luna",
-            "56luna"
+            "56luna",
+            "luna56"
         ],
         "aliases": [
             "gpt-5.6-luna-wm",
@@ -21,9 +14,9 @@
     {
         "id": "gpt-5.6-sol",
         "codenames": [
-            "sol56",
             "5.6 Sol",
-            "56sol"
+            "56sol",
+            "sol56"
         ],
         "aliases": [
             "gpt-5.6-sol-wm",
@@ -38,9 +31,9 @@
     {
         "id": "gpt-5.6-terra",
         "codenames": [
-            "terra56",
             "5.6 Terra",
-            "56terra"
+            "56terra",
+            "terra56"
         ],
         "aliases": [
             "gpt-5.6-terra-wm",
@@ -50,44 +43,49 @@
     {
         "id": "gpt-6-astra",
         "codenames": [
-            "astra6",
-            "6 Astra"
+            "6 Astra",
+            "astra6"
         ],
         "aliases": [
             "gpt-6-astra-wm",
-            "gpt-6-astra-priority",
-            "gpt-6-pro"
+            "gpt-6-pro",
+            "gpt-6-astra-priority"
         ]
     },
     {
-        "id": "gpt-6-luna",
+        "id": "gpt-daybreak-5.6-sol",
         "codenames": [
-            "luna6"
+            "Daybreak Blue",
+            "daybreak56sol"
         ],
         "aliases": [
-            "gpt-6-luna-wm",
-            "gpt-6-luna-priority"
+            "gpt-daybreak-blue-latest"
         ]
     },
     {
-        "id": "gpt-6-sol",
+        "id": "gpt-daybreak-red-5.6-sol",
         "codenames": [
-            "sol6"
+            "Daybreak Red",
+            "daybreakred56sol"
         ],
         "aliases": [
-            "gpt-6-sol-wm",
-            "gpt-6-sol-priority"
+            "gpt-5.4-cyber",
+            "gpt-5.5-cyber-preview",
+            "gpt-5.6-cyber",
+            "gpt-daybreak-red-latest"
         ]
     },
     {
-        "id": "gpt-6.1-sol",
+        "id": "gpt-rosalind-5.5",
         "codenames": [
-            "sol61"
+            "Rosalind",
+            "lifesciences"
         ],
         "aliases": [
-            "gpt-6.1-sol-wm",
-            "gpt-6.1-sol-priority",
-            "gpt-6.1-sol-ultrafast"
+            "gpt-lifesciences",
+            "gpt-rosalind-5.5-wm",
+            "gpt-rosalind-discovery",
+            "gpt-rosalind-discovery-wm"
         ]
     }
 ]

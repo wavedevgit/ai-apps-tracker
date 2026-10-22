@@ -1,0 +1,184 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    HN as n,
+    UN as r,
+    bx as i,
+    dx as a
+} from "./4813494d-r54yv6lv29x4ew99.js";
+import {
+    Bn as o,
+    Ln as s,
+    Rn as c,
+    Vn as l,
+    wn as u,
+    zn as d
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Cv as f,
+    Sv as p,
+    Tv as m,
+    wv as h
+} from "./conversation-small-dwpaie1hln28efxb.js";
+import {
+    Ky as g,
+    _v as _,
+    fv as v,
+    gv as y,
+    pv as b,
+    qy as x
+} from "./30901919-k5uqyx4vyplt9toa.js";
+var S, C = e((() => {
+    c(), S = s({
+        zoomHelpText: {
+            id: `imageGenLightbox.annotation.zoom.helpText`,
+            defaultMessage: `Click to add a comment. Drag or scroll to pan. Pinch to zoom.`
+        },
+        edit: {
+            id: `imageGenLightbox.annotationMarker.edit`,
+            defaultMessage: `Edit comment {number}`
+        },
+        placeholder: {
+            id: `imageGenLightbox.annotationComposer.placeholder`,
+            defaultMessage: `Describe changes`
+        },
+        submit: {
+            id: `imageGenLightbox.annotationComposer.submit`,
+            defaultMessage: `Save comment`
+        },
+        cancel: {
+            id: `imageGenLightbox.annotationComposer.cancel`,
+            defaultMessage: `Cancel comment`
+        },
+        delete: {
+            id: `imageGenLightbox.annotationComposer.delete`,
+            defaultMessage: `Delete comment`
+        }
+    })
+}));
+
+function w(e) {
+    return e.preventDefault()
+}
+var T, E, D, O, k = e((() => {
+    T = u(), x(), b(), y(), i(), m(), n(), E = t(l()), c(), C(), D = o(), O = e => {
+        "use forget";
+        let t = (0, T.c)(48),
+            {
+                initialText: n,
+                onSubmit: i,
+                onCancel: o,
+                onDelete: s,
+                onTextChange: c,
+                commitRef: l,
+                preventFocusScroll: u
+            } = e,
+            m = n === void 0 ? `` : n,
+            y = u !== void 0 && u,
+            b = d(),
+            [x, C] = (0, E.useState)(m),
+            O = (0, E.useRef)(null),
+            k = (0, E.useRef)(!1),
+            A;
+        t[0] !== i || t[1] !== x ? (A = () => {
+            k.current || (k.current = !0, i(x))
+        }, t[0] = i, t[1] = x, t[2] = A) : A = t[2];
+        let j = A,
+            M, N;
+        t[3] === j ? (M = t[4], N = t[5]) : (M = () => j, N = [j], t[3] = j, t[4] = M, t[5] = N), (0, E.useImperativeHandle)(l, M, N);
+        let P, F;
+        t[6] === y ? (P = t[7], F = t[8]) : (P = () => {
+            y && O.current?.focus({
+                preventScroll: !0
+            })
+        }, F = [y], t[6] = y, t[7] = P, t[8] = F), r(P, F);
+        let I;
+        t[9] === b ? I = t[10] : (I = b.formatMessage(S.placeholder), t[9] = b, t[10] = I);
+        let L = I,
+            R;
+        t[11] === c ? R = t[12] : (R = e => {
+            let t = e.target.value;
+            C(t), c?.(t)
+        }, t[11] = c, t[12] = R);
+        let z = !y,
+            B;
+        t[13] !== o || t[14] !== j ? (B = e => {
+            e.key === `Enter` ? (e.stopPropagation(), e.nativeEvent.isComposing || (e.preventDefault(), j())) : e.key === `Escape` && (e.preventDefault(), e.stopPropagation(), o())
+        }, t[13] = o, t[14] = j, t[15] = B) : B = t[15];
+        let V;
+        t[16] !== L || t[17] !== z || t[18] !== B || t[19] !== R || t[20] !== x ? (V = (0, D.jsx)(a, {
+            ref: O,
+            value: x,
+            onChange: R,
+            placeholder: L,
+            "aria-label": L,
+            border: !1,
+            className: `mx-0! w-full! min-w-0! ps-2.5! pe-9!`,
+            name: `image-annotation-instruction`,
+            autoFocus: z,
+            selectAllOnFocus: !1,
+            onKeyDownCapture: B
+        }), t[16] = L, t[17] = z, t[18] = B, t[19] = R, t[20] = x, t[21] = V) : V = t[21];
+        let H;
+        t[22] === x ? H = t[23] : (H = x.trim(), t[22] = x, t[23] = H);
+        let U = H === ``,
+            W;
+        t[24] === b ? W = t[25] : (W = b.formatMessage(S.submit), t[24] = b, t[25] = W);
+        let G;
+        t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (G = (0, D.jsx)(g, {
+            className: `icon-xs`
+        }), t[26] = G) : G = t[26];
+        let K;
+        t[27] !== j || t[28] !== U || t[29] !== W ? (K = (0, D.jsx)(`div`, {
+            className: `absolute end-0.5 top-1/2 z-10 flex size-7 -translate-y-1/2 cursor-default items-center justify-center`,
+            children: (0, D.jsx)(`button`, {
+                type: `button`,
+                className: `icon composer-submit-btn composer-submit-button-color cursor-pointer disabled:cursor-default`,
+                onClick: j,
+                disabled: U,
+                "aria-label": W,
+                children: G
+            })
+        }), t[27] = j, t[28] = U, t[29] = W, t[30] = K) : K = t[30];
+        let q;
+        t[31] !== V || t[32] !== K ? (q = (0, D.jsxs)(`div`, {
+            className: `relative min-w-0 flex-1`,
+            children: [V, K]
+        }), t[31] = V, t[32] = K, t[33] = q) : q = t[33];
+        let J;
+        t[34] === Symbol.for(`react.memo_cache_sentinel`) ? (J = (0, D.jsx)(h, {
+            className: `me-0! shrink-0`
+        }), t[34] = J) : J = t[34];
+        let Y;
+        t[35] !== b || t[36] !== s ? (Y = b.formatMessage(s == null ? S.cancel : S.delete), t[35] = b, t[36] = s, t[37] = Y) : Y = t[37];
+        let X = s == null ? v : _,
+            Z;
+        t[38] !== o || t[39] !== s ? (Z = e => {
+            e.stopPropagation(), (s ?? o)()
+        }, t[38] = o, t[39] = s, t[40] = Z) : Z = t[40];
+        let Q;
+        t[41] !== Y || t[42] !== X || t[43] !== Z ? (Q = (0, D.jsx)(`span`, {
+            className: `contents [&>button]:size-7! [&>button]:shrink-0! [&>button]:justify-center! [&>button]:gap-0! [&>button]:px-0!`,
+            children: (0, D.jsx)(f, {
+                label: Y,
+                hideLabel: !0,
+                icon: X,
+                onMouseDown: w,
+                onClick: Z
+            })
+        }), t[41] = Y, t[42] = X, t[43] = Z, t[44] = Q) : Q = t[44];
+        let $;
+        return t[45] !== q || t[46] !== Q ? ($ = (0, D.jsx)(p, {
+            children: (0, D.jsxs)(`div`, {
+                className: `flex w-full min-w-0 items-center overflow-hidden transition-[width] duration-150 ease-out motion-reduce:transition-none`,
+                children: [q, J, Q]
+            })
+        }), t[45] = q, t[46] = Q, t[47] = $) : $ = t[47], $
+    }
+}));
+export {
+    S as i, k as n, C as r, O as t
+};
+//# sourceMappingURL=86793a97-mx3upq3kguo1jyr4.js.map

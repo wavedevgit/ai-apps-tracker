@@ -1,0 +1,68 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $7 as t,
+    Eat as n,
+    Gm as r,
+    Km as i,
+    S_ as a,
+    Wm as o,
+    Y7 as s,
+    Yat as c,
+    jat as l,
+    tot as u,
+    u9 as d,
+    wat as f,
+    x_ as p
+} from "./4813494d-r54yv6lv29x4ew99.js";
+async function m({
+    roomId: e,
+    path: t
+}) {
+    return await s.safePost(t, {
+        parameters: {
+            path: {
+                room_id: e
+            }
+        }
+    })
+}
+
+function h() {
+    return a(async e => {
+        try {
+            return await m(e)
+        } catch (e) {
+            if (e instanceof c) {
+                e.isTransportError && d(e);
+                return
+            }
+            f.addError(e, {
+                context: {
+                    operation: `calpico_responding_heartbeat`
+                }
+            })
+        }
+    }, _, {
+        trailing: !1
+    })
+}
+async function g(e) {
+    let t = await r(o.CreateRoom);
+    return s.safePost(`/messaging/invite-links/{code}/accept`, {
+        parameters: {
+            path: {
+                code: e
+            }
+        },
+        additionalHeaders: t
+    })
+}
+var _, v = e((() => {
+    i(), l(), n(), u(), t(), p(), _ = 2e3
+}));
+export {
+    h as n, v as r, g as t
+};
+//# sourceMappingURL=149834c7-fmg821voi312xj4x.js.map

@@ -1,0 +1,685 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    RH as n,
+    VH as r,
+    l7 as i,
+    u7 as a
+} from "./4813494d-r54yv6lv29x4ew99.js";
+import {
+    Bn as o,
+    Rn as s,
+    Vn as c,
+    wn as l,
+    zn as u
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $c as d,
+    Bx as f,
+    Jy as p,
+    Qc as ee,
+    Vx as m,
+    Xc as h,
+    Xy as g,
+    Yy as _,
+    Zc as te,
+    Zy as v,
+    el as ne,
+    tl as y
+} from "./30901919-k5uqyx4vyplt9toa.js";
+import {
+    a as b,
+    n as x,
+    o as S,
+    r as C,
+    t as w
+} from "./ee72d6dc-bldi3qexv0w9v0dx.js";
+import {
+    n as T,
+    t as E
+} from "./9e9d0eec-j24gxg6gi9duoed8.js";
+import {
+    i as D,
+    n as O,
+    r as k,
+    t as A
+} from "./e0709cca-inm79qadae86mrbc.js";
+
+function re(e) {
+    "use forget";
+    let t = (0, j.c)(60),
+        {
+            paused: n,
+            muted: r,
+            unavailable: a,
+            ready: o,
+            labels: s,
+            onTogglePlayback: c,
+            onToggleMuted: l,
+            onToggleFullscreen: d,
+            fullscreen: f,
+            fullscreenError: p,
+            progress: h
+        } = e,
+        g = a !== void 0 && a,
+        y = o === void 0 || o,
+        b = f !== void 0 && f,
+        x = p !== void 0 && p,
+        S = u(),
+        C;
+    t[0] !== S || t[1] !== s?.pause || t[2] !== s?.play || t[3] !== n ? (C = n ? s?.play ?? S.formatMessage({
+        id: `chatgpt.dots.video.button.play`,
+        defaultMessage: `Play`
+    }) : s?.pause ?? S.formatMessage({
+        id: `chatgpt.dots.video.button.pause`,
+        defaultMessage: `Pause`
+    }), t[0] = S, t[1] = s?.pause, t[2] = s?.play, t[3] = n, t[4] = C) : C = t[4];
+    let w = C,
+        T;
+    t[5] !== S || t[6] !== s?.mute || t[7] !== s?.unmute || t[8] !== r ? (T = r ? s?.unmute ?? S.formatMessage({
+        id: `chatgpt.dots.video.button.unmute`,
+        defaultMessage: `Unmute video`
+    }) : s?.mute ?? S.formatMessage({
+        id: `chatgpt.dots.video.button.mute`,
+        defaultMessage: `Mute video`
+    }), t[5] = S, t[6] = s?.mute, t[7] = s?.unmute, t[8] = r, t[9] = T) : T = t[9];
+    let E = T,
+        D;
+    t[10] !== b || t[11] !== S || t[12] !== s?.exitFullscreen || t[13] !== s?.fullscreen ? (D = b ? s?.exitFullscreen ?? S.formatMessage({
+        id: `chatgpt.dots.video.button.exitFullscreen`,
+        defaultMessage: `Exit fullscreen`
+    }) : s?.fullscreen ?? S.formatMessage({
+        id: `chatgpt.dots.video.button.fullscreen`,
+        defaultMessage: `Watch fullscreen`
+    }), t[10] = b, t[11] = S, t[12] = s?.exitFullscreen, t[13] = s?.fullscreen, t[14] = D) : D = t[14];
+    let O = D,
+        k = b ? ee : ne,
+        A = !y || g,
+        re = n ? _ : v,
+        ie = r ? te : m,
+        N = (b || x) && `inset-s-4 md:inset-s-8`,
+        ae = x && `flex-wrap justify-end`,
+        P;
+    t[15] !== N || t[16] !== ae ? (P = i(`dots-video-controls absolute inset-e-4 bottom-4 z-10 flex items-center gap-2 md:inset-e-8 md:bottom-8`, N, ae), t[15] = N, t[16] = ae, t[17] = P) : P = t[17];
+    let F;
+    t[18] !== x || t[19] !== S ? (F = x && (0, M.jsx)(`p`, {
+        role: `status`,
+        className: `text-mkt-xs basis-full rounded-full bg-black/50 px-3 py-2 text-white`,
+        children: S.formatMessage({
+            id: `chatgpt.dots.video.status.fullscreenUnavailable`,
+            defaultMessage: `Fullscreen is unavailable. You can still watch the video here.`
+        })
+    }), t[18] = x, t[19] = S, t[20] = F) : F = t[20];
+    let I;
+    t[21] !== S || t[22] !== h ? (I = h && h.duration > 0 && (0, M.jsx)(`input`, {
+        type: `range`,
+        name: `video-playback-position`,
+        "aria-label": S.formatMessage({
+            id: `chatgpt.dots.video.seek`,
+            defaultMessage: `Video playback position`
+        }),
+        min: 0,
+        max: h.duration,
+        step: .1,
+        value: h.seconds,
+        onChange: e => h.onSeek(Number(e.currentTarget.value)),
+        className: `min-w-0 flex-1 accent-white`
+    }), t[21] = S, t[22] = h, t[23] = I) : I = t[23];
+    let L;
+    t[24] !== S || t[25] !== g ? (L = g && (0, M.jsx)(`p`, {
+        role: `status`,
+        className: `text-mkt-xs rounded-full bg-black/50 px-3 py-2 text-white`,
+        children: S.formatMessage({
+            id: `chatgpt.dots.video.status.unavailable`,
+            defaultMessage: `This video is unavailable.`
+        })
+    }), t[24] = S, t[25] = g, t[26] = L) : L = t[26];
+    let R;
+    t[27] !== A || t[28] !== c ? (R = () => {
+        A || c()
+    }, t[27] = A, t[28] = c, t[29] = R) : R = t[29];
+    let z;
+    t[30] === re ? z = t[31] : (z = (0, M.jsx)(re, {
+        className: `icon-sm`,
+        "aria-hidden": !0
+    }), t[30] = re, t[31] = z);
+    let B;
+    t[32] !== A || t[33] !== w || t[34] !== R || t[35] !== z ? (B = (0, M.jsxs)(`button`, {
+        type: `button`,
+        className: `interactive-button flex h-9 shrink-0 items-center justify-center gap-1 rounded-full border-0 bg-black/50 text-white backdrop-blur-[10px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white px-[13px]`,
+        "aria-disabled": A,
+        onClick: R,
+        children: [w, z]
+    }), t[32] = A, t[33] = w, t[34] = R, t[35] = z, t[36] = B) : B = t[36];
+    let V;
+    t[37] !== A || t[38] !== l ? (V = () => {
+        A || l()
+    }, t[37] = A, t[38] = l, t[39] = V) : V = t[39];
+    let H;
+    t[40] === ie ? H = t[41] : (H = (0, M.jsx)(ie, {
+        className: `icon-sm`,
+        "aria-hidden": !0
+    }), t[40] = ie, t[41] = H);
+    let U;
+    t[42] !== A || t[43] !== E || t[44] !== V || t[45] !== H ? (U = (0, M.jsx)(`button`, {
+        type: `button`,
+        className: `interactive-button flex h-9 shrink-0 items-center justify-center gap-1 rounded-full border-0 bg-black/50 text-white backdrop-blur-[10px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white w-9`,
+        "aria-label": E,
+        "aria-disabled": A,
+        onClick: V,
+        children: H
+    }), t[42] = A, t[43] = E, t[44] = V, t[45] = H, t[46] = U) : U = t[46];
+    let W;
+    t[47] !== k || t[48] !== O || t[49] !== A || t[50] !== d ? (W = d && (0, M.jsx)(`button`, {
+        type: `button`,
+        className: `interactive-button flex h-9 shrink-0 items-center justify-center gap-1 rounded-full border-0 bg-black/50 text-white backdrop-blur-[10px] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white w-9`,
+        "aria-label": O,
+        "aria-disabled": A,
+        onClick: () => {
+            A || d()
+        },
+        children: (0, M.jsx)(k, {
+            className: `icon-sm`,
+            "aria-hidden": !0
+        })
+    }), t[47] = k, t[48] = O, t[49] = A, t[50] = d, t[51] = W) : W = t[51];
+    let G;
+    return t[52] !== P || t[53] !== F || t[54] !== I || t[55] !== L || t[56] !== B || t[57] !== U || t[58] !== W ? (G = (0, M.jsxs)(`div`, {
+        className: P,
+        children: [F, I, L, B, U, W]
+    }), t[52] = P, t[53] = F, t[54] = I, t[55] = L, t[56] = B, t[57] = U, t[58] = W, t[59] = G) : G = t[59], G
+}
+var j, M, ie = e((() => {
+    j = l(), a(), y(), d(), s(), p(), g(), f(), h(), M = o()
+}));
+
+function N(e) {
+    "use forget";
+    let t = (0, R.c)(58),
+        {
+            source: r,
+            autoplay: a,
+            props: o,
+            mobile: s
+        } = e,
+        c = (0, z.useRef)(null),
+        l = (0, z.useRef)(null),
+        u = (0, z.useRef)(null),
+        d = (0, z.useRef)(!1),
+        f = (0, z.useRef)(!1),
+        [p, ee] = (0, z.useState)(!1),
+        [m, h] = (0, z.useState)(!1),
+        g;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (g = {
+        seconds: 0,
+        duration: 0
+    }, t[0] = g) : g = t[0];
+    let [_, te] = (0, z.useState)(g), [v, ne] = (0, z.useState)(!1), [y, x] = (0, z.useState)(!0), [S, C] = (0, z.useState)(!0), [w, T] = (0, z.useState)(!1), E;
+    t[1] !== o.videoLoop || t[2] !== r ? (E = r ? V(r, !!o.videoLoop) : void 0, t[1] = o.videoLoop, t[2] = r, t[3] = E) : E = t[3];
+    let D = E,
+        O = o.posterImage?.file.url,
+        k, A;
+    t[4] !== a || t[5] !== D || t[6] !== o.altText ? (k = () => {
+        if (!l.current || !c.current || !D) return;
+        let e = document.createElement(`iframe`);
+        e.src = D, e.title = o.altText, e.tabIndex = -1, e.allow = `autoplay; fullscreen; picture-in-picture`, e.allowFullscreen = !0, l.current.appendChild(e);
+        let t = new b(e);
+        u.current = t, ne(!1), x(!0), C(!0), T(!1);
+        let n = !1,
+            r = !1,
+            i = !1,
+            s = () => {
+                n || (x(!0), T(!0))
+            },
+            p = () => {
+                n || (d.current = !1, x(!1))
+            },
+            m = () => {
+                n || ((r || f.current) && !document.hidden && (d.current = !0), x(!0))
+            },
+            h = e => {
+                e.name === `NotAllowedError` ? m() : s()
+            },
+            g = () => {
+                Promise.all([t.getMuted(), t.getVolume()]).then(e => {
+                    let [t, r] = e;
+                    n || C(t || r === 0)
+                }).catch(s)
+            },
+            _ = e => {
+                let {
+                    fullscreen: t
+                } = e;
+                if (n) return;
+                let r = document.fullscreenElement,
+                    i = t && (!r || r === c.current || l.current?.contains(r) === !0);
+                f.current = i, ee(i)
+            },
+            te = () => {
+                _({
+                    fullscreen: document.fullscreenElement === c.current
+                })
+            },
+            v = () => {
+                !i || n || (!r && !f.current || document.hidden ? t.pause().catch(m) : a && !d.current && t.play().catch(m))
+            };
+        t.on(`fullscreenchange`, _), document.addEventListener(`fullscreenchange`, te), t.on(`play`, p), t.on(`pause`, m), t.on(`ended`, m), t.on(`volumechange`, g), t.on(`error`, h), t.ready().then(() => {
+            n || (i = !0, ne(!0), v())
+        }).catch(s);
+        let y = new IntersectionObserver(e => {
+            let [t] = e;
+            r = t.isIntersecting, v()
+        }, {
+            threshold: .1
+        });
+        return y.observe(c.current), document.addEventListener(`visibilitychange`, v), () => {
+            n = !0, y.disconnect(), document.removeEventListener(`visibilitychange`, v), u.current = null, f.current = !1, document.removeEventListener(`fullscreenchange`, te), t.off(`fullscreenchange`, _), t.off(`play`, p), t.off(`pause`, m), t.off(`ended`, m), t.off(`volumechange`, g), t.off(`error`, h), t.destroy().catch(I)
+        }
+    }, A = [D, a, o.altText], t[4] = a, t[5] = D, t[6] = o.altText, t[7] = k, t[8] = A) : (k = t[7], A = t[8]), (0, z.useEffect)(k, A);
+    let j, M;
+    t[9] === p ? (j = t[10], M = t[11]) : (j = () => {
+        let e = u.current;
+        if (!p || !e) return;
+        let t = !1,
+            n = e => {
+                let {
+                    seconds: n,
+                    duration: r
+                } = e;
+                t || te({
+                    seconds: n,
+                    duration: r
+                })
+            };
+        return e.on(`timeupdate`, n), Promise.all([e.getCurrentTime(), e.getDuration()]).then(e => {
+            let [t, r] = e;
+            return n({
+                seconds: t,
+                duration: r,
+                percent: 0
+            })
+        }).catch(F), () => {
+            t = !0, e.off(`timeupdate`, n)
+        }
+    }, M = [p], t[9] = p, t[10] = j, t[11] = M), (0, z.useEffect)(j, M);
+    let ie = o.contentfulDebugAttributes,
+        N = o.rounding === void 0 || o.rounding === `rounded`,
+        L = o.rounding === `app-icon`,
+        H;
+    t[12] !== o.className || t[13] !== o.keyline || t[14] !== o.wrapperClassName || t[15] !== N || t[16] !== L ? (H = i(`dots-vimeo relative h-full w-full overflow-hidden`, o.className, o.wrapperClassName, {
+        "rounded-2xl": N,
+        "rounded-[24%]": L,
+        "border border-token-border-default": o.keyline
+    }), t[12] = o.className, t[13] = o.keyline, t[14] = o.wrapperClassName, t[15] = N, t[16] = L, t[17] = H) : H = t[17];
+    let U = (s ? o.ratioMobile : o.ratio) ?? o.ratio ?? `16:9`,
+        W;
+    t[18] === U ? W = t[19] : (W = U.replace(`:`, ` / `), t[18] = U, t[19] = W);
+    let G;
+    t[20] === W ? G = t[21] : (G = {
+        aspectRatio: W
+    }, t[20] = W, t[21] = G);
+    let K;
+    t[22] !== O || t[23] !== v || t[24] !== w ? (K = O && (!v || w) && (0, B.jsx)(`img`, {
+        src: n(O),
+        alt: ``,
+        className: `absolute inset-0 size-full object-cover`
+    }), t[22] = O, t[23] = v, t[24] = w, t[25] = K) : K = t[25];
+    let q = w && `invisible`,
+        J;
+    t[26] === q ? J = t[27] : (J = i(`dots-vimeo-player pointer-events-none absolute inset-0 size-full`, q), t[26] = q, t[27] = J);
+    let Y;
+    t[28] === J ? Y = t[29] : (Y = (0, B.jsx)(`div`, {
+        ref: l,
+        className: J
+    }), t[28] = J, t[29] = Y);
+    let X;
+    t[30] !== p || t[31] !== _ ? (X = p ? {
+        ..._,
+        onSeek: e => {
+            u.current?.setCurrentTime(e).catch(P)
+        }
+    } : void 0, t[30] = p, t[31] = _, t[32] = X) : X = t[32];
+    let Z;
+    t[33] === p ? Z = t[34] : (Z = () => {
+        let e = u.current,
+            t = c.current;
+        !e || !t || (h(!1), (p ? document.fullscreenElement === t ? document.exitFullscreen() : e.exitFullscreen() : typeof t.requestFullscreen == `function` && document.fullscreenEnabled ? t.requestFullscreen() : e.requestFullscreen()).catch(() => h(!0)))
+    }, t[33] = p, t[34] = Z);
+    let Q;
+    t[35] === y ? Q = t[36] : (Q = () => {
+        let e = u.current;
+        e && (d.current = !y, (y ? e.play() : e.pause()).catch(() => x(!0)))
+    }, t[35] = y, t[36] = Q);
+    let $;
+    t[37] === S ? $ = t[38] : ($ = () => {
+        let e = u.current;
+        e && (async () => {
+            S && await e.getVolume() === 0 && await e.setVolume(1);
+            let t = await e.setMuted(!S);
+            u.current === e && C(t)
+        })().catch(ae)
+    }, t[37] = S, t[38] = $);
+    let oe;
+    t[39] !== p || t[40] !== m || t[41] !== S || t[42] !== y || t[43] !== o.videoControlLabels || t[44] !== v || t[45] !== X || t[46] !== Z || t[47] !== Q || t[48] !== $ || t[49] !== w ? (oe = (0, B.jsx)(re, {
+        paused: y,
+        muted: S,
+        ready: v,
+        unavailable: w,
+        labels: o.videoControlLabels,
+        fullscreen: p,
+        fullscreenError: m,
+        progress: X,
+        onToggleFullscreen: Z,
+        onTogglePlayback: Q,
+        onToggleMuted: $
+    }), t[39] = p, t[40] = m, t[41] = S, t[42] = y, t[43] = o.videoControlLabels, t[44] = v, t[45] = X, t[46] = Z, t[47] = Q, t[48] = $, t[49] = w, t[50] = oe) : oe = t[50];
+    let se;
+    return t[51] !== o.contentfulDebugAttributes || t[52] !== H || t[53] !== G || t[54] !== K || t[55] !== Y || t[56] !== oe ? (se = (0, B.jsxs)(`div`, {
+        ref: c,
+        ...ie,
+        className: H,
+        style: G,
+        children: [K, Y, oe]
+    }), t[51] = o.contentfulDebugAttributes, t[52] = H, t[53] = G, t[54] = K, t[55] = Y, t[56] = oe, t[57] = se) : se = t[57], se
+}
+
+function ae() {}
+
+function P() {}
+
+function F() {}
+
+function I() {}
+
+function L(e) {
+    "use forget";
+    let t = (0, R.c)(7),
+        {
+            reducedMotion: n
+        } = (0, z.useContext)(E),
+        [r, i] = (0, z.useState)(),
+        a, o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = () => {
+        let e = window.matchMedia(`(max-width: 767px)`),
+            t = () => i(e.matches);
+        return t(), e.addEventListener(`change`, t), () => e.removeEventListener(`change`, t)
+    }, o = [], t[0] = a, t[1] = o) : (a = t[0], o = t[1]), (0, z.useEffect)(a, o);
+    let s = r === void 0 ? void 0 : r ? e.videoEmbedUrlMobile ?? e.videoEmbedUrl : e.videoEmbedUrl,
+        c = e.videoAutoPlay === !0 && !n,
+        l;
+    return t[2] !== r || t[3] !== e || t[4] !== s || t[5] !== c ? (l = (0, B.jsx)(N, {
+        source: s,
+        mobile: r,
+        autoplay: c,
+        props: e
+    }, s), t[2] = r, t[3] = e, t[4] = s, t[5] = c, t[6] = l) : l = t[6], l
+}
+var R, z, B, V, H = e((() => {
+        R = l(), S(), a(), z = t(c()), r(), T(), ie(), B = o(), V = (e, t) => {
+            let n = new URL(e);
+            return n.searchParams.set(`controls`, `0`), n.searchParams.set(`keyboard`, `0`), n.searchParams.set(`background`, `0`), n.searchParams.set(`autoplay`, `0`), n.searchParams.set(`autopause`, `0`), n.searchParams.set(`muted`, `1`), n.searchParams.set(`loop`, t ? `1` : `0`), n.toString()
+        }
+    })),
+    U, W, G, K, q, J, Y = e((() => {
+        U = l(), a(), W = t(c()), C(), r(), T(), ie(), H(), G = o(), K = e => e?.file.url ? n(e.file.url) : void 0, q = e => {
+            "use forget";
+            let t = (0, U.c)(62),
+                n = (0, W.useRef)(null),
+                r = (0, W.useRef)(!1),
+                [a, o] = (0, W.useState)(),
+                [s, c] = (0, W.useState)(!1),
+                [l, u] = (0, W.useState)(!0),
+                [d, f] = (0, W.useState)(e.videoAutoPlay === !0),
+                [p, ee] = (0, W.useState)(!1),
+                [m, h] = (0, W.useState)(!1),
+                [g, _] = (0, W.useState)(!1),
+                {
+                    reducedMotion: te
+                } = (0, W.useContext)(E),
+                v = e.videoAutoPlay === !0 && !te,
+                ne;
+            t[0] !== e.asset || t[1] !== e.assetUrl ? (ne = e.assetUrl ?? K(e.asset), t[0] = e.asset, t[1] = e.assetUrl, t[2] = ne) : ne = t[2];
+            let y = ne,
+                b;
+            t[3] !== e.assetMobile || t[4] !== e.assetMobileUrl ? (b = e.assetMobileUrl ?? K(e.assetMobile), t[3] = e.assetMobile, t[4] = e.assetMobileUrl, t[5] = b) : b = t[5];
+            let x = a === void 0 ? void 0 : a ? b ?? y : y,
+                S = !!(e.ratio || e.ratioMobile),
+                C, w;
+            t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (C = () => {
+                let e = window.matchMedia(`(max-width: 767px)`),
+                    t = () => o(e.matches);
+                return t(), e.addEventListener(`change`, t), () => e.removeEventListener(`change`, t)
+            }, w = [], t[6] = C, t[7] = w) : (C = t[6], w = t[7]), (0, W.useEffect)(C, w);
+            let T, D;
+            t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (T = () => {
+                let e = n.current;
+                if (!e) return;
+                let t = e => {
+                        r.current = e, h(e)
+                    },
+                    i = () => t(document.fullscreenElement === e),
+                    a = () => t(!0),
+                    o = () => t(!1);
+                return document.addEventListener(`fullscreenchange`, i), e.addEventListener(`webkitbeginfullscreen`, a), e.addEventListener(`webkitendfullscreen`, o), () => {
+                    document.removeEventListener(`fullscreenchange`, i), e.removeEventListener(`webkitbeginfullscreen`, a), e.removeEventListener(`webkitendfullscreen`, o)
+                }
+            }, D = [], t[8] = T, t[9] = D) : (T = t[8], D = t[9]), (0, W.useEffect)(T, D);
+            let O, k;
+            t[10] !== v || t[11] !== x ? (O = () => {
+                let e = n.current;
+                if (!e || !x) return;
+                if (!v) {
+                    e.pause();
+                    return
+                }
+                let t = !1,
+                    i = !1,
+                    a = !1,
+                    o = () => {
+                        if (!t && !r.current || document.hidden) {
+                            e.pause();
+                            return
+                        }
+                        i || e.play().catch(() => {
+                            !a && t && !document.hidden && c(!0)
+                        })
+                    },
+                    s = () => {
+                        (t || r.current) && !document.hidden && (i = !0)
+                    },
+                    l = () => {
+                        i = !1
+                    },
+                    u = new IntersectionObserver(e => {
+                        let [n] = e;
+                        t = n.isIntersecting, o()
+                    }, {
+                        threshold: .1
+                    });
+                return u.observe(e), e.addEventListener(`pause`, s), e.addEventListener(`play`, l), document.addEventListener(`visibilitychange`, o), () => {
+                    a = !0, u.disconnect(), e.removeEventListener(`pause`, s), e.removeEventListener(`play`, l), document.removeEventListener(`visibilitychange`, o), e.pause()
+                }
+            }, k = [v, x], t[10] = v, t[11] = x, t[12] = O, t[13] = k) : (O = t[12], k = t[13]), (0, W.useEffect)(O, k);
+            let A = e.contentfulDebugAttributes,
+                j;
+            t[14] === e.className ? j = t[15] : (j = i(`relative h-full w-full`, e.className), t[14] = e.className, t[15] = j);
+            let M;
+            t[16] === e.posterImage ? M = t[17] : (M = K(e.posterImage), t[16] = e.posterImage, t[17] = M);
+            let ie = e.altText,
+                N = e.videoLoop,
+                ae = m || !e.customVideoControls && (e.showVideoControls || !v || s),
+                P, F, I, L, R, z;
+            t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (P = () => {
+                u(!1), c(!1)
+            }, F = () => u(!0), I = () => u(!0), L = e => f(e.currentTarget.muted || e.currentTarget.volume === 0), R = () => ee(!1), z = () => {
+                ee(!0), u(!0)
+            }, t[18] = P, t[19] = F, t[20] = I, t[21] = L, t[22] = R, t[23] = z) : (P = t[18], F = t[19], I = t[20], L = t[21], R = t[22], z = t[23]);
+            let B = e.rounding === void 0 || e.rounding === `rounded`,
+                V = e.rounding === `app-icon`,
+                H;
+            t[24] !== S || t[25] !== e.keyline || t[26] !== e.mediaClassName || t[27] !== e.wrapperClassName || t[28] !== B || t[29] !== V ? (H = i(`dots-native-video h-full w-full object-cover`, {
+                "aspect-[var(--dots-media-mobile-ratio)] md:aspect-[var(--dots-media-ratio)]": S,
+                "rounded-2xl": B,
+                "rounded-[24%]": V,
+                "border border-token-border-default": e.keyline
+            }, e.wrapperClassName, e.mediaClassName), t[24] = S, t[25] = e.keyline, t[26] = e.mediaClassName, t[27] = e.wrapperClassName, t[28] = B, t[29] = V, t[30] = H) : H = t[30];
+            let q;
+            t[31] !== S || t[32] !== e.ratio || t[33] !== e.ratioMobile ? (q = S ? {
+                "--dots-media-ratio": (e.ratio ?? e.ratioMobile)?.replace(`:`, ` / `),
+                "--dots-media-mobile-ratio": (e.ratioMobile ?? e.ratio)?.replace(`:`, ` / `)
+            } : void 0, t[31] = S, t[32] = e.ratio, t[33] = e.ratioMobile, t[34] = q) : q = t[34];
+            let J;
+            t[35] !== d || t[36] !== e.altText || t[37] !== e.videoLoop || t[38] !== x || t[39] !== M || t[40] !== ae || t[41] !== H || t[42] !== q ? (J = (0, G.jsx)(`video`, {
+                ref: n,
+                src: x,
+                poster: M,
+                "aria-label": ie,
+                playsInline: !0,
+                muted: d,
+                loop: N,
+                preload: `none`,
+                controls: ae,
+                onPlay: P,
+                onPause: F,
+                onEnded: I,
+                onVolumeChange: L,
+                onLoadStart: R,
+                onError: z,
+                className: H,
+                style: q
+            }), t[35] = d, t[36] = e.altText, t[37] = e.videoLoop, t[38] = x, t[39] = M, t[40] = ae, t[41] = H, t[42] = q, t[43] = J) : J = t[43];
+            let Y;
+            t[44] !== e.customVideoControls || t[45] !== e.posterImage || t[46] !== p ? (Y = e.customVideoControls && p && e.posterImage && (0, G.jsx)(`img`, {
+                src: K(e.posterImage),
+                alt: ``,
+                className: `absolute inset-0 size-full object-cover`
+            }), t[44] = e.customVideoControls, t[45] = e.posterImage, t[46] = p, t[47] = Y) : Y = t[47];
+            let X;
+            t[48] !== g || t[49] !== d || t[50] !== l || t[51] !== e.customVideoControls || t[52] !== e.videoControlLabels || t[53] !== x || t[54] !== p ? (X = e.customVideoControls && (0, G.jsx)(re, {
+                paused: l,
+                muted: d,
+                unavailable: p,
+                ready: !!x,
+                labels: e.videoControlLabels,
+                fullscreenError: g,
+                onToggleFullscreen: () => {
+                    let t = n.current;
+                    if (!t) return;
+                    _(!1), t.controls = !0;
+                    let r = () => {
+                        t.controls = !e.customVideoControls, _(!0)
+                    };
+                    if (typeof t.requestFullscreen == `function` && document.fullscreenEnabled) t.requestFullscreen().catch(r);
+                    else if (t.webkitEnterFullscreen) try {
+                        t.webkitEnterFullscreen()
+                    } catch {
+                        r()
+                    } else r()
+                },
+                onTogglePlayback: () => {
+                    let e = n.current;
+                    e && (e.paused ? e.play().catch(() => {
+                        u(!0), ee(!!e.error)
+                    }) : e.pause())
+                },
+                onToggleMuted: () => {
+                    let e = n.current;
+                    if (!e) return;
+                    let t = !e.muted && e.volume > 0;
+                    e.muted = t, !t && e.volume === 0 && (e.volume = 1)
+                }
+            }), t[48] = g, t[49] = d, t[50] = l, t[51] = e.customVideoControls, t[52] = e.videoControlLabels, t[53] = x, t[54] = p, t[55] = X) : X = t[55];
+            let Z;
+            return t[56] !== e.contentfulDebugAttributes || t[57] !== J || t[58] !== Y || t[59] !== X || t[60] !== j ? (Z = (0, G.jsxs)(`div`, {
+                ...A,
+                className: j,
+                children: [J, Y, X]
+            }), t[56] = e.contentfulDebugAttributes, t[57] = J, t[58] = Y, t[59] = X, t[60] = j, t[61] = Z) : Z = t[61], Z
+        }, J = e => {
+            "use forget";
+            let t = (0, U.c)(6),
+                {
+                    reducedMotion: n
+                } = (0, W.useContext)(E),
+                r;
+            t[0] === e ? r = t[1] : (r = !e.videoEmbedUrl && (x(e) === `video` || /\.(mp4|webm)(?:[?#]|$)/i.test(e.assetUrl ?? ``)), t[0] = e, t[1] = r);
+            let i = r,
+                a;
+            return t[2] !== i || t[3] !== e || t[4] !== n ? (a = e.customVideoControls && e.videoEmbedUrl ? (0, G.jsx)(L, {
+                ...e
+            }) : i ? (0, G.jsx)(q, {
+                ...e
+            }) : (0, G.jsx)(w, {
+                ...e,
+                videoAutoPlay: e.videoAutoPlay && !n,
+                showVideoControls: e.showVideoControls || n || !e.videoAutoPlay
+            }), t[2] = i, t[3] = e, t[4] = n, t[5] = a) : a = t[5], a
+        }
+    })),
+    X, Z, Q, $, oe = e((() => {
+        X = l(), a(), D(), Y(), Z = o(), Q = {
+            connections: O,
+            goals: k,
+            computers: A
+        }, $ = e => {
+            "use forget";
+            let t = (0, X.c)(16),
+                {
+                    data: n,
+                    media: r,
+                    className: a,
+                    customVideoControls: o
+                } = e,
+                s = o !== void 0 && o,
+                c = n?.animation,
+                l = n?.presentation === `custom` && c ? Q[c] : void 0,
+                u = r?.[n?.mediaIndex ?? 0],
+                d = n?.backgroundMediaIndex === void 0 ? void 0 : r?.[n.backgroundMediaIndex];
+            if (l) {
+                let e;
+                t[0] === a ? e = t[1] : (e = i(`relative isolate`, a), t[0] = a, t[1] = e);
+                let r;
+                t[2] === d ? r = t[3] : (r = d && (0, Z.jsx)(`div`, {
+                    className: `pointer-events-none absolute inset-0`,
+                    "aria-hidden": !0,
+                    children: (0, Z.jsx)(J, {
+                        ...d,
+                        altText: ``,
+                        rounding: `none`,
+                        className: `h-full w-full`,
+                        wrapperClassName: `h-full w-full`,
+                        mediaClassName: `h-full w-full object-cover`
+                    })
+                }), t[2] = d, t[3] = r);
+                let o = n?.messages,
+                    s;
+                t[4] !== l || t[5] !== o ? (s = (0, Z.jsx)(`div`, {
+                    className: `light relative h-full w-full`,
+                    children: (0, Z.jsx)(l, {
+                        messages: o
+                    })
+                }), t[4] = l, t[5] = o, t[6] = s) : s = t[6];
+                let c;
+                return t[7] !== e || t[8] !== r || t[9] !== s ? (c = (0, Z.jsxs)(`div`, {
+                    className: e,
+                    children: [r, s]
+                }), t[7] = e, t[8] = r, t[9] = s, t[10] = c) : c = t[10], c
+            }
+            let f;
+            return t[11] !== a || t[12] !== s || t[13] !== n?.videoControlLabels || t[14] !== u ? (f = u ? (0, Z.jsx)(J, {
+                ...u,
+                customVideoControls: s,
+                videoControlLabels: n?.videoControlLabels,
+                rounding: `none`,
+                mediaClassName: i(`h-full w-full object-cover`, u.mediaClassName),
+                wrapperClassName: i(`h-full w-full`, u.wrapperClassName),
+                className: i(u.className, a)
+            }) : null, t[11] = a, t[12] = s, t[13] = n?.videoControlLabels, t[14] = u, t[15] = f) : f = t[15], f
+        }
+    }));
+export {
+    Y as i, oe as n, J as r, $ as t
+};
+//# sourceMappingURL=a5961f3f-gq222m9fy1uze11l.js.map

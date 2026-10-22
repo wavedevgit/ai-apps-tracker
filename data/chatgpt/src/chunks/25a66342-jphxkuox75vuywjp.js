@@ -1,0 +1,175 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Vx as t,
+    dS as n,
+    gS as r,
+    mS as i,
+    oS as a,
+    qx as o
+} from "./c2675c8c-jg3tpj8mw86wdc0g.js";
+import {
+    a as s
+} from "./2ea88c7a-lxyla91xs6iv7odf.js";
+import {
+    a as c,
+    n as l,
+    t as u
+} from "./25a66342-j7cd8h2bqav7weve.js";
+async function d(e) {
+    let {
+        host: t,
+        signal: n
+    } = e, {
+        ports: r,
+        replyPort: i
+    } = `iframe` in e ? await m(e) : e, a = new Set([...Object.values(r), i]), o = new AbortController, s = () => {
+        n?.removeEventListener(`abort`, s), o.abort();
+        for (let e of a) e.close();
+        a.clear()
+    };
+    try {
+        n?.throwIfAborted();
+        let u = {};
+        for (let [e, n] of Object.entries(t)) {
+            if (n == null) continue;
+            let r = new MessageChannel;
+            a.add(r.port1), a.add(r.port2);
+            let i = f(t, e, n);
+            p(i) ? l(r.port1, i) : c(r.port1, i), u[e] = r.port2
+        }
+        i.postMessage(u, Object.values(u)), i.start();
+        let d = new Set(e.generatorKeys ?? [`runUserCode`]),
+            m = Object.fromEntries(Object.entries(r).map(([e, t]) => {
+                let r = d.has(e) ? l(t) : c(t);
+                if (n == null) return [e, r];
+                let i = e => {
+                    let t = e.signal == null ? o.signal : AbortSignal.any([o.signal, e.signal]),
+                        n = r.withOptions({
+                            ...e,
+                            signal: t
+                        });
+                    return (...e) => (t.throwIfAborted(), n(...e))
+                };
+                return [e, Object.assign(i({}), {
+                    withOptions: i
+                })]
+            }));
+        return n?.addEventListener(`abort`, s, {
+            once: !0
+        }), n?.throwIfAborted(), {
+            api: m,
+            dispose: s
+        }
+    } catch (e) {
+        throw s(), e
+    }
+}
+
+function f(e, t, n) {
+    function r(...n) {
+        let r = e[t];
+        if (r == null) throw Error(`Sandbox host method "${t}" is unavailable`);
+        return r.apply(this, n)
+    }
+    return p(n) ? async function*(...e) {
+        return yield* r.apply(this, e)
+    }: r
+}
+
+function p(e) {
+    return e.constructor.name === `AsyncGeneratorFunction`
+}
+
+function m({
+    iframe: e,
+    origin: t,
+    signal: s
+}) {
+    let c = e.ownerDocument.defaultView;
+    if (c == null || s?.aborted) return Promise.reject(new DOMException(`Sandbox connection cancelled.`, `AbortError`));
+    let l = n({
+        type: a(`init`),
+        ports: i(r(), o(MessagePort)),
+        replyPort: o(MessagePort)
+    });
+    return new Promise((n, r) => {
+        let i = () => {
+                c.removeEventListener(`message`, d), e.removeEventListener(`error`, u), s?.removeEventListener(`abort`, o)
+            },
+            a = e => {
+                i(), r(e)
+            },
+            o = () => {
+                a(new DOMException(`Sandbox connection cancelled.`, `AbortError`))
+            },
+            u = () => {
+                a(Error(`Unable to load the code execution sandbox.`))
+            },
+            d = r => {
+                if (r.source !== e.contentWindow || r.origin !== t) return;
+                let a = l.safeParse(r.data);
+                a.success && (i(), n(a.data))
+            };
+        c.addEventListener(`message`, d), s != null && e.addEventListener(`error`, u, {
+            once: !0
+        }), s?.addEventListener(`abort`, o, {
+            once: !0
+        })
+    })
+}
+var h = e((() => {
+    u(), t()
+}));
+
+function g({
+    disableNetworkRequests: e,
+    domains: t,
+    additionalResourceDomains: n = [],
+    unsafeAllowAllNetworkRequests: r
+}) {
+    return e ? {
+        disableNetworkRequests: !0,
+        resourceDomains: [],
+        connectDomains: [],
+        isTrusted: !1
+    } : r ? null : {
+        connectDomains: t,
+        resourceDomains: [...t, ...n],
+        isTrusted: !1
+    }
+}
+var _ = e((() => {}));
+
+function v(e) {
+    return y.has(e) ? null : new URL(e).origin
+}
+var y, b = e((() => {
+        y = new Set([`blob`, `c`, `cid`, `data`, `eval`, `filesystem`, `inline`, `trusted-types-policy`, `trusted-types-sink`, `wasm-eval`])
+    })),
+    x = e((() => {}));
+
+function S(e) {
+    if (!C(e) || e.type !== `structured_event` || !C(e.messageType) || typeof e.messageType.$type != `string` || e.messageType.$type.length === 0 || !C(e.payload)) return;
+    let t = e.payload;
+    if (![`@type`, `codexMetadata`, `codex_metadata`, `webFrontend`, `web_frontend`].some(e => Object.hasOwn(t, e))) return {
+        type: `structured_event`,
+        messageType: {
+            $type: e.messageType.$type
+        },
+        payload: e.payload
+    }
+}
+
+function C(e) {
+    return typeof e == `object` && !!e && !Array.isArray(e)
+}
+var w = e((() => {})),
+    T = e((() => {
+        s(), h(), _(), b(), x(), w()
+    }));
+export {
+    b as a, d as c, v as i, h as l, w as n, g as o, S as r, _ as s, T as t
+};
+//# sourceMappingURL=25a66342-jphxkuox75vuywjp.js.map

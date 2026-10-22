@@ -1,0 +1,94 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Qy as t,
+    Zy as n,
+    l7 as r,
+    u7 as i
+} from "./4813494d-r54yv6lv29x4ew99.js";
+import {
+    Bn as a,
+    Nn as o,
+    Rn as s,
+    Vn as c,
+    wn as l
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+var u, d, f, p = e((() => {
+        u = a(), c(), d = e => (0, u.jsx)(`svg`, {
+            preserveAspectRatio: `none`,
+            overflow: `visible`,
+            style: {
+                display: `block`
+            },
+            width: 24,
+            height: 9,
+            viewBox: `0 0 24 9`,
+            fill: `none`,
+            xmlns: `http://www.w3.org/2000/svg`,
+            ...e,
+            children: (0, u.jsx)(`g`, {
+                id: `Caret`,
+                children: (0, u.jsx)(`path`, {
+                    id: `Vector`,
+                    d: `M0 0C5.4 0 7.3 2.2 9.6 5.3L10.7 6.8C11.35 7.7 12.65 7.7 13.3 6.8L14.4 5.3C16.7 2.2 18.6 0 24 0H0Z`,
+                    fill: `#0D0D0D`
+                })
+            })
+        }), f = d
+    })),
+    m, h, g, _ = e((() => {
+        m = l(), i(), s(), t(), p(), h = a(), g = e => {
+            "use forget";
+            let t = (0, m.c)(11),
+                {
+                    children: i,
+                    className: a,
+                    label: s,
+                    showTooltip: c
+                } = e,
+                l = !c,
+                u;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, h.jsxs)(`div`, {
+                className: `flex max-w-[min(215px,calc(100dvw-16px))] flex-col items-center opacity-90 group-data-[side=bottom]:flex-col-reverse`,
+                children: [(0, h.jsx)(`div`, {
+                    className: `light bg-token-interactive-bg-primary-default text-token-text-inverted-static text-footnote-emphasized shadow-elevation-05 rounded-lg p-2 text-start`,
+                    children: (0, h.jsx)(o, {
+                        id: `chatgpt.business_profiles.verified.tooltip`,
+                        defaultMessage: `OpenAI verified that this profile is managed by an owner or authorized representative.`
+                    })
+                }), (0, h.jsx)(f, {
+                    "aria-hidden": `true`,
+                    className: `group-data-[side=bottom]:rotate-180`
+                })]
+            }), t[0] = u) : u = t[0];
+            let d;
+            t[1] === a ? d = t[2] : (d = r(`inline-flex shrink-0 align-middle`, a), t[1] = a, t[2] = d);
+            let p = c ? 0 : void 0,
+                g;
+            t[3] !== i || t[4] !== s || t[5] !== d || t[6] !== p ? (g = (0, h.jsx)(`span`, {
+                className: d,
+                role: `img`,
+                "aria-label": s,
+                tabIndex: p,
+                children: i
+            }), t[3] = i, t[4] = s, t[5] = d, t[6] = p, t[7] = g) : g = t[7];
+            let _;
+            return t[8] !== l || t[9] !== g ? (_ = (0, h.jsx)(n, {
+                disabled: l,
+                triggerAs: null,
+                usePortal: !1,
+                side: `top`,
+                contentClassName: `group overflow-visible!`,
+                customPaddingClassName: `p-0`,
+                customBorderClassName: `border-0`,
+                customBackgroundColorClassName: `bg-transparent`,
+                label: u,
+                children: g
+            }), t[8] = l, t[9] = g, t[10] = _) : _ = t[10], _
+        }
+    }));
+export {
+    _ as n, g as t
+};
+//# sourceMappingURL=66f31be8-nsjwasulcpfqajx3.js.map

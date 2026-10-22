@@ -1,0 +1,459 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A8 as n,
+    J5 as r,
+    Lnt as i,
+    l7 as a,
+    u7 as o,
+    znt as s
+} from "./4813494d-r54yv6lv29x4ew99.js";
+import {
+    Bn as c,
+    Nn as l,
+    Rn as u,
+    Vn as d,
+    wn as f,
+    zn as ee
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $9t as p,
+    ANt as m,
+    CPn as h,
+    FNt as te,
+    Fhn as ne,
+    Ihn as g,
+    LNt as _,
+    Nhn as v,
+    OPn as y,
+    Phn as b,
+    Q9t as x,
+    Qhn as S,
+    Qjt as C,
+    SNt as w,
+    SPn as re,
+    Xhn as T,
+    Xjt as ie,
+    Yhn as E,
+    Yjt as D,
+    Zhn as O,
+    Zjt as k,
+    cgn as A,
+    eEt as j,
+    sgn as M,
+    tEt as N,
+    vUn as P,
+    yUn as F
+} from "./conversation-small-dwpaie1hln28efxb.js";
+import {
+    bp as ae,
+    vp as I,
+    xp as L,
+    yp as R
+} from "./30901919-k5uqyx4vyplt9toa.js";
+import {
+    Ix as z,
+    Px as B
+} from "./c2675c8c-jg3tpj8mw86wdc0g.js";
+import {
+    Bb as V
+} from "./8b34dbc2-bgocf3s6t6l67twq.js";
+import {
+    a as H,
+    c as oe,
+    s as se
+} from "./37eb5e23-mpha7dvqbimzhool.js";
+import {
+    n as U,
+    t as W
+} from "./3b813a7d-hmrd9qtqimunl5qj.js";
+import {
+    i as G,
+    n as K,
+    r as q,
+    t as ce
+} from "./7b147ad5-kee7yolv6x8qfe54.js";
+
+function le({
+    analyticsSession: e,
+    availableActionSet: t,
+    menuKind: n,
+    provider: r
+}) {
+    e != null && i.logStructuredEvent(`ChatgptFileLibraryMenuShown`, {
+        ...e,
+        availableActionSet: t,
+        menuKind: n,
+        provider: r
+    })
+}
+
+function ue(e) {
+    return e != null && e !== y.UNRECOGNIZED && e !== y.CHATGPT_FILE_LIBRARY_PROVIDER_UNSPECIFIED && e !== y.CHATGPT_FILE_LIBRARY_PROVIDER_LIBRARY ? h.CHATGPT_FILE_LIBRARY_MENU_KIND_PROVIDER_MORE : h.CHATGPT_FILE_LIBRARY_MENU_KIND_PAGE_MORE
+}
+var de = e((() => {
+        s(), V()
+    })),
+    J, Y, fe, pe, me, he = e((() => {
+        M(), C(), ie(), S(), T(), q(), ce(), ne(), v(), J = A({
+            id: `library-filter`,
+            icons: {
+                check: {
+                    normal: D,
+                    small: k
+                },
+                eye: {
+                    normal: E,
+                    small: O
+                },
+                "pencil-sparkle": {
+                    normal: K,
+                    small: G
+                },
+                trash: {
+                    normal: b,
+                    small: g
+                }
+            }
+        }), Y = J.Check, fe = J.Eye, pe = J.PencilSparkle, me = J.Trash
+    }));
+
+function ge(e) {
+    let t = e?.trim().toLowerCase() ?? ``;
+    if (t.length === 0) return null;
+    if (t === `image`) return `images`;
+    if (t === `pdf`) return `pdfs`;
+    switch (t) {
+        case `images`:
+        case `documents`:
+        case `spreadsheets`:
+        case `presentations`:
+        case `pdfs`:
+            return t;
+        default:
+            return null
+    }
+}
+
+function _e(e) {
+    switch (e) {
+        case `uploaded`:
+        case `generated`:
+            return e;
+        default:
+            return null
+    }
+}
+
+function ve(e) {
+    return (0, X.jsx)(j, {
+        "aria-hidden": `true`,
+        className: `icon text-token-text-primary`,
+        iconKey: w[e],
+        variant: `monochrome`
+    })
+}
+
+function ye(e) {
+    let t = `icon text-token-text-primary`;
+    switch (e) {
+        case `uploaded`:
+            return (0, X.jsx)(R, {
+                "aria-hidden": `true`,
+                className: t
+            });
+        case `generated`:
+            return (0, X.jsx)(pe, {
+                className: t
+            });
+        default:
+            return (0, X.jsx)(R, {
+                "aria-hidden": `true`,
+                className: t
+            })
+    }
+}
+
+function be(e, t, n, r) {
+    let i = e.getAll(t).filter(e => e !== n);
+    r && i.push(n), e.delete(t);
+    for (let n of i) e.append(t, n)
+}
+
+function xe(e) {
+    "use forget";
+    let t = (0, Ce.c)(66),
+        {
+            activeFilterCount: n,
+            activeSourceFilters: i,
+            activeCategories: o,
+            multiSelect: s,
+            showAllFileTypesFilter: c,
+            isShowingAllFileTypes: u,
+            currentDirectoryId: d,
+            deletedFilesEnabled: f,
+            isDeletedFilesView: m,
+            showSourceFilters: h,
+            showTypeFilters: ne,
+            searchParams: g,
+            navigateWithinLibrary: _,
+            analyticsSession: v,
+            menuKind: y,
+            provider: b
+        } = e,
+        x = s !== void 0 && s,
+        S = ne === void 0 || ne,
+        C = ee(),
+        w = (0, we.useId)(),
+        T;
+    t[0] !== w || t[1] !== x ? (T = () => x ? se() === w : !1, t[0] = w, t[1] = x, t[2] = T) : T = t[2];
+    let ie = r(T),
+        E = !x && (c || u),
+        D = f && d == null,
+        O = E || D,
+        k;
+    t[3] !== i || t[4] !== x ? (k = x ? i : i.slice(0, 1), t[3] = i, t[4] = x, t[5] = k) : k = t[5];
+    let A = k,
+        j;
+    t[6] !== o || t[7] !== x ? (j = x ? o : o.slice(0, 1), t[6] = o, t[7] = x, t[8] = j) : j = t[8];
+    let M = j,
+        N = x ? ie : void 0,
+        F;
+    t[9] !== v || t[10] !== w || t[11] !== y || t[12] !== x || t[13] !== b ? (F = e => {
+        x && oe(w, e), e && le({
+            analyticsSession: v,
+            availableActionSet: [re.CHATGPT_FILE_LIBRARY_MENU_ACTION_FILTER],
+            menuKind: y ?? ue(b),
+            provider: b
+        })
+    }, t[9] = v, t[10] = w, t[11] = y, t[12] = x, t[13] = b, t[14] = F) : F = t[14];
+    let I;
+    t[15] !== n || t[16] !== C ? (I = C.formatMessage(p.openFilters, {
+        activeFilterCount: n
+    }), t[15] = n, t[16] = C, t[17] = I) : I = t[17];
+    let L = n > 0 ? `bg-token-bg-tertiary text-token-text-primary` : `text-token-icon-tertiary`,
+        R;
+    t[18] === L ? R = t[19] : (R = a(`hover:bg-token-bg-tertiary hover:text-token-text-primary relative flex size-9 shrink-0 items-center justify-center rounded-full transition-colors`, `focus-visible:ring-token-ring focus-visible:ring-2 focus-visible:outline-none`, `data-[state=open]:bg-token-bg-tertiary data-[state=open]:text-token-text-primary`, L), t[18] = L, t[19] = R);
+    let z;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (z = (0, X.jsx)(ae, {
+        className: `icon`,
+        "aria-hidden": `true`
+    }), t[20] = z) : z = t[20];
+    let B;
+    t[21] !== n || t[22] !== x ? (B = n > 0 ? (0, X.jsx)(`span`, {
+        "aria-hidden": `true`,
+        className: a(`pointer-events-none absolute -end-1 -top-1 flex h-4 min-w-6 items-center justify-center rounded-full bg-black px-2 text-[12px] leading-none font-medium text-white dark:bg-white dark:text-black`, x && W.refreshedHeaderFilterCount),
+        children: n
+    }) : null, t[21] = n, t[22] = x, t[23] = B) : B = t[23];
+    let V;
+    t[24] !== R || t[25] !== B || t[26] !== I ? (V = (0, X.jsx)(P.BasicTrigger, {
+        asChild: !0,
+        children: (0, X.jsxs)(`button`, {
+            type: `button`,
+            "aria-label": I,
+            className: R,
+            children: [z, B]
+        })
+    }), t[24] = R, t[25] = B, t[26] = I, t[27] = V) : V = t[27];
+    let H;
+    t[28] !== d || t[29] !== C || t[30] !== m || t[31] !== x || t[32] !== _ || t[33] !== g || t[34] !== A || t[35] !== h ? (H = h ? (0, X.jsxs)(P.Group, {
+        children: [(0, X.jsx)(P.Label, {
+            className: `text-token-text-tertiary ps-3 pe-4 pt-3 pb-1 text-sm`,
+            children: (0, X.jsx)(l, {
+                ...p.sourceFilter
+            })
+        }), Ee.map(e => {
+            let t = (x || !m) && A.includes(e);
+            return (0, X.jsx)(P.CheckboxItem, {
+                checked: t,
+                size: `large`,
+                className: `text-token-text-primary`,
+                icon: ye(e),
+                label: C.formatMessage(e === `uploaded` ? p.sourceFilterUploaded : p.sourceFilterGenerated),
+                trailing: t ? (0, X.jsx)(Y, {
+                    className: `icon text-token-text-primary`
+                }) : (0, X.jsx)(`span`, {
+                    "aria-hidden": `true`,
+                    className: `icon`
+                }),
+                onCheckedChange: t => {
+                    let n = new URLSearchParams(g);
+                    x ? be(n, Q, e, t) : t ? n.set(Q, e) : n.delete(Q), x || n.delete($), _(d, n, !0, `source_filter`)
+                }
+            }, e)
+        })]
+    }) : null, t[28] = d, t[29] = C, t[30] = m, t[31] = x, t[32] = _, t[33] = g, t[34] = A, t[35] = h, t[36] = H) : H = t[36];
+    let U;
+    t[37] !== d || t[38] !== C || t[39] !== m || t[40] !== x || t[41] !== _ || t[42] !== g || t[43] !== M || t[44] !== h || t[45] !== S ? (U = S && (0, X.jsxs)(P.Group, {
+        className: h ? `before:my-2` : ``,
+        children: [(0, X.jsx)(P.Label, {
+            className: a(`text-token-text-tertiary ps-3 pe-4 pb-1 text-sm`, h ? `pt-1` : `pt-3`),
+            children: (0, X.jsx)(l, {
+                ...p.fileTypeFilter
+            })
+        }), De.map(e => {
+            let {
+                value: t,
+                label: n
+            } = e, r = (x || !m) && M.includes(t);
+            return (0, X.jsx)(P.CheckboxItem, {
+                checked: r,
+                size: `large`,
+                className: `text-token-text-primary`,
+                icon: ve(t),
+                label: C.formatMessage(n),
+                trailing: r ? (0, X.jsx)(Y, {
+                    className: `icon text-token-text-primary`
+                }) : (0, X.jsx)(`span`, {
+                    "aria-hidden": `true`,
+                    className: `icon`
+                }),
+                onCheckedChange: e => {
+                    let n = new URLSearchParams(g);
+                    x ? be(n, `category`, t, e) : e ? n.set(`category`, t) : n.delete(`category`), n.delete(`show_all_file_types`), x || n.delete(`deleted`), _(d, n, !0, `file_type_filter`)
+                }
+            }, t)
+        })]
+    }), t[37] = d, t[38] = C, t[39] = m, t[40] = x, t[41] = _, t[42] = g, t[43] = M, t[44] = h, t[45] = S, t[46] = U) : U = t[46];
+    let G;
+    t[47] !== d || t[48] !== C || t[49] !== m || t[50] !== u || t[51] !== _ || t[52] !== g || t[53] !== E || t[54] !== O || t[55] !== D ? (G = O ? (0, X.jsxs)(P.Group, {
+        className: `before:my-2`,
+        children: [E ? (0, X.jsx)(P.CheckboxItem, {
+            checked: u,
+            size: `large`,
+            className: `text-token-text-primary`,
+            icon: (0, X.jsx)(fe, {
+                className: `icon text-token-text-primary`
+            }),
+            label: C.formatMessage(p.showAllFileTypesFilter),
+            trailing: u ? (0, X.jsx)(Y, {
+                className: `icon text-token-text-primary`
+            }) : (0, X.jsx)(`span`, {
+                "aria-hidden": `true`,
+                className: `icon`
+            }),
+            onCheckedChange: e => {
+                let t = new URLSearchParams(g);
+                e ? (t.set(te, `true`), t.delete(Z), t.delete(`tab`)) : t.delete(te), _(d, t, !0, `none`)
+            }
+        }) : null, D ? (0, X.jsx)(P.CheckboxItem, {
+            checked: m,
+            size: `large`,
+            className: `text-token-text-primary`,
+            icon: (0, X.jsx)(me, {
+                className: `icon text-token-text-primary`
+            }),
+            label: C.formatMessage(p.recentlyDeletedFilter),
+            trailing: m ? (0, X.jsx)(Y, {
+                className: `icon text-token-text-primary`
+            }) : (0, X.jsx)(`span`, {
+                "aria-hidden": `true`,
+                className: `icon`
+            }),
+            onCheckedChange: e => {
+                let t = new URLSearchParams(g);
+                e ? (t.set($, `true`), t.delete(Q), t.delete(Z), t.delete(Te)) : t.delete($), _(null, t, !1, `none`)
+            }
+        }) : null]
+    }) : null, t[47] = d, t[48] = C, t[49] = m, t[50] = u, t[51] = _, t[52] = g, t[53] = E, t[54] = O, t[55] = D, t[56] = G) : G = t[56];
+    let K;
+    t[57] !== H || t[58] !== U || t[59] !== G ? (K = (0, X.jsx)(P.Portal, {
+        children: (0, X.jsxs)(P.Content, {
+            align: `end`,
+            size: `large`,
+            className: `w-[240px] max-w-[95vw]`,
+            children: [H, U, G]
+        })
+    }), t[57] = H, t[58] = U, t[59] = G, t[60] = K) : K = t[60];
+    let q;
+    return t[61] !== V || t[62] !== K || t[63] !== N || t[64] !== F ? (q = (0, X.jsxs)(P.Root, {
+        open: N,
+        onOpenChange: F,
+        children: [V, K]
+    }), t[61] = V, t[62] = K, t[63] = N, t[64] = F, t[65] = q) : q = t[65], q
+}
+
+function Se(e) {
+    "use forget";
+    let t = (0, Ce.c)(21),
+        {
+            sourceFilters: n,
+            categories: r,
+            currentDirectoryId: i,
+            searchParams: a,
+            navigateWithinLibrary: o
+        } = e,
+        s = ee(),
+        c;
+    t[0] !== i || t[1] !== o || t[2] !== a ? (c = (e, t, n) => {
+        let r = new URLSearchParams(a);
+        be(r, e, t, !1), o(i, r, !0, n)
+    }, t[0] = i, t[1] = o, t[2] = a, t[3] = c) : c = t[3];
+    let l = c,
+        u;
+    if (t[4] !== s || t[5] !== l || t[6] !== n) {
+        let e;
+        t[8] !== s || t[9] !== l ? (e = e => {
+            let t = s.formatMessage(e === `uploaded` ? p.sourceFilterUploaded : p.sourceFilterGenerated);
+            return (0, X.jsx)(B, {
+                label: t,
+                onRemove: () => l(Q, e, `source_filter`),
+                ariaLabel: s.formatMessage(p.clearFilterTag, {
+                    label: t
+                })
+            }, e)
+        }, t[8] = s, t[9] = l, t[10] = e) : e = t[10], u = n.map(e), t[4] = s, t[5] = l, t[6] = n, t[7] = u
+    } else u = t[7];
+    let d;
+    if (t[11] !== r || t[12] !== s || t[13] !== l) {
+        let e;
+        t[15] !== s || t[16] !== l ? (e = e => {
+            let t = De.find(t => {
+                    let {
+                        value: n
+                    } = t;
+                    return n === e
+                }),
+                n = t == null ? e : s.formatMessage(t.label);
+            return (0, X.jsx)(B, {
+                label: n,
+                onRemove: () => l(Z, e, `file_type_filter`),
+                ariaLabel: s.formatMessage(p.clearFilterTag, {
+                    label: n
+                })
+            }, e)
+        }, t[15] = s, t[16] = l, t[17] = e) : e = t[17], d = r.map(e), t[11] = r, t[12] = s, t[13] = l, t[14] = d
+    } else d = t[14];
+    let f;
+    return t[18] !== u || t[19] !== d ? (f = (0, X.jsx)(`div`, {
+        className: W.refreshedHeaderFilterTags,
+        children: (0, X.jsxs)(`div`, {
+            className: W.refreshedHeaderFilterTagsContent,
+            children: [u, d]
+        })
+    }), t[18] = u, t[19] = d, t[20] = f) : f = t[20], f
+}
+var Ce, we, X, Te, Z, Q, $, Ee, De, Oe = e((() => {
+    Ce = f(), F(), L(), I(), N(), he(), z(), x(), H(), _(), m(), o(), we = t(d()), u(), n(), U(), de(), V(), X = c(), Te = `mode`, Z = `category`, Q = `source`, $ = `deleted`, Ee = [`uploaded`, `generated`], De = [{
+        value: `images`,
+        label: p.typeFilterImages
+    }, {
+        value: `documents`,
+        label: p.typeFilterDocuments
+    }, {
+        value: `spreadsheets`,
+        label: p.typeFilterSpreadsheets
+    }, {
+        value: `presentations`,
+        label: p.typeFilterPresentations
+    }, {
+        value: `pdfs`,
+        label: p.typeFilterPdfs
+    }]
+}));
+export {
+    Te as a, ge as c, le as d, xe as i, _e as l, $ as n, Q as o, Se as r, Oe as s, Z as t, de as u
+};
+//# sourceMappingURL=2227792c-oabodjm3kcfip4i8.js.map
