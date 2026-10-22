@@ -1,0 +1,781 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    A0 as r,
+    Cit as i,
+    Dit as a,
+    E0 as o,
+    F0 as s,
+    Fz as c,
+    IR as l,
+    Int as u,
+    Iz as d,
+    LF as f,
+    LU as p,
+    Lz as m,
+    N0 as h,
+    Pnt as g,
+    QR as _,
+    Qit as v,
+    VR as y,
+    Zot as b,
+    _at as x,
+    a0 as S,
+    eE as C,
+    ez as w,
+    fr as T,
+    gat as E,
+    git as D,
+    iz as O,
+    jit as k,
+    kF as A,
+    mat as j,
+    mit as M,
+    mrt as N,
+    nP as P,
+    oP as F,
+    pat as I,
+    pr as L,
+    prt as R,
+    q1 as z,
+    rP as B,
+    rz as V,
+    sz as ee,
+    tP as te,
+    tat as ne,
+    w0 as re,
+    yat as H,
+    yit as ie,
+    zU as ae,
+    zz as oe
+} from "./4813494d-itnrgnth03y1sm9d.js";
+import {
+    Bn as se,
+    Nn as U,
+    Nt as ce,
+    Q as le,
+    Rn as ue,
+    Vn as de,
+    Zt as fe,
+    an as pe,
+    it as me,
+    wn as he
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    D8 as ge,
+    O8 as _e,
+    R4t as ve,
+    YGn as ye,
+    qGn as W,
+    z4t as be
+} from "./conversation-small-i79e9c315w50am5f.js";
+import {
+    $x as xe,
+    Qx as Se,
+    Xl as Ce,
+    Zl as we
+} from "./30901919-ikyi1r55w2i02fom.js";
+import {
+    a as Te,
+    n as Ee,
+    o as De,
+    t as Oe
+} from "./c09d86e5-mjimpbzswku60o64.js";
+import {
+    a as ke,
+    i as G
+} from "./9bbac052-ki36ni0fkrg93vt4.js";
+import {
+    n as Ae,
+    t as je
+} from "./35711af7-ivn39b2v8dl3m7bn.js";
+import {
+    a as Me,
+    c as Ne,
+    n as Pe,
+    o as Fe,
+    s as Ie,
+    t as Le
+} from "./c982bafe-i2iqiang75wuikor.js";
+import {
+    n as Re,
+    t as ze
+} from "./966be48d-jnsxoc1eun57iueo.js";
+
+function Be(e) {
+    return e + 1
+}
+
+function Ve(e) {
+    return e.name !== `phone_number`
+}
+var He, K, q, Ue, We = e((() => {
+    He = he(), l(), Te(), Ie(), ee(), Re(), Pe(), Ee(), C(), Ce(), Se(), a(), Me(), V(), K = t(de()), ue(), le(), q = se(), Ue = e => {
+        "use forget";
+        let t = (0, He.c)(60),
+            {
+                title: r,
+                subtitle: a,
+                mismatchSubtitle: o,
+                connection: s,
+                callbackUrl: c,
+                authorizationParams: l
+            } = e,
+            u = ce(),
+            d;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = {
+            loginStrategy: `existing_user`
+        }, t[0] = d) : d = t[0];
+        let {
+            optionsForDisplay: f
+        } = Ne(d), [p, m] = De(!0), [h, g] = (0, K.useState)(0), [v, b] = (0, K.useState)(!1), x;
+        t[1] !== l || t[2] !== c ? (x = Le(c, l), t[1] = l, t[2] = c, t[3] = x) : x = t[3];
+        let S = x,
+            C;
+        t[4] !== l || t[5] !== p || t[6] !== u || t[7] !== m || t[8] !== S ? (C = async (e, t) => {
+            if (!p) {
+                m(!0), b(!1);
+                try {
+                    await S({
+                        screen_hint: `login_or_signup`,
+                        ...e
+                    }, () => {
+                        y(l[ie], t, _.ACCESS_FLOW_PAGE_TYPE_CHATGPT_WEB_LOGIN_PAGE)
+                    })
+                } catch {
+                    b(!0), g(Be)
+                }
+                m(!1)
+            }
+        }, t[4] = l, t[5] = p, t[6] = u, t[7] = m, t[8] = S, t[9] = C) : C = t[9];
+        let T = C,
+            E, D, k, A, j, M, N, P, F;
+        if (t[10] !== s || t[11] !== T || t[12] !== h || t[13] !== p || t[14] !== o || t[15] !== f || t[16] !== a || t[17] !== r) {
+            let e = f.filter(Ve);
+            F = `flex flex-col items-center gap-3 text-center`, t[27] === r ? E = t[28] : (E = (0, q.jsx)(`h1`, {
+                className: `text-2xl font-semibold`,
+                children: r
+            }), t[27] = r, t[28] = E), t[29] === a ? D = t[30] : (D = (0, q.jsx)(`p`, {
+                className: `text-token-text-secondary text-sm`,
+                children: a
+            }), t[29] = a, t[30] = D), t[31] === o ? k = t[32] : (k = o ? (0, q.jsx)(`p`, {
+                className: `text-token-text-secondary text-sm`,
+                children: o
+            }) : null, t[31] = o, t[32] = k), A = `flex w-full flex-col gap-3 px-6 pt-3`, j = p;
+            let c;
+            t[33] !== s || t[34] !== T ? (c = () => {
+                T({
+                    connection: s,
+                    connection_provider: s.startsWith(`conn_`) || s.startsWith(`oaisaml_`) ? i.WorkOS.toString() : i.Auth0.toString()
+                }, w.ACCESS_FLOW_USER_ACTION_TYPE_CONTINUE_WITH_SSO)
+            }, t[33] = s, t[34] = T, t[35] = c) : c = t[35];
+            let l, u;
+            t[36] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, q.jsx)(we, {
+                className: `icon`
+            }), u = (0, q.jsx)(U, {
+                id: `AcceptInvitePage.sso.button.company`,
+                defaultMessage: `Continue with company SSO`
+            }), t[36] = l, t[37] = u) : (l = t[36], u = t[37]), t[38] !== p || t[39] !== c ? (M = (0, q.jsxs)(n, {
+                type: `button`,
+                color: `primary`,
+                className: `h-[52px] rounded-full text-base`,
+                contentWrapperClassName: `gap-2`,
+                disabled: p,
+                onClick: c,
+                children: [l, u]
+            }), t[38] = p, t[39] = c, t[40] = M) : M = t[40], N = e.length > 0 ? (0, q.jsx)(ze, {
+                children: (0, q.jsx)(U, {
+                    id: `AcceptInvitePage.sso.divider.or`,
+                    defaultMessage: `or`
+                })
+            }) : null;
+            let d;
+            t[41] !== T || t[42] !== h || t[43] !== p ? (d = e => {
+                if (e.name === `email`) return (0, q.jsxs)(n, {
+                    type: `button`,
+                    color: `secondary`,
+                    className: `h-[52px] rounded-full text-base`,
+                    contentWrapperClassName: `gap-2`,
+                    disabled: p || e.tempDisabled,
+                    onClick: () => {
+                        T({
+                            connection: `password`
+                        }, w.ACCESS_FLOW_USER_ACTION_TYPE_CONTINUE_WITH_PASSWORD)
+                    },
+                    children: [(0, q.jsx)(xe, {
+                        className: `icon`
+                    }), (0, q.jsx)(U, {
+                        id: `AcceptInvitePage.sso.button.password`,
+                        defaultMessage: `Continue with password`
+                    })]
+                }, e.name);
+                if (e.name === `phone_number`) return null;
+                let t = e.name;
+                return (0, q.jsx)(Oe, {
+                    provider: t,
+                    className: `h-[52px] rounded-full text-base`,
+                    disabled: p || e.tempDisabled,
+                    onClick: () => {
+                        T({
+                            connection: O[t]
+                        }, Fe(t))
+                    }
+                }, `${t}-${h}`)
+            }, t[41] = T, t[42] = h, t[43] = p, t[44] = d) : d = t[44], P = e.map(d), t[10] = s, t[11] = T, t[12] = h, t[13] = p, t[14] = o, t[15] = f, t[16] = a, t[17] = r, t[18] = E, t[19] = D, t[20] = k, t[21] = A, t[22] = j, t[23] = M, t[24] = N, t[25] = P, t[26] = F
+        } else E = t[18], D = t[19], k = t[20], A = t[21], j = t[22], M = t[23], N = t[24], P = t[25], F = t[26];
+        let I;
+        t[45] !== A || t[46] !== j || t[47] !== M || t[48] !== N || t[49] !== P ? (I = (0, q.jsxs)(`div`, {
+            className: A,
+            "aria-busy": j,
+            children: [M, N, P]
+        }), t[45] = A, t[46] = j, t[47] = M, t[48] = N, t[49] = P, t[50] = I) : I = t[50];
+        let L;
+        t[51] === v ? L = t[52] : (L = v ? (0, q.jsx)(`p`, {
+            role: `alert`,
+            className: `text-token-interactive-label-warning-secondary text-sm`,
+            children: (0, q.jsx)(U, {
+                id: `AcceptInvitePage.sso.error.signIn`,
+                defaultMessage: `Couldn't start sign-in. Please try again.`
+            })
+        }) : null, t[51] = v, t[52] = L);
+        let R;
+        return t[53] !== E || t[54] !== D || t[55] !== k || t[56] !== I || t[57] !== L || t[58] !== F ? (R = (0, q.jsxs)(`div`, {
+            className: F,
+            children: [E, D, k, I, L]
+        }), t[53] = E, t[54] = D, t[55] = k, t[56] = I, t[57] = L, t[58] = F, t[59] = R) : R = t[59], R
+    }
+}));
+
+function Ge({
+    workspaceId: e,
+    acceptWorkspaceId: t
+}) {
+    e && (E.deleteCookie(H.WorkspaceComputeResidencyCluster), E.setCookie(H.Workspace, e, {
+        maxAge: M
+    })), t ? E.setCookie(H.AcceptAccountId, t, {
+        maxAge: 120
+    }) : E.deleteCookie(H.AcceptAccountId)
+}
+
+function J(e) {
+    "use forget";
+    let t = (0, Z.c)(48),
+        {
+            inviteAuthContext: n,
+            currentUserEmail: r,
+            isStorageComplianceEnabled: i,
+            browserTitle: a,
+            metaDescription: o,
+            title: s,
+            subtitle: l,
+            mismatchSubtitle: u,
+            optionalSsoConnection: d,
+            callbackUrl: f,
+            wordmarkLabel: p,
+            pageShownEventName: m
+        } = e,
+        _ = m === void 0 ? `chatgpt_accept_invite_page_shown` : m,
+        [v] = (0, Q.useState)(qe),
+        y;
+    t[0] !== r || t[1] !== n.email ? (y = r != null && r.trim().toLowerCase() !== n.email.trim().toLowerCase(), t[0] = r, t[1] = n.email, t[2] = y) : y = t[2];
+    let b = y,
+        x;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (x = h(I()), t[3] = x) : x = t[3];
+    let S;
+    t[4] === n.acceptWorkspaceId ? S = t[5] : (S = n.acceptWorkspaceId ? {
+        accept_wId: n.acceptWorkspaceId
+    } : {}, t[4] = n.acceptWorkspaceId, t[5] = S);
+    let C;
+    t[6] !== v || t[7] !== n.email || t[8] !== S ? (C = {
+        ...x,
+        login_hint: n.email,
+        ...S,
+        [ie]: v
+    }, t[6] = v, t[7] = n.email, t[8] = S, t[9] = C) : C = t[9];
+    let w = C,
+        T;
+    t[10] === f ? T = t[11] : (T = new URL(f, `https://chatgpt.com`), t[10] = f, t[11] = T);
+    let E = T.search,
+        D, O;
+    t[12] !== v || t[13] !== n.workspaceId || t[14] !== E || t[15] !== b || t[16] !== _ ? (D = () => {
+        let e = new URLSearchParams(E),
+            t = e.get(`aiId`),
+            r = e.get(`eid`),
+            i = {
+                authSessionLoggingId: v,
+                inviteId: t && /^[a-zA-Z0-9_-]{1,128}$/.test(t) ? t : void 0,
+                entryId: r && pe(r) ? r : void 0,
+                isAutomated: navigator.webdriver
+            },
+            a = g.logStructuredEvent(`ChatgptInviteLoginPageViewed`, {
+                legacyStatsigEventName: _,
+                invitedWorkspaceId: n.workspaceId ?? void 0,
+                isAccountMismatch: b,
+                ...i
+            });
+        N(_, void 0, {
+            workspace_id: n.workspaceId ?? ``,
+            is_logged_in_as_different_email: String(b),
+            auth_session_logging_id: i.authSessionLoggingId,
+            is_automated: String(i.isAutomated),
+            ...i.inviteId ? {
+                invite_id: i.inviteId
+            } : {},
+            ...i.entryId ? {
+                entry_id: i.entryId
+            } : {},
+            ...a ? {
+                unique_event_id: a
+            } : {}
+        })
+    }, O = [E, v, n.workspaceId, b, _], t[12] = v, t[13] = n.workspaceId, t[14] = E, t[15] = b, t[16] = _, t[17] = D, t[18] = O) : (D = t[17], O = t[18]), (0, Q.useEffect)(D, O);
+    let k;
+    t[19] === a ? k = t[20] : (k = (0, $.jsx)(`title`, {
+        children: a
+    }), t[19] = a, t[20] = k);
+    let A;
+    t[21] === o ? A = t[22] : (A = (0, $.jsx)(`meta`, {
+        name: `description`,
+        content: o
+    }), t[21] = o, t[22] = A);
+    let j;
+    t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (j = {
+        minHeight: `100dvh`
+    }, t[23] = j) : j = t[23];
+    let M;
+    t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (M = (0, $.jsx)(ge, {}), t[24] = M) : M = t[24];
+    let P;
+    t[25] === p ? P = t[26] : (P = (0, $.jsx)(me, {
+        to: `/`,
+        className: `text-token-text-primary absolute start-5 top-5 md:start-8 md:top-6`,
+        "aria-label": p,
+        children: M
+    }), t[25] = p, t[26] = P);
+    let F;
+    t[27] !== w || t[28] !== f || t[29] !== n.email || t[30] !== u || t[31] !== d || t[32] !== l || t[33] !== s ? (F = (0, $.jsx)(`div`, {
+        className: `relative flex w-full grow flex-col items-center justify-center`,
+        children: (0, $.jsx)(`div`, {
+            className: `mt-5 w-full max-w-[440px]`,
+            children: d ? (0, $.jsx)(Ue, {
+                title: s,
+                subtitle: l,
+                mismatchSubtitle: u,
+                connection: d,
+                callbackUrl: Je(f),
+                authorizationParams: w
+            }) : (0, $.jsx)(je, {
+                isUsernameOnTop: !0,
+                onClose: Ke,
+                title: s,
+                subtitle: l,
+                mutedSubtitle: u,
+                initialEmail: n.email,
+                callbackUrl: f,
+                authorizationParams: w,
+                isStayLoggedOutVisible: !1,
+                stayLoggedOutPlacement: `bottom`,
+                googleButtonColor: `secondary`,
+                isInModal: !1,
+                collapsedLoginVariant: `none`
+            })
+        })
+    }), t[27] = w, t[28] = f, t[29] = n.email, t[30] = u, t[31] = d, t[32] = l, t[33] = s, t[34] = F) : F = t[34];
+    let L;
+    t[35] === i ? L = t[36] : (L = (0, $.jsx)(`div`, {
+        className: `mt-10 flex flex-col items-center justify-center`,
+        children: (0, $.jsx)(G, {
+            isStorageComplianceEnabled: i
+        })
+    }), t[35] = i, t[36] = L);
+    let R;
+    t[37] !== P || t[38] !== F || t[39] !== L ? (R = (0, $.jsxs)(`main`, {
+        className: `relative flex grow flex-col items-center justify-between px-5 py-8 text-black md:px-6 dark:text-white`,
+        children: [P, F, L]
+    }), t[37] = P, t[38] = F, t[39] = L, t[40] = R) : R = t[40];
+    let z;
+    t[41] === Symbol.for(`react.memo_cache_sentinel`) ? (z = (0, $.jsx)(c, {
+        children: (0, $.jsx)(W, {
+            fixed: !0
+        })
+    }), t[41] = z) : z = t[41];
+    let B;
+    t[42] === R ? B = t[43] : (B = (0, $.jsxs)(`div`, {
+        className: `flex min-h-screen flex-col justify-between`,
+        style: j,
+        children: [R, z]
+    }), t[42] = R, t[43] = B);
+    let V;
+    return t[44] !== A || t[45] !== B || t[46] !== k ? (V = (0, $.jsxs)($.Fragment, {
+        children: [k, A, B]
+    }), t[44] = A, t[45] = B, t[46] = k, t[47] = V) : V = t[47], V
+}
+
+function Ke() {}
+
+function qe() {
+    return r(), re()
+}
+
+function Y(e) {
+    return new URL(e, window.location.origin)
+}
+
+function Je(e) {
+    let t = Y(e);
+    return t.searchParams.delete(`sso`), t.searchParams.delete(`connection`), t.searchParams.delete(`login_hint`), `${t.pathname}${t.search}${t.hash}`
+}
+
+function Ye(e) {
+    let t = Y(e);
+    return t.searchParams.set(`account_switch`, `true`), t.searchParams.set(`account_switch_login`, `add_account`), `${t.pathname}${t.search}${t.hash}`
+}
+
+function Xe({
+    invitePageUrl: e,
+    postLogoutParamName: t
+}) {
+    let n = Y(e);
+    return n.searchParams.set(t, `true`), `${n.pathname}${n.search}${n.hash}`
+}
+
+function Ze({
+    invitePageUrl: e,
+    postLogoutParamName: t
+}) {
+    let n = Y(e);
+    return n.searchParams.delete(t), `${n.pathname}${n.search}${n.hash}`
+}
+
+function Qe(e) {
+    return e.accountItems.map(e => ({
+        workspaceAccountId: e.id,
+        workspaceName: e.isPersonalAccount() ? null : e.name,
+        workspaceImageUrl: e.data.profilePictureUrl ?? null,
+        isPersonalWorkspace: e.isPersonalAccount(),
+        isDeactivated: e.isDeactivated()
+    }))
+}
+
+function $e({
+    account: e,
+    unknownEmailLabel: t,
+    unnamedAccountLabel: n
+}) {
+    let r = e.email ?? t,
+        i = e.name ?? n,
+        a = P(e.phoneNumber);
+    return !e.email && a != null ? `${i} (${a})` : r
+}
+
+function et(e) {
+    "use forget";
+    let t = (0, Z.c)(80),
+        {
+            inviteAuthContext: r,
+            currentUserEmail: i,
+            isStorageComplianceEnabled: a,
+            invitePageUrl: o,
+            postLogoutParamName: s,
+            copy: c,
+            inviteLoginPageProps: l
+        } = e,
+        u = ae(),
+        {
+            data: d
+        } = S(),
+        f;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (f = [], t[0] = f) : f = t[0];
+    let [p, m] = (0, Q.useState)(f), [h, g] = (0, Q.useState)(!1), [_, y] = (0, Q.useState)(null), [x, C] = (0, Q.useState)(!1), w;
+    t[1] === o ? w = t[2] : (w = Ye(o), t[1] = o, t[2] = w);
+    let T = w,
+        E;
+    t[3] !== o || t[4] !== s ? (E = Xe({
+        invitePageUrl: o,
+        postLogoutParamName: s
+    }), t[3] = o, t[4] = s, t[5] = E) : E = t[5];
+    let D = E,
+        O, j;
+    if (t[6] === d ? (O = t[7], j = t[8]) : (O = () => {
+            if (d == null) return;
+            let e = F(b(), Qe(d));
+            m(e), y(t => t ?? e[0]?.sessionToken ?? null), g(!0)
+        }, j = [d], t[6] = d, t[7] = O, t[8] = j), (0, Q.useEffect)(O, j), d == null || !h) {
+        let e;
+        return t[9] !== c.loadingTitle || t[10] !== l.wordmarkLabel || t[11] !== a ? (e = (0, $.jsx)(X, {
+            title: c.loadingTitle,
+            description: null,
+            isStorageComplianceEnabled: a,
+            wordmarkLabel: l.wordmarkLabel
+        }), t[9] = c.loadingTitle, t[10] = l.wordmarkLabel, t[11] = a, t[12] = e) : e = t[12], e
+    }
+    if (!ve(d)) {
+        let e;
+        t[13] !== c.accountLimitLogoutError || t[14] !== x || t[15] !== D || t[16] !== u ? (e = async () => {
+            if (x) return;
+            let e = b()?.sessionToken;
+            if (!e) {
+                k({
+                    reason: v.AccountSwitcher,
+                    authHistoryReason: `APP_ENTRY_AUTH_HISTORY_LOGOUT_REASON_LOGOUT`
+                });
+                return
+            }
+            C(!0);
+            try {
+                await L({
+                    sessionToken: e,
+                    currentSessionToken: e,
+                    postLogoutAction: `return_to_callback_url`,
+                    postLogoutCallbackUrl: D,
+                    analytics: {
+                        source: A.AccountSwitcherAddAccountModal,
+                        type: `single_account`
+                    },
+                    onSessionsChanged: () => {
+                        m(te())
+                    },
+                    onNoNextSession: k
+                })
+            } catch (e) {
+                let t = e;
+                u.danger(c.accountLimitLogoutError, {
+                    description: t instanceof Error ? t.message : String(t)
+                }), C(!1)
+            }
+        }, t[13] = c.accountLimitLogoutError, t[14] = x, t[15] = D, t[16] = u, t[17] = e) : e = t[17];
+        let o = e,
+            s;
+        t[18] !== c || t[19] !== i || t[20] !== r.email ? (s = i == null ? c.getLogoutRequiredDescriptionWithoutCurrentEmail(r.email) : c.getLogoutRequiredDescription({
+            currentUserEmail: i,
+            inviteEmail: r.email
+        }), t[18] = c, t[19] = i, t[20] = r.email, t[21] = s) : s = t[21];
+        let d = s,
+            f;
+        t[22] === o ? f = t[23] : (f = () => {
+            o()
+        }, t[22] = o, t[23] = f);
+        let p;
+        t[24] !== c.logoutButton || t[25] !== x || t[26] !== f ? (p = (0, $.jsx)(n, {
+            color: `primary`,
+            disabled: x,
+            onClick: f,
+            children: c.logoutButton
+        }), t[24] = c.logoutButton, t[25] = x, t[26] = f, t[27] = p) : p = t[27];
+        let h;
+        return t[28] !== c.logoutRequiredTitle || t[29] !== d || t[30] !== l.wordmarkLabel || t[31] !== a || t[32] !== p ? (h = (0, $.jsx)(X, {
+            title: c.logoutRequiredTitle,
+            description: d,
+            isStorageComplianceEnabled: a,
+            wordmarkLabel: l.wordmarkLabel,
+            children: p
+        }), t[28] = c.logoutRequiredTitle, t[29] = d, t[30] = l.wordmarkLabel, t[31] = a, t[32] = p, t[33] = h) : h = t[33], h
+    }
+    if (p.length >= 2) {
+        let e;
+        if (t[34] !== p || t[35] !== _) {
+            let n;
+            t[37] === _ ? n = t[38] : (n = e => e.sessionToken === _, t[37] = _, t[38] = n), e = p.find(n), t[34] = p, t[35] = _, t[36] = e
+        } else e = t[36];
+        let i = e,
+            o;
+        t[39] !== c.accountLimitLogoutError || t[40] !== x || t[41] !== D || t[42] !== i || t[43] !== u ? (o = async () => {
+            if (i == null || x) return;
+            C(!0);
+            let e = b(),
+                t = e ? e.sessionToken : void 0;
+            try {
+                await L({
+                    sessionToken: i.sessionToken,
+                    currentSessionToken: t,
+                    postLogoutAction: `return_to_callback_url`,
+                    postLogoutCallbackUrl: D,
+                    analytics: {
+                        source: A.AccountSwitcherAddAccountModal,
+                        type: `single_account`
+                    },
+                    onSessionsChanged: () => {
+                        m(te())
+                    },
+                    onNoNextSession: k
+                })
+            } catch (e) {
+                let t = e;
+                u.danger(c.accountLimitLogoutError, {
+                    description: t instanceof Error ? t.message : String(t)
+                }), C(!1)
+            }
+        }, t[39] = c.accountLimitLogoutError, t[40] = x, t[41] = D, t[42] = i, t[43] = u, t[44] = o) : o = t[44];
+        let s = o,
+            d = c.accountLimitTitle,
+            f;
+        t[45] !== c || t[46] !== r.email ? (f = c.getAccountLimitDescription(r.email), t[45] = c, t[46] = r.email, t[47] = f) : f = t[47];
+        let h = l.wordmarkLabel,
+            g;
+        if (t[48] !== p || t[49] !== c.unknownEmailLabel || t[50] !== c.unnamedAccountLabel || t[51] !== x || t[52] !== _) {
+            let e;
+            t[54] !== c.unknownEmailLabel || t[55] !== c.unnamedAccountLabel || t[56] !== x || t[57] !== _ ? (e = e => {
+                let t = $e({
+                        account: e,
+                        unknownEmailLabel: c.unknownEmailLabel,
+                        unnamedAccountLabel: c.unnamedAccountLabel
+                    }),
+                    n = e.sessionToken === _;
+                return (0, $.jsxs)(`button`, {
+                    type: `button`,
+                    className: `border-token-border-light hover:bg-token-bg-secondary flex w-full items-center gap-3 rounded-lg border px-3 py-2 text-start`,
+                    disabled: x,
+                    onClick: () => {
+                        y(e.sessionToken)
+                    },
+                    children: [(0, $.jsx)(`span`, {
+                        className: `border-token-text-tertiary flex h-4 w-4 shrink-0 items-center justify-center rounded-full border ${n?`bg-token-text-primary`:``}`,
+                        children: n ? (0, $.jsx)(`span`, {
+                            className: `bg-token-main-surface-primary h-1.5 w-1.5 rounded-full`
+                        }) : null
+                    }), (0, $.jsx)(`span`, {
+                        className: `text-token-text-primary min-w-0 flex-1 truncate text-sm`,
+                        children: t
+                    })]
+                }, e.sessionToken)
+            }, t[54] = c.unknownEmailLabel, t[55] = c.unnamedAccountLabel, t[56] = x, t[57] = _, t[58] = e) : e = t[58], g = p.map(e), t[48] = p, t[49] = c.unknownEmailLabel, t[50] = c.unnamedAccountLabel, t[51] = x, t[52] = _, t[53] = g
+        } else g = t[53];
+        let v;
+        t[59] === g ? v = t[60] : (v = (0, $.jsx)(`div`, {
+            className: `flex w-full flex-col gap-2`,
+            children: g
+        }), t[59] = g, t[60] = v);
+        let S = x || i == null,
+            w;
+        t[61] === s ? w = t[62] : (w = () => {
+            s()
+        }, t[61] = s, t[62] = w);
+        let T;
+        t[63] !== c.accountLimitConfirm || t[64] !== S || t[65] !== w ? (T = (0, $.jsx)(`div`, {
+            className: `mt-2 flex w-full justify-end`,
+            children: (0, $.jsx)(n, {
+                type: `button`,
+                color: `primary`,
+                disabled: S,
+                onClick: w,
+                children: c.accountLimitConfirm
+            })
+        }), t[63] = c.accountLimitConfirm, t[64] = S, t[65] = w, t[66] = T) : T = t[66];
+        let E;
+        return t[67] !== c.accountLimitTitle || t[68] !== l.wordmarkLabel || t[69] !== a || t[70] !== v || t[71] !== T || t[72] !== f ? (E = (0, $.jsxs)(X, {
+            title: d,
+            description: f,
+            isStorageComplianceEnabled: a,
+            wordmarkLabel: h,
+            children: [v, T]
+        }), t[67] = c.accountLimitTitle, t[68] = l.wordmarkLabel, t[69] = a, t[70] = v, t[71] = T, t[72] = f, t[73] = E) : E = t[73], E
+    }
+    let M;
+    return t[74] !== T || t[75] !== i || t[76] !== r || t[77] !== l || t[78] !== a ? (M = (0, $.jsx)(J, {
+        ...l,
+        inviteAuthContext: r,
+        currentUserEmail: i,
+        isStorageComplianceEnabled: a,
+        callbackUrl: T
+    }), t[74] = T, t[75] = i, t[76] = r, t[77] = l, t[78] = a, t[79] = M) : M = t[79], M
+}
+
+function tt() {
+    "use forget";
+    let e = (0, Z.c)(3),
+        {
+            data: t
+        } = S(),
+        n, r;
+    return e[0] === t ? (n = e[1], r = e[2]) : (n = () => {
+        t == null || !ve(t) || F(b(), Qe(t))
+    }, r = [t], e[0] = t, e[1] = n, e[2] = r), (0, Q.useEffect)(n, r), null
+}
+
+function X(e) {
+    "use forget";
+    let t = (0, Z.c)(29),
+        {
+            title: n,
+            description: r,
+            isStorageComplianceEnabled: i,
+            wordmarkLabel: a,
+            children: o
+        } = e,
+        s;
+    t[0] === n ? s = t[1] : (s = (0, $.jsx)(`title`, {
+        children: n
+    }), t[0] = n, t[1] = s);
+    let l;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (l = {
+        minHeight: `100dvh`
+    }, t[2] = l) : l = t[2];
+    let u;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, $.jsx)(ge, {}), t[3] = u) : u = t[3];
+    let d;
+    t[4] === a ? d = t[5] : (d = (0, $.jsx)(me, {
+        to: `/`,
+        className: `text-token-text-primary absolute start-5 top-5 md:start-8 md:top-6`,
+        "aria-label": a,
+        children: u
+    }), t[4] = a, t[5] = d);
+    let f;
+    t[6] === r ? f = t[7] : (f = r == null ? (0, $.jsx)(m, {
+        className: `h-10 w-10`
+    }) : null, t[6] = r, t[7] = f);
+    let p;
+    t[8] === n ? p = t[9] : (p = (0, $.jsx)(`h1`, {
+        className: `text-2xl font-semibold`,
+        children: n
+    }), t[8] = n, t[9] = p);
+    let h;
+    t[10] === r ? h = t[11] : (h = r == null ? null : (0, $.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm`,
+        children: r
+    }), t[10] = r, t[11] = h);
+    let g;
+    t[12] !== o || t[13] !== f || t[14] !== p || t[15] !== h ? (g = (0, $.jsx)(`div`, {
+        className: `relative flex w-full grow flex-col items-center justify-center text-center`,
+        children: (0, $.jsxs)(`div`, {
+            className: `flex w-full max-w-[440px] flex-col items-center gap-4`,
+            children: [f, p, h, o]
+        })
+    }), t[12] = o, t[13] = f, t[14] = p, t[15] = h, t[16] = g) : g = t[16];
+    let _;
+    t[17] === i ? _ = t[18] : (_ = (0, $.jsx)(`div`, {
+        className: `mt-10 flex flex-col items-center justify-center`,
+        children: (0, $.jsx)(G, {
+            isStorageComplianceEnabled: i
+        })
+    }), t[17] = i, t[18] = _);
+    let v;
+    t[19] !== d || t[20] !== g || t[21] !== _ ? (v = (0, $.jsxs)(`main`, {
+        className: `relative flex grow flex-col items-center justify-between px-5 py-8 text-black md:px-6 dark:text-white`,
+        children: [d, g, _]
+    }), t[19] = d, t[20] = g, t[21] = _, t[22] = v) : v = t[22];
+    let y;
+    t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, $.jsx)(c, {
+        children: (0, $.jsx)(W, {
+            fixed: !0
+        })
+    }), t[23] = y) : y = t[23];
+    let b;
+    t[24] === v ? b = t[25] : (b = (0, $.jsxs)(`div`, {
+        className: `flex min-h-screen flex-col justify-between`,
+        style: l,
+        children: [v, y]
+    }), t[24] = v, t[25] = b);
+    let x;
+    return t[26] !== s || t[27] !== b ? (x = (0, $.jsxs)($.Fragment, {
+        children: [s, b]
+    }), t[26] = s, t[27] = b, t[28] = x) : x = t[28], x
+}
+var Z, Q, $, nt = e((() => {
+    Z = he(), u(), ke(), Ae(), C(), ye(), D(), _e(), o(), T(), be(), d(), oe(), z(), p(), B(), f(), a(), s(), x(), j(), ne(), R(), Q = t(de()), le(), We(), fe(), $ = se()
+}));
+export {
+    Ye as a, Ge as c, et as i, J as n, Ze as o, X as r, nt as s, tt as t
+};
+//# sourceMappingURL=d754d344-icfmsnn64ooya2ec.js.map

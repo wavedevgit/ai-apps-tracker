@@ -1,2 +1,64 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Drt as t,Ert as n,Int as r,Ort as i,Pnt as a}from"./4813494d-t80q9ew944ej0mgk.js";function o(e,{language:t,isCodeEdited:n,analyticsContext:r}){if(r==null)return;let{conversationId:i,messageId:o}=r;a.logStructuredEvent(`ChatgptCodeBlockPreviewRunFailed`,{conversationId:i,messageId:o,codeBlockLanguage:t,operation:e,isEdited:n}),e===`preview`&&r.isSandboxFilePreview&&a.logStructuredEvent(`ChatgptCodeBlockPreviewDiagnostic`,{category:`file_preview_legacy_failure`,previewHost:`classic`})}function s(e,n,{outcome:r,language:a,isCodeEdited:s,analyticsContext:c}){t.count(i.CODE_BLOCKS,n,{outcome:r,language:a,is_edited:String(s)}),r===`failure`&&o(e,{language:a,isCodeEdited:s,analyticsContext:c})}function c(e){s(`preview`,`chatgpt_code_block.preview.outcome`,e)}function l(e){s(`run`,`chatgpt_code_block.run.outcome`,e)}var u=e((()=>{r(),n()}));export{c as n,l as r,u as t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Drt as t,
+    Ert as n,
+    Int as r,
+    Ort as i,
+    Pnt as a
+} from "./4813494d-t80q9ew944ej0mgk.js";
+
+function o(e, {
+    language: t,
+    isCodeEdited: n,
+    analyticsContext: r
+}) {
+    if (r == null) return;
+    let {
+        conversationId: i,
+        messageId: o
+    } = r;
+    a.logStructuredEvent(`ChatgptCodeBlockPreviewRunFailed`, {
+        conversationId: i,
+        messageId: o,
+        codeBlockLanguage: t,
+        operation: e,
+        isEdited: n
+    }), e === `preview` && r.isSandboxFilePreview && a.logStructuredEvent(`ChatgptCodeBlockPreviewDiagnostic`, {
+        category: `file_preview_legacy_failure`,
+        previewHost: `classic`
+    })
+}
+
+function s(e, n, {
+    outcome: r,
+    language: a,
+    isCodeEdited: s,
+    analyticsContext: c
+}) {
+    t.count(i.CODE_BLOCKS, n, {
+        outcome: r,
+        language: a,
+        is_edited: String(s)
+    }), r === `failure` && o(e, {
+        language: a,
+        isCodeEdited: s,
+        analyticsContext: c
+    })
+}
+
+function c(e) {
+    s(`preview`, `chatgpt_code_block.preview.outcome`, e)
+}
+
+function l(e) {
+    s(`run`, `chatgpt_code_block.run.outcome`, e)
+}
+var u = e((() => {
+    r(), n()
+}));
+export {
+    c as n, l as r, u as t
+};
 //# sourceMappingURL=f8d34c7f-spviohz854d6kts5.js.map

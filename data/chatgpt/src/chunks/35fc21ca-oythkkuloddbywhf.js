@@ -1,2 +1,717 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{C6 as n,CR as r,DR as i,E6 as ee,Jl as a,Let as o,Q6 as s,S6 as te,T6 as ne,Uet as re,Wet as c,Wl as ie,X6 as ae,Yi as oe,Zi as se,Zl as ce,c2 as le,d2 as ue,e3 as l,g6 as u,jst as d,k8 as f,o0 as de,prt as p,q1 as m,q5 as h,ql as fe,s6 as g,srt as _,vct as v}from"./4813494d-t80q9ew944ej0mgk.js";import{Bn as y,Nn as b,Nt as pe,Q as x,Rn as S,Vn as C,wn as w,zn as me}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$nn as he,Bcn as T,Bln as E,Fcn as D,Hln as ge,I8t as O,J$ as _e,Lcn as ve,M8t as ye,Sdn as be,Vln as xe,Xun as Se,Y$ as Ce,Yun as we,Zun as Te,cDn as Ee,lDn as De,nrn as Oe,srn as ke,xdn as Ae,zcn as je,zln as Me}from"./conversation-small-ocicxxw6jegn4vux.js";import{Fl as Ne,Pl as Pe}from"./30901919-r9pahacmzqudnt4f.js";import{$g as Fe,Dg as Ie,Eg as Le,Mg as Re,Og as ze,Qg as Be,Tg as k,Xg as A,Zg as Ve,e_ as He,jg as Ue,kg as We,n_ as Ge}from"./c2675c8c-p3x4d0bnf7e77o1n.js";import{l as j,u as M}from"./e19f3910-b2tehuk0f6f3y30c.js";import{n as Ke,r as N,t as qe}from"./06da37f5-fktkl2injkwukktx.js";import{a as Je,i as Ye,n as Xe,r as Ze,t as P}from"./7a206bce-fnu6otdvwltsytz4.js";function Qe(e){"use forget";let t=(0,st.c)(2);if(!M())return null;let n;return t[0]===e?n=t[1]:(n=(0,L.jsx)($e,{...e}),t[0]=e,t[1]=n),n}function $e(e){"use forget";let t=(0,st.c)(93),{rateLimit:r,linkToUsageDashboard:i}=e,a=i!==void 0&&i,o=me(),s=pe(),[ne,c]=(0,I.useState)(!1),se=Fe(),le=He(),l=Ge(),u=Be(),f=Ve(),p=h(rt),m=r.rate_limit_reached_type?.type,g=r.spend_control?.reached===!0||m===`workspace_member_usage_limit_reached`||m===`workspace_owner_usage_limit_reached`,{sendRequest:v,hasRequested:y,requestDisabled:x,usesSavedRequests:S}=ge(p),C;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(C=re({openModalLocation:R}),t[0]=C):C=t[0];let w=C,T=We()===Ie.enabled&&!se&&!le,E=Re(r.plan_type===d.FREE||r.plan_type===d.GO),D=ie(o,fe(r)??0),O=de(),be=g?`usage_limit`:`credits`,Se;t[1]!==O||t[2]!==r||t[3]!==be?(Se=Me(O,r,be),t[1]=O,t[2]=r,t[3]=be,t[4]=Se):Se=t[4];let Ce=Se,De=Ce!=null,Oe;t[5]===O?Oe=t[6]:(Oe=O?.getWorkspaceId(),t[5]=O,t[6]=Oe);let Ne=Oe,ze;t[7]!==O||t[8]!==r||t[9]!==Ne?(ze=O?.planType===d.ENT26&&O.id===r.account_id&&Ne!=null&&ce(r),t[7]=O,t[8]=r,t[9]=Ne,t[10]=ze):ze=t[10];let k=ze,A=O!=null,Ue=(0,I.useRef)(null),j;t[11]===O?j=t[12]:(j=O?.getSubscriptionBillingCurrency()??`USD`,t[11]=O,t[12]=j);let M=j,[Ke,Ze]=(0,I.useState)(null),[Qe,$e]=(0,I.useState)(!1),at,ot;t[13]===M?(at=t[14],ot=t[15]):(at=()=>{(async function(){let e=await te(void 0,M);Ze(e),$e(!0)})()},ot=[M],t[13]=M,t[14]=at,t[15]=ot),(0,I.useEffect)(at,ot);let F,z,lt;t[16]!==o||t[17]!==a?(lt=a?o.formatMessage({id:`wham.usageDashboard.upsellBanner.viewUsage`,defaultMessage:`View usage`}):null,t[16]=o,t[17]=a,t[18]=lt):lt=t[18];let B=lt,V=a?()=>{s(`/codex/cloud/settings/usage`)}:nt,H=a?`view_usage`:null,U=null,W=tt,G=null,K=!1,ut;t[19]===o?ut=t[20]:(ut=o.formatMessage({id:`wham.usageDashboard.upsellBanner.addCredits`,defaultMessage:`Add credits`}),t[19]=o,t[20]=ut);let q=ut,dt;t[21]===o?dt=t[22]:(dt=o.formatMessage({id:`wham.upsellBanner.upgradePlan`,defaultMessage:`Upgrade`}),t[21]=o,t[22]=dt);let ft=dt,pt;t[23]===Symbol.for(`react.memo_cache_sentinel`)?(pt=()=>{ve(je,{checkoutOriginProvenance:{checkoutOriginProductExperience:Ae.CODEX,checkoutOriginDeliverySurface:`web`},onCheckoutPresented:()=>c(!1),onCustomCheckoutEnd:()=>c(!1),onCustomCheckoutStart:()=>c(!0)})},t[23]=pt):pt=t[23];let J=pt,mt;t[24]!==f||t[25]!==s?(mt=()=>{w&&ke({navigate:s,checkoutOriginProvenance:{checkoutOriginProductExperience:Ae.CODEX,checkoutOriginDeliverySurface:`web`},openModalLocation:R,pricingTarget:he(f?`plus`:`pro`)})},t[24]=f,t[25]=s,t[26]=mt):mt=t[26];let ht=mt,gt=r.promo?.campaign_id,Y=r.rate_limit_upsell,X,_t;t[27]!==O||t[28]!==Y?.ctas||t[29]!==Y?.request_url?(X=O?.isOwnerOfAccount()&&Y?.request_url===we(O.id),_t=Y?.ctas.find(e=>e.action===`request_usage`||X&&e.action===`request_increase`),t[27]=O,t[28]=Y?.ctas,t[29]=Y?.request_url,t[30]=X,t[31]=_t):(X=t[30],_t=t[31]);let Z=_t,vt=O!=null&&O.id===r.account_id&&S&&Z!=null;if(vt&&Y!=null){F=Xe(m)??it(r),z=Y.description,B=Z.label,V=()=>{X&&Z.action===`request_increase`?Te(O.id):Z.reason!=null&&v(`usage_limit`,Z.reason,Ee.CHATGPT_WORKSPACE_USAGE_REQUEST_SURFACE_SETTINGS)},H=O.isOwnerOfAccount()?`view_usage`:`request_increase`,K=!O.isOwnerOfAccount()&&(Z.reason==null||x);let e;t[32]===Y.ctas?e=t[33]:(e=Y.ctas.find(et),t[32]=Y.ctas,t[33]=e);let n=e;if(n!=null&&Y.referral!=null){U=n.label,G=`invite`;let e=Y.referral;W=()=>ue(_e,{programId:e.program_id,entrypoint:`rate_limit`,rateLimitType:Y.banner_type})}}else if(k){F=Xe(m)??it(r);let e=O.isOwnerOfAccount(),n=e?N.ownerDescription:N.memberDescription,i;if(t[34]===n?i=t[35]:(i=(0,L.jsx)(b,{...n}),t[34]=n,t[35]=i),z=i,U=B,W=V,G=H,e){let e;t[36]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,L.jsx)(b,{...N.editBudget}),t[36]=e):e=t[36],B=e,V=()=>{window.open(ye(`/billing`,Ne),`_blank`,`noopener,noreferrer`)},H=`add_credits`}else{let e=y?xe.requested:N.contactOwner,n;t[37]===e?n=t[38]:(n=(0,L.jsx)(b,{...e}),t[37]=e,t[38]=n),B=n,V=()=>{v(`credits`,void 0,Ee.CHATGPT_WORKSPACE_USAGE_REQUEST_SURFACE_SETTINGS)},H=`notify_owner`,K=x}}else if(se)if(F=P({bannerType:`plus_rate_limit_reached`,limitReason:`usage_limit`}),_(`2238071649`)){let e=Le();if(!Ke||!Qe||!O)z=e?(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.plusBody2.addCredits.higherLimits`,defaultMessage:`Add credits to keep going now, or upgrade to Pro for more usage. Your limit will reset after {time}.`,values:{time:D}}):(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.plusBody2.higherLimits`,defaultMessage:`Upgrade to Pro to get more usage, or wait for your limit to reset after {time}.`,values:{time:D}});else{let t=n(Ke,ee(d.PROLITE),ae.Month).amount;z=e?(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.plusBody3.addCredits.higherLimits`,defaultMessage:`Add credits to keep going now, or upgrade to Pro for more usage at {costString}/month. Your limit will reset after {time}.`,values:{time:D,costString:o.formatNumber(t,{style:`currency`,currency:M,trailingZeroDisplay:`stripIfInteger`})}}):(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.plusBody3.higherLimits`,defaultMessage:`Upgrade to Pro to get more usage for {costString}/month, or wait for your limit to reset after {time}.`,values:{time:D,costString:o.formatNumber(t,{style:`currency`,currency:M,trailingZeroDisplay:`stripIfInteger`})}})}w&&(U=B,W=V,G=H,B=ft,V=ht,H=`upgrade`),e&&(w?(U=q,W=J,G=`add_credits`):(B=q,V=J,H=`add_credits`))}else{let e;t[39]===D?e=t[40]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.plusBody.addCreditsFirst`,defaultMessage:`Add credits to keep going now, or upgrade for more usage. Your limit will reset on {time}.`,values:{time:D}}),t[39]=D,t[40]=e),z=e,B=q,V=J,H=`add_credits`,w&&(U=ft,W=ht,G=`upgrade`)}else if(le){let e=Le();F=P({bannerType:`prolite_rate_limit_reached`,limitReason:`usage_limit`}),z=e?(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.proLiteBody.addCredits.higherLimits`,defaultMessage:`Add credits to keep going now, or upgrade for more usage. Your limit will reset at {time}.`,values:{time:D}}):(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.proLiteBody.higherLimits`,defaultMessage:`Upgrade for more usage, or wait for your limit to reset at {time}.`,values:{time:D}}),w&&(U=B,W=V,G=H,B=ft,V=ht,H=`upgrade`),e&&(w?(U=q,W=J,G=`add_credits`):(B=q,V=J,H=`add_credits`))}else if(E){F=P({bannerType:`free_or_go_rate_limit_reached`,limitReason:`usage_limit`});let e;t[41]===D?e=t[42]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.freeGoBody.addCredits`,defaultMessage:`Add credits to keep going now, or upgrade to Plus. Your limit will reset on {time}.`,values:{time:D}}),t[41]=D,t[42]=e),z=e,B=q,V=J,H=`add_credits`,w&&(U=ft,W=ht,G=`upgrade`)}else if(T){if(F=P({bannerType:`pro_rate_limit_reached`,limitReason:`usage_limit`}),_(`2238071649`)){let e;t[43]===D?e=t[44]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.proBody2.addCreditsKeepGoing`,defaultMessage:`Add credits to keep going, or wait until your balance resets at {time}.`,values:{time:D}}),t[43]=D,t[44]=e),z=e}else{let e;t[45]===D?e=t[46]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.proBody`,defaultMessage:`Add credits to continue, or wait until {time}.`,values:{time:D}}),t[45]=D,t[46]=e),z=e}U=B,W=V,G=H,B=q,V=J,H=`add_credits`}else if(!u&&(l||De)){F=Xe(m)??it(r);let e;if(t[47]===D?e=t[48]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.teamOrEnterpriseBody`,defaultMessage:`Try again after {time}, or send a request to your admin.`,values:{time:D}}),t[47]=D,t[48]=e),z=e,De){U=B,W=V,G=H;let e;t[49]!==y||t[50]!==o?(e=o.formatMessage(y?xe.requested:xe.sendRequest),t[49]=y,t[50]=o,t[51]=e):e=t[51],B=e,V=()=>{v(Ce,void 0,Ee.CHATGPT_WORKSPACE_USAGE_REQUEST_SURFACE_SETTINGS)},H=Ce===`usage_limit`?`increase_spend_cap`:`notify_owner`,K=x}}else if(f){if(gt===ct){F=P({bannerType:r.plan_type===d.GO?`go_trial_rate_limit_reached`:`free_trial_rate_limit_reached`,limitReason:`usage_limit`});let e;t[52]===D?e=t[53]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.freeGoBodyWithPromo`,defaultMessage:`To continue using Codex, start your free trial of Plus today. Your limit will reset on {time}.`,values:{time:D}}),t[52]=D,t[53]=e),z=e}else{F=P({bannerType:`free_or_go_rate_limit_reached`,limitReason:`usage_limit`});let e;t[54]===D?e=t[55]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.freeGoBody`,defaultMessage:`Upgrade to Plus to keep going. Your limit will reset on {time}.`,values:{time:D}}),t[54]=D,t[55]=e),z=e}w&&(U=B,W=V,G=H,B=ft,V=ht,H=`upgrade`)}else{F=P({bannerType:`legacy_rate_limit_reached`,limitReason:`usage_limit`});let e;t[56]===D?e=t[57]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.limitReachedWithCredits.legacyEnterpriseBody`,defaultMessage:`Try again after {time}, or ask your admin to upgrade to a plan with credits.`,values:{time:D}}),t[56]=D,t[57]=e),z=e}let Q=`${F.platform}:${F.banner_type}:${F.limit_reason}`,yt;t[58]!==F||t[59]!==A||t[60]!==Q?(yt=()=>{A&&Ue.current!==Q&&(Ue.current=Q,Je(F,`usage_dashboard`))},t[58]=F,t[59]=A,t[60]=Q,t[61]=yt):yt=t[61];let bt;t[62]!==F||t[63]!==A||t[64]!==Q?(bt=[F,A,Q],t[62]=F,t[63]=A,t[64]=Q,t[65]=bt):bt=t[65],(0,I.useEffect)(yt,bt);let xt;t[66]!==F||t[67]!==A||t[68]!==K||t[69]!==V||t[70]!==H?(xt=()=>{A&&H!=null&&!K&&Ye({context:F,ctaAction:H,surface:`usage_dashboard`}),V()},t[66]=F,t[67]=A,t[68]=K,t[69]=V,t[70]=H,t[71]=xt):xt=t[71];let St=xt,Ct;t[72]!==F||t[73]!==A||t[74]!==W||t[75]!==G?(Ct=()=>{A&&G!=null&&Ye({context:F,ctaAction:G,surface:`usage_dashboard`}),W()},t[72]=F,t[73]=A,t[74]=W,t[75]=G,t[76]=Ct):Ct=t[76];let wt=Ct,Tt;t[77]===Symbol.for(`react.memo_cache_sentinel`)?(Tt=(0,L.jsx)(`div`,{className:`text-token-text-primary flex items-center justify-center`,children:(0,L.jsx)(Pe,{className:`icon`,"aria-hidden":!0})}),t[77]=Tt):Tt=t[77];let $;t[78]!==O?.planType||t[79]!==Y?.title||t[80]!==k||t[81]!==vt?($=vt?Y?.title:k?(0,L.jsx)(b,{...N.title}):O?.planType===d.ENT26?(0,L.jsx)(b,{id:`wham.usageDashboard.ent26.limitReached.title`,defaultMessage:`You’re out of usage for now`}):(0,L.jsx)(b,{...qe}),t[78]=O?.planType,t[79]=Y?.title,t[80]=k,t[81]=vt,t[82]=$):$=t[82];let Et=U==null?void 0:wt,Dt=ne&&H===`add_credits`,Ot=ne&&G===`add_credits`,kt;return t[83]!==z||t[84]!==K||t[85]!==B||t[86]!==U||t[87]!==$||t[88]!==Et||t[89]!==Dt||t[90]!==Ot||t[91]!==St?(kt=(0,L.jsx)(oe,{className:`shadow-[0_16px_32px_-24px_rgba(15,23,42,0.25)]`,icon:Tt,title:$,content:z,primaryCtaText:B,primaryCtaColor:`primary`,onPrimaryCtaClick:St,secondaryCtaText:U,onSecondaryCtaClick:Et,isPrimaryCtaDisabled:K,isPrimaryCtaLoading:Dt,isSecondaryCtaLoading:Ot,secondaryCtaColor:`secondary`,verticalCta:!1}),t[83]=z,t[84]=K,t[85]=B,t[86]=U,t[87]=$,t[88]=Et,t[89]=Dt,t[90]=Ot,t[91]=St,t[92]=kt):kt=t[92],kt}function et(e){return e.action===`invite`||e.action===`refer`}function tt(){}function nt(){}function rt(){return i()?.id}function it(e){return u(e.plan_type)?P({bannerType:`business_rate_limit_reached`,limitReason:`usage_limit`}):e.plan_type===d.EDUCATION_CBP||e.plan_type===d.EDU_PLUS||e.plan_type===d.EDU_PRO||e.plan_type===d.ENTERPRISE_CBP||e.plan_type===d.ENTERPRISE_CBP_USAGE_BASED||e.plan_type===d.HC||e.plan_type===d.HC_CONSUMPTION||e.plan_type===d.FINSERV||e.plan_type===d.LAW||e.plan_type===d.QUORUM||e.plan_type===d.K12?P({bannerType:`cbp_rate_limit_reached`,limitReason:`usage_limit`}):P({bannerType:`legacy_rate_limit_reached`,limitReason:`usage_limit`})}function at(e){"use forget";let t=(0,st.c)(36),{rateLimit:n}=e,r=me(),i=pe(),ee=de(),a=ee?.planType===d.ENT26&&ee.id===n.account_id,[o,s]=(0,I.useState)(!1),te=M(),ne=Fe(),c=He(),ae=Ge(),se=Be(),ce=Ve(),le=re({openModalLocation:R}),ue=We()===Ie.enabled&&!ne&&!c,l;t[0]!==r||t[1]!==n?(l=ie(r,fe(n)??0),t[0]=r,t[1]=n,t[2]=l):l=t[2];let u=l;if(!te)return null;let f;t[3]===u?f=t[4]:(f=(0,L.jsx)(b,{id:`wham.usageDashboard.nearLimitWithCredits.defaultBody`,defaultMessage:`You’re getting close to your limit. It will reset on {time}.`,values:{time:u}}),t[3]=u,t[4]=f);let p=f,m=null,h=F,g=null,_=ot,v;t[5]===r?v=t[6]:(v=r.formatMessage({id:`wham.usageDashboard.upsellBanner.addCredits`,defaultMessage:`Add credits`}),t[5]=r,t[6]=v);let y=v,x;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(x=()=>{ve(je,{checkoutOriginProvenance:{checkoutOriginProductExperience:Ae.CODEX,checkoutOriginDeliverySurface:`web`},onCheckoutPresented:()=>s(!1),onCustomCheckoutEnd:()=>s(!1),onCustomCheckoutStart:()=>s(!0)})},t[7]=x):x=t[7];let S=x,C=n.promo?.campaign_id;if(ne||c){let e;if(t[8]===u?e=t[9]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.nearLimitWithCredits.plusBody.addCreditsFirst.codexAndWork`,defaultMessage:`You're nearing your Codex and Work usage limit. Add credits to keep building now, or upgrade for more usage. Your limit resets on {time}.`,values:{time:u}}),t[8]=u,t[9]=e),p=e,m=y,h=S,le){let e;t[10]===r?e=t[11]:(e=r.formatMessage({id:`wham.upsellBanner.upgradeToPro`,defaultMessage:`Upgrade`}),t[10]=r,t[11]=e),g=e;let n;t[12]===i?n=t[13]:(n=()=>{ke({navigate:i,checkoutOriginProvenance:{checkoutOriginProductExperience:Ae.CODEX,checkoutOriginDeliverySurface:`web`},openModalLocation:R,pricingTarget:he(`pro`)})},t[12]=i,t[13]=n),_=n}}else if(ue){let e;t[14]===u?e=t[15]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.nearLimitWithCredits.proBody.codexAndWork`,defaultMessage:`You're nearing your Codex and Work usage limit. Add credits to stay unblocked, or wait until {time}.`,values:{time:u}}),t[14]=u,t[15]=e),p=e,m=y,h=S}else if(ae&&!se){let e;t[16]!==a||t[17]!==u?(e=a?(0,L.jsx)(b,{id:`wham.usageDashboard.nearLimit.ent26.body`,defaultMessage:`You're nearing your usage limit. Try again after {time}, or contact your admin if you need more capacity.`,values:{time:u}}):(0,L.jsx)(b,{id:`wham.usageDashboard.nearLimitWithCredits.teamOrEnterpriseBody.codexAndWork`,defaultMessage:`You're nearing your Codex and Work usage limit. Try again after {time}, or contact your admin if you need more capacity.`,values:{time:u}}),t[16]=a,t[17]=u,t[18]=e):e=t[18],p=e}else if(ce){if(C===ct){let e;t[19]===u?e=t[20]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.nearLimitWithCredits.freeGoBodyWithPromo.codexAndWork`,defaultMessage:`You're nearing your Codex and Work usage limit. Start a free trial of Plus today to keep building. Your limit resets on {time}.`,values:{time:u}}),t[19]=u,t[20]=e),p=e}else{let e;t[21]===u?e=t[22]:(e=(0,L.jsx)(b,{id:`wham.usageDashboard.nearLimitWithCredits.freeGoBody.codexAndWork`,defaultMessage:`You're nearing your Codex and Work usage limit. Upgrade to Plus to keep going. Your limit resets on {time}.`,values:{time:u}}),t[21]=u,t[22]=e),p=e}if(le){let e;t[23]===r?e=t[24]:(e=r.formatMessage({id:`wham.upsellBanner.upgradeToPlus`,defaultMessage:`Upgrade`}),t[23]=r,t[24]=e),m=e;let n;t[25]===i?n=t[26]:(n=()=>{ke({navigate:i,checkoutOriginProvenance:{checkoutOriginProductExperience:Ae.CODEX,checkoutOriginDeliverySurface:`web`},openModalLocation:R,pricingTarget:he(`plus`)})},t[25]=i,t[26]=n),h=n}}let w;t[27]===Symbol.for(`react.memo_cache_sentinel`)?(w=(0,L.jsx)(`div`,{className:`text-token-text-primary flex items-center justify-center`,children:(0,L.jsx)(Pe,{className:`icon`,"aria-hidden":!0})}),t[27]=w):w=t[27];let T=o&&h===S,E=o&&_===S,D;return t[28]!==p||t[29]!==h||t[30]!==_||t[31]!==m||t[32]!==g||t[33]!==T||t[34]!==E?(D=(0,L.jsx)(oe,{className:`shadow-[0_16px_32px_-24px_rgba(15,23,42,0.25)]`,icon:w,content:p,primaryCtaText:m,primaryCtaColor:`primary`,onPrimaryCtaClick:h,isPrimaryCtaLoading:T,secondaryCtaText:g,onSecondaryCtaClick:_,isSecondaryCtaLoading:E,secondaryCtaColor:`secondary`,verticalCta:!1}),t[28]=p,t[29]=h,t[30]=_,t[31]=m,t[32]=g,t[33]=T,t[34]=E,t[35]=D):D=t[35],D}function ot(){}function F(){}var st,I,L,ct,R,z=e((()=>{st=w(),De(),be(),v(),O(),D(),le(),Ce(),Se(),se(),Ne(),o(),s(),Oe(),f(),m(),r(),ne(),l(),g(),p(),j(),A(),ze(),T(),Ze(),k(),Ke(),Ue(),E(),a(),I=t(C()),S(),x(),L=y(),ct=`plus-1-month-free`,R=c.WhamUsageDashboardRateLimitUpsell}));export{Qe as n,z as r,at as t};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    C6 as n,
+    CR as r,
+    DR as i,
+    E6 as ee,
+    Jl as a,
+    Let as o,
+    Q6 as s,
+    S6 as te,
+    T6 as ne,
+    Uet as re,
+    Wet as c,
+    Wl as ie,
+    X6 as ae,
+    Yi as oe,
+    Zi as se,
+    Zl as ce,
+    c2 as le,
+    d2 as ue,
+    e3 as l,
+    g6 as u,
+    jst as d,
+    k8 as f,
+    o0 as de,
+    prt as p,
+    q1 as m,
+    q5 as h,
+    ql as fe,
+    s6 as g,
+    srt as _,
+    vct as v
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    Bn as y,
+    Nn as b,
+    Nt as pe,
+    Q as x,
+    Rn as S,
+    Vn as C,
+    wn as w,
+    zn as me
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $nn as he,
+    Bcn as T,
+    Bln as E,
+    Fcn as D,
+    Hln as ge,
+    I8t as O,
+    J$ as _e,
+    Lcn as ve,
+    M8t as ye,
+    Sdn as be,
+    Vln as xe,
+    Xun as Se,
+    Y$ as Ce,
+    Yun as we,
+    Zun as Te,
+    cDn as Ee,
+    lDn as De,
+    nrn as Oe,
+    srn as ke,
+    xdn as Ae,
+    zcn as je,
+    zln as Me
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+import {
+    Fl as Ne,
+    Pl as Pe
+} from "./30901919-r9pahacmzqudnt4f.js";
+import {
+    $g as Fe,
+    Dg as Ie,
+    Eg as Le,
+    Mg as Re,
+    Og as ze,
+    Qg as Be,
+    Tg as k,
+    Xg as A,
+    Zg as Ve,
+    e_ as He,
+    jg as Ue,
+    kg as We,
+    n_ as Ge
+} from "./c2675c8c-p3x4d0bnf7e77o1n.js";
+import {
+    l as j,
+    u as M
+} from "./e19f3910-b2tehuk0f6f3y30c.js";
+import {
+    n as Ke,
+    r as N,
+    t as qe
+} from "./06da37f5-fktkl2injkwukktx.js";
+import {
+    a as Je,
+    i as Ye,
+    n as Xe,
+    r as Ze,
+    t as P
+} from "./7a206bce-fnu6otdvwltsytz4.js";
+
+function Qe(e) {
+    "use forget";
+    let t = (0, st.c)(2);
+    if (!M()) return null;
+    let n;
+    return t[0] === e ? n = t[1] : (n = (0, L.jsx)($e, {
+        ...e
+    }), t[0] = e, t[1] = n), n
+}
+
+function $e(e) {
+    "use forget";
+    let t = (0, st.c)(93),
+        {
+            rateLimit: r,
+            linkToUsageDashboard: i
+        } = e,
+        a = i !== void 0 && i,
+        o = me(),
+        s = pe(),
+        [ne, c] = (0, I.useState)(!1),
+        se = Fe(),
+        le = He(),
+        l = Ge(),
+        u = Be(),
+        f = Ve(),
+        p = h(rt),
+        m = r.rate_limit_reached_type?.type,
+        g = r.spend_control?.reached === !0 || m === `workspace_member_usage_limit_reached` || m === `workspace_owner_usage_limit_reached`,
+        {
+            sendRequest: v,
+            hasRequested: y,
+            requestDisabled: x,
+            usesSavedRequests: S
+        } = ge(p),
+        C;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (C = re({
+        openModalLocation: R
+    }), t[0] = C) : C = t[0];
+    let w = C,
+        T = We() === Ie.enabled && !se && !le,
+        E = Re(r.plan_type === d.FREE || r.plan_type === d.GO),
+        D = ie(o, fe(r) ?? 0),
+        O = de(),
+        be = g ? `usage_limit` : `credits`,
+        Se;
+    t[1] !== O || t[2] !== r || t[3] !== be ? (Se = Me(O, r, be), t[1] = O, t[2] = r, t[3] = be, t[4] = Se) : Se = t[4];
+    let Ce = Se,
+        De = Ce != null,
+        Oe;
+    t[5] === O ? Oe = t[6] : (Oe = O?.getWorkspaceId(), t[5] = O, t[6] = Oe);
+    let Ne = Oe,
+        ze;
+    t[7] !== O || t[8] !== r || t[9] !== Ne ? (ze = O?.planType === d.ENT26 && O.id === r.account_id && Ne != null && ce(r), t[7] = O, t[8] = r, t[9] = Ne, t[10] = ze) : ze = t[10];
+    let k = ze,
+        A = O != null,
+        Ue = (0, I.useRef)(null),
+        j;
+    t[11] === O ? j = t[12] : (j = O?.getSubscriptionBillingCurrency() ?? `USD`, t[11] = O, t[12] = j);
+    let M = j,
+        [Ke, Ze] = (0, I.useState)(null),
+        [Qe, $e] = (0, I.useState)(!1),
+        at, ot;
+    t[13] === M ? (at = t[14], ot = t[15]) : (at = () => {
+        (async function() {
+            let e = await te(void 0, M);
+            Ze(e), $e(!0)
+        })()
+    }, ot = [M], t[13] = M, t[14] = at, t[15] = ot), (0, I.useEffect)(at, ot);
+    let F, z, lt;
+    t[16] !== o || t[17] !== a ? (lt = a ? o.formatMessage({
+        id: `wham.usageDashboard.upsellBanner.viewUsage`,
+        defaultMessage: `View usage`
+    }) : null, t[16] = o, t[17] = a, t[18] = lt) : lt = t[18];
+    let B = lt,
+        V = a ? () => {
+            s(`/codex/cloud/settings/usage`)
+        } : nt,
+        H = a ? `view_usage` : null,
+        U = null,
+        W = tt,
+        G = null,
+        K = !1,
+        ut;
+    t[19] === o ? ut = t[20] : (ut = o.formatMessage({
+        id: `wham.usageDashboard.upsellBanner.addCredits`,
+        defaultMessage: `Add credits`
+    }), t[19] = o, t[20] = ut);
+    let q = ut,
+        dt;
+    t[21] === o ? dt = t[22] : (dt = o.formatMessage({
+        id: `wham.upsellBanner.upgradePlan`,
+        defaultMessage: `Upgrade`
+    }), t[21] = o, t[22] = dt);
+    let ft = dt,
+        pt;
+    t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (pt = () => {
+        ve(je, {
+            checkoutOriginProvenance: {
+                checkoutOriginProductExperience: Ae.CODEX,
+                checkoutOriginDeliverySurface: `web`
+            },
+            onCheckoutPresented: () => c(!1),
+            onCustomCheckoutEnd: () => c(!1),
+            onCustomCheckoutStart: () => c(!0)
+        })
+    }, t[23] = pt) : pt = t[23];
+    let J = pt,
+        mt;
+    t[24] !== f || t[25] !== s ? (mt = () => {
+        w && ke({
+            navigate: s,
+            checkoutOriginProvenance: {
+                checkoutOriginProductExperience: Ae.CODEX,
+                checkoutOriginDeliverySurface: `web`
+            },
+            openModalLocation: R,
+            pricingTarget: he(f ? `plus` : `pro`)
+        })
+    }, t[24] = f, t[25] = s, t[26] = mt) : mt = t[26];
+    let ht = mt,
+        gt = r.promo?.campaign_id,
+        Y = r.rate_limit_upsell,
+        X, _t;
+    t[27] !== O || t[28] !== Y?.ctas || t[29] !== Y?.request_url ? (X = O?.isOwnerOfAccount() && Y?.request_url === we(O.id), _t = Y?.ctas.find(e => e.action === `request_usage` || X && e.action === `request_increase`), t[27] = O, t[28] = Y?.ctas, t[29] = Y?.request_url, t[30] = X, t[31] = _t) : (X = t[30], _t = t[31]);
+    let Z = _t,
+        vt = O != null && O.id === r.account_id && S && Z != null;
+    if (vt && Y != null) {
+        F = Xe(m) ?? it(r), z = Y.description, B = Z.label, V = () => {
+            X && Z.action === `request_increase` ? Te(O.id) : Z.reason != null && v(`usage_limit`, Z.reason, Ee.CHATGPT_WORKSPACE_USAGE_REQUEST_SURFACE_SETTINGS)
+        }, H = O.isOwnerOfAccount() ? `view_usage` : `request_increase`, K = !O.isOwnerOfAccount() && (Z.reason == null || x);
+        let e;
+        t[32] === Y.ctas ? e = t[33] : (e = Y.ctas.find(et), t[32] = Y.ctas, t[33] = e);
+        let n = e;
+        if (n != null && Y.referral != null) {
+            U = n.label, G = `invite`;
+            let e = Y.referral;
+            W = () => ue(_e, {
+                programId: e.program_id,
+                entrypoint: `rate_limit`,
+                rateLimitType: Y.banner_type
+            })
+        }
+    } else if (k) {
+        F = Xe(m) ?? it(r);
+        let e = O.isOwnerOfAccount(),
+            n = e ? N.ownerDescription : N.memberDescription,
+            i;
+        if (t[34] === n ? i = t[35] : (i = (0, L.jsx)(b, {
+                ...n
+            }), t[34] = n, t[35] = i), z = i, U = B, W = V, G = H, e) {
+            let e;
+            t[36] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, L.jsx)(b, {
+                ...N.editBudget
+            }), t[36] = e) : e = t[36], B = e, V = () => {
+                window.open(ye(`/billing`, Ne), `_blank`, `noopener,noreferrer`)
+            }, H = `add_credits`
+        } else {
+            let e = y ? xe.requested : N.contactOwner,
+                n;
+            t[37] === e ? n = t[38] : (n = (0, L.jsx)(b, {
+                ...e
+            }), t[37] = e, t[38] = n), B = n, V = () => {
+                v(`credits`, void 0, Ee.CHATGPT_WORKSPACE_USAGE_REQUEST_SURFACE_SETTINGS)
+            }, H = `notify_owner`, K = x
+        }
+    } else if (se)
+        if (F = P({
+                bannerType: `plus_rate_limit_reached`,
+                limitReason: `usage_limit`
+            }), _(`2238071649`)) {
+            let e = Le();
+            if (!Ke || !Qe || !O) z = e ? (0, L.jsx)(b, {
+                id: `wham.usageDashboard.limitReachedWithCredits.plusBody2.addCredits.higherLimits`,
+                defaultMessage: `Add credits to keep going now, or upgrade to Pro for more usage. Your limit will reset after {time}.`,
+                values: {
+                    time: D
+                }
+            }) : (0, L.jsx)(b, {
+                id: `wham.usageDashboard.limitReachedWithCredits.plusBody2.higherLimits`,
+                defaultMessage: `Upgrade to Pro to get more usage, or wait for your limit to reset after {time}.`,
+                values: {
+                    time: D
+                }
+            });
+            else {
+                let t = n(Ke, ee(d.PROLITE), ae.Month).amount;
+                z = e ? (0, L.jsx)(b, {
+                    id: `wham.usageDashboard.limitReachedWithCredits.plusBody3.addCredits.higherLimits`,
+                    defaultMessage: `Add credits to keep going now, or upgrade to Pro for more usage at {costString}/month. Your limit will reset after {time}.`,
+                    values: {
+                        time: D,
+                        costString: o.formatNumber(t, {
+                            style: `currency`,
+                            currency: M,
+                            trailingZeroDisplay: `stripIfInteger`
+                        })
+                    }
+                }) : (0, L.jsx)(b, {
+                    id: `wham.usageDashboard.limitReachedWithCredits.plusBody3.higherLimits`,
+                    defaultMessage: `Upgrade to Pro to get more usage for {costString}/month, or wait for your limit to reset after {time}.`,
+                    values: {
+                        time: D,
+                        costString: o.formatNumber(t, {
+                            style: `currency`,
+                            currency: M,
+                            trailingZeroDisplay: `stripIfInteger`
+                        })
+                    }
+                })
+            }
+            w && (U = B, W = V, G = H, B = ft, V = ht, H = `upgrade`), e && (w ? (U = q, W = J, G = `add_credits`) : (B = q, V = J, H = `add_credits`))
+        } else {
+            let e;
+            t[39] === D ? e = t[40] : (e = (0, L.jsx)(b, {
+                id: `wham.usageDashboard.limitReachedWithCredits.plusBody.addCreditsFirst`,
+                defaultMessage: `Add credits to keep going now, or upgrade for more usage. Your limit will reset on {time}.`,
+                values: {
+                    time: D
+                }
+            }), t[39] = D, t[40] = e), z = e, B = q, V = J, H = `add_credits`, w && (U = ft, W = ht, G = `upgrade`)
+        }
+    else if (le) {
+        let e = Le();
+        F = P({
+            bannerType: `prolite_rate_limit_reached`,
+            limitReason: `usage_limit`
+        }), z = e ? (0, L.jsx)(b, {
+            id: `wham.usageDashboard.limitReachedWithCredits.proLiteBody.addCredits.higherLimits`,
+            defaultMessage: `Add credits to keep going now, or upgrade for more usage. Your limit will reset at {time}.`,
+            values: {
+                time: D
+            }
+        }) : (0, L.jsx)(b, {
+            id: `wham.usageDashboard.limitReachedWithCredits.proLiteBody.higherLimits`,
+            defaultMessage: `Upgrade for more usage, or wait for your limit to reset at {time}.`,
+            values: {
+                time: D
+            }
+        }), w && (U = B, W = V, G = H, B = ft, V = ht, H = `upgrade`), e && (w ? (U = q, W = J, G = `add_credits`) : (B = q, V = J, H = `add_credits`))
+    } else if (E) {
+        F = P({
+            bannerType: `free_or_go_rate_limit_reached`,
+            limitReason: `usage_limit`
+        });
+        let e;
+        t[41] === D ? e = t[42] : (e = (0, L.jsx)(b, {
+            id: `wham.usageDashboard.limitReachedWithCredits.freeGoBody.addCredits`,
+            defaultMessage: `Add credits to keep going now, or upgrade to Plus. Your limit will reset on {time}.`,
+            values: {
+                time: D
+            }
+        }), t[41] = D, t[42] = e), z = e, B = q, V = J, H = `add_credits`, w && (U = ft, W = ht, G = `upgrade`)
+    } else if (T) {
+        if (F = P({
+                bannerType: `pro_rate_limit_reached`,
+                limitReason: `usage_limit`
+            }), _(`2238071649`)) {
+            let e;
+            t[43] === D ? e = t[44] : (e = (0, L.jsx)(b, {
+                id: `wham.usageDashboard.limitReachedWithCredits.proBody2.addCreditsKeepGoing`,
+                defaultMessage: `Add credits to keep going, or wait until your balance resets at {time}.`,
+                values: {
+                    time: D
+                }
+            }), t[43] = D, t[44] = e), z = e
+        } else {
+            let e;
+            t[45] === D ? e = t[46] : (e = (0, L.jsx)(b, {
+                id: `wham.usageDashboard.limitReachedWithCredits.proBody`,
+                defaultMessage: `Add credits to continue, or wait until {time}.`,
+                values: {
+                    time: D
+                }
+            }), t[45] = D, t[46] = e), z = e
+        }
+        U = B, W = V, G = H, B = q, V = J, H = `add_credits`
+    } else if (!u && (l || De)) {
+        F = Xe(m) ?? it(r);
+        let e;
+        if (t[47] === D ? e = t[48] : (e = (0, L.jsx)(b, {
+                id: `wham.usageDashboard.limitReachedWithCredits.teamOrEnterpriseBody`,
+                defaultMessage: `Try again after {time}, or send a request to your admin.`,
+                values: {
+                    time: D
+                }
+            }), t[47] = D, t[48] = e), z = e, De) {
+            U = B, W = V, G = H;
+            let e;
+            t[49] !== y || t[50] !== o ? (e = o.formatMessage(y ? xe.requested : xe.sendRequest), t[49] = y, t[50] = o, t[51] = e) : e = t[51], B = e, V = () => {
+                v(Ce, void 0, Ee.CHATGPT_WORKSPACE_USAGE_REQUEST_SURFACE_SETTINGS)
+            }, H = Ce === `usage_limit` ? `increase_spend_cap` : `notify_owner`, K = x
+        }
+    } else if (f) {
+        if (gt === ct) {
+            F = P({
+                bannerType: r.plan_type === d.GO ? `go_trial_rate_limit_reached` : `free_trial_rate_limit_reached`,
+                limitReason: `usage_limit`
+            });
+            let e;
+            t[52] === D ? e = t[53] : (e = (0, L.jsx)(b, {
+                id: `wham.usageDashboard.limitReachedWithCredits.freeGoBodyWithPromo`,
+                defaultMessage: `To continue using Codex, start your free trial of Plus today. Your limit will reset on {time}.`,
+                values: {
+                    time: D
+                }
+            }), t[52] = D, t[53] = e), z = e
+        } else {
+            F = P({
+                bannerType: `free_or_go_rate_limit_reached`,
+                limitReason: `usage_limit`
+            });
+            let e;
+            t[54] === D ? e = t[55] : (e = (0, L.jsx)(b, {
+                id: `wham.usageDashboard.limitReachedWithCredits.freeGoBody`,
+                defaultMessage: `Upgrade to Plus to keep going. Your limit will reset on {time}.`,
+                values: {
+                    time: D
+                }
+            }), t[54] = D, t[55] = e), z = e
+        }
+        w && (U = B, W = V, G = H, B = ft, V = ht, H = `upgrade`)
+    } else {
+        F = P({
+            bannerType: `legacy_rate_limit_reached`,
+            limitReason: `usage_limit`
+        });
+        let e;
+        t[56] === D ? e = t[57] : (e = (0, L.jsx)(b, {
+            id: `wham.usageDashboard.limitReachedWithCredits.legacyEnterpriseBody`,
+            defaultMessage: `Try again after {time}, or ask your admin to upgrade to a plan with credits.`,
+            values: {
+                time: D
+            }
+        }), t[56] = D, t[57] = e), z = e
+    }
+    let Q = `${F.platform}:${F.banner_type}:${F.limit_reason}`,
+        yt;
+    t[58] !== F || t[59] !== A || t[60] !== Q ? (yt = () => {
+        A && Ue.current !== Q && (Ue.current = Q, Je(F, `usage_dashboard`))
+    }, t[58] = F, t[59] = A, t[60] = Q, t[61] = yt) : yt = t[61];
+    let bt;
+    t[62] !== F || t[63] !== A || t[64] !== Q ? (bt = [F, A, Q], t[62] = F, t[63] = A, t[64] = Q, t[65] = bt) : bt = t[65], (0, I.useEffect)(yt, bt);
+    let xt;
+    t[66] !== F || t[67] !== A || t[68] !== K || t[69] !== V || t[70] !== H ? (xt = () => {
+        A && H != null && !K && Ye({
+            context: F,
+            ctaAction: H,
+            surface: `usage_dashboard`
+        }), V()
+    }, t[66] = F, t[67] = A, t[68] = K, t[69] = V, t[70] = H, t[71] = xt) : xt = t[71];
+    let St = xt,
+        Ct;
+    t[72] !== F || t[73] !== A || t[74] !== W || t[75] !== G ? (Ct = () => {
+        A && G != null && Ye({
+            context: F,
+            ctaAction: G,
+            surface: `usage_dashboard`
+        }), W()
+    }, t[72] = F, t[73] = A, t[74] = W, t[75] = G, t[76] = Ct) : Ct = t[76];
+    let wt = Ct,
+        Tt;
+    t[77] === Symbol.for(`react.memo_cache_sentinel`) ? (Tt = (0, L.jsx)(`div`, {
+        className: `text-token-text-primary flex items-center justify-center`,
+        children: (0, L.jsx)(Pe, {
+            className: `icon`,
+            "aria-hidden": !0
+        })
+    }), t[77] = Tt) : Tt = t[77];
+    let $;
+    t[78] !== O?.planType || t[79] !== Y?.title || t[80] !== k || t[81] !== vt ? ($ = vt ? Y?.title : k ? (0, L.jsx)(b, {
+        ...N.title
+    }) : O?.planType === d.ENT26 ? (0, L.jsx)(b, {
+        id: `wham.usageDashboard.ent26.limitReached.title`,
+        defaultMessage: `You’re out of usage for now`
+    }) : (0, L.jsx)(b, {
+        ...qe
+    }), t[78] = O?.planType, t[79] = Y?.title, t[80] = k, t[81] = vt, t[82] = $) : $ = t[82];
+    let Et = U == null ? void 0 : wt,
+        Dt = ne && H === `add_credits`,
+        Ot = ne && G === `add_credits`,
+        kt;
+    return t[83] !== z || t[84] !== K || t[85] !== B || t[86] !== U || t[87] !== $ || t[88] !== Et || t[89] !== Dt || t[90] !== Ot || t[91] !== St ? (kt = (0, L.jsx)(oe, {
+        className: `shadow-[0_16px_32px_-24px_rgba(15,23,42,0.25)]`,
+        icon: Tt,
+        title: $,
+        content: z,
+        primaryCtaText: B,
+        primaryCtaColor: `primary`,
+        onPrimaryCtaClick: St,
+        secondaryCtaText: U,
+        onSecondaryCtaClick: Et,
+        isPrimaryCtaDisabled: K,
+        isPrimaryCtaLoading: Dt,
+        isSecondaryCtaLoading: Ot,
+        secondaryCtaColor: `secondary`,
+        verticalCta: !1
+    }), t[83] = z, t[84] = K, t[85] = B, t[86] = U, t[87] = $, t[88] = Et, t[89] = Dt, t[90] = Ot, t[91] = St, t[92] = kt) : kt = t[92], kt
+}
+
+function et(e) {
+    return e.action === `invite` || e.action === `refer`
+}
+
+function tt() {}
+
+function nt() {}
+
+function rt() {
+    return i()?.id
+}
+
+function it(e) {
+    return u(e.plan_type) ? P({
+        bannerType: `business_rate_limit_reached`,
+        limitReason: `usage_limit`
+    }) : e.plan_type === d.EDUCATION_CBP || e.plan_type === d.EDU_PLUS || e.plan_type === d.EDU_PRO || e.plan_type === d.ENTERPRISE_CBP || e.plan_type === d.ENTERPRISE_CBP_USAGE_BASED || e.plan_type === d.HC || e.plan_type === d.HC_CONSUMPTION || e.plan_type === d.FINSERV || e.plan_type === d.LAW || e.plan_type === d.QUORUM || e.plan_type === d.K12 ? P({
+        bannerType: `cbp_rate_limit_reached`,
+        limitReason: `usage_limit`
+    }) : P({
+        bannerType: `legacy_rate_limit_reached`,
+        limitReason: `usage_limit`
+    })
+}
+
+function at(e) {
+    "use forget";
+    let t = (0, st.c)(36),
+        {
+            rateLimit: n
+        } = e,
+        r = me(),
+        i = pe(),
+        ee = de(),
+        a = ee?.planType === d.ENT26 && ee.id === n.account_id,
+        [o, s] = (0, I.useState)(!1),
+        te = M(),
+        ne = Fe(),
+        c = He(),
+        ae = Ge(),
+        se = Be(),
+        ce = Ve(),
+        le = re({
+            openModalLocation: R
+        }),
+        ue = We() === Ie.enabled && !ne && !c,
+        l;
+    t[0] !== r || t[1] !== n ? (l = ie(r, fe(n) ?? 0), t[0] = r, t[1] = n, t[2] = l) : l = t[2];
+    let u = l;
+    if (!te) return null;
+    let f;
+    t[3] === u ? f = t[4] : (f = (0, L.jsx)(b, {
+        id: `wham.usageDashboard.nearLimitWithCredits.defaultBody`,
+        defaultMessage: `You’re getting close to your limit. It will reset on {time}.`,
+        values: {
+            time: u
+        }
+    }), t[3] = u, t[4] = f);
+    let p = f,
+        m = null,
+        h = F,
+        g = null,
+        _ = ot,
+        v;
+    t[5] === r ? v = t[6] : (v = r.formatMessage({
+        id: `wham.usageDashboard.upsellBanner.addCredits`,
+        defaultMessage: `Add credits`
+    }), t[5] = r, t[6] = v);
+    let y = v,
+        x;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (x = () => {
+        ve(je, {
+            checkoutOriginProvenance: {
+                checkoutOriginProductExperience: Ae.CODEX,
+                checkoutOriginDeliverySurface: `web`
+            },
+            onCheckoutPresented: () => s(!1),
+            onCustomCheckoutEnd: () => s(!1),
+            onCustomCheckoutStart: () => s(!0)
+        })
+    }, t[7] = x) : x = t[7];
+    let S = x,
+        C = n.promo?.campaign_id;
+    if (ne || c) {
+        let e;
+        if (t[8] === u ? e = t[9] : (e = (0, L.jsx)(b, {
+                id: `wham.usageDashboard.nearLimitWithCredits.plusBody.addCreditsFirst.codexAndWork`,
+                defaultMessage: `You're nearing your Codex and Work usage limit. Add credits to keep building now, or upgrade for more usage. Your limit resets on {time}.`,
+                values: {
+                    time: u
+                }
+            }), t[8] = u, t[9] = e), p = e, m = y, h = S, le) {
+            let e;
+            t[10] === r ? e = t[11] : (e = r.formatMessage({
+                id: `wham.upsellBanner.upgradeToPro`,
+                defaultMessage: `Upgrade`
+            }), t[10] = r, t[11] = e), g = e;
+            let n;
+            t[12] === i ? n = t[13] : (n = () => {
+                ke({
+                    navigate: i,
+                    checkoutOriginProvenance: {
+                        checkoutOriginProductExperience: Ae.CODEX,
+                        checkoutOriginDeliverySurface: `web`
+                    },
+                    openModalLocation: R,
+                    pricingTarget: he(`pro`)
+                })
+            }, t[12] = i, t[13] = n), _ = n
+        }
+    } else if (ue) {
+        let e;
+        t[14] === u ? e = t[15] : (e = (0, L.jsx)(b, {
+            id: `wham.usageDashboard.nearLimitWithCredits.proBody.codexAndWork`,
+            defaultMessage: `You're nearing your Codex and Work usage limit. Add credits to stay unblocked, or wait until {time}.`,
+            values: {
+                time: u
+            }
+        }), t[14] = u, t[15] = e), p = e, m = y, h = S
+    } else if (ae && !se) {
+        let e;
+        t[16] !== a || t[17] !== u ? (e = a ? (0, L.jsx)(b, {
+            id: `wham.usageDashboard.nearLimit.ent26.body`,
+            defaultMessage: `You're nearing your usage limit. Try again after {time}, or contact your admin if you need more capacity.`,
+            values: {
+                time: u
+            }
+        }) : (0, L.jsx)(b, {
+            id: `wham.usageDashboard.nearLimitWithCredits.teamOrEnterpriseBody.codexAndWork`,
+            defaultMessage: `You're nearing your Codex and Work usage limit. Try again after {time}, or contact your admin if you need more capacity.`,
+            values: {
+                time: u
+            }
+        }), t[16] = a, t[17] = u, t[18] = e) : e = t[18], p = e
+    } else if (ce) {
+        if (C === ct) {
+            let e;
+            t[19] === u ? e = t[20] : (e = (0, L.jsx)(b, {
+                id: `wham.usageDashboard.nearLimitWithCredits.freeGoBodyWithPromo.codexAndWork`,
+                defaultMessage: `You're nearing your Codex and Work usage limit. Start a free trial of Plus today to keep building. Your limit resets on {time}.`,
+                values: {
+                    time: u
+                }
+            }), t[19] = u, t[20] = e), p = e
+        } else {
+            let e;
+            t[21] === u ? e = t[22] : (e = (0, L.jsx)(b, {
+                id: `wham.usageDashboard.nearLimitWithCredits.freeGoBody.codexAndWork`,
+                defaultMessage: `You're nearing your Codex and Work usage limit. Upgrade to Plus to keep going. Your limit resets on {time}.`,
+                values: {
+                    time: u
+                }
+            }), t[21] = u, t[22] = e), p = e
+        }
+        if (le) {
+            let e;
+            t[23] === r ? e = t[24] : (e = r.formatMessage({
+                id: `wham.upsellBanner.upgradeToPlus`,
+                defaultMessage: `Upgrade`
+            }), t[23] = r, t[24] = e), m = e;
+            let n;
+            t[25] === i ? n = t[26] : (n = () => {
+                ke({
+                    navigate: i,
+                    checkoutOriginProvenance: {
+                        checkoutOriginProductExperience: Ae.CODEX,
+                        checkoutOriginDeliverySurface: `web`
+                    },
+                    openModalLocation: R,
+                    pricingTarget: he(`plus`)
+                })
+            }, t[25] = i, t[26] = n), h = n
+        }
+    }
+    let w;
+    t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (w = (0, L.jsx)(`div`, {
+        className: `text-token-text-primary flex items-center justify-center`,
+        children: (0, L.jsx)(Pe, {
+            className: `icon`,
+            "aria-hidden": !0
+        })
+    }), t[27] = w) : w = t[27];
+    let T = o && h === S,
+        E = o && _ === S,
+        D;
+    return t[28] !== p || t[29] !== h || t[30] !== _ || t[31] !== m || t[32] !== g || t[33] !== T || t[34] !== E ? (D = (0, L.jsx)(oe, {
+        className: `shadow-[0_16px_32px_-24px_rgba(15,23,42,0.25)]`,
+        icon: w,
+        content: p,
+        primaryCtaText: m,
+        primaryCtaColor: `primary`,
+        onPrimaryCtaClick: h,
+        isPrimaryCtaLoading: T,
+        secondaryCtaText: g,
+        onSecondaryCtaClick: _,
+        isSecondaryCtaLoading: E,
+        secondaryCtaColor: `secondary`,
+        verticalCta: !1
+    }), t[28] = p, t[29] = h, t[30] = _, t[31] = m, t[32] = g, t[33] = T, t[34] = E, t[35] = D) : D = t[35], D
+}
+
+function ot() {}
+
+function F() {}
+var st, I, L, ct, R, z = e((() => {
+    st = w(), De(), be(), v(), O(), D(), le(), Ce(), Se(), se(), Ne(), o(), s(), Oe(), f(), m(), r(), ne(), l(), g(), p(), j(), A(), ze(), T(), Ze(), k(), Ke(), Ue(), E(), a(), I = t(C()), S(), x(), L = y(), ct = `plus-1-month-free`, R = c.WhamUsageDashboardRateLimitUpsell
+}));
+export {
+    Qe as n, z as r, at as t
+};
 //# sourceMappingURL=35fc21ca-oythkkuloddbywhf.js.map

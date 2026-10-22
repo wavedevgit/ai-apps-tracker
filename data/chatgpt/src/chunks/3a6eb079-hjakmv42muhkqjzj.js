@@ -1,26 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-var t, n, r, i = e((() => {
-    t = [`Alfred`, `Felipe`, `Iggy`, `Todd`], n = [`O`, ...t], r = {
-        Alfred: {
-            yaw: 0
-        },
-        Felipe: {
-            yaw: 0
-        },
-        Iggy: {
-            yaw: 0
-        },
-        Todd: {
-            yaw: 0
-        }
-    }
-}));
-export {
-    i,
-    t as n,
-    n as r,
-    r as t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";var t,n,r,i=e((()=>{t=[`Alfred`,`Felipe`,`Iggy`,`Todd`],n=[`O`,...t],r={Alfred:{yaw:0},Felipe:{yaw:0},Iggy:{yaw:0},Todd:{yaw:0}}}));export{i,t as n,n as r,r as t};
 //# sourceMappingURL=3a6eb079-hjakmv42muhkqjzj.js.map

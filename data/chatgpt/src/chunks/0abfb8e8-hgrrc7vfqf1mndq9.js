@@ -1,2 +1,5552 @@
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{AE as r,Bz as i,Ch as a,Crt as o,Ey as s,Fh as c,NM as l,OM as u,Ph as d,Qy as f,Rz as p,Sh as m,Vz as h,ZG as g,Zy as _,c7 as v,dJ as y,eK as b,fB as x,kE as S,l7 as C,o0 as w,pB as T,prt as E,q1 as D,s6 as O,srt as k,u6 as A,wh as j,wrt as M,wy as N,y6 as ee,yJ as P,zz as F}from"./4813494d-t80q9ew944ej0mgk.js";import{At as te,Bn as I,Dt as ne,In as re,Ln as ie,Nn as L,Nt as ae,Q as oe,Rn as se,Vn as R,wn as ce,zn as le}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$Hn as ue,E_n as de,F7 as fe,I7 as pe,Jln as me,PCn as he,RCn as ge,Tun as _e,Xi as ve,Zi as ye,_Wn as be,cun as xe,dvn as Se,eUn as Ce,ex as we,gun as Te,hun as Ee,jun as De,nw as Oe,oun as ke,pun as Ae,rw as je,tx as Me,vun as Ne,yWn as Pe}from"./conversation-small-ocicxxw6jegn4vux.js";import{DC as Fe,EC as Ie,Jv as Le,Kc as Re,Yv as ze,ay as Be,iy as Ve,qc as He}from"./30901919-r9pahacmzqudnt4f.js";import{Bb as Ue,Dg as We,Hb as Ge,Ht as Ke,Jt as z,Kt as qe,Og as B,Ut as Je,Wt as Ye,Zt as Xe,_o as Ze,by as Qe,cx as $e,kg as et,kt as tt,lx as nt,qt as rt,ux as it,vo as at,xy as ot}from"./c2675c8c-p3x4d0bnf7e77o1n.js";import{f_ as st,p_ as ct}from"./8b34dbc2-egl8cz04n8nmlktg.js";import{h as lt,m as ut,r as dt,t as ft}from"./3e72bb91-bcwf3koikkwl9bye.js";import{n as pt,r as mt}from"./333fd2ad-b9canc46kwucs6bp.js";import{a as ht,i as gt,r as _t,t as vt}from"./fab52ad7-fintq2t5ygluaa1w.js";import{L as yt,b as bt,f as xt,g as St,i as Ct,t as wt,u as Tt,z as Et}from"./3d9e424f-jqzny2r7xq8o2u8c.js";import{$ as Dt,A as Ot,B as kt,C as At,D as jt,E as V,F as Mt,G as Nt,H as Pt,I as Ft,J as It,K as Lt,L as Rt,M as zt,N as Bt,O as Vt,P as Ht,Q as Ut,R as Wt,S as Gt,T as Kt,U as qt,V as H,W as Jt,X as Yt,Y as Xt,Z as Zt,_ as Qt,a as $t,at as en,b as tn,c as nn,ct as rn,d as U,et as an,f as on,g as sn,h as cn,i as ln,it as un,j as W,k as dn,l as fn,m as pn,n as mn,nt as hn,o as gn,ot as _n,p as vn,q as yn,r as G,rt as bn,s as xn,st as Sn,tt as Cn,u as wn,v as Tn,w as En,y as Dn,z as On}from"./8eb03965-k7w2qpcri3x38dpz.js";import{n as kn,t as An}from"./ef50f9ea-ghm40qggasy5slci.js";import{r as jn,t as Mn}from"./e0dd6841-kzdyroauvlmueln7.js";import{a as Nn,r as Pn}from"./b0c2397c-gzseaeqr0yijp0eh.js";import{a as Fn,n as In,o as Ln,t as Rn}from"./fc35a31a-gvye5lg2lkrv669n.js";import{a as zn,i as Bn,n as Vn,r as Hn,t as Un}from"./98d333a6-e5gl07efh3gx3fw4.js";function Wn(e){"use forget";let t=(0,rr.c)(87),{scope:n,dateRange:r,groupBy:i}=e,a=le(),[o,s]=(0,ir.useState)(`credits`),[c,l]=(0,ir.useState)(`desc`),u;t[0]!==r||t[1]!==i||t[2]!==n||t[3]!==o||t[4]!==c?(u={scope:n,dateRange:r,groupBy:i,sortBy:o,sortDirection:c,limit:ar},t[0]=r,t[1]=i,t[2]=n,t[3]=o,t[4]=c,t[5]=u):u=t[5];let d=ke(u),f=d.data,m;t[6]===f?m=t[7]:(m=f==null||f?.totals.text_tokens!=null||!!f?.identities.some(qn),t[6]=f,t[7]=m);let h=m;f?.identities;let g;t[8]===f?.identities?g=t[9]:(g=f?.identities??[],t[8]=f?.identities,t[9]=g);let _;if(t[10]!==a||t[11]!==g){let e;t[13]===a?e=t[14]:(e=e=>({...e,displayName:e.name||e.agent_identity_id,creatorLabel:e.creator_user_display_name??e.creator_user_email??a.formatMessage(sr.unknownCreator),creatorEmail:e.creator_user_display_name==null?null:e.creator_user_email??null,statusLabel:Qn(e,a)}),t[13]=a,t[14]=e),_=g.map(e),t[10]=a,t[11]=g,t[12]=_}else _=t[12];let y=_,b=d.isFetching&&d.isPlaceholderData&&f!=null,x=d.isLoading&&f==null,S=d.isError&&f==null,C=n===`personal`?sr.personalTitle:sr.workspaceTitle,w=n===`personal`?sr.personalSubtitle:sr.workspaceSubtitle,T=n===`workspace`,E;t[15]===o?E=t[16]:(E=e=>{if(e===o){l(Kn);return}s(e),l(`desc`)},t[15]=o,t[16]=E);let D=E,O;t[17]===d?O=t[18]:(O=async()=>{await d.refetch()},t[17]=d,t[18]=O);let k=O,A;t[19]===a?A=t[20]:(A=a.formatMessage(sr.agentColumn),t[19]=a,t[20]=A);let j;t[21]===A?j=t[22]:(j=(0,K.jsx)(Yn,{label:A,className:`ps-4`}),t[21]=A,t[22]=j);let M;if(t[23]!==D||t[24]!==h||t[25]!==a||t[26]!==T||t[27]!==o||t[28]!==c||t[29]!==j){let e;t[31]===a?e=t[32]:(e=a.formatMessage(sr.creditsColumn),t[31]=a,t[32]=e);let n;t[33]===D?n=t[34]:(n=()=>D(`credits`),t[33]=D,t[34]=n);let r;if(t[35]!==o||t[36]!==c||t[37]!==n||t[38]!==e?(r=(0,K.jsx)(Xn,{align:`end`,className:`pe-8`,label:e,sortKey:`credits`,sortBy:o,sortDirection:c,onClick:n}),t[35]=o,t[36]=c,t[37]=n,t[38]=e,t[39]=r):r=t[39],M=[{field:`agent`,header:j},{field:`credits`,header:r}],T){let e;t[40]===a?e=t[41]:(e=a.formatMessage(sr.creatorColumn),t[40]=a,t[41]=e);let n;t[42]===e?n=t[43]:(n=(0,K.jsx)(Yn,{label:e}),t[42]=e,t[43]=n),M.splice(1,0,{field:`creator`,header:n})}if(h){let e;t[44]===a?e=t[45]:(e=a.formatMessage(sr.textTokensColumn),t[44]=a,t[45]=e);let n;t[46]===D?n=t[47]:(n=()=>D(`text_tokens`),t[46]=D,t[47]=n);let r;t[48]!==o||t[49]!==c||t[50]!==e||t[51]!==n?(r={field:`textTokens`,header:(0,K.jsx)(Xn,{align:`end`,className:`pe-8`,label:e,sortKey:`text_tokens`,sortBy:o,sortDirection:c,onClick:n})},t[48]=o,t[49]=c,t[50]=e,t[51]=n,t[52]=r):r=t[52],M.push(r)}let i;t[53]===a?i=t[54]:(i=a.formatMessage(sr.lastUsedColumn),t[53]=a,t[54]=i);let s;t[55]===D?s=t[56]:(s=()=>D(`last_used_at`),t[55]=D,t[56]=s);let l;t[57]!==o||t[58]!==c||t[59]!==i||t[60]!==s?(l={field:`lastUsedAt`,header:(0,K.jsx)(Xn,{className:`ps-4`,label:i,sortKey:`last_used_at`,sortBy:o,sortDirection:c,onClick:s})},t[57]=o,t[58]=c,t[59]=i,t[60]=s,t[61]=l):l=t[61];let u;t[62]===a?u=t[63]:(u=a.formatMessage(sr.statusColumn),t[62]=a,t[63]=u);let d;t[64]===u?d=t[65]:(d={field:`status`,header:(0,K.jsx)(Yn,{label:u,className:`block w-full pe-4 text-end`})},t[64]=u,t[65]=d),M.push(l,d),t[23]=D,t[24]=h,t[25]=a,t[26]=T,t[27]=o,t[28]=c,t[29]=j,t[30]=M}else M=t[30];let N=M,ee;t[66]===C?ee=t[67]:(ee=(0,K.jsx)(`h3`,{className:`text-token-text-primary text-xl font-semibold`,children:(0,K.jsx)(L,{...C})}),t[66]=C,t[67]=ee);let P;t[68]===w?P=t[69]:(P=(0,K.jsx)(`p`,{className:`text-token-text-secondary mt-2 max-w-3xl text-sm leading-6`,children:(0,K.jsx)(L,{...w})}),t[68]=w,t[69]=P);let F;t[70]!==P||t[71]!==ee?(F=(0,K.jsxs)(`div`,{className:`flex min-w-0 flex-col`,children:[ee,P]}),t[70]=P,t[71]=ee,t[72]=F):F=t[72];let te;t[73]!==N||t[74]!==k||t[75]!==h||t[76]!==a||t[77]!==S||t[78]!==x||t[79]!==b||t[80]!==y||t[81]!==n||t[82]!==T?(te=S?(0,K.jsx)(Jn,{onRetry:k}):x?(0,K.jsx)(`div`,{className:`border-token-border-light bg-token-bg-elevated-primary flex flex-1 flex-col overflow-hidden rounded-2xl border shadow-sm`,children:(0,K.jsx)(`div`,{className:`flex min-h-64 items-center justify-center`,children:(0,K.jsx)(p,{className:`icon-lg text-token-text-tertiary`})})}):(0,K.jsx)(`div`,{className:`border-token-border-light bg-token-bg-elevated-primary flex flex-1 flex-col overflow-hidden rounded-2xl border shadow-sm`,children:(0,K.jsxs)(`div`,{className:`relative max-h-[440px] overflow-auto px-4 [overflow-clip-margin:0px] md:px-6`,children:[b?(0,K.jsx)(`div`,{className:`bg-token-bg-primary/55 absolute inset-0 z-10 flex items-center justify-center backdrop-blur-[1px]`,children:(0,K.jsx)(p,{className:`icon-md text-token-text-tertiary`})}):null,(0,K.jsx)(Mn.Root,{columns:N,rows:y,rowKey:Gn,emptyMessage:(0,K.jsx)(L,{...sr.emptyMessage}),className:v(`[&_thead_th]:sticky`,`[&_thead_th]:top-0`,`[&_thead_th]:z-[1]`,`[&_thead_th]:bg-token-bg-elevated-primary`,`[&_thead_th]:pt-2`,`[&_thead_th]:pb-3`,tr({hasTextTokens:h,showCreatorColumn:T}),nr({hasTextTokens:h,scope:n})),children:e=>e.map(e=>(0,K.jsxs)(Mn.Row,{rowKey:e.agent_identity_id,className:`hover:bg-token-bg-tertiary/60 transition-colors`,children:[(0,K.jsx)(Mn.Cell,{field:`agent`,className:`py-4 ps-4 pe-8`,children:(0,K.jsx)(`div`,{className:`min-w-0`,children:(0,K.jsx)(`div`,{className:`text-token-text-primary truncate text-sm font-medium`,title:e.displayName,children:e.displayName})})}),T?(0,K.jsx)(Mn.Cell,{field:`creator`,className:`py-4 pe-8`,children:(0,K.jsx)(An,{name:e.creatorLabel,email:e.creatorEmail,primaryClassName:`text-token-text-secondary text-sm`,secondaryClassName:`text-token-text-tertiary text-xs`})}):null,(0,K.jsx)(Mn.Cell,{field:`credits`,className:`py-4 pe-8`,children:(0,K.jsx)(Zn,{children:a.formatNumber(Math.round(e.credits))})}),h?(0,K.jsx)(Mn.Cell,{field:`textTokens`,className:`py-4 pe-8`,children:(0,K.jsx)(Zn,{children:er(a,e.text_tokens)})}):null,(0,K.jsx)(Mn.Cell,{field:`lastUsedAt`,className:`py-4 pe-8`,children:(0,K.jsx)(`span`,{className:`text-token-text-secondary text-sm whitespace-nowrap`,children:$n(e.last_used_at,a)})}),(0,K.jsx)(Mn.Cell,{field:`status`,className:`py-4`,children:(0,K.jsx)(`span`,{className:`text-token-text-secondary ms-auto block pe-4 text-end text-sm`,children:e.statusLabel})})]},e.agent_identity_id))})]})}),t[73]=N,t[74]=k,t[75]=h,t[76]=a,t[77]=S,t[78]=x,t[79]=b,t[80]=y,t[81]=n,t[82]=T,t[83]=te):te=t[83];let I;return t[84]!==F||t[85]!==te?(I=(0,K.jsxs)(`section`,{className:`flex flex-1 flex-col gap-6`,children:[F,te]}),t[84]=F,t[85]=te,t[86]=I):I=t[86],I}function Gn(e){return e.agent_identity_id}function Kn(e){return e===`asc`?`desc`:`asc`}function qn(e){return e.text_tokens!=null}function Jn(e){"use forget";let t=(0,rr.c)(4),{onRetry:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,K.jsx)(`p`,{className:`text-token-text-secondary text-sm`,children:(0,K.jsx)(L,{...sr.errorMessage})}),t[0]=r):r=t[0];let i;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,K.jsx)(L,{...sr.retryButton}),t[1]=i):i=t[1];let a;return t[2]===n?a=t[3]:(a=(0,K.jsxs)(`div`,{className:`border-token-border-light bg-token-bg-elevated-primary flex flex-col items-center justify-center gap-4 rounded-2xl border px-6 py-12 text-center shadow-sm`,children:[r,(0,K.jsx)(`button`,{type:`button`,className:`btn btn-secondary`,onClick:n,children:i})]}),t[2]=n,t[3]=a),a}function Yn(e){"use forget";let t=(0,rr.c)(5),{label:n,className:r}=e,i;t[0]===r?i=t[1]:(i=v(`text-token-text-tertiary text-xs font-normal`,r),t[0]=r,t[1]=i);let a;return t[2]!==n||t[3]!==i?(a=(0,K.jsx)(`span`,{className:i,children:n}),t[2]=n,t[3]=i,t[4]=a):a=t[4],a}function Xn(e){"use forget";let t=(0,rr.c)(14),{align:n,className:r,label:i,sortKey:a,sortBy:o,sortDirection:s,onClick:c}=e,l=n===void 0?`start`:n,u=a===o,d=l===`end`?`justify-end`:`justify-start`,f=u?`text-token-text-primary`:`text-token-text-tertiary`,p;t[0]!==r||t[1]!==d||t[2]!==f?(p=v(`inline-flex w-full items-center gap-1 text-xs font-normal`,d,r,f),t[0]=r,t[1]=d,t[2]=f,t[3]=p):p=t[3];let m;t[4]===i?m=t[5]:(m=(0,K.jsx)(`span`,{children:i}),t[4]=i,t[5]=m);let h;t[6]!==u||t[7]!==s?(h=u?(0,K.jsx)(Le,{className:v(`icon-sm transition-transform`,s===`desc`&&`rotate-180`)}):(0,K.jsx)(Re,{className:`icon-sm`}),t[6]=u,t[7]=s,t[8]=h):h=t[8];let g;return t[9]!==c||t[10]!==p||t[11]!==m||t[12]!==h?(g=(0,K.jsxs)(`button`,{type:`button`,onClick:c,className:p,children:[m,h]}),t[9]=c,t[10]=p,t[11]=m,t[12]=h,t[13]=g):g=t[13],g}function Zn(e){"use forget";let t=(0,rr.c)(2),{children:n}=e,r;return t[0]===n?r=t[1]:(r=(0,K.jsx)(`span`,{className:`text-token-text-primary ms-auto block text-end text-sm tabular-nums`,children:n}),t[0]=n,t[1]=r),r}function Qn(e,t){return e.revoked?t.formatMessage(sr.revokedStatus):e.expired?t.formatMessage(sr.expiredStatus):t.formatMessage(sr.activeStatus)}function $n(e,t){return e?t.formatDate(new Date(e),{month:`short`,day:`numeric`,year:`numeric`}):t.formatMessage(sr.neverUsed)}function er(e,t){return t==null?`—`:e.formatNumber(Math.round(t))}function tr({hasTextTokens:e,showCreatorColumn:t}){return e&&t?`min-w-[1100px]`:e?`min-w-[920px]`:t?`min-w-[930px]`:`min-w-[760px]`}function nr({hasTextTokens:e,scope:t}){return or[t][e?`textTokens`:`default`]}var rr,ir,K,ar,or,sr,cr=e((()=>{rr=ce(),F(),kn(),jn(),He(),ze(),me(),C(),ir=n(R()),se(),K=I(),ar=100,or={personal:{default:[`[&_thead_th:nth-child(1)]:w-[45%]`,`[&_thead_th:nth-child(2)]:w-[15%]`,`[&_thead_th:nth-child(3)]:w-[27%]`,`[&_thead_th:nth-child(4)]:w-[13%]`],textTokens:[`[&_thead_th:nth-child(1)]:w-[36%]`,`[&_thead_th:nth-child(2)]:w-[13%]`,`[&_thead_th:nth-child(3)]:w-[22%]`,`[&_thead_th:nth-child(4)]:w-[19%]`,`[&_thead_th:nth-child(5)]:w-[10%]`]},workspace:{default:[`[&_thead_th:nth-child(1)]:w-[38%]`,`[&_thead_th:nth-child(2)]:w-[20%]`,`[&_thead_th:nth-child(3)]:w-[12%]`,`[&_thead_th:nth-child(4)]:w-[20%]`,`[&_thead_th:nth-child(5)]:w-[10%]`],textTokens:[`[&_thead_th:nth-child(1)]:w-[30%]`,`[&_thead_th:nth-child(2)]:w-[18%]`,`[&_thead_th:nth-child(3)]:w-[11%]`,`[&_thead_th:nth-child(4)]:w-[18%]`,`[&_thead_th:nth-child(5)]:w-[16%]`,`[&_thead_th:nth-child(6)]:w-[7%]`]}},sr=ie({workspaceTitle:{id:`codex.analytics.accessTokenUsage.workspaceTitle`,defaultMessage:`Workspace access token usage`},workspaceSubtitle:{id:`codex.analytics.accessTokenUsage.workspaceSubtitle`,defaultMessage:`Track Codex usage from access tokens in this workspace.`},personalTitle:{id:`codex.analytics.accessTokenUsage.personalTitle`,defaultMessage:`Personal access token usage`},personalSubtitle:{id:`codex.analytics.accessTokenUsage.personalSubtitle`,defaultMessage:`Track Codex usage from access tokens you created.`},agentColumn:{id:`codex.analytics.accessTokenUsage.accessTokenColumn`,defaultMessage:`Access token name`},creatorColumn:{id:`codex.analytics.accessTokenUsage.creatorColumn`,defaultMessage:`Creator`},creditsColumn:{id:`codex.analytics.accessTokenUsage.creditsColumn`,defaultMessage:`Credits`},textTokensColumn:{id:`codex.analytics.accessTokenUsage.textTokensColumn`,defaultMessage:`Text tokens`},lastUsedColumn:{id:`codex.analytics.accessTokenUsage.lastUsedColumn`,defaultMessage:`Last used`},statusColumn:{id:`codex.analytics.accessTokenUsage.statusColumn`,defaultMessage:`Status`},unknownCreator:{id:`codex.analytics.accessTokenUsage.unknownCreator`,defaultMessage:`Unknown creator`},activeStatus:{id:`codex.analytics.accessTokenUsage.activeStatus`,defaultMessage:`Active`},expiredStatus:{id:`codex.analytics.accessTokenUsage.expiredStatus`,defaultMessage:`Expired`},revokedStatus:{id:`codex.analytics.accessTokenUsage.revokedStatus`,defaultMessage:`Revoked`},neverUsed:{id:`codex.analytics.accessTokenUsage.neverUsed`,defaultMessage:`Never`},emptyMessage:{id:`codex.analytics.accessTokenUsage.emptyMessage`,defaultMessage:`No access token usage in this date range.`},errorMessage:{id:`codex.analytics.accessTokenUsage.errorMessage`,defaultMessage:`We couldn't load access token usage.`},retryButton:{id:`codex.analytics.accessTokenUsage.retryButton`,defaultMessage:`Try again`}})}));function lr(e){"use forget";let t=(0,ur.c)(75),{compact:n,query:r,config:i,dateRange:a,groupBy:o,wrapperClassName:s,tooltipSummaryFormatter:c}=e,l=n!==void 0&&n,u=s===void 0?`mt-8`:s,d=le(),{data:f,isLoading:p,isError:m,error:h}=r,[g,_]=(0,dr.useState)();m&&M.error(i.loggerMessage,{error:h});let y;if(t[0]!==l||t[1]!==i||t[2]!==f||t[3]!==a||t[4]!==o||t[5]!==d||t[6]!==m||t[7]!==p){let e=i.buildChartData({response:f,isError:m,isLoading:p,intl:d,dateRange:a,groupBy:o});y=l&&i.limitSettingsToolSeries&&e!==`loading`?Dt(e,d.formatMessage({id:`chatgpt.settings.analytics.tool_activity.chart.other`,defaultMessage:`Other`})):e,t[0]=l,t[1]=i,t[2]=f,t[3]=a,t[4]=o,t[5]=d,t[6]=m,t[7]=p,t[8]=y}else y=t[8];let b=y,x;t[9]!==b||t[10]!==l||t[11]!==g?(x=l&&b!==`loading`&&g!=null&&Object.hasOwn(b.metrics,g)?g:void 0,t[9]=b,t[10]=l,t[11]=g,t[12]=x):x=t[12];let S=x,C,w,T,E,D;if(t[13]!==S||t[14]!==b||t[15]!==l||t[16]!==i.errorMessage||t[17]!==i.matchAdminAnalyticsSeriesStyles||t[18]!==i.seriesColorMap||t[19]!==i.summaryLabel||t[20]!==d||t[21]!==m||t[22]!==u){let e=b===`loading`||l&&m?null:b.data.reduce((e,t)=>e+(S==null?t.total:t.values[S]??0),0),n;t[28]!==b||t[29]!==l||t[30]!==i.matchAdminAnalyticsSeriesStyles||t[31]!==i.seriesColorMap?(C=i.matchAdminAnalyticsSeriesStyles&&b!==`loading`?Object.keys(b.metrics):void 0,n=i.matchAdminAnalyticsSeriesStyles?l?It(C??[]):hn(C??[]):i.seriesColorMap,t[28]=b,t[29]=l,t[30]=i.matchAdminAnalyticsSeriesStyles,t[31]=i.seriesColorMap,t[32]=C,t[33]=n):(C=t[32],n=t[33]),w=n,t[34]!==i.errorMessage||t[35]!==m?(D=m?(0,fr.jsx)(`p`,{className:`mt-6 text-sm text-red-600 dark:text-red-400`,children:(0,fr.jsx)(L,{...i.errorMessage})}):null,t[34]=i.errorMessage,t[35]=m,t[36]=D):D=t[36];let r=l&&`flex flex-col gap-3`;t[37]!==r||t[38]!==u?(T=v(u,r),t[37]=r,t[38]=u,t[39]=T):T=t[39],E=i.summaryLabel?(0,fr.jsxs)(`div`,{className:l?`flex flex-col gap-0.5`:`px-6`,children:[(0,fr.jsx)(`div`,{className:v(`text-token-text-primary font-medium`,l?`text-sm leading-5`:`text-base leading-6 tracking-[-0.01em]`),children:(0,fr.jsx)(L,{...i.summaryLabel})}),(0,fr.jsx)(`div`,{className:v(`text-token-text-primary tabular-nums`,l?`text-lg leading-[26px] font-semibold`:`mt-1 text-3xl leading-9 font-normal`),children:e==null?d.formatMessage(pr):d.formatNumber(e)})]}):null,t[13]=S,t[14]=b,t[15]=l,t[16]=i.errorMessage,t[17]=i.matchAdminAnalyticsSeriesStyles,t[18]=i.seriesColorMap,t[19]=i.summaryLabel,t[20]=d,t[21]=m,t[22]=u,t[23]=C,t[24]=w,t[25]=T,t[26]=E,t[27]=D}else C=t[23],w=t[24],T=t[25],E=t[26],D=t[27];let O;t[40]!==i.title||t[41]!==i.titleSecondaryText?(O=i.titleSecondaryText?(0,fr.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[(0,fr.jsx)(`div`,{children:(0,fr.jsx)(L,{...i.title})}),(0,fr.jsx)(`div`,{className:`text-token-text-tertiary text-xs`,children:(0,fr.jsx)(L,{...i.titleSecondaryText})})]}):(0,fr.jsx)(L,{...i.title}),t[40]=i.title,t[41]=i.titleSecondaryText,t[42]=O):O=t[42];let k=l&&m?`error`:b,A=l?S:void 0,j=l?_:void 0,N;t[43]!==i.tooltipTotalLabel||t[44]!==d?(N=i.tooltipTotalLabel?d.formatMessage(i.tooltipTotalLabel):void 0,t[43]=i.tooltipTotalLabel,t[44]=d,t[45]=N):N=t[45];let ee=i.summaryLabel!=null,P=i.matchAdminAnalyticsSeriesStyles?`codexAnalytics`:void 0,F;t[46]!==C||t[47]!==l||t[48]!==i.clientEventSource||t[49]!==i.hideLegend||t[50]!==i.matchAdminAnalyticsSeriesStyles||t[51]!==i.otherGroupLabel||t[52]!==i.showHorizontalGrid||t[53]!==i.tooltipMetricKeysAtBottom||t[54]!==i.visualization||t[55]!==i.xAxisTickAlignment||t[56]!==i.xAxisTickCount||t[57]!==i.yAxisTickCount||t[58]!==w||t[59]!==A||t[60]!==j||t[61]!==N||t[62]!==ee||t[63]!==P||t[64]!==O||t[65]!==k||t[66]!==c?(F=(0,fr.jsx)(Mt,{compact:l,title:O,data:k,clientEventSource:i.clientEventSource,hideLegend:i.hideLegend,otherGroupLabel:i.otherGroupLabel,seriesColorMap:w,forceStack:i.matchAdminAnalyticsSeriesStyles,stackOrder:C,legendOrder:C,selectedSeriesKey:A,onSelectedSeriesChange:j,tooltipMetricOrder:C,tooltipTotalLabel:N,tooltipSummaryFormatter:c,tooltipMetricKeysAtBottom:i.tooltipMetricKeysAtBottom,hideHeader:ee,legendVariant:P,visualization:i.visualization,showHorizontalGrid:i.showHorizontalGrid,yAxisTickCount:i.yAxisTickCount,xAxisTickCount:i.xAxisTickCount,xAxisTickAlignment:i.xAxisTickAlignment}),t[46]=C,t[47]=l,t[48]=i.clientEventSource,t[49]=i.hideLegend,t[50]=i.matchAdminAnalyticsSeriesStyles,t[51]=i.otherGroupLabel,t[52]=i.showHorizontalGrid,t[53]=i.tooltipMetricKeysAtBottom,t[54]=i.visualization,t[55]=i.xAxisTickAlignment,t[56]=i.xAxisTickCount,t[57]=i.yAxisTickCount,t[58]=w,t[59]=A,t[60]=j,t[61]=N,t[62]=ee,t[63]=P,t[64]=O,t[65]=k,t[66]=c,t[67]=F):F=t[67];let te;t[68]!==F||t[69]!==T||t[70]!==E?(te=(0,fr.jsxs)(`div`,{className:T,children:[E,F]}),t[68]=F,t[69]=T,t[70]=E,t[71]=te):te=t[71];let I;return t[72]!==te||t[73]!==D?(I=(0,fr.jsxs)(fr.Fragment,{children:[D,te]}),t[72]=te,t[73]=D,t[74]=I):I=t[74],I}var ur,dr,fr,pr,mr=e((()=>{ur=ce(),o(),bn(),an(),Ft(),C(),dr=n(R()),se(),fr=I(),pr={id:`codex.analytics.chart.summaryValueUnavailable`,defaultMessage:`-`,description:`Fallback placeholder shown when a Codex analytics chart summary value is unavailable.`}})),hr,gr,_r=e((()=>{hr={codeReview:`#ffab00`,web:`#ff3621`,mobile:`#8B5CF6`,vscode:`#00a972`,cli:`#077a9d`,desktop:`#6B7280`},gr={totalUsers:`#2A5EB1`,codeReviewTasks:hr.codeReview}}));function vr(e){"use forget";let t=(0,Lr.c)(178),n;t[0]===e?n=t[1]:(n=e===void 0?{}:e,t[0]=e,t[1]=n);let{dateRange:r}=n,i=le(),[a,o]=(0,Rr.useState)(`30d`),[s,l]=(0,Rr.useState)(`all`),[u,d]=(0,Rr.useState)(`credits`),[f,m]=(0,Rr.useState)(`desc`),[h,g]=(0,Rr.useState)(0),[_,y]=(0,Rr.useState)(`1`),[b,x]=(0,Rr.useState)(``),S;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(S=Vn(),t[2]=S):S=t[2];let C=S,w=a===`7d`?7:30,T=Me(b,1e3),E;t[3]===T?E=t[4]:(E=T.trim(),t[3]=T,t[4]=E);let D=E,O=h+1,k;t[5]!==r||t[6]!==D||t[7]!==s||t[8]!==u||t[9]!==f||t[10]!==O||t[11]!==w?(k={windowDays:w,page:O,pageSize:zr,clientFilter:s,sortBy:u,sortDirection:f,dateRange:r,searchQuery:D},t[5]=r,t[6]=D,t[7]=s,t[8]=u,t[9]=f,t[10]=O,t[11]=w,t[12]=k):k=t[12];let A=De(k);A.data?.response.data;let j;t[13]===A.data?.response.data?j=t[14]:(j=A.data?.response.data??[],t[13]=A.data?.response.data,t[14]=j);let M;t[15]===j?M=t[16]:(M=j.map(Ar),t[15]=j,t[16]=M);let N=M,ee;bb0:{if(A.data==null){ee=null;break bb0}let e;t[17]!==A.data.response.total_users||t[18]!==N?(e={data:N,totalUsers:A.data.response.total_users},t[17]=A.data.response.total_users,t[18]=N,t[19]=e):e=t[19],ee=e}let P=ee,F=P?.totalUsers??0,te;t[20]===N?te=t[21]:(te=N.some(Cr),t[20]=N,t[21]=te);let I=te,ne=F===0?0:Math.ceil(F/zr),re=Math.max(ne-1,0),ie;bb1:{if(P==null){let e;t[22]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[22]=e):e=t[22],ie=e;break bb1}ie=P.data}let ae=ie,oe=P!=null&&(A.isPlaceholderData||A.isError),se=oe?(A.data?.page??h)-1:h,R=Math.min(Math.max(se,0),re),ce;if(t[23]!==ae||t[24]!==R){let e;t[26]===R?e=t[27]:(e=(e,t)=>({...e,rank:C?e.rank??R*zr+t+1:R*zr+t+1,displayName:jr(e),secondaryLabel:e.email??e.user_id}),t[26]=R,t[27]=e),ce=ae.map(e),t[23]=ae,t[24]=R,t[25]=ce}else ce=t[25];let ue=ce,de=ue.length===0?0:R*zr+1,fe=R*zr+ue.length,pe=A.isFetching&&A.isPlaceholderData&&P!=null,me,he;t[28]===R?(me=t[29],he=t[30]):(me=()=>{y(String(R+1))},he=[R],t[28]=R,t[29]=me,t[30]=he),(0,Rr.useEffect)(me,he);let ge;t[31]===Symbol.for(`react.memo_cache_sentinel`)?(ge=()=>{g(0)},t[31]=ge):ge=t[31];let _e=r?.startDate,ve=r?.endDate,ye;t[32]!==D||t[33]!==s||t[34]!==u||t[35]!==f||t[36]!==_e||t[37]!==ve||t[38]!==a?(ye=[D,_e,ve,s,u,f,a],t[32]=D,t[33]=s,t[34]=u,t[35]=f,t[36]=_e,t[37]=ve,t[38]=a,t[39]=ye):ye=t[39],(0,Rr.useEffect)(ge,ye);let be,xe;t[40]!==h||t[41]!==re||t[42]!==A.isFetching||t[43]!==ne?(be=()=>{ne===0||A.isFetching||h>re&&g(re)},xe=[h,re,A.isFetching,ne],t[40]=h,t[41]=re,t[42]=A.isFetching,t[43]=ne,t[44]=be,t[45]=xe):(be=t[44],xe=t[45]),(0,Rr.useEffect)(be,xe);let Se;t[46]===u?Se=t[47]:(Se=e=>{if(e===u){g(0),m(Sr);return}g(0),d(e),m(`desc`)},t[46]=u,t[47]=Se);let Ce=Se,we;t[48]!==h||t[49]!==oe||t[50]!==ne||t[51]!==_||t[52]!==R?(we=()=>{if(ne===0||oe)return;let e=Number.parseInt(_,10);if(Number.isNaN(e)){y(String(R+1));return}let t=Math.min(Math.max(e,1),ne);y(String(t)),t-1!==h&&g(t-1)},t[48]=h,t[49]=oe,t[50]=ne,t[51]=_,t[52]=R,t[53]=we):we=t[53];let Te=we,Ee;t[54]===Symbol.for(`react.memo_cache_sentinel`)?(Ee={field:`rank`,header:(0,q.jsx)(`span`,{className:`text-token-text-tertiary text-xs font-normal`,children:(0,q.jsx)(L,{...J.rankColumn})})},t[54]=Ee):Ee=t[54];let ke;t[55]===Symbol.for(`react.memo_cache_sentinel`)?(ke={field:`user`,header:(0,q.jsx)(`span`,{className:`text-token-text-tertiary text-xs font-normal`,children:(0,q.jsx)(L,{...J.userColumn})})},t[55]=ke):ke=t[55];let Ae;t[56]===i?Ae=t[57]:(Ae=i.formatMessage(J.threadsColumn),t[56]=i,t[57]=Ae);let je;t[58]===Ce?je=t[59]:(je=()=>Ce(`threads`),t[58]=Ce,t[59]=je);let Ne;t[60]!==u||t[61]!==f||t[62]!==Ae||t[63]!==je?(Ne={field:`threads`,header:(0,q.jsx)(Tr,{label:Ae,sortKey:`threads`,sortBy:u,sortDirection:f,onClick:je})},t[60]=u,t[61]=f,t[62]=Ae,t[63]=je,t[64]=Ne):Ne=t[64];let Pe;t[65]===i?Pe=t[66]:(Pe=i.formatMessage(J.turnsColumn),t[65]=i,t[66]=Pe);let Fe;t[67]===Ce?Fe=t[68]:(Fe=()=>Ce(`turns`),t[67]=Ce,t[68]=Fe);let Ie;t[69]!==u||t[70]!==f||t[71]!==Pe||t[72]!==Fe?(Ie={field:`turns`,header:(0,q.jsx)(Tr,{label:Pe,sortKey:`turns`,sortBy:u,sortDirection:f,onClick:Fe})},t[69]=u,t[70]=f,t[71]=Pe,t[72]=Fe,t[73]=Ie):Ie=t[73];let Le;t[74]===i?Le=t[75]:(Le=i.formatMessage(J.currentStreakColumn),t[74]=i,t[75]=Le);let Re;t[76]===i?Re=t[77]:(Re=i.formatMessage(J.currentStreakTooltip),t[76]=i,t[77]=Re);let ze;t[78]===Ce?ze=t[79]:(ze=()=>Ce(`current_streak`),t[78]=Ce,t[79]=ze);let Be;t[80]!==u||t[81]!==f||t[82]!==Le||t[83]!==Re||t[84]!==ze?(Be={field:`currentStreak`,header:(0,q.jsx)(Tr,{label:Le,tooltipLabel:Re,sortKey:`current_streak`,sortBy:u,sortDirection:f,onClick:ze})},t[80]=u,t[81]=f,t[82]=Le,t[83]=Re,t[84]=ze,t[85]=Be):Be=t[85];let Ve;if(t[86]!==Ce||t[87]!==I||t[88]!==i||t[89]!==u||t[90]!==f||t[91]!==Ne||t[92]!==Ie||t[93]!==Be){if(Ve=[Ee,ke,Ne,Ie,Be],I){let e;t[95]===i?e=t[96]:(e=i.formatMessage(J.textTokensColumn),t[95]=i,t[96]=e);let n;t[97]===i?n=t[98]:(n=i.formatMessage(J.textTokensTooltip),t[97]=i,t[98]=n);let r;t[99]===Ce?r=t[100]:(r=()=>Ce(`text_tokens`),t[99]=Ce,t[100]=r);let a;t[101]!==u||t[102]!==f||t[103]!==e||t[104]!==n||t[105]!==r?(a={field:`textTokens`,header:(0,q.jsx)(Tr,{label:e,tooltipLabel:n,sortKey:`text_tokens`,sortBy:u,sortDirection:f,onClick:r})},t[101]=u,t[102]=f,t[103]=e,t[104]=n,t[105]=r,t[106]=a):a=t[106],Ve.push(a)}let e;t[107]===i?e=t[108]:(e=i.formatMessage(J.linesOfCodeColumn),t[107]=i,t[108]=e);let n;t[109]===i?n=t[110]:(n=i.formatMessage(J.linesOfCodeTooltip),t[109]=i,t[110]=n);let r;t[111]===Ce?r=t[112]:(r=()=>Ce(`lines_of_code`),t[111]=Ce,t[112]=r);let a;t[113]!==u||t[114]!==f||t[115]!==e||t[116]!==n||t[117]!==r?(a={field:`linesOfCode`,header:(0,q.jsx)(Tr,{label:e,tooltipLabel:n,sortKey:`lines_of_code`,sortBy:u,sortDirection:f,onClick:r})},t[113]=u,t[114]=f,t[115]=e,t[116]=n,t[117]=r,t[118]=a):a=t[118],Ve.push(a);let o;t[119]===i?o=t[120]:(o=i.formatMessage(J.creditsColumn),t[119]=i,t[120]=o);let s;t[121]===Ce?s=t[122]:(s=()=>Ce(`credits`),t[121]=Ce,t[122]=s);let c;t[123]!==u||t[124]!==f||t[125]!==o||t[126]!==s?(c={field:`credits`,header:(0,q.jsx)(Tr,{label:o,sortKey:`credits`,sortBy:u,sortDirection:f,onClick:s})},t[123]=u,t[124]=f,t[125]=o,t[126]=s,t[127]=c):c=t[127],Ve.push(c),t[86]=Ce,t[87]=I,t[88]=i,t[89]=u,t[90]=f,t[91]=Ne,t[92]=Ie,t[93]=Be,t[94]=Ve}else Ve=t[94];let He=Ve,Ue;t[128]===Symbol.for(`react.memo_cache_sentinel`)?(Ue=(0,q.jsx)(`h3`,{className:`text-token-text-primary text-xl font-semibold`,children:(0,q.jsx)(L,{...J.sectionTitle})}),t[128]=Ue):Ue=t[128];let We;t[129]===Symbol.for(`react.memo_cache_sentinel`)?(We=(0,q.jsxs)(`div`,{className:`flex min-w-0 flex-1 flex-col gap-1`,children:[Ue,(0,q.jsx)(`p`,{className:`text-token-text-tertiary max-w-2xl text-sm`,children:(0,q.jsx)(L,{...J.populationHelpText})})]}),t[129]=We):We=t[129];let Ge;t[130]===Symbol.for(`react.memo_cache_sentinel`)?(Ge=(0,q.jsx)(c,{className:`text-token-text-tertiary pointer-events-none absolute start-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2`}),t[130]=Ge):Ge=t[130];let Ke;t[131]===i?Ke=t[132]:(Ke=i.formatMessage(J.searchInputAriaLabel),t[131]=i,t[132]=Ke);let z;t[133]===Symbol.for(`react.memo_cache_sentinel`)?(z=e=>{x(e.target.value)},t[133]=z):z=t[133];let qe;t[134]===i?qe=t[135]:(qe=i.formatMessage(J.searchInputPlaceholder),t[134]=i,t[135]=qe);let B;t[136]!==b||t[137]!==Ke||t[138]!==qe?(B=(0,q.jsxs)(`label`,{htmlFor:`codex-usage-leaderboard-search`,className:`relative block w-36`,children:[Ge,(0,q.jsx)(`input`,{id:`codex-usage-leaderboard-search`,"aria-label":Ke,className:`border-token-border-default bg-token-bg-primary text-token-text-primary placeholder:text-token-text-quaternary focus:border-token-border-xheavy caret-token-text-primary h-9 w-full rounded-full border ps-9 pe-3 text-sm font-normal shadow-none ring-0 outline-hidden focus:ring-0`,name:`codex-usage-leaderboard-search`,onChange:z,placeholder:qe,role:`searchbox`,type:`text`,value:b})]}),t[136]=b,t[137]=Ke,t[138]=qe,t[139]=B):B=t[139];let Je;t[140]===Symbol.for(`react.memo_cache_sentinel`)?(Je=e=>l(t=>{let n=Nr(e)?e:Br[0];return n!==t&&g(0),n}),t[140]=Je):Je=t[140];let Ye;t[141]!==i||t[142]!==s?(Ye=i.formatMessage(Fr(s)),t[141]=i,t[142]=s,t[143]=Ye):Ye=t[143];let Xe;t[144]===i?Xe=t[145]:(Xe=i.formatMessage(J.productFilterLabel),t[144]=i,t[145]=Xe);let Ze;t[146]!==s||t[147]!==Ye||t[148]!==Xe?(Ze=(0,q.jsx)(wr,{value:s,options:Br,onChange:Je,label:Ye,ariaLabel:Xe,getOptionLabel:xr}),t[146]=s,t[147]=Ye,t[148]=Xe,t[149]=Ze):Ze=t[149];let Qe;t[150]!==r||t[151]!==i||t[152]!==a?(Qe=r?null:(0,q.jsx)(wr,{value:a,options:Vr,onChange:e=>o(t=>{let n=Pr(e)?e:Vr[1];return n!==t&&g(0),n}),label:i.formatMessage(Ir(a)),ariaLabel:i.formatMessage(J.rangeToggleLabel),getOptionLabel:br}),t[150]=r,t[151]=i,t[152]=a,t[153]=Qe):Qe=t[153];let $e;t[154]!==B||t[155]!==Ze||t[156]!==Qe?($e=(0,q.jsxs)(`div`,{className:`flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between`,children:[We,(0,q.jsxs)(`div`,{className:`flex flex-wrap items-center justify-end gap-3`,children:[B,Ze,Qe]})]}),t[154]=B,t[155]=Ze,t[156]=Qe,t[157]=$e):$e=t[157];let et;t[158]!==He||t[159]!==D||t[160]!==fe||t[161]!==de||t[162]!==P||t[163]!==Te||t[164]!==I||t[165]!==i||t[166]!==pe||t[167]!==oe||t[168]!==A||t[169]!==ne||t[170]!==_||t[171]!==ue||t[172]!==R||t[173]!==F?(et=(0,q.jsx)(`div`,{className:`border-token-border-light bg-token-bg-elevated-primary flex flex-1 flex-col overflow-hidden rounded-2xl border shadow-sm`,children:A.isLoading&&P==null?(0,q.jsx)(`div`,{className:`flex min-h-64 items-center justify-center`,children:(0,q.jsx)(p,{className:`icon-lg text-token-text-tertiary`})}):A.isError&&P==null?(0,q.jsxs)(`div`,{className:`flex min-h-64 flex-col items-center justify-center gap-4 px-6 text-center`,children:[(0,q.jsx)(`p`,{className:`text-token-text-secondary text-sm`,children:(0,q.jsx)(L,{...J.errorMessage})}),(0,q.jsx)(`button`,{type:`button`,className:`btn btn-secondary`,onClick:()=>void A.refetch(),children:(0,q.jsx)(L,{...J.retryButton})})]}):(0,q.jsxs)(q.Fragment,{children:[(0,q.jsxs)(`div`,{className:`relative overflow-x-auto px-4 md:px-6`,children:[pe?(0,q.jsx)(`div`,{className:`bg-token-bg-primary/55 absolute inset-0 z-10 flex items-center justify-center backdrop-blur-[1px]`,children:(0,q.jsx)(p,{className:`icon-md text-token-text-tertiary`})}):null,(0,q.jsx)(Mn.Root,{columns:He,rows:ue,rowKey:yr,emptyMessage:D.length>0?(0,q.jsx)(L,{...J.emptySearchMessage}):(0,q.jsx)(L,{...J.emptyMessage}),className:v(Hr,`min-w-[980px]`,I?Ur.withTextTokens:Ur.withoutTextTokens),children:e=>e.map(e=>(0,q.jsxs)(Mn.Row,{rowKey:e.user_id,className:`hover:bg-token-bg-tertiary/60 transition-colors`,children:[(0,q.jsx)(Mn.Cell,{field:`rank`,className:`py-4`,children:(0,q.jsx)(`div`,{className:`text-sm font-normal tabular-nums`,children:i.formatNumber(e.rank)})}),(0,q.jsx)(Mn.Cell,{field:`user`,className:`py-4`,children:(0,q.jsxs)(`div`,{className:`flex min-w-0 items-center gap-3`,children:[(0,q.jsx)(Dr,{name:e.displayName,userId:e.user_id}),(0,q.jsxs)(`div`,{className:`min-w-0`,children:[(0,q.jsx)(`div`,{className:`text-token-text-primary truncate text-sm font-normal`,children:e.displayName}),(0,q.jsx)(`div`,{className:`text-token-text-tertiary truncate text-sm`,children:e.secondaryLabel})]})]})}),(0,q.jsx)(Mn.Cell,{field:`threads`,className:`py-4`,children:(0,q.jsx)(Er,{children:i.formatNumber(e.threads)})}),(0,q.jsx)(Mn.Cell,{field:`turns`,className:`py-4`,children:(0,q.jsx)(Er,{children:i.formatNumber(e.turns)})}),(0,q.jsx)(Mn.Cell,{field:`currentStreak`,className:`py-4`,children:(0,q.jsx)(Er,{children:kr(i,e.currentStreak)})}),I?(0,q.jsx)(Mn.Cell,{field:`textTokens`,className:`py-4`,children:(0,q.jsx)(Er,{children:i.formatNumber(e.textTokens??0)})}):null,(0,q.jsx)(Mn.Cell,{field:`linesOfCode`,className:`py-4`,children:(0,q.jsx)(Er,{children:e.linesOfCode==null?i.formatMessage(J.metricUnavailable):i.formatNumber(e.linesOfCode)})}),(0,q.jsx)(Mn.Cell,{field:`credits`,className:`py-4`,children:(0,q.jsx)(Er,{children:Or(i,e.credits)})})]},e.user_id))})]}),(0,q.jsxs)(`div`,{className:`bg-token-bg-tertiary/60 border-token-border-light flex flex-wrap items-center justify-between gap-3 border-t px-4 py-3 md:px-6`,children:[(0,q.jsx)(`div`,{className:`text-token-text-tertiary text-sm`,children:(0,q.jsx)(L,{...J.paginationSummary,values:{start:de,end:fe,total:F}})}),(0,q.jsxs)(`div`,{className:`flex items-center gap-3`,children:[(0,q.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,q.jsx)(`label`,{htmlFor:`codex-usage-leaderboard-page-input`,className:`text-token-text-tertiary text-sm`,children:(0,q.jsx)(L,{...J.pageLabel})}),(0,q.jsx)(`input`,{id:`codex-usage-leaderboard-page-input`,type:`text`,inputMode:`numeric`,pattern:`[0-9]*`,value:_,onChange:e=>{y(e.target.value.replace(/\D+/gu,``))},onKeyDown:e=>{e.key===`Enter`&&(e.preventDefault(),Te())},onBlur:Te,"aria-label":i.formatMessage(J.pageInputAriaLabel),disabled:ne===0||oe,className:`border-token-border-default text-token-text-primary bg-token-bg-primary focus:border-token-border-heavy h-8 w-16 rounded-md border px-2 text-sm tabular-nums focus:outline-hidden disabled:opacity-50`}),(0,q.jsx)(`span`,{className:`text-token-text-tertiary text-sm tabular-nums`,children:(0,q.jsx)(L,{...J.pageCountIndicator,values:{count:i.formatNumber(Math.max(ne,1))}})})]}),(0,q.jsx)(Oe,{currentPage:R,length:ne,onChangeIndex:e=>{oe||g(e)}})]})]})]})}),t[158]=He,t[159]=D,t[160]=fe,t[161]=de,t[162]=P,t[163]=Te,t[164]=I,t[165]=i,t[166]=pe,t[167]=oe,t[168]=A,t[169]=ne,t[170]=_,t[171]=ue,t[172]=R,t[173]=F,t[174]=et):et=t[174];let tt;return t[175]!==$e||t[176]!==et?(tt=(0,q.jsxs)(`section`,{className:`flex flex-1 flex-col gap-6`,children:[$e,et]}),t[175]=$e,t[176]=et,t[177]=tt):tt=t[177],tt}function yr(e){return e.user_id}function br(e){return(0,q.jsx)(L,{...Ir(e)})}function xr(e){return(0,q.jsx)(L,{...Fr(e)})}function Sr(e){return e===`desc`?`asc`:`desc`}function Cr(e){return e.textTokens!=null}function wr(e){"use forget";let t=(0,Lr.c)(18),{value:n,options:r,onChange:i,label:a,ariaLabel:o,getOptionLabel:s}=e,c;t[0]===a?c=t[1]:(c=(0,q.jsx)(`span`,{className:`truncate`,children:a}),t[0]=a,t[1]=c);let l;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,q.jsx)(Ie,{className:`h-3 w-3`}),t[2]=l):l=t[2];let u;t[3]!==o||t[4]!==c?(u=(0,q.jsxs)(ue.Trigger,{"aria-label":o,className:`border-token-border-default text-token-text-primary bg-token-bg-primary flex h-9 w-36 items-center justify-between gap-2 rounded-full border px-3 text-sm font-normal`,children:[c,l]}),t[3]=o,t[4]=c,t[5]=u):u=t[5];let d;if(t[6]!==s||t[7]!==r){let e;t[9]===s?e=t[10]:(e=e=>(0,q.jsx)(ue.RadioItem,{value:e,label:s(e)},e),t[9]=s,t[10]=e),d=r.map(e),t[6]=s,t[7]=r,t[8]=d}else d=t[8];let f;t[11]!==i||t[12]!==d||t[13]!==n?(f=(0,q.jsx)(ue.Portal,{children:(0,q.jsx)(ue.Content,{align:`end`,children:(0,q.jsx)(ue.RadioGroup,{value:n,onValueChange:i,children:d})})}),t[11]=i,t[12]=d,t[13]=n,t[14]=f):f=t[14];let p;return t[15]!==u||t[16]!==f?(p=(0,q.jsxs)(ue.Root,{children:[u,f]}),t[15]=u,t[16]=f,t[17]=p):p=t[17],p}function Tr(e){"use forget";let t=(0,Lr.c)(17),{label:n,tooltipLabel:r,sortKey:i,sortBy:a,sortDirection:o,onClick:s}=e,c=a===i,l=c&&`text-token-text-secondary`,u;t[0]===l?u=t[1]:(u=v(`group text-token-text-tertiary hover:text-token-text-secondary inline-flex items-center gap-1 text-xs font-normal`,l),t[0]=l,t[1]=u);let d;t[2]===n?d=t[3]:(d=(0,q.jsx)(`span`,{children:n}),t[2]=n,t[3]=d);let f;t[4]!==c||t[5]!==o?(f=c?o===`asc`?(0,q.jsx)(Le,{className:`h-3 w-3`}):(0,q.jsx)(Ie,{className:`h-3 w-3`}):(0,q.jsx)(Re,{className:`h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100`}),t[4]=c,t[5]=o,t[6]=f):f=t[6];let p;t[7]!==s||t[8]!==u||t[9]!==d||t[10]!==f?(p=(0,q.jsxs)(`button`,{type:`button`,onClick:s,className:u,children:[d,f]}),t[7]=s,t[8]=u,t[9]=d,t[10]=f,t[11]=p):p=t[11];let m;t[12]===r?m=t[13]:(m=r?(0,q.jsx)(_,{label:r,children:(0,q.jsx)(x,{className:`icon-sm text-token-text-tertiary`})}):null,t[12]=r,t[13]=m);let h;return t[14]!==p||t[15]!==m?(h=(0,q.jsxs)(`div`,{className:`flex items-center gap-1`,children:[p,m]}),t[14]=p,t[15]=m,t[16]=h):h=t[16],h}function Er(e){"use forget";let t=(0,Lr.c)(2),{children:n}=e,r;return t[0]===n?r=t[1]:(r=(0,q.jsx)(`div`,{className:`text-token-text-primary text-start text-sm font-normal tabular-nums`,children:n}),t[0]=n,t[1]=r),r}function Dr(e){"use forget";let t=(0,Lr.c)(8),{name:n,userId:r}=e,i;t[0]!==n||t[1]!==r?(i=a(n)||a(r),t[0]=n,t[1]=r,t[2]=i):i=t[2];let o=i,s;t[3]===r?s=t[4]:(s=v(`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[11px] font-medium text-white`,m(r)),t[3]=r,t[4]=s);let c;return t[5]!==o||t[6]!==s?(c=(0,q.jsx)(`div`,{className:s,children:o}),t[5]=o,t[6]=s,t[7]=c):c=t[7],c}function Or(e,t){return e.formatNumber(Math.round(t))}function kr(e,t){return t==null?`-`:e.formatNumber(t)}function Ar(e){let t=e;return{rank:e.rank??null,user_id:e.user_id,name:e.name,email:e.email,credits:e.credits??0,currentStreak:e.current_streak??null,linesOfCode:t.code_attribution?.lines_of_code?.added??t.lines_of_code?.added??null,threads:e.n_threads??0,turns:e.n_turns??0,textTokens:e.text_tokens??null}}function jr(e){return typeof e.name==`string`&&e.name.trim()!==``?e.name:(e.email?.split(`@`)[0]??e.user_id).split(/[._-]+/u).map(e=>e.trim()).filter(Boolean).map(Mr).join(` `)||e.user_id}function Mr(e){return e.length===0?e:`${e[0]?.toUpperCase()??``}${e.slice(1)}`}function Nr(e){return Br.some(t=>t===e)}function Pr(e){return Vr.some(t=>t===e)}function Fr(e){switch(e){case`cloud`:return J.productCloud;case`desktop`:return J.productDesktop;case`cli`:return J.productCli;case`extension`:return J.productExtension;case`other`:return J.productOther;default:return J.productAll}}function Ir(e){switch(e){case`7d`:return J.oneWeek;default:return J.thirtyDays}}var Lr,Rr,q,zr,Br,Vr,Hr,Ur,J,Wr=e((()=>{Lr=ce(),j(),je(),F(),jn(),Ce(),f(),Fe(),He(),ze(),T(),d(),Un(),we(),me(),C(),Rr=n(R()),se(),q=I(),zr=50,Br=[`all`,`desktop`,`cli`,`extension`,`cloud`,`other`],Vr=[`7d`,`30d`],Hr=[`[&_thead_th]:bg-transparent`,`[&_thead_th]:pt-2`,`[&_thead_th]:pb-3`],Ur={withoutTextTokens:[`[&_thead_th:nth-child(1)]:w-[8%]`,`[&_thead_th:nth-child(2)]:w-[22%]`,`[&_thead_th:nth-child(3)]:w-[14%]`,`[&_thead_th:nth-child(4)]:w-[14%]`,`[&_thead_th:nth-child(5)]:w-[14%]`,`[&_thead_th:nth-child(6)]:w-[14%]`,`[&_thead_th:nth-child(7)]:w-[14%]`],withTextTokens:[`[&_thead_th:nth-child(1)]:w-[7%]`,`[&_thead_th:nth-child(2)]:w-[20%]`,`[&_thead_th:nth-child(3)]:w-[12%]`,`[&_thead_th:nth-child(4)]:w-[12%]`,`[&_thead_th:nth-child(5)]:w-[12%]`,`[&_thead_th:nth-child(6)]:w-[12%]`,`[&_thead_th:nth-child(7)]:w-[12%]`,`[&_thead_th:nth-child(8)]:w-[13%]`]},J=ie({sectionTitle:{id:`codex.analytics.sections.leaderboard`,defaultMessage:`Usage leaderboard`},populationHelpText:{id:`codex.analytics.leaderboard.population.helpText`,defaultMessage:`Includes users with threads, turns, or credit usage for the selected filters. Users with no matching activity are omitted, and some activity may use 0 credits.`},rankColumn:{id:`codex.analytics.leaderboard.rank`,defaultMessage:`Rank`},userColumn:{id:`codex.analytics.leaderboard.user`,defaultMessage:`User`},creditsColumn:{id:`codex.analytics.leaderboard.credits`,defaultMessage:`Credits`},threadsColumn:{id:`codex.analytics.leaderboard.threads`,defaultMessage:`Threads`},turnsColumn:{id:`codex.analytics.leaderboard.turns`,defaultMessage:`Turns`},currentStreakColumn:{id:`codex.analytics.leaderboard.currentStreak`,defaultMessage:`Streak`},currentStreakTooltip:{id:`codex.analytics.leaderboard.currentStreak.tooltip`,defaultMessage:`Current Codex activity streak within the available data window`},textTokensColumn:{id:`codex.analytics.leaderboard.textTokens`,defaultMessage:`Text tokens`},linesOfCodeColumn:{id:`codex.analytics.leaderboard.linesOfCode`,defaultMessage:`Lines of code`},linesOfCodeTooltip:{id:`codex.analytics.leaderboard.linesOfCodeTooltip`,defaultMessage:`Total lines of code generated by Codex in user sessions`},textTokensTooltip:{id:`codex.analytics.leaderboard.textTokensTooltip`,defaultMessage:`Only includes tokens tracked after token-based pricing was enabled`},rangeToggleLabel:{id:`codex.analytics.leaderboard.rangeToggleLabel`,defaultMessage:`Select leaderboard date range`},productFilterLabel:{id:`codex.analytics.leaderboard.productFilterLabel`,defaultMessage:`Filter leaderboard by client`},oneWeek:{id:`codex.analytics.leaderboard.oneWeek`,defaultMessage:`1 week`},thirtyDays:{id:`codex.analytics.leaderboard.thirtyDays`,defaultMessage:`30 days`},productAll:{id:`codex.analytics.leaderboard.productAll`,defaultMessage:`All clients`},productCloud:{id:`codex.analytics.leaderboard.productCloud`,defaultMessage:`Cloud`},productDesktop:{id:`codex.analytics.leaderboard.productDesktop`,defaultMessage:`Desktop`},productCli:{id:`codex.analytics.leaderboard.productCli`,defaultMessage:`CLI`},productExtension:{id:`codex.analytics.leaderboard.productExtension`,defaultMessage:`Extension`},productOther:{id:`codex.analytics.leaderboard.productOther`,defaultMessage:`Other`},errorMessage:{id:`codex.analytics.leaderboard.error`,defaultMessage:`We couldn't load the leaderboard right now.`},retryButton:{id:`codex.analytics.leaderboard.retry`,defaultMessage:`Retry`},emptyMessage:{id:`codex.analytics.leaderboard.empty`,defaultMessage:`No leaderboard activity found for this time range.`},emptySearchMessage:{id:`codex.analytics.leaderboard.emptySearch`,defaultMessage:`No users matched that search.`},paginationSummary:{id:`codex.analytics.leaderboard.paginationSummary.matchingActivity`,defaultMessage:`Showing {start, number}-{end, number} of {total, plural, one {# user} other {# users}} with matching activity`},pageLabel:{id:`codex.analytics.leaderboard.pageLabel`,defaultMessage:`Page`},pageInputAriaLabel:{id:`codex.analytics.leaderboard.pageInputAriaLabel`,defaultMessage:`Go to leaderboard page`},pageCountIndicator:{id:`codex.analytics.leaderboard.pageCountIndicator`,defaultMessage:`/ {count}`},searchInputAriaLabel:{id:`codex.analytics.leaderboard.searchInputAriaLabel`,defaultMessage:`Search leaderboard by name or email`},searchInputPlaceholder:{id:`codex.analytics.leaderboard.searchInputPlaceholder`,defaultMessage:`Search`},metricUnavailable:{id:`codex.analytics.leaderboard.metricUnavailable`,defaultMessage:`-`}})}));function Gr(e,t=window.open.bind(window)){t(e,`_blank`,`noopener,noreferrer`)}function Kr(){return`mx-auto flex w-full max-w-screen-xl flex-col gap-8 ps-4 pe-12`}function qr(){return`flex flex-col gap-8 pb-16`}function Jr(e){return v(`flex flex-col border-b`,e?`border-token-border-light bg-token-bg-primary dark:bg-token-bg-secondary-surface sticky top-0 z-10`:`border-token-border-heavy`)}function Yr({groupBy:e,showAnalyticsRedesign:t}){return t?e===`week`?{id:`codex.analytics.usageSurface.title.weekly.redesign`,defaultMessage:`Active users`,description:`Section title for the users panel on the redesigned Codex analytics Usage tab.`}:{id:`codex.analytics.usageSurface.title.daily.redesign`,defaultMessage:`Active users`,description:`Section title for the users panel on the redesigned Codex analytics Usage tab.`}:{id:`codex.analytics.usageSurface.title`,defaultMessage:`Active users`,description:`Title for the combined usage by app surface analytics panel`}}function Xr(e){return e===`week`?{id:`codex.analytics.codeReviewPanel.reviewsChartTitle.weekly.redesign`,defaultMessage:`Weekly reviews done`,description:`Title for the reviews-done chart on the redesigned Codex analytics Code review tab when grouped by week.`}:{id:`codex.analytics.codeReviewPanel.reviewsChartTitle.daily.redesign`,defaultMessage:`Daily reviews done`,description:`Title for the reviews-done chart on the redesigned Codex analytics Code review tab when grouped by day.`}}function Zr(e){return e===`week`?{id:`codex.analytics.dailycodereviewreactions.chartTitle.weekly.redesign`,defaultMessage:`Weekly code review reactions`,description:`Title for the code review reactions chart on the redesigned Codex analytics Code review tab when grouped by week.`}:{id:`codex.analytics.dailycodereviewreactions.chartTitle.daily.redesign`,defaultMessage:`Daily code review reactions`,description:`Title for the code review reactions chart on the redesigned Codex analytics Code review tab when grouped by day.`}}function Qr(e){return e===`week`?{id:`codex.analytics.dailycodereviewsentiment.chartTitle.weekly.redesign`,defaultMessage:`Weekly code review feedback sentiment`,description:`Title for the code review sentiment chart on the redesigned Codex analytics Code review tab when grouped by week.`}:{id:`codex.analytics.dailycodereviewsentiment.chartTitle.daily.redesign`,defaultMessage:`Daily code review feedback sentiment`,description:`Title for the code review sentiment chart on the redesigned Codex analytics Code review tab when grouped by day.`}}var $r=e((()=>{C()}));function ei(e){"use forget";let t=(0,ti.c)(11),n,r,i,a;t[0]===e?(n=t[1],r=t[2],i=t[3],a=t[4]):({"aria-hidden":n,"aria-label":r,"aria-labelledby":i,...a}=e,t[0]=e,t[1]=n,t[2]=r,t[3]=i,t[4]=a);let o=n??(r||i?void 0:!0),s;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(s={__html:P(ve)},t[5]=s):s=t[5];let c;return t[6]!==r||t[7]!==i||t[8]!==a||t[9]!==o?(c=(0,ni.jsx)(`svg`,{...a,xmlns:`http://www.w3.org/2000/svg`,width:ve.canvas.width,height:ve.canvas.height,viewBox:ve.canvas.viewBox,fill:`currentColor`,"data-rtl-flip":``,"aria-label":r,"aria-labelledby":i,"aria-hidden":o,dangerouslySetInnerHTML:s}),t[6]=r,t[7]=i,t[8]=a,t[9]=o,t[10]=c):c=t[10],c}var ti,ni,ri=e((()=>{ti=ce(),y(),ye(),ni=I()}));function ii(e){"use forget";let t=(0,bi.c)(56),{embeddedInSettings:n,selectedWindowPreset:r,setSelectedWindowPreset:i,selectedGroupBy:a,setSelectedGroupBy:o,selectedDateRange:s,setSelectedDateRange:c,customDateRange:l,setCustomDateRange:u,showCustom:d}=e,f=n!==void 0&&n,p=d===void 0||d,m=le(),h;t[0]===f?h=t[1]:(h={value:`7d`,label:f?(0,X.jsx)(L,{id:`chatgpt.settings.analytics.date_range.seven_days.label`,defaultMessage:`7d`}):(0,X.jsx)(L,{id:`codex.analytics.redesign.window.7d`,defaultMessage:`7D`})},t[0]=f,t[1]=h);let g;t[2]===f?g=t[3]:(g={value:`30d`,label:f?(0,X.jsx)(L,{id:`chatgpt.settings.analytics.date_range.thirty_days.label`,defaultMessage:`30d`}):(0,X.jsx)(L,{id:`codex.analytics.redesign.window.1m`,defaultMessage:`1M`})},t[2]=f,t[3]=g);let _;t[4]!==h||t[5]!==g?(_=[h,g],t[4]=h,t[5]=g,t[6]=_):_=t[6];let y=_,b;t[7]!==u||t[8]!==c||t[9]!==i?(b=e=>{let t=dn(e);i(e),c(t),u(null)},t[7]=u,t[8]=c,t[9]=i,t[10]=b):b=t[10];let x=b;if(f){let[e,n]=y;if(!e||!n)return null;let i;t[11]===m?i=t[12]:(i=m.formatMessage({id:`chatgpt.settings.analytics.date_range.accessible_label`,defaultMessage:`Analytics date range`}),t[11]=m,t[12]=i);let a=r===`30d`?`30d`:`7d`,o;return t[13]!==x||t[14]!==e||t[15]!==i||t[16]!==a||t[17]!==n?(o=(0,X.jsx)(`div`,{className:`flex flex-wrap items-center gap-2`,children:(0,X.jsx)(Ue,{...jt,ariaLabel:i,leftItem:e,onChange:x,rightItem:n,shouldToggleSelected:!1,value:a})}),t[13]=x,t[14]=e,t[15]=i,t[16]=a,t[17]=n,t[18]=o):o=t[18],o}let S;t[19]===i?S=t[20]:(S=e=>{e&&i(`custom`)},t[19]=i,t[20]=S);let C=S,w;t[21]!==u||t[22]!==c||t[23]!==i?(w=e=>{i(`custom`),u(e),c(e)},t[21]=u,t[22]=c,t[23]=i,t[24]=w):w=t[24];let T=w,E=r===`custom`&&l!=null,D=r===`custom`,O;t[25]!==l||t[26]!==s?(O=Vt({customDateRange:l,selectedDateRange:s}),t[25]=l,t[26]=s,t[27]=O):O=t[27];let k;t[28]!==l||t[29]!==m||t[30]!==r||t[31]!==E?(k=E?(0,X.jsxs)(`button`,{type:`button`,className:`bg-token-bg-primary text-token-text-primary flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium shadow-sm transition-colors`,children:[(0,X.jsx)(Ve,{"aria-hidden":!0,className:`icon-sm`}),(0,X.jsx)(`span`,{children:_i(l,m)}),(0,X.jsx)(Re,{"aria-hidden":!0,className:`icon-sm text-token-text-tertiary`})]}):(0,X.jsx)(`button`,{type:`button`,className:v(`text-token-text-secondary rounded-full px-3 py-1 text-xs font-medium transition-colors`,r===`custom`&&`bg-token-bg-primary text-token-text-primary shadow-sm`),children:(0,X.jsx)(L,{id:`codex.analytics.redesign.window.custom`,defaultMessage:`Custom`})}),t[28]=l,t[29]=m,t[30]=r,t[31]=E,t[32]=k):k=t[32];let A;t[33]!==C||t[34]!==T||t[35]!==O||t[36]!==k||t[37]!==D?(A=(0,X.jsx)(oi,{isSelected:D,selectedRange:O,onOpenChange:C,onRangeSelected:T,trigger:k}),t[33]=C,t[34]=T,t[35]=O,t[36]=k,t[37]=D,t[38]=A):A=t[38];let j=A,M=f?`bg-token-bg-tertiary h-8`:`border-token-border-default bg-token-bg-secondary border`,N;t[39]===M?N=t[40]:(N=v(`flex rounded-full p-0.5`,M),t[39]=M,t[40]=N);let ee;t[41]!==x||t[42]!==y||t[43]!==r?(ee=y.map(e=>(0,X.jsx)(`button`,{type:`button`,"aria-pressed":r===e.value,onClick:()=>x(e.value),className:v(`text-token-text-secondary rounded-full px-3 py-1 text-xs font-medium transition-colors`,r===e.value&&`bg-token-bg-primary text-token-text-primary shadow-sm`),children:e.label},e.value)),t[41]=x,t[42]=y,t[43]=r,t[44]=ee):ee=t[44];let P=p?j:null,F;t[45]!==N||t[46]!==ee||t[47]!==P?(F=(0,X.jsxs)(`div`,{className:N,children:[ee,P]}),t[45]=N,t[46]=ee,t[47]=P,t[48]=F):F=t[48];let te;t[49]!==f||t[50]!==a||t[51]!==o?(te=f?null:(0,X.jsx)(ai,{selectedGroupBy:a,setSelectedGroupBy:o}),t[49]=f,t[50]=a,t[51]=o,t[52]=te):te=t[52];let I;return t[53]!==F||t[54]!==te?(I=(0,X.jsxs)(`div`,{className:`flex flex-wrap items-center gap-2`,children:[F,te]}),t[53]=F,t[54]=te,t[55]=I):I=t[55],I}function ai(e){"use forget";let t=(0,bi.c)(15),{selectedGroupBy:n,setSelectedGroupBy:r}=e,i=le(),a;t[0]===r?a=t[1]:(a=e=>{(e===`day`||e===`week`)&&r(e)},t[0]=r,t[1]=a);let o;t[2]===i?o=t[3]:(o=i.formatMessage({id:`codex.analytics.redesign.groupBy.ariaLabel`,defaultMessage:`Group analytics charts by`}),t[2]=i,t[3]=o);let s,c,l;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,X.jsx)(`span`,{className:`text-token-text-secondary`,children:(0,X.jsx)(L,{id:`codex.analytics.redesign.groupBy.label`,defaultMessage:`Group by:`})}),c=(0,X.jsx)(st.Value,{}),l=(0,X.jsx)(st.Icon,{}),t[4]=s,t[5]=c,t[6]=l):(s=t[4],c=t[5],l=t[6]);let u;t[7]===o?u=t[8]:(u=(0,X.jsxs)(st.Trigger,{"aria-label":o,className:`border-token-border-default bg-token-bg-primary text-token-text-primary flex h-7 items-center gap-2 rounded-full border px-3 text-xs font-medium`,children:[s,c,l]}),t[7]=o,t[8]=u);let d;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,X.jsx)(st.Item,{value:`day`,children:(0,X.jsx)(L,{id:`codex.analytics.redesign.groupBy.day`,defaultMessage:`Day`})}),t[9]=d):d=t[9];let f;t[10]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,X.jsx)(st.Portal,{children:(0,X.jsxs)(st.Content,{className:`min-w-[140px]`,children:[d,(0,X.jsx)(st.Item,{value:`week`,children:(0,X.jsx)(L,{id:`codex.analytics.redesign.groupBy.week`,defaultMessage:`Week`})})]})}),t[10]=f):f=t[10];let p;return t[11]!==n||t[12]!==a||t[13]!==u?(p=(0,X.jsxs)(st.Root,{value:n,onValueChange:a,children:[u,f]}),t[11]=n,t[12]=a,t[13]=u,t[14]=p):p=t[14],p}function oi(e){"use forget";let t=(0,bi.c)(23),{isSelected:n,onOpenChange:r,onRangeSelected:i,selectedRange:a,trigger:o}=e,s=le(),[c,u]=(0,xi.useState)(!1),d;t[0]===a?d=t[1]:(d=gi(a),t[0]=a,t[1]=d);let f=d,p;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(p=l(W()),t[2]=p):p=t[2];let m=p,h;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(h=l(Ot()),t[3]=h):h=t[3];let g=h,_;t[4]===r?_=t[5]:(_=e=>{u(e),r(e)},t[4]=r,t[5]=_);let y=_,b=n?`ring-token-border-default ring-1`:void 0,x;t[6]===b?x=t[7]:(x=v(`z-[60] w-[680px] max-w-[calc(100vw-32px)] p-0`,b),t[6]=b,t[7]=x);let S;t[8]===s?S=t[9]:(S=s.formatMessage({id:`codex.analytics.redesign.customRangePicker.ariaLabel`,defaultMessage:`Select custom analytics date range`}),t[8]=s,t[9]=S);let C;t[10]===Symbol.for(`react.memo_cache_sentinel`)?(C={months:2},t[10]=C):C=t[10];let w;t[11]===i?w=t[12]:(w=e=>{let t=hi({end:e.end,start:e.start});i(t),u(!1)},t[11]=i,t[12]=w);let T;t[13]!==f||t[14]!==S||t[15]!==w?(T=(0,X.jsx)(`div`,{className:`p-4`,children:(0,X.jsx)(qe,{"aria-label":S,value:f,minValue:m,maxValue:g,visibleDuration:C,onChange:w,children:Y})}),t[13]=f,t[14]=S,t[15]=w,t[16]=T):T=t[16];let E;return t[17]!==y||t[18]!==c||t[19]!==T||t[20]!==x||t[21]!==o?(E=(0,X.jsx)(fe,{open:c,onOpenChange:y,size:`none`,sideOffset:4,alignAgainstAnchor:`start`,disableAutofocus:!0,triggerButton:o,className:x,children:T}),t[17]=y,t[18]=c,t[19]=T,t[20]=x,t[21]=o,t[22]=E):E=t[22],E}function Y(e){let{state:t}=e,n=t.visibleRange.start,r=n.add({months:1});return(0,X.jsxs)(X.Fragment,{children:[(0,X.jsxs)(`div`,{className:`mb-3 grid grid-cols-[2.25rem_1fr_1fr_2.25rem] items-center gap-x-4`,children:[(0,X.jsx)(Xe,{slot:`previous`,className:`hover:bg-tertiary flex h-9 w-9 items-center justify-center rounded-full`,children:(0,X.jsx)(ei,{"aria-hidden":!0,className:`icon-sm`})}),(0,X.jsx)(si,{date:n}),(0,X.jsx)(si,{date:r}),(0,X.jsx)(Xe,{slot:`next`,className:`hover:bg-tertiary flex h-9 w-9 items-center justify-center rounded-full`,children:(0,X.jsx)(i.ChevronRightSm,{"aria-hidden":!0,className:`icon-sm`})})]}),(0,X.jsxs)(`div`,{className:`grid gap-6 md:grid-cols-2`,children:[(0,X.jsx)(ci,{}),(0,X.jsx)(ci,{offset:{months:1}})]})]})}function si(e){"use forget";let t=(0,bi.c)(6),{date:n}=e,r=le(),i;t[0]!==n.month||t[1]!==n.year||t[2]!==r?(i=r.formatDate(new Date(Date.UTC(n.year,n.month-1)),{month:`long`,timeZone:`UTC`,year:`numeric`}),t[0]=n.month,t[1]=n.year,t[2]=r,t[3]=i):i=t[3];let a;return t[4]===i?a=t[5]:(a=(0,X.jsx)(`div`,{className:`text-center text-sm font-semibold`,children:i}),t[4]=i,t[5]=a),a}function ci(e){"use forget";let t=(0,bi.c)(4),{offset:n}=e,r,i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,X.jsx)(Ke,{children:fi}),i=(0,X.jsx)(z,{children:li}),t[0]=r,t[1]=i):(r=t[0],i=t[1]);let a;return t[2]===n?a=t[3]:(a=(0,X.jsxs)(Je,{offset:n,className:`w-full table-fixed border-separate border-spacing-x-0 border-spacing-y-1`,children:[r,i]}),t[2]=n,t[3]=a),a}function li(e){return(0,X.jsx)(Ye,{date:e,className:di,children:ui})}function ui(e){return(0,X.jsxs)(`div`,{className:mi(e),children:[(0,X.jsx)(`span`,{children:e.formattedDate}),Ht(e)?(0,X.jsx)(`span`,{className:v(`absolute bottom-1.5 h-1 w-1 rounded-full`,e.isSelected?`bg-token-bg-primary`:e.isDisabled?`bg-token-text-tertiary`:`bg-token-text-primary`)}):null]})}function di(e){return pi(e)}function fi(e){return(0,X.jsx)(rt,{className:`text-token-text-tertiary h-9 text-center text-xs font-medium`,children:e})}function pi(e){let t=yi(e.date)===0,n=yi(e.date)===6,r=e.isSelectionStart||e.isSelectionEnd;return v(`relative flex h-10 w-full items-center justify-center outline-none`,Bt(e)&&`invisible pointer-events-none`,e.isOutsideMonth&&`text-token-text-tertiary/50`,e.isDisabled&&`text-token-text-tertiary cursor-not-allowed`,e.isSelected&&`bg-token-bg-secondary`,e.isSelected&&(e.isSelectionStart||t)&&`rounded-s-2xl`,e.isSelected&&(e.isSelectionEnd||n)&&`rounded-e-2xl`,e.isFocusVisible&&!r&&`ring-token-border-default ring-2`)}function mi(e){let t=e.isSelectionStart||e.isSelectionEnd;return v(`relative z-10 flex h-9 w-9 items-center justify-center rounded-full text-sm font-medium transition-colors`,!e.isDisabled&&!e.isSelected&&!e.isOutsideMonth&&e.isHovered&&`bg-token-bg-secondary cursor-pointer`,!e.isSelected&&!e.isDisabled&&!e.isOutsideMonth&&`text-token-text-primary`,e.isSelected&&!t&&`text-token-text-primary`,t&&`bg-token-text-primary text-token-bg-primary`,e.isOutsideMonth&&!e.isSelected&&`text-token-text-tertiary/50`,e.isDisabled&&`text-token-text-tertiary`)}function hi(e){return{endDate:e.end.toString(),startDate:e.start.toString()}}function gi(e){return{end:l(e.endDate),start:l(e.startDate)}}function _i(e,t){return`${vi(e.startDate,t)} - ${vi(e.endDate,t)}`}function vi(e,t){return t.formatDate(new Date(`${e}T00:00:00.000Z`),{day:`2-digit`,month:`2-digit`,timeZone:`UTC`,year:`2-digit`})}function yi(e){return new Date(`${e.toString()}T12:00:00Z`).getUTCDay()}var bi,xi,X,Si=e((()=>{bi=ce(),Ge(),pe(),ct(),Be(),He(),ri(),h(),zt(),u(),C(),xi=n(R()),tt(),se(),X=I()}));function Ci({compact:e=!1,title:t,data:n,seriesOrder:r,seriesColorMap:i,hideHeader:a=!1,legendVariant:o=`default`,showHorizontalGrid:s=!1,xAxisTickCount:c,xAxisTickAlignment:l=`edge`}){"use no forget";let u=le(),d=(0,wi.useMemo)(()=>n===`loading`?`loading`:n.data.map(e=>{let t=r.reduce((t,n)=>t+(e.values?.[n]??0),0),n={date:e.date};return r.forEach(r=>{let i=e.values?.[r]??0;n[r]=t>0?i/t*100:0}),n}),[n,r]),f=(0,wi.useMemo)(()=>r.map((t,r)=>({key:t,displayName:e&&t===`plus1`?u.formatMessage({id:`chatgpt.settings.analytics.code_review.sentiment.positive.label`,defaultMessage:`Positive`}):e&&t===`minus1`?u.formatMessage({id:`chatgpt.settings.analytics.code_review.sentiment.negative.label`,defaultMessage:`Negative`}):e&&t===`other`?u.formatMessage({id:`chatgpt.settings.analytics.code_review.sentiment.other.label`,defaultMessage:`Other`}):n===`loading`?t:n.metrics[t]?.displayName??t,color:i[t]??`hsl(${r*137.5%360}deg 60% 65%)`})),[e,n,u,i,r]),m=(0,wi.useMemo)(()=>Object.fromEntries(f.map(({key:e,displayName:t})=>[e,{displayName:t}])),[f]),[h,g]=(0,wi.useState)(),[_,y]=(0,wi.useState)(),b=o===`codexAnalytics`,x=b&&_&&f.some(({key:e})=>e===_)?_:void 0,S=x??h;if(d===`loading`)return(0,Z.jsxs)(`div`,{className:e?`flex min-h-[160px] flex-col gap-3`:`mb-4 flex min-h-[350px] flex-col pt-4 pb-4`,children:[a?null:(0,Z.jsx)(`div`,{className:`px-6`,children:(0,Z.jsx)(`div`,{className:`text-token-text-secondary text-sm`,children:(0,Z.jsx)(L,{...t})})}),(0,Z.jsx)(Ti,{className:e?`shrink-0 text-xs leading-4`:`text-lg`,style:e?{height:188}:void 0,children:(0,Z.jsx)(p,{})})]});let C=d.some(e=>r.some(t=>{let n=e[t];return typeof n==`number`&&n>0})),w=c&&c>1?Math.max(0,Math.ceil(d.length/c)-1):Math.max(0,d.length-2),T=e?Rt(d):void 0,E=o===`codexAnalytics`,D=t=>{if(l!==`balanced`)return(0,Z.jsx)(ki,{...t});if(e)return(0,Z.jsx)(On,{...t,data:d});let{fill:n,x:r,y:i,payload:a,index:o,tickFormatter:s}=t,c=o===0,u=o===d.length-1;return(0,Z.jsx)(`text`,{x:c?r-10:u?r+10:r,y:i+10,fill:n??`#6E6E80`,textAnchor:c?`start`:u?`end`:`middle`,fontSize:12,fontWeight:400,children:s(a.value)})};return(0,Z.jsxs)(`div`,{className:e?`flex flex-col gap-3`:`mb-4 flex min-h-[350px] flex-col pt-4 pb-4`,children:[a?null:(0,Z.jsx)(`div`,{className:`px-6`,children:(0,Z.jsx)(`div`,{className:`text-token-text-secondary text-sm`,children:(0,Z.jsx)(L,{...t})})}),C?(0,Z.jsx)(`div`,{className:v(In,e?`flex shrink-0 items-center`:`flex grow items-center`),"aria-label":u.formatMessage(t),children:(0,Z.jsx)(yt,{width:`100%`,height:e?160:220,children:(0,Z.jsxs)(Ct,{data:d,margin:e?{left:0,top:8,right:0,bottom:0}:{left:28,top:14,right:22},children:[s?(0,Z.jsx)(bt,{vertical:!1,stroke:e?`var(--text-primary)`:Pn,strokeDasharray:`3 3`,strokeOpacity:e?.1:.2}):null,(0,Z.jsx)(xt,{dataKey:`date`,axisLine:!1,tickLine:!1,tick:D,tickFormatter:e=>Se(ot(String(e)),`MMM d`),ticks:T,interval:e?0:w,minTickGap:e?8:void 0}),(0,Z.jsx)(Et,{includeHidden:!e&&x!=null,cursor:!e&&void 0,content:(0,Z.jsx)(Fn,{highlightedMetricKey:e?void 0:x,valueFormatter:Ai,metricToLabel:m,variant:e?`settingsAnalytics`:`default`,summaryFormatter:e&&x==null?(e,t)=>{let n=t.find(e=>e.name===`plus1`||e.dataKey===`plus1`),r=Array.isArray(n?.value)?n.value[0]:n?.value;return u.formatMessage({id:`chatgpt.settings.analytics.code_review.sentiment.tooltip.summary`,defaultMessage:`{percent}% positive`},{percent:u.formatNumber(Number(r??0),{maximumFractionDigits:0})})}:void 0})}),(0,Z.jsx)(Tt,{domain:[0,100],ticks:[0,100],tickFormatter:e=>`${e}%`,axisLine:!1,tickLine:!1,allowDecimals:!1,width:e?0:34,hide:e,tick:{fontSize:11,fill:Pn}}),f.map(({key:t,color:n})=>{let r=S&&S!==t;return(0,Z.jsx)(St,{type:E?`bump`:`monotone`,dataKey:t,stackId:`1`,stroke:n,activeDot:!e&&void 0,strokeOpacity:r?.35:1,fill:n,fillOpacity:r?.18:E?1:.6,hide:x!=null&&t!==x,isAnimationActive:!1,className:`transition-opacity duration-150`},t)}),e?(0,Z.jsx)(H,{data:d,getSeriesValue:(e,t)=>Number(e[t]??0),series:f.filter(({key:e})=>x==null||e===x)}):null]})})}):(0,Z.jsx)(Ti,{className:e?`shrink-0 text-xs leading-4`:`text-lg`,style:e?{height:160}:void 0,children:(0,Z.jsx)(L,{id:`codex.analytics.percentageStackedAreaChart.noData`,defaultMessage:`No data for this period`})}),(0,Z.jsx)(`div`,{className:v(`flex w-full flex-wrap items-center justify-start`,o===`codexAnalytics`?e?`text-token-text-secondary min-h-4 gap-4 text-xs leading-4`:`text-token-text-secondary gap-4 px-8 text-[12px] sm:justify-center`:`text-token-text-primary gap-x-8 gap-y-1 px-6 text-sm`),children:f.map(({key:e,displayName:t,color:n})=>(0,Z.jsxs)(`button`,{type:`button`,"aria-pressed":b?x===e:void 0,className:v(`interactive-button cursor-pointer`,o===`codexAnalytics`?`-mx-2 -my-1 inline-flex items-center gap-1.5 rounded-full px-2 py-1 transition-[background-color,color,opacity]`:`mb-1 flex items-center`,o===`codexAnalytics`&&(S===e?`bg-token-bg-tertiary text-token-text-primary opacity-100`:S?`hover:text-token-text-primary opacity-35`:`hover:text-token-text-primary opacity-100`)),title:t,onClick:b?()=>y(t=>t===e?void 0:e):void 0,onBlur:()=>g(void 0),onFocus:()=>g(e),onMouseEnter:()=>g(e),onMouseLeave:()=>g(void 0),children:[(0,Z.jsx)(`div`,{className:v(o===`codexAnalytics`?`size-2 shrink-0 rounded-full`:`me-1 h-2 w-2 rounded-[1px]`),style:{backgroundColor:n}}),(0,Z.jsx)(`span`,{className:v(o===`codexAnalytics`?`whitespace-nowrap`:`me-1 max-w-32 overflow-hidden text-ellipsis whitespace-nowrap`),children:t})]},e))})]})}var wi,Z,Ti,Ei,Di,Oi,ki,Ai,ji=e((()=>{F(),Nn(),Ln(),Rn(),Qe(),Pt(),kt(),Wt(),C(),de(),wi=n(R()),se(),wt(),r(),Z=I(),Ti=S.div`flex h-full grow items-center justify-center text-token-text-tertiary`,Ei=new Intl.NumberFormat(void 0,{maximumFractionDigits:0}),Di=0,Oi=10,ki=({x:e,y:t,payload:n,index:r,tickFormatter:i})=>{"use no forget";let a=r===0,o=a?e-Di:e+Di,s=a?`start`:`end`;return(0,Z.jsx)(`text`,{x:o,y:t+Oi,fill:Pn,textAnchor:s,fontSize:12,fontWeight:400,children:i(n.value)})},Ai=(e,t)=>`${Ei.format(Number(e??0))}%`}));function Mi(e,t,n){if(e===`loading`||t===`loading`)return e;let r=new Map(t.data.map(({date:e,total:t})=>[e,t])),i=0,a=e.data.map(e=>{let t=Math.max((r.get(e.date)??0)-e.total,0);return t===0?e:(i+=t,{...e,total:e.total+t,values:{...e.values,other:(e.values.other??0)+t}})});return{...e,data:a,metrics:{...e.metrics,...Object.fromEntries([`p0`,`p1`,`p2`].map(t=>[t,{total:e.metrics[t]?.total??0,displayName:t.toUpperCase()}])),other:{total:(e.metrics.other?.total??0)+(a.length>0?Math.round(i/a.length):0),displayName:e.metrics.other?.displayName??n.formatMessage({id:`chatgpt.settings.analytics.code_review.priority.other.label`,defaultMessage:`Other`})}}}}function Ni(e){"use forget";let t=(0,Ii.c)(84),{presentation:n,issuesFoundChartData:r,issuesFoundSummary:i,priorityChartData:a,reactionsChartData:o,reactionsSummary:s,reviewsDoneChartData:c,reviewsDoneSummary:l}=e,u=le(),[d,f]=(0,Li.useState)(),[p,m]=(0,Li.useState)(),{chartConfig:h,colors:g,formatMetricValue:_,reactionSeriesOrder:v,titles:y}=n,b;t[0]===o?b=t[1]:(b=o===`loading`?void 0:o.data.reduce(Pi,0),t[0]=o,t[1]=b);let x=b,S=x==null||(s?.total??0)<=0?void 0:x/(s?.total??1),C;t[2]!==o||t[3]!==p?(C=o!==`loading`&&p!=null&&o.data.some(e=>{let{values:t}=e;return(t[p]??0)>0})?p:void 0,t[2]=o,t[3]=p,t[4]=C):C=t[4];let w=C,T;if(t[5]!==h||t[6]!==g.reactions||t[7]!==g.single||t[8]!==_||t[9]!==u||t[10]!==r||t[11]!==i||t[12]!==S||t[13]!==a||t[14]!==v||t[15]!==o||t[16]!==s||t[17]!==c||t[18]!==l||t[19]!==d||t[20]!==w||t[21]!==y.issuesFound||t[22]!==y.priority||t[23]!==y.reactions||t[24]!==y.reviewsDone||t[25]!==y.sentiment){let e=o!==`loading`&&w!=null?o.data.reduce((e,t)=>{let{values:n}=t;return e+(n[w]??0)},0):void 0,n,p,b,x,C,E,D,O;if(t[27]!==h||t[28]!==g.single||t[29]!==_||t[30]!==u||t[31]!==r||t[32]!==i||t[33]!==a||t[34]!==c||t[35]!==l||t[36]!==d||t[37]!==y.issuesFound||t[38]!==y.reviewsDone){p=Mi(a,r,u),b=p!==`loading`&&d!=null&&p.data.some(e=>{let{values:t}=e;return(t[d]??0)>0})?d:void 0;let e=p!==`loading`&&b!=null?p.data.reduce((e,t)=>{let{values:n}=t;return e+(n[b]??0)},0):void 0,o;t[47]===g.single?o=t[48]:(o={issuesFound:g.single},t[47]=g.single,t[48]=o);let s;t[49]!==h||t[50]!==r||t[51]!==o?(s=(0,Ri.jsx)(Mt,{compact:!0,data:r,clientEventSource:`codexDailyCodeReviewIssues`,seriesColorMap:o,compactSingleBucketBar:!0,hideHeader:!0,hideLegend:!0,...h}),t[49]=h,t[50]=r,t[51]=o,t[52]=s):s=t[52],t[53]!==_||t[54]!==i||t[55]!==s||t[56]!==y.issuesFound?(D=(0,Ri.jsx)(Fi,{formatMetricValue:_,summary:i,title:y.issuesFound,children:s}),t[53]=_,t[54]=i,t[55]=s,t[56]=y.issuesFound,t[57]=D):D=t[57];let f;t[58]===g.single?f=t[59]:(f={reviewsDone:g.single},t[58]=g.single,t[59]=f);let m;t[60]!==h||t[61]!==c||t[62]!==f?(m=(0,Ri.jsx)(Mt,{compact:!0,data:c,clientEventSource:`codexDailyCodeReviewTasks`,seriesColorMap:f,compactSingleBucketBar:!0,hideHeader:!0,hideLegend:!0,...h}),t[60]=h,t[61]=c,t[62]=f,t[63]=m):m=t[63],t[64]!==_||t[65]!==l||t[66]!==m||t[67]!==y.reviewsDone?(O=(0,Ri.jsx)(Fi,{formatMetricValue:_,summary:l,title:y.reviewsDone,children:m}),t[64]=_,t[65]=l,t[66]=m,t[67]=y.reviewsDone,t[68]=O):O=t[68],n=Fi,x=_,C=i,E=e==null?void 0:u.formatNumber(e),t[27]=h,t[28]=g.single,t[29]=_,t[30]=u,t[31]=r,t[32]=i,t[33]=a,t[34]=c,t[35]=l,t[36]=d,t[37]=y.issuesFound,t[38]=y.reviewsDone,t[39]=n,t[40]=p,t[41]=b,t[42]=x,t[43]=C,t[44]=E,t[45]=D,t[46]=O}else n=t[39],p=t[40],b=t[41],x=t[42],C=t[43],E=t[44],D=t[45],O=t[46];let k;t[69]===Symbol.for(`react.memo_cache_sentinel`)?(k=e=>{f(e),Qt(`code_review_priority`,e)},t[69]=k):k=t[69];let A;t[70]===u?A=t[71]:(A=e=>u.formatMessage({id:`chatgpt.settings.analytics.code_review.priority.tooltip.summary`,defaultMessage:`{issues, number} {issues, plural, one {issue} other {issues}}`},{issues:e}),t[70]=u,t[71]=A);let j;t[72]!==h||t[73]!==p||t[74]!==b||t[75]!==A?(j=(0,Ri.jsx)(Mt,{...h,compact:!0,chartHeight:150,data:p,clientEventSource:`codexDailyCodeReviewPriority`,seriesColorMap:zi,stackOrder:Vi,legendOrder:Bi,tooltipMetricOrder:Bi,selectedSeriesKey:b,onSelectedSeriesChange:k,showLegendTotals:!0,showBarTotals:!0,compactBarRadius:5,xAxisTickCount:3,tooltipSummaryFormatter:A,hideHeader:!0,hideReferenceLine:!0,visualization:`bar`}),t[72]=h,t[73]=p,t[74]=b,t[75]=A,t[76]=j):j=t[76];let M;t[77]!==n||t[78]!==j||t[79]!==x||t[80]!==C||t[81]!==E||t[82]!==y.priority?(M=(0,Ri.jsx)(n,{formatMetricValue:x,summary:C,summaryValue:E,title:y.priority,children:j}),t[77]=n,t[78]=j,t[79]=x,t[80]=C,t[81]=E,t[82]=y.priority,t[83]=M):M=t[83],T=(0,Ri.jsxs)(Ri.Fragment,{children:[D,O,M,o===`loading`||(s?.total??0)>0?(0,Ri.jsxs)(Ri.Fragment,{children:[(0,Ri.jsx)(Fi,{formatMetricValue:_,summary:s,summaryValue:e==null?void 0:u.formatNumber(e),title:y.reactions,children:(0,Ri.jsx)(Mt,{compact:!0,data:o,clientEventSource:`codexDailyCodeReviewReactions`,seriesColorMap:g.reactions,stackOrder:v,legendOrder:v,selectedSeriesKey:w,onSelectedSeriesChange:e=>{m(e),Qt(`code_review_reactions`,e)},tooltipMetricOrder:v,tooltipSummaryFormatter:e=>u.formatMessage({id:`chatgpt.settings.analytics.code_review.reactions.tooltip.summary`,defaultMessage:`{reactions, number} {reactions, plural, one {reaction} other {reactions}}`},{reactions:e}),hideHeader:!0,visualization:`stackedArea`,...h})}),(0,Ri.jsx)(Fi,{formatMetricValue:_,summaryValue:S==null?void 0:u.formatMessage({id:`chatgpt.settings.analytics.code_review.sentiment.chart.summary`,defaultMessage:`{percentage} positive`},{percentage:u.formatNumber(S,{maximumFractionDigits:0,style:`percent`})}),title:y.sentiment,children:(0,Ri.jsx)(Ci,{compact:!0,title:y.sentiment,data:o,seriesOrder:v,seriesColorMap:g.reactions,hideHeader:!0,legendVariant:`codexAnalytics`,showHorizontalGrid:!0,xAxisTickCount:7,xAxisTickAlignment:`balanced`})})]}):null]}),t[5]=h,t[6]=g.reactions,t[7]=g.single,t[8]=_,t[9]=u,t[10]=r,t[11]=i,t[12]=S,t[13]=a,t[14]=v,t[15]=o,t[16]=s,t[17]=c,t[18]=l,t[19]=d,t[20]=w,t[21]=y.issuesFound,t[22]=y.priority,t[23]=y.reactions,t[24]=y.reviewsDone,t[25]=y.sentiment,t[26]=T}else T=t[26];return T}function Pi(e,t){let{values:n}=t;return e+(n.plus1??0)}function Fi(e){"use forget";let t=(0,Ii.c)(14),{children:n,formatMetricValue:r,summary:i,summaryValue:a,title:o}=e,s;t[0]===o?s=t[1]:(s=(0,Ri.jsx)(`div`,{className:`text-token-text-primary text-sm leading-5 font-medium`,children:(0,Ri.jsx)(L,{...o})}),t[0]=o,t[1]=s);let c;t[2]!==r||t[3]!==i||t[4]!==a?(c=a??r(i),t[2]=r,t[3]=i,t[4]=a,t[5]=c):c=t[5];let l;t[6]===c?l=t[7]:(l=(0,Ri.jsx)(`div`,{className:`text-token-text-primary text-lg leading-[26px] font-semibold tabular-nums`,children:c}),t[6]=c,t[7]=l);let u;t[8]!==s||t[9]!==l?(u=(0,Ri.jsxs)(`div`,{className:`flex flex-col gap-0.5`,children:[s,l]}),t[8]=s,t[9]=l,t[10]=u):u=t[10];let d;return t[11]!==n||t[12]!==u?(d=(0,Ri.jsxs)(gn,{children:[u,n]}),t[11]=n,t[12]=u,t[13]=d):d=t[13],d}var Ii,Li,Ri,zi,Bi,Vi,Hi=e((()=>{Ii=ce(),Ft(),ji(),pn(),U(),Li=n(R()),se(),Ri=I(),zi={p0:`light-dark(#dc2626, #fb7185)`,p1:`light-dark(#d97706, #fbbf24)`,p2:`light-dark(#2563eb, #60a5fa)`,other:`light-dark(#73737d, #a1a1aa)`},Bi=[`p0`,`p1`,`p2`,`other`],Vi=[`other`,`p2`,`p1`,`p0`]}));function Ui(e){"use forget";let t=(0,Gi.c)(2),{showLinesOfCode:n}=e,r;return t[0]===n?r=t[1]:(r=n?(0,Ki.jsx)(L,{id:`chatgpt.settings.analytics.product_activity.section.description.turns_and_code`,defaultMessage:`See the number of turns and lines of code across products and models.`}):(0,Ki.jsx)(L,{id:`chatgpt.settings.analytics.product_activity.section.description.turns_only`,defaultMessage:`See the number of turns across products and models.`}),t[0]=n,t[1]=r),r}function Wi(e){"use forget";let t=(0,Gi.c)(2),{showLinesOfCode:n}=e,r;return t[0]===n?r=t[1]:(r=n?(0,Ki.jsx)(L,{id:`chatgpt.settings.analytics.product_activity.empty_state`,defaultMessage:`No turns or lines of code during this period`}):(0,Ki.jsx)(L,{id:`chatgpt.settings.analytics.product_activity.empty_state.turns_only`,defaultMessage:`No turns during this period`}),t[0]=n,t[1]=r),r}var Gi,Ki,qi=e((()=>{Gi=ce(),se(),Ki=I()})),Ji=t({CodexAnalytics:()=>Yi,buildDailyPluginUsageSeriesData:()=>Ia,buildDailySkillUsageSeriesData:()=>Fa});function Yi(e){"use forget";let t=(0,Ra.c)(494),{embeddedInSettings:n,isUpsell:r,showCredits:i}=e===void 0?{}:e,a=n!==void 0&&n,o=r!==void 0&&r,c=i===void 0||i,l=le(),u=te(),d=ae(),f=ne(`/codex/cloud/settings/apireference`),m=a||lt({isUpsell:o}),h=w(),g=mt(),_=_t(),v=gt(),y=ht(),x=h?.planType,S;t[0]===x?S=t[1]:(S=x&&ee(x),t[0]=x,t[1]=S);let C=!!S,T;t[2]===x?T=t[3]:(T=x&&A(x),t[2]=x,t[3]=T);let E=!!T,D=m&&C&&(!a||!E),O=v&&!y,j=v||D,M,N;t[4]===h?(M=t[5],N=t[6]):(N=h?.getWorkspaceId(),M=Hn(N),t[4]=h,t[5]=M,t[6]=N);let P=M,{data:F}=b(N),[I,ie]=(0,Q.useState)(a?`7d`:`30d`),[oe,se]=(0,Q.useState)(()=>dn(a?`7d`:`30d`)),[R,ce]=(0,Q.useState)(null),[ue,de]=(0,Q.useState)(!1),[fe,pe]=(0,Q.useState)(!1),[me,ge]=(0,Q.useState)(`7d`),[_e,ve]=(0,Q.useState)(ua),[ye,be]=(0,Q.useState)(null),[Se,Ce]=(0,Q.useState)(!1),[we,De]=(0,Q.useState)(`7d`),[Oe,ke]=(0,Q.useState)(la),[je,Me]=(0,Q.useState)(null),[Pe,Fe]=(0,Q.useState)(!1),[Ie,Le]=(0,Q.useState)(!1),[Re]=(0,Q.useState)(ca),[ze,Be]=(0,Q.useState)(`30d`),[Ve,He]=(0,Q.useState)(sa),[Ue,We]=(0,Q.useState)(null),[Ge,Ke]=(0,Q.useState)(!1),[z,qe]=(0,Q.useState)(`day`),B=m?oe:void 0,Je=m?{...Ga,...Wa,...a?{visualization:`bar`,limitSettingsToolSeries:!0}:{},summaryLabel:{id:`codex.analytics.dailyskillusage.summaryLabel.redesign`,defaultMessage:`Skills used`,description:`Summary label for the redesigned Codex analytics skills chart.`}}:Ga,Ye=m?{...Ka,...Wa,...a?{visualization:`bar`,limitSettingsToolSeries:!0}:{},summaryLabel:a?re({id:`chatgpt.settings.analytics.tool_activity.plugin_calls.chart.title`,defaultMessage:`Plugin calls`}):{id:`codex.analytics.dailypluginusage.summaryLabel.redesign`,defaultMessage:`Plugins calls`,description:`Summary label for the redesigned Codex analytics plugins chart.`}}:Ka,Xe=m?{...qa,...Wa,hideLegend:!0,visualization:`bar`,summaryLabel:{id:`codex.analytics.dailyLinesOfCode.summaryLabel.redesign`,defaultMessage:`Lines of code`,description:`Summary label for the redesigned Codex analytics lines of code chart.`}}:qa,[Qe,et]=(0,Q.useState)(`totalUsers`),[tt,rt]=(0,Q.useState)(`threads`),[it,at]=(0,Q.useState)(`model`),[ot,st]=(0,Q.useState)(),[ct,ut]=(0,Q.useState)(`issuesFound`),dt=v||D,pt=D,vt=O&&_,yt=h?.data.role!=null&&he(h.data.role),bt=m&&E&&_&&nt(F?.permissions,{hasWorkspaceAdminRole:yt,isCodexAdmin:g}),xt=m&&E&&$e(F?.permissions,{hasWorkspaceAdminRole:yt}),St=m&&O,Ct=!a&&St&&k(`3263801475`),wt=Dn({showAnalyticsRedesign:m,isWorkspacePlan:C,hasWorkspaceAnalyticsAccess:_})&&!Ct,Tt=m&&dt,Et=a?`usage`:At({hash:u.hash,canShowCodeReviewTab:Tt,canShowLeaderboardTab:wt}),Dt=dt&&(a||!m||Et===`codeReview`),Ot=a?Ve:B,kt=m?z:void 0,jt;t[7]!==pt||t[8]!==Dt||t[9]!==Ot||t[10]!==kt?(jt={enabled:Dt,dateRange:Ot,groupBy:kt,workspaceUser:pt},t[7]=pt,t[8]=Dt,t[9]=Ot,t[10]=kt,t[11]=jt):jt=t[11];let V=Ae(jt),Pt=V.isError,Ft=y||m&&C&&Et===`usage`,Rt=Ft?y||D:O,zt=m?z:void 0,Bt;t[12]!==B||t[13]!==Ft||t[14]!==zt?(Bt={dateRange:B,groupBy:zt,workspaceUser:Ft},t[12]=B,t[13]=Ft,t[14]=zt,t[15]=Bt):Bt=t[15];let Vt=Bt,Ht=a?Oe:B,Wt;t[16]!==Vt||t[17]!==Rt||t[18]!==a||t[19]!==Ht?(Wt={...Vt,dateRange:Ht,enabled:Rt,retryTransientErrors:a},t[16]=Vt,t[17]=Rt,t[18]=a,t[19]=Ht,t[20]=Wt):Wt=t[20];let H=Te(Wt),Jt=a?Oe:B,Zt=m&&Rt,$t;t[21]!==Vt||t[22]!==Jt||t[23]!==Zt?($t={...Vt,dateRange:Jt,enabled:Zt},t[21]=Vt,t[22]=Jt,t[23]=Zt,t[24]=$t):$t=t[24];let U=Ee($t),an=Ft?y||D:v,ln;t[25]!==Vt||t[26]!==an?(ln={...Vt,enabled:an},t[25]=Vt,t[26]=an,t[27]=ln):ln=t[27];let W=Ne(ln),pn=m&&D,_n=pn&&(a||Et===`usage`),vn;t[28]!==Vt||t[29]!==_n?(vn={...Vt,enabled:_n},t[28]=Vt,t[29]=_n,t[30]=vn):vn=t[30];let G=xe(vn),bn;t[31]===u.hash?bn=t[32]:(bn=Gt(u.hash),t[31]=u.hash,t[32]=bn);let En=bn,On;t[33]===h?On=t[34]:(On=Bn(h?.getWorkspaceId()),t[33]=h,t[34]=On);let kn=On,An,jn;t[35]!==Et||t[36]!==P||t[37]!==kn||t[38]!==a||t[39]!==u.pathname||t[40]!==u.search||t[41]!==u.state||t[42]!==d||t[43]!==En||t[44]!==m||t[45]!==Ct||t[46]!==St?(An=()=>{if(!(a||!m||En==null)){if(En===`workspaceUsage`&&St){window.location.assign(P);return}if(En===`leaderboard`&&Ct){window.location.assign(kn);return}En!==Et&&d({pathname:u.pathname,search:u.search,hash:En===`workspaceUsage`||En===`personalUsage`?tn(Et):``},{replace:!0,state:u.state})}},jn=[Et,P,a,u.pathname,u.search,u.state,d,En,kn,m,Ct,St],t[35]=Et,t[36]=P,t[37]=kn,t[38]=a,t[39]=u.pathname,t[40]=u.search,t[41]=u.state,t[42]=d,t[43]=En,t[44]=m,t[45]=Ct,t[46]=St,t[47]=An,t[48]=jn):(An=t[47],jn=t[48]),(0,Q.useEffect)(An,jn);let Mn;t[49]===l?Mn=t[50]:(Mn=l.formatMessage(io.p0),t[49]=l,t[50]=Mn);let Nn;t[51]===l?Nn=t[52]:(Nn=l.formatMessage(io.p1),t[51]=l,t[52]=Nn);let Pn;t[53]===l?Pn=t[54]:(Pn=l.formatMessage(io.p2),t[53]=l,t[54]=Pn);let Fn;t[55]!==Mn||t[56]!==Nn||t[57]!==Pn?(Fn={p0:Mn,p1:Nn,p2:Pn},t[55]=Mn,t[56]=Nn,t[57]=Pn,t[58]=Fn):Fn=t[58];let In=Fn,Ln;t[59]===l?Ln=t[60]:(Ln=l.formatMessage(vo.plus1),t[59]=l,t[60]=Ln);let Rn;t[61]===l?Rn=t[62]:(Rn=l.formatMessage(vo.minus1),t[61]=l,t[62]=Rn);let zn;t[63]===l?zn=t[64]:(zn=l.formatMessage(vo.other),t[63]=l,t[64]=zn);let Vn;t[65]!==Ln||t[66]!==Rn||t[67]!==zn?(Vn={plus1:Ln,minus1:Rn,other:zn},t[65]=Ln,t[66]=Rn,t[67]=zn,t[68]=Vn):Vn=t[68];let Un=Vn,Gn;if(t[69]!==Pt||t[70]!==In||t[71]!==V.data||t[72]!==V.isLoading){bb0:{let{chartData:e,isLoading:n}=un({response:V.data,isLoading:V.isLoading,isError:Pt,seriesLabels:In});if(n){Gn=`loading`;break bb0}let r=[`p0`,`p1`,`p2`],i=r.reduce((t,n)=>{let r=e.metrics[n];return r&&(t[n]=r),t},{}),a=e.data.map(e=>{let t={};return r.forEach(n=>{t[n]=e.values[n]??0}),{...e,values:t}}),o;t[74]!==a||t[75]!==i?(o={data:a,metrics:i},t[74]=a,t[75]=i,t[76]=o):o=t[76],Gn=o}t[69]=Pt,t[70]=In,t[71]=V.data,t[72]=V.isLoading,t[73]=Gn}else Gn=t[73];let Kn=Gn,qn;if(t[77]!==Pt||t[78]!==Un||t[79]!==V.data||t[80]!==V.isLoading){bb1:{let{chartData:e,isLoading:n}=en({response:V.data,isLoading:V.isLoading,isError:Pt,seriesLabels:Un});if(n){qn=`loading`;break bb1}let r=bo.reduce((t,n)=>{let r=e.metrics[n];return r&&(t[n]=r),t},{}),i=e.data.map(oa),a;t[82]!==i||t[83]!==r?(a={data:i,metrics:r},t[82]=i,t[83]=r,t[84]=a):a=t[84],qn=a}t[77]=Pt,t[78]=Un,t[79]=V.data,t[80]=V.isLoading,t[81]=qn}else qn=t[81];let Jn=qn,Yn=m?z:void 0,Xn;t[85]!==B||t[86]!==W.data||t[87]!==Yn?(Xn=Xt(W.data,{dateRange:B,groupBy:Yn}),t[85]=B,t[86]=W.data,t[87]=Yn,t[88]=Xn):Xn=t[88];let Zn=Xn,Qn;t[89]!==W.data||t[90]!==l||t[91]!==Zn?(Qn=ro.map(e=>({id:e,color:Ja[e].color,label:l.formatMessage(Ja[e].label),summary:Cn(Zn?.[e],Ut(W.data,e))})),t[89]=W.data,t[90]=l,t[91]=Zn,t[92]=Qn):Qn=t[92];let $n=Qn,er;t[93]!==Qe||t[94]!==$n?(er=$n.find(e=>e.id===Qe)??$n[0],t[93]=Qe,t[94]=$n,t[95]=er):er=t[95];let tr=er,nr;bb2:{if(!tr){nr=`loading`;break bb2}let e=Zn?.[tr.id],n;t[96]!==tr.id||t[97]!==tr.label||t[98]!==W.isError||t[99]!==W.isLoading||t[100]!==e?(n=rn({response:e,isLoading:W.isLoading,isError:W.isError,seriesId:tr.id,displayName:tr.label,aggregation:`average`}),t[96]=tr.id,t[97]=tr.label,t[98]=W.isError,t[99]=W.isLoading,t[100]=e,t[101]=n):n=t[101],nr=n}let rr=nr,ir;bb3:{let e=Zn?.totalUsers?.data;if(!e?.length){ir=void 0;break bb3}let n;t[102]===e?n=t[103]:(n=e.reduce(aa,0),t[102]=e,t[103]=n),ir=n}let K=ir,ar;t[104]===V.data?ar=t[105]:(ar=Nt(V.data),t[104]=V.data,t[105]=ar);let or=ar,sr;bb4:{let e=V.data?.data;if(e==null){sr=void 0;break bb4}let n=e.reduce(ia,0),r=e.length>0?n/e.length:0,i;t[106]!==r||t[107]!==n?(i={total:n,average:r},t[106]=r,t[107]=n,t[108]=i):i=t[108],sr=i}let cr=sr,ur;bb5:{let e;t[109]===l?e=t[110]:(e=Object.fromEntries(Object.entries(Ya).map(e=>{let[t,n]=e;return[t,l.formatMessage(n)]})),t[109]=l,t[110]=e);let n=e;if(!a){ur=n;break bb5}let r;t[111]===l?r=t[112]:(r=l.formatMessage({id:`codex.analytics.dailyproductusageoverview.codexCloudSeriesLabel`,defaultMessage:`Codex Cloud`}),t[111]=l,t[112]=r);let i;t[113]===l?i=t[114]:(i=l.formatMessage({id:`codex.analytics.dailyproductusageoverview.workWebSeriesLabel`,defaultMessage:`Work Web`}),t[113]=l,t[114]=i);let o;t[115]!==n||t[116]!==r||t[117]!==i?(o={...n,web:r,workWeb:i},t[115]=n,t[116]=r,t[117]=i,t[118]=o):o=t[118],ur=o}let dr=ur,fr=V.data,pr;t[119]!==Pt||t[120]!==V.isLoading||t[121]!==l||t[122]!==fr?(pr=rn({response:fr?{data:fr.data.map(ra)}:void 0,isLoading:V.isLoading,isError:Pt,seriesId:`reviewsDone`,displayName:l.formatMessage(co),aggregation:`average`}),t[119]=Pt,t[120]=V.isLoading,t[121]=l,t[122]=fr,t[123]=pr):pr=t[123];let mr=pr,hr=V.data,_r;t[124]!==Pt||t[125]!==V.isLoading||t[126]!==l||t[127]!==hr?(_r=rn({response:hr?{data:hr.data.map(na)}:void 0,isLoading:V.isLoading,isError:Pt,seriesId:`issuesFound`,displayName:l.formatMessage(oo),aggregation:`average`}),t[124]=Pt,t[125]=V.isLoading,t[126]=l,t[127]=hr,t[128]=_r):_r=t[128];let yr=_r,br=m?z:void 0,xr;t[129]!==B||t[130]!==W.data||t[131]!==br?(xr=Lt(W.data,`threads`,{dateRange:B,groupBy:br}),t[129]=B,t[130]=W.data,t[131]=br,t[132]=xr):xr=t[132];let Sr=m?z:void 0,Cr;t[133]!==B||t[134]!==W.data||t[135]!==a||t[136]!==Sr?(Cr=Lt(W.data,`turns`,{dateRange:B,groupBy:Sr,separateWebClients:a}),t[133]=B,t[134]=W.data,t[135]=a,t[136]=Sr,t[137]=Cr):Cr=t[137];let wr;t[138]!==xr||t[139]!==Cr?(wr={threads:xr,turns:Cr},t[138]=xr,t[139]=Cr,t[140]=wr):wr=t[140];let Tr=wr,Er;t[141]===Symbol.for(`react.memo_cache_sentinel`)?(Er=[`threads`,`turns`],t[141]=Er):Er=t[141];let Dr;t[142]!==l||t[143]!==Tr||t[144]!==z||t[145]!==m?(Dr=Er.map(e=>({id:e,color:Xa[e].color,label:l.formatMessage(Xa[e].label),noun:m?l.formatMessage({id:`codex.analytics.productUsage.metricPerInterval.redesign`,defaultMessage:`{metric}/{groupBy, select, week {week} other {day}}`},{groupBy:z,metric:l.formatMessage(Xa[e].label)}):l.formatMessage(Xa[e].noun),summary:Aa(Tr[e])})),t[142]=l,t[143]=Tr,t[144]=z,t[145]=m,t[146]=Dr):Dr=t[146];let Or=Dr,kr;if(t[147]!==a||t[148]!==Tr.turns||t[149]!==dr){let e=a?$a.filter(e=>Tr.turns?.data.some(t=>{let{values:n}=t;return(n[e]??0)>0})):Qa;kr={response:Tr.turns,seriesLabels:a?Object.fromEntries(e.map(e=>[e,dr[e]])):dr,seriesOrder:e},t[147]=a,t[148]=Tr.turns,t[149]=dr,t[150]=kr}else kr=t[150];let Ar=kr,jr;t[151]!==B||t[152]!==W.data||t[153]!==a||t[154]!==z?(jr=Yt(W.data,{dateRange:B,groupBy:z,hideAutoReviewModel:a}),t[151]=B,t[152]=W.data,t[153]=a,t[154]=z,t[155]=jr):jr=t[155];let Mr=jr,Nr=(Mr?.seriesOrder.length??0)>0,Pr=a&&it===`model`&&!Nr?`surface`:it,Fr=Pr===`model`?Mr:Ar,Ir;t[156]!==Fr||t[157]!==W.data||t[158]!==a||t[159]!==l?(Ir=a?qt(Fr,W.data,l):Fr,t[156]=Fr,t[157]=W.data,t[158]=a,t[159]=l,t[160]=Ir):Ir=t[160];let Lr=Ir,Rr;t[161]!==Or||t[162]!==tt?(Rr=Or.find(e=>e.id===tt)??Or[0],t[161]=Or,t[162]=tt,t[163]=Rr):Rr=t[163];let q=Rr,zr=m?Lr?.response:q?Tr[q.id]:void 0,Br=m?Lr?.seriesLabels??eo:dr,Vr=m?Lr?.seriesOrder??to:Qa,Hr;t[164]!==Pr||t[165]!==a||t[166]!==Vr||t[167]!==m?(Hr=m?a?Pr===`model`?yn(Vr):It(Vr):hn(Vr):no,t[164]=Pr,t[165]=a,t[166]=Vr,t[167]=m,t[168]=Hr):Hr=t[168];let Ur=Hr,J;t[169]===zr?J=t[170]:(J=Aa(zr),t[169]=zr,t[170]=J);let Wr=J,$r;bb6:{if(!m&&!q){$r=`loading`;break bb6}let e;t[171]!==W.isError||t[172]!==W.isLoading||t[173]!==zr||t[174]!==Br?(e=Sn({response:zr,isLoading:W.isLoading,isError:W.isError,seriesLabels:Br}),t[171]=W.isError,t[172]=W.isLoading,t[173]=zr,t[174]=Br,t[175]=e):e=t[175];let{chartData:n,isLoading:r}=e;$r=r?`loading`:n}let ei=$r,ti=!m||Et===`usage`,ni=m&&wt&&Et===`leaderboard`,ri=(or?.issuesFound.total??0)>0||(or?.reviewsDone.total??0)>0||(cr?.total??0)>0,ai=(a?ri||Ge||Pt:!m||Et===`codeReview`)&&dt,oi=m?`border-token-border-light flex flex-col gap-6 border-b pb-8`:`bg-token-bg-primary flex flex-col gap-6 rounded-2xl p-6`,Y=m?`border-token-border-light border-b pb-8`:`bg-token-bg-primary rounded-2xl p-6`,si;t[176]!==q||t[177]!==oi||t[178]!==Y||t[179]!==j||t[180]!==vt||t[181]!==l||t[182]!==Or||t[183]!==ei||t[184]!==Ur||t[185]!==Vr||t[186]!==Wr||t[187]!==it||t[188]!==at||t[189]!==rt||t[190]!==m?(si=j?m?(0,$.jsxs)(`div`,{className:Y,children:[(0,$.jsxs)(`div`,{className:`flex flex-wrap items-start justify-between gap-3 px-6`,children:[(0,$.jsxs)(`div`,{children:[(0,$.jsx)(`div`,{className:`text-token-text-primary text-base leading-6 font-medium tracking-[-0.01em]`,children:(0,$.jsx)(L,{id:`codex.analytics.productUsage.turnsSummaryLabel.redesign`,defaultMessage:`Turns`})}),(0,$.jsx)(`div`,{className:`text-token-text-primary mt-1 text-3xl leading-9 font-normal tabular-nums`,children:Ta(Wr)})]}),(0,$.jsx)(Kt,{activeBreakdown:it,ariaLabel:l.formatMessage({id:`codex.analytics.productUsage.breakdown.label.redesign`,defaultMessage:`Turns breakdown`}),onBreakdownChange:at})]}),(0,$.jsx)(Mt,{data:ei,clientEventSource:Xa.turns.clientEventSource,seriesColorMap:Ur,forceStack:!0,compactSingleBucketBar:!0,stackOrder:Vr,legendOrder:Vr,tooltipMetricOrder:Vr,hideHeader:!0,legendVariant:`codexAnalytics`,...Ua})]}):(0,$.jsxs)(`div`,{className:oi,children:[(0,$.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,$.jsx)(`h2`,{className:`text-token-text-primary text-lg font-medium`,children:(0,$.jsx)(L,{id:`codex.analytics.productUsage.title`,defaultMessage:`Product activity`})}),(0,$.jsx)(`p`,{className:`text-token-text-secondary max-w-4xl text-sm leading-6`,children:(0,$.jsx)(L,{id:`codex.analytics.productUsage.subtitle`,defaultMessage:`Track threads and turns by client`})})]}),(0,$.jsx)(`div`,{className:`flex flex-wrap gap-3`,children:Or.map(e=>(0,$.jsx)(Sa,{className:`w-full md:w-[280px] md:flex-none`,isActive:e.id===q?.id,onClick:()=>rt(e.id),subtitle:Ea({intl:l,noun:e.noun,summary:e.summary}),title:e.label,value:Ta(e.summary)},e.id))}),(0,$.jsx)(Mt,{title:(0,$.jsx)(`span`,{className:`text-token-text-primary text-base font-semibold`,children:q?(0,$.jsx)(L,{...Xa[q.id].chartTitle}):null}),data:ei,clientEventSource:q?Xa[q.id].clientEventSource:Xa.threads.clientEventSource,seriesColorMap:Ur,forceStack:!0,compactSingleBucketBar:m,stackOrder:Vr,legendOrder:Vr,tooltipMetricOrder:Vr}),vt?(0,$.jsx)(vr,{}):null]}):null,t[176]=q,t[177]=oi,t[178]=Y,t[179]=j,t[180]=vt,t[181]=l,t[182]=Or,t[183]=ei,t[184]=Ur,t[185]=Vr,t[186]=Wr,t[187]=it,t[188]=at,t[189]=rt,t[190]=m,t[191]=si):si=t[191];let ci=si,li;t[192]!==B||t[193]!==Y||t[194]!==Rt||t[195]!==U||t[196]!==Ye||t[197]!==z||t[198]!==m?(li=Rt&&m?(0,$.jsx)(`div`,{className:Y,children:(0,$.jsx)(lr,{query:U,config:Ye,dateRange:B,groupBy:z,wrapperClassName:`mt-0`})}):null,t[192]=B,t[193]=Y,t[194]=Rt,t[195]=U,t[196]=Ye,t[197]=z,t[198]=m,t[199]=li):li=t[199];let ui=li,di;t[200]!==B||t[201]!==Y||t[202]!==pn||t[203]!==G||t[204]!==Xe||t[205]!==z||t[206]!==m?(di=pn&&m?(0,$.jsx)(`div`,{className:Y,children:(0,$.jsx)(lr,{query:G,config:Xe,dateRange:B,groupBy:z,wrapperClassName:`mt-0`})}):null,t[200]=B,t[201]=Y,t[202]=pn,t[203]=G,t[204]=Xe,t[205]=z,t[206]=m,t[207]=di):di=t[207];let fi=di,pi;t[208]!==B||t[209]!==Y||t[210]!==Rt||t[211]!==H||t[212]!==z||t[213]!==m||t[214]!==Je?(pi=Rt&&m?(0,$.jsx)(`div`,{className:Y,children:(0,$.jsx)(lr,{query:H,config:Je,dateRange:B,groupBy:z,wrapperClassName:`mt-0`})}):null,t[208]=B,t[209]=Y,t[210]=Rt,t[211]=H,t[212]=z,t[213]=m,t[214]=Je,t[215]=pi):pi=t[215];let mi=pi;if(a){let e,n,r,i,a,o,s,u,d,f,h;if(t[216]!==pn||t[217]!==j||t[218]!==Rt||t[219]!==G.data?.data||t[220]!==G.isError||t[221]!==G.isLoading||t[222]!==G.isSuccess||t[223]!==U.data?.data||t[224]!==U.isError||t[225]!==U.isLoading||t[226]!==U.isSuccess||t[227]!==H.data?.data||t[228]!==H.isError||t[229]!==H.isLoading||t[230]!==H.isSuccess||t[231]!==W.data?.data||t[232]!==W.isError||t[233]!==W.isLoading||t[234]!==W.isSuccess||t[235]!==ue||t[236]!==Pe||t[237]!==fe||t[238]!==Ie||t[239]!==l||t[240]!==ei||t[241]!==Wr||t[242]!==ot||t[243]!==I||t[244]!==we){let c=W.data?.data.reduce(ta,0)??0,p;t[256]===G.data?.data?p=t[257]:(p=G.data?.data.some(ea)??!1,t[256]=G.data?.data,t[257]=p),n=p,i=c>0||(Wr?.total??0)>0||n,u=W.isLoading||pn&&G.isLoading,a=W.isError||pn&&G.isError;let m;t[258]===U.data?.data?m=t[259]:(m=U.data?.data.some(Qi)??!1,t[258]=U.data?.data,t[259]=m),r=m;let g;t[260]===H.data?.data?g=t[261]:(g=H.data?.data.some(Xi)??!1,t[260]=H.data?.data,t[261]=g),o=g,d=U.isLoading||H.isLoading,s=U.isError||H.isError,f=j&&I===`7d`&&!ue&&!fe&&W.isSuccess&&(!pn||G.isSuccess)&&!i&&!a,h=Rt&&we===`7d`&&!Pe&&!Ie&&U.isSuccess&&H.isSuccess&&!r&&!o&&!s;let _=ot!=null&&ei!==`loading`&&Object.hasOwn(ei.metrics,ot)?ei.data.reduce((e,t)=>{let{values:n}=t;return e+(n[ot]??0)},0):void 0;e=c>(Wr?.total??0)?l.formatNumber(c):Ta(Wr),_!=null&&(e=l.formatNumber(_)),t[216]=pn,t[217]=j,t[218]=Rt,t[219]=G.data?.data,t[220]=G.isError,t[221]=G.isLoading,t[222]=G.isSuccess,t[223]=U.data?.data,t[224]=U.isError,t[225]=U.isLoading,t[226]=U.isSuccess,t[227]=H.data?.data,t[228]=H.isError,t[229]=H.isLoading,t[230]=H.isSuccess,t[231]=W.data?.data,t[232]=W.isError,t[233]=W.isLoading,t[234]=W.isSuccess,t[235]=ue,t[236]=Pe,t[237]=fe,t[238]=Ie,t[239]=l,t[240]=ei,t[241]=Wr,t[242]=ot,t[243]=I,t[244]=we,t[245]=e,t[246]=n,t[247]=r,t[248]=i,t[249]=a,t[250]=o,t[251]=s,t[252]=u,t[253]=d,t[254]=f,t[255]=h}else e=t[245],n=t[246],r=t[247],i=t[248],a=t[249],o=t[250],s=t[251],u=t[252],d=t[253],f=t[254],h=t[255];let g;t[262]!==pn||t[263]!==j||t[264]!==G||t[265]!==W?(g=j?(0,$.jsx)(on,{chart:`product_activity`,queries:[W,...pn?[G]:[]]}):null,t[262]=pn,t[263]=j,t[264]=G,t[265]=W,t[266]=g):g=t[266];let _;t[267]!==Rt||t[268]!==U||t[269]!==H||t[270]!==m?(_=Rt?(0,$.jsx)(on,{chart:`tool_activity`,queries:[H,...m?[U]:[]]}):null,t[267]=Rt,t[268]=U,t[269]=H,t[270]=m,t[271]=_):_=t[271];let v;t[272]!==dt||t[273]!==V?(v=dt?(0,$.jsx)(on,{chart:`code_review`,queries:[V]}):null,t[272]=dt,t[273]=V,t[274]=v):v=t[274];let b;t[275]===Symbol.for(`react.memo_cache_sentinel`)?(b=(0,$.jsx)(`header`,{className:`border-token-border-light flex flex-col border-b pt-1 pb-3`,children:(0,$.jsx)(`h1`,{className:`text-token-text-primary text-lg leading-7 font-normal tracking-[-0.025em]`,children:(0,$.jsx)(L,{id:`chatgpt.settings.analytics.page.title`,defaultMessage:`Analytics`})})}),t[275]=b):b=t[275];let x=!Se,S;t[276]!==Re||t[277]!==ve||t[278]!==ge?(S=()=>{ge(`30d`),ve(Re)},t[276]=Re,t[277]=ve,t[278]=ge,t[279]=S):S=t[279];let C;t[280]!==Ce||t[281]!==ge?(C=e=>{Ce(!0),ge(e),sn(`usage_history`,e)},t[280]=Ce,t[281]=ge,t[282]=C):C=t[282];let w;t[283]!==z||t[284]!==qe||t[285]!==be||t[286]!==ve||t[287]!==C||t[288]!==ye||t[289]!==_e||t[290]!==me?(w=(0,$.jsx)(ii,{embeddedInSettings:!0,selectedWindowPreset:me,setSelectedWindowPreset:C,selectedGroupBy:z,setSelectedGroupBy:qe,selectedDateRange:_e,setSelectedDateRange:ve,customDateRange:ye,setCustomDateRange:be,showCustom:!1}),t[283]=z,t[284]=qe,t[285]=be,t[286]=ve,t[287]=C,t[288]=ye,t[289]=_e,t[290]=me,t[291]=w):w=t[291];let T;t[292]!==D||t[293]!==z||t[294]!==c||t[295]!==x||t[296]!==S||t[297]!==w||t[298]!==_e||t[299]!==me?(T=(0,$.jsx)(wn,{allowAutoDateRangeFallback:x,dateRange:_e,embeddedInSettings:!0,groupBy:z,hideLocalTimeframeFilters:!0,onAutoSelectThirtyDays:S,selectedWindowPreset:me,settingsTimeWindowControls:w,showSettingsCredits:c,showWorkspaceUsage:!1,useTokenAreaChart:D,workspaceUser:D}),t[292]=D,t[293]=z,t[294]=c,t[295]=x,t[296]=S,t[297]=w,t[298]=_e,t[299]=me,t[300]=T):T=t[300];let E;t[301]!==pn||t[302]!==j||t[303]!==G||t[304]!==R||t[305]!==W.isError||t[306]!==Pr||t[307]!==Re||t[308]!==e||t[309]!==n||t[310]!==i||t[311]!==a||t[312]!==Nr||t[313]!==l||t[314]!==u||t[315]!==Xe||t[316]!==ei||t[317]!==Ur||t[318]!==Vr||t[319]!==oe||t[320]!==z||t[321]!==ot||t[322]!==I||t[323]!==ce||t[324]!==de||t[325]!==pe||t[326]!==se||t[327]!==qe||t[328]!==at||t[329]!==st||t[330]!==ie||t[331]!==f||t[332]!==Ft?(E=j?(0,$.jsxs)(`section`,{className:`flex min-w-0 flex-col gap-4`,children:[f?(0,$.jsx)(ma,{includeCodeAttribution:pn,dateRange:Re,groupBy:z,setHasResolvedFallback:pe,setSelectedDateRange:se,setSelectedWindowPreset:ie,workspaceUser:Ft}):null,(0,$.jsx)(nn,{title:(0,$.jsx)(L,{id:`chatgpt.settings.analytics.product_activity.section.title`,defaultMessage:`Product activity`}),description:(0,$.jsx)(Ui,{showLinesOfCode:pn})}),(0,$.jsxs)(`div`,{className:`flex flex-wrap items-center gap-2`,children:[(0,$.jsx)(ii,{embeddedInSettings:!0,selectedWindowPreset:I,setSelectedWindowPreset:e=>{de(!0),st(void 0),ie(e),sn(`product_activity`,e)},selectedGroupBy:z,setSelectedGroupBy:qe,selectedDateRange:oe,setSelectedDateRange:se,customDateRange:R,setCustomDateRange:ce,showCustom:!1}),Nr?(0,$.jsx)(Kt,{activeBreakdown:Pr,ariaLabel:l.formatMessage({id:`codex.analytics.productUsage.breakdown.label.redesign`,defaultMessage:`Turns breakdown`}),compact:!0,onBreakdownChange:e=>{st(void 0),at(e),cn(`product_activity`,e,`surface`)}}):null]}),i||a?(0,$.jsxs)($.Fragment,{children:[(0,$.jsxs)(gn,{children:[(0,$.jsxs)(`div`,{className:`flex flex-col gap-0.5`,children:[(0,$.jsx)(`div`,{className:`text-token-text-primary text-sm leading-5 font-medium`,children:(0,$.jsx)(L,{id:`codex.analytics.productUsage.turnsSummaryLabel.redesign`,defaultMessage:`Turns`})}),(0,$.jsx)(`div`,{className:`text-token-text-primary text-lg leading-[26px] font-semibold tabular-nums`,children:e})]}),W.isError?(0,$.jsx)(`p`,{className:`text-sm text-red-600 dark:text-red-400`,children:(0,$.jsx)(L,{...Ga.errorMessage})}):(0,$.jsx)(Mt,{compact:!0,data:ei,clientEventSource:Xa.turns.clientEventSource,seriesColorMap:Ur,forceStack:!0,compactSingleBucketBar:!0,stackOrder:Vr,legendOrder:Vr,onSelectedSeriesChange:e=>{st(e),Qt(`product_activity`,e)},selectedSeriesKey:ot,tooltipMetricOrder:Vr,tooltipSummaryFormatter:e=>l.formatMessage({id:`chatgpt.settings.analytics.product_activity.turns.tooltip.summary`,defaultMessage:`{turns, number} {turns, plural, one {turn} other {turns}}`},{turns:e}),hideHeader:!0,hideEmptySeries:!0,legendVariant:`codexAnalytics`,...Ua})]}),pn&&(n||G.isError)?(0,$.jsx)(gn,{children:(0,$.jsx)(lr,{compact:!0,query:G,config:Xe,dateRange:oe,groupBy:z,wrapperClassName:`mt-0`})}):null]}):(0,$.jsx)(xn,{children:u||f?(0,$.jsx)(p,{className:`icon-sm`}):(0,$.jsx)(Wi,{showLinesOfCode:pn})})]}):null,t[301]=pn,t[302]=j,t[303]=G,t[304]=R,t[305]=W.isError,t[306]=Pr,t[307]=Re,t[308]=e,t[309]=n,t[310]=i,t[311]=a,t[312]=Nr,t[313]=l,t[314]=u,t[315]=Xe,t[316]=ei,t[317]=Ur,t[318]=Vr,t[319]=oe,t[320]=z,t[321]=ot,t[322]=I,t[323]=ce,t[324]=de,t[325]=pe,t[326]=se,t[327]=qe,t[328]=at,t[329]=st,t[330]=ie,t[331]=f,t[332]=Ft,t[333]=E):E=t[333];let O;t[334]!==Rt||t[335]!==U||t[336]!==H||t[337]!==Re||t[338]!==r||t[339]!==o||t[340]!==s||t[341]!==l||t[342]!==d||t[343]!==Ye||t[344]!==z||t[345]!==Fe||t[346]!==Le||t[347]!==qe||t[348]!==Me||t[349]!==ke||t[350]!==De||t[351]!==h||t[352]!==Ft||t[353]!==Je||t[354]!==je||t[355]!==Oe||t[356]!==we?(O=Rt?(0,$.jsxs)(`section`,{className:`flex min-w-0 flex-col gap-4`,children:[h?(0,$.jsx)(_a,{dateRange:Re,groupBy:z,setHasResolvedFallback:Le,setSelectedDateRange:ke,setSelectedWindowPreset:De,workspaceUser:Ft}):null,(0,$.jsx)(nn,{title:(0,$.jsx)(L,{id:`chatgpt.settings.analytics.tool_activity.section.title`,defaultMessage:`Tool activity`}),description:(0,$.jsx)(L,{id:`chatgpt.settings.analytics.tool_activity.section.description`,defaultMessage:`See which plugins and skills you used over time.`})}),(0,$.jsx)(ii,{embeddedInSettings:!0,selectedWindowPreset:we,setSelectedWindowPreset:e=>{Fe(!0),De(e),sn(`tool_activity`,e)},selectedGroupBy:z,setSelectedGroupBy:qe,selectedDateRange:Oe,setSelectedDateRange:ke,customDateRange:je,setCustomDateRange:Me,showCustom:!1}),r||o||s?(0,$.jsxs)($.Fragment,{children:[r||U.isError?(0,$.jsx)(gn,{children:(0,$.jsx)(lr,{compact:!0,query:U,config:Ye,dateRange:Oe,groupBy:z,wrapperClassName:`mt-0`,tooltipSummaryFormatter:e=>l.formatMessage({id:`chatgpt.settings.analytics.tool_activity.plugin_calls.tooltip.summary`,defaultMessage:`{calls, number} {calls, plural, one {plugin call} other {plugin calls}}`},{calls:e})})}):null,o||H.isError?(0,$.jsx)(gn,{children:(0,$.jsx)(lr,{compact:!0,query:H,config:Je,dateRange:Oe,groupBy:z,wrapperClassName:`mt-0`,tooltipSummaryFormatter:e=>l.formatMessage({id:`chatgpt.settings.analytics.tool_activity.skills.tooltip.summary`,defaultMessage:`{skills, number} {skills, plural, one {skill invocation} other {skill invocations}}`},{skills:e})})}):null]}):(0,$.jsx)(xn,{children:d||h?(0,$.jsx)(p,{className:`icon-sm`}):(0,$.jsx)(L,{id:`chatgpt.settings.analytics.tool_activity.empty_state`,defaultMessage:`No plugin calls or skills used during this period`})})]}):null,t[334]=Rt,t[335]=U,t[336]=H,t[337]=Re,t[338]=r,t[339]=o,t[340]=s,t[341]=l,t[342]=d,t[343]=Ye,t[344]=z,t[345]=Fe,t[346]=Le,t[347]=qe,t[348]=Me,t[349]=ke,t[350]=De,t[351]=h,t[352]=Ft,t[353]=Je,t[354]=je,t[355]=Oe,t[356]=we,t[357]=O):O=t[357];let k;t[358]!==y||t[359]!==D||t[360]!==oe||t[361]!==z?(k=D||y?(0,$.jsx)(fn,{dateRange:oe,groupBy:z,workspaceUser:D}):null,t[358]=y,t[359]=D,t[360]=oe,t[361]=z,t[362]=k):k=t[362];let A;t[363]!==Pt||t[364]!==yr||t[365]!==Kn||t[366]!==Jn||t[367]!==cr||t[368]!==mr||t[369]!==or?.issuesFound||t[370]!==or?.reviewsDone||t[371]!==V.isLoading||t[372]!==ri||t[373]!==l||t[374]!==Ue||t[375]!==Ve||t[376]!==ze||t[377]!==z||t[378]!==Ke||t[379]!==We||t[380]!==He||t[381]!==Be||t[382]!==qe||t[383]!==ai?(A=ai?(0,$.jsxs)(`section`,{className:`flex min-w-0 flex-col gap-4`,children:[(0,$.jsx)(nn,{title:(0,$.jsx)(L,{id:`chatgpt.settings.analytics.code_review.section.title`,defaultMessage:`Code review`}),description:(0,$.jsx)(L,{id:`chatgpt.settings.analytics.code_review.section.description`,defaultMessage:`Issues found, pull requests reviewed, issue priorities, and reactions.`})}),(0,$.jsx)(ii,{embeddedInSettings:!0,selectedWindowPreset:ze,setSelectedWindowPreset:e=>{Be(e),sn(`code_review`,e)},selectedGroupBy:z,setSelectedGroupBy:qe,selectedDateRange:Ve,setSelectedDateRange:e=>{ri&&Ke(!0),He(e)},customDateRange:Ue,setCustomDateRange:We,showCustom:!1}),ri||V.isLoading?(0,$.jsx)(Ni,{presentation:{chartConfig:So,colors:{priority:ao,reactions:yo,single:xo},formatMetricValue:Ta,reactionSeriesOrder:bo,titles:{issuesFound:oo,priority:uo,reactions:po,reviewsDone:co,sentiment:ho}},issuesFoundChartData:yr,issuesFoundSummary:or?.issuesFound,priorityChartData:Kn,reactionsChartData:Jn,reactionsSummary:cr,reviewsDoneChartData:mr,reviewsDoneSummary:or?.reviewsDone}):(0,$.jsx)(xn,{children:Pt?l.formatMessage(Ga.errorMessage):(0,$.jsx)(L,{id:`chatgpt.settings.analytics.code_review.empty_state`,defaultMessage:`No code review activity during this period`})})]}):null,t[363]=Pt,t[364]=yr,t[365]=Kn,t[366]=Jn,t[367]=cr,t[368]=mr,t[369]=or?.issuesFound,t[370]=or?.reviewsDone,t[371]=V.isLoading,t[372]=ri,t[373]=l,t[374]=Ue,t[375]=Ve,t[376]=ze,t[377]=z,t[378]=Ke,t[379]=We,t[380]=He,t[381]=Be,t[382]=qe,t[383]=ai,t[384]=A):A=t[384];let M;return t[385]!==g||t[386]!==_||t[387]!==v||t[388]!==T||t[389]!==E||t[390]!==O||t[391]!==k||t[392]!==A?(M=(0,$.jsxs)(`div`,{className:`flex min-w-0 flex-col gap-6 pt-4 pb-8`,children:[g,_,v,b,T,E,O,k,A]}),t[385]=g,t[386]=_,t[387]=v,t[388]=T,t[389]=E,t[390]=O,t[391]=k,t[392]=A,t[393]=M):M=t[393],M}let hi=!o,gi=!o,_i;t[394]!==Et||t[395]!==u.hash?(_i=!s(u.hash)&&(0,$.jsx)(Ze,{activeTab:Et}),t[394]=Et,t[395]=u.hash,t[396]=_i):_i=t[396];let vi;t[397]===Symbol.for(`react.memo_cache_sentinel`)?(vi=Kr(),t[397]=vi):vi=t[397];let yi;t[398]===m?yi=t[399]:(yi=Jr(m),t[398]=m,t[399]=yi);let bi;t[400]===Symbol.for(`react.memo_cache_sentinel`)?(bi=(0,$.jsx)(`h1`,{className:`text-token-text-primary py-2 text-xl leading-7 font-medium`,children:(0,$.jsx)(L,{id:`codex.analytics.title.codexAndWork`,defaultMessage:`Codex and Work Analytics`})}),t[400]=bi):bi=t[400];let xi;t[401]!==f||t[402]!==R||t[403]!==oe||t[404]!==z||t[405]!==I||t[406]!==ce||t[407]!==se||t[408]!==qe||t[409]!==ie||t[410]!==m||t[411]!==O?(xi=m?(0,$.jsxs)(`div`,{className:`flex flex-wrap items-center gap-2`,children:[(0,$.jsx)(ii,{selectedWindowPreset:I,setSelectedWindowPreset:ie,selectedGroupBy:z,setSelectedGroupBy:qe,selectedDateRange:oe,setSelectedDateRange:se,customDateRange:R,setCustomDateRange:ce}),O?(0,$.jsx)(fa,{onClick:()=>Gr(f),children:(0,$.jsx)(L,{id:`wham.settingsSidebar.analyticsApiReference.compact`,defaultMessage:`API reference`})}):null]}):null,t[401]=f,t[402]=R,t[403]=oe,t[404]=z,t[405]=I,t[406]=ce,t[407]=se,t[408]=qe,t[409]=ie,t[410]=m,t[411]=O,t[412]=xi):xi=t[412];let X;t[413]===xi?X=t[414]:(X=(0,$.jsxs)(`div`,{className:`flex flex-wrap items-center justify-between gap-4`,children:[bi,xi]}),t[413]=xi,t[414]=X);let Si;t[415]!==Et||t[416]!==P||t[417]!==kn||t[418]!==Tt||t[419]!==wt||t[420]!==C||t[421]!==u||t[422]!==d||t[423]!==m||t[424]!==Ct||t[425]!==St?(Si=m?(0,$.jsx)(da,{activeTab:Et,leaderboardAdminUrl:kn,workspaceUsageAdminUrl:P,isWorkspacePlan:C,showCodeReviewTab:Tt,showLeaderboardAdminLink:Ct,showLeaderboardTab:wt,showWorkspaceUsageAdminLink:St,onChange:e=>{let t=tn(e);if(u.hash===t)return;let{to:n,state:r}=Tn(u,e);d(n,{replace:!0,state:r})}}):null,t[415]=Et,t[416]=P,t[417]=kn,t[418]=Tt,t[419]=wt,t[420]=C,t[421]=u,t[422]=d,t[423]=m,t[424]=Ct,t[425]=St,t[426]=Si):Si=t[426];let wi;t[427]!==yi||t[428]!==X||t[429]!==Si?(wi=(0,$.jsxs)(`header`,{className:yi,children:[X,Si]}),t[427]=yi,t[428]=X,t[429]=Si,t[430]=wi):wi=t[430];let Z;t[431]===Symbol.for(`react.memo_cache_sentinel`)?(Z=qr(),t[431]=Z):Z=t[431];let Ti;t[432]!==tr||t[433]!==oi||t[434]!==B||t[435]!==Y||t[436]!==xt||t[437]!==bt||t[438]!==y||t[439]!==D||t[440]!==l||t[441]!==fi||t[442]!==ui||t[443]!==ci||t[444]!==z||t[445]!==et||t[446]!==m||t[447]!==ti||t[448]!==O||t[449]!==mi||t[450]!==$n||t[451]!==rr||t[452]!==K?(Ti=ti?(0,$.jsxs)(`section`,{className:`flex flex-col gap-6`,children:[m?(0,$.jsxs)($.Fragment,{children:[(0,$.jsx)(mn,{className:Y,enableAutoTopOffPaymentMethodWarning:!0}),(0,$.jsx)(`div`,{className:Y,children:(0,$.jsx)(wn,{dateRange:B,groupBy:z,hideLocalTimeframeFilters:!0,personalAgentUsageSection:xt?(0,$.jsx)(Wn,{scope:`personal`,dateRange:B,groupBy:z}):void 0,showWorkspaceUsage:!1,useTokenAreaChart:!0,workspaceUser:D})}),(0,$.jsx)(pa,{className:Y})]}):null,!m&&O?(0,$.jsxs)(`div`,{className:oi,children:[(0,$.jsx)(`div`,{className:`flex flex-col gap-2`,children:(0,$.jsx)(`h3`,{className:`text-token-text-primary text-lg font-medium`,children:(0,$.jsx)(L,{...Yr({groupBy:z,showAnalyticsRedesign:m})})})}),(0,$.jsx)(`div`,{className:`grid gap-3 lg:grid-cols-6`,children:$n.map(e=>(0,$.jsx)(Sa,{accentColor:e.color,isActive:e.id===tr?.id,onClick:()=>et(e.id),subtitle:m?void 0:Da({intl:l,summary:e.summary,isAbsoluteUsers:e.id===`totalUsers`}),title:e.label,value:Ta(e.summary)},e.id))}),(0,$.jsx)(Mt,{title:(0,$.jsx)(`span`,{className:`text-token-text-primary text-base font-semibold`,children:tr?tr.id===`totalUsers`?m?z===`week`?(0,$.jsx)(L,{id:`codex.analytics.usageSurface.chartTitle.absoluteUsers.weekly.redesign`,defaultMessage:`Weekly Active Users`}):(0,$.jsx)(L,{id:`codex.analytics.usageSurface.chartTitle.absoluteUsers.daily.redesign`,defaultMessage:`Daily Active Users`}):(0,$.jsx)(L,{id:`codex.analytics.usageSurface.chartTitle.absoluteUsers`,defaultMessage:`Daily users (past 30 days)`}):m?z===`week`?(0,$.jsx)(L,{id:`codex.analytics.usageSurface.chartTitle.surfaceUsers.weekly.redesign`,defaultMessage:`Weekly {surface} users`,values:{surface:tr.label}}):(0,$.jsx)(L,{id:`codex.analytics.usageSurface.chartTitle.surfaceUsers.daily.redesign`,defaultMessage:`Daily {surface} users`,values:{surface:tr.label}}):(0,$.jsx)(L,{id:`codex.analytics.usageSurface.chartTitle.surfaceUsers`,defaultMessage:`Daily {surface} users (past 30 days)`,values:{surface:tr.label}}):null}),description:m&&tr.summary?(0,$.jsx)(L,{id:`codex.analytics.usageSurface.chartSubtitle.averageUsers.redesign`,defaultMessage:`Avg {average} users per {groupBy, select, week {week} other {day}}`,values:{average:wo.format(tr.summary.average),groupBy:z}}):void 0,data:rr,clientEventSource:`codexDailyUsageByAppSurface`,hideLegend:!0,hideReferenceLine:!m,compactSingleBucketBar:m,yAxisMax:K,seriesColorMap:tr?{[tr.id]:tr.color}:void 0})]}):null,m?null:(0,$.jsx)(`div`,{className:Y,children:(0,$.jsx)(wn,{personalAgentUsageSection:xt?(0,$.jsx)(Wn,{scope:`personal`,dateRange:B,groupBy:z}):void 0,showWorkspaceUsage:!0,workspaceAgentUsageSection:bt?(0,$.jsx)(Wn,{scope:`workspace`,dateRange:B,groupBy:z}):void 0})}),m?y||D?(0,$.jsxs)($.Fragment,{children:[ci,fi,ui,mi]}):null:(0,$.jsxs)($.Fragment,{children:[ci,ui,mi]})]}):null,t[432]=tr,t[433]=oi,t[434]=B,t[435]=Y,t[436]=xt,t[437]=bt,t[438]=y,t[439]=D,t[440]=l,t[441]=fi,t[442]=ui,t[443]=ci,t[444]=z,t[445]=et,t[446]=m,t[447]=ti,t[448]=O,t[449]=mi,t[450]=$n,t[451]=rr,t[452]=K,t[453]=Ti):Ti=t[453];let Ei;t[454]!==B||t[455]!==vt||t[456]!==ni?(Ei=ni?(0,$.jsx)(`section`,{className:`flex flex-1 flex-col`,children:vt?(0,$.jsx)(vr,{dateRange:B}):(0,$.jsx)(`article`,{className:`border-token-border-subtle bg-token-bg-primary rounded-2xl border p-6`,children:(0,$.jsx)(`p`,{className:`text-token-text-secondary text-sm`,children:(0,$.jsx)(L,{id:`codex.analytics.leaderboard.redesignUnavailable`,defaultMessage:`Leaderboard is not available for this workspace.`})})})}):null,t[454]=B,t[455]=vt,t[456]=ni,t[457]=Ei):Ei=t[457];let Di;t[458]!==oi||t[459]!==Y||t[460]!==dt||t[461]!==yr||t[462]!==Kn||t[463]!==Jn||t[464]!==cr||t[465]!==mr||t[466]!==or||t[467]!==l||t[468]!==ct||t[469]!==z||t[470]!==ut||t[471]!==m||t[472]!==ai?(Di=dt&&ai?(0,$.jsx)(`section`,{className:m?`flex flex-col`:`flex flex-col gap-6`,children:m?(0,$.jsxs)($.Fragment,{children:[(0,$.jsxs)(`div`,{className:`grid grid-cols-1 lg:grid-cols-2`,children:[(0,$.jsx)(wa,{className:`border-token-border-light min-h-[384px] border-b lg:border-e`,infoTooltip:so,showSummary:!0,summary:or?.issuesFound,title:oo,children:(0,$.jsx)(Mt,{data:yr,clientEventSource:`codexDailyCodeReviewIssues`,seriesColorMap:{issuesFound:xo},compactSingleBucketBar:!0,hideHeader:!0,hideLegend:!0,...So})}),(0,$.jsx)(wa,{className:`border-token-border-light min-h-[384px] border-b`,infoTooltip:lo,showSummary:!0,summary:or?.reviewsDone,title:co,children:(0,$.jsx)(Mt,{data:mr,clientEventSource:`codexDailyCodeReviewTasks`,seriesColorMap:{reviewsDone:xo},compactSingleBucketBar:!0,hideHeader:!0,hideLegend:!0,...So})})]}),(0,$.jsx)(wa,{className:`border-token-border-light min-h-[384px] border-b`,infoTooltip:fo,title:uo,children:(0,$.jsx)(Mt,{data:Kn,clientEventSource:`codexDailyCodeReviewPriority`,seriesColorMap:ao,stackOrder:[`p0`,`p1`,`p2`],legendOrder:[`p0`,`p1`,`p2`],tooltipMetricOrder:[`p0`,`p1`,`p2`],tooltipShowZeroMetrics:!0,hideHeader:!0,visualization:`stackedArea`,...So})}),(0,$.jsxs)(`div`,{className:`grid grid-cols-1 lg:grid-cols-2`,children:[(0,$.jsx)(wa,{className:`border-token-border-light min-h-[384px] border-b lg:border-e lg:border-b-0`,infoTooltip:mo,showSummary:!0,summary:cr,title:po,children:(0,$.jsx)(Mt,{data:Jn,clientEventSource:`codexDailyCodeReviewReactions`,seriesColorMap:yo,stackOrder:bo,legendOrder:bo,tooltipMetricOrder:bo,hideHeader:!0,visualization:`stackedArea`,...So})}),(0,$.jsx)(wa,{className:`min-h-[384px]`,infoTooltip:go,title:ho,children:(0,$.jsx)(Ci,{title:ho,data:Jn,seriesOrder:bo,seriesColorMap:yo,hideHeader:!0,legendVariant:`codexAnalytics`,showHorizontalGrid:!0,xAxisTickCount:7,xAxisTickAlignment:`balanced`})})]})]}):(0,$.jsxs)($.Fragment,{children:[(0,$.jsxs)(`div`,{className:oi,children:[m?null:(0,$.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,$.jsx)(`h3`,{className:`text-token-text-primary text-lg font-medium`,children:(0,$.jsx)(L,{id:`codex.analytics.codeReviewPanel.title`,defaultMessage:`Code review`})}),(0,$.jsx)(`p`,{className:`text-token-text-secondary max-w-4xl text-sm leading-6`,children:(0,$.jsx)(L,{id:`codex.analytics.codeReviewPanel.subtitle`,defaultMessage:`Track issues found and review throughput`})})]}),m?(0,$.jsxs)(`div`,{className:`grid gap-3 md:grid-cols-2`,children:[(0,$.jsx)(Ca,{isActive:ct===`issuesFound`,label:(0,$.jsx)(L,{id:`codex.analytics.codeReviewPanel.numberOfIssues`,defaultMessage:`Number of issues`}),onClick:()=>ut(`issuesFound`),value:Ta(or?.issuesFound)}),(0,$.jsx)(Ca,{isActive:ct===`reviewsDone`,label:(0,$.jsx)(L,{id:`codex.analytics.codeReviewPanel.numberOfPrReviewed`,defaultMessage:`Number of PR reviewed`}),onClick:()=>ut(`reviewsDone`),value:Ta(or?.reviewsDone)})]}):(0,$.jsxs)(`div`,{className:`flex flex-wrap items-stretch gap-3`,children:[(0,$.jsx)(Sa,{isActive:ct===`issuesFound`,onClick:()=>ut(`issuesFound`),className:`h-full w-full md:min-h-[196px] md:w-[280px] md:flex-none`,subtitle:Oa({intl:l,summary:or}),title:l.formatMessage({id:`codex.analytics.codeReviewPanel.issuesFound`,defaultMessage:`issues found`}),value:Ta(or?.issuesFound)}),(0,$.jsx)(Sa,{isActive:ct===`reviewsDone`,onClick:()=>ut(`reviewsDone`),className:`h-full w-full md:min-h-[196px] md:w-[280px] md:flex-none`,subtitle:Ea({intl:l,noun:l.formatMessage({id:`codex.analytics.codeReviewPanel.reviewsPerDay`,defaultMessage:`reviews/day`}),summary:or?.reviewsDone}),title:l.formatMessage({id:`codex.analytics.codeReviewPanel.reviewsDone`,defaultMessage:`reviews done`}),value:Ta(or?.reviewsDone)})]}),ct===`issuesFound`?(0,$.jsx)(Mt,{title:(0,$.jsx)(`span`,{className:`text-token-text-primary text-base font-semibold`,children:m?(0,$.jsx)(L,{id:`codex.analytics.dailycodereviewpriority.chartTitle.redesign`,defaultMessage:`Issues found by priority`}):(0,$.jsx)(L,{id:`codex.analytics.dailycodereviewpriority.chartTitle`,defaultMessage:`Issues found by priority (past 30 days)`})}),data:Kn,clientEventSource:`codexDailyCodeReviewPriority`,seriesColorMap:ao,forceStack:!0,compactSingleBucketBar:m,stackOrder:[`p2`,`p1`,`p0`],legendOrder:[`p0`,`p1`,`p2`],tooltipShowZeroMetrics:!0,hideReferenceLine:!0}):(0,$.jsx)(Mt,{title:(0,$.jsx)(`span`,{className:`text-token-text-primary text-base font-semibold`,children:m?(0,$.jsx)(L,{...Xr(z)}):(0,$.jsx)(L,{id:`codex.analytics.codeReviewPanel.reviewsChartTitle`,defaultMessage:`Daily reviews done (past 30 days)`})}),data:mr,clientEventSource:`codexDailyCodeReviewTasks`,hideLegend:!0,hideReferenceLine:!0,compactSingleBucketBar:m,seriesColorMap:{reviewsDone:gr.totalUsers}})]}),(0,$.jsx)(`div`,{className:Y,children:(0,$.jsxs)(`div`,{className:`grid gap-6 xl:grid-cols-2`,children:[(0,$.jsx)(Mt,{title:(0,$.jsx)(`span`,{className:`text-token-text-primary text-base font-normal`,children:m?(0,$.jsx)(L,{...Zr(z)}):(0,$.jsx)(L,{id:`codex.analytics.dailycodereviewreactions.chartTitle`,defaultMessage:`Daily code review reactions (past 30 days)`})}),data:Jn,clientEventSource:`codexDailyCodeReviewReactions`,seriesColorMap:yo,forceStack:m,compactSingleBucketBar:m,stackOrder:bo,legendOrder:bo}),(0,$.jsx)(Ci,{title:m?Qr(z):_o,data:Jn,seriesOrder:bo,seriesColorMap:yo})]})})]})}):null,t[458]=oi,t[459]=Y,t[460]=dt,t[461]=yr,t[462]=Kn,t[463]=Jn,t[464]=cr,t[465]=mr,t[466]=or,t[467]=l,t[468]=ct,t[469]=z,t[470]=ut,t[471]=m,t[472]=ai,t[473]=Di):Di=t[473];let Oi;t[474]!==Y||t[475]!==Rt||t[476]!==H||t[477]!==m||t[478]!==Je?(Oi=Rt&&!m?(0,$.jsx)(`section`,{children:(0,$.jsxs)(`div`,{className:Y,children:[(0,$.jsx)(`h2`,{className:`text-token-text-primary text-lg font-medium`,children:(0,$.jsx)(L,{id:`codex.analytics.sections.skills`,defaultMessage:`Skills`})}),(0,$.jsx)(lr,{query:H,config:Je})]})}):null,t[474]=Y,t[475]=Rt,t[476]=H,t[477]=m,t[478]=Je,t[479]=Oi):Oi=t[479];let ki;t[480]!==Ti||t[481]!==Ei||t[482]!==Di||t[483]!==Oi?(ki=(0,$.jsxs)(`div`,{className:Z,children:[Ti,Ei,Di,Oi]}),t[480]=Ti,t[481]=Ei,t[482]=Di,t[483]=Oi,t[484]=ki):ki=t[484];let Ai;t[485]!==wi||t[486]!==ki?(Ai=(0,$.jsxs)(`div`,{className:vi,children:[wi,ki]}),t[485]=wi,t[486]=ki,t[487]=Ai):Ai=t[487];let ji;return t[488]!==o||t[489]!==hi||t[490]!==gi||t[491]!==_i||t[492]!==Ai?(ji=(0,$.jsxs)(ft,{footerSpacePx:0,fillContentHeight:!1,topPadding:!0,showSidebar:hi,canShowAlert:gi,hideHeaderNotificationBell:o,hideHeaderSettings:o,children:[_i,Ai]}),t[488]=o,t[489]=hi,t[490]=gi,t[491]=_i,t[492]=Ai,t[493]=ji):ji=t[493],ji}function Xi(e){let{skill_usage_overviews:t}=e;return t.some(Zi)}function Zi(e){let{invocation_counts:t}=e;return t>0}function Qi(e){let{plugin_usage_overviews:t}=e;return t.some($i)}function $i(e){let{invocation_counts:t}=e;return t>0}function ea(e){let{code_attribution:t}=e,{lines_of_code:n}=t;return(n.added??0)>0}function ta(e,t){let{totals:n}=t;return e+(n.turns??0)}function na(e){return{date:e.date,value:e.n_comments??0}}function ra(e){return{date:e.date,value:e.n_reviews??0}}function ia(e,t){return e+(t.n_reactions??0)}function aa(e,t){return Math.max(e,t.value??0)}function oa(e){let t={};return bo.forEach(n=>{t[n]=e.values[n]??0}),{...e,values:t}}function sa(){return dn(`30d`)}function ca(){return dn(`30d`)}function la(){return dn(`7d`)}function ua(){return dn(`7d`)}function da(e){"use forget";let t=(0,Ra.c)(36),{activeTab:n,leaderboardAdminUrl:r,workspaceUsageAdminUrl:a,isWorkspacePlan:o,showCodeReviewTab:s,showLeaderboardAdminLink:c,showLeaderboardTab:l,showWorkspaceUsageAdminLink:u,onChange:d}=e,f=le(),p,m,h;if(t[0]!==o||t[1]!==r||t[2]!==s||t[3]!==c||t[4]!==l||t[5]!==u||t[6]!==a){m=[];let e;t[10]===o?e=t[11]:(e={id:`usage`,label:o?(0,$.jsx)(L,{id:`codex.analytics.redesign.tabs.personalUsage`,defaultMessage:`Personal usage`}):(0,$.jsx)(L,{id:`codex.analytics.redesign.tabs.usage`,defaultMessage:`Usage`})},t[10]=o,t[11]=e),m.push(e);let n;t[12]!==u||t[13]!==a?(n=u?(0,$.jsxs)(be,{href:a,className:`text-token-text-tertiary hover:text-token-text-secondary inline-flex items-center gap-1 py-2 text-sm font-normal transition-colors`,children:[(0,$.jsx)(L,{id:`codex.analytics.redesign.tabs.workspaceUsage`,defaultMessage:`Workspace usage`}),(0,$.jsx)(i.ArrowTopRightSm,{"aria-hidden":!0,className:`icon-sm`,"data-testid":`workspace-usage-admin-link-icon`})]}):null,t[12]=u,t[13]=a,t[14]=n):n=t[14],h=n;let d;if(t[15]!==r||t[16]!==c?(d=c?(0,$.jsxs)(be,{href:r,className:`text-token-text-tertiary hover:text-token-text-secondary inline-flex items-center gap-1 py-2 text-sm font-normal transition-colors`,children:[(0,$.jsx)(L,{id:`codex.analytics.redesign.tabs.leaderboardAdminLink`,defaultMessage:`Leaderboard`}),(0,$.jsx)(i.ArrowTopRightSm,{"aria-hidden":!0,className:`icon-sm`,"data-testid":`leaderboard-admin-link-icon`})]}):null,t[15]=r,t[16]=c,t[17]=d):d=t[17],p=d,s){let e;t[18]===Symbol.for(`react.memo_cache_sentinel`)?(e={id:`codeReview`,label:(0,$.jsx)(L,{id:`codex.analytics.redesign.tabs.codeReview`,defaultMessage:`Code review`}),tooltip:{id:`codex.analytics.redesign.tabs.codeReviewTooltip`,defaultMessage:`Personal code review metrics during the selected period`,description:`Tooltip shown on the redesigned Codex analytics Code review tab for personal analytics.`}},t[18]=e):e=t[18],m.push(e)}if(l){let e;t[19]===Symbol.for(`react.memo_cache_sentinel`)?(e={id:`leaderboard`,label:(0,$.jsx)(L,{id:`codex.analytics.redesign.tabs.leaderboard`,defaultMessage:`Leaderboard`})},t[19]=e):e=t[19],m.push(e)}t[0]=o,t[1]=r,t[2]=s,t[3]=c,t[4]=l,t[5]=u,t[6]=a,t[7]=p,t[8]=m,t[9]=h}else p=t[7],m=t[8],h=t[9];let g;t[20]!==n||t[21]!==d||t[22]!==m?(g=m.map(e=>{let t=(0,$.jsxs)(`button`,{type:`button`,onClick:()=>d(e.id),className:v(`text-token-text-tertiary hover:text-token-text-secondary relative py-2 text-sm font-normal transition-colors`,n===e.id&&`text-token-text-primary font-medium`),"aria-pressed":n===e.id,children:[e.label,n===e.id?(0,$.jsx)(`span`,{"aria-hidden":!0,className:`bg-token-text-primary absolute inset-x-0 bottom-0 h-0.5 rounded-full`}):null]},e.id);return e.tooltip?(0,$.jsx)(_,{triggerAs:null,label:(0,$.jsx)(L,{...e.tooltip}),side:`top`,narrow:!0,children:t},e.id):t}),t[20]=n,t[21]=d,t[22]=m,t[23]=g):g=t[23];let y=g,b=s?2:1,x;t[24]!==p||t[25]!==b||t[26]!==c||t[27]!==u||t[28]!==y||t[29]!==h?(x=u||c?(0,$.jsxs)($.Fragment,{children:[y.slice(0,b),h,p,y.slice(b)]}):y,t[24]=p,t[25]=b,t[26]=c,t[27]=u,t[28]=y,t[29]=h,t[30]=x):x=t[30];let S=x,C;t[31]===f?C=t[32]:(C=f.formatMessage({id:`codex.analytics.redesign.tabs.ariaLabel.codexAndWork`,defaultMessage:`Codex and Work Analytics tabs`}),t[31]=f,t[32]=C);let w;return t[33]!==C||t[34]!==S?(w=(0,$.jsx)(`nav`,{className:`mt-3 flex flex-wrap gap-5`,"aria-label":C,children:S}),t[33]=C,t[34]=S,t[35]=w):w=t[35],w}function fa(e){"use forget";let t=(0,Ra.c)(3),{children:n,onClick:r}=e,i;return t[0]!==n||t[1]!==r?(i=(0,$.jsx)(`button`,{type:`button`,onClick:r,className:`border-token-border-default bg-token-bg-primary text-token-text-secondary hover:bg-token-bg-secondary hover:text-token-text-primary inline-flex h-7 shrink-0 items-center justify-center gap-1.5 rounded-full border px-2.5 text-xs leading-none font-medium whitespace-nowrap transition-colors`,children:n}),t[0]=n,t[1]=r,t[2]=i):i=t[2],i}function pa(e){"use forget";let t=(0,Ra.c)(6),{className:n}=e,r=et(),i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i={poll:!0},t[0]=i):i=t[0];let{data:a}=_e(i);if(!(r===We.enabled||a?.credits?.balance!=null))return null;let o=a??null,s;t[1]===o?s=t[2]:(s=(0,$.jsx)(ln,{rateLimit:o}),t[1]=o,t[2]=s);let c;return t[3]!==n||t[4]!==s?(c=(0,$.jsx)(`div`,{className:n,children:s}),t[3]=n,t[4]=s,t[5]=c):c=t[5],c}function ma(e){"use forget";let t=(0,Ra.c)(27),{dateRange:n,groupBy:r,includeCodeAttribution:i,setHasResolvedFallback:a,setSelectedDateRange:o,setSelectedWindowPreset:s,workspaceUser:c}=e,l;t[0]!==n||t[1]!==r||t[2]!==c?(l={dateRange:n,enabled:!0,groupBy:r,workspaceUser:c},t[0]=n,t[1]=r,t[2]=c,t[3]=l):l=t[3];let u=Ne(l),d;t[4]===u.data?.data?d=t[5]:(d=u.data?.data.some(ga)??!1,t[4]=u.data?.data,t[5]=d);let f=d,p=i&&u.isSuccess&&!f,m;t[6]!==n||t[7]!==r||t[8]!==p||t[9]!==c?(m={dateRange:n,enabled:p,groupBy:r,workspaceUser:c},t[6]=n,t[7]=r,t[8]=p,t[9]=c,t[10]=m):m=t[10];let h=xe(m),g;t[11]!==h.data?.data||t[12]!==p?(g=p&&(h.data?.data.some(ha)??!1),t[11]=h.data?.data,t[12]=p,t[13]=g):g=t[13];let _=g,v,y;return t[14]!==h.isError||t[15]!==h.isSuccess||t[16]!==n||t[17]!==_||t[18]!==f||t[19]!==u.isError||t[20]!==u.isSuccess||t[21]!==a||t[22]!==o||t[23]!==s||t[24]!==p?(v=()=>{if(u.isError||p&&h.isError){a(!0);return}!u.isSuccess||p&&!h.isSuccess||(a(!0),(f||_)&&(s(`30d`),o(n)))},y=[h.isError,h.isSuccess,n,_,f,u.isError,u.isSuccess,p,a,o,s],t[14]=h.isError,t[15]=h.isSuccess,t[16]=n,t[17]=_,t[18]=f,t[19]=u.isError,t[20]=u.isSuccess,t[21]=a,t[22]=o,t[23]=s,t[24]=p,t[25]=v,t[26]=y):(v=t[25],y=t[26]),(0,Q.useEffect)(v,y),null}function ha(e){let{code_attribution:t}=e,{lines_of_code:n}=t;return(n.added??0)>0}function ga(e){let{totals:t}=e;return(t.turns??0)>0}function _a(e){"use forget";let t=(0,Ra.c)(24),{dateRange:n,groupBy:r,setHasResolvedFallback:i,setSelectedDateRange:a,setSelectedWindowPreset:o,workspaceUser:s}=e,c;t[0]!==n||t[1]!==r||t[2]!==s?(c={dateRange:n,enabled:!0,groupBy:r,workspaceUser:s},t[0]=n,t[1]=r,t[2]=s,t[3]=c):c=t[3];let l=Ee(c),u;t[4]!==n||t[5]!==r||t[6]!==s?(u={dateRange:n,enabled:!0,groupBy:r,retryTransientErrors:!0,workspaceUser:s},t[4]=n,t[5]=r,t[6]=s,t[7]=u):u=t[7];let d=Te(u),f;t[8]!==l.data?.data||t[9]!==l.isSuccess||t[10]!==d.data?.data||t[11]!==d.isSuccess?(f=l.isSuccess&&(l.data?.data.some(ba)??!1)||d.isSuccess&&(d.data?.data.some(va)??!1),t[8]=l.data?.data,t[9]=l.isSuccess,t[10]=d.data?.data,t[11]=d.isSuccess,t[12]=f):f=t[12];let p=f,m,h;return t[13]!==n||t[14]!==p||t[15]!==l.isError||t[16]!==l.isSuccess||t[17]!==i||t[18]!==a||t[19]!==o||t[20]!==d.isError||t[21]!==d.isSuccess?(m=()=>{if(p){i(!0),o(`30d`),a(n);return}!l.isSuccess&&!l.isError||!d.isSuccess&&!d.isError||i(!0)},h=[n,p,l.isError,l.isSuccess,i,a,o,d.isError,d.isSuccess],t[13]=n,t[14]=p,t[15]=l.isError,t[16]=l.isSuccess,t[17]=i,t[18]=a,t[19]=o,t[20]=d.isError,t[21]=d.isSuccess,t[22]=m,t[23]=h):(m=t[22],h=t[23]),(0,Q.useEffect)(m,h),null}function va(e){let{skill_usage_overviews:t}=e;return t.some(ya)}function ya(e){let{invocation_counts:t}=e;return t>0}function ba(e){let{plugin_usage_overviews:t}=e;return t.some(xa)}function xa(e){let{invocation_counts:t}=e;return t>0}function Sa(e){"use forget";let t=(0,Ra.c)(21),{accentColor:n,className:r,isActive:i,onClick:a,subtitle:o,title:s,value:c}=e,l=i&&`bg-token-bg-tertiary shadow-sm`,u;t[0]!==r||t[1]!==l?(u=v(`bg-token-bg-secondary hover:bg-token-bg-tertiary flex min-w-0 appearance-none flex-col items-start justify-start rounded-lg border border-transparent p-3 text-start transition-colors`,r,l),t[0]=r,t[1]=l,t[2]=u):u=t[2];let d;t[3]===n?d=t[4]:(d=n?(0,$.jsx)(`div`,{className:`mb-4 h-1.5 w-10 rounded-full`,style:{backgroundColor:n}}):null,t[3]=n,t[4]=d);let f;t[5]===c?f=t[6]:(f=(0,$.jsx)(`span`,{className:`text-lg font-semibold tabular-nums sm:text-xl`,children:c}),t[5]=c,t[6]=f);let p;t[7]===s?p=t[8]:(p=(0,$.jsx)(`span`,{className:`min-w-0 text-sm leading-5 font-normal break-words`,children:s}),t[7]=s,t[8]=p);let m;t[9]!==f||t[10]!==p?(m=(0,$.jsxs)(`div`,{className:`text-token-text-primary flex min-w-0 flex-wrap items-baseline gap-x-2 gap-y-1`,children:[f,p]}),t[9]=f,t[10]=p,t[11]=m):m=t[11];let h;t[12]===o?h=t[13]:(h=o?(0,$.jsx)(`div`,{className:`text-token-text-secondary mt-2 text-xs leading-5 break-words whitespace-pre-line`,children:o}):null,t[12]=o,t[13]=h);let g;return t[14]!==i||t[15]!==a||t[16]!==u||t[17]!==d||t[18]!==m||t[19]!==h?(g=(0,$.jsxs)(`button`,{type:`button`,onClick:a,className:u,"aria-pressed":i,children:[d,m,h]}),t[14]=i,t[15]=a,t[16]=u,t[17]=d,t[18]=m,t[19]=h,t[20]=g):g=t[20],g}function Ca(e){"use forget";let t=(0,Ra.c)(12),{isActive:n,label:r,onClick:i,value:a}=e,o=n&&`border-token-border-heavy bg-token-bg-secondary`,s;t[0]===o?s=t[1]:(s=v(`border-token-border-light hover:bg-token-bg-secondary flex min-h-[112px] flex-col items-start justify-between rounded-xl border p-4 text-start transition-colors`,o),t[0]=o,t[1]=s);let c;t[2]===r?c=t[3]:(c=(0,$.jsx)(`span`,{className:`text-token-text-primary text-xs font-normal`,children:r}),t[2]=r,t[3]=c);let l;t[4]===a?l=t[5]:(l=(0,$.jsx)(`span`,{className:`flex items-center gap-2`,children:(0,$.jsx)(`span`,{className:`text-token-text-primary text-2xl leading-8 font-normal tabular-nums`,children:a})}),t[4]=a,t[5]=l);let u;return t[6]!==n||t[7]!==i||t[8]!==s||t[9]!==c||t[10]!==l?(u=(0,$.jsxs)(`button`,{type:`button`,onClick:i,className:s,"aria-pressed":n,children:[c,l]}),t[6]=n,t[7]=i,t[8]=s,t[9]=c,t[10]=l,t[11]=u):u=t[11],u}function wa(e){"use forget";let t=(0,Ra.c)(28),{children:n,className:r,infoTooltip:i,showSummary:a,summary:o,title:s}=e,c=a!==void 0&&a,l=le(),u;t[0]===r?u=t[1]:(u=v(`flex flex-col pb-8`,r),t[0]=r,t[1]=u);let d;t[2]===s?d=t[3]:(d=(0,$.jsx)(L,{...s}),t[2]=s,t[3]=d);let f;t[4]===i?f=t[5]:(f=(0,$.jsx)(L,{...i}),t[4]=i,t[5]=f);let p;t[6]!==l||t[7]!==s?(p=l.formatMessage({id:`codex.analytics.codeReviewPanel.chartInfoLabel.redesign`,defaultMessage:`More information about {title}`},{title:l.formatMessage(s)}),t[6]=l,t[7]=s,t[8]=p):p=t[8];let m;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,$.jsx)(x,{className:`icon-xs`,"aria-hidden":`true`}),t[9]=m):m=t[9];let h;t[10]===p?h=t[11]:(h=(0,$.jsx)(`button`,{type:`button`,"aria-label":p,className:`text-token-text-tertiary hover:text-token-text-primary flex items-center rounded-sm transition-colors`,children:m}),t[10]=p,t[11]=h);let g;t[12]!==f||t[13]!==h?(g=(0,$.jsx)(_,{triggerAs:null,label:f,side:`top`,narrow:!0,children:h}),t[12]=f,t[13]=h,t[14]=g):g=t[14];let y;t[15]!==d||t[16]!==g?(y=(0,$.jsxs)(`div`,{className:`text-token-text-primary flex items-center gap-1 text-base leading-6 font-medium tracking-[-0.01em]`,children:[d,g]}),t[15]=d,t[16]=g,t[17]=y):y=t[17];let b;t[18]!==c||t[19]!==o?(b=c?(0,$.jsx)(`div`,{className:`text-token-text-primary mt-1 text-3xl leading-9 font-normal tabular-nums`,children:Ta(o)}):null,t[18]=c,t[19]=o,t[20]=b):b=t[20];let S;t[21]!==b||t[22]!==y?(S=(0,$.jsxs)(`div`,{className:`px-6 pt-6`,children:[y,b]}),t[21]=b,t[22]=y,t[23]=S):S=t[23];let C;return t[24]!==n||t[25]!==S||t[26]!==u?(C=(0,$.jsxs)(`div`,{className:u,children:[S,n]}),t[24]=n,t[25]=S,t[26]=u,t[27]=C):C=t[27],C}function Ta(e,t){if(!e)return`—`;let n=t?.usePeakValue&&`peakValue`in e?e.peakValue:e.total;return Co.format(Math.round(n))}function Ea({intl:e,noun:t,summary:n}){return n?e.formatMessage({id:`codex.analytics.metricSummary.subtitle`,defaultMessage:`Avg {average} {noun}`},{average:wo.format(n.average),noun:t}):e.formatMessage({id:`codex.analytics.metricSummary.pending`,defaultMessage:`Loading the latest 30-day trend.`})}function Da({intl:e,summary:t,isAbsoluteUsers:n}){return n?t?e.formatMessage({id:`codex.analytics.usageSurface.absoluteUsers.subtitle`,defaultMessage:`Avg {average} users/day`},{average:Co.format(Math.round(t.average))}):e.formatMessage({id:`codex.analytics.usageSurface.absoluteUsers.pending`,defaultMessage:`Loading the latest 30-day trend.`}):t?e.formatMessage({id:`codex.analytics.metricSummary.subtitle`,defaultMessage:`Avg {average} {noun}`},{average:Co.format(Math.round(t.average)),noun:e.formatMessage({id:`codex.analytics.usageSurface.usersPerDay`,defaultMessage:`users/day`})}):e.formatMessage({id:`codex.analytics.metricSummary.pending`,defaultMessage:`Loading the latest 30-day trend.`})}function Oa({intl:e,summary:t}){return t?(0,$.jsxs)(`div`,{className:`flex flex-col items-start gap-2`,children:[(0,$.jsx)(ka,{color:ao.p0,label:e.formatMessage({id:`codex.analytics.codeReviewPanel.priorityLabel.p0`,defaultMessage:`P0`}),value:Co.format(t.priorityTotals.p0)}),(0,$.jsx)(ka,{color:ao.p1,label:e.formatMessage({id:`codex.analytics.codeReviewPanel.priorityLabel.p1`,defaultMessage:`P1`}),value:Co.format(t.priorityTotals.p1)}),(0,$.jsx)(ka,{color:ao.p2,label:e.formatMessage({id:`codex.analytics.codeReviewPanel.priorityLabel.p2`,defaultMessage:`P2`}),value:Co.format(t.priorityTotals.p2)})]}):(0,$.jsx)(L,{id:`codex.analytics.codeReviewPanel.issuesPending`,defaultMessage:`Loading the latest 30-day trend.`})}function ka(e){"use forget";let t=(0,Ra.c)(10),{color:n,label:r,value:i}=e,a;t[0]===n?a=t[1]:(a=(0,$.jsx)(`span`,{className:`h-2 w-2 rounded-full`,style:{backgroundColor:n}}),t[0]=n,t[1]=a);let o;t[2]===r?o=t[3]:(o=(0,$.jsx)(`span`,{className:`text-token-text-secondary text-xs font-medium`,children:r}),t[2]=r,t[3]=o);let s;t[4]===i?s=t[5]:(s=(0,$.jsx)(`span`,{className:`text-token-text-primary text-xs font-semibold`,children:i}),t[4]=i,t[5]=s);let c;return t[6]!==a||t[7]!==o||t[8]!==s?(c=(0,$.jsxs)(`div`,{className:`border-token-border-default bg-token-bg-primary inline-flex items-center gap-2 rounded-full border px-2.5 py-1`,children:[a,o,s]}),t[6]=a,t[7]=o,t[8]=s,t[9]=c):c=t[9],c}function Aa(e){let t=e?.data;if(t==null)return;let n=0,r=0;return t.forEach(e=>{let t=Object.values(e.values).reduce((e,t)=>e+(t??0),0);n+=t,t>r&&(r=t)}),{total:n,average:t.length>0?n/t.length:0,peakValue:r}}function ja(e){return Ma(e)?Ba:`skillUsage:${e}`}function Ma(e){return e.toLocaleLowerCase()===za.toLocaleLowerCase()}function Na({pluginId:e,pluginName:t}){return Pa(t)?Ha:`pluginUsage:${e??t}`}function Pa(e){return e.toLocaleLowerCase()===Va.toLocaleLowerCase()}function Fa({response:e,dateRange:t,groupBy:n,otherSeriesLabel:r}){if(e?.data==null)return;let i=Zt({availableDateKeys:e.data.map(e=>La(e.date)),dateRange:t??dn(`30d`),groupBy:n}),a=new Set(i),o=new Map;e.data.forEach(e=>{let t=La(e.date);if(!a.has(t))return;let n=o.get(t);if(n){o.set(t,[...n,...e.skill_usage_overviews]);return}o.set(t,e.skill_usage_overviews)});let s=new Map,c=new Map,l=i.map(e=>{let t=o.get(e)??[],n=new Map;return t.forEach(e=>{let t=ja(e.skill_name),i=Ma(e.skill_name)?r:e.display_name??e.skill_name;n.set(t,(n.get(t)??0)+e.invocation_counts),c.set(t,i)}),n.forEach((e,t)=>{s.set(t,(s.get(t)??0)+e)}),{dateKey:e,values:n}}),u=[...s.entries()].filter(([e])=>e!==Ba).sort((e,t)=>t[1]-e[1]||e[0].localeCompare(t[0])).map(([e])=>e);s.has(Ba)&&u.push(Ba);let d={};return u.forEach(e=>{d[e]=c.get(e)??e}),{response:{data:l.map(({dateKey:e,values:t})=>{let n={},r={};return t.forEach((e,t)=>{n[t]=e;let i=c.get(t);i&&(r[t]=i,r[`values.${t}`]=i)}),{date:e,values:n,tooltipMetricDisplayNames:r}})},seriesLabels:d}}function Ia({response:e,dateRange:t,groupBy:n,otherSeriesLabel:r}){if(e?.data==null)return;let i=Zt({availableDateKeys:e.data.map(e=>La(e.date)),dateRange:t??dn(`30d`),groupBy:n}),a=new Set(i),o=new Map;e.data.forEach(e=>{let t=La(e.date);if(!a.has(t))return;let n=o.get(t);if(n){o.set(t,[...n,...e.plugin_usage_overviews]);return}o.set(t,e.plugin_usage_overviews)});let s=new Map,c=new Map,l=i.map(e=>{let t=o.get(e)??[],n=new Map;return t.forEach(e=>{let t=Na({pluginId:e.plugin_id,pluginName:e.plugin_name}),i=Pa(e.plugin_name)?r:e.display_name??e.plugin_name;n.set(t,(n.get(t)??0)+e.invocation_counts),c.set(t,i)}),n.forEach((e,t)=>{s.set(t,(s.get(t)??0)+e)}),{dateKey:e,values:n}}),u=[...s.entries()].filter(([e])=>e!==Ha).sort((e,t)=>t[1]-e[1]||e[0].localeCompare(t[0])).map(([e])=>e);s.has(Ha)&&u.push(Ha);let d={};return u.forEach(e=>{d[e]=c.get(e)??e}),{response:{data:l.map(({dateKey:e,values:t})=>{let n={},r={};return t.forEach((e,t)=>{n[t]=e;let i=c.get(t);i&&(r[t]=i,r[`values.${t}`]=i)}),{date:e,values:n,tooltipMetricDisplayNames:r}})},seriesLabels:d}}function La(e){return typeof e==`string`?e:e.toISOString().slice(0,10)}var Ra,Q,$,za,Ba,Va,Ha,Ua,Wa,Ga,Ka,qa,Ja,Ya,Xa,Za,Qa,$a,eo,to,no,ro,io,ao,oo,so,co,lo,uo,fo,po,mo,ho,go,_o,vo,yo,bo,xo,So,Co,wo,To=e((()=>{Ra=ce(),Pe(),it(),ge(),f(),h(),T(),g(),F(),D(),O(),N(),E(),pt(),vt(),dt(),_n(),cr(),mr(),V(),_r(),bn(),zn(),an(),Wr(),$r(),ut(),En(),Si(),zt(),Ft(),ji(),Hi(),vn(),pn(),qi(),at(),B(),$t(),U(),G(),me(),C(),Q=n(R()),se(),oe(),$=I(),za=`Other`,Ba=`other`,Va=`Other`,Ha=`other`,Ua={visualization:`stackedArea`,showHorizontalGrid:!0,yAxisTickCount:4,xAxisTickCount:7,xAxisTickAlignment:`balanced`},Wa={...Ua,matchAdminAnalyticsSeriesStyles:!0},Ga={title:{id:`codex.analytics.dailyskillusage.chartTitle`,defaultMessage:`Daily skill invocations (past 30 days)`,description:`Title for the Codex analytics chart showing average daily skill invocations over the past 30 days`},titleSecondaryText:{id:`codex.analytics.dailyskillusage.disclaimer`,defaultMessage:`Skills from your repositories are only visible to workspace admins and analytics viewers`,description:`Disclaimer shown under the Daily Skill Usage chart title to clarify workspace scoping and visibility.`},tooltipTotalLabel:{id:`codex.analytics.dailyskillusage.tooltipTotalLabel`,defaultMessage:`Total`,description:`Label for the total row shown at the top of the skill usage chart tooltip. Displayed when hovering over a date in the Codex analytics skills section.`},errorMessage:{id:`codex.analytics.dailyskillusage.error`,defaultMessage:`We ran into an issue loading analytics. Data shown may be out of date.`,description:`Error message shown when the Codex analytics daily skill usage chart fails to load`},loggerMessage:`Failed to load Codex analytics daily skill usage`,clientEventSource:`codexDailySkillUsage`,buildChartData:({response:e,isError:t,isLoading:n,intl:r,dateRange:i,groupBy:a})=>{let o=Fa({response:e,dateRange:i,groupBy:a,otherSeriesLabel:r.formatMessage({id:`codex.analytics.dailyskillusage.otherSeriesLabel`,defaultMessage:`Other`})}),{chartData:s,isLoading:c}=Sn({response:o?.response,isLoading:n,isError:t,seriesLabels:o?.seriesLabels??{}});return c?`loading`:s},tooltipMetricKeysAtBottom:[Ba,`values.${Ba}`]},Ka={title:{id:`codex.analytics.dailypluginusage.chartTitle`,defaultMessage:`Daily plugin usage (past 30 days)`,description:`Title for the Codex analytics chart showing daily plugin usage over the past 30 days`},tooltipTotalLabel:{id:`codex.analytics.dailypluginusage.tooltipTotalLabel`,defaultMessage:`Total`,description:`Label for the total row shown at the top of the plugin usage chart tooltip. Displayed when hovering over a date in the Codex analytics plugins section.`},errorMessage:{id:`codex.analytics.dailypluginusage.error`,defaultMessage:`We ran into an issue loading plugin analytics. Data shown may be out of date.`,description:`Error message shown when the Codex analytics daily plugin usage chart fails to load`},loggerMessage:`Failed to load Codex analytics daily plugin usage`,clientEventSource:`codexDailyPluginUsage`,buildChartData:({response:e,isError:t,isLoading:n,intl:r,dateRange:i,groupBy:a})=>{let o=Ia({response:e,dateRange:i,groupBy:a,otherSeriesLabel:r.formatMessage({id:`codex.analytics.dailypluginusage.otherSeriesLabel`,defaultMessage:`Other`})}),{chartData:s,isLoading:c}=Sn({response:o?.response,isLoading:n,isError:t,seriesLabels:o?.seriesLabels??{}});return c?`loading`:s},tooltipMetricKeysAtBottom:[Ha,`values.${Ha}`]},qa={title:{id:`codex.analytics.dailyLinesOfCode.chartTitle`,defaultMessage:`Daily lines of code (past 30 days)`,description:`Title for the Codex analytics chart showing daily lines of code generated by Codex over the past 30 days.`},tooltipTotalLabel:{id:`codex.analytics.dailyLinesOfCode.tooltipTotalLabel`,defaultMessage:`Total`,description:`Label for the total row shown at the top of the lines of code chart tooltip.`},errorMessage:{id:`codex.analytics.dailyLinesOfCode.error`,defaultMessage:`We ran into an issue loading lines of code analytics. Data shown may be out of date.`,description:`Error message shown when the Codex analytics lines of code chart fails to load.`},loggerMessage:`Failed to load Codex analytics lines of code`,clientEventSource:`codexDailyLinesOfCode`,buildChartData:({response:e,isError:t,isLoading:n,intl:r})=>rn({response:Jt(e),isLoading:n,isError:t,seriesId:`linesOfCode`,displayName:r.formatMessage({id:`codex.analytics.dailyLinesOfCode.seriesLabel`,defaultMessage:`Lines of code`}),aggregation:`sum`})},Ja={totalUsers:{color:gr.totalUsers,label:{id:`codex.analytics.usageSurface.absoluteUsers`,defaultMessage:`Users`,description:`Label for the deduplicated users card in the usage by app surface section`}},web:{color:hr.web,label:{id:`codex.analytics.usageSurface.cloud`,defaultMessage:`Cloud`,description:`Label for the cloud surface card in Codex analytics`}},mobile:{color:hr.mobile,label:{id:`codex.analytics.usageSurface.mobile`,defaultMessage:`Mobile`,description:`Label for the mobile surface card in Codex analytics`}},desktop:{color:hr.desktop,label:{id:`codex.analytics.usageSurface.desktop`,defaultMessage:`Desktop`,description:`Label for the desktop surface card in Codex analytics`}},vscode:{color:hr.vscode,label:{id:`codex.analytics.usageSurface.vscode`,defaultMessage:`Extension`,description:`Label for the extension surface card in Codex analytics`}},cli:{color:hr.cli,label:{id:`codex.analytics.usageSurface.cli`,defaultMessage:`CLI`,description:`Label for the CLI surface card in Codex analytics`}},codeReview:{color:hr.codeReview,label:{id:`codex.analytics.usageSurface.codeReview`,defaultMessage:`Code Review`,description:`Label for the code review surface card in Codex analytics`}}},Ya={codeReview:{id:`codex.analytics.dailyproductusageoverview.codeReviewSeriesLabel`,defaultMessage:`Code review`,description:`Label for the code review bar series displayed on the product usage overview chart`},web:{id:`codex.analytics.dailyproductusageoverview.webSeriesLabel`,defaultMessage:`Cloud`,description:`Label for the Cloud bar series displayed on the product usage overview chart`},mobile:{id:`codex.analytics.dailyproductusageoverview.mobileSeriesLabel`,defaultMessage:`Mobile`,description:`Label for the mobile bar series displayed on the product usage overview chart`},desktop:{id:`codex.analytics.dailyproductusageoverview.desktopSeriesLabel`,defaultMessage:`Desktop`,description:`Label for the desktop bar series displayed on the product usage overview chart`},vscode:{id:`codex.analytics.dailyproductusageoverview.vscodeSeriesLabel`,defaultMessage:`Extension`,description:`Label for the extension bar series displayed on the product usage overview chart`},cli:{id:`codex.analytics.dailyproductusageoverview.cliSeriesLabel`,defaultMessage:`CLI`,description:`Label for the CLI bar series displayed on the product usage overview chart`}},Xa={threads:{color:hr.cli,label:{id:`codex.analytics.productUsage.threads`,defaultMessage:`threads`,description:`Label for the threads card in the product usage panel`},chartTitle:{id:`codex.analytics.dailyproductusagethreads.chartTitle`,defaultMessage:`Daily threads by client (past 30 days)`,description:`Title for the Codex analytics chart that shows daily threads broken down by product`},noun:{id:`codex.analytics.productUsage.threadsPerDay`,defaultMessage:`threads/day`,description:`Noun used in the threads summary card subtitle`},clientEventSource:`codexDailyProductUsageThreads`},turns:{color:hr.vscode,label:{id:`codex.analytics.productUsage.turns`,defaultMessage:`turns`,description:`Label for the turns card in the product usage panel`},chartTitle:{id:`codex.analytics.dailyproductusageturns.chartTitle`,defaultMessage:`Daily turns by client (past 30 days)`,description:`Title for the Codex analytics chart that shows daily turns broken down by product`},noun:{id:`codex.analytics.productUsage.turnsPerDay`,defaultMessage:`turns/day`,description:`Noun used in the turns summary card subtitle`},clientEventSource:`codexDailyProductUsageTurns`}},Za=[`desktop`,`cli`,`vscode`,`web`,`mobile`,`codeReview`],Qa=[...Za],$a=Za.flatMap(e=>e===`web`?[e,`workWeb`]:[e]),eo={},to=[],no={codeReview:hr.codeReview,web:hr.web,mobile:hr.mobile,desktop:hr.desktop,vscode:hr.vscode,cli:hr.cli},ro=[`totalUsers`,...Za],io={p0:{id:`codex.analytics.dailycodereviewpriority.series.p0`,defaultMessage:`P0 issues`,description:`Legend label for the daily code review chart showing the number of priority zero issues`},p1:{id:`codex.analytics.dailycodereviewpriority.series.p1`,defaultMessage:`P1 issues`,description:`Legend label for the daily code review chart showing the number of priority one issues`},p2:{id:`codex.analytics.dailycodereviewpriority.series.p2`,defaultMessage:`P2 issues`,description:`Legend label for the daily code review chart showing the number of priority two issues`}},ao={p0:`var(--blue-75)`,p1:`var(--blue-400)`,p2:`var(--blue-600)`},oo={id:`codex.analytics.codeReviewPanel.issuesFound.redesign`,defaultMessage:`Issues found`,description:`Title for the code review issues found chart on the redesigned Codex analytics Code review tab.`},so={id:`codex.analytics.codeReviewPanel.issuesFound.info.redesign`,defaultMessage:`Issues found by Codex code review during the selected time period.`,description:`Tooltip explaining the issues found chart on the redesigned Codex analytics Code review tab.`},co={id:`codex.analytics.codeReviewPanel.prsReviewed.redesign`,defaultMessage:`PRs reviewed`,description:`Title for the code review pull requests reviewed chart on the redesigned Codex analytics Code review tab.`},lo={id:`codex.analytics.codeReviewPanel.prsReviewed.info.redesign`,defaultMessage:`Pull requests reviewed by Codex during the selected time period.`,description:`Tooltip explaining the pull requests reviewed chart on the redesigned Codex analytics Code review tab.`},uo={id:`codex.analytics.dailycodereviewpriority.chartTitle.redesign`,defaultMessage:`Issues by priority`,description:`Title for the code review issue-priority chart on the redesigned Codex analytics Code review tab.`},fo={id:`codex.analytics.dailycodereviewpriority.chartInfo.redesign`,defaultMessage:`Issues found by Codex code review grouped by priority during the selected time period.`,description:`Tooltip explaining the issue-priority chart on the redesigned Codex analytics Code review tab.`},po={id:`codex.analytics.dailycodereviewreactions.chartTitle.redesign`,defaultMessage:`Reactions`,description:`Title for the code review reactions chart on the redesigned Codex analytics Code review tab.`},mo={id:`codex.analytics.dailycodereviewreactions.chartInfo.redesign`,defaultMessage:`Reactions to Codex code review comments during the selected time period.`,description:`Tooltip explaining the reactions chart on the redesigned Codex analytics Code review tab.`},ho={id:`codex.analytics.dailycodereviewsentiment.chartTitle.redesign`,defaultMessage:`Reaction sentiment`,description:`Title for the code review reaction sentiment chart on the redesigned Codex analytics Code review tab.`},go={id:`codex.analytics.dailycodereviewsentiment.chartInfo.redesign`,defaultMessage:`Share of code review reactions grouped by reaction type during the selected time period.`,description:`Tooltip explaining the reaction sentiment chart on the redesigned Codex analytics Code review tab.`},_o={id:`codex.analytics.dailycodereviewsentiment.chartTitle`,defaultMessage:`Daily code review feedback sentiment (past 30 days)`,description:`Title for the chart that shows average daily code review reactions broken down by reaction type as percentages`},vo={plus1:{id:`codex.analytics.dailycodereviewreactions.series.plus1`,defaultMessage:`👍 reactions`,description:`Legend label for the daily code review reactions chart showing the number of +1 reactions`},minus1:{id:`codex.analytics.dailycodereviewreactions.series.minus1`,defaultMessage:`👎 reactions`,description:`Legend label for the daily code review reactions chart showing the number of -1 reactions`},other:{id:`codex.analytics.dailycodereviewreactions.series.other`,defaultMessage:`Other reactions`,description:`Legend label for the daily code review reactions chart showing the number of reactions that are neither +1 nor -1`}},yo={plus1:`var(--blue-400)`,minus1:`var(--pink-400)`,other:`var(--blue-75)`},bo=[`plus1`,`minus1`,`other`],xo=`var(--blue-400)`,So={forceStack:!0,legendVariant:`codexAnalytics`,showHorizontalGrid:!0,yAxisTickCount:4,xAxisTickCount:7,xAxisTickAlignment:`balanced`},Co=new Intl.NumberFormat,wo=new Intl.NumberFormat(void 0,{maximumFractionDigits:1,minimumFractionDigits:0})}));export{Ji as n,To as r,Yi as t};
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    AE as r,
+    Bz as i,
+    Ch as a,
+    Crt as o,
+    Ey as s,
+    Fh as c,
+    NM as l,
+    OM as u,
+    Ph as d,
+    Qy as f,
+    Rz as p,
+    Sh as m,
+    Vz as h,
+    ZG as g,
+    Zy as _,
+    c7 as v,
+    dJ as y,
+    eK as b,
+    fB as x,
+    kE as S,
+    l7 as C,
+    o0 as w,
+    pB as T,
+    prt as E,
+    q1 as D,
+    s6 as O,
+    srt as k,
+    u6 as A,
+    wh as j,
+    wrt as M,
+    wy as N,
+    y6 as ee,
+    yJ as P,
+    zz as F
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    At as te,
+    Bn as I,
+    Dt as ne,
+    In as re,
+    Ln as ie,
+    Nn as L,
+    Nt as ae,
+    Q as oe,
+    Rn as se,
+    Vn as R,
+    wn as ce,
+    zn as le
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $Hn as ue,
+    E_n as de,
+    F7 as fe,
+    I7 as pe,
+    Jln as me,
+    PCn as he,
+    RCn as ge,
+    Tun as _e,
+    Xi as ve,
+    Zi as ye,
+    _Wn as be,
+    cun as xe,
+    dvn as Se,
+    eUn as Ce,
+    ex as we,
+    gun as Te,
+    hun as Ee,
+    jun as De,
+    nw as Oe,
+    oun as ke,
+    pun as Ae,
+    rw as je,
+    tx as Me,
+    vun as Ne,
+    yWn as Pe
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+import {
+    DC as Fe,
+    EC as Ie,
+    Jv as Le,
+    Kc as Re,
+    Yv as ze,
+    ay as Be,
+    iy as Ve,
+    qc as He
+} from "./30901919-r9pahacmzqudnt4f.js";
+import {
+    Bb as Ue,
+    Dg as We,
+    Hb as Ge,
+    Ht as Ke,
+    Jt as z,
+    Kt as qe,
+    Og as B,
+    Ut as Je,
+    Wt as Ye,
+    Zt as Xe,
+    _o as Ze,
+    by as Qe,
+    cx as $e,
+    kg as et,
+    kt as tt,
+    lx as nt,
+    qt as rt,
+    ux as it,
+    vo as at,
+    xy as ot
+} from "./c2675c8c-p3x4d0bnf7e77o1n.js";
+import {
+    f_ as st,
+    p_ as ct
+} from "./8b34dbc2-egl8cz04n8nmlktg.js";
+import {
+    h as lt,
+    m as ut,
+    r as dt,
+    t as ft
+} from "./3e72bb91-bcwf3koikkwl9bye.js";
+import {
+    n as pt,
+    r as mt
+} from "./333fd2ad-b9canc46kwucs6bp.js";
+import {
+    a as ht,
+    i as gt,
+    r as _t,
+    t as vt
+} from "./fab52ad7-fintq2t5ygluaa1w.js";
+import {
+    L as yt,
+    b as bt,
+    f as xt,
+    g as St,
+    i as Ct,
+    t as wt,
+    u as Tt,
+    z as Et
+} from "./3d9e424f-jqzny2r7xq8o2u8c.js";
+import {
+    $ as Dt,
+    A as Ot,
+    B as kt,
+    C as At,
+    D as jt,
+    E as V,
+    F as Mt,
+    G as Nt,
+    H as Pt,
+    I as Ft,
+    J as It,
+    K as Lt,
+    L as Rt,
+    M as zt,
+    N as Bt,
+    O as Vt,
+    P as Ht,
+    Q as Ut,
+    R as Wt,
+    S as Gt,
+    T as Kt,
+    U as qt,
+    V as H,
+    W as Jt,
+    X as Yt,
+    Y as Xt,
+    Z as Zt,
+    _ as Qt,
+    a as $t,
+    at as en,
+    b as tn,
+    c as nn,
+    ct as rn,
+    d as U,
+    et as an,
+    f as on,
+    g as sn,
+    h as cn,
+    i as ln,
+    it as un,
+    j as W,
+    k as dn,
+    l as fn,
+    m as pn,
+    n as mn,
+    nt as hn,
+    o as gn,
+    ot as _n,
+    p as vn,
+    q as yn,
+    r as G,
+    rt as bn,
+    s as xn,
+    st as Sn,
+    tt as Cn,
+    u as wn,
+    v as Tn,
+    w as En,
+    y as Dn,
+    z as On
+} from "./8eb03965-k7w2qpcri3x38dpz.js";
+import {
+    n as kn,
+    t as An
+} from "./ef50f9ea-ghm40qggasy5slci.js";
+import {
+    r as jn,
+    t as Mn
+} from "./e0dd6841-kzdyroauvlmueln7.js";
+import {
+    a as Nn,
+    r as Pn
+} from "./b0c2397c-gzseaeqr0yijp0eh.js";
+import {
+    a as Fn,
+    n as In,
+    o as Ln,
+    t as Rn
+} from "./fc35a31a-gvye5lg2lkrv669n.js";
+import {
+    a as zn,
+    i as Bn,
+    n as Vn,
+    r as Hn,
+    t as Un
+} from "./98d333a6-e5gl07efh3gx3fw4.js";
+
+function Wn(e) {
+    "use forget";
+    let t = (0, rr.c)(87),
+        {
+            scope: n,
+            dateRange: r,
+            groupBy: i
+        } = e,
+        a = le(),
+        [o, s] = (0, ir.useState)(`credits`),
+        [c, l] = (0, ir.useState)(`desc`),
+        u;
+    t[0] !== r || t[1] !== i || t[2] !== n || t[3] !== o || t[4] !== c ? (u = {
+        scope: n,
+        dateRange: r,
+        groupBy: i,
+        sortBy: o,
+        sortDirection: c,
+        limit: ar
+    }, t[0] = r, t[1] = i, t[2] = n, t[3] = o, t[4] = c, t[5] = u) : u = t[5];
+    let d = ke(u),
+        f = d.data,
+        m;
+    t[6] === f ? m = t[7] : (m = f == null || f?.totals.text_tokens != null || !!f?.identities.some(qn), t[6] = f, t[7] = m);
+    let h = m;
+    f?.identities;
+    let g;
+    t[8] === f?.identities ? g = t[9] : (g = f?.identities ?? [], t[8] = f?.identities, t[9] = g);
+    let _;
+    if (t[10] !== a || t[11] !== g) {
+        let e;
+        t[13] === a ? e = t[14] : (e = e => ({
+            ...e,
+            displayName: e.name || e.agent_identity_id,
+            creatorLabel: e.creator_user_display_name ?? e.creator_user_email ?? a.formatMessage(sr.unknownCreator),
+            creatorEmail: e.creator_user_display_name == null ? null : e.creator_user_email ?? null,
+            statusLabel: Qn(e, a)
+        }), t[13] = a, t[14] = e), _ = g.map(e), t[10] = a, t[11] = g, t[12] = _
+    } else _ = t[12];
+    let y = _,
+        b = d.isFetching && d.isPlaceholderData && f != null,
+        x = d.isLoading && f == null,
+        S = d.isError && f == null,
+        C = n === `personal` ? sr.personalTitle : sr.workspaceTitle,
+        w = n === `personal` ? sr.personalSubtitle : sr.workspaceSubtitle,
+        T = n === `workspace`,
+        E;
+    t[15] === o ? E = t[16] : (E = e => {
+        if (e === o) {
+            l(Kn);
+            return
+        }
+        s(e), l(`desc`)
+    }, t[15] = o, t[16] = E);
+    let D = E,
+        O;
+    t[17] === d ? O = t[18] : (O = async () => {
+        await d.refetch()
+    }, t[17] = d, t[18] = O);
+    let k = O,
+        A;
+    t[19] === a ? A = t[20] : (A = a.formatMessage(sr.agentColumn), t[19] = a, t[20] = A);
+    let j;
+    t[21] === A ? j = t[22] : (j = (0, K.jsx)(Yn, {
+        label: A,
+        className: `ps-4`
+    }), t[21] = A, t[22] = j);
+    let M;
+    if (t[23] !== D || t[24] !== h || t[25] !== a || t[26] !== T || t[27] !== o || t[28] !== c || t[29] !== j) {
+        let e;
+        t[31] === a ? e = t[32] : (e = a.formatMessage(sr.creditsColumn), t[31] = a, t[32] = e);
+        let n;
+        t[33] === D ? n = t[34] : (n = () => D(`credits`), t[33] = D, t[34] = n);
+        let r;
+        if (t[35] !== o || t[36] !== c || t[37] !== n || t[38] !== e ? (r = (0, K.jsx)(Xn, {
+                align: `end`,
+                className: `pe-8`,
+                label: e,
+                sortKey: `credits`,
+                sortBy: o,
+                sortDirection: c,
+                onClick: n
+            }), t[35] = o, t[36] = c, t[37] = n, t[38] = e, t[39] = r) : r = t[39], M = [{
+                field: `agent`,
+                header: j
+            }, {
+                field: `credits`,
+                header: r
+            }], T) {
+            let e;
+            t[40] === a ? e = t[41] : (e = a.formatMessage(sr.creatorColumn), t[40] = a, t[41] = e);
+            let n;
+            t[42] === e ? n = t[43] : (n = (0, K.jsx)(Yn, {
+                label: e
+            }), t[42] = e, t[43] = n), M.splice(1, 0, {
+                field: `creator`,
+                header: n
+            })
+        }
+        if (h) {
+            let e;
+            t[44] === a ? e = t[45] : (e = a.formatMessage(sr.textTokensColumn), t[44] = a, t[45] = e);
+            let n;
+            t[46] === D ? n = t[47] : (n = () => D(`text_tokens`), t[46] = D, t[47] = n);
+            let r;
+            t[48] !== o || t[49] !== c || t[50] !== e || t[51] !== n ? (r = {
+                field: `textTokens`,
+                header: (0, K.jsx)(Xn, {
+                    align: `end`,
+                    className: `pe-8`,
+                    label: e,
+                    sortKey: `text_tokens`,
+                    sortBy: o,
+                    sortDirection: c,
+                    onClick: n
+                })
+            }, t[48] = o, t[49] = c, t[50] = e, t[51] = n, t[52] = r) : r = t[52], M.push(r)
+        }
+        let i;
+        t[53] === a ? i = t[54] : (i = a.formatMessage(sr.lastUsedColumn), t[53] = a, t[54] = i);
+        let s;
+        t[55] === D ? s = t[56] : (s = () => D(`last_used_at`), t[55] = D, t[56] = s);
+        let l;
+        t[57] !== o || t[58] !== c || t[59] !== i || t[60] !== s ? (l = {
+            field: `lastUsedAt`,
+            header: (0, K.jsx)(Xn, {
+                className: `ps-4`,
+                label: i,
+                sortKey: `last_used_at`,
+                sortBy: o,
+                sortDirection: c,
+                onClick: s
+            })
+        }, t[57] = o, t[58] = c, t[59] = i, t[60] = s, t[61] = l) : l = t[61];
+        let u;
+        t[62] === a ? u = t[63] : (u = a.formatMessage(sr.statusColumn), t[62] = a, t[63] = u);
+        let d;
+        t[64] === u ? d = t[65] : (d = {
+            field: `status`,
+            header: (0, K.jsx)(Yn, {
+                label: u,
+                className: `block w-full pe-4 text-end`
+            })
+        }, t[64] = u, t[65] = d), M.push(l, d), t[23] = D, t[24] = h, t[25] = a, t[26] = T, t[27] = o, t[28] = c, t[29] = j, t[30] = M
+    } else M = t[30];
+    let N = M,
+        ee;
+    t[66] === C ? ee = t[67] : (ee = (0, K.jsx)(`h3`, {
+        className: `text-token-text-primary text-xl font-semibold`,
+        children: (0, K.jsx)(L, {
+            ...C
+        })
+    }), t[66] = C, t[67] = ee);
+    let P;
+    t[68] === w ? P = t[69] : (P = (0, K.jsx)(`p`, {
+        className: `text-token-text-secondary mt-2 max-w-3xl text-sm leading-6`,
+        children: (0, K.jsx)(L, {
+            ...w
+        })
+    }), t[68] = w, t[69] = P);
+    let F;
+    t[70] !== P || t[71] !== ee ? (F = (0, K.jsxs)(`div`, {
+        className: `flex min-w-0 flex-col`,
+        children: [ee, P]
+    }), t[70] = P, t[71] = ee, t[72] = F) : F = t[72];
+    let te;
+    t[73] !== N || t[74] !== k || t[75] !== h || t[76] !== a || t[77] !== S || t[78] !== x || t[79] !== b || t[80] !== y || t[81] !== n || t[82] !== T ? (te = S ? (0, K.jsx)(Jn, {
+        onRetry: k
+    }) : x ? (0, K.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-elevated-primary flex flex-1 flex-col overflow-hidden rounded-2xl border shadow-sm`,
+        children: (0, K.jsx)(`div`, {
+            className: `flex min-h-64 items-center justify-center`,
+            children: (0, K.jsx)(p, {
+                className: `icon-lg text-token-text-tertiary`
+            })
+        })
+    }) : (0, K.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-elevated-primary flex flex-1 flex-col overflow-hidden rounded-2xl border shadow-sm`,
+        children: (0, K.jsxs)(`div`, {
+            className: `relative max-h-[440px] overflow-auto px-4 [overflow-clip-margin:0px] md:px-6`,
+            children: [b ? (0, K.jsx)(`div`, {
+                className: `bg-token-bg-primary/55 absolute inset-0 z-10 flex items-center justify-center backdrop-blur-[1px]`,
+                children: (0, K.jsx)(p, {
+                    className: `icon-md text-token-text-tertiary`
+                })
+            }) : null, (0, K.jsx)(Mn.Root, {
+                columns: N,
+                rows: y,
+                rowKey: Gn,
+                emptyMessage: (0, K.jsx)(L, {
+                    ...sr.emptyMessage
+                }),
+                className: v(`[&_thead_th]:sticky`, `[&_thead_th]:top-0`, `[&_thead_th]:z-[1]`, `[&_thead_th]:bg-token-bg-elevated-primary`, `[&_thead_th]:pt-2`, `[&_thead_th]:pb-3`, tr({
+                    hasTextTokens: h,
+                    showCreatorColumn: T
+                }), nr({
+                    hasTextTokens: h,
+                    scope: n
+                })),
+                children: e => e.map(e => (0, K.jsxs)(Mn.Row, {
+                    rowKey: e.agent_identity_id,
+                    className: `hover:bg-token-bg-tertiary/60 transition-colors`,
+                    children: [(0, K.jsx)(Mn.Cell, {
+                        field: `agent`,
+                        className: `py-4 ps-4 pe-8`,
+                        children: (0, K.jsx)(`div`, {
+                            className: `min-w-0`,
+                            children: (0, K.jsx)(`div`, {
+                                className: `text-token-text-primary truncate text-sm font-medium`,
+                                title: e.displayName,
+                                children: e.displayName
+                            })
+                        })
+                    }), T ? (0, K.jsx)(Mn.Cell, {
+                        field: `creator`,
+                        className: `py-4 pe-8`,
+                        children: (0, K.jsx)(An, {
+                            name: e.creatorLabel,
+                            email: e.creatorEmail,
+                            primaryClassName: `text-token-text-secondary text-sm`,
+                            secondaryClassName: `text-token-text-tertiary text-xs`
+                        })
+                    }) : null, (0, K.jsx)(Mn.Cell, {
+                        field: `credits`,
+                        className: `py-4 pe-8`,
+                        children: (0, K.jsx)(Zn, {
+                            children: a.formatNumber(Math.round(e.credits))
+                        })
+                    }), h ? (0, K.jsx)(Mn.Cell, {
+                        field: `textTokens`,
+                        className: `py-4 pe-8`,
+                        children: (0, K.jsx)(Zn, {
+                            children: er(a, e.text_tokens)
+                        })
+                    }) : null, (0, K.jsx)(Mn.Cell, {
+                        field: `lastUsedAt`,
+                        className: `py-4 pe-8`,
+                        children: (0, K.jsx)(`span`, {
+                            className: `text-token-text-secondary text-sm whitespace-nowrap`,
+                            children: $n(e.last_used_at, a)
+                        })
+                    }), (0, K.jsx)(Mn.Cell, {
+                        field: `status`,
+                        className: `py-4`,
+                        children: (0, K.jsx)(`span`, {
+                            className: `text-token-text-secondary ms-auto block pe-4 text-end text-sm`,
+                            children: e.statusLabel
+                        })
+                    })]
+                }, e.agent_identity_id))
+            })]
+        })
+    }), t[73] = N, t[74] = k, t[75] = h, t[76] = a, t[77] = S, t[78] = x, t[79] = b, t[80] = y, t[81] = n, t[82] = T, t[83] = te) : te = t[83];
+    let I;
+    return t[84] !== F || t[85] !== te ? (I = (0, K.jsxs)(`section`, {
+        className: `flex flex-1 flex-col gap-6`,
+        children: [F, te]
+    }), t[84] = F, t[85] = te, t[86] = I) : I = t[86], I
+}
+
+function Gn(e) {
+    return e.agent_identity_id
+}
+
+function Kn(e) {
+    return e === `asc` ? `desc` : `asc`
+}
+
+function qn(e) {
+    return e.text_tokens != null
+}
+
+function Jn(e) {
+    "use forget";
+    let t = (0, rr.c)(4),
+        {
+            onRetry: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, K.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, K.jsx)(L, {
+            ...sr.errorMessage
+        })
+    }), t[0] = r) : r = t[0];
+    let i;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, K.jsx)(L, {
+        ...sr.retryButton
+    }), t[1] = i) : i = t[1];
+    let a;
+    return t[2] === n ? a = t[3] : (a = (0, K.jsxs)(`div`, {
+        className: `border-token-border-light bg-token-bg-elevated-primary flex flex-col items-center justify-center gap-4 rounded-2xl border px-6 py-12 text-center shadow-sm`,
+        children: [r, (0, K.jsx)(`button`, {
+            type: `button`,
+            className: `btn btn-secondary`,
+            onClick: n,
+            children: i
+        })]
+    }), t[2] = n, t[3] = a), a
+}
+
+function Yn(e) {
+    "use forget";
+    let t = (0, rr.c)(5),
+        {
+            label: n,
+            className: r
+        } = e,
+        i;
+    t[0] === r ? i = t[1] : (i = v(`text-token-text-tertiary text-xs font-normal`, r), t[0] = r, t[1] = i);
+    let a;
+    return t[2] !== n || t[3] !== i ? (a = (0, K.jsx)(`span`, {
+        className: i,
+        children: n
+    }), t[2] = n, t[3] = i, t[4] = a) : a = t[4], a
+}
+
+function Xn(e) {
+    "use forget";
+    let t = (0, rr.c)(14),
+        {
+            align: n,
+            className: r,
+            label: i,
+            sortKey: a,
+            sortBy: o,
+            sortDirection: s,
+            onClick: c
+        } = e,
+        l = n === void 0 ? `start` : n,
+        u = a === o,
+        d = l === `end` ? `justify-end` : `justify-start`,
+        f = u ? `text-token-text-primary` : `text-token-text-tertiary`,
+        p;
+    t[0] !== r || t[1] !== d || t[2] !== f ? (p = v(`inline-flex w-full items-center gap-1 text-xs font-normal`, d, r, f), t[0] = r, t[1] = d, t[2] = f, t[3] = p) : p = t[3];
+    let m;
+    t[4] === i ? m = t[5] : (m = (0, K.jsx)(`span`, {
+        children: i
+    }), t[4] = i, t[5] = m);
+    let h;
+    t[6] !== u || t[7] !== s ? (h = u ? (0, K.jsx)(Le, {
+        className: v(`icon-sm transition-transform`, s === `desc` && `rotate-180`)
+    }) : (0, K.jsx)(Re, {
+        className: `icon-sm`
+    }), t[6] = u, t[7] = s, t[8] = h) : h = t[8];
+    let g;
+    return t[9] !== c || t[10] !== p || t[11] !== m || t[12] !== h ? (g = (0, K.jsxs)(`button`, {
+        type: `button`,
+        onClick: c,
+        className: p,
+        children: [m, h]
+    }), t[9] = c, t[10] = p, t[11] = m, t[12] = h, t[13] = g) : g = t[13], g
+}
+
+function Zn(e) {
+    "use forget";
+    let t = (0, rr.c)(2),
+        {
+            children: n
+        } = e,
+        r;
+    return t[0] === n ? r = t[1] : (r = (0, K.jsx)(`span`, {
+        className: `text-token-text-primary ms-auto block text-end text-sm tabular-nums`,
+        children: n
+    }), t[0] = n, t[1] = r), r
+}
+
+function Qn(e, t) {
+    return e.revoked ? t.formatMessage(sr.revokedStatus) : e.expired ? t.formatMessage(sr.expiredStatus) : t.formatMessage(sr.activeStatus)
+}
+
+function $n(e, t) {
+    return e ? t.formatDate(new Date(e), {
+        month: `short`,
+        day: `numeric`,
+        year: `numeric`
+    }) : t.formatMessage(sr.neverUsed)
+}
+
+function er(e, t) {
+    return t == null ? `—` : e.formatNumber(Math.round(t))
+}
+
+function tr({
+    hasTextTokens: e,
+    showCreatorColumn: t
+}) {
+    return e && t ? `min-w-[1100px]` : e ? `min-w-[920px]` : t ? `min-w-[930px]` : `min-w-[760px]`
+}
+
+function nr({
+    hasTextTokens: e,
+    scope: t
+}) {
+    return or[t][e ? `textTokens` : `default`]
+}
+var rr, ir, K, ar, or, sr, cr = e((() => {
+    rr = ce(), F(), kn(), jn(), He(), ze(), me(), C(), ir = n(R()), se(), K = I(), ar = 100, or = {
+        personal: {
+            default: [`[&_thead_th:nth-child(1)]:w-[45%]`, `[&_thead_th:nth-child(2)]:w-[15%]`, `[&_thead_th:nth-child(3)]:w-[27%]`, `[&_thead_th:nth-child(4)]:w-[13%]`],
+            textTokens: [`[&_thead_th:nth-child(1)]:w-[36%]`, `[&_thead_th:nth-child(2)]:w-[13%]`, `[&_thead_th:nth-child(3)]:w-[22%]`, `[&_thead_th:nth-child(4)]:w-[19%]`, `[&_thead_th:nth-child(5)]:w-[10%]`]
+        },
+        workspace: {
+            default: [`[&_thead_th:nth-child(1)]:w-[38%]`, `[&_thead_th:nth-child(2)]:w-[20%]`, `[&_thead_th:nth-child(3)]:w-[12%]`, `[&_thead_th:nth-child(4)]:w-[20%]`, `[&_thead_th:nth-child(5)]:w-[10%]`],
+            textTokens: [`[&_thead_th:nth-child(1)]:w-[30%]`, `[&_thead_th:nth-child(2)]:w-[18%]`, `[&_thead_th:nth-child(3)]:w-[11%]`, `[&_thead_th:nth-child(4)]:w-[18%]`, `[&_thead_th:nth-child(5)]:w-[16%]`, `[&_thead_th:nth-child(6)]:w-[7%]`]
+        }
+    }, sr = ie({
+        workspaceTitle: {
+            id: `codex.analytics.accessTokenUsage.workspaceTitle`,
+            defaultMessage: `Workspace access token usage`
+        },
+        workspaceSubtitle: {
+            id: `codex.analytics.accessTokenUsage.workspaceSubtitle`,
+            defaultMessage: `Track Codex usage from access tokens in this workspace.`
+        },
+        personalTitle: {
+            id: `codex.analytics.accessTokenUsage.personalTitle`,
+            defaultMessage: `Personal access token usage`
+        },
+        personalSubtitle: {
+            id: `codex.analytics.accessTokenUsage.personalSubtitle`,
+            defaultMessage: `Track Codex usage from access tokens you created.`
+        },
+        agentColumn: {
+            id: `codex.analytics.accessTokenUsage.accessTokenColumn`,
+            defaultMessage: `Access token name`
+        },
+        creatorColumn: {
+            id: `codex.analytics.accessTokenUsage.creatorColumn`,
+            defaultMessage: `Creator`
+        },
+        creditsColumn: {
+            id: `codex.analytics.accessTokenUsage.creditsColumn`,
+            defaultMessage: `Credits`
+        },
+        textTokensColumn: {
+            id: `codex.analytics.accessTokenUsage.textTokensColumn`,
+            defaultMessage: `Text tokens`
+        },
+        lastUsedColumn: {
+            id: `codex.analytics.accessTokenUsage.lastUsedColumn`,
+            defaultMessage: `Last used`
+        },
+        statusColumn: {
+            id: `codex.analytics.accessTokenUsage.statusColumn`,
+            defaultMessage: `Status`
+        },
+        unknownCreator: {
+            id: `codex.analytics.accessTokenUsage.unknownCreator`,
+            defaultMessage: `Unknown creator`
+        },
+        activeStatus: {
+            id: `codex.analytics.accessTokenUsage.activeStatus`,
+            defaultMessage: `Active`
+        },
+        expiredStatus: {
+            id: `codex.analytics.accessTokenUsage.expiredStatus`,
+            defaultMessage: `Expired`
+        },
+        revokedStatus: {
+            id: `codex.analytics.accessTokenUsage.revokedStatus`,
+            defaultMessage: `Revoked`
+        },
+        neverUsed: {
+            id: `codex.analytics.accessTokenUsage.neverUsed`,
+            defaultMessage: `Never`
+        },
+        emptyMessage: {
+            id: `codex.analytics.accessTokenUsage.emptyMessage`,
+            defaultMessage: `No access token usage in this date range.`
+        },
+        errorMessage: {
+            id: `codex.analytics.accessTokenUsage.errorMessage`,
+            defaultMessage: `We couldn't load access token usage.`
+        },
+        retryButton: {
+            id: `codex.analytics.accessTokenUsage.retryButton`,
+            defaultMessage: `Try again`
+        }
+    })
+}));
+
+function lr(e) {
+    "use forget";
+    let t = (0, ur.c)(75),
+        {
+            compact: n,
+            query: r,
+            config: i,
+            dateRange: a,
+            groupBy: o,
+            wrapperClassName: s,
+            tooltipSummaryFormatter: c
+        } = e,
+        l = n !== void 0 && n,
+        u = s === void 0 ? `mt-8` : s,
+        d = le(),
+        {
+            data: f,
+            isLoading: p,
+            isError: m,
+            error: h
+        } = r,
+        [g, _] = (0, dr.useState)();
+    m && M.error(i.loggerMessage, {
+        error: h
+    });
+    let y;
+    if (t[0] !== l || t[1] !== i || t[2] !== f || t[3] !== a || t[4] !== o || t[5] !== d || t[6] !== m || t[7] !== p) {
+        let e = i.buildChartData({
+            response: f,
+            isError: m,
+            isLoading: p,
+            intl: d,
+            dateRange: a,
+            groupBy: o
+        });
+        y = l && i.limitSettingsToolSeries && e !== `loading` ? Dt(e, d.formatMessage({
+            id: `chatgpt.settings.analytics.tool_activity.chart.other`,
+            defaultMessage: `Other`
+        })) : e, t[0] = l, t[1] = i, t[2] = f, t[3] = a, t[4] = o, t[5] = d, t[6] = m, t[7] = p, t[8] = y
+    } else y = t[8];
+    let b = y,
+        x;
+    t[9] !== b || t[10] !== l || t[11] !== g ? (x = l && b !== `loading` && g != null && Object.hasOwn(b.metrics, g) ? g : void 0, t[9] = b, t[10] = l, t[11] = g, t[12] = x) : x = t[12];
+    let S = x,
+        C, w, T, E, D;
+    if (t[13] !== S || t[14] !== b || t[15] !== l || t[16] !== i.errorMessage || t[17] !== i.matchAdminAnalyticsSeriesStyles || t[18] !== i.seriesColorMap || t[19] !== i.summaryLabel || t[20] !== d || t[21] !== m || t[22] !== u) {
+        let e = b === `loading` || l && m ? null : b.data.reduce((e, t) => e + (S == null ? t.total : t.values[S] ?? 0), 0),
+            n;
+        t[28] !== b || t[29] !== l || t[30] !== i.matchAdminAnalyticsSeriesStyles || t[31] !== i.seriesColorMap ? (C = i.matchAdminAnalyticsSeriesStyles && b !== `loading` ? Object.keys(b.metrics) : void 0, n = i.matchAdminAnalyticsSeriesStyles ? l ? It(C ?? []) : hn(C ?? []) : i.seriesColorMap, t[28] = b, t[29] = l, t[30] = i.matchAdminAnalyticsSeriesStyles, t[31] = i.seriesColorMap, t[32] = C, t[33] = n) : (C = t[32], n = t[33]), w = n, t[34] !== i.errorMessage || t[35] !== m ? (D = m ? (0, fr.jsx)(`p`, {
+            className: `mt-6 text-sm text-red-600 dark:text-red-400`,
+            children: (0, fr.jsx)(L, {
+                ...i.errorMessage
+            })
+        }) : null, t[34] = i.errorMessage, t[35] = m, t[36] = D) : D = t[36];
+        let r = l && `flex flex-col gap-3`;
+        t[37] !== r || t[38] !== u ? (T = v(u, r), t[37] = r, t[38] = u, t[39] = T) : T = t[39], E = i.summaryLabel ? (0, fr.jsxs)(`div`, {
+            className: l ? `flex flex-col gap-0.5` : `px-6`,
+            children: [(0, fr.jsx)(`div`, {
+                className: v(`text-token-text-primary font-medium`, l ? `text-sm leading-5` : `text-base leading-6 tracking-[-0.01em]`),
+                children: (0, fr.jsx)(L, {
+                    ...i.summaryLabel
+                })
+            }), (0, fr.jsx)(`div`, {
+                className: v(`text-token-text-primary tabular-nums`, l ? `text-lg leading-[26px] font-semibold` : `mt-1 text-3xl leading-9 font-normal`),
+                children: e == null ? d.formatMessage(pr) : d.formatNumber(e)
+            })]
+        }) : null, t[13] = S, t[14] = b, t[15] = l, t[16] = i.errorMessage, t[17] = i.matchAdminAnalyticsSeriesStyles, t[18] = i.seriesColorMap, t[19] = i.summaryLabel, t[20] = d, t[21] = m, t[22] = u, t[23] = C, t[24] = w, t[25] = T, t[26] = E, t[27] = D
+    } else C = t[23], w = t[24], T = t[25], E = t[26], D = t[27];
+    let O;
+    t[40] !== i.title || t[41] !== i.titleSecondaryText ? (O = i.titleSecondaryText ? (0, fr.jsxs)(`div`, {
+        className: `flex flex-col gap-1`,
+        children: [(0, fr.jsx)(`div`, {
+            children: (0, fr.jsx)(L, {
+                ...i.title
+            })
+        }), (0, fr.jsx)(`div`, {
+            className: `text-token-text-tertiary text-xs`,
+            children: (0, fr.jsx)(L, {
+                ...i.titleSecondaryText
+            })
+        })]
+    }) : (0, fr.jsx)(L, {
+        ...i.title
+    }), t[40] = i.title, t[41] = i.titleSecondaryText, t[42] = O) : O = t[42];
+    let k = l && m ? `error` : b,
+        A = l ? S : void 0,
+        j = l ? _ : void 0,
+        N;
+    t[43] !== i.tooltipTotalLabel || t[44] !== d ? (N = i.tooltipTotalLabel ? d.formatMessage(i.tooltipTotalLabel) : void 0, t[43] = i.tooltipTotalLabel, t[44] = d, t[45] = N) : N = t[45];
+    let ee = i.summaryLabel != null,
+        P = i.matchAdminAnalyticsSeriesStyles ? `codexAnalytics` : void 0,
+        F;
+    t[46] !== C || t[47] !== l || t[48] !== i.clientEventSource || t[49] !== i.hideLegend || t[50] !== i.matchAdminAnalyticsSeriesStyles || t[51] !== i.otherGroupLabel || t[52] !== i.showHorizontalGrid || t[53] !== i.tooltipMetricKeysAtBottom || t[54] !== i.visualization || t[55] !== i.xAxisTickAlignment || t[56] !== i.xAxisTickCount || t[57] !== i.yAxisTickCount || t[58] !== w || t[59] !== A || t[60] !== j || t[61] !== N || t[62] !== ee || t[63] !== P || t[64] !== O || t[65] !== k || t[66] !== c ? (F = (0, fr.jsx)(Mt, {
+        compact: l,
+        title: O,
+        data: k,
+        clientEventSource: i.clientEventSource,
+        hideLegend: i.hideLegend,
+        otherGroupLabel: i.otherGroupLabel,
+        seriesColorMap: w,
+        forceStack: i.matchAdminAnalyticsSeriesStyles,
+        stackOrder: C,
+        legendOrder: C,
+        selectedSeriesKey: A,
+        onSelectedSeriesChange: j,
+        tooltipMetricOrder: C,
+        tooltipTotalLabel: N,
+        tooltipSummaryFormatter: c,
+        tooltipMetricKeysAtBottom: i.tooltipMetricKeysAtBottom,
+        hideHeader: ee,
+        legendVariant: P,
+        visualization: i.visualization,
+        showHorizontalGrid: i.showHorizontalGrid,
+        yAxisTickCount: i.yAxisTickCount,
+        xAxisTickCount: i.xAxisTickCount,
+        xAxisTickAlignment: i.xAxisTickAlignment
+    }), t[46] = C, t[47] = l, t[48] = i.clientEventSource, t[49] = i.hideLegend, t[50] = i.matchAdminAnalyticsSeriesStyles, t[51] = i.otherGroupLabel, t[52] = i.showHorizontalGrid, t[53] = i.tooltipMetricKeysAtBottom, t[54] = i.visualization, t[55] = i.xAxisTickAlignment, t[56] = i.xAxisTickCount, t[57] = i.yAxisTickCount, t[58] = w, t[59] = A, t[60] = j, t[61] = N, t[62] = ee, t[63] = P, t[64] = O, t[65] = k, t[66] = c, t[67] = F) : F = t[67];
+    let te;
+    t[68] !== F || t[69] !== T || t[70] !== E ? (te = (0, fr.jsxs)(`div`, {
+        className: T,
+        children: [E, F]
+    }), t[68] = F, t[69] = T, t[70] = E, t[71] = te) : te = t[71];
+    let I;
+    return t[72] !== te || t[73] !== D ? (I = (0, fr.jsxs)(fr.Fragment, {
+        children: [D, te]
+    }), t[72] = te, t[73] = D, t[74] = I) : I = t[74], I
+}
+var ur, dr, fr, pr, mr = e((() => {
+        ur = ce(), o(), bn(), an(), Ft(), C(), dr = n(R()), se(), fr = I(), pr = {
+            id: `codex.analytics.chart.summaryValueUnavailable`,
+            defaultMessage: `-`,
+            description: `Fallback placeholder shown when a Codex analytics chart summary value is unavailable.`
+        }
+    })),
+    hr, gr, _r = e((() => {
+        hr = {
+            codeReview: `#ffab00`,
+            web: `#ff3621`,
+            mobile: `#8B5CF6`,
+            vscode: `#00a972`,
+            cli: `#077a9d`,
+            desktop: `#6B7280`
+        }, gr = {
+            totalUsers: `#2A5EB1`,
+            codeReviewTasks: hr.codeReview
+        }
+    }));
+
+function vr(e) {
+    "use forget";
+    let t = (0, Lr.c)(178),
+        n;
+    t[0] === e ? n = t[1] : (n = e === void 0 ? {} : e, t[0] = e, t[1] = n);
+    let {
+        dateRange: r
+    } = n, i = le(), [a, o] = (0, Rr.useState)(`30d`), [s, l] = (0, Rr.useState)(`all`), [u, d] = (0, Rr.useState)(`credits`), [f, m] = (0, Rr.useState)(`desc`), [h, g] = (0, Rr.useState)(0), [_, y] = (0, Rr.useState)(`1`), [b, x] = (0, Rr.useState)(``), S;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (S = Vn(), t[2] = S) : S = t[2];
+    let C = S,
+        w = a === `7d` ? 7 : 30,
+        T = Me(b, 1e3),
+        E;
+    t[3] === T ? E = t[4] : (E = T.trim(), t[3] = T, t[4] = E);
+    let D = E,
+        O = h + 1,
+        k;
+    t[5] !== r || t[6] !== D || t[7] !== s || t[8] !== u || t[9] !== f || t[10] !== O || t[11] !== w ? (k = {
+        windowDays: w,
+        page: O,
+        pageSize: zr,
+        clientFilter: s,
+        sortBy: u,
+        sortDirection: f,
+        dateRange: r,
+        searchQuery: D
+    }, t[5] = r, t[6] = D, t[7] = s, t[8] = u, t[9] = f, t[10] = O, t[11] = w, t[12] = k) : k = t[12];
+    let A = De(k);
+    A.data?.response.data;
+    let j;
+    t[13] === A.data?.response.data ? j = t[14] : (j = A.data?.response.data ?? [], t[13] = A.data?.response.data, t[14] = j);
+    let M;
+    t[15] === j ? M = t[16] : (M = j.map(Ar), t[15] = j, t[16] = M);
+    let N = M,
+        ee;
+    bb0: {
+        if (A.data == null) {
+            ee = null;
+            break bb0
+        }
+        let e;t[17] !== A.data.response.total_users || t[18] !== N ? (e = {
+            data: N,
+            totalUsers: A.data.response.total_users
+        }, t[17] = A.data.response.total_users, t[18] = N, t[19] = e) : e = t[19],
+        ee = e
+    }
+    let P = ee,
+        F = P?.totalUsers ?? 0,
+        te;
+    t[20] === N ? te = t[21] : (te = N.some(Cr), t[20] = N, t[21] = te);
+    let I = te,
+        ne = F === 0 ? 0 : Math.ceil(F / zr),
+        re = Math.max(ne - 1, 0),
+        ie;
+    bb1: {
+        if (P == null) {
+            let e;
+            t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[22] = e) : e = t[22], ie = e;
+            break bb1
+        }
+        ie = P.data
+    }
+    let ae = ie,
+        oe = P != null && (A.isPlaceholderData || A.isError),
+        se = oe ? (A.data?.page ?? h) - 1 : h,
+        R = Math.min(Math.max(se, 0), re),
+        ce;
+    if (t[23] !== ae || t[24] !== R) {
+        let e;
+        t[26] === R ? e = t[27] : (e = (e, t) => ({
+            ...e,
+            rank: C ? e.rank ?? R * zr + t + 1 : R * zr + t + 1,
+            displayName: jr(e),
+            secondaryLabel: e.email ?? e.user_id
+        }), t[26] = R, t[27] = e), ce = ae.map(e), t[23] = ae, t[24] = R, t[25] = ce
+    } else ce = t[25];
+    let ue = ce,
+        de = ue.length === 0 ? 0 : R * zr + 1,
+        fe = R * zr + ue.length,
+        pe = A.isFetching && A.isPlaceholderData && P != null,
+        me, he;
+    t[28] === R ? (me = t[29], he = t[30]) : (me = () => {
+        y(String(R + 1))
+    }, he = [R], t[28] = R, t[29] = me, t[30] = he), (0, Rr.useEffect)(me, he);
+    let ge;
+    t[31] === Symbol.for(`react.memo_cache_sentinel`) ? (ge = () => {
+        g(0)
+    }, t[31] = ge) : ge = t[31];
+    let _e = r?.startDate,
+        ve = r?.endDate,
+        ye;
+    t[32] !== D || t[33] !== s || t[34] !== u || t[35] !== f || t[36] !== _e || t[37] !== ve || t[38] !== a ? (ye = [D, _e, ve, s, u, f, a], t[32] = D, t[33] = s, t[34] = u, t[35] = f, t[36] = _e, t[37] = ve, t[38] = a, t[39] = ye) : ye = t[39], (0, Rr.useEffect)(ge, ye);
+    let be, xe;
+    t[40] !== h || t[41] !== re || t[42] !== A.isFetching || t[43] !== ne ? (be = () => {
+        ne === 0 || A.isFetching || h > re && g(re)
+    }, xe = [h, re, A.isFetching, ne], t[40] = h, t[41] = re, t[42] = A.isFetching, t[43] = ne, t[44] = be, t[45] = xe) : (be = t[44], xe = t[45]), (0, Rr.useEffect)(be, xe);
+    let Se;
+    t[46] === u ? Se = t[47] : (Se = e => {
+        if (e === u) {
+            g(0), m(Sr);
+            return
+        }
+        g(0), d(e), m(`desc`)
+    }, t[46] = u, t[47] = Se);
+    let Ce = Se,
+        we;
+    t[48] !== h || t[49] !== oe || t[50] !== ne || t[51] !== _ || t[52] !== R ? (we = () => {
+        if (ne === 0 || oe) return;
+        let e = Number.parseInt(_, 10);
+        if (Number.isNaN(e)) {
+            y(String(R + 1));
+            return
+        }
+        let t = Math.min(Math.max(e, 1), ne);
+        y(String(t)), t - 1 !== h && g(t - 1)
+    }, t[48] = h, t[49] = oe, t[50] = ne, t[51] = _, t[52] = R, t[53] = we) : we = t[53];
+    let Te = we,
+        Ee;
+    t[54] === Symbol.for(`react.memo_cache_sentinel`) ? (Ee = {
+        field: `rank`,
+        header: (0, q.jsx)(`span`, {
+            className: `text-token-text-tertiary text-xs font-normal`,
+            children: (0, q.jsx)(L, {
+                ...J.rankColumn
+            })
+        })
+    }, t[54] = Ee) : Ee = t[54];
+    let ke;
+    t[55] === Symbol.for(`react.memo_cache_sentinel`) ? (ke = {
+        field: `user`,
+        header: (0, q.jsx)(`span`, {
+            className: `text-token-text-tertiary text-xs font-normal`,
+            children: (0, q.jsx)(L, {
+                ...J.userColumn
+            })
+        })
+    }, t[55] = ke) : ke = t[55];
+    let Ae;
+    t[56] === i ? Ae = t[57] : (Ae = i.formatMessage(J.threadsColumn), t[56] = i, t[57] = Ae);
+    let je;
+    t[58] === Ce ? je = t[59] : (je = () => Ce(`threads`), t[58] = Ce, t[59] = je);
+    let Ne;
+    t[60] !== u || t[61] !== f || t[62] !== Ae || t[63] !== je ? (Ne = {
+        field: `threads`,
+        header: (0, q.jsx)(Tr, {
+            label: Ae,
+            sortKey: `threads`,
+            sortBy: u,
+            sortDirection: f,
+            onClick: je
+        })
+    }, t[60] = u, t[61] = f, t[62] = Ae, t[63] = je, t[64] = Ne) : Ne = t[64];
+    let Pe;
+    t[65] === i ? Pe = t[66] : (Pe = i.formatMessage(J.turnsColumn), t[65] = i, t[66] = Pe);
+    let Fe;
+    t[67] === Ce ? Fe = t[68] : (Fe = () => Ce(`turns`), t[67] = Ce, t[68] = Fe);
+    let Ie;
+    t[69] !== u || t[70] !== f || t[71] !== Pe || t[72] !== Fe ? (Ie = {
+        field: `turns`,
+        header: (0, q.jsx)(Tr, {
+            label: Pe,
+            sortKey: `turns`,
+            sortBy: u,
+            sortDirection: f,
+            onClick: Fe
+        })
+    }, t[69] = u, t[70] = f, t[71] = Pe, t[72] = Fe, t[73] = Ie) : Ie = t[73];
+    let Le;
+    t[74] === i ? Le = t[75] : (Le = i.formatMessage(J.currentStreakColumn), t[74] = i, t[75] = Le);
+    let Re;
+    t[76] === i ? Re = t[77] : (Re = i.formatMessage(J.currentStreakTooltip), t[76] = i, t[77] = Re);
+    let ze;
+    t[78] === Ce ? ze = t[79] : (ze = () => Ce(`current_streak`), t[78] = Ce, t[79] = ze);
+    let Be;
+    t[80] !== u || t[81] !== f || t[82] !== Le || t[83] !== Re || t[84] !== ze ? (Be = {
+        field: `currentStreak`,
+        header: (0, q.jsx)(Tr, {
+            label: Le,
+            tooltipLabel: Re,
+            sortKey: `current_streak`,
+            sortBy: u,
+            sortDirection: f,
+            onClick: ze
+        })
+    }, t[80] = u, t[81] = f, t[82] = Le, t[83] = Re, t[84] = ze, t[85] = Be) : Be = t[85];
+    let Ve;
+    if (t[86] !== Ce || t[87] !== I || t[88] !== i || t[89] !== u || t[90] !== f || t[91] !== Ne || t[92] !== Ie || t[93] !== Be) {
+        if (Ve = [Ee, ke, Ne, Ie, Be], I) {
+            let e;
+            t[95] === i ? e = t[96] : (e = i.formatMessage(J.textTokensColumn), t[95] = i, t[96] = e);
+            let n;
+            t[97] === i ? n = t[98] : (n = i.formatMessage(J.textTokensTooltip), t[97] = i, t[98] = n);
+            let r;
+            t[99] === Ce ? r = t[100] : (r = () => Ce(`text_tokens`), t[99] = Ce, t[100] = r);
+            let a;
+            t[101] !== u || t[102] !== f || t[103] !== e || t[104] !== n || t[105] !== r ? (a = {
+                field: `textTokens`,
+                header: (0, q.jsx)(Tr, {
+                    label: e,
+                    tooltipLabel: n,
+                    sortKey: `text_tokens`,
+                    sortBy: u,
+                    sortDirection: f,
+                    onClick: r
+                })
+            }, t[101] = u, t[102] = f, t[103] = e, t[104] = n, t[105] = r, t[106] = a) : a = t[106], Ve.push(a)
+        }
+        let e;
+        t[107] === i ? e = t[108] : (e = i.formatMessage(J.linesOfCodeColumn), t[107] = i, t[108] = e);
+        let n;
+        t[109] === i ? n = t[110] : (n = i.formatMessage(J.linesOfCodeTooltip), t[109] = i, t[110] = n);
+        let r;
+        t[111] === Ce ? r = t[112] : (r = () => Ce(`lines_of_code`), t[111] = Ce, t[112] = r);
+        let a;
+        t[113] !== u || t[114] !== f || t[115] !== e || t[116] !== n || t[117] !== r ? (a = {
+            field: `linesOfCode`,
+            header: (0, q.jsx)(Tr, {
+                label: e,
+                tooltipLabel: n,
+                sortKey: `lines_of_code`,
+                sortBy: u,
+                sortDirection: f,
+                onClick: r
+            })
+        }, t[113] = u, t[114] = f, t[115] = e, t[116] = n, t[117] = r, t[118] = a) : a = t[118], Ve.push(a);
+        let o;
+        t[119] === i ? o = t[120] : (o = i.formatMessage(J.creditsColumn), t[119] = i, t[120] = o);
+        let s;
+        t[121] === Ce ? s = t[122] : (s = () => Ce(`credits`), t[121] = Ce, t[122] = s);
+        let c;
+        t[123] !== u || t[124] !== f || t[125] !== o || t[126] !== s ? (c = {
+            field: `credits`,
+            header: (0, q.jsx)(Tr, {
+                label: o,
+                sortKey: `credits`,
+                sortBy: u,
+                sortDirection: f,
+                onClick: s
+            })
+        }, t[123] = u, t[124] = f, t[125] = o, t[126] = s, t[127] = c) : c = t[127], Ve.push(c), t[86] = Ce, t[87] = I, t[88] = i, t[89] = u, t[90] = f, t[91] = Ne, t[92] = Ie, t[93] = Be, t[94] = Ve
+    } else Ve = t[94];
+    let He = Ve,
+        Ue;
+    t[128] === Symbol.for(`react.memo_cache_sentinel`) ? (Ue = (0, q.jsx)(`h3`, {
+        className: `text-token-text-primary text-xl font-semibold`,
+        children: (0, q.jsx)(L, {
+            ...J.sectionTitle
+        })
+    }), t[128] = Ue) : Ue = t[128];
+    let We;
+    t[129] === Symbol.for(`react.memo_cache_sentinel`) ? (We = (0, q.jsxs)(`div`, {
+        className: `flex min-w-0 flex-1 flex-col gap-1`,
+        children: [Ue, (0, q.jsx)(`p`, {
+            className: `text-token-text-tertiary max-w-2xl text-sm`,
+            children: (0, q.jsx)(L, {
+                ...J.populationHelpText
+            })
+        })]
+    }), t[129] = We) : We = t[129];
+    let Ge;
+    t[130] === Symbol.for(`react.memo_cache_sentinel`) ? (Ge = (0, q.jsx)(c, {
+        className: `text-token-text-tertiary pointer-events-none absolute start-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2`
+    }), t[130] = Ge) : Ge = t[130];
+    let Ke;
+    t[131] === i ? Ke = t[132] : (Ke = i.formatMessage(J.searchInputAriaLabel), t[131] = i, t[132] = Ke);
+    let z;
+    t[133] === Symbol.for(`react.memo_cache_sentinel`) ? (z = e => {
+        x(e.target.value)
+    }, t[133] = z) : z = t[133];
+    let qe;
+    t[134] === i ? qe = t[135] : (qe = i.formatMessage(J.searchInputPlaceholder), t[134] = i, t[135] = qe);
+    let B;
+    t[136] !== b || t[137] !== Ke || t[138] !== qe ? (B = (0, q.jsxs)(`label`, {
+        htmlFor: `codex-usage-leaderboard-search`,
+        className: `relative block w-36`,
+        children: [Ge, (0, q.jsx)(`input`, {
+            id: `codex-usage-leaderboard-search`,
+            "aria-label": Ke,
+            className: `border-token-border-default bg-token-bg-primary text-token-text-primary placeholder:text-token-text-quaternary focus:border-token-border-xheavy caret-token-text-primary h-9 w-full rounded-full border ps-9 pe-3 text-sm font-normal shadow-none ring-0 outline-hidden focus:ring-0`,
+            name: `codex-usage-leaderboard-search`,
+            onChange: z,
+            placeholder: qe,
+            role: `searchbox`,
+            type: `text`,
+            value: b
+        })]
+    }), t[136] = b, t[137] = Ke, t[138] = qe, t[139] = B) : B = t[139];
+    let Je;
+    t[140] === Symbol.for(`react.memo_cache_sentinel`) ? (Je = e => l(t => {
+        let n = Nr(e) ? e : Br[0];
+        return n !== t && g(0), n
+    }), t[140] = Je) : Je = t[140];
+    let Ye;
+    t[141] !== i || t[142] !== s ? (Ye = i.formatMessage(Fr(s)), t[141] = i, t[142] = s, t[143] = Ye) : Ye = t[143];
+    let Xe;
+    t[144] === i ? Xe = t[145] : (Xe = i.formatMessage(J.productFilterLabel), t[144] = i, t[145] = Xe);
+    let Ze;
+    t[146] !== s || t[147] !== Ye || t[148] !== Xe ? (Ze = (0, q.jsx)(wr, {
+        value: s,
+        options: Br,
+        onChange: Je,
+        label: Ye,
+        ariaLabel: Xe,
+        getOptionLabel: xr
+    }), t[146] = s, t[147] = Ye, t[148] = Xe, t[149] = Ze) : Ze = t[149];
+    let Qe;
+    t[150] !== r || t[151] !== i || t[152] !== a ? (Qe = r ? null : (0, q.jsx)(wr, {
+        value: a,
+        options: Vr,
+        onChange: e => o(t => {
+            let n = Pr(e) ? e : Vr[1];
+            return n !== t && g(0), n
+        }),
+        label: i.formatMessage(Ir(a)),
+        ariaLabel: i.formatMessage(J.rangeToggleLabel),
+        getOptionLabel: br
+    }), t[150] = r, t[151] = i, t[152] = a, t[153] = Qe) : Qe = t[153];
+    let $e;
+    t[154] !== B || t[155] !== Ze || t[156] !== Qe ? ($e = (0, q.jsxs)(`div`, {
+        className: `flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between`,
+        children: [We, (0, q.jsxs)(`div`, {
+            className: `flex flex-wrap items-center justify-end gap-3`,
+            children: [B, Ze, Qe]
+        })]
+    }), t[154] = B, t[155] = Ze, t[156] = Qe, t[157] = $e) : $e = t[157];
+    let et;
+    t[158] !== He || t[159] !== D || t[160] !== fe || t[161] !== de || t[162] !== P || t[163] !== Te || t[164] !== I || t[165] !== i || t[166] !== pe || t[167] !== oe || t[168] !== A || t[169] !== ne || t[170] !== _ || t[171] !== ue || t[172] !== R || t[173] !== F ? (et = (0, q.jsx)(`div`, {
+        className: `border-token-border-light bg-token-bg-elevated-primary flex flex-1 flex-col overflow-hidden rounded-2xl border shadow-sm`,
+        children: A.isLoading && P == null ? (0, q.jsx)(`div`, {
+            className: `flex min-h-64 items-center justify-center`,
+            children: (0, q.jsx)(p, {
+                className: `icon-lg text-token-text-tertiary`
+            })
+        }) : A.isError && P == null ? (0, q.jsxs)(`div`, {
+            className: `flex min-h-64 flex-col items-center justify-center gap-4 px-6 text-center`,
+            children: [(0, q.jsx)(`p`, {
+                className: `text-token-text-secondary text-sm`,
+                children: (0, q.jsx)(L, {
+                    ...J.errorMessage
+                })
+            }), (0, q.jsx)(`button`, {
+                type: `button`,
+                className: `btn btn-secondary`,
+                onClick: () => void A.refetch(),
+                children: (0, q.jsx)(L, {
+                    ...J.retryButton
+                })
+            })]
+        }) : (0, q.jsxs)(q.Fragment, {
+            children: [(0, q.jsxs)(`div`, {
+                className: `relative overflow-x-auto px-4 md:px-6`,
+                children: [pe ? (0, q.jsx)(`div`, {
+                    className: `bg-token-bg-primary/55 absolute inset-0 z-10 flex items-center justify-center backdrop-blur-[1px]`,
+                    children: (0, q.jsx)(p, {
+                        className: `icon-md text-token-text-tertiary`
+                    })
+                }) : null, (0, q.jsx)(Mn.Root, {
+                    columns: He,
+                    rows: ue,
+                    rowKey: yr,
+                    emptyMessage: D.length > 0 ? (0, q.jsx)(L, {
+                        ...J.emptySearchMessage
+                    }) : (0, q.jsx)(L, {
+                        ...J.emptyMessage
+                    }),
+                    className: v(Hr, `min-w-[980px]`, I ? Ur.withTextTokens : Ur.withoutTextTokens),
+                    children: e => e.map(e => (0, q.jsxs)(Mn.Row, {
+                        rowKey: e.user_id,
+                        className: `hover:bg-token-bg-tertiary/60 transition-colors`,
+                        children: [(0, q.jsx)(Mn.Cell, {
+                            field: `rank`,
+                            className: `py-4`,
+                            children: (0, q.jsx)(`div`, {
+                                className: `text-sm font-normal tabular-nums`,
+                                children: i.formatNumber(e.rank)
+                            })
+                        }), (0, q.jsx)(Mn.Cell, {
+                            field: `user`,
+                            className: `py-4`,
+                            children: (0, q.jsxs)(`div`, {
+                                className: `flex min-w-0 items-center gap-3`,
+                                children: [(0, q.jsx)(Dr, {
+                                    name: e.displayName,
+                                    userId: e.user_id
+                                }), (0, q.jsxs)(`div`, {
+                                    className: `min-w-0`,
+                                    children: [(0, q.jsx)(`div`, {
+                                        className: `text-token-text-primary truncate text-sm font-normal`,
+                                        children: e.displayName
+                                    }), (0, q.jsx)(`div`, {
+                                        className: `text-token-text-tertiary truncate text-sm`,
+                                        children: e.secondaryLabel
+                                    })]
+                                })]
+                            })
+                        }), (0, q.jsx)(Mn.Cell, {
+                            field: `threads`,
+                            className: `py-4`,
+                            children: (0, q.jsx)(Er, {
+                                children: i.formatNumber(e.threads)
+                            })
+                        }), (0, q.jsx)(Mn.Cell, {
+                            field: `turns`,
+                            className: `py-4`,
+                            children: (0, q.jsx)(Er, {
+                                children: i.formatNumber(e.turns)
+                            })
+                        }), (0, q.jsx)(Mn.Cell, {
+                            field: `currentStreak`,
+                            className: `py-4`,
+                            children: (0, q.jsx)(Er, {
+                                children: kr(i, e.currentStreak)
+                            })
+                        }), I ? (0, q.jsx)(Mn.Cell, {
+                            field: `textTokens`,
+                            className: `py-4`,
+                            children: (0, q.jsx)(Er, {
+                                children: i.formatNumber(e.textTokens ?? 0)
+                            })
+                        }) : null, (0, q.jsx)(Mn.Cell, {
+                            field: `linesOfCode`,
+                            className: `py-4`,
+                            children: (0, q.jsx)(Er, {
+                                children: e.linesOfCode == null ? i.formatMessage(J.metricUnavailable) : i.formatNumber(e.linesOfCode)
+                            })
+                        }), (0, q.jsx)(Mn.Cell, {
+                            field: `credits`,
+                            className: `py-4`,
+                            children: (0, q.jsx)(Er, {
+                                children: Or(i, e.credits)
+                            })
+                        })]
+                    }, e.user_id))
+                })]
+            }), (0, q.jsxs)(`div`, {
+                className: `bg-token-bg-tertiary/60 border-token-border-light flex flex-wrap items-center justify-between gap-3 border-t px-4 py-3 md:px-6`,
+                children: [(0, q.jsx)(`div`, {
+                    className: `text-token-text-tertiary text-sm`,
+                    children: (0, q.jsx)(L, {
+                        ...J.paginationSummary,
+                        values: {
+                            start: de,
+                            end: fe,
+                            total: F
+                        }
+                    })
+                }), (0, q.jsxs)(`div`, {
+                    className: `flex items-center gap-3`,
+                    children: [(0, q.jsxs)(`div`, {
+                        className: `flex items-center gap-2`,
+                        children: [(0, q.jsx)(`label`, {
+                            htmlFor: `codex-usage-leaderboard-page-input`,
+                            className: `text-token-text-tertiary text-sm`,
+                            children: (0, q.jsx)(L, {
+                                ...J.pageLabel
+                            })
+                        }), (0, q.jsx)(`input`, {
+                            id: `codex-usage-leaderboard-page-input`,
+                            type: `text`,
+                            inputMode: `numeric`,
+                            pattern: `[0-9]*`,
+                            value: _,
+                            onChange: e => {
+                                y(e.target.value.replace(/\D+/gu, ``))
+                            },
+                            onKeyDown: e => {
+                                e.key === `Enter` && (e.preventDefault(), Te())
+                            },
+                            onBlur: Te,
+                            "aria-label": i.formatMessage(J.pageInputAriaLabel),
+                            disabled: ne === 0 || oe,
+                            className: `border-token-border-default text-token-text-primary bg-token-bg-primary focus:border-token-border-heavy h-8 w-16 rounded-md border px-2 text-sm tabular-nums focus:outline-hidden disabled:opacity-50`
+                        }), (0, q.jsx)(`span`, {
+                            className: `text-token-text-tertiary text-sm tabular-nums`,
+                            children: (0, q.jsx)(L, {
+                                ...J.pageCountIndicator,
+                                values: {
+                                    count: i.formatNumber(Math.max(ne, 1))
+                                }
+                            })
+                        })]
+                    }), (0, q.jsx)(Oe, {
+                        currentPage: R,
+                        length: ne,
+                        onChangeIndex: e => {
+                            oe || g(e)
+                        }
+                    })]
+                })]
+            })]
+        })
+    }), t[158] = He, t[159] = D, t[160] = fe, t[161] = de, t[162] = P, t[163] = Te, t[164] = I, t[165] = i, t[166] = pe, t[167] = oe, t[168] = A, t[169] = ne, t[170] = _, t[171] = ue, t[172] = R, t[173] = F, t[174] = et) : et = t[174];
+    let tt;
+    return t[175] !== $e || t[176] !== et ? (tt = (0, q.jsxs)(`section`, {
+        className: `flex flex-1 flex-col gap-6`,
+        children: [$e, et]
+    }), t[175] = $e, t[176] = et, t[177] = tt) : tt = t[177], tt
+}
+
+function yr(e) {
+    return e.user_id
+}
+
+function br(e) {
+    return (0, q.jsx)(L, {
+        ...Ir(e)
+    })
+}
+
+function xr(e) {
+    return (0, q.jsx)(L, {
+        ...Fr(e)
+    })
+}
+
+function Sr(e) {
+    return e === `desc` ? `asc` : `desc`
+}
+
+function Cr(e) {
+    return e.textTokens != null
+}
+
+function wr(e) {
+    "use forget";
+    let t = (0, Lr.c)(18),
+        {
+            value: n,
+            options: r,
+            onChange: i,
+            label: a,
+            ariaLabel: o,
+            getOptionLabel: s
+        } = e,
+        c;
+    t[0] === a ? c = t[1] : (c = (0, q.jsx)(`span`, {
+        className: `truncate`,
+        children: a
+    }), t[0] = a, t[1] = c);
+    let l;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, q.jsx)(Ie, {
+        className: `h-3 w-3`
+    }), t[2] = l) : l = t[2];
+    let u;
+    t[3] !== o || t[4] !== c ? (u = (0, q.jsxs)(ue.Trigger, {
+        "aria-label": o,
+        className: `border-token-border-default text-token-text-primary bg-token-bg-primary flex h-9 w-36 items-center justify-between gap-2 rounded-full border px-3 text-sm font-normal`,
+        children: [c, l]
+    }), t[3] = o, t[4] = c, t[5] = u) : u = t[5];
+    let d;
+    if (t[6] !== s || t[7] !== r) {
+        let e;
+        t[9] === s ? e = t[10] : (e = e => (0, q.jsx)(ue.RadioItem, {
+            value: e,
+            label: s(e)
+        }, e), t[9] = s, t[10] = e), d = r.map(e), t[6] = s, t[7] = r, t[8] = d
+    } else d = t[8];
+    let f;
+    t[11] !== i || t[12] !== d || t[13] !== n ? (f = (0, q.jsx)(ue.Portal, {
+        children: (0, q.jsx)(ue.Content, {
+            align: `end`,
+            children: (0, q.jsx)(ue.RadioGroup, {
+                value: n,
+                onValueChange: i,
+                children: d
+            })
+        })
+    }), t[11] = i, t[12] = d, t[13] = n, t[14] = f) : f = t[14];
+    let p;
+    return t[15] !== u || t[16] !== f ? (p = (0, q.jsxs)(ue.Root, {
+        children: [u, f]
+    }), t[15] = u, t[16] = f, t[17] = p) : p = t[17], p
+}
+
+function Tr(e) {
+    "use forget";
+    let t = (0, Lr.c)(17),
+        {
+            label: n,
+            tooltipLabel: r,
+            sortKey: i,
+            sortBy: a,
+            sortDirection: o,
+            onClick: s
+        } = e,
+        c = a === i,
+        l = c && `text-token-text-secondary`,
+        u;
+    t[0] === l ? u = t[1] : (u = v(`group text-token-text-tertiary hover:text-token-text-secondary inline-flex items-center gap-1 text-xs font-normal`, l), t[0] = l, t[1] = u);
+    let d;
+    t[2] === n ? d = t[3] : (d = (0, q.jsx)(`span`, {
+        children: n
+    }), t[2] = n, t[3] = d);
+    let f;
+    t[4] !== c || t[5] !== o ? (f = c ? o === `asc` ? (0, q.jsx)(Le, {
+        className: `h-3 w-3`
+    }) : (0, q.jsx)(Ie, {
+        className: `h-3 w-3`
+    }) : (0, q.jsx)(Re, {
+        className: `h-3 w-3 opacity-0 transition-opacity group-hover:opacity-100`
+    }), t[4] = c, t[5] = o, t[6] = f) : f = t[6];
+    let p;
+    t[7] !== s || t[8] !== u || t[9] !== d || t[10] !== f ? (p = (0, q.jsxs)(`button`, {
+        type: `button`,
+        onClick: s,
+        className: u,
+        children: [d, f]
+    }), t[7] = s, t[8] = u, t[9] = d, t[10] = f, t[11] = p) : p = t[11];
+    let m;
+    t[12] === r ? m = t[13] : (m = r ? (0, q.jsx)(_, {
+        label: r,
+        children: (0, q.jsx)(x, {
+            className: `icon-sm text-token-text-tertiary`
+        })
+    }) : null, t[12] = r, t[13] = m);
+    let h;
+    return t[14] !== p || t[15] !== m ? (h = (0, q.jsxs)(`div`, {
+        className: `flex items-center gap-1`,
+        children: [p, m]
+    }), t[14] = p, t[15] = m, t[16] = h) : h = t[16], h
+}
+
+function Er(e) {
+    "use forget";
+    let t = (0, Lr.c)(2),
+        {
+            children: n
+        } = e,
+        r;
+    return t[0] === n ? r = t[1] : (r = (0, q.jsx)(`div`, {
+        className: `text-token-text-primary text-start text-sm font-normal tabular-nums`,
+        children: n
+    }), t[0] = n, t[1] = r), r
+}
+
+function Dr(e) {
+    "use forget";
+    let t = (0, Lr.c)(8),
+        {
+            name: n,
+            userId: r
+        } = e,
+        i;
+    t[0] !== n || t[1] !== r ? (i = a(n) || a(r), t[0] = n, t[1] = r, t[2] = i) : i = t[2];
+    let o = i,
+        s;
+    t[3] === r ? s = t[4] : (s = v(`flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[11px] font-medium text-white`, m(r)), t[3] = r, t[4] = s);
+    let c;
+    return t[5] !== o || t[6] !== s ? (c = (0, q.jsx)(`div`, {
+        className: s,
+        children: o
+    }), t[5] = o, t[6] = s, t[7] = c) : c = t[7], c
+}
+
+function Or(e, t) {
+    return e.formatNumber(Math.round(t))
+}
+
+function kr(e, t) {
+    return t == null ? `-` : e.formatNumber(t)
+}
+
+function Ar(e) {
+    let t = e;
+    return {
+        rank: e.rank ?? null,
+        user_id: e.user_id,
+        name: e.name,
+        email: e.email,
+        credits: e.credits ?? 0,
+        currentStreak: e.current_streak ?? null,
+        linesOfCode: t.code_attribution?.lines_of_code?.added ?? t.lines_of_code?.added ?? null,
+        threads: e.n_threads ?? 0,
+        turns: e.n_turns ?? 0,
+        textTokens: e.text_tokens ?? null
+    }
+}
+
+function jr(e) {
+    return typeof e.name == `string` && e.name.trim() !== `` ? e.name : (e.email?.split(`@`)[0] ?? e.user_id).split(/[._-]+/u).map(e => e.trim()).filter(Boolean).map(Mr).join(` `) || e.user_id
+}
+
+function Mr(e) {
+    return e.length === 0 ? e : `${e[0]?.toUpperCase()??``}${e.slice(1)}`
+}
+
+function Nr(e) {
+    return Br.some(t => t === e)
+}
+
+function Pr(e) {
+    return Vr.some(t => t === e)
+}
+
+function Fr(e) {
+    switch (e) {
+        case `cloud`:
+            return J.productCloud;
+        case `desktop`:
+            return J.productDesktop;
+        case `cli`:
+            return J.productCli;
+        case `extension`:
+            return J.productExtension;
+        case `other`:
+            return J.productOther;
+        default:
+            return J.productAll
+    }
+}
+
+function Ir(e) {
+    switch (e) {
+        case `7d`:
+            return J.oneWeek;
+        default:
+            return J.thirtyDays
+    }
+}
+var Lr, Rr, q, zr, Br, Vr, Hr, Ur, J, Wr = e((() => {
+    Lr = ce(), j(), je(), F(), jn(), Ce(), f(), Fe(), He(), ze(), T(), d(), Un(), we(), me(), C(), Rr = n(R()), se(), q = I(), zr = 50, Br = [`all`, `desktop`, `cli`, `extension`, `cloud`, `other`], Vr = [`7d`, `30d`], Hr = [`[&_thead_th]:bg-transparent`, `[&_thead_th]:pt-2`, `[&_thead_th]:pb-3`], Ur = {
+        withoutTextTokens: [`[&_thead_th:nth-child(1)]:w-[8%]`, `[&_thead_th:nth-child(2)]:w-[22%]`, `[&_thead_th:nth-child(3)]:w-[14%]`, `[&_thead_th:nth-child(4)]:w-[14%]`, `[&_thead_th:nth-child(5)]:w-[14%]`, `[&_thead_th:nth-child(6)]:w-[14%]`, `[&_thead_th:nth-child(7)]:w-[14%]`],
+        withTextTokens: [`[&_thead_th:nth-child(1)]:w-[7%]`, `[&_thead_th:nth-child(2)]:w-[20%]`, `[&_thead_th:nth-child(3)]:w-[12%]`, `[&_thead_th:nth-child(4)]:w-[12%]`, `[&_thead_th:nth-child(5)]:w-[12%]`, `[&_thead_th:nth-child(6)]:w-[12%]`, `[&_thead_th:nth-child(7)]:w-[12%]`, `[&_thead_th:nth-child(8)]:w-[13%]`]
+    }, J = ie({
+        sectionTitle: {
+            id: `codex.analytics.sections.leaderboard`,
+            defaultMessage: `Usage leaderboard`
+        },
+        populationHelpText: {
+            id: `codex.analytics.leaderboard.population.helpText`,
+            defaultMessage: `Includes users with threads, turns, or credit usage for the selected filters. Users with no matching activity are omitted, and some activity may use 0 credits.`
+        },
+        rankColumn: {
+            id: `codex.analytics.leaderboard.rank`,
+            defaultMessage: `Rank`
+        },
+        userColumn: {
+            id: `codex.analytics.leaderboard.user`,
+            defaultMessage: `User`
+        },
+        creditsColumn: {
+            id: `codex.analytics.leaderboard.credits`,
+            defaultMessage: `Credits`
+        },
+        threadsColumn: {
+            id: `codex.analytics.leaderboard.threads`,
+            defaultMessage: `Threads`
+        },
+        turnsColumn: {
+            id: `codex.analytics.leaderboard.turns`,
+            defaultMessage: `Turns`
+        },
+        currentStreakColumn: {
+            id: `codex.analytics.leaderboard.currentStreak`,
+            defaultMessage: `Streak`
+        },
+        currentStreakTooltip: {
+            id: `codex.analytics.leaderboard.currentStreak.tooltip`,
+            defaultMessage: `Current Codex activity streak within the available data window`
+        },
+        textTokensColumn: {
+            id: `codex.analytics.leaderboard.textTokens`,
+            defaultMessage: `Text tokens`
+        },
+        linesOfCodeColumn: {
+            id: `codex.analytics.leaderboard.linesOfCode`,
+            defaultMessage: `Lines of code`
+        },
+        linesOfCodeTooltip: {
+            id: `codex.analytics.leaderboard.linesOfCodeTooltip`,
+            defaultMessage: `Total lines of code generated by Codex in user sessions`
+        },
+        textTokensTooltip: {
+            id: `codex.analytics.leaderboard.textTokensTooltip`,
+            defaultMessage: `Only includes tokens tracked after token-based pricing was enabled`
+        },
+        rangeToggleLabel: {
+            id: `codex.analytics.leaderboard.rangeToggleLabel`,
+            defaultMessage: `Select leaderboard date range`
+        },
+        productFilterLabel: {
+            id: `codex.analytics.leaderboard.productFilterLabel`,
+            defaultMessage: `Filter leaderboard by client`
+        },
+        oneWeek: {
+            id: `codex.analytics.leaderboard.oneWeek`,
+            defaultMessage: `1 week`
+        },
+        thirtyDays: {
+            id: `codex.analytics.leaderboard.thirtyDays`,
+            defaultMessage: `30 days`
+        },
+        productAll: {
+            id: `codex.analytics.leaderboard.productAll`,
+            defaultMessage: `All clients`
+        },
+        productCloud: {
+            id: `codex.analytics.leaderboard.productCloud`,
+            defaultMessage: `Cloud`
+        },
+        productDesktop: {
+            id: `codex.analytics.leaderboard.productDesktop`,
+            defaultMessage: `Desktop`
+        },
+        productCli: {
+            id: `codex.analytics.leaderboard.productCli`,
+            defaultMessage: `CLI`
+        },
+        productExtension: {
+            id: `codex.analytics.leaderboard.productExtension`,
+            defaultMessage: `Extension`
+        },
+        productOther: {
+            id: `codex.analytics.leaderboard.productOther`,
+            defaultMessage: `Other`
+        },
+        errorMessage: {
+            id: `codex.analytics.leaderboard.error`,
+            defaultMessage: `We couldn't load the leaderboard right now.`
+        },
+        retryButton: {
+            id: `codex.analytics.leaderboard.retry`,
+            defaultMessage: `Retry`
+        },
+        emptyMessage: {
+            id: `codex.analytics.leaderboard.empty`,
+            defaultMessage: `No leaderboard activity found for this time range.`
+        },
+        emptySearchMessage: {
+            id: `codex.analytics.leaderboard.emptySearch`,
+            defaultMessage: `No users matched that search.`
+        },
+        paginationSummary: {
+            id: `codex.analytics.leaderboard.paginationSummary.matchingActivity`,
+            defaultMessage: `Showing {start, number}-{end, number} of {total, plural, one {# user} other {# users}} with matching activity`
+        },
+        pageLabel: {
+            id: `codex.analytics.leaderboard.pageLabel`,
+            defaultMessage: `Page`
+        },
+        pageInputAriaLabel: {
+            id: `codex.analytics.leaderboard.pageInputAriaLabel`,
+            defaultMessage: `Go to leaderboard page`
+        },
+        pageCountIndicator: {
+            id: `codex.analytics.leaderboard.pageCountIndicator`,
+            defaultMessage: `/ {count}`
+        },
+        searchInputAriaLabel: {
+            id: `codex.analytics.leaderboard.searchInputAriaLabel`,
+            defaultMessage: `Search leaderboard by name or email`
+        },
+        searchInputPlaceholder: {
+            id: `codex.analytics.leaderboard.searchInputPlaceholder`,
+            defaultMessage: `Search`
+        },
+        metricUnavailable: {
+            id: `codex.analytics.leaderboard.metricUnavailable`,
+            defaultMessage: `-`
+        }
+    })
+}));
+
+function Gr(e, t = window.open.bind(window)) {
+    t(e, `_blank`, `noopener,noreferrer`)
+}
+
+function Kr() {
+    return `mx-auto flex w-full max-w-screen-xl flex-col gap-8 ps-4 pe-12`
+}
+
+function qr() {
+    return `flex flex-col gap-8 pb-16`
+}
+
+function Jr(e) {
+    return v(`flex flex-col border-b`, e ? `border-token-border-light bg-token-bg-primary dark:bg-token-bg-secondary-surface sticky top-0 z-10` : `border-token-border-heavy`)
+}
+
+function Yr({
+    groupBy: e,
+    showAnalyticsRedesign: t
+}) {
+    return t ? e === `week` ? {
+        id: `codex.analytics.usageSurface.title.weekly.redesign`,
+        defaultMessage: `Active users`,
+        description: `Section title for the users panel on the redesigned Codex analytics Usage tab.`
+    } : {
+        id: `codex.analytics.usageSurface.title.daily.redesign`,
+        defaultMessage: `Active users`,
+        description: `Section title for the users panel on the redesigned Codex analytics Usage tab.`
+    } : {
+        id: `codex.analytics.usageSurface.title`,
+        defaultMessage: `Active users`,
+        description: `Title for the combined usage by app surface analytics panel`
+    }
+}
+
+function Xr(e) {
+    return e === `week` ? {
+        id: `codex.analytics.codeReviewPanel.reviewsChartTitle.weekly.redesign`,
+        defaultMessage: `Weekly reviews done`,
+        description: `Title for the reviews-done chart on the redesigned Codex analytics Code review tab when grouped by week.`
+    } : {
+        id: `codex.analytics.codeReviewPanel.reviewsChartTitle.daily.redesign`,
+        defaultMessage: `Daily reviews done`,
+        description: `Title for the reviews-done chart on the redesigned Codex analytics Code review tab when grouped by day.`
+    }
+}
+
+function Zr(e) {
+    return e === `week` ? {
+        id: `codex.analytics.dailycodereviewreactions.chartTitle.weekly.redesign`,
+        defaultMessage: `Weekly code review reactions`,
+        description: `Title for the code review reactions chart on the redesigned Codex analytics Code review tab when grouped by week.`
+    } : {
+        id: `codex.analytics.dailycodereviewreactions.chartTitle.daily.redesign`,
+        defaultMessage: `Daily code review reactions`,
+        description: `Title for the code review reactions chart on the redesigned Codex analytics Code review tab when grouped by day.`
+    }
+}
+
+function Qr(e) {
+    return e === `week` ? {
+        id: `codex.analytics.dailycodereviewsentiment.chartTitle.weekly.redesign`,
+        defaultMessage: `Weekly code review feedback sentiment`,
+        description: `Title for the code review sentiment chart on the redesigned Codex analytics Code review tab when grouped by week.`
+    } : {
+        id: `codex.analytics.dailycodereviewsentiment.chartTitle.daily.redesign`,
+        defaultMessage: `Daily code review feedback sentiment`,
+        description: `Title for the code review sentiment chart on the redesigned Codex analytics Code review tab when grouped by day.`
+    }
+}
+var $r = e((() => {
+    C()
+}));
+
+function ei(e) {
+    "use forget";
+    let t = (0, ti.c)(11),
+        n, r, i, a;
+    t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4]) : ({
+        "aria-hidden": n,
+        "aria-label": r,
+        "aria-labelledby": i,
+        ...a
+    } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a);
+    let o = n ?? (r || i ? void 0 : !0),
+        s;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (s = {
+        __html: P(ve)
+    }, t[5] = s) : s = t[5];
+    let c;
+    return t[6] !== r || t[7] !== i || t[8] !== a || t[9] !== o ? (c = (0, ni.jsx)(`svg`, {
+        ...a,
+        xmlns: `http://www.w3.org/2000/svg`,
+        width: ve.canvas.width,
+        height: ve.canvas.height,
+        viewBox: ve.canvas.viewBox,
+        fill: `currentColor`,
+        "data-rtl-flip": ``,
+        "aria-label": r,
+        "aria-labelledby": i,
+        "aria-hidden": o,
+        dangerouslySetInnerHTML: s
+    }), t[6] = r, t[7] = i, t[8] = a, t[9] = o, t[10] = c) : c = t[10], c
+}
+var ti, ni, ri = e((() => {
+    ti = ce(), y(), ye(), ni = I()
+}));
+
+function ii(e) {
+    "use forget";
+    let t = (0, bi.c)(56),
+        {
+            embeddedInSettings: n,
+            selectedWindowPreset: r,
+            setSelectedWindowPreset: i,
+            selectedGroupBy: a,
+            setSelectedGroupBy: o,
+            selectedDateRange: s,
+            setSelectedDateRange: c,
+            customDateRange: l,
+            setCustomDateRange: u,
+            showCustom: d
+        } = e,
+        f = n !== void 0 && n,
+        p = d === void 0 || d,
+        m = le(),
+        h;
+    t[0] === f ? h = t[1] : (h = {
+        value: `7d`,
+        label: f ? (0, X.jsx)(L, {
+            id: `chatgpt.settings.analytics.date_range.seven_days.label`,
+            defaultMessage: `7d`
+        }) : (0, X.jsx)(L, {
+            id: `codex.analytics.redesign.window.7d`,
+            defaultMessage: `7D`
+        })
+    }, t[0] = f, t[1] = h);
+    let g;
+    t[2] === f ? g = t[3] : (g = {
+        value: `30d`,
+        label: f ? (0, X.jsx)(L, {
+            id: `chatgpt.settings.analytics.date_range.thirty_days.label`,
+            defaultMessage: `30d`
+        }) : (0, X.jsx)(L, {
+            id: `codex.analytics.redesign.window.1m`,
+            defaultMessage: `1M`
+        })
+    }, t[2] = f, t[3] = g);
+    let _;
+    t[4] !== h || t[5] !== g ? (_ = [h, g], t[4] = h, t[5] = g, t[6] = _) : _ = t[6];
+    let y = _,
+        b;
+    t[7] !== u || t[8] !== c || t[9] !== i ? (b = e => {
+        let t = dn(e);
+        i(e), c(t), u(null)
+    }, t[7] = u, t[8] = c, t[9] = i, t[10] = b) : b = t[10];
+    let x = b;
+    if (f) {
+        let [e, n] = y;
+        if (!e || !n) return null;
+        let i;
+        t[11] === m ? i = t[12] : (i = m.formatMessage({
+            id: `chatgpt.settings.analytics.date_range.accessible_label`,
+            defaultMessage: `Analytics date range`
+        }), t[11] = m, t[12] = i);
+        let a = r === `30d` ? `30d` : `7d`,
+            o;
+        return t[13] !== x || t[14] !== e || t[15] !== i || t[16] !== a || t[17] !== n ? (o = (0, X.jsx)(`div`, {
+            className: `flex flex-wrap items-center gap-2`,
+            children: (0, X.jsx)(Ue, {
+                ...jt,
+                ariaLabel: i,
+                leftItem: e,
+                onChange: x,
+                rightItem: n,
+                shouldToggleSelected: !1,
+                value: a
+            })
+        }), t[13] = x, t[14] = e, t[15] = i, t[16] = a, t[17] = n, t[18] = o) : o = t[18], o
+    }
+    let S;
+    t[19] === i ? S = t[20] : (S = e => {
+        e && i(`custom`)
+    }, t[19] = i, t[20] = S);
+    let C = S,
+        w;
+    t[21] !== u || t[22] !== c || t[23] !== i ? (w = e => {
+        i(`custom`), u(e), c(e)
+    }, t[21] = u, t[22] = c, t[23] = i, t[24] = w) : w = t[24];
+    let T = w,
+        E = r === `custom` && l != null,
+        D = r === `custom`,
+        O;
+    t[25] !== l || t[26] !== s ? (O = Vt({
+        customDateRange: l,
+        selectedDateRange: s
+    }), t[25] = l, t[26] = s, t[27] = O) : O = t[27];
+    let k;
+    t[28] !== l || t[29] !== m || t[30] !== r || t[31] !== E ? (k = E ? (0, X.jsxs)(`button`, {
+        type: `button`,
+        className: `bg-token-bg-primary text-token-text-primary flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-medium shadow-sm transition-colors`,
+        children: [(0, X.jsx)(Ve, {
+            "aria-hidden": !0,
+            className: `icon-sm`
+        }), (0, X.jsx)(`span`, {
+            children: _i(l, m)
+        }), (0, X.jsx)(Re, {
+            "aria-hidden": !0,
+            className: `icon-sm text-token-text-tertiary`
+        })]
+    }) : (0, X.jsx)(`button`, {
+        type: `button`,
+        className: v(`text-token-text-secondary rounded-full px-3 py-1 text-xs font-medium transition-colors`, r === `custom` && `bg-token-bg-primary text-token-text-primary shadow-sm`),
+        children: (0, X.jsx)(L, {
+            id: `codex.analytics.redesign.window.custom`,
+            defaultMessage: `Custom`
+        })
+    }), t[28] = l, t[29] = m, t[30] = r, t[31] = E, t[32] = k) : k = t[32];
+    let A;
+    t[33] !== C || t[34] !== T || t[35] !== O || t[36] !== k || t[37] !== D ? (A = (0, X.jsx)(oi, {
+        isSelected: D,
+        selectedRange: O,
+        onOpenChange: C,
+        onRangeSelected: T,
+        trigger: k
+    }), t[33] = C, t[34] = T, t[35] = O, t[36] = k, t[37] = D, t[38] = A) : A = t[38];
+    let j = A,
+        M = f ? `bg-token-bg-tertiary h-8` : `border-token-border-default bg-token-bg-secondary border`,
+        N;
+    t[39] === M ? N = t[40] : (N = v(`flex rounded-full p-0.5`, M), t[39] = M, t[40] = N);
+    let ee;
+    t[41] !== x || t[42] !== y || t[43] !== r ? (ee = y.map(e => (0, X.jsx)(`button`, {
+        type: `button`,
+        "aria-pressed": r === e.value,
+        onClick: () => x(e.value),
+        className: v(`text-token-text-secondary rounded-full px-3 py-1 text-xs font-medium transition-colors`, r === e.value && `bg-token-bg-primary text-token-text-primary shadow-sm`),
+        children: e.label
+    }, e.value)), t[41] = x, t[42] = y, t[43] = r, t[44] = ee) : ee = t[44];
+    let P = p ? j : null,
+        F;
+    t[45] !== N || t[46] !== ee || t[47] !== P ? (F = (0, X.jsxs)(`div`, {
+        className: N,
+        children: [ee, P]
+    }), t[45] = N, t[46] = ee, t[47] = P, t[48] = F) : F = t[48];
+    let te;
+    t[49] !== f || t[50] !== a || t[51] !== o ? (te = f ? null : (0, X.jsx)(ai, {
+        selectedGroupBy: a,
+        setSelectedGroupBy: o
+    }), t[49] = f, t[50] = a, t[51] = o, t[52] = te) : te = t[52];
+    let I;
+    return t[53] !== F || t[54] !== te ? (I = (0, X.jsxs)(`div`, {
+        className: `flex flex-wrap items-center gap-2`,
+        children: [F, te]
+    }), t[53] = F, t[54] = te, t[55] = I) : I = t[55], I
+}
+
+function ai(e) {
+    "use forget";
+    let t = (0, bi.c)(15),
+        {
+            selectedGroupBy: n,
+            setSelectedGroupBy: r
+        } = e,
+        i = le(),
+        a;
+    t[0] === r ? a = t[1] : (a = e => {
+        (e === `day` || e === `week`) && r(e)
+    }, t[0] = r, t[1] = a);
+    let o;
+    t[2] === i ? o = t[3] : (o = i.formatMessage({
+        id: `codex.analytics.redesign.groupBy.ariaLabel`,
+        defaultMessage: `Group analytics charts by`
+    }), t[2] = i, t[3] = o);
+    let s, c, l;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, X.jsx)(`span`, {
+        className: `text-token-text-secondary`,
+        children: (0, X.jsx)(L, {
+            id: `codex.analytics.redesign.groupBy.label`,
+            defaultMessage: `Group by:`
+        })
+    }), c = (0, X.jsx)(st.Value, {}), l = (0, X.jsx)(st.Icon, {}), t[4] = s, t[5] = c, t[6] = l) : (s = t[4], c = t[5], l = t[6]);
+    let u;
+    t[7] === o ? u = t[8] : (u = (0, X.jsxs)(st.Trigger, {
+        "aria-label": o,
+        className: `border-token-border-default bg-token-bg-primary text-token-text-primary flex h-7 items-center gap-2 rounded-full border px-3 text-xs font-medium`,
+        children: [s, c, l]
+    }), t[7] = o, t[8] = u);
+    let d;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, X.jsx)(st.Item, {
+        value: `day`,
+        children: (0, X.jsx)(L, {
+            id: `codex.analytics.redesign.groupBy.day`,
+            defaultMessage: `Day`
+        })
+    }), t[9] = d) : d = t[9];
+    let f;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, X.jsx)(st.Portal, {
+        children: (0, X.jsxs)(st.Content, {
+            className: `min-w-[140px]`,
+            children: [d, (0, X.jsx)(st.Item, {
+                value: `week`,
+                children: (0, X.jsx)(L, {
+                    id: `codex.analytics.redesign.groupBy.week`,
+                    defaultMessage: `Week`
+                })
+            })]
+        })
+    }), t[10] = f) : f = t[10];
+    let p;
+    return t[11] !== n || t[12] !== a || t[13] !== u ? (p = (0, X.jsxs)(st.Root, {
+        value: n,
+        onValueChange: a,
+        children: [u, f]
+    }), t[11] = n, t[12] = a, t[13] = u, t[14] = p) : p = t[14], p
+}
+
+function oi(e) {
+    "use forget";
+    let t = (0, bi.c)(23),
+        {
+            isSelected: n,
+            onOpenChange: r,
+            onRangeSelected: i,
+            selectedRange: a,
+            trigger: o
+        } = e,
+        s = le(),
+        [c, u] = (0, xi.useState)(!1),
+        d;
+    t[0] === a ? d = t[1] : (d = gi(a), t[0] = a, t[1] = d);
+    let f = d,
+        p;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (p = l(W()), t[2] = p) : p = t[2];
+    let m = p,
+        h;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (h = l(Ot()), t[3] = h) : h = t[3];
+    let g = h,
+        _;
+    t[4] === r ? _ = t[5] : (_ = e => {
+        u(e), r(e)
+    }, t[4] = r, t[5] = _);
+    let y = _,
+        b = n ? `ring-token-border-default ring-1` : void 0,
+        x;
+    t[6] === b ? x = t[7] : (x = v(`z-[60] w-[680px] max-w-[calc(100vw-32px)] p-0`, b), t[6] = b, t[7] = x);
+    let S;
+    t[8] === s ? S = t[9] : (S = s.formatMessage({
+        id: `codex.analytics.redesign.customRangePicker.ariaLabel`,
+        defaultMessage: `Select custom analytics date range`
+    }), t[8] = s, t[9] = S);
+    let C;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (C = {
+        months: 2
+    }, t[10] = C) : C = t[10];
+    let w;
+    t[11] === i ? w = t[12] : (w = e => {
+        let t = hi({
+            end: e.end,
+            start: e.start
+        });
+        i(t), u(!1)
+    }, t[11] = i, t[12] = w);
+    let T;
+    t[13] !== f || t[14] !== S || t[15] !== w ? (T = (0, X.jsx)(`div`, {
+        className: `p-4`,
+        children: (0, X.jsx)(qe, {
+            "aria-label": S,
+            value: f,
+            minValue: m,
+            maxValue: g,
+            visibleDuration: C,
+            onChange: w,
+            children: Y
+        })
+    }), t[13] = f, t[14] = S, t[15] = w, t[16] = T) : T = t[16];
+    let E;
+    return t[17] !== y || t[18] !== c || t[19] !== T || t[20] !== x || t[21] !== o ? (E = (0, X.jsx)(fe, {
+        open: c,
+        onOpenChange: y,
+        size: `none`,
+        sideOffset: 4,
+        alignAgainstAnchor: `start`,
+        disableAutofocus: !0,
+        triggerButton: o,
+        className: x,
+        children: T
+    }), t[17] = y, t[18] = c, t[19] = T, t[20] = x, t[21] = o, t[22] = E) : E = t[22], E
+}
+
+function Y(e) {
+    let {
+        state: t
+    } = e, n = t.visibleRange.start, r = n.add({
+        months: 1
+    });
+    return (0, X.jsxs)(X.Fragment, {
+        children: [(0, X.jsxs)(`div`, {
+            className: `mb-3 grid grid-cols-[2.25rem_1fr_1fr_2.25rem] items-center gap-x-4`,
+            children: [(0, X.jsx)(Xe, {
+                slot: `previous`,
+                className: `hover:bg-tertiary flex h-9 w-9 items-center justify-center rounded-full`,
+                children: (0, X.jsx)(ei, {
+                    "aria-hidden": !0,
+                    className: `icon-sm`
+                })
+            }), (0, X.jsx)(si, {
+                date: n
+            }), (0, X.jsx)(si, {
+                date: r
+            }), (0, X.jsx)(Xe, {
+                slot: `next`,
+                className: `hover:bg-tertiary flex h-9 w-9 items-center justify-center rounded-full`,
+                children: (0, X.jsx)(i.ChevronRightSm, {
+                    "aria-hidden": !0,
+                    className: `icon-sm`
+                })
+            })]
+        }), (0, X.jsxs)(`div`, {
+            className: `grid gap-6 md:grid-cols-2`,
+            children: [(0, X.jsx)(ci, {}), (0, X.jsx)(ci, {
+                offset: {
+                    months: 1
+                }
+            })]
+        })]
+    })
+}
+
+function si(e) {
+    "use forget";
+    let t = (0, bi.c)(6),
+        {
+            date: n
+        } = e,
+        r = le(),
+        i;
+    t[0] !== n.month || t[1] !== n.year || t[2] !== r ? (i = r.formatDate(new Date(Date.UTC(n.year, n.month - 1)), {
+        month: `long`,
+        timeZone: `UTC`,
+        year: `numeric`
+    }), t[0] = n.month, t[1] = n.year, t[2] = r, t[3] = i) : i = t[3];
+    let a;
+    return t[4] === i ? a = t[5] : (a = (0, X.jsx)(`div`, {
+        className: `text-center text-sm font-semibold`,
+        children: i
+    }), t[4] = i, t[5] = a), a
+}
+
+function ci(e) {
+    "use forget";
+    let t = (0, bi.c)(4),
+        {
+            offset: n
+        } = e,
+        r, i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, X.jsx)(Ke, {
+        children: fi
+    }), i = (0, X.jsx)(z, {
+        children: li
+    }), t[0] = r, t[1] = i) : (r = t[0], i = t[1]);
+    let a;
+    return t[2] === n ? a = t[3] : (a = (0, X.jsxs)(Je, {
+        offset: n,
+        className: `w-full table-fixed border-separate border-spacing-x-0 border-spacing-y-1`,
+        children: [r, i]
+    }), t[2] = n, t[3] = a), a
+}
+
+function li(e) {
+    return (0, X.jsx)(Ye, {
+        date: e,
+        className: di,
+        children: ui
+    })
+}
+
+function ui(e) {
+    return (0, X.jsxs)(`div`, {
+        className: mi(e),
+        children: [(0, X.jsx)(`span`, {
+            children: e.formattedDate
+        }), Ht(e) ? (0, X.jsx)(`span`, {
+            className: v(`absolute bottom-1.5 h-1 w-1 rounded-full`, e.isSelected ? `bg-token-bg-primary` : e.isDisabled ? `bg-token-text-tertiary` : `bg-token-text-primary`)
+        }) : null]
+    })
+}
+
+function di(e) {
+    return pi(e)
+}
+
+function fi(e) {
+    return (0, X.jsx)(rt, {
+        className: `text-token-text-tertiary h-9 text-center text-xs font-medium`,
+        children: e
+    })
+}
+
+function pi(e) {
+    let t = yi(e.date) === 0,
+        n = yi(e.date) === 6,
+        r = e.isSelectionStart || e.isSelectionEnd;
+    return v(`relative flex h-10 w-full items-center justify-center outline-none`, Bt(e) && `invisible pointer-events-none`, e.isOutsideMonth && `text-token-text-tertiary/50`, e.isDisabled && `text-token-text-tertiary cursor-not-allowed`, e.isSelected && `bg-token-bg-secondary`, e.isSelected && (e.isSelectionStart || t) && `rounded-s-2xl`, e.isSelected && (e.isSelectionEnd || n) && `rounded-e-2xl`, e.isFocusVisible && !r && `ring-token-border-default ring-2`)
+}
+
+function mi(e) {
+    let t = e.isSelectionStart || e.isSelectionEnd;
+    return v(`relative z-10 flex h-9 w-9 items-center justify-center rounded-full text-sm font-medium transition-colors`, !e.isDisabled && !e.isSelected && !e.isOutsideMonth && e.isHovered && `bg-token-bg-secondary cursor-pointer`, !e.isSelected && !e.isDisabled && !e.isOutsideMonth && `text-token-text-primary`, e.isSelected && !t && `text-token-text-primary`, t && `bg-token-text-primary text-token-bg-primary`, e.isOutsideMonth && !e.isSelected && `text-token-text-tertiary/50`, e.isDisabled && `text-token-text-tertiary`)
+}
+
+function hi(e) {
+    return {
+        endDate: e.end.toString(),
+        startDate: e.start.toString()
+    }
+}
+
+function gi(e) {
+    return {
+        end: l(e.endDate),
+        start: l(e.startDate)
+    }
+}
+
+function _i(e, t) {
+    return `${vi(e.startDate,t)} - ${vi(e.endDate,t)}`
+}
+
+function vi(e, t) {
+    return t.formatDate(new Date(`${e}T00:00:00.000Z`), {
+        day: `2-digit`,
+        month: `2-digit`,
+        timeZone: `UTC`,
+        year: `2-digit`
+    })
+}
+
+function yi(e) {
+    return new Date(`${e.toString()}T12:00:00Z`).getUTCDay()
+}
+var bi, xi, X, Si = e((() => {
+    bi = ce(), Ge(), pe(), ct(), Be(), He(), ri(), h(), zt(), u(), C(), xi = n(R()), tt(), se(), X = I()
+}));
+
+function Ci({
+    compact: e = !1,
+    title: t,
+    data: n,
+    seriesOrder: r,
+    seriesColorMap: i,
+    hideHeader: a = !1,
+    legendVariant: o = `default`,
+    showHorizontalGrid: s = !1,
+    xAxisTickCount: c,
+    xAxisTickAlignment: l = `edge`
+}) {
+    "use no forget";
+    let u = le(),
+        d = (0, wi.useMemo)(() => n === `loading` ? `loading` : n.data.map(e => {
+            let t = r.reduce((t, n) => t + (e.values?.[n] ?? 0), 0),
+                n = {
+                    date: e.date
+                };
+            return r.forEach(r => {
+                let i = e.values?.[r] ?? 0;
+                n[r] = t > 0 ? i / t * 100 : 0
+            }), n
+        }), [n, r]),
+        f = (0, wi.useMemo)(() => r.map((t, r) => ({
+            key: t,
+            displayName: e && t === `plus1` ? u.formatMessage({
+                id: `chatgpt.settings.analytics.code_review.sentiment.positive.label`,
+                defaultMessage: `Positive`
+            }) : e && t === `minus1` ? u.formatMessage({
+                id: `chatgpt.settings.analytics.code_review.sentiment.negative.label`,
+                defaultMessage: `Negative`
+            }) : e && t === `other` ? u.formatMessage({
+                id: `chatgpt.settings.analytics.code_review.sentiment.other.label`,
+                defaultMessage: `Other`
+            }) : n === `loading` ? t : n.metrics[t]?.displayName ?? t,
+            color: i[t] ?? `hsl(${r*137.5%360}deg 60% 65%)`
+        })), [e, n, u, i, r]),
+        m = (0, wi.useMemo)(() => Object.fromEntries(f.map(({
+            key: e,
+            displayName: t
+        }) => [e, {
+            displayName: t
+        }])), [f]),
+        [h, g] = (0, wi.useState)(),
+        [_, y] = (0, wi.useState)(),
+        b = o === `codexAnalytics`,
+        x = b && _ && f.some(({
+            key: e
+        }) => e === _) ? _ : void 0,
+        S = x ?? h;
+    if (d === `loading`) return (0, Z.jsxs)(`div`, {
+        className: e ? `flex min-h-[160px] flex-col gap-3` : `mb-4 flex min-h-[350px] flex-col pt-4 pb-4`,
+        children: [a ? null : (0, Z.jsx)(`div`, {
+            className: `px-6`,
+            children: (0, Z.jsx)(`div`, {
+                className: `text-token-text-secondary text-sm`,
+                children: (0, Z.jsx)(L, {
+                    ...t
+                })
+            })
+        }), (0, Z.jsx)(Ti, {
+            className: e ? `shrink-0 text-xs leading-4` : `text-lg`,
+            style: e ? {
+                height: 188
+            } : void 0,
+            children: (0, Z.jsx)(p, {})
+        })]
+    });
+    let C = d.some(e => r.some(t => {
+            let n = e[t];
+            return typeof n == `number` && n > 0
+        })),
+        w = c && c > 1 ? Math.max(0, Math.ceil(d.length / c) - 1) : Math.max(0, d.length - 2),
+        T = e ? Rt(d) : void 0,
+        E = o === `codexAnalytics`,
+        D = t => {
+            if (l !== `balanced`) return (0, Z.jsx)(ki, {
+                ...t
+            });
+            if (e) return (0, Z.jsx)(On, {
+                ...t,
+                data: d
+            });
+            let {
+                fill: n,
+                x: r,
+                y: i,
+                payload: a,
+                index: o,
+                tickFormatter: s
+            } = t, c = o === 0, u = o === d.length - 1;
+            return (0, Z.jsx)(`text`, {
+                x: c ? r - 10 : u ? r + 10 : r,
+                y: i + 10,
+                fill: n ?? `#6E6E80`,
+                textAnchor: c ? `start` : u ? `end` : `middle`,
+                fontSize: 12,
+                fontWeight: 400,
+                children: s(a.value)
+            })
+        };
+    return (0, Z.jsxs)(`div`, {
+        className: e ? `flex flex-col gap-3` : `mb-4 flex min-h-[350px] flex-col pt-4 pb-4`,
+        children: [a ? null : (0, Z.jsx)(`div`, {
+            className: `px-6`,
+            children: (0, Z.jsx)(`div`, {
+                className: `text-token-text-secondary text-sm`,
+                children: (0, Z.jsx)(L, {
+                    ...t
+                })
+            })
+        }), C ? (0, Z.jsx)(`div`, {
+            className: v(In, e ? `flex shrink-0 items-center` : `flex grow items-center`),
+            "aria-label": u.formatMessage(t),
+            children: (0, Z.jsx)(yt, {
+                width: `100%`,
+                height: e ? 160 : 220,
+                children: (0, Z.jsxs)(Ct, {
+                    data: d,
+                    margin: e ? {
+                        left: 0,
+                        top: 8,
+                        right: 0,
+                        bottom: 0
+                    } : {
+                        left: 28,
+                        top: 14,
+                        right: 22
+                    },
+                    children: [s ? (0, Z.jsx)(bt, {
+                        vertical: !1,
+                        stroke: e ? `var(--text-primary)` : Pn,
+                        strokeDasharray: `3 3`,
+                        strokeOpacity: e ? .1 : .2
+                    }) : null, (0, Z.jsx)(xt, {
+                        dataKey: `date`,
+                        axisLine: !1,
+                        tickLine: !1,
+                        tick: D,
+                        tickFormatter: e => Se(ot(String(e)), `MMM d`),
+                        ticks: T,
+                        interval: e ? 0 : w,
+                        minTickGap: e ? 8 : void 0
+                    }), (0, Z.jsx)(Et, {
+                        includeHidden: !e && x != null,
+                        cursor: !e && void 0,
+                        content: (0, Z.jsx)(Fn, {
+                            highlightedMetricKey: e ? void 0 : x,
+                            valueFormatter: Ai,
+                            metricToLabel: m,
+                            variant: e ? `settingsAnalytics` : `default`,
+                            summaryFormatter: e && x == null ? (e, t) => {
+                                let n = t.find(e => e.name === `plus1` || e.dataKey === `plus1`),
+                                    r = Array.isArray(n?.value) ? n.value[0] : n?.value;
+                                return u.formatMessage({
+                                    id: `chatgpt.settings.analytics.code_review.sentiment.tooltip.summary`,
+                                    defaultMessage: `{percent}% positive`
+                                }, {
+                                    percent: u.formatNumber(Number(r ?? 0), {
+                                        maximumFractionDigits: 0
+                                    })
+                                })
+                            } : void 0
+                        })
+                    }), (0, Z.jsx)(Tt, {
+                        domain: [0, 100],
+                        ticks: [0, 100],
+                        tickFormatter: e => `${e}%`,
+                        axisLine: !1,
+                        tickLine: !1,
+                        allowDecimals: !1,
+                        width: e ? 0 : 34,
+                        hide: e,
+                        tick: {
+                            fontSize: 11,
+                            fill: Pn
+                        }
+                    }), f.map(({
+                        key: t,
+                        color: n
+                    }) => {
+                        let r = S && S !== t;
+                        return (0, Z.jsx)(St, {
+                            type: E ? `bump` : `monotone`,
+                            dataKey: t,
+                            stackId: `1`,
+                            stroke: n,
+                            activeDot: !e && void 0,
+                            strokeOpacity: r ? .35 : 1,
+                            fill: n,
+                            fillOpacity: r ? .18 : E ? 1 : .6,
+                            hide: x != null && t !== x,
+                            isAnimationActive: !1,
+                            className: `transition-opacity duration-150`
+                        }, t)
+                    }), e ? (0, Z.jsx)(H, {
+                        data: d,
+                        getSeriesValue: (e, t) => Number(e[t] ?? 0),
+                        series: f.filter(({
+                            key: e
+                        }) => x == null || e === x)
+                    }) : null]
+                })
+            })
+        }) : (0, Z.jsx)(Ti, {
+            className: e ? `shrink-0 text-xs leading-4` : `text-lg`,
+            style: e ? {
+                height: 160
+            } : void 0,
+            children: (0, Z.jsx)(L, {
+                id: `codex.analytics.percentageStackedAreaChart.noData`,
+                defaultMessage: `No data for this period`
+            })
+        }), (0, Z.jsx)(`div`, {
+            className: v(`flex w-full flex-wrap items-center justify-start`, o === `codexAnalytics` ? e ? `text-token-text-secondary min-h-4 gap-4 text-xs leading-4` : `text-token-text-secondary gap-4 px-8 text-[12px] sm:justify-center` : `text-token-text-primary gap-x-8 gap-y-1 px-6 text-sm`),
+            children: f.map(({
+                key: e,
+                displayName: t,
+                color: n
+            }) => (0, Z.jsxs)(`button`, {
+                type: `button`,
+                "aria-pressed": b ? x === e : void 0,
+                className: v(`interactive-button cursor-pointer`, o === `codexAnalytics` ? `-mx-2 -my-1 inline-flex items-center gap-1.5 rounded-full px-2 py-1 transition-[background-color,color,opacity]` : `mb-1 flex items-center`, o === `codexAnalytics` && (S === e ? `bg-token-bg-tertiary text-token-text-primary opacity-100` : S ? `hover:text-token-text-primary opacity-35` : `hover:text-token-text-primary opacity-100`)),
+                title: t,
+                onClick: b ? () => y(t => t === e ? void 0 : e) : void 0,
+                onBlur: () => g(void 0),
+                onFocus: () => g(e),
+                onMouseEnter: () => g(e),
+                onMouseLeave: () => g(void 0),
+                children: [(0, Z.jsx)(`div`, {
+                    className: v(o === `codexAnalytics` ? `size-2 shrink-0 rounded-full` : `me-1 h-2 w-2 rounded-[1px]`),
+                    style: {
+                        backgroundColor: n
+                    }
+                }), (0, Z.jsx)(`span`, {
+                    className: v(o === `codexAnalytics` ? `whitespace-nowrap` : `me-1 max-w-32 overflow-hidden text-ellipsis whitespace-nowrap`),
+                    children: t
+                })]
+            }, e))
+        })]
+    })
+}
+var wi, Z, Ti, Ei, Di, Oi, ki, Ai, ji = e((() => {
+    F(), Nn(), Ln(), Rn(), Qe(), Pt(), kt(), Wt(), C(), de(), wi = n(R()), se(), wt(), r(), Z = I(), Ti = S.div`flex h-full grow items-center justify-center text-token-text-tertiary`, Ei = new Intl.NumberFormat(void 0, {
+        maximumFractionDigits: 0
+    }), Di = 0, Oi = 10, ki = ({
+        x: e,
+        y: t,
+        payload: n,
+        index: r,
+        tickFormatter: i
+    }) => {
+        "use no forget";
+        let a = r === 0,
+            o = a ? e - Di : e + Di,
+            s = a ? `start` : `end`;
+        return (0, Z.jsx)(`text`, {
+            x: o,
+            y: t + Oi,
+            fill: Pn,
+            textAnchor: s,
+            fontSize: 12,
+            fontWeight: 400,
+            children: i(n.value)
+        })
+    }, Ai = (e, t) => `${Ei.format(Number(e??0))}%`
+}));
+
+function Mi(e, t, n) {
+    if (e === `loading` || t === `loading`) return e;
+    let r = new Map(t.data.map(({
+            date: e,
+            total: t
+        }) => [e, t])),
+        i = 0,
+        a = e.data.map(e => {
+            let t = Math.max((r.get(e.date) ?? 0) - e.total, 0);
+            return t === 0 ? e : (i += t, {
+                ...e,
+                total: e.total + t,
+                values: {
+                    ...e.values,
+                    other: (e.values.other ?? 0) + t
+                }
+            })
+        });
+    return {
+        ...e,
+        data: a,
+        metrics: {
+            ...e.metrics,
+            ...Object.fromEntries([`p0`, `p1`, `p2`].map(t => [t, {
+                total: e.metrics[t]?.total ?? 0,
+                displayName: t.toUpperCase()
+            }])),
+            other: {
+                total: (e.metrics.other?.total ?? 0) + (a.length > 0 ? Math.round(i / a.length) : 0),
+                displayName: e.metrics.other?.displayName ?? n.formatMessage({
+                    id: `chatgpt.settings.analytics.code_review.priority.other.label`,
+                    defaultMessage: `Other`
+                })
+            }
+        }
+    }
+}
+
+function Ni(e) {
+    "use forget";
+    let t = (0, Ii.c)(84),
+        {
+            presentation: n,
+            issuesFoundChartData: r,
+            issuesFoundSummary: i,
+            priorityChartData: a,
+            reactionsChartData: o,
+            reactionsSummary: s,
+            reviewsDoneChartData: c,
+            reviewsDoneSummary: l
+        } = e,
+        u = le(),
+        [d, f] = (0, Li.useState)(),
+        [p, m] = (0, Li.useState)(),
+        {
+            chartConfig: h,
+            colors: g,
+            formatMetricValue: _,
+            reactionSeriesOrder: v,
+            titles: y
+        } = n,
+        b;
+    t[0] === o ? b = t[1] : (b = o === `loading` ? void 0 : o.data.reduce(Pi, 0), t[0] = o, t[1] = b);
+    let x = b,
+        S = x == null || (s?.total ?? 0) <= 0 ? void 0 : x / (s?.total ?? 1),
+        C;
+    t[2] !== o || t[3] !== p ? (C = o !== `loading` && p != null && o.data.some(e => {
+        let {
+            values: t
+        } = e;
+        return (t[p] ?? 0) > 0
+    }) ? p : void 0, t[2] = o, t[3] = p, t[4] = C) : C = t[4];
+    let w = C,
+        T;
+    if (t[5] !== h || t[6] !== g.reactions || t[7] !== g.single || t[8] !== _ || t[9] !== u || t[10] !== r || t[11] !== i || t[12] !== S || t[13] !== a || t[14] !== v || t[15] !== o || t[16] !== s || t[17] !== c || t[18] !== l || t[19] !== d || t[20] !== w || t[21] !== y.issuesFound || t[22] !== y.priority || t[23] !== y.reactions || t[24] !== y.reviewsDone || t[25] !== y.sentiment) {
+        let e = o !== `loading` && w != null ? o.data.reduce((e, t) => {
+                let {
+                    values: n
+                } = t;
+                return e + (n[w] ?? 0)
+            }, 0) : void 0,
+            n, p, b, x, C, E, D, O;
+        if (t[27] !== h || t[28] !== g.single || t[29] !== _ || t[30] !== u || t[31] !== r || t[32] !== i || t[33] !== a || t[34] !== c || t[35] !== l || t[36] !== d || t[37] !== y.issuesFound || t[38] !== y.reviewsDone) {
+            p = Mi(a, r, u), b = p !== `loading` && d != null && p.data.some(e => {
+                let {
+                    values: t
+                } = e;
+                return (t[d] ?? 0) > 0
+            }) ? d : void 0;
+            let e = p !== `loading` && b != null ? p.data.reduce((e, t) => {
+                    let {
+                        values: n
+                    } = t;
+                    return e + (n[b] ?? 0)
+                }, 0) : void 0,
+                o;
+            t[47] === g.single ? o = t[48] : (o = {
+                issuesFound: g.single
+            }, t[47] = g.single, t[48] = o);
+            let s;
+            t[49] !== h || t[50] !== r || t[51] !== o ? (s = (0, Ri.jsx)(Mt, {
+                compact: !0,
+                data: r,
+                clientEventSource: `codexDailyCodeReviewIssues`,
+                seriesColorMap: o,
+                compactSingleBucketBar: !0,
+                hideHeader: !0,
+                hideLegend: !0,
+                ...h
+            }), t[49] = h, t[50] = r, t[51] = o, t[52] = s) : s = t[52], t[53] !== _ || t[54] !== i || t[55] !== s || t[56] !== y.issuesFound ? (D = (0, Ri.jsx)(Fi, {
+                formatMetricValue: _,
+                summary: i,
+                title: y.issuesFound,
+                children: s
+            }), t[53] = _, t[54] = i, t[55] = s, t[56] = y.issuesFound, t[57] = D) : D = t[57];
+            let f;
+            t[58] === g.single ? f = t[59] : (f = {
+                reviewsDone: g.single
+            }, t[58] = g.single, t[59] = f);
+            let m;
+            t[60] !== h || t[61] !== c || t[62] !== f ? (m = (0, Ri.jsx)(Mt, {
+                compact: !0,
+                data: c,
+                clientEventSource: `codexDailyCodeReviewTasks`,
+                seriesColorMap: f,
+                compactSingleBucketBar: !0,
+                hideHeader: !0,
+                hideLegend: !0,
+                ...h
+            }), t[60] = h, t[61] = c, t[62] = f, t[63] = m) : m = t[63], t[64] !== _ || t[65] !== l || t[66] !== m || t[67] !== y.reviewsDone ? (O = (0, Ri.jsx)(Fi, {
+                formatMetricValue: _,
+                summary: l,
+                title: y.reviewsDone,
+                children: m
+            }), t[64] = _, t[65] = l, t[66] = m, t[67] = y.reviewsDone, t[68] = O) : O = t[68], n = Fi, x = _, C = i, E = e == null ? void 0 : u.formatNumber(e), t[27] = h, t[28] = g.single, t[29] = _, t[30] = u, t[31] = r, t[32] = i, t[33] = a, t[34] = c, t[35] = l, t[36] = d, t[37] = y.issuesFound, t[38] = y.reviewsDone, t[39] = n, t[40] = p, t[41] = b, t[42] = x, t[43] = C, t[44] = E, t[45] = D, t[46] = O
+        } else n = t[39], p = t[40], b = t[41], x = t[42], C = t[43], E = t[44], D = t[45], O = t[46];
+        let k;
+        t[69] === Symbol.for(`react.memo_cache_sentinel`) ? (k = e => {
+            f(e), Qt(`code_review_priority`, e)
+        }, t[69] = k) : k = t[69];
+        let A;
+        t[70] === u ? A = t[71] : (A = e => u.formatMessage({
+            id: `chatgpt.settings.analytics.code_review.priority.tooltip.summary`,
+            defaultMessage: `{issues, number} {issues, plural, one {issue} other {issues}}`
+        }, {
+            issues: e
+        }), t[70] = u, t[71] = A);
+        let j;
+        t[72] !== h || t[73] !== p || t[74] !== b || t[75] !== A ? (j = (0, Ri.jsx)(Mt, {
+            ...h,
+            compact: !0,
+            chartHeight: 150,
+            data: p,
+            clientEventSource: `codexDailyCodeReviewPriority`,
+            seriesColorMap: zi,
+            stackOrder: Vi,
+            legendOrder: Bi,
+            tooltipMetricOrder: Bi,
+            selectedSeriesKey: b,
+            onSelectedSeriesChange: k,
+            showLegendTotals: !0,
+            showBarTotals: !0,
+            compactBarRadius: 5,
+            xAxisTickCount: 3,
+            tooltipSummaryFormatter: A,
+            hideHeader: !0,
+            hideReferenceLine: !0,
+            visualization: `bar`
+        }), t[72] = h, t[73] = p, t[74] = b, t[75] = A, t[76] = j) : j = t[76];
+        let M;
+        t[77] !== n || t[78] !== j || t[79] !== x || t[80] !== C || t[81] !== E || t[82] !== y.priority ? (M = (0, Ri.jsx)(n, {
+            formatMetricValue: x,
+            summary: C,
+            summaryValue: E,
+            title: y.priority,
+            children: j
+        }), t[77] = n, t[78] = j, t[79] = x, t[80] = C, t[81] = E, t[82] = y.priority, t[83] = M) : M = t[83], T = (0, Ri.jsxs)(Ri.Fragment, {
+            children: [D, O, M, o === `loading` || (s?.total ?? 0) > 0 ? (0, Ri.jsxs)(Ri.Fragment, {
+                children: [(0, Ri.jsx)(Fi, {
+                    formatMetricValue: _,
+                    summary: s,
+                    summaryValue: e == null ? void 0 : u.formatNumber(e),
+                    title: y.reactions,
+                    children: (0, Ri.jsx)(Mt, {
+                        compact: !0,
+                        data: o,
+                        clientEventSource: `codexDailyCodeReviewReactions`,
+                        seriesColorMap: g.reactions,
+                        stackOrder: v,
+                        legendOrder: v,
+                        selectedSeriesKey: w,
+                        onSelectedSeriesChange: e => {
+                            m(e), Qt(`code_review_reactions`, e)
+                        },
+                        tooltipMetricOrder: v,
+                        tooltipSummaryFormatter: e => u.formatMessage({
+                            id: `chatgpt.settings.analytics.code_review.reactions.tooltip.summary`,
+                            defaultMessage: `{reactions, number} {reactions, plural, one {reaction} other {reactions}}`
+                        }, {
+                            reactions: e
+                        }),
+                        hideHeader: !0,
+                        visualization: `stackedArea`,
+                        ...h
+                    })
+                }), (0, Ri.jsx)(Fi, {
+                    formatMetricValue: _,
+                    summaryValue: S == null ? void 0 : u.formatMessage({
+                        id: `chatgpt.settings.analytics.code_review.sentiment.chart.summary`,
+                        defaultMessage: `{percentage} positive`
+                    }, {
+                        percentage: u.formatNumber(S, {
+                            maximumFractionDigits: 0,
+                            style: `percent`
+                        })
+                    }),
+                    title: y.sentiment,
+                    children: (0, Ri.jsx)(Ci, {
+                        compact: !0,
+                        title: y.sentiment,
+                        data: o,
+                        seriesOrder: v,
+                        seriesColorMap: g.reactions,
+                        hideHeader: !0,
+                        legendVariant: `codexAnalytics`,
+                        showHorizontalGrid: !0,
+                        xAxisTickCount: 7,
+                        xAxisTickAlignment: `balanced`
+                    })
+                })]
+            }) : null]
+        }), t[5] = h, t[6] = g.reactions, t[7] = g.single, t[8] = _, t[9] = u, t[10] = r, t[11] = i, t[12] = S, t[13] = a, t[14] = v, t[15] = o, t[16] = s, t[17] = c, t[18] = l, t[19] = d, t[20] = w, t[21] = y.issuesFound, t[22] = y.priority, t[23] = y.reactions, t[24] = y.reviewsDone, t[25] = y.sentiment, t[26] = T
+    } else T = t[26];
+    return T
+}
+
+function Pi(e, t) {
+    let {
+        values: n
+    } = t;
+    return e + (n.plus1 ?? 0)
+}
+
+function Fi(e) {
+    "use forget";
+    let t = (0, Ii.c)(14),
+        {
+            children: n,
+            formatMetricValue: r,
+            summary: i,
+            summaryValue: a,
+            title: o
+        } = e,
+        s;
+    t[0] === o ? s = t[1] : (s = (0, Ri.jsx)(`div`, {
+        className: `text-token-text-primary text-sm leading-5 font-medium`,
+        children: (0, Ri.jsx)(L, {
+            ...o
+        })
+    }), t[0] = o, t[1] = s);
+    let c;
+    t[2] !== r || t[3] !== i || t[4] !== a ? (c = a ?? r(i), t[2] = r, t[3] = i, t[4] = a, t[5] = c) : c = t[5];
+    let l;
+    t[6] === c ? l = t[7] : (l = (0, Ri.jsx)(`div`, {
+        className: `text-token-text-primary text-lg leading-[26px] font-semibold tabular-nums`,
+        children: c
+    }), t[6] = c, t[7] = l);
+    let u;
+    t[8] !== s || t[9] !== l ? (u = (0, Ri.jsxs)(`div`, {
+        className: `flex flex-col gap-0.5`,
+        children: [s, l]
+    }), t[8] = s, t[9] = l, t[10] = u) : u = t[10];
+    let d;
+    return t[11] !== n || t[12] !== u ? (d = (0, Ri.jsxs)(gn, {
+        children: [u, n]
+    }), t[11] = n, t[12] = u, t[13] = d) : d = t[13], d
+}
+var Ii, Li, Ri, zi, Bi, Vi, Hi = e((() => {
+    Ii = ce(), Ft(), ji(), pn(), U(), Li = n(R()), se(), Ri = I(), zi = {
+        p0: `light-dark(#dc2626, #fb7185)`,
+        p1: `light-dark(#d97706, #fbbf24)`,
+        p2: `light-dark(#2563eb, #60a5fa)`,
+        other: `light-dark(#73737d, #a1a1aa)`
+    }, Bi = [`p0`, `p1`, `p2`, `other`], Vi = [`other`, `p2`, `p1`, `p0`]
+}));
+
+function Ui(e) {
+    "use forget";
+    let t = (0, Gi.c)(2),
+        {
+            showLinesOfCode: n
+        } = e,
+        r;
+    return t[0] === n ? r = t[1] : (r = n ? (0, Ki.jsx)(L, {
+        id: `chatgpt.settings.analytics.product_activity.section.description.turns_and_code`,
+        defaultMessage: `See the number of turns and lines of code across products and models.`
+    }) : (0, Ki.jsx)(L, {
+        id: `chatgpt.settings.analytics.product_activity.section.description.turns_only`,
+        defaultMessage: `See the number of turns across products and models.`
+    }), t[0] = n, t[1] = r), r
+}
+
+function Wi(e) {
+    "use forget";
+    let t = (0, Gi.c)(2),
+        {
+            showLinesOfCode: n
+        } = e,
+        r;
+    return t[0] === n ? r = t[1] : (r = n ? (0, Ki.jsx)(L, {
+        id: `chatgpt.settings.analytics.product_activity.empty_state`,
+        defaultMessage: `No turns or lines of code during this period`
+    }) : (0, Ki.jsx)(L, {
+        id: `chatgpt.settings.analytics.product_activity.empty_state.turns_only`,
+        defaultMessage: `No turns during this period`
+    }), t[0] = n, t[1] = r), r
+}
+var Gi, Ki, qi = e((() => {
+        Gi = ce(), se(), Ki = I()
+    })),
+    Ji = t({
+        CodexAnalytics: () => Yi,
+        buildDailyPluginUsageSeriesData: () => Ia,
+        buildDailySkillUsageSeriesData: () => Fa
+    });
+
+function Yi(e) {
+    "use forget";
+    let t = (0, Ra.c)(494),
+        {
+            embeddedInSettings: n,
+            isUpsell: r,
+            showCredits: i
+        } = e === void 0 ? {} : e,
+        a = n !== void 0 && n,
+        o = r !== void 0 && r,
+        c = i === void 0 || i,
+        l = le(),
+        u = te(),
+        d = ae(),
+        f = ne(`/codex/cloud/settings/apireference`),
+        m = a || lt({
+            isUpsell: o
+        }),
+        h = w(),
+        g = mt(),
+        _ = _t(),
+        v = gt(),
+        y = ht(),
+        x = h?.planType,
+        S;
+    t[0] === x ? S = t[1] : (S = x && ee(x), t[0] = x, t[1] = S);
+    let C = !!S,
+        T;
+    t[2] === x ? T = t[3] : (T = x && A(x), t[2] = x, t[3] = T);
+    let E = !!T,
+        D = m && C && (!a || !E),
+        O = v && !y,
+        j = v || D,
+        M, N;
+    t[4] === h ? (M = t[5], N = t[6]) : (N = h?.getWorkspaceId(), M = Hn(N), t[4] = h, t[5] = M, t[6] = N);
+    let P = M,
+        {
+            data: F
+        } = b(N),
+        [I, ie] = (0, Q.useState)(a ? `7d` : `30d`),
+        [oe, se] = (0, Q.useState)(() => dn(a ? `7d` : `30d`)),
+        [R, ce] = (0, Q.useState)(null),
+        [ue, de] = (0, Q.useState)(!1),
+        [fe, pe] = (0, Q.useState)(!1),
+        [me, ge] = (0, Q.useState)(`7d`),
+        [_e, ve] = (0, Q.useState)(ua),
+        [ye, be] = (0, Q.useState)(null),
+        [Se, Ce] = (0, Q.useState)(!1),
+        [we, De] = (0, Q.useState)(`7d`),
+        [Oe, ke] = (0, Q.useState)(la),
+        [je, Me] = (0, Q.useState)(null),
+        [Pe, Fe] = (0, Q.useState)(!1),
+        [Ie, Le] = (0, Q.useState)(!1),
+        [Re] = (0, Q.useState)(ca),
+        [ze, Be] = (0, Q.useState)(`30d`),
+        [Ve, He] = (0, Q.useState)(sa),
+        [Ue, We] = (0, Q.useState)(null),
+        [Ge, Ke] = (0, Q.useState)(!1),
+        [z, qe] = (0, Q.useState)(`day`),
+        B = m ? oe : void 0,
+        Je = m ? {
+            ...Ga,
+            ...Wa,
+            ...a ? {
+                visualization: `bar`,
+                limitSettingsToolSeries: !0
+            } : {},
+            summaryLabel: {
+                id: `codex.analytics.dailyskillusage.summaryLabel.redesign`,
+                defaultMessage: `Skills used`,
+                description: `Summary label for the redesigned Codex analytics skills chart.`
+            }
+        } : Ga,
+        Ye = m ? {
+            ...Ka,
+            ...Wa,
+            ...a ? {
+                visualization: `bar`,
+                limitSettingsToolSeries: !0
+            } : {},
+            summaryLabel: a ? re({
+                id: `chatgpt.settings.analytics.tool_activity.plugin_calls.chart.title`,
+                defaultMessage: `Plugin calls`
+            }) : {
+                id: `codex.analytics.dailypluginusage.summaryLabel.redesign`,
+                defaultMessage: `Plugins calls`,
+                description: `Summary label for the redesigned Codex analytics plugins chart.`
+            }
+        } : Ka,
+        Xe = m ? {
+            ...qa,
+            ...Wa,
+            hideLegend: !0,
+            visualization: `bar`,
+            summaryLabel: {
+                id: `codex.analytics.dailyLinesOfCode.summaryLabel.redesign`,
+                defaultMessage: `Lines of code`,
+                description: `Summary label for the redesigned Codex analytics lines of code chart.`
+            }
+        } : qa,
+        [Qe, et] = (0, Q.useState)(`totalUsers`),
+        [tt, rt] = (0, Q.useState)(`threads`),
+        [it, at] = (0, Q.useState)(`model`),
+        [ot, st] = (0, Q.useState)(),
+        [ct, ut] = (0, Q.useState)(`issuesFound`),
+        dt = v || D,
+        pt = D,
+        vt = O && _,
+        yt = h?.data.role != null && he(h.data.role),
+        bt = m && E && _ && nt(F?.permissions, {
+            hasWorkspaceAdminRole: yt,
+            isCodexAdmin: g
+        }),
+        xt = m && E && $e(F?.permissions, {
+            hasWorkspaceAdminRole: yt
+        }),
+        St = m && O,
+        Ct = !a && St && k(`3263801475`),
+        wt = Dn({
+            showAnalyticsRedesign: m,
+            isWorkspacePlan: C,
+            hasWorkspaceAnalyticsAccess: _
+        }) && !Ct,
+        Tt = m && dt,
+        Et = a ? `usage` : At({
+            hash: u.hash,
+            canShowCodeReviewTab: Tt,
+            canShowLeaderboardTab: wt
+        }),
+        Dt = dt && (a || !m || Et === `codeReview`),
+        Ot = a ? Ve : B,
+        kt = m ? z : void 0,
+        jt;
+    t[7] !== pt || t[8] !== Dt || t[9] !== Ot || t[10] !== kt ? (jt = {
+        enabled: Dt,
+        dateRange: Ot,
+        groupBy: kt,
+        workspaceUser: pt
+    }, t[7] = pt, t[8] = Dt, t[9] = Ot, t[10] = kt, t[11] = jt) : jt = t[11];
+    let V = Ae(jt),
+        Pt = V.isError,
+        Ft = y || m && C && Et === `usage`,
+        Rt = Ft ? y || D : O,
+        zt = m ? z : void 0,
+        Bt;
+    t[12] !== B || t[13] !== Ft || t[14] !== zt ? (Bt = {
+        dateRange: B,
+        groupBy: zt,
+        workspaceUser: Ft
+    }, t[12] = B, t[13] = Ft, t[14] = zt, t[15] = Bt) : Bt = t[15];
+    let Vt = Bt,
+        Ht = a ? Oe : B,
+        Wt;
+    t[16] !== Vt || t[17] !== Rt || t[18] !== a || t[19] !== Ht ? (Wt = {
+        ...Vt,
+        dateRange: Ht,
+        enabled: Rt,
+        retryTransientErrors: a
+    }, t[16] = Vt, t[17] = Rt, t[18] = a, t[19] = Ht, t[20] = Wt) : Wt = t[20];
+    let H = Te(Wt),
+        Jt = a ? Oe : B,
+        Zt = m && Rt,
+        $t;
+    t[21] !== Vt || t[22] !== Jt || t[23] !== Zt ? ($t = {
+        ...Vt,
+        dateRange: Jt,
+        enabled: Zt
+    }, t[21] = Vt, t[22] = Jt, t[23] = Zt, t[24] = $t) : $t = t[24];
+    let U = Ee($t),
+        an = Ft ? y || D : v,
+        ln;
+    t[25] !== Vt || t[26] !== an ? (ln = {
+        ...Vt,
+        enabled: an
+    }, t[25] = Vt, t[26] = an, t[27] = ln) : ln = t[27];
+    let W = Ne(ln),
+        pn = m && D,
+        _n = pn && (a || Et === `usage`),
+        vn;
+    t[28] !== Vt || t[29] !== _n ? (vn = {
+        ...Vt,
+        enabled: _n
+    }, t[28] = Vt, t[29] = _n, t[30] = vn) : vn = t[30];
+    let G = xe(vn),
+        bn;
+    t[31] === u.hash ? bn = t[32] : (bn = Gt(u.hash), t[31] = u.hash, t[32] = bn);
+    let En = bn,
+        On;
+    t[33] === h ? On = t[34] : (On = Bn(h?.getWorkspaceId()), t[33] = h, t[34] = On);
+    let kn = On,
+        An, jn;
+    t[35] !== Et || t[36] !== P || t[37] !== kn || t[38] !== a || t[39] !== u.pathname || t[40] !== u.search || t[41] !== u.state || t[42] !== d || t[43] !== En || t[44] !== m || t[45] !== Ct || t[46] !== St ? (An = () => {
+        if (!(a || !m || En == null)) {
+            if (En === `workspaceUsage` && St) {
+                window.location.assign(P);
+                return
+            }
+            if (En === `leaderboard` && Ct) {
+                window.location.assign(kn);
+                return
+            }
+            En !== Et && d({
+                pathname: u.pathname,
+                search: u.search,
+                hash: En === `workspaceUsage` || En === `personalUsage` ? tn(Et) : ``
+            }, {
+                replace: !0,
+                state: u.state
+            })
+        }
+    }, jn = [Et, P, a, u.pathname, u.search, u.state, d, En, kn, m, Ct, St], t[35] = Et, t[36] = P, t[37] = kn, t[38] = a, t[39] = u.pathname, t[40] = u.search, t[41] = u.state, t[42] = d, t[43] = En, t[44] = m, t[45] = Ct, t[46] = St, t[47] = An, t[48] = jn) : (An = t[47], jn = t[48]), (0, Q.useEffect)(An, jn);
+    let Mn;
+    t[49] === l ? Mn = t[50] : (Mn = l.formatMessage(io.p0), t[49] = l, t[50] = Mn);
+    let Nn;
+    t[51] === l ? Nn = t[52] : (Nn = l.formatMessage(io.p1), t[51] = l, t[52] = Nn);
+    let Pn;
+    t[53] === l ? Pn = t[54] : (Pn = l.formatMessage(io.p2), t[53] = l, t[54] = Pn);
+    let Fn;
+    t[55] !== Mn || t[56] !== Nn || t[57] !== Pn ? (Fn = {
+        p0: Mn,
+        p1: Nn,
+        p2: Pn
+    }, t[55] = Mn, t[56] = Nn, t[57] = Pn, t[58] = Fn) : Fn = t[58];
+    let In = Fn,
+        Ln;
+    t[59] === l ? Ln = t[60] : (Ln = l.formatMessage(vo.plus1), t[59] = l, t[60] = Ln);
+    let Rn;
+    t[61] === l ? Rn = t[62] : (Rn = l.formatMessage(vo.minus1), t[61] = l, t[62] = Rn);
+    let zn;
+    t[63] === l ? zn = t[64] : (zn = l.formatMessage(vo.other), t[63] = l, t[64] = zn);
+    let Vn;
+    t[65] !== Ln || t[66] !== Rn || t[67] !== zn ? (Vn = {
+        plus1: Ln,
+        minus1: Rn,
+        other: zn
+    }, t[65] = Ln, t[66] = Rn, t[67] = zn, t[68] = Vn) : Vn = t[68];
+    let Un = Vn,
+        Gn;
+    if (t[69] !== Pt || t[70] !== In || t[71] !== V.data || t[72] !== V.isLoading) {
+        bb0: {
+            let {
+                chartData: e,
+                isLoading: n
+            } = un({
+                response: V.data,
+                isLoading: V.isLoading,
+                isError: Pt,
+                seriesLabels: In
+            });
+            if (n) {
+                Gn = `loading`;
+                break bb0
+            }
+            let r = [`p0`, `p1`, `p2`],
+                i = r.reduce((t, n) => {
+                    let r = e.metrics[n];
+                    return r && (t[n] = r), t
+                }, {}),
+                a = e.data.map(e => {
+                    let t = {};
+                    return r.forEach(n => {
+                        t[n] = e.values[n] ?? 0
+                    }), {
+                        ...e,
+                        values: t
+                    }
+                }),
+                o;t[74] !== a || t[75] !== i ? (o = {
+                data: a,
+                metrics: i
+            }, t[74] = a, t[75] = i, t[76] = o) : o = t[76],
+            Gn = o
+        }
+        t[69] = Pt,
+        t[70] = In,
+        t[71] = V.data,
+        t[72] = V.isLoading,
+        t[73] = Gn
+    }
+    else Gn = t[73];
+    let Kn = Gn,
+        qn;
+    if (t[77] !== Pt || t[78] !== Un || t[79] !== V.data || t[80] !== V.isLoading) {
+        bb1: {
+            let {
+                chartData: e,
+                isLoading: n
+            } = en({
+                response: V.data,
+                isLoading: V.isLoading,
+                isError: Pt,
+                seriesLabels: Un
+            });
+            if (n) {
+                qn = `loading`;
+                break bb1
+            }
+            let r = bo.reduce((t, n) => {
+                    let r = e.metrics[n];
+                    return r && (t[n] = r), t
+                }, {}),
+                i = e.data.map(oa),
+                a;t[82] !== i || t[83] !== r ? (a = {
+                data: i,
+                metrics: r
+            }, t[82] = i, t[83] = r, t[84] = a) : a = t[84],
+            qn = a
+        }
+        t[77] = Pt,
+        t[78] = Un,
+        t[79] = V.data,
+        t[80] = V.isLoading,
+        t[81] = qn
+    }
+    else qn = t[81];
+    let Jn = qn,
+        Yn = m ? z : void 0,
+        Xn;
+    t[85] !== B || t[86] !== W.data || t[87] !== Yn ? (Xn = Xt(W.data, {
+        dateRange: B,
+        groupBy: Yn
+    }), t[85] = B, t[86] = W.data, t[87] = Yn, t[88] = Xn) : Xn = t[88];
+    let Zn = Xn,
+        Qn;
+    t[89] !== W.data || t[90] !== l || t[91] !== Zn ? (Qn = ro.map(e => ({
+        id: e,
+        color: Ja[e].color,
+        label: l.formatMessage(Ja[e].label),
+        summary: Cn(Zn?.[e], Ut(W.data, e))
+    })), t[89] = W.data, t[90] = l, t[91] = Zn, t[92] = Qn) : Qn = t[92];
+    let $n = Qn,
+        er;
+    t[93] !== Qe || t[94] !== $n ? (er = $n.find(e => e.id === Qe) ?? $n[0], t[93] = Qe, t[94] = $n, t[95] = er) : er = t[95];
+    let tr = er,
+        nr;
+    bb2: {
+        if (!tr) {
+            nr = `loading`;
+            break bb2
+        }
+        let e = Zn?.[tr.id],
+            n;t[96] !== tr.id || t[97] !== tr.label || t[98] !== W.isError || t[99] !== W.isLoading || t[100] !== e ? (n = rn({
+            response: e,
+            isLoading: W.isLoading,
+            isError: W.isError,
+            seriesId: tr.id,
+            displayName: tr.label,
+            aggregation: `average`
+        }), t[96] = tr.id, t[97] = tr.label, t[98] = W.isError, t[99] = W.isLoading, t[100] = e, t[101] = n) : n = t[101],
+        nr = n
+    }
+    let rr = nr,
+        ir;
+    bb3: {
+        let e = Zn?.totalUsers?.data;
+        if (!e?.length) {
+            ir = void 0;
+            break bb3
+        }
+        let n;t[102] === e ? n = t[103] : (n = e.reduce(aa, 0), t[102] = e, t[103] = n),
+        ir = n
+    }
+    let K = ir,
+        ar;
+    t[104] === V.data ? ar = t[105] : (ar = Nt(V.data), t[104] = V.data, t[105] = ar);
+    let or = ar,
+        sr;
+    bb4: {
+        let e = V.data?.data;
+        if (e == null) {
+            sr = void 0;
+            break bb4
+        }
+        let n = e.reduce(ia, 0),
+            r = e.length > 0 ? n / e.length : 0,
+            i;t[106] !== r || t[107] !== n ? (i = {
+            total: n,
+            average: r
+        }, t[106] = r, t[107] = n, t[108] = i) : i = t[108],
+        sr = i
+    }
+    let cr = sr,
+        ur;
+    bb5: {
+        let e;t[109] === l ? e = t[110] : (e = Object.fromEntries(Object.entries(Ya).map(e => {
+            let [t, n] = e;
+            return [t, l.formatMessage(n)]
+        })), t[109] = l, t[110] = e);
+        let n = e;
+        if (!a) {
+            ur = n;
+            break bb5
+        }
+        let r;t[111] === l ? r = t[112] : (r = l.formatMessage({
+            id: `codex.analytics.dailyproductusageoverview.codexCloudSeriesLabel`,
+            defaultMessage: `Codex Cloud`
+        }), t[111] = l, t[112] = r);
+        let i;t[113] === l ? i = t[114] : (i = l.formatMessage({
+            id: `codex.analytics.dailyproductusageoverview.workWebSeriesLabel`,
+            defaultMessage: `Work Web`
+        }), t[113] = l, t[114] = i);
+        let o;t[115] !== n || t[116] !== r || t[117] !== i ? (o = {
+            ...n,
+            web: r,
+            workWeb: i
+        }, t[115] = n, t[116] = r, t[117] = i, t[118] = o) : o = t[118],
+        ur = o
+    }
+    let dr = ur,
+        fr = V.data,
+        pr;
+    t[119] !== Pt || t[120] !== V.isLoading || t[121] !== l || t[122] !== fr ? (pr = rn({
+        response: fr ? {
+            data: fr.data.map(ra)
+        } : void 0,
+        isLoading: V.isLoading,
+        isError: Pt,
+        seriesId: `reviewsDone`,
+        displayName: l.formatMessage(co),
+        aggregation: `average`
+    }), t[119] = Pt, t[120] = V.isLoading, t[121] = l, t[122] = fr, t[123] = pr) : pr = t[123];
+    let mr = pr,
+        hr = V.data,
+        _r;
+    t[124] !== Pt || t[125] !== V.isLoading || t[126] !== l || t[127] !== hr ? (_r = rn({
+        response: hr ? {
+            data: hr.data.map(na)
+        } : void 0,
+        isLoading: V.isLoading,
+        isError: Pt,
+        seriesId: `issuesFound`,
+        displayName: l.formatMessage(oo),
+        aggregation: `average`
+    }), t[124] = Pt, t[125] = V.isLoading, t[126] = l, t[127] = hr, t[128] = _r) : _r = t[128];
+    let yr = _r,
+        br = m ? z : void 0,
+        xr;
+    t[129] !== B || t[130] !== W.data || t[131] !== br ? (xr = Lt(W.data, `threads`, {
+        dateRange: B,
+        groupBy: br
+    }), t[129] = B, t[130] = W.data, t[131] = br, t[132] = xr) : xr = t[132];
+    let Sr = m ? z : void 0,
+        Cr;
+    t[133] !== B || t[134] !== W.data || t[135] !== a || t[136] !== Sr ? (Cr = Lt(W.data, `turns`, {
+        dateRange: B,
+        groupBy: Sr,
+        separateWebClients: a
+    }), t[133] = B, t[134] = W.data, t[135] = a, t[136] = Sr, t[137] = Cr) : Cr = t[137];
+    let wr;
+    t[138] !== xr || t[139] !== Cr ? (wr = {
+        threads: xr,
+        turns: Cr
+    }, t[138] = xr, t[139] = Cr, t[140] = wr) : wr = t[140];
+    let Tr = wr,
+        Er;
+    t[141] === Symbol.for(`react.memo_cache_sentinel`) ? (Er = [`threads`, `turns`], t[141] = Er) : Er = t[141];
+    let Dr;
+    t[142] !== l || t[143] !== Tr || t[144] !== z || t[145] !== m ? (Dr = Er.map(e => ({
+        id: e,
+        color: Xa[e].color,
+        label: l.formatMessage(Xa[e].label),
+        noun: m ? l.formatMessage({
+            id: `codex.analytics.productUsage.metricPerInterval.redesign`,
+            defaultMessage: `{metric}/{groupBy, select, week {week} other {day}}`
+        }, {
+            groupBy: z,
+            metric: l.formatMessage(Xa[e].label)
+        }) : l.formatMessage(Xa[e].noun),
+        summary: Aa(Tr[e])
+    })), t[142] = l, t[143] = Tr, t[144] = z, t[145] = m, t[146] = Dr) : Dr = t[146];
+    let Or = Dr,
+        kr;
+    if (t[147] !== a || t[148] !== Tr.turns || t[149] !== dr) {
+        let e = a ? $a.filter(e => Tr.turns?.data.some(t => {
+            let {
+                values: n
+            } = t;
+            return (n[e] ?? 0) > 0
+        })) : Qa;
+        kr = {
+            response: Tr.turns,
+            seriesLabels: a ? Object.fromEntries(e.map(e => [e, dr[e]])) : dr,
+            seriesOrder: e
+        }, t[147] = a, t[148] = Tr.turns, t[149] = dr, t[150] = kr
+    } else kr = t[150];
+    let Ar = kr,
+        jr;
+    t[151] !== B || t[152] !== W.data || t[153] !== a || t[154] !== z ? (jr = Yt(W.data, {
+        dateRange: B,
+        groupBy: z,
+        hideAutoReviewModel: a
+    }), t[151] = B, t[152] = W.data, t[153] = a, t[154] = z, t[155] = jr) : jr = t[155];
+    let Mr = jr,
+        Nr = (Mr?.seriesOrder.length ?? 0) > 0,
+        Pr = a && it === `model` && !Nr ? `surface` : it,
+        Fr = Pr === `model` ? Mr : Ar,
+        Ir;
+    t[156] !== Fr || t[157] !== W.data || t[158] !== a || t[159] !== l ? (Ir = a ? qt(Fr, W.data, l) : Fr, t[156] = Fr, t[157] = W.data, t[158] = a, t[159] = l, t[160] = Ir) : Ir = t[160];
+    let Lr = Ir,
+        Rr;
+    t[161] !== Or || t[162] !== tt ? (Rr = Or.find(e => e.id === tt) ?? Or[0], t[161] = Or, t[162] = tt, t[163] = Rr) : Rr = t[163];
+    let q = Rr,
+        zr = m ? Lr?.response : q ? Tr[q.id] : void 0,
+        Br = m ? Lr?.seriesLabels ?? eo : dr,
+        Vr = m ? Lr?.seriesOrder ?? to : Qa,
+        Hr;
+    t[164] !== Pr || t[165] !== a || t[166] !== Vr || t[167] !== m ? (Hr = m ? a ? Pr === `model` ? yn(Vr) : It(Vr) : hn(Vr) : no, t[164] = Pr, t[165] = a, t[166] = Vr, t[167] = m, t[168] = Hr) : Hr = t[168];
+    let Ur = Hr,
+        J;
+    t[169] === zr ? J = t[170] : (J = Aa(zr), t[169] = zr, t[170] = J);
+    let Wr = J,
+        $r;
+    bb6: {
+        if (!m && !q) {
+            $r = `loading`;
+            break bb6
+        }
+        let e;t[171] !== W.isError || t[172] !== W.isLoading || t[173] !== zr || t[174] !== Br ? (e = Sn({
+            response: zr,
+            isLoading: W.isLoading,
+            isError: W.isError,
+            seriesLabels: Br
+        }), t[171] = W.isError, t[172] = W.isLoading, t[173] = zr, t[174] = Br, t[175] = e) : e = t[175];
+        let {
+            chartData: n,
+            isLoading: r
+        } = e;$r = r ? `loading` : n
+    }
+    let ei = $r,
+        ti = !m || Et === `usage`,
+        ni = m && wt && Et === `leaderboard`,
+        ri = (or?.issuesFound.total ?? 0) > 0 || (or?.reviewsDone.total ?? 0) > 0 || (cr?.total ?? 0) > 0,
+        ai = (a ? ri || Ge || Pt : !m || Et === `codeReview`) && dt,
+        oi = m ? `border-token-border-light flex flex-col gap-6 border-b pb-8` : `bg-token-bg-primary flex flex-col gap-6 rounded-2xl p-6`,
+        Y = m ? `border-token-border-light border-b pb-8` : `bg-token-bg-primary rounded-2xl p-6`,
+        si;
+    t[176] !== q || t[177] !== oi || t[178] !== Y || t[179] !== j || t[180] !== vt || t[181] !== l || t[182] !== Or || t[183] !== ei || t[184] !== Ur || t[185] !== Vr || t[186] !== Wr || t[187] !== it || t[188] !== at || t[189] !== rt || t[190] !== m ? (si = j ? m ? (0, $.jsxs)(`div`, {
+        className: Y,
+        children: [(0, $.jsxs)(`div`, {
+            className: `flex flex-wrap items-start justify-between gap-3 px-6`,
+            children: [(0, $.jsxs)(`div`, {
+                children: [(0, $.jsx)(`div`, {
+                    className: `text-token-text-primary text-base leading-6 font-medium tracking-[-0.01em]`,
+                    children: (0, $.jsx)(L, {
+                        id: `codex.analytics.productUsage.turnsSummaryLabel.redesign`,
+                        defaultMessage: `Turns`
+                    })
+                }), (0, $.jsx)(`div`, {
+                    className: `text-token-text-primary mt-1 text-3xl leading-9 font-normal tabular-nums`,
+                    children: Ta(Wr)
+                })]
+            }), (0, $.jsx)(Kt, {
+                activeBreakdown: it,
+                ariaLabel: l.formatMessage({
+                    id: `codex.analytics.productUsage.breakdown.label.redesign`,
+                    defaultMessage: `Turns breakdown`
+                }),
+                onBreakdownChange: at
+            })]
+        }), (0, $.jsx)(Mt, {
+            data: ei,
+            clientEventSource: Xa.turns.clientEventSource,
+            seriesColorMap: Ur,
+            forceStack: !0,
+            compactSingleBucketBar: !0,
+            stackOrder: Vr,
+            legendOrder: Vr,
+            tooltipMetricOrder: Vr,
+            hideHeader: !0,
+            legendVariant: `codexAnalytics`,
+            ...Ua
+        })]
+    }) : (0, $.jsxs)(`div`, {
+        className: oi,
+        children: [(0, $.jsxs)(`div`, {
+            className: `flex flex-col gap-2`,
+            children: [(0, $.jsx)(`h2`, {
+                className: `text-token-text-primary text-lg font-medium`,
+                children: (0, $.jsx)(L, {
+                    id: `codex.analytics.productUsage.title`,
+                    defaultMessage: `Product activity`
+                })
+            }), (0, $.jsx)(`p`, {
+                className: `text-token-text-secondary max-w-4xl text-sm leading-6`,
+                children: (0, $.jsx)(L, {
+                    id: `codex.analytics.productUsage.subtitle`,
+                    defaultMessage: `Track threads and turns by client`
+                })
+            })]
+        }), (0, $.jsx)(`div`, {
+            className: `flex flex-wrap gap-3`,
+            children: Or.map(e => (0, $.jsx)(Sa, {
+                className: `w-full md:w-[280px] md:flex-none`,
+                isActive: e.id === q?.id,
+                onClick: () => rt(e.id),
+                subtitle: Ea({
+                    intl: l,
+                    noun: e.noun,
+                    summary: e.summary
+                }),
+                title: e.label,
+                value: Ta(e.summary)
+            }, e.id))
+        }), (0, $.jsx)(Mt, {
+            title: (0, $.jsx)(`span`, {
+                className: `text-token-text-primary text-base font-semibold`,
+                children: q ? (0, $.jsx)(L, {
+                    ...Xa[q.id].chartTitle
+                }) : null
+            }),
+            data: ei,
+            clientEventSource: q ? Xa[q.id].clientEventSource : Xa.threads.clientEventSource,
+            seriesColorMap: Ur,
+            forceStack: !0,
+            compactSingleBucketBar: m,
+            stackOrder: Vr,
+            legendOrder: Vr,
+            tooltipMetricOrder: Vr
+        }), vt ? (0, $.jsx)(vr, {}) : null]
+    }) : null, t[176] = q, t[177] = oi, t[178] = Y, t[179] = j, t[180] = vt, t[181] = l, t[182] = Or, t[183] = ei, t[184] = Ur, t[185] = Vr, t[186] = Wr, t[187] = it, t[188] = at, t[189] = rt, t[190] = m, t[191] = si) : si = t[191];
+    let ci = si,
+        li;
+    t[192] !== B || t[193] !== Y || t[194] !== Rt || t[195] !== U || t[196] !== Ye || t[197] !== z || t[198] !== m ? (li = Rt && m ? (0, $.jsx)(`div`, {
+        className: Y,
+        children: (0, $.jsx)(lr, {
+            query: U,
+            config: Ye,
+            dateRange: B,
+            groupBy: z,
+            wrapperClassName: `mt-0`
+        })
+    }) : null, t[192] = B, t[193] = Y, t[194] = Rt, t[195] = U, t[196] = Ye, t[197] = z, t[198] = m, t[199] = li) : li = t[199];
+    let ui = li,
+        di;
+    t[200] !== B || t[201] !== Y || t[202] !== pn || t[203] !== G || t[204] !== Xe || t[205] !== z || t[206] !== m ? (di = pn && m ? (0, $.jsx)(`div`, {
+        className: Y,
+        children: (0, $.jsx)(lr, {
+            query: G,
+            config: Xe,
+            dateRange: B,
+            groupBy: z,
+            wrapperClassName: `mt-0`
+        })
+    }) : null, t[200] = B, t[201] = Y, t[202] = pn, t[203] = G, t[204] = Xe, t[205] = z, t[206] = m, t[207] = di) : di = t[207];
+    let fi = di,
+        pi;
+    t[208] !== B || t[209] !== Y || t[210] !== Rt || t[211] !== H || t[212] !== z || t[213] !== m || t[214] !== Je ? (pi = Rt && m ? (0, $.jsx)(`div`, {
+        className: Y,
+        children: (0, $.jsx)(lr, {
+            query: H,
+            config: Je,
+            dateRange: B,
+            groupBy: z,
+            wrapperClassName: `mt-0`
+        })
+    }) : null, t[208] = B, t[209] = Y, t[210] = Rt, t[211] = H, t[212] = z, t[213] = m, t[214] = Je, t[215] = pi) : pi = t[215];
+    let mi = pi;
+    if (a) {
+        let e, n, r, i, a, o, s, u, d, f, h;
+        if (t[216] !== pn || t[217] !== j || t[218] !== Rt || t[219] !== G.data?.data || t[220] !== G.isError || t[221] !== G.isLoading || t[222] !== G.isSuccess || t[223] !== U.data?.data || t[224] !== U.isError || t[225] !== U.isLoading || t[226] !== U.isSuccess || t[227] !== H.data?.data || t[228] !== H.isError || t[229] !== H.isLoading || t[230] !== H.isSuccess || t[231] !== W.data?.data || t[232] !== W.isError || t[233] !== W.isLoading || t[234] !== W.isSuccess || t[235] !== ue || t[236] !== Pe || t[237] !== fe || t[238] !== Ie || t[239] !== l || t[240] !== ei || t[241] !== Wr || t[242] !== ot || t[243] !== I || t[244] !== we) {
+            let c = W.data?.data.reduce(ta, 0) ?? 0,
+                p;
+            t[256] === G.data?.data ? p = t[257] : (p = G.data?.data.some(ea) ?? !1, t[256] = G.data?.data, t[257] = p), n = p, i = c > 0 || (Wr?.total ?? 0) > 0 || n, u = W.isLoading || pn && G.isLoading, a = W.isError || pn && G.isError;
+            let m;
+            t[258] === U.data?.data ? m = t[259] : (m = U.data?.data.some(Qi) ?? !1, t[258] = U.data?.data, t[259] = m), r = m;
+            let g;
+            t[260] === H.data?.data ? g = t[261] : (g = H.data?.data.some(Xi) ?? !1, t[260] = H.data?.data, t[261] = g), o = g, d = U.isLoading || H.isLoading, s = U.isError || H.isError, f = j && I === `7d` && !ue && !fe && W.isSuccess && (!pn || G.isSuccess) && !i && !a, h = Rt && we === `7d` && !Pe && !Ie && U.isSuccess && H.isSuccess && !r && !o && !s;
+            let _ = ot != null && ei !== `loading` && Object.hasOwn(ei.metrics, ot) ? ei.data.reduce((e, t) => {
+                let {
+                    values: n
+                } = t;
+                return e + (n[ot] ?? 0)
+            }, 0) : void 0;
+            e = c > (Wr?.total ?? 0) ? l.formatNumber(c) : Ta(Wr), _ != null && (e = l.formatNumber(_)), t[216] = pn, t[217] = j, t[218] = Rt, t[219] = G.data?.data, t[220] = G.isError, t[221] = G.isLoading, t[222] = G.isSuccess, t[223] = U.data?.data, t[224] = U.isError, t[225] = U.isLoading, t[226] = U.isSuccess, t[227] = H.data?.data, t[228] = H.isError, t[229] = H.isLoading, t[230] = H.isSuccess, t[231] = W.data?.data, t[232] = W.isError, t[233] = W.isLoading, t[234] = W.isSuccess, t[235] = ue, t[236] = Pe, t[237] = fe, t[238] = Ie, t[239] = l, t[240] = ei, t[241] = Wr, t[242] = ot, t[243] = I, t[244] = we, t[245] = e, t[246] = n, t[247] = r, t[248] = i, t[249] = a, t[250] = o, t[251] = s, t[252] = u, t[253] = d, t[254] = f, t[255] = h
+        } else e = t[245], n = t[246], r = t[247], i = t[248], a = t[249], o = t[250], s = t[251], u = t[252], d = t[253], f = t[254], h = t[255];
+        let g;
+        t[262] !== pn || t[263] !== j || t[264] !== G || t[265] !== W ? (g = j ? (0, $.jsx)(on, {
+            chart: `product_activity`,
+            queries: [W, ...pn ? [G] : []]
+        }) : null, t[262] = pn, t[263] = j, t[264] = G, t[265] = W, t[266] = g) : g = t[266];
+        let _;
+        t[267] !== Rt || t[268] !== U || t[269] !== H || t[270] !== m ? (_ = Rt ? (0, $.jsx)(on, {
+            chart: `tool_activity`,
+            queries: [H, ...m ? [U] : []]
+        }) : null, t[267] = Rt, t[268] = U, t[269] = H, t[270] = m, t[271] = _) : _ = t[271];
+        let v;
+        t[272] !== dt || t[273] !== V ? (v = dt ? (0, $.jsx)(on, {
+            chart: `code_review`,
+            queries: [V]
+        }) : null, t[272] = dt, t[273] = V, t[274] = v) : v = t[274];
+        let b;
+        t[275] === Symbol.for(`react.memo_cache_sentinel`) ? (b = (0, $.jsx)(`header`, {
+            className: `border-token-border-light flex flex-col border-b pt-1 pb-3`,
+            children: (0, $.jsx)(`h1`, {
+                className: `text-token-text-primary text-lg leading-7 font-normal tracking-[-0.025em]`,
+                children: (0, $.jsx)(L, {
+                    id: `chatgpt.settings.analytics.page.title`,
+                    defaultMessage: `Analytics`
+                })
+            })
+        }), t[275] = b) : b = t[275];
+        let x = !Se,
+            S;
+        t[276] !== Re || t[277] !== ve || t[278] !== ge ? (S = () => {
+            ge(`30d`), ve(Re)
+        }, t[276] = Re, t[277] = ve, t[278] = ge, t[279] = S) : S = t[279];
+        let C;
+        t[280] !== Ce || t[281] !== ge ? (C = e => {
+            Ce(!0), ge(e), sn(`usage_history`, e)
+        }, t[280] = Ce, t[281] = ge, t[282] = C) : C = t[282];
+        let w;
+        t[283] !== z || t[284] !== qe || t[285] !== be || t[286] !== ve || t[287] !== C || t[288] !== ye || t[289] !== _e || t[290] !== me ? (w = (0, $.jsx)(ii, {
+            embeddedInSettings: !0,
+            selectedWindowPreset: me,
+            setSelectedWindowPreset: C,
+            selectedGroupBy: z,
+            setSelectedGroupBy: qe,
+            selectedDateRange: _e,
+            setSelectedDateRange: ve,
+            customDateRange: ye,
+            setCustomDateRange: be,
+            showCustom: !1
+        }), t[283] = z, t[284] = qe, t[285] = be, t[286] = ve, t[287] = C, t[288] = ye, t[289] = _e, t[290] = me, t[291] = w) : w = t[291];
+        let T;
+        t[292] !== D || t[293] !== z || t[294] !== c || t[295] !== x || t[296] !== S || t[297] !== w || t[298] !== _e || t[299] !== me ? (T = (0, $.jsx)(wn, {
+            allowAutoDateRangeFallback: x,
+            dateRange: _e,
+            embeddedInSettings: !0,
+            groupBy: z,
+            hideLocalTimeframeFilters: !0,
+            onAutoSelectThirtyDays: S,
+            selectedWindowPreset: me,
+            settingsTimeWindowControls: w,
+            showSettingsCredits: c,
+            showWorkspaceUsage: !1,
+            useTokenAreaChart: D,
+            workspaceUser: D
+        }), t[292] = D, t[293] = z, t[294] = c, t[295] = x, t[296] = S, t[297] = w, t[298] = _e, t[299] = me, t[300] = T) : T = t[300];
+        let E;
+        t[301] !== pn || t[302] !== j || t[303] !== G || t[304] !== R || t[305] !== W.isError || t[306] !== Pr || t[307] !== Re || t[308] !== e || t[309] !== n || t[310] !== i || t[311] !== a || t[312] !== Nr || t[313] !== l || t[314] !== u || t[315] !== Xe || t[316] !== ei || t[317] !== Ur || t[318] !== Vr || t[319] !== oe || t[320] !== z || t[321] !== ot || t[322] !== I || t[323] !== ce || t[324] !== de || t[325] !== pe || t[326] !== se || t[327] !== qe || t[328] !== at || t[329] !== st || t[330] !== ie || t[331] !== f || t[332] !== Ft ? (E = j ? (0, $.jsxs)(`section`, {
+            className: `flex min-w-0 flex-col gap-4`,
+            children: [f ? (0, $.jsx)(ma, {
+                includeCodeAttribution: pn,
+                dateRange: Re,
+                groupBy: z,
+                setHasResolvedFallback: pe,
+                setSelectedDateRange: se,
+                setSelectedWindowPreset: ie,
+                workspaceUser: Ft
+            }) : null, (0, $.jsx)(nn, {
+                title: (0, $.jsx)(L, {
+                    id: `chatgpt.settings.analytics.product_activity.section.title`,
+                    defaultMessage: `Product activity`
+                }),
+                description: (0, $.jsx)(Ui, {
+                    showLinesOfCode: pn
+                })
+            }), (0, $.jsxs)(`div`, {
+                className: `flex flex-wrap items-center gap-2`,
+                children: [(0, $.jsx)(ii, {
+                    embeddedInSettings: !0,
+                    selectedWindowPreset: I,
+                    setSelectedWindowPreset: e => {
+                        de(!0), st(void 0), ie(e), sn(`product_activity`, e)
+                    },
+                    selectedGroupBy: z,
+                    setSelectedGroupBy: qe,
+                    selectedDateRange: oe,
+                    setSelectedDateRange: se,
+                    customDateRange: R,
+                    setCustomDateRange: ce,
+                    showCustom: !1
+                }), Nr ? (0, $.jsx)(Kt, {
+                    activeBreakdown: Pr,
+                    ariaLabel: l.formatMessage({
+                        id: `codex.analytics.productUsage.breakdown.label.redesign`,
+                        defaultMessage: `Turns breakdown`
+                    }),
+                    compact: !0,
+                    onBreakdownChange: e => {
+                        st(void 0), at(e), cn(`product_activity`, e, `surface`)
+                    }
+                }) : null]
+            }), i || a ? (0, $.jsxs)($.Fragment, {
+                children: [(0, $.jsxs)(gn, {
+                    children: [(0, $.jsxs)(`div`, {
+                        className: `flex flex-col gap-0.5`,
+                        children: [(0, $.jsx)(`div`, {
+                            className: `text-token-text-primary text-sm leading-5 font-medium`,
+                            children: (0, $.jsx)(L, {
+                                id: `codex.analytics.productUsage.turnsSummaryLabel.redesign`,
+                                defaultMessage: `Turns`
+                            })
+                        }), (0, $.jsx)(`div`, {
+                            className: `text-token-text-primary text-lg leading-[26px] font-semibold tabular-nums`,
+                            children: e
+                        })]
+                    }), W.isError ? (0, $.jsx)(`p`, {
+                        className: `text-sm text-red-600 dark:text-red-400`,
+                        children: (0, $.jsx)(L, {
+                            ...Ga.errorMessage
+                        })
+                    }) : (0, $.jsx)(Mt, {
+                        compact: !0,
+                        data: ei,
+                        clientEventSource: Xa.turns.clientEventSource,
+                        seriesColorMap: Ur,
+                        forceStack: !0,
+                        compactSingleBucketBar: !0,
+                        stackOrder: Vr,
+                        legendOrder: Vr,
+                        onSelectedSeriesChange: e => {
+                            st(e), Qt(`product_activity`, e)
+                        },
+                        selectedSeriesKey: ot,
+                        tooltipMetricOrder: Vr,
+                        tooltipSummaryFormatter: e => l.formatMessage({
+                            id: `chatgpt.settings.analytics.product_activity.turns.tooltip.summary`,
+                            defaultMessage: `{turns, number} {turns, plural, one {turn} other {turns}}`
+                        }, {
+                            turns: e
+                        }),
+                        hideHeader: !0,
+                        hideEmptySeries: !0,
+                        legendVariant: `codexAnalytics`,
+                        ...Ua
+                    })]
+                }), pn && (n || G.isError) ? (0, $.jsx)(gn, {
+                    children: (0, $.jsx)(lr, {
+                        compact: !0,
+                        query: G,
+                        config: Xe,
+                        dateRange: oe,
+                        groupBy: z,
+                        wrapperClassName: `mt-0`
+                    })
+                }) : null]
+            }) : (0, $.jsx)(xn, {
+                children: u || f ? (0, $.jsx)(p, {
+                    className: `icon-sm`
+                }) : (0, $.jsx)(Wi, {
+                    showLinesOfCode: pn
+                })
+            })]
+        }) : null, t[301] = pn, t[302] = j, t[303] = G, t[304] = R, t[305] = W.isError, t[306] = Pr, t[307] = Re, t[308] = e, t[309] = n, t[310] = i, t[311] = a, t[312] = Nr, t[313] = l, t[314] = u, t[315] = Xe, t[316] = ei, t[317] = Ur, t[318] = Vr, t[319] = oe, t[320] = z, t[321] = ot, t[322] = I, t[323] = ce, t[324] = de, t[325] = pe, t[326] = se, t[327] = qe, t[328] = at, t[329] = st, t[330] = ie, t[331] = f, t[332] = Ft, t[333] = E) : E = t[333];
+        let O;
+        t[334] !== Rt || t[335] !== U || t[336] !== H || t[337] !== Re || t[338] !== r || t[339] !== o || t[340] !== s || t[341] !== l || t[342] !== d || t[343] !== Ye || t[344] !== z || t[345] !== Fe || t[346] !== Le || t[347] !== qe || t[348] !== Me || t[349] !== ke || t[350] !== De || t[351] !== h || t[352] !== Ft || t[353] !== Je || t[354] !== je || t[355] !== Oe || t[356] !== we ? (O = Rt ? (0, $.jsxs)(`section`, {
+            className: `flex min-w-0 flex-col gap-4`,
+            children: [h ? (0, $.jsx)(_a, {
+                dateRange: Re,
+                groupBy: z,
+                setHasResolvedFallback: Le,
+                setSelectedDateRange: ke,
+                setSelectedWindowPreset: De,
+                workspaceUser: Ft
+            }) : null, (0, $.jsx)(nn, {
+                title: (0, $.jsx)(L, {
+                    id: `chatgpt.settings.analytics.tool_activity.section.title`,
+                    defaultMessage: `Tool activity`
+                }),
+                description: (0, $.jsx)(L, {
+                    id: `chatgpt.settings.analytics.tool_activity.section.description`,
+                    defaultMessage: `See which plugins and skills you used over time.`
+                })
+            }), (0, $.jsx)(ii, {
+                embeddedInSettings: !0,
+                selectedWindowPreset: we,
+                setSelectedWindowPreset: e => {
+                    Fe(!0), De(e), sn(`tool_activity`, e)
+                },
+                selectedGroupBy: z,
+                setSelectedGroupBy: qe,
+                selectedDateRange: Oe,
+                setSelectedDateRange: ke,
+                customDateRange: je,
+                setCustomDateRange: Me,
+                showCustom: !1
+            }), r || o || s ? (0, $.jsxs)($.Fragment, {
+                children: [r || U.isError ? (0, $.jsx)(gn, {
+                    children: (0, $.jsx)(lr, {
+                        compact: !0,
+                        query: U,
+                        config: Ye,
+                        dateRange: Oe,
+                        groupBy: z,
+                        wrapperClassName: `mt-0`,
+                        tooltipSummaryFormatter: e => l.formatMessage({
+                            id: `chatgpt.settings.analytics.tool_activity.plugin_calls.tooltip.summary`,
+                            defaultMessage: `{calls, number} {calls, plural, one {plugin call} other {plugin calls}}`
+                        }, {
+                            calls: e
+                        })
+                    })
+                }) : null, o || H.isError ? (0, $.jsx)(gn, {
+                    children: (0, $.jsx)(lr, {
+                        compact: !0,
+                        query: H,
+                        config: Je,
+                        dateRange: Oe,
+                        groupBy: z,
+                        wrapperClassName: `mt-0`,
+                        tooltipSummaryFormatter: e => l.formatMessage({
+                            id: `chatgpt.settings.analytics.tool_activity.skills.tooltip.summary`,
+                            defaultMessage: `{skills, number} {skills, plural, one {skill invocation} other {skill invocations}}`
+                        }, {
+                            skills: e
+                        })
+                    })
+                }) : null]
+            }) : (0, $.jsx)(xn, {
+                children: d || h ? (0, $.jsx)(p, {
+                    className: `icon-sm`
+                }) : (0, $.jsx)(L, {
+                    id: `chatgpt.settings.analytics.tool_activity.empty_state`,
+                    defaultMessage: `No plugin calls or skills used during this period`
+                })
+            })]
+        }) : null, t[334] = Rt, t[335] = U, t[336] = H, t[337] = Re, t[338] = r, t[339] = o, t[340] = s, t[341] = l, t[342] = d, t[343] = Ye, t[344] = z, t[345] = Fe, t[346] = Le, t[347] = qe, t[348] = Me, t[349] = ke, t[350] = De, t[351] = h, t[352] = Ft, t[353] = Je, t[354] = je, t[355] = Oe, t[356] = we, t[357] = O) : O = t[357];
+        let k;
+        t[358] !== y || t[359] !== D || t[360] !== oe || t[361] !== z ? (k = D || y ? (0, $.jsx)(fn, {
+            dateRange: oe,
+            groupBy: z,
+            workspaceUser: D
+        }) : null, t[358] = y, t[359] = D, t[360] = oe, t[361] = z, t[362] = k) : k = t[362];
+        let A;
+        t[363] !== Pt || t[364] !== yr || t[365] !== Kn || t[366] !== Jn || t[367] !== cr || t[368] !== mr || t[369] !== or?.issuesFound || t[370] !== or?.reviewsDone || t[371] !== V.isLoading || t[372] !== ri || t[373] !== l || t[374] !== Ue || t[375] !== Ve || t[376] !== ze || t[377] !== z || t[378] !== Ke || t[379] !== We || t[380] !== He || t[381] !== Be || t[382] !== qe || t[383] !== ai ? (A = ai ? (0, $.jsxs)(`section`, {
+            className: `flex min-w-0 flex-col gap-4`,
+            children: [(0, $.jsx)(nn, {
+                title: (0, $.jsx)(L, {
+                    id: `chatgpt.settings.analytics.code_review.section.title`,
+                    defaultMessage: `Code review`
+                }),
+                description: (0, $.jsx)(L, {
+                    id: `chatgpt.settings.analytics.code_review.section.description`,
+                    defaultMessage: `Issues found, pull requests reviewed, issue priorities, and reactions.`
+                })
+            }), (0, $.jsx)(ii, {
+                embeddedInSettings: !0,
+                selectedWindowPreset: ze,
+                setSelectedWindowPreset: e => {
+                    Be(e), sn(`code_review`, e)
+                },
+                selectedGroupBy: z,
+                setSelectedGroupBy: qe,
+                selectedDateRange: Ve,
+                setSelectedDateRange: e => {
+                    ri && Ke(!0), He(e)
+                },
+                customDateRange: Ue,
+                setCustomDateRange: We,
+                showCustom: !1
+            }), ri || V.isLoading ? (0, $.jsx)(Ni, {
+                presentation: {
+                    chartConfig: So,
+                    colors: {
+                        priority: ao,
+                        reactions: yo,
+                        single: xo
+                    },
+                    formatMetricValue: Ta,
+                    reactionSeriesOrder: bo,
+                    titles: {
+                        issuesFound: oo,
+                        priority: uo,
+                        reactions: po,
+                        reviewsDone: co,
+                        sentiment: ho
+                    }
+                },
+                issuesFoundChartData: yr,
+                issuesFoundSummary: or?.issuesFound,
+                priorityChartData: Kn,
+                reactionsChartData: Jn,
+                reactionsSummary: cr,
+                reviewsDoneChartData: mr,
+                reviewsDoneSummary: or?.reviewsDone
+            }) : (0, $.jsx)(xn, {
+                children: Pt ? l.formatMessage(Ga.errorMessage) : (0, $.jsx)(L, {
+                    id: `chatgpt.settings.analytics.code_review.empty_state`,
+                    defaultMessage: `No code review activity during this period`
+                })
+            })]
+        }) : null, t[363] = Pt, t[364] = yr, t[365] = Kn, t[366] = Jn, t[367] = cr, t[368] = mr, t[369] = or?.issuesFound, t[370] = or?.reviewsDone, t[371] = V.isLoading, t[372] = ri, t[373] = l, t[374] = Ue, t[375] = Ve, t[376] = ze, t[377] = z, t[378] = Ke, t[379] = We, t[380] = He, t[381] = Be, t[382] = qe, t[383] = ai, t[384] = A) : A = t[384];
+        let M;
+        return t[385] !== g || t[386] !== _ || t[387] !== v || t[388] !== T || t[389] !== E || t[390] !== O || t[391] !== k || t[392] !== A ? (M = (0, $.jsxs)(`div`, {
+            className: `flex min-w-0 flex-col gap-6 pt-4 pb-8`,
+            children: [g, _, v, b, T, E, O, k, A]
+        }), t[385] = g, t[386] = _, t[387] = v, t[388] = T, t[389] = E, t[390] = O, t[391] = k, t[392] = A, t[393] = M) : M = t[393], M
+    }
+    let hi = !o,
+        gi = !o,
+        _i;
+    t[394] !== Et || t[395] !== u.hash ? (_i = !s(u.hash) && (0, $.jsx)(Ze, {
+        activeTab: Et
+    }), t[394] = Et, t[395] = u.hash, t[396] = _i) : _i = t[396];
+    let vi;
+    t[397] === Symbol.for(`react.memo_cache_sentinel`) ? (vi = Kr(), t[397] = vi) : vi = t[397];
+    let yi;
+    t[398] === m ? yi = t[399] : (yi = Jr(m), t[398] = m, t[399] = yi);
+    let bi;
+    t[400] === Symbol.for(`react.memo_cache_sentinel`) ? (bi = (0, $.jsx)(`h1`, {
+        className: `text-token-text-primary py-2 text-xl leading-7 font-medium`,
+        children: (0, $.jsx)(L, {
+            id: `codex.analytics.title.codexAndWork`,
+            defaultMessage: `Codex and Work Analytics`
+        })
+    }), t[400] = bi) : bi = t[400];
+    let xi;
+    t[401] !== f || t[402] !== R || t[403] !== oe || t[404] !== z || t[405] !== I || t[406] !== ce || t[407] !== se || t[408] !== qe || t[409] !== ie || t[410] !== m || t[411] !== O ? (xi = m ? (0, $.jsxs)(`div`, {
+        className: `flex flex-wrap items-center gap-2`,
+        children: [(0, $.jsx)(ii, {
+            selectedWindowPreset: I,
+            setSelectedWindowPreset: ie,
+            selectedGroupBy: z,
+            setSelectedGroupBy: qe,
+            selectedDateRange: oe,
+            setSelectedDateRange: se,
+            customDateRange: R,
+            setCustomDateRange: ce
+        }), O ? (0, $.jsx)(fa, {
+            onClick: () => Gr(f),
+            children: (0, $.jsx)(L, {
+                id: `wham.settingsSidebar.analyticsApiReference.compact`,
+                defaultMessage: `API reference`
+            })
+        }) : null]
+    }) : null, t[401] = f, t[402] = R, t[403] = oe, t[404] = z, t[405] = I, t[406] = ce, t[407] = se, t[408] = qe, t[409] = ie, t[410] = m, t[411] = O, t[412] = xi) : xi = t[412];
+    let X;
+    t[413] === xi ? X = t[414] : (X = (0, $.jsxs)(`div`, {
+        className: `flex flex-wrap items-center justify-between gap-4`,
+        children: [bi, xi]
+    }), t[413] = xi, t[414] = X);
+    let Si;
+    t[415] !== Et || t[416] !== P || t[417] !== kn || t[418] !== Tt || t[419] !== wt || t[420] !== C || t[421] !== u || t[422] !== d || t[423] !== m || t[424] !== Ct || t[425] !== St ? (Si = m ? (0, $.jsx)(da, {
+        activeTab: Et,
+        leaderboardAdminUrl: kn,
+        workspaceUsageAdminUrl: P,
+        isWorkspacePlan: C,
+        showCodeReviewTab: Tt,
+        showLeaderboardAdminLink: Ct,
+        showLeaderboardTab: wt,
+        showWorkspaceUsageAdminLink: St,
+        onChange: e => {
+            let t = tn(e);
+            if (u.hash === t) return;
+            let {
+                to: n,
+                state: r
+            } = Tn(u, e);
+            d(n, {
+                replace: !0,
+                state: r
+            })
+        }
+    }) : null, t[415] = Et, t[416] = P, t[417] = kn, t[418] = Tt, t[419] = wt, t[420] = C, t[421] = u, t[422] = d, t[423] = m, t[424] = Ct, t[425] = St, t[426] = Si) : Si = t[426];
+    let wi;
+    t[427] !== yi || t[428] !== X || t[429] !== Si ? (wi = (0, $.jsxs)(`header`, {
+        className: yi,
+        children: [X, Si]
+    }), t[427] = yi, t[428] = X, t[429] = Si, t[430] = wi) : wi = t[430];
+    let Z;
+    t[431] === Symbol.for(`react.memo_cache_sentinel`) ? (Z = qr(), t[431] = Z) : Z = t[431];
+    let Ti;
+    t[432] !== tr || t[433] !== oi || t[434] !== B || t[435] !== Y || t[436] !== xt || t[437] !== bt || t[438] !== y || t[439] !== D || t[440] !== l || t[441] !== fi || t[442] !== ui || t[443] !== ci || t[444] !== z || t[445] !== et || t[446] !== m || t[447] !== ti || t[448] !== O || t[449] !== mi || t[450] !== $n || t[451] !== rr || t[452] !== K ? (Ti = ti ? (0, $.jsxs)(`section`, {
+        className: `flex flex-col gap-6`,
+        children: [m ? (0, $.jsxs)($.Fragment, {
+            children: [(0, $.jsx)(mn, {
+                className: Y,
+                enableAutoTopOffPaymentMethodWarning: !0
+            }), (0, $.jsx)(`div`, {
+                className: Y,
+                children: (0, $.jsx)(wn, {
+                    dateRange: B,
+                    groupBy: z,
+                    hideLocalTimeframeFilters: !0,
+                    personalAgentUsageSection: xt ? (0, $.jsx)(Wn, {
+                        scope: `personal`,
+                        dateRange: B,
+                        groupBy: z
+                    }) : void 0,
+                    showWorkspaceUsage: !1,
+                    useTokenAreaChart: !0,
+                    workspaceUser: D
+                })
+            }), (0, $.jsx)(pa, {
+                className: Y
+            })]
+        }) : null, !m && O ? (0, $.jsxs)(`div`, {
+            className: oi,
+            children: [(0, $.jsx)(`div`, {
+                className: `flex flex-col gap-2`,
+                children: (0, $.jsx)(`h3`, {
+                    className: `text-token-text-primary text-lg font-medium`,
+                    children: (0, $.jsx)(L, {
+                        ...Yr({
+                            groupBy: z,
+                            showAnalyticsRedesign: m
+                        })
+                    })
+                })
+            }), (0, $.jsx)(`div`, {
+                className: `grid gap-3 lg:grid-cols-6`,
+                children: $n.map(e => (0, $.jsx)(Sa, {
+                    accentColor: e.color,
+                    isActive: e.id === tr?.id,
+                    onClick: () => et(e.id),
+                    subtitle: m ? void 0 : Da({
+                        intl: l,
+                        summary: e.summary,
+                        isAbsoluteUsers: e.id === `totalUsers`
+                    }),
+                    title: e.label,
+                    value: Ta(e.summary)
+                }, e.id))
+            }), (0, $.jsx)(Mt, {
+                title: (0, $.jsx)(`span`, {
+                    className: `text-token-text-primary text-base font-semibold`,
+                    children: tr ? tr.id === `totalUsers` ? m ? z === `week` ? (0, $.jsx)(L, {
+                        id: `codex.analytics.usageSurface.chartTitle.absoluteUsers.weekly.redesign`,
+                        defaultMessage: `Weekly Active Users`
+                    }) : (0, $.jsx)(L, {
+                        id: `codex.analytics.usageSurface.chartTitle.absoluteUsers.daily.redesign`,
+                        defaultMessage: `Daily Active Users`
+                    }) : (0, $.jsx)(L, {
+                        id: `codex.analytics.usageSurface.chartTitle.absoluteUsers`,
+                        defaultMessage: `Daily users (past 30 days)`
+                    }) : m ? z === `week` ? (0, $.jsx)(L, {
+                        id: `codex.analytics.usageSurface.chartTitle.surfaceUsers.weekly.redesign`,
+                        defaultMessage: `Weekly {surface} users`,
+                        values: {
+                            surface: tr.label
+                        }
+                    }) : (0, $.jsx)(L, {
+                        id: `codex.analytics.usageSurface.chartTitle.surfaceUsers.daily.redesign`,
+                        defaultMessage: `Daily {surface} users`,
+                        values: {
+                            surface: tr.label
+                        }
+                    }) : (0, $.jsx)(L, {
+                        id: `codex.analytics.usageSurface.chartTitle.surfaceUsers`,
+                        defaultMessage: `Daily {surface} users (past 30 days)`,
+                        values: {
+                            surface: tr.label
+                        }
+                    }) : null
+                }),
+                description: m && tr.summary ? (0, $.jsx)(L, {
+                    id: `codex.analytics.usageSurface.chartSubtitle.averageUsers.redesign`,
+                    defaultMessage: `Avg {average} users per {groupBy, select, week {week} other {day}}`,
+                    values: {
+                        average: wo.format(tr.summary.average),
+                        groupBy: z
+                    }
+                }) : void 0,
+                data: rr,
+                clientEventSource: `codexDailyUsageByAppSurface`,
+                hideLegend: !0,
+                hideReferenceLine: !m,
+                compactSingleBucketBar: m,
+                yAxisMax: K,
+                seriesColorMap: tr ? {
+                    [tr.id]: tr.color
+                } : void 0
+            })]
+        }) : null, m ? null : (0, $.jsx)(`div`, {
+            className: Y,
+            children: (0, $.jsx)(wn, {
+                personalAgentUsageSection: xt ? (0, $.jsx)(Wn, {
+                    scope: `personal`,
+                    dateRange: B,
+                    groupBy: z
+                }) : void 0,
+                showWorkspaceUsage: !0,
+                workspaceAgentUsageSection: bt ? (0, $.jsx)(Wn, {
+                    scope: `workspace`,
+                    dateRange: B,
+                    groupBy: z
+                }) : void 0
+            })
+        }), m ? y || D ? (0, $.jsxs)($.Fragment, {
+            children: [ci, fi, ui, mi]
+        }) : null : (0, $.jsxs)($.Fragment, {
+            children: [ci, ui, mi]
+        })]
+    }) : null, t[432] = tr, t[433] = oi, t[434] = B, t[435] = Y, t[436] = xt, t[437] = bt, t[438] = y, t[439] = D, t[440] = l, t[441] = fi, t[442] = ui, t[443] = ci, t[444] = z, t[445] = et, t[446] = m, t[447] = ti, t[448] = O, t[449] = mi, t[450] = $n, t[451] = rr, t[452] = K, t[453] = Ti) : Ti = t[453];
+    let Ei;
+    t[454] !== B || t[455] !== vt || t[456] !== ni ? (Ei = ni ? (0, $.jsx)(`section`, {
+        className: `flex flex-1 flex-col`,
+        children: vt ? (0, $.jsx)(vr, {
+            dateRange: B
+        }) : (0, $.jsx)(`article`, {
+            className: `border-token-border-subtle bg-token-bg-primary rounded-2xl border p-6`,
+            children: (0, $.jsx)(`p`, {
+                className: `text-token-text-secondary text-sm`,
+                children: (0, $.jsx)(L, {
+                    id: `codex.analytics.leaderboard.redesignUnavailable`,
+                    defaultMessage: `Leaderboard is not available for this workspace.`
+                })
+            })
+        })
+    }) : null, t[454] = B, t[455] = vt, t[456] = ni, t[457] = Ei) : Ei = t[457];
+    let Di;
+    t[458] !== oi || t[459] !== Y || t[460] !== dt || t[461] !== yr || t[462] !== Kn || t[463] !== Jn || t[464] !== cr || t[465] !== mr || t[466] !== or || t[467] !== l || t[468] !== ct || t[469] !== z || t[470] !== ut || t[471] !== m || t[472] !== ai ? (Di = dt && ai ? (0, $.jsx)(`section`, {
+        className: m ? `flex flex-col` : `flex flex-col gap-6`,
+        children: m ? (0, $.jsxs)($.Fragment, {
+            children: [(0, $.jsxs)(`div`, {
+                className: `grid grid-cols-1 lg:grid-cols-2`,
+                children: [(0, $.jsx)(wa, {
+                    className: `border-token-border-light min-h-[384px] border-b lg:border-e`,
+                    infoTooltip: so,
+                    showSummary: !0,
+                    summary: or?.issuesFound,
+                    title: oo,
+                    children: (0, $.jsx)(Mt, {
+                        data: yr,
+                        clientEventSource: `codexDailyCodeReviewIssues`,
+                        seriesColorMap: {
+                            issuesFound: xo
+                        },
+                        compactSingleBucketBar: !0,
+                        hideHeader: !0,
+                        hideLegend: !0,
+                        ...So
+                    })
+                }), (0, $.jsx)(wa, {
+                    className: `border-token-border-light min-h-[384px] border-b`,
+                    infoTooltip: lo,
+                    showSummary: !0,
+                    summary: or?.reviewsDone,
+                    title: co,
+                    children: (0, $.jsx)(Mt, {
+                        data: mr,
+                        clientEventSource: `codexDailyCodeReviewTasks`,
+                        seriesColorMap: {
+                            reviewsDone: xo
+                        },
+                        compactSingleBucketBar: !0,
+                        hideHeader: !0,
+                        hideLegend: !0,
+                        ...So
+                    })
+                })]
+            }), (0, $.jsx)(wa, {
+                className: `border-token-border-light min-h-[384px] border-b`,
+                infoTooltip: fo,
+                title: uo,
+                children: (0, $.jsx)(Mt, {
+                    data: Kn,
+                    clientEventSource: `codexDailyCodeReviewPriority`,
+                    seriesColorMap: ao,
+                    stackOrder: [`p0`, `p1`, `p2`],
+                    legendOrder: [`p0`, `p1`, `p2`],
+                    tooltipMetricOrder: [`p0`, `p1`, `p2`],
+                    tooltipShowZeroMetrics: !0,
+                    hideHeader: !0,
+                    visualization: `stackedArea`,
+                    ...So
+                })
+            }), (0, $.jsxs)(`div`, {
+                className: `grid grid-cols-1 lg:grid-cols-2`,
+                children: [(0, $.jsx)(wa, {
+                    className: `border-token-border-light min-h-[384px] border-b lg:border-e lg:border-b-0`,
+                    infoTooltip: mo,
+                    showSummary: !0,
+                    summary: cr,
+                    title: po,
+                    children: (0, $.jsx)(Mt, {
+                        data: Jn,
+                        clientEventSource: `codexDailyCodeReviewReactions`,
+                        seriesColorMap: yo,
+                        stackOrder: bo,
+                        legendOrder: bo,
+                        tooltipMetricOrder: bo,
+                        hideHeader: !0,
+                        visualization: `stackedArea`,
+                        ...So
+                    })
+                }), (0, $.jsx)(wa, {
+                    className: `min-h-[384px]`,
+                    infoTooltip: go,
+                    title: ho,
+                    children: (0, $.jsx)(Ci, {
+                        title: ho,
+                        data: Jn,
+                        seriesOrder: bo,
+                        seriesColorMap: yo,
+                        hideHeader: !0,
+                        legendVariant: `codexAnalytics`,
+                        showHorizontalGrid: !0,
+                        xAxisTickCount: 7,
+                        xAxisTickAlignment: `balanced`
+                    })
+                })]
+            })]
+        }) : (0, $.jsxs)($.Fragment, {
+            children: [(0, $.jsxs)(`div`, {
+                className: oi,
+                children: [m ? null : (0, $.jsxs)(`div`, {
+                    className: `flex flex-col gap-2`,
+                    children: [(0, $.jsx)(`h3`, {
+                        className: `text-token-text-primary text-lg font-medium`,
+                        children: (0, $.jsx)(L, {
+                            id: `codex.analytics.codeReviewPanel.title`,
+                            defaultMessage: `Code review`
+                        })
+                    }), (0, $.jsx)(`p`, {
+                        className: `text-token-text-secondary max-w-4xl text-sm leading-6`,
+                        children: (0, $.jsx)(L, {
+                            id: `codex.analytics.codeReviewPanel.subtitle`,
+                            defaultMessage: `Track issues found and review throughput`
+                        })
+                    })]
+                }), m ? (0, $.jsxs)(`div`, {
+                    className: `grid gap-3 md:grid-cols-2`,
+                    children: [(0, $.jsx)(Ca, {
+                        isActive: ct === `issuesFound`,
+                        label: (0, $.jsx)(L, {
+                            id: `codex.analytics.codeReviewPanel.numberOfIssues`,
+                            defaultMessage: `Number of issues`
+                        }),
+                        onClick: () => ut(`issuesFound`),
+                        value: Ta(or?.issuesFound)
+                    }), (0, $.jsx)(Ca, {
+                        isActive: ct === `reviewsDone`,
+                        label: (0, $.jsx)(L, {
+                            id: `codex.analytics.codeReviewPanel.numberOfPrReviewed`,
+                            defaultMessage: `Number of PR reviewed`
+                        }),
+                        onClick: () => ut(`reviewsDone`),
+                        value: Ta(or?.reviewsDone)
+                    })]
+                }) : (0, $.jsxs)(`div`, {
+                    className: `flex flex-wrap items-stretch gap-3`,
+                    children: [(0, $.jsx)(Sa, {
+                        isActive: ct === `issuesFound`,
+                        onClick: () => ut(`issuesFound`),
+                        className: `h-full w-full md:min-h-[196px] md:w-[280px] md:flex-none`,
+                        subtitle: Oa({
+                            intl: l,
+                            summary: or
+                        }),
+                        title: l.formatMessage({
+                            id: `codex.analytics.codeReviewPanel.issuesFound`,
+                            defaultMessage: `issues found`
+                        }),
+                        value: Ta(or?.issuesFound)
+                    }), (0, $.jsx)(Sa, {
+                        isActive: ct === `reviewsDone`,
+                        onClick: () => ut(`reviewsDone`),
+                        className: `h-full w-full md:min-h-[196px] md:w-[280px] md:flex-none`,
+                        subtitle: Ea({
+                            intl: l,
+                            noun: l.formatMessage({
+                                id: `codex.analytics.codeReviewPanel.reviewsPerDay`,
+                                defaultMessage: `reviews/day`
+                            }),
+                            summary: or?.reviewsDone
+                        }),
+                        title: l.formatMessage({
+                            id: `codex.analytics.codeReviewPanel.reviewsDone`,
+                            defaultMessage: `reviews done`
+                        }),
+                        value: Ta(or?.reviewsDone)
+                    })]
+                }), ct === `issuesFound` ? (0, $.jsx)(Mt, {
+                    title: (0, $.jsx)(`span`, {
+                        className: `text-token-text-primary text-base font-semibold`,
+                        children: m ? (0, $.jsx)(L, {
+                            id: `codex.analytics.dailycodereviewpriority.chartTitle.redesign`,
+                            defaultMessage: `Issues found by priority`
+                        }) : (0, $.jsx)(L, {
+                            id: `codex.analytics.dailycodereviewpriority.chartTitle`,
+                            defaultMessage: `Issues found by priority (past 30 days)`
+                        })
+                    }),
+                    data: Kn,
+                    clientEventSource: `codexDailyCodeReviewPriority`,
+                    seriesColorMap: ao,
+                    forceStack: !0,
+                    compactSingleBucketBar: m,
+                    stackOrder: [`p2`, `p1`, `p0`],
+                    legendOrder: [`p0`, `p1`, `p2`],
+                    tooltipShowZeroMetrics: !0,
+                    hideReferenceLine: !0
+                }) : (0, $.jsx)(Mt, {
+                    title: (0, $.jsx)(`span`, {
+                        className: `text-token-text-primary text-base font-semibold`,
+                        children: m ? (0, $.jsx)(L, {
+                            ...Xr(z)
+                        }) : (0, $.jsx)(L, {
+                            id: `codex.analytics.codeReviewPanel.reviewsChartTitle`,
+                            defaultMessage: `Daily reviews done (past 30 days)`
+                        })
+                    }),
+                    data: mr,
+                    clientEventSource: `codexDailyCodeReviewTasks`,
+                    hideLegend: !0,
+                    hideReferenceLine: !0,
+                    compactSingleBucketBar: m,
+                    seriesColorMap: {
+                        reviewsDone: gr.totalUsers
+                    }
+                })]
+            }), (0, $.jsx)(`div`, {
+                className: Y,
+                children: (0, $.jsxs)(`div`, {
+                    className: `grid gap-6 xl:grid-cols-2`,
+                    children: [(0, $.jsx)(Mt, {
+                        title: (0, $.jsx)(`span`, {
+                            className: `text-token-text-primary text-base font-normal`,
+                            children: m ? (0, $.jsx)(L, {
+                                ...Zr(z)
+                            }) : (0, $.jsx)(L, {
+                                id: `codex.analytics.dailycodereviewreactions.chartTitle`,
+                                defaultMessage: `Daily code review reactions (past 30 days)`
+                            })
+                        }),
+                        data: Jn,
+                        clientEventSource: `codexDailyCodeReviewReactions`,
+                        seriesColorMap: yo,
+                        forceStack: m,
+                        compactSingleBucketBar: m,
+                        stackOrder: bo,
+                        legendOrder: bo
+                    }), (0, $.jsx)(Ci, {
+                        title: m ? Qr(z) : _o,
+                        data: Jn,
+                        seriesOrder: bo,
+                        seriesColorMap: yo
+                    })]
+                })
+            })]
+        })
+    }) : null, t[458] = oi, t[459] = Y, t[460] = dt, t[461] = yr, t[462] = Kn, t[463] = Jn, t[464] = cr, t[465] = mr, t[466] = or, t[467] = l, t[468] = ct, t[469] = z, t[470] = ut, t[471] = m, t[472] = ai, t[473] = Di) : Di = t[473];
+    let Oi;
+    t[474] !== Y || t[475] !== Rt || t[476] !== H || t[477] !== m || t[478] !== Je ? (Oi = Rt && !m ? (0, $.jsx)(`section`, {
+        children: (0, $.jsxs)(`div`, {
+            className: Y,
+            children: [(0, $.jsx)(`h2`, {
+                className: `text-token-text-primary text-lg font-medium`,
+                children: (0, $.jsx)(L, {
+                    id: `codex.analytics.sections.skills`,
+                    defaultMessage: `Skills`
+                })
+            }), (0, $.jsx)(lr, {
+                query: H,
+                config: Je
+            })]
+        })
+    }) : null, t[474] = Y, t[475] = Rt, t[476] = H, t[477] = m, t[478] = Je, t[479] = Oi) : Oi = t[479];
+    let ki;
+    t[480] !== Ti || t[481] !== Ei || t[482] !== Di || t[483] !== Oi ? (ki = (0, $.jsxs)(`div`, {
+        className: Z,
+        children: [Ti, Ei, Di, Oi]
+    }), t[480] = Ti, t[481] = Ei, t[482] = Di, t[483] = Oi, t[484] = ki) : ki = t[484];
+    let Ai;
+    t[485] !== wi || t[486] !== ki ? (Ai = (0, $.jsxs)(`div`, {
+        className: vi,
+        children: [wi, ki]
+    }), t[485] = wi, t[486] = ki, t[487] = Ai) : Ai = t[487];
+    let ji;
+    return t[488] !== o || t[489] !== hi || t[490] !== gi || t[491] !== _i || t[492] !== Ai ? (ji = (0, $.jsxs)(ft, {
+        footerSpacePx: 0,
+        fillContentHeight: !1,
+        topPadding: !0,
+        showSidebar: hi,
+        canShowAlert: gi,
+        hideHeaderNotificationBell: o,
+        hideHeaderSettings: o,
+        children: [_i, Ai]
+    }), t[488] = o, t[489] = hi, t[490] = gi, t[491] = _i, t[492] = Ai, t[493] = ji) : ji = t[493], ji
+}
+
+function Xi(e) {
+    let {
+        skill_usage_overviews: t
+    } = e;
+    return t.some(Zi)
+}
+
+function Zi(e) {
+    let {
+        invocation_counts: t
+    } = e;
+    return t > 0
+}
+
+function Qi(e) {
+    let {
+        plugin_usage_overviews: t
+    } = e;
+    return t.some($i)
+}
+
+function $i(e) {
+    let {
+        invocation_counts: t
+    } = e;
+    return t > 0
+}
+
+function ea(e) {
+    let {
+        code_attribution: t
+    } = e, {
+        lines_of_code: n
+    } = t;
+    return (n.added ?? 0) > 0
+}
+
+function ta(e, t) {
+    let {
+        totals: n
+    } = t;
+    return e + (n.turns ?? 0)
+}
+
+function na(e) {
+    return {
+        date: e.date,
+        value: e.n_comments ?? 0
+    }
+}
+
+function ra(e) {
+    return {
+        date: e.date,
+        value: e.n_reviews ?? 0
+    }
+}
+
+function ia(e, t) {
+    return e + (t.n_reactions ?? 0)
+}
+
+function aa(e, t) {
+    return Math.max(e, t.value ?? 0)
+}
+
+function oa(e) {
+    let t = {};
+    return bo.forEach(n => {
+        t[n] = e.values[n] ?? 0
+    }), {
+        ...e,
+        values: t
+    }
+}
+
+function sa() {
+    return dn(`30d`)
+}
+
+function ca() {
+    return dn(`30d`)
+}
+
+function la() {
+    return dn(`7d`)
+}
+
+function ua() {
+    return dn(`7d`)
+}
+
+function da(e) {
+    "use forget";
+    let t = (0, Ra.c)(36),
+        {
+            activeTab: n,
+            leaderboardAdminUrl: r,
+            workspaceUsageAdminUrl: a,
+            isWorkspacePlan: o,
+            showCodeReviewTab: s,
+            showLeaderboardAdminLink: c,
+            showLeaderboardTab: l,
+            showWorkspaceUsageAdminLink: u,
+            onChange: d
+        } = e,
+        f = le(),
+        p, m, h;
+    if (t[0] !== o || t[1] !== r || t[2] !== s || t[3] !== c || t[4] !== l || t[5] !== u || t[6] !== a) {
+        m = [];
+        let e;
+        t[10] === o ? e = t[11] : (e = {
+            id: `usage`,
+            label: o ? (0, $.jsx)(L, {
+                id: `codex.analytics.redesign.tabs.personalUsage`,
+                defaultMessage: `Personal usage`
+            }) : (0, $.jsx)(L, {
+                id: `codex.analytics.redesign.tabs.usage`,
+                defaultMessage: `Usage`
+            })
+        }, t[10] = o, t[11] = e), m.push(e);
+        let n;
+        t[12] !== u || t[13] !== a ? (n = u ? (0, $.jsxs)(be, {
+            href: a,
+            className: `text-token-text-tertiary hover:text-token-text-secondary inline-flex items-center gap-1 py-2 text-sm font-normal transition-colors`,
+            children: [(0, $.jsx)(L, {
+                id: `codex.analytics.redesign.tabs.workspaceUsage`,
+                defaultMessage: `Workspace usage`
+            }), (0, $.jsx)(i.ArrowTopRightSm, {
+                "aria-hidden": !0,
+                className: `icon-sm`,
+                "data-testid": `workspace-usage-admin-link-icon`
+            })]
+        }) : null, t[12] = u, t[13] = a, t[14] = n) : n = t[14], h = n;
+        let d;
+        if (t[15] !== r || t[16] !== c ? (d = c ? (0, $.jsxs)(be, {
+                href: r,
+                className: `text-token-text-tertiary hover:text-token-text-secondary inline-flex items-center gap-1 py-2 text-sm font-normal transition-colors`,
+                children: [(0, $.jsx)(L, {
+                    id: `codex.analytics.redesign.tabs.leaderboardAdminLink`,
+                    defaultMessage: `Leaderboard`
+                }), (0, $.jsx)(i.ArrowTopRightSm, {
+                    "aria-hidden": !0,
+                    className: `icon-sm`,
+                    "data-testid": `leaderboard-admin-link-icon`
+                })]
+            }) : null, t[15] = r, t[16] = c, t[17] = d) : d = t[17], p = d, s) {
+            let e;
+            t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+                id: `codeReview`,
+                label: (0, $.jsx)(L, {
+                    id: `codex.analytics.redesign.tabs.codeReview`,
+                    defaultMessage: `Code review`
+                }),
+                tooltip: {
+                    id: `codex.analytics.redesign.tabs.codeReviewTooltip`,
+                    defaultMessage: `Personal code review metrics during the selected period`,
+                    description: `Tooltip shown on the redesigned Codex analytics Code review tab for personal analytics.`
+                }
+            }, t[18] = e) : e = t[18], m.push(e)
+        }
+        if (l) {
+            let e;
+            t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+                id: `leaderboard`,
+                label: (0, $.jsx)(L, {
+                    id: `codex.analytics.redesign.tabs.leaderboard`,
+                    defaultMessage: `Leaderboard`
+                })
+            }, t[19] = e) : e = t[19], m.push(e)
+        }
+        t[0] = o, t[1] = r, t[2] = s, t[3] = c, t[4] = l, t[5] = u, t[6] = a, t[7] = p, t[8] = m, t[9] = h
+    } else p = t[7], m = t[8], h = t[9];
+    let g;
+    t[20] !== n || t[21] !== d || t[22] !== m ? (g = m.map(e => {
+        let t = (0, $.jsxs)(`button`, {
+            type: `button`,
+            onClick: () => d(e.id),
+            className: v(`text-token-text-tertiary hover:text-token-text-secondary relative py-2 text-sm font-normal transition-colors`, n === e.id && `text-token-text-primary font-medium`),
+            "aria-pressed": n === e.id,
+            children: [e.label, n === e.id ? (0, $.jsx)(`span`, {
+                "aria-hidden": !0,
+                className: `bg-token-text-primary absolute inset-x-0 bottom-0 h-0.5 rounded-full`
+            }) : null]
+        }, e.id);
+        return e.tooltip ? (0, $.jsx)(_, {
+            triggerAs: null,
+            label: (0, $.jsx)(L, {
+                ...e.tooltip
+            }),
+            side: `top`,
+            narrow: !0,
+            children: t
+        }, e.id) : t
+    }), t[20] = n, t[21] = d, t[22] = m, t[23] = g) : g = t[23];
+    let y = g,
+        b = s ? 2 : 1,
+        x;
+    t[24] !== p || t[25] !== b || t[26] !== c || t[27] !== u || t[28] !== y || t[29] !== h ? (x = u || c ? (0, $.jsxs)($.Fragment, {
+        children: [y.slice(0, b), h, p, y.slice(b)]
+    }) : y, t[24] = p, t[25] = b, t[26] = c, t[27] = u, t[28] = y, t[29] = h, t[30] = x) : x = t[30];
+    let S = x,
+        C;
+    t[31] === f ? C = t[32] : (C = f.formatMessage({
+        id: `codex.analytics.redesign.tabs.ariaLabel.codexAndWork`,
+        defaultMessage: `Codex and Work Analytics tabs`
+    }), t[31] = f, t[32] = C);
+    let w;
+    return t[33] !== C || t[34] !== S ? (w = (0, $.jsx)(`nav`, {
+        className: `mt-3 flex flex-wrap gap-5`,
+        "aria-label": C,
+        children: S
+    }), t[33] = C, t[34] = S, t[35] = w) : w = t[35], w
+}
+
+function fa(e) {
+    "use forget";
+    let t = (0, Ra.c)(3),
+        {
+            children: n,
+            onClick: r
+        } = e,
+        i;
+    return t[0] !== n || t[1] !== r ? (i = (0, $.jsx)(`button`, {
+        type: `button`,
+        onClick: r,
+        className: `border-token-border-default bg-token-bg-primary text-token-text-secondary hover:bg-token-bg-secondary hover:text-token-text-primary inline-flex h-7 shrink-0 items-center justify-center gap-1.5 rounded-full border px-2.5 text-xs leading-none font-medium whitespace-nowrap transition-colors`,
+        children: n
+    }), t[0] = n, t[1] = r, t[2] = i) : i = t[2], i
+}
+
+function pa(e) {
+    "use forget";
+    let t = (0, Ra.c)(6),
+        {
+            className: n
+        } = e,
+        r = et(),
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = {
+        poll: !0
+    }, t[0] = i) : i = t[0];
+    let {
+        data: a
+    } = _e(i);
+    if (!(r === We.enabled || a?.credits?.balance != null)) return null;
+    let o = a ?? null,
+        s;
+    t[1] === o ? s = t[2] : (s = (0, $.jsx)(ln, {
+        rateLimit: o
+    }), t[1] = o, t[2] = s);
+    let c;
+    return t[3] !== n || t[4] !== s ? (c = (0, $.jsx)(`div`, {
+        className: n,
+        children: s
+    }), t[3] = n, t[4] = s, t[5] = c) : c = t[5], c
+}
+
+function ma(e) {
+    "use forget";
+    let t = (0, Ra.c)(27),
+        {
+            dateRange: n,
+            groupBy: r,
+            includeCodeAttribution: i,
+            setHasResolvedFallback: a,
+            setSelectedDateRange: o,
+            setSelectedWindowPreset: s,
+            workspaceUser: c
+        } = e,
+        l;
+    t[0] !== n || t[1] !== r || t[2] !== c ? (l = {
+        dateRange: n,
+        enabled: !0,
+        groupBy: r,
+        workspaceUser: c
+    }, t[0] = n, t[1] = r, t[2] = c, t[3] = l) : l = t[3];
+    let u = Ne(l),
+        d;
+    t[4] === u.data?.data ? d = t[5] : (d = u.data?.data.some(ga) ?? !1, t[4] = u.data?.data, t[5] = d);
+    let f = d,
+        p = i && u.isSuccess && !f,
+        m;
+    t[6] !== n || t[7] !== r || t[8] !== p || t[9] !== c ? (m = {
+        dateRange: n,
+        enabled: p,
+        groupBy: r,
+        workspaceUser: c
+    }, t[6] = n, t[7] = r, t[8] = p, t[9] = c, t[10] = m) : m = t[10];
+    let h = xe(m),
+        g;
+    t[11] !== h.data?.data || t[12] !== p ? (g = p && (h.data?.data.some(ha) ?? !1), t[11] = h.data?.data, t[12] = p, t[13] = g) : g = t[13];
+    let _ = g,
+        v, y;
+    return t[14] !== h.isError || t[15] !== h.isSuccess || t[16] !== n || t[17] !== _ || t[18] !== f || t[19] !== u.isError || t[20] !== u.isSuccess || t[21] !== a || t[22] !== o || t[23] !== s || t[24] !== p ? (v = () => {
+        if (u.isError || p && h.isError) {
+            a(!0);
+            return
+        }!u.isSuccess || p && !h.isSuccess || (a(!0), (f || _) && (s(`30d`), o(n)))
+    }, y = [h.isError, h.isSuccess, n, _, f, u.isError, u.isSuccess, p, a, o, s], t[14] = h.isError, t[15] = h.isSuccess, t[16] = n, t[17] = _, t[18] = f, t[19] = u.isError, t[20] = u.isSuccess, t[21] = a, t[22] = o, t[23] = s, t[24] = p, t[25] = v, t[26] = y) : (v = t[25], y = t[26]), (0, Q.useEffect)(v, y), null
+}
+
+function ha(e) {
+    let {
+        code_attribution: t
+    } = e, {
+        lines_of_code: n
+    } = t;
+    return (n.added ?? 0) > 0
+}
+
+function ga(e) {
+    let {
+        totals: t
+    } = e;
+    return (t.turns ?? 0) > 0
+}
+
+function _a(e) {
+    "use forget";
+    let t = (0, Ra.c)(24),
+        {
+            dateRange: n,
+            groupBy: r,
+            setHasResolvedFallback: i,
+            setSelectedDateRange: a,
+            setSelectedWindowPreset: o,
+            workspaceUser: s
+        } = e,
+        c;
+    t[0] !== n || t[1] !== r || t[2] !== s ? (c = {
+        dateRange: n,
+        enabled: !0,
+        groupBy: r,
+        workspaceUser: s
+    }, t[0] = n, t[1] = r, t[2] = s, t[3] = c) : c = t[3];
+    let l = Ee(c),
+        u;
+    t[4] !== n || t[5] !== r || t[6] !== s ? (u = {
+        dateRange: n,
+        enabled: !0,
+        groupBy: r,
+        retryTransientErrors: !0,
+        workspaceUser: s
+    }, t[4] = n, t[5] = r, t[6] = s, t[7] = u) : u = t[7];
+    let d = Te(u),
+        f;
+    t[8] !== l.data?.data || t[9] !== l.isSuccess || t[10] !== d.data?.data || t[11] !== d.isSuccess ? (f = l.isSuccess && (l.data?.data.some(ba) ?? !1) || d.isSuccess && (d.data?.data.some(va) ?? !1), t[8] = l.data?.data, t[9] = l.isSuccess, t[10] = d.data?.data, t[11] = d.isSuccess, t[12] = f) : f = t[12];
+    let p = f,
+        m, h;
+    return t[13] !== n || t[14] !== p || t[15] !== l.isError || t[16] !== l.isSuccess || t[17] !== i || t[18] !== a || t[19] !== o || t[20] !== d.isError || t[21] !== d.isSuccess ? (m = () => {
+        if (p) {
+            i(!0), o(`30d`), a(n);
+            return
+        }!l.isSuccess && !l.isError || !d.isSuccess && !d.isError || i(!0)
+    }, h = [n, p, l.isError, l.isSuccess, i, a, o, d.isError, d.isSuccess], t[13] = n, t[14] = p, t[15] = l.isError, t[16] = l.isSuccess, t[17] = i, t[18] = a, t[19] = o, t[20] = d.isError, t[21] = d.isSuccess, t[22] = m, t[23] = h) : (m = t[22], h = t[23]), (0, Q.useEffect)(m, h), null
+}
+
+function va(e) {
+    let {
+        skill_usage_overviews: t
+    } = e;
+    return t.some(ya)
+}
+
+function ya(e) {
+    let {
+        invocation_counts: t
+    } = e;
+    return t > 0
+}
+
+function ba(e) {
+    let {
+        plugin_usage_overviews: t
+    } = e;
+    return t.some(xa)
+}
+
+function xa(e) {
+    let {
+        invocation_counts: t
+    } = e;
+    return t > 0
+}
+
+function Sa(e) {
+    "use forget";
+    let t = (0, Ra.c)(21),
+        {
+            accentColor: n,
+            className: r,
+            isActive: i,
+            onClick: a,
+            subtitle: o,
+            title: s,
+            value: c
+        } = e,
+        l = i && `bg-token-bg-tertiary shadow-sm`,
+        u;
+    t[0] !== r || t[1] !== l ? (u = v(`bg-token-bg-secondary hover:bg-token-bg-tertiary flex min-w-0 appearance-none flex-col items-start justify-start rounded-lg border border-transparent p-3 text-start transition-colors`, r, l), t[0] = r, t[1] = l, t[2] = u) : u = t[2];
+    let d;
+    t[3] === n ? d = t[4] : (d = n ? (0, $.jsx)(`div`, {
+        className: `mb-4 h-1.5 w-10 rounded-full`,
+        style: {
+            backgroundColor: n
+        }
+    }) : null, t[3] = n, t[4] = d);
+    let f;
+    t[5] === c ? f = t[6] : (f = (0, $.jsx)(`span`, {
+        className: `text-lg font-semibold tabular-nums sm:text-xl`,
+        children: c
+    }), t[5] = c, t[6] = f);
+    let p;
+    t[7] === s ? p = t[8] : (p = (0, $.jsx)(`span`, {
+        className: `min-w-0 text-sm leading-5 font-normal break-words`,
+        children: s
+    }), t[7] = s, t[8] = p);
+    let m;
+    t[9] !== f || t[10] !== p ? (m = (0, $.jsxs)(`div`, {
+        className: `text-token-text-primary flex min-w-0 flex-wrap items-baseline gap-x-2 gap-y-1`,
+        children: [f, p]
+    }), t[9] = f, t[10] = p, t[11] = m) : m = t[11];
+    let h;
+    t[12] === o ? h = t[13] : (h = o ? (0, $.jsx)(`div`, {
+        className: `text-token-text-secondary mt-2 text-xs leading-5 break-words whitespace-pre-line`,
+        children: o
+    }) : null, t[12] = o, t[13] = h);
+    let g;
+    return t[14] !== i || t[15] !== a || t[16] !== u || t[17] !== d || t[18] !== m || t[19] !== h ? (g = (0, $.jsxs)(`button`, {
+        type: `button`,
+        onClick: a,
+        className: u,
+        "aria-pressed": i,
+        children: [d, m, h]
+    }), t[14] = i, t[15] = a, t[16] = u, t[17] = d, t[18] = m, t[19] = h, t[20] = g) : g = t[20], g
+}
+
+function Ca(e) {
+    "use forget";
+    let t = (0, Ra.c)(12),
+        {
+            isActive: n,
+            label: r,
+            onClick: i,
+            value: a
+        } = e,
+        o = n && `border-token-border-heavy bg-token-bg-secondary`,
+        s;
+    t[0] === o ? s = t[1] : (s = v(`border-token-border-light hover:bg-token-bg-secondary flex min-h-[112px] flex-col items-start justify-between rounded-xl border p-4 text-start transition-colors`, o), t[0] = o, t[1] = s);
+    let c;
+    t[2] === r ? c = t[3] : (c = (0, $.jsx)(`span`, {
+        className: `text-token-text-primary text-xs font-normal`,
+        children: r
+    }), t[2] = r, t[3] = c);
+    let l;
+    t[4] === a ? l = t[5] : (l = (0, $.jsx)(`span`, {
+        className: `flex items-center gap-2`,
+        children: (0, $.jsx)(`span`, {
+            className: `text-token-text-primary text-2xl leading-8 font-normal tabular-nums`,
+            children: a
+        })
+    }), t[4] = a, t[5] = l);
+    let u;
+    return t[6] !== n || t[7] !== i || t[8] !== s || t[9] !== c || t[10] !== l ? (u = (0, $.jsxs)(`button`, {
+        type: `button`,
+        onClick: i,
+        className: s,
+        "aria-pressed": n,
+        children: [c, l]
+    }), t[6] = n, t[7] = i, t[8] = s, t[9] = c, t[10] = l, t[11] = u) : u = t[11], u
+}
+
+function wa(e) {
+    "use forget";
+    let t = (0, Ra.c)(28),
+        {
+            children: n,
+            className: r,
+            infoTooltip: i,
+            showSummary: a,
+            summary: o,
+            title: s
+        } = e,
+        c = a !== void 0 && a,
+        l = le(),
+        u;
+    t[0] === r ? u = t[1] : (u = v(`flex flex-col pb-8`, r), t[0] = r, t[1] = u);
+    let d;
+    t[2] === s ? d = t[3] : (d = (0, $.jsx)(L, {
+        ...s
+    }), t[2] = s, t[3] = d);
+    let f;
+    t[4] === i ? f = t[5] : (f = (0, $.jsx)(L, {
+        ...i
+    }), t[4] = i, t[5] = f);
+    let p;
+    t[6] !== l || t[7] !== s ? (p = l.formatMessage({
+        id: `codex.analytics.codeReviewPanel.chartInfoLabel.redesign`,
+        defaultMessage: `More information about {title}`
+    }, {
+        title: l.formatMessage(s)
+    }), t[6] = l, t[7] = s, t[8] = p) : p = t[8];
+    let m;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, $.jsx)(x, {
+        className: `icon-xs`,
+        "aria-hidden": `true`
+    }), t[9] = m) : m = t[9];
+    let h;
+    t[10] === p ? h = t[11] : (h = (0, $.jsx)(`button`, {
+        type: `button`,
+        "aria-label": p,
+        className: `text-token-text-tertiary hover:text-token-text-primary flex items-center rounded-sm transition-colors`,
+        children: m
+    }), t[10] = p, t[11] = h);
+    let g;
+    t[12] !== f || t[13] !== h ? (g = (0, $.jsx)(_, {
+        triggerAs: null,
+        label: f,
+        side: `top`,
+        narrow: !0,
+        children: h
+    }), t[12] = f, t[13] = h, t[14] = g) : g = t[14];
+    let y;
+    t[15] !== d || t[16] !== g ? (y = (0, $.jsxs)(`div`, {
+        className: `text-token-text-primary flex items-center gap-1 text-base leading-6 font-medium tracking-[-0.01em]`,
+        children: [d, g]
+    }), t[15] = d, t[16] = g, t[17] = y) : y = t[17];
+    let b;
+    t[18] !== c || t[19] !== o ? (b = c ? (0, $.jsx)(`div`, {
+        className: `text-token-text-primary mt-1 text-3xl leading-9 font-normal tabular-nums`,
+        children: Ta(o)
+    }) : null, t[18] = c, t[19] = o, t[20] = b) : b = t[20];
+    let S;
+    t[21] !== b || t[22] !== y ? (S = (0, $.jsxs)(`div`, {
+        className: `px-6 pt-6`,
+        children: [y, b]
+    }), t[21] = b, t[22] = y, t[23] = S) : S = t[23];
+    let C;
+    return t[24] !== n || t[25] !== S || t[26] !== u ? (C = (0, $.jsxs)(`div`, {
+        className: u,
+        children: [S, n]
+    }), t[24] = n, t[25] = S, t[26] = u, t[27] = C) : C = t[27], C
+}
+
+function Ta(e, t) {
+    if (!e) return `—`;
+    let n = t?.usePeakValue && `peakValue` in e ? e.peakValue : e.total;
+    return Co.format(Math.round(n))
+}
+
+function Ea({
+    intl: e,
+    noun: t,
+    summary: n
+}) {
+    return n ? e.formatMessage({
+        id: `codex.analytics.metricSummary.subtitle`,
+        defaultMessage: `Avg {average} {noun}`
+    }, {
+        average: wo.format(n.average),
+        noun: t
+    }) : e.formatMessage({
+        id: `codex.analytics.metricSummary.pending`,
+        defaultMessage: `Loading the latest 30-day trend.`
+    })
+}
+
+function Da({
+    intl: e,
+    summary: t,
+    isAbsoluteUsers: n
+}) {
+    return n ? t ? e.formatMessage({
+        id: `codex.analytics.usageSurface.absoluteUsers.subtitle`,
+        defaultMessage: `Avg {average} users/day`
+    }, {
+        average: Co.format(Math.round(t.average))
+    }) : e.formatMessage({
+        id: `codex.analytics.usageSurface.absoluteUsers.pending`,
+        defaultMessage: `Loading the latest 30-day trend.`
+    }) : t ? e.formatMessage({
+        id: `codex.analytics.metricSummary.subtitle`,
+        defaultMessage: `Avg {average} {noun}`
+    }, {
+        average: Co.format(Math.round(t.average)),
+        noun: e.formatMessage({
+            id: `codex.analytics.usageSurface.usersPerDay`,
+            defaultMessage: `users/day`
+        })
+    }) : e.formatMessage({
+        id: `codex.analytics.metricSummary.pending`,
+        defaultMessage: `Loading the latest 30-day trend.`
+    })
+}
+
+function Oa({
+    intl: e,
+    summary: t
+}) {
+    return t ? (0, $.jsxs)(`div`, {
+        className: `flex flex-col items-start gap-2`,
+        children: [(0, $.jsx)(ka, {
+            color: ao.p0,
+            label: e.formatMessage({
+                id: `codex.analytics.codeReviewPanel.priorityLabel.p0`,
+                defaultMessage: `P0`
+            }),
+            value: Co.format(t.priorityTotals.p0)
+        }), (0, $.jsx)(ka, {
+            color: ao.p1,
+            label: e.formatMessage({
+                id: `codex.analytics.codeReviewPanel.priorityLabel.p1`,
+                defaultMessage: `P1`
+            }),
+            value: Co.format(t.priorityTotals.p1)
+        }), (0, $.jsx)(ka, {
+            color: ao.p2,
+            label: e.formatMessage({
+                id: `codex.analytics.codeReviewPanel.priorityLabel.p2`,
+                defaultMessage: `P2`
+            }),
+            value: Co.format(t.priorityTotals.p2)
+        })]
+    }) : (0, $.jsx)(L, {
+        id: `codex.analytics.codeReviewPanel.issuesPending`,
+        defaultMessage: `Loading the latest 30-day trend.`
+    })
+}
+
+function ka(e) {
+    "use forget";
+    let t = (0, Ra.c)(10),
+        {
+            color: n,
+            label: r,
+            value: i
+        } = e,
+        a;
+    t[0] === n ? a = t[1] : (a = (0, $.jsx)(`span`, {
+        className: `h-2 w-2 rounded-full`,
+        style: {
+            backgroundColor: n
+        }
+    }), t[0] = n, t[1] = a);
+    let o;
+    t[2] === r ? o = t[3] : (o = (0, $.jsx)(`span`, {
+        className: `text-token-text-secondary text-xs font-medium`,
+        children: r
+    }), t[2] = r, t[3] = o);
+    let s;
+    t[4] === i ? s = t[5] : (s = (0, $.jsx)(`span`, {
+        className: `text-token-text-primary text-xs font-semibold`,
+        children: i
+    }), t[4] = i, t[5] = s);
+    let c;
+    return t[6] !== a || t[7] !== o || t[8] !== s ? (c = (0, $.jsxs)(`div`, {
+        className: `border-token-border-default bg-token-bg-primary inline-flex items-center gap-2 rounded-full border px-2.5 py-1`,
+        children: [a, o, s]
+    }), t[6] = a, t[7] = o, t[8] = s, t[9] = c) : c = t[9], c
+}
+
+function Aa(e) {
+    let t = e?.data;
+    if (t == null) return;
+    let n = 0,
+        r = 0;
+    return t.forEach(e => {
+        let t = Object.values(e.values).reduce((e, t) => e + (t ?? 0), 0);
+        n += t, t > r && (r = t)
+    }), {
+        total: n,
+        average: t.length > 0 ? n / t.length : 0,
+        peakValue: r
+    }
+}
+
+function ja(e) {
+    return Ma(e) ? Ba : `skillUsage:${e}`
+}
+
+function Ma(e) {
+    return e.toLocaleLowerCase() === za.toLocaleLowerCase()
+}
+
+function Na({
+    pluginId: e,
+    pluginName: t
+}) {
+    return Pa(t) ? Ha : `pluginUsage:${e??t}`
+}
+
+function Pa(e) {
+    return e.toLocaleLowerCase() === Va.toLocaleLowerCase()
+}
+
+function Fa({
+    response: e,
+    dateRange: t,
+    groupBy: n,
+    otherSeriesLabel: r
+}) {
+    if (e?.data == null) return;
+    let i = Zt({
+            availableDateKeys: e.data.map(e => La(e.date)),
+            dateRange: t ?? dn(`30d`),
+            groupBy: n
+        }),
+        a = new Set(i),
+        o = new Map;
+    e.data.forEach(e => {
+        let t = La(e.date);
+        if (!a.has(t)) return;
+        let n = o.get(t);
+        if (n) {
+            o.set(t, [...n, ...e.skill_usage_overviews]);
+            return
+        }
+        o.set(t, e.skill_usage_overviews)
+    });
+    let s = new Map,
+        c = new Map,
+        l = i.map(e => {
+            let t = o.get(e) ?? [],
+                n = new Map;
+            return t.forEach(e => {
+                let t = ja(e.skill_name),
+                    i = Ma(e.skill_name) ? r : e.display_name ?? e.skill_name;
+                n.set(t, (n.get(t) ?? 0) + e.invocation_counts), c.set(t, i)
+            }), n.forEach((e, t) => {
+                s.set(t, (s.get(t) ?? 0) + e)
+            }), {
+                dateKey: e,
+                values: n
+            }
+        }),
+        u = [...s.entries()].filter(([e]) => e !== Ba).sort((e, t) => t[1] - e[1] || e[0].localeCompare(t[0])).map(([e]) => e);
+    s.has(Ba) && u.push(Ba);
+    let d = {};
+    return u.forEach(e => {
+        d[e] = c.get(e) ?? e
+    }), {
+        response: {
+            data: l.map(({
+                dateKey: e,
+                values: t
+            }) => {
+                let n = {},
+                    r = {};
+                return t.forEach((e, t) => {
+                    n[t] = e;
+                    let i = c.get(t);
+                    i && (r[t] = i, r[`values.${t}`] = i)
+                }), {
+                    date: e,
+                    values: n,
+                    tooltipMetricDisplayNames: r
+                }
+            })
+        },
+        seriesLabels: d
+    }
+}
+
+function Ia({
+    response: e,
+    dateRange: t,
+    groupBy: n,
+    otherSeriesLabel: r
+}) {
+    if (e?.data == null) return;
+    let i = Zt({
+            availableDateKeys: e.data.map(e => La(e.date)),
+            dateRange: t ?? dn(`30d`),
+            groupBy: n
+        }),
+        a = new Set(i),
+        o = new Map;
+    e.data.forEach(e => {
+        let t = La(e.date);
+        if (!a.has(t)) return;
+        let n = o.get(t);
+        if (n) {
+            o.set(t, [...n, ...e.plugin_usage_overviews]);
+            return
+        }
+        o.set(t, e.plugin_usage_overviews)
+    });
+    let s = new Map,
+        c = new Map,
+        l = i.map(e => {
+            let t = o.get(e) ?? [],
+                n = new Map;
+            return t.forEach(e => {
+                let t = Na({
+                        pluginId: e.plugin_id,
+                        pluginName: e.plugin_name
+                    }),
+                    i = Pa(e.plugin_name) ? r : e.display_name ?? e.plugin_name;
+                n.set(t, (n.get(t) ?? 0) + e.invocation_counts), c.set(t, i)
+            }), n.forEach((e, t) => {
+                s.set(t, (s.get(t) ?? 0) + e)
+            }), {
+                dateKey: e,
+                values: n
+            }
+        }),
+        u = [...s.entries()].filter(([e]) => e !== Ha).sort((e, t) => t[1] - e[1] || e[0].localeCompare(t[0])).map(([e]) => e);
+    s.has(Ha) && u.push(Ha);
+    let d = {};
+    return u.forEach(e => {
+        d[e] = c.get(e) ?? e
+    }), {
+        response: {
+            data: l.map(({
+                dateKey: e,
+                values: t
+            }) => {
+                let n = {},
+                    r = {};
+                return t.forEach((e, t) => {
+                    n[t] = e;
+                    let i = c.get(t);
+                    i && (r[t] = i, r[`values.${t}`] = i)
+                }), {
+                    date: e,
+                    values: n,
+                    tooltipMetricDisplayNames: r
+                }
+            })
+        },
+        seriesLabels: d
+    }
+}
+
+function La(e) {
+    return typeof e == `string` ? e : e.toISOString().slice(0, 10)
+}
+var Ra, Q, $, za, Ba, Va, Ha, Ua, Wa, Ga, Ka, qa, Ja, Ya, Xa, Za, Qa, $a, eo, to, no, ro, io, ao, oo, so, co, lo, uo, fo, po, mo, ho, go, _o, vo, yo, bo, xo, So, Co, wo, To = e((() => {
+    Ra = ce(), Pe(), it(), ge(), f(), h(), T(), g(), F(), D(), O(), N(), E(), pt(), vt(), dt(), _n(), cr(), mr(), V(), _r(), bn(), zn(), an(), Wr(), $r(), ut(), En(), Si(), zt(), Ft(), ji(), Hi(), vn(), pn(), qi(), at(), B(), $t(), U(), G(), me(), C(), Q = n(R()), se(), oe(), $ = I(), za = `Other`, Ba = `other`, Va = `Other`, Ha = `other`, Ua = {
+        visualization: `stackedArea`,
+        showHorizontalGrid: !0,
+        yAxisTickCount: 4,
+        xAxisTickCount: 7,
+        xAxisTickAlignment: `balanced`
+    }, Wa = {
+        ...Ua,
+        matchAdminAnalyticsSeriesStyles: !0
+    }, Ga = {
+        title: {
+            id: `codex.analytics.dailyskillusage.chartTitle`,
+            defaultMessage: `Daily skill invocations (past 30 days)`,
+            description: `Title for the Codex analytics chart showing average daily skill invocations over the past 30 days`
+        },
+        titleSecondaryText: {
+            id: `codex.analytics.dailyskillusage.disclaimer`,
+            defaultMessage: `Skills from your repositories are only visible to workspace admins and analytics viewers`,
+            description: `Disclaimer shown under the Daily Skill Usage chart title to clarify workspace scoping and visibility.`
+        },
+        tooltipTotalLabel: {
+            id: `codex.analytics.dailyskillusage.tooltipTotalLabel`,
+            defaultMessage: `Total`,
+            description: `Label for the total row shown at the top of the skill usage chart tooltip. Displayed when hovering over a date in the Codex analytics skills section.`
+        },
+        errorMessage: {
+            id: `codex.analytics.dailyskillusage.error`,
+            defaultMessage: `We ran into an issue loading analytics. Data shown may be out of date.`,
+            description: `Error message shown when the Codex analytics daily skill usage chart fails to load`
+        },
+        loggerMessage: `Failed to load Codex analytics daily skill usage`,
+        clientEventSource: `codexDailySkillUsage`,
+        buildChartData: ({
+            response: e,
+            isError: t,
+            isLoading: n,
+            intl: r,
+            dateRange: i,
+            groupBy: a
+        }) => {
+            let o = Fa({
+                    response: e,
+                    dateRange: i,
+                    groupBy: a,
+                    otherSeriesLabel: r.formatMessage({
+                        id: `codex.analytics.dailyskillusage.otherSeriesLabel`,
+                        defaultMessage: `Other`
+                    })
+                }),
+                {
+                    chartData: s,
+                    isLoading: c
+                } = Sn({
+                    response: o?.response,
+                    isLoading: n,
+                    isError: t,
+                    seriesLabels: o?.seriesLabels ?? {}
+                });
+            return c ? `loading` : s
+        },
+        tooltipMetricKeysAtBottom: [Ba, `values.${Ba}`]
+    }, Ka = {
+        title: {
+            id: `codex.analytics.dailypluginusage.chartTitle`,
+            defaultMessage: `Daily plugin usage (past 30 days)`,
+            description: `Title for the Codex analytics chart showing daily plugin usage over the past 30 days`
+        },
+        tooltipTotalLabel: {
+            id: `codex.analytics.dailypluginusage.tooltipTotalLabel`,
+            defaultMessage: `Total`,
+            description: `Label for the total row shown at the top of the plugin usage chart tooltip. Displayed when hovering over a date in the Codex analytics plugins section.`
+        },
+        errorMessage: {
+            id: `codex.analytics.dailypluginusage.error`,
+            defaultMessage: `We ran into an issue loading plugin analytics. Data shown may be out of date.`,
+            description: `Error message shown when the Codex analytics daily plugin usage chart fails to load`
+        },
+        loggerMessage: `Failed to load Codex analytics daily plugin usage`,
+        clientEventSource: `codexDailyPluginUsage`,
+        buildChartData: ({
+            response: e,
+            isError: t,
+            isLoading: n,
+            intl: r,
+            dateRange: i,
+            groupBy: a
+        }) => {
+            let o = Ia({
+                    response: e,
+                    dateRange: i,
+                    groupBy: a,
+                    otherSeriesLabel: r.formatMessage({
+                        id: `codex.analytics.dailypluginusage.otherSeriesLabel`,
+                        defaultMessage: `Other`
+                    })
+                }),
+                {
+                    chartData: s,
+                    isLoading: c
+                } = Sn({
+                    response: o?.response,
+                    isLoading: n,
+                    isError: t,
+                    seriesLabels: o?.seriesLabels ?? {}
+                });
+            return c ? `loading` : s
+        },
+        tooltipMetricKeysAtBottom: [Ha, `values.${Ha}`]
+    }, qa = {
+        title: {
+            id: `codex.analytics.dailyLinesOfCode.chartTitle`,
+            defaultMessage: `Daily lines of code (past 30 days)`,
+            description: `Title for the Codex analytics chart showing daily lines of code generated by Codex over the past 30 days.`
+        },
+        tooltipTotalLabel: {
+            id: `codex.analytics.dailyLinesOfCode.tooltipTotalLabel`,
+            defaultMessage: `Total`,
+            description: `Label for the total row shown at the top of the lines of code chart tooltip.`
+        },
+        errorMessage: {
+            id: `codex.analytics.dailyLinesOfCode.error`,
+            defaultMessage: `We ran into an issue loading lines of code analytics. Data shown may be out of date.`,
+            description: `Error message shown when the Codex analytics lines of code chart fails to load.`
+        },
+        loggerMessage: `Failed to load Codex analytics lines of code`,
+        clientEventSource: `codexDailyLinesOfCode`,
+        buildChartData: ({
+            response: e,
+            isError: t,
+            isLoading: n,
+            intl: r
+        }) => rn({
+            response: Jt(e),
+            isLoading: n,
+            isError: t,
+            seriesId: `linesOfCode`,
+            displayName: r.formatMessage({
+                id: `codex.analytics.dailyLinesOfCode.seriesLabel`,
+                defaultMessage: `Lines of code`
+            }),
+            aggregation: `sum`
+        })
+    }, Ja = {
+        totalUsers: {
+            color: gr.totalUsers,
+            label: {
+                id: `codex.analytics.usageSurface.absoluteUsers`,
+                defaultMessage: `Users`,
+                description: `Label for the deduplicated users card in the usage by app surface section`
+            }
+        },
+        web: {
+            color: hr.web,
+            label: {
+                id: `codex.analytics.usageSurface.cloud`,
+                defaultMessage: `Cloud`,
+                description: `Label for the cloud surface card in Codex analytics`
+            }
+        },
+        mobile: {
+            color: hr.mobile,
+            label: {
+                id: `codex.analytics.usageSurface.mobile`,
+                defaultMessage: `Mobile`,
+                description: `Label for the mobile surface card in Codex analytics`
+            }
+        },
+        desktop: {
+            color: hr.desktop,
+            label: {
+                id: `codex.analytics.usageSurface.desktop`,
+                defaultMessage: `Desktop`,
+                description: `Label for the desktop surface card in Codex analytics`
+            }
+        },
+        vscode: {
+            color: hr.vscode,
+            label: {
+                id: `codex.analytics.usageSurface.vscode`,
+                defaultMessage: `Extension`,
+                description: `Label for the extension surface card in Codex analytics`
+            }
+        },
+        cli: {
+            color: hr.cli,
+            label: {
+                id: `codex.analytics.usageSurface.cli`,
+                defaultMessage: `CLI`,
+                description: `Label for the CLI surface card in Codex analytics`
+            }
+        },
+        codeReview: {
+            color: hr.codeReview,
+            label: {
+                id: `codex.analytics.usageSurface.codeReview`,
+                defaultMessage: `Code Review`,
+                description: `Label for the code review surface card in Codex analytics`
+            }
+        }
+    }, Ya = {
+        codeReview: {
+            id: `codex.analytics.dailyproductusageoverview.codeReviewSeriesLabel`,
+            defaultMessage: `Code review`,
+            description: `Label for the code review bar series displayed on the product usage overview chart`
+        },
+        web: {
+            id: `codex.analytics.dailyproductusageoverview.webSeriesLabel`,
+            defaultMessage: `Cloud`,
+            description: `Label for the Cloud bar series displayed on the product usage overview chart`
+        },
+        mobile: {
+            id: `codex.analytics.dailyproductusageoverview.mobileSeriesLabel`,
+            defaultMessage: `Mobile`,
+            description: `Label for the mobile bar series displayed on the product usage overview chart`
+        },
+        desktop: {
+            id: `codex.analytics.dailyproductusageoverview.desktopSeriesLabel`,
+            defaultMessage: `Desktop`,
+            description: `Label for the desktop bar series displayed on the product usage overview chart`
+        },
+        vscode: {
+            id: `codex.analytics.dailyproductusageoverview.vscodeSeriesLabel`,
+            defaultMessage: `Extension`,
+            description: `Label for the extension bar series displayed on the product usage overview chart`
+        },
+        cli: {
+            id: `codex.analytics.dailyproductusageoverview.cliSeriesLabel`,
+            defaultMessage: `CLI`,
+            description: `Label for the CLI bar series displayed on the product usage overview chart`
+        }
+    }, Xa = {
+        threads: {
+            color: hr.cli,
+            label: {
+                id: `codex.analytics.productUsage.threads`,
+                defaultMessage: `threads`,
+                description: `Label for the threads card in the product usage panel`
+            },
+            chartTitle: {
+                id: `codex.analytics.dailyproductusagethreads.chartTitle`,
+                defaultMessage: `Daily threads by client (past 30 days)`,
+                description: `Title for the Codex analytics chart that shows daily threads broken down by product`
+            },
+            noun: {
+                id: `codex.analytics.productUsage.threadsPerDay`,
+                defaultMessage: `threads/day`,
+                description: `Noun used in the threads summary card subtitle`
+            },
+            clientEventSource: `codexDailyProductUsageThreads`
+        },
+        turns: {
+            color: hr.vscode,
+            label: {
+                id: `codex.analytics.productUsage.turns`,
+                defaultMessage: `turns`,
+                description: `Label for the turns card in the product usage panel`
+            },
+            chartTitle: {
+                id: `codex.analytics.dailyproductusageturns.chartTitle`,
+                defaultMessage: `Daily turns by client (past 30 days)`,
+                description: `Title for the Codex analytics chart that shows daily turns broken down by product`
+            },
+            noun: {
+                id: `codex.analytics.productUsage.turnsPerDay`,
+                defaultMessage: `turns/day`,
+                description: `Noun used in the turns summary card subtitle`
+            },
+            clientEventSource: `codexDailyProductUsageTurns`
+        }
+    }, Za = [`desktop`, `cli`, `vscode`, `web`, `mobile`, `codeReview`], Qa = [...Za], $a = Za.flatMap(e => e === `web` ? [e, `workWeb`] : [e]), eo = {}, to = [], no = {
+        codeReview: hr.codeReview,
+        web: hr.web,
+        mobile: hr.mobile,
+        desktop: hr.desktop,
+        vscode: hr.vscode,
+        cli: hr.cli
+    }, ro = [`totalUsers`, ...Za], io = {
+        p0: {
+            id: `codex.analytics.dailycodereviewpriority.series.p0`,
+            defaultMessage: `P0 issues`,
+            description: `Legend label for the daily code review chart showing the number of priority zero issues`
+        },
+        p1: {
+            id: `codex.analytics.dailycodereviewpriority.series.p1`,
+            defaultMessage: `P1 issues`,
+            description: `Legend label for the daily code review chart showing the number of priority one issues`
+        },
+        p2: {
+            id: `codex.analytics.dailycodereviewpriority.series.p2`,
+            defaultMessage: `P2 issues`,
+            description: `Legend label for the daily code review chart showing the number of priority two issues`
+        }
+    }, ao = {
+        p0: `var(--blue-75)`,
+        p1: `var(--blue-400)`,
+        p2: `var(--blue-600)`
+    }, oo = {
+        id: `codex.analytics.codeReviewPanel.issuesFound.redesign`,
+        defaultMessage: `Issues found`,
+        description: `Title for the code review issues found chart on the redesigned Codex analytics Code review tab.`
+    }, so = {
+        id: `codex.analytics.codeReviewPanel.issuesFound.info.redesign`,
+        defaultMessage: `Issues found by Codex code review during the selected time period.`,
+        description: `Tooltip explaining the issues found chart on the redesigned Codex analytics Code review tab.`
+    }, co = {
+        id: `codex.analytics.codeReviewPanel.prsReviewed.redesign`,
+        defaultMessage: `PRs reviewed`,
+        description: `Title for the code review pull requests reviewed chart on the redesigned Codex analytics Code review tab.`
+    }, lo = {
+        id: `codex.analytics.codeReviewPanel.prsReviewed.info.redesign`,
+        defaultMessage: `Pull requests reviewed by Codex during the selected time period.`,
+        description: `Tooltip explaining the pull requests reviewed chart on the redesigned Codex analytics Code review tab.`
+    }, uo = {
+        id: `codex.analytics.dailycodereviewpriority.chartTitle.redesign`,
+        defaultMessage: `Issues by priority`,
+        description: `Title for the code review issue-priority chart on the redesigned Codex analytics Code review tab.`
+    }, fo = {
+        id: `codex.analytics.dailycodereviewpriority.chartInfo.redesign`,
+        defaultMessage: `Issues found by Codex code review grouped by priority during the selected time period.`,
+        description: `Tooltip explaining the issue-priority chart on the redesigned Codex analytics Code review tab.`
+    }, po = {
+        id: `codex.analytics.dailycodereviewreactions.chartTitle.redesign`,
+        defaultMessage: `Reactions`,
+        description: `Title for the code review reactions chart on the redesigned Codex analytics Code review tab.`
+    }, mo = {
+        id: `codex.analytics.dailycodereviewreactions.chartInfo.redesign`,
+        defaultMessage: `Reactions to Codex code review comments during the selected time period.`,
+        description: `Tooltip explaining the reactions chart on the redesigned Codex analytics Code review tab.`
+    }, ho = {
+        id: `codex.analytics.dailycodereviewsentiment.chartTitle.redesign`,
+        defaultMessage: `Reaction sentiment`,
+        description: `Title for the code review reaction sentiment chart on the redesigned Codex analytics Code review tab.`
+    }, go = {
+        id: `codex.analytics.dailycodereviewsentiment.chartInfo.redesign`,
+        defaultMessage: `Share of code review reactions grouped by reaction type during the selected time period.`,
+        description: `Tooltip explaining the reaction sentiment chart on the redesigned Codex analytics Code review tab.`
+    }, _o = {
+        id: `codex.analytics.dailycodereviewsentiment.chartTitle`,
+        defaultMessage: `Daily code review feedback sentiment (past 30 days)`,
+        description: `Title for the chart that shows average daily code review reactions broken down by reaction type as percentages`
+    }, vo = {
+        plus1: {
+            id: `codex.analytics.dailycodereviewreactions.series.plus1`,
+            defaultMessage: `👍 reactions`,
+            description: `Legend label for the daily code review reactions chart showing the number of +1 reactions`
+        },
+        minus1: {
+            id: `codex.analytics.dailycodereviewreactions.series.minus1`,
+            defaultMessage: `👎 reactions`,
+            description: `Legend label for the daily code review reactions chart showing the number of -1 reactions`
+        },
+        other: {
+            id: `codex.analytics.dailycodereviewreactions.series.other`,
+            defaultMessage: `Other reactions`,
+            description: `Legend label for the daily code review reactions chart showing the number of reactions that are neither +1 nor -1`
+        }
+    }, yo = {
+        plus1: `var(--blue-400)`,
+        minus1: `var(--pink-400)`,
+        other: `var(--blue-75)`
+    }, bo = [`plus1`, `minus1`, `other`], xo = `var(--blue-400)`, So = {
+        forceStack: !0,
+        legendVariant: `codexAnalytics`,
+        showHorizontalGrid: !0,
+        yAxisTickCount: 4,
+        xAxisTickCount: 7,
+        xAxisTickAlignment: `balanced`
+    }, Co = new Intl.NumberFormat, wo = new Intl.NumberFormat(void 0, {
+        maximumFractionDigits: 1,
+        minimumFractionDigits: 0
+    })
+}));
+export {
+    Ji as n, To as r, Yi as t
+};
 //# sourceMappingURL=0abfb8e8-hgrrc7vfqf1mndq9.js.map

@@ -1,2 +1,412 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{A8 as t,Dat as n,Drt as r,Ert as i,J7 as a,Oat as o,Ort as s,Q7 as ee,SK as te,V1 as c,Y7 as l,fat as ne,k8 as re,lrt as u,oK as ie,prt as ae,q1 as oe,sK as se,srt as d,uat as f,wat as p,xK as m}from"./4813494d-t80q9ew944ej0mgk.js";import{H as h,s as ce}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Cwn as g,Swn as le,gTn as ue,gnt as de,hTn as fe,hnt as _}from"./conversation-small-ocicxxw6jegn4vux.js";import{Gy as v,Mb as pe,Nv as y,Pb as b,Pv as me,Uy as he,Wy as ge}from"./c2675c8c-p3x4d0bnf7e77o1n.js";import{l as x,s as _e}from"./6fd89734-l8h178glfzpxynlr.js";var S,C,w=e((()=>{se(),S=ie.UseConnector,C=(e,t)=>e.predefined_role===t.predefined_role?e.name.localeCompare(t.name):e.predefined_role?-1:1})),T,E,D,O,k,A,j,M,N,P,F,I,L,R,z,ve,B,V,H,U,W,G,K,q,J,Y,X,ye,be,xe,Se,Z,Ce,we=e((()=>{pe(),le(),ue(),de(),re(),oe(),o(),ne(),ee(),i(),ae(),te(),ce(),ge(),T=`1160491803`,D=e=>e!=null,O=`1162439792`,A={"x-openai-use-sheep":`1`},j=(e,t)=>({authOption:p.Required,additionalHeaders:m(e),parameters:{path:{plugin_id:t}}}),M=e=>{let{allow_use_in_sites:t,...n}=e;return{...n,...typeof t==`boolean`?{allow_use_in_sites:t}:{}}},N=e=>({...M(e),allow_use_in_sites:e.allow_use_in_sites??!1}),P=(e,t,n=`legacy`)=>[`admin`,`plugins`,`settings`,e,t,...n===`legacy`?[]:[n]].filter(D),F=()=>{if(typeof window>`u`)return!1;let e=new URL(n,window.location.href);return e.origin===window.location.origin&&e.pathname.replace(/\/$/,``)===`/backend-api`&&e.search===``&&e.hash===``},I=()=>F()&&d(O,{disableExposureLog:!0})?`sheep`:`legacy`,L=t(I,e=>{let t=u();return t.on(`values_updated`,e),()=>t.off(`values_updated`,e)},{name:`adminPluginWorkspaceSettingsReadTransport`}),R=(e,t,n)=>{if(n?.throwIfAborted(),e!==I()||e===`sheep`&&c()?.getWorkspaceId()!==t)throw new h({revert:!0})},z=(e,t,n)=>{if(R(e,t,n),!(!F()||c()?.getWorkspaceId()!==t)&&(d(O)?`sheep`:`legacy`)!==e)throw new h({revert:!0})},ve=()=>(k??=new l({baseUrl:n.replace(/\/$/,``),targetRoutesAreCanonical:!0}),k),B=e=>[...new Set((e??[]).filter(e=>e!==``))].sort(),V=e=>B(e?.installed_by_default_role_ids),H=(e,t)=>e.size===t.size&&[...e].every(e=>t.has(e)),U=({mode:e,installedByDefaultRoleIds:t=[],eligibleRoleIds:n})=>{if(e===`available`)return{installation_policy:`AVAILABLE`,installed_by_default_role_ids:[]};let r=B([...t]),i=n!=null&&n.size>0&&r.length===n.size&&r.every(e=>n.has(e));return e===`custom_by_group`&&r.length===0?{installation_policy:`AVAILABLE`,installed_by_default_role_ids:[]}:e===`installed_by_default`||i?{installation_policy:`INSTALLED_BY_DEFAULT`,installed_by_default_role_ids:[]}:{installation_policy:`INSTALLED_BY_DEFAULT`,installed_by_default_role_ids:r}},W=async({workspaceId:e,pluginId:t,transport:n=I(),signal:r})=>{if(z(n,e,r),n===`sheep`){v({operation:`settings_get`,routeMode:`sheep`});let i=await g({operation:`settings_get`,transport:`sheep`,workspaceId:e,signal:r,request:n=>ve().safeGet(`/plugins/admin/{plugin_id}/settings`,{...n,authOption:p.Required,signal:r,additionalHeaders:{...m(e),[f]:fe.ADMIN_SETTING,...A},parameters:{path:{plugin_id:t}}})});return R(n,e,r),N(i)}let i=d(`3636574873`);return v({operation:`settings_get`,routeMode:i?`plugin_service`:`sa_server`}),i?await g({operation:`settings_get`,transport:`plugin_service`,workspaceId:e,signal:r,request:n=>_.safeGet(`/plugins/admin/{plugin_id}/settings`,{...j(e,t),...n})}):await g({operation:`settings_get`,transport:`sa_server`,workspaceId:e,signal:r,request:n=>a.safeGet(`/accounts/{account_id}/plugins/{plugin_id}/settings`,{...n,parameters:{path:{account_id:e,plugin_id:t}}})})},G=async({workspaceId:e,pluginId:t,settings:n})=>{let r={...n,source_surface:`admin_plugins`},i=d(`4057407015`);return v({operation:`settings_patch`,routeMode:i?`plugin_service`:`sa_server`}),i?await _.safePatch(`/plugins/admin/{plugin_id}/settings`,{...j(e,t),requestBody:r}):await a.safePatch(`/accounts/{account_id}/plugins/{plugin_id}/settings`,{parameters:{path:{account_id:e,plugin_id:t}},requestBody:r})},K=()=>{if(typeof window>`u`)return!1;let e=new URL(n,window.location.href);return e.origin===window.location.origin&&e.pathname.replace(/\/$/,``)===`/backend-api`&&e.search===``&&e.hash===``},q=()=>(E??=new l({baseUrl:n.replace(/\/$/,``),targetRoutesAreCanonical:!0}),E),J=e=>K()&&d(e,{disableExposureLog:!0})?`sheep`:`legacy`,Y=()=>J(T),X=e=>{let t=u();return t.on(`values_updated`,e),()=>t.off(`values_updated`,e)},ye=t(Y,X,{name:`adminPluginAdvancedSettingsMutationTransport`}),be=({transport:e,gate:t,workspaceId:n,workspaceUserId:r})=>{if(xe({workspaceId:n,workspaceUserId:r}),(K()&&d(t)?`sheep`:`legacy`)!==e)throw new h({revert:!0})},xe=({workspaceId:e,workspaceUserId:t})=>{let n=c();if(t==null||n?.getWorkspaceId()!==e||n.normalizedAccountUserId==null||n.normalizedAccountUserId!==t||!n.isAdminOfAccount()&&!n.isOwnerOfAccount())throw new h({revert:!0})},Se=async({workspaceId:e,pluginId:t,enabled:n})=>K()&&d(T)?(r.count(s.ECOSYSTEM,he,{frontend_app:`chatgpt_web`,operation:`settings_patch`,route_mode:`sheep`}),M(await q().safePatch(`/plugins/admin/{plugin_id}/settings`,{authOption:p.Required,additionalHeaders:{...m(e),"x-openai-use-sheep":`1`},parameters:{path:{plugin_id:t}},requestBody:{enabled:n,source_surface:`admin_plugins`}}))):await G({workspaceId:e,pluginId:t,settings:{enabled:n}}),Z=async({workspaceId:e,workspaceUserId:t,pluginId:n,settings:r,workspaceDefaultInstallation:i,transport:a})=>{let o={sourceSurface:`admin_plugins`};try{if(i!=null&&(a!==`sheep`||Object.keys(r).length>0))throw Error(`Workspace default installation requires a native intent-only update.`);a!=null&&be({transport:a,gate:T,workspaceId:e,workspaceUserId:t}),a===`sheep`&&v({operation:`settings_patch`,routeMode:`sheep`});let s=a===`sheep`?await q().safePatch(`/plugins/admin/{plugin_id}/settings`,{authOption:p.Required,additionalHeaders:{...m(e),[f]:fe.ADMIN_SETTING,...A},parameters:{path:{plugin_id:n}},requestBody:{...r,...i==null?{}:{workspace_default_installation:i},source_surface:`admin_plugins`},disableAutomaticRetry:!0}):await G({workspaceId:e,pluginId:n,settings:r});return b({action:`update_plugin_installation_policy`,outcome:`succeeded`,auditContext:o,remotePluginId:n}),M(s)}catch(e){throw b({action:`update_plugin_installation_policy`,outcome:`failed`,auditContext:o,remotePluginId:n}),e}},Ce=async({workspaceId:e,pluginId:t,enabled:n})=>await Se({workspaceId:e,pluginId:t,enabled:n})})),Te,Q,Ee,De,Oe,ke,Ae,$,je=e((()=>{_e(),me(),w(),we(),Te=`__all_roles__`,Q=e=>[e,`admin`,`plugins`],Ee=({queryClient:e,workspaceId:t,invalidateCatalog:n=!0})=>Promise.all([e.invalidateQueries({queryKey:y(`impact`,t)}),e.invalidateQueries({queryKey:y(`app-references`,t)}),...n?[e.invalidateQueries({queryKey:y(`list`,t)}),e.invalidateQueries({queryKey:y(`canonical-app`,t)})]:[]]),De=({queryClient:e,workspaceId:t,pluginId:n,workspaceSettings:r,invalidateV2Lists:i=!0})=>{e.setQueriesData({queryKey:y(`detail`,t)},e=>e?.id===n?{...e,workspace_settings:r}:e),e.setQueriesData({queryKey:y(`list`,t)},e=>e==null?e:{...e,pages:e.pages.map(e=>({...e,plugins:e.plugins.map(e=>e.id===n?{...e,workspace_settings:r}:e)}))}),i&&e.invalidateQueries({queryKey:y(`list`,t)}),e.setQueriesData({queryKey:Q(t)},e=>Oe(e)?{...e,pages:e.pages.map(e=>({...e,items:e.items.map(e=>e.id===n?{...e,workspace_settings:r}:e)}))}:e)},Oe=e=>typeof e==`object`&&!!e&&`pages`in e&&Array.isArray(e.pages),ke=e=>e?.filter(e=>e.connector_permissions.includes(S))??[],Ae=({installedByDefaultRoleIds:e,eligibleRoleIds:t})=>{let n=[...t].find(x);return[...new Set(e.flatMap(e=>t.has(e)?e:x(e)&&n!=null?n:[]))].sort()},$=({settings:e,eligibleRoleIds:t})=>e.installation_policy===`INSTALLED_BY_DEFAULT`&&e.installed_by_default_role_ids.length===0?[...t].sort():Ae({installedByDefaultRoleIds:V(e),eligibleRoleIds:t})}));export{Z as _,je as a,w as b,ye as c,W as d,P as f,Ce as g,I as h,$ as i,L as l,H as m,Q as n,Ee as o,we as p,ke as r,De as s,Te as t,U as u,S as v,C as y};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A8 as t,
+    Dat as n,
+    Drt as r,
+    Ert as i,
+    J7 as a,
+    Oat as o,
+    Ort as s,
+    Q7 as ee,
+    SK as te,
+    V1 as c,
+    Y7 as l,
+    fat as ne,
+    k8 as re,
+    lrt as u,
+    oK as ie,
+    prt as ae,
+    q1 as oe,
+    sK as se,
+    srt as d,
+    uat as f,
+    wat as p,
+    xK as m
+} from "./4813494d-t80q9ew944ej0mgk.js";
+import {
+    H as h,
+    s as ce
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Cwn as g,
+    Swn as le,
+    gTn as ue,
+    gnt as de,
+    hTn as fe,
+    hnt as _
+} from "./conversation-small-ocicxxw6jegn4vux.js";
+import {
+    Gy as v,
+    Mb as pe,
+    Nv as y,
+    Pb as b,
+    Pv as me,
+    Uy as he,
+    Wy as ge
+} from "./c2675c8c-p3x4d0bnf7e77o1n.js";
+import {
+    l as x,
+    s as _e
+} from "./6fd89734-l8h178glfzpxynlr.js";
+var S, C, w = e((() => {
+        se(), S = ie.UseConnector, C = (e, t) => e.predefined_role === t.predefined_role ? e.name.localeCompare(t.name) : e.predefined_role ? -1 : 1
+    })),
+    T, E, D, O, k, A, j, M, N, P, F, I, L, R, z, ve, B, V, H, U, W, G, K, q, J, Y, X, ye, be, xe, Se, Z, Ce, we = e((() => {
+        pe(), le(), ue(), de(), re(), oe(), o(), ne(), ee(), i(), ae(), te(), ce(), ge(), T = `1160491803`, D = e => e != null, O = `1162439792`, A = {
+            "x-openai-use-sheep": `1`
+        }, j = (e, t) => ({
+            authOption: p.Required,
+            additionalHeaders: m(e),
+            parameters: {
+                path: {
+                    plugin_id: t
+                }
+            }
+        }), M = e => {
+            let {
+                allow_use_in_sites: t,
+                ...n
+            } = e;
+            return {
+                ...n,
+                ...typeof t == `boolean` ? {
+                    allow_use_in_sites: t
+                } : {}
+            }
+        }, N = e => ({
+            ...M(e),
+            allow_use_in_sites: e.allow_use_in_sites ?? !1
+        }), P = (e, t, n = `legacy`) => [`admin`, `plugins`, `settings`, e, t, ...n === `legacy` ? [] : [n]].filter(D), F = () => {
+            if (typeof window > `u`) return !1;
+            let e = new URL(n, window.location.href);
+            return e.origin === window.location.origin && e.pathname.replace(/\/$/, ``) === `/backend-api` && e.search === `` && e.hash === ``
+        }, I = () => F() && d(O, {
+            disableExposureLog: !0
+        }) ? `sheep` : `legacy`, L = t(I, e => {
+            let t = u();
+            return t.on(`values_updated`, e), () => t.off(`values_updated`, e)
+        }, {
+            name: `adminPluginWorkspaceSettingsReadTransport`
+        }), R = (e, t, n) => {
+            if (n?.throwIfAborted(), e !== I() || e === `sheep` && c()?.getWorkspaceId() !== t) throw new h({
+                revert: !0
+            })
+        }, z = (e, t, n) => {
+            if (R(e, t, n), !(!F() || c()?.getWorkspaceId() !== t) && (d(O) ? `sheep` : `legacy`) !== e) throw new h({
+                revert: !0
+            })
+        }, ve = () => (k ??= new l({
+            baseUrl: n.replace(/\/$/, ``),
+            targetRoutesAreCanonical: !0
+        }), k), B = e => [...new Set((e ?? []).filter(e => e !== ``))].sort(), V = e => B(e?.installed_by_default_role_ids), H = (e, t) => e.size === t.size && [...e].every(e => t.has(e)), U = ({
+            mode: e,
+            installedByDefaultRoleIds: t = [],
+            eligibleRoleIds: n
+        }) => {
+            if (e === `available`) return {
+                installation_policy: `AVAILABLE`,
+                installed_by_default_role_ids: []
+            };
+            let r = B([...t]),
+                i = n != null && n.size > 0 && r.length === n.size && r.every(e => n.has(e));
+            return e === `custom_by_group` && r.length === 0 ? {
+                installation_policy: `AVAILABLE`,
+                installed_by_default_role_ids: []
+            } : e === `installed_by_default` || i ? {
+                installation_policy: `INSTALLED_BY_DEFAULT`,
+                installed_by_default_role_ids: []
+            } : {
+                installation_policy: `INSTALLED_BY_DEFAULT`,
+                installed_by_default_role_ids: r
+            }
+        }, W = async ({
+            workspaceId: e,
+            pluginId: t,
+            transport: n = I(),
+            signal: r
+        }) => {
+            if (z(n, e, r), n === `sheep`) {
+                v({
+                    operation: `settings_get`,
+                    routeMode: `sheep`
+                });
+                let i = await g({
+                    operation: `settings_get`,
+                    transport: `sheep`,
+                    workspaceId: e,
+                    signal: r,
+                    request: n => ve().safeGet(`/plugins/admin/{plugin_id}/settings`, {
+                        ...n,
+                        authOption: p.Required,
+                        signal: r,
+                        additionalHeaders: {
+                            ...m(e),
+                            [f]: fe.ADMIN_SETTING,
+                            ...A
+                        },
+                        parameters: {
+                            path: {
+                                plugin_id: t
+                            }
+                        }
+                    })
+                });
+                return R(n, e, r), N(i)
+            }
+            let i = d(`3636574873`);
+            return v({
+                operation: `settings_get`,
+                routeMode: i ? `plugin_service` : `sa_server`
+            }), i ? await g({
+                operation: `settings_get`,
+                transport: `plugin_service`,
+                workspaceId: e,
+                signal: r,
+                request: n => _.safeGet(`/plugins/admin/{plugin_id}/settings`, {
+                    ...j(e, t),
+                    ...n
+                })
+            }) : await g({
+                operation: `settings_get`,
+                transport: `sa_server`,
+                workspaceId: e,
+                signal: r,
+                request: n => a.safeGet(`/accounts/{account_id}/plugins/{plugin_id}/settings`, {
+                    ...n,
+                    parameters: {
+                        path: {
+                            account_id: e,
+                            plugin_id: t
+                        }
+                    }
+                })
+            })
+        }, G = async ({
+            workspaceId: e,
+            pluginId: t,
+            settings: n
+        }) => {
+            let r = {
+                    ...n,
+                    source_surface: `admin_plugins`
+                },
+                i = d(`4057407015`);
+            return v({
+                operation: `settings_patch`,
+                routeMode: i ? `plugin_service` : `sa_server`
+            }), i ? await _.safePatch(`/plugins/admin/{plugin_id}/settings`, {
+                ...j(e, t),
+                requestBody: r
+            }) : await a.safePatch(`/accounts/{account_id}/plugins/{plugin_id}/settings`, {
+                parameters: {
+                    path: {
+                        account_id: e,
+                        plugin_id: t
+                    }
+                },
+                requestBody: r
+            })
+        }, K = () => {
+            if (typeof window > `u`) return !1;
+            let e = new URL(n, window.location.href);
+            return e.origin === window.location.origin && e.pathname.replace(/\/$/, ``) === `/backend-api` && e.search === `` && e.hash === ``
+        }, q = () => (E ??= new l({
+            baseUrl: n.replace(/\/$/, ``),
+            targetRoutesAreCanonical: !0
+        }), E), J = e => K() && d(e, {
+            disableExposureLog: !0
+        }) ? `sheep` : `legacy`, Y = () => J(T), X = e => {
+            let t = u();
+            return t.on(`values_updated`, e), () => t.off(`values_updated`, e)
+        }, ye = t(Y, X, {
+            name: `adminPluginAdvancedSettingsMutationTransport`
+        }), be = ({
+            transport: e,
+            gate: t,
+            workspaceId: n,
+            workspaceUserId: r
+        }) => {
+            if (xe({
+                    workspaceId: n,
+                    workspaceUserId: r
+                }), (K() && d(t) ? `sheep` : `legacy`) !== e) throw new h({
+                revert: !0
+            })
+        }, xe = ({
+            workspaceId: e,
+            workspaceUserId: t
+        }) => {
+            let n = c();
+            if (t == null || n?.getWorkspaceId() !== e || n.normalizedAccountUserId == null || n.normalizedAccountUserId !== t || !n.isAdminOfAccount() && !n.isOwnerOfAccount()) throw new h({
+                revert: !0
+            })
+        }, Se = async ({
+            workspaceId: e,
+            pluginId: t,
+            enabled: n
+        }) => K() && d(T) ? (r.count(s.ECOSYSTEM, he, {
+            frontend_app: `chatgpt_web`,
+            operation: `settings_patch`,
+            route_mode: `sheep`
+        }), M(await q().safePatch(`/plugins/admin/{plugin_id}/settings`, {
+            authOption: p.Required,
+            additionalHeaders: {
+                ...m(e),
+                "x-openai-use-sheep": `1`
+            },
+            parameters: {
+                path: {
+                    plugin_id: t
+                }
+            },
+            requestBody: {
+                enabled: n,
+                source_surface: `admin_plugins`
+            }
+        }))) : await G({
+            workspaceId: e,
+            pluginId: t,
+            settings: {
+                enabled: n
+            }
+        }), Z = async ({
+            workspaceId: e,
+            workspaceUserId: t,
+            pluginId: n,
+            settings: r,
+            workspaceDefaultInstallation: i,
+            transport: a
+        }) => {
+            let o = {
+                sourceSurface: `admin_plugins`
+            };
+            try {
+                if (i != null && (a !== `sheep` || Object.keys(r).length > 0)) throw Error(`Workspace default installation requires a native intent-only update.`);
+                a != null && be({
+                    transport: a,
+                    gate: T,
+                    workspaceId: e,
+                    workspaceUserId: t
+                }), a === `sheep` && v({
+                    operation: `settings_patch`,
+                    routeMode: `sheep`
+                });
+                let s = a === `sheep` ? await q().safePatch(`/plugins/admin/{plugin_id}/settings`, {
+                    authOption: p.Required,
+                    additionalHeaders: {
+                        ...m(e),
+                        [f]: fe.ADMIN_SETTING,
+                        ...A
+                    },
+                    parameters: {
+                        path: {
+                            plugin_id: n
+                        }
+                    },
+                    requestBody: {
+                        ...r,
+                        ...i == null ? {} : {
+                            workspace_default_installation: i
+                        },
+                        source_surface: `admin_plugins`
+                    },
+                    disableAutomaticRetry: !0
+                }) : await G({
+                    workspaceId: e,
+                    pluginId: n,
+                    settings: r
+                });
+                return b({
+                    action: `update_plugin_installation_policy`,
+                    outcome: `succeeded`,
+                    auditContext: o,
+                    remotePluginId: n
+                }), M(s)
+            } catch (e) {
+                throw b({
+                    action: `update_plugin_installation_policy`,
+                    outcome: `failed`,
+                    auditContext: o,
+                    remotePluginId: n
+                }), e
+            }
+        }, Ce = async ({
+            workspaceId: e,
+            pluginId: t,
+            enabled: n
+        }) => await Se({
+            workspaceId: e,
+            pluginId: t,
+            enabled: n
+        })
+    })),
+    Te, Q, Ee, De, Oe, ke, Ae, $, je = e((() => {
+        _e(), me(), w(), we(), Te = `__all_roles__`, Q = e => [e, `admin`, `plugins`], Ee = ({
+            queryClient: e,
+            workspaceId: t,
+            invalidateCatalog: n = !0
+        }) => Promise.all([e.invalidateQueries({
+            queryKey: y(`impact`, t)
+        }), e.invalidateQueries({
+            queryKey: y(`app-references`, t)
+        }), ...n ? [e.invalidateQueries({
+            queryKey: y(`list`, t)
+        }), e.invalidateQueries({
+            queryKey: y(`canonical-app`, t)
+        })] : []]), De = ({
+            queryClient: e,
+            workspaceId: t,
+            pluginId: n,
+            workspaceSettings: r,
+            invalidateV2Lists: i = !0
+        }) => {
+            e.setQueriesData({
+                queryKey: y(`detail`, t)
+            }, e => e?.id === n ? {
+                ...e,
+                workspace_settings: r
+            } : e), e.setQueriesData({
+                queryKey: y(`list`, t)
+            }, e => e == null ? e : {
+                ...e,
+                pages: e.pages.map(e => ({
+                    ...e,
+                    plugins: e.plugins.map(e => e.id === n ? {
+                        ...e,
+                        workspace_settings: r
+                    } : e)
+                }))
+            }), i && e.invalidateQueries({
+                queryKey: y(`list`, t)
+            }), e.setQueriesData({
+                queryKey: Q(t)
+            }, e => Oe(e) ? {
+                ...e,
+                pages: e.pages.map(e => ({
+                    ...e,
+                    items: e.items.map(e => e.id === n ? {
+                        ...e,
+                        workspace_settings: r
+                    } : e)
+                }))
+            } : e)
+        }, Oe = e => typeof e == `object` && !!e && `pages` in e && Array.isArray(e.pages), ke = e => e?.filter(e => e.connector_permissions.includes(S)) ?? [], Ae = ({
+            installedByDefaultRoleIds: e,
+            eligibleRoleIds: t
+        }) => {
+            let n = [...t].find(x);
+            return [...new Set(e.flatMap(e => t.has(e) ? e : x(e) && n != null ? n : []))].sort()
+        }, $ = ({
+            settings: e,
+            eligibleRoleIds: t
+        }) => e.installation_policy === `INSTALLED_BY_DEFAULT` && e.installed_by_default_role_ids.length === 0 ? [...t].sort() : Ae({
+            installedByDefaultRoleIds: V(e),
+            eligibleRoleIds: t
+        })
+    }));
+export {
+    Z as _, je as a, w as b, ye as c, W as d, P as f, Ce as g, I as h, $ as i, L as l, H as m, Q as n, Ee as o, we as p, ke as r, De as s, Te as t, U as u, S as v, C as y
+};
 //# sourceMappingURL=b26e60ff-ccbn1nlrhs54e9s2.js.map

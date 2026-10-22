@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,t as n}from"./90a39c8d-cmoyjyemqkz904hv.js";var r=e((()=>{t()}));e((()=>{r()}))();export{n as default};
-//# sourceMappingURL=admin.usage-limits._tab-l5r3vgja.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,t as n}from"./90a39c8d-qbnddpli7mhw58va.js";var r=e((()=>{t()}));e((()=>{r()}))();export{n as default};
+//# sourceMappingURL=admin.usage-limits._tab-d4rn8hvk.js.map

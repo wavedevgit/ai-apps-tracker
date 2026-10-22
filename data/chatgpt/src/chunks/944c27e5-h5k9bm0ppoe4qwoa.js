@@ -1,0 +1,1340 @@
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Qt as r,
+    Xt as i,
+    c7 as a,
+    cn as o,
+    en as s,
+    hn as c,
+    jt as l,
+    l7 as u,
+    nn as d,
+    on as f,
+    vn as p
+} from "./4813494d-itnrgnth03y1sm9d.js";
+import {
+    Bn as m,
+    Vn as h,
+    wn as g
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    n as _,
+    t as v
+} from "./9e9d0eec-j24gxg6gi9duoed8.js";
+import {
+    n as y,
+    t as b
+} from "./9e38ec96-lf9tyby1b7iurr0s.js";
+import {
+    t as x
+} from "./c7a90257-h8bu5i1psxpuvu4f.js";
+import {
+    c as S,
+    s as C
+} from "./0f2a693e-ixuu1upjhavxhvub.js";
+import {
+    n as w,
+    r as T,
+    t as ee
+} from "./3fb45623-pdrwgy982nr0z8xj.js";
+import {
+    n as E,
+    t as te
+} from "./d25f8a5b-fhwu3rtmko7xc2c4.js";
+import {
+    i as D,
+    t as O
+} from "./bfac314f-blouvrkeov0djtxr.js";
+import {
+    n as k,
+    t as ne
+} from "./ab530a13-o7ptbk80bzb4bzs2.js";
+import {
+    n as re,
+    t as ie
+} from "./c989edf1-e0ddxbfr3j9ew4le.js";
+var ae, oe, se, A = e((() => {
+    ae = m(), h(), oe = e => (0, ae.jsx)(`svg`, {
+        xmlns: `http://www.w3.org/2000/svg`,
+        width: 116,
+        height: 72,
+        fill: `none`,
+        overflow: `visible`,
+        preserveAspectRatio: `none`,
+        viewBox: `0 0 116 72`,
+        ...e,
+        children: (0, ae.jsx)(`path`, {
+            fill: `currentColor`,
+            d: `M116 24c0 6.627-5.373 12-12 12H72c-6.627 0-12 5.373-12 12v22a2 2 0 1 1-4 0V48c0-6.627-5.373-12-12-12H12C5.373 36 0 30.627 0 24V12C0 5.373 5.373 0 12 0h92c6.627 0 12 5.373 12 12z`
+        })
+    }), se = oe
+}));
+
+function ce(e, t) {
+    return Math.max(1, Math.floor(e / (Math.max(1, t - 1) * 18)))
+}
+
+function le(e, t) {
+    return t ? 1 - (1 - 2 / 18) * ((1 + Math.cos(Math.min(1, Math.abs(e) / 90) * Math.PI)) / 2) : 1
+}
+
+function ue(e) {
+    let t = e ?? 5;
+    return Number.isFinite(t) && t > 0 ? Math.min(t * 1e3, 2147483647) : 0
+}
+
+function de(e, t) {
+    return Math.max(0, Math.min(Math.max(0, t - 1), Number.isFinite(e) ? e : 0))
+}
+
+function fe(e, t, n) {
+    return Math.round(de(e + t / 176, n))
+}
+var pe = e((() => {})),
+    me, he = e((() => {
+        me = {
+            input: `dots-day-input`,
+            slider: `dots-day-slider`,
+            thumbContent: `dots-day-thumbContent`,
+            stepButton: `dots-day-stepButton`
+        }
+    }));
+
+function ge(e) {
+    let {
+        direction: t,
+        moving: n
+    } = e;
+    return {
+        y: n ? `${t*100}%` : 0,
+        opacity: +!n
+    }
+}
+
+function _e(e) {
+    return `translateX(-50%) scaleX(${e})`
+}
+
+function ve(e) {
+    return `9px / ${9*e}px`
+}
+var j, M, N, P, F, I, ye, L, R, z, B = e((() => {
+    j = g(), u(), l(), M = n(h()), S(), A(), pe(), he(), N = m(), P = a(me.stepButton, `interactive-button pointer-events-auto relative grid h-9 flex-[0_0_20px] cursor-pointer place-items-center rounded-lg border-0 bg-transparent p-0 text-inherit transition-colors duration-150 before:absolute before:top-1/2 before:left-1/2 before:size-11 before:-translate-1/2 before:content-[''] hover:not-aria-disabled:bg-black/7 active:not-aria-disabled:bg-black/12 aria-disabled:cursor-default aria-disabled:opacity-35 motion-reduce:transition-none`), F = `size-4 fill-none stroke-current stroke-[1.8] [stroke-linecap:round] [stroke-linejoin:round]`, I = (0, M.memo)(e => {
+        "use forget";
+        let t = (0, j.c)(9),
+            {
+                position: n,
+                x: r,
+                travel: i,
+                growth: a,
+                animate: c
+            } = e,
+            l;
+        t[0] !== c || t[1] !== a || t[2] !== n || t[3] !== i || t[4] !== r ? (l = () => {
+            if (!c) return 1;
+            let e = Math.min(1, Math.abs(n * i.get() - r.get()) / 90);
+            return 1 + .5555555555555556 * ((1 + Math.cos(e * Math.PI)) / 2) * a.get()
+        }, t[0] = c, t[1] = a, t[2] = n, t[3] = i, t[4] = r, t[5] = l) : l = t[5];
+        let u = s(l),
+            d = `${n*100}%`,
+            f;
+        return t[6] !== u || t[7] !== d ? (f = (0, N.jsx)(o.span, {
+            className: `dots-day-desktop-minor-tick`,
+            style: {
+                left: d,
+                x: `-50%`,
+                scaleY: u
+            }
+        }), t[6] = u, t[7] = d, t[8] = f) : f = t[8], f
+    }), I.displayName = `DotsDayMinorTick`, ye = e => {
+        "use forget";
+        let t = (0, j.c)(54),
+            {
+                id: n,
+                data: r,
+                timeline: i,
+                color: s,
+                animate: c
+            } = e,
+            {
+                index: l,
+                slider: u,
+                thumb: d
+            } = i,
+            f = i.tickDivisions * Math.max(0, r.moments.length - 1),
+            p = r.moments[Math.min(l, r.moments.length - 1)],
+            m;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (m = a(me.slider, `relative isolate h-[84px] [--handle-width:116px] [--hit-area-height:144px]`, C), t[0] = m) : m = t[0];
+        let h;
+        t[1] === s ? h = t[2] : (h = {
+            "--timeline-color": s
+        }, t[1] = s, t[2] = h);
+        let g = h,
+            _;
+        t[3] !== c || t[4] !== f || t[5] !== i.tickDivisions || t[6] !== i.tickGrowth || t[7] !== i.travel || t[8] !== i.x ? (_ = (0, N.jsx)(`div`, {
+            className: `absolute inset-x-0 top-1/2 h-3 -translate-y-1/2`,
+            children: Array.from({
+                length: f + 1
+            }, (e, t) => t % i.tickDivisions === 0 ? null : (0, N.jsx)(I, {
+                position: t / f,
+                x: i.x,
+                travel: i.travel,
+                growth: i.tickGrowth,
+                animate: c
+            }, t))
+        }), t[3] = c, t[4] = f, t[5] = i.tickDivisions, t[6] = i.tickGrowth, t[7] = i.travel, t[8] = i.x, t[9] = _) : _ = t[9];
+        let v;
+        if (t[10] !== c || t[11] !== r.moments || t[12] !== i.travel || t[13] !== i.x) {
+            let e;
+            t[15] !== c || t[16] !== r.moments.length || t[17] !== i.travel || t[18] !== i.x ? (e = (e, t) => (0, N.jsx)(z, {
+                position: t / Math.max(1, r.moments.length - 1),
+                x: i.x,
+                travel: i.travel,
+                animate: c
+            }, t), t[15] = c, t[16] = r.moments.length, t[17] = i.travel, t[18] = i.x, t[19] = e) : e = t[19], v = r.moments.map(e), t[10] = c, t[11] = r.moments, t[12] = i.travel, t[13] = i.x, t[14] = v
+        } else v = t[14];
+        let y;
+        t[20] !== _ || t[21] !== v ? (y = (0, N.jsxs)(`div`, {
+            "aria-hidden": !0,
+            className: `pointer-events-none absolute top-[50px] right-[calc(var(--handle-width)/2)] left-[calc(var(--handle-width)/2)] h-[18px]`,
+            children: [_, v]
+        }), t[20] = _, t[21] = v, t[22] = y) : y = t[22];
+        let b = `${n}-range`,
+            x;
+        t[23] !== r.timelineLabel || t[24] !== b ? (x = (0, N.jsx)(`label`, {
+            className: `sr-only`,
+            htmlFor: b,
+            children: r.timelineLabel
+        }), t[23] = r.timelineLabel, t[24] = b, t[25] = x) : x = t[25];
+        let S = `${n}-range`,
+            w;
+        t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (w = a(me.input, `absolute inset-x-0 inset-y-[-30px] m-0 h-(--hit-area-height) w-full cursor-grab touch-pan-y appearance-none bg-transparent focus-visible:outline-none active:cursor-grabbing`), t[26] = w) : w = t[26];
+        let T = Math.max(0, r.moments.length - 1),
+            ee = r.moments.length < 2,
+            E = `${p.time}, ${p.context}: ${p.heading}`,
+            te = `${n}-moment`,
+            D;
+        t[27] !== l || t[28] !== T || t[29] !== ee || t[30] !== E || t[31] !== te || t[32] !== S || t[33] !== i.input ? (D = (0, N.jsx)(`input`, {
+            id: S,
+            name: `dots-day`,
+            className: w,
+            type: `range`,
+            min: 0,
+            max: T,
+            step: 1,
+            value: l,
+            disabled: ee,
+            "aria-valuetext": E,
+            "aria-controls": te,
+            ...i.input
+        }), t[27] = l, t[28] = T, t[29] = ee, t[30] = E, t[31] = te, t[32] = S, t[33] = i.input, t[34] = D) : D = t[34];
+        let O;
+        t[35] === i.x ? O = t[36] : (O = {
+            x: i.x
+        }, t[35] = i.x, t[36] = O);
+        let k;
+        t[37] !== r || t[38] !== l || t[39] !== i.moving || t[40] !== i.select ? (k = (0, N.jsx)(L, {
+            data: r,
+            index: l,
+            moving: i.moving,
+            onSelect: i.select
+        }), t[37] = r, t[38] = l, t[39] = i.moving, t[40] = i.select, t[41] = k) : k = t[41];
+        let ne;
+        t[42] !== O || t[43] !== k || t[44] !== d || t[45] !== i.dragTarget ? (ne = (0, N.jsx)(o.div, {
+            ref: d,
+            className: `dots-caption absolute top-0 left-0 z-2 h-[72px] w-(--handle-width) cursor-grab touch-pan-y font-medium text-black tabular-nums active:cursor-grabbing forced-colors:text-[HighlightText]`,
+            style: O,
+            ...i.dragTarget,
+            children: k
+        }), t[42] = O, t[43] = k, t[44] = d, t[45] = i.dragTarget, t[46] = ne) : ne = t[46];
+        let re;
+        return t[47] !== u || t[48] !== D || t[49] !== ne || t[50] !== g || t[51] !== y || t[52] !== x ? (re = (0, N.jsxs)(`div`, {
+            ref: u,
+            "data-dots-day-autoplay-pause": !0,
+            className: m,
+            style: g,
+            children: [y, x, D, ne]
+        }), t[47] = u, t[48] = D, t[49] = ne, t[50] = g, t[51] = y, t[52] = x, t[53] = re) : re = t[53], re
+    }, L = e => {
+        "use forget";
+        let t = (0, j.c)(30),
+            {
+                data: n,
+                index: r,
+                moving: i,
+                onSelect: o
+            } = e,
+            s = n.moments[Math.min(r, n.moments.length - 1)],
+            c, l;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, N.jsx)(se, {
+            className: `absolute inset-0 size-full text-(--timeline-color) forced-colors:text-[Highlight] forced-colors:forced-color-adjust-none`,
+            "aria-hidden": !0
+        }), l = a(me.thumbContent, `relative flex h-9 items-center justify-center rounded-xl px-2`), t[0] = c, t[1] = l) : (c = t[0], l = t[1]);
+        let u = r === 0,
+            d;
+        t[2] !== r || t[3] !== o ? (d = e => {
+            r > 0 && o(r - 1, e.detail !== 0)
+        }, t[2] = r, t[3] = o, t[4] = d) : d = t[4];
+        let f;
+        t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, N.jsx)(`svg`, {
+            className: F,
+            viewBox: `0 0 16 16`,
+            "aria-hidden": !0,
+            children: (0, N.jsx)(`path`, {
+                d: `m10 3-5 5 5 5`
+            })
+        }), t[5] = f) : f = t[5];
+        let p;
+        t[6] !== n.previousLabel || t[7] !== u || t[8] !== d ? (p = (0, N.jsx)(`button`, {
+            type: `button`,
+            className: P,
+            "aria-label": n.previousLabel,
+            "aria-disabled": u,
+            onClick: d,
+            children: f
+        }), t[6] = n.previousLabel, t[7] = u, t[8] = d, t[9] = p) : p = t[9];
+        let m;
+        if (t[10] !== s.time || t[11] !== i) {
+            let e;
+            t[13] === i ? e = t[14] : (e = (e, t) => /^\d+$/.test(e) ? (0, N.jsx)(R, {
+                value: e,
+                moving: i
+            }, t) : (0, N.jsx)(`span`, {
+                children: e
+            }, t), t[13] = i, t[14] = e), m = s.time.split(/(\d+)/).map(e), t[10] = s.time, t[11] = i, t[12] = m
+        } else m = t[12];
+        let h;
+        t[15] === m ? h = t[16] : (h = (0, N.jsx)(`span`, {
+            "aria-hidden": !0,
+            className: `flex min-w-0 flex-1 justify-center whitespace-pre`,
+            children: m
+        }), t[15] = m, t[16] = h);
+        let g = r === n.moments.length - 1,
+            _;
+        t[17] !== n.moments.length || t[18] !== r || t[19] !== o ? (_ = e => {
+            r < n.moments.length - 1 && o(r + 1, e.detail !== 0)
+        }, t[17] = n.moments.length, t[18] = r, t[19] = o, t[20] = _) : _ = t[20];
+        let v;
+        t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, N.jsx)(`svg`, {
+            className: F,
+            viewBox: `0 0 16 16`,
+            "aria-hidden": !0,
+            children: (0, N.jsx)(`path`, {
+                d: `m6 3 5 5-5 5`
+            })
+        }), t[21] = v) : v = t[21];
+        let y;
+        t[22] !== n.nextLabel || t[23] !== _ || t[24] !== g ? (y = (0, N.jsx)(`button`, {
+            type: `button`,
+            className: P,
+            "aria-label": n.nextLabel,
+            "aria-disabled": g,
+            onClick: _,
+            children: v
+        }), t[22] = n.nextLabel, t[23] = _, t[24] = g, t[25] = y) : y = t[25];
+        let b;
+        return t[26] !== y || t[27] !== p || t[28] !== h ? (b = (0, N.jsxs)(N.Fragment, {
+            children: [c, (0, N.jsxs)(`div`, {
+                className: l,
+                children: [p, h, y]
+            })]
+        }), t[26] = y, t[27] = p, t[28] = h, t[29] = b) : b = t[29], b
+    }, R = e => {
+        "use forget";
+        let t = (0, j.c)(10),
+            {
+                value: n,
+                moving: r
+            } = e,
+            i;
+        t[0] === n ? i = t[1] : (i = {
+            value: n,
+            direction: 1
+        }, t[0] = n, t[1] = i);
+        let [a, s] = (0, M.useState)(i);
+        a.value !== n && s({
+            value: n,
+            direction: Number(n) > Number(a.value) ? 1 : -1
+        });
+        let l = r ? .18 : 0,
+            u;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (u = [.19, 1, .22, 1], t[2] = u) : u = t[2];
+        let d;
+        t[3] === l ? d = t[4] : (d = {
+            duration: l,
+            ease: u
+        }, t[3] = l, t[4] = d);
+        let f = d,
+            p;
+        return t[5] !== a.direction || t[6] !== r || t[7] !== f || t[8] !== n ? (p = (0, N.jsx)(`span`, {
+            className: `inline-flex tabular-nums`,
+            children: Array.from(n, (e, t) => (0, N.jsx)(`span`, {
+                className: `grid overflow-hidden`,
+                children: (0, N.jsx)(c, {
+                    initial: !1,
+                    custom: {
+                        direction: a.direction,
+                        moving: r
+                    },
+                    children: (0, N.jsx)(o.span, {
+                        className: `[grid-area:1/1]`,
+                        custom: {
+                            direction: a.direction,
+                            moving: r
+                        },
+                        initial: `entering`,
+                        animate: {
+                            y: 0,
+                            opacity: 1,
+                            transition: f
+                        },
+                        exit: `leaving`,
+                        variants: {
+                            entering: ge,
+                            leaving: e => {
+                                let {
+                                    direction: t,
+                                    moving: n
+                                } = e;
+                                return {
+                                    y: n ? `${t*-100}%` : 0,
+                                    opacity: 0,
+                                    transition: {
+                                        ...f,
+                                        duration: n ? .18 : 0
+                                    }
+                                }
+                            }
+                        },
+                        children: e
+                    }, e)
+                })
+            }, n.length - t - 1))
+        }), t[5] = a.direction, t[6] = r, t[7] = f, t[8] = n, t[9] = p) : p = t[9], p
+    }, z = e => {
+        "use forget";
+        let t = (0, j.c)(9),
+            {
+                position: n,
+                x: r,
+                travel: i,
+                animate: a
+            } = e,
+            c;
+        t[0] !== a || t[1] !== n || t[2] !== i || t[3] !== r ? (c = () => le(n * i.get() - r.get(), a), t[0] = a, t[1] = n, t[2] = i, t[3] = r, t[4] = c) : c = t[4];
+        let l = s(c),
+            u = s(l, _e),
+            d = s(l, ve),
+            f = `${n*100}%`,
+            p;
+        return t[5] !== d || t[6] !== f || t[7] !== u ? (p = (0, N.jsx)(o.span, {
+            className: `dots-day-major-tick`,
+            style: {
+                left: f,
+                transform: u,
+                borderRadius: d
+            }
+        }), t[5] = d, t[6] = f, t[7] = u, t[8] = p) : p = t[8], p
+    }
+}));
+
+function be(e) {
+    return `translateX(${-e*176}px)`
+}
+
+function V(e) {
+    return e * 176
+}
+
+function H(e, t) {
+    return (0, G.jsx)(`span`, {
+        "aria-hidden": !0,
+        className: `dots-day-mobile-snap`,
+        style: {
+            left: t * 176
+        }
+    }, t)
+}
+
+function U(e, t) {
+    return (0, G.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `dots-caption dots-day-mobile-reserved-bubble`,
+        children: (0, G.jsx)(`p`, {
+            children: e.message
+        })
+    }, t)
+}
+var xe, W, G, Se, Ce = e((() => {
+        xe = g(), l(), W = n(h()), re(), B(), pe(), he(), k(), G = m(), Se = e => {
+            "use forget";
+            let t = (0, xe.c)(103),
+                {
+                    id: n,
+                    data: r,
+                    index: i,
+                    animate: a,
+                    moving: l,
+                    color: u,
+                    onSelect: f
+                } = e,
+                p = (0, W.useRef)(null),
+                m = (0, W.useRef)(i),
+                h = (0, W.useRef)(null),
+                g = (0, W.useRef)(null),
+                _ = (0, W.useRef)(!1),
+                v = d(i),
+                y = s(v, be),
+                b = r.moments.length,
+                x = d(Math.max(0, b - 1) * 176),
+                S = s(v, V),
+                C = r.moments[i],
+                w = `${Math.max(0,b-1)*176}px`,
+                T;
+            t[0] === w ? T = t[1] : (T = {
+                "--day-travel": w
+            }, t[0] = w, t[1] = T);
+            let ee = T,
+                E;
+            t[2] === u ? E = t[3] : (E = {
+                "--timeline-color": u
+            }, t[2] = u, t[3] = E);
+            let te = E,
+                D, O;
+            t[4] !== b || t[5] !== x ? (D = () => {
+                x.set(Math.max(0, b - 1) * 176)
+            }, O = [b, x], t[4] = b, t[5] = x, t[6] = D, t[7] = O) : (D = t[6], O = t[7]), (0, W.useEffect)(D, O);
+            let k, re;
+            t[8] !== i || t[9] !== l ? (k = () => {
+                if (m.current = i, h.current === i) {
+                    h.current = null;
+                    return
+                }
+                let e = p.current;
+                if (!e || e.clientWidth === 0) return;
+                let t = i * 176;
+                g.current = Math.abs(e.scrollLeft - t) > 1 ? i : null, e.scrollTo({
+                    left: t,
+                    behavior: _.current && l ? `smooth` : `instant`
+                }), _.current = !0
+            }, re = [i, l], t[8] = i, t[9] = l, t[10] = k, t[11] = re) : (k = t[10], re = t[11]), (0, W.useEffect)(k, re);
+            let ae, oe;
+            t[12] === v ? (ae = t[13], oe = t[14]) : (ae = () => {
+                let e = p.current;
+                if (!e) return;
+                let t = e.clientWidth,
+                    n = new ResizeObserver(() => {
+                        let n = e.clientWidth;
+                        if (n === t) return;
+                        let r = t === 0;
+                        t = n, !(n === 0 || !r) && (g.current = null, e.scrollTo({
+                            left: m.current * 176,
+                            behavior: `instant`
+                        }), v.set(m.current))
+                    });
+                return n.observe(e), () => n.disconnect()
+            }, oe = [v], t[12] = v, t[13] = ae, t[14] = oe), (0, W.useEffect)(ae, oe);
+            let se;
+            t[15] !== b || t[16] !== f ? (se = function(e, t) {
+                let n = t === void 0 || t;
+                f(Math.round(de(e, b)), n)
+            }, t[15] = b, t[16] = f, t[17] = se) : se = t[17];
+            let A = se,
+                ce;
+            t[18] !== b || t[19] !== f || t[20] !== v ? (ce = function() {
+                let e = p.current;
+                if (!e || e.clientWidth === 0) return;
+                let t = de(e.scrollLeft / 176, b);
+                if (v.set(t), g.current != null) {
+                    Math.abs(t - g.current) < .01 && (g.current = null);
+                    return
+                }
+                let n = Math.round(t);
+                n !== m.current && (m.current = n, h.current = n, f(n, !0))
+            }, t[18] = b, t[19] = f, t[20] = v, t[21] = ce) : ce = t[21];
+            let le = ce,
+                ue, pe;
+            t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (ue = () => {
+                g.current = null
+            }, pe = () => {
+                g.current = null
+            }, t[22] = ue, t[23] = pe) : (ue = t[22], pe = t[23]);
+            let he;
+            t[24] === r.moments ? he = t[25] : (he = r.moments.map(H), t[24] = r.moments, t[25] = he);
+            let ge = r.exciteOnToggle === !0,
+                _e;
+            t[26] === Symbol.for(`react.memo_cache_sentinel`) ? (_e = {
+                x: .5,
+                y: .5,
+                tilt: 0,
+                facing: 0,
+                width: 1,
+                maxWidth: 74,
+                compact: {
+                    x: .5,
+                    y: .5
+                }
+            }, t[26] = _e) : _e = t[26];
+            let ve;
+            t[27] !== r.switchCharacterLabel || t[28] !== ge ? (ve = (0, G.jsx)(ie, {
+                className: `dots-day-mobile-character`,
+                switchCharacterLabel: r.switchCharacterLabel,
+                exciteOnToggle: ge,
+                placement: _e
+            }), t[27] = r.switchCharacterLabel, t[28] = ge, t[29] = ve) : ve = t[29];
+            let j;
+            t[30] === r.moments ? j = t[31] : (j = r.moments.map(U), t[30] = r.moments, t[31] = j);
+            let M;
+            t[32] !== C.reactionImages || t[33] !== C.reactions ? (M = C.reactionImages ?? C.reactions ?? [], t[32] = C.reactionImages, t[33] = C.reactions, t[34] = M) : M = t[34];
+            let N;
+            t[35] !== C.message || t[36] !== i || t[37] !== l || t[38] !== M ? (N = (0, G.jsx)(ne, {
+                message: C.message,
+                reactions: M,
+                animate: l,
+                animateReactions: !1
+            }, i), t[35] = C.message, t[36] = i, t[37] = l, t[38] = M, t[39] = N) : N = t[39];
+            let P;
+            t[40] !== l || t[41] !== N ? (P = (0, G.jsx)(c, {
+                initial: !1,
+                custom: l,
+                children: N
+            }), t[40] = l, t[41] = N, t[42] = P) : P = t[42];
+            let F;
+            t[43] !== j || t[44] !== P ? (F = (0, G.jsxs)(`div`, {
+                className: `dots-day-mobile-bubbles`,
+                children: [j, P]
+            }), t[43] = j, t[44] = P, t[45] = F) : F = t[45];
+            let I;
+            t[46] !== ve || t[47] !== F ? (I = (0, G.jsxs)(`div`, {
+                className: `dots-day-mobile-message`,
+                children: [ve, F]
+            }), t[46] = ve, t[47] = F, t[48] = I) : I = t[48];
+            let ye = Math.max(0, b - 1) * 176,
+                R;
+            t[49] !== ye || t[50] !== y ? (R = {
+                transform: y,
+                width: ye
+            }, t[49] = ye, t[50] = y, t[51] = R) : R = t[51];
+            let B;
+            t[52] !== a || t[53] !== b || t[54] !== S || t[55] !== x ? (B = Array.from({
+                length: Math.max(0, b - 1) * 11 + 1
+            }, (e, t) => t % 11 == 0 ? (0, G.jsx)(z, {
+                position: t / Math.max(1, (b - 1) * 11),
+                x: S,
+                travel: x,
+                animate: a
+            }, t) : (0, G.jsx)(`span`, {
+                className: `dots-day-minor-tick`,
+                style: {
+                    left: t * 176 / 11
+                }
+            }, t)), t[52] = a, t[53] = b, t[54] = S, t[55] = x, t[56] = B) : B = t[56];
+            let Se;
+            t[57] !== R || t[58] !== B ? (Se = (0, G.jsx)(`div`, {
+                className: `dots-day-mobile-ruler-viewport`,
+                "aria-hidden": !0,
+                children: (0, G.jsx)(o.div, {
+                    className: `dots-day-mobile-ruler`,
+                    style: R,
+                    children: B
+                })
+            }), t[57] = R, t[58] = B, t[59] = Se) : Se = t[59];
+            let Ce = `${n}-mobile-range`,
+                we;
+            t[60] !== r.timelineLabel || t[61] !== Ce ? (we = (0, G.jsx)(`label`, {
+                className: `sr-only`,
+                htmlFor: Ce,
+                children: r.timelineLabel
+            }), t[60] = r.timelineLabel, t[61] = Ce, t[62] = we) : we = t[62];
+            let Te = `${n}-mobile-range`,
+                Ee = Math.max(0, b - 1),
+                De = b < 2,
+                K = `${C.time}, ${C.context}. ${C.heading}`,
+                Oe = `${n}-moment`,
+                ke;
+            t[63] !== i || t[64] !== A ? (ke = e => {
+                (e.key === `PageUp` || e.key === `PageDown`) && (e.preventDefault(), A(i + (e.key === `PageUp` ? 1 : -1), !1))
+            }, t[63] = i, t[64] = A, t[65] = ke) : ke = t[65];
+            let q;
+            t[66] === A ? q = t[67] : (q = e => {
+                A(Number(e.currentTarget.value), !1)
+            }, t[66] = A, t[67] = q);
+            let J;
+            t[68] !== i || t[69] !== Te || t[70] !== Ee || t[71] !== De || t[72] !== K || t[73] !== Oe || t[74] !== ke || t[75] !== q ? (J = (0, G.jsx)(`input`, {
+                id: Te,
+                name: `dots-day-mobile`,
+                className: `${me.input} dots-day-mobile-input`,
+                type: `range`,
+                min: 0,
+                max: Ee,
+                step: 1,
+                value: i,
+                disabled: De,
+                "aria-valuetext": K,
+                "aria-controls": Oe,
+                onKeyDown: ke,
+                onChange: q
+            }), t[68] = i, t[69] = Te, t[70] = Ee, t[71] = De, t[72] = K, t[73] = Oe, t[74] = ke, t[75] = q, t[76] = J) : J = t[76];
+            let Y;
+            t[77] !== b || t[78] !== v || t[79] !== A ? (Y = (0, G.jsx)(`div`, {
+                className: `dots-day-mobile-drag-surface`,
+                "aria-hidden": !0,
+                onClick: e => {
+                    let t = e.currentTarget.getBoundingClientRect();
+                    A(fe(v.get(), e.clientX - t.left - t.width / 2, b))
+                }
+            }), t[77] = b, t[78] = v, t[79] = A, t[80] = Y) : Y = t[80];
+            let Ae;
+            t[81] !== r || t[82] !== i || t[83] !== l || t[84] !== A ? (Ae = (0, G.jsx)(`div`, {
+                className: `dots-day-mobile-flag`,
+                children: (0, G.jsx)(L, {
+                    data: r,
+                    index: i,
+                    moving: l,
+                    onSelect: A
+                })
+            }), t[81] = r, t[82] = i, t[83] = l, t[84] = A, t[85] = Ae) : Ae = t[85];
+            let je;
+            t[86] !== te || t[87] !== Se || t[88] !== we || t[89] !== J || t[90] !== Y || t[91] !== Ae ? (je = (0, G.jsxs)(`div`, {
+                "data-dots-day-autoplay-pause": !0,
+                className: `${me.slider} dots-day-mobile-slider`,
+                style: te,
+                children: [Se, we, J, Y, Ae]
+            }), t[86] = te, t[87] = Se, t[88] = we, t[89] = J, t[90] = Y, t[91] = Ae, t[92] = je) : je = t[92];
+            let Me;
+            t[93] !== I || t[94] !== je ? (Me = (0, G.jsxs)(`div`, {
+                className: `dots-day-mobile-pinned`,
+                children: [I, je]
+            }), t[93] = I, t[94] = je, t[95] = Me) : Me = t[95];
+            let X;
+            t[96] !== he || t[97] !== Me ? (X = (0, G.jsxs)(`div`, {
+                className: `dots-day-mobile-scroll-track`,
+                children: [he, Me]
+            }), t[96] = he, t[97] = Me, t[98] = X) : X = t[98];
+            let Ne;
+            return t[99] !== le || t[100] !== ee || t[101] !== X ? (Ne = (0, G.jsx)(`div`, {
+                className: `dots-day-mobile`,
+                "data-day-interaction": `mobile`,
+                children: (0, G.jsx)(`div`, {
+                    ref: p,
+                    className: `dots-day-mobile-scroll`,
+                    "data-dots-day-native-scroll": !0,
+                    "data-dots-day-autoplay-pause": !0,
+                    style: ee,
+                    onScroll: le,
+                    onPointerDown: ue,
+                    onWheel: pe,
+                    children: X
+                })
+            }), t[99] = le, t[100] = ee, t[101] = X, t[102] = Ne) : Ne = t[102], Ne
+        }
+    })),
+    we = t({
+        default: () => Y
+    });
+
+function Te(e) {
+    return e.matches(`:hover`)
+}
+
+function Ee(e, t) {
+    return (0, J.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `dots-caption invisible px-5 pt-4 pb-5 [grid-area:1/1]`,
+        children: (0, J.jsx)(`p`, {
+            children: e.message
+        })
+    }, t)
+}
+
+function De(e, t) {
+    return (0, J.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `pointer-events-none invisible [grid-area:1/1]`,
+        children: (0, J.jsx)(je, {
+            moment: e
+        })
+    }, t)
+}
+
+function K(e) {
+    return {
+        opacity: 0,
+        transition: {
+            duration: e ? .14 : 0,
+            ease: `easeOut`
+        }
+    }
+}
+
+function Oe(e) {
+    return {
+        opacity: 1,
+        transition: {
+            duration: e ? .14 : 0,
+            ease: `easeOut`
+        }
+    }
+}
+var ke, q, J, Y, Ae, je, Me, X = e((() => {
+    ke = g(), u(), S(), l(), q = n(h()), _(), re(), B(), Ce(), x(), pe(), y(), T(), E(), k(), D(), J = m(), Y = e => {
+        "use forget";
+        let t = (0, ke.c)(215),
+            {
+                data: n,
+                embedded: l
+            } = e,
+            u = l !== void 0 && l,
+            p = (0, q.useId)(),
+            m = (0, q.useContext)(b);
+        if (!m) throw Error(`Dots sections require DotsPageShell`);
+        let {
+            selected: h
+        } = m, {
+            renderer: g,
+            reducedMotion: _
+        } = (0, q.useContext)(v), y;
+        t[0] === g ? y = t[1] : (y = g.shouldUseContinuousMotion(), t[0] = g, t[1] = y);
+        let x = y,
+            S = n?.moments.length ?? 0,
+            T = n?.autoAdvanceSeconds,
+            E;
+        t[2] === T ? E = t[3] : (E = ue(T), t[2] = T, t[3] = E);
+        let D = E,
+            [k, re] = (0, q.useState)(!1),
+            ae = (0, q.useRef)(null),
+            oe = (0, q.useRef)(null),
+            se;
+        t[4] !== S || t[5] !== n?.initialMomentIndex ? (se = () => Math.round(de(n?.initialMomentIndex ?? 0, S)), t[4] = S, t[5] = n?.initialMomentIndex, t[6] = se) : se = t[6];
+        let [A, le] = (0, q.useState)(se), [fe, pe] = (0, q.useState)(!0), [me, he] = (0, q.useState)(1), ge = (0, q.useRef)(null), _e = (0, q.useRef)(null), ve = (0, q.useRef)(null), j = (0, q.useRef)(null), M = (0, q.useRef)(null), N = (0, q.useRef)(!1), P = d(S > 1 ? A / (S - 1) : 0), F;
+        t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (F = {
+            stiffness: 400,
+            damping: 34,
+            mass: .65
+        }, t[7] = F) : F = t[7];
+        let I = r(P, F),
+            L = d(0),
+            R;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (R = {
+            stiffness: 500,
+            damping: 36,
+            mass: .6
+        }, t[8] = R) : R = t[8];
+        let z = r(L, R),
+            B = d(0),
+            be = d(280),
+            V = d(116),
+            H = d(0),
+            U = x && fe,
+            xe;
+        t[9] !== I || t[10] !== U || t[11] !== P || t[12] !== H ? (xe = () => (U ? I.get() : P.get()) * H.get(), t[9] = I, t[10] = U, t[11] = P, t[12] = H, t[13] = xe) : xe = t[13];
+        let W = s(xe),
+            G;
+        t[14] !== V || t[15] !== W ? (G = () => W.get() + V.get() / 2, t[14] = V, t[15] = W, t[16] = G) : G = t[16];
+        let Ce = s(G),
+            we;
+        t[17] !== Ce || t[18] !== B ? (we = () => {
+            let e = Ce.get(),
+                t = B.get(),
+                n = t <= 600 ? Math.min(100, t / 2) : 0;
+            return t > 0 ? Math.max(n, Math.min(t - n, e)) : e
+        }, t[17] = Ce, t[18] = B, t[19] = we) : we = t[19];
+        let K = s(we),
+            Oe;
+        t[20] !== K || t[21] !== V || t[22] !== P || t[23] !== H ? (Oe = () => H.get() > 0 ? (K.get() - V.get() / 2) / H.get() : P.get(), t[20] = K, t[21] = V, t[22] = P, t[23] = H, t[24] = Oe) : Oe = t[24];
+        let Y = s(Oe),
+            je = i(W),
+            X = d(0),
+            Ne;
+        t[25] === Symbol.for(`react.memo_cache_sentinel`) ? (Ne = {
+            stiffness: 260,
+            damping: 19,
+            mass: .65
+        }, t[25] = Ne) : Ne = t[25];
+        let Pe = r(X, Ne),
+            Fe;
+        t[26] !== X || t[27] !== U ? (Fe = e => X.set(M.current && U ? Math.max(-22, Math.min(22, -e * .018)) : 0), t[26] = X, t[27] = U, t[28] = Fe) : Fe = t[28], f(je, `change`, Fe);
+        let Ie, Le;
+        t[29] !== be || t[30] !== S || t[31] !== I || t[32] !== V || t[33] !== P || t[34] !== H || t[35] !== B ? (Ie = () => {
+            let e = () => {
+                    let e = ge.current?.clientWidth ?? 0,
+                        t = ve.current?.clientWidth ?? 280,
+                        n = j.current?.offsetWidth ?? 116,
+                        r = Math.max(0, (_e.current?.clientWidth ?? 0) - n);
+                    he(ce(r, S)), !(e === B.get() && t === be.get() && n === V.get() && r === H.get()) && (B.set(e), be.set(t), V.set(n), H.set(r), I.jump(P.get()))
+                },
+                t = new ResizeObserver(e);
+            for (let e of [ge, _e, ve, j]) e.current && t.observe(e.current);
+            return e(), () => t.disconnect()
+        }, Le = [B, be, V, H, I, P, S], t[29] = be, t[30] = S, t[31] = I, t[32] = V, t[33] = P, t[34] = H, t[35] = B, t[36] = Ie, t[37] = Le) : (Ie = t[36], Le = t[37]), (0, q.useEffect)(Ie, Le);
+        let Re;
+        t[38] !== x || t[39] !== S || t[40] !== I || t[41] !== X || t[42] !== P || t[43] !== Pe || t[44] !== z || t[45] !== L ? (Re = function(e, t, n) {
+            let r = t === void 0 || t,
+                i = n === void 0 || n;
+            re(i), i && oe.current?.();
+            let a = Math.max(0, Math.min(Math.max(0, S - 1), Math.round(e)));
+            L.set(0), X.set(0), pe(r), P.set(S > 1 ? a / (S - 1) : 0), (!x || !r) && (I.jump(P.get()), z.jump(0), Pe.jump(0)), le(a)
+        }, t[38] = x, t[39] = S, t[40] = I, t[41] = X, t[42] = P, t[43] = Pe, t[44] = z, t[45] = L, t[46] = Re) : Re = t[46];
+        let Z = Re,
+            ze;
+        t[47] !== S || t[48] !== A || t[49] !== Z ? (ze = () => Z((A + 1) % S, !0, !1), t[47] = S, t[48] = A, t[49] = Z, t[50] = ze) : ze = t[50];
+        let Be = (0, q.useEffectEvent)(ze),
+            Ve;
+        t[51] !== Be || t[52] !== D || t[53] !== S || t[54] !== _ ? (Ve = () => {
+            let e = ae.current;
+            if (!e || S < 2 || !D || _) return;
+            let t = e.closest(`[data-dots-day-interactions]`) ?? e,
+                n = e.querySelector(`[data-dots-day-native-scroll]`),
+                r = !1,
+                i = !1,
+                a, o = !1,
+                s = null,
+                c = window.matchMedia(`(hover: hover)`).matches && Array.from(t.querySelectorAll(`[data-dots-day-autoplay-pause], button, input`)).some(Te),
+                l = document.activeElement instanceof HTMLElement && t.contains(document.activeElement) && document.activeElement.dataset.pointerFocus !== `true` && document.activeElement.matches(`:focus-visible`),
+                u, d = () => o && !document.hidden && s == null && !r && !i && !c && !l,
+                f = () => {
+                    window.clearTimeout(u), u = void 0, d() && (u = window.setTimeout(() => {
+                        d() && Be(), f()
+                    }, D))
+                };
+            oe.current = f;
+            let p = e => {
+                    !e.isPrimary || e.button !== 0 || (s = e.pointerId, l = !1, f())
+                },
+                m = e => {
+                    e.pointerId === s && (s = null, f())
+                },
+                h = () => {
+                    r = !0, l = !1, f()
+                },
+                g = e => {
+                    r && (r = e.touches.length > 0, f())
+                },
+                v = () => {
+                    window.clearTimeout(a), i = !1, f()
+                },
+                y = () => {
+                    n?.clientWidth && (i = !0, window.clearTimeout(a), f(), a = window.setTimeout(v, 200))
+                },
+                b = e => {
+                    if (e.pointerType !== `mouse`) return;
+                    let n = e.type === `pointerout` ? e.relatedTarget : e.target,
+                        r = n instanceof Element && t.contains(n) && n.closest(`[data-dots-day-autoplay-pause], button, input`) != null;
+                    c !== r && (c = r, f())
+                },
+                x = e => {
+                    l = s == null && e.target instanceof HTMLElement && e.target.dataset.pointerFocus !== `true` && e.target.matches(`:focus-visible`), f()
+                },
+                C = () => {
+                    l = !0, f()
+                },
+                w = e => {
+                    e.relatedTarget instanceof Node && t.contains(e.relatedTarget) || (l = !1, f())
+                },
+                T = new IntersectionObserver(e => {
+                    let [t] = e;
+                    o = t.isIntersecting && t.intersectionRatio >= .15, f()
+                }, {
+                    threshold: [0, .15]
+                });
+            return T.observe(e), t.addEventListener(`pointerdown`, p, !0), t.addEventListener(`pointerover`, b), t.addEventListener(`pointerout`, b), t.addEventListener(`lostpointercapture`, m), t.addEventListener(`focusin`, x), t.addEventListener(`focusout`, w), t.addEventListener(`keydown`, C), window.addEventListener(`pointerup`, m, !0), window.addEventListener(`pointercancel`, m, !0), n?.addEventListener(`touchstart`, h, {
+                passive: !0
+            }), n?.addEventListener(`scroll`, y, {
+                passive: !0
+            }), n?.addEventListener(`scrollend`, v), window.addEventListener(`touchend`, g, {
+                passive: !0
+            }), window.addEventListener(`touchcancel`, g, {
+                passive: !0
+            }), document.addEventListener(`visibilitychange`, f), () => {
+                window.clearTimeout(u), window.clearTimeout(a), oe.current = null, T.disconnect(), t.removeEventListener(`pointerdown`, p, !0), t.removeEventListener(`pointerover`, b), t.removeEventListener(`pointerout`, b), t.removeEventListener(`lostpointercapture`, m), t.removeEventListener(`focusin`, x), t.removeEventListener(`focusout`, w), t.removeEventListener(`keydown`, C), window.removeEventListener(`pointerup`, m, !0), window.removeEventListener(`pointercancel`, m, !0), n?.removeEventListener(`touchstart`, h), n?.removeEventListener(`scroll`, y), n?.removeEventListener(`scrollend`, v), window.removeEventListener(`touchend`, g), window.removeEventListener(`touchcancel`, g), document.removeEventListener(`visibilitychange`, f)
+            }
+        }, t[51] = Be, t[52] = D, t[53] = S, t[54] = _, t[55] = Ve) : Ve = t[55];
+        let He;
+        t[56] !== D || t[57] !== S || t[58] !== _ ? (He = [D, _, S], t[56] = D, t[57] = S, t[58] = _, t[59] = He) : He = t[59], (0, q.useEffect)(Ve, He);
+        let Ue;
+        t[60] !== S || t[61] !== P || t[62] !== Z ? (Ue = function(e, t) {
+            let n = t !== void 0 && t,
+                r = M.current;
+            if (r?.id !== e.pointerId) return;
+            let i = r.moved ? P.get() : r.travel > 0 ? (e.clientX - r.left) / r.travel : 0;
+            M.current = null, N.current = r.fromDragTarget && r.moved, Z(!r.moved && (n || r.fromDragTarget) ? r.initialIndex : i * (S - 1)), r.captureTarget.hasPointerCapture(e.pointerId) && r.captureTarget.releasePointerCapture(e.pointerId)
+        }, t[60] = S, t[61] = P, t[62] = Z, t[63] = Ue) : Ue = t[63];
+        let Q = Ue,
+            We;
+        t[64] !== S || t[65] !== I || t[66] !== V || t[67] !== A || t[68] !== P || t[69] !== H || t[70] !== W ? (We = function(e, t, n) {
+            let r = t !== void 0 && t;
+            if (!e.isPrimary || e.button !== 0 || S < 2) return;
+            let i = _e.current?.getBoundingClientRect();
+            if (!i) return;
+            N.current = !1;
+            let a = n ?? W.get() + V.get() / 2,
+                o = i.left + a,
+                s = r || Math.abs(e.clientX - o) <= V.get() / 2,
+                c = r && e.target instanceof Element ? e.target.closest(`button`) ?? e.currentTarget : e.currentTarget;
+            if (r && c === e.currentTarget) {
+                let t = _e.current?.querySelector(`input[type="range"]`);
+                t && (e.preventDefault(), t.dataset.pointerFocus = `true`, t.focus({
+                    preventScroll: !0
+                }))
+            }
+            P.set(H.get() > 0 ? Math.max(0, Math.min(1, (a - V.get() / 2) / H.get())) : 0), I.jump(P.get()), M.current = {
+                id: e.pointerId,
+                left: i.left + V.get() / 2,
+                travel: H.get(),
+                startX: e.clientX,
+                startY: e.clientY,
+                moved: !1,
+                grabOffset: s ? e.clientX - o : 0,
+                initialIndex: A,
+                fromDragTarget: r,
+                captureTarget: c
+            }, pe(!0), c.setPointerCapture(e.pointerId)
+        }, t[64] = S, t[65] = I, t[66] = V, t[67] = A, t[68] = P, t[69] = H, t[70] = W, t[71] = We) : We = t[71];
+        let Ge = We,
+            Ke;
+        t[72] !== x || t[73] !== S || t[74] !== Q || t[75] !== I || t[76] !== P || t[77] !== L ? (Ke = function(e) {
+            let t = M.current;
+            if (!t || t.id !== e.pointerId || t.travel <= 0) return;
+            let n = Math.abs(e.clientX - t.startX),
+                r = Math.abs(e.clientY - t.startY);
+            if (!t.moved) {
+                if (t.fromDragTarget && r > 6 && r >= n) {
+                    Q(e, !0);
+                    return
+                }
+                if (t.fromDragTarget ? n <= 6 || n <= r : n < 3) return
+            }
+            t.moved = !0, L.set(+!!x);
+            let i = Math.max(0, Math.min(1, (e.clientX - t.left - t.grabOffset) / t.travel));
+            P.set(i), I.jump(i), le(Math.round(i * (S - 1)))
+        }, t[72] = x, t[73] = S, t[74] = Q, t[75] = I, t[76] = P, t[77] = L, t[78] = Ke) : Ke = t[78];
+        let qe = Ke,
+            Je;
+        t[79] !== Q || t[80] !== qe ? (Je = function(e) {
+            qe(e), Q(e)
+        }, t[79] = Q, t[80] = qe, t[81] = Je) : Je = t[81];
+        let Ye = Je,
+            Xe;
+        t[82] === Ge ? Xe = t[83] : (Xe = e => Ge(e, !0), t[82] = Ge, t[83] = Xe);
+        let Ze, Qe;
+        t[84] === Q ? (Ze = t[85], Qe = t[86]) : (Ze = e => Q(e, !0), Qe = e => Q(e, !0), t[84] = Q, t[85] = Ze, t[86] = Qe);
+        let $e;
+        t[87] !== qe || t[88] !== Ye || t[89] !== Xe || t[90] !== Ze || t[91] !== Qe ? ($e = {
+            onPointerDown: Xe,
+            onPointerMove: qe,
+            onPointerUp: Ye,
+            onPointerCancel: Ze,
+            onLostPointerCapture: Qe,
+            onClickCapture(e) {
+                !N.current || e.detail === 0 || (N.current = !1, e.preventDefault(), e.stopPropagation())
+            }
+        }, t[87] = qe, t[88] = Ye, t[89] = Xe, t[90] = Ze, t[91] = Qe, t[92] = $e) : $e = t[92];
+        let et = $e,
+            tt;
+        if (t[93] !== S || t[94] !== Q || t[95] !== A || t[96] !== X || t[97] !== qe || t[98] !== P || t[99] !== Ye || t[100] !== Pe || t[101] !== Z || t[102] !== Ge || t[103] !== z || t[104] !== L) {
+            let e, n;
+            t[106] === Q ? (e = t[107], n = t[108]) : (e = e => Q(e, !0), n = e => Q(e, !0), t[106] = Q, t[107] = e, t[108] = n), tt = {
+                onChange(e) {
+                    M.current || Z(Number(e.currentTarget.value), !1)
+                },
+                onPointerDown(e) {
+                    !e.isPrimary || e.button !== 0 || S < 2 || (e.preventDefault(), e.currentTarget.dataset.pointerFocus = `true`, e.currentTarget.focus({
+                        preventScroll: !0
+                    }), Ge(e))
+                },
+                onPointerMove: qe,
+                onPointerUp: Ye,
+                onPointerCancel: e,
+                onLostPointerCapture: n,
+                onBlur(e) {
+                    if (delete e.currentTarget.dataset.pointerFocus, !M.current || M.current.fromDragTarget) return;
+                    let t = M.current;
+                    M.current = null, Z(t.moved ? P.get() * (S - 1) : t.initialIndex, !1), t.captureTarget.hasPointerCapture(t.id) && t.captureTarget.releasePointerCapture(t.id)
+                },
+                onKeyDown(e) {
+                    delete e.currentTarget.dataset.pointerFocus, e.key === `PageUp` || e.key === `PageDown` ? (e.preventDefault(), Z(A + (e.key === `PageUp` ? 1 : -1), !1)) : (L.set(0), z.jump(0), X.set(0), Pe.jump(0), pe(!1))
+                }
+            }, t[93] = S, t[94] = Q, t[95] = A, t[96] = X, t[97] = qe, t[98] = P, t[99] = Ye, t[100] = Pe, t[101] = Z, t[102] = Ge, t[103] = z, t[104] = L, t[105] = tt
+        } else tt = t[105];
+        let nt = tt,
+            rt;
+        t[109] !== be || t[110] !== Y || t[111] !== K || t[112] !== et || t[113] !== V || t[114] !== A || t[115] !== nt || t[116] !== U || t[117] !== Pe || t[118] !== Z || t[119] !== me || t[120] !== z || t[121] !== H || t[122] !== B || t[123] !== W ? (rt = {
+            index: A,
+            select: Z,
+            input: nt,
+            dragTarget: et,
+            stage: ge,
+            slider: _e,
+            bubble: ve,
+            thumb: j,
+            width: B,
+            bubbleWidth: be,
+            travel: H,
+            handleWidth: V,
+            x: W,
+            characterX: K,
+            characterProgress: Y,
+            rotation: Pe,
+            tickGrowth: z,
+            tickDivisions: me,
+            moving: U
+        }, t[109] = be, t[110] = Y, t[111] = K, t[112] = et, t[113] = V, t[114] = A, t[115] = nt, t[116] = U, t[117] = Pe, t[118] = Z, t[119] = me, t[120] = z, t[121] = H, t[122] = B, t[123] = W, t[124] = rt) : rt = t[124];
+        let it = rt;
+        if (!n?.moments.length) return null;
+        let $ = n.moments[Math.min(A, n.moments.length - 1)],
+            at = O[h].color,
+            ot = n.heading,
+            st;
+        t[125] === K ? st = t[126] : (st = {
+            x: K
+        }, t[125] = K, t[126] = st);
+        let ct = U ? Pe : 0,
+            lt;
+        t[127] === ct ? lt = t[128] : (lt = {
+            rotate: ct
+        }, t[127] = ct, t[128] = lt);
+        let ut;
+        t[129] !== K || t[130] !== Ge ? (ut = e => Ge(e, !0, K.get()), t[129] = K, t[130] = Ge, t[131] = ut) : ut = t[131];
+        let dt = n.exciteOnToggle === !0,
+            ft = -12 + A / Math.max(1, S - 1) * 24,
+            pt;
+        t[132] === ft ? pt = t[133] : (pt = {
+            x: .5,
+            y: .5,
+            width: 1,
+            maxWidth: 164,
+            tilt: 0,
+            facing: ft
+        }, t[132] = ft, t[133] = pt);
+        let mt;
+        t[134] !== n.switchCharacterLabel || t[135] !== dt || t[136] !== pt ? (mt = (0, J.jsx)(ie, {
+            className: `size-full`,
+            switchCharacterLabel: n.switchCharacterLabel,
+            exciteOnToggle: dt,
+            placement: pt
+        }), t[134] = n.switchCharacterLabel, t[135] = dt, t[136] = pt, t[137] = mt) : mt = t[137];
+        let ht;
+        t[138] !== et || t[139] !== lt || t[140] !== ut || t[141] !== mt ? (ht = (0, J.jsx)(o.div, {
+            "data-dots-day-autoplay-pause": !0,
+            className: `dots-day-desktop-character absolute -inset-s-[82px] bottom-0 size-[164px] origin-[50%_72%] cursor-grab touch-pan-y active:cursor-grabbing`,
+            style: lt,
+            ...et,
+            onPointerDown: ut,
+            children: mt
+        }), t[138] = et, t[139] = lt, t[140] = ut, t[141] = mt, t[142] = ht) : ht = t[142];
+        let gt;
+        t[143] !== st || t[144] !== ht ? (gt = (0, J.jsx)(o.div, {
+            className: `relative h-full w-0`,
+            style: st,
+            children: ht
+        }), t[143] = st, t[144] = ht, t[145] = gt) : gt = t[145];
+        let _t;
+        t[146] === n.moments ? _t = t[147] : (_t = n.moments.map(Ee), t[146] = n.moments, t[147] = _t);
+        let vt;
+        t[148] !== $.reactionImages || t[149] !== $.reactions ? (vt = $.reactionImages ?? $.reactions ?? [], t[148] = $.reactionImages, t[149] = $.reactions, t[150] = vt) : vt = t[150];
+        let yt;
+        t[151] !== $.message || t[152] !== U || t[153] !== vt ? (yt = (0, J.jsx)(ne, {
+            message: $.message,
+            reactions: vt,
+            animate: U,
+            animateReactions: !1
+        }), t[151] = $.message, t[152] = U, t[153] = vt, t[154] = yt) : yt = t[154];
+        let bt;
+        t[155] !== n.moments.length || t[156] !== A || t[157] !== yt || t[158] !== it ? (bt = (0, J.jsx)(Me, {
+            index: A,
+            count: n.moments.length,
+            timeline: it,
+            children: yt
+        }, A), t[155] = n.moments.length, t[156] = A, t[157] = yt, t[158] = it, t[159] = bt) : bt = t[159];
+        let xt;
+        t[160] !== U || t[161] !== bt ? (xt = (0, J.jsx)(c, {
+            initial: !1,
+            custom: U,
+            children: bt
+        }), t[160] = U, t[161] = bt, t[162] = xt) : xt = t[162];
+        let St;
+        t[163] !== _t || t[164] !== xt ? (St = (0, J.jsxs)(`div`, {
+            ref: ve,
+            className: `pointer-events-none absolute inset-s-0 bottom-[144px] grid w-[280px] text-start`,
+            children: [_t, xt]
+        }), t[163] = _t, t[164] = xt, t[165] = St) : St = t[165];
+        let Ct;
+        t[166] !== gt || t[167] !== St ? (Ct = (0, J.jsxs)(`div`, {
+            ref: ge,
+            className: `relative h-[320px]`,
+            children: [gt, St]
+        }), t[166] = gt, t[167] = St, t[168] = Ct) : Ct = t[168];
+        let wt;
+        t[169] !== x || t[170] !== at || t[171] !== n || t[172] !== p || t[173] !== it ? (wt = (0, J.jsx)(ye, {
+            id: p,
+            data: n,
+            timeline: it,
+            color: at,
+            animate: x
+        }), t[169] = x, t[170] = at, t[171] = n, t[172] = p, t[173] = it, t[174] = wt) : wt = t[174];
+        let Tt;
+        t[175] !== Ct || t[176] !== wt ? (Tt = (0, J.jsxs)(`div`, {
+            className: `dots-day-desktop`,
+            children: [Ct, wt]
+        }), t[175] = Ct, t[176] = wt, t[177] = Tt) : Tt = t[177];
+        let Et = Math.min(A, S - 1),
+            Dt;
+        t[178] !== x || t[179] !== at || t[180] !== n || t[181] !== p || t[182] !== U || t[183] !== Z || t[184] !== Et ? (Dt = (0, J.jsx)(Se, {
+            id: p,
+            data: n,
+            index: Et,
+            animate: x,
+            moving: U,
+            color: at,
+            onSelect: Z
+        }), t[178] = x, t[179] = at, t[180] = n, t[181] = p, t[182] = U, t[183] = Z, t[184] = Et, t[185] = Dt) : Dt = t[185];
+        let Ot;
+        t[186] !== Tt || t[187] !== Dt ? (Ot = (0, J.jsx)(w, {
+            children: (0, J.jsxs)(`div`, {
+                ref: ae,
+                children: [Tt, Dt]
+            })
+        }), t[186] = Tt, t[187] = Dt, t[188] = Ot) : Ot = t[188];
+        let kt = `${p}-moment`,
+            At = k || !D || _ ? `polite` : `off`,
+            jt;
+        t[189] === Symbol.for(`react.memo_cache_sentinel`) ? (jt = a(`dots-day-caption`, C), t[189] = jt) : jt = t[189];
+        let Mt;
+        t[190] === n.moments ? Mt = t[191] : (Mt = n.moments.map(De), t[190] = n.moments, t[191] = Mt);
+        let Nt;
+        t[192] !== A || t[193] !== $ || t[194] !== U ? (Nt = (0, J.jsx)(Ae, {
+            moment: $,
+            moving: U
+        }, A), t[192] = A, t[193] = $, t[194] = U, t[195] = Nt) : Nt = t[195];
+        let Pt;
+        t[196] !== U || t[197] !== Nt ? (Pt = (0, J.jsx)(c, {
+            initial: !1,
+            custom: U,
+            children: Nt
+        }), t[196] = U, t[197] = Nt, t[198] = Pt) : Pt = t[198];
+        let Ft;
+        t[199] !== Mt || t[200] !== Pt ? (Ft = (0, J.jsxs)(`div`, {
+            className: `grid`,
+            children: [Mt, Pt]
+        }), t[199] = Mt, t[200] = Pt, t[201] = Ft) : Ft = t[201];
+        let It;
+        t[202] !== kt || t[203] !== At || t[204] !== Ft ? (It = (0, J.jsx)(w, {
+            width: `narrow`,
+            id: kt,
+            "data-dots-day-autoplay-pause": !0,
+            "aria-live": At,
+            "aria-atomic": !0,
+            className: jt,
+            children: Ft
+        }), t[202] = kt, t[203] = At, t[204] = Ft, t[205] = It) : It = t[205];
+        let Lt;
+        t[206] !== n.heading || t[207] !== Ot || t[208] !== It ? (Lt = (0, J.jsxs)(ee, {
+            as: `div`,
+            role: `group`,
+            "aria-label": ot,
+            "data-dots-day-interactions": !0,
+            className: `text-center`,
+            children: [Ot, It]
+        }), t[206] = n.heading, t[207] = Ot, t[208] = It, t[209] = Lt) : Lt = t[209];
+        let Rt = Lt,
+            zt;
+        return t[210] !== Rt || t[211] !== n.description || t[212] !== n.heading || t[213] !== u ? (zt = u ? Rt : (0, J.jsx)(te, {
+            id: `day`,
+            className: `dots-day-section`,
+            title: n.heading,
+            subtitle: n.description,
+            variant: `large-subtitle`,
+            children: Rt
+        }), t[210] = Rt, t[211] = n.description, t[212] = n.heading, t[213] = u, t[214] = zt) : zt = t[214], zt
+    }, Ae = e => {
+        "use forget";
+        let t = (0, ke.c)(7),
+            {
+                moment: n,
+                moving: r
+            } = e,
+            i = !p(),
+            a;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = {
+            hidden: K,
+            visible: Oe
+        }, t[0] = a) : a = t[0];
+        let s;
+        t[1] === n ? s = t[2] : (s = (0, J.jsx)(je, {
+            moment: n
+        }), t[1] = n, t[2] = s);
+        let c;
+        return t[3] !== r || t[4] !== i || t[5] !== s ? (c = (0, J.jsx)(o.div, {
+            "aria-hidden": i,
+            className: `[grid-area:1/1]`,
+            custom: r,
+            initial: `hidden`,
+            animate: `visible`,
+            exit: `hidden`,
+            variants: a,
+            children: s
+        }), t[3] = r, t[4] = i, t[5] = s, t[6] = c) : c = t[6], c
+    }, je = e => {
+        "use forget";
+        let t = (0, ke.c)(10),
+            {
+                moment: n
+            } = e,
+            r;
+        t[0] === n.context ? r = t[1] : (r = (0, J.jsx)(`p`, {
+            className: `dots-caption text-token-text-secondary`,
+            children: n.context
+        }), t[0] = n.context, t[1] = r);
+        let i;
+        t[2] === n.heading ? i = t[3] : (i = (0, J.jsx)(`h3`, {
+            className: `dots-h3 mt-4 text-balance`,
+            children: n.heading
+        }), t[2] = n.heading, t[3] = i);
+        let a;
+        t[4] === n.description ? a = t[5] : (a = (0, J.jsx)(`p`, {
+            className: `dots-caption text-token-text-tertiary mt-4`,
+            children: n.description
+        }), t[4] = n.description, t[5] = a);
+        let o;
+        return t[6] !== r || t[7] !== i || t[8] !== a ? (o = (0, J.jsxs)(J.Fragment, {
+            children: [r, i, a]
+        }), t[6] = r, t[7] = i, t[8] = a, t[9] = o) : o = t[9], o
+    }, Me = e => {
+        "use forget";
+        let t = (0, ke.c)(13),
+            {
+                index: n,
+                count: r,
+                timeline: i,
+                children: a
+            } = e,
+            c;
+        t[0] !== r || t[1] !== n || t[2] !== i.bubbleWidth || t[3] !== i.characterX || t[4] !== i.handleWidth || t[5] !== i.travel || t[6] !== i.width ? (c = () => {
+            let e = i.width.get(),
+                t = i.bubbleWidth.get(),
+                a = e <= 600 ? 20 : 60,
+                o = i.handleWidth.get() / 2 + i.travel.get() * n / Math.max(1, r - 1),
+                s = o > e / 2 && o + a + t > e;
+            return Math.max(0, Math.min(e - t, i.characterX.get() + (s ? -t - a : a)))
+        }, t[0] = r, t[1] = n, t[2] = i.bubbleWidth, t[3] = i.characterX, t[4] = i.handleWidth, t[5] = i.travel, t[6] = i.width, t[7] = c) : c = t[7];
+        let l = s(c),
+            u;
+        t[8] === l ? u = t[9] : (u = {
+            x: l
+        }, t[8] = l, t[9] = u);
+        let d;
+        return t[10] !== a || t[11] !== u ? (d = (0, J.jsx)(o.div, {
+            className: `grid self-center [grid-area:1/1]`,
+            style: u,
+            children: a
+        }), t[10] = a, t[11] = u, t[12] = d) : d = t[12], d
+    }
+}));
+export {
+    we as n, X as r, Y as t
+};
+//# sourceMappingURL=944c27e5-h5k9bm0ppoe4qwoa.js.map

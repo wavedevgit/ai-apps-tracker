@@ -1,19 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-import {
-    Bn as t
-} from "./2340486e-i7pjxgdhv0bs6apg.js";
-
-function n() {
-    return (0, r.jsx)(`hr`, {
-        className: `border-token-border-xheavy w-full`
-    })
-}
-var r, i = e((() => {
-    r = t()
-}));
-export {
-    i as n, n as t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bn as t}from"./2340486e-i7pjxgdhv0bs6apg.js";function n(){return(0,r.jsx)(`hr`,{className:`border-token-border-xheavy w-full`})}var r,i=e((()=>{r=t()}));export{i as n,n as t};
 //# sourceMappingURL=e14a92db-m64435ks78e4zd2y.js.map

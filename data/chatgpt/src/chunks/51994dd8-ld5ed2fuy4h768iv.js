@@ -1,0 +1,176 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as t,
+    Aw as n,
+    Iv as r,
+    Ow as i,
+    Q_ as a,
+    Qst as o,
+    Rz as s,
+    U1 as c,
+    c7 as l,
+    eE as u,
+    gst as d,
+    hst as f,
+    l7 as p,
+    oW as m,
+    q1 as h,
+    sW as g,
+    vct as _,
+    zz as v
+} from "./4813494d-itnrgnth03y1sm9d.js";
+import {
+    Bn as y,
+    Ln as b,
+    Nn as x,
+    O as S,
+    Rn as C,
+    s as w,
+    wn as T,
+    zn as E
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    n as D,
+    t as O
+} from "./99a48954-ehrq2ggbboscx5gi.js";
+
+function k(e) {
+    for (let t of [`sharepoint_admin`, `teams_admin`, `outlook_email_admin`])
+        if (e.knowledgeConfig.some(({
+                key: e
+            }) => e === t)) return t
+}
+
+function A(e) {
+    return a[M[e]]
+}
+
+function j(e, t) {
+    return t.get(A(e))
+}
+var M, N = e((() => {
+        _(), r(), M = {
+            sharepoint_admin: o.SHAREPOINT_ADMIN_CONNECTOR,
+            teams_admin: o.TEAMS_ADMIN_CONNECTOR,
+            outlook_email_admin: o.OUTLOOK_EMAIL_ADMIN_CONNECTOR
+        }
+    })),
+    P, F, I, L = e((() => {
+        P = T(), u(), n(), v(), C(), F = y(), I = e => {
+            "use forget";
+            let n = (0, P.c)(12),
+                {
+                    onClose: r,
+                    hasError: a,
+                    onRetry: o
+                } = e,
+                c = a !== void 0 && a,
+                l = E(),
+                u;
+            n[0] === l ? u = n[1] : (u = l.formatMessage({
+                id: `contextual-answers.admin.sync.setup.loading.title`,
+                defaultMessage: `Sync setup`
+            }), n[0] = l, n[1] = u);
+            let d = c ? `alert` : `status`,
+                f;
+            n[2] !== c || n[3] !== o ? (f = c ? (0, F.jsxs)(F.Fragment, {
+                children: [(0, F.jsx)(x, {
+                    id: `contextual-answers.admin.sync.setup.loading.error`,
+                    defaultMessage: `We couldn't load sync setup. Please try again.`
+                }), o && (0, F.jsx)(t, {
+                    color: `secondary`,
+                    onClick: o,
+                    children: (0, F.jsx)(x, {
+                        id: `contextual-answers.admin.sync.setup.loading.retry`,
+                        defaultMessage: `Retry`
+                    })
+                })]
+            }) : (0, F.jsxs)(F.Fragment, {
+                children: [(0, F.jsx)(s, {}), (0, F.jsx)(x, {
+                    id: `contextual-answers.admin.sync.setup.loading.status`,
+                    defaultMessage: `Loading sync setup…`
+                })]
+            }), n[2] = c, n[3] = o, n[4] = f) : f = n[4];
+            let p;
+            n[5] !== d || n[6] !== f ? (p = (0, F.jsx)(`div`, {
+                className: `flex min-h-40 flex-col items-center justify-center gap-4 p-6 text-center`,
+                role: d,
+                children: f
+            }), n[5] = d, n[6] = f, n[7] = p) : p = n[7];
+            let m;
+            return n[8] !== r || n[9] !== u || n[10] !== p ? (m = (0, F.jsx)(i, {
+                testId: `modal-microsoft-admin-sync-loading`,
+                isOpen: !0,
+                onClose: r,
+                size: `custom`,
+                className: `max-w-[420px]`,
+                title: u,
+                children: p
+            }), n[8] = r, n[9] = u, n[10] = p, n[11] = m) : m = n[11], m
+        }
+    }));
+
+function R(e, t, n) {
+    let r = c(f())?.getWorkspaceId(),
+        i = e.primaryConnector.id,
+        {
+            data: a,
+            isLoading: o
+        } = S(O({
+            queryKeyPrefix: `connector-workspace-permissions`,
+            workspaceId: r,
+            connectorId: i,
+            enabled: !!(r && i),
+            transport: t,
+            actorId: n
+        })),
+        s = a?.action_param_schemas;
+    return {
+        hasParameterConstraints: s != null && Object.keys(s).length > 0,
+        isLoading: o
+    }
+}
+
+function z({
+    className: e
+}) {
+    return (0, V.jsxs)(`div`, {
+        className: l(`bg-token-main-surface-secondary text-token-text-secondary flex items-start gap-3 rounded-xl p-3 text-sm`, e),
+        children: [(0, V.jsx)(g, {
+            className: `icon mt-0.5 h-4 w-4 shrink-0`
+        }), (0, V.jsx)(x, {
+            ...H.syncNotice
+        })]
+    })
+}
+
+function B({
+    className: e
+}) {
+    return (0, V.jsxs)(`div`, {
+        className: l(`bg-token-main-surface-secondary text-token-text-secondary flex items-start gap-3 rounded-xl p-3 text-sm`, e),
+        children: [(0, V.jsx)(g, {
+            className: `icon mt-0.5 h-4 w-4 shrink-0`
+        }), (0, V.jsx)(x, {
+            ...H.microsoftSyncScopeNotice
+        })]
+    })
+}
+var V, H, U = e((() => {
+    d(), D(), h(), w(), p(), C(), m(), V = y(), H = b({
+        syncNotice: {
+            id: `FZVRSl`,
+            defaultMessage: `Parameter Constraints apply only to direct app tools. They do not limit content retrieved from this app’s synced data.`
+        },
+        microsoftSyncScopeNotice: {
+            id: `mTvu9v`,
+            defaultMessage: `Content Selection settings, such as Files and Sites, apply only to synced search and fetch results. They do not limit other tools, such as reading or fetching documents. Disable non-sync tools to apply Content Selection effectively for your workspace.`
+        }
+    })
+}));
+export {
+    I as a, A as c, R as i, k as l, z as n, L as o, U as r, j as s, B as t, N as u
+};
+//# sourceMappingURL=51994dd8-ld5ed2fuy4h768iv.js.map

@@ -1,2 +1,273 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e){return e.slice(0,7)}function n(e){if(!e)return``;try{let t=new URL(e),n=t.pathname.split(`/`).filter(Boolean);if(n.length>=2){let e=n[1].endsWith(`.git`)?n[1].slice(0,-4):n[1];if(e)return`${n[0]}/${e}`}return t.hostname}catch{return e}}function r(e,t){if(!e)return null;try{let n=new URL(e.replace(/\.git$/,``));if(n.hostname.includes(`github.com`))return`${n.origin}${n.pathname}/commit/${t}`}catch{}return null}function i(e){if(!e)return null;try{let t=new URL(e.replace(/\.git$/,``)).pathname.split(`/`).filter(Boolean);return t.length>=2?t[1]:null}catch{return null}}function a(e,t){if(!e)return``;let n=e.replaceAll(`\\`,`/`).trim().replace(/^\.\/+/,``);if(!n)return``;if(!n.startsWith(`/`))return n;let r=i(t);if(!r)return n.replace(/^\/+/,``);let a=n.split(`/`).filter(Boolean),o=a.map((e,t)=>e===r?t:-1).filter(e=>e>=0),s=o.find(e=>e>0&&D.has(a[e-1].toLowerCase()))??o[0]??-1;return s>=0&&s<a.length-1?a.slice(s+1).join(`/`):n.replace(/^\/+/,``)}function o(e,t,n,r,i){if(!e||!t||!n)return null;try{let o=new URL(e.replace(/\.git$/,``));if(!o.hostname.includes(`github.com`))return null;let s=a(n,e);if(!s)return null;let c=s.split(`/`).filter(Boolean).map(e=>encodeURIComponent(e)).join(`/`);if(!c)return null;let l=typeof r==`number`&&Number.isFinite(r)&&r>0?Math.floor(r):null,u=typeof i==`number`&&Number.isFinite(i)&&i>=(l??1)?Math.floor(i):l,d=l==null?``:u!=null&&u>l?`#L${l}-L${u}`:`#L${l}`;return`${o.origin}${o.pathname}/blob/${t}/${c}${d}`}catch{return null}}function s(e){try{let t=typeof e==`string`?JSON.parse(e):e;if(t&&typeof t==`object`){let e=t,n={};return Array.isArray(e.relevant_lines)&&(n.relevant_lines=e.relevant_lines),typeof e.cvss_score==`number`&&(n.cvss_score=e.cvss_score),typeof e.criticality_cvss_reason==`string`&&(n.criticality_cvss_reason=e.criticality_cvss_reason),n}}catch{}return null}function c(e){if(!e)return`—`;try{let t=new Date(e);return Number.isNaN(t.getTime())?`—`:t.toLocaleString()}catch{return`—`}}function l(e){if(typeof e!=`number`||!Number.isFinite(e))return`—`;try{let t=new Date(e*1e3);return Number.isNaN(t.getTime())?`—`:t.toLocaleString()}catch{return`—`}}function u(e){if(typeof window>`u`)return;let t=e?.trim();if(t)try{window.localStorage.setItem(O,t)}catch{}}function d(){if(typeof window>`u`)return null;try{let e=window.localStorage.getItem(k);if(!e)return null;let t=Number(e);return Number.isFinite(t)&&t>0?t:null}catch{return null}}function f(e){if(!(typeof window>`u`)&&!(!Number.isFinite(e)||e<=0))try{window.localStorage.setItem(k,String(e))}catch{}}function p(){if(typeof window>`u`)return{};try{let e=window.localStorage.getItem(A);if(!e)return{};let t=JSON.parse(e),n={};for(let e of j){let r=t[e];r!=null&&(n[e]=String(r))}return n}catch{return{}}}function m(e){if(typeof window>`u`)return;let t={};for(let n of j){let r=e.get(n);r!=null&&(t[n]=r)}try{if(Object.keys(t).length===0){window.localStorage.removeItem(A);return}window.localStorage.setItem(A,JSON.stringify(t))}catch{}}function h(e,t){let n=!1;for(let r of j){let i=t[r];i!=null&&(e.set(r,i),n=!0)}return n}function g(e){if(!e)return null;let t=typeof e.path==`string`&&e.path.trim()||typeof e.file_path==`string`&&e.file_path.trim();return t?t.replace(/\\/g,`/`):null}function _(e,t=3){let n=[...e.commit_analysis?.relevant_lines??[]];if(!n.length){let t=s(e.commit_analysis?.proposed_patch??null);t?.relevant_lines&&n.push(...t.relevant_lines)}let r=new Map;for(let e of n){let t=g(e);if(!t)continue;let n=t.lastIndexOf(`/`);if(n<=0)continue;let i=t.slice(0,n);if(!i)continue;let a=i.toLowerCase(),o=r.get(a);o?o.count+=1:r.set(a,{label:i,count:1})}if(r.size===0)return[];let i=Array.from(r.values()).sort((e,t)=>t.count===e.count?e.label.localeCompare(t.label):t.count-e.count);return i.slice(0,Math.max(t,0)||i.length).map(e=>e.label)}function v(e){if(!e)return null;let t=e.trim();if(!t)return null;let n=new Date(t);return Number.isNaN(n.getTime())?null:n}function y(e,t){return t?`${e.formatDate(t,{year:`numeric`,month:`long`,day:`numeric`})} ${e.formatTime(t,{hour:`numeric`,minute:`2-digit`})}`:null}function b(e){if(!e)return null;let t=e.getTime()-Date.now(),n=Math.abs(t),r=60*1e3,i=60*r,a=24*i,o=7*a,s=30*a,c=365*a,l,u;n>=c?(l=`year`,u=t/c):n>=s?(l=`month`,u=t/s):n>=o?(l=`week`,u=t/o):n>=a?(l=`day`,u=t/a):n>=i?(l=`hour`,u=t/i):n>=r?(l=`minute`,u=t/r):(l=`second`,u=t/1e3);let d=u>0?Math.floor(u):Math.ceil(u);return d===0&&(d=u<0?-1:1),{value:d,unit:l}}function x(e){return e===!0||e!=null&&(String(e).toLowerCase()===`true`||String(e).toLowerCase()===`yes`)}function S(e){return{isValidated:x(e.commit_analysis?.validated),hasPatch:x(e.commit_analysis?.proposed_patch_generated),hasAttackPath:x(e.commit_analysis?.attack_path_generated),isPrivacyRelated:x(e.commit_analysis?.privacy_related),isSecurityRelated:x(e.commit_analysis?.security_related)}}function C(e){return e.created_at??null}function w(e){return e.commit_analysis?.committer_date??null}function T(e,t){return e?e.length<=t?e:e.slice(0,t-1)+`…`:``}function E(e,t,n){let r=new URLSearchParams(e).get(t);return!r||r.trim()===``?[n]:r.split(`,`).map(e=>e.trim()).filter(Boolean)}var D,O,k,A,j,M=e((()=>{D=new Set([`workspace`,`workspaces`,`code`,`codespaces`,`src`,`repos`,`repo`,`repositories`,`root`,`home`,`users`,`tmp`,`var`]),O=`aardvark:last_repo`,k=`aardvark:recommended_refresh_toast_at`,A=`aardvark:findings_filters:v1`,j=[`q`,`path_prefix`,`author`,`has_patch`,`sev`]}));export{m as C,T as S,f as T,d as _,c as a,a as b,w as c,S as d,b as f,p as g,s as h,_ as i,E as l,v as m,h as n,y as o,M as p,r,l as s,j as t,C as u,o as v,u as w,t as x,n as y};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e) {
+    return e.slice(0, 7)
+}
+
+function n(e) {
+    if (!e) return ``;
+    try {
+        let t = new URL(e),
+            n = t.pathname.split(`/`).filter(Boolean);
+        if (n.length >= 2) {
+            let e = n[1].endsWith(`.git`) ? n[1].slice(0, -4) : n[1];
+            if (e) return `${n[0]}/${e}`
+        }
+        return t.hostname
+    } catch {
+        return e
+    }
+}
+
+function r(e, t) {
+    if (!e) return null;
+    try {
+        let n = new URL(e.replace(/\.git$/, ``));
+        if (n.hostname.includes(`github.com`)) return `${n.origin}${n.pathname}/commit/${t}`
+    } catch {}
+    return null
+}
+
+function i(e) {
+    if (!e) return null;
+    try {
+        let t = new URL(e.replace(/\.git$/, ``)).pathname.split(`/`).filter(Boolean);
+        return t.length >= 2 ? t[1] : null
+    } catch {
+        return null
+    }
+}
+
+function a(e, t) {
+    if (!e) return ``;
+    let n = e.replaceAll(`\\`, `/`).trim().replace(/^\.\/+/, ``);
+    if (!n) return ``;
+    if (!n.startsWith(`/`)) return n;
+    let r = i(t);
+    if (!r) return n.replace(/^\/+/, ``);
+    let a = n.split(`/`).filter(Boolean),
+        o = a.map((e, t) => e === r ? t : -1).filter(e => e >= 0),
+        s = o.find(e => e > 0 && D.has(a[e - 1].toLowerCase())) ?? o[0] ?? -1;
+    return s >= 0 && s < a.length - 1 ? a.slice(s + 1).join(`/`) : n.replace(/^\/+/, ``)
+}
+
+function o(e, t, n, r, i) {
+    if (!e || !t || !n) return null;
+    try {
+        let o = new URL(e.replace(/\.git$/, ``));
+        if (!o.hostname.includes(`github.com`)) return null;
+        let s = a(n, e);
+        if (!s) return null;
+        let c = s.split(`/`).filter(Boolean).map(e => encodeURIComponent(e)).join(`/`);
+        if (!c) return null;
+        let l = typeof r == `number` && Number.isFinite(r) && r > 0 ? Math.floor(r) : null,
+            u = typeof i == `number` && Number.isFinite(i) && i >= (l ?? 1) ? Math.floor(i) : l,
+            d = l == null ? `` : u != null && u > l ? `#L${l}-L${u}` : `#L${l}`;
+        return `${o.origin}${o.pathname}/blob/${t}/${c}${d}`
+    } catch {
+        return null
+    }
+}
+
+function s(e) {
+    try {
+        let t = typeof e == `string` ? JSON.parse(e) : e;
+        if (t && typeof t == `object`) {
+            let e = t,
+                n = {};
+            return Array.isArray(e.relevant_lines) && (n.relevant_lines = e.relevant_lines), typeof e.cvss_score == `number` && (n.cvss_score = e.cvss_score), typeof e.criticality_cvss_reason == `string` && (n.criticality_cvss_reason = e.criticality_cvss_reason), n
+        }
+    } catch {}
+    return null
+}
+
+function c(e) {
+    if (!e) return `—`;
+    try {
+        let t = new Date(e);
+        return Number.isNaN(t.getTime()) ? `—` : t.toLocaleString()
+    } catch {
+        return `—`
+    }
+}
+
+function l(e) {
+    if (typeof e != `number` || !Number.isFinite(e)) return `—`;
+    try {
+        let t = new Date(e * 1e3);
+        return Number.isNaN(t.getTime()) ? `—` : t.toLocaleString()
+    } catch {
+        return `—`
+    }
+}
+
+function u(e) {
+    if (typeof window > `u`) return;
+    let t = e?.trim();
+    if (t) try {
+        window.localStorage.setItem(O, t)
+    } catch {}
+}
+
+function d() {
+    if (typeof window > `u`) return null;
+    try {
+        let e = window.localStorage.getItem(k);
+        if (!e) return null;
+        let t = Number(e);
+        return Number.isFinite(t) && t > 0 ? t : null
+    } catch {
+        return null
+    }
+}
+
+function f(e) {
+    if (!(typeof window > `u`) && !(!Number.isFinite(e) || e <= 0)) try {
+        window.localStorage.setItem(k, String(e))
+    } catch {}
+}
+
+function p() {
+    if (typeof window > `u`) return {};
+    try {
+        let e = window.localStorage.getItem(A);
+        if (!e) return {};
+        let t = JSON.parse(e),
+            n = {};
+        for (let e of j) {
+            let r = t[e];
+            r != null && (n[e] = String(r))
+        }
+        return n
+    } catch {
+        return {}
+    }
+}
+
+function m(e) {
+    if (typeof window > `u`) return;
+    let t = {};
+    for (let n of j) {
+        let r = e.get(n);
+        r != null && (t[n] = r)
+    }
+    try {
+        if (Object.keys(t).length === 0) {
+            window.localStorage.removeItem(A);
+            return
+        }
+        window.localStorage.setItem(A, JSON.stringify(t))
+    } catch {}
+}
+
+function h(e, t) {
+    let n = !1;
+    for (let r of j) {
+        let i = t[r];
+        i != null && (e.set(r, i), n = !0)
+    }
+    return n
+}
+
+function g(e) {
+    if (!e) return null;
+    let t = typeof e.path == `string` && e.path.trim() || typeof e.file_path == `string` && e.file_path.trim();
+    return t ? t.replace(/\\/g, `/`) : null
+}
+
+function _(e, t = 3) {
+    let n = [...e.commit_analysis?.relevant_lines ?? []];
+    if (!n.length) {
+        let t = s(e.commit_analysis?.proposed_patch ?? null);
+        t?.relevant_lines && n.push(...t.relevant_lines)
+    }
+    let r = new Map;
+    for (let e of n) {
+        let t = g(e);
+        if (!t) continue;
+        let n = t.lastIndexOf(`/`);
+        if (n <= 0) continue;
+        let i = t.slice(0, n);
+        if (!i) continue;
+        let a = i.toLowerCase(),
+            o = r.get(a);
+        o ? o.count += 1 : r.set(a, {
+            label: i,
+            count: 1
+        })
+    }
+    if (r.size === 0) return [];
+    let i = Array.from(r.values()).sort((e, t) => t.count === e.count ? e.label.localeCompare(t.label) : t.count - e.count);
+    return i.slice(0, Math.max(t, 0) || i.length).map(e => e.label)
+}
+
+function v(e) {
+    if (!e) return null;
+    let t = e.trim();
+    if (!t) return null;
+    let n = new Date(t);
+    return Number.isNaN(n.getTime()) ? null : n
+}
+
+function y(e, t) {
+    return t ? `${e.formatDate(t,{year:`numeric`,month:`long`,day:`numeric`})} ${e.formatTime(t,{hour:`numeric`,minute:`2-digit`})}` : null
+}
+
+function b(e) {
+    if (!e) return null;
+    let t = e.getTime() - Date.now(),
+        n = Math.abs(t),
+        r = 60 * 1e3,
+        i = 60 * r,
+        a = 24 * i,
+        o = 7 * a,
+        s = 30 * a,
+        c = 365 * a,
+        l, u;
+    n >= c ? (l = `year`, u = t / c) : n >= s ? (l = `month`, u = t / s) : n >= o ? (l = `week`, u = t / o) : n >= a ? (l = `day`, u = t / a) : n >= i ? (l = `hour`, u = t / i) : n >= r ? (l = `minute`, u = t / r) : (l = `second`, u = t / 1e3);
+    let d = u > 0 ? Math.floor(u) : Math.ceil(u);
+    return d === 0 && (d = u < 0 ? -1 : 1), {
+        value: d,
+        unit: l
+    }
+}
+
+function x(e) {
+    return e === !0 || e != null && (String(e).toLowerCase() === `true` || String(e).toLowerCase() === `yes`)
+}
+
+function S(e) {
+    return {
+        isValidated: x(e.commit_analysis?.validated),
+        hasPatch: x(e.commit_analysis?.proposed_patch_generated),
+        hasAttackPath: x(e.commit_analysis?.attack_path_generated),
+        isPrivacyRelated: x(e.commit_analysis?.privacy_related),
+        isSecurityRelated: x(e.commit_analysis?.security_related)
+    }
+}
+
+function C(e) {
+    return e.created_at ?? null
+}
+
+function w(e) {
+    return e.commit_analysis?.committer_date ?? null
+}
+
+function T(e, t) {
+    return e ? e.length <= t ? e : e.slice(0, t - 1) + `…` : ``
+}
+
+function E(e, t, n) {
+    let r = new URLSearchParams(e).get(t);
+    return !r || r.trim() === `` ? [n] : r.split(`,`).map(e => e.trim()).filter(Boolean)
+}
+var D, O, k, A, j, M = e((() => {
+    D = new Set([`workspace`, `workspaces`, `code`, `codespaces`, `src`, `repos`, `repo`, `repositories`, `root`, `home`, `users`, `tmp`, `var`]), O = `aardvark:last_repo`, k = `aardvark:recommended_refresh_toast_at`, A = `aardvark:findings_filters:v1`, j = [`q`, `path_prefix`, `author`, `has_patch`, `sev`]
+}));
+export {
+    m as C, T as S, f as T, d as _, c as a, a as b, w as c, S as d, b as f, p as g, s as h, _ as i, E as l, v as m, h as n, y as o, M as p, r, l as s, j as t, C as u, o as v, u as w, t as x, n as y
+};
 //# sourceMappingURL=6fd89734-me0mlo15lw6zwz6w.js.map

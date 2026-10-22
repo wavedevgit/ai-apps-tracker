@@ -1,18 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-
-function t(e) {
-    let t = e.trim();
-    return !t || /[%/\\?#]/.test(t) || [...t].some(e => {
-        let t = e.charCodeAt(0);
-        return t < 32 || t === 127
-    }) || [`.`, `..`].includes(t) ? `` : n.test(t) ? t.toLowerCase() : t
-}
-var n, r = e((() => {
-    n = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
-}));
-export {
-    t as n, r as t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e){let t=e.trim();return!t||/[%/\\?#]/.test(t)||[...t].some(e=>{let t=e.charCodeAt(0);return t<32||t===127})||[`.`,`..`].includes(t)?``:n.test(t)?t.toLowerCase():t}var n,r=e((()=>{n=/^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i}));export{t as n,r as t};
 //# sourceMappingURL=6421f715-frsrkqf2x08ztq4r.js.map

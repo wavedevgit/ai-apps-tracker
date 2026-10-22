@@ -1,0 +1,879 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    c7 as n,
+    cn as r,
+    hn as i,
+    jt as a,
+    l7 as o
+} from "./4813494d-itnrgnth03y1sm9d.js";
+import {
+    Bn as s,
+    Ln as c,
+    Rn as l,
+    Vn as u,
+    wn as d,
+    zn as f
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    n as p,
+    t as m
+} from "./b2c255f5-dgzm1bcta7422yc7.js";
+import {
+    n as h,
+    t as g
+} from "./9e9d0eec-j24gxg6gi9duoed8.js";
+var _, v = e((() => {
+        _ = {
+            artwork: `dots-in-motion-artwork`,
+            stage: `dots-in-motion-stage`,
+            phone: `dots-in-motion-phone`,
+            connections: `dots-in-motion-connections`,
+            connection: `dots-in-motion-connection`,
+            appIcon: `dots-in-motion-appIcon`,
+            calendarIcon: `dots-in-motion-calendarIcon`,
+            connectionText: `dots-in-motion-connectionText`,
+            taskText: `dots-in-motion-taskText`,
+            computerText: `dots-in-motion-computerText`,
+            connectionStatus: `dots-in-motion-connectionStatus`,
+            connectionMark: `dots-in-motion-connectionMark`,
+            health: `dots-in-motion-health`,
+            finances: `dots-in-motion-finances`,
+            tasks: `dots-in-motion-tasks`,
+            groupLabel: `dots-in-motion-groupLabel`,
+            taskList: `dots-in-motion-taskList`,
+            task: `dots-in-motion-task`,
+            taskIcon: `dots-in-motion-taskIcon`,
+            candleIcon: `dots-in-motion-candleIcon`,
+            mailboxIcon: `dots-in-motion-mailboxIcon`,
+            clockIcon: `dots-in-motion-clockIcon`,
+            bonsaiIcon: `dots-in-motion-bonsaiIcon`,
+            taskHighlight: `dots-in-motion-taskHighlight`,
+            mailTask: `dots-in-motion-mailTask`,
+            taskStop: `dots-in-motion-taskStop`,
+            taskControlIcon: `dots-in-motion-taskControlIcon`,
+            scheduled: `dots-in-motion-scheduled`,
+            dailyTask: `dots-in-motion-dailyTask`,
+            dailySubtitle: `dots-in-motion-dailySubtitle`,
+            rollingSubtitle: `dots-in-motion-rollingSubtitle`,
+            preparingText: `dots-in-motion-preparingText`,
+            watchTask: `dots-in-motion-watchTask`,
+            computers: `dots-in-motion-computers`,
+            computer: `dots-in-motion-computer`,
+            deviceIcon: `dots-in-motion-deviceIcon`,
+            online: `dots-in-motion-online`,
+            onlinePulse: `dots-in-motion-onlinePulse`,
+            computerStatus: `dots-in-motion-computerStatus`,
+            workComputer: `dots-in-motion-workComputer`,
+            personalComputer: `dots-in-motion-personalComputer`,
+            computerPreview: `dots-in-motion-computerPreview`,
+            wallpaper: `dots-in-motion-wallpaper`,
+            previewWindow: `dots-in-motion-previewWindow`,
+            dock: `dots-in-motion-dock`,
+            scheduledLabel: `dots-in-motion-scheduledLabel`,
+            scheduledText: `dots-in-motion-scheduledText`
+        }
+    })),
+    y, b, x, S, C, w = e((() => {
+        y = d(), b = t(u()), x = t(u()), h(), v(), S = s(), C = e => {
+            "use forget";
+            let t = (0, y.c)(14),
+                {
+                    children: n,
+                    interactive: r
+                } = e,
+                i = r !== void 0 && r,
+                a = (0, b.useRef)(null),
+                [o, s] = (0, x.useState)(!1),
+                c, l;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = () => {
+                let e = a.current;
+                if (!e) return;
+                let t = new IntersectionObserver(e => {
+                    let [t] = e;
+                    return s(t.isIntersecting)
+                }, {
+                    threshold: .15
+                });
+                return t.observe(e), () => t.disconnect()
+            }, l = [], t[0] = c, t[1] = l) : (c = t[0], l = t[1]), (0, x.useEffect)(c, l);
+            let [u, d] = (0, x.useState)(!1), f = (0, b.useContext)(g), p;
+            t[2] === f.renderer ? p = t[3] : (p = f.renderer.shouldUseContinuousMotion(), t[2] = f.renderer, t[3] = p);
+            let m = p,
+                h, v;
+            t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (h = () => {
+                let e = a.current;
+                if (!e) return;
+                let t = new ResizeObserver(t => {
+                        let [n] = t;
+                        e.style.setProperty(`--art-scale`, String(Math.min(n.contentRect.width, n.contentRect.height) / 389))
+                    }),
+                    n = () => d(!document.hidden);
+                return t.observe(e), n(), document.addEventListener(`visibilitychange`, n), () => {
+                    t.disconnect(), document.removeEventListener(`visibilitychange`, n)
+                }
+            }, v = [a], t[4] = h, t[5] = v) : (h = t[4], v = t[5]), (0, x.useEffect)(h, v);
+            let C = !i || void 0,
+                w;
+            t[6] === n ? w = t[7] : (w = (0, S.jsx)(`div`, {
+                className: _.stage,
+                children: n
+            }), t[6] = n, t[7] = w);
+            let T;
+            return t[8] !== m || t[9] !== u || t[10] !== C || t[11] !== w || t[12] !== o ? (T = (0, S.jsx)(`div`, {
+                ref: a,
+                className: _.artwork,
+                "aria-hidden": C,
+                "data-visible": o,
+                "data-page-visible": u,
+                "data-animate": m,
+                children: w
+            }), t[8] = m, t[9] = u, t[10] = C, t[11] = w, t[12] = o, t[13] = T) : T = t[13], T
+        }
+    })),
+    T, E, D, O, k = e((() => {
+        T = d(), v(), E = s(), D = e => typeof e == `string` ? e : e.src, O = e => {
+            "use forget";
+            let t = (0, T.c)(7),
+                {
+                    asset: n,
+                    className: r
+                } = e,
+                i;
+            t[0] === n ? i = t[1] : (i = D(n), t[0] = n, t[1] = i);
+            let a;
+            t[2] === i ? a = t[3] : (a = (0, E.jsx)(`img`, {
+                src: i,
+                alt: ``
+            }), t[2] = i, t[3] = a);
+            let o;
+            return t[4] !== r || t[5] !== a ? (o = (0, E.jsx)(`span`, {
+                className: _.taskIcon,
+                children: (0, E.jsx)(`span`, {
+                    className: r,
+                    children: a
+                })
+            }), t[4] = r, t[5] = a, t[6] = o) : o = t[6], o
+        }
+    }));
+
+function A(e, t) {
+    return n => {
+        let r = t?.[n];
+        if (r !== void 0) return r;
+        let i = M[n];
+        return i ? e.formatMessage(i) : ``
+    }
+}
+var j, M, N = e((() => {
+    l(), j = c({
+        inProgress: {
+            id: `yRmvre`,
+            defaultMessage: `In progress`
+        },
+        scheduled: {
+            id: `/T2qId`,
+            defaultMessage: `Scheduled`
+        },
+        monitoring: {
+            id: `Fax2L+`,
+            defaultMessage: `Monitoring`
+        },
+        computers: {
+            id: `ua7S38`,
+            defaultMessage: `Computers`
+        },
+        approved: {
+            id: `G40npu`,
+            defaultMessage: `Approval granted`
+        },
+        connected: {
+            id: `WWuEuW`,
+            defaultMessage: `Connected`
+        },
+        paused: {
+            id: `UlpDg1`,
+            defaultMessage: `Paused`
+        },
+        resumeInbox: {
+            id: `svjNqe`,
+            defaultMessage: `Resume organizing email inbox`
+        },
+        pauseInbox: {
+            id: `5664Bl`,
+            defaultMessage: `Pause organizing email inbox`
+        }
+    }), M = {
+        ...j,
+        calendar: void 0,
+        calendarHelp: void 0,
+        health: void 0,
+        healthHelp: void 0,
+        finances: void 0,
+        financesHelp: void 0,
+        buyCandles: void 0,
+        candlesStatus: void 0,
+        organizeInbox: void 0,
+        dailyBrief: void 0,
+        dailySchedule: void 0,
+        preparingReport: void 0,
+        watchStock: void 0,
+        dotsComputer: void 0,
+        browsingDashboard: void 0,
+        reviewingUpdates: void 0,
+        updatingTracker: void 0,
+        progressReport: void 0,
+        workComputer: void 0,
+        personalComputer: void 0,
+        filteringSpam: void 0
+    }
+}));
+
+function ee(e) {
+    return !e
+}
+var P, F, I, L, R = e((() => {
+        P = d(), l(), F = t(u()), a(), h(), k(), N(), p(), v(), o(), I = s(), L = e => {
+            "use forget";
+            let t = (0, P.c)(33),
+                {
+                    messages: a
+                } = e,
+                {
+                    artwork: o
+                } = (0, F.useContext)(m),
+                s = A(f(), a),
+                [c, l] = (0, F.useState)(!1),
+                [u, d] = (0, F.useState)(!1),
+                p = (0, F.useContext)(g),
+                h;
+            t[0] === p.renderer ? h = t[1] : (h = p.renderer.shouldUseContinuousMotion(), t[0] = p.renderer, t[1] = h);
+            let v = h,
+                y = (0, F.useId)(),
+                b = s(c ? `paused` : `filteringSpam`),
+                x;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (x = n(_.task, _.mailTask), t[2] = x) : x = t[2];
+            let S = s(c ? `resumeInbox` : `pauseInbox`),
+                C, w;
+            t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (C = e => {
+                d(e.detail === 0), l(ee)
+            }, w = (0, I.jsx)(`span`, {
+                className: _.taskHighlight,
+                "aria-hidden": `true`
+            }), t[3] = C, t[4] = w) : (C = t[3], w = t[4]);
+            let T;
+            t[5] === o.setupMailbox ? T = t[6] : (T = o.setupMailbox && (0, I.jsx)(O, {
+                asset: o.setupMailbox,
+                className: _.mailboxIcon
+            }), t[5] = o.setupMailbox, t[6] = T);
+            let E = _,
+                D = s(`organizeInbox`),
+                k;
+            t[7] === D ? k = t[8] : (k = (0, I.jsx)(`span`, {
+                children: D
+            }), t[7] = D, t[8] = k);
+            let j;
+            t[9] !== b || t[10] !== y ? (j = (0, I.jsx)(`span`, {
+                id: y,
+                className: `sr-only`,
+                children: b
+            }), t[9] = b, t[10] = y, t[11] = j) : j = t[11];
+            let M;
+            t[12] !== v || t[13] !== u || t[14] !== b ? (M = !v || u ? (0, I.jsx)(`span`, {
+                "aria-hidden": `true`,
+                children: b
+            }) : (0, I.jsx)(i, {
+                initial: !1,
+                children: (0, I.jsx)(r.span, {
+                    "aria-hidden": `true`,
+                    initial: {
+                        transform: `translateY(8px)`,
+                        opacity: 0
+                    },
+                    animate: {
+                        transform: `translateY(0%)`,
+                        opacity: 1
+                    },
+                    exit: {
+                        transform: `translateY(-8px)`,
+                        opacity: 0
+                    },
+                    transition: {
+                        duration: .24,
+                        ease: [.25, 1, .5, 1]
+                    },
+                    children: b
+                }, b)
+            }), t[12] = v, t[13] = u, t[14] = b, t[15] = M) : M = t[15];
+            let N;
+            t[16] !== j || t[17] !== M ? (N = (0, I.jsxs)(`small`, {
+                className: _.rollingSubtitle,
+                children: [j, M]
+            }), t[16] = j, t[17] = M, t[18] = N) : N = t[18];
+            let L;
+            t[19] !== k || t[20] !== N || t[21] !== E.taskText ? (L = (0, I.jsxs)(`span`, {
+                className: E.taskText,
+                children: [k, N]
+            }), t[19] = k, t[20] = N, t[21] = E.taskText, t[22] = L) : L = t[22];
+            let R;
+            t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (R = (0, I.jsx)(`span`, {
+                className: _.taskStop,
+                "aria-hidden": `true`,
+                children: (0, I.jsx)(`span`, {
+                    className: _.taskControlIcon
+                })
+            }), t[23] = R) : R = t[23];
+            let z;
+            return t[24] !== c || t[25] !== y || t[26] !== L || t[27] !== x || t[28] !== S || t[29] !== C || t[30] !== w || t[31] !== T ? (z = (0, I.jsxs)(`button`, {
+                type: `button`,
+                className: x,
+                "data-paused": c,
+                "aria-label": S,
+                "aria-describedby": y,
+                "aria-pressed": c,
+                onClick: C,
+                children: [w, T, L, R]
+            }), t[24] = c, t[25] = y, t[26] = L, t[27] = x, t[28] = S, t[29] = C, t[30] = w, t[31] = T, t[32] = z) : z = t[32], z
+        }
+    })),
+    z, te, ne, re = e((() => {
+        z = s(), u(), te = e => (0, z.jsx)(`svg`, {
+            xmlns: `http://www.w3.org/2000/svg`,
+            width: 24,
+            height: 24,
+            fill: `none`,
+            viewBox: `0 0 24 24`,
+            ...e,
+            children: (0, z.jsx)(`path`, {
+                fill: `#f75858`,
+                d: `M12 21.372c-.289 0-.589-.1-.889-.288-8.267-5.178-9.389-9.012-9.389-12.012 0-3.589 2.811-6.444 6.29-6.444 1.355 0 2.921.433 3.988 1.622 1.067-1.189 2.633-1.622 3.989-1.622 3.478 0 6.289 2.855 6.289 6.444 0 3-1.122 6.834-9.39 12.012-.3.188-.6.288-.888.288`,
+                style: {
+                    fill: `#f75858`,
+                    fill: `color(display-p3 .9703 .3462 .3462)`,
+                    fillOpacity: 1
+                }
+            })
+        }), ne = te
+    })),
+    B, ie, ae, oe = e((() => {
+        B = s(), u(), ie = e => (0, B.jsx)(`svg`, {
+            xmlns: `http://www.w3.org/2000/svg`,
+            width: 24,
+            height: 24,
+            fill: `none`,
+            viewBox: `0 0 24 24`,
+            ...e,
+            children: (0, B.jsx)(`path`, {
+                fill: `#ff6a6a`,
+                d: `M12 21.372c-.289 0-.589-.1-.889-.288-8.267-5.178-9.389-9.012-9.389-12.012 0-3.589 2.811-6.444 6.29-6.444 1.355 0 2.921.433 3.988 1.622 1.067-1.189 2.633-1.622 3.989-1.622 3.478 0 6.289 2.855 6.289 6.444 0 3-1.122 6.834-9.39 12.012-.3.188-.6.288-.888.288`,
+                style: {
+                    fill: `#ff6a6a`,
+                    fill: `color(display-p3 1 .4163 .4163)`,
+                    fillOpacity: 1
+                }
+            })
+        }), ae = ie
+    })),
+    V, se, ce, le = e((() => {
+        V = s(), u(), se = e => (0, V.jsxs)(`svg`, {
+            xmlns: `http://www.w3.org/2000/svg`,
+            width: 24,
+            height: 24,
+            fill: `none`,
+            viewBox: `0 0 24 24`,
+            ...e,
+            children: [(0, V.jsx)(`path`, {
+                fill: `#8ade6b`,
+                d: `M9.412 2.339a4.88 4.88 0 0 1 4.81 1.364 4.878 4.878 0 0 1 6.075 6.074 4.878 4.878 0 0 1-2.224 8.297 4.877 4.877 0 0 1-8.296 2.223 4.878 4.878 0 0 1-6.074-6.073A4.88 4.88 0 0 1 2.339 9.41a4.88 4.88 0 0 1 3.587-3.485 4.88 4.88 0 0 1 3.486-3.587`,
+                style: {
+                    fill: `#8ade6b`,
+                    fill: `color(display-p3 .5431 .8718 .4209)`,
+                    fillOpacity: 1
+                }
+            }), (0, V.jsx)(`path`, {
+                fill: `#488631`,
+                d: `M12 5.741a1 1 0 0 1 1 1v.378c.53.126 1.06.35 1.56.686a1 1 0 0 1-1.114 1.66c-.748-.502-1.563-.558-2.156-.378-.634.193-.794.544-.794.73 0 .289.1.458.362.645.332.236.81.412 1.473.645.589.207 1.363.47 1.97.904.676.481 1.203 1.21 1.203 2.275 0 1.407-1.117 2.327-2.338 2.612q-.082.017-.166.033v.328a1 1 0 0 1-2 0v-.403a6.3 6.3 0 0 1-2.071-.948 1 1 0 1 1 1.134-1.646c1.056.728 2.024.833 2.649.687.656-.153.792-.496.792-.663 0-.29-.1-.459-.362-.646-.332-.236-.81-.413-1.473-.646-.589-.207-1.363-.47-1.97-.902-.677-.481-1.203-1.21-1.203-2.276 0-1.389 1.092-2.302 2.211-2.642A4 4 0 0 1 11 7.098V6.74a1 1 0 0 1 1-1`,
+                style: {
+                    fill: `#488631`,
+                    fill: `color(display-p3 .2812 .5271 .1925)`,
+                    fillOpacity: 1
+                }
+            })]
+        }), ce = se
+    })),
+    H, ue, de, fe = e((() => {
+        H = s(), u(), ue = e => (0, H.jsxs)(`svg`, {
+            xmlns: `http://www.w3.org/2000/svg`,
+            width: 24,
+            height: 24,
+            fill: `none`,
+            viewBox: `0 0 24 24`,
+            ...e,
+            children: [(0, H.jsx)(`path`, {
+                fill: `#8ade6b`,
+                d: `M9.412 2.339a4.88 4.88 0 0 1 4.81 1.364 4.878 4.878 0 0 1 6.075 6.074 4.878 4.878 0 0 1-2.224 8.297 4.877 4.877 0 0 1-8.296 2.223 4.878 4.878 0 0 1-6.074-6.073A4.88 4.88 0 0 1 2.339 9.41a4.88 4.88 0 0 1 3.587-3.485 4.88 4.88 0 0 1 3.486-3.587`,
+                style: {
+                    fill: `#8ade6b`,
+                    fill: `color(display-p3 .5431 .8718 .4209)`,
+                    fillOpacity: 1
+                }
+            }), (0, H.jsx)(`path`, {
+                fill: `#488631`,
+                d: `M12 5.741a1 1 0 0 1 1 1v.378c.53.126 1.06.35 1.56.686a1 1 0 0 1-1.114 1.66c-.748-.502-1.563-.558-2.156-.378-.634.193-.794.544-.794.73 0 .289.1.458.362.645.332.236.81.412 1.473.645.589.207 1.363.47 1.97.904.676.481 1.203 1.21 1.203 2.275 0 1.407-1.117 2.327-2.338 2.612q-.082.017-.166.033v.328a1 1 0 0 1-2 0v-.403a6.3 6.3 0 0 1-2.071-.948 1 1 0 1 1 1.134-1.646c1.056.728 2.024.833 2.649.687.656-.153.792-.496.792-.663 0-.29-.1-.459-.362-.646-.332-.236-.81-.413-1.473-.646-.589-.207-1.363-.47-1.97-.902-.677-.481-1.203-1.21-1.203-2.276 0-1.389 1.092-2.302 2.211-2.642A4 4 0 0 1 11 7.098V6.74a1 1 0 0 1 1-1`,
+                style: {
+                    fill: `#488631`,
+                    fill: `color(display-p3 .2812 .5271 .1925)`,
+                    fillOpacity: 1
+                }
+            })]
+        }), de = ue
+    })),
+    U, W, pe, me, he = e((() => {
+        U = d(), re(), oe(), le(), fe(), W = s(), pe = () => {
+            "use forget";
+            let e = (0, U.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, W.jsxs)(`span`, {
+                "aria-hidden": !0,
+                className: `relative size-6`,
+                children: [(0, W.jsx)(ne, {
+                    className: `absolute inset-0 size-full dark:hidden`
+                }), (0, W.jsx)(ae, {
+                    className: `absolute inset-0 hidden size-full dark:block`
+                })]
+            }), e[0] = t) : t = e[0], t
+        }, me = () => {
+            "use forget";
+            let e = (0, U.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, W.jsxs)(`span`, {
+                "aria-hidden": !0,
+                className: `relative size-6`,
+                children: [(0, W.jsx)(ce, {
+                    className: `absolute inset-0 size-full dark:hidden`
+                }), (0, W.jsx)(de, {
+                    className: `absolute inset-0 hidden size-full dark:block`
+                })]
+            }), e[0] = t) : t = e[0], t
+        }
+    })),
+    G, ge, _e = e((() => {
+        G = `M6.0119 11.12305 C9.670433 11.12305 13.328967 11.12305 16.9875 11.12305 C17.4204 11.12305 17.7715 11.47439 17.7717 11.90723 C17.7717 12.3402 17.4205 12.6914 16.9875 12.6914 C13.328967 12.6914 9.670433 12.6914 6.0119 12.6914 C5.57906 12.6912 5.22772 12.34011 5.22772 11.90723 C5.22789 11.47449 5.57917 11.12321 6.0119 11.12305 Z M12.6916 6.01172 C12.6916 9.670247 12.6916 13.328773 12.6916 16.9873 C12.6916 17.4203 12.34039 17.7715 11.90741 17.7715 C11.47458 17.7713 11.12323 17.4202 11.12323 16.9873 C11.12323 13.328773 11.12323 9.670247 11.12323 6.01172 C11.12339 5.57898 11.47468 5.22771 11.90741 5.22754 C12.34029 5.22754 12.6914 5.57888 12.6916 6.01172 Z`, ge = `M7.35118 11.72729 C8.304607 12.683027 9.258033 13.638763 10.21146 14.5945 C10.272298 15.240871 10.333136 15.887242 10.393974 16.533613 C10.137863 16.55755 9.87157 16.47295 9.67171 16.2727 C8.528157 15.126833 7.384603 13.980967 6.24105 12.8351 C5.93526 12.5286 5.93608 12.03157 6.24259 11.72576 C6.54912 11.42029 7.04547 11.42091 7.35118 11.72729 Z M16.8477 7.62444 C14.91685 10.46406 12.986 13.30368 11.05515 16.1433 C10.896015 16.3772 10.650085 16.509675 10.393974 16.533613 C10.333136 15.887242 10.272298 15.240871 10.21146 14.5945 C11.991473 11.977153 13.771487 9.359807 15.5515 6.74246 C15.795 6.38477 16.2823 6.29173 16.6402 6.53499 C16.9982 6.77843 17.0911 7.2664 16.8477 7.62444 Z`
+    })),
+    K, ve, ye, be = e((() => {
+        K = s(), u(), ve = e => (0, K.jsx)(`svg`, {
+            xmlns: `http://www.w3.org/2000/svg`,
+            width: 20,
+            height: 18,
+            fill: `none`,
+            overflow: `visible`,
+            preserveAspectRatio: `none`,
+            style: {
+                display: `block`
+            },
+            viewBox: `0 0 20 18`,
+            ...e,
+            children: (0, K.jsx)(`path`, {
+                id: `vector`,
+                fill: `currentColor`,
+                fillRule: `evenodd`,
+                d: `M17 0a3 3 0 0 1 3 3v8.5a3 3 0 0 1-3 3h-2.5v2A1.5 1.5 0 0 1 13 18H7a1.5 1.5 0 0 1-1.5-1.5v-2H3a3 3 0 0 1-3-3V3a3 3 0 0 1 3-3zM7.5 14.5V16h5v-1.5zM3 2a1 1 0 0 0-1 1v8.5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1z`,
+                clipRule: `evenodd`
+            })
+        }), ye = ve
+    })),
+    q, xe, J, Se = e((() => {
+        q = s(), u(), xe = e => (0, q.jsx)(`svg`, {
+            xmlns: `http://www.w3.org/2000/svg`,
+            width: 22.566,
+            height: 17.119,
+            fill: `none`,
+            overflow: `visible`,
+            preserveAspectRatio: `none`,
+            style: {
+                display: `block`
+            },
+            viewBox: `0 0 22.566 17.119`,
+            ...e,
+            children: (0, q.jsx)(`path`, {
+                id: `vector`,
+                fill: `currentColor`,
+                fillRule: `evenodd`,
+                d: `M18.285 0a3 3 0 0 1 3 3v8.532c.731.15 1.281.797 1.281 1.572v1.2a2.815 2.815 0 0 1-2.814 2.815H2.814A2.815 2.815 0 0 1 0 14.305v-1.2c0-.777.552-1.426 1.285-1.574V3a3 3 0 0 1 3-3zM2 14.305c0 .45.365.814.814.814h16.938c.45 0 .814-.365.814-.814V13.5H2zM4.285 2a1 1 0 0 0-1 1v8.5h16V3a1 1 0 0 0-1-1z`,
+                clipRule: `evenodd`
+            })
+        }), J = xe
+    })),
+    Y, Ce, we, Te = e((() => {
+        Y = s(), u(), Ce = e => (0, Y.jsx)(`svg`, {
+            xmlns: `http://www.w3.org/2000/svg`,
+            width: 12,
+            height: 12,
+            fill: `none`,
+            overflow: `visible`,
+            preserveAspectRatio: `none`,
+            style: {
+                display: `block`
+            },
+            viewBox: `0 0 12 12`,
+            ...e,
+            children: (0, Y.jsx)(`circle`, {
+                id: `Ellipse 1`,
+                cx: 6,
+                cy: 6,
+                r: 5,
+                fill: `#04b84c`,
+                stroke: `#fff`,
+                strokeWidth: 2
+            })
+        }), we = Ce
+    }));
+
+function Ee(e, t) {
+    return e ? (0, Q.jsx)(`img`, {
+        src: e,
+        alt: ``
+    }, t) : null
+}
+var X, Z, Q, $, De, Oe, ke, Ae, je = e((() => {
+    X = d(), l(), Z = t(u()), p(), w(), R(), k(), he(), _e(), N(), be(), Se(), Te(), v(), o(), Q = s(), $ = () => {
+        "use forget";
+        let e = (0, X.c)(2),
+            t;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = {
+            "--connection-plus": `path("${G}")`,
+            "--connection-check": `path("${ge}")`
+        }, e[0] = t) : t = e[0];
+        let n;
+        return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Q.jsx)(`svg`, {
+            className: _.connectionStatus,
+            viewBox: `0 0 24 24`,
+            "aria-hidden": `true`,
+            style: t,
+            children: (0, Q.jsx)(`path`, {
+                className: _.connectionMark,
+                d: G
+            })
+        }), e[1] = n) : n = e[1], n
+    }, De = e => {
+        "use forget";
+        let t = (0, X.c)(14),
+            {
+                messages: r
+            } = e,
+            i = A(f(), r),
+            {
+                artwork: a
+            } = (0, Z.useContext)(m),
+            o;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Q.jsx)(`div`, {
+            className: _.phone
+        }), t[0] = o) : o = t[0];
+        let s;
+        t[1] === a.setupCalendar ? s = t[2] : (s = a.setupCalendar && (0, Q.jsx)(`img`, {
+            src: a.setupCalendar,
+            className: _.calendarIcon,
+            alt: ``
+        }), t[1] = a.setupCalendar, t[2] = s);
+        let c;
+        t[3] === s ? c = t[4] : (c = (0, Q.jsx)(`div`, {
+            className: _.appIcon,
+            children: s
+        }), t[3] = s, t[4] = c);
+        let l;
+        t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Q.jsx)($, {}), t[5] = l) : l = t[5];
+        let u;
+        t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (u = n(_.connection, _.health), t[6] = u) : u = t[6];
+        let d;
+        t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, Q.jsx)(`div`, {
+            className: _.appIcon,
+            children: (0, Q.jsx)(pe, {})
+        }), t[7] = d) : d = t[7];
+        let p;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, Q.jsx)($, {}), t[8] = p) : p = t[8];
+        let h;
+        t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (h = n(_.connection, _.finances), t[9] = h) : h = t[9];
+        let g;
+        t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, Q.jsx)(`div`, {
+            className: _.appIcon,
+            children: (0, Q.jsx)(me, {})
+        }), t[10] = g) : g = t[10];
+        let v = i(`financesHelp`),
+            y;
+        t[11] === v ? y = t[12] : (y = (0, Q.jsx)(`small`, {
+            children: v
+        }), t[11] = v, t[12] = y);
+        let b;
+        return t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (b = (0, Q.jsx)($, {}), t[13] = b) : b = t[13], (0, Q.jsxs)(C, {
+            children: [o, (0, Q.jsxs)(`div`, {
+                className: _.connections,
+                children: [(0, Q.jsxs)(`div`, {
+                    className: _.connection,
+                    children: [c, (0, Q.jsxs)(`div`, {
+                        className: _.connectionText,
+                        children: [(0, Q.jsx)(`span`, {
+                            children: i(`calendar`)
+                        }), (0, Q.jsx)(`small`, {
+                            children: i(`calendarHelp`)
+                        })]
+                    }), l]
+                }), (0, Q.jsxs)(`div`, {
+                    className: u,
+                    children: [d, (0, Q.jsxs)(`div`, {
+                        className: _.connectionText,
+                        children: [(0, Q.jsx)(`span`, {
+                            children: i(`health`)
+                        }), (0, Q.jsx)(`small`, {
+                            children: i(`healthHelp`)
+                        })]
+                    }), p]
+                }), (0, Q.jsxs)(`div`, {
+                    className: h,
+                    children: [g, (0, Q.jsxs)(`div`, {
+                        className: _.connectionText,
+                        children: [(0, Q.jsx)(`span`, {
+                            children: i(`finances`)
+                        }), y]
+                    }), b]
+                })]
+            })]
+        })
+    }, Oe = e => {
+        "use forget";
+        let t = (0, X.c)(13),
+            {
+                messages: r
+            } = e,
+            i = A(f(), r),
+            {
+                artwork: a
+            } = (0, Z.useContext)(m),
+            o;
+        t[0] === a.setupCandle ? o = t[1] : (o = a.setupCandle && (0, Q.jsx)(O, {
+            asset: a.setupCandle,
+            className: _.candleIcon
+        }), t[0] = a.setupCandle, t[1] = o);
+        let s;
+        t[2] === r ? s = t[3] : (s = (0, Q.jsx)(L, {
+            messages: r
+        }), t[2] = r, t[3] = s);
+        let c;
+        t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (c = n(_.groupLabel, _.scheduledLabel), t[4] = c) : c = t[4];
+        let l;
+        t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (l = n(_.task, _.dailyTask), t[5] = l) : l = t[5];
+        let u;
+        t[6] === a.setupClock ? u = t[7] : (u = a.setupClock && (0, Q.jsx)(O, {
+            asset: a.setupClock,
+            className: _.clockIcon
+        }), t[6] = a.setupClock, t[7] = u);
+        let d;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (d = n(_.task, _.watchTask), t[8] = d) : d = t[8];
+        let p;
+        t[9] === a.setupBonsai ? p = t[10] : (p = a.setupBonsai && (0, Q.jsx)(O, {
+            asset: a.setupBonsai,
+            className: _.bonsaiIcon
+        }), t[9] = a.setupBonsai, t[10] = p);
+        let h = i(`monitoring`),
+            g;
+        return t[11] === h ? g = t[12] : (g = (0, Q.jsx)(`small`, {
+            children: h
+        }), t[11] = h, t[12] = g), (0, Q.jsx)(C, {
+            interactive: !0,
+            children: (0, Q.jsxs)(`div`, {
+                className: _.tasks,
+                children: [(0, Q.jsx)(`div`, {
+                    className: _.groupLabel,
+                    "aria-hidden": `true`,
+                    children: i(`inProgress`)
+                }), (0, Q.jsxs)(`div`, {
+                    className: _.taskList,
+                    children: [(0, Q.jsxs)(`div`, {
+                        className: _.task,
+                        "aria-hidden": `true`,
+                        children: [o, (0, Q.jsxs)(`div`, {
+                            className: _.taskText,
+                            children: [(0, Q.jsx)(`span`, {
+                                children: i(`buyCandles`)
+                            }), (0, Q.jsx)(`small`, {
+                                children: i(`candlesStatus`)
+                            })]
+                        })]
+                    }), s]
+                }), (0, Q.jsxs)(`div`, {
+                    className: _.scheduled,
+                    "aria-hidden": `true`,
+                    children: [(0, Q.jsx)(`div`, {
+                        className: c,
+                        children: i(`scheduled`)
+                    }), (0, Q.jsxs)(`div`, {
+                        className: _.taskList,
+                        children: [(0, Q.jsxs)(`div`, {
+                            className: l,
+                            children: [u, (0, Q.jsxs)(`div`, {
+                                className: _.taskText,
+                                children: [(0, Q.jsx)(`span`, {
+                                    children: i(`dailyBrief`)
+                                }), (0, Q.jsxs)(`small`, {
+                                    className: _.dailySubtitle,
+                                    children: [(0, Q.jsx)(`span`, {
+                                        className: _.scheduledText,
+                                        children: i(`dailySchedule`)
+                                    }), (0, Q.jsx)(`span`, {
+                                        className: _.preparingText,
+                                        children: i(`preparingReport`)
+                                    })]
+                                })]
+                            })]
+                        }), (0, Q.jsxs)(`div`, {
+                            className: d,
+                            children: [p, (0, Q.jsxs)(`div`, {
+                                className: _.taskText,
+                                children: [(0, Q.jsx)(`span`, {
+                                    children: i(`watchStock`)
+                                }), g]
+                            })]
+                        })]
+                    })]
+                })]
+            })
+        })
+    }, ke = () => {
+        "use forget";
+        let e = (0, X.c)(15),
+            {
+                artwork: t
+            } = (0, Z.useContext)(m),
+            n;
+        e[0] === t.setupWallpaper ? n = e[1] : (n = t.setupWallpaper && (0, Q.jsx)(`img`, {
+            className: _.wallpaper,
+            src: t.setupWallpaper,
+            alt: ``
+        }), e[0] = t.setupWallpaper, e[1] = n);
+        let r;
+        e[2] === t.setupDashboard ? r = e[3] : (r = t.setupDashboard && (0, Q.jsx)(`img`, {
+            src: t.setupDashboard,
+            alt: ``
+        }), e[2] = t.setupDashboard, e[3] = r);
+        let i;
+        e[4] === r ? i = e[5] : (i = (0, Q.jsx)(`div`, {
+            className: _.previewWindow,
+            children: r
+        }), e[4] = r, e[5] = i);
+        let a;
+        e[6] !== t.setupDock1 || e[7] !== t.setupDock2 || e[8] !== t.setupDock3 || e[9] !== t.setupDock4 ? (a = (0, Q.jsx)(`div`, {
+            className: _.dock,
+            children: [t.setupDock1, t.setupDock2, t.setupDock3, t.setupDock4].map(Ee)
+        }), e[6] = t.setupDock1, e[7] = t.setupDock2, e[8] = t.setupDock3, e[9] = t.setupDock4, e[10] = a) : a = e[10];
+        let o;
+        return e[11] !== n || e[12] !== i || e[13] !== a ? (o = (0, Q.jsxs)(`div`, {
+            className: _.computerPreview,
+            children: [n, i, a]
+        }), e[11] = n, e[12] = i, e[13] = a, e[14] = o) : o = e[14], o
+    }, Ae = e => {
+        "use forget";
+        let t = (0, X.c)(41),
+            {
+                messages: r
+            } = e,
+            i = f(),
+            a, o, s, c, l, u, d, p, m, h;
+        if (t[0] !== i || t[1] !== r) {
+            let e = A(i, r);
+            a = C, d = _.computers, p = (0, Q.jsx)(`div`, {
+                className: _.groupLabel,
+                children: e(`computers`)
+            });
+            let f;
+            t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, Q.jsxs)(`div`, {
+                className: _.deviceIcon,
+                children: [(0, Q.jsx)(ye, {
+                    "aria-hidden": !0
+                }), (0, Q.jsx)(`span`, {
+                    className: _.onlinePulse
+                }), (0, Q.jsx)(we, {
+                    className: _.online,
+                    "aria-hidden": !0
+                })]
+            }), t[12] = f) : f = t[12];
+            let g = (0, Q.jsxs)(`div`, {
+                    className: _.computerText,
+                    children: [(0, Q.jsx)(`span`, {
+                        children: e(`dotsComputer`)
+                    }), (0, Q.jsxs)(`small`, {
+                        className: _.computerStatus,
+                        children: [(0, Q.jsx)(`span`, {
+                            children: e(`browsingDashboard`)
+                        }), (0, Q.jsx)(`span`, {
+                            children: e(`reviewingUpdates`)
+                        }), (0, Q.jsx)(`span`, {
+                            children: e(`updatingTracker`)
+                        }), (0, Q.jsx)(`span`, {
+                            children: e(`progressReport`)
+                        })]
+                    })]
+                }),
+                v;
+            t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, Q.jsx)(ke, {}), t[13] = v) : v = t[13], t[14] === g ? m = t[15] : (m = (0, Q.jsxs)(`div`, {
+                className: _.computer,
+                children: [f, g, v]
+            }), t[14] = g, t[15] = m);
+            let y;
+            t[16] === Symbol.for(`react.memo_cache_sentinel`) ? (y = n(_.computer, _.workComputer), t[16] = y) : y = t[16];
+            let b;
+            t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (b = (0, Q.jsx)(`div`, {
+                className: _.deviceIcon,
+                children: (0, Q.jsx)(J, {
+                    "aria-hidden": !0
+                })
+            }), t[17] = b) : b = t[17];
+            let x = (0, Q.jsxs)(`div`, {
+                className: _.computerText,
+                children: [(0, Q.jsx)(`span`, {
+                    children: e(`workComputer`)
+                }), (0, Q.jsx)(`small`, {
+                    children: e(`approved`)
+                })]
+            });
+            t[18] === x ? h = t[19] : (h = (0, Q.jsxs)(`div`, {
+                className: y,
+                children: [b, x]
+            }), t[18] = x, t[19] = h), t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (l = n(_.computer, _.personalComputer), t[20] = l) : l = t[20], t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, Q.jsx)(`div`, {
+                className: _.deviceIcon,
+                children: (0, Q.jsx)(J, {
+                    "aria-hidden": !0
+                })
+            }), t[21] = u) : u = t[21], s = _.computerText, c = (0, Q.jsx)(`span`, {
+                children: e(`personalComputer`)
+            }), o = e(`connected`), t[0] = i, t[1] = r, t[2] = a, t[3] = o, t[4] = s, t[5] = c, t[6] = l, t[7] = u, t[8] = d, t[9] = p, t[10] = m, t[11] = h
+        } else a = t[2], o = t[3], s = t[4], c = t[5], l = t[6], u = t[7], d = t[8], p = t[9], m = t[10], h = t[11];
+        let g;
+        t[22] === o ? g = t[23] : (g = (0, Q.jsx)(`small`, {
+            children: o
+        }), t[22] = o, t[23] = g);
+        let v;
+        t[24] !== g || t[25] !== s || t[26] !== c ? (v = (0, Q.jsxs)(`div`, {
+            className: s,
+            children: [c, g]
+        }), t[24] = g, t[25] = s, t[26] = c, t[27] = v) : v = t[27];
+        let y;
+        t[28] !== v || t[29] !== l || t[30] !== u ? (y = (0, Q.jsxs)(`div`, {
+            className: l,
+            children: [u, v]
+        }), t[28] = v, t[29] = l, t[30] = u, t[31] = y) : y = t[31];
+        let b;
+        t[32] !== y || t[33] !== d || t[34] !== p || t[35] !== m || t[36] !== h ? (b = (0, Q.jsxs)(`div`, {
+            className: d,
+            children: [p, m, h, y]
+        }), t[32] = y, t[33] = d, t[34] = p, t[35] = m, t[36] = h, t[37] = b) : b = t[37];
+        let x;
+        return t[38] !== a || t[39] !== b ? (x = (0, Q.jsx)(a, {
+            children: b
+        }), t[38] = a, t[39] = b, t[40] = x) : x = t[40], x
+    }
+}));
+export {
+    je as i, De as n, Oe as r, Ae as t
+};
+//# sourceMappingURL=e0709cca-6cwn6bm80q01ndrl.js.map
