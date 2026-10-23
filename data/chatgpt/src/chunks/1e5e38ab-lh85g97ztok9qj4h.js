@@ -1,27 +1,2 @@
-import {
-    n as e
-} from "./f025431a-ehagpvg3m4e1cduv.js";
-import {
-    $7 as t,
-    Y7 as n
-} from "./4813494d-r54yv6lv29x4ew99.js";
-
-function r(e) {
-    return e == null || !e.isOwnerOfAccount() || !e.isSelfServeBusiness() || !e.eligibleForReactivation ? null : e.hasPaidSubscription() ? `customer_portal` : `checkout`
-}
-async function i(e) {
-    return (await n.safeGet(`/payments/customer_portal`, {
-        parameters: {
-            query: {
-                account_id: e
-            }
-        }
-    })).url
-}
-var a = e((() => {
-    t()
-}));
-export {
-    r as n, a as r, i as t
-};
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{$7 as t,Y7 as n}from"./4813494d-r54yv6lv29x4ew99.js";function r(e){return e==null||!e.isOwnerOfAccount()||!e.isSelfServeBusiness()||!e.eligibleForReactivation?null:e.hasPaidSubscription()?`customer_portal`:`checkout`}async function i(e){return(await n.safeGet(`/payments/customer_portal`,{parameters:{query:{account_id:e}}})).url}var a=e((()=>{t()}));export{r as n,a as r,i as t};
 //# sourceMappingURL=1e5e38ab-lh85g97ztok9qj4h.js.map
