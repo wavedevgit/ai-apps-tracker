@@ -1,0 +1,96 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    I7 as t,
+    M7 as n
+} from "./4813494d-mdvd4786a87166cc.js";
+async function r({
+    queryClient: e,
+    workspaceId: t,
+    userId: r,
+    roleId: i,
+    assigned: a
+}) {
+    let o = {
+        role_id: i,
+        principal_id: r,
+        principal_type: `user`
+    };
+    if (!(a ? await n.safePost(`/rbac/workspace/{workspace_id}/role-assignments`, {
+            parameters: {
+                path: {
+                    workspace_id: t
+                },
+                query: {
+                    account_id: t
+                }
+            },
+            requestBody: o
+        }) : await n.safeDelete(`/rbac/workspace/{workspace_id}/role-assignments`, {
+            parameters: {
+                path: {
+                    workspace_id: t
+                },
+                query: {
+                    account_id: t,
+                    ...o
+                }
+            }
+        })).success) throw Error(`Role assignment was not saved`);
+    await Promise.all([
+        [t, i, `role-principals`],
+        [t, r, `effective-roles`],
+        [t, r, `user-roles`],
+        [t, `role-summaries`]
+    ].map(async t => {
+        await e.cancelQueries({
+            queryKey: t
+        }), await e.invalidateQueries({
+            queryKey: t,
+            refetchType: `all`
+        })
+    }))
+}
+var i, a, o = e((() => {
+    t(), i = (e, t) => ({
+        queryKey: [e, t, `role-principals`],
+        refetchOnMount: `always`,
+        queryFn: ({
+            signal: r
+        }) => n.safeGet(`/rbac/workspace/{workspace_id}/roles/{role_id}/principals`, {
+            parameters: {
+                path: {
+                    workspace_id: e,
+                    role_id: t
+                },
+                query: {
+                    account_id: e,
+                    consistency: `strong`
+                }
+            },
+            signal: r
+        })
+    }), a = (e, t) => ({
+        queryKey: [e, t, `effective-roles`],
+        refetchOnMount: `always`,
+        queryFn: ({
+            signal: r
+        }) => n.safeGet(`/rbac/workspace/{workspace_id}/principals/{principal_id}/effective-permissions`, {
+            parameters: {
+                path: {
+                    workspace_id: e,
+                    principal_id: t
+                },
+                query: {
+                    account_id: e
+                }
+            },
+            signal: r
+        })
+    })
+}));
+export {
+    r as i, i as n, o as r, a as t
+};
+//# sourceMappingURL=edab851d-b79m5x46s88yovhl.js.map

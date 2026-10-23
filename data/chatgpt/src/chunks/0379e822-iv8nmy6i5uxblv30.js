@@ -1,0 +1,55 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/a05edf66-f6ebinxrpvpwcliw.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-mdvd4786a87166cc.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-bcbq46iub1p0ca1t.js", "assets/30901919-s8bko9nrkqwv6i4f.js", "assets/c470f5ab-jwd0o7jx9i9say9k.js", "assets/0e5afe53-hxm3yzzjqriayom4.js", "assets/conversation-small-ep6mlz5m.css", "assets/8742b478-bmafmljnkmm000be.js"]))) => i.map(i => d[i]);
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    a2 as t,
+    c2 as n,
+    d2 as r,
+    o2 as i
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    cn as a,
+    ln as o
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    i as s,
+    n as c,
+    t as l
+} from "./3ed411a3-byuit4zmj8b452ow.js";
+
+function u(e) {
+    window.open(e, `_blank`, `noopener,noreferrer`)
+}
+async function d(e, t) {
+    if (e == null) try {
+        return !await s(t)
+    } catch {
+        return !0
+    }
+    try {
+        return (await l(e.id, [t])).length > 0
+    } catch {
+        return !0
+    }
+}
+async function f({
+    href: e,
+    conversation: t
+}) {
+    if (await d(t, e)) {
+        r(p, {
+            urls: e,
+            displayUrls: e
+        });
+        return
+    }
+    u(e)
+}
+var p, m = e((() => {
+    n(), c(), i(), o(), p = t(() => a(() => import(`./a05edf66-f6ebinxrpvpwcliw.js`).then(e => e.SafeLinkWarningModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10])))
+}));
+export {
+    f as n, m as t
+};
+//# sourceMappingURL=0379e822-iv8nmy6i5uxblv30.js.map

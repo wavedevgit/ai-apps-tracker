@@ -1,0 +1,328 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    K5 as n,
+    q5 as r
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as i,
+    Kt as a,
+    Vn as o
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    B_t as s,
+    G_t as c,
+    H_t as l,
+    P_t as u,
+    Q_t as d,
+    R_t as f,
+    Z_t as p,
+    k_t as ee,
+    m_t as m
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    g as h,
+    l as g,
+    u as te,
+    y as ne
+} from "./707eab0c-iv8ek9kc5qu6c0ky.js";
+import {
+    G as re,
+    J as _,
+    K as v,
+    U as y,
+    W as b,
+    Y as x,
+    q as ie,
+    t as S
+} from "./bcae0416-irbi1zql5j1lffpc.js";
+import {
+    n as ae,
+    t as C
+} from "./d4c740a3-m98a0dejurzr8grq.js";
+import {
+    n as w,
+    t as oe
+} from "./ed64284d-nnaflpnulzp6j7fl.js";
+import {
+    n as T,
+    t as E
+} from "./d357429d-oc0vsmdkjdpsjb7n.js";
+var D, O, se = e((() => {
+        D = t(o()), O = e => {
+            let [t, n] = (0, D.useState)(!1), [r, i] = (0, D.useState)(!0), [a, o] = (0, D.useState)(!1);
+            return (0, D.useEffect)(() => {
+                let t = e.current;
+                if (!t) return;
+                let r = () => {
+                    let {
+                        scrollHeight: e,
+                        clientHeight: r,
+                        scrollTop: a
+                    } = t;
+                    n(e > r), i(a === 0), o(a + r >= e)
+                };
+                r(), t.addEventListener(`scroll`, r, {
+                    passive: !0
+                });
+                let a = new ResizeObserver(r);
+                a.observe(t);
+                let s = t.ownerDocument.fonts;
+                return s?.addEventListener(`loadingdone`, r), () => {
+                    t.removeEventListener(`scroll`, r), a.disconnect(), s?.removeEventListener(`loadingdone`, r)
+                }
+            }, [e]), {
+                isScrollable: t,
+                isAtStart: r,
+                isAtEnd: a
+            }
+        }
+    })),
+    k, A, j, M = e((() => {
+        k = t(o()), A = (0, k.createContext)(null), j = () => {
+            let e = (0, k.use)(A);
+            if (!e) throw Error(`Modal components or hooks must be wrapped in <Modal />`);
+            return e
+        }
+    })),
+    N, P, F, I, L, R, z = e((() => {
+        N = t(o()), P = t(a()), f(), M(), F = () => {
+            let {
+                setOpen: e
+            } = j();
+            return (0, N.useCallback)(() => e(!1), [e])
+        }, I = () => {
+            let {
+                setShake: e
+            } = j();
+            return (0, N.useCallback)(() => {
+                (0, P.flushSync)(() => {
+                    e(!1)
+                }), c(() => e(!0))
+            }, [e])
+        }, L = e => {
+            let t = j();
+            (0, N.useEffect)(() => {
+                if (e) return t.checkAllowClose.current.add(e), () => {
+                    t.checkAllowClose.current.delete(e)
+                }
+            }, [e, t.checkAllowClose])
+        }, R = ({
+            onRequestClose: e
+        } = {}) => {
+            let t = I(),
+                n = F();
+            return L(e), {
+                close: n,
+                shake: t
+            }
+        }
+    })),
+    B, V, H, U, W, G, K, q, J, Y, X, Z, Q, $ = e((() => {
+        r(), S(), B = t(o()), d(), oe(), g(), C(), se(), f(), h(), m(), T(), M(), z(), V = i(), H = ({
+            open: e,
+            defaultOpen: t = !1,
+            onOpenChange: n,
+            children: r
+        }) => {
+            let [i, a] = (0, B.useState)(t), [o, s] = (0, B.useState)(!1), c = (0, B.useRef)(new Set), l = e ?? i, u = ae(n), d = (0, B.useCallback)(t => {
+                l !== t && (t || s(!1), u.current?.(t), typeof e != `boolean` && a(t))
+            }, [l, e, u]);
+            return (0, V.jsx)(A, {
+                value: (0, B.useMemo)(() => ({
+                    open: l,
+                    setOpen: d,
+                    shake: o,
+                    setShake: s,
+                    checkAllowClose: c
+                }), [l, d, o, s]),
+                children: (0, V.jsx)(y, {
+                    open: l,
+                    onOpenChange: d,
+                    modal: !1,
+                    children: r
+                })
+            })
+        }, U = ({
+            children: e,
+            ref: t
+        }) => (0, V.jsx)(x, {
+            asChild: !0,
+            ref: t,
+            children: e
+        }), W = e => {
+            if (!(e instanceof Element)) return !1;
+            let t = e.hasAttribute(`data-grammarly-shadow-root`),
+                n = e.tagName === `COM-1PASSWORD-BUTTON`,
+                r = e.closest(`[data-sonner-toast], [data-sonner-toaster]`) != null,
+                i = e.closest(`[data-puik-ignore-outside-interaction]`) != null;
+            return t || n || r || i
+        }, G = ({
+            children: e,
+            className: t,
+            maxWidth: r,
+            scroll: i = `inside`,
+            backdrop: a = p.backdropStyle,
+            onCloseAutoFocus: o,
+            onOpenAutoFocus: c
+        }) => {
+            let d = !w(`md`),
+                {
+                    open: f,
+                    setOpen: m,
+                    shake: h,
+                    checkAllowClose: g
+                } = j(),
+                _ = d ? `inside` : i,
+                [v, y] = (0, B.useState)(null),
+                b = ne();
+            te(f, () => {
+                for (let e of g.current)
+                    if (e() === `deny`) return;
+                m(!1)
+            });
+            let x = e => {
+                if (v && e.target === v && e.key === `Tab` && e.shiftKey) {
+                    e.preventDefault(), e.stopPropagation();
+                    let t = u(v);
+                    t[t.length - 1]?.focus()
+                }
+            };
+            (0, B.useEffect)(() => {
+                v && (v?.contains(document.activeElement) || v.focus({
+                    preventScroll: !0
+                }))
+            }, [v]);
+            let S = (0, B.useCallback)(e => {
+                if (W(e.target)) {
+                    e.preventDefault();
+                    return
+                }
+                if (e.type === `dismissableLayer.focusOutside` || e.type === `dismissableLayer.blurOutside`) {
+                    e.preventDefault();
+                    return
+                }
+                for (let t of g.current)
+                    if (t() === `deny`) {
+                        e.preventDefault();
+                        return
+                    }
+            }, [g]);
+            return (0, V.jsx)(ie, {
+                forceMount: !0,
+                container: b,
+                children: (0, V.jsx)(ee, {
+                    enterDuration: 600,
+                    exitDuration: 300,
+                    className: E.ModalPortal,
+                    children: f && (0, V.jsxs)(`div`, {
+                        className: E.ModalPortalInner,
+                        "data-backdrop": a,
+                        children: [(0, V.jsx)(`div`, {
+                            className: E.ModalBackdrop
+                        }, `overlay`), (0, V.jsx)(`div`, {
+                            className: E.ModalContainer,
+                            "data-modal-scroll": _,
+                            children: (0, V.jsx)(`div`, {
+                                className: E.ModalContainerInner,
+                                children: (0, V.jsx)(re, {
+                                    forceMount: !0,
+                                    ref: y,
+                                    className: n(E.Modal, t),
+                                    style: l({
+                                        "modal-max-width": r
+                                    }),
+                                    "data-animate": h ? `shake` : void 0,
+                                    onOpenAutoFocus: e => {
+                                        e.preventDefault(), c?.(e)
+                                    },
+                                    onCloseAutoFocus: o,
+                                    onEscapeKeyDown: s,
+                                    onKeyDown: x,
+                                    onPointerDownOutside: S,
+                                    onInteractOutside: S,
+                                    children: e
+                                })
+                            })
+                        })]
+                    }, `modal`)
+                })
+            })
+        }, K = ({
+            children: e,
+            className: t,
+            ...r
+        }) => (0, V.jsx)(`form`, {
+            className: n(E.Form, t),
+            ...r,
+            children: e
+        }), q = ({
+            children: e
+        }) => (0, V.jsx)(`div`, {
+            className: E.Header,
+            children: e
+        }), J = ({
+            children: e,
+            className: t,
+            ...r
+        }) => {
+            let i = (0, B.useRef)(null),
+                {
+                    isScrollable: a,
+                    isAtStart: o
+                } = O(i);
+            return (0, V.jsx)(`div`, {
+                ref: i,
+                className: n(E.Body, t),
+                "data-scrollable": a,
+                "data-scroll-at-top": o,
+                ...r,
+                children: e
+            })
+        }, Y = ({
+            children: e,
+            className: t,
+            ...r
+        }) => (0, V.jsx)(`div`, {
+            className: n(E.Footer, t),
+            ...r,
+            children: e
+        }), X = ({
+            visuallyHidden: e = !1,
+            children: t,
+            className: r
+        }) => (0, V.jsx)(v, {
+            className: n(E.Description, r),
+            "data-visually-hidden": e ? `` : void 0,
+            children: t
+        }), Z = ({
+            children: e,
+            className: t,
+            ...r
+        }) => (0, V.jsx)(_, {
+            className: n(E.Title, t),
+            ...r,
+            children: e
+        }), Q = ({
+            children: e
+        }) => {
+            let t = F();
+            return typeof e == `function` ? (0, V.jsx)(V.Fragment, {
+                children: e({
+                    close: t
+                })
+            }) : (0, V.jsx)(b, {
+                asChild: !0,
+                children: e
+            })
+        }, H.Trigger = U, H.Content = G, H.Form = K, H.Header = q, H.Body = J, H.Footer = Y, H.Title = Z, H.Description = X, H.Close = Q
+    })),
+    ce = e((() => {
+        $(), z()
+    }));
+export {
+    R as a, z as i, H as n, $ as r, ce as t
+};
+//# sourceMappingURL=18093cad-n00fxxrbtwbr8v1m.js.map

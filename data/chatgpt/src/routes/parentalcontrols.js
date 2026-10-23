@@ -1,2 +1,2 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Cy as n,py as r,wy as i}from"./4813494d-r54yv6lv29x4ew99.js";import{Ht as a,Nt as o,Q as s,Vn as c}from"./2340486e-i7pjxgdhv0bs6apg.js";var l,u,d=e((()=>{s(),i(),l=t(c()),u=a(function(){let e=o();return(0,l.useEffect)(()=>{e({pathname:`/`,...n(r.ParentalControls)},{replace:!0})},[e]),null})}));e((()=>{d()}))();export{u as default};
-//# sourceMappingURL=parentalcontrols-ene7f2kq.js.map
+import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Cy as n,py as r,wy as i}from"./4813494d-mdvd4786a87166cc.js";import{Ht as a,Nt as o,Q as s,Vn as c}from"./2340486e-i7pjxgdhv0bs6apg.js";var l,u,d=e((()=>{s(),i(),l=t(c()),u=a(function(){let e=o();return(0,l.useEffect)(()=>{e({pathname:`/`,...n(r.ParentalControls)},{replace:!0})},[e]),null})}));e((()=>{d()}))();export{u as default};
+//# sourceMappingURL=parentalcontrols-kiqov4hu.js.map

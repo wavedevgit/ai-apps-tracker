@@ -1,2 +1,2 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{i as t,n,r,t as i}from"./e0ce881f-dz89pgh9ham2tsr3.js";e((()=>{n()}))();export{i as default,r as meta,t as shouldRevalidate};
-//# sourceMappingURL=codex.cloud.universe-ki1ad3vf.js.map
+import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{i as t,n,r,t as i}from"./e0ce881f-gfhnsff4isp2r0nb.js";e((()=>{n()}))();export{i as default,r as meta,t as shouldRevalidate};
+//# sourceMappingURL=codex.cloud.universe-b9ccjcr9.js.map

@@ -1,0 +1,315 @@
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    K5 as n,
+    q5 as r
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as i,
+    Nn as a,
+    Rn as o,
+    Vn as s,
+    wn as c
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Zt as l
+} from "./1c919af1-ll7qduuzf4eqlddy.js";
+import {
+    d as u,
+    t as d
+} from "./707eab0c-iv8ek9kc5qu6c0ky.js";
+import {
+    t as f
+} from "./4b68ab38-dt9ayp4by7y7cj82.js";
+import {
+    t as p
+} from "./a35abcd6-byh6ggz75l0wrrkr.js";
+import {
+    n as m,
+    t as h
+} from "./8e88ec39-ly2p52dkrwo6r0lt.js";
+import {
+    n as g,
+    t as _
+} from "./36ecb4f8-6735f7qa0pgc5djk.js";
+import {
+    C as v,
+    T as y,
+    h as b
+} from "./11e71471-cch7p7wnwn2tje0t.js";
+var x, S, C, w, T, E, D, O, k, A = e((() => {
+        x = `l0SFDq_DesktopCloseButton`, S = `l0SFDq_Item`, C = `l0SFDq_MainPane`, w = `l0SFDq_MobileTopBar`, T = `l0SFDq_SearchClearButton`, E = `l0SFDq_SearchField`, D = `l0SFDq_SidebarPane`, O = `l0SFDq_SplitModal`, k = {
+            DesktopCloseButton: x,
+            Item: S,
+            MainPane: C,
+            MobileTopBar: w,
+            SearchClearButton: T,
+            SearchField: E,
+            SidebarPane: D,
+            SplitModal: O
+        }
+    })),
+    j, M, N, P, F, I, L, R, z, B, V = e((() => {
+        j = c(), m(), d(), p(), _(), r(), M = t(s()), o(), A(), y(), N = i(), P = (0, M.createContext)(null), F = () => {
+            "use no forget";
+            let e = (0, M.useContext)(P);
+            if (e == null) throw Error(`SplitModal components or hooks must be wrapped in <SplitModal>.`);
+            return e
+        }, I = e => {
+            "use forget";
+            let t = (0, j.c)(19),
+                {
+                    children: r,
+                    className: i,
+                    closeLabel: a,
+                    defaultPane: o,
+                    pendingAction: s,
+                    onClose: c,
+                    style: l
+                } = e,
+                u = o === void 0 ? `list` : o,
+                d = s !== void 0 && s,
+                [f, p] = (0, M.useState)(u),
+                m, h;
+            t[0] === u ? (m = t[1], h = t[2]) : (m = () => {
+                p(u)
+            }, h = [u], t[0] = u, t[1] = m, t[2] = h), (0, M.useEffect)(m, h);
+            let g;
+            t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (g = e => {
+                p(e)
+            }, t[3] = g) : g = t[3];
+            let _ = g,
+                v;
+            t[4] !== a || t[5] !== c || t[6] !== f || t[7] !== d ? (v = {
+                closeLabel: a,
+                pane: f,
+                pendingAction: d,
+                showPane: _,
+                onClose: c
+            }, t[4] = a, t[5] = c, t[6] = f, t[7] = d, t[8] = v) : v = t[8];
+            let y;
+            t[9] === i ? y = t[10] : (y = n(k.SplitModal, i), t[9] = i, t[10] = y);
+            let b;
+            t[11] !== r || t[12] !== f || t[13] !== l || t[14] !== y ? (b = (0, N.jsx)(`div`, {
+                className: y,
+                "data-mobile-pane": f,
+                role: `presentation`,
+                style: l,
+                children: r
+            }), t[11] = r, t[12] = f, t[13] = l, t[14] = y, t[15] = b) : b = t[15];
+            let x;
+            return t[16] !== v || t[17] !== b ? (x = (0, N.jsx)(P, {
+                value: v,
+                children: b
+            }), t[16] = v, t[17] = b, t[18] = x) : x = t[18], x
+        }, L = e => {
+            "use forget";
+            let t = (0, j.c)(2),
+                {
+                    children: n
+                } = e,
+                r;
+            return t[0] === n ? r = t[1] : (r = (0, N.jsx)(`div`, {
+                className: k.SidebarPane,
+                children: n
+            }), t[0] = n, t[1] = r), r
+        }, R = e => {
+            "use forget";
+            let t = (0, j.c)(26),
+                {
+                    children: n
+                } = e,
+                {
+                    closeLabel: r,
+                    pendingAction: i,
+                    showPane: o,
+                    onClose: s
+                } = F(),
+                c;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, N.jsx)(v, {}), t[0] = c) : c = t[0];
+            let d;
+            t[1] !== r || t[2] !== s || t[3] !== i ? (d = (0, N.jsx)(`div`, {
+                className: k.DesktopCloseButton,
+                children: (0, N.jsx)(u, {
+                    "aria-label": r,
+                    color: `primary`,
+                    iconSize: `lg`,
+                    size: `lg`,
+                    uniform: !0,
+                    variant: `ghost`,
+                    disabled: i,
+                    onClick: s,
+                    children: c
+                })
+            }), t[1] = r, t[2] = s, t[3] = i, t[4] = d) : d = t[4];
+            let p;
+            t[5] === o ? p = t[6] : (p = () => {
+                o(`list`)
+            }, t[5] = o, t[6] = p);
+            let m, g;
+            t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, N.jsx)(l, {}), g = (0, N.jsx)(a, {
+                ...h.back
+            }), t[7] = m, t[8] = g) : (m = t[7], g = t[8]);
+            let _;
+            t[9] !== i || t[10] !== p ? (_ = (0, N.jsxs)(u, {
+                color: `secondary`,
+                size: `sm`,
+                variant: `ghost`,
+                disabled: i,
+                onClick: p,
+                children: [m, g]
+            }), t[9] = i, t[10] = p, t[11] = _) : _ = t[11];
+            let y;
+            t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, N.jsx)(f, {}), t[12] = y) : y = t[12];
+            let b;
+            t[13] !== r || t[14] !== s || t[15] !== i ? (b = (0, N.jsx)(u, {
+                "aria-label": r,
+                color: `secondary`,
+                iconSize: `md`,
+                size: `sm`,
+                uniform: !0,
+                variant: `ghost`,
+                disabled: i,
+                onClick: s,
+                children: y
+            }), t[13] = r, t[14] = s, t[15] = i, t[16] = b) : b = t[16];
+            let x;
+            t[17] !== _ || t[18] !== b ? (x = (0, N.jsxs)(`div`, {
+                className: k.MobileTopBar,
+                children: [_, b]
+            }), t[17] = _, t[18] = b, t[19] = x) : x = t[19];
+            let S;
+            t[20] === n ? S = t[21] : (S = (0, N.jsx)(`div`, {
+                className: `flex h-full min-h-0 w-full`,
+                children: n
+            }), t[20] = n, t[21] = S);
+            let C;
+            return t[22] !== S || t[23] !== d || t[24] !== x ? (C = (0, N.jsxs)(`div`, {
+                className: k.MainPane,
+                children: [d, x, S]
+            }), t[22] = S, t[23] = d, t[24] = x, t[25] = C) : C = t[25], C
+        }, z = e => {
+            "use forget";
+            let t = (0, j.c)(24),
+                {
+                    ariaLabel: n,
+                    clearLabel: r,
+                    disabled: i,
+                    name: a,
+                    placeholder: o,
+                    value: s,
+                    onChange: c
+                } = e,
+                l = i !== void 0 && i,
+                {
+                    pendingAction: d
+                } = F(),
+                f = (0, M.useId)(),
+                p = l || d,
+                m = p ? `` : void 0,
+                h;
+            t[0] !== n || t[1] !== f ? (h = (0, N.jsx)(`label`, {
+                htmlFor: f,
+                className: `sr-only`,
+                children: n
+            }), t[0] = n, t[1] = f, t[2] = h) : h = t[2];
+            let _;
+            t[3] === c ? _ = t[4] : (_ = e => {
+                c(e.target.value)
+            }, t[3] = c, t[4] = _);
+            let y;
+            t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, N.jsx)(b, {
+                className: `text-tertiary size-5`
+            }), t[5] = y) : y = t[5];
+            let x;
+            t[6] !== r || t[7] !== p || t[8] !== c || t[9] !== s ? (x = s ? (0, N.jsx)(u, {
+                className: k.SearchClearButton,
+                color: `secondary`,
+                variant: `ghost`,
+                uniform: !0,
+                size: `3xs`,
+                disabled: p,
+                onClick: () => {
+                    c(``)
+                },
+                "aria-label": r,
+                children: (0, N.jsx)(v, {})
+            }) : void 0, t[6] = r, t[7] = p, t[8] = c, t[9] = s, t[10] = x) : x = t[10];
+            let S;
+            t[11] !== n || t[12] !== p || t[13] !== a || t[14] !== o || t[15] !== f || t[16] !== _ || t[17] !== x || t[18] !== s ? (S = (0, N.jsx)(g, {
+                id: f,
+                "aria-label": n,
+                className: `rounded-lg px-2.5`,
+                disabled: p,
+                name: a,
+                value: s,
+                onChange: _,
+                placeholder: o,
+                size: `lg`,
+                startAdornment: y,
+                endAdornment: x
+            }), t[11] = n, t[12] = p, t[13] = a, t[14] = o, t[15] = f, t[16] = _, t[17] = x, t[18] = s, t[19] = S) : S = t[19];
+            let C;
+            return t[20] !== m || t[21] !== h || t[22] !== S ? (C = (0, N.jsxs)(`div`, {
+                className: k.SearchField,
+                "data-disabled": m,
+                children: [h, S]
+            }), t[20] = m, t[21] = h, t[22] = S, t[23] = C) : C = t[23], C
+        }, B = e => {
+            "use forget";
+            let t = (0, j.c)(15),
+                {
+                    children: n,
+                    disabled: r,
+                    endAdornment: i,
+                    icon: a,
+                    selected: o,
+                    onClick: s
+                } = e,
+                c = o !== void 0 && o,
+                {
+                    pendingAction: l
+                } = F(),
+                u = r || l,
+                d;
+            t[0] === a ? d = t[1] : (d = a && (0, N.jsx)(`span`, {
+                className: `inline-flex size-5 shrink-0 items-center justify-center`,
+                "aria-hidden": !0,
+                children: a
+            }), t[0] = a, t[1] = d);
+            let f;
+            t[2] === n ? f = t[3] : (f = (0, N.jsx)(`span`, {
+                className: `min-w-0 flex-1 truncate text-start`,
+                children: n
+            }), t[2] = n, t[3] = f);
+            let p;
+            t[4] !== i || t[5] !== d || t[6] !== f ? (p = (0, N.jsxs)(N.Fragment, {
+                children: [d, f, i]
+            }), t[4] = i, t[5] = d, t[6] = f, t[7] = p) : p = t[7];
+            let m = p;
+            if (s == null) {
+                let e;
+                return t[8] === m ? e = t[9] : (e = (0, N.jsx)(`div`, {
+                    className: k.Item,
+                    "data-static": !0,
+                    children: m
+                }), t[8] = m, t[9] = e), e
+            }
+            let h = c ? `` : void 0,
+                g;
+            return t[10] !== u || t[11] !== s || t[12] !== m || t[13] !== h ? (g = (0, N.jsx)(`button`, {
+                type: `button`,
+                className: k.Item,
+                "data-selected": h,
+                disabled: u,
+                onClick: s,
+                children: m
+            }), t[10] = u, t[11] = s, t[12] = m, t[13] = h, t[14] = g) : g = t[14], g
+        }, I.View = R, I.Sidebar = L, I.SidebarItem = B, I.SidebarSearch = z
+    }));
+export {
+    V as n, F as r, I as t
+};
+//# sourceMappingURL=b162dc0f-ngr427yijq0064jj.js.map

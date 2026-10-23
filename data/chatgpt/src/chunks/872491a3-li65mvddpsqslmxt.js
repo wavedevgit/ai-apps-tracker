@@ -1,0 +1,1702 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Hh as t,
+    Hk as n,
+    K5 as r,
+    Lit as i,
+    Rit as a,
+    Rk as o,
+    Uh as s,
+    aa as c,
+    oa as l,
+    q5 as u
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as d,
+    Ln as f,
+    Rn as p,
+    wn as m
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    BKn as ee,
+    HKn as h
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    $l as te,
+    Cb as g,
+    Cu as _,
+    Nx as v,
+    Px as y,
+    Qh as ne,
+    Ql as re,
+    Su as ie,
+    Tu as ae,
+    Xl as oe,
+    Zh as se,
+    Zl as ce,
+    _u as le,
+    au as ue,
+    bu as de,
+    cg as fe,
+    cu as pe,
+    du as me,
+    eS as he,
+    eu as ge,
+    fu as _e,
+    gS as ve,
+    gu as ye,
+    hS as be,
+    ig as xe,
+    iu as Se,
+    lu as Ce,
+    mu as we,
+    nu as Te,
+    ou as Ee,
+    pu as De,
+    rg as Oe,
+    ru as ke,
+    sg as Ae,
+    su as je,
+    tS as Me,
+    tu as Ne,
+    uu as Pe,
+    vu as Fe,
+    wb as Ie,
+    xu as Le,
+    yu as Re
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    A as ze,
+    D as Be,
+    G as Ve,
+    Gp as He,
+    M as Ue,
+    O as We,
+    U as Ge,
+    Up as Ke,
+    W as qe,
+    Wp as Je,
+    ad as Ye,
+    ct as Xe,
+    dn as Ze,
+    fn as Qe,
+    rd as $e,
+    st as et,
+    un as tt
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    _ as nt,
+    a as rt,
+    c as it,
+    d as at,
+    f as b,
+    g as ot,
+    h as st,
+    i as ct,
+    l as lt,
+    m as ut,
+    n as dt,
+    o as ft,
+    p as pt,
+    r as mt,
+    s as ht,
+    t as gt,
+    u as _t,
+    v as x
+} from "./04ce686a-cz56s0xvt00wldcp.js";
+
+function vt(e) {
+    "use forget";
+    let t = (0, yt.c)(19),
+        {
+            description: n,
+            title: r
+        } = e,
+        i;
+    t[0] === r ? i = t[1] : (i = (0, S.jsx)(`title`, {
+        children: r
+    }), t[0] = r, t[1] = i);
+    let a;
+    t[2] === n ? a = t[3] : (a = (0, S.jsx)(`meta`, {
+        name: `description`,
+        content: n
+    }), t[2] = n, t[3] = a);
+    let o;
+    t[4] === r ? o = t[5] : (o = (0, S.jsx)(`meta`, {
+        property: `og:title`,
+        content: r
+    }), t[4] = r, t[5] = o);
+    let s;
+    t[6] === n ? s = t[7] : (s = (0, S.jsx)(`meta`, {
+        property: `og:description`,
+        content: n
+    }), t[6] = n, t[7] = s);
+    let c;
+    t[8] === r ? c = t[9] : (c = (0, S.jsx)(`meta`, {
+        name: `twitter:title`,
+        content: r
+    }), t[8] = r, t[9] = c);
+    let l;
+    t[10] === n ? l = t[11] : (l = (0, S.jsx)(`meta`, {
+        name: `twitter:description`,
+        content: n
+    }), t[10] = n, t[11] = l);
+    let u;
+    return t[12] !== i || t[13] !== a || t[14] !== o || t[15] !== s || t[16] !== c || t[17] !== l ? (u = (0, S.jsxs)(`head`, {
+        children: [i, a, o, s, c, l]
+    }), t[12] = i, t[13] = a, t[14] = o, t[15] = s, t[16] = c, t[17] = l, t[18] = u) : u = t[18], u
+}
+var yt, S, bt = e((() => {
+    yt = m(), S = d()
+}));
+
+function xt(e) {
+    "use forget";
+    let t = (0, Ct.c)(11),
+        {
+            conversation: n,
+            desktopContent: r
+        } = e,
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, C.jsx)(`div`, {
+        className: `md:hidden`,
+        children: (0, C.jsx)(Je, {})
+    }), t[0] = i) : i = t[0];
+    let a;
+    t[1] === n ? a = t[2] : (a = (0, C.jsx)(`div`, {
+        className: `ms-1 min-w-0 md:hidden`,
+        children: (0, C.jsx)(et, {
+            conversation: n
+        })
+    }), t[1] = n, t[2] = a);
+    let o;
+    t[3] === r ? o = t[4] : (o = (0, C.jsx)(`div`, {
+        className: `hidden min-w-0 overflow-hidden md:block`,
+        children: r
+    }), t[3] = r, t[4] = o);
+    let s;
+    t[5] !== a || t[6] !== o ? (s = (0, C.jsxs)(`div`, {
+        className: `flex min-w-0 flex-1 items-center md:ps-2.5`,
+        children: [i, a, o]
+    }), t[5] = a, t[6] = o, t[7] = s) : s = t[7];
+    let c;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, C.jsx)(`div`, {
+        className: `flex shrink-0 items-center`,
+        children: (0, C.jsx)($e, {})
+    }), t[8] = c) : c = t[8];
+    let l;
+    return t[9] === s ? l = t[10] : (l = (0, C.jsxs)(ze, {
+        id: `page-header`,
+        shouldStickSnorlaxNewThread: !1,
+        shouldDisableTransition: !0,
+        className: `gap-4 print:hidden`,
+        children: [s, c]
+    }), t[9] = s, t[10] = l), l
+}
+
+function St(e) {
+    "use forget";
+    let t = (0, Ct.c)(21),
+        {
+            children: n,
+            conversation: i,
+            headerContent: s,
+            hideMobileFooter: c,
+            mobileHeaderContent: l
+        } = e,
+        u = c !== void 0 && c,
+        d;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = o(), t[0] = d) : d = t[0];
+    let f = d,
+        p;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, C.jsx)(ee.Navbar, {
+        children: (0, C.jsx)(Ke, {
+            children: (0, C.jsx)(Be, {
+                navHeader: (0, C.jsx)(Ge, {}),
+                children: (0, C.jsx)(qe, {
+                    isProjectsEnabled: f
+                })
+            })
+        })
+    }), t[1] = p) : p = t[1];
+    let m;
+    t[2] !== i || t[3] !== s ? (m = (0, C.jsx)(ee.Header, {
+        children: (0, C.jsx)(xt, {
+            conversation: i,
+            desktopContent: s
+        })
+    }), t[2] = i, t[3] = s, t[4] = m) : m = t[4];
+    let h;
+    t[5] === l ? h = t[6] : (h = l != null && (0, C.jsx)(`div`, {
+        className: `mx-auto w-full max-w-4xl px-5 pt-1 md:hidden`,
+        children: l
+    }), t[5] = l, t[6] = h);
+    let te = u && `hidden @w-md/main:block`,
+        g;
+    t[7] === te ? g = t[8] : (g = r(`@w-md/main:max-w-3xl mx-auto mt-auto px-2 pb-3 text-center`, te), t[7] = te, t[8] = g);
+    let _;
+    t[9] === i ? _ = t[10] : (_ = a() ? (0, C.jsx)(tt, {
+        conversation: i
+    }) : (0, C.jsx)(Ze, {
+        variant: `homepageTerms`
+    }), t[9] = i, t[10] = _);
+    let v;
+    t[11] !== g || t[12] !== _ ? (v = (0, C.jsx)(`footer`, {
+        className: g,
+        children: _
+    }), t[11] = g, t[12] = _, t[13] = v) : v = t[13];
+    let y;
+    t[14] !== n || t[15] !== h || t[16] !== v ? (y = (0, C.jsxs)(`div`, {
+        className: `flex min-h-full flex-col`,
+        children: [h, n, v]
+    }), t[14] = n, t[15] = h, t[16] = v, t[17] = y) : y = t[17];
+    let ne;
+    return t[18] !== y || t[19] !== m ? (ne = (0, C.jsxs)(ee, {
+        children: [p, m, y]
+    }), t[18] = y, t[19] = m, t[20] = ne) : ne = t[20], ne
+}
+var Ct, C, wt = e((() => {
+        Ct = m(), Ve(), Ye(), We(), n(), h(), He(), Ue(), Qe(), Xe(), i(), u(), C = d()
+    })),
+    Tt, Et, Dt = e((() => {
+        x(), p(), Tt = f({
+            title: {
+                id: `writing-tools.examples.change-tone.title`,
+                defaultMessage: `Change the tone`
+            },
+            preview: {
+                id: `writing-tools.examples.change-tone.preview`,
+                defaultMessage: `Adjust tone to match the audience or situation.`
+            },
+            prompt: {
+                id: `writing-tools.examples.change-tone.prompt`,
+                defaultMessage: `Adjust the tone of this writing for the right audience and situation.`
+            }
+        }), Et = {
+            icon: b,
+            h1: Tt.title,
+            h2: Tt.preview,
+            composerPrompt: Tt.prompt
+        }
+    })),
+    Ot, kt, At = e((() => {
+        x(), p(), Ot = f({
+            title: {
+                id: `writing-tools.examples.check-for-ai.title`,
+                defaultMessage: `Check for AI`
+            },
+            preview: {
+                id: `writing-tools.examples.check-for-ai.preview`,
+                defaultMessage: `Analyze text for AI-generated patterns.`
+            },
+            prompt: {
+                id: `writing-tools.examples.check-for-ai.prompt`,
+                defaultMessage: `Check whether this text sounds like it was written by AI.`
+            }
+        }), kt = {
+            icon: _t,
+            h1: Ot.title,
+            h2: Ot.preview,
+            composerPrompt: Ot.prompt
+        }
+    })),
+    jt, Mt, Nt = e((() => {
+        x(), p(), jt = f({
+            title: {
+                id: `writing-tools.examples.check-originality.title`,
+                defaultMessage: `Check originality`
+            },
+            preview: {
+                id: `writing-tools.examples.check-originality.preview`,
+                defaultMessage: `Find passages that may need rewriting or attribution.`
+            },
+            prompt: {
+                id: `writing-tools.examples.check-originality.prompt`,
+                defaultMessage: `Check this text for originality and find passages that may need rewriting or attribution.`
+            }
+        }), Mt = {
+            icon: ot,
+            h1: jt.title,
+            h2: jt.preview,
+            composerPrompt: jt.prompt
+        }
+    })),
+    Pt, w, Ft = e((() => {
+        x(), p(), Pt = f({
+            title: {
+                id: `writing-tools.examples.fix-grammar.title`,
+                defaultMessage: `Fix grammar`
+            },
+            preview: {
+                id: `writing-tools.examples.fix-grammar.preview`,
+                defaultMessage: `Correct grammar, spelling, and punctuation errors.`
+            },
+            prompt: {
+                id: `writing-tools.examples.fix-grammar.prompt`,
+                defaultMessage: `Correct the grammar, spelling, and punctuation errors in this writing.`
+            }
+        }), w = {
+            icon: rt,
+            h1: Pt.title,
+            h2: Pt.preview,
+            composerPrompt: Pt.prompt
+        }
+    })),
+    It, T, Lt = e((() => {
+        x(), p(), It = f({
+            title: {
+                id: `writing-tools.examples.improve-clarity.title`,
+                defaultMessage: `Improve clarity`
+            },
+            preview: {
+                id: `writing-tools.examples.improve-clarity.preview`,
+                defaultMessage: `Make writing easier to understand and read.`
+            },
+            prompt: {
+                id: `writing-tools.examples.improve-clarity.prompt`,
+                defaultMessage: `Improve the clarity of this text and make it easier to understand and read.`
+            }
+        }), T = {
+            icon: lt,
+            h1: It.title,
+            h2: It.preview,
+            composerPrompt: It.prompt
+        }
+    })),
+    Rt, zt, Bt = e((() => {
+        x(), p(), Rt = f({
+            title: {
+                id: `writing-tools.examples.make-it-original.title`,
+                defaultMessage: `Make it original`
+            },
+            preview: {
+                id: `writing-tools.examples.make-it-original.preview`,
+                defaultMessage: `Revise writing to sound unique and authentic.`
+            },
+            prompt: {
+                id: `writing-tools.examples.make-it-original.prompt`,
+                defaultMessage: `Make this text sound more original, unique, and authentic.`
+            }
+        }), zt = {
+            icon: ut,
+            h1: Rt.title,
+            h2: Rt.preview,
+            composerPrompt: Rt.prompt
+        }
+    })),
+    Vt, Ht, Ut = e((() => {
+        x(), p(), Vt = f({
+            title: {
+                id: `writing-tools.examples.make-it-skimmable.title`,
+                defaultMessage: `Make it skimmable`
+            },
+            preview: {
+                id: `writing-tools.examples.make-it-skimmable.preview`,
+                defaultMessage: `Add headings, bullets, and structure.`
+            },
+            prompt: {
+                id: `writing-tools.examples.make-it-skimmable.prompt`,
+                defaultMessage: `Add headings, bullets, and structure to make this text easier to skim.`
+            }
+        }), Ht = {
+            icon: mt,
+            h1: Vt.title,
+            h2: Vt.preview,
+            composerPrompt: Vt.prompt
+        }
+    })),
+    Wt, E, Gt = e((() => {
+        x(), p(), Wt = f({
+            title: {
+                id: `writing-tools.examples.polish-writing.title`,
+                defaultMessage: `Polish writing`
+            },
+            preview: {
+                id: `writing-tools.examples.polish-writing.preview`,
+                defaultMessage: `Smooth grammar, flow, and word choice.`
+            },
+            prompt: {
+                id: `writing-tools.examples.polish-writing.prompt`,
+                defaultMessage: `Make this writing more polished and improve the grammar, flow, and word choice.`
+            }
+        }), E = {
+            icon: b,
+            h1: Wt.title,
+            h2: Wt.preview,
+            composerPrompt: Wt.prompt
+        }
+    })),
+    Kt, D, qt = e((() => {
+        x(), p(), Kt = f({
+            title: {
+                id: `writing-tools.examples.reduce-ai-tone.title`,
+                defaultMessage: `Reduce AI tone`
+            },
+            preview: {
+                id: `writing-tools.examples.reduce-ai-tone.preview`,
+                defaultMessage: `Rewrite the text to sound more natural and human.`
+            },
+            prompt: {
+                id: `writing-tools.examples.reduce-ai-tone.prompt`,
+                defaultMessage: `Reduce the AI tone in this text and make it sound more natural and human.`
+            }
+        }), D = {
+            icon: ht,
+            h1: Kt.title,
+            h2: Kt.preview,
+            composerPrompt: Kt.prompt
+        }
+    })),
+    Jt, O, Yt = e((() => {
+        x(), p(), Jt = f({
+            title: {
+                id: `writing-tools.examples.shorten-text.title`,
+                defaultMessage: `Shorten text`
+            },
+            preview: {
+                id: `writing-tools.examples.shorten-text.preview`,
+                defaultMessage: `Edit writing to be more concise.`
+            },
+            prompt: {
+                id: `writing-tools.examples.shorten-text.prompt`,
+                defaultMessage: `Shorten this text and make it more concise.`
+            }
+        }), O = {
+            icon: ct,
+            h1: Jt.title,
+            h2: Jt.preview,
+            composerPrompt: Jt.prompt
+        }
+    })),
+    Xt, Zt = e((() => {
+        x(), p(), Xt = f({
+            title: {
+                id: `writing-tools.examples.soften-tone.title`,
+                defaultMessage: `Soften the tone`
+            },
+            preview: {
+                id: `writing-tools.examples.soften-tone.preview`,
+                defaultMessage: `Make writing sound warmer and friendlier.`
+            },
+            prompt: {
+                id: `writing-tools.examples.soften-tone.prompt`,
+                defaultMessage: `Rewrite this text with a softer, friendlier tone.`
+            }
+        }), Xt.title, Xt.preview, Xt.prompt
+    })),
+    Qt, $t = e((() => {
+        x(), p(), Qt = f({
+            title: {
+                id: `writing-tools.examples.summarize-text.title`,
+                defaultMessage: `Summarize text`
+            },
+            preview: {
+                id: `writing-tools.examples.summarize-text.preview`,
+                defaultMessage: `Pull out the main points in a shorter version.`
+            },
+            prompt: {
+                id: `writing-tools.examples.summarize-text.prompt`,
+                defaultMessage: `Create a concise summary of this text with the main points.`
+            }
+        }), Qt.title, Qt.preview, Qt.prompt
+    })),
+    en, tn, nn = e((() => {
+        x(), p(), en = f({
+            title: {
+                id: `writing-tools.examples.turn-notes-into-writing.title`,
+                defaultMessage: `Turn notes into writing`
+            },
+            preview: {
+                id: `writing-tools.examples.turn-notes-into-writing.preview`,
+                defaultMessage: `Convert rough notes into a clear draft.`
+            },
+            prompt: {
+                id: `writing-tools.examples.turn-notes-into-writing.prompt`,
+                defaultMessage: `Turn these notes into a clear, polished draft.`
+            }
+        }), tn = {
+            icon: at,
+            h1: en.title,
+            h2: en.preview,
+            composerPrompt: en.prompt
+        }
+    })),
+    k = e((() => {
+        Dt(), At(), Nt(), Ft(), Lt(), Bt(), Ut(), Gt(), qt(), Yt(), Zt(), $t(), nn()
+    })),
+    A, rn, an = e((() => {
+        x(), k(), p(), A = f({
+            title: {
+                id: `writing-tools.ai-detector.title`,
+                defaultMessage: `AI detector`
+            },
+            subtitle: {
+                id: `writing-tools.ai-detector.subtitle`,
+                defaultMessage: `Analyze writing for AI-generated patterns.`
+            },
+            seoTitle: {
+                id: `writing-tools.ai-detector.seo-title`,
+                defaultMessage: `AI Detector by ChatGPT | Check for AI-Generated Writing`
+            },
+            seoDescription: {
+                id: `writing-tools.ai-detector.seo-description`,
+                defaultMessage: `Check writing for AI-generated patterns with ChatGPT. Analyze your text and get help understanding whether it may read like AI-written content.`
+            },
+            placeholder: {
+                id: `writing-tools.ai-detector.placeholder`,
+                defaultMessage: `Enter your text to check for AI`
+            },
+            promptTemplate: {
+                id: `writing-tools.ai-detector.prompt-template`,
+                defaultMessage: `Check this text for AI-generated patterns.`
+            }
+        }), rn = {
+            slug: `ai-detector`,
+            icon: rt,
+            h1: A.title,
+            h2: A.subtitle,
+            seoTitle: A.seoTitle,
+            seoDescription: A.seoDescription,
+            composerPlaceholder: A.placeholder,
+            composerPromptTemplate: A.promptTemplate,
+            starterPromptCards: [D, zt, E]
+        }
+    })),
+    j, on, sn = e((() => {
+        x(), k(), p(), j = f({
+            title: {
+                id: `writing-tools.ai-humanizer.title`,
+                defaultMessage: `AI humanizer`
+            },
+            subtitle: {
+                id: `writing-tools.ai-humanizer.subtitle`,
+                defaultMessage: `Make AI writing sound more natural.`
+            },
+            seoTitle: {
+                id: `writing-tools.ai-humanizer.seo-title`,
+                defaultMessage: `AI Humanizer by ChatGPT | Make AI Writing Sound Natural`
+            },
+            seoDescription: {
+                id: `writing-tools.ai-humanizer.seo-description`,
+                defaultMessage: `Make AI writing sound more natural with ChatGPT. Enter your text to humanize AI-generated writing and improve tone, flow, and readability.`
+            },
+            placeholder: {
+                id: `writing-tools.ai-humanizer.placeholder`,
+                defaultMessage: `Enter your text to make it sound more human`
+            },
+            promptTemplate: {
+                id: `writing-tools.ai-humanizer.prompt-template`,
+                defaultMessage: `Make this AI-written text sound more natural and human.`
+            }
+        }), on = {
+            slug: `ai-humanizer`,
+            icon: it,
+            h1: j.title,
+            h2: j.subtitle,
+            seoTitle: j.seoTitle,
+            seoDescription: j.seoDescription,
+            composerPlaceholder: j.placeholder,
+            composerPromptTemplate: j.promptTemplate,
+            starterPromptCards: [O, T, zt]
+        }
+    }));
+
+function M(e, t, n, r = t) {
+    return {
+        id: e,
+        icon: n,
+        label: t,
+        promptValue: r
+    }
+}
+var N, cn, ln, un, dn, fn, pn, mn, hn, gn, _n, vn, yn, bn, xn, Sn, Cn, wn, Tn, En, Dn, On, kn, P = e((() => {
+        ve(), ae(), Ie(), ie(), l(), de(), s(), Fe(), ye(), Oe(), he(), _e(), Pe(), v(), pe(), Ee(), Se(), Te(), ge(), re(), oe(), se(), Ae(), p(), N = f({
+            formatControlLabel: {
+                id: `writing-tools.prompt-controls.format.label`,
+                defaultMessage: `Format`
+            },
+            toneControlLabel: {
+                id: `writing-tools.prompt-controls.tone.label`,
+                defaultMessage: `Tone`
+            },
+            lengthControlLabel: {
+                id: `writing-tools.prompt-controls.length.label`,
+                defaultMessage: `Length`
+            },
+            styleControlLabel: {
+                id: `writing-tools.prompt-controls.style.label`,
+                defaultMessage: `Style`
+            },
+            sourceControlLabel: {
+                id: `writing-tools.prompt-controls.source.label`,
+                defaultMessage: `Source`
+            },
+            formatText: {
+                id: `writing-tools.prompt-controls.format.option.text`,
+                defaultMessage: `Text`
+            },
+            formatEmail: {
+                id: `writing-tools.prompt-controls.format.option.email`,
+                defaultMessage: `Email`
+            },
+            formatResume: {
+                id: `writing-tools.prompt-controls.format.option.resume`,
+                defaultMessage: `Resume`
+            },
+            formatAcademicWriting: {
+                id: `writing-tools.prompt-controls.format.option.academic-writing`,
+                defaultMessage: `Academic writing`
+            },
+            formatSocialPost: {
+                id: `writing-tools.prompt-controls.format.option.social-post`,
+                defaultMessage: `Social post`
+            },
+            formatDirectMessage: {
+                id: `writing-tools.prompt-controls.format.option.direct-message`,
+                defaultMessage: `Direct message`
+            },
+            formatCaption: {
+                id: `writing-tools.prompt-controls.format.option.caption`,
+                defaultMessage: `Caption`
+            },
+            article: {
+                id: `writing-tools.prompt-controls.option.article`,
+                defaultMessage: `Article`
+            },
+            formatTextPromptValue: {
+                id: `writing-tools.prompt-controls.format.option.text.prompt-value`,
+                defaultMessage: `text`
+            },
+            aiTextGeneratorFormatTextPromptValue: {
+                id: `writing-tools.prompt-controls.format.option.text.ai-text-generator-prompt-value`,
+                defaultMessage: `a text`
+            },
+            formatEmailPromptValue: {
+                id: `writing-tools.prompt-controls.format.option.email.prompt-value`,
+                defaultMessage: `an email`
+            },
+            paraphraseFormatEmailPromptValue: {
+                id: `writing-tools.prompt-controls.format.option.email.paraphrase-prompt-value`,
+                defaultMessage: `email`
+            },
+            paraphraseFormatResumePromptValue: {
+                id: `writing-tools.prompt-controls.format.option.resume.paraphrase-prompt-value`,
+                defaultMessage: `resume`
+            },
+            formatAcademicWritingPromptValue: {
+                id: `writing-tools.prompt-controls.format.option.academic-writing.prompt-value`,
+                defaultMessage: `academic writing`
+            },
+            formatSocialPostPromptValue: {
+                id: `writing-tools.prompt-controls.format.option.social-post.prompt-value`,
+                defaultMessage: `a social post`
+            },
+            paraphraseFormatSocialPostPromptValue: {
+                id: `writing-tools.prompt-controls.format.option.social-post.paraphrase-prompt-value`,
+                defaultMessage: `social post`
+            },
+            paraphraseFormatDirectMessagePromptValue: {
+                id: `writing-tools.prompt-controls.format.option.direct-message.paraphrase-prompt-value`,
+                defaultMessage: `direct message`
+            },
+            formatCaptionPromptValue: {
+                id: `writing-tools.prompt-controls.format.option.caption.prompt-value`,
+                defaultMessage: `a caption`
+            },
+            articlePromptValue: {
+                id: `writing-tools.prompt-controls.option.article.prompt-value`,
+                defaultMessage: `an article`
+            },
+            toneFriendly: {
+                id: `writing-tools.prompt-controls.tone.option.friendly`,
+                defaultMessage: `Friendly`
+            },
+            toneFriendlyPromptValue: {
+                id: `writing-tools.prompt-controls.tone.option.friendly.prompt-value`,
+                defaultMessage: `friendly`
+            },
+            toneNeutral: {
+                id: `writing-tools.prompt-controls.tone.option.neutral`,
+                defaultMessage: `Neutral`
+            },
+            toneNeutralPromptValue: {
+                id: `writing-tools.prompt-controls.tone.option.neutral.prompt-value`,
+                defaultMessage: `neutral`
+            },
+            toneProfessional: {
+                id: `writing-tools.prompt-controls.tone.option.professional`,
+                defaultMessage: `Professional`
+            },
+            toneProfessionalPromptValue: {
+                id: `writing-tools.prompt-controls.tone.option.professional.prompt-value`,
+                defaultMessage: `professional`
+            },
+            toneNatural: {
+                id: `writing-tools.prompt-controls.tone.option.natural`,
+                defaultMessage: `Natural`
+            },
+            toneNaturalPromptValue: {
+                id: `writing-tools.prompt-controls.tone.option.natural.prompt-value`,
+                defaultMessage: `natural`
+            },
+            toneConcise: {
+                id: `writing-tools.prompt-controls.tone.option.concise`,
+                defaultMessage: `Concise`
+            },
+            toneConcisePromptValue: {
+                id: `writing-tools.prompt-controls.tone.option.concise.prompt-value`,
+                defaultMessage: `concise`
+            },
+            toneKind: {
+                id: `writing-tools.prompt-controls.tone.option.kind`,
+                defaultMessage: `Kind`
+            },
+            toneKindPromptValue: {
+                id: `writing-tools.prompt-controls.tone.option.kind.prompt-value`,
+                defaultMessage: `kind`
+            },
+            toneCasual: {
+                id: `writing-tools.prompt-controls.tone.option.casual`,
+                defaultMessage: `Casual`
+            },
+            toneCasualPromptValue: {
+                id: `writing-tools.prompt-controls.tone.option.casual.prompt-value`,
+                defaultMessage: `casual`
+            },
+            lengthSame: {
+                id: `writing-tools.prompt-controls.length.option.same`,
+                defaultMessage: `The same length`
+            },
+            lengthSamePromptValue: {
+                id: `writing-tools.prompt-controls.length.option.same.prompt-value`,
+                defaultMessage: `the same length`
+            },
+            lengthShorter: {
+                id: `writing-tools.prompt-controls.length.option.shorter`,
+                defaultMessage: `Shorter`
+            },
+            lengthShorterPromptValue: {
+                id: `writing-tools.prompt-controls.length.option.shorter.prompt-value`,
+                defaultMessage: `shorter`
+            },
+            lengthLonger: {
+                id: `writing-tools.prompt-controls.length.option.longer`,
+                defaultMessage: `Longer`
+            },
+            lengthLongerPromptValue: {
+                id: `writing-tools.prompt-controls.length.option.longer.prompt-value`,
+                defaultMessage: `longer`
+            },
+            lengthNovel: {
+                id: `writing-tools.prompt-controls.length.option.novel`,
+                defaultMessage: `A novel`
+            },
+            lengthNovelPromptValue: {
+                id: `writing-tools.prompt-controls.length.option.novel.prompt-value`,
+                defaultMessage: `a novel`
+            },
+            lengthBrief: {
+                id: `writing-tools.prompt-controls.length.option.brief`,
+                defaultMessage: `Brief`
+            },
+            lengthBriefPromptValue: {
+                id: `writing-tools.prompt-controls.length.option.brief.prompt-value`,
+                defaultMessage: `brief`
+            },
+            lengthStandard: {
+                id: `writing-tools.prompt-controls.length.option.standard`,
+                defaultMessage: `Standard`
+            },
+            lengthStandardPromptValue: {
+                id: `writing-tools.prompt-controls.length.option.standard.prompt-value`,
+                defaultMessage: `standard`
+            },
+            lengthDetailed: {
+                id: `writing-tools.prompt-controls.length.option.detailed`,
+                defaultMessage: `Detailed`
+            },
+            lengthDetailedPromptValue: {
+                id: `writing-tools.prompt-controls.length.option.detailed.prompt-value`,
+                defaultMessage: `detailed`
+            },
+            lengthComprehensive: {
+                id: `writing-tools.prompt-controls.length.option.comprehensive`,
+                defaultMessage: `Comprehensive`
+            },
+            lengthComprehensivePromptValue: {
+                id: `writing-tools.prompt-controls.length.option.comprehensive.prompt-value`,
+                defaultMessage: `comprehensive`
+            },
+            styleApa7: {
+                id: `writing-tools.prompt-controls.style.option.apa-7`,
+                defaultMessage: `APA 7`
+            },
+            styleApa6: {
+                id: `writing-tools.prompt-controls.style.option.apa-6`,
+                defaultMessage: `APA 6`
+            },
+            styleMla9: {
+                id: `writing-tools.prompt-controls.style.option.mla-9`,
+                defaultMessage: `MLA 9`
+            },
+            styleMla8: {
+                id: `writing-tools.prompt-controls.style.option.mla-8`,
+                defaultMessage: `MLA 8`
+            },
+            sourceUrl: {
+                id: `writing-tools.prompt-controls.source.option.url`,
+                defaultMessage: `URL`
+            },
+            sourceDoi: {
+                id: `writing-tools.prompt-controls.source.option.doi`,
+                defaultMessage: `DOI`
+            },
+            sourceBook: {
+                id: `writing-tools.prompt-controls.source.option.book`,
+                defaultMessage: `Book`
+            },
+            sourceVideo: {
+                id: `writing-tools.prompt-controls.source.option.video`,
+                defaultMessage: `Video`
+            },
+            sourceOther: {
+                id: `writing-tools.prompt-controls.source.option.other`,
+                defaultMessage: `Other source`
+            },
+            sourceUrlPromptValue: {
+                id: `writing-tools.prompt-controls.source.option.url.prompt-value`,
+                defaultMessage: `a URL`
+            },
+            sourceDoiPromptValue: {
+                id: `writing-tools.prompt-controls.source.option.doi.prompt-value`,
+                defaultMessage: `a DOI`
+            },
+            sourceBookPromptValue: {
+                id: `writing-tools.prompt-controls.source.option.book.prompt-value`,
+                defaultMessage: `a book`
+            },
+            sourceVideoPromptValue: {
+                id: `writing-tools.prompt-controls.source.option.video.prompt-value`,
+                defaultMessage: `a video`
+            },
+            sourceOtherPromptValue: {
+                id: `writing-tools.prompt-controls.source.option.other.prompt-value`,
+                defaultMessage: `another source`
+            }
+        }), cn = M(`text`, N.formatText, ke, N.formatTextPromptValue), ln = M(`text`, N.formatText, ke, N.aiTextGeneratorFormatTextPromptValue), un = M(`email`, N.formatEmail, xe, N.formatEmailPromptValue), dn = M(`email`, N.formatEmail, xe, N.paraphraseFormatEmailPromptValue), fn = M(`social-post`, N.formatSocialPost, ne, N.formatSocialPostPromptValue), pn = M(`social-post`, N.formatSocialPost, ne, N.paraphraseFormatSocialPostPromptValue), mn = M(`article`, N.article, Ne, N.articlePromptValue), hn = [M(`friendly`, N.toneFriendly, le, N.toneFriendlyPromptValue), M(`neutral`, N.toneNeutral, me, N.toneNeutralPromptValue), M(`professional`, N.toneProfessional, g, N.toneProfessionalPromptValue), M(`natural`, N.toneNatural, Ce, N.toneNaturalPromptValue), M(`concise`, N.toneConcise, c, N.toneConcisePromptValue), M(`kind`, N.toneKind, we, N.toneKindPromptValue), M(`casual`, N.toneCasual, Le, N.toneCasualPromptValue)], gn = [M(`friendly`, N.toneFriendly, le, N.toneFriendlyPromptValue), M(`neutral`, N.toneNeutral, me, N.toneNeutralPromptValue), M(`professional`, N.toneProfessional, g, N.toneProfessionalPromptValue), M(`natural`, N.toneNatural, Ce, N.toneNaturalPromptValue), M(`concise`, N.toneConcise, c, N.toneConcisePromptValue), M(`kind`, N.toneKind, we, N.toneKindPromptValue), M(`casual`, N.toneCasual, Le, N.toneCasualPromptValue)], _n = M(`same`, N.lengthSame, c, N.lengthSamePromptValue), vn = M(`shorter`, N.lengthShorter, ce, N.lengthShorterPromptValue), yn = M(`longer`, N.lengthLonger, te, N.lengthLongerPromptValue), bn = {
+            id: `format`,
+            label: N.formatControlLabel,
+            defaultOptionId: `email`,
+            options: [cn, dn, M(`resume`, N.formatResume, g, N.paraphraseFormatResumePromptValue), M(`academic-writing`, N.formatAcademicWriting, Me, N.formatAcademicWritingPromptValue), pn, M(`direct-message`, N.formatDirectMessage, ue, N.paraphraseFormatDirectMessagePromptValue)]
+        }, xn = {
+            id: `format`,
+            label: N.formatControlLabel,
+            defaultOptionId: `text`,
+            options: [ln, un, M(`caption`, N.formatCaption, y, N.formatCaptionPromptValue), mn, fn]
+        }, Sn = {
+            id: `tone`,
+            label: N.toneControlLabel,
+            defaultOptionId: `friendly`,
+            options: hn
+        }, Cn = {
+            id: `tone`,
+            label: N.toneControlLabel,
+            defaultOptionId: `friendly`,
+            options: gn
+        }, wn = {
+            id: `length`,
+            label: N.lengthControlLabel,
+            defaultOptionId: `shorter`,
+            options: [_n, vn, yn, M(`novel`, N.lengthNovel, _, N.lengthNovelPromptValue)]
+        }, Tn = {
+            id: `length`,
+            label: N.lengthControlLabel,
+            defaultOptionId: `same`,
+            options: [vn, yn, _n]
+        }, En = {
+            id: `length`,
+            label: N.lengthControlLabel,
+            defaultOptionId: `standard`,
+            options: [M(`brief`, N.lengthBrief, Re, N.lengthBriefPromptValue), M(`standard`, N.lengthStandard, Ne, N.lengthStandardPromptValue), M(`detailed`, N.lengthDetailed, t, N.lengthDetailedPromptValue), M(`comprehensive`, N.lengthComprehensive, _, N.lengthComprehensivePromptValue)]
+        }, Dn = {
+            id: `style`,
+            label: N.styleControlLabel,
+            defaultOptionId: `apa-7`,
+            options: [M(`apa-7`, N.styleApa7, je), M(`apa-6`, N.styleApa6, je)]
+        }, On = {
+            id: `style`,
+            label: N.styleControlLabel,
+            defaultOptionId: `mla-9`,
+            options: [M(`mla-9`, N.styleMla9, je), M(`mla-8`, N.styleMla8, je)]
+        }, kn = {
+            id: `source`,
+            label: N.sourceControlLabel,
+            defaultOptionId: `url`,
+            options: [M(`url`, N.sourceUrl, xe, N.sourceUrlPromptValue), M(`doi`, N.sourceDoi, De, N.sourceDoiPromptValue), M(`book`, N.sourceBook, _, N.sourceBookPromptValue), mn, M(`video`, N.sourceVideo, fe, N.sourceVideoPromptValue), M(`other`, N.sourceOther, be, N.sourceOtherPromptValue)]
+        }
+    })),
+    F, An, jn = e((() => {
+        x(), P(), k(), p(), F = f({
+            title: {
+                id: `writing-tools.ai-text-generator.title`,
+                defaultMessage: `AI text generator`
+            },
+            subtitle: {
+                id: `writing-tools.ai-text-generator.subtitle`,
+                defaultMessage: `Start with a prompt. Get a draft.`
+            },
+            seoTitle: {
+                id: `writing-tools.ai-text-generator.seo-title`,
+                defaultMessage: `AI Text Generator by ChatGPT | Create a Draft`
+            },
+            seoDescription: {
+                id: `writing-tools.ai-text-generator.seo-description`,
+                defaultMessage: `Use ChatGPT’s AI text generator to turn a prompt into a draft for emails, captions, articles, ideas, and more.`
+            },
+            placeholder: {
+                id: `writing-tools.ai-text-generator.placeholder`,
+                defaultMessage: `Ask AI to write anything: an email, caption, article, etc.`
+            },
+            promptTemplate: {
+                id: `writing-tools.ai-text-generator.prompt-template`,
+                defaultMessage: `Create a draft of {format}. Use a {tone} tone. Make it {length} in length.`
+            }
+        }), An = {
+            slug: `ai-text-generator`,
+            icon: nt,
+            h1: F.title,
+            h2: F.subtitle,
+            seoTitle: F.seoTitle,
+            seoDescription: F.seoDescription,
+            composerPlaceholder: F.placeholder,
+            composerPromptTemplate: F.promptTemplate,
+            promptControls: [xn, Cn, En],
+            starterPromptCards: [D, tn, Et]
+        }
+    })),
+    I, Mn, Nn = e((() => {
+        x(), P(), k(), p(), I = f({
+            title: {
+                id: `writing-tools.apa-citation.title`,
+                defaultMessage: `APA citation generator`
+            },
+            subtitle: {
+                id: `writing-tools.apa-citation.subtitle`,
+                defaultMessage: `Get accurate APA citations for websites, books, journals, and more.`
+            },
+            seoTitle: {
+                id: `writing-tools.apa-citation.seo-title`,
+                defaultMessage: `APA Citation Generator by ChatGPT | Create APA Citations`
+            },
+            seoDescription: {
+                id: `writing-tools.apa-citation.seo-description`,
+                defaultMessage: `Create accurate APA citations with ChatGPT. Cite websites, books, journals, and more in APA style for papers, essays, and research projects.`
+            },
+            placeholder: {
+                id: `writing-tools.apa-citation.placeholder`,
+                defaultMessage: `Enter your source to create a citation`
+            },
+            promptTemplate: {
+                id: `writing-tools.apa-citation.prompt-template`,
+                defaultMessage: `Create an {style} citation for {source}.`
+            }
+        }), Mn = {
+            slug: `apa-citation`,
+            icon: pt,
+            h1: I.title,
+            h2: I.subtitle,
+            seoTitle: I.seoTitle,
+            seoDescription: I.seoDescription,
+            composerPlaceholder: I.placeholder,
+            composerPromptTemplate: I.promptTemplate,
+            promptControls: [Dn, kn],
+            starterPromptCards: [w, T, E]
+        }
+    })),
+    L, Pn, Fn = e((() => {
+        x(), k(), p(), L = f({
+            title: {
+                id: `writing-tools.cv-generator.title`,
+                defaultMessage: `CV generator`
+            },
+            subtitle: {
+                id: `writing-tools.cv-generator.subtitle`,
+                defaultMessage: `Create a polished CV for your next role.`
+            },
+            seoTitle: {
+                id: `writing-tools.cv-generator.seo-title`,
+                defaultMessage: `CV Generator by ChatGPT | Create a Polished CV`
+            },
+            seoDescription: {
+                id: `writing-tools.cv-generator.seo-description`,
+                defaultMessage: `Build a professional CV with ChatGPT. Add your experience, skills, and details to create a polished CV for your next opportunity.`
+            },
+            placeholder: {
+                id: `writing-tools.cv-generator.placeholder`,
+                defaultMessage: `Enter your details to build your CV`
+            },
+            promptTemplate: {
+                id: `writing-tools.cv-generator.prompt-template`,
+                defaultMessage: `Turn my details into a professional CV.`
+            }
+        }), Pn = {
+            slug: `cv-generator`,
+            icon: dt,
+            h1: L.title,
+            h2: L.subtitle,
+            seoTitle: L.seoTitle,
+            seoDescription: L.seoDescription,
+            composerPlaceholder: L.placeholder,
+            composerPromptTemplate: L.promptTemplate,
+            starterPromptCards: [O, D, T]
+        }
+    })),
+    R, In, Ln = e((() => {
+        x(), P(), k(), p(), R = f({
+            title: {
+                id: `writing-tools.email-writer.title`,
+                defaultMessage: `Email writer`
+            },
+            subtitle: {
+                id: `writing-tools.email-writer.subtitle`,
+                defaultMessage: `Draft an email from a few details.`
+            },
+            seoTitle: {
+                id: `writing-tools.email-writer.seo-title`,
+                defaultMessage: `Email Writer by ChatGPT | Draft Emails Fast`
+            },
+            seoDescription: {
+                id: `writing-tools.email-writer.seo-description`,
+                defaultMessage: `Write emails with ChatGPT. Enter a few details and quickly generate a clear, polished email draft.`
+            },
+            placeholder: {
+                id: `writing-tools.email-writer.placeholder`,
+                defaultMessage: `Describe the email you want to write`
+            },
+            promptTemplate: {
+                id: `writing-tools.email-writer.prompt-template`,
+                defaultMessage: `Draft an email from the details I provide. Use a {tone} tone. Make it {length} in length.`
+            }
+        }), In = {
+            slug: `email-writer`,
+            icon: ft,
+            h1: R.title,
+            h2: R.subtitle,
+            seoTitle: R.seoTitle,
+            seoDescription: R.seoDescription,
+            composerPlaceholder: R.placeholder,
+            composerPromptTemplate: R.promptTemplate,
+            promptControls: [Cn, En],
+            starterPromptCards: [Et, O, Ht]
+        }
+    })),
+    z, Rn, zn = e((() => {
+        x(), k(), p(), z = f({
+            title: {
+                id: `writing-tools.essay-checker.title`,
+                defaultMessage: `Essay checker`
+            },
+            subtitle: {
+                id: `writing-tools.essay-checker.subtitle`,
+                defaultMessage: `Improve your essay and get feedback on your draft.`
+            },
+            seoTitle: {
+                id: `writing-tools.essay-checker.seo-title`,
+                defaultMessage: `Essay Checker by ChatGPT | Improve Your Essay`
+            },
+            seoDescription: {
+                id: `writing-tools.essay-checker.seo-description`,
+                defaultMessage: `Check your essay with ChatGPT. Paste your draft to review grammar, structure, clarity, and get feedback to improve your writing.`
+            },
+            placeholder: {
+                id: `writing-tools.essay-checker.placeholder`,
+                defaultMessage: `Enter or paste your essay to check grammar, structure, and clarity`
+            },
+            promptTemplate: {
+                id: `writing-tools.essay-checker.prompt-template`,
+                defaultMessage: `Review this essay and give feedback on how to improve it.`
+            }
+        }), Rn = {
+            slug: `essay-checker`,
+            icon: rt,
+            h1: z.title,
+            h2: z.subtitle,
+            seoTitle: z.seoTitle,
+            seoDescription: z.seoDescription,
+            composerPlaceholder: z.placeholder,
+            composerPromptTemplate: z.promptTemplate,
+            starterPromptCards: [Mt, E, Ht]
+        }
+    })),
+    B, Bn, Vn = e((() => {
+        x(), k(), p(), B = f({
+            title: {
+                id: `writing-tools.grammar.title`,
+                defaultMessage: `Grammar checker`
+            },
+            subtitle: {
+                id: `writing-tools.grammar.subtitle`,
+                defaultMessage: `Improve grammar, spelling, and punctuation.`
+            },
+            seoTitle: {
+                id: `writing-tools.grammar.seo-title`,
+                defaultMessage: `Grammar Checker by ChatGPT | Fix Grammar & Spelling`
+            },
+            seoDescription: {
+                id: `writing-tools.grammar.seo-description`,
+                defaultMessage: `Improve grammar, spelling, and punctuation with ChatGPT. Check your text for writing mistakes and make your draft clearer.`
+            },
+            placeholder: {
+                id: `writing-tools.grammar.placeholder`,
+                defaultMessage: `Enter or paste text to get started`
+            },
+            promptTemplate: {
+                id: `writing-tools.grammar.prompt-template`,
+                defaultMessage: `Fix the grammar, spelling, and punctuation in this text.`
+            }
+        }), Bn = {
+            slug: `grammar`,
+            icon: pt,
+            h1: B.title,
+            h2: B.subtitle,
+            seoTitle: B.seoTitle,
+            seoDescription: B.seoDescription,
+            composerPlaceholder: B.placeholder,
+            composerPromptTemplate: B.promptTemplate,
+            starterPromptCards: [T, E, O]
+        }
+    })),
+    V, Hn, Un = e((() => {
+        x(), P(), k(), p(), V = f({
+            title: {
+                id: `writing-tools.harvard-referencing-generator.title`,
+                defaultMessage: `Harvard reference generator`
+            },
+            subtitle: {
+                id: `writing-tools.harvard-referencing-generator.subtitle`,
+                defaultMessage: `Create properly formatted Harvard references in seconds.`
+            },
+            seoTitle: {
+                id: `writing-tools.harvard-referencing-generator.seo-title`,
+                defaultMessage: `Harvard Reference Generator by ChatGPT | Create References`
+            },
+            seoDescription: {
+                id: `writing-tools.harvard-referencing-generator.seo-description`,
+                defaultMessage: `Use ChatGPT's Harvard reference generator to create formatted references for websites, books, journals, articles, and more.`
+            },
+            placeholder: {
+                id: `writing-tools.harvard-referencing-generator.placeholder`,
+                defaultMessage: `Enter your source to create a reference`
+            },
+            promptTemplate: {
+                id: `writing-tools.harvard-referencing-generator.prompt-template`,
+                defaultMessage: `Create a Harvard reference for {source}.`
+            }
+        }), Hn = {
+            slug: `harvard-referencing-generator`,
+            icon: pt,
+            h1: V.title,
+            h2: V.subtitle,
+            seoTitle: V.seoTitle,
+            seoDescription: V.seoDescription,
+            composerPlaceholder: V.placeholder,
+            composerPromptTemplate: V.promptTemplate,
+            promptControls: [kn],
+            starterPromptCards: [w, T, Mt]
+        }
+    })),
+    H, Wn, Gn = e((() => {
+        x(), P(), k(), p(), H = f({
+            title: {
+                id: `writing-tools.mla-citation.title`,
+                defaultMessage: `MLA citation generator`
+            },
+            subtitle: {
+                id: `writing-tools.mla-citation.subtitle`,
+                defaultMessage: `Get accurate MLA citations for websites, books, journals, and more.`
+            },
+            seoTitle: {
+                id: `writing-tools.mla-citation.seo-title`,
+                defaultMessage: `MLA Citation Generator by ChatGPT | Create MLA Citations`
+            },
+            seoDescription: {
+                id: `writing-tools.mla-citation.seo-description`,
+                defaultMessage: `Create accurate MLA citations with ChatGPT. Cite websites, books, journals, and more in MLA style for essays, papers, and research projects.`
+            },
+            placeholder: {
+                id: `writing-tools.mla-citation.placeholder`,
+                defaultMessage: `Enter your source to create a citation`
+            },
+            promptTemplate: {
+                id: `writing-tools.mla-citation.prompt-template`,
+                defaultMessage: `Create an {style} citation for {source}.`
+            }
+        }), Wn = {
+            slug: `mla-citation`,
+            icon: pt,
+            h1: H.title,
+            h2: H.subtitle,
+            seoTitle: H.seoTitle,
+            seoDescription: H.seoDescription,
+            composerPlaceholder: H.placeholder,
+            composerPromptTemplate: H.promptTemplate,
+            promptControls: [On, kn],
+            starterPromptCards: [w, T, E]
+        }
+    })),
+    U, Kn, qn = e((() => {
+        x(), P(), k(), p(), U = f({
+            title: {
+                id: `writing-tools.paragraph-rewriter.title`,
+                defaultMessage: `Paragraph rewriter`
+            },
+            subtitle: {
+                id: `writing-tools.paragraph-rewriter.subtitle`,
+                defaultMessage: `Rewrite any paragraph in seconds.`
+            },
+            seoTitle: {
+                id: `writing-tools.paragraph-rewriter.seo-title`,
+                defaultMessage: `Paragraph Rewriter by ChatGPT | Improve and Rewrite Text`
+            },
+            seoDescription: {
+                id: `writing-tools.paragraph-rewriter.seo-description`,
+                defaultMessage: `Rewrite paragraphs with ChatGPT. Add your text and get a revised draft that improves clarity, structure, and flow.`
+            },
+            placeholder: {
+                id: `writing-tools.paragraph-rewriter.placeholder`,
+                defaultMessage: `Add your text to improve and rewrite it`
+            },
+            promptTemplate: {
+                id: `writing-tools.paragraph-rewriter.prompt-template`,
+                defaultMessage: `Improve and rewrite this paragraph. Use a {tone} tone. Make it {length}.`
+            }
+        }), Kn = {
+            slug: `paragraph-rewriter`,
+            icon: b,
+            h1: U.title,
+            h2: U.subtitle,
+            seoTitle: U.seoTitle,
+            seoDescription: U.seoDescription,
+            composerPlaceholder: U.placeholder,
+            composerPromptTemplate: U.promptTemplate,
+            promptControls: [Sn, Tn],
+            starterPromptCards: [T, E, Et]
+        }
+    })),
+    W, Jn, Yn = e((() => {
+        x(), P(), k(), p(), W = f({
+            title: {
+                id: `writing-tools.paraphrase-new.title`,
+                defaultMessage: `Paraphrase with ChatGPT`
+            },
+            subtitle: {
+                id: `writing-tools.paraphrase-new.subtitle`,
+                defaultMessage: `Your built-in AI editor.`
+            },
+            seoTitle: {
+                id: `writing-tools.paraphrase-new.seo-title`,
+                defaultMessage: `ChatGPT Writing Tools | Paraphrase Text with ChatGPT`
+            },
+            seoDescription: {
+                id: `writing-tools.paraphrase-new.seo-description`,
+                defaultMessage: `Paraphrase and rewrite text with ChatGPT. Easily reword sentences, refine tone, and adjust length for emails, essays, and everyday messages.`
+            },
+            placeholder: {
+                id: `writing-tools.paraphrase-new.placeholder`,
+                defaultMessage: `To rewrite your text, enter or paste it here`
+            },
+            promptTemplate: {
+                id: `writing-tools.paraphrase-new.prompt-template`,
+                defaultMessage: `Paraphrase this {format}. Use a {tone} tone. Make it {length}.`
+            }
+        }), Jn = {
+            slug: `paraphrase`,
+            icon: b,
+            h1: W.title,
+            h2: W.subtitle,
+            seoTitle: W.seoTitle,
+            seoDescription: W.seoDescription,
+            composerPlaceholder: W.placeholder,
+            composerPromptTemplate: W.promptTemplate,
+            promptControls: [bn, Sn, wn],
+            starterPromptCards: [w, E, T]
+        }
+    })),
+    G, Xn, Zn = e((() => {
+        x(), k(), p(), G = f({
+            title: {
+                id: `writing-tools.plagiarism-check.title`,
+                defaultMessage: `Plagiarism checker`
+            },
+            subtitle: {
+                id: `writing-tools.plagiarism-check.subtitle`,
+                defaultMessage: `Check your text for plagiarism in seconds.`
+            },
+            seoTitle: {
+                id: `writing-tools.plagiarism-check.seo-title`,
+                defaultMessage: `Plagiarism Checker by ChatGPT | Check Text Originality`
+            },
+            seoDescription: {
+                id: `writing-tools.plagiarism-check.seo-description`,
+                defaultMessage: `Paste your writing into ChatGPT's plagiarism checker to check for potential plagiarism and review originality in seconds.`
+            },
+            placeholder: {
+                id: `writing-tools.plagiarism-check.placeholder`,
+                defaultMessage: `Enter your text to check originality`
+            },
+            promptTemplate: {
+                id: `writing-tools.plagiarism-check.prompt-template`,
+                defaultMessage: `Review this text for possible plagiarism.`
+            }
+        }), Xn = {
+            slug: `plagiarism-check`,
+            icon: dt,
+            h1: G.title,
+            h2: G.subtitle,
+            seoTitle: G.seoTitle,
+            seoDescription: G.seoDescription,
+            composerPlaceholder: G.placeholder,
+            composerPromptTemplate: G.promptTemplate,
+            starterPromptCards: [kt, w, T]
+        }
+    })),
+    K, Qn, $n = e((() => {
+        x(), k(), p(), K = f({
+            title: {
+                id: `writing-tools.punctuation-checker.title`,
+                defaultMessage: `Punctuation checker`
+            },
+            subtitle: {
+                id: `writing-tools.punctuation-checker.subtitle`,
+                defaultMessage: `Review punctuation before you publish.`
+            },
+            seoTitle: {
+                id: `writing-tools.punctuation-checker.seo-title`,
+                defaultMessage: `Punctuation Checker by ChatGPT | Check Punctuation`
+            },
+            seoDescription: {
+                id: `writing-tools.punctuation-checker.seo-description`,
+                defaultMessage: `Check punctuation with ChatGPT. Enter your text to review punctuation issues and clean up your writing before you publish.`
+            },
+            placeholder: {
+                id: `writing-tools.punctuation-checker.placeholder`,
+                defaultMessage: `Enter or paste your text to check punctuation`
+            },
+            promptTemplate: {
+                id: `writing-tools.punctuation-checker.prompt-template`,
+                defaultMessage: `Check this text for punctuation errors.`
+            }
+        }), Qn = {
+            slug: `punctuation-checker`,
+            icon: rt,
+            h1: K.title,
+            h2: K.subtitle,
+            seoTitle: K.seoTitle,
+            seoDescription: K.seoDescription,
+            composerPlaceholder: K.placeholder,
+            composerPromptTemplate: K.promptTemplate,
+            starterPromptCards: [w, T, O]
+        }
+    })),
+    q, er, tr = e((() => {
+        x(), k(), p(), q = f({
+            title: {
+                id: `writing-tools.resume-building.title`,
+                defaultMessage: `Resume builder`
+            },
+            subtitle: {
+                id: `writing-tools.resume-building.subtitle`,
+                defaultMessage: `Create a professional resume in minutes.`
+            },
+            seoTitle: {
+                id: `writing-tools.resume-building.seo-title`,
+                defaultMessage: `Resume Builder by ChatGPT | Create a Professional Resume`
+            },
+            seoDescription: {
+                id: `writing-tools.resume-building.seo-description`,
+                defaultMessage: `Use ChatGPT's resume builder to create a clear, professional resume that highlights your experience, skills, and qualifications.`
+            },
+            placeholder: {
+                id: `writing-tools.resume-building.placeholder`,
+                defaultMessage: `Enter your details to build your resume`
+            },
+            promptTemplate: {
+                id: `writing-tools.resume-building.prompt-template`,
+                defaultMessage: `Build a professional resume from my details.`
+            }
+        }), er = {
+            slug: `resume-building`,
+            icon: dt,
+            h1: q.title,
+            h2: q.subtitle,
+            seoTitle: q.seoTitle,
+            seoDescription: q.seoDescription,
+            composerPlaceholder: q.placeholder,
+            composerPromptTemplate: q.promptTemplate,
+            starterPromptCards: [O, D, T]
+        }
+    })),
+    J, nr, rr = e((() => {
+        x(), k(), p(), J = f({
+            title: {
+                id: `writing-tools.rewording-tool.title`,
+                defaultMessage: `Rewording tool`
+            },
+            subtitle: {
+                id: `writing-tools.rewording-tool.subtitle`,
+                defaultMessage: `Give your text a fresh take.`
+            },
+            seoTitle: {
+                id: `writing-tools.rewording-tool.seo-title`,
+                defaultMessage: `Rewording Tool by ChatGPT | Rephrase Your Text`
+            },
+            seoDescription: {
+                id: `writing-tools.rewording-tool.seo-description`,
+                defaultMessage: `Reword text with ChatGPT. Enter your writing to get a fresh version while keeping the original meaning.`
+            },
+            placeholder: {
+                id: `writing-tools.rewording-tool.placeholder`,
+                defaultMessage: `Enter your text to reword it`
+            },
+            promptTemplate: {
+                id: `writing-tools.rewording-tool.prompt-template`,
+                defaultMessage: `Reword this text while keeping the same meaning.`
+            }
+        }), nr = {
+            slug: `rewording-tool`,
+            icon: b,
+            h1: J.title,
+            h2: J.subtitle,
+            seoTitle: J.seoTitle,
+            seoDescription: J.seoDescription,
+            composerPlaceholder: J.placeholder,
+            composerPromptTemplate: J.promptTemplate,
+            starterPromptCards: [O, zt, E]
+        }
+    })),
+    Y, ir, ar = e((() => {
+        x(), P(), k(), p(), Y = f({
+            title: {
+                id: `writing-tools.sentence-rewriter.title`,
+                defaultMessage: `Sentence rewriter`
+            },
+            subtitle: {
+                id: `writing-tools.sentence-rewriter.subtitle`,
+                defaultMessage: `Polish, simplify, or reword any sentence.`
+            },
+            seoTitle: {
+                id: `writing-tools.sentence-rewriter.seo-title`,
+                defaultMessage: `Sentence Rewriter by ChatGPT | Improve your text`
+            },
+            seoDescription: {
+                id: `writing-tools.sentence-rewriter.seo-description`,
+                defaultMessage: `Rewrite sentences with ChatGPT. Enter a sentence to quickly create a clearer, smoother version.`
+            },
+            placeholder: {
+                id: `writing-tools.sentence-rewriter.placeholder`,
+                defaultMessage: `Enter a sentence to rewrite it`
+            },
+            promptTemplate: {
+                id: `writing-tools.sentence-rewriter.prompt-template`,
+                defaultMessage: `Improve and rewrite this sentence. Use a {tone} tone. Make it {length}.`
+            }
+        }), ir = {
+            slug: `sentence-rewriter`,
+            icon: b,
+            h1: Y.title,
+            h2: Y.subtitle,
+            seoTitle: Y.seoTitle,
+            seoDescription: Y.seoDescription,
+            composerPlaceholder: Y.placeholder,
+            composerPromptTemplate: Y.promptTemplate,
+            promptControls: [Sn, Tn],
+            starterPromptCards: [T, zt, Et]
+        }
+    })),
+    X, or, sr = e((() => {
+        x(), k(), p(), X = f({
+            title: {
+                id: `writing-tools.spell-checker.title`,
+                defaultMessage: `Spell checker`
+            },
+            subtitle: {
+                id: `writing-tools.spell-checker.subtitle`,
+                defaultMessage: `Clean up spelling and typos in seconds.`
+            },
+            seoTitle: {
+                id: `writing-tools.spell-checker.seo-title`,
+                defaultMessage: `Spell Checker by ChatGPT | Fix Spelling Mistakes`
+            },
+            seoDescription: {
+                id: `writing-tools.spell-checker.seo-description`,
+                defaultMessage: `Check spelling and typos with ChatGPT. Enter your text to clean up spelling mistakes and improve your writing in seconds.`
+            },
+            placeholder: {
+                id: `writing-tools.spell-checker.placeholder`,
+                defaultMessage: `Enter your text to check spelling`
+            },
+            promptTemplate: {
+                id: `writing-tools.spell-checker.prompt-template`,
+                defaultMessage: `Check this text for spelling mistakes.`
+            }
+        }), or = {
+            slug: `spell-checker`,
+            icon: rt,
+            h1: X.title,
+            h2: X.subtitle,
+            seoTitle: X.seoTitle,
+            seoDescription: X.seoDescription,
+            composerPlaceholder: X.placeholder,
+            composerPromptTemplate: X.promptTemplate,
+            starterPromptCards: [E, O, kt]
+        }
+    })),
+    Z, cr, lr = e((() => {
+        x(), k(), p(), Z = f({
+            title: {
+                id: `writing-tools.story-generator.title`,
+                defaultMessage: `Story generator`
+            },
+            subtitle: {
+                id: `writing-tools.story-generator.subtitle`,
+                defaultMessage: `Add a few details to generate a complete story.`
+            },
+            seoTitle: {
+                id: `writing-tools.story-generator.seo-title`,
+                defaultMessage: `Story Generator by ChatGPT | Generate Stories from Prompts`
+            },
+            seoDescription: {
+                id: `writing-tools.story-generator.seo-description`,
+                defaultMessage: `Start with an idea and generate a story with ChatGPT. Create a complete story from a simple or detailed prompt.`
+            },
+            placeholder: {
+                id: `writing-tools.story-generator.placeholder`,
+                defaultMessage: `Start with a simple idea or a detailed story prompt`
+            },
+            promptTemplate: {
+                id: `writing-tools.story-generator.prompt-template`,
+                defaultMessage: `Turn my story idea into a complete draft.`
+            }
+        }), cr = {
+            slug: `story-generator`,
+            icon: gt,
+            h1: Z.title,
+            h2: Z.subtitle,
+            seoTitle: Z.seoTitle,
+            seoDescription: Z.seoDescription,
+            composerPlaceholder: Z.placeholder,
+            composerPromptTemplate: Z.promptTemplate,
+            starterPromptCards: [zt, D, tn]
+        }
+    })),
+    Q, ur, dr = e((() => {
+        x(), k(), p(), Q = f({
+            title: {
+                id: `writing-tools.summarizer.title`,
+                defaultMessage: `Summarize text`
+            },
+            subtitle: {
+                id: `writing-tools.summarizer.subtitle`,
+                defaultMessage: `Get concise summaries in seconds.`
+            },
+            seoTitle: {
+                id: `writing-tools.summarizer.seo-title`,
+                defaultMessage: `Text Summarizer by ChatGPT | Summarize Text Fast`
+            },
+            seoDescription: {
+                id: `writing-tools.summarizer.seo-description`,
+                defaultMessage: `Summarize text with ChatGPT. Paste your writing, notes, articles, or documents to get a concise summary in seconds.`
+            },
+            placeholder: {
+                id: `writing-tools.summarizer.placeholder`,
+                defaultMessage: `Enter text to get a quick summary`
+            },
+            promptTemplate: {
+                id: `writing-tools.summarizer.prompt-template`,
+                defaultMessage: `Summarize this text and pull out the main points.`
+            }
+        }), ur = {
+            slug: `summarizer`,
+            icon: st,
+            h1: Q.title,
+            h2: Q.subtitle,
+            seoTitle: Q.seoTitle,
+            seoDescription: Q.seoDescription,
+            composerPlaceholder: Q.placeholder,
+            composerPromptTemplate: Q.promptTemplate,
+            starterPromptCards: [Ht, O, kt]
+        }
+    })),
+    $, fr, pr = e((() => {
+        x(), k(), p(), $ = f({
+            title: {
+                id: `writing-tools.word-counter.title`,
+                defaultMessage: `Word counter`
+            },
+            subtitle: {
+                id: `writing-tools.word-counter.subtitle`,
+                defaultMessage: `Count words, characters, and sentences instantly.`
+            },
+            seoTitle: {
+                id: `writing-tools.word-counter.seo-title`,
+                defaultMessage: `Word Counter by ChatGPT | Count Words & Characters`
+            },
+            seoDescription: {
+                id: `writing-tools.word-counter.seo-description`,
+                defaultMessage: `Count words, characters, and sentences instantly with ChatGPT. Paste your text to get a quick word count and review text length in seconds.`
+            },
+            placeholder: {
+                id: `writing-tools.word-counter.placeholder`,
+                defaultMessage: `Enter your text to get a word count`
+            },
+            promptTemplate: {
+                id: `writing-tools.word-counter.prompt-template`,
+                defaultMessage: `Count the words, characters, and sentences in this text.`
+            }
+        }), fr = {
+            slug: `word-counter`,
+            icon: gt,
+            h1: $.title,
+            h2: $.subtitle,
+            seoTitle: $.seoTitle,
+            seoDescription: $.seoDescription,
+            composerPlaceholder: $.placeholder,
+            composerPromptTemplate: $.promptTemplate,
+            starterPromptCards: [w, E, T]
+        }
+    }));
+
+function mr(e) {
+    return e
+}
+var hr, gr = e((() => {
+    an(), sn(), jn(), Nn(), Fn(), Ln(), zn(), Vn(), Un(), Gn(), qn(), Yn(), Zn(), $n(), tr(), rr(), ar(), sr(), lr(), dr(), pr(), hr = mr({
+        "ai-detector": rn,
+        "ai-humanizer": on,
+        "ai-text-generator": An,
+        "apa-citation": Mn,
+        "cv-generator": Pn,
+        "email-writer": In,
+        "essay-checker": Rn,
+        grammar: Bn,
+        "harvard-referencing-generator": Hn,
+        "mla-citation": Wn,
+        "paragraph-rewriter": Kn,
+        paraphrase: Jn,
+        "plagiarism-check": Xn,
+        "punctuation-checker": Qn,
+        "resume-building": er,
+        "rewording-tool": nr,
+        "sentence-rewriter": ir,
+        "spell-checker": or,
+        "story-generator": cr,
+        summarizer: ur,
+        "word-counter": fr
+    })
+}));
+export {
+    vt as a, wt as i, gr as n, bt as o, St as r, hr as t
+};
+//# sourceMappingURL=872491a3-li65mvddpsqslmxt.js.map

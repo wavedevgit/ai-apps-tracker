@@ -1,0 +1,70 @@
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ikt as t,
+    Ukt as n
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    a as r,
+    i,
+    n as a
+} from "./4f866508-nx1lmkigi4ro0s38.js";
+
+function o(e, t) {
+    return new Promise(n => {
+        let r = () => {
+                window.clearTimeout(i), t?.removeEventListener(`abort`, r), n()
+            },
+            i = window.setTimeout(r, e);
+        t?.addEventListener(`abort`, r, {
+            once: !0
+        }), t?.aborted && r()
+    })
+}
+
+function s(e) {
+    return new Set(e.flatMap(e => e.accounts.map(e => e.account_id)).filter(e => typeof e == `string` && e.length > 0))
+}
+
+function c(e, t) {
+    return [...s(e)].some(e => !t.has(e))
+}
+async function l(e, n, {
+    onConnectionConfirmed: a,
+    onTimedOut: l,
+    signal: f,
+    linksBeforeLinking: p
+} = {}) {
+    let m = Date.now() + u,
+        h = p == null ? void 0 : s(p),
+        g = 0,
+        _ = !1;
+    for (; !f?.aborted && Date.now() < m;) {
+        let s;
+        try {
+            s = await t(e, f)
+        } catch {
+            await o(d, f);
+            continue
+        }
+        if (f?.aborted) return !1;
+        !_ && (s.finished || s.connected_accounts > 0) && (_ = !0, a?.());
+        let l = s.connected_accounts > g;
+        if (g = Math.max(g, s.connected_accounts), l && !s.finished && await i(n), s.finished) {
+            if (h == null) return await r(n).catch(() => void 0), await i(n), !0;
+            try {
+                if (c(await r(n), h)) return await i(n), !0
+            } catch {}
+        }
+        await o(d, f)
+    }
+    return f?.aborted || l?.(), !1
+}
+var u, d, f = e((() => {
+    a(), n(), u = 30 * 6e4, d = 2e3
+}));
+export {
+    l as n, f as t
+};
+//# sourceMappingURL=8be37a3d-cs8pzotsolhnymr1.js.map
