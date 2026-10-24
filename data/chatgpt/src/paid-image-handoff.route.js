@@ -1,16 +1,16 @@
 export const __rspack_esm_id = 741262;
 export const __rspack_esm_ids = [741262];
 export const __webpack_modules__ = {
-    wz6C: (function(e, r, a) {
-        a.d(r, {
+    wz6C: (function(e, r, t) {
+        t.d(r, {
             a: () => i
         });
-        var t = a("HZfM"),
-            o = a("ABep"),
-            C = a("QosV"),
-            s = a("ugfM"),
-            n = a("AXDI"),
-            i = (0, t.gb)(function() {
+        var a = t("HZfM"),
+            o = t("ABep"),
+            C = t("QosV"),
+            s = t("ugfM"),
+            n = t("AXDI"),
+            i = (0, a.gb)(function() {
                 let e, r = (0, C.c)(1);
                 return r[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, o.jsx)(n.a, {
                     children: (0, o.jsx)(s.BrowserPaidImageHandoffPage, {})
@@ -23,34 +23,34 @@ export const __webpack_modules__ = {
     Wi2z: (function(e) {
         e.exports = '<svg\n  width="21"\n  height="21"\n  viewBox="0 0 21 21"\n  fill="none"\n  xmlns="http://www.w3.org/2000/svg"\n>\n  <path\n    d="M11.6475 18.3409C11.0975 18.3409 10.575 18.2364 10.08 18.0274C9.58502 17.8184 9.14502 17.5269 8.76002 17.1529C8.34202 17.2959 7.90751 17.3674 7.45651 17.3674C6.71951 17.3674 6.03751 17.1859 5.41051 16.8229C4.78351 16.4599 4.27751 15.9649 3.89251 15.3379C3.51851 14.7109 3.33151 14.0124 3.33151 13.2424C3.33151 12.9234 3.37551 12.5769 3.46351 12.2029C3.02351 11.7959 2.68251 11.3284 2.44051 10.8004C2.19851 10.2614 2.07751 9.70044 2.07751 9.11744C2.07751 8.52344 2.20401 7.95144 2.45701 7.40144C2.71001 6.85144 3.06201 6.37844 3.51301 5.98244C3.97501 5.57544 4.50851 5.29494 5.11351 5.14094C5.23451 4.51394 5.48751 3.95294 5.87251 3.45794C6.26851 2.95194 6.75252 2.55594 7.32452 2.26994C7.89652 1.98394 8.50702 1.84094 9.15602 1.84094C9.70602 1.84094 10.2285 1.94544 10.7235 2.15444C11.2185 2.36344 11.6585 2.65494 12.0435 3.02894C12.4615 2.88594 12.896 2.81444 13.347 2.81444C14.084 2.81444 14.766 2.99594 15.393 3.35894C16.02 3.72194 16.5205 4.21694 16.8945 4.84394C17.2795 5.47094 17.472 6.16944 17.472 6.93944C17.472 7.25844 17.428 7.60494 17.34 7.97894C17.78 8.38594 18.121 8.85894 18.363 9.39794C18.605 9.92594 18.726 10.4814 18.726 11.0644C18.726 11.6584 18.5995 12.2304 18.3465 12.7804C18.0935 13.3304 17.736 13.8089 17.274 14.2159C16.823 14.6119 16.295 14.8869 15.69 15.0409C15.569 15.6679 15.3105 16.2289 14.9145 16.7239C14.5295 17.2299 14.051 17.6259 13.479 17.9119C12.907 18.1979 12.2965 18.3409 11.6475 18.3409ZM7.57201 16.2784C8.12201 16.2784 8.60051 16.1629 9.00751 15.9319L12.1095 14.1499C12.2195 14.0729 12.2745 13.9684 12.2745 13.8364V12.4174L8.28152 14.7109C8.03952 14.8539 7.79751 14.8539 7.55552 14.7109L4.43701 12.9124C4.43701 12.9454 4.43151 12.9839 4.42051 13.0279C4.42051 13.0719 4.42051 13.1379 4.42051 13.2259C4.42051 13.7869 4.55252 14.3039 4.81651 14.7769C5.09152 15.2389 5.47101 15.6019 5.95501 15.8659C6.43901 16.1409 6.97801 16.2784 7.57201 16.2784ZM7.73701 13.5889C7.80301 13.6219 7.86351 13.6384 7.91851 13.6384C7.97351 13.6384 8.02852 13.6219 8.08352 13.5889L9.32101 12.8794L5.34451 10.5694C5.10251 10.4264 4.98151 10.2119 4.98151 9.92594V6.34544C4.43151 6.58744 3.99151 6.96144 3.66151 7.46744C3.33151 7.96244 3.16651 8.51244 3.16651 9.11744C3.16651 9.65644 3.30401 10.1734 3.57901 10.6684C3.85401 11.1634 4.21151 11.5374 4.65151 11.7904L7.73701 13.5889ZM11.6475 17.2519C12.2305 17.2519 12.7585 17.1199 13.2315 16.8559C13.7045 16.5919 14.0785 16.2289 14.3535 15.7669C14.6285 15.3049 14.766 14.7879 14.766 14.2159V10.6519C14.766 10.5199 14.711 10.4209 14.601 10.3549L13.347 9.62894V14.2324C13.347 14.5184 13.226 14.7329 12.984 14.8759L9.86551 16.6744C10.4045 17.0594 10.9985 17.2519 11.6475 17.2519ZM12.2745 11.2129V8.96894L10.41 7.91294L8.52902 8.96894V11.2129L10.41 12.2689L12.2745 11.2129ZM7.45651 5.94944C7.45651 5.66344 7.57752 5.44894 7.81952 5.30594L10.938 3.50744C10.399 3.12244 9.80502 2.92994 9.15602 2.92994C8.57302 2.92994 8.04501 3.06194 7.57201 3.32594C7.09902 3.58994 6.72502 3.95294 6.45002 4.41494C6.18602 4.87694 6.05401 5.39394 6.05401 5.96594V9.51344C6.05401 9.64544 6.10901 9.74994 6.21902 9.82694L7.45651 10.5529V5.94944ZM15.8385 13.8364C16.3885 13.5944 16.823 13.2204 17.142 12.7144C17.472 12.2084 17.637 11.6584 17.637 11.0644C17.637 10.5254 17.4995 10.0084 17.2245 9.51344C16.9495 9.01844 16.592 8.64444 16.152 8.39144L13.0665 6.60944C13.0005 6.56544 12.94 6.54894 12.885 6.55994C12.83 6.55994 12.775 6.57644 12.72 6.60944L11.4825 7.30244L15.4755 9.62894C15.5965 9.69494 15.6845 9.78294 15.7395 9.89294C15.8055 9.99194 15.8385 10.1129 15.8385 10.2559V13.8364ZM12.522 5.45444C12.764 5.30044 13.006 5.30044 13.248 5.45444L16.383 7.28594C16.383 7.20894 16.383 7.10994 16.383 6.98894C16.383 6.46094 16.251 5.96044 15.987 5.48744C15.734 5.00344 15.3655 4.61844 14.8815 4.33244C14.4085 4.04644 13.8585 3.90344 13.2315 3.90344C12.6815 3.90344 12.203 4.01894 11.796 4.24994L8.69402 6.03194C8.58402 6.10894 8.52902 6.21344 8.52902 6.34544V7.76444L12.522 5.45444Z"\n    fill="currentColor"\n  />\n</svg>\n'
     }),
-    ugfM: (function(e, r, a) {
-        var t = a("ABep"),
-            o = a("QosV"),
-            C = a("T0Rc"),
-            s = a("zd8w"),
-            n = a("HZfM"),
-            i = a("Kwur"),
-            f = a("jVlT"),
-            m = a("M8lA"),
-            l = a("WWY6");
+    ugfM: (function(e, r, t) {
+        var a = t("ABep"),
+            o = t("QosV"),
+            C = t("T0Rc"),
+            s = t("zd8w"),
+            n = t("HZfM"),
+            i = t("Kwur"),
+            f = t("jVlT"),
+            m = t("M8lA"),
+            l = t("WWY6");
         let c = /^[A-Za-z0-9_-]{43}$/;
 
         function d() {
-            let e, r, a, d, p, u, h, L, _ = (0, o.c)(19),
+            let e, r, t, d, p, u, h, L, _ = (0, o.c)(19),
                 g = (0, n.X)();
             if (_[0] !== g.search) {
-                let a = new URLSearchParams(g.search),
-                    t = a.getAll("token");
-                e = null != (r = 1 === a.size && 1 === t.length ? t[0] : null) && c.test(r), _[0] = g.search, _[1] = e, _[2] = r
+                let t = new URLSearchParams(g.search),
+                    a = t.getAll("token");
+                e = null != (r = 1 === t.size && 1 === a.length ? a[0] : null) && c.test(r), _[0] = g.search, _[1] = e, _[2] = r
             } else e = _[1], r = _[2];
             let w = e;
-            _[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, m.getClientBootstrap)(), _[3] = a) : a = _[3];
-            let j = "logged_in" === a.authStatus;
+            _[3] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, m.getClientBootstrap)(), _[3] = t) : t = _[3];
+            let j = "logged_in" === t.authStatus;
             _[4] !== r ? (d = ["paid-image-handoff-redeem", r], p = async e => {
                 let {
-                    signal: a
-                } = e, t = (0, f.c)();
-                if ((0, l.a)(), null == r || null == t) throw Error("Missing handoff token");
+                    signal: t
+                } = e, a = (0, f.c)();
+                if ((0, l.a)(), null == r || null == a) throw Error("Missing handoff token");
                 let {
                     prompt: o,
                     hints: C,
@@ -59,9 +59,9 @@ export const __webpack_modules__ = {
                     requestBody: {
                         token: r
                     },
-                    signal: a
+                    signal: t
                 });
-                if (a.throwIfAborted(), !o.trim() || "picture_v2" !== C || !(0, f.e)(o, t)) throw Error("Unable to prepare image handoff replay");
+                if (t.throwIfAborted(), !o.trim() || "picture_v2" !== C || !(0, f.e)(o, a)) throw Error("Unable to prepare image handoff replay");
                 let n = new URL("/", window.location.origin);
                 for (let e of (n.searchParams.set(f.a, "submit"), n.searchParams.set("skip_instant_query", "1"), Object.keys(s))) n.searchParams.set(e, s[e]);
                 return n.toString()
@@ -84,31 +84,31 @@ export const __webpack_modules__ = {
             if (_[11] !== V ? (h = () => {
                     null != V && window.location.replace(V)
                 }, L = [V], _[11] = V, _[12] = h, _[13] = L) : (h = _[12], L = _[13]), (0, s.useEffect)(h, L), w && !j) {
-                let e, a, o = `/paid-image-handoff?token=${encodeURIComponent(r)}`;
+                let e, t, o = `/paid-image-handoff?token=${encodeURIComponent(r)}`;
                 _[14] !== o ? (e = new URLSearchParams({
                     callback_path: o
                 }), _[14] = o, _[15] = e) : e = _[15];
                 let C = `/auth/login_with?${e}`;
-                return _[16] !== C ? (a = (0, t.jsx)(n.l, {
+                return _[16] !== C ? (t = (0, a.jsx)(n.l, {
                     replace: !0,
                     to: C
-                }), _[16] = C, _[17] = a) : a = _[17], a
+                }), _[16] = C, _[17] = t) : t = _[17], t
             }
             if (!w || M) {
                 let e;
-                return _[18] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, t.jsx)(n.l, {
+                return _[18] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(n.l, {
                     to: "/?paid_image_handoff_carryover=unavailable",
                     replace: !0
                 }), _[18] = e) : e = _[18], e
             }
             return null
         }
-        a.d(r, {
+        t.d(r, {
             BrowserPaidImageHandoffPage: () => d
         })
     }),
-    WWY6: (function(e, r, a) {
-        var t = a("y3LV");
+    WWY6: (function(e, r, t) {
+        var a = t("y3LV");
         let o = /^\/paid-image-handoff\?token=[A-Za-z0-9_-]{43}$/;
 
         function C(e) {
@@ -119,13 +119,13 @@ export const __webpack_modules__ = {
                 return null
             }
             if (r.origin !== window.location.origin || r.username || r.password) return null;
-            let a = `${r.pathname}${r.search}${r.hash}`;
-            return o.test(a) ? a : null
+            let t = `${r.pathname}${r.search}${r.hash}`;
+            return o.test(t) ? t : null
         }
 
         function s(e) {
             let r = C(e);
-            null != r && (0, t.setCookie)("signup_redirect_url", r, {
+            null != r && (0, a.setCookie)("signup_redirect_url", r, {
                 maxAge: 1800,
                 path: "/",
                 sameSite: "lax"
@@ -133,12 +133,12 @@ export const __webpack_modules__ = {
         }
 
         function n() {
-            let e = (0, t.getCookie)("signup_redirect_url");
-            "string" == typeof e && e.startsWith("/paid-image-handoff?token=") && (0, t.deleteCookie)("signup_redirect_url", {
+            let e = (0, a.getCookie)("signup_redirect_url");
+            "string" == typeof e && e.startsWith("/paid-image-handoff?token=") && (0, a.deleteCookie)("signup_redirect_url", {
                 path: "/"
             })
         }
-        a.d(r, {
+        t.d(r, {
             a: () => n,
             b: () => C,
             c: () => s
@@ -147,14 +147,14 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.a17d6a6ece.js";
-import * as r from "./418851.a310d22457.js";
+} from "./633146.510c2d4c2a.js";
+import * as r from "./418851.ced1c298d2.js";
 e.C(r);
-import * as a from "./109308.3562fe13f3.js";
-e.C(a);
-import * as t from "./399565.7c41a02089.js";
+import * as t from "./109308.7514f132d4.js";
 e.C(t);
-import * as o from "./257798.61b55cc89c.js";
+import * as a from "./399565.7c41a02089.js";
+e.C(a);
+import * as o from "./257798.f8dfab4d2e.js";
 e.C(o);
 import * as C from "./447351.eda4c66995.js";
 e.C(C);
@@ -162,45 +162,45 @@ import * as s from "./617936.4109b40253.js";
 e.C(s);
 import * as n from "./807489.96baf824b2.js";
 e.C(n);
-import * as i from "./337882.91f09f4a71.js";
+import * as i from "./337882.a886ddfe75.js";
 e.C(i);
 import * as f from "./955979.75d3610bb4.js";
 e.C(f);
-import * as m from "./646436.cc0a492473.js";
+import * as m from "./646436.05d90fff40.js";
 e.C(m);
-import * as l from "./7078.6fddaf5ec4.js";
+import * as l from "./7078.106114d3b7.js";
 e.C(l);
-import * as c from "./200429.ba0b0ae8d2.js";
+import * as c from "./200429.b8f75009c4.js";
 e.C(c);
-import * as d from "./698524.e7d509430b.js";
+import * as d from "./698524.11b477188a.js";
 e.C(d);
-import * as p from "./956483.bd6b1345c6.js";
+import * as p from "./956483.1f8ec9f6ff.js";
 e.C(p);
-import * as u from "./87162.92d05ec456.js";
+import * as u from "./87162.8221492420.js";
 e.C(u);
-import * as h from "./396705.b372b39223.js";
+import * as h from "./396705.4dac4581d5.js";
 e.C(h);
-import * as L from "./155568.42b045474e.js";
+import * as L from "./155568.3574a86c65.js";
 e.C(L);
-import * as _ from "./731863.50a2989dfa.js";
+import * as _ from "./731863.d76d385245.js";
 e.C(_);
 import * as g from "./767086.2424b5520c.js";
 e.C(g);
-import * as w from "./76629.59d440aa04.js";
+import * as w from "./76629.c9d651bf3e.js";
 e.C(w);
-import * as j from "./514085.3e4e8191c6.js";
+import * as j from "./514085.58cc3be669.js";
 e.C(j);
-import * as b from "./204542.0b9798477e.js";
+import * as b from "./204542.8e2b8524b1.js";
 e.C(b);
-import * as V from "./982651.170d8c0a0d.js";
+import * as V from "./982651.d1de81031c.js";
 e.C(V);
-import * as M from "./673108.2217fb48eb.js";
+import * as M from "./673108.b00e716df0.js";
 e.C(M);
-import * as Z from "./487481.73eebe5ceb.js";
+import * as Z from "./487481.da25d3e963.js";
 e.C(Z);
 import * as x from "./226913.f2de3ceb87.js";
 e.C(x);
-import * as y from "./741262.0065e2dc24.js";
+import * as y from "./741262.6924c9e1db.js";
 e.C(y);
 var k = e(e.s = "wz6C").a;
 export {

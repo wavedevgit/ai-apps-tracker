@@ -8,12 +8,12 @@ export const __webpack_modules__ = {
         var a = t("HZfM"),
             n = t("ABep"),
             r = t("QosV"),
-            s = t("XnlH"),
+            s = t("iTtm"),
             i = t("zd8w"),
             l = t("G8V1");
         t("rHrT");
-        var p = t("WoME"),
-            d = t("pICO"),
+        var d = t("WoME"),
+            p = t("pICO"),
             c = t("eAav"),
             m = (0, a.gb)(function() {
                 let e, o, t, m, f, h, u = (0, r.c)(15),
@@ -21,14 +21,14 @@ export const __webpack_modules__ = {
                         locale: g
                     } = (0, s.y)(c.a).value,
                     {
-                        downloadPlatform: b,
-                        messages: w
+                        downloadPlatform: w,
+                        messages: x
                     } = (0, a.W)(),
-                    [x] = (0, a.fb)();
-                u[0] !== x ? (e = function(e) {
+                    [b] = (0, a.fb)();
+                u[0] !== b ? (e = function(e) {
                     if ("page" === e.get("target")) {
                         let o = e.getAll("page_id");
-                        return 1 === o.length && p.a.test(o[0]) ? `codex://space/${encodeURIComponent(o[0])}` : null
+                        return 1 === o.length && d.a.test(o[0]) ? `codex://space/${encodeURIComponent(o[0])}` : null
                     }
                     if ("new-thread" === e.get("target")) return "codex://threads/new";
                     if ("team-join" === e.get("target")) {
@@ -57,22 +57,22 @@ export const __webpack_modules__ = {
                         a && t.searchParams.set(o, a)
                     }
                     return t.searchParams.size > 0 ? t.toString() : null
-                }(x), u[0] = x, u[1] = e) : e = u[1];
+                }(b), u[0] = b, u[1] = e) : e = u[1];
                 let j = e;
                 return u[2] !== j ? (o = () => {
                     null != j && window.location.assign(j)
                 }, t = [j], u[2] = j, u[3] = o, u[4] = t) : (o = u[3], t = u[4]), (0, i.useEffect)(o, t), u[5] !== j ? (m = () => {
                     null != j && window.location.assign(j)
-                }, u[5] = j, u[6] = m) : m = u[6], u[7] !== j || u[8] !== b || u[9] !== m ? (f = (0, n.jsx)(d.a, {
-                    downloadPlatform: b,
+                }, u[5] = j, u[6] = m) : m = u[6], u[7] !== j || u[8] !== w || u[9] !== m ? (f = (0, n.jsx)(p.a, {
+                    downloadPlatform: w,
                     deepLink: j,
                     onOpen: m
-                }), u[7] = j, u[8] = b, u[9] = m, u[10] = f) : f = u[10], u[11] !== g || u[12] !== w || u[13] !== f ? (h = (0, n.jsx)(l.a, {
+                }), u[7] = j, u[8] = w, u[9] = m, u[10] = f) : f = u[10], u[11] !== g || u[12] !== x || u[13] !== f ? (h = (0, n.jsx)(l.a, {
                     locale: g,
                     defaultLocale: "en-US",
-                    messages: w,
+                    messages: x,
                     children: f
-                }), u[11] = g, u[12] = w, u[13] = f, u[14] = h) : h = u[14], h
+                }), u[11] = g, u[12] = x, u[13] = f, u[14] = h) : h = u[14], h
             })
     }),
     pICO: (function(e, o, t) {
@@ -83,45 +83,45 @@ export const __webpack_modules__ = {
             i = t("ygO2");
 
         function l(e) {
-            let o, t, s, l, f, h, u, g, b, w, x, j, C, k = (0, n.c)(42),
+            let o, t, s, l, f, h, u, g, w, x, b, j, C, k = (0, n.c)(42),
                 {
                     deepLink: _,
                     downloadPlatform: y,
                     status: D,
                     onOpen: P
                 } = e,
-                M = void 0 === D ? "opening" : D,
-                T = "login" === M || "cli-login" === M;
-            return k[0] !== T ? (o = T ? (0, a.jsx)(r.a, {
+                T = void 0 === D ? "opening" : D,
+                M = "login" === T || "cli-login" === T;
+            return k[0] !== M ? (o = M ? (0, a.jsx)(r.a, {
                 id: "browser.codexDeeplink.signedIn",
                 defaultMessage: "You’re signed in",
                 description: "Heading on the desktop launcher page after browser authentication succeeds"
-            }) : null, k[0] = T, k[1] = o) : o = k[1], k[2] !== M ? (t = "mobile" === M ? (0, a.jsx)(r.a, {
+            }) : null, k[0] = M, k[1] = o) : o = k[1], k[2] !== T ? (t = "mobile" === T ? (0, a.jsx)(r.a, {
                 id: "browser.codexDeeplink.mobileTitle",
                 defaultMessage: "Open the ChatGPT desktop app on your computer",
                 description: "Heading telling mobile users to use a computer to open a desktop app link"
-            }) : null, k[2] = M, k[3] = t) : t = k[3], k[4] !== M ? (s = "opening" === M ? (0, a.jsx)(r.a, {
+            }) : null, k[2] = T, k[3] = t) : t = k[3], k[4] !== T ? (s = "opening" === T ? (0, a.jsx)(r.a, {
                 id: "browser.codexDeeplink.title",
                 defaultMessage: "Opening ChatGPT…",
                 description: "Heading on a browser launcher page while it opens the ChatGPT desktop app with a chat or browser destination"
-            }) : null, k[4] = M, k[5] = s) : s = k[5], k[6] !== o || k[7] !== t || k[8] !== s ? (l = (0, a.jsxs)("h1", {
+            }) : null, k[4] = T, k[5] = s) : s = k[5], k[6] !== o || k[7] !== t || k[8] !== s ? (l = (0, a.jsxs)("h1", {
                 className: "text-3xl font-semibold",
                 children: [o, t, s]
-            }), k[6] = o, k[7] = t, k[8] = s, k[9] = l) : l = k[9], k[10] !== T ? (f = T ? (0, a.jsx)("p", {
+            }), k[6] = o, k[7] = t, k[8] = s, k[9] = l) : l = k[9], k[10] !== M ? (f = M ? (0, a.jsx)("p", {
                 className: "text-secondary",
                 children: (0, a.jsx)(r.a, {
                     id: "browser.codexDeeplink.signedInBody",
                     defaultMessage: "You’re signed in and may close this tab",
                     description: "Confirmation after desktop or CLI login finishes in the browser; closing the tab does not interrupt authentication"
                 })
-            }) : null, k[10] = T, k[11] = f) : f = k[11], k[12] !== M ? (h = "opening" === M ? (0, a.jsx)("p", {
+            }) : null, k[10] = M, k[11] = f) : f = k[11], k[12] !== T ? (h = "opening" === T ? (0, a.jsx)("p", {
                 className: "text-secondary",
                 children: (0, a.jsx)(r.a, {
                     id: "browser.codexDeeplink.body",
                     defaultMessage: "We're trying to open ChatGPT automatically. If nothing happens, download the app and try opening it again.",
                     description: "Instructions on the browser launcher page if automatic opening of a chat in the ChatGPT desktop app does not work"
                 })
-            }) : null, k[12] = M, k[13] = h) : h = k[13], k[14] !== _ || k[15] !== T ? (u = null != _ || T ? null : (0, a.jsx)("p", {
+            }) : null, k[12] = T, k[13] = h) : h = k[13], k[14] !== _ || k[15] !== M ? (u = null != _ || M ? null : (0, a.jsx)("p", {
                 role: "alert",
                 className: "text-secondary",
                 children: (0, a.jsx)(r.a, {
@@ -129,7 +129,7 @@ export const __webpack_modules__ = {
                     defaultMessage: "This link is missing the chat details ChatGPT needs to reopen your work",
                     description: "Error on the browser launcher page when the chat or browser URL is missing or invalid, so opening the desktop app is unavailable"
                 })
-            }), k[14] = _, k[15] = T, k[16] = u) : u = k[16], k[17] !== y || k[18] !== M ? (g = "opening" === M && "windows" === y ? (0, a.jsx)(i.a, {
+            }), k[14] = _, k[15] = M, k[16] = u) : u = k[16], k[17] !== y || k[18] !== T ? (g = "opening" === T && "windows" === y ? (0, a.jsx)(i.a, {
                 color: "primary",
                 size: "auth",
                 onClick: m,
@@ -138,7 +138,7 @@ export const __webpack_modules__ = {
                     defaultMessage: "Download the app",
                     description: "Download button on the browser launcher page for installing the ChatGPT desktop app without losing the chat link"
                 })
-            }) : null, k[17] = y, k[18] = M, k[19] = g) : g = k[19], k[20] !== y || k[21] !== M ? (b = "opening" === M && "mac" === y ? (0, a.jsxs)(a.Fragment, {
+            }) : null, k[17] = y, k[18] = T, k[19] = g) : g = k[19], k[20] !== y || k[21] !== T ? (w = "opening" === T && "mac" === y ? (0, a.jsxs)(a.Fragment, {
                 children: [(0, a.jsx)(i.a, {
                     color: "primary",
                     size: "auth",
@@ -151,24 +151,24 @@ export const __webpack_modules__ = {
                 }), (0, a.jsx)(i.a, {
                     color: "outlineSurface",
                     size: "auth",
-                    onClick: d,
+                    onClick: p,
                     children: (0, a.jsx)(r.a, {
                         id: "browser.codexDeeplink.downloadIntel",
                         defaultMessage: "Download for Intel Mac",
                         description: "Download button on the browser launcher page for the Intel Mac version of the ChatGPT desktop app"
                     })
                 })]
-            }) : null, k[20] = y, k[21] = M, k[22] = b) : b = k[22], k[23] !== M ? (w = "mobile" === M ? (0, a.jsx)(i.a, {
+            }) : null, k[20] = y, k[21] = T, k[22] = w) : w = k[22], k[23] !== T ? (x = "mobile" === T ? (0, a.jsx)(i.a, {
                 color: "primary",
                 size: "auth",
-                onClick: p,
+                onClick: d,
                 children: (0, a.jsx)(r.a, {
                     id: "browser.codexDeeplink.learnMore",
                     defaultMessage: "Learn more",
                     description: "Link from the mobile desktop-launcher page to information about downloading the desktop app"
                 })
-            }) : null, k[23] = M, k[24] = w) : w = k[24], k[25] !== _ || k[26] !== y || k[27] !== T || k[28] !== P || k[29] !== M ? (x = "mobile" !== M && "cli-login" !== M ? (0, a.jsx)(i.a, {
-                color: null == y || T ? "primary" : "outlineSurface",
+            }) : null, k[23] = T, k[24] = x) : x = k[24], k[25] !== _ || k[26] !== y || k[27] !== M || k[28] !== P || k[29] !== T ? (b = "mobile" !== T && "cli-login" !== T ? (0, a.jsx)(i.a, {
+                color: null == y || M ? "primary" : "outlineSurface",
                 size: "auth",
                 disabled: null == _,
                 onClick: P,
@@ -177,10 +177,10 @@ export const __webpack_modules__ = {
                     defaultMessage: "Open ChatGPT",
                     description: "Retry button on the browser launcher page for opening a chat in the ChatGPT desktop app"
                 })
-            }) : null, k[25] = _, k[26] = y, k[27] = T, k[28] = P, k[29] = M, k[30] = x) : x = k[30], k[31] !== b || k[32] !== w || k[33] !== x || k[34] !== g ? (j = (0, a.jsxs)("div", {
+            }) : null, k[25] = _, k[26] = y, k[27] = M, k[28] = P, k[29] = T, k[30] = b) : b = k[30], k[31] !== w || k[32] !== x || k[33] !== b || k[34] !== g ? (j = (0, a.jsxs)("div", {
                 className: "flex flex-col gap-3",
-                children: [g, b, w, x]
-            }), k[31] = b, k[32] = w, k[33] = x, k[34] = g, k[35] = j) : j = k[35], k[36] !== j || k[37] !== l || k[38] !== f || k[39] !== h || k[40] !== u ? (C = (0, a.jsx)("main", {
+                children: [g, w, x, b]
+            }), k[31] = w, k[32] = x, k[33] = b, k[34] = g, k[35] = j) : j = k[35], k[36] !== j || k[37] !== l || k[38] !== f || k[39] !== h || k[40] !== u ? (C = (0, a.jsx)("main", {
                 className: "flex min-h-screen flex-col items-center justify-center bg-surface px-6 py-12 text-default select-none",
                 children: (0, a.jsxs)("div", {
                     className: "flex w-full max-w-md flex-col gap-5",
@@ -189,11 +189,11 @@ export const __webpack_modules__ = {
             }), k[36] = j, k[37] = l, k[38] = f, k[39] = h, k[40] = u, k[41] = C) : C = k[41], C
         }
 
-        function p() {
+        function d() {
             return f("https://chatgpt.com/download")
         }
 
-        function d() {
+        function p() {
             return f("https://persistent.oaistatic.com/codex-app-prod/ChatGPT-latest-x64.dmg")
         }
 
@@ -217,16 +217,16 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.a17d6a6ece.js";
+} from "./633146.510c2d4c2a.js";
 import * as o from "./680612.8ff2f414f1.js";
 e.C(o);
-import * as t from "./418851.a310d22457.js";
+import * as t from "./418851.ced1c298d2.js";
 e.C(t);
-import * as a from "./109308.3562fe13f3.js";
+import * as a from "./109308.7514f132d4.js";
 e.C(a);
 import * as n from "./399565.7c41a02089.js";
 e.C(n);
-import * as r from "./257798.61b55cc89c.js";
+import * as r from "./257798.f8dfab4d2e.js";
 e.C(r);
 import * as s from "./447351.eda4c66995.js";
 e.C(s);
@@ -234,46 +234,46 @@ import * as i from "./617936.4109b40253.js";
 e.C(i);
 import * as l from "./807489.96baf824b2.js";
 e.C(l);
-import * as p from "./337882.91f09f4a71.js";
-e.C(p);
-import * as d from "./955979.75d3610bb4.js";
+import * as d from "./337882.a886ddfe75.js";
 e.C(d);
-import * as c from "./646436.cc0a492473.js";
+import * as p from "./955979.75d3610bb4.js";
+e.C(p);
+import * as c from "./646436.05d90fff40.js";
 e.C(c);
-import * as m from "./7078.6fddaf5ec4.js";
+import * as m from "./7078.106114d3b7.js";
 e.C(m);
-import * as f from "./200429.ba0b0ae8d2.js";
+import * as f from "./200429.b8f75009c4.js";
 e.C(f);
-import * as h from "./698524.e7d509430b.js";
+import * as h from "./698524.11b477188a.js";
 e.C(h);
-import * as u from "./956483.bd6b1345c6.js";
+import * as u from "./956483.1f8ec9f6ff.js";
 e.C(u);
-import * as g from "./87162.92d05ec456.js";
+import * as g from "./87162.8221492420.js";
 e.C(g);
-import * as b from "./396705.b372b39223.js";
-e.C(b);
-import * as w from "./155568.42b045474e.js";
+import * as w from "./396705.4dac4581d5.js";
 e.C(w);
-import * as x from "./731863.50a2989dfa.js";
+import * as x from "./155568.3574a86c65.js";
 e.C(x);
+import * as b from "./731863.d76d385245.js";
+e.C(b);
 import * as j from "./767086.2424b5520c.js";
 e.C(j);
-import * as C from "./76629.59d440aa04.js";
+import * as C from "./76629.c9d651bf3e.js";
 e.C(C);
-import * as k from "./514085.3e4e8191c6.js";
+import * as k from "./514085.58cc3be669.js";
 e.C(k);
-import * as _ from "./204542.0b9798477e.js";
+import * as _ from "./204542.8e2b8524b1.js";
 e.C(_);
-import * as y from "./982651.170d8c0a0d.js";
+import * as y from "./982651.d1de81031c.js";
 e.C(y);
-import * as D from "./673108.2217fb48eb.js";
+import * as D from "./673108.b00e716df0.js";
 e.C(D);
-import * as P from "./487481.73eebe5ceb.js";
+import * as P from "./487481.da25d3e963.js";
 e.C(P);
-import * as M from "./226913.f2de3ceb87.js";
-e.C(M);
-import * as T from "./965367.a3122cf762.js";
+import * as T from "./226913.f2de3ceb87.js";
 e.C(T);
+import * as M from "./965367.7af0256bef.js";
+e.C(M);
 var G = e(e.s = "f3ZR").a;
 export {
     G as
