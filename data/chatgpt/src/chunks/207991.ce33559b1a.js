@@ -1,9 +1,1 @@
-export const __rspack_esm_id = 207991;
-export const __rspack_esm_ids = [207991];
-export const __webpack_modules__ = {
-    mo2i: (function(_, o, e) {
-        _.exports = e("nNf0")(function(_, o, e) {
-            return _ + (e ? " " : "") + o.toLowerCase()
-        })
-    })
-};
+export const __rspack_esm_id=207991;export const __rspack_esm_ids=[207991];export const __webpack_modules__={mo2i:(function(_,o,e){_.exports=e("nNf0")(function(_,o,e){return _+(e?" ":"")+o.toLowerCase()})})};
