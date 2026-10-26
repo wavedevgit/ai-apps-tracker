@@ -24899,6 +24899,7 @@ ${n.join("\n")}`
                     case "upgrade_plan":
                     case "open_workspace_billing":
                         return void
+
                         function(e) {
                             let {
                                 action: t,

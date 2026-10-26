@@ -3,11 +3,11 @@ export const __rspack_esm_ids = [975054];
 export const __webpack_modules__ = {
     p0PN: (function(s, o, r) {
         r.d(o, {
-            a: () => p
+            a: () => f
         });
-        var t = r("HZfM"),
-            a = r("EkCf");
-        let p = (0, t.gb)(a.a)
+        var a = r("HZfM"),
+            t = r("EkCf");
+        let f = (0, a.gb)(t.a)
     }),
     nDjx: (function(s, o, r) {
         s.exports = r.p + "assets/appshot-logo.f0152cb4dd.png"
@@ -25,29 +25,29 @@ export const __webpack_modules__ = {
         s.exports = r.p + "assets/dictation-stop.e3bc7ebc5e.wav"
     }),
     EkCf: (function(s, o, r) {
-        var t = r("ABep"),
-            a = r("QosV"),
-            p = r("HZfM"),
-            e = r("vdvs"),
-            f = r("AXDI");
+        var a = r("ABep"),
+            t = r("QosV"),
+            f = r("HZfM"),
+            p = r("vdvs"),
+            m = r("AXDI");
 
-        function m(s) {
-            let o, r, m, d, i = (0, a.c)(9),
+        function e(s) {
+            let o, r, e, c, i = (0, t.c)(9),
                 {
-                    fallback: c
+                    fallback: d
                 } = s,
-                j = (0, p.X)();
-            if (i[0] !== c || i[1] !== j) {
-                let s = (0, p.K)(e.c, j);
-                o = f.a, r = c, m = null == s ? (0, t.jsx)(e.d, {}) : (0, p.N)(s), i[0] = c, i[1] = j, i[2] = o, i[3] = r, i[4] = m
-            } else o = i[2], r = i[3], m = i[4];
-            return i[5] !== o || i[6] !== r || i[7] !== m ? (d = (0, t.jsx)(o, {
+                b = (0, f.X)();
+            if (i[0] !== d || i[1] !== b) {
+                let s = (0, f.K)(p.c, b);
+                o = m.a, r = d, e = null == s ? (0, a.jsx)(p.d, {}) : (0, f.N)(s), i[0] = d, i[1] = b, i[2] = o, i[3] = r, i[4] = e
+            } else o = i[2], r = i[3], e = i[4];
+            return i[5] !== o || i[6] !== r || i[7] !== e ? (c = (0, a.jsx)(o, {
                 fallback: r,
-                children: m
-            }), i[5] = o, i[6] = r, i[7] = m, i[8] = d) : d = i[8], d
+                children: e
+            }), i[5] = o, i[6] = r, i[7] = e, i[8] = c) : c = i[8], c
         }
         r.d(o, {
-            a: () => m
+            a: () => e
         })
     }),
     EBQV: (function(s) {
@@ -58,56 +58,56 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as s
-} from "./633146.8ccf94f4a9.js";
+} from "./633146.ac9456b1e1.js";
 import * as o from "./680612.8ff2f414f1.js";
 s.C(o);
-import * as r from "./418851.03cabbf716.js";
+import * as r from "./418851.c327f54b65.js";
 s.C(r);
-import * as t from "./109308.7514f132d4.js";
-s.C(t);
-import * as a from "./399565.7c41a02089.js";
+import * as a from "./109308.7514f132d4.js";
 s.C(a);
-import * as p from "./257798.d071083f55.js";
-s.C(p);
-import * as e from "./447351.e9f865e3f3.js";
-s.C(e);
-import * as f from "./617936.edc210f0c8.js";
+import * as t from "./399565.7c41a02089.js";
+s.C(t);
+import * as f from "./257798.d071083f55.js";
 s.C(f);
-import * as m from "./807489.0e4754e0d5.js";
+import * as p from "./447351.35be5fdf29.js";
+s.C(p);
+import * as m from "./617936.a716616cdd.js";
 s.C(m);
-import * as d from "./337882.6b38416a54.js";
-s.C(d);
-import * as i from "./955979.9a740f167b.js";
-s.C(i);
-import * as c from "./646436.e59ecc4e08.js";
+import * as e from "./807489.cb0a7bc2fa.js";
+s.C(e);
+import * as c from "./337882.869cf69f2e.js";
 s.C(c);
-import * as j from "./7078.cf49d43062.js";
-s.C(j);
-import * as C from "./200429.b4b01eaef8.js";
-s.C(C);
-import * as b from "./698524.3083e7569a.js";
+import * as i from "./955979.e6800ce6f4.js";
+s.C(i);
+import * as d from "./646436.d857c6730f.js";
+s.C(d);
+import * as b from "./7078.c537362493.js";
 s.C(b);
-import * as n from "./956483.26c60f5f46.js";
+import * as j from "./200429.b4b01eaef8.js";
+s.C(j);
+import * as C from "./698524.e419636c63.js";
+s.C(C);
+import * as n from "./956483.a08bf8e5c8.js";
 s.C(n);
 import * as _ from "./87162.ad1e3760e6.js";
 s.C(_);
-import * as x from "./396705.6e66fc9865.js";
+import * as x from "./396705.5660aed797.js";
 s.C(x);
-import * as l from "./155568.93d82a4151.js";
+import * as l from "./155568.d52d113acf.js";
 s.C(l);
-import * as v from "./731863.d5f5792c34.js";
+import * as v from "./731863.79a03ea308.js";
 s.C(v);
-import * as u from "./767086.cf8b78e4f4.js";
+import * as u from "./767086.5c4725bfbf.js";
 s.C(u);
-import * as k from "./76629.85344d247d.js";
+import * as k from "./76629.66fdfa09f3.js";
 s.C(k);
-import * as g from "./514085.5b9f4a58fe.js";
+import * as g from "./514085.908aab937e.js";
 s.C(g);
-import * as w from "./226913.d3063b225c.js";
+import * as w from "./226913.f2de3ceb87.js";
 s.C(w);
 import * as h from "./423891.02c7738d11.js";
 s.C(h);
-import * as A from "./975054.af0bfbd5d4.js";
+import * as A from "./975054.371e7bdb22.js";
 s.C(A);
 var D = s(s.s = "p0PN").a;
 export {

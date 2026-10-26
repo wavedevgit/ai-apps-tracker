@@ -35,8 +35,8 @@ export const __webpack_modules__ = {
             m = t("WWY6");
         let c = /^[A-Za-z0-9_-]{43}$/;
 
-        function d() {
-            let e, r, t, d, p, u, h, L, _ = (0, o.c)(19),
+        function p() {
+            let e, r, t, p, d, u, h, L, _ = (0, o.c)(19),
                 g = (0, n.X)();
             if (_[0] !== g.search) {
                 let t = new URLSearchParams(g.search),
@@ -45,8 +45,8 @@ export const __webpack_modules__ = {
             } else e = _[1], r = _[2];
             let w = e;
             _[3] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, f.getClientBootstrap)(), _[3] = t) : t = _[3];
-            let j = "logged_in" === t.authStatus;
-            _[4] !== r ? (d = ["paid-image-handoff-redeem", r], p = async e => {
+            let b = "logged_in" === t.authStatus;
+            _[4] !== r ? (p = ["paid-image-handoff-redeem", r], d = async e => {
                 let {
                     signal: t
                 } = e, a = (0, l.c)();
@@ -65,25 +65,25 @@ export const __webpack_modules__ = {
                 let n = new URL("/", window.location.origin);
                 for (let e of (n.searchParams.set(l.a, "submit"), n.searchParams.set("skip_instant_query", "1"), Object.keys(s))) n.searchParams.set(e, s[e]);
                 return n.toString()
-            }, _[4] = r, _[5] = d, _[6] = p) : (d = _[5], p = _[6]);
-            let b = j && w;
-            _[7] !== d || _[8] !== p || _[9] !== b ? (u = {
-                queryKey: d,
-                queryFn: p,
-                enabled: b,
+            }, _[4] = r, _[5] = p, _[6] = d) : (p = _[5], d = _[6]);
+            let j = b && w;
+            _[7] !== p || _[8] !== d || _[9] !== j ? (u = {
+                queryKey: p,
+                queryFn: d,
+                enabled: j,
                 staleTime: 1 / 0,
                 gcTime: 0,
                 retry: !1,
                 refetchOnWindowFocus: !1,
                 refetchOnReconnect: !1
-            }, _[7] = d, _[8] = p, _[9] = b, _[10] = u) : u = _[10];
+            }, _[7] = p, _[8] = d, _[9] = j, _[10] = u) : u = _[10];
             let {
                 data: V,
                 isError: M
             } = (0, C.a)(u);
             if (_[11] !== V ? (h = () => {
                     null != V && window.location.replace(V)
-                }, L = [V], _[11] = V, _[12] = h, _[13] = L) : (h = _[12], L = _[13]), (0, s.useEffect)(h, L), w && !j) {
+                }, L = [V], _[11] = V, _[12] = h, _[13] = L) : (h = _[12], L = _[13]), (0, s.useEffect)(h, L), w && !b) {
                 let e, t, o = `/paid-image-handoff?token=${encodeURIComponent(r)}`;
                 _[14] !== o ? (e = new URLSearchParams({
                     callback_path: o
@@ -104,7 +104,7 @@ export const __webpack_modules__ = {
             return null
         }
         t.d(r, {
-            BrowserPaidImageHandoffPage: () => d
+            BrowserPaidImageHandoffPage: () => p
         })
     }),
     WWY6: (function(e, r, t) {
@@ -147,8 +147,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.8ccf94f4a9.js";
-import * as r from "./418851.03cabbf716.js";
+} from "./633146.ac9456b1e1.js";
+import * as r from "./418851.c327f54b65.js";
 e.C(r);
 import * as t from "./109308.7514f132d4.js";
 e.C(t);
@@ -156,43 +156,43 @@ import * as a from "./399565.7c41a02089.js";
 e.C(a);
 import * as o from "./257798.d071083f55.js";
 e.C(o);
-import * as C from "./447351.e9f865e3f3.js";
+import * as C from "./447351.35be5fdf29.js";
 e.C(C);
-import * as s from "./617936.edc210f0c8.js";
+import * as s from "./617936.a716616cdd.js";
 e.C(s);
-import * as n from "./807489.0e4754e0d5.js";
+import * as n from "./807489.cb0a7bc2fa.js";
 e.C(n);
-import * as i from "./337882.6b38416a54.js";
+import * as i from "./337882.869cf69f2e.js";
 e.C(i);
-import * as l from "./955979.9a740f167b.js";
+import * as l from "./955979.e6800ce6f4.js";
 e.C(l);
-import * as f from "./646436.e59ecc4e08.js";
+import * as f from "./646436.d857c6730f.js";
 e.C(f);
-import * as m from "./7078.cf49d43062.js";
+import * as m from "./7078.c537362493.js";
 e.C(m);
 import * as c from "./200429.b4b01eaef8.js";
 e.C(c);
-import * as d from "./698524.3083e7569a.js";
-e.C(d);
-import * as p from "./956483.26c60f5f46.js";
+import * as p from "./698524.e419636c63.js";
 e.C(p);
+import * as d from "./956483.a08bf8e5c8.js";
+e.C(d);
 import * as u from "./87162.ad1e3760e6.js";
 e.C(u);
-import * as h from "./396705.6e66fc9865.js";
+import * as h from "./396705.5660aed797.js";
 e.C(h);
-import * as L from "./155568.93d82a4151.js";
+import * as L from "./155568.d52d113acf.js";
 e.C(L);
-import * as _ from "./731863.d5f5792c34.js";
+import * as _ from "./731863.79a03ea308.js";
 e.C(_);
-import * as g from "./767086.cf8b78e4f4.js";
+import * as g from "./767086.5c4725bfbf.js";
 e.C(g);
-import * as w from "./76629.85344d247d.js";
+import * as w from "./76629.66fdfa09f3.js";
 e.C(w);
-import * as j from "./514085.5b9f4a58fe.js";
-e.C(j);
-import * as b from "./226913.d3063b225c.js";
+import * as b from "./514085.908aab937e.js";
 e.C(b);
-import * as V from "./741262.29c89bc0aa.js";
+import * as j from "./226913.f2de3ceb87.js";
+e.C(j);
+import * as V from "./741262.da7f1358fd.js";
 e.C(V);
 var M = e(e.s = "wz6C").a;
 export {
