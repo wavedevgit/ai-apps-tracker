@@ -42,7 +42,7 @@ export const __webpack_modules__ = {
             r = a("wvhd"),
             c = a("xvAb"),
             d = a("vhdp");
-        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(982651), a.e(673108), a.e(487481), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
+        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
             fallback: (0, s.jsx)(c.b, {}),
             errorFallback: () => (0, s.jsx)(r.a, {
                 result: void 0,
@@ -480,67 +480,59 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.510c2d4c2a.js";
+} from "./633146.8ccf94f4a9.js";
 import * as t from "./680612.8ff2f414f1.js";
 e.C(t);
-import * as a from "./418851.ced1c298d2.js";
+import * as a from "./418851.03cabbf716.js";
 e.C(a);
 import * as s from "./109308.7514f132d4.js";
 e.C(s);
 import * as i from "./399565.7c41a02089.js";
 e.C(i);
-import * as n from "./257798.f8dfab4d2e.js";
+import * as n from "./257798.d071083f55.js";
 e.C(n);
-import * as o from "./447351.eda4c66995.js";
+import * as o from "./447351.e9f865e3f3.js";
 e.C(o);
-import * as l from "./617936.4109b40253.js";
+import * as l from "./617936.edc210f0c8.js";
 e.C(l);
-import * as r from "./807489.96baf824b2.js";
+import * as r from "./807489.0e4754e0d5.js";
 e.C(r);
-import * as c from "./337882.a886ddfe75.js";
+import * as c from "./337882.6b38416a54.js";
 e.C(c);
-import * as d from "./955979.75d3610bb4.js";
+import * as d from "./955979.9a740f167b.js";
 e.C(d);
-import * as m from "./646436.05d90fff40.js";
+import * as m from "./646436.e59ecc4e08.js";
 e.C(m);
-import * as f from "./7078.106114d3b7.js";
+import * as f from "./7078.cf49d43062.js";
 e.C(f);
-import * as u from "./200429.b8f75009c4.js";
+import * as u from "./200429.b4b01eaef8.js";
 e.C(u);
-import * as h from "./698524.11b477188a.js";
+import * as h from "./698524.3083e7569a.js";
 e.C(h);
-import * as g from "./956483.1f8ec9f6ff.js";
+import * as g from "./956483.26c60f5f46.js";
 e.C(g);
-import * as x from "./87162.8221492420.js";
+import * as x from "./87162.ad1e3760e6.js";
 e.C(x);
-import * as p from "./396705.4dac4581d5.js";
+import * as p from "./396705.6e66fc9865.js";
 e.C(p);
-import * as C from "./155568.3574a86c65.js";
+import * as C from "./155568.93d82a4151.js";
 e.C(C);
-import * as b from "./731863.d76d385245.js";
+import * as b from "./731863.d5f5792c34.js";
 e.C(b);
-import * as _ from "./767086.2424b5520c.js";
+import * as _ from "./767086.cf8b78e4f4.js";
 e.C(_);
-import * as v from "./76629.c9d651bf3e.js";
+import * as v from "./76629.85344d247d.js";
 e.C(v);
-import * as j from "./514085.58cc3be669.js";
+import * as j from "./514085.5b9f4a58fe.js";
 e.C(j);
-import * as y from "./204542.8e2b8524b1.js";
+import * as y from "./226913.d3063b225c.js";
 e.C(y);
-import * as w from "./982651.d1de81031c.js";
+import * as w from "./24435.9027fa174c.js";
 e.C(w);
-import * as k from "./673108.b00e716df0.js";
-e.C(k);
-import * as L from "./487481.da25d3e963.js";
-e.C(L);
-import * as M from "./226913.f2de3ceb87.js";
-e.C(M);
-import * as V from "./24435.80f6d2d798.js";
-e.C(V);
-var S = e(e.s = "HKPa"),
-    N = S.a,
-    A = S.b;
+var k = e(e.s = "HKPa"),
+    L = k.a,
+    M = k.b;
 export {
-    N as
-    default, A as handle
+    L as
+    default, M as handle
 };
