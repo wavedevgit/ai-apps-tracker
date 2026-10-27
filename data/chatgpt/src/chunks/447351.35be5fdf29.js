@@ -17232,6 +17232,7 @@ ${t}
                                     return !1
                                 }(_, o, e, t, n, l)) return;
                             if (g(_, o) && "table" === e) return void
+
                             function(e, t, n) {
                                 let i = x(e, "table");
                                 i.get("schemaVersion") !== (7 === n ? 3 : 2) && (0, r.q)("Unsupported presentation table schema"), w(i.get("properties"), t, 3);

@@ -1,11 +1,11 @@
 export const __rspack_esm_id = 631517;
 export const __rspack_esm_ids = [631517];
 export const __webpack_modules__ = {
-    P1A4: (function(n, t, e) {
+    mltJ: (function(n, t, e) {
         e.d(t, {
             a: () => C
         });
-        var i = e("HZfM"),
+        var i = e("jqIZ"),
             a = e("ABep"),
             c = e("QosV"),
             l = e("ASxG"),
@@ -227,7 +227,7 @@ export const __webpack_modules__ = {
             a = e("QosV"),
             c = e("T0Rc"),
             l = e("zd8w"),
-            g = e("HZfM"),
+            g = e("jqIZ"),
             M = e("ASxG"),
             s = e("HnGz"),
             o = e("l5Vd"),
@@ -264,11 +264,11 @@ export const __webpack_modules__ = {
                 } = (0, C.a)(),
                 E = (0, g.X)(),
                 O = (0, l.useContext)(g.q).matches.at(-1)?.route.children,
-                b = (0, g.V)(w),
-                Y = (0, g.V)(z?.returnTo ?? w),
+                Y = (0, g.V)(w),
+                b = (0, g.V)(z?.returnTo ?? w),
                 k = (0, g.V)(T),
                 B = (0, u.k)();
-            y[0] !== x || y[1] !== b || y[2] !== z || y[3] !== E.key || y[4] !== v || y[5] !== Y || y[6] !== k || y[7] !== S ? (t = ["workspace-link-account", E.key, S, x, b, k, v, z, Y], y[0] = x, y[1] = b, y[2] = z, y[3] = E.key, y[4] = v, y[5] = Y, y[6] = k, y[7] = S, y[8] = t) : t = y[8], y[9] !== x || y[10] !== Z || y[11] !== w || y[12] !== z || y[13] !== E.pathname || y[14] !== E.search || y[15] !== v || y[16] !== Y || y[17] !== B || y[18] !== k ? (e = async n => {
+            y[0] !== x || y[1] !== Y || y[2] !== z || y[3] !== E.key || y[4] !== v || y[5] !== b || y[6] !== k || y[7] !== S ? (t = ["workspace-link-account", E.key, S, x, Y, k, v, z, b], y[0] = x, y[1] = Y, y[2] = z, y[3] = E.key, y[4] = v, y[5] = b, y[6] = k, y[7] = S, y[8] = t) : t = y[8], y[9] !== x || y[10] !== Z || y[11] !== w || y[12] !== z || y[13] !== E.pathname || y[14] !== E.search || y[15] !== v || y[16] !== b || y[17] !== B || y[18] !== k ? (e = async n => {
                 let {
                     signal: t
                 } = n, e = await r.Request.safeGet("/accounts/check/{version}", {
@@ -308,9 +308,9 @@ export const __webpack_modules__ = {
                     }
                     t.throwIfAborted()
                 }
-                let M = Y;
+                let M = b;
                 if (null != z) {
-                    let n = new URL(Y, window.location.origin);
+                    let n = new URL(b, window.location.origin);
                     n.searchParams.set("handoff_attempt", !1 === i.can_access_with_session ? "authenticate" : "select"), M = n.toString()
                 }
                 return await (0, L.switchBrowserWorkspaceAndRefresh)({
@@ -324,7 +324,7 @@ export const __webpack_modules__ = {
                     canAccessWithSession: i.can_access_with_session,
                     ssoConnectionName: i.sso_connection_name
                 }, B, M, t), "switching"
-            }, y[9] = x, y[10] = Z, y[11] = w, y[12] = z, y[13] = E.pathname, y[14] = E.search, y[15] = v, y[16] = Y, y[17] = B, y[18] = k, y[19] = e) : e = y[19], y[20] !== t || y[21] !== e ? (M = {
+            }, y[9] = x, y[10] = Z, y[11] = w, y[12] = z, y[13] = E.pathname, y[14] = E.search, y[15] = v, y[16] = b, y[17] = B, y[18] = k, y[19] = e) : e = y[19], y[20] !== t || y[21] !== e ? (M = {
                 queryKey: t,
                 queryFn: e,
                 staleTime: 1 / 0,
@@ -414,16 +414,16 @@ export const __webpack_modules__ = {
             WorkspaceLinkRoute: () => y
         })
     }),
-    EBQV: (function(n) {
-        n.exports = import("/cdn/assets/dotnet.js").then(function(n) {
+    EBQV: (function(t) {
+        t.exports = n.ir("/cdn/assets/dotnet.js").then(function(n) {
             return n
         })
     })
 };
 import {
     __webpack_require__ as n
-} from "./633146.ac9456b1e1.js";
-import * as t from "./418851.c327f54b65.js";
+} from "./633146.3772bb65f2.js";
+import * as t from "./418851.f73cc339e0.js";
 n.C(t);
 import * as e from "./109308.7514f132d4.js";
 n.C(e);
@@ -431,45 +431,45 @@ import * as i from "./399565.7c41a02089.js";
 n.C(i);
 import * as a from "./257798.d071083f55.js";
 n.C(a);
-import * as c from "./447351.35be5fdf29.js";
+import * as c from "./447351.235d9feb9b.js";
 n.C(c);
-import * as l from "./617936.a716616cdd.js";
+import * as l from "./617936.5a9a90c450.js";
 n.C(l);
-import * as g from "./807489.cb0a7bc2fa.js";
+import * as g from "./807489.8dca38b3d3.js";
 n.C(g);
-import * as M from "./337882.869cf69f2e.js";
+import * as M from "./337882.9e5e4eca02.js";
 n.C(M);
-import * as s from "./955979.e6800ce6f4.js";
+import * as s from "./955979.48571145f4.js";
 n.C(s);
-import * as o from "./646436.d857c6730f.js";
+import * as o from "./646436.7c73091269.js";
 n.C(o);
-import * as I from "./7078.c537362493.js";
+import * as I from "./7078.2bd0b87ab7.js";
 n.C(I);
-import * as C from "./200429.b4b01eaef8.js";
+import * as C from "./200429.2bc20b9a34.js";
 n.C(C);
-import * as r from "./698524.e419636c63.js";
+import * as r from "./698524.b544aec8f4.js";
 n.C(r);
-import * as j from "./956483.a08bf8e5c8.js";
+import * as j from "./956483.be04337593.js";
 n.C(j);
 import * as h from "./87162.ad1e3760e6.js";
 n.C(h);
-import * as N from "./396705.5660aed797.js";
+import * as N from "./396705.8045a843b9.js";
 n.C(N);
-import * as d from "./155568.d52d113acf.js";
+import * as d from "./155568.dca4d10394.js";
 n.C(d);
-import * as L from "./731863.79a03ea308.js";
+import * as L from "./731863.f83b49d43f.js";
 n.C(L);
-import * as u from "./767086.5c4725bfbf.js";
+import * as u from "./767086.e5c70972cb.js";
 n.C(u);
-import * as A from "./76629.66fdfa09f3.js";
+import * as A from "./76629.6e18d367a6.js";
 n.C(A);
-import * as f from "./514085.908aab937e.js";
+import * as f from "./514085.399728d0f5.js";
 n.C(f);
 import * as p from "./226913.f2de3ceb87.js";
 n.C(p);
-import * as y from "./631517.4922b75ad0.js";
+import * as y from "./631517.22828da895.js";
 n.C(y);
-var D = n(n.s = "P1A4").a;
+var D = n(n.s = "mltJ").a;
 export {
     D as
     default
