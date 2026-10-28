@@ -1,1 +1,116 @@
-export const __rspack_esm_id=340918;export const __rspack_esm_ids=[340918];export const __webpack_modules__={g2kg:(function(s,o,r){r.d(o,{a:()=>f});var a=r("jqIZ"),t=r("EkCf");let f=(0,a.fb)(t.a)}),nDjx:(function(s,o,r){s.exports=r.p+"assets/appshot-logo.f0152cb4dd.png"}),hIAo:(function(s,o,r){s.exports=r.p+"assets/codex-app-ga-logo.dfddfb85d7.png"}),jZWr:(function(s,o,r){s.exports=r.p+"assets/dictation-error.f54db4f9bb.wav"}),OCvz:(function(s,o,r){s.exports=r.p+"assets/dictation-start.f6efcb404f.wav"}),DJ2e:(function(s,o,r){s.exports=r.p+"assets/dictation-stop.e3bc7ebc5e.wav"}),EkCf:(function(s,o,r){var a=r("ABep"),t=r("QosV"),f=r("jqIZ"),e=r("vdvs"),m=r("AXDI");function p(s){let o,r,p,c,i=(0,t.c)(9),{fallback:d}=s,j=(0,f.W)();if(i[0]!==d||i[1]!==j){let s=(0,f.J)(e.c,j);o=m.a,r=d,p=null==s?(0,a.jsx)(e.d,{}):(0,f.M)(s),i[0]=d,i[1]=j,i[2]=o,i[3]=r,i[4]=p}else o=i[2],r=i[3],p=i[4];return i[5]!==o||i[6]!==r||i[7]!==p?(c=(0,a.jsx)(o,{fallback:r,children:p}),i[5]=o,i[6]=r,i[7]=p,i[8]=c):c=i[8],c}r.d(o,{a:()=>p})}),EBQV:(function(o){o.exports=s.ir("/cdn/assets/dotnet.js").then(function(s){return s})})};import{__webpack_require__ as s}from"./633146.61f0491ce0.js";import*as o from"./680612.8ff2f414f1.js";s.C(o);import*as r from"./418851.37ba1688ab.js";s.C(r);import*as a from"./109308.7514f132d4.js";s.C(a);import*as t from"./399565.7c41a02089.js";s.C(t);import*as f from"./257798.ecaf95b08c.js";s.C(f);import*as e from"./153380.fac5aad1a7.js";s.C(e);import*as m from"./617936.69eb1d58e9.js";s.C(m);import*as p from"./807489.0a94f58c57.js";s.C(p);import*as c from"./337882.89fb622cfb.js";s.C(c);import*as i from"./955979.6f6a043135.js";s.C(i);import*as d from"./646436.99d1984453.js";s.C(d);import*as j from"./7078.e0cf9f7ce6.js";s.C(j);import*as b from"./200429.2bc20b9a34.js";s.C(b);import*as C from"./698524.529b86f366.js";s.C(C);import*as n from"./956483.0cb1041e77.js";s.C(n);import*as _ from"./87162.ad1e3760e6.js";s.C(_);import*as x from"./396705.d23a800b36.js";s.C(x);import*as l from"./155568.55fb5c25d7.js";s.C(l);import*as g from"./731863.2bffdc8e46.js";s.C(g);import*as k from"./767086.c356df9f13.js";s.C(k);import*as v from"./76629.ffb823c03a.js";s.C(v);import*as u from"./514085.68b2167d83.js";s.C(u);import*as w from"./226913.f2de3ceb87.js";s.C(w);import*as h from"./771825.df6676d8e9.js";s.C(h);import*as I from"./340918.37b1f03e34.js";s.C(I);var A=s(s.s="g2kg").a;export{A as default};
+export const __rspack_esm_id = 340918;
+export const __rspack_esm_ids = [340918];
+export const __webpack_modules__ = {
+    g2kg: (function(s, o, r) {
+        r.d(o, {
+            a: () => f
+        });
+        var a = r("jqIZ"),
+            t = r("EkCf");
+        let f = (0, a.fb)(t.a)
+    }),
+    nDjx: (function(s, o, r) {
+        s.exports = r.p + "assets/appshot-logo.f0152cb4dd.png"
+    }),
+    hIAo: (function(s, o, r) {
+        s.exports = r.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    }),
+    jZWr: (function(s, o, r) {
+        s.exports = r.p + "assets/dictation-error.f54db4f9bb.wav"
+    }),
+    OCvz: (function(s, o, r) {
+        s.exports = r.p + "assets/dictation-start.f6efcb404f.wav"
+    }),
+    DJ2e: (function(s, o, r) {
+        s.exports = r.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    }),
+    EkCf: (function(s, o, r) {
+        var a = r("ABep"),
+            t = r("QosV"),
+            f = r("jqIZ"),
+            e = r("vdvs"),
+            m = r("AXDI");
+
+        function p(s) {
+            let o, r, p, c, i = (0, t.c)(9),
+                {
+                    fallback: d
+                } = s,
+                j = (0, f.W)();
+            if (i[0] !== d || i[1] !== j) {
+                let s = (0, f.J)(e.c, j);
+                o = m.a, r = d, p = null == s ? (0, a.jsx)(e.d, {}) : (0, f.M)(s), i[0] = d, i[1] = j, i[2] = o, i[3] = r, i[4] = p
+            } else o = i[2], r = i[3], p = i[4];
+            return i[5] !== o || i[6] !== r || i[7] !== p ? (c = (0, a.jsx)(o, {
+                fallback: r,
+                children: p
+            }), i[5] = o, i[6] = r, i[7] = p, i[8] = c) : c = i[8], c
+        }
+        r.d(o, {
+            a: () => p
+        })
+    }),
+    EBQV: (function(o) {
+        o.exports = s.ir("/cdn/assets/dotnet.js").then(function(s) {
+            return s
+        })
+    })
+};
+import {
+    __webpack_require__ as s
+} from "./633146.61f0491ce0.js";
+import * as o from "./680612.8ff2f414f1.js";
+s.C(o);
+import * as r from "./418851.37ba1688ab.js";
+s.C(r);
+import * as a from "./109308.7514f132d4.js";
+s.C(a);
+import * as t from "./399565.7c41a02089.js";
+s.C(t);
+import * as f from "./257798.ecaf95b08c.js";
+s.C(f);
+import * as e from "./153380.fac5aad1a7.js";
+s.C(e);
+import * as m from "./617936.69eb1d58e9.js";
+s.C(m);
+import * as p from "./807489.0a94f58c57.js";
+s.C(p);
+import * as c from "./337882.89fb622cfb.js";
+s.C(c);
+import * as i from "./955979.6f6a043135.js";
+s.C(i);
+import * as d from "./646436.99d1984453.js";
+s.C(d);
+import * as j from "./7078.e0cf9f7ce6.js";
+s.C(j);
+import * as b from "./200429.2bc20b9a34.js";
+s.C(b);
+import * as C from "./698524.529b86f366.js";
+s.C(C);
+import * as n from "./956483.0cb1041e77.js";
+s.C(n);
+import * as _ from "./87162.ad1e3760e6.js";
+s.C(_);
+import * as x from "./396705.d23a800b36.js";
+s.C(x);
+import * as l from "./155568.55fb5c25d7.js";
+s.C(l);
+import * as g from "./731863.2bffdc8e46.js";
+s.C(g);
+import * as k from "./767086.c356df9f13.js";
+s.C(k);
+import * as v from "./76629.ffb823c03a.js";
+s.C(v);
+import * as u from "./514085.68b2167d83.js";
+s.C(u);
+import * as w from "./226913.f2de3ceb87.js";
+s.C(w);
+import * as h from "./771825.df6676d8e9.js";
+s.C(h);
+import * as I from "./340918.37b1f03e34.js";
+s.C(I);
+var A = s(s.s = "g2kg").a;
+export {
+    A as
+    default
+};
