@@ -25903,6 +25903,7 @@ export const __webpack_modules__ = {
                                 } catch (e) {
                                     if (!(e instanceof w.a) || !E(e)) throw ec = ec || (0, I.d)(e), e;
                                     await
+
                                     function(e, t) {
                                         return t.throwIfAborted(), new Promise(a => {
                                             let n = () => {
@@ -32520,6 +32521,7 @@ export const __webpack_modules__ = {
                 w = null != _ && _.length > 0 && _.every(e => "page_write_forbidden" === e || "write-access-denied" === e);
             if (("pages.realtime.notice" === t || "pages.realtime.recovery" === t || t.startsWith("pages.realtime.recovery.")) && (f?.pagesErrorCode == null || "page_write_forbidden" === f.pagesErrorCode || "write-access-denied" === f.pagesErrorCode) && (b?.localSaveStatus !== "blocked" || "write_access_denied" === b.noticeReason) && (b?.noticeReason == null || "write_access_denied" === b.noticeReason || "recovery_drafts" === b.noticeReason) && (null == a || a instanceof r.a && "write-access-denied" === a.code || a instanceof d.a && "page_write_forbidden" === a.errorCode) && (null == _ || 0 === _.length || w) && (f?.errorUiType === n.CodexPagesErrorUiType.CODEX_PAGES_ERROR_UI_TYPE_WRITE_ACCESS_DENIED || b?.noticeReason === "write_access_denied" || w) || a instanceof s.a && !0 === a.silent && (f?.errorUiType == null || f.errorUiType === n.CodexPagesErrorUiType.CODEX_PAGES_ERROR_UI_TYPE_NONE)) return;
             if (!(f?.documentType != null && "page" !== f.documentType || t.startsWith("pages.native.") || t.startsWith("pages.artifact.") || t.startsWith("pages.presentation.") || "pages.file.preview.presentation-import" === t || "pages.file.preview.workbook-import" === t || "pages.document.import" === t || "pages.catalog.recover" === t && null == o || "pages.companion.persist" === t && f?.documentType == null) && (null == o || null != o.isOfflineEngine)) return void
+
             function(e, t, a, r, s) {
                 let o, g = v(t, a);
                 try {
