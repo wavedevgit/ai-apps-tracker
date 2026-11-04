@@ -27450,6 +27450,7 @@ ${JSON.stringify(f)}` : "")
                                 } catch (e) {
                                     if (!(e instanceof I.a) || !A(e)) throw eg = eg || (0, S.d)(e), e;
                                     await
+
                                     function(e, t) {
                                         return t.throwIfAborted(), new Promise(n => {
                                             let a = () => {
@@ -34916,6 +34917,7 @@ ${JSON.stringify(f)}` : "")
                     k = null != I && I.length > 0 && I.every(e => "page_write_forbidden" === e || "write-access-denied" === e);
                 if (("pages.realtime.notice" === t || "pages.realtime.recovery" === t || t.startsWith("pages.realtime.recovery.")) && (_?.pagesErrorCode == null || "page_write_forbidden" === _.pagesErrorCode || "write-access-denied" === _.pagesErrorCode) && (w?.localSaveStatus !== "blocked" || "write_access_denied" === w.noticeReason) && (w?.noticeReason == null || "write_access_denied" === w.noticeReason || "recovery_drafts" === w.noticeReason) && (null == n || n instanceof r.a && "write-access-denied" === n.code || n instanceof d.a && "page_write_forbidden" === n.errorCode) && (null == I || 0 === I.length || k) && (_?.errorUiType === a.CodexPagesErrorUiType.CODEX_PAGES_ERROR_UI_TYPE_WRITE_ACCESS_DENIED || w?.noticeReason === "write_access_denied" || k) || n instanceof s.a && !0 === n.silent && (_?.errorUiType == null || _.errorUiType === a.CodexPagesErrorUiType.CODEX_PAGES_ERROR_UI_TYPE_NONE)) return;
                 if (!(o?.nativeDocumentType != null || _?.documentType != null && "page" !== _.documentType || t.startsWith("pages.native.") || t.startsWith("pages.artifact.") || t.startsWith("pages.presentation.") || "pages.file.preview.presentation-import" === t || "pages.file.preview.workbook-import" === t || "pages.document.import" === t || "pages.catalog.recover" === t && null == o || "pages.companion.persist" === t && _?.documentType == null) && (null == o || null != o.isOfflineEngine)) return void
+
                 function(e, t, n, r, s) {
                     let o, h = v(t, n);
                     try {
