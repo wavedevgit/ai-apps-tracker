@@ -1,3 +1,360 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/bbbe3e8f-bhtw4fqxq908748m.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-mdvd4786a87166cc.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/8b34dbc2-lmwubajnld74ksfm.js","assets/conversation-small-bcbq46iub1p0ca1t.js","assets/30901919-s8bko9nrkqwv6i4f.js","assets/c470f5ab-jwd0o7jx9i9say9k.js","assets/0e5afe53-hxm3yzzjqriayom4.js","assets/conversation-small-ep6mlz5m.css","assets/82782bc9-b4xbouzwkkyrfqq2.js","assets/b2cbd5c7-5wvc8mg94bjjggd5.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{IU as n,LU as r,Lit as i,Nrt as a,Prt as o,Rit as s,U1 as c,cS as l,hR as u,mR as d,q1 as f,sS as p,sst as m}from"./4813494d-mdvd4786a87166cc.js";import{At as h,Bn as g,Ht as _,Ln as v,Lt as ee,N as te,Nt as ne,O as re,Q as y,Rn as b,Vn as x,Vt as ie,cn as S,ln as C,s as w,wn as T,zn as ae}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$X as E,Art as oe,JX as se,Jrt as D,Mrt as O,Nrt as ce,RTn as le,SWt as k,Sit as ue,YX as de,aTn as fe,bWt as pe,iNt as A,jrt as me,kWt as j,oNt as he,oTn as ge,pTn as M,wit as _e,zTn as ve}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Ev as ye,Gv as be,Kv as xe,Mv as Se,Qu as N,Rv as Ce,Uv as we,Xu as Te,mv as Ee,qv as De,zv as P}from"./8b34dbc2-lmwubajnld74ksfm.js";import{n as Oe,t as F}from"./65b7af15-mzlzo0bk10esjdjl.js";import{n as ke,r as I}from"./db2560a5-pd1jb0v3ae1oznay.js";import{n as L,t as R}from"./1a794ff6-j7gfwn0fzbxt3dgg.js";import{n as z,r as B}from"./5fec77d9-khi0fwc0nezg78rh.js";var V,H=e((()=>{j(),V=e=>e===k.SlackDelegationFallback||e===k.MicrosoftTeamsDelegationFallback}));function U(){"use forget";let e=(0,W.c)(13),t=h(),[n]=ie(),r=_e();if(!s()){let i=n.get(`sso_required`),a;e[0]===r?a=e[1]:(a=V(r)?r:void 0,e[0]=r,e[1]=a);let o=`${t.pathname}${t.search}`,s;e[2]===n?s=e[3]:(s=n.get(`sso_connection`)?.trim()||null,e[2]=n,e[3]=s);let c=i===`true`||i!==`false`&&null,l;e[4]===n?l=e[5]:(l=n.get(`workspace_id`)?.trim()||void 0,e[4]=n,e[5]=l);let u;return e[6]!==a||e[7]!==o||e[8]!==s||e[9]!==c||e[10]!==l?(u=(0,K.jsx)(R,{contentType:`app`,entryCta:a,returnPath:o,ssoConnection:s,ssoRequired:c,workspaceId:l}),e[6]=a,e[7]=o,e[8]=s,e[9]=c,e[10]=l,e[11]=u):u=e[11],u}let i;return e[12]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,K.jsx)(q,{}),e[12]=i):i=e[12],i}async function Ae(e){try{let{completePluginSuggestionOAuth:t}=await S(async()=>{let{completePluginSuggestionOAuth:e}=await import(`./bbbe3e8f-bhtw4fqxq908748m.js`).then(e=>(e.r(),e.a));return{completePluginSuggestionOAuth:e}},__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12]));await t(e)}catch{o.warn(`plugin_suggestion_continuation_unavailable`)}}var W,G,K,je,Me,q,J,Y,X=e((()=>{y(),W=T(),F(),M(),I(),L(),N(),H(),p(),E(),D(),j(),ve(),O(),xe(),P(),f(),r(),i(),A(),d(),a(),w(),G=t(x()),b(),B(),K=g(),C(),je=e=>e.replace(/\/connect\/?$/,``),Me=(e,t)=>{let n=e.indexOf(`?`);return n!==-1&&new URLSearchParams(e.slice(n+1)).has(t)},q=()=>{"use forget";let e=(0,W.c)(77),t=ae(),{id:r}=ee(),i=h(),a=ne(),o=te(),d;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(d=n(),e[0]=d):d=e[0];let f=d,[p]=ie(),g;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(g=s(),e[1]=g):g=e[1];let _=g,v=(0,G.useRef)(!1),y=(0,G.useRef)(!1),b=ue(),x=_e(),S;e[2]===i.pathname?S=e[3]:(S=je(i.pathname),e[2]=i.pathname,e[3]=S);let C=`${S}${i.search}`,w,T,E,D,O,A,j;if(e[4]!==C||e[5]!==r||e[6]!==i.hash||e[7]!==i.pathname||e[8]!==i.search||e[9]!==p){let t=p.get(Ee),n=t&&u(t)?t:void 0;O=ye(n);let a;e[17]===p?a=e[18]:(a=p.get(`mfa_continuation`),e[17]=p,e[18]=a);let o=a===`1`,s=r&&O?me({connectorId:r,installAttemptId:O}):void 0;E=s?.accountId??(r?be({appId:r,installAttemptId:O}):void 0);let d;e[19]===Symbol.for(`react.memo_cache_sentinel`)?(d=c(),e[19]=d):d=e[19];let f=d;D=_&&(o&&(!O||!s?.accountId||!s?.normalizedAccountUserId)||E!==void 0&&f?.id!==E||s?.normalizedAccountUserId!==void 0&&f?.normalizedAccountUserId!==s.normalizedAccountUserId);let m=p.get(pe),h=m&&u(m)?m:void 0,g=n??h??`${C}${i.hash}`,v=n??h??C;if(A=O&&!Ce(p).isNativeMobileView?`${i.pathname}${i.search}${i.hash}`:v,j=l(v)?A:void 0,w=Se({returnTo:g}),T=Se({returnTo:v}),O&&!Ce(p).isNativeMobileView){let e=new URL(T,`https://chatgpt.com`);for(let t of[de,se,`add_source`]){let n=p.get(t);n&&!e.searchParams.has(t)&&e.searchParams.set(t,n)}T=`${e.pathname}${e.search}${e.hash}`}e[4]=C,e[5]=r,e[6]=i.hash,e[7]=i.pathname,e[8]=i.search,e[9]=p,e[10]=w,e[11]=T,e[12]=E,e[13]=D,e[14]=O,e[15]=A,e[16]=j}else w=e[10],T=e[11],E=e[12],D=e[13],O=e[14],A=e[15],j=e[16];let M=ke({defaultPlatform:`chat`,locale:t.locale,searchParams:p}),ve=he(),xe=re({...ge(r,ve?M:{...M,workspace:c()?.isWorkspaceAccount()??!1},ve?`directoryDetails`:`appsContent`),enabled:!!r&&!D}),N=fe(r,M),P=_&&!!r&&!D,F;e[20]!==N||e[21]!==P?(F={...N,enabled:P},e[20]=N,e[21]=P,e[22]=F):F=e[22];let I=re(F),L=xe.data?.name,R;e[23]!==i.hash||e[24]!==b?(R=Me(i.hash,`product-sku`)?b??le.CONNECTOR_SETTING:le.CONNECTOR_SETTING,e[23]=i.hash,e[24]=b,e[25]=R):R=e[25];let z=R,B;e[26]!==i.hash||e[27]!==x?(B=Me(i.hash,`referrer`)?x??k.PCAConnectorSuggestionBeacon:k.PCAConnectorSuggestionBeacon,e[26]=i.hash,e[27]=x,e[28]=B):B=e[28];let V=B,H;e[29]!==w||e[30]!==O||e[31]!==i.state||e[32]!==a?(H=()=>{y.current||(we(O,{requireMatchingAttempt:!0}),oe(O),a(w,{replace:!0,state:i.state}))},e[29]=w,e[30]=O,e[31]=i.state,e[32]=a,e[33]=H):H=e[33];let U=H,q,J;e[34]!==U||e[35]!==D||e[36]!==t?(J=()=>{D&&(f.danger(t.formatMessage(Y.pluginInstallFailed)),U())},q=[U,D,t,f],e[34]=U,e[35]=D,e[36]=t,e[37]=q,e[38]=J):(q=e[37],J=e[38]),(0,G.useEffect)(J,q);let X;e[39]!==L||e[40]!==M.country||e[41]!==M.locale||e[42]!==M.platform||e[43]!==T||e[44]!==r||e[45]!==O||e[46]!==t||e[47]!==i.state||e[48]!==a||e[49]!==o?(X=async e=>{let{showAlreadyConnectedToast:n,connectorLinkConfirmed:s}=e,l=s!==void 0&&s;if(!r)return;let u=m(),d=await De({appId:r,installAttemptId:O,queryClient:o,onInstalled:async e=>{!u?.user?.id||!u.account?.id||await Ae({queryClient:o,returnTo:T,pluginId:e,userId:u.user.id,accountId:u.account.id,requestContext:{country:M.country,platform:M.platform,locale:M.locale,hasWorkspace:c()?.isWorkspaceAccount()??!1}})},requestContext:{country:M.country,platform:M.platform,locale:M.locale,hasWorkspace:c()?.isWorkspaceAccount()??!1}});ce({connectorId:r,installAttemptId:O,installResult:d,connectorLinkConfirmed:l}),d===`failed`?f.danger(t.formatMessage(Y.pluginInstallFailed)):d===`absent`&&n&&L&&f.info(t.formatMessage(Y.alreadyConnected,{appName:L})),a(T,{replace:!0,state:i.state})},e[39]=L,e[40]=M.country,e[41]=M.locale,e[42]=M.platform,e[43]=T,e[44]=r,e[45]=O,e[46]=t,e[47]=i.state,e[48]=a,e[49]=o,e[50]=X):X=e[50];let Z=X,Q;e[51]!==r||e[52]!==Z||e[53]!==o?(Q=async e=>{if(r&&(y.current=!0,!v.current)){v.current=!0;try{await Oe(o,r),await Z({showAlreadyConnectedToast:!1,connectorLinkConfirmed:typeof e?.linkId==`string`&&e.linkId.length>0})}catch(e){let t=e;throw y.current=!1,v.current=!1,t}}},e[51]=r,e[52]=Z,e[53]=o,e[54]=Q):Q=e[54];let Ne=Q,$;e[55]!==I.data?.installed||e[56]!==L||e[57]!==D||e[58]!==r||e[59]!==Z?($=()=>{!r||D||!I.data?.installed||!L||v.current||(v.current=!0,Z({showAlreadyConnectedToast:!0}))},e[55]=I.data?.installed,e[56]=L,e[57]=D,e[58]=r,e[59]=Z,e[60]=$):$=e[60];let Pe=I.data?.installed,Fe;if(e[61]!==L||e[62]!==D||e[63]!==r||e[64]!==Z||e[65]!==Pe?(Fe=[Pe,L,D,r,Z],e[61]=L,e[62]=D,e[63]=r,e[64]=Z,e[65]=Pe,e[66]=Fe):Fe=e[66],(0,G.useEffect)($,Fe),D||_&&I.isLoading||I.data?.installed)return null;let Ie;return e[67]!==E||e[68]!==U||e[69]!==Ne||e[70]!==r||e[71]!==O||e[72]!==A||e[73]!==z||e[74]!==j||e[75]!==V?(Ie=(0,K.jsx)(Te,{accountId:E,checkInstallationPolicy:!0,connectorId:r,redirectAfter:A,oauthRedirectAfter:j,pluginInstallAttemptId:O,productSku:z,noRedirect:!0,referrer:V,postConnectExperienceSource:`plugin_install`,onComplete:Ne,awaitOnComplete:!0,onClose:U}),e[67]=E,e[68]=U,e[69]=Ne,e[70]=r,e[71]=O,e[72]=A,e[73]=z,e[74]=j,e[75]=V,e[76]=Ie):Ie=e[76],Ie},J=_(function(){"use forget";let e=(0,W.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,K.jsx)(U,{}),e[0]=t):t=e[0],t}),Y=v({pluginInstallFailed:{id:`chatgpt.plugins.connect.install.toast.failure`,defaultMessage:`Couldn't add plugin`},alreadyConnected:{id:`7Il4u9`,defaultMessage:`{appName} is already connected`}})}));e((()=>{X()}))();export{z as clientLoader,J as default};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/bbbe3e8f-bhtw4fqxq908748m.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-mdvd4786a87166cc.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/8b34dbc2-lmwubajnld74ksfm.js", "assets/conversation-small-bcbq46iub1p0ca1t.js", "assets/30901919-s8bko9nrkqwv6i4f.js", "assets/c470f5ab-jwd0o7jx9i9say9k.js", "assets/0e5afe53-hxm3yzzjqriayom4.js", "assets/conversation-small-ep6mlz5m.css", "assets/82782bc9-b4xbouzwkkyrfqq2.js", "assets/b2cbd5c7-5wvc8mg94bjjggd5.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    IU as n,
+    LU as r,
+    Lit as i,
+    Nrt as a,
+    Prt as o,
+    Rit as s,
+    U1 as c,
+    cS as l,
+    hR as u,
+    mR as d,
+    q1 as f,
+    sS as p,
+    sst as m
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as h,
+    Bn as g,
+    Ht as _,
+    Ln as v,
+    Lt as ee,
+    N as te,
+    Nt as ne,
+    O as re,
+    Q as y,
+    Rn as b,
+    Vn as x,
+    Vt as ie,
+    cn as S,
+    ln as C,
+    s as w,
+    wn as T,
+    zn as ae
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $X as E,
+    Art as oe,
+    JX as se,
+    Jrt as D,
+    Mrt as O,
+    Nrt as ce,
+    RTn as le,
+    SWt as k,
+    Sit as ue,
+    YX as de,
+    aTn as fe,
+    bWt as pe,
+    iNt as A,
+    jrt as me,
+    kWt as j,
+    oNt as he,
+    oTn as ge,
+    pTn as M,
+    wit as _e,
+    zTn as ve
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Ev as ye,
+    Gv as be,
+    Kv as xe,
+    Mv as Se,
+    Qu as N,
+    Rv as Ce,
+    Uv as we,
+    Xu as Te,
+    mv as Ee,
+    qv as De,
+    zv as P
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    n as Oe,
+    t as F
+} from "./65b7af15-mzlzo0bk10esjdjl.js";
+import {
+    n as ke,
+    r as I
+} from "./db2560a5-pd1jb0v3ae1oznay.js";
+import {
+    n as L,
+    t as R
+} from "./1a794ff6-j7gfwn0fzbxt3dgg.js";
+import {
+    n as z,
+    r as B
+} from "./5fec77d9-khi0fwc0nezg78rh.js";
+var V, H = e((() => {
+    j(), V = e => e === k.SlackDelegationFallback || e === k.MicrosoftTeamsDelegationFallback
+}));
+
+function U() {
+    "use forget";
+    let e = (0, W.c)(13),
+        t = h(),
+        [n] = ie(),
+        r = _e();
+    if (!s()) {
+        let i = n.get(`sso_required`),
+            a;
+        e[0] === r ? a = e[1] : (a = V(r) ? r : void 0, e[0] = r, e[1] = a);
+        let o = `${t.pathname}${t.search}`,
+            s;
+        e[2] === n ? s = e[3] : (s = n.get(`sso_connection`)?.trim() || null, e[2] = n, e[3] = s);
+        let c = i === `true` || i !== `false` && null,
+            l;
+        e[4] === n ? l = e[5] : (l = n.get(`workspace_id`)?.trim() || void 0, e[4] = n, e[5] = l);
+        let u;
+        return e[6] !== a || e[7] !== o || e[8] !== s || e[9] !== c || e[10] !== l ? (u = (0, K.jsx)(R, {
+            contentType: `app`,
+            entryCta: a,
+            returnPath: o,
+            ssoConnection: s,
+            ssoRequired: c,
+            workspaceId: l
+        }), e[6] = a, e[7] = o, e[8] = s, e[9] = c, e[10] = l, e[11] = u) : u = e[11], u
+    }
+    let i;
+    return e[12] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, K.jsx)(q, {}), e[12] = i) : i = e[12], i
+}
+async function Ae(e) {
+    try {
+        let {
+            completePluginSuggestionOAuth: t
+        } = await S(async () => {
+            let {
+                completePluginSuggestionOAuth: e
+            } = await import(`./bbbe3e8f-bhtw4fqxq908748m.js`).then(e => (e.r(), e.a));
+            return {
+                completePluginSuggestionOAuth: e
+            }
+        }, __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]));
+        await t(e)
+    } catch {
+        o.warn(`plugin_suggestion_continuation_unavailable`)
+    }
+}
+var W, G, K, je, Me, q, J, Y, X = e((() => {
+    y(), W = T(), F(), M(), I(), L(), N(), H(), p(), E(), D(), j(), ve(), O(), xe(), P(), f(), r(), i(), A(), d(), a(), w(), G = t(x()), b(), B(), K = g(), C(), je = e => e.replace(/\/connect\/?$/, ``), Me = (e, t) => {
+        let n = e.indexOf(`?`);
+        return n !== -1 && new URLSearchParams(e.slice(n + 1)).has(t)
+    }, q = () => {
+        "use forget";
+        let e = (0, W.c)(77),
+            t = ae(),
+            {
+                id: r
+            } = ee(),
+            i = h(),
+            a = ne(),
+            o = te(),
+            d;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = n(), e[0] = d) : d = e[0];
+        let f = d,
+            [p] = ie(),
+            g;
+        e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (g = s(), e[1] = g) : g = e[1];
+        let _ = g,
+            v = (0, G.useRef)(!1),
+            y = (0, G.useRef)(!1),
+            b = ue(),
+            x = _e(),
+            S;
+        e[2] === i.pathname ? S = e[3] : (S = je(i.pathname), e[2] = i.pathname, e[3] = S);
+        let C = `${S}${i.search}`,
+            w, T, E, D, O, A, j;
+        if (e[4] !== C || e[5] !== r || e[6] !== i.hash || e[7] !== i.pathname || e[8] !== i.search || e[9] !== p) {
+            let t = p.get(Ee),
+                n = t && u(t) ? t : void 0;
+            O = ye(n);
+            let a;
+            e[17] === p ? a = e[18] : (a = p.get(`mfa_continuation`), e[17] = p, e[18] = a);
+            let o = a === `1`,
+                s = r && O ? me({
+                    connectorId: r,
+                    installAttemptId: O
+                }) : void 0;
+            E = s?.accountId ?? (r ? be({
+                appId: r,
+                installAttemptId: O
+            }) : void 0);
+            let d;
+            e[19] === Symbol.for(`react.memo_cache_sentinel`) ? (d = c(), e[19] = d) : d = e[19];
+            let f = d;
+            D = _ && (o && (!O || !s?.accountId || !s?.normalizedAccountUserId) || E !== void 0 && f?.id !== E || s?.normalizedAccountUserId !== void 0 && f?.normalizedAccountUserId !== s.normalizedAccountUserId);
+            let m = p.get(pe),
+                h = m && u(m) ? m : void 0,
+                g = n ?? h ?? `${C}${i.hash}`,
+                v = n ?? h ?? C;
+            if (A = O && !Ce(p).isNativeMobileView ? `${i.pathname}${i.search}${i.hash}` : v, j = l(v) ? A : void 0, w = Se({
+                    returnTo: g
+                }), T = Se({
+                    returnTo: v
+                }), O && !Ce(p).isNativeMobileView) {
+                let e = new URL(T, `https://chatgpt.com`);
+                for (let t of [de, se, `add_source`]) {
+                    let n = p.get(t);
+                    n && !e.searchParams.has(t) && e.searchParams.set(t, n)
+                }
+                T = `${e.pathname}${e.search}${e.hash}`
+            }
+            e[4] = C, e[5] = r, e[6] = i.hash, e[7] = i.pathname, e[8] = i.search, e[9] = p, e[10] = w, e[11] = T, e[12] = E, e[13] = D, e[14] = O, e[15] = A, e[16] = j
+        } else w = e[10], T = e[11], E = e[12], D = e[13], O = e[14], A = e[15], j = e[16];
+        let M = ke({
+                defaultPlatform: `chat`,
+                locale: t.locale,
+                searchParams: p
+            }),
+            ve = he(),
+            xe = re({
+                ...ge(r, ve ? M : {
+                    ...M,
+                    workspace: c()?.isWorkspaceAccount() ?? !1
+                }, ve ? `directoryDetails` : `appsContent`),
+                enabled: !!r && !D
+            }),
+            N = fe(r, M),
+            P = _ && !!r && !D,
+            F;
+        e[20] !== N || e[21] !== P ? (F = {
+            ...N,
+            enabled: P
+        }, e[20] = N, e[21] = P, e[22] = F) : F = e[22];
+        let I = re(F),
+            L = xe.data?.name,
+            R;
+        e[23] !== i.hash || e[24] !== b ? (R = Me(i.hash, `product-sku`) ? b ?? le.CONNECTOR_SETTING : le.CONNECTOR_SETTING, e[23] = i.hash, e[24] = b, e[25] = R) : R = e[25];
+        let z = R,
+            B;
+        e[26] !== i.hash || e[27] !== x ? (B = Me(i.hash, `referrer`) ? x ?? k.PCAConnectorSuggestionBeacon : k.PCAConnectorSuggestionBeacon, e[26] = i.hash, e[27] = x, e[28] = B) : B = e[28];
+        let V = B,
+            H;
+        e[29] !== w || e[30] !== O || e[31] !== i.state || e[32] !== a ? (H = () => {
+            y.current || (we(O, {
+                requireMatchingAttempt: !0
+            }), oe(O), a(w, {
+                replace: !0,
+                state: i.state
+            }))
+        }, e[29] = w, e[30] = O, e[31] = i.state, e[32] = a, e[33] = H) : H = e[33];
+        let U = H,
+            q, J;
+        e[34] !== U || e[35] !== D || e[36] !== t ? (J = () => {
+            D && (f.danger(t.formatMessage(Y.pluginInstallFailed)), U())
+        }, q = [U, D, t, f], e[34] = U, e[35] = D, e[36] = t, e[37] = q, e[38] = J) : (q = e[37], J = e[38]), (0, G.useEffect)(J, q);
+        let X;
+        e[39] !== L || e[40] !== M.country || e[41] !== M.locale || e[42] !== M.platform || e[43] !== T || e[44] !== r || e[45] !== O || e[46] !== t || e[47] !== i.state || e[48] !== a || e[49] !== o ? (X = async e => {
+            let {
+                showAlreadyConnectedToast: n,
+                connectorLinkConfirmed: s
+            } = e, l = s !== void 0 && s;
+            if (!r) return;
+            let u = m(),
+                d = await De({
+                    appId: r,
+                    installAttemptId: O,
+                    queryClient: o,
+                    onInstalled: async e => {
+                        !u?.user?.id || !u.account?.id || await Ae({
+                            queryClient: o,
+                            returnTo: T,
+                            pluginId: e,
+                            userId: u.user.id,
+                            accountId: u.account.id,
+                            requestContext: {
+                                country: M.country,
+                                platform: M.platform,
+                                locale: M.locale,
+                                hasWorkspace: c()?.isWorkspaceAccount() ?? !1
+                            }
+                        })
+                    },
+                    requestContext: {
+                        country: M.country,
+                        platform: M.platform,
+                        locale: M.locale,
+                        hasWorkspace: c()?.isWorkspaceAccount() ?? !1
+                    }
+                });
+            ce({
+                connectorId: r,
+                installAttemptId: O,
+                installResult: d,
+                connectorLinkConfirmed: l
+            }), d === `failed` ? f.danger(t.formatMessage(Y.pluginInstallFailed)) : d === `absent` && n && L && f.info(t.formatMessage(Y.alreadyConnected, {
+                appName: L
+            })), a(T, {
+                replace: !0,
+                state: i.state
+            })
+        }, e[39] = L, e[40] = M.country, e[41] = M.locale, e[42] = M.platform, e[43] = T, e[44] = r, e[45] = O, e[46] = t, e[47] = i.state, e[48] = a, e[49] = o, e[50] = X) : X = e[50];
+        let Z = X,
+            Q;
+        e[51] !== r || e[52] !== Z || e[53] !== o ? (Q = async e => {
+            if (r && (y.current = !0, !v.current)) {
+                v.current = !0;
+                try {
+                    await Oe(o, r), await Z({
+                        showAlreadyConnectedToast: !1,
+                        connectorLinkConfirmed: typeof e?.linkId == `string` && e.linkId.length > 0
+                    })
+                } catch (e) {
+                    let t = e;
+                    throw y.current = !1, v.current = !1, t
+                }
+            }
+        }, e[51] = r, e[52] = Z, e[53] = o, e[54] = Q) : Q = e[54];
+        let Ne = Q,
+            $;
+        e[55] !== I.data?.installed || e[56] !== L || e[57] !== D || e[58] !== r || e[59] !== Z ? ($ = () => {
+            !r || D || !I.data?.installed || !L || v.current || (v.current = !0, Z({
+                showAlreadyConnectedToast: !0
+            }))
+        }, e[55] = I.data?.installed, e[56] = L, e[57] = D, e[58] = r, e[59] = Z, e[60] = $) : $ = e[60];
+        let Pe = I.data?.installed,
+            Fe;
+        if (e[61] !== L || e[62] !== D || e[63] !== r || e[64] !== Z || e[65] !== Pe ? (Fe = [Pe, L, D, r, Z], e[61] = L, e[62] = D, e[63] = r, e[64] = Z, e[65] = Pe, e[66] = Fe) : Fe = e[66], (0, G.useEffect)($, Fe), D || _ && I.isLoading || I.data?.installed) return null;
+        let Ie;
+        return e[67] !== E || e[68] !== U || e[69] !== Ne || e[70] !== r || e[71] !== O || e[72] !== A || e[73] !== z || e[74] !== j || e[75] !== V ? (Ie = (0, K.jsx)(Te, {
+            accountId: E,
+            checkInstallationPolicy: !0,
+            connectorId: r,
+            redirectAfter: A,
+            oauthRedirectAfter: j,
+            pluginInstallAttemptId: O,
+            productSku: z,
+            noRedirect: !0,
+            referrer: V,
+            postConnectExperienceSource: `plugin_install`,
+            onComplete: Ne,
+            awaitOnComplete: !0,
+            onClose: U
+        }), e[67] = E, e[68] = U, e[69] = Ne, e[70] = r, e[71] = O, e[72] = A, e[73] = z, e[74] = j, e[75] = V, e[76] = Ie) : Ie = e[76], Ie
+    }, J = _(function() {
+        "use forget";
+        let e = (0, W.c)(1),
+            t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, K.jsx)(U, {}), e[0] = t) : t = e[0], t
+    }), Y = v({
+        pluginInstallFailed: {
+            id: `chatgpt.plugins.connect.install.toast.failure`,
+            defaultMessage: `Couldn't add plugin`
+        },
+        alreadyConnected: {
+            id: `7Il4u9`,
+            defaultMessage: `{appName} is already connected`
+        }
+    })
+}));
+e((() => {
+    X()
+}))();
+export {
+    z as clientLoader, J as
+    default
+};
 //# sourceMappingURL=apps._name._id.connect-j0h5zq1s.js.map

@@ -1,2 +1,370 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{IU as n,Jn as r,Jrt as i,Knt as a,Krt as o,LU as s,Lit as c,V1 as l,Wnt as u,Xn as d,Yrt as ee,_B as te,cB as f,eit as ne,gB as p,hB as re,hR as m,irt as h,lB as ie,mB as g,mR as _,nrt as v,q1 as y,r3 as b,rit as ae,rrt as x,sB as S,sst as oe}from"./4813494d-mdvd4786a87166cc.js";import{At as C,Bn as w,Ht as T,Ln as E,Nt as D,Q as O,Rn as k,Vn as A,kt as j,wn as M,zn as N}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$ln as P,Can as F,Dln as se,Eln as I,Gin as L,I1 as ce,L1 as R,San as le,Yin as z,Zln as ue,aon as de,att as B,ctt as fe,lln as pe,oon as me,qin as V,rtt as he,stt as ge,ttt as H,uKn as _e,uln as ve}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Ch as ye,Dh as U,Mh as be,Oh as xe,Rh as Se,Th as Ce,_h as we,kh as Te,vh as Ee,wh as De,yh as Oe}from"./c2675c8c-oz03twoan08d72ud.js";import{a as ke,r as Ae}from"./b34a84d1-k7x7r2lnozdhs385.js";import{i as je,t as Me,v as Ne,x as Pe}from"./a4eef3c0-htjsels66bfs9l7w.js";import{a as Fe,i as Ie,n as Le,r as Re}from"./c7dae6a1-dgz17x0jjgoeldol.js";import{n as ze,t as Be}from"./f5cccfb7-lfqym3ish2vvig3w.js";function Ve({level:e,title:t,action:n,...r},i,a){i[e](t,{...r,...a==null?{}:{onRemove:a},action:n==null?void 0:(0,W.jsx)(`a`,{className:`font-medium underline underline-offset-2`,href:n.href,children:n.label})})}var W,He=e((()=>{W=w()})),G,K,Ue=e((()=>{s(),G=t(A()),He(),K=(0,G.createContext)(e=>{Ve(e,n())})})),q,J,We=e((()=>{q=t(A()),J=(0,q.createContext)(`/admin/billing`)}));function Y(e){return`kind`in e&&e.kind===`purchased_gift_credit`}function Ge(e){return e.checkout_kind===b.StandaloneCredit&&`auto_top_up_enabled_after_checkout`in e&&e.auto_top_up_enabled_after_checkout===!1}function X(e){if(!e.startsWith(`/gifts/credits?`))return!1;let t=new URLSearchParams(e.slice(Oe.length+1)),n=t.get(`gift_id`);return n!=null&&n.length>0&&t.get(`checkout`)===`success`}function Ke(e,t){return!e.success&&e.outcome===`payment_failed`&&X(t)}function qe({loaderData:e,redirectPath:t}){return e.success?t===L&&Ge(e.completion)?Q:`kind`in e.completion&&e.completion.kind===b.CodexTeam?(u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`codex_team_payment_confirmed`,checkoutSessionId:e.checkout_id,targetWorkspaceId:e.completion.workspace_id,flow:`codex_team`}),`${be}?account_id=${e.completion.workspace_id}&step=name`):Y(e.completion)?ye({checkoutState:`success`,credits:Ce(t),deliveryMethod:De(t),entryPoint:U(t),giftId:e.completion.gift_id}):t:Ke(e,t)?xe(new URL(t,`https://chatgpt.com`).searchParams)??t:t===L?Q:t}function Je(){}var Ye,Z,Q,Xe,$,Ze=e((()=>{O(),Ye=M(),p(),ke(),c(),o(),R(),d(),pe(),I(),Ue(),We(),P(),me(),g(),F(),je(),_e(),Ie(),Se(),z(),Te(),we(),ze(),fe(),he(),s(),y(),f(),a(),_(),h(),Z=t(A()),k(),Q=`/codex/cloud/settings/usage`,Xe=T(function(){"use forget";let e=(0,Ye.c)(9),t=(0,Z.useContext)(J),a=(0,Z.useContext)(K),o=C(),s=D(),c=N(),d=j(),f=(0,Z.useRef)(null),p,h;return e[0]!==t||e[1]!==c||e[2]!==d||e[3]!==o.key||e[4]!==o.search||e[5]!==s||e[6]!==a?(p=()=>{if(!d.success&&d.outcome===`credit_payment_incomplete`){d.checkout_id!=null&&s(de(d.processor_entity??`openai_llc`,d.checkout_id),{replace:!0});return}let e=`${d.checkout_id??o.key}:${d.success?`success`:d.outcome??`other_error`}`;if(f.current===e)return;if(f.current=e,new URLSearchParams(o.search).get(`checkout_kind`)===b.RateLimitReset){let e=v.getItem(x.CodexRateLimitResetCheckoutRedirectPath);v.removeItem(x.CodexRateLimitResetCheckoutRedirectPath);let t=typeof e==`string`&&m(e)?e:`/`,r=d.success&&d.completion.success===!0&&d.completion.checkout_kind===b.RateLimitReset,i=r&&`reset_purchase_status`in d.completion?d.completion.reset_purchase_status:null,a=!d.success&&d.outcome===`pending`;r&&i===`reset_redeemed`?n().success(c.formatMessage($.resetSucceeded)):r||a?n().success(c.formatMessage($.resetPending)):n().warning(c.formatMessage(!d.success&&d.outcome===`payment_failed`?$.resetPaymentFailed:$.resetPurchaseFailed)),s(!r&&!a&&t===L?`/`:t,{replace:!0});return}let p=d.success&&d.checkout_id!=null&&d.completion.checkout_kind===b.StandaloneCredit?Le(d.checkout_id):null,h=Fe(),g=d.success&&d.checkout_id!=null&&d.completion.checkout_kind===b.StandaloneCredit&&h?.checkoutSessionId===d.checkout_id&&typeof h.returnPath==`string`&&m(h.returnPath)?h.returnPath:null,_=d.checkout_id==null?null:ue(d.checkout_id),y=p?.returnPath??g??_??v.getItem(x.CreditCheckoutRedirectPath),C=typeof y==`string`&&y.length>0?y:t,w=U(C),T=d.success&&Y(d.completion)&&De(C)===`email`&&new URL(C,`https://chatgpt.com`).searchParams.get(`gift_id`)===d.completion.gift_id,E=new URLSearchParams(o.search);d.checkout_id!=null&&ae(d.checkout_id,E),v.removeItem(x.CreditCheckoutRedirectPath);let D=d.checkout_id==null?null:Re(d.checkout_id),O=d.processor_entity??void 0,k=Ae({checkoutId:d.checkout_id,processorEntity:O,userId:oe()?.user?.id,accountId:l()?.id}),A=ge(),j=d.success&&Ge(d.completion),M=d.success&&`mandate_requirement_unmet`in d.completion&&d.completion.mandate_requirement_unmet===!0,N=j&&`auto_top_up_failure_reason`in d.completion?d.completion.auto_top_up_failure_reason??null:null;if(d.success){let e=l();d.completion.checkout_kind===b.StandaloneCredit&&V(d.completion.entry_point)===`personal_codex`&&e?.isPersonalAccount()&&ve(e.id,r()).catch(Je);let t=C===Q||d.completion.checkout_kind===b.StandaloneCredit&&V(d.completion.entry_point)===`personal_codex`;if(Pe({...k,checkoutId:d.checkout_id,processorEntity:O,...d.completion.checkout_kind==null?{}:{checkoutKind:d.completion.checkout_kind,entryPoint:d.completion.entry_point??void 0}}),Y(d.completion)&&T)try{Ee({step:`gift_activation`,outcome:`succeeded`,deliveryMode:`email`,...w==null?{}:{entryPoint:w},giftId:d.completion.gift_id})}catch{}if(d.completion.checkout_kind===b.StandaloneCredit&&`auto_top_up_enabled_after_checkout`in d.completion&&d.completion.auto_top_up_enabled_after_checkout===!0&&u.logStructuredEvent(`CodexCreditReloadAutoReloadSettingsChanged`,{action:`enable`,entryPoint:d.completion.entry_point??void 0,source:`standalone_credit_checkout`}),A&&B({accountId:A.accountId,eventType:H.CHECKOUT_COMPLETED,location:A.location,organizationId:A.organizationId,promoCampaignId:A.promoCampaignId,promoCode:A.promoCode,referralCode:A.referralCode}),!M&&j){let e=t?Q:ce(`auto_recharge`);re({failureReason:N,intl:c,settingsPath:e,toaster:n()})}else if(!M&&!Y(d.completion)){let e=t&&D!=null?c.formatMessage($.modalCreditsAdded,{credits:c.formatNumber(D)}):c.formatMessage(t?$.personalPaymentConfirmationToastMessage:$.paymentConfirmationToastMessage);a({level:`success`,title:e,duration:5})}}else{let e=d.outcome===`payment_failed`?`payment_failed`:`other_error`;if(Ne(`payments_success_credit_purchase`,{...k,checkoutId:d.checkout_id,processorEntity:O,outcome:e,...X(C)?{checkoutKind:le,entryPoint:w??se.GIFT_CREDITS_PURCHASE}:{}},E),A&&B({accountId:A.accountId,eventType:H.CHECKOUT_FAILED,location:A.location,organizationId:A.organizationId,promoCampaignId:A.promoCampaignId,promoCode:A.promoCode,referralCode:A.referralCode}),!Ke(d,C)){let e=c.formatMessage($.paymentErrorToastMessage);a({level:`warning`,title:e,duration:5})}}let P=d.success&&!j&&d.completion.checkout_kind===b.StandaloneCredit&&V(d.completion.entry_point)===`workspace`&&i(E)?L:qe({loaderData:d,redirectPath:C}),F=d.success&&P===Q&&ee(E),I=T?ie(S.CUSTOM_MSG,`/`,c.formatMessage(Be.emailSentTitle)):F?ne(P,E):P,R=F||/^\/codex\/app(?:[/?#]|$)/u.test(I)||p==null&&g==null&&_!=null||d.success&&Y(d.completion)||!d.success&&X(C);M&&!R&&te({checkout:!0});let z=R&&(j||M)?ie(M?S.CREDIT_AUTO_RELOAD_MANDATE_UNAVAILABLE:N===`settings_conflict`?S.CREDIT_AUTO_RELOAD_SETTINGS_CONFLICT:S.CREDIT_AUTO_RELOAD_CONFIGURATION_FAILED,I):I;Me().finally(()=>{if(R){window.location.replace(z);return}s(d.success&&I===Q?`/#settings/Usage`:I)})},h=[t,c,d,o.key,o.search,s,a],e[0]=t,e[1]=c,e[2]=d,e[3]=o.key,e[4]=o.search,e[5]=s,e[6]=a,e[7]=p,e[8]=h):(p=e[7],h=e[8]),(0,Z.useEffect)(p,h),null}),$=E({resetSucceeded:{id:`chatgpt.codex.rate_limit_reset.checkout.completion.success.toast`,defaultMessage:`Usage limits reset`},resetPending:{id:`chatgpt.codex.rate_limit_reset.checkout.completion.pending.toast`,defaultMessage:`Purchase successful`},resetPaymentFailed:{id:`chatgpt.codex.rate_limit_reset.checkout.completion.payment_failed.toast`,defaultMessage:`Payment failed. Please try again.`},resetPurchaseFailed:{id:`chatgpt.codex.rate_limit_reset.checkout.completion.failure.toast`,defaultMessage:`We couldn’t complete your purchase. Please try again.`},paymentConfirmationToastMessage:{id:`PaymentsSuccessCreditsPurchasePage.paymentConfirmationToastMessage`,defaultMessage:`You've successfully purchased credits for your team.`},personalPaymentConfirmationToastMessage:{id:`PaymentsSuccessCreditsPurchasePage.personalPaymentConfirmationToastMessage`,defaultMessage:`You've successfully purchased credits for your account.`},modalCreditsAdded:{id:`PaymentsSuccessCreditsPurchasePage.modalCreditsAdded`,defaultMessage:`{credits} credits have been added to your account.`},paymentErrorToastMessage:{id:`PaymentsSuccessCreditsPurchasePage.purchaseConfirmationErrorToastMessage`,defaultMessage:`We couldn't confirm your purchase. Please check your credits before trying again.`}})}));e((()=>{Ze()}))();export{Xe as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    IU as n,
+    Jn as r,
+    Jrt as i,
+    Knt as a,
+    Krt as o,
+    LU as s,
+    Lit as c,
+    V1 as l,
+    Wnt as u,
+    Xn as d,
+    Yrt as ee,
+    _B as te,
+    cB as f,
+    eit as ne,
+    gB as p,
+    hB as re,
+    hR as m,
+    irt as h,
+    lB as ie,
+    mB as g,
+    mR as _,
+    nrt as v,
+    q1 as y,
+    r3 as b,
+    rit as ae,
+    rrt as x,
+    sB as S,
+    sst as oe
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as C,
+    Bn as w,
+    Ht as T,
+    Ln as E,
+    Nt as D,
+    Q as O,
+    Rn as k,
+    Vn as A,
+    kt as j,
+    wn as M,
+    zn as N
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $ln as P,
+    Can as F,
+    Dln as se,
+    Eln as I,
+    Gin as L,
+    I1 as ce,
+    L1 as R,
+    San as le,
+    Yin as z,
+    Zln as ue,
+    aon as de,
+    att as B,
+    ctt as fe,
+    lln as pe,
+    oon as me,
+    qin as V,
+    rtt as he,
+    stt as ge,
+    ttt as H,
+    uKn as _e,
+    uln as ve
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Ch as ye,
+    Dh as U,
+    Mh as be,
+    Oh as xe,
+    Rh as Se,
+    Th as Ce,
+    _h as we,
+    kh as Te,
+    vh as Ee,
+    wh as De,
+    yh as Oe
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    a as ke,
+    r as Ae
+} from "./b34a84d1-k7x7r2lnozdhs385.js";
+import {
+    i as je,
+    t as Me,
+    v as Ne,
+    x as Pe
+} from "./a4eef3c0-htjsels66bfs9l7w.js";
+import {
+    a as Fe,
+    i as Ie,
+    n as Le,
+    r as Re
+} from "./c7dae6a1-dgz17x0jjgoeldol.js";
+import {
+    n as ze,
+    t as Be
+} from "./f5cccfb7-lfqym3ish2vvig3w.js";
+
+function Ve({
+    level: e,
+    title: t,
+    action: n,
+    ...r
+}, i, a) {
+    i[e](t, {
+        ...r,
+        ...a == null ? {} : {
+            onRemove: a
+        },
+        action: n == null ? void 0 : (0, W.jsx)(`a`, {
+            className: `font-medium underline underline-offset-2`,
+            href: n.href,
+            children: n.label
+        })
+    })
+}
+var W, He = e((() => {
+        W = w()
+    })),
+    G, K, Ue = e((() => {
+        s(), G = t(A()), He(), K = (0, G.createContext)(e => {
+            Ve(e, n())
+        })
+    })),
+    q, J, We = e((() => {
+        q = t(A()), J = (0, q.createContext)(`/admin/billing`)
+    }));
+
+function Y(e) {
+    return `kind` in e && e.kind === `purchased_gift_credit`
+}
+
+function Ge(e) {
+    return e.checkout_kind === b.StandaloneCredit && `auto_top_up_enabled_after_checkout` in e && e.auto_top_up_enabled_after_checkout === !1
+}
+
+function X(e) {
+    if (!e.startsWith(`/gifts/credits?`)) return !1;
+    let t = new URLSearchParams(e.slice(Oe.length + 1)),
+        n = t.get(`gift_id`);
+    return n != null && n.length > 0 && t.get(`checkout`) === `success`
+}
+
+function Ke(e, t) {
+    return !e.success && e.outcome === `payment_failed` && X(t)
+}
+
+function qe({
+    loaderData: e,
+    redirectPath: t
+}) {
+    return e.success ? t === L && Ge(e.completion) ? Q : `kind` in e.completion && e.completion.kind === b.CodexTeam ? (u.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+        checkpoint: `codex_team_payment_confirmed`,
+        checkoutSessionId: e.checkout_id,
+        targetWorkspaceId: e.completion.workspace_id,
+        flow: `codex_team`
+    }), `${be}?account_id=${e.completion.workspace_id}&step=name`) : Y(e.completion) ? ye({
+        checkoutState: `success`,
+        credits: Ce(t),
+        deliveryMethod: De(t),
+        entryPoint: U(t),
+        giftId: e.completion.gift_id
+    }) : t : Ke(e, t) ? xe(new URL(t, `https://chatgpt.com`).searchParams) ?? t : t === L ? Q : t
+}
+
+function Je() {}
+var Ye, Z, Q, Xe, $, Ze = e((() => {
+    O(), Ye = M(), p(), ke(), c(), o(), R(), d(), pe(), I(), Ue(), We(), P(), me(), g(), F(), je(), _e(), Ie(), Se(), z(), Te(), we(), ze(), fe(), he(), s(), y(), f(), a(), _(), h(), Z = t(A()), k(), Q = `/codex/cloud/settings/usage`, Xe = T(function() {
+        "use forget";
+        let e = (0, Ye.c)(9),
+            t = (0, Z.useContext)(J),
+            a = (0, Z.useContext)(K),
+            o = C(),
+            s = D(),
+            c = N(),
+            d = j(),
+            f = (0, Z.useRef)(null),
+            p, h;
+        return e[0] !== t || e[1] !== c || e[2] !== d || e[3] !== o.key || e[4] !== o.search || e[5] !== s || e[6] !== a ? (p = () => {
+            if (!d.success && d.outcome === `credit_payment_incomplete`) {
+                d.checkout_id != null && s(de(d.processor_entity ?? `openai_llc`, d.checkout_id), {
+                    replace: !0
+                });
+                return
+            }
+            let e = `${d.checkout_id??o.key}:${d.success?`success`:d.outcome??`other_error`}`;
+            if (f.current === e) return;
+            if (f.current = e, new URLSearchParams(o.search).get(`checkout_kind`) === b.RateLimitReset) {
+                let e = v.getItem(x.CodexRateLimitResetCheckoutRedirectPath);
+                v.removeItem(x.CodexRateLimitResetCheckoutRedirectPath);
+                let t = typeof e == `string` && m(e) ? e : `/`,
+                    r = d.success && d.completion.success === !0 && d.completion.checkout_kind === b.RateLimitReset,
+                    i = r && `reset_purchase_status` in d.completion ? d.completion.reset_purchase_status : null,
+                    a = !d.success && d.outcome === `pending`;
+                r && i === `reset_redeemed` ? n().success(c.formatMessage($.resetSucceeded)) : r || a ? n().success(c.formatMessage($.resetPending)) : n().warning(c.formatMessage(!d.success && d.outcome === `payment_failed` ? $.resetPaymentFailed : $.resetPurchaseFailed)), s(!r && !a && t === L ? `/` : t, {
+                    replace: !0
+                });
+                return
+            }
+            let p = d.success && d.checkout_id != null && d.completion.checkout_kind === b.StandaloneCredit ? Le(d.checkout_id) : null,
+                h = Fe(),
+                g = d.success && d.checkout_id != null && d.completion.checkout_kind === b.StandaloneCredit && h?.checkoutSessionId === d.checkout_id && typeof h.returnPath == `string` && m(h.returnPath) ? h.returnPath : null,
+                _ = d.checkout_id == null ? null : ue(d.checkout_id),
+                y = p?.returnPath ?? g ?? _ ?? v.getItem(x.CreditCheckoutRedirectPath),
+                C = typeof y == `string` && y.length > 0 ? y : t,
+                w = U(C),
+                T = d.success && Y(d.completion) && De(C) === `email` && new URL(C, `https://chatgpt.com`).searchParams.get(`gift_id`) === d.completion.gift_id,
+                E = new URLSearchParams(o.search);
+            d.checkout_id != null && ae(d.checkout_id, E), v.removeItem(x.CreditCheckoutRedirectPath);
+            let D = d.checkout_id == null ? null : Re(d.checkout_id),
+                O = d.processor_entity ?? void 0,
+                k = Ae({
+                    checkoutId: d.checkout_id,
+                    processorEntity: O,
+                    userId: oe()?.user?.id,
+                    accountId: l()?.id
+                }),
+                A = ge(),
+                j = d.success && Ge(d.completion),
+                M = d.success && `mandate_requirement_unmet` in d.completion && d.completion.mandate_requirement_unmet === !0,
+                N = j && `auto_top_up_failure_reason` in d.completion ? d.completion.auto_top_up_failure_reason ?? null : null;
+            if (d.success) {
+                let e = l();
+                d.completion.checkout_kind === b.StandaloneCredit && V(d.completion.entry_point) === `personal_codex` && e?.isPersonalAccount() && ve(e.id, r()).catch(Je);
+                let t = C === Q || d.completion.checkout_kind === b.StandaloneCredit && V(d.completion.entry_point) === `personal_codex`;
+                if (Pe({
+                        ...k,
+                        checkoutId: d.checkout_id,
+                        processorEntity: O,
+                        ...d.completion.checkout_kind == null ? {} : {
+                            checkoutKind: d.completion.checkout_kind,
+                            entryPoint: d.completion.entry_point ?? void 0
+                        }
+                    }), Y(d.completion) && T) try {
+                    Ee({
+                        step: `gift_activation`,
+                        outcome: `succeeded`,
+                        deliveryMode: `email`,
+                        ...w == null ? {} : {
+                            entryPoint: w
+                        },
+                        giftId: d.completion.gift_id
+                    })
+                } catch {}
+                if (d.completion.checkout_kind === b.StandaloneCredit && `auto_top_up_enabled_after_checkout` in d.completion && d.completion.auto_top_up_enabled_after_checkout === !0 && u.logStructuredEvent(`CodexCreditReloadAutoReloadSettingsChanged`, {
+                        action: `enable`,
+                        entryPoint: d.completion.entry_point ?? void 0,
+                        source: `standalone_credit_checkout`
+                    }), A && B({
+                        accountId: A.accountId,
+                        eventType: H.CHECKOUT_COMPLETED,
+                        location: A.location,
+                        organizationId: A.organizationId,
+                        promoCampaignId: A.promoCampaignId,
+                        promoCode: A.promoCode,
+                        referralCode: A.referralCode
+                    }), !M && j) {
+                    let e = t ? Q : ce(`auto_recharge`);
+                    re({
+                        failureReason: N,
+                        intl: c,
+                        settingsPath: e,
+                        toaster: n()
+                    })
+                } else if (!M && !Y(d.completion)) {
+                    let e = t && D != null ? c.formatMessage($.modalCreditsAdded, {
+                        credits: c.formatNumber(D)
+                    }) : c.formatMessage(t ? $.personalPaymentConfirmationToastMessage : $.paymentConfirmationToastMessage);
+                    a({
+                        level: `success`,
+                        title: e,
+                        duration: 5
+                    })
+                }
+            } else {
+                let e = d.outcome === `payment_failed` ? `payment_failed` : `other_error`;
+                if (Ne(`payments_success_credit_purchase`, {
+                        ...k,
+                        checkoutId: d.checkout_id,
+                        processorEntity: O,
+                        outcome: e,
+                        ...X(C) ? {
+                            checkoutKind: le,
+                            entryPoint: w ?? se.GIFT_CREDITS_PURCHASE
+                        } : {}
+                    }, E), A && B({
+                        accountId: A.accountId,
+                        eventType: H.CHECKOUT_FAILED,
+                        location: A.location,
+                        organizationId: A.organizationId,
+                        promoCampaignId: A.promoCampaignId,
+                        promoCode: A.promoCode,
+                        referralCode: A.referralCode
+                    }), !Ke(d, C)) {
+                    let e = c.formatMessage($.paymentErrorToastMessage);
+                    a({
+                        level: `warning`,
+                        title: e,
+                        duration: 5
+                    })
+                }
+            }
+            let P = d.success && !j && d.completion.checkout_kind === b.StandaloneCredit && V(d.completion.entry_point) === `workspace` && i(E) ? L : qe({
+                    loaderData: d,
+                    redirectPath: C
+                }),
+                F = d.success && P === Q && ee(E),
+                I = T ? ie(S.CUSTOM_MSG, `/`, c.formatMessage(Be.emailSentTitle)) : F ? ne(P, E) : P,
+                R = F || /^\/codex\/app(?:[/?#]|$)/u.test(I) || p == null && g == null && _ != null || d.success && Y(d.completion) || !d.success && X(C);
+            M && !R && te({
+                checkout: !0
+            });
+            let z = R && (j || M) ? ie(M ? S.CREDIT_AUTO_RELOAD_MANDATE_UNAVAILABLE : N === `settings_conflict` ? S.CREDIT_AUTO_RELOAD_SETTINGS_CONFLICT : S.CREDIT_AUTO_RELOAD_CONFIGURATION_FAILED, I) : I;
+            Me().finally(() => {
+                if (R) {
+                    window.location.replace(z);
+                    return
+                }
+                s(d.success && I === Q ? `/#settings/Usage` : I)
+            })
+        }, h = [t, c, d, o.key, o.search, s, a], e[0] = t, e[1] = c, e[2] = d, e[3] = o.key, e[4] = o.search, e[5] = s, e[6] = a, e[7] = p, e[8] = h) : (p = e[7], h = e[8]), (0, Z.useEffect)(p, h), null
+    }), $ = E({
+        resetSucceeded: {
+            id: `chatgpt.codex.rate_limit_reset.checkout.completion.success.toast`,
+            defaultMessage: `Usage limits reset`
+        },
+        resetPending: {
+            id: `chatgpt.codex.rate_limit_reset.checkout.completion.pending.toast`,
+            defaultMessage: `Purchase successful`
+        },
+        resetPaymentFailed: {
+            id: `chatgpt.codex.rate_limit_reset.checkout.completion.payment_failed.toast`,
+            defaultMessage: `Payment failed. Please try again.`
+        },
+        resetPurchaseFailed: {
+            id: `chatgpt.codex.rate_limit_reset.checkout.completion.failure.toast`,
+            defaultMessage: `We couldn’t complete your purchase. Please try again.`
+        },
+        paymentConfirmationToastMessage: {
+            id: `PaymentsSuccessCreditsPurchasePage.paymentConfirmationToastMessage`,
+            defaultMessage: `You've successfully purchased credits for your team.`
+        },
+        personalPaymentConfirmationToastMessage: {
+            id: `PaymentsSuccessCreditsPurchasePage.personalPaymentConfirmationToastMessage`,
+            defaultMessage: `You've successfully purchased credits for your account.`
+        },
+        modalCreditsAdded: {
+            id: `PaymentsSuccessCreditsPurchasePage.modalCreditsAdded`,
+            defaultMessage: `{credits} credits have been added to your account.`
+        },
+        paymentErrorToastMessage: {
+            id: `PaymentsSuccessCreditsPurchasePage.purchaseConfirmationErrorToastMessage`,
+            defaultMessage: `We couldn't confirm your purchase. Please check your credits before trying again.`
+        }
+    })
+}));
+e((() => {
+    Ze()
+}))();
+export {
+    Xe as
+    default
+};
 //# sourceMappingURL=payments.success-credit-purchase-vsvwi6qe.js.map

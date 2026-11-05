@@ -1,2 +1,194 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Att as n,Bnt as r,C_ as i,Fz as a,Iz as o,Ltt as s,Rnt as c,Wet as l,Wtt as u,d1 as d,eY as f,gF as p,gtt as m,lF as ee,qJ as h,u1 as g,vF as _,w_ as v,xnt as y}from"./4813494d-mdvd4786a87166cc.js";import{Bn as b,Ht as x,Lt as te,N as ne,Nt as re,Q as S,Vn as C,Vt as ie,s as w}from"./2340486e-i7pjxgdhv0bs6apg.js";import{B7 as ae,EWn as T,OWn as E,V7 as D,aWn as O,c as k,dWn as A,fWn as j,jWn as M,mWn as N,oWn as P,s as F,vWn as I}from"./conversation-small-bcbq46iub1p0ca1t.js";import{D_ as L,O_ as R,_ as z,v as B}from"./8b34dbc2-lmwubajnld74ksfm.js";import{i as V,n as oe,r as H,t as U}from"./ea4fa2d6-8axftuv0k1chudsm.js";import{o as W,s as G}from"./cc445a0e-nbq009pcni1b56t9.js";import{i as K,n as q,r as J,t as se}from"./ac476d6c-f0jbj8ennbi6mxfo.js";import{n as ce,r as le}from"./4d271a7b-df7bh6fcr9kmugr5.js";var Y,X,Z,Q,$,ue=e((()=>{S(),m(),n(),E(),A(),V(),G(),P(),K(),D(),N(),q(),oe(),le(),R(),_(),o(),z(),f(),y(),w(),v(),g(),Y=t(C()),F(),X=b(),Z=()=>(k(),null),Q=x(function(){let e=te(),[t]=ie(),n=re(),i=u(e.conversationId),o=s(t.get(`readonly`),!1),d=s(t.get(`isFullScreen`),!1),f=s(t.get(`header`),!0),m=s(t.get(`appPreview`),!1),g=c(),_=r(),v=s(t.get(`hideBottomComposer`),!!o),y=u(e.canmoreId),b=(0,Y.useMemo)(()=>p(i),[i]),x=j();(0,Y.useEffect)(()=>{M({type:T.Textdoc,textdocId:y})},[y]),B(b.id,{kind:l.PrimaryAssistant});let S=ne();if((0,Y.useEffect)(()=>(h.retainThread(b.id),()=>{S.invalidateQueries({queryKey:[`conversation`,b.id],refetchType:`none`}),h.releaseThread(b.id)}),[b.id,S]),(0,Y.useEffect)(()=>{y||n(`/`)},[y,n]),(0,Y.useEffect)(()=>{O().sendMessage({type:J.Loaded})},[y]),!y||x?.type!==T.Textdoc)return null;let C=()=>{O().sendMessage({type:J.Close})},w=o&&!f;return(0,X.jsxs)(`div`,{className:`h-full w-full overflow-hidden contain-content`,children:[(0,X.jsx)(`meta`,{name:`viewport`,content:`width=device-width, initial-scale=1, maximum-scale=1`}),(0,X.jsx)(ee.Provider,{value:p(b.id),children:(0,X.jsx)(L,{conversation:b,children:(0,X.jsx)(ae,{conversation:b,children:m?(0,X.jsx)(a,{children:(0,X.jsx)($,{textdocId:x.textdocId})}):w?(0,X.jsxs)(X.Fragment,{children:[(0,X.jsx)(U,{disableScroll:!g,textdocId:x.textdocId}),(0,X.jsx)(H,{})]}):(0,X.jsx)(se,{isEmbedded:!0,hideRunCode:!g,isFullScreen:d,hideHeader:!f,hideBottomComposer:v,isReadonlyFromQueryParam:o,hideRenameButton:_,conversation:b,focusedTextdoc:x,onClose:C},`textdocContent`)})})})]})}),$=({textdocId:e})=>{let t=(0,Y.useRef)(null),n=I(e),[r,a]=(0,Y.useState)(!1),o=d(n?.versions??[]),s=(0,Y.useCallback)(i(async e=>{let n=W(e.type,e.content);if(t.current&&(n===`react`||n===`html`)){a(!0);let r=t.current.evalAsync({language:n,code:e.content});for await(let e of r)console.debug(e)}a(!1)},100),[]);return(0,Y.useEffect)(()=>{o&&s(o)},[o,s]),(0,X.jsx)(ce,{id:e,visuallyHidden:!r,ref:t,enableTransition:!0,title:``})}}));e((()=>{ue()}))();export{Z as clientLoader,Q as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Att as n,
+    Bnt as r,
+    C_ as i,
+    Fz as a,
+    Iz as o,
+    Ltt as s,
+    Rnt as c,
+    Wet as l,
+    Wtt as u,
+    d1 as d,
+    eY as f,
+    gF as p,
+    gtt as m,
+    lF as ee,
+    qJ as h,
+    u1 as g,
+    vF as _,
+    w_ as v,
+    xnt as y
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as b,
+    Ht as x,
+    Lt as te,
+    N as ne,
+    Nt as re,
+    Q as S,
+    Vn as C,
+    Vt as ie,
+    s as w
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    B7 as ae,
+    EWn as T,
+    OWn as E,
+    V7 as D,
+    aWn as O,
+    c as k,
+    dWn as A,
+    fWn as j,
+    jWn as M,
+    mWn as N,
+    oWn as P,
+    s as F,
+    vWn as I
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    D_ as L,
+    O_ as R,
+    _ as z,
+    v as B
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    i as V,
+    n as oe,
+    r as H,
+    t as U
+} from "./ea4fa2d6-8axftuv0k1chudsm.js";
+import {
+    o as W,
+    s as G
+} from "./cc445a0e-nbq009pcni1b56t9.js";
+import {
+    i as K,
+    n as q,
+    r as J,
+    t as se
+} from "./ac476d6c-f0jbj8ennbi6mxfo.js";
+import {
+    n as ce,
+    r as le
+} from "./4d271a7b-df7bh6fcr9kmugr5.js";
+var Y, X, Z, Q, $, ue = e((() => {
+    S(), m(), n(), E(), A(), V(), G(), P(), K(), D(), N(), q(), oe(), le(), R(), _(), o(), z(), f(), y(), w(), v(), g(), Y = t(C()), F(), X = b(), Z = () => (k(), null), Q = x(function() {
+        let e = te(),
+            [t] = ie(),
+            n = re(),
+            i = u(e.conversationId),
+            o = s(t.get(`readonly`), !1),
+            d = s(t.get(`isFullScreen`), !1),
+            f = s(t.get(`header`), !0),
+            m = s(t.get(`appPreview`), !1),
+            g = c(),
+            _ = r(),
+            v = s(t.get(`hideBottomComposer`), !!o),
+            y = u(e.canmoreId),
+            b = (0, Y.useMemo)(() => p(i), [i]),
+            x = j();
+        (0, Y.useEffect)(() => {
+            M({
+                type: T.Textdoc,
+                textdocId: y
+            })
+        }, [y]), B(b.id, {
+            kind: l.PrimaryAssistant
+        });
+        let S = ne();
+        if ((0, Y.useEffect)(() => (h.retainThread(b.id), () => {
+                S.invalidateQueries({
+                    queryKey: [`conversation`, b.id],
+                    refetchType: `none`
+                }), h.releaseThread(b.id)
+            }), [b.id, S]), (0, Y.useEffect)(() => {
+                y || n(`/`)
+            }, [y, n]), (0, Y.useEffect)(() => {
+                O().sendMessage({
+                    type: J.Loaded
+                })
+            }, [y]), !y || x?.type !== T.Textdoc) return null;
+        let C = () => {
+                O().sendMessage({
+                    type: J.Close
+                })
+            },
+            w = o && !f;
+        return (0, X.jsxs)(`div`, {
+            className: `h-full w-full overflow-hidden contain-content`,
+            children: [(0, X.jsx)(`meta`, {
+                name: `viewport`,
+                content: `width=device-width, initial-scale=1, maximum-scale=1`
+            }), (0, X.jsx)(ee.Provider, {
+                value: p(b.id),
+                children: (0, X.jsx)(L, {
+                    conversation: b,
+                    children: (0, X.jsx)(ae, {
+                        conversation: b,
+                        children: m ? (0, X.jsx)(a, {
+                            children: (0, X.jsx)($, {
+                                textdocId: x.textdocId
+                            })
+                        }) : w ? (0, X.jsxs)(X.Fragment, {
+                            children: [(0, X.jsx)(U, {
+                                disableScroll: !g,
+                                textdocId: x.textdocId
+                            }), (0, X.jsx)(H, {})]
+                        }) : (0, X.jsx)(se, {
+                            isEmbedded: !0,
+                            hideRunCode: !g,
+                            isFullScreen: d,
+                            hideHeader: !f,
+                            hideBottomComposer: v,
+                            isReadonlyFromQueryParam: o,
+                            hideRenameButton: _,
+                            conversation: b,
+                            focusedTextdoc: x,
+                            onClose: C
+                        }, `textdocContent`)
+                    })
+                })
+            })]
+        })
+    }), $ = ({
+        textdocId: e
+    }) => {
+        let t = (0, Y.useRef)(null),
+            n = I(e),
+            [r, a] = (0, Y.useState)(!1),
+            o = d(n?.versions ?? []),
+            s = (0, Y.useCallback)(i(async e => {
+                let n = W(e.type, e.content);
+                if (t.current && (n === `react` || n === `html`)) {
+                    a(!0);
+                    let r = t.current.evalAsync({
+                        language: n,
+                        code: e.content
+                    });
+                    for await (let e of r) console.debug(e)
+                }
+                a(!1)
+            }, 100), []);
+        return (0, Y.useEffect)(() => {
+            o && s(o)
+        }, [o, s]), (0, X.jsx)(ce, {
+            id: e,
+            visuallyHidden: !r,
+            ref: t,
+            enableTransition: !0,
+            title: ``
+        })
+    }
+}));
+e((() => {
+    ue()
+}))();
+export {
+    Z as clientLoader, Q as
+    default
+};
 //# sourceMappingURL=c_._conversationId.canmore._canmoreId-mxeubkgu.js.map

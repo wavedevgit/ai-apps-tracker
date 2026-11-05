@@ -1,1 +1,170 @@
-export const __rspack_esm_ids=[975054];export const __webpack_modules__={kTEa:(function(s,a,r){r.d(a,{a:()=>t});var o=r("jqIZ"),e=r("EkCf");let t=(0,o.gb)(e.a)}),nDjx:(function(s,a,r){s.exports=r.p+"assets/appshot-logo.f0152cb4dd.png"}),hIAo:(function(s,a,r){s.exports=r.p+"assets/codex-app-ga-logo.dfddfb85d7.png"}),jZWr:(function(s,a,r){s.exports=r.p+"assets/dictation-error.f54db4f9bb.wav"}),OCvz:(function(s,a,r){s.exports=r.p+"assets/dictation-start.f6efcb404f.wav"}),DJ2e:(function(s,a,r){s.exports=r.p+"assets/dictation-stop.e3bc7ebc5e.wav"}),nlAI:(function(s,a,r){var o=r("ABep"),e=r("QosV"),t=r("XyTt"),m=r("zd8w"),f=r("v4LA"),p=r("AXDI");let i=(0,f.a)(t.v);r.d(a,{},{a:function(s){let a,r,t=(0,e.c)(3),{link:f}=s;return t[0]===Symbol.for("react.memo_cache_sentinel")?(a=(0,o.jsx)(p.b,{}),t[0]=a):a=t[0],t[1]!==f?(r=(0,o.jsx)(p.a,{children:(0,o.jsx)(m.Suspense,{fallback:a,children:(0,o.jsx)(i,{link:f})})}),t[1]=f,t[2]=r):r=t[2],r}})}),EkCf:(function(s,a,r){var o=r("ABep"),e=r("QosV"),t=r("jqIZ"),m=r("hC2y"),f=r("AXDI"),p=r("NVla"),i=r("nlAI");r.d(a,{},{a:function(s){let a,r,c,j,n,b=(0,e.c)(14),{fallback:l}=s,d=(0,t.X)();if(b[0]!==l||b[1]!==d){j=Symbol.for("react.early_return_sentinel");s:{let s=(0,t.K)(m.c,d);if(null==s){let s;b[6]!==d.pathname?(s=(0,p.b)(d.pathname),b[6]=d.pathname,b[7]=s):s=b[7];let a=s;if(null!=a){let s;b[8]!==a?(s=(0,o.jsx)(i.a,{link:a}),b[8]=a,b[9]=s):s=b[9],j=s;break s}}a=f.a,r=l,c=null==s?(0,o.jsx)(m.d,{}):(0,t.N)(s)}b[0]=l,b[1]=d,b[2]=a,b[3]=r,b[4]=c,b[5]=j}else a=b[2],r=b[3],c=b[4],j=b[5];return j!==Symbol.for("react.early_return_sentinel")?j:(b[10]!==a||b[11]!==r||b[12]!==c?(n=(0,o.jsx)(a,{fallback:r,children:c}),b[10]=a,b[11]=r,b[12]=c,b[13]=n):n=b[13],n)}})}),EBQV:(function(a){a.exports=s.ir("/cdn/assets/dotnet.js").then(function(s){return s})})};import{__webpack_require__ as s}from"./633146.2285f1d8aa.js";import*as a from"./680612.a5a31a0030.js";s.C(a);import*as r from"./418851.a4e06377a0.js";s.C(r);import*as o from"./109308.c442cdd552.js";s.C(o);import*as e from"./399565.beb7308a81.js";s.C(e);import*as t from"./257798.1c607c1777.js";s.C(t);import*as m from"./153380.b37e665dc3.js";s.C(m);import*as f from"./617936.784843eda2.js";s.C(f);import*as p from"./807489.43c08228d1.js";s.C(p);import*as i from"./337882.25be89bb6b.js";s.C(i);import*as c from"./955979.4d2a69cba7.js";s.C(c);import*as j from"./646436.9dd5128297.js";s.C(j);import*as n from"./7078.b81fd6ebdf.js";s.C(n);import*as b from"./200429.b8bf5eb48b.js";s.C(b);import*as l from"./698524.3578a8549b.js";s.C(l);import*as d from"./956483.8b486f09f8.js";s.C(d);import*as C from"./87162.984eea3ac6.js";s.C(C);import*as _ from"./396705.3c89161782.js";s.C(_);import*as x from"./155568.af6d2aefa8.js";s.C(x);import*as u from"./731863.0ff6d7d48b.js";s.C(u);import*as k from"./767086.75fa16b40d.js";s.C(k);import*as h from"./76629.5f0e27ddaa.js";s.C(h);import*as v from"./514085.974d142f7d.js";s.C(v);import*as A from"./204542.61a52e24da.js";s.C(A);import*as y from"./982651.82d8538ea6.js";s.C(y);import*as I from"./673108.fb5f4728ad.js";s.C(I);import*as g from"./487481.8cb886e883.js";s.C(g);import*as w from"./229522.d004cde422.js";s.C(w);import*as E from"./390575.e91c694262.js";s.C(E);import*as D from"./226913.d4efcaca8e.js";s.C(D);import*as S from"./547397.b2fe740321.js";s.C(S);import*as V from"./975054.330ad9f0d2.js";s.C(V);var X=s(s.s="kTEa").a;export{X as default};
+export const __rspack_esm_ids = [975054];
+export const __webpack_modules__ = {
+    kTEa: (function(s, a, r) {
+        r.d(a, {
+            a: () => t
+        });
+        var o = r("jqIZ"),
+            e = r("EkCf");
+        let t = (0, o.gb)(e.a)
+    }),
+    nDjx: (function(s, a, r) {
+        s.exports = r.p + "assets/appshot-logo.f0152cb4dd.png"
+    }),
+    hIAo: (function(s, a, r) {
+        s.exports = r.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    }),
+    jZWr: (function(s, a, r) {
+        s.exports = r.p + "assets/dictation-error.f54db4f9bb.wav"
+    }),
+    OCvz: (function(s, a, r) {
+        s.exports = r.p + "assets/dictation-start.f6efcb404f.wav"
+    }),
+    DJ2e: (function(s, a, r) {
+        s.exports = r.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    }),
+    nlAI: (function(s, a, r) {
+        var o = r("ABep"),
+            e = r("QosV"),
+            t = r("XyTt"),
+            m = r("zd8w"),
+            f = r("v4LA"),
+            p = r("AXDI");
+        let i = (0, f.a)(t.v);
+        r.d(a, {}, {
+            a: function(s) {
+                let a, r, t = (0, e.c)(3),
+                    {
+                        link: f
+                    } = s;
+                return t[0] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, o.jsx)(p.b, {}), t[0] = a) : a = t[0], t[1] !== f ? (r = (0, o.jsx)(p.a, {
+                    children: (0, o.jsx)(m.Suspense, {
+                        fallback: a,
+                        children: (0, o.jsx)(i, {
+                            link: f
+                        })
+                    })
+                }), t[1] = f, t[2] = r) : r = t[2], r
+            }
+        })
+    }),
+    EkCf: (function(s, a, r) {
+        var o = r("ABep"),
+            e = r("QosV"),
+            t = r("jqIZ"),
+            m = r("hC2y"),
+            f = r("AXDI"),
+            p = r("NVla"),
+            i = r("nlAI");
+        r.d(a, {}, {
+            a: function(s) {
+                let a, r, c, j, n, b = (0, e.c)(14),
+                    {
+                        fallback: l
+                    } = s,
+                    d = (0, t.X)();
+                if (b[0] !== l || b[1] !== d) {
+                    j = Symbol.for("react.early_return_sentinel");
+                    s: {
+                        let s = (0, t.K)(m.c, d);
+                        if (null == s) {
+                            let s;
+                            b[6] !== d.pathname ? (s = (0, p.b)(d.pathname), b[6] = d.pathname, b[7] = s) : s = b[7];
+                            let a = s;
+                            if (null != a) {
+                                let s;
+                                b[8] !== a ? (s = (0, o.jsx)(i.a, {
+                                    link: a
+                                }), b[8] = a, b[9] = s) : s = b[9], j = s;
+                                break s
+                            }
+                        }
+                        a = f.a,
+                        r = l,
+                        c = null == s ? (0, o.jsx)(m.d, {}) : (0, t.N)(s)
+                    }
+                    b[0] = l, b[1] = d, b[2] = a, b[3] = r, b[4] = c, b[5] = j
+                } else a = b[2], r = b[3], c = b[4], j = b[5];
+                return j !== Symbol.for("react.early_return_sentinel") ? j : (b[10] !== a || b[11] !== r || b[12] !== c ? (n = (0, o.jsx)(a, {
+                    fallback: r,
+                    children: c
+                }), b[10] = a, b[11] = r, b[12] = c, b[13] = n) : n = b[13], n)
+            }
+        })
+    }),
+    EBQV: (function(a) {
+        a.exports = s.ir("/cdn/assets/dotnet.js").then(function(s) {
+            return s
+        })
+    })
+};
+import {
+    __webpack_require__ as s
+} from "./633146.2285f1d8aa.js";
+import * as a from "./680612.a5a31a0030.js";
+s.C(a);
+import * as r from "./418851.a4e06377a0.js";
+s.C(r);
+import * as o from "./109308.c442cdd552.js";
+s.C(o);
+import * as e from "./399565.beb7308a81.js";
+s.C(e);
+import * as t from "./257798.1c607c1777.js";
+s.C(t);
+import * as m from "./153380.b37e665dc3.js";
+s.C(m);
+import * as f from "./617936.784843eda2.js";
+s.C(f);
+import * as p from "./807489.43c08228d1.js";
+s.C(p);
+import * as i from "./337882.25be89bb6b.js";
+s.C(i);
+import * as c from "./955979.4d2a69cba7.js";
+s.C(c);
+import * as j from "./646436.9dd5128297.js";
+s.C(j);
+import * as n from "./7078.b81fd6ebdf.js";
+s.C(n);
+import * as b from "./200429.b8bf5eb48b.js";
+s.C(b);
+import * as l from "./698524.3578a8549b.js";
+s.C(l);
+import * as d from "./956483.8b486f09f8.js";
+s.C(d);
+import * as C from "./87162.984eea3ac6.js";
+s.C(C);
+import * as _ from "./396705.3c89161782.js";
+s.C(_);
+import * as x from "./155568.af6d2aefa8.js";
+s.C(x);
+import * as u from "./731863.0ff6d7d48b.js";
+s.C(u);
+import * as k from "./767086.75fa16b40d.js";
+s.C(k);
+import * as h from "./76629.5f0e27ddaa.js";
+s.C(h);
+import * as v from "./514085.974d142f7d.js";
+s.C(v);
+import * as A from "./204542.61a52e24da.js";
+s.C(A);
+import * as y from "./982651.82d8538ea6.js";
+s.C(y);
+import * as I from "./673108.fb5f4728ad.js";
+s.C(I);
+import * as g from "./487481.8cb886e883.js";
+s.C(g);
+import * as w from "./229522.d004cde422.js";
+s.C(w);
+import * as E from "./390575.e91c694262.js";
+s.C(E);
+import * as D from "./226913.d4efcaca8e.js";
+s.C(D);
+import * as S from "./547397.b2fe740321.js";
+s.C(S);
+import * as V from "./975054.330ad9f0d2.js";
+s.C(V);
+var X = s(s.s = "kTEa").a;
+export {
+    X as
+    default
+};

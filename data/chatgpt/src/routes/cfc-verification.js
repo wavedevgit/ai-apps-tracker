@@ -1,2 +1,1495 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,A4 as r,Am as i,Ant as ee,CR as te,Crt as ne,I7 as re,K5 as a,Knt as ie,Lit as ae,M7 as oe,N4 as se,Nat as ce,P4 as le,Qy as ue,Rit as de,Snt as fe,TR as pe,Wnt as me,Zy as he,_rt as ge,a0 as _e,cot as o,e0 as ve,eE as s,j4 as ye,jat as be,jm as c,knt as xe,not as Se,o0 as Ce,q1 as l,q5 as u,xnt as we}from"./4813494d-mdvd4786a87166cc.js";import{At as Te,Bn as d,Ht as Ee,Ln as f,Nn as p,Q as m,Rn as De,Vn as Oe,wn as h,zn as ke}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Irt as Ae,Lrt as je,O8 as Me,Uu as Ne,Wu as Pe,cqn as Fe,icn as Ie,k8 as Le,ncn as Re,sqn as ze}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Av as Be,Tx as Ve,hl as He,jv as Ue,ml as We,wx as Ge}from"./30901919-s8bko9nrkqwv6i4f.js";import{Bf as Ke,Hf as qe}from"./c2675c8c-oz03twoan08d72ud.js";import{jh as Je,kh as Ye}from"./8b34dbc2-lmwubajnld74ksfm.js";import{a as Xe,c as Ze,n as Qe,o as $e,s as et,t as tt}from"./0030787a-bq75w29fyumzqjmf.js";import{n as nt,t as rt}from"./07c2dfe6-j7vs16jpv1q8ps6g.js";import{n as it,t as at}from"./dd53ca11-hrvlebwede8lb910.js";var ot,st=e((()=>{re(),ot=e=>oe.safePost(`/accounts/create_quorum_workspace`,{requestBody:e})}));function ct(e){let t=new URLSearchParams(e),n=t.get(`source`),r=t.get(`beacon_id`);if(!(!n&&!r))return{...n?{source:n}:{},...r?{beacon_id:r}:{}}}function lt(e,t){if(!t)return e;let n=e?{...e}:{};return Object.assign(n,t),n}function ut(){"use forget";let e=(0,Ct.c)(268),t=ke(),r=ge(`1498338261`),i=Te(),te=(0,g.useRef)(null),ne=(0,g.useRef)(null),re=(0,g.useRef)(!1),ie=(0,g.useRef)(!1),ae=(0,g.useRef)(!1),ce=(0,g.useRef)(!1),le=(0,g.useRef)(!1),ue=(0,g.useRef)(!1),[o,s]=(0,g.useState)(()=>r?[]:[0]),[c,l]=(0,g.useState)(!1),[u,we]=(0,g.useState)(!1),[d,Ee]=(0,g.useState)(null),[f,m]=(0,g.useState)(!1),[De,Oe]=(0,g.useState)(!1),[h,je]=(0,g.useState)(!1),[Ne,Fe]=(0,g.useState)(null),[Ie,Le]=(0,g.useState)(null),[He,Ue]=(0,g.useState)(!1),[Ge,Ke]=(0,g.useState)(!1),[Je,$e]=(0,g.useState)(``),[tt,nt]=(0,g.useState)(null),[it,st]=(0,g.useState)(!1),[ut,Dt]=(0,g.useState)(!1),[Ot,b]=(0,g.useState)(null),{enrollmentState:x,refreshEnrollmentStatus:S,isRefreshing:At}=Qe(),C=_e(),w=Ce(),jt=pe(),Mt=ge(`2369709783`),Nt;e[0]===i.search?Nt=e[1]:(Nt=()=>xe()&&(window.webkit?.messageHandlers?.hmpWorkspaceCreated!==void 0||new URLSearchParams(i.search).get(`native_deferred_persona_verification`)===`true`),e[0]=i.search,e[1]=Nt);let T=ye(Nt,St),Pt;e[2]!==i.search||e[3]!==T?(Pt=T&&new URLSearchParams(i.search).get(`complete_persona_verification`)===`true`,e[2]=i.search,e[3]=T,e[4]=Pt):Pt=e[4];let E=Pt,D=E?w?.id:void 0,Ft=it&&x.name===`needs-verification`,It;e[5]===T?It=e[6]:(It=!xe()||T,e[5]=T,e[6]=It);let Lt=It,O=!Ft&&Lt&&(x.name===`needs-verification`||x.name===`pending`&&x.deferredVerification===!0||tt!==null)&&ge(`1588629910`),k=O&&(tt!==null||x.name===`pending`&&x.deferredVerification===!0&&!!x.npi),Rt=c&&!f,A=et(x),j=A||x.name===`failed`,M=!k&&(x.name===`pending`||x.name===`failed`||Ft),zt=!!C.data,N,Bt;if(e[7]!==C.data?.accountItems||e[8]!==w?.id){let t=C.data?.accountItems.filter(xt)??[];N=(t[0]??null)!==null;let n=t.filter(bt);Bt=n.find(e=>e.id===w?.id)??n[0],e[7]=C.data?.accountItems,e[8]=w?.id,e[9]=N,e[10]=Bt}else N=e[9],Bt=e[10];let P=Lt&&!E&&!Mt?Bt?.id??null:null,Vt=C.isLoading&&!zt||P!=null,Ht=!Vt&&O&&x.name===`needs-verification`&&!k,Ut=Vt||Rt||At||d!=null&&!j,Wt=Ut||He,F=Mt&&zt&&N&&(A||k)&&!De,Gt=(A||k)&&!F,I=Gt&&zt&&(!N||Mt),Kt=zt&&Ze({canCreateQuorumWorkspace:Gt,hasExistingQuorumWorkspace:N,hasRecoverableProvisionalWorkspace:!!P,isMultipleQuorumWorkspaceAllowed:Mt}),L=!Mt&&(Kt||Ge),qt=L?Xe.description:F?y.freshVerificationDescription:M?y.retryDescription:O?y.deferredVerificationDescription:r?y.onboardingDescription:y.description,Jt=L?Xe.cta:F?y.freshVerificationCta:A?y.verifiedCta:k?y.npiConfirmedCta:M?y.retryCta:y.primaryCta,Yt=L?Xe.cta:Ut?y.primaryCtaLoading:Jt,Xt;e[11]===Symbol.for(`react.memo_cache_sentinel`)?(Xt=!ee()&&!fe()||!xe(),e[11]=Xt):Xt=e[11];let Zt=Xt,Qt;e[12]===Symbol.for(`react.memo_cache_sentinel`)?(Qt={defaultValues:{isLicensed:!1,agreedToToS:!1}},e[12]=Qt):Qt=e[12];let $t=qe(Qt),en;e[13]===i.search?en=e[14]:(en=(e,t,n)=>{let r=lt(t,ct(i.search));me.logValueEventWithStatsig({segmentEventName:e,statsigEventName:e,data:r,eventId:n}),be.addAction(e,r)},e[13]=i.search,e[14]=en);let R=en,tn;e[15]!==t||e[16]!==ut||e[17]!==Je||e[18]!==S?(tn=async()=>{if(ut)return;let e=Je.trim();if(b(null),!/^[0-9]{10}$/.test(e)){b(t.formatMessage(y.npiValidationError));return}Dt(!0);try{let n=(await oe.safePost(`/quorum/preverify_npi`,{requestBody:{npi:e}})).metadata;n?.verification_status===`pending`&&n.deferred_verification&&n.npi===e?nt(e):b(t.formatMessage(y.npiPreverificationError))}catch(e){let n=e;n instanceof Se&&n.status===409?(st(!0),S()):b(t.formatMessage(n instanceof Se&&n.status===400?y.npiValidationError:y.npiPreverificationError))}Dt(!1)},e[15]=t,e[16]=ut,e[17]=Je,e[18]=S,e[19]=tn):tn=e[19];let nn=tn,rn=yt,z=vt,an;e[20]!==w||e[21]!==k||e[22]!==t||e[23]!==h||e[24]!==A||e[25]!==R||e[26]!==T||e[27]!==jt?(an=async()=>{if(h)return;Fe(null),je(!0);let e=await Re(t,w??null,jt),n=k&&!A;try{n||R(v.postVerificationWorkspaceCreateStarted,{has_current_account:!!w});let t=(await ot({workspace_name:e})).workspace_id;if(ve(t),n){if(T){z(t,`hmp_workspace_created`);return}se(`/onboarding`);return}R(v.postVerificationWorkspaceCreateSucceeded),z(t,`hmp_verification_complete`),se()}catch(e){let r=e;if(je(!1),n||R(v.postVerificationWorkspaceCreateFailed,{reason:r instanceof Se?`request_${r.status}`:`unknown`}),r instanceof Se&&r.status===403){if(rn(r)){Ke(!0),Fe(null);return}if(!n){l(!0);return}}Fe(t.formatMessage(y.quorumWorkspaceCreateError))}},e[20]=w,e[21]=k,e[22]=t,e[23]=h,e[24]=A,e[25]=R,e[26]=T,e[27]=jt,e[28]=an):an=e[28];let on=an,sn=h||Rt||At,cn;e[29]===Symbol.for(`react.memo_cache_sentinel`)?(cn={settingsLink:_t,settingsGroup:gt},e[29]=cn):cn=e[29];let ln=cn,B;e[30]===t?B=e[31]:(B=t.formatMessage(y.verificationFaqSectionTitle),e[30]=t,e[31]=B);let V;e[32]===t?V=e[33]:(V=t.formatMessage(y.faq1Question),e[32]=t,e[33]=V);let un;e[34]===Symbol.for(`react.memo_cache_sentinel`)?(un=(0,_.jsx)(p,{...y.faq1Answer}),e[34]=un):un=e[34];let H;e[35]===V?H=e[36]:(H={question:V,answer:un},e[35]=V,e[36]=H);let U;e[37]===t?U=e[38]:(U=t.formatMessage(y.faq2Question),e[37]=t,e[38]=U);let dn;e[39]===Symbol.for(`react.memo_cache_sentinel`)?(dn=(0,_.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,_.jsx)(`p`,{children:(0,_.jsx)(p,{...y.faq2Answer})}),(0,_.jsx)(`p`,{children:(0,_.jsx)(p,{...y.faq2AnswerFollowUp})})]}),e[39]=dn):dn=e[39];let W;e[40]===U?W=e[41]:(W={question:U,answer:dn},e[40]=U,e[41]=W);let G;e[42]===t?G=e[43]:(G=t.formatMessage(y.faq3Question),e[42]=t,e[43]=G);let fn;e[44]===Symbol.for(`react.memo_cache_sentinel`)?(fn=(0,_.jsx)(p,{...y.faq3Answer}),e[44]=fn):fn=e[44];let pn;e[45]===Symbol.for(`react.memo_cache_sentinel`)?(pn=(0,_.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[fn,(0,_.jsxs)(`ul`,{className:`list-disc ps-5`,children:[(0,_.jsx)(`li`,{children:(0,_.jsx)(p,{...y.faq3Bullet1})}),(0,_.jsx)(`li`,{children:(0,_.jsx)(p,{...y.faq3Bullet2})})]})]}),e[45]=pn):pn=e[45];let K;e[46]===G?K=e[47]:(K={question:G,answer:pn},e[46]=G,e[47]=K);let q;e[48]===t?q=e[49]:(q=t.formatMessage(y.faq4Question),e[48]=t,e[49]=q);let mn;e[50]===Symbol.for(`react.memo_cache_sentinel`)?(mn=(0,_.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,_.jsxs)(`ul`,{className:`list-disc ps-5`,children:[(0,_.jsx)(`li`,{children:(0,_.jsx)(p,{...y.faq4Item1})}),(0,_.jsx)(`li`,{children:(0,_.jsx)(p,{...y.faq4Item2})})]}),(0,_.jsx)(p,{...y.faq4Answer})]}),e[50]=mn):mn=e[50];let J;e[51]===q?J=e[52]:(J={question:q,answer:mn},e[51]=q,e[52]=J);let Y;e[53]===t?Y=e[54]:(Y=t.formatMessage(y.faq5Question),e[53]=t,e[54]=Y);let hn;e[55]===Symbol.for(`react.memo_cache_sentinel`)?(hn=(0,_.jsx)(p,{...y.faq5Answer}),e[55]=hn):hn=e[55];let X;e[56]===Y?X=e[57]:(X={question:Y,answer:hn},e[56]=Y,e[57]=X);let gn;e[58]===t?gn=e[59]:(gn=t.formatMessage(y.faq6Question),e[58]=t,e[59]=gn);let _n;e[60]===Symbol.for(`react.memo_cache_sentinel`)?(_n=(0,_.jsx)(p,{...y.faq6Answer}),e[60]=_n):_n=e[60];let vn;e[61]===gn?vn=e[62]:(vn={question:gn,answer:_n},e[61]=gn,e[62]=vn);let yn;e[63]===t?yn=e[64]:(yn=t.formatMessage(y.faq9Question),e[63]=t,e[64]=yn);let bn;e[65]===Symbol.for(`react.memo_cache_sentinel`)?(bn=(0,_.jsx)(p,{...y.faq9Answer}),e[65]=bn):bn=e[65];let xn;e[66]===yn?xn=e[67]:(xn={question:yn,answer:bn},e[66]=yn,e[67]=xn);let Sn;e[68]===t?Sn=e[69]:(Sn=t.formatMessage(y.faq13Question),e[68]=t,e[69]=Sn);let Cn=O?y.deferredFaq13Answer:y.faq13Answer,wn;e[70]===Cn?wn=e[71]:(wn=(0,_.jsx)(p,{...Cn}),e[70]=Cn,e[71]=wn);let Tn;e[72]!==Sn||e[73]!==wn?(Tn={question:Sn,answer:wn},e[72]=Sn,e[73]=wn,e[74]=Tn):Tn=e[74];let En;e[75]!==H||e[76]!==W||e[77]!==K||e[78]!==J||e[79]!==X||e[80]!==vn||e[81]!==xn||e[82]!==Tn?(En=[H,W,K,J,X,vn,xn,Tn],e[75]=H,e[76]=W,e[77]=K,e[78]=J,e[79]=X,e[80]=vn,e[81]=xn,e[82]=Tn,e[83]=En):En=e[83];let Dn;e[84]!==B||e[85]!==En?(Dn={title:B,items:En},e[84]=B,e[85]=En,e[86]=Dn):Dn=e[86];let On;e[87]===t?On=e[88]:(On=t.formatMessage(y.securityFaqSectionTitle),e[87]=t,e[88]=On);let kn;e[89]===t?kn=e[90]:(kn=t.formatMessage(y.faq7Question),e[89]=t,e[90]=kn);let An;e[91]===Symbol.for(`react.memo_cache_sentinel`)?(An=(0,_.jsx)(p,{...y.faq7Answer}),e[91]=An):An=e[91];let jn;e[92]===kn?jn=e[93]:(jn={question:kn,answer:An},e[92]=kn,e[93]=jn);let Mn;e[94]===t?Mn=e[95]:(Mn=t.formatMessage(y.faq8Question),e[94]=t,e[95]=Mn);let Nn;e[96]===Symbol.for(`react.memo_cache_sentinel`)?(Nn=(0,_.jsx)(p,{...y.faq8Answer}),e[96]=Nn):Nn=e[96];let Pn;e[97]===Mn?Pn=e[98]:(Pn={question:Mn,answer:Nn},e[97]=Mn,e[98]=Pn);let Fn;e[99]===t?Fn=e[100]:(Fn=t.formatMessage(y.faq10Question),e[99]=t,e[100]=Fn);let In;e[101]===Symbol.for(`react.memo_cache_sentinel`)?(In=(0,_.jsx)(p,{...y.faq10Answer}),e[101]=In):In=e[101];let Ln;e[102]===Fn?Ln=e[103]:(Ln={question:Fn,answer:In},e[102]=Fn,e[103]=Ln);let Rn;e[104]===t?Rn=e[105]:(Rn=t.formatMessage(y.faq11Question),e[104]=t,e[105]=Rn);let zn;e[106]===Symbol.for(`react.memo_cache_sentinel`)?(zn=(0,_.jsx)(p,{...y.faq11Answer}),e[106]=zn):zn=e[106];let Bn;e[107]===Rn?Bn=e[108]:(Bn={question:Rn,answer:zn},e[107]=Rn,e[108]=Bn);let Vn;e[109]===t?Vn=e[110]:(Vn=t.formatMessage(y.faq12Question),e[109]=t,e[110]=Vn);let Hn;e[111]===Symbol.for(`react.memo_cache_sentinel`)?(Hn=(0,_.jsx)(p,{...y.faq12Answer}),e[111]=Hn):Hn=e[111];let Un;e[112]===Vn?Un=e[113]:(Un={question:Vn,answer:Hn},e[112]=Vn,e[113]=Un);let Wn;e[114]!==jn||e[115]!==Pn||e[116]!==Ln||e[117]!==Bn||e[118]!==Un?(Wn=[jn,Pn,Ln,Bn,Un],e[114]=jn,e[115]=Pn,e[116]=Ln,e[117]=Bn,e[118]=Un,e[119]=Wn):Wn=e[119];let Gn;e[120]!==On||e[121]!==Wn?(Gn={title:On,items:Wn},e[120]=On,e[121]=Wn,e[122]=Gn):Gn=e[122];let Kn;e[123]===t?Kn=e[124]:(Kn=t.formatMessage(y.phiFaqSectionTitle),e[123]=t,e[124]=Kn);let qn;e[125]===t?qn=e[126]:(qn=t.formatMessage(y.faq14Question),e[125]=t,e[126]=qn);let Jn;e[127]===Symbol.for(`react.memo_cache_sentinel`)?(Jn=(0,_.jsx)(p,{...y.faq14Answer,values:ln}),e[127]=Jn):Jn=e[127];let Yn;e[128]===qn?Yn=e[129]:(Yn={question:qn,answer:Jn},e[128]=qn,e[129]=Yn);let Xn;e[130]===t?Xn=e[131]:(Xn=t.formatMessage(y.faq15Question),e[130]=t,e[131]=Xn);let Zn;e[132]===Symbol.for(`react.memo_cache_sentinel`)?(Zn=(0,_.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,_.jsx)(p,{...y.faq15Answer,values:ln}),(0,_.jsx)(p,{...y.faq15AnswerEnterprise})]}),e[132]=Zn):Zn=e[132];let Qn;e[133]===Xn?Qn=e[134]:(Qn={question:Xn,answer:Zn},e[133]=Xn,e[134]=Qn);let $n;e[135]!==Yn||e[136]!==Qn?($n=[Yn,Qn],e[135]=Yn,e[136]=Qn,e[137]=$n):$n=e[137];let er;e[138]!==Kn||e[139]!==$n?(er={title:Kn,items:$n},e[138]=Kn,e[139]=$n,e[140]=er):er=e[140];let tr;e[141]!==Dn||e[142]!==Gn||e[143]!==er?(tr=[Dn,Gn,er],e[141]=Dn,e[142]=Gn,e[143]=er,e[144]=tr):tr=e[144];let Z=tr,nr;e[145]===Z?nr=e[146]:(nr=Z.flatMap(ht),e[145]=Z,e[146]=nr);let rr=nr,ir,ar;e[147]===R?(ir=e[148],ar=e[149]):(ir=()=>{if(re.current)return;re.current=!0;let e=v.pageViewed,t=me.logStructuredEvent(`ChatgptQuorumWebVerificationEvent`,{legacyStatsigEventName:e,stage:`CHATGPT_QUORUM_WEB_VERIFICATION_STAGE_PAGE_VIEWED`});R(e,void 0,t)},ar=[R],e[147]=R,e[148]=ir,e[149]=ar),(0,g.useEffect)(ir,ar);let or,sr;e[150]===Kt?(or=e[151],sr=e[152]):(or=()=>{Kt&&(Ke(!0),Fe(null))},sr=[Kt],e[150]=Kt,e[151]=or,e[152]=sr),(0,g.useEffect)(or,sr);let cr,lr;e[153]!==N||e[154]!==i.search||e[155]!==R||e[156]!==I?(cr=()=>{if(!I||ie.current)return;ie.current=!0;let e=ct(i.search);me.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`quorum_cfc_terms_shown`,flow:`quorum_clinician_enrollment`,planType:`quorum`,step:N?`existing_quorum_workspace`:`new_quorum_workspace`,...e?.source?{entryPoint:e.source}:{}}),R(v.termsShown,{has_existing_quorum_workspace:N})},lr=[N,i.search,R,I],e[153]=N,e[154]=i.search,e[155]=R,e[156]=I,e[157]=cr,e[158]=lr):(cr=e[157],lr=e[158]),(0,g.useEffect)(cr,lr);let ur,dr;e[159]!==L||e[160]!==R?(ur=()=>{!L||ae.current||(ae.current=!0,R(v.existingWorkspaceBlockedShown))},dr=[L,R],e[159]=L,e[160]=R,e[161]=ur,e[162]=dr):(ur=e[161],dr=e[162]),(0,g.useEffect)(ur,dr);let fr,pr;e[163]!==x.name||e[164]!==f||e[165]!==u||e[166]!==E||e[167]!==c?(fr=()=>{if(E&&x.name===`pending`&&!u&&!c&&!f&&!le.current){let e=window.setTimeout(()=>{le.current=!0,l(!0)},0);return()=>window.clearTimeout(e)}},pr=[x.name,f,u,E,c],e[163]=x.name,e[164]=f,e[165]=u,e[166]=E,e[167]=c,e[168]=fr,e[169]=pr):(fr=e[168],pr=e[169]),(0,g.useEffect)(fr,pr);let mr,hr;e[170]!==E||e[171]!==c||e[172]!==R||e[173]!==D||e[174]!==S||e[175]!==F||e[176]!==M?(mr=()=>{if(c)return Pe({onLoad:()=>{m(!0);let e=v.personaOpened,t=me.logStructuredEvent(`ChatgptQuorumWebVerificationEvent`,{legacyStatsigEventName:e,stage:`CHATGPT_QUORUM_WEB_VERIFICATION_STAGE_PERSONA_OPENED`,isRetry:M||F});R(e,{is_retry:M||F},t)},onComplete:()=>{l(!1),m(!1),Oe(!0);let e=v.personaCompleted,t=me.logStructuredEvent(`ChatgptQuorumWebVerificationEvent`,{legacyStatsigEventName:e,stage:`CHATGPT_QUORUM_WEB_VERIFICATION_STAGE_PERSONA_COMPLETED`,isRetry:M||F});R(e,{is_retry:M||F},t),S(),D?we(!0):E||Ee(Date.now()+Et)},onCancel:()=>{l(!1),m(!1),R(v.personaCanceled,{is_retry:M||F})},onInquiryCreationError:e=>{if(l(!1),m(!1),R(v.personaStartFailed,{is_retry:M||F}),kt(e)){Ue(!0),Le(y.verificationMaxAttemptsError);return}Le(y.verificationStartError)}})},hr=[E,c,R,D,z,S,F,M],e[170]=E,e[171]=c,e[172]=R,e[173]=D,e[174]=S,e[175]=F,e[176]=M,e[177]=mr,e[178]=hr):(mr=e[177],hr=e[178]),(0,g.useEffect)(mr,hr);let gr,_r;e[179]!==x.name||e[180]!==u||e[181]!==D||e[182]!==S?(gr=()=>{if(!u||!D)return;if(x.name===`verified`||x.name===`allowlisted`){ue.current||(ue.current=!0,z(D,`hmp_verification_complete`));return}let e=window.setInterval(S,2e3);return()=>window.clearInterval(e)},_r=[x.name,u,D,z,S],e[179]=x.name,e[180]=u,e[181]=D,e[182]=S,e[183]=gr,e[184]=_r):(gr=e[183],_r=e[184]),(0,g.useEffect)(gr,_r);let vr,yr;e[185]===d?(vr=e[186],yr=e[187]):(vr=()=>{if(d==null)return;let e=window.setTimeout(()=>Ee(e=>e===d?null:e),Math.max(0,d-Date.now()));return()=>window.clearTimeout(e)},yr=[d],e[185]=d,e[186]=vr,e[187]=yr),(0,g.useEffect)(vr,yr);let br;e[188]!==j||e[189]!==S||e[190]!==d?(br=()=>{if(d==null||j)return;let e=window.setInterval(S,2e3);return()=>window.clearInterval(e)},e[188]=j,e[189]=S,e[190]=d,e[191]=br):br=e[191];let xr;e[192]!==x.name||e[193]!==j||e[194]!==S||e[195]!==d?(xr=[x.name,j,S,d],e[192]=x.name,e[193]=j,e[194]=S,e[195]=d,e[196]=xr):xr=e[196],(0,g.useEffect)(br,xr);let Sr,Cr;if(e[197]!==P||e[198]!==T?(Sr=()=>{if(!(!P||ce.current)){if(ce.current=!0,ve(P),T){z(P,`hmp_workspace_created`);return}se(`/onboarding`)}},Cr=[z,P,T],e[197]=P,e[198]=T,e[199]=Sr,e[200]=Cr):(Sr=e[199],Cr=e[200]),(0,g.useEffect)(Sr,Cr),!de())return null;let wr,Tr;e[201]===Symbol.for(`react.memo_cache_sentinel`)?(wr=()=>{te.current?.scrollIntoView({behavior:`smooth`})},Tr=(0,_.jsx)(p,{...y.secondaryCta}),e[201]=wr,e[202]=Tr):(wr=e[201],Tr=e[202]);let Er=(0,_.jsx)(n,{size:`large`,color:`ghost`,className:a(`px-5 py-2.5 text-sm`,r&&`text-token-text-secondary mt-2 h-10 min-h-0 font-normal`),onClick:wr,children:Tr}),Dr=r&&I&&A?y.onboardingVerifiedTitle:O?y.deferredTitle:y.title,Or=r?ze:`input`,kr=!r&&Zt&&(0,_.jsx)(`nav`,{className:`bg-token-main-surface-primary fixed start-0 end-0 top-0 z-10 border-b border-transparent py-4`,children:(0,_.jsxs)(`div`,{className:a(wt,`flex items-center justify-between`),children:[(0,_.jsx)(`a`,{href:`/`,"aria-label":t.formatMessage(y.homeLinkLabel),children:(0,_.jsx)(Me,{})}),(0,_.jsx)(Ye,{})]})}),Ar=a(r?`flex flex-col items-center text-center`:[wt,`flex flex-col items-center gap-4 pt-16 text-center md:pt-20`],r&&I&&`lg:min-h-[572px] lg:justify-center lg:pt-3`),jr=r?`text-heading-app font-medium`:`text-4xl text-balance md:text-5xl`,Mr;e[203]===Dr?Mr=e[204]:(Mr=(0,_.jsx)(p,{...Dr}),e[203]=Dr,e[204]=Mr);let Q;e[205]!==jr||e[206]!==Mr?(Q=(0,_.jsx)(`h1`,{className:jr,children:Mr}),e[205]=jr,e[206]=Mr,e[207]=Q):Q=e[207];let Nr=!Vt&&(0,_.jsx)(`p`,{className:a(`text-token-text-secondary`,r?`text-body-regular mt-2`:`max-w-[720px] text-base md:text-lg`),children:(0,_.jsx)(p,{...r&&I?y.quorumTermsTitle:qt})}),Pr=r&&!L&&!O&&!Gt&&!Vt&&(0,_.jsxs)(`div`,{className:`border-token-border-default mt-6 w-full max-w-[352px] divide-y rounded-2xl border px-4 text-start`,children:[(0,_.jsxs)(`div`,{className:`border-token-border-default flex h-14 items-center gap-4 text-sm`,children:[(0,_.jsx)(We,{"aria-hidden":`true`,className:`icon-lg`}),(0,_.jsx)(p,{...y.onboardingGovernmentId})]}),(0,_.jsxs)(`div`,{className:`border-token-border-default flex h-14 items-center gap-4 text-sm`,children:[(0,_.jsx)(Ve,{"aria-hidden":`true`,className:`icon-lg`}),(0,_.jsx)(p,{...y.onboardingNpi})]})]}),Fr=(!r||!I)&&(0,_.jsxs)(`div`,{className:a(`flex w-full flex-col gap-3`,r?`mt-6 max-w-[352px] items-center`:`mt-2 max-w-[520px]`,!r&&!Ht&&`sm:flex-row sm:items-center sm:justify-center`),children:[L?(0,_.jsx)(n,{as:`a`,to:`https://chatgpt.com`,size:`medium`,color:`primary`,className:a(`py-2.5 text-sm`,r?`h-11 rounded-full px-4`:`px-5`),children:(0,_.jsx)(p,{...Yt})}):Ht?(0,_.jsxs)(`div`,{className:`border-token-border-light bg-token-bg-primary shadow-elevation-01 flex w-full flex-col gap-4 rounded-[28px] border p-5 text-start sm:p-6`,children:[(0,_.jsxs)(`div`,{className:`flex flex-col gap-1`,children:[(0,_.jsx)(`label`,{htmlFor:`quorum-preverification-npi`,className:`text-token-text-primary text-sm font-medium`,children:(0,_.jsx)(p,{...y.npiLabel})}),(0,_.jsx)(`p`,{id:`quorum-preverification-npi-help`,className:`text-token-text-secondary text-sm`,children:(0,_.jsx)(p,{...y.npiHelpText})})]}),(0,_.jsx)(Ae,{name:`quorum-preverification-npi`,ariaLabel:!1,"aria-describedby":`quorum-preverification-npi-help`,type:`text`,inputMode:`numeric`,autoComplete:`off`,value:Je,placeholder:t.formatMessage(y.npiPlaceholder),error:Ot??void 0,showErrorIcon:!0,className:`rounded-full! border-[var(--border-heavy)] p-0! focus-within:ring-1`,inputClassName:`w-full rounded-full! px-5! py-3! text-base! sm:text-base!`,onChange:e=>{$e(e.target.value),b(null)},onKeyDown:e=>{e.key===`Enter`&&nn()}}),(0,_.jsx)(n,{type:`button`,size:`large`,color:`primary`,fullWidth:!0,loading:ut,disabled:ut||At,onClick:()=>void nn(),children:(0,_.jsx)(p,{...y.npiContinueCta})})]}):Gt?I?(0,_.jsxs)(`p`,{className:a(`inline-flex min-h-11 items-center gap-2 px-5 py-2.5 text-sm font-medium`,A?`text-token-text-primary`:`bg-token-bg-status-success text-token-text-status-success rounded-full`),children:[A?null:(0,_.jsx)(Be,{"aria-hidden":`true`,className:`icon-sm`}),(0,_.jsx)(p,{...A?y.verifiedCta:y.npiConfirmedCta})]}):(0,_.jsx)(n,{size:`medium`,color:`primary`,className:a(`py-2.5 text-sm`,r?`h-11 rounded-full px-4`:`px-5`),loading:!0,disabled:!0,"aria-disabled":!0,children:(0,_.jsx)(p,{...Yt})}):(0,_.jsx)(n,{size:`medium`,color:`primary`,className:a(`py-2.5 text-sm`,r?`h-11 rounded-full px-4`:`px-5`),loading:Ut,disabled:Wt,onClick:()=>{He||(R(v.startVerificationClicked,{is_retry:M||F}),Le(null),l(!0))},children:(0,_.jsx)(p,{...Yt})}),!r&&Er]}),Ir;e[208]===Ie?Ir=e[209]:(Ir=Ie?(0,_.jsx)(`div`,{role:`alert`,className:`border-token-border-status-error bg-token-bg-status-error text-token-text-status-error w-full max-w-[520px] rounded-lg border p-3 text-sm`,children:(0,_.jsx)(p,{...Ie,values:{helpCenter:mt}})}):null,e[208]=Ie,e[209]=Ir);let Lr=(!r||I||O)&&(0,_.jsx)(`div`,{ref:ne,className:a(r&&I?`mt-6 w-full text-sm leading-5`:`bg-token-main-surface-secondary text-token-text-secondary mt-4 w-full max-w-[640px] rounded-3xl px-5 py-4 text-sm leading-relaxed`,L&&`hidden`),children:I?(0,_.jsxs)(`div`,{className:a(`text-token-text-primary flex flex-col text-start`,r?`items-center gap-6`:`gap-4`),children:[!r&&(0,_.jsx)(`div`,{className:`text-base font-medium`,children:(0,_.jsx)(p,{...y.quorumTermsTitle})}),(0,_.jsxs)(`div`,{className:r?`border-token-border-default flex w-full max-w-[352px] flex-col gap-4 rounded-2xl border p-4`:`contents`,children:[(0,_.jsxs)(`label`,{htmlFor:`quorum-is-licensed-healthcare`,className:a(`flex items-start gap-2`,r&&`border-token-border-default items-center gap-4 border-b pb-4`),children:[(0,_.jsx)($t.Field,{name:`isLicensed`,children:e=>(0,_.jsx)(Or,{id:`quorum-is-licensed-healthcare`,name:`isLicensed`,type:`checkbox`,className:r?`border-token-border-default size-[18px]!`:`mt-1 h-4 w-4`,checked:!!e.state.value,onChange:t=>{let n=t.target.checked;e.handleChange(n),n&&!k&&R(v.postVerificationAttest)}})}),(0,_.jsx)(`span`,{className:`text-sm leading-5`,children:(0,_.jsx)(p,{...y.quorumLicensedAttestation})})]}),(0,_.jsx)(`div`,{className:`flex items-start gap-2`,children:(0,_.jsxs)(`label`,{htmlFor:`quorum-baa-agree`,className:a(`flex items-start gap-2`,r&&`items-center gap-4`),children:[(0,_.jsx)($t.Field,{name:`agreedToToS`,children:e=>(0,_.jsx)(Or,{id:`quorum-baa-agree`,name:`agreedToToS`,type:`checkbox`,className:r?`border-token-border-default size-[18px]!`:`mt-1`,checked:e.state.value,onChange:t=>{let n=t.target.checked;e.handleChange(n),n&&!k&&R(v.postVerificationAgreeTos)}})}),(0,_.jsx)(`span`,{className:`text-sm`,children:(0,_.jsx)(p,{...y.quorumTosAgreement,values:{servicesAgreementLink:(0,_.jsx)(`a`,{href:`https://openai.com/policies/services-agreement`,className:`underline`,target:`_blank`,rel:`noreferrer`,children:(0,_.jsx)(p,{...y.quorumServicesAgreementText})})}})})]})})]}),(0,_.jsx)($t.Subscribe,{selector:pt,children:e=>{let i=e.agreedToToS&&e.isLicensed,ee=(0,_.jsx)(n,{size:`medium`,color:`primary`,className:r?`h-11 rounded-full px-4 text-sm`:`w-full min-w-[200px] px-5 py-2.5 text-sm sm:w-auto`,onClick:()=>{i&&(k||R(v.postVerificationGetStartedClicked),on())},loading:sn,disabled:sn||!r&&!i,"aria-disabled":!i||sn,children:(0,_.jsx)(p,{...sn?y.quorumPrimaryCtaLoading:r?y.onboardingGetStarted:y.quorumPrimaryCta})}),te=(0,_.jsx)(`div`,{className:r?`flex justify-center`:`block w-full sm:w-auto`,children:ee});return(0,_.jsxs)(`div`,{className:`flex flex-col gap-3`,children:[Ne?(0,_.jsx)(`div`,{className:`w-full rounded-lg border border-[#df1b41] bg-[#fff5f7] p-3 text-sm text-[#df1b41]`,children:Ne}):null,i?te:(0,_.jsx)(he,{side:`top`,label:t.formatMessage(y.quorumCompleteRequiredFieldsTooltip),children:te})]})}})]}):L?null:(0,_.jsx)(p,{...O?y.deferredDisclaimer:y.disclaimer})}),Rr=r&&Er,zr;e[210]!==Rr||e[211]!==Ar||e[212]!==Q||e[213]!==Nr||e[214]!==Pr||e[215]!==Fr||e[216]!==Ir||e[217]!==Lr?(zr=(0,_.jsxs)(`section`,{className:Ar,children:[Q,Nr,Pr,Fr,Ir,Lr,Rr]}),e[210]=Rr,e[211]=Ar,e[212]=Q,e[213]=Nr,e[214]=Pr,e[215]=Fr,e[216]=Ir,e[217]=Lr,e[218]=zr):zr=e[218];let Br;e[219]===r?Br=e[220]:(Br=!r&&(0,_.jsxs)(`section`,{ref:te,className:a(wt,`flex flex-col items-center gap-3 py-16 text-center md:py-20`),children:[(0,_.jsx)(`h2`,{className:a(Tt,`text-center`),children:(0,_.jsx)(p,{...y.valueTitle})}),(0,_.jsx)(`p`,{className:`text-token-text-secondary max-w-[640px] text-base`,children:(0,_.jsx)(p,{...y.valueDescription})})]}),e[219]=r,e[220]=Br);let Vr=r?te:void 0,Hr;e[221]===r?Hr=e[222]:(Hr=a(r?`border-token-border-default mt-7 flex flex-col gap-6 border-t pt-10 pb-6`:[wt,`mx-auto flex max-w-[700px] flex-col gap-8 py-10 md:py-16`]),e[221]=r,e[222]=Hr);let Ur;e[223]===r?Ur=e[224]:(Ur=r?`text-body-emphasized`:a(Tt,`text-center`),e[223]=r,e[224]=Ur);let Wr;e[225]===Symbol.for(`react.memo_cache_sentinel`)?(Wr=(0,_.jsx)(p,{...y.faqTitle}),e[225]=Wr):Wr=e[225];let Gr;e[226]===Ur?Gr=e[227]:(Gr=(0,_.jsx)(`h2`,{className:Ur,children:Wr}),e[226]=Ur,e[227]=Gr);let Kr=r?`h-6 min-h-0 p-0 text-sm font-normal`:`px-3 py-2 text-sm`,qr;e[228]!==rr||e[229]!==o.length||e[230]!==s?(qr=()=>{if(o.length===rr.length){s([]);return}s(rr.map(ft))},e[228]=rr,e[229]=o.length,e[230]=s,e[231]=qr):qr=e[231];let Jr=o.length===rr.length?y.collapseAll:y.expandAll,Yr;e[232]===Jr?Yr=e[233]:(Yr=(0,_.jsx)(p,{...Jr}),e[232]=Jr,e[233]=Yr);let Xr;e[234]!==Kr||e[235]!==qr||e[236]!==Yr?(Xr=(0,_.jsx)(n,{size:`medium`,color:`ghost`,className:Kr,onClick:qr,children:Yr}),e[234]=Kr,e[235]=qr,e[236]=Yr,e[237]=Xr):Xr=e[237];let Zr;e[238]!==Gr||e[239]!==Xr?(Zr=(0,_.jsxs)(`div`,{className:`flex items-center justify-between`,children:[Gr,Xr]}),e[238]=Gr,e[239]=Xr,e[240]=Zr):Zr=e[240];let Qr=r?`[&_button]:py-4 [&_button]:text-sm [&_button]:leading-5`:void 0,$r;e[241]!==Z||e[242]!==r||e[243]!==o||e[244]!==s?($r=Z.map((e,t)=>{let n=Z.slice(0,t).reduce(dt,0);return(0,_.jsxs)(`div`,{className:`mb-8 last:mb-0`,children:[(0,_.jsx)(`h3`,{className:a(`mb-3`,r?`text-base font-medium`:`text-lg font-semibold`),children:e.title}),e.items.map((e,t)=>{let r=n+t;return(0,_.jsx)(at,{question:e.question,answer:e.answer,isOpen:o.includes(r),onToggle:()=>s(e=>e.includes(r)?e.filter(e=>e!==r):[...e,r])},e.question)})]},e.title)}),e[241]=Z,e[242]=r,e[243]=o,e[244]=s,e[245]=$r):$r=e[245];let ei;e[246]!==Qr||e[247]!==$r?(ei=(0,_.jsx)(`div`,{className:Qr,children:$r}),e[246]=Qr,e[247]=$r,e[248]=ei):ei=e[248];let ti;e[249]!==Vr||e[250]!==Hr||e[251]!==Zr||e[252]!==ei?(ti=(0,_.jsxs)(`section`,{ref:Vr,id:`faq`,className:Hr,children:[Zr,ei]}),e[249]=Vr,e[250]=Hr,e[251]=Zr,e[252]=ei,e[253]=ti):ti=e[253];let ni;e[254]!==zr||e[255]!==Br||e[256]!==ti||e[257]!==kr?(ni=(0,_.jsxs)(_.Fragment,{children:[kr,zr,Br,ti]}),e[254]=zr,e[255]=Br,e[256]=ti,e[257]=kr,e[258]=ni):ni=e[258];let $=ni;if(r){let n;e[259]!==t||e[260]!==Dr?(n=t.formatMessage(Dr),e[259]=t,e[260]=Dr,e[261]=n):n=e[261];let r;return e[262]!==$||e[263]!==n?(r=(0,_.jsx)(rt,{accessibleTitle:n,children:$}),e[262]=$,e[263]=n,e[264]=r):r=e[264],r}let ri;e[265]===Symbol.for(`react.memo_cache_sentinel`)?(ri=a(`font-oai overflow-hidden pb-12`,Zt?`pt-[72px]`:`pt-0`),e[265]=ri):ri=e[265];let ii;return e[266]===$?ii=e[267]:(ii=(0,_.jsx)(`div`,{className:ri,children:$}),e[266]=$,e[267]=ii),ii}function dt(e,t){return e+t.items.length}function ft(e,t){return t}function pt(e){return e.values}function mt(e){return(0,_.jsx)(`a`,{href:Ot,className:`underline`,target:`_blank`,rel:`noreferrer`,children:e})}function ht(e){return e.items}function gt(e){return(0,_.jsx)(`span`,{className:`inline whitespace-nowrap`,children:e})}function _t(e){return(0,_.jsx)(`a`,{href:`#settings`,className:`inline underline`,children:e})}function vt(e,t){if(typeof window>`u`||!xe())return;let n=c(JSON.stringify({type:t,workspaceId:e,...t===`hmp_workspace_created`?{verificationStatus:`pending`}:{}}));ee()?(t===`hmp_workspace_created`?window.webkit?.messageHandlers?.hmpWorkspaceCreated:window.webkit?.messageHandlers?.hmpVerificationComplete)?.postMessage(n):fe()&&window.openai?.postMessage?.(n)}function yt(e){return e.message.toLowerCase().includes(`already has a quorum workspace`)}function bt(e){return e.isDeferredPersonaVerificationWorkspace&&!e.isDeactivated()&&e.canAccessWithCurrentSession}function xt(e){return e.isQuorum()}function St(){return!1}var Ct,g,_,wt,Tt,Et,Dt,Ot,kt,v,y,b=e((()=>{Ct=h(),Ie(),s(),Le(),Fe(),He(),Ge(),nt(),Ue(),ue(),je(),Je(),$e(),st(),Ne(),tt(),l(),te(),ae(),i(),ie(),ce(),o(),le(),re(),ne(),r(),we(),Ke(),u(),g=t(Oe()),De(),m(),it(),_=d(),wt=`mx-auto max-w-(--breakpoint-2xl) px-4 md:px-8`,Tt=`text-2xl md:text-3xl`,Et=3e4,Dt=`npi_verification_max_attempts_reached`,Ot=`https://help.openai.com/en/articles/6614161-how-can-i-contact-support`,kt=e=>e instanceof Se&&e.status===400&&e.code===Dt,v={pageViewed:`chatgpt_quorum_cfc_page_viewed`,startVerificationClicked:`chatgpt_quorum_start_verification_clicked`,personaOpened:`chatgpt_quorum_cfc_persona_opened`,personaCompleted:`chatgpt_quorum_cfc_persona_completed`,personaCanceled:`chatgpt_quorum_cfc_persona_canceled`,personaStartFailed:`chatgpt_quorum_cfc_persona_start_failed`,termsShown:`chatgpt_quorum_cfc_terms_shown`,existingWorkspaceBlockedShown:`chatgpt_quorum_cfc_existing_workspace_blocked_shown`,postVerificationAttest:`chatgpt_quorum_post_verification_attest`,postVerificationAgreeTos:`chatgpt_quorum_post_verification_agree_tos`,postVerificationGetStartedClicked:`chatgpt_quorum_post_verification_get_started_clicked`,postVerificationWorkspaceCreateStarted:`chatgpt_quorum_post_verification_workspace_create_started`,postVerificationWorkspaceCreateSucceeded:`chatgpt_quorum_post_verification_workspace_create_succeeded`,postVerificationWorkspaceCreateFailed:`chatgpt_quorum_post_verification_workspace_create_failed`},y=f({onboardingDescription:{id:`healthcareVerificationPage.onboarding.description`,defaultMessage:`In order to sign up, verify you are a clinician in the United States to access a secure ChatGPT for Clinicians workspace built for clinical workflows. You will need:`},onboardingVerifiedTitle:{id:`healthcareVerificationPage.onboarding.verified.title`,defaultMessage:`You’re verified`},onboardingGovernmentId:{id:`healthcareVerificationPage.onboarding.requirement.government_id`,defaultMessage:`A government-issued photo ID`},onboardingNpi:{id:`healthcareVerificationPage.onboarding.requirement.npi`,defaultMessage:`A valid NPI`},onboardingGetStarted:{id:`healthcareVerificationPage.onboarding.verified.button.get_started`,defaultMessage:`Get started`},title:{id:`healthcareVerificationPage.title`,defaultMessage:`Confirm you are a clinician`},deferredTitle:{id:`healthcareVerificationPage.deferredTitle`,defaultMessage:`Set up your clinician workspace`},description:{id:`healthcareVerificationPage.description`,defaultMessage:`In order to sign up, verify that you are a clinician in the United States to access a secure ChatGPT for Clinicians workspace built for clinical workflows.`},retryDescription:{id:`healthcareVerificationPage.retryDescription`,defaultMessage:`We could not confirm your credentials yet. Please try Persona again to continue.`},freshVerificationDescription:{id:`healthcareVerificationPage.freshVerificationDescription`,defaultMessage:`Please complete verification again to continue to the latest ChatGPT for Clinicians onboarding experience.`},verificationStartError:{id:`healthcareVerificationPage.verificationStartError`,defaultMessage:`Something went wrong while starting verification. Please try again later.`},verificationMaxAttemptsError:{id:`healthcareVerificationPage.verificationMaxAttemptsErrorWithHelpCenter`,defaultMessage:`You’ve reached the maximum number of verification attempts. To get help, visit the <helpCenter>Help Center</helpCenter> and open the chat bubble in the bottom-right corner.`},primaryCta:{id:`healthcareVerificationPage.primaryCta`,defaultMessage:`Start verification`},deferredVerificationDescription:{id:`healthcareVerificationPage.deferredVerificationDescription`,defaultMessage:`Enter your National Provider Identifier to set up your workspace. You’ll verify your identity before sending your first message.`},npiLabel:{id:`healthcareVerificationPage.npiLabel`,defaultMessage:`National Provider Identifier (NPI)`},npiPlaceholder:{id:`healthcareVerificationPage.npiPlaceholder`,defaultMessage:`Enter your 10-digit NPI`},npiHelpText:{id:`healthcareVerificationPage.npiHelpText`,defaultMessage:`Use your 10-digit NPI to set up your workspace.`},npiContinueCta:{id:`healthcareVerificationPage.npiContinueCta`,defaultMessage:`Continue`},npiValidationError:{id:`healthcareVerificationPage.npiValidationError`,defaultMessage:`Enter a valid 10-digit NPI to continue.`},npiPreverificationError:{id:`healthcareVerificationPage.npiPreverificationError`,defaultMessage:`Something went wrong while checking your NPI. Please try again.`},npiConfirmedCta:{id:`healthcareVerificationPage.npiConfirmedCta`,defaultMessage:`NPI accepted. Complete setup below.`},primaryCtaLoading:{id:`healthcareVerificationPage.primaryCtaLoading`,defaultMessage:`Checking your verification status...`},retryCta:{id:`healthcareVerificationPage.retryCta`,defaultMessage:`Try Persona again`},freshVerificationCta:{id:`healthcareVerificationPage.freshVerificationCta`,defaultMessage:`Start verification again`},verifiedCta:{id:`healthcareVerificationPage.verifiedCta`,defaultMessage:`You are verified! Get started below.`},secondaryCta:{id:`healthcareVerificationPage.secondaryCta`,defaultMessage:`Learn more`},homeLinkLabel:{id:`healthcareVerificationPage.homeLinkLabel`,defaultMessage:`ChatGPT Home`},disclaimer:{id:`healthcareVerificationPage.disclaimer`,defaultMessage:`You will complete verification with Persona. The information you submit is used only to confirm your professional status.`},deferredDisclaimer:{id:`healthcareVerificationPage.deferredDisclaimer`,defaultMessage:`Explore your workspace and complete onboarding first. Persona identity verification is required before you send a message.`},quorumTermsTitle:{id:`quorum.settingsTopic.medicalVerificationModalTitle`,defaultMessage:`Please agree to our terms and conditions to continue`},quorumLicensedAttestation:{id:`selectQuorumPlanModal.isLicensedHealthcare`,defaultMessage:`I attest that I am a licensed clinician and all information provided is true and accurate.`},quorumServicesAgreementText:{id:`quorumBilling.servicesAgreementText`,defaultMessage:`OpenAI Services Agreement`},quorumTosAgreement:{id:`selectTeamPlanModal.baaAgreement`,defaultMessage:`I have read and agree to the {servicesAgreementLink}.`},quorumCompleteRequiredFieldsTooltip:{id:`quorumBilling.completeRequiredFieldsTooltip`,defaultMessage:`Please agree to the Terms and Conditions.`},quorumPrimaryCta:{id:`quorum.settingsTopic.getStartedCta`,defaultMessage:`Get Started with ChatGPT`},quorumPrimaryCtaLoading:{id:`quorum.settingsTopic.getStartedCtaLoading`,defaultMessage:`Hang tight! Setting up your new workspace...`},quorumWorkspaceCreateError:{id:`healthcareVerificationPage.quorumWorkspaceCreateError`,defaultMessage:`We couldn't create your ChatGPT for Clinicians workspace. Please try again.`},valueTitle:{id:`healthcareVerificationPage.valueTitle`,defaultMessage:`Why we verify`},valueDescription:{id:`healthcareVerificationPage.verificationPurpose.description`,defaultMessage:`We verify clinician identities to help prevent impersonation and keep access limited to verified clinicians.`},faqTitle:{id:`healthcareVerificationPage.faqTitle`,defaultMessage:`FAQs`},verificationFaqSectionTitle:{id:`healthcareVerificationPage.verificationFaqSectionTitle`,defaultMessage:`Verification`},securityFaqSectionTitle:{id:`healthcareVerificationPage.securityFaqSectionTitle`,defaultMessage:`Security & Privacy`},phiFaqSectionTitle:{id:`healthcareVerificationPage.phiFaqSectionTitle`,defaultMessage:`Protected Health Information (PHI) and HIPAA`},faq1Question:{id:`healthcareVerificationPage.faq1Question`,defaultMessage:`Who can verify?`},faq1Answer:{id:`healthcareVerificationPage.faq1Answer`,defaultMessage:`Verification is available to U.S.-licensed clinicians and eligible clinical professionals who need access to clinician-focused workflows. This typically includes physicians (MD/DO), nurse practitioners (NP), physician assistants (PA), psychologists, and other licensed clinicians.`},faq2Question:{id:`healthcareVerificationPage.faq2Question`,defaultMessage:`Why do I need to verify?`},faq2Answer:{id:`healthcareVerificationPage.faq2Answer`,defaultMessage:`Verification confirms you’re a clinician so we can unlock clinician-only workflows (diagnostic reasoning, differential diagnosis support, workup planning, note drafting, and patient counseling/after-visit summaries) inside a clinician-tailored workspace that’s designed for HIPAA-ready use, where tools and outputs are optimized for clinical practice, not general chat.`},faq2AnswerFollowUp:{id:`healthcareVerificationPage.faq2AnswerFollowUp`,defaultMessage:`This workspace can also remember your medical specialty and apply it across workflows so results are more relevant to your day-to-day practice, and the citations are optimized and formatted for clinicians so it’s faster to find and use trusted sources.`},faq3Question:{id:`healthcareVerificationPage.faq3Question`,defaultMessage:`How does verification work?`},faq3Answer:{id:`healthcareVerificationPage.faq3Answer`,defaultMessage:`You’ll complete a short identity check with Persona. Most verifications take a few minutes. You may be asked to capture:`},faq3Bullet1:{id:`healthcareVerificationPage.faq3Bullet1`,defaultMessage:`A government-issued ID, and`},faq3Bullet2:{id:`healthcareVerificationPage.faq3Bullet2`,defaultMessage:`A brief face scan to match you to your ID (fraud prevention)`},faq4Question:{id:`healthcareVerificationPage.faq4Question`,defaultMessage:`What do I need to complete verification?`},faq4Answer:{id:`healthcareVerificationPage.faq4Answer`,defaultMessage:`If you prefer, you can use a QR code to switch from your computer to your phone for the camera steps. You may also need to turn off any pop-up blocker if you are completing this flow from your computer.`},faq4Item1:{id:`healthcareVerificationPage.faq4Item1`,defaultMessage:`A government-issued ID`},faq4Item2:{id:`healthcareVerificationPage.faq4Item2`,defaultMessage:`A camera (for ID capture + face scan)`},faq5Question:{id:`healthcareVerificationPage.faq5Question`,defaultMessage:`Why is a face scan required?`},faq5Answer:{id:`healthcareVerificationPage.faq5Answer`,defaultMessage:`The face scan helps confirm that the person verifying matches the ID presented. This is a common anti-fraud safeguard and helps protect clinicians and patients from identity misuse.`},faq6Question:{id:`healthcareVerificationPage.faq6Question`,defaultMessage:`What information is my data used for?`},faq6Answer:{id:`healthcareVerificationPage.faq6Answer`,defaultMessage:`The information you submit during verification is used only to confirm your identity and clinician status so we can enable verified clinician access.`},faq7Question:{id:`healthcareVerificationPage.faq7Question`,defaultMessage:`Is my chat content used to train models?`},faq7Answer:{id:`healthcareVerificationPage.faq7Answer`,defaultMessage:`No. Content in this workspace is not used to train our models.`},faq8Question:{id:`healthcareVerificationPage.faq8Question`,defaultMessage:`Is my chat content used to improve OpenAI’s products?`},faq8Answer:{id:`healthcareVerificationPage.faq8Answer`,defaultMessage:`As described in its services agreement, OpenAI will not use Customer Content, such as chat content, to develop or improve its Services, including ChatGPT for Clinicians, unless the customer explicitly agrees to such use. We may run any data submitted to OpenAI’s services through automated content classifiers and safety tools, including to better understand how our services are used. The classifications created are metadata about the business data but do not contain any of the business data itself.`},faq9Question:{id:`healthcareVerificationPage.faq9Question`,defaultMessage:`How long is verification data retained?`},faq9Answer:{id:`healthcareVerificationPage.faq9Answer`,defaultMessage:`Persona retains biometric data for 30 days for fraud prevention purposes and deletes it after 30 days.`},faq10Question:{id:`healthcareVerificationPage.faq10Question`,defaultMessage:`How does OpenAI ensure data security?`},faq10Answer:{id:`healthcareVerificationPage.faq10Answer`,defaultMessage:`OpenAI encrypts all data at rest (AES-256) and in transit between our customers and us and between us and our service providers (TLS 1.2+), and uses strict access controls to limit who can access data. Our security team has an on-call rotation that has 24/7/365 coverage and is paged in case of any potential security incident. We offer a Bug Bounty Program for responsible disclosure of vulnerabilities discovered on our platform and products. ChatGPT for Clinicians is built to support the same security commitments we make to our enterprise customers. We have annual security audits, including penetration testing of our common infrastructure and applications.`},faq11Question:{id:`healthcareVerificationPage.faq11Question`,defaultMessage:`Who can view conversations in ChatGPT for Clinicians?`},faq11Answer:{id:`healthcareVerificationPage.faq11Answer`,defaultMessage:`Our access to conversations stored on our systems is limited to authorized employees that require access for engineering support, investigating potential platform abuse, and legal compliance.`},faq12Question:{id:`healthcareVerificationPage.faq12Question`,defaultMessage:`What is OpenAI’s policy on data retention for ChatGPT Business?`},faq12Answer:{id:`healthcareVerificationPage.faq12Answer`,defaultMessage:`You control whether your conversations are retained. Any deleted or unsaved conversations are removed from our systems within 30 days, unless we are legally required to retain them. Note that retention enables features like conversation history, and shorter retention periods may compromise product experience.`},faq13Question:{id:`healthcareVerificationPage.faq13Question`,defaultMessage:`What happens after verification?`},faq13Answer:{id:`healthcareVerificationPage.faq13Answer`,defaultMessage:`Once verified, you can continue into ChatGPT Health and set up your secure workspace. Persona will only retain your biometric data for 30 days for fraud prevention purposes, and will delete your biometric data after 30 days.`},deferredFaq13Answer:{id:`healthcareVerificationPage.deferredFaq13Answer`,defaultMessage:`You can set up your secure clinician workspace and complete onboarding first. Once Persona verifies your identity, you can start sending messages. Persona retains biometric data for 30 days for fraud prevention and then deletes it.`},faq14Question:{id:`healthcareVerificationPage.faq14Question`,defaultMessage:`Can I use ChatGPT for Clinicians with Protected Health Information (PHI)?`},faq14Answer:{id:`healthcareVerificationPage.faq14Answer`,defaultMessage:`This product is designed to be helpful for many clinician use cases without the need for entering PHI. Do not share PHI unless you have a HIPAA Business Associate Agreement (BAA) and use this product in compliance with applicable law. To enter into a BAA with OpenAI, create a ChatGPT for Clinicians account and then visit the <settingsGroup>Agreements section under <settingsLink>Settings</settingsLink>.</settingsGroup>`},faq15Question:{id:`healthcareVerificationPage.faq15Question`,defaultMessage:`Can I sign one BAA that covers multiple users at my clinic?`},faq15Answer:{id:`healthcareVerificationPage.faq15Answer`,defaultMessage:`ChatGPT for Clinicians is designed for individual use and does not require the use of Protected Health Information (PHI). PHI should only be shared when you have a BAA. We offer individuals authorized by their practice the option to sign a BAA for PHI shared through their individual account. Each account that wants to use ChatGPT for Clinicians with PHI should have a BAA. To enter into a BAA with OpenAI, create a ChatGPT for Clinicians account and then visit the <settingsGroup>Agreements section under <settingsLink>Settings</settingsLink>.</settingsGroup>`},faq15AnswerEnterprise:{id:`healthcareVerificationPage.faq15AnswerEnterprise`,defaultMessage:`If you are looking to sign a BAA that covers multiple users, we recommend ChatGPT for Healthcare, our enterprise offering designed to support team-based use and the broader compliance needs of healthcare organizations.`},expandAll:{id:`healthcareVerificationPage.expandAll`,defaultMessage:`Expand all`},collapseAll:{id:`healthcareVerificationPage.collapseAll`,defaultMessage:`Collapse all`}})})),x,S,At,C=e((()=>{m(),x=h(),b(),S=d(),At=Ee(function(){"use forget";let e=(0,x.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,S.jsx)(ut,{}),e[0]=t):t=e[0],t})}));e((()=>{C()}))();export{At as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    A4 as r,
+    Am as i,
+    Ant as ee,
+    CR as te,
+    Crt as ne,
+    I7 as re,
+    K5 as a,
+    Knt as ie,
+    Lit as ae,
+    M7 as oe,
+    N4 as se,
+    Nat as ce,
+    P4 as le,
+    Qy as ue,
+    Rit as de,
+    Snt as fe,
+    TR as pe,
+    Wnt as me,
+    Zy as he,
+    _rt as ge,
+    a0 as _e,
+    cot as o,
+    e0 as ve,
+    eE as s,
+    j4 as ye,
+    jat as be,
+    jm as c,
+    knt as xe,
+    not as Se,
+    o0 as Ce,
+    q1 as l,
+    q5 as u,
+    xnt as we
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as Te,
+    Bn as d,
+    Ht as Ee,
+    Ln as f,
+    Nn as p,
+    Q as m,
+    Rn as De,
+    Vn as Oe,
+    wn as h,
+    zn as ke
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Irt as Ae,
+    Lrt as je,
+    O8 as Me,
+    Uu as Ne,
+    Wu as Pe,
+    cqn as Fe,
+    icn as Ie,
+    k8 as Le,
+    ncn as Re,
+    sqn as ze
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Av as Be,
+    Tx as Ve,
+    hl as He,
+    jv as Ue,
+    ml as We,
+    wx as Ge
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    Bf as Ke,
+    Hf as qe
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    jh as Je,
+    kh as Ye
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    a as Xe,
+    c as Ze,
+    n as Qe,
+    o as $e,
+    s as et,
+    t as tt
+} from "./0030787a-bq75w29fyumzqjmf.js";
+import {
+    n as nt,
+    t as rt
+} from "./07c2dfe6-j7vs16jpv1q8ps6g.js";
+import {
+    n as it,
+    t as at
+} from "./dd53ca11-hrvlebwede8lb910.js";
+var ot, st = e((() => {
+    re(), ot = e => oe.safePost(`/accounts/create_quorum_workspace`, {
+        requestBody: e
+    })
+}));
+
+function ct(e) {
+    let t = new URLSearchParams(e),
+        n = t.get(`source`),
+        r = t.get(`beacon_id`);
+    if (!(!n && !r)) return {
+        ...n ? {
+            source: n
+        } : {},
+        ...r ? {
+            beacon_id: r
+        } : {}
+    }
+}
+
+function lt(e, t) {
+    if (!t) return e;
+    let n = e ? {
+        ...e
+    } : {};
+    return Object.assign(n, t), n
+}
+
+function ut() {
+    "use forget";
+    let e = (0, Ct.c)(268),
+        t = ke(),
+        r = ge(`1498338261`),
+        i = Te(),
+        te = (0, g.useRef)(null),
+        ne = (0, g.useRef)(null),
+        re = (0, g.useRef)(!1),
+        ie = (0, g.useRef)(!1),
+        ae = (0, g.useRef)(!1),
+        ce = (0, g.useRef)(!1),
+        le = (0, g.useRef)(!1),
+        ue = (0, g.useRef)(!1),
+        [o, s] = (0, g.useState)(() => r ? [] : [0]),
+        [c, l] = (0, g.useState)(!1),
+        [u, we] = (0, g.useState)(!1),
+        [d, Ee] = (0, g.useState)(null),
+        [f, m] = (0, g.useState)(!1),
+        [De, Oe] = (0, g.useState)(!1),
+        [h, je] = (0, g.useState)(!1),
+        [Ne, Fe] = (0, g.useState)(null),
+        [Ie, Le] = (0, g.useState)(null),
+        [He, Ue] = (0, g.useState)(!1),
+        [Ge, Ke] = (0, g.useState)(!1),
+        [Je, $e] = (0, g.useState)(``),
+        [tt, nt] = (0, g.useState)(null),
+        [it, st] = (0, g.useState)(!1),
+        [ut, Dt] = (0, g.useState)(!1),
+        [Ot, b] = (0, g.useState)(null),
+        {
+            enrollmentState: x,
+            refreshEnrollmentStatus: S,
+            isRefreshing: At
+        } = Qe(),
+        C = _e(),
+        w = Ce(),
+        jt = pe(),
+        Mt = ge(`2369709783`),
+        Nt;
+    e[0] === i.search ? Nt = e[1] : (Nt = () => xe() && (window.webkit?.messageHandlers?.hmpWorkspaceCreated !== void 0 || new URLSearchParams(i.search).get(`native_deferred_persona_verification`) === `true`), e[0] = i.search, e[1] = Nt);
+    let T = ye(Nt, St),
+        Pt;
+    e[2] !== i.search || e[3] !== T ? (Pt = T && new URLSearchParams(i.search).get(`complete_persona_verification`) === `true`, e[2] = i.search, e[3] = T, e[4] = Pt) : Pt = e[4];
+    let E = Pt,
+        D = E ? w?.id : void 0,
+        Ft = it && x.name === `needs-verification`,
+        It;
+    e[5] === T ? It = e[6] : (It = !xe() || T, e[5] = T, e[6] = It);
+    let Lt = It,
+        O = !Ft && Lt && (x.name === `needs-verification` || x.name === `pending` && x.deferredVerification === !0 || tt !== null) && ge(`1588629910`),
+        k = O && (tt !== null || x.name === `pending` && x.deferredVerification === !0 && !!x.npi),
+        Rt = c && !f,
+        A = et(x),
+        j = A || x.name === `failed`,
+        M = !k && (x.name === `pending` || x.name === `failed` || Ft),
+        zt = !!C.data,
+        N, Bt;
+    if (e[7] !== C.data?.accountItems || e[8] !== w?.id) {
+        let t = C.data?.accountItems.filter(xt) ?? [];
+        N = (t[0] ?? null) !== null;
+        let n = t.filter(bt);
+        Bt = n.find(e => e.id === w?.id) ?? n[0], e[7] = C.data?.accountItems, e[8] = w?.id, e[9] = N, e[10] = Bt
+    } else N = e[9], Bt = e[10];
+    let P = Lt && !E && !Mt ? Bt?.id ?? null : null,
+        Vt = C.isLoading && !zt || P != null,
+        Ht = !Vt && O && x.name === `needs-verification` && !k,
+        Ut = Vt || Rt || At || d != null && !j,
+        Wt = Ut || He,
+        F = Mt && zt && N && (A || k) && !De,
+        Gt = (A || k) && !F,
+        I = Gt && zt && (!N || Mt),
+        Kt = zt && Ze({
+            canCreateQuorumWorkspace: Gt,
+            hasExistingQuorumWorkspace: N,
+            hasRecoverableProvisionalWorkspace: !!P,
+            isMultipleQuorumWorkspaceAllowed: Mt
+        }),
+        L = !Mt && (Kt || Ge),
+        qt = L ? Xe.description : F ? y.freshVerificationDescription : M ? y.retryDescription : O ? y.deferredVerificationDescription : r ? y.onboardingDescription : y.description,
+        Jt = L ? Xe.cta : F ? y.freshVerificationCta : A ? y.verifiedCta : k ? y.npiConfirmedCta : M ? y.retryCta : y.primaryCta,
+        Yt = L ? Xe.cta : Ut ? y.primaryCtaLoading : Jt,
+        Xt;
+    e[11] === Symbol.for(`react.memo_cache_sentinel`) ? (Xt = !ee() && !fe() || !xe(), e[11] = Xt) : Xt = e[11];
+    let Zt = Xt,
+        Qt;
+    e[12] === Symbol.for(`react.memo_cache_sentinel`) ? (Qt = {
+        defaultValues: {
+            isLicensed: !1,
+            agreedToToS: !1
+        }
+    }, e[12] = Qt) : Qt = e[12];
+    let $t = qe(Qt),
+        en;
+    e[13] === i.search ? en = e[14] : (en = (e, t, n) => {
+        let r = lt(t, ct(i.search));
+        me.logValueEventWithStatsig({
+            segmentEventName: e,
+            statsigEventName: e,
+            data: r,
+            eventId: n
+        }), be.addAction(e, r)
+    }, e[13] = i.search, e[14] = en);
+    let R = en,
+        tn;
+    e[15] !== t || e[16] !== ut || e[17] !== Je || e[18] !== S ? (tn = async () => {
+        if (ut) return;
+        let e = Je.trim();
+        if (b(null), !/^[0-9]{10}$/.test(e)) {
+            b(t.formatMessage(y.npiValidationError));
+            return
+        }
+        Dt(!0);
+        try {
+            let n = (await oe.safePost(`/quorum/preverify_npi`, {
+                requestBody: {
+                    npi: e
+                }
+            })).metadata;
+            n?.verification_status === `pending` && n.deferred_verification && n.npi === e ? nt(e) : b(t.formatMessage(y.npiPreverificationError))
+        } catch (e) {
+            let n = e;
+            n instanceof Se && n.status === 409 ? (st(!0), S()) : b(t.formatMessage(n instanceof Se && n.status === 400 ? y.npiValidationError : y.npiPreverificationError))
+        }
+        Dt(!1)
+    }, e[15] = t, e[16] = ut, e[17] = Je, e[18] = S, e[19] = tn) : tn = e[19];
+    let nn = tn,
+        rn = yt,
+        z = vt,
+        an;
+    e[20] !== w || e[21] !== k || e[22] !== t || e[23] !== h || e[24] !== A || e[25] !== R || e[26] !== T || e[27] !== jt ? (an = async () => {
+        if (h) return;
+        Fe(null), je(!0);
+        let e = await Re(t, w ?? null, jt),
+            n = k && !A;
+        try {
+            n || R(v.postVerificationWorkspaceCreateStarted, {
+                has_current_account: !!w
+            });
+            let t = (await ot({
+                workspace_name: e
+            })).workspace_id;
+            if (ve(t), n) {
+                if (T) {
+                    z(t, `hmp_workspace_created`);
+                    return
+                }
+                se(`/onboarding`);
+                return
+            }
+            R(v.postVerificationWorkspaceCreateSucceeded), z(t, `hmp_verification_complete`), se()
+        } catch (e) {
+            let r = e;
+            if (je(!1), n || R(v.postVerificationWorkspaceCreateFailed, {
+                    reason: r instanceof Se ? `request_${r.status}` : `unknown`
+                }), r instanceof Se && r.status === 403) {
+                if (rn(r)) {
+                    Ke(!0), Fe(null);
+                    return
+                }
+                if (!n) {
+                    l(!0);
+                    return
+                }
+            }
+            Fe(t.formatMessage(y.quorumWorkspaceCreateError))
+        }
+    }, e[20] = w, e[21] = k, e[22] = t, e[23] = h, e[24] = A, e[25] = R, e[26] = T, e[27] = jt, e[28] = an) : an = e[28];
+    let on = an,
+        sn = h || Rt || At,
+        cn;
+    e[29] === Symbol.for(`react.memo_cache_sentinel`) ? (cn = {
+        settingsLink: _t,
+        settingsGroup: gt
+    }, e[29] = cn) : cn = e[29];
+    let ln = cn,
+        B;
+    e[30] === t ? B = e[31] : (B = t.formatMessage(y.verificationFaqSectionTitle), e[30] = t, e[31] = B);
+    let V;
+    e[32] === t ? V = e[33] : (V = t.formatMessage(y.faq1Question), e[32] = t, e[33] = V);
+    let un;
+    e[34] === Symbol.for(`react.memo_cache_sentinel`) ? (un = (0, _.jsx)(p, {
+        ...y.faq1Answer
+    }), e[34] = un) : un = e[34];
+    let H;
+    e[35] === V ? H = e[36] : (H = {
+        question: V,
+        answer: un
+    }, e[35] = V, e[36] = H);
+    let U;
+    e[37] === t ? U = e[38] : (U = t.formatMessage(y.faq2Question), e[37] = t, e[38] = U);
+    let dn;
+    e[39] === Symbol.for(`react.memo_cache_sentinel`) ? (dn = (0, _.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [(0, _.jsx)(`p`, {
+            children: (0, _.jsx)(p, {
+                ...y.faq2Answer
+            })
+        }), (0, _.jsx)(`p`, {
+            children: (0, _.jsx)(p, {
+                ...y.faq2AnswerFollowUp
+            })
+        })]
+    }), e[39] = dn) : dn = e[39];
+    let W;
+    e[40] === U ? W = e[41] : (W = {
+        question: U,
+        answer: dn
+    }, e[40] = U, e[41] = W);
+    let G;
+    e[42] === t ? G = e[43] : (G = t.formatMessage(y.faq3Question), e[42] = t, e[43] = G);
+    let fn;
+    e[44] === Symbol.for(`react.memo_cache_sentinel`) ? (fn = (0, _.jsx)(p, {
+        ...y.faq3Answer
+    }), e[44] = fn) : fn = e[44];
+    let pn;
+    e[45] === Symbol.for(`react.memo_cache_sentinel`) ? (pn = (0, _.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [fn, (0, _.jsxs)(`ul`, {
+            className: `list-disc ps-5`,
+            children: [(0, _.jsx)(`li`, {
+                children: (0, _.jsx)(p, {
+                    ...y.faq3Bullet1
+                })
+            }), (0, _.jsx)(`li`, {
+                children: (0, _.jsx)(p, {
+                    ...y.faq3Bullet2
+                })
+            })]
+        })]
+    }), e[45] = pn) : pn = e[45];
+    let K;
+    e[46] === G ? K = e[47] : (K = {
+        question: G,
+        answer: pn
+    }, e[46] = G, e[47] = K);
+    let q;
+    e[48] === t ? q = e[49] : (q = t.formatMessage(y.faq4Question), e[48] = t, e[49] = q);
+    let mn;
+    e[50] === Symbol.for(`react.memo_cache_sentinel`) ? (mn = (0, _.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [(0, _.jsxs)(`ul`, {
+            className: `list-disc ps-5`,
+            children: [(0, _.jsx)(`li`, {
+                children: (0, _.jsx)(p, {
+                    ...y.faq4Item1
+                })
+            }), (0, _.jsx)(`li`, {
+                children: (0, _.jsx)(p, {
+                    ...y.faq4Item2
+                })
+            })]
+        }), (0, _.jsx)(p, {
+            ...y.faq4Answer
+        })]
+    }), e[50] = mn) : mn = e[50];
+    let J;
+    e[51] === q ? J = e[52] : (J = {
+        question: q,
+        answer: mn
+    }, e[51] = q, e[52] = J);
+    let Y;
+    e[53] === t ? Y = e[54] : (Y = t.formatMessage(y.faq5Question), e[53] = t, e[54] = Y);
+    let hn;
+    e[55] === Symbol.for(`react.memo_cache_sentinel`) ? (hn = (0, _.jsx)(p, {
+        ...y.faq5Answer
+    }), e[55] = hn) : hn = e[55];
+    let X;
+    e[56] === Y ? X = e[57] : (X = {
+        question: Y,
+        answer: hn
+    }, e[56] = Y, e[57] = X);
+    let gn;
+    e[58] === t ? gn = e[59] : (gn = t.formatMessage(y.faq6Question), e[58] = t, e[59] = gn);
+    let _n;
+    e[60] === Symbol.for(`react.memo_cache_sentinel`) ? (_n = (0, _.jsx)(p, {
+        ...y.faq6Answer
+    }), e[60] = _n) : _n = e[60];
+    let vn;
+    e[61] === gn ? vn = e[62] : (vn = {
+        question: gn,
+        answer: _n
+    }, e[61] = gn, e[62] = vn);
+    let yn;
+    e[63] === t ? yn = e[64] : (yn = t.formatMessage(y.faq9Question), e[63] = t, e[64] = yn);
+    let bn;
+    e[65] === Symbol.for(`react.memo_cache_sentinel`) ? (bn = (0, _.jsx)(p, {
+        ...y.faq9Answer
+    }), e[65] = bn) : bn = e[65];
+    let xn;
+    e[66] === yn ? xn = e[67] : (xn = {
+        question: yn,
+        answer: bn
+    }, e[66] = yn, e[67] = xn);
+    let Sn;
+    e[68] === t ? Sn = e[69] : (Sn = t.formatMessage(y.faq13Question), e[68] = t, e[69] = Sn);
+    let Cn = O ? y.deferredFaq13Answer : y.faq13Answer,
+        wn;
+    e[70] === Cn ? wn = e[71] : (wn = (0, _.jsx)(p, {
+        ...Cn
+    }), e[70] = Cn, e[71] = wn);
+    let Tn;
+    e[72] !== Sn || e[73] !== wn ? (Tn = {
+        question: Sn,
+        answer: wn
+    }, e[72] = Sn, e[73] = wn, e[74] = Tn) : Tn = e[74];
+    let En;
+    e[75] !== H || e[76] !== W || e[77] !== K || e[78] !== J || e[79] !== X || e[80] !== vn || e[81] !== xn || e[82] !== Tn ? (En = [H, W, K, J, X, vn, xn, Tn], e[75] = H, e[76] = W, e[77] = K, e[78] = J, e[79] = X, e[80] = vn, e[81] = xn, e[82] = Tn, e[83] = En) : En = e[83];
+    let Dn;
+    e[84] !== B || e[85] !== En ? (Dn = {
+        title: B,
+        items: En
+    }, e[84] = B, e[85] = En, e[86] = Dn) : Dn = e[86];
+    let On;
+    e[87] === t ? On = e[88] : (On = t.formatMessage(y.securityFaqSectionTitle), e[87] = t, e[88] = On);
+    let kn;
+    e[89] === t ? kn = e[90] : (kn = t.formatMessage(y.faq7Question), e[89] = t, e[90] = kn);
+    let An;
+    e[91] === Symbol.for(`react.memo_cache_sentinel`) ? (An = (0, _.jsx)(p, {
+        ...y.faq7Answer
+    }), e[91] = An) : An = e[91];
+    let jn;
+    e[92] === kn ? jn = e[93] : (jn = {
+        question: kn,
+        answer: An
+    }, e[92] = kn, e[93] = jn);
+    let Mn;
+    e[94] === t ? Mn = e[95] : (Mn = t.formatMessage(y.faq8Question), e[94] = t, e[95] = Mn);
+    let Nn;
+    e[96] === Symbol.for(`react.memo_cache_sentinel`) ? (Nn = (0, _.jsx)(p, {
+        ...y.faq8Answer
+    }), e[96] = Nn) : Nn = e[96];
+    let Pn;
+    e[97] === Mn ? Pn = e[98] : (Pn = {
+        question: Mn,
+        answer: Nn
+    }, e[97] = Mn, e[98] = Pn);
+    let Fn;
+    e[99] === t ? Fn = e[100] : (Fn = t.formatMessage(y.faq10Question), e[99] = t, e[100] = Fn);
+    let In;
+    e[101] === Symbol.for(`react.memo_cache_sentinel`) ? (In = (0, _.jsx)(p, {
+        ...y.faq10Answer
+    }), e[101] = In) : In = e[101];
+    let Ln;
+    e[102] === Fn ? Ln = e[103] : (Ln = {
+        question: Fn,
+        answer: In
+    }, e[102] = Fn, e[103] = Ln);
+    let Rn;
+    e[104] === t ? Rn = e[105] : (Rn = t.formatMessage(y.faq11Question), e[104] = t, e[105] = Rn);
+    let zn;
+    e[106] === Symbol.for(`react.memo_cache_sentinel`) ? (zn = (0, _.jsx)(p, {
+        ...y.faq11Answer
+    }), e[106] = zn) : zn = e[106];
+    let Bn;
+    e[107] === Rn ? Bn = e[108] : (Bn = {
+        question: Rn,
+        answer: zn
+    }, e[107] = Rn, e[108] = Bn);
+    let Vn;
+    e[109] === t ? Vn = e[110] : (Vn = t.formatMessage(y.faq12Question), e[109] = t, e[110] = Vn);
+    let Hn;
+    e[111] === Symbol.for(`react.memo_cache_sentinel`) ? (Hn = (0, _.jsx)(p, {
+        ...y.faq12Answer
+    }), e[111] = Hn) : Hn = e[111];
+    let Un;
+    e[112] === Vn ? Un = e[113] : (Un = {
+        question: Vn,
+        answer: Hn
+    }, e[112] = Vn, e[113] = Un);
+    let Wn;
+    e[114] !== jn || e[115] !== Pn || e[116] !== Ln || e[117] !== Bn || e[118] !== Un ? (Wn = [jn, Pn, Ln, Bn, Un], e[114] = jn, e[115] = Pn, e[116] = Ln, e[117] = Bn, e[118] = Un, e[119] = Wn) : Wn = e[119];
+    let Gn;
+    e[120] !== On || e[121] !== Wn ? (Gn = {
+        title: On,
+        items: Wn
+    }, e[120] = On, e[121] = Wn, e[122] = Gn) : Gn = e[122];
+    let Kn;
+    e[123] === t ? Kn = e[124] : (Kn = t.formatMessage(y.phiFaqSectionTitle), e[123] = t, e[124] = Kn);
+    let qn;
+    e[125] === t ? qn = e[126] : (qn = t.formatMessage(y.faq14Question), e[125] = t, e[126] = qn);
+    let Jn;
+    e[127] === Symbol.for(`react.memo_cache_sentinel`) ? (Jn = (0, _.jsx)(p, {
+        ...y.faq14Answer,
+        values: ln
+    }), e[127] = Jn) : Jn = e[127];
+    let Yn;
+    e[128] === qn ? Yn = e[129] : (Yn = {
+        question: qn,
+        answer: Jn
+    }, e[128] = qn, e[129] = Yn);
+    let Xn;
+    e[130] === t ? Xn = e[131] : (Xn = t.formatMessage(y.faq15Question), e[130] = t, e[131] = Xn);
+    let Zn;
+    e[132] === Symbol.for(`react.memo_cache_sentinel`) ? (Zn = (0, _.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [(0, _.jsx)(p, {
+            ...y.faq15Answer,
+            values: ln
+        }), (0, _.jsx)(p, {
+            ...y.faq15AnswerEnterprise
+        })]
+    }), e[132] = Zn) : Zn = e[132];
+    let Qn;
+    e[133] === Xn ? Qn = e[134] : (Qn = {
+        question: Xn,
+        answer: Zn
+    }, e[133] = Xn, e[134] = Qn);
+    let $n;
+    e[135] !== Yn || e[136] !== Qn ? ($n = [Yn, Qn], e[135] = Yn, e[136] = Qn, e[137] = $n) : $n = e[137];
+    let er;
+    e[138] !== Kn || e[139] !== $n ? (er = {
+        title: Kn,
+        items: $n
+    }, e[138] = Kn, e[139] = $n, e[140] = er) : er = e[140];
+    let tr;
+    e[141] !== Dn || e[142] !== Gn || e[143] !== er ? (tr = [Dn, Gn, er], e[141] = Dn, e[142] = Gn, e[143] = er, e[144] = tr) : tr = e[144];
+    let Z = tr,
+        nr;
+    e[145] === Z ? nr = e[146] : (nr = Z.flatMap(ht), e[145] = Z, e[146] = nr);
+    let rr = nr,
+        ir, ar;
+    e[147] === R ? (ir = e[148], ar = e[149]) : (ir = () => {
+        if (re.current) return;
+        re.current = !0;
+        let e = v.pageViewed,
+            t = me.logStructuredEvent(`ChatgptQuorumWebVerificationEvent`, {
+                legacyStatsigEventName: e,
+                stage: `CHATGPT_QUORUM_WEB_VERIFICATION_STAGE_PAGE_VIEWED`
+            });
+        R(e, void 0, t)
+    }, ar = [R], e[147] = R, e[148] = ir, e[149] = ar), (0, g.useEffect)(ir, ar);
+    let or, sr;
+    e[150] === Kt ? (or = e[151], sr = e[152]) : (or = () => {
+        Kt && (Ke(!0), Fe(null))
+    }, sr = [Kt], e[150] = Kt, e[151] = or, e[152] = sr), (0, g.useEffect)(or, sr);
+    let cr, lr;
+    e[153] !== N || e[154] !== i.search || e[155] !== R || e[156] !== I ? (cr = () => {
+        if (!I || ie.current) return;
+        ie.current = !0;
+        let e = ct(i.search);
+        me.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+            checkpoint: `quorum_cfc_terms_shown`,
+            flow: `quorum_clinician_enrollment`,
+            planType: `quorum`,
+            step: N ? `existing_quorum_workspace` : `new_quorum_workspace`,
+            ...e?.source ? {
+                entryPoint: e.source
+            } : {}
+        }), R(v.termsShown, {
+            has_existing_quorum_workspace: N
+        })
+    }, lr = [N, i.search, R, I], e[153] = N, e[154] = i.search, e[155] = R, e[156] = I, e[157] = cr, e[158] = lr) : (cr = e[157], lr = e[158]), (0, g.useEffect)(cr, lr);
+    let ur, dr;
+    e[159] !== L || e[160] !== R ? (ur = () => {
+        !L || ae.current || (ae.current = !0, R(v.existingWorkspaceBlockedShown))
+    }, dr = [L, R], e[159] = L, e[160] = R, e[161] = ur, e[162] = dr) : (ur = e[161], dr = e[162]), (0, g.useEffect)(ur, dr);
+    let fr, pr;
+    e[163] !== x.name || e[164] !== f || e[165] !== u || e[166] !== E || e[167] !== c ? (fr = () => {
+        if (E && x.name === `pending` && !u && !c && !f && !le.current) {
+            let e = window.setTimeout(() => {
+                le.current = !0, l(!0)
+            }, 0);
+            return () => window.clearTimeout(e)
+        }
+    }, pr = [x.name, f, u, E, c], e[163] = x.name, e[164] = f, e[165] = u, e[166] = E, e[167] = c, e[168] = fr, e[169] = pr) : (fr = e[168], pr = e[169]), (0, g.useEffect)(fr, pr);
+    let mr, hr;
+    e[170] !== E || e[171] !== c || e[172] !== R || e[173] !== D || e[174] !== S || e[175] !== F || e[176] !== M ? (mr = () => {
+        if (c) return Pe({
+            onLoad: () => {
+                m(!0);
+                let e = v.personaOpened,
+                    t = me.logStructuredEvent(`ChatgptQuorumWebVerificationEvent`, {
+                        legacyStatsigEventName: e,
+                        stage: `CHATGPT_QUORUM_WEB_VERIFICATION_STAGE_PERSONA_OPENED`,
+                        isRetry: M || F
+                    });
+                R(e, {
+                    is_retry: M || F
+                }, t)
+            },
+            onComplete: () => {
+                l(!1), m(!1), Oe(!0);
+                let e = v.personaCompleted,
+                    t = me.logStructuredEvent(`ChatgptQuorumWebVerificationEvent`, {
+                        legacyStatsigEventName: e,
+                        stage: `CHATGPT_QUORUM_WEB_VERIFICATION_STAGE_PERSONA_COMPLETED`,
+                        isRetry: M || F
+                    });
+                R(e, {
+                    is_retry: M || F
+                }, t), S(), D ? we(!0) : E || Ee(Date.now() + Et)
+            },
+            onCancel: () => {
+                l(!1), m(!1), R(v.personaCanceled, {
+                    is_retry: M || F
+                })
+            },
+            onInquiryCreationError: e => {
+                if (l(!1), m(!1), R(v.personaStartFailed, {
+                        is_retry: M || F
+                    }), kt(e)) {
+                    Ue(!0), Le(y.verificationMaxAttemptsError);
+                    return
+                }
+                Le(y.verificationStartError)
+            }
+        })
+    }, hr = [E, c, R, D, z, S, F, M], e[170] = E, e[171] = c, e[172] = R, e[173] = D, e[174] = S, e[175] = F, e[176] = M, e[177] = mr, e[178] = hr) : (mr = e[177], hr = e[178]), (0, g.useEffect)(mr, hr);
+    let gr, _r;
+    e[179] !== x.name || e[180] !== u || e[181] !== D || e[182] !== S ? (gr = () => {
+        if (!u || !D) return;
+        if (x.name === `verified` || x.name === `allowlisted`) {
+            ue.current || (ue.current = !0, z(D, `hmp_verification_complete`));
+            return
+        }
+        let e = window.setInterval(S, 2e3);
+        return () => window.clearInterval(e)
+    }, _r = [x.name, u, D, z, S], e[179] = x.name, e[180] = u, e[181] = D, e[182] = S, e[183] = gr, e[184] = _r) : (gr = e[183], _r = e[184]), (0, g.useEffect)(gr, _r);
+    let vr, yr;
+    e[185] === d ? (vr = e[186], yr = e[187]) : (vr = () => {
+        if (d == null) return;
+        let e = window.setTimeout(() => Ee(e => e === d ? null : e), Math.max(0, d - Date.now()));
+        return () => window.clearTimeout(e)
+    }, yr = [d], e[185] = d, e[186] = vr, e[187] = yr), (0, g.useEffect)(vr, yr);
+    let br;
+    e[188] !== j || e[189] !== S || e[190] !== d ? (br = () => {
+        if (d == null || j) return;
+        let e = window.setInterval(S, 2e3);
+        return () => window.clearInterval(e)
+    }, e[188] = j, e[189] = S, e[190] = d, e[191] = br) : br = e[191];
+    let xr;
+    e[192] !== x.name || e[193] !== j || e[194] !== S || e[195] !== d ? (xr = [x.name, j, S, d], e[192] = x.name, e[193] = j, e[194] = S, e[195] = d, e[196] = xr) : xr = e[196], (0, g.useEffect)(br, xr);
+    let Sr, Cr;
+    if (e[197] !== P || e[198] !== T ? (Sr = () => {
+            if (!(!P || ce.current)) {
+                if (ce.current = !0, ve(P), T) {
+                    z(P, `hmp_workspace_created`);
+                    return
+                }
+                se(`/onboarding`)
+            }
+        }, Cr = [z, P, T], e[197] = P, e[198] = T, e[199] = Sr, e[200] = Cr) : (Sr = e[199], Cr = e[200]), (0, g.useEffect)(Sr, Cr), !de()) return null;
+    let wr, Tr;
+    e[201] === Symbol.for(`react.memo_cache_sentinel`) ? (wr = () => {
+        te.current?.scrollIntoView({
+            behavior: `smooth`
+        })
+    }, Tr = (0, _.jsx)(p, {
+        ...y.secondaryCta
+    }), e[201] = wr, e[202] = Tr) : (wr = e[201], Tr = e[202]);
+    let Er = (0, _.jsx)(n, {
+            size: `large`,
+            color: `ghost`,
+            className: a(`px-5 py-2.5 text-sm`, r && `text-token-text-secondary mt-2 h-10 min-h-0 font-normal`),
+            onClick: wr,
+            children: Tr
+        }),
+        Dr = r && I && A ? y.onboardingVerifiedTitle : O ? y.deferredTitle : y.title,
+        Or = r ? ze : `input`,
+        kr = !r && Zt && (0, _.jsx)(`nav`, {
+            className: `bg-token-main-surface-primary fixed start-0 end-0 top-0 z-10 border-b border-transparent py-4`,
+            children: (0, _.jsxs)(`div`, {
+                className: a(wt, `flex items-center justify-between`),
+                children: [(0, _.jsx)(`a`, {
+                    href: `/`,
+                    "aria-label": t.formatMessage(y.homeLinkLabel),
+                    children: (0, _.jsx)(Me, {})
+                }), (0, _.jsx)(Ye, {})]
+            })
+        }),
+        Ar = a(r ? `flex flex-col items-center text-center` : [wt, `flex flex-col items-center gap-4 pt-16 text-center md:pt-20`], r && I && `lg:min-h-[572px] lg:justify-center lg:pt-3`),
+        jr = r ? `text-heading-app font-medium` : `text-4xl text-balance md:text-5xl`,
+        Mr;
+    e[203] === Dr ? Mr = e[204] : (Mr = (0, _.jsx)(p, {
+        ...Dr
+    }), e[203] = Dr, e[204] = Mr);
+    let Q;
+    e[205] !== jr || e[206] !== Mr ? (Q = (0, _.jsx)(`h1`, {
+        className: jr,
+        children: Mr
+    }), e[205] = jr, e[206] = Mr, e[207] = Q) : Q = e[207];
+    let Nr = !Vt && (0, _.jsx)(`p`, {
+            className: a(`text-token-text-secondary`, r ? `text-body-regular mt-2` : `max-w-[720px] text-base md:text-lg`),
+            children: (0, _.jsx)(p, {
+                ...r && I ? y.quorumTermsTitle : qt
+            })
+        }),
+        Pr = r && !L && !O && !Gt && !Vt && (0, _.jsxs)(`div`, {
+            className: `border-token-border-default mt-6 w-full max-w-[352px] divide-y rounded-2xl border px-4 text-start`,
+            children: [(0, _.jsxs)(`div`, {
+                className: `border-token-border-default flex h-14 items-center gap-4 text-sm`,
+                children: [(0, _.jsx)(We, {
+                    "aria-hidden": `true`,
+                    className: `icon-lg`
+                }), (0, _.jsx)(p, {
+                    ...y.onboardingGovernmentId
+                })]
+            }), (0, _.jsxs)(`div`, {
+                className: `border-token-border-default flex h-14 items-center gap-4 text-sm`,
+                children: [(0, _.jsx)(Ve, {
+                    "aria-hidden": `true`,
+                    className: `icon-lg`
+                }), (0, _.jsx)(p, {
+                    ...y.onboardingNpi
+                })]
+            })]
+        }),
+        Fr = (!r || !I) && (0, _.jsxs)(`div`, {
+            className: a(`flex w-full flex-col gap-3`, r ? `mt-6 max-w-[352px] items-center` : `mt-2 max-w-[520px]`, !r && !Ht && `sm:flex-row sm:items-center sm:justify-center`),
+            children: [L ? (0, _.jsx)(n, {
+                as: `a`,
+                to: `https://chatgpt.com`,
+                size: `medium`,
+                color: `primary`,
+                className: a(`py-2.5 text-sm`, r ? `h-11 rounded-full px-4` : `px-5`),
+                children: (0, _.jsx)(p, {
+                    ...Yt
+                })
+            }) : Ht ? (0, _.jsxs)(`div`, {
+                className: `border-token-border-light bg-token-bg-primary shadow-elevation-01 flex w-full flex-col gap-4 rounded-[28px] border p-5 text-start sm:p-6`,
+                children: [(0, _.jsxs)(`div`, {
+                    className: `flex flex-col gap-1`,
+                    children: [(0, _.jsx)(`label`, {
+                        htmlFor: `quorum-preverification-npi`,
+                        className: `text-token-text-primary text-sm font-medium`,
+                        children: (0, _.jsx)(p, {
+                            ...y.npiLabel
+                        })
+                    }), (0, _.jsx)(`p`, {
+                        id: `quorum-preverification-npi-help`,
+                        className: `text-token-text-secondary text-sm`,
+                        children: (0, _.jsx)(p, {
+                            ...y.npiHelpText
+                        })
+                    })]
+                }), (0, _.jsx)(Ae, {
+                    name: `quorum-preverification-npi`,
+                    ariaLabel: !1,
+                    "aria-describedby": `quorum-preverification-npi-help`,
+                    type: `text`,
+                    inputMode: `numeric`,
+                    autoComplete: `off`,
+                    value: Je,
+                    placeholder: t.formatMessage(y.npiPlaceholder),
+                    error: Ot ?? void 0,
+                    showErrorIcon: !0,
+                    className: `rounded-full! border-[var(--border-heavy)] p-0! focus-within:ring-1`,
+                    inputClassName: `w-full rounded-full! px-5! py-3! text-base! sm:text-base!`,
+                    onChange: e => {
+                        $e(e.target.value), b(null)
+                    },
+                    onKeyDown: e => {
+                        e.key === `Enter` && nn()
+                    }
+                }), (0, _.jsx)(n, {
+                    type: `button`,
+                    size: `large`,
+                    color: `primary`,
+                    fullWidth: !0,
+                    loading: ut,
+                    disabled: ut || At,
+                    onClick: () => void nn(),
+                    children: (0, _.jsx)(p, {
+                        ...y.npiContinueCta
+                    })
+                })]
+            }) : Gt ? I ? (0, _.jsxs)(`p`, {
+                className: a(`inline-flex min-h-11 items-center gap-2 px-5 py-2.5 text-sm font-medium`, A ? `text-token-text-primary` : `bg-token-bg-status-success text-token-text-status-success rounded-full`),
+                children: [A ? null : (0, _.jsx)(Be, {
+                    "aria-hidden": `true`,
+                    className: `icon-sm`
+                }), (0, _.jsx)(p, {
+                    ...A ? y.verifiedCta : y.npiConfirmedCta
+                })]
+            }) : (0, _.jsx)(n, {
+                size: `medium`,
+                color: `primary`,
+                className: a(`py-2.5 text-sm`, r ? `h-11 rounded-full px-4` : `px-5`),
+                loading: !0,
+                disabled: !0,
+                "aria-disabled": !0,
+                children: (0, _.jsx)(p, {
+                    ...Yt
+                })
+            }) : (0, _.jsx)(n, {
+                size: `medium`,
+                color: `primary`,
+                className: a(`py-2.5 text-sm`, r ? `h-11 rounded-full px-4` : `px-5`),
+                loading: Ut,
+                disabled: Wt,
+                onClick: () => {
+                    He || (R(v.startVerificationClicked, {
+                        is_retry: M || F
+                    }), Le(null), l(!0))
+                },
+                children: (0, _.jsx)(p, {
+                    ...Yt
+                })
+            }), !r && Er]
+        }),
+        Ir;
+    e[208] === Ie ? Ir = e[209] : (Ir = Ie ? (0, _.jsx)(`div`, {
+        role: `alert`,
+        className: `border-token-border-status-error bg-token-bg-status-error text-token-text-status-error w-full max-w-[520px] rounded-lg border p-3 text-sm`,
+        children: (0, _.jsx)(p, {
+            ...Ie,
+            values: {
+                helpCenter: mt
+            }
+        })
+    }) : null, e[208] = Ie, e[209] = Ir);
+    let Lr = (!r || I || O) && (0, _.jsx)(`div`, {
+            ref: ne,
+            className: a(r && I ? `mt-6 w-full text-sm leading-5` : `bg-token-main-surface-secondary text-token-text-secondary mt-4 w-full max-w-[640px] rounded-3xl px-5 py-4 text-sm leading-relaxed`, L && `hidden`),
+            children: I ? (0, _.jsxs)(`div`, {
+                className: a(`text-token-text-primary flex flex-col text-start`, r ? `items-center gap-6` : `gap-4`),
+                children: [!r && (0, _.jsx)(`div`, {
+                    className: `text-base font-medium`,
+                    children: (0, _.jsx)(p, {
+                        ...y.quorumTermsTitle
+                    })
+                }), (0, _.jsxs)(`div`, {
+                    className: r ? `border-token-border-default flex w-full max-w-[352px] flex-col gap-4 rounded-2xl border p-4` : `contents`,
+                    children: [(0, _.jsxs)(`label`, {
+                        htmlFor: `quorum-is-licensed-healthcare`,
+                        className: a(`flex items-start gap-2`, r && `border-token-border-default items-center gap-4 border-b pb-4`),
+                        children: [(0, _.jsx)($t.Field, {
+                            name: `isLicensed`,
+                            children: e => (0, _.jsx)(Or, {
+                                id: `quorum-is-licensed-healthcare`,
+                                name: `isLicensed`,
+                                type: `checkbox`,
+                                className: r ? `border-token-border-default size-[18px]!` : `mt-1 h-4 w-4`,
+                                checked: !!e.state.value,
+                                onChange: t => {
+                                    let n = t.target.checked;
+                                    e.handleChange(n), n && !k && R(v.postVerificationAttest)
+                                }
+                            })
+                        }), (0, _.jsx)(`span`, {
+                            className: `text-sm leading-5`,
+                            children: (0, _.jsx)(p, {
+                                ...y.quorumLicensedAttestation
+                            })
+                        })]
+                    }), (0, _.jsx)(`div`, {
+                        className: `flex items-start gap-2`,
+                        children: (0, _.jsxs)(`label`, {
+                            htmlFor: `quorum-baa-agree`,
+                            className: a(`flex items-start gap-2`, r && `items-center gap-4`),
+                            children: [(0, _.jsx)($t.Field, {
+                                name: `agreedToToS`,
+                                children: e => (0, _.jsx)(Or, {
+                                    id: `quorum-baa-agree`,
+                                    name: `agreedToToS`,
+                                    type: `checkbox`,
+                                    className: r ? `border-token-border-default size-[18px]!` : `mt-1`,
+                                    checked: e.state.value,
+                                    onChange: t => {
+                                        let n = t.target.checked;
+                                        e.handleChange(n), n && !k && R(v.postVerificationAgreeTos)
+                                    }
+                                })
+                            }), (0, _.jsx)(`span`, {
+                                className: `text-sm`,
+                                children: (0, _.jsx)(p, {
+                                    ...y.quorumTosAgreement,
+                                    values: {
+                                        servicesAgreementLink: (0, _.jsx)(`a`, {
+                                            href: `https://openai.com/policies/services-agreement`,
+                                            className: `underline`,
+                                            target: `_blank`,
+                                            rel: `noreferrer`,
+                                            children: (0, _.jsx)(p, {
+                                                ...y.quorumServicesAgreementText
+                                            })
+                                        })
+                                    }
+                                })
+                            })]
+                        })
+                    })]
+                }), (0, _.jsx)($t.Subscribe, {
+                    selector: pt,
+                    children: e => {
+                        let i = e.agreedToToS && e.isLicensed,
+                            ee = (0, _.jsx)(n, {
+                                size: `medium`,
+                                color: `primary`,
+                                className: r ? `h-11 rounded-full px-4 text-sm` : `w-full min-w-[200px] px-5 py-2.5 text-sm sm:w-auto`,
+                                onClick: () => {
+                                    i && (k || R(v.postVerificationGetStartedClicked), on())
+                                },
+                                loading: sn,
+                                disabled: sn || !r && !i,
+                                "aria-disabled": !i || sn,
+                                children: (0, _.jsx)(p, {
+                                    ...sn ? y.quorumPrimaryCtaLoading : r ? y.onboardingGetStarted : y.quorumPrimaryCta
+                                })
+                            }),
+                            te = (0, _.jsx)(`div`, {
+                                className: r ? `flex justify-center` : `block w-full sm:w-auto`,
+                                children: ee
+                            });
+                        return (0, _.jsxs)(`div`, {
+                            className: `flex flex-col gap-3`,
+                            children: [Ne ? (0, _.jsx)(`div`, {
+                                className: `w-full rounded-lg border border-[#df1b41] bg-[#fff5f7] p-3 text-sm text-[#df1b41]`,
+                                children: Ne
+                            }) : null, i ? te : (0, _.jsx)(he, {
+                                side: `top`,
+                                label: t.formatMessage(y.quorumCompleteRequiredFieldsTooltip),
+                                children: te
+                            })]
+                        })
+                    }
+                })]
+            }) : L ? null : (0, _.jsx)(p, {
+                ...O ? y.deferredDisclaimer : y.disclaimer
+            })
+        }),
+        Rr = r && Er,
+        zr;
+    e[210] !== Rr || e[211] !== Ar || e[212] !== Q || e[213] !== Nr || e[214] !== Pr || e[215] !== Fr || e[216] !== Ir || e[217] !== Lr ? (zr = (0, _.jsxs)(`section`, {
+        className: Ar,
+        children: [Q, Nr, Pr, Fr, Ir, Lr, Rr]
+    }), e[210] = Rr, e[211] = Ar, e[212] = Q, e[213] = Nr, e[214] = Pr, e[215] = Fr, e[216] = Ir, e[217] = Lr, e[218] = zr) : zr = e[218];
+    let Br;
+    e[219] === r ? Br = e[220] : (Br = !r && (0, _.jsxs)(`section`, {
+        ref: te,
+        className: a(wt, `flex flex-col items-center gap-3 py-16 text-center md:py-20`),
+        children: [(0, _.jsx)(`h2`, {
+            className: a(Tt, `text-center`),
+            children: (0, _.jsx)(p, {
+                ...y.valueTitle
+            })
+        }), (0, _.jsx)(`p`, {
+            className: `text-token-text-secondary max-w-[640px] text-base`,
+            children: (0, _.jsx)(p, {
+                ...y.valueDescription
+            })
+        })]
+    }), e[219] = r, e[220] = Br);
+    let Vr = r ? te : void 0,
+        Hr;
+    e[221] === r ? Hr = e[222] : (Hr = a(r ? `border-token-border-default mt-7 flex flex-col gap-6 border-t pt-10 pb-6` : [wt, `mx-auto flex max-w-[700px] flex-col gap-8 py-10 md:py-16`]), e[221] = r, e[222] = Hr);
+    let Ur;
+    e[223] === r ? Ur = e[224] : (Ur = r ? `text-body-emphasized` : a(Tt, `text-center`), e[223] = r, e[224] = Ur);
+    let Wr;
+    e[225] === Symbol.for(`react.memo_cache_sentinel`) ? (Wr = (0, _.jsx)(p, {
+        ...y.faqTitle
+    }), e[225] = Wr) : Wr = e[225];
+    let Gr;
+    e[226] === Ur ? Gr = e[227] : (Gr = (0, _.jsx)(`h2`, {
+        className: Ur,
+        children: Wr
+    }), e[226] = Ur, e[227] = Gr);
+    let Kr = r ? `h-6 min-h-0 p-0 text-sm font-normal` : `px-3 py-2 text-sm`,
+        qr;
+    e[228] !== rr || e[229] !== o.length || e[230] !== s ? (qr = () => {
+        if (o.length === rr.length) {
+            s([]);
+            return
+        }
+        s(rr.map(ft))
+    }, e[228] = rr, e[229] = o.length, e[230] = s, e[231] = qr) : qr = e[231];
+    let Jr = o.length === rr.length ? y.collapseAll : y.expandAll,
+        Yr;
+    e[232] === Jr ? Yr = e[233] : (Yr = (0, _.jsx)(p, {
+        ...Jr
+    }), e[232] = Jr, e[233] = Yr);
+    let Xr;
+    e[234] !== Kr || e[235] !== qr || e[236] !== Yr ? (Xr = (0, _.jsx)(n, {
+        size: `medium`,
+        color: `ghost`,
+        className: Kr,
+        onClick: qr,
+        children: Yr
+    }), e[234] = Kr, e[235] = qr, e[236] = Yr, e[237] = Xr) : Xr = e[237];
+    let Zr;
+    e[238] !== Gr || e[239] !== Xr ? (Zr = (0, _.jsxs)(`div`, {
+        className: `flex items-center justify-between`,
+        children: [Gr, Xr]
+    }), e[238] = Gr, e[239] = Xr, e[240] = Zr) : Zr = e[240];
+    let Qr = r ? `[&_button]:py-4 [&_button]:text-sm [&_button]:leading-5` : void 0,
+        $r;
+    e[241] !== Z || e[242] !== r || e[243] !== o || e[244] !== s ? ($r = Z.map((e, t) => {
+        let n = Z.slice(0, t).reduce(dt, 0);
+        return (0, _.jsxs)(`div`, {
+            className: `mb-8 last:mb-0`,
+            children: [(0, _.jsx)(`h3`, {
+                className: a(`mb-3`, r ? `text-base font-medium` : `text-lg font-semibold`),
+                children: e.title
+            }), e.items.map((e, t) => {
+                let r = n + t;
+                return (0, _.jsx)(at, {
+                    question: e.question,
+                    answer: e.answer,
+                    isOpen: o.includes(r),
+                    onToggle: () => s(e => e.includes(r) ? e.filter(e => e !== r) : [...e, r])
+                }, e.question)
+            })]
+        }, e.title)
+    }), e[241] = Z, e[242] = r, e[243] = o, e[244] = s, e[245] = $r) : $r = e[245];
+    let ei;
+    e[246] !== Qr || e[247] !== $r ? (ei = (0, _.jsx)(`div`, {
+        className: Qr,
+        children: $r
+    }), e[246] = Qr, e[247] = $r, e[248] = ei) : ei = e[248];
+    let ti;
+    e[249] !== Vr || e[250] !== Hr || e[251] !== Zr || e[252] !== ei ? (ti = (0, _.jsxs)(`section`, {
+        ref: Vr,
+        id: `faq`,
+        className: Hr,
+        children: [Zr, ei]
+    }), e[249] = Vr, e[250] = Hr, e[251] = Zr, e[252] = ei, e[253] = ti) : ti = e[253];
+    let ni;
+    e[254] !== zr || e[255] !== Br || e[256] !== ti || e[257] !== kr ? (ni = (0, _.jsxs)(_.Fragment, {
+        children: [kr, zr, Br, ti]
+    }), e[254] = zr, e[255] = Br, e[256] = ti, e[257] = kr, e[258] = ni) : ni = e[258];
+    let $ = ni;
+    if (r) {
+        let n;
+        e[259] !== t || e[260] !== Dr ? (n = t.formatMessage(Dr), e[259] = t, e[260] = Dr, e[261] = n) : n = e[261];
+        let r;
+        return e[262] !== $ || e[263] !== n ? (r = (0, _.jsx)(rt, {
+            accessibleTitle: n,
+            children: $
+        }), e[262] = $, e[263] = n, e[264] = r) : r = e[264], r
+    }
+    let ri;
+    e[265] === Symbol.for(`react.memo_cache_sentinel`) ? (ri = a(`font-oai overflow-hidden pb-12`, Zt ? `pt-[72px]` : `pt-0`), e[265] = ri) : ri = e[265];
+    let ii;
+    return e[266] === $ ? ii = e[267] : (ii = (0, _.jsx)(`div`, {
+        className: ri,
+        children: $
+    }), e[266] = $, e[267] = ii), ii
+}
+
+function dt(e, t) {
+    return e + t.items.length
+}
+
+function ft(e, t) {
+    return t
+}
+
+function pt(e) {
+    return e.values
+}
+
+function mt(e) {
+    return (0, _.jsx)(`a`, {
+        href: Ot,
+        className: `underline`,
+        target: `_blank`,
+        rel: `noreferrer`,
+        children: e
+    })
+}
+
+function ht(e) {
+    return e.items
+}
+
+function gt(e) {
+    return (0, _.jsx)(`span`, {
+        className: `inline whitespace-nowrap`,
+        children: e
+    })
+}
+
+function _t(e) {
+    return (0, _.jsx)(`a`, {
+        href: `#settings`,
+        className: `inline underline`,
+        children: e
+    })
+}
+
+function vt(e, t) {
+    if (typeof window > `u` || !xe()) return;
+    let n = c(JSON.stringify({
+        type: t,
+        workspaceId: e,
+        ...t === `hmp_workspace_created` ? {
+            verificationStatus: `pending`
+        } : {}
+    }));
+    ee() ? (t === `hmp_workspace_created` ? window.webkit?.messageHandlers?.hmpWorkspaceCreated : window.webkit?.messageHandlers?.hmpVerificationComplete)?.postMessage(n) : fe() && window.openai?.postMessage?.(n)
+}
+
+function yt(e) {
+    return e.message.toLowerCase().includes(`already has a quorum workspace`)
+}
+
+function bt(e) {
+    return e.isDeferredPersonaVerificationWorkspace && !e.isDeactivated() && e.canAccessWithCurrentSession
+}
+
+function xt(e) {
+    return e.isQuorum()
+}
+
+function St() {
+    return !1
+}
+var Ct, g, _, wt, Tt, Et, Dt, Ot, kt, v, y, b = e((() => {
+        Ct = h(), Ie(), s(), Le(), Fe(), He(), Ge(), nt(), Ue(), ue(), je(), Je(), $e(), st(), Ne(), tt(), l(), te(), ae(), i(), ie(), ce(), o(), le(), re(), ne(), r(), we(), Ke(), u(), g = t(Oe()), De(), m(), it(), _ = d(), wt = `mx-auto max-w-(--breakpoint-2xl) px-4 md:px-8`, Tt = `text-2xl md:text-3xl`, Et = 3e4, Dt = `npi_verification_max_attempts_reached`, Ot = `https://help.openai.com/en/articles/6614161-how-can-i-contact-support`, kt = e => e instanceof Se && e.status === 400 && e.code === Dt, v = {
+            pageViewed: `chatgpt_quorum_cfc_page_viewed`,
+            startVerificationClicked: `chatgpt_quorum_start_verification_clicked`,
+            personaOpened: `chatgpt_quorum_cfc_persona_opened`,
+            personaCompleted: `chatgpt_quorum_cfc_persona_completed`,
+            personaCanceled: `chatgpt_quorum_cfc_persona_canceled`,
+            personaStartFailed: `chatgpt_quorum_cfc_persona_start_failed`,
+            termsShown: `chatgpt_quorum_cfc_terms_shown`,
+            existingWorkspaceBlockedShown: `chatgpt_quorum_cfc_existing_workspace_blocked_shown`,
+            postVerificationAttest: `chatgpt_quorum_post_verification_attest`,
+            postVerificationAgreeTos: `chatgpt_quorum_post_verification_agree_tos`,
+            postVerificationGetStartedClicked: `chatgpt_quorum_post_verification_get_started_clicked`,
+            postVerificationWorkspaceCreateStarted: `chatgpt_quorum_post_verification_workspace_create_started`,
+            postVerificationWorkspaceCreateSucceeded: `chatgpt_quorum_post_verification_workspace_create_succeeded`,
+            postVerificationWorkspaceCreateFailed: `chatgpt_quorum_post_verification_workspace_create_failed`
+        }, y = f({
+            onboardingDescription: {
+                id: `healthcareVerificationPage.onboarding.description`,
+                defaultMessage: `In order to sign up, verify you are a clinician in the United States to access a secure ChatGPT for Clinicians workspace built for clinical workflows. You will need:`
+            },
+            onboardingVerifiedTitle: {
+                id: `healthcareVerificationPage.onboarding.verified.title`,
+                defaultMessage: `You’re verified`
+            },
+            onboardingGovernmentId: {
+                id: `healthcareVerificationPage.onboarding.requirement.government_id`,
+                defaultMessage: `A government-issued photo ID`
+            },
+            onboardingNpi: {
+                id: `healthcareVerificationPage.onboarding.requirement.npi`,
+                defaultMessage: `A valid NPI`
+            },
+            onboardingGetStarted: {
+                id: `healthcareVerificationPage.onboarding.verified.button.get_started`,
+                defaultMessage: `Get started`
+            },
+            title: {
+                id: `healthcareVerificationPage.title`,
+                defaultMessage: `Confirm you are a clinician`
+            },
+            deferredTitle: {
+                id: `healthcareVerificationPage.deferredTitle`,
+                defaultMessage: `Set up your clinician workspace`
+            },
+            description: {
+                id: `healthcareVerificationPage.description`,
+                defaultMessage: `In order to sign up, verify that you are a clinician in the United States to access a secure ChatGPT for Clinicians workspace built for clinical workflows.`
+            },
+            retryDescription: {
+                id: `healthcareVerificationPage.retryDescription`,
+                defaultMessage: `We could not confirm your credentials yet. Please try Persona again to continue.`
+            },
+            freshVerificationDescription: {
+                id: `healthcareVerificationPage.freshVerificationDescription`,
+                defaultMessage: `Please complete verification again to continue to the latest ChatGPT for Clinicians onboarding experience.`
+            },
+            verificationStartError: {
+                id: `healthcareVerificationPage.verificationStartError`,
+                defaultMessage: `Something went wrong while starting verification. Please try again later.`
+            },
+            verificationMaxAttemptsError: {
+                id: `healthcareVerificationPage.verificationMaxAttemptsErrorWithHelpCenter`,
+                defaultMessage: `You’ve reached the maximum number of verification attempts. To get help, visit the <helpCenter>Help Center</helpCenter> and open the chat bubble in the bottom-right corner.`
+            },
+            primaryCta: {
+                id: `healthcareVerificationPage.primaryCta`,
+                defaultMessage: `Start verification`
+            },
+            deferredVerificationDescription: {
+                id: `healthcareVerificationPage.deferredVerificationDescription`,
+                defaultMessage: `Enter your National Provider Identifier to set up your workspace. You’ll verify your identity before sending your first message.`
+            },
+            npiLabel: {
+                id: `healthcareVerificationPage.npiLabel`,
+                defaultMessage: `National Provider Identifier (NPI)`
+            },
+            npiPlaceholder: {
+                id: `healthcareVerificationPage.npiPlaceholder`,
+                defaultMessage: `Enter your 10-digit NPI`
+            },
+            npiHelpText: {
+                id: `healthcareVerificationPage.npiHelpText`,
+                defaultMessage: `Use your 10-digit NPI to set up your workspace.`
+            },
+            npiContinueCta: {
+                id: `healthcareVerificationPage.npiContinueCta`,
+                defaultMessage: `Continue`
+            },
+            npiValidationError: {
+                id: `healthcareVerificationPage.npiValidationError`,
+                defaultMessage: `Enter a valid 10-digit NPI to continue.`
+            },
+            npiPreverificationError: {
+                id: `healthcareVerificationPage.npiPreverificationError`,
+                defaultMessage: `Something went wrong while checking your NPI. Please try again.`
+            },
+            npiConfirmedCta: {
+                id: `healthcareVerificationPage.npiConfirmedCta`,
+                defaultMessage: `NPI accepted. Complete setup below.`
+            },
+            primaryCtaLoading: {
+                id: `healthcareVerificationPage.primaryCtaLoading`,
+                defaultMessage: `Checking your verification status...`
+            },
+            retryCta: {
+                id: `healthcareVerificationPage.retryCta`,
+                defaultMessage: `Try Persona again`
+            },
+            freshVerificationCta: {
+                id: `healthcareVerificationPage.freshVerificationCta`,
+                defaultMessage: `Start verification again`
+            },
+            verifiedCta: {
+                id: `healthcareVerificationPage.verifiedCta`,
+                defaultMessage: `You are verified! Get started below.`
+            },
+            secondaryCta: {
+                id: `healthcareVerificationPage.secondaryCta`,
+                defaultMessage: `Learn more`
+            },
+            homeLinkLabel: {
+                id: `healthcareVerificationPage.homeLinkLabel`,
+                defaultMessage: `ChatGPT Home`
+            },
+            disclaimer: {
+                id: `healthcareVerificationPage.disclaimer`,
+                defaultMessage: `You will complete verification with Persona. The information you submit is used only to confirm your professional status.`
+            },
+            deferredDisclaimer: {
+                id: `healthcareVerificationPage.deferredDisclaimer`,
+                defaultMessage: `Explore your workspace and complete onboarding first. Persona identity verification is required before you send a message.`
+            },
+            quorumTermsTitle: {
+                id: `quorum.settingsTopic.medicalVerificationModalTitle`,
+                defaultMessage: `Please agree to our terms and conditions to continue`
+            },
+            quorumLicensedAttestation: {
+                id: `selectQuorumPlanModal.isLicensedHealthcare`,
+                defaultMessage: `I attest that I am a licensed clinician and all information provided is true and accurate.`
+            },
+            quorumServicesAgreementText: {
+                id: `quorumBilling.servicesAgreementText`,
+                defaultMessage: `OpenAI Services Agreement`
+            },
+            quorumTosAgreement: {
+                id: `selectTeamPlanModal.baaAgreement`,
+                defaultMessage: `I have read and agree to the {servicesAgreementLink}.`
+            },
+            quorumCompleteRequiredFieldsTooltip: {
+                id: `quorumBilling.completeRequiredFieldsTooltip`,
+                defaultMessage: `Please agree to the Terms and Conditions.`
+            },
+            quorumPrimaryCta: {
+                id: `quorum.settingsTopic.getStartedCta`,
+                defaultMessage: `Get Started with ChatGPT`
+            },
+            quorumPrimaryCtaLoading: {
+                id: `quorum.settingsTopic.getStartedCtaLoading`,
+                defaultMessage: `Hang tight! Setting up your new workspace...`
+            },
+            quorumWorkspaceCreateError: {
+                id: `healthcareVerificationPage.quorumWorkspaceCreateError`,
+                defaultMessage: `We couldn't create your ChatGPT for Clinicians workspace. Please try again.`
+            },
+            valueTitle: {
+                id: `healthcareVerificationPage.valueTitle`,
+                defaultMessage: `Why we verify`
+            },
+            valueDescription: {
+                id: `healthcareVerificationPage.verificationPurpose.description`,
+                defaultMessage: `We verify clinician identities to help prevent impersonation and keep access limited to verified clinicians.`
+            },
+            faqTitle: {
+                id: `healthcareVerificationPage.faqTitle`,
+                defaultMessage: `FAQs`
+            },
+            verificationFaqSectionTitle: {
+                id: `healthcareVerificationPage.verificationFaqSectionTitle`,
+                defaultMessage: `Verification`
+            },
+            securityFaqSectionTitle: {
+                id: `healthcareVerificationPage.securityFaqSectionTitle`,
+                defaultMessage: `Security & Privacy`
+            },
+            phiFaqSectionTitle: {
+                id: `healthcareVerificationPage.phiFaqSectionTitle`,
+                defaultMessage: `Protected Health Information (PHI) and HIPAA`
+            },
+            faq1Question: {
+                id: `healthcareVerificationPage.faq1Question`,
+                defaultMessage: `Who can verify?`
+            },
+            faq1Answer: {
+                id: `healthcareVerificationPage.faq1Answer`,
+                defaultMessage: `Verification is available to U.S.-licensed clinicians and eligible clinical professionals who need access to clinician-focused workflows. This typically includes physicians (MD/DO), nurse practitioners (NP), physician assistants (PA), psychologists, and other licensed clinicians.`
+            },
+            faq2Question: {
+                id: `healthcareVerificationPage.faq2Question`,
+                defaultMessage: `Why do I need to verify?`
+            },
+            faq2Answer: {
+                id: `healthcareVerificationPage.faq2Answer`,
+                defaultMessage: `Verification confirms you’re a clinician so we can unlock clinician-only workflows (diagnostic reasoning, differential diagnosis support, workup planning, note drafting, and patient counseling/after-visit summaries) inside a clinician-tailored workspace that’s designed for HIPAA-ready use, where tools and outputs are optimized for clinical practice, not general chat.`
+            },
+            faq2AnswerFollowUp: {
+                id: `healthcareVerificationPage.faq2AnswerFollowUp`,
+                defaultMessage: `This workspace can also remember your medical specialty and apply it across workflows so results are more relevant to your day-to-day practice, and the citations are optimized and formatted for clinicians so it’s faster to find and use trusted sources.`
+            },
+            faq3Question: {
+                id: `healthcareVerificationPage.faq3Question`,
+                defaultMessage: `How does verification work?`
+            },
+            faq3Answer: {
+                id: `healthcareVerificationPage.faq3Answer`,
+                defaultMessage: `You’ll complete a short identity check with Persona. Most verifications take a few minutes. You may be asked to capture:`
+            },
+            faq3Bullet1: {
+                id: `healthcareVerificationPage.faq3Bullet1`,
+                defaultMessage: `A government-issued ID, and`
+            },
+            faq3Bullet2: {
+                id: `healthcareVerificationPage.faq3Bullet2`,
+                defaultMessage: `A brief face scan to match you to your ID (fraud prevention)`
+            },
+            faq4Question: {
+                id: `healthcareVerificationPage.faq4Question`,
+                defaultMessage: `What do I need to complete verification?`
+            },
+            faq4Answer: {
+                id: `healthcareVerificationPage.faq4Answer`,
+                defaultMessage: `If you prefer, you can use a QR code to switch from your computer to your phone for the camera steps. You may also need to turn off any pop-up blocker if you are completing this flow from your computer.`
+            },
+            faq4Item1: {
+                id: `healthcareVerificationPage.faq4Item1`,
+                defaultMessage: `A government-issued ID`
+            },
+            faq4Item2: {
+                id: `healthcareVerificationPage.faq4Item2`,
+                defaultMessage: `A camera (for ID capture + face scan)`
+            },
+            faq5Question: {
+                id: `healthcareVerificationPage.faq5Question`,
+                defaultMessage: `Why is a face scan required?`
+            },
+            faq5Answer: {
+                id: `healthcareVerificationPage.faq5Answer`,
+                defaultMessage: `The face scan helps confirm that the person verifying matches the ID presented. This is a common anti-fraud safeguard and helps protect clinicians and patients from identity misuse.`
+            },
+            faq6Question: {
+                id: `healthcareVerificationPage.faq6Question`,
+                defaultMessage: `What information is my data used for?`
+            },
+            faq6Answer: {
+                id: `healthcareVerificationPage.faq6Answer`,
+                defaultMessage: `The information you submit during verification is used only to confirm your identity and clinician status so we can enable verified clinician access.`
+            },
+            faq7Question: {
+                id: `healthcareVerificationPage.faq7Question`,
+                defaultMessage: `Is my chat content used to train models?`
+            },
+            faq7Answer: {
+                id: `healthcareVerificationPage.faq7Answer`,
+                defaultMessage: `No. Content in this workspace is not used to train our models.`
+            },
+            faq8Question: {
+                id: `healthcareVerificationPage.faq8Question`,
+                defaultMessage: `Is my chat content used to improve OpenAI’s products?`
+            },
+            faq8Answer: {
+                id: `healthcareVerificationPage.faq8Answer`,
+                defaultMessage: `As described in its services agreement, OpenAI will not use Customer Content, such as chat content, to develop or improve its Services, including ChatGPT for Clinicians, unless the customer explicitly agrees to such use. We may run any data submitted to OpenAI’s services through automated content classifiers and safety tools, including to better understand how our services are used. The classifications created are metadata about the business data but do not contain any of the business data itself.`
+            },
+            faq9Question: {
+                id: `healthcareVerificationPage.faq9Question`,
+                defaultMessage: `How long is verification data retained?`
+            },
+            faq9Answer: {
+                id: `healthcareVerificationPage.faq9Answer`,
+                defaultMessage: `Persona retains biometric data for 30 days for fraud prevention purposes and deletes it after 30 days.`
+            },
+            faq10Question: {
+                id: `healthcareVerificationPage.faq10Question`,
+                defaultMessage: `How does OpenAI ensure data security?`
+            },
+            faq10Answer: {
+                id: `healthcareVerificationPage.faq10Answer`,
+                defaultMessage: `OpenAI encrypts all data at rest (AES-256) and in transit between our customers and us and between us and our service providers (TLS 1.2+), and uses strict access controls to limit who can access data. Our security team has an on-call rotation that has 24/7/365 coverage and is paged in case of any potential security incident. We offer a Bug Bounty Program for responsible disclosure of vulnerabilities discovered on our platform and products. ChatGPT for Clinicians is built to support the same security commitments we make to our enterprise customers. We have annual security audits, including penetration testing of our common infrastructure and applications.`
+            },
+            faq11Question: {
+                id: `healthcareVerificationPage.faq11Question`,
+                defaultMessage: `Who can view conversations in ChatGPT for Clinicians?`
+            },
+            faq11Answer: {
+                id: `healthcareVerificationPage.faq11Answer`,
+                defaultMessage: `Our access to conversations stored on our systems is limited to authorized employees that require access for engineering support, investigating potential platform abuse, and legal compliance.`
+            },
+            faq12Question: {
+                id: `healthcareVerificationPage.faq12Question`,
+                defaultMessage: `What is OpenAI’s policy on data retention for ChatGPT Business?`
+            },
+            faq12Answer: {
+                id: `healthcareVerificationPage.faq12Answer`,
+                defaultMessage: `You control whether your conversations are retained. Any deleted or unsaved conversations are removed from our systems within 30 days, unless we are legally required to retain them. Note that retention enables features like conversation history, and shorter retention periods may compromise product experience.`
+            },
+            faq13Question: {
+                id: `healthcareVerificationPage.faq13Question`,
+                defaultMessage: `What happens after verification?`
+            },
+            faq13Answer: {
+                id: `healthcareVerificationPage.faq13Answer`,
+                defaultMessage: `Once verified, you can continue into ChatGPT Health and set up your secure workspace. Persona will only retain your biometric data for 30 days for fraud prevention purposes, and will delete your biometric data after 30 days.`
+            },
+            deferredFaq13Answer: {
+                id: `healthcareVerificationPage.deferredFaq13Answer`,
+                defaultMessage: `You can set up your secure clinician workspace and complete onboarding first. Once Persona verifies your identity, you can start sending messages. Persona retains biometric data for 30 days for fraud prevention and then deletes it.`
+            },
+            faq14Question: {
+                id: `healthcareVerificationPage.faq14Question`,
+                defaultMessage: `Can I use ChatGPT for Clinicians with Protected Health Information (PHI)?`
+            },
+            faq14Answer: {
+                id: `healthcareVerificationPage.faq14Answer`,
+                defaultMessage: `This product is designed to be helpful for many clinician use cases without the need for entering PHI. Do not share PHI unless you have a HIPAA Business Associate Agreement (BAA) and use this product in compliance with applicable law. To enter into a BAA with OpenAI, create a ChatGPT for Clinicians account and then visit the <settingsGroup>Agreements section under <settingsLink>Settings</settingsLink>.</settingsGroup>`
+            },
+            faq15Question: {
+                id: `healthcareVerificationPage.faq15Question`,
+                defaultMessage: `Can I sign one BAA that covers multiple users at my clinic?`
+            },
+            faq15Answer: {
+                id: `healthcareVerificationPage.faq15Answer`,
+                defaultMessage: `ChatGPT for Clinicians is designed for individual use and does not require the use of Protected Health Information (PHI). PHI should only be shared when you have a BAA. We offer individuals authorized by their practice the option to sign a BAA for PHI shared through their individual account. Each account that wants to use ChatGPT for Clinicians with PHI should have a BAA. To enter into a BAA with OpenAI, create a ChatGPT for Clinicians account and then visit the <settingsGroup>Agreements section under <settingsLink>Settings</settingsLink>.</settingsGroup>`
+            },
+            faq15AnswerEnterprise: {
+                id: `healthcareVerificationPage.faq15AnswerEnterprise`,
+                defaultMessage: `If you are looking to sign a BAA that covers multiple users, we recommend ChatGPT for Healthcare, our enterprise offering designed to support team-based use and the broader compliance needs of healthcare organizations.`
+            },
+            expandAll: {
+                id: `healthcareVerificationPage.expandAll`,
+                defaultMessage: `Expand all`
+            },
+            collapseAll: {
+                id: `healthcareVerificationPage.collapseAll`,
+                defaultMessage: `Collapse all`
+            }
+        })
+    })),
+    x, S, At, C = e((() => {
+        m(), x = h(), b(), S = d(), At = Ee(function() {
+            "use forget";
+            let e = (0, x.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, S.jsx)(ut, {}), e[0] = t) : t = e[0], t
+        })
+    }));
+e((() => {
+    C()
+}))();
+export {
+    At as
+    default
+};
 //# sourceMappingURL=cfc-verification-lb5pjqfc.js.map

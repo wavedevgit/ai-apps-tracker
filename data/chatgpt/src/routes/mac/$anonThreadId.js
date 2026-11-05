@@ -1,2 +1,45 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Dtt as n,Ott as r}from"./4813494d-mdvd4786a87166cc.js";import{Nt as i,Q as a,Vn as o,kt as s,wn as c}from"./2340486e-i7pjxgdhv0bs6apg.js";function l(){"use forget";let e=(0,u.c)(5),{movedConversationId:t,handoffObservation:n}=s(),a=i(),o,c;return e[0]!==n||e[1]!==t||e[2]!==a?(o=()=>{a(r(`/c/${t}`,n),{replace:!0})},c=[t,n,a],e[0]=n,e[1]=t,e[2]=a,e[3]=o,e[4]=c):(o=e[3],c=e[4]),(0,d.useEffect)(o,c),null}var u,d,f=e((()=>{u=c(),d=t(o()),a(),n()})),p=e((()=>{f()}));e((()=>{p()}))();export{l as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Dtt as n,
+    Ott as r
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Nt as i,
+    Q as a,
+    Vn as o,
+    kt as s,
+    wn as c
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function l() {
+    "use forget";
+    let e = (0, u.c)(5),
+        {
+            movedConversationId: t,
+            handoffObservation: n
+        } = s(),
+        a = i(),
+        o, c;
+    return e[0] !== n || e[1] !== t || e[2] !== a ? (o = () => {
+        a(r(`/c/${t}`, n), {
+            replace: !0
+        })
+    }, c = [t, n, a], e[0] = n, e[1] = t, e[2] = a, e[3] = o, e[4] = c) : (o = e[3], c = e[4]), (0, d.useEffect)(o, c), null
+}
+var u, d, f = e((() => {
+        u = c(), d = t(o()), a(), n()
+    })),
+    p = e((() => {
+        f()
+    }));
+e((() => {
+    p()
+}))();
+export {
+    l as
+    default
+};
 //# sourceMappingURL=mac._anonThreadId-ckevygw1.js.map

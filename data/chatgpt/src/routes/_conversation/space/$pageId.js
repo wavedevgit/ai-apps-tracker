@@ -1,2 +1,118 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,A8 as r,Aet as i,Bh as a,Eit as o,Lit as s,N1 as c,Rit as l,Vh as u,_it as d,cst as f,eE as p,j5 as m,jet as h,lst as g,q1 as _,ust as v,wet as y}from"./4813494d-mdvd4786a87166cc.js";import{Bn as b,Ht as x,Nn as S,Nt as C,Q as w,Rn as T,Vn as E,wn as D}from"./2340486e-i7pjxgdhv0bs6apg.js";import{brn as O,frn as k,hrn as A}from"./conversation-small-bcbq46iub1p0ca1t.js";import{n as j,t as M}from"./51fe76c9-njfv3cjrc1ktbkds.js";var N,P,F,I,L,R,z=e((()=>{N=D(),p(),o(),u(),y(),A(),j(),r(),_(),s(),f(),P=t(E()),T(),w(),F=b(),I=h.SharedPage,L=()=>{"use forget";let e=(0,N.c)(4),t=m(c),n=(0,P.useSyncExternalStore)(v,g,g),r=C();if(!l()||n||!t?.isPersonalAccount()||!(t.isFree()||t.isGo()))return null;let a;e[0]===r?a=e[1]:(a=i({openModalLocation:I})?()=>{O({navigate:r,openModalLocation:I,pricingTarget:k(`pro`)})}:void 0,e[0]=r,e[1]=a);let o;return e[2]===a?o=e[3]:(o=(0,F.jsx)(R,{onUpgrade:a}),e[2]=a,e[3]=o),o},R=e=>{"use forget";let t=(0,N.c)(7),{onUpgrade:r}=e,i,o,s;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,F.jsx)(`div`,{className:`bg-token-bg-secondary flex size-12 items-center justify-center rounded-xl`,children:(0,F.jsx)(a,{className:`icon text-token-text-primary`,"aria-hidden":!0})}),o=(0,F.jsx)(S,{id:`chatgpt.shared_page.upgrade.title`,defaultMessage:`View this page with ChatGPT Pro`}),s=(0,F.jsx)(S,{id:`chatgpt.shared_page.upgrade.description`,defaultMessage:`Upgrade your plan to view and edit shared pages.`}),t[0]=i,t[1]=o,t[2]=s):(i=t[0],o=t[1],s=t[2]);let c;t[3]===r?c=t[4]:(c=r&&(0,F.jsx)(n,{type:`button`,color:`primary`,onClick:r,children:(0,F.jsx)(S,{...d.upgrade})}),t[3]=r,t[4]=c);let l;return t[5]===c?l=t[6]:(l=(0,F.jsx)(M,{borderStyle:`none`,icon:i,heading:o,subheading:s,actions:c}),t[5]=c,t[6]=l),l}})),B,V,H=e((()=>{w(),z(),B={hasRouteMeta:!1,useScrollRestoration:!0},V=x(L)}));e((()=>{H()}))();export{V as default,B as handle};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    A8 as r,
+    Aet as i,
+    Bh as a,
+    Eit as o,
+    Lit as s,
+    N1 as c,
+    Rit as l,
+    Vh as u,
+    _it as d,
+    cst as f,
+    eE as p,
+    j5 as m,
+    jet as h,
+    lst as g,
+    q1 as _,
+    ust as v,
+    wet as y
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as b,
+    Ht as x,
+    Nn as S,
+    Nt as C,
+    Q as w,
+    Rn as T,
+    Vn as E,
+    wn as D
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    brn as O,
+    frn as k,
+    hrn as A
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    n as j,
+    t as M
+} from "./51fe76c9-njfv3cjrc1ktbkds.js";
+var N, P, F, I, L, R, z = e((() => {
+        N = D(), p(), o(), u(), y(), A(), j(), r(), _(), s(), f(), P = t(E()), T(), w(), F = b(), I = h.SharedPage, L = () => {
+            "use forget";
+            let e = (0, N.c)(4),
+                t = m(c),
+                n = (0, P.useSyncExternalStore)(v, g, g),
+                r = C();
+            if (!l() || n || !t?.isPersonalAccount() || !(t.isFree() || t.isGo())) return null;
+            let a;
+            e[0] === r ? a = e[1] : (a = i({
+                openModalLocation: I
+            }) ? () => {
+                O({
+                    navigate: r,
+                    openModalLocation: I,
+                    pricingTarget: k(`pro`)
+                })
+            } : void 0, e[0] = r, e[1] = a);
+            let o;
+            return e[2] === a ? o = e[3] : (o = (0, F.jsx)(R, {
+                onUpgrade: a
+            }), e[2] = a, e[3] = o), o
+        }, R = e => {
+            "use forget";
+            let t = (0, N.c)(7),
+                {
+                    onUpgrade: r
+                } = e,
+                i, o, s;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, F.jsx)(`div`, {
+                className: `bg-token-bg-secondary flex size-12 items-center justify-center rounded-xl`,
+                children: (0, F.jsx)(a, {
+                    className: `icon text-token-text-primary`,
+                    "aria-hidden": !0
+                })
+            }), o = (0, F.jsx)(S, {
+                id: `chatgpt.shared_page.upgrade.title`,
+                defaultMessage: `View this page with ChatGPT Pro`
+            }), s = (0, F.jsx)(S, {
+                id: `chatgpt.shared_page.upgrade.description`,
+                defaultMessage: `Upgrade your plan to view and edit shared pages.`
+            }), t[0] = i, t[1] = o, t[2] = s) : (i = t[0], o = t[1], s = t[2]);
+            let c;
+            t[3] === r ? c = t[4] : (c = r && (0, F.jsx)(n, {
+                type: `button`,
+                color: `primary`,
+                onClick: r,
+                children: (0, F.jsx)(S, {
+                    ...d.upgrade
+                })
+            }), t[3] = r, t[4] = c);
+            let l;
+            return t[5] === c ? l = t[6] : (l = (0, F.jsx)(M, {
+                borderStyle: `none`,
+                icon: i,
+                heading: o,
+                subheading: s,
+                actions: c
+            }), t[5] = c, t[6] = l), l
+        }
+    })),
+    B, V, H = e((() => {
+        w(), z(), B = {
+            hasRouteMeta: !1,
+            useScrollRestoration: !0
+        }, V = x(L)
+    }));
+e((() => {
+    H()
+}))();
+export {
+    V as
+    default, B as handle
+};
 //# sourceMappingURL=_conversation.space._pageId-c3wuw7wp.js.map

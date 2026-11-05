@@ -1,3 +1,10173 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/b6317585-f0lv7axkzcox4lsn.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-mdvd4786a87166cc.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/conversation-small-bcbq46iub1p0ca1t.js","assets/30901919-s8bko9nrkqwv6i4f.js","assets/c470f5ab-jwd0o7jx9i9say9k.js","assets/0e5afe53-hxm3yzzjqriayom4.js","assets/conversation-small-ep6mlz5m.css","assets/c2675c8c-oz03twoan08d72ud.js","assets/82782bc9-b4xbouzwkkyrfqq2.js","assets/8b34dbc2-lmwubajnld74ksfm.js","assets/global-modals-dxg9ukpk.css","assets/d917179d-dolmf4aly5k2twym.js","assets/99e0f7e1-d963p6goimga1tp9.js","assets/14cc4891-cg3322196l0g7djn.js","assets/99d646a4-ggajoosdyjy1uq7r.js","assets/c2daebff-k454sjw0fix9q5v0.js","assets/283e0bfb-gpshxh94myln7o00.js","assets/cedb005c-lv4cylvkdxtyo7yj.js","assets/d66e3fc1-dxlgawzfh76wwkc1.js","assets/bfa5bd69-abxss2965oa4vozq.js","assets/a69a6305-h5j6hq3uuohyk3fx.js","assets/c2765176-moz2iwefuk962qo5.js","assets/f8464225-himk4pxoxyl5i6gq.js","assets/af004db9-ncue41w0x271s8a6.js","assets/a7f7cdcd-c590ozeojn4rp3sd.js","assets/646367a3-jld8kcv4nfxql10u.js","assets/c096aa66-deerh4uslu7vz3jp.js"])))=>i.map(i=>d[i]);
-import{n as e,r as t,s as n}from"./f025431a-ehagpvg3m4e1cduv.js";import{$6 as r,$T as i,A5 as a,AE as o,Aw as s,Bw as c,CR as l,Crt as u,E6 as d,ER as f,I7 as p,IU as m,Irt as h,K5 as g,Knt as _,L1 as v,LU as y,Lrt as b,Lw as x,M7 as S,Mw as C,N1 as w,Nat as T,O6 as E,Oct as D,Ow as O,Q6 as k,Qy as A,Rrt as j,Rw as M,Rz as ee,Srt as te,TR as N,U1 as P,Ust as ne,Vst as re,Vw as F,Wnt as I,Yi as ie,Z6 as L,ZG as R,Zi as z,Zy as ae,_rt as B,a0 as oe,a2 as V,ax as H,brt as se,bx as ce,c2 as le,c6 as ue,cot as de,d2 as fe,eE as pe,eK as me,f6 as he,fB as ge,g6 as _e,gh as ve,ia as ye,ix as be,j5 as xe,jat as Se,jw as Ce,kE as we,kI as U,mct as Te,n0 as Ee,not as De,o0 as Oe,o2 as ke,oW as Ae,pB as je,q1 as Me,q5 as Ne,ra as Pe,s2 as Fe,sI as Ie,sW as Le,vx as Re,wI as ze,wh as Be,wrt as Ve,yrt as He,z1 as Ue,zU as We,zz as Ge}from"./4813494d-mdvd4786a87166cc.js";import{At as Ke,Bn as qe,Dn as Je,Ht as Ye,In as Xe,Kt as Ze,Ln as Qe,N as $e,Nn as W,Nt as et,O as tt,Q as nt,Rn as rt,Tn as it,Vn as at,Vt as ot,cn as st,it as ct,ln as lt,p as ut,s as dt,w as ft,wn as pt,zn as mt}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$6t as ht,$cn as gt,AUn as _t,Ain as vt,B6t as yt,BH as bt,Bst as xt,Crn as St,Din as Ct,Dln as wt,Eln as Tt,F1 as Et,F6t as Dt,FGt as Ot,Fon as kt,G6t as At,G8t as jt,Gn as Mt,HH as Nt,Hdn as Pt,I1 as Ft,J6t as It,Jln as Lt,K6t as Rt,Kst as zt,L1 as Bt,MUn as Vt,O6t as Ht,P1 as Ut,P6t as Wt,PGt as Gt,Pon as Kt,Pvn as qt,Q6t as Jt,Qn as Yt,R1 as Xt,Srn as Zt,Trn as Qt,U6t as $t,Udn as en,Vst as tn,W6t as nn,Wln as rn,Wn as an,Wst as on,X6t as sn,XWn as cn,Y6t as ln,Y8t as un,Y_n as dn,Yn as fn,ZWn as pn,Zn as mn,_ln as hn,_sn as gn,a8t as _n,bsn as vn,c8t as yn,cSt as bn,dn as xn,e8t as Sn,eln as Cn,en as wn,er as Tn,fGt as En,fln as Dn,gln as On,gsn as kn,h6t as An,hln as jn,hn as Mn,hsn as Nn,i8t as Pn,ir as Fn,jUn as In,lcn as Ln,m6t as Rn,mcn as zn,mln as Bn,msn as Vn,n8t as Hn,nln as Un,nr as Wn,nyn as Gn,pGt as Kn,pg as qn,pln as Jn,q6t as Yn,r8t as Xn,rr as Zn,s8t as Qn,sSt as $n,t8t as er,tg as tr,tln as nr,tr as rr,vyn as ir,wrn as ar,xin as or,xsn as sr}from"./conversation-small-bcbq46iub1p0ca1t.js";import{$b as cr,$y as lr,Bv as ur,CC as dr,Fm as fr,Hb as pr,Hy as mr,Ky as hr,Pm as gr,Qb as _r,Qy as vr,SC as yr,TC as br,Ub as xr,Uy as Sr,Vv as Cr,Xg as wr,Zg as Tr,_l as Er,ap as Dr,bC as Or,gl as kr,ny as Ar,op as jr,qy as Mr,ry as Nr,vy as Pr,wC as Fr,xC as Ir,yy as Lr}from"./30901919-s8bko9nrkqwv6i4f.js";import{$ as Rr,$l as zr,$o as Br,$s as Vr,Af as Hr,Ao as Ur,Bc as Wr,Bn as Gr,Cc as Kr,Cd as qr,Cf as Jr,Cs as Yr,Dc as Xr,Do as Zr,Ec as Qr,Eo as $r,Fc as ei,Fi as ti,G as ni,Ga as ri,Gs as ii,Hc as ai,I as oi,Ic as si,Im as ci,Io as li,J as ui,Jl as di,Jo as fi,Jp as pi,K as mi,L as hi,Lc as gi,Lm as _i,Lo as vi,Ma as yi,Mc as bi,Na as xi,Nc as Si,Nh as Ci,Ni as wi,Oc as Ti,Od as Ei,Oo as Di,Pc as Oi,Pi as ki,Ql as Ai,Qo as ji,Rc as Mi,Rh as Ni,Rm as Pi,Sf as Fi,Ss as Ii,Tc as Li,Ts as Ri,U as zi,U_ as Bi,Uc as Vi,Un as Hi,Vn as Ui,W as Wi,W_ as Gi,Wa as Ki,Wn as qi,Ws as Ji,X as Yi,Xl as Xi,Xo as Zi,Xp as Qi,Y as $i,Yl as ea,Yp as ta,Zd as na,Zl as ra,Zo as ia,_c as aa,at as oa,au as sa,bc as ca,bf as la,dc as ua,dt as da,ec as fa,es as pa,et as ma,eu as ha,gc as ga,gf as _a,go as va,ho as ya,if as ba,is as xa,it as Sa,iu as Ca,jc as wa,jf as Ta,ko as Ea,lc as Da,lh as Oa,lo as ka,mf as Aa,mo as ja,ns as Ma,nt as Na,nu as Pa,ot as Fa,pc as Ia,pf as La,po as Ra,q as za,ql as Ba,rf as Va,rt as Ha,ru as Ua,sh as Wa,ss as Ga,tc as Ka,ts as qa,tt as Ja,tu as Ya,uo as Xa,ut as Za,vf as Qa,wd as $a,ws as eo,xc as to,xf as no,xs as ro,zc as io,zd as ao}from"./c2675c8c-oz03twoan08d72ud.js";import{ax as oo,ex as so,ix as co}from"./8b34dbc2-lmwubajnld74ksfm.js";import{E as lo,F as uo,L as fo,f as po,o as mo,t as ho,u as go,z as _o}from"./3d9e424f-kt4bqqypm1dmw9pv.js";import{n as vo,t as yo}from"./bcae0416-ikuz8xpvrl7zc38d.js";import{n as bo,t as xo}from"./283e0bfb-gpshxh94myln7o00.js";import{n as So,r as Co,t as wo}from"./cf38d95c-ecylawypz26iazhe.js";import{n as To,r as Eo,t as Do}from"./25e34381-m4hq61xmp627ptjb.js";import{n as Oo,t as ko}from"./9f2e6d33-h33rm8r24h08gyr1.js";import{a as Ao,i as jo,n as Mo,t as No}from"./730b64e6-cmgjgypkjg8p0rul.js";import{n as Po,r as Fo,t as Io}from"./37b207d4-c11bu6stsfrwt1kc.js";import{l as Lo,o as Ro}from"./1212b029-gea36v7yzle7vx36.js";import{a as zo,i as Bo,o as Vo,r as Ho,s as Uo,t as Wo}from"./a6f4f526-ohl1tbtr95pvqdu9.js";import{a as Go,n as Ko}from"./b0c2397c-gzseaeqr0yijp0eh.js";import{n as qo,t as Jo}from"./a4d2bcd2-kotayx1z6pmyyl9f.js";import{i as Yo,n as Xo,r as Zo}from"./32d3feda-hhfdhqajoabb5vr8.js";import{n as Qo,t as $o}from"./4a5c97e1-f0rgji8157a30vsw.js";import{n as es,r as ts,t as ns}from"./ef852af5-ead7ndxw98pbc2xq.js";import{n as rs,t as is}from"./8181be75-jxl9ssgn0fr1coay.js";import{n as as,t as os}from"./96984d0a-cl6pg55o0zev32k2.js";import{a as ss,c as cs,d as ls,f as us,i as ds,n as fs,o as ps,s as ms,t as hs,u as gs}from"./3ebdc472-iznnx016ux5fh0j4.js";import{n as _s,t as vs}from"./646367a3-jld8kcv4nfxql10u.js";import{n as ys,t as bs}from"./bfa5bd69-abxss2965oa4vozq.js";import{n as xs,t as Ss}from"./14cc4891-cg3322196l0g7djn.js";var Cs,ws,Ts=e((()=>{Cs=qe(),ws=e=>(0,Cs.jsx)(`svg`,{width:`1em`,height:`1em`,viewBox:`0 0 24 24`,fill:`currentColor`,...e,children:(0,Cs.jsx)(`path`,{d:`M16.2426 6.75739C16.7949 6.75738 17.2426 7.2051 17.2426 7.75738V14.8285C17.2426 15.3807 16.7949 15.8285 16.2426 15.8285C15.6904 15.8285 15.2426 15.3807 15.2426 14.8285V10.1716L8.46446 16.9498C8.07394 17.3403 7.44077 17.3403 7.05025 16.9498C6.65972 16.5592 6.65972 15.9261 7.05025 15.5356L13.8284 8.75739H9.17157C8.61928 8.75739 8.17157 8.30967 8.17157 7.75738C8.17157 7.2051 8.61928 6.75738 9.17157 6.75739H16.2426Z`,fill:`currentColor`})})})),Es,Ds,Os=e((()=>{Es=qe(),Ds=e=>(0,Es.jsxs)(`svg`,{width:`1em`,height:`1em`,viewBox:`0 0 24 24`,fill:`currentColor`,...e,children:[(0,Es.jsx)(`path`,{d:`M13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12V16C11 16.5523 11.4477 17 12 17C12.5523 17 13 16.5523 13 16V12Z`,fill:`currentColor`}),(0,Es.jsx)(`path`,{d:`M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12Z`,fill:`currentColor`}),(0,Es.jsx)(`path`,{d:`M12 9.30005C12.6351 9.30005 13.15 8.78518 13.15 8.15005C13.15 7.51492 12.6351 7.00005 12 7.00005C11.3649 7.00005 10.85 7.51492 10.85 8.15005C10.85 8.78518 11.3649 9.30005 12 9.30005Z`,fill:`currentColor`})]})})),ks,As,js=e((()=>{ks=qe(),As=e=>(0,ks.jsxs)(`svg`,{width:`1em`,height:`1em`,viewBox:`0 0 24 24`,fill:`currentColor`,...e,children:[(0,ks.jsx)(`g`,{clipPath:`url(#clip0_8150_6581)`,children:(0,ks.jsx)(`path`,{d:`M9.20509 8.76514V6.50548C9.20509 6.31517 9.27649 6.17237 9.44293 6.07733L13.9861 3.46091C14.6046 3.10416 15.342 2.93772 16.103 2.93772C18.9573 2.93772 20.7651 5.14986 20.7651 7.50457C20.7651 7.67101 20.7651 7.86132 20.7412 8.05164L16.0316 5.29243C15.7462 5.12599 15.4607 5.12599 15.1753 5.29243L9.20509 8.76514ZM19.8136 17.566V12.1665C19.8136 11.8334 19.6708 11.5955 19.3854 11.4291L13.4152 7.95637L15.3656 6.83836C15.5321 6.74332 15.6749 6.74332 15.8413 6.83836L20.3845 9.45477C21.6928 10.216 22.5728 11.8334 22.5728 13.4032C22.5728 15.2108 21.5025 16.8759 19.8136 17.5657V17.566ZM7.80173 12.8088L5.8513 11.6671C5.68486 11.5721 5.61346 11.4293 5.61346 11.239V6.00616C5.61346 3.46114 7.56389 1.53436 10.2042 1.53436C11.2033 1.53436 12.1307 1.86746 12.9159 2.46205L8.2301 5.17374C7.94475 5.34018 7.80196 5.57801 7.80196 5.91112V12.809L7.80173 12.8088ZM12 15.2349L9.20509 13.6651V10.3352L12 8.76537L14.7947 10.3352V13.6651L12 15.2349ZM13.7958 22.4659C12.7967 22.4659 11.8693 22.1328 11.0841 21.5382L15.7699 18.8265C16.0553 18.6601 16.198 18.4223 16.198 18.0892V11.1912L18.1723 12.3329C18.3388 12.4279 18.4102 12.5707 18.4102 12.7611V17.9939C18.4102 20.5389 16.4359 22.4657 13.7958 22.4657V22.4659ZM8.15848 17.1617L3.61528 14.5453C2.30696 13.784 1.42701 12.1667 1.42701 10.5969C1.42701 8.76537 2.52115 7.12417 4.20987 6.43431V11.8575C4.20987 12.1906 4.35266 12.4284 4.63802 12.5948L10.5846 16.0437L8.63415 17.1617C8.46771 17.2567 8.32492 17.2567 8.15848 17.1617ZM7.897 21.0626C5.20919 21.0626 3.23488 19.0407 3.23488 16.5432C3.23488 16.3529 3.25875 16.1626 3.2824 15.9723L7.96817 18.684C8.25352 18.8504 8.53911 18.8504 8.82447 18.684L14.7947 15.2351V17.4948C14.7947 17.6851 14.7233 17.8279 14.5568 17.9229L10.0136 20.5394C9.39518 20.8961 8.6578 21.0626 7.89677 21.0626H7.897ZM13.7958 23.8929C16.6739 23.8929 19.0762 21.8475 19.6235 19.1358C22.2874 18.4459 24 15.9484 24 13.4034C24 11.7383 23.2865 10.121 22.002 8.95546C22.121 8.45591 22.1924 7.95637 22.1924 7.45705C22.1924 4.05573 19.4331 1.51048 16.2458 1.51048C15.6037 1.51048 14.9852 1.60553 14.3668 1.81971C13.2963 0.773101 11.8215 0.107117 10.2042 0.107117C7.32606 0.107117 4.92383 2.15259 4.37653 4.86428C1.7126 5.55414 0 8.05164 0 10.5967C0 12.2617 0.713506 13.8791 1.99795 15.0446C1.87904 15.5441 1.80764 16.0437 1.80764 16.543C1.80764 19.9443 4.56685 22.4896 7.75421 22.4896C8.39632 22.4896 9.01478 22.3945 9.63324 22.1803C10.7035 23.2269 12.1783 23.8929 13.7958 23.8929Z`,fill:`currentColor`})}),(0,ks.jsx)(`defs`,{children:(0,ks.jsx)(`clipPath`,{id:`clip0_8150_6581`,children:(0,ks.jsx)(`rect`,{width:24,height:24,fill:`white`})})})]})})),Ms,Ns,Ps,Fs,Is,Ls,Rs,zs,Bs,Vs,Hs,Us,Ws,Gs,Ks,qs,Js,Ys,Xs,Zs,Qs,$s,ec,tc,nc,rc,ic,ac,oc,sc,cc,lc,uc,dc,fc,pc,mc,G,hc=e((()=>{Ms=`_oENHW_Card`,Ns=`_oENHW_CardActions`,Ps=`_oENHW_CardContent`,Fs=`_oENHW_Copy`,Is=`_oENHW_CreditAmount`,Ls=`_oENHW_CreditCopy`,Rs=`_oENHW_CreditSummary`,zs=`_oENHW_DestinationDescription`,Bs=`_oENHW_Dialog`,Vs=`_oENHW_DialogActions`,Hs=`_oENHW_DialogBody`,Us=`_oENHW_DialogForm`,Ws=`_oENHW_DialogPortal`,Gs=`_oENHW_DialogTitle`,Ks=`_oENHW_Headline`,qs=`_oENHW_Identity`,Js=`_oENHW_InfoIcon`,Ys=`_oENHW_LinkedCard`,Xs=`_oENHW_LinkedCopy`,Zs=`_oENHW_LinkedDescription`,Qs=`_oENHW_LinkedHeading`,$s=`_oENHW_LinkedSection`,ec=`_oENHW_LinkedTitle`,tc=`_oENHW_Logo`,nc=`_oENHW_OrganizationName`,rc=`_oENHW_OrganizationOption`,ic=`_oENHW_OrganizationOptions`,ac=`_oENHW_OrganizationPicker`,oc=`_oENHW_PlatformLink`,sc=`_oENHW_SecondaryText`,cc=`_oENHW_SuccessArtwork`,lc=`_oENHW_SuccessBody`,uc=`_oENHW_SuccessCheck`,dc=`_oENHW_SuccessDescription`,fc=`_oENHW_SuccessLogo`,pc=`_oENHW_SuccessMessage`,mc=`_oENHW_SummaryDescription`,G={Card:Ms,CardActions:Ns,CardContent:Ps,Copy:Fs,CreditAmount:Is,CreditCopy:Ls,CreditSummary:Rs,DestinationDescription:zs,Dialog:Bs,DialogActions:Vs,DialogBody:Hs,DialogForm:Us,DialogPortal:Ws,DialogTitle:Gs,Error:`_oENHW_Error`,Headline:Ks,Identity:qs,InfoIcon:Js,LinkedCard:Ys,LinkedCopy:Xs,LinkedDescription:Zs,LinkedHeading:Qs,LinkedSection:$s,LinkedTitle:ec,Logo:tc,OrganizationName:nc,OrganizationOption:rc,OrganizationOptions:ic,OrganizationPicker:ac,PlatformLink:oc,SecondaryText:sc,SuccessArtwork:cc,SuccessBody:lc,SuccessCheck:uc,SuccessDescription:dc,SuccessLogo:fc,SuccessMessage:pc,SummaryDescription:mc}})),gc,_c,vc,yc=e((()=>{gc=qe(),at(),_c=e=>(0,gc.jsx)(`svg`,{preserveAspectRatio:`none`,overflow:`visible`,style:{display:`block`},width:32,height:32,viewBox:`0 0 32 32`,fill:`none`,xmlns:`http://www.w3.org/2000/svg`,...e,children:(0,gc.jsx)(`g`,{id:`circle-checkmark-fill`,children:(0,gc.jsx)(`path`,{id:`vector`,d:`M16 1.75C23.8701 1.75 30.25 8.12994 30.25 16C30.25 23.8701 23.8701 30.25 16 30.25C8.12994 30.25 1.75 23.8701 1.75 16C1.75 8.12994 8.12994 1.75 16 1.75ZM21.2217 10.9053C20.6483 10.5209 19.8718 10.6739 19.4873 11.2471L14.5889 18.5527L12.3887 16.1943C11.9177 15.6896 11.1269 15.6619 10.6221 16.1328C10.1175 16.6038 10.0897 17.3947 10.5605 17.8994L13.6211 21.1797C14.2801 21.8858 15.4257 21.7942 15.9639 20.9922L21.5635 12.6396C21.9478 12.0664 21.7947 11.2898 21.2217 10.9053Z`,fillRule:`evenodd`,clipRule:`evenodd`,fill:`#53B559`})})}),vc=_c}));function bc(e){return(0,K.jsx)(`a`,{href:`https://platform.openai.com`,target:`_blank`,rel:`noopener noreferrer`,className:G.PlatformLink,children:e})}function xc(e){return(0,K.jsx)(`a`,{href:`https://platform.openai.com`,target:`_blank`,rel:`noopener noreferrer`,className:G.PlatformLink,children:e})}var Sc,Cc,K,wc,Tc,Ec,Dc,Oc,kc,Ac=e((()=>{Sc=pt(),Ts(),qi(),Os(),js(),Ei(),Gr(),Ne(),Cc=n(at(),1),rt(),hc(),yc(),Co(),K=qe(),wc=Qe({cancel:{id:`chatgpt.api_linking_promo.cancel`,defaultMessage:`Cancel`},close:{id:`chatgpt.api_linking_promo.close`,defaultMessage:`Close`},claim:{id:`chatgpt.api_linking_promo.claim`,defaultMessage:`Link & claim`},link:{id:`chatgpt.api_linking_promo.link`,defaultMessage:`Link organization`},trialTiming:{id:`chatgpt.api_linking_promo.trial.payment_timing`,defaultMessage:`Credits start after your first successful subscription payment.`},unavailable:{id:`chatgpt.api_linking_promo.link_failed`,defaultMessage:`We couldn’t confirm the link. Please try again.`}}),Tc=e=>{"use forget";let t=(0,Sc.c)(34),{offer:n,onLink:r,onDismiss:i,className:a}=e,o=mt(),s;t[0]!==o||t[1]!==n.currency||t[2]!==n.periodCreditAmountMinor?(s=So({intl:o,amount:n.periodCreditAmountMinor,currency:n.currency}),t[0]=o,t[1]=n.currency,t[2]=n.periodCreditAmountMinor,t[3]=s):s=t[3];let c=s,l;t[4]===a?l=t[5]:(l=g(G.Card,a),t[4]=a,t[5]=l);let u;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,K.jsx)(`span`,{className:G.Logo,"aria-hidden":`true`,children:(0,K.jsx)(As,{width:16,height:16})}),t[6]=u):u=t[6];let d;t[7]===n.cadence?d=t[8]:(d=(0,K.jsxs)(`div`,{className:G.Identity,children:[u,(0,K.jsx)(`p`,{className:G.SecondaryText,children:(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.benefit_by_cadence`,defaultMessage:`{cadence, select, annual {Annual subscription benefit} other {Monthly subscription benefit}}`,values:{cadence:n.cadence}})})]}),t[7]=n.cadence,t[8]=d);let f;t[9]!==n.cadence||t[10]!==n.planName||t[11]!==c?(f=(0,K.jsx)(`h3`,{className:G.Headline,children:(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.title_by_cadence`,defaultMessage:`{cadence, select, annual {Get {amount} in API credits each year with {planName}} other {Get {amount} in API credits each month with {planName}}}`,values:{amount:c,cadence:n.cadence,planName:n.planName}})}),t[9]=n.cadence,t[10]=n.planName,t[11]=c,t[12]=f):f=t[12];let p;t[13]===n.claimableCreditAmountMinor?p=t[14]:(p=(0,K.jsx)(`p`,{className:G.SecondaryText,children:n.claimableCreditAmountMinor===0?(0,K.jsx)(W,{...wc.trialTiming}):(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.description`,defaultMessage:`Link an API organization to use these credits.`})}),t[13]=n.claimableCreditAmountMinor,t[14]=p);let m;t[15]!==f||t[16]!==p?(m=(0,K.jsxs)(`div`,{className:G.Copy,children:[f,p]}),t[15]=f,t[16]=p,t[17]=m):m=t[17];let h;t[18]!==d||t[19]!==m?(h=(0,K.jsxs)(`div`,{className:G.CardContent,children:[d,m]}),t[18]=d,t[19]=m,t[20]=h):h=t[20];let _;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(_=(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.dismiss`,defaultMessage:`Not now`}),t[21]=_):_=t[21];let v;t[22]===i?v=t[23]:(v=(0,K.jsx)(na,{color:`secondary`,variant:`outline`,size:`xl`,type:`button`,onClick:i,children:_}),t[22]=i,t[23]=v);let y;t[24]===Symbol.for(`react.memo_cache_sentinel`)?(y=(0,K.jsx)(W,{...wc.link}),t[24]=y):y=t[24];let b;t[25]===r?b=t[26]:(b=(0,K.jsx)(na,{color:`primary`,size:`xl`,type:`button`,onClick:r,children:y}),t[25]=r,t[26]=b);let x;t[27]!==v||t[28]!==b?(x=(0,K.jsxs)(`div`,{className:G.CardActions,children:[v,b]}),t[27]=v,t[28]=b,t[29]=x):x=t[29];let S;return t[30]!==x||t[31]!==l||t[32]!==h?(S=(0,K.jsxs)(`section`,{className:l,children:[h,x]}),t[30]=x,t[31]=l,t[32]=h,t[33]=S):S=t[33],S},Ec=e=>{"use forget";let t=(0,Sc.c)(77),{open:n,offer:r,benefit:i,destinationSelector:a,pending:o,failed:s,linked:c,deliveryResult:l,onClose:u,onConfirm:d,portalClassName:f,pluginUrl:p}=e,m=c!==void 0&&c,h=p===void 0?`https://chatgpt.com/plugins/openai-developers`:p,_=mt(),v=r??i;if(v==null)return null;let y=v.claimableCreditAmountMinor===0,b=y?v.periodCreditAmountMinor:v.claimableCreditAmountMinor,x;t[0]!==v.currency||t[1]!==_||t[2]!==b?(x=wo({intl:_,amount:b,currency:v.currency}),t[0]=v.currency,t[1]=_,t[2]=b,t[3]=x):x=t[3];let S=x,C;t[4]!==v.currency||t[5]!==v.periodCreditAmountMinor||t[6]!==_?(C=wo({intl:_,amount:v.periodCreditAmountMinor,currency:v.currency}),t[4]=v.currency,t[5]=v.periodCreditAmountMinor,t[6]=_,t[7]=C):C=t[7];let w=C,T=!y&&v.claimableCreditAmountMinor!==v.periodCreditAmountMinor,E;t[8]!==u||t[9]!==o?(E=e=>{!e&&!o&&u()},t[8]=u,t[9]=o,t[10]=E):E=t[10];let D;t[11]===f?D=t[12]:(D=g(G.DialogPortal,f),t[11]=f,t[12]=D);let O;t[13]!==m||t[14]!==r||t[15]!==d||t[16]!==o?(O=e=>{e.preventDefault(),!o&&!m&&r!=null&&d()},t[13]=m,t[14]=r,t[15]=d,t[16]=o,t[17]=O):O=t[17];let k;t[18]===y?k=t[19]:(k=(0,K.jsx)(Ui.Title,{className:G.DialogTitle,children:y?(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.trial.confirmation_title`,defaultMessage:`Link your API organization`}):(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.claim_title`,defaultMessage:`Claim your credits`})}),t[18]=y,t[19]=k);let A;t[20]===_?A=t[21]:(A=_.formatMessage(wc.close),t[20]=_,t[21]=A);let j;t[22]===Symbol.for(`react.memo_cache_sentinel`)?(j=(0,K.jsx)(Hi,{"aria-hidden":!0,width:16,height:16}),t[22]=j):j=t[22];let M;t[23]!==o||t[24]!==A?(M=(0,K.jsx)(Ui.Close,{children:(0,K.jsx)(na,{color:`secondary`,variant:`ghost`,size:`sm`,uniform:!0,type:`button`,disabled:o,"aria-label":A,children:j})}),t[23]=o,t[24]=A,t[25]=M):M=t[25];let ee;t[26]!==M||t[27]!==k?(ee=(0,K.jsxs)(Ui.Header,{children:[k,M]}),t[26]=M,t[27]=k,t[28]=ee):ee=t[28];let te=m&&G.SuccessBody,N;t[29]===te?N=t[30]:(N=g(G.DialogBody,te),t[29]=te,t[30]=N);let P;t[31]!==S||t[32]!==l?.outcome||t[33]!==a||t[34]!==v.cadence||t[35]!==s||t[36]!==T||t[37]!==y||t[38]!==m||t[39]!==r||t[40]!==w?(P=m&&r!=null?(0,K.jsxs)(K.Fragment,{children:[(0,K.jsxs)(`div`,{className:G.SuccessArtwork,"aria-hidden":`true`,children:[(0,K.jsx)(`div`,{className:G.SuccessLogo,children:(0,K.jsx)(As,{width:56,height:56})}),(0,K.jsx)(`img`,{className:G.SuccessCheck,src:vc,alt:``,width:32,height:32})]}),(0,K.jsxs)(Ui.Description,{className:G.SuccessMessage,children:[(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.success.linked`,defaultMessage:`Your API organization is linked!`}),(0,K.jsx)(`br`,{}),(0,K.jsx)(`span`,{role:`status`,children:l?.outcome===`issued`||l?.outcome===`already_issued`?(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.success.delivered`,defaultMessage:`Your API credits have been delivered to {organizationName}.`,values:{organizationName:r.organizationName}}):y?(0,K.jsx)(W,{...wc.trialTiming}):l?.outcome===`no_credit`?(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.success.no_credit`,defaultMessage:`No additional API credits are available.`}):(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.success.processing`,defaultMessage:`Your credits will appear in {organizationName} once processing is complete.`,values:{organizationName:r.organizationName}})})]}),(0,K.jsx)(`p`,{className:G.SuccessDescription,children:(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.success.explore_with_platform_link`,defaultMessage:`Explore models, create a prototype, and bring your ideas to life on the <platformLink>API Platform</platformLink>.`,values:{platformLink:bc}})})]}):(0,K.jsxs)(K.Fragment,{children:[(a!=null||r==null)&&(0,K.jsx)(Ui.Description,{visuallyHidden:!0,children:(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.description`,defaultMessage:`Link an API organization to use these credits.`})}),(0,K.jsxs)(`div`,{className:G.CreditSummary,children:[(0,K.jsxs)(`div`,{className:G.CreditCopy,children:[(0,K.jsx)(`p`,{className:G.CreditAmount,children:S}),(0,K.jsx)(`p`,{className:G.SummaryDescription,children:T?(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.partial_recurring_summary`,defaultMessage:`You’ll receive {amount} in API credits at the start of each billing cycle. Link an API organization to use these credits.`,values:{amount:w}}):(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.credit_summary_by_cadence`,defaultMessage:`{cadence, select, annual {In free API credits per year} other {In free API credits per month}}`,values:{cadence:v.cadence}})})]}),(0,K.jsx)(Ds,{"aria-hidden":!0,width:20,height:20,className:G.InfoIcon})]}),T&&(0,K.jsx)(`p`,{className:G.SummaryDescription,children:(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.first_grant_billing_cycle`,defaultMessage:`Your first credit grant is calculated based on your billing cycle.`})}),a,(a==null&&r!=null||y)&&(0,K.jsxs)(Ui.Description,{className:G.DestinationDescription,children:[a==null&&r!=null&&(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.destination`,defaultMessage:`These credits will be added to {organizationName} on <platformLink>platform.openai.com</platformLink>. You can also create a new organization there.`,values:{organizationName:r.organizationName,platformLink:xc}}),y&&(0,K.jsxs)(K.Fragment,{children:[` `,(0,K.jsx)(W,{...wc.trialTiming})]})]}),s&&(0,K.jsx)(`p`,{role:`alert`,className:G.Error,children:(0,K.jsx)(W,{...wc.unavailable})})]}),t[31]=S,t[32]=l?.outcome,t[33]=a,t[34]=v.cadence,t[35]=s,t[36]=T,t[37]=y,t[38]=m,t[39]=r,t[40]=w,t[41]=P):P=t[41];let ne;t[42]!==N||t[43]!==P?(ne=(0,K.jsx)(Ui.Body,{className:N,children:P}),t[42]=N,t[43]=P,t[44]=ne):ne=t[44];let re;t[45]===m?re=t[46]:(re=m?(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.success.done`,defaultMessage:`Done`}):(0,K.jsx)(W,{...wc.cancel}),t[45]=m,t[46]=re);let F;t[47]!==o||t[48]!==re?(F=(0,K.jsx)(Ui.Close,{children:(0,K.jsx)(na,{color:`primary`,variant:`outline`,pill:!1,size:`lg`,type:`button`,disabled:o,children:re})}),t[47]=o,t[48]=re,t[49]=F):F=t[49];let I=m?`button`:`submit`,ie=o||!m&&r==null,L;t[50]!==m||t[51]!==h?(L=m?()=>{window.open(h,`_blank`,`noopener,noreferrer`)}:void 0,t[50]=m,t[51]=h,t[52]=L):L=t[52];let R;t[53]!==y||t[54]!==m?(R=m?(0,K.jsxs)(K.Fragment,{children:[(0,K.jsx)(W,{id:`chatgpt.api_linking_promo.success.start_building`,defaultMessage:`Start building with the Plugin`}),(0,K.jsx)(ws,{"aria-hidden":!0,width:18,height:18})]}):(0,K.jsx)(W,{...y?wc.link:wc.claim}),t[53]=y,t[54]=m,t[55]=R):R=t[55];let z;t[56]!==o||t[57]!==I||t[58]!==ie||t[59]!==L||t[60]!==R?(z=(0,K.jsx)(na,{color:`primary`,pill:!1,size:`lg`,type:I,loading:o,disabled:ie,onClick:L,children:R}),t[56]=o,t[57]=I,t[58]=ie,t[59]=L,t[60]=R,t[61]=z):z=t[61];let ae;t[62]!==F||t[63]!==z?(ae=(0,K.jsxs)(Ui.Footer,{className:G.DialogActions,children:[F,z]}),t[62]=F,t[63]=z,t[64]=ae):ae=t[64];let B;t[65]!==ee||t[66]!==ne||t[67]!==ae||t[68]!==O?(B=(0,K.jsxs)(Ui.Form,{className:G.DialogForm,onSubmit:O,children:[ee,ne,ae]}),t[65]=ee,t[66]=ne,t[67]=ae,t[68]=O,t[69]=B):B=t[69];let oe;t[70]!==B||t[71]!==D?(oe=(0,K.jsx)(Ui.Content,{className:G.Dialog,maxWidth:478,portalClassName:D,backdrop:`dim`,children:B}),t[70]=B,t[71]=D,t[72]=oe):oe=t[72];let V;return t[73]!==n||t[74]!==oe||t[75]!==E?(V=(0,K.jsx)(Ui,{open:n,onOpenChange:E,children:oe}),t[73]=n,t[74]=oe,t[75]=E,t[76]=V):V=t[76],V},Dc=e=>({organizationId:e,epoch:Symbol(),dismissed:!1,open:!1,pending:!1,failed:!1,linked:!1,deliveryResult:void 0}),Oc=e=>{"use forget";let t=(0,Sc.c)(40),{accountId:n,benefit:r,offer:i,onLink:a,className:o,portalClassName:s,destinationSelector:c,pluginUrl:l}=e,u=i?.organizationId??null,d;t[0]===u?d=t[1]:(d=()=>Dc(u),t[0]=u,t[1]=d);let[f,p]=(0,Cc.useState)(d),m=(0,Cc.useRef)(null);if(f.organizationId!==u)return p({...Dc(u),open:f.open,dismissed:f.dismissed}),null;let h;t[2]===f.epoch?h=t[3]:(h=e=>{p(t=>t.epoch===f.epoch?{...t,...e}:t)},t[2]=f.epoch,t[3]=h);let g=h,_;t[4]===f.epoch?_=t[5]:(_=()=>m.current?.epoch===f.epoch&&m.current.inFlight,t[4]=f.epoch,t[5]=_);let v=_,y;t[6]!==n||t[7]!==f.epoch||t[8]!==v||t[9]!==i||t[10]!==a||t[11]!==g?(y=async()=>{if(v()||i==null)return;m.current?.epoch!==f.epoch&&(m.current={epoch:f.epoch,operationId:null,inFlight:!1});let e=m.current;e.inFlight=!0,g({pending:!0,failed:!1});try{e.operationId===null&&(e.operationId=crypto.randomUUID());let t=await a({sourceAccountId:n,destinationAccountId:i.organizationId,operationId:e.operationId});g({linked:!0,deliveryResult:t??null})}catch{g({failed:!0})}e.inFlight=!1,g({pending:!1})},t[6]=n,t[7]=f.epoch,t[8]=v,t[9]=i,t[10]=a,t[11]=g,t[12]=y):y=t[12];let b=y;if(f.dismissed)return null;let x;t[13]!==r||t[14]!==o||t[15]!==f.linked||t[16]!==g?(x=!f.linked&&(0,K.jsx)(Tc,{offer:r,className:o,onDismiss:()=>g({dismissed:!0}),onLink:()=>{g({failed:!1,open:!0})}}),t[13]=r,t[14]=o,t[15]=f.linked,t[16]=g,t[17]=x):x=t[17];let S;t[18]!==f.linked||t[19]!==v||t[20]!==g?(S=()=>{v()||(f.linked?g({dismissed:!0}):g({open:!1}))},t[18]=f.linked,t[19]=v,t[20]=g,t[21]=S):S=t[21];let C;t[22]===b?C=t[23]:(C=()=>{b()},t[22]=b,t[23]=C);let w;t[24]!==r||t[25]!==c||t[26]!==f.deliveryResult||t[27]!==f.failed||t[28]!==f.linked||t[29]!==f.open||t[30]!==f.pending||t[31]!==i||t[32]!==l||t[33]!==s||t[34]!==S||t[35]!==C?(w=(0,K.jsx)(Ec,{open:f.open,offer:i,benefit:r,destinationSelector:c,pending:f.pending,failed:f.failed,linked:f.linked,deliveryResult:f.deliveryResult,onClose:S,onConfirm:C,portalClassName:s,pluginUrl:l}),t[24]=r,t[25]=c,t[26]=f.deliveryResult,t[27]=f.failed,t[28]=f.linked,t[29]=f.open,t[30]=f.pending,t[31]=i,t[32]=l,t[33]=s,t[34]=S,t[35]=C,t[36]=w):w=t[36];let T;return t[37]!==x||t[38]!==w?(T=(0,K.jsxs)(K.Fragment,{children:[x,w]}),t[37]=x,t[38]=w,t[39]=T):T=t[39],T},kc=e=>{"use forget";let t=(0,Sc.c)(11),n,r,i,a,o;t[0]===e?(n=t[1],r=t[2],i=t[3],a=t[4],o=t[5]):({enabled:i,accountId:n,benefit:r,offer:a,...o}=e,t[0]=e,t[1]=n,t[2]=r,t[3]=i,t[4]=a,t[5]=o);let s=a??r;if(!i||s==null)return null;let c;return t[6]!==n||t[7]!==s||t[8]!==a||t[9]!==o?(c=(0,K.jsx)(Oc,{accountId:n,benefit:s,offer:a,...o},n),t[6]=n,t[7]=s,t[8]=a,t[9]=o,t[10]=c):c=t[10],c}}));function jc(e){let t=/^\+?(\d*)(?:\.(\d*))?$/.exec(e);if(t==null||!(t[1]||t[2]))return null;let n=t[2]??``;if(/[^0]/.test(n.slice(2)))return null;let r=BigInt((t[1]||`0`)+n.padEnd(2,`0`).slice(0,2));return r<=BigInt(2**53-1)?Number(r):null}function Mc(e,t=Date.now()){if(e==null||e.currency!==`USD`||!Number.isFinite(Date.parse(e.expires_at))||Date.parse(e.expires_at)<=t)return null;let n=jc(e.period_credit_amount_usd);return n==null||n<=0?null:{periodCreditAmountMinor:n,currency:e.currency,cadence:e.cadence}}function Nc({preview:e,planName:t,now:n=Date.now()}){let{offer:r}=e,i=Mc(r,n);if(!e.eligible||e.ineligibility_reason!=null||r==null||i==null)return null;let a=jc(r.claimable_credit_amount_usd);return a==null||a<0||a>i.periodCreditAmountMinor?null:{...i,claimableCreditAmountMinor:a,planName:t}}function Pc({destination:e,...t}){let n=Nc(t),{offer:r}=t.preview;return n==null||r==null?null:{...n,expiresAt:r.expires_at,organizationId:e.destination_account_id,organizationName:e.display_name}}function Fc(e,t){return t==null?e.length===1?e[0]??null:null:e.find(e=>e.destination_account_id===t)??null}function Ic(e,t){return e.expiresAt!=null&&e.expiresAt===t.expiresAt&&e.claimableCreditAmountMinor===0==(t.claimableCreditAmountMinor===0)&&e.periodCreditAmountMinor===t.periodCreditAmountMinor&&e.currency===t.currency&&e.cadence===t.cadence&&e.organizationId===t.organizationId}var Lc=e((()=>{}));function Rc({accountId:e,transport:t}){return{links:{queryKey:[`api-linking-promo`,e,`links`],queryFn:()=>t.readLinks({path:{account_id:e},query:{destination_types:[`api_org`]}}),staleTime:0,refetchOnMount:`always`},preview:{queryKey:[`api-linking-promo`,e,zc],queryFn:()=>t.preview({path:{account_id:e,program_id:zc},query:{destination_type:`api_org`}}),staleTime:0,refetchOnMount:`always`},discovery:{queryKey:[`api-linking-promo`,e,`destinations`],queryFn:()=>t.discover({query:{account_id:e,destination_type:`api_org`}}),staleTime:0,refetchOnMount:`always`}}}var zc,Bc=e((()=>{zc=`chatgpt_api_credits_promo`}));function Vc({enabled:e,...t}){return e?(0,Gc.jsx)(Hc,{...t},t.accountId):null}function Hc({Observer:e,...t}){return(0,Gc.jsx)(e,{queries:Rc(t),children:e=>(0,Gc.jsx)(Uc,{...t,observer:e})})}function Uc({accountId:e,planName:t,transport:n,observer:r,children:i}){let[a,o]=(0,Wc.useState)(null),[s,c]=(0,Wc.useState)(null),[l,u]=(0,Wc.useState)(!1),[d,f]=(0,Wc.useState)(null),[,p]=(0,Wc.useState)(0),m=(0,Wc.useRef)(!0),h=(0,Wc.useRef)(!1),g=(0,Wc.useRef)(null),_=(0,Wc.useRef)(r);_.current=r,(0,Wc.useEffect)(()=>(m.current=!0,()=>{m.current=!1}),[]);let v=r.preview?.offer?.expires_at??r.preview?.benefit?.expires_at;(0,Wc.useEffect)(()=>{if(v==null||s!=null)return;let e=Date.parse(v)-Date.now();if(!Number.isFinite(e)||e<=0)return;let t,n=()=>{let e=Date.parse(v)-Date.now();if(e>0){t=setTimeout(n,Math.min(e+1,2147483647));return}p(e=>e+1),_.current.refreshPreview().catch(()=>{})};return n(),()=>clearTimeout(t)},[v,s]);let y=r.destinations??[],b=r.isError?null:r.links?.find(e=>e.state!==`unlinked`)??null,x=s?.destination??Fc(y,a),S=s?.offer??d??(r.preview!=null&&x!=null?Pc({preview:r.preview,destination:x,planName:t}):null),C=s?.offer??d??(r.preview==null?null:Nc({preview:r.preview,planName:t})),w=`ready`;return l||b!=null?w=`linked`:s!=null||d!=null?w=`ready`:r.isError&&C!=null?w=`error`:r.isLoading||r.links==null||r.preview==null||r.destinations==null?w=`loading`:C==null?w=`ineligible`:y.length===0?w=`no-organization`:x==null?w=`select-organization`:S??(w=`ineligible`),i({link:b,linkedBenefit:Mc(r.preview?.benefit),planName:t,status:w,destinations:y,selectedDestination:x,canSelectDestination:!h.current&&g.current==null,benefit:C,offer:w===`ready`||w===`linked`?S:null,onRetry:r.refetch,onSelectDestination:e=>{h.current||g.current!=null||y.some(t=>t.destination_account_id===e)&&o(e)},onLink:async i=>{if(!m.current||h.current||S==null||i.sourceAccountId!==e||i.destinationAccountId!==S.organizationId)throw Error(`API credit promo claim is unavailable`);let a=g.current;if(a!=null&&(a.claim.operationId!==i.operationId||a.claim.destinationAccountId!==i.destinationAccountId))throw Error(`Retry the original API credit promo operation`);h.current=!0,f(S);try{if(a==null){if(x==null)throw Error(`Select an API organization`);let e=Pc({preview:await r.refreshPreview(),destination:x,planName:t});if(!m.current||e==null||!Ic(S,e))throw Error(`API credit promo offer changed; review it again`);g.current={claim:{...i},offer:e,destination:x},c(g.current)}if(!m.current)throw Error(`API credit promo account changed`);let o=await n.link({parameters:{path:{account_id:e}},requestBody:{operation_id:i.operationId,destination_type:`api_org`,destination_account_id:i.destinationAccountId}});if(o.source_type!==`chatgpt_account`||o.source_account_id!==e||o.destination_type!==`api_org`||o.destination_account_id!==i.destinationAccountId||o.state!==`active`)throw Error(`API credit promo link is unconfirmed`);return m.current&&(u(!0),Promise.resolve().then(()=>r.refetch()).catch(()=>{})),o.delivery_result}finally{h.current=!1,m.current&&f(null)}}})}var Wc,Gc,Kc=e((()=>{Wc=n(at(),1),Lc(),Bc(),Gc=qe()})),qc,Jc,Yc=e((()=>{qc=`kZrfwG_Badge`,Jc={Badge:qc}})),Xc,Zc,Qc=e((()=>{Ne(),Aa(),Va(),Yc(),Xc=qe(),Zc=({children:e,className:t,variant:n=`soft`,color:r=`secondary`,size:i=`sm`,pill:a=La.pill})=>(0,Xc.jsx)(`div`,{className:g(Jc.Badge,t),"data-color":r,"data-size":i,"data-pill":a?``:void 0,"data-variant":n,children:ba(e)})})),$c=e((()=>{Qc()})),el,tl,nl,rl,il,al,ol=e((()=>{el=`_9tw0Lq_RadioGroup`,tl=`_9tw0Lq_RadioIndicator`,nl=`_9tw0Lq_RadioIndicatorWrapper`,rl=`_9tw0Lq_RadioItem`,il=`_9tw0Lq_RadioLabel`,al={"fade-in":`_9tw0Lq_fade-in`,RadioGroup:el,RadioIndicator:tl,RadioIndicatorWrapper:nl,RadioItem:rl,RadioLabel:il,"scale-in":`_9tw0Lq_scale-in`}})),sl,cl,ll,ul,dl,fl,pl=e((()=>{Ne(),ao(),sl=n(at(),1),ol(),cl=qe(),ll=(0,sl.createContext)(null),ul=()=>{let e=(0,sl.use)(ll);if(!e)throw Error(`RadioGroup components must be wrapped in <RadioGroup />`);return e},dl=({onChange:e,children:t,className:n,direction:r=`row`,disabled:i=!1,__isWidget:a,...o})=>{let s=(0,sl.useMemo)(()=>({disabled:i,direction:r}),[i,r]);return(0,cl.jsx)(ll,{value:s,children:(0,cl.jsx)(Vn,{className:g(al.RadioGroup,n),"data-direction":r,"data-w-component":a?`radio-group`:void 0,onValueChange:e,disabled:i,...o,children:t})})},fl=({value:e,disabled:t=!1,id:n,required:r,children:i,className:a,block:o=!1,...s})=>{let{disabled:c}=ul(),l=c||t,u=(0,sl.useId)(),d=n??`${e}-${u}`;return(0,cl.jsx)(`div`,{className:`flex`,...s,children:(0,cl.jsxs)(`label`,{htmlFor:d,className:g(al.RadioLabel,a),"data-disabled":l?``:void 0,"data-block":o?``:void 0,onMouseDown:e=>{!e.defaultPrevented&&e.detail>1&&e.preventDefault()},children:[(0,cl.jsx)(`div`,{className:al.RadioIndicatorWrapper,children:(0,cl.jsx)(kn,{id:d,value:e,disabled:l,required:r,className:al.RadioItem,children:(0,cl.jsx)(Nn,{className:al.RadioIndicator})})}),i]})})},dl.Item=fl})),ml=e((()=>{pl()}));function hl(e){return(0,bl.jsx)(dl.Item,{value:e.destination_account_id,className:G.OrganizationOption,block:!0,children:(0,bl.jsx)(`span`,{className:G.OrganizationName,children:e.display_name})},e.destination_account_id)}function gl(e){return(0,bl.jsx)(`a`,{href:`https://platform.openai.com`,target:`_blank`,rel:`noopener noreferrer`,className:G.PlatformLink,children:e})}function _l(e){return(0,bl.jsx)(`a`,{className:G.PlatformLink,href:`https://help.openai.com/`,target:`_blank`,rel:`noopener noreferrer`,children:e})}var vl,yl,bl,xl,Sl,Cl=e((()=>{vl=pt(),$c(),Ei(),ml(),Ne(),yl=n(at(),1),rt(),Co(),Ac(),hc(),bl=qe(),xl=e=>{"use forget";let t=(0,vl.c)(42),{accountId:n,state:r,className:i,portalClassName:a,placement:o,pluginUrl:s}=e,c=o===void 0?`promo`:o,l=mt(),u=(0,yl.useId)();if(c===`linked`){let e;return t[0]!==i||t[1]!==r.link||t[2]!==r.linkedBenefit||t[3]!==r.planName?(e=r.link==null?null:(0,bl.jsx)(Sl,{link:r.link,benefit:r.linkedBenefit,planName:r.planName,className:i}),t[0]=i,t[1]=r.link,t[2]=r.linkedBenefit,t[3]=r.planName,t[4]=e):e=t[4],e}let d;t[5]===l?d=t[6]:(d=l.formatMessage({id:`chatgpt.api_linking_promo.organization.choose`,defaultMessage:`Choose the API organization where you want to apply these credits.`}),t[5]=l,t[6]=d);let f=d,p;t[7]===f?p=t[8]:(p=(0,bl.jsx)(`legend`,{children:f}),t[7]=f,t[8]=p);let m=r.selectedDestination?.destination_account_id??``,h=!r.canSelectDestination,_=r.onSelectDestination,v;t[9]===r.destinations?v=t[10]:(v=r.destinations.map(hl),t[9]=r.destinations,t[10]=v);let y;t[11]!==f||t[12]!==u||t[13]!==r.onSelectDestination||t[14]!==m||t[15]!==h||t[16]!==v?(y=(0,bl.jsx)(dl,{name:u,"aria-label":f,direction:`col`,className:G.OrganizationOptions,value:m,disabled:h,onChange:_,children:v}),t[11]=f,t[12]=u,t[13]=r.onSelectDestination,t[14]=m,t[15]=h,t[16]=v,t[17]=y):y=t[17];let b;t[18]!==p||t[19]!==y?(b=(0,bl.jsxs)(`fieldset`,{className:G.OrganizationPicker,children:[p,y]}),t[18]=p,t[19]=y,t[20]=b):b=t[20];let x=b;if(r.status===`ready`||r.status===`select-organization`||r.status===`linked`){let e=r.destinations.length>1||r.selectedDestination==null?x:void 0,o;return t[21]!==n||t[22]!==i||t[23]!==s||t[24]!==a||t[25]!==r.benefit||t[26]!==r.offer||t[27]!==r.onLink||t[28]!==e?(o=(0,bl.jsx)(kc,{enabled:!0,accountId:n,benefit:r.benefit,offer:r.offer,onLink:r.onLink,className:i,portalClassName:a,pluginUrl:s,destinationSelector:e}),t[21]=n,t[22]=i,t[23]=s,t[24]=a,t[25]=r.benefit,t[26]=r.offer,t[27]=r.onLink,t[28]=e,t[29]=o):o=t[29],o}if(r.status!==`error`&&r.status!==`no-organization`)return null;let S;t[30]===i?S=t[31]:(S=g(G.Card,i),t[30]=i,t[31]=S);let C;t[32]===Symbol.for(`react.memo_cache_sentinel`)?(C=(0,bl.jsx)(`h3`,{className:G.Headline,children:(0,bl.jsx)(W,{id:`chatgpt.api_linking_promo.discovery.title`,defaultMessage:`API credits with your subscription`})}),t[32]=C):C=t[32];let w;t[33]===r.status?w=t[34]:(w=(0,bl.jsxs)(`div`,{className:G.CardContent,children:[C,r.status===`error`?(0,bl.jsx)(`p`,{className:G.SecondaryText,role:`alert`,children:(0,bl.jsx)(W,{id:`chatgpt.api_linking_promo.discovery.error`,defaultMessage:`We couldn’t load your API credit offer. Please try again.`})}):(0,bl.jsx)(`p`,{className:G.SecondaryText,children:(0,bl.jsx)(W,{id:`chatgpt.api_linking_promo.discovery.no_organization`,defaultMessage:`Create an organization on <platformLink>platform.openai.com</platformLink>, then refresh to link it and claim your API credits.`,values:{platformLink:gl}})})]}),t[33]=r.status,t[34]=w);let T;t[35]===Symbol.for(`react.memo_cache_sentinel`)?(T=(0,bl.jsx)(W,{id:`chatgpt.api_linking_promo.discovery.refresh`,defaultMessage:`Refresh`}),t[35]=T):T=t[35];let E;t[36]===r.onRetry?E=t[37]:(E=(0,bl.jsx)(`div`,{className:G.CardActions,children:(0,bl.jsx)(na,{color:`secondary`,variant:`outline`,size:`xl`,onClick:r.onRetry,children:T})}),t[36]=r.onRetry,t[37]=E);let D;return t[38]!==S||t[39]!==w||t[40]!==E?(D=(0,bl.jsxs)(`section`,{className:S,children:[w,E]}),t[38]=S,t[39]=w,t[40]=E,t[41]=D):D=t[41],D},Sl=e=>{"use forget";let t=(0,vl.c)(28),{link:n,benefit:r,planName:i,className:a}=e,o=mt(),s=n.state===`active`,c=s&&r!=null,l=n.destination_display_name||n.destination_account_id,u;t[0]===a?u=t[1]:(u=g(G.LinkedSection,a),t[0]=a,t[1]=u);let d;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,bl.jsx)(`h3`,{className:G.LinkedHeading,children:(0,bl.jsx)(W,{id:`chatgpt.api_linking_promo.linked.heading`,defaultMessage:`API subscription benefit`})}),t[2]=d):d=t[2];let f;t[3]!==r||t[4]!==c||t[5]!==o||t[6]!==i?(f=(0,bl.jsx)(`p`,{className:G.LinkedTitle,children:c?(0,bl.jsx)(W,{id:`chatgpt.api_linking_promo.linked.benefit`,defaultMessage:`{amount} in API credits {cadence, select, annual {each year} other {each month}} with {planName}`,values:{amount:So({intl:o,amount:r.periodCreditAmountMinor,currency:r.currency}),cadence:r.cadence,planName:i}}):(0,bl.jsx)(W,{id:`chatgpt.api_linking_promo.linked.organization`,defaultMessage:`API organization`})}),t[3]=r,t[4]=c,t[5]=o,t[6]=i,t[7]=f):f=t[7];let p;t[8]===n.destination_account_id?p=t[9]:(p=e=>(0,bl.jsx)(`a`,{className:G.PlatformLink,href:`https://platform.openai.com/settings/organization/billing/overview?with_org=${encodeURIComponent(n.destination_account_id)}`,target:`_blank`,rel:`noopener noreferrer`,children:e}),t[8]=n.destination_account_id,t[9]=p);let m;t[10]!==n.state||t[11]!==l||t[12]!==p?(m=(0,bl.jsx)(`p`,{className:G.LinkedDescription,children:(0,bl.jsx)(W,{id:`chatgpt.api_linking_promo.linked.description`,defaultMessage:`Your API org “<organizationLink>{organizationName}</organizationLink>” is {state, select, active {connected} other {connecting}}. To change organizations or disconnect, <supportLink>contact support</supportLink>.`,values:{organizationName:l,state:n.state,organizationLink:p,supportLink:_l}})}),t[10]=n.state,t[11]=l,t[12]=p,t[13]=m):m=t[13];let h;t[14]!==f||t[15]!==m?(h=(0,bl.jsxs)(`div`,{className:G.LinkedCopy,children:[f,m]}),t[14]=f,t[15]=m,t[16]=h):h=t[16];let _=s?`success`:`secondary`,v=c?`active`:s?`connected`:`pending`,y;t[17]===v?y=t[18]:(y=(0,bl.jsx)(W,{id:`chatgpt.api_linking_promo.linked.status`,defaultMessage:`{status, select, active {Active} connected {Connected} other {Pending}}`,values:{status:v}}),t[17]=v,t[18]=y);let b;t[19]!==_||t[20]!==y?(b=(0,bl.jsx)(Zc,{color:_,children:y}),t[19]=_,t[20]=y,t[21]=b):b=t[21];let x;t[22]!==b||t[23]!==h?(x=(0,bl.jsxs)(`div`,{className:G.LinkedCard,children:[h,b]}),t[22]=b,t[23]=h,t[24]=x):x=t[24];let S;return t[25]!==u||t[26]!==x?(S=(0,bl.jsxs)(`section`,{className:u,children:[d,x]}),t[25]=u,t[26]=x,t[27]=S):S=t[27],S}})),wl=e((()=>{Ac(),Kc(),Cl(),Bc()})),Tl,El,Dl,Ol,kl,Al=e((()=>{Tl=pt(),wl(),dt(),Gi(),p(),u(),El=qe(),Dl={readLinks:e=>S.safeGet(`/product-account-links/accounts/{account_id}`,{parameters:e}),preview:e=>S.safeGet(`/product-account-links/accounts/{account_id}/benefits/{program_id}`,{parameters:e}),discover:e=>S.safeGet(`/product-account-links/discovery`,{parameters:e}),link:e=>S.safePost(`/product-account-links/accounts/{account_id}`,e)},Ol=e=>{"use forget";let t=(0,Tl.c)(16),{queries:n,children:r}=e,i=$e(),a=tt(n.preview),o=tt(n.discovery),s=tt(n.links),c=s.data?.links,l=o.data?.destinations,u=a.isPending||o.isPending||s.isPending,d=a.isError||o.isError||s.isError,f;t[0]!==n.preview||t[1]!==i?(f=()=>i.fetchQuery(n.preview),t[0]=n.preview,t[1]=i,t[2]=f):f=t[2];let p;t[3]!==o||t[4]!==s||t[5]!==a?(p=()=>Promise.all([a.refetch(),o.refetch(),s.refetch()]),t[3]=o,t[4]=s,t[5]=a,t[6]=p):p=t[6];let m;return t[7]!==r||t[8]!==a.data||t[9]!==c||t[10]!==l||t[11]!==u||t[12]!==d||t[13]!==f||t[14]!==p?(m=r({links:c,preview:a.data,destinations:l,isLoading:u,isError:d,refreshPreview:f,refetch:p}),t[7]=r,t[8]=a.data,t[9]=c,t[10]=l,t[11]=u,t[12]=d,t[13]=f,t[14]=p,t[15]=m):m=t[15],m},kl=e=>{"use forget";let t=(0,Tl.c)(9),{accountId:n,planName:r,className:i,placement:a}=e,o;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(o=B(`3209782209`)&&B(`3365903835`),t[0]=o):o=t[0];let s=o;if(!s)return null;let c;t[1]!==n||t[2]!==i||t[3]!==a?(c=e=>(0,El.jsx)(xl,{accountId:n,state:e,className:i,placement:a}),t[1]=n,t[2]=i,t[3]=a,t[4]=c):c=t[4];let l;return t[5]!==n||t[6]!==r||t[7]!==c?(l=(0,El.jsx)(Bi,{children:(0,El.jsx)(Vc,{enabled:s,accountId:n,planName:r,transport:Dl,Observer:Ol,children:c})}),t[5]=n,t[6]=r,t[7]=c,t[8]=l):l=t[8],l}})),jl,Ml=e((()=>{jl=`payment-methods`,`${jl}`})),Nl,Pl,Fl,Il,Ll=e((()=>{Nl=pt(),Pl=n(at()),nt(),Ml(),Fl=qe(),Il=e=>{"use forget";let t=(0,Nl.c)(8),{children:n,workspaceId:r}=e,i=(0,Pl.useRef)(null),{hash:a,key:o}=Ke(),s;t[0]===a?s=t[1]:(s=()=>{a===`#payment-methods`&&i.current?.scrollIntoView({behavior:`instant`,block:`start`})},t[0]=a,t[1]=s);let c;t[2]!==a||t[3]!==o||t[4]!==r?(c=[a,o,r],t[2]=a,t[3]=o,t[4]=r,t[5]=c):c=t[5],(0,Pl.useEffect)(s,c);let l;return t[6]===n?l=t[7]:(l=(0,Fl.jsx)(`div`,{id:jl,ref:i,children:n}),t[6]=n,t[7]=l),l}}));function Rl(e){return e.type===`seat_cap`}var zl,Bl,Vl,Hl=e((()=>{zl=pt(),Ne(),rt(),Bl=qe(),Vl=e=>{"use forget";let t=(0,zl.c)(16),{className:n,activeBenefits:r,currency:i,standardSeatPrice:a,premiumSeatPrice:o}=e,s=mt();if(!r?.length)return null;let c;t[0]===n?c=t[1]:(c=g(`flex flex-col gap-2`,n),t[0]=n,t[1]=c);let l;if(t[2]!==r||t[3]!==i||t[4]!==s||t[5]!==o||t[6]!==a){let e;t[8]!==i||t[9]!==s||t[10]!==o||t[11]!==a?(e=(e,t)=>(0,Bl.jsxs)(`div`,{className:`bg-token-theme-blue-background text-token-theme-blue-text-on-background flex flex-col gap-2 rounded-lg p-3 text-sm`,children:[(0,Bl.jsx)(`div`,{className:`font-medium`,children:(0,Bl.jsx)(W,{id:`organizationBillingInfo.activeBenefits.title`,defaultMessage:`Active promotion`})}),(0,Bl.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,Bl.jsx)(`ul`,{className:`list-disc ps-5`,children:e.benefits.map(t=>{if(t.calculation.type!==`percentage_off`)return null;let n=t.limits?.find(Rl)?.max_discounted_seat_equivalents,r=t.target.plan_name===`chatgptteamplan`?a:t.target.plan_name===`self_serve_business_prolite`?o:null,c=n!=null&&r!=null&&i!=null?s.formatNumber(n*r,{style:`currency`,currency:i,minimumFractionDigits:0}):null;return(0,Bl.jsx)(`li`,{children:(0,Bl.jsx)(W,{id:`organizationBillingInfo.activeBenefits.productSummary`,defaultMessage:`{discountPercentage} off {seatType, select, chatgptteamplan {Standard seats} self_serve_business_prolite {Premium seats} other {eligible seats}} for {durationUnit, select, invoice {one invoice} year {{numPeriods, plural, one {# year} other {# years}}} other {{numPeriods, plural, one {# month} other {# months}}}}{capType, select, amount {, up to {amount} per invoice} seats {, up to the full price of {seatCap, plural, one {# seat} other {# seats}} per invoice} other {}}.`,values:{discountPercentage:s.formatNumber(Number(t.calculation.rate),{style:`percent`,maximumFractionDigits:20}),seatType:t.target.plan_name,durationUnit:e.application.type===`one_time`?`invoice`:e.application.billing_period,numPeriods:e.application.type===`recurring`?e.application.num_periods:1,capType:n==null?`none`:c==null?`seats`:`amount`,amount:c,seatCap:n??0}})},t.target.plan_name)})}),e.discount_starts_at!=null&&e.discount_expires_at!=null?(0,Bl.jsx)(`p`,{children:(0,Bl.jsx)(W,{id:`organizationBillingInfo.activeBenefits.dates`,defaultMessage:`Applied on {startDate}. Ends on {endDate}.`,values:{startDate:s.formatDate(e.discount_starts_at,{year:`numeric`,month:`short`,day:`numeric`}),endDate:s.formatDate(e.discount_expires_at,{year:`numeric`,month:`short`,day:`numeric`})}})}):e.discount_expires_at==null?e.discount_starts_at==null?null:(0,Bl.jsx)(`p`,{children:(0,Bl.jsx)(W,{id:`organizationBillingInfo.activeBenefits.startDate`,defaultMessage:`Applied on {startDate}`,values:{startDate:s.formatDate(e.discount_starts_at,{year:`numeric`,month:`short`,day:`numeric`})}})}):(0,Bl.jsx)(`p`,{children:(0,Bl.jsx)(W,{id:`organizationBillingInfo.activeBenefits.endDate`,defaultMessage:`Ends on {endDate}`,values:{endDate:s.formatDate(e.discount_expires_at,{year:`numeric`,month:`short`,day:`numeric`})}})}),e.will_renew===!1&&(0,Bl.jsx)(`p`,{children:(0,Bl.jsx)(W,{id:`organizationBillingInfo.activeBenefits.noAutoRenewal`,defaultMessage:`Your subscription will not renew automatically`})})]})]},t),t[8]=i,t[9]=s,t[10]=o,t[11]=a,t[12]=e):e=t[12],l=r.map(e),t[2]=r,t[3]=i,t[4]=s,t[5]=o,t[6]=a,t[7]=l}else l=t[7];let u;return t[13]!==c||t[14]!==l?(u=(0,Bl.jsx)(`div`,{className:c,children:l}),t[13]=c,t[14]=l,t[15]=u):u=t[15],u}})),Ul,Wl=e((()=>{ke(),lt(),Ul=V(()=>st(()=>import(`./b6317585-f0lv7axkzcox4lsn.js`).then(e=>e.BusinessPremiumSeatChangeBillingScheduleModal),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13]))),V(()=>st(()=>import(`./b6317585-f0lv7axkzcox4lsn.js`).then(e=>e.BusinessPremiumSeatChangeBillingScheduleDialog),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13])))}));function Gl(e){"use forget";let t=(0,Yl.c)(2),n;return t[0]===e?n=t[1]:(n=_i(e.accountId)?(0,Zl.jsx)(Ul,{...e}):(0,Zl.jsx)(Kl,{...e}),t[0]=e,t[1]=n),n}function Kl({onClose:e,currentTeamBillingType:t,initialTeamBillingType:n,isNonProfit:r,usesCurrentNonProfitPricing:i=r,preselectedTeamBillingType:a,renewalDate:o,accountId:s,billingDetails:c}){"use no forget";let[l,u]=(0,Xl.useState)(a??n),[d,f]=(0,Xl.useState)(!1),[p,h]=(0,Xl.useState)(!1),g=mt(),_=m(),v=yt(s),{data:y,isLoading:b,error:x}=E({countryCode:c.country,currency:c.currency}),S=null,C=null,w=null;if(!b&&y&&x==null){let e=la(c.currency,y,!1,r),n=i===r?e:la(c.currency,y,!1,i);C=t===U.FLEXIBLE?n.flexibleBillingPlan:e.flexibleBillingPlan,w=t===U.ANNUAL?n.annualBillingPlan:e.annualBillingPlan,S=l===U.FLEXIBLE?e.flexibleBillingPlan:e.annualBillingPlan}let T=async()=>{h(!0);try{await v.mutateAsync({accountId:s,updatedPriceInterval:l===U.FLEXIBLE?`month`:`year`,updatedSeats:void 0});let t=l===U.FLEXIBLE?`monthly`:`annual`,r=g.formatDate(o,{year:`numeric`,month:`long`,day:`numeric`});_.success(g.formatMessage({id:`teamBilling.successfullyUpdatedSubscriptionFrequency`,defaultMessage:`Your plan will change to {updatedBillingFrequency} on {renewalDate}`},{updatedBillingFrequency:t,renewalDate:r}),{hasCloseButton:!0});let i=`chatgpt_teams_billing_schedule_changed`,a=I.logStructuredEvent(`ChatgptBusinessBillingScheduleChanged`,{previousBillingSchedule:n===U.ANNUAL?`CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_YEAR`:`CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_MONTH`,newBillingSchedule:l===U.ANNUAL?`CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_YEAR`:`CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_MONTH`,surface:`admin billing page: billing schedule modal`,legacyStatsigEventName:i});Ve(i,l,{previous_billing_schedule:n,new_billing_schedule:l,surface:`admin billing page: billing schedule modal`,...a?{unique_event_id:a}:{}}),f(!1),e()}catch{_.warning(g.formatMessage({id:`teamBilling.errorUpdatingSubscription`,defaultMessage:`There was a problem updating your subscription`}),{hasCloseButton:!0})}finally{h(!1)}},D=()=>{f(!1),u(a??n),e()};return(0,Zl.jsx)(O,{testId:`modal-legacy-teams-change-billing-schedule`,type:`success`,isOpen:!0,onClose:D,size:`custom`,className:`max-w-xl`,noPadding:!0,title:d?g.formatMessage({id:`teamBilling.changeBillingScheduleConfirmTitle`,defaultMessage:`Confirm changes`}):g.formatMessage({id:`teamBilling.changeBillingScheduleTitle`,defaultMessage:`Change billing schedule`}),showCloseButton:!0,children:b||x!=null||!y||!S||!C||!w?(0,Zl.jsx)(`div`,{className:`flex items-center justify-center p-6`,children:(0,Zl.jsx)(ee,{})}):d?(0,Zl.jsx)(Jl,{selectedPlan:l,initialTeamBillingType:n,renewalDate:o,handleUpdate:T,isUpdating:p,selectedBillingPlan:S,onClose:D}):(0,Zl.jsx)(ql,{setSelectedPlan:u,selectedPlan:l,initialTeamBillingType:n,setConfirmPage:f,renewalDate:o,flexibleBillingPlan:C,annualBillingPlan:w,onClose:D})})}function ql(e){"use forget";let t=(0,Yl.c)(40),{selectedPlan:n,setSelectedPlan:r,initialTeamBillingType:i,setConfirmPage:a,renewalDate:o,flexibleBillingPlan:s,annualBillingPlan:l,onClose:u}=e,d=mt(),f;t[0]!==n||t[1]!==r?(f=e=>{Fi(e)&&(Ve(`chatgpt_billing_schedule_modal_plan_selected`,e,{previous_plan:n}),r(e))},t[0]=n,t[1]=r,t[2]=f):f=t[2];let p;t[3]!==s||t[4]!==n?(p=(0,Zl.jsx)(Qa,{billingType:U.FLEXIBLE,...s,selectedValue:n}),t[3]=s,t[4]=n,t[5]=p):p=t[5];let m;t[6]!==l||t[7]!==n?(m=(0,Zl.jsx)(Qa,{billingType:U.ANNUAL,...l,selectedValue:n}),t[6]=l,t[7]=n,t[8]=m):m=t[8];let h;t[9]!==n||t[10]!==f||t[11]!==p||t[12]!==m?(h=(0,Zl.jsx)(`div`,{className:`grid grid-flow-row grid-cols-2`,children:(0,Zl.jsxs)(Vn,{className:`col-span-2 grid gap-4 md:col-span-2 md:grid-cols-2`,defaultValue:n,onValueChange:f,children:[p,m]})}),t[9]=n,t[10]=f,t[11]=p,t[12]=m,t[13]=h):h=t[13];let g;t[14]===o?g=t[15]:(g=(0,Zl.jsx)(`span`,{className:`text-token-text-secondary mt-5 text-sm`,children:(0,Zl.jsx)(W,{...Jr.changeEffectDate,values:{date:(0,Zl.jsx)(it,{value:o,year:`numeric`,month:`long`,day:`numeric`})}})}),t[14]=o,t[15]=g);let _;t[16]===d?_=t[17]:(_=d.formatMessage(Jr.cancel),t[16]=d,t[17]=_);let v;t[18]===u?v=t[19]:(v=()=>{Ve(`chatgpt_billing_schedule_modal_cancel_clicked`),u()},t[18]=u,t[19]=v);let y;t[20]!==_||t[21]!==v?(y=(0,Zl.jsx)(c,{title:_,color:`secondary`,onClick:v}),t[20]=_,t[21]=v,t[22]=y):y=t[22];let b;t[23]===d?b=t[24]:(b=d.formatMessage(Jr.continueToPricePreview),t[23]=d,t[24]=b);let x=n===i,S;t[25]!==i||t[26]!==n||t[27]!==a?(S=()=>{Ve(`chatgpt_billing_schedule_modal_continue_clicked`,n,{previous_plan:i}),a(!0)},t[25]=i,t[26]=n,t[27]=a,t[28]=S):S=t[28];let C;t[29]!==x||t[30]!==S||t[31]!==b?(C=(0,Zl.jsx)(c,{title:b,disabled:x,color:`primary`,onClick:S}),t[29]=x,t[30]=S,t[31]=b,t[32]=C):C=t[32];let w;t[33]!==C||t[34]!==y?(w=(0,Zl.jsxs)(`div`,{className:`mt-6 flex items-center justify-end gap-2`,children:[y,C]}),t[33]=C,t[34]=y,t[35]=w):w=t[35];let T;return t[36]!==w||t[37]!==h||t[38]!==g?(T=(0,Zl.jsxs)(`div`,{className:`flex flex-col p-6`,children:[h,g,w]}),t[36]=w,t[37]=h,t[38]=g,t[39]=T):T=t[39],T}function Jl({initialTeamBillingType:e,selectedPlan:t,renewalDate:n,handleUpdate:r,isUpdating:i,selectedBillingPlan:a,onClose:o}){"use no forget";let s=mt();return(0,Zl.jsxs)(`div`,{className:`p-4`,children:[(0,Zl.jsx)(`span`,{className:`text-sm`,children:(0,Zl.jsx)(W,{...Jr.confirmPageChangeEffectDate,values:{current_plan:e===U.FLEXIBLE?`Flexible (monthly)`:`Annual`,new_plan:t===U.FLEXIBLE?`Flexible (monthly)`:`Annual`,date:(0,Zl.jsx)(it,{value:n,year:`numeric`,month:`long`,day:`numeric`})}})}),(0,Zl.jsxs)(`div`,{className:`bg-token-main-surface-secondary mt-4 flex flex-col rounded-xl p-4`,children:[(0,Zl.jsx)(`span`,{className:`font-semibold`,children:(0,Zl.jsx)(W,{...a.name})}),(0,Zl.jsx)(`span`,{className:`text-sm`,children:(0,Zl.jsx)(W,{...a.cost,values:{monthlyCost:a.monthlyCost,discountedMonthlyCost:a.discountedMonthlyCost,currencyCode:s.formatMessage(a.currencyCode),currencySign:s.formatMessage(a.currencySign),s:(...e)=>(0,Zl.jsx)(_a,{children:e})}})}),(0,Zl.jsx)(`span`,{className:`text-token-text-secondary text-sm`,children:(0,Zl.jsx)(W,{...a.costStructure})})]}),(0,Zl.jsxs)(`div`,{className:`mt-4 flex justify-end gap-2`,children:[(0,Zl.jsx)(c,{title:s.formatMessage(Jr.cancel),color:`secondary`,onClick:()=>{Ve(`chatgpt_billing_schedule_modal_cancel_clicked`),o()}}),(0,Zl.jsx)(c,{title:s.formatMessage(Jr.confirmChange),color:`primary`,onClick:r,loading:i})]})]})}var Yl,Xl,Zl,Ql=e((()=>{Yl=pt(),ci(),Wl(),Ht(),F(),s(),no(),Ge(),y(),d(),_(),u(),gn(),Xl=n(at()),rt(),Zl=qe()}));function $l(e){if(e!=null)return e===`monthly`?U.FLEXIBLE:U.ANNUAL}function eu(e){return $l(e?.scheduled_billing_period)}function tu(e){return eu(e)??$l(e?.billing_period)}function nu({annualSavingsPercent:e,subscription:t}){return eu(t)==null&&$l(t?.billing_period)===U.FLEXIBLE&&e!=null&&e>0}var ru=e((()=>{Ql()})),iu,au=e((()=>{ke(),lt(),iu=V(()=>st(()=>import(`./d917179d-dolmf4aly5k2twym.js`).then(e=>e.BusinessPremiumSeatPendingBillingScheduleConfirmationModal),__vite__mapDeps([14,1,2,3,4,5,6,7,8,9,10,11,12,13]))),V(()=>st(()=>import(`./d917179d-dolmf4aly5k2twym.js`).then(e=>e.BusinessPremiumSeatPendingBillingScheduleConfirmationDialog),__vite__mapDeps([14,1,2,3,4,5,6,7,8,9,10,11,12,13])))}));function ou(e){"use forget";let t=(0,cu.c)(17),{annualSavingsAmount:n,billingCurrency:r,onKeepAnnualBilling:a,renewalDate:o}=e,s=mt(),c;t[0]!==n||t[1]!==r||t[2]!==s?(c=n!=null&&n>0&&r!=null?kt({amount:n,currency:r,intl:s}):null,t[0]=n,t[1]=r,t[2]=s,t[3]=c):c=t[3];let l=c,u;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,lu.jsx)(Le,{"aria-hidden":!0,className:`icon-lg shrink-0`}),t[4]=u):u=t[4];let d;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,lu.jsx)(`p`,{className:`text-sm leading-[22px] font-semibold`,children:(0,lu.jsx)(W,{...uu.scheduledMonthlyBillingNoticeTitle})}),t[5]=d):d=t[5];let f=l==null?uu.scheduledMonthlyBillingNoticeDescriptionWithoutAmount:uu.scheduledMonthlyBillingNoticeDescription,p;t[6]!==l||t[7]!==o?(p=l==null?{renewalDate:o}:{amount:l,renewalDate:o},t[6]=l,t[7]=o,t[8]=p):p=t[8];let m;t[9]!==f||t[10]!==p?(m=(0,lu.jsxs)(`div`,{className:`flex min-w-0 grow flex-col gap-px`,children:[d,(0,lu.jsx)(`p`,{className:`text-[16px] leading-6`,children:(0,lu.jsx)(W,{...f,values:p})})]}),t[9]=f,t[10]=p,t[11]=m):m=t[11];let h;t[12]===a?h=t[13]:(h=a!=null&&(0,lu.jsx)(i,{className:`shrink-0`,color:`primary`,onClick:a,size:`small`,type:`button`,children:(0,lu.jsx)(W,{...uu.keepAnnualBilling})}),t[12]=a,t[13]=h);let g;return t[14]!==m||t[15]!==h?(g=(0,lu.jsxs)(`div`,{className:`border-token-border-status-warning bg-token-bg-status-warning text-token-text-status-warning flex items-center gap-3 rounded-xl border px-4 py-4`,children:[u,m,h]}),t[14]=m,t[15]=h,t[16]=g):g=t[16],g}function su(e){"use forget";let t=(0,cu.c)(7),{onKeepMonthlyBilling:n,renewalDate:r}=e,i;t[0]===r?i=t[1]:(i=(0,lu.jsx)(`span`,{className:`text-token-text-tertiary text-xs leading-[18px] font-semibold`,children:(0,lu.jsx)(W,{...uu.scheduledAnnualBillingFooter,values:{renewalDate:r}})}),t[0]=r,t[1]=i);let a;t[2]===n?a=t[3]:(a=n!=null&&(0,lu.jsx)(`button`,{className:`interactive-button text-token-text-primary shrink-0 text-sm leading-[22px] font-medium underline underline-offset-2`,onClick:n,type:`button`,children:(0,lu.jsx)(W,{...uu.keepMonthlyBilling})}),t[2]=n,t[3]=a);let o;return t[4]!==i||t[5]!==a?(o=(0,lu.jsxs)(`div`,{className:`bg-token-bg-tertiary flex items-center justify-between gap-4 px-6 py-2`,children:[i,a]}),t[4]=i,t[5]=a,t[6]=o):o=t[6],o}var cu,lu,uu,du=e((()=>{cu=pt(),pe(),Ta(),Ae(),rt(),lu=qe(),uu=Qe({scheduledAnnualBillingFooter:{id:`organizationBillingInfo.billingSchedule.pendingAnnual.footer`,defaultMessage:`You will be billed annually starting {renewalDate, date, long}`},keepMonthlyBilling:{id:`organizationBillingInfo.billingSchedule.pendingAnnual.keepMonthly.button`,defaultMessage:`Keep monthly billing`},scheduledMonthlyBillingNoticeTitle:{id:`organizationBillingInfo.billingSchedule.pendingMonthly.notice.title`,defaultMessage:`Your plan is scheduled to change to monthly billing`},scheduledMonthlyBillingNoticeDescription:{id:`organizationBillingInfo.billingSchedule.pendingMonthly.notice.description.withAmount`,defaultMessage:`You will be billed monthly starting {renewalDate, date, long}. This will increase your bill by {amount} per year.`},scheduledMonthlyBillingNoticeDescriptionWithoutAmount:{id:`organizationBillingInfo.billingSchedule.pendingMonthly.notice.description.withoutAmount`,defaultMessage:`You will be billed monthly starting {renewalDate, date, long}.`},keepAnnualBilling:{id:`organizationBillingInfo.billingSchedule.pendingMonthly.keepAnnual.button`,defaultMessage:`Keep annual billing`}})}));function fu(e){return e.find(e=>e.isPersonalAccount()&&!e.isDeactivated())??null}async function pu(e){let t=Ue();await e.refetchQueries({queryKey:t.queryKey},{throwOnError:!0});let n=e.getQueryData(t.queryKey),r=n==null?null:fu(v(n));if(r==null)throw Error(`Unable to find an active personal account for Business to Plus checkout`);return r}function mu(e){return!e.hasPaidSubscription()}function hu(e,t){return`tag`in e&&(e.tag===`custom_checkout_session`||e.tag===`hosted_checkout_session`)&&e.promo_campaign?.promo_campaign_id===t}async function gu({navigateToCheckout:e,onCheckoutReady:t,onNavigationFailure:n}){t?.();try{await e()}catch(e){throw n(),e}}async function _u({businessAccountId:e,personalAccountId:t,queryClient:n,startCheckout:r,selectAccount:i=Ee}){let{updatedAccount:a}=await i(n,t,!1);if(!a)throw Error(`Unable to select personal account for Business to Plus checkout`);let o=await r().then(e=>({status:`success`,result:e}),e=>({status:`error`,error:e})),{updatedAccount:s}=await i(n,e);if(!s)throw Error(`Unable to restore Business account after Plus checkout preparation`);if(o.status===`error`)throw o.error;return o.result}var vu=e((()=>{Me()}));function yu(e){"use forget";let t=(0,bu.c)(28),{creditsPolicy:n,workspaceId:r,canManagePaymentMethod:i}=e,a=Ke(),o=et(),[s,c]=(0,xu.useState)(!1),l;t[0]===a.search?l=t[1]:(l=Xt(new URLSearchParams(a.search).get(Ut)),t[0]=a.search,t[1]=l);let u=l,d=n?.kind===`business`?n:void 0,f=d?.can_purchase_credits===!0,p=d?.can_manage_auto_reload===!0,m=r!=null&&u===`add_credits`&&f,h=r!=null&&u===`auto_recharge`&&p,g=m||h,_=h||s,v;t[2]!==i||t[3]!==_||t[4]!==r?(v=_&&r!=null&&i&&mn(),t[2]=i,t[3]=_,t[4]=r,t[5]=v):v=t[5];let y=v,b;t[6]!==y||t[7]!==_?(b={enabled:_,includePaymentMethod:y},t[6]=y,t[7]=_,t[8]=b):b=t[8];let x=jn(b),S,C;t[9]!==u||t[10]!==x.data||t[11]!==g||t[12]!==a.hash||t[13]!==a.pathname||t[14]!==a.search||t[15]!==a.state||t[16]!==o?(S=()=>{if(u==null||!g)return;if(u===`add_credits`){let e=new URLSearchParams(a.search).get(Et);Un(gt,{analyticsSurface:rn.find(t=>t===e)})}else{if(x.data==null)return;c(!0)}let e=new URLSearchParams(a.search);e.delete(Ut),e.delete(Et);let t=e.toString();o({pathname:a.pathname,search:t?`?${t}`:``,hash:a.hash},{replace:!0,state:a.state})},C=[u,x.data,g,a.hash,a.pathname,a.search,a.state,o],t[9]=u,t[10]=x.data,t[11]=g,t[12]=a.hash,t[13]=a.pathname,t[14]=a.search,t[15]=a.state,t[16]=o,t[17]=S,t[18]=C):(S=t[17],C=t[18]),(0,xu.useEffect)(S,C);let w;t[19]===r?w=t[20]:(w=()=>{li(r)},t[19]=r,t[20]=w);let T;t[21]!==a.search||t[22]!==r?(T=[r,a.search],t[21]=a.search,t[22]=r,t[23]=T):T=t[23],(0,xu.useEffect)(w,T);let E;return t[24]!==x.data||t[25]!==i||t[26]!==s?(E=s&&x.data!=null?(0,Su.jsx)(an,{open:s,serverState:x.data,analyticsSurface:`credit_interruption_banner`,accountScope:`workspace`,canManagePaymentMethod:i,onOpenChange:c},wn(x.data)):null,t[24]=x.data,t[25]=i,t[26]=s,t[27]=E):E=t[27],E}var bu,xu,Su,Cu=e((()=>{bu=pt(),vi(),Bt(),nr(),Lt(),fn(),Jn(),Mt(),xn(),xu=n(at()),nt(),Cn(),Su=qe()}));function wu(e){return e.startsWith(Tu)?e:`${Tu}${e}`}var Tu,Eu=e((()=>{Tu=`﻿`})),Du,Ou=e((()=>{rt(),Du=Qe({buttonText:{id:`organizationBillingInfo.creditUsageSettings.downloadUsageReportButton.buttonText`,defaultMessage:`Download usage data`},buttonDescription:{id:`organizationBillingInfo.creditUsageSettings.downloadUsageReportButton.buttonDescription`,defaultMessage:`Updated {date, date}`},filename:{id:`organizationBillingInfo.creditUsageSettings.downloadUsageReportButton.filename`,defaultMessage:`{workspaceName} Credit Usage Report ({startDate} - {endDate}).csv`}})}));function ku({cycle:e,onClose:t,workspaceId:n,workspaceName:r}){"use no forget";let a=mt(),[o,s]=(0,Pu.useState)(!1),[c,l]=(0,Pu.useState)(null),u=Au({customDateRange:c,cycle:e}),d=cs({customDateRange:c,fallbackLabel:a.formatMessage(Iu.customRangeButton),intl:a});return(0,Fu.jsx)(O,{testId:`modal-billing-usage-export`,isOpen:!0,onClose:t,type:`success`,title:(0,Fu.jsx)(W,{...Iu.title}),hideSeparator:!0,showCloseButton:!0,footerClassName:`px-6 pb-6 pt-5`,primaryButton:(0,Fu.jsx)(i,{className:`min-w-[120px]`,loading:o,onClick:async()=>{s(!0);try{await ju({intl:a,selectedRange:u,workspaceId:n,workspaceName:r})}finally{s(!1)}t()},children:(0,Fu.jsx)(W,{...Iu.generateCsvButton})}),children:(0,Fu.jsxs)(`div`,{className:`px-6 pb-6`,children:[(0,Fu.jsx)(`div`,{className:`mb-2 font-medium`,children:(0,Fu.jsx)(W,{...Iu.dateRangeLabel})}),(0,Fu.jsxs)(`div`,{role:`group`,"aria-label":a.formatMessage(Iu.dateRangeOptionsAriaLabel),className:`text-token-text-tertiary inline-flex items-center rounded-full bg-[#e8e8e8] p-0.5 text-xs font-semibold dark:bg-[#393939]`,children:[(0,Fu.jsx)(ds,{isSelected:c==null,onClick:()=>l(null),children:(0,Fu.jsx)(W,{...Iu.currentCycleButton})}),(0,Fu.jsx)(ps,{isSelected:c!=null,onRangeSelected:l,selectedRange:c,trigger:(0,Fu.jsx)(ds,{isSelected:c!=null,children:d})})]}),(0,Fu.jsx)(`div`,{className:`text-token-text-tertiary mt-3 text-sm`,children:(0,Fu.jsx)(W,{...Iu.selectedRangeSummary,values:{end:a.formatDate(u.displayEnd,{day:`numeric`,month:`short`,year:`numeric`}),start:a.formatDate(u.displayStart,{day:`numeric`,month:`short`,year:`numeric`})}})})]})})}function Au({customDateRange:e,cycle:t}){return e==null?{displayEnd:t.end,displayStart:t.start,requestEnd:t.end,requestStart:t.start,selection:`billingCycle`}:{displayEnd:e.endDate,displayStart:e.startDate,requestEnd:ir(e.endDate,1),requestStart:e.startDate,selection:`custom`}}async function ju({intl:e,selectedRange:t,workspaceId:n,workspaceName:r}){let i=Nu(t.requestStart,t.selection),a=Nu(t.requestEnd,t.selection);I.logEventWithStatsig(`ChatGPT Credits: Download Usage Report Clicked`,`chatgpt_credits_download_usage_report_clicked`,{dateRangeSelection:t.selection,endDate:a,startDate:i,workspaceId:n,workspaceName:r}),ls({data:wu((await S.safeGet(`/subscriptions/{workspace_id}/usage/export`,{parameters:{path:{workspace_id:n},query:{end_date:a,start_date:i}}})).csv_content??`No results for the given date range`),filename:e.formatMessage(Du.filename,{endDate:Mu(t.displayEnd),startDate:Mu(t.displayStart),workspaceName:r}),mimeType:`text/csv`}),I.logEventWithStatsig(`ChatGPT Credits: Download Usage Report Complete`,`chatgpt_credits_download_usage_report_complete`,{dateRangeSelection:t.selection,workspaceId:n,workspaceName:r})}function Mu(e){return qt(e,`MMM d, yyyy`)}function Nu(e,t){return t===`custom`?qt(e,`yyyy-MM-dd`):e.toISOString()}var Pu,Fu,Iu,Lu=e((()=>{ms(),gs(),ss(),pe(),s(),_(),us(),p(),dn(),Pu=n(at()),rt(),Eu(),Ou(),Fu=qe(),Iu=Qe({title:{id:`organizationBillingInfo.creditUsageSettings.exportModal.title`,defaultMessage:`Export usage data`},dateRangeLabel:{id:`organizationBillingInfo.creditUsageSettings.exportModal.dateRangeLabel`,defaultMessage:`Date range`},dateRangeOptionsAriaLabel:{id:`organizationBillingInfo.creditUsageSettings.exportModal.dateRangeOptionsAriaLabel`,defaultMessage:`Usage export date range options`},currentCycleButton:{id:`organizationBillingInfo.creditUsageSettings.exportModal.currentCycleButton`,defaultMessage:`Current billing cycle`},customRangeButton:{id:`organizationBillingInfo.creditUsageSettings.exportModal.customRangeButton`,defaultMessage:`Custom`},selectedRangeSummary:{id:`organizationBillingInfo.creditUsageSettings.exportModal.selectedRangeSummary`,defaultMessage:`Selected range: {start} - {end}`},generateCsvButton:{id:`organizationBillingInfo.creditUsageSettings.exportModal.generateCsvButton`,defaultMessage:`Generate CSV`}})}));function Ru({cycle:e,mostRecentExportResult:t}){"use no forget";let n=Oe(),r=!n?.id;return(0,Vu.jsx)(In.Item,{onClick:()=>{n?.id&&fe(ku,{cycle:e,workspaceId:n.id,workspaceName:n.name??`Workspace`})},disabled:r,secondary:t&&(0,Vu.jsx)(W,{...Du.buttonDescription,values:{date:new Date(t)}}),label:(0,Vu.jsx)(W,{...Du.buttonText}),icon:vr})}function zu(){"use no forget";let e=mt(),t=Oe(),[n,r]=(0,Bu.useState)(!1);return{disabled:!t?.id,downloadUsageReport:async n=>{if(t?.id){I.logEventWithStatsig(`ChatGPT Credits: Download Usage Report Clicked`,`chatgpt_credits_download_usage_report_clicked`,{workspaceId:t.id,workspaceName:t.name,startDate:n.start.toISOString(),endDate:n.end.toISOString()}),r(!0);try{ls({data:wu((await S.safeGet(`/subscriptions/{workspace_id}/usage/export`,{parameters:{path:{workspace_id:t.id},query:{start_date:n.start.toISOString(),end_date:n.end.toISOString()}}})).csv_content??`No results for the given date range`),mimeType:`text/csv`,filename:e.formatMessage(Du.filename,{workspaceName:t.name??`Workspace`,startDate:qt(n.start,`MMM d, yyyy`),endDate:qt(n.end,`MMM d, yyyy`)})}),I.logEventWithStatsig(`ChatGPT Credits: Download Usage Report Complete`,`chatgpt_credits_download_usage_report_complete`,{workspaceId:t.id,workspaceName:t.name})}finally{r(!1)}}},generating:n}}var Bu,Vu,Hu=e((()=>{Vt(),lr(),le(),Me(),_(),us(),p(),dn(),Bu=n(at()),rt(),Lu(),Eu(),Ou(),Vu=qe()}));function Uu(e,{toastId:t=`chatgpt.workspaceBilling.defaultErrorToastId`,message:n}={}){return fs(async(...t)=>await e(...t),{toastId:t,message:n})}var Wu=e((()=>{hs()}));function Gu(){let e=te(Ju).get(Yu,null);return qu(e)?e:null}function Ku(e){return Xu[e]}function qu(e){return typeof e==`string`&&Object.hasOwn(Xu,e)}var Ju,Yu,Xu,Zu=e((()=>{u(),rt(),Ju=`1486404729`,Yu=`copy_variant`,Xu=Qe({spend_safety:{id:`autoTopOff.inlineCopy.spendSafety`,defaultMessage:`Automatically add credits when your balance runs low, up to a monthly limit you set.`},prevention:{id:`autoTopOff.inlineCopy.prevention`,defaultMessage:`Automatically add credits when your balance runs low`}})}));function Qu(e){return[`workspace-subscription-settings`,e]}function $u(e){"use forget";let t=(0,rd.c)(212),{canManagePaymentMethod:n}=e,r=mt(),[a,o]=(0,id.useState)(!1),s=We(),c=$e(),l=Oe(),{country:u}=Qt(),d=Yr(),[f,p]=(0,id.useState)(null),m=(0,id.useRef)(!1),h=l?.id,g=l?.organizationId,_=h!=null,v;t[0]!==_||t[1]!==h?(v={activeWorkspaceId:h,enabled:_},t[0]=_,t[1]=h,t[2]=v):v=t[2];let{creditsConfig:y}=Xn(v),b;t[3]===y?b=t[4]:(b=ln(y),t[3]=y,t[4]=b);let x=b,C=x?.kind===`business`?x:void 0,w=C?.can_view_credit_balance===!0&&h!=null&&g!=null,T=C?.can_manage_auto_reload===!0,D=T,O;t[5]!==T||t[6]!==n||t[7]!==w||t[8]!==h?(O=w&&T&&h!=null&&n&&mn(),t[5]=T,t[6]=n,t[7]=w,t[8]=h,t[9]=O):O=t[9];let k=O,A;t[10]===l?A=t[11]:(A=l?.isSelfServeBusiness(),t[10]=l,t[11]=A);let j=A===!0,M;t[12]!==u||t[13]!==l||t[14]!==j?(M={country:u,currentAccount:l,location:`BusinessCreditBalanceSection`,pricingPlanIsTypeBusiness:j},t[12]=u,t[13]=l,t[14]=j,t[15]=M):M=t[15];let ee=St(M),te=ee?.currency,N=w&&ee!=null,P;t[16]!==u||t[17]!==te||t[18]!==N?(P={countryCode:u,currency:te,enabled:N},t[16]=u,t[17]=te,t[18]=N,t[19]=P):P=t[19];let{data:ne}=E(P),re;t[20]===w?re=t[21]:(re={enabled:w},t[20]=w,t[21]=re);let F=Ot(h,re),I;t[22]!==T||t[23]!==k||t[24]!==w?(I=w&&T&&(B(od)||k),t[22]=T,t[23]=k,t[24]=w,t[25]=I):I=t[25];let ie=I,L;t[26]!==ie||t[27]!==w?(L={enabled:w,includePaymentMethod:ie},t[26]=ie,t[27]=w,t[28]=L):L=t[28];let R=jn(L),z=h??`workspace`,ae=w&&!!C?.can_purchase_credits,oe;t[29]!==z||t[30]!==ae?(oe=Dn({accountKey:z,enabled:ae}),t[29]=z,t[30]=ae,t[31]=oe):oe=t[31];let V=tt(oe),H=R.data,se,ce;t[32]!==H||t[33]!==w?(se=()=>{m.current||!w||H==null||(m.current=!0,hn({autoTopOffServerState:H,analyticsSurface:`business_credit_balance`}))},ce=[H,w],t[32]=H,t[33]=w,t[34]=se,t[35]=ce):(se=t[34],ce=t[35]),(0,id.useEffect)(se,ce);let le;t[36]===Symbol.for(`react.memo_cache_sentinel`)?(le={analyticsSurface:`business_credit_balance`,accountScope:`workspace`},t[36]=le):le=t[36];let{disableAutoTopOffMutation:ue}=Bn(le),de;t[37]===g?de=t[38]:(de=Qu(g),t[37]=g,t[38]=de);let pe;t[39]!==g||t[40]!==w?(pe=async()=>{if(!w)throw Error(`Query not enabled`);return await S.safeGet(`/subscriptions/{organization_id}/settings`,{parameters:{path:{organization_id:g}}})},t[39]=g,t[40]=w,t[41]=pe):pe=t[41];let me;t[42]!==w||t[43]!==de||t[44]!==pe?(me={queryKey:de,queryFn:pe,enabled:w},t[42]=w,t[43]=de,t[44]=pe,t[45]=me):me=t[45];let he=tt(me),ge;t[46]===h?ge=t[47]:(ge=[`usage-export-data-freshness`,h],t[46]=h,t[47]=ge);let _e;t[48]!==w||t[49]!==h?(_e=()=>{if(!w)throw Error(`Query not enabled`);return S.safeGet(`/subscriptions/{workspace_id}/usage/export_data_freshness`,{parameters:{path:{workspace_id:h}}})},t[48]=w,t[49]=h,t[50]=_e):_e=t[50];let ve=Uu(_e),ye;t[51]!==w||t[52]!==ge||t[53]!==ve?(ye={queryKey:ge,queryFn:ve,enabled:w},t[51]=w,t[52]=ge,t[53]=ve,t[54]=ye):ye=t[54];let be=tt(ye),xe;t[55]===g?xe=t[56]:(xe=async e=>{let{recipients:t,thresholds:n}=e;if(!g)throw Error(`Organization id is required`);await S.safePost(`/subscriptions/{organization_id}/settings/alerts`,{parameters:{path:{organization_id:g}},requestBody:{alert_recipients:t,alert_thresholds:n}})},t[55]=g,t[56]=xe);let Se;t[57]!==g||t[58]!==c?(Se=async()=>{await c.invalidateQueries({queryKey:Qu(g)})},t[57]=g,t[58]=c,t[59]=Se):Se=t[59];let Ce;t[60]!==xe||t[61]!==Se?(Ce={mutationFn:xe,onSuccess:Se},t[60]=xe,t[61]=Se,t[62]=Ce):Ce=t[62];let we=ut(Ce);if(!w||C==null)return null;let U,Te,Ee,De,ke,Ae,je,Me,Ne,Pe,Fe,Ie,Le,Re,ze,Be,Ve,He,Ue,Ge;if(t[63]!==H||t[64]!==R.data?.isEnabled||t[65]!==R.isLoading||t[66]!==T||t[67]!==ne||t[68]!==V.data?.auto_reload?.tiers||t[69]!==V.data?.one_time.tiers||t[70]!==V.isLoading||t[71]!==C.can_manage_usage_alert_thresholds||t[72]!==C.can_purchase_credits||t[73]!==C.show_monetary_credit_balance||t[74]!==ue||t[75]!==r||t[76]!==D||t[77]!==F.data||t[78]!==F.isPending||t[79]!==he||t[80]!==s||t[81]!==we){let e=Fn(F.data),n=Zn(e),i=F.isPending,a=Tn(F.data),o=Zn(a?.amount??0),c=Math.round(o),l=ne==null?null:Kt({amountMinorUnits:Yt({totalRemainingCredits:e,checkoutPricingConfig:ne}),currency:ne.currencyConfig.symbol_code});De=R.data?.isEnabled??!1;let u=V.data?.one_time.tiers,d;t[102]===u?d=t[103]:(d=$r(u),t[102]=u,t[103]=d),Pe=d;let f=V.data?.auto_reload?.tiers,m;t[104]===f?m=t[105]:(m=$r(f),t[104]=f,t[105]=m),Ee=m,Ie=C.can_purchase_credits&&T&&H?.isEnabled===!1&&Ee!=null,Le=C.can_purchase_credits&&Pe!=null&&!Ie;let h=D&&H?.isEnabled===!1,g;if(t[106]!==H?.rechargeTarget||t[107]!==H?.rechargeThreshold||t[108]!==De||t[109]!==V.isLoading||t[110]!==r||t[111]!==h||t[112]!==Ie||t[113]!==Le){let e=h?Gu():null;Fe=e!=null&&!V.isLoading&&!Le&&!Ie,g=td({copyVariant:e,intl:r,isEnabled:De,rechargeTarget:H?.rechargeTarget,rechargeThreshold:H?.rechargeThreshold}),t[106]=H?.rechargeTarget,t[107]=H?.rechargeThreshold,t[108]=De,t[109]=V.isLoading,t[110]=r,t[111]=h,t[112]=Ie,t[113]=Le,t[114]=Fe,t[115]=g}else Fe=t[114],g=t[115];Te=g,ke=C.can_manage_usage_alert_thresholds,Ne=!T,Me=Ne||R.isLoading||ue.isPending;let _;t[116]!==ke||t[117]!==he||t[118]!==we?(_=()=>{ke&&fe(ad,{isEnterprisey:!1,canManageRecipients:!1,canManageThresholds:ke,onSaveRecipients:async e=>{await we.mutateAsync({recipients:e})},onSaveThresholds:async e=>{await we.mutateAsync({thresholds:e})},recipients:he.data?.alert_recipients??[],thresholds:he.data?.alert_thresholds??[]})},t[116]=ke,t[117]=he,t[118]=we,t[119]=_):_=t[119],je=_;let v;t[120]!==H||t[121]!==R.isLoading||t[122]!==T||t[123]!==ue||t[124]!==r||t[125]!==s?(v=async e=>{if(!(!T||R.isLoading||ue.isPending)){if(e){p(`settings`);return}if(H?.autoReloadCreditDiscountPolicy!=null&&H.autoReloadCreditDiscountPolicy!==`none`){p(`disable-confirmation`);return}try{await ue.mutateAsync(),s.success(r.formatMessage(sd.autoRechargeDisabled),{hasCloseButton:!0})}catch{s.warning(r.formatMessage(sd.autoRechargeDisableError),{hasCloseButton:!0})}}},t[120]=H,t[121]=R.isLoading,t[122]=T,t[123]=ue,t[124]=r,t[125]=s,t[126]=v):v=t[126],Ae=v,U=fi,Ge=`border-token-border-default bg-token-bg-primary gap-0 rounded-xl border`,Ue=`flex items-start justify-between gap-4 p-6`,Be=`min-w-0`,t[127]===Symbol.for(`react.memo_cache_sentinel`)?(Ve=(0,q.jsx)(`div`,{className:`text-token-text-primary text-[20px] leading-[25px] font-normal`,children:(0,q.jsx)(W,{...sd.title})}),t[127]=Ve):Ve=t[127],He=!i&&a!=null&&c>0&&Wn(a.expiryDate)?(0,q.jsx)(`div`,{className:`text-token-text-secondary mt-1 text-sm`,children:(0,q.jsx)(W,{...sd.expiringCreditsSummary,values:{expiringCredits:c,expiryDate:r.formatDate(a.expiryDate,{month:`long`,day:`numeric`})}})}):null,Re=`mt-5 flex items-end gap-3`,ze=i?(0,q.jsxs)(q.Fragment,{children:[(0,q.jsx)(`div`,{className:`loading-results-shimmer h-12 w-[80px] rounded-sm`}),(0,q.jsx)(`div`,{className:`loading-results-shimmer mb-1 h-5 w-[72px] rounded-sm`})]}):(0,q.jsxs)(q.Fragment,{children:[(0,q.jsx)(`div`,{className:`text-token-text-primary text-5xl leading-none font-medium tracking-[-1.5px]`,children:r.formatNumber(n,{style:`decimal`,minimumFractionDigits:0,maximumFractionDigits:0})}),C.show_monetary_credit_balance&&l!=null?(0,q.jsx)(`div`,{className:`text-token-text-secondary pb-1 text-sm`,children:(0,q.jsx)(W,{...sd.balanceAmount,values:{amount:l}})}):null]}),t[63]=H,t[64]=R.data?.isEnabled,t[65]=R.isLoading,t[66]=T,t[67]=ne,t[68]=V.data?.auto_reload?.tiers,t[69]=V.data?.one_time.tiers,t[70]=V.isLoading,t[71]=C.can_manage_usage_alert_thresholds,t[72]=C.can_purchase_credits,t[73]=C.show_monetary_credit_balance,t[74]=ue,t[75]=r,t[76]=D,t[77]=F.data,t[78]=F.isPending,t[79]=he,t[80]=s,t[81]=we,t[82]=U,t[83]=Te,t[84]=Ee,t[85]=De,t[86]=ke,t[87]=Ae,t[88]=je,t[89]=Me,t[90]=Ne,t[91]=Pe,t[92]=Fe,t[93]=Ie,t[94]=Le,t[95]=Re,t[96]=ze,t[97]=Be,t[98]=Ve,t[99]=He,t[100]=Ue,t[101]=Ge}else U=t[82],Te=t[83],Ee=t[84],De=t[85],ke=t[86],Ae=t[87],je=t[88],Me=t[89],Ne=t[90],Pe=t[91],Fe=t[92],Ie=t[93],Le=t[94],Re=t[95],ze=t[96],Be=t[97],Ve=t[98],He=t[99],Ue=t[100],Ge=t[101];let Ke;t[128]!==Re||t[129]!==ze?(Ke=(0,q.jsx)(`div`,{className:Re,children:ze}),t[128]=Re,t[129]=ze,t[130]=Ke):Ke=t[130];let qe;t[131]===F.isError?qe=t[132]:(qe=F.isError?(0,q.jsx)(Br,{className:`text-token-text-secondary mt-3`,children:(0,q.jsx)(W,{...sd.balanceLoadError})}):null,t[131]=F.isError,t[132]=qe);let Je;t[133]!==Be||t[134]!==Ve||t[135]!==He||t[136]!==Ke||t[137]!==qe?(Je=(0,q.jsxs)(`div`,{className:Be,children:[Ve,He,Ke,qe]}),t[133]=Be,t[134]=Ve,t[135]=He,t[136]=Ke,t[137]=qe,t[138]=Je):Je=t[138];let Ye=Le?`flex flex-wrap items-center justify-end gap-2`:`flex gap-1`,Xe;t[139]!==C.can_purchase_credits||t[140]!==a||t[141]!==Pe||t[142]!==Le?(Xe=C.can_purchase_credits?(0,q.jsxs)(q.Fragment,{children:[Le&&Pe!=null?(0,q.jsx)(Ea,{discountPercent:Pe}):null,(0,q.jsx)(i,{color:`secondary`,className:`shrink-0`,loading:a,onClick:()=>{Un(gt,{analyticsSurface:`business_credit_balance`,checkoutOriginProvenance:{checkoutOriginProductExperience:Pt.WORK,checkoutOriginDeliverySurface:`web`},onCustomCheckoutEnd:()=>o(!1),onCustomCheckoutStart:()=>o(!0)})},children:(0,q.jsx)(W,{...sd.addCreditsButton})})]}):null,t[139]=C.can_purchase_credits,t[140]=a,t[141]=Pe,t[142]=Le,t[143]=Xe):Xe=t[143];let Ze;t[144]===Symbol.for(`react.memo_cache_sentinel`)?(Ze=(0,q.jsx)(In.Trigger,{className:`px-2`,children:(0,q.jsx)(gr,{className:`icon-lg`})}),t[144]=Ze):Ze=t[144];let Qe;t[145]!==C.can_download_usage_report||t[146]!==d||t[147]!==be?(Qe=C.can_download_usage_report&&d!==`pending`?(0,q.jsx)(Ru,{cycle:d,mostRecentExportResult:be.data?.most_recent_result}):null,t[145]=C.can_download_usage_report,t[146]=d,t[147]=be,t[148]=Qe):Qe=t[148];let et;t[149]===Qe?et=t[150]:(et=(0,q.jsxs)(In.Root,{children:[Ze,(0,q.jsx)(In.Portal,{children:(0,q.jsx)(In.Content,{size:`small`,align:`end`,children:Qe})})]}),t[149]=Qe,t[150]=et);let nt;t[151]!==Ye||t[152]!==Xe||t[153]!==et?(nt=(0,q.jsxs)(`div`,{className:Ye,children:[Xe,et]}),t[151]=Ye,t[152]=Xe,t[153]=et,t[154]=nt):nt=t[154];let rt;t[155]!==Ue||t[156]!==Je||t[157]!==nt?(rt=(0,q.jsxs)(`div`,{className:Ue,children:[Je,nt]}),t[155]=Ue,t[156]=Je,t[157]=nt,t[158]=rt):rt=t[158];let it;t[159]===r?it=t[160]:(it=r.formatMessage(sd.autoRechargeLabel),t[159]=r,t[160]=it);let at;t[161]!==Ee||t[162]!==Fe||t[163]!==Ie?(at=Ie&&Ee!=null?(0,q.jsx)(Ea,{discountPercent:Ee}):Fe?(0,q.jsx)(Di,{children:(0,q.jsx)(W,{...sd.autoRechargeRecommended})}):void 0,t[161]=Ee,t[162]=Fe,t[163]=Ie,t[164]=at):at=t[164];let ot;t[165]!==De||t[166]!==r?(ot=De?{label:r.formatMessage(sd.manageButton),onClick:()=>{p(`settings`)},variant:`link`}:void 0,t[165]=De,t[166]=r,t[167]=ot):ot=t[167];let st;t[168]===Ae?st=t[169]:(st=e=>{Ae(e)},t[168]=Ae,t[169]=st);let ct;t[170]!==Te||t[171]!==De||t[172]!==Me||t[173]!==Ne||t[174]!==it||t[175]!==at||t[176]!==ot||t[177]!==st?(ct=(0,q.jsx)(ed,{checked:De,disabled:Me,label:it,labelBadge:at,description:Te,manageButton:ot,showOwnerDisabledTooltip:Ne,onCheckedChange:st}),t[170]=Te,t[171]=De,t[172]=Me,t[173]=Ne,t[174]=it,t[175]=at,t[176]=ot,t[177]=st,t[178]=ct):ct=t[178];let lt;t[179]!==H||t[180]!==R.isLoading?(lt=!R.isLoading&&H?.isEnabled?(0,q.jsx)(Jo,{autoTopOffServerState:H,analyticsSurface:`business_credit_balance`,onManageMonthlyLimit:()=>p(`settings`),className:`mb-8`}):null,t[179]=H,t[180]=R.isLoading,t[181]=lt):lt=t[181];let dt;t[182]!==ct||t[183]!==lt?(dt=(0,q.jsxs)(`div`,{children:[ct,lt]}),t[182]=ct,t[183]=lt,t[184]=dt):dt=t[184];let ft;t[185]===r?ft=t[186]:(ft=r.formatMessage(sd.usageAlertsLabel),t[185]=r,t[186]=ft);let pt;t[187]===r?pt=t[188]:(pt=r.formatMessage(sd.manageButton),t[187]=r,t[188]=pt);let ht=!ke||he.isLoading||we.isPending,_t;t[189]!==je||t[190]!==pt||t[191]!==ht?(_t={label:pt,onClick:je,disabled:ht,variant:`button`},t[189]=je,t[190]=pt,t[191]=ht,t[192]=_t):_t=t[192];let vt=!ke,yt;t[193]!==ft||t[194]!==_t||t[195]!==vt?(yt=(0,q.jsx)(ed,{disabled:!1,label:ft,manageButton:_t,showOwnerDisabledTooltip:vt,manageButtonTooltipTestId:`usage-alerts-owner-disabled-tooltip-trigger`}),t[193]=ft,t[194]=_t,t[195]=vt,t[196]=yt):yt=t[196];let bt;t[197]!==dt||t[198]!==yt?(bt=(0,q.jsxs)(`div`,{className:`border-token-border-default divide-token-border-default divide-y px-6`,children:[dt,yt]}),t[197]=dt,t[198]=yt,t[199]=bt):bt=t[199];let xt;t[200]!==U||t[201]!==Ge||t[202]!==rt||t[203]!==bt?(xt=(0,q.jsxs)(U,{className:Ge,children:[rt,bt]}),t[200]=U,t[201]=Ge,t[202]=rt,t[203]=bt,t[204]=xt):xt=t[204];let Ct;t[205]!==f||t[206]!==H||t[207]!==n?(Ct=f!=null&&H?(0,q.jsx)(an,{open:!0,serverState:H,analyticsSurface:`business_credit_balance`,accountScope:`workspace`,canManagePaymentMethod:n,initialView:f,onOpenChange:e=>{e||p(null)}},wn(H)):null,t[205]=f,t[206]=H,t[207]=n,t[208]=Ct):Ct=t[208];let wt;return t[209]!==xt||t[210]!==Ct?(wt=(0,q.jsxs)(q.Fragment,{children:[xt,Ct]}),t[209]=xt,t[210]=Ct,t[211]=wt):wt=t[211],wt}function ed(e){"use forget";let t=(0,rd.c)(30),{checked:n,disabled:r,label:a,labelBadge:o,description:s,manageButton:c,showOwnerDisabledTooltip:l,manageButtonTooltipTestId:u,onCheckedChange:d}=e,f;t[0]===l?f=t[1]:(f=(e,t)=>(0,q.jsx)(os,{disabled:l===!0,testId:t,children:e}),t[0]=l,t[1]=f);let p=f,m;t[2]===a?m=t[3]:(m=(0,q.jsx)(`div`,{className:`text-token-text-primary text-base`,children:a}),t[2]=a,t[3]=m);let h;t[4]!==o||t[5]!==m?(h=(0,q.jsxs)(`div`,{className:`flex min-w-0 items-center gap-2`,children:[m,o]}),t[4]=o,t[5]=m,t[6]=h):h=t[6];let g;t[7]===s?g=t[8]:(g=s==null?null:(0,q.jsx)(Br,{className:`text-token-text-secondary mt-1`,children:s}),t[7]=s,t[8]=g);let _;t[9]!==h||t[10]!==g?(_=(0,q.jsxs)(`div`,{className:`min-w-0 flex-1`,children:[h,g]}),t[9]=h,t[10]=g,t[11]=_):_=t[11];let v;t[12]!==r||t[13]!==c||t[14]!==u||t[15]!==p?(v=c?.variant===`link`?p((0,q.jsx)(`button`,{type:`button`,className:`text-token-text-primary text-sm font-medium underline underline-offset-2 transition hover:no-underline disabled:cursor-not-allowed disabled:opacity-50`,disabled:c.disabled??r,onClick:c.onClick,children:c.label})):c?.variant===`button`?p((0,q.jsx)(i,{type:`button`,color:`secondary`,size:`medium`,className:`min-w-[74px]`,disabled:c.disabled??r,onClick:c.onClick,children:c.label}),u):null,t[12]=r,t[13]=c,t[14]=u,t[15]=p,t[16]=v):v=t[16];let y;t[17]!==n||t[18]!==r||t[19]!==a||t[20]!==d||t[21]!==p||t[22]!==l?(y=d!=null&&n!=null?p((0,q.jsx)(be,{"aria-label":a,checked:n,className:l===!0?`disabled:opacity-100!`:void 0,disabled:r,onCheckedChange:d}),`automatic-recharge-owner-disabled-tooltip-trigger`):null,t[17]=n,t[18]=r,t[19]=a,t[20]=d,t[21]=p,t[22]=l,t[23]=y):y=t[23];let b;t[24]!==v||t[25]!==y?(b=(0,q.jsxs)(`div`,{className:`flex items-center gap-3`,children:[v,y]}),t[24]=v,t[25]=y,t[26]=b):b=t[26];let x;return t[27]!==_||t[28]!==b?(x=(0,q.jsxs)(`div`,{className:`flex items-center justify-between gap-4 py-4`,children:[_,b]}),t[27]=_,t[28]=b,t[29]=x):x=t[29],x}function td({copyVariant:e,intl:t,isEnabled:n,rechargeTarget:r,rechargeThreshold:i}){if(!n)return e==null?null:t.formatMessage(Ku(e));let a=nd(r),o=nd(i);return a==null||o==null?null:t.formatMessage(sd.autoRechargeDetail,{target:t.formatNumber(a),threshold:t.formatNumber(o)})}function nd(e){if(e==null)return null;let t=Number.parseInt(e,10);return Number.isFinite(t)?t:null}var rd,id,q,ad,od,sd,cd=e((()=>{rd=pt(),en(),Ii(),rr(),Hu(),Jt(),Wu(),Gt(),qa(),pe(),nr(),Mn(),Vt(),fr(),le(),H(),Zt(),Me(),y(),d(),p(),u(),On(),Zu(),fn(),Jn(),Mt(),xn(),qo(),Ur(),Zr(),ke(),dt(),id=n(at()),rt(),as(),Cn(),q=qe(),lt(),ad=V(()=>st(()=>import(`./99e0f7e1-d963p6goimga1tp9.js`).then(e=>e.ManageAlertsModal),__vite__mapDeps([15,1,2,3,4,5,6,7,8,9,16,17]))),od=`3713711303`,sd=Qe({title:{id:`organizationBillingInfo.creditBalance.title`,defaultMessage:`Credits balance`},addCreditsButton:{id:`organizationBillingInfo.creditBalance.addCreditsButton`,defaultMessage:`Add credits`},autoRechargeLabel:{id:`organizationBillingInfo.creditBalance.autoRechargeLabel`,defaultMessage:`Automatic reload`},autoRechargeDetail:{id:`organizationBillingInfo.creditBalance.autoRechargeDetail`,defaultMessage:`Top up to {target} when balance reaches {threshold}`},autoRechargeRecommended:{id:`organizationBillingInfo.creditBalance.autoRechargeRecommended`,defaultMessage:`Recommended`},usageAlertsLabel:{id:`organizationBillingInfo.creditBalance.usageAlertsLabel`,defaultMessage:`Usage alerts`},manageButton:{id:`organizationBillingInfo.creditBalance.manageButton`,defaultMessage:`Manage`},balanceLoadError:{id:`organizationBillingInfo.creditBalance.balanceLoadError`,defaultMessage:`Unable to load the current credits balance.`},balanceAmount:{id:`organizationBillingInfo.creditBalance.balanceAmount`,defaultMessage:`/ {amount}`},expiringCreditsSummary:{id:`organizationBillingInfo.creditBalance.expiringCreditsSummary`,defaultMessage:`{expiringCredits, plural, one {# credit expiring on {expiryDate}} other {# credits expiring on {expiryDate}}}`},autoRechargeDisabled:{id:`organizationBillingInfo.creditBalance.autoRechargeDisabledToast`,defaultMessage:`Automatic reload turned off.`},autoRechargeDisableError:{id:`organizationBillingInfo.creditBalance.autoRechargeDisableErrorToast`,defaultMessage:`Unable to turn off automatic reload.`}})}));function ld({isPremiumSeatFeatureEnabled:e,seatTypes:t}){return(e&&t.includes(dd)?[ud,dd,fd]:[fd,ud]).filter(e=>t.includes(e))}var ud,dd,fd,pd=e((()=>{ud=`default`,dd=`prolite`,fd=`usage_based`}));function md({seatType:e,seatTypeCreditLimits:t}){return bt(t?.[e])}function hd({allowedSeatTypes:e,nextLimit:t,preservableSeatTypes:n=e,seatType:r,seatTypeCreditLimits:i}){if(!e.includes(r))throw Error(`Cannot update monthly usage limit for disallowed seat type: ${r}`);let a=new Set(e);n.includes(Ed)&&i?.[Ed]!=null&&a.add(Ed);let o={};for(let e of a)o[e]=e===r?gd(t):i?.[e]??[];return{seat_type_credit_limits:o}}function gd(e){return e==null?[]:[{limit:e,enforcement_mode:`HARD_CAP`}]}function _d(e){"use forget";let t=(0,Sd.c)(46),{canManageSeatTypeLimits:n,canViewMemberOverridesEntrypoint:r,minimumLimitBySeatType:a,seatTypes:o,workspaceId:s}=e,c=mt(),l=We(),u=$e(),d=et(),[f,p]=(0,Cd.useState)(null),m=ld({isPremiumSeatFeatureEnabled:_i(s),seatTypes:o}),h=n,g=r,_=m.length===1&&m[0]===Td,v=m.includes(Ed),y=me(s!=null&&m.length>0?s:void 0,vd),b;t[0]!==u||t[1]!==s?(b=async e=>{u.setQueryData([`workspace-settings`,s],e),await u.invalidateQueries({queryKey:[`workspace-settings`,s]})},t[0]=u,t[1]=s,t[2]=b):b=t[2];let x=ut({mutationFn:async e=>{let{limit:t,seatType:n}=e;if(!s)throw Error(`Workspace id is required`);return await S.safePost(`/accounts/{account_id}/settings/seat_type_credit_limits`,{parameters:{path:{account_id:s}},requestBody:hd({allowedSeatTypes:m,nextLimit:t,preservableSeatTypes:o,seatType:n,seatTypeCreditLimits:y.data})})},onSuccess:b});if(s==null||m.length===0&&!g)return null;let C;t[3]===y.data?C=t[4]:(C=md({seatType:Td,seatTypeCreditLimits:y.data}),t[3]=y.data,t[4]=C);let w=C,T;t[5]===y.data?T=t[6]:(T=md({seatType:Dd,seatTypeCreditLimits:y.data}),t[5]=y.data,t[6]=T);let E=T,D;t[7]===y.data?D=t[8]:(D=md({seatType:Ed,seatTypeCreditLimits:y.data}),t[7]=y.data,t[8]=D);let O=D,k;t[9]!==c||t[10]!==y.error?.message?(k=y.error?.message.trim()||c.formatMessage(Od.settingsLoadError),t[9]=c,t[10]=y.error?.message,t[11]=k):k=t[11];let A=k,j;t[12]!==f||t[13]!==c||t[14]!==l||t[15]!==x?(j=async e=>{if(f!=null)try{await x.mutateAsync({limit:e,seatType:f}),l.success(c.formatMessage(Od.saveSuccess),{hasCloseButton:!0}),p(null)}catch{l.warning(c.formatMessage(Od.saveError),{hasCloseButton:!0})}},t[12]=f,t[13]=c,t[14]=l,t[15]=x,t[16]=j):j=t[16];let M=j,ee=f===Td?w:f===Ed?O:f===Dd?E:null,te=f==null?0:a?.[f]??+(f===Dd),N=fi,P;t[17]===Symbol.for(`react.memo_cache_sentinel`)?(P=(0,wd.jsx)(`div`,{className:`text-token-text-primary text-xl leading-6 font-normal`,children:(0,wd.jsx)(W,{...Od.title})}),t[17]=P):P=t[17];let ne=_?Od.singleSeatDescription:Od.description,re;t[18]===ne?re=t[19]:(re=(0,wd.jsx)(Br,{className:`text-token-text-secondary mt-1`,children:(0,wd.jsx)(W,{...ne})}),t[18]=ne,t[19]=re);let F;t[20]!==y.isError||t[21]!==A?(F=y.isError?(0,wd.jsx)(Br,{className:`text-token-text-status-warning mt-2`,children:A}):null,t[20]=y.isError,t[21]=A,t[22]=F):F=t[22];let I;t[23]!==re||t[24]!==F?(I=(0,wd.jsxs)(`div`,{className:`p-6`,children:[P,re,F]}),t[23]=re,t[24]=F,t[25]=I):I=t[25];let ie=m.map(e=>(0,wd.jsx)(yd,{canManageSeatTypeLimits:h,isSaving:x.isPending,seatTypeCreditLimitsQuery:y,seatType:e,useGenericLabel:_,usePremiumSeatTypeLabels:v,onClick:()=>p(e)},e)),L;t[26]!==g||t[27]!==c||t[28]!==d?(L=g?(0,wd.jsxs)(`div`,{className:`flex items-center justify-between gap-4 py-4`,children:[(0,wd.jsxs)(`div`,{className:`min-w-0`,children:[(0,wd.jsx)(`div`,{className:`text-token-text-primary text-base`,children:(0,wd.jsx)(W,{...Od.perUserOverrideLabel})}),(0,wd.jsx)(Br,{className:`text-token-text-secondary mt-1`,children:(0,wd.jsx)(W,{...Od.perUserOverrideDescription})})]}),(0,wd.jsx)(i,{color:`secondary`,size:`medium`,type:`button`,className:`min-w-[74px]`,label:c.formatMessage(Od.perUserOverrideButtonLabel),onClick:()=>{d(`/admin/billing/manage_member_usage_limit`)},children:(0,wd.jsx)(W,{...Od.manageButton})})]}):null,t[26]=g,t[27]=c,t[28]=d,t[29]=L):L=t[29];let R;t[30]!==ie||t[31]!==L?(R=(0,wd.jsxs)(`div`,{className:`border-token-border-default divide-token-border-default divide-y px-6`,children:[ie,L]}),t[30]=ie,t[31]=L,t[32]=R):R=t[32];let z;t[33]!==N||t[34]!==I||t[35]!==R?(z=(0,wd.jsxs)(N,{className:`border-token-border-default bg-token-bg-primary gap-0 rounded-xl border`,children:[I,R]}),t[33]=N,t[34]=I,t[35]=R,t[36]=z):z=t[36];let ae;t[37]!==ee||t[38]!==te||t[39]!==f||t[40]!==M||t[41]!==c?(ae=f==null?null:(0,wd.jsx)(ns,{currentLimit:ee,getValidationResult:te>0?e=>es({intl:c,limit:e,minimumLimit:te}):void 0,placeholder:String(te),onClose:()=>p(null),onSave:M}),t[37]=ee,t[38]=te,t[39]=f,t[40]=M,t[41]=c,t[42]=ae):ae=t[42];let B;return t[43]!==z||t[44]!==ae?(B=(0,wd.jsxs)(wd.Fragment,{children:[z,ae]}),t[43]=z,t[44]=ae,t[45]=B):B=t[45],B}function vd(e){return e.seat_type_credit_limits}function yd(e){"use forget";let t=(0,Sd.c)(38),{canManageSeatTypeLimits:n,isSaving:r,seatTypeCreditLimitsQuery:a,seatType:o,useGenericLabel:s,usePremiumSeatTypeLabels:c,onClick:l}=e,u=mt(),d,f,p,m;t[0]!==n||t[1]!==u||t[2]!==r||t[3]!==o||t[4]!==a.data||t[5]!==a.isError||t[6]!==a.isLoading?(p=md({seatType:o,seatTypeCreditLimits:a.data}),f=a.isLoading,d=!n||a.isLoading||a.isError||r,m=xd({intl:u,limit:p}),t[0]=n,t[1]=u,t[2]=r,t[3]=o,t[4]=a.data,t[5]=a.isError,t[6]=a.isLoading,t[7]=d,t[8]=f,t[9]=p,t[10]=m):(d=t[7],f=t[8],p=t[9],m=t[10]);let h=m,g;t[11]!==u||t[12]!==p?(g=u.formatMessage(p==null?Od.addButton:Od.editButton),t[11]=u,t[12]=p,t[13]=g):g=t[13];let _=g,v;t[14]!==o||t[15]!==s||t[16]!==c?(v=bd({seatType:o,useGenericLabel:s,usePremiumSeatTypeLabels:c}),t[14]=o,t[15]=s,t[16]=c,t[17]=v):v=t[17];let y=v,b;t[18]===y?b=t[19]:(b=(0,wd.jsx)(`div`,{className:`text-token-text-primary text-base`,children:(0,wd.jsx)(W,{...y})}),t[18]=y,t[19]=b);let x;t[20]!==h||t[21]!==f?(x=f?(0,wd.jsx)(ee,{className:`text-token-text-tertiary h-4 w-4`}):(0,wd.jsx)(Br,{className:`text-token-text-secondary mt-1`,children:h}),t[20]=h,t[21]=f,t[22]=x):x=t[22];let S;t[23]!==b||t[24]!==x?(S=(0,wd.jsxs)(`div`,{className:`min-w-0`,children:[b,x]}),t[23]=b,t[24]=x,t[25]=S):S=t[25];let C=!n,w=`${o}-seat-limit-owner-disabled-tooltip-trigger`,T;t[26]!==_||t[27]!==d||t[28]!==f||t[29]!==l?(T=(0,wd.jsx)(i,{color:`secondary`,size:`medium`,className:`min-w-[74px]`,loading:f,disabled:d,onClick:l,children:_}),t[26]=_,t[27]=d,t[28]=f,t[29]=l,t[30]=T):T=t[30];let E;t[31]!==C||t[32]!==w||t[33]!==T?(E=(0,wd.jsx)(os,{disabled:C,testId:w,children:T}),t[31]=C,t[32]=w,t[33]=T,t[34]=E):E=t[34];let D;return t[35]!==E||t[36]!==S?(D=(0,wd.jsxs)(`div`,{className:`flex items-center justify-between gap-4 py-4`,children:[S,E]}),t[35]=E,t[36]=S,t[37]=D):D=t[37],D}function bd({seatType:e,useGenericLabel:t,usePremiumSeatTypeLabels:n}){if(t)return Od.perSeatLimitLabel;if(n)switch(e){case Td:return Od.standardSeatLabel;case Ed:return Od.premiumSeatLabel;case Dd:return Od.codexSeatLabel}switch(e){case Td:return Od.chatgptSeatLabel;case Ed:return Od.premiumSeatLabel;case Dd:return Od.codexSeatLabel}}function xd({intl:e,limit:t}){return t==null?e.formatMessage(Od.noneLabel):e.formatMessage(Od.limitDescription,{count:t,value:e.formatNumber(t)})}var Sd,Cd,wd,Td,Ed,Dd,Od,kd=e((()=>{Sd=pt(),ci(),qa(),pe(),R(),Ge(),y(),p(),dt(),Cd=n(at()),rt(),nt(),as(),ts(),Nt(),pd(),wd=qe(),Td=`default`,Ed=`prolite`,Dd=`usage_based`,Od=Qe({title:{id:`organizationBillingInfo.monthlyUsageLimits.title`,defaultMessage:`Monthly usage limits`},description:{id:`organizationBillingInfo.monthlyUsageLimits.description`,defaultMessage:`Set default spend allocations per seat type.`},singleSeatDescription:{id:`organizationBillingInfo.monthlyUsageLimits.description.singleSeat`,defaultMessage:`Set default spend allocations per seat.`},chatgptSeatLabel:{id:`organizationBillingInfo.monthlyUsageLimits.chatgptSeatLabel`,defaultMessage:`ChatGPT seat`},standardSeatLabel:{id:`organizationBillingInfo.monthlyUsageLimits.standardSeatLabel`,defaultMessage:`Standard seat`},premiumSeatLabel:{id:`organizationBillingInfo.monthlyUsageLimits.premiumSeatLabel`,defaultMessage:`Premium seat`},perSeatLimitLabel:{id:`organizationBillingInfo.monthlyUsageLimits.perSeatLimitLabel`,defaultMessage:`Per seat limit`},codexSeatLabel:{id:`organizationBillingInfo.monthlyUsageLimits.codexSeatLabel`,defaultMessage:`Codex seat`},settingsLoadError:{id:`organizationBillingInfo.monthlyUsageLimits.settingsLoadError`,defaultMessage:`Unable to load the current monthly usage limits.`},perUserOverrideLabel:{id:`organizationBillingInfo.monthlyUsageLimits.perUserOverrideLabel`,defaultMessage:`Per user override`},perUserOverrideDescription:{id:`organizationBillingInfo.monthlyUsageLimits.perUserOverrideDescription`,defaultMessage:`Override the default usage limits for individuals`},perUserOverrideButtonLabel:{id:`organizationBillingInfo.monthlyUsageLimits.perUserOverrideButtonLabel`,defaultMessage:`Open per user override settings`},manageButton:{id:`organizationBillingInfo.monthlyUsageLimits.manageButton`,defaultMessage:`Manage`},noneLabel:{id:`organizationBillingInfo.monthlyUsageLimits.noneLabel`,defaultMessage:`None`},limitDescription:{id:`organizationBillingInfo.monthlyUsageLimits.limitDescription`,defaultMessage:`{value} {count, plural, one {credit} other {credits}}`},addButton:{id:`organizationBillingInfo.monthlyUsageLimits.addButton`,defaultMessage:`Add`},editButton:{id:`organizationBillingInfo.monthlyUsageLimits.editButton`,defaultMessage:`Edit`},saveSuccess:{id:`organizationBillingInfo.monthlyUsageLimits.saveSuccess`,defaultMessage:`Usage limit updated`},saveError:{id:`organizationBillingInfo.monthlyUsageLimits.saveError`,defaultMessage:`Unable to update the usage limit.`}})}));function Ad(e){"use forget";let t=(0,jd.c)(77),{workspaceId:n,canEdit:r}=e,a=$e(),o=mt(),s=Lo(n),c;t[0]===n?c=t[1]:(c=_i(n),t[0]=n,t[1]=c);let l=c,{data:u,isPending:d}=me(n),f=u?.default_seat_type===`prolite`,p=(0,Md.useId)(),h=(0,Md.useId)(),g=(0,Md.useId)(),_=(0,Md.useId)(),[v,y]=(0,Md.useState)(null),{mutate:b,isPending:x}=qn(n),C;t[2]===n?C=t[3]:(C=e=>S.safePost(`/accounts/{account_id}/settings/auto_approve_seat_upgrades`,{parameters:{path:{account_id:n}},requestBody:{value:e}}),t[2]=n,t[3]=C);let w;t[4]!==a||t[5]!==n?(w=()=>a.invalidateQueries({queryKey:[`workspace-settings`,n]}),t[4]=a,t[5]=n,t[6]=w):w=t[6];let T;t[7]===o?T=t[8]:(T=e=>{m().danger(o.formatMessage({id:`organizationBillingInfo.seatPreferences.autoUpgrade.error`,defaultMessage:`Couldn’t update automatic seat upgrades. Please try again.`}),{loggingTitle:e.message})},t[7]=o,t[8]=T);let E;t[9]!==C||t[10]!==w||t[11]!==T?(E={mutationFn:C,onSuccess:w,onError:T},t[9]=C,t[10]=w,t[11]=T,t[12]=E):E=t[12];let{mutate:D,isPending:O}=ut(E),k=x||O,A=s||l||f,j,M,ee;if(t[13]!==r||t[14]!==d||t[15]!==k){let e=se(`1628125068`);M=e.get(`allow_invite_purchases`,!1),j=r&&!d&&!k,ee=e.get(`allowed_payment_method_types`,[]),t[13]=r,t[14]=d,t[15]=k,t[16]=j,t[17]=M,t[18]=ee}else j=t[16],M=t[17],ee=t[18];let te=ee.length>0,N;t[19]!==r||t[20]!==l||t[21]!==u||t[22]!==n?(N=r&&l&&u!=null&&He().getContext().user.customIDs?.workspace_id===n,t[19]=r,t[20]=l,t[21]=u,t[22]=n,t[23]=N):N=t[23];let P=N,ne=P&&!k,re;t[24]===Symbol.for(`react.memo_cache_sentinel`)?(re=(0,Nd.jsx)(`div`,{className:`p-6`,children:(0,Nd.jsx)(`div`,{className:`text-token-text-primary text-xl leading-6 font-normal`,children:(0,Nd.jsx)(W,{...Fd.title})})}),t[24]=re):re=t[24];let F;t[25]!==r||t[26]!==p||t[27]!==l||t[28]!==s||t[29]!==A||t[30]!==n?(F=A&&(0,Nd.jsxs)(`div`,{className:`flex items-center justify-between gap-4 py-4`,children:[(0,Nd.jsx)(`div`,{id:p,className:`text-token-text-primary text-base`,children:(0,Nd.jsx)(W,{...Fd.defaultSeatTypeLabel})}),(0,Nd.jsx)(os,{disabled:!r,testId:`default-seat-type-owner-disabled-tooltip-trigger`,children:(0,Nd.jsx)(is,{workspaceId:n,includeUsageBased:s,includeProlite:l,disabled:!r,triggerClassName:`min-w-[110px] justify-between text-sm`,ariaLabelledBy:p,analyticsSurface:`billing_settings`,firstChatgptSeatPurchaseEntrypoint:`workspace_identity_default_seat_type`})})]}),t[25]=r,t[26]=p,t[27]=l,t[28]=s,t[29]=A,t[30]=n,t[31]=F):F=t[31];let I;t[32]===Symbol.for(`react.memo_cache_sentinel`)?(I=(0,Nd.jsx)(W,{id:`organizationBillingInfo.seatPreferences.autoJoin.label`,defaultMessage:`Auto-approve join requests`}),t[32]=I):I=t[32];let ie;t[33]===h?ie=t[34]:(ie=(0,Nd.jsx)(`div`,{id:h,className:`text-token-text-primary text-base`,children:I}),t[33]=h,t[34]=ie);let L;t[35]===M?L=t[36]:(L=(0,Nd.jsx)(`div`,{className:`text-token-text-secondary mt-1 text-sm`,children:M?(0,Nd.jsx)(W,{id:`organizationBillingInfo.seatPreferences.autoJoin.invitations.description`,defaultMessage:`Auto-approve requests to join from eligible email domains and allow invited users to join even when the workspace is full. You will be billed immediately for any additional seats needed.`}):(0,Nd.jsx)(W,{id:`organizationBillingInfo.seatPreferences.autoJoin.description`,defaultMessage:`All members who request to join the workspace will be automatically approved`})}),t[35]=M,t[36]=L);let R;t[37]!==ie||t[38]!==L?(R=(0,Nd.jsxs)(`div`,{children:[ie,L]}),t[37]=ie,t[38]=L,t[39]=R):R=t[39];let z=!r,ae=u?.auto_accept_requests,B=!j,oe=k||void 0,V;t[40]===b?V=t[41]:(V=e=>{e&&te?y(`join`):b({autoAcceptRequests:e})},t[40]=b,t[41]=V);let H;t[42]!==h||t[43]!==ae||t[44]!==B||t[45]!==oe||t[46]!==V?(H=(0,Nd.jsx)(be,{"aria-labelledby":h,checked:ae,disabled:B,"aria-busy":oe,onCheckedChange:V}),t[42]=h,t[43]=ae,t[44]=B,t[45]=oe,t[46]=V,t[47]=H):H=t[47];let ce;t[48]!==z||t[49]!==H?(ce=(0,Nd.jsx)(os,{disabled:z,children:H}),t[48]=z,t[49]=H,t[50]=ce):ce=t[50];let le;t[51]!==R||t[52]!==ce?(le=(0,Nd.jsxs)(`div`,{className:`flex items-center justify-between gap-4 py-4`,children:[R,ce]}),t[51]=R,t[52]=ce,t[53]=le):le=t[53];let ue;t[54]!==g||t[55]!==ne||t[56]!==k||t[57]!==D||t[58]!==u||t[59]!==P?(ue=P&&(0,Nd.jsxs)(`div`,{className:`flex items-center justify-between gap-4 py-4`,children:[(0,Nd.jsxs)(`div`,{children:[(0,Nd.jsx)(`div`,{id:g,className:`text-token-text-primary text-base`,children:(0,Nd.jsx)(W,{id:`organizationBillingInfo.seatPreferences.autoUpgrade.label`,defaultMessage:`Auto-approve seat upgrades`})}),(0,Nd.jsx)(`div`,{className:`text-token-text-secondary mt-1 text-sm`,children:(0,Nd.jsx)(W,{id:`organizationBillingInfo.seatPreferences.autoUpgrade.description`,defaultMessage:`Members who request to upgrade from Standard to Premium will be automatically approved`})})]}),(0,Nd.jsx)(be,{"aria-labelledby":g,checked:u.auto_approve_seat_upgrades,disabled:!ne,"aria-busy":k||void 0,onCheckedChange:e=>{e?y(`upgrade`):D(!1)}})]}),t[54]=g,t[55]=ne,t[56]=k,t[57]=D,t[58]=u,t[59]=P,t[60]=ue):ue=t[60];let de;t[61]!==le||t[62]!==ue||t[63]!==F?(de=(0,Nd.jsxs)(`div`,{className:`border-token-border-default divide-token-border-default divide-y px-6`,children:[F,le,ue]}),t[61]=le,t[62]=ue,t[63]=F,t[64]=de):de=t[64];let fe;t[65]!==j||t[66]!==ne||t[67]!==v||t[68]!==_||t[69]!==M||t[70]!==k||t[71]!==b||t[72]!==D?(fe=v!=null&&(0,Nd.jsx)(Pd,{isOpen:!0,size:`large`,className:`rounded-3xl`,headerClassName:`px-6 py-5 ps-6`,contentClassName:`px-6 pt-0 pb-6`,modalActionsClassName:`mt-6 sm:mt-6`,showCloseButton:!0,closeButton:(0,Nd.jsx)(Ce,{disabled:k,onClick:()=>y(null)}),shouldIgnoreClickOutside:k,ariaDescribedBy:_,title:(0,Nd.jsx)(`span`,{className:`font-semibold`,children:(0,Nd.jsx)(W,{id:`organizationBillingInfo.seatPreferences.autoJoin.confirmation.title`,defaultMessage:`Are you sure?`})}),onClose:()=>y(null),primaryButton:(0,Nd.jsx)(i,{color:`primary`,size:`large`,loading:k,onClick:()=>{if(v===`upgrade`){if(!ne)return;D(!0,{onSuccess:()=>y(null)});return}j&&b({autoAcceptRequests:!0},{onSuccess:()=>y(null)})},children:(0,Nd.jsx)(W,{id:`ConfirmModal.confirmLabel`,defaultMessage:`Confirm`})}),secondaryButton:(0,Nd.jsx)(i,{color:`secondary`,size:`large`,disabled:k,onClick:()=>y(null),children:(0,Nd.jsx)(W,{id:`ConfirmModal.cancelLabel`,defaultMessage:`Cancel`})}),children:(0,Nd.jsx)(`p`,{id:_,className:`text-token-text-secondary text-sm leading-5`,children:v===`upgrade`?(0,Nd.jsx)(W,{id:`organizationBillingInfo.seatPreferences.autoUpgrade.confirmation.description`,defaultMessage:`Turning this on will auto-approve all future requests from members moving from a Standard seat to a Premium seat. You will be billed immediately if there is no available Premium seat capacity.`}):M?(0,Nd.jsx)(W,{id:`organizationBillingInfo.seatPreferences.autoJoin.invitations.confirmation`,defaultMessage:`Turning this on will auto-approve future requests to join from eligible email domains and allow invited users to join even when the workspace is full. You will be billed immediately for any additional seats needed.`}):(0,Nd.jsx)(W,{id:`organizationBillingInfo.seatPreferences.autoJoin.confirmation.description`,defaultMessage:`Turning this on will auto-approve all future requests for members who request to join the workspace from eligible email domains. You will be billed immediately if there is no available seat capacity.`})})}),t[65]=j,t[66]=ne,t[67]=v,t[68]=_,t[69]=M,t[70]=k,t[71]=b,t[72]=D,t[73]=fe):fe=t[73];let pe;return t[74]!==de||t[75]!==fe?(pe=(0,Nd.jsxs)(fi,{className:`border-token-border-default bg-token-bg-primary gap-0 rounded-xl border`,children:[re,de,fe]}),t[74]=de,t[75]=fe,t[76]=pe):pe=t[76],pe}var jd,Md,Nd,Pd,Fd,Id=e((()=>{jd=pt(),ci(),Ro(),rs(),qa(),tr(),pe(),C(),H(),R(),y(),p(),dt(),u(),ke(),Md=n(at()),rt(),as(),Nd=qe(),lt(),Pd=V(()=>st(()=>import(`./4813494d-mdvd4786a87166cc.js`).then(e=>(e.Aw(),e.kw)),__vite__mapDeps([2,1,3,4]))),Fd=Qe({title:{id:`organizationBillingInfo.seatPreferences.title`,defaultMessage:`Seat preferences`},defaultSeatTypeLabel:{id:`organizationBillingInfo.seatPreferences.defaultSeatType.label`,defaultMessage:`Default seat type`}})})),Ld,Rd,zd,Bd,Vd,Hd=e((()=>{Ld=pt(),Qi(),qa(),pe(),Ta(),xi(),Ge(),dt(),rt(),Rd=qe(),zd=e=>{"use forget";let t=(0,Ld.c)(14),{canRedeemGiftCard:n,formattedBalance:r,status:a}=e,o;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,Rd.jsx)(`h3`,{className:`text-token-text-primary text-xl leading-6 font-normal`,children:(0,Rd.jsx)(W,{...Vd.walletBalanceTitle})}),t[0]=o):o=t[0];let s;t[1]===n?s=t[2]:(s=n&&(0,Rd.jsx)(i,{as:`link`,to:`/redeem?entry_point=business_billing`,color:`secondary`,size:`medium`,className:`h-[38px] min-h-[38px] min-w-[142px] rounded-full px-3.5`,children:(0,Rd.jsx)(W,{...Vd.redeemGiftCard})}),t[1]=n,t[2]=s);let c;t[3]===s?c=t[4]:(c=(0,Rd.jsxs)(`div`,{className:`flex w-full items-center justify-between gap-4`,children:[o,s]}),t[3]=s,t[4]=c);let l;t[5]!==r||t[6]!==a?(l=a===`loading`?(0,Rd.jsxs)(`div`,{className:`text-token-text-secondary flex h-[26px] items-center gap-2 text-sm`,children:[(0,Rd.jsx)(ee,{className:`icon-sm`}),(0,Rd.jsx)(W,{...Vd.loadingWalletBalance})]}):a===`unavailable`||r==null?(0,Rd.jsx)(`p`,{className:`text-token-text-status-warning h-[26px] text-sm leading-[26px]`,role:`alert`,children:(0,Rd.jsx)(W,{...Vd.walletBalanceUnavailable})}):(0,Rd.jsx)(`p`,{className:`text-token-text-primary text-heading-3 font-[590] tracking-[-0.45px]`,children:r}),t[5]=r,t[6]=a,t[7]=l):l=t[7];let u;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,Rd.jsx)(Br,{className:`text-token-text-secondary w-full`,children:(0,Rd.jsx)(W,{...Vd.walletBalanceDescription})}),t[8]=u):u=t[8];let d;t[9]===l?d=t[10]:(d=(0,Rd.jsxs)(`div`,{className:`flex w-full flex-col items-start gap-0.5`,children:[l,u]}),t[9]=l,t[10]=d);let f;return t[11]!==c||t[12]!==d?(f=(0,Rd.jsxs)(fi,{className:`border-token-border-default bg-token-bg-primary gap-4 overflow-hidden rounded-xl border p-6`,children:[c,d]}),t[11]=c,t[12]=d,t[13]=f):f=t[13],f},Bd=e=>{"use forget";let t=(0,Ld.c)(24),{account:n}=e,r=mt(),i;t[0]===n?i=t[1]:(i=yi(n),t[0]=n,t[1]=i);let a=i,o;t[2]!==n||t[3]!==a?(o=n.isSelfServeBusiness()&&n.isOwnerOfAccount()&&a.featureEnabled,t[2]=n,t[3]=a,t[4]=o):o=t[4];let s=o,c;t[5]===n.id?c=t[6]:(c=pi(n.id,{includeRedemptionStatus:!0}),t[5]=n.id,t[6]=c);let l;t[7]!==s||t[8]!==c?(l={...c,enabled:s,refetchOnWindowFocus:`always`,refetchOnReconnect:`always`},t[7]=s,t[8]=c,t[9]=l):l=t[9];let{data:u,error:d,isFetching:f,isPending:p}=tt(l),m;t[10]!==n||t[11]!==u?(m=yi(n,u),t[10]=n,t[11]=u,t[12]=m):m=t[12];let h=m;if(!s||p||!h.shouldShowWallet)return null;let g,_;if(t[13]!==n||t[14]!==u||t[15]!==d||t[16]!==r||t[17]!==f){let e=ta(u),i=e?.currency??n.getSubscriptionBillingCurrency();g=f?`loading`:d!=null||i==null?`unavailable`:`ready`,_=g===`ready`&&u!=null&&i!=null?Hr({intl:r,amount:u.has_redeemed_gift_card===!0&&(e?.balance??0)>0?-(e?.balance??0):Math.max(0,-(e?.balance??0)),currency:i}):null,t[13]=n,t[14]=u,t[15]=d,t[16]=r,t[17]=f,t[18]=g,t[19]=_}else g=t[18],_=t[19];let v=_,y;return t[20]!==h.canRedeemGiftCard||t[21]!==v||t[22]!==g?(y=(0,Rd.jsx)(zd,{canRedeemGiftCard:h.canRedeemGiftCard,formattedBalance:v,status:g}),t[20]=h.canRedeemGiftCard,t[21]=v,t[22]=g,t[23]=y):y=t[23],y},Vd=Qe({walletBalanceTitle:{id:`workspaceBilling.walletBalance.title`,defaultMessage:`Wallet balance`},redeemGiftCard:{id:`workspaceBilling.walletBalance.redeemGiftCard`,defaultMessage:`Redeem gift card`},walletBalanceDescription:{id:`workspaceBilling.walletBalance.description`,defaultMessage:`Your wallet balance is automatically applied to eligible purchases, including subscriptions and credit payments.`},loadingWalletBalance:{id:`workspaceBilling.walletBalance.loading`,defaultMessage:`Loading balance…`},walletBalanceUnavailable:{id:`workspaceBilling.walletBalance.unavailable`,defaultMessage:`Not available`}})}));function Ud(e){"use forget";let t=(0,Kd.c)(24),{maxTotalCreditAmount:n,onInvite:r,perEligibleInviteCreditAmount:a}=e,o=mt(),s=(0,qd.useRef)(!1),c=!!(n&&a),l,u;if(t[0]===c?(l=t[1],u=t[2]):(l=()=>{!c||s.current||(s.current=!0,Eo({surface:`billing_admin_banner`}))},u=[c],t[0]=c,t[1]=l,t[2]=u),(0,qd.useEffect)(l,u),!c)return null;let d;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,Jd.jsx)(`div`,{className:`pointer-events-none absolute inset-0 bg-cover bg-left-top bg-no-repeat`,style:{backgroundImage:`url(${Xd})`}}),t[3]=d):d=t[3];let f;t[4]===o?f=t[5]:(f=o.formatMessage(Qd.logoAlt),t[4]=o,t[5]=f);let p;t[6]===f?p=t[7]:(p=(0,Jd.jsx)(`img`,{alt:f,className:`hidden h-[54px] w-[54px] shrink-0 sm:block`,src:Yd}),t[6]=f,t[7]=p);let m;t[8]===n?m=t[9]:(m=(0,Jd.jsx)(`div`,{className:`text-sm leading-5 font-medium text-[#0D0D0D] dark:text-[#0D0D0D]`,children:(0,Jd.jsx)(W,{...Qd.title,values:{maxTotalCreditAmount:n}})}),t[8]=n,t[9]=m);let h;t[10]===a?h=t[11]:(h=(0,Jd.jsx)(`div`,{className:`mt-1 text-sm leading-5 text-[#5D5D5D] dark:text-[#5D5D5D]`,children:(0,Jd.jsx)(W,{...Qd.body,values:{perEligibleInviteCreditAmount:a,termsLink:Wd}})}),t[10]=a,t[11]=h);let g;t[12]!==m||t[13]!==h?(g=(0,Jd.jsxs)(`div`,{className:`min-w-0 flex-1`,children:[m,h]}),t[12]=m,t[13]=h,t[14]=g):g=t[14];let _;t[15]===r?_=t[16]:(_=()=>{To({destination:`admin_invite_modal`,surface:`billing_admin_banner`}),r()},t[15]=r,t[16]=_);let v;t[17]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,Jd.jsx)(W,{...Qd.invite}),t[17]=v):v=t[17];let y;t[18]===_?y=t[19]:(y=(0,Jd.jsx)(`div`,{className:`w-full sm:w-auto sm:self-center`,children:(0,Jd.jsx)(i,{className:`min-h-10 w-full rounded-full bg-gray-950 px-4 text-white hover:bg-gray-800 sm:min-h-11 sm:w-auto sm:px-5 dark:bg-gray-950! dark:text-white! dark:hover:bg-gray-800!`,onClick:_,size:`large`,children:v})}),t[18]=_,t[19]=y);let b;return t[20]!==y||t[21]!==p||t[22]!==g?(b=(0,Jd.jsxs)(`section`,{className:`border-token-border-default relative overflow-hidden rounded-2xl border bg-white shadow-[0px_4px_16px_0px_rgba(0,0,0,0.05)] dark:border-[#424242] dark:bg-white`,children:[d,(0,Jd.jsxs)(`div`,{className:`relative flex flex-col items-start gap-3 px-4 py-3 sm:flex-row sm:items-center sm:gap-4 sm:px-5 sm:py-4`,children:[p,g,y]})]}),t[20]=y,t[21]=p,t[22]=g,t[23]=b):b=t[23],b}function Wd(e){return(0,Jd.jsx)(cn,{className:`underline`,href:Zd,onClick:Gd,rel:`noopener noreferrer`,target:`_blank`,children:e})}function Gd(){To({destination:`terms`,surface:`billing_admin_banner`})}var Kd,qd,Jd,Yd,Xd,Zd,Qd,$d=e((()=>{Kd=pt(),pe(),pn(),Do(),qd=n(at()),rt(),Jd=qe(),Yd=`https://openaiassets.blob.core.windows.net/$web/codex/codex-icon-200.png`,Xd=`https://openaiassets.blob.core.windows.net/$web/codex/codex-invite-promo-bg.png`,Zd=`https://help.openai.com/en/articles/20001150`,Qd=Qe({title:{id:`codexInvitePromoBanner.title`,defaultMessage:`Add Codex seats and earn up to {maxTotalCreditAmount} in credits`},body:{id:`codexInvitePromoBanner.body`,defaultMessage:`Get {perEligibleInviteCreditAmount} in credits for each person you invite who starts using Codex. <termsLink>View terms.</termsLink>`},invite:{id:`codexInvitePromoBanner.invite`,defaultMessage:`Invite`},logoAlt:{id:`codexInvitePromoBanner.logoAlt`,defaultMessage:`Codex logo`}})}));function ef({onClose:e}){"use no forget";let t=mt(),n=We(),r=Oe(),{data:i,isLoading:a}=Dt(),o=Wt(r?.id),{shouldShowImmediateTrialCancellationVariant:s,trialDaysRemaining:l}=Ao(r);if(a||!r||!i)return null;let u=i.active_until?new Date(i.active_until):null,d=!i.will_renew,f=l??1;return(0,tf.jsx)(O,{testId:`modal-move-to-usage-based-billing`,isOpen:!0,onClose:e,title:t.formatMessage(nf.title,{workspaceName:r.name}),primaryButton:(0,tf.jsx)(c,{color:`primary`,onClick:async()=>{try{await o.mutateAsync({accountId:r.id,cancellationOutcome:`convert_to_usage_based`}),n.success(t.formatMessage(s?nf.moveToUsageBasedBillingImmediateSuccess:nf.moveToUsageBasedBillingSuccess),{hasCloseButton:!0}),e()}catch{n.warning(t.formatMessage(nf.moveToUsageBasedBillingError),{hasCloseButton:!0})}},loading:o.isPending,title:t.formatMessage(nf.confirmButton)}),secondaryButton:(0,tf.jsx)(c,{onClick:e,disabled:o.isPending,title:t.formatMessage(nf.keepPaidSeatsButton)}),children:(0,tf.jsxs)(`div`,{className:`flex flex-col gap-4`,children:[(0,tf.jsx)(`p`,{className:`text-token-text-secondary text-sm`,children:s?(0,tf.jsx)(W,{...nf.immediateTrialSubtitle,values:{days:f}}):u==null?(0,tf.jsx)(W,{...nf.subtitleNoDate}):(0,tf.jsx)(W,{...nf.subtitle,values:{expiryDate:u}})}),d&&(0,tf.jsx)(`p`,{className:`text-token-text-primary text-sm font-medium`,children:(0,tf.jsx)(W,{...nf.pendingDeactivationOverride})}),(0,tf.jsxs)(`ul`,{className:`text-token-text-secondary list-disc ps-5 text-sm`,children:[(0,tf.jsx)(`li`,{children:s?(0,tf.jsx)(W,{...nf.immediateTrialMembersMoveBullet}):u==null?(0,tf.jsx)(W,{...nf.membersMoveBulletNoDate}):(0,tf.jsx)(W,{...nf.membersMoveBullet,values:{expiryDate:u}})}),(0,tf.jsx)(`li`,{children:s?(0,tf.jsx)(W,{...nf.immediateTrialChatgptSeatsEndBullet,values:{days:f}}):u==null?(0,tf.jsx)(W,{...nf.chatgptSeatsEndBulletNoDate}):(0,tf.jsx)(W,{...nf.chatgptSeatsEndBullet,values:{expiryDate:u}})}),(0,tf.jsx)(`li`,{children:(0,tf.jsx)(W,{...nf.workspaceAccessBullet})})]})]})})}var tf,nf,rf=e((()=>{F(),s(),Me(),y(),rt(),jo(),Ht(),tf=qe(),nf=Qe({title:{id:`moveToUsageBasedBillingModal.title`,defaultMessage:`Remove ChatGPT seats in {workspaceName}?`},subtitle:{id:`moveToUsageBasedBillingModal.subtitle`,defaultMessage:`This will move all members to usage-based Codex seats. Existing ChatGPT seats remain active until {expiryDate, date, long}. After that, all members will have Codex-only access.`},subtitleNoDate:{id:`moveToUsageBasedBillingModal.subtitleNoDate`,defaultMessage:`This will move all members to usage-based Codex seats. After the current subscription ends, all members will have Codex-only access.`},immediateTrialSubtitle:{id:`moveToUsageBasedBillingModal.immediateTrialSubtitle`,defaultMessage:`Remove ChatGPT seats and move all members to Codex (usage-based) seats immediately. You will lose the remaining {days, plural, one {# day} other {# days}} in your trial, and all members will have Codex-only access.`},pendingDeactivationOverride:{id:`moveToUsageBasedBillingModal.pendingDeactivationOverride`,defaultMessage:`This replaces the current deactivation request.`},confirmButton:{id:`moveToUsageBasedBillingModal.confirmButton`,defaultMessage:`Remove ChatGPT seats`},keepPaidSeatsButton:{id:`moveToUsageBasedBillingModal.keepPaidSeatsButton`,defaultMessage:`Keep ChatGPT seats`},membersMoveBullet:{id:`moveToUsageBasedBillingModal.membersMoveBullet`,defaultMessage:`All members and pending invites will be moved to Codex (usage-based) seats on {expiryDate, date, long}.`},membersMoveBulletNoDate:{id:`moveToUsageBasedBillingModal.membersMoveBulletNoDate`,defaultMessage:`All members and pending invites will be moved to Codex (usage-based) seats when the current subscription ends.`},immediateTrialMembersMoveBullet:{id:`moveToUsageBasedBillingModal.immediateTrialMembersMoveBullet`,defaultMessage:`All members and pending invites will be moved to Codex (usage-based) seats immediately.`},chatgptSeatsEndBullet:{id:`moveToUsageBasedBillingModal.chatgptSeatsEndBullet`,defaultMessage:`Paid ChatGPT seats stop renewing after {expiryDate, date, long}.`},chatgptSeatsEndBulletNoDate:{id:`moveToUsageBasedBillingModal.chatgptSeatsEndBulletNoDate`,defaultMessage:`Paid ChatGPT seats stop renewing when the current subscription ends.`},immediateTrialChatgptSeatsEndBullet:{id:`moveToUsageBasedBillingModal.immediateTrialChatgptSeatsEndBullet`,defaultMessage:`You will lose the remaining {days, plural, one {# day} other {# days}} in your trial.`},workspaceAccessBullet:{id:`moveToUsageBasedBillingModal.workspaceAccessBullet`,defaultMessage:`Workspace access is retained, but access to ChatGPT and chat data will be lost.`},moveToUsageBasedBillingSuccess:{id:`moveToUsageBasedBillingModal.success`,defaultMessage:`Your workspace will move to usage-based billing when the current subscription ends.`},moveToUsageBasedBillingImmediateSuccess:{id:`moveToUsageBasedBillingModal.immediateSuccess`,defaultMessage:`Your workspace has moved to usage-based billing.`},moveToUsageBasedBillingError:{id:`moveToUsageBasedBillingModal.error`,defaultMessage:`There was an error scheduling usage-based billing for this workspace.`}})}));function af({id:e,checked:t,onChange:n,title:r,body:i,titleValues:a,bodyValues:o}){"use no forget";let s=`${e}-title`,c=`${e}-body`;return(0,J.jsxs)(`label`,{htmlFor:e,className:g(`border-token-border-light hover:border-token-border-default/80 hover:bg-token-bg-tertiary/50 focus-within:border-token-border-default/80 focus-within:ring-token-border-default/40 flex w-full cursor-pointer items-start gap-2.5 rounded-md border px-3 py-2.5 transition-colors focus-within:ring-1`,t&&`border-token-border-default/80 bg-token-bg-tertiary/40`),children:[(0,J.jsx)(`input`,{id:e,type:`checkbox`,checked:t,onChange:e=>n(e.currentTarget.checked),"aria-labelledby":s,"aria-describedby":c,className:`accent-token-text-primary border-token-border-default mt-0.5 h-4 w-4 shrink-0 rounded`}),(0,J.jsxs)(`span`,{className:`flex flex-col gap-px`,children:[(0,J.jsx)(`span`,{id:s,className:`text-token-text-primary text-sm font-medium`,children:(0,J.jsx)(W,{...r,values:a})}),(0,J.jsx)(`span`,{id:c,className:`text-token-text-secondary text-sm leading-[1.35]`,children:(0,J.jsx)(W,{...i,values:o})})]})]})}function of({onClose:e,businessTrialImmediateCancellationState:t}){"use no forget";let n=mt(),r=m(),{data:i,isLoading:a}=Dt(),o=Oe(),s=_i(o?.id),l=jn({enabled:o!=null,accountKey:o?.id}),u=l.data?.isEnabled===!0||l.isError,d=Wt(o?.id),f=yt(o?.id??``),p=$e(),h=N(),[g,_]=(0,sf.useState)(``),[v,y]=(0,sf.useState)(!1),[b,x]=(0,sf.useState)(!1),[S,C]=(0,sf.useState)(!1),[w,T]=(0,sf.useState)(!1),[D,k]=(0,sf.useState)(!1),[A,j]=(0,sf.useState)(!1),[M,ee]=(0,sf.useState)(!1),te=h?.email!=null&&g.toLowerCase()===h.email.toLowerCase(),[P,ne]=(0,sf.useState)(!!(i&&!i.will_renew)),re=Ao(o,{disableExposureLog:t!=null});t!=null&&(re=t);let{shouldShowImmediateTrialCancellationVariant:F,trialDaysRemaining:I}=re,{cancellationPromoMetadata:ie}=ti(o?.id??``,!!o?.isEligibleForCancellationPromotion()),L=ie!=null&&`value`in ie.discount?ie.discount.value:null,R=L!=null,{data:z,isLoading:ae,error:B}=E({currency:i?.billing_currency,enabled:i?.billing_currency!=null&&R}),oe=(0,sf.useMemo)(()=>{if(!i||!z||ae||B||!R||L==null)return null;let e=la(i.billing_currency,z).flexibleBillingPlan.discountedMonthlyCost,t=Number(e??0)*i.seats_entitled,r=Math.max(t-L,0);return{formattedCurrent:n.formatNumber(t,{style:`currency`,currency:i.billing_currency,minimumFractionDigits:0,maximumFractionDigits:2}),formattedDiscounted:n.formatNumber(r,{style:`currency`,currency:i.billing_currency,minimumFractionDigits:0,maximumFractionDigits:2})}},[z,B,n,ae,L,R,i]),V=async()=>{if(!(!o||!R||!ie)){x(!0);try{await f.mutateAsync({accountId:o.id,updatedPromoId:ie.campaign_id}),r.success(n.formatMessage(lf.promoAppliedSuccess),{hasCloseButton:!0}),p.invalidateQueries(Ue()),p.invalidateQueries({queryKey:wi(o.id)}),e()}catch{r.danger(n.formatMessage(lf.claimPromoFailure),{duration:5,toastId:`cancel_team_plan_modal`})}finally{x(!1)}}};if(a||!o||!i)return null;let H=S&&D&&A;F&&(H&&=w),s&&(H&&=M);let se=te&&H&&!l.isPending,ce=1;I!=null&&(ce=I);let le=[];F&&le.push({id:`acknowledge-trial-loss`,checked:w,onChange:T,title:lf.loseTrialDays,body:lf.acknowledgeTrialLossBody,titleValues:{days:ce}}),le.push({id:`acknowledge-data-loss`,checked:S,onChange:C,title:lf.acknowledgeDataLossTitle,body:lf.acknowledgeDataLossBody},{id:`acknowledge-reduced-limits`,checked:D,onChange:k,title:lf.acknowledgeReducedLimitsTitle,body:lf.acknowledgeReducedLimitsBody},{id:`acknowledge-privacy-changes`,checked:A,onChange:j,title:lf.acknowledgePrivacyChangesTitle,body:lf.acknowledgePrivacyChangesBody}),s&&le.push({id:`acknowledge-pending-seat-changes`,checked:M,onChange:ee,title:lf.acknowledgePendingSeatChangesTitle,body:lf.acknowledgePendingSeatChangesBody});let ue=(0,J.jsx)(`span`,{className:`text-token-text-primary font-semibold`,children:o.data.name}),de=F?(0,J.jsx)(W,{...lf.updatedModalImmediateTrialIntro,values:{workspaceName:ue,expiryDate:new Date}}):i.active_until==null?(0,J.jsx)(W,{...lf.updatedModalIntroWithoutDate,values:{workspaceName:ue}}):(0,J.jsx)(W,{...lf.updatedModalIntro,values:{workspaceName:ue,expiryDate:new Date(i.active_until)}}),fe=null;return F&&(fe=(0,J.jsx)(`p`,{className:`text-token-text-secondary text-sm leading-5`,children:(0,J.jsx)(W,{...lf.trialReminderInUseSeatsOnly})})),(0,J.jsx)(O,{testId:`modal-cancel-team-plan`,type:`success`,isOpen:!0,onClose:e,primaryButton:P?(0,J.jsx)(c,{title:n.formatMessage(lf.doneButton),color:`primary`,onClick:e,disabled:v}):(0,J.jsx)(c,{title:n.formatMessage(lf.cancelSubscriptionButton),onClick:async()=>{y(!0);try{await d.mutateAsync({accountId:o.id}),ne(!0),window.open(`${cf}?user_id=${h?.id}&account_id=${o.id}&plan_type=${i.plan_type}`,`_blank`)}catch{r.warning(n.formatMessage(lf.errorCancellingSubscription),{hasCloseButton:!0})}finally{y(!1)}},disabled:!se,loading:v,color:`danger`}),secondaryButton:P?void 0:(0,J.jsx)(c,{title:n.formatMessage(lf.keepSubscriptionButton),onClick:e,disabled:v}),footerHasTopMargin:!1,footerClassName:`mt-3`,showCloseButton:!0,size:`large`,closeButtonClassName:`text-token-text-secondary h-8 w-8 rounded-md hover:bg-transparent hover:text-token-text-primary keyboard-focused:bg-transparent`,headerClassName:`!px-6 !pt-4 !pb-1.5 [&_h2]:font-semibold [&_h2]:tracking-[-0.01em]`,contentClassName:`!px-6 !pt-2 !pb-5`,className:``,title:(0,J.jsx)(`span`,{className:`text-lg leading-7`,children:(0,J.jsx)(W,{...lf.cancelPlan})}),children:P?(0,J.jsxs)(`div`,{children:[(0,J.jsx)(`h3`,{className:`text-token-text-primary mb-2 text-base font-semibold`,children:(0,J.jsx)(W,{...lf.successfullyCanceled})}),i.active_until!=null&&!F&&(0,J.jsx)(`p`,{className:`text-token-text-primary text-sm`,children:(0,J.jsx)(W,{...lf.retainUntil,values:{expiryDate:new Date(i.active_until)}})})]}):(0,J.jsx)(`div`,{children:(0,J.jsxs)(`div`,{className:`flex flex-col gap-3.5`,children:[(0,J.jsxs)(`div`,{className:`flex w-full items-center gap-3.5`,children:[(0,J.jsx)(ve,{src:o.data.profilePictureUrl,size:`mediumLarge`}),(0,J.jsxs)(`div`,{className:`min-w-0`,children:[(0,J.jsx)(`p`,{className:`text-token-text-primary text-base leading-6 font-semibold`,children:o.data.name}),(0,J.jsx)(`p`,{className:`text-token-text-secondary text-sm leading-5`,children:(0,J.jsx)(W,{...lf.seatsCount,values:{count:i.seats_entitled}})})]})]}),R&&ie&&(0,J.jsxs)(`div`,{className:`w-full`,children:[(0,J.jsx)(`div`,{className:`text-token-text-primary mb-1 text-base font-semibold`,children:ie.title}),(0,J.jsx)(`div`,{className:`text-token-text-secondary text-sm`,children:ie.summary}),(0,J.jsx)(`div`,{className:`border-token-border-light bg-token-bg-elevated-secondary mt-2.5 w-full rounded-lg border p-2.5`,children:(0,J.jsxs)(`div`,{className:`flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between`,children:[(0,J.jsx)(`div`,{className:`flex flex-col gap-2`,children:oe&&(0,J.jsx)(`div`,{className:`text-token-text-secondary text-sm`,children:(0,J.jsx)(W,{...lf.promoPriceSentence,values:{oldPrice:(0,J.jsx)(`span`,{className:`text-token-text-tertiary line-through`,children:oe.formattedCurrent}),newPrice:(0,J.jsx)(`span`,{className:`text-token-text-primary font-semibold`,children:oe.formattedDiscounted})}})})}),(0,J.jsx)(c,{title:n.formatMessage(lf.getOfferButton),color:`primary`,onClick:V,loading:b,className:`px-4`})]})})]}),(0,J.jsx)(`div`,{className:`w-full`,children:(0,J.jsxs)(`div`,{className:`space-y-3`,children:[(0,J.jsx)(`p`,{className:`text-token-text-secondary text-sm leading-5`,children:de}),fe,u?(0,J.jsx)(`p`,{className:`text-token-text-secondary text-sm leading-5`,children:(0,J.jsx)(W,{..._s})}):null,(0,J.jsxs)(`fieldset`,{className:`space-y-2`,children:[(0,J.jsx)(`legend`,{className:`text-token-text-primary mb-2 w-full text-sm font-medium`,children:(0,J.jsx)(W,{...lf.updatedModalSectionTitle})}),le.map(e=>(0,J.jsx)(af,{...e},e.id))]})]})}),(0,J.jsxs)(`div`,{className:`w-full`,children:[(0,J.jsx)(`h3`,{className:`text-token-text-primary mb-1.5 text-sm font-medium`,children:(0,J.jsx)(W,{...lf.enterEmailToConfirm})}),(0,J.jsx)(xt,{ariaLabel:n.formatMessage(lf.enterEmailToConfirm),autoComplete:`email`,type:`email`,name:`user-email`,placeholder:`abcd@acme.com`,onChange:e=>{_(e.target.value)}})]})]})})})}var sf,J,cf,lf,uf=e((()=>{Be(),ci(),jo(),F(),s(),tn(),vs(),no(),ki(),Me(),l(),y(),d(),Jn(),dt(),Ne(),sf=n(at()),rt(),Ht(),J=qe(),cf=`https://q.surveyfeedbackresponse.com/jfe/form/SV_9vIX2bUyeLKgCZo`,lf=Qe({cancelPlan:{id:`cancelTeamPlanModal.cancelPlan`,defaultMessage:`Cancel subscription`},errorCancellingSubscription:{id:`cancelTeamPlanModal.errorCancellingSubscription`,defaultMessage:`There was a problem cancelling your subscription.`},doneButton:{id:`cancelTeamPlanModal.doneButton`,defaultMessage:`Done`},keepSubscriptionButton:{id:`cancelTeamPlanModal.keepSubscriptionButton`,defaultMessage:`Keep subscription`},cancelSubscriptionButton:{id:`cancelTeamPlanModal.cancelSubscriptionButton`,defaultMessage:`Cancel subscription`},successfullyCanceled:{id:`cancelTeamPlanModal.successfullyCanceled`,defaultMessage:`You have successfully canceled your subscription.`},seatsCount:{id:`cancelTeamPlanModal.seatsCount`,defaultMessage:`{count, plural, one {# seat} other {# seats}}`},enterEmailToConfirm:{id:`cancelTeamPlanModal.strongerCopy.enterEmailToConfirm`,defaultMessage:`Enter your email address to confirm:`},dataUnavailable:{id:`cancelTeamPlanModal.dataUnavailable`,defaultMessage:`All workspace data including chat history and settings will not be available`},loseTrialDays:{id:`cancelTeamPlanModal.loseTrialDays`,defaultMessage:`You will lose the remaining {days, plural, one {# day} other {# days}} left in your free trial`},trialReminderInUseSeatsOnly:{id:`cancelTeamPlanModal.trialReminderInUseSeatsOnly`,defaultMessage:`As a reminder, if you choose to continue with your trial, you will only be charged for seats in use once the trial ends.`},areYouSure:{id:`cancelTeamPlanModal.areYouSure`,defaultMessage:`Are you sure?`},retainUntil:{id:`cancelTeamPlanModal.retainUntil`,defaultMessage:`You will retain access to the workspace until the end of your billing cycle on {expiryDate, date, long}`},retainEmailAccess:{id:`cancelTeamPlanModal.retainEmailAccess`,defaultMessage:`You will still be able to use ChatGPT with the other workspaces associated with this email address`},updatedModalIntro:{id:`cancelTeamPlanModal.updatedModalIntro`,defaultMessage:`You’re about to cancel {workspaceName}. This will downgrade your access as of {expiryDate, date, long} and change what happens to your workspace data.`},updatedModalImmediateTrialIntro:{id:`cancelTeamPlanModal.updatedModalImmediateTrialIntro`,defaultMessage:`You’re about to cancel {workspaceName}. This will downgrade your access as of {expiryDate, date, long} and change what happens to your workspace data.`},updatedModalIntroWithoutDate:{id:`cancelTeamPlanModal.updatedModalIntroWithoutDate`,defaultMessage:`You’re about to cancel {workspaceName}. This will downgrade your access and change what happens to your workspace data.`},updatedModalSectionTitle:{id:`cancelTeamPlanModal.updatedModalSectionTitle`,defaultMessage:`To cancel, confirm each of the following:`},acknowledgeDataLossTitle:{id:`cancelTeamPlanModal.acknowledgeDataLossTitle`,defaultMessage:`Workspace data & chat history will be lost`},acknowledgeDataLossBody:{id:`cancelTeamPlanModal.acknowledgeDataLossBody`,defaultMessage:`Your workspace conversations, files, projects, and settings will no longer be accessible.`},acknowledgeTrialLossBody:{id:`cancelTeamPlanModal.acknowledgeTrialLossBody`,defaultMessage:`If you cancel today, any unused days in your free trial will end immediately.`},acknowledgeReducedLimitsTitle:{id:`cancelTeamPlanModal.acknowledgeReducedLimitsTitle`,defaultMessage:`File uploads & usage limits will be reduced`},acknowledgeReducedLimitsBody:{id:`cancelTeamPlanModal.acknowledgeReducedLimitsBody`,defaultMessage:`You’ll lose higher file upload limits and will have lower rate limits (messages, images, and tools).`},acknowledgePrivacyChangesTitle:{id:`cancelTeamPlanModal.acknowledgePrivacyChangesTitle`,defaultMessage:`Data privacy & admin controls may change`},acknowledgePrivacyChangesBody:{id:`cancelTeamPlanModal.acknowledgePrivacyChangesBody`,defaultMessage:`Accounts in this workspace will lose data privacy protections, retention settings, and admin controls.`},acknowledgePendingSeatChangesTitle:{id:`cancelTeamPlanModal.acknowledgePendingSeatChangesTitle`,defaultMessage:`Any pending seat changes will be canceled`},acknowledgePendingSeatChangesBody:{id:`cancelTeamPlanModal.acknowledgePendingSeatChangesBody`,defaultMessage:`Scheduled seat removals and downgrades will be canceled. You can still reassign existing seats up until your cancellation date.`},promoPriceSentence:{id:`cancelTeamPlanModal.promoPriceSentence`,defaultMessage:`Next month you'll pay {newPrice} (normally {oldPrice}).`},getOfferButton:{id:`cancelTeamPlanModal.getOfferButton`,defaultMessage:`Get offer`},claimPromoFailure:{id:`cancelTeamPlanModal.claimPromoFailure`,defaultMessage:`Something went wrong while claiming the promotion, please try again.`},promoAppliedSuccess:{id:`cancelTeamPlanModal.promoAppliedSuccess`,defaultMessage:`Your subscription has been updated and will auto-renew at the discounted rate during your next billing cycle.`}})}));function df({numInUse:e,numAllocated:t,isTeam:n,subscriptionWillRenew:r,subscriptionBillingPeriod:a,accountId:o,subscriptionRenewalDate:s,billingDetails:c,maxSeats:l,isNonProfit:u=!1,canManageSeats:d=!0,onManageSeatsClick:f,isManageSeatsDisabled:p=!1,showManageSeatsButton:m=!0}){let{promoEligibility:h,seatThresholdGap:g,shouldShowFreeSeatsCta:_,shouldShowSeatsPromoRedemptionNotice:v}=ii({seatsEntitled:t}),y=a===`monthly`?U.FLEXIBLE:U.ANNUAL,b=()=>{if(f){f();return}let e=`chatgpt_billing_manage_seats_clicked`,n=I.logStructuredEvent(`ChatgptBusinessBillingManageSeatsOpened`,{legacyStatsigEventName:e});Ve(e,void 0,n?{unique_event_id:n}:void 0),fe(hf,{initialTeamBillingType:y,initialSeats:t,isNonProfit:u,maxSeats:l,accountId:o,renewalDate:s,billingDetails:c})};return(0,mf.jsxs)(mf.Fragment,{children:[(0,mf.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,mf.jsx)(`span`,{className:`text-start text-base`,children:(0,mf.jsx)(W,{...gf.description,values:{num:`${e}/${t}`,bold:e=>(0,mf.jsx)(`span`,{className:`font-medium`,children:e},`bolded-num-in-use`)}})}),n&&r&&d&&(_||m)&&(0,mf.jsx)(`div`,{className:`flex items-center gap-2`,children:_?(0,mf.jsx)(ff,{disabled:p,promoSeatThresholdGap:g,onClick:b}):(0,mf.jsx)(i,{color:`secondary`,disabled:p,onClick:b,children:(0,mf.jsx)(W,{id:`components.business.NumSeats.manageSeats`,defaultMessage:`Manage seats`})})})]}),n&&r&&v&&(0,mf.jsx)(`div`,{className:`mt-3`,children:(0,mf.jsx)(bs,{promoEligibility:h,discountPercent:25})})]})}function ff({disabled:e,promoSeatThresholdGap:t,onClick:n}){return(0,pf.useEffect)(()=>{Ve(`chatgpt_business_seats_promo_cta_shown`,void 0,{seat_threshold_gap:t==null?`null`:t.toString()})},[t]),(0,mf.jsx)(i,{color:`purple`,disabled:e,onClick:()=>{n(),Ve(`chatgpt_business_seats_promo_cta_clicked`,void 0,{seat_threshold_gap:t==null?`null`:t.toString()})},children:(0,mf.jsx)(W,{id:`components.business.NumSeats.getSeatsPromoCta`,defaultMessage:`Get discount`})})}var pf,mf,hf,gf,_f=e((()=>{pe(),le(),Ql(),ys(),Ji(),_(),u(),ke(),pf=n(at()),rt(),Vr(),mf=qe(),lt(),hf=V(()=>st(()=>import(`./c2daebff-k454sjw0fix9q5v0.js`).then(e=>e.TeamManageSeatsModal),__vite__mapDeps([18,1,2,3,4,5,6,7,8,9,10,11,12,13,19,20,21,22,23]))),gf=Qe({description:{defaultMessage:`<bold>{num}</bold> seats in use`,id:`components.business.NumSeats.description`}})})),vf,yf=e((()=>{T(),p(),dt(),vf=()=>ft({queryKey:[`credit-pleas`],queryFn:async()=>{try{return await S.safeGet(`/credits/pleas`,{})}catch(e){throw Se.addError(`getCreditPleas: Error fetching credit pleas`,{error:e}),e}}})})),bf,xf,Sf,Cf,wf,Tf=e((()=>{en(),z(),Ae(),dt(),rt(),yf(),nr(),_(),bf=n(at()),Cn(),xf=qe(),Sf=`admin-credit-limit-alert-banner`,Cf=()=>{let[e,t]=(0,bf.useState)(!1),[n,r]=(0,bf.useState)(!1),{data:i,isLoading:a,isError:o}=tt(vf()),s=(0,bf.useMemo)(()=>{let e=new Set;return i?.pleas?.forEach(t=>{e.add(t.user.id)}),e.size},[i]),c=(0,bf.useMemo)(()=>{let e=i?.pleas?.map(e=>e.id);if(!e||e.length===0)return null;let t=[...e].sort();return btoa(t.join(`,`))},[i]),l=(0,bf.useMemo)(()=>localStorage.getItem(Sf),[]),u=s>0&&!a&&!o&&c&&c!==l&&!e;(0,bf.useEffect)(()=>{!u||!c||I.logEventWithStatsig(`ChatGPT Credits: Admin Credit Limit Alert Banner Shown`,`chatgpt_credits_admin_credit_limit_alert_banner_shown`,{numBlockedUsers:s,newEncodedIdSet:c})},[u,c,s]);let d=(0,bf.useCallback)(()=>{c&&localStorage.setItem(Sf,c),t(!0),I.logEventWithStatsig(`ChatGPT Credits: Admin Credit Limit Alert Banner Dismissed`,`chatgpt_credits_admin_credit_limit_alert_banner_dismissed`,{numBlockedUsers:s,newEncodedIdSet:c})},[c,s]);return u?(0,xf.jsx)(ie,{primaryCtaText:(0,xf.jsx)(W,{...wf.addCredits}),onPrimaryCtaClick:()=>{Un(gt,{analyticsSurface:`admin_credit_limit_banner`,checkoutOriginProvenance:{checkoutOriginProductExperience:Pt.WORK,checkoutOriginDeliverySurface:`web`},onCustomCheckoutEnd:()=>r(!1),onCustomCheckoutStart:()=>r(!0)})},isPrimaryCtaLoading:n,onDismiss:d,content:(0,xf.jsxs)(`div`,{className:`flex items-center gap-3`,children:[(0,xf.jsx)(Le,{}),(0,xf.jsxs)(`div`,{className:`grow`,children:[(0,xf.jsx)(`div`,{className:`flex items-center gap-2 font-bold`,children:(0,xf.jsx)(W,{...wf.licenseLimitWarning})}),(0,xf.jsx)(`span`,{className:`text-token-text-secondary`,children:(0,xf.jsx)(W,{...wf.licenseLimitWarningDetails,values:{numBlockedUsers:s}})})]})]})}):null},wf=Qe({addCredits:{id:`organizationBillingInfo.addCredits`,defaultMessage:`Add credits`},licenseLimitWarning:{id:`organizationBillingInfo.licenseLimitWarning`,defaultMessage:`Some teammates are blocked`},licenseLimitWarningDetails:{id:`organizationBillingInfo.licenseLimitWarningDetails`,defaultMessage:`{numBlockedUsers, plural, one {# user hit their limit and needs} other {# users hit their limits and need}} credits to continue. Add credits to unblock {numBlockedUsers, plural, one {them} other {them}}.`}})})),Ef,Df,Of,kf,Af,jf,Mf,Nf=e((()=>{Ef=pt(),Sr(),Df=n(at()),rt(),Of=qe(),kf=e=>{"use forget";let t=(0,Ef.c)(21),{billingCurrency:n,isPerSeatPriceLoading:r,monthlyTotalMessage:i,renewalDate:a,seatRows:o}=e,s=(0,Df.useId)(),c;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,Of.jsx)(mr,{"aria-hidden":!0,className:`icon-sm shrink-0`}),t[0]=c):c=t[0];let l;t[1]===a?l=t[2]:(l=(0,Of.jsx)(W,{...Mf.upcomingSeatChangesTitle,values:{renewalDate:(0,Of.jsx)(it,{day:`numeric`,month:`short`,timeZone:`UTC`,value:a})}}),t[1]=a,t[2]=l);let u;t[3]!==l||t[4]!==s?(u=(0,Of.jsxs)(`h3`,{className:`text-token-text-primary flex items-center gap-2 text-base leading-tight font-semibold`,id:s,children:[c,l]}),t[3]=l,t[4]=s,t[5]=u):u=t[5];let d;if(t[6]!==n||t[7]!==r||t[8]!==i||t[9]!==o){let e;t[11]!==n||t[12]!==r||t[13]!==i?(e=e=>(0,Of.jsx)(Af,{billingCurrency:n,isPerSeatPriceLoading:r,monthlyTotalMessage:i,seatRow:e},e.key),t[11]=n,t[12]=r,t[13]=i,t[14]=e):e=t[14],d=o.map(e),t[6]=n,t[7]=r,t[8]=i,t[9]=o,t[10]=d}else d=t[10];let f;t[15]===d?f=t[16]:(f=(0,Of.jsx)(`div`,{children:d}),t[15]=d,t[16]=f);let p;return t[17]!==u||t[18]!==f||t[19]!==s?(p=(0,Of.jsxs)(`section`,{"aria-labelledby":s,className:`bg-token-bg-tertiary flex flex-col gap-4 rounded-xl p-4`,children:[u,f]}),t[17]=u,t[18]=f,t[19]=s,t[20]=p):p=t[20],p},Af=e=>{"use forget";let t=(0,Ef.c)(28),{billingCurrency:n,isPerSeatPriceLoading:r,monthlyTotalMessage:i,seatRow:a}=e,o=mt(),{capacityMessage:s,pendingDowngradeCount:c,pendingRemovalCount:l,perSeatMonthlyPrice:u,scheduledChangeCount:d,seatCapacity:f,titleMessage:p}=a,m=u==null?null:f*u,h;t[0]!==n||t[1]!==o||t[2]!==m?(h=m!=null&&n!=null?o.formatNumber(m,{style:`currency`,currency:n}):null,t[0]=n,t[1]=o,t[2]=m,t[3]=h):h=t[3];let g=h,_;t[4]===p?_=t[5]:(_=(0,Of.jsx)(`div`,{className:`text-token-text-secondary text-base leading-tight font-normal`,children:(0,Of.jsx)(W,{...p})}),t[4]=p,t[5]=_);let v;t[6]!==c||t[7]!==l||t[8]!==d?(v=(0,Of.jsx)(`div`,{className:`text-token-text-secondary mt-1 text-sm leading-tight font-normal`,children:(0,Of.jsx)(jf,{pendingDowngradeCount:c,pendingRemovalCount:l,scheduledChangeCount:d})}),t[6]=c,t[7]=l,t[8]=d,t[9]=v):v=t[9];let y;t[10]!==_||t[11]!==v?(y=(0,Of.jsxs)(`div`,{className:`min-w-0`,children:[_,v]}),t[10]=_,t[11]=v,t[12]=y):y=t[12];let b;t[13]!==g||t[14]!==r||t[15]!==i?(b=r?(0,Of.jsx)(`div`,{className:`loading-results-shimmer ms-auto h-6 w-24 rounded-sm`}):g!=null&&(0,Of.jsx)(`div`,{className:`text-token-text-secondary text-base leading-tight font-normal`,children:(0,Of.jsx)(W,{...i,values:{amount:g}})}),t[13]=g,t[14]=r,t[15]=i,t[16]=b):b=t[16];let x;t[17]===f?x=t[18]:(x={count:f},t[17]=f,t[18]=x);let S;t[19]!==s||t[20]!==x?(S=(0,Of.jsx)(`div`,{className:`text-token-text-secondary mt-1 text-sm leading-tight font-normal`,children:(0,Of.jsx)(W,{...s,values:x})}),t[19]=s,t[20]=x,t[21]=S):S=t[21];let C;t[22]!==b||t[23]!==S?(C=(0,Of.jsxs)(`div`,{className:`text-end sm:shrink-0`,children:[b,S]}),t[22]=b,t[23]=S,t[24]=C):C=t[24];let w;return t[25]!==y||t[26]!==C?(w=(0,Of.jsxs)(`div`,{className:`border-token-border-default flex flex-col gap-2 py-4 first:pt-0 last:pb-0 sm:flex-row sm:items-start sm:justify-between sm:gap-6 [&+&]:border-t`,children:[y,C]}),t[25]=y,t[26]=C,t[27]=w):w=t[27],w},jf=e=>{"use forget";let t=(0,Ef.c)(13),{pendingDowngradeCount:n,pendingRemovalCount:r,scheduledChangeCount:i}=e;if(r>0&&n>0){let e;t[0]===r?e=t[1]:(e=(0,Of.jsx)(W,{...Mf.upcomingSeatRemovals,values:{count:r}},`removals`),t[0]=r,t[1]=e);let i;t[2]===n?i=t[3]:(i=(0,Of.jsx)(W,{...Mf.upcomingSeatDowngrades,values:{count:n}},`downgrades`),t[2]=n,t[3]=i);let a;return t[4]!==e||t[5]!==i?(a=(0,Of.jsx)(Je,{value:[e,i]}),t[4]=e,t[5]=i,t[6]=a):a=t[6],a}if(r>0){let e;return t[7]===r?e=t[8]:(e=(0,Of.jsx)(W,{...Mf.upcomingSeatRemovals,values:{count:r}}),t[7]=r,t[8]=e),e}if(n>0){let e;return t[9]===n?e=t[10]:(e=(0,Of.jsx)(W,{...Mf.upcomingSeatDowngrades,values:{count:n}}),t[9]=n,t[10]=e),e}let a;return t[11]===i?a=t[12]:(a=(0,Of.jsx)(W,{...Mf.upcomingSeatChanges,values:{count:i}}),t[11]=i,t[12]=a),a},Mf=Qe({upcomingSeatChangesTitle:{id:`organizationBillingInfo.upcomingSeatChanges.title`,defaultMessage:`Upcoming changes starting {renewalDate}`},upcomingSeatRemovals:{id:`organizationBillingInfo.upcomingSeatChanges.description.removals`,defaultMessage:`{count, plural, one {# seat removal} other {# seat removals}}`},upcomingSeatDowngrades:{id:`organizationBillingInfo.upcomingSeatChanges.description.downgrades`,defaultMessage:`{count, plural, one {# seat downgrade} other {# seat downgrades}}`},upcomingSeatChanges:{id:`organizationBillingInfo.upcomingSeatChanges.description.generic`,defaultMessage:`{count, plural, one {# seat change} other {# seat changes}}`}})}));function Pf(e){"use forget";let t=(0,If.c)(63),{children:n,hideMonetaryAmount:r,menuItems:i,showCreditGrantsMenuItem:a,showRateCardMenuItem:o}=e,s=r!==void 0&&r,c=a===void 0||a,l=o===void 0||o,u=mt(),d=et(),f=Oe(),{country:p}=Qt(),m=f?.id,h=m!=null&&f?.organizationId!=null,g;t[0]===f?g=t[1]:(g=f?.isSelfServeBusiness(),t[0]=f,t[1]=g);let _=g===!0,v;t[2]!==p||t[3]!==f||t[4]!==_?(v={country:p,currentAccount:f,location:`WorkspaceCreditBalanceSummaryCard`,pricingPlanIsTypeBusiness:_},t[2]=p,t[3]=f,t[4]=_,t[5]=v):v=t[5];let y=St(v),b=y?.currency,x=h&&y!=null,S;t[6]!==p||t[7]!==b||t[8]!==x?(S={countryCode:p,currency:b,enabled:x},t[6]=p,t[7]=b,t[8]=x,t[9]=S):S=t[9];let{data:C}=E(S),w;t[10]===h?w=t[11]:(w={enabled:h},t[10]=h,t[11]=w);let T=Ot(m,w);if(!h)return null;let D,O,k,A,j,M,ee;if(t[12]!==C||t[13]!==s||t[14]!==u||t[15]!==T.data||t[16]!==T.isPending){let e=Fn(T.data),n=Zn(e),r=C==null?null:Kt({amountMinorUnits:Yt({totalRemainingCredits:e,checkoutPricingConfig:C}),currency:C.currencyConfig.symbol_code});D=fi,ee=`border-token-border-default bg-token-bg-primary gap-0 rounded-xl border`,M=`flex flex-wrap items-start justify-between gap-4 p-6`,A=`min-w-0`,t[24]===Symbol.for(`react.memo_cache_sentinel`)?(j=(0,Lf.jsx)(`div`,{className:`text-token-text-primary text-[20px] leading-[25px] font-normal`,children:(0,Lf.jsx)(W,{id:`organizationBillingInfo.creditBalanceSummary.title`,defaultMessage:`Credits balance`})}),t[24]=j):j=t[24],O=`mt-5 flex flex-wrap items-end gap-x-3 gap-y-2`,k=T.isPending?(0,Lf.jsxs)(Lf.Fragment,{children:[(0,Lf.jsx)(`div`,{className:`loading-results-shimmer h-12 w-[80px] rounded-sm`}),(0,Lf.jsx)(`div`,{className:`loading-results-shimmer mb-1 h-5 w-[72px] rounded-sm`})]}):(0,Lf.jsxs)(Lf.Fragment,{children:[(0,Lf.jsx)(`div`,{className:`text-token-text-primary text-5xl leading-none font-medium`,children:u.formatNumber(n,{style:`decimal`,minimumFractionDigits:0,maximumFractionDigits:0})}),!s&&r!=null?(0,Lf.jsx)(`div`,{className:`text-token-text-secondary pb-1 text-sm`,children:(0,Lf.jsx)(W,{id:`organizationBillingInfo.creditBalanceSummary.balanceAmount`,defaultMessage:`/ {amount}`,values:{amount:r}})}):null]}),t[12]=C,t[13]=s,t[14]=u,t[15]=T.data,t[16]=T.isPending,t[17]=D,t[18]=O,t[19]=k,t[20]=A,t[21]=j,t[22]=M,t[23]=ee}else D=t[17],O=t[18],k=t[19],A=t[20],j=t[21],M=t[22],ee=t[23];let te;t[25]!==O||t[26]!==k?(te=(0,Lf.jsx)(`div`,{className:O,children:k}),t[25]=O,t[26]=k,t[27]=te):te=t[27];let N;t[28]===T.isError?N=t[29]:(N=T.isError?(0,Lf.jsx)(Br,{className:`text-token-text-secondary mt-3`,children:(0,Lf.jsx)(W,{id:`organizationBillingInfo.creditBalanceSummary.balanceLoadError`,defaultMessage:`Unable to load the current credits balance.`})}):null,t[28]=T.isError,t[29]=N);let P;t[30]!==A||t[31]!==j||t[32]!==te||t[33]!==N?(P=(0,Lf.jsxs)(`div`,{className:A,children:[j,te,N]}),t[30]=A,t[31]=j,t[32]=te,t[33]=N,t[34]=P):P=t[34];let ne;t[35]===u?ne=t[36]:(ne=u.formatMessage({id:`organizationBillingInfo.creditBalance.moreActions`,defaultMessage:`More actions`}),t[35]=u,t[36]=ne);let re;t[37]===Symbol.for(`react.memo_cache_sentinel`)?(re=(0,Lf.jsx)(gr,{className:`icon-lg`}),t[37]=re):re=t[37];let F;t[38]===ne?F=t[39]:(F=(0,Lf.jsx)(In.Trigger,{"aria-label":ne,className:`hover:bg-token-bg-secondary text-token-text-secondary hover:text-token-text-primary rounded-md p-2`,children:re}),t[38]=ne,t[39]=F);let I;t[40]!==d||t[41]!==c?(I=c?(0,Lf.jsx)(In.Item,{icon:xr,onClick:()=>d(`/admin/billing/credit_grants`),children:(0,Lf.jsx)(W,{id:`organizationBillingInfo.creditBalance.viewCreditGrantsMenuItem`,defaultMessage:`View credit grants`})}):null,t[40]=d,t[41]=c,t[42]=I):I=t[42];let ie;t[43]===l?ie=t[44]:(ie=l?(0,Lf.jsx)(In.Item,{icon:cr,onClick:Ff,children:(0,Lf.jsx)(W,{id:`organizationBillingInfo.creditBalance.viewRateCardMenuItem`,defaultMessage:`View rate card`})}):null,t[43]=l,t[44]=ie);let L;t[45]!==i||t[46]!==I||t[47]!==ie?(L=(0,Lf.jsx)(In.Portal,{children:(0,Lf.jsxs)(In.Content,{size:`small`,align:`end`,children:[i,I,ie]})}),t[45]=i,t[46]=I,t[47]=ie,t[48]=L):L=t[48];let R;t[49]!==F||t[50]!==L?(R=(0,Lf.jsxs)(In.Root,{children:[F,L]}),t[49]=F,t[50]=L,t[51]=R):R=t[51];let z;t[52]!==M||t[53]!==P||t[54]!==R?(z=(0,Lf.jsxs)(`div`,{className:M,children:[P,R]}),t[52]=M,t[53]=P,t[54]=R,t[55]=z):z=t[55];let ae;t[56]===n?ae=t[57]:(ae=n==null?null:(0,Lf.jsx)(`div`,{className:`border-token-border-default border-t px-6 py-4`,children:n}),t[56]=n,t[57]=ae);let B;return t[58]!==D||t[59]!==ee||t[60]!==z||t[61]!==ae?(B=(0,Lf.jsxs)(D,{className:ee,children:[z,ae]}),t[58]=D,t[59]=ee,t[60]=z,t[61]=ae,t[62]=B):B=t[62],B}function Ff(){window.open(Ci,`_blank`,`noopener,noreferrer`)}var If,Lf,Rf=e((()=>{If=pt(),rr(),Gt(),qa(),Ni(),Mn(),Vt(),fr(),_r(),pr(),Zt(),Me(),d(),rt(),nt(),Lf=qe()}));function zf(e){"use forget";let t=(0,Wf.c)(17),n,r,i;t[0]===e?(n=t[1],r=t[2],i=t[3]):({showAtOverageLimitBanner:r,usageData:i,...n}=e,t[0]=e,t[1]=n,t[2]=r,t[3]=i);let a;t[4]!==n||t[5]!==r||t[6]!==i.data||t[7]!==i.status?(a=i.status===`success`&&(0,Y.jsx)(Bf,{...n,showAtOverageLimitBanner:r,usageData:i.data}),t[4]=n,t[5]=r,t[6]=i.data,t[7]=i.status,t[8]=a):a=t[8];let o;t[9]===i.status?o=t[10]:(o=i.status===`pending`&&(0,Y.jsxs)(Y.Fragment,{children:[(0,Y.jsx)(qf,{className:`h-[28px] w-[230px] opacity-50`}),(0,Y.jsx)(qf,{className:`my-2 h-[20px] w-full`}),(0,Y.jsx)(qf,{className:`mb-[4px] h-[20px] w-[350px] opacity-50`})]}),t[9]=i.status,t[10]=o);let s;t[11]===i.status?s=t[12]:(s=i.status===`error`&&(0,Y.jsx)(`div`,{className:`h-[90px]`,children:(0,Y.jsx)(Le,{className:`text-token-interactive-label-danger-secondary-default`})}),t[11]=i.status,t[12]=s);let c;return t[13]!==a||t[14]!==o||t[15]!==s?(c=(0,Y.jsxs)(`div`,{className:`mt-6 w-full`,children:[a,o,s]}),t[13]=a,t[14]=o,t[15]=s,t[16]=c):c=t[16],c}function Bf(e){"use forget";let t=(0,Wf.c)(46),{showAtOverageLimitBanner:n,usageData:r,denominator:i,isCurrentCycle:a}=e,{total_usage:o,usage_detail:s,current_balance:c}=r,l=mt(),[u,d]=(0,Gf.useState)(),f,p,m,h;if(t[0]!==c||t[1]!==i||t[2]!==u||t[3]!==l||t[4]!==a||t[5]!==n||t[6]!==o||t[7]!==s){let e=s,r;t[12]===Symbol.for(`react.memo_cache_sentinel`)?(r=[],t[12]=r):r=t[12];let _=r,v=l.formatMessage(Yf.otherBarLabel);e.length>Kf&&(_=e.slice(Kf-1),e=[...e.slice(0,Kf-1),{label:v,amount:_.reduce(Uf,0)}]);let y=l.formatMessage(Yf.currentBalanceBarLabel),b={...e.reduce(Hf,{}),[y]:c},x=o+Math.max(c,0),S=[b],C=a&&o>0&&o>=i?`text-token-interactive-label-danger-secondary-default`:`text-token-text-primary`,w;t[13]===C?w=t[14]:(w=g(`font-medium`,C),t[13]=C,t[14]=w);let T;t[15]===o?T=t[16]:(T=Ss.format(o),t[15]=o,t[16]=T);let E;t[17]!==w||t[18]!==T?(E=(0,Y.jsx)(`span`,{className:w,children:T}),t[17]=w,t[18]=T,t[19]=E):E=t[19];let D;t[20]!==i||t[21]!==a?(D=a&&(0,Y.jsxs)(Y.Fragment,{children:[(0,Y.jsx)(`span`,{children:`/`}),(0,Y.jsx)(`span`,{children:Ss.format(i)})]}),t[20]=i,t[21]=a,t[22]=D):D=t[22];let O;t[23]!==D||t[24]!==E?(O=(0,Y.jsxs)(`span`,{className:`flex items-center gap-1 text-xl`,children:[E,D]}),t[23]=D,t[24]=E,t[25]=O):O=t[25];let k;t[26]!==i||t[27]!==a||t[28]!==o?(k=(0,Y.jsx)(`span`,{children:a?(0,Y.jsx)(W,{...Yf.creditsUsed,values:{percentage:(i===0?1:o/i).toLocaleString(void 0,{style:`percent`})}}):(0,Y.jsx)(W,{...Yf.historicalCreditsUsed})}),t[26]=i,t[27]=a,t[28]=o,t[29]=k):k=t[29];let A;t[30]!==O||t[31]!==k?(A=(0,Y.jsxs)(`div`,{className:`text-token-text-secondary flex items-center gap-1`,children:[O,k]}),t[30]=O,t[31]=k,t[32]=A):A=t[32];let j;t[33]!==a||t[34]!==n?(j=a&&n&&(0,Y.jsxs)(`div`,{className:`text-token-interactive-label-danger-secondary-default bg-token-bg-status-error flex items-center gap-1 rounded-md p-1 text-xs`,children:[(0,Y.jsx)(Le,{className:`h-4 w-4`}),(0,Y.jsx)(W,{...Yf.overageLimitReachedWarning})]}),t[33]=a,t[34]=n,t[35]=j):j=t[35],t[36]!==A||t[37]!==j?(m=(0,Y.jsxs)(`div`,{className:`flex items-center justify-between`,children:[A,j]}),t[36]=A,t[37]=j,t[38]=m):m=t[38],h=x!==0&&(0,Y.jsx)(fo,{className:`relative z-1 my-2`,width:`100%`,height:20,children:(0,Y.jsxs)(mo,{data:S,layout:`vertical`,margin:{top:0,right:0,left:0,bottom:0},children:[(0,Y.jsx)(po,{type:`number`,hide:!0,domain:[0,x]}),(0,Y.jsx)(go,{type:`category`,hide:!0}),(0,Y.jsx)(_o,{isAnimationActive:!1,content:(0,Y.jsx)(Jf,{hoveredSegment:u,barMaximum:x,additionalSeries:u===v?_:void 0}),cursor:!1}),e.map((t,n)=>{let{label:r}=t,i=n===0,a=n===e.length-1&&c<=0;return(0,Y.jsx)(lo,{dataKey:r,stackId:`a`,id:r,isAnimationActive:!1,onMouseOver:()=>d(r),onMouseOut:()=>d(void 0),radius:i?a?[4,4,4,4]:[4,0,0,4]:a?[0,4,4,0]:void 0,children:(0,Y.jsx)(uo,{fill:Ko[n],opacity:u&&r!==u?.8:1,className:`transition-opacity duration-200 ease-in-out`})},r)}),c>0&&(0,Y.jsx)(lo,{dataKey:y,stackId:`a`,isAnimationActive:!1,onMouseOver:()=>d(y),onMouseOut:()=>d(void 0),radius:[0,4,4,0],children:(0,Y.jsx)(uo,{fill:`#979797`,opacity:.15})})]})}),f=`text-token-text-primary flex w-full flex-wrap items-center justify-start text-sm`,p=e.map(Vf),t[0]=c,t[1]=i,t[2]=u,t[3]=l,t[4]=a,t[5]=n,t[6]=o,t[7]=s,t[8]=f,t[9]=p,t[10]=m,t[11]=h}else f=t[8],p=t[9],m=t[10],h=t[11];let _;t[39]!==f||t[40]!==p?(_=(0,Y.jsx)(`div`,{className:f,children:p}),t[39]=f,t[40]=p,t[41]=_):_=t[41];let v;return t[42]!==m||t[43]!==h||t[44]!==_?(v=(0,Y.jsxs)(Y.Fragment,{children:[m,h,_]}),t[42]=m,t[43]=h,t[44]=_,t[45]=v):v=t[45],v}function Vf(e,t){let{label:n}=e;return(0,Y.jsxs)(`div`,{className:`me-6 mb-1 flex cursor-default items-center`,title:n,children:[(0,Y.jsx)(`div`,{className:`me-1 h-2 w-2 rounded-[1px]`,style:{backgroundColor:Ko[t]}}),(0,Y.jsx)(`span`,{className:`me-1 max-w-32 overflow-hidden text-ellipsis whitespace-nowrap`,children:n})]},n)}function Hf(e,t){let{label:n,amount:r}=t;return{...e,[n]:r}}function Uf(e,t){let{amount:n}=t;return e+n}var Wf,Gf,Y,Kf,qf,Jf,Yf,Xf=e((()=>{Wf=pt(),xs(),Go(),Ae(),Ne(),Gf=n(at()),rt(),ho(),o(),Y=qe(),Kf=5,qf=we.div`loading-results-shimmer rounded-sm`,Jf=e=>{"use forget";let t=(0,Wf.c)(16),{active:n,payload:r,hoveredSegment:i,barMaximum:a,additionalSeries:o}=e;if(!(n&&r&&i))return null;let s;t[0]===a?s=t[1]:(s=e=>(0,Y.jsxs)(`span`,{children:[(0,Y.jsx)(`span`,{className:`font-semibold`,children:Ss.format(e)}),` (`,(e/a).toLocaleString(void 0,{style:`percent`}),`)`]}),t[0]=a,t[1]=s);let c=s,l=r[0]?.payload?.[i]??0,u;t[2]===i?u=t[3]:(u=(0,Y.jsx)(`div`,{children:i}),t[2]=i,t[3]=u);let d;t[4]!==c||t[5]!==l?(d=(0,Y.jsx)(`div`,{children:c(l)}),t[4]=c,t[5]=l,t[6]=d):d=t[6];let f;t[7]!==u||t[8]!==d?(f=(0,Y.jsxs)(`div`,{children:[u,d]}),t[7]=u,t[8]=d,t[9]=f):f=t[9];let p;t[10]!==o||t[11]!==c?(p=o&&(0,Y.jsx)(`div`,{className:`border-token-border-default mt-1 border-t pt-1`,children:o.map(e=>{let{label:t,amount:n}=e;return(0,Y.jsxs)(`div`,{className:`flex items-center justify-between gap-2`,children:[(0,Y.jsx)(`span`,{children:t}),c(n)]},t)})}),t[10]=o,t[11]=c,t[12]=p):p=t[12];let m;return t[13]!==f||t[14]!==p?(m=(0,Y.jsxs)(`div`,{className:`border-token-border-heavy bg-token-bg-primary relative z-100 flex flex-col gap-1 rounded-lg border p-2 shadow-md`,children:[f,p]}),t[13]=f,t[14]=p,t[15]=m):m=t[15],m},Yf=Qe({creditsUsed:{id:`organizationBillingInfo.creditUsageSettings.creditsUsed`,defaultMessage:`credits used ({percentage})`},historicalCreditsUsed:{id:`organizationBillingInfo.creditUsageSettings.historicalCreditsUsed`,defaultMessage:`credits used`},otherBarLabel:{id:`organizationBillingInfo.creditUsageSettings.otherBarLabel`,defaultMessage:`Other`},currentBalanceBarLabel:{id:`organizationBillingInfo.creditUsageSettings.currentBalanceBarLabel`,defaultMessage:`Remaining credits`},overageLimitReachedWarning:{id:`organizationBillingInfo.creditUsageSettings.overageLimitReachedWarning`,defaultMessage:`Limit reached`}})}));function Zf({cycleOptions:e,mostRecentExportResult:t}){"use no forget";return(0,np.jsx)(In.Item,{onClick:()=>fe(Qf,{cycleOptions:e,mostRecentExportResult:t}),disabled:e.length===0,secondary:t&&(0,np.jsx)(W,{...Du.buttonDescription,values:{date:new Date(t)}}),label:(0,np.jsx)(W,{...Du.buttonText}),icon:vr})}function Qf({cycleOptions:e,mostRecentExportResult:t,onClose:n}){"use no forget";let r=mt(),{disabled:a,downloadUsageReport:o,generating:s}=zu(),[c,l]=(0,tp.useState)(String(e[0]?.cycleIndex??0)),u=(0,tp.useRef)(c),d=(0,tp.useMemo)(()=>e.map(e=>({value:String(e.cycleIndex),dateRange:ep({intl:r,option:e}),secondaryLabel:e.cycleIndex===0?r.formatMessage(rp.currentBillingPeriod):null})),[e,r]),f=e.find(e=>String(e.cycleIndex)===c),p=e=>{u.current=e,l(e)},m=async()=>{let t=e.find(e=>String(e.cycleIndex)===u.current);t!=null&&(await o(t),n())};return(0,np.jsx)(O,{testId:`modal-download-usage-report-period`,isOpen:!0,onClose:n,title:(0,np.jsx)(W,{...Du.buttonText}),description:(0,np.jsx)($f,{mostRecentExportResult:t}),hideSeparator:!0,noPadding:!0,showCloseButton:!0,size:`normal`,contentClassName:`grow-0`,footerClassName:`px-6 pb-6 pt-5`,primaryButton:(0,np.jsx)(i,{className:`min-w-[96px]`,loading:s,disabled:a||f==null,onClick:m,children:(0,np.jsx)(W,{...rp.downloadButton})}),children:(0,np.jsxs)(`div`,{className:`px-6 pb-6`,children:[(0,np.jsx)(`div`,{className:`mb-2 font-medium`,children:(0,np.jsx)(W,{...rp.billingCycleLabel})}),(0,np.jsx)(`div`,{role:`radiogroup`,"aria-label":r.formatMessage(rp.billingCycleLabel),className:`border-token-border-default max-h-80 overflow-y-auto rounded-lg border`,children:d.map(e=>{let t=c===e.value;return(0,np.jsxs)(`button`,{type:`button`,role:`radio`,"aria-checked":t,onClick:()=>p(e.value),className:`border-token-border-default hover:bg-token-bg-secondary flex min-h-14 w-full cursor-pointer items-center justify-between gap-4 border-b px-4 py-2.5 text-start text-sm last:border-b-0 ${t?`bg-token-bg-secondary`:``}`,children:[(0,np.jsxs)(`span`,{className:`min-w-0`,children:[(0,np.jsx)(`span`,{className:`block truncate`,children:e.dateRange}),e.secondaryLabel&&(0,np.jsx)(`span`,{className:`text-token-text-tertiary mt-0.5 block text-xs`,children:e.secondaryLabel})]}),t&&(0,np.jsx)(hr,{className:`text-token-text-primary h-4 w-4 shrink-0`})]},e.value)})})]})})}function $f({mostRecentExportResult:e}){"use no forget";return e?(0,np.jsx)(W,{...rp.descriptionWithFreshness,values:{date:new Date(e)}}):(0,np.jsx)(W,{...rp.description})}function ep({intl:e,option:t}){return e.formatMessage(rp.billingPeriodDateRange,{start:qt(t.start,`MMM d, yyyy`),end:qt(t.end,`MMM d, yyyy`)})}var tp,np,rp,ip=e((()=>{pe(),Vt(),Mr(),lr(),s(),le(),dn(),tp=n(at()),rt(),Hu(),Ou(),np=qe(),rp=Qe({description:{id:`organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.description`,defaultMessage:`Choose a billing cycle to export as CSV.`},descriptionWithFreshness:{id:`organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.descriptionWithFreshness`,defaultMessage:`Choose a billing cycle to export as CSV. Updated {date, date}.`},billingCycleLabel:{id:`organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.billingCycleLabel`,defaultMessage:`Billing cycle`},billingPeriodDateRange:{id:`organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.billingPeriodDateRange`,defaultMessage:`{start} - {end}`},currentBillingPeriod:{id:`organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.currentBillingPeriod`,defaultMessage:`Current period`},downloadButton:{id:`organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.downloadButton`,defaultMessage:`Download`}})})),ap=t({OVERAGE_LIMIT_DESCRIPTION:()=>up,OverageLimitModal:()=>op});function op({currentLimit:e,onClose:t,onSubmit:n}){let r=mt(),[a,o]=(0,sp.useState)(!1),[s,c]=(0,sp.useState)(e),l=s!==e&&(s==null||Number.isInteger(s)&&s>=0),u=async()=>{if(l){o(!0);try{await n(s),t()}finally{o(!1)}}};return(0,cp.jsx)(O,{testId:`modal-overage-limit`,isOpen:!0,onClose:t,type:`success`,title:(0,cp.jsx)(W,{...lp.title}),hideSeparator:!0,noPadding:!0,showCloseButton:!0,size:`large`,footerClassName:`p-6 pt-0`,primaryButton:(0,cp.jsx)(i,{className:`min-w-[80px]`,loading:a,disabled:!l,onClick:u,children:(0,cp.jsx)(W,{...lp.saveButton})}),secondaryButton:(0,cp.jsx)(i,{onClick:()=>c(null),color:`secondary`,disabled:s==null,children:(0,cp.jsx)(W,{...lp.clearButton})}),children:(0,cp.jsxs)(`div`,{className:`px-6 pb-6`,children:[(0,cp.jsx)(`div`,{className:`text-token-text-secondary text-sm`,children:(0,cp.jsx)(W,{...up})}),(0,cp.jsx)(yo,{htmlFor:`overage-limit-field`,className:`mt-4 mb-2 block font-medium`,children:(0,cp.jsx)(W,{...lp.fieldLabel})}),(0,cp.jsx)($o,{value:s,name:`overage-limit-field`,onChange:c,onPressEnter:u,placeholder:r.formatMessage(lp.emptyFieldPlaceholder)}),(0,cp.jsx)(`div`,{className:g(`text-token-text-secondary pt-1 text-xs`,s==null&&`invisible`),children:(0,cp.jsx)(W,{...lp.helpText})})]})})}var sp,cp,lp,up,dp=e((()=>{pe(),s(),vo(),Ne(),sp=n(at()),rt(),Qo(),cp=qe(),lp=Qe({title:{id:`organizationBillingInfo.creditUsageSettings.overageLimitModal.title`,defaultMessage:`Add overage limit`},fieldLabel:{id:`organizationBillingInfo.creditUsageSettings.overageLimitModal.fieldLabel`,defaultMessage:`Overage limit`},emptyFieldPlaceholder:{id:`organizationBillingInfo.creditUsageSettings.overageLimitModal.emptyFieldPlaceholder`,defaultMessage:`None`},helpText:{id:`organizationBillingInfo.creditUsageSettings.overageLimitModal.helpText`,defaultMessage:`Advanced access will pause if your org exceeds your credit balance and the allowed overage.`},saveButton:{id:`organizationBillingInfo.creditUsageSettings.overageLimitModal.saveButton`,defaultMessage:`Save`},clearButton:{id:`organizationBillingInfo.creditUsageSettings.overageLimitModal.clearButton`,defaultMessage:`Clear`}}),up=Xe({id:`organizationBillingInfo.creditUsageSettings.overageLimitDescription`,defaultMessage:`Your org can continue to use advanced features and models beyond your plan. Add an overage limit to control this amount.`})}));function fp(e){"use forget";let t=(0,vp.c)(161),{canLoadAtOverageLimitBanner:n,variant:r}=e,a=n!==void 0&&n,o=r===void 0?`full`:r,[s,c]=(0,yp.useState)(!1),l=mt(),u=Oe(),d=u?.id,f=u?.id!=null,p;t[0]!==d||t[1]!==f?(p={activeWorkspaceId:d,enabled:f},t[0]=d,t[1]=f,t[2]=p):p=t[2];let{creditsConfig:m}=Xn(p),h;t[3]===m?h=t[4]:(h=ln(m),t[3]=m,t[4]=h);let _=h,v=u?.organizationId,y;t[5]===v?y=t[6]:(y=[`subscription-settings`,v],t[5]=v,t[6]=y);let b=y,C;t[7]===u?.organizationId?C=t[8]:(C=()=>S.safeGet(`/subscriptions/{organization_id}/settings`,{parameters:{path:{organization_id:u?.organizationId}}}),t[7]=u?.organizationId,t[8]=C);let w=Uu(C),T=u?.organizationId!=null,E;t[9]!==b||t[10]!==w||t[11]!==T?(E={queryKey:b,queryFn:w,enabled:T},t[9]=b,t[10]=w,t[11]=T,t[12]=E):E=t[12];let D=tt(E),O=$e(),k;t[13]===u?.organizationId?k=t[14]:(k=e=>S.safePost(`/subscriptions/{organization_id}/settings/limit`,{parameters:{path:{organization_id:u?.organizationId}},requestBody:{overage_limit:e==null?e:{type:`absolute`,credits:e}}}),t[13]=u?.organizationId,t[14]=k);let A=Uu(k),j;t[15]!==u?.organizationId||t[16]!==O||t[17]!==b?(j=()=>{O.invalidateQueries({queryKey:b}),O.invalidateQueries({queryKey:ro(u?.organizationId)})},t[15]=u?.organizationId,t[16]=O,t[17]=b,t[18]=j):j=t[18];let M;t[19]!==A||t[20]!==j?(M={mutationFn:A,onSuccess:j},t[19]=A,t[20]=j,t[21]=M):M=t[21];let te=ut(M),N;t[22]===u?.organizationId?N=t[23]:(N=e=>{let{recipients:t,thresholds:n}=e;return S.safePost(`/subscriptions/{organization_id}/settings/alerts`,{parameters:{path:{organization_id:u?.organizationId}},requestBody:{alert_recipients:t,alert_thresholds:n}})},t[22]=u?.organizationId,t[23]=N);let P=Uu(N),ne;t[24]!==O||t[25]!==b?(ne=()=>{O.invalidateQueries({queryKey:b})},t[24]=O,t[25]=b,t[26]=ne):ne=t[26];let re;t[27]!==P||t[28]!==ne?(re={mutationFn:P,onSuccess:ne},t[27]=P,t[28]=ne,t[29]=re):re=t[29];let{mutateAsync:F}=ut(re),[L,R]=(0,yp.useState)(0),z=L===0,B=Yr(L),oe=eo(),V=u!=null&&u.id!=null&&u.organizationId!=null&&B!==`pending`&&_!=null,H=u?.organizationId,se=B!==`pending`&&B.start,ce=B!==`pending`&&B.end,le;t[30]!==H||t[31]!==se||t[32]!==ce?(le=[`organization-usage`,H,se,ce],t[30]=H,t[31]=se,t[32]=ce,t[33]=le):le=t[33];let ue;t[34]!==u||t[35]!==B||t[36]!==V?(ue=()=>{if(!V)throw Error(`Query not enabled`);return S.safeGet(`/subscriptions/{organization_id}/usage`,{parameters:{path:{organization_id:u.organizationId},query:{start_date:B.start.toISOString(),end_date:B.end.toISOString()}}})},t[34]=u,t[35]=B,t[36]=V,t[37]=ue):ue=t[37];let de=Uu(ue),pe;t[38]!==V||t[39]!==le||t[40]!==de?(pe={queryKey:le,queryFn:de,enabled:V},t[38]=V,t[39]=le,t[40]=de,t[41]=pe):pe=t[41];let me=tt(pe),he=u?.id,_e;t[42]===he?_e=t[43]:(_e=[`usage-export-data-freshness`,he],t[42]=he,t[43]=_e);let ve;t[44]!==u||t[45]!==V?(ve=()=>{if(!V)throw Error(`Query not enabled`);return S.safeGet(`/subscriptions/{workspace_id}/usage/export_data_freshness`,{parameters:{path:{workspace_id:u.id}}})},t[44]=u,t[45]=V,t[46]=ve):ve=t[46];let ye=Uu(ve),xe;t[47]!==V||t[48]!==_e||t[49]!==ye?(xe={queryKey:_e,queryFn:ye,enabled:V},t[47]=V,t[48]=_e,t[49]=ye,t[50]=xe):xe=t[50];let Se=tt(xe),Ce;t[51]===a?Ce=t[52]:(Ce={canLoadBanner:a},t[51]=a,t[52]=Ce);let we=Ri(Ce),U,Te;if(t[53]===V?(U=t[54],Te=t[55]):(U=()=>{V&&I.logEventWithStatsig(`ChatGPT Credits: Admin Section Shown`,`chatgpt_credits_admin_section_shown`)},Te=[V],t[53]=V,t[54]=U,t[55]=Te),(0,yp.useEffect)(U,Te),!V||_==null)return null;if(_.kind===`business`){if(o===`enterpriseOverageOnly`||!_.can_view_credit_usage)return null;let e=me.data?.current_balance??0;u?.isSelfServeBusiness()&&(e=Math.max(e,0));let n=(me.data?.total_usage??0)+e,r;t[56]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,X.jsx)(ji,{children:(0,X.jsx)(W,{...wp.creditUsageSectionTitle})}),t[56]=r):r=t[56];let a;t[57]!==B||t[58]!==z?(a=(0,X.jsxs)(`div`,{children:[r,(0,X.jsx)(Br,{className:`text-token-text-secondary mt-1 text-xs`,children:z?(0,X.jsx)(W,{...wp.daysLeft,values:{days:Gn(new Date(B.end.getTime()+B.end.getTimezoneOffset()*60*1e3),new Date)}}):(0,X.jsx)(W,{...wp.cycleDateSpan,values:{...B}})})]}),t[57]=B,t[58]=z,t[59]=a):a=t[59];let l;t[60]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,X.jsx)(In.Trigger,{className:`px-2`,children:(0,X.jsx)(gr,{className:`icon-lg`})}),t[60]=l):l=t[60];let d;t[61]!==_.can_download_usage_report||t[62]!==B||t[63]!==Se?(d=_.can_download_usage_report?(0,X.jsx)(Ru,{cycle:B,mostRecentExportResult:Se.data?.most_recent_result}):null,t[61]=_.can_download_usage_report,t[62]=B,t[63]=Se,t[64]=d):d=t[64];let f;t[65]!==_.can_view_rate_card||t[66]!==u.id||t[67]!==u.name?(f=_.can_view_rate_card?(0,X.jsx)(Re,{icon:cr,to:Cp,target:`_blank`,rel:`noopener noreferrer`,onClick:()=>{I.logEventWithStatsig(`ChatGPT Credits: Rate Card Link Clicked`,`chatgpt_credits_rate_card_link_clicked`,{workspaceId:u.id,workspaceName:u.name})},children:(0,X.jsx)(W,{...wp.rateCardLink})}):null,t[65]=_.can_view_rate_card,t[66]=u.id,t[67]=u.name,t[68]=f):f=t[68];let p;t[69]!==d||t[70]!==f?(p=(0,X.jsxs)(In.Root,{children:[l,(0,X.jsx)(In.Portal,{children:(0,X.jsxs)(In.Content,{size:`small`,align:`end`,children:[d,f]})})]}),t[69]=d,t[70]=f,t[71]=p):p=t[71];let m=B.period===`monthly`,h=B.period!==`monthly`,v;t[72]!==m||t[73]!==h?(v=g(`items-center`,{flex:m,hidden:h}),t[72]=m,t[73]=h,t[74]=v):v=t[74];let y;t[75]===Symbol.for(`react.memo_cache_sentinel`)?(y=(0,X.jsx)(`div`,{className:`bg-token-border-heavy me-2 h-full w-px`,children:`\xA0`}),t[75]=y):y=t[75];let b;t[76]!==u.id||t[77]!==u.name||t[78]!==L?(b=()=>{R(gp),I.logEventWithStatsig(`ChatGPT Credits: Usage Time Travel`,`chatgpt_credits_usage_time_travel`,{workspaceId:u.id,workspaceName:u.name,direction:`back`,cycleIndex:L-1})},t[76]=u.id,t[77]=u.name,t[78]=L,t[79]=b):b=t[79];let S=L<-11,C;t[80]!==b||t[81]!==S?(C=(0,X.jsx)(i,{className:`px-2`,color:`ghost`,onClick:b,disabled:S,icon:x}),t[80]=b,t[81]=S,t[82]=C):C=t[82];let w;t[83]!==u.id||t[84]!==u.name||t[85]!==L?(w=()=>{R(hp),I.logEventWithStatsig(`ChatGPT Credits: Usage Time Travel`,`chatgpt_credits_usage_time_travel`,{workspaceId:u.id,workspaceName:u.name,direction:`forward`,cycleIndex:L+1})},t[83]=u.id,t[84]=u.name,t[85]=L,t[86]=w):w=t[86];let T;t[87]!==z||t[88]!==w?(T=(0,X.jsx)(i,{className:`px-2`,color:`ghost`,onClick:w,disabled:z,icon:Or}),t[87]=z,t[88]=w,t[89]=T):T=t[89];let E;t[90]!==v||t[91]!==C||t[92]!==T?(E=(0,X.jsxs)(`div`,{className:v,children:[y,C,T]}),t[90]=v,t[91]=C,t[92]=T,t[93]=E):E=t[93];let O;t[94]!==p||t[95]!==E?(O=(0,X.jsxs)(`div`,{className:`-me-2 -mt-2 flex items-center`,children:[p,E]}),t[94]=p,t[95]=E,t[96]=O):O=t[96];let k;t[97]!==a||t[98]!==O?(k=(0,X.jsxs)(`div`,{className:`flex items-start justify-between`,children:[a,O]}),t[97]=a,t[98]=O,t[99]=k):k=t[99];let A;t[100]!==we||t[101]!==n||t[102]!==z||t[103]!==me?(A=(0,X.jsx)(zf,{showAtOverageLimitBanner:we,usageData:me,denominator:n,isCurrentCycle:z}),t[100]=we,t[101]=n,t[102]=z,t[103]=me,t[104]=A):A=t[104];let j;t[105]!==_.can_purchase_credits||t[106]!==s?(j=_.can_purchase_credits&&(0,X.jsx)(`div`,{className:`border-token-border-default mt-6 flex items-center gap-2 border-t pt-6`,children:(0,X.jsxs)(`div`,{className:`flex grow items-center justify-between gap-4`,children:[(0,X.jsxs)(`div`,{children:[(0,X.jsx)(ji,{children:(0,X.jsx)(W,{id:`organizationBillingInfo.additionalCredits`,defaultMessage:`Add more credits`})}),(0,X.jsx)(Br,{className:`text-token-text-secondary mt-1`,children:(0,X.jsx)(W,{id:`organizationBillingInfo.additionalCreditsDescription`,defaultMessage:`Give your team continued access after they hit their plan limits. Credits are valid for 12 months.`})})]}),(0,X.jsx)(i,{color:`secondary`,loading:s,onClick:()=>{Un(gt,{analyticsSurface:`business_additional_credits`,checkoutOriginProvenance:{checkoutOriginProductExperience:Pt.WORK,checkoutOriginDeliverySurface:`web`},onCustomCheckoutEnd:()=>c(!1),onCustomCheckoutStart:()=>c(!0)})},children:(0,X.jsx)(W,{id:`organizationBillingInfo.addCredits`,defaultMessage:`Add credits`})})]})}),t[105]=_.can_purchase_credits,t[106]=s,t[107]=j):j=t[107];let M;t[108]!==k||t[109]!==A||t[110]!==j?(M=(0,X.jsxs)(fi,{className:`border-token-border-default gap-0 rounded-xl border p-6`,children:[k,A,j]}),t[108]=k,t[109]=A,t[110]=j,t[111]=M):M=t[111];let ee;t[112]===D.data?.alert_recipients?ee=t[113]:(ee=D.data?.alert_recipients??[],t[112]=D.data?.alert_recipients,t[113]=ee);let te;t[114]===D.data?.alert_thresholds?te=t[115]:(te=D.data?.alert_thresholds??[],t[114]=D.data?.alert_thresholds,t[115]=te);let N;t[116]!==_.can_manage_usage_alert_thresholds||t[117]!==ee||t[118]!==te||t[119]!==F?(N=(0,X.jsx)(_p,{canManageRecipients:!1,canManageThresholds:_.can_manage_usage_alert_thresholds,currentAccountIsEnterprisey:!1,recipients:ee,thresholds:te,updateAlerts:F}),t[116]=_.can_manage_usage_alert_thresholds,t[117]=ee,t[118]=te,t[119]=F,t[120]=N):N=t[120];let P;return t[121]!==M||t[122]!==N?(P=(0,X.jsxs)(X.Fragment,{children:[M,N]}),t[121]=M,t[122]=N,t[123]=P):P=t[123],P}if(!_.can_view_credit_balance)return null;let Ee=D.isFetching||te.isPending?`loading`:D.data?.overage_limit==null?`noLimit`:`limitSet`,De=z&&!we&&me.data?.current_balance!=null&&me.data.current_balance<0,ke=D.data?.overage_limit?.credits,Ae=me.data?.current_balance,je=Ae==null?null:Math.max(0,-Ae),Me=z&&ke!=null&&ke>0&&je!=null,Ne;t[124]!==_.can_set_overage_limit||t[125]!==_.can_view_overage_limit||t[126]!==u||t[127]!==l||t[128]!==te||t[129]!==je||t[130]!==ke||t[131]!==Ee||t[132]!==Me||t[133]!==D.data?.overage_limit?.credits?(Ne=_.can_view_overage_limit?(0,X.jsxs)(`div`,{className:`text-sm`,children:[(0,X.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,X.jsxs)(`div`,{className:`flex w-0 grow items-center gap-1`,children:[(0,X.jsx)(`span`,{className:`font-medium`,children:(0,X.jsx)(W,{...wp.overageLimitLabel})}),(0,X.jsx)(ae,{className:`flex items-center`,label:(0,X.jsx)(`span`,{className:`text-token-bg-primary font-normal`,children:(0,X.jsx)(W,{...up})}),side:`top`,customBackgroundColorClassName:`bg-token-main-surface-primary-inverse`,children:(0,X.jsx)(Lr,{className:`icon-sm text-token-text-secondary inline`})})]}),Ee===`loading`&&(0,X.jsx)(ee,{}),(0,X.jsx)(be,{"aria-label":l.formatMessage(wp.toggleOverageLimitLabel),checked:Ee===`limitSet`,disabled:!_.can_set_overage_limit||Ee===`loading`,onCheckedChange:async e=>{_.can_set_overage_limit&&(I.logEventWithStatsig(e?`ChatGPT Credits: Overage Limit Set`:`ChatGPT Credits: Overage Limit Cleared`,e?`chatgpt_credits_overage_limit_set`:`chatgpt_credits_overage_limit_cleared`,{workspaceId:u.id,workspaceName:u.name}),await te.mutateAsync(e?0:null))}})]}),(0,X.jsx)(`div`,{className:g(`border-token-border-default transition-duration-300 mt-4 overflow-hidden border-t transition-[height] ease-in-out`,Ee===`limitSet`?Me?`h-[84px]`:`h-[60px]`:`h-0 border-t-0`),children:(0,X.jsxs)(`div`,{className:`flex items-center gap-2 pt-4`,children:[(0,X.jsxs)(`div`,{className:`w-0 grow`,children:[(0,X.jsx)(W,{...wp.setOverageLimitAmount,values:{bold:mp,credits:Ss.format(ke??0)}}),Me&&(0,X.jsx)(`p`,{className:`text-token-text-secondary mt-1`,children:(0,X.jsx)(W,{...wp.overageLimitUtilization,values:{usedCredits:Ss.format(je),limitCredits:Ss.format(ke),percentage:l.formatNumber(je/ke,{style:`percent`,maximumFractionDigits:1})}})})]}),(0,X.jsx)(i,{color:`secondary`,className:`min-w-[80px]`,disabled:!_.can_set_overage_limit||Ee===`loading`,onClick:()=>fe(xp,{currentLimit:D.data?.overage_limit?.credits??null,onSubmit:async e=>{I.logEventWithStatsig(e==null?`ChatGPT Credits: Overage Limit Cleared`:`ChatGPT Credits: Overage Limit Set`,e==null?`chatgpt_credits_overage_limit_cleared`:`chatgpt_credits_overage_limit_set`,{workspaceId:u.id,workspaceName:u.name,newLimit:e}),await te.mutateAsync(e)}}),children:(0,X.jsx)(W,{...wp.setOverageLimitButton})})]})})]}):null,t[124]=_.can_set_overage_limit,t[125]=_.can_view_overage_limit,t[126]=u,t[127]=l,t[128]=te,t[129]=je,t[130]=ke,t[131]=Ee,t[132]=Me,t[133]=D.data?.overage_limit?.credits,t[134]=Ne):Ne=t[134];let Pe=Ne;if(o===`enterpriseOverageOnly`)return Pe;let Fe;t[135]===De?Fe=t[136]:(Fe=De&&(0,X.jsx)(ie,{title:(0,X.jsx)(W,{...wp.inOverageBannerTitle}),content:(0,X.jsx)(W,{...wp.inOverageBannerContent,values:{link:pp}}),icon:(0,X.jsx)(ge,{}),type:`info`}),t[135]=De,t[136]=Fe);let Ie=!_.show_monetary_credit_balance,Le;t[137]!==_.can_download_usage_report||t[138]!==oe||t[139]!==Se?(Le=_.can_download_usage_report?(0,X.jsx)(Zf,{cycleOptions:oe===`pending`?[]:oe,mostRecentExportResult:Se.data?.most_recent_result}):null,t[137]=_.can_download_usage_report,t[138]=oe,t[139]=Se,t[140]=Le):Le=t[140];let ze;t[141]!==_.can_view_credit_grants||t[142]!==_.can_view_rate_card||t[143]!==Pe||t[144]!==Ie||t[145]!==Le?(ze=(0,X.jsx)(Pf,{hideMonetaryAmount:Ie,menuItems:Le,showCreditGrantsMenuItem:_.can_view_credit_grants,showRateCardMenuItem:_.can_view_rate_card,children:Pe}),t[141]=_.can_view_credit_grants,t[142]=_.can_view_rate_card,t[143]=Pe,t[144]=Ie,t[145]=Le,t[146]=ze):ze=t[146];let Be;t[147]===D.data?.alert_recipients?Be=t[148]:(Be=D.data?.alert_recipients??[],t[147]=D.data?.alert_recipients,t[148]=Be);let Ve;t[149]===D.data?.alert_thresholds?Ve=t[150]:(Ve=D.data?.alert_thresholds??[],t[149]=D.data?.alert_thresholds,t[150]=Ve);let He;t[151]!==_.can_manage_usage_alert_recipients||t[152]!==_.can_manage_usage_alert_thresholds||t[153]!==Be||t[154]!==Ve||t[155]!==F?(He=(0,X.jsx)(_p,{boxed:!0,canManageRecipients:_.can_manage_usage_alert_recipients,canManageThresholds:_.can_manage_usage_alert_thresholds,currentAccountIsEnterprisey:!0,recipients:Be,thresholds:Ve,updateAlerts:F}),t[151]=_.can_manage_usage_alert_recipients,t[152]=_.can_manage_usage_alert_thresholds,t[153]=Be,t[154]=Ve,t[155]=F,t[156]=He):He=t[156];let Ue;return t[157]!==Fe||t[158]!==ze||t[159]!==He?(Ue=(0,X.jsxs)(X.Fragment,{children:[Fe,ze,He]}),t[157]=Fe,t[158]=ze,t[159]=He,t[160]=Ue):Ue=t[160],Ue}function pp(e){return(0,X.jsx)(cn,{openNewTab:!0,href:Sp,children:e},Sp)}function mp(e){return(0,X.jsx)(`span`,{className:`font-medium`,children:e},`bolded-overage-limit-label`)}function hp(e){return e+1}function gp(e){return e-1}function _p(e){"use forget";let t=(0,vp.c)(15),{boxed:n,canManageRecipients:r,canManageThresholds:a,currentAccountIsEnterprisey:o,recipients:s,thresholds:c,updateAlerts:l}=e,u=n!==void 0&&n,d;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,X.jsx)(ji,{children:(0,X.jsx)(W,{...wp.usageAlertLabel})}),t[0]=d):d=t[0];let f;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,X.jsxs)(`div`,{className:`w-0 grow`,children:[d,(0,X.jsx)(Br,{className:`text-token-text-secondary mt-1`,children:(0,X.jsx)(W,{...wp.usageAlertDescription})})]}),t[1]=f):f=t[1];let p=!a&&!r,m;t[2]!==r||t[3]!==a||t[4]!==o||t[5]!==s||t[6]!==c||t[7]!==l?(m=()=>fe(bp,{canManageRecipients:r,canManageThresholds:a,onSaveRecipients:async e=>{await l({recipients:e})},onSaveThresholds:async e=>{await l({thresholds:e})},recipients:s,thresholds:c,isEnterprisey:o}),t[2]=r,t[3]=a,t[4]=o,t[5]=s,t[6]=c,t[7]=l,t[8]=m):m=t[8];let h;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,X.jsx)(W,{...wp.usageAlertButton}),t[9]=h):h=t[9];let g;t[10]!==p||t[11]!==m?(g=(0,X.jsxs)(`div`,{className:`flex items-center gap-2`,children:[f,(0,X.jsx)(i,{color:`secondary`,className:`min-w-[80px]`,disabled:p,onClick:m,children:h})]}),t[10]=p,t[11]=m,t[12]=g):g=t[12];let _=g;if(u){let e;return t[13]===_?e=t[14]:(e=(0,X.jsx)(fi,{className:`border-token-border-default rounded-xl border p-6`,children:_}),t[13]=_,t[14]=e),e}return _}var vp,yp,X,bp,xp,Sp,Cp,wp,Tp=e((()=>{vp=pt(),en(),Jt(),Ii(),xs(),qa(),pe(),nr(),z(),Vt(),M(),Ir(),fr(),je(),_r(),Pr(),ce(),le(),H(),A(),pn(),Ge(),Me(),_(),p(),ke(),dt(),Ne(),dn(),yp=n(at()),rt(),Wu(),Rf(),Cn(),Xf(),Hu(),ip(),dp(),X=qe(),lt(),bp=V(()=>st(()=>import(`./99e0f7e1-d963p6goimga1tp9.js`).then(e=>e.ManageAlertsModal),__vite__mapDeps([15,1,2,3,4,5,6,7,8,9,16,17]))),xp=V(()=>st(()=>Promise.resolve().then(()=>(dp(),ap)).then(e=>e.OverageLimitModal),void 0)),Sp=`https://help.openai.com/en/articles/11487671 `,Cp=`https://help.openai.com/en/articles/11481834-chatgpt-rate-card`,wp=Qe({creditUsageSectionTitle:{id:`organizationBillingInfo.creditUsageSettings.creditUsageSectionTitle`,defaultMessage:`Credit usage`},rateCardLink:{id:`organizationBillingInfo.creditUsageSettings.rateCardLink`,defaultMessage:`View rate card`},daysLeft:{id:`organizationBillingInfo.creditUsageSettings.daysLeft`,defaultMessage:`Next cycle in {days} {days, plural, one {day} other {days}}`},cycleDateSpan:{id:`organizationBillingInfo.creditUsageSettings.cycleDateSpan`,defaultMessage:`{start, date, ::MMMdd} - {end, date, ::MMMdd}`},inOverageBannerTitle:{id:`organizationBillingInfo.creditUsageSettings.inOverageBannerTitle`,defaultMessage:`Your org is using credits beyond your plan`},inOverageBannerContent:{id:`organizationBillingInfo.creditUsageSettings.inOverageBannerContent`,defaultMessage:`Access to advanced features and models is still available. You’ll receive a separate invoice at the end of the month. <link>Learn more</link>`},overageLimitLabel:{id:`organizationBillingInfo.creditUsageSettings.overageLimitLabel`,defaultMessage:`Set overage limit`},toggleOverageLimitLabel:{id:`organizationBillingInfo.creditUsageSettings.toggleOverageLimitLabel`,defaultMessage:`Toggle overage limit`},setOverageLimitAmount:{id:`organizationBillingInfo.creditUsageSettings.setOverageLimitAmount`,defaultMessage:`<bold>Overage limit:</bold> {credits} credits`},overageLimitUtilization:{id:`organizationBillingInfo.creditUsageSettings.overageLimitUtilization`,defaultMessage:`{usedCredits} of {limitCredits} overage credits used ({percentage})`},setOverageLimitButton:{id:`organizationBillingInfo.creditUsageSettings.setOverageLimitButton`,defaultMessage:`Configure`},usageAlertLabel:{id:`organizationBillingInfo.creditUsageSettings.usageAlertLabel`,defaultMessage:`Credit usage alerts`},usageAlertDescription:{id:`organizationBillingInfo.creditUsageSettings.usageAlertDescription`,defaultMessage:`Send alerts to owners when credits are running low`},usageAlertButton:{id:`organizationBillingInfo.creditUsageSettings.usageAlertButton`,defaultMessage:`Manage`}})}));function Ep({upgradePolicy:e}){"use no forget";let t=xe(()=>w()),{country:n,setCountry:r}=Qt(),[a,o]=(0,kp.useState)(null),[s,c]=(0,kp.useState)(!1),l=St({country:n,currentAccount:t,location:`FreeWorkspaceLockedSectionBilling`,shouldUsePaidSubscriptionBillingCurrency:!1,pricingPlanIsTypeBusiness:!0}),{knownCount:u,isLoading:d,isRefreshing:f,isError:p,refetch:m}=An(t?.id),h=(0,kp.useMemo)(()=>({country:n,currency:Mp}),[n]),g=l??h,_=(0,kp.useMemo)(()=>t?{...t.subscriptionAnalyticsParams,referrer:typeof document<`u`?document.referrer:``}:null,[t]),v=(0,kp.useMemo)(()=>t?zi({currentAccount:t,selectedTab:`business`,shouldUseBusinessFreeWorkspaceExperience:!0}):null,[t]),{promoCode:y,promoMetadata:b,promoMetadataPlanType:x}=ui(),S=t!=null&&Yi({selectedTab:`business`,promoMetadata:b}),C=S&&x===re.SELF_SERVE_BUSINESS&&b!=null&&!(`percentage`in b.discount&&b.discount.percentage===100),T=Sa({promoCode:S&&x===re.SELF_SERVE_BUSINESS?y:void 0,promoMetadata:S&&x===re.SELF_SERVE_BUSINESS?b:null,showPremiumSeatPricing:S,showPromotionInPageBanner:C}),{selectedPlan:E,numSeats:D}=T,O=C?T.promoMetadata:null,{handleBusinessCheckoutRedirect:k}=Fa({billingDetails:g,existingAccount:t??void 0,checkoutOriginProvenance:Np,promoCode:S?T.promoCode:void 0,promoMetadata:S?T.promoMetadata:null,promoData:S?T.promoData:void 0,promoDataIsFromQueryParam:S?T.promoDataIsFromQueryParam:void 0,disableAutomaticPromotion:T.disableAutomaticPromotion}),A=e?.can_start_business_checkout===!0,j=A&&!d&&!f&&u!=null,M=(0,kp.useMemo)(()=>!t||!l||!_||!v?null:za({analyticsParams:_,currentAccount:t,planLoading:a,selectedTab:`business`,setPlanLoading:o,setShouldShowCheckoutLoadingOverlay:c,billingDetails:l,onClose:()=>{},businessComparisonEnabled:v.comparisonEnabled,eligibleComparisonPlans:v.eligiblePlans,isGoPromoEnabled:!1,isPlusPromoEnabled:!1,enableMoreResponsiveLayout:!1,disableCheckoutActions:!j,premiumSeatPricingAvailability:S,businessPurchaseParams:S?T:void 0,showBusinessPremiumPromotionBanner:C,checkoutOriginProvenance:Np}),[_,l,T,j,v,t,a,S,C]),ee=(0,kp.useCallback)(e=>{r(e)},[r]),te=(0,kp.useCallback)(()=>{j&&(async()=>{c(!0);try{await k(E,D,!0)}catch{c(!1)}})()},[k,D,E,c,j]),N=e?.can_change_checkout_country===!0,P=u??0,ne=s&&typeof document<`u`?(0,Ap.createPortal)((0,jp.jsx)(`div`,{className:`bg-token-bg-primary fixed inset-0 z-[10000] grid place-items-center dark:bg-[#1B1B1D]`,children:(0,jp.jsx)(Wa,{})}),document.body):null;return(0,jp.jsxs)(jp.Fragment,{children:[(0,jp.jsxs)(`section`,{className:`relative flex min-h-[60vh] flex-col gap-8 rounded-2xl`,children:[O?(0,jp.jsx)(Rr,{promoMetadata:O}):null,(0,jp.jsx)(Dp,{currency:g.currency,canStartBusinessCheckout:A,onUpgradeClick:te,seatUsage:P,isSeatUsageLoading:d||f||u==null}),p?(0,jp.jsxs)(`div`,{className:`text-token-text-secondary flex items-center gap-3 text-sm`,role:`alert`,children:[(0,jp.jsx)(W,{...Pp.seatCountUnavailable}),(0,jp.jsx)(i,{color:`secondary`,onClick:()=>void m(),children:(0,jp.jsx)(W,{...Pp.retrySeatCount})})]}):null,(0,jp.jsx)(`h2`,{className:`text-token-text-primary text-start text-xl leading-6 font-medium tracking-tight`,children:(0,jp.jsx)(W,{...Pp.plansTitle})}),(0,jp.jsx)(`div`,{className:`flex flex-col justify-center gap-6 md:flex-row`,children:M??(0,jp.jsx)(oi,{})}),(0,jp.jsxs)(`div`,{className:`text-token-text-secondary flex flex-col items-center justify-between gap-4 text-sm md:flex-row`,children:[(0,jp.jsx)(`span`,{children:(0,jp.jsx)(W,{...Pp.enterpriseCta,values:{link:e=>(0,jp.jsx)(ct,{className:`text-token-text-primary font-medium underline`,target:`_blank`,rel:`noreferrer`,to:Ie,children:e})}})}),N?(0,jp.jsx)(ni,{onChange:ee,value:n}):null]})]}),ne]})}function Dp(e){"use forget";let t=(0,Op.c)(25),{currency:n,canStartBusinessCheckout:r,onUpgradeClick:a,seatUsage:o,isSeatUsageLoading:s}=e,c;t[0]===n?c=t[1]:(c={product:`business_free_plan_card`,currency:n,recurringInterval:L.Month,amount:0,amountTaxBehavior:k.Exclusive},t[0]=n,t[1]=c);let l=c,u;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,jp.jsx)(`p`,{className:`text-xl leading-7 font-semibold`,children:(0,jp.jsx)(W,{...Pp.planCardTitle})}),t[2]=u):u=t[2];let d;t[3]!==r||t[4]!==s||t[5]!==a?(d=r?(0,jp.jsx)(i,{type:`button`,onClick:a,disabled:s,icon:jr,className:`ms-auto`,children:(0,jp.jsx)(W,{...Pp.planCardUpgradeCta})}):null,t[3]=r,t[4]=s,t[5]=a,t[6]=d):d=t[6];let f;t[7]===d?f=t[8]:(f=(0,jp.jsxs)(`div`,{className:`flex flex-wrap items-center gap-4`,children:[u,d]}),t[7]=d,t[8]=f);let p;t[9]===l?p=t[10]:(p=(0,jp.jsx)(Ja,{priceDetail:l}),t[9]=l,t[10]=p);let m;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,jp.jsx)(`span`,{className:`text-token-text-secondary text-xs leading-4 font-medium`,children:(0,jp.jsx)(W,{...Pp.planCardPerSeatLabel})}),t[11]=m):m=t[11];let h;t[12]===p?h=t[13]:(h=(0,jp.jsxs)(`div`,{className:`flex flex-wrap items-end gap-2`,children:[p,m]}),t[12]=p,t[13]=h);let g;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(g=(0,jp.jsx)(`hr`,{className:`border-token-border-default`}),t[14]=g):g=t[14];let _;t[15]!==s||t[16]!==o?(_=(0,jp.jsx)(`div`,{className:`text-base font-semibold`,children:s?(0,jp.jsx)(on,{className:`h-5 w-28`}):(0,jp.jsx)(W,{...Pp.planCardSeatCount,values:{count:o}})}),t[15]=s,t[16]=o,t[17]=_):_=t[17];let v;t[18]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,jp.jsx)(i,{type:`button`,color:`secondary`,disabled:!0,children:(0,jp.jsx)(W,{...Pp.planCardManageSeatsCta})}),t[18]=v):v=t[18];let y;t[19]===_?y=t[20]:(y=(0,jp.jsxs)(`div`,{className:`flex flex-wrap items-center justify-between gap-4`,children:[_,v]}),t[19]=_,t[20]=y);let b;return t[21]!==y||t[22]!==f||t[23]!==h?(b=(0,jp.jsx)(`div`,{className:`border-token-border-default bg-token-bg-primary mt-6 mb-8 w-full rounded-3xl border p-6 md:p-8`,children:(0,jp.jsxs)(`div`,{className:`flex flex-col gap-6`,children:[f,h,g,y]})}),t[21]=y,t[22]=f,t[23]=h,t[24]=b):b=t[24],b}var Op,kp,Ap,jp,Mp,Np,Pp,Fp=e((()=>{Op=pt(),en(),D(),pe(),Oa(),Dr(),zt(),Wi(),Na(),ma(),$i(),ze(),mi(),hi(),r(),oa(),Ha(),Zt(),a(),Me(),kp=n(at()),Ap=n(Ze()),rt(),nt(),Rn(),jp=qe(),Mp=`USD`,Np={checkoutOriginProductExperience:Pt.WORK,checkoutOriginDeliverySurface:`web`},Pp=Qe({seatCountUnavailable:{id:`chatgpt.workspace.billing.seatCountUnavailable`,defaultMessage:`Member count unavailable. Retry before upgrading.`},retrySeatCount:{id:`chatgpt.workspace.billing.retrySeatCount`,defaultMessage:`Retry`},planCardTitle:{id:`1cYDvr`,defaultMessage:`Business Free`},planCardUpgradeCta:{id:`J+rSsa`,defaultMessage:`Upgrade plan`},planCardPerSeatLabel:{id:`Yx6yx2`,defaultMessage:`seat / month`},planCardSeatCount:{id:`Zbzcz0`,defaultMessage:`{count, plural, one {{count} seat} other {{count} seats}}`},planCardManageSeatsCta:{id:`Usud+A`,defaultMessage:`Manage seats`},enterpriseCta:{id:`pyGPXe`,defaultMessage:`Need more capabilities for your business? See <link>ChatGPT Enterprise</link>`},plansTitle:{id:`5Yc+wi`,defaultMessage:`Plans`}})}));function Ip(e){return e instanceof De&&!e.isTransportError&&[401,403,404].includes(e.status)}function Lp(e){let t=e[1];if(!(typeof t!=`object`||!t)){if(`account_id`in t&&typeof t.account_id==`string`)return{account_id:t.account_id};if(`organization_id`in t&&typeof t.organization_id==`string`)return{organization_id:t.organization_id}}}function Rp(e,t,n){if(!Ip(n))return;let r=Lp(t),i=e.getQueryCache().findAll(r==null?{exact:!0,queryKey:t}:{queryKey:[t[0],r]});for(let e of i)e.setState({data:void 0})}var zp=e((()=>{de()})),Bp,Vp=e((()=>{p(),dt(),Bp=({organizationId:e,excludeDraft:t=!0,onError:n})=>ft({queryKey:[`invoicer-invoices`,{organization_id:e,exclude_draft:t}],queryFn:()=>e==null?Promise.resolve({invoices:[]}):S.safeGet(`/invoices/invoicer_invoices`,{parameters:{query:{organization_id:e,exclude_draft:t}}}).catch(e=>{throw n?.(e),e}),enabled:e!=null,staleTime:1/0})}));function Hp(e){if(e==null)return null;let t=typeof e==`number`?new Date(e*1e3):new Date(e);return Number.isNaN(t.getTime())?null:t}function Up(e){return`total_amount`in e}function Wp(e,t){if(!(!e.has_document||t==null))return`/api/invoices/invoicer/${encodeURIComponent(e.id)}/document?organization_id=${encodeURIComponent(t)}`}function Gp(e,t){return Up(e)?{createdDate:Hp(e.invoice_date),dueDate:Hp(e.due_date),invoiceUrl:Wp(e,t),isPaid:e.payment_status===`paid`&&e.status!==`cancelled`,isNoPaymentRequired:e.payment_status===`no_payment_required`&&e.status!==`cancelled`,isVoided:e.status===`cancelled`,paidDate:null,showPaidWithoutDate:!0}:{createdDate:Hp(e.created),dueDate:Hp(e.due_date),invoiceUrl:e.hosted_invoice_url.length>0?e.hosted_invoice_url:void 0,isPaid:e.paid,isNoPaymentRequired:!1,isVoided:e.status===`void`,paidDate:Hp(e.status_transitions.paid_at),showPaidWithoutDate:!1}}function Kp(e,t){let n=t.limit??100;if(n<=0)return{data:[],has_more:e.length>0};if(t.startingAfter!=null){let r=e.findIndex(e=>e.id===t.startingAfter);if(r===-1)return{data:[],has_more:!1};let i=r+1,a=e.slice(i,i+n);return{data:a,has_more:i+a.length<e.length}}if(t.endingBefore!=null){let r=e.findIndex(e=>e.id===t.endingBefore);if(r===-1)return{data:[],has_more:!1};let i=Math.max(r-n,0);return{data:e.slice(i,r),has_more:i>0}}let r=e.slice(0,n);return{data:r,has_more:r.length<e.length}}function qp(e){"use forget";let t=(0,$p.c)(29),{invoice:n,organizationId:r}=e,i=mt(),a;t[0]!==n||t[1]!==r?(a=Gp(n,r),t[0]=n,t[1]=r,t[2]=a):a=t[2];let{createdDate:o,dueDate:s,invoiceUrl:c,isPaid:l,isNoPaymentRequired:u,isVoided:d,paidDate:f,showPaidWithoutDate:p}=a,m;t[3]===o?m=t[4]:(m=(0,Z.jsx)(`span`,{children:o?(0,Z.jsx)(W,{...nm.invoiceName,values:{createdDate:o}}):(0,Z.jsx)(W,{...nm.defaultInvoiceName})}),t[3]=o,t[4]=m);let h;t[5]!==s||t[6]!==u||t[7]!==l||t[8]!==d||t[9]!==f||t[10]!==p?(h=u?(0,Z.jsx)(`div`,{className:`text-token-text-secondary text-xs`,children:(0,Z.jsx)(W,{id:`organizationBillingInfo.noPaymentRequired`,defaultMessage:`No payment required`})}):l&&(f!=null||p)?(0,Z.jsx)(`div`,{className:`text-token-text-secondary text-xs`,children:f?(0,Z.jsx)(W,{...nm.paidInvoice,values:{invoiceDate:f}}):(0,Z.jsx)(W,{...nm.paidInvoiceNoDate})}):(0,Z.jsx)(`div`,{className:g(`text-xs`,d?`text-token-text-tertiary`:`text-green-700`),children:d?(0,Z.jsx)(W,{...nm.voidedInvoice}):s?(0,Z.jsx)(W,{...nm.upcomingInvoice,values:{invoiceDate:s}}):(0,Z.jsx)(W,{...nm.upcomingInvoiceNoDate})}),t[5]=s,t[6]=u,t[7]=l,t[8]=d,t[9]=f,t[10]=p,t[11]=h):h=t[11];let _;t[12]!==m||t[13]!==h?(_=(0,Z.jsxs)(`div`,{className:`flex grow flex-col gap-1`,children:[m,h]}),t[12]=m,t[13]=h,t[14]=_):_=t[14];let v=c==null&&`cursor-not-allowed opacity-20`,y;t[15]===v?y=t[16]:(y=g(`mx-auto`,v),t[15]=v,t[16]=y);let b=c==null,x;t[17]!==i||t[18]!==c?(x=c==null?void 0:i.formatMessage(nm.openInvoiceDocument),t[17]=i,t[18]=c,t[19]=x):x=t[19];let S;t[20]===Symbol.for(`react.memo_cache_sentinel`)?(S=(0,Z.jsx)(cr,{className:`icon-sm text-green-600`}),t[20]=S):S=t[20];let C;t[21]!==c||t[22]!==y||t[23]!==b||t[24]!==x?(C=(0,Z.jsx)(`a`,{href:c,className:y,"aria-disabled":b,"aria-label":x,target:`_blank`,rel:`noreferrer`,children:S}),t[21]=c,t[22]=y,t[23]=b,t[24]=x,t[25]=C):C=t[25];let w;return t[26]!==C||t[27]!==_?(w=(0,Z.jsxs)(ia,{className:`items-center`,children:[_,C]}),t[26]=C,t[27]=_,t[28]=w):w=t[28],w}function Jp(e){"use forget";let t=(0,$p.c)(22),{invoices:n,invoicesOptions:r,organizationId:i,setInvoicesOptions:a}=e,o=r.startingAfter!=null||r.endingBefore!=null&&n.has_more,s=r.endingBefore!=null||n.has_more&&r.endingBefore==null,c;if(t[0]!==n.data||t[1]!==i){let e;t[3]===i?e=t[4]:(e=e=>(0,Z.jsx)(qp,{invoice:e,organizationId:i},e.id),t[3]=i,t[4]=e),c=n.data.map(e),t[0]=n.data,t[1]=i,t[2]=c}else c=t[2];let l;t[5]===c?l=t[6]:(l=(0,Z.jsx)(Zi,{children:c}),t[5]=c,t[6]=l);let u;t[7]!==o||t[8]!==n.data[0]||t[9]!==a?(u=o&&(0,Z.jsx)(`button`,{onClick:()=>{let e=n.data[0];e!=null&&a(t=>({...t,endingBefore:e.id,startingAfter:void 0}))},children:(0,Z.jsx)(ur,{className:`icon-sm`})}),t[7]=o,t[8]=n.data[0],t[9]=a,t[10]=u):u=t[10];let d;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,Z.jsx)(`div`,{className:`grow`}),t[11]=d):d=t[11];let f;t[12]!==s||t[13]!==n.data||t[14]!==a?(f=s&&(0,Z.jsx)(`button`,{onClick:()=>{let e=n.data[n.data.length-1];e!=null&&a(t=>({...t,startingAfter:e.id,endingBefore:void 0}))},children:(0,Z.jsx)(yr,{className:`icon-sm`})}),t[12]=s,t[13]=n.data,t[14]=a,t[15]=f):f=t[15];let p;t[16]!==u||t[17]!==f?(p=(0,Z.jsxs)(`div`,{className:`flex`,children:[u,d,f]}),t[16]=u,t[17]=f,t[18]=p):p=t[18];let m;return t[19]!==l||t[20]!==p?(m=(0,Z.jsxs)(fi,{children:[l,p]}),t[19]=l,t[20]=p,t[21]=m):m=t[21],m}function Yp(e){"use forget";let t=(0,$p.c)(14),{invoices:n,invoicesOptions:r,isError:a,isFetching:o,isLoading:s,onRetry:c,organizationId:l,setInvoicesOptions:u}=e;if((s||n==null)&&!a){let e;return t[0]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Z.jsx)(fi,{children:(0,Z.jsx)(`div`,{className:`flex h-40 items-center justify-center`,children:(0,Z.jsx)(ee,{})})}),t[0]=e):e=t[0],e}let d;t[1]!==a||t[2]!==o||t[3]!==c?(d=a?(0,Z.jsx)(fi,{children:(0,Z.jsx)(`div`,{role:`alert`,children:(0,Z.jsx)($n,{type:`danger`,primaryAction:(0,Z.jsx)(i,{color:`secondary`,loading:o,onClick:c,size:`small`,type:`button`,children:(0,Z.jsx)(W,{...nm.retryLoadingInvoices})}),children:(0,Z.jsx)(W,{...nm.invoiceLoadFailure})})})}):null,t[1]=a,t[2]=o,t[3]=c,t[4]=d):d=t[4];let f=d;if(n==null)return f;if(n.data.length===0){if(a)return f;let e;return t[5]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Z.jsx)(fi,{children:(0,Z.jsx)($n,{type:`info`,children:(0,Z.jsx)(W,{...nm.noInvoices})})}),t[5]=e):e=t[5],e}let p;t[6]!==n||t[7]!==r||t[8]!==l||t[9]!==u?(p=(0,Z.jsx)(Jp,{invoices:n,invoicesOptions:r,organizationId:l,setInvoicesOptions:u}),t[6]=n,t[7]=r,t[8]=l,t[9]=u,t[10]=p):p=t[10];let m;return t[11]!==f||t[12]!==p?(m=(0,Z.jsxs)(Z.Fragment,{children:[f,p]}),t[11]=f,t[12]=p,t[13]=m):m=t[13],m}function Xp(e){"use forget";let t=(0,$p.c)(16),{invoiceQueryScope:n}=e,r=$e(),i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i={limit:5},t[0]=i):i=t[0];let[a,o]=(0,em.useState)(i),s;t[1]!==a||t[2]!==r?(s=(e,t)=>{Rp(r,Ai({options:a,params:t}).queryKey,e)},t[1]=a,t[2]=r,t[3]=s):s=t[3];let c;t[4]!==n||t[5]!==s?(c={invoiceQueryScope:n,onError:s},t[4]=n,t[5]=s,t[6]=c):c=t[6];let{data:l,isError:u,isFetching:d,isLoading:f,refetch:p}=ra(a,c),m;t[7]===p?m=t[8]:(m=()=>void p(),t[7]=p,t[8]=m);let h;return t[9]!==l||t[10]!==a||t[11]!==u||t[12]!==d||t[13]!==f||t[14]!==m?(h=(0,Z.jsx)(Yp,{invoices:l,invoicesOptions:a,isError:u,isFetching:d,isLoading:f,onRetry:m,setInvoicesOptions:o}),t[9]=l,t[10]=a,t[11]=u,t[12]=d,t[13]=f,t[14]=m,t[15]=h):h=t[15],h}function Zp(e){"use forget";let t=(0,$p.c)(21),{organizationId:n}=e,r=$e(),i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i={limit:5},t[0]=i):i=t[0];let[a,o]=(0,em.useState)(i),s=mt(),c;t[1]!==s||t[2]!==n||t[3]!==r?(c=e=>{Ya(s,e),Rp(r,Bp({organizationId:n}).queryKey,e)},t[1]=s,t[2]=n,t[3]=r,t[4]=c):c=t[4];let l;t[5]!==n||t[6]!==c?(l=Bp({organizationId:n,onError:c}),t[5]=n,t[6]=c,t[7]=l):l=t[7];let{data:u,isError:d,isFetching:f,isLoading:p,refetch:m}=tt(l),h;t[8]!==u||t[9]!==a?(h=u==null?void 0:Kp(u.invoices,a),t[8]=u,t[9]=a,t[10]=h):h=t[10];let g=h,_;t[11]===m?_=t[12]:(_=()=>void m(),t[11]=m,t[12]=_);let v;return t[13]!==g||t[14]!==a||t[15]!==d||t[16]!==f||t[17]!==p||t[18]!==n||t[19]!==_?(v=(0,Z.jsx)(Yp,{invoices:g,invoicesOptions:a,isError:d,isFetching:f,isLoading:p,onRetry:_,organizationId:n,setInvoicesOptions:o}),t[13]=g,t[14]=a,t[15]=d,t[16]=f,t[17]=p,t[18]=n,t[19]=_,t[20]=v):v=t[20],v}function Qp(e){"use forget";let t=(0,$p.c)(8),{invoiceQueryScope:n}=e,r=Oe(),i;t[0]===r?i=t[1]:(i=Pa(r,P()),t[0]=r,t[1]=i);let a=n===`organization`?i?.organizationId:void 0,o;t[2]===a?o=t[3]:(o=a!=null&&B(tm),t[2]=a,t[3]=o);let s=o,c;return t[4]!==n||t[5]!==a||t[6]!==s?(c=s?(0,Z.jsx)(Zp,{organizationId:a}):(0,Z.jsx)(Xp,{invoiceQueryScope:n}),t[4]=n,t[5]=a,t[6]=s,t[7]=c):c=t[7],c}var $p,em,Z,tm,nm,rm=e((()=>{$p=pt(),pe(),Cr(),dr(),_r(),bn(),Ge(),Me(),u(),dt(),Ne(),em=n(at()),rt(),qa(),zp(),Ua(),ha(),Vp(),zr(),Xi(),Z=qe(),tm=`132314505`,nm=Qe({invoiceName:{id:`organizationBillingInfo.invoiceName`,defaultMessage:`Invoice: {createdDate, date, long}`},defaultInvoiceName:{id:`organizationBillingInfo.defaultInvoiceName`,defaultMessage:`Invoice`},paidInvoice:{id:`organizationBillingInfo.paidInvoice`,defaultMessage:`Paid: {invoiceDate, date, long}`},paidInvoiceNoDate:{id:`organizationBillingInfo.paidInvoiceNoDate`,defaultMessage:`Paid`},upcomingInvoice:{id:`organizationBillingInfo.upcomingInvoice`,defaultMessage:`Due: {invoiceDate, date, long}`},upcomingInvoiceNoDate:{id:`organizationBillingInfo.upcomingInvoiceNoDate`,defaultMessage:`Upcoming invoice`},voidedInvoice:{id:`organizationBillingInfo.voidedInvoice`,defaultMessage:`Voided`},noInvoices:{id:`organizationBillingInfo.noInvoices`,defaultMessage:`No invoices found`},invoiceLoadFailure:{id:`organizationBillingInfo.invoices.error.loadFailure`,defaultMessage:`We couldn't load your invoices. Try again.`},retryLoadingInvoices:{id:`organizationBillingInfo.invoices.error.retryButton`,defaultMessage:`Try again`},openInvoiceDocument:{id:`organizationBillingInfo.openInvoiceDocument`,defaultMessage:`Open invoice document`}})}));function im(e){return[`workspace-codex-invite-promo-eligibility`,e]}function am(e,t){"use forget";let n=(0,om.c)(8),r=t===void 0||t,i;n[0]===e?i=n[1]:(i=im(e),n[0]=e,n[1]=i);let a;n[2]===e?a=n[3]:(a=async()=>await S.safeGet(`/accounts/{account_id}/codex_invite_promo_status`,{parameters:{path:{account_id:e??``}}}),n[2]=e,n[3]=a);let o=r&&e!=null,s;return n[4]!==i||n[5]!==a||n[6]!==o?(s={queryKey:i,queryFn:a,enabled:o},n[4]=i,n[5]=a,n[6]=o,n[7]=s):s=n[7],tt(s)}var om,sm=e((()=>{om=pt(),p(),dt()}));function cm(e){return!!(e?.can_manage_payment_method||e?.can_manage_billing_schedule||e?.can_cancel_subscription)}function lm(e){"use forget";let t=(0,Fm.c)(12),{discount:n,discountDurationBillingPeriod:r,discountDurationNumPeriods:i,formattedAmount:a,formattedSeatCount:o}=e;if(n.discount_type===Te.PERCENTAGE){let e;return t[0]!==n.amount||t[1]!==r||t[2]!==i?(e=(0,Q.jsx)(W,{...$.workspacePercentOff,values:{billingPeriod:r,numPeriods:i,percent:n.amount}}),t[0]=n.amount,t[1]=r,t[2]=i,t[3]=e):e=t[3],e}if(o!=null){let e;return t[4]!==r||t[5]!==i||t[6]!==o?(e=(0,Q.jsx)(W,{...$.seatFreeUpTo,values:{billingPeriod:r,numPeriods:i,seatCount:o}}),t[4]=r,t[5]=i,t[6]=o,t[7]=e):e=t[7],e}let s;return t[8]!==r||t[9]!==i||t[10]!==a?(s=(0,Q.jsx)(W,{...$.fixedAmountOff,values:{amount:a,billingPeriod:r,numPeriods:i}}),t[8]=r,t[9]=i,t[10]=a,t[11]=s):s=t[11],s}function um(e){"use forget";let t=(0,Fm.c)(15),{discount:n,discountDurationBillingPeriod:r,discountDurationNumPeriods:i,formattedAmount:a,formattedSeatCount:o,formattedStartPeriod:s}=e;if(n.discount_type===Te.PERCENTAGE){let e;return t[0]!==n.amount||t[1]!==r||t[2]!==i||t[3]!==s?(e=(0,Q.jsx)(W,{...$.workspacePercentOffFuture,values:{billingPeriod:r,numPeriods:i,percent:n.amount,startPeriod:s}}),t[0]=n.amount,t[1]=r,t[2]=i,t[3]=s,t[4]=e):e=t[4],e}if(o!=null){let e;return t[5]!==r||t[6]!==i||t[7]!==o||t[8]!==s?(e=(0,Q.jsx)(W,{...$.seatFreeUpToFuture,values:{billingPeriod:r,numPeriods:i,seatCount:o,startPeriod:s}}),t[5]=r,t[6]=i,t[7]=o,t[8]=s,t[9]=e):e=t[9],e}let c;return t[10]!==r||t[11]!==i||t[12]!==a||t[13]!==s?(c=(0,Q.jsx)(W,{...$.fixedAmountOffFuture,values:{amount:a,billingPeriod:r,numPeriods:i,startPeriod:s}}),t[10]=r,t[11]=i,t[12]=a,t[13]=s,t[14]=c):c=t[14],c}function dm(e){"use forget";let t=(0,Fm.c)(36),{className:n,discount:r,activeBenefits:i,standardSeatPrice:a,premiumSeatPrice:o,perSeatMonthly:s,subscription:c,taxPercent:l}=e,u=mt(),d;t[0]===i?d=t[1]:(d=i?.filter(fm),t[0]=i,t[1]=d);let f=d;if(f?.length){let e;return t[2]!==n||t[3]!==f||t[4]!==o||t[5]!==a||t[6]!==c.billing_currency?(e=(0,Q.jsx)(Vl,{className:n,activeBenefits:f,currency:c.billing_currency,standardSeatPrice:a,premiumSeatPrice:o}),t[2]=n,t[3]=f,t[4]=o,t[5]=a,t[6]=c.billing_currency,t[7]=e):e=t[7],e}if(!r)return null;let p=r.duration_num_periods??0,m=r.discount_start_in_num_periods??0,h=c.billing_period===`yearly`?U.ANNUAL:U.FLEXIBLE,_,v;if(t[8]!==r||t[9]!==u||t[10]!==s||t[11]!==c.billing_currency||t[12]!==c.billing_period||t[13]!==l){let e=c.billing_period===`yearly`&&r.discount_type===Te.FIXED?null:Za({discount:r,perSeatMonthly:s,currency:c.billing_currency,taxPercent:l}),n;t[16]!==r.amount||t[17]!==u||t[18]!==c.billing_currency?(n=u.formatNumber(Number(r.amount??0),{style:`currency`,currency:c.billing_currency}),t[16]=r.amount,t[17]=u,t[18]=c.billing_currency,t[19]=n):n=t[19],_=n,v=e==null?void 0:u.formatMessage($.discountSeatCount,{seats:e}),t[8]=r,t[9]=u,t[10]=s,t[11]=c.billing_currency,t[12]=c.billing_period,t[13]=l,t[14]=_,t[15]=v}else _=t[14],v=t[15];let y=v,b;t[20]!==m||t[21]!==u?(b=u.formatMessage($.discountStartPeriod,{numPeriods:m}),t[20]=m,t[21]=u,t[22]=b):b=t[22];let x=b,S;t[23]===n?S=t[24]:(S=g(`bg-token-theme-blue-background text-token-theme-blue-text-on-background rounded-lg p-3 text-sm`,n),t[23]=n,t[24]=S);let C;t[25]!==r||t[26]!==h||t[27]!==p||t[28]!==m||t[29]!==_||t[30]!==y||t[31]!==x?(C=(0,Q.jsx)(`div`,{children:m>0?(0,Q.jsx)(um,{discount:r,discountDurationBillingPeriod:h,discountDurationNumPeriods:p,formattedAmount:_,formattedSeatCount:y,formattedStartPeriod:x}):(0,Q.jsx)(lm,{discount:r,discountDurationBillingPeriod:h,discountDurationNumPeriods:p,formattedAmount:_,formattedSeatCount:y})}),t[25]=r,t[26]=h,t[27]=p,t[28]=m,t[29]=_,t[30]=y,t[31]=x,t[32]=C):C=t[32];let w;return t[33]!==S||t[34]!==C?(w=(0,Q.jsx)(`div`,{className:S,children:C}),t[33]=S,t[34]=C,t[35]=w):w=t[35],w}function fm(e){return e.benefits.some(pm)}function pm(e){return e.calculation.type===`percentage_off`}function mm(e,t){if(t==null||t===`pending`)return null;let n=t.start.getFullYear()===t.end.getFullYear()?{month:`short`,day:`numeric`}:{month:`short`,day:`numeric`,year:`numeric`};return{start:e.formatDate(t.start,n),end:e.formatDate(t.end,n)}}function hm({intl:e,cycleDates:t,loadingFallback:n,renderCycleDateRange:r}){if(t===`pending`)return n;let i=mm(e,t);return i?r(i):null}function gm({amountPerCredit:e,currency:t,intl:n,minorUnitExponent:r,numCredits:i}){if(t==null||r==null||e==null||i<=0)return null;let a=Math.round(i*e*10**r)/10**r;return n.formatNumber(a,{style:`currency`,currency:t,maximumFractionDigits:0})}function _m({intl:e,cycleDates:t,canViewPaidBillingContent:n,isFreeWorkspacePlan:r,isSelfServeBusinessBillingPageRedesignEnabled:i}){return i?null:r?(0,Q.jsx)(`span`,{className:`text-token-text-secondary font-normal`,children:(0,Q.jsx)(W,{...$.headerSubheading})}):n?hm({intl:e,cycleDates:t,loadingFallback:(0,Q.jsx)(`div`,{className:`loading-results-shimmer h-[24px] w-[300px] rounded-sm`}),renderCycleDateRange:e=>(0,Q.jsx)(`span`,{className:`text-token-text-tertiary`,children:(0,Q.jsx)(W,{...$.subtitle,values:e})})}):null}function vm({currentAccount:e,teamFreeTrialPromoEligibility:t}){let n=Mo({account:e,teamFreeTrialPromoEligibility:t,disableExposureLog:!0});return n.hasActiveBusinessFreeTrial?Mo({account:e,teamFreeTrialPromoEligibility:t}):n}function ym({currentAccount:e,teamFreeTrialPromoEligibility:t}){fe(of,{businessTrialImmediateCancellationState:vm({currentAccount:e,teamFreeTrialPromoEligibility:t})})}function bm(e){let t=mt(),n=m(),r=Ke(),i=$e(),[a,o]=ot(),{data:s}=oe(),{country:c}=Qt(),{prepareCheckoutSession:l,navigateToCheckout:u}=vt(),d=s==null?null:fu(s.accountItems),{billingDetails:f,status:p}=ar({country:c,currentAccount:d,location:`BillingInfoPage.BusinessCancelToPlus`,shouldUsePaidSubscriptionBillingCurrency:!0,pricingPlanIsTypeBusiness:!1}),{data:h}=$a(e?.isSelfServeBusiness()===!0?No:``),g=Im.useRef(!1),_=Im.useRef(!1),v=Im.useCallback(()=>{ym({currentAccount:e,teamFreeTrialPromoEligibility:h})},[e,h]);(0,Im.useEffect)(()=>{if(g.current||e==null||a.get(`resume_business_cancellation`)!==`1`||Ho(e)==null)return;g.current=!0,Wo();let t=new URLSearchParams(a);t.delete(Uo),o(t,{replace:!0}),v()},[e,v,a,o]);let y=Im.useCallback(async(a,o)=>{if(!e||!f||!d||!mu(d)){n.warning(t.formatMessage($.plusCheckoutError),{hasCloseButton:!0});return}let s=new URL(window.location.href);s.searchParams.set(Uo,`1`);let c={entry_point:wt.BUSINESS_CANCELLATION_TO_PLUS,plan_name:ne.PLUS,billing_details:f,cancel_url:s.toString(),...a?{promo_campaign:{promo_campaign_id:a,is_coupon_from_query_param:!1}}:{}};try{let t=await _u({businessAccountId:e.id,personalAccountId:d.id,queryClient:i,startCheckout:()=>l(c,{})}),n=vn(t);if(n==null)throw Error(`Missing checkout session id for Business to Plus`);if(a!=null&&!hu(t,a))throw Error(`Plus trial promotion was not applied to Business to Plus checkout`);if(!Vo({businessAccountId:e.id,checkoutSessionId:n,createdAtMs:Date.now()}))throw Error(`Unable to persist Business to Plus handoff`);await gu({onCheckoutReady:o,navigateToCheckout:()=>u(t,{checkoutPayload:c,searchParams:s.search,state:{[or]:{pathname:r.pathname,search:s.search,hash:r.hash}}}),onNavigationFailure:()=>{Wo(),v()}})}catch(e){Wo(),Se.addError(e instanceof Error?e:Error(`Failed to start Business to Plus checkout`),{feature:`business_cancel_to_plus_checkout`}),n.warning(t.formatMessage($.plusCheckoutError),{hasCloseButton:!0})}},[e,t,r.hash,r.pathname,u,v,d,f,l,i,n]),b=Im.useCallback(()=>{if(!e||!d||!f||!mu(d)){v();return}let t=d.getEligiblePromoCampaignId(re.PLUS),n=zn(t)?t:void 0,r=f.currency??d.mustGetSubscriptionBillingCurrency(`BillingInfoPage.BusinessCancelToPlus`),i=()=>{Fe(Hm)},a={onCheckoutButtonClicked:async()=>{let e=`chatgpt_business_cancel_to_plus_offer_checkout_clicked`,t=I.logStructuredEvent(`ChatgptBusinessBillingPlanTransition`,{step:`CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_STEP_CHECKOUT_CLICKED`,offer:n?`CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_OFFER_PLUS_TRIAL`:`CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_OFFER_PAID_PLUS`,legacyStatsigEventName:e});Ve(e,n?`plus_trial`:`paid_plus`,t?{unique_event_id:t}:void 0),await y(n,i)},onContinueCancellationButtonClicked:()=>{let e=`chatgpt_business_cancel_to_plus_offer_continue_cancellation_clicked`,t=I.logStructuredEvent(`ChatgptBusinessBillingPlanTransition`,{step:`CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_STEP_CONTINUE_CANCELLATION_CLICKED`,legacyStatsigEventName:e});Ve(e,void 0,t?{unique_event_id:t}:void 0),i(),v()}},o=()=>{let e=`chatgpt_business_cancel_to_plus_offer_modal_dismissed`,t=I.logStructuredEvent(`ChatgptBusinessBillingPlanTransition`,{step:`CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_STEP_OFFER_DISMISSED`,legacyStatsigEventName:e});Ve(e,void 0,t?{unique_event_id:t}:void 0),i()},s=`chatgpt_business_cancel_to_plus_offer_modal_shown`,c=I.logStructuredEvent(`ChatgptBusinessBillingPlanTransition`,{step:`CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_STEP_OFFER_SHOWN`,offer:n?`CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_OFFER_PLUS_TRIAL`:`CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_OFFER_PAID_PLUS`,legacyStatsigEventName:s});Ve(s,n?`plus_trial`:`paid_plus`,c?{unique_event_id:c}:void 0),fe(Hm,{isOpen:!0,billingCurrency:r,isTrialOffer:n!=null,onClose:o,onCheckoutButtonClicked:a.onCheckoutButtonClicked,onContinueCancellationButtonClicked:a.onContinueCancellationButtonClicked})},[e,v,d,f,y]);return(0,Im.useEffect)(()=>{!_.current||d==null||mu(d)&&p===`loading`||(_.current=!1,b())},[b,d,p]),async()=>{if(Ve(`chatgpt_billing_manage_plan_cancel_clicked`),!e||!Bo(!1)){v();return}if(d!=null){b();return}try{_.current=!0,await S.safePost(`/accounts/personal`,{}),await pu(i)}catch(e){_.current=!1,Se.addError(e instanceof Error?e:Error(`Failed to create personal account for Business to Plus`),{feature:`business_cancel_to_plus_checkout`}),n.warning(t.formatMessage($.plusCheckoutError),{hasCloseButton:!0}),v()}}}function xm(e){let t=mt(),n=m();return async()=>{if(e){Ve(`chatgpt_billing_manage_plan_payment_method_clicked`);try{let t=await S.safeGet(`/payments/customer_portal`,{parameters:{query:{account_id:e.getWorkspaceId()}}});location.href=t.url}catch{n.warning(t.formatMessage($.stripeErrorWarning),{hasCloseButton:!0})}}}}function Sm(e){"use forget";let t=(0,Fm.c)(13),{title:n,description:r,buttonLabel:a,onClick:o}=e,s;t[0]===n?s=t[1]:(s=(0,Q.jsx)(`h3`,{className:`text-token-text-primary text-sm font-semibold`,children:n}),t[0]=n,t[1]=s);let c;t[2]===r?c=t[3]:(c=(0,Q.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-xs font-normal`,children:r}),t[2]=r,t[3]=c);let l;t[4]!==s||t[5]!==c?(l=(0,Q.jsxs)(`div`,{className:`min-w-0`,children:[s,c]}),t[4]=s,t[5]=c,t[6]=l):l=t[6];let u;t[7]!==a||t[8]!==o?(u=(0,Q.jsx)(i,{color:`secondary`,size:`medium`,className:`min-h-9 shrink-0 rounded-full px-5`,onClick:o,children:a}),t[7]=a,t[8]=o,t[9]=u):u=t[9];let d;return t[10]!==l||t[11]!==u?(d=(0,Q.jsx)(`section`,{className:`border-token-border-default bg-token-bg-primary mt-4 overflow-hidden rounded-xl border`,children:(0,Q.jsxs)(`div`,{className:`flex items-center justify-between gap-4 px-6 py-5`,children:[l,u]})}),t[10]=l,t[11]=u,t[12]=d):d=t[12],d}function Cm(e){"use forget";let t=(0,Fm.c)(5),{onCancelSubscription:n}=e,r,i,a;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Q.jsx)(W,{...$.cancelPlanTitle}),i=(0,Q.jsx)(W,{...$.cancelPlanDescription}),a=(0,Q.jsx)(W,{...$.cancelSubscriptionBtn}),t[0]=r,t[1]=i,t[2]=a):(r=t[0],i=t[1],a=t[2]);let o;return t[3]===n?o=t[4]:(o=(0,Q.jsx)(Sm,{title:r,description:i,buttonLabel:a,onClick:n}),t[3]=n,t[4]=o),o}function wm({onMoveToUsageBasedBilling:e}){return(0,Q.jsx)(Sm,{title:(0,Q.jsx)(W,{...$.moveToUsageBasedBillingTitle}),description:(0,Q.jsx)(W,{...$.moveToUsageBasedBillingDescription}),buttonLabel:(0,Q.jsx)(W,{...$.moveToUsageBasedBillingButton}),onClick:e})}function Tm(e){"use forget";let t=(0,Fm.c)(2),{teamBillingType:n}=e,r=n===U.FLEXIBLE?$.monthly:$.annual,i;return t[0]===r?i=t[1]:(i=(0,Q.jsx)(`div`,{className:`bg-token-bg-status-success text-token-text-status-success inline-flex items-center rounded-sm px-2 py-1 text-xs font-semibold`,children:(0,Q.jsx)(W,{...r})}),t[0]=r,t[1]=i),i}function Em({subscription:e,cycleDates:t,canViewInvoices:n,onOpenInvoicesPage:r,accountPolicy:a}){let o=mt(),{country:s}=Qt(),c=Oe(),l=c!=null&&c.isOwnerOfAccount()&&c.isSelfServeBusiness()&&c.hasPaidSubscription()&&c.data.subscriptionStatus.trial?.isTrialing!==!0&&Oi(c.id),u=_e(c?.planType),d=Po(c?.data),f=Pi(c?.id),p=St({country:s,currentAccount:c,location:`BillingInfoPage.SelfServeBusinessBillingInfo`,pricingPlanIsTypeBusiness:!u}),m=Ka(e),h=bm(c);xm(c);let _=()=>{fe(ef)},v=c?.id,y=Im.useRef(void 0);(0,Im.useEffect)(()=>{v!=null&&y.current!==v&&(y.current=v,ja(so.CHATGPT_WEB_BILLING_MANDATE_AUTHORIZATION_ACTION_TYPE_BILLING_VIEWED,`business`))},[v]);let{bannersConfig:x,isLoading:S}=Hn({activeWorkspaceId:v,enabled:v!=null}),C=It(x),w=C?.can_load_admin_credit_limit_banner===!0,T=C?.can_load_codex_invite_promo_eligibility===!0,D=C?.can_render_codex_invite_promo_banner===!0,O=am(v,T),k=Ot(v,{enabled:D}),{data:A,isLoading:M}=E({countryCode:m?.countryCode??s,currency:m?.billingCurrency??p?.currency,enabled:m!=null||p!=null}),te=m==null||A==null?null:ei(A,m);(0,Im.useEffect)(()=>{te!=null&&b.count(j.TEAMS,`business_manage_seats_checkout_pricing_identity_match`,{entry_point:`billing_info`,matches_subscription_pricing_identity:String(te)})},[te]);let N=A,{data:P,isLoading:ne}=Qr(v),re=Kr(P),{promoEligibility:F,shouldShowFreeSeatsCta:ie,seatThresholdGap:L}=ii({seatsEntitled:e==null?void 0:Ia(e,`default`,e.seats_entitled)}),R=c?.data.subscriptionStatus.discount,z=c?.data.subscriptionStatus.appliedBenefits,ae=N?.currencyConfig.tax_percent,B=e?e.billing_period===`monthly`?U.FLEXIBLE:U.ANNUAL:void 0,oe=a==null?c?.isCodexOnlyWorkspace()!==!0:!a.is_codex_only_workspace,V=eu(e),H=e?.will_renew===!0&&V!=null&&V!==B,se=tu(e),ce=e==null?0:Ia(e,`default`),le=e==null?0:Ia(e,`prolite`),ue=ai(e),{data:de}=E({countryCode:m?.countryCode,currency:m?.billingCurrency,enabled:f&&H&&m!=null}),pe=ei(de,m)&&e?.seat_capacity!=null?si({checkoutPricingConfig:de,isNonProfit:e.non_profit_org_discount_applied===!0,premiumSeatCount:le,standardSeatCount:ce}):null,me=m?.billingCurrency??null,he=e&&N?la(e.billing_currency,N,!1,ue):void 0,ge=Wr({checkoutPricingConfig:N,isNonProfit:ue,isSciAccount:u,teamBillingType:B}),ve=io({checkoutPricingConfig:N,teamBillingType:B}),ye=B===U.FLEXIBLE&&te?Mi({checkoutPricingConfig:N,isNonProfit:ue,isSciAccount:u,teamBillingType:B}):null,be=!u&&he!=null?Math.round((Number(he.flexibleBillingPlan.discountedMonthlyCost??0)-Number(he.annualBillingPlan.discountedMonthlyCost??0))/Number(he.flexibleBillingPlan.discountedMonthlyCost??0)*100):null,xe=P?.seat_type_counts?.[zm]??0,Se=P?.seat_type_counts?.[Bm]??0,Ce=Pi(c?.id),we=e?.seat_capacity?.some(e=>e.type===zm&&e.available!=null)===!0,Te=l&&(Ce||we),Ee=v==null?null:ua({accountId:v,checkoutPricingConfig:N,isSciAccount:u,isSeatTypeCountsLoading:ne,seatTypeCounts:P,showPremiumSeats:Ce,subscription:e}),De=Te&&Ee==null,{isLoading:ke,planManagementConfig:Ae}=Qn({activeWorkspaceId:v,enabled:v!=null}),je=sn(Ae),Me=je?.can_manage_payment_method===!0,Ne=je?.can_manage_billing_schedule===!0,Pe=je?.can_change_paid_seat_quantity===!0,Fe=Da({canManageSeats:Pe,isOwner:c?.isOwnerOfAccount()===!0,subscription:e}),Ie=je?.can_cancel_subscription===!0,Le=je?.can_move_to_usage_based_billing===!0,Re=e?.active_until!=null,ze=e?.active_until?new Date(e.active_until):null,Be=wa(e)===`convert_to_usage_based`,He=e!=null&&xe>e.seats_entitled,Ue=e!=null&&ie&&!R,We=Ie,Ge=d&&Le,{maxTotalNumCredits:Ke,perEligibleInviteNumCredits:qe}=Fo(),Je=gm({amountPerCredit:N?.currencyConfig.amount_per_credit,currency:N?.currencyConfig.symbol_code,intl:o,minorUnitExponent:N?.currencyConfig.minor_unit_exponent,numCredits:Ke}),Ye=gm({amountPerCredit:N?.currencyConfig.amount_per_credit,currency:N?.currencyConfig.symbol_code,intl:o,minorUnitExponent:N?.currencyConfig.minor_unit_exponent,numCredits:qe}),Xe=k.data==null||Number.parseFloat(k.data.balance)===0,Ze=d&&D&&O.data?.eligible===!0&&!k.isLoading&&!Xe&&Je!=null&&Ye!=null,Qe=Me&&v,$e=n,et=[{key:zm,titleMessage:$.standardSeatTitle,capacityMessage:$.standardSeatCapacity,perSeatMonthlyPrice:ge},{key:`prolite`,titleMessage:$.premiumSeatTitle,capacityMessage:$.premiumSeatCapacity,perSeatMonthlyPrice:ve}],tt=f&&e&&Re?et.flatMap(t=>{let n=e.seat_capacity?.find(e=>e.type===t.key)?.paid;return n!=null&&n>0?[{...t,seatCapacity:n}]:[]}):[],nt=f&&e&&Re?ca({paidSeatSummaryRowConfigs:et,subscription:e}):[],rt=[{seatType:Bm,seatCount:Se}];e&&Re&&rt.push({seatType:zm,seatCount:xe});let it={seatType:Bm,seatCount:Se},{isLoading:at,usageLimitsConfig:ot}=yn({activeWorkspaceId:v,enabled:v!=null}),{canManageSeatTypeLimits:st,canViewMemberOverridesEntrypoint:ct,minimumLimitBySeatType:lt,seatTypes:ut}=Sn({usageLimitsConfig:ot}),dt=S||ke||at,ft=e?.last_credit_grant_update!=null||e?.next_credit_grant_update!=null||e?.active_start!=null||e?.active_until!=null;if(dt)return(0,Q.jsx)(`div`,{className:`flex min-h-[18.75rem] w-full items-center justify-center`,children:(0,Q.jsx)(ee,{})});let pt=e&&ft?hm({intl:o,cycleDates:t,loadingFallback:(0,Q.jsx)(`div`,{className:`loading-results-shimmer h-5 w-40 rounded-sm`}),renderCycleDateRange:e=>o.formatMessage($.businessPlanCurrentCycle,e)}):null,ht=e&&ze?e.will_renew?V==null?null:o.formatMessage($.billingIntervalChangeDate,{billingType:V,expiryDate:ze}):o.formatMessage(Be?$.moveToUsageBasedBillingDate:$.deactivateDate,{expiryDate:ze}):null,gt=f&&H?pt:ht??pt,_t=()=>{if(!e||!v||e.active_until==null||B==null||ne)return;if(Te){if(Ee==null)return;aa({...Ee,activeDiscount:R,promoEligibility:F,seatsPromoThresholdGap:ie?L??void 0:void 0,taxPercent:ae});return}let t=v,n=`chatgpt_billing_manage_seats_clicked`,r=I.logStructuredEvent(`ChatgptBusinessBillingManageSeatsOpened`,{legacyStatsigEventName:n});Ve(n,void 0,r?{unique_event_id:r}:void 0),fe(Um,{initialTeamBillingType:B,initialSeats:e.seats_entitled,isImmediateInvoiceRolloutEnabled:l,isNonProfit:ue,maxSeats:re,accountId:t,renewalDate:new Date(e.active_until),billingDetails:{currency:e.billing_currency,country:s},maybeInterceptPaidCapacityChange:n=>Ti({accountId:t,currentAccount:c,subscription:e,wouldChangePaidCapacity:n})})},vt=()=>{c&&fe(En,{workspace:c,defaultInviteSeatType:Bm})},yt=()=>{!e||!v||!e.active_until||!B||!se||(Ve(`chatgpt_billing_manage_plan_billing_schedule_clicked`),fe(Gl,{currentSeatCapacity:e.seat_capacity,currentTeamBillingType:B,initialTeamBillingType:se,isNonProfit:e.non_profit_org_discount_applied===!0,usesCurrentNonProfitPricing:ue,preselectedTeamBillingType:V==null&&B===U.FLEXIBLE?U.ANNUAL:void 0,pricingIdentity:m,renewalDate:new Date(e.active_until),accountId:v,billingDetails:{currency:e.billing_currency}}))},bt=()=>{!e||!v||!e.active_until||!B||!V||!H||!Ne||(Ve(`chatgpt_billing_manage_plan_billing_schedule_clicked`),fe(iu,{accountId:v,annualSavingsAmount:pe?.annualSavingsAmount??null,billingCurrency:me,currentTeamBillingType:B,renewalDate:new Date(e.active_until),scheduledTeamBillingType:V}))},xt=()=>!Ne||!e?null:nu({annualSavingsPercent:be,subscription:e})?(0,Q.jsx)(i,{className:`text-xs`,color:`discovery`,onClick:yt,size:`large`,type:`button`,children:(0,Q.jsx)(W,{...$.switchToAnnualBillingAndSave,values:{percent:be}})}):(0,Q.jsx)(i,{color:`secondary`,onClick:yt,size:`large`,children:(0,Q.jsx)(W,{...$.manageBillingSchedule})}),Ct=f&&(B===U.ANNUAL||H),wt=f&&Ne&&B===U.ANNUAL&&!H,Tt=e!=null&&Fe&&!l&&(!f||!Ct),Et=e&&Fe?(0,Q.jsx)(i,{"aria-disabled":De,color:`secondary`,onClick:e=>{if(De){e.preventDefault();return}_t()},size:`large`,type:`button`,visuallyDisabled:De,children:(0,Q.jsx)(W,{...$.manageSeats})}):null,Dt=Ct?null:xt(),kt=(0,Q.jsxs)(fi,{className:`border-token-border-default bg-token-bg-primary gap-0 overflow-hidden rounded-xl border`,children:[(0,Q.jsxs)(`div`,{className:`flex flex-col gap-6 p-6`,children:[(0,Q.jsxs)(`div`,{className:`flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between`,children:[(0,Q.jsxs)(`div`,{className:`min-w-0`,children:[(0,Q.jsxs)(`div`,{className:`flex flex-wrap items-center gap-2`,children:[(0,Q.jsx)(`div`,{className:`text-token-text-primary text-xl leading-tight font-semibold`,children:(0,Q.jsx)(W,{...u?bo.heading:$.businessPlanCardTitle})}),B&&oe&&(0,Q.jsx)(Tm,{teamBillingType:B})]}),gt&&(0,Q.jsxs)(`div`,{className:g(`text-token-text-secondary mt-1`,f?`text-xs`:`text-sm`),children:[gt,wt&&(0,Q.jsxs)(Q.Fragment,{children:[` · `,(0,Q.jsx)(`button`,{className:`interactive-button text-token-theme-blue-text underline-offset-2 hover:underline`,onClick:yt,type:`button`,children:(0,Q.jsx)(W,{...$.manageBillingScheduleLink})})]})]})]}),(Et||Dt)&&(0,Q.jsxs)(`div`,{className:`flex flex-wrap items-center gap-2 lg:justify-end`,children:[Et,Dt]})]}),e&&(0,Q.jsx)(dm,{discount:R,activeBenefits:z,standardSeatPrice:ye?.standardSeatPricing.amount,premiumSeatPrice:ye?.premiumSeatPricing?.amount,perSeatMonthly:ge??0,subscription:e,taxPercent:ae}),f?(0,Q.jsxs)(Q.Fragment,{children:[tt.map(t=>(0,Q.jsx)(Dm,{billingCurrency:e?.billing_currency,isPerSeatPriceLoading:M,seatRow:t},t.key)),nt.length>0&&e?.active_until!=null&&(0,Q.jsx)(kf,{billingCurrency:e.billing_currency,isPerSeatPriceLoading:M,monthlyTotalMessage:$.businessPaidSeatMonthlyTotal,renewalDate:new Date(e.active_until),seatRows:nt}),d&&(0,Q.jsx)(Om,{isCountLoading:ne,isPerSeatPriceLoading:M,seatCountRow:it,subscription:e})]}):d?rt.map(t=>(0,Q.jsx)(Om,{isCountLoading:ne,isPerSeatPriceLoading:M,chatgptSeatPrice:ge,seatCountRow:t,subscription:e},t.seatType)):v!=null&&(0,Q.jsx)(jm,{isTeam:!0,accountId:v,canManageSeats:Pe,isManageSeatsDisabled:ne||De,onManageSeatsClick:_t,showManageSeatsButton:!1})]}),f&&H&&V===U.ANNUAL&&e?.active_until?(0,Q.jsx)(su,{onKeepMonthlyBilling:Ne?bt:void 0,renewalDate:new Date(e.active_until)}):Tt&&(0,Q.jsx)(`div`,{className:`border-token-border-default bg-token-bg-tertiary rounded-b-xl border-t px-6 py-3`,children:(0,Q.jsxs)(`div`,{className:`text-token-text-secondary flex min-w-0 flex-col gap-1 text-xs font-semibold`,children:[(0,Q.jsx)(`span`,{children:(0,Q.jsx)(W,{...$.assignedSeatsRenewalNote})}),He&&(0,Q.jsx)(`span`,{children:(0,Q.jsx)(W,{...$.teamsAutochargeMessage,values:{link:e=>(0,Q.jsx)(cn,{className:`ps-1`,openNewTab:!0,href:Lm,children:e})}})})]})})]});if(!c)return null;let At=()=>{sa({actionType:co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_ADD_PAYMENT_METHOD_CLICKED,location:Vm})},jt=()=>{sa({actionType:co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_SET_DEFAULT_PAYMENT_METHOD_CLICKED,location:Vm})},Mt=()=>{sa({actionType:co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_REMOVE_PAYMENT_METHOD_CLICKED,location:Vm})},Nt=()=>{sa({actionType:co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_EDIT_PAYMENT_METHOD_CLICKED,location:Vm})},Pt=()=>{sa({actionType:co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_VIEW_ALL_INVOICES_CLICKED,location:Vm}),r()},Lt=()=>{sa({actionType:co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_VIEW_INVOICE_CLICKED,location:Vm})},Rt=a?.can_view_subscription_summary===!0&&c.isOwnerOfAccount(),zt=o.formatMessage(u?bo.heading:$.businessPlanCardTitle);return(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsxs)(`div`,{className:`flex flex-col gap-6`,children:[Me&&v&&(0,Q.jsx)(ka,{accountId:v,surface:`business`}),w&&(0,Q.jsx)(Cf,{}),Ze&&Je!=null&&Ye!=null&&(0,Q.jsx)(Ud,{maxTotalCreditAmount:Je,onInvite:vt,perEligibleInviteCreditAmount:Ye}),f&&H&&V===U.FLEXIBLE&&e?.active_until&&(0,Q.jsx)(ou,{annualSavingsAmount:pe?.annualSavingsAmount??null,billingCurrency:me,onKeepAnnualBilling:Ne?bt:void 0,renewalDate:new Date(e.active_until)}),Ue?(0,Q.jsxs)(`div`,{className:`rounded-xl bg-[var(--color-background-info-soft-alpha)]`,children:[(0,Q.jsx)(Mm,{seatThresholdGap:L}),kt]}):kt,Rt&&(0,Q.jsx)(kl,{accountId:c.id,planName:zt})]}),(0,Q.jsx)(Ad,{workspaceId:c.id,canEdit:c.isOwnerOfAccount()}),(0,Q.jsx)($u,{canManagePaymentMethod:!!Qe}),(0,Q.jsx)(Bd,{account:c}),(0,Q.jsx)(_d,{canManageSeatTypeLimits:st,canViewMemberOverridesEntrypoint:ct,minimumLimitBySeatType:lt,seatTypes:ut,workspaceId:v}),Qe&&(0,Q.jsx)(Il,{workspaceId:v,children:(0,Q.jsx)(Ki,{accountId:v,billingSettingsLocation:Vm,callerSurface:`workspace_billing_settings`,manageAutoReloadTo:Ft(`auto_recharge`),onAddPaymentMethodClick:At,onEditPaymentMethodClick:Nt,onRemovePaymentMethodClick:Mt,onSetDefaultPaymentMethodClick:jt})}),$e&&(0,Q.jsx)(Ba,{accountId:c.id,billingSettingsLocation:Vm,onViewAll:Pt,onViewInvoice:Lt}),!1,Ge&&(0,Q.jsx)(wm,{onMoveToUsageBasedBilling:_}),Rt&&(0,Q.jsx)(kl,{accountId:c.id,planName:zt,placement:`linked`}),We&&(0,Q.jsx)(Cm,{onCancelSubscription:h})]})}function Dm(e){"use forget";let t=(0,Fm.c)(30),{billingCurrency:n,isPerSeatPriceLoading:r,seatRow:i}=e,a=mt(),{capacityMessage:o,perSeatMonthlyPrice:s,seatCapacity:c,titleMessage:l}=i,u=s==null?null:c*s,d;t[0]!==n||t[1]!==a||t[2]!==s?(d=s!=null&&n!=null?a.formatNumber(s,{style:`currency`,currency:n,minimumFractionDigits:0,maximumFractionDigits:2}):null,t[0]=n,t[1]=a,t[2]=s,t[3]=d):d=t[3];let f=d,p;t[4]!==n||t[5]!==a||t[6]!==u?(p=u!=null&&n!=null?a.formatNumber(u,{style:`currency`,currency:n}):null,t[4]=n,t[5]=a,t[6]=u,t[7]=p):p=t[7];let m=p,h;t[8]===l?h=t[9]:(h=(0,Q.jsx)(`div`,{className:`text-token-text-primary text-justify text-base leading-tight font-normal`,children:(0,Q.jsx)(W,{...l})}),t[8]=l,t[9]=h);let g;t[10]!==f||t[11]!==r?(g=r?(0,Q.jsx)(`div`,{className:`loading-results-shimmer mt-1 h-5 w-24 rounded-sm`}):f!=null&&(0,Q.jsx)(`div`,{className:`text-token-text-secondary mt-1 text-justify text-sm leading-tight font-normal`,children:(0,Q.jsx)(W,{...$.businessPaidSeatMonthlyPrice,values:{amount:f}})}),t[10]=f,t[11]=r,t[12]=g):g=t[12];let _;t[13]!==h||t[14]!==g?(_=(0,Q.jsxs)(`div`,{className:`min-w-0`,children:[h,g]}),t[13]=h,t[14]=g,t[15]=_):_=t[15];let v;t[16]!==m||t[17]!==r?(v=r?(0,Q.jsx)(`div`,{className:`loading-results-shimmer ms-auto h-6 w-24 rounded-sm`}):m!=null&&(0,Q.jsx)(`div`,{className:`text-token-text-primary text-base leading-tight font-normal`,children:(0,Q.jsx)(W,{...$.businessPaidSeatMonthlyTotal,values:{amount:m}})}),t[16]=m,t[17]=r,t[18]=v):v=t[18];let y;t[19]===c?y=t[20]:(y={count:c},t[19]=c,t[20]=y);let b;t[21]!==o||t[22]!==y?(b=(0,Q.jsx)(`div`,{className:`text-token-text-secondary mt-1 text-sm leading-tight font-normal`,children:(0,Q.jsx)(W,{...o,values:y})}),t[21]=o,t[22]=y,t[23]=b):b=t[23];let x;t[24]!==v||t[25]!==b?(x=(0,Q.jsxs)(`div`,{className:`shrink-0 text-end`,children:[v,b]}),t[24]=v,t[25]=b,t[26]=x):x=t[26];let S;return t[27]!==_||t[28]!==x?(S=(0,Q.jsxs)(`div`,{className:`[&+&]:border-token-border-default flex items-start justify-between gap-6 [&+&]:border-t [&+&]:pt-4`,children:[_,x]}),t[27]=_,t[28]=x,t[29]=S):S=t[29],S}function Om(e){"use forget";let t=(0,Fm.c)(28),{isCountLoading:n,isPerSeatPriceLoading:r,chatgptSeatPrice:i,seatCountRow:a,descriptionType:o,subscription:s}=e,c=o===void 0?`business`:o,l=mt(),{seatCount:u,seatType:d}=a,f=d===Bm?$.codexSeatTitle:$.chatgptSeatTitle,p;if(c===`business`){let e;t[0]!==i||t[1]!==l||t[2]!==r||t[3]!==d||t[4]!==s?(e=d===Bm?(0,Q.jsx)(W,{...$.codexSeatDescription}):r?(0,Q.jsx)(`div`,{className:`loading-results-shimmer h-6 w-24 rounded-sm`}):i!=null&&s?(0,Q.jsx)(W,{...$.chatgptSeatDescriptionMonthly,values:{amount:l.formatNumber(i,{style:`currency`,currency:s.billing_currency,minimumFractionDigits:0,maximumFractionDigits:0})}}):null,t[0]=i,t[1]=l,t[2]=r,t[3]=d,t[4]=s,t[5]=e):e=t[5],p=e}else{let e;t[6]===d?e=t[7]:(e=d===Bm?(0,Q.jsx)(W,{...$.codexSeatDescriptionEnt}):(0,Q.jsx)(W,{...$.chatgptSeatDescriptionEnt}),t[6]=d,t[7]=e),p=e}let m=d===Bm?$.seatsInUse:$.seatsInUseWithAllocation,h;t[8]!==u||t[9]!==d||t[10]!==s?.seats_entitled?(h=d===Bm?{count:u}:{count:u,allocated:s?.seats_entitled??0},t[8]=u,t[9]=d,t[10]=s?.seats_entitled,t[11]=h):h=t[11];let g;t[12]!==m||t[13]!==h?(g=(0,Q.jsx)(W,{...m,values:h}),t[12]=m,t[13]=h,t[14]=g):g=t[14];let _=g,v;t[15]===f?v=t[16]:(v=(0,Q.jsx)(`div`,{className:`text-token-text-primary text-justify text-base leading-tight font-normal`,children:(0,Q.jsx)(W,{...f})}),t[15]=f,t[16]=v);let y;t[17]===p?y=t[18]:(y=p!=null&&(0,Q.jsx)(`div`,{className:`text-token-text-secondary mt-1 text-justify text-sm leading-tight font-normal`,children:p}),t[17]=p,t[18]=y);let b;t[19]!==v||t[20]!==y?(b=(0,Q.jsxs)(`div`,{className:`min-w-0`,children:[v,y]}),t[19]=v,t[20]=y,t[21]=b):b=t[21];let x;t[22]!==_||t[23]!==n?(x=(0,Q.jsx)(`div`,{className:`shrink-0 text-end`,children:n?(0,Q.jsx)(`div`,{className:`loading-results-shimmer h-7 w-32 rounded-sm`}):(0,Q.jsx)(`div`,{className:`text-token-text-primary text-justify text-base leading-tight font-normal`,children:_})}),t[22]=_,t[23]=n,t[24]=x):x=t[24];let S;return t[25]!==b||t[26]!==x?(S=(0,Q.jsxs)(`div`,{className:`[&+&]:border-token-border-default flex items-start justify-between gap-6 [&+&]:border-t [&+&]:pt-4`,children:[b,x]}),t[25]=b,t[26]=x,t[27]=S):S=t[27],S}function km({subscription:e,enterpriseAccountPolicy:t}){let{country:n}=Qt(),{data:r,isLoading:i,error:a}=E({currency:e.billing_currency,countryCode:n}),o=Oe(),s=_e(o?.planType),c=bm(o),l=o?.id,{data:u,isLoading:d}=Qr(l),{bannersConfig:f,isLoading:p}=Hn({activeWorkspaceId:l,enabled:l!=null}),m=It(f),h=m?.can_load_admin_credit_limit_banner===!0,g=m?.can_load_enterprise_overage_limit_banner===!0,{shouldShowFreeSeatsCta:_,seatThresholdGap:v}=ii({seatsEntitled:Ia(e,`default`,e.seats_entitled)}),y=o?.data.subscriptionStatus.discount,b=o?.data.subscriptionStatus.appliedBenefits,x=r?.currencyConfig.tax_percent,S=_&&!y,C=u?.seat_type_counts?.[zm]??e.seats_in_use,w=u?.seat_type_counts?.[Bm]??0,{isLoading:T,planManagementConfig:D}=Qn({activeWorkspaceId:l,enabled:l!=null}),O=sn(D),k=cm(O),A=O?.kind===`self_serve_business`;if(i||p||T)return(0,Q.jsx)(`div`,{className:`flex min-h-screen items-center justify-center`,children:(0,Q.jsx)(ee,{})});if(!o||a!=null||!r)return null;let j=e.active_until!=null,M=e.active_until?new Date(e.active_until):null,te=wa(e)===`convert_to_usage_based`,N=Wm(o,e),P=e.billing_period===`monthly`?U.FLEXIBLE:U.ANNUAL,ne=ai(e),re=P===U.FLEXIBLE&&ei(r,Ka(e))?Mi({checkoutPricingConfig:r,isNonProfit:ne,isSciAccount:s,teamBillingType:P}):null,F=la(e.billing_currency,r,!1,ne),{currencySign:I}=P===U.FLEXIBLE?F.flexibleBillingPlan:F.annualBillingPlan,ie=Wr({checkoutPricingConfig:r,isNonProfit:ne,isSciAccount:s,teamBillingType:P})??0,L=e.seats_in_use>e.seats_entitled,R=A?[]:[{seatType:Bm,seatCount:w},{seatType:zm,seatCount:C}],z=t?.can_view_mixed_seat_usage===!0,ae=(0,Q.jsxs)(fi,{className:`border-token-border-default bg-token-bg-primary gap-0 rounded-xl border`,children:[(0,Q.jsxs)(`div`,{className:`z-10 flex flex-col gap-4 p-6`,children:[(0,Q.jsxs)(`div`,{className:`flex items-center justify-between`,children:[(0,Q.jsxs)(`div`,{children:[(0,Q.jsxs)(ji,{className:`flex items-center gap-2`,children:[(0,Q.jsx)(W,{...N}),A&&(0,Q.jsx)(Tm,{teamBillingType:P})]}),M&&(0,Q.jsx)(Br,{className:`text-token-text-secondary mt-1`,children:t?.is_enterprisey_account===!0?(0,Q.jsx)(W,{...$.licenseExpiry,values:{expiryDate:M}}):e.will_renew?(0,Q.jsx)(W,{...$.renewalDate,values:{expiryDate:M}}):(0,Q.jsx)(W,{...te?$.moveToUsageBasedBillingDate:$.deactivateDate,values:{expiryDate:M}})})]}),k&&(0,Q.jsx)(Am,{onCancelSubscription:c,planManagementPolicy:O})]}),A&&!e.non_profit_org_discount_applied&&(0,Q.jsx)(`div`,{className:`text-token-text-secondary h-[50px] text-sm`,children:(0,Q.jsx)(W,{...$.pricePerSeat,values:{symbol:(0,Q.jsx)(W,{...I}),amount:ie,currency:e=>(0,Q.jsx)(`span`,{className:`align-top text-xl`,children:e}),price:e=>(0,Q.jsx)(`span`,{className:`text-token-text-primary ps-[1px] pe-1 align-bottom text-[42px] leading-none`,children:e})}})}),A&&(0,Q.jsx)(dm,{className:`mt-2`,discount:y,activeBenefits:b,standardSeatPrice:re?.standardSeatPricing.amount,premiumSeatPrice:re?.premiumSeatPricing?.amount,perSeatMonthly:ie,subscription:e,taxPercent:x})]}),(0,Q.jsx)(`hr`,{}),j&&(0,Q.jsx)(Q.Fragment,{children:z?(0,Q.jsx)(`div`,{className:`flex flex-col gap-4 p-6`,children:R.map(t=>(0,Q.jsx)(Om,{isCountLoading:d,isPerSeatPriceLoading:i,seatCountRow:t,descriptionType:`enterprise`,subscription:e},t.seatType))}):(0,Q.jsxs)(`div`,{className:`p-6`,children:[(0,Q.jsx)(jm,{isTeam:A,accountId:o.id,canManageSeats:O?.can_change_paid_seat_quantity===!0,isManageSeatsDisabled:A&&d,maxSeats:A?Kr(u):void 0}),L&&A&&(0,Q.jsx)(`span`,{className:`text-token-text-secondary text-sm`,children:(0,Q.jsx)(W,{...$.teamsAutochargeMessage,values:{link:e=>(0,Q.jsx)(cn,{className:`ps-1`,openNewTab:!0,href:Lm,children:e})}})})]})})]});return(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsxs)(`div`,{className:`flex flex-col gap-6`,children:[h&&(0,Q.jsx)(Cf,{}),S?(0,Q.jsxs)(`div`,{className:`rounded-xl bg-[#ECF0FF]`,children:[(0,Q.jsx)(Mm,{seatThresholdGap:v}),ae]}):ae]}),(0,Q.jsx)(fp,{canLoadAtOverageLimitBanner:g})]})}function Am({onCancelSubscription:e,planManagementPolicy:t}){let n=Oe(),{data:r}=Dt(),a=xm(n);if(!n||!r)return;let o=t?.can_manage_payment_method===!0,s=t?.can_manage_billing_schedule===!0,c=t?.can_cancel_subscription===!0;if(!o&&!s&&!c)return null;let l=()=>{Ve(`chatgpt_billing_manage_plan_clicked`)},u=r?.billing_period===`monthly`?U.FLEXIBLE:U.ANNUAL,d=tu(r)??u,f=Ka(r),p=()=>{Ve(`chatgpt_billing_manage_plan_billing_schedule_clicked`),fe(Gl,{currentSeatCapacity:r.seat_capacity,currentTeamBillingType:u,initialTeamBillingType:d,isNonProfit:r.non_profit_org_discount_applied===!0,usesCurrentNonProfitPricing:ai(r),pricingIdentity:f,renewalDate:new Date(r.active_until??``),accountId:n.id,billingDetails:{currency:r.billing_currency}})};return(0,Q.jsxs)(_t,{size:`default`,contentAlign:`end`,sideOffset:4,triggerButton:(0,Q.jsx)(i,{color:`secondary`,onClick:l,children:(0,Q.jsxs)(`div`,{className:`flex items-center justify-center gap-1`,children:[(0,Q.jsx)(W,{...$.manageLicenseBtn}),(0,Q.jsx)(Fr,{className:`icon-sm`})]})}),children:[o&&(0,Q.jsx)(In.Item,{icon:kr,onClick:a,children:(0,Q.jsx)(W,{...$.managePaymentMethod})}),s&&(0,Q.jsx)(In.Item,{icon:Ar,onClick:p,children:(0,Q.jsx)(W,{...$.manageBillingSchedule})}),c&&(0,Q.jsx)(In.Separator,{}),c&&(0,Q.jsx)(In.Item,{icon:wr,color:`danger`,onClick:e,children:(0,Q.jsx)(W,{...$.cancelSubscriptionBtn})})]})}function jm({isTeam:e,accountId:t,canManageSeats:n=!0,isManageSeatsDisabled:r,maxSeats:i,onManageSeatsClick:a,showManageSeatsButton:o}){let{country:s}=Qt(),{data:c,isLoading:l,isError:u}=Dt();return u||!c||l||e&&!c.billing_period||!c.active_until?null:(0,Q.jsx)(df,{numInUse:c.seats_in_use,numAllocated:c.seats_entitled,isTeam:e,isNonProfit:ai(c),subscriptionWillRenew:c.will_renew,subscriptionBillingPeriod:c.billing_period??`yearly`,subscriptionRenewalDate:new Date(c.active_until),accountId:t,billingDetails:{currency:c.billing_currency,country:s},canManageSeats:n,isManageSeatsDisabled:r,maxSeats:i,onManageSeatsClick:a,showManageSeatsButton:o})}function Mm({seatThresholdGap:e}){return(0,Im.useEffect)(()=>{e!=null&&Ve(`chatgpt_business_seats_promo_banner_shown`,void 0,{seat_threshold_gap:e.toString()})},[e]),(0,Q.jsx)(`div`,{className:`flex flex-wrap items-center justify-between gap-3 px-6 py-4 text-[var(--color-text-info-soft)]`,children:(0,Q.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,Q.jsx)(Pe,{}),(0,Q.jsx)(`span`,{className:`text-sm font-medium`,children:(0,Q.jsx)(W,{...$.limitedTimeOfferBody,values:{seatThresholdGap:e,discountPercent:25}})})]})})}function Nm(e){"use forget";let t=(0,Fm.c)(7),{workspaceId:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Q.jsx)(`p`,{className:`text-token-text-primary font-[590]`,children:(0,Q.jsx)(W,{...$.billingMovedToAdminConsoleTitle})}),t[0]=r):r=t[0];let a;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Q.jsxs)(`div`,{className:`flex flex-col gap-1 pb-1 text-[16px] leading-[26px] tracking-[-0.32px]`,children:[r,(0,Q.jsx)(`p`,{className:`text-token-text-secondary font-normal`,children:(0,Q.jsx)(W,{...$.billingMovedToAdminConsoleBody})})]}),t[1]=a):a=t[1];let o;t[2]===n?o=t[3]:(o=jt(`/billing`,n,{includeWorkspaceLoginMethodHint:!0}),t[2]=n,t[3]=o);let s;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,Q.jsx)(W,{...$.billingMovedToAdminConsoleAction}),t[4]=s):s=t[4];let c;return t[5]===o?c=t[6]:(c=(0,Q.jsxs)(`div`,{className:`flex flex-col items-center justify-center gap-4 text-center`,children:[a,(0,Q.jsx)(i,{as:`a`,color:`secondary`,openNewTab:!0,size:`large`,to:o,children:s})]}),t[5]=o,t[6]=c),c}function Pm(){let e=f(e=>e.currentWorkspace)?.organizationId,t=Oe(),n=mt(),r=et(),i=$e(),a=Yr(),{data:o,isLoading:s,isError:c}=Dt(),{creditsConfig:l}=Xn({activeWorkspaceId:t?.id,enabled:t?.id!=null}),u=ln(l),{accountConfig:d,isLoading:p}=er({activeWorkspaceId:t?.id,enabled:t?.id!=null}),m=Yn(d),h=$t(d)===!0,g=nn(d)===!0,_=m?.kind===`self_serve_business`?m:void 0,v=m?.kind===`enterprise`?m:void 0,y=m?.kind===`free_workspace`,b=_!=null,{freeWorkspaceUpgradeConfig:x,isLoading:S}=Pn({activeWorkspaceId:t?.id,enabled:t?.id!=null}),C=At(x),w=C?.can_view_upgrade_surface===!0,{billingInformationConfig:T,isLoading:E}=_n({activeWorkspaceId:t?.id,enabled:t?.id!=null}),D=Rt(T),O=D?.can_view_invoices===!0,k=ht({canViewInvoices:O,selectedBillingInformationPolicy:D}),A=!!(O&&b),j=D?.can_view_billing_information_settings===!0,M=D?.can_edit_billing_information===!0,te=b,N=he(t?.planType),{isLoading:P,planManagementConfig:ne}=Qn({activeWorkspaceId:t?.id,enabled:t?.id!=null}),re=sn(ne),F=re?.can_manage_billing_schedule===!0,I=p||S||E||P,[ie,L]=ot(),R=ie.get(`tab`),z=R&&Gm(R)?R:`plan`,ae=z===`settings`&&!j||z===`invoices`&&!O?`plan`:z,B=e=>{r({pathname:window.location.pathname,search:new URLSearchParams({tab:e}).toString()})},oe=(0,Q.jsx)(pa,{children:s||I?(0,Q.jsx)(`div`,{className:`flex min-h-[18.75rem] w-full items-center justify-center`,children:(0,Q.jsx)(ee,{})}):c?null:te?(0,Q.jsx)(Em,{subscription:o,cycleDates:a,canViewInvoices:O,onOpenInvoicesPage:()=>B(`invoices`),accountPolicy:_}):!h||!g?null:o&&(0,Q.jsx)(km,{subscription:o,enterpriseAccountPolicy:v})}),V=(0,Q.jsx)(pa,{children:(0,Q.jsx)(`div`,{className:`flex min-h-[18.75rem] w-full items-center justify-center`,children:(0,Q.jsx)(ee,{})})}),H=()=>{sa({actionType:co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_EDIT_BILLING_INFORMATION_CLICKED,location:Vm})},se=[{key:`plan`,label:n.formatMessage($.planTabName),children:oe},...O?[{key:`invoices`,label:n.formatMessage($.invoicesTabName),children:A?(0,Q.jsx)(di,{accountId:t?.id,billingSettingsLocation:Vm,showColumnsHeader:!0}):(0,Q.jsx)(pa,{children:(0,Q.jsx)(Qp,{invoiceQueryScope:k})})}]:[],...j&&t?.id?[{key:`settings`,label:n.formatMessage($.settingsTabName),children:(0,Q.jsx)(pa,{children:(0,Q.jsx)(ya,{accountId:t.id,billingSettingsLocation:Vm,canEditBillingInformation:M,onEditBillingInformationClick:H})})}]:[]],ce=ie.has(Rm),le=ie.get(Rm),ue=le&&Fi(le)?le:void 0,de=e=>{Gm(e)&&(e===`invoices`&&!O||e===`settings`&&!j||B(e))};if((0,Im.useEffect)(()=>{if(N||!ce||!t||!F||!o||!o.active_until)return;let e=o.billing_period===`monthly`?U.FLEXIBLE:U.ANNUAL,n=tu(o)??e,r=Ka(o);fe(Gl,{currentSeatCapacity:o.seat_capacity,currentTeamBillingType:e,initialTeamBillingType:n,isNonProfit:o.non_profit_org_discount_applied===!0,usesCurrentNonProfitPricing:ai(o),preselectedTeamBillingType:ue,pricingIdentity:r,renewalDate:new Date(o.active_until),accountId:t.id,billingDetails:{currency:o.billing_currency}});let i=new URLSearchParams(ie);i.delete(Rm),L(i,{replace:!0})},[t,F,N,ue,ce,o,ie,L]),(0,Im.useEffect)(()=>{e&&i.invalidateQueries(Ue())},[e,i]),!e)return null;let pe=_m({intl:n,cycleDates:a,canViewPaidBillingContent:h,isFreeWorkspacePlan:y,isSelfServeBusinessBillingPageRedesignEnabled:b});return(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsx)(ko,{children:(0,Q.jsx)(`title`,{children:n.formatMessage($.adminBrowserPageTitle)})}),!N&&(0,Q.jsx)(yu,{creditsPolicy:u,workspaceId:t?.id,canManagePaymentMethod:!!(re?.can_manage_payment_method&&t?.id)}),!N&&(0,Q.jsx)(xa,{title:n.formatMessage($.title),subtitle:pe,tabsHeader:!y&&h&&se.length>1&&(0,Q.jsx)(Zo,{items:se,activeTab:ae,onTabChange:de}),showBottomBorder:!y&&h}),(0,Q.jsx)(Ma,{className:N?`flex min-h-[80vh] items-center justify-center`:void 0,children:N?(0,Q.jsx)(Nm,{workspaceId:t?.id}):I?V:y?w?(0,Q.jsx)(Ep,{upgradePolicy:C}):null:h?(0,Q.jsx)(Xo,{items:se,activeTab:ae}):null})]})}var Fm,Im,Q,Lm,Rm,zm,Bm,Vm,Hm,Um,Wm,Gm,$,Km=e((()=>{Fm=pt(),D(),Al(),va(),Xa(),Ra(),ea(),Ca(),ri(),Ll(),Hl(),Si(),Bt(),ru(),gi(),au(),du(),Ii(),jo(),zo(),vu(),pe(),Tt(),sr(),Ct(),Vt(),Nr(),br(),Er(),Tr(),ye(),le(),pn(),fa(),no(),da(),Ql(),qr(),Ji(),Li(),Zt(),Ln(),Ge(),xo(),Me(),l(),Yo(),y(),d(),T(),p(),ue(),h(),_(),u(),Io(),ke(),Oo(),dt(),Ne(),Kn(),Cu(),Jt(),cd(),kd(),Id(),Hd(),$d(),rf(),bi(),Xr(),Im=n(at()),rt(),nt(),Ga(),un(),uf(),_f(),qa(),Ht(),Tf(),ci(),Nf(),to(),ga(),Tp(),Fp(),rm(),Vr(),sm(),Gt(),Vi(),Q=qe(),lt(),Lm=`https://help.openai.com/en/articles/8792536-manage-billing-on-the-chatgpt-team-subscription-plan`,Rm=`schedule`,zm=`default`,Bm=`usage_based`,Vm=oo.CHATGPT_WEB_BILLING_SETTINGS_LOCATION_WORKSPACE_BILLING_PAGE,Hm=V(()=>st(()=>import(`./c2765176-moz2iwefuk962qo5.js`).then(e=>e.BusinessCancelToPlusPlanCardModal),__vite__mapDeps([24,1,2,3,4,5,6,7,8,9,10,11,12,13,25,26,27,28,29]))),Um=V(()=>st(()=>import(`./c2daebff-k454sjw0fix9q5v0.js`).then(e=>e.TeamManageSeatsModal),__vite__mapDeps([18,1,2,3,4,5,6,7,8,9,10,11,12,13,19,20,21,22,23]))),Wm=(e,t)=>{let n=e?.isEdu(),r=e?.isSelfServeBusiness(),i=_e(e?.planType),a=e?.isEnterprisey(),o=e?.isResellerHosted(),s=t?.non_profit_org_discount_applied,c=t.active_until!=null;if(n)return c?$.activeEduLicense:o?$.resellerHostedEduLicense:$.pendingEduLicense;if(a)return c?$.activeEnterpriseLicense:o?$.resellerHostedEnterpriseLicense:$.pendingEnterpriseLicense;if(i)return bo.heading;if(s)return c?$.activeTeamLicenseNonProfitOrg:$.pendingTeamLicense;if(r)return c?$.activeTeamLicense:$.pendingTeamLicense;throw Se.addError(`getWorkspaceLicenseSubtitle: No license found`,{subscription:t,currentAccount:e}),Error(`No license for workspace account.`)},Gm=e=>e===`plan`||e===`invoices`||e===`settings`,$=Qe({plusCheckoutError:{id:`organizationBillingInfo.businessCancelToPlusCheckoutError`,defaultMessage:`We couldn't start Plus checkout. Please try again.`},adminBrowserPageTitle:{id:`organizationBillingInfo.adminBrowserPageTitle`,defaultMessage:`ChatGPT - Admin | Billing`},title:{id:`organizationBillingInfo.title.1`,defaultMessage:`Billing`},billingMovedToAdminConsoleTitle:{id:`organizationBillingInfo.adminConsoleBillingMovedScreen.title`,defaultMessage:`Billing isn’t available here`},billingMovedToAdminConsoleBody:{id:`organizationBillingInfo.adminConsoleBillingMovedScreen.body`,defaultMessage:`To view or manage billing for this workspace, go to the Admin Console.`},billingMovedToAdminConsoleAction:{id:`organizationBillingInfo.adminConsoleBillingMovedScreen.action`,defaultMessage:`Go to Admin Console`},headerSubheading:{id:`organizationBillingInfo.headerSubheading`,defaultMessage:`View and manage your billing and plan details`},limitedTimeOfferBody:{id:`organizationBillingInfo.standardSeatsPromotion.limitedTimeOfferBody`,defaultMessage:`Limited time offer: Purchase {seatThresholdGap, plural, one {# Standard seat} other {# Standard seats}} to get {discountPercent}% off your Standard seats for one month.`},subtitle:{id:`organizationBillingInfo.subtitle`,defaultMessage:`Current cycle: {start} - {end}`},businessPlanCardTitle:{id:`organizationBillingInfo.businessPlanCardTitle`,defaultMessage:`Business Plan`},businessPlanCurrentCycle:{id:`organizationBillingInfo.businessPlanCurrentCycle`,defaultMessage:`Current cycle: {start} - {end}`},codexSeatTitle:{id:`organizationBillingInfo.codexSeatTitle`,defaultMessage:`Codex seats`},codexSeatDescription:{id:`organizationBillingInfo.codexSeatDescription`,defaultMessage:`No fixed costs, pay as you go pricing`},standardSeatTitle:{id:`organizationBillingInfo.standardSeatTitle`,defaultMessage:`Standard seats`},premiumSeatTitle:{id:`organizationBillingInfo.premiumSeatTitle`,defaultMessage:`Premium seats`},businessPaidSeatMonthlyPrice:{id:`organizationBillingInfo.businessPaidSeatMonthlyPrice`,defaultMessage:`{amount} / month`},businessPaidSeatMonthlyTotal:{id:`organizationBillingInfo.businessPaidSeatMonthlyTotal`,defaultMessage:`{amount}/mo`},standardSeatCapacity:{id:`organizationBillingInfo.standardSeatCapacity`,defaultMessage:`{count, plural, one {# Standard seat} other {# Standard seats}}`},premiumSeatCapacity:{id:`organizationBillingInfo.premiumSeatCapacity`,defaultMessage:`{count, plural, one {# Premium seat} other {# Premium seats}}`},chatgptSeatTitle:{id:`organizationBillingInfo.chatgptSeatTitle`,defaultMessage:`ChatGPT seats`},chatgptSeatDescriptionMonthly:{id:`organizationBillingInfo.chatgptSeatDescriptionMonthly`,defaultMessage:`ChatGPT, ChatGPT Work, and Codex, {amount}/month`},codexSeatDescriptionEnt:{id:`organizationBillingInfo.codexSeatDescriptionEnt`,defaultMessage:`Codex only`},chatgptSeatDescriptionEnt:{id:`organizationBillingInfo.chatgptSeatDescriptionEnt`,defaultMessage:`ChatGPT and Codex, full platform access`},switchToAnnualBillingAndSave:{id:`organizationBillingInfo.switchToAnnualBillingAndSave`,defaultMessage:`Switch to annual billing and save {percent}%`},assignedSeatsRenewalNote:{id:`organizationBillingInfo.assignedSeatsRenewalNote`,defaultMessage:`Seat changes must be made 24 hours before renewal to affect billing.`},manageSeats:{id:`organizationBillingInfo.manageSeats`,defaultMessage:`Manage seats`},seatsInUse:{id:`organizationBillingInfo.seatsInUse`,defaultMessage:`{count} {count, plural, one {seat} other {seats}} in use`},seatsInUseWithAllocation:{id:`organizationBillingInfo.seatsInUseWithAllocation`,defaultMessage:`{count}/{allocated} {count, plural, one {seat} other {seats}} in use`},activeEnterpriseLicense:{id:`organizationBillingInfo.activeEnterpriseLicense`,defaultMessage:`Enterprise License`},pendingEnterpriseLicense:{id:`organizationBillingInfo.pendingEnterpriseLicense`,defaultMessage:`Enterprise License (Pending Activation) Your workspace is active and fully functional. Billing details will appear once your invoice is issued based on the contract start date. Please contact your account team with any questions.`},resellerHostedEnterpriseLicense:{id:`organizationBillingInfo.resellerHostedEnterpriseLicense`,defaultMessage:`Enterprise License`},activeEduLicense:{id:`organizationBillingInfo.activeEduLicense`,defaultMessage:`Edu License`},pendingEduLicense:{id:`organizationBillingInfo.pendingEduLicense`,defaultMessage:`Edu License (pending activation) Your workspace is active and fully functional. Billing details will appear once your invoice is issued based on the contract start date. Please contact your account team with any questions.`},resellerHostedEduLicense:{id:`organizationBillingInfo.resellerHostedEduLicense`,defaultMessage:`Edu License`},activeTeamLicense:{id:`organizationBillingInfo.activeTeamLicense`,defaultMessage:`Business Plan`},activeTeamLicenseNonProfitOrg:{id:`organizationBillingInfo.activeTeamLicenseNonProfitOrg`,defaultMessage:`Business License (Non Profit Discount)`},pendingTeamLicense:{id:`organizationBillingInfo.pendingTeamLicense`,defaultMessage:`Business Plan (pending activation)`},licenseExpiry:{id:`organizationBillingInfo.licenseExpiry`,defaultMessage:`Active until {expiryDate, date, long}`},renewalDate:{id:`organizationBillingInfo.renewalDate`,defaultMessage:`Renews on {expiryDate, date, long}`},deactivateDate:{id:`organizationBillingInfo.deactivateDate`,defaultMessage:`Deactivates on {expiryDate, date, long}`},moveToUsageBasedBillingDate:{id:`organizationBillingInfo.moveToUsageBasedBillingDate`,defaultMessage:`Moves to usage-based billing on {expiryDate, date, long}`},billingIntervalChangeDate:{id:`organizationBillingInfo.billingIntervalChangeDate`,defaultMessage:`{billingType, select, month {Changes to monthly billing on {expiryDate, date, long}} year {Changes to annual billing on {expiryDate, date, long}} other {Billing interval changes on {expiryDate, date, long}}}`},cancelSubscriptionBtn:{id:`organizationBillingInfo.cancelSubscriptionBtn`,defaultMessage:`Cancel`},cancelPlanTitle:{id:`organizationBillingInfo.cancelPlanTitle`,defaultMessage:`Cancel plan`},cancelPlanDescription:{id:`organizationBillingInfo.cancelPlanDescription`,defaultMessage:`If you cancel, you'll keep full access to your plan features until the end of your billing period.`},moveToUsageBasedBillingTitle:{id:`organizationBillingInfo.moveToUsageBasedBillingTitle`,defaultMessage:`Remove ChatGPT seats`},moveToUsageBasedBillingDescription:{id:`organizationBillingInfo.moveToUsageBasedBillingDescription`,defaultMessage:`Remove ChatGPT seats and switch all members to Codex seats. Your workspace will remain active and all ChatGPT seats will transition to Codex seats at the end of your billing period.`},moveToUsageBasedBillingButton:{id:`organizationBillingInfo.moveToUsageBasedBillingButton`,defaultMessage:`Remove ChatGPT seats`},manageLicenseBtn:{id:`organizationBillingInfo.manageLicenseBtn`,defaultMessage:`Manage plan`},managePaymentMethod:{id:`organizationBillingInfo.managePaymentMethod`,defaultMessage:`Payment method`},manageBillingInfoBtn:{id:`organizationBillingInfo.manageBillingInfoBtn`,defaultMessage:`Manage`},manageBillingInfoTitle:{id:`organizationBillingInfo.manageBillingInfoTitle`,defaultMessage:`Billing settings`},manageBillingInfoDescription:{id:`organizationBillingInfo.manageBillingInfoDescription`,defaultMessage:`Manage your payment methods, billing address, and tax ID here.`},manageBillingSchedule:{id:`organizationBillingInfo.manageSchedule`,defaultMessage:`Billing schedule`},manageBillingScheduleLink:{id:`organizationBillingInfo.manageSchedule.link`,defaultMessage:`Manage schedule`},stripeErrorWarning:{id:`organizationBillingInfo.stripeErrorWarning`,defaultMessage:`Error loading account information`},teamsAutochargeMessage:{id:`organizationBillingInfo.teamsAutochargeMessage`,defaultMessage:`Your additional seats will be included on your next invoice. <link>Learn more</link>`},planTabName:{id:`organizationBillingInfo.planTabName`,defaultMessage:`Plan`},invoicesTabName:{id:`organizationBillingInfo.invoicesTabName`,defaultMessage:`Invoices`},settingsTabName:{id:`organizationBillingInfo.settingsTabName`,defaultMessage:`Settings`},pricePerSeat:{id:`organizationBillingInfo.pricePerSeat`,defaultMessage:`<currency>{symbol}</currency><price>{amount}</price>/seat`},monthly:{id:`organizationBillingInfo.monthly`,defaultMessage:`Monthly`},annual:{id:`organizationBillingInfo.annual`,defaultMessage:`Annual`},workspacePercentOff:{id:`organizationBillingInfo.workspacePercentOffByBillingPeriod`,defaultMessage:`{percent}% off workspace plan for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}}`},workspacePercentOffFuture:{id:`organizationBillingInfo.workspacePercentOffFutureByBillingPeriod`,defaultMessage:`{percent}% off workspace plan for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}} will apply in {startPeriod}.`},seatFreeUpTo:{id:`organizationBillingInfo.seatFreeUpToByBillingPeriod`,defaultMessage:`Up to {seatCount} free for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}}`},seatFreeUpToFuture:{id:`organizationBillingInfo.seatFreeUpToFutureByBillingPeriod`,defaultMessage:`Up to {seatCount} free for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}} will apply in {startPeriod}.`},fixedAmountOff:{id:`organizationBillingInfo.fixedAmountOffByBillingPeriod`,defaultMessage:`{amount} off for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}}`},fixedAmountOffFuture:{id:`organizationBillingInfo.fixedAmountOffFutureByBillingPeriod`,defaultMessage:`{amount} off for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}} will apply in {startPeriod}.`},discountSeatCount:{id:`organizationBillingInfo.discountSeatCount`,defaultMessage:`{seats, plural, one {# Standard seat} other {# Standard seats}}`},discountStartPeriod:{id:`organizationBillingInfo.discountStartPeriod`,defaultMessage:`{numPeriods, plural, one {the next billing period} other {# billing periods}}`}})})),qm,Jm,Ym,Xm=e((()=>{nt(),qm=pt(),Km(),Jm=qe(),Ym=Ye(function(){"use forget";let e=(0,qm.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Jm.jsx)(Pm,{}),e[0]=t):t=e[0],t})}));e((()=>{Xm()}))();export{Ym as default};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/b6317585-f0lv7axkzcox4lsn.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-mdvd4786a87166cc.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-bcbq46iub1p0ca1t.js", "assets/30901919-s8bko9nrkqwv6i4f.js", "assets/c470f5ab-jwd0o7jx9i9say9k.js", "assets/0e5afe53-hxm3yzzjqriayom4.js", "assets/conversation-small-ep6mlz5m.css", "assets/c2675c8c-oz03twoan08d72ud.js", "assets/82782bc9-b4xbouzwkkyrfqq2.js", "assets/8b34dbc2-lmwubajnld74ksfm.js", "assets/global-modals-dxg9ukpk.css", "assets/d917179d-dolmf4aly5k2twym.js", "assets/99e0f7e1-d963p6goimga1tp9.js", "assets/14cc4891-cg3322196l0g7djn.js", "assets/99d646a4-ggajoosdyjy1uq7r.js", "assets/c2daebff-k454sjw0fix9q5v0.js", "assets/283e0bfb-gpshxh94myln7o00.js", "assets/cedb005c-lv4cylvkdxtyo7yj.js", "assets/d66e3fc1-dxlgawzfh76wwkc1.js", "assets/bfa5bd69-abxss2965oa4vozq.js", "assets/a69a6305-h5j6hq3uuohyk3fx.js", "assets/c2765176-moz2iwefuk962qo5.js", "assets/f8464225-himk4pxoxyl5i6gq.js", "assets/af004db9-ncue41w0x271s8a6.js", "assets/a7f7cdcd-c590ozeojn4rp3sd.js", "assets/646367a3-jld8kcv4nfxql10u.js", "assets/c096aa66-deerh4uslu7vz3jp.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    r as t,
+    s as n
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $6 as r,
+    $T as i,
+    A5 as a,
+    AE as o,
+    Aw as s,
+    Bw as c,
+    CR as l,
+    Crt as u,
+    E6 as d,
+    ER as f,
+    I7 as p,
+    IU as m,
+    Irt as h,
+    K5 as g,
+    Knt as _,
+    L1 as v,
+    LU as y,
+    Lrt as b,
+    Lw as x,
+    M7 as S,
+    Mw as C,
+    N1 as w,
+    Nat as T,
+    O6 as E,
+    Oct as D,
+    Ow as O,
+    Q6 as k,
+    Qy as A,
+    Rrt as j,
+    Rw as M,
+    Rz as ee,
+    Srt as te,
+    TR as N,
+    U1 as P,
+    Ust as ne,
+    Vst as re,
+    Vw as F,
+    Wnt as I,
+    Yi as ie,
+    Z6 as L,
+    ZG as R,
+    Zi as z,
+    Zy as ae,
+    _rt as B,
+    a0 as oe,
+    a2 as V,
+    ax as H,
+    brt as se,
+    bx as ce,
+    c2 as le,
+    c6 as ue,
+    cot as de,
+    d2 as fe,
+    eE as pe,
+    eK as me,
+    f6 as he,
+    fB as ge,
+    g6 as _e,
+    gh as ve,
+    ia as ye,
+    ix as be,
+    j5 as xe,
+    jat as Se,
+    jw as Ce,
+    kE as we,
+    kI as U,
+    mct as Te,
+    n0 as Ee,
+    not as De,
+    o0 as Oe,
+    o2 as ke,
+    oW as Ae,
+    pB as je,
+    q1 as Me,
+    q5 as Ne,
+    ra as Pe,
+    s2 as Fe,
+    sI as Ie,
+    sW as Le,
+    vx as Re,
+    wI as ze,
+    wh as Be,
+    wrt as Ve,
+    yrt as He,
+    z1 as Ue,
+    zU as We,
+    zz as Ge
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as Ke,
+    Bn as qe,
+    Dn as Je,
+    Ht as Ye,
+    In as Xe,
+    Kt as Ze,
+    Ln as Qe,
+    N as $e,
+    Nn as W,
+    Nt as et,
+    O as tt,
+    Q as nt,
+    Rn as rt,
+    Tn as it,
+    Vn as at,
+    Vt as ot,
+    cn as st,
+    it as ct,
+    ln as lt,
+    p as ut,
+    s as dt,
+    w as ft,
+    wn as pt,
+    zn as mt
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $6t as ht,
+    $cn as gt,
+    AUn as _t,
+    Ain as vt,
+    B6t as yt,
+    BH as bt,
+    Bst as xt,
+    Crn as St,
+    Din as Ct,
+    Dln as wt,
+    Eln as Tt,
+    F1 as Et,
+    F6t as Dt,
+    FGt as Ot,
+    Fon as kt,
+    G6t as At,
+    G8t as jt,
+    Gn as Mt,
+    HH as Nt,
+    Hdn as Pt,
+    I1 as Ft,
+    J6t as It,
+    Jln as Lt,
+    K6t as Rt,
+    Kst as zt,
+    L1 as Bt,
+    MUn as Vt,
+    O6t as Ht,
+    P1 as Ut,
+    P6t as Wt,
+    PGt as Gt,
+    Pon as Kt,
+    Pvn as qt,
+    Q6t as Jt,
+    Qn as Yt,
+    R1 as Xt,
+    Srn as Zt,
+    Trn as Qt,
+    U6t as $t,
+    Udn as en,
+    Vst as tn,
+    W6t as nn,
+    Wln as rn,
+    Wn as an,
+    Wst as on,
+    X6t as sn,
+    XWn as cn,
+    Y6t as ln,
+    Y8t as un,
+    Y_n as dn,
+    Yn as fn,
+    ZWn as pn,
+    Zn as mn,
+    _ln as hn,
+    _sn as gn,
+    a8t as _n,
+    bsn as vn,
+    c8t as yn,
+    cSt as bn,
+    dn as xn,
+    e8t as Sn,
+    eln as Cn,
+    en as wn,
+    er as Tn,
+    fGt as En,
+    fln as Dn,
+    gln as On,
+    gsn as kn,
+    h6t as An,
+    hln as jn,
+    hn as Mn,
+    hsn as Nn,
+    i8t as Pn,
+    ir as Fn,
+    jUn as In,
+    lcn as Ln,
+    m6t as Rn,
+    mcn as zn,
+    mln as Bn,
+    msn as Vn,
+    n8t as Hn,
+    nln as Un,
+    nr as Wn,
+    nyn as Gn,
+    pGt as Kn,
+    pg as qn,
+    pln as Jn,
+    q6t as Yn,
+    r8t as Xn,
+    rr as Zn,
+    s8t as Qn,
+    sSt as $n,
+    t8t as er,
+    tg as tr,
+    tln as nr,
+    tr as rr,
+    vyn as ir,
+    wrn as ar,
+    xin as or,
+    xsn as sr
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    $b as cr,
+    $y as lr,
+    Bv as ur,
+    CC as dr,
+    Fm as fr,
+    Hb as pr,
+    Hy as mr,
+    Ky as hr,
+    Pm as gr,
+    Qb as _r,
+    Qy as vr,
+    SC as yr,
+    TC as br,
+    Ub as xr,
+    Uy as Sr,
+    Vv as Cr,
+    Xg as wr,
+    Zg as Tr,
+    _l as Er,
+    ap as Dr,
+    bC as Or,
+    gl as kr,
+    ny as Ar,
+    op as jr,
+    qy as Mr,
+    ry as Nr,
+    vy as Pr,
+    wC as Fr,
+    xC as Ir,
+    yy as Lr
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    $ as Rr,
+    $l as zr,
+    $o as Br,
+    $s as Vr,
+    Af as Hr,
+    Ao as Ur,
+    Bc as Wr,
+    Bn as Gr,
+    Cc as Kr,
+    Cd as qr,
+    Cf as Jr,
+    Cs as Yr,
+    Dc as Xr,
+    Do as Zr,
+    Ec as Qr,
+    Eo as $r,
+    Fc as ei,
+    Fi as ti,
+    G as ni,
+    Ga as ri,
+    Gs as ii,
+    Hc as ai,
+    I as oi,
+    Ic as si,
+    Im as ci,
+    Io as li,
+    J as ui,
+    Jl as di,
+    Jo as fi,
+    Jp as pi,
+    K as mi,
+    L as hi,
+    Lc as gi,
+    Lm as _i,
+    Lo as vi,
+    Ma as yi,
+    Mc as bi,
+    Na as xi,
+    Nc as Si,
+    Nh as Ci,
+    Ni as wi,
+    Oc as Ti,
+    Od as Ei,
+    Oo as Di,
+    Pc as Oi,
+    Pi as ki,
+    Ql as Ai,
+    Qo as ji,
+    Rc as Mi,
+    Rh as Ni,
+    Rm as Pi,
+    Sf as Fi,
+    Ss as Ii,
+    Tc as Li,
+    Ts as Ri,
+    U as zi,
+    U_ as Bi,
+    Uc as Vi,
+    Un as Hi,
+    Vn as Ui,
+    W as Wi,
+    W_ as Gi,
+    Wa as Ki,
+    Wn as qi,
+    Ws as Ji,
+    X as Yi,
+    Xl as Xi,
+    Xo as Zi,
+    Xp as Qi,
+    Y as $i,
+    Yl as ea,
+    Yp as ta,
+    Zd as na,
+    Zl as ra,
+    Zo as ia,
+    _c as aa,
+    at as oa,
+    au as sa,
+    bc as ca,
+    bf as la,
+    dc as ua,
+    dt as da,
+    ec as fa,
+    es as pa,
+    et as ma,
+    eu as ha,
+    gc as ga,
+    gf as _a,
+    go as va,
+    ho as ya,
+    if as ba,
+    is as xa,
+    it as Sa,
+    iu as Ca,
+    jc as wa,
+    jf as Ta,
+    ko as Ea,
+    lc as Da,
+    lh as Oa,
+    lo as ka,
+    mf as Aa,
+    mo as ja,
+    ns as Ma,
+    nt as Na,
+    nu as Pa,
+    ot as Fa,
+    pc as Ia,
+    pf as La,
+    po as Ra,
+    q as za,
+    ql as Ba,
+    rf as Va,
+    rt as Ha,
+    ru as Ua,
+    sh as Wa,
+    ss as Ga,
+    tc as Ka,
+    ts as qa,
+    tt as Ja,
+    tu as Ya,
+    uo as Xa,
+    ut as Za,
+    vf as Qa,
+    wd as $a,
+    ws as eo,
+    xc as to,
+    xf as no,
+    xs as ro,
+    zc as io,
+    zd as ao
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    ax as oo,
+    ex as so,
+    ix as co
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    E as lo,
+    F as uo,
+    L as fo,
+    f as po,
+    o as mo,
+    t as ho,
+    u as go,
+    z as _o
+} from "./3d9e424f-kt4bqqypm1dmw9pv.js";
+import {
+    n as vo,
+    t as yo
+} from "./bcae0416-ikuz8xpvrl7zc38d.js";
+import {
+    n as bo,
+    t as xo
+} from "./283e0bfb-gpshxh94myln7o00.js";
+import {
+    n as So,
+    r as Co,
+    t as wo
+} from "./cf38d95c-ecylawypz26iazhe.js";
+import {
+    n as To,
+    r as Eo,
+    t as Do
+} from "./25e34381-m4hq61xmp627ptjb.js";
+import {
+    n as Oo,
+    t as ko
+} from "./9f2e6d33-h33rm8r24h08gyr1.js";
+import {
+    a as Ao,
+    i as jo,
+    n as Mo,
+    t as No
+} from "./730b64e6-cmgjgypkjg8p0rul.js";
+import {
+    n as Po,
+    r as Fo,
+    t as Io
+} from "./37b207d4-c11bu6stsfrwt1kc.js";
+import {
+    l as Lo,
+    o as Ro
+} from "./1212b029-gea36v7yzle7vx36.js";
+import {
+    a as zo,
+    i as Bo,
+    o as Vo,
+    r as Ho,
+    s as Uo,
+    t as Wo
+} from "./a6f4f526-ohl1tbtr95pvqdu9.js";
+import {
+    a as Go,
+    n as Ko
+} from "./b0c2397c-gzseaeqr0yijp0eh.js";
+import {
+    n as qo,
+    t as Jo
+} from "./a4d2bcd2-kotayx1z6pmyyl9f.js";
+import {
+    i as Yo,
+    n as Xo,
+    r as Zo
+} from "./32d3feda-hhfdhqajoabb5vr8.js";
+import {
+    n as Qo,
+    t as $o
+} from "./4a5c97e1-f0rgji8157a30vsw.js";
+import {
+    n as es,
+    r as ts,
+    t as ns
+} from "./ef852af5-ead7ndxw98pbc2xq.js";
+import {
+    n as rs,
+    t as is
+} from "./8181be75-jxl9ssgn0fr1coay.js";
+import {
+    n as as,
+    t as os
+} from "./96984d0a-cl6pg55o0zev32k2.js";
+import {
+    a as ss,
+    c as cs,
+    d as ls,
+    f as us,
+    i as ds,
+    n as fs,
+    o as ps,
+    s as ms,
+    t as hs,
+    u as gs
+} from "./3ebdc472-iznnx016ux5fh0j4.js";
+import {
+    n as _s,
+    t as vs
+} from "./646367a3-jld8kcv4nfxql10u.js";
+import {
+    n as ys,
+    t as bs
+} from "./bfa5bd69-abxss2965oa4vozq.js";
+import {
+    n as xs,
+    t as Ss
+} from "./14cc4891-cg3322196l0g7djn.js";
+var Cs, ws, Ts = e((() => {
+        Cs = qe(), ws = e => (0, Cs.jsx)(`svg`, {
+            width: `1em`,
+            height: `1em`,
+            viewBox: `0 0 24 24`,
+            fill: `currentColor`,
+            ...e,
+            children: (0, Cs.jsx)(`path`, {
+                d: `M16.2426 6.75739C16.7949 6.75738 17.2426 7.2051 17.2426 7.75738V14.8285C17.2426 15.3807 16.7949 15.8285 16.2426 15.8285C15.6904 15.8285 15.2426 15.3807 15.2426 14.8285V10.1716L8.46446 16.9498C8.07394 17.3403 7.44077 17.3403 7.05025 16.9498C6.65972 16.5592 6.65972 15.9261 7.05025 15.5356L13.8284 8.75739H9.17157C8.61928 8.75739 8.17157 8.30967 8.17157 7.75738C8.17157 7.2051 8.61928 6.75738 9.17157 6.75739H16.2426Z`,
+                fill: `currentColor`
+            })
+        })
+    })),
+    Es, Ds, Os = e((() => {
+        Es = qe(), Ds = e => (0, Es.jsxs)(`svg`, {
+            width: `1em`,
+            height: `1em`,
+            viewBox: `0 0 24 24`,
+            fill: `currentColor`,
+            ...e,
+            children: [(0, Es.jsx)(`path`, {
+                d: `M13 12C13 11.4477 12.5523 11 12 11C11.4477 11 11 11.4477 11 12V16C11 16.5523 11.4477 17 12 17C12.5523 17 13 16.5523 13 16V12Z`,
+                fill: `currentColor`
+            }), (0, Es.jsx)(`path`, {
+                d: `M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM4 12C4 7.58172 7.58172 4 12 4C16.4183 4 20 7.58172 20 12C20 16.4183 16.4183 20 12 20C7.58172 20 4 16.4183 4 12Z`,
+                fill: `currentColor`
+            }), (0, Es.jsx)(`path`, {
+                d: `M12 9.30005C12.6351 9.30005 13.15 8.78518 13.15 8.15005C13.15 7.51492 12.6351 7.00005 12 7.00005C11.3649 7.00005 10.85 7.51492 10.85 8.15005C10.85 8.78518 11.3649 9.30005 12 9.30005Z`,
+                fill: `currentColor`
+            })]
+        })
+    })),
+    ks, As, js = e((() => {
+        ks = qe(), As = e => (0, ks.jsxs)(`svg`, {
+            width: `1em`,
+            height: `1em`,
+            viewBox: `0 0 24 24`,
+            fill: `currentColor`,
+            ...e,
+            children: [(0, ks.jsx)(`g`, {
+                clipPath: `url(#clip0_8150_6581)`,
+                children: (0, ks.jsx)(`path`, {
+                    d: `M9.20509 8.76514V6.50548C9.20509 6.31517 9.27649 6.17237 9.44293 6.07733L13.9861 3.46091C14.6046 3.10416 15.342 2.93772 16.103 2.93772C18.9573 2.93772 20.7651 5.14986 20.7651 7.50457C20.7651 7.67101 20.7651 7.86132 20.7412 8.05164L16.0316 5.29243C15.7462 5.12599 15.4607 5.12599 15.1753 5.29243L9.20509 8.76514ZM19.8136 17.566V12.1665C19.8136 11.8334 19.6708 11.5955 19.3854 11.4291L13.4152 7.95637L15.3656 6.83836C15.5321 6.74332 15.6749 6.74332 15.8413 6.83836L20.3845 9.45477C21.6928 10.216 22.5728 11.8334 22.5728 13.4032C22.5728 15.2108 21.5025 16.8759 19.8136 17.5657V17.566ZM7.80173 12.8088L5.8513 11.6671C5.68486 11.5721 5.61346 11.4293 5.61346 11.239V6.00616C5.61346 3.46114 7.56389 1.53436 10.2042 1.53436C11.2033 1.53436 12.1307 1.86746 12.9159 2.46205L8.2301 5.17374C7.94475 5.34018 7.80196 5.57801 7.80196 5.91112V12.809L7.80173 12.8088ZM12 15.2349L9.20509 13.6651V10.3352L12 8.76537L14.7947 10.3352V13.6651L12 15.2349ZM13.7958 22.4659C12.7967 22.4659 11.8693 22.1328 11.0841 21.5382L15.7699 18.8265C16.0553 18.6601 16.198 18.4223 16.198 18.0892V11.1912L18.1723 12.3329C18.3388 12.4279 18.4102 12.5707 18.4102 12.7611V17.9939C18.4102 20.5389 16.4359 22.4657 13.7958 22.4657V22.4659ZM8.15848 17.1617L3.61528 14.5453C2.30696 13.784 1.42701 12.1667 1.42701 10.5969C1.42701 8.76537 2.52115 7.12417 4.20987 6.43431V11.8575C4.20987 12.1906 4.35266 12.4284 4.63802 12.5948L10.5846 16.0437L8.63415 17.1617C8.46771 17.2567 8.32492 17.2567 8.15848 17.1617ZM7.897 21.0626C5.20919 21.0626 3.23488 19.0407 3.23488 16.5432C3.23488 16.3529 3.25875 16.1626 3.2824 15.9723L7.96817 18.684C8.25352 18.8504 8.53911 18.8504 8.82447 18.684L14.7947 15.2351V17.4948C14.7947 17.6851 14.7233 17.8279 14.5568 17.9229L10.0136 20.5394C9.39518 20.8961 8.6578 21.0626 7.89677 21.0626H7.897ZM13.7958 23.8929C16.6739 23.8929 19.0762 21.8475 19.6235 19.1358C22.2874 18.4459 24 15.9484 24 13.4034C24 11.7383 23.2865 10.121 22.002 8.95546C22.121 8.45591 22.1924 7.95637 22.1924 7.45705C22.1924 4.05573 19.4331 1.51048 16.2458 1.51048C15.6037 1.51048 14.9852 1.60553 14.3668 1.81971C13.2963 0.773101 11.8215 0.107117 10.2042 0.107117C7.32606 0.107117 4.92383 2.15259 4.37653 4.86428C1.7126 5.55414 0 8.05164 0 10.5967C0 12.2617 0.713506 13.8791 1.99795 15.0446C1.87904 15.5441 1.80764 16.0437 1.80764 16.543C1.80764 19.9443 4.56685 22.4896 7.75421 22.4896C8.39632 22.4896 9.01478 22.3945 9.63324 22.1803C10.7035 23.2269 12.1783 23.8929 13.7958 23.8929Z`,
+                    fill: `currentColor`
+                })
+            }), (0, ks.jsx)(`defs`, {
+                children: (0, ks.jsx)(`clipPath`, {
+                    id: `clip0_8150_6581`,
+                    children: (0, ks.jsx)(`rect`, {
+                        width: 24,
+                        height: 24,
+                        fill: `white`
+                    })
+                })
+            })]
+        })
+    })),
+    Ms, Ns, Ps, Fs, Is, Ls, Rs, zs, Bs, Vs, Hs, Us, Ws, Gs, Ks, qs, Js, Ys, Xs, Zs, Qs, $s, ec, tc, nc, rc, ic, ac, oc, sc, cc, lc, uc, dc, fc, pc, mc, G, hc = e((() => {
+        Ms = `_oENHW_Card`, Ns = `_oENHW_CardActions`, Ps = `_oENHW_CardContent`, Fs = `_oENHW_Copy`, Is = `_oENHW_CreditAmount`, Ls = `_oENHW_CreditCopy`, Rs = `_oENHW_CreditSummary`, zs = `_oENHW_DestinationDescription`, Bs = `_oENHW_Dialog`, Vs = `_oENHW_DialogActions`, Hs = `_oENHW_DialogBody`, Us = `_oENHW_DialogForm`, Ws = `_oENHW_DialogPortal`, Gs = `_oENHW_DialogTitle`, Ks = `_oENHW_Headline`, qs = `_oENHW_Identity`, Js = `_oENHW_InfoIcon`, Ys = `_oENHW_LinkedCard`, Xs = `_oENHW_LinkedCopy`, Zs = `_oENHW_LinkedDescription`, Qs = `_oENHW_LinkedHeading`, $s = `_oENHW_LinkedSection`, ec = `_oENHW_LinkedTitle`, tc = `_oENHW_Logo`, nc = `_oENHW_OrganizationName`, rc = `_oENHW_OrganizationOption`, ic = `_oENHW_OrganizationOptions`, ac = `_oENHW_OrganizationPicker`, oc = `_oENHW_PlatformLink`, sc = `_oENHW_SecondaryText`, cc = `_oENHW_SuccessArtwork`, lc = `_oENHW_SuccessBody`, uc = `_oENHW_SuccessCheck`, dc = `_oENHW_SuccessDescription`, fc = `_oENHW_SuccessLogo`, pc = `_oENHW_SuccessMessage`, mc = `_oENHW_SummaryDescription`, G = {
+            Card: Ms,
+            CardActions: Ns,
+            CardContent: Ps,
+            Copy: Fs,
+            CreditAmount: Is,
+            CreditCopy: Ls,
+            CreditSummary: Rs,
+            DestinationDescription: zs,
+            Dialog: Bs,
+            DialogActions: Vs,
+            DialogBody: Hs,
+            DialogForm: Us,
+            DialogPortal: Ws,
+            DialogTitle: Gs,
+            Error: `_oENHW_Error`,
+            Headline: Ks,
+            Identity: qs,
+            InfoIcon: Js,
+            LinkedCard: Ys,
+            LinkedCopy: Xs,
+            LinkedDescription: Zs,
+            LinkedHeading: Qs,
+            LinkedSection: $s,
+            LinkedTitle: ec,
+            Logo: tc,
+            OrganizationName: nc,
+            OrganizationOption: rc,
+            OrganizationOptions: ic,
+            OrganizationPicker: ac,
+            PlatformLink: oc,
+            SecondaryText: sc,
+            SuccessArtwork: cc,
+            SuccessBody: lc,
+            SuccessCheck: uc,
+            SuccessDescription: dc,
+            SuccessLogo: fc,
+            SuccessMessage: pc,
+            SummaryDescription: mc
+        }
+    })),
+    gc, _c, vc, yc = e((() => {
+        gc = qe(), at(), _c = e => (0, gc.jsx)(`svg`, {
+            preserveAspectRatio: `none`,
+            overflow: `visible`,
+            style: {
+                display: `block`
+            },
+            width: 32,
+            height: 32,
+            viewBox: `0 0 32 32`,
+            fill: `none`,
+            xmlns: `http://www.w3.org/2000/svg`,
+            ...e,
+            children: (0, gc.jsx)(`g`, {
+                id: `circle-checkmark-fill`,
+                children: (0, gc.jsx)(`path`, {
+                    id: `vector`,
+                    d: `M16 1.75C23.8701 1.75 30.25 8.12994 30.25 16C30.25 23.8701 23.8701 30.25 16 30.25C8.12994 30.25 1.75 23.8701 1.75 16C1.75 8.12994 8.12994 1.75 16 1.75ZM21.2217 10.9053C20.6483 10.5209 19.8718 10.6739 19.4873 11.2471L14.5889 18.5527L12.3887 16.1943C11.9177 15.6896 11.1269 15.6619 10.6221 16.1328C10.1175 16.6038 10.0897 17.3947 10.5605 17.8994L13.6211 21.1797C14.2801 21.8858 15.4257 21.7942 15.9639 20.9922L21.5635 12.6396C21.9478 12.0664 21.7947 11.2898 21.2217 10.9053Z`,
+                    fillRule: `evenodd`,
+                    clipRule: `evenodd`,
+                    fill: `#53B559`
+                })
+            })
+        }), vc = _c
+    }));
+
+function bc(e) {
+    return (0, K.jsx)(`a`, {
+        href: `https://platform.openai.com`,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        className: G.PlatformLink,
+        children: e
+    })
+}
+
+function xc(e) {
+    return (0, K.jsx)(`a`, {
+        href: `https://platform.openai.com`,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        className: G.PlatformLink,
+        children: e
+    })
+}
+var Sc, Cc, K, wc, Tc, Ec, Dc, Oc, kc, Ac = e((() => {
+    Sc = pt(), Ts(), qi(), Os(), js(), Ei(), Gr(), Ne(), Cc = n(at(), 1), rt(), hc(), yc(), Co(), K = qe(), wc = Qe({
+        cancel: {
+            id: `chatgpt.api_linking_promo.cancel`,
+            defaultMessage: `Cancel`
+        },
+        close: {
+            id: `chatgpt.api_linking_promo.close`,
+            defaultMessage: `Close`
+        },
+        claim: {
+            id: `chatgpt.api_linking_promo.claim`,
+            defaultMessage: `Link & claim`
+        },
+        link: {
+            id: `chatgpt.api_linking_promo.link`,
+            defaultMessage: `Link organization`
+        },
+        trialTiming: {
+            id: `chatgpt.api_linking_promo.trial.payment_timing`,
+            defaultMessage: `Credits start after your first successful subscription payment.`
+        },
+        unavailable: {
+            id: `chatgpt.api_linking_promo.link_failed`,
+            defaultMessage: `We couldn’t confirm the link. Please try again.`
+        }
+    }), Tc = e => {
+        "use forget";
+        let t = (0, Sc.c)(34),
+            {
+                offer: n,
+                onLink: r,
+                onDismiss: i,
+                className: a
+            } = e,
+            o = mt(),
+            s;
+        t[0] !== o || t[1] !== n.currency || t[2] !== n.periodCreditAmountMinor ? (s = So({
+            intl: o,
+            amount: n.periodCreditAmountMinor,
+            currency: n.currency
+        }), t[0] = o, t[1] = n.currency, t[2] = n.periodCreditAmountMinor, t[3] = s) : s = t[3];
+        let c = s,
+            l;
+        t[4] === a ? l = t[5] : (l = g(G.Card, a), t[4] = a, t[5] = l);
+        let u;
+        t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, K.jsx)(`span`, {
+            className: G.Logo,
+            "aria-hidden": `true`,
+            children: (0, K.jsx)(As, {
+                width: 16,
+                height: 16
+            })
+        }), t[6] = u) : u = t[6];
+        let d;
+        t[7] === n.cadence ? d = t[8] : (d = (0, K.jsxs)(`div`, {
+            className: G.Identity,
+            children: [u, (0, K.jsx)(`p`, {
+                className: G.SecondaryText,
+                children: (0, K.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.benefit_by_cadence`,
+                    defaultMessage: `{cadence, select, annual {Annual subscription benefit} other {Monthly subscription benefit}}`,
+                    values: {
+                        cadence: n.cadence
+                    }
+                })
+            })]
+        }), t[7] = n.cadence, t[8] = d);
+        let f;
+        t[9] !== n.cadence || t[10] !== n.planName || t[11] !== c ? (f = (0, K.jsx)(`h3`, {
+            className: G.Headline,
+            children: (0, K.jsx)(W, {
+                id: `chatgpt.api_linking_promo.title_by_cadence`,
+                defaultMessage: `{cadence, select, annual {Get {amount} in API credits each year with {planName}} other {Get {amount} in API credits each month with {planName}}}`,
+                values: {
+                    amount: c,
+                    cadence: n.cadence,
+                    planName: n.planName
+                }
+            })
+        }), t[9] = n.cadence, t[10] = n.planName, t[11] = c, t[12] = f) : f = t[12];
+        let p;
+        t[13] === n.claimableCreditAmountMinor ? p = t[14] : (p = (0, K.jsx)(`p`, {
+            className: G.SecondaryText,
+            children: n.claimableCreditAmountMinor === 0 ? (0, K.jsx)(W, {
+                ...wc.trialTiming
+            }) : (0, K.jsx)(W, {
+                id: `chatgpt.api_linking_promo.description`,
+                defaultMessage: `Link an API organization to use these credits.`
+            })
+        }), t[13] = n.claimableCreditAmountMinor, t[14] = p);
+        let m;
+        t[15] !== f || t[16] !== p ? (m = (0, K.jsxs)(`div`, {
+            className: G.Copy,
+            children: [f, p]
+        }), t[15] = f, t[16] = p, t[17] = m) : m = t[17];
+        let h;
+        t[18] !== d || t[19] !== m ? (h = (0, K.jsxs)(`div`, {
+            className: G.CardContent,
+            children: [d, m]
+        }), t[18] = d, t[19] = m, t[20] = h) : h = t[20];
+        let _;
+        t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = (0, K.jsx)(W, {
+            id: `chatgpt.api_linking_promo.dismiss`,
+            defaultMessage: `Not now`
+        }), t[21] = _) : _ = t[21];
+        let v;
+        t[22] === i ? v = t[23] : (v = (0, K.jsx)(na, {
+            color: `secondary`,
+            variant: `outline`,
+            size: `xl`,
+            type: `button`,
+            onClick: i,
+            children: _
+        }), t[22] = i, t[23] = v);
+        let y;
+        t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, K.jsx)(W, {
+            ...wc.link
+        }), t[24] = y) : y = t[24];
+        let b;
+        t[25] === r ? b = t[26] : (b = (0, K.jsx)(na, {
+            color: `primary`,
+            size: `xl`,
+            type: `button`,
+            onClick: r,
+            children: y
+        }), t[25] = r, t[26] = b);
+        let x;
+        t[27] !== v || t[28] !== b ? (x = (0, K.jsxs)(`div`, {
+            className: G.CardActions,
+            children: [v, b]
+        }), t[27] = v, t[28] = b, t[29] = x) : x = t[29];
+        let S;
+        return t[30] !== x || t[31] !== l || t[32] !== h ? (S = (0, K.jsxs)(`section`, {
+            className: l,
+            children: [h, x]
+        }), t[30] = x, t[31] = l, t[32] = h, t[33] = S) : S = t[33], S
+    }, Ec = e => {
+        "use forget";
+        let t = (0, Sc.c)(77),
+            {
+                open: n,
+                offer: r,
+                benefit: i,
+                destinationSelector: a,
+                pending: o,
+                failed: s,
+                linked: c,
+                deliveryResult: l,
+                onClose: u,
+                onConfirm: d,
+                portalClassName: f,
+                pluginUrl: p
+            } = e,
+            m = c !== void 0 && c,
+            h = p === void 0 ? `https://chatgpt.com/plugins/openai-developers` : p,
+            _ = mt(),
+            v = r ?? i;
+        if (v == null) return null;
+        let y = v.claimableCreditAmountMinor === 0,
+            b = y ? v.periodCreditAmountMinor : v.claimableCreditAmountMinor,
+            x;
+        t[0] !== v.currency || t[1] !== _ || t[2] !== b ? (x = wo({
+            intl: _,
+            amount: b,
+            currency: v.currency
+        }), t[0] = v.currency, t[1] = _, t[2] = b, t[3] = x) : x = t[3];
+        let S = x,
+            C;
+        t[4] !== v.currency || t[5] !== v.periodCreditAmountMinor || t[6] !== _ ? (C = wo({
+            intl: _,
+            amount: v.periodCreditAmountMinor,
+            currency: v.currency
+        }), t[4] = v.currency, t[5] = v.periodCreditAmountMinor, t[6] = _, t[7] = C) : C = t[7];
+        let w = C,
+            T = !y && v.claimableCreditAmountMinor !== v.periodCreditAmountMinor,
+            E;
+        t[8] !== u || t[9] !== o ? (E = e => {
+            !e && !o && u()
+        }, t[8] = u, t[9] = o, t[10] = E) : E = t[10];
+        let D;
+        t[11] === f ? D = t[12] : (D = g(G.DialogPortal, f), t[11] = f, t[12] = D);
+        let O;
+        t[13] !== m || t[14] !== r || t[15] !== d || t[16] !== o ? (O = e => {
+            e.preventDefault(), !o && !m && r != null && d()
+        }, t[13] = m, t[14] = r, t[15] = d, t[16] = o, t[17] = O) : O = t[17];
+        let k;
+        t[18] === y ? k = t[19] : (k = (0, K.jsx)(Ui.Title, {
+            className: G.DialogTitle,
+            children: y ? (0, K.jsx)(W, {
+                id: `chatgpt.api_linking_promo.trial.confirmation_title`,
+                defaultMessage: `Link your API organization`
+            }) : (0, K.jsx)(W, {
+                id: `chatgpt.api_linking_promo.claim_title`,
+                defaultMessage: `Claim your credits`
+            })
+        }), t[18] = y, t[19] = k);
+        let A;
+        t[20] === _ ? A = t[21] : (A = _.formatMessage(wc.close), t[20] = _, t[21] = A);
+        let j;
+        t[22] === Symbol.for(`react.memo_cache_sentinel`) ? (j = (0, K.jsx)(Hi, {
+            "aria-hidden": !0,
+            width: 16,
+            height: 16
+        }), t[22] = j) : j = t[22];
+        let M;
+        t[23] !== o || t[24] !== A ? (M = (0, K.jsx)(Ui.Close, {
+            children: (0, K.jsx)(na, {
+                color: `secondary`,
+                variant: `ghost`,
+                size: `sm`,
+                uniform: !0,
+                type: `button`,
+                disabled: o,
+                "aria-label": A,
+                children: j
+            })
+        }), t[23] = o, t[24] = A, t[25] = M) : M = t[25];
+        let ee;
+        t[26] !== M || t[27] !== k ? (ee = (0, K.jsxs)(Ui.Header, {
+            children: [k, M]
+        }), t[26] = M, t[27] = k, t[28] = ee) : ee = t[28];
+        let te = m && G.SuccessBody,
+            N;
+        t[29] === te ? N = t[30] : (N = g(G.DialogBody, te), t[29] = te, t[30] = N);
+        let P;
+        t[31] !== S || t[32] !== l?.outcome || t[33] !== a || t[34] !== v.cadence || t[35] !== s || t[36] !== T || t[37] !== y || t[38] !== m || t[39] !== r || t[40] !== w ? (P = m && r != null ? (0, K.jsxs)(K.Fragment, {
+            children: [(0, K.jsxs)(`div`, {
+                className: G.SuccessArtwork,
+                "aria-hidden": `true`,
+                children: [(0, K.jsx)(`div`, {
+                    className: G.SuccessLogo,
+                    children: (0, K.jsx)(As, {
+                        width: 56,
+                        height: 56
+                    })
+                }), (0, K.jsx)(`img`, {
+                    className: G.SuccessCheck,
+                    src: vc,
+                    alt: ``,
+                    width: 32,
+                    height: 32
+                })]
+            }), (0, K.jsxs)(Ui.Description, {
+                className: G.SuccessMessage,
+                children: [(0, K.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.success.linked`,
+                    defaultMessage: `Your API organization is linked!`
+                }), (0, K.jsx)(`br`, {}), (0, K.jsx)(`span`, {
+                    role: `status`,
+                    children: l?.outcome === `issued` || l?.outcome === `already_issued` ? (0, K.jsx)(W, {
+                        id: `chatgpt.api_linking_promo.success.delivered`,
+                        defaultMessage: `Your API credits have been delivered to {organizationName}.`,
+                        values: {
+                            organizationName: r.organizationName
+                        }
+                    }) : y ? (0, K.jsx)(W, {
+                        ...wc.trialTiming
+                    }) : l?.outcome === `no_credit` ? (0, K.jsx)(W, {
+                        id: `chatgpt.api_linking_promo.success.no_credit`,
+                        defaultMessage: `No additional API credits are available.`
+                    }) : (0, K.jsx)(W, {
+                        id: `chatgpt.api_linking_promo.success.processing`,
+                        defaultMessage: `Your credits will appear in {organizationName} once processing is complete.`,
+                        values: {
+                            organizationName: r.organizationName
+                        }
+                    })
+                })]
+            }), (0, K.jsx)(`p`, {
+                className: G.SuccessDescription,
+                children: (0, K.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.success.explore_with_platform_link`,
+                    defaultMessage: `Explore models, create a prototype, and bring your ideas to life on the <platformLink>API Platform</platformLink>.`,
+                    values: {
+                        platformLink: bc
+                    }
+                })
+            })]
+        }) : (0, K.jsxs)(K.Fragment, {
+            children: [(a != null || r == null) && (0, K.jsx)(Ui.Description, {
+                visuallyHidden: !0,
+                children: (0, K.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.description`,
+                    defaultMessage: `Link an API organization to use these credits.`
+                })
+            }), (0, K.jsxs)(`div`, {
+                className: G.CreditSummary,
+                children: [(0, K.jsxs)(`div`, {
+                    className: G.CreditCopy,
+                    children: [(0, K.jsx)(`p`, {
+                        className: G.CreditAmount,
+                        children: S
+                    }), (0, K.jsx)(`p`, {
+                        className: G.SummaryDescription,
+                        children: T ? (0, K.jsx)(W, {
+                            id: `chatgpt.api_linking_promo.partial_recurring_summary`,
+                            defaultMessage: `You’ll receive {amount} in API credits at the start of each billing cycle. Link an API organization to use these credits.`,
+                            values: {
+                                amount: w
+                            }
+                        }) : (0, K.jsx)(W, {
+                            id: `chatgpt.api_linking_promo.credit_summary_by_cadence`,
+                            defaultMessage: `{cadence, select, annual {In free API credits per year} other {In free API credits per month}}`,
+                            values: {
+                                cadence: v.cadence
+                            }
+                        })
+                    })]
+                }), (0, K.jsx)(Ds, {
+                    "aria-hidden": !0,
+                    width: 20,
+                    height: 20,
+                    className: G.InfoIcon
+                })]
+            }), T && (0, K.jsx)(`p`, {
+                className: G.SummaryDescription,
+                children: (0, K.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.first_grant_billing_cycle`,
+                    defaultMessage: `Your first credit grant is calculated based on your billing cycle.`
+                })
+            }), a, (a == null && r != null || y) && (0, K.jsxs)(Ui.Description, {
+                className: G.DestinationDescription,
+                children: [a == null && r != null && (0, K.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.destination`,
+                    defaultMessage: `These credits will be added to {organizationName} on <platformLink>platform.openai.com</platformLink>. You can also create a new organization there.`,
+                    values: {
+                        organizationName: r.organizationName,
+                        platformLink: xc
+                    }
+                }), y && (0, K.jsxs)(K.Fragment, {
+                    children: [` `, (0, K.jsx)(W, {
+                        ...wc.trialTiming
+                    })]
+                })]
+            }), s && (0, K.jsx)(`p`, {
+                role: `alert`,
+                className: G.Error,
+                children: (0, K.jsx)(W, {
+                    ...wc.unavailable
+                })
+            })]
+        }), t[31] = S, t[32] = l?.outcome, t[33] = a, t[34] = v.cadence, t[35] = s, t[36] = T, t[37] = y, t[38] = m, t[39] = r, t[40] = w, t[41] = P) : P = t[41];
+        let ne;
+        t[42] !== N || t[43] !== P ? (ne = (0, K.jsx)(Ui.Body, {
+            className: N,
+            children: P
+        }), t[42] = N, t[43] = P, t[44] = ne) : ne = t[44];
+        let re;
+        t[45] === m ? re = t[46] : (re = m ? (0, K.jsx)(W, {
+            id: `chatgpt.api_linking_promo.success.done`,
+            defaultMessage: `Done`
+        }) : (0, K.jsx)(W, {
+            ...wc.cancel
+        }), t[45] = m, t[46] = re);
+        let F;
+        t[47] !== o || t[48] !== re ? (F = (0, K.jsx)(Ui.Close, {
+            children: (0, K.jsx)(na, {
+                color: `primary`,
+                variant: `outline`,
+                pill: !1,
+                size: `lg`,
+                type: `button`,
+                disabled: o,
+                children: re
+            })
+        }), t[47] = o, t[48] = re, t[49] = F) : F = t[49];
+        let I = m ? `button` : `submit`,
+            ie = o || !m && r == null,
+            L;
+        t[50] !== m || t[51] !== h ? (L = m ? () => {
+            window.open(h, `_blank`, `noopener,noreferrer`)
+        } : void 0, t[50] = m, t[51] = h, t[52] = L) : L = t[52];
+        let R;
+        t[53] !== y || t[54] !== m ? (R = m ? (0, K.jsxs)(K.Fragment, {
+            children: [(0, K.jsx)(W, {
+                id: `chatgpt.api_linking_promo.success.start_building`,
+                defaultMessage: `Start building with the Plugin`
+            }), (0, K.jsx)(ws, {
+                "aria-hidden": !0,
+                width: 18,
+                height: 18
+            })]
+        }) : (0, K.jsx)(W, {
+            ...y ? wc.link : wc.claim
+        }), t[53] = y, t[54] = m, t[55] = R) : R = t[55];
+        let z;
+        t[56] !== o || t[57] !== I || t[58] !== ie || t[59] !== L || t[60] !== R ? (z = (0, K.jsx)(na, {
+            color: `primary`,
+            pill: !1,
+            size: `lg`,
+            type: I,
+            loading: o,
+            disabled: ie,
+            onClick: L,
+            children: R
+        }), t[56] = o, t[57] = I, t[58] = ie, t[59] = L, t[60] = R, t[61] = z) : z = t[61];
+        let ae;
+        t[62] !== F || t[63] !== z ? (ae = (0, K.jsxs)(Ui.Footer, {
+            className: G.DialogActions,
+            children: [F, z]
+        }), t[62] = F, t[63] = z, t[64] = ae) : ae = t[64];
+        let B;
+        t[65] !== ee || t[66] !== ne || t[67] !== ae || t[68] !== O ? (B = (0, K.jsxs)(Ui.Form, {
+            className: G.DialogForm,
+            onSubmit: O,
+            children: [ee, ne, ae]
+        }), t[65] = ee, t[66] = ne, t[67] = ae, t[68] = O, t[69] = B) : B = t[69];
+        let oe;
+        t[70] !== B || t[71] !== D ? (oe = (0, K.jsx)(Ui.Content, {
+            className: G.Dialog,
+            maxWidth: 478,
+            portalClassName: D,
+            backdrop: `dim`,
+            children: B
+        }), t[70] = B, t[71] = D, t[72] = oe) : oe = t[72];
+        let V;
+        return t[73] !== n || t[74] !== oe || t[75] !== E ? (V = (0, K.jsx)(Ui, {
+            open: n,
+            onOpenChange: E,
+            children: oe
+        }), t[73] = n, t[74] = oe, t[75] = E, t[76] = V) : V = t[76], V
+    }, Dc = e => ({
+        organizationId: e,
+        epoch: Symbol(),
+        dismissed: !1,
+        open: !1,
+        pending: !1,
+        failed: !1,
+        linked: !1,
+        deliveryResult: void 0
+    }), Oc = e => {
+        "use forget";
+        let t = (0, Sc.c)(40),
+            {
+                accountId: n,
+                benefit: r,
+                offer: i,
+                onLink: a,
+                className: o,
+                portalClassName: s,
+                destinationSelector: c,
+                pluginUrl: l
+            } = e,
+            u = i?.organizationId ?? null,
+            d;
+        t[0] === u ? d = t[1] : (d = () => Dc(u), t[0] = u, t[1] = d);
+        let [f, p] = (0, Cc.useState)(d), m = (0, Cc.useRef)(null);
+        if (f.organizationId !== u) return p({
+            ...Dc(u),
+            open: f.open,
+            dismissed: f.dismissed
+        }), null;
+        let h;
+        t[2] === f.epoch ? h = t[3] : (h = e => {
+            p(t => t.epoch === f.epoch ? {
+                ...t,
+                ...e
+            } : t)
+        }, t[2] = f.epoch, t[3] = h);
+        let g = h,
+            _;
+        t[4] === f.epoch ? _ = t[5] : (_ = () => m.current?.epoch === f.epoch && m.current.inFlight, t[4] = f.epoch, t[5] = _);
+        let v = _,
+            y;
+        t[6] !== n || t[7] !== f.epoch || t[8] !== v || t[9] !== i || t[10] !== a || t[11] !== g ? (y = async () => {
+            if (v() || i == null) return;
+            m.current?.epoch !== f.epoch && (m.current = {
+                epoch: f.epoch,
+                operationId: null,
+                inFlight: !1
+            });
+            let e = m.current;
+            e.inFlight = !0, g({
+                pending: !0,
+                failed: !1
+            });
+            try {
+                e.operationId === null && (e.operationId = crypto.randomUUID());
+                let t = await a({
+                    sourceAccountId: n,
+                    destinationAccountId: i.organizationId,
+                    operationId: e.operationId
+                });
+                g({
+                    linked: !0,
+                    deliveryResult: t ?? null
+                })
+            } catch {
+                g({
+                    failed: !0
+                })
+            }
+            e.inFlight = !1, g({
+                pending: !1
+            })
+        }, t[6] = n, t[7] = f.epoch, t[8] = v, t[9] = i, t[10] = a, t[11] = g, t[12] = y) : y = t[12];
+        let b = y;
+        if (f.dismissed) return null;
+        let x;
+        t[13] !== r || t[14] !== o || t[15] !== f.linked || t[16] !== g ? (x = !f.linked && (0, K.jsx)(Tc, {
+            offer: r,
+            className: o,
+            onDismiss: () => g({
+                dismissed: !0
+            }),
+            onLink: () => {
+                g({
+                    failed: !1,
+                    open: !0
+                })
+            }
+        }), t[13] = r, t[14] = o, t[15] = f.linked, t[16] = g, t[17] = x) : x = t[17];
+        let S;
+        t[18] !== f.linked || t[19] !== v || t[20] !== g ? (S = () => {
+            v() || (f.linked ? g({
+                dismissed: !0
+            }) : g({
+                open: !1
+            }))
+        }, t[18] = f.linked, t[19] = v, t[20] = g, t[21] = S) : S = t[21];
+        let C;
+        t[22] === b ? C = t[23] : (C = () => {
+            b()
+        }, t[22] = b, t[23] = C);
+        let w;
+        t[24] !== r || t[25] !== c || t[26] !== f.deliveryResult || t[27] !== f.failed || t[28] !== f.linked || t[29] !== f.open || t[30] !== f.pending || t[31] !== i || t[32] !== l || t[33] !== s || t[34] !== S || t[35] !== C ? (w = (0, K.jsx)(Ec, {
+            open: f.open,
+            offer: i,
+            benefit: r,
+            destinationSelector: c,
+            pending: f.pending,
+            failed: f.failed,
+            linked: f.linked,
+            deliveryResult: f.deliveryResult,
+            onClose: S,
+            onConfirm: C,
+            portalClassName: s,
+            pluginUrl: l
+        }), t[24] = r, t[25] = c, t[26] = f.deliveryResult, t[27] = f.failed, t[28] = f.linked, t[29] = f.open, t[30] = f.pending, t[31] = i, t[32] = l, t[33] = s, t[34] = S, t[35] = C, t[36] = w) : w = t[36];
+        let T;
+        return t[37] !== x || t[38] !== w ? (T = (0, K.jsxs)(K.Fragment, {
+            children: [x, w]
+        }), t[37] = x, t[38] = w, t[39] = T) : T = t[39], T
+    }, kc = e => {
+        "use forget";
+        let t = (0, Sc.c)(11),
+            n, r, i, a, o;
+        t[0] === e ? (n = t[1], r = t[2], i = t[3], a = t[4], o = t[5]) : ({
+            enabled: i,
+            accountId: n,
+            benefit: r,
+            offer: a,
+            ...o
+        } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i, t[4] = a, t[5] = o);
+        let s = a ?? r;
+        if (!i || s == null) return null;
+        let c;
+        return t[6] !== n || t[7] !== s || t[8] !== a || t[9] !== o ? (c = (0, K.jsx)(Oc, {
+            accountId: n,
+            benefit: s,
+            offer: a,
+            ...o
+        }, n), t[6] = n, t[7] = s, t[8] = a, t[9] = o, t[10] = c) : c = t[10], c
+    }
+}));
+
+function jc(e) {
+    let t = /^\+?(\d*)(?:\.(\d*))?$/.exec(e);
+    if (t == null || !(t[1] || t[2])) return null;
+    let n = t[2] ?? ``;
+    if (/[^0]/.test(n.slice(2))) return null;
+    let r = BigInt((t[1] || `0`) + n.padEnd(2, `0`).slice(0, 2));
+    return r <= BigInt(2 ** 53 - 1) ? Number(r) : null
+}
+
+function Mc(e, t = Date.now()) {
+    if (e == null || e.currency !== `USD` || !Number.isFinite(Date.parse(e.expires_at)) || Date.parse(e.expires_at) <= t) return null;
+    let n = jc(e.period_credit_amount_usd);
+    return n == null || n <= 0 ? null : {
+        periodCreditAmountMinor: n,
+        currency: e.currency,
+        cadence: e.cadence
+    }
+}
+
+function Nc({
+    preview: e,
+    planName: t,
+    now: n = Date.now()
+}) {
+    let {
+        offer: r
+    } = e, i = Mc(r, n);
+    if (!e.eligible || e.ineligibility_reason != null || r == null || i == null) return null;
+    let a = jc(r.claimable_credit_amount_usd);
+    return a == null || a < 0 || a > i.periodCreditAmountMinor ? null : {
+        ...i,
+        claimableCreditAmountMinor: a,
+        planName: t
+    }
+}
+
+function Pc({
+    destination: e,
+    ...t
+}) {
+    let n = Nc(t),
+        {
+            offer: r
+        } = t.preview;
+    return n == null || r == null ? null : {
+        ...n,
+        expiresAt: r.expires_at,
+        organizationId: e.destination_account_id,
+        organizationName: e.display_name
+    }
+}
+
+function Fc(e, t) {
+    return t == null ? e.length === 1 ? e[0] ?? null : null : e.find(e => e.destination_account_id === t) ?? null
+}
+
+function Ic(e, t) {
+    return e.expiresAt != null && e.expiresAt === t.expiresAt && e.claimableCreditAmountMinor === 0 == (t.claimableCreditAmountMinor === 0) && e.periodCreditAmountMinor === t.periodCreditAmountMinor && e.currency === t.currency && e.cadence === t.cadence && e.organizationId === t.organizationId
+}
+var Lc = e((() => {}));
+
+function Rc({
+    accountId: e,
+    transport: t
+}) {
+    return {
+        links: {
+            queryKey: [`api-linking-promo`, e, `links`],
+            queryFn: () => t.readLinks({
+                path: {
+                    account_id: e
+                },
+                query: {
+                    destination_types: [`api_org`]
+                }
+            }),
+            staleTime: 0,
+            refetchOnMount: `always`
+        },
+        preview: {
+            queryKey: [`api-linking-promo`, e, zc],
+            queryFn: () => t.preview({
+                path: {
+                    account_id: e,
+                    program_id: zc
+                },
+                query: {
+                    destination_type: `api_org`
+                }
+            }),
+            staleTime: 0,
+            refetchOnMount: `always`
+        },
+        discovery: {
+            queryKey: [`api-linking-promo`, e, `destinations`],
+            queryFn: () => t.discover({
+                query: {
+                    account_id: e,
+                    destination_type: `api_org`
+                }
+            }),
+            staleTime: 0,
+            refetchOnMount: `always`
+        }
+    }
+}
+var zc, Bc = e((() => {
+    zc = `chatgpt_api_credits_promo`
+}));
+
+function Vc({
+    enabled: e,
+    ...t
+}) {
+    return e ? (0, Gc.jsx)(Hc, {
+        ...t
+    }, t.accountId) : null
+}
+
+function Hc({
+    Observer: e,
+    ...t
+}) {
+    return (0, Gc.jsx)(e, {
+        queries: Rc(t),
+        children: e => (0, Gc.jsx)(Uc, {
+            ...t,
+            observer: e
+        })
+    })
+}
+
+function Uc({
+    accountId: e,
+    planName: t,
+    transport: n,
+    observer: r,
+    children: i
+}) {
+    let [a, o] = (0, Wc.useState)(null), [s, c] = (0, Wc.useState)(null), [l, u] = (0, Wc.useState)(!1), [d, f] = (0, Wc.useState)(null), [, p] = (0, Wc.useState)(0), m = (0, Wc.useRef)(!0), h = (0, Wc.useRef)(!1), g = (0, Wc.useRef)(null), _ = (0, Wc.useRef)(r);
+    _.current = r, (0, Wc.useEffect)(() => (m.current = !0, () => {
+        m.current = !1
+    }), []);
+    let v = r.preview?.offer?.expires_at ?? r.preview?.benefit?.expires_at;
+    (0, Wc.useEffect)(() => {
+        if (v == null || s != null) return;
+        let e = Date.parse(v) - Date.now();
+        if (!Number.isFinite(e) || e <= 0) return;
+        let t, n = () => {
+            let e = Date.parse(v) - Date.now();
+            if (e > 0) {
+                t = setTimeout(n, Math.min(e + 1, 2147483647));
+                return
+            }
+            p(e => e + 1), _.current.refreshPreview().catch(() => {})
+        };
+        return n(), () => clearTimeout(t)
+    }, [v, s]);
+    let y = r.destinations ?? [],
+        b = r.isError ? null : r.links?.find(e => e.state !== `unlinked`) ?? null,
+        x = s?.destination ?? Fc(y, a),
+        S = s?.offer ?? d ?? (r.preview != null && x != null ? Pc({
+            preview: r.preview,
+            destination: x,
+            planName: t
+        }) : null),
+        C = s?.offer ?? d ?? (r.preview == null ? null : Nc({
+            preview: r.preview,
+            planName: t
+        })),
+        w = `ready`;
+    return l || b != null ? w = `linked` : s != null || d != null ? w = `ready` : r.isError && C != null ? w = `error` : r.isLoading || r.links == null || r.preview == null || r.destinations == null ? w = `loading` : C == null ? w = `ineligible` : y.length === 0 ? w = `no-organization` : x == null ? w = `select-organization` : S ?? (w = `ineligible`), i({
+        link: b,
+        linkedBenefit: Mc(r.preview?.benefit),
+        planName: t,
+        status: w,
+        destinations: y,
+        selectedDestination: x,
+        canSelectDestination: !h.current && g.current == null,
+        benefit: C,
+        offer: w === `ready` || w === `linked` ? S : null,
+        onRetry: r.refetch,
+        onSelectDestination: e => {
+            h.current || g.current != null || y.some(t => t.destination_account_id === e) && o(e)
+        },
+        onLink: async i => {
+            if (!m.current || h.current || S == null || i.sourceAccountId !== e || i.destinationAccountId !== S.organizationId) throw Error(`API credit promo claim is unavailable`);
+            let a = g.current;
+            if (a != null && (a.claim.operationId !== i.operationId || a.claim.destinationAccountId !== i.destinationAccountId)) throw Error(`Retry the original API credit promo operation`);
+            h.current = !0, f(S);
+            try {
+                if (a == null) {
+                    if (x == null) throw Error(`Select an API organization`);
+                    let e = Pc({
+                        preview: await r.refreshPreview(),
+                        destination: x,
+                        planName: t
+                    });
+                    if (!m.current || e == null || !Ic(S, e)) throw Error(`API credit promo offer changed; review it again`);
+                    g.current = {
+                        claim: {
+                            ...i
+                        },
+                        offer: e,
+                        destination: x
+                    }, c(g.current)
+                }
+                if (!m.current) throw Error(`API credit promo account changed`);
+                let o = await n.link({
+                    parameters: {
+                        path: {
+                            account_id: e
+                        }
+                    },
+                    requestBody: {
+                        operation_id: i.operationId,
+                        destination_type: `api_org`,
+                        destination_account_id: i.destinationAccountId
+                    }
+                });
+                if (o.source_type !== `chatgpt_account` || o.source_account_id !== e || o.destination_type !== `api_org` || o.destination_account_id !== i.destinationAccountId || o.state !== `active`) throw Error(`API credit promo link is unconfirmed`);
+                return m.current && (u(!0), Promise.resolve().then(() => r.refetch()).catch(() => {})), o.delivery_result
+            } finally {
+                h.current = !1, m.current && f(null)
+            }
+        }
+    })
+}
+var Wc, Gc, Kc = e((() => {
+        Wc = n(at(), 1), Lc(), Bc(), Gc = qe()
+    })),
+    qc, Jc, Yc = e((() => {
+        qc = `kZrfwG_Badge`, Jc = {
+            Badge: qc
+        }
+    })),
+    Xc, Zc, Qc = e((() => {
+        Ne(), Aa(), Va(), Yc(), Xc = qe(), Zc = ({
+            children: e,
+            className: t,
+            variant: n = `soft`,
+            color: r = `secondary`,
+            size: i = `sm`,
+            pill: a = La.pill
+        }) => (0, Xc.jsx)(`div`, {
+            className: g(Jc.Badge, t),
+            "data-color": r,
+            "data-size": i,
+            "data-pill": a ? `` : void 0,
+            "data-variant": n,
+            children: ba(e)
+        })
+    })),
+    $c = e((() => {
+        Qc()
+    })),
+    el, tl, nl, rl, il, al, ol = e((() => {
+        el = `_9tw0Lq_RadioGroup`, tl = `_9tw0Lq_RadioIndicator`, nl = `_9tw0Lq_RadioIndicatorWrapper`, rl = `_9tw0Lq_RadioItem`, il = `_9tw0Lq_RadioLabel`, al = {
+            "fade-in": `_9tw0Lq_fade-in`,
+            RadioGroup: el,
+            RadioIndicator: tl,
+            RadioIndicatorWrapper: nl,
+            RadioItem: rl,
+            RadioLabel: il,
+            "scale-in": `_9tw0Lq_scale-in`
+        }
+    })),
+    sl, cl, ll, ul, dl, fl, pl = e((() => {
+        Ne(), ao(), sl = n(at(), 1), ol(), cl = qe(), ll = (0, sl.createContext)(null), ul = () => {
+            let e = (0, sl.use)(ll);
+            if (!e) throw Error(`RadioGroup components must be wrapped in <RadioGroup />`);
+            return e
+        }, dl = ({
+            onChange: e,
+            children: t,
+            className: n,
+            direction: r = `row`,
+            disabled: i = !1,
+            __isWidget: a,
+            ...o
+        }) => {
+            let s = (0, sl.useMemo)(() => ({
+                disabled: i,
+                direction: r
+            }), [i, r]);
+            return (0, cl.jsx)(ll, {
+                value: s,
+                children: (0, cl.jsx)(Vn, {
+                    className: g(al.RadioGroup, n),
+                    "data-direction": r,
+                    "data-w-component": a ? `radio-group` : void 0,
+                    onValueChange: e,
+                    disabled: i,
+                    ...o,
+                    children: t
+                })
+            })
+        }, fl = ({
+            value: e,
+            disabled: t = !1,
+            id: n,
+            required: r,
+            children: i,
+            className: a,
+            block: o = !1,
+            ...s
+        }) => {
+            let {
+                disabled: c
+            } = ul(), l = c || t, u = (0, sl.useId)(), d = n ?? `${e}-${u}`;
+            return (0, cl.jsx)(`div`, {
+                className: `flex`,
+                ...s,
+                children: (0, cl.jsxs)(`label`, {
+                    htmlFor: d,
+                    className: g(al.RadioLabel, a),
+                    "data-disabled": l ? `` : void 0,
+                    "data-block": o ? `` : void 0,
+                    onMouseDown: e => {
+                        !e.defaultPrevented && e.detail > 1 && e.preventDefault()
+                    },
+                    children: [(0, cl.jsx)(`div`, {
+                        className: al.RadioIndicatorWrapper,
+                        children: (0, cl.jsx)(kn, {
+                            id: d,
+                            value: e,
+                            disabled: l,
+                            required: r,
+                            className: al.RadioItem,
+                            children: (0, cl.jsx)(Nn, {
+                                className: al.RadioIndicator
+                            })
+                        })
+                    }), i]
+                })
+            })
+        }, dl.Item = fl
+    })),
+    ml = e((() => {
+        pl()
+    }));
+
+function hl(e) {
+    return (0, bl.jsx)(dl.Item, {
+        value: e.destination_account_id,
+        className: G.OrganizationOption,
+        block: !0,
+        children: (0, bl.jsx)(`span`, {
+            className: G.OrganizationName,
+            children: e.display_name
+        })
+    }, e.destination_account_id)
+}
+
+function gl(e) {
+    return (0, bl.jsx)(`a`, {
+        href: `https://platform.openai.com`,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        className: G.PlatformLink,
+        children: e
+    })
+}
+
+function _l(e) {
+    return (0, bl.jsx)(`a`, {
+        className: G.PlatformLink,
+        href: `https://help.openai.com/`,
+        target: `_blank`,
+        rel: `noopener noreferrer`,
+        children: e
+    })
+}
+var vl, yl, bl, xl, Sl, Cl = e((() => {
+        vl = pt(), $c(), Ei(), ml(), Ne(), yl = n(at(), 1), rt(), Co(), Ac(), hc(), bl = qe(), xl = e => {
+            "use forget";
+            let t = (0, vl.c)(42),
+                {
+                    accountId: n,
+                    state: r,
+                    className: i,
+                    portalClassName: a,
+                    placement: o,
+                    pluginUrl: s
+                } = e,
+                c = o === void 0 ? `promo` : o,
+                l = mt(),
+                u = (0, yl.useId)();
+            if (c === `linked`) {
+                let e;
+                return t[0] !== i || t[1] !== r.link || t[2] !== r.linkedBenefit || t[3] !== r.planName ? (e = r.link == null ? null : (0, bl.jsx)(Sl, {
+                    link: r.link,
+                    benefit: r.linkedBenefit,
+                    planName: r.planName,
+                    className: i
+                }), t[0] = i, t[1] = r.link, t[2] = r.linkedBenefit, t[3] = r.planName, t[4] = e) : e = t[4], e
+            }
+            let d;
+            t[5] === l ? d = t[6] : (d = l.formatMessage({
+                id: `chatgpt.api_linking_promo.organization.choose`,
+                defaultMessage: `Choose the API organization where you want to apply these credits.`
+            }), t[5] = l, t[6] = d);
+            let f = d,
+                p;
+            t[7] === f ? p = t[8] : (p = (0, bl.jsx)(`legend`, {
+                children: f
+            }), t[7] = f, t[8] = p);
+            let m = r.selectedDestination?.destination_account_id ?? ``,
+                h = !r.canSelectDestination,
+                _ = r.onSelectDestination,
+                v;
+            t[9] === r.destinations ? v = t[10] : (v = r.destinations.map(hl), t[9] = r.destinations, t[10] = v);
+            let y;
+            t[11] !== f || t[12] !== u || t[13] !== r.onSelectDestination || t[14] !== m || t[15] !== h || t[16] !== v ? (y = (0, bl.jsx)(dl, {
+                name: u,
+                "aria-label": f,
+                direction: `col`,
+                className: G.OrganizationOptions,
+                value: m,
+                disabled: h,
+                onChange: _,
+                children: v
+            }), t[11] = f, t[12] = u, t[13] = r.onSelectDestination, t[14] = m, t[15] = h, t[16] = v, t[17] = y) : y = t[17];
+            let b;
+            t[18] !== p || t[19] !== y ? (b = (0, bl.jsxs)(`fieldset`, {
+                className: G.OrganizationPicker,
+                children: [p, y]
+            }), t[18] = p, t[19] = y, t[20] = b) : b = t[20];
+            let x = b;
+            if (r.status === `ready` || r.status === `select-organization` || r.status === `linked`) {
+                let e = r.destinations.length > 1 || r.selectedDestination == null ? x : void 0,
+                    o;
+                return t[21] !== n || t[22] !== i || t[23] !== s || t[24] !== a || t[25] !== r.benefit || t[26] !== r.offer || t[27] !== r.onLink || t[28] !== e ? (o = (0, bl.jsx)(kc, {
+                    enabled: !0,
+                    accountId: n,
+                    benefit: r.benefit,
+                    offer: r.offer,
+                    onLink: r.onLink,
+                    className: i,
+                    portalClassName: a,
+                    pluginUrl: s,
+                    destinationSelector: e
+                }), t[21] = n, t[22] = i, t[23] = s, t[24] = a, t[25] = r.benefit, t[26] = r.offer, t[27] = r.onLink, t[28] = e, t[29] = o) : o = t[29], o
+            }
+            if (r.status !== `error` && r.status !== `no-organization`) return null;
+            let S;
+            t[30] === i ? S = t[31] : (S = g(G.Card, i), t[30] = i, t[31] = S);
+            let C;
+            t[32] === Symbol.for(`react.memo_cache_sentinel`) ? (C = (0, bl.jsx)(`h3`, {
+                className: G.Headline,
+                children: (0, bl.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.discovery.title`,
+                    defaultMessage: `API credits with your subscription`
+                })
+            }), t[32] = C) : C = t[32];
+            let w;
+            t[33] === r.status ? w = t[34] : (w = (0, bl.jsxs)(`div`, {
+                className: G.CardContent,
+                children: [C, r.status === `error` ? (0, bl.jsx)(`p`, {
+                    className: G.SecondaryText,
+                    role: `alert`,
+                    children: (0, bl.jsx)(W, {
+                        id: `chatgpt.api_linking_promo.discovery.error`,
+                        defaultMessage: `We couldn’t load your API credit offer. Please try again.`
+                    })
+                }) : (0, bl.jsx)(`p`, {
+                    className: G.SecondaryText,
+                    children: (0, bl.jsx)(W, {
+                        id: `chatgpt.api_linking_promo.discovery.no_organization`,
+                        defaultMessage: `Create an organization on <platformLink>platform.openai.com</platformLink>, then refresh to link it and claim your API credits.`,
+                        values: {
+                            platformLink: gl
+                        }
+                    })
+                })]
+            }), t[33] = r.status, t[34] = w);
+            let T;
+            t[35] === Symbol.for(`react.memo_cache_sentinel`) ? (T = (0, bl.jsx)(W, {
+                id: `chatgpt.api_linking_promo.discovery.refresh`,
+                defaultMessage: `Refresh`
+            }), t[35] = T) : T = t[35];
+            let E;
+            t[36] === r.onRetry ? E = t[37] : (E = (0, bl.jsx)(`div`, {
+                className: G.CardActions,
+                children: (0, bl.jsx)(na, {
+                    color: `secondary`,
+                    variant: `outline`,
+                    size: `xl`,
+                    onClick: r.onRetry,
+                    children: T
+                })
+            }), t[36] = r.onRetry, t[37] = E);
+            let D;
+            return t[38] !== S || t[39] !== w || t[40] !== E ? (D = (0, bl.jsxs)(`section`, {
+                className: S,
+                children: [w, E]
+            }), t[38] = S, t[39] = w, t[40] = E, t[41] = D) : D = t[41], D
+        }, Sl = e => {
+            "use forget";
+            let t = (0, vl.c)(28),
+                {
+                    link: n,
+                    benefit: r,
+                    planName: i,
+                    className: a
+                } = e,
+                o = mt(),
+                s = n.state === `active`,
+                c = s && r != null,
+                l = n.destination_display_name || n.destination_account_id,
+                u;
+            t[0] === a ? u = t[1] : (u = g(G.LinkedSection, a), t[0] = a, t[1] = u);
+            let d;
+            t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, bl.jsx)(`h3`, {
+                className: G.LinkedHeading,
+                children: (0, bl.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.linked.heading`,
+                    defaultMessage: `API subscription benefit`
+                })
+            }), t[2] = d) : d = t[2];
+            let f;
+            t[3] !== r || t[4] !== c || t[5] !== o || t[6] !== i ? (f = (0, bl.jsx)(`p`, {
+                className: G.LinkedTitle,
+                children: c ? (0, bl.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.linked.benefit`,
+                    defaultMessage: `{amount} in API credits {cadence, select, annual {each year} other {each month}} with {planName}`,
+                    values: {
+                        amount: So({
+                            intl: o,
+                            amount: r.periodCreditAmountMinor,
+                            currency: r.currency
+                        }),
+                        cadence: r.cadence,
+                        planName: i
+                    }
+                }) : (0, bl.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.linked.organization`,
+                    defaultMessage: `API organization`
+                })
+            }), t[3] = r, t[4] = c, t[5] = o, t[6] = i, t[7] = f) : f = t[7];
+            let p;
+            t[8] === n.destination_account_id ? p = t[9] : (p = e => (0, bl.jsx)(`a`, {
+                className: G.PlatformLink,
+                href: `https://platform.openai.com/settings/organization/billing/overview?with_org=${encodeURIComponent(n.destination_account_id)}`,
+                target: `_blank`,
+                rel: `noopener noreferrer`,
+                children: e
+            }), t[8] = n.destination_account_id, t[9] = p);
+            let m;
+            t[10] !== n.state || t[11] !== l || t[12] !== p ? (m = (0, bl.jsx)(`p`, {
+                className: G.LinkedDescription,
+                children: (0, bl.jsx)(W, {
+                    id: `chatgpt.api_linking_promo.linked.description`,
+                    defaultMessage: `Your API org “<organizationLink>{organizationName}</organizationLink>” is {state, select, active {connected} other {connecting}}. To change organizations or disconnect, <supportLink>contact support</supportLink>.`,
+                    values: {
+                        organizationName: l,
+                        state: n.state,
+                        organizationLink: p,
+                        supportLink: _l
+                    }
+                })
+            }), t[10] = n.state, t[11] = l, t[12] = p, t[13] = m) : m = t[13];
+            let h;
+            t[14] !== f || t[15] !== m ? (h = (0, bl.jsxs)(`div`, {
+                className: G.LinkedCopy,
+                children: [f, m]
+            }), t[14] = f, t[15] = m, t[16] = h) : h = t[16];
+            let _ = s ? `success` : `secondary`,
+                v = c ? `active` : s ? `connected` : `pending`,
+                y;
+            t[17] === v ? y = t[18] : (y = (0, bl.jsx)(W, {
+                id: `chatgpt.api_linking_promo.linked.status`,
+                defaultMessage: `{status, select, active {Active} connected {Connected} other {Pending}}`,
+                values: {
+                    status: v
+                }
+            }), t[17] = v, t[18] = y);
+            let b;
+            t[19] !== _ || t[20] !== y ? (b = (0, bl.jsx)(Zc, {
+                color: _,
+                children: y
+            }), t[19] = _, t[20] = y, t[21] = b) : b = t[21];
+            let x;
+            t[22] !== b || t[23] !== h ? (x = (0, bl.jsxs)(`div`, {
+                className: G.LinkedCard,
+                children: [h, b]
+            }), t[22] = b, t[23] = h, t[24] = x) : x = t[24];
+            let S;
+            return t[25] !== u || t[26] !== x ? (S = (0, bl.jsxs)(`section`, {
+                className: u,
+                children: [d, x]
+            }), t[25] = u, t[26] = x, t[27] = S) : S = t[27], S
+        }
+    })),
+    wl = e((() => {
+        Ac(), Kc(), Cl(), Bc()
+    })),
+    Tl, El, Dl, Ol, kl, Al = e((() => {
+        Tl = pt(), wl(), dt(), Gi(), p(), u(), El = qe(), Dl = {
+            readLinks: e => S.safeGet(`/product-account-links/accounts/{account_id}`, {
+                parameters: e
+            }),
+            preview: e => S.safeGet(`/product-account-links/accounts/{account_id}/benefits/{program_id}`, {
+                parameters: e
+            }),
+            discover: e => S.safeGet(`/product-account-links/discovery`, {
+                parameters: e
+            }),
+            link: e => S.safePost(`/product-account-links/accounts/{account_id}`, e)
+        }, Ol = e => {
+            "use forget";
+            let t = (0, Tl.c)(16),
+                {
+                    queries: n,
+                    children: r
+                } = e,
+                i = $e(),
+                a = tt(n.preview),
+                o = tt(n.discovery),
+                s = tt(n.links),
+                c = s.data?.links,
+                l = o.data?.destinations,
+                u = a.isPending || o.isPending || s.isPending,
+                d = a.isError || o.isError || s.isError,
+                f;
+            t[0] !== n.preview || t[1] !== i ? (f = () => i.fetchQuery(n.preview), t[0] = n.preview, t[1] = i, t[2] = f) : f = t[2];
+            let p;
+            t[3] !== o || t[4] !== s || t[5] !== a ? (p = () => Promise.all([a.refetch(), o.refetch(), s.refetch()]), t[3] = o, t[4] = s, t[5] = a, t[6] = p) : p = t[6];
+            let m;
+            return t[7] !== r || t[8] !== a.data || t[9] !== c || t[10] !== l || t[11] !== u || t[12] !== d || t[13] !== f || t[14] !== p ? (m = r({
+                links: c,
+                preview: a.data,
+                destinations: l,
+                isLoading: u,
+                isError: d,
+                refreshPreview: f,
+                refetch: p
+            }), t[7] = r, t[8] = a.data, t[9] = c, t[10] = l, t[11] = u, t[12] = d, t[13] = f, t[14] = p, t[15] = m) : m = t[15], m
+        }, kl = e => {
+            "use forget";
+            let t = (0, Tl.c)(9),
+                {
+                    accountId: n,
+                    planName: r,
+                    className: i,
+                    placement: a
+                } = e,
+                o;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = B(`3209782209`) && B(`3365903835`), t[0] = o) : o = t[0];
+            let s = o;
+            if (!s) return null;
+            let c;
+            t[1] !== n || t[2] !== i || t[3] !== a ? (c = e => (0, El.jsx)(xl, {
+                accountId: n,
+                state: e,
+                className: i,
+                placement: a
+            }), t[1] = n, t[2] = i, t[3] = a, t[4] = c) : c = t[4];
+            let l;
+            return t[5] !== n || t[6] !== r || t[7] !== c ? (l = (0, El.jsx)(Bi, {
+                children: (0, El.jsx)(Vc, {
+                    enabled: s,
+                    accountId: n,
+                    planName: r,
+                    transport: Dl,
+                    Observer: Ol,
+                    children: c
+                })
+            }), t[5] = n, t[6] = r, t[7] = c, t[8] = l) : l = t[8], l
+        }
+    })),
+    jl, Ml = e((() => {
+        jl = `payment-methods`, `${jl}`
+    })),
+    Nl, Pl, Fl, Il, Ll = e((() => {
+        Nl = pt(), Pl = n(at()), nt(), Ml(), Fl = qe(), Il = e => {
+            "use forget";
+            let t = (0, Nl.c)(8),
+                {
+                    children: n,
+                    workspaceId: r
+                } = e,
+                i = (0, Pl.useRef)(null),
+                {
+                    hash: a,
+                    key: o
+                } = Ke(),
+                s;
+            t[0] === a ? s = t[1] : (s = () => {
+                a === `#payment-methods` && i.current?.scrollIntoView({
+                    behavior: `instant`,
+                    block: `start`
+                })
+            }, t[0] = a, t[1] = s);
+            let c;
+            t[2] !== a || t[3] !== o || t[4] !== r ? (c = [a, o, r], t[2] = a, t[3] = o, t[4] = r, t[5] = c) : c = t[5], (0, Pl.useEffect)(s, c);
+            let l;
+            return t[6] === n ? l = t[7] : (l = (0, Fl.jsx)(`div`, {
+                id: jl,
+                ref: i,
+                children: n
+            }), t[6] = n, t[7] = l), l
+        }
+    }));
+
+function Rl(e) {
+    return e.type === `seat_cap`
+}
+var zl, Bl, Vl, Hl = e((() => {
+        zl = pt(), Ne(), rt(), Bl = qe(), Vl = e => {
+            "use forget";
+            let t = (0, zl.c)(16),
+                {
+                    className: n,
+                    activeBenefits: r,
+                    currency: i,
+                    standardSeatPrice: a,
+                    premiumSeatPrice: o
+                } = e,
+                s = mt();
+            if (!r?.length) return null;
+            let c;
+            t[0] === n ? c = t[1] : (c = g(`flex flex-col gap-2`, n), t[0] = n, t[1] = c);
+            let l;
+            if (t[2] !== r || t[3] !== i || t[4] !== s || t[5] !== o || t[6] !== a) {
+                let e;
+                t[8] !== i || t[9] !== s || t[10] !== o || t[11] !== a ? (e = (e, t) => (0, Bl.jsxs)(`div`, {
+                    className: `bg-token-theme-blue-background text-token-theme-blue-text-on-background flex flex-col gap-2 rounded-lg p-3 text-sm`,
+                    children: [(0, Bl.jsx)(`div`, {
+                        className: `font-medium`,
+                        children: (0, Bl.jsx)(W, {
+                            id: `organizationBillingInfo.activeBenefits.title`,
+                            defaultMessage: `Active promotion`
+                        })
+                    }), (0, Bl.jsxs)(`div`, {
+                        className: `flex flex-col gap-2`,
+                        children: [(0, Bl.jsx)(`ul`, {
+                            className: `list-disc ps-5`,
+                            children: e.benefits.map(t => {
+                                if (t.calculation.type !== `percentage_off`) return null;
+                                let n = t.limits?.find(Rl)?.max_discounted_seat_equivalents,
+                                    r = t.target.plan_name === `chatgptteamplan` ? a : t.target.plan_name === `self_serve_business_prolite` ? o : null,
+                                    c = n != null && r != null && i != null ? s.formatNumber(n * r, {
+                                        style: `currency`,
+                                        currency: i,
+                                        minimumFractionDigits: 0
+                                    }) : null;
+                                return (0, Bl.jsx)(`li`, {
+                                    children: (0, Bl.jsx)(W, {
+                                        id: `organizationBillingInfo.activeBenefits.productSummary`,
+                                        defaultMessage: `{discountPercentage} off {seatType, select, chatgptteamplan {Standard seats} self_serve_business_prolite {Premium seats} other {eligible seats}} for {durationUnit, select, invoice {one invoice} year {{numPeriods, plural, one {# year} other {# years}}} other {{numPeriods, plural, one {# month} other {# months}}}}{capType, select, amount {, up to {amount} per invoice} seats {, up to the full price of {seatCap, plural, one {# seat} other {# seats}} per invoice} other {}}.`,
+                                        values: {
+                                            discountPercentage: s.formatNumber(Number(t.calculation.rate), {
+                                                style: `percent`,
+                                                maximumFractionDigits: 20
+                                            }),
+                                            seatType: t.target.plan_name,
+                                            durationUnit: e.application.type === `one_time` ? `invoice` : e.application.billing_period,
+                                            numPeriods: e.application.type === `recurring` ? e.application.num_periods : 1,
+                                            capType: n == null ? `none` : c == null ? `seats` : `amount`,
+                                            amount: c,
+                                            seatCap: n ?? 0
+                                        }
+                                    })
+                                }, t.target.plan_name)
+                            })
+                        }), e.discount_starts_at != null && e.discount_expires_at != null ? (0, Bl.jsx)(`p`, {
+                            children: (0, Bl.jsx)(W, {
+                                id: `organizationBillingInfo.activeBenefits.dates`,
+                                defaultMessage: `Applied on {startDate}. Ends on {endDate}.`,
+                                values: {
+                                    startDate: s.formatDate(e.discount_starts_at, {
+                                        year: `numeric`,
+                                        month: `short`,
+                                        day: `numeric`
+                                    }),
+                                    endDate: s.formatDate(e.discount_expires_at, {
+                                        year: `numeric`,
+                                        month: `short`,
+                                        day: `numeric`
+                                    })
+                                }
+                            })
+                        }) : e.discount_expires_at == null ? e.discount_starts_at == null ? null : (0, Bl.jsx)(`p`, {
+                            children: (0, Bl.jsx)(W, {
+                                id: `organizationBillingInfo.activeBenefits.startDate`,
+                                defaultMessage: `Applied on {startDate}`,
+                                values: {
+                                    startDate: s.formatDate(e.discount_starts_at, {
+                                        year: `numeric`,
+                                        month: `short`,
+                                        day: `numeric`
+                                    })
+                                }
+                            })
+                        }) : (0, Bl.jsx)(`p`, {
+                            children: (0, Bl.jsx)(W, {
+                                id: `organizationBillingInfo.activeBenefits.endDate`,
+                                defaultMessage: `Ends on {endDate}`,
+                                values: {
+                                    endDate: s.formatDate(e.discount_expires_at, {
+                                        year: `numeric`,
+                                        month: `short`,
+                                        day: `numeric`
+                                    })
+                                }
+                            })
+                        }), e.will_renew === !1 && (0, Bl.jsx)(`p`, {
+                            children: (0, Bl.jsx)(W, {
+                                id: `organizationBillingInfo.activeBenefits.noAutoRenewal`,
+                                defaultMessage: `Your subscription will not renew automatically`
+                            })
+                        })]
+                    })]
+                }, t), t[8] = i, t[9] = s, t[10] = o, t[11] = a, t[12] = e) : e = t[12], l = r.map(e), t[2] = r, t[3] = i, t[4] = s, t[5] = o, t[6] = a, t[7] = l
+            } else l = t[7];
+            let u;
+            return t[13] !== c || t[14] !== l ? (u = (0, Bl.jsx)(`div`, {
+                className: c,
+                children: l
+            }), t[13] = c, t[14] = l, t[15] = u) : u = t[15], u
+        }
+    })),
+    Ul, Wl = e((() => {
+        ke(), lt(), Ul = V(() => st(() => import(`./b6317585-f0lv7axkzcox4lsn.js`).then(e => e.BusinessPremiumSeatChangeBillingScheduleModal), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))), V(() => st(() => import(`./b6317585-f0lv7axkzcox4lsn.js`).then(e => e.BusinessPremiumSeatChangeBillingScheduleDialog), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])))
+    }));
+
+function Gl(e) {
+    "use forget";
+    let t = (0, Yl.c)(2),
+        n;
+    return t[0] === e ? n = t[1] : (n = _i(e.accountId) ? (0, Zl.jsx)(Ul, {
+        ...e
+    }) : (0, Zl.jsx)(Kl, {
+        ...e
+    }), t[0] = e, t[1] = n), n
+}
+
+function Kl({
+    onClose: e,
+    currentTeamBillingType: t,
+    initialTeamBillingType: n,
+    isNonProfit: r,
+    usesCurrentNonProfitPricing: i = r,
+    preselectedTeamBillingType: a,
+    renewalDate: o,
+    accountId: s,
+    billingDetails: c
+}) {
+    "use no forget";
+    let [l, u] = (0, Xl.useState)(a ?? n), [d, f] = (0, Xl.useState)(!1), [p, h] = (0, Xl.useState)(!1), g = mt(), _ = m(), v = yt(s), {
+        data: y,
+        isLoading: b,
+        error: x
+    } = E({
+        countryCode: c.country,
+        currency: c.currency
+    }), S = null, C = null, w = null;
+    if (!b && y && x == null) {
+        let e = la(c.currency, y, !1, r),
+            n = i === r ? e : la(c.currency, y, !1, i);
+        C = t === U.FLEXIBLE ? n.flexibleBillingPlan : e.flexibleBillingPlan, w = t === U.ANNUAL ? n.annualBillingPlan : e.annualBillingPlan, S = l === U.FLEXIBLE ? e.flexibleBillingPlan : e.annualBillingPlan
+    }
+    let T = async () => {
+        h(!0);
+        try {
+            await v.mutateAsync({
+                accountId: s,
+                updatedPriceInterval: l === U.FLEXIBLE ? `month` : `year`,
+                updatedSeats: void 0
+            });
+            let t = l === U.FLEXIBLE ? `monthly` : `annual`,
+                r = g.formatDate(o, {
+                    year: `numeric`,
+                    month: `long`,
+                    day: `numeric`
+                });
+            _.success(g.formatMessage({
+                id: `teamBilling.successfullyUpdatedSubscriptionFrequency`,
+                defaultMessage: `Your plan will change to {updatedBillingFrequency} on {renewalDate}`
+            }, {
+                updatedBillingFrequency: t,
+                renewalDate: r
+            }), {
+                hasCloseButton: !0
+            });
+            let i = `chatgpt_teams_billing_schedule_changed`,
+                a = I.logStructuredEvent(`ChatgptBusinessBillingScheduleChanged`, {
+                    previousBillingSchedule: n === U.ANNUAL ? `CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_YEAR` : `CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_MONTH`,
+                    newBillingSchedule: l === U.ANNUAL ? `CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_YEAR` : `CHATGPT_WEB_SUBSCRIPTION_BILLING_INTERVAL_MONTH`,
+                    surface: `admin billing page: billing schedule modal`,
+                    legacyStatsigEventName: i
+                });
+            Ve(i, l, {
+                previous_billing_schedule: n,
+                new_billing_schedule: l,
+                surface: `admin billing page: billing schedule modal`,
+                ...a ? {
+                    unique_event_id: a
+                } : {}
+            }), f(!1), e()
+        } catch {
+            _.warning(g.formatMessage({
+                id: `teamBilling.errorUpdatingSubscription`,
+                defaultMessage: `There was a problem updating your subscription`
+            }), {
+                hasCloseButton: !0
+            })
+        } finally {
+            h(!1)
+        }
+    }, D = () => {
+        f(!1), u(a ?? n), e()
+    };
+    return (0, Zl.jsx)(O, {
+        testId: `modal-legacy-teams-change-billing-schedule`,
+        type: `success`,
+        isOpen: !0,
+        onClose: D,
+        size: `custom`,
+        className: `max-w-xl`,
+        noPadding: !0,
+        title: d ? g.formatMessage({
+            id: `teamBilling.changeBillingScheduleConfirmTitle`,
+            defaultMessage: `Confirm changes`
+        }) : g.formatMessage({
+            id: `teamBilling.changeBillingScheduleTitle`,
+            defaultMessage: `Change billing schedule`
+        }),
+        showCloseButton: !0,
+        children: b || x != null || !y || !S || !C || !w ? (0, Zl.jsx)(`div`, {
+            className: `flex items-center justify-center p-6`,
+            children: (0, Zl.jsx)(ee, {})
+        }) : d ? (0, Zl.jsx)(Jl, {
+            selectedPlan: l,
+            initialTeamBillingType: n,
+            renewalDate: o,
+            handleUpdate: T,
+            isUpdating: p,
+            selectedBillingPlan: S,
+            onClose: D
+        }) : (0, Zl.jsx)(ql, {
+            setSelectedPlan: u,
+            selectedPlan: l,
+            initialTeamBillingType: n,
+            setConfirmPage: f,
+            renewalDate: o,
+            flexibleBillingPlan: C,
+            annualBillingPlan: w,
+            onClose: D
+        })
+    })
+}
+
+function ql(e) {
+    "use forget";
+    let t = (0, Yl.c)(40),
+        {
+            selectedPlan: n,
+            setSelectedPlan: r,
+            initialTeamBillingType: i,
+            setConfirmPage: a,
+            renewalDate: o,
+            flexibleBillingPlan: s,
+            annualBillingPlan: l,
+            onClose: u
+        } = e,
+        d = mt(),
+        f;
+    t[0] !== n || t[1] !== r ? (f = e => {
+        Fi(e) && (Ve(`chatgpt_billing_schedule_modal_plan_selected`, e, {
+            previous_plan: n
+        }), r(e))
+    }, t[0] = n, t[1] = r, t[2] = f) : f = t[2];
+    let p;
+    t[3] !== s || t[4] !== n ? (p = (0, Zl.jsx)(Qa, {
+        billingType: U.FLEXIBLE,
+        ...s,
+        selectedValue: n
+    }), t[3] = s, t[4] = n, t[5] = p) : p = t[5];
+    let m;
+    t[6] !== l || t[7] !== n ? (m = (0, Zl.jsx)(Qa, {
+        billingType: U.ANNUAL,
+        ...l,
+        selectedValue: n
+    }), t[6] = l, t[7] = n, t[8] = m) : m = t[8];
+    let h;
+    t[9] !== n || t[10] !== f || t[11] !== p || t[12] !== m ? (h = (0, Zl.jsx)(`div`, {
+        className: `grid grid-flow-row grid-cols-2`,
+        children: (0, Zl.jsxs)(Vn, {
+            className: `col-span-2 grid gap-4 md:col-span-2 md:grid-cols-2`,
+            defaultValue: n,
+            onValueChange: f,
+            children: [p, m]
+        })
+    }), t[9] = n, t[10] = f, t[11] = p, t[12] = m, t[13] = h) : h = t[13];
+    let g;
+    t[14] === o ? g = t[15] : (g = (0, Zl.jsx)(`span`, {
+        className: `text-token-text-secondary mt-5 text-sm`,
+        children: (0, Zl.jsx)(W, {
+            ...Jr.changeEffectDate,
+            values: {
+                date: (0, Zl.jsx)(it, {
+                    value: o,
+                    year: `numeric`,
+                    month: `long`,
+                    day: `numeric`
+                })
+            }
+        })
+    }), t[14] = o, t[15] = g);
+    let _;
+    t[16] === d ? _ = t[17] : (_ = d.formatMessage(Jr.cancel), t[16] = d, t[17] = _);
+    let v;
+    t[18] === u ? v = t[19] : (v = () => {
+        Ve(`chatgpt_billing_schedule_modal_cancel_clicked`), u()
+    }, t[18] = u, t[19] = v);
+    let y;
+    t[20] !== _ || t[21] !== v ? (y = (0, Zl.jsx)(c, {
+        title: _,
+        color: `secondary`,
+        onClick: v
+    }), t[20] = _, t[21] = v, t[22] = y) : y = t[22];
+    let b;
+    t[23] === d ? b = t[24] : (b = d.formatMessage(Jr.continueToPricePreview), t[23] = d, t[24] = b);
+    let x = n === i,
+        S;
+    t[25] !== i || t[26] !== n || t[27] !== a ? (S = () => {
+        Ve(`chatgpt_billing_schedule_modal_continue_clicked`, n, {
+            previous_plan: i
+        }), a(!0)
+    }, t[25] = i, t[26] = n, t[27] = a, t[28] = S) : S = t[28];
+    let C;
+    t[29] !== x || t[30] !== S || t[31] !== b ? (C = (0, Zl.jsx)(c, {
+        title: b,
+        disabled: x,
+        color: `primary`,
+        onClick: S
+    }), t[29] = x, t[30] = S, t[31] = b, t[32] = C) : C = t[32];
+    let w;
+    t[33] !== C || t[34] !== y ? (w = (0, Zl.jsxs)(`div`, {
+        className: `mt-6 flex items-center justify-end gap-2`,
+        children: [y, C]
+    }), t[33] = C, t[34] = y, t[35] = w) : w = t[35];
+    let T;
+    return t[36] !== w || t[37] !== h || t[38] !== g ? (T = (0, Zl.jsxs)(`div`, {
+        className: `flex flex-col p-6`,
+        children: [h, g, w]
+    }), t[36] = w, t[37] = h, t[38] = g, t[39] = T) : T = t[39], T
+}
+
+function Jl({
+    initialTeamBillingType: e,
+    selectedPlan: t,
+    renewalDate: n,
+    handleUpdate: r,
+    isUpdating: i,
+    selectedBillingPlan: a,
+    onClose: o
+}) {
+    "use no forget";
+    let s = mt();
+    return (0, Zl.jsxs)(`div`, {
+        className: `p-4`,
+        children: [(0, Zl.jsx)(`span`, {
+            className: `text-sm`,
+            children: (0, Zl.jsx)(W, {
+                ...Jr.confirmPageChangeEffectDate,
+                values: {
+                    current_plan: e === U.FLEXIBLE ? `Flexible (monthly)` : `Annual`,
+                    new_plan: t === U.FLEXIBLE ? `Flexible (monthly)` : `Annual`,
+                    date: (0, Zl.jsx)(it, {
+                        value: n,
+                        year: `numeric`,
+                        month: `long`,
+                        day: `numeric`
+                    })
+                }
+            })
+        }), (0, Zl.jsxs)(`div`, {
+            className: `bg-token-main-surface-secondary mt-4 flex flex-col rounded-xl p-4`,
+            children: [(0, Zl.jsx)(`span`, {
+                className: `font-semibold`,
+                children: (0, Zl.jsx)(W, {
+                    ...a.name
+                })
+            }), (0, Zl.jsx)(`span`, {
+                className: `text-sm`,
+                children: (0, Zl.jsx)(W, {
+                    ...a.cost,
+                    values: {
+                        monthlyCost: a.monthlyCost,
+                        discountedMonthlyCost: a.discountedMonthlyCost,
+                        currencyCode: s.formatMessage(a.currencyCode),
+                        currencySign: s.formatMessage(a.currencySign),
+                        s: (...e) => (0, Zl.jsx)(_a, {
+                            children: e
+                        })
+                    }
+                })
+            }), (0, Zl.jsx)(`span`, {
+                className: `text-token-text-secondary text-sm`,
+                children: (0, Zl.jsx)(W, {
+                    ...a.costStructure
+                })
+            })]
+        }), (0, Zl.jsxs)(`div`, {
+            className: `mt-4 flex justify-end gap-2`,
+            children: [(0, Zl.jsx)(c, {
+                title: s.formatMessage(Jr.cancel),
+                color: `secondary`,
+                onClick: () => {
+                    Ve(`chatgpt_billing_schedule_modal_cancel_clicked`), o()
+                }
+            }), (0, Zl.jsx)(c, {
+                title: s.formatMessage(Jr.confirmChange),
+                color: `primary`,
+                onClick: r,
+                loading: i
+            })]
+        })]
+    })
+}
+var Yl, Xl, Zl, Ql = e((() => {
+    Yl = pt(), ci(), Wl(), Ht(), F(), s(), no(), Ge(), y(), d(), _(), u(), gn(), Xl = n(at()), rt(), Zl = qe()
+}));
+
+function $l(e) {
+    if (e != null) return e === `monthly` ? U.FLEXIBLE : U.ANNUAL
+}
+
+function eu(e) {
+    return $l(e?.scheduled_billing_period)
+}
+
+function tu(e) {
+    return eu(e) ?? $l(e?.billing_period)
+}
+
+function nu({
+    annualSavingsPercent: e,
+    subscription: t
+}) {
+    return eu(t) == null && $l(t?.billing_period) === U.FLEXIBLE && e != null && e > 0
+}
+var ru = e((() => {
+        Ql()
+    })),
+    iu, au = e((() => {
+        ke(), lt(), iu = V(() => st(() => import(`./d917179d-dolmf4aly5k2twym.js`).then(e => e.BusinessPremiumSeatPendingBillingScheduleConfirmationModal), __vite__mapDeps([14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]))), V(() => st(() => import(`./d917179d-dolmf4aly5k2twym.js`).then(e => e.BusinessPremiumSeatPendingBillingScheduleConfirmationDialog), __vite__mapDeps([14, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13])))
+    }));
+
+function ou(e) {
+    "use forget";
+    let t = (0, cu.c)(17),
+        {
+            annualSavingsAmount: n,
+            billingCurrency: r,
+            onKeepAnnualBilling: a,
+            renewalDate: o
+        } = e,
+        s = mt(),
+        c;
+    t[0] !== n || t[1] !== r || t[2] !== s ? (c = n != null && n > 0 && r != null ? kt({
+        amount: n,
+        currency: r,
+        intl: s
+    }) : null, t[0] = n, t[1] = r, t[2] = s, t[3] = c) : c = t[3];
+    let l = c,
+        u;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, lu.jsx)(Le, {
+        "aria-hidden": !0,
+        className: `icon-lg shrink-0`
+    }), t[4] = u) : u = t[4];
+    let d;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, lu.jsx)(`p`, {
+        className: `text-sm leading-[22px] font-semibold`,
+        children: (0, lu.jsx)(W, {
+            ...uu.scheduledMonthlyBillingNoticeTitle
+        })
+    }), t[5] = d) : d = t[5];
+    let f = l == null ? uu.scheduledMonthlyBillingNoticeDescriptionWithoutAmount : uu.scheduledMonthlyBillingNoticeDescription,
+        p;
+    t[6] !== l || t[7] !== o ? (p = l == null ? {
+        renewalDate: o
+    } : {
+        amount: l,
+        renewalDate: o
+    }, t[6] = l, t[7] = o, t[8] = p) : p = t[8];
+    let m;
+    t[9] !== f || t[10] !== p ? (m = (0, lu.jsxs)(`div`, {
+        className: `flex min-w-0 grow flex-col gap-px`,
+        children: [d, (0, lu.jsx)(`p`, {
+            className: `text-[16px] leading-6`,
+            children: (0, lu.jsx)(W, {
+                ...f,
+                values: p
+            })
+        })]
+    }), t[9] = f, t[10] = p, t[11] = m) : m = t[11];
+    let h;
+    t[12] === a ? h = t[13] : (h = a != null && (0, lu.jsx)(i, {
+        className: `shrink-0`,
+        color: `primary`,
+        onClick: a,
+        size: `small`,
+        type: `button`,
+        children: (0, lu.jsx)(W, {
+            ...uu.keepAnnualBilling
+        })
+    }), t[12] = a, t[13] = h);
+    let g;
+    return t[14] !== m || t[15] !== h ? (g = (0, lu.jsxs)(`div`, {
+        className: `border-token-border-status-warning bg-token-bg-status-warning text-token-text-status-warning flex items-center gap-3 rounded-xl border px-4 py-4`,
+        children: [u, m, h]
+    }), t[14] = m, t[15] = h, t[16] = g) : g = t[16], g
+}
+
+function su(e) {
+    "use forget";
+    let t = (0, cu.c)(7),
+        {
+            onKeepMonthlyBilling: n,
+            renewalDate: r
+        } = e,
+        i;
+    t[0] === r ? i = t[1] : (i = (0, lu.jsx)(`span`, {
+        className: `text-token-text-tertiary text-xs leading-[18px] font-semibold`,
+        children: (0, lu.jsx)(W, {
+            ...uu.scheduledAnnualBillingFooter,
+            values: {
+                renewalDate: r
+            }
+        })
+    }), t[0] = r, t[1] = i);
+    let a;
+    t[2] === n ? a = t[3] : (a = n != null && (0, lu.jsx)(`button`, {
+        className: `interactive-button text-token-text-primary shrink-0 text-sm leading-[22px] font-medium underline underline-offset-2`,
+        onClick: n,
+        type: `button`,
+        children: (0, lu.jsx)(W, {
+            ...uu.keepMonthlyBilling
+        })
+    }), t[2] = n, t[3] = a);
+    let o;
+    return t[4] !== i || t[5] !== a ? (o = (0, lu.jsxs)(`div`, {
+        className: `bg-token-bg-tertiary flex items-center justify-between gap-4 px-6 py-2`,
+        children: [i, a]
+    }), t[4] = i, t[5] = a, t[6] = o) : o = t[6], o
+}
+var cu, lu, uu, du = e((() => {
+    cu = pt(), pe(), Ta(), Ae(), rt(), lu = qe(), uu = Qe({
+        scheduledAnnualBillingFooter: {
+            id: `organizationBillingInfo.billingSchedule.pendingAnnual.footer`,
+            defaultMessage: `You will be billed annually starting {renewalDate, date, long}`
+        },
+        keepMonthlyBilling: {
+            id: `organizationBillingInfo.billingSchedule.pendingAnnual.keepMonthly.button`,
+            defaultMessage: `Keep monthly billing`
+        },
+        scheduledMonthlyBillingNoticeTitle: {
+            id: `organizationBillingInfo.billingSchedule.pendingMonthly.notice.title`,
+            defaultMessage: `Your plan is scheduled to change to monthly billing`
+        },
+        scheduledMonthlyBillingNoticeDescription: {
+            id: `organizationBillingInfo.billingSchedule.pendingMonthly.notice.description.withAmount`,
+            defaultMessage: `You will be billed monthly starting {renewalDate, date, long}. This will increase your bill by {amount} per year.`
+        },
+        scheduledMonthlyBillingNoticeDescriptionWithoutAmount: {
+            id: `organizationBillingInfo.billingSchedule.pendingMonthly.notice.description.withoutAmount`,
+            defaultMessage: `You will be billed monthly starting {renewalDate, date, long}.`
+        },
+        keepAnnualBilling: {
+            id: `organizationBillingInfo.billingSchedule.pendingMonthly.keepAnnual.button`,
+            defaultMessage: `Keep annual billing`
+        }
+    })
+}));
+
+function fu(e) {
+    return e.find(e => e.isPersonalAccount() && !e.isDeactivated()) ?? null
+}
+async function pu(e) {
+    let t = Ue();
+    await e.refetchQueries({
+        queryKey: t.queryKey
+    }, {
+        throwOnError: !0
+    });
+    let n = e.getQueryData(t.queryKey),
+        r = n == null ? null : fu(v(n));
+    if (r == null) throw Error(`Unable to find an active personal account for Business to Plus checkout`);
+    return r
+}
+
+function mu(e) {
+    return !e.hasPaidSubscription()
+}
+
+function hu(e, t) {
+    return `tag` in e && (e.tag === `custom_checkout_session` || e.tag === `hosted_checkout_session`) && e.promo_campaign?.promo_campaign_id === t
+}
+async function gu({
+    navigateToCheckout: e,
+    onCheckoutReady: t,
+    onNavigationFailure: n
+}) {
+    t?.();
+    try {
+        await e()
+    } catch (e) {
+        throw n(), e
+    }
+}
+async function _u({
+    businessAccountId: e,
+    personalAccountId: t,
+    queryClient: n,
+    startCheckout: r,
+    selectAccount: i = Ee
+}) {
+    let {
+        updatedAccount: a
+    } = await i(n, t, !1);
+    if (!a) throw Error(`Unable to select personal account for Business to Plus checkout`);
+    let o = await r().then(e => ({
+            status: `success`,
+            result: e
+        }), e => ({
+            status: `error`,
+            error: e
+        })),
+        {
+            updatedAccount: s
+        } = await i(n, e);
+    if (!s) throw Error(`Unable to restore Business account after Plus checkout preparation`);
+    if (o.status === `error`) throw o.error;
+    return o.result
+}
+var vu = e((() => {
+    Me()
+}));
+
+function yu(e) {
+    "use forget";
+    let t = (0, bu.c)(28),
+        {
+            creditsPolicy: n,
+            workspaceId: r,
+            canManagePaymentMethod: i
+        } = e,
+        a = Ke(),
+        o = et(),
+        [s, c] = (0, xu.useState)(!1),
+        l;
+    t[0] === a.search ? l = t[1] : (l = Xt(new URLSearchParams(a.search).get(Ut)), t[0] = a.search, t[1] = l);
+    let u = l,
+        d = n?.kind === `business` ? n : void 0,
+        f = d?.can_purchase_credits === !0,
+        p = d?.can_manage_auto_reload === !0,
+        m = r != null && u === `add_credits` && f,
+        h = r != null && u === `auto_recharge` && p,
+        g = m || h,
+        _ = h || s,
+        v;
+    t[2] !== i || t[3] !== _ || t[4] !== r ? (v = _ && r != null && i && mn(), t[2] = i, t[3] = _, t[4] = r, t[5] = v) : v = t[5];
+    let y = v,
+        b;
+    t[6] !== y || t[7] !== _ ? (b = {
+        enabled: _,
+        includePaymentMethod: y
+    }, t[6] = y, t[7] = _, t[8] = b) : b = t[8];
+    let x = jn(b),
+        S, C;
+    t[9] !== u || t[10] !== x.data || t[11] !== g || t[12] !== a.hash || t[13] !== a.pathname || t[14] !== a.search || t[15] !== a.state || t[16] !== o ? (S = () => {
+        if (u == null || !g) return;
+        if (u === `add_credits`) {
+            let e = new URLSearchParams(a.search).get(Et);
+            Un(gt, {
+                analyticsSurface: rn.find(t => t === e)
+            })
+        } else {
+            if (x.data == null) return;
+            c(!0)
+        }
+        let e = new URLSearchParams(a.search);
+        e.delete(Ut), e.delete(Et);
+        let t = e.toString();
+        o({
+            pathname: a.pathname,
+            search: t ? `?${t}` : ``,
+            hash: a.hash
+        }, {
+            replace: !0,
+            state: a.state
+        })
+    }, C = [u, x.data, g, a.hash, a.pathname, a.search, a.state, o], t[9] = u, t[10] = x.data, t[11] = g, t[12] = a.hash, t[13] = a.pathname, t[14] = a.search, t[15] = a.state, t[16] = o, t[17] = S, t[18] = C) : (S = t[17], C = t[18]), (0, xu.useEffect)(S, C);
+    let w;
+    t[19] === r ? w = t[20] : (w = () => {
+        li(r)
+    }, t[19] = r, t[20] = w);
+    let T;
+    t[21] !== a.search || t[22] !== r ? (T = [r, a.search], t[21] = a.search, t[22] = r, t[23] = T) : T = t[23], (0, xu.useEffect)(w, T);
+    let E;
+    return t[24] !== x.data || t[25] !== i || t[26] !== s ? (E = s && x.data != null ? (0, Su.jsx)(an, {
+        open: s,
+        serverState: x.data,
+        analyticsSurface: `credit_interruption_banner`,
+        accountScope: `workspace`,
+        canManagePaymentMethod: i,
+        onOpenChange: c
+    }, wn(x.data)) : null, t[24] = x.data, t[25] = i, t[26] = s, t[27] = E) : E = t[27], E
+}
+var bu, xu, Su, Cu = e((() => {
+    bu = pt(), vi(), Bt(), nr(), Lt(), fn(), Jn(), Mt(), xn(), xu = n(at()), nt(), Cn(), Su = qe()
+}));
+
+function wu(e) {
+    return e.startsWith(Tu) ? e : `${Tu}${e}`
+}
+var Tu, Eu = e((() => {
+        Tu = `﻿`
+    })),
+    Du, Ou = e((() => {
+        rt(), Du = Qe({
+            buttonText: {
+                id: `organizationBillingInfo.creditUsageSettings.downloadUsageReportButton.buttonText`,
+                defaultMessage: `Download usage data`
+            },
+            buttonDescription: {
+                id: `organizationBillingInfo.creditUsageSettings.downloadUsageReportButton.buttonDescription`,
+                defaultMessage: `Updated {date, date}`
+            },
+            filename: {
+                id: `organizationBillingInfo.creditUsageSettings.downloadUsageReportButton.filename`,
+                defaultMessage: `{workspaceName} Credit Usage Report ({startDate} - {endDate}).csv`
+            }
+        })
+    }));
+
+function ku({
+    cycle: e,
+    onClose: t,
+    workspaceId: n,
+    workspaceName: r
+}) {
+    "use no forget";
+    let a = mt(),
+        [o, s] = (0, Pu.useState)(!1),
+        [c, l] = (0, Pu.useState)(null),
+        u = Au({
+            customDateRange: c,
+            cycle: e
+        }),
+        d = cs({
+            customDateRange: c,
+            fallbackLabel: a.formatMessage(Iu.customRangeButton),
+            intl: a
+        });
+    return (0, Fu.jsx)(O, {
+        testId: `modal-billing-usage-export`,
+        isOpen: !0,
+        onClose: t,
+        type: `success`,
+        title: (0, Fu.jsx)(W, {
+            ...Iu.title
+        }),
+        hideSeparator: !0,
+        showCloseButton: !0,
+        footerClassName: `px-6 pb-6 pt-5`,
+        primaryButton: (0, Fu.jsx)(i, {
+            className: `min-w-[120px]`,
+            loading: o,
+            onClick: async () => {
+                s(!0);
+                try {
+                    await ju({
+                        intl: a,
+                        selectedRange: u,
+                        workspaceId: n,
+                        workspaceName: r
+                    })
+                } finally {
+                    s(!1)
+                }
+                t()
+            },
+            children: (0, Fu.jsx)(W, {
+                ...Iu.generateCsvButton
+            })
+        }),
+        children: (0, Fu.jsxs)(`div`, {
+            className: `px-6 pb-6`,
+            children: [(0, Fu.jsx)(`div`, {
+                className: `mb-2 font-medium`,
+                children: (0, Fu.jsx)(W, {
+                    ...Iu.dateRangeLabel
+                })
+            }), (0, Fu.jsxs)(`div`, {
+                role: `group`,
+                "aria-label": a.formatMessage(Iu.dateRangeOptionsAriaLabel),
+                className: `text-token-text-tertiary inline-flex items-center rounded-full bg-[#e8e8e8] p-0.5 text-xs font-semibold dark:bg-[#393939]`,
+                children: [(0, Fu.jsx)(ds, {
+                    isSelected: c == null,
+                    onClick: () => l(null),
+                    children: (0, Fu.jsx)(W, {
+                        ...Iu.currentCycleButton
+                    })
+                }), (0, Fu.jsx)(ps, {
+                    isSelected: c != null,
+                    onRangeSelected: l,
+                    selectedRange: c,
+                    trigger: (0, Fu.jsx)(ds, {
+                        isSelected: c != null,
+                        children: d
+                    })
+                })]
+            }), (0, Fu.jsx)(`div`, {
+                className: `text-token-text-tertiary mt-3 text-sm`,
+                children: (0, Fu.jsx)(W, {
+                    ...Iu.selectedRangeSummary,
+                    values: {
+                        end: a.formatDate(u.displayEnd, {
+                            day: `numeric`,
+                            month: `short`,
+                            year: `numeric`
+                        }),
+                        start: a.formatDate(u.displayStart, {
+                            day: `numeric`,
+                            month: `short`,
+                            year: `numeric`
+                        })
+                    }
+                })
+            })]
+        })
+    })
+}
+
+function Au({
+    customDateRange: e,
+    cycle: t
+}) {
+    return e == null ? {
+        displayEnd: t.end,
+        displayStart: t.start,
+        requestEnd: t.end,
+        requestStart: t.start,
+        selection: `billingCycle`
+    } : {
+        displayEnd: e.endDate,
+        displayStart: e.startDate,
+        requestEnd: ir(e.endDate, 1),
+        requestStart: e.startDate,
+        selection: `custom`
+    }
+}
+async function ju({
+    intl: e,
+    selectedRange: t,
+    workspaceId: n,
+    workspaceName: r
+}) {
+    let i = Nu(t.requestStart, t.selection),
+        a = Nu(t.requestEnd, t.selection);
+    I.logEventWithStatsig(`ChatGPT Credits: Download Usage Report Clicked`, `chatgpt_credits_download_usage_report_clicked`, {
+        dateRangeSelection: t.selection,
+        endDate: a,
+        startDate: i,
+        workspaceId: n,
+        workspaceName: r
+    }), ls({
+        data: wu((await S.safeGet(`/subscriptions/{workspace_id}/usage/export`, {
+            parameters: {
+                path: {
+                    workspace_id: n
+                },
+                query: {
+                    end_date: a,
+                    start_date: i
+                }
+            }
+        })).csv_content ?? `No results for the given date range`),
+        filename: e.formatMessage(Du.filename, {
+            endDate: Mu(t.displayEnd),
+            startDate: Mu(t.displayStart),
+            workspaceName: r
+        }),
+        mimeType: `text/csv`
+    }), I.logEventWithStatsig(`ChatGPT Credits: Download Usage Report Complete`, `chatgpt_credits_download_usage_report_complete`, {
+        dateRangeSelection: t.selection,
+        workspaceId: n,
+        workspaceName: r
+    })
+}
+
+function Mu(e) {
+    return qt(e, `MMM d, yyyy`)
+}
+
+function Nu(e, t) {
+    return t === `custom` ? qt(e, `yyyy-MM-dd`) : e.toISOString()
+}
+var Pu, Fu, Iu, Lu = e((() => {
+    ms(), gs(), ss(), pe(), s(), _(), us(), p(), dn(), Pu = n(at()), rt(), Eu(), Ou(), Fu = qe(), Iu = Qe({
+        title: {
+            id: `organizationBillingInfo.creditUsageSettings.exportModal.title`,
+            defaultMessage: `Export usage data`
+        },
+        dateRangeLabel: {
+            id: `organizationBillingInfo.creditUsageSettings.exportModal.dateRangeLabel`,
+            defaultMessage: `Date range`
+        },
+        dateRangeOptionsAriaLabel: {
+            id: `organizationBillingInfo.creditUsageSettings.exportModal.dateRangeOptionsAriaLabel`,
+            defaultMessage: `Usage export date range options`
+        },
+        currentCycleButton: {
+            id: `organizationBillingInfo.creditUsageSettings.exportModal.currentCycleButton`,
+            defaultMessage: `Current billing cycle`
+        },
+        customRangeButton: {
+            id: `organizationBillingInfo.creditUsageSettings.exportModal.customRangeButton`,
+            defaultMessage: `Custom`
+        },
+        selectedRangeSummary: {
+            id: `organizationBillingInfo.creditUsageSettings.exportModal.selectedRangeSummary`,
+            defaultMessage: `Selected range: {start} - {end}`
+        },
+        generateCsvButton: {
+            id: `organizationBillingInfo.creditUsageSettings.exportModal.generateCsvButton`,
+            defaultMessage: `Generate CSV`
+        }
+    })
+}));
+
+function Ru({
+    cycle: e,
+    mostRecentExportResult: t
+}) {
+    "use no forget";
+    let n = Oe(),
+        r = !n?.id;
+    return (0, Vu.jsx)(In.Item, {
+        onClick: () => {
+            n?.id && fe(ku, {
+                cycle: e,
+                workspaceId: n.id,
+                workspaceName: n.name ?? `Workspace`
+            })
+        },
+        disabled: r,
+        secondary: t && (0, Vu.jsx)(W, {
+            ...Du.buttonDescription,
+            values: {
+                date: new Date(t)
+            }
+        }),
+        label: (0, Vu.jsx)(W, {
+            ...Du.buttonText
+        }),
+        icon: vr
+    })
+}
+
+function zu() {
+    "use no forget";
+    let e = mt(),
+        t = Oe(),
+        [n, r] = (0, Bu.useState)(!1);
+    return {
+        disabled: !t?.id,
+        downloadUsageReport: async n => {
+            if (t?.id) {
+                I.logEventWithStatsig(`ChatGPT Credits: Download Usage Report Clicked`, `chatgpt_credits_download_usage_report_clicked`, {
+                    workspaceId: t.id,
+                    workspaceName: t.name,
+                    startDate: n.start.toISOString(),
+                    endDate: n.end.toISOString()
+                }), r(!0);
+                try {
+                    ls({
+                        data: wu((await S.safeGet(`/subscriptions/{workspace_id}/usage/export`, {
+                            parameters: {
+                                path: {
+                                    workspace_id: t.id
+                                },
+                                query: {
+                                    start_date: n.start.toISOString(),
+                                    end_date: n.end.toISOString()
+                                }
+                            }
+                        })).csv_content ?? `No results for the given date range`),
+                        mimeType: `text/csv`,
+                        filename: e.formatMessage(Du.filename, {
+                            workspaceName: t.name ?? `Workspace`,
+                            startDate: qt(n.start, `MMM d, yyyy`),
+                            endDate: qt(n.end, `MMM d, yyyy`)
+                        })
+                    }), I.logEventWithStatsig(`ChatGPT Credits: Download Usage Report Complete`, `chatgpt_credits_download_usage_report_complete`, {
+                        workspaceId: t.id,
+                        workspaceName: t.name
+                    })
+                } finally {
+                    r(!1)
+                }
+            }
+        },
+        generating: n
+    }
+}
+var Bu, Vu, Hu = e((() => {
+    Vt(), lr(), le(), Me(), _(), us(), p(), dn(), Bu = n(at()), rt(), Lu(), Eu(), Ou(), Vu = qe()
+}));
+
+function Uu(e, {
+    toastId: t = `chatgpt.workspaceBilling.defaultErrorToastId`,
+    message: n
+} = {}) {
+    return fs(async (...t) => await e(...t), {
+        toastId: t,
+        message: n
+    })
+}
+var Wu = e((() => {
+    hs()
+}));
+
+function Gu() {
+    let e = te(Ju).get(Yu, null);
+    return qu(e) ? e : null
+}
+
+function Ku(e) {
+    return Xu[e]
+}
+
+function qu(e) {
+    return typeof e == `string` && Object.hasOwn(Xu, e)
+}
+var Ju, Yu, Xu, Zu = e((() => {
+    u(), rt(), Ju = `1486404729`, Yu = `copy_variant`, Xu = Qe({
+        spend_safety: {
+            id: `autoTopOff.inlineCopy.spendSafety`,
+            defaultMessage: `Automatically add credits when your balance runs low, up to a monthly limit you set.`
+        },
+        prevention: {
+            id: `autoTopOff.inlineCopy.prevention`,
+            defaultMessage: `Automatically add credits when your balance runs low`
+        }
+    })
+}));
+
+function Qu(e) {
+    return [`workspace-subscription-settings`, e]
+}
+
+function $u(e) {
+    "use forget";
+    let t = (0, rd.c)(212),
+        {
+            canManagePaymentMethod: n
+        } = e,
+        r = mt(),
+        [a, o] = (0, id.useState)(!1),
+        s = We(),
+        c = $e(),
+        l = Oe(),
+        {
+            country: u
+        } = Qt(),
+        d = Yr(),
+        [f, p] = (0, id.useState)(null),
+        m = (0, id.useRef)(!1),
+        h = l?.id,
+        g = l?.organizationId,
+        _ = h != null,
+        v;
+    t[0] !== _ || t[1] !== h ? (v = {
+        activeWorkspaceId: h,
+        enabled: _
+    }, t[0] = _, t[1] = h, t[2] = v) : v = t[2];
+    let {
+        creditsConfig: y
+    } = Xn(v), b;
+    t[3] === y ? b = t[4] : (b = ln(y), t[3] = y, t[4] = b);
+    let x = b,
+        C = x?.kind === `business` ? x : void 0,
+        w = C?.can_view_credit_balance === !0 && h != null && g != null,
+        T = C?.can_manage_auto_reload === !0,
+        D = T,
+        O;
+    t[5] !== T || t[6] !== n || t[7] !== w || t[8] !== h ? (O = w && T && h != null && n && mn(), t[5] = T, t[6] = n, t[7] = w, t[8] = h, t[9] = O) : O = t[9];
+    let k = O,
+        A;
+    t[10] === l ? A = t[11] : (A = l?.isSelfServeBusiness(), t[10] = l, t[11] = A);
+    let j = A === !0,
+        M;
+    t[12] !== u || t[13] !== l || t[14] !== j ? (M = {
+        country: u,
+        currentAccount: l,
+        location: `BusinessCreditBalanceSection`,
+        pricingPlanIsTypeBusiness: j
+    }, t[12] = u, t[13] = l, t[14] = j, t[15] = M) : M = t[15];
+    let ee = St(M),
+        te = ee?.currency,
+        N = w && ee != null,
+        P;
+    t[16] !== u || t[17] !== te || t[18] !== N ? (P = {
+        countryCode: u,
+        currency: te,
+        enabled: N
+    }, t[16] = u, t[17] = te, t[18] = N, t[19] = P) : P = t[19];
+    let {
+        data: ne
+    } = E(P), re;
+    t[20] === w ? re = t[21] : (re = {
+        enabled: w
+    }, t[20] = w, t[21] = re);
+    let F = Ot(h, re),
+        I;
+    t[22] !== T || t[23] !== k || t[24] !== w ? (I = w && T && (B(od) || k), t[22] = T, t[23] = k, t[24] = w, t[25] = I) : I = t[25];
+    let ie = I,
+        L;
+    t[26] !== ie || t[27] !== w ? (L = {
+        enabled: w,
+        includePaymentMethod: ie
+    }, t[26] = ie, t[27] = w, t[28] = L) : L = t[28];
+    let R = jn(L),
+        z = h ?? `workspace`,
+        ae = w && !!C?.can_purchase_credits,
+        oe;
+    t[29] !== z || t[30] !== ae ? (oe = Dn({
+        accountKey: z,
+        enabled: ae
+    }), t[29] = z, t[30] = ae, t[31] = oe) : oe = t[31];
+    let V = tt(oe),
+        H = R.data,
+        se, ce;
+    t[32] !== H || t[33] !== w ? (se = () => {
+        m.current || !w || H == null || (m.current = !0, hn({
+            autoTopOffServerState: H,
+            analyticsSurface: `business_credit_balance`
+        }))
+    }, ce = [H, w], t[32] = H, t[33] = w, t[34] = se, t[35] = ce) : (se = t[34], ce = t[35]), (0, id.useEffect)(se, ce);
+    let le;
+    t[36] === Symbol.for(`react.memo_cache_sentinel`) ? (le = {
+        analyticsSurface: `business_credit_balance`,
+        accountScope: `workspace`
+    }, t[36] = le) : le = t[36];
+    let {
+        disableAutoTopOffMutation: ue
+    } = Bn(le), de;
+    t[37] === g ? de = t[38] : (de = Qu(g), t[37] = g, t[38] = de);
+    let pe;
+    t[39] !== g || t[40] !== w ? (pe = async () => {
+        if (!w) throw Error(`Query not enabled`);
+        return await S.safeGet(`/subscriptions/{organization_id}/settings`, {
+            parameters: {
+                path: {
+                    organization_id: g
+                }
+            }
+        })
+    }, t[39] = g, t[40] = w, t[41] = pe) : pe = t[41];
+    let me;
+    t[42] !== w || t[43] !== de || t[44] !== pe ? (me = {
+        queryKey: de,
+        queryFn: pe,
+        enabled: w
+    }, t[42] = w, t[43] = de, t[44] = pe, t[45] = me) : me = t[45];
+    let he = tt(me),
+        ge;
+    t[46] === h ? ge = t[47] : (ge = [`usage-export-data-freshness`, h], t[46] = h, t[47] = ge);
+    let _e;
+    t[48] !== w || t[49] !== h ? (_e = () => {
+        if (!w) throw Error(`Query not enabled`);
+        return S.safeGet(`/subscriptions/{workspace_id}/usage/export_data_freshness`, {
+            parameters: {
+                path: {
+                    workspace_id: h
+                }
+            }
+        })
+    }, t[48] = w, t[49] = h, t[50] = _e) : _e = t[50];
+    let ve = Uu(_e),
+        ye;
+    t[51] !== w || t[52] !== ge || t[53] !== ve ? (ye = {
+        queryKey: ge,
+        queryFn: ve,
+        enabled: w
+    }, t[51] = w, t[52] = ge, t[53] = ve, t[54] = ye) : ye = t[54];
+    let be = tt(ye),
+        xe;
+    t[55] === g ? xe = t[56] : (xe = async e => {
+        let {
+            recipients: t,
+            thresholds: n
+        } = e;
+        if (!g) throw Error(`Organization id is required`);
+        await S.safePost(`/subscriptions/{organization_id}/settings/alerts`, {
+            parameters: {
+                path: {
+                    organization_id: g
+                }
+            },
+            requestBody: {
+                alert_recipients: t,
+                alert_thresholds: n
+            }
+        })
+    }, t[55] = g, t[56] = xe);
+    let Se;
+    t[57] !== g || t[58] !== c ? (Se = async () => {
+        await c.invalidateQueries({
+            queryKey: Qu(g)
+        })
+    }, t[57] = g, t[58] = c, t[59] = Se) : Se = t[59];
+    let Ce;
+    t[60] !== xe || t[61] !== Se ? (Ce = {
+        mutationFn: xe,
+        onSuccess: Se
+    }, t[60] = xe, t[61] = Se, t[62] = Ce) : Ce = t[62];
+    let we = ut(Ce);
+    if (!w || C == null) return null;
+    let U, Te, Ee, De, ke, Ae, je, Me, Ne, Pe, Fe, Ie, Le, Re, ze, Be, Ve, He, Ue, Ge;
+    if (t[63] !== H || t[64] !== R.data?.isEnabled || t[65] !== R.isLoading || t[66] !== T || t[67] !== ne || t[68] !== V.data?.auto_reload?.tiers || t[69] !== V.data?.one_time.tiers || t[70] !== V.isLoading || t[71] !== C.can_manage_usage_alert_thresholds || t[72] !== C.can_purchase_credits || t[73] !== C.show_monetary_credit_balance || t[74] !== ue || t[75] !== r || t[76] !== D || t[77] !== F.data || t[78] !== F.isPending || t[79] !== he || t[80] !== s || t[81] !== we) {
+        let e = Fn(F.data),
+            n = Zn(e),
+            i = F.isPending,
+            a = Tn(F.data),
+            o = Zn(a?.amount ?? 0),
+            c = Math.round(o),
+            l = ne == null ? null : Kt({
+                amountMinorUnits: Yt({
+                    totalRemainingCredits: e,
+                    checkoutPricingConfig: ne
+                }),
+                currency: ne.currencyConfig.symbol_code
+            });
+        De = R.data?.isEnabled ?? !1;
+        let u = V.data?.one_time.tiers,
+            d;
+        t[102] === u ? d = t[103] : (d = $r(u), t[102] = u, t[103] = d), Pe = d;
+        let f = V.data?.auto_reload?.tiers,
+            m;
+        t[104] === f ? m = t[105] : (m = $r(f), t[104] = f, t[105] = m), Ee = m, Ie = C.can_purchase_credits && T && H?.isEnabled === !1 && Ee != null, Le = C.can_purchase_credits && Pe != null && !Ie;
+        let h = D && H?.isEnabled === !1,
+            g;
+        if (t[106] !== H?.rechargeTarget || t[107] !== H?.rechargeThreshold || t[108] !== De || t[109] !== V.isLoading || t[110] !== r || t[111] !== h || t[112] !== Ie || t[113] !== Le) {
+            let e = h ? Gu() : null;
+            Fe = e != null && !V.isLoading && !Le && !Ie, g = td({
+                copyVariant: e,
+                intl: r,
+                isEnabled: De,
+                rechargeTarget: H?.rechargeTarget,
+                rechargeThreshold: H?.rechargeThreshold
+            }), t[106] = H?.rechargeTarget, t[107] = H?.rechargeThreshold, t[108] = De, t[109] = V.isLoading, t[110] = r, t[111] = h, t[112] = Ie, t[113] = Le, t[114] = Fe, t[115] = g
+        } else Fe = t[114], g = t[115];
+        Te = g, ke = C.can_manage_usage_alert_thresholds, Ne = !T, Me = Ne || R.isLoading || ue.isPending;
+        let _;
+        t[116] !== ke || t[117] !== he || t[118] !== we ? (_ = () => {
+            ke && fe(ad, {
+                isEnterprisey: !1,
+                canManageRecipients: !1,
+                canManageThresholds: ke,
+                onSaveRecipients: async e => {
+                    await we.mutateAsync({
+                        recipients: e
+                    })
+                },
+                onSaveThresholds: async e => {
+                    await we.mutateAsync({
+                        thresholds: e
+                    })
+                },
+                recipients: he.data?.alert_recipients ?? [],
+                thresholds: he.data?.alert_thresholds ?? []
+            })
+        }, t[116] = ke, t[117] = he, t[118] = we, t[119] = _) : _ = t[119], je = _;
+        let v;
+        t[120] !== H || t[121] !== R.isLoading || t[122] !== T || t[123] !== ue || t[124] !== r || t[125] !== s ? (v = async e => {
+            if (!(!T || R.isLoading || ue.isPending)) {
+                if (e) {
+                    p(`settings`);
+                    return
+                }
+                if (H?.autoReloadCreditDiscountPolicy != null && H.autoReloadCreditDiscountPolicy !== `none`) {
+                    p(`disable-confirmation`);
+                    return
+                }
+                try {
+                    await ue.mutateAsync(), s.success(r.formatMessage(sd.autoRechargeDisabled), {
+                        hasCloseButton: !0
+                    })
+                } catch {
+                    s.warning(r.formatMessage(sd.autoRechargeDisableError), {
+                        hasCloseButton: !0
+                    })
+                }
+            }
+        }, t[120] = H, t[121] = R.isLoading, t[122] = T, t[123] = ue, t[124] = r, t[125] = s, t[126] = v) : v = t[126], Ae = v, U = fi, Ge = `border-token-border-default bg-token-bg-primary gap-0 rounded-xl border`, Ue = `flex items-start justify-between gap-4 p-6`, Be = `min-w-0`, t[127] === Symbol.for(`react.memo_cache_sentinel`) ? (Ve = (0, q.jsx)(`div`, {
+            className: `text-token-text-primary text-[20px] leading-[25px] font-normal`,
+            children: (0, q.jsx)(W, {
+                ...sd.title
+            })
+        }), t[127] = Ve) : Ve = t[127], He = !i && a != null && c > 0 && Wn(a.expiryDate) ? (0, q.jsx)(`div`, {
+            className: `text-token-text-secondary mt-1 text-sm`,
+            children: (0, q.jsx)(W, {
+                ...sd.expiringCreditsSummary,
+                values: {
+                    expiringCredits: c,
+                    expiryDate: r.formatDate(a.expiryDate, {
+                        month: `long`,
+                        day: `numeric`
+                    })
+                }
+            })
+        }) : null, Re = `mt-5 flex items-end gap-3`, ze = i ? (0, q.jsxs)(q.Fragment, {
+            children: [(0, q.jsx)(`div`, {
+                className: `loading-results-shimmer h-12 w-[80px] rounded-sm`
+            }), (0, q.jsx)(`div`, {
+                className: `loading-results-shimmer mb-1 h-5 w-[72px] rounded-sm`
+            })]
+        }) : (0, q.jsxs)(q.Fragment, {
+            children: [(0, q.jsx)(`div`, {
+                className: `text-token-text-primary text-5xl leading-none font-medium tracking-[-1.5px]`,
+                children: r.formatNumber(n, {
+                    style: `decimal`,
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                })
+            }), C.show_monetary_credit_balance && l != null ? (0, q.jsx)(`div`, {
+                className: `text-token-text-secondary pb-1 text-sm`,
+                children: (0, q.jsx)(W, {
+                    ...sd.balanceAmount,
+                    values: {
+                        amount: l
+                    }
+                })
+            }) : null]
+        }), t[63] = H, t[64] = R.data?.isEnabled, t[65] = R.isLoading, t[66] = T, t[67] = ne, t[68] = V.data?.auto_reload?.tiers, t[69] = V.data?.one_time.tiers, t[70] = V.isLoading, t[71] = C.can_manage_usage_alert_thresholds, t[72] = C.can_purchase_credits, t[73] = C.show_monetary_credit_balance, t[74] = ue, t[75] = r, t[76] = D, t[77] = F.data, t[78] = F.isPending, t[79] = he, t[80] = s, t[81] = we, t[82] = U, t[83] = Te, t[84] = Ee, t[85] = De, t[86] = ke, t[87] = Ae, t[88] = je, t[89] = Me, t[90] = Ne, t[91] = Pe, t[92] = Fe, t[93] = Ie, t[94] = Le, t[95] = Re, t[96] = ze, t[97] = Be, t[98] = Ve, t[99] = He, t[100] = Ue, t[101] = Ge
+    } else U = t[82], Te = t[83], Ee = t[84], De = t[85], ke = t[86], Ae = t[87], je = t[88], Me = t[89], Ne = t[90], Pe = t[91], Fe = t[92], Ie = t[93], Le = t[94], Re = t[95], ze = t[96], Be = t[97], Ve = t[98], He = t[99], Ue = t[100], Ge = t[101];
+    let Ke;
+    t[128] !== Re || t[129] !== ze ? (Ke = (0, q.jsx)(`div`, {
+        className: Re,
+        children: ze
+    }), t[128] = Re, t[129] = ze, t[130] = Ke) : Ke = t[130];
+    let qe;
+    t[131] === F.isError ? qe = t[132] : (qe = F.isError ? (0, q.jsx)(Br, {
+        className: `text-token-text-secondary mt-3`,
+        children: (0, q.jsx)(W, {
+            ...sd.balanceLoadError
+        })
+    }) : null, t[131] = F.isError, t[132] = qe);
+    let Je;
+    t[133] !== Be || t[134] !== Ve || t[135] !== He || t[136] !== Ke || t[137] !== qe ? (Je = (0, q.jsxs)(`div`, {
+        className: Be,
+        children: [Ve, He, Ke, qe]
+    }), t[133] = Be, t[134] = Ve, t[135] = He, t[136] = Ke, t[137] = qe, t[138] = Je) : Je = t[138];
+    let Ye = Le ? `flex flex-wrap items-center justify-end gap-2` : `flex gap-1`,
+        Xe;
+    t[139] !== C.can_purchase_credits || t[140] !== a || t[141] !== Pe || t[142] !== Le ? (Xe = C.can_purchase_credits ? (0, q.jsxs)(q.Fragment, {
+        children: [Le && Pe != null ? (0, q.jsx)(Ea, {
+            discountPercent: Pe
+        }) : null, (0, q.jsx)(i, {
+            color: `secondary`,
+            className: `shrink-0`,
+            loading: a,
+            onClick: () => {
+                Un(gt, {
+                    analyticsSurface: `business_credit_balance`,
+                    checkoutOriginProvenance: {
+                        checkoutOriginProductExperience: Pt.WORK,
+                        checkoutOriginDeliverySurface: `web`
+                    },
+                    onCustomCheckoutEnd: () => o(!1),
+                    onCustomCheckoutStart: () => o(!0)
+                })
+            },
+            children: (0, q.jsx)(W, {
+                ...sd.addCreditsButton
+            })
+        })]
+    }) : null, t[139] = C.can_purchase_credits, t[140] = a, t[141] = Pe, t[142] = Le, t[143] = Xe) : Xe = t[143];
+    let Ze;
+    t[144] === Symbol.for(`react.memo_cache_sentinel`) ? (Ze = (0, q.jsx)(In.Trigger, {
+        className: `px-2`,
+        children: (0, q.jsx)(gr, {
+            className: `icon-lg`
+        })
+    }), t[144] = Ze) : Ze = t[144];
+    let Qe;
+    t[145] !== C.can_download_usage_report || t[146] !== d || t[147] !== be ? (Qe = C.can_download_usage_report && d !== `pending` ? (0, q.jsx)(Ru, {
+        cycle: d,
+        mostRecentExportResult: be.data?.most_recent_result
+    }) : null, t[145] = C.can_download_usage_report, t[146] = d, t[147] = be, t[148] = Qe) : Qe = t[148];
+    let et;
+    t[149] === Qe ? et = t[150] : (et = (0, q.jsxs)(In.Root, {
+        children: [Ze, (0, q.jsx)(In.Portal, {
+            children: (0, q.jsx)(In.Content, {
+                size: `small`,
+                align: `end`,
+                children: Qe
+            })
+        })]
+    }), t[149] = Qe, t[150] = et);
+    let nt;
+    t[151] !== Ye || t[152] !== Xe || t[153] !== et ? (nt = (0, q.jsxs)(`div`, {
+        className: Ye,
+        children: [Xe, et]
+    }), t[151] = Ye, t[152] = Xe, t[153] = et, t[154] = nt) : nt = t[154];
+    let rt;
+    t[155] !== Ue || t[156] !== Je || t[157] !== nt ? (rt = (0, q.jsxs)(`div`, {
+        className: Ue,
+        children: [Je, nt]
+    }), t[155] = Ue, t[156] = Je, t[157] = nt, t[158] = rt) : rt = t[158];
+    let it;
+    t[159] === r ? it = t[160] : (it = r.formatMessage(sd.autoRechargeLabel), t[159] = r, t[160] = it);
+    let at;
+    t[161] !== Ee || t[162] !== Fe || t[163] !== Ie ? (at = Ie && Ee != null ? (0, q.jsx)(Ea, {
+        discountPercent: Ee
+    }) : Fe ? (0, q.jsx)(Di, {
+        children: (0, q.jsx)(W, {
+            ...sd.autoRechargeRecommended
+        })
+    }) : void 0, t[161] = Ee, t[162] = Fe, t[163] = Ie, t[164] = at) : at = t[164];
+    let ot;
+    t[165] !== De || t[166] !== r ? (ot = De ? {
+        label: r.formatMessage(sd.manageButton),
+        onClick: () => {
+            p(`settings`)
+        },
+        variant: `link`
+    } : void 0, t[165] = De, t[166] = r, t[167] = ot) : ot = t[167];
+    let st;
+    t[168] === Ae ? st = t[169] : (st = e => {
+        Ae(e)
+    }, t[168] = Ae, t[169] = st);
+    let ct;
+    t[170] !== Te || t[171] !== De || t[172] !== Me || t[173] !== Ne || t[174] !== it || t[175] !== at || t[176] !== ot || t[177] !== st ? (ct = (0, q.jsx)(ed, {
+        checked: De,
+        disabled: Me,
+        label: it,
+        labelBadge: at,
+        description: Te,
+        manageButton: ot,
+        showOwnerDisabledTooltip: Ne,
+        onCheckedChange: st
+    }), t[170] = Te, t[171] = De, t[172] = Me, t[173] = Ne, t[174] = it, t[175] = at, t[176] = ot, t[177] = st, t[178] = ct) : ct = t[178];
+    let lt;
+    t[179] !== H || t[180] !== R.isLoading ? (lt = !R.isLoading && H?.isEnabled ? (0, q.jsx)(Jo, {
+        autoTopOffServerState: H,
+        analyticsSurface: `business_credit_balance`,
+        onManageMonthlyLimit: () => p(`settings`),
+        className: `mb-8`
+    }) : null, t[179] = H, t[180] = R.isLoading, t[181] = lt) : lt = t[181];
+    let dt;
+    t[182] !== ct || t[183] !== lt ? (dt = (0, q.jsxs)(`div`, {
+        children: [ct, lt]
+    }), t[182] = ct, t[183] = lt, t[184] = dt) : dt = t[184];
+    let ft;
+    t[185] === r ? ft = t[186] : (ft = r.formatMessage(sd.usageAlertsLabel), t[185] = r, t[186] = ft);
+    let pt;
+    t[187] === r ? pt = t[188] : (pt = r.formatMessage(sd.manageButton), t[187] = r, t[188] = pt);
+    let ht = !ke || he.isLoading || we.isPending,
+        _t;
+    t[189] !== je || t[190] !== pt || t[191] !== ht ? (_t = {
+        label: pt,
+        onClick: je,
+        disabled: ht,
+        variant: `button`
+    }, t[189] = je, t[190] = pt, t[191] = ht, t[192] = _t) : _t = t[192];
+    let vt = !ke,
+        yt;
+    t[193] !== ft || t[194] !== _t || t[195] !== vt ? (yt = (0, q.jsx)(ed, {
+        disabled: !1,
+        label: ft,
+        manageButton: _t,
+        showOwnerDisabledTooltip: vt,
+        manageButtonTooltipTestId: `usage-alerts-owner-disabled-tooltip-trigger`
+    }), t[193] = ft, t[194] = _t, t[195] = vt, t[196] = yt) : yt = t[196];
+    let bt;
+    t[197] !== dt || t[198] !== yt ? (bt = (0, q.jsxs)(`div`, {
+        className: `border-token-border-default divide-token-border-default divide-y px-6`,
+        children: [dt, yt]
+    }), t[197] = dt, t[198] = yt, t[199] = bt) : bt = t[199];
+    let xt;
+    t[200] !== U || t[201] !== Ge || t[202] !== rt || t[203] !== bt ? (xt = (0, q.jsxs)(U, {
+        className: Ge,
+        children: [rt, bt]
+    }), t[200] = U, t[201] = Ge, t[202] = rt, t[203] = bt, t[204] = xt) : xt = t[204];
+    let Ct;
+    t[205] !== f || t[206] !== H || t[207] !== n ? (Ct = f != null && H ? (0, q.jsx)(an, {
+        open: !0,
+        serverState: H,
+        analyticsSurface: `business_credit_balance`,
+        accountScope: `workspace`,
+        canManagePaymentMethod: n,
+        initialView: f,
+        onOpenChange: e => {
+            e || p(null)
+        }
+    }, wn(H)) : null, t[205] = f, t[206] = H, t[207] = n, t[208] = Ct) : Ct = t[208];
+    let wt;
+    return t[209] !== xt || t[210] !== Ct ? (wt = (0, q.jsxs)(q.Fragment, {
+        children: [xt, Ct]
+    }), t[209] = xt, t[210] = Ct, t[211] = wt) : wt = t[211], wt
+}
+
+function ed(e) {
+    "use forget";
+    let t = (0, rd.c)(30),
+        {
+            checked: n,
+            disabled: r,
+            label: a,
+            labelBadge: o,
+            description: s,
+            manageButton: c,
+            showOwnerDisabledTooltip: l,
+            manageButtonTooltipTestId: u,
+            onCheckedChange: d
+        } = e,
+        f;
+    t[0] === l ? f = t[1] : (f = (e, t) => (0, q.jsx)(os, {
+        disabled: l === !0,
+        testId: t,
+        children: e
+    }), t[0] = l, t[1] = f);
+    let p = f,
+        m;
+    t[2] === a ? m = t[3] : (m = (0, q.jsx)(`div`, {
+        className: `text-token-text-primary text-base`,
+        children: a
+    }), t[2] = a, t[3] = m);
+    let h;
+    t[4] !== o || t[5] !== m ? (h = (0, q.jsxs)(`div`, {
+        className: `flex min-w-0 items-center gap-2`,
+        children: [m, o]
+    }), t[4] = o, t[5] = m, t[6] = h) : h = t[6];
+    let g;
+    t[7] === s ? g = t[8] : (g = s == null ? null : (0, q.jsx)(Br, {
+        className: `text-token-text-secondary mt-1`,
+        children: s
+    }), t[7] = s, t[8] = g);
+    let _;
+    t[9] !== h || t[10] !== g ? (_ = (0, q.jsxs)(`div`, {
+        className: `min-w-0 flex-1`,
+        children: [h, g]
+    }), t[9] = h, t[10] = g, t[11] = _) : _ = t[11];
+    let v;
+    t[12] !== r || t[13] !== c || t[14] !== u || t[15] !== p ? (v = c?.variant === `link` ? p((0, q.jsx)(`button`, {
+        type: `button`,
+        className: `text-token-text-primary text-sm font-medium underline underline-offset-2 transition hover:no-underline disabled:cursor-not-allowed disabled:opacity-50`,
+        disabled: c.disabled ?? r,
+        onClick: c.onClick,
+        children: c.label
+    })) : c?.variant === `button` ? p((0, q.jsx)(i, {
+        type: `button`,
+        color: `secondary`,
+        size: `medium`,
+        className: `min-w-[74px]`,
+        disabled: c.disabled ?? r,
+        onClick: c.onClick,
+        children: c.label
+    }), u) : null, t[12] = r, t[13] = c, t[14] = u, t[15] = p, t[16] = v) : v = t[16];
+    let y;
+    t[17] !== n || t[18] !== r || t[19] !== a || t[20] !== d || t[21] !== p || t[22] !== l ? (y = d != null && n != null ? p((0, q.jsx)(be, {
+        "aria-label": a,
+        checked: n,
+        className: l === !0 ? `disabled:opacity-100!` : void 0,
+        disabled: r,
+        onCheckedChange: d
+    }), `automatic-recharge-owner-disabled-tooltip-trigger`) : null, t[17] = n, t[18] = r, t[19] = a, t[20] = d, t[21] = p, t[22] = l, t[23] = y) : y = t[23];
+    let b;
+    t[24] !== v || t[25] !== y ? (b = (0, q.jsxs)(`div`, {
+        className: `flex items-center gap-3`,
+        children: [v, y]
+    }), t[24] = v, t[25] = y, t[26] = b) : b = t[26];
+    let x;
+    return t[27] !== _ || t[28] !== b ? (x = (0, q.jsxs)(`div`, {
+        className: `flex items-center justify-between gap-4 py-4`,
+        children: [_, b]
+    }), t[27] = _, t[28] = b, t[29] = x) : x = t[29], x
+}
+
+function td({
+    copyVariant: e,
+    intl: t,
+    isEnabled: n,
+    rechargeTarget: r,
+    rechargeThreshold: i
+}) {
+    if (!n) return e == null ? null : t.formatMessage(Ku(e));
+    let a = nd(r),
+        o = nd(i);
+    return a == null || o == null ? null : t.formatMessage(sd.autoRechargeDetail, {
+        target: t.formatNumber(a),
+        threshold: t.formatNumber(o)
+    })
+}
+
+function nd(e) {
+    if (e == null) return null;
+    let t = Number.parseInt(e, 10);
+    return Number.isFinite(t) ? t : null
+}
+var rd, id, q, ad, od, sd, cd = e((() => {
+    rd = pt(), en(), Ii(), rr(), Hu(), Jt(), Wu(), Gt(), qa(), pe(), nr(), Mn(), Vt(), fr(), le(), H(), Zt(), Me(), y(), d(), p(), u(), On(), Zu(), fn(), Jn(), Mt(), xn(), qo(), Ur(), Zr(), ke(), dt(), id = n(at()), rt(), as(), Cn(), q = qe(), lt(), ad = V(() => st(() => import(`./99e0f7e1-d963p6goimga1tp9.js`).then(e => e.ManageAlertsModal), __vite__mapDeps([15, 1, 2, 3, 4, 5, 6, 7, 8, 9, 16, 17]))), od = `3713711303`, sd = Qe({
+        title: {
+            id: `organizationBillingInfo.creditBalance.title`,
+            defaultMessage: `Credits balance`
+        },
+        addCreditsButton: {
+            id: `organizationBillingInfo.creditBalance.addCreditsButton`,
+            defaultMessage: `Add credits`
+        },
+        autoRechargeLabel: {
+            id: `organizationBillingInfo.creditBalance.autoRechargeLabel`,
+            defaultMessage: `Automatic reload`
+        },
+        autoRechargeDetail: {
+            id: `organizationBillingInfo.creditBalance.autoRechargeDetail`,
+            defaultMessage: `Top up to {target} when balance reaches {threshold}`
+        },
+        autoRechargeRecommended: {
+            id: `organizationBillingInfo.creditBalance.autoRechargeRecommended`,
+            defaultMessage: `Recommended`
+        },
+        usageAlertsLabel: {
+            id: `organizationBillingInfo.creditBalance.usageAlertsLabel`,
+            defaultMessage: `Usage alerts`
+        },
+        manageButton: {
+            id: `organizationBillingInfo.creditBalance.manageButton`,
+            defaultMessage: `Manage`
+        },
+        balanceLoadError: {
+            id: `organizationBillingInfo.creditBalance.balanceLoadError`,
+            defaultMessage: `Unable to load the current credits balance.`
+        },
+        balanceAmount: {
+            id: `organizationBillingInfo.creditBalance.balanceAmount`,
+            defaultMessage: `/ {amount}`
+        },
+        expiringCreditsSummary: {
+            id: `organizationBillingInfo.creditBalance.expiringCreditsSummary`,
+            defaultMessage: `{expiringCredits, plural, one {# credit expiring on {expiryDate}} other {# credits expiring on {expiryDate}}}`
+        },
+        autoRechargeDisabled: {
+            id: `organizationBillingInfo.creditBalance.autoRechargeDisabledToast`,
+            defaultMessage: `Automatic reload turned off.`
+        },
+        autoRechargeDisableError: {
+            id: `organizationBillingInfo.creditBalance.autoRechargeDisableErrorToast`,
+            defaultMessage: `Unable to turn off automatic reload.`
+        }
+    })
+}));
+
+function ld({
+    isPremiumSeatFeatureEnabled: e,
+    seatTypes: t
+}) {
+    return (e && t.includes(dd) ? [ud, dd, fd] : [fd, ud]).filter(e => t.includes(e))
+}
+var ud, dd, fd, pd = e((() => {
+    ud = `default`, dd = `prolite`, fd = `usage_based`
+}));
+
+function md({
+    seatType: e,
+    seatTypeCreditLimits: t
+}) {
+    return bt(t?.[e])
+}
+
+function hd({
+    allowedSeatTypes: e,
+    nextLimit: t,
+    preservableSeatTypes: n = e,
+    seatType: r,
+    seatTypeCreditLimits: i
+}) {
+    if (!e.includes(r)) throw Error(`Cannot update monthly usage limit for disallowed seat type: ${r}`);
+    let a = new Set(e);
+    n.includes(Ed) && i?.[Ed] != null && a.add(Ed);
+    let o = {};
+    for (let e of a) o[e] = e === r ? gd(t) : i?.[e] ?? [];
+    return {
+        seat_type_credit_limits: o
+    }
+}
+
+function gd(e) {
+    return e == null ? [] : [{
+        limit: e,
+        enforcement_mode: `HARD_CAP`
+    }]
+}
+
+function _d(e) {
+    "use forget";
+    let t = (0, Sd.c)(46),
+        {
+            canManageSeatTypeLimits: n,
+            canViewMemberOverridesEntrypoint: r,
+            minimumLimitBySeatType: a,
+            seatTypes: o,
+            workspaceId: s
+        } = e,
+        c = mt(),
+        l = We(),
+        u = $e(),
+        d = et(),
+        [f, p] = (0, Cd.useState)(null),
+        m = ld({
+            isPremiumSeatFeatureEnabled: _i(s),
+            seatTypes: o
+        }),
+        h = n,
+        g = r,
+        _ = m.length === 1 && m[0] === Td,
+        v = m.includes(Ed),
+        y = me(s != null && m.length > 0 ? s : void 0, vd),
+        b;
+    t[0] !== u || t[1] !== s ? (b = async e => {
+        u.setQueryData([`workspace-settings`, s], e), await u.invalidateQueries({
+            queryKey: [`workspace-settings`, s]
+        })
+    }, t[0] = u, t[1] = s, t[2] = b) : b = t[2];
+    let x = ut({
+        mutationFn: async e => {
+            let {
+                limit: t,
+                seatType: n
+            } = e;
+            if (!s) throw Error(`Workspace id is required`);
+            return await S.safePost(`/accounts/{account_id}/settings/seat_type_credit_limits`, {
+                parameters: {
+                    path: {
+                        account_id: s
+                    }
+                },
+                requestBody: hd({
+                    allowedSeatTypes: m,
+                    nextLimit: t,
+                    preservableSeatTypes: o,
+                    seatType: n,
+                    seatTypeCreditLimits: y.data
+                })
+            })
+        },
+        onSuccess: b
+    });
+    if (s == null || m.length === 0 && !g) return null;
+    let C;
+    t[3] === y.data ? C = t[4] : (C = md({
+        seatType: Td,
+        seatTypeCreditLimits: y.data
+    }), t[3] = y.data, t[4] = C);
+    let w = C,
+        T;
+    t[5] === y.data ? T = t[6] : (T = md({
+        seatType: Dd,
+        seatTypeCreditLimits: y.data
+    }), t[5] = y.data, t[6] = T);
+    let E = T,
+        D;
+    t[7] === y.data ? D = t[8] : (D = md({
+        seatType: Ed,
+        seatTypeCreditLimits: y.data
+    }), t[7] = y.data, t[8] = D);
+    let O = D,
+        k;
+    t[9] !== c || t[10] !== y.error?.message ? (k = y.error?.message.trim() || c.formatMessage(Od.settingsLoadError), t[9] = c, t[10] = y.error?.message, t[11] = k) : k = t[11];
+    let A = k,
+        j;
+    t[12] !== f || t[13] !== c || t[14] !== l || t[15] !== x ? (j = async e => {
+        if (f != null) try {
+            await x.mutateAsync({
+                limit: e,
+                seatType: f
+            }), l.success(c.formatMessage(Od.saveSuccess), {
+                hasCloseButton: !0
+            }), p(null)
+        } catch {
+            l.warning(c.formatMessage(Od.saveError), {
+                hasCloseButton: !0
+            })
+        }
+    }, t[12] = f, t[13] = c, t[14] = l, t[15] = x, t[16] = j) : j = t[16];
+    let M = j,
+        ee = f === Td ? w : f === Ed ? O : f === Dd ? E : null,
+        te = f == null ? 0 : a?.[f] ?? +(f === Dd),
+        N = fi,
+        P;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (P = (0, wd.jsx)(`div`, {
+        className: `text-token-text-primary text-xl leading-6 font-normal`,
+        children: (0, wd.jsx)(W, {
+            ...Od.title
+        })
+    }), t[17] = P) : P = t[17];
+    let ne = _ ? Od.singleSeatDescription : Od.description,
+        re;
+    t[18] === ne ? re = t[19] : (re = (0, wd.jsx)(Br, {
+        className: `text-token-text-secondary mt-1`,
+        children: (0, wd.jsx)(W, {
+            ...ne
+        })
+    }), t[18] = ne, t[19] = re);
+    let F;
+    t[20] !== y.isError || t[21] !== A ? (F = y.isError ? (0, wd.jsx)(Br, {
+        className: `text-token-text-status-warning mt-2`,
+        children: A
+    }) : null, t[20] = y.isError, t[21] = A, t[22] = F) : F = t[22];
+    let I;
+    t[23] !== re || t[24] !== F ? (I = (0, wd.jsxs)(`div`, {
+        className: `p-6`,
+        children: [P, re, F]
+    }), t[23] = re, t[24] = F, t[25] = I) : I = t[25];
+    let ie = m.map(e => (0, wd.jsx)(yd, {
+            canManageSeatTypeLimits: h,
+            isSaving: x.isPending,
+            seatTypeCreditLimitsQuery: y,
+            seatType: e,
+            useGenericLabel: _,
+            usePremiumSeatTypeLabels: v,
+            onClick: () => p(e)
+        }, e)),
+        L;
+    t[26] !== g || t[27] !== c || t[28] !== d ? (L = g ? (0, wd.jsxs)(`div`, {
+        className: `flex items-center justify-between gap-4 py-4`,
+        children: [(0, wd.jsxs)(`div`, {
+            className: `min-w-0`,
+            children: [(0, wd.jsx)(`div`, {
+                className: `text-token-text-primary text-base`,
+                children: (0, wd.jsx)(W, {
+                    ...Od.perUserOverrideLabel
+                })
+            }), (0, wd.jsx)(Br, {
+                className: `text-token-text-secondary mt-1`,
+                children: (0, wd.jsx)(W, {
+                    ...Od.perUserOverrideDescription
+                })
+            })]
+        }), (0, wd.jsx)(i, {
+            color: `secondary`,
+            size: `medium`,
+            type: `button`,
+            className: `min-w-[74px]`,
+            label: c.formatMessage(Od.perUserOverrideButtonLabel),
+            onClick: () => {
+                d(`/admin/billing/manage_member_usage_limit`)
+            },
+            children: (0, wd.jsx)(W, {
+                ...Od.manageButton
+            })
+        })]
+    }) : null, t[26] = g, t[27] = c, t[28] = d, t[29] = L) : L = t[29];
+    let R;
+    t[30] !== ie || t[31] !== L ? (R = (0, wd.jsxs)(`div`, {
+        className: `border-token-border-default divide-token-border-default divide-y px-6`,
+        children: [ie, L]
+    }), t[30] = ie, t[31] = L, t[32] = R) : R = t[32];
+    let z;
+    t[33] !== N || t[34] !== I || t[35] !== R ? (z = (0, wd.jsxs)(N, {
+        className: `border-token-border-default bg-token-bg-primary gap-0 rounded-xl border`,
+        children: [I, R]
+    }), t[33] = N, t[34] = I, t[35] = R, t[36] = z) : z = t[36];
+    let ae;
+    t[37] !== ee || t[38] !== te || t[39] !== f || t[40] !== M || t[41] !== c ? (ae = f == null ? null : (0, wd.jsx)(ns, {
+        currentLimit: ee,
+        getValidationResult: te > 0 ? e => es({
+            intl: c,
+            limit: e,
+            minimumLimit: te
+        }) : void 0,
+        placeholder: String(te),
+        onClose: () => p(null),
+        onSave: M
+    }), t[37] = ee, t[38] = te, t[39] = f, t[40] = M, t[41] = c, t[42] = ae) : ae = t[42];
+    let B;
+    return t[43] !== z || t[44] !== ae ? (B = (0, wd.jsxs)(wd.Fragment, {
+        children: [z, ae]
+    }), t[43] = z, t[44] = ae, t[45] = B) : B = t[45], B
+}
+
+function vd(e) {
+    return e.seat_type_credit_limits
+}
+
+function yd(e) {
+    "use forget";
+    let t = (0, Sd.c)(38),
+        {
+            canManageSeatTypeLimits: n,
+            isSaving: r,
+            seatTypeCreditLimitsQuery: a,
+            seatType: o,
+            useGenericLabel: s,
+            usePremiumSeatTypeLabels: c,
+            onClick: l
+        } = e,
+        u = mt(),
+        d, f, p, m;
+    t[0] !== n || t[1] !== u || t[2] !== r || t[3] !== o || t[4] !== a.data || t[5] !== a.isError || t[6] !== a.isLoading ? (p = md({
+        seatType: o,
+        seatTypeCreditLimits: a.data
+    }), f = a.isLoading, d = !n || a.isLoading || a.isError || r, m = xd({
+        intl: u,
+        limit: p
+    }), t[0] = n, t[1] = u, t[2] = r, t[3] = o, t[4] = a.data, t[5] = a.isError, t[6] = a.isLoading, t[7] = d, t[8] = f, t[9] = p, t[10] = m) : (d = t[7], f = t[8], p = t[9], m = t[10]);
+    let h = m,
+        g;
+    t[11] !== u || t[12] !== p ? (g = u.formatMessage(p == null ? Od.addButton : Od.editButton), t[11] = u, t[12] = p, t[13] = g) : g = t[13];
+    let _ = g,
+        v;
+    t[14] !== o || t[15] !== s || t[16] !== c ? (v = bd({
+        seatType: o,
+        useGenericLabel: s,
+        usePremiumSeatTypeLabels: c
+    }), t[14] = o, t[15] = s, t[16] = c, t[17] = v) : v = t[17];
+    let y = v,
+        b;
+    t[18] === y ? b = t[19] : (b = (0, wd.jsx)(`div`, {
+        className: `text-token-text-primary text-base`,
+        children: (0, wd.jsx)(W, {
+            ...y
+        })
+    }), t[18] = y, t[19] = b);
+    let x;
+    t[20] !== h || t[21] !== f ? (x = f ? (0, wd.jsx)(ee, {
+        className: `text-token-text-tertiary h-4 w-4`
+    }) : (0, wd.jsx)(Br, {
+        className: `text-token-text-secondary mt-1`,
+        children: h
+    }), t[20] = h, t[21] = f, t[22] = x) : x = t[22];
+    let S;
+    t[23] !== b || t[24] !== x ? (S = (0, wd.jsxs)(`div`, {
+        className: `min-w-0`,
+        children: [b, x]
+    }), t[23] = b, t[24] = x, t[25] = S) : S = t[25];
+    let C = !n,
+        w = `${o}-seat-limit-owner-disabled-tooltip-trigger`,
+        T;
+    t[26] !== _ || t[27] !== d || t[28] !== f || t[29] !== l ? (T = (0, wd.jsx)(i, {
+        color: `secondary`,
+        size: `medium`,
+        className: `min-w-[74px]`,
+        loading: f,
+        disabled: d,
+        onClick: l,
+        children: _
+    }), t[26] = _, t[27] = d, t[28] = f, t[29] = l, t[30] = T) : T = t[30];
+    let E;
+    t[31] !== C || t[32] !== w || t[33] !== T ? (E = (0, wd.jsx)(os, {
+        disabled: C,
+        testId: w,
+        children: T
+    }), t[31] = C, t[32] = w, t[33] = T, t[34] = E) : E = t[34];
+    let D;
+    return t[35] !== E || t[36] !== S ? (D = (0, wd.jsxs)(`div`, {
+        className: `flex items-center justify-between gap-4 py-4`,
+        children: [S, E]
+    }), t[35] = E, t[36] = S, t[37] = D) : D = t[37], D
+}
+
+function bd({
+    seatType: e,
+    useGenericLabel: t,
+    usePremiumSeatTypeLabels: n
+}) {
+    if (t) return Od.perSeatLimitLabel;
+    if (n) switch (e) {
+        case Td:
+            return Od.standardSeatLabel;
+        case Ed:
+            return Od.premiumSeatLabel;
+        case Dd:
+            return Od.codexSeatLabel
+    }
+    switch (e) {
+        case Td:
+            return Od.chatgptSeatLabel;
+        case Ed:
+            return Od.premiumSeatLabel;
+        case Dd:
+            return Od.codexSeatLabel
+    }
+}
+
+function xd({
+    intl: e,
+    limit: t
+}) {
+    return t == null ? e.formatMessage(Od.noneLabel) : e.formatMessage(Od.limitDescription, {
+        count: t,
+        value: e.formatNumber(t)
+    })
+}
+var Sd, Cd, wd, Td, Ed, Dd, Od, kd = e((() => {
+    Sd = pt(), ci(), qa(), pe(), R(), Ge(), y(), p(), dt(), Cd = n(at()), rt(), nt(), as(), ts(), Nt(), pd(), wd = qe(), Td = `default`, Ed = `prolite`, Dd = `usage_based`, Od = Qe({
+        title: {
+            id: `organizationBillingInfo.monthlyUsageLimits.title`,
+            defaultMessage: `Monthly usage limits`
+        },
+        description: {
+            id: `organizationBillingInfo.monthlyUsageLimits.description`,
+            defaultMessage: `Set default spend allocations per seat type.`
+        },
+        singleSeatDescription: {
+            id: `organizationBillingInfo.monthlyUsageLimits.description.singleSeat`,
+            defaultMessage: `Set default spend allocations per seat.`
+        },
+        chatgptSeatLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.chatgptSeatLabel`,
+            defaultMessage: `ChatGPT seat`
+        },
+        standardSeatLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.standardSeatLabel`,
+            defaultMessage: `Standard seat`
+        },
+        premiumSeatLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.premiumSeatLabel`,
+            defaultMessage: `Premium seat`
+        },
+        perSeatLimitLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.perSeatLimitLabel`,
+            defaultMessage: `Per seat limit`
+        },
+        codexSeatLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.codexSeatLabel`,
+            defaultMessage: `Codex seat`
+        },
+        settingsLoadError: {
+            id: `organizationBillingInfo.monthlyUsageLimits.settingsLoadError`,
+            defaultMessage: `Unable to load the current monthly usage limits.`
+        },
+        perUserOverrideLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.perUserOverrideLabel`,
+            defaultMessage: `Per user override`
+        },
+        perUserOverrideDescription: {
+            id: `organizationBillingInfo.monthlyUsageLimits.perUserOverrideDescription`,
+            defaultMessage: `Override the default usage limits for individuals`
+        },
+        perUserOverrideButtonLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.perUserOverrideButtonLabel`,
+            defaultMessage: `Open per user override settings`
+        },
+        manageButton: {
+            id: `organizationBillingInfo.monthlyUsageLimits.manageButton`,
+            defaultMessage: `Manage`
+        },
+        noneLabel: {
+            id: `organizationBillingInfo.monthlyUsageLimits.noneLabel`,
+            defaultMessage: `None`
+        },
+        limitDescription: {
+            id: `organizationBillingInfo.monthlyUsageLimits.limitDescription`,
+            defaultMessage: `{value} {count, plural, one {credit} other {credits}}`
+        },
+        addButton: {
+            id: `organizationBillingInfo.monthlyUsageLimits.addButton`,
+            defaultMessage: `Add`
+        },
+        editButton: {
+            id: `organizationBillingInfo.monthlyUsageLimits.editButton`,
+            defaultMessage: `Edit`
+        },
+        saveSuccess: {
+            id: `organizationBillingInfo.monthlyUsageLimits.saveSuccess`,
+            defaultMessage: `Usage limit updated`
+        },
+        saveError: {
+            id: `organizationBillingInfo.monthlyUsageLimits.saveError`,
+            defaultMessage: `Unable to update the usage limit.`
+        }
+    })
+}));
+
+function Ad(e) {
+    "use forget";
+    let t = (0, jd.c)(77),
+        {
+            workspaceId: n,
+            canEdit: r
+        } = e,
+        a = $e(),
+        o = mt(),
+        s = Lo(n),
+        c;
+    t[0] === n ? c = t[1] : (c = _i(n), t[0] = n, t[1] = c);
+    let l = c,
+        {
+            data: u,
+            isPending: d
+        } = me(n),
+        f = u?.default_seat_type === `prolite`,
+        p = (0, Md.useId)(),
+        h = (0, Md.useId)(),
+        g = (0, Md.useId)(),
+        _ = (0, Md.useId)(),
+        [v, y] = (0, Md.useState)(null),
+        {
+            mutate: b,
+            isPending: x
+        } = qn(n),
+        C;
+    t[2] === n ? C = t[3] : (C = e => S.safePost(`/accounts/{account_id}/settings/auto_approve_seat_upgrades`, {
+        parameters: {
+            path: {
+                account_id: n
+            }
+        },
+        requestBody: {
+            value: e
+        }
+    }), t[2] = n, t[3] = C);
+    let w;
+    t[4] !== a || t[5] !== n ? (w = () => a.invalidateQueries({
+        queryKey: [`workspace-settings`, n]
+    }), t[4] = a, t[5] = n, t[6] = w) : w = t[6];
+    let T;
+    t[7] === o ? T = t[8] : (T = e => {
+        m().danger(o.formatMessage({
+            id: `organizationBillingInfo.seatPreferences.autoUpgrade.error`,
+            defaultMessage: `Couldn’t update automatic seat upgrades. Please try again.`
+        }), {
+            loggingTitle: e.message
+        })
+    }, t[7] = o, t[8] = T);
+    let E;
+    t[9] !== C || t[10] !== w || t[11] !== T ? (E = {
+        mutationFn: C,
+        onSuccess: w,
+        onError: T
+    }, t[9] = C, t[10] = w, t[11] = T, t[12] = E) : E = t[12];
+    let {
+        mutate: D,
+        isPending: O
+    } = ut(E), k = x || O, A = s || l || f, j, M, ee;
+    if (t[13] !== r || t[14] !== d || t[15] !== k) {
+        let e = se(`1628125068`);
+        M = e.get(`allow_invite_purchases`, !1), j = r && !d && !k, ee = e.get(`allowed_payment_method_types`, []), t[13] = r, t[14] = d, t[15] = k, t[16] = j, t[17] = M, t[18] = ee
+    } else j = t[16], M = t[17], ee = t[18];
+    let te = ee.length > 0,
+        N;
+    t[19] !== r || t[20] !== l || t[21] !== u || t[22] !== n ? (N = r && l && u != null && He().getContext().user.customIDs?.workspace_id === n, t[19] = r, t[20] = l, t[21] = u, t[22] = n, t[23] = N) : N = t[23];
+    let P = N,
+        ne = P && !k,
+        re;
+    t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (re = (0, Nd.jsx)(`div`, {
+        className: `p-6`,
+        children: (0, Nd.jsx)(`div`, {
+            className: `text-token-text-primary text-xl leading-6 font-normal`,
+            children: (0, Nd.jsx)(W, {
+                ...Fd.title
+            })
+        })
+    }), t[24] = re) : re = t[24];
+    let F;
+    t[25] !== r || t[26] !== p || t[27] !== l || t[28] !== s || t[29] !== A || t[30] !== n ? (F = A && (0, Nd.jsxs)(`div`, {
+        className: `flex items-center justify-between gap-4 py-4`,
+        children: [(0, Nd.jsx)(`div`, {
+            id: p,
+            className: `text-token-text-primary text-base`,
+            children: (0, Nd.jsx)(W, {
+                ...Fd.defaultSeatTypeLabel
+            })
+        }), (0, Nd.jsx)(os, {
+            disabled: !r,
+            testId: `default-seat-type-owner-disabled-tooltip-trigger`,
+            children: (0, Nd.jsx)(is, {
+                workspaceId: n,
+                includeUsageBased: s,
+                includeProlite: l,
+                disabled: !r,
+                triggerClassName: `min-w-[110px] justify-between text-sm`,
+                ariaLabelledBy: p,
+                analyticsSurface: `billing_settings`,
+                firstChatgptSeatPurchaseEntrypoint: `workspace_identity_default_seat_type`
+            })
+        })]
+    }), t[25] = r, t[26] = p, t[27] = l, t[28] = s, t[29] = A, t[30] = n, t[31] = F) : F = t[31];
+    let I;
+    t[32] === Symbol.for(`react.memo_cache_sentinel`) ? (I = (0, Nd.jsx)(W, {
+        id: `organizationBillingInfo.seatPreferences.autoJoin.label`,
+        defaultMessage: `Auto-approve join requests`
+    }), t[32] = I) : I = t[32];
+    let ie;
+    t[33] === h ? ie = t[34] : (ie = (0, Nd.jsx)(`div`, {
+        id: h,
+        className: `text-token-text-primary text-base`,
+        children: I
+    }), t[33] = h, t[34] = ie);
+    let L;
+    t[35] === M ? L = t[36] : (L = (0, Nd.jsx)(`div`, {
+        className: `text-token-text-secondary mt-1 text-sm`,
+        children: M ? (0, Nd.jsx)(W, {
+            id: `organizationBillingInfo.seatPreferences.autoJoin.invitations.description`,
+            defaultMessage: `Auto-approve requests to join from eligible email domains and allow invited users to join even when the workspace is full. You will be billed immediately for any additional seats needed.`
+        }) : (0, Nd.jsx)(W, {
+            id: `organizationBillingInfo.seatPreferences.autoJoin.description`,
+            defaultMessage: `All members who request to join the workspace will be automatically approved`
+        })
+    }), t[35] = M, t[36] = L);
+    let R;
+    t[37] !== ie || t[38] !== L ? (R = (0, Nd.jsxs)(`div`, {
+        children: [ie, L]
+    }), t[37] = ie, t[38] = L, t[39] = R) : R = t[39];
+    let z = !r,
+        ae = u?.auto_accept_requests,
+        B = !j,
+        oe = k || void 0,
+        V;
+    t[40] === b ? V = t[41] : (V = e => {
+        e && te ? y(`join`) : b({
+            autoAcceptRequests: e
+        })
+    }, t[40] = b, t[41] = V);
+    let H;
+    t[42] !== h || t[43] !== ae || t[44] !== B || t[45] !== oe || t[46] !== V ? (H = (0, Nd.jsx)(be, {
+        "aria-labelledby": h,
+        checked: ae,
+        disabled: B,
+        "aria-busy": oe,
+        onCheckedChange: V
+    }), t[42] = h, t[43] = ae, t[44] = B, t[45] = oe, t[46] = V, t[47] = H) : H = t[47];
+    let ce;
+    t[48] !== z || t[49] !== H ? (ce = (0, Nd.jsx)(os, {
+        disabled: z,
+        children: H
+    }), t[48] = z, t[49] = H, t[50] = ce) : ce = t[50];
+    let le;
+    t[51] !== R || t[52] !== ce ? (le = (0, Nd.jsxs)(`div`, {
+        className: `flex items-center justify-between gap-4 py-4`,
+        children: [R, ce]
+    }), t[51] = R, t[52] = ce, t[53] = le) : le = t[53];
+    let ue;
+    t[54] !== g || t[55] !== ne || t[56] !== k || t[57] !== D || t[58] !== u || t[59] !== P ? (ue = P && (0, Nd.jsxs)(`div`, {
+        className: `flex items-center justify-between gap-4 py-4`,
+        children: [(0, Nd.jsxs)(`div`, {
+            children: [(0, Nd.jsx)(`div`, {
+                id: g,
+                className: `text-token-text-primary text-base`,
+                children: (0, Nd.jsx)(W, {
+                    id: `organizationBillingInfo.seatPreferences.autoUpgrade.label`,
+                    defaultMessage: `Auto-approve seat upgrades`
+                })
+            }), (0, Nd.jsx)(`div`, {
+                className: `text-token-text-secondary mt-1 text-sm`,
+                children: (0, Nd.jsx)(W, {
+                    id: `organizationBillingInfo.seatPreferences.autoUpgrade.description`,
+                    defaultMessage: `Members who request to upgrade from Standard to Premium will be automatically approved`
+                })
+            })]
+        }), (0, Nd.jsx)(be, {
+            "aria-labelledby": g,
+            checked: u.auto_approve_seat_upgrades,
+            disabled: !ne,
+            "aria-busy": k || void 0,
+            onCheckedChange: e => {
+                e ? y(`upgrade`) : D(!1)
+            }
+        })]
+    }), t[54] = g, t[55] = ne, t[56] = k, t[57] = D, t[58] = u, t[59] = P, t[60] = ue) : ue = t[60];
+    let de;
+    t[61] !== le || t[62] !== ue || t[63] !== F ? (de = (0, Nd.jsxs)(`div`, {
+        className: `border-token-border-default divide-token-border-default divide-y px-6`,
+        children: [F, le, ue]
+    }), t[61] = le, t[62] = ue, t[63] = F, t[64] = de) : de = t[64];
+    let fe;
+    t[65] !== j || t[66] !== ne || t[67] !== v || t[68] !== _ || t[69] !== M || t[70] !== k || t[71] !== b || t[72] !== D ? (fe = v != null && (0, Nd.jsx)(Pd, {
+        isOpen: !0,
+        size: `large`,
+        className: `rounded-3xl`,
+        headerClassName: `px-6 py-5 ps-6`,
+        contentClassName: `px-6 pt-0 pb-6`,
+        modalActionsClassName: `mt-6 sm:mt-6`,
+        showCloseButton: !0,
+        closeButton: (0, Nd.jsx)(Ce, {
+            disabled: k,
+            onClick: () => y(null)
+        }),
+        shouldIgnoreClickOutside: k,
+        ariaDescribedBy: _,
+        title: (0, Nd.jsx)(`span`, {
+            className: `font-semibold`,
+            children: (0, Nd.jsx)(W, {
+                id: `organizationBillingInfo.seatPreferences.autoJoin.confirmation.title`,
+                defaultMessage: `Are you sure?`
+            })
+        }),
+        onClose: () => y(null),
+        primaryButton: (0, Nd.jsx)(i, {
+            color: `primary`,
+            size: `large`,
+            loading: k,
+            onClick: () => {
+                if (v === `upgrade`) {
+                    if (!ne) return;
+                    D(!0, {
+                        onSuccess: () => y(null)
+                    });
+                    return
+                }
+                j && b({
+                    autoAcceptRequests: !0
+                }, {
+                    onSuccess: () => y(null)
+                })
+            },
+            children: (0, Nd.jsx)(W, {
+                id: `ConfirmModal.confirmLabel`,
+                defaultMessage: `Confirm`
+            })
+        }),
+        secondaryButton: (0, Nd.jsx)(i, {
+            color: `secondary`,
+            size: `large`,
+            disabled: k,
+            onClick: () => y(null),
+            children: (0, Nd.jsx)(W, {
+                id: `ConfirmModal.cancelLabel`,
+                defaultMessage: `Cancel`
+            })
+        }),
+        children: (0, Nd.jsx)(`p`, {
+            id: _,
+            className: `text-token-text-secondary text-sm leading-5`,
+            children: v === `upgrade` ? (0, Nd.jsx)(W, {
+                id: `organizationBillingInfo.seatPreferences.autoUpgrade.confirmation.description`,
+                defaultMessage: `Turning this on will auto-approve all future requests from members moving from a Standard seat to a Premium seat. You will be billed immediately if there is no available Premium seat capacity.`
+            }) : M ? (0, Nd.jsx)(W, {
+                id: `organizationBillingInfo.seatPreferences.autoJoin.invitations.confirmation`,
+                defaultMessage: `Turning this on will auto-approve future requests to join from eligible email domains and allow invited users to join even when the workspace is full. You will be billed immediately for any additional seats needed.`
+            }) : (0, Nd.jsx)(W, {
+                id: `organizationBillingInfo.seatPreferences.autoJoin.confirmation.description`,
+                defaultMessage: `Turning this on will auto-approve all future requests for members who request to join the workspace from eligible email domains. You will be billed immediately if there is no available seat capacity.`
+            })
+        })
+    }), t[65] = j, t[66] = ne, t[67] = v, t[68] = _, t[69] = M, t[70] = k, t[71] = b, t[72] = D, t[73] = fe) : fe = t[73];
+    let pe;
+    return t[74] !== de || t[75] !== fe ? (pe = (0, Nd.jsxs)(fi, {
+        className: `border-token-border-default bg-token-bg-primary gap-0 rounded-xl border`,
+        children: [re, de, fe]
+    }), t[74] = de, t[75] = fe, t[76] = pe) : pe = t[76], pe
+}
+var jd, Md, Nd, Pd, Fd, Id = e((() => {
+        jd = pt(), ci(), Ro(), rs(), qa(), tr(), pe(), C(), H(), R(), y(), p(), dt(), u(), ke(), Md = n(at()), rt(), as(), Nd = qe(), lt(), Pd = V(() => st(() => import(`./4813494d-mdvd4786a87166cc.js`).then(e => (e.Aw(), e.kw)), __vite__mapDeps([2, 1, 3, 4]))), Fd = Qe({
+            title: {
+                id: `organizationBillingInfo.seatPreferences.title`,
+                defaultMessage: `Seat preferences`
+            },
+            defaultSeatTypeLabel: {
+                id: `organizationBillingInfo.seatPreferences.defaultSeatType.label`,
+                defaultMessage: `Default seat type`
+            }
+        })
+    })),
+    Ld, Rd, zd, Bd, Vd, Hd = e((() => {
+        Ld = pt(), Qi(), qa(), pe(), Ta(), xi(), Ge(), dt(), rt(), Rd = qe(), zd = e => {
+            "use forget";
+            let t = (0, Ld.c)(14),
+                {
+                    canRedeemGiftCard: n,
+                    formattedBalance: r,
+                    status: a
+                } = e,
+                o;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Rd.jsx)(`h3`, {
+                className: `text-token-text-primary text-xl leading-6 font-normal`,
+                children: (0, Rd.jsx)(W, {
+                    ...Vd.walletBalanceTitle
+                })
+            }), t[0] = o) : o = t[0];
+            let s;
+            t[1] === n ? s = t[2] : (s = n && (0, Rd.jsx)(i, {
+                as: `link`,
+                to: `/redeem?entry_point=business_billing`,
+                color: `secondary`,
+                size: `medium`,
+                className: `h-[38px] min-h-[38px] min-w-[142px] rounded-full px-3.5`,
+                children: (0, Rd.jsx)(W, {
+                    ...Vd.redeemGiftCard
+                })
+            }), t[1] = n, t[2] = s);
+            let c;
+            t[3] === s ? c = t[4] : (c = (0, Rd.jsxs)(`div`, {
+                className: `flex w-full items-center justify-between gap-4`,
+                children: [o, s]
+            }), t[3] = s, t[4] = c);
+            let l;
+            t[5] !== r || t[6] !== a ? (l = a === `loading` ? (0, Rd.jsxs)(`div`, {
+                className: `text-token-text-secondary flex h-[26px] items-center gap-2 text-sm`,
+                children: [(0, Rd.jsx)(ee, {
+                    className: `icon-sm`
+                }), (0, Rd.jsx)(W, {
+                    ...Vd.loadingWalletBalance
+                })]
+            }) : a === `unavailable` || r == null ? (0, Rd.jsx)(`p`, {
+                className: `text-token-text-status-warning h-[26px] text-sm leading-[26px]`,
+                role: `alert`,
+                children: (0, Rd.jsx)(W, {
+                    ...Vd.walletBalanceUnavailable
+                })
+            }) : (0, Rd.jsx)(`p`, {
+                className: `text-token-text-primary text-heading-3 font-[590] tracking-[-0.45px]`,
+                children: r
+            }), t[5] = r, t[6] = a, t[7] = l) : l = t[7];
+            let u;
+            t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, Rd.jsx)(Br, {
+                className: `text-token-text-secondary w-full`,
+                children: (0, Rd.jsx)(W, {
+                    ...Vd.walletBalanceDescription
+                })
+            }), t[8] = u) : u = t[8];
+            let d;
+            t[9] === l ? d = t[10] : (d = (0, Rd.jsxs)(`div`, {
+                className: `flex w-full flex-col items-start gap-0.5`,
+                children: [l, u]
+            }), t[9] = l, t[10] = d);
+            let f;
+            return t[11] !== c || t[12] !== d ? (f = (0, Rd.jsxs)(fi, {
+                className: `border-token-border-default bg-token-bg-primary gap-4 overflow-hidden rounded-xl border p-6`,
+                children: [c, d]
+            }), t[11] = c, t[12] = d, t[13] = f) : f = t[13], f
+        }, Bd = e => {
+            "use forget";
+            let t = (0, Ld.c)(24),
+                {
+                    account: n
+                } = e,
+                r = mt(),
+                i;
+            t[0] === n ? i = t[1] : (i = yi(n), t[0] = n, t[1] = i);
+            let a = i,
+                o;
+            t[2] !== n || t[3] !== a ? (o = n.isSelfServeBusiness() && n.isOwnerOfAccount() && a.featureEnabled, t[2] = n, t[3] = a, t[4] = o) : o = t[4];
+            let s = o,
+                c;
+            t[5] === n.id ? c = t[6] : (c = pi(n.id, {
+                includeRedemptionStatus: !0
+            }), t[5] = n.id, t[6] = c);
+            let l;
+            t[7] !== s || t[8] !== c ? (l = {
+                ...c,
+                enabled: s,
+                refetchOnWindowFocus: `always`,
+                refetchOnReconnect: `always`
+            }, t[7] = s, t[8] = c, t[9] = l) : l = t[9];
+            let {
+                data: u,
+                error: d,
+                isFetching: f,
+                isPending: p
+            } = tt(l), m;
+            t[10] !== n || t[11] !== u ? (m = yi(n, u), t[10] = n, t[11] = u, t[12] = m) : m = t[12];
+            let h = m;
+            if (!s || p || !h.shouldShowWallet) return null;
+            let g, _;
+            if (t[13] !== n || t[14] !== u || t[15] !== d || t[16] !== r || t[17] !== f) {
+                let e = ta(u),
+                    i = e?.currency ?? n.getSubscriptionBillingCurrency();
+                g = f ? `loading` : d != null || i == null ? `unavailable` : `ready`, _ = g === `ready` && u != null && i != null ? Hr({
+                    intl: r,
+                    amount: u.has_redeemed_gift_card === !0 && (e?.balance ?? 0) > 0 ? -(e?.balance ?? 0) : Math.max(0, -(e?.balance ?? 0)),
+                    currency: i
+                }) : null, t[13] = n, t[14] = u, t[15] = d, t[16] = r, t[17] = f, t[18] = g, t[19] = _
+            } else g = t[18], _ = t[19];
+            let v = _,
+                y;
+            return t[20] !== h.canRedeemGiftCard || t[21] !== v || t[22] !== g ? (y = (0, Rd.jsx)(zd, {
+                canRedeemGiftCard: h.canRedeemGiftCard,
+                formattedBalance: v,
+                status: g
+            }), t[20] = h.canRedeemGiftCard, t[21] = v, t[22] = g, t[23] = y) : y = t[23], y
+        }, Vd = Qe({
+            walletBalanceTitle: {
+                id: `workspaceBilling.walletBalance.title`,
+                defaultMessage: `Wallet balance`
+            },
+            redeemGiftCard: {
+                id: `workspaceBilling.walletBalance.redeemGiftCard`,
+                defaultMessage: `Redeem gift card`
+            },
+            walletBalanceDescription: {
+                id: `workspaceBilling.walletBalance.description`,
+                defaultMessage: `Your wallet balance is automatically applied to eligible purchases, including subscriptions and credit payments.`
+            },
+            loadingWalletBalance: {
+                id: `workspaceBilling.walletBalance.loading`,
+                defaultMessage: `Loading balance…`
+            },
+            walletBalanceUnavailable: {
+                id: `workspaceBilling.walletBalance.unavailable`,
+                defaultMessage: `Not available`
+            }
+        })
+    }));
+
+function Ud(e) {
+    "use forget";
+    let t = (0, Kd.c)(24),
+        {
+            maxTotalCreditAmount: n,
+            onInvite: r,
+            perEligibleInviteCreditAmount: a
+        } = e,
+        o = mt(),
+        s = (0, qd.useRef)(!1),
+        c = !!(n && a),
+        l, u;
+    if (t[0] === c ? (l = t[1], u = t[2]) : (l = () => {
+            !c || s.current || (s.current = !0, Eo({
+                surface: `billing_admin_banner`
+            }))
+        }, u = [c], t[0] = c, t[1] = l, t[2] = u), (0, qd.useEffect)(l, u), !c) return null;
+    let d;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, Jd.jsx)(`div`, {
+        className: `pointer-events-none absolute inset-0 bg-cover bg-left-top bg-no-repeat`,
+        style: {
+            backgroundImage: `url(${Xd})`
+        }
+    }), t[3] = d) : d = t[3];
+    let f;
+    t[4] === o ? f = t[5] : (f = o.formatMessage(Qd.logoAlt), t[4] = o, t[5] = f);
+    let p;
+    t[6] === f ? p = t[7] : (p = (0, Jd.jsx)(`img`, {
+        alt: f,
+        className: `hidden h-[54px] w-[54px] shrink-0 sm:block`,
+        src: Yd
+    }), t[6] = f, t[7] = p);
+    let m;
+    t[8] === n ? m = t[9] : (m = (0, Jd.jsx)(`div`, {
+        className: `text-sm leading-5 font-medium text-[#0D0D0D] dark:text-[#0D0D0D]`,
+        children: (0, Jd.jsx)(W, {
+            ...Qd.title,
+            values: {
+                maxTotalCreditAmount: n
+            }
+        })
+    }), t[8] = n, t[9] = m);
+    let h;
+    t[10] === a ? h = t[11] : (h = (0, Jd.jsx)(`div`, {
+        className: `mt-1 text-sm leading-5 text-[#5D5D5D] dark:text-[#5D5D5D]`,
+        children: (0, Jd.jsx)(W, {
+            ...Qd.body,
+            values: {
+                perEligibleInviteCreditAmount: a,
+                termsLink: Wd
+            }
+        })
+    }), t[10] = a, t[11] = h);
+    let g;
+    t[12] !== m || t[13] !== h ? (g = (0, Jd.jsxs)(`div`, {
+        className: `min-w-0 flex-1`,
+        children: [m, h]
+    }), t[12] = m, t[13] = h, t[14] = g) : g = t[14];
+    let _;
+    t[15] === r ? _ = t[16] : (_ = () => {
+        To({
+            destination: `admin_invite_modal`,
+            surface: `billing_admin_banner`
+        }), r()
+    }, t[15] = r, t[16] = _);
+    let v;
+    t[17] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, Jd.jsx)(W, {
+        ...Qd.invite
+    }), t[17] = v) : v = t[17];
+    let y;
+    t[18] === _ ? y = t[19] : (y = (0, Jd.jsx)(`div`, {
+        className: `w-full sm:w-auto sm:self-center`,
+        children: (0, Jd.jsx)(i, {
+            className: `min-h-10 w-full rounded-full bg-gray-950 px-4 text-white hover:bg-gray-800 sm:min-h-11 sm:w-auto sm:px-5 dark:bg-gray-950! dark:text-white! dark:hover:bg-gray-800!`,
+            onClick: _,
+            size: `large`,
+            children: v
+        })
+    }), t[18] = _, t[19] = y);
+    let b;
+    return t[20] !== y || t[21] !== p || t[22] !== g ? (b = (0, Jd.jsxs)(`section`, {
+        className: `border-token-border-default relative overflow-hidden rounded-2xl border bg-white shadow-[0px_4px_16px_0px_rgba(0,0,0,0.05)] dark:border-[#424242] dark:bg-white`,
+        children: [d, (0, Jd.jsxs)(`div`, {
+            className: `relative flex flex-col items-start gap-3 px-4 py-3 sm:flex-row sm:items-center sm:gap-4 sm:px-5 sm:py-4`,
+            children: [p, g, y]
+        })]
+    }), t[20] = y, t[21] = p, t[22] = g, t[23] = b) : b = t[23], b
+}
+
+function Wd(e) {
+    return (0, Jd.jsx)(cn, {
+        className: `underline`,
+        href: Zd,
+        onClick: Gd,
+        rel: `noopener noreferrer`,
+        target: `_blank`,
+        children: e
+    })
+}
+
+function Gd() {
+    To({
+        destination: `terms`,
+        surface: `billing_admin_banner`
+    })
+}
+var Kd, qd, Jd, Yd, Xd, Zd, Qd, $d = e((() => {
+    Kd = pt(), pe(), pn(), Do(), qd = n(at()), rt(), Jd = qe(), Yd = `https://openaiassets.blob.core.windows.net/$web/codex/codex-icon-200.png`, Xd = `https://openaiassets.blob.core.windows.net/$web/codex/codex-invite-promo-bg.png`, Zd = `https://help.openai.com/en/articles/20001150`, Qd = Qe({
+        title: {
+            id: `codexInvitePromoBanner.title`,
+            defaultMessage: `Add Codex seats and earn up to {maxTotalCreditAmount} in credits`
+        },
+        body: {
+            id: `codexInvitePromoBanner.body`,
+            defaultMessage: `Get {perEligibleInviteCreditAmount} in credits for each person you invite who starts using Codex. <termsLink>View terms.</termsLink>`
+        },
+        invite: {
+            id: `codexInvitePromoBanner.invite`,
+            defaultMessage: `Invite`
+        },
+        logoAlt: {
+            id: `codexInvitePromoBanner.logoAlt`,
+            defaultMessage: `Codex logo`
+        }
+    })
+}));
+
+function ef({
+    onClose: e
+}) {
+    "use no forget";
+    let t = mt(),
+        n = We(),
+        r = Oe(),
+        {
+            data: i,
+            isLoading: a
+        } = Dt(),
+        o = Wt(r?.id),
+        {
+            shouldShowImmediateTrialCancellationVariant: s,
+            trialDaysRemaining: l
+        } = Ao(r);
+    if (a || !r || !i) return null;
+    let u = i.active_until ? new Date(i.active_until) : null,
+        d = !i.will_renew,
+        f = l ?? 1;
+    return (0, tf.jsx)(O, {
+        testId: `modal-move-to-usage-based-billing`,
+        isOpen: !0,
+        onClose: e,
+        title: t.formatMessage(nf.title, {
+            workspaceName: r.name
+        }),
+        primaryButton: (0, tf.jsx)(c, {
+            color: `primary`,
+            onClick: async () => {
+                try {
+                    await o.mutateAsync({
+                        accountId: r.id,
+                        cancellationOutcome: `convert_to_usage_based`
+                    }), n.success(t.formatMessage(s ? nf.moveToUsageBasedBillingImmediateSuccess : nf.moveToUsageBasedBillingSuccess), {
+                        hasCloseButton: !0
+                    }), e()
+                } catch {
+                    n.warning(t.formatMessage(nf.moveToUsageBasedBillingError), {
+                        hasCloseButton: !0
+                    })
+                }
+            },
+            loading: o.isPending,
+            title: t.formatMessage(nf.confirmButton)
+        }),
+        secondaryButton: (0, tf.jsx)(c, {
+            onClick: e,
+            disabled: o.isPending,
+            title: t.formatMessage(nf.keepPaidSeatsButton)
+        }),
+        children: (0, tf.jsxs)(`div`, {
+            className: `flex flex-col gap-4`,
+            children: [(0, tf.jsx)(`p`, {
+                className: `text-token-text-secondary text-sm`,
+                children: s ? (0, tf.jsx)(W, {
+                    ...nf.immediateTrialSubtitle,
+                    values: {
+                        days: f
+                    }
+                }) : u == null ? (0, tf.jsx)(W, {
+                    ...nf.subtitleNoDate
+                }) : (0, tf.jsx)(W, {
+                    ...nf.subtitle,
+                    values: {
+                        expiryDate: u
+                    }
+                })
+            }), d && (0, tf.jsx)(`p`, {
+                className: `text-token-text-primary text-sm font-medium`,
+                children: (0, tf.jsx)(W, {
+                    ...nf.pendingDeactivationOverride
+                })
+            }), (0, tf.jsxs)(`ul`, {
+                className: `text-token-text-secondary list-disc ps-5 text-sm`,
+                children: [(0, tf.jsx)(`li`, {
+                    children: s ? (0, tf.jsx)(W, {
+                        ...nf.immediateTrialMembersMoveBullet
+                    }) : u == null ? (0, tf.jsx)(W, {
+                        ...nf.membersMoveBulletNoDate
+                    }) : (0, tf.jsx)(W, {
+                        ...nf.membersMoveBullet,
+                        values: {
+                            expiryDate: u
+                        }
+                    })
+                }), (0, tf.jsx)(`li`, {
+                    children: s ? (0, tf.jsx)(W, {
+                        ...nf.immediateTrialChatgptSeatsEndBullet,
+                        values: {
+                            days: f
+                        }
+                    }) : u == null ? (0, tf.jsx)(W, {
+                        ...nf.chatgptSeatsEndBulletNoDate
+                    }) : (0, tf.jsx)(W, {
+                        ...nf.chatgptSeatsEndBullet,
+                        values: {
+                            expiryDate: u
+                        }
+                    })
+                }), (0, tf.jsx)(`li`, {
+                    children: (0, tf.jsx)(W, {
+                        ...nf.workspaceAccessBullet
+                    })
+                })]
+            })]
+        })
+    })
+}
+var tf, nf, rf = e((() => {
+    F(), s(), Me(), y(), rt(), jo(), Ht(), tf = qe(), nf = Qe({
+        title: {
+            id: `moveToUsageBasedBillingModal.title`,
+            defaultMessage: `Remove ChatGPT seats in {workspaceName}?`
+        },
+        subtitle: {
+            id: `moveToUsageBasedBillingModal.subtitle`,
+            defaultMessage: `This will move all members to usage-based Codex seats. Existing ChatGPT seats remain active until {expiryDate, date, long}. After that, all members will have Codex-only access.`
+        },
+        subtitleNoDate: {
+            id: `moveToUsageBasedBillingModal.subtitleNoDate`,
+            defaultMessage: `This will move all members to usage-based Codex seats. After the current subscription ends, all members will have Codex-only access.`
+        },
+        immediateTrialSubtitle: {
+            id: `moveToUsageBasedBillingModal.immediateTrialSubtitle`,
+            defaultMessage: `Remove ChatGPT seats and move all members to Codex (usage-based) seats immediately. You will lose the remaining {days, plural, one {# day} other {# days}} in your trial, and all members will have Codex-only access.`
+        },
+        pendingDeactivationOverride: {
+            id: `moveToUsageBasedBillingModal.pendingDeactivationOverride`,
+            defaultMessage: `This replaces the current deactivation request.`
+        },
+        confirmButton: {
+            id: `moveToUsageBasedBillingModal.confirmButton`,
+            defaultMessage: `Remove ChatGPT seats`
+        },
+        keepPaidSeatsButton: {
+            id: `moveToUsageBasedBillingModal.keepPaidSeatsButton`,
+            defaultMessage: `Keep ChatGPT seats`
+        },
+        membersMoveBullet: {
+            id: `moveToUsageBasedBillingModal.membersMoveBullet`,
+            defaultMessage: `All members and pending invites will be moved to Codex (usage-based) seats on {expiryDate, date, long}.`
+        },
+        membersMoveBulletNoDate: {
+            id: `moveToUsageBasedBillingModal.membersMoveBulletNoDate`,
+            defaultMessage: `All members and pending invites will be moved to Codex (usage-based) seats when the current subscription ends.`
+        },
+        immediateTrialMembersMoveBullet: {
+            id: `moveToUsageBasedBillingModal.immediateTrialMembersMoveBullet`,
+            defaultMessage: `All members and pending invites will be moved to Codex (usage-based) seats immediately.`
+        },
+        chatgptSeatsEndBullet: {
+            id: `moveToUsageBasedBillingModal.chatgptSeatsEndBullet`,
+            defaultMessage: `Paid ChatGPT seats stop renewing after {expiryDate, date, long}.`
+        },
+        chatgptSeatsEndBulletNoDate: {
+            id: `moveToUsageBasedBillingModal.chatgptSeatsEndBulletNoDate`,
+            defaultMessage: `Paid ChatGPT seats stop renewing when the current subscription ends.`
+        },
+        immediateTrialChatgptSeatsEndBullet: {
+            id: `moveToUsageBasedBillingModal.immediateTrialChatgptSeatsEndBullet`,
+            defaultMessage: `You will lose the remaining {days, plural, one {# day} other {# days}} in your trial.`
+        },
+        workspaceAccessBullet: {
+            id: `moveToUsageBasedBillingModal.workspaceAccessBullet`,
+            defaultMessage: `Workspace access is retained, but access to ChatGPT and chat data will be lost.`
+        },
+        moveToUsageBasedBillingSuccess: {
+            id: `moveToUsageBasedBillingModal.success`,
+            defaultMessage: `Your workspace will move to usage-based billing when the current subscription ends.`
+        },
+        moveToUsageBasedBillingImmediateSuccess: {
+            id: `moveToUsageBasedBillingModal.immediateSuccess`,
+            defaultMessage: `Your workspace has moved to usage-based billing.`
+        },
+        moveToUsageBasedBillingError: {
+            id: `moveToUsageBasedBillingModal.error`,
+            defaultMessage: `There was an error scheduling usage-based billing for this workspace.`
+        }
+    })
+}));
+
+function af({
+    id: e,
+    checked: t,
+    onChange: n,
+    title: r,
+    body: i,
+    titleValues: a,
+    bodyValues: o
+}) {
+    "use no forget";
+    let s = `${e}-title`,
+        c = `${e}-body`;
+    return (0, J.jsxs)(`label`, {
+        htmlFor: e,
+        className: g(`border-token-border-light hover:border-token-border-default/80 hover:bg-token-bg-tertiary/50 focus-within:border-token-border-default/80 focus-within:ring-token-border-default/40 flex w-full cursor-pointer items-start gap-2.5 rounded-md border px-3 py-2.5 transition-colors focus-within:ring-1`, t && `border-token-border-default/80 bg-token-bg-tertiary/40`),
+        children: [(0, J.jsx)(`input`, {
+            id: e,
+            type: `checkbox`,
+            checked: t,
+            onChange: e => n(e.currentTarget.checked),
+            "aria-labelledby": s,
+            "aria-describedby": c,
+            className: `accent-token-text-primary border-token-border-default mt-0.5 h-4 w-4 shrink-0 rounded`
+        }), (0, J.jsxs)(`span`, {
+            className: `flex flex-col gap-px`,
+            children: [(0, J.jsx)(`span`, {
+                id: s,
+                className: `text-token-text-primary text-sm font-medium`,
+                children: (0, J.jsx)(W, {
+                    ...r,
+                    values: a
+                })
+            }), (0, J.jsx)(`span`, {
+                id: c,
+                className: `text-token-text-secondary text-sm leading-[1.35]`,
+                children: (0, J.jsx)(W, {
+                    ...i,
+                    values: o
+                })
+            })]
+        })]
+    })
+}
+
+function of({
+    onClose: e,
+    businessTrialImmediateCancellationState: t
+}) {
+    "use no forget";
+    let n = mt(),
+        r = m(),
+        {
+            data: i,
+            isLoading: a
+        } = Dt(),
+        o = Oe(),
+        s = _i(o?.id),
+        l = jn({
+            enabled: o != null,
+            accountKey: o?.id
+        }),
+        u = l.data?.isEnabled === !0 || l.isError,
+        d = Wt(o?.id),
+        f = yt(o?.id ?? ``),
+        p = $e(),
+        h = N(),
+        [g, _] = (0, sf.useState)(``),
+        [v, y] = (0, sf.useState)(!1),
+        [b, x] = (0, sf.useState)(!1),
+        [S, C] = (0, sf.useState)(!1),
+        [w, T] = (0, sf.useState)(!1),
+        [D, k] = (0, sf.useState)(!1),
+        [A, j] = (0, sf.useState)(!1),
+        [M, ee] = (0, sf.useState)(!1),
+        te = h?.email != null && g.toLowerCase() === h.email.toLowerCase(),
+        [P, ne] = (0, sf.useState)(!!(i && !i.will_renew)),
+        re = Ao(o, {
+            disableExposureLog: t != null
+        });
+    t != null && (re = t);
+    let {
+        shouldShowImmediateTrialCancellationVariant: F,
+        trialDaysRemaining: I
+    } = re, {
+        cancellationPromoMetadata: ie
+    } = ti(o?.id ?? ``, !!o?.isEligibleForCancellationPromotion()), L = ie != null && `value` in ie.discount ? ie.discount.value : null, R = L != null, {
+        data: z,
+        isLoading: ae,
+        error: B
+    } = E({
+        currency: i?.billing_currency,
+        enabled: i?.billing_currency != null && R
+    }), oe = (0, sf.useMemo)(() => {
+        if (!i || !z || ae || B || !R || L == null) return null;
+        let e = la(i.billing_currency, z).flexibleBillingPlan.discountedMonthlyCost,
+            t = Number(e ?? 0) * i.seats_entitled,
+            r = Math.max(t - L, 0);
+        return {
+            formattedCurrent: n.formatNumber(t, {
+                style: `currency`,
+                currency: i.billing_currency,
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2
+            }),
+            formattedDiscounted: n.formatNumber(r, {
+                style: `currency`,
+                currency: i.billing_currency,
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2
+            })
+        }
+    }, [z, B, n, ae, L, R, i]), V = async () => {
+        if (!(!o || !R || !ie)) {
+            x(!0);
+            try {
+                await f.mutateAsync({
+                    accountId: o.id,
+                    updatedPromoId: ie.campaign_id
+                }), r.success(n.formatMessage(lf.promoAppliedSuccess), {
+                    hasCloseButton: !0
+                }), p.invalidateQueries(Ue()), p.invalidateQueries({
+                    queryKey: wi(o.id)
+                }), e()
+            } catch {
+                r.danger(n.formatMessage(lf.claimPromoFailure), {
+                    duration: 5,
+                    toastId: `cancel_team_plan_modal`
+                })
+            } finally {
+                x(!1)
+            }
+        }
+    };
+    if (a || !o || !i) return null;
+    let H = S && D && A;
+    F && (H &&= w), s && (H &&= M);
+    let se = te && H && !l.isPending,
+        ce = 1;
+    I != null && (ce = I);
+    let le = [];
+    F && le.push({
+        id: `acknowledge-trial-loss`,
+        checked: w,
+        onChange: T,
+        title: lf.loseTrialDays,
+        body: lf.acknowledgeTrialLossBody,
+        titleValues: {
+            days: ce
+        }
+    }), le.push({
+        id: `acknowledge-data-loss`,
+        checked: S,
+        onChange: C,
+        title: lf.acknowledgeDataLossTitle,
+        body: lf.acknowledgeDataLossBody
+    }, {
+        id: `acknowledge-reduced-limits`,
+        checked: D,
+        onChange: k,
+        title: lf.acknowledgeReducedLimitsTitle,
+        body: lf.acknowledgeReducedLimitsBody
+    }, {
+        id: `acknowledge-privacy-changes`,
+        checked: A,
+        onChange: j,
+        title: lf.acknowledgePrivacyChangesTitle,
+        body: lf.acknowledgePrivacyChangesBody
+    }), s && le.push({
+        id: `acknowledge-pending-seat-changes`,
+        checked: M,
+        onChange: ee,
+        title: lf.acknowledgePendingSeatChangesTitle,
+        body: lf.acknowledgePendingSeatChangesBody
+    });
+    let ue = (0, J.jsx)(`span`, {
+            className: `text-token-text-primary font-semibold`,
+            children: o.data.name
+        }),
+        de = F ? (0, J.jsx)(W, {
+            ...lf.updatedModalImmediateTrialIntro,
+            values: {
+                workspaceName: ue,
+                expiryDate: new Date
+            }
+        }) : i.active_until == null ? (0, J.jsx)(W, {
+            ...lf.updatedModalIntroWithoutDate,
+            values: {
+                workspaceName: ue
+            }
+        }) : (0, J.jsx)(W, {
+            ...lf.updatedModalIntro,
+            values: {
+                workspaceName: ue,
+                expiryDate: new Date(i.active_until)
+            }
+        }),
+        fe = null;
+    return F && (fe = (0, J.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm leading-5`,
+        children: (0, J.jsx)(W, {
+            ...lf.trialReminderInUseSeatsOnly
+        })
+    })), (0, J.jsx)(O, {
+        testId: `modal-cancel-team-plan`,
+        type: `success`,
+        isOpen: !0,
+        onClose: e,
+        primaryButton: P ? (0, J.jsx)(c, {
+            title: n.formatMessage(lf.doneButton),
+            color: `primary`,
+            onClick: e,
+            disabled: v
+        }) : (0, J.jsx)(c, {
+            title: n.formatMessage(lf.cancelSubscriptionButton),
+            onClick: async () => {
+                y(!0);
+                try {
+                    await d.mutateAsync({
+                        accountId: o.id
+                    }), ne(!0), window.open(`${cf}?user_id=${h?.id}&account_id=${o.id}&plan_type=${i.plan_type}`, `_blank`)
+                } catch {
+                    r.warning(n.formatMessage(lf.errorCancellingSubscription), {
+                        hasCloseButton: !0
+                    })
+                } finally {
+                    y(!1)
+                }
+            },
+            disabled: !se,
+            loading: v,
+            color: `danger`
+        }),
+        secondaryButton: P ? void 0 : (0, J.jsx)(c, {
+            title: n.formatMessage(lf.keepSubscriptionButton),
+            onClick: e,
+            disabled: v
+        }),
+        footerHasTopMargin: !1,
+        footerClassName: `mt-3`,
+        showCloseButton: !0,
+        size: `large`,
+        closeButtonClassName: `text-token-text-secondary h-8 w-8 rounded-md hover:bg-transparent hover:text-token-text-primary keyboard-focused:bg-transparent`,
+        headerClassName: `!px-6 !pt-4 !pb-1.5 [&_h2]:font-semibold [&_h2]:tracking-[-0.01em]`,
+        contentClassName: `!px-6 !pt-2 !pb-5`,
+        className: ``,
+        title: (0, J.jsx)(`span`, {
+            className: `text-lg leading-7`,
+            children: (0, J.jsx)(W, {
+                ...lf.cancelPlan
+            })
+        }),
+        children: P ? (0, J.jsxs)(`div`, {
+            children: [(0, J.jsx)(`h3`, {
+                className: `text-token-text-primary mb-2 text-base font-semibold`,
+                children: (0, J.jsx)(W, {
+                    ...lf.successfullyCanceled
+                })
+            }), i.active_until != null && !F && (0, J.jsx)(`p`, {
+                className: `text-token-text-primary text-sm`,
+                children: (0, J.jsx)(W, {
+                    ...lf.retainUntil,
+                    values: {
+                        expiryDate: new Date(i.active_until)
+                    }
+                })
+            })]
+        }) : (0, J.jsx)(`div`, {
+            children: (0, J.jsxs)(`div`, {
+                className: `flex flex-col gap-3.5`,
+                children: [(0, J.jsxs)(`div`, {
+                    className: `flex w-full items-center gap-3.5`,
+                    children: [(0, J.jsx)(ve, {
+                        src: o.data.profilePictureUrl,
+                        size: `mediumLarge`
+                    }), (0, J.jsxs)(`div`, {
+                        className: `min-w-0`,
+                        children: [(0, J.jsx)(`p`, {
+                            className: `text-token-text-primary text-base leading-6 font-semibold`,
+                            children: o.data.name
+                        }), (0, J.jsx)(`p`, {
+                            className: `text-token-text-secondary text-sm leading-5`,
+                            children: (0, J.jsx)(W, {
+                                ...lf.seatsCount,
+                                values: {
+                                    count: i.seats_entitled
+                                }
+                            })
+                        })]
+                    })]
+                }), R && ie && (0, J.jsxs)(`div`, {
+                    className: `w-full`,
+                    children: [(0, J.jsx)(`div`, {
+                        className: `text-token-text-primary mb-1 text-base font-semibold`,
+                        children: ie.title
+                    }), (0, J.jsx)(`div`, {
+                        className: `text-token-text-secondary text-sm`,
+                        children: ie.summary
+                    }), (0, J.jsx)(`div`, {
+                        className: `border-token-border-light bg-token-bg-elevated-secondary mt-2.5 w-full rounded-lg border p-2.5`,
+                        children: (0, J.jsxs)(`div`, {
+                            className: `flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between`,
+                            children: [(0, J.jsx)(`div`, {
+                                className: `flex flex-col gap-2`,
+                                children: oe && (0, J.jsx)(`div`, {
+                                    className: `text-token-text-secondary text-sm`,
+                                    children: (0, J.jsx)(W, {
+                                        ...lf.promoPriceSentence,
+                                        values: {
+                                            oldPrice: (0, J.jsx)(`span`, {
+                                                className: `text-token-text-tertiary line-through`,
+                                                children: oe.formattedCurrent
+                                            }),
+                                            newPrice: (0, J.jsx)(`span`, {
+                                                className: `text-token-text-primary font-semibold`,
+                                                children: oe.formattedDiscounted
+                                            })
+                                        }
+                                    })
+                                })
+                            }), (0, J.jsx)(c, {
+                                title: n.formatMessage(lf.getOfferButton),
+                                color: `primary`,
+                                onClick: V,
+                                loading: b,
+                                className: `px-4`
+                            })]
+                        })
+                    })]
+                }), (0, J.jsx)(`div`, {
+                    className: `w-full`,
+                    children: (0, J.jsxs)(`div`, {
+                        className: `space-y-3`,
+                        children: [(0, J.jsx)(`p`, {
+                            className: `text-token-text-secondary text-sm leading-5`,
+                            children: de
+                        }), fe, u ? (0, J.jsx)(`p`, {
+                            className: `text-token-text-secondary text-sm leading-5`,
+                            children: (0, J.jsx)(W, {
+                                ..._s
+                            })
+                        }) : null, (0, J.jsxs)(`fieldset`, {
+                            className: `space-y-2`,
+                            children: [(0, J.jsx)(`legend`, {
+                                className: `text-token-text-primary mb-2 w-full text-sm font-medium`,
+                                children: (0, J.jsx)(W, {
+                                    ...lf.updatedModalSectionTitle
+                                })
+                            }), le.map(e => (0, J.jsx)(af, {
+                                ...e
+                            }, e.id))]
+                        })]
+                    })
+                }), (0, J.jsxs)(`div`, {
+                    className: `w-full`,
+                    children: [(0, J.jsx)(`h3`, {
+                        className: `text-token-text-primary mb-1.5 text-sm font-medium`,
+                        children: (0, J.jsx)(W, {
+                            ...lf.enterEmailToConfirm
+                        })
+                    }), (0, J.jsx)(xt, {
+                        ariaLabel: n.formatMessage(lf.enterEmailToConfirm),
+                        autoComplete: `email`,
+                        type: `email`,
+                        name: `user-email`,
+                        placeholder: `abcd@acme.com`,
+                        onChange: e => {
+                            _(e.target.value)
+                        }
+                    })]
+                })]
+            })
+        })
+    })
+}
+var sf, J, cf, lf, uf = e((() => {
+    Be(), ci(), jo(), F(), s(), tn(), vs(), no(), ki(), Me(), l(), y(), d(), Jn(), dt(), Ne(), sf = n(at()), rt(), Ht(), J = qe(), cf = `https://q.surveyfeedbackresponse.com/jfe/form/SV_9vIX2bUyeLKgCZo`, lf = Qe({
+        cancelPlan: {
+            id: `cancelTeamPlanModal.cancelPlan`,
+            defaultMessage: `Cancel subscription`
+        },
+        errorCancellingSubscription: {
+            id: `cancelTeamPlanModal.errorCancellingSubscription`,
+            defaultMessage: `There was a problem cancelling your subscription.`
+        },
+        doneButton: {
+            id: `cancelTeamPlanModal.doneButton`,
+            defaultMessage: `Done`
+        },
+        keepSubscriptionButton: {
+            id: `cancelTeamPlanModal.keepSubscriptionButton`,
+            defaultMessage: `Keep subscription`
+        },
+        cancelSubscriptionButton: {
+            id: `cancelTeamPlanModal.cancelSubscriptionButton`,
+            defaultMessage: `Cancel subscription`
+        },
+        successfullyCanceled: {
+            id: `cancelTeamPlanModal.successfullyCanceled`,
+            defaultMessage: `You have successfully canceled your subscription.`
+        },
+        seatsCount: {
+            id: `cancelTeamPlanModal.seatsCount`,
+            defaultMessage: `{count, plural, one {# seat} other {# seats}}`
+        },
+        enterEmailToConfirm: {
+            id: `cancelTeamPlanModal.strongerCopy.enterEmailToConfirm`,
+            defaultMessage: `Enter your email address to confirm:`
+        },
+        dataUnavailable: {
+            id: `cancelTeamPlanModal.dataUnavailable`,
+            defaultMessage: `All workspace data including chat history and settings will not be available`
+        },
+        loseTrialDays: {
+            id: `cancelTeamPlanModal.loseTrialDays`,
+            defaultMessage: `You will lose the remaining {days, plural, one {# day} other {# days}} left in your free trial`
+        },
+        trialReminderInUseSeatsOnly: {
+            id: `cancelTeamPlanModal.trialReminderInUseSeatsOnly`,
+            defaultMessage: `As a reminder, if you choose to continue with your trial, you will only be charged for seats in use once the trial ends.`
+        },
+        areYouSure: {
+            id: `cancelTeamPlanModal.areYouSure`,
+            defaultMessage: `Are you sure?`
+        },
+        retainUntil: {
+            id: `cancelTeamPlanModal.retainUntil`,
+            defaultMessage: `You will retain access to the workspace until the end of your billing cycle on {expiryDate, date, long}`
+        },
+        retainEmailAccess: {
+            id: `cancelTeamPlanModal.retainEmailAccess`,
+            defaultMessage: `You will still be able to use ChatGPT with the other workspaces associated with this email address`
+        },
+        updatedModalIntro: {
+            id: `cancelTeamPlanModal.updatedModalIntro`,
+            defaultMessage: `You’re about to cancel {workspaceName}. This will downgrade your access as of {expiryDate, date, long} and change what happens to your workspace data.`
+        },
+        updatedModalImmediateTrialIntro: {
+            id: `cancelTeamPlanModal.updatedModalImmediateTrialIntro`,
+            defaultMessage: `You’re about to cancel {workspaceName}. This will downgrade your access as of {expiryDate, date, long} and change what happens to your workspace data.`
+        },
+        updatedModalIntroWithoutDate: {
+            id: `cancelTeamPlanModal.updatedModalIntroWithoutDate`,
+            defaultMessage: `You’re about to cancel {workspaceName}. This will downgrade your access and change what happens to your workspace data.`
+        },
+        updatedModalSectionTitle: {
+            id: `cancelTeamPlanModal.updatedModalSectionTitle`,
+            defaultMessage: `To cancel, confirm each of the following:`
+        },
+        acknowledgeDataLossTitle: {
+            id: `cancelTeamPlanModal.acknowledgeDataLossTitle`,
+            defaultMessage: `Workspace data & chat history will be lost`
+        },
+        acknowledgeDataLossBody: {
+            id: `cancelTeamPlanModal.acknowledgeDataLossBody`,
+            defaultMessage: `Your workspace conversations, files, projects, and settings will no longer be accessible.`
+        },
+        acknowledgeTrialLossBody: {
+            id: `cancelTeamPlanModal.acknowledgeTrialLossBody`,
+            defaultMessage: `If you cancel today, any unused days in your free trial will end immediately.`
+        },
+        acknowledgeReducedLimitsTitle: {
+            id: `cancelTeamPlanModal.acknowledgeReducedLimitsTitle`,
+            defaultMessage: `File uploads & usage limits will be reduced`
+        },
+        acknowledgeReducedLimitsBody: {
+            id: `cancelTeamPlanModal.acknowledgeReducedLimitsBody`,
+            defaultMessage: `You’ll lose higher file upload limits and will have lower rate limits (messages, images, and tools).`
+        },
+        acknowledgePrivacyChangesTitle: {
+            id: `cancelTeamPlanModal.acknowledgePrivacyChangesTitle`,
+            defaultMessage: `Data privacy & admin controls may change`
+        },
+        acknowledgePrivacyChangesBody: {
+            id: `cancelTeamPlanModal.acknowledgePrivacyChangesBody`,
+            defaultMessage: `Accounts in this workspace will lose data privacy protections, retention settings, and admin controls.`
+        },
+        acknowledgePendingSeatChangesTitle: {
+            id: `cancelTeamPlanModal.acknowledgePendingSeatChangesTitle`,
+            defaultMessage: `Any pending seat changes will be canceled`
+        },
+        acknowledgePendingSeatChangesBody: {
+            id: `cancelTeamPlanModal.acknowledgePendingSeatChangesBody`,
+            defaultMessage: `Scheduled seat removals and downgrades will be canceled. You can still reassign existing seats up until your cancellation date.`
+        },
+        promoPriceSentence: {
+            id: `cancelTeamPlanModal.promoPriceSentence`,
+            defaultMessage: `Next month you'll pay {newPrice} (normally {oldPrice}).`
+        },
+        getOfferButton: {
+            id: `cancelTeamPlanModal.getOfferButton`,
+            defaultMessage: `Get offer`
+        },
+        claimPromoFailure: {
+            id: `cancelTeamPlanModal.claimPromoFailure`,
+            defaultMessage: `Something went wrong while claiming the promotion, please try again.`
+        },
+        promoAppliedSuccess: {
+            id: `cancelTeamPlanModal.promoAppliedSuccess`,
+            defaultMessage: `Your subscription has been updated and will auto-renew at the discounted rate during your next billing cycle.`
+        }
+    })
+}));
+
+function df({
+    numInUse: e,
+    numAllocated: t,
+    isTeam: n,
+    subscriptionWillRenew: r,
+    subscriptionBillingPeriod: a,
+    accountId: o,
+    subscriptionRenewalDate: s,
+    billingDetails: c,
+    maxSeats: l,
+    isNonProfit: u = !1,
+    canManageSeats: d = !0,
+    onManageSeatsClick: f,
+    isManageSeatsDisabled: p = !1,
+    showManageSeatsButton: m = !0
+}) {
+    let {
+        promoEligibility: h,
+        seatThresholdGap: g,
+        shouldShowFreeSeatsCta: _,
+        shouldShowSeatsPromoRedemptionNotice: v
+    } = ii({
+        seatsEntitled: t
+    }), y = a === `monthly` ? U.FLEXIBLE : U.ANNUAL, b = () => {
+        if (f) {
+            f();
+            return
+        }
+        let e = `chatgpt_billing_manage_seats_clicked`,
+            n = I.logStructuredEvent(`ChatgptBusinessBillingManageSeatsOpened`, {
+                legacyStatsigEventName: e
+            });
+        Ve(e, void 0, n ? {
+            unique_event_id: n
+        } : void 0), fe(hf, {
+            initialTeamBillingType: y,
+            initialSeats: t,
+            isNonProfit: u,
+            maxSeats: l,
+            accountId: o,
+            renewalDate: s,
+            billingDetails: c
+        })
+    };
+    return (0, mf.jsxs)(mf.Fragment, {
+        children: [(0, mf.jsxs)(`div`, {
+            className: `flex items-center justify-between`,
+            children: [(0, mf.jsx)(`span`, {
+                className: `text-start text-base`,
+                children: (0, mf.jsx)(W, {
+                    ...gf.description,
+                    values: {
+                        num: `${e}/${t}`,
+                        bold: e => (0, mf.jsx)(`span`, {
+                            className: `font-medium`,
+                            children: e
+                        }, `bolded-num-in-use`)
+                    }
+                })
+            }), n && r && d && (_ || m) && (0, mf.jsx)(`div`, {
+                className: `flex items-center gap-2`,
+                children: _ ? (0, mf.jsx)(ff, {
+                    disabled: p,
+                    promoSeatThresholdGap: g,
+                    onClick: b
+                }) : (0, mf.jsx)(i, {
+                    color: `secondary`,
+                    disabled: p,
+                    onClick: b,
+                    children: (0, mf.jsx)(W, {
+                        id: `components.business.NumSeats.manageSeats`,
+                        defaultMessage: `Manage seats`
+                    })
+                })
+            })]
+        }), n && r && v && (0, mf.jsx)(`div`, {
+            className: `mt-3`,
+            children: (0, mf.jsx)(bs, {
+                promoEligibility: h,
+                discountPercent: 25
+            })
+        })]
+    })
+}
+
+function ff({
+    disabled: e,
+    promoSeatThresholdGap: t,
+    onClick: n
+}) {
+    return (0, pf.useEffect)(() => {
+        Ve(`chatgpt_business_seats_promo_cta_shown`, void 0, {
+            seat_threshold_gap: t == null ? `null` : t.toString()
+        })
+    }, [t]), (0, mf.jsx)(i, {
+        color: `purple`,
+        disabled: e,
+        onClick: () => {
+            n(), Ve(`chatgpt_business_seats_promo_cta_clicked`, void 0, {
+                seat_threshold_gap: t == null ? `null` : t.toString()
+            })
+        },
+        children: (0, mf.jsx)(W, {
+            id: `components.business.NumSeats.getSeatsPromoCta`,
+            defaultMessage: `Get discount`
+        })
+    })
+}
+var pf, mf, hf, gf, _f = e((() => {
+        pe(), le(), Ql(), ys(), Ji(), _(), u(), ke(), pf = n(at()), rt(), Vr(), mf = qe(), lt(), hf = V(() => st(() => import(`./c2daebff-k454sjw0fix9q5v0.js`).then(e => e.TeamManageSeatsModal), __vite__mapDeps([18, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 19, 20, 21, 22, 23]))), gf = Qe({
+            description: {
+                defaultMessage: `<bold>{num}</bold> seats in use`,
+                id: `components.business.NumSeats.description`
+            }
+        })
+    })),
+    vf, yf = e((() => {
+        T(), p(), dt(), vf = () => ft({
+            queryKey: [`credit-pleas`],
+            queryFn: async () => {
+                try {
+                    return await S.safeGet(`/credits/pleas`, {})
+                } catch (e) {
+                    throw Se.addError(`getCreditPleas: Error fetching credit pleas`, {
+                        error: e
+                    }), e
+                }
+            }
+        })
+    })),
+    bf, xf, Sf, Cf, wf, Tf = e((() => {
+        en(), z(), Ae(), dt(), rt(), yf(), nr(), _(), bf = n(at()), Cn(), xf = qe(), Sf = `admin-credit-limit-alert-banner`, Cf = () => {
+            let [e, t] = (0, bf.useState)(!1), [n, r] = (0, bf.useState)(!1), {
+                data: i,
+                isLoading: a,
+                isError: o
+            } = tt(vf()), s = (0, bf.useMemo)(() => {
+                let e = new Set;
+                return i?.pleas?.forEach(t => {
+                    e.add(t.user.id)
+                }), e.size
+            }, [i]), c = (0, bf.useMemo)(() => {
+                let e = i?.pleas?.map(e => e.id);
+                if (!e || e.length === 0) return null;
+                let t = [...e].sort();
+                return btoa(t.join(`,`))
+            }, [i]), l = (0, bf.useMemo)(() => localStorage.getItem(Sf), []), u = s > 0 && !a && !o && c && c !== l && !e;
+            (0, bf.useEffect)(() => {
+                !u || !c || I.logEventWithStatsig(`ChatGPT Credits: Admin Credit Limit Alert Banner Shown`, `chatgpt_credits_admin_credit_limit_alert_banner_shown`, {
+                    numBlockedUsers: s,
+                    newEncodedIdSet: c
+                })
+            }, [u, c, s]);
+            let d = (0, bf.useCallback)(() => {
+                c && localStorage.setItem(Sf, c), t(!0), I.logEventWithStatsig(`ChatGPT Credits: Admin Credit Limit Alert Banner Dismissed`, `chatgpt_credits_admin_credit_limit_alert_banner_dismissed`, {
+                    numBlockedUsers: s,
+                    newEncodedIdSet: c
+                })
+            }, [c, s]);
+            return u ? (0, xf.jsx)(ie, {
+                primaryCtaText: (0, xf.jsx)(W, {
+                    ...wf.addCredits
+                }),
+                onPrimaryCtaClick: () => {
+                    Un(gt, {
+                        analyticsSurface: `admin_credit_limit_banner`,
+                        checkoutOriginProvenance: {
+                            checkoutOriginProductExperience: Pt.WORK,
+                            checkoutOriginDeliverySurface: `web`
+                        },
+                        onCustomCheckoutEnd: () => r(!1),
+                        onCustomCheckoutStart: () => r(!0)
+                    })
+                },
+                isPrimaryCtaLoading: n,
+                onDismiss: d,
+                content: (0, xf.jsxs)(`div`, {
+                    className: `flex items-center gap-3`,
+                    children: [(0, xf.jsx)(Le, {}), (0, xf.jsxs)(`div`, {
+                        className: `grow`,
+                        children: [(0, xf.jsx)(`div`, {
+                            className: `flex items-center gap-2 font-bold`,
+                            children: (0, xf.jsx)(W, {
+                                ...wf.licenseLimitWarning
+                            })
+                        }), (0, xf.jsx)(`span`, {
+                            className: `text-token-text-secondary`,
+                            children: (0, xf.jsx)(W, {
+                                ...wf.licenseLimitWarningDetails,
+                                values: {
+                                    numBlockedUsers: s
+                                }
+                            })
+                        })]
+                    })]
+                })
+            }) : null
+        }, wf = Qe({
+            addCredits: {
+                id: `organizationBillingInfo.addCredits`,
+                defaultMessage: `Add credits`
+            },
+            licenseLimitWarning: {
+                id: `organizationBillingInfo.licenseLimitWarning`,
+                defaultMessage: `Some teammates are blocked`
+            },
+            licenseLimitWarningDetails: {
+                id: `organizationBillingInfo.licenseLimitWarningDetails`,
+                defaultMessage: `{numBlockedUsers, plural, one {# user hit their limit and needs} other {# users hit their limits and need}} credits to continue. Add credits to unblock {numBlockedUsers, plural, one {them} other {them}}.`
+            }
+        })
+    })),
+    Ef, Df, Of, kf, Af, jf, Mf, Nf = e((() => {
+        Ef = pt(), Sr(), Df = n(at()), rt(), Of = qe(), kf = e => {
+            "use forget";
+            let t = (0, Ef.c)(21),
+                {
+                    billingCurrency: n,
+                    isPerSeatPriceLoading: r,
+                    monthlyTotalMessage: i,
+                    renewalDate: a,
+                    seatRows: o
+                } = e,
+                s = (0, Df.useId)(),
+                c;
+            t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, Of.jsx)(mr, {
+                "aria-hidden": !0,
+                className: `icon-sm shrink-0`
+            }), t[0] = c) : c = t[0];
+            let l;
+            t[1] === a ? l = t[2] : (l = (0, Of.jsx)(W, {
+                ...Mf.upcomingSeatChangesTitle,
+                values: {
+                    renewalDate: (0, Of.jsx)(it, {
+                        day: `numeric`,
+                        month: `short`,
+                        timeZone: `UTC`,
+                        value: a
+                    })
+                }
+            }), t[1] = a, t[2] = l);
+            let u;
+            t[3] !== l || t[4] !== s ? (u = (0, Of.jsxs)(`h3`, {
+                className: `text-token-text-primary flex items-center gap-2 text-base leading-tight font-semibold`,
+                id: s,
+                children: [c, l]
+            }), t[3] = l, t[4] = s, t[5] = u) : u = t[5];
+            let d;
+            if (t[6] !== n || t[7] !== r || t[8] !== i || t[9] !== o) {
+                let e;
+                t[11] !== n || t[12] !== r || t[13] !== i ? (e = e => (0, Of.jsx)(Af, {
+                    billingCurrency: n,
+                    isPerSeatPriceLoading: r,
+                    monthlyTotalMessage: i,
+                    seatRow: e
+                }, e.key), t[11] = n, t[12] = r, t[13] = i, t[14] = e) : e = t[14], d = o.map(e), t[6] = n, t[7] = r, t[8] = i, t[9] = o, t[10] = d
+            } else d = t[10];
+            let f;
+            t[15] === d ? f = t[16] : (f = (0, Of.jsx)(`div`, {
+                children: d
+            }), t[15] = d, t[16] = f);
+            let p;
+            return t[17] !== u || t[18] !== f || t[19] !== s ? (p = (0, Of.jsxs)(`section`, {
+                "aria-labelledby": s,
+                className: `bg-token-bg-tertiary flex flex-col gap-4 rounded-xl p-4`,
+                children: [u, f]
+            }), t[17] = u, t[18] = f, t[19] = s, t[20] = p) : p = t[20], p
+        }, Af = e => {
+            "use forget";
+            let t = (0, Ef.c)(28),
+                {
+                    billingCurrency: n,
+                    isPerSeatPriceLoading: r,
+                    monthlyTotalMessage: i,
+                    seatRow: a
+                } = e,
+                o = mt(),
+                {
+                    capacityMessage: s,
+                    pendingDowngradeCount: c,
+                    pendingRemovalCount: l,
+                    perSeatMonthlyPrice: u,
+                    scheduledChangeCount: d,
+                    seatCapacity: f,
+                    titleMessage: p
+                } = a,
+                m = u == null ? null : f * u,
+                h;
+            t[0] !== n || t[1] !== o || t[2] !== m ? (h = m != null && n != null ? o.formatNumber(m, {
+                style: `currency`,
+                currency: n
+            }) : null, t[0] = n, t[1] = o, t[2] = m, t[3] = h) : h = t[3];
+            let g = h,
+                _;
+            t[4] === p ? _ = t[5] : (_ = (0, Of.jsx)(`div`, {
+                className: `text-token-text-secondary text-base leading-tight font-normal`,
+                children: (0, Of.jsx)(W, {
+                    ...p
+                })
+            }), t[4] = p, t[5] = _);
+            let v;
+            t[6] !== c || t[7] !== l || t[8] !== d ? (v = (0, Of.jsx)(`div`, {
+                className: `text-token-text-secondary mt-1 text-sm leading-tight font-normal`,
+                children: (0, Of.jsx)(jf, {
+                    pendingDowngradeCount: c,
+                    pendingRemovalCount: l,
+                    scheduledChangeCount: d
+                })
+            }), t[6] = c, t[7] = l, t[8] = d, t[9] = v) : v = t[9];
+            let y;
+            t[10] !== _ || t[11] !== v ? (y = (0, Of.jsxs)(`div`, {
+                className: `min-w-0`,
+                children: [_, v]
+            }), t[10] = _, t[11] = v, t[12] = y) : y = t[12];
+            let b;
+            t[13] !== g || t[14] !== r || t[15] !== i ? (b = r ? (0, Of.jsx)(`div`, {
+                className: `loading-results-shimmer ms-auto h-6 w-24 rounded-sm`
+            }) : g != null && (0, Of.jsx)(`div`, {
+                className: `text-token-text-secondary text-base leading-tight font-normal`,
+                children: (0, Of.jsx)(W, {
+                    ...i,
+                    values: {
+                        amount: g
+                    }
+                })
+            }), t[13] = g, t[14] = r, t[15] = i, t[16] = b) : b = t[16];
+            let x;
+            t[17] === f ? x = t[18] : (x = {
+                count: f
+            }, t[17] = f, t[18] = x);
+            let S;
+            t[19] !== s || t[20] !== x ? (S = (0, Of.jsx)(`div`, {
+                className: `text-token-text-secondary mt-1 text-sm leading-tight font-normal`,
+                children: (0, Of.jsx)(W, {
+                    ...s,
+                    values: x
+                })
+            }), t[19] = s, t[20] = x, t[21] = S) : S = t[21];
+            let C;
+            t[22] !== b || t[23] !== S ? (C = (0, Of.jsxs)(`div`, {
+                className: `text-end sm:shrink-0`,
+                children: [b, S]
+            }), t[22] = b, t[23] = S, t[24] = C) : C = t[24];
+            let w;
+            return t[25] !== y || t[26] !== C ? (w = (0, Of.jsxs)(`div`, {
+                className: `border-token-border-default flex flex-col gap-2 py-4 first:pt-0 last:pb-0 sm:flex-row sm:items-start sm:justify-between sm:gap-6 [&+&]:border-t`,
+                children: [y, C]
+            }), t[25] = y, t[26] = C, t[27] = w) : w = t[27], w
+        }, jf = e => {
+            "use forget";
+            let t = (0, Ef.c)(13),
+                {
+                    pendingDowngradeCount: n,
+                    pendingRemovalCount: r,
+                    scheduledChangeCount: i
+                } = e;
+            if (r > 0 && n > 0) {
+                let e;
+                t[0] === r ? e = t[1] : (e = (0, Of.jsx)(W, {
+                    ...Mf.upcomingSeatRemovals,
+                    values: {
+                        count: r
+                    }
+                }, `removals`), t[0] = r, t[1] = e);
+                let i;
+                t[2] === n ? i = t[3] : (i = (0, Of.jsx)(W, {
+                    ...Mf.upcomingSeatDowngrades,
+                    values: {
+                        count: n
+                    }
+                }, `downgrades`), t[2] = n, t[3] = i);
+                let a;
+                return t[4] !== e || t[5] !== i ? (a = (0, Of.jsx)(Je, {
+                    value: [e, i]
+                }), t[4] = e, t[5] = i, t[6] = a) : a = t[6], a
+            }
+            if (r > 0) {
+                let e;
+                return t[7] === r ? e = t[8] : (e = (0, Of.jsx)(W, {
+                    ...Mf.upcomingSeatRemovals,
+                    values: {
+                        count: r
+                    }
+                }), t[7] = r, t[8] = e), e
+            }
+            if (n > 0) {
+                let e;
+                return t[9] === n ? e = t[10] : (e = (0, Of.jsx)(W, {
+                    ...Mf.upcomingSeatDowngrades,
+                    values: {
+                        count: n
+                    }
+                }), t[9] = n, t[10] = e), e
+            }
+            let a;
+            return t[11] === i ? a = t[12] : (a = (0, Of.jsx)(W, {
+                ...Mf.upcomingSeatChanges,
+                values: {
+                    count: i
+                }
+            }), t[11] = i, t[12] = a), a
+        }, Mf = Qe({
+            upcomingSeatChangesTitle: {
+                id: `organizationBillingInfo.upcomingSeatChanges.title`,
+                defaultMessage: `Upcoming changes starting {renewalDate}`
+            },
+            upcomingSeatRemovals: {
+                id: `organizationBillingInfo.upcomingSeatChanges.description.removals`,
+                defaultMessage: `{count, plural, one {# seat removal} other {# seat removals}}`
+            },
+            upcomingSeatDowngrades: {
+                id: `organizationBillingInfo.upcomingSeatChanges.description.downgrades`,
+                defaultMessage: `{count, plural, one {# seat downgrade} other {# seat downgrades}}`
+            },
+            upcomingSeatChanges: {
+                id: `organizationBillingInfo.upcomingSeatChanges.description.generic`,
+                defaultMessage: `{count, plural, one {# seat change} other {# seat changes}}`
+            }
+        })
+    }));
+
+function Pf(e) {
+    "use forget";
+    let t = (0, If.c)(63),
+        {
+            children: n,
+            hideMonetaryAmount: r,
+            menuItems: i,
+            showCreditGrantsMenuItem: a,
+            showRateCardMenuItem: o
+        } = e,
+        s = r !== void 0 && r,
+        c = a === void 0 || a,
+        l = o === void 0 || o,
+        u = mt(),
+        d = et(),
+        f = Oe(),
+        {
+            country: p
+        } = Qt(),
+        m = f?.id,
+        h = m != null && f?.organizationId != null,
+        g;
+    t[0] === f ? g = t[1] : (g = f?.isSelfServeBusiness(), t[0] = f, t[1] = g);
+    let _ = g === !0,
+        v;
+    t[2] !== p || t[3] !== f || t[4] !== _ ? (v = {
+        country: p,
+        currentAccount: f,
+        location: `WorkspaceCreditBalanceSummaryCard`,
+        pricingPlanIsTypeBusiness: _
+    }, t[2] = p, t[3] = f, t[4] = _, t[5] = v) : v = t[5];
+    let y = St(v),
+        b = y?.currency,
+        x = h && y != null,
+        S;
+    t[6] !== p || t[7] !== b || t[8] !== x ? (S = {
+        countryCode: p,
+        currency: b,
+        enabled: x
+    }, t[6] = p, t[7] = b, t[8] = x, t[9] = S) : S = t[9];
+    let {
+        data: C
+    } = E(S), w;
+    t[10] === h ? w = t[11] : (w = {
+        enabled: h
+    }, t[10] = h, t[11] = w);
+    let T = Ot(m, w);
+    if (!h) return null;
+    let D, O, k, A, j, M, ee;
+    if (t[12] !== C || t[13] !== s || t[14] !== u || t[15] !== T.data || t[16] !== T.isPending) {
+        let e = Fn(T.data),
+            n = Zn(e),
+            r = C == null ? null : Kt({
+                amountMinorUnits: Yt({
+                    totalRemainingCredits: e,
+                    checkoutPricingConfig: C
+                }),
+                currency: C.currencyConfig.symbol_code
+            });
+        D = fi, ee = `border-token-border-default bg-token-bg-primary gap-0 rounded-xl border`, M = `flex flex-wrap items-start justify-between gap-4 p-6`, A = `min-w-0`, t[24] === Symbol.for(`react.memo_cache_sentinel`) ? (j = (0, Lf.jsx)(`div`, {
+            className: `text-token-text-primary text-[20px] leading-[25px] font-normal`,
+            children: (0, Lf.jsx)(W, {
+                id: `organizationBillingInfo.creditBalanceSummary.title`,
+                defaultMessage: `Credits balance`
+            })
+        }), t[24] = j) : j = t[24], O = `mt-5 flex flex-wrap items-end gap-x-3 gap-y-2`, k = T.isPending ? (0, Lf.jsxs)(Lf.Fragment, {
+            children: [(0, Lf.jsx)(`div`, {
+                className: `loading-results-shimmer h-12 w-[80px] rounded-sm`
+            }), (0, Lf.jsx)(`div`, {
+                className: `loading-results-shimmer mb-1 h-5 w-[72px] rounded-sm`
+            })]
+        }) : (0, Lf.jsxs)(Lf.Fragment, {
+            children: [(0, Lf.jsx)(`div`, {
+                className: `text-token-text-primary text-5xl leading-none font-medium`,
+                children: u.formatNumber(n, {
+                    style: `decimal`,
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                })
+            }), !s && r != null ? (0, Lf.jsx)(`div`, {
+                className: `text-token-text-secondary pb-1 text-sm`,
+                children: (0, Lf.jsx)(W, {
+                    id: `organizationBillingInfo.creditBalanceSummary.balanceAmount`,
+                    defaultMessage: `/ {amount}`,
+                    values: {
+                        amount: r
+                    }
+                })
+            }) : null]
+        }), t[12] = C, t[13] = s, t[14] = u, t[15] = T.data, t[16] = T.isPending, t[17] = D, t[18] = O, t[19] = k, t[20] = A, t[21] = j, t[22] = M, t[23] = ee
+    } else D = t[17], O = t[18], k = t[19], A = t[20], j = t[21], M = t[22], ee = t[23];
+    let te;
+    t[25] !== O || t[26] !== k ? (te = (0, Lf.jsx)(`div`, {
+        className: O,
+        children: k
+    }), t[25] = O, t[26] = k, t[27] = te) : te = t[27];
+    let N;
+    t[28] === T.isError ? N = t[29] : (N = T.isError ? (0, Lf.jsx)(Br, {
+        className: `text-token-text-secondary mt-3`,
+        children: (0, Lf.jsx)(W, {
+            id: `organizationBillingInfo.creditBalanceSummary.balanceLoadError`,
+            defaultMessage: `Unable to load the current credits balance.`
+        })
+    }) : null, t[28] = T.isError, t[29] = N);
+    let P;
+    t[30] !== A || t[31] !== j || t[32] !== te || t[33] !== N ? (P = (0, Lf.jsxs)(`div`, {
+        className: A,
+        children: [j, te, N]
+    }), t[30] = A, t[31] = j, t[32] = te, t[33] = N, t[34] = P) : P = t[34];
+    let ne;
+    t[35] === u ? ne = t[36] : (ne = u.formatMessage({
+        id: `organizationBillingInfo.creditBalance.moreActions`,
+        defaultMessage: `More actions`
+    }), t[35] = u, t[36] = ne);
+    let re;
+    t[37] === Symbol.for(`react.memo_cache_sentinel`) ? (re = (0, Lf.jsx)(gr, {
+        className: `icon-lg`
+    }), t[37] = re) : re = t[37];
+    let F;
+    t[38] === ne ? F = t[39] : (F = (0, Lf.jsx)(In.Trigger, {
+        "aria-label": ne,
+        className: `hover:bg-token-bg-secondary text-token-text-secondary hover:text-token-text-primary rounded-md p-2`,
+        children: re
+    }), t[38] = ne, t[39] = F);
+    let I;
+    t[40] !== d || t[41] !== c ? (I = c ? (0, Lf.jsx)(In.Item, {
+        icon: xr,
+        onClick: () => d(`/admin/billing/credit_grants`),
+        children: (0, Lf.jsx)(W, {
+            id: `organizationBillingInfo.creditBalance.viewCreditGrantsMenuItem`,
+            defaultMessage: `View credit grants`
+        })
+    }) : null, t[40] = d, t[41] = c, t[42] = I) : I = t[42];
+    let ie;
+    t[43] === l ? ie = t[44] : (ie = l ? (0, Lf.jsx)(In.Item, {
+        icon: cr,
+        onClick: Ff,
+        children: (0, Lf.jsx)(W, {
+            id: `organizationBillingInfo.creditBalance.viewRateCardMenuItem`,
+            defaultMessage: `View rate card`
+        })
+    }) : null, t[43] = l, t[44] = ie);
+    let L;
+    t[45] !== i || t[46] !== I || t[47] !== ie ? (L = (0, Lf.jsx)(In.Portal, {
+        children: (0, Lf.jsxs)(In.Content, {
+            size: `small`,
+            align: `end`,
+            children: [i, I, ie]
+        })
+    }), t[45] = i, t[46] = I, t[47] = ie, t[48] = L) : L = t[48];
+    let R;
+    t[49] !== F || t[50] !== L ? (R = (0, Lf.jsxs)(In.Root, {
+        children: [F, L]
+    }), t[49] = F, t[50] = L, t[51] = R) : R = t[51];
+    let z;
+    t[52] !== M || t[53] !== P || t[54] !== R ? (z = (0, Lf.jsxs)(`div`, {
+        className: M,
+        children: [P, R]
+    }), t[52] = M, t[53] = P, t[54] = R, t[55] = z) : z = t[55];
+    let ae;
+    t[56] === n ? ae = t[57] : (ae = n == null ? null : (0, Lf.jsx)(`div`, {
+        className: `border-token-border-default border-t px-6 py-4`,
+        children: n
+    }), t[56] = n, t[57] = ae);
+    let B;
+    return t[58] !== D || t[59] !== ee || t[60] !== z || t[61] !== ae ? (B = (0, Lf.jsxs)(D, {
+        className: ee,
+        children: [z, ae]
+    }), t[58] = D, t[59] = ee, t[60] = z, t[61] = ae, t[62] = B) : B = t[62], B
+}
+
+function Ff() {
+    window.open(Ci, `_blank`, `noopener,noreferrer`)
+}
+var If, Lf, Rf = e((() => {
+    If = pt(), rr(), Gt(), qa(), Ni(), Mn(), Vt(), fr(), _r(), pr(), Zt(), Me(), d(), rt(), nt(), Lf = qe()
+}));
+
+function zf(e) {
+    "use forget";
+    let t = (0, Wf.c)(17),
+        n, r, i;
+    t[0] === e ? (n = t[1], r = t[2], i = t[3]) : ({
+        showAtOverageLimitBanner: r,
+        usageData: i,
+        ...n
+    } = e, t[0] = e, t[1] = n, t[2] = r, t[3] = i);
+    let a;
+    t[4] !== n || t[5] !== r || t[6] !== i.data || t[7] !== i.status ? (a = i.status === `success` && (0, Y.jsx)(Bf, {
+        ...n,
+        showAtOverageLimitBanner: r,
+        usageData: i.data
+    }), t[4] = n, t[5] = r, t[6] = i.data, t[7] = i.status, t[8] = a) : a = t[8];
+    let o;
+    t[9] === i.status ? o = t[10] : (o = i.status === `pending` && (0, Y.jsxs)(Y.Fragment, {
+        children: [(0, Y.jsx)(qf, {
+            className: `h-[28px] w-[230px] opacity-50`
+        }), (0, Y.jsx)(qf, {
+            className: `my-2 h-[20px] w-full`
+        }), (0, Y.jsx)(qf, {
+            className: `mb-[4px] h-[20px] w-[350px] opacity-50`
+        })]
+    }), t[9] = i.status, t[10] = o);
+    let s;
+    t[11] === i.status ? s = t[12] : (s = i.status === `error` && (0, Y.jsx)(`div`, {
+        className: `h-[90px]`,
+        children: (0, Y.jsx)(Le, {
+            className: `text-token-interactive-label-danger-secondary-default`
+        })
+    }), t[11] = i.status, t[12] = s);
+    let c;
+    return t[13] !== a || t[14] !== o || t[15] !== s ? (c = (0, Y.jsxs)(`div`, {
+        className: `mt-6 w-full`,
+        children: [a, o, s]
+    }), t[13] = a, t[14] = o, t[15] = s, t[16] = c) : c = t[16], c
+}
+
+function Bf(e) {
+    "use forget";
+    let t = (0, Wf.c)(46),
+        {
+            showAtOverageLimitBanner: n,
+            usageData: r,
+            denominator: i,
+            isCurrentCycle: a
+        } = e,
+        {
+            total_usage: o,
+            usage_detail: s,
+            current_balance: c
+        } = r,
+        l = mt(),
+        [u, d] = (0, Gf.useState)(),
+        f, p, m, h;
+    if (t[0] !== c || t[1] !== i || t[2] !== u || t[3] !== l || t[4] !== a || t[5] !== n || t[6] !== o || t[7] !== s) {
+        let e = s,
+            r;
+        t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (r = [], t[12] = r) : r = t[12];
+        let _ = r,
+            v = l.formatMessage(Yf.otherBarLabel);
+        e.length > Kf && (_ = e.slice(Kf - 1), e = [...e.slice(0, Kf - 1), {
+            label: v,
+            amount: _.reduce(Uf, 0)
+        }]);
+        let y = l.formatMessage(Yf.currentBalanceBarLabel),
+            b = {
+                ...e.reduce(Hf, {}),
+                [y]: c
+            },
+            x = o + Math.max(c, 0),
+            S = [b],
+            C = a && o > 0 && o >= i ? `text-token-interactive-label-danger-secondary-default` : `text-token-text-primary`,
+            w;
+        t[13] === C ? w = t[14] : (w = g(`font-medium`, C), t[13] = C, t[14] = w);
+        let T;
+        t[15] === o ? T = t[16] : (T = Ss.format(o), t[15] = o, t[16] = T);
+        let E;
+        t[17] !== w || t[18] !== T ? (E = (0, Y.jsx)(`span`, {
+            className: w,
+            children: T
+        }), t[17] = w, t[18] = T, t[19] = E) : E = t[19];
+        let D;
+        t[20] !== i || t[21] !== a ? (D = a && (0, Y.jsxs)(Y.Fragment, {
+            children: [(0, Y.jsx)(`span`, {
+                children: `/`
+            }), (0, Y.jsx)(`span`, {
+                children: Ss.format(i)
+            })]
+        }), t[20] = i, t[21] = a, t[22] = D) : D = t[22];
+        let O;
+        t[23] !== D || t[24] !== E ? (O = (0, Y.jsxs)(`span`, {
+            className: `flex items-center gap-1 text-xl`,
+            children: [E, D]
+        }), t[23] = D, t[24] = E, t[25] = O) : O = t[25];
+        let k;
+        t[26] !== i || t[27] !== a || t[28] !== o ? (k = (0, Y.jsx)(`span`, {
+            children: a ? (0, Y.jsx)(W, {
+                ...Yf.creditsUsed,
+                values: {
+                    percentage: (i === 0 ? 1 : o / i).toLocaleString(void 0, {
+                        style: `percent`
+                    })
+                }
+            }) : (0, Y.jsx)(W, {
+                ...Yf.historicalCreditsUsed
+            })
+        }), t[26] = i, t[27] = a, t[28] = o, t[29] = k) : k = t[29];
+        let A;
+        t[30] !== O || t[31] !== k ? (A = (0, Y.jsxs)(`div`, {
+            className: `text-token-text-secondary flex items-center gap-1`,
+            children: [O, k]
+        }), t[30] = O, t[31] = k, t[32] = A) : A = t[32];
+        let j;
+        t[33] !== a || t[34] !== n ? (j = a && n && (0, Y.jsxs)(`div`, {
+            className: `text-token-interactive-label-danger-secondary-default bg-token-bg-status-error flex items-center gap-1 rounded-md p-1 text-xs`,
+            children: [(0, Y.jsx)(Le, {
+                className: `h-4 w-4`
+            }), (0, Y.jsx)(W, {
+                ...Yf.overageLimitReachedWarning
+            })]
+        }), t[33] = a, t[34] = n, t[35] = j) : j = t[35], t[36] !== A || t[37] !== j ? (m = (0, Y.jsxs)(`div`, {
+            className: `flex items-center justify-between`,
+            children: [A, j]
+        }), t[36] = A, t[37] = j, t[38] = m) : m = t[38], h = x !== 0 && (0, Y.jsx)(fo, {
+            className: `relative z-1 my-2`,
+            width: `100%`,
+            height: 20,
+            children: (0, Y.jsxs)(mo, {
+                data: S,
+                layout: `vertical`,
+                margin: {
+                    top: 0,
+                    right: 0,
+                    left: 0,
+                    bottom: 0
+                },
+                children: [(0, Y.jsx)(po, {
+                    type: `number`,
+                    hide: !0,
+                    domain: [0, x]
+                }), (0, Y.jsx)(go, {
+                    type: `category`,
+                    hide: !0
+                }), (0, Y.jsx)(_o, {
+                    isAnimationActive: !1,
+                    content: (0, Y.jsx)(Jf, {
+                        hoveredSegment: u,
+                        barMaximum: x,
+                        additionalSeries: u === v ? _ : void 0
+                    }),
+                    cursor: !1
+                }), e.map((t, n) => {
+                    let {
+                        label: r
+                    } = t, i = n === 0, a = n === e.length - 1 && c <= 0;
+                    return (0, Y.jsx)(lo, {
+                        dataKey: r,
+                        stackId: `a`,
+                        id: r,
+                        isAnimationActive: !1,
+                        onMouseOver: () => d(r),
+                        onMouseOut: () => d(void 0),
+                        radius: i ? a ? [4, 4, 4, 4] : [4, 0, 0, 4] : a ? [0, 4, 4, 0] : void 0,
+                        children: (0, Y.jsx)(uo, {
+                            fill: Ko[n],
+                            opacity: u && r !== u ? .8 : 1,
+                            className: `transition-opacity duration-200 ease-in-out`
+                        })
+                    }, r)
+                }), c > 0 && (0, Y.jsx)(lo, {
+                    dataKey: y,
+                    stackId: `a`,
+                    isAnimationActive: !1,
+                    onMouseOver: () => d(y),
+                    onMouseOut: () => d(void 0),
+                    radius: [0, 4, 4, 0],
+                    children: (0, Y.jsx)(uo, {
+                        fill: `#979797`,
+                        opacity: .15
+                    })
+                })]
+            })
+        }), f = `text-token-text-primary flex w-full flex-wrap items-center justify-start text-sm`, p = e.map(Vf), t[0] = c, t[1] = i, t[2] = u, t[3] = l, t[4] = a, t[5] = n, t[6] = o, t[7] = s, t[8] = f, t[9] = p, t[10] = m, t[11] = h
+    } else f = t[8], p = t[9], m = t[10], h = t[11];
+    let _;
+    t[39] !== f || t[40] !== p ? (_ = (0, Y.jsx)(`div`, {
+        className: f,
+        children: p
+    }), t[39] = f, t[40] = p, t[41] = _) : _ = t[41];
+    let v;
+    return t[42] !== m || t[43] !== h || t[44] !== _ ? (v = (0, Y.jsxs)(Y.Fragment, {
+        children: [m, h, _]
+    }), t[42] = m, t[43] = h, t[44] = _, t[45] = v) : v = t[45], v
+}
+
+function Vf(e, t) {
+    let {
+        label: n
+    } = e;
+    return (0, Y.jsxs)(`div`, {
+        className: `me-6 mb-1 flex cursor-default items-center`,
+        title: n,
+        children: [(0, Y.jsx)(`div`, {
+            className: `me-1 h-2 w-2 rounded-[1px]`,
+            style: {
+                backgroundColor: Ko[t]
+            }
+        }), (0, Y.jsx)(`span`, {
+            className: `me-1 max-w-32 overflow-hidden text-ellipsis whitespace-nowrap`,
+            children: n
+        })]
+    }, n)
+}
+
+function Hf(e, t) {
+    let {
+        label: n,
+        amount: r
+    } = t;
+    return {
+        ...e,
+        [n]: r
+    }
+}
+
+function Uf(e, t) {
+    let {
+        amount: n
+    } = t;
+    return e + n
+}
+var Wf, Gf, Y, Kf, qf, Jf, Yf, Xf = e((() => {
+    Wf = pt(), xs(), Go(), Ae(), Ne(), Gf = n(at()), rt(), ho(), o(), Y = qe(), Kf = 5, qf = we.div`loading-results-shimmer rounded-sm`, Jf = e => {
+        "use forget";
+        let t = (0, Wf.c)(16),
+            {
+                active: n,
+                payload: r,
+                hoveredSegment: i,
+                barMaximum: a,
+                additionalSeries: o
+            } = e;
+        if (!(n && r && i)) return null;
+        let s;
+        t[0] === a ? s = t[1] : (s = e => (0, Y.jsxs)(`span`, {
+            children: [(0, Y.jsx)(`span`, {
+                className: `font-semibold`,
+                children: Ss.format(e)
+            }), ` (`, (e / a).toLocaleString(void 0, {
+                style: `percent`
+            }), `)`]
+        }), t[0] = a, t[1] = s);
+        let c = s,
+            l = r[0]?.payload?.[i] ?? 0,
+            u;
+        t[2] === i ? u = t[3] : (u = (0, Y.jsx)(`div`, {
+            children: i
+        }), t[2] = i, t[3] = u);
+        let d;
+        t[4] !== c || t[5] !== l ? (d = (0, Y.jsx)(`div`, {
+            children: c(l)
+        }), t[4] = c, t[5] = l, t[6] = d) : d = t[6];
+        let f;
+        t[7] !== u || t[8] !== d ? (f = (0, Y.jsxs)(`div`, {
+            children: [u, d]
+        }), t[7] = u, t[8] = d, t[9] = f) : f = t[9];
+        let p;
+        t[10] !== o || t[11] !== c ? (p = o && (0, Y.jsx)(`div`, {
+            className: `border-token-border-default mt-1 border-t pt-1`,
+            children: o.map(e => {
+                let {
+                    label: t,
+                    amount: n
+                } = e;
+                return (0, Y.jsxs)(`div`, {
+                    className: `flex items-center justify-between gap-2`,
+                    children: [(0, Y.jsx)(`span`, {
+                        children: t
+                    }), c(n)]
+                }, t)
+            })
+        }), t[10] = o, t[11] = c, t[12] = p) : p = t[12];
+        let m;
+        return t[13] !== f || t[14] !== p ? (m = (0, Y.jsxs)(`div`, {
+            className: `border-token-border-heavy bg-token-bg-primary relative z-100 flex flex-col gap-1 rounded-lg border p-2 shadow-md`,
+            children: [f, p]
+        }), t[13] = f, t[14] = p, t[15] = m) : m = t[15], m
+    }, Yf = Qe({
+        creditsUsed: {
+            id: `organizationBillingInfo.creditUsageSettings.creditsUsed`,
+            defaultMessage: `credits used ({percentage})`
+        },
+        historicalCreditsUsed: {
+            id: `organizationBillingInfo.creditUsageSettings.historicalCreditsUsed`,
+            defaultMessage: `credits used`
+        },
+        otherBarLabel: {
+            id: `organizationBillingInfo.creditUsageSettings.otherBarLabel`,
+            defaultMessage: `Other`
+        },
+        currentBalanceBarLabel: {
+            id: `organizationBillingInfo.creditUsageSettings.currentBalanceBarLabel`,
+            defaultMessage: `Remaining credits`
+        },
+        overageLimitReachedWarning: {
+            id: `organizationBillingInfo.creditUsageSettings.overageLimitReachedWarning`,
+            defaultMessage: `Limit reached`
+        }
+    })
+}));
+
+function Zf({
+    cycleOptions: e,
+    mostRecentExportResult: t
+}) {
+    "use no forget";
+    return (0, np.jsx)(In.Item, {
+        onClick: () => fe(Qf, {
+            cycleOptions: e,
+            mostRecentExportResult: t
+        }),
+        disabled: e.length === 0,
+        secondary: t && (0, np.jsx)(W, {
+            ...Du.buttonDescription,
+            values: {
+                date: new Date(t)
+            }
+        }),
+        label: (0, np.jsx)(W, {
+            ...Du.buttonText
+        }),
+        icon: vr
+    })
+}
+
+function Qf({
+    cycleOptions: e,
+    mostRecentExportResult: t,
+    onClose: n
+}) {
+    "use no forget";
+    let r = mt(),
+        {
+            disabled: a,
+            downloadUsageReport: o,
+            generating: s
+        } = zu(),
+        [c, l] = (0, tp.useState)(String(e[0]?.cycleIndex ?? 0)),
+        u = (0, tp.useRef)(c),
+        d = (0, tp.useMemo)(() => e.map(e => ({
+            value: String(e.cycleIndex),
+            dateRange: ep({
+                intl: r,
+                option: e
+            }),
+            secondaryLabel: e.cycleIndex === 0 ? r.formatMessage(rp.currentBillingPeriod) : null
+        })), [e, r]),
+        f = e.find(e => String(e.cycleIndex) === c),
+        p = e => {
+            u.current = e, l(e)
+        },
+        m = async () => {
+            let t = e.find(e => String(e.cycleIndex) === u.current);
+            t != null && (await o(t), n())
+        };
+    return (0, np.jsx)(O, {
+        testId: `modal-download-usage-report-period`,
+        isOpen: !0,
+        onClose: n,
+        title: (0, np.jsx)(W, {
+            ...Du.buttonText
+        }),
+        description: (0, np.jsx)($f, {
+            mostRecentExportResult: t
+        }),
+        hideSeparator: !0,
+        noPadding: !0,
+        showCloseButton: !0,
+        size: `normal`,
+        contentClassName: `grow-0`,
+        footerClassName: `px-6 pb-6 pt-5`,
+        primaryButton: (0, np.jsx)(i, {
+            className: `min-w-[96px]`,
+            loading: s,
+            disabled: a || f == null,
+            onClick: m,
+            children: (0, np.jsx)(W, {
+                ...rp.downloadButton
+            })
+        }),
+        children: (0, np.jsxs)(`div`, {
+            className: `px-6 pb-6`,
+            children: [(0, np.jsx)(`div`, {
+                className: `mb-2 font-medium`,
+                children: (0, np.jsx)(W, {
+                    ...rp.billingCycleLabel
+                })
+            }), (0, np.jsx)(`div`, {
+                role: `radiogroup`,
+                "aria-label": r.formatMessage(rp.billingCycleLabel),
+                className: `border-token-border-default max-h-80 overflow-y-auto rounded-lg border`,
+                children: d.map(e => {
+                    let t = c === e.value;
+                    return (0, np.jsxs)(`button`, {
+                        type: `button`,
+                        role: `radio`,
+                        "aria-checked": t,
+                        onClick: () => p(e.value),
+                        className: `border-token-border-default hover:bg-token-bg-secondary flex min-h-14 w-full cursor-pointer items-center justify-between gap-4 border-b px-4 py-2.5 text-start text-sm last:border-b-0 ${t?`bg-token-bg-secondary`:``}`,
+                        children: [(0, np.jsxs)(`span`, {
+                            className: `min-w-0`,
+                            children: [(0, np.jsx)(`span`, {
+                                className: `block truncate`,
+                                children: e.dateRange
+                            }), e.secondaryLabel && (0, np.jsx)(`span`, {
+                                className: `text-token-text-tertiary mt-0.5 block text-xs`,
+                                children: e.secondaryLabel
+                            })]
+                        }), t && (0, np.jsx)(hr, {
+                            className: `text-token-text-primary h-4 w-4 shrink-0`
+                        })]
+                    }, e.value)
+                })
+            })]
+        })
+    })
+}
+
+function $f({
+    mostRecentExportResult: e
+}) {
+    "use no forget";
+    return e ? (0, np.jsx)(W, {
+        ...rp.descriptionWithFreshness,
+        values: {
+            date: new Date(e)
+        }
+    }) : (0, np.jsx)(W, {
+        ...rp.description
+    })
+}
+
+function ep({
+    intl: e,
+    option: t
+}) {
+    return e.formatMessage(rp.billingPeriodDateRange, {
+        start: qt(t.start, `MMM d, yyyy`),
+        end: qt(t.end, `MMM d, yyyy`)
+    })
+}
+var tp, np, rp, ip = e((() => {
+        pe(), Vt(), Mr(), lr(), s(), le(), dn(), tp = n(at()), rt(), Hu(), Ou(), np = qe(), rp = Qe({
+            description: {
+                id: `organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.description`,
+                defaultMessage: `Choose a billing cycle to export as CSV.`
+            },
+            descriptionWithFreshness: {
+                id: `organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.descriptionWithFreshness`,
+                defaultMessage: `Choose a billing cycle to export as CSV. Updated {date, date}.`
+            },
+            billingCycleLabel: {
+                id: `organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.billingCycleLabel`,
+                defaultMessage: `Billing cycle`
+            },
+            billingPeriodDateRange: {
+                id: `organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.billingPeriodDateRange`,
+                defaultMessage: `{start} - {end}`
+            },
+            currentBillingPeriod: {
+                id: `organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.currentBillingPeriod`,
+                defaultMessage: `Current period`
+            },
+            downloadButton: {
+                id: `organizationBillingInfo.creditUsageSettings.downloadUsageReportPeriodModal.downloadButton`,
+                defaultMessage: `Download`
+            }
+        })
+    })),
+    ap = t({
+        OVERAGE_LIMIT_DESCRIPTION: () => up,
+        OverageLimitModal: () => op
+    });
+
+function op({
+    currentLimit: e,
+    onClose: t,
+    onSubmit: n
+}) {
+    let r = mt(),
+        [a, o] = (0, sp.useState)(!1),
+        [s, c] = (0, sp.useState)(e),
+        l = s !== e && (s == null || Number.isInteger(s) && s >= 0),
+        u = async () => {
+            if (l) {
+                o(!0);
+                try {
+                    await n(s), t()
+                } finally {
+                    o(!1)
+                }
+            }
+        };
+    return (0, cp.jsx)(O, {
+        testId: `modal-overage-limit`,
+        isOpen: !0,
+        onClose: t,
+        type: `success`,
+        title: (0, cp.jsx)(W, {
+            ...lp.title
+        }),
+        hideSeparator: !0,
+        noPadding: !0,
+        showCloseButton: !0,
+        size: `large`,
+        footerClassName: `p-6 pt-0`,
+        primaryButton: (0, cp.jsx)(i, {
+            className: `min-w-[80px]`,
+            loading: a,
+            disabled: !l,
+            onClick: u,
+            children: (0, cp.jsx)(W, {
+                ...lp.saveButton
+            })
+        }),
+        secondaryButton: (0, cp.jsx)(i, {
+            onClick: () => c(null),
+            color: `secondary`,
+            disabled: s == null,
+            children: (0, cp.jsx)(W, {
+                ...lp.clearButton
+            })
+        }),
+        children: (0, cp.jsxs)(`div`, {
+            className: `px-6 pb-6`,
+            children: [(0, cp.jsx)(`div`, {
+                className: `text-token-text-secondary text-sm`,
+                children: (0, cp.jsx)(W, {
+                    ...up
+                })
+            }), (0, cp.jsx)(yo, {
+                htmlFor: `overage-limit-field`,
+                className: `mt-4 mb-2 block font-medium`,
+                children: (0, cp.jsx)(W, {
+                    ...lp.fieldLabel
+                })
+            }), (0, cp.jsx)($o, {
+                value: s,
+                name: `overage-limit-field`,
+                onChange: c,
+                onPressEnter: u,
+                placeholder: r.formatMessage(lp.emptyFieldPlaceholder)
+            }), (0, cp.jsx)(`div`, {
+                className: g(`text-token-text-secondary pt-1 text-xs`, s == null && `invisible`),
+                children: (0, cp.jsx)(W, {
+                    ...lp.helpText
+                })
+            })]
+        })
+    })
+}
+var sp, cp, lp, up, dp = e((() => {
+    pe(), s(), vo(), Ne(), sp = n(at()), rt(), Qo(), cp = qe(), lp = Qe({
+        title: {
+            id: `organizationBillingInfo.creditUsageSettings.overageLimitModal.title`,
+            defaultMessage: `Add overage limit`
+        },
+        fieldLabel: {
+            id: `organizationBillingInfo.creditUsageSettings.overageLimitModal.fieldLabel`,
+            defaultMessage: `Overage limit`
+        },
+        emptyFieldPlaceholder: {
+            id: `organizationBillingInfo.creditUsageSettings.overageLimitModal.emptyFieldPlaceholder`,
+            defaultMessage: `None`
+        },
+        helpText: {
+            id: `organizationBillingInfo.creditUsageSettings.overageLimitModal.helpText`,
+            defaultMessage: `Advanced access will pause if your org exceeds your credit balance and the allowed overage.`
+        },
+        saveButton: {
+            id: `organizationBillingInfo.creditUsageSettings.overageLimitModal.saveButton`,
+            defaultMessage: `Save`
+        },
+        clearButton: {
+            id: `organizationBillingInfo.creditUsageSettings.overageLimitModal.clearButton`,
+            defaultMessage: `Clear`
+        }
+    }), up = Xe({
+        id: `organizationBillingInfo.creditUsageSettings.overageLimitDescription`,
+        defaultMessage: `Your org can continue to use advanced features and models beyond your plan. Add an overage limit to control this amount.`
+    })
+}));
+
+function fp(e) {
+    "use forget";
+    let t = (0, vp.c)(161),
+        {
+            canLoadAtOverageLimitBanner: n,
+            variant: r
+        } = e,
+        a = n !== void 0 && n,
+        o = r === void 0 ? `full` : r,
+        [s, c] = (0, yp.useState)(!1),
+        l = mt(),
+        u = Oe(),
+        d = u?.id,
+        f = u?.id != null,
+        p;
+    t[0] !== d || t[1] !== f ? (p = {
+        activeWorkspaceId: d,
+        enabled: f
+    }, t[0] = d, t[1] = f, t[2] = p) : p = t[2];
+    let {
+        creditsConfig: m
+    } = Xn(p), h;
+    t[3] === m ? h = t[4] : (h = ln(m), t[3] = m, t[4] = h);
+    let _ = h,
+        v = u?.organizationId,
+        y;
+    t[5] === v ? y = t[6] : (y = [`subscription-settings`, v], t[5] = v, t[6] = y);
+    let b = y,
+        C;
+    t[7] === u?.organizationId ? C = t[8] : (C = () => S.safeGet(`/subscriptions/{organization_id}/settings`, {
+        parameters: {
+            path: {
+                organization_id: u?.organizationId
+            }
+        }
+    }), t[7] = u?.organizationId, t[8] = C);
+    let w = Uu(C),
+        T = u?.organizationId != null,
+        E;
+    t[9] !== b || t[10] !== w || t[11] !== T ? (E = {
+        queryKey: b,
+        queryFn: w,
+        enabled: T
+    }, t[9] = b, t[10] = w, t[11] = T, t[12] = E) : E = t[12];
+    let D = tt(E),
+        O = $e(),
+        k;
+    t[13] === u?.organizationId ? k = t[14] : (k = e => S.safePost(`/subscriptions/{organization_id}/settings/limit`, {
+        parameters: {
+            path: {
+                organization_id: u?.organizationId
+            }
+        },
+        requestBody: {
+            overage_limit: e == null ? e : {
+                type: `absolute`,
+                credits: e
+            }
+        }
+    }), t[13] = u?.organizationId, t[14] = k);
+    let A = Uu(k),
+        j;
+    t[15] !== u?.organizationId || t[16] !== O || t[17] !== b ? (j = () => {
+        O.invalidateQueries({
+            queryKey: b
+        }), O.invalidateQueries({
+            queryKey: ro(u?.organizationId)
+        })
+    }, t[15] = u?.organizationId, t[16] = O, t[17] = b, t[18] = j) : j = t[18];
+    let M;
+    t[19] !== A || t[20] !== j ? (M = {
+        mutationFn: A,
+        onSuccess: j
+    }, t[19] = A, t[20] = j, t[21] = M) : M = t[21];
+    let te = ut(M),
+        N;
+    t[22] === u?.organizationId ? N = t[23] : (N = e => {
+        let {
+            recipients: t,
+            thresholds: n
+        } = e;
+        return S.safePost(`/subscriptions/{organization_id}/settings/alerts`, {
+            parameters: {
+                path: {
+                    organization_id: u?.organizationId
+                }
+            },
+            requestBody: {
+                alert_recipients: t,
+                alert_thresholds: n
+            }
+        })
+    }, t[22] = u?.organizationId, t[23] = N);
+    let P = Uu(N),
+        ne;
+    t[24] !== O || t[25] !== b ? (ne = () => {
+        O.invalidateQueries({
+            queryKey: b
+        })
+    }, t[24] = O, t[25] = b, t[26] = ne) : ne = t[26];
+    let re;
+    t[27] !== P || t[28] !== ne ? (re = {
+        mutationFn: P,
+        onSuccess: ne
+    }, t[27] = P, t[28] = ne, t[29] = re) : re = t[29];
+    let {
+        mutateAsync: F
+    } = ut(re), [L, R] = (0, yp.useState)(0), z = L === 0, B = Yr(L), oe = eo(), V = u != null && u.id != null && u.organizationId != null && B !== `pending` && _ != null, H = u?.organizationId, se = B !== `pending` && B.start, ce = B !== `pending` && B.end, le;
+    t[30] !== H || t[31] !== se || t[32] !== ce ? (le = [`organization-usage`, H, se, ce], t[30] = H, t[31] = se, t[32] = ce, t[33] = le) : le = t[33];
+    let ue;
+    t[34] !== u || t[35] !== B || t[36] !== V ? (ue = () => {
+        if (!V) throw Error(`Query not enabled`);
+        return S.safeGet(`/subscriptions/{organization_id}/usage`, {
+            parameters: {
+                path: {
+                    organization_id: u.organizationId
+                },
+                query: {
+                    start_date: B.start.toISOString(),
+                    end_date: B.end.toISOString()
+                }
+            }
+        })
+    }, t[34] = u, t[35] = B, t[36] = V, t[37] = ue) : ue = t[37];
+    let de = Uu(ue),
+        pe;
+    t[38] !== V || t[39] !== le || t[40] !== de ? (pe = {
+        queryKey: le,
+        queryFn: de,
+        enabled: V
+    }, t[38] = V, t[39] = le, t[40] = de, t[41] = pe) : pe = t[41];
+    let me = tt(pe),
+        he = u?.id,
+        _e;
+    t[42] === he ? _e = t[43] : (_e = [`usage-export-data-freshness`, he], t[42] = he, t[43] = _e);
+    let ve;
+    t[44] !== u || t[45] !== V ? (ve = () => {
+        if (!V) throw Error(`Query not enabled`);
+        return S.safeGet(`/subscriptions/{workspace_id}/usage/export_data_freshness`, {
+            parameters: {
+                path: {
+                    workspace_id: u.id
+                }
+            }
+        })
+    }, t[44] = u, t[45] = V, t[46] = ve) : ve = t[46];
+    let ye = Uu(ve),
+        xe;
+    t[47] !== V || t[48] !== _e || t[49] !== ye ? (xe = {
+        queryKey: _e,
+        queryFn: ye,
+        enabled: V
+    }, t[47] = V, t[48] = _e, t[49] = ye, t[50] = xe) : xe = t[50];
+    let Se = tt(xe),
+        Ce;
+    t[51] === a ? Ce = t[52] : (Ce = {
+        canLoadBanner: a
+    }, t[51] = a, t[52] = Ce);
+    let we = Ri(Ce),
+        U, Te;
+    if (t[53] === V ? (U = t[54], Te = t[55]) : (U = () => {
+            V && I.logEventWithStatsig(`ChatGPT Credits: Admin Section Shown`, `chatgpt_credits_admin_section_shown`)
+        }, Te = [V], t[53] = V, t[54] = U, t[55] = Te), (0, yp.useEffect)(U, Te), !V || _ == null) return null;
+    if (_.kind === `business`) {
+        if (o === `enterpriseOverageOnly` || !_.can_view_credit_usage) return null;
+        let e = me.data?.current_balance ?? 0;
+        u?.isSelfServeBusiness() && (e = Math.max(e, 0));
+        let n = (me.data?.total_usage ?? 0) + e,
+            r;
+        t[56] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, X.jsx)(ji, {
+            children: (0, X.jsx)(W, {
+                ...wp.creditUsageSectionTitle
+            })
+        }), t[56] = r) : r = t[56];
+        let a;
+        t[57] !== B || t[58] !== z ? (a = (0, X.jsxs)(`div`, {
+            children: [r, (0, X.jsx)(Br, {
+                className: `text-token-text-secondary mt-1 text-xs`,
+                children: z ? (0, X.jsx)(W, {
+                    ...wp.daysLeft,
+                    values: {
+                        days: Gn(new Date(B.end.getTime() + B.end.getTimezoneOffset() * 60 * 1e3), new Date)
+                    }
+                }) : (0, X.jsx)(W, {
+                    ...wp.cycleDateSpan,
+                    values: {
+                        ...B
+                    }
+                })
+            })]
+        }), t[57] = B, t[58] = z, t[59] = a) : a = t[59];
+        let l;
+        t[60] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, X.jsx)(In.Trigger, {
+            className: `px-2`,
+            children: (0, X.jsx)(gr, {
+                className: `icon-lg`
+            })
+        }), t[60] = l) : l = t[60];
+        let d;
+        t[61] !== _.can_download_usage_report || t[62] !== B || t[63] !== Se ? (d = _.can_download_usage_report ? (0, X.jsx)(Ru, {
+            cycle: B,
+            mostRecentExportResult: Se.data?.most_recent_result
+        }) : null, t[61] = _.can_download_usage_report, t[62] = B, t[63] = Se, t[64] = d) : d = t[64];
+        let f;
+        t[65] !== _.can_view_rate_card || t[66] !== u.id || t[67] !== u.name ? (f = _.can_view_rate_card ? (0, X.jsx)(Re, {
+            icon: cr,
+            to: Cp,
+            target: `_blank`,
+            rel: `noopener noreferrer`,
+            onClick: () => {
+                I.logEventWithStatsig(`ChatGPT Credits: Rate Card Link Clicked`, `chatgpt_credits_rate_card_link_clicked`, {
+                    workspaceId: u.id,
+                    workspaceName: u.name
+                })
+            },
+            children: (0, X.jsx)(W, {
+                ...wp.rateCardLink
+            })
+        }) : null, t[65] = _.can_view_rate_card, t[66] = u.id, t[67] = u.name, t[68] = f) : f = t[68];
+        let p;
+        t[69] !== d || t[70] !== f ? (p = (0, X.jsxs)(In.Root, {
+            children: [l, (0, X.jsx)(In.Portal, {
+                children: (0, X.jsxs)(In.Content, {
+                    size: `small`,
+                    align: `end`,
+                    children: [d, f]
+                })
+            })]
+        }), t[69] = d, t[70] = f, t[71] = p) : p = t[71];
+        let m = B.period === `monthly`,
+            h = B.period !== `monthly`,
+            v;
+        t[72] !== m || t[73] !== h ? (v = g(`items-center`, {
+            flex: m,
+            hidden: h
+        }), t[72] = m, t[73] = h, t[74] = v) : v = t[74];
+        let y;
+        t[75] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, X.jsx)(`div`, {
+            className: `bg-token-border-heavy me-2 h-full w-px`,
+            children: `\xA0`
+        }), t[75] = y) : y = t[75];
+        let b;
+        t[76] !== u.id || t[77] !== u.name || t[78] !== L ? (b = () => {
+            R(gp), I.logEventWithStatsig(`ChatGPT Credits: Usage Time Travel`, `chatgpt_credits_usage_time_travel`, {
+                workspaceId: u.id,
+                workspaceName: u.name,
+                direction: `back`,
+                cycleIndex: L - 1
+            })
+        }, t[76] = u.id, t[77] = u.name, t[78] = L, t[79] = b) : b = t[79];
+        let S = L < -11,
+            C;
+        t[80] !== b || t[81] !== S ? (C = (0, X.jsx)(i, {
+            className: `px-2`,
+            color: `ghost`,
+            onClick: b,
+            disabled: S,
+            icon: x
+        }), t[80] = b, t[81] = S, t[82] = C) : C = t[82];
+        let w;
+        t[83] !== u.id || t[84] !== u.name || t[85] !== L ? (w = () => {
+            R(hp), I.logEventWithStatsig(`ChatGPT Credits: Usage Time Travel`, `chatgpt_credits_usage_time_travel`, {
+                workspaceId: u.id,
+                workspaceName: u.name,
+                direction: `forward`,
+                cycleIndex: L + 1
+            })
+        }, t[83] = u.id, t[84] = u.name, t[85] = L, t[86] = w) : w = t[86];
+        let T;
+        t[87] !== z || t[88] !== w ? (T = (0, X.jsx)(i, {
+            className: `px-2`,
+            color: `ghost`,
+            onClick: w,
+            disabled: z,
+            icon: Or
+        }), t[87] = z, t[88] = w, t[89] = T) : T = t[89];
+        let E;
+        t[90] !== v || t[91] !== C || t[92] !== T ? (E = (0, X.jsxs)(`div`, {
+            className: v,
+            children: [y, C, T]
+        }), t[90] = v, t[91] = C, t[92] = T, t[93] = E) : E = t[93];
+        let O;
+        t[94] !== p || t[95] !== E ? (O = (0, X.jsxs)(`div`, {
+            className: `-me-2 -mt-2 flex items-center`,
+            children: [p, E]
+        }), t[94] = p, t[95] = E, t[96] = O) : O = t[96];
+        let k;
+        t[97] !== a || t[98] !== O ? (k = (0, X.jsxs)(`div`, {
+            className: `flex items-start justify-between`,
+            children: [a, O]
+        }), t[97] = a, t[98] = O, t[99] = k) : k = t[99];
+        let A;
+        t[100] !== we || t[101] !== n || t[102] !== z || t[103] !== me ? (A = (0, X.jsx)(zf, {
+            showAtOverageLimitBanner: we,
+            usageData: me,
+            denominator: n,
+            isCurrentCycle: z
+        }), t[100] = we, t[101] = n, t[102] = z, t[103] = me, t[104] = A) : A = t[104];
+        let j;
+        t[105] !== _.can_purchase_credits || t[106] !== s ? (j = _.can_purchase_credits && (0, X.jsx)(`div`, {
+            className: `border-token-border-default mt-6 flex items-center gap-2 border-t pt-6`,
+            children: (0, X.jsxs)(`div`, {
+                className: `flex grow items-center justify-between gap-4`,
+                children: [(0, X.jsxs)(`div`, {
+                    children: [(0, X.jsx)(ji, {
+                        children: (0, X.jsx)(W, {
+                            id: `organizationBillingInfo.additionalCredits`,
+                            defaultMessage: `Add more credits`
+                        })
+                    }), (0, X.jsx)(Br, {
+                        className: `text-token-text-secondary mt-1`,
+                        children: (0, X.jsx)(W, {
+                            id: `organizationBillingInfo.additionalCreditsDescription`,
+                            defaultMessage: `Give your team continued access after they hit their plan limits. Credits are valid for 12 months.`
+                        })
+                    })]
+                }), (0, X.jsx)(i, {
+                    color: `secondary`,
+                    loading: s,
+                    onClick: () => {
+                        Un(gt, {
+                            analyticsSurface: `business_additional_credits`,
+                            checkoutOriginProvenance: {
+                                checkoutOriginProductExperience: Pt.WORK,
+                                checkoutOriginDeliverySurface: `web`
+                            },
+                            onCustomCheckoutEnd: () => c(!1),
+                            onCustomCheckoutStart: () => c(!0)
+                        })
+                    },
+                    children: (0, X.jsx)(W, {
+                        id: `organizationBillingInfo.addCredits`,
+                        defaultMessage: `Add credits`
+                    })
+                })]
+            })
+        }), t[105] = _.can_purchase_credits, t[106] = s, t[107] = j) : j = t[107];
+        let M;
+        t[108] !== k || t[109] !== A || t[110] !== j ? (M = (0, X.jsxs)(fi, {
+            className: `border-token-border-default gap-0 rounded-xl border p-6`,
+            children: [k, A, j]
+        }), t[108] = k, t[109] = A, t[110] = j, t[111] = M) : M = t[111];
+        let ee;
+        t[112] === D.data?.alert_recipients ? ee = t[113] : (ee = D.data?.alert_recipients ?? [], t[112] = D.data?.alert_recipients, t[113] = ee);
+        let te;
+        t[114] === D.data?.alert_thresholds ? te = t[115] : (te = D.data?.alert_thresholds ?? [], t[114] = D.data?.alert_thresholds, t[115] = te);
+        let N;
+        t[116] !== _.can_manage_usage_alert_thresholds || t[117] !== ee || t[118] !== te || t[119] !== F ? (N = (0, X.jsx)(_p, {
+            canManageRecipients: !1,
+            canManageThresholds: _.can_manage_usage_alert_thresholds,
+            currentAccountIsEnterprisey: !1,
+            recipients: ee,
+            thresholds: te,
+            updateAlerts: F
+        }), t[116] = _.can_manage_usage_alert_thresholds, t[117] = ee, t[118] = te, t[119] = F, t[120] = N) : N = t[120];
+        let P;
+        return t[121] !== M || t[122] !== N ? (P = (0, X.jsxs)(X.Fragment, {
+            children: [M, N]
+        }), t[121] = M, t[122] = N, t[123] = P) : P = t[123], P
+    }
+    if (!_.can_view_credit_balance) return null;
+    let Ee = D.isFetching || te.isPending ? `loading` : D.data?.overage_limit == null ? `noLimit` : `limitSet`,
+        De = z && !we && me.data?.current_balance != null && me.data.current_balance < 0,
+        ke = D.data?.overage_limit?.credits,
+        Ae = me.data?.current_balance,
+        je = Ae == null ? null : Math.max(0, -Ae),
+        Me = z && ke != null && ke > 0 && je != null,
+        Ne;
+    t[124] !== _.can_set_overage_limit || t[125] !== _.can_view_overage_limit || t[126] !== u || t[127] !== l || t[128] !== te || t[129] !== je || t[130] !== ke || t[131] !== Ee || t[132] !== Me || t[133] !== D.data?.overage_limit?.credits ? (Ne = _.can_view_overage_limit ? (0, X.jsxs)(`div`, {
+        className: `text-sm`,
+        children: [(0, X.jsxs)(`div`, {
+            className: `flex items-center gap-2`,
+            children: [(0, X.jsxs)(`div`, {
+                className: `flex w-0 grow items-center gap-1`,
+                children: [(0, X.jsx)(`span`, {
+                    className: `font-medium`,
+                    children: (0, X.jsx)(W, {
+                        ...wp.overageLimitLabel
+                    })
+                }), (0, X.jsx)(ae, {
+                    className: `flex items-center`,
+                    label: (0, X.jsx)(`span`, {
+                        className: `text-token-bg-primary font-normal`,
+                        children: (0, X.jsx)(W, {
+                            ...up
+                        })
+                    }),
+                    side: `top`,
+                    customBackgroundColorClassName: `bg-token-main-surface-primary-inverse`,
+                    children: (0, X.jsx)(Lr, {
+                        className: `icon-sm text-token-text-secondary inline`
+                    })
+                })]
+            }), Ee === `loading` && (0, X.jsx)(ee, {}), (0, X.jsx)(be, {
+                "aria-label": l.formatMessage(wp.toggleOverageLimitLabel),
+                checked: Ee === `limitSet`,
+                disabled: !_.can_set_overage_limit || Ee === `loading`,
+                onCheckedChange: async e => {
+                    _.can_set_overage_limit && (I.logEventWithStatsig(e ? `ChatGPT Credits: Overage Limit Set` : `ChatGPT Credits: Overage Limit Cleared`, e ? `chatgpt_credits_overage_limit_set` : `chatgpt_credits_overage_limit_cleared`, {
+                        workspaceId: u.id,
+                        workspaceName: u.name
+                    }), await te.mutateAsync(e ? 0 : null))
+                }
+            })]
+        }), (0, X.jsx)(`div`, {
+            className: g(`border-token-border-default transition-duration-300 mt-4 overflow-hidden border-t transition-[height] ease-in-out`, Ee === `limitSet` ? Me ? `h-[84px]` : `h-[60px]` : `h-0 border-t-0`),
+            children: (0, X.jsxs)(`div`, {
+                className: `flex items-center gap-2 pt-4`,
+                children: [(0, X.jsxs)(`div`, {
+                    className: `w-0 grow`,
+                    children: [(0, X.jsx)(W, {
+                        ...wp.setOverageLimitAmount,
+                        values: {
+                            bold: mp,
+                            credits: Ss.format(ke ?? 0)
+                        }
+                    }), Me && (0, X.jsx)(`p`, {
+                        className: `text-token-text-secondary mt-1`,
+                        children: (0, X.jsx)(W, {
+                            ...wp.overageLimitUtilization,
+                            values: {
+                                usedCredits: Ss.format(je),
+                                limitCredits: Ss.format(ke),
+                                percentage: l.formatNumber(je / ke, {
+                                    style: `percent`,
+                                    maximumFractionDigits: 1
+                                })
+                            }
+                        })
+                    })]
+                }), (0, X.jsx)(i, {
+                    color: `secondary`,
+                    className: `min-w-[80px]`,
+                    disabled: !_.can_set_overage_limit || Ee === `loading`,
+                    onClick: () => fe(xp, {
+                        currentLimit: D.data?.overage_limit?.credits ?? null,
+                        onSubmit: async e => {
+                            I.logEventWithStatsig(e == null ? `ChatGPT Credits: Overage Limit Cleared` : `ChatGPT Credits: Overage Limit Set`, e == null ? `chatgpt_credits_overage_limit_cleared` : `chatgpt_credits_overage_limit_set`, {
+                                workspaceId: u.id,
+                                workspaceName: u.name,
+                                newLimit: e
+                            }), await te.mutateAsync(e)
+                        }
+                    }),
+                    children: (0, X.jsx)(W, {
+                        ...wp.setOverageLimitButton
+                    })
+                })]
+            })
+        })]
+    }) : null, t[124] = _.can_set_overage_limit, t[125] = _.can_view_overage_limit, t[126] = u, t[127] = l, t[128] = te, t[129] = je, t[130] = ke, t[131] = Ee, t[132] = Me, t[133] = D.data?.overage_limit?.credits, t[134] = Ne) : Ne = t[134];
+    let Pe = Ne;
+    if (o === `enterpriseOverageOnly`) return Pe;
+    let Fe;
+    t[135] === De ? Fe = t[136] : (Fe = De && (0, X.jsx)(ie, {
+        title: (0, X.jsx)(W, {
+            ...wp.inOverageBannerTitle
+        }),
+        content: (0, X.jsx)(W, {
+            ...wp.inOverageBannerContent,
+            values: {
+                link: pp
+            }
+        }),
+        icon: (0, X.jsx)(ge, {}),
+        type: `info`
+    }), t[135] = De, t[136] = Fe);
+    let Ie = !_.show_monetary_credit_balance,
+        Le;
+    t[137] !== _.can_download_usage_report || t[138] !== oe || t[139] !== Se ? (Le = _.can_download_usage_report ? (0, X.jsx)(Zf, {
+        cycleOptions: oe === `pending` ? [] : oe,
+        mostRecentExportResult: Se.data?.most_recent_result
+    }) : null, t[137] = _.can_download_usage_report, t[138] = oe, t[139] = Se, t[140] = Le) : Le = t[140];
+    let ze;
+    t[141] !== _.can_view_credit_grants || t[142] !== _.can_view_rate_card || t[143] !== Pe || t[144] !== Ie || t[145] !== Le ? (ze = (0, X.jsx)(Pf, {
+        hideMonetaryAmount: Ie,
+        menuItems: Le,
+        showCreditGrantsMenuItem: _.can_view_credit_grants,
+        showRateCardMenuItem: _.can_view_rate_card,
+        children: Pe
+    }), t[141] = _.can_view_credit_grants, t[142] = _.can_view_rate_card, t[143] = Pe, t[144] = Ie, t[145] = Le, t[146] = ze) : ze = t[146];
+    let Be;
+    t[147] === D.data?.alert_recipients ? Be = t[148] : (Be = D.data?.alert_recipients ?? [], t[147] = D.data?.alert_recipients, t[148] = Be);
+    let Ve;
+    t[149] === D.data?.alert_thresholds ? Ve = t[150] : (Ve = D.data?.alert_thresholds ?? [], t[149] = D.data?.alert_thresholds, t[150] = Ve);
+    let He;
+    t[151] !== _.can_manage_usage_alert_recipients || t[152] !== _.can_manage_usage_alert_thresholds || t[153] !== Be || t[154] !== Ve || t[155] !== F ? (He = (0, X.jsx)(_p, {
+        boxed: !0,
+        canManageRecipients: _.can_manage_usage_alert_recipients,
+        canManageThresholds: _.can_manage_usage_alert_thresholds,
+        currentAccountIsEnterprisey: !0,
+        recipients: Be,
+        thresholds: Ve,
+        updateAlerts: F
+    }), t[151] = _.can_manage_usage_alert_recipients, t[152] = _.can_manage_usage_alert_thresholds, t[153] = Be, t[154] = Ve, t[155] = F, t[156] = He) : He = t[156];
+    let Ue;
+    return t[157] !== Fe || t[158] !== ze || t[159] !== He ? (Ue = (0, X.jsxs)(X.Fragment, {
+        children: [Fe, ze, He]
+    }), t[157] = Fe, t[158] = ze, t[159] = He, t[160] = Ue) : Ue = t[160], Ue
+}
+
+function pp(e) {
+    return (0, X.jsx)(cn, {
+        openNewTab: !0,
+        href: Sp,
+        children: e
+    }, Sp)
+}
+
+function mp(e) {
+    return (0, X.jsx)(`span`, {
+        className: `font-medium`,
+        children: e
+    }, `bolded-overage-limit-label`)
+}
+
+function hp(e) {
+    return e + 1
+}
+
+function gp(e) {
+    return e - 1
+}
+
+function _p(e) {
+    "use forget";
+    let t = (0, vp.c)(15),
+        {
+            boxed: n,
+            canManageRecipients: r,
+            canManageThresholds: a,
+            currentAccountIsEnterprisey: o,
+            recipients: s,
+            thresholds: c,
+            updateAlerts: l
+        } = e,
+        u = n !== void 0 && n,
+        d;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, X.jsx)(ji, {
+        children: (0, X.jsx)(W, {
+            ...wp.usageAlertLabel
+        })
+    }), t[0] = d) : d = t[0];
+    let f;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, X.jsxs)(`div`, {
+        className: `w-0 grow`,
+        children: [d, (0, X.jsx)(Br, {
+            className: `text-token-text-secondary mt-1`,
+            children: (0, X.jsx)(W, {
+                ...wp.usageAlertDescription
+            })
+        })]
+    }), t[1] = f) : f = t[1];
+    let p = !a && !r,
+        m;
+    t[2] !== r || t[3] !== a || t[4] !== o || t[5] !== s || t[6] !== c || t[7] !== l ? (m = () => fe(bp, {
+        canManageRecipients: r,
+        canManageThresholds: a,
+        onSaveRecipients: async e => {
+            await l({
+                recipients: e
+            })
+        },
+        onSaveThresholds: async e => {
+            await l({
+                thresholds: e
+            })
+        },
+        recipients: s,
+        thresholds: c,
+        isEnterprisey: o
+    }), t[2] = r, t[3] = a, t[4] = o, t[5] = s, t[6] = c, t[7] = l, t[8] = m) : m = t[8];
+    let h;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, X.jsx)(W, {
+        ...wp.usageAlertButton
+    }), t[9] = h) : h = t[9];
+    let g;
+    t[10] !== p || t[11] !== m ? (g = (0, X.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [f, (0, X.jsx)(i, {
+            color: `secondary`,
+            className: `min-w-[80px]`,
+            disabled: p,
+            onClick: m,
+            children: h
+        })]
+    }), t[10] = p, t[11] = m, t[12] = g) : g = t[12];
+    let _ = g;
+    if (u) {
+        let e;
+        return t[13] === _ ? e = t[14] : (e = (0, X.jsx)(fi, {
+            className: `border-token-border-default rounded-xl border p-6`,
+            children: _
+        }), t[13] = _, t[14] = e), e
+    }
+    return _
+}
+var vp, yp, X, bp, xp, Sp, Cp, wp, Tp = e((() => {
+    vp = pt(), en(), Jt(), Ii(), xs(), qa(), pe(), nr(), z(), Vt(), M(), Ir(), fr(), je(), _r(), Pr(), ce(), le(), H(), A(), pn(), Ge(), Me(), _(), p(), ke(), dt(), Ne(), dn(), yp = n(at()), rt(), Wu(), Rf(), Cn(), Xf(), Hu(), ip(), dp(), X = qe(), lt(), bp = V(() => st(() => import(`./99e0f7e1-d963p6goimga1tp9.js`).then(e => e.ManageAlertsModal), __vite__mapDeps([15, 1, 2, 3, 4, 5, 6, 7, 8, 9, 16, 17]))), xp = V(() => st(() => Promise.resolve().then(() => (dp(), ap)).then(e => e.OverageLimitModal), void 0)), Sp = `https://help.openai.com/en/articles/11487671 `, Cp = `https://help.openai.com/en/articles/11481834-chatgpt-rate-card`, wp = Qe({
+        creditUsageSectionTitle: {
+            id: `organizationBillingInfo.creditUsageSettings.creditUsageSectionTitle`,
+            defaultMessage: `Credit usage`
+        },
+        rateCardLink: {
+            id: `organizationBillingInfo.creditUsageSettings.rateCardLink`,
+            defaultMessage: `View rate card`
+        },
+        daysLeft: {
+            id: `organizationBillingInfo.creditUsageSettings.daysLeft`,
+            defaultMessage: `Next cycle in {days} {days, plural, one {day} other {days}}`
+        },
+        cycleDateSpan: {
+            id: `organizationBillingInfo.creditUsageSettings.cycleDateSpan`,
+            defaultMessage: `{start, date, ::MMMdd} - {end, date, ::MMMdd}`
+        },
+        inOverageBannerTitle: {
+            id: `organizationBillingInfo.creditUsageSettings.inOverageBannerTitle`,
+            defaultMessage: `Your org is using credits beyond your plan`
+        },
+        inOverageBannerContent: {
+            id: `organizationBillingInfo.creditUsageSettings.inOverageBannerContent`,
+            defaultMessage: `Access to advanced features and models is still available. You’ll receive a separate invoice at the end of the month. <link>Learn more</link>`
+        },
+        overageLimitLabel: {
+            id: `organizationBillingInfo.creditUsageSettings.overageLimitLabel`,
+            defaultMessage: `Set overage limit`
+        },
+        toggleOverageLimitLabel: {
+            id: `organizationBillingInfo.creditUsageSettings.toggleOverageLimitLabel`,
+            defaultMessage: `Toggle overage limit`
+        },
+        setOverageLimitAmount: {
+            id: `organizationBillingInfo.creditUsageSettings.setOverageLimitAmount`,
+            defaultMessage: `<bold>Overage limit:</bold> {credits} credits`
+        },
+        overageLimitUtilization: {
+            id: `organizationBillingInfo.creditUsageSettings.overageLimitUtilization`,
+            defaultMessage: `{usedCredits} of {limitCredits} overage credits used ({percentage})`
+        },
+        setOverageLimitButton: {
+            id: `organizationBillingInfo.creditUsageSettings.setOverageLimitButton`,
+            defaultMessage: `Configure`
+        },
+        usageAlertLabel: {
+            id: `organizationBillingInfo.creditUsageSettings.usageAlertLabel`,
+            defaultMessage: `Credit usage alerts`
+        },
+        usageAlertDescription: {
+            id: `organizationBillingInfo.creditUsageSettings.usageAlertDescription`,
+            defaultMessage: `Send alerts to owners when credits are running low`
+        },
+        usageAlertButton: {
+            id: `organizationBillingInfo.creditUsageSettings.usageAlertButton`,
+            defaultMessage: `Manage`
+        }
+    })
+}));
+
+function Ep({
+    upgradePolicy: e
+}) {
+    "use no forget";
+    let t = xe(() => w()),
+        {
+            country: n,
+            setCountry: r
+        } = Qt(),
+        [a, o] = (0, kp.useState)(null),
+        [s, c] = (0, kp.useState)(!1),
+        l = St({
+            country: n,
+            currentAccount: t,
+            location: `FreeWorkspaceLockedSectionBilling`,
+            shouldUsePaidSubscriptionBillingCurrency: !1,
+            pricingPlanIsTypeBusiness: !0
+        }),
+        {
+            knownCount: u,
+            isLoading: d,
+            isRefreshing: f,
+            isError: p,
+            refetch: m
+        } = An(t?.id),
+        h = (0, kp.useMemo)(() => ({
+            country: n,
+            currency: Mp
+        }), [n]),
+        g = l ?? h,
+        _ = (0, kp.useMemo)(() => t ? {
+            ...t.subscriptionAnalyticsParams,
+            referrer: typeof document < `u` ? document.referrer : ``
+        } : null, [t]),
+        v = (0, kp.useMemo)(() => t ? zi({
+            currentAccount: t,
+            selectedTab: `business`,
+            shouldUseBusinessFreeWorkspaceExperience: !0
+        }) : null, [t]),
+        {
+            promoCode: y,
+            promoMetadata: b,
+            promoMetadataPlanType: x
+        } = ui(),
+        S = t != null && Yi({
+            selectedTab: `business`,
+            promoMetadata: b
+        }),
+        C = S && x === re.SELF_SERVE_BUSINESS && b != null && !(`percentage` in b.discount && b.discount.percentage === 100),
+        T = Sa({
+            promoCode: S && x === re.SELF_SERVE_BUSINESS ? y : void 0,
+            promoMetadata: S && x === re.SELF_SERVE_BUSINESS ? b : null,
+            showPremiumSeatPricing: S,
+            showPromotionInPageBanner: C
+        }),
+        {
+            selectedPlan: E,
+            numSeats: D
+        } = T,
+        O = C ? T.promoMetadata : null,
+        {
+            handleBusinessCheckoutRedirect: k
+        } = Fa({
+            billingDetails: g,
+            existingAccount: t ?? void 0,
+            checkoutOriginProvenance: Np,
+            promoCode: S ? T.promoCode : void 0,
+            promoMetadata: S ? T.promoMetadata : null,
+            promoData: S ? T.promoData : void 0,
+            promoDataIsFromQueryParam: S ? T.promoDataIsFromQueryParam : void 0,
+            disableAutomaticPromotion: T.disableAutomaticPromotion
+        }),
+        A = e?.can_start_business_checkout === !0,
+        j = A && !d && !f && u != null,
+        M = (0, kp.useMemo)(() => !t || !l || !_ || !v ? null : za({
+            analyticsParams: _,
+            currentAccount: t,
+            planLoading: a,
+            selectedTab: `business`,
+            setPlanLoading: o,
+            setShouldShowCheckoutLoadingOverlay: c,
+            billingDetails: l,
+            onClose: () => {},
+            businessComparisonEnabled: v.comparisonEnabled,
+            eligibleComparisonPlans: v.eligiblePlans,
+            isGoPromoEnabled: !1,
+            isPlusPromoEnabled: !1,
+            enableMoreResponsiveLayout: !1,
+            disableCheckoutActions: !j,
+            premiumSeatPricingAvailability: S,
+            businessPurchaseParams: S ? T : void 0,
+            showBusinessPremiumPromotionBanner: C,
+            checkoutOriginProvenance: Np
+        }), [_, l, T, j, v, t, a, S, C]),
+        ee = (0, kp.useCallback)(e => {
+            r(e)
+        }, [r]),
+        te = (0, kp.useCallback)(() => {
+            j && (async () => {
+                c(!0);
+                try {
+                    await k(E, D, !0)
+                } catch {
+                    c(!1)
+                }
+            })()
+        }, [k, D, E, c, j]),
+        N = e?.can_change_checkout_country === !0,
+        P = u ?? 0,
+        ne = s && typeof document < `u` ? (0, Ap.createPortal)((0, jp.jsx)(`div`, {
+            className: `bg-token-bg-primary fixed inset-0 z-[10000] grid place-items-center dark:bg-[#1B1B1D]`,
+            children: (0, jp.jsx)(Wa, {})
+        }), document.body) : null;
+    return (0, jp.jsxs)(jp.Fragment, {
+        children: [(0, jp.jsxs)(`section`, {
+            className: `relative flex min-h-[60vh] flex-col gap-8 rounded-2xl`,
+            children: [O ? (0, jp.jsx)(Rr, {
+                promoMetadata: O
+            }) : null, (0, jp.jsx)(Dp, {
+                currency: g.currency,
+                canStartBusinessCheckout: A,
+                onUpgradeClick: te,
+                seatUsage: P,
+                isSeatUsageLoading: d || f || u == null
+            }), p ? (0, jp.jsxs)(`div`, {
+                className: `text-token-text-secondary flex items-center gap-3 text-sm`,
+                role: `alert`,
+                children: [(0, jp.jsx)(W, {
+                    ...Pp.seatCountUnavailable
+                }), (0, jp.jsx)(i, {
+                    color: `secondary`,
+                    onClick: () => void m(),
+                    children: (0, jp.jsx)(W, {
+                        ...Pp.retrySeatCount
+                    })
+                })]
+            }) : null, (0, jp.jsx)(`h2`, {
+                className: `text-token-text-primary text-start text-xl leading-6 font-medium tracking-tight`,
+                children: (0, jp.jsx)(W, {
+                    ...Pp.plansTitle
+                })
+            }), (0, jp.jsx)(`div`, {
+                className: `flex flex-col justify-center gap-6 md:flex-row`,
+                children: M ?? (0, jp.jsx)(oi, {})
+            }), (0, jp.jsxs)(`div`, {
+                className: `text-token-text-secondary flex flex-col items-center justify-between gap-4 text-sm md:flex-row`,
+                children: [(0, jp.jsx)(`span`, {
+                    children: (0, jp.jsx)(W, {
+                        ...Pp.enterpriseCta,
+                        values: {
+                            link: e => (0, jp.jsx)(ct, {
+                                className: `text-token-text-primary font-medium underline`,
+                                target: `_blank`,
+                                rel: `noreferrer`,
+                                to: Ie,
+                                children: e
+                            })
+                        }
+                    })
+                }), N ? (0, jp.jsx)(ni, {
+                    onChange: ee,
+                    value: n
+                }) : null]
+            })]
+        }), ne]
+    })
+}
+
+function Dp(e) {
+    "use forget";
+    let t = (0, Op.c)(25),
+        {
+            currency: n,
+            canStartBusinessCheckout: r,
+            onUpgradeClick: a,
+            seatUsage: o,
+            isSeatUsageLoading: s
+        } = e,
+        c;
+    t[0] === n ? c = t[1] : (c = {
+        product: `business_free_plan_card`,
+        currency: n,
+        recurringInterval: L.Month,
+        amount: 0,
+        amountTaxBehavior: k.Exclusive
+    }, t[0] = n, t[1] = c);
+    let l = c,
+        u;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, jp.jsx)(`p`, {
+        className: `text-xl leading-7 font-semibold`,
+        children: (0, jp.jsx)(W, {
+            ...Pp.planCardTitle
+        })
+    }), t[2] = u) : u = t[2];
+    let d;
+    t[3] !== r || t[4] !== s || t[5] !== a ? (d = r ? (0, jp.jsx)(i, {
+        type: `button`,
+        onClick: a,
+        disabled: s,
+        icon: jr,
+        className: `ms-auto`,
+        children: (0, jp.jsx)(W, {
+            ...Pp.planCardUpgradeCta
+        })
+    }) : null, t[3] = r, t[4] = s, t[5] = a, t[6] = d) : d = t[6];
+    let f;
+    t[7] === d ? f = t[8] : (f = (0, jp.jsxs)(`div`, {
+        className: `flex flex-wrap items-center gap-4`,
+        children: [u, d]
+    }), t[7] = d, t[8] = f);
+    let p;
+    t[9] === l ? p = t[10] : (p = (0, jp.jsx)(Ja, {
+        priceDetail: l
+    }), t[9] = l, t[10] = p);
+    let m;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, jp.jsx)(`span`, {
+        className: `text-token-text-secondary text-xs leading-4 font-medium`,
+        children: (0, jp.jsx)(W, {
+            ...Pp.planCardPerSeatLabel
+        })
+    }), t[11] = m) : m = t[11];
+    let h;
+    t[12] === p ? h = t[13] : (h = (0, jp.jsxs)(`div`, {
+        className: `flex flex-wrap items-end gap-2`,
+        children: [p, m]
+    }), t[12] = p, t[13] = h);
+    let g;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (g = (0, jp.jsx)(`hr`, {
+        className: `border-token-border-default`
+    }), t[14] = g) : g = t[14];
+    let _;
+    t[15] !== s || t[16] !== o ? (_ = (0, jp.jsx)(`div`, {
+        className: `text-base font-semibold`,
+        children: s ? (0, jp.jsx)(on, {
+            className: `h-5 w-28`
+        }) : (0, jp.jsx)(W, {
+            ...Pp.planCardSeatCount,
+            values: {
+                count: o
+            }
+        })
+    }), t[15] = s, t[16] = o, t[17] = _) : _ = t[17];
+    let v;
+    t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, jp.jsx)(i, {
+        type: `button`,
+        color: `secondary`,
+        disabled: !0,
+        children: (0, jp.jsx)(W, {
+            ...Pp.planCardManageSeatsCta
+        })
+    }), t[18] = v) : v = t[18];
+    let y;
+    t[19] === _ ? y = t[20] : (y = (0, jp.jsxs)(`div`, {
+        className: `flex flex-wrap items-center justify-between gap-4`,
+        children: [_, v]
+    }), t[19] = _, t[20] = y);
+    let b;
+    return t[21] !== y || t[22] !== f || t[23] !== h ? (b = (0, jp.jsx)(`div`, {
+        className: `border-token-border-default bg-token-bg-primary mt-6 mb-8 w-full rounded-3xl border p-6 md:p-8`,
+        children: (0, jp.jsxs)(`div`, {
+            className: `flex flex-col gap-6`,
+            children: [f, h, g, y]
+        })
+    }), t[21] = y, t[22] = f, t[23] = h, t[24] = b) : b = t[24], b
+}
+var Op, kp, Ap, jp, Mp, Np, Pp, Fp = e((() => {
+    Op = pt(), en(), D(), pe(), Oa(), Dr(), zt(), Wi(), Na(), ma(), $i(), ze(), mi(), hi(), r(), oa(), Ha(), Zt(), a(), Me(), kp = n(at()), Ap = n(Ze()), rt(), nt(), Rn(), jp = qe(), Mp = `USD`, Np = {
+        checkoutOriginProductExperience: Pt.WORK,
+        checkoutOriginDeliverySurface: `web`
+    }, Pp = Qe({
+        seatCountUnavailable: {
+            id: `chatgpt.workspace.billing.seatCountUnavailable`,
+            defaultMessage: `Member count unavailable. Retry before upgrading.`
+        },
+        retrySeatCount: {
+            id: `chatgpt.workspace.billing.retrySeatCount`,
+            defaultMessage: `Retry`
+        },
+        planCardTitle: {
+            id: `1cYDvr`,
+            defaultMessage: `Business Free`
+        },
+        planCardUpgradeCta: {
+            id: `J+rSsa`,
+            defaultMessage: `Upgrade plan`
+        },
+        planCardPerSeatLabel: {
+            id: `Yx6yx2`,
+            defaultMessage: `seat / month`
+        },
+        planCardSeatCount: {
+            id: `Zbzcz0`,
+            defaultMessage: `{count, plural, one {{count} seat} other {{count} seats}}`
+        },
+        planCardManageSeatsCta: {
+            id: `Usud+A`,
+            defaultMessage: `Manage seats`
+        },
+        enterpriseCta: {
+            id: `pyGPXe`,
+            defaultMessage: `Need more capabilities for your business? See <link>ChatGPT Enterprise</link>`
+        },
+        plansTitle: {
+            id: `5Yc+wi`,
+            defaultMessage: `Plans`
+        }
+    })
+}));
+
+function Ip(e) {
+    return e instanceof De && !e.isTransportError && [401, 403, 404].includes(e.status)
+}
+
+function Lp(e) {
+    let t = e[1];
+    if (!(typeof t != `object` || !t)) {
+        if (`account_id` in t && typeof t.account_id == `string`) return {
+            account_id: t.account_id
+        };
+        if (`organization_id` in t && typeof t.organization_id == `string`) return {
+            organization_id: t.organization_id
+        }
+    }
+}
+
+function Rp(e, t, n) {
+    if (!Ip(n)) return;
+    let r = Lp(t),
+        i = e.getQueryCache().findAll(r == null ? {
+            exact: !0,
+            queryKey: t
+        } : {
+            queryKey: [t[0], r]
+        });
+    for (let e of i) e.setState({
+        data: void 0
+    })
+}
+var zp = e((() => {
+        de()
+    })),
+    Bp, Vp = e((() => {
+        p(), dt(), Bp = ({
+            organizationId: e,
+            excludeDraft: t = !0,
+            onError: n
+        }) => ft({
+            queryKey: [`invoicer-invoices`, {
+                organization_id: e,
+                exclude_draft: t
+            }],
+            queryFn: () => e == null ? Promise.resolve({
+                invoices: []
+            }) : S.safeGet(`/invoices/invoicer_invoices`, {
+                parameters: {
+                    query: {
+                        organization_id: e,
+                        exclude_draft: t
+                    }
+                }
+            }).catch(e => {
+                throw n?.(e), e
+            }),
+            enabled: e != null,
+            staleTime: 1 / 0
+        })
+    }));
+
+function Hp(e) {
+    if (e == null) return null;
+    let t = typeof e == `number` ? new Date(e * 1e3) : new Date(e);
+    return Number.isNaN(t.getTime()) ? null : t
+}
+
+function Up(e) {
+    return `total_amount` in e
+}
+
+function Wp(e, t) {
+    if (!(!e.has_document || t == null)) return `/api/invoices/invoicer/${encodeURIComponent(e.id)}/document?organization_id=${encodeURIComponent(t)}`
+}
+
+function Gp(e, t) {
+    return Up(e) ? {
+        createdDate: Hp(e.invoice_date),
+        dueDate: Hp(e.due_date),
+        invoiceUrl: Wp(e, t),
+        isPaid: e.payment_status === `paid` && e.status !== `cancelled`,
+        isNoPaymentRequired: e.payment_status === `no_payment_required` && e.status !== `cancelled`,
+        isVoided: e.status === `cancelled`,
+        paidDate: null,
+        showPaidWithoutDate: !0
+    } : {
+        createdDate: Hp(e.created),
+        dueDate: Hp(e.due_date),
+        invoiceUrl: e.hosted_invoice_url.length > 0 ? e.hosted_invoice_url : void 0,
+        isPaid: e.paid,
+        isNoPaymentRequired: !1,
+        isVoided: e.status === `void`,
+        paidDate: Hp(e.status_transitions.paid_at),
+        showPaidWithoutDate: !1
+    }
+}
+
+function Kp(e, t) {
+    let n = t.limit ?? 100;
+    if (n <= 0) return {
+        data: [],
+        has_more: e.length > 0
+    };
+    if (t.startingAfter != null) {
+        let r = e.findIndex(e => e.id === t.startingAfter);
+        if (r === -1) return {
+            data: [],
+            has_more: !1
+        };
+        let i = r + 1,
+            a = e.slice(i, i + n);
+        return {
+            data: a,
+            has_more: i + a.length < e.length
+        }
+    }
+    if (t.endingBefore != null) {
+        let r = e.findIndex(e => e.id === t.endingBefore);
+        if (r === -1) return {
+            data: [],
+            has_more: !1
+        };
+        let i = Math.max(r - n, 0);
+        return {
+            data: e.slice(i, r),
+            has_more: i > 0
+        }
+    }
+    let r = e.slice(0, n);
+    return {
+        data: r,
+        has_more: r.length < e.length
+    }
+}
+
+function qp(e) {
+    "use forget";
+    let t = (0, $p.c)(29),
+        {
+            invoice: n,
+            organizationId: r
+        } = e,
+        i = mt(),
+        a;
+    t[0] !== n || t[1] !== r ? (a = Gp(n, r), t[0] = n, t[1] = r, t[2] = a) : a = t[2];
+    let {
+        createdDate: o,
+        dueDate: s,
+        invoiceUrl: c,
+        isPaid: l,
+        isNoPaymentRequired: u,
+        isVoided: d,
+        paidDate: f,
+        showPaidWithoutDate: p
+    } = a, m;
+    t[3] === o ? m = t[4] : (m = (0, Z.jsx)(`span`, {
+        children: o ? (0, Z.jsx)(W, {
+            ...nm.invoiceName,
+            values: {
+                createdDate: o
+            }
+        }) : (0, Z.jsx)(W, {
+            ...nm.defaultInvoiceName
+        })
+    }), t[3] = o, t[4] = m);
+    let h;
+    t[5] !== s || t[6] !== u || t[7] !== l || t[8] !== d || t[9] !== f || t[10] !== p ? (h = u ? (0, Z.jsx)(`div`, {
+        className: `text-token-text-secondary text-xs`,
+        children: (0, Z.jsx)(W, {
+            id: `organizationBillingInfo.noPaymentRequired`,
+            defaultMessage: `No payment required`
+        })
+    }) : l && (f != null || p) ? (0, Z.jsx)(`div`, {
+        className: `text-token-text-secondary text-xs`,
+        children: f ? (0, Z.jsx)(W, {
+            ...nm.paidInvoice,
+            values: {
+                invoiceDate: f
+            }
+        }) : (0, Z.jsx)(W, {
+            ...nm.paidInvoiceNoDate
+        })
+    }) : (0, Z.jsx)(`div`, {
+        className: g(`text-xs`, d ? `text-token-text-tertiary` : `text-green-700`),
+        children: d ? (0, Z.jsx)(W, {
+            ...nm.voidedInvoice
+        }) : s ? (0, Z.jsx)(W, {
+            ...nm.upcomingInvoice,
+            values: {
+                invoiceDate: s
+            }
+        }) : (0, Z.jsx)(W, {
+            ...nm.upcomingInvoiceNoDate
+        })
+    }), t[5] = s, t[6] = u, t[7] = l, t[8] = d, t[9] = f, t[10] = p, t[11] = h) : h = t[11];
+    let _;
+    t[12] !== m || t[13] !== h ? (_ = (0, Z.jsxs)(`div`, {
+        className: `flex grow flex-col gap-1`,
+        children: [m, h]
+    }), t[12] = m, t[13] = h, t[14] = _) : _ = t[14];
+    let v = c == null && `cursor-not-allowed opacity-20`,
+        y;
+    t[15] === v ? y = t[16] : (y = g(`mx-auto`, v), t[15] = v, t[16] = y);
+    let b = c == null,
+        x;
+    t[17] !== i || t[18] !== c ? (x = c == null ? void 0 : i.formatMessage(nm.openInvoiceDocument), t[17] = i, t[18] = c, t[19] = x) : x = t[19];
+    let S;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, Z.jsx)(cr, {
+        className: `icon-sm text-green-600`
+    }), t[20] = S) : S = t[20];
+    let C;
+    t[21] !== c || t[22] !== y || t[23] !== b || t[24] !== x ? (C = (0, Z.jsx)(`a`, {
+        href: c,
+        className: y,
+        "aria-disabled": b,
+        "aria-label": x,
+        target: `_blank`,
+        rel: `noreferrer`,
+        children: S
+    }), t[21] = c, t[22] = y, t[23] = b, t[24] = x, t[25] = C) : C = t[25];
+    let w;
+    return t[26] !== C || t[27] !== _ ? (w = (0, Z.jsxs)(ia, {
+        className: `items-center`,
+        children: [_, C]
+    }), t[26] = C, t[27] = _, t[28] = w) : w = t[28], w
+}
+
+function Jp(e) {
+    "use forget";
+    let t = (0, $p.c)(22),
+        {
+            invoices: n,
+            invoicesOptions: r,
+            organizationId: i,
+            setInvoicesOptions: a
+        } = e,
+        o = r.startingAfter != null || r.endingBefore != null && n.has_more,
+        s = r.endingBefore != null || n.has_more && r.endingBefore == null,
+        c;
+    if (t[0] !== n.data || t[1] !== i) {
+        let e;
+        t[3] === i ? e = t[4] : (e = e => (0, Z.jsx)(qp, {
+            invoice: e,
+            organizationId: i
+        }, e.id), t[3] = i, t[4] = e), c = n.data.map(e), t[0] = n.data, t[1] = i, t[2] = c
+    } else c = t[2];
+    let l;
+    t[5] === c ? l = t[6] : (l = (0, Z.jsx)(Zi, {
+        children: c
+    }), t[5] = c, t[6] = l);
+    let u;
+    t[7] !== o || t[8] !== n.data[0] || t[9] !== a ? (u = o && (0, Z.jsx)(`button`, {
+        onClick: () => {
+            let e = n.data[0];
+            e != null && a(t => ({
+                ...t,
+                endingBefore: e.id,
+                startingAfter: void 0
+            }))
+        },
+        children: (0, Z.jsx)(ur, {
+            className: `icon-sm`
+        })
+    }), t[7] = o, t[8] = n.data[0], t[9] = a, t[10] = u) : u = t[10];
+    let d;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, Z.jsx)(`div`, {
+        className: `grow`
+    }), t[11] = d) : d = t[11];
+    let f;
+    t[12] !== s || t[13] !== n.data || t[14] !== a ? (f = s && (0, Z.jsx)(`button`, {
+        onClick: () => {
+            let e = n.data[n.data.length - 1];
+            e != null && a(t => ({
+                ...t,
+                startingAfter: e.id,
+                endingBefore: void 0
+            }))
+        },
+        children: (0, Z.jsx)(yr, {
+            className: `icon-sm`
+        })
+    }), t[12] = s, t[13] = n.data, t[14] = a, t[15] = f) : f = t[15];
+    let p;
+    t[16] !== u || t[17] !== f ? (p = (0, Z.jsxs)(`div`, {
+        className: `flex`,
+        children: [u, d, f]
+    }), t[16] = u, t[17] = f, t[18] = p) : p = t[18];
+    let m;
+    return t[19] !== l || t[20] !== p ? (m = (0, Z.jsxs)(fi, {
+        children: [l, p]
+    }), t[19] = l, t[20] = p, t[21] = m) : m = t[21], m
+}
+
+function Yp(e) {
+    "use forget";
+    let t = (0, $p.c)(14),
+        {
+            invoices: n,
+            invoicesOptions: r,
+            isError: a,
+            isFetching: o,
+            isLoading: s,
+            onRetry: c,
+            organizationId: l,
+            setInvoicesOptions: u
+        } = e;
+    if ((s || n == null) && !a) {
+        let e;
+        return t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Z.jsx)(fi, {
+            children: (0, Z.jsx)(`div`, {
+                className: `flex h-40 items-center justify-center`,
+                children: (0, Z.jsx)(ee, {})
+            })
+        }), t[0] = e) : e = t[0], e
+    }
+    let d;
+    t[1] !== a || t[2] !== o || t[3] !== c ? (d = a ? (0, Z.jsx)(fi, {
+        children: (0, Z.jsx)(`div`, {
+            role: `alert`,
+            children: (0, Z.jsx)($n, {
+                type: `danger`,
+                primaryAction: (0, Z.jsx)(i, {
+                    color: `secondary`,
+                    loading: o,
+                    onClick: c,
+                    size: `small`,
+                    type: `button`,
+                    children: (0, Z.jsx)(W, {
+                        ...nm.retryLoadingInvoices
+                    })
+                }),
+                children: (0, Z.jsx)(W, {
+                    ...nm.invoiceLoadFailure
+                })
+            })
+        })
+    }) : null, t[1] = a, t[2] = o, t[3] = c, t[4] = d) : d = t[4];
+    let f = d;
+    if (n == null) return f;
+    if (n.data.length === 0) {
+        if (a) return f;
+        let e;
+        return t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Z.jsx)(fi, {
+            children: (0, Z.jsx)($n, {
+                type: `info`,
+                children: (0, Z.jsx)(W, {
+                    ...nm.noInvoices
+                })
+            })
+        }), t[5] = e) : e = t[5], e
+    }
+    let p;
+    t[6] !== n || t[7] !== r || t[8] !== l || t[9] !== u ? (p = (0, Z.jsx)(Jp, {
+        invoices: n,
+        invoicesOptions: r,
+        organizationId: l,
+        setInvoicesOptions: u
+    }), t[6] = n, t[7] = r, t[8] = l, t[9] = u, t[10] = p) : p = t[10];
+    let m;
+    return t[11] !== f || t[12] !== p ? (m = (0, Z.jsxs)(Z.Fragment, {
+        children: [f, p]
+    }), t[11] = f, t[12] = p, t[13] = m) : m = t[13], m
+}
+
+function Xp(e) {
+    "use forget";
+    let t = (0, $p.c)(16),
+        {
+            invoiceQueryScope: n
+        } = e,
+        r = $e(),
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = {
+        limit: 5
+    }, t[0] = i) : i = t[0];
+    let [a, o] = (0, em.useState)(i), s;
+    t[1] !== a || t[2] !== r ? (s = (e, t) => {
+        Rp(r, Ai({
+            options: a,
+            params: t
+        }).queryKey, e)
+    }, t[1] = a, t[2] = r, t[3] = s) : s = t[3];
+    let c;
+    t[4] !== n || t[5] !== s ? (c = {
+        invoiceQueryScope: n,
+        onError: s
+    }, t[4] = n, t[5] = s, t[6] = c) : c = t[6];
+    let {
+        data: l,
+        isError: u,
+        isFetching: d,
+        isLoading: f,
+        refetch: p
+    } = ra(a, c), m;
+    t[7] === p ? m = t[8] : (m = () => void p(), t[7] = p, t[8] = m);
+    let h;
+    return t[9] !== l || t[10] !== a || t[11] !== u || t[12] !== d || t[13] !== f || t[14] !== m ? (h = (0, Z.jsx)(Yp, {
+        invoices: l,
+        invoicesOptions: a,
+        isError: u,
+        isFetching: d,
+        isLoading: f,
+        onRetry: m,
+        setInvoicesOptions: o
+    }), t[9] = l, t[10] = a, t[11] = u, t[12] = d, t[13] = f, t[14] = m, t[15] = h) : h = t[15], h
+}
+
+function Zp(e) {
+    "use forget";
+    let t = (0, $p.c)(21),
+        {
+            organizationId: n
+        } = e,
+        r = $e(),
+        i;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = {
+        limit: 5
+    }, t[0] = i) : i = t[0];
+    let [a, o] = (0, em.useState)(i), s = mt(), c;
+    t[1] !== s || t[2] !== n || t[3] !== r ? (c = e => {
+        Ya(s, e), Rp(r, Bp({
+            organizationId: n
+        }).queryKey, e)
+    }, t[1] = s, t[2] = n, t[3] = r, t[4] = c) : c = t[4];
+    let l;
+    t[5] !== n || t[6] !== c ? (l = Bp({
+        organizationId: n,
+        onError: c
+    }), t[5] = n, t[6] = c, t[7] = l) : l = t[7];
+    let {
+        data: u,
+        isError: d,
+        isFetching: f,
+        isLoading: p,
+        refetch: m
+    } = tt(l), h;
+    t[8] !== u || t[9] !== a ? (h = u == null ? void 0 : Kp(u.invoices, a), t[8] = u, t[9] = a, t[10] = h) : h = t[10];
+    let g = h,
+        _;
+    t[11] === m ? _ = t[12] : (_ = () => void m(), t[11] = m, t[12] = _);
+    let v;
+    return t[13] !== g || t[14] !== a || t[15] !== d || t[16] !== f || t[17] !== p || t[18] !== n || t[19] !== _ ? (v = (0, Z.jsx)(Yp, {
+        invoices: g,
+        invoicesOptions: a,
+        isError: d,
+        isFetching: f,
+        isLoading: p,
+        onRetry: _,
+        organizationId: n,
+        setInvoicesOptions: o
+    }), t[13] = g, t[14] = a, t[15] = d, t[16] = f, t[17] = p, t[18] = n, t[19] = _, t[20] = v) : v = t[20], v
+}
+
+function Qp(e) {
+    "use forget";
+    let t = (0, $p.c)(8),
+        {
+            invoiceQueryScope: n
+        } = e,
+        r = Oe(),
+        i;
+    t[0] === r ? i = t[1] : (i = Pa(r, P()), t[0] = r, t[1] = i);
+    let a = n === `organization` ? i?.organizationId : void 0,
+        o;
+    t[2] === a ? o = t[3] : (o = a != null && B(tm), t[2] = a, t[3] = o);
+    let s = o,
+        c;
+    return t[4] !== n || t[5] !== a || t[6] !== s ? (c = s ? (0, Z.jsx)(Zp, {
+        organizationId: a
+    }) : (0, Z.jsx)(Xp, {
+        invoiceQueryScope: n
+    }), t[4] = n, t[5] = a, t[6] = s, t[7] = c) : c = t[7], c
+}
+var $p, em, Z, tm, nm, rm = e((() => {
+    $p = pt(), pe(), Cr(), dr(), _r(), bn(), Ge(), Me(), u(), dt(), Ne(), em = n(at()), rt(), qa(), zp(), Ua(), ha(), Vp(), zr(), Xi(), Z = qe(), tm = `132314505`, nm = Qe({
+        invoiceName: {
+            id: `organizationBillingInfo.invoiceName`,
+            defaultMessage: `Invoice: {createdDate, date, long}`
+        },
+        defaultInvoiceName: {
+            id: `organizationBillingInfo.defaultInvoiceName`,
+            defaultMessage: `Invoice`
+        },
+        paidInvoice: {
+            id: `organizationBillingInfo.paidInvoice`,
+            defaultMessage: `Paid: {invoiceDate, date, long}`
+        },
+        paidInvoiceNoDate: {
+            id: `organizationBillingInfo.paidInvoiceNoDate`,
+            defaultMessage: `Paid`
+        },
+        upcomingInvoice: {
+            id: `organizationBillingInfo.upcomingInvoice`,
+            defaultMessage: `Due: {invoiceDate, date, long}`
+        },
+        upcomingInvoiceNoDate: {
+            id: `organizationBillingInfo.upcomingInvoiceNoDate`,
+            defaultMessage: `Upcoming invoice`
+        },
+        voidedInvoice: {
+            id: `organizationBillingInfo.voidedInvoice`,
+            defaultMessage: `Voided`
+        },
+        noInvoices: {
+            id: `organizationBillingInfo.noInvoices`,
+            defaultMessage: `No invoices found`
+        },
+        invoiceLoadFailure: {
+            id: `organizationBillingInfo.invoices.error.loadFailure`,
+            defaultMessage: `We couldn't load your invoices. Try again.`
+        },
+        retryLoadingInvoices: {
+            id: `organizationBillingInfo.invoices.error.retryButton`,
+            defaultMessage: `Try again`
+        },
+        openInvoiceDocument: {
+            id: `organizationBillingInfo.openInvoiceDocument`,
+            defaultMessage: `Open invoice document`
+        }
+    })
+}));
+
+function im(e) {
+    return [`workspace-codex-invite-promo-eligibility`, e]
+}
+
+function am(e, t) {
+    "use forget";
+    let n = (0, om.c)(8),
+        r = t === void 0 || t,
+        i;
+    n[0] === e ? i = n[1] : (i = im(e), n[0] = e, n[1] = i);
+    let a;
+    n[2] === e ? a = n[3] : (a = async () => await S.safeGet(`/accounts/{account_id}/codex_invite_promo_status`, {
+        parameters: {
+            path: {
+                account_id: e ?? ``
+            }
+        }
+    }), n[2] = e, n[3] = a);
+    let o = r && e != null,
+        s;
+    return n[4] !== i || n[5] !== a || n[6] !== o ? (s = {
+        queryKey: i,
+        queryFn: a,
+        enabled: o
+    }, n[4] = i, n[5] = a, n[6] = o, n[7] = s) : s = n[7], tt(s)
+}
+var om, sm = e((() => {
+    om = pt(), p(), dt()
+}));
+
+function cm(e) {
+    return !!(e?.can_manage_payment_method || e?.can_manage_billing_schedule || e?.can_cancel_subscription)
+}
+
+function lm(e) {
+    "use forget";
+    let t = (0, Fm.c)(12),
+        {
+            discount: n,
+            discountDurationBillingPeriod: r,
+            discountDurationNumPeriods: i,
+            formattedAmount: a,
+            formattedSeatCount: o
+        } = e;
+    if (n.discount_type === Te.PERCENTAGE) {
+        let e;
+        return t[0] !== n.amount || t[1] !== r || t[2] !== i ? (e = (0, Q.jsx)(W, {
+            ...$.workspacePercentOff,
+            values: {
+                billingPeriod: r,
+                numPeriods: i,
+                percent: n.amount
+            }
+        }), t[0] = n.amount, t[1] = r, t[2] = i, t[3] = e) : e = t[3], e
+    }
+    if (o != null) {
+        let e;
+        return t[4] !== r || t[5] !== i || t[6] !== o ? (e = (0, Q.jsx)(W, {
+            ...$.seatFreeUpTo,
+            values: {
+                billingPeriod: r,
+                numPeriods: i,
+                seatCount: o
+            }
+        }), t[4] = r, t[5] = i, t[6] = o, t[7] = e) : e = t[7], e
+    }
+    let s;
+    return t[8] !== r || t[9] !== i || t[10] !== a ? (s = (0, Q.jsx)(W, {
+        ...$.fixedAmountOff,
+        values: {
+            amount: a,
+            billingPeriod: r,
+            numPeriods: i
+        }
+    }), t[8] = r, t[9] = i, t[10] = a, t[11] = s) : s = t[11], s
+}
+
+function um(e) {
+    "use forget";
+    let t = (0, Fm.c)(15),
+        {
+            discount: n,
+            discountDurationBillingPeriod: r,
+            discountDurationNumPeriods: i,
+            formattedAmount: a,
+            formattedSeatCount: o,
+            formattedStartPeriod: s
+        } = e;
+    if (n.discount_type === Te.PERCENTAGE) {
+        let e;
+        return t[0] !== n.amount || t[1] !== r || t[2] !== i || t[3] !== s ? (e = (0, Q.jsx)(W, {
+            ...$.workspacePercentOffFuture,
+            values: {
+                billingPeriod: r,
+                numPeriods: i,
+                percent: n.amount,
+                startPeriod: s
+            }
+        }), t[0] = n.amount, t[1] = r, t[2] = i, t[3] = s, t[4] = e) : e = t[4], e
+    }
+    if (o != null) {
+        let e;
+        return t[5] !== r || t[6] !== i || t[7] !== o || t[8] !== s ? (e = (0, Q.jsx)(W, {
+            ...$.seatFreeUpToFuture,
+            values: {
+                billingPeriod: r,
+                numPeriods: i,
+                seatCount: o,
+                startPeriod: s
+            }
+        }), t[5] = r, t[6] = i, t[7] = o, t[8] = s, t[9] = e) : e = t[9], e
+    }
+    let c;
+    return t[10] !== r || t[11] !== i || t[12] !== a || t[13] !== s ? (c = (0, Q.jsx)(W, {
+        ...$.fixedAmountOffFuture,
+        values: {
+            amount: a,
+            billingPeriod: r,
+            numPeriods: i,
+            startPeriod: s
+        }
+    }), t[10] = r, t[11] = i, t[12] = a, t[13] = s, t[14] = c) : c = t[14], c
+}
+
+function dm(e) {
+    "use forget";
+    let t = (0, Fm.c)(36),
+        {
+            className: n,
+            discount: r,
+            activeBenefits: i,
+            standardSeatPrice: a,
+            premiumSeatPrice: o,
+            perSeatMonthly: s,
+            subscription: c,
+            taxPercent: l
+        } = e,
+        u = mt(),
+        d;
+    t[0] === i ? d = t[1] : (d = i?.filter(fm), t[0] = i, t[1] = d);
+    let f = d;
+    if (f?.length) {
+        let e;
+        return t[2] !== n || t[3] !== f || t[4] !== o || t[5] !== a || t[6] !== c.billing_currency ? (e = (0, Q.jsx)(Vl, {
+            className: n,
+            activeBenefits: f,
+            currency: c.billing_currency,
+            standardSeatPrice: a,
+            premiumSeatPrice: o
+        }), t[2] = n, t[3] = f, t[4] = o, t[5] = a, t[6] = c.billing_currency, t[7] = e) : e = t[7], e
+    }
+    if (!r) return null;
+    let p = r.duration_num_periods ?? 0,
+        m = r.discount_start_in_num_periods ?? 0,
+        h = c.billing_period === `yearly` ? U.ANNUAL : U.FLEXIBLE,
+        _, v;
+    if (t[8] !== r || t[9] !== u || t[10] !== s || t[11] !== c.billing_currency || t[12] !== c.billing_period || t[13] !== l) {
+        let e = c.billing_period === `yearly` && r.discount_type === Te.FIXED ? null : Za({
+                discount: r,
+                perSeatMonthly: s,
+                currency: c.billing_currency,
+                taxPercent: l
+            }),
+            n;
+        t[16] !== r.amount || t[17] !== u || t[18] !== c.billing_currency ? (n = u.formatNumber(Number(r.amount ?? 0), {
+            style: `currency`,
+            currency: c.billing_currency
+        }), t[16] = r.amount, t[17] = u, t[18] = c.billing_currency, t[19] = n) : n = t[19], _ = n, v = e == null ? void 0 : u.formatMessage($.discountSeatCount, {
+            seats: e
+        }), t[8] = r, t[9] = u, t[10] = s, t[11] = c.billing_currency, t[12] = c.billing_period, t[13] = l, t[14] = _, t[15] = v
+    } else _ = t[14], v = t[15];
+    let y = v,
+        b;
+    t[20] !== m || t[21] !== u ? (b = u.formatMessage($.discountStartPeriod, {
+        numPeriods: m
+    }), t[20] = m, t[21] = u, t[22] = b) : b = t[22];
+    let x = b,
+        S;
+    t[23] === n ? S = t[24] : (S = g(`bg-token-theme-blue-background text-token-theme-blue-text-on-background rounded-lg p-3 text-sm`, n), t[23] = n, t[24] = S);
+    let C;
+    t[25] !== r || t[26] !== h || t[27] !== p || t[28] !== m || t[29] !== _ || t[30] !== y || t[31] !== x ? (C = (0, Q.jsx)(`div`, {
+        children: m > 0 ? (0, Q.jsx)(um, {
+            discount: r,
+            discountDurationBillingPeriod: h,
+            discountDurationNumPeriods: p,
+            formattedAmount: _,
+            formattedSeatCount: y,
+            formattedStartPeriod: x
+        }) : (0, Q.jsx)(lm, {
+            discount: r,
+            discountDurationBillingPeriod: h,
+            discountDurationNumPeriods: p,
+            formattedAmount: _,
+            formattedSeatCount: y
+        })
+    }), t[25] = r, t[26] = h, t[27] = p, t[28] = m, t[29] = _, t[30] = y, t[31] = x, t[32] = C) : C = t[32];
+    let w;
+    return t[33] !== S || t[34] !== C ? (w = (0, Q.jsx)(`div`, {
+        className: S,
+        children: C
+    }), t[33] = S, t[34] = C, t[35] = w) : w = t[35], w
+}
+
+function fm(e) {
+    return e.benefits.some(pm)
+}
+
+function pm(e) {
+    return e.calculation.type === `percentage_off`
+}
+
+function mm(e, t) {
+    if (t == null || t === `pending`) return null;
+    let n = t.start.getFullYear() === t.end.getFullYear() ? {
+        month: `short`,
+        day: `numeric`
+    } : {
+        month: `short`,
+        day: `numeric`,
+        year: `numeric`
+    };
+    return {
+        start: e.formatDate(t.start, n),
+        end: e.formatDate(t.end, n)
+    }
+}
+
+function hm({
+    intl: e,
+    cycleDates: t,
+    loadingFallback: n,
+    renderCycleDateRange: r
+}) {
+    if (t === `pending`) return n;
+    let i = mm(e, t);
+    return i ? r(i) : null
+}
+
+function gm({
+    amountPerCredit: e,
+    currency: t,
+    intl: n,
+    minorUnitExponent: r,
+    numCredits: i
+}) {
+    if (t == null || r == null || e == null || i <= 0) return null;
+    let a = Math.round(i * e * 10 ** r) / 10 ** r;
+    return n.formatNumber(a, {
+        style: `currency`,
+        currency: t,
+        maximumFractionDigits: 0
+    })
+}
+
+function _m({
+    intl: e,
+    cycleDates: t,
+    canViewPaidBillingContent: n,
+    isFreeWorkspacePlan: r,
+    isSelfServeBusinessBillingPageRedesignEnabled: i
+}) {
+    return i ? null : r ? (0, Q.jsx)(`span`, {
+        className: `text-token-text-secondary font-normal`,
+        children: (0, Q.jsx)(W, {
+            ...$.headerSubheading
+        })
+    }) : n ? hm({
+        intl: e,
+        cycleDates: t,
+        loadingFallback: (0, Q.jsx)(`div`, {
+            className: `loading-results-shimmer h-[24px] w-[300px] rounded-sm`
+        }),
+        renderCycleDateRange: e => (0, Q.jsx)(`span`, {
+            className: `text-token-text-tertiary`,
+            children: (0, Q.jsx)(W, {
+                ...$.subtitle,
+                values: e
+            })
+        })
+    }) : null
+}
+
+function vm({
+    currentAccount: e,
+    teamFreeTrialPromoEligibility: t
+}) {
+    let n = Mo({
+        account: e,
+        teamFreeTrialPromoEligibility: t,
+        disableExposureLog: !0
+    });
+    return n.hasActiveBusinessFreeTrial ? Mo({
+        account: e,
+        teamFreeTrialPromoEligibility: t
+    }) : n
+}
+
+function ym({
+    currentAccount: e,
+    teamFreeTrialPromoEligibility: t
+}) {
+    fe(of, {
+        businessTrialImmediateCancellationState: vm({
+            currentAccount: e,
+            teamFreeTrialPromoEligibility: t
+        })
+    })
+}
+
+function bm(e) {
+    let t = mt(),
+        n = m(),
+        r = Ke(),
+        i = $e(),
+        [a, o] = ot(),
+        {
+            data: s
+        } = oe(),
+        {
+            country: c
+        } = Qt(),
+        {
+            prepareCheckoutSession: l,
+            navigateToCheckout: u
+        } = vt(),
+        d = s == null ? null : fu(s.accountItems),
+        {
+            billingDetails: f,
+            status: p
+        } = ar({
+            country: c,
+            currentAccount: d,
+            location: `BillingInfoPage.BusinessCancelToPlus`,
+            shouldUsePaidSubscriptionBillingCurrency: !0,
+            pricingPlanIsTypeBusiness: !1
+        }),
+        {
+            data: h
+        } = $a(e?.isSelfServeBusiness() === !0 ? No : ``),
+        g = Im.useRef(!1),
+        _ = Im.useRef(!1),
+        v = Im.useCallback(() => {
+            ym({
+                currentAccount: e,
+                teamFreeTrialPromoEligibility: h
+            })
+        }, [e, h]);
+    (0, Im.useEffect)(() => {
+        if (g.current || e == null || a.get(`resume_business_cancellation`) !== `1` || Ho(e) == null) return;
+        g.current = !0, Wo();
+        let t = new URLSearchParams(a);
+        t.delete(Uo), o(t, {
+            replace: !0
+        }), v()
+    }, [e, v, a, o]);
+    let y = Im.useCallback(async (a, o) => {
+            if (!e || !f || !d || !mu(d)) {
+                n.warning(t.formatMessage($.plusCheckoutError), {
+                    hasCloseButton: !0
+                });
+                return
+            }
+            let s = new URL(window.location.href);
+            s.searchParams.set(Uo, `1`);
+            let c = {
+                entry_point: wt.BUSINESS_CANCELLATION_TO_PLUS,
+                plan_name: ne.PLUS,
+                billing_details: f,
+                cancel_url: s.toString(),
+                ...a ? {
+                    promo_campaign: {
+                        promo_campaign_id: a,
+                        is_coupon_from_query_param: !1
+                    }
+                } : {}
+            };
+            try {
+                let t = await _u({
+                        businessAccountId: e.id,
+                        personalAccountId: d.id,
+                        queryClient: i,
+                        startCheckout: () => l(c, {})
+                    }),
+                    n = vn(t);
+                if (n == null) throw Error(`Missing checkout session id for Business to Plus`);
+                if (a != null && !hu(t, a)) throw Error(`Plus trial promotion was not applied to Business to Plus checkout`);
+                if (!Vo({
+                        businessAccountId: e.id,
+                        checkoutSessionId: n,
+                        createdAtMs: Date.now()
+                    })) throw Error(`Unable to persist Business to Plus handoff`);
+                await gu({
+                    onCheckoutReady: o,
+                    navigateToCheckout: () => u(t, {
+                        checkoutPayload: c,
+                        searchParams: s.search,
+                        state: {
+                            [or]: {
+                                pathname: r.pathname,
+                                search: s.search,
+                                hash: r.hash
+                            }
+                        }
+                    }),
+                    onNavigationFailure: () => {
+                        Wo(), v()
+                    }
+                })
+            } catch (e) {
+                Wo(), Se.addError(e instanceof Error ? e : Error(`Failed to start Business to Plus checkout`), {
+                    feature: `business_cancel_to_plus_checkout`
+                }), n.warning(t.formatMessage($.plusCheckoutError), {
+                    hasCloseButton: !0
+                })
+            }
+        }, [e, t, r.hash, r.pathname, u, v, d, f, l, i, n]),
+        b = Im.useCallback(() => {
+            if (!e || !d || !f || !mu(d)) {
+                v();
+                return
+            }
+            let t = d.getEligiblePromoCampaignId(re.PLUS),
+                n = zn(t) ? t : void 0,
+                r = f.currency ?? d.mustGetSubscriptionBillingCurrency(`BillingInfoPage.BusinessCancelToPlus`),
+                i = () => {
+                    Fe(Hm)
+                },
+                a = {
+                    onCheckoutButtonClicked: async () => {
+                        let e = `chatgpt_business_cancel_to_plus_offer_checkout_clicked`,
+                            t = I.logStructuredEvent(`ChatgptBusinessBillingPlanTransition`, {
+                                step: `CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_STEP_CHECKOUT_CLICKED`,
+                                offer: n ? `CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_OFFER_PLUS_TRIAL` : `CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_OFFER_PAID_PLUS`,
+                                legacyStatsigEventName: e
+                            });
+                        Ve(e, n ? `plus_trial` : `paid_plus`, t ? {
+                            unique_event_id: t
+                        } : void 0), await y(n, i)
+                    },
+                    onContinueCancellationButtonClicked: () => {
+                        let e = `chatgpt_business_cancel_to_plus_offer_continue_cancellation_clicked`,
+                            t = I.logStructuredEvent(`ChatgptBusinessBillingPlanTransition`, {
+                                step: `CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_STEP_CONTINUE_CANCELLATION_CLICKED`,
+                                legacyStatsigEventName: e
+                            });
+                        Ve(e, void 0, t ? {
+                            unique_event_id: t
+                        } : void 0), i(), v()
+                    }
+                },
+                o = () => {
+                    let e = `chatgpt_business_cancel_to_plus_offer_modal_dismissed`,
+                        t = I.logStructuredEvent(`ChatgptBusinessBillingPlanTransition`, {
+                            step: `CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_STEP_OFFER_DISMISSED`,
+                            legacyStatsigEventName: e
+                        });
+                    Ve(e, void 0, t ? {
+                        unique_event_id: t
+                    } : void 0), i()
+                },
+                s = `chatgpt_business_cancel_to_plus_offer_modal_shown`,
+                c = I.logStructuredEvent(`ChatgptBusinessBillingPlanTransition`, {
+                    step: `CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_STEP_OFFER_SHOWN`,
+                    offer: n ? `CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_OFFER_PLUS_TRIAL` : `CHATGPT_BUSINESS_BILLING_PLAN_TRANSITION_OFFER_PAID_PLUS`,
+                    legacyStatsigEventName: s
+                });
+            Ve(s, n ? `plus_trial` : `paid_plus`, c ? {
+                unique_event_id: c
+            } : void 0), fe(Hm, {
+                isOpen: !0,
+                billingCurrency: r,
+                isTrialOffer: n != null,
+                onClose: o,
+                onCheckoutButtonClicked: a.onCheckoutButtonClicked,
+                onContinueCancellationButtonClicked: a.onContinueCancellationButtonClicked
+            })
+        }, [e, v, d, f, y]);
+    return (0, Im.useEffect)(() => {
+        !_.current || d == null || mu(d) && p === `loading` || (_.current = !1, b())
+    }, [b, d, p]), async () => {
+        if (Ve(`chatgpt_billing_manage_plan_cancel_clicked`), !e || !Bo(!1)) {
+            v();
+            return
+        }
+        if (d != null) {
+            b();
+            return
+        }
+        try {
+            _.current = !0, await S.safePost(`/accounts/personal`, {}), await pu(i)
+        } catch (e) {
+            _.current = !1, Se.addError(e instanceof Error ? e : Error(`Failed to create personal account for Business to Plus`), {
+                feature: `business_cancel_to_plus_checkout`
+            }), n.warning(t.formatMessage($.plusCheckoutError), {
+                hasCloseButton: !0
+            }), v()
+        }
+    }
+}
+
+function xm(e) {
+    let t = mt(),
+        n = m();
+    return async () => {
+        if (e) {
+            Ve(`chatgpt_billing_manage_plan_payment_method_clicked`);
+            try {
+                let t = await S.safeGet(`/payments/customer_portal`, {
+                    parameters: {
+                        query: {
+                            account_id: e.getWorkspaceId()
+                        }
+                    }
+                });
+                location.href = t.url
+            } catch {
+                n.warning(t.formatMessage($.stripeErrorWarning), {
+                    hasCloseButton: !0
+                })
+            }
+        }
+    }
+}
+
+function Sm(e) {
+    "use forget";
+    let t = (0, Fm.c)(13),
+        {
+            title: n,
+            description: r,
+            buttonLabel: a,
+            onClick: o
+        } = e,
+        s;
+    t[0] === n ? s = t[1] : (s = (0, Q.jsx)(`h3`, {
+        className: `text-token-text-primary text-sm font-semibold`,
+        children: n
+    }), t[0] = n, t[1] = s);
+    let c;
+    t[2] === r ? c = t[3] : (c = (0, Q.jsx)(`p`, {
+        className: `text-token-text-secondary mt-1 text-xs font-normal`,
+        children: r
+    }), t[2] = r, t[3] = c);
+    let l;
+    t[4] !== s || t[5] !== c ? (l = (0, Q.jsxs)(`div`, {
+        className: `min-w-0`,
+        children: [s, c]
+    }), t[4] = s, t[5] = c, t[6] = l) : l = t[6];
+    let u;
+    t[7] !== a || t[8] !== o ? (u = (0, Q.jsx)(i, {
+        color: `secondary`,
+        size: `medium`,
+        className: `min-h-9 shrink-0 rounded-full px-5`,
+        onClick: o,
+        children: a
+    }), t[7] = a, t[8] = o, t[9] = u) : u = t[9];
+    let d;
+    return t[10] !== l || t[11] !== u ? (d = (0, Q.jsx)(`section`, {
+        className: `border-token-border-default bg-token-bg-primary mt-4 overflow-hidden rounded-xl border`,
+        children: (0, Q.jsxs)(`div`, {
+            className: `flex items-center justify-between gap-4 px-6 py-5`,
+            children: [l, u]
+        })
+    }), t[10] = l, t[11] = u, t[12] = d) : d = t[12], d
+}
+
+function Cm(e) {
+    "use forget";
+    let t = (0, Fm.c)(5),
+        {
+            onCancelSubscription: n
+        } = e,
+        r, i, a;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Q.jsx)(W, {
+        ...$.cancelPlanTitle
+    }), i = (0, Q.jsx)(W, {
+        ...$.cancelPlanDescription
+    }), a = (0, Q.jsx)(W, {
+        ...$.cancelSubscriptionBtn
+    }), t[0] = r, t[1] = i, t[2] = a) : (r = t[0], i = t[1], a = t[2]);
+    let o;
+    return t[3] === n ? o = t[4] : (o = (0, Q.jsx)(Sm, {
+        title: r,
+        description: i,
+        buttonLabel: a,
+        onClick: n
+    }), t[3] = n, t[4] = o), o
+}
+
+function wm({
+    onMoveToUsageBasedBilling: e
+}) {
+    return (0, Q.jsx)(Sm, {
+        title: (0, Q.jsx)(W, {
+            ...$.moveToUsageBasedBillingTitle
+        }),
+        description: (0, Q.jsx)(W, {
+            ...$.moveToUsageBasedBillingDescription
+        }),
+        buttonLabel: (0, Q.jsx)(W, {
+            ...$.moveToUsageBasedBillingButton
+        }),
+        onClick: e
+    })
+}
+
+function Tm(e) {
+    "use forget";
+    let t = (0, Fm.c)(2),
+        {
+            teamBillingType: n
+        } = e,
+        r = n === U.FLEXIBLE ? $.monthly : $.annual,
+        i;
+    return t[0] === r ? i = t[1] : (i = (0, Q.jsx)(`div`, {
+        className: `bg-token-bg-status-success text-token-text-status-success inline-flex items-center rounded-sm px-2 py-1 text-xs font-semibold`,
+        children: (0, Q.jsx)(W, {
+            ...r
+        })
+    }), t[0] = r, t[1] = i), i
+}
+
+function Em({
+    subscription: e,
+    cycleDates: t,
+    canViewInvoices: n,
+    onOpenInvoicesPage: r,
+    accountPolicy: a
+}) {
+    let o = mt(),
+        {
+            country: s
+        } = Qt(),
+        c = Oe(),
+        l = c != null && c.isOwnerOfAccount() && c.isSelfServeBusiness() && c.hasPaidSubscription() && c.data.subscriptionStatus.trial?.isTrialing !== !0 && Oi(c.id),
+        u = _e(c?.planType),
+        d = Po(c?.data),
+        f = Pi(c?.id),
+        p = St({
+            country: s,
+            currentAccount: c,
+            location: `BillingInfoPage.SelfServeBusinessBillingInfo`,
+            pricingPlanIsTypeBusiness: !u
+        }),
+        m = Ka(e),
+        h = bm(c);
+    xm(c);
+    let _ = () => {
+            fe(ef)
+        },
+        v = c?.id,
+        y = Im.useRef(void 0);
+    (0, Im.useEffect)(() => {
+        v != null && y.current !== v && (y.current = v, ja(so.CHATGPT_WEB_BILLING_MANDATE_AUTHORIZATION_ACTION_TYPE_BILLING_VIEWED, `business`))
+    }, [v]);
+    let {
+        bannersConfig: x,
+        isLoading: S
+    } = Hn({
+        activeWorkspaceId: v,
+        enabled: v != null
+    }), C = It(x), w = C?.can_load_admin_credit_limit_banner === !0, T = C?.can_load_codex_invite_promo_eligibility === !0, D = C?.can_render_codex_invite_promo_banner === !0, O = am(v, T), k = Ot(v, {
+        enabled: D
+    }), {
+        data: A,
+        isLoading: M
+    } = E({
+        countryCode: m?.countryCode ?? s,
+        currency: m?.billingCurrency ?? p?.currency,
+        enabled: m != null || p != null
+    }), te = m == null || A == null ? null : ei(A, m);
+    (0, Im.useEffect)(() => {
+        te != null && b.count(j.TEAMS, `business_manage_seats_checkout_pricing_identity_match`, {
+            entry_point: `billing_info`,
+            matches_subscription_pricing_identity: String(te)
+        })
+    }, [te]);
+    let N = A,
+        {
+            data: P,
+            isLoading: ne
+        } = Qr(v),
+        re = Kr(P),
+        {
+            promoEligibility: F,
+            shouldShowFreeSeatsCta: ie,
+            seatThresholdGap: L
+        } = ii({
+            seatsEntitled: e == null ? void 0 : Ia(e, `default`, e.seats_entitled)
+        }),
+        R = c?.data.subscriptionStatus.discount,
+        z = c?.data.subscriptionStatus.appliedBenefits,
+        ae = N?.currencyConfig.tax_percent,
+        B = e ? e.billing_period === `monthly` ? U.FLEXIBLE : U.ANNUAL : void 0,
+        oe = a == null ? c?.isCodexOnlyWorkspace() !== !0 : !a.is_codex_only_workspace,
+        V = eu(e),
+        H = e?.will_renew === !0 && V != null && V !== B,
+        se = tu(e),
+        ce = e == null ? 0 : Ia(e, `default`),
+        le = e == null ? 0 : Ia(e, `prolite`),
+        ue = ai(e),
+        {
+            data: de
+        } = E({
+            countryCode: m?.countryCode,
+            currency: m?.billingCurrency,
+            enabled: f && H && m != null
+        }),
+        pe = ei(de, m) && e?.seat_capacity != null ? si({
+            checkoutPricingConfig: de,
+            isNonProfit: e.non_profit_org_discount_applied === !0,
+            premiumSeatCount: le,
+            standardSeatCount: ce
+        }) : null,
+        me = m?.billingCurrency ?? null,
+        he = e && N ? la(e.billing_currency, N, !1, ue) : void 0,
+        ge = Wr({
+            checkoutPricingConfig: N,
+            isNonProfit: ue,
+            isSciAccount: u,
+            teamBillingType: B
+        }),
+        ve = io({
+            checkoutPricingConfig: N,
+            teamBillingType: B
+        }),
+        ye = B === U.FLEXIBLE && te ? Mi({
+            checkoutPricingConfig: N,
+            isNonProfit: ue,
+            isSciAccount: u,
+            teamBillingType: B
+        }) : null,
+        be = !u && he != null ? Math.round((Number(he.flexibleBillingPlan.discountedMonthlyCost ?? 0) - Number(he.annualBillingPlan.discountedMonthlyCost ?? 0)) / Number(he.flexibleBillingPlan.discountedMonthlyCost ?? 0) * 100) : null,
+        xe = P?.seat_type_counts?.[zm] ?? 0,
+        Se = P?.seat_type_counts?.[Bm] ?? 0,
+        Ce = Pi(c?.id),
+        we = e?.seat_capacity?.some(e => e.type === zm && e.available != null) === !0,
+        Te = l && (Ce || we),
+        Ee = v == null ? null : ua({
+            accountId: v,
+            checkoutPricingConfig: N,
+            isSciAccount: u,
+            isSeatTypeCountsLoading: ne,
+            seatTypeCounts: P,
+            showPremiumSeats: Ce,
+            subscription: e
+        }),
+        De = Te && Ee == null,
+        {
+            isLoading: ke,
+            planManagementConfig: Ae
+        } = Qn({
+            activeWorkspaceId: v,
+            enabled: v != null
+        }),
+        je = sn(Ae),
+        Me = je?.can_manage_payment_method === !0,
+        Ne = je?.can_manage_billing_schedule === !0,
+        Pe = je?.can_change_paid_seat_quantity === !0,
+        Fe = Da({
+            canManageSeats: Pe,
+            isOwner: c?.isOwnerOfAccount() === !0,
+            subscription: e
+        }),
+        Ie = je?.can_cancel_subscription === !0,
+        Le = je?.can_move_to_usage_based_billing === !0,
+        Re = e?.active_until != null,
+        ze = e?.active_until ? new Date(e.active_until) : null,
+        Be = wa(e) === `convert_to_usage_based`,
+        He = e != null && xe > e.seats_entitled,
+        Ue = e != null && ie && !R,
+        We = Ie,
+        Ge = d && Le,
+        {
+            maxTotalNumCredits: Ke,
+            perEligibleInviteNumCredits: qe
+        } = Fo(),
+        Je = gm({
+            amountPerCredit: N?.currencyConfig.amount_per_credit,
+            currency: N?.currencyConfig.symbol_code,
+            intl: o,
+            minorUnitExponent: N?.currencyConfig.minor_unit_exponent,
+            numCredits: Ke
+        }),
+        Ye = gm({
+            amountPerCredit: N?.currencyConfig.amount_per_credit,
+            currency: N?.currencyConfig.symbol_code,
+            intl: o,
+            minorUnitExponent: N?.currencyConfig.minor_unit_exponent,
+            numCredits: qe
+        }),
+        Xe = k.data == null || Number.parseFloat(k.data.balance) === 0,
+        Ze = d && D && O.data?.eligible === !0 && !k.isLoading && !Xe && Je != null && Ye != null,
+        Qe = Me && v,
+        $e = n,
+        et = [{
+            key: zm,
+            titleMessage: $.standardSeatTitle,
+            capacityMessage: $.standardSeatCapacity,
+            perSeatMonthlyPrice: ge
+        }, {
+            key: `prolite`,
+            titleMessage: $.premiumSeatTitle,
+            capacityMessage: $.premiumSeatCapacity,
+            perSeatMonthlyPrice: ve
+        }],
+        tt = f && e && Re ? et.flatMap(t => {
+            let n = e.seat_capacity?.find(e => e.type === t.key)?.paid;
+            return n != null && n > 0 ? [{
+                ...t,
+                seatCapacity: n
+            }] : []
+        }) : [],
+        nt = f && e && Re ? ca({
+            paidSeatSummaryRowConfigs: et,
+            subscription: e
+        }) : [],
+        rt = [{
+            seatType: Bm,
+            seatCount: Se
+        }];
+    e && Re && rt.push({
+        seatType: zm,
+        seatCount: xe
+    });
+    let it = {
+            seatType: Bm,
+            seatCount: Se
+        },
+        {
+            isLoading: at,
+            usageLimitsConfig: ot
+        } = yn({
+            activeWorkspaceId: v,
+            enabled: v != null
+        }),
+        {
+            canManageSeatTypeLimits: st,
+            canViewMemberOverridesEntrypoint: ct,
+            minimumLimitBySeatType: lt,
+            seatTypes: ut
+        } = Sn({
+            usageLimitsConfig: ot
+        }),
+        dt = S || ke || at,
+        ft = e?.last_credit_grant_update != null || e?.next_credit_grant_update != null || e?.active_start != null || e?.active_until != null;
+    if (dt) return (0, Q.jsx)(`div`, {
+        className: `flex min-h-[18.75rem] w-full items-center justify-center`,
+        children: (0, Q.jsx)(ee, {})
+    });
+    let pt = e && ft ? hm({
+            intl: o,
+            cycleDates: t,
+            loadingFallback: (0, Q.jsx)(`div`, {
+                className: `loading-results-shimmer h-5 w-40 rounded-sm`
+            }),
+            renderCycleDateRange: e => o.formatMessage($.businessPlanCurrentCycle, e)
+        }) : null,
+        ht = e && ze ? e.will_renew ? V == null ? null : o.formatMessage($.billingIntervalChangeDate, {
+            billingType: V,
+            expiryDate: ze
+        }) : o.formatMessage(Be ? $.moveToUsageBasedBillingDate : $.deactivateDate, {
+            expiryDate: ze
+        }) : null,
+        gt = f && H ? pt : ht ?? pt,
+        _t = () => {
+            if (!e || !v || e.active_until == null || B == null || ne) return;
+            if (Te) {
+                if (Ee == null) return;
+                aa({
+                    ...Ee,
+                    activeDiscount: R,
+                    promoEligibility: F,
+                    seatsPromoThresholdGap: ie ? L ?? void 0 : void 0,
+                    taxPercent: ae
+                });
+                return
+            }
+            let t = v,
+                n = `chatgpt_billing_manage_seats_clicked`,
+                r = I.logStructuredEvent(`ChatgptBusinessBillingManageSeatsOpened`, {
+                    legacyStatsigEventName: n
+                });
+            Ve(n, void 0, r ? {
+                unique_event_id: r
+            } : void 0), fe(Um, {
+                initialTeamBillingType: B,
+                initialSeats: e.seats_entitled,
+                isImmediateInvoiceRolloutEnabled: l,
+                isNonProfit: ue,
+                maxSeats: re,
+                accountId: t,
+                renewalDate: new Date(e.active_until),
+                billingDetails: {
+                    currency: e.billing_currency,
+                    country: s
+                },
+                maybeInterceptPaidCapacityChange: n => Ti({
+                    accountId: t,
+                    currentAccount: c,
+                    subscription: e,
+                    wouldChangePaidCapacity: n
+                })
+            })
+        },
+        vt = () => {
+            c && fe(En, {
+                workspace: c,
+                defaultInviteSeatType: Bm
+            })
+        },
+        yt = () => {
+            !e || !v || !e.active_until || !B || !se || (Ve(`chatgpt_billing_manage_plan_billing_schedule_clicked`), fe(Gl, {
+                currentSeatCapacity: e.seat_capacity,
+                currentTeamBillingType: B,
+                initialTeamBillingType: se,
+                isNonProfit: e.non_profit_org_discount_applied === !0,
+                usesCurrentNonProfitPricing: ue,
+                preselectedTeamBillingType: V == null && B === U.FLEXIBLE ? U.ANNUAL : void 0,
+                pricingIdentity: m,
+                renewalDate: new Date(e.active_until),
+                accountId: v,
+                billingDetails: {
+                    currency: e.billing_currency
+                }
+            }))
+        },
+        bt = () => {
+            !e || !v || !e.active_until || !B || !V || !H || !Ne || (Ve(`chatgpt_billing_manage_plan_billing_schedule_clicked`), fe(iu, {
+                accountId: v,
+                annualSavingsAmount: pe?.annualSavingsAmount ?? null,
+                billingCurrency: me,
+                currentTeamBillingType: B,
+                renewalDate: new Date(e.active_until),
+                scheduledTeamBillingType: V
+            }))
+        },
+        xt = () => !Ne || !e ? null : nu({
+            annualSavingsPercent: be,
+            subscription: e
+        }) ? (0, Q.jsx)(i, {
+            className: `text-xs`,
+            color: `discovery`,
+            onClick: yt,
+            size: `large`,
+            type: `button`,
+            children: (0, Q.jsx)(W, {
+                ...$.switchToAnnualBillingAndSave,
+                values: {
+                    percent: be
+                }
+            })
+        }) : (0, Q.jsx)(i, {
+            color: `secondary`,
+            onClick: yt,
+            size: `large`,
+            children: (0, Q.jsx)(W, {
+                ...$.manageBillingSchedule
+            })
+        }),
+        Ct = f && (B === U.ANNUAL || H),
+        wt = f && Ne && B === U.ANNUAL && !H,
+        Tt = e != null && Fe && !l && (!f || !Ct),
+        Et = e && Fe ? (0, Q.jsx)(i, {
+            "aria-disabled": De,
+            color: `secondary`,
+            onClick: e => {
+                if (De) {
+                    e.preventDefault();
+                    return
+                }
+                _t()
+            },
+            size: `large`,
+            type: `button`,
+            visuallyDisabled: De,
+            children: (0, Q.jsx)(W, {
+                ...$.manageSeats
+            })
+        }) : null,
+        Dt = Ct ? null : xt(),
+        kt = (0, Q.jsxs)(fi, {
+            className: `border-token-border-default bg-token-bg-primary gap-0 overflow-hidden rounded-xl border`,
+            children: [(0, Q.jsxs)(`div`, {
+                className: `flex flex-col gap-6 p-6`,
+                children: [(0, Q.jsxs)(`div`, {
+                    className: `flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between`,
+                    children: [(0, Q.jsxs)(`div`, {
+                        className: `min-w-0`,
+                        children: [(0, Q.jsxs)(`div`, {
+                            className: `flex flex-wrap items-center gap-2`,
+                            children: [(0, Q.jsx)(`div`, {
+                                className: `text-token-text-primary text-xl leading-tight font-semibold`,
+                                children: (0, Q.jsx)(W, {
+                                    ...u ? bo.heading : $.businessPlanCardTitle
+                                })
+                            }), B && oe && (0, Q.jsx)(Tm, {
+                                teamBillingType: B
+                            })]
+                        }), gt && (0, Q.jsxs)(`div`, {
+                            className: g(`text-token-text-secondary mt-1`, f ? `text-xs` : `text-sm`),
+                            children: [gt, wt && (0, Q.jsxs)(Q.Fragment, {
+                                children: [` · `, (0, Q.jsx)(`button`, {
+                                    className: `interactive-button text-token-theme-blue-text underline-offset-2 hover:underline`,
+                                    onClick: yt,
+                                    type: `button`,
+                                    children: (0, Q.jsx)(W, {
+                                        ...$.manageBillingScheduleLink
+                                    })
+                                })]
+                            })]
+                        })]
+                    }), (Et || Dt) && (0, Q.jsxs)(`div`, {
+                        className: `flex flex-wrap items-center gap-2 lg:justify-end`,
+                        children: [Et, Dt]
+                    })]
+                }), e && (0, Q.jsx)(dm, {
+                    discount: R,
+                    activeBenefits: z,
+                    standardSeatPrice: ye?.standardSeatPricing.amount,
+                    premiumSeatPrice: ye?.premiumSeatPricing?.amount,
+                    perSeatMonthly: ge ?? 0,
+                    subscription: e,
+                    taxPercent: ae
+                }), f ? (0, Q.jsxs)(Q.Fragment, {
+                    children: [tt.map(t => (0, Q.jsx)(Dm, {
+                        billingCurrency: e?.billing_currency,
+                        isPerSeatPriceLoading: M,
+                        seatRow: t
+                    }, t.key)), nt.length > 0 && e?.active_until != null && (0, Q.jsx)(kf, {
+                        billingCurrency: e.billing_currency,
+                        isPerSeatPriceLoading: M,
+                        monthlyTotalMessage: $.businessPaidSeatMonthlyTotal,
+                        renewalDate: new Date(e.active_until),
+                        seatRows: nt
+                    }), d && (0, Q.jsx)(Om, {
+                        isCountLoading: ne,
+                        isPerSeatPriceLoading: M,
+                        seatCountRow: it,
+                        subscription: e
+                    })]
+                }) : d ? rt.map(t => (0, Q.jsx)(Om, {
+                    isCountLoading: ne,
+                    isPerSeatPriceLoading: M,
+                    chatgptSeatPrice: ge,
+                    seatCountRow: t,
+                    subscription: e
+                }, t.seatType)) : v != null && (0, Q.jsx)(jm, {
+                    isTeam: !0,
+                    accountId: v,
+                    canManageSeats: Pe,
+                    isManageSeatsDisabled: ne || De,
+                    onManageSeatsClick: _t,
+                    showManageSeatsButton: !1
+                })]
+            }), f && H && V === U.ANNUAL && e?.active_until ? (0, Q.jsx)(su, {
+                onKeepMonthlyBilling: Ne ? bt : void 0,
+                renewalDate: new Date(e.active_until)
+            }) : Tt && (0, Q.jsx)(`div`, {
+                className: `border-token-border-default bg-token-bg-tertiary rounded-b-xl border-t px-6 py-3`,
+                children: (0, Q.jsxs)(`div`, {
+                    className: `text-token-text-secondary flex min-w-0 flex-col gap-1 text-xs font-semibold`,
+                    children: [(0, Q.jsx)(`span`, {
+                        children: (0, Q.jsx)(W, {
+                            ...$.assignedSeatsRenewalNote
+                        })
+                    }), He && (0, Q.jsx)(`span`, {
+                        children: (0, Q.jsx)(W, {
+                            ...$.teamsAutochargeMessage,
+                            values: {
+                                link: e => (0, Q.jsx)(cn, {
+                                    className: `ps-1`,
+                                    openNewTab: !0,
+                                    href: Lm,
+                                    children: e
+                                })
+                            }
+                        })
+                    })]
+                })
+            })]
+        });
+    if (!c) return null;
+    let At = () => {
+            sa({
+                actionType: co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_ADD_PAYMENT_METHOD_CLICKED,
+                location: Vm
+            })
+        },
+        jt = () => {
+            sa({
+                actionType: co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_SET_DEFAULT_PAYMENT_METHOD_CLICKED,
+                location: Vm
+            })
+        },
+        Mt = () => {
+            sa({
+                actionType: co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_REMOVE_PAYMENT_METHOD_CLICKED,
+                location: Vm
+            })
+        },
+        Nt = () => {
+            sa({
+                actionType: co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_EDIT_PAYMENT_METHOD_CLICKED,
+                location: Vm
+            })
+        },
+        Pt = () => {
+            sa({
+                actionType: co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_VIEW_ALL_INVOICES_CLICKED,
+                location: Vm
+            }), r()
+        },
+        Lt = () => {
+            sa({
+                actionType: co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_VIEW_INVOICE_CLICKED,
+                location: Vm
+            })
+        },
+        Rt = a?.can_view_subscription_summary === !0 && c.isOwnerOfAccount(),
+        zt = o.formatMessage(u ? bo.heading : $.businessPlanCardTitle);
+    return (0, Q.jsxs)(Q.Fragment, {
+        children: [(0, Q.jsxs)(`div`, {
+            className: `flex flex-col gap-6`,
+            children: [Me && v && (0, Q.jsx)(ka, {
+                accountId: v,
+                surface: `business`
+            }), w && (0, Q.jsx)(Cf, {}), Ze && Je != null && Ye != null && (0, Q.jsx)(Ud, {
+                maxTotalCreditAmount: Je,
+                onInvite: vt,
+                perEligibleInviteCreditAmount: Ye
+            }), f && H && V === U.FLEXIBLE && e?.active_until && (0, Q.jsx)(ou, {
+                annualSavingsAmount: pe?.annualSavingsAmount ?? null,
+                billingCurrency: me,
+                onKeepAnnualBilling: Ne ? bt : void 0,
+                renewalDate: new Date(e.active_until)
+            }), Ue ? (0, Q.jsxs)(`div`, {
+                className: `rounded-xl bg-[var(--color-background-info-soft-alpha)]`,
+                children: [(0, Q.jsx)(Mm, {
+                    seatThresholdGap: L
+                }), kt]
+            }) : kt, Rt && (0, Q.jsx)(kl, {
+                accountId: c.id,
+                planName: zt
+            })]
+        }), (0, Q.jsx)(Ad, {
+            workspaceId: c.id,
+            canEdit: c.isOwnerOfAccount()
+        }), (0, Q.jsx)($u, {
+            canManagePaymentMethod: !!Qe
+        }), (0, Q.jsx)(Bd, {
+            account: c
+        }), (0, Q.jsx)(_d, {
+            canManageSeatTypeLimits: st,
+            canViewMemberOverridesEntrypoint: ct,
+            minimumLimitBySeatType: lt,
+            seatTypes: ut,
+            workspaceId: v
+        }), Qe && (0, Q.jsx)(Il, {
+            workspaceId: v,
+            children: (0, Q.jsx)(Ki, {
+                accountId: v,
+                billingSettingsLocation: Vm,
+                callerSurface: `workspace_billing_settings`,
+                manageAutoReloadTo: Ft(`auto_recharge`),
+                onAddPaymentMethodClick: At,
+                onEditPaymentMethodClick: Nt,
+                onRemovePaymentMethodClick: Mt,
+                onSetDefaultPaymentMethodClick: jt
+            })
+        }), $e && (0, Q.jsx)(Ba, {
+            accountId: c.id,
+            billingSettingsLocation: Vm,
+            onViewAll: Pt,
+            onViewInvoice: Lt
+        }), !1, Ge && (0, Q.jsx)(wm, {
+            onMoveToUsageBasedBilling: _
+        }), Rt && (0, Q.jsx)(kl, {
+            accountId: c.id,
+            planName: zt,
+            placement: `linked`
+        }), We && (0, Q.jsx)(Cm, {
+            onCancelSubscription: h
+        })]
+    })
+}
+
+function Dm(e) {
+    "use forget";
+    let t = (0, Fm.c)(30),
+        {
+            billingCurrency: n,
+            isPerSeatPriceLoading: r,
+            seatRow: i
+        } = e,
+        a = mt(),
+        {
+            capacityMessage: o,
+            perSeatMonthlyPrice: s,
+            seatCapacity: c,
+            titleMessage: l
+        } = i,
+        u = s == null ? null : c * s,
+        d;
+    t[0] !== n || t[1] !== a || t[2] !== s ? (d = s != null && n != null ? a.formatNumber(s, {
+        style: `currency`,
+        currency: n,
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 2
+    }) : null, t[0] = n, t[1] = a, t[2] = s, t[3] = d) : d = t[3];
+    let f = d,
+        p;
+    t[4] !== n || t[5] !== a || t[6] !== u ? (p = u != null && n != null ? a.formatNumber(u, {
+        style: `currency`,
+        currency: n
+    }) : null, t[4] = n, t[5] = a, t[6] = u, t[7] = p) : p = t[7];
+    let m = p,
+        h;
+    t[8] === l ? h = t[9] : (h = (0, Q.jsx)(`div`, {
+        className: `text-token-text-primary text-justify text-base leading-tight font-normal`,
+        children: (0, Q.jsx)(W, {
+            ...l
+        })
+    }), t[8] = l, t[9] = h);
+    let g;
+    t[10] !== f || t[11] !== r ? (g = r ? (0, Q.jsx)(`div`, {
+        className: `loading-results-shimmer mt-1 h-5 w-24 rounded-sm`
+    }) : f != null && (0, Q.jsx)(`div`, {
+        className: `text-token-text-secondary mt-1 text-justify text-sm leading-tight font-normal`,
+        children: (0, Q.jsx)(W, {
+            ...$.businessPaidSeatMonthlyPrice,
+            values: {
+                amount: f
+            }
+        })
+    }), t[10] = f, t[11] = r, t[12] = g) : g = t[12];
+    let _;
+    t[13] !== h || t[14] !== g ? (_ = (0, Q.jsxs)(`div`, {
+        className: `min-w-0`,
+        children: [h, g]
+    }), t[13] = h, t[14] = g, t[15] = _) : _ = t[15];
+    let v;
+    t[16] !== m || t[17] !== r ? (v = r ? (0, Q.jsx)(`div`, {
+        className: `loading-results-shimmer ms-auto h-6 w-24 rounded-sm`
+    }) : m != null && (0, Q.jsx)(`div`, {
+        className: `text-token-text-primary text-base leading-tight font-normal`,
+        children: (0, Q.jsx)(W, {
+            ...$.businessPaidSeatMonthlyTotal,
+            values: {
+                amount: m
+            }
+        })
+    }), t[16] = m, t[17] = r, t[18] = v) : v = t[18];
+    let y;
+    t[19] === c ? y = t[20] : (y = {
+        count: c
+    }, t[19] = c, t[20] = y);
+    let b;
+    t[21] !== o || t[22] !== y ? (b = (0, Q.jsx)(`div`, {
+        className: `text-token-text-secondary mt-1 text-sm leading-tight font-normal`,
+        children: (0, Q.jsx)(W, {
+            ...o,
+            values: y
+        })
+    }), t[21] = o, t[22] = y, t[23] = b) : b = t[23];
+    let x;
+    t[24] !== v || t[25] !== b ? (x = (0, Q.jsxs)(`div`, {
+        className: `shrink-0 text-end`,
+        children: [v, b]
+    }), t[24] = v, t[25] = b, t[26] = x) : x = t[26];
+    let S;
+    return t[27] !== _ || t[28] !== x ? (S = (0, Q.jsxs)(`div`, {
+        className: `[&+&]:border-token-border-default flex items-start justify-between gap-6 [&+&]:border-t [&+&]:pt-4`,
+        children: [_, x]
+    }), t[27] = _, t[28] = x, t[29] = S) : S = t[29], S
+}
+
+function Om(e) {
+    "use forget";
+    let t = (0, Fm.c)(28),
+        {
+            isCountLoading: n,
+            isPerSeatPriceLoading: r,
+            chatgptSeatPrice: i,
+            seatCountRow: a,
+            descriptionType: o,
+            subscription: s
+        } = e,
+        c = o === void 0 ? `business` : o,
+        l = mt(),
+        {
+            seatCount: u,
+            seatType: d
+        } = a,
+        f = d === Bm ? $.codexSeatTitle : $.chatgptSeatTitle,
+        p;
+    if (c === `business`) {
+        let e;
+        t[0] !== i || t[1] !== l || t[2] !== r || t[3] !== d || t[4] !== s ? (e = d === Bm ? (0, Q.jsx)(W, {
+            ...$.codexSeatDescription
+        }) : r ? (0, Q.jsx)(`div`, {
+            className: `loading-results-shimmer h-6 w-24 rounded-sm`
+        }) : i != null && s ? (0, Q.jsx)(W, {
+            ...$.chatgptSeatDescriptionMonthly,
+            values: {
+                amount: l.formatNumber(i, {
+                    style: `currency`,
+                    currency: s.billing_currency,
+                    minimumFractionDigits: 0,
+                    maximumFractionDigits: 0
+                })
+            }
+        }) : null, t[0] = i, t[1] = l, t[2] = r, t[3] = d, t[4] = s, t[5] = e) : e = t[5], p = e
+    } else {
+        let e;
+        t[6] === d ? e = t[7] : (e = d === Bm ? (0, Q.jsx)(W, {
+            ...$.codexSeatDescriptionEnt
+        }) : (0, Q.jsx)(W, {
+            ...$.chatgptSeatDescriptionEnt
+        }), t[6] = d, t[7] = e), p = e
+    }
+    let m = d === Bm ? $.seatsInUse : $.seatsInUseWithAllocation,
+        h;
+    t[8] !== u || t[9] !== d || t[10] !== s?.seats_entitled ? (h = d === Bm ? {
+        count: u
+    } : {
+        count: u,
+        allocated: s?.seats_entitled ?? 0
+    }, t[8] = u, t[9] = d, t[10] = s?.seats_entitled, t[11] = h) : h = t[11];
+    let g;
+    t[12] !== m || t[13] !== h ? (g = (0, Q.jsx)(W, {
+        ...m,
+        values: h
+    }), t[12] = m, t[13] = h, t[14] = g) : g = t[14];
+    let _ = g,
+        v;
+    t[15] === f ? v = t[16] : (v = (0, Q.jsx)(`div`, {
+        className: `text-token-text-primary text-justify text-base leading-tight font-normal`,
+        children: (0, Q.jsx)(W, {
+            ...f
+        })
+    }), t[15] = f, t[16] = v);
+    let y;
+    t[17] === p ? y = t[18] : (y = p != null && (0, Q.jsx)(`div`, {
+        className: `text-token-text-secondary mt-1 text-justify text-sm leading-tight font-normal`,
+        children: p
+    }), t[17] = p, t[18] = y);
+    let b;
+    t[19] !== v || t[20] !== y ? (b = (0, Q.jsxs)(`div`, {
+        className: `min-w-0`,
+        children: [v, y]
+    }), t[19] = v, t[20] = y, t[21] = b) : b = t[21];
+    let x;
+    t[22] !== _ || t[23] !== n ? (x = (0, Q.jsx)(`div`, {
+        className: `shrink-0 text-end`,
+        children: n ? (0, Q.jsx)(`div`, {
+            className: `loading-results-shimmer h-7 w-32 rounded-sm`
+        }) : (0, Q.jsx)(`div`, {
+            className: `text-token-text-primary text-justify text-base leading-tight font-normal`,
+            children: _
+        })
+    }), t[22] = _, t[23] = n, t[24] = x) : x = t[24];
+    let S;
+    return t[25] !== b || t[26] !== x ? (S = (0, Q.jsxs)(`div`, {
+        className: `[&+&]:border-token-border-default flex items-start justify-between gap-6 [&+&]:border-t [&+&]:pt-4`,
+        children: [b, x]
+    }), t[25] = b, t[26] = x, t[27] = S) : S = t[27], S
+}
+
+function km({
+    subscription: e,
+    enterpriseAccountPolicy: t
+}) {
+    let {
+        country: n
+    } = Qt(), {
+        data: r,
+        isLoading: i,
+        error: a
+    } = E({
+        currency: e.billing_currency,
+        countryCode: n
+    }), o = Oe(), s = _e(o?.planType), c = bm(o), l = o?.id, {
+        data: u,
+        isLoading: d
+    } = Qr(l), {
+        bannersConfig: f,
+        isLoading: p
+    } = Hn({
+        activeWorkspaceId: l,
+        enabled: l != null
+    }), m = It(f), h = m?.can_load_admin_credit_limit_banner === !0, g = m?.can_load_enterprise_overage_limit_banner === !0, {
+        shouldShowFreeSeatsCta: _,
+        seatThresholdGap: v
+    } = ii({
+        seatsEntitled: Ia(e, `default`, e.seats_entitled)
+    }), y = o?.data.subscriptionStatus.discount, b = o?.data.subscriptionStatus.appliedBenefits, x = r?.currencyConfig.tax_percent, S = _ && !y, C = u?.seat_type_counts?.[zm] ?? e.seats_in_use, w = u?.seat_type_counts?.[Bm] ?? 0, {
+        isLoading: T,
+        planManagementConfig: D
+    } = Qn({
+        activeWorkspaceId: l,
+        enabled: l != null
+    }), O = sn(D), k = cm(O), A = O?.kind === `self_serve_business`;
+    if (i || p || T) return (0, Q.jsx)(`div`, {
+        className: `flex min-h-screen items-center justify-center`,
+        children: (0, Q.jsx)(ee, {})
+    });
+    if (!o || a != null || !r) return null;
+    let j = e.active_until != null,
+        M = e.active_until ? new Date(e.active_until) : null,
+        te = wa(e) === `convert_to_usage_based`,
+        N = Wm(o, e),
+        P = e.billing_period === `monthly` ? U.FLEXIBLE : U.ANNUAL,
+        ne = ai(e),
+        re = P === U.FLEXIBLE && ei(r, Ka(e)) ? Mi({
+            checkoutPricingConfig: r,
+            isNonProfit: ne,
+            isSciAccount: s,
+            teamBillingType: P
+        }) : null,
+        F = la(e.billing_currency, r, !1, ne),
+        {
+            currencySign: I
+        } = P === U.FLEXIBLE ? F.flexibleBillingPlan : F.annualBillingPlan,
+        ie = Wr({
+            checkoutPricingConfig: r,
+            isNonProfit: ne,
+            isSciAccount: s,
+            teamBillingType: P
+        }) ?? 0,
+        L = e.seats_in_use > e.seats_entitled,
+        R = A ? [] : [{
+            seatType: Bm,
+            seatCount: w
+        }, {
+            seatType: zm,
+            seatCount: C
+        }],
+        z = t?.can_view_mixed_seat_usage === !0,
+        ae = (0, Q.jsxs)(fi, {
+            className: `border-token-border-default bg-token-bg-primary gap-0 rounded-xl border`,
+            children: [(0, Q.jsxs)(`div`, {
+                className: `z-10 flex flex-col gap-4 p-6`,
+                children: [(0, Q.jsxs)(`div`, {
+                    className: `flex items-center justify-between`,
+                    children: [(0, Q.jsxs)(`div`, {
+                        children: [(0, Q.jsxs)(ji, {
+                            className: `flex items-center gap-2`,
+                            children: [(0, Q.jsx)(W, {
+                                ...N
+                            }), A && (0, Q.jsx)(Tm, {
+                                teamBillingType: P
+                            })]
+                        }), M && (0, Q.jsx)(Br, {
+                            className: `text-token-text-secondary mt-1`,
+                            children: t?.is_enterprisey_account === !0 ? (0, Q.jsx)(W, {
+                                ...$.licenseExpiry,
+                                values: {
+                                    expiryDate: M
+                                }
+                            }) : e.will_renew ? (0, Q.jsx)(W, {
+                                ...$.renewalDate,
+                                values: {
+                                    expiryDate: M
+                                }
+                            }) : (0, Q.jsx)(W, {
+                                ...te ? $.moveToUsageBasedBillingDate : $.deactivateDate,
+                                values: {
+                                    expiryDate: M
+                                }
+                            })
+                        })]
+                    }), k && (0, Q.jsx)(Am, {
+                        onCancelSubscription: c,
+                        planManagementPolicy: O
+                    })]
+                }), A && !e.non_profit_org_discount_applied && (0, Q.jsx)(`div`, {
+                    className: `text-token-text-secondary h-[50px] text-sm`,
+                    children: (0, Q.jsx)(W, {
+                        ...$.pricePerSeat,
+                        values: {
+                            symbol: (0, Q.jsx)(W, {
+                                ...I
+                            }),
+                            amount: ie,
+                            currency: e => (0, Q.jsx)(`span`, {
+                                className: `align-top text-xl`,
+                                children: e
+                            }),
+                            price: e => (0, Q.jsx)(`span`, {
+                                className: `text-token-text-primary ps-[1px] pe-1 align-bottom text-[42px] leading-none`,
+                                children: e
+                            })
+                        }
+                    })
+                }), A && (0, Q.jsx)(dm, {
+                    className: `mt-2`,
+                    discount: y,
+                    activeBenefits: b,
+                    standardSeatPrice: re?.standardSeatPricing.amount,
+                    premiumSeatPrice: re?.premiumSeatPricing?.amount,
+                    perSeatMonthly: ie,
+                    subscription: e,
+                    taxPercent: x
+                })]
+            }), (0, Q.jsx)(`hr`, {}), j && (0, Q.jsx)(Q.Fragment, {
+                children: z ? (0, Q.jsx)(`div`, {
+                    className: `flex flex-col gap-4 p-6`,
+                    children: R.map(t => (0, Q.jsx)(Om, {
+                        isCountLoading: d,
+                        isPerSeatPriceLoading: i,
+                        seatCountRow: t,
+                        descriptionType: `enterprise`,
+                        subscription: e
+                    }, t.seatType))
+                }) : (0, Q.jsxs)(`div`, {
+                    className: `p-6`,
+                    children: [(0, Q.jsx)(jm, {
+                        isTeam: A,
+                        accountId: o.id,
+                        canManageSeats: O?.can_change_paid_seat_quantity === !0,
+                        isManageSeatsDisabled: A && d,
+                        maxSeats: A ? Kr(u) : void 0
+                    }), L && A && (0, Q.jsx)(`span`, {
+                        className: `text-token-text-secondary text-sm`,
+                        children: (0, Q.jsx)(W, {
+                            ...$.teamsAutochargeMessage,
+                            values: {
+                                link: e => (0, Q.jsx)(cn, {
+                                    className: `ps-1`,
+                                    openNewTab: !0,
+                                    href: Lm,
+                                    children: e
+                                })
+                            }
+                        })
+                    })]
+                })
+            })]
+        });
+    return (0, Q.jsxs)(Q.Fragment, {
+        children: [(0, Q.jsxs)(`div`, {
+            className: `flex flex-col gap-6`,
+            children: [h && (0, Q.jsx)(Cf, {}), S ? (0, Q.jsxs)(`div`, {
+                className: `rounded-xl bg-[#ECF0FF]`,
+                children: [(0, Q.jsx)(Mm, {
+                    seatThresholdGap: v
+                }), ae]
+            }) : ae]
+        }), (0, Q.jsx)(fp, {
+            canLoadAtOverageLimitBanner: g
+        })]
+    })
+}
+
+function Am({
+    onCancelSubscription: e,
+    planManagementPolicy: t
+}) {
+    let n = Oe(),
+        {
+            data: r
+        } = Dt(),
+        a = xm(n);
+    if (!n || !r) return;
+    let o = t?.can_manage_payment_method === !0,
+        s = t?.can_manage_billing_schedule === !0,
+        c = t?.can_cancel_subscription === !0;
+    if (!o && !s && !c) return null;
+    let l = () => {
+            Ve(`chatgpt_billing_manage_plan_clicked`)
+        },
+        u = r?.billing_period === `monthly` ? U.FLEXIBLE : U.ANNUAL,
+        d = tu(r) ?? u,
+        f = Ka(r),
+        p = () => {
+            Ve(`chatgpt_billing_manage_plan_billing_schedule_clicked`), fe(Gl, {
+                currentSeatCapacity: r.seat_capacity,
+                currentTeamBillingType: u,
+                initialTeamBillingType: d,
+                isNonProfit: r.non_profit_org_discount_applied === !0,
+                usesCurrentNonProfitPricing: ai(r),
+                pricingIdentity: f,
+                renewalDate: new Date(r.active_until ?? ``),
+                accountId: n.id,
+                billingDetails: {
+                    currency: r.billing_currency
+                }
+            })
+        };
+    return (0, Q.jsxs)(_t, {
+        size: `default`,
+        contentAlign: `end`,
+        sideOffset: 4,
+        triggerButton: (0, Q.jsx)(i, {
+            color: `secondary`,
+            onClick: l,
+            children: (0, Q.jsxs)(`div`, {
+                className: `flex items-center justify-center gap-1`,
+                children: [(0, Q.jsx)(W, {
+                    ...$.manageLicenseBtn
+                }), (0, Q.jsx)(Fr, {
+                    className: `icon-sm`
+                })]
+            })
+        }),
+        children: [o && (0, Q.jsx)(In.Item, {
+            icon: kr,
+            onClick: a,
+            children: (0, Q.jsx)(W, {
+                ...$.managePaymentMethod
+            })
+        }), s && (0, Q.jsx)(In.Item, {
+            icon: Ar,
+            onClick: p,
+            children: (0, Q.jsx)(W, {
+                ...$.manageBillingSchedule
+            })
+        }), c && (0, Q.jsx)(In.Separator, {}), c && (0, Q.jsx)(In.Item, {
+            icon: wr,
+            color: `danger`,
+            onClick: e,
+            children: (0, Q.jsx)(W, {
+                ...$.cancelSubscriptionBtn
+            })
+        })]
+    })
+}
+
+function jm({
+    isTeam: e,
+    accountId: t,
+    canManageSeats: n = !0,
+    isManageSeatsDisabled: r,
+    maxSeats: i,
+    onManageSeatsClick: a,
+    showManageSeatsButton: o
+}) {
+    let {
+        country: s
+    } = Qt(), {
+        data: c,
+        isLoading: l,
+        isError: u
+    } = Dt();
+    return u || !c || l || e && !c.billing_period || !c.active_until ? null : (0, Q.jsx)(df, {
+        numInUse: c.seats_in_use,
+        numAllocated: c.seats_entitled,
+        isTeam: e,
+        isNonProfit: ai(c),
+        subscriptionWillRenew: c.will_renew,
+        subscriptionBillingPeriod: c.billing_period ?? `yearly`,
+        subscriptionRenewalDate: new Date(c.active_until),
+        accountId: t,
+        billingDetails: {
+            currency: c.billing_currency,
+            country: s
+        },
+        canManageSeats: n,
+        isManageSeatsDisabled: r,
+        maxSeats: i,
+        onManageSeatsClick: a,
+        showManageSeatsButton: o
+    })
+}
+
+function Mm({
+    seatThresholdGap: e
+}) {
+    return (0, Im.useEffect)(() => {
+        e != null && Ve(`chatgpt_business_seats_promo_banner_shown`, void 0, {
+            seat_threshold_gap: e.toString()
+        })
+    }, [e]), (0, Q.jsx)(`div`, {
+        className: `flex flex-wrap items-center justify-between gap-3 px-6 py-4 text-[var(--color-text-info-soft)]`,
+        children: (0, Q.jsxs)(`div`, {
+            className: `flex items-center gap-2`,
+            children: [(0, Q.jsx)(Pe, {}), (0, Q.jsx)(`span`, {
+                className: `text-sm font-medium`,
+                children: (0, Q.jsx)(W, {
+                    ...$.limitedTimeOfferBody,
+                    values: {
+                        seatThresholdGap: e,
+                        discountPercent: 25
+                    }
+                })
+            })]
+        })
+    })
+}
+
+function Nm(e) {
+    "use forget";
+    let t = (0, Fm.c)(7),
+        {
+            workspaceId: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Q.jsx)(`p`, {
+        className: `text-token-text-primary font-[590]`,
+        children: (0, Q.jsx)(W, {
+            ...$.billingMovedToAdminConsoleTitle
+        })
+    }), t[0] = r) : r = t[0];
+    let a;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Q.jsxs)(`div`, {
+        className: `flex flex-col gap-1 pb-1 text-[16px] leading-[26px] tracking-[-0.32px]`,
+        children: [r, (0, Q.jsx)(`p`, {
+            className: `text-token-text-secondary font-normal`,
+            children: (0, Q.jsx)(W, {
+                ...$.billingMovedToAdminConsoleBody
+            })
+        })]
+    }), t[1] = a) : a = t[1];
+    let o;
+    t[2] === n ? o = t[3] : (o = jt(`/billing`, n, {
+        includeWorkspaceLoginMethodHint: !0
+    }), t[2] = n, t[3] = o);
+    let s;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, Q.jsx)(W, {
+        ...$.billingMovedToAdminConsoleAction
+    }), t[4] = s) : s = t[4];
+    let c;
+    return t[5] === o ? c = t[6] : (c = (0, Q.jsxs)(`div`, {
+        className: `flex flex-col items-center justify-center gap-4 text-center`,
+        children: [a, (0, Q.jsx)(i, {
+            as: `a`,
+            color: `secondary`,
+            openNewTab: !0,
+            size: `large`,
+            to: o,
+            children: s
+        })]
+    }), t[5] = o, t[6] = c), c
+}
+
+function Pm() {
+    let e = f(e => e.currentWorkspace)?.organizationId,
+        t = Oe(),
+        n = mt(),
+        r = et(),
+        i = $e(),
+        a = Yr(),
+        {
+            data: o,
+            isLoading: s,
+            isError: c
+        } = Dt(),
+        {
+            creditsConfig: l
+        } = Xn({
+            activeWorkspaceId: t?.id,
+            enabled: t?.id != null
+        }),
+        u = ln(l),
+        {
+            accountConfig: d,
+            isLoading: p
+        } = er({
+            activeWorkspaceId: t?.id,
+            enabled: t?.id != null
+        }),
+        m = Yn(d),
+        h = $t(d) === !0,
+        g = nn(d) === !0,
+        _ = m?.kind === `self_serve_business` ? m : void 0,
+        v = m?.kind === `enterprise` ? m : void 0,
+        y = m?.kind === `free_workspace`,
+        b = _ != null,
+        {
+            freeWorkspaceUpgradeConfig: x,
+            isLoading: S
+        } = Pn({
+            activeWorkspaceId: t?.id,
+            enabled: t?.id != null
+        }),
+        C = At(x),
+        w = C?.can_view_upgrade_surface === !0,
+        {
+            billingInformationConfig: T,
+            isLoading: E
+        } = _n({
+            activeWorkspaceId: t?.id,
+            enabled: t?.id != null
+        }),
+        D = Rt(T),
+        O = D?.can_view_invoices === !0,
+        k = ht({
+            canViewInvoices: O,
+            selectedBillingInformationPolicy: D
+        }),
+        A = !!(O && b),
+        j = D?.can_view_billing_information_settings === !0,
+        M = D?.can_edit_billing_information === !0,
+        te = b,
+        N = he(t?.planType),
+        {
+            isLoading: P,
+            planManagementConfig: ne
+        } = Qn({
+            activeWorkspaceId: t?.id,
+            enabled: t?.id != null
+        }),
+        re = sn(ne),
+        F = re?.can_manage_billing_schedule === !0,
+        I = p || S || E || P,
+        [ie, L] = ot(),
+        R = ie.get(`tab`),
+        z = R && Gm(R) ? R : `plan`,
+        ae = z === `settings` && !j || z === `invoices` && !O ? `plan` : z,
+        B = e => {
+            r({
+                pathname: window.location.pathname,
+                search: new URLSearchParams({
+                    tab: e
+                }).toString()
+            })
+        },
+        oe = (0, Q.jsx)(pa, {
+            children: s || I ? (0, Q.jsx)(`div`, {
+                className: `flex min-h-[18.75rem] w-full items-center justify-center`,
+                children: (0, Q.jsx)(ee, {})
+            }) : c ? null : te ? (0, Q.jsx)(Em, {
+                subscription: o,
+                cycleDates: a,
+                canViewInvoices: O,
+                onOpenInvoicesPage: () => B(`invoices`),
+                accountPolicy: _
+            }) : !h || !g ? null : o && (0, Q.jsx)(km, {
+                subscription: o,
+                enterpriseAccountPolicy: v
+            })
+        }),
+        V = (0, Q.jsx)(pa, {
+            children: (0, Q.jsx)(`div`, {
+                className: `flex min-h-[18.75rem] w-full items-center justify-center`,
+                children: (0, Q.jsx)(ee, {})
+            })
+        }),
+        H = () => {
+            sa({
+                actionType: co.CHATGPT_WEB_BILLING_SETTINGS_ACTION_TYPE_EDIT_BILLING_INFORMATION_CLICKED,
+                location: Vm
+            })
+        },
+        se = [{
+            key: `plan`,
+            label: n.formatMessage($.planTabName),
+            children: oe
+        }, ...O ? [{
+            key: `invoices`,
+            label: n.formatMessage($.invoicesTabName),
+            children: A ? (0, Q.jsx)(di, {
+                accountId: t?.id,
+                billingSettingsLocation: Vm,
+                showColumnsHeader: !0
+            }) : (0, Q.jsx)(pa, {
+                children: (0, Q.jsx)(Qp, {
+                    invoiceQueryScope: k
+                })
+            })
+        }] : [], ...j && t?.id ? [{
+            key: `settings`,
+            label: n.formatMessage($.settingsTabName),
+            children: (0, Q.jsx)(pa, {
+                children: (0, Q.jsx)(ya, {
+                    accountId: t.id,
+                    billingSettingsLocation: Vm,
+                    canEditBillingInformation: M,
+                    onEditBillingInformationClick: H
+                })
+            })
+        }] : []],
+        ce = ie.has(Rm),
+        le = ie.get(Rm),
+        ue = le && Fi(le) ? le : void 0,
+        de = e => {
+            Gm(e) && (e === `invoices` && !O || e === `settings` && !j || B(e))
+        };
+    if ((0, Im.useEffect)(() => {
+            if (N || !ce || !t || !F || !o || !o.active_until) return;
+            let e = o.billing_period === `monthly` ? U.FLEXIBLE : U.ANNUAL,
+                n = tu(o) ?? e,
+                r = Ka(o);
+            fe(Gl, {
+                currentSeatCapacity: o.seat_capacity,
+                currentTeamBillingType: e,
+                initialTeamBillingType: n,
+                isNonProfit: o.non_profit_org_discount_applied === !0,
+                usesCurrentNonProfitPricing: ai(o),
+                preselectedTeamBillingType: ue,
+                pricingIdentity: r,
+                renewalDate: new Date(o.active_until),
+                accountId: t.id,
+                billingDetails: {
+                    currency: o.billing_currency
+                }
+            });
+            let i = new URLSearchParams(ie);
+            i.delete(Rm), L(i, {
+                replace: !0
+            })
+        }, [t, F, N, ue, ce, o, ie, L]), (0, Im.useEffect)(() => {
+            e && i.invalidateQueries(Ue())
+        }, [e, i]), !e) return null;
+    let pe = _m({
+        intl: n,
+        cycleDates: a,
+        canViewPaidBillingContent: h,
+        isFreeWorkspacePlan: y,
+        isSelfServeBusinessBillingPageRedesignEnabled: b
+    });
+    return (0, Q.jsxs)(Q.Fragment, {
+        children: [(0, Q.jsx)(ko, {
+            children: (0, Q.jsx)(`title`, {
+                children: n.formatMessage($.adminBrowserPageTitle)
+            })
+        }), !N && (0, Q.jsx)(yu, {
+            creditsPolicy: u,
+            workspaceId: t?.id,
+            canManagePaymentMethod: !!(re?.can_manage_payment_method && t?.id)
+        }), !N && (0, Q.jsx)(xa, {
+            title: n.formatMessage($.title),
+            subtitle: pe,
+            tabsHeader: !y && h && se.length > 1 && (0, Q.jsx)(Zo, {
+                items: se,
+                activeTab: ae,
+                onTabChange: de
+            }),
+            showBottomBorder: !y && h
+        }), (0, Q.jsx)(Ma, {
+            className: N ? `flex min-h-[80vh] items-center justify-center` : void 0,
+            children: N ? (0, Q.jsx)(Nm, {
+                workspaceId: t?.id
+            }) : I ? V : y ? w ? (0, Q.jsx)(Ep, {
+                upgradePolicy: C
+            }) : null : h ? (0, Q.jsx)(Xo, {
+                items: se,
+                activeTab: ae
+            }) : null
+        })]
+    })
+}
+var Fm, Im, Q, Lm, Rm, zm, Bm, Vm, Hm, Um, Wm, Gm, $, Km = e((() => {
+        Fm = pt(), D(), Al(), va(), Xa(), Ra(), ea(), Ca(), ri(), Ll(), Hl(), Si(), Bt(), ru(), gi(), au(), du(), Ii(), jo(), zo(), vu(), pe(), Tt(), sr(), Ct(), Vt(), Nr(), br(), Er(), Tr(), ye(), le(), pn(), fa(), no(), da(), Ql(), qr(), Ji(), Li(), Zt(), Ln(), Ge(), xo(), Me(), l(), Yo(), y(), d(), T(), p(), ue(), h(), _(), u(), Io(), ke(), Oo(), dt(), Ne(), Kn(), Cu(), Jt(), cd(), kd(), Id(), Hd(), $d(), rf(), bi(), Xr(), Im = n(at()), rt(), nt(), Ga(), un(), uf(), _f(), qa(), Ht(), Tf(), ci(), Nf(), to(), ga(), Tp(), Fp(), rm(), Vr(), sm(), Gt(), Vi(), Q = qe(), lt(), Lm = `https://help.openai.com/en/articles/8792536-manage-billing-on-the-chatgpt-team-subscription-plan`, Rm = `schedule`, zm = `default`, Bm = `usage_based`, Vm = oo.CHATGPT_WEB_BILLING_SETTINGS_LOCATION_WORKSPACE_BILLING_PAGE, Hm = V(() => st(() => import(`./c2765176-moz2iwefuk962qo5.js`).then(e => e.BusinessCancelToPlusPlanCardModal), __vite__mapDeps([24, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 25, 26, 27, 28, 29]))), Um = V(() => st(() => import(`./c2daebff-k454sjw0fix9q5v0.js`).then(e => e.TeamManageSeatsModal), __vite__mapDeps([18, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 19, 20, 21, 22, 23]))), Wm = (e, t) => {
+            let n = e?.isEdu(),
+                r = e?.isSelfServeBusiness(),
+                i = _e(e?.planType),
+                a = e?.isEnterprisey(),
+                o = e?.isResellerHosted(),
+                s = t?.non_profit_org_discount_applied,
+                c = t.active_until != null;
+            if (n) return c ? $.activeEduLicense : o ? $.resellerHostedEduLicense : $.pendingEduLicense;
+            if (a) return c ? $.activeEnterpriseLicense : o ? $.resellerHostedEnterpriseLicense : $.pendingEnterpriseLicense;
+            if (i) return bo.heading;
+            if (s) return c ? $.activeTeamLicenseNonProfitOrg : $.pendingTeamLicense;
+            if (r) return c ? $.activeTeamLicense : $.pendingTeamLicense;
+            throw Se.addError(`getWorkspaceLicenseSubtitle: No license found`, {
+                subscription: t,
+                currentAccount: e
+            }), Error(`No license for workspace account.`)
+        }, Gm = e => e === `plan` || e === `invoices` || e === `settings`, $ = Qe({
+            plusCheckoutError: {
+                id: `organizationBillingInfo.businessCancelToPlusCheckoutError`,
+                defaultMessage: `We couldn't start Plus checkout. Please try again.`
+            },
+            adminBrowserPageTitle: {
+                id: `organizationBillingInfo.adminBrowserPageTitle`,
+                defaultMessage: `ChatGPT - Admin | Billing`
+            },
+            title: {
+                id: `organizationBillingInfo.title.1`,
+                defaultMessage: `Billing`
+            },
+            billingMovedToAdminConsoleTitle: {
+                id: `organizationBillingInfo.adminConsoleBillingMovedScreen.title`,
+                defaultMessage: `Billing isn’t available here`
+            },
+            billingMovedToAdminConsoleBody: {
+                id: `organizationBillingInfo.adminConsoleBillingMovedScreen.body`,
+                defaultMessage: `To view or manage billing for this workspace, go to the Admin Console.`
+            },
+            billingMovedToAdminConsoleAction: {
+                id: `organizationBillingInfo.adminConsoleBillingMovedScreen.action`,
+                defaultMessage: `Go to Admin Console`
+            },
+            headerSubheading: {
+                id: `organizationBillingInfo.headerSubheading`,
+                defaultMessage: `View and manage your billing and plan details`
+            },
+            limitedTimeOfferBody: {
+                id: `organizationBillingInfo.standardSeatsPromotion.limitedTimeOfferBody`,
+                defaultMessage: `Limited time offer: Purchase {seatThresholdGap, plural, one {# Standard seat} other {# Standard seats}} to get {discountPercent}% off your Standard seats for one month.`
+            },
+            subtitle: {
+                id: `organizationBillingInfo.subtitle`,
+                defaultMessage: `Current cycle: {start} - {end}`
+            },
+            businessPlanCardTitle: {
+                id: `organizationBillingInfo.businessPlanCardTitle`,
+                defaultMessage: `Business Plan`
+            },
+            businessPlanCurrentCycle: {
+                id: `organizationBillingInfo.businessPlanCurrentCycle`,
+                defaultMessage: `Current cycle: {start} - {end}`
+            },
+            codexSeatTitle: {
+                id: `organizationBillingInfo.codexSeatTitle`,
+                defaultMessage: `Codex seats`
+            },
+            codexSeatDescription: {
+                id: `organizationBillingInfo.codexSeatDescription`,
+                defaultMessage: `No fixed costs, pay as you go pricing`
+            },
+            standardSeatTitle: {
+                id: `organizationBillingInfo.standardSeatTitle`,
+                defaultMessage: `Standard seats`
+            },
+            premiumSeatTitle: {
+                id: `organizationBillingInfo.premiumSeatTitle`,
+                defaultMessage: `Premium seats`
+            },
+            businessPaidSeatMonthlyPrice: {
+                id: `organizationBillingInfo.businessPaidSeatMonthlyPrice`,
+                defaultMessage: `{amount} / month`
+            },
+            businessPaidSeatMonthlyTotal: {
+                id: `organizationBillingInfo.businessPaidSeatMonthlyTotal`,
+                defaultMessage: `{amount}/mo`
+            },
+            standardSeatCapacity: {
+                id: `organizationBillingInfo.standardSeatCapacity`,
+                defaultMessage: `{count, plural, one {# Standard seat} other {# Standard seats}}`
+            },
+            premiumSeatCapacity: {
+                id: `organizationBillingInfo.premiumSeatCapacity`,
+                defaultMessage: `{count, plural, one {# Premium seat} other {# Premium seats}}`
+            },
+            chatgptSeatTitle: {
+                id: `organizationBillingInfo.chatgptSeatTitle`,
+                defaultMessage: `ChatGPT seats`
+            },
+            chatgptSeatDescriptionMonthly: {
+                id: `organizationBillingInfo.chatgptSeatDescriptionMonthly`,
+                defaultMessage: `ChatGPT, ChatGPT Work, and Codex, {amount}/month`
+            },
+            codexSeatDescriptionEnt: {
+                id: `organizationBillingInfo.codexSeatDescriptionEnt`,
+                defaultMessage: `Codex only`
+            },
+            chatgptSeatDescriptionEnt: {
+                id: `organizationBillingInfo.chatgptSeatDescriptionEnt`,
+                defaultMessage: `ChatGPT and Codex, full platform access`
+            },
+            switchToAnnualBillingAndSave: {
+                id: `organizationBillingInfo.switchToAnnualBillingAndSave`,
+                defaultMessage: `Switch to annual billing and save {percent}%`
+            },
+            assignedSeatsRenewalNote: {
+                id: `organizationBillingInfo.assignedSeatsRenewalNote`,
+                defaultMessage: `Seat changes must be made 24 hours before renewal to affect billing.`
+            },
+            manageSeats: {
+                id: `organizationBillingInfo.manageSeats`,
+                defaultMessage: `Manage seats`
+            },
+            seatsInUse: {
+                id: `organizationBillingInfo.seatsInUse`,
+                defaultMessage: `{count} {count, plural, one {seat} other {seats}} in use`
+            },
+            seatsInUseWithAllocation: {
+                id: `organizationBillingInfo.seatsInUseWithAllocation`,
+                defaultMessage: `{count}/{allocated} {count, plural, one {seat} other {seats}} in use`
+            },
+            activeEnterpriseLicense: {
+                id: `organizationBillingInfo.activeEnterpriseLicense`,
+                defaultMessage: `Enterprise License`
+            },
+            pendingEnterpriseLicense: {
+                id: `organizationBillingInfo.pendingEnterpriseLicense`,
+                defaultMessage: `Enterprise License (Pending Activation) Your workspace is active and fully functional. Billing details will appear once your invoice is issued based on the contract start date. Please contact your account team with any questions.`
+            },
+            resellerHostedEnterpriseLicense: {
+                id: `organizationBillingInfo.resellerHostedEnterpriseLicense`,
+                defaultMessage: `Enterprise License`
+            },
+            activeEduLicense: {
+                id: `organizationBillingInfo.activeEduLicense`,
+                defaultMessage: `Edu License`
+            },
+            pendingEduLicense: {
+                id: `organizationBillingInfo.pendingEduLicense`,
+                defaultMessage: `Edu License (pending activation) Your workspace is active and fully functional. Billing details will appear once your invoice is issued based on the contract start date. Please contact your account team with any questions.`
+            },
+            resellerHostedEduLicense: {
+                id: `organizationBillingInfo.resellerHostedEduLicense`,
+                defaultMessage: `Edu License`
+            },
+            activeTeamLicense: {
+                id: `organizationBillingInfo.activeTeamLicense`,
+                defaultMessage: `Business Plan`
+            },
+            activeTeamLicenseNonProfitOrg: {
+                id: `organizationBillingInfo.activeTeamLicenseNonProfitOrg`,
+                defaultMessage: `Business License (Non Profit Discount)`
+            },
+            pendingTeamLicense: {
+                id: `organizationBillingInfo.pendingTeamLicense`,
+                defaultMessage: `Business Plan (pending activation)`
+            },
+            licenseExpiry: {
+                id: `organizationBillingInfo.licenseExpiry`,
+                defaultMessage: `Active until {expiryDate, date, long}`
+            },
+            renewalDate: {
+                id: `organizationBillingInfo.renewalDate`,
+                defaultMessage: `Renews on {expiryDate, date, long}`
+            },
+            deactivateDate: {
+                id: `organizationBillingInfo.deactivateDate`,
+                defaultMessage: `Deactivates on {expiryDate, date, long}`
+            },
+            moveToUsageBasedBillingDate: {
+                id: `organizationBillingInfo.moveToUsageBasedBillingDate`,
+                defaultMessage: `Moves to usage-based billing on {expiryDate, date, long}`
+            },
+            billingIntervalChangeDate: {
+                id: `organizationBillingInfo.billingIntervalChangeDate`,
+                defaultMessage: `{billingType, select, month {Changes to monthly billing on {expiryDate, date, long}} year {Changes to annual billing on {expiryDate, date, long}} other {Billing interval changes on {expiryDate, date, long}}}`
+            },
+            cancelSubscriptionBtn: {
+                id: `organizationBillingInfo.cancelSubscriptionBtn`,
+                defaultMessage: `Cancel`
+            },
+            cancelPlanTitle: {
+                id: `organizationBillingInfo.cancelPlanTitle`,
+                defaultMessage: `Cancel plan`
+            },
+            cancelPlanDescription: {
+                id: `organizationBillingInfo.cancelPlanDescription`,
+                defaultMessage: `If you cancel, you'll keep full access to your plan features until the end of your billing period.`
+            },
+            moveToUsageBasedBillingTitle: {
+                id: `organizationBillingInfo.moveToUsageBasedBillingTitle`,
+                defaultMessage: `Remove ChatGPT seats`
+            },
+            moveToUsageBasedBillingDescription: {
+                id: `organizationBillingInfo.moveToUsageBasedBillingDescription`,
+                defaultMessage: `Remove ChatGPT seats and switch all members to Codex seats. Your workspace will remain active and all ChatGPT seats will transition to Codex seats at the end of your billing period.`
+            },
+            moveToUsageBasedBillingButton: {
+                id: `organizationBillingInfo.moveToUsageBasedBillingButton`,
+                defaultMessage: `Remove ChatGPT seats`
+            },
+            manageLicenseBtn: {
+                id: `organizationBillingInfo.manageLicenseBtn`,
+                defaultMessage: `Manage plan`
+            },
+            managePaymentMethod: {
+                id: `organizationBillingInfo.managePaymentMethod`,
+                defaultMessage: `Payment method`
+            },
+            manageBillingInfoBtn: {
+                id: `organizationBillingInfo.manageBillingInfoBtn`,
+                defaultMessage: `Manage`
+            },
+            manageBillingInfoTitle: {
+                id: `organizationBillingInfo.manageBillingInfoTitle`,
+                defaultMessage: `Billing settings`
+            },
+            manageBillingInfoDescription: {
+                id: `organizationBillingInfo.manageBillingInfoDescription`,
+                defaultMessage: `Manage your payment methods, billing address, and tax ID here.`
+            },
+            manageBillingSchedule: {
+                id: `organizationBillingInfo.manageSchedule`,
+                defaultMessage: `Billing schedule`
+            },
+            manageBillingScheduleLink: {
+                id: `organizationBillingInfo.manageSchedule.link`,
+                defaultMessage: `Manage schedule`
+            },
+            stripeErrorWarning: {
+                id: `organizationBillingInfo.stripeErrorWarning`,
+                defaultMessage: `Error loading account information`
+            },
+            teamsAutochargeMessage: {
+                id: `organizationBillingInfo.teamsAutochargeMessage`,
+                defaultMessage: `Your additional seats will be included on your next invoice. <link>Learn more</link>`
+            },
+            planTabName: {
+                id: `organizationBillingInfo.planTabName`,
+                defaultMessage: `Plan`
+            },
+            invoicesTabName: {
+                id: `organizationBillingInfo.invoicesTabName`,
+                defaultMessage: `Invoices`
+            },
+            settingsTabName: {
+                id: `organizationBillingInfo.settingsTabName`,
+                defaultMessage: `Settings`
+            },
+            pricePerSeat: {
+                id: `organizationBillingInfo.pricePerSeat`,
+                defaultMessage: `<currency>{symbol}</currency><price>{amount}</price>/seat`
+            },
+            monthly: {
+                id: `organizationBillingInfo.monthly`,
+                defaultMessage: `Monthly`
+            },
+            annual: {
+                id: `organizationBillingInfo.annual`,
+                defaultMessage: `Annual`
+            },
+            workspacePercentOff: {
+                id: `organizationBillingInfo.workspacePercentOffByBillingPeriod`,
+                defaultMessage: `{percent}% off workspace plan for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}}`
+            },
+            workspacePercentOffFuture: {
+                id: `organizationBillingInfo.workspacePercentOffFutureByBillingPeriod`,
+                defaultMessage: `{percent}% off workspace plan for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}} will apply in {startPeriod}.`
+            },
+            seatFreeUpTo: {
+                id: `organizationBillingInfo.seatFreeUpToByBillingPeriod`,
+                defaultMessage: `Up to {seatCount} free for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}}`
+            },
+            seatFreeUpToFuture: {
+                id: `organizationBillingInfo.seatFreeUpToFutureByBillingPeriod`,
+                defaultMessage: `Up to {seatCount} free for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}} will apply in {startPeriod}.`
+            },
+            fixedAmountOff: {
+                id: `organizationBillingInfo.fixedAmountOffByBillingPeriod`,
+                defaultMessage: `{amount} off for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}}`
+            },
+            fixedAmountOffFuture: {
+                id: `organizationBillingInfo.fixedAmountOffFutureByBillingPeriod`,
+                defaultMessage: `{amount} off for {billingPeriod, select, year {{numPeriods, plural, one {# year} other {# years}}} month {{numPeriods, plural, one {# month} other {# months}}} other {{numPeriods, plural, one {# month} other {# months}}}} will apply in {startPeriod}.`
+            },
+            discountSeatCount: {
+                id: `organizationBillingInfo.discountSeatCount`,
+                defaultMessage: `{seats, plural, one {# Standard seat} other {# Standard seats}}`
+            },
+            discountStartPeriod: {
+                id: `organizationBillingInfo.discountStartPeriod`,
+                defaultMessage: `{numPeriods, plural, one {the next billing period} other {# billing periods}}`
+            }
+        })
+    })),
+    qm, Jm, Ym, Xm = e((() => {
+        nt(), qm = pt(), Km(), Jm = qe(), Ym = Ye(function() {
+            "use forget";
+            let e = (0, qm.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Jm.jsx)(Pm, {}), e[0] = t) : t = e[0], t
+        })
+    }));
+e((() => {
+    Xm()
+}))();
+export {
+    Ym as
+    default
+};
 //# sourceMappingURL=admin.billing._index-oe63g3mm.js.map

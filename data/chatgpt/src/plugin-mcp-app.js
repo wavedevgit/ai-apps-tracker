@@ -1,1 +1,188 @@
-export const __rspack_esm_ids=[935047];export const __webpack_modules__={ZeaT:(function(a,s,e){e.d(s,{a:()=>c,b:()=>p});var r=e("jqIZ"),o=e("ABep"),t=e("QosV"),m=e("zOE4"),f=e("EkCf");let c=(0,r.ib)(function(a){let s,e=(0,t.c)(1);return e[0]===Symbol.for("react.memo_cache_sentinel")?(s=(0,o.jsx)(m.LoadingPage,{fillParent:!0,variant:"blossom"}),e[0]=s):s=e[0],s});var p=(0,r.gb)(function(a){let s,e=(0,t.c)(1);return e[0]===Symbol.for("react.memo_cache_sentinel")?(s=(0,o.jsx)(f.a,{fallback:(0,o.jsx)(c,{})}),e[0]=s):s=e[0],s})}),nDjx:(function(a,s,e){a.exports=e.p+"assets/appshot-logo.f0152cb4dd.png"}),hIAo:(function(a,s,e){a.exports=e.p+"assets/codex-app-ga-logo.dfddfb85d7.png"}),jZWr:(function(a,s,e){a.exports=e.p+"assets/dictation-error.f54db4f9bb.wav"}),OCvz:(function(a,s,e){a.exports=e.p+"assets/dictation-start.f6efcb404f.wav"}),DJ2e:(function(a,s,e){a.exports=e.p+"assets/dictation-stop.e3bc7ebc5e.wav"}),nlAI:(function(a,s,e){var r=e("ABep"),o=e("QosV"),t=e("XyTt"),m=e("zd8w"),f=e("v4LA"),c=e("AXDI");let p=(0,f.a)(t.v);e.d(s,{},{a:function(a){let s,e,t=(0,o.c)(3),{link:f}=a;return t[0]===Symbol.for("react.memo_cache_sentinel")?(s=(0,r.jsx)(c.b,{}),t[0]=s):s=t[0],t[1]!==f?(e=(0,r.jsx)(c.a,{children:(0,r.jsx)(m.Suspense,{fallback:s,children:(0,r.jsx)(p,{link:f})})}),t[1]=f,t[2]=e):e=t[2],e}})}),EkCf:(function(a,s,e){var r=e("ABep"),o=e("QosV"),t=e("jqIZ"),m=e("hC2y"),f=e("AXDI"),c=e("NVla"),p=e("nlAI");e.d(s,{},{a:function(a){let s,e,i,l,n,b=(0,o.c)(14),{fallback:j}=a,d=(0,t.X)();if(b[0]!==j||b[1]!==d){l=Symbol.for("react.early_return_sentinel");a:{let a=(0,t.K)(m.c,d);if(null==a){let a;b[6]!==d.pathname?(a=(0,c.b)(d.pathname),b[6]=d.pathname,b[7]=a):a=b[7];let s=a;if(null!=s){let a;b[8]!==s?(a=(0,r.jsx)(p.a,{link:s}),b[8]=s,b[9]=a):a=b[9],l=a;break a}}s=f.a,e=j,i=null==a?(0,r.jsx)(m.d,{}):(0,t.N)(a)}b[0]=j,b[1]=d,b[2]=s,b[3]=e,b[4]=i,b[5]=l}else s=b[2],e=b[3],i=b[4],l=b[5];return l!==Symbol.for("react.early_return_sentinel")?l:(b[10]!==s||b[11]!==e||b[12]!==i?(n=(0,r.jsx)(s,{fallback:e,children:i}),b[10]=s,b[11]=e,b[12]=i,b[13]=n):n=b[13],n)}})}),EBQV:(function(s){s.exports=a.ir("/cdn/assets/dotnet.js").then(function(a){return a})})};import{__webpack_require__ as a}from"./633146.2285f1d8aa.js";import*as s from"./680612.a5a31a0030.js";a.C(s);import*as e from"./418851.a4e06377a0.js";a.C(e);import*as r from"./109308.c442cdd552.js";a.C(r);import*as o from"./399565.beb7308a81.js";a.C(o);import*as t from"./257798.1c607c1777.js";a.C(t);import*as m from"./153380.b37e665dc3.js";a.C(m);import*as f from"./617936.784843eda2.js";a.C(f);import*as c from"./807489.43c08228d1.js";a.C(c);import*as p from"./337882.25be89bb6b.js";a.C(p);import*as i from"./955979.4d2a69cba7.js";a.C(i);import*as l from"./646436.9dd5128297.js";a.C(l);import*as n from"./7078.b81fd6ebdf.js";a.C(n);import*as b from"./200429.b8bf5eb48b.js";a.C(b);import*as j from"./698524.3578a8549b.js";a.C(j);import*as d from"./956483.8b486f09f8.js";a.C(d);import*as C from"./87162.984eea3ac6.js";a.C(C);import*as _ from"./396705.3c89161782.js";a.C(_);import*as x from"./155568.af6d2aefa8.js";a.C(x);import*as u from"./731863.0ff6d7d48b.js";a.C(u);import*as k from"./767086.75fa16b40d.js";a.C(k);import*as h from"./76629.5f0e27ddaa.js";a.C(h);import*as v from"./514085.974d142f7d.js";a.C(v);import*as y from"./204542.61a52e24da.js";a.C(y);import*as A from"./982651.82d8538ea6.js";a.C(A);import*as g from"./673108.fb5f4728ad.js";a.C(g);import*as w from"./487481.8cb886e883.js";a.C(w);import*as I from"./229522.d004cde422.js";a.C(I);import*as S from"./390575.e91c694262.js";a.C(S);import*as V from"./226913.d4efcaca8e.js";a.C(V);import*as Z from"./547397.b2fe740321.js";a.C(Z);import*as B from"./935047.17098e5a5c.js";a.C(B);var D=a(a.s="ZeaT"),E=D.a,Q=D.b;export{E as HydrateFallback,Q as default};
+export const __rspack_esm_ids = [935047];
+export const __webpack_modules__ = {
+    ZeaT: (function(a, s, e) {
+        e.d(s, {
+            a: () => c,
+            b: () => p
+        });
+        var r = e("jqIZ"),
+            o = e("ABep"),
+            t = e("QosV"),
+            m = e("zOE4"),
+            f = e("EkCf");
+        let c = (0, r.ib)(function(a) {
+            let s, e = (0, t.c)(1);
+            return e[0] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, o.jsx)(m.LoadingPage, {
+                fillParent: !0,
+                variant: "blossom"
+            }), e[0] = s) : s = e[0], s
+        });
+        var p = (0, r.gb)(function(a) {
+            let s, e = (0, t.c)(1);
+            return e[0] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, o.jsx)(f.a, {
+                fallback: (0, o.jsx)(c, {})
+            }), e[0] = s) : s = e[0], s
+        })
+    }),
+    nDjx: (function(a, s, e) {
+        a.exports = e.p + "assets/appshot-logo.f0152cb4dd.png"
+    }),
+    hIAo: (function(a, s, e) {
+        a.exports = e.p + "assets/codex-app-ga-logo.dfddfb85d7.png"
+    }),
+    jZWr: (function(a, s, e) {
+        a.exports = e.p + "assets/dictation-error.f54db4f9bb.wav"
+    }),
+    OCvz: (function(a, s, e) {
+        a.exports = e.p + "assets/dictation-start.f6efcb404f.wav"
+    }),
+    DJ2e: (function(a, s, e) {
+        a.exports = e.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    }),
+    nlAI: (function(a, s, e) {
+        var r = e("ABep"),
+            o = e("QosV"),
+            t = e("XyTt"),
+            m = e("zd8w"),
+            f = e("v4LA"),
+            c = e("AXDI");
+        let p = (0, f.a)(t.v);
+        e.d(s, {}, {
+            a: function(a) {
+                let s, e, t = (0, o.c)(3),
+                    {
+                        link: f
+                    } = a;
+                return t[0] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, r.jsx)(c.b, {}), t[0] = s) : s = t[0], t[1] !== f ? (e = (0, r.jsx)(c.a, {
+                    children: (0, r.jsx)(m.Suspense, {
+                        fallback: s,
+                        children: (0, r.jsx)(p, {
+                            link: f
+                        })
+                    })
+                }), t[1] = f, t[2] = e) : e = t[2], e
+            }
+        })
+    }),
+    EkCf: (function(a, s, e) {
+        var r = e("ABep"),
+            o = e("QosV"),
+            t = e("jqIZ"),
+            m = e("hC2y"),
+            f = e("AXDI"),
+            c = e("NVla"),
+            p = e("nlAI");
+        e.d(s, {}, {
+            a: function(a) {
+                let s, e, i, l, n, b = (0, o.c)(14),
+                    {
+                        fallback: j
+                    } = a,
+                    d = (0, t.X)();
+                if (b[0] !== j || b[1] !== d) {
+                    l = Symbol.for("react.early_return_sentinel");
+                    a: {
+                        let a = (0, t.K)(m.c, d);
+                        if (null == a) {
+                            let a;
+                            b[6] !== d.pathname ? (a = (0, c.b)(d.pathname), b[6] = d.pathname, b[7] = a) : a = b[7];
+                            let s = a;
+                            if (null != s) {
+                                let a;
+                                b[8] !== s ? (a = (0, r.jsx)(p.a, {
+                                    link: s
+                                }), b[8] = s, b[9] = a) : a = b[9], l = a;
+                                break a
+                            }
+                        }
+                        s = f.a,
+                        e = j,
+                        i = null == a ? (0, r.jsx)(m.d, {}) : (0, t.N)(a)
+                    }
+                    b[0] = j, b[1] = d, b[2] = s, b[3] = e, b[4] = i, b[5] = l
+                } else s = b[2], e = b[3], i = b[4], l = b[5];
+                return l !== Symbol.for("react.early_return_sentinel") ? l : (b[10] !== s || b[11] !== e || b[12] !== i ? (n = (0, r.jsx)(s, {
+                    fallback: e,
+                    children: i
+                }), b[10] = s, b[11] = e, b[12] = i, b[13] = n) : n = b[13], n)
+            }
+        })
+    }),
+    EBQV: (function(s) {
+        s.exports = a.ir("/cdn/assets/dotnet.js").then(function(a) {
+            return a
+        })
+    })
+};
+import {
+    __webpack_require__ as a
+} from "./633146.2285f1d8aa.js";
+import * as s from "./680612.a5a31a0030.js";
+a.C(s);
+import * as e from "./418851.a4e06377a0.js";
+a.C(e);
+import * as r from "./109308.c442cdd552.js";
+a.C(r);
+import * as o from "./399565.beb7308a81.js";
+a.C(o);
+import * as t from "./257798.1c607c1777.js";
+a.C(t);
+import * as m from "./153380.b37e665dc3.js";
+a.C(m);
+import * as f from "./617936.784843eda2.js";
+a.C(f);
+import * as c from "./807489.43c08228d1.js";
+a.C(c);
+import * as p from "./337882.25be89bb6b.js";
+a.C(p);
+import * as i from "./955979.4d2a69cba7.js";
+a.C(i);
+import * as l from "./646436.9dd5128297.js";
+a.C(l);
+import * as n from "./7078.b81fd6ebdf.js";
+a.C(n);
+import * as b from "./200429.b8bf5eb48b.js";
+a.C(b);
+import * as j from "./698524.3578a8549b.js";
+a.C(j);
+import * as d from "./956483.8b486f09f8.js";
+a.C(d);
+import * as C from "./87162.984eea3ac6.js";
+a.C(C);
+import * as _ from "./396705.3c89161782.js";
+a.C(_);
+import * as x from "./155568.af6d2aefa8.js";
+a.C(x);
+import * as u from "./731863.0ff6d7d48b.js";
+a.C(u);
+import * as k from "./767086.75fa16b40d.js";
+a.C(k);
+import * as h from "./76629.5f0e27ddaa.js";
+a.C(h);
+import * as v from "./514085.974d142f7d.js";
+a.C(v);
+import * as y from "./204542.61a52e24da.js";
+a.C(y);
+import * as A from "./982651.82d8538ea6.js";
+a.C(A);
+import * as g from "./673108.fb5f4728ad.js";
+a.C(g);
+import * as w from "./487481.8cb886e883.js";
+a.C(w);
+import * as I from "./229522.d004cde422.js";
+a.C(I);
+import * as S from "./390575.e91c694262.js";
+a.C(S);
+import * as V from "./226913.d4efcaca8e.js";
+a.C(V);
+import * as Z from "./547397.b2fe740321.js";
+a.C(Z);
+import * as B from "./935047.17098e5a5c.js";
+a.C(B);
+var D = a(a.s = "ZeaT"),
+    E = D.a,
+    Q = D.b;
+export {
+    E as HydrateFallback, Q as
+    default
+};

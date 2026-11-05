@@ -1,2 +1,63 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Ou as t}from"./4813494d-mdvd4786a87166cc.js";import{At as n,Bn as r,Ft as i,Ht as a,It as o,Q as s,ct as c,wn as l}from"./2340486e-i7pjxgdhv0bs6apg.js";import{DAt as u}from"./conversation-small-bcbq46iub1p0ca1t.js";import{a as d,i as f,n as p,t as m}from"./f19e94aa-f1j37gmgipmi4l60.js";var h,g,_,v=e((()=>{s(),h=l(),u(),d(),p(),g=r(),_=a(function(){"use forget";let e=(0,h.c)(4),{defaultToAccounts:r,ledgerLinks:a}=o(),{search:s}=n(),l=i();if(r&&l!==`REPLACE`&&!f(s)){let n;return e[0]===s?n=e[1]:(n=(0,g.jsx)(c,{to:{pathname:`${t}/accounts`,search:s},replace:!0}),e[0]=s,e[1]=n),n}let u=a.length>0,d;return e[2]===u?d=e[3]:(d=(0,g.jsx)(m,{hasLedgerConnections:u,variant:`dashboard`}),e[2]=u,e[3]=d),d})}));e((()=>{v()}))();export{_ as default};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ou as t
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as n,
+    Bn as r,
+    Ft as i,
+    Ht as a,
+    It as o,
+    Q as s,
+    ct as c,
+    wn as l
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    DAt as u
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    a as d,
+    i as f,
+    n as p,
+    t as m
+} from "./f19e94aa-f1j37gmgipmi4l60.js";
+var h, g, _, v = e((() => {
+    s(), h = l(), u(), d(), p(), g = r(), _ = a(function() {
+        "use forget";
+        let e = (0, h.c)(4),
+            {
+                defaultToAccounts: r,
+                ledgerLinks: a
+            } = o(),
+            {
+                search: s
+            } = n(),
+            l = i();
+        if (r && l !== `REPLACE` && !f(s)) {
+            let n;
+            return e[0] === s ? n = e[1] : (n = (0, g.jsx)(c, {
+                to: {
+                    pathname: `${t}/accounts`,
+                    search: s
+                },
+                replace: !0
+            }), e[0] = s, e[1] = n), n
+        }
+        let u = a.length > 0,
+            d;
+        return e[2] === u ? d = e[3] : (d = (0, g.jsx)(m, {
+            hasLedgerConnections: u,
+            variant: `dashboard`
+        }), e[2] = u, e[3] = d), d
+    })
+}));
+e((() => {
+    v()
+}))();
+export {
+    _ as
+    default
+};
 //# sourceMappingURL=finances._index-ilzatr9f.js.map

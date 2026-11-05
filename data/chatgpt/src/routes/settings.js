@@ -1,2 +1,155 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{A8 as t,Dat as n,Eat as r,I4 as i,L1 as a,Lit as o,M4 as s,N1 as c,P4 as l,Rit as u,S5 as d,U1 as f,b5 as p,f0 as m,fst as h,h5 as g,kat as _,n0 as v,p0 as y,pst as b,py as x,q1 as S,sst as C,wy as w,x5 as T,z1 as E}from"./4813494d-mdvd4786a87166cc.js";import{Ht as D,Q as O,bt as k,xt as A}from"./2340486e-i7pjxgdhv0bs6apg.js";function j(e){let[,...t]=e.pathname.replace(/^\/+|\/+$/g,``).split(`/`).map(e=>e.toLowerCase());if(t.length===0)return x.General;let n=t.join(`/`);return P.get(n)??F.get(n)??x.General}function M(e){let t=j(e),n=t===x.General?`#settings`:`#settings/${t}`;return`/${e.search}${n}`}function N(e){if(e.pathname!==`/settings/Connectors`||e.searchParams.get(`source`)!==`codex-code-attribution`)return null;let t=e.searchParams.getAll(`account_id`),n=e.searchParams.getAll(`connector`),r=t[0],i=n[0],a=/^[a-zA-Z0-9_-]{1,255}$/;if(e.searchParams.getAll(`source`).length!==1||t.length!==1||!r||!a.test(r)||n.length>1||i!==void 0&&!a.test(i))throw new Response(`Invalid connector settings target`,{status:400});let o=new URLSearchParams({"product-sku":`CODEX`});return i&&o.set(`connector`,i),{workspaceId:r,redirectTo:`/#settings/Connectors?${o}`}}var P,F,I=e((()=>{w(),P=new Map([[`data-controls`,x.DataControls],[`parental-controls`,x.ParentalControls]]),F=new Map(Object.values(x).map(e=>[e.toLowerCase(),e]))}));function L(e,t){let n=new URL(`/settings/Connectors`,e);n.searchParams.set(`source`,`codex-code-attribution`),n.searchParams.set(`account_id`,t);let r=e.searchParams.get(`connector`);return r&&n.searchParams.set(`connector`,r),n}function R(e,t){let n=new URL(e,t);return n.origin===t.origin&&n.pathname.replace(/\/$/,``)===`/auth/login`?(n.searchParams.set(`next`,t.pathname+t.search),n.pathname+n.search+n.hash):e}var z,B,V=e((()=>{O(),t(),S(),m(),o(),n(),d(),l(),b(),I(),z=async({request:e})=>{let t=new URL(e.url),n=N(t);if(!n)throw k(M(t));let o=L(t,n.workspaceId),l=h().redirect?.destination??(u()?void 0:`/auth/login`);if(l)throw A(R(l,o));let d=C()?.user?.id,m=!1,b=i(()=>{m=!0}),x=()=>{if(m||!d||C()?.user?.id!==d)throw new DOMException(`Settings handoff session changed`,`AbortError`)},S=()=>{e.signal.throwIfAborted(),x()};try{S(),await p(()=>!g()),S();let i=T(),l=await i.fetchQuery({...E(),staleTime:0});S();let u=a(l).find(e=>e.id===n.workspaceId);if(l.accounts[n.workspaceId]?.account.account_id!==n.workspaceId||!u||u.isDeactivated())throw k(`/`);if(!u.canAccessWithCurrentSession)return await y({fallbackScreenHint:`login`,callbackUrl:o.toString(),...u.ssoConnectionName==null?{}:{additionalAuthParams:{connection:u.ssoConnectionName}}}),null;let d=f()?.id!==u.id||c()?.id!==u.id;if(d&&t.searchParams.get(`refresh_account`)===`true`)throw k(`/`);let{updatedAccount:m}=await v(i,u.id);if(x(),!m)throw S(),k(`/`);if(d){let t=r.getCookie(_.ClientSessionEpoch);if(b(),await s(),x(),r.getCookie(_.ClientSessionEpoch)!==t)throw new DOMException(`Settings handoff session changed`,`AbortError`);return o.searchParams.set(`refresh_account`,`true`),window.location.assign(e.signal.aborted?`/?refresh_account=true`:o.pathname+o.search),null}throw S(),A(n.redirectTo)}finally{b()}},z.hydrate=!0,B=D(function(){"use forget";return null})}));e((()=>{V()}))();export{z as clientLoader,B as default};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A8 as t,
+    Dat as n,
+    Eat as r,
+    I4 as i,
+    L1 as a,
+    Lit as o,
+    M4 as s,
+    N1 as c,
+    P4 as l,
+    Rit as u,
+    S5 as d,
+    U1 as f,
+    b5 as p,
+    f0 as m,
+    fst as h,
+    h5 as g,
+    kat as _,
+    n0 as v,
+    p0 as y,
+    pst as b,
+    py as x,
+    q1 as S,
+    sst as C,
+    wy as w,
+    x5 as T,
+    z1 as E
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Ht as D,
+    Q as O,
+    bt as k,
+    xt as A
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+
+function j(e) {
+    let [, ...t] = e.pathname.replace(/^\/+|\/+$/g, ``).split(`/`).map(e => e.toLowerCase());
+    if (t.length === 0) return x.General;
+    let n = t.join(`/`);
+    return P.get(n) ?? F.get(n) ?? x.General
+}
+
+function M(e) {
+    let t = j(e),
+        n = t === x.General ? `#settings` : `#settings/${t}`;
+    return `/${e.search}${n}`
+}
+
+function N(e) {
+    if (e.pathname !== `/settings/Connectors` || e.searchParams.get(`source`) !== `codex-code-attribution`) return null;
+    let t = e.searchParams.getAll(`account_id`),
+        n = e.searchParams.getAll(`connector`),
+        r = t[0],
+        i = n[0],
+        a = /^[a-zA-Z0-9_-]{1,255}$/;
+    if (e.searchParams.getAll(`source`).length !== 1 || t.length !== 1 || !r || !a.test(r) || n.length > 1 || i !== void 0 && !a.test(i)) throw new Response(`Invalid connector settings target`, {
+        status: 400
+    });
+    let o = new URLSearchParams({
+        "product-sku": `CODEX`
+    });
+    return i && o.set(`connector`, i), {
+        workspaceId: r,
+        redirectTo: `/#settings/Connectors?${o}`
+    }
+}
+var P, F, I = e((() => {
+    w(), P = new Map([
+        [`data-controls`, x.DataControls],
+        [`parental-controls`, x.ParentalControls]
+    ]), F = new Map(Object.values(x).map(e => [e.toLowerCase(), e]))
+}));
+
+function L(e, t) {
+    let n = new URL(`/settings/Connectors`, e);
+    n.searchParams.set(`source`, `codex-code-attribution`), n.searchParams.set(`account_id`, t);
+    let r = e.searchParams.get(`connector`);
+    return r && n.searchParams.set(`connector`, r), n
+}
+
+function R(e, t) {
+    let n = new URL(e, t);
+    return n.origin === t.origin && n.pathname.replace(/\/$/, ``) === `/auth/login` ? (n.searchParams.set(`next`, t.pathname + t.search), n.pathname + n.search + n.hash) : e
+}
+var z, B, V = e((() => {
+    O(), t(), S(), m(), o(), n(), d(), l(), b(), I(), z = async ({
+        request: e
+    }) => {
+        let t = new URL(e.url),
+            n = N(t);
+        if (!n) throw k(M(t));
+        let o = L(t, n.workspaceId),
+            l = h().redirect?.destination ?? (u() ? void 0 : `/auth/login`);
+        if (l) throw A(R(l, o));
+        let d = C()?.user?.id,
+            m = !1,
+            b = i(() => {
+                m = !0
+            }),
+            x = () => {
+                if (m || !d || C()?.user?.id !== d) throw new DOMException(`Settings handoff session changed`, `AbortError`)
+            },
+            S = () => {
+                e.signal.throwIfAborted(), x()
+            };
+        try {
+            S(), await p(() => !g()), S();
+            let i = T(),
+                l = await i.fetchQuery({
+                    ...E(),
+                    staleTime: 0
+                });
+            S();
+            let u = a(l).find(e => e.id === n.workspaceId);
+            if (l.accounts[n.workspaceId]?.account.account_id !== n.workspaceId || !u || u.isDeactivated()) throw k(`/`);
+            if (!u.canAccessWithCurrentSession) return await y({
+                fallbackScreenHint: `login`,
+                callbackUrl: o.toString(),
+                ...u.ssoConnectionName == null ? {} : {
+                    additionalAuthParams: {
+                        connection: u.ssoConnectionName
+                    }
+                }
+            }), null;
+            let d = f()?.id !== u.id || c()?.id !== u.id;
+            if (d && t.searchParams.get(`refresh_account`) === `true`) throw k(`/`);
+            let {
+                updatedAccount: m
+            } = await v(i, u.id);
+            if (x(), !m) throw S(), k(`/`);
+            if (d) {
+                let t = r.getCookie(_.ClientSessionEpoch);
+                if (b(), await s(), x(), r.getCookie(_.ClientSessionEpoch) !== t) throw new DOMException(`Settings handoff session changed`, `AbortError`);
+                return o.searchParams.set(`refresh_account`, `true`), window.location.assign(e.signal.aborted ? `/?refresh_account=true` : o.pathname + o.search), null
+            }
+            throw S(), A(n.redirectTo)
+        } finally {
+            b()
+        }
+    }, z.hydrate = !0, B = D(function() {
+        "use forget";
+        return null
+    })
+}));
+e((() => {
+    V()
+}))();
+export {
+    z as clientLoader, B as
+    default
+};
 //# sourceMappingURL=settings-pu5ylvuh.js.map

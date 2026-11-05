@@ -1,2 +1,309 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{B3 as n,Crt as r,G3 as i,H3 as a,Hst as o,IU as s,K3 as c,LU as l,M4 as u,Nat as d,Oct as f,P4 as p,Srt as m,U3 as h,V1 as g,Vst as _,W3 as v,Y3 as y,a0 as b,cot as x,dj as S,fj as C,jat as w,n0 as T,not as E,o0 as D,q1 as O,t0 as k,uj as A,wI as j,yI as M,yrt as N}from"./4813494d-mdvd4786a87166cc.js";import{At as P,Bn as F,Ht as I,N as L,Nt as R,Q as z,Rn as B,Vn as V,ct as H,kt as U,s as W,wn as ee,zn as te}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Ain as ne,Din as re,GAt as ie,KAt as ae,don as oe,lcn as G,uon as K,xin as se,ycn as ce}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Cd as le,lh as ue,sh as q,wd as de}from"./c2675c8c-oz03twoan08d72ud.js";import{a as fe,i as pe,o as me,t as he}from"./101e3679-kirbu83coyf7gqhh.js";function J({serverLoader:e}){return e()}function ge(){"use forget";let e=(0,Y.c)(36),t=D(),{data:r,isLoading:i,isFetching:c,isError:l}=b(),d=te(),f=L(),p=P(),m=R(),g=(0,X.useRef)(null),[_,v]=(0,X.useState)(!1),y=(0,X.useRef)(null),x;e[0]===r?.accountItems?x=e[1]:(x=r?.accountItems.find(_e),e[0]=r?.accountItems,e[1]=x);let S=x,C;e[2]===p.search?C=e[3]:(C=new URLSearchParams(p.search).get(n),e[2]=p.search,e[3]=C);let w=C,E;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(E=()=>{let e=new AbortController;return y.current=e,()=>e.abort()},e[4]=E):E=e[4];let O;e[5]===p.key?O=e[6]:(O=[p.key],e[5]=p.key,e[6]=O),(0,X.useEffect)(E,O);let A;e[7]!==r||e[8]!==w||e[9]!==t?.structure||e[10]!==d||e[11]!==l||e[12]!==c||e[13]!==i||e[14]!==m||e[15]!==S||e[16]!==f?(A=()=>{if(t?.structure!==o.WORKSPACE||i||c||l||r==null||w!=null||g.current)return;let e=y.current?.signal;(async()=>{if(await Promise.resolve(),e?.aborted||g.current)return;g.current=S==null?`login`:`1`,v(!0);let t=a(new URL(window.location.href),g.current);if(window.history.replaceState(window.history.state,``,t.href),S==null){window.location.assign(h(t));return}try{let n=S.canAccessWithCurrentSession?await T(f,S.id):await k(f,S.id,d,s(),!0,t.href,t.href);if(`willRedirect`in n&&n.willRedirect)return;n.updatedAccount?(await u(),e?.aborted?window.location.reload():window.location.href=t.href):e?.aborted||m(`/`,{replace:!0})}catch{e?.aborted||m(`/`,{replace:!0})}})()},e[7]=r,e[8]=w,e[9]=t?.structure,e[10]=d,e[11]=l,e[12]=c,e[13]=i,e[14]=m,e[15]=S,e[16]=f,e[17]=A):A=e[17];let j=t?.structure,M;e[18]!==r||e[19]!==w||e[20]!==d||e[21]!==l||e[22]!==c||e[23]!==i||e[24]!==p.key||e[25]!==m||e[26]!==S||e[27]!==f||e[28]!==j?(M=[r,w,j,d,l,c,i,p.key,S,f,m],e[18]=r,e[19]=w,e[20]=d,e[21]=l,e[22]=c,e[23]=i,e[24]=p.key,e[25]=m,e[26]=S,e[27]=f,e[28]=j,e[29]=M):M=e[29],(0,X.useEffect)(A,M);let N,F;if(e[30]===m?(N=e[31],F=e[32]):(N=()=>{let e=e=>{!e.persisted||!g.current||(g.current===`login`?window.location.reload():m(`/`,{replace:!0}))};return window.addEventListener(`pageshow`,e),()=>window.removeEventListener(`pageshow`,e)},F=[m],e[30]=m,e[31]=N,e[32]=F),(0,X.useEffect)(N,F),t?.structure!==o.WORKSPACE&&!_||w===`login`){let t;return e[33]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(ve,{}),e[33]=t):t=e[33],t}if(w!=null||l){let t;return e[34]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Z.jsx)(H,{to:`/`,replace:!0}),e[34]=t):t=e[34],t}let I;return e[35]===Symbol.for(`react.memo_cache_sentinel`)?(I=(0,Z.jsx)(q,{}),e[35]=I):I=e[35],I}function _e(e){return e.isPersonalAccount()&&!e.isDeactivated()}function ve(){"use forget";let e=(0,Y.c)(45),t=D(),{prepareCheckoutSession:n,navigateToCheckout:r}=ne(),a=P(),s=R(),l=ae(),u=(0,X.useRef)(null),[d,f]=(0,X.useState)(null),p;e[0]===t?p=e[1]:(p=t?.structure===o.WORKSPACE||(t?.hasPaidSubscription()??!1),e[0]=t,e[1]=p);let h=p,y;e[2]===a.search?y=e[3]:(y=i(a.search),e[2]=a.search,e[3]=y);let{loginHint:b,searchWithoutLoginHint:x,promoCampaign:S}=y,T=b!=null,O=ce(),k=S??O.campaignId,j=!!S,F=t!=null&&!h&&!T&&oe()&&m(`662604060`).get(`paypal_promo_checkout_enabled`,!1),I=t!=null&&!h&&!F,{data:L}=de(I?k??``:``,I&&j),{kind:z,campaign:B}=v({enabled:F,campaign:k,isCampaignFromQueryParam:j,promotion:L}),V;e[4]!==d?.accountId||e[5]!==t||e[6]!==B||e[7]!==z||e[8]!==T||e[9]!==l||e[10]!==a.hash||e[11]!==s||e[12]!==r||e[13]!==n||e[14]!==x||e[15]!==h?(V=()=>{if(t==null||h||T||d?.accountId===t.id||u.current===t.id)return;let e=t.id;u.current=e;let i=z===`standard`?null:c({country:N().getContext().user.country,multicurrencyEnabled:m(`662604060`).get(`paypal_promo_multicurrency_enabled`,!1)});if(i==null){s({pathname:`/purchase/plus`,search:x,hash:a.hash},{replace:!0,...B?{state:{[M]:B}}:{}});return}C(A(x,a.hash)),n(i,{}).then(t=>{if(!(!l()||g()?.id!==e)){if(!(`tag`in t)||t.tag!==`custom_checkout_session`&&t.tag!==`redirect_to_portal`)throw Error(`Expected a custom PayPal checkout session`);return r(t,{replace:!0,searchParams:x,checkoutPayload:i,state:{[se]:{pathname:`/`,search:x,hash:`#pricing`}}})}}).catch(t=>{!l()||g()?.id!==e||(w.addError(t instanceof Error?t:Error(`Failed to start PayPal promo checkout`),{feature:`paypal_promo_checkout`}),f({accountId:e,error:t instanceof Error?t:Error(),country:i.billing_details?.country??void 0}))})},e[4]=d?.accountId,e[5]=t,e[6]=B,e[7]=z,e[8]=T,e[9]=l,e[10]=a.hash,e[11]=s,e[12]=r,e[13]=n,e[14]=x,e[15]=h,e[16]=V):V=e[16];let U;if(e[17]!==d||e[18]!==t||e[19]!==B||e[20]!==z||e[21]!==T||e[22]!==l||e[23]!==a.hash||e[24]!==s||e[25]!==r||e[26]!==n||e[27]!==x||e[28]!==h?(U=[t,d,h,T,l,a.hash,s,r,n,z,B,x],e[17]=d,e[18]=t,e[19]=B,e[20]=z,e[21]=T,e[22]=l,e[23]=a.hash,e[24]=s,e[25]=r,e[26]=n,e[27]=x,e[28]=h,e[29]=U):U=e[29],(0,X.useEffect)(V,U),T&&t!=null){let t=`${a.pathname}${x}${a.hash}`,n;return e[30]===t?n=e[31]:(n=(0,Z.jsx)(H,{replace:!0,to:t}),e[30]=t,e[31]=n),n}if(h){let n,r,i;if(e[32]!==t?.planType||e[33]!==x){let a=new URLSearchParams(x);t?.planType===_.GO?a.set(`plan`,`plus`):a.delete(`plan`),n=H,i=!0,r=a.toString(),e[32]=t?.planType,e[33]=x,e[34]=n,e[35]=r,e[36]=i}else n=e[34],r=e[35],i=e[36];let a=`/?${r}#pricing`,o;return e[37]!==n||e[38]!==i||e[39]!==a?(o=(0,Z.jsx)(n,{replace:i,to:a}),e[37]=n,e[38]=i,e[39]=a,e[40]=o):o=e[40],o}let W;return e[41]!==d||e[42]!==t?.id||e[43]!==s?(W=(0,Z.jsx)(`div`,{className:`bg-token-bg-primary flex h-full w-full items-center justify-center`,children:d!=null&&d.accountId===t?.id?(0,Z.jsx)(fe,{errorCode:d.error instanceof E?d.error.code:void 0,errorMessage:d.error.message,sessionCountry:d.country,onContinue:()=>void s(`/purchase/plus`),onRetry:()=>{u.current=null,f(null)}}):(0,Z.jsx)(q,{})}),e[41]=d,e[42]=t?.id,e[43]=s,e[44]=W):W=e[44],W}var Y,X,Z,Q,$,ye=e((()=>{z(),Y=ee(),me(),y(),f(),S(),ue(),K(),re(),j(),le(),G(),O(),l(),p(),W(),B(),d(),x(),r(),ie(),X=t(V()),pe(),Z=F(),Q={hasRouteMeta:!0,useScrollRestoration:!0},$=I(function(){"use forget";let e=(0,Y.c)(3),t=U(),n=D(),r;return e[0]!==n?.id||e[1]!==t?(r=t==null?(0,Z.jsx)(ge,{}):(0,Z.jsx)(he,{...t},`${n?.id}:${t.checkoutSession.checkout_session_id}`),e[0]=n?.id,e[1]=t,e[2]=r):r=e[2],r})}));e((()=>{ye()}))();export{J as clientLoader,$ as default,Q as handle};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    B3 as n,
+    Crt as r,
+    G3 as i,
+    H3 as a,
+    Hst as o,
+    IU as s,
+    K3 as c,
+    LU as l,
+    M4 as u,
+    Nat as d,
+    Oct as f,
+    P4 as p,
+    Srt as m,
+    U3 as h,
+    V1 as g,
+    Vst as _,
+    W3 as v,
+    Y3 as y,
+    a0 as b,
+    cot as x,
+    dj as S,
+    fj as C,
+    jat as w,
+    n0 as T,
+    not as E,
+    o0 as D,
+    q1 as O,
+    t0 as k,
+    uj as A,
+    wI as j,
+    yI as M,
+    yrt as N
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as P,
+    Bn as F,
+    Ht as I,
+    N as L,
+    Nt as R,
+    Q as z,
+    Rn as B,
+    Vn as V,
+    ct as H,
+    kt as U,
+    s as W,
+    wn as ee,
+    zn as te
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Ain as ne,
+    Din as re,
+    GAt as ie,
+    KAt as ae,
+    don as oe,
+    lcn as G,
+    uon as K,
+    xin as se,
+    ycn as ce
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Cd as le,
+    lh as ue,
+    sh as q,
+    wd as de
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    a as fe,
+    i as pe,
+    o as me,
+    t as he
+} from "./101e3679-kirbu83coyf7gqhh.js";
+
+function J({
+    serverLoader: e
+}) {
+    return e()
+}
+
+function ge() {
+    "use forget";
+    let e = (0, Y.c)(36),
+        t = D(),
+        {
+            data: r,
+            isLoading: i,
+            isFetching: c,
+            isError: l
+        } = b(),
+        d = te(),
+        f = L(),
+        p = P(),
+        m = R(),
+        g = (0, X.useRef)(null),
+        [_, v] = (0, X.useState)(!1),
+        y = (0, X.useRef)(null),
+        x;
+    e[0] === r?.accountItems ? x = e[1] : (x = r?.accountItems.find(_e), e[0] = r?.accountItems, e[1] = x);
+    let S = x,
+        C;
+    e[2] === p.search ? C = e[3] : (C = new URLSearchParams(p.search).get(n), e[2] = p.search, e[3] = C);
+    let w = C,
+        E;
+    e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (E = () => {
+        let e = new AbortController;
+        return y.current = e, () => e.abort()
+    }, e[4] = E) : E = e[4];
+    let O;
+    e[5] === p.key ? O = e[6] : (O = [p.key], e[5] = p.key, e[6] = O), (0, X.useEffect)(E, O);
+    let A;
+    e[7] !== r || e[8] !== w || e[9] !== t?.structure || e[10] !== d || e[11] !== l || e[12] !== c || e[13] !== i || e[14] !== m || e[15] !== S || e[16] !== f ? (A = () => {
+        if (t?.structure !== o.WORKSPACE || i || c || l || r == null || w != null || g.current) return;
+        let e = y.current?.signal;
+        (async () => {
+            if (await Promise.resolve(), e?.aborted || g.current) return;
+            g.current = S == null ? `login` : `1`, v(!0);
+            let t = a(new URL(window.location.href), g.current);
+            if (window.history.replaceState(window.history.state, ``, t.href), S == null) {
+                window.location.assign(h(t));
+                return
+            }
+            try {
+                let n = S.canAccessWithCurrentSession ? await T(f, S.id) : await k(f, S.id, d, s(), !0, t.href, t.href);
+                if (`willRedirect` in n && n.willRedirect) return;
+                n.updatedAccount ? (await u(), e?.aborted ? window.location.reload() : window.location.href = t.href) : e?.aborted || m(`/`, {
+                    replace: !0
+                })
+            } catch {
+                e?.aborted || m(`/`, {
+                    replace: !0
+                })
+            }
+        })()
+    }, e[7] = r, e[8] = w, e[9] = t?.structure, e[10] = d, e[11] = l, e[12] = c, e[13] = i, e[14] = m, e[15] = S, e[16] = f, e[17] = A) : A = e[17];
+    let j = t?.structure,
+        M;
+    e[18] !== r || e[19] !== w || e[20] !== d || e[21] !== l || e[22] !== c || e[23] !== i || e[24] !== p.key || e[25] !== m || e[26] !== S || e[27] !== f || e[28] !== j ? (M = [r, w, j, d, l, c, i, p.key, S, f, m], e[18] = r, e[19] = w, e[20] = d, e[21] = l, e[22] = c, e[23] = i, e[24] = p.key, e[25] = m, e[26] = S, e[27] = f, e[28] = j, e[29] = M) : M = e[29], (0, X.useEffect)(A, M);
+    let N, F;
+    if (e[30] === m ? (N = e[31], F = e[32]) : (N = () => {
+            let e = e => {
+                !e.persisted || !g.current || (g.current === `login` ? window.location.reload() : m(`/`, {
+                    replace: !0
+                }))
+            };
+            return window.addEventListener(`pageshow`, e), () => window.removeEventListener(`pageshow`, e)
+        }, F = [m], e[30] = m, e[31] = N, e[32] = F), (0, X.useEffect)(N, F), t?.structure !== o.WORKSPACE && !_ || w === `login`) {
+        let t;
+        return e[33] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(ve, {}), e[33] = t) : t = e[33], t
+    }
+    if (w != null || l) {
+        let t;
+        return e[34] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Z.jsx)(H, {
+            to: `/`,
+            replace: !0
+        }), e[34] = t) : t = e[34], t
+    }
+    let I;
+    return e[35] === Symbol.for(`react.memo_cache_sentinel`) ? (I = (0, Z.jsx)(q, {}), e[35] = I) : I = e[35], I
+}
+
+function _e(e) {
+    return e.isPersonalAccount() && !e.isDeactivated()
+}
+
+function ve() {
+    "use forget";
+    let e = (0, Y.c)(45),
+        t = D(),
+        {
+            prepareCheckoutSession: n,
+            navigateToCheckout: r
+        } = ne(),
+        a = P(),
+        s = R(),
+        l = ae(),
+        u = (0, X.useRef)(null),
+        [d, f] = (0, X.useState)(null),
+        p;
+    e[0] === t ? p = e[1] : (p = t?.structure === o.WORKSPACE || (t?.hasPaidSubscription() ?? !1), e[0] = t, e[1] = p);
+    let h = p,
+        y;
+    e[2] === a.search ? y = e[3] : (y = i(a.search), e[2] = a.search, e[3] = y);
+    let {
+        loginHint: b,
+        searchWithoutLoginHint: x,
+        promoCampaign: S
+    } = y, T = b != null, O = ce(), k = S ?? O.campaignId, j = !!S, F = t != null && !h && !T && oe() && m(`662604060`).get(`paypal_promo_checkout_enabled`, !1), I = t != null && !h && !F, {
+        data: L
+    } = de(I ? k ?? `` : ``, I && j), {
+        kind: z,
+        campaign: B
+    } = v({
+        enabled: F,
+        campaign: k,
+        isCampaignFromQueryParam: j,
+        promotion: L
+    }), V;
+    e[4] !== d?.accountId || e[5] !== t || e[6] !== B || e[7] !== z || e[8] !== T || e[9] !== l || e[10] !== a.hash || e[11] !== s || e[12] !== r || e[13] !== n || e[14] !== x || e[15] !== h ? (V = () => {
+        if (t == null || h || T || d?.accountId === t.id || u.current === t.id) return;
+        let e = t.id;
+        u.current = e;
+        let i = z === `standard` ? null : c({
+            country: N().getContext().user.country,
+            multicurrencyEnabled: m(`662604060`).get(`paypal_promo_multicurrency_enabled`, !1)
+        });
+        if (i == null) {
+            s({
+                pathname: `/purchase/plus`,
+                search: x,
+                hash: a.hash
+            }, {
+                replace: !0,
+                ...B ? {
+                    state: {
+                        [M]: B
+                    }
+                } : {}
+            });
+            return
+        }
+        C(A(x, a.hash)), n(i, {}).then(t => {
+            if (!(!l() || g()?.id !== e)) {
+                if (!(`tag` in t) || t.tag !== `custom_checkout_session` && t.tag !== `redirect_to_portal`) throw Error(`Expected a custom PayPal checkout session`);
+                return r(t, {
+                    replace: !0,
+                    searchParams: x,
+                    checkoutPayload: i,
+                    state: {
+                        [se]: {
+                            pathname: `/`,
+                            search: x,
+                            hash: `#pricing`
+                        }
+                    }
+                })
+            }
+        }).catch(t => {
+            !l() || g()?.id !== e || (w.addError(t instanceof Error ? t : Error(`Failed to start PayPal promo checkout`), {
+                feature: `paypal_promo_checkout`
+            }), f({
+                accountId: e,
+                error: t instanceof Error ? t : Error(),
+                country: i.billing_details?.country ?? void 0
+            }))
+        })
+    }, e[4] = d?.accountId, e[5] = t, e[6] = B, e[7] = z, e[8] = T, e[9] = l, e[10] = a.hash, e[11] = s, e[12] = r, e[13] = n, e[14] = x, e[15] = h, e[16] = V) : V = e[16];
+    let U;
+    if (e[17] !== d || e[18] !== t || e[19] !== B || e[20] !== z || e[21] !== T || e[22] !== l || e[23] !== a.hash || e[24] !== s || e[25] !== r || e[26] !== n || e[27] !== x || e[28] !== h ? (U = [t, d, h, T, l, a.hash, s, r, n, z, B, x], e[17] = d, e[18] = t, e[19] = B, e[20] = z, e[21] = T, e[22] = l, e[23] = a.hash, e[24] = s, e[25] = r, e[26] = n, e[27] = x, e[28] = h, e[29] = U) : U = e[29], (0, X.useEffect)(V, U), T && t != null) {
+        let t = `${a.pathname}${x}${a.hash}`,
+            n;
+        return e[30] === t ? n = e[31] : (n = (0, Z.jsx)(H, {
+            replace: !0,
+            to: t
+        }), e[30] = t, e[31] = n), n
+    }
+    if (h) {
+        let n, r, i;
+        if (e[32] !== t?.planType || e[33] !== x) {
+            let a = new URLSearchParams(x);
+            t?.planType === _.GO ? a.set(`plan`, `plus`) : a.delete(`plan`), n = H, i = !0, r = a.toString(), e[32] = t?.planType, e[33] = x, e[34] = n, e[35] = r, e[36] = i
+        } else n = e[34], r = e[35], i = e[36];
+        let a = `/?${r}#pricing`,
+            o;
+        return e[37] !== n || e[38] !== i || e[39] !== a ? (o = (0, Z.jsx)(n, {
+            replace: i,
+            to: a
+        }), e[37] = n, e[38] = i, e[39] = a, e[40] = o) : o = e[40], o
+    }
+    let W;
+    return e[41] !== d || e[42] !== t?.id || e[43] !== s ? (W = (0, Z.jsx)(`div`, {
+        className: `bg-token-bg-primary flex h-full w-full items-center justify-center`,
+        children: d != null && d.accountId === t?.id ? (0, Z.jsx)(fe, {
+            errorCode: d.error instanceof E ? d.error.code : void 0,
+            errorMessage: d.error.message,
+            sessionCountry: d.country,
+            onContinue: () => void s(`/purchase/plus`),
+            onRetry: () => {
+                u.current = null, f(null)
+            }
+        }) : (0, Z.jsx)(q, {})
+    }), e[41] = d, e[42] = t?.id, e[43] = s, e[44] = W) : W = e[44], W
+}
+var Y, X, Z, Q, $, ye = e((() => {
+    z(), Y = ee(), me(), y(), f(), S(), ue(), K(), re(), j(), le(), G(), O(), l(), p(), W(), B(), d(), x(), r(), ie(), X = t(V()), pe(), Z = F(), Q = {
+        hasRouteMeta: !0,
+        useScrollRestoration: !0
+    }, $ = I(function() {
+        "use forget";
+        let e = (0, Y.c)(3),
+            t = U(),
+            n = D(),
+            r;
+        return e[0] !== n?.id || e[1] !== t ? (r = t == null ? (0, Z.jsx)(ge, {}) : (0, Z.jsx)(he, {
+            ...t
+        }, `${n?.id}:${t.checkoutSession.checkout_session_id}`), e[0] = n?.id, e[1] = t, e[2] = r) : r = e[2], r
+    })
+}));
+e((() => {
+    ye()
+}))();
+export {
+    J as clientLoader, $ as
+    default, Q as handle
+};
 //# sourceMappingURL=paypal.checkout-f4sls2gt.js.map

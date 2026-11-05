@@ -1,2 +1,94 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Crt as t,FH as n,LH as r,dH as i,fH as a,o,s,xrt as c}from"./4813494d-mdvd4786a87166cc.js";import{Bn as l,Ht as u,Ln as d,Q as f,Rn as p,Ut as m,kt as h,wn as g,zn as _}from"./2340486e-i7pjxgdhv0bs6apg.js";import{n as v,t as y}from"./6c802ee8-ohn3bmgck3je35ix.js";var b,x,S,C,w,T,E,D=e((()=>{f(),b=g(),v(),a(),r(),t(),s(),p(),x=l(),S=d({heroBody:{id:`5i+O8L`,defaultMessage:`Get started with Codex and ChatGPT Business.`},enterpriseFirstHeroBody:{id:`chatgpt.contact_sales.hero.subtitle.enterprise_first`,defaultMessage:`Get help evaluating and deploying ChatGPT and OpenAI’s models across your organization.`}}),C={hasRouteMeta:!0,useScrollRestoration:!0},w=({data:e,location:t})=>{let r=e;return r?.pageData?[...n(r.pageData,t.pathname),...i(`/contact-sales/`,{pageLocalizationConfig:r.pageLocalizationConfig})]:[{title:`Contact sales | OpenAI`}]},T=u(function(){"use forget";let e=(0,b.c)(12),{pageData:t,footerData:n,headerNavData:r,locale:i}=h(),a=_(),o,s;if(e[0]!==a||e[1]!==t){let n=c(`155366596`);o=t,s=a.formatMessage(n.get(`variant`,0)>0?S.enterpriseFirstHeroBody:S.heroBody),e[0]=a,e[1]=t,e[2]=o,e[3]=s}else o=e[2],s=e[3];let l;e[4]!==o||e[5]!==s?(l={...o,heroBody:s,heroCtaLabel:void 0,heroCtaLink:void 0,heroCtaConversionLink:void 0},e[4]=o,e[5]=s,e[6]=l):l=e[6];let u=l,d;return e[7]!==u||e[8]!==n||e[9]!==r||e[10]!==i?(d=(0,x.jsx)(y,{page:u,footer:n,locale:i,headerNav:r,contentType:`formPage`,layout:`contactSales`}),e[7]=u,e[8]=n,e[9]=r,e[10]=i,e[11]=d):d=e[11],d}),E=m(o)}));e((()=>{D()}))();export{E as ErrorBoundary,T as default,C as handle,w as meta};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Crt as t,
+    FH as n,
+    LH as r,
+    dH as i,
+    fH as a,
+    o,
+    s,
+    xrt as c
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as l,
+    Ht as u,
+    Ln as d,
+    Q as f,
+    Rn as p,
+    Ut as m,
+    kt as h,
+    wn as g,
+    zn as _
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    n as v,
+    t as y
+} from "./6c802ee8-ohn3bmgck3je35ix.js";
+var b, x, S, C, w, T, E, D = e((() => {
+    f(), b = g(), v(), a(), r(), t(), s(), p(), x = l(), S = d({
+        heroBody: {
+            id: `5i+O8L`,
+            defaultMessage: `Get started with Codex and ChatGPT Business.`
+        },
+        enterpriseFirstHeroBody: {
+            id: `chatgpt.contact_sales.hero.subtitle.enterprise_first`,
+            defaultMessage: `Get help evaluating and deploying ChatGPT and OpenAI’s models across your organization.`
+        }
+    }), C = {
+        hasRouteMeta: !0,
+        useScrollRestoration: !0
+    }, w = ({
+        data: e,
+        location: t
+    }) => {
+        let r = e;
+        return r?.pageData ? [...n(r.pageData, t.pathname), ...i(`/contact-sales/`, {
+            pageLocalizationConfig: r.pageLocalizationConfig
+        })] : [{
+            title: `Contact sales | OpenAI`
+        }]
+    }, T = u(function() {
+        "use forget";
+        let e = (0, b.c)(12),
+            {
+                pageData: t,
+                footerData: n,
+                headerNavData: r,
+                locale: i
+            } = h(),
+            a = _(),
+            o, s;
+        if (e[0] !== a || e[1] !== t) {
+            let n = c(`155366596`);
+            o = t, s = a.formatMessage(n.get(`variant`, 0) > 0 ? S.enterpriseFirstHeroBody : S.heroBody), e[0] = a, e[1] = t, e[2] = o, e[3] = s
+        } else o = e[2], s = e[3];
+        let l;
+        e[4] !== o || e[5] !== s ? (l = {
+            ...o,
+            heroBody: s,
+            heroCtaLabel: void 0,
+            heroCtaLink: void 0,
+            heroCtaConversionLink: void 0
+        }, e[4] = o, e[5] = s, e[6] = l) : l = e[6];
+        let u = l,
+            d;
+        return e[7] !== u || e[8] !== n || e[9] !== r || e[10] !== i ? (d = (0, x.jsx)(y, {
+            page: u,
+            footer: n,
+            locale: i,
+            headerNav: r,
+            contentType: `formPage`,
+            layout: `contactSales`
+        }), e[7] = u, e[8] = n, e[9] = r, e[10] = i, e[11] = d) : d = e[11], d
+    }), E = m(o)
+}));
+e((() => {
+    D()
+}))();
+export {
+    E as ErrorBoundary, T as
+    default, C as handle, w as meta
+};
 //# sourceMappingURL=(_lang).contact-sales-h12iq4ix.js.map

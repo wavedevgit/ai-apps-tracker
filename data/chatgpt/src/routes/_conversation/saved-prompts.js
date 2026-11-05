@@ -1,2 +1,677 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,A8 as r,Aw as i,Eit as a,Fh as o,K5 as s,Knt as c,LU as l,Ow as u,Ph as d,Qy as f,Rz as p,Wnt as m,Zy as h,_it as g,c2 as _,d2 as v,eE as y,hst as b,j5 as x,lF as S,mst as C,q5 as w,vF as T,zU as E,zz as D}from"./4813494d-mdvd4786a87166cc.js";import{Bn as O,Ht as k,N as A,Nn as j,Nt as M,Q as N,Rn as P,Vn as F,Vt as I,s as L,wn as R,zn as z}from"./2340486e-i7pjxgdhv0bs6apg.js";import{AQ as B,Bst as V,Etn as H,FQ as U,FX as W,LTn as ee,MQ as G,NQ as K,NX as te,OQ as q,Ttn as J,Vst as Y,__n as X,b_n as ne,cX as re,dX as ie,e_n as ae,ex as oe,fX as se,lX as ce,mX as le,oX as ue,pX as de,sX as fe,t_n as pe,tx as me,vxn as he,xxn as ge,zTn as _e}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Cv as ve,Sv as ye,_v as be,fv as xe,gv as Se,pv as Ce}from"./30901919-s8bko9nrkqwv6i4f.js";import{n as we,t as Te}from"./29946bd6-l0ptcghpcfbw4g03.js";function Ee(e,t){try{let n=e.trim().replace(`#`,``);return n.length===3&&(n=n.split(``).map(e=>`${e}${e}`).join(``)),`rgba(${Number.parseInt(n.substring(0,2),16)}, ${Number.parseInt(n.substring(2,4),16)}, ${Number.parseInt(n.substring(4,6),16)}, ${Math.max(0,Math.min(1,t))})`}catch{return e}}var De=e((()=>{})),Oe,Z,ke,Ae=e((()=>{Oe=R(),y(),a(),i(),l(),c(),L(),P(),B(),Z=O(),ke=e=>{"use forget";let t=(0,Oe.c)(40),{onClose:r,onDeleted:i,promptId:a,promptTitle:o,promptSystemHint:s,promptSources:c}=e,l=z(),d=E(),f=A(),p;t[0]!==l||t[1]!==d?(p=()=>{d.danger(l.formatMessage({id:`gYG9AO`,defaultMessage:`Failed to delete prompt`}))},t[0]=l,t[1]=d,t[2]=p):p=t[2];let h;t[3]!==l||t[4]!==r||t[5]!==i||t[6]!==c||t[7]!==s||t[8]!==o||t[9]!==f||t[10]!==d?(h=()=>{m.logEventWithStatsig(`chatgpt_web_prompt_deleted`,`chatgpt_web_prompt_deleted`,{hint:s??`none`,hasSources:(c?.length??0)>0,sources:c??``,sourceCount:c?.length??0}),i?.(),r(!1),d.success(l.formatMessage({id:`cptqwY`,defaultMessage:`{promptTitle} was deleted`},{promptTitle:o})),f.invalidateQueries({queryKey:[`prompt-templates`],exact:!1})},t[3]=l,t[4]=r,t[5]=i,t[6]=c,t[7]=s,t[8]=o,t[9]=f,t[10]=d,t[11]=h):h=t[11];let _;t[12]!==p||t[13]!==h?(_={onError:p,onSuccess:h},t[12]=p,t[13]=h,t[14]=_):_=t[14];let{mutate:v,isPending:y}=G(_),b;t[15]===r?b=t[16]:(b=()=>r(!1),t[15]=r,t[16]=b);let x;t[17]!==l||t[18]!==o?(x=l.formatMessage({id:`rGrRdA`,defaultMessage:`Delete {promptTitle}?`},{promptTitle:o}),t[17]=l,t[18]=o,t[19]=x):x=t[19];let S;t[20]===Symbol.for(`react.memo_cache_sentinel`)?(S=(0,Z.jsx)(`div`,{className:`text-token-text-secondary text-sm`,children:(0,Z.jsx)(j,{id:`ODmsWc`,defaultMessage:`This cannot be undone.`})}),t[20]=S):S=t[20];let C;t[21]===r?C=t[22]:(C=()=>r(!1),t[21]=r,t[22]=C);let w;t[23]===Symbol.for(`react.memo_cache_sentinel`)?(w=(0,Z.jsx)(j,{...g.cancelButtonText}),t[23]=w):w=t[23];let T;t[24]===C?T=t[25]:(T=(0,Z.jsx)(n,{color:`secondary`,onClick:C,children:w}),t[24]=C,t[25]=T);let D;t[26]!==v||t[27]!==a?(D=()=>v(a),t[26]=v,t[27]=a,t[28]=D):D=t[28];let O;t[29]===Symbol.for(`react.memo_cache_sentinel`)?(O=(0,Z.jsx)(j,{id:`x3h5Nl`,defaultMessage:`Delete`}),t[29]=O):O=t[29];let k;t[30]!==y||t[31]!==D?(k=(0,Z.jsx)(n,{color:`danger`,disabled:y,loading:y,onClick:D,children:O}),t[30]=y,t[31]=D,t[32]=k):k=t[32];let M;t[33]!==k||t[34]!==T?(M=(0,Z.jsxs)(`div`,{className:`flex flex-col gap-6`,children:[S,(0,Z.jsxs)(`div`,{className:`flex flex-row justify-end gap-2`,children:[T,k]})]}),t[33]=k,t[34]=T,t[35]=M):M=t[35];let N;return t[36]!==M||t[37]!==b||t[38]!==x?(N=(0,Z.jsx)(u,{isOpen:!0,onClose:b,title:x,testId:`modal-delete-prompt`,type:`danger`,size:`custom`,className:`max-w-[400px] p-2`,children:M}),t[36]=M,t[37]=b,t[38]=x,t[39]=N):N=t[39],N}}));function je({conversation:e}){"use no forget";let t=z(),[n,r]=(0,Fe.useState)(``),i=me(n,300).trim(),a=i.length>0,[c]=I(),{data:l,isLoading:u,isFetchingNextPage:d,hasNextPage:f,fetchNextPage:h}=K({enabled:!0}),{data:g,isLoading:_,isFetchingNextPage:v,hasNextPage:y,fetchNextPage:b,isError:x}=U({search:i,enabled:a}),S=l?J(l.pages.map(e=>e.prompts)):[],C=g?J(g.pages.map(e=>e.prompts)):[],w=a?C:S,T=a?_:u,E=a?!!y:!!f,D=!a&&!u&&S.length===0,O=a&&!_&&!x&&C.length===0,k=a&&x&&!T,A=a?v:d,M=a?b:h;return(0,Fe.useEffect)(()=>{let e=c.get(`referer`)??`none`;m.logEventWithStatsig(`chatgpt_web_prompt_page_visited`,`chatgpt_web_prompt_page_visited`,{referer:e})},[c]),(0,$.jsx)(`div`,{className:`flex h-full w-full flex-1 flex-col items-center justify-self-center`,children:(0,$.jsxs)(`div`,{className:s(`flex h-full min-h-0 w-full max-w-[960px] flex-1 flex-col px-4`),children:[(0,$.jsxs)(`div`,{className:`mt-10 px-4 md:px-0`,children:[(0,$.jsx)(`div`,{className:`flex flex-wrap items-start justify-between gap-4`,children:(0,$.jsxs)(`div`,{className:`min-w-0`,children:[(0,$.jsx)(`h1`,{className:`text-token-text-primary text-2xl font-semibold md:text-3xl`,children:(0,$.jsx)(j,{id:`en2k6R`,defaultMessage:`Saved prompts`})}),(0,$.jsx)(`p`,{className:`text-token-text-secondary mt-2 max-w-2xl text-sm`,children:(0,$.jsx)(j,{id:`chatgpt.saved_prompts.page.subtitle`,defaultMessage:`Find and reuse your saved prompts across tasks and workflows.`})})]})}),(0,$.jsx)(`div`,{className:`mt-6`,children:(0,$.jsx)(V,{name:`prompt-search`,type:`text`,role:`searchbox`,color:`search`,className:`w-full`,containerInputClassName:`w-full`,inputClassName:`ps-7 pe-10`,ariaLabel:t.formatMessage({id:`xx/Zuh`,defaultMessage:`Search prompts...`}),placeholder:t.formatMessage({id:`w8YxB0`,defaultMessage:`Search prompts...`}),value:n,onChange:e=>r(e.target.value),insideContainerChildren:(0,$.jsxs)($.Fragment,{children:[(0,$.jsx)(o,{className:`text-token-text-tertiary pointer-events-none absolute start-0 top-1/2 h-4 w-4 -translate-y-1/2`,"aria-hidden":`true`}),n?(0,$.jsx)(`button`,{type:`button`,className:`text-token-text-tertiary hover:text-token-text-secondary absolute end-0 top-1/2 me-4 -translate-y-1/2 rounded-full p-1`,onClick:()=>r(``),"aria-label":t.formatMessage({id:`13DqN2`,defaultMessage:`Clear search`}),children:(0,$.jsx)(xe,{className:`h-3.5 w-3.5`})}):null]})})})]}),(0,$.jsx)(`div`,{className:`relative mt-8 flex min-h-[320px] flex-1 flex-col`,children:D?(0,$.jsx)(`div`,{className:`absolute inset-0 flex items-center justify-center`,children:(0,$.jsx)(Le,{})}):T?(0,$.jsx)(`div`,{className:`mt-8 flex flex-col items-center justify-center gap-2`,children:(0,$.jsx)(p,{className:`h-4 w-4`})}):k?(0,$.jsx)(`div`,{className:`text-token-text-tertiary mt-10 text-center text-sm md:px-0`,children:(0,$.jsx)(j,{id:`pNu5Ej`,defaultMessage:`Something went wrong while searching. Try again later.`})}):O?(0,$.jsx)(`div`,{className:`text-token-text-secondary mt-10 text-center text-sm md:px-0`,children:(0,$.jsx)(j,{id:`Iv6guV`,defaultMessage:`No prompts matched your search.`})}):(0,$.jsxs)($.Fragment,{children:[(0,$.jsx)(`div`,{children:w.map((t,n)=>(0,$.jsx)(Re,{conversation:e,prompt:t,isFirst:n===0},`templated_prompt_${t.id??n}`))}),(!a||!x)&&(0,$.jsx)(`div`,{className:`pb-10`,children:(0,$.jsx)(de,{isFetchingNextPage:A,hasNextPage:E,fetchNextPage:M})})]})})]})})}function Me(){return X()}function Ne(e){return ee[e]?.icon}function Pe(e,t){return e?(0,$.jsx)(e,{className:`h-5 w-5`},t):null}var Q,Fe,$,Ie,Le,Re,ze=e((()=>{Q=R(),y(),ae(),ve(),Ce(),d(),Se(),le(),_(),f(),Y(),_e(),ge(),se(),r(),D(),W(),ne(),c(),De(),oe(),w(),H(),Fe=t(F()),P(),N(),Ae(),B(),ce(),$=O(),Ie=e=>{"use forget";let t=(0,Q.c)(9),{tooltip:n,ariaLabel:r,onClick:i,children:a}=e,o;t[0]===i?o=t[1]:(o=e=>{e.stopPropagation(),i()},t[0]=i,t[1]=o);let s=o,c;t[2]!==r||t[3]!==a||t[4]!==s?(c=(0,$.jsx)(`button`,{className:`hover:bg-token-bg-secondary flex h-8 w-8 items-center justify-center rounded-md transition-colors`,onClick:s,"aria-label":r,children:a}),t[2]=r,t[3]=a,t[4]=s,t[5]=c):c=t[5];let l;return t[6]!==c||t[7]!==n?(l=(0,$.jsx)(h,{label:n,triggerAs:null,children:c}),t[6]=c,t[7]=n,t[8]=l):l=t[8],l},Le=()=>{"use forget";let e=(0,Q.c)(2),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(`div`,{className:`bg-token-bg-tertiary flex h-[48px] w-[48px] items-center justify-center rounded-full`,children:(0,$.jsx)(ye,{className:`h-6 w-6`})}),e[0]=t):t=e[0];let n;return e[1]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,$.jsx)(`div`,{className:`flex w-full max-w-[520px] flex-col items-center rounded-xl p-8`,children:(0,$.jsxs)(`div`,{className:`flex max-w-[500px] flex-col items-center justify-end gap-2`,children:[t,(0,$.jsx)(`div`,{className:`text-token-text-secondary text-xl`,children:(0,$.jsx)(j,{id:`chatgpt.saved_prompts.empty.title`,defaultMessage:`No saved prompts`})})]})}),e[1]=n):n=e[1],n},Re=e=>{"use forget";let t=(0,Q.c)(79),{conversation:r,prompt:i,isFirst:a}=e,o=z(),c=M(),l=x(Me),u=fe(),d;bb0:{if(!i.system_hint){d=null;break bb0}let e;t[0]!==i.system_hint||t[1]!==l?(e=l?.find(e=>e.systemHint===i.system_hint),t[0]=i.system_hint,t[1]=l,t[2]=e):e=t[2],d=e}let f=d,p=ue[re(i.id??i.name??`fallback`)],m=i.symbol,h=m?.type===`icon`&&m?.icon_color?m?.icon_color:null,g;t[3]===h?g=t[4]:(g=h?Ee(h,.12):null,t[3]=h,t[4]=g);let _=g,y;t[5]===h?y=t[6]:(y=h?Ee(h,.1):null,t[5]=h,t[6]=y);let b=y,S;t[7]!==r.id||t[8]!==c||t[9]!==i?(S=()=>{he({prompt:i,referer:`library`,conversationId:r.id}),pe(c)},t[7]=r.id,t[8]=c,t[9]=i,t[10]=S):S=t[10];let C=S,w;bb1:{if(!i.sources){let e;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(e={icons:[],text:null},t[11]=e):e=t[11],w=e;break bb1}if(i.sources.length===1){let e=ee[i.sources[0]]?.icon,n;t[12]===e?n=t[13]:(n=[e],t[12]=e,t[13]=n);let r=ee[i.sources[0]]?.title,a;t[14]!==n||t[15]!==r?(a={icons:n,text:r},t[14]=n,t[15]=r,t[16]=a):a=t[16],w=a;break bb1}let e;t[17]===i.sources?e=t[18]:(e=i.sources.map(Ne),t[17]=i.sources,t[18]=e);let n;t[19]===e?n=t[20]:(n={icons:e,text:null},t[19]=e,t[20]=n),w=n}let T=w,E;if(u)if(m?.type===`emoji`){let e;t[21]===m.name?e=t[22]:(e=(0,$.jsx)(`span`,{role:`img`,"aria-label":m.name,className:`flex h-[18px] w-[18px] items-center justify-center text-[18px] leading-none`,children:m.name}),t[21]=m.name,t[22]=e),E=e}else if(m?.type===`icon`){let e;t[23]===m.name?e=t[24]:(e=ie(m.name),t[23]=m.name,t[24]=e);let n=e.icon,r=m.icon_color??`var(--icon-primary)`,i;t[25]===r?i=t[26]:(i={color:r},t[25]=r,t[26]=i);let a;t[27]!==n||t[28]!==i?(a=(0,$.jsx)(n,{className:`h-[18px] w-[18px]`,style:i}),t[27]=n,t[28]=i,t[29]=a):a=t[29],E=a}else{let e;t[30]===p?e=t[31]:(e=(0,$.jsx)(p,{className:`h-[18px] w-[18px]`}),t[30]=p,t[31]=e),E=e}else{let e;t[32]===f?e=t[33]:(e=f?.logo?(0,$.jsx)(te,{hint:f,isNextToLabel:!1,className:`h-[18px] w-[18px]`}):(0,$.jsx)(ye,{className:`h-[18px] w-[18px]`}),t[32]=f,t[33]=e),E=e}let D=u&&_?`bg-[var(--prompt-icon-bg)]`:`bg-token-bg-tertiary/60`,O;t[34]===D?O=t[35]:(O=s(`border-token-border-secondary flex h-10 w-10 items-center justify-center rounded-lg border outline-none`,D),t[34]=D,t[35]=O);let k=O,A=_??void 0,N=u&&b?b:void 0,P;t[36]!==A||t[37]!==N?(P={"--prompt-icon-bg":A,borderColor:N},t[36]=A,t[37]=N,t[38]=P):P=t[38];let F=P,I;t[39]===a?I=t[40]:(I=!a&&(0,$.jsx)(`div`,{className:`prompt-item-divider border-token-border-secondary absolute start-4 end-4 top-0 border-t transition-opacity`}),t[39]=a,t[40]=I);let L;t[41]!==k||t[42]!==F||t[43]!==E?(L=(0,$.jsx)(`div`,{className:k,style:F,children:E}),t[41]=k,t[42]=F,t[43]=E,t[44]=L):L=t[44];let R;t[45]===i.name?R=t[46]:(R=(0,$.jsx)(`div`,{className:`text-token-text-primary truncate leading-tight font-semibold`,children:i.name}),t[45]=i.name,t[46]=R);let B;t[47]===T?B=t[48]:(B=T?.icons?.length?(0,$.jsx)(`div`,{className:`text-token-text-secondary flex items-center gap-1`,children:T.icons.map(Pe)}):null,t[47]=T,t[48]=B);let V;t[49]!==R||t[50]!==B?(V=(0,$.jsxs)(`div`,{className:`flex items-center gap-2`,children:[R,B]}),t[49]=R,t[50]=B,t[51]=V):V=t[51];let H;t[52]===i.prompt?H=t[53]:(H=(0,$.jsx)(`div`,{className:`text-token-text-secondary line-clamp-2 text-sm break-words whitespace-pre-wrap`,children:i.prompt}),t[52]=i.prompt,t[53]=H);let U;t[54]!==V||t[55]!==H?(U=(0,$.jsx)(`div`,{className:`min-w-0 flex-1`,children:(0,$.jsxs)(`div`,{className:`flex min-w-0 flex-col gap-1`,children:[V,H]})}),t[54]=V,t[55]=H,t[56]=U):U=t[56];let W;t[57]!==L||t[58]!==U?(W=(0,$.jsxs)(`div`,{className:`flex min-h-[72px] items-center gap-5 pe-44 md:pe-56`,children:[L,U]}),t[57]=L,t[58]=U,t[59]=W):W=t[59];let G;t[60]!==o||t[61]!==i.id||t[62]!==i.name||t[63]!==i.relationship||t[64]!==i.sources||t[65]!==i.system_hint?(G=i.relationship===`own`&&(0,$.jsx)($.Fragment,{children:(0,$.jsx)(Ie,{tooltip:o.formatMessage({id:`fZNNxL`,defaultMessage:`Delete prompt`}),ariaLabel:o.formatMessage({id:`TJZi61`,defaultMessage:`Delete prompt`}),onClick:()=>{v(ke,{promptId:String(i.id??``),promptTitle:i.name??``,promptSystemHint:i.system_hint??null,promptSources:(i.sources??[]).join(`,`)})},children:(0,$.jsx)(be,{className:`text-token-text-primary h-5 w-5`})})}),t[60]=o,t[61]=i.id,t[62]=i.name,t[63]=i.relationship,t[64]=i.sources,t[65]=i.system_hint,t[66]=G):G=t[66];let K;t[67]===C?K=t[68]:(K=e=>{e.stopPropagation(),C()},t[67]=C,t[68]=K);let q;t[69]===Symbol.for(`react.memo_cache_sentinel`)?(q=(0,$.jsx)(j,{id:`YB8gk2`,defaultMessage:`Try it`}),t[69]=q):q=t[69];let J;t[70]===K?J=t[71]:(J=(0,$.jsx)(n,{onClick:K,color:`primary`,children:q}),t[70]=K,t[71]=J);let Y;t[72]!==G||t[73]!==J?(Y=(0,$.jsx)(`div`,{className:`absolute end-4 top-1/2 flex -translate-y-1/2 items-center gap-2`,children:(0,$.jsxs)(`div`,{className:`pointer-events-none flex items-center gap-2 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100`,children:[G,J]})}),t[72]=G,t[73]=J,t[74]=Y):Y=t[74];let X;return t[75]!==I||t[76]!==W||t[77]!==Y?(X=(0,$.jsxs)(`div`,{className:`group peer hover:bg-token-interactive-bg-secondary-hover relative rounded-2xl px-4 py-5 transition-colors peer-hover:[&_.prompt-item-divider]:opacity-0 hover:[&_.prompt-item-divider]:opacity-0`,children:[I,W,Y]}),t[75]=I,t[76]=W,t[77]=Y,t[78]=X):X=t[78],X}})),Be,Ve,He,Ue,We,Ge,Ke=e((()=>{N(),Be=R(),T(),B(),ze(),C(),Te(),Ve=t(F()),He=O(),Ue={hasRouteMeta:!1,useScrollRestoration:!0},We=()=>({isOutletBasedRoute:!0,pageType:`saved-prompts`}),Ge=k(function(){"use forget";let e=(0,Be.c)(5),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=q(),e[0]=t):t=e[0];let n=t;if(we(n),!n)return null;let r=(0,Ve.use)(S),i;e[1]===r?i=e[2]:(i=b(r),e[1]=r,e[2]=i);let a=i,o;return e[3]===a?o=e[4]:(o=(0,He.jsx)(je,{conversation:a}),e[3]=a,e[4]=o),o})}));e((()=>{Ke()}))();export{We as clientLoader,Ge as default,Ue as handle};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    A8 as r,
+    Aw as i,
+    Eit as a,
+    Fh as o,
+    K5 as s,
+    Knt as c,
+    LU as l,
+    Ow as u,
+    Ph as d,
+    Qy as f,
+    Rz as p,
+    Wnt as m,
+    Zy as h,
+    _it as g,
+    c2 as _,
+    d2 as v,
+    eE as y,
+    hst as b,
+    j5 as x,
+    lF as S,
+    mst as C,
+    q5 as w,
+    vF as T,
+    zU as E,
+    zz as D
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as O,
+    Ht as k,
+    N as A,
+    Nn as j,
+    Nt as M,
+    Q as N,
+    Rn as P,
+    Vn as F,
+    Vt as I,
+    s as L,
+    wn as R,
+    zn as z
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    AQ as B,
+    Bst as V,
+    Etn as H,
+    FQ as U,
+    FX as W,
+    LTn as ee,
+    MQ as G,
+    NQ as K,
+    NX as te,
+    OQ as q,
+    Ttn as J,
+    Vst as Y,
+    __n as X,
+    b_n as ne,
+    cX as re,
+    dX as ie,
+    e_n as ae,
+    ex as oe,
+    fX as se,
+    lX as ce,
+    mX as le,
+    oX as ue,
+    pX as de,
+    sX as fe,
+    t_n as pe,
+    tx as me,
+    vxn as he,
+    xxn as ge,
+    zTn as _e
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Cv as ve,
+    Sv as ye,
+    _v as be,
+    fv as xe,
+    gv as Se,
+    pv as Ce
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    n as we,
+    t as Te
+} from "./29946bd6-l0ptcghpcfbw4g03.js";
+
+function Ee(e, t) {
+    try {
+        let n = e.trim().replace(`#`, ``);
+        return n.length === 3 && (n = n.split(``).map(e => `${e}${e}`).join(``)), `rgba(${Number.parseInt(n.substring(0,2),16)}, ${Number.parseInt(n.substring(2,4),16)}, ${Number.parseInt(n.substring(4,6),16)}, ${Math.max(0,Math.min(1,t))})`
+    } catch {
+        return e
+    }
+}
+var De = e((() => {})),
+    Oe, Z, ke, Ae = e((() => {
+        Oe = R(), y(), a(), i(), l(), c(), L(), P(), B(), Z = O(), ke = e => {
+            "use forget";
+            let t = (0, Oe.c)(40),
+                {
+                    onClose: r,
+                    onDeleted: i,
+                    promptId: a,
+                    promptTitle: o,
+                    promptSystemHint: s,
+                    promptSources: c
+                } = e,
+                l = z(),
+                d = E(),
+                f = A(),
+                p;
+            t[0] !== l || t[1] !== d ? (p = () => {
+                d.danger(l.formatMessage({
+                    id: `gYG9AO`,
+                    defaultMessage: `Failed to delete prompt`
+                }))
+            }, t[0] = l, t[1] = d, t[2] = p) : p = t[2];
+            let h;
+            t[3] !== l || t[4] !== r || t[5] !== i || t[6] !== c || t[7] !== s || t[8] !== o || t[9] !== f || t[10] !== d ? (h = () => {
+                m.logEventWithStatsig(`chatgpt_web_prompt_deleted`, `chatgpt_web_prompt_deleted`, {
+                    hint: s ?? `none`,
+                    hasSources: (c?.length ?? 0) > 0,
+                    sources: c ?? ``,
+                    sourceCount: c?.length ?? 0
+                }), i?.(), r(!1), d.success(l.formatMessage({
+                    id: `cptqwY`,
+                    defaultMessage: `{promptTitle} was deleted`
+                }, {
+                    promptTitle: o
+                })), f.invalidateQueries({
+                    queryKey: [`prompt-templates`],
+                    exact: !1
+                })
+            }, t[3] = l, t[4] = r, t[5] = i, t[6] = c, t[7] = s, t[8] = o, t[9] = f, t[10] = d, t[11] = h) : h = t[11];
+            let _;
+            t[12] !== p || t[13] !== h ? (_ = {
+                onError: p,
+                onSuccess: h
+            }, t[12] = p, t[13] = h, t[14] = _) : _ = t[14];
+            let {
+                mutate: v,
+                isPending: y
+            } = G(_), b;
+            t[15] === r ? b = t[16] : (b = () => r(!1), t[15] = r, t[16] = b);
+            let x;
+            t[17] !== l || t[18] !== o ? (x = l.formatMessage({
+                id: `rGrRdA`,
+                defaultMessage: `Delete {promptTitle}?`
+            }, {
+                promptTitle: o
+            }), t[17] = l, t[18] = o, t[19] = x) : x = t[19];
+            let S;
+            t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (S = (0, Z.jsx)(`div`, {
+                className: `text-token-text-secondary text-sm`,
+                children: (0, Z.jsx)(j, {
+                    id: `ODmsWc`,
+                    defaultMessage: `This cannot be undone.`
+                })
+            }), t[20] = S) : S = t[20];
+            let C;
+            t[21] === r ? C = t[22] : (C = () => r(!1), t[21] = r, t[22] = C);
+            let w;
+            t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (w = (0, Z.jsx)(j, {
+                ...g.cancelButtonText
+            }), t[23] = w) : w = t[23];
+            let T;
+            t[24] === C ? T = t[25] : (T = (0, Z.jsx)(n, {
+                color: `secondary`,
+                onClick: C,
+                children: w
+            }), t[24] = C, t[25] = T);
+            let D;
+            t[26] !== v || t[27] !== a ? (D = () => v(a), t[26] = v, t[27] = a, t[28] = D) : D = t[28];
+            let O;
+            t[29] === Symbol.for(`react.memo_cache_sentinel`) ? (O = (0, Z.jsx)(j, {
+                id: `x3h5Nl`,
+                defaultMessage: `Delete`
+            }), t[29] = O) : O = t[29];
+            let k;
+            t[30] !== y || t[31] !== D ? (k = (0, Z.jsx)(n, {
+                color: `danger`,
+                disabled: y,
+                loading: y,
+                onClick: D,
+                children: O
+            }), t[30] = y, t[31] = D, t[32] = k) : k = t[32];
+            let M;
+            t[33] !== k || t[34] !== T ? (M = (0, Z.jsxs)(`div`, {
+                className: `flex flex-col gap-6`,
+                children: [S, (0, Z.jsxs)(`div`, {
+                    className: `flex flex-row justify-end gap-2`,
+                    children: [T, k]
+                })]
+            }), t[33] = k, t[34] = T, t[35] = M) : M = t[35];
+            let N;
+            return t[36] !== M || t[37] !== b || t[38] !== x ? (N = (0, Z.jsx)(u, {
+                isOpen: !0,
+                onClose: b,
+                title: x,
+                testId: `modal-delete-prompt`,
+                type: `danger`,
+                size: `custom`,
+                className: `max-w-[400px] p-2`,
+                children: M
+            }), t[36] = M, t[37] = b, t[38] = x, t[39] = N) : N = t[39], N
+        }
+    }));
+
+function je({
+    conversation: e
+}) {
+    "use no forget";
+    let t = z(),
+        [n, r] = (0, Fe.useState)(``),
+        i = me(n, 300).trim(),
+        a = i.length > 0,
+        [c] = I(),
+        {
+            data: l,
+            isLoading: u,
+            isFetchingNextPage: d,
+            hasNextPage: f,
+            fetchNextPage: h
+        } = K({
+            enabled: !0
+        }),
+        {
+            data: g,
+            isLoading: _,
+            isFetchingNextPage: v,
+            hasNextPage: y,
+            fetchNextPage: b,
+            isError: x
+        } = U({
+            search: i,
+            enabled: a
+        }),
+        S = l ? J(l.pages.map(e => e.prompts)) : [],
+        C = g ? J(g.pages.map(e => e.prompts)) : [],
+        w = a ? C : S,
+        T = a ? _ : u,
+        E = a ? !!y : !!f,
+        D = !a && !u && S.length === 0,
+        O = a && !_ && !x && C.length === 0,
+        k = a && x && !T,
+        A = a ? v : d,
+        M = a ? b : h;
+    return (0, Fe.useEffect)(() => {
+        let e = c.get(`referer`) ?? `none`;
+        m.logEventWithStatsig(`chatgpt_web_prompt_page_visited`, `chatgpt_web_prompt_page_visited`, {
+            referer: e
+        })
+    }, [c]), (0, $.jsx)(`div`, {
+        className: `flex h-full w-full flex-1 flex-col items-center justify-self-center`,
+        children: (0, $.jsxs)(`div`, {
+            className: s(`flex h-full min-h-0 w-full max-w-[960px] flex-1 flex-col px-4`),
+            children: [(0, $.jsxs)(`div`, {
+                className: `mt-10 px-4 md:px-0`,
+                children: [(0, $.jsx)(`div`, {
+                    className: `flex flex-wrap items-start justify-between gap-4`,
+                    children: (0, $.jsxs)(`div`, {
+                        className: `min-w-0`,
+                        children: [(0, $.jsx)(`h1`, {
+                            className: `text-token-text-primary text-2xl font-semibold md:text-3xl`,
+                            children: (0, $.jsx)(j, {
+                                id: `en2k6R`,
+                                defaultMessage: `Saved prompts`
+                            })
+                        }), (0, $.jsx)(`p`, {
+                            className: `text-token-text-secondary mt-2 max-w-2xl text-sm`,
+                            children: (0, $.jsx)(j, {
+                                id: `chatgpt.saved_prompts.page.subtitle`,
+                                defaultMessage: `Find and reuse your saved prompts across tasks and workflows.`
+                            })
+                        })]
+                    })
+                }), (0, $.jsx)(`div`, {
+                    className: `mt-6`,
+                    children: (0, $.jsx)(V, {
+                        name: `prompt-search`,
+                        type: `text`,
+                        role: `searchbox`,
+                        color: `search`,
+                        className: `w-full`,
+                        containerInputClassName: `w-full`,
+                        inputClassName: `ps-7 pe-10`,
+                        ariaLabel: t.formatMessage({
+                            id: `xx/Zuh`,
+                            defaultMessage: `Search prompts...`
+                        }),
+                        placeholder: t.formatMessage({
+                            id: `w8YxB0`,
+                            defaultMessage: `Search prompts...`
+                        }),
+                        value: n,
+                        onChange: e => r(e.target.value),
+                        insideContainerChildren: (0, $.jsxs)($.Fragment, {
+                            children: [(0, $.jsx)(o, {
+                                className: `text-token-text-tertiary pointer-events-none absolute start-0 top-1/2 h-4 w-4 -translate-y-1/2`,
+                                "aria-hidden": `true`
+                            }), n ? (0, $.jsx)(`button`, {
+                                type: `button`,
+                                className: `text-token-text-tertiary hover:text-token-text-secondary absolute end-0 top-1/2 me-4 -translate-y-1/2 rounded-full p-1`,
+                                onClick: () => r(``),
+                                "aria-label": t.formatMessage({
+                                    id: `13DqN2`,
+                                    defaultMessage: `Clear search`
+                                }),
+                                children: (0, $.jsx)(xe, {
+                                    className: `h-3.5 w-3.5`
+                                })
+                            }) : null]
+                        })
+                    })
+                })]
+            }), (0, $.jsx)(`div`, {
+                className: `relative mt-8 flex min-h-[320px] flex-1 flex-col`,
+                children: D ? (0, $.jsx)(`div`, {
+                    className: `absolute inset-0 flex items-center justify-center`,
+                    children: (0, $.jsx)(Le, {})
+                }) : T ? (0, $.jsx)(`div`, {
+                    className: `mt-8 flex flex-col items-center justify-center gap-2`,
+                    children: (0, $.jsx)(p, {
+                        className: `h-4 w-4`
+                    })
+                }) : k ? (0, $.jsx)(`div`, {
+                    className: `text-token-text-tertiary mt-10 text-center text-sm md:px-0`,
+                    children: (0, $.jsx)(j, {
+                        id: `pNu5Ej`,
+                        defaultMessage: `Something went wrong while searching. Try again later.`
+                    })
+                }) : O ? (0, $.jsx)(`div`, {
+                    className: `text-token-text-secondary mt-10 text-center text-sm md:px-0`,
+                    children: (0, $.jsx)(j, {
+                        id: `Iv6guV`,
+                        defaultMessage: `No prompts matched your search.`
+                    })
+                }) : (0, $.jsxs)($.Fragment, {
+                    children: [(0, $.jsx)(`div`, {
+                        children: w.map((t, n) => (0, $.jsx)(Re, {
+                            conversation: e,
+                            prompt: t,
+                            isFirst: n === 0
+                        }, `templated_prompt_${t.id??n}`))
+                    }), (!a || !x) && (0, $.jsx)(`div`, {
+                        className: `pb-10`,
+                        children: (0, $.jsx)(de, {
+                            isFetchingNextPage: A,
+                            hasNextPage: E,
+                            fetchNextPage: M
+                        })
+                    })]
+                })
+            })]
+        })
+    })
+}
+
+function Me() {
+    return X()
+}
+
+function Ne(e) {
+    return ee[e]?.icon
+}
+
+function Pe(e, t) {
+    return e ? (0, $.jsx)(e, {
+        className: `h-5 w-5`
+    }, t) : null
+}
+var Q, Fe, $, Ie, Le, Re, ze = e((() => {
+        Q = R(), y(), ae(), ve(), Ce(), d(), Se(), le(), _(), f(), Y(), _e(), ge(), se(), r(), D(), W(), ne(), c(), De(), oe(), w(), H(), Fe = t(F()), P(), N(), Ae(), B(), ce(), $ = O(), Ie = e => {
+            "use forget";
+            let t = (0, Q.c)(9),
+                {
+                    tooltip: n,
+                    ariaLabel: r,
+                    onClick: i,
+                    children: a
+                } = e,
+                o;
+            t[0] === i ? o = t[1] : (o = e => {
+                e.stopPropagation(), i()
+            }, t[0] = i, t[1] = o);
+            let s = o,
+                c;
+            t[2] !== r || t[3] !== a || t[4] !== s ? (c = (0, $.jsx)(`button`, {
+                className: `hover:bg-token-bg-secondary flex h-8 w-8 items-center justify-center rounded-md transition-colors`,
+                onClick: s,
+                "aria-label": r,
+                children: a
+            }), t[2] = r, t[3] = a, t[4] = s, t[5] = c) : c = t[5];
+            let l;
+            return t[6] !== c || t[7] !== n ? (l = (0, $.jsx)(h, {
+                label: n,
+                triggerAs: null,
+                children: c
+            }), t[6] = c, t[7] = n, t[8] = l) : l = t[8], l
+        }, Le = () => {
+            "use forget";
+            let e = (0, Q.c)(2),
+                t;
+            e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(`div`, {
+                className: `bg-token-bg-tertiary flex h-[48px] w-[48px] items-center justify-center rounded-full`,
+                children: (0, $.jsx)(ye, {
+                    className: `h-6 w-6`
+                })
+            }), e[0] = t) : t = e[0];
+            let n;
+            return e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, $.jsx)(`div`, {
+                className: `flex w-full max-w-[520px] flex-col items-center rounded-xl p-8`,
+                children: (0, $.jsxs)(`div`, {
+                    className: `flex max-w-[500px] flex-col items-center justify-end gap-2`,
+                    children: [t, (0, $.jsx)(`div`, {
+                        className: `text-token-text-secondary text-xl`,
+                        children: (0, $.jsx)(j, {
+                            id: `chatgpt.saved_prompts.empty.title`,
+                            defaultMessage: `No saved prompts`
+                        })
+                    })]
+                })
+            }), e[1] = n) : n = e[1], n
+        }, Re = e => {
+            "use forget";
+            let t = (0, Q.c)(79),
+                {
+                    conversation: r,
+                    prompt: i,
+                    isFirst: a
+                } = e,
+                o = z(),
+                c = M(),
+                l = x(Me),
+                u = fe(),
+                d;
+            bb0: {
+                if (!i.system_hint) {
+                    d = null;
+                    break bb0
+                }
+                let e;t[0] !== i.system_hint || t[1] !== l ? (e = l?.find(e => e.systemHint === i.system_hint), t[0] = i.system_hint, t[1] = l, t[2] = e) : e = t[2],
+                d = e
+            }
+            let f = d,
+                p = ue[re(i.id ?? i.name ?? `fallback`)],
+                m = i.symbol,
+                h = m?.type === `icon` && m?.icon_color ? m?.icon_color : null,
+                g;
+            t[3] === h ? g = t[4] : (g = h ? Ee(h, .12) : null, t[3] = h, t[4] = g);
+            let _ = g,
+                y;
+            t[5] === h ? y = t[6] : (y = h ? Ee(h, .1) : null, t[5] = h, t[6] = y);
+            let b = y,
+                S;
+            t[7] !== r.id || t[8] !== c || t[9] !== i ? (S = () => {
+                he({
+                    prompt: i,
+                    referer: `library`,
+                    conversationId: r.id
+                }), pe(c)
+            }, t[7] = r.id, t[8] = c, t[9] = i, t[10] = S) : S = t[10];
+            let C = S,
+                w;
+            bb1: {
+                if (!i.sources) {
+                    let e;
+                    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (e = {
+                        icons: [],
+                        text: null
+                    }, t[11] = e) : e = t[11], w = e;
+                    break bb1
+                }
+                if (i.sources.length === 1) {
+                    let e = ee[i.sources[0]]?.icon,
+                        n;
+                    t[12] === e ? n = t[13] : (n = [e], t[12] = e, t[13] = n);
+                    let r = ee[i.sources[0]]?.title,
+                        a;
+                    t[14] !== n || t[15] !== r ? (a = {
+                        icons: n,
+                        text: r
+                    }, t[14] = n, t[15] = r, t[16] = a) : a = t[16], w = a;
+                    break bb1
+                }
+                let e;t[17] === i.sources ? e = t[18] : (e = i.sources.map(Ne), t[17] = i.sources, t[18] = e);
+                let n;t[19] === e ? n = t[20] : (n = {
+                    icons: e,
+                    text: null
+                }, t[19] = e, t[20] = n),
+                w = n
+            }
+            let T = w,
+                E;
+            if (u)
+                if (m?.type === `emoji`) {
+                    let e;
+                    t[21] === m.name ? e = t[22] : (e = (0, $.jsx)(`span`, {
+                        role: `img`,
+                        "aria-label": m.name,
+                        className: `flex h-[18px] w-[18px] items-center justify-center text-[18px] leading-none`,
+                        children: m.name
+                    }), t[21] = m.name, t[22] = e), E = e
+                } else if (m?.type === `icon`) {
+                let e;
+                t[23] === m.name ? e = t[24] : (e = ie(m.name), t[23] = m.name, t[24] = e);
+                let n = e.icon,
+                    r = m.icon_color ?? `var(--icon-primary)`,
+                    i;
+                t[25] === r ? i = t[26] : (i = {
+                    color: r
+                }, t[25] = r, t[26] = i);
+                let a;
+                t[27] !== n || t[28] !== i ? (a = (0, $.jsx)(n, {
+                    className: `h-[18px] w-[18px]`,
+                    style: i
+                }), t[27] = n, t[28] = i, t[29] = a) : a = t[29], E = a
+            } else {
+                let e;
+                t[30] === p ? e = t[31] : (e = (0, $.jsx)(p, {
+                    className: `h-[18px] w-[18px]`
+                }), t[30] = p, t[31] = e), E = e
+            } else {
+                let e;
+                t[32] === f ? e = t[33] : (e = f?.logo ? (0, $.jsx)(te, {
+                    hint: f,
+                    isNextToLabel: !1,
+                    className: `h-[18px] w-[18px]`
+                }) : (0, $.jsx)(ye, {
+                    className: `h-[18px] w-[18px]`
+                }), t[32] = f, t[33] = e), E = e
+            }
+            let D = u && _ ? `bg-[var(--prompt-icon-bg)]` : `bg-token-bg-tertiary/60`,
+                O;
+            t[34] === D ? O = t[35] : (O = s(`border-token-border-secondary flex h-10 w-10 items-center justify-center rounded-lg border outline-none`, D), t[34] = D, t[35] = O);
+            let k = O,
+                A = _ ?? void 0,
+                N = u && b ? b : void 0,
+                P;
+            t[36] !== A || t[37] !== N ? (P = {
+                "--prompt-icon-bg": A,
+                borderColor: N
+            }, t[36] = A, t[37] = N, t[38] = P) : P = t[38];
+            let F = P,
+                I;
+            t[39] === a ? I = t[40] : (I = !a && (0, $.jsx)(`div`, {
+                className: `prompt-item-divider border-token-border-secondary absolute start-4 end-4 top-0 border-t transition-opacity`
+            }), t[39] = a, t[40] = I);
+            let L;
+            t[41] !== k || t[42] !== F || t[43] !== E ? (L = (0, $.jsx)(`div`, {
+                className: k,
+                style: F,
+                children: E
+            }), t[41] = k, t[42] = F, t[43] = E, t[44] = L) : L = t[44];
+            let R;
+            t[45] === i.name ? R = t[46] : (R = (0, $.jsx)(`div`, {
+                className: `text-token-text-primary truncate leading-tight font-semibold`,
+                children: i.name
+            }), t[45] = i.name, t[46] = R);
+            let B;
+            t[47] === T ? B = t[48] : (B = T?.icons?.length ? (0, $.jsx)(`div`, {
+                className: `text-token-text-secondary flex items-center gap-1`,
+                children: T.icons.map(Pe)
+            }) : null, t[47] = T, t[48] = B);
+            let V;
+            t[49] !== R || t[50] !== B ? (V = (0, $.jsxs)(`div`, {
+                className: `flex items-center gap-2`,
+                children: [R, B]
+            }), t[49] = R, t[50] = B, t[51] = V) : V = t[51];
+            let H;
+            t[52] === i.prompt ? H = t[53] : (H = (0, $.jsx)(`div`, {
+                className: `text-token-text-secondary line-clamp-2 text-sm break-words whitespace-pre-wrap`,
+                children: i.prompt
+            }), t[52] = i.prompt, t[53] = H);
+            let U;
+            t[54] !== V || t[55] !== H ? (U = (0, $.jsx)(`div`, {
+                className: `min-w-0 flex-1`,
+                children: (0, $.jsxs)(`div`, {
+                    className: `flex min-w-0 flex-col gap-1`,
+                    children: [V, H]
+                })
+            }), t[54] = V, t[55] = H, t[56] = U) : U = t[56];
+            let W;
+            t[57] !== L || t[58] !== U ? (W = (0, $.jsxs)(`div`, {
+                className: `flex min-h-[72px] items-center gap-5 pe-44 md:pe-56`,
+                children: [L, U]
+            }), t[57] = L, t[58] = U, t[59] = W) : W = t[59];
+            let G;
+            t[60] !== o || t[61] !== i.id || t[62] !== i.name || t[63] !== i.relationship || t[64] !== i.sources || t[65] !== i.system_hint ? (G = i.relationship === `own` && (0, $.jsx)($.Fragment, {
+                children: (0, $.jsx)(Ie, {
+                    tooltip: o.formatMessage({
+                        id: `fZNNxL`,
+                        defaultMessage: `Delete prompt`
+                    }),
+                    ariaLabel: o.formatMessage({
+                        id: `TJZi61`,
+                        defaultMessage: `Delete prompt`
+                    }),
+                    onClick: () => {
+                        v(ke, {
+                            promptId: String(i.id ?? ``),
+                            promptTitle: i.name ?? ``,
+                            promptSystemHint: i.system_hint ?? null,
+                            promptSources: (i.sources ?? []).join(`,`)
+                        })
+                    },
+                    children: (0, $.jsx)(be, {
+                        className: `text-token-text-primary h-5 w-5`
+                    })
+                })
+            }), t[60] = o, t[61] = i.id, t[62] = i.name, t[63] = i.relationship, t[64] = i.sources, t[65] = i.system_hint, t[66] = G) : G = t[66];
+            let K;
+            t[67] === C ? K = t[68] : (K = e => {
+                e.stopPropagation(), C()
+            }, t[67] = C, t[68] = K);
+            let q;
+            t[69] === Symbol.for(`react.memo_cache_sentinel`) ? (q = (0, $.jsx)(j, {
+                id: `YB8gk2`,
+                defaultMessage: `Try it`
+            }), t[69] = q) : q = t[69];
+            let J;
+            t[70] === K ? J = t[71] : (J = (0, $.jsx)(n, {
+                onClick: K,
+                color: `primary`,
+                children: q
+            }), t[70] = K, t[71] = J);
+            let Y;
+            t[72] !== G || t[73] !== J ? (Y = (0, $.jsx)(`div`, {
+                className: `absolute end-4 top-1/2 flex -translate-y-1/2 items-center gap-2`,
+                children: (0, $.jsxs)(`div`, {
+                    className: `pointer-events-none flex items-center gap-2 opacity-0 transition-opacity group-hover:pointer-events-auto group-hover:opacity-100`,
+                    children: [G, J]
+                })
+            }), t[72] = G, t[73] = J, t[74] = Y) : Y = t[74];
+            let X;
+            return t[75] !== I || t[76] !== W || t[77] !== Y ? (X = (0, $.jsxs)(`div`, {
+                className: `group peer hover:bg-token-interactive-bg-secondary-hover relative rounded-2xl px-4 py-5 transition-colors peer-hover:[&_.prompt-item-divider]:opacity-0 hover:[&_.prompt-item-divider]:opacity-0`,
+                children: [I, W, Y]
+            }), t[75] = I, t[76] = W, t[77] = Y, t[78] = X) : X = t[78], X
+        }
+    })),
+    Be, Ve, He, Ue, We, Ge, Ke = e((() => {
+        N(), Be = R(), T(), B(), ze(), C(), Te(), Ve = t(F()), He = O(), Ue = {
+            hasRouteMeta: !1,
+            useScrollRestoration: !0
+        }, We = () => ({
+            isOutletBasedRoute: !0,
+            pageType: `saved-prompts`
+        }), Ge = k(function() {
+            "use forget";
+            let e = (0, Be.c)(5),
+                t;
+            e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = q(), e[0] = t) : t = e[0];
+            let n = t;
+            if (we(n), !n) return null;
+            let r = (0, Ve.use)(S),
+                i;
+            e[1] === r ? i = e[2] : (i = b(r), e[1] = r, e[2] = i);
+            let a = i,
+                o;
+            return e[3] === a ? o = e[4] : (o = (0, He.jsx)(je, {
+                conversation: a
+            }), e[3] = a, e[4] = o), o
+        })
+    }));
+e((() => {
+    Ke()
+}))();
+export {
+    We as clientLoader, Ge as
+    default, Ue as handle
+};
 //# sourceMappingURL=_conversation.saved-prompts-kzxif198.js.map

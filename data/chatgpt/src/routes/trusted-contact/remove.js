@@ -1,2 +1,176 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,Aw as r,I7 as i,M7 as a,Nrt as o,Ow as s,Pat as c,Prt as l,Rat as u,Rz as d,cot as f,eE as p,not as m,zz as h}from"./4813494d-mdvd4786a87166cc.js";import{Bn as g,Ht as _,Ln as v,Nn as y,Nt as b,Q as x,Rn as S,Vn as C,kt as w,zn as T}from"./2340486e-i7pjxgdhv0bs6apg.js";import{c as E,l as D}from"./8b34dbc2-lmwubajnld74ksfm.js";function O(e){return e.status===400||e.status===404?{status:`error`,errorKind:`invalidLink`}:{status:`error`,errorKind:`generic`}}async function k(e){try{return{status:`success`,ownerName:(await a.safePost(`/trusted_contact/removal`,{requestBody:{token:e,trusted_contact_id:e},authOption:c.SendIfAvailable})).user_name??null}}catch(e){return e instanceof m?O(e):(l.error(`Unexpected trusted contact removal link failure`,{error:e}),{status:`error`,errorKind:`generic`})}}var A,j,M,N,P=e((()=>{x(),p(),D(),r(),h(),u(),f(),o(),i(),A=t(C()),S(),j=g(),M=_(function(){"use no forget";let e=T(),t=b(),r=w(),[i,a]=(0,A.useState)(()=>r.initialErrorState==null?{status:`loading`}:r.initialErrorState);(0,A.useEffect)(()=>{if(r.token==null||r.initialErrorState!=null)return;let e=!1;return k(r.token).then(t=>{e||a(t)}),()=>{e=!0}},[r.initialErrorState,r.token]);let o=i.status===`success`&&i.ownerName?.trim()||null,c=i.status===`loading`?e.formatMessage(N.loadingDescription):i.status===`success`?o?e.formatMessage(N.successDescription,{name:o}):e.formatMessage(N.successDescriptionFallback):i.errorKind===`invalidLink`?e.formatMessage(N.invalidLinkError):e.formatMessage(N.genericError);return(0,j.jsx)(E,{children:(0,j.jsx)(s,{testId:`modal-trusted-contact-public-removal`,isOpen:!0,onClose:()=>t(`/`,{replace:!0}),shouldIgnoreClickOutside:!0,showOverlayBackground:!1,overlayClassName:`bg-black/40`,headerClassName:`justify-center`,size:`custom`,className:`max-w-[520px] rounded-[28px] border border-black/5 p-8 shadow-[0_28px_80px_rgba(0,0,0,0.18)]`,footerContent:i.status===`loading`?null:(0,j.jsx)(n,{color:`primary`,fullWidth:!0,size:`large`,className:`rounded-full`,onClick:()=>t(`/`,{replace:!0}),children:(0,j.jsx)(y,{...N.closeButton})}),title:(0,j.jsx)(`span`,{className:`text-center text-[2rem] leading-[1.05] font-semibold tracking-[-0.03em] text-balance`,children:e.formatMessage(i.status===`loading`?N.loadingTitle:i.status===`success`?N.successTitle:N.errorTitle)}),children:(0,j.jsxs)(`div`,{className:`mb-6 flex flex-col items-center gap-4`,children:[i.status===`loading`?(0,j.jsx)(d,{className:`text-token-text-primary h-8 w-8`}):null,(0,j.jsx)(`p`,{className:`text-token-text-secondary text-center text-lg leading-7 text-balance`,children:c})]})})})}),N=v({loadingTitle:{id:`trustedContact.publicRemoval.loading.title`,defaultMessage:`Removing trusted contact...`},loadingDescription:{id:`trustedContact.publicRemoval.loading.description`,defaultMessage:`One moment while we update this trusted contact.`},successTitle:{id:`trustedContact.publicRemoval.success.title`,defaultMessage:`You've been removed as a trusted contact`},successDescription:{id:`trustedContact.publicRemoval.success.description.named`,defaultMessage:`We'll let {name} know.`},successDescriptionFallback:{id:`trustedContact.publicRemoval.success.description.fallback`,defaultMessage:`We'll let them know.`},errorTitle:{id:`trustedContact.publicRemoval.error.title`,defaultMessage:`We couldn't remove you as a trusted contact`},invalidLinkError:{id:`trustedContact.publicRemoval.error.invalidLink`,defaultMessage:`This removal link is invalid or has expired.`},genericError:{id:`trustedContact.publicRemoval.error.generic`,defaultMessage:`We couldn't complete that request. Please try again.`},closeButton:{id:`trustedContact.publicRemoval.closeButton`,defaultMessage:`Close`}})}));e((()=>{P()}))();export{M as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    Aw as r,
+    I7 as i,
+    M7 as a,
+    Nrt as o,
+    Ow as s,
+    Pat as c,
+    Prt as l,
+    Rat as u,
+    Rz as d,
+    cot as f,
+    eE as p,
+    not as m,
+    zz as h
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as g,
+    Ht as _,
+    Ln as v,
+    Nn as y,
+    Nt as b,
+    Q as x,
+    Rn as S,
+    Vn as C,
+    kt as w,
+    zn as T
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    c as E,
+    l as D
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+
+function O(e) {
+    return e.status === 400 || e.status === 404 ? {
+        status: `error`,
+        errorKind: `invalidLink`
+    } : {
+        status: `error`,
+        errorKind: `generic`
+    }
+}
+async function k(e) {
+    try {
+        return {
+            status: `success`,
+            ownerName: (await a.safePost(`/trusted_contact/removal`, {
+                requestBody: {
+                    token: e,
+                    trusted_contact_id: e
+                },
+                authOption: c.SendIfAvailable
+            })).user_name ?? null
+        }
+    } catch (e) {
+        return e instanceof m ? O(e) : (l.error(`Unexpected trusted contact removal link failure`, {
+            error: e
+        }), {
+            status: `error`,
+            errorKind: `generic`
+        })
+    }
+}
+var A, j, M, N, P = e((() => {
+    x(), p(), D(), r(), h(), u(), f(), o(), i(), A = t(C()), S(), j = g(), M = _(function() {
+        "use no forget";
+        let e = T(),
+            t = b(),
+            r = w(),
+            [i, a] = (0, A.useState)(() => r.initialErrorState == null ? {
+                status: `loading`
+            } : r.initialErrorState);
+        (0, A.useEffect)(() => {
+            if (r.token == null || r.initialErrorState != null) return;
+            let e = !1;
+            return k(r.token).then(t => {
+                e || a(t)
+            }), () => {
+                e = !0
+            }
+        }, [r.initialErrorState, r.token]);
+        let o = i.status === `success` && i.ownerName?.trim() || null,
+            c = i.status === `loading` ? e.formatMessage(N.loadingDescription) : i.status === `success` ? o ? e.formatMessage(N.successDescription, {
+                name: o
+            }) : e.formatMessage(N.successDescriptionFallback) : i.errorKind === `invalidLink` ? e.formatMessage(N.invalidLinkError) : e.formatMessage(N.genericError);
+        return (0, j.jsx)(E, {
+            children: (0, j.jsx)(s, {
+                testId: `modal-trusted-contact-public-removal`,
+                isOpen: !0,
+                onClose: () => t(`/`, {
+                    replace: !0
+                }),
+                shouldIgnoreClickOutside: !0,
+                showOverlayBackground: !1,
+                overlayClassName: `bg-black/40`,
+                headerClassName: `justify-center`,
+                size: `custom`,
+                className: `max-w-[520px] rounded-[28px] border border-black/5 p-8 shadow-[0_28px_80px_rgba(0,0,0,0.18)]`,
+                footerContent: i.status === `loading` ? null : (0, j.jsx)(n, {
+                    color: `primary`,
+                    fullWidth: !0,
+                    size: `large`,
+                    className: `rounded-full`,
+                    onClick: () => t(`/`, {
+                        replace: !0
+                    }),
+                    children: (0, j.jsx)(y, {
+                        ...N.closeButton
+                    })
+                }),
+                title: (0, j.jsx)(`span`, {
+                    className: `text-center text-[2rem] leading-[1.05] font-semibold tracking-[-0.03em] text-balance`,
+                    children: e.formatMessage(i.status === `loading` ? N.loadingTitle : i.status === `success` ? N.successTitle : N.errorTitle)
+                }),
+                children: (0, j.jsxs)(`div`, {
+                    className: `mb-6 flex flex-col items-center gap-4`,
+                    children: [i.status === `loading` ? (0, j.jsx)(d, {
+                        className: `text-token-text-primary h-8 w-8`
+                    }) : null, (0, j.jsx)(`p`, {
+                        className: `text-token-text-secondary text-center text-lg leading-7 text-balance`,
+                        children: c
+                    })]
+                })
+            })
+        })
+    }), N = v({
+        loadingTitle: {
+            id: `trustedContact.publicRemoval.loading.title`,
+            defaultMessage: `Removing trusted contact...`
+        },
+        loadingDescription: {
+            id: `trustedContact.publicRemoval.loading.description`,
+            defaultMessage: `One moment while we update this trusted contact.`
+        },
+        successTitle: {
+            id: `trustedContact.publicRemoval.success.title`,
+            defaultMessage: `You've been removed as a trusted contact`
+        },
+        successDescription: {
+            id: `trustedContact.publicRemoval.success.description.named`,
+            defaultMessage: `We'll let {name} know.`
+        },
+        successDescriptionFallback: {
+            id: `trustedContact.publicRemoval.success.description.fallback`,
+            defaultMessage: `We'll let them know.`
+        },
+        errorTitle: {
+            id: `trustedContact.publicRemoval.error.title`,
+            defaultMessage: `We couldn't remove you as a trusted contact`
+        },
+        invalidLinkError: {
+            id: `trustedContact.publicRemoval.error.invalidLink`,
+            defaultMessage: `This removal link is invalid or has expired.`
+        },
+        genericError: {
+            id: `trustedContact.publicRemoval.error.generic`,
+            defaultMessage: `We couldn't complete that request. Please try again.`
+        },
+        closeButton: {
+            id: `trustedContact.publicRemoval.closeButton`,
+            defaultMessage: `Close`
+        }
+    })
+}));
+e((() => {
+    P()
+}))();
+export {
+    M as
+    default
+};
 //# sourceMappingURL=trusted-contact.remove-k235k685.js.map

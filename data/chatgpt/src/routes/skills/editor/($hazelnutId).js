@@ -1,3 +1,1317 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/b7383446-j339rvz96mv0n543.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-mdvd4786a87166cc.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/30901919-s8bko9nrkqwv6i4f.js","assets/5c267c4d-dqcuiazpzfiwbpf8.js","assets/conversation-small-bcbq46iub1p0ca1t.js","assets/c470f5ab-jwd0o7jx9i9say9k.js","assets/0e5afe53-hxm3yzzjqriayom4.js","assets/conversation-small-ep6mlz5m.css","assets/c2675c8c-oz03twoan08d72ud.js","assets/82782bc9-b4xbouzwkkyrfqq2.js","assets/8b34dbc2-lmwubajnld74ksfm.js","assets/global-modals-dxg9ukpk.css","assets/328817d4-b4mfy1w2r2slvrkr.js","assets/09153034-ebs0t5pe23u9wr37.js","assets/c5708073-f703g9k0lnrxgqwe.js","assets/01c56089-msbdi2djique9uqb.js","assets/2ac7f54f-l8pnzp97tb7vdudt.js","assets/5d5d57f0-l10xq2exre27k7n0.js","assets/19ad7347-o7bptqi9btdhnu60.js","assets/6fd89734-fg0klobnz43q67to.js","assets/d4c3e8a1-ed7j3va6y1yw7jt7.js","assets/f8579ff2-b1uxxxkuid0hjd8v.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,A8 as r,At as i,Aw as a,Bw as o,Bz as s,Knt as c,LU as l,Lw as ee,Nat as u,Ow as te,Rw as d,U1 as f,Vw as p,Vz as m,Wet as h,Wnt as ne,ZW as re,c2 as g,cn as ie,d2 as ae,eE as oe,eY as se,gtt as ce,j5 as le,jat as ue,oK as de,oW as fe,pF as _,q1 as v,qW as pe,sK as me,sW as y,sY as b,vF as he,zU as ge}from"./4813494d-mdvd4786a87166cc.js";import{Bn as x,Ht as _e,Ln as S,Lt as C,N as ve,Nn as w,Nt as ye,Q as be,Rn as T,Vn as xe,cn as E,ln as Se,s as Ce,wn as we,zn as Te}from"./2340486e-i7pjxgdhv0bs6apg.js";import{AUn as Ee,B7 as D,Chn as De,Hs as O,Jvt as Oe,MUn as ke,Qvt as Ae,Shn as je,V7 as k,Vs as Me,_hn as A,agn as Ne,ai as j,b$ as Pe,c as M,cgn as Fe,dgn as Ie,fgn as Le,hhn as Re,ign as N,jUn as ze,lgn as Be,lyt as Ve,mhn as He,nTn as Ue,nyt as We,ogn as Ge,rTn as Ke,rgn as qe,s as P,sgn as Je,ti as Ye,ugn as F,x$ as I}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Dx as Xe,Hy as L,Ox as R,Uy as Ze,bC as Qe,xC as $e}from"./30901919-s8bko9nrkqwv6i4f.js";import{B_ as et,I_ as tt,L_ as nt,R_ as rt,V_ as z,z_ as it}from"./c2675c8c-oz03twoan08d72ud.js";import{D_ as at,Kh as ot,Nt as B,O_ as st,Pt as ct,Yh as lt,_ as ut,cn as V,dg as dt,fg as H,ln as ft,mg as pt,ug as U,v as W}from"./8b34dbc2-lmwubajnld74ksfm.js";import{n as mt,t as ht}from"./073fd849-fdkg4spwe61sp7mn.js";import{n as gt,t as _t}from"./01c56089-msbdi2djique9uqb.js";import{r as vt}from"./328817d4-b4mfy1w2r2slvrkr.js";import{a as yt,i as bt,r as xt,s as St}from"./6fd89734-fg0klobnz43q67to.js";import{a as Ct,i as wt,n as Tt,o as Et,r as Dt,s as G,t as Ot}from"./4e0528a1-kdigzwymvzc0xhmu.js";import{n as kt,t as At}from"./62507501-me1i1v9xo5f72dtr.js";import{n as jt,r as Mt,t as Nt}from"./11defd9b-jfe7w6nktgmho8u6.js";import{n as Pt,t as Ft}from"./46158937-bir41kbhy3otwzw1.js";import{n as It,t as Lt}from"./29946bd6-l0ptcghpcfbw4g03.js";function Rt({conversation:e}){"use no forget";let{modelLabel:t,dropdownSections:n}=dt(e,!1);return f()?.hasPaidFeatures()?(0,K.jsx)(Ee,{size:`small`,alignOffset:-4,triggerButton:(0,K.jsxs)(Me,{children:[(0,K.jsx)(w,{id:`IhcP1l`,defaultMessage:`Model`}),(0,K.jsx)(`span`,{className:`text-token-text-secondary text-xs font-medium`,children:t}),(0,K.jsx)(s.ChevronDownSm,{className:`icon-sm text-token-text-tertiary`})]}),children:(0,K.jsx)(H,{sections:n})}):null}var K,zt=e((()=>{ke(),m(),O(),U(),v(),pt(),T(),K=x()}));function Bt(){return{conversation:_(),initialConversationOrigin:Pe()}}function Vt({hazelnutId:e,hasUnsavedChanges:t}){"use no forget";let[{conversation:n,initialConversationOrigin:r},i]=(0,q.useState)(()=>Bt()),[a,o]=(0,q.useState)(0);return W(n.id,{kind:h.PrimaryAssistant},{disableConversationNavigation:!0}),(0,q.useEffect)(()=>{b(n.id,e=>{e.mode={kind:h.PrimaryAssistant},e.disableConversationNavigation=!0,e.conversationOrigin??=r})},[n.id,r]),(0,J.jsxs)(at,{conversation:n,children:[(0,J.jsx)(_t,{skillId:e}),(0,J.jsx)(D,{conversation:n,children:(0,J.jsxs)(`div`,{className:`flex h-full flex-col`,children:[(0,J.jsx)(`div`,{className:`flex justify-center px-4 pt-3`,children:(0,J.jsxs)(`div`,{className:`group flex items-center gap-3 text-lg font-semibold`,children:[(0,J.jsx)(`div`,{className:`icon`}),(0,J.jsxs)(`button`,{onClick:()=>{o(e=>e-360),i(Bt())},className:`text-token-text-primary flex items-center gap-2`,children:[(0,J.jsx)(w,{id:`2u/6Ja`,defaultMessage:`Preview`}),(0,J.jsx)(ie.div,{className:`text-token-text-primary`,animate:{rotate:a},transition:{duration:.3},children:(0,J.jsx)(L,{className:`icon invisible group-hover:visible`})})]}),(0,J.jsx)(Rt,{conversation:n})]})}),t&&(0,J.jsx)(`div`,{className:`px-4 pt-2`,children:(0,J.jsxs)(`div`,{className:`flex items-center gap-2 rounded-md border border-yellow-200 bg-yellow-50 px-3 py-2 text-xs text-yellow-700 dark:border-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-300`,children:[(0,J.jsx)(y,{className:`icon text-yellow-600 dark:text-yellow-300`}),(0,J.jsx)(`span`,{children:(0,J.jsx)(w,{id:`JGC47w`,defaultMessage:`Save your skill before you can test with the latest change`})})]})}),(0,J.jsx)(`div`,{className:`flex grow flex-col overflow-y-auto px-2 pb-2 contain-paint`,children:(0,J.jsx)(B,{conversation:n,renderEmptyState:(0,J.jsx)(V,{conversation:n,currentModelId:null,overrideMessage:Ht.tryYourSkillHeadline})})})]})})]})}var q,J,Ht,Ut=e((()=>{ce(),ct(),k(),st(),he(),Ze(),fe(),gt(),zt(),I(),ut(),se(),ft(),i(),q=t(xe()),T(),J=x(),Ht=S({tryYourSkillHeadline:{id:`SkillEditorConversationPane.tryYourSkillHeadline`,defaultMessage:`Try your skill`}})})),Wt,Gt,Kt,qt=e((()=>{Ie(),F(),Fe(),Ge(),N(),Wt=Le({id:`skill-editor`,icons:{download:{normal:Je,small:Be},share:{normal:qe,small:Ne}}}),Gt=Wt.Download,Kt=Wt.Share}));function Jt({onBack:e,onRetry:t,onClose:n}){return(0,Y.jsx)(te,{testId:`modal-no-access`,isOpen:!0,onClose:()=>n(),title:(0,Y.jsx)(w,{id:`PZM705`,defaultMessage:`Failed to load skill.`}),footerClassName:`justify-center`,footerContent:(0,Y.jsxs)(`div`,{className:`flex items-center justify-center gap-3`,children:[(0,Y.jsx)(o,{color:`secondary`,onClick:t,children:(0,Y.jsx)(w,{id:`FxBRY4`,defaultMessage:`Retry`})}),(0,Y.jsx)(o,{color:`primary`,onClick:e,children:(0,Y.jsx)(w,{id:`pnbC84`,defaultMessage:`Back`})})]}),showCloseButton:!0,children:(0,Y.jsx)(`p`,{className:`text-token-text-secondary pb-2 text-sm`,children:(0,Y.jsx)(w,{id:`JkuEq5`,defaultMessage:`Skill does not exist or you don't have access to the skill.`})})})}var Y,Yt=e((()=>{p(),a(),T(),Y=x()}));function Xt(){"use no forget";return(0,Zt.jsx)(`div`,{className:`flex h-full items-center justify-center rounded-2xl px-4 text-center`,children:(0,Zt.jsx)(`div`,{className:`max-w-xs`,children:(0,Zt.jsx)(`p`,{className:`text-token-text-tertiary text-xs`,children:(0,Zt.jsx)(w,{...Qt.emptyRightPaneTitle})})})})}var Zt,Qt,$t=e((()=>{T(),Zt=x(),Qt=S({emptyRightPaneTitle:{id:`zLdosY`,defaultMessage:`Create your skill to test it here.`}})}));function en({hazelnutId:e}){"use no forget";let t=Te(),r=ge(),i=ye(),a=ve(),{canShare:o}=De(),[s,c]=(0,X.useState)(``),[l,u]=(0,X.useState)(``),[d,f]=(0,X.useState)(``),[p,m]=(0,X.useState)([]),[h]=(0,X.useState)(()=>({media:new Map,text:new Map})),[g,ie]=(0,X.useState)(!1),[oe,se]=(0,X.useState)(null),[ce,de]=(0,X.useState)(null),fe=(0,X.useRef)(null),_=(0,X.useRef)(!1),v=(0,X.useRef)(!1),[pe,me]=(0,X.useState)(!1),[y,b]=(0,X.useState)(null),[he,x]=(0,X.useState)(null),_e=(0,X.useRef)(new Set),S=He(),C=le(()=>re()),[be,T]=(0,X.useState)(null),[xe,E]=(0,X.useState)(null),[Se,Ce]=(0,X.useState)(!1),[we,D]=(0,X.useState)(!1),[O,ke]=(0,X.useState)(on),[Ae,je]=(0,X.useState)(on),[k,Me]=(0,X.useState)(S),[A,Ne]=(0,X.useState)(!1),[j,Pe]=(0,X.useState)(sn),[M,Fe]=(0,X.useState)(!1),Ie=(0,X.useRef)(null),Le=(0,X.useRef)(null);(0,X.useEffect)(()=>()=>{for(let e of h.media.values())URL.revokeObjectURL(e)},[h]);let Re=(0,X.useCallback)(e=>e.toLowerCase().replace(/[^a-z0-9-]/g,``),[]),N=(0,X.useMemo)(()=>y?vt(y.draftFile):null,[y]),Be=N!=null,Ge=(y?.draftFile.path??``).trim().toLowerCase()===`skill.md`,Ke=(0,X.useCallback)(e=>{c(Re(e.target.value)),D(!0)},[Re]),qe=(0,X.useCallback)(e=>{u(e.target.value),D(!0)},[]),P=(0,X.useCallback)((t,n)=>{let r=t.trim().toLowerCase(),i=n?`skill.md`:r;_e.current.has(i)||(_e.current.add(i),ne.logEventWithStatsig(`chatgpt_web_skill_editor_file_edited`,`chatgpt_web_skill_editor_file_edited`,{file_type:n?`skill_md`:`other`,hazelnut_id:e??``}))},[e]),Je=(0,X.useCallback)((e,t)=>{m(n=>{let r=n.find(t=>t.clientId===e);if(r){let e=z(r.path||r.filename);P(e,!1)}return n.map(n=>n.clientId===e?{clientId:n.clientId,filename:n.filename,size:new TextEncoder().encode(t).length,contentType:n.contentType,path:n.path,status:`inmemory`,content:t}:n)}),D(!0)},[P]),F=(0,X.useCallback)(e=>{let n=e??d;return{draftFile:{clientId:`instructions-file`,filename:`SKILL.md`,path:`SKILL.md`,size:n.length,contentType:`text/markdown`,content:n,status:`inmemory`},onSave:e=>{f(e),D(!0),P(`SKILL.md`,!0)},placeholder:t.formatMessage(Et.instructionsPlaceholder),hideHeader:!0,hideLineNumbers:!0,useSystemFont:!0}},[d,t,P]),I=(0,X.useCallback)((e,t,n)=>({draftFile:e,onSave:t=>{Je(e.clientId,t)},placeholder:n?.placeholder,hideHeader:n?.hideHeader,readOnlyReason:t??n?.readOnlyReason??ht({isReadonly:!0}),hideLineNumbers:n?.hideLineNumbers,useSystemFont:n?.useSystemFont}),[Je]),L=(0,X.useCallback)(t=>{ne.logStructuredEvent(`ChatgptWebSkillCreateRawSuccess`,{hazelnutId:e??``}),b(F(t))},[F,e]),R=(0,X.useCallback)(e=>e.status===`bytes`?{...e,bytes:new Uint8Array(e.bytes)}:{...e},[]),Ze=(0,X.useCallback)(()=>({name:s,description:l,instructions:d,files:p.map(e=>R(e)),hasUnsavedChanges:we}),[l,p,we,d,s,R]),$e=(0,X.useCallback)(e=>{let t=e.files.map(e=>R(e));E(Ze()),c(e.name),u(e.description),f(e.instructions),m(t),D(!0),T({skillName:e.name,summary:e.assistantSummary}),b(n=>{let r=n?.draftFile,i=r?z(r.path||r.filename).toLowerCase():``,a=t.find(e=>z(e.path||e.filename).toLowerCase()===i);return!r||!i||i===`skill.md`&&r.status===`inmemory`||!a?F(e.instructions):I(a,n.readOnlyReason,n)})},[I,F,R,Ze]),et=(0,X.useCallback)(e=>{D(!0),$e(e)},[$e]),at=(0,X.useCallback)(()=>{let e=xe;if(!e){T(null);return}let t=e.files.map(e=>R(e));c(e.name),u(e.description),f(e.instructions),m(t),D(e.hasUnsavedChanges),T(null),b(n=>{let r=n?.draftFile,i=r?z(r.path||r.filename).toLowerCase():``,a=t.find(e=>z(e.path||e.filename).toLowerCase()===i);return!r||!i||i===`skill.md`&&r.status===`inmemory`||!a?F(e.instructions):I(a,n.readOnlyReason,n)})},[I,F,R,xe]),ot=(0,X.useCallback)(()=>{E(null),T(null)},[]),{skillData:B,isLoadingSkill:st,didFailSkillLoad:ct}=Ve({hazelnutId:e??``}),lt=st,ut=B?.permissions?.can_export??B?.permissions?.can_read??!0,V=B?.permissions?.can_write??!0;(0,X.useEffect)(()=>{ct&&ae(Jt,{onBack:()=>i(-1),onRetry:()=>window.location.reload()})},[ct,i]),(0,X.useEffect)(()=>{e&&oe?.id===e||(_.current=!1,v.current=!1,f(``),T(null),E(null),D(!1))},[e,oe]),(0,X.useEffect)(()=>{_e.current.clear()},[e]),(0,X.useEffect)(()=>{if(B&&!_.current){c(B.name??``);let e=B.description??``;if(u(e),B.files&&B.sediment_id){let e=a.getQueryData(Ue(B.id)),t=Object.entries(B.files).filter(([e])=>e.trim().toLowerCase()!==`skill.md`).sort(([e],[t])=>e.localeCompare(t)).map(([t,n])=>{let r=e?.[t];return{clientId:it(),fileId:B.sediment_id,filename:tt(t),size:n?.length??0,contentType:r?.type??`application/octet-stream`,localFile:r,path:t,status:`saved`,range:n}});t.length>0&&m(e=>[...t,...e])}_.current=!0,D(!1)}},[a,B]);let dt=(0,X.useCallback)((e,t)=>{let n=Math.max(320,t-420);return Math.min(n,Math.max(320,e))},[]),H=(0,X.useCallback)(e=>{if(S&&k)return;let t=Ie.current;if(!t)return;let n=t.getBoundingClientRect(),r=window.matchMedia(`(min-width: 1024px)`).matches?n.right-e:e-n.left;ke(dt(r,n.width))},[dt,S,k]),ft=(0,X.useCallback)(e=>{S&&k||(e.preventDefault(),Ne(!0),`touches`in e&&e.touches[0]?H(e.touches[0].clientX):`clientX`in e&&H(e.clientX))},[H,S,k]),pt=(0,X.useCallback)(()=>{S&&(k?ke(Ae):(je(O),ke(Q)),Me(e=>!e))},[S,k,O,Ae]);(0,X.useEffect)(()=>{if(!A)return;let e=e=>H(e.clientX),t=e=>{e.touches[0]&&H(e.touches[0].clientX)},n=()=>Ne(!1);return window.addEventListener(`mousemove`,e),window.addEventListener(`mouseup`,n),window.addEventListener(`touchmove`,t),window.addEventListener(`touchend`,n),()=>{window.removeEventListener(`mousemove`,e),window.removeEventListener(`mouseup`,n),window.removeEventListener(`touchmove`,t),window.removeEventListener(`touchend`,n)}},[H,A]);let U=(0,X.useCallback)((e,t)=>{let n=Math.min(ln,Math.max(cn,t-un));return Math.min(n,Math.max(cn,e))},[]),W=(0,X.useCallback)(e=>{let t=Le.current;if(!t)return;let n=t.getBoundingClientRect();Pe(U(e-n.left,n.width))},[U]),mt=(0,X.useCallback)(e=>{e.pointerType!==`touch`&&e.button!==0||(e.preventDefault(),e.currentTarget.setPointerCapture(e.pointerId),Fe(!0),W(e.clientX))},[W]),gt=(0,X.useCallback)(e=>{let t=Le.current;if(!t)return;let n=j;if(e.key===`ArrowLeft`)n-=dn;else if(e.key===`ArrowRight`)n+=dn;else if(e.key===`Home`)n=cn;else if(e.key===`End`)n=ln;else return;e.preventDefault(),Pe(U(n,t.getBoundingClientRect().width))},[U,j]);(0,X.useEffect)(()=>{if(!M)return;let e=e=>W(e.clientX),t=()=>Fe(!1);return window.addEventListener(`pointermove`,e),window.addEventListener(`pointerup`,t),window.addEventListener(`pointercancel`,t),()=>{window.removeEventListener(`pointermove`,e),window.removeEventListener(`pointerup`,t),window.removeEventListener(`pointercancel`,t)}},[W,M]);let _t=(0,X.useCallback)(e=>{let t=fe.current;t&&(e?(t.setAttribute(`webkitdirectory`,``),t.setAttribute(`directory`,``)):(t.removeAttribute(`webkitdirectory`),t.removeAttribute(`directory`)))},[]),bt=(0,X.useMemo)(()=>{let e=p.reduce((e,t)=>{let n=z(t.path).toLowerCase();return n&&e.set(n,(e.get(n)??0)+1),e},new Map),n={};for(let r of p){let i=z(r.path).toLowerCase(),a=i?e.get(i)??0:0;n[r.clientId]=St(t,r.path,a)}return n},[p,t]),G=p.some(e=>e.status===`uploading`),kt=g||G,Mt=p.some(e=>e.status===`error`),Pt=Object.values(bt).some(Boolean),It=(0,X.useMemo)(()=>[...p].sort((e,t)=>(e.path||e.filename).localeCompare(t.path||t.filename)),[p]),Lt=we,Rt=async n=>{let i=n.target.files;if(!i||i.length===0)return;let a=Array.from(i);ne.logEventWithStatsig(`chatgpt_web_skill_editor_files_uploaded`,`chatgpt_web_skill_editor_files_uploaded`,{file_count:a.length,hazelnut_id:e??``}),await yt(a,m,t,r,p),D(!0),n.target.value=``,_t(!1)},K=(0,X.useCallback)(async(e,t)=>{try{let n=a.getQueryData(Ue(e.id))?.[`SKILL.md`],r=n?nt(await n.text()):await xt(e,t);if(t?.aborted)return;r&&f(e=>e||r),L(r)}catch(e){if(t?.aborted)return;ue.addError(e)}},[L,a,f]);(0,X.useEffect)(()=>{if(!e){L();return}if(!B||v.current||!rt(B.files))return;let t=new AbortController;return v.current=!0,K(B,t.signal),()=>{t.abort()}},[e,B,K,L]);let zt=e=>{m(t=>t.filter(t=>t.clientId!==e)),D(!0),y?.draftFile.clientId===e&&b(null)},Bt=(0,X.useMemo)(()=>!!(!s.trim()||!l.trim()||G||Mt||Pt),[Pt,Mt,G,s,l]),q=(0,X.useCallback)(e=>e.status===`inmemory`?e.content:e.status===`bytes`&&vt(e)?.kind===`text`?new TextDecoder(`utf-8`).decode(e.bytes):null,[]),J=(0,X.useMemo)(()=>!s.trim()&&e?t.formatMessage($.validationMissingName):void 0,[e,s,t]),Ht=(0,X.useMemo)(()=>!l.trim()&&e?t.formatMessage($.validationMissingDescription):void 0,[l,e,t]),Ut=async n=>{let o=n?.applyResolution??!1;if(!s.trim()){r.danger(t.formatMessage($.validationMissingName));return}if(!d.trim()){r.danger(t.formatMessage($.validationMissingInstructions));return}if(G){r.danger(t.formatMessage($.validationFileUploading));return}if(Mt||Pt){r.danger(t.formatMessage($.saveFailed));return}let c=p.filter(e=>e.status===`uploaded`||e.status===`saved`).map(e=>{if(!(`fileId`in e))throw Error(`Uploaded file missing fileId`);return{file_id:`${e.fileId}`,path:z(e.path),...e.range?{range:e.range}:{}}}),ee=p.map(e=>{let t=q(e);return t==null?null:{path:z(e.path),content:t}}).filter(e=>e!=null&&e.content.trim()!==``);ie(!0);try{let n=(await We({id:e??null,name:s.trim(),description:l.trim(),instructions:d,apply_resolution:o,files:c,file_contents:ee},a)).hazelnuts?.[0];if(se(()=>n||null),D(!1),n&&n.files&&n.sediment_id){let e=new Map(p.map(e=>[z(e.path).toLowerCase(),e])),t=Object.entries(n.files).filter(([e])=>e.trim().toLowerCase()!==`skill.md`).sort(([e],[t])=>e.localeCompare(t)).map(([t,r])=>{let i=z(t).toLowerCase(),a=e.get(i);return{clientId:a?.clientId??it(),fileId:n.sediment_id,filename:tt(t),size:r?.length??0,contentType:a?.contentType??`application/octet-stream`,localFile:a?.localFile,path:t,status:`saved`,range:r}});m(t),b(e=>{if(!e)return null;if((e.draftFile.path??``).trim().toLowerCase()===`skill.md`)return e;let n=t.find(t=>t.clientId===e.draftFile.clientId);return n?{...e,draftFile:n}:null})}n?.id&&n.id!==e&&(i(`/skills/editor/${n.id}`,{replace:!0}),_.current=!0,v.current=!0),ne.logStructuredEvent(e?`ChatgptWebSkillUpdateSuccess`:`ChatgptWebSkillCreateRawSuccess`,{hazelnutId:n?.id??e??``}),e||ne.logEventWithStatsig(`chatgpt_web_skill_creation_method_selected`,`chatgpt_web_skill_creation_method_selected`,{method:`manual`,hazelnut_id:n?.id??``}),r.success(t.formatMessage($.saveSuccess))}catch(e){let n=o?null:Nt(e);if(n?.resolution){de(n);return}ue.addError(e),r.danger(jt({error:e,intl:t,fallbackMessage:$.saveFailed}))}finally{ie(!1)}},Wt=async()=>{de(null),await Ut({applyResolution:!0})},qt=()=>{de(null)},Y=Ge?(0,Z.jsx)(X.Suspense,{fallback:(0,Z.jsx)(`div`,{className:`border-token-border-light bg-token-bg-primary mb-6 w-full shrink-0 rounded-2xl border px-4 py-4 sm:px-5`}),children:(0,Z.jsx)(nn,{className:`mb-6!`,name:s,description:l,nameLabel:t.formatMessage($.nameLabel),descriptionLabel:t.formatMessage($.descriptionLabel),namePlaceholder:t.formatMessage($.namePlaceholder),descriptionPlaceholder:t.formatMessage($.descriptionPlaceholder),isLoading:lt,canEdit:V,nameError:J,descriptionError:Ht,onNameChange:Ke,onDescriptionChange:qe,maxDescriptionLength:an})}):null,Yt={"--skill-files-pane-width":`${j}px`};return(0,Z.jsxs)(`div`,{className:`flex h-screen min-h-0 flex-col`,children:[(0,Z.jsxs)(`div`,{className:`border-token-border-light bg-token-bg-secondary-surface flex flex-row items-center justify-between gap-2 border-b px-2 py-3`,children:[(0,Z.jsx)(`div`,{className:`flex items-center gap-3`,children:(0,Z.jsx)(n,{color:`ghost`,icon:ee,label:t.formatMessage($.backButton),onClick:()=>{Lt?Ce(!0):i(`/skills`)},children:(0,Z.jsx)(w,{...$.backButton})})}),(0,Z.jsx)(`h1`,{className:`sr-only`,children:(0,Z.jsx)(w,{...$.title})}),(0,Z.jsxs)(`div`,{className:`flex flex-wrap items-center gap-2`,children:[e&&Lt&&(0,Z.jsx)(`span`,{className:`text-token-text-tertiary text-xs italic`,children:(0,Z.jsx)(w,{...$.unsavedLabel})}),e&&(0,Z.jsx)(n,{onClick:()=>me(!0),disabled:g||!o,color:`secondary`,icon:Kt,children:(0,Z.jsx)(w,{...$.shareButton})}),(0,Z.jsx)(Ye,{onClick:Ut,disabled:Bt||g||!V,color:`primary`,loading:kt,children:g?(0,Z.jsx)(w,{...$.saveDraftLoading}):(0,Z.jsx)(w,{...e?$.saveDraft:$.createDraft})}),(0,Z.jsx)(Ee,{triggerButton:(0,Z.jsx)(Ye,{color:`secondary`,disabled:g,"aria-label":t.formatMessage($.moreMenuLabel),icon:Xe}),size:`small`,contentAlign:`end`,sideOffset:6,alignOffset:0,children:(0,Z.jsx)(ze.Item,{icon:Gt,onClick:async()=>{if(!e||!B)return;let n=B.base_sediment_id;try{let i=(await Oe(e,n)).download_url;if(i)window.open(i,`_blank`),r.success(t.formatMessage($.downloadSuccess));else throw Error(`Missing download URL`)}catch(e){ue.addError(e),r.danger(t.formatMessage($.downloadFailed))}},disabled:g||!ut||!e||!B,children:(0,Z.jsx)(w,{...$.downloadButton})})})]})]}),(0,Z.jsxs)(`div`,{ref:Ie,className:`flex min-h-0 flex-1 flex-col overflow-x-hidden overflow-y-auto lg:flex-row lg:overflow-hidden`,style:{userSelect:A||M?`none`:void 0},children:[(0,Z.jsx)(`div`,{className:C?`hidden`:`hidden h-full w-full lg:order-3 lg:block`,style:{flexBasis:S&&k?Q:O,minWidth:S&&k?Q:O,overflow:S&&k?`hidden`:void 0},children:!C&&(e?(0,Z.jsx)(Vt,{hazelnutId:e}):(0,Z.jsx)(Xt,{}))}),(0,Z.jsxs)(`div`,{role:`separator`,"aria-orientation":`vertical`,"aria-valuenow":Math.round(S&&k?Q:O),"aria-valuemin":S&&k?0:320,"aria-valuemax":9999,className:C?`hidden`:`relative mx-1 hidden w-2 shrink-0 items-center justify-center lg:flex ${A?`bg-token-border-strong/40`:``} ${S&&k?`cursor-pointer`:`cursor-col-resize`} lg:order-2`,onMouseDown:ft,onTouchStart:ft,children:[S?(0,Z.jsx)(`button`,{type:`button`,onClick:pt,onMouseDown:e=>e.stopPropagation(),onTouchStart:e=>e.stopPropagation(),"aria-label":k?t.formatMessage($.expandConversationPaneButtonLabel):t.formatMessage($.collapseConversationPaneButtonLabel),className:`border-token-border-light bg-token-bg-primary text-token-text-tertiary absolute start-1/2 top-1/2 z-20 flex h-7 w-7 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border p-0 shadow-sm`,children:k?(0,Z.jsx)(ee,{className:`size-4`}):(0,Z.jsx)(Qe,{className:`size-4`})}):null,(0,Z.jsx)(`div`,{className:`bg-token-border-strong h-12 w-px rounded-full`})]}),(0,Z.jsx)(`div`,{className:`flex min-h-screen min-w-0 flex-1 flex-col overflow-hidden lg:order-1 lg:min-h-0 lg:min-w-[420px]`,style:{flexBasis:C?`100%`:`calc(100% - ${S&&k?Q:O}px)`},children:(0,Z.jsxs)(`div`,{className:`bg-token-bg-primary relative flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden`,children:[(0,Z.jsxs)(`div`,{ref:Le,className:`relative grid min-h-0 min-w-0 flex-1 grid-rows-[auto_minmax(0,1fr)] lg:grid-cols-[var(--skill-files-pane-width)_minmax(360px,1fr)] lg:grid-rows-1`,style:Yt,children:[(0,Z.jsx)(`div`,{role:`separator`,tabIndex:0,"aria-label":t.formatMessage($.resizeFilesPaneLabel),"aria-orientation":`vertical`,"aria-valuenow":Math.round(j),"aria-valuemin":cn,"aria-valuemax":ln,className:`group absolute inset-y-0 z-10 hidden w-3 -translate-x-1/2 cursor-col-resize touch-none items-center justify-center lg:flex`,style:{left:j},onPointerDown:mt,onLostPointerCapture:()=>Fe(!1),onKeyDown:gt,onDoubleClick:()=>Pe(sn),children:(0,Z.jsx)(`span`,{className:`h-full w-px transition-colors ${M?`bg-token-border-heavy`:`group-hover:bg-token-border-heavy`}`})}),(0,Z.jsx)(`div`,{className:`order-2 flex min-h-0 min-w-0 flex-col gap-4 overflow-hidden lg:border-s`,children:(0,Z.jsx)(`div`,{className:`bg-token-bg-primary flex min-h-0 min-w-0 flex-1 [scrollbar-gutter:stable] flex-col overflow-x-hidden overflow-y-auto p-5`,children:(0,Z.jsxs)(`div`,{className:`flex min-w-0 flex-col`,children:[Y,y?Be?N?.kind===`text`?N?.kind===`text`&&(y.draftFile.status===`inmemory`||y.draftFile.status===`bytes`)?(0,Z.jsx)(Dt,{clientId:y.draftFile.clientId,fileName:y.draftFile.filename,filePath:y.draftFile.path,defaultContent:y.draftFile.status===`bytes`?new TextDecoder(`utf-8`).decode(y.draftFile.bytes):y.draftFile.content,placeholder:y.placeholder,language:N?.kind===`text`?N.language:null,readOnlyReason:y.readOnlyReason,hideLineNumbers:!0,useSystemFont:!0,onSave:y.onSave}):(0,Z.jsx)(Tt,{hazelnutId:e,file:y.draftFile,previewCache:h,readOnlyReason:y.readOnlyReason,onSave:y.onSave}):(0,Z.jsx)(wt,{hazelnutId:e,file:y.draftFile,previewCache:h}):(0,Z.jsx)(`div`,{className:`flex w-full items-center justify-center`,children:(0,Z.jsx)(Ot,{fileName:y.draftFile.filename})}):null]})})}),(0,Z.jsx)(X.Suspense,{fallback:(0,Z.jsx)(`div`,{className:`bg-token-bg-secondary-surface lg:border-token-border-light relative order-1 flex min-h-0 flex-col gap-4 overflow-y-auto px-5 py-3`,children:(0,Z.jsx)(`div`,{className:`space-y-4`,children:(0,Z.jsx)(`div`,{className:`mt-0 mb-4 flex items-center justify-between`,children:(0,Z.jsx)(`p`,{className:`text-token-text-secondary text-base font-medium`,children:(0,Z.jsx)(w,{...$.filesSectionTitle})})})})}),children:(0,Z.jsx)(tn,{className:`order-1`,title:(0,Z.jsx)(w,{...$.filesSectionTitle}),isLoading:lt,entries:[{id:`skill.md`,path:`SKILL.md`,label:t.formatMessage($.skillMdLabel),isSelected:(y?.draftFile.path??``).toLowerCase()===`skill.md`,deleteEnabled:!1,canEdit:V,isUploading:!1,onSelected:()=>L()},...It.map(e=>{let n=e.path||e.filename,i=y?.draftFile.clientId===e.clientId;return{id:e.clientId,path:n,label:tt(n),isSelected:i,deleteEnabled:!0,canEdit:V&&e.status!==`uploading`,isUploading:e.status===`uploading`,onSelected:()=>b({draftFile:e,onSave:t=>{Je(e.clientId,t),D(!0)},readOnlyReason:ht({isReadonly:!0})}),onDelete:()=>zt(e.clientId),onPathChange:n=>{if(n.toLowerCase()===`skill.md`){r.danger(t.formatMessage($.validationPathSkillMd));return}let i={...e,path:n,filename:tt(n)};m(t=>t.map(t=>t.clientId===e.clientId?i:t)),D(!0),e.clientId===y?.draftFile.clientId&&b(e=>e?{...e,draftFile:i}:null)},isPathEditing:he===e.clientId,onIsPathEditingChange:t=>{x(t?e.clientId:null)}}})],pinnedPaths:[`SKILL.md`],upload:V?{uploadInput:(0,Z.jsx)(`input`,{type:`file`,className:`hidden`,ref:fe,multiple:!0,onChange:Rt}),uploadButtonLabel:(0,Z.jsx)(w,{...$.uploadFilesOrFolderButton}),onUploadFiles:()=>{_t(!1),fe.current?.click()}}:void 0})})]}),S&&(0,Z.jsx)(`div`,{className:`absolute start-1/2 bottom-0 z-20 w-[min(100%,40rem)] -translate-x-1/2 px-3 pe-4 pb-3 xl:px-4 xl:pb-4`,children:(0,Z.jsx)(X.Suspense,{fallback:null,children:(0,Z.jsx)(rn,{hazelnutId:e,draft:{name:s,description:l,instructions:d,files:p},appliedConversationUpdate:be,onApplyConversationUpdate:et,onUndoConversationUpdate:at,onKeepConversationUpdate:ot},e??`new-skill-describe-edit`)})})]})})]}),ce?.resolution&&(0,Z.jsx)(te,{isOpen:!0,onClose:qt,showCloseButton:!0,testId:`modal-hazelnut-duplicate-conflict`,children:(0,Z.jsx)(At,{skillName:ce.skillName,resolution:ce.resolution,mode:e?`update`:`create`,onCancel:qt,onConfirm:()=>void Wt()})}),pe&&e&&(0,Z.jsx)(Ft,{hazelnutId:e,creatorId:B?.creator_id??``,isOpen:pe,onClose:()=>me(!1)}),Se&&(0,Z.jsx)(Ct,{onContinueEditing:()=>Ce(!1),onDiscardChanges:()=>i(-1)})]})}var X,Z,tn,nn,rn,an,on,Q,sn,cn,ln,un,dn,$,fn=e((()=>{oe(),mt(),ke(),d(),$e(),R(),a(),g(),j(),Ut(),qt(),et(),G(),bt(),Re(),kt(),Mt(),Pt(),Ke(),Ae(),pe(),r(),l(),c(),u(),Ce(),X=t(xe()),T(),be(),Yt(),$t(),Z=x(),Se(),tn=(0,X.lazy)(()=>E(()=>import(`./b7383446-j339rvz96mv0n543.js`).then(e=>({default:e.SkillFilesSection})),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]))),nn=(0,X.lazy)(()=>E(()=>import(`./09153034-ebs0t5pe23u9wr37.js`).then(e=>({default:e.SkillMetadataCard})),__vite__mapDeps([16,1,2,3,4,7,5,8,9,10]))),rn=(0,X.lazy)(()=>E(()=>import(`./c5708073-f703g9k0lnrxgqwe.js`).then(e=>({default:e.SkillEditorConversationUpdatePanel})),__vite__mapDeps([17,1,2,3,4,7,5,8,9,10,13,12,18,19,20,11,14,21,22,23,24,15]))),an=500,on=560,Q=0,sn=320,cn=220,ln=640,un=360,dn=16,$=S({title:{defaultMessage:`Skill editor`,id:`skillEditor.title`},nameLabel:{defaultMessage:`Name`,id:`skillEditor.nameLabel`},namePlaceholder:{defaultMessage:`your-skill-name`,id:`skillEditor.namePlaceholder`},descriptionLabel:{defaultMessage:`Description`,id:`skillEditor.descriptionLabel`},descriptionPlaceholder:{defaultMessage:`Describe what the skill does`,id:`skillEditor.descriptionPlaceholder`},skillMdLabel:{defaultMessage:`SKILL.md`,id:`skillEditor.skillMdLabel`},filesSectionTitle:{defaultMessage:`Files`,id:`skillEditor.filesSectionTitle`},resizeFilesPaneLabel:{defaultMessage:`Resize files panel`,id:`skillEditor.resizeFilesPaneLabel`},uploadFilesOrFolderButton:{defaultMessage:`Upload`,id:`skillEditor.uploadFilesOrFolderButton`},saveDraft:{defaultMessage:`Save`,id:`skillEditor.saveDraft`},createDraft:{defaultMessage:`Create`,id:`skillEditor.createDraft`},saveDraftLoading:{defaultMessage:`Saving…`,id:`skillEditor.saveDraftLoading`},saveSuccess:{defaultMessage:`Skill saved`,id:`skillEditor.saveSuccess`},saveFailed:{defaultMessage:`Unable to create the skill. Please try again.`,id:`skillEditor.saveFailed`},validationMissingName:{defaultMessage:`Name is required.`,id:`skillEditor.validationMissingName`},validationMissingInstructions:{defaultMessage:`Instructions are required.`,id:`skillEditor.validationMissingInstructions`},validationMissingDescription:{defaultMessage:`Description is required.`,id:`skillEditor.validationMissingDescription`},collapseConversationPaneButtonLabel:{defaultMessage:`Collapse conversation pane`,id:`skillEditor.collapseConversationPaneButtonLabel`},expandConversationPaneButtonLabel:{defaultMessage:`Expand conversation pane`,id:`skillEditor.expandConversationPaneButtonLabel`},validationFileUploading:{defaultMessage:`Wait for uploads to finish before creating the skill.`,id:`skillEditor.validationFileUploading`},validationPathSkillMd:{defaultMessage:`Attachments cannot overwrite SKILL.md.`,id:`skillEditor.validationPathSkillMd`},backButton:{defaultMessage:`Back`,id:`skillEditor.backButton`},shareButton:{defaultMessage:`Share`,id:`skillEditor.shareButton`},unsavedLabel:{defaultMessage:`Unsaved`,id:`skillEditor.unsavedLabel`},moreMenuLabel:{defaultMessage:`More`,id:`skillEditor.moreMenuLabel`},downloadButton:{defaultMessage:`Download`,id:`skillEditor.downloadButton`},downloadSuccess:{defaultMessage:`Download started`,id:`skillEditor.downloadSuccess`},downloadFailed:{defaultMessage:`Unable to download the skill. Please try again.`,id:`skillEditor.downloadFailed`}})})),pn,mn,hn,gn,_n=e((()=>{be(),pn=we(),me(),lt(),fn(),Re(),v(),Lt(),P(),mn=x(),hn=()=>(M(),null),gn=_e(function(){"use forget";let e=(0,pn.c)(5),t;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=f(),e[0]=t):t=e[0];let n=t,{hasPermission:r,isLoading:i}=je(de.SkillsAccess),a;e[1]===r?a=e[2]:(a=!!n&&A()&&r,e[1]=r,e[2]=a);let o=a;It(i?!0:o);let s=C();if(i||!o)return null;let c;return e[3]===s.hazelnutId?c=e[4]:(c=(0,mn.jsx)(ot,{children:(0,mn.jsx)(en,{hazelnutId:s.hazelnutId})}),e[3]=s.hazelnutId,e[4]=c),c})}));e((()=>{_n()}))();export{hn as clientLoader,gn as default};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/b7383446-j339rvz96mv0n543.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-mdvd4786a87166cc.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/30901919-s8bko9nrkqwv6i4f.js", "assets/5c267c4d-dqcuiazpzfiwbpf8.js", "assets/conversation-small-bcbq46iub1p0ca1t.js", "assets/c470f5ab-jwd0o7jx9i9say9k.js", "assets/0e5afe53-hxm3yzzjqriayom4.js", "assets/conversation-small-ep6mlz5m.css", "assets/c2675c8c-oz03twoan08d72ud.js", "assets/82782bc9-b4xbouzwkkyrfqq2.js", "assets/8b34dbc2-lmwubajnld74ksfm.js", "assets/global-modals-dxg9ukpk.css", "assets/328817d4-b4mfy1w2r2slvrkr.js", "assets/09153034-ebs0t5pe23u9wr37.js", "assets/c5708073-f703g9k0lnrxgqwe.js", "assets/01c56089-msbdi2djique9uqb.js", "assets/2ac7f54f-l8pnzp97tb7vdudt.js", "assets/5d5d57f0-l10xq2exre27k7n0.js", "assets/19ad7347-o7bptqi9btdhnu60.js", "assets/6fd89734-fg0klobnz43q67to.js", "assets/d4c3e8a1-ed7j3va6y1yw7jt7.js", "assets/f8579ff2-b1uxxxkuid0hjd8v.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    A8 as r,
+    At as i,
+    Aw as a,
+    Bw as o,
+    Bz as s,
+    Knt as c,
+    LU as l,
+    Lw as ee,
+    Nat as u,
+    Ow as te,
+    Rw as d,
+    U1 as f,
+    Vw as p,
+    Vz as m,
+    Wet as h,
+    Wnt as ne,
+    ZW as re,
+    c2 as g,
+    cn as ie,
+    d2 as ae,
+    eE as oe,
+    eY as se,
+    gtt as ce,
+    j5 as le,
+    jat as ue,
+    oK as de,
+    oW as fe,
+    pF as _,
+    q1 as v,
+    qW as pe,
+    sK as me,
+    sW as y,
+    sY as b,
+    vF as he,
+    zU as ge
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as x,
+    Ht as _e,
+    Ln as S,
+    Lt as C,
+    N as ve,
+    Nn as w,
+    Nt as ye,
+    Q as be,
+    Rn as T,
+    Vn as xe,
+    cn as E,
+    ln as Se,
+    s as Ce,
+    wn as we,
+    zn as Te
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    AUn as Ee,
+    B7 as D,
+    Chn as De,
+    Hs as O,
+    Jvt as Oe,
+    MUn as ke,
+    Qvt as Ae,
+    Shn as je,
+    V7 as k,
+    Vs as Me,
+    _hn as A,
+    agn as Ne,
+    ai as j,
+    b$ as Pe,
+    c as M,
+    cgn as Fe,
+    dgn as Ie,
+    fgn as Le,
+    hhn as Re,
+    ign as N,
+    jUn as ze,
+    lgn as Be,
+    lyt as Ve,
+    mhn as He,
+    nTn as Ue,
+    nyt as We,
+    ogn as Ge,
+    rTn as Ke,
+    rgn as qe,
+    s as P,
+    sgn as Je,
+    ti as Ye,
+    ugn as F,
+    x$ as I
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Dx as Xe,
+    Hy as L,
+    Ox as R,
+    Uy as Ze,
+    bC as Qe,
+    xC as $e
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    B_ as et,
+    I_ as tt,
+    L_ as nt,
+    R_ as rt,
+    V_ as z,
+    z_ as it
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    D_ as at,
+    Kh as ot,
+    Nt as B,
+    O_ as st,
+    Pt as ct,
+    Yh as lt,
+    _ as ut,
+    cn as V,
+    dg as dt,
+    fg as H,
+    ln as ft,
+    mg as pt,
+    ug as U,
+    v as W
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    n as mt,
+    t as ht
+} from "./073fd849-fdkg4spwe61sp7mn.js";
+import {
+    n as gt,
+    t as _t
+} from "./01c56089-msbdi2djique9uqb.js";
+import {
+    r as vt
+} from "./328817d4-b4mfy1w2r2slvrkr.js";
+import {
+    a as yt,
+    i as bt,
+    r as xt,
+    s as St
+} from "./6fd89734-fg0klobnz43q67to.js";
+import {
+    a as Ct,
+    i as wt,
+    n as Tt,
+    o as Et,
+    r as Dt,
+    s as G,
+    t as Ot
+} from "./4e0528a1-kdigzwymvzc0xhmu.js";
+import {
+    n as kt,
+    t as At
+} from "./62507501-me1i1v9xo5f72dtr.js";
+import {
+    n as jt,
+    r as Mt,
+    t as Nt
+} from "./11defd9b-jfe7w6nktgmho8u6.js";
+import {
+    n as Pt,
+    t as Ft
+} from "./46158937-bir41kbhy3otwzw1.js";
+import {
+    n as It,
+    t as Lt
+} from "./29946bd6-l0ptcghpcfbw4g03.js";
+
+function Rt({
+    conversation: e
+}) {
+    "use no forget";
+    let {
+        modelLabel: t,
+        dropdownSections: n
+    } = dt(e, !1);
+    return f()?.hasPaidFeatures() ? (0, K.jsx)(Ee, {
+        size: `small`,
+        alignOffset: -4,
+        triggerButton: (0, K.jsxs)(Me, {
+            children: [(0, K.jsx)(w, {
+                id: `IhcP1l`,
+                defaultMessage: `Model`
+            }), (0, K.jsx)(`span`, {
+                className: `text-token-text-secondary text-xs font-medium`,
+                children: t
+            }), (0, K.jsx)(s.ChevronDownSm, {
+                className: `icon-sm text-token-text-tertiary`
+            })]
+        }),
+        children: (0, K.jsx)(H, {
+            sections: n
+        })
+    }) : null
+}
+var K, zt = e((() => {
+    ke(), m(), O(), U(), v(), pt(), T(), K = x()
+}));
+
+function Bt() {
+    return {
+        conversation: _(),
+        initialConversationOrigin: Pe()
+    }
+}
+
+function Vt({
+    hazelnutId: e,
+    hasUnsavedChanges: t
+}) {
+    "use no forget";
+    let [{
+        conversation: n,
+        initialConversationOrigin: r
+    }, i] = (0, q.useState)(() => Bt()), [a, o] = (0, q.useState)(0);
+    return W(n.id, {
+        kind: h.PrimaryAssistant
+    }, {
+        disableConversationNavigation: !0
+    }), (0, q.useEffect)(() => {
+        b(n.id, e => {
+            e.mode = {
+                kind: h.PrimaryAssistant
+            }, e.disableConversationNavigation = !0, e.conversationOrigin ??= r
+        })
+    }, [n.id, r]), (0, J.jsxs)(at, {
+        conversation: n,
+        children: [(0, J.jsx)(_t, {
+            skillId: e
+        }), (0, J.jsx)(D, {
+            conversation: n,
+            children: (0, J.jsxs)(`div`, {
+                className: `flex h-full flex-col`,
+                children: [(0, J.jsx)(`div`, {
+                    className: `flex justify-center px-4 pt-3`,
+                    children: (0, J.jsxs)(`div`, {
+                        className: `group flex items-center gap-3 text-lg font-semibold`,
+                        children: [(0, J.jsx)(`div`, {
+                            className: `icon`
+                        }), (0, J.jsxs)(`button`, {
+                            onClick: () => {
+                                o(e => e - 360), i(Bt())
+                            },
+                            className: `text-token-text-primary flex items-center gap-2`,
+                            children: [(0, J.jsx)(w, {
+                                id: `2u/6Ja`,
+                                defaultMessage: `Preview`
+                            }), (0, J.jsx)(ie.div, {
+                                className: `text-token-text-primary`,
+                                animate: {
+                                    rotate: a
+                                },
+                                transition: {
+                                    duration: .3
+                                },
+                                children: (0, J.jsx)(L, {
+                                    className: `icon invisible group-hover:visible`
+                                })
+                            })]
+                        }), (0, J.jsx)(Rt, {
+                            conversation: n
+                        })]
+                    })
+                }), t && (0, J.jsx)(`div`, {
+                    className: `px-4 pt-2`,
+                    children: (0, J.jsxs)(`div`, {
+                        className: `flex items-center gap-2 rounded-md border border-yellow-200 bg-yellow-50 px-3 py-2 text-xs text-yellow-700 dark:border-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-300`,
+                        children: [(0, J.jsx)(y, {
+                            className: `icon text-yellow-600 dark:text-yellow-300`
+                        }), (0, J.jsx)(`span`, {
+                            children: (0, J.jsx)(w, {
+                                id: `JGC47w`,
+                                defaultMessage: `Save your skill before you can test with the latest change`
+                            })
+                        })]
+                    })
+                }), (0, J.jsx)(`div`, {
+                    className: `flex grow flex-col overflow-y-auto px-2 pb-2 contain-paint`,
+                    children: (0, J.jsx)(B, {
+                        conversation: n,
+                        renderEmptyState: (0, J.jsx)(V, {
+                            conversation: n,
+                            currentModelId: null,
+                            overrideMessage: Ht.tryYourSkillHeadline
+                        })
+                    })
+                })]
+            })
+        })]
+    })
+}
+var q, J, Ht, Ut = e((() => {
+        ce(), ct(), k(), st(), he(), Ze(), fe(), gt(), zt(), I(), ut(), se(), ft(), i(), q = t(xe()), T(), J = x(), Ht = S({
+            tryYourSkillHeadline: {
+                id: `SkillEditorConversationPane.tryYourSkillHeadline`,
+                defaultMessage: `Try your skill`
+            }
+        })
+    })),
+    Wt, Gt, Kt, qt = e((() => {
+        Ie(), F(), Fe(), Ge(), N(), Wt = Le({
+            id: `skill-editor`,
+            icons: {
+                download: {
+                    normal: Je,
+                    small: Be
+                },
+                share: {
+                    normal: qe,
+                    small: Ne
+                }
+            }
+        }), Gt = Wt.Download, Kt = Wt.Share
+    }));
+
+function Jt({
+    onBack: e,
+    onRetry: t,
+    onClose: n
+}) {
+    return (0, Y.jsx)(te, {
+        testId: `modal-no-access`,
+        isOpen: !0,
+        onClose: () => n(),
+        title: (0, Y.jsx)(w, {
+            id: `PZM705`,
+            defaultMessage: `Failed to load skill.`
+        }),
+        footerClassName: `justify-center`,
+        footerContent: (0, Y.jsxs)(`div`, {
+            className: `flex items-center justify-center gap-3`,
+            children: [(0, Y.jsx)(o, {
+                color: `secondary`,
+                onClick: t,
+                children: (0, Y.jsx)(w, {
+                    id: `FxBRY4`,
+                    defaultMessage: `Retry`
+                })
+            }), (0, Y.jsx)(o, {
+                color: `primary`,
+                onClick: e,
+                children: (0, Y.jsx)(w, {
+                    id: `pnbC84`,
+                    defaultMessage: `Back`
+                })
+            })]
+        }),
+        showCloseButton: !0,
+        children: (0, Y.jsx)(`p`, {
+            className: `text-token-text-secondary pb-2 text-sm`,
+            children: (0, Y.jsx)(w, {
+                id: `JkuEq5`,
+                defaultMessage: `Skill does not exist or you don't have access to the skill.`
+            })
+        })
+    })
+}
+var Y, Yt = e((() => {
+    p(), a(), T(), Y = x()
+}));
+
+function Xt() {
+    "use no forget";
+    return (0, Zt.jsx)(`div`, {
+        className: `flex h-full items-center justify-center rounded-2xl px-4 text-center`,
+        children: (0, Zt.jsx)(`div`, {
+            className: `max-w-xs`,
+            children: (0, Zt.jsx)(`p`, {
+                className: `text-token-text-tertiary text-xs`,
+                children: (0, Zt.jsx)(w, {
+                    ...Qt.emptyRightPaneTitle
+                })
+            })
+        })
+    })
+}
+var Zt, Qt, $t = e((() => {
+    T(), Zt = x(), Qt = S({
+        emptyRightPaneTitle: {
+            id: `zLdosY`,
+            defaultMessage: `Create your skill to test it here.`
+        }
+    })
+}));
+
+function en({
+    hazelnutId: e
+}) {
+    "use no forget";
+    let t = Te(),
+        r = ge(),
+        i = ye(),
+        a = ve(),
+        {
+            canShare: o
+        } = De(),
+        [s, c] = (0, X.useState)(``),
+        [l, u] = (0, X.useState)(``),
+        [d, f] = (0, X.useState)(``),
+        [p, m] = (0, X.useState)([]),
+        [h] = (0, X.useState)(() => ({
+            media: new Map,
+            text: new Map
+        })),
+        [g, ie] = (0, X.useState)(!1),
+        [oe, se] = (0, X.useState)(null),
+        [ce, de] = (0, X.useState)(null),
+        fe = (0, X.useRef)(null),
+        _ = (0, X.useRef)(!1),
+        v = (0, X.useRef)(!1),
+        [pe, me] = (0, X.useState)(!1),
+        [y, b] = (0, X.useState)(null),
+        [he, x] = (0, X.useState)(null),
+        _e = (0, X.useRef)(new Set),
+        S = He(),
+        C = le(() => re()),
+        [be, T] = (0, X.useState)(null),
+        [xe, E] = (0, X.useState)(null),
+        [Se, Ce] = (0, X.useState)(!1),
+        [we, D] = (0, X.useState)(!1),
+        [O, ke] = (0, X.useState)(on),
+        [Ae, je] = (0, X.useState)(on),
+        [k, Me] = (0, X.useState)(S),
+        [A, Ne] = (0, X.useState)(!1),
+        [j, Pe] = (0, X.useState)(sn),
+        [M, Fe] = (0, X.useState)(!1),
+        Ie = (0, X.useRef)(null),
+        Le = (0, X.useRef)(null);
+    (0, X.useEffect)(() => () => {
+        for (let e of h.media.values()) URL.revokeObjectURL(e)
+    }, [h]);
+    let Re = (0, X.useCallback)(e => e.toLowerCase().replace(/[^a-z0-9-]/g, ``), []),
+        N = (0, X.useMemo)(() => y ? vt(y.draftFile) : null, [y]),
+        Be = N != null,
+        Ge = (y?.draftFile.path ?? ``).trim().toLowerCase() === `skill.md`,
+        Ke = (0, X.useCallback)(e => {
+            c(Re(e.target.value)), D(!0)
+        }, [Re]),
+        qe = (0, X.useCallback)(e => {
+            u(e.target.value), D(!0)
+        }, []),
+        P = (0, X.useCallback)((t, n) => {
+            let r = t.trim().toLowerCase(),
+                i = n ? `skill.md` : r;
+            _e.current.has(i) || (_e.current.add(i), ne.logEventWithStatsig(`chatgpt_web_skill_editor_file_edited`, `chatgpt_web_skill_editor_file_edited`, {
+                file_type: n ? `skill_md` : `other`,
+                hazelnut_id: e ?? ``
+            }))
+        }, [e]),
+        Je = (0, X.useCallback)((e, t) => {
+            m(n => {
+                let r = n.find(t => t.clientId === e);
+                if (r) {
+                    let e = z(r.path || r.filename);
+                    P(e, !1)
+                }
+                return n.map(n => n.clientId === e ? {
+                    clientId: n.clientId,
+                    filename: n.filename,
+                    size: new TextEncoder().encode(t).length,
+                    contentType: n.contentType,
+                    path: n.path,
+                    status: `inmemory`,
+                    content: t
+                } : n)
+            }), D(!0)
+        }, [P]),
+        F = (0, X.useCallback)(e => {
+            let n = e ?? d;
+            return {
+                draftFile: {
+                    clientId: `instructions-file`,
+                    filename: `SKILL.md`,
+                    path: `SKILL.md`,
+                    size: n.length,
+                    contentType: `text/markdown`,
+                    content: n,
+                    status: `inmemory`
+                },
+                onSave: e => {
+                    f(e), D(!0), P(`SKILL.md`, !0)
+                },
+                placeholder: t.formatMessage(Et.instructionsPlaceholder),
+                hideHeader: !0,
+                hideLineNumbers: !0,
+                useSystemFont: !0
+            }
+        }, [d, t, P]),
+        I = (0, X.useCallback)((e, t, n) => ({
+            draftFile: e,
+            onSave: t => {
+                Je(e.clientId, t)
+            },
+            placeholder: n?.placeholder,
+            hideHeader: n?.hideHeader,
+            readOnlyReason: t ?? n?.readOnlyReason ?? ht({
+                isReadonly: !0
+            }),
+            hideLineNumbers: n?.hideLineNumbers,
+            useSystemFont: n?.useSystemFont
+        }), [Je]),
+        L = (0, X.useCallback)(t => {
+            ne.logStructuredEvent(`ChatgptWebSkillCreateRawSuccess`, {
+                hazelnutId: e ?? ``
+            }), b(F(t))
+        }, [F, e]),
+        R = (0, X.useCallback)(e => e.status === `bytes` ? {
+            ...e,
+            bytes: new Uint8Array(e.bytes)
+        } : {
+            ...e
+        }, []),
+        Ze = (0, X.useCallback)(() => ({
+            name: s,
+            description: l,
+            instructions: d,
+            files: p.map(e => R(e)),
+            hasUnsavedChanges: we
+        }), [l, p, we, d, s, R]),
+        $e = (0, X.useCallback)(e => {
+            let t = e.files.map(e => R(e));
+            E(Ze()), c(e.name), u(e.description), f(e.instructions), m(t), D(!0), T({
+                skillName: e.name,
+                summary: e.assistantSummary
+            }), b(n => {
+                let r = n?.draftFile,
+                    i = r ? z(r.path || r.filename).toLowerCase() : ``,
+                    a = t.find(e => z(e.path || e.filename).toLowerCase() === i);
+                return !r || !i || i === `skill.md` && r.status === `inmemory` || !a ? F(e.instructions) : I(a, n.readOnlyReason, n)
+            })
+        }, [I, F, R, Ze]),
+        et = (0, X.useCallback)(e => {
+            D(!0), $e(e)
+        }, [$e]),
+        at = (0, X.useCallback)(() => {
+            let e = xe;
+            if (!e) {
+                T(null);
+                return
+            }
+            let t = e.files.map(e => R(e));
+            c(e.name), u(e.description), f(e.instructions), m(t), D(e.hasUnsavedChanges), T(null), b(n => {
+                let r = n?.draftFile,
+                    i = r ? z(r.path || r.filename).toLowerCase() : ``,
+                    a = t.find(e => z(e.path || e.filename).toLowerCase() === i);
+                return !r || !i || i === `skill.md` && r.status === `inmemory` || !a ? F(e.instructions) : I(a, n.readOnlyReason, n)
+            })
+        }, [I, F, R, xe]),
+        ot = (0, X.useCallback)(() => {
+            E(null), T(null)
+        }, []),
+        {
+            skillData: B,
+            isLoadingSkill: st,
+            didFailSkillLoad: ct
+        } = Ve({
+            hazelnutId: e ?? ``
+        }),
+        lt = st,
+        ut = B?.permissions?.can_export ?? B?.permissions?.can_read ?? !0,
+        V = B?.permissions?.can_write ?? !0;
+    (0, X.useEffect)(() => {
+        ct && ae(Jt, {
+            onBack: () => i(-1),
+            onRetry: () => window.location.reload()
+        })
+    }, [ct, i]), (0, X.useEffect)(() => {
+        e && oe?.id === e || (_.current = !1, v.current = !1, f(``), T(null), E(null), D(!1))
+    }, [e, oe]), (0, X.useEffect)(() => {
+        _e.current.clear()
+    }, [e]), (0, X.useEffect)(() => {
+        if (B && !_.current) {
+            c(B.name ?? ``);
+            let e = B.description ?? ``;
+            if (u(e), B.files && B.sediment_id) {
+                let e = a.getQueryData(Ue(B.id)),
+                    t = Object.entries(B.files).filter(([e]) => e.trim().toLowerCase() !== `skill.md`).sort(([e], [t]) => e.localeCompare(t)).map(([t, n]) => {
+                        let r = e?.[t];
+                        return {
+                            clientId: it(),
+                            fileId: B.sediment_id,
+                            filename: tt(t),
+                            size: n?.length ?? 0,
+                            contentType: r?.type ?? `application/octet-stream`,
+                            localFile: r,
+                            path: t,
+                            status: `saved`,
+                            range: n
+                        }
+                    });
+                t.length > 0 && m(e => [...t, ...e])
+            }
+            _.current = !0, D(!1)
+        }
+    }, [a, B]);
+    let dt = (0, X.useCallback)((e, t) => {
+            let n = Math.max(320, t - 420);
+            return Math.min(n, Math.max(320, e))
+        }, []),
+        H = (0, X.useCallback)(e => {
+            if (S && k) return;
+            let t = Ie.current;
+            if (!t) return;
+            let n = t.getBoundingClientRect(),
+                r = window.matchMedia(`(min-width: 1024px)`).matches ? n.right - e : e - n.left;
+            ke(dt(r, n.width))
+        }, [dt, S, k]),
+        ft = (0, X.useCallback)(e => {
+            S && k || (e.preventDefault(), Ne(!0), `touches` in e && e.touches[0] ? H(e.touches[0].clientX) : `clientX` in e && H(e.clientX))
+        }, [H, S, k]),
+        pt = (0, X.useCallback)(() => {
+            S && (k ? ke(Ae) : (je(O), ke(Q)), Me(e => !e))
+        }, [S, k, O, Ae]);
+    (0, X.useEffect)(() => {
+        if (!A) return;
+        let e = e => H(e.clientX),
+            t = e => {
+                e.touches[0] && H(e.touches[0].clientX)
+            },
+            n = () => Ne(!1);
+        return window.addEventListener(`mousemove`, e), window.addEventListener(`mouseup`, n), window.addEventListener(`touchmove`, t), window.addEventListener(`touchend`, n), () => {
+            window.removeEventListener(`mousemove`, e), window.removeEventListener(`mouseup`, n), window.removeEventListener(`touchmove`, t), window.removeEventListener(`touchend`, n)
+        }
+    }, [H, A]);
+    let U = (0, X.useCallback)((e, t) => {
+            let n = Math.min(ln, Math.max(cn, t - un));
+            return Math.min(n, Math.max(cn, e))
+        }, []),
+        W = (0, X.useCallback)(e => {
+            let t = Le.current;
+            if (!t) return;
+            let n = t.getBoundingClientRect();
+            Pe(U(e - n.left, n.width))
+        }, [U]),
+        mt = (0, X.useCallback)(e => {
+            e.pointerType !== `touch` && e.button !== 0 || (e.preventDefault(), e.currentTarget.setPointerCapture(e.pointerId), Fe(!0), W(e.clientX))
+        }, [W]),
+        gt = (0, X.useCallback)(e => {
+            let t = Le.current;
+            if (!t) return;
+            let n = j;
+            if (e.key === `ArrowLeft`) n -= dn;
+            else if (e.key === `ArrowRight`) n += dn;
+            else if (e.key === `Home`) n = cn;
+            else if (e.key === `End`) n = ln;
+            else return;
+            e.preventDefault(), Pe(U(n, t.getBoundingClientRect().width))
+        }, [U, j]);
+    (0, X.useEffect)(() => {
+        if (!M) return;
+        let e = e => W(e.clientX),
+            t = () => Fe(!1);
+        return window.addEventListener(`pointermove`, e), window.addEventListener(`pointerup`, t), window.addEventListener(`pointercancel`, t), () => {
+            window.removeEventListener(`pointermove`, e), window.removeEventListener(`pointerup`, t), window.removeEventListener(`pointercancel`, t)
+        }
+    }, [W, M]);
+    let _t = (0, X.useCallback)(e => {
+            let t = fe.current;
+            t && (e ? (t.setAttribute(`webkitdirectory`, ``), t.setAttribute(`directory`, ``)) : (t.removeAttribute(`webkitdirectory`), t.removeAttribute(`directory`)))
+        }, []),
+        bt = (0, X.useMemo)(() => {
+            let e = p.reduce((e, t) => {
+                    let n = z(t.path).toLowerCase();
+                    return n && e.set(n, (e.get(n) ?? 0) + 1), e
+                }, new Map),
+                n = {};
+            for (let r of p) {
+                let i = z(r.path).toLowerCase(),
+                    a = i ? e.get(i) ?? 0 : 0;
+                n[r.clientId] = St(t, r.path, a)
+            }
+            return n
+        }, [p, t]),
+        G = p.some(e => e.status === `uploading`),
+        kt = g || G,
+        Mt = p.some(e => e.status === `error`),
+        Pt = Object.values(bt).some(Boolean),
+        It = (0, X.useMemo)(() => [...p].sort((e, t) => (e.path || e.filename).localeCompare(t.path || t.filename)), [p]),
+        Lt = we,
+        Rt = async n => {
+            let i = n.target.files;
+            if (!i || i.length === 0) return;
+            let a = Array.from(i);
+            ne.logEventWithStatsig(`chatgpt_web_skill_editor_files_uploaded`, `chatgpt_web_skill_editor_files_uploaded`, {
+                file_count: a.length,
+                hazelnut_id: e ?? ``
+            }), await yt(a, m, t, r, p), D(!0), n.target.value = ``, _t(!1)
+        }, K = (0, X.useCallback)(async (e, t) => {
+            try {
+                let n = a.getQueryData(Ue(e.id))?.[`SKILL.md`],
+                    r = n ? nt(await n.text()) : await xt(e, t);
+                if (t?.aborted) return;
+                r && f(e => e || r), L(r)
+            } catch (e) {
+                if (t?.aborted) return;
+                ue.addError(e)
+            }
+        }, [L, a, f]);
+    (0, X.useEffect)(() => {
+        if (!e) {
+            L();
+            return
+        }
+        if (!B || v.current || !rt(B.files)) return;
+        let t = new AbortController;
+        return v.current = !0, K(B, t.signal), () => {
+            t.abort()
+        }
+    }, [e, B, K, L]);
+    let zt = e => {
+            m(t => t.filter(t => t.clientId !== e)), D(!0), y?.draftFile.clientId === e && b(null)
+        },
+        Bt = (0, X.useMemo)(() => !!(!s.trim() || !l.trim() || G || Mt || Pt), [Pt, Mt, G, s, l]),
+        q = (0, X.useCallback)(e => e.status === `inmemory` ? e.content : e.status === `bytes` && vt(e)?.kind === `text` ? new TextDecoder(`utf-8`).decode(e.bytes) : null, []),
+        J = (0, X.useMemo)(() => !s.trim() && e ? t.formatMessage($.validationMissingName) : void 0, [e, s, t]),
+        Ht = (0, X.useMemo)(() => !l.trim() && e ? t.formatMessage($.validationMissingDescription) : void 0, [l, e, t]),
+        Ut = async n => {
+            let o = n?.applyResolution ?? !1;
+            if (!s.trim()) {
+                r.danger(t.formatMessage($.validationMissingName));
+                return
+            }
+            if (!d.trim()) {
+                r.danger(t.formatMessage($.validationMissingInstructions));
+                return
+            }
+            if (G) {
+                r.danger(t.formatMessage($.validationFileUploading));
+                return
+            }
+            if (Mt || Pt) {
+                r.danger(t.formatMessage($.saveFailed));
+                return
+            }
+            let c = p.filter(e => e.status === `uploaded` || e.status === `saved`).map(e => {
+                    if (!(`fileId` in e)) throw Error(`Uploaded file missing fileId`);
+                    return {
+                        file_id: `${e.fileId}`,
+                        path: z(e.path),
+                        ...e.range ? {
+                            range: e.range
+                        } : {}
+                    }
+                }),
+                ee = p.map(e => {
+                    let t = q(e);
+                    return t == null ? null : {
+                        path: z(e.path),
+                        content: t
+                    }
+                }).filter(e => e != null && e.content.trim() !== ``);
+            ie(!0);
+            try {
+                let n = (await We({
+                    id: e ?? null,
+                    name: s.trim(),
+                    description: l.trim(),
+                    instructions: d,
+                    apply_resolution: o,
+                    files: c,
+                    file_contents: ee
+                }, a)).hazelnuts?.[0];
+                if (se(() => n || null), D(!1), n && n.files && n.sediment_id) {
+                    let e = new Map(p.map(e => [z(e.path).toLowerCase(), e])),
+                        t = Object.entries(n.files).filter(([e]) => e.trim().toLowerCase() !== `skill.md`).sort(([e], [t]) => e.localeCompare(t)).map(([t, r]) => {
+                            let i = z(t).toLowerCase(),
+                                a = e.get(i);
+                            return {
+                                clientId: a?.clientId ?? it(),
+                                fileId: n.sediment_id,
+                                filename: tt(t),
+                                size: r?.length ?? 0,
+                                contentType: a?.contentType ?? `application/octet-stream`,
+                                localFile: a?.localFile,
+                                path: t,
+                                status: `saved`,
+                                range: r
+                            }
+                        });
+                    m(t), b(e => {
+                        if (!e) return null;
+                        if ((e.draftFile.path ?? ``).trim().toLowerCase() === `skill.md`) return e;
+                        let n = t.find(t => t.clientId === e.draftFile.clientId);
+                        return n ? {
+                            ...e,
+                            draftFile: n
+                        } : null
+                    })
+                }
+                n?.id && n.id !== e && (i(`/skills/editor/${n.id}`, {
+                    replace: !0
+                }), _.current = !0, v.current = !0), ne.logStructuredEvent(e ? `ChatgptWebSkillUpdateSuccess` : `ChatgptWebSkillCreateRawSuccess`, {
+                    hazelnutId: n?.id ?? e ?? ``
+                }), e || ne.logEventWithStatsig(`chatgpt_web_skill_creation_method_selected`, `chatgpt_web_skill_creation_method_selected`, {
+                    method: `manual`,
+                    hazelnut_id: n?.id ?? ``
+                }), r.success(t.formatMessage($.saveSuccess))
+            } catch (e) {
+                let n = o ? null : Nt(e);
+                if (n?.resolution) {
+                    de(n);
+                    return
+                }
+                ue.addError(e), r.danger(jt({
+                    error: e,
+                    intl: t,
+                    fallbackMessage: $.saveFailed
+                }))
+            } finally {
+                ie(!1)
+            }
+        }, Wt = async () => {
+            de(null), await Ut({
+                applyResolution: !0
+            })
+        }, qt = () => {
+            de(null)
+        }, Y = Ge ? (0, Z.jsx)(X.Suspense, {
+            fallback: (0, Z.jsx)(`div`, {
+                className: `border-token-border-light bg-token-bg-primary mb-6 w-full shrink-0 rounded-2xl border px-4 py-4 sm:px-5`
+            }),
+            children: (0, Z.jsx)(nn, {
+                className: `mb-6!`,
+                name: s,
+                description: l,
+                nameLabel: t.formatMessage($.nameLabel),
+                descriptionLabel: t.formatMessage($.descriptionLabel),
+                namePlaceholder: t.formatMessage($.namePlaceholder),
+                descriptionPlaceholder: t.formatMessage($.descriptionPlaceholder),
+                isLoading: lt,
+                canEdit: V,
+                nameError: J,
+                descriptionError: Ht,
+                onNameChange: Ke,
+                onDescriptionChange: qe,
+                maxDescriptionLength: an
+            })
+        }) : null, Yt = {
+            "--skill-files-pane-width": `${j}px`
+        };
+    return (0, Z.jsxs)(`div`, {
+        className: `flex h-screen min-h-0 flex-col`,
+        children: [(0, Z.jsxs)(`div`, {
+            className: `border-token-border-light bg-token-bg-secondary-surface flex flex-row items-center justify-between gap-2 border-b px-2 py-3`,
+            children: [(0, Z.jsx)(`div`, {
+                className: `flex items-center gap-3`,
+                children: (0, Z.jsx)(n, {
+                    color: `ghost`,
+                    icon: ee,
+                    label: t.formatMessage($.backButton),
+                    onClick: () => {
+                        Lt ? Ce(!0) : i(`/skills`)
+                    },
+                    children: (0, Z.jsx)(w, {
+                        ...$.backButton
+                    })
+                })
+            }), (0, Z.jsx)(`h1`, {
+                className: `sr-only`,
+                children: (0, Z.jsx)(w, {
+                    ...$.title
+                })
+            }), (0, Z.jsxs)(`div`, {
+                className: `flex flex-wrap items-center gap-2`,
+                children: [e && Lt && (0, Z.jsx)(`span`, {
+                    className: `text-token-text-tertiary text-xs italic`,
+                    children: (0, Z.jsx)(w, {
+                        ...$.unsavedLabel
+                    })
+                }), e && (0, Z.jsx)(n, {
+                    onClick: () => me(!0),
+                    disabled: g || !o,
+                    color: `secondary`,
+                    icon: Kt,
+                    children: (0, Z.jsx)(w, {
+                        ...$.shareButton
+                    })
+                }), (0, Z.jsx)(Ye, {
+                    onClick: Ut,
+                    disabled: Bt || g || !V,
+                    color: `primary`,
+                    loading: kt,
+                    children: g ? (0, Z.jsx)(w, {
+                        ...$.saveDraftLoading
+                    }) : (0, Z.jsx)(w, {
+                        ...e ? $.saveDraft : $.createDraft
+                    })
+                }), (0, Z.jsx)(Ee, {
+                    triggerButton: (0, Z.jsx)(Ye, {
+                        color: `secondary`,
+                        disabled: g,
+                        "aria-label": t.formatMessage($.moreMenuLabel),
+                        icon: Xe
+                    }),
+                    size: `small`,
+                    contentAlign: `end`,
+                    sideOffset: 6,
+                    alignOffset: 0,
+                    children: (0, Z.jsx)(ze.Item, {
+                        icon: Gt,
+                        onClick: async () => {
+                            if (!e || !B) return;
+                            let n = B.base_sediment_id;
+                            try {
+                                let i = (await Oe(e, n)).download_url;
+                                if (i) window.open(i, `_blank`), r.success(t.formatMessage($.downloadSuccess));
+                                else throw Error(`Missing download URL`)
+                            } catch (e) {
+                                ue.addError(e), r.danger(t.formatMessage($.downloadFailed))
+                            }
+                        },
+                        disabled: g || !ut || !e || !B,
+                        children: (0, Z.jsx)(w, {
+                            ...$.downloadButton
+                        })
+                    })
+                })]
+            })]
+        }), (0, Z.jsxs)(`div`, {
+            ref: Ie,
+            className: `flex min-h-0 flex-1 flex-col overflow-x-hidden overflow-y-auto lg:flex-row lg:overflow-hidden`,
+            style: {
+                userSelect: A || M ? `none` : void 0
+            },
+            children: [(0, Z.jsx)(`div`, {
+                className: C ? `hidden` : `hidden h-full w-full lg:order-3 lg:block`,
+                style: {
+                    flexBasis: S && k ? Q : O,
+                    minWidth: S && k ? Q : O,
+                    overflow: S && k ? `hidden` : void 0
+                },
+                children: !C && (e ? (0, Z.jsx)(Vt, {
+                    hazelnutId: e
+                }) : (0, Z.jsx)(Xt, {}))
+            }), (0, Z.jsxs)(`div`, {
+                role: `separator`,
+                "aria-orientation": `vertical`,
+                "aria-valuenow": Math.round(S && k ? Q : O),
+                "aria-valuemin": S && k ? 0 : 320,
+                "aria-valuemax": 9999,
+                className: C ? `hidden` : `relative mx-1 hidden w-2 shrink-0 items-center justify-center lg:flex ${A?`bg-token-border-strong/40`:``} ${S&&k?`cursor-pointer`:`cursor-col-resize`} lg:order-2`,
+                onMouseDown: ft,
+                onTouchStart: ft,
+                children: [S ? (0, Z.jsx)(`button`, {
+                    type: `button`,
+                    onClick: pt,
+                    onMouseDown: e => e.stopPropagation(),
+                    onTouchStart: e => e.stopPropagation(),
+                    "aria-label": k ? t.formatMessage($.expandConversationPaneButtonLabel) : t.formatMessage($.collapseConversationPaneButtonLabel),
+                    className: `border-token-border-light bg-token-bg-primary text-token-text-tertiary absolute start-1/2 top-1/2 z-20 flex h-7 w-7 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border p-0 shadow-sm`,
+                    children: k ? (0, Z.jsx)(ee, {
+                        className: `size-4`
+                    }) : (0, Z.jsx)(Qe, {
+                        className: `size-4`
+                    })
+                }) : null, (0, Z.jsx)(`div`, {
+                    className: `bg-token-border-strong h-12 w-px rounded-full`
+                })]
+            }), (0, Z.jsx)(`div`, {
+                className: `flex min-h-screen min-w-0 flex-1 flex-col overflow-hidden lg:order-1 lg:min-h-0 lg:min-w-[420px]`,
+                style: {
+                    flexBasis: C ? `100%` : `calc(100% - ${S&&k?Q:O}px)`
+                },
+                children: (0, Z.jsxs)(`div`, {
+                    className: `bg-token-bg-primary relative flex min-h-0 min-w-0 flex-1 flex-col overflow-hidden`,
+                    children: [(0, Z.jsxs)(`div`, {
+                        ref: Le,
+                        className: `relative grid min-h-0 min-w-0 flex-1 grid-rows-[auto_minmax(0,1fr)] lg:grid-cols-[var(--skill-files-pane-width)_minmax(360px,1fr)] lg:grid-rows-1`,
+                        style: Yt,
+                        children: [(0, Z.jsx)(`div`, {
+                            role: `separator`,
+                            tabIndex: 0,
+                            "aria-label": t.formatMessage($.resizeFilesPaneLabel),
+                            "aria-orientation": `vertical`,
+                            "aria-valuenow": Math.round(j),
+                            "aria-valuemin": cn,
+                            "aria-valuemax": ln,
+                            className: `group absolute inset-y-0 z-10 hidden w-3 -translate-x-1/2 cursor-col-resize touch-none items-center justify-center lg:flex`,
+                            style: {
+                                left: j
+                            },
+                            onPointerDown: mt,
+                            onLostPointerCapture: () => Fe(!1),
+                            onKeyDown: gt,
+                            onDoubleClick: () => Pe(sn),
+                            children: (0, Z.jsx)(`span`, {
+                                className: `h-full w-px transition-colors ${M?`bg-token-border-heavy`:`group-hover:bg-token-border-heavy`}`
+                            })
+                        }), (0, Z.jsx)(`div`, {
+                            className: `order-2 flex min-h-0 min-w-0 flex-col gap-4 overflow-hidden lg:border-s`,
+                            children: (0, Z.jsx)(`div`, {
+                                className: `bg-token-bg-primary flex min-h-0 min-w-0 flex-1 [scrollbar-gutter:stable] flex-col overflow-x-hidden overflow-y-auto p-5`,
+                                children: (0, Z.jsxs)(`div`, {
+                                    className: `flex min-w-0 flex-col`,
+                                    children: [Y, y ? Be ? N?.kind === `text` ? N?.kind === `text` && (y.draftFile.status === `inmemory` || y.draftFile.status === `bytes`) ? (0, Z.jsx)(Dt, {
+                                        clientId: y.draftFile.clientId,
+                                        fileName: y.draftFile.filename,
+                                        filePath: y.draftFile.path,
+                                        defaultContent: y.draftFile.status === `bytes` ? new TextDecoder(`utf-8`).decode(y.draftFile.bytes) : y.draftFile.content,
+                                        placeholder: y.placeholder,
+                                        language: N?.kind === `text` ? N.language : null,
+                                        readOnlyReason: y.readOnlyReason,
+                                        hideLineNumbers: !0,
+                                        useSystemFont: !0,
+                                        onSave: y.onSave
+                                    }) : (0, Z.jsx)(Tt, {
+                                        hazelnutId: e,
+                                        file: y.draftFile,
+                                        previewCache: h,
+                                        readOnlyReason: y.readOnlyReason,
+                                        onSave: y.onSave
+                                    }) : (0, Z.jsx)(wt, {
+                                        hazelnutId: e,
+                                        file: y.draftFile,
+                                        previewCache: h
+                                    }) : (0, Z.jsx)(`div`, {
+                                        className: `flex w-full items-center justify-center`,
+                                        children: (0, Z.jsx)(Ot, {
+                                            fileName: y.draftFile.filename
+                                        })
+                                    }) : null]
+                                })
+                            })
+                        }), (0, Z.jsx)(X.Suspense, {
+                            fallback: (0, Z.jsx)(`div`, {
+                                className: `bg-token-bg-secondary-surface lg:border-token-border-light relative order-1 flex min-h-0 flex-col gap-4 overflow-y-auto px-5 py-3`,
+                                children: (0, Z.jsx)(`div`, {
+                                    className: `space-y-4`,
+                                    children: (0, Z.jsx)(`div`, {
+                                        className: `mt-0 mb-4 flex items-center justify-between`,
+                                        children: (0, Z.jsx)(`p`, {
+                                            className: `text-token-text-secondary text-base font-medium`,
+                                            children: (0, Z.jsx)(w, {
+                                                ...$.filesSectionTitle
+                                            })
+                                        })
+                                    })
+                                })
+                            }),
+                            children: (0, Z.jsx)(tn, {
+                                className: `order-1`,
+                                title: (0, Z.jsx)(w, {
+                                    ...$.filesSectionTitle
+                                }),
+                                isLoading: lt,
+                                entries: [{
+                                    id: `skill.md`,
+                                    path: `SKILL.md`,
+                                    label: t.formatMessage($.skillMdLabel),
+                                    isSelected: (y?.draftFile.path ?? ``).toLowerCase() === `skill.md`,
+                                    deleteEnabled: !1,
+                                    canEdit: V,
+                                    isUploading: !1,
+                                    onSelected: () => L()
+                                }, ...It.map(e => {
+                                    let n = e.path || e.filename,
+                                        i = y?.draftFile.clientId === e.clientId;
+                                    return {
+                                        id: e.clientId,
+                                        path: n,
+                                        label: tt(n),
+                                        isSelected: i,
+                                        deleteEnabled: !0,
+                                        canEdit: V && e.status !== `uploading`,
+                                        isUploading: e.status === `uploading`,
+                                        onSelected: () => b({
+                                            draftFile: e,
+                                            onSave: t => {
+                                                Je(e.clientId, t), D(!0)
+                                            },
+                                            readOnlyReason: ht({
+                                                isReadonly: !0
+                                            })
+                                        }),
+                                        onDelete: () => zt(e.clientId),
+                                        onPathChange: n => {
+                                            if (n.toLowerCase() === `skill.md`) {
+                                                r.danger(t.formatMessage($.validationPathSkillMd));
+                                                return
+                                            }
+                                            let i = {
+                                                ...e,
+                                                path: n,
+                                                filename: tt(n)
+                                            };
+                                            m(t => t.map(t => t.clientId === e.clientId ? i : t)), D(!0), e.clientId === y?.draftFile.clientId && b(e => e ? {
+                                                ...e,
+                                                draftFile: i
+                                            } : null)
+                                        },
+                                        isPathEditing: he === e.clientId,
+                                        onIsPathEditingChange: t => {
+                                            x(t ? e.clientId : null)
+                                        }
+                                    }
+                                })],
+                                pinnedPaths: [`SKILL.md`],
+                                upload: V ? {
+                                    uploadInput: (0, Z.jsx)(`input`, {
+                                        type: `file`,
+                                        className: `hidden`,
+                                        ref: fe,
+                                        multiple: !0,
+                                        onChange: Rt
+                                    }),
+                                    uploadButtonLabel: (0, Z.jsx)(w, {
+                                        ...$.uploadFilesOrFolderButton
+                                    }),
+                                    onUploadFiles: () => {
+                                        _t(!1), fe.current?.click()
+                                    }
+                                } : void 0
+                            })
+                        })]
+                    }), S && (0, Z.jsx)(`div`, {
+                        className: `absolute start-1/2 bottom-0 z-20 w-[min(100%,40rem)] -translate-x-1/2 px-3 pe-4 pb-3 xl:px-4 xl:pb-4`,
+                        children: (0, Z.jsx)(X.Suspense, {
+                            fallback: null,
+                            children: (0, Z.jsx)(rn, {
+                                hazelnutId: e,
+                                draft: {
+                                    name: s,
+                                    description: l,
+                                    instructions: d,
+                                    files: p
+                                },
+                                appliedConversationUpdate: be,
+                                onApplyConversationUpdate: et,
+                                onUndoConversationUpdate: at,
+                                onKeepConversationUpdate: ot
+                            }, e ?? `new-skill-describe-edit`)
+                        })
+                    })]
+                })
+            })]
+        }), ce?.resolution && (0, Z.jsx)(te, {
+            isOpen: !0,
+            onClose: qt,
+            showCloseButton: !0,
+            testId: `modal-hazelnut-duplicate-conflict`,
+            children: (0, Z.jsx)(At, {
+                skillName: ce.skillName,
+                resolution: ce.resolution,
+                mode: e ? `update` : `create`,
+                onCancel: qt,
+                onConfirm: () => void Wt()
+            })
+        }), pe && e && (0, Z.jsx)(Ft, {
+            hazelnutId: e,
+            creatorId: B?.creator_id ?? ``,
+            isOpen: pe,
+            onClose: () => me(!1)
+        }), Se && (0, Z.jsx)(Ct, {
+            onContinueEditing: () => Ce(!1),
+            onDiscardChanges: () => i(-1)
+        })]
+    })
+}
+var X, Z, tn, nn, rn, an, on, Q, sn, cn, ln, un, dn, $, fn = e((() => {
+        oe(), mt(), ke(), d(), $e(), R(), a(), g(), j(), Ut(), qt(), et(), G(), bt(), Re(), kt(), Mt(), Pt(), Ke(), Ae(), pe(), r(), l(), c(), u(), Ce(), X = t(xe()), T(), be(), Yt(), $t(), Z = x(), Se(), tn = (0, X.lazy)(() => E(() => import(`./b7383446-j339rvz96mv0n543.js`).then(e => ({
+            default: e.SkillFilesSection
+        })), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]))), nn = (0, X.lazy)(() => E(() => import(`./09153034-ebs0t5pe23u9wr37.js`).then(e => ({
+            default: e.SkillMetadataCard
+        })), __vite__mapDeps([16, 1, 2, 3, 4, 7, 5, 8, 9, 10]))), rn = (0, X.lazy)(() => E(() => import(`./c5708073-f703g9k0lnrxgqwe.js`).then(e => ({
+            default: e.SkillEditorConversationUpdatePanel
+        })), __vite__mapDeps([17, 1, 2, 3, 4, 7, 5, 8, 9, 10, 13, 12, 18, 19, 20, 11, 14, 21, 22, 23, 24, 15]))), an = 500, on = 560, Q = 0, sn = 320, cn = 220, ln = 640, un = 360, dn = 16, $ = S({
+            title: {
+                defaultMessage: `Skill editor`,
+                id: `skillEditor.title`
+            },
+            nameLabel: {
+                defaultMessage: `Name`,
+                id: `skillEditor.nameLabel`
+            },
+            namePlaceholder: {
+                defaultMessage: `your-skill-name`,
+                id: `skillEditor.namePlaceholder`
+            },
+            descriptionLabel: {
+                defaultMessage: `Description`,
+                id: `skillEditor.descriptionLabel`
+            },
+            descriptionPlaceholder: {
+                defaultMessage: `Describe what the skill does`,
+                id: `skillEditor.descriptionPlaceholder`
+            },
+            skillMdLabel: {
+                defaultMessage: `SKILL.md`,
+                id: `skillEditor.skillMdLabel`
+            },
+            filesSectionTitle: {
+                defaultMessage: `Files`,
+                id: `skillEditor.filesSectionTitle`
+            },
+            resizeFilesPaneLabel: {
+                defaultMessage: `Resize files panel`,
+                id: `skillEditor.resizeFilesPaneLabel`
+            },
+            uploadFilesOrFolderButton: {
+                defaultMessage: `Upload`,
+                id: `skillEditor.uploadFilesOrFolderButton`
+            },
+            saveDraft: {
+                defaultMessage: `Save`,
+                id: `skillEditor.saveDraft`
+            },
+            createDraft: {
+                defaultMessage: `Create`,
+                id: `skillEditor.createDraft`
+            },
+            saveDraftLoading: {
+                defaultMessage: `Saving…`,
+                id: `skillEditor.saveDraftLoading`
+            },
+            saveSuccess: {
+                defaultMessage: `Skill saved`,
+                id: `skillEditor.saveSuccess`
+            },
+            saveFailed: {
+                defaultMessage: `Unable to create the skill. Please try again.`,
+                id: `skillEditor.saveFailed`
+            },
+            validationMissingName: {
+                defaultMessage: `Name is required.`,
+                id: `skillEditor.validationMissingName`
+            },
+            validationMissingInstructions: {
+                defaultMessage: `Instructions are required.`,
+                id: `skillEditor.validationMissingInstructions`
+            },
+            validationMissingDescription: {
+                defaultMessage: `Description is required.`,
+                id: `skillEditor.validationMissingDescription`
+            },
+            collapseConversationPaneButtonLabel: {
+                defaultMessage: `Collapse conversation pane`,
+                id: `skillEditor.collapseConversationPaneButtonLabel`
+            },
+            expandConversationPaneButtonLabel: {
+                defaultMessage: `Expand conversation pane`,
+                id: `skillEditor.expandConversationPaneButtonLabel`
+            },
+            validationFileUploading: {
+                defaultMessage: `Wait for uploads to finish before creating the skill.`,
+                id: `skillEditor.validationFileUploading`
+            },
+            validationPathSkillMd: {
+                defaultMessage: `Attachments cannot overwrite SKILL.md.`,
+                id: `skillEditor.validationPathSkillMd`
+            },
+            backButton: {
+                defaultMessage: `Back`,
+                id: `skillEditor.backButton`
+            },
+            shareButton: {
+                defaultMessage: `Share`,
+                id: `skillEditor.shareButton`
+            },
+            unsavedLabel: {
+                defaultMessage: `Unsaved`,
+                id: `skillEditor.unsavedLabel`
+            },
+            moreMenuLabel: {
+                defaultMessage: `More`,
+                id: `skillEditor.moreMenuLabel`
+            },
+            downloadButton: {
+                defaultMessage: `Download`,
+                id: `skillEditor.downloadButton`
+            },
+            downloadSuccess: {
+                defaultMessage: `Download started`,
+                id: `skillEditor.downloadSuccess`
+            },
+            downloadFailed: {
+                defaultMessage: `Unable to download the skill. Please try again.`,
+                id: `skillEditor.downloadFailed`
+            }
+        })
+    })),
+    pn, mn, hn, gn, _n = e((() => {
+        be(), pn = we(), me(), lt(), fn(), Re(), v(), Lt(), P(), mn = x(), hn = () => (M(), null), gn = _e(function() {
+            "use forget";
+            let e = (0, pn.c)(5),
+                t;
+            e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = f(), e[0] = t) : t = e[0];
+            let n = t,
+                {
+                    hasPermission: r,
+                    isLoading: i
+                } = je(de.SkillsAccess),
+                a;
+            e[1] === r ? a = e[2] : (a = !!n && A() && r, e[1] = r, e[2] = a);
+            let o = a;
+            It(i ? !0 : o);
+            let s = C();
+            if (i || !o) return null;
+            let c;
+            return e[3] === s.hazelnutId ? c = e[4] : (c = (0, mn.jsx)(ot, {
+                children: (0, mn.jsx)(en, {
+                    hazelnutId: s.hazelnutId
+                })
+            }), e[3] = s.hazelnutId, e[4] = c), c
+        })
+    }));
+e((() => {
+    _n()
+}))();
+export {
+    hn as clientLoader, gn as
+    default
+};
 //# sourceMappingURL=skills.editor.(_hazelnutId)-etfpeuuk.js.map

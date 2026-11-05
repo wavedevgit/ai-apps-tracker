@@ -1,2 +1,562 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Aw as n,B1 as r,Bw as i,CR as a,Crt as o,Dat as s,Eat as c,Eit as l,Hit as u,Hst as d,I1 as f,I7 as p,Jit as m,LU as h,Lit as g,M7 as _,N4 as ee,Nat as v,Oct as y,Ow as te,P4 as b,Po as x,RI as ne,Ro as S,Rz as C,SN as re,TR as ie,Tit as ae,Vw as w,Yit as oe,a0 as se,cot as T,e0 as ce,e3 as E,gh as D,hrt as le,jat as O,kat as k,not as ue,o0 as A,q1 as j,qo as de,t0 as M,wh as fe,xN as pe,z1 as me,zU as N,zz as he}from"./4813494d-mdvd4786a87166cc.js";import{Bn as P,Ht as ge,Ln as _e,N as F,Nn as I,Nt as ve,O as ye,Q as be,Rn as xe,Vn as L,s as Se,wn as Ce,zn as R}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Kst as we,MUn as Te,Wst as z,jUn as B}from"./conversation-small-bcbq46iub1p0ca1t.js";import{CC as Ee,SC as De,TC as Oe,bx as ke,wC as Ae,xx as je}from"./30901919-s8bko9nrkqwv6i4f.js";import{Ec as Me,Tc as Ne,_s as Pe,vs as V,wc as Fe,xf as Ie}from"./c2675c8c-oz03twoan08d72ud.js";import{n as Le,t as Re}from"./da2e4f1d-n3i0nlguv6reckjx.js";import{n as ze,r as Be,t as Ve}from"./1e5e38ab-le54rxotazfel3pl.js";import{n as He,t as H}from"./e14a92db-m64435ks78e4zd2y.js";function Ue(e){"use forget";let t=(0,U.c)(10),{loadingLabel:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,G.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,G.jsx)(z,{className:`h-6 w-6 rounded-full`}),(0,G.jsx)(z,{className:`h-5 w-40`})]}),t[0]=r):r=t[0];let i;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,G.jsxs)(`div`,{className:`flex flex-col gap-2 ps-5`,children:[(0,G.jsx)(z,{className:`h-4 w-full`}),(0,G.jsx)(z,{className:`h-4 w-11/12`})]}),t[1]=i):i=t[1];let a,o;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,G.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,G.jsx)(z,{className:`h-4 w-full`}),(0,G.jsx)(z,{className:`h-4 w-5/6`}),(0,G.jsx)(z,{className:`mt-2 h-10 w-full rounded-lg`})]}),o=(0,G.jsx)(H,{}),t[2]=a,t[3]=o):(a=t[2],o=t[3]);let s,c,l;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,G.jsx)(z,{className:`h-5 w-64`}),c=(0,G.jsx)(z,{className:`h-4 w-full`}),l=(0,G.jsx)(z,{className:`h-4 w-11/12`}),t[4]=s,t[5]=c,t[6]=l):(s=t[4],c=t[5],l=t[6]);let u;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,G.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[s,c,l,(0,G.jsxs)(`div`,{className:`mt-4 flex items-center justify-between gap-4`,children:[(0,G.jsx)(z,{className:`h-4 w-28`}),(0,G.jsx)(z,{className:`h-10 w-52 rounded-full`})]})]}),t[7]=u):u=t[7];let d;return t[8]===n?d=t[9]:(d=(0,G.jsxs)(`div`,{className:`flex flex-col gap-4`,"aria-busy":`true`,"aria-label":n,children:[r,i,a,o,u]}),t[8]=n,t[9]=d),d}function We(){"use no forget";let e=F(),t=ie(),{data:n}=se(),r=q(n),a=de(e=>e.purchaseWorkspaceData),o=r!=null||n!=null,[s,c]=(0,W.useState)(!1),l=n?.accountItems,d=ne(),f=l?.filter(e=>!e.isDeactivated())??[],p=K(l),{data:m,isLoading:h}=Me(r?.id),g=Fe(m),v=Math.max(g,d),y=ze(r),b=y===`checkout`,S=y===`customer_portal`,C=r?.id??null,{data:w,isLoading:T}=ye({queryKey:[`deactivated-workspace-invoice-context`,C],queryFn:async()=>await _.safeGet(`/subscriptions/deactivated_workspace_invoice_context`,{parameters:{query:{account_id:C??``}}}),enabled:S&&C!=null,retry:!1}),E=R(),k=N(),A=r?r.mustGetSubscriptionBillingCurrency(`DeactivatedWorkspaceModal`):`USD`;(0,W.useEffect)(()=>{n&&!r&&(O.addError(Error(`Current account is undefined in DeactivatedWorkspaceModal`)),le.logEvent(`chatgpt_undefined_current_account`))},[n,r]),(0,W.useEffect)(()=>{if(!C||!a)return;let e=l?.find(e=>e.id===C)??null;if(!e)return;let t=a.existingAccount?.id!==C,n=a.minimumSeats<v,r=a.billingDetails.currency!==A;!t&&!n&&!r||x.setPurchaseWorkspaceData({...a,existingAccount:e,minimumSeats:Math.max(a.minimumSeats,v),billingDetails:{...a.billingDetails,currency:A}})},[C,a,v,A,l]);let j=()=>{!r||h||x.setPurchaseWorkspaceData({minimumSeats:v,billingDetails:{currency:A},existingAccount:r,reactivationCheckoutButtonClickSource:`deactivated_workspace_modal`})},M=async()=>{if(r){c(!0);try{location.href=await Ve(r.id)}catch{c(!1),k.danger(E.formatMessage(Y.unableToOpenStripeDashboard),{duration:2})}}};return r==null?null:(0,G.jsx)(te,{testId:`modal-deactivated-workspace`,type:`success`,onClose:re,isOpen:o,title:T?(0,G.jsx)(z,{className:`h-6 w-56`}):(0,G.jsx)(`span`,{className:`text-lg`,children:(0,G.jsx)(I,{...Y.workspaceDeactivated})}),children:T?(0,G.jsx)(Ue,{loadingLabel:E.formatMessage(Y.loadingInvoiceContext)}):(0,G.jsxs)(`div`,{className:`flex flex-col items-center justify-center gap-4`,children:[(0,G.jsx)(`div`,{className:`flex w-full items-center gap-2`,children:p.length>1?(0,G.jsx)(J,{workspaces:p,currentWorkspace:r,currentWorkspaceId:C}):(0,G.jsxs)(G.Fragment,{children:[(0,G.jsx)(D,{src:r.data.profilePictureUrl}),(0,G.jsx)(`div`,{children:r.data.name})]})}),(0,G.jsx)(`div`,{children:(0,G.jsxs)(`ul`,{className:`list-disc ps-5 text-sm`,children:[(0,G.jsx)(`li`,{className:`mb-1`,children:(0,G.jsx)(I,{...Y.chatHistoryUnavailable})}),(0,G.jsx)(`li`,{children:(0,G.jsx)(I,{...Y.otherWorkspacesAvailable})})]})}),b&&(0,G.jsxs)(`div`,{className:`flex w-full flex-col`,children:[(0,G.jsx)(`p`,{children:(0,G.jsx)(I,{...Y.purchaseNewSubscription})}),(0,G.jsx)(i,{className:`m-auto mt-2 w-full`,disabled:h,loading:s,onClick:j,children:(0,G.jsx)(I,{...Y.purchaseNewSubscriptionButton})})]}),S&&(0,G.jsxs)(`div`,{className:`flex w-full flex-col`,children:[(0,G.jsx)(`p`,{className:`text-sm leading-5`,children:w?.available&&w.invoice_kind===`true_up`?(0,G.jsx)(I,{...Y.resolveSeatIncreaseInvoice,values:{additionalPaidSeats:w.additional_paid_seats,b:e=>(0,G.jsx)(`strong`,{children:e})}}):w?.available&&w.invoice_kind===`renewal`?(0,G.jsx)(I,{...Y.resolveRenewalInvoice}):(0,G.jsx)(I,{...Y.resolveOutstandingInvoice})}),(0,G.jsx)(i,{className:`m-auto mt-2 w-full`,loading:s,onClick:M,children:(0,G.jsx)(I,{...Y.manageSubscriptionButton})})]}),(0,G.jsx)(H,{}),(0,G.jsx)(`div`,{className:`w-full justify-center`,children:f.length>0?(0,G.jsxs)(G.Fragment,{children:[(0,G.jsx)(`h3`,{className:`mb-2 text-base font-normal`,children:(0,G.jsx)(I,{...Y.selectWorkspace})}),(0,G.jsx)(Re,{data:f})]}):(0,G.jsxs)(`div`,{className:`flex flex-col gap-6 text-sm`,children:[(0,G.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[(0,G.jsx)(`h3`,{className:`text-base font-normal`,children:(0,G.jsx)(I,{...Y.createPersonalWorkspace})}),(0,G.jsx)(I,{...Y.deactivatedWorkspaceReason})]}),(0,G.jsxs)(`div`,{className:`flex justify-between`,children:[(0,G.jsxs)(`div`,{className:`flex w-full items-center gap-2`,children:[t&&t.picture&&(0,G.jsx)(`img`,{alt:`Profile`,src:t.picture,className:`flex h-6 w-6 items-center justify-center rounded-full`}),t&&(0,G.jsx)(`span`,{className:`truncate`,children:t.name})]}),(0,G.jsx)(i,{title:E.formatMessage(Y.createPersonalWorkspaceButton),loading:s,onClick:async()=>{c(!0);try{await u((await _.safePost(`/accounts/personal`,{})).id,{reason:`DeactivatedWorkspaceModal.createPersonal`}),ce(ae),ee()}catch(t){c(!1),O.addError(Error(`Failed to create personal workspace`,{cause:t})),e.invalidateQueries({queryKey:me().queryKey}),(!(t instanceof ue)||!oe(t))&&k.danger(E.formatMessage(V.switchAccountError))}},color:`primary`,className:`ms-4`})]})]})})]})})}var U,W,G,K,q,J,Y,X=e((()=>{U=Ce(),y(),fe(),He(),he(),Le(),Be(),Pe(),l(),Te(),w(),je(),Oe(),Ee(),n(),we(),Ie(),Ne(),j(),S(),a(),h(),g(),s(),E(),v(),T(),b(),p(),o(),m(),Se(),pe(),W=t(L()),xe(),G=P(),K=e=>e?.filter(e=>e.structure===d.WORKSPACE&&e.isDeactivated()&&e.isOwnerOfAccount())??[],q=e=>{let t=r(e);if(t)return t;let n=c.getCookie(k.Workspace),i=n!=null&&n!==`personal`?f(e,n):null;if(i?.isDeactivated())return i;let a=e?.accountItems,o=K(a);return o.length>0?o[0]:(a?.filter(e=>e.isDeactivated())??[])[0]??null},J=({workspaces:e,currentWorkspace:t,currentWorkspaceId:n})=>{"use no forget";let r=F(),i=R(),a=N(),[o,s]=(0,W.useState)(!1),[c,l]=(0,W.useState)(null),u=(0,W.useRef)(null),d=t=>{if(t===n||c)return;let o=e.find(e=>e.id===t);o&&(l(t),u.current=t,s(!0),window.setTimeout(()=>{(async()=>{try{let{updatedAccount:e,willRedirect:t}=await M(r,o.id,i,a);if(e||t)return}catch(e){O.addError(Error(`Failed to switch deactivated owner workspace`,{cause:e}))}u.current=null,l(null),a.danger(i.formatMessage(V.switchAccountError))})()},0))};return(0,G.jsxs)(B.Root,{open:o,onOpenChange:e=>{u.current&&!e||s(e)},children:[(0,G.jsxs)(B.Trigger,{className:`inline-flex h-auto items-center justify-between px-1 py-1 text-start text-base font-normal`,children:[(0,G.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,G.jsx)(D,{src:t.data.profilePictureUrl}),(0,G.jsx)(`div`,{children:t.data.name})]}),(0,G.jsx)(Ae,{className:`icon-sm`})]}),(0,G.jsx)(B.Portal,{children:(0,G.jsx)(B.Content,{align:`start`,sideOffset:4,size:`auto`,children:(0,G.jsx)(B.RadioGroup,{value:n??void 0,onValueChange:e=>{d(e)},children:e.map(e=>(0,G.jsx)(B.RadioItem,{value:e.id,trailing:e.id===c?(0,G.jsx)(C,{className:`icon-sm`}):n===e.id?(0,G.jsx)(ke,{className:`icon-sm`}):(0,G.jsx)(De,{className:`icon-sm`}),children:e.name??e.id},e.id))})})})]})},Y=_e({workspaceDeactivated:{id:`deactivatedWorkspaceModal.workspaceDeactivated`,defaultMessage:`Your workspace has been deactivated`},chatHistoryUnavailable:{id:`deactivatedWorkspaceModal.chatHistoryUnavailable`,defaultMessage:`Your chat history and settings will not be available.`},otherWorkspacesAvailable:{id:`deactivatedWorkspaceModal.otherWorkspacesAvailable`,defaultMessage:`You will still be able to use ChatGPT with the other workspaces associated with this email address.`},selectWorkspace:{id:`deactivatedWorkspaceModal.selectWorkspace`,defaultMessage:`Select a workspace to continue`},createPersonalWorkspace:{id:`deactivatedWorkspaceModal.createPersonalWorkspace`,defaultMessage:`Create a personal workspace to continue`},deactivatedWorkspaceReason:{id:`deactivatedWorkspaceModal.deactivatedWorkspaceReason`,defaultMessage:`Because your workspace has been deactivated, you need to create a personal workspace to continue using ChatGPT.`},createPersonalWorkspaceButton:{id:`deactivatedWorkspaceModal.createPersonalWorkspaceButton`,defaultMessage:`Create a personal workspace`},purchaseNewSubscription:{id:`deactivatedWorkspaceModal.purchaseNewSubscription`,defaultMessage:`You can reactivate your workspace by purchasing a new subscription.`},purchaseNewSubscriptionButton:{id:`deactivatedWorkspaceModal.purchaseNewSubscriptionButton`,defaultMessage:`Purchase subscription`},resolveOutstandingInvoice:{id:`deactivatedWorkspaceModal.resolveOutstandingInvoice`,defaultMessage:`You can reactivate your workspace by resolving an outstanding invoice on your subscription.`},resolveSeatIncreaseInvoice:{id:`deactivatedWorkspaceModal.resolveSeatIncreaseInvoice`,defaultMessage:`{additionalPaidSeats, plural, one {<b># seat</b> was} other {<b># seats</b> were}} recently added to your organization, and payment failed when we tried to charge you. Resolve the outstanding payment to reactivate your workspace.`},resolveRenewalInvoice:{id:`deactivatedWorkspaceModal.resolveRenewalInvoice`,defaultMessage:`Payment failed when we tried to renew your subscription. Resolve the outstanding payment to reactivate your workspace.`},loadingInvoiceContext:{id:`deactivatedWorkspaceModal.loadingInvoiceContext`,defaultMessage:`Loading payment details`},manageSubscriptionButton:{id:`deactivatedWorkspaceModal.manageSubscriptionButton`,defaultMessage:`Manage subscription`},unableToOpenStripeDashboard:{id:`deactivatedWorkspaceModal.unableToOpenStripeDashboard`,defaultMessage:`Unable to open the Stripe dashboard.`}})})),Z,Q,$,Ge=e((()=>{be(),X(),j(),Z=t(L()),Q=P(),$=ge(function(){let e=A(),t=ve();return(0,Z.useEffect)(()=>{e&&!e.isDeactivated()&&t(`/`)},[e,t]),e&&!e.isDeactivated()?(0,Q.jsx)(`div`,{}):(0,Q.jsx)(We,{})})}));e((()=>{Ge()}))();export{$ as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Aw as n,
+    B1 as r,
+    Bw as i,
+    CR as a,
+    Crt as o,
+    Dat as s,
+    Eat as c,
+    Eit as l,
+    Hit as u,
+    Hst as d,
+    I1 as f,
+    I7 as p,
+    Jit as m,
+    LU as h,
+    Lit as g,
+    M7 as _,
+    N4 as ee,
+    Nat as v,
+    Oct as y,
+    Ow as te,
+    P4 as b,
+    Po as x,
+    RI as ne,
+    Ro as S,
+    Rz as C,
+    SN as re,
+    TR as ie,
+    Tit as ae,
+    Vw as w,
+    Yit as oe,
+    a0 as se,
+    cot as T,
+    e0 as ce,
+    e3 as E,
+    gh as D,
+    hrt as le,
+    jat as O,
+    kat as k,
+    not as ue,
+    o0 as A,
+    q1 as j,
+    qo as de,
+    t0 as M,
+    wh as fe,
+    xN as pe,
+    z1 as me,
+    zU as N,
+    zz as he
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as P,
+    Ht as ge,
+    Ln as _e,
+    N as F,
+    Nn as I,
+    Nt as ve,
+    O as ye,
+    Q as be,
+    Rn as xe,
+    Vn as L,
+    s as Se,
+    wn as Ce,
+    zn as R
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Kst as we,
+    MUn as Te,
+    Wst as z,
+    jUn as B
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    CC as Ee,
+    SC as De,
+    TC as Oe,
+    bx as ke,
+    wC as Ae,
+    xx as je
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    Ec as Me,
+    Tc as Ne,
+    _s as Pe,
+    vs as V,
+    wc as Fe,
+    xf as Ie
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    n as Le,
+    t as Re
+} from "./da2e4f1d-n3i0nlguv6reckjx.js";
+import {
+    n as ze,
+    r as Be,
+    t as Ve
+} from "./1e5e38ab-le54rxotazfel3pl.js";
+import {
+    n as He,
+    t as H
+} from "./e14a92db-m64435ks78e4zd2y.js";
+
+function Ue(e) {
+    "use forget";
+    let t = (0, U.c)(10),
+        {
+            loadingLabel: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, G.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [(0, G.jsx)(z, {
+            className: `h-6 w-6 rounded-full`
+        }), (0, G.jsx)(z, {
+            className: `h-5 w-40`
+        })]
+    }), t[0] = r) : r = t[0];
+    let i;
+    t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, G.jsxs)(`div`, {
+        className: `flex flex-col gap-2 ps-5`,
+        children: [(0, G.jsx)(z, {
+            className: `h-4 w-full`
+        }), (0, G.jsx)(z, {
+            className: `h-4 w-11/12`
+        })]
+    }), t[1] = i) : i = t[1];
+    let a, o;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, G.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [(0, G.jsx)(z, {
+            className: `h-4 w-full`
+        }), (0, G.jsx)(z, {
+            className: `h-4 w-5/6`
+        }), (0, G.jsx)(z, {
+            className: `mt-2 h-10 w-full rounded-lg`
+        })]
+    }), o = (0, G.jsx)(H, {}), t[2] = a, t[3] = o) : (a = t[2], o = t[3]);
+    let s, c, l;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, G.jsx)(z, {
+        className: `h-5 w-64`
+    }), c = (0, G.jsx)(z, {
+        className: `h-4 w-full`
+    }), l = (0, G.jsx)(z, {
+        className: `h-4 w-11/12`
+    }), t[4] = s, t[5] = c, t[6] = l) : (s = t[4], c = t[5], l = t[6]);
+    let u;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, G.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        children: [s, c, l, (0, G.jsxs)(`div`, {
+            className: `mt-4 flex items-center justify-between gap-4`,
+            children: [(0, G.jsx)(z, {
+                className: `h-4 w-28`
+            }), (0, G.jsx)(z, {
+                className: `h-10 w-52 rounded-full`
+            })]
+        })]
+    }), t[7] = u) : u = t[7];
+    let d;
+    return t[8] === n ? d = t[9] : (d = (0, G.jsxs)(`div`, {
+        className: `flex flex-col gap-4`,
+        "aria-busy": `true`,
+        "aria-label": n,
+        children: [r, i, a, o, u]
+    }), t[8] = n, t[9] = d), d
+}
+
+function We() {
+    "use no forget";
+    let e = F(),
+        t = ie(),
+        {
+            data: n
+        } = se(),
+        r = q(n),
+        a = de(e => e.purchaseWorkspaceData),
+        o = r != null || n != null,
+        [s, c] = (0, W.useState)(!1),
+        l = n?.accountItems,
+        d = ne(),
+        f = l?.filter(e => !e.isDeactivated()) ?? [],
+        p = K(l),
+        {
+            data: m,
+            isLoading: h
+        } = Me(r?.id),
+        g = Fe(m),
+        v = Math.max(g, d),
+        y = ze(r),
+        b = y === `checkout`,
+        S = y === `customer_portal`,
+        C = r?.id ?? null,
+        {
+            data: w,
+            isLoading: T
+        } = ye({
+            queryKey: [`deactivated-workspace-invoice-context`, C],
+            queryFn: async () => await _.safeGet(`/subscriptions/deactivated_workspace_invoice_context`, {
+                parameters: {
+                    query: {
+                        account_id: C ?? ``
+                    }
+                }
+            }),
+            enabled: S && C != null,
+            retry: !1
+        }),
+        E = R(),
+        k = N(),
+        A = r ? r.mustGetSubscriptionBillingCurrency(`DeactivatedWorkspaceModal`) : `USD`;
+    (0, W.useEffect)(() => {
+        n && !r && (O.addError(Error(`Current account is undefined in DeactivatedWorkspaceModal`)), le.logEvent(`chatgpt_undefined_current_account`))
+    }, [n, r]), (0, W.useEffect)(() => {
+        if (!C || !a) return;
+        let e = l?.find(e => e.id === C) ?? null;
+        if (!e) return;
+        let t = a.existingAccount?.id !== C,
+            n = a.minimumSeats < v,
+            r = a.billingDetails.currency !== A;
+        !t && !n && !r || x.setPurchaseWorkspaceData({
+            ...a,
+            existingAccount: e,
+            minimumSeats: Math.max(a.minimumSeats, v),
+            billingDetails: {
+                ...a.billingDetails,
+                currency: A
+            }
+        })
+    }, [C, a, v, A, l]);
+    let j = () => {
+            !r || h || x.setPurchaseWorkspaceData({
+                minimumSeats: v,
+                billingDetails: {
+                    currency: A
+                },
+                existingAccount: r,
+                reactivationCheckoutButtonClickSource: `deactivated_workspace_modal`
+            })
+        },
+        M = async () => {
+            if (r) {
+                c(!0);
+                try {
+                    location.href = await Ve(r.id)
+                } catch {
+                    c(!1), k.danger(E.formatMessage(Y.unableToOpenStripeDashboard), {
+                        duration: 2
+                    })
+                }
+            }
+        };
+    return r == null ? null : (0, G.jsx)(te, {
+        testId: `modal-deactivated-workspace`,
+        type: `success`,
+        onClose: re,
+        isOpen: o,
+        title: T ? (0, G.jsx)(z, {
+            className: `h-6 w-56`
+        }) : (0, G.jsx)(`span`, {
+            className: `text-lg`,
+            children: (0, G.jsx)(I, {
+                ...Y.workspaceDeactivated
+            })
+        }),
+        children: T ? (0, G.jsx)(Ue, {
+            loadingLabel: E.formatMessage(Y.loadingInvoiceContext)
+        }) : (0, G.jsxs)(`div`, {
+            className: `flex flex-col items-center justify-center gap-4`,
+            children: [(0, G.jsx)(`div`, {
+                className: `flex w-full items-center gap-2`,
+                children: p.length > 1 ? (0, G.jsx)(J, {
+                    workspaces: p,
+                    currentWorkspace: r,
+                    currentWorkspaceId: C
+                }) : (0, G.jsxs)(G.Fragment, {
+                    children: [(0, G.jsx)(D, {
+                        src: r.data.profilePictureUrl
+                    }), (0, G.jsx)(`div`, {
+                        children: r.data.name
+                    })]
+                })
+            }), (0, G.jsx)(`div`, {
+                children: (0, G.jsxs)(`ul`, {
+                    className: `list-disc ps-5 text-sm`,
+                    children: [(0, G.jsx)(`li`, {
+                        className: `mb-1`,
+                        children: (0, G.jsx)(I, {
+                            ...Y.chatHistoryUnavailable
+                        })
+                    }), (0, G.jsx)(`li`, {
+                        children: (0, G.jsx)(I, {
+                            ...Y.otherWorkspacesAvailable
+                        })
+                    })]
+                })
+            }), b && (0, G.jsxs)(`div`, {
+                className: `flex w-full flex-col`,
+                children: [(0, G.jsx)(`p`, {
+                    children: (0, G.jsx)(I, {
+                        ...Y.purchaseNewSubscription
+                    })
+                }), (0, G.jsx)(i, {
+                    className: `m-auto mt-2 w-full`,
+                    disabled: h,
+                    loading: s,
+                    onClick: j,
+                    children: (0, G.jsx)(I, {
+                        ...Y.purchaseNewSubscriptionButton
+                    })
+                })]
+            }), S && (0, G.jsxs)(`div`, {
+                className: `flex w-full flex-col`,
+                children: [(0, G.jsx)(`p`, {
+                    className: `text-sm leading-5`,
+                    children: w?.available && w.invoice_kind === `true_up` ? (0, G.jsx)(I, {
+                        ...Y.resolveSeatIncreaseInvoice,
+                        values: {
+                            additionalPaidSeats: w.additional_paid_seats,
+                            b: e => (0, G.jsx)(`strong`, {
+                                children: e
+                            })
+                        }
+                    }) : w?.available && w.invoice_kind === `renewal` ? (0, G.jsx)(I, {
+                        ...Y.resolveRenewalInvoice
+                    }) : (0, G.jsx)(I, {
+                        ...Y.resolveOutstandingInvoice
+                    })
+                }), (0, G.jsx)(i, {
+                    className: `m-auto mt-2 w-full`,
+                    loading: s,
+                    onClick: M,
+                    children: (0, G.jsx)(I, {
+                        ...Y.manageSubscriptionButton
+                    })
+                })]
+            }), (0, G.jsx)(H, {}), (0, G.jsx)(`div`, {
+                className: `w-full justify-center`,
+                children: f.length > 0 ? (0, G.jsxs)(G.Fragment, {
+                    children: [(0, G.jsx)(`h3`, {
+                        className: `mb-2 text-base font-normal`,
+                        children: (0, G.jsx)(I, {
+                            ...Y.selectWorkspace
+                        })
+                    }), (0, G.jsx)(Re, {
+                        data: f
+                    })]
+                }) : (0, G.jsxs)(`div`, {
+                    className: `flex flex-col gap-6 text-sm`,
+                    children: [(0, G.jsxs)(`div`, {
+                        className: `flex flex-col gap-2`,
+                        children: [(0, G.jsx)(`h3`, {
+                            className: `text-base font-normal`,
+                            children: (0, G.jsx)(I, {
+                                ...Y.createPersonalWorkspace
+                            })
+                        }), (0, G.jsx)(I, {
+                            ...Y.deactivatedWorkspaceReason
+                        })]
+                    }), (0, G.jsxs)(`div`, {
+                        className: `flex justify-between`,
+                        children: [(0, G.jsxs)(`div`, {
+                            className: `flex w-full items-center gap-2`,
+                            children: [t && t.picture && (0, G.jsx)(`img`, {
+                                alt: `Profile`,
+                                src: t.picture,
+                                className: `flex h-6 w-6 items-center justify-center rounded-full`
+                            }), t && (0, G.jsx)(`span`, {
+                                className: `truncate`,
+                                children: t.name
+                            })]
+                        }), (0, G.jsx)(i, {
+                            title: E.formatMessage(Y.createPersonalWorkspaceButton),
+                            loading: s,
+                            onClick: async () => {
+                                c(!0);
+                                try {
+                                    await u((await _.safePost(`/accounts/personal`, {})).id, {
+                                        reason: `DeactivatedWorkspaceModal.createPersonal`
+                                    }), ce(ae), ee()
+                                } catch (t) {
+                                    c(!1), O.addError(Error(`Failed to create personal workspace`, {
+                                        cause: t
+                                    })), e.invalidateQueries({
+                                        queryKey: me().queryKey
+                                    }), (!(t instanceof ue) || !oe(t)) && k.danger(E.formatMessage(V.switchAccountError))
+                                }
+                            },
+                            color: `primary`,
+                            className: `ms-4`
+                        })]
+                    })]
+                })
+            })]
+        })
+    })
+}
+var U, W, G, K, q, J, Y, X = e((() => {
+        U = Ce(), y(), fe(), He(), he(), Le(), Be(), Pe(), l(), Te(), w(), je(), Oe(), Ee(), n(), we(), Ie(), Ne(), j(), S(), a(), h(), g(), s(), E(), v(), T(), b(), p(), o(), m(), Se(), pe(), W = t(L()), xe(), G = P(), K = e => e?.filter(e => e.structure === d.WORKSPACE && e.isDeactivated() && e.isOwnerOfAccount()) ?? [], q = e => {
+            let t = r(e);
+            if (t) return t;
+            let n = c.getCookie(k.Workspace),
+                i = n != null && n !== `personal` ? f(e, n) : null;
+            if (i?.isDeactivated()) return i;
+            let a = e?.accountItems,
+                o = K(a);
+            return o.length > 0 ? o[0] : (a?.filter(e => e.isDeactivated()) ?? [])[0] ?? null
+        }, J = ({
+            workspaces: e,
+            currentWorkspace: t,
+            currentWorkspaceId: n
+        }) => {
+            "use no forget";
+            let r = F(),
+                i = R(),
+                a = N(),
+                [o, s] = (0, W.useState)(!1),
+                [c, l] = (0, W.useState)(null),
+                u = (0, W.useRef)(null),
+                d = t => {
+                    if (t === n || c) return;
+                    let o = e.find(e => e.id === t);
+                    o && (l(t), u.current = t, s(!0), window.setTimeout(() => {
+                        (async () => {
+                            try {
+                                let {
+                                    updatedAccount: e,
+                                    willRedirect: t
+                                } = await M(r, o.id, i, a);
+                                if (e || t) return
+                            } catch (e) {
+                                O.addError(Error(`Failed to switch deactivated owner workspace`, {
+                                    cause: e
+                                }))
+                            }
+                            u.current = null, l(null), a.danger(i.formatMessage(V.switchAccountError))
+                        })()
+                    }, 0))
+                };
+            return (0, G.jsxs)(B.Root, {
+                open: o,
+                onOpenChange: e => {
+                    u.current && !e || s(e)
+                },
+                children: [(0, G.jsxs)(B.Trigger, {
+                    className: `inline-flex h-auto items-center justify-between px-1 py-1 text-start text-base font-normal`,
+                    children: [(0, G.jsxs)(`div`, {
+                        className: `flex items-center gap-2`,
+                        children: [(0, G.jsx)(D, {
+                            src: t.data.profilePictureUrl
+                        }), (0, G.jsx)(`div`, {
+                            children: t.data.name
+                        })]
+                    }), (0, G.jsx)(Ae, {
+                        className: `icon-sm`
+                    })]
+                }), (0, G.jsx)(B.Portal, {
+                    children: (0, G.jsx)(B.Content, {
+                        align: `start`,
+                        sideOffset: 4,
+                        size: `auto`,
+                        children: (0, G.jsx)(B.RadioGroup, {
+                            value: n ?? void 0,
+                            onValueChange: e => {
+                                d(e)
+                            },
+                            children: e.map(e => (0, G.jsx)(B.RadioItem, {
+                                value: e.id,
+                                trailing: e.id === c ? (0, G.jsx)(C, {
+                                    className: `icon-sm`
+                                }) : n === e.id ? (0, G.jsx)(ke, {
+                                    className: `icon-sm`
+                                }) : (0, G.jsx)(De, {
+                                    className: `icon-sm`
+                                }),
+                                children: e.name ?? e.id
+                            }, e.id))
+                        })
+                    })
+                })]
+            })
+        }, Y = _e({
+            workspaceDeactivated: {
+                id: `deactivatedWorkspaceModal.workspaceDeactivated`,
+                defaultMessage: `Your workspace has been deactivated`
+            },
+            chatHistoryUnavailable: {
+                id: `deactivatedWorkspaceModal.chatHistoryUnavailable`,
+                defaultMessage: `Your chat history and settings will not be available.`
+            },
+            otherWorkspacesAvailable: {
+                id: `deactivatedWorkspaceModal.otherWorkspacesAvailable`,
+                defaultMessage: `You will still be able to use ChatGPT with the other workspaces associated with this email address.`
+            },
+            selectWorkspace: {
+                id: `deactivatedWorkspaceModal.selectWorkspace`,
+                defaultMessage: `Select a workspace to continue`
+            },
+            createPersonalWorkspace: {
+                id: `deactivatedWorkspaceModal.createPersonalWorkspace`,
+                defaultMessage: `Create a personal workspace to continue`
+            },
+            deactivatedWorkspaceReason: {
+                id: `deactivatedWorkspaceModal.deactivatedWorkspaceReason`,
+                defaultMessage: `Because your workspace has been deactivated, you need to create a personal workspace to continue using ChatGPT.`
+            },
+            createPersonalWorkspaceButton: {
+                id: `deactivatedWorkspaceModal.createPersonalWorkspaceButton`,
+                defaultMessage: `Create a personal workspace`
+            },
+            purchaseNewSubscription: {
+                id: `deactivatedWorkspaceModal.purchaseNewSubscription`,
+                defaultMessage: `You can reactivate your workspace by purchasing a new subscription.`
+            },
+            purchaseNewSubscriptionButton: {
+                id: `deactivatedWorkspaceModal.purchaseNewSubscriptionButton`,
+                defaultMessage: `Purchase subscription`
+            },
+            resolveOutstandingInvoice: {
+                id: `deactivatedWorkspaceModal.resolveOutstandingInvoice`,
+                defaultMessage: `You can reactivate your workspace by resolving an outstanding invoice on your subscription.`
+            },
+            resolveSeatIncreaseInvoice: {
+                id: `deactivatedWorkspaceModal.resolveSeatIncreaseInvoice`,
+                defaultMessage: `{additionalPaidSeats, plural, one {<b># seat</b> was} other {<b># seats</b> were}} recently added to your organization, and payment failed when we tried to charge you. Resolve the outstanding payment to reactivate your workspace.`
+            },
+            resolveRenewalInvoice: {
+                id: `deactivatedWorkspaceModal.resolveRenewalInvoice`,
+                defaultMessage: `Payment failed when we tried to renew your subscription. Resolve the outstanding payment to reactivate your workspace.`
+            },
+            loadingInvoiceContext: {
+                id: `deactivatedWorkspaceModal.loadingInvoiceContext`,
+                defaultMessage: `Loading payment details`
+            },
+            manageSubscriptionButton: {
+                id: `deactivatedWorkspaceModal.manageSubscriptionButton`,
+                defaultMessage: `Manage subscription`
+            },
+            unableToOpenStripeDashboard: {
+                id: `deactivatedWorkspaceModal.unableToOpenStripeDashboard`,
+                defaultMessage: `Unable to open the Stripe dashboard.`
+            }
+        })
+    })),
+    Z, Q, $, Ge = e((() => {
+        be(), X(), j(), Z = t(L()), Q = P(), $ = ge(function() {
+            let e = A(),
+                t = ve();
+            return (0, Z.useEffect)(() => {
+                e && !e.isDeactivated() && t(`/`)
+            }, [e, t]), e && !e.isDeactivated() ? (0, Q.jsx)(`div`, {}) : (0, Q.jsx)(We, {})
+        })
+    }));
+e((() => {
+    Ge()
+}))();
+export {
+    $ as
+    default
+};
 //# sourceMappingURL=workspace.deactivated-ckdubrmm.js.map

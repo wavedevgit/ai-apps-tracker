@@ -1,2 +1,76 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Dat as t,Eat as n,L1 as r,M4 as i,P4 as a,S5 as o,f0 as s,kat as c,n0 as l,p0 as u,q1 as d,x5 as f,z1 as p}from"./4813494d-mdvd4786a87166cc.js";import{Q as m,bt as h,xt as g}from"./2340486e-i7pjxgdhv0bs6apg.js";import{c as _,s as v}from"./conversation-small-bcbq46iub1p0ca1t.js";function y(){"use forget";return null}e((()=>{}));function b(e){let t=e.searchParams.get(`next`)??`/`;if(t.length>2048||!t.startsWith(`/`)||t.startsWith(`//`)||Array.from(t).some(e=>e<=` `||e===``||e===`\\`))return`/`;let n=new URL(t,e.origin);return n.origin!==e.origin||!x.test(n.pathname)||[...n.searchParams.keys()].some(e=>!S.has(e))||n.hash!==``&&!/^#settings(?:\/[A-Za-z0-9_-]+)*$/.test(n.hash)?`/`:n.pathname+n.search+n.hash}var x,S,C,w=e((()=>{d(),s(),t(),o(),a(),v(),m(),x=/^\/(?:c\/[A-Za-z0-9_-]+|g\/[A-Za-z0-9_-]+(?:\/c\/[A-Za-z0-9_-]+|\/project)?|(?:apps|connectors|settings|project|space)(?:\/[A-Za-z0-9_-]+)*)?\/?$/,S=new Set([`model`,`temporary-chat`,`tab`]),C=async({request:e,serverLoader:t})=>{_(),await t();let a=new URL(e.url),o=a.searchParams.get(`workspace_id`);if(o==null||!/^[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}$/.test(o))throw h(`/`);let s=f(),d=r(await s.ensureQueryData(p())).find(e=>e.id===o&&!e.isPersonalAccount());if(d==null)throw h(`/`);if(!d.canAccessWithCurrentSession)return await u({fallbackScreenHint:`login`,callbackUrl:e.url,...d.ssoConnectionName==null?{}:{additionalAuthParams:{connection:d.ssoConnectionName}}}),null;if(n.getCookie(c.Workspace)===d.id)throw h(b(a));let{updatedAccount:m}=await l(s,d.id);throw m?(await i(),g(b(a))):h(`/`)},C.hydrate=!0}));e((()=>{w()}))();export{C as clientLoader,y as default};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Dat as t,
+    Eat as n,
+    L1 as r,
+    M4 as i,
+    P4 as a,
+    S5 as o,
+    f0 as s,
+    kat as c,
+    n0 as l,
+    p0 as u,
+    q1 as d,
+    x5 as f,
+    z1 as p
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Q as m,
+    bt as h,
+    xt as g
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    c as _,
+    s as v
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+
+function y() {
+    "use forget";
+    return null
+}
+e((() => {}));
+
+function b(e) {
+    let t = e.searchParams.get(`next`) ?? `/`;
+    if (t.length > 2048 || !t.startsWith(`/`) || t.startsWith(`//`) || Array.from(t).some(e => e <= ` ` || e === `` || e === `\\`)) return `/`;
+    let n = new URL(t, e.origin);
+    return n.origin !== e.origin || !x.test(n.pathname) || [...n.searchParams.keys()].some(e => !S.has(e)) || n.hash !== `` && !/^#settings(?:\/[A-Za-z0-9_-]+)*$/.test(n.hash) ? `/` : n.pathname + n.search + n.hash
+}
+var x, S, C, w = e((() => {
+    d(), s(), t(), o(), a(), v(), m(), x = /^\/(?:c\/[A-Za-z0-9_-]+|g\/[A-Za-z0-9_-]+(?:\/c\/[A-Za-z0-9_-]+|\/project)?|(?:apps|connectors|settings|project|space)(?:\/[A-Za-z0-9_-]+)*)?\/?$/, S = new Set([`model`, `temporary-chat`, `tab`]), C = async ({
+        request: e,
+        serverLoader: t
+    }) => {
+        _(), await t();
+        let a = new URL(e.url),
+            o = a.searchParams.get(`workspace_id`);
+        if (o == null || !/^[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}$/.test(o)) throw h(`/`);
+        let s = f(),
+            d = r(await s.ensureQueryData(p())).find(e => e.id === o && !e.isPersonalAccount());
+        if (d == null) throw h(`/`);
+        if (!d.canAccessWithCurrentSession) return await u({
+            fallbackScreenHint: `login`,
+            callbackUrl: e.url,
+            ...d.ssoConnectionName == null ? {} : {
+                additionalAuthParams: {
+                    connection: d.ssoConnectionName
+                }
+            }
+        }), null;
+        if (n.getCookie(c.Workspace) === d.id) throw h(b(a));
+        let {
+            updatedAccount: m
+        } = await l(s, d.id);
+        throw m ? (await i(), g(b(a))) : h(`/`)
+    }, C.hydrate = !0
+}));
+e((() => {
+    w()
+}))();
+export {
+    C as clientLoader, y as
+    default
+};
 //# sourceMappingURL=workspace-request-v5gop88h.js.map

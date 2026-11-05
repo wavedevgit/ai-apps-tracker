@@ -1,2 +1,35 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Ht as n,Nt as r,Q as i,Vn as a,kt as o,wn as s}from"./2340486e-i7pjxgdhv0bs6apg.js";var c,l,u,d=e((()=>{i(),c=s(),l=t(a()),u=n(function(){"use forget";let e=(0,c.c)(6),t=o(),n=r(),[i,a]=(0,l.useState)(!1),s,u;return e[0]!==t.toPath||e[1]!==t.useDocumentHandoff||e[2]!==i||e[3]!==n?(s=()=>{i||(t.useDocumentHandoff?window.location.replace(t.toPath):n(t.toPath,{replace:!0}),a(!0))},u=[i,t.toPath,t.useDocumentHandoff,n],e[0]=t.toPath,e[1]=t.useDocumentHandoff,e[2]=i,e[3]=n,e[4]=s,e[5]=u):(s=e[4],u=e[5]),(0,l.useEffect)(s,u),null})}));e((()=>{d()}))();export{u as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Ht as n,
+    Nt as r,
+    Q as i,
+    Vn as a,
+    kt as o,
+    wn as s
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+var c, l, u, d = e((() => {
+    i(), c = s(), l = t(a()), u = n(function() {
+        "use forget";
+        let e = (0, c.c)(6),
+            t = o(),
+            n = r(),
+            [i, a] = (0, l.useState)(!1),
+            s, u;
+        return e[0] !== t.toPath || e[1] !== t.useDocumentHandoff || e[2] !== i || e[3] !== n ? (s = () => {
+            i || (t.useDocumentHandoff ? window.location.replace(t.toPath) : n(t.toPath, {
+                replace: !0
+            }), a(!0))
+        }, u = [i, t.toPath, t.useDocumentHandoff, n], e[0] = t.toPath, e[1] = t.useDocumentHandoff, e[2] = i, e[3] = n, e[4] = s, e[5] = u) : (s = e[4], u = e[5]), (0, l.useEffect)(s, u), null
+    })
+}));
+e((() => {
+    d()
+}))();
+export {
+    u as
+    default
+};
 //# sourceMappingURL=load-page-with-auth-mme8wvql.js.map

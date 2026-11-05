@@ -1,2 +1,1812 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,Crt as r,D4 as i,E4 as a,Eit as o,Grt as s,IU as c,Iit as l,Jot as u,Knt as d,LU as f,Lit as p,Oct as m,Ot as h,Q1 as ee,Srt as g,Vst as _,Wnt as v,Yot as y,Z1 as b,ZW as te,_it as ne,_rt as re,cot as ie,eE as x,hrt as S,i8 as ae,iO as C,it as w,lO as T,n0 as E,not as D,nt as O,o0 as k,q1 as A,qW as j,r3 as oe,sst as se,t0 as M,tt as N,vrt as P,xt as F,z1 as ce,zU as I}from"./4813494d-mdvd4786a87166cc.js";import{At as le,Bn as L,Ht as R,Ln as z,N as ue,Nn as B,Nt as de,O as fe,Q as V,Rn as pe,Vn as H,Vt as me,kt as he,s as ge,wn as _e,zn as U}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Brn as W,Can as G,Dln as ve,Eln as ye,F6t as be,GVn as xe,KVn as Se,Nlt as Ce,O6t as we,WVn as Te,fq as Ee,itt as De,jlt as Oe,pq as ke,qVn as Ae,rtt as je,uKn as Me}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Df as Ne,KC as Pe,LS as Fe,Nc as Ie,Of as Le,Pc as Re,RS as ze,gC as Be}from"./c2675c8c-oz03twoan08d72ud.js";import{Af as Ve,kf as He}from"./8b34dbc2-lmwubajnld74ksfm.js";import{r as Ue,t as We}from"./ee0eeb85-lwe5xt47dzwpuna6.js";import{a as Ge,i as Ke,v as qe}from"./a4eef3c0-htjsels66bfs9l7w.js";import{i as Je,r as Ye}from"./8e7d0a25-bjdktlrw5o94z8cp.js";import{n as Xe,r as Ze}from"./1e5e38ab-le54rxotazfel3pl.js";import{a as Qe,n as $e,o as et,r as tt,t as nt}from"./bfd5ba7b-ki21phqr16fa2wly.js";import{a as rt,c as it,i as at,n as ot,o as st,r as ct,s as lt,t as ut}from"./3a1d9d23-lhi3wgycs2ar05qe.js";import{n as dt,t as ft}from"./9f2e6d33-h33rm8r24h08gyr1.js";import{r as pt,t as mt}from"./96bf3632-1m4sk27w5hoj4x6b.js";function ht(){return g(`550361471`).get(`durable_workspace_onboarding_enabled`,!1)}function gt(e){if(!e.checkout_session_id||!e.processor_entity||![`pending`,`succeeded`,`failed`].includes(e.status)||e.status===`succeeded`&&!e.workspace_id||e.workspace_account!=null&&(e.status!==`succeeded`||e.workspace_account.account.account_id!==e.workspace_id||e.workspace_account.account.is_deactivated||!e.workspace_account.can_access_with_session))throw new K(`invalid_status`);return{checkoutSessionId:e.checkout_session_id,processorEntity:e.processor_entity,retryable:e.retryable===!0,state:e.status,workspaceId:e.workspace_id??null,workspaceAccount:e.workspace_account,failureCode:e.failure_code,authenticationRequired:e.authentication_required===!0}}function _t(e){return`workspace_provisioning`in e&&e.workspace_provisioning===!0}function vt(e,t){return new Promise((n,r)=>{if(t.aborted){r(t.reason);return}let i=globalThis.setTimeout(()=>{t.removeEventListener(`abort`,a),n()},e),a=()=>{globalThis.clearTimeout(i),r(t.reason)};t.addEventListener(`abort`,a,{once:!0})})}async function yt({checkoutSessionId:e,onStatusChange:t,signal:n,timeoutMs:r=Ct}){let i=Te(r),a=n?Se([n,i]):i,o=null,s=null;for(;;){let r=Date.now();try{let n=gt(await Ye({checkoutSessionId:e,signal:Se([a,Te(St)]),waitMs:bt}));if(o=n,n.checkoutSessionId!==e)throw new K(`checkout_mismatch`,n);if(n.state!==s&&(t?.(n),s=n.state),n.state===`succeeded`)return n;if(n.state===`failed`)throw new K(n.retryable?`failed_retryable`:`failed_action_required`,n)}catch(e){if(n?.aborted)throw e;if(i.aborted)throw new K(`timed_out`,o);if(e instanceof K)throw e;if(e instanceof D&&(e.status===400||e.status===401||e.status===403))throw new K(`invalid_status`,o)}try{await vt(Math.max(0,xt-(Date.now()-r)),a)}catch(e){throw n?.aborted?e:new K(`timed_out`,o)}}}var bt,xt,St,Ct,K,wt=e((()=>{Ae(),xe(),ie(),r(),Je(),y(),bt=25e3,xt=1e3,St=3e4,Ct=10*6e4,K=class extends Error{constructor(e,t=null){super(`Business workspace provisioning ${e}`),u(this,`reason`,void 0),u(this,`status`,void 0),this.reason=e,this.status=t,this.name=`BusinessWorkspaceProvisioningError`}}})),Tt=e((()=>{F()}));function Et(e){"use forget";let t=(0,kt.c)(13),{stage:n}=e,r=n===void 0?`preparing_workspace`:n,i=U(),a;t[0]!==i||t[1]!==r?(a=i.formatMessage(jt[r]),t[0]=i,t[1]=r,t[2]=a):a=t[2];let o=a,s;t[3]===i?s=t[4]:(s=i.formatMessage(jt.description),t[3]=i,t[4]=s);let c;t[5]===s?c=t[6]:(c=[s],t[5]=s,t[6]=c);let l;t[7]!==o||t[8]!==c?(l=(0,At.jsx)(Oe.Contents,{role:`status`,"aria-live":`polite`,"aria-atomic":`true`,children:(0,At.jsx)(h,{primaryText:o,secondaryTexts:c,className:`h-full px-6 [&>div]:items-center [&>div]:text-center`,primaryTextClassName:`w-full justify-center text-center`,secondaryTextClassName:`w-full text-center`,disableSecondaryAnimation:!0})}),t[7]=o,t[8]=c,t[9]=l):l=t[9];let u;return t[10]!==o||t[11]!==l?(u=(0,At.jsx)(Oe,{open:!0,renderInPlace:!0,onOpenChange:Ot,onEscapeKeyDown:Dt,accessibleTitle:o,children:l}),t[10]=o,t[11]=l,t[12]=u):u=t[12],u}function Dt(e){return e.preventDefault()}function Ot(){}var kt,At,jt,Mt=e((()=>{kt=_e(),Tt(),Ce(),pe(),At=L(),jt=z({confirming_payment:{id:`businessWorkspaceLoading.confirmingPayment`,defaultMessage:`Confirming your payment`},preparing_workspace:{id:`businessWorkspaceLoading.preparingWorkspace`,defaultMessage:`Preparing your workspace`},setting_up_access:{id:`businessWorkspaceLoading.settingUpAccess`,defaultMessage:`Setting up your workspace access`},opening_workspace:{id:`businessWorkspaceLoading.openingWorkspace`,defaultMessage:`Opening your workspace`},description:{id:`businessWorkspaceLoading.waitDescription`,defaultMessage:`This may take some time.`}})}));function Nt(e,t,n,r){let i=`oai/apps/businessPostCheckoutTiming/v1/${e}`;try{let a=window.sessionStorage.getItem(i),o;if(a!=null)o=JSON.parse(a);else{let n=performance.getEntriesByType(`navigation`)[0],r=n?new URL(n.name):null,i=r?.pathname===`/payments/success-team`&&r.searchParams.get(`stripe_session_id`)===e;o={startedAtMs:performance.timeOrigin+(i&&n?n.startTime:performance.now()),flow:t,fromReturnNavigation:i}}if(!Number.isFinite(o?.startedAtMs)||o.flow!==`durable_business`&&o.flow!==`standard_business`||typeof o.fromReturnNavigation!=`boolean`||o.finishedAtMs!=null&&(!Number.isFinite(o.finishedAtMs)||o.finishedAtMs<o.startedAtMs))throw Error(`Invalid stored post-checkout timing`);let s=n===`finish`&&o.finishedAtMs==null,c=performance.timeOrigin+performance.now();if(c<o.startedAtMs)throw Error(`Post-checkout timing clock moved backwards`);s&&(o.finishedAtMs=c),window.sessionStorage.setItem(i,JSON.stringify(o));let l={checkoutSessionId:e,targetWorkspaceId:r,flow:o.flow};a??v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{...l,checkpoint:o.fromReturnNavigation?`post_checkout_started`:`post_checkout_route_mounted`,durationMs:Math.round(c-o.startedAtMs)}),s&&o.finishedAtMs!=null&&v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{...l,checkpoint:o.fromReturnNavigation?`post_checkout_continue_enabled`:`post_checkout_route_mount_continue_enabled`,durationMs:Math.round(o.finishedAtMs-o.startedAtMs)})}catch(n){v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkoutSessionId:e,targetWorkspaceId:r,flow:t,checkpoint:`post_checkout_timing_unavailable`,severity:`warning`,errorType:n instanceof Error?n.name:`unknown`})}}var Pt=e((()=>{d()})),Ft=e((()=>{it()})),It,Lt=e((()=>{It=`sophia_workspace_onboarding_step`}));function Rt(e){let t=e?.filter(e=>e.type==="default"||e.type===`prolite`);return t?.some(e=>e.available!=null)?{default:Math.max(0,t.find(e=>e.type==="default")?.available??0),prolite:Math.max(0,t.find(e=>e.type===`prolite`)?.available??0)}:null}function zt({isImmediateInvoiceRolloutEnabled:e,planType:t,isTrialing:n,seatCapacity:r,seatsEntitled:i,seatsInUse:a}){if(!e||t!==_.SELF_SERVE_BUSINESS||n)return null;let o=Rt(r);return o==null?i==null||a==null?0:Math.max(0,i-Math.max(1,a)):Math.min(5,o.default+o.prolite)}var Bt=e((()=>{m()}));function Vt({checkoutSource:e,durableCheckoutWorkspaceId:t,isPostTeamOnboardingWorkActivationEligible:n,LandingComponent:r=Ut,FinalStepComponent:i=Kt,useFreeWorkspaceCopy:a=!1,skipInviteStep:o=!1,onboardingStepQueryParam:s,markWorkspaceOnboardingViewedOnComplete:c=!1}={}){"use no forget";let u=ue(),d=de(),{pathname:f}=le(),{currentStep:p}=qt(s),m=k(),h=U(),ee=I(),[_,y]=(0,q.useState)(!0),b=(0,q.useRef)(null),ie=(0,q.useRef)(!1),x=(0,q.useRef)(!1),[S,ae]=me(),C=(0,q.useMemo)(()=>Zt.filter(e=>!(o&&e===`invite`)),[o]),T=o&&p===`invite`?`complete`:p,E=S.get(`account_id`),D=S.get(`stripe_session_id`)??void 0,O=m==null&&E!=null;fe({...ce(),enabled:O,refetchInterval:O?1e3:!1,refetchIntervalInBackground:!0});let A=se()?.account,j=E!=null&&m?.id===E,oe=A!=null&&m!=null&&(A.id!==m.id||A.planType!==m.planType||A.isDelinquent!==m.isDelinquent||A.gracePeriodId!==m.gracePeriodId),F=re($t),L=t!=null&&t===E,R=L?`durable_business`:`standard_business`,z=F||L,B=s!==`sophia_workspace_onboarding_step`&&(L?l(se()?.accessToken)!==E:oe),V=E==null?m==null:_&&(!z||!j||B);(0,q.useEffect)(()=>{E!=null&&(b.current??(b.current=Date.now(),v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`onboarding_started`,flow:R,source:e,checkoutSessionId:D,targetWorkspaceId:E,accountResolutionFixEnabled:F})),j&&V&&!x.current&&(x.current=!0,v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`resolved_workspace_still_loading`,flow:R,source:e,checkoutSessionId:D,severity:`warning`,targetWorkspaceId:E,durationMs:Date.now()-(b.current??Date.now()),accountResolutionFixEnabled:F})),j&&!V&&!ie.current&&(ie.current=!0,v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`onboarding_ready`,flow:R,source:e,checkoutSessionId:D,targetWorkspaceId:E,durationMs:Date.now()-(b.current??Date.now()),accountResolutionFixEnabled:F})))},[D,E,F,j,V,R,e]);function pe(){window.location.href=`/`}(0,q.useEffect)(()=>{if(S.get(`refresh_account`)===`true`&&!z){y(!1);return}if(E==null||!_||z&&j&&!B)return;let t=setTimeout(()=>{v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`account_refresh_wait_timed_out`,flow:R,source:e,severity:`warning`,targetWorkspaceId:E,durationMs:Date.now()-(b.current??Date.now()),timeoutMs:Qt}),y(!1)},Qt);return()=>clearTimeout(t)},[E,j,_,R,S,B,e,z]);let H=(0,q.useCallback)((t,n,r)=>{if(V){v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`onboarding_step_blocked_by_loading`,flow:R,source:e,severity:`warning`,targetWorkspaceId:E??void 0,step:T,durationMs:Date.now()-(b.current??Date.now())});return}let i=C.indexOf(T),a=C.length-1,o=C[n?a:i+1],c=new URLSearchParams(S.toString()),l=t??c.get(`account_id`);v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`onboarding_step_advanced`,flow:R,source:e,targetWorkspaceId:l??void 0,currentStep:T,nextStep:o,durationMs:Date.now()-(b.current??Date.now())}),t&&t!==E&&(c.set(`account_id`,t),ae(c,{replace:!0}));let u=n?a:i+1;if(!l){pe();return}if(i!==-1&&u<C.length){s!=null&&c.set(s,C[u]);let e=c.toString(),t=`${f}${e?`?${e}`:``}`;d(`${t}#${C[u]}`,{replace:r===!0})}},[T,E,V,d,R,f,s,S,ae,C,e]);return(0,J.jsx)(`div`,{className:`max-w-sm pb-6`,children:(0,J.jsxs)(`div`,{children:[T===`landing`&&(0,J.jsx)(`div`,{children:(0,J.jsx)(r,{checkoutSource:e,onNext:H,isLoading:V,onboardingFlow:R})},`landing`),T===`naming`&&(0,J.jsx)(`div`,{children:(0,J.jsx)(ut,{checkoutSource:e,onNext:H,useFreeWorkspaceCopy:a})},`naming`),T===`invite`&&!o&&(0,J.jsx)(`div`,{children:(0,J.jsx)(Gt,{checkoutWorkspaceId:E,onNext:H})},`invite`),T===`complete`&&(0,J.jsx)(`div`,{children:(0,J.jsx)(i,{onNext:()=>{(async()=>{H();let t=n===!0&&te(),r=t&&g(en).get(tn,!1);if(t&&await P(),c){He.set(!0);try{await w(N.Onboarding)}catch{}}if(E){let{updatedAccount:t,willRedirect:n}=r?await M(u,E,h,ee,!0,nn):await M(u,E,h,ee);if(!t&&!n){v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`final_workspace_switch_failed`,flow:R,source:e,severity:`error`,targetWorkspaceId:E,durationMs:Date.now()-(b.current??Date.now())}),ee.danger(h.formatMessage(ne.somethingWentWrong));return}if(n){v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`onboarding_completed`,flow:R,source:e,checkoutSessionId:D,targetWorkspaceId:E,durationMs:Date.now()-(b.current??Date.now()),redirected:!0});return}}v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`onboarding_completed`,flow:R,source:e,checkoutSessionId:D,targetWorkspaceId:E??void 0,durationMs:Date.now()-(b.current??Date.now()),redirected:r}),r?window.location.href=nn:pe()})()}})},`complete`)]})})}function Ht(){"use forget";let e=(0,Yt.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,J.jsx)(Et,{}),e[0]=t):t=e[0],t}function Ut({checkoutSource:e,onNext:t,isLoading:r=!1,onboardingFlow:i=`standard_business`}){"use no forget";let a=k(),{data:o,isLoading:s}=be(),{pathname:c}=le(),[l]=me(),u=l.get(`stripe_session_id`),d=l.get(`account_id`)??void 0,f=(0,q.useRef)(null),p=a!=null&&a.id===l.get(`account_id`)&&a.isOwnerOfAccount()&&a.planType===_.SELF_SERVE_BUSINESS&&a.hasPaidSubscription()&&a.data.subscriptionStatus.trial?.isTrialing!==!0&&Re(a.id)&&o==null&&s,m=r||p;(0,q.useEffect)(()=>{c===`/payments/success-team`&&u&&!m&&Nt(u,i,`finish`,d)},[u,m,i,c,d]),(0,q.useEffect)(()=>{if(c!==`/payments/success-team`||!u)return;let t=f.current,n=t?.checkoutSessionId===u&&t?.targetWorkspaceId===d,r={flow:i,source:e,checkoutSessionId:u,targetWorkspaceId:d,step:`landing`};if(m){if(n)return;f.current={checkoutSessionId:u,targetWorkspaceId:d,startedAtMs:performance.now()},v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{...r,checkpoint:`loading_screen_shown`})}else t!=null&&n&&(f.current=null,v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{...r,checkpoint:`loading_screen_hidden`,durationMs:Math.max(0,Math.round(performance.now()-t.startedAtMs))}))},[u,m,i,c,e,d]);let h=(0,q.useCallback)(()=>{if(!a)return;let e=a.subscriptionAnalyticsParams,t=new URLSearchParams(window.location.search).get(`referrer`)||document.referrer;v.logEvent(`Account Pay: Payment Confirmation Modal Clicked`,{...e,referrer:t})},[a]);return(0,q.useEffect)(()=>{if(!a)return;let e=a.subscriptionAnalyticsParams,t=new URLSearchParams(window.location.search).get(`referrer`)||document.referrer,n=`Account Pay: Payment Confirmation Modal Show`,r=v.logStructuredEvent(`ChatgptSubscriptionPaymentConfirmationShown`,{surface:`CHATGPT_SUBSCRIPTION_PAYMENT_CONFIRMATION_SURFACE_BUSINESS`,legacyStatsigEventName:n,...Ne(t)});v.logEvent(n,{...e,referrer:t},{eventId:r})},[a]),m?(0,J.jsx)(Ht,{}):(0,J.jsxs)(J.Fragment,{children:[(0,J.jsx)(lt,{isTrial:!1}),(0,J.jsx)(ct,{children:(0,J.jsx)(B,{...Y.standard})}),(0,J.jsx)(rt,{children:(0,J.jsx)(B,{...Y.description})}),(0,J.jsx)(n,{onClick:()=>{t(),h()},size:`large`,fullWidth:!0,children:(0,J.jsx)(B,{...ne.continueButtonText})})]})}function Wt(e){"use forget";let t=(0,Yt.c)(4),{onNext:n}=e,r,i;t[0]===n?(r=t[1],i=t[2]):(r=()=>{n(void 0,!1,!0)},i=[n],t[0]=n,t[1]=r,t[2]=i),(0,q.useEffect)(r,i);let a;return t[3]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,J.jsx)(Ht,{}),t[3]=a):a=t[3],a}function Gt({checkoutWorkspaceId:e,onNext:t}){let n=U(),r=k(),{data:i,isLoading:a}=be(),o=T(),s=(0,q.useMemo)(()=>{if(!o)return null;let[,e]=o.split(`@`);return e??null},[o]),c=(0,q.useMemo)(()=>r?.subscriptionAnalyticsParams,[r]),l=r!=null&&r.isOwnerOfAccount()&&r.planType===_.SELF_SERVE_BUSINESS&&r.hasPaidSubscription()&&r.data.subscriptionStatus.trial?.isTrialing!==!0&&Re(r.id),u=r==null?null:zt({isImmediateInvoiceRolloutEnabled:l,planType:r.planType,isTrialing:r.data.subscriptionStatus.trial?.isTrialing===!0,seatCapacity:i?.seat_capacity,seatsEntitled:i?.seats_entitled,seatsInUse:i?.seats_in_use}),d=l?Rt(i?.seat_capacity):null,f=l&&r?.id===e&&i==null&&a,p=l&&r?.id===e&&!f&&(i==null||d!=null&&d.default+d.prolite===0);if((0,q.useEffect)(()=>{r==null||f||p||v.logEvent(`Account Pay: Invite Collaborators Modal Show`,c)},[c,r,f,p]),r==null||f)return(0,J.jsx)(Ht,{});let m=r.isFreeWorkspace();if(p)return(0,J.jsx)(Wt,{onNext:t});let h=m?5:u??(i?.seats_entitled==null?1:Math.max(0,i.seats_entitled-Math.max(1,i.seats_in_use??1)));return(0,J.jsxs)(J.Fragment,{children:[(0,J.jsx)(ct,{children:m?(0,J.jsx)(B,{...Y.inviteTitleFreeWorkspace}):(0,J.jsx)(B,{...Y.inviteTitle,values:{seatCount:h,workspaceName:r.data.name}})}),(0,J.jsx)(`div`,{className:`text-md text-token-text-secondary mt-2 mb-8`,children:m&&s?(0,J.jsx)(B,{...Y.inviteSubtitleFreeWorkspace,values:{domain:s}}):(0,J.jsx)(B,{...Y.completeDescription})}),(0,J.jsx)(mt,{fullWidthButtons:!0,workspace:r,maxInvites:u,availablePaidSeatCounts:d,cancelButtonText:n.formatMessage(Y.skipAddMembers),onCancel:t,onSuccess:t,contentClassName:`relative left-1/2 w-[calc(100vw-2rem)] max-w-[720px] -translate-x-1/2`})]})}function Kt({onNext:e}){let t=k(),r=(0,q.useMemo)(()=>t?.subscriptionAnalyticsParams,[t]);(0,q.useEffect)(()=>{v.logEvent(`Account Pay: Workspace Setup Complete Modal Show`,r)},[r]);let i=()=>{v.logEvent(`Account Pay: Workspace Setup Complete Modal Clicked`,r)};return(0,J.jsxs)(J.Fragment,{children:[(0,J.jsx)(ct,{children:(0,J.jsx)(B,{...Y.completeTitle})}),(0,J.jsx)(rt,{children:(0,J.jsx)(B,{...Y.completeDescription})}),(0,J.jsx)(n,{onClick:()=>{e(),i()},size:`large`,fullWidth:!0,children:(0,J.jsx)(B,{...Y.continueToChatgpt})})]})}function qt(e){let{hash:t,pathname:n,search:r}=le(),i=new URLSearchParams(r),a=Jt(t.slice(1)),o=e==null?null:Jt(i.get(e));return{currentStep:a??o??`landing`,currentPath:n+r}}function Jt(e){return e===`caOnboarding`?`complete`:e!=null&&rn(e)?e:null}var Yt,q,J,Xt,Zt,Qt,$t,en,tn,nn,rn,Y,an=e((()=>{Yt=_e(),Le(),m(),Ie(),we(),pt(),Mt(),Pt(),x(),o(),Ve(),st(),Lt(),A(),f(),O(),p(),d(),ke(),r(),ge(),q=t(H()),pe(),V(),Ft(),Bt(),C(),ot(),j(),J=L(),Xt=function(e){return e.Landing=`landing`,e.Setup=`setup`,e.Naming=`naming`,e.Invite=`invite`,e.Complete=`complete`,e}(Xt||{}),Zt=[`landing`,`naming`,`invite`,`complete`],Qt=15e3,$t=`1400990654`,en=`1746256812`,tn=`drop_into_work_after_team_onboarding`,nn=`/?surface=work&refresh_account=true`,rn=Ee(Xt),Y=z({standard:{id:`UpgradedToTeamSuccess.trial`,defaultMessage:`Payment successful`},description:{id:`UpgradedToTeamSuccess.description`,defaultMessage:`Your team has been created. You can invite members to join the workspace to start collaborating.`},continueToChatgpt:{id:`UpgradedToTeamSuccess.continueToChatgpt`,defaultMessage:`Continue to ChatGPT`},inviteTitle:{id:`UpgradedToTeamSuccess.inviteTitle`,defaultMessage:`Invite {seatCount, plural, one {# member} other {# members}} to {workspaceName}`},inviteTitleFreeWorkspace:{id:`UpgradedToTeamSuccess.inviteTitleFreeWorkspace`,defaultMessage:`Add your team`},inviteSubtitleFreeWorkspace:{id:`UpgradedToTeamSuccess.inviteSubtitleFreeWorkspace`,defaultMessage:`Invite anyone with an @{domain} email to join this workspace.`},completeTitle:{id:`UpgradedToTeamSuccess.completeTitle`,defaultMessage:`Workspace setup complete`},completeDescription:{id:`UpgradedToTeamSuccess.completeDescription`,defaultMessage:`Supercharge your team's productivity with ChatGPT.`},skipAddMembers:{id:`UpgradedToTeamSuccess.skipAddMembers`,defaultMessage:`Skip this step`}})})),on,sn=e((()=>{on=`business_workspace_onboarding_step`}));function cn({checkoutSource:e,durableCheckoutWorkspaceId:t,isPostTeamOnboardingWorkActivationEligible:n,isTrial:r,isTeam:i,skipTeamInviteStep:a=!1}){let o=U(),s=de(),c=ue(),l=k()?.hasPaidSubscription()??!1;(0,un.useEffect)(()=>{l&&Ue({hasPaidSubscription:l,intl:o,queryClient:c})},[l,o,c]);let u=(0,un.useCallback)(e=>{e.preventDefault(),v.logEvent(`Account Pay: Click Account Payment Success Continue`),s(`/`)},[s]);return(0,X.jsxs)(at,{children:[(0,X.jsx)(ft,{children:(0,X.jsx)(`title`,{children:o.formatMessage(dn.pageTitle)})}),(0,X.jsx)(`div`,{className:`text-token-text-primary flex flex-col`,children:i?(0,X.jsx)(Vt,{checkoutSource:e,durableCheckoutWorkspaceId:t,isPostTeamOnboardingWorkActivationEligible:n,skipInviteStep:a,onboardingStepQueryParam:on,markWorkspaceOnboardingViewedOnComplete:!0}):(0,X.jsx)(ln,{isTrial:r,onContinue:u})})]})}function ln({isTrial:e,onContinue:t}){let r=e?dn.trial:dn.standard;return(0,X.jsxs)(X.Fragment,{children:[(0,X.jsx)(lt,{isTrial:!!e}),(0,X.jsxs)(`div`,{className:`flex flex-col items-center`,children:[(0,X.jsx)(ct,{children:(0,X.jsx)(B,{...r})}),(0,X.jsx)(rt,{children:(0,X.jsx)(B,{...dn.paymentReceived})}),(0,X.jsx)(n,{onClick:t,size:`large`,fullWidth:!0,children:(0,X.jsx)(B,{...ne.continueButtonText})})]})]})}var un,X,dn,fn=e((()=>{x(),st(),o(),We(),A(),d(),dt(),ge(),un=t(H()),pe(),V(),Ft(),an(),sn(),X=L(),dn=z({pageTitle:{id:`PaymentsSuccess.pageTitle`,defaultMessage:`Account - Payment success`},paymentReceived:{id:`PaymentsSuccess.paymentSuccessful`,defaultMessage:`You've been upgraded to ChatGPT Plus`},standard:{id:`PaymentsSuccess.standard`,defaultMessage:`Payment successful`},trial:{id:`PaymentsSuccess.trial`,defaultMessage:`Trial started`}})}));function pn(e){"use forget";let t=(0,gn.c)(2),{markWorkspaceOnboardingViewedOnComplete:n}=e,r=n!==void 0&&n,i;return t[0]===r?i=t[1]:(i=(0,Z.jsx)(Vt,{LandingComponent:mn,FinalStepComponent:hn,skipInviteStep:!0,onboardingStepQueryParam:It,markWorkspaceOnboardingViewedOnComplete:r}),t[0]=r,t[1]=i),i}function mn(e){"use forget";let t=(0,gn.c)(15),{onNext:r,isLoading:i}=e,a=i!==void 0&&i,o=k(),s;t[0]===o?s=t[1]:(s=()=>{if(!o)return;let e=o.subscriptionAnalyticsParams,t=new URLSearchParams(window.location.search).get(`referrer`)||document.referrer;v.logEvent(`Account Pay: Payment Confirmation Modal Clicked`,{...e,referrer:t})},t[0]=o,t[1]=s);let c=s,l,u;t[2]===o?(l=t[3],u=t[4]):(l=()=>{if(!o)return;let e=o.subscriptionAnalyticsParams,t=new URLSearchParams(window.location.search).get(`referrer`)||document.referrer,n=v.logStructuredEvent(`ChatgptSubscriptionPaymentConfirmationShown`,{surface:`CHATGPT_SUBSCRIPTION_PAYMENT_CONFIRMATION_SURFACE_SOPHIA`,legacyStatsigEventName:`Account Pay: Payment Confirmation Modal Show`,...Ne(t)});v.logEvent(`Account Pay: Payment Confirmation Modal Show`,{...e,referrer:t},{eventId:n})},u=[o],t[2]=o,t[3]=l,t[4]=u),(0,_n.useEffect)(l,u);let d;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,Z.jsx)(lt,{isTrial:!1}),t[5]=d):d=t[5];let f;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,Z.jsx)(ct,{children:(0,Z.jsx)(B,{...vn.paymentSuccessful})}),t[6]=f):f=t[6];let p;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(p=(0,Z.jsx)(rt,{children:(0,Z.jsx)(B,{...vn.workspaceCreated})}),t[7]=p):p=t[7];let m;t[8]!==r||t[9]!==c?(m=()=>{r(),c()},t[8]=r,t[9]=c,t[10]=m):m=t[10];let h;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,Z.jsx)(B,{...ne.continueButtonText}),t[11]=h):h=t[11];let ee;return t[12]!==a||t[13]!==m?(ee=(0,Z.jsxs)(Z.Fragment,{children:[d,f,p,(0,Z.jsx)(n,{onClick:m,size:`large`,loading:a,fullWidth:!0,children:h})]}),t[12]=a,t[13]=m,t[14]=ee):ee=t[14],ee}function hn(e){"use forget";let t=(0,gn.c)(13),{onNext:r}=e,i=k()?.subscriptionAnalyticsParams,a,o;t[0]===i?(a=t[1],o=t[2]):(a=()=>{v.logEvent(`Account Pay: Workspace Setup Complete Modal Show`,i)},o=[i],t[0]=i,t[1]=a,t[2]=o),(0,_n.useEffect)(a,o);let s;t[3]===i?s=t[4]:(s=()=>{v.logEvent(`Account Pay: Workspace Setup Complete Modal Clicked`,i)},t[3]=i,t[4]=s);let c=s,l;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,Z.jsx)(ct,{children:(0,Z.jsx)(B,{...vn.setupComplete})}),t[5]=l):l=t[5];let u;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,Z.jsx)(rt,{children:(0,Z.jsx)(B,{...vn.setupCompleteDescription})}),t[6]=u):u=t[6];let d;t[7]!==r||t[8]!==c?(d=()=>{r(),c()},t[7]=r,t[8]=c,t[9]=d):d=t[9];let f;t[10]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,Z.jsx)(B,{...vn.continueToChatgpt}),t[10]=f):f=t[10];let p;return t[11]===d?p=t[12]:(p=(0,Z.jsxs)(Z.Fragment,{children:[l,u,(0,Z.jsx)(n,{onClick:d,size:`large`,fullWidth:!0,children:f})]}),t[11]=d,t[12]=p),p}var gn,_n,Z,vn,yn=e((()=>{gn=_e(),Le(),x(),o(),Ft(),an(),st(),A(),d(),_n=t(H()),pe(),Lt(),Z=L(),vn=z({paymentSuccessful:{id:`UpgradedToSophiaSuccess.paymentSuccessful`,defaultMessage:`Payment successful`},workspaceCreated:{id:`UpgradedToSophiaSuccess.workspaceCreated`,defaultMessage:`Your workspace has been created.`},setupComplete:{id:`UpgradedToSophiaSuccess.setupComplete`,defaultMessage:`Workspace setup complete`},setupCompleteDescription:{id:`UpgradedToSophiaSuccess.setupCompleteDescription`,defaultMessage:`Continue to ChatGPT to start using your workspace.`},continueToChatgpt:{id:`UpgradedToSophiaSuccess.continueToChatgpt`,defaultMessage:`Continue to ChatGPT`}})}));function bn(){"use forget";let e=(0,xn.c)(7),t=U(),n;e[0]===t?n=e[1]:(n=t.formatMessage(Cn.pageTitle),e[0]=t,e[1]=n);let r;e[2]===n?r=e[3]:(r=(0,Sn.jsx)(ft,{children:(0,Sn.jsx)(`title`,{children:n})}),e[2]=n,e[3]=r);let i;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(i=(0,Sn.jsx)(`div`,{className:`text-token-text-primary flex flex-col`,children:(0,Sn.jsx)(pn,{markWorkspaceOnboardingViewedOnComplete:!0})}),e[4]=i):i=e[4];let a;return e[5]===r?a=e[6]:(a=(0,Sn.jsxs)(at,{children:[r,i]}),e[5]=r,e[6]=a),a}var xn,Sn,Cn,wn=e((()=>{xn=_e(),st(),dt(),pe(),yn(),Sn=L(),Cn=z({pageTitle:{id:`SophiaPaymentsSuccess.pageTitle`,defaultMessage:`Account - Payment success`}})}));function Tn(e){"use forget";let t=(0,Mn.c)(45),{actionRequired:r,paymentConfirmed:a,recoveryWorkspaceId:o,authenticationRequired:s}=e,l=a===void 0||a,u=s!==void 0&&s,d=U(),f;t[0]===d?f=t[1]:(f=d.formatMessage(In.title),t[0]=d,t[1]=f);let p=f,m=ue(),[h,ee]=(0,Q.useState)(!1),[g,_]=(0,Q.useState)(!1),v=(0,Q.useRef)(null),y=(0,Q.useRef)(null),b,te;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(b=()=>()=>v.current?.abort(),te=[],t[2]=b,t[3]=te):(b=t[2],te=t[3]),(0,Q.useEffect)(b,te);let re;t[4]!==u||t[5]!==d||t[6]!==h||t[7]!==m||t[8]!==o?(re=async()=>{if(o==null||h)return;let e=v.current??new AbortController;v.current=e,ee(!0);try{let t=Se([e.signal,Te(3e4)]),n=y.current??On(m,o,d,e.signal,u?window.location.href:void 0);y.current=n;let r=()=>{y.current===n&&(y.current=null,v.current=null)};n.then(r,r),await i(n,t)||(u?c().danger(ne.somethingWentWrong):_(!0))}catch{e.signal.aborted||c().danger(ne.somethingWentWrong)}e.signal.aborted||ee(!1)},t[4]=u,t[5]=d,t[6]=h,t[7]=m,t[8]=o,t[9]=re):re=t[9];let ie=re,x;t[10]===p?x=t[11]:(x=(0,$.jsx)(`h1`,{className:`text-xl font-semibold`,children:p}),t[10]=p,t[11]=x);let S;t[12]!==r||t[13]!==u||t[14]!==d||t[15]!==l||t[16]!==g||t[17]!==o?(S=u?(0,$.jsx)(B,{id:`businessWorkspaceRecovery.authentication.description`,defaultMessage:`Your workspace was created, but this session cannot access it. Sign in with the same account to continue. If access is still blocked, contact your administrator or support.`}):g?(0,$.jsx)(B,{id:`businessWorkspaceRecovery.inactive.unavailable`,defaultMessage:`We couldn’t find an available reactivation option for this workspace. Contact support to restore access.`}):o==null?d.formatMessage(l?r?In.supportDescription:In.retryDescription:ne.somethingWentWrong):(0,$.jsx)(B,{id:`businessWorkspaceRecovery.inactive.description`,defaultMessage:`This checkout belongs to a previous workspace subscription. Open the workspace to review your access and reactivation options.`}),t[12]=r,t[13]=u,t[14]=d,t[15]=l,t[16]=g,t[17]=o,t[18]=S):S=t[18];let ae;t[19]===S?ae=t[20]:(ae=(0,$.jsx)(`p`,{className:`text-token-text-secondary text-sm leading-6`,children:S}),t[19]=S,t[20]=ae);let C;t[21]!==u||t[22]!==ie||t[23]!==h||t[24]!==g||t[25]!==o?(C=o!=null&&!g&&(0,$.jsx)(n,{color:`primary`,disabled:h,onClick:()=>void ie(),children:u?(0,$.jsx)(B,{id:`businessWorkspaceRecovery.authentication.signIn`,defaultMessage:`Sign in to continue`}):(0,$.jsx)(B,{id:`businessWorkspaceRecovery.inactive.openWorkspace`,defaultMessage:`Open workspace`})}),t[21]=u,t[22]=ie,t[23]=h,t[24]=g,t[25]=o,t[26]=C):C=t[26];let w;t[27]!==r||t[28]!==u||t[29]!==d?(w=(!r||u)&&(0,$.jsx)(n,{color:u?`secondary`:`primary`,onClick:En,children:d.formatMessage(In.retry)}),t[27]=r,t[28]=u,t[29]=d,t[30]=w):w=t[30];let T=g||r&&o==null?`primary`:`secondary`,E;t[31]===d?E=t[32]:(E=d.formatMessage(In.support),t[31]=d,t[32]=E);let D;t[33]!==T||t[34]!==E?(D=(0,$.jsx)(n,{as:`a`,to:`https://help.openai.com/`,openNewTab:!0,color:T,children:E}),t[33]=T,t[34]=E,t[35]=D):D=t[35];let O;t[36]!==C||t[37]!==w||t[38]!==D||t[39]!==x||t[40]!==ae?(O=(0,$.jsx)(Oe.Contents,{className:`flex h-full items-center justify-center px-6`,role:`alert`,children:(0,$.jsxs)(`div`,{className:`flex w-full max-w-md flex-col gap-5 text-center`,children:[x,ae,C,w,D]})}),t[36]=C,t[37]=w,t[38]=D,t[39]=x,t[40]=ae,t[41]=O):O=t[41];let k;return t[42]!==O||t[43]!==p?(k=(0,$.jsx)(Oe,{open:!0,onOpenChange:Dn,accessibleTitle:p,children:O}),t[42]=O,t[43]=p,t[44]=k):k=t[44],k}function En(){return window.location.reload()}function Dn(){}async function On(e,t,n,r,a){let o=se()?.user?.id,s=await i(b(e,t),Se([r,Te(3e4)]));if(r.throwIfAborted(),o==null||se()?.user?.id!==o||s==null||a!=null&&s.isDeactivated()||s.isDeactivated()&&Xe(s)==null)return!1;let l=a??(s.isDeactivated()?`/workspace/deactivated`:`/`),u=await M(e,s.id,n,c(),!0,l);if(!u.updatedAccount&&!u.willRedirect)throw Error(`Workspace recovery switch did not complete`);return u.willRedirect||(r.throwIfAborted(),window.location.assign(l)),!0}function kn(e){switch(e){case`succeeded`:return`setting_up_access`;default:return`preparing_workspace`}}function An(e,t){if(e==null)throw new K(`invalid_status`,t);return e}function jn(e){throw e}var Mn,Q,$,Nn,Pn,Fn,In,Ln,Rn,zn=e((()=>{V(),Mn=_e(),m(),x(),Fe(),Be(),wt(),Mt(),Ze(),Pt(),et(),ye(),G(),Ke(),Me(),o(),Ce(),fn(),sn(),je(),W(),Lt(),wn(),A(),f(),Ae(),xe(),p(),d(),r(),a(),ge(),Q=t(H()),pe(),tt(),$=L(),Nn=500,Pn=1e4,Fn=2*St,In=z({title:{id:`businessWorkspaceRecovery.title`,defaultMessage:`Your workspace needs attention`},retryDescription:{id:`businessWorkspaceRecovery.retryDescription`,defaultMessage:`Your payment succeeded. Try again to finish setting up your workspace without being charged again.`},supportDescription:{id:`businessWorkspaceRecovery.supportDescription`,defaultMessage:`Your payment succeeded, but we need help finishing your workspace setup.`},retry:{id:`businessWorkspaceRecovery.retry`,defaultMessage:`Try again`},support:{id:`businessWorkspaceRecovery.support`,defaultMessage:`Contact support`}}),Ln=({currentUrl:e,defaultShouldRevalidate:t,nextUrl:n})=>{let r=new URLSearchParams(e.searchParams),i=new URLSearchParams(n.searchParams);for(let e of[on,It])r.delete(e),i.delete(e);return(ht()||r.get(`durable_business_checkout`)===`true`||i.get(`durable_business_checkout`)===`true`)&&e.pathname===n.pathname&&!r.has(`account_id`)&&i.delete(`account_id`),e.pathname===n.pathname&&r.toString()===i.toString()?!1:t},Rn=R(function(){"use forget";let e=(0,Mn.c)(127),t=de(),n=ue(),r=k(),[a,o]=me(),u=he(),[d,f]=(0,Q.useState)(null),[p,m]=(0,Q.useState)(null),h;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(h={key:`chatgpt-subscribe-plan-business`},e[0]=h):h=e[0];let{trackSelectedPixels:g}=ze(h),y;e[1]===Symbol.for(`react.memo_cache_sentinel`)?(y={key:Pe.SELF_SERVE_BUSINESS_WORKSPACE_CREATED},e[1]=y):y=e[1];let{trackSelectedPixels:b}=ze(y),te=(0,Q.useRef)(!1),re=(0,Q.useRef)(!1),ie=(0,Q.useRef)(!1),x=(0,Q.useRef)(!1),C=(0,Q.useRef)(null),w=u.postCheckoutResult,T=u.checkout_id,D=u.processor_entity,O=u.postCheckoutResult===$e.Success?u.completion.checkout_kind??oe.Standard:`unknown`,A=u.postCheckoutResult===$e.Success?u.completion.entry_point??`unknown`:`unknown`,j;e[2]===a?j=e[3]:(j=a.get(`account_id`),e[2]=a,e[3]=j);let M=j,N=w===$e.Success,P=u.postCheckoutResult===$e.Success?void 0:u.durableCheckoutRecovery,F;e[4]!==u.completion||e[5]!==u.postCheckoutResult?(F=u.postCheckoutResult===$e.Success&&_t(u.completion),e[4]=u.completion,e[5]=u.postCheckoutResult,e[6]=F):F=e[6];let I=F,le=d?.checkoutSessionId===T?d:null,L=le?.state??`pending`,R=le?.failure??null,z;e[7]!==M||e[8]!==T||e[9]!==p?.checkoutSessionId||e[10]!==p?.workspaceId||e[11]!==r?.id||e[12]!==I?(z=I&&p?.checkoutSessionId===T&&p?.workspaceId===M&&M!=null&&r?.id===M&&l(se()?.accessToken)===M,e[7]=M,e[8]=T,e[9]=p?.checkoutSessionId,e[10]=p?.workspaceId,e[11]=r?.id,e[12]=I,e[13]=z):z=e[13];let B=z,fe=M==null||r?.id===M,V=!I&&fe&&r?.planType===_.SCI,pe=N&&A===ve.SOPHIA_CHECKOUT_PAGE_CONTENT,H=V||pe,ge,_e;e[14]!==M||e[15]!==T||e[16]!==I||e[17]!==H||e[18]!==N?(ge=()=>{N&&!H&&T&&Nt(T,I?`durable_business`:`standard_business`,`start`,M??void 0)},_e=[M,T,I,H,N],e[14]=M,e[15]=T,e[16]=I,e[17]=H,e[18]=N,e[19]=ge,e[20]=_e):(ge=e[19],_e=e[20]),(0,Q.useEffect)(ge,_e);let U;e[21]!==O||e[22]!==T||e[23]!==H||e[24]!==a?(U=!H&&T!=null?s(O,T,a).source:void 0,e[21]=O,e[22]=T,e[23]=H,e[24]=a,e[25]=U):U=e[25];let W=U,G=H?_.SCI:_.SELF_SERVE_BUSINESS,ye=!H,be=N,xe=N&&!H&&M!=null&&r?.id===M&&(r.planType===_.SELF_SERVE_BUSINESS||r.planType===_.SELF_SERVE_BUSINESS_PROLITE),Ce=I&&!B&&R==null,we,Ee;e[26]!==M||e[27]!==T||e[28]!==I||e[29]!==Ce?(we=()=>{if(!T||!I)return;let e=C.current,t={flow:`durable_business`,checkoutSessionId:T,targetWorkspaceId:M??void 0,step:`workspace_provisioning`};if(Ce){if(e?.checkoutSessionId===T)return;C.current={checkoutSessionId:T,startedAtMs:performance.now()},v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{...t,checkpoint:`loading_screen_shown`})}else e?.checkoutSessionId===T&&(C.current=null,v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{...t,checkpoint:`loading_screen_hidden`,durationMs:Math.max(0,Math.round(performance.now()-e.startedAtMs))}))},Ee=[M,T,I,Ce],e[26]=M,e[27]=T,e[28]=I,e[29]=Ce,e[30]=we,e[31]=Ee):(we=e[30],Ee=e[31]),(0,Q.useEffect)(we,Ee);let Oe,ke;e[32]!==N||e[33]!==ye||e[34]!==g||e[35]!==b?(Oe=()=>{!N||!ye||te.current||(te.current=!0,g(),b())},ke=[N,ye,g,b],e[32]=N,e[33]=ye,e[34]=g,e[35]=b,e[36]=Oe,e[37]=ke):(Oe=e[36],ke=e[37]),(0,Q.useEffect)(Oe,ke);let Ae,je;e[38]!==M||e[39]!==P||e[40]!==O||e[41]!==G||e[42]!==T||e[43]!==A||e[44]!==N||e[45]!==t||e[46]!==w||e[47]!==D?(Ae=()=>{N||((P!=null||ht())&&v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`checkout_confirmation_failed`,flow:`durable_business`,severity:`error`,checkoutSessionId:T??void 0,targetWorkspaceId:M??void 0,checkoutKind:O,entryPoint:A,planType:G,errorType:String(w)}),qe(`payments_success_team`,{checkoutPlanType:G,checkoutId:T??void 0,processorEntity:D??void 0,outcome:w}),P==null&&w!==$e.UserMismatch&&t(`/#pricing`,{replace:!0}))},je=[M,P,O,G,T,A,N,t,w,D],e[38]=M,e[39]=P,e[40]=O,e[41]=G,e[42]=T,e[43]=A,e[44]=N,e[45]=t,e[46]=w,e[47]=D,e[48]=Ae,e[49]=je):(Ae=e[48],je=e[49]),(0,Q.useEffect)(Ae,je);let Me,Ne;e[50]!==M||e[51]!==O||e[52]!==G||e[53]!==T||e[54]!==A||e[55]!==I||e[56]!==H||e[57]!==N||e[58]!==w||e[59]!==D||e[60]!==be||e[61]!==W?(Me=()=>{if(!N||x.current)return;x.current=!0;let e=Qe({checkoutId:T,checkoutPlanType:G,postCheckoutResult:w,processorEntity:D??void 0});!H&&e!=null&&e.checkoutSessionId===T&&v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`checkout_success_latency`,flow:I?`durable_business`:`standard_business`,source:W,checkoutSessionId:T,targetWorkspaceId:M??void 0,durationMs:e.durationMs,checkoutKind:O,entryPoint:A,planType:G}),v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`payment_confirmed`,flow:I?`durable_business`:`standard_business`,source:W,checkoutSessionId:T??void 0,targetWorkspaceId:M??void 0,checkoutKind:O,entryPoint:A,planType:G}),v.logEvent(`Subscription: Payment Success Page`,{plan_type:G});let t=T??void 0,n=D??void 0,r=v.logStructuredEvent(`ChatgptCheckoutPaymentSuccessPage`,{checkoutPlanType:G,checkoutId:t,processorEntity:n,checkoutKind:O,entryPoint:A});S.logEvent(`chatgpt_team_payment_success`,void 0,r?{unique_event_id:r}:void 0),be&&De({accountId:M,location:`PaymentsSuccessTeamPage`,planName:G}),ae()},Ne=[M,G,T,O,A,I,H,N,w,D,be,W],e[50]=M,e[51]=O,e[52]=G,e[53]=T,e[54]=A,e[55]=I,e[56]=H,e[57]=N,e[58]=w,e[59]=D,e[60]=be,e[61]=W,e[62]=Me,e[63]=Ne):(Me=e[62],Ne=e[63]),(0,Q.useEffect)(Me,Ne);let Fe;e[64]!==M||e[65]!==O||e[66]!==G||e[67]!==T||e[68]!==A||e[69]!==I||e[70]!==N||e[71]!==D||e[72]!==n||e[73]!==W?(Fe=()=>{if(!N||I||!M)return;let e=!1,t=null,r=Date.now(),i=0,a=!1;v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`account_resolution_started`,flow:`standard_business`,source:W,checkoutSessionId:T??void 0,targetWorkspaceId:M,checkoutKind:O,entryPoint:A,planType:G,timeoutMs:Pn});let o=e=>{S.logEvent(`chatgpt_team_success_account_resolution`,null,{account_state:e,previously_missing:re.current?`true`:`false`})},s=()=>{(async()=>{if(e||!M)return;i+=1;try{await n.refetchQueries({queryKey:ce().queryKey})}catch(e){let t=e;a||(a=!0,v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`account_refresh_failed`,flow:`standard_business`,source:W,severity:`warning`,checkoutSessionId:T??void 0,targetWorkspaceId:M,attempt:i,durationMs:Date.now()-r,errorType:t instanceof Error?t.name:typeof t}))}if(e)return;let c;try{({updatedAccount:c}=await E(n,M))}catch(e){let t=e;throw v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`workspace_switch_failed`,flow:`standard_business`,source:W,severity:`error`,checkoutSessionId:T??void 0,targetWorkspaceId:M,attempt:i,durationMs:Date.now()-r,errorType:t instanceof Error?t.name:typeof t}),t}if(!e){if(c){ie.current||(ie.current=!0,o(`found`),v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`workspace_ready`,flow:`standard_business`,source:W,checkoutSessionId:T??void 0,targetWorkspaceId:M,checkoutKind:O,entryPoint:A,planType:G,durationMs:Date.now()-r,retryCount:i-1,previouslyMissing:re.current}));return}if(re.current||(o(`missing`),re.current=!0,v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`workspace_missing_after_payment`,flow:`standard_business`,source:W,severity:`warning`,checkoutSessionId:T??void 0,targetWorkspaceId:M,attempt:i,durationMs:Date.now()-r})),Date.now()-r>=Pn){v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:`account_resolution_timed_out`,flow:`standard_business`,source:W,severity:`error`,checkoutSessionId:T??void 0,targetWorkspaceId:M,checkoutKind:O,entryPoint:A,planType:G,durationMs:Date.now()-r,retryCount:i-1,timeoutMs:Pn}),Ge({checkoutSessionId:T??void 0,checkoutPlanType:G,processorEntity:D??void 0,checkoutKind:O,entryPoint:A,accessStage:`team_account_resolution`,failureReason:`account_resolution_timeout`});return}t=setTimeout(s,Nn)}})()};return s(),()=>{e=!0,t!=null&&clearTimeout(t)}},e[64]=M,e[65]=O,e[66]=G,e[67]=T,e[68]=A,e[69]=I,e[70]=N,e[71]=D,e[72]=n,e[73]=W,e[74]=Fe):Fe=e[74];let Ie=r?.id,Le;e[75]!==M||e[76]!==O||e[77]!==G||e[78]!==T||e[79]!==A||e[80]!==I||e[81]!==N||e[82]!==D||e[83]!==n||e[84]!==W||e[85]!==Ie?(Le=[M,O,G,T,Ie,A,I,N,D,n,W],e[75]=M,e[76]=O,e[77]=G,e[78]=T,e[79]=A,e[80]=I,e[81]=N,e[82]=D,e[83]=n,e[84]=W,e[85]=Ie,e[86]=Le):Le=e[86],(0,Q.useEffect)(Fe,Le);let Re;e[87]!==M||e[88]!==O||e[89]!==G||e[90]!==T||e[91]!==A||e[92]!==I||e[93]!==B||e[94]!==D||e[95]!==n||e[96]!==o?(Re=()=>{if(!I||!T||B)return;let e=new AbortController,t=Ct,r=Date.now(),a=se()?.user?.id,s=()=>!e.signal.aborted&&a!=null&&se()?.user?.id===a,u=0,d=0,p=`workspace_provisioning_failed`;return v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`account_resolution_started`,flow:`durable_business`,checkoutSessionId:T,targetWorkspaceId:M??void 0,checkoutKind:O,entryPoint:A,planType:G,timeoutMs:Ct}),(async()=>{try{let c=await yt({checkoutSessionId:T,onStatusChange:e=>{s()&&(f({checkoutSessionId:T,state:e.state,failure:null}),u+=1,v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`workspace_provisioning_status_changed`,flow:`durable_business`,checkoutSessionId:T,targetWorkspaceId:e.workspaceId??M??void 0,step:e.state,attempt:u,durationMs:Date.now()-r}))},signal:e.signal});if(!s())return;let h=An(c.workspaceId,c);m({checkoutSessionId:T,workspaceId:h});let g=Date.now();t=Fn;let _=Te(Fn),y=Se([e.signal,_]),b=null,te=!1;for(;!e.signal.aborted;){try{if(te&&(p=`account_refresh_failed`,c=await yt({checkoutSessionId:T,signal:y}),c.workspaceId!==h&&jn(new K(`checkout_mismatch`,c))),te=!0,p=`account_discovery_failed`,d+=1,await ee(n,y,{userId:a,workspaceAccount:c.workspaceAccount}),p=`workspace_switch_failed`,y.throwIfAborted(),!s())return;let{updatedAccount:e}=await i(E(n,h,!0),y);if(e&&se()?.user?.id===a&&l(se()?.accessToken)===h)break}catch(e){let t=e;if(!s())return;if(t instanceof K&&jn(t),_.aborted&&jn(new K(`timed_out`,c)),Date.now()-g>=Fn){b=t;break}}Date.now()-g>=Fn&&jn(new K(`timed_out`,c));try{await vt(Nn,y)}catch{if(!s())return;jn(new K(`timed_out`,c))}}if(!s())return;b!=null&&jn(b),v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`,{checkpoint:`workspace_ready`,flow:`durable_business`,checkoutSessionId:T,targetWorkspaceId:h,checkoutKind:O,entryPoint:A,planType:G,durationMs:Date.now()-r,retryCount:Math.max(0,d-1)}),M!==h&&o(e=>(e.set(`account_id`,h),e),{replace:!0})}catch(e){let n=e;if(!s())return;let i=n instanceof K&&n.reason===`timed_out`;f({checkoutSessionId:T,state:`failed`,failure:{actionRequired:n instanceof K&&n.reason===`failed_action_required`,recoveryWorkspaceId:n instanceof K&&(n.status?.failureCode===`workspace_inactive`||n.status?.failureCode===`checkout_subscription_canceled`||n.status?.authenticationRequired===!0)?n.status.workspaceId:null,authenticationRequired:n instanceof K&&n.status?.authenticationRequired}});let a=n instanceof K?n.status:null;v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`,{checkpoint:i?t===Fn?`account_resolution_timed_out`:`workspace_provisioning_timed_out`:p,flow:`durable_business`,severity:`error`,checkoutSessionId:T,targetWorkspaceId:a?.workspaceId??M??void 0,checkoutKind:O,entryPoint:A,planType:G,step:a?.state,durationMs:Date.now()-r,retryCount:Math.max(0,d-1),timeoutMs:i?t:void 0,errorType:n instanceof Error?n.name:typeof n}),Ge({checkoutSessionId:T,checkoutPlanType:G,processorEntity:D??void 0,checkoutKind:O,entryPoint:A,accessStage:`team_account_resolution`,failureReason:i?`account_resolution_timeout`:`account_status_missing`}),c().danger(ne.somethingWentWrong)}})(),()=>e.abort()},e[87]=M,e[88]=O,e[89]=G,e[90]=T,e[91]=A,e[92]=I,e[93]=B,e[94]=D,e[95]=n,e[96]=o,e[97]=Re):Re=e[97];let Be=r?.id,Ve;if(e[98]!==M||e[99]!==O||e[100]!==G||e[101]!==T||e[102]!==A||e[103]!==I||e[104]!==B||e[105]!==D||e[106]!==n||e[107]!==o||e[108]!==Be?(Ve=[M,O,G,T,Be,A,I,B,D,n,o],e[98]=M,e[99]=O,e[100]=G,e[101]=T,e[102]=A,e[103]=I,e[104]=B,e[105]=D,e[106]=n,e[107]=o,e[108]=Be,e[109]=Ve):Ve=e[109],(0,Q.useEffect)(Re,Ve),w===$e.UserMismatch){let t;return e[110]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(nt,{}),e[110]=t):t=e[110],t}if(!N){if(P!=null){let t;return e[111]===P.paymentConfirmed?t=e[112]:(t=(0,$.jsx)(Tn,{actionRequired:!1,paymentConfirmed:P.paymentConfirmed}),e[111]=P.paymentConfirmed,e[112]=t),t}return null}if(I&&!B){if(R!=null){let t;return e[113]!==R.actionRequired||e[114]!==R.authenticationRequired||e[115]!==R.recoveryWorkspaceId?(t=(0,$.jsx)(Tn,{actionRequired:R.actionRequired,recoveryWorkspaceId:R.recoveryWorkspaceId,authenticationRequired:R.authenticationRequired}),e[113]=R.actionRequired,e[114]=R.authenticationRequired,e[115]=R.recoveryWorkspaceId,e[116]=t):t=e[116],t}let t;e[117]===L?t=e[118]:(t=kn(L),e[117]=L,e[118]=t);let n;return e[119]===t?n=e[120]:(n=(0,$.jsx)(Et,{stage:t}),e[119]=t,e[120]=n),n}let He;return e[121]!==M||e[122]!==I||e[123]!==xe||e[124]!==H||e[125]!==W?(He=H?(0,$.jsx)(bn,{}):(0,$.jsx)(cn,{durableCheckoutWorkspaceId:I?M??void 0:void 0,isTrial:!1,isTeam:!0,checkoutSource:W,...xe?{isPostTeamOnboardingWorkActivationEligible:!0}:{}}),e[121]=M,e[122]=I,e[123]=xe,e[124]=H,e[125]=W,e[126]=He):He=e[126],He})}));e((()=>{zn()}))();export{Rn as default,Ln as shouldRevalidate};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    Crt as r,
+    D4 as i,
+    E4 as a,
+    Eit as o,
+    Grt as s,
+    IU as c,
+    Iit as l,
+    Jot as u,
+    Knt as d,
+    LU as f,
+    Lit as p,
+    Oct as m,
+    Ot as h,
+    Q1 as ee,
+    Srt as g,
+    Vst as _,
+    Wnt as v,
+    Yot as y,
+    Z1 as b,
+    ZW as te,
+    _it as ne,
+    _rt as re,
+    cot as ie,
+    eE as x,
+    hrt as S,
+    i8 as ae,
+    iO as C,
+    it as w,
+    lO as T,
+    n0 as E,
+    not as D,
+    nt as O,
+    o0 as k,
+    q1 as A,
+    qW as j,
+    r3 as oe,
+    sst as se,
+    t0 as M,
+    tt as N,
+    vrt as P,
+    xt as F,
+    z1 as ce,
+    zU as I
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as le,
+    Bn as L,
+    Ht as R,
+    Ln as z,
+    N as ue,
+    Nn as B,
+    Nt as de,
+    O as fe,
+    Q as V,
+    Rn as pe,
+    Vn as H,
+    Vt as me,
+    kt as he,
+    s as ge,
+    wn as _e,
+    zn as U
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Brn as W,
+    Can as G,
+    Dln as ve,
+    Eln as ye,
+    F6t as be,
+    GVn as xe,
+    KVn as Se,
+    Nlt as Ce,
+    O6t as we,
+    WVn as Te,
+    fq as Ee,
+    itt as De,
+    jlt as Oe,
+    pq as ke,
+    qVn as Ae,
+    rtt as je,
+    uKn as Me
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Df as Ne,
+    KC as Pe,
+    LS as Fe,
+    Nc as Ie,
+    Of as Le,
+    Pc as Re,
+    RS as ze,
+    gC as Be
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    Af as Ve,
+    kf as He
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    r as Ue,
+    t as We
+} from "./ee0eeb85-lwe5xt47dzwpuna6.js";
+import {
+    a as Ge,
+    i as Ke,
+    v as qe
+} from "./a4eef3c0-htjsels66bfs9l7w.js";
+import {
+    i as Je,
+    r as Ye
+} from "./8e7d0a25-bjdktlrw5o94z8cp.js";
+import {
+    n as Xe,
+    r as Ze
+} from "./1e5e38ab-le54rxotazfel3pl.js";
+import {
+    a as Qe,
+    n as $e,
+    o as et,
+    r as tt,
+    t as nt
+} from "./bfd5ba7b-ki21phqr16fa2wly.js";
+import {
+    a as rt,
+    c as it,
+    i as at,
+    n as ot,
+    o as st,
+    r as ct,
+    s as lt,
+    t as ut
+} from "./3a1d9d23-lhi3wgycs2ar05qe.js";
+import {
+    n as dt,
+    t as ft
+} from "./9f2e6d33-h33rm8r24h08gyr1.js";
+import {
+    r as pt,
+    t as mt
+} from "./96bf3632-1m4sk27w5hoj4x6b.js";
+
+function ht() {
+    return g(`550361471`).get(`durable_workspace_onboarding_enabled`, !1)
+}
+
+function gt(e) {
+    if (!e.checkout_session_id || !e.processor_entity || ![`pending`, `succeeded`, `failed`].includes(e.status) || e.status === `succeeded` && !e.workspace_id || e.workspace_account != null && (e.status !== `succeeded` || e.workspace_account.account.account_id !== e.workspace_id || e.workspace_account.account.is_deactivated || !e.workspace_account.can_access_with_session)) throw new K(`invalid_status`);
+    return {
+        checkoutSessionId: e.checkout_session_id,
+        processorEntity: e.processor_entity,
+        retryable: e.retryable === !0,
+        state: e.status,
+        workspaceId: e.workspace_id ?? null,
+        workspaceAccount: e.workspace_account,
+        failureCode: e.failure_code,
+        authenticationRequired: e.authentication_required === !0
+    }
+}
+
+function _t(e) {
+    return `workspace_provisioning` in e && e.workspace_provisioning === !0
+}
+
+function vt(e, t) {
+    return new Promise((n, r) => {
+        if (t.aborted) {
+            r(t.reason);
+            return
+        }
+        let i = globalThis.setTimeout(() => {
+                t.removeEventListener(`abort`, a), n()
+            }, e),
+            a = () => {
+                globalThis.clearTimeout(i), r(t.reason)
+            };
+        t.addEventListener(`abort`, a, {
+            once: !0
+        })
+    })
+}
+async function yt({
+    checkoutSessionId: e,
+    onStatusChange: t,
+    signal: n,
+    timeoutMs: r = Ct
+}) {
+    let i = Te(r),
+        a = n ? Se([n, i]) : i,
+        o = null,
+        s = null;
+    for (;;) {
+        let r = Date.now();
+        try {
+            let n = gt(await Ye({
+                checkoutSessionId: e,
+                signal: Se([a, Te(St)]),
+                waitMs: bt
+            }));
+            if (o = n, n.checkoutSessionId !== e) throw new K(`checkout_mismatch`, n);
+            if (n.state !== s && (t?.(n), s = n.state), n.state === `succeeded`) return n;
+            if (n.state === `failed`) throw new K(n.retryable ? `failed_retryable` : `failed_action_required`, n)
+        } catch (e) {
+            if (n?.aborted) throw e;
+            if (i.aborted) throw new K(`timed_out`, o);
+            if (e instanceof K) throw e;
+            if (e instanceof D && (e.status === 400 || e.status === 401 || e.status === 403)) throw new K(`invalid_status`, o)
+        }
+        try {
+            await vt(Math.max(0, xt - (Date.now() - r)), a)
+        } catch (e) {
+            throw n?.aborted ? e : new K(`timed_out`, o)
+        }
+    }
+}
+var bt, xt, St, Ct, K, wt = e((() => {
+        Ae(), xe(), ie(), r(), Je(), y(), bt = 25e3, xt = 1e3, St = 3e4, Ct = 10 * 6e4, K = class extends Error {
+            constructor(e, t = null) {
+                super(`Business workspace provisioning ${e}`), u(this, `reason`, void 0), u(this, `status`, void 0), this.reason = e, this.status = t, this.name = `BusinessWorkspaceProvisioningError`
+            }
+        }
+    })),
+    Tt = e((() => {
+        F()
+    }));
+
+function Et(e) {
+    "use forget";
+    let t = (0, kt.c)(13),
+        {
+            stage: n
+        } = e,
+        r = n === void 0 ? `preparing_workspace` : n,
+        i = U(),
+        a;
+    t[0] !== i || t[1] !== r ? (a = i.formatMessage(jt[r]), t[0] = i, t[1] = r, t[2] = a) : a = t[2];
+    let o = a,
+        s;
+    t[3] === i ? s = t[4] : (s = i.formatMessage(jt.description), t[3] = i, t[4] = s);
+    let c;
+    t[5] === s ? c = t[6] : (c = [s], t[5] = s, t[6] = c);
+    let l;
+    t[7] !== o || t[8] !== c ? (l = (0, At.jsx)(Oe.Contents, {
+        role: `status`,
+        "aria-live": `polite`,
+        "aria-atomic": `true`,
+        children: (0, At.jsx)(h, {
+            primaryText: o,
+            secondaryTexts: c,
+            className: `h-full px-6 [&>div]:items-center [&>div]:text-center`,
+            primaryTextClassName: `w-full justify-center text-center`,
+            secondaryTextClassName: `w-full text-center`,
+            disableSecondaryAnimation: !0
+        })
+    }), t[7] = o, t[8] = c, t[9] = l) : l = t[9];
+    let u;
+    return t[10] !== o || t[11] !== l ? (u = (0, At.jsx)(Oe, {
+        open: !0,
+        renderInPlace: !0,
+        onOpenChange: Ot,
+        onEscapeKeyDown: Dt,
+        accessibleTitle: o,
+        children: l
+    }), t[10] = o, t[11] = l, t[12] = u) : u = t[12], u
+}
+
+function Dt(e) {
+    return e.preventDefault()
+}
+
+function Ot() {}
+var kt, At, jt, Mt = e((() => {
+    kt = _e(), Tt(), Ce(), pe(), At = L(), jt = z({
+        confirming_payment: {
+            id: `businessWorkspaceLoading.confirmingPayment`,
+            defaultMessage: `Confirming your payment`
+        },
+        preparing_workspace: {
+            id: `businessWorkspaceLoading.preparingWorkspace`,
+            defaultMessage: `Preparing your workspace`
+        },
+        setting_up_access: {
+            id: `businessWorkspaceLoading.settingUpAccess`,
+            defaultMessage: `Setting up your workspace access`
+        },
+        opening_workspace: {
+            id: `businessWorkspaceLoading.openingWorkspace`,
+            defaultMessage: `Opening your workspace`
+        },
+        description: {
+            id: `businessWorkspaceLoading.waitDescription`,
+            defaultMessage: `This may take some time.`
+        }
+    })
+}));
+
+function Nt(e, t, n, r) {
+    let i = `oai/apps/businessPostCheckoutTiming/v1/${e}`;
+    try {
+        let a = window.sessionStorage.getItem(i),
+            o;
+        if (a != null) o = JSON.parse(a);
+        else {
+            let n = performance.getEntriesByType(`navigation`)[0],
+                r = n ? new URL(n.name) : null,
+                i = r?.pathname === `/payments/success-team` && r.searchParams.get(`stripe_session_id`) === e;
+            o = {
+                startedAtMs: performance.timeOrigin + (i && n ? n.startTime : performance.now()),
+                flow: t,
+                fromReturnNavigation: i
+            }
+        }
+        if (!Number.isFinite(o?.startedAtMs) || o.flow !== `durable_business` && o.flow !== `standard_business` || typeof o.fromReturnNavigation != `boolean` || o.finishedAtMs != null && (!Number.isFinite(o.finishedAtMs) || o.finishedAtMs < o.startedAtMs)) throw Error(`Invalid stored post-checkout timing`);
+        let s = n === `finish` && o.finishedAtMs == null,
+            c = performance.timeOrigin + performance.now();
+        if (c < o.startedAtMs) throw Error(`Post-checkout timing clock moved backwards`);
+        s && (o.finishedAtMs = c), window.sessionStorage.setItem(i, JSON.stringify(o));
+        let l = {
+            checkoutSessionId: e,
+            targetWorkspaceId: r,
+            flow: o.flow
+        };
+        a ?? v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+            ...l,
+            checkpoint: o.fromReturnNavigation ? `post_checkout_started` : `post_checkout_route_mounted`,
+            durationMs: Math.round(c - o.startedAtMs)
+        }), s && o.finishedAtMs != null && v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+            ...l,
+            checkpoint: o.fromReturnNavigation ? `post_checkout_continue_enabled` : `post_checkout_route_mount_continue_enabled`,
+            durationMs: Math.round(o.finishedAtMs - o.startedAtMs)
+        })
+    } catch (n) {
+        v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+            checkoutSessionId: e,
+            targetWorkspaceId: r,
+            flow: t,
+            checkpoint: `post_checkout_timing_unavailable`,
+            severity: `warning`,
+            errorType: n instanceof Error ? n.name : `unknown`
+        })
+    }
+}
+var Pt = e((() => {
+        d()
+    })),
+    Ft = e((() => {
+        it()
+    })),
+    It, Lt = e((() => {
+        It = `sophia_workspace_onboarding_step`
+    }));
+
+function Rt(e) {
+    let t = e?.filter(e => e.type === "default" || e.type === `prolite`);
+    return t?.some(e => e.available != null) ? {
+        default: Math.max(0, t.find(e => e.type === "default")?.available ?? 0),
+        prolite: Math.max(0, t.find(e => e.type === `prolite`)?.available ?? 0)
+    } : null
+}
+
+function zt({
+    isImmediateInvoiceRolloutEnabled: e,
+    planType: t,
+    isTrialing: n,
+    seatCapacity: r,
+    seatsEntitled: i,
+    seatsInUse: a
+}) {
+    if (!e || t !== _.SELF_SERVE_BUSINESS || n) return null;
+    let o = Rt(r);
+    return o == null ? i == null || a == null ? 0 : Math.max(0, i - Math.max(1, a)) : Math.min(5, o.default+o.prolite)
+}
+var Bt = e((() => {
+    m()
+}));
+
+function Vt({
+    checkoutSource: e,
+    durableCheckoutWorkspaceId: t,
+    isPostTeamOnboardingWorkActivationEligible: n,
+    LandingComponent: r = Ut,
+    FinalStepComponent: i = Kt,
+    useFreeWorkspaceCopy: a = !1,
+    skipInviteStep: o = !1,
+    onboardingStepQueryParam: s,
+    markWorkspaceOnboardingViewedOnComplete: c = !1
+} = {}) {
+    "use no forget";
+    let u = ue(),
+        d = de(),
+        {
+            pathname: f
+        } = le(),
+        {
+            currentStep: p
+        } = qt(s),
+        m = k(),
+        h = U(),
+        ee = I(),
+        [_, y] = (0, q.useState)(!0),
+        b = (0, q.useRef)(null),
+        ie = (0, q.useRef)(!1),
+        x = (0, q.useRef)(!1),
+        [S, ae] = me(),
+        C = (0, q.useMemo)(() => Zt.filter(e => !(o && e === `invite`)), [o]),
+        T = o && p === `invite` ? `complete` : p,
+        E = S.get(`account_id`),
+        D = S.get(`stripe_session_id`) ?? void 0,
+        O = m == null && E != null;
+    fe({
+        ...ce(),
+        enabled: O,
+        refetchInterval: O ? 1e3 : !1,
+        refetchIntervalInBackground: !0
+    });
+    let A = se()?.account,
+        j = E != null && m?.id === E,
+        oe = A != null && m != null && (A.id !== m.id || A.planType !== m.planType || A.isDelinquent !== m.isDelinquent || A.gracePeriodId !== m.gracePeriodId),
+        F = re($t),
+        L = t != null && t === E,
+        R = L ? `durable_business` : `standard_business`,
+        z = F || L,
+        B = s !== `sophia_workspace_onboarding_step` && (L ? l(se()?.accessToken) !== E : oe),
+        V = E == null ? m == null : _ && (!z || !j || B);
+    (0, q.useEffect)(() => {
+        E != null && (b.current ?? (b.current = Date.now(), v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+            checkpoint: `onboarding_started`,
+            flow: R,
+            source: e,
+            checkoutSessionId: D,
+            targetWorkspaceId: E,
+            accountResolutionFixEnabled: F
+        })), j && V && !x.current && (x.current = !0, v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+            checkpoint: `resolved_workspace_still_loading`,
+            flow: R,
+            source: e,
+            checkoutSessionId: D,
+            severity: `warning`,
+            targetWorkspaceId: E,
+            durationMs: Date.now() - (b.current ?? Date.now()),
+            accountResolutionFixEnabled: F
+        })), j && !V && !ie.current && (ie.current = !0, v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+            checkpoint: `onboarding_ready`,
+            flow: R,
+            source: e,
+            checkoutSessionId: D,
+            targetWorkspaceId: E,
+            durationMs: Date.now() - (b.current ?? Date.now()),
+            accountResolutionFixEnabled: F
+        })))
+    }, [D, E, F, j, V, R, e]);
+
+    function pe() {
+        window.location.href = `/`
+    }(0, q.useEffect)(() => {
+        if (S.get(`refresh_account`) === `true` && !z) {
+            y(!1);
+            return
+        }
+        if (E == null || !_ || z && j && !B) return;
+        let t = setTimeout(() => {
+            v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                checkpoint: `account_refresh_wait_timed_out`,
+                flow: R,
+                source: e,
+                severity: `warning`,
+                targetWorkspaceId: E,
+                durationMs: Date.now() - (b.current ?? Date.now()),
+                timeoutMs: Qt
+            }), y(!1)
+        }, Qt);
+        return () => clearTimeout(t)
+    }, [E, j, _, R, S, B, e, z]);
+    let H = (0, q.useCallback)((t, n, r) => {
+        if (V) {
+            v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                checkpoint: `onboarding_step_blocked_by_loading`,
+                flow: R,
+                source: e,
+                severity: `warning`,
+                targetWorkspaceId: E ?? void 0,
+                step: T,
+                durationMs: Date.now() - (b.current ?? Date.now())
+            });
+            return
+        }
+        let i = C.indexOf(T),
+            a = C.length - 1,
+            o = C[n ? a : i + 1],
+            c = new URLSearchParams(S.toString()),
+            l = t ?? c.get(`account_id`);
+        v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+            checkpoint: `onboarding_step_advanced`,
+            flow: R,
+            source: e,
+            targetWorkspaceId: l ?? void 0,
+            currentStep: T,
+            nextStep: o,
+            durationMs: Date.now() - (b.current ?? Date.now())
+        }), t && t !== E && (c.set(`account_id`, t), ae(c, {
+            replace: !0
+        }));
+        let u = n ? a : i + 1;
+        if (!l) {
+            pe();
+            return
+        }
+        if (i !== -1 && u < C.length) {
+            s != null && c.set(s, C[u]);
+            let e = c.toString(),
+                t = `${f}${e?`?${e}`:``}`;
+            d(`${t}#${C[u]}`, {
+                replace: r === !0
+            })
+        }
+    }, [T, E, V, d, R, f, s, S, ae, C, e]);
+    return (0, J.jsx)(`div`, {
+        className: `max-w-sm pb-6`,
+        children: (0, J.jsxs)(`div`, {
+            children: [T === `landing` && (0, J.jsx)(`div`, {
+                children: (0, J.jsx)(r, {
+                    checkoutSource: e,
+                    onNext: H,
+                    isLoading: V,
+                    onboardingFlow: R
+                })
+            }, `landing`), T === `naming` && (0, J.jsx)(`div`, {
+                children: (0, J.jsx)(ut, {
+                    checkoutSource: e,
+                    onNext: H,
+                    useFreeWorkspaceCopy: a
+                })
+            }, `naming`), T === `invite` && !o && (0, J.jsx)(`div`, {
+                children: (0, J.jsx)(Gt, {
+                    checkoutWorkspaceId: E,
+                    onNext: H
+                })
+            }, `invite`), T === `complete` && (0, J.jsx)(`div`, {
+                children: (0, J.jsx)(i, {
+                    onNext: () => {
+                        (async () => {
+                            H();
+                            let t = n === !0 && te(),
+                                r = t && g(en).get(tn, !1);
+                            if (t && await P(), c) {
+                                He.set(!0);
+                                try {
+                                    await w(N.Onboarding)
+                                } catch {}
+                            }
+                            if (E) {
+                                let {
+                                    updatedAccount: t,
+                                    willRedirect: n
+                                } = r ? await M(u, E, h, ee, !0, nn) : await M(u, E, h, ee);
+                                if (!t && !n) {
+                                    v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                                        checkpoint: `final_workspace_switch_failed`,
+                                        flow: R,
+                                        source: e,
+                                        severity: `error`,
+                                        targetWorkspaceId: E,
+                                        durationMs: Date.now() - (b.current ?? Date.now())
+                                    }), ee.danger(h.formatMessage(ne.somethingWentWrong));
+                                    return
+                                }
+                                if (n) {
+                                    v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                                        checkpoint: `onboarding_completed`,
+                                        flow: R,
+                                        source: e,
+                                        checkoutSessionId: D,
+                                        targetWorkspaceId: E,
+                                        durationMs: Date.now() - (b.current ?? Date.now()),
+                                        redirected: !0
+                                    });
+                                    return
+                                }
+                            }
+                            v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                                checkpoint: `onboarding_completed`,
+                                flow: R,
+                                source: e,
+                                checkoutSessionId: D,
+                                targetWorkspaceId: E ?? void 0,
+                                durationMs: Date.now() - (b.current ?? Date.now()),
+                                redirected: r
+                            }), r ? window.location.href = nn : pe()
+                        })()
+                    }
+                })
+            }, `complete`)]
+        })
+    })
+}
+
+function Ht() {
+    "use forget";
+    let e = (0, Yt.c)(1),
+        t;
+    return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, J.jsx)(Et, {}), e[0] = t) : t = e[0], t
+}
+
+function Ut({
+    checkoutSource: e,
+    onNext: t,
+    isLoading: r = !1,
+    onboardingFlow: i = `standard_business`
+}) {
+    "use no forget";
+    let a = k(),
+        {
+            data: o,
+            isLoading: s
+        } = be(),
+        {
+            pathname: c
+        } = le(),
+        [l] = me(),
+        u = l.get(`stripe_session_id`),
+        d = l.get(`account_id`) ?? void 0,
+        f = (0, q.useRef)(null),
+        p = a != null && a.id === l.get(`account_id`) && a.isOwnerOfAccount() && a.planType === _.SELF_SERVE_BUSINESS && a.hasPaidSubscription() && a.data.subscriptionStatus.trial?.isTrialing !== !0 && Re(a.id) && o == null && s,
+        m = r || p;
+    (0, q.useEffect)(() => {
+        c === `/payments/success-team` && u && !m && Nt(u, i, `finish`, d)
+    }, [u, m, i, c, d]), (0, q.useEffect)(() => {
+        if (c !== `/payments/success-team` || !u) return;
+        let t = f.current,
+            n = t?.checkoutSessionId === u && t?.targetWorkspaceId === d,
+            r = {
+                flow: i,
+                source: e,
+                checkoutSessionId: u,
+                targetWorkspaceId: d,
+                step: `landing`
+            };
+        if (m) {
+            if (n) return;
+            f.current = {
+                checkoutSessionId: u,
+                targetWorkspaceId: d,
+                startedAtMs: performance.now()
+            }, v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                ...r,
+                checkpoint: `loading_screen_shown`
+            })
+        } else t != null && n && (f.current = null, v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+            ...r,
+            checkpoint: `loading_screen_hidden`,
+            durationMs: Math.max(0, Math.round(performance.now() - t.startedAtMs))
+        }))
+    }, [u, m, i, c, e, d]);
+    let h = (0, q.useCallback)(() => {
+        if (!a) return;
+        let e = a.subscriptionAnalyticsParams,
+            t = new URLSearchParams(window.location.search).get(`referrer`) || document.referrer;
+        v.logEvent(`Account Pay: Payment Confirmation Modal Clicked`, {
+            ...e,
+            referrer: t
+        })
+    }, [a]);
+    return (0, q.useEffect)(() => {
+        if (!a) return;
+        let e = a.subscriptionAnalyticsParams,
+            t = new URLSearchParams(window.location.search).get(`referrer`) || document.referrer,
+            n = `Account Pay: Payment Confirmation Modal Show`,
+            r = v.logStructuredEvent(`ChatgptSubscriptionPaymentConfirmationShown`, {
+                surface: `CHATGPT_SUBSCRIPTION_PAYMENT_CONFIRMATION_SURFACE_BUSINESS`,
+                legacyStatsigEventName: n,
+                ...Ne(t)
+            });
+        v.logEvent(n, {
+            ...e,
+            referrer: t
+        }, {
+            eventId: r
+        })
+    }, [a]), m ? (0, J.jsx)(Ht, {}) : (0, J.jsxs)(J.Fragment, {
+        children: [(0, J.jsx)(lt, {
+            isTrial: !1
+        }), (0, J.jsx)(ct, {
+            children: (0, J.jsx)(B, {
+                ...Y.standard
+            })
+        }), (0, J.jsx)(rt, {
+            children: (0, J.jsx)(B, {
+                ...Y.description
+            })
+        }), (0, J.jsx)(n, {
+            onClick: () => {
+                t(), h()
+            },
+            size: `large`,
+            fullWidth: !0,
+            children: (0, J.jsx)(B, {
+                ...ne.continueButtonText
+            })
+        })]
+    })
+}
+
+function Wt(e) {
+    "use forget";
+    let t = (0, Yt.c)(4),
+        {
+            onNext: n
+        } = e,
+        r, i;
+    t[0] === n ? (r = t[1], i = t[2]) : (r = () => {
+        n(void 0, !1, !0)
+    }, i = [n], t[0] = n, t[1] = r, t[2] = i), (0, q.useEffect)(r, i);
+    let a;
+    return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, J.jsx)(Ht, {}), t[3] = a) : a = t[3], a
+}
+
+function Gt({
+    checkoutWorkspaceId: e,
+    onNext: t
+}) {
+    let n = U(),
+        r = k(),
+        {
+            data: i,
+            isLoading: a
+        } = be(),
+        o = T(),
+        s = (0, q.useMemo)(() => {
+            if (!o) return null;
+            let [, e] = o.split(`@`);
+            return e ?? null
+        }, [o]),
+        c = (0, q.useMemo)(() => r?.subscriptionAnalyticsParams, [r]),
+        l = r != null && r.isOwnerOfAccount() && r.planType === _.SELF_SERVE_BUSINESS && r.hasPaidSubscription() && r.data.subscriptionStatus.trial?.isTrialing !== !0 && Re(r.id),
+        u = r == null ? null : zt({
+            isImmediateInvoiceRolloutEnabled: l,
+            planType: r.planType,
+            isTrialing: r.data.subscriptionStatus.trial?.isTrialing === !0,
+            seatCapacity: i?.seat_capacity,
+            seatsEntitled: i?.seats_entitled,
+            seatsInUse: i?.seats_in_use
+        }),
+        d = l ? Rt(i?.seat_capacity) : null,
+        f = l && r?.id === e && i == null && a,
+        p = l && r?.id === e && !f && (i == null || d != null && d.default+d.prolite === 0);
+    if ((0, q.useEffect)(() => {
+            r == null || f || p || v.logEvent(`Account Pay: Invite Collaborators Modal Show`, c)
+        }, [c, r, f, p]), r == null || f) return (0, J.jsx)(Ht, {});
+    let m = r.isFreeWorkspace();
+    if (p) return (0, J.jsx)(Wt, {
+        onNext: t
+    });
+    let h = m ? 5 : u ?? (i?.seats_entitled == null ? 1 : Math.max(0, i.seats_entitled - Math.max(1, i.seats_in_use ?? 1)));
+    return (0, J.jsxs)(J.Fragment, {
+        children: [(0, J.jsx)(ct, {
+            children: m ? (0, J.jsx)(B, {
+                ...Y.inviteTitleFreeWorkspace
+            }) : (0, J.jsx)(B, {
+                ...Y.inviteTitle,
+                values: {
+                    seatCount: h,
+                    workspaceName: r.data.name
+                }
+            })
+        }), (0, J.jsx)(`div`, {
+            className: `text-md text-token-text-secondary mt-2 mb-8`,
+            children: m && s ? (0, J.jsx)(B, {
+                ...Y.inviteSubtitleFreeWorkspace,
+                values: {
+                    domain: s
+                }
+            }) : (0, J.jsx)(B, {
+                ...Y.completeDescription
+            })
+        }), (0, J.jsx)(mt, {
+            fullWidthButtons: !0,
+            workspace: r,
+            maxInvites: u,
+            availablePaidSeatCounts: d,
+            cancelButtonText: n.formatMessage(Y.skipAddMembers),
+            onCancel: t,
+            onSuccess: t,
+            contentClassName: `relative left-1/2 w-[calc(100vw-2rem)] max-w-[720px] -translate-x-1/2`
+        })]
+    })
+}
+
+function Kt({
+    onNext: e
+}) {
+    let t = k(),
+        r = (0, q.useMemo)(() => t?.subscriptionAnalyticsParams, [t]);
+    (0, q.useEffect)(() => {
+        v.logEvent(`Account Pay: Workspace Setup Complete Modal Show`, r)
+    }, [r]);
+    let i = () => {
+        v.logEvent(`Account Pay: Workspace Setup Complete Modal Clicked`, r)
+    };
+    return (0, J.jsxs)(J.Fragment, {
+        children: [(0, J.jsx)(ct, {
+            children: (0, J.jsx)(B, {
+                ...Y.completeTitle
+            })
+        }), (0, J.jsx)(rt, {
+            children: (0, J.jsx)(B, {
+                ...Y.completeDescription
+            })
+        }), (0, J.jsx)(n, {
+            onClick: () => {
+                e(), i()
+            },
+            size: `large`,
+            fullWidth: !0,
+            children: (0, J.jsx)(B, {
+                ...Y.continueToChatgpt
+            })
+        })]
+    })
+}
+
+function qt(e) {
+    let {
+        hash: t,
+        pathname: n,
+        search: r
+    } = le(), i = new URLSearchParams(r), a = Jt(t.slice(1)), o = e == null ? null : Jt(i.get(e));
+    return {
+        currentStep: a ?? o ?? `landing`,
+        currentPath: n + r
+    }
+}
+
+function Jt(e) {
+    return e === `caOnboarding` ? `complete` : e != null && rn(e) ? e : null
+}
+var Yt, q, J, Xt, Zt, Qt, $t, en, tn, nn, rn, Y, an = e((() => {
+        Yt = _e(), Le(), m(), Ie(), we(), pt(), Mt(), Pt(), x(), o(), Ve(), st(), Lt(), A(), f(), O(), p(), d(), ke(), r(), ge(), q = t(H()), pe(), V(), Ft(), Bt(), C(), ot(), j(), J = L(), Xt = function(e) {
+            return e.Landing = `landing`, e.Setup = `setup`, e.Naming = `naming`, e.Invite = `invite`, e.Complete = `complete`, e
+        }(Xt || {}), Zt = [`landing`, `naming`, `invite`, `complete`], Qt = 15e3, $t = `1400990654`, en = `1746256812`, tn = `drop_into_work_after_team_onboarding`, nn = `/?surface=work&refresh_account=true`, rn = Ee(Xt), Y = z({
+            standard: {
+                id: `UpgradedToTeamSuccess.trial`,
+                defaultMessage: `Payment successful`
+            },
+            description: {
+                id: `UpgradedToTeamSuccess.description`,
+                defaultMessage: `Your team has been created. You can invite members to join the workspace to start collaborating.`
+            },
+            continueToChatgpt: {
+                id: `UpgradedToTeamSuccess.continueToChatgpt`,
+                defaultMessage: `Continue to ChatGPT`
+            },
+            inviteTitle: {
+                id: `UpgradedToTeamSuccess.inviteTitle`,
+                defaultMessage: `Invite {seatCount, plural, one {# member} other {# members}} to {workspaceName}`
+            },
+            inviteTitleFreeWorkspace: {
+                id: `UpgradedToTeamSuccess.inviteTitleFreeWorkspace`,
+                defaultMessage: `Add your team`
+            },
+            inviteSubtitleFreeWorkspace: {
+                id: `UpgradedToTeamSuccess.inviteSubtitleFreeWorkspace`,
+                defaultMessage: `Invite anyone with an @{domain} email to join this workspace.`
+            },
+            completeTitle: {
+                id: `UpgradedToTeamSuccess.completeTitle`,
+                defaultMessage: `Workspace setup complete`
+            },
+            completeDescription: {
+                id: `UpgradedToTeamSuccess.completeDescription`,
+                defaultMessage: `Supercharge your team's productivity with ChatGPT.`
+            },
+            skipAddMembers: {
+                id: `UpgradedToTeamSuccess.skipAddMembers`,
+                defaultMessage: `Skip this step`
+            }
+        })
+    })),
+    on, sn = e((() => {
+        on = `business_workspace_onboarding_step`
+    }));
+
+function cn({
+    checkoutSource: e,
+    durableCheckoutWorkspaceId: t,
+    isPostTeamOnboardingWorkActivationEligible: n,
+    isTrial: r,
+    isTeam: i,
+    skipTeamInviteStep: a = !1
+}) {
+    let o = U(),
+        s = de(),
+        c = ue(),
+        l = k()?.hasPaidSubscription() ?? !1;
+    (0, un.useEffect)(() => {
+        l && Ue({
+            hasPaidSubscription: l,
+            intl: o,
+            queryClient: c
+        })
+    }, [l, o, c]);
+    let u = (0, un.useCallback)(e => {
+        e.preventDefault(), v.logEvent(`Account Pay: Click Account Payment Success Continue`), s(`/`)
+    }, [s]);
+    return (0, X.jsxs)(at, {
+        children: [(0, X.jsx)(ft, {
+            children: (0, X.jsx)(`title`, {
+                children: o.formatMessage(dn.pageTitle)
+            })
+        }), (0, X.jsx)(`div`, {
+            className: `text-token-text-primary flex flex-col`,
+            children: i ? (0, X.jsx)(Vt, {
+                checkoutSource: e,
+                durableCheckoutWorkspaceId: t,
+                isPostTeamOnboardingWorkActivationEligible: n,
+                skipInviteStep: a,
+                onboardingStepQueryParam: on,
+                markWorkspaceOnboardingViewedOnComplete: !0
+            }) : (0, X.jsx)(ln, {
+                isTrial: r,
+                onContinue: u
+            })
+        })]
+    })
+}
+
+function ln({
+    isTrial: e,
+    onContinue: t
+}) {
+    let r = e ? dn.trial : dn.standard;
+    return (0, X.jsxs)(X.Fragment, {
+        children: [(0, X.jsx)(lt, {
+            isTrial: !!e
+        }), (0, X.jsxs)(`div`, {
+            className: `flex flex-col items-center`,
+            children: [(0, X.jsx)(ct, {
+                children: (0, X.jsx)(B, {
+                    ...r
+                })
+            }), (0, X.jsx)(rt, {
+                children: (0, X.jsx)(B, {
+                    ...dn.paymentReceived
+                })
+            }), (0, X.jsx)(n, {
+                onClick: t,
+                size: `large`,
+                fullWidth: !0,
+                children: (0, X.jsx)(B, {
+                    ...ne.continueButtonText
+                })
+            })]
+        })]
+    })
+}
+var un, X, dn, fn = e((() => {
+    x(), st(), o(), We(), A(), d(), dt(), ge(), un = t(H()), pe(), V(), Ft(), an(), sn(), X = L(), dn = z({
+        pageTitle: {
+            id: `PaymentsSuccess.pageTitle`,
+            defaultMessage: `Account - Payment success`
+        },
+        paymentReceived: {
+            id: `PaymentsSuccess.paymentSuccessful`,
+            defaultMessage: `You've been upgraded to ChatGPT Plus`
+        },
+        standard: {
+            id: `PaymentsSuccess.standard`,
+            defaultMessage: `Payment successful`
+        },
+        trial: {
+            id: `PaymentsSuccess.trial`,
+            defaultMessage: `Trial started`
+        }
+    })
+}));
+
+function pn(e) {
+    "use forget";
+    let t = (0, gn.c)(2),
+        {
+            markWorkspaceOnboardingViewedOnComplete: n
+        } = e,
+        r = n !== void 0 && n,
+        i;
+    return t[0] === r ? i = t[1] : (i = (0, Z.jsx)(Vt, {
+        LandingComponent: mn,
+        FinalStepComponent: hn,
+        skipInviteStep: !0,
+        onboardingStepQueryParam: It,
+        markWorkspaceOnboardingViewedOnComplete: r
+    }), t[0] = r, t[1] = i), i
+}
+
+function mn(e) {
+    "use forget";
+    let t = (0, gn.c)(15),
+        {
+            onNext: r,
+            isLoading: i
+        } = e,
+        a = i !== void 0 && i,
+        o = k(),
+        s;
+    t[0] === o ? s = t[1] : (s = () => {
+        if (!o) return;
+        let e = o.subscriptionAnalyticsParams,
+            t = new URLSearchParams(window.location.search).get(`referrer`) || document.referrer;
+        v.logEvent(`Account Pay: Payment Confirmation Modal Clicked`, {
+            ...e,
+            referrer: t
+        })
+    }, t[0] = o, t[1] = s);
+    let c = s,
+        l, u;
+    t[2] === o ? (l = t[3], u = t[4]) : (l = () => {
+        if (!o) return;
+        let e = o.subscriptionAnalyticsParams,
+            t = new URLSearchParams(window.location.search).get(`referrer`) || document.referrer,
+            n = v.logStructuredEvent(`ChatgptSubscriptionPaymentConfirmationShown`, {
+                surface: `CHATGPT_SUBSCRIPTION_PAYMENT_CONFIRMATION_SURFACE_SOPHIA`,
+                legacyStatsigEventName: `Account Pay: Payment Confirmation Modal Show`,
+                ...Ne(t)
+            });
+        v.logEvent(`Account Pay: Payment Confirmation Modal Show`, {
+            ...e,
+            referrer: t
+        }, {
+            eventId: n
+        })
+    }, u = [o], t[2] = o, t[3] = l, t[4] = u), (0, _n.useEffect)(l, u);
+    let d;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, Z.jsx)(lt, {
+        isTrial: !1
+    }), t[5] = d) : d = t[5];
+    let f;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, Z.jsx)(ct, {
+        children: (0, Z.jsx)(B, {
+            ...vn.paymentSuccessful
+        })
+    }), t[6] = f) : f = t[6];
+    let p;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (p = (0, Z.jsx)(rt, {
+        children: (0, Z.jsx)(B, {
+            ...vn.workspaceCreated
+        })
+    }), t[7] = p) : p = t[7];
+    let m;
+    t[8] !== r || t[9] !== c ? (m = () => {
+        r(), c()
+    }, t[8] = r, t[9] = c, t[10] = m) : m = t[10];
+    let h;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, Z.jsx)(B, {
+        ...ne.continueButtonText
+    }), t[11] = h) : h = t[11];
+    let ee;
+    return t[12] !== a || t[13] !== m ? (ee = (0, Z.jsxs)(Z.Fragment, {
+        children: [d, f, p, (0, Z.jsx)(n, {
+            onClick: m,
+            size: `large`,
+            loading: a,
+            fullWidth: !0,
+            children: h
+        })]
+    }), t[12] = a, t[13] = m, t[14] = ee) : ee = t[14], ee
+}
+
+function hn(e) {
+    "use forget";
+    let t = (0, gn.c)(13),
+        {
+            onNext: r
+        } = e,
+        i = k()?.subscriptionAnalyticsParams,
+        a, o;
+    t[0] === i ? (a = t[1], o = t[2]) : (a = () => {
+        v.logEvent(`Account Pay: Workspace Setup Complete Modal Show`, i)
+    }, o = [i], t[0] = i, t[1] = a, t[2] = o), (0, _n.useEffect)(a, o);
+    let s;
+    t[3] === i ? s = t[4] : (s = () => {
+        v.logEvent(`Account Pay: Workspace Setup Complete Modal Clicked`, i)
+    }, t[3] = i, t[4] = s);
+    let c = s,
+        l;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, Z.jsx)(ct, {
+        children: (0, Z.jsx)(B, {
+            ...vn.setupComplete
+        })
+    }), t[5] = l) : l = t[5];
+    let u;
+    t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, Z.jsx)(rt, {
+        children: (0, Z.jsx)(B, {
+            ...vn.setupCompleteDescription
+        })
+    }), t[6] = u) : u = t[6];
+    let d;
+    t[7] !== r || t[8] !== c ? (d = () => {
+        r(), c()
+    }, t[7] = r, t[8] = c, t[9] = d) : d = t[9];
+    let f;
+    t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, Z.jsx)(B, {
+        ...vn.continueToChatgpt
+    }), t[10] = f) : f = t[10];
+    let p;
+    return t[11] === d ? p = t[12] : (p = (0, Z.jsxs)(Z.Fragment, {
+        children: [l, u, (0, Z.jsx)(n, {
+            onClick: d,
+            size: `large`,
+            fullWidth: !0,
+            children: f
+        })]
+    }), t[11] = d, t[12] = p), p
+}
+var gn, _n, Z, vn, yn = e((() => {
+    gn = _e(), Le(), x(), o(), Ft(), an(), st(), A(), d(), _n = t(H()), pe(), Lt(), Z = L(), vn = z({
+        paymentSuccessful: {
+            id: `UpgradedToSophiaSuccess.paymentSuccessful`,
+            defaultMessage: `Payment successful`
+        },
+        workspaceCreated: {
+            id: `UpgradedToSophiaSuccess.workspaceCreated`,
+            defaultMessage: `Your workspace has been created.`
+        },
+        setupComplete: {
+            id: `UpgradedToSophiaSuccess.setupComplete`,
+            defaultMessage: `Workspace setup complete`
+        },
+        setupCompleteDescription: {
+            id: `UpgradedToSophiaSuccess.setupCompleteDescription`,
+            defaultMessage: `Continue to ChatGPT to start using your workspace.`
+        },
+        continueToChatgpt: {
+            id: `UpgradedToSophiaSuccess.continueToChatgpt`,
+            defaultMessage: `Continue to ChatGPT`
+        }
+    })
+}));
+
+function bn() {
+    "use forget";
+    let e = (0, xn.c)(7),
+        t = U(),
+        n;
+    e[0] === t ? n = e[1] : (n = t.formatMessage(Cn.pageTitle), e[0] = t, e[1] = n);
+    let r;
+    e[2] === n ? r = e[3] : (r = (0, Sn.jsx)(ft, {
+        children: (0, Sn.jsx)(`title`, {
+            children: n
+        })
+    }), e[2] = n, e[3] = r);
+    let i;
+    e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (i = (0, Sn.jsx)(`div`, {
+        className: `text-token-text-primary flex flex-col`,
+        children: (0, Sn.jsx)(pn, {
+            markWorkspaceOnboardingViewedOnComplete: !0
+        })
+    }), e[4] = i) : i = e[4];
+    let a;
+    return e[5] === r ? a = e[6] : (a = (0, Sn.jsxs)(at, {
+        children: [r, i]
+    }), e[5] = r, e[6] = a), a
+}
+var xn, Sn, Cn, wn = e((() => {
+    xn = _e(), st(), dt(), pe(), yn(), Sn = L(), Cn = z({
+        pageTitle: {
+            id: `SophiaPaymentsSuccess.pageTitle`,
+            defaultMessage: `Account - Payment success`
+        }
+    })
+}));
+
+function Tn(e) {
+    "use forget";
+    let t = (0, Mn.c)(45),
+        {
+            actionRequired: r,
+            paymentConfirmed: a,
+            recoveryWorkspaceId: o,
+            authenticationRequired: s
+        } = e,
+        l = a === void 0 || a,
+        u = s !== void 0 && s,
+        d = U(),
+        f;
+    t[0] === d ? f = t[1] : (f = d.formatMessage(In.title), t[0] = d, t[1] = f);
+    let p = f,
+        m = ue(),
+        [h, ee] = (0, Q.useState)(!1),
+        [g, _] = (0, Q.useState)(!1),
+        v = (0, Q.useRef)(null),
+        y = (0, Q.useRef)(null),
+        b, te;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (b = () => () => v.current?.abort(), te = [], t[2] = b, t[3] = te) : (b = t[2], te = t[3]), (0, Q.useEffect)(b, te);
+    let re;
+    t[4] !== u || t[5] !== d || t[6] !== h || t[7] !== m || t[8] !== o ? (re = async () => {
+        if (o == null || h) return;
+        let e = v.current ?? new AbortController;
+        v.current = e, ee(!0);
+        try {
+            let t = Se([e.signal, Te(3e4)]),
+                n = y.current ?? On(m, o, d, e.signal, u ? window.location.href : void 0);
+            y.current = n;
+            let r = () => {
+                y.current === n && (y.current = null, v.current = null)
+            };
+            n.then(r, r), await i(n, t) || (u ? c().danger(ne.somethingWentWrong) : _(!0))
+        } catch {
+            e.signal.aborted || c().danger(ne.somethingWentWrong)
+        }
+        e.signal.aborted || ee(!1)
+    }, t[4] = u, t[5] = d, t[6] = h, t[7] = m, t[8] = o, t[9] = re) : re = t[9];
+    let ie = re,
+        x;
+    t[10] === p ? x = t[11] : (x = (0, $.jsx)(`h1`, {
+        className: `text-xl font-semibold`,
+        children: p
+    }), t[10] = p, t[11] = x);
+    let S;
+    t[12] !== r || t[13] !== u || t[14] !== d || t[15] !== l || t[16] !== g || t[17] !== o ? (S = u ? (0, $.jsx)(B, {
+        id: `businessWorkspaceRecovery.authentication.description`,
+        defaultMessage: `Your workspace was created, but this session cannot access it. Sign in with the same account to continue. If access is still blocked, contact your administrator or support.`
+    }) : g ? (0, $.jsx)(B, {
+        id: `businessWorkspaceRecovery.inactive.unavailable`,
+        defaultMessage: `We couldn’t find an available reactivation option for this workspace. Contact support to restore access.`
+    }) : o == null ? d.formatMessage(l ? r ? In.supportDescription : In.retryDescription : ne.somethingWentWrong) : (0, $.jsx)(B, {
+        id: `businessWorkspaceRecovery.inactive.description`,
+        defaultMessage: `This checkout belongs to a previous workspace subscription. Open the workspace to review your access and reactivation options.`
+    }), t[12] = r, t[13] = u, t[14] = d, t[15] = l, t[16] = g, t[17] = o, t[18] = S) : S = t[18];
+    let ae;
+    t[19] === S ? ae = t[20] : (ae = (0, $.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm leading-6`,
+        children: S
+    }), t[19] = S, t[20] = ae);
+    let C;
+    t[21] !== u || t[22] !== ie || t[23] !== h || t[24] !== g || t[25] !== o ? (C = o != null && !g && (0, $.jsx)(n, {
+        color: `primary`,
+        disabled: h,
+        onClick: () => void ie(),
+        children: u ? (0, $.jsx)(B, {
+            id: `businessWorkspaceRecovery.authentication.signIn`,
+            defaultMessage: `Sign in to continue`
+        }) : (0, $.jsx)(B, {
+            id: `businessWorkspaceRecovery.inactive.openWorkspace`,
+            defaultMessage: `Open workspace`
+        })
+    }), t[21] = u, t[22] = ie, t[23] = h, t[24] = g, t[25] = o, t[26] = C) : C = t[26];
+    let w;
+    t[27] !== r || t[28] !== u || t[29] !== d ? (w = (!r || u) && (0, $.jsx)(n, {
+        color: u ? `secondary` : `primary`,
+        onClick: En,
+        children: d.formatMessage(In.retry)
+    }), t[27] = r, t[28] = u, t[29] = d, t[30] = w) : w = t[30];
+    let T = g || r && o == null ? `primary` : `secondary`,
+        E;
+    t[31] === d ? E = t[32] : (E = d.formatMessage(In.support), t[31] = d, t[32] = E);
+    let D;
+    t[33] !== T || t[34] !== E ? (D = (0, $.jsx)(n, {
+        as: `a`,
+        to: `https://help.openai.com/`,
+        openNewTab: !0,
+        color: T,
+        children: E
+    }), t[33] = T, t[34] = E, t[35] = D) : D = t[35];
+    let O;
+    t[36] !== C || t[37] !== w || t[38] !== D || t[39] !== x || t[40] !== ae ? (O = (0, $.jsx)(Oe.Contents, {
+        className: `flex h-full items-center justify-center px-6`,
+        role: `alert`,
+        children: (0, $.jsxs)(`div`, {
+            className: `flex w-full max-w-md flex-col gap-5 text-center`,
+            children: [x, ae, C, w, D]
+        })
+    }), t[36] = C, t[37] = w, t[38] = D, t[39] = x, t[40] = ae, t[41] = O) : O = t[41];
+    let k;
+    return t[42] !== O || t[43] !== p ? (k = (0, $.jsx)(Oe, {
+        open: !0,
+        onOpenChange: Dn,
+        accessibleTitle: p,
+        children: O
+    }), t[42] = O, t[43] = p, t[44] = k) : k = t[44], k
+}
+
+function En() {
+    return window.location.reload()
+}
+
+function Dn() {}
+async function On(e, t, n, r, a) {
+    let o = se()?.user?.id,
+        s = await i(b(e, t), Se([r, Te(3e4)]));
+    if (r.throwIfAborted(), o == null || se()?.user?.id !== o || s == null || a != null && s.isDeactivated() || s.isDeactivated() && Xe(s) == null) return !1;
+    let l = a ?? (s.isDeactivated() ? `/workspace/deactivated` : `/`),
+        u = await M(e, s.id, n, c(), !0, l);
+    if (!u.updatedAccount && !u.willRedirect) throw Error(`Workspace recovery switch did not complete`);
+    return u.willRedirect || (r.throwIfAborted(), window.location.assign(l)), !0
+}
+
+function kn(e) {
+    switch (e) {
+        case `succeeded`:
+            return `setting_up_access`;
+        default:
+            return `preparing_workspace`
+    }
+}
+
+function An(e, t) {
+    if (e == null) throw new K(`invalid_status`, t);
+    return e
+}
+
+function jn(e) {
+    throw e
+}
+var Mn, Q, $, Nn, Pn, Fn, In, Ln, Rn, zn = e((() => {
+    V(), Mn = _e(), m(), x(), Fe(), Be(), wt(), Mt(), Ze(), Pt(), et(), ye(), G(), Ke(), Me(), o(), Ce(), fn(), sn(), je(), W(), Lt(), wn(), A(), f(), Ae(), xe(), p(), d(), r(), a(), ge(), Q = t(H()), pe(), tt(), $ = L(), Nn = 500, Pn = 1e4, Fn = 2 * St, In = z({
+        title: {
+            id: `businessWorkspaceRecovery.title`,
+            defaultMessage: `Your workspace needs attention`
+        },
+        retryDescription: {
+            id: `businessWorkspaceRecovery.retryDescription`,
+            defaultMessage: `Your payment succeeded. Try again to finish setting up your workspace without being charged again.`
+        },
+        supportDescription: {
+            id: `businessWorkspaceRecovery.supportDescription`,
+            defaultMessage: `Your payment succeeded, but we need help finishing your workspace setup.`
+        },
+        retry: {
+            id: `businessWorkspaceRecovery.retry`,
+            defaultMessage: `Try again`
+        },
+        support: {
+            id: `businessWorkspaceRecovery.support`,
+            defaultMessage: `Contact support`
+        }
+    }), Ln = ({
+        currentUrl: e,
+        defaultShouldRevalidate: t,
+        nextUrl: n
+    }) => {
+        let r = new URLSearchParams(e.searchParams),
+            i = new URLSearchParams(n.searchParams);
+        for (let e of [on, It]) r.delete(e), i.delete(e);
+        return (ht() || r.get(`durable_business_checkout`) === `true` || i.get(`durable_business_checkout`) === `true`) && e.pathname === n.pathname && !r.has(`account_id`) && i.delete(`account_id`), e.pathname === n.pathname && r.toString() === i.toString() ? !1 : t
+    }, Rn = R(function() {
+        "use forget";
+        let e = (0, Mn.c)(127),
+            t = de(),
+            n = ue(),
+            r = k(),
+            [a, o] = me(),
+            u = he(),
+            [d, f] = (0, Q.useState)(null),
+            [p, m] = (0, Q.useState)(null),
+            h;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (h = {
+            key: `chatgpt-subscribe-plan-business`
+        }, e[0] = h) : h = e[0];
+        let {
+            trackSelectedPixels: g
+        } = ze(h), y;
+        e[1] === Symbol.for(`react.memo_cache_sentinel`) ? (y = {
+            key: Pe.SELF_SERVE_BUSINESS_WORKSPACE_CREATED
+        }, e[1] = y) : y = e[1];
+        let {
+            trackSelectedPixels: b
+        } = ze(y), te = (0, Q.useRef)(!1), re = (0, Q.useRef)(!1), ie = (0, Q.useRef)(!1), x = (0, Q.useRef)(!1), C = (0, Q.useRef)(null), w = u.postCheckoutResult, T = u.checkout_id, D = u.processor_entity, O = u.postCheckoutResult === $e.Success ? u.completion.checkout_kind ?? oe.Standard : `unknown`, A = u.postCheckoutResult === $e.Success ? u.completion.entry_point ?? `unknown` : `unknown`, j;
+        e[2] === a ? j = e[3] : (j = a.get(`account_id`), e[2] = a, e[3] = j);
+        let M = j,
+            N = w === $e.Success,
+            P = u.postCheckoutResult === $e.Success ? void 0 : u.durableCheckoutRecovery,
+            F;
+        e[4] !== u.completion || e[5] !== u.postCheckoutResult ? (F = u.postCheckoutResult === $e.Success && _t(u.completion), e[4] = u.completion, e[5] = u.postCheckoutResult, e[6] = F) : F = e[6];
+        let I = F,
+            le = d?.checkoutSessionId === T ? d : null,
+            L = le?.state ?? `pending`,
+            R = le?.failure ?? null,
+            z;
+        e[7] !== M || e[8] !== T || e[9] !== p?.checkoutSessionId || e[10] !== p?.workspaceId || e[11] !== r?.id || e[12] !== I ? (z = I && p?.checkoutSessionId === T && p?.workspaceId === M && M != null && r?.id === M && l(se()?.accessToken) === M, e[7] = M, e[8] = T, e[9] = p?.checkoutSessionId, e[10] = p?.workspaceId, e[11] = r?.id, e[12] = I, e[13] = z) : z = e[13];
+        let B = z,
+            fe = M == null || r?.id === M,
+            V = !I && fe && r?.planType === _.SCI,
+            pe = N && A === ve.SOPHIA_CHECKOUT_PAGE_CONTENT,
+            H = V || pe,
+            ge, _e;
+        e[14] !== M || e[15] !== T || e[16] !== I || e[17] !== H || e[18] !== N ? (ge = () => {
+            N && !H && T && Nt(T, I ? `durable_business` : `standard_business`, `start`, M ?? void 0)
+        }, _e = [M, T, I, H, N], e[14] = M, e[15] = T, e[16] = I, e[17] = H, e[18] = N, e[19] = ge, e[20] = _e) : (ge = e[19], _e = e[20]), (0, Q.useEffect)(ge, _e);
+        let U;
+        e[21] !== O || e[22] !== T || e[23] !== H || e[24] !== a ? (U = !H && T != null ? s(O, T, a).source : void 0, e[21] = O, e[22] = T, e[23] = H, e[24] = a, e[25] = U) : U = e[25];
+        let W = U,
+            G = H ? _.SCI : _.SELF_SERVE_BUSINESS,
+            ye = !H,
+            be = N,
+            xe = N && !H && M != null && r?.id === M && (r.planType === _.SELF_SERVE_BUSINESS || r.planType === _.SELF_SERVE_BUSINESS_PROLITE),
+            Ce = I && !B && R == null,
+            we, Ee;
+        e[26] !== M || e[27] !== T || e[28] !== I || e[29] !== Ce ? (we = () => {
+            if (!T || !I) return;
+            let e = C.current,
+                t = {
+                    flow: `durable_business`,
+                    checkoutSessionId: T,
+                    targetWorkspaceId: M ?? void 0,
+                    step: `workspace_provisioning`
+                };
+            if (Ce) {
+                if (e?.checkoutSessionId === T) return;
+                C.current = {
+                    checkoutSessionId: T,
+                    startedAtMs: performance.now()
+                }, v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                    ...t,
+                    checkpoint: `loading_screen_shown`
+                })
+            } else e?.checkoutSessionId === T && (C.current = null, v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                ...t,
+                checkpoint: `loading_screen_hidden`,
+                durationMs: Math.max(0, Math.round(performance.now() - e.startedAtMs))
+            }))
+        }, Ee = [M, T, I, Ce], e[26] = M, e[27] = T, e[28] = I, e[29] = Ce, e[30] = we, e[31] = Ee) : (we = e[30], Ee = e[31]), (0, Q.useEffect)(we, Ee);
+        let Oe, ke;
+        e[32] !== N || e[33] !== ye || e[34] !== g || e[35] !== b ? (Oe = () => {
+            !N || !ye || te.current || (te.current = !0, g(), b())
+        }, ke = [N, ye, g, b], e[32] = N, e[33] = ye, e[34] = g, e[35] = b, e[36] = Oe, e[37] = ke) : (Oe = e[36], ke = e[37]), (0, Q.useEffect)(Oe, ke);
+        let Ae, je;
+        e[38] !== M || e[39] !== P || e[40] !== O || e[41] !== G || e[42] !== T || e[43] !== A || e[44] !== N || e[45] !== t || e[46] !== w || e[47] !== D ? (Ae = () => {
+            N || ((P != null || ht()) && v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                checkpoint: `checkout_confirmation_failed`,
+                flow: `durable_business`,
+                severity: `error`,
+                checkoutSessionId: T ?? void 0,
+                targetWorkspaceId: M ?? void 0,
+                checkoutKind: O,
+                entryPoint: A,
+                planType: G,
+                errorType: String(w)
+            }), qe(`payments_success_team`, {
+                checkoutPlanType: G,
+                checkoutId: T ?? void 0,
+                processorEntity: D ?? void 0,
+                outcome: w
+            }), P == null && w !== $e.UserMismatch && t(`/#pricing`, {
+                replace: !0
+            }))
+        }, je = [M, P, O, G, T, A, N, t, w, D], e[38] = M, e[39] = P, e[40] = O, e[41] = G, e[42] = T, e[43] = A, e[44] = N, e[45] = t, e[46] = w, e[47] = D, e[48] = Ae, e[49] = je) : (Ae = e[48], je = e[49]), (0, Q.useEffect)(Ae, je);
+        let Me, Ne;
+        e[50] !== M || e[51] !== O || e[52] !== G || e[53] !== T || e[54] !== A || e[55] !== I || e[56] !== H || e[57] !== N || e[58] !== w || e[59] !== D || e[60] !== be || e[61] !== W ? (Me = () => {
+            if (!N || x.current) return;
+            x.current = !0;
+            let e = Qe({
+                checkoutId: T,
+                checkoutPlanType: G,
+                postCheckoutResult: w,
+                processorEntity: D ?? void 0
+            });
+            !H && e != null && e.checkoutSessionId === T && v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                checkpoint: `checkout_success_latency`,
+                flow: I ? `durable_business` : `standard_business`,
+                source: W,
+                checkoutSessionId: T,
+                targetWorkspaceId: M ?? void 0,
+                durationMs: e.durationMs,
+                checkoutKind: O,
+                entryPoint: A,
+                planType: G
+            }), v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                checkpoint: `payment_confirmed`,
+                flow: I ? `durable_business` : `standard_business`,
+                source: W,
+                checkoutSessionId: T ?? void 0,
+                targetWorkspaceId: M ?? void 0,
+                checkoutKind: O,
+                entryPoint: A,
+                planType: G
+            }), v.logEvent(`Subscription: Payment Success Page`, {
+                plan_type: G
+            });
+            let t = T ?? void 0,
+                n = D ?? void 0,
+                r = v.logStructuredEvent(`ChatgptCheckoutPaymentSuccessPage`, {
+                    checkoutPlanType: G,
+                    checkoutId: t,
+                    processorEntity: n,
+                    checkoutKind: O,
+                    entryPoint: A
+                });
+            S.logEvent(`chatgpt_team_payment_success`, void 0, r ? {
+                unique_event_id: r
+            } : void 0), be && De({
+                accountId: M,
+                location: `PaymentsSuccessTeamPage`,
+                planName: G
+            }), ae()
+        }, Ne = [M, G, T, O, A, I, H, N, w, D, be, W], e[50] = M, e[51] = O, e[52] = G, e[53] = T, e[54] = A, e[55] = I, e[56] = H, e[57] = N, e[58] = w, e[59] = D, e[60] = be, e[61] = W, e[62] = Me, e[63] = Ne) : (Me = e[62], Ne = e[63]), (0, Q.useEffect)(Me, Ne);
+        let Fe;
+        e[64] !== M || e[65] !== O || e[66] !== G || e[67] !== T || e[68] !== A || e[69] !== I || e[70] !== N || e[71] !== D || e[72] !== n || e[73] !== W ? (Fe = () => {
+            if (!N || I || !M) return;
+            let e = !1,
+                t = null,
+                r = Date.now(),
+                i = 0,
+                a = !1;
+            v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                checkpoint: `account_resolution_started`,
+                flow: `standard_business`,
+                source: W,
+                checkoutSessionId: T ?? void 0,
+                targetWorkspaceId: M,
+                checkoutKind: O,
+                entryPoint: A,
+                planType: G,
+                timeoutMs: Pn
+            });
+            let o = e => {
+                    S.logEvent(`chatgpt_team_success_account_resolution`, null, {
+                        account_state: e,
+                        previously_missing: re.current ? `true` : `false`
+                    })
+                },
+                s = () => {
+                    (async () => {
+                        if (e || !M) return;
+                        i += 1;
+                        try {
+                            await n.refetchQueries({
+                                queryKey: ce().queryKey
+                            })
+                        } catch (e) {
+                            let t = e;
+                            a || (a = !0, v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                                checkpoint: `account_refresh_failed`,
+                                flow: `standard_business`,
+                                source: W,
+                                severity: `warning`,
+                                checkoutSessionId: T ?? void 0,
+                                targetWorkspaceId: M,
+                                attempt: i,
+                                durationMs: Date.now() - r,
+                                errorType: t instanceof Error ? t.name : typeof t
+                            }))
+                        }
+                        if (e) return;
+                        let c;
+                        try {
+                            ({
+                                updatedAccount: c
+                            } = await E(n, M))
+                        } catch (e) {
+                            let t = e;
+                            throw v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                                checkpoint: `workspace_switch_failed`,
+                                flow: `standard_business`,
+                                source: W,
+                                severity: `error`,
+                                checkoutSessionId: T ?? void 0,
+                                targetWorkspaceId: M,
+                                attempt: i,
+                                durationMs: Date.now() - r,
+                                errorType: t instanceof Error ? t.name : typeof t
+                            }), t
+                        }
+                        if (!e) {
+                            if (c) {
+                                ie.current || (ie.current = !0, o(`found`), v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                                    checkpoint: `workspace_ready`,
+                                    flow: `standard_business`,
+                                    source: W,
+                                    checkoutSessionId: T ?? void 0,
+                                    targetWorkspaceId: M,
+                                    checkoutKind: O,
+                                    entryPoint: A,
+                                    planType: G,
+                                    durationMs: Date.now() - r,
+                                    retryCount: i - 1,
+                                    previouslyMissing: re.current
+                                }));
+                                return
+                            }
+                            if (re.current || (o(`missing`), re.current = !0, v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                                    checkpoint: `workspace_missing_after_payment`,
+                                    flow: `standard_business`,
+                                    source: W,
+                                    severity: `warning`,
+                                    checkoutSessionId: T ?? void 0,
+                                    targetWorkspaceId: M,
+                                    attempt: i,
+                                    durationMs: Date.now() - r
+                                })), Date.now() - r >= Pn) {
+                                v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                                    checkpoint: `account_resolution_timed_out`,
+                                    flow: `standard_business`,
+                                    source: W,
+                                    severity: `error`,
+                                    checkoutSessionId: T ?? void 0,
+                                    targetWorkspaceId: M,
+                                    checkoutKind: O,
+                                    entryPoint: A,
+                                    planType: G,
+                                    durationMs: Date.now() - r,
+                                    retryCount: i - 1,
+                                    timeoutMs: Pn
+                                }), Ge({
+                                    checkoutSessionId: T ?? void 0,
+                                    checkoutPlanType: G,
+                                    processorEntity: D ?? void 0,
+                                    checkoutKind: O,
+                                    entryPoint: A,
+                                    accessStage: `team_account_resolution`,
+                                    failureReason: `account_resolution_timeout`
+                                });
+                                return
+                            }
+                            t = setTimeout(s, Nn)
+                        }
+                    })()
+                };
+            return s(), () => {
+                e = !0, t != null && clearTimeout(t)
+            }
+        }, e[64] = M, e[65] = O, e[66] = G, e[67] = T, e[68] = A, e[69] = I, e[70] = N, e[71] = D, e[72] = n, e[73] = W, e[74] = Fe) : Fe = e[74];
+        let Ie = r?.id,
+            Le;
+        e[75] !== M || e[76] !== O || e[77] !== G || e[78] !== T || e[79] !== A || e[80] !== I || e[81] !== N || e[82] !== D || e[83] !== n || e[84] !== W || e[85] !== Ie ? (Le = [M, O, G, T, Ie, A, I, N, D, n, W], e[75] = M, e[76] = O, e[77] = G, e[78] = T, e[79] = A, e[80] = I, e[81] = N, e[82] = D, e[83] = n, e[84] = W, e[85] = Ie, e[86] = Le) : Le = e[86], (0, Q.useEffect)(Fe, Le);
+        let Re;
+        e[87] !== M || e[88] !== O || e[89] !== G || e[90] !== T || e[91] !== A || e[92] !== I || e[93] !== B || e[94] !== D || e[95] !== n || e[96] !== o ? (Re = () => {
+            if (!I || !T || B) return;
+            let e = new AbortController,
+                t = Ct,
+                r = Date.now(),
+                a = se()?.user?.id,
+                s = () => !e.signal.aborted && a != null && se()?.user?.id === a,
+                u = 0,
+                d = 0,
+                p = `workspace_provisioning_failed`;
+            return v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                checkpoint: `account_resolution_started`,
+                flow: `durable_business`,
+                checkoutSessionId: T,
+                targetWorkspaceId: M ?? void 0,
+                checkoutKind: O,
+                entryPoint: A,
+                planType: G,
+                timeoutMs: Ct
+            }), (async () => {
+                try {
+                    let c = await yt({
+                        checkoutSessionId: T,
+                        onStatusChange: e => {
+                            s() && (f({
+                                checkoutSessionId: T,
+                                state: e.state,
+                                failure: null
+                            }), u += 1, v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                                checkpoint: `workspace_provisioning_status_changed`,
+                                flow: `durable_business`,
+                                checkoutSessionId: T,
+                                targetWorkspaceId: e.workspaceId ?? M ?? void 0,
+                                step: e.state,
+                                attempt: u,
+                                durationMs: Date.now() - r
+                            }))
+                        },
+                        signal: e.signal
+                    });
+                    if (!s()) return;
+                    let h = An(c.workspaceId, c);
+                    m({
+                        checkoutSessionId: T,
+                        workspaceId: h
+                    });
+                    let g = Date.now();
+                    t = Fn;
+                    let _ = Te(Fn),
+                        y = Se([e.signal, _]),
+                        b = null,
+                        te = !1;
+                    for (; !e.signal.aborted;) {
+                        try {
+                            if (te && (p = `account_refresh_failed`, c = await yt({
+                                    checkoutSessionId: T,
+                                    signal: y
+                                }), c.workspaceId !== h && jn(new K(`checkout_mismatch`, c))), te = !0, p = `account_discovery_failed`, d += 1, await ee(n, y, {
+                                    userId: a,
+                                    workspaceAccount: c.workspaceAccount
+                                }), p = `workspace_switch_failed`, y.throwIfAborted(), !s()) return;
+                            let {
+                                updatedAccount: e
+                            } = await i(E(n, h, !0), y);
+                            if (e && se()?.user?.id === a && l(se()?.accessToken) === h) break
+                        } catch (e) {
+                            let t = e;
+                            if (!s()) return;
+                            if (t instanceof K && jn(t), _.aborted && jn(new K(`timed_out`, c)), Date.now() - g >= Fn) {
+                                b = t;
+                                break
+                            }
+                        }
+                        Date.now() - g >= Fn && jn(new K(`timed_out`, c));
+                        try {
+                            await vt(Nn, y)
+                        } catch {
+                            if (!s()) return;
+                            jn(new K(`timed_out`, c))
+                        }
+                    }
+                    if (!s()) return;
+                    b != null && jn(b), v.logStructuredEvent(`ChatgptWebBusinessOnboardingCheckpoint`, {
+                        checkpoint: `workspace_ready`,
+                        flow: `durable_business`,
+                        checkoutSessionId: T,
+                        targetWorkspaceId: h,
+                        checkoutKind: O,
+                        entryPoint: A,
+                        planType: G,
+                        durationMs: Date.now() - r,
+                        retryCount: Math.max(0, d - 1)
+                    }), M !== h && o(e => (e.set(`account_id`, h), e), {
+                        replace: !0
+                    })
+                } catch (e) {
+                    let n = e;
+                    if (!s()) return;
+                    let i = n instanceof K && n.reason === `timed_out`;
+                    f({
+                        checkoutSessionId: T,
+                        state: `failed`,
+                        failure: {
+                            actionRequired: n instanceof K && n.reason === `failed_action_required`,
+                            recoveryWorkspaceId: n instanceof K && (n.status?.failureCode === `workspace_inactive` || n.status?.failureCode === `checkout_subscription_canceled` || n.status?.authenticationRequired === !0) ? n.status.workspaceId : null,
+                            authenticationRequired: n instanceof K && n.status?.authenticationRequired
+                        }
+                    });
+                    let a = n instanceof K ? n.status : null;
+                    v.logStructuredEvent(`ChatgptWebBusinessOnboardingFailure`, {
+                        checkpoint: i ? t === Fn ? `account_resolution_timed_out` : `workspace_provisioning_timed_out` : p,
+                        flow: `durable_business`,
+                        severity: `error`,
+                        checkoutSessionId: T,
+                        targetWorkspaceId: a?.workspaceId ?? M ?? void 0,
+                        checkoutKind: O,
+                        entryPoint: A,
+                        planType: G,
+                        step: a?.state,
+                        durationMs: Date.now() - r,
+                        retryCount: Math.max(0, d - 1),
+                        timeoutMs: i ? t : void 0,
+                        errorType: n instanceof Error ? n.name : typeof n
+                    }), Ge({
+                        checkoutSessionId: T,
+                        checkoutPlanType: G,
+                        processorEntity: D ?? void 0,
+                        checkoutKind: O,
+                        entryPoint: A,
+                        accessStage: `team_account_resolution`,
+                        failureReason: i ? `account_resolution_timeout` : `account_status_missing`
+                    }), c().danger(ne.somethingWentWrong)
+                }
+            })(), () => e.abort()
+        }, e[87] = M, e[88] = O, e[89] = G, e[90] = T, e[91] = A, e[92] = I, e[93] = B, e[94] = D, e[95] = n, e[96] = o, e[97] = Re) : Re = e[97];
+        let Be = r?.id,
+            Ve;
+        if (e[98] !== M || e[99] !== O || e[100] !== G || e[101] !== T || e[102] !== A || e[103] !== I || e[104] !== B || e[105] !== D || e[106] !== n || e[107] !== o || e[108] !== Be ? (Ve = [M, O, G, T, Be, A, I, B, D, n, o], e[98] = M, e[99] = O, e[100] = G, e[101] = T, e[102] = A, e[103] = I, e[104] = B, e[105] = D, e[106] = n, e[107] = o, e[108] = Be, e[109] = Ve) : Ve = e[109], (0, Q.useEffect)(Re, Ve), w === $e.UserMismatch) {
+            let t;
+            return e[110] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(nt, {}), e[110] = t) : t = e[110], t
+        }
+        if (!N) {
+            if (P != null) {
+                let t;
+                return e[111] === P.paymentConfirmed ? t = e[112] : (t = (0, $.jsx)(Tn, {
+                    actionRequired: !1,
+                    paymentConfirmed: P.paymentConfirmed
+                }), e[111] = P.paymentConfirmed, e[112] = t), t
+            }
+            return null
+        }
+        if (I && !B) {
+            if (R != null) {
+                let t;
+                return e[113] !== R.actionRequired || e[114] !== R.authenticationRequired || e[115] !== R.recoveryWorkspaceId ? (t = (0, $.jsx)(Tn, {
+                    actionRequired: R.actionRequired,
+                    recoveryWorkspaceId: R.recoveryWorkspaceId,
+                    authenticationRequired: R.authenticationRequired
+                }), e[113] = R.actionRequired, e[114] = R.authenticationRequired, e[115] = R.recoveryWorkspaceId, e[116] = t) : t = e[116], t
+            }
+            let t;
+            e[117] === L ? t = e[118] : (t = kn(L), e[117] = L, e[118] = t);
+            let n;
+            return e[119] === t ? n = e[120] : (n = (0, $.jsx)(Et, {
+                stage: t
+            }), e[119] = t, e[120] = n), n
+        }
+        let He;
+        return e[121] !== M || e[122] !== I || e[123] !== xe || e[124] !== H || e[125] !== W ? (He = H ? (0, $.jsx)(bn, {}) : (0, $.jsx)(cn, {
+            durableCheckoutWorkspaceId: I ? M ?? void 0 : void 0,
+            isTrial: !1,
+            isTeam: !0,
+            checkoutSource: W,
+            ...xe ? {
+                isPostTeamOnboardingWorkActivationEligible: !0
+            } : {}
+        }), e[121] = M, e[122] = I, e[123] = xe, e[124] = H, e[125] = W, e[126] = He) : He = e[126], He
+    })
+}));
+e((() => {
+    zn()
+}))();
+export {
+    Rn as
+    default, Ln as shouldRevalidate
+};
 //# sourceMappingURL=payments.success-team-i6cs7a8b.js.map

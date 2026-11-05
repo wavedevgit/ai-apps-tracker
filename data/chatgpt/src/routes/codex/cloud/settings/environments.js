@@ -1,2 +1,709 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,Bct as r,Crt as i,K5 as a,LU as o,Qy as s,Rz as c,U1 as l,Zy as u,_rt as d,eE as f,hl as p,jE as m,ml as h,o0 as g,q1 as _,q5 as v,zU as y,zct as ee,zz as te}from"./4813494d-mdvd4786a87166cc.js";import{Bn as b,Ht as x,N as ne,Nn as S,Nt as re,Q as C,Rn as w,Tn as ie,Vn as T,Vt as ae,l as oe,p as se,s as E,wn as D,zn as ce}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Bst as le,Vst as O,edn as ue,gun as de,lun as fe,mX as k,mun as pe,pX as me,uun as he}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Gv as ge,Ix as A,Jx as j,Lx as M,Uh as _e,Wh as ve,Wv as N,Yx as ye}from"./30901919-s8bko9nrkqwv6i4f.js";import{Iv as P,Lv as be}from"./c2675c8c-oz03twoan08d72ud.js";import{i as xe,n as Se}from"./5f4d7fa0-c53njl56by21uf8z.js";import{c as F,o as Ce,r as we,t as Te}from"./3e72bb91-hg41mi03r0vmzlai.js";import{i as Ee,n as De,r as Oe}from"./ab92372e-o4jvgv4y4zodpseo.js";import{n as ke,t as Ae}from"./3a774aaf-churgleks2pimmk5.js";import{n as I,t as je}from"./66a75a18-odhrm85ao5lt54w0.js";import{n as Me,t as Ne}from"./77909f2c-chmu7zuss9h6a5pz.js";import{n as Pe,t as L}from"./6eb96464-mzwsk2jkffsvzkt2.js";import{r as Fe,t as Ie}from"./139cb2d0-igzjge95hvas5us3.js";function Le({showBottomBorder:e=!0}){return(0,R.jsx)(`div`,{className:e?`border-token-border-heavy flex items-center border-b`:`flex items-center`,children:(0,R.jsx)(`div`,{className:`py-2 text-xl leading-7 font-medium`,children:(0,R.jsx)(S,{id:`wham.environmentsHeader.message`,defaultMessage:`Environments`})})})}var R,z=e((()=>{w(),R=b()}));function B(e){return(0,H.jsxs)(`a`,{href:`https://developers.openai.com/codex/third-party/gitlab`,target:`_blank`,rel:`noreferrer`,className:`text-token-text-accent hover:text-token-text-accent/80 inline-flex items-center gap-1 font-medium`,children:[e,(0,H.jsx)(N,{"aria-hidden":!0,className:`icon-xs`})]})}var V,H,Re,ze=e((()=>{V=D(),f(),ge(),s(),_(),Fe(),w(),C(),H=b(),Re=e=>{"use forget";let t=(0,V.c)(18),{isConnected:r}=e,i=ce(),a=re(),o=g(),s;t[0]===o?s=t[1]:(s=o?.isAdminOfAccount()||o?.isOwnerOfAccount(),t[0]=o,t[1]=s);let c=!!s,l;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(l=(0,H.jsx)(`h2`,{className:`text-base leading-6 font-semibold`,children:(0,H.jsx)(S,{id:`wham.environments.gitlab_activity.summary.title`,defaultMessage:`GitLab activity`})}),t[2]=l):l=t[2];let d;t[3]!==c||t[4]!==i?(d=c?void 0:i.formatMessage({id:`wham.environments.gitlab_activity.summary.tooltip.workspace_admin_required`,defaultMessage:`Only workspace admins can manage GitLab group activity.`}),t[3]=c,t[4]=i,t[5]=d):d=t[5];let f=!r||!c,p;t[6]===a?p=t[7]:(p=()=>a(Ie),t[6]=a,t[7]=p);let m;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,H.jsx)(S,{id:`wham.environments.gitlab_activity.summary.button.manage_groups`,defaultMessage:`Manage groups`}),t[8]=m):m=t[8];let h;t[9]!==f||t[10]!==p?(h=(0,H.jsx)(`span`,{className:`inline-flex`,children:(0,H.jsx)(n,{type:`button`,color:`secondary`,disabled:f,onClick:p,children:m})}),t[9]=f,t[10]=p,t[11]=h):h=t[11];let _;t[12]!==d||t[13]!==h?(_=(0,H.jsxs)(`div`,{className:`flex items-center justify-between gap-4`,children:[l,(0,H.jsx)(u,{label:d,children:h})]}),t[12]=d,t[13]=h,t[14]=_):_=t[14];let v;t[15]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,H.jsx)(`p`,{className:`text-token-text-tertiary text-sm`,children:(0,H.jsx)(S,{id:`wham.environments.gitlab_activity.summary.code_review_description_with_learn_more`,defaultMessage:`Enable code reviews across projects in your GitLab groups, or enable reviews for individual projects below. <learnMore>Learn more</learnMore>`,values:{learnMore:B}})}),t[15]=v):v=t[15];let y;return t[16]===_?y=t[17]:(y=(0,H.jsxs)(`section`,{className:`flex flex-col gap-1`,children:[_,v]}),t[16]=_,t[17]=y),y}}));function Be({isPinned:e,onToggle:t,intl:n,isCreator:r}){return(0,q.jsx)(P.Cell,{className:`content-center pe-1!`,children:(0,q.jsx)(u,{side:`bottom`,align:`center`,className:`block w-full`,alignOffset:0,label:r?e?(0,q.jsx)(S,{id:`wham.environmentsList.unpin`,defaultMessage:`Unpin environment for everyone in your workspace`}):(0,q.jsx)(S,{id:`wham.environmentsList.pin`,defaultMessage:`Pin environment to the top for everyone in your workspace`}):(0,q.jsx)(S,{id:`wham.environmentsList.pin.notCreator`,defaultMessage:`You can only pin and unpin environments you created.`}),children:(0,q.jsxs)(`button`,{disabled:!r,onClick:t,className:a(`group/cell relative flex h-10 w-full items-center px-4 group-hover/row:opacity-100`,!e&&`opacity-0`,e&&!r&&`opacity-50`),"aria-label":e?n.formatMessage({id:`wham.environmentsList.unpinEnvironment`,defaultMessage:`Unpin environment`}):n.formatMessage({id:`wham.environmentsList.pinEnvironment`,defaultMessage:`Pin environment`}),children:[e&&(0,q.jsx)(M,{className:`icon absolute opacity-0 group-hover/cell:opacity-100`}),(0,q.jsx)(ye,{className:a(`icon absolute`,e&&`opacity-100 group-hover/cell:opacity-0`)})]})})})}function Ve(e={}){return d(`1437685011`)?(0,q.jsx)(U,{...e}):(0,q.jsx)(W,{...e})}function U(e){let t=Ee({redirectAfter:`/codex/cloud/settings/environments?provider=gitlab`});return(0,q.jsx)(W,{...e,gitLabConnector:t})}function W({onConnectionAlertVisibilityChange:e,gitLabConnector:t}){let i=re(),[a,o]=ae(),s=ne(),u=ce(),d=y(),f=l(),p=!!f?.isWorkspaceAccount(),m=Me(),g=t!=null,[_,v]=(0,K.useState)(a.get(`search`)??``),[ee,te]=(0,K.useState)(null),{connectorId:b,isConnected:x,isLoading:C}=xe({redirectAfter:`/codex/cloud/settings/environments`}),w=t?.connectorId,T=t?.isConnected??!1,E=t?.isLoading??!1,D=t?.error??null,O=t?.gitlabConnectorCandidates.length??0,k=w||void 0,pe=t?.platformConnector?.template_id===De,ge=a.get(`provider`),A=g&&ge===`gitlab`&&(E||D!=null||O>0)?`gitlab`:ee===`github`&&x?`github`:null,j=A??(g&&T&&!x?`gitlab`:`github`),M=j===`gitlab`&&pe,_e=g&&(x&&T||A!=null&&(j===`gitlab`?x:T)),N=j===`gitlab`?T:x,ye=j===`gitlab`?`/codex/cloud/settings/environment/create?provider=gitlab`:`/codex/cloud/settings/environment/create`;(0,K.useEffect)(()=>{if(!g||E||D!=null||O>0||a.get(`provider`)!==`gitlab`)return;let e=new URLSearchParams(a);e.delete(`provider`),o(e,{replace:!0})},[O,D,E,g,a,o]);let{data:be,isLoading:Se,error:F,fetchNextPage:we,hasNextPage:Te,isFetchingNextPage:Ee}=oe({queryKey:ue({pageSize:J,enforceRepoAccess:!1,connectorId:b}),initialPageParam:X,enabled:j===`github`&&!C,queryFn:({pageParam:e})=>h.getEnvironmentWithCreators(e?Y:J,e,!1,b),getNextPageParam:e=>e.cursor??null}),{data:Oe,isLoading:ke,error:I,fetchNextPage:Ne,hasNextPage:Pe,isFetchingNextPage:Fe}=oe({queryKey:ue({pageSize:J,enforceRepoAccess:!1,connectorId:k}),initialPageParam:X,enabled:j===`gitlab`&&g&&k!=null&&!E,queryFn:({pageParam:e})=>h.getEnvironmentWithCreators(e?Y:J,e,!1,k),getNextPageParam:e=>e.cursor??null}),{mutate:Ie}=se({mutationFn:({environmentId:e,isPinned:t})=>(s.setQueriesData({queryKey:fe},t=>t&&r(t,t=>{for(let n of t.pages)for(let t of n.items)if(t.id===e){t.is_pinned=!t.is_pinned;break}})),s.setQueryData([`wham`,`environments`],n=>n&&n.map(n=>n.id===e?{...n,is_pinned:t}:n)),s.setQueryData(he,n=>n?.map(n=>n.id===e?{...n,is_pinned:t}:n)),h.updateEnvironment(e,{is_pinned:t})),onSettled:()=>{de(s)},onError:()=>{d.danger(u.formatMessage({id:`wham.environmentsList.failedToPinEnvironment`,defaultMessage:`Failed to pin environment`}))}}),R=be?.pages.flatMap(e=>e.items)??[],z=g?Oe?.pages.flatMap(e=>e.items)??[]:[],B=j===`gitlab`?z:R,V=j===`gitlab`&&g&&!E&&!T,H=j===`github`&&!C&&!x,ze=j===`gitlab`?E||ke:C||Se,Ve=j===`gitlab`?E:C,U=j===`gitlab`?I:F,W=j===`gitlab`?Pe:Te,G=j===`gitlab`?Fe:Ee,Ue=j===`gitlab`?Ne:we,Z=_.trim().toLowerCase(),We=B.filter(e=>e.label.toLowerCase().includes(Z)),Q=e=>{let t=e.toLowerCase();return t===Z?0:t.startsWith(Z)?1:2},$=We.slice().sort((e,t)=>{if(e.is_pinned!==t.is_pinned)return e.is_pinned?-1:1;let n=Q(e.label)-Q(t.label);return n===0?e.label.localeCompare(t.label):n});return(0,K.useEffect)(()=>{e?.({showGitLab:V,showGitHub:H})},[e,H,V]),(0,q.jsxs)(q.Fragment,{children:[e==null&&V&&(0,q.jsx)(je,{redirectAfter:`/codex/cloud/settings/environments?provider=gitlab`}),e==null&&H&&(0,q.jsx)(Ce,{}),g&&(0,q.jsxs)(`div`,{className:`border-token-border-light flex flex-col border-b`,children:[(0,q.jsx)(Le,{showBottomBorder:!1}),_e&&(0,q.jsx)(Ae,{className:`mt-3`,value:j,onChange:e=>{te(e===`github`?`github`:null);let t=new URLSearchParams(a);e===`gitlab`?t.set(`provider`,e):t.delete(`provider`),o(t,{replace:!0})}})]}),M&&k&&(0,q.jsx)(Re,{isConnected:T}),(0,q.jsxs)(`div`,{className:`flex flex-col gap-2`,children:[M&&(0,q.jsxs)(`div`,{className:`flex flex-col gap-1 pb-3`,children:[(0,q.jsx)(`h2`,{className:`text-base leading-6 font-semibold`,children:(0,q.jsx)(S,{id:`wham.environments.gitlab_activity.project_environments.title`,defaultMessage:`Project environments`})}),(0,q.jsx)(`p`,{className:`text-token-text-tertiary text-sm`,children:(0,q.jsx)(S,{id:`wham.environments.gitlab_activity.project_environments.description`,defaultMessage:`Set up environments for coding tasks or reviews, with project-specific secrets and network access.`})})]}),(0,q.jsxs)(`div`,{className:`flex flex-row justify-between pb-4`,children:[(0,q.jsx)(`div`,{className:`flex flex-row gap-2`,children:(0,q.jsx)(le,{name:`search-environments`,color:`search`,containerInputClassName:`w-full`,className:`text-token-text-primary flex h-8 w-full items-center rounded-md!`,value:_,disabled:Ve||U!=null||!N,onChange:e=>{let t=e.target.value;v(t);let n=new URLSearchParams(a);t?n.set(`search`,t):n.delete(`search`),j===`gitlab`?n.set(`provider`,`gitlab`):n.delete(`provider`),o(n,{replace:!0})},placeholder:u.formatMessage({id:`wham.environmentsList.searchEnvironmentsPlaceholder`,defaultMessage:`Search environments`}),ariaLabel:u.formatMessage({id:`wham.environmentsList.searchEnvironmentsAria`,defaultMessage:`Search environments`})})}),(0,q.jsx)(n,{onClick:()=>i(ye),disabled:!N,color:`primary`,icon:ve,className:`h-8`,"aria-label":u.formatMessage({id:`wham.environmentsList.createEnvironmentAriaLabel`,defaultMessage:`Link to create a new environment`}),children:(0,q.jsx)(`span`,{className:`hidden md:inline`,children:(0,q.jsx)(S,{id:`wham.environmentsList.createEnvironment`,defaultMessage:`Create environment`})})})]}),ze?(0,q.jsx)(`div`,{className:`flex h-full items-center justify-center pt-5`,children:(0,q.jsx)(c,{})}):U?(0,q.jsx)(L,{title:u.formatMessage({id:`wham.environmentsList.error`,defaultMessage:`Failed to load environments`}),description:(0,q.jsx)(S,{id:`wham.environmentsList.errorDescriptionWithHelpCenter`,defaultMessage:`Please refresh the page and try again. If the problem continues, start a chat in the <helpCenter>Help Center</helpCenter>.`,values:{helpCenter:e=>(0,q.jsx)(`a`,{href:`https://help.openai.com/en/articles/6614161-how-can-i-contact-support`,target:`_blank`,rel:`noopener noreferrer`,className:`underline`,children:e})}})}):B.length===0?(0,q.jsx)(L,{title:u.formatMessage({id:`wham.environmentsList.noEnvironments`,defaultMessage:`No environments`}),description:u.formatMessage({id:`wham.environmentsList.noEnvironmentsDescription`,defaultMessage:`Create an environment for Codex to work in`})}):(0,q.jsxs)(q.Fragment,{children:[(0,q.jsxs)(P.Root,{className:`overflow-x-auto overflow-y-clip`,disableScroll:!0,children:[(0,q.jsxs)(P.Header,{children:[(0,q.jsx)(P.HeaderCell,{className:`ps-2 text-sm`,children:(0,q.jsx)(S,{id:`wham.environmentsList.name`,defaultMessage:`Name`})}),(0,q.jsx)(P.HeaderCell,{className:`text-sm`,children:(0,q.jsx)(S,{id:`wham.environmentsList.repo`,defaultMessage:`Repo`})}),(0,q.jsx)(P.HeaderCell,{className:`text-sm`,children:(0,q.jsx)(S,{id:`wham.environmentsList.numberOfTasks`,defaultMessage:`Number of tasks`})}),m&&(0,q.jsx)(P.HeaderCell,{className:`text-sm`,children:(0,q.jsx)(S,{id:`wham.environmentsList.sharing`,defaultMessage:`Sharing`})}),(0,q.jsx)(P.HeaderCell,{className:`text-sm`,children:(0,q.jsx)(S,{id:`wham.environmentsList.creator`,defaultMessage:`Creator`})}),(0,q.jsx)(P.HeaderCell,{className:`text-sm`,children:(0,q.jsx)(S,{id:`wham.environmentsList.createdAt`,defaultMessage:`Created at`})}),p&&(0,q.jsx)(P.HeaderCell,{}),(0,q.jsx)(P.HeaderCell,{})]}),(0,q.jsx)(P.Body,{children:$.length===0&&!W?(0,q.jsx)(P.Row,{children:(0,q.jsx)(P.Cell,{colSpan:100,children:(0,q.jsx)(L,{title:u.formatMessage({id:`wham.environmentsList.search.noEnvironments`,defaultMessage:`No matches for {search}`},{search:_}),description:u.formatMessage({id:`wham.environmentsList.search.noEnvironmentsDescription`,defaultMessage:`Create an environment for Codex to work in`})})})}):$.map(({id:e,label:t,is_pinned:n,repos:r,repo_map:a,creator:o,created_at:s,task_count:c,share_settings:l})=>{let d=!!f?.authUserId&&o.id.includes(f?.authUserId);return(0,q.jsxs)(P.Row,{role:`row`,className:`group/row hover:bg-token-bg-tertiary h-14 px-2 text-sm hover:cursor-pointer`,onClick:()=>i(`/codex/cloud/settings/environment/${e}`),tabIndex:0,"aria-label":u.formatMessage({id:`wham.environmentsList.environmentAriaLabel`,defaultMessage:`View environment {label}`},{label:t}),children:[(0,q.jsx)(P.Cell,{divClassName:`flex h-14 items-center group-hover/row:underline ps-2`,children:t}),(0,q.jsx)(P.Cell,{divClassName:`flex h-14 items-center`,children:r.map(e=>(0,q.jsx)(`div`,{children:a?.[e]?.repository_full_name??e},e))}),(0,q.jsx)(P.Cell,{divClassName:`flex h-14 items-center`,children:c}),m&&(0,q.jsx)(P.Cell,{divClassName:`flex h-14 items-center`,children:He(u,l)}),(0,q.jsx)(P.Cell,{divClassName:`flex h-14 items-center`,children:o.email}),(0,q.jsx)(P.Cell,{divClassName:`flex h-14 items-center`,children:s?(0,q.jsx)(ie,{value:new Date(s*1e3),year:`numeric`,month:`long`,day:`numeric`}):(0,q.jsx)(S,{id:`wham.environmentsList.na`,defaultMessage:`N/A`})}),p&&(0,q.jsx)(Be,{isPinned:n,isCreator:d,onToggle:t=>{t.stopPropagation(),Ie({environmentId:e,isPinned:!n})},intl:u})]},e)})})]}),(0,q.jsx)(me,{isFetchingNextPage:G,hasNextPage:W??!1,fetchNextPage:Ue})]})]})]})}function He(e,t){switch(t){case`public`:return e.formatMessage({id:`wham.environmentsList.public`,defaultMessage:`Public`});case`private`:return e.formatMessage({id:`wham.environmentsList.private`,defaultMessage:`Private`});case`workspace`:return e.formatMessage({id:`wham.environmentsList.workspace`,defaultMessage:`Workspace`});default:(0,G.assertNever)(t)}}var G,K,q,J,Y,X,Ue=e((()=>{f(),j(),_e(),A(),k(),be(),s(),O(),te(),_(),o(),i(),ke(),Se(),Oe(),Ne(),I(),F(),Pe(),z(),ze(),pe(),p(),E(),G=t(m()),v(),ee(),K=t(T()),w(),C(),q=b(),J=25,Y=100,X=null}));function Z(){let e=d(`1437685011`),[t,n]=(0,We.useState)({showGitLab:!1,showGitHub:!1});return(0,Q.jsx)(Te,{topPadding:!0,connectionAlert:e?(0,Q.jsxs)(Q.Fragment,{children:[t.showGitLab&&(0,Q.jsx)(je,{redirectAfter:`/codex/cloud/settings/environments?provider=gitlab`}),t.showGitHub&&(0,Q.jsx)(Ce,{})]}):void 0,children:(0,Q.jsxs)(`div`,{className:e?`mx-auto flex h-full max-w-screen-xl flex-1 flex-col gap-8 ps-4 pe-4 md:pe-12`:`mx-auto flex h-full max-w-screen-xl flex-1 flex-col gap-4 ps-4 pe-4 md:pe-12`,children:[!e&&(0,Q.jsx)(Le,{}),(0,Q.jsx)(Ve,{onConnectionAlertVisibilityChange:n})]})})}var We,Q,$=e((()=>{i(),we(),I(),F(),z(),Ue(),We=t(T()),Q=b()})),Ge,Ke,qe,Je,Ye=e((()=>{C(),Ge=D(),$(),Ke=b(),qe=()=>[{title:`Codex`}],Je=x(function(){"use forget";let e=(0,Ge.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,Ke.jsx)(Z,{}),e[0]=t):t=e[0],t})}));e((()=>{Ye()}))();export{Je as default,qe as meta};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    Bct as r,
+    Crt as i,
+    K5 as a,
+    LU as o,
+    Qy as s,
+    Rz as c,
+    U1 as l,
+    Zy as u,
+    _rt as d,
+    eE as f,
+    hl as p,
+    jE as m,
+    ml as h,
+    o0 as g,
+    q1 as _,
+    q5 as v,
+    zU as y,
+    zct as ee,
+    zz as te
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as b,
+    Ht as x,
+    N as ne,
+    Nn as S,
+    Nt as re,
+    Q as C,
+    Rn as w,
+    Tn as ie,
+    Vn as T,
+    Vt as ae,
+    l as oe,
+    p as se,
+    s as E,
+    wn as D,
+    zn as ce
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Bst as le,
+    Vst as O,
+    edn as ue,
+    gun as de,
+    lun as fe,
+    mX as k,
+    mun as pe,
+    pX as me,
+    uun as he
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Gv as ge,
+    Ix as A,
+    Jx as j,
+    Lx as M,
+    Uh as _e,
+    Wh as ve,
+    Wv as N,
+    Yx as ye
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    Iv as P,
+    Lv as be
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    i as xe,
+    n as Se
+} from "./5f4d7fa0-c53njl56by21uf8z.js";
+import {
+    c as F,
+    o as Ce,
+    r as we,
+    t as Te
+} from "./3e72bb91-hg41mi03r0vmzlai.js";
+import {
+    i as Ee,
+    n as De,
+    r as Oe
+} from "./ab92372e-o4jvgv4y4zodpseo.js";
+import {
+    n as ke,
+    t as Ae
+} from "./3a774aaf-churgleks2pimmk5.js";
+import {
+    n as I,
+    t as je
+} from "./66a75a18-odhrm85ao5lt54w0.js";
+import {
+    n as Me,
+    t as Ne
+} from "./77909f2c-chmu7zuss9h6a5pz.js";
+import {
+    n as Pe,
+    t as L
+} from "./6eb96464-mzwsk2jkffsvzkt2.js";
+import {
+    r as Fe,
+    t as Ie
+} from "./139cb2d0-igzjge95hvas5us3.js";
+
+function Le({
+    showBottomBorder: e = !0
+}) {
+    return (0, R.jsx)(`div`, {
+        className: e ? `border-token-border-heavy flex items-center border-b` : `flex items-center`,
+        children: (0, R.jsx)(`div`, {
+            className: `py-2 text-xl leading-7 font-medium`,
+            children: (0, R.jsx)(S, {
+                id: `wham.environmentsHeader.message`,
+                defaultMessage: `Environments`
+            })
+        })
+    })
+}
+var R, z = e((() => {
+    w(), R = b()
+}));
+
+function B(e) {
+    return (0, H.jsxs)(`a`, {
+        href: `https://developers.openai.com/codex/third-party/gitlab`,
+        target: `_blank`,
+        rel: `noreferrer`,
+        className: `text-token-text-accent hover:text-token-text-accent/80 inline-flex items-center gap-1 font-medium`,
+        children: [e, (0, H.jsx)(N, {
+            "aria-hidden": !0,
+            className: `icon-xs`
+        })]
+    })
+}
+var V, H, Re, ze = e((() => {
+    V = D(), f(), ge(), s(), _(), Fe(), w(), C(), H = b(), Re = e => {
+        "use forget";
+        let t = (0, V.c)(18),
+            {
+                isConnected: r
+            } = e,
+            i = ce(),
+            a = re(),
+            o = g(),
+            s;
+        t[0] === o ? s = t[1] : (s = o?.isAdminOfAccount() || o?.isOwnerOfAccount(), t[0] = o, t[1] = s);
+        let c = !!s,
+            l;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (l = (0, H.jsx)(`h2`, {
+            className: `text-base leading-6 font-semibold`,
+            children: (0, H.jsx)(S, {
+                id: `wham.environments.gitlab_activity.summary.title`,
+                defaultMessage: `GitLab activity`
+            })
+        }), t[2] = l) : l = t[2];
+        let d;
+        t[3] !== c || t[4] !== i ? (d = c ? void 0 : i.formatMessage({
+            id: `wham.environments.gitlab_activity.summary.tooltip.workspace_admin_required`,
+            defaultMessage: `Only workspace admins can manage GitLab group activity.`
+        }), t[3] = c, t[4] = i, t[5] = d) : d = t[5];
+        let f = !r || !c,
+            p;
+        t[6] === a ? p = t[7] : (p = () => a(Ie), t[6] = a, t[7] = p);
+        let m;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, H.jsx)(S, {
+            id: `wham.environments.gitlab_activity.summary.button.manage_groups`,
+            defaultMessage: `Manage groups`
+        }), t[8] = m) : m = t[8];
+        let h;
+        t[9] !== f || t[10] !== p ? (h = (0, H.jsx)(`span`, {
+            className: `inline-flex`,
+            children: (0, H.jsx)(n, {
+                type: `button`,
+                color: `secondary`,
+                disabled: f,
+                onClick: p,
+                children: m
+            })
+        }), t[9] = f, t[10] = p, t[11] = h) : h = t[11];
+        let _;
+        t[12] !== d || t[13] !== h ? (_ = (0, H.jsxs)(`div`, {
+            className: `flex items-center justify-between gap-4`,
+            children: [l, (0, H.jsx)(u, {
+                label: d,
+                children: h
+            })]
+        }), t[12] = d, t[13] = h, t[14] = _) : _ = t[14];
+        let v;
+        t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, H.jsx)(`p`, {
+            className: `text-token-text-tertiary text-sm`,
+            children: (0, H.jsx)(S, {
+                id: `wham.environments.gitlab_activity.summary.code_review_description_with_learn_more`,
+                defaultMessage: `Enable code reviews across projects in your GitLab groups, or enable reviews for individual projects below. <learnMore>Learn more</learnMore>`,
+                values: {
+                    learnMore: B
+                }
+            })
+        }), t[15] = v) : v = t[15];
+        let y;
+        return t[16] === _ ? y = t[17] : (y = (0, H.jsxs)(`section`, {
+            className: `flex flex-col gap-1`,
+            children: [_, v]
+        }), t[16] = _, t[17] = y), y
+    }
+}));
+
+function Be({
+    isPinned: e,
+    onToggle: t,
+    intl: n,
+    isCreator: r
+}) {
+    return (0, q.jsx)(P.Cell, {
+        className: `content-center pe-1!`,
+        children: (0, q.jsx)(u, {
+            side: `bottom`,
+            align: `center`,
+            className: `block w-full`,
+            alignOffset: 0,
+            label: r ? e ? (0, q.jsx)(S, {
+                id: `wham.environmentsList.unpin`,
+                defaultMessage: `Unpin environment for everyone in your workspace`
+            }) : (0, q.jsx)(S, {
+                id: `wham.environmentsList.pin`,
+                defaultMessage: `Pin environment to the top for everyone in your workspace`
+            }) : (0, q.jsx)(S, {
+                id: `wham.environmentsList.pin.notCreator`,
+                defaultMessage: `You can only pin and unpin environments you created.`
+            }),
+            children: (0, q.jsxs)(`button`, {
+                disabled: !r,
+                onClick: t,
+                className: a(`group/cell relative flex h-10 w-full items-center px-4 group-hover/row:opacity-100`, !e && `opacity-0`, e && !r && `opacity-50`),
+                "aria-label": e ? n.formatMessage({
+                    id: `wham.environmentsList.unpinEnvironment`,
+                    defaultMessage: `Unpin environment`
+                }) : n.formatMessage({
+                    id: `wham.environmentsList.pinEnvironment`,
+                    defaultMessage: `Pin environment`
+                }),
+                children: [e && (0, q.jsx)(M, {
+                    className: `icon absolute opacity-0 group-hover/cell:opacity-100`
+                }), (0, q.jsx)(ye, {
+                    className: a(`icon absolute`, e && `opacity-100 group-hover/cell:opacity-0`)
+                })]
+            })
+        })
+    })
+}
+
+function Ve(e = {}) {
+    return d(`1437685011`) ? (0, q.jsx)(U, {
+        ...e
+    }) : (0, q.jsx)(W, {
+        ...e
+    })
+}
+
+function U(e) {
+    let t = Ee({
+        redirectAfter: `/codex/cloud/settings/environments?provider=gitlab`
+    });
+    return (0, q.jsx)(W, {
+        ...e,
+        gitLabConnector: t
+    })
+}
+
+function W({
+    onConnectionAlertVisibilityChange: e,
+    gitLabConnector: t
+}) {
+    let i = re(),
+        [a, o] = ae(),
+        s = ne(),
+        u = ce(),
+        d = y(),
+        f = l(),
+        p = !!f?.isWorkspaceAccount(),
+        m = Me(),
+        g = t != null,
+        [_, v] = (0, K.useState)(a.get(`search`) ?? ``),
+        [ee, te] = (0, K.useState)(null),
+        {
+            connectorId: b,
+            isConnected: x,
+            isLoading: C
+        } = xe({
+            redirectAfter: `/codex/cloud/settings/environments`
+        }),
+        w = t?.connectorId,
+        T = t?.isConnected ?? !1,
+        E = t?.isLoading ?? !1,
+        D = t?.error ?? null,
+        O = t?.gitlabConnectorCandidates.length ?? 0,
+        k = w || void 0,
+        pe = t?.platformConnector?.template_id === De,
+        ge = a.get(`provider`),
+        A = g && ge === `gitlab` && (E || D != null || O > 0) ? `gitlab` : ee === `github` && x ? `github` : null,
+        j = A ?? (g && T && !x ? `gitlab` : `github`),
+        M = j === `gitlab` && pe,
+        _e = g && (x && T || A != null && (j === `gitlab` ? x : T)),
+        N = j === `gitlab` ? T : x,
+        ye = j === `gitlab` ? `/codex/cloud/settings/environment/create?provider=gitlab` : `/codex/cloud/settings/environment/create`;
+    (0, K.useEffect)(() => {
+        if (!g || E || D != null || O > 0 || a.get(`provider`) !== `gitlab`) return;
+        let e = new URLSearchParams(a);
+        e.delete(`provider`), o(e, {
+            replace: !0
+        })
+    }, [O, D, E, g, a, o]);
+    let {
+        data: be,
+        isLoading: Se,
+        error: F,
+        fetchNextPage: we,
+        hasNextPage: Te,
+        isFetchingNextPage: Ee
+    } = oe({
+        queryKey: ue({
+            pageSize: J,
+            enforceRepoAccess: !1,
+            connectorId: b
+        }),
+        initialPageParam: X,
+        enabled: j === `github` && !C,
+        queryFn: ({
+            pageParam: e
+        }) => h.getEnvironmentWithCreators(e ? Y : J, e, !1, b),
+        getNextPageParam: e => e.cursor ?? null
+    }), {
+        data: Oe,
+        isLoading: ke,
+        error: I,
+        fetchNextPage: Ne,
+        hasNextPage: Pe,
+        isFetchingNextPage: Fe
+    } = oe({
+        queryKey: ue({
+            pageSize: J,
+            enforceRepoAccess: !1,
+            connectorId: k
+        }),
+        initialPageParam: X,
+        enabled: j === `gitlab` && g && k != null && !E,
+        queryFn: ({
+            pageParam: e
+        }) => h.getEnvironmentWithCreators(e ? Y : J, e, !1, k),
+        getNextPageParam: e => e.cursor ?? null
+    }), {
+        mutate: Ie
+    } = se({
+        mutationFn: ({
+            environmentId: e,
+            isPinned: t
+        }) => (s.setQueriesData({
+            queryKey: fe
+        }, t => t && r(t, t => {
+            for (let n of t.pages)
+                for (let t of n.items)
+                    if (t.id === e) {
+                        t.is_pinned = !t.is_pinned;
+                        break
+                    }
+        })), s.setQueryData([`wham`, `environments`], n => n && n.map(n => n.id === e ? {
+            ...n,
+            is_pinned: t
+        } : n)), s.setQueryData(he, n => n?.map(n => n.id === e ? {
+            ...n,
+            is_pinned: t
+        } : n)), h.updateEnvironment(e, {
+            is_pinned: t
+        })),
+        onSettled: () => {
+            de(s)
+        },
+        onError: () => {
+            d.danger(u.formatMessage({
+                id: `wham.environmentsList.failedToPinEnvironment`,
+                defaultMessage: `Failed to pin environment`
+            }))
+        }
+    }), R = be?.pages.flatMap(e => e.items) ?? [], z = g ? Oe?.pages.flatMap(e => e.items) ?? [] : [], B = j === `gitlab` ? z : R, V = j === `gitlab` && g && !E && !T, H = j === `github` && !C && !x, ze = j === `gitlab` ? E || ke : C || Se, Ve = j === `gitlab` ? E : C, U = j === `gitlab` ? I : F, W = j === `gitlab` ? Pe : Te, G = j === `gitlab` ? Fe : Ee, Ue = j === `gitlab` ? Ne : we, Z = _.trim().toLowerCase(), We = B.filter(e => e.label.toLowerCase().includes(Z)), Q = e => {
+        let t = e.toLowerCase();
+        return t === Z ? 0 : t.startsWith(Z) ? 1 : 2
+    }, $ = We.slice().sort((e, t) => {
+        if (e.is_pinned !== t.is_pinned) return e.is_pinned ? -1 : 1;
+        let n = Q(e.label) - Q(t.label);
+        return n === 0 ? e.label.localeCompare(t.label) : n
+    });
+    return (0, K.useEffect)(() => {
+        e?.({
+            showGitLab: V,
+            showGitHub: H
+        })
+    }, [e, H, V]), (0, q.jsxs)(q.Fragment, {
+        children: [e == null && V && (0, q.jsx)(je, {
+            redirectAfter: `/codex/cloud/settings/environments?provider=gitlab`
+        }), e == null && H && (0, q.jsx)(Ce, {}), g && (0, q.jsxs)(`div`, {
+            className: `border-token-border-light flex flex-col border-b`,
+            children: [(0, q.jsx)(Le, {
+                showBottomBorder: !1
+            }), _e && (0, q.jsx)(Ae, {
+                className: `mt-3`,
+                value: j,
+                onChange: e => {
+                    te(e === `github` ? `github` : null);
+                    let t = new URLSearchParams(a);
+                    e === `gitlab` ? t.set(`provider`, e) : t.delete(`provider`), o(t, {
+                        replace: !0
+                    })
+                }
+            })]
+        }), M && k && (0, q.jsx)(Re, {
+            isConnected: T
+        }), (0, q.jsxs)(`div`, {
+            className: `flex flex-col gap-2`,
+            children: [M && (0, q.jsxs)(`div`, {
+                className: `flex flex-col gap-1 pb-3`,
+                children: [(0, q.jsx)(`h2`, {
+                    className: `text-base leading-6 font-semibold`,
+                    children: (0, q.jsx)(S, {
+                        id: `wham.environments.gitlab_activity.project_environments.title`,
+                        defaultMessage: `Project environments`
+                    })
+                }), (0, q.jsx)(`p`, {
+                    className: `text-token-text-tertiary text-sm`,
+                    children: (0, q.jsx)(S, {
+                        id: `wham.environments.gitlab_activity.project_environments.description`,
+                        defaultMessage: `Set up environments for coding tasks or reviews, with project-specific secrets and network access.`
+                    })
+                })]
+            }), (0, q.jsxs)(`div`, {
+                className: `flex flex-row justify-between pb-4`,
+                children: [(0, q.jsx)(`div`, {
+                    className: `flex flex-row gap-2`,
+                    children: (0, q.jsx)(le, {
+                        name: `search-environments`,
+                        color: `search`,
+                        containerInputClassName: `w-full`,
+                        className: `text-token-text-primary flex h-8 w-full items-center rounded-md!`,
+                        value: _,
+                        disabled: Ve || U != null || !N,
+                        onChange: e => {
+                            let t = e.target.value;
+                            v(t);
+                            let n = new URLSearchParams(a);
+                            t ? n.set(`search`, t) : n.delete(`search`), j === `gitlab` ? n.set(`provider`, `gitlab`) : n.delete(`provider`), o(n, {
+                                replace: !0
+                            })
+                        },
+                        placeholder: u.formatMessage({
+                            id: `wham.environmentsList.searchEnvironmentsPlaceholder`,
+                            defaultMessage: `Search environments`
+                        }),
+                        ariaLabel: u.formatMessage({
+                            id: `wham.environmentsList.searchEnvironmentsAria`,
+                            defaultMessage: `Search environments`
+                        })
+                    })
+                }), (0, q.jsx)(n, {
+                    onClick: () => i(ye),
+                    disabled: !N,
+                    color: `primary`,
+                    icon: ve,
+                    className: `h-8`,
+                    "aria-label": u.formatMessage({
+                        id: `wham.environmentsList.createEnvironmentAriaLabel`,
+                        defaultMessage: `Link to create a new environment`
+                    }),
+                    children: (0, q.jsx)(`span`, {
+                        className: `hidden md:inline`,
+                        children: (0, q.jsx)(S, {
+                            id: `wham.environmentsList.createEnvironment`,
+                            defaultMessage: `Create environment`
+                        })
+                    })
+                })]
+            }), ze ? (0, q.jsx)(`div`, {
+                className: `flex h-full items-center justify-center pt-5`,
+                children: (0, q.jsx)(c, {})
+            }) : U ? (0, q.jsx)(L, {
+                title: u.formatMessage({
+                    id: `wham.environmentsList.error`,
+                    defaultMessage: `Failed to load environments`
+                }),
+                description: (0, q.jsx)(S, {
+                    id: `wham.environmentsList.errorDescriptionWithHelpCenter`,
+                    defaultMessage: `Please refresh the page and try again. If the problem continues, start a chat in the <helpCenter>Help Center</helpCenter>.`,
+                    values: {
+                        helpCenter: e => (0, q.jsx)(`a`, {
+                            href: `https://help.openai.com/en/articles/6614161-how-can-i-contact-support`,
+                            target: `_blank`,
+                            rel: `noopener noreferrer`,
+                            className: `underline`,
+                            children: e
+                        })
+                    }
+                })
+            }) : B.length === 0 ? (0, q.jsx)(L, {
+                title: u.formatMessage({
+                    id: `wham.environmentsList.noEnvironments`,
+                    defaultMessage: `No environments`
+                }),
+                description: u.formatMessage({
+                    id: `wham.environmentsList.noEnvironmentsDescription`,
+                    defaultMessage: `Create an environment for Codex to work in`
+                })
+            }) : (0, q.jsxs)(q.Fragment, {
+                children: [(0, q.jsxs)(P.Root, {
+                    className: `overflow-x-auto overflow-y-clip`,
+                    disableScroll: !0,
+                    children: [(0, q.jsxs)(P.Header, {
+                        children: [(0, q.jsx)(P.HeaderCell, {
+                            className: `ps-2 text-sm`,
+                            children: (0, q.jsx)(S, {
+                                id: `wham.environmentsList.name`,
+                                defaultMessage: `Name`
+                            })
+                        }), (0, q.jsx)(P.HeaderCell, {
+                            className: `text-sm`,
+                            children: (0, q.jsx)(S, {
+                                id: `wham.environmentsList.repo`,
+                                defaultMessage: `Repo`
+                            })
+                        }), (0, q.jsx)(P.HeaderCell, {
+                            className: `text-sm`,
+                            children: (0, q.jsx)(S, {
+                                id: `wham.environmentsList.numberOfTasks`,
+                                defaultMessage: `Number of tasks`
+                            })
+                        }), m && (0, q.jsx)(P.HeaderCell, {
+                            className: `text-sm`,
+                            children: (0, q.jsx)(S, {
+                                id: `wham.environmentsList.sharing`,
+                                defaultMessage: `Sharing`
+                            })
+                        }), (0, q.jsx)(P.HeaderCell, {
+                            className: `text-sm`,
+                            children: (0, q.jsx)(S, {
+                                id: `wham.environmentsList.creator`,
+                                defaultMessage: `Creator`
+                            })
+                        }), (0, q.jsx)(P.HeaderCell, {
+                            className: `text-sm`,
+                            children: (0, q.jsx)(S, {
+                                id: `wham.environmentsList.createdAt`,
+                                defaultMessage: `Created at`
+                            })
+                        }), p && (0, q.jsx)(P.HeaderCell, {}), (0, q.jsx)(P.HeaderCell, {})]
+                    }), (0, q.jsx)(P.Body, {
+                        children: $.length === 0 && !W ? (0, q.jsx)(P.Row, {
+                            children: (0, q.jsx)(P.Cell, {
+                                colSpan: 100,
+                                children: (0, q.jsx)(L, {
+                                    title: u.formatMessage({
+                                        id: `wham.environmentsList.search.noEnvironments`,
+                                        defaultMessage: `No matches for {search}`
+                                    }, {
+                                        search: _
+                                    }),
+                                    description: u.formatMessage({
+                                        id: `wham.environmentsList.search.noEnvironmentsDescription`,
+                                        defaultMessage: `Create an environment for Codex to work in`
+                                    })
+                                })
+                            })
+                        }) : $.map(({
+                            id: e,
+                            label: t,
+                            is_pinned: n,
+                            repos: r,
+                            repo_map: a,
+                            creator: o,
+                            created_at: s,
+                            task_count: c,
+                            share_settings: l
+                        }) => {
+                            let d = !!f?.authUserId && o.id.includes(f?.authUserId);
+                            return (0, q.jsxs)(P.Row, {
+                                role: `row`,
+                                className: `group/row hover:bg-token-bg-tertiary h-14 px-2 text-sm hover:cursor-pointer`,
+                                onClick: () => i(`/codex/cloud/settings/environment/${e}`),
+                                tabIndex: 0,
+                                "aria-label": u.formatMessage({
+                                    id: `wham.environmentsList.environmentAriaLabel`,
+                                    defaultMessage: `View environment {label}`
+                                }, {
+                                    label: t
+                                }),
+                                children: [(0, q.jsx)(P.Cell, {
+                                    divClassName: `flex h-14 items-center group-hover/row:underline ps-2`,
+                                    children: t
+                                }), (0, q.jsx)(P.Cell, {
+                                    divClassName: `flex h-14 items-center`,
+                                    children: r.map(e => (0, q.jsx)(`div`, {
+                                        children: a?.[e]?.repository_full_name ?? e
+                                    }, e))
+                                }), (0, q.jsx)(P.Cell, {
+                                    divClassName: `flex h-14 items-center`,
+                                    children: c
+                                }), m && (0, q.jsx)(P.Cell, {
+                                    divClassName: `flex h-14 items-center`,
+                                    children: He(u, l)
+                                }), (0, q.jsx)(P.Cell, {
+                                    divClassName: `flex h-14 items-center`,
+                                    children: o.email
+                                }), (0, q.jsx)(P.Cell, {
+                                    divClassName: `flex h-14 items-center`,
+                                    children: s ? (0, q.jsx)(ie, {
+                                        value: new Date(s * 1e3),
+                                        year: `numeric`,
+                                        month: `long`,
+                                        day: `numeric`
+                                    }) : (0, q.jsx)(S, {
+                                        id: `wham.environmentsList.na`,
+                                        defaultMessage: `N/A`
+                                    })
+                                }), p && (0, q.jsx)(Be, {
+                                    isPinned: n,
+                                    isCreator: d,
+                                    onToggle: t => {
+                                        t.stopPropagation(), Ie({
+                                            environmentId: e,
+                                            isPinned: !n
+                                        })
+                                    },
+                                    intl: u
+                                })]
+                            }, e)
+                        })
+                    })]
+                }), (0, q.jsx)(me, {
+                    isFetchingNextPage: G,
+                    hasNextPage: W ?? !1,
+                    fetchNextPage: Ue
+                })]
+            })]
+        })]
+    })
+}
+
+function He(e, t) {
+    switch (t) {
+        case `public`:
+            return e.formatMessage({
+                id: `wham.environmentsList.public`,
+                defaultMessage: `Public`
+            });
+        case `private`:
+            return e.formatMessage({
+                id: `wham.environmentsList.private`,
+                defaultMessage: `Private`
+            });
+        case `workspace`:
+            return e.formatMessage({
+                id: `wham.environmentsList.workspace`,
+                defaultMessage: `Workspace`
+            });
+        default:
+            (0, G.assertNever)(t)
+    }
+}
+var G, K, q, J, Y, X, Ue = e((() => {
+    f(), j(), _e(), A(), k(), be(), s(), O(), te(), _(), o(), i(), ke(), Se(), Oe(), Ne(), I(), F(), Pe(), z(), ze(), pe(), p(), E(), G = t(m()), v(), ee(), K = t(T()), w(), C(), q = b(), J = 25, Y = 100, X = null
+}));
+
+function Z() {
+    let e = d(`1437685011`),
+        [t, n] = (0, We.useState)({
+            showGitLab: !1,
+            showGitHub: !1
+        });
+    return (0, Q.jsx)(Te, {
+        topPadding: !0,
+        connectionAlert: e ? (0, Q.jsxs)(Q.Fragment, {
+            children: [t.showGitLab && (0, Q.jsx)(je, {
+                redirectAfter: `/codex/cloud/settings/environments?provider=gitlab`
+            }), t.showGitHub && (0, Q.jsx)(Ce, {})]
+        }) : void 0,
+        children: (0, Q.jsxs)(`div`, {
+            className: e ? `mx-auto flex h-full max-w-screen-xl flex-1 flex-col gap-8 ps-4 pe-4 md:pe-12` : `mx-auto flex h-full max-w-screen-xl flex-1 flex-col gap-4 ps-4 pe-4 md:pe-12`,
+            children: [!e && (0, Q.jsx)(Le, {}), (0, Q.jsx)(Ve, {
+                onConnectionAlertVisibilityChange: n
+            })]
+        })
+    })
+}
+var We, Q, $ = e((() => {
+        i(), we(), I(), F(), z(), Ue(), We = t(T()), Q = b()
+    })),
+    Ge, Ke, qe, Je, Ye = e((() => {
+        C(), Ge = D(), $(), Ke = b(), qe = () => [{
+            title: `Codex`
+        }], Je = x(function() {
+            "use forget";
+            let e = (0, Ge.c)(1),
+                t;
+            return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, Ke.jsx)(Z, {}), e[0] = t) : t = e[0], t
+        })
+    }));
+e((() => {
+    Ye()
+}))();
+export {
+    Je as
+    default, qe as meta
+};
 //# sourceMappingURL=codex.cloud.settings.environments-ey82geuw.js.map

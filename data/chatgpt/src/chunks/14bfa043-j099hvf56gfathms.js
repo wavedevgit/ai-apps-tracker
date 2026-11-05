@@ -1,2 +1,14 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";function t(e,t){let n=document.createElement(`a`);n.href=e,n.rel=`noopener`,n.target=`_blank`,t&&(n.download=t),document.body.appendChild(n),n.click(),document.body.removeChild(n)}var n=e((()=>{}));export{n,t};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+
+function t(e, t) {
+    let n = document.createElement(`a`);
+    n.href = e, n.rel = `noopener`, n.target = `_blank`, t && (n.download = t), document.body.appendChild(n), n.click(), document.body.removeChild(n)
+}
+var n = e((() => {}));
+export {
+    n,
+    t
+};
 //# sourceMappingURL=14bfa043-j099hvf56gfathms.js.map

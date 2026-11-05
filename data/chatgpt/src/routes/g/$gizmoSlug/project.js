@@ -1,2 +1,536 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$0 as n,$T as r,$u as i,A8 as a,B0 as o,BJ as s,Bnt as c,CV as l,Crt as u,FJ as d,Fl as f,HJ as p,HN as m,IY as h,K0 as g,K5 as _,LJ as v,LY as y,Lit as b,Ml as x,PJ as S,PY as C,Rit as w,UN as ee,Uf as T,VJ as te,VY as ne,Wet as re,Wg as E,Yf as D,_D as O,_r as ie,_rt as ae,al as oe,bV as se,c2 as ce,cB as le,cot as ue,d2 as de,dot as fe,e2 as pe,eE as me,fot as he,gtt as ge,j5 as k,kJ as _e,l2 as A,lB as ve,lF as ye,not as be,o_ as xe,ol as Se,pF as Ce,q5 as we,r_ as Te,s2 as Ee,sB as De,tl as Oe,uD as j,vF as ke,vr as M,xnt as Ae,xr as je,y5 as Me,zY as Ne,zu as Pe}from"./4813494d-mdvd4786a87166cc.js";import{At as N,Bn as P,Ht as Fe,Lt as Ie,N as F,Nn as I,Nt as L,O as R,Q as z,Rn as B,Vn as V,Vt as Le,bt as Re,s as H,wn as U}from"./2340486e-i7pjxgdhv0bs6apg.js";import{IQ as ze,Is as Be,LQ as Ve,O0t as He,Ps as Ue,c as We,chn as W,k0t as Ge,lhn as Ke,ohn as G,s as qe}from"./conversation-small-bcbq46iub1p0ca1t.js";import{D_ as Je,Dt as Ye,Et as Xe,Gp as Ze,Hp as Qe,Kh as $e,M as et,O_ as tt,Wp as nt,X as rt,Yh as it,Z as at,_ as ot,f as st,j as ct,m as lt,v as ut}from"./8b34dbc2-lmwubajnld74ksfm.js";import{n as dt,t as ft}from"./25afeb5a-f82fgvz2jsaf5y1j.js";import{n as pt,t as mt}from"./e8ccfb70-c0tu17odyec93vis.js";function ht(e){"use forget";let t=(0,vt.c)(22),{children:i,projectId:a}=e,o=L(),[c,l]=Le(),u=F(),f=k(d),p;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(p={queryKey:v,queryFn:s},t[0]=p):p=t[0];let m=R(p),h=m.data,_=h?.has_pin===!0&&f!=null,y;t[1]===o?y=t[2]:(y=()=>{o(`/projects`,{replace:!0})},t[1]=o,t[2]=y);let b=y,x,S;t[3]!==c||t[4]!==l?(x=()=>{if(g.set(!1),!c.has(`temporary-chat`))return;let e=new URLSearchParams(c);e.delete(n),l(e,{replace:!0})},S=[c,l],t[3]=c,t[4]=l,t[5]=x,t[6]=S):(x=t[5],S=t[6]),ee(x,S);let C,w;t[7]!==_||t[8]!==f||t[9]!==b||t[10]!==a||t[11]!==u||t[12]!==h?(C=()=>{if(h!=null&&!_){if(!h.has_pin){je(u,a),f!=null&&_e(),A(G)||de(G,{onDismiss:b});return}A(W)||de(W,{onDismiss:b})}},w=[_,f,b,a,u,h],t[7]=_,t[8]=f,t[9]=b,t[10]=a,t[11]=u,t[12]=h,t[13]=C,t[14]=w):(C=t[13],w=t[14]),(0,K.useEffect)(C,w);let T;if(t[15]===Symbol.for(`react.memo_cache_sentinel`)?(T=[],t[15]=T):T=t[15],(0,K.useEffect)(gt,T),!_){if(m.isError){let e;t[16]===m?e=t[17]:(e=()=>m.refetch(),t[16]=m,t[17]=e);let n;t[18]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,q.jsx)(I,{id:`chatgpt.locked_chats.project_gate.retry`,defaultMessage:`Try again`}),t[18]=n):n=t[18];let i;return t[19]===e?i=t[20]:(i=(0,q.jsx)(`div`,{className:`flex min-h-full items-center justify-center p-6`,children:(0,q.jsx)(r,{color:`secondary`,onClick:e,children:n})}),t[19]=e,t[20]=i),i}let e;return t[21]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,q.jsx)(ft,{}),t[21]=e):e=t[21],e}return i}function gt(){return _t}function _t(){Ee(G),Ee(W)}var vt,K,q,yt=e((()=>{vt=U(),me(),pe(),ce(),o(),H(),dt(),a(),m(),K=t(V()),B(),z(),Ke(),te(),M(),S(),q=P()}));function bt(e,t){let n=e.getQueryData(j(e,t,!1).queryKey);if(n!=null)return n;let r=e.getQueryData([E]);for(let e of r?.pages??[]){let n=e.items.find(e=>e.gizmo.gizmo.id===t);if(n!=null)return n.gizmo}}function xt(e){"use forget";let t=(0,J.c)(3),{children:n,projectId:r}=e,i;return t[0]!==n||t[1]!==r?(i=(0,Y.jsx)(St,{projectId:r,children:n}),t[0]=n,t[1]=r,t[2]=i):i=t[2],i}function St(e){"use forget";let t=(0,J.c)(9),{children:n,projectId:i}=e,a=F(),o;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(o=w(),t[0]=o):o=t[0];let c=o,u=c?bt(a,i):void 0,d=u!=null&&u.gizmo.id===i&&!l(u),f=c&&!d,m;t[1]===f?m=t[2]:(m={queryKey:v,queryFn:s,enabled:f},t[1]=f,t[2]=m);let{data:h,error:g,isPending:_,isError:y,refetch:b}=R(m);if(f&&_){let e;return t[3]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Y.jsx)(`div`,{className:`min-h-full`}),t[3]=e):e=t[3],e}let x=g instanceof be&&g.status===404&&!p()&&(u==null||!l(u));if(f&&y&&!x){let e;t[4]===b?e=t[5]:(e=()=>b(),t[4]=b,t[5]=e);let n;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Y.jsx)(I,{id:`chatgpt.locked_chats.project_gate.retry`,defaultMessage:`Try again`}),t[6]=n):n=t[6];let i;return t[7]===e?i=t[8]:(i=(0,Y.jsx)(`div`,{className:`flex min-h-full items-center justify-center p-6`,children:(0,Y.jsx)(r,{color:`secondary`,onClick:e,children:n})}),t[7]=e,t[8]=i),i}return u?.gizmo.id===i&&l(u)||ie(h)===i?(0,Y.jsx)(ht,{projectId:i,children:n}):n}var J,Y,Ct=e((()=>{J=U(),O(),me(),Te(),se(),b(),ue(),H(),B(),te(),M(),yt(),Y=P()}));function wt(e){"use forget";let t=(0,Tt.c)(29),{conversation:n,gizmoId:r}=e,i;t[0]===r?i=t[1]:(i=T(r),t[0]=r,t[1]=i);let a=i,o;t[2]===a?o=t[3]:(o=()=>a.title$(),t[2]=a,t[3]=o);let s=k(o),l;t[4]===a?l=t[5]:(l=()=>a.isSkeleton$(),t[4]=a,t[5]=l);let u=k(l),d;t[6]===n?d=t[7]:(d=()=>oe(n),t[6]=n,t[7]=d);let f=k(d),p;t[8]===n?p=t[9]:(p=()=>!c()&&!g()&&Se(n),t[8]=n,t[9]=p);let m=k(p),h;t[10]!==n.id||t[11]!==r?(h=(0,X.jsx)(`div`,{className:`pe-2`,children:(0,X.jsx)(He,{clientThreadId:n.id,dropdownSide:`bottom`,dropdownSideOffset:4,gizmoId:r,variant:`stage-mobile`})}),t[10]=n.id,t[11]=r,t[12]=h):h=t[12];let v;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(v=(0,X.jsx)(nt,{}),t[13]=v):v=t[13];let y=u&&`skeleton-child`,b;t[14]===y?b=t[15]:(b=_(`text-headline text-token-text-primary flex min-h-6 max-w-full items-center truncate font-medium`,y),t[14]=y,t[15]=b);let x;t[16]!==b||t[17]!==s?(x=(0,X.jsx)(`div`,{className:b,children:s}),t[16]=b,t[17]=s,t[18]=x):x=t[18];let S;t[19]!==n||t[20]!==f||t[21]!==m?(S=m&&(0,X.jsx)(Ue,{conversation:n,isTPPConversationMode:f,isSwitchable:!0,size:`compact`}),t[19]=n,t[20]=f,t[21]=m,t[22]=S):S=t[22];let C;t[23]!==x||t[24]!==S?(C=(0,X.jsxs)(`div`,{className:`pointer-events-none absolute start-1/2 flex max-w-[calc(100%-8rem)] flex-col items-center ltr:-translate-x-1/2 rtl:translate-x-1/2`,children:[x,S]}),t[23]=x,t[24]=S,t[25]=C):C=t[25];let w;return t[26]!==C||t[27]!==h?(w=(0,X.jsx)(`div`,{"data-fixed-header":`less-than-md`,children:(0,X.jsxs)(Qe,{rightContent:h,children:[v,C]})}),t[26]=C,t[27]=h,t[28]=w):w=t[28],w}var Tt,X,Et=e((()=>{Tt=U(),o(),D(),Ge(),a(),Ze(),Oe(),Be(),Ae(),we(),X=P()}));function Dt(e,t){let n=(0,Ot.useRef)(0);return()=>{n.current<t&&(e(),n.current+=1)}}var Ot,kt=e((()=>{Ot=t(V())}));function At(e){let t=new URL(e.url);if(t.searchParams.get(`temporary-chat`)===`true`)return t.searchParams.delete(n),Re(`${t.pathname}${t.search}${t.hash}`,{headers:{"X-Robots-Tag":`noindex, nofollow`}})}function jt({gizmoId:e,initialProjectResource:t}){"use no forget";let n=(0,Z.useRef)(!1);!n.current&&Ve()&&(n.current=!0,f(`project_route`));let r=L(),i=F(),{data:a,isError:o,error:s}=R({...j(i,e,!1,!w()),...t?{initialData:t}:void 0}),c=i.getQueryData([E]),l=i.getQueryState([E])?.fetchStatus===`fetching`,u=(0,Z.useMemo)(()=>c?.pages.flatMap(e=>e.items),[c]),d=T(e),p=h(N().pathname);p===`health`&&ne(p,e),(0,Z.useEffect)(()=>{d.conversations$().preload$()},[d]),(0,Z.useEffect)(()=>{if(o&&!a)if(s instanceof be&&(s.status===403||s.status===404))r(ve(De.PROJECT_NOT_FOUND,void 0,he(s)));else{let e=fe(s);r(ve(De.CUSTOM_ERROR,void 0,e))}},[o,a,r,s]);let m=Dt(()=>{xe(i)},5);return(0,Z.useEffect)(()=>{!e||!a||l||u?.some(t=>t.gizmo.gizmo.id===e)||m()},[a,e,u,l,i,m]),(0,Q.jsx)(Mt,{gizmoId:e},e)}function Mt(e){"use forget";let t=(0,Nt.c)(36),{gizmoId:n}=e,r=N(),i;t[0]===n?i=t[1]:(i=()=>Ce({urlGizmoId:n}),t[0]=n,t[1]=i);let[a,o]=(0,Z.useState)(i),s;t[2]!==a||t[3]!==n?(s=()=>{Me(()=>Pe(a))&&o(Ce({urlGizmoId:n}))},t[2]=a,t[3]=n,t[4]=s):s=t[4];let c=(0,Z.useEffectEvent)(s),l;t[5]===c?l=t[6]:(l=()=>{g.set(!1),c()},t[5]=c,t[6]=l);let u;t[7]===r.key?u=t[8]:(u=[r.key],t[7]=r.key,t[8]=u),ee(l,u);let d;t[9]===n?d=t[10]:(d={kind:re.GizmoInteraction,gizmo_id:n},t[9]=n,t[10]=d),ut(a.id,d);let f;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(f=(0,Q.jsx)(rt,{}),t[11]=f):f=t[11];let p;t[12]===a?p=t[13]:(p=(0,Q.jsx)(Xe,{conversation:a}),t[12]=a,t[13]=p);let m;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(m=(0,Q.jsx)(mt,{}),t[14]=m):m=t[14];let h;t[15]!==a||t[16]!==n?(h=(0,Q.jsx)(wt,{conversation:a,gizmoId:n}),t[15]=a,t[16]=n,t[17]=h):h=t[17];let _;t[18]===a?_=t[19]:(_=(0,Q.jsx)(ct,{conversation:a,className:`max-md:hidden`}),t[18]=a,t[19]=_);let v;t[20]!==_||t[21]!==h?(v=(0,Q.jsxs)(Q.Fragment,{children:[h,_]}),t[20]=_,t[21]=h,t[22]=v):v=t[22];let y;t[23]!==a||t[24]!==v?(y=(0,Q.jsx)(st,{conversation:a,threadHeader:v}),t[23]=a,t[24]=v,t[25]=y):y=t[25];let b;t[26]!==a||t[27]!==y?(b=(0,Q.jsx)(Je,{conversation:a,children:y}),t[26]=a,t[27]=y,t[28]=b):b=t[28];let x;t[29]!==a||t[30]!==b?(x=(0,Q.jsx)($e,{conversation:a,children:b}),t[29]=a,t[30]=b,t[31]=x):x=t[31];let S;return t[32]!==a||t[33]!==x||t[34]!==p?(S=(0,Q.jsxs)(ye.Provider,{value:a,children:[f,p,m,x]},a.id),t[32]=a,t[33]=x,t[34]=p,t[35]=S):S=t[35],S}var Nt,Z,Q,Pt,$,Ft=e((()=>{z(),Nt=U(),ge(),pe(),lt(),tt(),ke(),i(),o(),it(),Ne(),O(),y(),pt(),Ct(),Et(),D(),Te(),ze(),a(),ot(),le(),et(),b(),ue(),x(),u(),kt(),m(),Ye(),at(),qe(),H(),Z=t(V()),Q=P(),Pt=({params:e,request:t,serverLoader:n})=>{if(We(),e.gizmoSlug===`health`)return n();if(!ae(`491279851`))return Re(`/`);g.set(!1);let r=At(t);if(r)return r;Ve()&&f(`project_route`)},$=Fe(function(){"use no forget";let{gizmoSlug:e}=Ie(),t=C(e??``);return(0,Q.jsx)(xt,{projectId:t,children:(0,Q.jsx)(jt,{gizmoId:t})})})}));e((()=>{Ft()}))();export{Pt as clientLoader,$ as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $0 as n,
+    $T as r,
+    $u as i,
+    A8 as a,
+    B0 as o,
+    BJ as s,
+    Bnt as c,
+    CV as l,
+    Crt as u,
+    FJ as d,
+    Fl as f,
+    HJ as p,
+    HN as m,
+    IY as h,
+    K0 as g,
+    K5 as _,
+    LJ as v,
+    LY as y,
+    Lit as b,
+    Ml as x,
+    PJ as S,
+    PY as C,
+    Rit as w,
+    UN as ee,
+    Uf as T,
+    VJ as te,
+    VY as ne,
+    Wet as re,
+    Wg as E,
+    Yf as D,
+    _D as O,
+    _r as ie,
+    _rt as ae,
+    al as oe,
+    bV as se,
+    c2 as ce,
+    cB as le,
+    cot as ue,
+    d2 as de,
+    dot as fe,
+    e2 as pe,
+    eE as me,
+    fot as he,
+    gtt as ge,
+    j5 as k,
+    kJ as _e,
+    l2 as A,
+    lB as ve,
+    lF as ye,
+    not as be,
+    o_ as xe,
+    ol as Se,
+    pF as Ce,
+    q5 as we,
+    r_ as Te,
+    s2 as Ee,
+    sB as De,
+    tl as Oe,
+    uD as j,
+    vF as ke,
+    vr as M,
+    xnt as Ae,
+    xr as je,
+    y5 as Me,
+    zY as Ne,
+    zu as Pe
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as N,
+    Bn as P,
+    Ht as Fe,
+    Lt as Ie,
+    N as F,
+    Nn as I,
+    Nt as L,
+    O as R,
+    Q as z,
+    Rn as B,
+    Vn as V,
+    Vt as Le,
+    bt as Re,
+    s as H,
+    wn as U
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    IQ as ze,
+    Is as Be,
+    LQ as Ve,
+    O0t as He,
+    Ps as Ue,
+    c as We,
+    chn as W,
+    k0t as Ge,
+    lhn as Ke,
+    ohn as G,
+    s as qe
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    D_ as Je,
+    Dt as Ye,
+    Et as Xe,
+    Gp as Ze,
+    Hp as Qe,
+    Kh as $e,
+    M as et,
+    O_ as tt,
+    Wp as nt,
+    X as rt,
+    Yh as it,
+    Z as at,
+    _ as ot,
+    f as st,
+    j as ct,
+    m as lt,
+    v as ut
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    n as dt,
+    t as ft
+} from "./25afeb5a-f82fgvz2jsaf5y1j.js";
+import {
+    n as pt,
+    t as mt
+} from "./e8ccfb70-c0tu17odyec93vis.js";
+
+function ht(e) {
+    "use forget";
+    let t = (0, vt.c)(22),
+        {
+            children: i,
+            projectId: a
+        } = e,
+        o = L(),
+        [c, l] = Le(),
+        u = F(),
+        f = k(d),
+        p;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (p = {
+        queryKey: v,
+        queryFn: s
+    }, t[0] = p) : p = t[0];
+    let m = R(p),
+        h = m.data,
+        _ = h?.has_pin === !0 && f != null,
+        y;
+    t[1] === o ? y = t[2] : (y = () => {
+        o(`/projects`, {
+            replace: !0
+        })
+    }, t[1] = o, t[2] = y);
+    let b = y,
+        x, S;
+    t[3] !== c || t[4] !== l ? (x = () => {
+        if (g.set(!1), !c.has(`temporary-chat`)) return;
+        let e = new URLSearchParams(c);
+        e.delete(n), l(e, {
+            replace: !0
+        })
+    }, S = [c, l], t[3] = c, t[4] = l, t[5] = x, t[6] = S) : (x = t[5], S = t[6]), ee(x, S);
+    let C, w;
+    t[7] !== _ || t[8] !== f || t[9] !== b || t[10] !== a || t[11] !== u || t[12] !== h ? (C = () => {
+        if (h != null && !_) {
+            if (!h.has_pin) {
+                je(u, a), f != null && _e(), A(G) || de(G, {
+                    onDismiss: b
+                });
+                return
+            }
+            A(W) || de(W, {
+                onDismiss: b
+            })
+        }
+    }, w = [_, f, b, a, u, h], t[7] = _, t[8] = f, t[9] = b, t[10] = a, t[11] = u, t[12] = h, t[13] = C, t[14] = w) : (C = t[13], w = t[14]), (0, K.useEffect)(C, w);
+    let T;
+    if (t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (T = [], t[15] = T) : T = t[15], (0, K.useEffect)(gt, T), !_) {
+        if (m.isError) {
+            let e;
+            t[16] === m ? e = t[17] : (e = () => m.refetch(), t[16] = m, t[17] = e);
+            let n;
+            t[18] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, q.jsx)(I, {
+                id: `chatgpt.locked_chats.project_gate.retry`,
+                defaultMessage: `Try again`
+            }), t[18] = n) : n = t[18];
+            let i;
+            return t[19] === e ? i = t[20] : (i = (0, q.jsx)(`div`, {
+                className: `flex min-h-full items-center justify-center p-6`,
+                children: (0, q.jsx)(r, {
+                    color: `secondary`,
+                    onClick: e,
+                    children: n
+                })
+            }), t[19] = e, t[20] = i), i
+        }
+        let e;
+        return t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, q.jsx)(ft, {}), t[21] = e) : e = t[21], e
+    }
+    return i
+}
+
+function gt() {
+    return _t
+}
+
+function _t() {
+    Ee(G), Ee(W)
+}
+var vt, K, q, yt = e((() => {
+    vt = U(), me(), pe(), ce(), o(), H(), dt(), a(), m(), K = t(V()), B(), z(), Ke(), te(), M(), S(), q = P()
+}));
+
+function bt(e, t) {
+    let n = e.getQueryData(j(e, t, !1).queryKey);
+    if (n != null) return n;
+    let r = e.getQueryData([E]);
+    for (let e of r?.pages ?? []) {
+        let n = e.items.find(e => e.gizmo.gizmo.id === t);
+        if (n != null) return n.gizmo
+    }
+}
+
+function xt(e) {
+    "use forget";
+    let t = (0, J.c)(3),
+        {
+            children: n,
+            projectId: r
+        } = e,
+        i;
+    return t[0] !== n || t[1] !== r ? (i = (0, Y.jsx)(St, {
+        projectId: r,
+        children: n
+    }), t[0] = n, t[1] = r, t[2] = i) : i = t[2], i
+}
+
+function St(e) {
+    "use forget";
+    let t = (0, J.c)(9),
+        {
+            children: n,
+            projectId: i
+        } = e,
+        a = F(),
+        o;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (o = w(), t[0] = o) : o = t[0];
+    let c = o,
+        u = c ? bt(a, i) : void 0,
+        d = u != null && u.gizmo.id === i && !l(u),
+        f = c && !d,
+        m;
+    t[1] === f ? m = t[2] : (m = {
+        queryKey: v,
+        queryFn: s,
+        enabled: f
+    }, t[1] = f, t[2] = m);
+    let {
+        data: h,
+        error: g,
+        isPending: _,
+        isError: y,
+        refetch: b
+    } = R(m);
+    if (f && _) {
+        let e;
+        return t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Y.jsx)(`div`, {
+            className: `min-h-full`
+        }), t[3] = e) : e = t[3], e
+    }
+    let x = g instanceof be && g.status === 404 && !p() && (u == null || !l(u));
+    if (f && y && !x) {
+        let e;
+        t[4] === b ? e = t[5] : (e = () => b(), t[4] = b, t[5] = e);
+        let n;
+        t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Y.jsx)(I, {
+            id: `chatgpt.locked_chats.project_gate.retry`,
+            defaultMessage: `Try again`
+        }), t[6] = n) : n = t[6];
+        let i;
+        return t[7] === e ? i = t[8] : (i = (0, Y.jsx)(`div`, {
+            className: `flex min-h-full items-center justify-center p-6`,
+            children: (0, Y.jsx)(r, {
+                color: `secondary`,
+                onClick: e,
+                children: n
+            })
+        }), t[7] = e, t[8] = i), i
+    }
+    return u?.gizmo.id === i && l(u) || ie(h) === i ? (0, Y.jsx)(ht, {
+        projectId: i,
+        children: n
+    }) : n
+}
+var J, Y, Ct = e((() => {
+    J = U(), O(), me(), Te(), se(), b(), ue(), H(), B(), te(), M(), yt(), Y = P()
+}));
+
+function wt(e) {
+    "use forget";
+    let t = (0, Tt.c)(29),
+        {
+            conversation: n,
+            gizmoId: r
+        } = e,
+        i;
+    t[0] === r ? i = t[1] : (i = T(r), t[0] = r, t[1] = i);
+    let a = i,
+        o;
+    t[2] === a ? o = t[3] : (o = () => a.title$(), t[2] = a, t[3] = o);
+    let s = k(o),
+        l;
+    t[4] === a ? l = t[5] : (l = () => a.isSkeleton$(), t[4] = a, t[5] = l);
+    let u = k(l),
+        d;
+    t[6] === n ? d = t[7] : (d = () => oe(n), t[6] = n, t[7] = d);
+    let f = k(d),
+        p;
+    t[8] === n ? p = t[9] : (p = () => !c() && !g() && Se(n), t[8] = n, t[9] = p);
+    let m = k(p),
+        h;
+    t[10] !== n.id || t[11] !== r ? (h = (0, X.jsx)(`div`, {
+        className: `pe-2`,
+        children: (0, X.jsx)(He, {
+            clientThreadId: n.id,
+            dropdownSide: `bottom`,
+            dropdownSideOffset: 4,
+            gizmoId: r,
+            variant: `stage-mobile`
+        })
+    }), t[10] = n.id, t[11] = r, t[12] = h) : h = t[12];
+    let v;
+    t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (v = (0, X.jsx)(nt, {}), t[13] = v) : v = t[13];
+    let y = u && `skeleton-child`,
+        b;
+    t[14] === y ? b = t[15] : (b = _(`text-headline text-token-text-primary flex min-h-6 max-w-full items-center truncate font-medium`, y), t[14] = y, t[15] = b);
+    let x;
+    t[16] !== b || t[17] !== s ? (x = (0, X.jsx)(`div`, {
+        className: b,
+        children: s
+    }), t[16] = b, t[17] = s, t[18] = x) : x = t[18];
+    let S;
+    t[19] !== n || t[20] !== f || t[21] !== m ? (S = m && (0, X.jsx)(Ue, {
+        conversation: n,
+        isTPPConversationMode: f,
+        isSwitchable: !0,
+        size: `compact`
+    }), t[19] = n, t[20] = f, t[21] = m, t[22] = S) : S = t[22];
+    let C;
+    t[23] !== x || t[24] !== S ? (C = (0, X.jsxs)(`div`, {
+        className: `pointer-events-none absolute start-1/2 flex max-w-[calc(100%-8rem)] flex-col items-center ltr:-translate-x-1/2 rtl:translate-x-1/2`,
+        children: [x, S]
+    }), t[23] = x, t[24] = S, t[25] = C) : C = t[25];
+    let w;
+    return t[26] !== C || t[27] !== h ? (w = (0, X.jsx)(`div`, {
+        "data-fixed-header": `less-than-md`,
+        children: (0, X.jsxs)(Qe, {
+            rightContent: h,
+            children: [v, C]
+        })
+    }), t[26] = C, t[27] = h, t[28] = w) : w = t[28], w
+}
+var Tt, X, Et = e((() => {
+    Tt = U(), o(), D(), Ge(), a(), Ze(), Oe(), Be(), Ae(), we(), X = P()
+}));
+
+function Dt(e, t) {
+    let n = (0, Ot.useRef)(0);
+    return () => {
+        n.current < t && (e(), n.current += 1)
+    }
+}
+var Ot, kt = e((() => {
+    Ot = t(V())
+}));
+
+function At(e) {
+    let t = new URL(e.url);
+    if (t.searchParams.get(`temporary-chat`) === `true`) return t.searchParams.delete(n), Re(`${t.pathname}${t.search}${t.hash}`, {
+        headers: {
+            "X-Robots-Tag": `noindex, nofollow`
+        }
+    })
+}
+
+function jt({
+    gizmoId: e,
+    initialProjectResource: t
+}) {
+    "use no forget";
+    let n = (0, Z.useRef)(!1);
+    !n.current && Ve() && (n.current = !0, f(`project_route`));
+    let r = L(),
+        i = F(),
+        {
+            data: a,
+            isError: o,
+            error: s
+        } = R({
+            ...j(i, e, !1, !w()),
+            ...t ? {
+                initialData: t
+            } : void 0
+        }),
+        c = i.getQueryData([E]),
+        l = i.getQueryState([E])?.fetchStatus === `fetching`,
+        u = (0, Z.useMemo)(() => c?.pages.flatMap(e => e.items), [c]),
+        d = T(e),
+        p = h(N().pathname);
+    p === `health` && ne(p, e), (0, Z.useEffect)(() => {
+        d.conversations$().preload$()
+    }, [d]), (0, Z.useEffect)(() => {
+        if (o && !a)
+            if (s instanceof be && (s.status === 403 || s.status === 404)) r(ve(De.PROJECT_NOT_FOUND, void 0, he(s)));
+            else {
+                let e = fe(s);
+                r(ve(De.CUSTOM_ERROR, void 0, e))
+            }
+    }, [o, a, r, s]);
+    let m = Dt(() => {
+        xe(i)
+    }, 5);
+    return (0, Z.useEffect)(() => {
+        !e || !a || l || u?.some(t => t.gizmo.gizmo.id === e) || m()
+    }, [a, e, u, l, i, m]), (0, Q.jsx)(Mt, {
+        gizmoId: e
+    }, e)
+}
+
+function Mt(e) {
+    "use forget";
+    let t = (0, Nt.c)(36),
+        {
+            gizmoId: n
+        } = e,
+        r = N(),
+        i;
+    t[0] === n ? i = t[1] : (i = () => Ce({
+        urlGizmoId: n
+    }), t[0] = n, t[1] = i);
+    let [a, o] = (0, Z.useState)(i), s;
+    t[2] !== a || t[3] !== n ? (s = () => {
+        Me(() => Pe(a)) && o(Ce({
+            urlGizmoId: n
+        }))
+    }, t[2] = a, t[3] = n, t[4] = s) : s = t[4];
+    let c = (0, Z.useEffectEvent)(s),
+        l;
+    t[5] === c ? l = t[6] : (l = () => {
+        g.set(!1), c()
+    }, t[5] = c, t[6] = l);
+    let u;
+    t[7] === r.key ? u = t[8] : (u = [r.key], t[7] = r.key, t[8] = u), ee(l, u);
+    let d;
+    t[9] === n ? d = t[10] : (d = {
+        kind: re.GizmoInteraction,
+        gizmo_id: n
+    }, t[9] = n, t[10] = d), ut(a.id, d);
+    let f;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (f = (0, Q.jsx)(rt, {}), t[11] = f) : f = t[11];
+    let p;
+    t[12] === a ? p = t[13] : (p = (0, Q.jsx)(Xe, {
+        conversation: a
+    }), t[12] = a, t[13] = p);
+    let m;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (m = (0, Q.jsx)(mt, {}), t[14] = m) : m = t[14];
+    let h;
+    t[15] !== a || t[16] !== n ? (h = (0, Q.jsx)(wt, {
+        conversation: a,
+        gizmoId: n
+    }), t[15] = a, t[16] = n, t[17] = h) : h = t[17];
+    let _;
+    t[18] === a ? _ = t[19] : (_ = (0, Q.jsx)(ct, {
+        conversation: a,
+        className: `max-md:hidden`
+    }), t[18] = a, t[19] = _);
+    let v;
+    t[20] !== _ || t[21] !== h ? (v = (0, Q.jsxs)(Q.Fragment, {
+        children: [h, _]
+    }), t[20] = _, t[21] = h, t[22] = v) : v = t[22];
+    let y;
+    t[23] !== a || t[24] !== v ? (y = (0, Q.jsx)(st, {
+        conversation: a,
+        threadHeader: v
+    }), t[23] = a, t[24] = v, t[25] = y) : y = t[25];
+    let b;
+    t[26] !== a || t[27] !== y ? (b = (0, Q.jsx)(Je, {
+        conversation: a,
+        children: y
+    }), t[26] = a, t[27] = y, t[28] = b) : b = t[28];
+    let x;
+    t[29] !== a || t[30] !== b ? (x = (0, Q.jsx)($e, {
+        conversation: a,
+        children: b
+    }), t[29] = a, t[30] = b, t[31] = x) : x = t[31];
+    let S;
+    return t[32] !== a || t[33] !== x || t[34] !== p ? (S = (0, Q.jsxs)(ye.Provider, {
+        value: a,
+        children: [f, p, m, x]
+    }, a.id), t[32] = a, t[33] = x, t[34] = p, t[35] = S) : S = t[35], S
+}
+var Nt, Z, Q, Pt, $, Ft = e((() => {
+    z(), Nt = U(), ge(), pe(), lt(), tt(), ke(), i(), o(), it(), Ne(), O(), y(), pt(), Ct(), Et(), D(), Te(), ze(), a(), ot(), le(), et(), b(), ue(), x(), u(), kt(), m(), Ye(), at(), qe(), H(), Z = t(V()), Q = P(), Pt = ({
+        params: e,
+        request: t,
+        serverLoader: n
+    }) => {
+        if (We(), e.gizmoSlug === `health`) return n();
+        if (!ae(`491279851`)) return Re(`/`);
+        g.set(!1);
+        let r = At(t);
+        if (r) return r;
+        Ve() && f(`project_route`)
+    }, $ = Fe(function() {
+        "use no forget";
+        let {
+            gizmoSlug: e
+        } = Ie(), t = C(e ?? ``);
+        return (0, Q.jsx)(xt, {
+            projectId: t,
+            children: (0, Q.jsx)(jt, {
+                gizmoId: t
+            })
+        })
+    })
+}));
+e((() => {
+    Ft()
+}))();
+export {
+    Pt as clientLoader, $ as
+    default
+};
 //# sourceMappingURL=g._gizmoSlug.project-b3nwisgn.js.map

@@ -1,2 +1,29 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{Bn as t,Ht as n,Q as r,kt as i,wn as a}from"./2340486e-i7pjxgdhv0bs6apg.js";var o,s,c=e((()=>{r(),o=a(),t(),s=n(function(){"use forget";(0,o.c)(7);let{grant:e,error:t}=i();return null})}));e((()=>{c()}))();export{s as default};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Bn as t,
+    Ht as n,
+    Q as r,
+    kt as i,
+    wn as a
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+var o, s, c = e((() => {
+    r(), o = a(), t(), s = n(function() {
+        "use forget";
+        (0, o.c)(7);
+        let {
+            grant: e,
+            error: t
+        } = i();
+        return null
+    })
+}));
+e((() => {
+    c()
+}))();
+export {
+    s as
+    default
+};
 //# sourceMappingURL=meeting_bot.dev-g19duf94.js.map

@@ -1,2 +1,567 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$3 as n,$T as r,CR as i,Crt as a,I0 as o,Knt as s,L0 as c,Lit as l,Nat as u,OI as d,Oct as f,RI as p,Rit as m,Rz as ee,Srt as h,TR as g,Ust as _,Vst as v,Wnt as y,bI as b,e6 as te,eE as x,f0 as S,jat as ne,kI as C,mI as w,o as T,o0 as re,p0 as ie,q1 as E,s as D,wI as O,yI as k,zz as A}from"./4813494d-mdvd4786a87166cc.js";import{At as ae,Bn as j,Ht as oe,Lt as M,Nn as N,Nt as se,Q as P,Rn as ce,Ut as le,Vn as F,ct as I,kt as L,wn as R,zn as ue}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$rn as de,$sn as z,Ain as fe,Brn as B,Bsn as pe,Crn as me,Din as V,Dln as he,Eln as H,Hsn as U,Qrn as W,Qsn as ge,Srn as G,Trn as _e,Vsn as ve,bsn as ye,ecn as be,h6t as xe,icn as K,m6t as q,ncn as Se,tcn as Ce,xsn as J}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Cd as Y,Cu as we,Fn as Te,Fu as X,In as Ee,Iu as De,Ln as Oe,Lu as ke,Nu as Z,Sf as Ae,Su as je,_f as Me,vd as Ne,wd as Pe,xf as Fe}from"./c2675c8c-oz03twoan08d72ud.js";import{n as Ie,t as Le}from"./e18c46cf-mdafbaxtvknj0cwj.js";function Re(e){"use forget";let t=(0,Be.c)(93),{planType:n,promoCode:i,promoCampaign:a,businessSeatSelection:o,isPromoCampaignFromQueryParam:s}=e,{prepareCheckoutSession:c,navigateToCheckout:l}=fe(),u=ue(),f=ae(),p=se(),m=re(),[ee,h]=(0,Ve.useState)(!1),[_,v]=(0,Ve.useState)(null),te=g(),x=(0,Ve.useRef)(!1),S=n===Z.Team,T=S&&o!=null,ie=o?.standardSeats,E=o?.premiumSeats,D=o?.priceInterval,O;if(t[0]!==o?.referrer||t[1]!==f.search){let e=new URLSearchParams(f.search).get(`referrer`);O=o?.referrer??(e!=null&&Ue.has(e)?e:void 0),t[0]=o?.referrer,t[1]=f.search,t[2]=O}else O=t[2];let k=O,A;t[3]!==m||t[4]!==T?(A=T&&m?.isFreeWorkspace()&&m.isOwnerOfAccount()?m.id:void 0,t[3]=m,t[4]=T,t[5]=A):A=t[5];let j=A,{count:oe,isLoading:M}=xe(j),P;t[6]===f.search?P=t[7]:(P=new URLSearchParams(f.search).get(`country_code`),t[6]=f.search,t[7]=P);let ce=P??void 0,le;t[8]===ce?le=t[9]:(le={initialCountryCode:ce},t[8]=ce,t[9]=le);let{country:F}=_e(le),I=m??null,L;t[10]!==m||t[11]!==S?(L=!S&&de(m??null),t[10]=m,t[11]=S,t[12]=L):L=t[12];let R;t[13]!==F||t[14]!==S||t[15]!==I||t[16]!==L?(R={country:F,currentAccount:I,location:`DirectPurchaseCheckoutRedirect`,shouldUsePaidSubscriptionBillingCurrency:L,pricingPlanIsTypeBusiness:S},t[13]=F,t[14]=S,t[15]=I,t[16]=L,t[17]=R):R=t[17];let z=me(R),B=s??!!a,V=m?.id,{data:H,isLoading:U}=Pe(a??``,B,void 0,V),W;t[18]!==V||t[19]!==S||t[20]!==D||t[21]!==a||t[22]!==i||t[23]!==H?(W=!i&&a!=null&&H?.coupon===a&&H.state===`not_eligible`&&(!S||D==null||D===C.FLEXIBLE)?ge(H.ineligibility_reason,V):void 0,t[18]=V,t[19]=S,t[20]=D,t[21]=a,t[22]=i,t[23]=H,t[24]=W):W=t[24];let G=W,K=ee?`plan`:V!=null&&(_===V||G===`prior_introductory_offer_redeemed`)?`prior_introductory_offer`:null,q;t[25]!==U||t[26]!==f.search||t[27]!==H||t[28]!==G?(q=new URLSearchParams(f.search).get(`require_promo`)===`1`&&!U&&(H?.state!==`eligible`||!H.coupon)||G===`promo_ineligible`,t[25]=U,t[26]=f.search,t[27]=H,t[28]=G,t[29]=q):q=t[29];let J=q,Y;t[30]!==m||t[31]!==j||t[32]!==u||t[33]!==B||t[34]!==S||t[35]!==n||t[36]!==E||t[37]!==c||t[38]!==D||t[39]!==ie||t[40]!==te||t[41]!==oe?(Y=async e=>{let{billingDetails:t,promoCode:r,promoCampaignId:i}=e,a=j==null?void 0:m,o=ie==null||E==null?void 0:Math.max(ie,oe-E),s=E!=null&&(E>0||a==null&&D===C.FLEXIBLE&&i!==`team-1-month-free`),l={entry_point:he.DIRECT_PURCHASE_REDIRECT,plan_name:He[n],...S&&o!=null&&E!=null&&D!=null?{team_plan_data:{workspace_name:await Se(u,a,te),price_interval:D,seat_quantity:o+E,...s?{seat_quantities:[{seat_type:d.STANDARD,quantity:o},{seat_type:d.PREMIUM,quantity:E}]}:{},...a?{existing_workspace_id:a.id}:{}}}:{},billing_details:t,promo_code:r??void 0,promo_campaign:i&&(!S||D==null||D===C.FLEXIBLE)?{promo_campaign_id:i,is_coupon_from_query_param:B}:void 0};return{checkoutPayload:l,response:await c(l,{})}},t[30]=m,t[31]=j,t[32]=u,t[33]=B,t[34]=S,t[35]=n,t[36]=E,t[37]=c,t[38]=D,t[39]=ie,t[40]=te,t[41]=oe,t[42]=Y):Y=t[42];let we=Y,Te;t[43]!==V||t[44]!==z||t[45]!==k||t[46]!==S||t[47]!==f.search||t[48]!==p||t[49]!==l||t[50]!==n||t[51]!==we||t[52]!==D||t[53]!==K?(Te=async e=>{let{promoCode:t,promoCampaignId:r}=e;if(!(z==null||K!=null))try{y.logEventWithStatsig(`Direct Purchase Social Sku: Checkout Session Create Start`,`direct_purchase_social_sku_checkout_session_create_start`,{plan_type:n});let{checkoutPayload:e,response:i}=await we({billingDetails:z,promoCode:t,promoCampaignId:r});y.logEventWithStatsig(`Direct Purchase Social Sku: Checkout Session Create Success`,`direct_purchase_social_sku_checkout_session_create_success`,{plan_type:n});let a=f.search;if(S&&D===C.ANNUAL){let e=new URLSearchParams(a);e.delete(b);let t=e.toString();a=t?`?${t}`:``}let o=ye(i),s=o==null?`tag`in i&&i.tag===`redirect_to_portal`?pe(f.search):null:ve(o,f.search);await l(i,{...s==null?{}:{replace:!0},searchParams:a,state:{directPurchasePlanType:n},checkoutPayload:e,...k?{checkoutOriginProvenance:{checkoutOriginOriginator:k,checkoutOriginDeliverySurface:`web`}}:{}})}catch(e){let t=e;if(Ee(t)){h(!0);return}if(V!=null&&be(t)){v(V);return}let r=t instanceof Error?t:Error(`Failed to start checkout`);y.logEventWithStatsig(`Direct Purchase Social Sku: Checkout Session Create Failure`,`direct_purchase_social_sku_checkout_session_create_failure`,{plan_type:n}),ne.addError(r,{feature:`direct_purchase_checkout_redirect`,plan_type:n});let i=n===Z.ProLite?Z.Pro:n,a=new URLSearchParams(f.search);a.delete(`cta_tab`),a.set(`default_tab`,S?`business`:`personal`),a.set(`highlight_plan`,i),p({pathname:`/`,search:`?${a}`,hash:w},{replace:!0})}},t[43]=V,t[44]=z,t[45]=k,t[46]=S,t[47]=f.search,t[48]=p,t[49]=l,t[50]=n,t[51]=we,t[52]=D,t[53]=K,t[54]=Te):Te=t[54];let X=Te,De;t[55]!==z||t[56]!==X||t[57]!==j||t[58]!==U||t[59]!==J||t[60]!==M||t[61]!==i||t[62]!==H||t[63]!==K?(De=()=>{if(K!=null||J||U||z==null||j!=null&&M)return;let e=!1;return Promise.resolve().then(()=>{!e&&!x.current&&(x.current=!0,X({promoCode:i,promoCampaignId:H?.state===`eligible`?H.coupon:void 0}))}),()=>{e=!0}},t[55]=z,t[56]=X,t[57]=j,t[58]=U,t[59]=J,t[60]=M,t[61]=i,t[62]=H,t[63]=K,t[64]=De):De=t[64];let ke;if(t[65]!==z||t[66]!==X||t[67]!==j||t[68]!==U||t[69]!==B||t[70]!==J||t[71]!==M||t[72]!==i||t[73]!==H||t[74]!==K?(ke=[z,X,j,U,J,M,H,i,B,K],t[65]=z,t[66]=X,t[67]=j,t[68]=U,t[69]=B,t[70]=J,t[71]=M,t[72]=i,t[73]=H,t[74]=K,t[75]=ke):ke=t[75],(0,Ve.useEffect)(De,ke),J&&K!==`prior_introductory_offer`){let e;t[76]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,Q.jsx)(`h1`,{className:`text-xl font-semibold`,children:(0,Q.jsx)(N,{id:`pricing.directPurchase.requiredPromoUnavailable`,defaultMessage:`This offer is no longer available.`})}),t[76]=e):e=t[76];let n;return t[77]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Q.jsxs)(`div`,{className:`mx-auto flex max-w-md flex-col gap-4 p-6 text-center`,children:[e,(0,Q.jsx)(r,{color:`primary`,onClick:ze,children:(0,Q.jsx)(N,{id:`pricing.directPurchase.requiredPromoRetry`,defaultMessage:`Try again`})})]}),t[77]=n):n=t[77],n}if(K!=null){let e=K===`prior_introductory_offer`?Ce:Oe,n;t[78]===e?n=t[79]:(n=(0,Q.jsx)(`h1`,{className:`text-xl font-semibold`,children:(0,Q.jsx)(N,{...e})}),t[78]=e,t[79]=n);let i;t[80]===K?i=t[81]:(i=K===`plan`&&(0,Q.jsx)(`p`,{className:`text-token-text-secondary`,children:(0,Q.jsx)(N,{id:`pricing.directPurchase.planUnavailable.description`,defaultMessage:`Choose another available plan to continue.`})}),t[80]=K,t[81]=i);let a;t[82]!==f.search||t[83]!==p?(a=()=>p({pathname:`/`,...pe(f.search)==null?{}:{search:f.search},hash:w},{replace:!0}),t[82]=f.search,t[83]=p,t[84]=a):a=t[84];let o;t[85]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,Q.jsx)(N,{id:`pricing.directPurchase.planUnavailable.seePlans`,defaultMessage:`See available plans`}),t[85]=o):o=t[85];let s;t[86]===a?s=t[87]:(s=(0,Q.jsx)(r,{color:`primary`,onClick:a,children:o}),t[86]=a,t[87]=s);let c;return t[88]!==n||t[89]!==i||t[90]!==s?(c=(0,Q.jsxs)(`div`,{className:`mx-auto flex max-w-md flex-col gap-4 p-6 text-center`,children:[n,i,s]}),t[88]=n,t[89]=i,t[90]=s,t[91]=c):c=t[91],c}let Ae;return t[92]===Symbol.for(`react.memo_cache_sentinel`)?(Ae=(0,Q.jsx)(je,{}),t[92]=Ae):Ae=t[92],Ae}function ze(){return window.location.reload()}var Be,Ve,Q,He,Ue,We=e((()=>{Be=R(),Te(),z(),x(),f(),q(),K(),H(),U(),J(),V(),Ne(),W(),Fe(),G(),E(),i(),s(),u(),Ve=t(F()),ce(),P(),O(),Y(),X(),we(),Q=j(),He={[Z.Go]:_.GO,[Z.Plus]:_.PLUS,[Z.Pro]:_.PRO,[Z.ProLite]:_.PROLITE,[Z.Team]:_.SELF_SERVE_BUSINESS},Ue=new Set([`buying_agent`])}));function Ge(e){let t=new URLSearchParams(e),n=t.get(tt),r=t.get(nt);if(n==null&&r==null)return null;let i=e=>{if(e==null)return 0;if(!/^\d+$/.test(e))return null;let t=Number(e);return Number.isSafeInteger(t)?t:null},a=i(n),o=i(r);if(a==null||o==null)return null;let s=a+o;if(s<p()||s>200||o>0&&t.get(`promo_campaign`)?.trim().toLowerCase()===`team-1-month-free`)return null;let c=t.get(Me),l=t.get(`referrer`);return{standardSeats:a,premiumSeats:o,priceInterval:c!=null&&Ae(c)?c:C.FLEXIBLE,...l?{referrer:l}:{}}}function Ke(){"use forget";let e=(0,Je.c)(55),{referrer:t}=L(),n=M(),r=ae(),i=n.planType,a;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(a=m(),e[0]=a):a=e[0];let s=a,c=re(),l,u,d;if(e[1]!==r.search){let t=new URLSearchParams(r.search);l=t.has(`login_hint`),u=t.get(`login_hint`),t.delete(`login_hint`),d=t.toString(),e[1]=r.search,e[2]=l,e[3]=u,e[4]=d}else l=e[2],u=e[3],d=e[4];let f=d,p=f?`?${f}`:``,h,g;if(e[5]!==u||e[6]!==i||e[7]!==t?(h=()=>{if(!s){let e=new URL(window.location.href);if(e.searchParams.delete(`login_hint`),t&&!e.searchParams.has(`referrer`)&&e.searchParams.append(`referrer`,t),ke(i)){let t=pe(e.search),n=t==null?void 0:/^\/uc\/([^/]+)$/.exec(new URL(t).pathname)?.[1];n!=null&&o({anonymousConversationId:n})}ie({callbackUrl:e.href,...u?{additionalAuthParams:{login_hint:u}}:{}})}},g=[s,u,i,t],e[5]=u,e[6]=i,e[7]=t,e[8]=h,e[9]=g):(h=e[8],g=e[9]),(0,Ye.useEffect)(h,g),!s||!c){let t;return e[10]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(`div`,{className:`flex h-full w-full items-center justify-center`,children:(0,$.jsx)(ee,{})}),e[10]=t):t=e[10],t}if(l){let t=`${r.pathname}${p}${r.hash}`,n;return e[11]===t?n=e[12]:(n=(0,$.jsx)(I,{replace:!0,to:t}),e[11]=t,e[12]=n),n}if(i===v.PROMAX){let n,a,o;if(e[13]!==r.search||e[14]!==i||e[15]!==t){let s=new URLSearchParams(r.search);t&&!s.has(`referrer`)&&s.append(`referrer`,t),s.set(`plan`,i),n=I,o=!0,a=s.toString(),e[13]=r.search,e[14]=i,e[15]=t,e[16]=n,e[17]=a,e[18]=o}else n=e[16],a=e[17],o=e[18];let s=`/?${a}${Xe}`,c;return e[19]!==n||e[20]!==o||e[21]!==s?(c=(0,$.jsx)(n,{replace:o,to:s}),e[19]=n,e[20]=o,e[21]=s,e[22]=c):c=e[22],c}if(!De(i)){let t;return e[23]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,$.jsx)(Le,{}),e[23]=t):t=e[23],t}if(i===Z.CodexTeam){let t=`${Ze}${r.search}`,n;return e[24]===t?n=e[25]:(n=(0,$.jsx)(I,{replace:!0,to:t}),e[24]=t,e[25]=n),n}let _;e[26]!==r.search||e[27]!==i?(_=i===Z.Team?Ge(r.search):null,e[26]=r.search,e[27]=i,e[28]=_):_=e[28];let y=_;if(i===Z.Team&&y==null&&qe()){let t=`${Qe}${r.search}`,n;return e[29]===t?n=e[30]:(n=(0,$.jsx)(I,{replace:!0,to:t}),e[29]=t,e[30]=n),n}if(c.hasPaidSubscription()&&y==null&&!(c.isNoPaymentTrial()&&te(c,rt[i]))){let n,a,o;if(e[31]!==r.search||e[32]!==i||e[33]!==t){let s=new URLSearchParams(r.search);t&&!s.has(`referrer`)&&s.append(`referrer`,t),s.append(`plan`,i),n=I,o=!0,a=s.toString(),e[31]=r.search,e[32]=i,e[33]=t,e[34]=n,e[35]=a,e[36]=o}else n=e[34],a=e[35],o=e[36];let s=`/?${a}${Xe}`,c;return e[37]!==n||e[38]!==o||e[39]!==s?(c=(0,$.jsx)(n,{replace:o,to:s}),e[37]=n,e[38]=o,e[39]=s,e[40]=c):c=e[40],c}let b,x;if(e[41]!==r.search){let t=new URLSearchParams(r.search);b=t.get(`promoCode`)??void 0,x=t.get(`promo_campaign`)?.trim()||void 0,e[41]=r.search,e[42]=b,e[43]=x}else b=e[42],x=e[43];let S=x,ne=r.state!=null&&typeof r.state==`object`&&`account-payment-modal-promo-campaign-handoff`in r.state&&typeof r.state[`account-payment-modal-promo-campaign-handoff`]==`string`?r.state[k]:void 0,C=S??ne,w;e[44]===y?w=e[45]:(w=y==null?{}:{businessSeatSelection:y},e[44]=y,e[45]=w);let T;e[46]!==S||e[47]!==ne?(T=S==null&&ne?{isPromoCampaignFromQueryParam:!1}:{},e[46]=S,e[47]=ne,e[48]=T):T=e[48];let E;return e[49]!==i||e[50]!==C||e[51]!==b||e[52]!==w||e[53]!==T?(E=(0,$.jsx)(Re,{planType:i,promoCode:b,promoCampaign:C,...w,...T}),e[49]=i,e[50]=C,e[51]=b,e[52]=w,e[53]=T,e[54]=E):E=e[54],E}function qe(){return h($e).get(et,!1)}var Je,Ye,$,Xe,Ze,Qe,$e,et,tt,nt,rt,it,at,ot=e((()=>{P(),Je=R(),f(),O(),We(),X(),Ne(),Fe(),n(),B(),l(),a(),Ie(),S(),c(),U(),Ye=t(F()),E(),A(),D(),$=j(),Xe=`#pricing`,Ze=`/codex/team/checkout`,Qe=`/create-workspace`,$e=`1069053961`,et=`redirect_team_purchase_to_create_workspace`,tt=`standardSeats`,nt=`premiumSeats`,rt={[Z.Go]:v.GO,[Z.Plus]:v.PLUS,[Z.Pro]:v.PRO,[Z.ProLite]:v.PROLITE,[Z.Team]:v.SELF_SERVE_BUSINESS},it=oe(Ke),at=le(T)}));e((()=>{ot()}))();export{at as ErrorBoundary,it as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $3 as n,
+    $T as r,
+    CR as i,
+    Crt as a,
+    I0 as o,
+    Knt as s,
+    L0 as c,
+    Lit as l,
+    Nat as u,
+    OI as d,
+    Oct as f,
+    RI as p,
+    Rit as m,
+    Rz as ee,
+    Srt as h,
+    TR as g,
+    Ust as _,
+    Vst as v,
+    Wnt as y,
+    bI as b,
+    e6 as te,
+    eE as x,
+    f0 as S,
+    jat as ne,
+    kI as C,
+    mI as w,
+    o as T,
+    o0 as re,
+    p0 as ie,
+    q1 as E,
+    s as D,
+    wI as O,
+    yI as k,
+    zz as A
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as ae,
+    Bn as j,
+    Ht as oe,
+    Lt as M,
+    Nn as N,
+    Nt as se,
+    Q as P,
+    Rn as ce,
+    Ut as le,
+    Vn as F,
+    ct as I,
+    kt as L,
+    wn as R,
+    zn as ue
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $rn as de,
+    $sn as z,
+    Ain as fe,
+    Brn as B,
+    Bsn as pe,
+    Crn as me,
+    Din as V,
+    Dln as he,
+    Eln as H,
+    Hsn as U,
+    Qrn as W,
+    Qsn as ge,
+    Srn as G,
+    Trn as _e,
+    Vsn as ve,
+    bsn as ye,
+    ecn as be,
+    h6t as xe,
+    icn as K,
+    m6t as q,
+    ncn as Se,
+    tcn as Ce,
+    xsn as J
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Cd as Y,
+    Cu as we,
+    Fn as Te,
+    Fu as X,
+    In as Ee,
+    Iu as De,
+    Ln as Oe,
+    Lu as ke,
+    Nu as Z,
+    Sf as Ae,
+    Su as je,
+    _f as Me,
+    vd as Ne,
+    wd as Pe,
+    xf as Fe
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    n as Ie,
+    t as Le
+} from "./e18c46cf-mdafbaxtvknj0cwj.js";
+
+function Re(e) {
+    "use forget";
+    let t = (0, Be.c)(93),
+        {
+            planType: n,
+            promoCode: i,
+            promoCampaign: a,
+            businessSeatSelection: o,
+            isPromoCampaignFromQueryParam: s
+        } = e,
+        {
+            prepareCheckoutSession: c,
+            navigateToCheckout: l
+        } = fe(),
+        u = ue(),
+        f = ae(),
+        p = se(),
+        m = re(),
+        [ee, h] = (0, Ve.useState)(!1),
+        [_, v] = (0, Ve.useState)(null),
+        te = g(),
+        x = (0, Ve.useRef)(!1),
+        S = n === Z.Team,
+        T = S && o != null,
+        ie = o?.standardSeats,
+        E = o?.premiumSeats,
+        D = o?.priceInterval,
+        O;
+    if (t[0] !== o?.referrer || t[1] !== f.search) {
+        let e = new URLSearchParams(f.search).get(`referrer`);
+        O = o?.referrer ?? (e != null && Ue.has(e) ? e : void 0), t[0] = o?.referrer, t[1] = f.search, t[2] = O
+    } else O = t[2];
+    let k = O,
+        A;
+    t[3] !== m || t[4] !== T ? (A = T && m?.isFreeWorkspace() && m.isOwnerOfAccount() ? m.id : void 0, t[3] = m, t[4] = T, t[5] = A) : A = t[5];
+    let j = A,
+        {
+            count: oe,
+            isLoading: M
+        } = xe(j),
+        P;
+    t[6] === f.search ? P = t[7] : (P = new URLSearchParams(f.search).get(`country_code`), t[6] = f.search, t[7] = P);
+    let ce = P ?? void 0,
+        le;
+    t[8] === ce ? le = t[9] : (le = {
+        initialCountryCode: ce
+    }, t[8] = ce, t[9] = le);
+    let {
+        country: F
+    } = _e(le), I = m ?? null, L;
+    t[10] !== m || t[11] !== S ? (L = !S && de(m ?? null), t[10] = m, t[11] = S, t[12] = L) : L = t[12];
+    let R;
+    t[13] !== F || t[14] !== S || t[15] !== I || t[16] !== L ? (R = {
+        country: F,
+        currentAccount: I,
+        location: `DirectPurchaseCheckoutRedirect`,
+        shouldUsePaidSubscriptionBillingCurrency: L,
+        pricingPlanIsTypeBusiness: S
+    }, t[13] = F, t[14] = S, t[15] = I, t[16] = L, t[17] = R) : R = t[17];
+    let z = me(R),
+        B = s ?? !!a,
+        V = m?.id,
+        {
+            data: H,
+            isLoading: U
+        } = Pe(a ?? ``, B, void 0, V),
+        W;
+    t[18] !== V || t[19] !== S || t[20] !== D || t[21] !== a || t[22] !== i || t[23] !== H ? (W = !i && a != null && H?.coupon === a && H.state === `not_eligible` && (!S || D == null || D === C.FLEXIBLE) ? ge(H.ineligibility_reason, V) : void 0, t[18] = V, t[19] = S, t[20] = D, t[21] = a, t[22] = i, t[23] = H, t[24] = W) : W = t[24];
+    let G = W,
+        K = ee ? `plan` : V != null && (_ === V || G === `prior_introductory_offer_redeemed`) ? `prior_introductory_offer` : null,
+        q;
+    t[25] !== U || t[26] !== f.search || t[27] !== H || t[28] !== G ? (q = new URLSearchParams(f.search).get(`require_promo`) === `1` && !U && (H?.state !== `eligible` || !H.coupon) || G === `promo_ineligible`, t[25] = U, t[26] = f.search, t[27] = H, t[28] = G, t[29] = q) : q = t[29];
+    let J = q,
+        Y;
+    t[30] !== m || t[31] !== j || t[32] !== u || t[33] !== B || t[34] !== S || t[35] !== n || t[36] !== E || t[37] !== c || t[38] !== D || t[39] !== ie || t[40] !== te || t[41] !== oe ? (Y = async e => {
+        let {
+            billingDetails: t,
+            promoCode: r,
+            promoCampaignId: i
+        } = e, a = j == null ? void 0 : m, o = ie == null || E == null ? void 0 : Math.max(ie, oe - E), s = E != null && (E > 0 || a == null && D === C.FLEXIBLE && i !== `team-1-month-free`), l = {
+            entry_point: he.DIRECT_PURCHASE_REDIRECT,
+            plan_name: He[n],
+            ...S && o != null && E != null && D != null ? {
+                team_plan_data: {
+                    workspace_name: await Se(u, a, te),
+                    price_interval: D,
+                    seat_quantity: o + E,
+                    ...s ? {
+                        seat_quantities: [{
+                            seat_type: d.STANDARD,
+                            quantity: o
+                        }, {
+                            seat_type: d.PREMIUM,
+                            quantity: E
+                        }]
+                    } : {},
+                    ...a ? {
+                        existing_workspace_id: a.id
+                    } : {}
+                }
+            } : {},
+            billing_details: t,
+            promo_code: r ?? void 0,
+            promo_campaign: i && (!S || D == null || D === C.FLEXIBLE) ? {
+                promo_campaign_id: i,
+                is_coupon_from_query_param: B
+            } : void 0
+        };
+        return {
+            checkoutPayload: l,
+            response: await c(l, {})
+        }
+    }, t[30] = m, t[31] = j, t[32] = u, t[33] = B, t[34] = S, t[35] = n, t[36] = E, t[37] = c, t[38] = D, t[39] = ie, t[40] = te, t[41] = oe, t[42] = Y) : Y = t[42];
+    let we = Y,
+        Te;
+    t[43] !== V || t[44] !== z || t[45] !== k || t[46] !== S || t[47] !== f.search || t[48] !== p || t[49] !== l || t[50] !== n || t[51] !== we || t[52] !== D || t[53] !== K ? (Te = async e => {
+        let {
+            promoCode: t,
+            promoCampaignId: r
+        } = e;
+        if (!(z == null || K != null)) try {
+            y.logEventWithStatsig(`Direct Purchase Social Sku: Checkout Session Create Start`, `direct_purchase_social_sku_checkout_session_create_start`, {
+                plan_type: n
+            });
+            let {
+                checkoutPayload: e,
+                response: i
+            } = await we({
+                billingDetails: z,
+                promoCode: t,
+                promoCampaignId: r
+            });
+            y.logEventWithStatsig(`Direct Purchase Social Sku: Checkout Session Create Success`, `direct_purchase_social_sku_checkout_session_create_success`, {
+                plan_type: n
+            });
+            let a = f.search;
+            if (S && D === C.ANNUAL) {
+                let e = new URLSearchParams(a);
+                e.delete(b);
+                let t = e.toString();
+                a = t ? `?${t}` : ``
+            }
+            let o = ye(i),
+                s = o == null ? `tag` in i && i.tag === `redirect_to_portal` ? pe(f.search) : null : ve(o, f.search);
+            await l(i, {
+                ...s == null ? {} : {
+                    replace: !0
+                },
+                searchParams: a,
+                state: {
+                    directPurchasePlanType: n
+                },
+                checkoutPayload: e,
+                ...k ? {
+                    checkoutOriginProvenance: {
+                        checkoutOriginOriginator: k,
+                        checkoutOriginDeliverySurface: `web`
+                    }
+                } : {}
+            })
+        } catch (e) {
+            let t = e;
+            if (Ee(t)) {
+                h(!0);
+                return
+            }
+            if (V != null && be(t)) {
+                v(V);
+                return
+            }
+            let r = t instanceof Error ? t : Error(`Failed to start checkout`);
+            y.logEventWithStatsig(`Direct Purchase Social Sku: Checkout Session Create Failure`, `direct_purchase_social_sku_checkout_session_create_failure`, {
+                plan_type: n
+            }), ne.addError(r, {
+                feature: `direct_purchase_checkout_redirect`,
+                plan_type: n
+            });
+            let i = n === Z.ProLite ? Z.Pro : n,
+                a = new URLSearchParams(f.search);
+            a.delete(`cta_tab`), a.set(`default_tab`, S ? `business` : `personal`), a.set(`highlight_plan`, i), p({
+                pathname: `/`,
+                search: `?${a}`,
+                hash: w
+            }, {
+                replace: !0
+            })
+        }
+    }, t[43] = V, t[44] = z, t[45] = k, t[46] = S, t[47] = f.search, t[48] = p, t[49] = l, t[50] = n, t[51] = we, t[52] = D, t[53] = K, t[54] = Te) : Te = t[54];
+    let X = Te,
+        De;
+    t[55] !== z || t[56] !== X || t[57] !== j || t[58] !== U || t[59] !== J || t[60] !== M || t[61] !== i || t[62] !== H || t[63] !== K ? (De = () => {
+        if (K != null || J || U || z == null || j != null && M) return;
+        let e = !1;
+        return Promise.resolve().then(() => {
+            !e && !x.current && (x.current = !0, X({
+                promoCode: i,
+                promoCampaignId: H?.state === `eligible` ? H.coupon : void 0
+            }))
+        }), () => {
+            e = !0
+        }
+    }, t[55] = z, t[56] = X, t[57] = j, t[58] = U, t[59] = J, t[60] = M, t[61] = i, t[62] = H, t[63] = K, t[64] = De) : De = t[64];
+    let ke;
+    if (t[65] !== z || t[66] !== X || t[67] !== j || t[68] !== U || t[69] !== B || t[70] !== J || t[71] !== M || t[72] !== i || t[73] !== H || t[74] !== K ? (ke = [z, X, j, U, J, M, H, i, B, K], t[65] = z, t[66] = X, t[67] = j, t[68] = U, t[69] = B, t[70] = J, t[71] = M, t[72] = i, t[73] = H, t[74] = K, t[75] = ke) : ke = t[75], (0, Ve.useEffect)(De, ke), J && K !== `prior_introductory_offer`) {
+        let e;
+        t[76] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, Q.jsx)(`h1`, {
+            className: `text-xl font-semibold`,
+            children: (0, Q.jsx)(N, {
+                id: `pricing.directPurchase.requiredPromoUnavailable`,
+                defaultMessage: `This offer is no longer available.`
+            })
+        }), t[76] = e) : e = t[76];
+        let n;
+        return t[77] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Q.jsxs)(`div`, {
+            className: `mx-auto flex max-w-md flex-col gap-4 p-6 text-center`,
+            children: [e, (0, Q.jsx)(r, {
+                color: `primary`,
+                onClick: ze,
+                children: (0, Q.jsx)(N, {
+                    id: `pricing.directPurchase.requiredPromoRetry`,
+                    defaultMessage: `Try again`
+                })
+            })]
+        }), t[77] = n) : n = t[77], n
+    }
+    if (K != null) {
+        let e = K === `prior_introductory_offer` ? Ce : Oe,
+            n;
+        t[78] === e ? n = t[79] : (n = (0, Q.jsx)(`h1`, {
+            className: `text-xl font-semibold`,
+            children: (0, Q.jsx)(N, {
+                ...e
+            })
+        }), t[78] = e, t[79] = n);
+        let i;
+        t[80] === K ? i = t[81] : (i = K === `plan` && (0, Q.jsx)(`p`, {
+            className: `text-token-text-secondary`,
+            children: (0, Q.jsx)(N, {
+                id: `pricing.directPurchase.planUnavailable.description`,
+                defaultMessage: `Choose another available plan to continue.`
+            })
+        }), t[80] = K, t[81] = i);
+        let a;
+        t[82] !== f.search || t[83] !== p ? (a = () => p({
+            pathname: `/`,
+            ...pe(f.search) == null ? {} : {
+                search: f.search
+            },
+            hash: w
+        }, {
+            replace: !0
+        }), t[82] = f.search, t[83] = p, t[84] = a) : a = t[84];
+        let o;
+        t[85] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Q.jsx)(N, {
+            id: `pricing.directPurchase.planUnavailable.seePlans`,
+            defaultMessage: `See available plans`
+        }), t[85] = o) : o = t[85];
+        let s;
+        t[86] === a ? s = t[87] : (s = (0, Q.jsx)(r, {
+            color: `primary`,
+            onClick: a,
+            children: o
+        }), t[86] = a, t[87] = s);
+        let c;
+        return t[88] !== n || t[89] !== i || t[90] !== s ? (c = (0, Q.jsxs)(`div`, {
+            className: `mx-auto flex max-w-md flex-col gap-4 p-6 text-center`,
+            children: [n, i, s]
+        }), t[88] = n, t[89] = i, t[90] = s, t[91] = c) : c = t[91], c
+    }
+    let Ae;
+    return t[92] === Symbol.for(`react.memo_cache_sentinel`) ? (Ae = (0, Q.jsx)(je, {}), t[92] = Ae) : Ae = t[92], Ae
+}
+
+function ze() {
+    return window.location.reload()
+}
+var Be, Ve, Q, He, Ue, We = e((() => {
+    Be = R(), Te(), z(), x(), f(), q(), K(), H(), U(), J(), V(), Ne(), W(), Fe(), G(), E(), i(), s(), u(), Ve = t(F()), ce(), P(), O(), Y(), X(), we(), Q = j(), He = {
+        [Z.Go]: _.GO,
+        [Z.Plus]: _.PLUS,
+        [Z.Pro]: _.PRO,
+        [Z.ProLite]: _.PROLITE,
+        [Z.Team]: _.SELF_SERVE_BUSINESS
+    }, Ue = new Set([`buying_agent`])
+}));
+
+function Ge(e) {
+    let t = new URLSearchParams(e),
+        n = t.get(tt),
+        r = t.get(nt);
+    if (n == null && r == null) return null;
+    let i = e => {
+            if (e == null) return 0;
+            if (!/^\d+$/.test(e)) return null;
+            let t = Number(e);
+            return Number.isSafeInteger(t) ? t : null
+        },
+        a = i(n),
+        o = i(r);
+    if (a == null || o == null) return null;
+    let s = a + o;
+    if (s < p() || s > 200 || o > 0 && t.get(`promo_campaign`)?.trim().toLowerCase() === `team-1-month-free`) return null;
+    let c = t.get(Me),
+        l = t.get(`referrer`);
+    return {
+        standardSeats: a,
+        premiumSeats: o,
+        priceInterval: c != null && Ae(c) ? c : C.FLEXIBLE,
+        ...l ? {
+            referrer: l
+        } : {}
+    }
+}
+
+function Ke() {
+    "use forget";
+    let e = (0, Je.c)(55),
+        {
+            referrer: t
+        } = L(),
+        n = M(),
+        r = ae(),
+        i = n.planType,
+        a;
+    e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (a = m(), e[0] = a) : a = e[0];
+    let s = a,
+        c = re(),
+        l, u, d;
+    if (e[1] !== r.search) {
+        let t = new URLSearchParams(r.search);
+        l = t.has(`login_hint`), u = t.get(`login_hint`), t.delete(`login_hint`), d = t.toString(), e[1] = r.search, e[2] = l, e[3] = u, e[4] = d
+    } else l = e[2], u = e[3], d = e[4];
+    let f = d,
+        p = f ? `?${f}` : ``,
+        h, g;
+    if (e[5] !== u || e[6] !== i || e[7] !== t ? (h = () => {
+            if (!s) {
+                let e = new URL(window.location.href);
+                if (e.searchParams.delete(`login_hint`), t && !e.searchParams.has(`referrer`) && e.searchParams.append(`referrer`, t), ke(i)) {
+                    let t = pe(e.search),
+                        n = t == null ? void 0 : /^\/uc\/([^/]+)$/.exec(new URL(t).pathname)?.[1];
+                    n != null && o({
+                        anonymousConversationId: n
+                    })
+                }
+                ie({
+                    callbackUrl: e.href,
+                    ...u ? {
+                        additionalAuthParams: {
+                            login_hint: u
+                        }
+                    } : {}
+                })
+            }
+        }, g = [s, u, i, t], e[5] = u, e[6] = i, e[7] = t, e[8] = h, e[9] = g) : (h = e[8], g = e[9]), (0, Ye.useEffect)(h, g), !s || !c) {
+        let t;
+        return e[10] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(`div`, {
+            className: `flex h-full w-full items-center justify-center`,
+            children: (0, $.jsx)(ee, {})
+        }), e[10] = t) : t = e[10], t
+    }
+    if (l) {
+        let t = `${r.pathname}${p}${r.hash}`,
+            n;
+        return e[11] === t ? n = e[12] : (n = (0, $.jsx)(I, {
+            replace: !0,
+            to: t
+        }), e[11] = t, e[12] = n), n
+    }
+    if (i === v.PROMAX) {
+        let n, a, o;
+        if (e[13] !== r.search || e[14] !== i || e[15] !== t) {
+            let s = new URLSearchParams(r.search);
+            t && !s.has(`referrer`) && s.append(`referrer`, t), s.set(`plan`, i), n = I, o = !0, a = s.toString(), e[13] = r.search, e[14] = i, e[15] = t, e[16] = n, e[17] = a, e[18] = o
+        } else n = e[16], a = e[17], o = e[18];
+        let s = `/?${a}${Xe}`,
+            c;
+        return e[19] !== n || e[20] !== o || e[21] !== s ? (c = (0, $.jsx)(n, {
+            replace: o,
+            to: s
+        }), e[19] = n, e[20] = o, e[21] = s, e[22] = c) : c = e[22], c
+    }
+    if (!De(i)) {
+        let t;
+        return e[23] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, $.jsx)(Le, {}), e[23] = t) : t = e[23], t
+    }
+    if (i === Z.CodexTeam) {
+        let t = `${Ze}${r.search}`,
+            n;
+        return e[24] === t ? n = e[25] : (n = (0, $.jsx)(I, {
+            replace: !0,
+            to: t
+        }), e[24] = t, e[25] = n), n
+    }
+    let _;
+    e[26] !== r.search || e[27] !== i ? (_ = i === Z.Team ? Ge(r.search) : null, e[26] = r.search, e[27] = i, e[28] = _) : _ = e[28];
+    let y = _;
+    if (i === Z.Team && y == null && qe()) {
+        let t = `${Qe}${r.search}`,
+            n;
+        return e[29] === t ? n = e[30] : (n = (0, $.jsx)(I, {
+            replace: !0,
+            to: t
+        }), e[29] = t, e[30] = n), n
+    }
+    if (c.hasPaidSubscription() && y == null && !(c.isNoPaymentTrial() && te(c, rt[i]))) {
+        let n, a, o;
+        if (e[31] !== r.search || e[32] !== i || e[33] !== t) {
+            let s = new URLSearchParams(r.search);
+            t && !s.has(`referrer`) && s.append(`referrer`, t), s.append(`plan`, i), n = I, o = !0, a = s.toString(), e[31] = r.search, e[32] = i, e[33] = t, e[34] = n, e[35] = a, e[36] = o
+        } else n = e[34], a = e[35], o = e[36];
+        let s = `/?${a}${Xe}`,
+            c;
+        return e[37] !== n || e[38] !== o || e[39] !== s ? (c = (0, $.jsx)(n, {
+            replace: o,
+            to: s
+        }), e[37] = n, e[38] = o, e[39] = s, e[40] = c) : c = e[40], c
+    }
+    let b, x;
+    if (e[41] !== r.search) {
+        let t = new URLSearchParams(r.search);
+        b = t.get(`promoCode`) ?? void 0, x = t.get(`promo_campaign`)?.trim() || void 0, e[41] = r.search, e[42] = b, e[43] = x
+    } else b = e[42], x = e[43];
+    let S = x,
+        ne = r.state != null && typeof r.state == `object` && `account-payment-modal-promo-campaign-handoff` in r.state && typeof r.state[`account-payment-modal-promo-campaign-handoff`] == `string` ? r.state[k] : void 0,
+        C = S ?? ne,
+        w;
+    e[44] === y ? w = e[45] : (w = y == null ? {} : {
+        businessSeatSelection: y
+    }, e[44] = y, e[45] = w);
+    let T;
+    e[46] !== S || e[47] !== ne ? (T = S == null && ne ? {
+        isPromoCampaignFromQueryParam: !1
+    } : {}, e[46] = S, e[47] = ne, e[48] = T) : T = e[48];
+    let E;
+    return e[49] !== i || e[50] !== C || e[51] !== b || e[52] !== w || e[53] !== T ? (E = (0, $.jsx)(Re, {
+        planType: i,
+        promoCode: b,
+        promoCampaign: C,
+        ...w,
+        ...T
+    }), e[49] = i, e[50] = C, e[51] = b, e[52] = w, e[53] = T, e[54] = E) : E = e[54], E
+}
+
+function qe() {
+    return h($e).get(et, !1)
+}
+var Je, Ye, $, Xe, Ze, Qe, $e, et, tt, nt, rt, it, at, ot = e((() => {
+    P(), Je = R(), f(), O(), We(), X(), Ne(), Fe(), n(), B(), l(), a(), Ie(), S(), c(), U(), Ye = t(F()), E(), A(), D(), $ = j(), Xe = `#pricing`, Ze = `/codex/team/checkout`, Qe = `/create-workspace`, $e = `1069053961`, et = `redirect_team_purchase_to_create_workspace`, tt = `standardSeats`, nt = `premiumSeats`, rt = {
+        [Z.Go]: v.GO,
+        [Z.Plus]: v.PLUS,
+        [Z.Pro]: v.PRO,
+        [Z.ProLite]: v.PROLITE,
+        [Z.Team]: v.SELF_SERVE_BUSINESS
+    }, it = oe(Ke), at = le(T)
+}));
+e((() => {
+    ot()
+}))();
+export {
+    at as ErrorBoundary, it as
+    default
+};
 //# sourceMappingURL=purchase._planType-ohzkvw6i.js.map

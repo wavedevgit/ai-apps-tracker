@@ -883,6 +883,7 @@ ${e.text}
                 let u = n.getAttribute(a.b);
                 if (null != u) return void t.appendChild(E(r, u, "true" === n.getAttribute(a.a), n.textContent ?? ""));
                 if ("http://www.w3.org/1999/xhtml" !== n.namespaceURI) return void
+
                 function(e, t, n) {
                     let a = t.textContent;
                     null != a && a.length > 0 && e.appendChild(n.createTextNode(a))
@@ -8197,8 +8198,7 @@ for hostId: $ {
         const snapshot = params.get("snapshot");
         const workspace = params.get("workspace_id");
         launch = Array.from(params).length === (workspace ? 2 : 1) && (!workspace || /^[A-Za-z0-9_-]{1,128}$/.test(workspace)) && snapshot &&
-            /^[A-Za-z0-9_-]{80,16384}={0,2}$/.test(snapshot) ?
-            {
+            /^[A-Za-z0-9_-]{80,16384}={0,2}$/.test(snapshot) ? {
                 snapshot,
                 workspace,
                 id: crypto.randomUUID(),
@@ -27717,6 +27717,7 @@ ${e.effect}`;
                             } catch (e) {
                                 if (!(e instanceof _.a) || !P(e)) throw ed = ed || (0, I.d)(e), e;
                                 await
+
                                 function(e, t) {
                                     return t.throwIfAborted(), new Promise(n => {
                                         let a = () => {

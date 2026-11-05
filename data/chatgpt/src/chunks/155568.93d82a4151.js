@@ -863,6 +863,7 @@ ${e.text}
                 let u = n.getAttribute(r.b);
                 if (null != u) return void t.appendChild(A(a, u, "true" === n.getAttribute(r.a), n.textContent ?? ""));
                 if ("http://www.w3.org/1999/xhtml" !== n.namespaceURI) return void
+
                 function(e, t, n) {
                     let r = t.textContent;
                     null != r && r.length > 0 && e.appendChild(n.createTextNode(r))

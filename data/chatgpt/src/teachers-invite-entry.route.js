@@ -1,1 +1,9 @@
-export const __rspack_esm_ids=[746327];export const __webpack_modules__={IHgy:(function(){})};import{__webpack_require__ as s}from"./633146.2285f1d8aa.js";import*as o from"./746327.18939820e9.js";s.C(o),s(s.s="IHgy");
+export const __rspack_esm_ids = [746327];
+export const __webpack_modules__ = {
+    IHgy: (function() {})
+};
+import {
+    __webpack_require__ as s
+} from "./633146.2285f1d8aa.js";
+import * as o from "./746327.18939820e9.js";
+s.C(o), s(s.s = "IHgy");

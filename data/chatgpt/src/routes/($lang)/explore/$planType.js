@@ -1,2 +1,857 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,Crt as r,E6 as i,Eit as a,Hn as o,K5 as s,Knt as c,O6 as l,Srt as u,Un as d,Wnt as f,Xh as p,Yi as m,Zi as h,_it as g,eE as _,f0 as v,iz as y,o as b,p0 as x,q5 as ee,qh as te,s as ne,sz as re}from"./4813494d-mdvd4786a87166cc.js";import{At as ie,Bn as S,Ht as ae,Ln as oe,Lt as se,Nn as C,Nt as ce,Q as le,Rn as w,Ut as ue,Vn as de,it as fe,kt as pe,wn as T,zn as me}from"./2340486e-i7pjxgdhv0bs6apg.js";import{C4t as he,Crn as ge,Irt as E,Lrt as _e,Srn as D,Trn as ve,X0t as ye,XWn as be,Y0t as xe,ZWn as Se,p4t as Ce}from"./conversation-small-bcbq46iub1p0ca1t.js";import{$f as we,ep as Te}from"./30901919-s8bko9nrkqwv6i4f.js";import{Bu as Ee,Cd as De,Fu as O,Iu as k,Mu as Oe,Nu as A,Ru as ke,Sd as Ae,dd as je,fd as Me,ld as j,vd as Ne,wd as Pe,xd as Fe,yd as Ie,zu as Le}from"./c2675c8c-oz03twoan08d72ud.js";import{a as Re,i as ze,o as Be,r as Ve,s as He,t as Ue}from"./99d6a32a-k1yyvt9coa8o1izc.js";import{r as M,t as N}from"./d9c77c9b-d1im5mninp0amoz0.js";import{n as P,t as F}from"./c09d86e5-kmotthzlhn8j33f3.js";function We(e){"use forget";let t=(0,I.c)(18),{planType:n}=e,r=me(),i;t[0]===n?i=t[1]:(i=()=>f.logEventWithStatsig(`Direct Purchase Social Sku: Terms of Use Click`,`direct_purchase_social_sku_terms_of_use_click`,{plan_type:n}),t[0]=n,t[1]=i);let a;t[2]===r?a=t[3]:(a=r.formatMessage(B.termsOfUse),t[2]=r,t[3]=a);let o;t[4]!==i||t[5]!==a?(o=(0,L.jsx)(fe,{target:`_blank`,to:R,onClick:i,children:a}),t[4]=i,t[5]=a,t[6]=o):o=t[6];let s;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(s=(0,L.jsx)(`div`,{className:`border-token-text-primary mx-2 h-[18px] border-s`}),t[7]=s):s=t[7];let c;t[8]===n?c=t[9]:(c=()=>f.logEventWithStatsig(`Direct Purchase Social Sku: Privacy Policy Click`,`direct_purchase_social_sku_privacy_policy_click`,{plan_type:n}),t[8]=n,t[9]=c);let l;t[10]===r?l=t[11]:(l=r.formatMessage(B.privacyPolicy),t[10]=r,t[11]=l);let u;t[12]!==c||t[13]!==l?(u=(0,L.jsx)(fe,{target:`_blank`,to:z,onClick:c,children:l}),t[12]=c,t[13]=l,t[14]=u):u=t[14];let d;return t[15]!==o||t[16]!==u?(d=(0,L.jsxs)(`div`,{className:`text-token-text-secondary flex h-8 items-center gap-2 text-sm font-medium`,children:[o,s,u]}),t[15]=o,t[16]=u,t[17]=d):d=t[17],d}var I,L,R,z,B,V=e((()=>{I=T(),c(),w(),le(),L=S(),R=`https://openai.com/policies/terms-of-use`,z=`https://openai.com/policies/privacy-policy`,B=oe({termsOfUse:{id:`directPurchaseAuthFooter.termsOfUse`,defaultMessage:`Terms of Use`},privacyPolicy:{id:`directPurchaseAuthFooter.privacyPolicy`,defaultMessage:`Privacy Policy`}})}));function H(e){"use forget";let t=(0,K.c)(34),{handleClickSignup:r,handleClickLogin:i,email:a,setEmail:o,emailError:s,isRedirectingToAuth:c,submitMessage:l}=e,u=me(),d;t[0]===r?d=t[1]:(d=e=>{e.preventDefault(),r(`password`)},t[0]=r,t[1]=d);let f;t[2]===o?f=t[3]:(f=e=>o(e.target.value),t[2]=o,t[3]=f);let p;t[4]===u?p=t[5]:(p=u.formatMessage(J.emailInputPlaceholder),t[4]=u,t[5]=p);let m;t[6]===u?m=t[7]:(m=u.formatMessage(J.emailInputPlaceholder),t[6]=u,t[7]=m);let h;t[8]!==a||t[9]!==s||t[10]!==f||t[11]!==p||t[12]!==m?(h=(0,q.jsx)(E,{name:`email`,value:a,onChange:f,inputClassName:`w-full rounded-full dark:bg-transparent! bg-gray-solid-75!  text-base! sm:text-base! py-3! px-5!`,error:s,showErrorIcon:!0,ariaLabel:p,placeholder:m,className:`rounded-full! border-[var(--border-heavy)] p-0! px-0! py-0! focus-within:ring-1`}),t[8]=a,t[9]=s,t[10]=f,t[11]=p,t[12]=m,t[13]=h):h=t[13];let g;t[14]!==u||t[15]!==l?(g=l?l.id===`directPurchaseNoAuthPage.continueWithEmailButton`?(0,q.jsx)(xe,{parameter:`email_label`,children:u.formatMessage(l)}):u.formatMessage(l):(0,q.jsx)(xe,{parameter:`continue_label`,children:u.formatMessage(J.continue)}),t[14]=u,t[15]=l,t[16]=g):g=t[16];let _;t[17]!==c||t[18]!==g?(_=(0,q.jsx)(n,{loading:c,className:`p-3`,children:g}),t[17]=c,t[18]=g,t[19]=_):_=t[19];let v;t[20]!==d||t[21]!==h||t[22]!==_?(v=(0,q.jsxs)(`form`,{onSubmit:d,className:`flex w-full flex-col gap-3`,children:[h,_]}),t[20]=d,t[21]=h,t[22]=_,t[23]=v):v=t[23];let y;if(t[24]!==i||t[25]!==u){let e;t[27]===i?e=t[28]:(e=e=>(0,q.jsx)(be,{onClick:i,className:`text-token-text-primary font-medium no-underline hover:underline`,children:e}),t[27]=i,t[28]=e),y=u.formatMessage(J.alreadyHaveAccount,{content:U,login:e}),t[24]=i,t[25]=u,t[26]=y}else y=t[26];let b;t[29]===y?b=t[30]:(b=(0,q.jsx)(`div`,{className:`flex cursor-pointer items-center gap-1 pt-4 pb-1.5`,children:y}),t[29]=y,t[30]=b);let x;return t[31]!==b||t[32]!==v?(x=(0,q.jsxs)(q.Fragment,{children:[v,b]}),t[31]=b,t[32]=v,t[33]=x):x=t[33],x}function U(e){return(0,q.jsx)(`span`,{className:`text-token-text-secondary`,children:e})}function W(e){"use forget";let t=(0,K.c)(10),{handleClickSignup:n}=e,r;t[0]===n?r=t[1]:(r=(0,q.jsx)(F,{provider:`google`,className:`w-full p-3`,onClick:()=>n(`google`)}),t[0]=n,t[1]=r);let i;t[2]===n?i=t[3]:(i=(0,q.jsx)(F,{provider:`microsoft`,className:`w-full p-3`,onClick:()=>n(`microsoft`)}),t[2]=n,t[3]=i);let a;t[4]===n?a=t[5]:(a=(0,q.jsx)(F,{provider:`apple`,className:`w-full p-3`,onClick:()=>n(`apple`)}),t[4]=n,t[5]=a);let o;return t[6]!==r||t[7]!==i||t[8]!==a?(o=(0,q.jsxs)(`div`,{className:`flex w-full flex-col gap-3`,children:[r,i,a]}),t[6]=r,t[7]=i,t[8]=a,t[9]=o):o=t[9],o}function G(e){"use forget";let t=(0,K.c)(3),{children:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,q.jsx)(`div`,{className:`border-token-surface-tertiary flex h-[1px] w-full border-b`}),t[0]=r):r=t[0];let i;return t[1]===n?i=t[2]:(i=(0,q.jsxs)(`div`,{className:`relative my-9 w-full`,children:[r,(0,q.jsx)(`span`,{className:`bg-token-bg-primary text-token-text-secondary absolute start-1/2 -top-2 -translate-x-1/2 transform px-2 text-xs font-medium`,children:n})]}),t[1]=n,t[2]=i),i}function Ge(e){"use forget";let t=(0,K.c)(22),{handleClickSignup:n,handleClickLogin:r,email:i,setEmail:a,emailError:o,isRedirectingToAuth:s,overrideSubmitMessage:c,bannerMessage:l}=e,u=me(),d;t[0]!==i||t[1]!==o||t[2]!==r||t[3]!==n||t[4]!==s||t[5]!==a||t[6]!==c?(d=(0,q.jsx)(H,{handleClickSignup:n,handleClickLogin:r,email:i,setEmail:a,emailError:o,isRedirectingToAuth:s,submitMessage:c}),t[0]=i,t[1]=o,t[2]=r,t[3]=n,t[4]=s,t[5]=a,t[6]=c,t[7]=d):d=t[7];let f;t[8]===u?f=t[9]:(f=u.formatMessage(J.or),t[8]=u,t[9]=f);let p;t[10]===f?p=t[11]:(p=(0,q.jsx)(G,{children:f}),t[10]=f,t[11]=p);let h;t[12]===n?h=t[13]:(h=(0,q.jsx)(W,{handleClickSignup:n}),t[12]=n,t[13]=h);let g;t[14]!==l||t[15]!==u?(g=l&&(0,q.jsx)(`div`,{className:`my-3 w-full`,"data-testid":`login-section-banner`,children:(0,q.jsx)(m,{content:u.formatMessage(l),type:`normal`})}),t[14]=l,t[15]=u,t[16]=g):g=t[16];let _;return t[17]!==d||t[18]!==p||t[19]!==h||t[20]!==g?(_=(0,q.jsxs)(`div`,{className:`flex w-full flex-col items-center`,children:[d,p,h,g]}),t[17]=d,t[18]=p,t[19]=h,t[20]=g,t[21]=_):_=t[21],_}var K,q,J,Ke=e((()=>{K=T(),P(),ye(),_(),h(),_e(),Se(),w(),q=S(),J=oe({emailInputPlaceholder:{id:`directPurchaseAuthLoginSection.emailInputPlaceholder`,defaultMessage:`Email address`},continue:{id:`directPurchaseAuthLoginSection.continue`,defaultMessage:`Continue`},alreadyHaveAccount:{id:`directPurchaseAuthLoginSection.alreadyHaveAccount`,defaultMessage:`<content>Already have an account?</content> <login>Log in</login>`},or:{id:`directPurchaseAuthLoginSection.or`,defaultMessage:`OR`}})}));function qe(e){switch(e){case A.Go:return g.planNameGo;case A.Plus:return g.planNamePlus;case A.Pro:case A.ProLite:return g.planNamePro;case A.Team:case A.CodexTeam:return g.planNameBusiness;default:return g.title}}function Je(e){"use forget";let t=(0,Ye.c)(10),{planType:n}=e,r;t[0]===n?r=t[1]:(r=qe(n),t[0]=n,t[1]=r);let i=r,a=`ms-2 text-center font-medium ${Ce}`;if(n===A.CodexTeam){let e;t[2]===i?e=t[3]:(e=(0,Y.jsx)(`span`,{className:`text-token-text-primary text-center font-semibold`,children:(0,Y.jsx)(C,{...i})}),t[2]=i,t[3]=e);let n;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(n=(0,Y.jsx)(`span`,{className:a,children:(0,Y.jsx)(C,{...g.codex})}),t[4]=n):n=t[4];let r;return t[5]===e?r=t[6]:(r=(0,Y.jsxs)(`p`,{className:`text-token-text-primary mb-5 text-center text-[30px] leading-9 font-semibold`,children:[e,n]}),t[5]=e,t[6]=r),r}let o;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(o=(0,Y.jsx)(`span`,{className:`text-token-text-primary text-center font-semibold`,children:(0,Y.jsx)(C,{...g.chatGPT})}),t[7]=o):o=t[7];let s;return t[8]===i?s=t[9]:(s=(0,Y.jsxs)(`p`,{className:`text-token-text-primary mb-5 text-center text-[30px] leading-9 font-semibold`,children:[o,(0,Y.jsx)(`span`,{className:a,children:(0,Y.jsx)(C,{...i})})]}),t[8]=i,t[9]=s),s}var Ye,Y,Xe=e((()=>{Ye=T(),a(),he(),w(),O(),Y=S()}));function Ze(e){"use forget";let t=(0,Qe.c)(12),{advertisedFeatures:n,title:r,subtitle:i}=e,a;t[0]===r?a=t[1]:(a=(0,X.jsx)(`h2`,{className:`text-token-text-primary mb-10 text-start text-3xl font-semibold`,children:(0,X.jsx)(C,{...r})}),t[0]=r,t[1]=a);let o;t[2]===i?o=t[3]:(o=(0,X.jsx)(`p`,{className:`text-token-text-primary text-md mt-0 self-start font-medium`,children:(0,X.jsx)(C,{...i})}),t[2]=i,t[3]=o);let s;t[4]!==a||t[5]!==o?(s=(0,X.jsxs)(`div`,{className:`space-y-4 pb-4 text-start`,children:[a,o]}),t[4]=a,t[5]=o,t[6]=s):s=t[6];let c;t[7]===n?c=t[8]:(c=(0,X.jsx)(je,{advertisedFeatures:n,type:j.DIRECT_PURCHASE}),t[7]=n,t[8]=c);let l;return t[9]!==s||t[10]!==c?(l=(0,X.jsxs)(`div`,{className:`relative z-10 flex w-full max-w-[400px] flex-col md:ps-5`,children:[s,c]}),t[9]=s,t[10]=c,t[11]=l):l=t[11],l}var Qe,X,$e=e((()=>{Qe=T(),Me(),w(),X=S()})),et,tt,nt,rt,it,at,ot=e((()=>{et=`webp`,tt=`srgb`,nt=`uchar`,rt={width:414,height:620},it=`/cdn/assets/codex-cloud-jx1thus4.webp`,at={format:et,width:414,height:620,space:tt,channels:4,depth:nt,density:45,isProgressive:!1,isPalette:!1,bitsPerSample:8,hasProfile:!1,hasAlpha:!0,autoOrient:rt,src:it}}));function st(e){"use forget";let t=(0,ct.c)(18),{overrideType:n}=e,r=n===Oe.Codex,i,a,o,c;if(t[0]!==r||t[1]!==n){let e=s(`absolute inset-x-0 -top-[140px] z-0 h-full w-full object-fill object-top transition-[filter,opacity] dark:brightness-[0.78] dark:saturate-[0.92]`,r&&`top-0!`),l;bb0:switch(n){case Oe.Codex:l=at.src;break bb0;default:l=`https://cdn.openai.com/chatgpt/team-interstitial-background.png`}i=!0,a=``,o=l,c=s(e,!r&&`dark:hidden`),t[0]=r,t[1]=n,t[2]=i,t[3]=a,t[4]=o,t[5]=c}else i=t[2],a=t[3],o=t[4],c=t[5];let l;t[6]!==i||t[7]!==a||t[8]!==o||t[9]!==c?(l=(0,Z.jsx)(`img`,{"aria-hidden":i,alt:a,src:o,className:c}),t[6]=i,t[7]=a,t[8]=o,t[9]=c,t[10]=l):l=t[10];let u;t[11]===r?u=t[12]:(u=!r&&(0,Z.jsx)(`div`,{"aria-hidden":!0,className:`absolute inset-0 z-0 hidden bg-[radial-gradient(125%_70%_at_50%_0%,rgba(105,170,255,0.24)_0%,rgba(62,92,156,0.18)_32%,rgba(18,24,37,0.92)_58%,#0f141f_100%)] dark:block`}),t[11]=r,t[12]=u);let d,f;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,Z.jsx)(`div`,{"aria-hidden":!0,className:`pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-white/0 via-white/10 to-white/35 dark:hidden`}),f=(0,Z.jsx)(`div`,{"aria-hidden":!0,className:`pointer-events-none absolute inset-0 z-[1] hidden bg-[linear-gradient(180deg,rgba(33,33,33,0)_0.12%,rgba(33,33,33,0.85)_51.46%,#212121_72.79%)] dark:block`}),t[13]=d,t[14]=f):(d=t[13],f=t[14]);let p;return t[15]!==l||t[16]!==u?(p=(0,Z.jsxs)(Z.Fragment,{children:[l,u,d,f]}),t[15]=l,t[16]=u,t[17]=p):p=t[17],p}var ct,Z,lt=e((()=>{ct=T(),ot(),ee(),O(),Z=S()}));function ut({isCodexTeam:e,isTeamPlan:t,plusFreeOfferCtaLabel:n,teamPromoCtaLabel:r}){return e?_t.getStartedButton:t?r??Re.getButton:n||(u(ht).get(gt,`control`)===`continue_with_email`?_t.continueWithEmailButton:n)}function dt(e,t){let n=new URLSearchParams(t);ke(n);let r=n.toString();if(e===A.Team)return r?`${N}?${r}`:N;if(e===A.CodexTeam)return r?`${mt}?${r}`:mt;let i=`/purchase/${e}`;return r?`${i}?${r}`:i}function ft(){f.logEventWithStatsig(`Direct Purchase Social Sku: Direct Purchase Page Viewed`,`direct_purchase_social_sku_impression`,{referrer:document.referrer})}var pt,Q,$,mt,ht,gt,_t,vt,yt=e((()=>{pt=T(),p(),He(),Te(),Ne(),ze(),De(),Fe(),D(),v(),i(),c(),r(),M(),Q=t(de()),w(),le(),re(),Le(),o(),V(),Ke(),Xe(),$e(),lt(),Ve(),O(),$=S(),mt=`/codex/team/checkout`,ht=`3768341700`,gt=`direct_purchase_email_cta_copy_variant`,_t=oe({freeTrialSubtitle30days:{id:`directPurchaseNoAuthPage.freeTrialSubtitle30days`,defaultMessage:`Free 30-day trial`},getStartedButton:{id:`directPurchaseNoAuthPage.getStartedButton`,defaultMessage:`Get started`},continueWithEmailButton:{id:`directPurchaseNoAuthPage.continueWithEmailButton`,defaultMessage:`Continue with email`}}),vt=e=>{"use forget";let t=(0,pt.c)(78),{planType:n,overrideType:r,promoCampaign:i}=e,a=me(),o=ce(),s=ie(),c=r,u=n===A.Team,p=n===A.CodexTeam,m=u||p,h=Ae(),{data:g}=Pe(h??``,!!h),{country:_}=ve(),v;t[0]!==_||t[1]!==m?(v={country:_,currentAccount:null,location:`DirectPurchaseNoAuthPage`,pricingPlanIsTypeBusiness:m},t[0]=_,t[1]=m,t[2]=v):v=t[2];let b=ge(v),ee=b?.country,ne=b?.currency,re=b!=null,S;t[3]!==ee||t[4]!==ne||t[5]!==re?(S={countryCode:ee,currency:ne,enabled:re},t[3]=ee,t[4]=ne,t[5]=re,t[6]=S):S=t[6];let{data:ae,isLoading:oe,error:se}=l(S),C=u&&!!h&&h===`team-1-month-free`&&!!ae&&ae.currencyConfig.promos.business_free_trial.enabled,le=C&&g?.state===`not_eligible`,w=C&&g?.state===`temporary_disabled`,ue=C&&g?.state===`offline`,de=C&&g?.state===`eligible`,fe;bb0:{if(!de){fe=null;break bb0}fe=Re.redeemFreeOfferButton}let pe=fe,T;bb1:{if(!u){T=null;break bb1}if(!b||oe||se!=null||!ae){T=null;break bb1}if(!(le||w||ue)){T=null;break bb1}T=le?Ie.teamFreeTrialNotEligible:w?Ie.teamFreeTrialTemporarilyDisabled:Ie.teamFreeTrialOffline}let he=T,E=n===A.Plus&&i===`plus-1-month-free`,_e=E?Ee.claimFreeOffer:null,D;t[7]!==p||t[8]!==u||t[9]!==_e||t[10]!==pe?(D=ut({isCodexTeam:p,isTeamPlan:u,plusFreeOfferCtaLabel:_e,teamPromoCtaLabel:pe}),t[7]=p,t[8]=u,t[9]=_e,t[10]=pe,t[11]=D):D=t[11];let ye=D,be;t[12]!==c||t[13]!==n?(be=Ue({planType:n,overrideType:c}),t[12]=c,t[13]=n,t[14]=be):be=t[14];let{title:xe,subtitle:Se,advertisedFeatures:Ce}=be,[Te,De]=(0,Q.useState)(!1),O;t[15]===Symbol.for(`react.memo_cache_sentinel`)?(O=[],t[15]=O):O=t[15],(0,Q.useEffect)(ft,O);let[k,Oe]=(0,Q.useState)(``),[ke,je]=(0,Q.useState)(void 0),Me;t[16]!==s.search||t[17]!==n?(Me=dt(n,s.search),t[16]=s.search,t[17]=n,t[18]=Me):Me=t[18];let j=Me,Ne;t[19]===a?Ne=t[20]:(Ne=e=>{if(!e||e.trim()===``)return a.formatMessage({id:`businessPurchaseInterstitialPage.errors.emailRequired`,defaultMessage:`Email is required`});if(!d.test(e))return a.formatMessage({id:`businessPurchaseInterstitialPage.errors.emailInvalid`,defaultMessage:`Email is invalid.`})},t[19]=a,t[20]=Ne);let Fe=Ne,Le;t[21]!==j||t[22]!==k||t[23]!==Fe?(Le=e=>{if(e===`password`){f.logEventWithStatsig(`Direct Purchase Social Sku: Continue With Email Click`,`direct_purchase_social_sku_continue_with_email_click`);let e=Fe(k);if(je(e),e){f.logEventWithStatsig(`Direct Purchase Social Sku: Email Validation Error`,`direct_purchase_social_sku_email_validation_error`);return}let t;k&&(t={screen_hint:`login_or_signup`,login_hint:k}),De(!0),f.logEventWithStatsig(`Direct Purchase Social Sku: Email Signup Navigated To Auth`,`direct_purchase_social_sku_email_signup_navigated_to_auth`),x({fallbackScreenHint:`login_or_signup`,useFallbackScreenHint:!0,...t?{additionalAuthParams:t}:{},callbackUrl:j});return}f.logEventWithStatsig(`Direct Purchase Social Sku: Continue With Social Click`,`direct_purchase_social_sku_continue_with_social_click`,{connection:e}),x({fallbackScreenHint:`login`,useFallbackScreenHint:!0,additionalAuthParams:{connection:y[e]},callbackUrl:j})},t[21]=j,t[22]=k,t[23]=Fe,t[24]=Le):Le=t[24];let ze=Le,Ve;t[25]===j?Ve=t[26]:(Ve=()=>{f.logEventWithStatsig(`Direct Purchase Social Sku: Already Have Account Click`,`direct_purchase_social_sku_already_have_account_click`),x({fallbackScreenHint:`login_or_signup`,callbackUrl:j,skipLoginModal:!0})},t[25]=j,t[26]=Ve);let He=Ve,M;t[27]!==p||t[28]!==o?(M=()=>{f.logEventWithStatsig(`Direct Purchase Social Sku: Logo Click`,`direct_purchase_social_sku_logo_click`),o(p?`/codex`:`/`)},t[27]=p,t[28]=o,t[29]=M):M=t[29];let N;t[30]===a?N=t[31]:(N=a.formatMessage({id:`directPurchaseAuthLoginSection.homeButtonAriaLabel`,defaultMessage:`Click here to go to the home page`}),t[30]=a,t[31]=N);let P;t[32]===p?P=t[33]:(P=p?(0,$.jsx)(we,{className:`h-8 w-8`}):(0,$.jsx)(te,{className:`h-8 w-8`}),t[32]=p,t[33]=P);let F;t[34]!==M||t[35]!==N||t[36]!==P?(F=(0,$.jsx)(`button`,{onClick:M,className:`mb-6 cursor-pointer p-0 md:fixed md:start-4 md:top-4 md:h-6 md:w-6`,"aria-label":N,children:P}),t[34]=M,t[35]=N,t[36]=P,t[37]=F):F=t[37];let I;t[38]!==a||t[39]!==E||t[40]!==de?(I=(E||de)&&(0,$.jsx)(`div`,{className:`text-token-text-secondary text-center text-lg font-medium`,children:a.formatMessage(_t.freeTrialSubtitle30days)}),t[38]=a,t[39]=E,t[40]=de,t[41]=I):I=t[41];let L;t[42]===n?L=t[43]:(L=(0,$.jsx)(Je,{planType:n}),t[42]=n,t[43]=L);let R;t[44]!==k||t[45]!==ke||t[46]!==He||t[47]!==ze||t[48]!==Te||t[49]!==he||t[50]!==ye?(R=(0,$.jsx)(Ge,{handleClickSignup:ze,handleClickLogin:He,email:k,setEmail:Oe,emailError:ke,isRedirectingToAuth:Te,overrideSubmitMessage:ye,bannerMessage:he}),t[44]=k,t[45]=ke,t[46]=He,t[47]=ze,t[48]=Te,t[49]=he,t[50]=ye,t[51]=R):R=t[51];let z;t[52]!==F||t[53]!==I||t[54]!==L||t[55]!==R?(z=(0,$.jsxs)(`div`,{className:`flex w-full max-w-[360px] grow flex-col items-center justify-center gap-3`,children:[F,I,L,R]}),t[52]=F,t[53]=I,t[54]=L,t[55]=R,t[56]=z):z=t[56];let B;t[57]===n?B=t[58]:(B=(0,$.jsx)(We,{planType:n}),t[57]=n,t[58]=B);let V;t[59]!==z||t[60]!==B?(V=(0,$.jsxs)(`div`,{className:`flex min-w-[320px] flex-1 flex-col items-center p-9 px-4`,children:[z,B]}),t[59]=z,t[60]=B,t[61]=V):V=t[61];let H;t[62]===c?H=t[63]:(H=(0,$.jsx)(st,{overrideType:c}),t[62]=c,t[63]=H);let U;t[64]!==Ce||t[65]!==Se||t[66]!==xe?(U=(0,$.jsx)(`div`,{className:`mb-10 flex w-full grow flex-col md:-mt-33 md:items-center md:justify-center`,children:(0,$.jsx)(Ze,{title:xe,subtitle:Se,advertisedFeatures:Ce})}),t[64]=Ce,t[65]=Se,t[66]=xe,t[67]=U):U=t[67];let W;t[68]!==a||t[69]!==m?(W=m&&(0,$.jsx)(`div`,{className:`bg-token-bg-primary before:via-token-bg-primary/45 before:to-token-bg-primary absolute inset-x-0 bottom-0 z-10 flex flex-col items-center px-4 pt-8 pb-6 before:pointer-events-none before:absolute before:inset-x-0 before:top-[-64px] before:h-16 before:bg-gradient-to-b before:from-transparent before:content-['']`,children:(0,$.jsxs)(`div`,{className:`relative flex flex-col items-center`,children:[(0,$.jsx)(`div`,{className:`text-token-text-secondary relative top-[10px] text-center text-[12px] font-medium`,children:a.formatMessage(Re.logoGardenTitle)}),(0,$.jsx)(`img`,{alt:a.formatMessage(Re.logoGardenAlt),src:Be.src,className:`mt-5 h-auto w-4/5 max-w-[720px] object-contain dark:opacity-95 dark:brightness-[1.55] dark:contrast-[1.04] dark:invert`})]})}),t[68]=a,t[69]=m,t[70]=W):W=t[70];let G;t[71]!==H||t[72]!==U||t[73]!==W?(G=(0,$.jsxs)(`div`,{className:`bg-token-bg-primary text-token-text-primary hidden min-h-[560px] flex-col overflow-y-auto px-4 md:relative md:flex md:h-full md:flex-1 md:items-center`,children:[H,U,W]}),t[71]=H,t[72]=U,t[73]=W,t[74]=G):G=t[74];let K;return t[75]!==V||t[76]!==G?(K=(0,$.jsxs)(`div`,{className:`bg-token-bg-primary text-token-text-primary flex h-full w-full`,children:[V,G]}),t[75]=V,t[76]=G,t[77]=K):K=t[77],K}}));function bt(){"use forget";let e=(0,xt.c)(4),t=se(),{overrideType:n,promoCampaign:r}=pe(),i=t.planType;if(!k(i))throw new Response(`Not Found`,{status:404});let a;return e[0]!==n||e[1]!==i||e[2]!==r?(a=(0,St.jsx)(vt,{planType:i,overrideType:n,promoCampaign:r}),e[0]=n,e[1]=i,e[2]=r,e[3]=a):a=e[3],a}var xt,St,Ct,wt,Tt=e((()=>{le(),xt=T(),yt(),O(),ne(),St=S(),Ct=ae(bt),wt=ue(b)}));e((()=>{Tt()}))();export{wt as ErrorBoundary,Ct as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    Crt as r,
+    E6 as i,
+    Eit as a,
+    Hn as o,
+    K5 as s,
+    Knt as c,
+    O6 as l,
+    Srt as u,
+    Un as d,
+    Wnt as f,
+    Xh as p,
+    Yi as m,
+    Zi as h,
+    _it as g,
+    eE as _,
+    f0 as v,
+    iz as y,
+    o as b,
+    p0 as x,
+    q5 as ee,
+    qh as te,
+    s as ne,
+    sz as re
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as ie,
+    Bn as S,
+    Ht as ae,
+    Ln as oe,
+    Lt as se,
+    Nn as C,
+    Nt as ce,
+    Q as le,
+    Rn as w,
+    Ut as ue,
+    Vn as de,
+    it as fe,
+    kt as pe,
+    wn as T,
+    zn as me
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    C4t as he,
+    Crn as ge,
+    Irt as E,
+    Lrt as _e,
+    Srn as D,
+    Trn as ve,
+    X0t as ye,
+    XWn as be,
+    Y0t as xe,
+    ZWn as Se,
+    p4t as Ce
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    $f as we,
+    ep as Te
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    Bu as Ee,
+    Cd as De,
+    Fu as O,
+    Iu as k,
+    Mu as Oe,
+    Nu as A,
+    Ru as ke,
+    Sd as Ae,
+    dd as je,
+    fd as Me,
+    ld as j,
+    vd as Ne,
+    wd as Pe,
+    xd as Fe,
+    yd as Ie,
+    zu as Le
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    a as Re,
+    i as ze,
+    o as Be,
+    r as Ve,
+    s as He,
+    t as Ue
+} from "./99d6a32a-k1yyvt9coa8o1izc.js";
+import {
+    r as M,
+    t as N
+} from "./d9c77c9b-d1im5mninp0amoz0.js";
+import {
+    n as P,
+    t as F
+} from "./c09d86e5-kmotthzlhn8j33f3.js";
+
+function We(e) {
+    "use forget";
+    let t = (0, I.c)(18),
+        {
+            planType: n
+        } = e,
+        r = me(),
+        i;
+    t[0] === n ? i = t[1] : (i = () => f.logEventWithStatsig(`Direct Purchase Social Sku: Terms of Use Click`, `direct_purchase_social_sku_terms_of_use_click`, {
+        plan_type: n
+    }), t[0] = n, t[1] = i);
+    let a;
+    t[2] === r ? a = t[3] : (a = r.formatMessage(B.termsOfUse), t[2] = r, t[3] = a);
+    let o;
+    t[4] !== i || t[5] !== a ? (o = (0, L.jsx)(fe, {
+        target: `_blank`,
+        to: R,
+        onClick: i,
+        children: a
+    }), t[4] = i, t[5] = a, t[6] = o) : o = t[6];
+    let s;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (s = (0, L.jsx)(`div`, {
+        className: `border-token-text-primary mx-2 h-[18px] border-s`
+    }), t[7] = s) : s = t[7];
+    let c;
+    t[8] === n ? c = t[9] : (c = () => f.logEventWithStatsig(`Direct Purchase Social Sku: Privacy Policy Click`, `direct_purchase_social_sku_privacy_policy_click`, {
+        plan_type: n
+    }), t[8] = n, t[9] = c);
+    let l;
+    t[10] === r ? l = t[11] : (l = r.formatMessage(B.privacyPolicy), t[10] = r, t[11] = l);
+    let u;
+    t[12] !== c || t[13] !== l ? (u = (0, L.jsx)(fe, {
+        target: `_blank`,
+        to: z,
+        onClick: c,
+        children: l
+    }), t[12] = c, t[13] = l, t[14] = u) : u = t[14];
+    let d;
+    return t[15] !== o || t[16] !== u ? (d = (0, L.jsxs)(`div`, {
+        className: `text-token-text-secondary flex h-8 items-center gap-2 text-sm font-medium`,
+        children: [o, s, u]
+    }), t[15] = o, t[16] = u, t[17] = d) : d = t[17], d
+}
+var I, L, R, z, B, V = e((() => {
+    I = T(), c(), w(), le(), L = S(), R = `https://openai.com/policies/terms-of-use`, z = `https://openai.com/policies/privacy-policy`, B = oe({
+        termsOfUse: {
+            id: `directPurchaseAuthFooter.termsOfUse`,
+            defaultMessage: `Terms of Use`
+        },
+        privacyPolicy: {
+            id: `directPurchaseAuthFooter.privacyPolicy`,
+            defaultMessage: `Privacy Policy`
+        }
+    })
+}));
+
+function H(e) {
+    "use forget";
+    let t = (0, K.c)(34),
+        {
+            handleClickSignup: r,
+            handleClickLogin: i,
+            email: a,
+            setEmail: o,
+            emailError: s,
+            isRedirectingToAuth: c,
+            submitMessage: l
+        } = e,
+        u = me(),
+        d;
+    t[0] === r ? d = t[1] : (d = e => {
+        e.preventDefault(), r(`password`)
+    }, t[0] = r, t[1] = d);
+    let f;
+    t[2] === o ? f = t[3] : (f = e => o(e.target.value), t[2] = o, t[3] = f);
+    let p;
+    t[4] === u ? p = t[5] : (p = u.formatMessage(J.emailInputPlaceholder), t[4] = u, t[5] = p);
+    let m;
+    t[6] === u ? m = t[7] : (m = u.formatMessage(J.emailInputPlaceholder), t[6] = u, t[7] = m);
+    let h;
+    t[8] !== a || t[9] !== s || t[10] !== f || t[11] !== p || t[12] !== m ? (h = (0, q.jsx)(E, {
+        name: `email`,
+        value: a,
+        onChange: f,
+        inputClassName: `w-full rounded-full dark:bg-transparent! bg-gray-solid-75!  text-base! sm:text-base! py-3! px-5!`,
+        error: s,
+        showErrorIcon: !0,
+        ariaLabel: p,
+        placeholder: m,
+        className: `rounded-full! border-[var(--border-heavy)] p-0! px-0! py-0! focus-within:ring-1`
+    }), t[8] = a, t[9] = s, t[10] = f, t[11] = p, t[12] = m, t[13] = h) : h = t[13];
+    let g;
+    t[14] !== u || t[15] !== l ? (g = l ? l.id === `directPurchaseNoAuthPage.continueWithEmailButton` ? (0, q.jsx)(xe, {
+        parameter: `email_label`,
+        children: u.formatMessage(l)
+    }) : u.formatMessage(l) : (0, q.jsx)(xe, {
+        parameter: `continue_label`,
+        children: u.formatMessage(J.continue)
+    }), t[14] = u, t[15] = l, t[16] = g) : g = t[16];
+    let _;
+    t[17] !== c || t[18] !== g ? (_ = (0, q.jsx)(n, {
+        loading: c,
+        className: `p-3`,
+        children: g
+    }), t[17] = c, t[18] = g, t[19] = _) : _ = t[19];
+    let v;
+    t[20] !== d || t[21] !== h || t[22] !== _ ? (v = (0, q.jsxs)(`form`, {
+        onSubmit: d,
+        className: `flex w-full flex-col gap-3`,
+        children: [h, _]
+    }), t[20] = d, t[21] = h, t[22] = _, t[23] = v) : v = t[23];
+    let y;
+    if (t[24] !== i || t[25] !== u) {
+        let e;
+        t[27] === i ? e = t[28] : (e = e => (0, q.jsx)(be, {
+            onClick: i,
+            className: `text-token-text-primary font-medium no-underline hover:underline`,
+            children: e
+        }), t[27] = i, t[28] = e), y = u.formatMessage(J.alreadyHaveAccount, {
+            content: U,
+            login: e
+        }), t[24] = i, t[25] = u, t[26] = y
+    } else y = t[26];
+    let b;
+    t[29] === y ? b = t[30] : (b = (0, q.jsx)(`div`, {
+        className: `flex cursor-pointer items-center gap-1 pt-4 pb-1.5`,
+        children: y
+    }), t[29] = y, t[30] = b);
+    let x;
+    return t[31] !== b || t[32] !== v ? (x = (0, q.jsxs)(q.Fragment, {
+        children: [v, b]
+    }), t[31] = b, t[32] = v, t[33] = x) : x = t[33], x
+}
+
+function U(e) {
+    return (0, q.jsx)(`span`, {
+        className: `text-token-text-secondary`,
+        children: e
+    })
+}
+
+function W(e) {
+    "use forget";
+    let t = (0, K.c)(10),
+        {
+            handleClickSignup: n
+        } = e,
+        r;
+    t[0] === n ? r = t[1] : (r = (0, q.jsx)(F, {
+        provider: `google`,
+        className: `w-full p-3`,
+        onClick: () => n(`google`)
+    }), t[0] = n, t[1] = r);
+    let i;
+    t[2] === n ? i = t[3] : (i = (0, q.jsx)(F, {
+        provider: `microsoft`,
+        className: `w-full p-3`,
+        onClick: () => n(`microsoft`)
+    }), t[2] = n, t[3] = i);
+    let a;
+    t[4] === n ? a = t[5] : (a = (0, q.jsx)(F, {
+        provider: `apple`,
+        className: `w-full p-3`,
+        onClick: () => n(`apple`)
+    }), t[4] = n, t[5] = a);
+    let o;
+    return t[6] !== r || t[7] !== i || t[8] !== a ? (o = (0, q.jsxs)(`div`, {
+        className: `flex w-full flex-col gap-3`,
+        children: [r, i, a]
+    }), t[6] = r, t[7] = i, t[8] = a, t[9] = o) : o = t[9], o
+}
+
+function G(e) {
+    "use forget";
+    let t = (0, K.c)(3),
+        {
+            children: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, q.jsx)(`div`, {
+        className: `border-token-surface-tertiary flex h-[1px] w-full border-b`
+    }), t[0] = r) : r = t[0];
+    let i;
+    return t[1] === n ? i = t[2] : (i = (0, q.jsxs)(`div`, {
+        className: `relative my-9 w-full`,
+        children: [r, (0, q.jsx)(`span`, {
+            className: `bg-token-bg-primary text-token-text-secondary absolute start-1/2 -top-2 -translate-x-1/2 transform px-2 text-xs font-medium`,
+            children: n
+        })]
+    }), t[1] = n, t[2] = i), i
+}
+
+function Ge(e) {
+    "use forget";
+    let t = (0, K.c)(22),
+        {
+            handleClickSignup: n,
+            handleClickLogin: r,
+            email: i,
+            setEmail: a,
+            emailError: o,
+            isRedirectingToAuth: s,
+            overrideSubmitMessage: c,
+            bannerMessage: l
+        } = e,
+        u = me(),
+        d;
+    t[0] !== i || t[1] !== o || t[2] !== r || t[3] !== n || t[4] !== s || t[5] !== a || t[6] !== c ? (d = (0, q.jsx)(H, {
+        handleClickSignup: n,
+        handleClickLogin: r,
+        email: i,
+        setEmail: a,
+        emailError: o,
+        isRedirectingToAuth: s,
+        submitMessage: c
+    }), t[0] = i, t[1] = o, t[2] = r, t[3] = n, t[4] = s, t[5] = a, t[6] = c, t[7] = d) : d = t[7];
+    let f;
+    t[8] === u ? f = t[9] : (f = u.formatMessage(J.or), t[8] = u, t[9] = f);
+    let p;
+    t[10] === f ? p = t[11] : (p = (0, q.jsx)(G, {
+        children: f
+    }), t[10] = f, t[11] = p);
+    let h;
+    t[12] === n ? h = t[13] : (h = (0, q.jsx)(W, {
+        handleClickSignup: n
+    }), t[12] = n, t[13] = h);
+    let g;
+    t[14] !== l || t[15] !== u ? (g = l && (0, q.jsx)(`div`, {
+        className: `my-3 w-full`,
+        "data-testid": `login-section-banner`,
+        children: (0, q.jsx)(m, {
+            content: u.formatMessage(l),
+            type: `normal`
+        })
+    }), t[14] = l, t[15] = u, t[16] = g) : g = t[16];
+    let _;
+    return t[17] !== d || t[18] !== p || t[19] !== h || t[20] !== g ? (_ = (0, q.jsxs)(`div`, {
+        className: `flex w-full flex-col items-center`,
+        children: [d, p, h, g]
+    }), t[17] = d, t[18] = p, t[19] = h, t[20] = g, t[21] = _) : _ = t[21], _
+}
+var K, q, J, Ke = e((() => {
+    K = T(), P(), ye(), _(), h(), _e(), Se(), w(), q = S(), J = oe({
+        emailInputPlaceholder: {
+            id: `directPurchaseAuthLoginSection.emailInputPlaceholder`,
+            defaultMessage: `Email address`
+        },
+        continue: {
+            id: `directPurchaseAuthLoginSection.continue`,
+            defaultMessage: `Continue`
+        },
+        alreadyHaveAccount: {
+            id: `directPurchaseAuthLoginSection.alreadyHaveAccount`,
+            defaultMessage: `<content>Already have an account?</content> <login>Log in</login>`
+        },
+        or: {
+            id: `directPurchaseAuthLoginSection.or`,
+            defaultMessage: `OR`
+        }
+    })
+}));
+
+function qe(e) {
+    switch (e) {
+        case A.Go:
+            return g.planNameGo;
+        case A.Plus:
+            return g.planNamePlus;
+        case A.Pro:
+        case A.ProLite:
+            return g.planNamePro;
+        case A.Team:
+        case A.CodexTeam:
+            return g.planNameBusiness;
+        default:
+            return g.title
+    }
+}
+
+function Je(e) {
+    "use forget";
+    let t = (0, Ye.c)(10),
+        {
+            planType: n
+        } = e,
+        r;
+    t[0] === n ? r = t[1] : (r = qe(n), t[0] = n, t[1] = r);
+    let i = r,
+        a = `ms-2 text-center font-medium ${Ce}`;
+    if (n === A.CodexTeam) {
+        let e;
+        t[2] === i ? e = t[3] : (e = (0, Y.jsx)(`span`, {
+            className: `text-token-text-primary text-center font-semibold`,
+            children: (0, Y.jsx)(C, {
+                ...i
+            })
+        }), t[2] = i, t[3] = e);
+        let n;
+        t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (n = (0, Y.jsx)(`span`, {
+            className: a,
+            children: (0, Y.jsx)(C, {
+                ...g.codex
+            })
+        }), t[4] = n) : n = t[4];
+        let r;
+        return t[5] === e ? r = t[6] : (r = (0, Y.jsxs)(`p`, {
+            className: `text-token-text-primary mb-5 text-center text-[30px] leading-9 font-semibold`,
+            children: [e, n]
+        }), t[5] = e, t[6] = r), r
+    }
+    let o;
+    t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (o = (0, Y.jsx)(`span`, {
+        className: `text-token-text-primary text-center font-semibold`,
+        children: (0, Y.jsx)(C, {
+            ...g.chatGPT
+        })
+    }), t[7] = o) : o = t[7];
+    let s;
+    return t[8] === i ? s = t[9] : (s = (0, Y.jsxs)(`p`, {
+        className: `text-token-text-primary mb-5 text-center text-[30px] leading-9 font-semibold`,
+        children: [o, (0, Y.jsx)(`span`, {
+            className: a,
+            children: (0, Y.jsx)(C, {
+                ...i
+            })
+        })]
+    }), t[8] = i, t[9] = s), s
+}
+var Ye, Y, Xe = e((() => {
+    Ye = T(), a(), he(), w(), O(), Y = S()
+}));
+
+function Ze(e) {
+    "use forget";
+    let t = (0, Qe.c)(12),
+        {
+            advertisedFeatures: n,
+            title: r,
+            subtitle: i
+        } = e,
+        a;
+    t[0] === r ? a = t[1] : (a = (0, X.jsx)(`h2`, {
+        className: `text-token-text-primary mb-10 text-start text-3xl font-semibold`,
+        children: (0, X.jsx)(C, {
+            ...r
+        })
+    }), t[0] = r, t[1] = a);
+    let o;
+    t[2] === i ? o = t[3] : (o = (0, X.jsx)(`p`, {
+        className: `text-token-text-primary text-md mt-0 self-start font-medium`,
+        children: (0, X.jsx)(C, {
+            ...i
+        })
+    }), t[2] = i, t[3] = o);
+    let s;
+    t[4] !== a || t[5] !== o ? (s = (0, X.jsxs)(`div`, {
+        className: `space-y-4 pb-4 text-start`,
+        children: [a, o]
+    }), t[4] = a, t[5] = o, t[6] = s) : s = t[6];
+    let c;
+    t[7] === n ? c = t[8] : (c = (0, X.jsx)(je, {
+        advertisedFeatures: n,
+        type: j.DIRECT_PURCHASE
+    }), t[7] = n, t[8] = c);
+    let l;
+    return t[9] !== s || t[10] !== c ? (l = (0, X.jsxs)(`div`, {
+        className: `relative z-10 flex w-full max-w-[400px] flex-col md:ps-5`,
+        children: [s, c]
+    }), t[9] = s, t[10] = c, t[11] = l) : l = t[11], l
+}
+var Qe, X, $e = e((() => {
+        Qe = T(), Me(), w(), X = S()
+    })),
+    et, tt, nt, rt, it, at, ot = e((() => {
+        et = `webp`, tt = `srgb`, nt = `uchar`, rt = {
+            width: 414,
+            height: 620
+        }, it = `/cdn/assets/codex-cloud-jx1thus4.webp`, at = {
+            format: et,
+            width: 414,
+            height: 620,
+            space: tt,
+            channels: 4,
+            depth: nt,
+            density: 45,
+            isProgressive: !1,
+            isPalette: !1,
+            bitsPerSample: 8,
+            hasProfile: !1,
+            hasAlpha: !0,
+            autoOrient: rt,
+            src: it
+        }
+    }));
+
+function st(e) {
+    "use forget";
+    let t = (0, ct.c)(18),
+        {
+            overrideType: n
+        } = e,
+        r = n === Oe.Codex,
+        i, a, o, c;
+    if (t[0] !== r || t[1] !== n) {
+        let e = s(`absolute inset-x-0 -top-[140px] z-0 h-full w-full object-fill object-top transition-[filter,opacity] dark:brightness-[0.78] dark:saturate-[0.92]`, r && `top-0!`),
+            l;
+        bb0: switch (n) {
+            case Oe.Codex:
+                l = at.src;
+                break bb0;
+            default:
+                l = `https://cdn.openai.com/chatgpt/team-interstitial-background.png`
+        }
+        i = !0, a = ``, o = l, c = s(e, !r && `dark:hidden`), t[0] = r, t[1] = n, t[2] = i, t[3] = a, t[4] = o, t[5] = c
+    } else i = t[2], a = t[3], o = t[4], c = t[5];
+    let l;
+    t[6] !== i || t[7] !== a || t[8] !== o || t[9] !== c ? (l = (0, Z.jsx)(`img`, {
+        "aria-hidden": i,
+        alt: a,
+        src: o,
+        className: c
+    }), t[6] = i, t[7] = a, t[8] = o, t[9] = c, t[10] = l) : l = t[10];
+    let u;
+    t[11] === r ? u = t[12] : (u = !r && (0, Z.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `absolute inset-0 z-0 hidden bg-[radial-gradient(125%_70%_at_50%_0%,rgba(105,170,255,0.24)_0%,rgba(62,92,156,0.18)_32%,rgba(18,24,37,0.92)_58%,#0f141f_100%)] dark:block`
+    }), t[11] = r, t[12] = u);
+    let d, f;
+    t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, Z.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `pointer-events-none absolute inset-0 z-[1] bg-gradient-to-b from-white/0 via-white/10 to-white/35 dark:hidden`
+    }), f = (0, Z.jsx)(`div`, {
+        "aria-hidden": !0,
+        className: `pointer-events-none absolute inset-0 z-[1] hidden bg-[linear-gradient(180deg,rgba(33,33,33,0)_0.12%,rgba(33,33,33,0.85)_51.46%,#212121_72.79%)] dark:block`
+    }), t[13] = d, t[14] = f) : (d = t[13], f = t[14]);
+    let p;
+    return t[15] !== l || t[16] !== u ? (p = (0, Z.jsxs)(Z.Fragment, {
+        children: [l, u, d, f]
+    }), t[15] = l, t[16] = u, t[17] = p) : p = t[17], p
+}
+var ct, Z, lt = e((() => {
+    ct = T(), ot(), ee(), O(), Z = S()
+}));
+
+function ut({
+    isCodexTeam: e,
+    isTeamPlan: t,
+    plusFreeOfferCtaLabel: n,
+    teamPromoCtaLabel: r
+}) {
+    return e ? _t.getStartedButton : t ? r ?? Re.getButton : n || (u(ht).get(gt, `control`) === `continue_with_email` ? _t.continueWithEmailButton : n)
+}
+
+function dt(e, t) {
+    let n = new URLSearchParams(t);
+    ke(n);
+    let r = n.toString();
+    if (e === A.Team) return r ? `${N}?${r}` : N;
+    if (e === A.CodexTeam) return r ? `${mt}?${r}` : mt;
+    let i = `/purchase/${e}`;
+    return r ? `${i}?${r}` : i
+}
+
+function ft() {
+    f.logEventWithStatsig(`Direct Purchase Social Sku: Direct Purchase Page Viewed`, `direct_purchase_social_sku_impression`, {
+        referrer: document.referrer
+    })
+}
+var pt, Q, $, mt, ht, gt, _t, vt, yt = e((() => {
+    pt = T(), p(), He(), Te(), Ne(), ze(), De(), Fe(), D(), v(), i(), c(), r(), M(), Q = t(de()), w(), le(), re(), Le(), o(), V(), Ke(), Xe(), $e(), lt(), Ve(), O(), $ = S(), mt = `/codex/team/checkout`, ht = `3768341700`, gt = `direct_purchase_email_cta_copy_variant`, _t = oe({
+        freeTrialSubtitle30days: {
+            id: `directPurchaseNoAuthPage.freeTrialSubtitle30days`,
+            defaultMessage: `Free 30-day trial`
+        },
+        getStartedButton: {
+            id: `directPurchaseNoAuthPage.getStartedButton`,
+            defaultMessage: `Get started`
+        },
+        continueWithEmailButton: {
+            id: `directPurchaseNoAuthPage.continueWithEmailButton`,
+            defaultMessage: `Continue with email`
+        }
+    }), vt = e => {
+        "use forget";
+        let t = (0, pt.c)(78),
+            {
+                planType: n,
+                overrideType: r,
+                promoCampaign: i
+            } = e,
+            a = me(),
+            o = ce(),
+            s = ie(),
+            c = r,
+            u = n === A.Team,
+            p = n === A.CodexTeam,
+            m = u || p,
+            h = Ae(),
+            {
+                data: g
+            } = Pe(h ?? ``, !!h),
+            {
+                country: _
+            } = ve(),
+            v;
+        t[0] !== _ || t[1] !== m ? (v = {
+            country: _,
+            currentAccount: null,
+            location: `DirectPurchaseNoAuthPage`,
+            pricingPlanIsTypeBusiness: m
+        }, t[0] = _, t[1] = m, t[2] = v) : v = t[2];
+        let b = ge(v),
+            ee = b?.country,
+            ne = b?.currency,
+            re = b != null,
+            S;
+        t[3] !== ee || t[4] !== ne || t[5] !== re ? (S = {
+            countryCode: ee,
+            currency: ne,
+            enabled: re
+        }, t[3] = ee, t[4] = ne, t[5] = re, t[6] = S) : S = t[6];
+        let {
+            data: ae,
+            isLoading: oe,
+            error: se
+        } = l(S), C = u && !!h && h === `team-1-month-free` && !!ae && ae.currencyConfig.promos.business_free_trial.enabled, le = C && g?.state === `not_eligible`, w = C && g?.state === `temporary_disabled`, ue = C && g?.state === `offline`, de = C && g?.state === `eligible`, fe;
+        bb0: {
+            if (!de) {
+                fe = null;
+                break bb0
+            }
+            fe = Re.redeemFreeOfferButton
+        }
+        let pe = fe,
+            T;
+        bb1: {
+            if (!u) {
+                T = null;
+                break bb1
+            }
+            if (!b || oe || se != null || !ae) {
+                T = null;
+                break bb1
+            }
+            if (!(le || w || ue)) {
+                T = null;
+                break bb1
+            }
+            T = le ? Ie.teamFreeTrialNotEligible : w ? Ie.teamFreeTrialTemporarilyDisabled : Ie.teamFreeTrialOffline
+        }
+        let he = T,
+            E = n === A.Plus && i === `plus-1-month-free`,
+            _e = E ? Ee.claimFreeOffer : null,
+            D;
+        t[7] !== p || t[8] !== u || t[9] !== _e || t[10] !== pe ? (D = ut({
+            isCodexTeam: p,
+            isTeamPlan: u,
+            plusFreeOfferCtaLabel: _e,
+            teamPromoCtaLabel: pe
+        }), t[7] = p, t[8] = u, t[9] = _e, t[10] = pe, t[11] = D) : D = t[11];
+        let ye = D,
+            be;
+        t[12] !== c || t[13] !== n ? (be = Ue({
+            planType: n,
+            overrideType: c
+        }), t[12] = c, t[13] = n, t[14] = be) : be = t[14];
+        let {
+            title: xe,
+            subtitle: Se,
+            advertisedFeatures: Ce
+        } = be, [Te, De] = (0, Q.useState)(!1), O;
+        t[15] === Symbol.for(`react.memo_cache_sentinel`) ? (O = [], t[15] = O) : O = t[15], (0, Q.useEffect)(ft, O);
+        let [k, Oe] = (0, Q.useState)(``), [ke, je] = (0, Q.useState)(void 0), Me;
+        t[16] !== s.search || t[17] !== n ? (Me = dt(n, s.search), t[16] = s.search, t[17] = n, t[18] = Me) : Me = t[18];
+        let j = Me,
+            Ne;
+        t[19] === a ? Ne = t[20] : (Ne = e => {
+            if (!e || e.trim() === ``) return a.formatMessage({
+                id: `businessPurchaseInterstitialPage.errors.emailRequired`,
+                defaultMessage: `Email is required`
+            });
+            if (!d.test(e)) return a.formatMessage({
+                id: `businessPurchaseInterstitialPage.errors.emailInvalid`,
+                defaultMessage: `Email is invalid.`
+            })
+        }, t[19] = a, t[20] = Ne);
+        let Fe = Ne,
+            Le;
+        t[21] !== j || t[22] !== k || t[23] !== Fe ? (Le = e => {
+            if (e === `password`) {
+                f.logEventWithStatsig(`Direct Purchase Social Sku: Continue With Email Click`, `direct_purchase_social_sku_continue_with_email_click`);
+                let e = Fe(k);
+                if (je(e), e) {
+                    f.logEventWithStatsig(`Direct Purchase Social Sku: Email Validation Error`, `direct_purchase_social_sku_email_validation_error`);
+                    return
+                }
+                let t;
+                k && (t = {
+                    screen_hint: `login_or_signup`,
+                    login_hint: k
+                }), De(!0), f.logEventWithStatsig(`Direct Purchase Social Sku: Email Signup Navigated To Auth`, `direct_purchase_social_sku_email_signup_navigated_to_auth`), x({
+                    fallbackScreenHint: `login_or_signup`,
+                    useFallbackScreenHint: !0,
+                    ...t ? {
+                        additionalAuthParams: t
+                    } : {},
+                    callbackUrl: j
+                });
+                return
+            }
+            f.logEventWithStatsig(`Direct Purchase Social Sku: Continue With Social Click`, `direct_purchase_social_sku_continue_with_social_click`, {
+                connection: e
+            }), x({
+                fallbackScreenHint: `login`,
+                useFallbackScreenHint: !0,
+                additionalAuthParams: {
+                    connection: y[e]
+                },
+                callbackUrl: j
+            })
+        }, t[21] = j, t[22] = k, t[23] = Fe, t[24] = Le) : Le = t[24];
+        let ze = Le,
+            Ve;
+        t[25] === j ? Ve = t[26] : (Ve = () => {
+            f.logEventWithStatsig(`Direct Purchase Social Sku: Already Have Account Click`, `direct_purchase_social_sku_already_have_account_click`), x({
+                fallbackScreenHint: `login_or_signup`,
+                callbackUrl: j,
+                skipLoginModal: !0
+            })
+        }, t[25] = j, t[26] = Ve);
+        let He = Ve,
+            M;
+        t[27] !== p || t[28] !== o ? (M = () => {
+            f.logEventWithStatsig(`Direct Purchase Social Sku: Logo Click`, `direct_purchase_social_sku_logo_click`), o(p ? `/codex` : `/`)
+        }, t[27] = p, t[28] = o, t[29] = M) : M = t[29];
+        let N;
+        t[30] === a ? N = t[31] : (N = a.formatMessage({
+            id: `directPurchaseAuthLoginSection.homeButtonAriaLabel`,
+            defaultMessage: `Click here to go to the home page`
+        }), t[30] = a, t[31] = N);
+        let P;
+        t[32] === p ? P = t[33] : (P = p ? (0, $.jsx)(we, {
+            className: `h-8 w-8`
+        }) : (0, $.jsx)(te, {
+            className: `h-8 w-8`
+        }), t[32] = p, t[33] = P);
+        let F;
+        t[34] !== M || t[35] !== N || t[36] !== P ? (F = (0, $.jsx)(`button`, {
+            onClick: M,
+            className: `mb-6 cursor-pointer p-0 md:fixed md:start-4 md:top-4 md:h-6 md:w-6`,
+            "aria-label": N,
+            children: P
+        }), t[34] = M, t[35] = N, t[36] = P, t[37] = F) : F = t[37];
+        let I;
+        t[38] !== a || t[39] !== E || t[40] !== de ? (I = (E || de) && (0, $.jsx)(`div`, {
+            className: `text-token-text-secondary text-center text-lg font-medium`,
+            children: a.formatMessage(_t.freeTrialSubtitle30days)
+        }), t[38] = a, t[39] = E, t[40] = de, t[41] = I) : I = t[41];
+        let L;
+        t[42] === n ? L = t[43] : (L = (0, $.jsx)(Je, {
+            planType: n
+        }), t[42] = n, t[43] = L);
+        let R;
+        t[44] !== k || t[45] !== ke || t[46] !== He || t[47] !== ze || t[48] !== Te || t[49] !== he || t[50] !== ye ? (R = (0, $.jsx)(Ge, {
+            handleClickSignup: ze,
+            handleClickLogin: He,
+            email: k,
+            setEmail: Oe,
+            emailError: ke,
+            isRedirectingToAuth: Te,
+            overrideSubmitMessage: ye,
+            bannerMessage: he
+        }), t[44] = k, t[45] = ke, t[46] = He, t[47] = ze, t[48] = Te, t[49] = he, t[50] = ye, t[51] = R) : R = t[51];
+        let z;
+        t[52] !== F || t[53] !== I || t[54] !== L || t[55] !== R ? (z = (0, $.jsxs)(`div`, {
+            className: `flex w-full max-w-[360px] grow flex-col items-center justify-center gap-3`,
+            children: [F, I, L, R]
+        }), t[52] = F, t[53] = I, t[54] = L, t[55] = R, t[56] = z) : z = t[56];
+        let B;
+        t[57] === n ? B = t[58] : (B = (0, $.jsx)(We, {
+            planType: n
+        }), t[57] = n, t[58] = B);
+        let V;
+        t[59] !== z || t[60] !== B ? (V = (0, $.jsxs)(`div`, {
+            className: `flex min-w-[320px] flex-1 flex-col items-center p-9 px-4`,
+            children: [z, B]
+        }), t[59] = z, t[60] = B, t[61] = V) : V = t[61];
+        let H;
+        t[62] === c ? H = t[63] : (H = (0, $.jsx)(st, {
+            overrideType: c
+        }), t[62] = c, t[63] = H);
+        let U;
+        t[64] !== Ce || t[65] !== Se || t[66] !== xe ? (U = (0, $.jsx)(`div`, {
+            className: `mb-10 flex w-full grow flex-col md:-mt-33 md:items-center md:justify-center`,
+            children: (0, $.jsx)(Ze, {
+                title: xe,
+                subtitle: Se,
+                advertisedFeatures: Ce
+            })
+        }), t[64] = Ce, t[65] = Se, t[66] = xe, t[67] = U) : U = t[67];
+        let W;
+        t[68] !== a || t[69] !== m ? (W = m && (0, $.jsx)(`div`, {
+            className: `bg-token-bg-primary before:via-token-bg-primary/45 before:to-token-bg-primary absolute inset-x-0 bottom-0 z-10 flex flex-col items-center px-4 pt-8 pb-6 before:pointer-events-none before:absolute before:inset-x-0 before:top-[-64px] before:h-16 before:bg-gradient-to-b before:from-transparent before:content-['']`,
+            children: (0, $.jsxs)(`div`, {
+                className: `relative flex flex-col items-center`,
+                children: [(0, $.jsx)(`div`, {
+                    className: `text-token-text-secondary relative top-[10px] text-center text-[12px] font-medium`,
+                    children: a.formatMessage(Re.logoGardenTitle)
+                }), (0, $.jsx)(`img`, {
+                    alt: a.formatMessage(Re.logoGardenAlt),
+                    src: Be.src,
+                    className: `mt-5 h-auto w-4/5 max-w-[720px] object-contain dark:opacity-95 dark:brightness-[1.55] dark:contrast-[1.04] dark:invert`
+                })]
+            })
+        }), t[68] = a, t[69] = m, t[70] = W) : W = t[70];
+        let G;
+        t[71] !== H || t[72] !== U || t[73] !== W ? (G = (0, $.jsxs)(`div`, {
+            className: `bg-token-bg-primary text-token-text-primary hidden min-h-[560px] flex-col overflow-y-auto px-4 md:relative md:flex md:h-full md:flex-1 md:items-center`,
+            children: [H, U, W]
+        }), t[71] = H, t[72] = U, t[73] = W, t[74] = G) : G = t[74];
+        let K;
+        return t[75] !== V || t[76] !== G ? (K = (0, $.jsxs)(`div`, {
+            className: `bg-token-bg-primary text-token-text-primary flex h-full w-full`,
+            children: [V, G]
+        }), t[75] = V, t[76] = G, t[77] = K) : K = t[77], K
+    }
+}));
+
+function bt() {
+    "use forget";
+    let e = (0, xt.c)(4),
+        t = se(),
+        {
+            overrideType: n,
+            promoCampaign: r
+        } = pe(),
+        i = t.planType;
+    if (!k(i)) throw new Response(`Not Found`, {
+        status: 404
+    });
+    let a;
+    return e[0] !== n || e[1] !== i || e[2] !== r ? (a = (0, St.jsx)(vt, {
+        planType: i,
+        overrideType: n,
+        promoCampaign: r
+    }), e[0] = n, e[1] = i, e[2] = r, e[3] = a) : a = e[3], a
+}
+var xt, St, Ct, wt, Tt = e((() => {
+    le(), xt = T(), yt(), O(), ne(), St = S(), Ct = ae(bt), wt = ue(b)
+}));
+e((() => {
+    Tt()
+}))();
+export {
+    wt as ErrorBoundary, Ct as
+    default
+};
 //# sourceMappingURL=(_lang).explore._planType-n8i7i2k8.js.map

@@ -1,1 +1,662 @@
-export const __rspack_esm_ids=[392067];export const __webpack_modules__={P0UP:(function(e,t,i){i.d(t,{a:()=>v,b:()=>x});var a=i("jqIZ"),r=i("ABep"),n=i("QosV");let s=(0,i("Qgfj").f)({pageTitle:{id:"advancedAccountSecurity.pageTitle",defaultMessage:"Advanced Account Security - OpenAI",description:"Browser title for the Advanced Account Security page"},pageDescription:{id:"advancedAccountSecurity.pageDescription.v2",defaultMessage:"Extra protection for people at increased risk of phishing, account takeover, and other targeted online attacks.",description:"Meta description for the refreshed Advanced Account Security landing page"},title:{id:"advancedAccountSecurity.title.v2",defaultMessage:"Advanced Account Security",description:"Title for the Advanced Account Security landing page"},subtitle:{id:"advancedAccountSecurity.subtitle.v2",defaultMessage:"Advanced Account Security uses stronger sign-in protections and additional safeguards to help prevent unauthorized access to your account.",description:"Introductory copy for the Advanced Account Security page"},topCta:{id:"advancedAccountSecurity.topCta.v2",defaultMessage:"Enroll",description:"Top primary CTA on the Advanced Account Security page"},signOutNotice:{id:"advancedAccountSecurity.signOutNotice.v2",defaultMessage:"Enrolling signs you out everywhere and disconnects your paired Codex devices. You’ll need to sign in and pair them again.",description:"Short helper text shown below both enrollment buttons on the Advanced Account Security landing page. It warns people considering enrollment that enabling the feature signs them out everywhere, disconnects their paired Codex devices, and requires them to sign in and pair those devices again."},whyChooseTitle:{id:"advancedAccountSecurity.whyChooseTitle.v3",defaultMessage:"Protect your account from takeovers",description:"Section H2 above the hero image; headline means protect your account from account takeover (ATO) attacks."},whyChooseDescription:{id:"advancedAccountSecurity.whyChooseDescription.v3",defaultMessage:"Advanced Account Security adds stronger defenses to stop attackers from signing in—even if someone has your password.",description:"Description for the why choose section"},heroAlt:{id:"advancedAccountSecurity.heroAlt.v3",defaultMessage:"Illustrated desktop ChatGPT security settings showing trusted devices and security keys and passkeys.",description:"Alt text for the Advanced Account Security hero image"},whoTitle:{id:"advancedAccountSecurity.whoTitle.v2",defaultMessage:"Who this is for",description:"Heading for the audience description section"},whoDescription:{id:"advancedAccountSecurity.whoDescription.v3",defaultMessage:"For anyone who wants elevated protection against account takeover—including targeted attacks like phishing and stolen passwords. Stronger sign-in and recovery checks help reduce takeover risk, with extra verification when it matters.",description:"Audience blurb; account takeover means ATO attacks such as phishing and stolen passwords. Extra verification when it matters means during high-risk events such as new devices, unusual activity, or sensitive changes."},featuresTitle:{id:"advancedAccountSecurity.featuresTitle.v2",defaultMessage:"Additional account protections when you enroll",description:"Heading above the feature cards section"},strongerSignInTitle:{id:"advancedAccountSecurity.strongerSignInTitle.v2",defaultMessage:"Stronger sign-in methods",description:"Title for the stronger sign-in methods card"},strongerSignInDescription:{id:"advancedAccountSecurity.strongerSignInDescription.v3",defaultMessage:"Security keys and passkeys make phishing-resistant sign-in the default, preventing attackers from signing in even with a stolen password.",description:"Description for the stronger sign-in methods card"},recoveryTitle:{id:"advancedAccountSecurity.recoveryTitle.v2",defaultMessage:"Stricter account recovery",description:"Title for the stricter account recovery card"},recoveryDescription:{id:"advancedAccountSecurity.recoveryDescription.v2",defaultMessage:"Recovery options are more secure to help prevent attackers from taking over your account.",description:"Description for the stricter account recovery card"},trainingTitle:{id:"advancedAccountSecurity.trainingTitle.v3",defaultMessage:"Protect sensitive conversations",description:"Title for the sensitive conversations protection card"},trainingDescription:{id:"advancedAccountSecurity.trainingDescription.v4",defaultMessage:"Conversations aren’t used to train OpenAI models while Advanced Account Security is enabled.",description:"Card description; train refers to machine learning model training. User conversations are excluded from ML training while Advanced Account Security is enabled."},shorterSessionsTitle:{id:"advancedAccountSecurity.shorterSessionsTitle.v2",defaultMessage:"Shorter sign-in sessions",description:"Title for feature that shortens session duration and requires more frequent reauthentication."},shorterSessionsDescription:{id:"advancedAccountSecurity.shorterSessionsDescription.v2",defaultMessage:"Requires signing in again periodically to reduce the time an attacker can use stolen credentials.",description:"Card description; sessions expire after a shorter fixed duration, requiring time-based reauthentication."},loginProtectionsTitle:{id:"advancedAccountSecurity.loginProtectionsTitle.v3",defaultMessage:"Login alerts",description:"Title for the login alerts card"},loginProtectionsDescription:{id:"advancedAccountSecurity.loginProtectionsDescription.v3",defaultMessage:"Get notified when your account is signed in on a new device so you can quickly review and take action.",description:"Description for the login alerts card"},visibilityTitle:{id:"advancedAccountSecurity.visibilityTitle.v3",defaultMessage:"More visibility",description:"Title for the account activity visibility card; user can see where they are signed in and manage active sessions."},visibilityDescription:{id:"advancedAccountSecurity.visibilityDescription.v2",defaultMessage:"See where your account is signed in and review or sign out of active sessions.",description:"Description for the visibility and control card"},yubikeyTitle:{id:"advancedAccountSecurity.yubikeyTitle.v3",defaultMessage:"Use security keys for our strongest phishing-resistant protection",description:"Heading for the security key callout"},yubikeyDescription:{id:"advancedAccountSecurity.yubikeyDescription.v2",defaultMessage:"A physical security key adds an extra layer of defense and helps protect your account even if your password is exposed. You can use any compatible FIDO® security key. During setup, you’ll also have the option to purchase a set of two best in class security keys at preferred pricing through our partnership with Yubico.",description:"Description for the security key callout"},readyTitle:{id:"advancedAccountSecurity.readyTitle.v2",defaultMessage:"Ready to enroll?",description:"Heading for the final CTA section"},readyDescription:{id:"advancedAccountSecurity.readyDescription.v2",defaultMessage:"Set up stronger protection for your ChatGPT account in a few steps.",description:"Description for the final CTA section"},readyUpdateNotice:{id:"advancedAccountSecurity.readyUpdateNotice",defaultMessage:"To ensure you get the latest security features, update ChatGPT on your devices before you enroll.",description:"Second line in the final CTA section telling users to update ChatGPT before enrollment."},readyButton:{id:"advancedAccountSecurity.readyButton.v2",defaultMessage:"Enroll in Advanced Account Security",description:"Primary CTA in the final section; starts enrollment in the Advanced Account Security feature."},backToChatgpt:{id:"advancedAccountSecurity.backToChatgpt",defaultMessage:"Back to ChatGPT",description:"Link label to return to ChatGPT settings from the Advanced Account Security landing page"},backToCyber:{id:"advancedAccountSecurity.backToDaybreak",defaultMessage:"Back to Daybreak",description:"Link label and accessible label on the Advanced Account Security landing page when the Daybreak application sent the user here. Returns to the cybersecurity eligibility page without starting enrollment. Daybreak is the program's brand name and stays untranslated. Short navigation label."},topLeftChatgptHome:{id:"advancedAccountSecurity.topLeftChatgptHome",defaultMessage:"ChatGPT home",description:"Accessible label for the top-left ChatGPT wordmark link on the Advanced Account Security landing page"},warningTitle:{id:"advancedAccountSecurity.warningTitle.v2",defaultMessage:"Important tradeoffs",description:"Title for the bottom warning callout"},warningDescription:{id:"advancedAccountSecurity.warningDescription.v4",defaultMessage:"Turning on Advanced Account Security signs you out everywhere and disconnects your paired Codex devices. You’ll need to pair those devices again. Recovery options are more limited, which can make account recovery harder.",description:"Multi-sentence body text in the warning callout near the bottom of the Advanced Account Security enrollment landing page. It tells people considering enrollment that enabling the feature signs them out everywhere, temporarily requires them to pair connected Codex devices again, and limits account recovery options."},terms:{id:"advancedAccountSecurity.terms",defaultMessage:"Terms of use",description:"Terms of use footer link label"},privacy:{id:"advancedAccountSecurity.privacy",defaultMessage:"Privacy policy",description:"Privacy policy footer link label"},footerSeparator:{id:"advancedAccountSecurity.footerSeparator.v2",defaultMessage:"·",description:"Separator between footer links"}});var o=i("zd8w"),c=i("Wf1j"),l=i("oyxz"),d=i("ygO2"),u=i("bf6R"),p=i("PYqD");let h=new Set(["web_homepage_beacon","ios_app_homepage_beacon","android_app_homepage_beacon","web_cyber_home"]);function f(){let e,t,d,f,x,v,b,j,C,S,w,A,_,T,k,M,D,N,H,P,V,E,I,L,q,G,Z,B,O,R,U,Y,z,W,F,Q,K,X,J,$,ee,et,ei=(0,n.c)(73),ea=(0,c.a)(),[er]=(0,a.fb)();ei[0]!==er?(e=er.get("originator"),ei[0]=er,ei[1]=e):e=ei[1];let en=e,es="web_cyber_home"===en,eo=(0,a.V)("/"),ec=(0,a.V)("/settings/security"),el=(0,a.V)("/cyber"),ed=es?el:eo,eu=(0,o.useRef)(null),[ep,eh]=(0,o.useState)("idle");ei[2]===Symbol.for("react.memo_cache_sentinel")?(t=()=>{let e=function(){eu.current?.abort(),eu.current=null},t=function(e){e.persisted&&eh("idle")};return window.addEventListener("pagehide",e),window.addEventListener("pageshow",t),()=>{e(),window.removeEventListener("pagehide",e),window.removeEventListener("pageshow",t)}},d=[],ei[2]=t,ei[3]=d):(t=ei[2],d=ei[3]),(0,o.useEffect)(t,d),ei[4]!==el||ei[5]!==es||ei[6]!==en||ei[7]!==ec?(f=async function(){if(null!=eu.current)return;let e=new AbortController;eu.current=e,eh("pending");try{let t=await async function(e,t,a){let[{getClientBootstrap:r},{signInToBrowserSession:n}]=await Promise.all([Promise.all([i.e(418851),i.e(109308),i.e(399565),i.e(257798),i.e(153380),i.e(617936),i.e(807489),i.e(337882),i.e(955979),i.e(646436),i.e(7078),i.e(200429),i.e(698524),i.e(956483),i.e(87162),i.e(396705),i.e(155568),i.e(731863),i.e(767086),i.e(76629),i.e(514085),i.e(204542),i.e(982651),i.e(673108),i.e(487481),i.e(229522),i.e(390575)]).then(i.bind(i,"M8lA")),Promise.all([i.e(418851),i.e(109308),i.e(399565),i.e(257798),i.e(153380),i.e(617936),i.e(807489),i.e(337882),i.e(955979),i.e(646436),i.e(7078),i.e(200429),i.e(698524),i.e(956483),i.e(87162),i.e(396705),i.e(155568),i.e(731863),i.e(767086),i.e(76629),i.e(514085),i.e(204542),i.e(982651),i.e(673108),i.e(487481),i.e(229522),i.e(390575),i.e(226913)]).then(i.bind(i,"jEww"))]);if(a.aborted)return{ok:!1};let s={...r().auth.reauthenticationParams,post_login_setup_advanced_account_security:"true"};return n(e,null!=t&&h.has(t)?{...s,originator:t}:s,a)}(new URL(es?el:ec,window.location.origin).toString(),en,e.signal);if(e.signal.aborted)return;if(t.ok)return void window.location.assign(t.url)}catch{}e.signal.aborted||(eu.current=null,eh("error"))},ei[4]=el,ei[5]=es,ei[6]=en,ei[7]=ec,ei[8]=f):f=ei[8];let ef=f;ei[9]!==ep?(x="error"===ep?(0,r.jsx)(l.a,{id:"advancedAccountSecurity.enrollmentError",defaultMessage:"We couldn’t start enrollment. Please try again.",description:"Error on the Advanced Account Security landing page when the sign-in request fails. The Enroll buttons can be used to retry."}):null,ei[9]=ep,ei[10]=x):x=ei[10];let em=x;ei[11]!==ea||ei[12]!==es?(v=ea.formatMessage(es?s.backToCyber:s.topLeftChatgptHome),ei[11]=ea,ei[12]=es,ei[13]=v):v=ei[13],ei[14]===Symbol.for("react.memo_cache_sentinel")?(b=(0,r.jsx)(p.a,{className:"h-5 w-auto","aria-hidden":"true"}),ei[14]=b):b=ei[14],ei[15]!==ed||ei[16]!==v?(j=(0,r.jsx)("header",{className:"flex p-4",children:(0,r.jsx)("a",{className:"flex min-h-11 items-center p-2",href:ed,"aria-label":v,children:b})}),ei[15]=ed,ei[16]=v,ei[17]=j):j=ei[17],ei[18]===Symbol.for("react.memo_cache_sentinel")?(C=(0,r.jsx)("h1",{className:"text-4xl font-normal",children:(0,r.jsx)(l.a,{...s.title})}),ei[18]=C):C=ei[18],ei[19]===Symbol.for("react.memo_cache_sentinel")?(S=(0,r.jsxs)("div",{className:"flex flex-col gap-4",children:[C,(0,r.jsx)("p",{className:"text-base leading-relaxed",children:(0,r.jsx)(l.a,{...s.subtitle})})]}),ei[19]=S):S=ei[19];let eg="pending"===ep;ei[20]===Symbol.for("react.memo_cache_sentinel")?(w=(0,r.jsx)(l.a,{...s.topCta}),ei[20]=w):w=ei[20],ei[21]!==ef||ei[22]!==eg?(A=(0,r.jsx)(m,{isPending:eg,onEnroll:ef,children:w}),ei[21]=ef,ei[22]=eg,ei[23]=A):A=ei[23],ei[24]!==em?(_=null!=em?(0,r.jsx)("p",{role:"alert",className:"text-sm text-danger",children:em}):null,ei[24]=em,ei[25]=_):_=ei[25],ei[26]!==A||ei[27]!==_?(T=(0,r.jsxs)("section",{className:"flex w-full max-w-2xl flex-col items-center gap-10 text-center",children:[S,A,_]}),ei[26]=A,ei[27]=_,ei[28]=T):T=ei[28],ei[29]===Symbol.for("react.memo_cache_sentinel")?(k=(0,r.jsx)(g,{title:(0,r.jsx)(l.a,{...s.whyChooseTitle}),children:(0,r.jsx)(l.a,{...s.whyChooseDescription})}),ei[29]=k):k=ei[29],ei[30]!==ea?(M=ea.formatMessage(s.heroAlt),ei[30]=ea,ei[31]=M):M=ei[31],ei[32]!==M?(D=(0,r.jsx)("img",{className:"aspect-video w-full rounded-xl border border-default",src:"https://cdn.openai.com/chatgpt/advanced-account-security-hero.png",alt:M}),ei[32]=M,ei[33]=D):D=ei[33],ei[34]===Symbol.for("react.memo_cache_sentinel")?(N=(0,r.jsx)(g,{title:(0,r.jsx)(l.a,{...s.whoTitle}),children:(0,r.jsx)(l.a,{...s.whoDescription})}),ei[34]=N):N=ei[34],ei[35]===Symbol.for("react.memo_cache_sentinel")?(H=(0,r.jsx)("h2",{className:"text-2xl font-normal",children:(0,r.jsx)(l.a,{...s.featuresTitle})}),ei[35]=H):H=ei[35],ei[36]===Symbol.for("react.memo_cache_sentinel")?(P=(0,r.jsx)(y,{icon:(0,r.jsx)(u.ne,{}),title:(0,r.jsx)(l.a,{...s.strongerSignInTitle}),children:(0,r.jsx)(l.a,{...s.strongerSignInDescription})}),ei[36]=P):P=ei[36],ei[37]===Symbol.for("react.memo_cache_sentinel")?(V=(0,r.jsx)(y,{icon:(0,r.jsx)(u.Ke,{}),title:(0,r.jsx)(l.a,{...s.recoveryTitle}),children:(0,r.jsx)(l.a,{...s.recoveryDescription})}),ei[37]=V):V=ei[37],ei[38]===Symbol.for("react.memo_cache_sentinel")?(E=(0,r.jsx)(y,{icon:(0,r.jsx)(u.ch,{}),title:(0,r.jsx)(l.a,{...s.trainingTitle}),children:(0,r.jsx)(l.a,{...s.trainingDescription})}),ei[38]=E):E=ei[38],ei[39]===Symbol.for("react.memo_cache_sentinel")?(I=(0,r.jsx)(y,{icon:(0,r.jsx)(u.rc,{}),title:(0,r.jsx)(l.a,{...s.shorterSessionsTitle}),children:(0,r.jsx)(l.a,{...s.shorterSessionsDescription})}),ei[39]=I):I=ei[39],ei[40]===Symbol.for("react.memo_cache_sentinel")?(L=(0,r.jsx)(y,{icon:(0,r.jsx)(u.fb,{}),title:(0,r.jsx)(l.a,{...s.loginProtectionsTitle}),children:(0,r.jsx)(l.a,{...s.loginProtectionsDescription})}),ei[40]=L):L=ei[40],ei[41]===Symbol.for("react.memo_cache_sentinel")?(q=(0,r.jsxs)("section",{className:"flex w-full max-w-2xl flex-col gap-6",children:[H,(0,r.jsxs)("div",{className:"grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6",children:[P,V,E,I,L,(0,r.jsx)(y,{icon:(0,r.jsx)(u.kd,{}),title:(0,r.jsx)(l.a,{...s.visibilityTitle}),children:(0,r.jsx)(l.a,{...s.visibilityDescription})})]})]}),ei[41]=q):q=ei[41],ei[42]===Symbol.for("react.memo_cache_sentinel")?(G=(0,r.jsx)(g,{title:(0,r.jsx)(l.a,{...s.yubikeyTitle}),children:(0,r.jsx)(l.a,{...s.yubikeyDescription})}),ei[42]=G):G=ei[42],ei[43]===Symbol.for("react.memo_cache_sentinel")?(Z=(0,r.jsx)(u.id,{}),ei[43]=Z):Z=ei[43],ei[44]===Symbol.for("react.memo_cache_sentinel")?(B=(0,r.jsx)("h2",{className:"text-base font-medium",children:(0,r.jsx)(l.a,{...s.warningTitle})}),ei[44]=B):B=ei[44],ei[45]===Symbol.for("react.memo_cache_sentinel")?(O=(0,r.jsxs)("section",{className:"flex w-full max-w-2xl flex-col gap-6 rounded-2xl bg-surface-secondary p-6",children:[Z,(0,r.jsxs)("div",{className:"flex flex-col gap-2",children:[B,(0,r.jsx)("p",{className:"text-base leading-relaxed",children:(0,r.jsx)(l.a,{...s.warningDescription})})]})]}),ei[45]=O):O=ei[45],ei[46]===Symbol.for("react.memo_cache_sentinel")?(R=(0,r.jsx)("h2",{className:"text-2xl font-normal",children:(0,r.jsx)(l.a,{...s.readyTitle})}),ei[46]=R):R=ei[46],ei[47]===Symbol.for("react.memo_cache_sentinel")?(U=(0,r.jsxs)("div",{className:"flex flex-col gap-4",children:[R,(0,r.jsxs)("p",{className:"text-base leading-relaxed",children:[(0,r.jsx)(l.a,{...s.readyDescription}),(0,r.jsx)("br",{}),(0,r.jsx)(l.a,{...s.readyUpdateNotice})]})]}),ei[47]=U):U=ei[47];let ey="pending"===ep;return ei[48]===Symbol.for("react.memo_cache_sentinel")?(Y=(0,r.jsx)(l.a,{...s.readyButton}),ei[48]=Y):Y=ei[48],ei[49]!==ef||ei[50]!==ey?(z=(0,r.jsx)(m,{isPending:ey,onEnroll:ef,children:Y}),ei[49]=ef,ei[50]=ey,ei[51]=z):z=ei[51],ei[52]!==em?(W=null!=em?(0,r.jsx)("p",{className:"text-sm text-danger",children:em}):null,ei[52]=em,ei[53]=W):W=ei[53],ei[54]!==es?(F=es?(0,r.jsx)(l.a,{...s.backToCyber}):(0,r.jsx)(l.a,{...s.backToChatgpt}),ei[54]=es,ei[55]=F):F=ei[55],ei[56]!==ed||ei[57]!==F?(Q=(0,r.jsx)("a",{className:"text-sm underline underline-offset-4",href:ed,children:F}),ei[56]=ed,ei[57]=F,ei[58]=Q):Q=ei[58],ei[59]!==z||ei[60]!==W||ei[61]!==Q?(K=(0,r.jsxs)("section",{className:"flex w-full max-w-2xl flex-col items-center gap-8 text-center",children:[U,z,W,Q]}),ei[59]=z,ei[60]=W,ei[61]=Q,ei[62]=K):K=ei[62],ei[63]!==T||ei[64]!==D||ei[65]!==K?(X=(0,r.jsxs)("main",{className:"mx-auto flex w-full max-w-5xl flex-1 flex-col items-center gap-16 px-6 py-12 md:gap-24 md:py-24",children:[T,k,D,N,q,G,O,K]}),ei[63]=T,ei[64]=D,ei[65]=K,ei[66]=X):X=ei[66],ei[67]===Symbol.for("react.memo_cache_sentinel")?(J=(0,r.jsx)("a",{className:"underline underline-offset-4",href:"https://openai.com/policies/terms-of-use",target:"_blank",rel:"noopener noreferrer",children:(0,r.jsx)(l.a,{...s.terms})}),ei[67]=J):J=ei[67],ei[68]===Symbol.for("react.memo_cache_sentinel")?($=(0,r.jsx)("span",{"aria-hidden":"true",children:(0,r.jsx)(l.a,{...s.footerSeparator})}),ei[68]=$):$=ei[68],ei[69]===Symbol.for("react.memo_cache_sentinel")?(ee=(0,r.jsxs)("footer",{className:"flex justify-center gap-4 p-6 text-sm text-secondary",children:[J,$,(0,r.jsx)("a",{className:"underline underline-offset-4",href:"https://openai.com/policies/privacy-policy",target:"_blank",rel:"noopener noreferrer",children:(0,r.jsx)(l.a,{...s.privacy})})]}),ei[69]=ee):ee=ei[69],ei[70]!==X||ei[71]!==j?(et=(0,r.jsxs)("div",{className:"flex h-full flex-col overflow-y-auto bg-surface text-default",children:[j,X,ee]}),ei[70]=X,ei[71]=j,ei[72]=et):et=ei[72],et}function m(e){let t,i,a,o,c=(0,n.c)(9),{children:u,isPending:p,onEnroll:h}=e;return c[0]!==h?(t=()=>void h(),c[0]=h,c[1]=t):t=c[1],c[2]!==u||c[3]!==p||c[4]!==t?(i=(0,r.jsx)(d.a,{className:"w-full",color:"primary",size:"auth",disabled:p,loading:p,onClick:t,children:u}),c[2]=u,c[3]=p,c[4]=t,c[5]=i):i=c[5],c[6]===Symbol.for("react.memo_cache_sentinel")?(a=(0,r.jsx)("p",{className:"text-sm text-secondary",children:(0,r.jsx)(l.a,{...s.signOutNotice})}),c[6]=a):a=c[6],c[7]!==i?(o=(0,r.jsxs)("div",{className:"flex w-full max-w-md flex-col items-center gap-6",children:[i,a]}),c[7]=i,c[8]=o):o=c[8],o}function g(e){let t,i,a,s=(0,n.c)(7),{title:o,children:c}=e;return s[0]!==o?(t=(0,r.jsx)("h2",{className:"text-2xl font-normal",children:o}),s[0]=o,s[1]=t):t=s[1],s[2]!==c?(i=(0,r.jsx)("p",{className:"text-base leading-relaxed",children:c}),s[2]=c,s[3]=i):i=s[3],s[4]!==t||s[5]!==i?(a=(0,r.jsxs)("section",{className:"flex w-full max-w-2xl flex-col gap-4",children:[t,i]}),s[4]=t,s[5]=i,s[6]=a):a=s[6],a}function y(e){let t,i,a,s,o,c=(0,n.c)(12),{icon:l,title:d,children:u}=e;return c[0]!==l?(t=(0,r.jsx)("div",{children:l}),c[0]=l,c[1]=t):t=c[1],c[2]!==d?(i=(0,r.jsx)("h3",{className:"text-base font-medium",children:d}),c[2]=d,c[3]=i):i=c[3],c[4]!==u?(a=(0,r.jsx)("p",{className:"text-base leading-relaxed",children:u}),c[4]=u,c[5]=a):a=c[5],c[6]!==i||c[7]!==a?(s=(0,r.jsxs)("div",{className:"flex flex-col gap-2",children:[i,a]}),c[6]=i,c[7]=a,c[8]=s):s=c[8],c[9]!==t||c[10]!==s?(o=(0,r.jsxs)("article",{className:"flex flex-col gap-6 rounded-2xl border border-default p-6",children:[t,s]}),c[9]=t,c[10]=s,c[11]=o):o=c[11],o}let x=()=>[{title:s.pageTitle.defaultMessage},{name:"description",content:s.pageDescription.defaultMessage}];var v=(0,a.gb)(function(){let e,t=(0,n.c)(2),i=(0,a.X)();return t[0]!==i.key?(e=(0,r.jsx)(f,{},i.key),t[0]=i.key,t[1]=e):e=t[1],e})}),PYqD:(function(e,t,i){var a=i("ABep");i("zd8w"),t.a=e=>(0,a.jsxs)("svg",{width:357,height:62,viewBox:"0 0 357 62",fill:"none",role:"img",focusable:"false",xmlns:"http://www.w3.org/2000/svg",...e,children:[(0,a.jsx)("title",{children:"ChatGPT"}),(0,a.jsx)("path",{d:"M30.8694 50.7428C19.9894 50.7428 12.4244 42.4978 12.4244 31.1078C12.4244 19.7178 19.9894 11.4728 30.6994 11.4728C38.5194 11.4728 44.5544 16.0628 46.3394 21.6728H58.4944C56.3694 9.43281 44.8944 0.507812 30.5294 0.507812C13.2744 0.507812 0.609375 14.1928 0.609375 31.1078C0.609375 48.0228 12.9344 61.7078 30.6144 61.7078C45.2344 61.7078 56.4544 52.9528 58.7494 40.5428H46.6794C44.6394 46.2378 38.6894 50.7428 30.8694 50.7428Z",fill:"currentColor"}),(0,a.jsx)("path",{d:"M88.586 17.5094C82.976 17.5094 78.556 19.9744 76.091 23.3744V1.35938H65.041V60.8594H76.091V37.9944C76.091 31.3644 79.661 27.0294 85.441 27.0294C90.711 27.0294 93.686 31.1094 93.686 36.8044V60.8594H104.736V35.0194C104.736 24.4794 98.276 17.5094 88.586 17.5094Z",fill:"currentColor"}),(0,a.jsx)("path",{d:"M150.04 33.1478C150.04 23.4578 143.41 17.5078 131.17 17.5078C121.14 17.5078 113.15 23.1178 111.79 31.2778H122.925C123.775 28.4728 126.835 26.2628 131.085 26.2628C136.61 26.2628 139.245 29.1528 139.245 34.1678V34.4228L128.45 35.3578C117.145 36.2928 110.855 40.8828 110.855 49.5528C110.855 56.8628 117.145 61.7078 125.9 61.7078C131.765 61.7078 137.46 59.4128 139.84 55.5878C139.84 57.4578 140.01 59.1578 140.35 60.8578H150.635C150.21 58.1378 150.04 54.9928 150.04 51.3378V33.1478ZM139.245 43.2628C139.245 48.2778 135.505 53.3778 127.94 53.3778C123.86 53.3778 121.65 51.4228 121.65 48.5328C121.65 45.3878 123.775 43.4328 128.535 43.0078L139.245 42.0728V43.2628Z",fill:"currentColor"}),(0,a.jsx)("path",{d:"M173.245 4.58984H162.195V18.3598H153.355V27.2848H162.195V48.1948C162.195 56.2698 166.36 60.8598 175.285 60.8598H184.125V51.6798H178.515C174.775 51.6798 173.245 50.4048 173.245 46.9198V27.2848H184.125V18.3598H173.245V4.58984Z",fill:"currentColor"}),(0,a.jsx)("path",{d:"M239.033 29.0678H219.993V38.5878H236.228C235.123 46.4928 227.728 51.2528 219.483 51.2528C207.583 51.2528 200.613 42.4978 200.613 31.1078C200.613 19.7178 208.433 11.3878 219.143 11.3878C226.453 11.3878 232.403 15.6378 233.933 20.3978H246.088C243.793 8.58281 232.913 0.507812 218.973 0.507812C201.803 0.507812 189.053 14.3628 189.053 31.1928C189.053 48.0228 200.783 61.7078 218.293 61.7078C226.283 61.7078 233.508 58.1378 236.738 53.2928V60.8578H246.598V36.6328C246.598 31.7878 243.878 29.0678 239.033 29.0678Z",fill:"currentColor"}),(0,a.jsx)("path",{d:"M281.703 1.35938H255.354V60.8594H266.573V38.5044H281.789C293.519 38.5044 301.849 31.6194 301.849 20.0594C301.849 8.49937 293.518 1.35938 281.703 1.35938ZM280.939 28.6444H266.573V11.5594H280.939C286.719 11.5594 290.458 14.8744 290.458 20.0594C290.458 25.2444 286.719 28.6444 280.939 28.6444Z",fill:"currentColor"}),(0,a.jsx)("path",{d:"M304.652 1.35938V11.5594H324.967V60.8594H336.187V11.5594H356.587V1.35938H304.652Z",fill:"currentColor"})]})})};import{__webpack_require__ as e}from"./633146.2285f1d8aa.js";import*as t from"./418851.a4e06377a0.js";e.C(t);import*as i from"./109308.c442cdd552.js";e.C(i);import*as a from"./399565.beb7308a81.js";e.C(a);import*as r from"./257798.1c607c1777.js";e.C(r);import*as n from"./153380.b37e665dc3.js";e.C(n);import*as s from"./617936.784843eda2.js";e.C(s);import*as o from"./807489.43c08228d1.js";e.C(o);import*as c from"./337882.25be89bb6b.js";e.C(c);import*as l from"./955979.4d2a69cba7.js";e.C(l);import*as d from"./646436.9dd5128297.js";e.C(d);import*as u from"./7078.b81fd6ebdf.js";e.C(u);import*as p from"./200429.b8bf5eb48b.js";e.C(p);import*as h from"./698524.3578a8549b.js";e.C(h);import*as f from"./956483.8b486f09f8.js";e.C(f);import*as m from"./87162.984eea3ac6.js";e.C(m);import*as g from"./396705.3c89161782.js";e.C(g);import*as y from"./155568.af6d2aefa8.js";e.C(y);import*as x from"./731863.0ff6d7d48b.js";e.C(x);import*as v from"./767086.75fa16b40d.js";e.C(v);import*as b from"./76629.5f0e27ddaa.js";e.C(b);import*as j from"./514085.974d142f7d.js";e.C(j);import*as C from"./204542.61a52e24da.js";e.C(C);import*as S from"./982651.82d8538ea6.js";e.C(S);import*as w from"./673108.fb5f4728ad.js";e.C(w);import*as A from"./487481.8cb886e883.js";e.C(A);import*as _ from"./229522.d004cde422.js";e.C(_);import*as T from"./390575.e91c694262.js";e.C(T);import*as k from"./226913.d4efcaca8e.js";e.C(k);import*as M from"./392067.2d010f74df.js";e.C(M);var D=e(e.s="P0UP"),N=D.a,H=D.b;export{N as default,H as meta};
+export const __rspack_esm_ids = [392067];
+export const __webpack_modules__ = {
+    P0UP: (function(e, t, i) {
+        i.d(t, {
+            a: () => v,
+            b: () => x
+        });
+        var a = i("jqIZ"),
+            r = i("ABep"),
+            n = i("QosV");
+        let s = (0, i("Qgfj").f)({
+            pageTitle: {
+                id: "advancedAccountSecurity.pageTitle",
+                defaultMessage: "Advanced Account Security - OpenAI",
+                description: "Browser title for the Advanced Account Security page"
+            },
+            pageDescription: {
+                id: "advancedAccountSecurity.pageDescription.v2",
+                defaultMessage: "Extra protection for people at increased risk of phishing, account takeover, and other targeted online attacks.",
+                description: "Meta description for the refreshed Advanced Account Security landing page"
+            },
+            title: {
+                id: "advancedAccountSecurity.title.v2",
+                defaultMessage: "Advanced Account Security",
+                description: "Title for the Advanced Account Security landing page"
+            },
+            subtitle: {
+                id: "advancedAccountSecurity.subtitle.v2",
+                defaultMessage: "Advanced Account Security uses stronger sign-in protections and additional safeguards to help prevent unauthorized access to your account.",
+                description: "Introductory copy for the Advanced Account Security page"
+            },
+            topCta: {
+                id: "advancedAccountSecurity.topCta.v2",
+                defaultMessage: "Enroll",
+                description: "Top primary CTA on the Advanced Account Security page"
+            },
+            signOutNotice: {
+                id: "advancedAccountSecurity.signOutNotice.v2",
+                defaultMessage: "Enrolling signs you out everywhere and disconnects your paired Codex devices. You’ll need to sign in and pair them again.",
+                description: "Short helper text shown below both enrollment buttons on the Advanced Account Security landing page. It warns people considering enrollment that enabling the feature signs them out everywhere, disconnects their paired Codex devices, and requires them to sign in and pair those devices again."
+            },
+            whyChooseTitle: {
+                id: "advancedAccountSecurity.whyChooseTitle.v3",
+                defaultMessage: "Protect your account from takeovers",
+                description: "Section H2 above the hero image; headline means protect your account from account takeover (ATO) attacks."
+            },
+            whyChooseDescription: {
+                id: "advancedAccountSecurity.whyChooseDescription.v3",
+                defaultMessage: "Advanced Account Security adds stronger defenses to stop attackers from signing in—even if someone has your password.",
+                description: "Description for the why choose section"
+            },
+            heroAlt: {
+                id: "advancedAccountSecurity.heroAlt.v3",
+                defaultMessage: "Illustrated desktop ChatGPT security settings showing trusted devices and security keys and passkeys.",
+                description: "Alt text for the Advanced Account Security hero image"
+            },
+            whoTitle: {
+                id: "advancedAccountSecurity.whoTitle.v2",
+                defaultMessage: "Who this is for",
+                description: "Heading for the audience description section"
+            },
+            whoDescription: {
+                id: "advancedAccountSecurity.whoDescription.v3",
+                defaultMessage: "For anyone who wants elevated protection against account takeover—including targeted attacks like phishing and stolen passwords. Stronger sign-in and recovery checks help reduce takeover risk, with extra verification when it matters.",
+                description: "Audience blurb; account takeover means ATO attacks such as phishing and stolen passwords. Extra verification when it matters means during high-risk events such as new devices, unusual activity, or sensitive changes."
+            },
+            featuresTitle: {
+                id: "advancedAccountSecurity.featuresTitle.v2",
+                defaultMessage: "Additional account protections when you enroll",
+                description: "Heading above the feature cards section"
+            },
+            strongerSignInTitle: {
+                id: "advancedAccountSecurity.strongerSignInTitle.v2",
+                defaultMessage: "Stronger sign-in methods",
+                description: "Title for the stronger sign-in methods card"
+            },
+            strongerSignInDescription: {
+                id: "advancedAccountSecurity.strongerSignInDescription.v3",
+                defaultMessage: "Security keys and passkeys make phishing-resistant sign-in the default, preventing attackers from signing in even with a stolen password.",
+                description: "Description for the stronger sign-in methods card"
+            },
+            recoveryTitle: {
+                id: "advancedAccountSecurity.recoveryTitle.v2",
+                defaultMessage: "Stricter account recovery",
+                description: "Title for the stricter account recovery card"
+            },
+            recoveryDescription: {
+                id: "advancedAccountSecurity.recoveryDescription.v2",
+                defaultMessage: "Recovery options are more secure to help prevent attackers from taking over your account.",
+                description: "Description for the stricter account recovery card"
+            },
+            trainingTitle: {
+                id: "advancedAccountSecurity.trainingTitle.v3",
+                defaultMessage: "Protect sensitive conversations",
+                description: "Title for the sensitive conversations protection card"
+            },
+            trainingDescription: {
+                id: "advancedAccountSecurity.trainingDescription.v4",
+                defaultMessage: "Conversations aren’t used to train OpenAI models while Advanced Account Security is enabled.",
+                description: "Card description; train refers to machine learning model training. User conversations are excluded from ML training while Advanced Account Security is enabled."
+            },
+            shorterSessionsTitle: {
+                id: "advancedAccountSecurity.shorterSessionsTitle.v2",
+                defaultMessage: "Shorter sign-in sessions",
+                description: "Title for feature that shortens session duration and requires more frequent reauthentication."
+            },
+            shorterSessionsDescription: {
+                id: "advancedAccountSecurity.shorterSessionsDescription.v2",
+                defaultMessage: "Requires signing in again periodically to reduce the time an attacker can use stolen credentials.",
+                description: "Card description; sessions expire after a shorter fixed duration, requiring time-based reauthentication."
+            },
+            loginProtectionsTitle: {
+                id: "advancedAccountSecurity.loginProtectionsTitle.v3",
+                defaultMessage: "Login alerts",
+                description: "Title for the login alerts card"
+            },
+            loginProtectionsDescription: {
+                id: "advancedAccountSecurity.loginProtectionsDescription.v3",
+                defaultMessage: "Get notified when your account is signed in on a new device so you can quickly review and take action.",
+                description: "Description for the login alerts card"
+            },
+            visibilityTitle: {
+                id: "advancedAccountSecurity.visibilityTitle.v3",
+                defaultMessage: "More visibility",
+                description: "Title for the account activity visibility card; user can see where they are signed in and manage active sessions."
+            },
+            visibilityDescription: {
+                id: "advancedAccountSecurity.visibilityDescription.v2",
+                defaultMessage: "See where your account is signed in and review or sign out of active sessions.",
+                description: "Description for the visibility and control card"
+            },
+            yubikeyTitle: {
+                id: "advancedAccountSecurity.yubikeyTitle.v3",
+                defaultMessage: "Use security keys for our strongest phishing-resistant protection",
+                description: "Heading for the security key callout"
+            },
+            yubikeyDescription: {
+                id: "advancedAccountSecurity.yubikeyDescription.v2",
+                defaultMessage: "A physical security key adds an extra layer of defense and helps protect your account even if your password is exposed. You can use any compatible FIDO® security key. During setup, you’ll also have the option to purchase a set of two best in class security keys at preferred pricing through our partnership with Yubico.",
+                description: "Description for the security key callout"
+            },
+            readyTitle: {
+                id: "advancedAccountSecurity.readyTitle.v2",
+                defaultMessage: "Ready to enroll?",
+                description: "Heading for the final CTA section"
+            },
+            readyDescription: {
+                id: "advancedAccountSecurity.readyDescription.v2",
+                defaultMessage: "Set up stronger protection for your ChatGPT account in a few steps.",
+                description: "Description for the final CTA section"
+            },
+            readyUpdateNotice: {
+                id: "advancedAccountSecurity.readyUpdateNotice",
+                defaultMessage: "To ensure you get the latest security features, update ChatGPT on your devices before you enroll.",
+                description: "Second line in the final CTA section telling users to update ChatGPT before enrollment."
+            },
+            readyButton: {
+                id: "advancedAccountSecurity.readyButton.v2",
+                defaultMessage: "Enroll in Advanced Account Security",
+                description: "Primary CTA in the final section; starts enrollment in the Advanced Account Security feature."
+            },
+            backToChatgpt: {
+                id: "advancedAccountSecurity.backToChatgpt",
+                defaultMessage: "Back to ChatGPT",
+                description: "Link label to return to ChatGPT settings from the Advanced Account Security landing page"
+            },
+            backToCyber: {
+                id: "advancedAccountSecurity.backToDaybreak",
+                defaultMessage: "Back to Daybreak",
+                description: "Link label and accessible label on the Advanced Account Security landing page when the Daybreak application sent the user here. Returns to the cybersecurity eligibility page without starting enrollment. Daybreak is the program's brand name and stays untranslated. Short navigation label."
+            },
+            topLeftChatgptHome: {
+                id: "advancedAccountSecurity.topLeftChatgptHome",
+                defaultMessage: "ChatGPT home",
+                description: "Accessible label for the top-left ChatGPT wordmark link on the Advanced Account Security landing page"
+            },
+            warningTitle: {
+                id: "advancedAccountSecurity.warningTitle.v2",
+                defaultMessage: "Important tradeoffs",
+                description: "Title for the bottom warning callout"
+            },
+            warningDescription: {
+                id: "advancedAccountSecurity.warningDescription.v4",
+                defaultMessage: "Turning on Advanced Account Security signs you out everywhere and disconnects your paired Codex devices. You’ll need to pair those devices again. Recovery options are more limited, which can make account recovery harder.",
+                description: "Multi-sentence body text in the warning callout near the bottom of the Advanced Account Security enrollment landing page. It tells people considering enrollment that enabling the feature signs them out everywhere, temporarily requires them to pair connected Codex devices again, and limits account recovery options."
+            },
+            terms: {
+                id: "advancedAccountSecurity.terms",
+                defaultMessage: "Terms of use",
+                description: "Terms of use footer link label"
+            },
+            privacy: {
+                id: "advancedAccountSecurity.privacy",
+                defaultMessage: "Privacy policy",
+                description: "Privacy policy footer link label"
+            },
+            footerSeparator: {
+                id: "advancedAccountSecurity.footerSeparator.v2",
+                defaultMessage: "·",
+                description: "Separator between footer links"
+            }
+        });
+        var o = i("zd8w"),
+            c = i("Wf1j"),
+            l = i("oyxz"),
+            d = i("ygO2"),
+            u = i("bf6R"),
+            p = i("PYqD");
+        let h = new Set(["web_homepage_beacon", "ios_app_homepage_beacon", "android_app_homepage_beacon", "web_cyber_home"]);
+
+        function f() {
+            let e, t, d, f, x, v, b, j, C, S, w, A, _, T, k, M, D, N, H, P, V, E, I, L, q, G, Z, B, O, R, U, Y, z, W, F, Q, K, X, J, $, ee, et, ei = (0, n.c)(73),
+                ea = (0, c.a)(),
+                [er] = (0, a.fb)();
+            ei[0] !== er ? (e = er.get("originator"), ei[0] = er, ei[1] = e) : e = ei[1];
+            let en = e,
+                es = "web_cyber_home" === en,
+                eo = (0, a.V)("/"),
+                ec = (0, a.V)("/settings/security"),
+                el = (0, a.V)("/cyber"),
+                ed = es ? el : eo,
+                eu = (0, o.useRef)(null),
+                [ep, eh] = (0, o.useState)("idle");
+            ei[2] === Symbol.for("react.memo_cache_sentinel") ? (t = () => {
+                let e = function() {
+                        eu.current?.abort(), eu.current = null
+                    },
+                    t = function(e) {
+                        e.persisted && eh("idle")
+                    };
+                return window.addEventListener("pagehide", e), window.addEventListener("pageshow", t), () => {
+                    e(), window.removeEventListener("pagehide", e), window.removeEventListener("pageshow", t)
+                }
+            }, d = [], ei[2] = t, ei[3] = d) : (t = ei[2], d = ei[3]), (0, o.useEffect)(t, d), ei[4] !== el || ei[5] !== es || ei[6] !== en || ei[7] !== ec ? (f = async function() {
+                if (null != eu.current) return;
+                let e = new AbortController;
+                eu.current = e, eh("pending");
+                try {
+                    let t = await async function(e, t, a) {
+                        let [{
+                            getClientBootstrap: r
+                        }, {
+                            signInToBrowserSession: n
+                        }] = await Promise.all([Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(153380), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(514085), i.e(204542), i.e(982651), i.e(673108), i.e(487481), i.e(229522), i.e(390575)]).then(i.bind(i, "M8lA")), Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(153380), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(514085), i.e(204542), i.e(982651), i.e(673108), i.e(487481), i.e(229522), i.e(390575), i.e(226913)]).then(i.bind(i, "jEww"))]);
+                        if (a.aborted) return {
+                            ok: !1
+                        };
+                        let s = {
+                            ...r().auth.reauthenticationParams,
+                            post_login_setup_advanced_account_security: "true"
+                        };
+                        return n(e, null != t && h.has(t) ? {
+                            ...s,
+                            originator: t
+                        } : s, a)
+                    }(new URL(es ? el : ec, window.location.origin).toString(), en, e.signal);
+                    if (e.signal.aborted) return;
+                    if (t.ok) return void window.location.assign(t.url)
+                } catch {}
+                e.signal.aborted || (eu.current = null, eh("error"))
+            }, ei[4] = el, ei[5] = es, ei[6] = en, ei[7] = ec, ei[8] = f) : f = ei[8];
+            let ef = f;
+            ei[9] !== ep ? (x = "error" === ep ? (0, r.jsx)(l.a, {
+                id: "advancedAccountSecurity.enrollmentError",
+                defaultMessage: "We couldn’t start enrollment. Please try again.",
+                description: "Error on the Advanced Account Security landing page when the sign-in request fails. The Enroll buttons can be used to retry."
+            }) : null, ei[9] = ep, ei[10] = x) : x = ei[10];
+            let em = x;
+            ei[11] !== ea || ei[12] !== es ? (v = ea.formatMessage(es ? s.backToCyber : s.topLeftChatgptHome), ei[11] = ea, ei[12] = es, ei[13] = v) : v = ei[13], ei[14] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, r.jsx)(p.a, {
+                className: "h-5 w-auto",
+                "aria-hidden": "true"
+            }), ei[14] = b) : b = ei[14], ei[15] !== ed || ei[16] !== v ? (j = (0, r.jsx)("header", {
+                className: "flex p-4",
+                children: (0, r.jsx)("a", {
+                    className: "flex min-h-11 items-center p-2",
+                    href: ed,
+                    "aria-label": v,
+                    children: b
+                })
+            }), ei[15] = ed, ei[16] = v, ei[17] = j) : j = ei[17], ei[18] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, r.jsx)("h1", {
+                className: "text-4xl font-normal",
+                children: (0, r.jsx)(l.a, {
+                    ...s.title
+                })
+            }), ei[18] = C) : C = ei[18], ei[19] === Symbol.for("react.memo_cache_sentinel") ? (S = (0, r.jsxs)("div", {
+                className: "flex flex-col gap-4",
+                children: [C, (0, r.jsx)("p", {
+                    className: "text-base leading-relaxed",
+                    children: (0, r.jsx)(l.a, {
+                        ...s.subtitle
+                    })
+                })]
+            }), ei[19] = S) : S = ei[19];
+            let eg = "pending" === ep;
+            ei[20] === Symbol.for("react.memo_cache_sentinel") ? (w = (0, r.jsx)(l.a, {
+                ...s.topCta
+            }), ei[20] = w) : w = ei[20], ei[21] !== ef || ei[22] !== eg ? (A = (0, r.jsx)(m, {
+                isPending: eg,
+                onEnroll: ef,
+                children: w
+            }), ei[21] = ef, ei[22] = eg, ei[23] = A) : A = ei[23], ei[24] !== em ? (_ = null != em ? (0, r.jsx)("p", {
+                role: "alert",
+                className: "text-sm text-danger",
+                children: em
+            }) : null, ei[24] = em, ei[25] = _) : _ = ei[25], ei[26] !== A || ei[27] !== _ ? (T = (0, r.jsxs)("section", {
+                className: "flex w-full max-w-2xl flex-col items-center gap-10 text-center",
+                children: [S, A, _]
+            }), ei[26] = A, ei[27] = _, ei[28] = T) : T = ei[28], ei[29] === Symbol.for("react.memo_cache_sentinel") ? (k = (0, r.jsx)(g, {
+                title: (0, r.jsx)(l.a, {
+                    ...s.whyChooseTitle
+                }),
+                children: (0, r.jsx)(l.a, {
+                    ...s.whyChooseDescription
+                })
+            }), ei[29] = k) : k = ei[29], ei[30] !== ea ? (M = ea.formatMessage(s.heroAlt), ei[30] = ea, ei[31] = M) : M = ei[31], ei[32] !== M ? (D = (0, r.jsx)("img", {
+                className: "aspect-video w-full rounded-xl border border-default",
+                src: "https://cdn.openai.com/chatgpt/advanced-account-security-hero.png",
+                alt: M
+            }), ei[32] = M, ei[33] = D) : D = ei[33], ei[34] === Symbol.for("react.memo_cache_sentinel") ? (N = (0, r.jsx)(g, {
+                title: (0, r.jsx)(l.a, {
+                    ...s.whoTitle
+                }),
+                children: (0, r.jsx)(l.a, {
+                    ...s.whoDescription
+                })
+            }), ei[34] = N) : N = ei[34], ei[35] === Symbol.for("react.memo_cache_sentinel") ? (H = (0, r.jsx)("h2", {
+                className: "text-2xl font-normal",
+                children: (0, r.jsx)(l.a, {
+                    ...s.featuresTitle
+                })
+            }), ei[35] = H) : H = ei[35], ei[36] === Symbol.for("react.memo_cache_sentinel") ? (P = (0, r.jsx)(y, {
+                icon: (0, r.jsx)(u.ne, {}),
+                title: (0, r.jsx)(l.a, {
+                    ...s.strongerSignInTitle
+                }),
+                children: (0, r.jsx)(l.a, {
+                    ...s.strongerSignInDescription
+                })
+            }), ei[36] = P) : P = ei[36], ei[37] === Symbol.for("react.memo_cache_sentinel") ? (V = (0, r.jsx)(y, {
+                icon: (0, r.jsx)(u.Ke, {}),
+                title: (0, r.jsx)(l.a, {
+                    ...s.recoveryTitle
+                }),
+                children: (0, r.jsx)(l.a, {
+                    ...s.recoveryDescription
+                })
+            }), ei[37] = V) : V = ei[37], ei[38] === Symbol.for("react.memo_cache_sentinel") ? (E = (0, r.jsx)(y, {
+                icon: (0, r.jsx)(u.ch, {}),
+                title: (0, r.jsx)(l.a, {
+                    ...s.trainingTitle
+                }),
+                children: (0, r.jsx)(l.a, {
+                    ...s.trainingDescription
+                })
+            }), ei[38] = E) : E = ei[38], ei[39] === Symbol.for("react.memo_cache_sentinel") ? (I = (0, r.jsx)(y, {
+                icon: (0, r.jsx)(u.rc, {}),
+                title: (0, r.jsx)(l.a, {
+                    ...s.shorterSessionsTitle
+                }),
+                children: (0, r.jsx)(l.a, {
+                    ...s.shorterSessionsDescription
+                })
+            }), ei[39] = I) : I = ei[39], ei[40] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, r.jsx)(y, {
+                icon: (0, r.jsx)(u.fb, {}),
+                title: (0, r.jsx)(l.a, {
+                    ...s.loginProtectionsTitle
+                }),
+                children: (0, r.jsx)(l.a, {
+                    ...s.loginProtectionsDescription
+                })
+            }), ei[40] = L) : L = ei[40], ei[41] === Symbol.for("react.memo_cache_sentinel") ? (q = (0, r.jsxs)("section", {
+                className: "flex w-full max-w-2xl flex-col gap-6",
+                children: [H, (0, r.jsxs)("div", {
+                    className: "grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6",
+                    children: [P, V, E, I, L, (0, r.jsx)(y, {
+                        icon: (0, r.jsx)(u.kd, {}),
+                        title: (0, r.jsx)(l.a, {
+                            ...s.visibilityTitle
+                        }),
+                        children: (0, r.jsx)(l.a, {
+                            ...s.visibilityDescription
+                        })
+                    })]
+                })]
+            }), ei[41] = q) : q = ei[41], ei[42] === Symbol.for("react.memo_cache_sentinel") ? (G = (0, r.jsx)(g, {
+                title: (0, r.jsx)(l.a, {
+                    ...s.yubikeyTitle
+                }),
+                children: (0, r.jsx)(l.a, {
+                    ...s.yubikeyDescription
+                })
+            }), ei[42] = G) : G = ei[42], ei[43] === Symbol.for("react.memo_cache_sentinel") ? (Z = (0, r.jsx)(u.id, {}), ei[43] = Z) : Z = ei[43], ei[44] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, r.jsx)("h2", {
+                className: "text-base font-medium",
+                children: (0, r.jsx)(l.a, {
+                    ...s.warningTitle
+                })
+            }), ei[44] = B) : B = ei[44], ei[45] === Symbol.for("react.memo_cache_sentinel") ? (O = (0, r.jsxs)("section", {
+                className: "flex w-full max-w-2xl flex-col gap-6 rounded-2xl bg-surface-secondary p-6",
+                children: [Z, (0, r.jsxs)("div", {
+                    className: "flex flex-col gap-2",
+                    children: [B, (0, r.jsx)("p", {
+                        className: "text-base leading-relaxed",
+                        children: (0, r.jsx)(l.a, {
+                            ...s.warningDescription
+                        })
+                    })]
+                })]
+            }), ei[45] = O) : O = ei[45], ei[46] === Symbol.for("react.memo_cache_sentinel") ? (R = (0, r.jsx)("h2", {
+                className: "text-2xl font-normal",
+                children: (0, r.jsx)(l.a, {
+                    ...s.readyTitle
+                })
+            }), ei[46] = R) : R = ei[46], ei[47] === Symbol.for("react.memo_cache_sentinel") ? (U = (0, r.jsxs)("div", {
+                className: "flex flex-col gap-4",
+                children: [R, (0, r.jsxs)("p", {
+                    className: "text-base leading-relaxed",
+                    children: [(0, r.jsx)(l.a, {
+                        ...s.readyDescription
+                    }), (0, r.jsx)("br", {}), (0, r.jsx)(l.a, {
+                        ...s.readyUpdateNotice
+                    })]
+                })]
+            }), ei[47] = U) : U = ei[47];
+            let ey = "pending" === ep;
+            return ei[48] === Symbol.for("react.memo_cache_sentinel") ? (Y = (0, r.jsx)(l.a, {
+                ...s.readyButton
+            }), ei[48] = Y) : Y = ei[48], ei[49] !== ef || ei[50] !== ey ? (z = (0, r.jsx)(m, {
+                isPending: ey,
+                onEnroll: ef,
+                children: Y
+            }), ei[49] = ef, ei[50] = ey, ei[51] = z) : z = ei[51], ei[52] !== em ? (W = null != em ? (0, r.jsx)("p", {
+                className: "text-sm text-danger",
+                children: em
+            }) : null, ei[52] = em, ei[53] = W) : W = ei[53], ei[54] !== es ? (F = es ? (0, r.jsx)(l.a, {
+                ...s.backToCyber
+            }) : (0, r.jsx)(l.a, {
+                ...s.backToChatgpt
+            }), ei[54] = es, ei[55] = F) : F = ei[55], ei[56] !== ed || ei[57] !== F ? (Q = (0, r.jsx)("a", {
+                className: "text-sm underline underline-offset-4",
+                href: ed,
+                children: F
+            }), ei[56] = ed, ei[57] = F, ei[58] = Q) : Q = ei[58], ei[59] !== z || ei[60] !== W || ei[61] !== Q ? (K = (0, r.jsxs)("section", {
+                className: "flex w-full max-w-2xl flex-col items-center gap-8 text-center",
+                children: [U, z, W, Q]
+            }), ei[59] = z, ei[60] = W, ei[61] = Q, ei[62] = K) : K = ei[62], ei[63] !== T || ei[64] !== D || ei[65] !== K ? (X = (0, r.jsxs)("main", {
+                className: "mx-auto flex w-full max-w-5xl flex-1 flex-col items-center gap-16 px-6 py-12 md:gap-24 md:py-24",
+                children: [T, k, D, N, q, G, O, K]
+            }), ei[63] = T, ei[64] = D, ei[65] = K, ei[66] = X) : X = ei[66], ei[67] === Symbol.for("react.memo_cache_sentinel") ? (J = (0, r.jsx)("a", {
+                className: "underline underline-offset-4",
+                href: "https://openai.com/policies/terms-of-use",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                children: (0, r.jsx)(l.a, {
+                    ...s.terms
+                })
+            }), ei[67] = J) : J = ei[67], ei[68] === Symbol.for("react.memo_cache_sentinel") ? ($ = (0, r.jsx)("span", {
+                "aria-hidden": "true",
+                children: (0, r.jsx)(l.a, {
+                    ...s.footerSeparator
+                })
+            }), ei[68] = $) : $ = ei[68], ei[69] === Symbol.for("react.memo_cache_sentinel") ? (ee = (0, r.jsxs)("footer", {
+                className: "flex justify-center gap-4 p-6 text-sm text-secondary",
+                children: [J, $, (0, r.jsx)("a", {
+                    className: "underline underline-offset-4",
+                    href: "https://openai.com/policies/privacy-policy",
+                    target: "_blank",
+                    rel: "noopener noreferrer",
+                    children: (0, r.jsx)(l.a, {
+                        ...s.privacy
+                    })
+                })]
+            }), ei[69] = ee) : ee = ei[69], ei[70] !== X || ei[71] !== j ? (et = (0, r.jsxs)("div", {
+                className: "flex h-full flex-col overflow-y-auto bg-surface text-default",
+                children: [j, X, ee]
+            }), ei[70] = X, ei[71] = j, ei[72] = et) : et = ei[72], et
+        }
+
+        function m(e) {
+            let t, i, a, o, c = (0, n.c)(9),
+                {
+                    children: u,
+                    isPending: p,
+                    onEnroll: h
+                } = e;
+            return c[0] !== h ? (t = () => void h(), c[0] = h, c[1] = t) : t = c[1], c[2] !== u || c[3] !== p || c[4] !== t ? (i = (0, r.jsx)(d.a, {
+                className: "w-full",
+                color: "primary",
+                size: "auth",
+                disabled: p,
+                loading: p,
+                onClick: t,
+                children: u
+            }), c[2] = u, c[3] = p, c[4] = t, c[5] = i) : i = c[5], c[6] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)("p", {
+                className: "text-sm text-secondary",
+                children: (0, r.jsx)(l.a, {
+                    ...s.signOutNotice
+                })
+            }), c[6] = a) : a = c[6], c[7] !== i ? (o = (0, r.jsxs)("div", {
+                className: "flex w-full max-w-md flex-col items-center gap-6",
+                children: [i, a]
+            }), c[7] = i, c[8] = o) : o = c[8], o
+        }
+
+        function g(e) {
+            let t, i, a, s = (0, n.c)(7),
+                {
+                    title: o,
+                    children: c
+                } = e;
+            return s[0] !== o ? (t = (0, r.jsx)("h2", {
+                className: "text-2xl font-normal",
+                children: o
+            }), s[0] = o, s[1] = t) : t = s[1], s[2] !== c ? (i = (0, r.jsx)("p", {
+                className: "text-base leading-relaxed",
+                children: c
+            }), s[2] = c, s[3] = i) : i = s[3], s[4] !== t || s[5] !== i ? (a = (0, r.jsxs)("section", {
+                className: "flex w-full max-w-2xl flex-col gap-4",
+                children: [t, i]
+            }), s[4] = t, s[5] = i, s[6] = a) : a = s[6], a
+        }
+
+        function y(e) {
+            let t, i, a, s, o, c = (0, n.c)(12),
+                {
+                    icon: l,
+                    title: d,
+                    children: u
+                } = e;
+            return c[0] !== l ? (t = (0, r.jsx)("div", {
+                children: l
+            }), c[0] = l, c[1] = t) : t = c[1], c[2] !== d ? (i = (0, r.jsx)("h3", {
+                className: "text-base font-medium",
+                children: d
+            }), c[2] = d, c[3] = i) : i = c[3], c[4] !== u ? (a = (0, r.jsx)("p", {
+                className: "text-base leading-relaxed",
+                children: u
+            }), c[4] = u, c[5] = a) : a = c[5], c[6] !== i || c[7] !== a ? (s = (0, r.jsxs)("div", {
+                className: "flex flex-col gap-2",
+                children: [i, a]
+            }), c[6] = i, c[7] = a, c[8] = s) : s = c[8], c[9] !== t || c[10] !== s ? (o = (0, r.jsxs)("article", {
+                className: "flex flex-col gap-6 rounded-2xl border border-default p-6",
+                children: [t, s]
+            }), c[9] = t, c[10] = s, c[11] = o) : o = c[11], o
+        }
+        let x = () => [{
+            title: s.pageTitle.defaultMessage
+        }, {
+            name: "description",
+            content: s.pageDescription.defaultMessage
+        }];
+        var v = (0, a.gb)(function() {
+            let e, t = (0, n.c)(2),
+                i = (0, a.X)();
+            return t[0] !== i.key ? (e = (0, r.jsx)(f, {}, i.key), t[0] = i.key, t[1] = e) : e = t[1], e
+        })
+    }),
+    PYqD: (function(e, t, i) {
+        var a = i("ABep");
+        i("zd8w"), t.a = e => (0, a.jsxs)("svg", {
+            width: 357,
+            height: 62,
+            viewBox: "0 0 357 62",
+            fill: "none",
+            role: "img",
+            focusable: "false",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...e,
+            children: [(0, a.jsx)("title", {
+                children: "ChatGPT"
+            }), (0, a.jsx)("path", {
+                d: "M30.8694 50.7428C19.9894 50.7428 12.4244 42.4978 12.4244 31.1078C12.4244 19.7178 19.9894 11.4728 30.6994 11.4728C38.5194 11.4728 44.5544 16.0628 46.3394 21.6728H58.4944C56.3694 9.43281 44.8944 0.507812 30.5294 0.507812C13.2744 0.507812 0.609375 14.1928 0.609375 31.1078C0.609375 48.0228 12.9344 61.7078 30.6144 61.7078C45.2344 61.7078 56.4544 52.9528 58.7494 40.5428H46.6794C44.6394 46.2378 38.6894 50.7428 30.8694 50.7428Z",
+                fill: "currentColor"
+            }), (0, a.jsx)("path", {
+                d: "M88.586 17.5094C82.976 17.5094 78.556 19.9744 76.091 23.3744V1.35938H65.041V60.8594H76.091V37.9944C76.091 31.3644 79.661 27.0294 85.441 27.0294C90.711 27.0294 93.686 31.1094 93.686 36.8044V60.8594H104.736V35.0194C104.736 24.4794 98.276 17.5094 88.586 17.5094Z",
+                fill: "currentColor"
+            }), (0, a.jsx)("path", {
+                d: "M150.04 33.1478C150.04 23.4578 143.41 17.5078 131.17 17.5078C121.14 17.5078 113.15 23.1178 111.79 31.2778H122.925C123.775 28.4728 126.835 26.2628 131.085 26.2628C136.61 26.2628 139.245 29.1528 139.245 34.1678V34.4228L128.45 35.3578C117.145 36.2928 110.855 40.8828 110.855 49.5528C110.855 56.8628 117.145 61.7078 125.9 61.7078C131.765 61.7078 137.46 59.4128 139.84 55.5878C139.84 57.4578 140.01 59.1578 140.35 60.8578H150.635C150.21 58.1378 150.04 54.9928 150.04 51.3378V33.1478ZM139.245 43.2628C139.245 48.2778 135.505 53.3778 127.94 53.3778C123.86 53.3778 121.65 51.4228 121.65 48.5328C121.65 45.3878 123.775 43.4328 128.535 43.0078L139.245 42.0728V43.2628Z",
+                fill: "currentColor"
+            }), (0, a.jsx)("path", {
+                d: "M173.245 4.58984H162.195V18.3598H153.355V27.2848H162.195V48.1948C162.195 56.2698 166.36 60.8598 175.285 60.8598H184.125V51.6798H178.515C174.775 51.6798 173.245 50.4048 173.245 46.9198V27.2848H184.125V18.3598H173.245V4.58984Z",
+                fill: "currentColor"
+            }), (0, a.jsx)("path", {
+                d: "M239.033 29.0678H219.993V38.5878H236.228C235.123 46.4928 227.728 51.2528 219.483 51.2528C207.583 51.2528 200.613 42.4978 200.613 31.1078C200.613 19.7178 208.433 11.3878 219.143 11.3878C226.453 11.3878 232.403 15.6378 233.933 20.3978H246.088C243.793 8.58281 232.913 0.507812 218.973 0.507812C201.803 0.507812 189.053 14.3628 189.053 31.1928C189.053 48.0228 200.783 61.7078 218.293 61.7078C226.283 61.7078 233.508 58.1378 236.738 53.2928V60.8578H246.598V36.6328C246.598 31.7878 243.878 29.0678 239.033 29.0678Z",
+                fill: "currentColor"
+            }), (0, a.jsx)("path", {
+                d: "M281.703 1.35938H255.354V60.8594H266.573V38.5044H281.789C293.519 38.5044 301.849 31.6194 301.849 20.0594C301.849 8.49937 293.518 1.35938 281.703 1.35938ZM280.939 28.6444H266.573V11.5594H280.939C286.719 11.5594 290.458 14.8744 290.458 20.0594C290.458 25.2444 286.719 28.6444 280.939 28.6444Z",
+                fill: "currentColor"
+            }), (0, a.jsx)("path", {
+                d: "M304.652 1.35938V11.5594H324.967V60.8594H336.187V11.5594H356.587V1.35938H304.652Z",
+                fill: "currentColor"
+            })]
+        })
+    })
+};
+import {
+    __webpack_require__ as e
+} from "./633146.2285f1d8aa.js";
+import * as t from "./418851.a4e06377a0.js";
+e.C(t);
+import * as i from "./109308.c442cdd552.js";
+e.C(i);
+import * as a from "./399565.beb7308a81.js";
+e.C(a);
+import * as r from "./257798.1c607c1777.js";
+e.C(r);
+import * as n from "./153380.b37e665dc3.js";
+e.C(n);
+import * as s from "./617936.784843eda2.js";
+e.C(s);
+import * as o from "./807489.43c08228d1.js";
+e.C(o);
+import * as c from "./337882.25be89bb6b.js";
+e.C(c);
+import * as l from "./955979.4d2a69cba7.js";
+e.C(l);
+import * as d from "./646436.9dd5128297.js";
+e.C(d);
+import * as u from "./7078.b81fd6ebdf.js";
+e.C(u);
+import * as p from "./200429.b8bf5eb48b.js";
+e.C(p);
+import * as h from "./698524.3578a8549b.js";
+e.C(h);
+import * as f from "./956483.8b486f09f8.js";
+e.C(f);
+import * as m from "./87162.984eea3ac6.js";
+e.C(m);
+import * as g from "./396705.3c89161782.js";
+e.C(g);
+import * as y from "./155568.af6d2aefa8.js";
+e.C(y);
+import * as x from "./731863.0ff6d7d48b.js";
+e.C(x);
+import * as v from "./767086.75fa16b40d.js";
+e.C(v);
+import * as b from "./76629.5f0e27ddaa.js";
+e.C(b);
+import * as j from "./514085.974d142f7d.js";
+e.C(j);
+import * as C from "./204542.61a52e24da.js";
+e.C(C);
+import * as S from "./982651.82d8538ea6.js";
+e.C(S);
+import * as w from "./673108.fb5f4728ad.js";
+e.C(w);
+import * as A from "./487481.8cb886e883.js";
+e.C(A);
+import * as _ from "./229522.d004cde422.js";
+e.C(_);
+import * as T from "./390575.e91c694262.js";
+e.C(T);
+import * as k from "./226913.d4efcaca8e.js";
+e.C(k);
+import * as M from "./392067.2d010f74df.js";
+e.C(M);
+var D = e(e.s = "P0UP"),
+    N = D.a,
+    H = D.b;
+export {
+    N as
+    default, H as meta
+};

@@ -1,2 +1,1124 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,A8 as r,CR as i,Crt as a,ER as o,I7 as s,IU as c,Ij as l,K5 as u,LU as d,M7 as f,Np as p,Nw as m,Oct as h,Pw as g,Qp as ee,Qst as _,Qy as v,Rz as y,Tp as b,U1 as x,Up as S,ZG as C,Zy as w,_rt as T,am as E,ax as D,brt as O,c6 as k,d6 as te,eE as ne,eK as re,ect as ie,i0 as ae,ix as A,lm as oe,nm as j,o0 as se,q1 as M,q5 as N,u0 as P,wct as ce,zU as le,zz as F}from"./4813494d-mdvd4786a87166cc.js";import{At as ue,Bn as I,Ht as L,Ln as R,N as z,Nn as B,Q as V,Rn as H,Vn as U,p as W,s as G,wn as K,zn as de}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$1 as q,Bst as fe,Ntn as pe,OSn as me,Q1 as he,Vst as ge,XWn as _e,ZWn as ve,a_n as ye,awn as be,jSn as xe,jtn as Se,o_n as Ce,rwn as we,swn as Te}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Bm as Ee,Vm as De,vh as Oe,yh as ke}from"./30901919-s8bko9nrkqwv6i4f.js";import{$o as Ae,Go as je,Jo as Me,Ko as Ne,Wo as Pe,Xo as Fe,Yo as Ie,Zo as Le,fl as Re,is as ze,ns as Be,pl as Ve,qo as He,ss as Ue,ts as We}from"./c2675c8c-oz03twoan08d72ud.js";import{S as Ge,x as Ke}from"./82782bc9-b4xbouzwkkyrfqq2.js";import{ag as qe,g_ as Je,m_ as Ye,rg as Xe,sg as Ze}from"./8b34dbc2-lmwubajnld74ksfm.js";import{n as Qe,t as $e}from"./9f2e6d33-h33rm8r24h08gyr1.js";import{n as et,t as tt}from"./2e14c65d-o7qdvdi5zhuyfj8o.js";import{n as nt,t as rt}from"./8c6976e5-d8nzzrgxiaivy5n7.js";import{o as it,s as at}from"./b90db9d2-obtztx8g8suw7cbr.js";import{a as ot,t as st}from"./191ef300-mysutbv6s8wkxslf.js";import{n as ct,t as lt}from"./6fd89734-hloqcgmx0nhh6xm5.js";import{a as ut,d as dt,i as ft,l as pt,m as mt,n as ht,o as gt,p as _t,r as vt,s as yt,t as bt}from"./e0031da9-d3w89bllwy7q0ff6.js";import{a as xt,i as St,n as Ct,o as wt,r as Tt,s as Et,t as Dt}from"./c3ec7e19-jycg5cked4qfe004.js";function Ot(e){"use forget";let t=(0,kt.c)(13),{workspaceId:n,workspaceSettings:r,isLoadingWorkspace:i}=e,a=de(),o;t[0]===n?o=t[1]:(o={workspaceId:n},t[0]=n,t[1]=o);let{mutate:s,isPending:c}=ot(o),l=r.beta_settings[ce.ENABLE_MESSAGE_FEEDBACK]??!0,u;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(u=(0,J.jsx)(`div`,{className:`text-md`,children:(0,J.jsx)(B,{...At.messageFeedbackLabel})}),t[2]=u):u=t[2];let d;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(d=(0,J.jsxs)(`div`,{children:[u,(0,J.jsx)(`div`,{className:`text-token-text-tertiary text-xs`,children:(0,J.jsx)(B,{...At.messageFeedbackDescription})})]}),t[3]=d):d=t[3];let f;t[4]===a?f=t[5]:(f=a.formatMessage(At.messageFeedbackLabel),t[4]=a,t[5]=f);let p=i||c,m;t[6]===s?m=t[7]:(m=e=>s({feature:ce.ENABLE_MESSAGE_FEEDBACK,enabled:e}),t[6]=s,t[7]=m);let h;return t[8]!==l||t[9]!==f||t[10]!==p||t[11]!==m?(h=(0,J.jsxs)(Le,{children:[d,(0,J.jsx)(A,{size:`normal`,"aria-label":f,checked:l,disabled:p,onCheckedChange:m})]}),t[8]=l,t[9]=f,t[10]=p,t[11]=m,t[12]=h):h=t[12],h}var kt,J,At,jt=e((()=>{kt=K(),h(),st(),We(),D(),H(),J=I(),At=R({messageFeedbackLabel:{id:`workspaceSettings.general.messageFeedback.label`,defaultMessage:`Allow response feedback`},messageFeedbackDescription:{id:`workspaceSettings.general.messageFeedback.description`,defaultMessage:`Allow workspace members to give thumbs-up or thumbs-down feedback on responses.`}})}));function Mt(e){return It.some(t=>t===e)}function Nt(e){"use forget";let t=(0,Pt.c)(48),{workspaceId:n,workspaceSettings:r}=e,i=de(),a=z(),o=(0,Ft.useId)(),s=r.desktop_app_beta_policy??`blocked`,l;t[0]===n?l=t[1]:(l=e=>f.safePost(`/accounts/{account_id}/beta_features`,{parameters:{path:{account_id:n}},requestBody:{feature:`desktop_app_beta_policy`,value:e}}),t[0]=n,t[1]=l);let u;t[2]!==i||t[3]!==a||t[4]!==n?(u=async()=>{await a.invalidateQueries({queryKey:[`workspace-settings`,n]}),c().success(i.formatMessage(X.saved))},t[2]=i,t[3]=a,t[4]=n,t[5]=u):u=t[5];let d;t[6]===i?d=t[7]:(d=()=>{c().danger(i.formatMessage(X.saveFailed))},t[6]=i,t[7]=d);let p;t[8]!==l||t[9]!==u||t[10]!==d?(p={mutationFn:l,onSuccess:u,onError:d},t[8]=l,t[9]=u,t[10]=d,t[11]=p):p=t[11];let m=W(p),h;t[12]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,Y.jsx)(B,{...X.policyLabel}),t[12]=h):h=t[12];let g;t[13]===o?g=t[14]:(g=(0,Y.jsx)(`h3`,{id:o,className:`text-sm font-medium`,children:h}),t[13]=o,t[14]=g);let ee=m.isPending,_;t[15]===i?_=t[16]:(_=i.formatMessage(X.blocked),t[15]=i,t[16]=_);let v;t[17]===_?v=t[18]:(v={value:`blocked`,label:_},t[17]=_,t[18]=v);let y;t[19]===i?y=t[20]:(y=i.formatMessage(X.optionalDefaultOff),t[19]=i,t[20]=y);let b;t[21]===y?b=t[22]:(b={value:`optional_default_off`,label:y},t[21]=y,t[22]=b);let x;t[23]===i?x=t[24]:(x=i.formatMessage(X.optionalDefaultOn),t[23]=i,t[24]=x);let S;t[25]===x?S=t[26]:(S={value:`optional_default_on`,label:x},t[25]=x,t[26]=S);let C;t[27]===i?C=t[28]:(C=i.formatMessage(X.required),t[27]=i,t[28]=C);let w;t[29]===C?w=t[30]:(w={value:`required`,label:C},t[29]=C,t[30]=w);let T;t[31]!==b||t[32]!==S||t[33]!==w||t[34]!==v?(T=[v,b,S,w],t[31]=b,t[32]=S,t[33]=w,t[34]=v,t[35]=T):T=t[35];let E;t[36]===m?E=t[37]:(E=e=>{Mt(e)&&m.mutate(e)},t[36]=m,t[37]=E);let D;t[38]!==o||t[39]!==m.isPending||t[40]!==s||t[41]!==T||t[42]!==E?(D=(0,Y.jsx)(Ye,{ariaLabelledBy:o,disabled:ee,options:T,value:s,onValueChange:E}),t[38]=o,t[39]=m.isPending,t[40]=s,t[41]=T,t[42]=E,t[43]=D):D=t[43];let O;return t[44]!==o||t[45]!==D||t[46]!==g?(O=(0,Y.jsx)(Pe,{title:X.sectionTitle,description:X.sectionDescription,children:(0,Y.jsx)(Fe,{children:(0,Y.jsx)(Le,{className:`items-center`,children:(0,Y.jsxs)(`section`,{"aria-labelledby":o,className:`flex w-full items-center justify-between`,children:[g,D]})})})}),t[44]=o,t[45]=D,t[46]=g,t[47]=O):O=t[47],O}var Pt,Ft,Y,It,X,Lt=e((()=>{Pt=K(),We(),Ne(),Je(),d(),s(),G(),Ft=t(U()),H(),Y=I(),It=[`blocked`,`optional_default_off`,`optional_default_on`,`required`],X=R({sectionTitle:{id:`workspaceSettings.desktopAppBeta.section.title`,defaultMessage:`Desktop app beta features`},sectionDescription:{id:`workspaceSettings.desktopAppBeta.section.description`,defaultMessage:`Control whether eligible workspace members can use beta desktop features and receive prerelease app updates.`},policyLabel:{id:`workspaceSettings.desktopAppBeta.policy.label`,defaultMessage:`Beta participation`},blocked:{id:`workspaceSettings.desktopAppBeta.policy.blocked`,defaultMessage:`Blocked`},optionalDefaultOff:{id:`workspaceSettings.desktopAppBeta.policy.optionalDefaultOff`,defaultMessage:`Optional, off by default`},optionalDefaultOn:{id:`workspaceSettings.desktopAppBeta.policy.optionalDefaultOn`,defaultMessage:`Optional, on by default`},required:{id:`workspaceSettings.desktopAppBeta.policy.required`,defaultMessage:`Required`},saved:{id:`workspaceSettings.desktopAppBeta.policy.saved`,defaultMessage:`Desktop app beta policy updated`},saveFailed:{id:`workspaceSettings.desktopAppBeta.policy.saveFailed`,defaultMessage:`Could not update desktop app beta policy`}})})),Rt,zt,Bt,Vt,Ht=e((()=>{Rt=K(),h(),at(),lt(),Ne(),ft(),M(),xe(),zt=I(),Bt={title:it,gaOptOut:{feature:ce.M3M_GA_OPT_OUT,featureName:it},entries:[]},Vt=e=>{"use forget";let t=(0,Rt.c)(4),{workspaceId:n,workspaceSettings:r}=e,i=ae(n),a=i??x(),o=P(),s=ct(n);if(!ut({isM3mEnabled:me(),isEnterprisey:a?.isEnterprisey()===!0,isHipaaCompliantWorkspace:o||i?.isHipaaCompliantWorkspace===!0,isFedrampCompliantWorkspace:a?.isFedrampCompliantWorkspace===!0}))return null;let c;return t[0]!==s.isRbacEnabled||t[1]!==n||t[2]!==r?(c=(0,zt.jsx)(Pe,{title:it,children:(0,zt.jsx)(vt,{workspaceId:n,section:Bt,workspaceSettings:r,showControl:!0,isRbacEnabled:s.isRbacEnabled,disabled:!1})}),t[0]=s.isRbacEnabled,t[1]=n,t[2]=r,t[3]=c):c=t[3],c}}));function Ut({onFileChange:e,className:t,message:n,mimeTypes:r}){let i=de(),a=n??i.formatMessage(Gt.helpText),{open:o,getRootProps:s,getInputProps:c,isDragActive:l}=Ge({disabled:!1,noClick:!0,onDropAccepted:(t,n)=>{if(t.length>0){let i=t[0];r&&r.includes(i.type)&&e(i,q(n))}},onDropRejected:()=>null,multiple:!1,maxSize:Se,...j(r)});return(0,Wt.jsxs)(`div`,{className:u(`flex flex-col content-center justify-center gap-3 rounded-xl border border-dashed px-6 py-16 text-center`,l?`border-green-600 bg-green-600/10`:`border-token-border-medium`,t),...s(),children:[(0,Wt.jsx)(`input`,{...c()}),(0,Wt.jsx)(`div`,{className:`text-center dark:text-white`,children:(0,Wt.jsx)(`div`,{className:`inline-block`,children:(0,Wt.jsx)(De,{})})}),(0,Wt.jsx)(`div`,{className:`text-center text-sm`,children:a}),(0,Wt.jsx)(`div`,{className:`cursor-pointer text-center text-sm font-bold text-green-600`,onClick:()=>{o()},children:i.formatMessage(Gt.openFilePicker)})]})}var Wt,Gt,Kt=e((()=>{Ee(),pe(),he(),S(),N(),U(),Ke(),H(),Wt=I(),Gt=R({helpText:{id:`FileUploadBox.helpText`,defaultMessage:`Drop file here to upload`},openFilePicker:{id:`FileUploadBox.openFilePicker`,defaultMessage:`Browse files`}})}));function qt(e,t){"use forget";let n=(0,Xt.c)(5),[r,i]=(0,Zt.useState)(e),a;n[0]===t?a=n[1]:(a=e=>{t(!0),i(e)},n[0]=t,n[1]=a);let o=a,s;return n[2]!==o||n[3]!==r?(s=[r,o],n[2]=o,n[3]=r,n[4]=s):s=n[4],s}function Jt(e){"use forget";let t=(0,Xt.c)(66),{workspaceId:r,defaultName:i,defaultAvatarId:a,defaultAvatarUrl:o,title:s,workspaceContrastSettingRow:c}=e,l=i===void 0?``:i,u=de(),d=le(),[f,m]=(0,Zt.useState)(!1),[h,g]=qt(l,m),[v,y]=qt(a,m),[x,S]=qt(o,m),[C,T]=qt(void 0,m),[D,O]=qt(null,m),k,te;t[0]!==C||t[1]!==O||t[2]!==D?(k=()=>{if(C!==`initial`&&C!==void 0&&D==null){let e=new FileReader;e.addEventListener(`load`,()=>{let t=e.result;typeof t==`string`&&O(t)}),e.readAsDataURL(C.file)}},te=[C,O,D],t[0]=C,t[1]=O,t[2]=D,t[3]=k,t[4]=te):(k=t[3],te=t[4]),(0,Zt.useEffect)(k,te);let ne=async(e,t)=>{if(A.isPending)return;let n=await ee(e,Qt),r=Xe(n);T({tempId:r,file:n,status:E.Uploading,progress:1,fileId:null,cdnUrl:null}),Ze(r,n,u,d,ie.ProfilePicture,{onFileCreated(e,t,n){T(r=>r!==`initial`&&r?.tempId===e&&r.status===E.Uploading?{...r,progress:10,fileId:t,cdnUrl:n}:r)},onFileUploadProgress(e,t){T(n=>n!==`initial`&&n?.tempId===e&&n.status===E.Uploading?{...n,progress:t}:n)},onFileUploaded(e,t,n){T(t=>t!==`initial`&&t&&t.cdnUrl&&t.tempId===e&&t.fileId?(p(t.fileId,{downloadIntent:!1}).then(e=>{e.status===_.Success&&(y(t.fileId),S(e.download_url))}),{...t,status:E.Ready,progress:100,fileSpec:{name:t.file.name,id:t.fileId??``,size:t.file.size,mimeType:t.file.type,...n??{width:0,height:0}}}):t)},onError(e){T(t=>{if(t!==`initial`&&t?.tempId===e){y(void 0),S(void 0),O(null);return}return t})}},{selectionMethod:t})},re;t[5]!==y||t[6]!==S||t[7]!==T||t[8]!==O?(re=()=>{y(null),S(null),T(void 0),O(null)},t[5]=y,t[6]=S,t[7]=T,t[8]=O,t[9]=re):re=t[9];let ae=re,A=et(r),oe;t[10]===h?oe=t[11]:(oe=h.trim(),t[10]=h,t[11]=oe);let j=oe,se=C!==`initial`&&C!==void 0&&(C.status!==E.Ready||!x)||A.isPending||j.length===0||!f,M;t[12]!==se||t[13]!==u||t[14]!==j||t[15]!==v||t[16]!==x||t[17]!==A||t[18]!==d?(M=()=>{se||A.mutate({name:j,profilePictureId:v,profilePictureUrl:x},{onSuccess:()=>{d.success(u.formatMessage($t.saveSuccessToast)),m(!1)}})},t[12]=se,t[13]=u,t[14]=j,t[15]=v,t[16]=x,t[17]=A,t[18]=d,t[19]=M):M=t[19];let N=M,P=A.isPending,ce=P?`pointer-events-none opacity-50`:void 0,F=s??$t.modalTitle,ue;t[20]===Symbol.for(`react.memo_cache_sentinel`)?(ue=(0,Z.jsx)(`div`,{className:`flex flex-col justify-center gap-1`,children:(0,Z.jsx)(`p`,{className:`text-token-text-primary`,children:(0,Z.jsx)(B,{...$t.workspaceName})})}),t[20]=ue):ue=t[20];let I;t[21]===g?I=t[22]:(I=e=>g(e.target.value),t[21]=g,t[22]=I);let L;t[23]!==P||t[24]!==h||t[25]!==I?(L=(0,Z.jsxs)(Le,{className:`gap-2`,children:[ue,(0,Z.jsx)(fe,{ariaLabel:!1,type:`text`,name:`workspace-name`,value:h,onChange:I,maxLength:64,disabled:P,className:`min-w-80`})]}),t[23]=P,t[24]=h,t[25]=I,t[26]=L):L=t[26];let R;t[27]===Symbol.for(`react.memo_cache_sentinel`)?(R=(0,Z.jsx)(`p`,{className:`text-token-text-primary`,children:(0,Z.jsx)(B,{...$t.workspaceAvatar})}),t[27]=R):R=t[27];let z;t[28]===u?z=t[29]:(z=u.formatMessage($t.workspaceAvatarDescription,{size:Qt}),t[28]=u,t[29]=z);let V;t[30]===Symbol.for(`react.memo_cache_sentinel`)?(V=(0,Z.jsx)(Oe,{className:`text-sm`}),t[30]=V):V=t[30];let H;t[31]===z?H=t[32]:(H=(0,Z.jsxs)(`div`,{className:`flex gap-1`,children:[R,(0,Z.jsx)(w,{side:`top`,label:z,children:V})]}),t[31]=z,t[32]=H);let U;t[33]!==ae||t[34]!==P||t[35]!==ne||t[36]!==x||t[37]!==C||t[38]!==D||t[39]!==ce?(U=(0,Z.jsx)(`div`,{className:`flex min-w-80 flex-col items-start gap-3`,children:x?(0,Z.jsxs)(`div`,{className:`relative inline-flex`,children:[(0,Z.jsx)(`img`,{src:x,alt:``,referrerPolicy:`no-referrer`,className:`block h-24 w-24 rounded-full object-cover object-center`}),(0,Z.jsx)(`div`,{className:`absolute -end-1 -top-1`,children:(0,Z.jsx)(Yt,{onClick:P?void 0:ae})})]}):C!=null&&C!==`initial`&&D?(0,Z.jsx)(`div`,{className:`flex flex-col items-center text-center`,children:(0,Z.jsxs)(`div`,{className:`relative mb-3`,children:[(0,Z.jsx)(`img`,{src:URL.createObjectURL(C.file),alt:``,referrerPolicy:`no-referrer`,className:`block h-24 w-24 rounded-full object-cover object-center`}),(0,Z.jsx)(`div`,{className:`absolute inset-0 flex items-center justify-center text-white`,children:(0,Z.jsx)(ye,{percentage:C.progress,className:`h-6 w-6`})})]})}):(0,Z.jsx)(`div`,{className:ce,children:(0,Z.jsx)(Ut,{onFileChange:ne,mimeTypes:b})})}),t[33]=ae,t[34]=P,t[35]=ne,t[36]=x,t[37]=C,t[38]=D,t[39]=ce,t[40]=U):U=t[40];let W;t[41]!==H||t[42]!==U?(W=(0,Z.jsxs)(Le,{className:`gap-3`,children:[H,U]}),t[41]=H,t[42]=U,t[43]=W):W=t[43];let G;t[44]!==a||t[45]!==o||t[46]!==l||t[47]!==se||t[48]!==P||t[49]!==N||t[50]!==f||t[51]!==A.isPending||t[52]!==y||t[53]!==S||t[54]!==g||t[55]!==T||t[56]!==O?(G=f&&(0,Z.jsxs)(Le,{className:`justify-end gap-2`,children:[(0,Z.jsx)(n,{size:`small`,color:`secondary`,onClick:()=>{P||(g(l),y(a),S(o),T(void 0),O(null),m(!1))},disabled:P||!f,children:(0,Z.jsx)(B,{...$t.modalReset})}),(0,Z.jsx)(n,{size:`small`,color:`primary`,onClick:N,disabled:se,loading:A.isPending,children:(0,Z.jsx)(B,{...$t.modalSubmit})})]}),t[44]=a,t[45]=o,t[46]=l,t[47]=se,t[48]=P,t[49]=N,t[50]=f,t[51]=A.isPending,t[52]=y,t[53]=S,t[54]=g,t[55]=T,t[56]=O,t[57]=G):G=t[57];let K;t[58]!==L||t[59]!==W||t[60]!==G||t[61]!==c?(K=(0,Z.jsxs)(Fe,{children:[L,W,c,G]}),t[58]=L,t[59]=W,t[60]=G,t[61]=c,t[62]=K):K=t[62];let q;return t[63]!==K||t[64]!==F?(q=(0,Z.jsx)(Pe,{title:F,children:K}),t[63]=K,t[64]=F,t[65]=q):q=t[65],q}function Yt(e){"use forget";let t=(0,Xt.c)(3),{onClick:n}=e,r;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(r=(0,Z.jsx)(m,{className:`h-3 w-3`}),t[0]=r):r=t[0];let i;return t[1]===n?i=t[2]:(i=(0,Z.jsx)(`div`,{className:`flex h-6 w-6 cursor-pointer flex-row flex-wrap content-center justify-center rounded-full border-2 border-white bg-black text-white`,onClick:n,children:r}),t[1]=n,t[2]=i),i}var Xt,Zt,Z,Qt,$t,en=e((()=>{Xt=K(),h(),ne(),ge(),Kt(),Ne(),We(),Ce(),g(),ke(),oe(),qe(),S(),d(),Zt=t(U()),H(),tt(),v(),Z=I(),Qt=192,$t=R({modalTitle:{id:`5YXskQ`,defaultMessage:`Appearance`},workspaceName:{id:`GqMYq4`,defaultMessage:`Workspace name`},workspaceAvatar:{id:`out1Ek`,defaultMessage:`Logo`},workspaceAvatarDescription:{id:`OY7Lnp`,defaultMessage:`Upload a JPEG or PNG workspace logo for your team. (Minimum {size}×{size}px recommended.)`},saveSuccessToast:{id:`crqLbt`,defaultMessage:`Workspace appearance updated`},modalSubmit:{id:`G0MNSo`,defaultMessage:`Save`},modalReset:{id:`rxaWUV`,defaultMessage:`Reset`}})})),tn=e((()=>{K(),We(),l(),Je(),r(),d(),U(),H(),I(),R({contrastMode:{id:`workspaceSettings.contrastMode`,defaultMessage:`Contrast`},medium:{id:`workspaceSettings.contrastMode.medium`,defaultMessage:`Medium`},high:{id:`workspaceSettings.contrastMode.high`,defaultMessage:`Increased`}})}));function nn(){return T(rn)}var rn,an=e((()=>{a(),rn=`2121254253`}));function on(){"use forget";let e=(0,un.c)(12),t=de(),n;e[0]===t?n=e[1]:(n=t.formatMessage($.businessPilotProgramTitle,{programName:pn}),e[0]=t,e[1]=n);let r=n,i;e[2]===r?i=e[3]:(i=(0,Q.jsx)(Ie,{children:r}),e[2]=r,e[3]=i);let a;e[4]===Symbol.for(`react.memo_cache_sentinel`)?(a=(0,Q.jsx)(Ae,{className:`text-token-text-secondary`,children:(0,Q.jsx)(B,{...$.businessPilotProgramDescription,values:{programName:pn,link:sn}})}),e[4]=a):a=e[4];let o;e[5]===i?o=e[6]:(o=(0,Q.jsxs)(`div`,{className:`flex flex-col gap-2`,"data-testid":`business-pilot-program-copy`,children:[i,a]}),e[5]=i,e[6]=o);let s;e[7]===r?s=e[8]:(s=(0,Q.jsx)(A,{size:`normal`,"aria-label":r,checked:!0,disabled:!0}),e[7]=r,e[8]=s);let c;return e[9]!==o||e[10]!==s?(c=(0,Q.jsx)(Me,{children:(0,Q.jsxs)(`div`,{className:`flex items-start justify-between gap-4 py-2`,"data-testid":`business-pilot-program-section-row`,children:[o,s]})}),e[9]=o,e[10]=s,e[11]=c):c=e[11],c}function sn(e){return(0,Q.jsx)(_e,{href:fn,openNewTab:!0,className:`hover:text-token-text-primary/80 text-token-text-primary underline-offset-2`,children:e})}function cn(e){"use forget";let t=(0,un.c)(64),{currentWorkspaceId:n}=e,r=n,i=de(),a=se(),s=x(),c=s?.isEnterprisey(),l=!c,{data:d,isLoading:f,refetch:p}=re(r),m=o(ln),{role:h,profilePicUrl:g,workspaceName:ee,profilePicId:_}=Ve(),v;t[0]!==h||t[1]!==m?(v=h==null?m==null?void 0:be(m.role):be(h),t[0]=h,t[1]=m,t[2]=v):v=t[2];let b=v,S;t[3]!==h||t[4]!==m?(S=h==null?m==null?void 0:we(m.role):we(h),t[3]=h,t[4]=m,t[5]=S):S=t[5];let C=S,w,E;if(t[6]===Symbol.for(`react.memo_cache_sentinel`)){let e=O(`3528236309`);w=e.get(`show_classification_tab`,!1),E=e.get(`show_impact_tab`,!1),t[6]=w,t[7]=E}else w=t[6],E=t[7];let D=E,k;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(k=Et(),t[8]=k):k=t[8];let ne=k,ie;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(ie=wt(),t[9]=ie):ie=t[9];let ae=ie,A=nn()&&te(s?.planType),oe=w||D||ne,j=ue().hash===`#workspace-usage-analytics`&&d!=null&&b===!0&&oe,M,N;t[10]===j?(M=t[11],N=t[12]):(M=()=>{j&&document.getElementById(Dt)?.scrollIntoView({behavior:`smooth`,block:`start`})},N=[j],t[10]=j,t[11]=M,t[12]=N),(0,dn.useEffect)(M,N);let P;t[13]!==b||t[14]!==f||t[15]!==r||t[16]!==d?(P=void 0,t[13]=b,t[14]=f,t[15]=r,t[16]=d,t[17]=P):P=t[17];let le=P,F;t[18]!==b||t[19]!==f||t[20]!==ae||t[21]!==A||t[22]!==r||t[23]!==d?(F=b&&d?{memory_access:(0,Q.jsx)(Le,{children:(0,Q.jsxs)(`div`,{className:`flex w-full items-center justify-between gap-4`,children:[(0,Q.jsxs)(`div`,{children:[(0,Q.jsx)(`div`,{className:`text-md flex gap-2`,children:(0,Q.jsx)(B,{...$.chatRetentionPolicyTitle})}),(0,Q.jsx)(`span`,{className:`text-token-text-tertiary text-xs`,children:(0,Q.jsx)(B,{...$.chatRetentionPolicyDescription})})]}),(0,Q.jsx)(_t,{data:d})]})}),plugins:(0,Q.jsxs)(Q.Fragment,{children:[ae&&(0,Q.jsx)(Tt,{workspaceId:r,workspaceSettings:d,isLoadingWorkspace:f}),A&&(0,Q.jsx)(Ct,{workspaceId:r,workspaceSettings:d,isLoadingWorkspace:f}),(0,Q.jsx)(Ot,{workspaceId:r,workspaceSettings:d,isLoadingWorkspace:f})]})}:void 0,t[18]=b,t[19]=f,t[20]=ae,t[21]=A,t[22]=r,t[23]=d,t[24]=F):F=t[24];let I=F,L;t[25]!==a?.data||t[26]!==a?.name||t[27]!==_||t[28]!==g||t[29]!==ee||t[30]!==C||t[31]!==b||t[32]!==c||t[33]!==f||t[34]!==s?.isFedrampCompliantWorkspace||t[35]!==p||t[36]!==le||t[37]!==r||t[38]!==I||t[39]!==d?(L=d&&(0,Q.jsxs)(Q.Fragment,{children:[b&&(0,Q.jsx)(Jt,{workspaceId:r,defaultName:ee??a?.name??``,defaultAvatarId:_??a?.data.profilePictureId??void 0,defaultAvatarUrl:g??a?.data.profilePictureUrl??void 0,title:$.brandingTitle,workspaceContrastSettingRow:le}),C&&(0,Q.jsx)(pt,{workspaceId:r,title:$.detailsTitle}),C&&(0,Q.jsx)(yt,{workspaceId:r,upsellEnterprise:l,data:d,title:$.policyTitle},r),C&&c&&T(`3957595485`)&&!s?.isFedrampCompliantWorkspace&&(0,Q.jsx)(Nt,{workspaceId:r,workspaceSettings:d}),C&&(0,Q.jsx)(dt,{workspaceId:r,upsellEnterprise:l,data:d,refetch:p}),b&&oe&&(0,Q.jsx)(St,{workspaceId:r,workspaceSettings:d,isLoadingWorkspace:f,title:$.analyticsTitle}),b&&(0,Q.jsx)(bt,{workspaceId:r,mode:`workspace-only`,workspaceOnlyRowsBeforeSettingName:I,workspaceOnlySectionTitle:$.workspacePoliciesTitle}),C&&!b&&(0,Q.jsx)(Vt,{workspaceId:r,workspaceSettings:d}),d.beta_settings[ce.TRAINING_ALLOWED]&&(0,Q.jsx)(on,{})]}),t[25]=a?.data,t[26]=a?.name,t[27]=_,t[28]=g,t[29]=ee,t[30]=C,t[31]=b,t[32]=c,t[33]=f,t[34]=s?.isFedrampCompliantWorkspace,t[35]=p,t[36]=le,t[37]=r,t[38]=I,t[39]=d,t[40]=L):L=t[40];let R=L,z;t[41]===i?z=t[42]:(z=i.formatMessage($.title),t[41]=i,t[42]=z);let V;t[43]===z?V=t[44]:(V=(0,Q.jsx)($e,{children:(0,Q.jsx)(`title`,{children:z})}),t[43]=z,t[44]=V);let H;t[45]===i?H=t[46]:(H=i.formatMessage($.title),t[45]=i,t[46]=H);let U;t[47]===i?U=t[48]:(U=i.formatMessage($.subtitle),t[47]=i,t[48]=U);let W;t[49]!==H||t[50]!==U?(W=(0,Q.jsx)(ze,{title:H,subtitle:U,showBottomBorder:!1}),t[49]=H,t[50]=U,t[51]=W):W=t[51];let G;t[52]===Symbol.for(`react.memo_cache_sentinel`)?(G=u(`mt-4 flex flex-col gap-7 pb-[60px]`,He),t[52]=G):G=t[52];let K;t[53]===f?K=t[54]:(K=f&&(0,Q.jsx)(y,{}),t[53]=f,t[54]=K);let q;t[55]===R?q=t[56]:(q=(0,Q.jsx)(je,{variant:`card`,children:R}),t[55]=R,t[56]=q);let fe;t[57]!==K||t[58]!==q?(fe=(0,Q.jsx)(Be,{children:(0,Q.jsxs)(`div`,{"data-testid":`workspace-general-redesign-sections`,className:G,children:[K,q]})}),t[57]=K,t[58]=q,t[59]=fe):fe=t[59];let pe;return t[60]!==V||t[61]!==W||t[62]!==fe?(pe=(0,Q.jsxs)(Q.Fragment,{children:[V,W,fe]}),t[60]=V,t[61]=W,t[62]=fe,t[63]=pe):pe=t[63],pe}function ln(e){return e.currentWorkspace}var un,dn,Q,fn,pn,$,mn=e((()=>{un=K(),Qe(),dn=t(U()),H(),h(),Re(),We(),gt(),mt(),jt(),Lt(),ht(),Ne(),Ht(),Te(),en(),tn(),D(),ve(),C(),F(),M(),i(),k(),a(),N(),V(),Ue(),xt(),an(),Q=I(),fn=`https://help.openai.com/articles/20001419`,pn=`Business Pilot Program`,$=R({title:{id:`LW8JgL`,defaultMessage:`General`},subtitle:{id:`workspaceSettings.general.subtitle`,defaultMessage:`Customize your workspace.`},brandingTitle:{id:`workspaceSettings.general.brandingTitle`,defaultMessage:`Branding`},detailsTitle:{id:`workspaceSettings.general.workspaceIdsTitle`,defaultMessage:`Workspace IDs`},policyTitle:{id:`cbA42d`,defaultMessage:`Policy`},analyticsTitle:{id:`workspaceSettings.general.analyticsAndReportingTitle`,defaultMessage:`Analytics and reporting`},workspacePoliciesTitle:{id:`workspaceSettings.general.workspacePoliciesTitle`,defaultMessage:`Workspace policies`},chatRetentionPolicyTitle:{id:`VbkaOU`,defaultMessage:`Chat retention policy`},chatRetentionPolicyDescription:{id:`jk6qrt`,defaultMessage:`Contact your support to change this setting`},businessPilotProgramTitle:{id:`workspaceSettings.general.businessPilotProgram.title`,defaultMessage:`{programName} Enrolled`},businessPilotProgramDescription:{id:`workspaceSettings.general.businessPilotProgram.description`,defaultMessage:`This workspace is enrolled in the {programName}, which allows OpenAI to use workspace data to improve models. To opt out, follow the instructions in the Help Center. <link>Learn more</link>`}})})),hn,gn,_n,vn=e((()=>{V(),hn=K(),Re(),mn(),Te(),rt(),gn=I(),_n=L(function(){"use forget";let e=(0,hn.c)(6),t=nt(),{adminConsoleRedirects:n,role:r}=Ve(),i;e[0]!==n?.general||e[1]!==r?(i=n?.general!==!0&&r!=null&&we(r),e[0]=n?.general,e[1]=r,e[2]=i):i=e[2];let a=i,o;return e[3]!==a||e[4]!==t?(o=a?(0,gn.jsx)(cn,{...t}):null,e[3]=a,e[4]=t,e[5]=o):o=e[5],o})}));e((()=>{vn()}))();export{_n as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    A8 as r,
+    CR as i,
+    Crt as a,
+    ER as o,
+    I7 as s,
+    IU as c,
+    Ij as l,
+    K5 as u,
+    LU as d,
+    M7 as f,
+    Np as p,
+    Nw as m,
+    Oct as h,
+    Pw as g,
+    Qp as ee,
+    Qst as _,
+    Qy as v,
+    Rz as y,
+    Tp as b,
+    U1 as x,
+    Up as S,
+    ZG as C,
+    Zy as w,
+    _rt as T,
+    am as E,
+    ax as D,
+    brt as O,
+    c6 as k,
+    d6 as te,
+    eE as ne,
+    eK as re,
+    ect as ie,
+    i0 as ae,
+    ix as A,
+    lm as oe,
+    nm as j,
+    o0 as se,
+    q1 as M,
+    q5 as N,
+    u0 as P,
+    wct as ce,
+    zU as le,
+    zz as F
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as ue,
+    Bn as I,
+    Ht as L,
+    Ln as R,
+    N as z,
+    Nn as B,
+    Q as V,
+    Rn as H,
+    Vn as U,
+    p as W,
+    s as G,
+    wn as K,
+    zn as de
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $1 as q,
+    Bst as fe,
+    Ntn as pe,
+    OSn as me,
+    Q1 as he,
+    Vst as ge,
+    XWn as _e,
+    ZWn as ve,
+    a_n as ye,
+    awn as be,
+    jSn as xe,
+    jtn as Se,
+    o_n as Ce,
+    rwn as we,
+    swn as Te
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Bm as Ee,
+    Vm as De,
+    vh as Oe,
+    yh as ke
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    $o as Ae,
+    Go as je,
+    Jo as Me,
+    Ko as Ne,
+    Wo as Pe,
+    Xo as Fe,
+    Yo as Ie,
+    Zo as Le,
+    fl as Re,
+    is as ze,
+    ns as Be,
+    pl as Ve,
+    qo as He,
+    ss as Ue,
+    ts as We
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    S as Ge,
+    x as Ke
+} from "./82782bc9-b4xbouzwkkyrfqq2.js";
+import {
+    ag as qe,
+    g_ as Je,
+    m_ as Ye,
+    rg as Xe,
+    sg as Ze
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    n as Qe,
+    t as $e
+} from "./9f2e6d33-h33rm8r24h08gyr1.js";
+import {
+    n as et,
+    t as tt
+} from "./2e14c65d-o7qdvdi5zhuyfj8o.js";
+import {
+    n as nt,
+    t as rt
+} from "./8c6976e5-d8nzzrgxiaivy5n7.js";
+import {
+    o as it,
+    s as at
+} from "./b90db9d2-obtztx8g8suw7cbr.js";
+import {
+    a as ot,
+    t as st
+} from "./191ef300-mysutbv6s8wkxslf.js";
+import {
+    n as ct,
+    t as lt
+} from "./6fd89734-hloqcgmx0nhh6xm5.js";
+import {
+    a as ut,
+    d as dt,
+    i as ft,
+    l as pt,
+    m as mt,
+    n as ht,
+    o as gt,
+    p as _t,
+    r as vt,
+    s as yt,
+    t as bt
+} from "./e0031da9-d3w89bllwy7q0ff6.js";
+import {
+    a as xt,
+    i as St,
+    n as Ct,
+    o as wt,
+    r as Tt,
+    s as Et,
+    t as Dt
+} from "./c3ec7e19-jycg5cked4qfe004.js";
+
+function Ot(e) {
+    "use forget";
+    let t = (0, kt.c)(13),
+        {
+            workspaceId: n,
+            workspaceSettings: r,
+            isLoadingWorkspace: i
+        } = e,
+        a = de(),
+        o;
+    t[0] === n ? o = t[1] : (o = {
+        workspaceId: n
+    }, t[0] = n, t[1] = o);
+    let {
+        mutate: s,
+        isPending: c
+    } = ot(o), l = r.beta_settings[ce.ENABLE_MESSAGE_FEEDBACK] ?? !0, u;
+    t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (u = (0, J.jsx)(`div`, {
+        className: `text-md`,
+        children: (0, J.jsx)(B, {
+            ...At.messageFeedbackLabel
+        })
+    }), t[2] = u) : u = t[2];
+    let d;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (d = (0, J.jsxs)(`div`, {
+        children: [u, (0, J.jsx)(`div`, {
+            className: `text-token-text-tertiary text-xs`,
+            children: (0, J.jsx)(B, {
+                ...At.messageFeedbackDescription
+            })
+        })]
+    }), t[3] = d) : d = t[3];
+    let f;
+    t[4] === a ? f = t[5] : (f = a.formatMessage(At.messageFeedbackLabel), t[4] = a, t[5] = f);
+    let p = i || c,
+        m;
+    t[6] === s ? m = t[7] : (m = e => s({
+        feature: ce.ENABLE_MESSAGE_FEEDBACK,
+        enabled: e
+    }), t[6] = s, t[7] = m);
+    let h;
+    return t[8] !== l || t[9] !== f || t[10] !== p || t[11] !== m ? (h = (0, J.jsxs)(Le, {
+        children: [d, (0, J.jsx)(A, {
+            size: `normal`,
+            "aria-label": f,
+            checked: l,
+            disabled: p,
+            onCheckedChange: m
+        })]
+    }), t[8] = l, t[9] = f, t[10] = p, t[11] = m, t[12] = h) : h = t[12], h
+}
+var kt, J, At, jt = e((() => {
+    kt = K(), h(), st(), We(), D(), H(), J = I(), At = R({
+        messageFeedbackLabel: {
+            id: `workspaceSettings.general.messageFeedback.label`,
+            defaultMessage: `Allow response feedback`
+        },
+        messageFeedbackDescription: {
+            id: `workspaceSettings.general.messageFeedback.description`,
+            defaultMessage: `Allow workspace members to give thumbs-up or thumbs-down feedback on responses.`
+        }
+    })
+}));
+
+function Mt(e) {
+    return It.some(t => t === e)
+}
+
+function Nt(e) {
+    "use forget";
+    let t = (0, Pt.c)(48),
+        {
+            workspaceId: n,
+            workspaceSettings: r
+        } = e,
+        i = de(),
+        a = z(),
+        o = (0, Ft.useId)(),
+        s = r.desktop_app_beta_policy ?? `blocked`,
+        l;
+    t[0] === n ? l = t[1] : (l = e => f.safePost(`/accounts/{account_id}/beta_features`, {
+        parameters: {
+            path: {
+                account_id: n
+            }
+        },
+        requestBody: {
+            feature: `desktop_app_beta_policy`,
+            value: e
+        }
+    }), t[0] = n, t[1] = l);
+    let u;
+    t[2] !== i || t[3] !== a || t[4] !== n ? (u = async () => {
+        await a.invalidateQueries({
+            queryKey: [`workspace-settings`, n]
+        }), c().success(i.formatMessage(X.saved))
+    }, t[2] = i, t[3] = a, t[4] = n, t[5] = u) : u = t[5];
+    let d;
+    t[6] === i ? d = t[7] : (d = () => {
+        c().danger(i.formatMessage(X.saveFailed))
+    }, t[6] = i, t[7] = d);
+    let p;
+    t[8] !== l || t[9] !== u || t[10] !== d ? (p = {
+        mutationFn: l,
+        onSuccess: u,
+        onError: d
+    }, t[8] = l, t[9] = u, t[10] = d, t[11] = p) : p = t[11];
+    let m = W(p),
+        h;
+    t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, Y.jsx)(B, {
+        ...X.policyLabel
+    }), t[12] = h) : h = t[12];
+    let g;
+    t[13] === o ? g = t[14] : (g = (0, Y.jsx)(`h3`, {
+        id: o,
+        className: `text-sm font-medium`,
+        children: h
+    }), t[13] = o, t[14] = g);
+    let ee = m.isPending,
+        _;
+    t[15] === i ? _ = t[16] : (_ = i.formatMessage(X.blocked), t[15] = i, t[16] = _);
+    let v;
+    t[17] === _ ? v = t[18] : (v = {
+        value: `blocked`,
+        label: _
+    }, t[17] = _, t[18] = v);
+    let y;
+    t[19] === i ? y = t[20] : (y = i.formatMessage(X.optionalDefaultOff), t[19] = i, t[20] = y);
+    let b;
+    t[21] === y ? b = t[22] : (b = {
+        value: `optional_default_off`,
+        label: y
+    }, t[21] = y, t[22] = b);
+    let x;
+    t[23] === i ? x = t[24] : (x = i.formatMessage(X.optionalDefaultOn), t[23] = i, t[24] = x);
+    let S;
+    t[25] === x ? S = t[26] : (S = {
+        value: `optional_default_on`,
+        label: x
+    }, t[25] = x, t[26] = S);
+    let C;
+    t[27] === i ? C = t[28] : (C = i.formatMessage(X.required), t[27] = i, t[28] = C);
+    let w;
+    t[29] === C ? w = t[30] : (w = {
+        value: `required`,
+        label: C
+    }, t[29] = C, t[30] = w);
+    let T;
+    t[31] !== b || t[32] !== S || t[33] !== w || t[34] !== v ? (T = [v, b, S, w], t[31] = b, t[32] = S, t[33] = w, t[34] = v, t[35] = T) : T = t[35];
+    let E;
+    t[36] === m ? E = t[37] : (E = e => {
+        Mt(e) && m.mutate(e)
+    }, t[36] = m, t[37] = E);
+    let D;
+    t[38] !== o || t[39] !== m.isPending || t[40] !== s || t[41] !== T || t[42] !== E ? (D = (0, Y.jsx)(Ye, {
+        ariaLabelledBy: o,
+        disabled: ee,
+        options: T,
+        value: s,
+        onValueChange: E
+    }), t[38] = o, t[39] = m.isPending, t[40] = s, t[41] = T, t[42] = E, t[43] = D) : D = t[43];
+    let O;
+    return t[44] !== o || t[45] !== D || t[46] !== g ? (O = (0, Y.jsx)(Pe, {
+        title: X.sectionTitle,
+        description: X.sectionDescription,
+        children: (0, Y.jsx)(Fe, {
+            children: (0, Y.jsx)(Le, {
+                className: `items-center`,
+                children: (0, Y.jsxs)(`section`, {
+                    "aria-labelledby": o,
+                    className: `flex w-full items-center justify-between`,
+                    children: [g, D]
+                })
+            })
+        })
+    }), t[44] = o, t[45] = D, t[46] = g, t[47] = O) : O = t[47], O
+}
+var Pt, Ft, Y, It, X, Lt = e((() => {
+        Pt = K(), We(), Ne(), Je(), d(), s(), G(), Ft = t(U()), H(), Y = I(), It = [`blocked`, `optional_default_off`, `optional_default_on`, `required`], X = R({
+            sectionTitle: {
+                id: `workspaceSettings.desktopAppBeta.section.title`,
+                defaultMessage: `Desktop app beta features`
+            },
+            sectionDescription: {
+                id: `workspaceSettings.desktopAppBeta.section.description`,
+                defaultMessage: `Control whether eligible workspace members can use beta desktop features and receive prerelease app updates.`
+            },
+            policyLabel: {
+                id: `workspaceSettings.desktopAppBeta.policy.label`,
+                defaultMessage: `Beta participation`
+            },
+            blocked: {
+                id: `workspaceSettings.desktopAppBeta.policy.blocked`,
+                defaultMessage: `Blocked`
+            },
+            optionalDefaultOff: {
+                id: `workspaceSettings.desktopAppBeta.policy.optionalDefaultOff`,
+                defaultMessage: `Optional, off by default`
+            },
+            optionalDefaultOn: {
+                id: `workspaceSettings.desktopAppBeta.policy.optionalDefaultOn`,
+                defaultMessage: `Optional, on by default`
+            },
+            required: {
+                id: `workspaceSettings.desktopAppBeta.policy.required`,
+                defaultMessage: `Required`
+            },
+            saved: {
+                id: `workspaceSettings.desktopAppBeta.policy.saved`,
+                defaultMessage: `Desktop app beta policy updated`
+            },
+            saveFailed: {
+                id: `workspaceSettings.desktopAppBeta.policy.saveFailed`,
+                defaultMessage: `Could not update desktop app beta policy`
+            }
+        })
+    })),
+    Rt, zt, Bt, Vt, Ht = e((() => {
+        Rt = K(), h(), at(), lt(), Ne(), ft(), M(), xe(), zt = I(), Bt = {
+            title: it,
+            gaOptOut: {
+                feature: ce.M3M_GA_OPT_OUT,
+                featureName: it
+            },
+            entries: []
+        }, Vt = e => {
+            "use forget";
+            let t = (0, Rt.c)(4),
+                {
+                    workspaceId: n,
+                    workspaceSettings: r
+                } = e,
+                i = ae(n),
+                a = i ?? x(),
+                o = P(),
+                s = ct(n);
+            if (!ut({
+                    isM3mEnabled: me(),
+                    isEnterprisey: a?.isEnterprisey() === !0,
+                    isHipaaCompliantWorkspace: o || i?.isHipaaCompliantWorkspace === !0,
+                    isFedrampCompliantWorkspace: a?.isFedrampCompliantWorkspace === !0
+                })) return null;
+            let c;
+            return t[0] !== s.isRbacEnabled || t[1] !== n || t[2] !== r ? (c = (0, zt.jsx)(Pe, {
+                title: it,
+                children: (0, zt.jsx)(vt, {
+                    workspaceId: n,
+                    section: Bt,
+                    workspaceSettings: r,
+                    showControl: !0,
+                    isRbacEnabled: s.isRbacEnabled,
+                    disabled: !1
+                })
+            }), t[0] = s.isRbacEnabled, t[1] = n, t[2] = r, t[3] = c) : c = t[3], c
+        }
+    }));
+
+function Ut({
+    onFileChange: e,
+    className: t,
+    message: n,
+    mimeTypes: r
+}) {
+    let i = de(),
+        a = n ?? i.formatMessage(Gt.helpText),
+        {
+            open: o,
+            getRootProps: s,
+            getInputProps: c,
+            isDragActive: l
+        } = Ge({
+            disabled: !1,
+            noClick: !0,
+            onDropAccepted: (t, n) => {
+                if (t.length > 0) {
+                    let i = t[0];
+                    r && r.includes(i.type) && e(i, q(n))
+                }
+            },
+            onDropRejected: () => null,
+            multiple: !1,
+            maxSize: Se,
+            ...j(r)
+        });
+    return (0, Wt.jsxs)(`div`, {
+        className: u(`flex flex-col content-center justify-center gap-3 rounded-xl border border-dashed px-6 py-16 text-center`, l ? `border-green-600 bg-green-600/10` : `border-token-border-medium`, t),
+        ...s(),
+        children: [(0, Wt.jsx)(`input`, {
+            ...c()
+        }), (0, Wt.jsx)(`div`, {
+            className: `text-center dark:text-white`,
+            children: (0, Wt.jsx)(`div`, {
+                className: `inline-block`,
+                children: (0, Wt.jsx)(De, {})
+            })
+        }), (0, Wt.jsx)(`div`, {
+            className: `text-center text-sm`,
+            children: a
+        }), (0, Wt.jsx)(`div`, {
+            className: `cursor-pointer text-center text-sm font-bold text-green-600`,
+            onClick: () => {
+                o()
+            },
+            children: i.formatMessage(Gt.openFilePicker)
+        })]
+    })
+}
+var Wt, Gt, Kt = e((() => {
+    Ee(), pe(), he(), S(), N(), U(), Ke(), H(), Wt = I(), Gt = R({
+        helpText: {
+            id: `FileUploadBox.helpText`,
+            defaultMessage: `Drop file here to upload`
+        },
+        openFilePicker: {
+            id: `FileUploadBox.openFilePicker`,
+            defaultMessage: `Browse files`
+        }
+    })
+}));
+
+function qt(e, t) {
+    "use forget";
+    let n = (0, Xt.c)(5),
+        [r, i] = (0, Zt.useState)(e),
+        a;
+    n[0] === t ? a = n[1] : (a = e => {
+        t(!0), i(e)
+    }, n[0] = t, n[1] = a);
+    let o = a,
+        s;
+    return n[2] !== o || n[3] !== r ? (s = [r, o], n[2] = o, n[3] = r, n[4] = s) : s = n[4], s
+}
+
+function Jt(e) {
+    "use forget";
+    let t = (0, Xt.c)(66),
+        {
+            workspaceId: r,
+            defaultName: i,
+            defaultAvatarId: a,
+            defaultAvatarUrl: o,
+            title: s,
+            workspaceContrastSettingRow: c
+        } = e,
+        l = i === void 0 ? `` : i,
+        u = de(),
+        d = le(),
+        [f, m] = (0, Zt.useState)(!1),
+        [h, g] = qt(l, m),
+        [v, y] = qt(a, m),
+        [x, S] = qt(o, m),
+        [C, T] = qt(void 0, m),
+        [D, O] = qt(null, m),
+        k, te;
+    t[0] !== C || t[1] !== O || t[2] !== D ? (k = () => {
+        if (C !== `initial` && C !== void 0 && D == null) {
+            let e = new FileReader;
+            e.addEventListener(`load`, () => {
+                let t = e.result;
+                typeof t == `string` && O(t)
+            }), e.readAsDataURL(C.file)
+        }
+    }, te = [C, O, D], t[0] = C, t[1] = O, t[2] = D, t[3] = k, t[4] = te) : (k = t[3], te = t[4]), (0, Zt.useEffect)(k, te);
+    let ne = async (e, t) => {
+        if (A.isPending) return;
+        let n = await ee(e, Qt),
+            r = Xe(n);
+        T({
+            tempId: r,
+            file: n,
+            status: E.Uploading,
+            progress: 1,
+            fileId: null,
+            cdnUrl: null
+        }), Ze(r, n, u, d, ie.ProfilePicture, {
+            onFileCreated(e, t, n) {
+                T(r => r !== `initial` && r?.tempId === e && r.status === E.Uploading ? {
+                    ...r,
+                    progress: 10,
+                    fileId: t,
+                    cdnUrl: n
+                } : r)
+            },
+            onFileUploadProgress(e, t) {
+                T(n => n !== `initial` && n?.tempId === e && n.status === E.Uploading ? {
+                    ...n,
+                    progress: t
+                } : n)
+            },
+            onFileUploaded(e, t, n) {
+                T(t => t !== `initial` && t && t.cdnUrl && t.tempId === e && t.fileId ? (p(t.fileId, {
+                    downloadIntent: !1
+                }).then(e => {
+                    e.status === _.Success && (y(t.fileId), S(e.download_url))
+                }), {
+                    ...t,
+                    status: E.Ready,
+                    progress: 100,
+                    fileSpec: {
+                        name: t.file.name,
+                        id: t.fileId ?? ``,
+                        size: t.file.size,
+                        mimeType: t.file.type,
+                        ...n ?? {
+                            width: 0,
+                            height: 0
+                        }
+                    }
+                }) : t)
+            },
+            onError(e) {
+                T(t => {
+                    if (t !== `initial` && t?.tempId === e) {
+                        y(void 0), S(void 0), O(null);
+                        return
+                    }
+                    return t
+                })
+            }
+        }, {
+            selectionMethod: t
+        })
+    }, re;
+    t[5] !== y || t[6] !== S || t[7] !== T || t[8] !== O ? (re = () => {
+        y(null), S(null), T(void 0), O(null)
+    }, t[5] = y, t[6] = S, t[7] = T, t[8] = O, t[9] = re) : re = t[9];
+    let ae = re,
+        A = et(r),
+        oe;
+    t[10] === h ? oe = t[11] : (oe = h.trim(), t[10] = h, t[11] = oe);
+    let j = oe,
+        se = C !== `initial` && C !== void 0 && (C.status !== E.Ready || !x) || A.isPending || j.length === 0 || !f,
+        M;
+    t[12] !== se || t[13] !== u || t[14] !== j || t[15] !== v || t[16] !== x || t[17] !== A || t[18] !== d ? (M = () => {
+        se || A.mutate({
+            name: j,
+            profilePictureId: v,
+            profilePictureUrl: x
+        }, {
+            onSuccess: () => {
+                d.success(u.formatMessage($t.saveSuccessToast)), m(!1)
+            }
+        })
+    }, t[12] = se, t[13] = u, t[14] = j, t[15] = v, t[16] = x, t[17] = A, t[18] = d, t[19] = M) : M = t[19];
+    let N = M,
+        P = A.isPending,
+        ce = P ? `pointer-events-none opacity-50` : void 0,
+        F = s ?? $t.modalTitle,
+        ue;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (ue = (0, Z.jsx)(`div`, {
+        className: `flex flex-col justify-center gap-1`,
+        children: (0, Z.jsx)(`p`, {
+            className: `text-token-text-primary`,
+            children: (0, Z.jsx)(B, {
+                ...$t.workspaceName
+            })
+        })
+    }), t[20] = ue) : ue = t[20];
+    let I;
+    t[21] === g ? I = t[22] : (I = e => g(e.target.value), t[21] = g, t[22] = I);
+    let L;
+    t[23] !== P || t[24] !== h || t[25] !== I ? (L = (0, Z.jsxs)(Le, {
+        className: `gap-2`,
+        children: [ue, (0, Z.jsx)(fe, {
+            ariaLabel: !1,
+            type: `text`,
+            name: `workspace-name`,
+            value: h,
+            onChange: I,
+            maxLength: 64,
+            disabled: P,
+            className: `min-w-80`
+        })]
+    }), t[23] = P, t[24] = h, t[25] = I, t[26] = L) : L = t[26];
+    let R;
+    t[27] === Symbol.for(`react.memo_cache_sentinel`) ? (R = (0, Z.jsx)(`p`, {
+        className: `text-token-text-primary`,
+        children: (0, Z.jsx)(B, {
+            ...$t.workspaceAvatar
+        })
+    }), t[27] = R) : R = t[27];
+    let z;
+    t[28] === u ? z = t[29] : (z = u.formatMessage($t.workspaceAvatarDescription, {
+        size: Qt
+    }), t[28] = u, t[29] = z);
+    let V;
+    t[30] === Symbol.for(`react.memo_cache_sentinel`) ? (V = (0, Z.jsx)(Oe, {
+        className: `text-sm`
+    }), t[30] = V) : V = t[30];
+    let H;
+    t[31] === z ? H = t[32] : (H = (0, Z.jsxs)(`div`, {
+        className: `flex gap-1`,
+        children: [R, (0, Z.jsx)(w, {
+            side: `top`,
+            label: z,
+            children: V
+        })]
+    }), t[31] = z, t[32] = H);
+    let U;
+    t[33] !== ae || t[34] !== P || t[35] !== ne || t[36] !== x || t[37] !== C || t[38] !== D || t[39] !== ce ? (U = (0, Z.jsx)(`div`, {
+        className: `flex min-w-80 flex-col items-start gap-3`,
+        children: x ? (0, Z.jsxs)(`div`, {
+            className: `relative inline-flex`,
+            children: [(0, Z.jsx)(`img`, {
+                src: x,
+                alt: ``,
+                referrerPolicy: `no-referrer`,
+                className: `block h-24 w-24 rounded-full object-cover object-center`
+            }), (0, Z.jsx)(`div`, {
+                className: `absolute -end-1 -top-1`,
+                children: (0, Z.jsx)(Yt, {
+                    onClick: P ? void 0 : ae
+                })
+            })]
+        }) : C != null && C !== `initial` && D ? (0, Z.jsx)(`div`, {
+            className: `flex flex-col items-center text-center`,
+            children: (0, Z.jsxs)(`div`, {
+                className: `relative mb-3`,
+                children: [(0, Z.jsx)(`img`, {
+                    src: URL.createObjectURL(C.file),
+                    alt: ``,
+                    referrerPolicy: `no-referrer`,
+                    className: `block h-24 w-24 rounded-full object-cover object-center`
+                }), (0, Z.jsx)(`div`, {
+                    className: `absolute inset-0 flex items-center justify-center text-white`,
+                    children: (0, Z.jsx)(ye, {
+                        percentage: C.progress,
+                        className: `h-6 w-6`
+                    })
+                })]
+            })
+        }) : (0, Z.jsx)(`div`, {
+            className: ce,
+            children: (0, Z.jsx)(Ut, {
+                onFileChange: ne,
+                mimeTypes: b
+            })
+        })
+    }), t[33] = ae, t[34] = P, t[35] = ne, t[36] = x, t[37] = C, t[38] = D, t[39] = ce, t[40] = U) : U = t[40];
+    let W;
+    t[41] !== H || t[42] !== U ? (W = (0, Z.jsxs)(Le, {
+        className: `gap-3`,
+        children: [H, U]
+    }), t[41] = H, t[42] = U, t[43] = W) : W = t[43];
+    let G;
+    t[44] !== a || t[45] !== o || t[46] !== l || t[47] !== se || t[48] !== P || t[49] !== N || t[50] !== f || t[51] !== A.isPending || t[52] !== y || t[53] !== S || t[54] !== g || t[55] !== T || t[56] !== O ? (G = f && (0, Z.jsxs)(Le, {
+        className: `justify-end gap-2`,
+        children: [(0, Z.jsx)(n, {
+            size: `small`,
+            color: `secondary`,
+            onClick: () => {
+                P || (g(l), y(a), S(o), T(void 0), O(null), m(!1))
+            },
+            disabled: P || !f,
+            children: (0, Z.jsx)(B, {
+                ...$t.modalReset
+            })
+        }), (0, Z.jsx)(n, {
+            size: `small`,
+            color: `primary`,
+            onClick: N,
+            disabled: se,
+            loading: A.isPending,
+            children: (0, Z.jsx)(B, {
+                ...$t.modalSubmit
+            })
+        })]
+    }), t[44] = a, t[45] = o, t[46] = l, t[47] = se, t[48] = P, t[49] = N, t[50] = f, t[51] = A.isPending, t[52] = y, t[53] = S, t[54] = g, t[55] = T, t[56] = O, t[57] = G) : G = t[57];
+    let K;
+    t[58] !== L || t[59] !== W || t[60] !== G || t[61] !== c ? (K = (0, Z.jsxs)(Fe, {
+        children: [L, W, c, G]
+    }), t[58] = L, t[59] = W, t[60] = G, t[61] = c, t[62] = K) : K = t[62];
+    let q;
+    return t[63] !== K || t[64] !== F ? (q = (0, Z.jsx)(Pe, {
+        title: F,
+        children: K
+    }), t[63] = K, t[64] = F, t[65] = q) : q = t[65], q
+}
+
+function Yt(e) {
+    "use forget";
+    let t = (0, Xt.c)(3),
+        {
+            onClick: n
+        } = e,
+        r;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (r = (0, Z.jsx)(m, {
+        className: `h-3 w-3`
+    }), t[0] = r) : r = t[0];
+    let i;
+    return t[1] === n ? i = t[2] : (i = (0, Z.jsx)(`div`, {
+        className: `flex h-6 w-6 cursor-pointer flex-row flex-wrap content-center justify-center rounded-full border-2 border-white bg-black text-white`,
+        onClick: n,
+        children: r
+    }), t[1] = n, t[2] = i), i
+}
+var Xt, Zt, Z, Qt, $t, en = e((() => {
+        Xt = K(), h(), ne(), ge(), Kt(), Ne(), We(), Ce(), g(), ke(), oe(), qe(), S(), d(), Zt = t(U()), H(), tt(), v(), Z = I(), Qt = 192, $t = R({
+            modalTitle: {
+                id: `5YXskQ`,
+                defaultMessage: `Appearance`
+            },
+            workspaceName: {
+                id: `GqMYq4`,
+                defaultMessage: `Workspace name`
+            },
+            workspaceAvatar: {
+                id: `out1Ek`,
+                defaultMessage: `Logo`
+            },
+            workspaceAvatarDescription: {
+                id: `OY7Lnp`,
+                defaultMessage: `Upload a JPEG or PNG workspace logo for your team. (Minimum {size}×{size}px recommended.)`
+            },
+            saveSuccessToast: {
+                id: `crqLbt`,
+                defaultMessage: `Workspace appearance updated`
+            },
+            modalSubmit: {
+                id: `G0MNSo`,
+                defaultMessage: `Save`
+            },
+            modalReset: {
+                id: `rxaWUV`,
+                defaultMessage: `Reset`
+            }
+        })
+    })),
+    tn = e((() => {
+        K(), We(), l(), Je(), r(), d(), U(), H(), I(), R({
+            contrastMode: {
+                id: `workspaceSettings.contrastMode`,
+                defaultMessage: `Contrast`
+            },
+            medium: {
+                id: `workspaceSettings.contrastMode.medium`,
+                defaultMessage: `Medium`
+            },
+            high: {
+                id: `workspaceSettings.contrastMode.high`,
+                defaultMessage: `Increased`
+            }
+        })
+    }));
+
+function nn() {
+    return T(rn)
+}
+var rn, an = e((() => {
+    a(), rn = `2121254253`
+}));
+
+function on() {
+    "use forget";
+    let e = (0, un.c)(12),
+        t = de(),
+        n;
+    e[0] === t ? n = e[1] : (n = t.formatMessage($.businessPilotProgramTitle, {
+        programName: pn
+    }), e[0] = t, e[1] = n);
+    let r = n,
+        i;
+    e[2] === r ? i = e[3] : (i = (0, Q.jsx)(Ie, {
+        children: r
+    }), e[2] = r, e[3] = i);
+    let a;
+    e[4] === Symbol.for(`react.memo_cache_sentinel`) ? (a = (0, Q.jsx)(Ae, {
+        className: `text-token-text-secondary`,
+        children: (0, Q.jsx)(B, {
+            ...$.businessPilotProgramDescription,
+            values: {
+                programName: pn,
+                link: sn
+            }
+        })
+    }), e[4] = a) : a = e[4];
+    let o;
+    e[5] === i ? o = e[6] : (o = (0, Q.jsxs)(`div`, {
+        className: `flex flex-col gap-2`,
+        "data-testid": `business-pilot-program-copy`,
+        children: [i, a]
+    }), e[5] = i, e[6] = o);
+    let s;
+    e[7] === r ? s = e[8] : (s = (0, Q.jsx)(A, {
+        size: `normal`,
+        "aria-label": r,
+        checked: !0,
+        disabled: !0
+    }), e[7] = r, e[8] = s);
+    let c;
+    return e[9] !== o || e[10] !== s ? (c = (0, Q.jsx)(Me, {
+        children: (0, Q.jsxs)(`div`, {
+            className: `flex items-start justify-between gap-4 py-2`,
+            "data-testid": `business-pilot-program-section-row`,
+            children: [o, s]
+        })
+    }), e[9] = o, e[10] = s, e[11] = c) : c = e[11], c
+}
+
+function sn(e) {
+    return (0, Q.jsx)(_e, {
+        href: fn,
+        openNewTab: !0,
+        className: `hover:text-token-text-primary/80 text-token-text-primary underline-offset-2`,
+        children: e
+    })
+}
+
+function cn(e) {
+    "use forget";
+    let t = (0, un.c)(64),
+        {
+            currentWorkspaceId: n
+        } = e,
+        r = n,
+        i = de(),
+        a = se(),
+        s = x(),
+        c = s?.isEnterprisey(),
+        l = !c,
+        {
+            data: d,
+            isLoading: f,
+            refetch: p
+        } = re(r),
+        m = o(ln),
+        {
+            role: h,
+            profilePicUrl: g,
+            workspaceName: ee,
+            profilePicId: _
+        } = Ve(),
+        v;
+    t[0] !== h || t[1] !== m ? (v = h == null ? m == null ? void 0 : be(m.role) : be(h), t[0] = h, t[1] = m, t[2] = v) : v = t[2];
+    let b = v,
+        S;
+    t[3] !== h || t[4] !== m ? (S = h == null ? m == null ? void 0 : we(m.role) : we(h), t[3] = h, t[4] = m, t[5] = S) : S = t[5];
+    let C = S,
+        w, E;
+    if (t[6] === Symbol.for(`react.memo_cache_sentinel`)) {
+        let e = O(`3528236309`);
+        w = e.get(`show_classification_tab`, !1), E = e.get(`show_impact_tab`, !1), t[6] = w, t[7] = E
+    } else w = t[6], E = t[7];
+    let D = E,
+        k;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (k = Et(), t[8] = k) : k = t[8];
+    let ne = k,
+        ie;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (ie = wt(), t[9] = ie) : ie = t[9];
+    let ae = ie,
+        A = nn() && te(s?.planType),
+        oe = w || D || ne,
+        j = ue().hash === `#workspace-usage-analytics` && d != null && b === !0 && oe,
+        M, N;
+    t[10] === j ? (M = t[11], N = t[12]) : (M = () => {
+        j && document.getElementById(Dt)?.scrollIntoView({
+            behavior: `smooth`,
+            block: `start`
+        })
+    }, N = [j], t[10] = j, t[11] = M, t[12] = N), (0, dn.useEffect)(M, N);
+    let P;
+    t[13] !== b || t[14] !== f || t[15] !== r || t[16] !== d ? (P = void 0, t[13] = b, t[14] = f, t[15] = r, t[16] = d, t[17] = P) : P = t[17];
+    let le = P,
+        F;
+    t[18] !== b || t[19] !== f || t[20] !== ae || t[21] !== A || t[22] !== r || t[23] !== d ? (F = b && d ? {
+        memory_access: (0, Q.jsx)(Le, {
+            children: (0, Q.jsxs)(`div`, {
+                className: `flex w-full items-center justify-between gap-4`,
+                children: [(0, Q.jsxs)(`div`, {
+                    children: [(0, Q.jsx)(`div`, {
+                        className: `text-md flex gap-2`,
+                        children: (0, Q.jsx)(B, {
+                            ...$.chatRetentionPolicyTitle
+                        })
+                    }), (0, Q.jsx)(`span`, {
+                        className: `text-token-text-tertiary text-xs`,
+                        children: (0, Q.jsx)(B, {
+                            ...$.chatRetentionPolicyDescription
+                        })
+                    })]
+                }), (0, Q.jsx)(_t, {
+                    data: d
+                })]
+            })
+        }),
+        plugins: (0, Q.jsxs)(Q.Fragment, {
+            children: [ae && (0, Q.jsx)(Tt, {
+                workspaceId: r,
+                workspaceSettings: d,
+                isLoadingWorkspace: f
+            }), A && (0, Q.jsx)(Ct, {
+                workspaceId: r,
+                workspaceSettings: d,
+                isLoadingWorkspace: f
+            }), (0, Q.jsx)(Ot, {
+                workspaceId: r,
+                workspaceSettings: d,
+                isLoadingWorkspace: f
+            })]
+        })
+    } : void 0, t[18] = b, t[19] = f, t[20] = ae, t[21] = A, t[22] = r, t[23] = d, t[24] = F) : F = t[24];
+    let I = F,
+        L;
+    t[25] !== a?.data || t[26] !== a?.name || t[27] !== _ || t[28] !== g || t[29] !== ee || t[30] !== C || t[31] !== b || t[32] !== c || t[33] !== f || t[34] !== s?.isFedrampCompliantWorkspace || t[35] !== p || t[36] !== le || t[37] !== r || t[38] !== I || t[39] !== d ? (L = d && (0, Q.jsxs)(Q.Fragment, {
+        children: [b && (0, Q.jsx)(Jt, {
+            workspaceId: r,
+            defaultName: ee ?? a?.name ?? ``,
+            defaultAvatarId: _ ?? a?.data.profilePictureId ?? void 0,
+            defaultAvatarUrl: g ?? a?.data.profilePictureUrl ?? void 0,
+            title: $.brandingTitle,
+            workspaceContrastSettingRow: le
+        }), C && (0, Q.jsx)(pt, {
+            workspaceId: r,
+            title: $.detailsTitle
+        }), C && (0, Q.jsx)(yt, {
+            workspaceId: r,
+            upsellEnterprise: l,
+            data: d,
+            title: $.policyTitle
+        }, r), C && c && T(`3957595485`) && !s?.isFedrampCompliantWorkspace && (0, Q.jsx)(Nt, {
+            workspaceId: r,
+            workspaceSettings: d
+        }), C && (0, Q.jsx)(dt, {
+            workspaceId: r,
+            upsellEnterprise: l,
+            data: d,
+            refetch: p
+        }), b && oe && (0, Q.jsx)(St, {
+            workspaceId: r,
+            workspaceSettings: d,
+            isLoadingWorkspace: f,
+            title: $.analyticsTitle
+        }), b && (0, Q.jsx)(bt, {
+            workspaceId: r,
+            mode: `workspace-only`,
+            workspaceOnlyRowsBeforeSettingName: I,
+            workspaceOnlySectionTitle: $.workspacePoliciesTitle
+        }), C && !b && (0, Q.jsx)(Vt, {
+            workspaceId: r,
+            workspaceSettings: d
+        }), d.beta_settings[ce.TRAINING_ALLOWED] && (0, Q.jsx)(on, {})]
+    }), t[25] = a?.data, t[26] = a?.name, t[27] = _, t[28] = g, t[29] = ee, t[30] = C, t[31] = b, t[32] = c, t[33] = f, t[34] = s?.isFedrampCompliantWorkspace, t[35] = p, t[36] = le, t[37] = r, t[38] = I, t[39] = d, t[40] = L) : L = t[40];
+    let R = L,
+        z;
+    t[41] === i ? z = t[42] : (z = i.formatMessage($.title), t[41] = i, t[42] = z);
+    let V;
+    t[43] === z ? V = t[44] : (V = (0, Q.jsx)($e, {
+        children: (0, Q.jsx)(`title`, {
+            children: z
+        })
+    }), t[43] = z, t[44] = V);
+    let H;
+    t[45] === i ? H = t[46] : (H = i.formatMessage($.title), t[45] = i, t[46] = H);
+    let U;
+    t[47] === i ? U = t[48] : (U = i.formatMessage($.subtitle), t[47] = i, t[48] = U);
+    let W;
+    t[49] !== H || t[50] !== U ? (W = (0, Q.jsx)(ze, {
+        title: H,
+        subtitle: U,
+        showBottomBorder: !1
+    }), t[49] = H, t[50] = U, t[51] = W) : W = t[51];
+    let G;
+    t[52] === Symbol.for(`react.memo_cache_sentinel`) ? (G = u(`mt-4 flex flex-col gap-7 pb-[60px]`, He), t[52] = G) : G = t[52];
+    let K;
+    t[53] === f ? K = t[54] : (K = f && (0, Q.jsx)(y, {}), t[53] = f, t[54] = K);
+    let q;
+    t[55] === R ? q = t[56] : (q = (0, Q.jsx)(je, {
+        variant: `card`,
+        children: R
+    }), t[55] = R, t[56] = q);
+    let fe;
+    t[57] !== K || t[58] !== q ? (fe = (0, Q.jsx)(Be, {
+        children: (0, Q.jsxs)(`div`, {
+            "data-testid": `workspace-general-redesign-sections`,
+            className: G,
+            children: [K, q]
+        })
+    }), t[57] = K, t[58] = q, t[59] = fe) : fe = t[59];
+    let pe;
+    return t[60] !== V || t[61] !== W || t[62] !== fe ? (pe = (0, Q.jsxs)(Q.Fragment, {
+        children: [V, W, fe]
+    }), t[60] = V, t[61] = W, t[62] = fe, t[63] = pe) : pe = t[63], pe
+}
+
+function ln(e) {
+    return e.currentWorkspace
+}
+var un, dn, Q, fn, pn, $, mn = e((() => {
+        un = K(), Qe(), dn = t(U()), H(), h(), Re(), We(), gt(), mt(), jt(), Lt(), ht(), Ne(), Ht(), Te(), en(), tn(), D(), ve(), C(), F(), M(), i(), k(), a(), N(), V(), Ue(), xt(), an(), Q = I(), fn = `https://help.openai.com/articles/20001419`, pn = `Business Pilot Program`, $ = R({
+            title: {
+                id: `LW8JgL`,
+                defaultMessage: `General`
+            },
+            subtitle: {
+                id: `workspaceSettings.general.subtitle`,
+                defaultMessage: `Customize your workspace.`
+            },
+            brandingTitle: {
+                id: `workspaceSettings.general.brandingTitle`,
+                defaultMessage: `Branding`
+            },
+            detailsTitle: {
+                id: `workspaceSettings.general.workspaceIdsTitle`,
+                defaultMessage: `Workspace IDs`
+            },
+            policyTitle: {
+                id: `cbA42d`,
+                defaultMessage: `Policy`
+            },
+            analyticsTitle: {
+                id: `workspaceSettings.general.analyticsAndReportingTitle`,
+                defaultMessage: `Analytics and reporting`
+            },
+            workspacePoliciesTitle: {
+                id: `workspaceSettings.general.workspacePoliciesTitle`,
+                defaultMessage: `Workspace policies`
+            },
+            chatRetentionPolicyTitle: {
+                id: `VbkaOU`,
+                defaultMessage: `Chat retention policy`
+            },
+            chatRetentionPolicyDescription: {
+                id: `jk6qrt`,
+                defaultMessage: `Contact your support to change this setting`
+            },
+            businessPilotProgramTitle: {
+                id: `workspaceSettings.general.businessPilotProgram.title`,
+                defaultMessage: `{programName} Enrolled`
+            },
+            businessPilotProgramDescription: {
+                id: `workspaceSettings.general.businessPilotProgram.description`,
+                defaultMessage: `This workspace is enrolled in the {programName}, which allows OpenAI to use workspace data to improve models. To opt out, follow the instructions in the Help Center. <link>Learn more</link>`
+            }
+        })
+    })),
+    hn, gn, _n, vn = e((() => {
+        V(), hn = K(), Re(), mn(), Te(), rt(), gn = I(), _n = L(function() {
+            "use forget";
+            let e = (0, hn.c)(6),
+                t = nt(),
+                {
+                    adminConsoleRedirects: n,
+                    role: r
+                } = Ve(),
+                i;
+            e[0] !== n?.general || e[1] !== r ? (i = n?.general !== !0 && r != null && we(r), e[0] = n?.general, e[1] = r, e[2] = i) : i = e[2];
+            let a = i,
+                o;
+            return e[3] !== a || e[4] !== t ? (o = a ? (0, gn.jsx)(cn, {
+                ...t
+            }) : null, e[3] = a, e[4] = t, e[5] = o) : o = e[5], o
+        })
+    }));
+e((() => {
+    vn()
+}))();
+export {
+    _n as
+    default
+};
 //# sourceMappingURL=admin._index-gq8g3u9b.js.map

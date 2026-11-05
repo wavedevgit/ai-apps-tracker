@@ -1,2 +1,159 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{FH as t,LH as n,o as r,s as i}from"./4813494d-mdvd4786a87166cc.js";import{Bn as a,Q as o,kt as s,wn as c}from"./2340486e-i7pjxgdhv0bs6apg.js";import{n as l,t as u}from"./f9d93d16-m24q35feawce1n6g.js";import{n as d,t as f}from"./6c802ee8-ohn3bmgck3je35ix.js";import{n as p,t as m}from"./78f263ec-lwkcawu5nu5u7cb9.js";import{r as h,t as g}from"./ac5aaa26-g1gh3dtfgg67x40j.js";import{n as _,t as v}from"./ce99d8dd-lz7tbjjmvyh41q3b.js";import{r as y,t as b}from"./ae6c79d1-kgl8xzc5k18lt2iy.js";import{i as x,n as S,t as C}from"./4243b479-ee3v9k30xi1o6vn5.js";import{r as w,t as T}from"./60383486-foq8fg3yr261tzq6.js";import{n as E,t as D}from"./f796e2f2-hcx6589icjcaodmc.js";import{r as O,t as k}from"./d0607f7a-kau5xrmv04gb7nx1.js";import{r as A,t as j}from"./99f71fc2-ms6nw40na3qo1ptj.js";import{r as M,t as N}from"./3bb2e449-bat70w1a56lgdnz3.js";import{r as P,t as F}from"./944c27e5-ggxehsve2dwus8y6.js";import{n as I,t as L}from"./e2dcc34d-b4za3v7vcgzhd7fd.js";import{n as R,t as z}from"./2290d7d7-h7nenoe971gxi7f7.js";import{r as B,t as V}from"./0301844c-bkkpg7mrfppc49lo.js";import{r as H,t as U}from"./02cbba55-nc58aaha8pr8nppj.js";var W,G=e((()=>{h(),_(),y(),x(),w(),E(),O(),A(),M(),P(),I(),R(),B(),H(),W={DotsMediaResources:()=>{"use forget";return null},DotsSection:U,DotsCmsSection:g,DotsSubNav:v,DotsHero:b,DotsBento:C,DotsBentoTile:S,DotsGetStarted:T,DotsTrust:D,DotsFilm:k,DotsCustomize:j,DotsCharacterSelector:N,DotsDay:F,DotsMessaging:L,DotsUseCases:z,DotsFooter:V}}));function K(){"use forget";let e=(0,q.c)(5),{pageData:t,locale:n,headerNavData:r,footerData:i}=s(),a;return e[0]!==i||e[1]!==r||e[2]!==n||e[3]!==t?(a=(0,J.jsx)(u.Provider,{value:W,children:(0,J.jsx)(f,{page:t,locale:n,contentType:`customPage`,layout:`dotsPage`,customPageShell:m,headerNav:r,footer:i})}),e[0]=i,e[1]=r,e[2]=n,e[3]=t,e[4]=a):a=e[4],a}var q,J,Y=e((()=>{q=c(),d(),l(),p(),G(),o(),J=a()})),X,Z,Q,$=e((()=>{n(),Y(),i(),X={hasRouteMeta:!0,useScrollRestoration:!0},Z=()=>[`Regular`,`Medium`,`Bold`].map(e=>({rel:`preload`,as:`font`,type:`font/woff2`,crossOrigin:`anonymous`,href:`https://cdn.openai.com/common/fonts/openai-sans/v4/OpenAISans-${e}.woff2`})),Q=({data:e,location:n})=>e?.pageData?t(e.pageData,n.pathname):[{title:`ChatGPT`}]}));e((()=>{$()}))();export{r as ErrorBoundary,K as default,X as handle,Z as links,Q as meta};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    FH as t,
+    LH as n,
+    o as r,
+    s as i
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as a,
+    Q as o,
+    kt as s,
+    wn as c
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    n as l,
+    t as u
+} from "./f9d93d16-m24q35feawce1n6g.js";
+import {
+    n as d,
+    t as f
+} from "./6c802ee8-ohn3bmgck3je35ix.js";
+import {
+    n as p,
+    t as m
+} from "./78f263ec-lwkcawu5nu5u7cb9.js";
+import {
+    r as h,
+    t as g
+} from "./ac5aaa26-g1gh3dtfgg67x40j.js";
+import {
+    n as _,
+    t as v
+} from "./ce99d8dd-lz7tbjjmvyh41q3b.js";
+import {
+    r as y,
+    t as b
+} from "./ae6c79d1-kgl8xzc5k18lt2iy.js";
+import {
+    i as x,
+    n as S,
+    t as C
+} from "./4243b479-ee3v9k30xi1o6vn5.js";
+import {
+    r as w,
+    t as T
+} from "./60383486-foq8fg3yr261tzq6.js";
+import {
+    n as E,
+    t as D
+} from "./f796e2f2-hcx6589icjcaodmc.js";
+import {
+    r as O,
+    t as k
+} from "./d0607f7a-kau5xrmv04gb7nx1.js";
+import {
+    r as A,
+    t as j
+} from "./99f71fc2-ms6nw40na3qo1ptj.js";
+import {
+    r as M,
+    t as N
+} from "./3bb2e449-bat70w1a56lgdnz3.js";
+import {
+    r as P,
+    t as F
+} from "./944c27e5-ggxehsve2dwus8y6.js";
+import {
+    n as I,
+    t as L
+} from "./e2dcc34d-b4za3v7vcgzhd7fd.js";
+import {
+    n as R,
+    t as z
+} from "./2290d7d7-h7nenoe971gxi7f7.js";
+import {
+    r as B,
+    t as V
+} from "./0301844c-bkkpg7mrfppc49lo.js";
+import {
+    r as H,
+    t as U
+} from "./02cbba55-nc58aaha8pr8nppj.js";
+var W, G = e((() => {
+    h(), _(), y(), x(), w(), E(), O(), A(), M(), P(), I(), R(), B(), H(), W = {
+        DotsMediaResources: () => {
+            "use forget";
+            return null
+        },
+        DotsSection: U,
+        DotsCmsSection: g,
+        DotsSubNav: v,
+        DotsHero: b,
+        DotsBento: C,
+        DotsBentoTile: S,
+        DotsGetStarted: T,
+        DotsTrust: D,
+        DotsFilm: k,
+        DotsCustomize: j,
+        DotsCharacterSelector: N,
+        DotsDay: F,
+        DotsMessaging: L,
+        DotsUseCases: z,
+        DotsFooter: V
+    }
+}));
+
+function K() {
+    "use forget";
+    let e = (0, q.c)(5),
+        {
+            pageData: t,
+            locale: n,
+            headerNavData: r,
+            footerData: i
+        } = s(),
+        a;
+    return e[0] !== i || e[1] !== r || e[2] !== n || e[3] !== t ? (a = (0, J.jsx)(u.Provider, {
+        value: W,
+        children: (0, J.jsx)(f, {
+            page: t,
+            locale: n,
+            contentType: `customPage`,
+            layout: `dotsPage`,
+            customPageShell: m,
+            headerNav: r,
+            footer: i
+        })
+    }), e[0] = i, e[1] = r, e[2] = n, e[3] = t, e[4] = a) : a = e[4], a
+}
+var q, J, Y = e((() => {
+        q = c(), d(), l(), p(), G(), o(), J = a()
+    })),
+    X, Z, Q, $ = e((() => {
+        n(), Y(), i(), X = {
+            hasRouteMeta: !0,
+            useScrollRestoration: !0
+        }, Z = () => [`Regular`, `Medium`, `Bold`].map(e => ({
+            rel: `preload`,
+            as: `font`,
+            type: `font/woff2`,
+            crossOrigin: `anonymous`,
+            href: `https://cdn.openai.com/common/fonts/openai-sans/v4/OpenAISans-${e}.woff2`
+        })), Q = ({
+            data: e,
+            location: n
+        }) => e?.pageData ? t(e.pageData, n.pathname) : [{
+            title: `ChatGPT`
+        }]
+    }));
+e((() => {
+    $()
+}))();
+export {
+    r as ErrorBoundary, K as
+    default, X as handle, Z as links, Q as meta
+};
 //# sourceMappingURL=(_lang).features.dots-ogkj2pph.js.map

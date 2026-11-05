@@ -1,2 +1,1252 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,DO as r,K5 as i,PO as a,Rz as o,U1 as s,ZG as c,eE as l,eK as u,oK as d,q1 as f,q5 as p,sK as m,wO as h,zz as g}from"./4813494d-mdvd4786a87166cc.js";import{At as _,Bn as v,Ht as y,Ln as b,Nn as x,Nt as S,O as C,Q as w,Rn as T,Vn as E,Vt as D,it as O,s as k,wn as A,zn as ee}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Djt as j,Ejt as M,h6t as N,m6t as P}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Av as F,Hc as I,Uc as te,jv as ne,vh as re,yh as ie}from"./30901919-s8bko9nrkqwv6i4f.js";import{Iv as L,Ix as ae,Lv as R,Lx as oe,ex as se,fl as ce,ib as le,is as ue,ix as de,lb as fe,ns as pe,pl as me,rb as he,ss as ge,tx as _e,ub as ve}from"./c2675c8c-oz03twoan08d72ud.js";import{d as ye,n as be,o as xe,r as z,s as Se,t as Ce,u as B}from"./6fd89734-l8h178glfzpxynlr.js";import{n as we,t as Te}from"./9f2e6d33-h33rm8r24h08gyr1.js";import{i as Ee,n as De,r as Oe}from"./c8db4812-l8p8wtoobvoime0n.js";import{i as ke,n as Ae,r as je}from"./32d3feda-hhfdhqajoabb5vr8.js";import{a as Me,n as Ne,t as Pe}from"./8c6976e5-d8nzzrgxiaivy5n7.js";import{i as Fe,n as Ie}from"./552e61db-bshpkao8z1edj0cq.js";import{s as Le,t as Re}from"./4ed85438-egjmwvrzf8aj2kcd.js";import{a as ze,i as Be,t as V}from"./74bc827c-bjrllce596r9185a.js";import{a as Ve,r as He}from"./b411f8ca-dtjeeyv7ex6up6ph.js";import{A as Ue,C as We,M as Ge,O as Ke,P as qe,S as H,j as Je,k as Ye,r as Xe,s as Ze}from"./b90db9d2-obtztx8g8suw7cbr.js";import{a as Qe,d as $e,f as et,o as tt,p as nt,r as U}from"./a48d4e1d-otckigvd59q5rja7.js";import{a as rt,i as W,n as it,r as at,t as ot}from"./edb491ed-ds712o77vaxkc06g.js";import{n as st,t as ct}from"./e0031da9-d3w89bllwy7q0ff6.js";import{r as lt,t as ut}from"./12cc112f-nvr9jolbx5qr37j4.js";function dt(e){return(0,K.jsx)(`col`,{style:{width:`167px`}},e.id)}var G,ft,K,q,J,pt,Y,mt,X,ht=e((()=>{G=A(),Be(),Se(),ne(),ie(),j(),R(),Je(),W(),g(),p(),ft=t(E()),T(),w(),K=v(),q=`bg-token-bg-primary sticky start-0 z-20`,J=`bg-token-bg-secondary-surface! h-[58px] py-0 text-[13px] font-medium`,pt=e=>{"use forget";let t=(0,G.c)(48),{isLoading:n,isPlaceholderData:r,isFiltered:a,isCustomPermissionInheritanceEnabled:s,onClearSearch:c,sections:l,roles:u,statsigOverrideSearch:d,workspaceId:f}=e,p=ee(),m;if(t[0]!==d){let e=new URLSearchParams(d);e.set(be,Ce.returnTab),m=e.toString(),t[0]=d,t[1]=m}else m=t[1];let h=m;if(u==null||l==null){let e;return t[2]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,K.jsx)(`div`,{className:`flex justify-center py-8`,children:(0,K.jsx)(o,{})}),t[2]=e):e=t[2],e}let g=440+u.length*167,_;if(t[3]!==s||t[4]!==u||t[5]!==f){let e=u.find(B);_=new Map(u.map(t=>[t.id,s&&e!=null&&ye(t,f)&&!ze(t)?V({role:t,defaultRole:e}):t.permissions])),t[3]=s,t[4]=u,t[5]=f,t[6]=_}else _=t[6];let v=_,y=`${g}px`,b;t[7]===y?b=t[8]:(b={width:y},t[7]=y,t[8]=b);let x;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(x=(0,K.jsx)(`col`,{style:{width:`440px`}}),t[9]=x):x=t[9];let S;t[10]===u?S=t[11]:(S=u.map(dt),t[10]=u,t[11]=S);let C;t[12]===S?C=t[13]:(C=(0,K.jsxs)(`colgroup`,{children:[x,S]}),t[12]=S,t[13]=C);let w;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(w=i(q,J,`z-30`),t[14]=w):w=t[14];let T;t[15]===p?T=t[16]:(T=p.formatMessage(X.permission),t[15]=p,t[16]=T);let E;t[17]===T?E=t[18]:(E=(0,K.jsx)(L.HeaderCell,{className:w,children:T}),t[17]=T,t[18]=E);let D;if(t[19]!==p||t[20]!==h||t[21]!==u){let e;t[23]!==p||t[24]!==h?(e=e=>(0,K.jsx)(L.HeaderCell,{textAlign:`center`,className:J,children:(0,K.jsxs)(`div`,{className:`flex min-w-0 items-center justify-center gap-2 overflow-hidden px-2 text-center`,children:[(0,K.jsx)(O,{to:{pathname:`/admin/permissions/roles/${e.id}`,search:h},state:Ce,className:`text-token-link focus-visible:ring-token-border-light block max-w-full min-w-0 truncate rounded-sm hover:underline focus-visible:ring-2 focus-visible:outline-none`,children:B(e)?p.formatMessage(X.workspaceRole):e.name}),B(e)&&(0,K.jsx)(`span`,{className:`border-token-border-default text-token-text-secondary rounded-md border px-1.5 py-0.5 text-xs`,children:p.formatMessage(X.defaultRoleBadge)})]})},e.id),t[23]=p,t[24]=h,t[25]=e):e=t[25],D=u.map(e),t[19]=p,t[20]=h,t[21]=u,t[22]=D}else D=t[22];let k;t[26]!==E||t[27]!==D?(k=(0,K.jsxs)(L.Header,{children:[E,D]}),t[26]=E,t[27]=D,t[28]=k):k=t[28];let A=(n||r)&&`opacity-50`,j;t[29]===A?j=t[30]:(j=i(A),t[29]=A,t[30]=j);let N;t[31]!==v||t[32]!==p||t[33]!==a||t[34]!==c||t[35]!==u||t[36]!==l?(N=l.length===0?(0,K.jsx)(mt,{colSpan:u.length+1,isFiltered:a,onClearSearch:c}):l.map(e=>(0,K.jsxs)(ft.Fragment,{children:[(0,K.jsx)(L.Row,{className:`bg-token-bg-secondary-surface`,children:(0,K.jsx)(L.Cell,{colSpan:u.length+1,className:`ps-0!`,divClassName:`min-h-[36px] items-center`,children:(0,K.jsx)(`span`,{className:`text-token-text-primary sticky start-0 ps-2 text-[13px] font-medium md:ps-6 lg:ps-10`,children:e.title})})}),e.rows.map(t=>(0,K.jsxs)(L.Row,{children:[(0,K.jsx)(L.Cell,{className:q,divClassName:`min-h-[60px] items-center`,children:(0,K.jsxs)(`div`,{className:i(`flex min-w-0 items-center gap-2`,t.hierarchy===`child`&&`ps-5`),children:[(0,K.jsx)(`span`,{className:`truncate`,children:t.title}),t.infoTooltip&&(0,K.jsx)(M,{content:t.infoTooltip,side:`top-center`,children:e=>(0,K.jsx)(`button`,{...e,type:`button`,"aria-label":p.formatMessage(X.permissionInfo,{permission:t.title}),className:`interactive-button text-token-text-tertiary shrink-0`,children:(0,K.jsx)(re,{"aria-hidden":`true`,className:`icon-sm`})})}),t.badge&&(0,K.jsx)(`span`,{className:`inline-flex h-[18px] shrink-0 items-center justify-center rounded-[6px] bg-[var(--green-a50)] px-[5px] text-xs font-medium text-[light-dark(var(--green-600),var(--green-400))]`,children:t.badge})]})}),u.map(n=>(0,K.jsx)(L.Cell,{textAlign:`center`,divClassName:`min-h-[60px] items-center justify-center`,children:(0,K.jsx)(Y,{role:n,row:t,currentPermissionNames:v.get(n.id)??n.permissions,permissionDependencyByName:e.permissionDependencyByName})},n.id))]},t.permissionName))]},e.title)),t[31]=v,t[32]=p,t[33]=a,t[34]=c,t[35]=u,t[36]=l,t[37]=N):N=t[37];let P;t[38]!==j||t[39]!==N?(P=(0,K.jsx)(L.Body,{className:j,children:N}),t[38]=j,t[39]=N,t[40]=P):P=t[40];let F;t[41]!==k||t[42]!==P||t[43]!==C?(F=(0,K.jsxs)(L.Root,{fixed:!0,disableScroll:!0,className:`w-full [&_td:first-child]:ps-2 md:[&_td:first-child]:ps-6 lg:[&_td:first-child]:ps-10 [&_td:not(:last-child)]:border-e [&_th:first-child]:ps-2 md:[&_th:first-child]:ps-6 lg:[&_th:first-child]:ps-10 [&_th:not(:last-child)]:border-e`,children:[C,k,P]}),t[41]=k,t[42]=P,t[43]=C,t[44]=F):F=t[44];let I;return t[45]!==F||t[46]!==b?(I=(0,K.jsx)(`div`,{className:`-mx-2 h-[calc(100vh-14rem)] overflow-auto md:-mx-6 lg:-mx-10`,children:(0,K.jsx)(`div`,{className:`min-w-full`,style:b,children:F})}),t[45]=F,t[46]=b,t[47]=I):I=t[47],I},Y=e=>{"use forget";let t=(0,G.c)(12),{role:n,row:r,currentPermissionNames:i,permissionDependencyByName:a}=e,o=ee(),s;t[0]!==i||t[1]!==a||t[2]!==n.id||t[3]!==r.dependsOnPermissionName||t[4]!==r.permissionName||t[5]!==r.renderDisabledToggleAsOffRoleIds||t[6]!==r.requiredPermissionNames||t[7]!==r.title?(s=!r.renderDisabledToggleAsOffRoleIds.includes(n.id)&&(r.permissionName===`__july30_work_parent__`?rt(i):r.requiredPermissionNames.every(e=>i.includes(e))&&xe({currentPermissionNames:i,entry:{rbac:!0,permissionName:r.permissionName,title:r.title,dependsOnPermissionName:r.dependsOnPermissionName},permissionDependencyByName:a})),t[0]=i,t[1]=a,t[2]=n.id,t[3]=r.dependsOnPermissionName,t[4]=r.permissionName,t[5]=r.renderDisabledToggleAsOffRoleIds,t[6]=r.requiredPermissionNames,t[7]=r.title,t[8]=s):s=t[8];let c=s,l;return t[9]!==o||t[10]!==c?(l=c?(0,K.jsx)(F,{"aria-label":o.formatMessage(X.permissionEnabled),className:`text-token-theme-blue-default mx-auto h-5 w-5`}):null,t[9]=o,t[10]=c,t[11]=l):l=t[11],l},mt=e=>{"use forget";let t=(0,G.c)(15),{colSpan:n,isFiltered:r,onClearSearch:i}=e,a=ee(),o;t[0]!==a||t[1]!==r?(o=a.formatMessage(r?X.emptySearchTitle:X.noPermissions),t[0]=a,t[1]=r,t[2]=o):o=t[2];let s;t[3]===o?s=t[4]:(s=(0,K.jsx)(`div`,{className:`text-token-text-primary font-medium`,children:o}),t[3]=o,t[4]=s);let c;t[5]!==a||t[6]!==r||t[7]!==i?(c=r&&(0,K.jsxs)(K.Fragment,{children:[(0,K.jsx)(`div`,{className:`text-token-text-secondary text-sm`,children:a.formatMessage(X.emptySearchDescription)}),(0,K.jsx)(`button`,{type:`button`,className:`interactive-button text-token-link text-sm hover:underline focus-visible:underline`,onClick:i,children:a.formatMessage(X.clearSearch)})]}),t[5]=a,t[6]=r,t[7]=i,t[8]=c):c=t[8];let l;t[9]!==s||t[10]!==c?(l=(0,K.jsxs)(`div`,{className:`flex min-h-[360px] flex-col items-center justify-center gap-2 px-4`,children:[s,c]}),t[9]=s,t[10]=c,t[11]=l):l=t[11];let u;return t[12]!==n||t[13]!==l?(u=(0,K.jsx)(L.Row,{children:(0,K.jsx)(L.Cell,{colSpan:n,textAlign:`center`,children:l})}),t[12]=n,t[13]=l,t[14]=u):u=t[14],u},X=b({permission:{id:`chatgpt.workspace.permissions.july30.matrix.column.permission`,defaultMessage:`Permission`},workspaceRole:{id:`chatgpt.workspace.permissions.july30.matrix.column.workspace_role`,defaultMessage:`Workspace`},defaultRoleBadge:{id:`chatgpt.workspace.permissions.july30.matrix.badge.default_role`,defaultMessage:`Default`},permissionInfo:{id:`chatgpt.workspace.permissions.july30.matrix.tooltip.info_button`,defaultMessage:`More information about {permission}`},permissionEnabled:{id:`chatgpt.workspace.permissions.july30.matrix.icon.permission_enabled`,defaultMessage:`Enabled`},noPermissions:{id:`chatgpt.workspace.permissions.july30.matrix.empty.no_permissions`,defaultMessage:`No permissions found.`},emptySearchTitle:{id:`chatgpt.workspace.permissions.july30.matrix.empty.search_title`,defaultMessage:`We couldn’t find anything`},emptySearchDescription:{id:`chatgpt.workspace.permissions.july30.matrix.empty.search_description`,defaultMessage:`Try adjusting your filters or keywords.`},clearSearch:{id:`chatgpt.workspace.permissions.july30.matrix.button.clear_search`,defaultMessage:`Clear search`}})}));function gt({intl:e,roles:t,rolePermissionSectionContext:n,searchFilter:r,showCompletePermissionRows:i,workspaceId:a=``,workspacePermissionCatalog:o}){if(t==null)return;let s=r.trim().toLowerCase(),c=new Map,l=new Map,u=Qe({catalog:o,workspaceId:a}),f=({entry:t,role:n,fallbackCategory:r})=>{if(t.permissionName===d.UseConnector)return;let i=c.get(t.permissionName);if(i!=null){n!=null&&t.disabled&&(i.disabledRoleIds.push(n.id),t.renderDisabledToggleAsOff&&i.renderDisabledToggleAsOffRoleIds.push(n.id));return}let a=Ke(t),o=Ye(t.permissionName),s=a?typeof a.title==`string`?a.title:e.formatMessage(a.title):typeof t.title==`string`?t.title:e.formatMessage(t.title),u=t.description?e.formatMessage(t.description,t.descriptionValues):void 0,f=typeof u==`string`?u:void 0,p=a?.infoTooltip?e.formatMessage(a.infoTooltip):f,m=o?.category??r,h=vt.get(m),g=h?e.formatMessage(h):m,_={permissionName:t.permissionName,requiredPermissionNames:t.permissionName===`__july30_work_parent__`?[d.FloraLocalAccess,Re]:[t.permissionName,...t.additionalPermissionNames??[],..._t[t.permissionName]??[]],title:s,...a?.badge?{badge:e.formatMessage(a.badge)}:{},infoTooltip:p,order:o?.order??2**53-1,hierarchy:a?.hierarchy??(t.dependsOnPermissionName?`child`:`standalone`),dependsOnPermissionName:t.dependsOnPermissionName,disabledRoleIds:n!=null&&t.disabled?[n.id]:[],renderDisabledToggleAsOffRoleIds:n!=null&&t.disabled&&t.renderDisabledToggleAsOff?[n.id]:[],searchText:[s,g].join(` `).toLowerCase()};c.set(t.permissionName,_);let v=l.get(m);v?v.push(_):l.set(m,[_])};for(let r of t){let{permissionsBySection:t}=U({permissions:$e({context:n,includeUnsatisfiedDependencies:!0,role:r}),...u});for(let n of at({sections:t,role:r,showCompletePermissionRows:!0})){let t=typeof n.title==`string`?n.title:n.title?e.formatMessage(n.title):`Platform Capabilities`;for(let e of n.entries)f({entry:e,role:r,fallbackCategory:t})}}if(i&&n.flags)for(let t of Xe(n.flags,e.formatMessage))for(let e of t.newReleaseEntries)e.rbac&&(f({entry:e,fallbackCategory:`Early access`}),e.permissionName===d.SitesAccess&&n.flags.appgenWorkspacePublishEnabled&&f({entry:Ue(),fallbackCategory:`Early access`}));let p=new Map(We.map((e,t)=>[e,t])),m=z([...c.values()].map(e=>({rbac:!0,permissionName:e.permissionName,title:e.title,dependsOnPermissionName:e.dependsOnPermissionName})));return[...l.entries()].sort(([e],[t])=>(p.get(e)??2**53-1)-(p.get(t)??2**53-1)).map(([t,n])=>{let r=vt.get(t);return{title:r?e.formatMessage(r):t,permissionDependencyByName:m,rows:n.filter(e=>s===``||e.searchText.includes(s)).sort((e,t)=>e.order-t.order)}}).filter(e=>e.rows.length>0)}var _t,vt,yt=e((()=>{qe(),Ze(),m(),et(),Je(),W(),tt(),Se(),Le(),_t={[d.ShareWorkspaceGPT]:[d.CrudGPT],[d.ShareExternalGPT]:[d.CrudGPT],[d.CanvasCodeNetworkAccess]:[d.CanvasCodeExecutionAccess]},vt=new Map([[`Early access`,H.earlyAccess],[`Financial services`,H.financialServices],[`ChartGPT - EHR Integrations`,Ge.title],[`Legal`,H.legal],[`Platform Capabilities`,H.platformCapabilities],[`Usage limits`,H.usageLimits],[`Chat`,H.chat],[`Chat extensions`,H.chatExtensions],[`Chat models`,H.chatModels],[`Work`,H.work],[`Codex`,H.codex]])}));function bt({showPermissionsByUserPrototype:e,tab:t,redirectRoles:n}){return t!=null&&jt(t)?t:de(n)}function xt(e){"use forget";let t=(0,kt.c)(142),{workspaceId:r}=e,a=ee(),s=_(),c=S(),{cloudConsoleM3Enrolled:l,adminConsoleRedirects:d}=me(),f=l===!0,[p]=D(),m;if(t[0]!==p){let e=new URLSearchParams;for(let t of p.getAll(`statsig_overrides`))e.append(`statsig_overrides`,t);m=e.toString(),t[0]=p,t[1]=m}else m=t[1];let g=m,v,y,b,x;t[2]!==d?.roles||t[3]!==p?(x=p.get(`tab`),y=!1,v=bt({showPermissionsByUserPrototype:y,tab:x,redirectRoles:d?.roles===!0}),b=jt(v),t[2]=d?.roles,t[3]=p,t[4]=v,t[5]=y,t[6]=b,t[7]=x):(v=t[4],y=t[5],b=t[6],x=t[7]);let w=!b,{data:T,isError:E}=u(r),O=T!=null&&!E,k=O&&T.custom_permission_inheritance_enabled===!0,A;t[8]===p?A=t[9]:(A=e=>{let t=new URLSearchParams(p);return t.set(`tab`,e),t.toString()},t[8]=p,t[9]=A);let j=A,[M,P]=(0,At.useState)(``),F;t[10]===M?F=t[11]:(F=M.trim(),t[10]=M,t[11]=F);let I=F!==``,[ne,re]=(0,At.useState)(!1),ie;t[12]===r?ie=t[13]:(ie={workspaceId:r},t[12]=r,t[13]=ie);let{data:R,isLoading:oe,isPlaceholderData:se}=ve(ie),ce;t[14]===r?ce=t[15]:(ce={workspaceId:r},t[14]=r,t[15]=ce);let{data:le,isLoading:de,isPlaceholderData:ge}=fe(ce),{knownCount:_e,isLoading:ye,isRefreshing:be}=N(r),xe=nt(v===`permissions-by-roles`?r:void 0),z;t[16]===r?z=t[17]:(z=he(r),t[16]=r,t[17]=z);let Se=v===`permissions-by-roles`&&xe.flags.isRbacEnabled&&r.length>0,B;t[18]!==z||t[19]!==Se?(B={...z,enabled:Se,refetchOnMount:`always`,refetchOnWindowFocus:`always`,retryOnMount:!0},t[18]=z,t[19]=Se,t[20]=B):B=t[20];let{data:we,isSuccess:Ee}=C(B);le?.summaries;let De;t[21]===le?.summaries?De=t[22]:(De=new Map(le?.summaries.map(St)),t[21]=le?.summaries,t[22]=De);let ke=De,Ae;t[23]!==R?.data||t[24]!==a||t[25]!==M?(Ae=()=>Oe(R?.data,M,e=>Et(e,a)),t[23]=R?.data,t[24]=a,t[25]=M,t[26]=Ae):Ae=t[26],R?.data;let Me;t[27]===Ae?Me=t[28]:(Me=Ae(),t[27]=Ae,t[28]=Me);let Ne=Me;R?.data;let Pe;t[29]!==v||t[30]!==R?.data||t[31]!==a||t[32]!==Ee||t[33]!==xe||t[34]!==M||t[35]!==r||t[36]!==we?(Pe=v===`permissions-by-roles`?gt({intl:a,roles:R?.data,rolePermissionSectionContext:xe,searchFilter:M,showCompletePermissionRows:!0,workspaceId:r,workspacePermissionCatalog:Ee?we:void 0}):void 0,t[29]=v,t[30]=R?.data,t[31]=a,t[32]=Ee,t[33]=xe,t[34]=M,t[35]=r,t[36]=we,t[37]=Pe):Pe=t[37];let Fe=Pe,Le;t[38]===a?Le=t[39]:(Le=a.formatMessage(Q.rolesTab),t[38]=a,t[39]=Le);let Re;t[40]===Le?Re=t[41]:(Re={key:`roles`,label:Le,children:null},t[40]=Le,t[41]=Re);let ze;t[42]===a?ze=t[43]:(ze=a.formatMessage(Q.permissionsByRolesTab),t[42]=a,t[43]=ze);let Be;t[44]===ze?Be=t[45]:(Be={key:`permissions-by-roles`,label:ze,children:null},t[44]=ze,t[45]=Be);let V;t[46]===y?V=t[47]:(V=[],t[46]=y,t[47]=V);let He;t[48]!==Re||t[49]!==Be||t[50]!==V?(He=[Re,Be,...V],t[48]=Re,t[49]=Be,t[50]=V,t[51]=He):He=t[51];let Ue=He,We;t[52]===Symbol.for(`react.memo_cache_sentinel`)?(We=h(),t[52]=We):We=t[52];let Ge=We,Ke;t[53]===Symbol.for(`react.memo_cache_sentinel`)?(Ke=Ge?[`connectors`]:void 0,t[53]=Ke):Ke=t[53];let qe;t[54]!==k||t[55]!==r?(qe={workspaceId:r,bootstrapResources:Ke,inheritDefaultMemberPermissions:k},t[54]=k,t[55]=r,t[56]=qe):qe=t[56];let{createRole:H}=Ve(qe),Je,Ye;t[57]!==v||t[58]!==j||t[59]!==s.pathname||t[60]!==c||t[61]!==x?(Je=()=>{x!==v&&c({pathname:s.pathname,search:j(v)},{replace:!0})},Ye=[v,j,s.pathname,c,x],t[57]=v,t[58]=j,t[59]=s.pathname,t[60]=c,t[61]=x,t[62]=Je,t[63]=Ye):(Je=t[62],Ye=t[63]),(0,At.useEffect)(Je,Ye);let Xe;t[64]!==j||t[65]!==s.pathname||t[66]!==c||t[67]!==y?(Xe=e=>{jt(e)&&(P(``),c({pathname:s.pathname,search:j(e)}))},t[64]=j,t[65]=s.pathname,t[66]=c,t[67]=y,t[68]=Xe):Xe=t[68];let Ze=Xe,Qe;t[69]===O?Qe=t[70]:(Qe=()=>{O&&(P(``),re(!0))},t[69]=O,t[70]=Qe);let $e=Qe,et;t[71]===Symbol.for(`react.memo_cache_sentinel`)?(et=()=>P(``),t[71]=et):et=t[71];let tt=et,U;t[72]===a?U=t[73]:(U=a.formatMessage(Q.title),t[72]=a,t[73]=U);let rt;t[74]===a?rt=t[75]:(rt=a.formatMessage(Q.permissionsSubtitle),t[74]=a,t[75]=rt);let W;t[76]!==v||t[77]!==O||t[78]!==a||t[79]!==f||t[80]!==w||t[81]!==$e||t[82]!==M?(W=w?null:(0,Z.jsxs)(`div`,{className:`flex items-center gap-2`,children:[(0,Z.jsx)(ae,{className:`w-[200px]`,value:M,onChange:e=>P(e.target.value),onClear:tt,label:a.formatMessage(v===`roles`?Q.searchRoles:Q.searchPermissions),clearLabel:a.formatMessage(Q.clearSearch),placeholder:a.formatMessage(v===`roles`?Q.searchRoles:Q.searchPermissions)}),!f&&(0,Z.jsx)(n,{color:`ghost`,icon:te,label:a.formatMessage(Q.createRole),onClick:$e,disabled:!O,className:`rounded-full! px-2.5`})]}),t[76]=v,t[77]=O,t[78]=a,t[79]=f,t[80]=w,t[81]=$e,t[82]=M,t[83]=W):W=t[83];let it;t[84]!==v||t[85]!==Ze||t[86]!==Ue?(it=(0,Z.jsx)(je,{items:Ue,activeTab:v,onTabChange:Ze,className:`gap-5! pt-0!`,tabClassName:`px-0!`}),t[84]=v,t[85]=Ze,t[86]=Ue,t[87]=it):it=t[87];let at;t[88]!==U||t[89]!==rt||t[90]!==W||t[91]!==it?(at=(0,Z.jsx)(ue,{contentWidth:`wide`,title:U,subtitle:rt,actions:W,tabsHeader:it}),t[88]=U,t[89]=rt,t[90]=W,t[91]=it,t[92]=at):at=t[92];let st=v===`permissions-by-roles`?`max-w-none!`:void 0,ct;t[93]===f?ct=t[94]:(ct=f&&(0,Z.jsx)(Ie,{}),t[93]=f,t[94]=ct);let lt;t[95]!==v||t[96]!==R?.data||t[97]!==I||t[98]!==a||t[99]!==k||t[100]!==oe||t[101]!==se||t[102]!==de||t[103]!==ge||t[104]!==ye||t[105]!==be||t[106]!==Fe||t[107]!==ke||t[108]!==Ne||t[109]!==y||t[110]!==g||t[111]!==r||t[112]!==_e?(lt=v===`roles`?(0,Z.jsxs)(L.Root,{fixed:!0,className:Ft,children:[(0,Z.jsxs)(`colgroup`,{children:[(0,Z.jsx)(`col`,{className:`w-[33%]`}),(0,Z.jsx)(`col`,{className:`w-[18%]`}),(0,Z.jsx)(`col`,{className:`w-[18%]`}),(0,Z.jsx)(`col`,{className:`w-[31%]`})]}),(0,Z.jsxs)(L.Header,{children:[(0,Z.jsx)(L.HeaderCell,{className:Mt,children:a.formatMessage(Q.roleName)}),(0,Z.jsx)(L.HeaderCell,{className:Mt,children:a.formatMessage(Q.groupsAssigned)}),(0,Z.jsx)(L.HeaderCell,{className:Mt,children:a.formatMessage(Q.members)}),(0,Z.jsx)(L.HeaderCell,{className:Mt,children:a.formatMessage(Q.lastUpdatedBy)})]}),(0,Z.jsx)(L.Body,{className:i((oe||se)&&`opacity-50`),children:Ne==null?(0,Z.jsx)(L.Row,{children:(0,Z.jsx)(L.Cell,{colSpan:4,textAlign:`center`,children:(0,Z.jsx)(o,{})})}):Ne.length===0?(0,Z.jsx)(Ct,{colSpan:4,isFiltered:I,onClearSearch:tt,unfilteredMessage:Q.noRoles}):Ne.map(e=>(0,Z.jsx)(wt,{role:e,statsigOverrideSearch:g,roleSummary:ke.get(e.id),isRoleSummaryLoading:de||ge,workspaceMemberCount:_e,isWorkspaceCountLoading:ye,isWorkspaceCountRefreshing:be},e.id))})]}):v===`permissions-by-roles`&&(0,Z.jsx)(pt,{isLoading:oe,isPlaceholderData:se,isFiltered:I,isCustomPermissionInheritanceEnabled:k,onClearSearch:tt,sections:Fe,roles:R?.data,statsigOverrideSearch:g,workspaceId:r}),t[95]=v,t[96]=R?.data,t[97]=I,t[98]=a,t[99]=k,t[100]=oe,t[101]=se,t[102]=de,t[103]=ge,t[104]=ye,t[105]=be,t[106]=Fe,t[107]=ke,t[108]=Ne,t[109]=y,t[110]=g,t[111]=r,t[112]=_e,t[113]=lt):lt=t[113];let ut;t[114]!==st||t[115]!==ct||t[116]!==lt?(ut=(0,Z.jsxs)(pe,{contentWidth:`wide`,className:st,children:[ct,lt]}),t[114]=st,t[115]=ct,t[116]=lt,t[117]=ut):ut=t[117];let dt;t[118]!==v||t[119]!==H||t[120]!==ne||t[121]!==O||t[122]!==f||t[123]!==c||t[124]!==g?(dt=ne&&!f&&O&&(0,Z.jsx)(ot,{rootClassName:`font-oai`,onClose:()=>re(!1),onSave:async e=>{let t=await H(e),n=new URLSearchParams(g);v===`permissions-by-roles`&&n.set(`returnTab`,Ce.returnTab),c({pathname:`/admin/permissions/roles/${t.role.id}`,search:n.toString()},{state:v===`permissions-by-roles`?Ce:void 0})},isCreate:!0}),t[118]=v,t[119]=H,t[120]=ne,t[121]=O,t[122]=f,t[123]=c,t[124]=g,t[125]=dt):dt=t[125];let G;t[126]!==at||t[127]!==ut||t[128]!==dt?(G=(0,Z.jsxs)(Z.Fragment,{children:[at,ut,dt]}),t[126]=at,t[127]=ut,t[128]=dt,t[129]=G):G=t[129];let ft=G,K;t[130]===a?K=t[131]:(K=a.formatMessage(Q.title),t[130]=a,t[131]=K);let q;t[132]===K?q=t[133]:(q=(0,Z.jsx)(Te,{children:(0,Z.jsx)(`title`,{children:K})}),t[132]=K,t[133]=q);let J;t[134]===a?J=t[135]:(J=a.formatMessage(Q.title),t[134]=a,t[135]=J);let Y;t[136]!==ft||t[137]!==J?(Y=(0,Z.jsx)(`section`,{"aria-label":J,className:`font-oai`,children:ft}),t[136]=ft,t[137]=J,t[138]=Y):Y=t[138];let mt;return t[139]!==q||t[140]!==Y?(mt=(0,Z.jsxs)(Z.Fragment,{children:[q,Y]}),t[139]=q,t[140]=Y,t[141]=mt):mt=t[141],mt}function St(e){return[e.role_id,e]}function Ct(e){"use forget";let t=(0,kt.c)(16),{colSpan:n,isFiltered:r,onClearSearch:a,unfilteredMessage:o}=e,s=ee(),c;t[0]!==s||t[1]!==r||t[2]!==o?(c=s.formatMessage(r?Q.emptySearchTitle:o),t[0]=s,t[1]=r,t[2]=o,t[3]=c):c=t[3];let l;t[4]===c?l=t[5]:(l=(0,Z.jsx)(`div`,{className:`text-token-text-primary font-medium`,children:c}),t[4]=c,t[5]=l);let u;t[6]!==s||t[7]!==r||t[8]!==a?(u=r&&(0,Z.jsxs)(Z.Fragment,{children:[(0,Z.jsx)(`div`,{className:`text-token-text-secondary text-sm`,children:s.formatMessage(Q.emptySearchDescription)}),(0,Z.jsx)(`button`,{type:`button`,className:i(Pt,`text-sm hover:underline focus-visible:underline focus-visible:outline-none`),onClick:a,children:s.formatMessage(Q.clearSearch)})]}),t[6]=s,t[7]=r,t[8]=a,t[9]=u):u=t[9];let d;t[10]!==l||t[11]!==u?(d=(0,Z.jsxs)(`div`,{className:`flex min-h-[360px] flex-col items-center justify-center gap-2 px-4`,children:[l,u]}),t[10]=l,t[11]=u,t[12]=d):d=t[12];let f;return t[13]!==n||t[14]!==d?(f=(0,Z.jsx)(L.Row,{children:(0,Z.jsx)(L.Cell,{colSpan:n,textAlign:`center`,children:d})}),t[13]=n,t[14]=d,t[15]=f):f=t[15],f}function wt(e){"use forget";let t=(0,kt.c)(49),{role:n,statsigOverrideSearch:r,roleSummary:a,isRoleSummaryLoading:o,workspaceMemberCount:s,isWorkspaceCountLoading:c,isWorkspaceCountRefreshing:l}=e,u=ee(),d=S(),f;t[0]===n?f=t[1]:(f=B(n),t[0]=n,t[1]=f);let p=f,m=`/admin/permissions/roles/${n.id}`,h;t[2]!==r||t[3]!==m?(h={pathname:m,search:r},t[2]=r,t[3]=m,t[4]=h):h=t[4];let g=h,_;t[5]!==d||t[6]!==g?(_=()=>d(g),t[5]=d,t[6]=g,t[7]=_):_=t[7];let v=_,y;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(y=i(Pt,`focus-visible:ring-token-border-light block min-w-0 truncate rounded-sm hover:underline focus-visible:ring-2 focus-visible:outline-none`),t[8]=y):y=t[8];let b;t[9]!==u||t[10]!==n?(b=Et(n,u),t[9]=u,t[10]=n,t[11]=b):b=t[11];let x;t[12]!==g||t[13]!==b?(x=(0,Z.jsx)(O,{to:g,className:y,onClick:Tt,children:b}),t[12]=g,t[13]=b,t[14]=x):x=t[14];let C;t[15]!==u||t[16]!==p?(C=p&&(0,Z.jsx)(`span`,{className:`border-token-border-default text-token-text-secondary rounded-md border px-1.5 py-0.5 text-xs`,children:u.formatMessage(Q.defaultRoleBadge)}),t[15]=u,t[16]=p,t[17]=C):C=t[17];let w;t[18]!==x||t[19]!==C?(w=(0,Z.jsx)(L.Cell,{divClassName:`min-h-[40px] min-w-0 items-center`,children:(0,Z.jsxs)(`div`,{className:`flex min-w-0 items-center gap-2`,children:[x,C]})}),t[18]=x,t[19]=C,t[20]=w):w=t[20];let T;t[21]!==u||t[22]!==o||t[23]!==p||t[24]!==a?(T=Dt({intl:u,isWorkspaceRole:p,roleSummary:a,isLoading:o}),t[21]=u,t[22]=o,t[23]=p,t[24]=a,t[25]=T):T=t[25];let E;t[26]===T?E=t[27]:(E=(0,Z.jsx)(L.Cell,{className:Nt,children:T}),t[26]=T,t[27]=E);let D=p&&l,k=p?c:o,A;t[28]!==u||t[29]!==p||t[30]!==a||t[31]!==D||t[32]!==k||t[33]!==s?(A=Ot({intl:u,isWorkspaceRole:p,roleSummary:a,workspaceMemberCount:s,isRefreshing:D,isLoading:k}),t[28]=u,t[29]=p,t[30]=a,t[31]=D,t[32]=k,t[33]=s,t[34]=A):A=t[34];let j;t[35]===A?j=t[36]:(j=(0,Z.jsx)(L.Cell,{className:Nt,children:A}),t[35]=A,t[36]=j);let M;t[37]===Symbol.for(`react.memo_cache_sentinel`)?(M=i(Nt,`truncate lowercase`),t[37]=M):M=t[37];let N;t[38]!==u||t[39]!==n?(N=De(n)??u.formatMessage(Q.emptyValue),t[38]=u,t[39]=n,t[40]=N):N=t[40];let P;t[41]===N?P=t[42]:(P=(0,Z.jsx)(L.Cell,{className:M,children:N}),t[41]=N,t[42]=P);let F;return t[43]!==v||t[44]!==E||t[45]!==j||t[46]!==P||t[47]!==w?(F=(0,Z.jsxs)(L.Row,{className:`[&>td]:border-b-0 [&>td]:py-2`,onClick:v,children:[w,E,j,P]}),t[43]=v,t[44]=E,t[45]=j,t[46]=P,t[47]=w,t[48]=F):F=t[48],F}function Tt(e){return e.stopPropagation()}function Et(e,t){return B(e)?t.formatMessage(Q.workspaceRole):e.name}function Dt({intl:e,isWorkspaceRole:t,roleSummary:n,isLoading:r}){return t?e.formatMessage(Q.emptyValue):r?(0,Z.jsx)(o,{className:`icon-sm`}):n==null?e.formatMessage(Q.emptyValue):e.formatMessage(Q.groupCount,{count:n.group_count})}function Ot({intl:e,isWorkspaceRole:t,roleSummary:n,workspaceMemberCount:r,isRefreshing:i,isLoading:a}){return a?(0,Z.jsx)(o,{className:`icon-sm`}):t?r==null?e.formatMessage(Q.memberCountUnavailable):(0,Z.jsxs)(Z.Fragment,{children:[e.formatMessage(Q.memberCount,{count:r}),i?(0,Z.jsx)(`span`,{className:`ms-1 text-xs`,children:(0,Z.jsx)(x,{id:`chatgpt.workspace.permissions.memberCountRefreshing`,defaultMessage:`(updating)`})}):null]}):n==null?e.formatMessage(Q.emptyValue):e.formatMessage(Q.memberCount,{count:n.member_count})}var kt,At,Z,jt,Mt,Nt,Pt,Ft,Q,It=e((()=>{kt=A(),ge(),_e(),ce(),Fe(),a(),He(),le(),et(),Ee(),it(),Se(),ht(),yt(),k(),P(),l(),I(),R(),oe(),c(),g(),ke(),we(),p(),At=t(E()),T(),w(),Z=v(),jt=e=>e===`roles`||e===`permissions-by-roles`,Mt=`h-[58px] py-0 text-[13px] font-medium`,Nt=`text-token-text-secondary`,Pt=`text-token-link hover:text-token-link-hover`,Ft=i(`-mx-2 md:-mx-6 lg:-mx-10`,`w-[calc(100%+1rem)] md:w-[calc(100%+3rem)] lg:w-[calc(100%+5rem)]`,`[&_td:first-child]:ps-2 [&_td:last-child]:pe-2 [&_th:first-child]:ps-2 [&_th:last-child]:pe-2 md:[&_td:first-child]:ps-6 md:[&_td:last-child]:pe-6 md:[&_th:first-child]:ps-6 md:[&_th:last-child]:pe-6 lg:[&_td:first-child]:ps-10 lg:[&_td:last-child]:pe-10 lg:[&_th:first-child]:ps-10 lg:[&_th:last-child]:pe-10`),Q=b({memberCountUnavailable:{id:`chatgpt.workspace.permissions.memberCountUnavailable`,defaultMessage:`Unavailable`},title:{id:`klCu9/`,defaultMessage:`Permissions & roles`},permissionsSubtitle:{id:`chatgpt.workspace.permissions.july30_redesign.landing.subtitle`,defaultMessage:`Manage the workspace default role and add custom roles for additional access.`},rolesTab:{id:`lq4BW1`,defaultMessage:`Roles`},permissionsByRolesTab:{id:`su4lee`,defaultMessage:`Permissions by roles`},searchRoles:{id:`dWhYCr`,defaultMessage:`Search roles`},searchPermissions:{id:`3cg6sf`,defaultMessage:`Search permissions`},clearSearch:{id:`6kDA6i`,defaultMessage:`Clear search`},createRole:{id:`GrX/uX`,defaultMessage:`Create role`},roleName:{id:`kb2waM`,defaultMessage:`Role name`},groupsAssigned:{id:`UmVUHN`,defaultMessage:`Groups assigned`},members:{id:`BC4Mb3`,defaultMessage:`Members`},lastUpdatedBy:{id:`ku0l6r`,defaultMessage:`Last updated by`},noRoles:{id:`MKF5at`,defaultMessage:`No roles found.`},emptySearchTitle:{id:`T1o6Em`,defaultMessage:`We couldn’t find anything`},emptySearchDescription:{id:`1eXVSq`,defaultMessage:`Try adjusting your filters or keywords.`},workspaceRole:{id:`21kJRN`,defaultMessage:`Workspace`},defaultRoleBadge:{id:`EgPjuq`,defaultMessage:`Default`},groupCount:{id:`pX3+gd`,defaultMessage:`{count, number} {count, plural, one {group} other {groups}}`},memberCount:{id:`BrpB7m`,defaultMessage:`{count, number} {count, plural, one {member} other {members}}`},emptyValue:{id:`UtZXNT`,defaultMessage:`--`}})}));function Lt({currentWorkspaceId:e}){let t=ee(),n=s(),i=!!n?.isFreeWorkspace(),{cloudConsoleM3Enrolled:a}=me(),o=a===!0,c=r(),l=(0,Rt.useMemo)(()=>[{key:`general`,label:t.formatMessage(Bt.generalTab),children:(0,$.jsx)(ct,{workspaceId:e})}],[e,t]),u=S(),[d]=D(),f=d.get(`tab`),p=f&&zt(f)&&l.some(e=>e.key===f)?f:l[0].key;return se(n?.planType,c)?(0,$.jsx)(xt,{workspaceId:e}):(0,$.jsxs)($.Fragment,{children:[(0,$.jsx)(Te,{children:(0,$.jsx)(`title`,{children:t.formatMessage(Bt.title)})}),(0,$.jsx)(ue,{title:t.formatMessage(Bt.title),subtitle:t.formatMessage(Bt.subtitle),tabsHeader:i?void 0:(0,$.jsx)(je,{items:l,activeTab:p,onTabChange:e=>{u({pathname:window.location.pathname,search:new URLSearchParams({tab:e}).toString()})}})}),(0,$.jsx)(pe,{children:i?(0,$.jsx)(ut,{}):(0,$.jsxs)($.Fragment,{children:[o&&(0,$.jsx)(Ie,{}),(0,$.jsx)(Ae,{items:l,activeTab:p})]})})]})}var Rt,$,zt,Bt,Vt=e((()=>{we(),T(),ce(),_e(),Fe(),It(),st(),f(),ke(),Rt=t(E()),w(),ge(),a(),lt(),$=v(),zt=e=>e===`general`,Bt=b({title:{id:`ojZfgO`,defaultMessage:`Permissions & roles`},subtitle:{id:`s0ozLO`,defaultMessage:`Configure baseline permissions for your workspace and tailor access with custom roles.`},generalTab:{id:`bNJn8S`,defaultMessage:`Workspace`}})})),Ht,Ut,Wt=e((()=>{w(),Vt(),Pe(),Ht=v(),Ut=y(function(){let e=Ne();return Me(),(0,Ht.jsx)(Lt,{...e})})}));e((()=>{Wt()}))();export{Ut as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    DO as r,
+    K5 as i,
+    PO as a,
+    Rz as o,
+    U1 as s,
+    ZG as c,
+    eE as l,
+    eK as u,
+    oK as d,
+    q1 as f,
+    q5 as p,
+    sK as m,
+    wO as h,
+    zz as g
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as _,
+    Bn as v,
+    Ht as y,
+    Ln as b,
+    Nn as x,
+    Nt as S,
+    O as C,
+    Q as w,
+    Rn as T,
+    Vn as E,
+    Vt as D,
+    it as O,
+    s as k,
+    wn as A,
+    zn as ee
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Djt as j,
+    Ejt as M,
+    h6t as N,
+    m6t as P
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Av as F,
+    Hc as I,
+    Uc as te,
+    jv as ne,
+    vh as re,
+    yh as ie
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    Iv as L,
+    Ix as ae,
+    Lv as R,
+    Lx as oe,
+    ex as se,
+    fl as ce,
+    ib as le,
+    is as ue,
+    ix as de,
+    lb as fe,
+    ns as pe,
+    pl as me,
+    rb as he,
+    ss as ge,
+    tx as _e,
+    ub as ve
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    d as ye,
+    n as be,
+    o as xe,
+    r as z,
+    s as Se,
+    t as Ce,
+    u as B
+} from "./6fd89734-l8h178glfzpxynlr.js";
+import {
+    n as we,
+    t as Te
+} from "./9f2e6d33-h33rm8r24h08gyr1.js";
+import {
+    i as Ee,
+    n as De,
+    r as Oe
+} from "./c8db4812-l8p8wtoobvoime0n.js";
+import {
+    i as ke,
+    n as Ae,
+    r as je
+} from "./32d3feda-hhfdhqajoabb5vr8.js";
+import {
+    a as Me,
+    n as Ne,
+    t as Pe
+} from "./8c6976e5-d8nzzrgxiaivy5n7.js";
+import {
+    i as Fe,
+    n as Ie
+} from "./552e61db-bshpkao8z1edj0cq.js";
+import {
+    s as Le,
+    t as Re
+} from "./4ed85438-egjmwvrzf8aj2kcd.js";
+import {
+    a as ze,
+    i as Be,
+    t as V
+} from "./74bc827c-bjrllce596r9185a.js";
+import {
+    a as Ve,
+    r as He
+} from "./b411f8ca-dtjeeyv7ex6up6ph.js";
+import {
+    A as Ue,
+    C as We,
+    M as Ge,
+    O as Ke,
+    P as qe,
+    S as H,
+    j as Je,
+    k as Ye,
+    r as Xe,
+    s as Ze
+} from "./b90db9d2-obtztx8g8suw7cbr.js";
+import {
+    a as Qe,
+    d as $e,
+    f as et,
+    o as tt,
+    p as nt,
+    r as U
+} from "./a48d4e1d-otckigvd59q5rja7.js";
+import {
+    a as rt,
+    i as W,
+    n as it,
+    r as at,
+    t as ot
+} from "./edb491ed-ds712o77vaxkc06g.js";
+import {
+    n as st,
+    t as ct
+} from "./e0031da9-d3w89bllwy7q0ff6.js";
+import {
+    r as lt,
+    t as ut
+} from "./12cc112f-nvr9jolbx5qr37j4.js";
+
+function dt(e) {
+    return (0, K.jsx)(`col`, {
+        style: {
+            width: `167px`
+        }
+    }, e.id)
+}
+var G, ft, K, q, J, pt, Y, mt, X, ht = e((() => {
+    G = A(), Be(), Se(), ne(), ie(), j(), R(), Je(), W(), g(), p(), ft = t(E()), T(), w(), K = v(), q = `bg-token-bg-primary sticky start-0 z-20`, J = `bg-token-bg-secondary-surface! h-[58px] py-0 text-[13px] font-medium`, pt = e => {
+        "use forget";
+        let t = (0, G.c)(48),
+            {
+                isLoading: n,
+                isPlaceholderData: r,
+                isFiltered: a,
+                isCustomPermissionInheritanceEnabled: s,
+                onClearSearch: c,
+                sections: l,
+                roles: u,
+                statsigOverrideSearch: d,
+                workspaceId: f
+            } = e,
+            p = ee(),
+            m;
+        if (t[0] !== d) {
+            let e = new URLSearchParams(d);
+            e.set(be, Ce.returnTab), m = e.toString(), t[0] = d, t[1] = m
+        } else m = t[1];
+        let h = m;
+        if (u == null || l == null) {
+            let e;
+            return t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, K.jsx)(`div`, {
+                className: `flex justify-center py-8`,
+                children: (0, K.jsx)(o, {})
+            }), t[2] = e) : e = t[2], e
+        }
+        let g = 440 + u.length * 167,
+            _;
+        if (t[3] !== s || t[4] !== u || t[5] !== f) {
+            let e = u.find(B);
+            _ = new Map(u.map(t => [t.id, s && e != null && ye(t, f) && !ze(t) ? V({
+                role: t,
+                defaultRole: e
+            }) : t.permissions])), t[3] = s, t[4] = u, t[5] = f, t[6] = _
+        } else _ = t[6];
+        let v = _,
+            y = `${g}px`,
+            b;
+        t[7] === y ? b = t[8] : (b = {
+            width: y
+        }, t[7] = y, t[8] = b);
+        let x;
+        t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (x = (0, K.jsx)(`col`, {
+            style: {
+                width: `440px`
+            }
+        }), t[9] = x) : x = t[9];
+        let S;
+        t[10] === u ? S = t[11] : (S = u.map(dt), t[10] = u, t[11] = S);
+        let C;
+        t[12] === S ? C = t[13] : (C = (0, K.jsxs)(`colgroup`, {
+            children: [x, S]
+        }), t[12] = S, t[13] = C);
+        let w;
+        t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (w = i(q, J, `z-30`), t[14] = w) : w = t[14];
+        let T;
+        t[15] === p ? T = t[16] : (T = p.formatMessage(X.permission), t[15] = p, t[16] = T);
+        let E;
+        t[17] === T ? E = t[18] : (E = (0, K.jsx)(L.HeaderCell, {
+            className: w,
+            children: T
+        }), t[17] = T, t[18] = E);
+        let D;
+        if (t[19] !== p || t[20] !== h || t[21] !== u) {
+            let e;
+            t[23] !== p || t[24] !== h ? (e = e => (0, K.jsx)(L.HeaderCell, {
+                textAlign: `center`,
+                className: J,
+                children: (0, K.jsxs)(`div`, {
+                    className: `flex min-w-0 items-center justify-center gap-2 overflow-hidden px-2 text-center`,
+                    children: [(0, K.jsx)(O, {
+                        to: {
+                            pathname: `/admin/permissions/roles/${e.id}`,
+                            search: h
+                        },
+                        state: Ce,
+                        className: `text-token-link focus-visible:ring-token-border-light block max-w-full min-w-0 truncate rounded-sm hover:underline focus-visible:ring-2 focus-visible:outline-none`,
+                        children: B(e) ? p.formatMessage(X.workspaceRole) : e.name
+                    }), B(e) && (0, K.jsx)(`span`, {
+                        className: `border-token-border-default text-token-text-secondary rounded-md border px-1.5 py-0.5 text-xs`,
+                        children: p.formatMessage(X.defaultRoleBadge)
+                    })]
+                })
+            }, e.id), t[23] = p, t[24] = h, t[25] = e) : e = t[25], D = u.map(e), t[19] = p, t[20] = h, t[21] = u, t[22] = D
+        } else D = t[22];
+        let k;
+        t[26] !== E || t[27] !== D ? (k = (0, K.jsxs)(L.Header, {
+            children: [E, D]
+        }), t[26] = E, t[27] = D, t[28] = k) : k = t[28];
+        let A = (n || r) && `opacity-50`,
+            j;
+        t[29] === A ? j = t[30] : (j = i(A), t[29] = A, t[30] = j);
+        let N;
+        t[31] !== v || t[32] !== p || t[33] !== a || t[34] !== c || t[35] !== u || t[36] !== l ? (N = l.length === 0 ? (0, K.jsx)(mt, {
+            colSpan: u.length + 1,
+            isFiltered: a,
+            onClearSearch: c
+        }) : l.map(e => (0, K.jsxs)(ft.Fragment, {
+            children: [(0, K.jsx)(L.Row, {
+                className: `bg-token-bg-secondary-surface`,
+                children: (0, K.jsx)(L.Cell, {
+                    colSpan: u.length + 1,
+                    className: `ps-0!`,
+                    divClassName: `min-h-[36px] items-center`,
+                    children: (0, K.jsx)(`span`, {
+                        className: `text-token-text-primary sticky start-0 ps-2 text-[13px] font-medium md:ps-6 lg:ps-10`,
+                        children: e.title
+                    })
+                })
+            }), e.rows.map(t => (0, K.jsxs)(L.Row, {
+                children: [(0, K.jsx)(L.Cell, {
+                    className: q,
+                    divClassName: `min-h-[60px] items-center`,
+                    children: (0, K.jsxs)(`div`, {
+                        className: i(`flex min-w-0 items-center gap-2`, t.hierarchy === `child` && `ps-5`),
+                        children: [(0, K.jsx)(`span`, {
+                            className: `truncate`,
+                            children: t.title
+                        }), t.infoTooltip && (0, K.jsx)(M, {
+                            content: t.infoTooltip,
+                            side: `top-center`,
+                            children: e => (0, K.jsx)(`button`, {
+                                ...e,
+                                type: `button`,
+                                "aria-label": p.formatMessage(X.permissionInfo, {
+                                    permission: t.title
+                                }),
+                                className: `interactive-button text-token-text-tertiary shrink-0`,
+                                children: (0, K.jsx)(re, {
+                                    "aria-hidden": `true`,
+                                    className: `icon-sm`
+                                })
+                            })
+                        }), t.badge && (0, K.jsx)(`span`, {
+                            className: `inline-flex h-[18px] shrink-0 items-center justify-center rounded-[6px] bg-[var(--green-a50)] px-[5px] text-xs font-medium text-[light-dark(var(--green-600),var(--green-400))]`,
+                            children: t.badge
+                        })]
+                    })
+                }), u.map(n => (0, K.jsx)(L.Cell, {
+                    textAlign: `center`,
+                    divClassName: `min-h-[60px] items-center justify-center`,
+                    children: (0, K.jsx)(Y, {
+                        role: n,
+                        row: t,
+                        currentPermissionNames: v.get(n.id) ?? n.permissions,
+                        permissionDependencyByName: e.permissionDependencyByName
+                    })
+                }, n.id))]
+            }, t.permissionName))]
+        }, e.title)), t[31] = v, t[32] = p, t[33] = a, t[34] = c, t[35] = u, t[36] = l, t[37] = N) : N = t[37];
+        let P;
+        t[38] !== j || t[39] !== N ? (P = (0, K.jsx)(L.Body, {
+            className: j,
+            children: N
+        }), t[38] = j, t[39] = N, t[40] = P) : P = t[40];
+        let F;
+        t[41] !== k || t[42] !== P || t[43] !== C ? (F = (0, K.jsxs)(L.Root, {
+            fixed: !0,
+            disableScroll: !0,
+            className: `w-full [&_td:first-child]:ps-2 md:[&_td:first-child]:ps-6 lg:[&_td:first-child]:ps-10 [&_td:not(:last-child)]:border-e [&_th:first-child]:ps-2 md:[&_th:first-child]:ps-6 lg:[&_th:first-child]:ps-10 [&_th:not(:last-child)]:border-e`,
+            children: [C, k, P]
+        }), t[41] = k, t[42] = P, t[43] = C, t[44] = F) : F = t[44];
+        let I;
+        return t[45] !== F || t[46] !== b ? (I = (0, K.jsx)(`div`, {
+            className: `-mx-2 h-[calc(100vh-14rem)] overflow-auto md:-mx-6 lg:-mx-10`,
+            children: (0, K.jsx)(`div`, {
+                className: `min-w-full`,
+                style: b,
+                children: F
+            })
+        }), t[45] = F, t[46] = b, t[47] = I) : I = t[47], I
+    }, Y = e => {
+        "use forget";
+        let t = (0, G.c)(12),
+            {
+                role: n,
+                row: r,
+                currentPermissionNames: i,
+                permissionDependencyByName: a
+            } = e,
+            o = ee(),
+            s;
+        t[0] !== i || t[1] !== a || t[2] !== n.id || t[3] !== r.dependsOnPermissionName || t[4] !== r.permissionName || t[5] !== r.renderDisabledToggleAsOffRoleIds || t[6] !== r.requiredPermissionNames || t[7] !== r.title ? (s = !r.renderDisabledToggleAsOffRoleIds.includes(n.id) && (r.permissionName === `__july30_work_parent__` ? rt(i) : r.requiredPermissionNames.every(e => i.includes(e)) && xe({
+            currentPermissionNames: i,
+            entry: {
+                rbac: !0,
+                permissionName: r.permissionName,
+                title: r.title,
+                dependsOnPermissionName: r.dependsOnPermissionName
+            },
+            permissionDependencyByName: a
+        })), t[0] = i, t[1] = a, t[2] = n.id, t[3] = r.dependsOnPermissionName, t[4] = r.permissionName, t[5] = r.renderDisabledToggleAsOffRoleIds, t[6] = r.requiredPermissionNames, t[7] = r.title, t[8] = s) : s = t[8];
+        let c = s,
+            l;
+        return t[9] !== o || t[10] !== c ? (l = c ? (0, K.jsx)(F, {
+            "aria-label": o.formatMessage(X.permissionEnabled),
+            className: `text-token-theme-blue-default mx-auto h-5 w-5`
+        }) : null, t[9] = o, t[10] = c, t[11] = l) : l = t[11], l
+    }, mt = e => {
+        "use forget";
+        let t = (0, G.c)(15),
+            {
+                colSpan: n,
+                isFiltered: r,
+                onClearSearch: i
+            } = e,
+            a = ee(),
+            o;
+        t[0] !== a || t[1] !== r ? (o = a.formatMessage(r ? X.emptySearchTitle : X.noPermissions), t[0] = a, t[1] = r, t[2] = o) : o = t[2];
+        let s;
+        t[3] === o ? s = t[4] : (s = (0, K.jsx)(`div`, {
+            className: `text-token-text-primary font-medium`,
+            children: o
+        }), t[3] = o, t[4] = s);
+        let c;
+        t[5] !== a || t[6] !== r || t[7] !== i ? (c = r && (0, K.jsxs)(K.Fragment, {
+            children: [(0, K.jsx)(`div`, {
+                className: `text-token-text-secondary text-sm`,
+                children: a.formatMessage(X.emptySearchDescription)
+            }), (0, K.jsx)(`button`, {
+                type: `button`,
+                className: `interactive-button text-token-link text-sm hover:underline focus-visible:underline`,
+                onClick: i,
+                children: a.formatMessage(X.clearSearch)
+            })]
+        }), t[5] = a, t[6] = r, t[7] = i, t[8] = c) : c = t[8];
+        let l;
+        t[9] !== s || t[10] !== c ? (l = (0, K.jsxs)(`div`, {
+            className: `flex min-h-[360px] flex-col items-center justify-center gap-2 px-4`,
+            children: [s, c]
+        }), t[9] = s, t[10] = c, t[11] = l) : l = t[11];
+        let u;
+        return t[12] !== n || t[13] !== l ? (u = (0, K.jsx)(L.Row, {
+            children: (0, K.jsx)(L.Cell, {
+                colSpan: n,
+                textAlign: `center`,
+                children: l
+            })
+        }), t[12] = n, t[13] = l, t[14] = u) : u = t[14], u
+    }, X = b({
+        permission: {
+            id: `chatgpt.workspace.permissions.july30.matrix.column.permission`,
+            defaultMessage: `Permission`
+        },
+        workspaceRole: {
+            id: `chatgpt.workspace.permissions.july30.matrix.column.workspace_role`,
+            defaultMessage: `Workspace`
+        },
+        defaultRoleBadge: {
+            id: `chatgpt.workspace.permissions.july30.matrix.badge.default_role`,
+            defaultMessage: `Default`
+        },
+        permissionInfo: {
+            id: `chatgpt.workspace.permissions.july30.matrix.tooltip.info_button`,
+            defaultMessage: `More information about {permission}`
+        },
+        permissionEnabled: {
+            id: `chatgpt.workspace.permissions.july30.matrix.icon.permission_enabled`,
+            defaultMessage: `Enabled`
+        },
+        noPermissions: {
+            id: `chatgpt.workspace.permissions.july30.matrix.empty.no_permissions`,
+            defaultMessage: `No permissions found.`
+        },
+        emptySearchTitle: {
+            id: `chatgpt.workspace.permissions.july30.matrix.empty.search_title`,
+            defaultMessage: `We couldn’t find anything`
+        },
+        emptySearchDescription: {
+            id: `chatgpt.workspace.permissions.july30.matrix.empty.search_description`,
+            defaultMessage: `Try adjusting your filters or keywords.`
+        },
+        clearSearch: {
+            id: `chatgpt.workspace.permissions.july30.matrix.button.clear_search`,
+            defaultMessage: `Clear search`
+        }
+    })
+}));
+
+function gt({
+    intl: e,
+    roles: t,
+    rolePermissionSectionContext: n,
+    searchFilter: r,
+    showCompletePermissionRows: i,
+    workspaceId: a = ``,
+    workspacePermissionCatalog: o
+}) {
+    if (t == null) return;
+    let s = r.trim().toLowerCase(),
+        c = new Map,
+        l = new Map,
+        u = Qe({
+            catalog: o,
+            workspaceId: a
+        }),
+        f = ({
+            entry: t,
+            role: n,
+            fallbackCategory: r
+        }) => {
+            if (t.permissionName === d.UseConnector) return;
+            let i = c.get(t.permissionName);
+            if (i != null) {
+                n != null && t.disabled && (i.disabledRoleIds.push(n.id), t.renderDisabledToggleAsOff && i.renderDisabledToggleAsOffRoleIds.push(n.id));
+                return
+            }
+            let a = Ke(t),
+                o = Ye(t.permissionName),
+                s = a ? typeof a.title == `string` ? a.title : e.formatMessage(a.title) : typeof t.title == `string` ? t.title : e.formatMessage(t.title),
+                u = t.description ? e.formatMessage(t.description, t.descriptionValues) : void 0,
+                f = typeof u == `string` ? u : void 0,
+                p = a?.infoTooltip ? e.formatMessage(a.infoTooltip) : f,
+                m = o?.category ?? r,
+                h = vt.get(m),
+                g = h ? e.formatMessage(h) : m,
+                _ = {
+                    permissionName: t.permissionName,
+                    requiredPermissionNames: t.permissionName === `__july30_work_parent__` ? [d.FloraLocalAccess, Re] : [t.permissionName, ...t.additionalPermissionNames ?? [], ..._t[t.permissionName] ?? []],
+                    title: s,
+                    ...a?.badge ? {
+                        badge: e.formatMessage(a.badge)
+                    } : {},
+                    infoTooltip: p,
+                    order: o?.order ?? 2 ** 53 - 1,
+                    hierarchy: a?.hierarchy ?? (t.dependsOnPermissionName ? `child` : `standalone`),
+                    dependsOnPermissionName: t.dependsOnPermissionName,
+                    disabledRoleIds: n != null && t.disabled ? [n.id] : [],
+                    renderDisabledToggleAsOffRoleIds: n != null && t.disabled && t.renderDisabledToggleAsOff ? [n.id] : [],
+                    searchText: [s, g].join(` `).toLowerCase()
+                };
+            c.set(t.permissionName, _);
+            let v = l.get(m);
+            v ? v.push(_) : l.set(m, [_])
+        };
+    for (let r of t) {
+        let {
+            permissionsBySection: t
+        } = U({
+            permissions: $e({
+                context: n,
+                includeUnsatisfiedDependencies: !0,
+                role: r
+            }),
+            ...u
+        });
+        for (let n of at({
+                sections: t,
+                role: r,
+                showCompletePermissionRows: !0
+            })) {
+            let t = typeof n.title == `string` ? n.title : n.title ? e.formatMessage(n.title) : `Platform Capabilities`;
+            for (let e of n.entries) f({
+                entry: e,
+                role: r,
+                fallbackCategory: t
+            })
+        }
+    }
+    if (i && n.flags)
+        for (let t of Xe(n.flags, e.formatMessage))
+            for (let e of t.newReleaseEntries) e.rbac && (f({
+                entry: e,
+                fallbackCategory: `Early access`
+            }), e.permissionName === d.SitesAccess && n.flags.appgenWorkspacePublishEnabled && f({
+                entry: Ue(),
+                fallbackCategory: `Early access`
+            }));
+    let p = new Map(We.map((e, t) => [e, t])),
+        m = z([...c.values()].map(e => ({
+            rbac: !0,
+            permissionName: e.permissionName,
+            title: e.title,
+            dependsOnPermissionName: e.dependsOnPermissionName
+        })));
+    return [...l.entries()].sort(([e], [t]) => (p.get(e) ?? 2 ** 53 - 1) - (p.get(t) ?? 2 ** 53 - 1)).map(([t, n]) => {
+        let r = vt.get(t);
+        return {
+            title: r ? e.formatMessage(r) : t,
+            permissionDependencyByName: m,
+            rows: n.filter(e => s === `` || e.searchText.includes(s)).sort((e, t) => e.order - t.order)
+        }
+    }).filter(e => e.rows.length > 0)
+}
+var _t, vt, yt = e((() => {
+    qe(), Ze(), m(), et(), Je(), W(), tt(), Se(), Le(), _t = {
+        [d.ShareWorkspaceGPT]: [d.CrudGPT],
+        [d.ShareExternalGPT]: [d.CrudGPT],
+        [d.CanvasCodeNetworkAccess]: [d.CanvasCodeExecutionAccess]
+    }, vt = new Map([
+        [`Early access`, H.earlyAccess],
+        [`Financial services`, H.financialServices],
+        [`ChartGPT - EHR Integrations`, Ge.title],
+        [`Legal`, H.legal],
+        [`Platform Capabilities`, H.platformCapabilities],
+        [`Usage limits`, H.usageLimits],
+        [`Chat`, H.chat],
+        [`Chat extensions`, H.chatExtensions],
+        [`Chat models`, H.chatModels],
+        [`Work`, H.work],
+        [`Codex`, H.codex]
+    ])
+}));
+
+function bt({
+    showPermissionsByUserPrototype: e,
+    tab: t,
+    redirectRoles: n
+}) {
+    return t != null && jt(t) ? t : de(n)
+}
+
+function xt(e) {
+    "use forget";
+    let t = (0, kt.c)(142),
+        {
+            workspaceId: r
+        } = e,
+        a = ee(),
+        s = _(),
+        c = S(),
+        {
+            cloudConsoleM3Enrolled: l,
+            adminConsoleRedirects: d
+        } = me(),
+        f = l === !0,
+        [p] = D(),
+        m;
+    if (t[0] !== p) {
+        let e = new URLSearchParams;
+        for (let t of p.getAll(`statsig_overrides`)) e.append(`statsig_overrides`, t);
+        m = e.toString(), t[0] = p, t[1] = m
+    } else m = t[1];
+    let g = m,
+        v, y, b, x;
+    t[2] !== d?.roles || t[3] !== p ? (x = p.get(`tab`), y = !1, v = bt({
+        showPermissionsByUserPrototype: y,
+        tab: x,
+        redirectRoles: d?.roles === !0
+    }), b = jt(v), t[2] = d?.roles, t[3] = p, t[4] = v, t[5] = y, t[6] = b, t[7] = x) : (v = t[4], y = t[5], b = t[6], x = t[7]);
+    let w = !b,
+        {
+            data: T,
+            isError: E
+        } = u(r),
+        O = T != null && !E,
+        k = O && T.custom_permission_inheritance_enabled === !0,
+        A;
+    t[8] === p ? A = t[9] : (A = e => {
+        let t = new URLSearchParams(p);
+        return t.set(`tab`, e), t.toString()
+    }, t[8] = p, t[9] = A);
+    let j = A,
+        [M, P] = (0, At.useState)(``),
+        F;
+    t[10] === M ? F = t[11] : (F = M.trim(), t[10] = M, t[11] = F);
+    let I = F !== ``,
+        [ne, re] = (0, At.useState)(!1),
+        ie;
+    t[12] === r ? ie = t[13] : (ie = {
+        workspaceId: r
+    }, t[12] = r, t[13] = ie);
+    let {
+        data: R,
+        isLoading: oe,
+        isPlaceholderData: se
+    } = ve(ie), ce;
+    t[14] === r ? ce = t[15] : (ce = {
+        workspaceId: r
+    }, t[14] = r, t[15] = ce);
+    let {
+        data: le,
+        isLoading: de,
+        isPlaceholderData: ge
+    } = fe(ce), {
+        knownCount: _e,
+        isLoading: ye,
+        isRefreshing: be
+    } = N(r), xe = nt(v === `permissions-by-roles` ? r : void 0), z;
+    t[16] === r ? z = t[17] : (z = he(r), t[16] = r, t[17] = z);
+    let Se = v === `permissions-by-roles` && xe.flags.isRbacEnabled && r.length > 0,
+        B;
+    t[18] !== z || t[19] !== Se ? (B = {
+        ...z,
+        enabled: Se,
+        refetchOnMount: `always`,
+        refetchOnWindowFocus: `always`,
+        retryOnMount: !0
+    }, t[18] = z, t[19] = Se, t[20] = B) : B = t[20];
+    let {
+        data: we,
+        isSuccess: Ee
+    } = C(B);
+    le?.summaries;
+    let De;
+    t[21] === le?.summaries ? De = t[22] : (De = new Map(le?.summaries.map(St)), t[21] = le?.summaries, t[22] = De);
+    let ke = De,
+        Ae;
+    t[23] !== R?.data || t[24] !== a || t[25] !== M ? (Ae = () => Oe(R?.data, M, e => Et(e, a)), t[23] = R?.data, t[24] = a, t[25] = M, t[26] = Ae) : Ae = t[26], R?.data;
+    let Me;
+    t[27] === Ae ? Me = t[28] : (Me = Ae(), t[27] = Ae, t[28] = Me);
+    let Ne = Me;
+    R?.data;
+    let Pe;
+    t[29] !== v || t[30] !== R?.data || t[31] !== a || t[32] !== Ee || t[33] !== xe || t[34] !== M || t[35] !== r || t[36] !== we ? (Pe = v === `permissions-by-roles` ? gt({
+        intl: a,
+        roles: R?.data,
+        rolePermissionSectionContext: xe,
+        searchFilter: M,
+        showCompletePermissionRows: !0,
+        workspaceId: r,
+        workspacePermissionCatalog: Ee ? we : void 0
+    }) : void 0, t[29] = v, t[30] = R?.data, t[31] = a, t[32] = Ee, t[33] = xe, t[34] = M, t[35] = r, t[36] = we, t[37] = Pe) : Pe = t[37];
+    let Fe = Pe,
+        Le;
+    t[38] === a ? Le = t[39] : (Le = a.formatMessage(Q.rolesTab), t[38] = a, t[39] = Le);
+    let Re;
+    t[40] === Le ? Re = t[41] : (Re = {
+        key: `roles`,
+        label: Le,
+        children: null
+    }, t[40] = Le, t[41] = Re);
+    let ze;
+    t[42] === a ? ze = t[43] : (ze = a.formatMessage(Q.permissionsByRolesTab), t[42] = a, t[43] = ze);
+    let Be;
+    t[44] === ze ? Be = t[45] : (Be = {
+        key: `permissions-by-roles`,
+        label: ze,
+        children: null
+    }, t[44] = ze, t[45] = Be);
+    let V;
+    t[46] === y ? V = t[47] : (V = [], t[46] = y, t[47] = V);
+    let He;
+    t[48] !== Re || t[49] !== Be || t[50] !== V ? (He = [Re, Be, ...V], t[48] = Re, t[49] = Be, t[50] = V, t[51] = He) : He = t[51];
+    let Ue = He,
+        We;
+    t[52] === Symbol.for(`react.memo_cache_sentinel`) ? (We = h(), t[52] = We) : We = t[52];
+    let Ge = We,
+        Ke;
+    t[53] === Symbol.for(`react.memo_cache_sentinel`) ? (Ke = Ge ? [`connectors`] : void 0, t[53] = Ke) : Ke = t[53];
+    let qe;
+    t[54] !== k || t[55] !== r ? (qe = {
+        workspaceId: r,
+        bootstrapResources: Ke,
+        inheritDefaultMemberPermissions: k
+    }, t[54] = k, t[55] = r, t[56] = qe) : qe = t[56];
+    let {
+        createRole: H
+    } = Ve(qe), Je, Ye;
+    t[57] !== v || t[58] !== j || t[59] !== s.pathname || t[60] !== c || t[61] !== x ? (Je = () => {
+        x !== v && c({
+            pathname: s.pathname,
+            search: j(v)
+        }, {
+            replace: !0
+        })
+    }, Ye = [v, j, s.pathname, c, x], t[57] = v, t[58] = j, t[59] = s.pathname, t[60] = c, t[61] = x, t[62] = Je, t[63] = Ye) : (Je = t[62], Ye = t[63]), (0, At.useEffect)(Je, Ye);
+    let Xe;
+    t[64] !== j || t[65] !== s.pathname || t[66] !== c || t[67] !== y ? (Xe = e => {
+        jt(e) && (P(``), c({
+            pathname: s.pathname,
+            search: j(e)
+        }))
+    }, t[64] = j, t[65] = s.pathname, t[66] = c, t[67] = y, t[68] = Xe) : Xe = t[68];
+    let Ze = Xe,
+        Qe;
+    t[69] === O ? Qe = t[70] : (Qe = () => {
+        O && (P(``), re(!0))
+    }, t[69] = O, t[70] = Qe);
+    let $e = Qe,
+        et;
+    t[71] === Symbol.for(`react.memo_cache_sentinel`) ? (et = () => P(``), t[71] = et) : et = t[71];
+    let tt = et,
+        U;
+    t[72] === a ? U = t[73] : (U = a.formatMessage(Q.title), t[72] = a, t[73] = U);
+    let rt;
+    t[74] === a ? rt = t[75] : (rt = a.formatMessage(Q.permissionsSubtitle), t[74] = a, t[75] = rt);
+    let W;
+    t[76] !== v || t[77] !== O || t[78] !== a || t[79] !== f || t[80] !== w || t[81] !== $e || t[82] !== M ? (W = w ? null : (0, Z.jsxs)(`div`, {
+        className: `flex items-center gap-2`,
+        children: [(0, Z.jsx)(ae, {
+            className: `w-[200px]`,
+            value: M,
+            onChange: e => P(e.target.value),
+            onClear: tt,
+            label: a.formatMessage(v === `roles` ? Q.searchRoles : Q.searchPermissions),
+            clearLabel: a.formatMessage(Q.clearSearch),
+            placeholder: a.formatMessage(v === `roles` ? Q.searchRoles : Q.searchPermissions)
+        }), !f && (0, Z.jsx)(n, {
+            color: `ghost`,
+            icon: te,
+            label: a.formatMessage(Q.createRole),
+            onClick: $e,
+            disabled: !O,
+            className: `rounded-full! px-2.5`
+        })]
+    }), t[76] = v, t[77] = O, t[78] = a, t[79] = f, t[80] = w, t[81] = $e, t[82] = M, t[83] = W) : W = t[83];
+    let it;
+    t[84] !== v || t[85] !== Ze || t[86] !== Ue ? (it = (0, Z.jsx)(je, {
+        items: Ue,
+        activeTab: v,
+        onTabChange: Ze,
+        className: `gap-5! pt-0!`,
+        tabClassName: `px-0!`
+    }), t[84] = v, t[85] = Ze, t[86] = Ue, t[87] = it) : it = t[87];
+    let at;
+    t[88] !== U || t[89] !== rt || t[90] !== W || t[91] !== it ? (at = (0, Z.jsx)(ue, {
+        contentWidth: `wide`,
+        title: U,
+        subtitle: rt,
+        actions: W,
+        tabsHeader: it
+    }), t[88] = U, t[89] = rt, t[90] = W, t[91] = it, t[92] = at) : at = t[92];
+    let st = v === `permissions-by-roles` ? `max-w-none!` : void 0,
+        ct;
+    t[93] === f ? ct = t[94] : (ct = f && (0, Z.jsx)(Ie, {}), t[93] = f, t[94] = ct);
+    let lt;
+    t[95] !== v || t[96] !== R?.data || t[97] !== I || t[98] !== a || t[99] !== k || t[100] !== oe || t[101] !== se || t[102] !== de || t[103] !== ge || t[104] !== ye || t[105] !== be || t[106] !== Fe || t[107] !== ke || t[108] !== Ne || t[109] !== y || t[110] !== g || t[111] !== r || t[112] !== _e ? (lt = v === `roles` ? (0, Z.jsxs)(L.Root, {
+        fixed: !0,
+        className: Ft,
+        children: [(0, Z.jsxs)(`colgroup`, {
+            children: [(0, Z.jsx)(`col`, {
+                className: `w-[33%]`
+            }), (0, Z.jsx)(`col`, {
+                className: `w-[18%]`
+            }), (0, Z.jsx)(`col`, {
+                className: `w-[18%]`
+            }), (0, Z.jsx)(`col`, {
+                className: `w-[31%]`
+            })]
+        }), (0, Z.jsxs)(L.Header, {
+            children: [(0, Z.jsx)(L.HeaderCell, {
+                className: Mt,
+                children: a.formatMessage(Q.roleName)
+            }), (0, Z.jsx)(L.HeaderCell, {
+                className: Mt,
+                children: a.formatMessage(Q.groupsAssigned)
+            }), (0, Z.jsx)(L.HeaderCell, {
+                className: Mt,
+                children: a.formatMessage(Q.members)
+            }), (0, Z.jsx)(L.HeaderCell, {
+                className: Mt,
+                children: a.formatMessage(Q.lastUpdatedBy)
+            })]
+        }), (0, Z.jsx)(L.Body, {
+            className: i((oe || se) && `opacity-50`),
+            children: Ne == null ? (0, Z.jsx)(L.Row, {
+                children: (0, Z.jsx)(L.Cell, {
+                    colSpan: 4,
+                    textAlign: `center`,
+                    children: (0, Z.jsx)(o, {})
+                })
+            }) : Ne.length === 0 ? (0, Z.jsx)(Ct, {
+                colSpan: 4,
+                isFiltered: I,
+                onClearSearch: tt,
+                unfilteredMessage: Q.noRoles
+            }) : Ne.map(e => (0, Z.jsx)(wt, {
+                role: e,
+                statsigOverrideSearch: g,
+                roleSummary: ke.get(e.id),
+                isRoleSummaryLoading: de || ge,
+                workspaceMemberCount: _e,
+                isWorkspaceCountLoading: ye,
+                isWorkspaceCountRefreshing: be
+            }, e.id))
+        })]
+    }) : v === `permissions-by-roles` && (0, Z.jsx)(pt, {
+        isLoading: oe,
+        isPlaceholderData: se,
+        isFiltered: I,
+        isCustomPermissionInheritanceEnabled: k,
+        onClearSearch: tt,
+        sections: Fe,
+        roles: R?.data,
+        statsigOverrideSearch: g,
+        workspaceId: r
+    }), t[95] = v, t[96] = R?.data, t[97] = I, t[98] = a, t[99] = k, t[100] = oe, t[101] = se, t[102] = de, t[103] = ge, t[104] = ye, t[105] = be, t[106] = Fe, t[107] = ke, t[108] = Ne, t[109] = y, t[110] = g, t[111] = r, t[112] = _e, t[113] = lt) : lt = t[113];
+    let ut;
+    t[114] !== st || t[115] !== ct || t[116] !== lt ? (ut = (0, Z.jsxs)(pe, {
+        contentWidth: `wide`,
+        className: st,
+        children: [ct, lt]
+    }), t[114] = st, t[115] = ct, t[116] = lt, t[117] = ut) : ut = t[117];
+    let dt;
+    t[118] !== v || t[119] !== H || t[120] !== ne || t[121] !== O || t[122] !== f || t[123] !== c || t[124] !== g ? (dt = ne && !f && O && (0, Z.jsx)(ot, {
+        rootClassName: `font-oai`,
+        onClose: () => re(!1),
+        onSave: async e => {
+            let t = await H(e),
+                n = new URLSearchParams(g);
+            v === `permissions-by-roles` && n.set(`returnTab`, Ce.returnTab), c({
+                pathname: `/admin/permissions/roles/${t.role.id}`,
+                search: n.toString()
+            }, {
+                state: v === `permissions-by-roles` ? Ce : void 0
+            })
+        },
+        isCreate: !0
+    }), t[118] = v, t[119] = H, t[120] = ne, t[121] = O, t[122] = f, t[123] = c, t[124] = g, t[125] = dt) : dt = t[125];
+    let G;
+    t[126] !== at || t[127] !== ut || t[128] !== dt ? (G = (0, Z.jsxs)(Z.Fragment, {
+        children: [at, ut, dt]
+    }), t[126] = at, t[127] = ut, t[128] = dt, t[129] = G) : G = t[129];
+    let ft = G,
+        K;
+    t[130] === a ? K = t[131] : (K = a.formatMessage(Q.title), t[130] = a, t[131] = K);
+    let q;
+    t[132] === K ? q = t[133] : (q = (0, Z.jsx)(Te, {
+        children: (0, Z.jsx)(`title`, {
+            children: K
+        })
+    }), t[132] = K, t[133] = q);
+    let J;
+    t[134] === a ? J = t[135] : (J = a.formatMessage(Q.title), t[134] = a, t[135] = J);
+    let Y;
+    t[136] !== ft || t[137] !== J ? (Y = (0, Z.jsx)(`section`, {
+        "aria-label": J,
+        className: `font-oai`,
+        children: ft
+    }), t[136] = ft, t[137] = J, t[138] = Y) : Y = t[138];
+    let mt;
+    return t[139] !== q || t[140] !== Y ? (mt = (0, Z.jsxs)(Z.Fragment, {
+        children: [q, Y]
+    }), t[139] = q, t[140] = Y, t[141] = mt) : mt = t[141], mt
+}
+
+function St(e) {
+    return [e.role_id, e]
+}
+
+function Ct(e) {
+    "use forget";
+    let t = (0, kt.c)(16),
+        {
+            colSpan: n,
+            isFiltered: r,
+            onClearSearch: a,
+            unfilteredMessage: o
+        } = e,
+        s = ee(),
+        c;
+    t[0] !== s || t[1] !== r || t[2] !== o ? (c = s.formatMessage(r ? Q.emptySearchTitle : o), t[0] = s, t[1] = r, t[2] = o, t[3] = c) : c = t[3];
+    let l;
+    t[4] === c ? l = t[5] : (l = (0, Z.jsx)(`div`, {
+        className: `text-token-text-primary font-medium`,
+        children: c
+    }), t[4] = c, t[5] = l);
+    let u;
+    t[6] !== s || t[7] !== r || t[8] !== a ? (u = r && (0, Z.jsxs)(Z.Fragment, {
+        children: [(0, Z.jsx)(`div`, {
+            className: `text-token-text-secondary text-sm`,
+            children: s.formatMessage(Q.emptySearchDescription)
+        }), (0, Z.jsx)(`button`, {
+            type: `button`,
+            className: i(Pt, `text-sm hover:underline focus-visible:underline focus-visible:outline-none`),
+            onClick: a,
+            children: s.formatMessage(Q.clearSearch)
+        })]
+    }), t[6] = s, t[7] = r, t[8] = a, t[9] = u) : u = t[9];
+    let d;
+    t[10] !== l || t[11] !== u ? (d = (0, Z.jsxs)(`div`, {
+        className: `flex min-h-[360px] flex-col items-center justify-center gap-2 px-4`,
+        children: [l, u]
+    }), t[10] = l, t[11] = u, t[12] = d) : d = t[12];
+    let f;
+    return t[13] !== n || t[14] !== d ? (f = (0, Z.jsx)(L.Row, {
+        children: (0, Z.jsx)(L.Cell, {
+            colSpan: n,
+            textAlign: `center`,
+            children: d
+        })
+    }), t[13] = n, t[14] = d, t[15] = f) : f = t[15], f
+}
+
+function wt(e) {
+    "use forget";
+    let t = (0, kt.c)(49),
+        {
+            role: n,
+            statsigOverrideSearch: r,
+            roleSummary: a,
+            isRoleSummaryLoading: o,
+            workspaceMemberCount: s,
+            isWorkspaceCountLoading: c,
+            isWorkspaceCountRefreshing: l
+        } = e,
+        u = ee(),
+        d = S(),
+        f;
+    t[0] === n ? f = t[1] : (f = B(n), t[0] = n, t[1] = f);
+    let p = f,
+        m = `/admin/permissions/roles/${n.id}`,
+        h;
+    t[2] !== r || t[3] !== m ? (h = {
+        pathname: m,
+        search: r
+    }, t[2] = r, t[3] = m, t[4] = h) : h = t[4];
+    let g = h,
+        _;
+    t[5] !== d || t[6] !== g ? (_ = () => d(g), t[5] = d, t[6] = g, t[7] = _) : _ = t[7];
+    let v = _,
+        y;
+    t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (y = i(Pt, `focus-visible:ring-token-border-light block min-w-0 truncate rounded-sm hover:underline focus-visible:ring-2 focus-visible:outline-none`), t[8] = y) : y = t[8];
+    let b;
+    t[9] !== u || t[10] !== n ? (b = Et(n, u), t[9] = u, t[10] = n, t[11] = b) : b = t[11];
+    let x;
+    t[12] !== g || t[13] !== b ? (x = (0, Z.jsx)(O, {
+        to: g,
+        className: y,
+        onClick: Tt,
+        children: b
+    }), t[12] = g, t[13] = b, t[14] = x) : x = t[14];
+    let C;
+    t[15] !== u || t[16] !== p ? (C = p && (0, Z.jsx)(`span`, {
+        className: `border-token-border-default text-token-text-secondary rounded-md border px-1.5 py-0.5 text-xs`,
+        children: u.formatMessage(Q.defaultRoleBadge)
+    }), t[15] = u, t[16] = p, t[17] = C) : C = t[17];
+    let w;
+    t[18] !== x || t[19] !== C ? (w = (0, Z.jsx)(L.Cell, {
+        divClassName: `min-h-[40px] min-w-0 items-center`,
+        children: (0, Z.jsxs)(`div`, {
+            className: `flex min-w-0 items-center gap-2`,
+            children: [x, C]
+        })
+    }), t[18] = x, t[19] = C, t[20] = w) : w = t[20];
+    let T;
+    t[21] !== u || t[22] !== o || t[23] !== p || t[24] !== a ? (T = Dt({
+        intl: u,
+        isWorkspaceRole: p,
+        roleSummary: a,
+        isLoading: o
+    }), t[21] = u, t[22] = o, t[23] = p, t[24] = a, t[25] = T) : T = t[25];
+    let E;
+    t[26] === T ? E = t[27] : (E = (0, Z.jsx)(L.Cell, {
+        className: Nt,
+        children: T
+    }), t[26] = T, t[27] = E);
+    let D = p && l,
+        k = p ? c : o,
+        A;
+    t[28] !== u || t[29] !== p || t[30] !== a || t[31] !== D || t[32] !== k || t[33] !== s ? (A = Ot({
+        intl: u,
+        isWorkspaceRole: p,
+        roleSummary: a,
+        workspaceMemberCount: s,
+        isRefreshing: D,
+        isLoading: k
+    }), t[28] = u, t[29] = p, t[30] = a, t[31] = D, t[32] = k, t[33] = s, t[34] = A) : A = t[34];
+    let j;
+    t[35] === A ? j = t[36] : (j = (0, Z.jsx)(L.Cell, {
+        className: Nt,
+        children: A
+    }), t[35] = A, t[36] = j);
+    let M;
+    t[37] === Symbol.for(`react.memo_cache_sentinel`) ? (M = i(Nt, `truncate lowercase`), t[37] = M) : M = t[37];
+    let N;
+    t[38] !== u || t[39] !== n ? (N = De(n) ?? u.formatMessage(Q.emptyValue), t[38] = u, t[39] = n, t[40] = N) : N = t[40];
+    let P;
+    t[41] === N ? P = t[42] : (P = (0, Z.jsx)(L.Cell, {
+        className: M,
+        children: N
+    }), t[41] = N, t[42] = P);
+    let F;
+    return t[43] !== v || t[44] !== E || t[45] !== j || t[46] !== P || t[47] !== w ? (F = (0, Z.jsxs)(L.Row, {
+        className: `[&>td]:border-b-0 [&>td]:py-2`,
+        onClick: v,
+        children: [w, E, j, P]
+    }), t[43] = v, t[44] = E, t[45] = j, t[46] = P, t[47] = w, t[48] = F) : F = t[48], F
+}
+
+function Tt(e) {
+    return e.stopPropagation()
+}
+
+function Et(e, t) {
+    return B(e) ? t.formatMessage(Q.workspaceRole) : e.name
+}
+
+function Dt({
+    intl: e,
+    isWorkspaceRole: t,
+    roleSummary: n,
+    isLoading: r
+}) {
+    return t ? e.formatMessage(Q.emptyValue) : r ? (0, Z.jsx)(o, {
+        className: `icon-sm`
+    }) : n == null ? e.formatMessage(Q.emptyValue) : e.formatMessage(Q.groupCount, {
+        count: n.group_count
+    })
+}
+
+function Ot({
+    intl: e,
+    isWorkspaceRole: t,
+    roleSummary: n,
+    workspaceMemberCount: r,
+    isRefreshing: i,
+    isLoading: a
+}) {
+    return a ? (0, Z.jsx)(o, {
+        className: `icon-sm`
+    }) : t ? r == null ? e.formatMessage(Q.memberCountUnavailable) : (0, Z.jsxs)(Z.Fragment, {
+        children: [e.formatMessage(Q.memberCount, {
+            count: r
+        }), i ? (0, Z.jsx)(`span`, {
+            className: `ms-1 text-xs`,
+            children: (0, Z.jsx)(x, {
+                id: `chatgpt.workspace.permissions.memberCountRefreshing`,
+                defaultMessage: `(updating)`
+            })
+        }) : null]
+    }) : n == null ? e.formatMessage(Q.emptyValue) : e.formatMessage(Q.memberCount, {
+        count: n.member_count
+    })
+}
+var kt, At, Z, jt, Mt, Nt, Pt, Ft, Q, It = e((() => {
+    kt = A(), ge(), _e(), ce(), Fe(), a(), He(), le(), et(), Ee(), it(), Se(), ht(), yt(), k(), P(), l(), I(), R(), oe(), c(), g(), ke(), we(), p(), At = t(E()), T(), w(), Z = v(), jt = e => e === `roles` || e === `permissions-by-roles`, Mt = `h-[58px] py-0 text-[13px] font-medium`, Nt = `text-token-text-secondary`, Pt = `text-token-link hover:text-token-link-hover`, Ft = i(`-mx-2 md:-mx-6 lg:-mx-10`, `w-[calc(100%+1rem)] md:w-[calc(100%+3rem)] lg:w-[calc(100%+5rem)]`, `[&_td:first-child]:ps-2 [&_td:last-child]:pe-2 [&_th:first-child]:ps-2 [&_th:last-child]:pe-2 md:[&_td:first-child]:ps-6 md:[&_td:last-child]:pe-6 md:[&_th:first-child]:ps-6 md:[&_th:last-child]:pe-6 lg:[&_td:first-child]:ps-10 lg:[&_td:last-child]:pe-10 lg:[&_th:first-child]:ps-10 lg:[&_th:last-child]:pe-10`), Q = b({
+        memberCountUnavailable: {
+            id: `chatgpt.workspace.permissions.memberCountUnavailable`,
+            defaultMessage: `Unavailable`
+        },
+        title: {
+            id: `klCu9/`,
+            defaultMessage: `Permissions & roles`
+        },
+        permissionsSubtitle: {
+            id: `chatgpt.workspace.permissions.july30_redesign.landing.subtitle`,
+            defaultMessage: `Manage the workspace default role and add custom roles for additional access.`
+        },
+        rolesTab: {
+            id: `lq4BW1`,
+            defaultMessage: `Roles`
+        },
+        permissionsByRolesTab: {
+            id: `su4lee`,
+            defaultMessage: `Permissions by roles`
+        },
+        searchRoles: {
+            id: `dWhYCr`,
+            defaultMessage: `Search roles`
+        },
+        searchPermissions: {
+            id: `3cg6sf`,
+            defaultMessage: `Search permissions`
+        },
+        clearSearch: {
+            id: `6kDA6i`,
+            defaultMessage: `Clear search`
+        },
+        createRole: {
+            id: `GrX/uX`,
+            defaultMessage: `Create role`
+        },
+        roleName: {
+            id: `kb2waM`,
+            defaultMessage: `Role name`
+        },
+        groupsAssigned: {
+            id: `UmVUHN`,
+            defaultMessage: `Groups assigned`
+        },
+        members: {
+            id: `BC4Mb3`,
+            defaultMessage: `Members`
+        },
+        lastUpdatedBy: {
+            id: `ku0l6r`,
+            defaultMessage: `Last updated by`
+        },
+        noRoles: {
+            id: `MKF5at`,
+            defaultMessage: `No roles found.`
+        },
+        emptySearchTitle: {
+            id: `T1o6Em`,
+            defaultMessage: `We couldn’t find anything`
+        },
+        emptySearchDescription: {
+            id: `1eXVSq`,
+            defaultMessage: `Try adjusting your filters or keywords.`
+        },
+        workspaceRole: {
+            id: `21kJRN`,
+            defaultMessage: `Workspace`
+        },
+        defaultRoleBadge: {
+            id: `EgPjuq`,
+            defaultMessage: `Default`
+        },
+        groupCount: {
+            id: `pX3+gd`,
+            defaultMessage: `{count, number} {count, plural, one {group} other {groups}}`
+        },
+        memberCount: {
+            id: `BrpB7m`,
+            defaultMessage: `{count, number} {count, plural, one {member} other {members}}`
+        },
+        emptyValue: {
+            id: `UtZXNT`,
+            defaultMessage: `--`
+        }
+    })
+}));
+
+function Lt({
+    currentWorkspaceId: e
+}) {
+    let t = ee(),
+        n = s(),
+        i = !!n?.isFreeWorkspace(),
+        {
+            cloudConsoleM3Enrolled: a
+        } = me(),
+        o = a === !0,
+        c = r(),
+        l = (0, Rt.useMemo)(() => [{
+            key: `general`,
+            label: t.formatMessage(Bt.generalTab),
+            children: (0, $.jsx)(ct, {
+                workspaceId: e
+            })
+        }], [e, t]),
+        u = S(),
+        [d] = D(),
+        f = d.get(`tab`),
+        p = f && zt(f) && l.some(e => e.key === f) ? f : l[0].key;
+    return se(n?.planType, c) ? (0, $.jsx)(xt, {
+        workspaceId: e
+    }) : (0, $.jsxs)($.Fragment, {
+        children: [(0, $.jsx)(Te, {
+            children: (0, $.jsx)(`title`, {
+                children: t.formatMessage(Bt.title)
+            })
+        }), (0, $.jsx)(ue, {
+            title: t.formatMessage(Bt.title),
+            subtitle: t.formatMessage(Bt.subtitle),
+            tabsHeader: i ? void 0 : (0, $.jsx)(je, {
+                items: l,
+                activeTab: p,
+                onTabChange: e => {
+                    u({
+                        pathname: window.location.pathname,
+                        search: new URLSearchParams({
+                            tab: e
+                        }).toString()
+                    })
+                }
+            })
+        }), (0, $.jsx)(pe, {
+            children: i ? (0, $.jsx)(ut, {}) : (0, $.jsxs)($.Fragment, {
+                children: [o && (0, $.jsx)(Ie, {}), (0, $.jsx)(Ae, {
+                    items: l,
+                    activeTab: p
+                })]
+            })
+        })]
+    })
+}
+var Rt, $, zt, Bt, Vt = e((() => {
+        we(), T(), ce(), _e(), Fe(), It(), st(), f(), ke(), Rt = t(E()), w(), ge(), a(), lt(), $ = v(), zt = e => e === `general`, Bt = b({
+            title: {
+                id: `ojZfgO`,
+                defaultMessage: `Permissions & roles`
+            },
+            subtitle: {
+                id: `s0ozLO`,
+                defaultMessage: `Configure baseline permissions for your workspace and tailor access with custom roles.`
+            },
+            generalTab: {
+                id: `bNJn8S`,
+                defaultMessage: `Workspace`
+            }
+        })
+    })),
+    Ht, Ut, Wt = e((() => {
+        w(), Vt(), Pe(), Ht = v(), Ut = y(function() {
+            let e = Ne();
+            return Me(), (0, Ht.jsx)(Lt, {
+                ...e
+            })
+        })
+    }));
+e((() => {
+    Wt()
+}))();
+export {
+    Ut as
+    default
+};
 //# sourceMappingURL=admin.permissions._index-g2adp6j7.js.map

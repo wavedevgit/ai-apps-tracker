@@ -1,3 +1,1080 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/c2675c8c-oz03twoan08d72ud.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-mdvd4786a87166cc.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/conversation-small-bcbq46iub1p0ca1t.js","assets/30901919-s8bko9nrkqwv6i4f.js","assets/c470f5ab-jwd0o7jx9i9say9k.js","assets/0e5afe53-hxm3yzzjqriayom4.js","assets/conversation-small-ep6mlz5m.css","assets/82782bc9-b4xbouzwkkyrfqq2.js","assets/8b34dbc2-lmwubajnld74ksfm.js","assets/global-modals-dxg9ukpk.css"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,Aw as r,CR as i,Crt as a,HN as o,K as s,Lit as c,Ow as l,R3 as ee,Rit as u,S5 as d,TR as f,UN as p,Uit as m,V1 as h,Y as te,Z as g,_rt as ne,a0 as _,a2 as v,brt as y,e3 as b,eE as x,f0 as re,iO as ie,jR as ae,o as S,o0 as oe,o2 as se,p0 as ce,q1 as le,s as ue,uO as de,x5 as fe}from"./4813494d-mdvd4786a87166cc.js";import{At as pe,Bn as me,Ht as he,Ln as ge,Nn as C,Q as _e,Rn as w,Ut as ve,Vn as ye,Vt as be,cn as xe,kt as Se,ln as Ce,wn as T,zn as we}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Cn as Te,En as Ee,Fn as De,Hp as Oe,Jsn as E,Mn as ke,Nn as Ae,Pn as je,Tn as D,Wp as Me,Ysn as Ne,a2t as Pe,o2t as Fe,wn as Ie}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Bg as Le,Gg as Re,Hg as ze,Jg as Be,Kg as O,Vg as Ve,Xg as He,Yg as Ue,e_ as k,n_ as We,qg as Ge}from"./c2675c8c-oz03twoan08d72ud.js";import{c as Ke,i as qe,o as Je,s as Ye}from"./efd279b6-b90gmea5n9iovib1.js";import{n as Xe,t as Ze}from"./da2e4f1d-n3i0nlguv6reckjx.js";import{a as Qe,d as $e,f as et,i as tt,l as nt,o as rt,r as it,t as A,u as at}from"./d4df9516-bf83asg8daoe3j3p.js";import{n as ot,t as j}from"./759cd6d0-izeqbqz5y1zm0s85.js";function st(e){"use forget";let t=(0,M.c)(29),{offer:r,turnOffAutoRenewal:i,isLoading:a,onConfirm:o,onDismiss:s}=e,c=i!==void 0&&i,l=we(),u;t[0]!==l||t[1]!==r.currency||t[2]!==r.monthly_price_minor?(u=l.formatNumber(r.monthly_price_minor/10**ee(r.currency),{style:`currency`,currency:r.currency}),t[0]=l,t[1]=r.currency,t[2]=r.monthly_price_minor,t[3]=u):u=t[3];let d=u,f;t[4]!==l||t[5]!==r.renews_at?(f=l.formatDate(r.renews_at*1e3,{timeZone:`UTC`,year:`numeric`,month:`long`,day:`numeric`}),t[4]=l,t[5]=r.renews_at,t[6]=f):f=t[6];let p=f,m;t[7]!==d||t[8]!==p||t[9]!==c?(m=(0,N.jsx)(`p`,{className:`text-token-text-primary text-base`,children:c?(0,N.jsx)(C,{id:`chatgpt.students.back_to_school_2026.go_upgrade.terms.no_auto_renewal`,defaultMessage:`Switch from Go to Plus today with 4 months free. Your Plus subscription will end after the free period and won’t renew automatically.`}):(0,N.jsx)(C,{id:`chatgpt.students.back_to_school_2026.go_upgrade.terms`,defaultMessage:`Switch from Go to Plus today with 4 months free. Plus then renews automatically at {monthlyPrice}/month, plus applicable tax, starting {renewalDate} (UTC).`,values:{monthlyPrice:d,renewalDate:p}})}),t[7]=d,t[8]=p,t[9]=c,t[10]=m):m=t[10];let h;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,N.jsx)(`p`,{className:`text-token-text-secondary text-sm`,children:(0,N.jsx)(C,{id:`chatgpt.students.back_to_school_2026.go_upgrade.credit`,defaultMessage:`Unused Go time will be credited to your account toward future bills, not refunded in cash. You can cancel your subscription in Settings.`})}),t[11]=h):h=t[11];let te;t[12]===Symbol.for(`react.memo_cache_sentinel`)?(te=(0,N.jsx)(C,{id:`chatgpt.students.back_to_school_2026.go_upgrade.confirm`,defaultMessage:`Upgrade to Plus and activate offer`}),t[12]=te):te=t[12];let g;t[13]!==a||t[14]!==o?(g=(0,N.jsx)(n,{type:`button`,size:`large`,loading:a,onClick:o,children:te}),t[13]=a,t[14]=o,t[15]=g):g=t[15];let ne;t[16]!==a||t[17]!==s?(ne=()=>{a||s()},t[16]=a,t[17]=s,t[18]=ne):ne=t[18];let _;t[19]===Symbol.for(`react.memo_cache_sentinel`)?(_=(0,N.jsx)(C,{id:`chatgpt.students.back_to_school_2026.go_upgrade.decline`,defaultMessage:`Keep Go`}),t[19]=_):_=t[19];let v;t[20]!==a||t[21]!==ne?(v=(0,N.jsx)(n,{type:`button`,size:`large`,color:`secondary`,"aria-disabled":a,visuallyDisabled:a,onClick:ne,children:_}),t[20]=a,t[21]=ne,t[22]=v):v=t[22];let y;t[23]!==v||t[24]!==g?(y=(0,N.jsxs)(`div`,{className:`flex flex-col gap-3`,children:[g,v]}),t[23]=v,t[24]=g,t[25]=y):y=t[25];let b;return t[26]!==y||t[27]!==m?(b=(0,N.jsxs)(`div`,{className:`mt-6 space-y-4`,children:[m,h,y]}),t[26]=y,t[27]=m,t[28]=b):b=t[28],b}var M,N,P=e((()=>{M=T(),x(),b(),w(),N=me()}));function ct(e){let t=new URLSearchParams({campaign:k}),n=Ae(e);return n!=null&&t.set(Ee,n),`/students/claim?${t.toString()}`}function lt(e){return e?De()&&y(vt,{disableExposureLog:!0}).get(`mobile_destination`,`web`)===`native`?D:te:s}function ut(){if(typeof performance.getEntriesByType!=`function`)return!1;let e=performance.getEntriesByType(`navigation`).at(0);return e!=null&&`type`in e&&e.type===`back_forward`}function dt({isLoggedIn:e,isMobileStoreSubscription:t,isProSubscription:n,isPersonalWorkspaceRequired:r,isEnrolled:i,isVerified:a,hasActivatedOffer:o,hasActivationError:s,requiresActivationSupport:c,isVerificationPending:l,canRestartVerification:ee,hasError:u,isUnavailable:d}){return e?r?{title:R.personalWorkspaceTitle,description:R.personalWorkspaceDescription}:n?{title:R.proSubscriptionTitle,description:R.proSubscriptionDescription}:t?{title:R.unsupportedSubscriptionTitle,description:R.unsupportedSubscriptionDescription}:o?{title:R.activatedTitle,description:R.activatedDescription}:s?{title:R.activationErrorTitle,description:c?R.activationSupportDescription:R.activationErrorDescription}:i?{title:R.alreadyClaimedTitle,description:R.alreadyClaimedDescription}:a?{title:R.verifiedTitle,description:R.verifiedDescription}:l?{title:R.verificationPendingTitle,description:ee?R.verificationRestartDescription:R.verificationPendingDescription}:u?{title:R.verificationErrorTitle,description:R.verificationErrorDescription}:d?{title:R.offerUnavailableTitle,description:R.offerUnavailableDescription}:{title:R.verifyingTitle,description:R.verifyingDescription}:{title:R.signingInTitle,description:R.signingInDescription}}function ft(e){"use forget";let t=(0,gt.c)(15),{sheerIdProgramId:n}=e,r=_(),i=oe(),a=i?.id??null,o;t[0]!==r||t[1]!==i?(o=u()&&i==null&&r.isError&&!r.isFetching,t[0]=r,t[1]=i,t[2]=o):o=t[2];let s=o,c;t[3]!==r||t[4]!==i?(c=u()&&i==null&&r.isSuccess&&!r.isFetching,t[3]=r,t[4]=i,t[5]=c):c=t[5];let l=c,ee=(0,I.useRef)(a),d,f;t[6]===a?(d=t[7],f=t[8]):(d=()=>{if(a==null)return;let e=ee.current;ee.current=a,e!=null&&e!==a&&(A.clearModalError(),A.setIsLoading(!1))},f=[a],t[6]=a,t[7]=d,t[8]=f),p(d,f);let m=i==null?`no-account`:`${i.id}:${i.normalizedAccountUserId}`,h;return t[9]!==i||t[10]!==s||t[11]!==l||t[12]!==n||t[13]!==m?(h=(0,L.jsx)(F,{currentAccount:i,isAccountBootstrapError:s,isAccountSelectionRequired:l,sheerIdProgramId:n},m),t[9]=i,t[10]=s,t[11]=l,t[12]=n,t[13]=m,t[14]=h):h=t[14],h}function F(e){"use forget";let t=(0,gt.c)(200),{currentAccount:r,isAccountBootstrapError:i,isAccountSelectionRequired:a,sheerIdProgramId:o}=e,s=we(),c=pe(),ee=f(),{data:d,isFetching:te}=de(),g=te!==void 0&&te,[_]=be(),v;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(v=u(),t[0]=v):v=t[0];let y=v,b=r?.id,x=r?.normalizedAccountUserId,re;t[1]===r?re=t[2]:(re=r?.isPersonalAccount()??!1,t[1]=r,t[2]=re);let ie=re,[S,oe]=(0,I.useState)(null),[se,le]=(0,I.useState)(null),ue,me;t[3]!==b||t[4]!==x||t[5]!==ie||t[6]!==_?(ue=()=>{let e=Ge(_);if(y&&ie&&typeof b==`string`&&typeof x==`string`){let t={accountId:b,accountUserId:x};e=ze(t),e!=null&&_.get(`redirectedFromAuth`)===`true`&&Ue(`auth_completed`,{identity:t})}oe(Be(e))},me=[b,x,y,ie,_],t[3]=b,t[4]=x,t[5]=ie,t[6]=_,t[7]=ue,t[8]=me):(ue=t[7],me=t[8]),p(ue,me);let he;t[9]===_?he=t[10]:(he=Ye(_),t[9]=_,t[10]=he);let ge=he,_e;t[11]===_?_e=t[12]:(_e=_.get(Ie),t[11]=_,t[12]=_e);let w=_e===`true`,ve=c.state!=null&&typeof c.state==`object`&&`students2026VerificationError`in c.state&&c.state.students2026VerificationError===!0,ye;t[13]===_?ye=t[14]:(ye=Ae(_),t[13]=_,t[14]=ye);let xe=ye,Se;t[15]===_?Se=t[16]:(Se=ct(_),t[15]=_,t[16]=Se);let Ce;t[17]!==o||t[18]!==Se?(Ce={...He,sheerIdProgramId:o,landingPath:Se},t[17]=o,t[18]=Se,t[19]=Ce):Ce=t[19];let T=Ce,Ee;t[20]===d?Ee=t[21]:(Ee=d.find(ht)??null,t[20]=d,t[21]=Ee);let De=Ee,Oe;t[22]!==De||t[23]!==r||t[24]!==a?(Oe=y&&(r!=null&&!r.isPersonalAccount()||a&&De!=null),t[22]=De,t[23]=r,t[24]=a,t[25]=Oe):Oe=t[25];let E=Oe,je=(a||E)&&De==null&&g,D=(a||E)&&De==null&&!g,Fe;t[26]!==r||t[27]!==T.blocksMobileStoreSubscribers?(Fe=y&&r!=null&&T.blocksMobileStoreSubscribers&&Pe(r),t[26]=r,t[27]=T.blocksMobileStoreSubscribers,t[28]=Fe):Fe=t[28];let O=Fe,Ve;t[29]===r?Ve=t[30]:(Ve=y&&at(r),t[29]=r,t[30]=Ve);let k=Ve,[We,qe]=(0,I.useState)(0),[Xe,$e]=(0,I.useState)(!1),nt=(0,I.useRef)(null),it=y&&r!=null&&!E&&!O&&!k,ot;t[31]!==w||t[32]!==it||t[33]!==We?(ot={enabled:it,shouldPollAfterSheerIdReturn:w,reportRefreshErrors:!0,recoverPendingVerification:!0,refreshRequestId:We},t[31]=w,t[32]=it,t[33]=We,t[34]=ot):ot=t[34];let j=et(T,ot),{isLoading:M,modalErrorKind:N,modalErrorMessage:P,goUpgradeOffer:ft}=Qe(),F=(0,I.useRef)(null),vt=(0,I.useRef)(null),z=(0,I.useRef)(null),[Ct,wt]=(0,I.useState)(null),[Tt,Et]=(0,I.useState)(!1),Dt,Ot;t[35]===Symbol.for(`react.memo_cache_sentinel`)?(Dt=()=>()=>{z.current=null},Ot=[],t[35]=Dt,t[36]=Ot):(Dt=t[35],Ot=t[36]),(0,I.useEffect)(Dt,Ot);let kt;t[37]===Symbol.for(`react.memo_cache_sentinel`)?(kt=function(){vt.current=null,z.current=null,wt(null),Et(!1)},t[37]=kt):kt=t[37];let At=kt,jt;t[38]===r?jt=t[39]:(jt=function(e){let t=h();return z.current===e&&u()&&r!=null&&t?.id===r.id&&t?.normalizedAccountUserId===r.normalizedAccountUserId},t[38]=r,t[39]=jt);let B=jt,[Mt,Nt]=(0,I.useState)(null),[V,Pt]=(0,I.useState)(null),[Ft,It]=(0,I.useState)(!1),[Lt,Rt]=(0,I.useState)(null),[zt,Bt]=(0,I.useState)(!1),[Vt,Ht]=(0,I.useState)(!1),Ut,Wt;t[40]!==ge||t[41]!==r?(Ut=()=>{if(!y||ge==null||r==null||!r.isPersonalAccount()||r.normalizedAccountUserId==null)return;let e=r.normalizedAccountUserId;Ke({accountId:r.id,accountUserId:e,status:ge})&&Pt({accountId:r.id,accountUserId:e,status:ge})},Wt=[ge,r,y],t[40]=ge,t[41]=r,t[42]=Ut,t[43]=Wt):(Ut=t[42],Wt=t[43]),p(Ut,Wt);let Gt;t[44]!==V||t[45]!==r?(Gt=V!=null&&y&&r!=null&&r.isPersonalAccount()&&r.id===V.accountId&&r.normalizedAccountUserId===V.accountUserId,t[44]=V,t[45]=r,t[46]=Gt):Gt=t[46];let Kt=Gt,H=Kt?V.status:null,qt,Jt;t[47]!==V||t[48]!==Kt?(qt=()=>{V!=null&&!Kt&&Pt(null)},Jt=[V,Kt],t[47]=V,t[48]=Kt,t[49]=qt,t[50]=Jt):(qt=t[49],Jt=t[50]),p(qt,Jt);let U=rt(j.name===`needs-verification`?j.verificationId??null:null,j.name===`needs-verification`?j.accountVerificationId??null:null,T,xe),Yt;t[51]===Symbol.for(`react.memo_cache_sentinel`)?(Yt={navigateOnSuccess:!1},t[51]=Yt):Yt=t[51];let W=tt(j.name===`verified`?j.accountVerificationId:``,T,Yt),Xt;t[52]!==r||t[53]!==b||t[54]!==x||t[55]!==se||t[56]!==j.accountVerificationId||t[57]!==j.name||t[58]!==j.verificationId||t[59]!==S||t[60]!==O||t[61]!==E||t[62]!==k||t[63]!==xe?(Xt=xe==null&&S===!0&&ne(`3006568523`)&&!(se!=null&&se.accountId===b&&se.accountUserId===x)&&y&&r!=null&&r.isFree()&&!E&&!O&&!k&&j.name===`needs-verification`&&!j.verificationId&&!j.accountVerificationId,t[52]=r,t[53]=b,t[54]=x,t[55]=se,t[56]=j.accountVerificationId,t[57]=j.name,t[58]=j.verificationId,t[59]=S,t[60]=O,t[61]=E,t[62]=k,t[63]=xe,t[64]=Xt):Xt=t[64];let G=Xt,Zt;t[65]!==W||t[66]!==r||t[67]!==s||t[68]!==G||t[69]!==B||t[70]!==M||t[71]!==k||t[72]!==N||t[73]!==ee?.email?(Zt=function(e){let{emailVerified:t,acceptedOffer:n}=e===void 0?{}:e,i=t!==void 0&&t;if(k||vt.current!=null||M||W.isCheckoutLoading)return;let a=Symbol(`students-activation`);vt.current=a;let o=r,c=!ee?.email||N===`email_required`||i,l=()=>{At(),Bt(!0),A.setModalError(s.formatMessage(R.emailRefreshError),`email_required`)};(async()=>{if(!c)return!0;let e=Symbol(`students-email-recovery`);z.current=e,Et(!0);try{if(!i){let t=await m({reason:`students_email_recovery`});if(!B(e))return!1;if(!t.ok)return l(),!1}if(!B(e))return!1;let t=fe();if(await t.cancelQueries({queryKey:ae.queryKey,exact:!0}),!B(e))return!1;let n=await t.fetchQuery({...ae,staleTime:0});return B(e)?n.id===o?.authUserId?n.email?(wt(null),Et(!1),!0):i?(l(),!1):(A.clearModalError(),Bt(!1),wt(e),Et(!1),!1):(At(),!1):!1}catch{return B(e)&&l(),!1}})().then(async e=>{if(!e||!u())return;let t=h();if(o==null||t?.id!==o.id||t?.normalizedAccountUserId!==o.normalizedAccountUserId||c&&(z.current==null||!B(z.current)))return;z.current=null,Bt(!0),Nt(null);let r;if(G){$e(!0);let e=await Le.preverify2025Redeemer(),t=h();if(t?.id!==o.id||t.normalizedAccountUserId!==o.normalizedAccountUserId)return;if(e.metadata==null){A.clearModalError(),le({accountId:o.id,accountUserId:o.normalizedAccountUserId}),Bt(!1);return}if(e.metadata.enrollment_step!==`verified`){A.clearModalError(),qe(mt),Bt(!1);return}if(typeof e.metadata.account_verification_id!=`string`||e.metadata.account_verification_id.trim()===``)throw Error(`2025 redeemer is not eligible for preverification`);r=e.metadata.account_verification_id}await W(n,r==null?void 0:{accountVerificationId:r})!=null&&o!=null&&Nt(o)}).catch(()=>{let e=h();o!=null&&e?.id===o.id&&e?.normalizedAccountUserId===o.normalizedAccountUserId&&A.setModalError(s.formatMessage(R.activationErrorDescription))}).finally(()=>{$e(!1),vt.current===a&&(vt.current=null)})},t[65]=W,t[66]=r,t[67]=s,t[68]=G,t[69]=B,t[70]=M,t[71]=k,t[72]=N,t[73]=ee?.email,t[74]=Zt):Zt=t[74];let K=Zt,Qt;t[75]!==j.name||t[76]!==j.verificationId||t[77]!==Vt?(Qt=j.name===`needs-verification`&&!!j.verificationId&&(Vt||ut()),t[75]=j.name,t[76]=j.verificationId,t[77]=Vt,t[78]=Qt):Qt=t[78];let q=Qt,J=j.name===`needs-verification`&&j.verificationStatus===`pending`&&!!j.verificationId&&!!j.accountVerificationId,$t=J||w&&(j.name===`needs-verification`||j.name===`error`&&j.cause===`refresh`),en,tn;t[79]!==$t||t[80]!==b||t[81]!==O||t[82]!==E||t[83]!==k?(en=()=>{if(!y||b==null||E||O||k||!$t)return;let e,t=()=>{window.clearTimeout(e),!(document.visibilityState===`hidden`||!navigator.onLine)&&(e=window.setTimeout(()=>{document.visibilityState!==`hidden`&&navigator.onLine&&(nt.current=performance.now(),qe(pt))},nt.current==null?0:Math.max(0,15e3-(performance.now()-nt.current))))};return window.addEventListener(`focus`,t),window.addEventListener(`online`,t),document.addEventListener(`visibilitychange`,t),()=>{window.clearTimeout(e),window.removeEventListener(`focus`,t),window.removeEventListener(`online`,t),document.removeEventListener(`visibilitychange`,t)}},tn=[$t,b,y,O,k,E],t[79]=$t,t[80]=b,t[81]=O,t[82]=E,t[83]=k,t[84]=en,t[85]=tn):(en=t[84],tn=t[85]),(0,I.useEffect)(en,tn);let nn,rn;t[86]!==r||t[87]!==j.name||t[88]!==zt||t[89]!==G||t[90]!==O||t[91]!==E||t[92]!==k||t[93]!==q||t[94]!==P||t[95]!==w||t[96]!==ve?(nn=()=>{!y||r==null||E||O||k||w||ve||q||G&&zt||P==null||j.name!==`needs-verification`||F.current===`verify`||A.clearModalError()},rn=[r,j.name,y,O,k,E,q,G,zt,P,w,ve],t[86]=r,t[87]=j.name,t[88]=zt,t[89]=G,t[90]=O,t[91]=E,t[92]=k,t[93]=q,t[94]=P,t[95]=w,t[96]=ve,t[97]=nn,t[98]=rn):(nn=t[97],rn=t[98]),p(nn,rn);let an,on;t[99]===Symbol.for(`react.memo_cache_sentinel`)?(an=()=>{let e=e=>{e.persisted&&(Ht(!0),window.location.reload())};return window.addEventListener(`pageshow`,e),()=>window.removeEventListener(`pageshow`,e)},on=[],t[99]=an,t[100]=on):(an=t[99],on=t[100]),(0,I.useEffect)(an,on);let sn,cn;t[101]!==w||t[102]!==T.landingPath?(sn=()=>{y||F.current===`auth`||(F.current=`auth`,Ue(`sign_in_started`),ce({fallbackScreenHint:`login`,callbackUrl:ke(Re(T.landingPath),w?Ie:Te)}))},cn=[y,w,T.landingPath],t[101]=w,t[102]=T.landingPath,t[103]=sn,t[104]=cn):(sn=t[103],cn=t[104]),(0,I.useEffect)(sn,cn);let ln,un;t[105]!==H||t[106]!==r||t[107]!==j.name||t[108]!==G||t[109]!==S||t[110]!==M||t[111]!==O||t[112]!==E||t[113]!==k||t[114]!==q||t[115]!==J||t[116]!==P||t[117]!==w||t[118]!==U?(ln=()=>{!y||r==null||M||E||O||k||w||H!=null||q||J||S==null||G||P||j.name!==`needs-verification`||F.current===`verify`||(F.current=`verify`,U())},un=[r,H,j.name,M,y,O,k,E,q,J,S,G,P,w,U],t[105]=H,t[106]=r,t[107]=j.name,t[108]=G,t[109]=S,t[110]=M,t[111]=O,t[112]=E,t[113]=k,t[114]=q,t[115]=J,t[116]=P,t[117]=w,t[118]=U,t[119]=ln,t[120]=un):(ln=t[119],un=t[120]),(0,I.useEffect)(ln,un);let dn=j.name===`coming-soon`,Y=E||O||k||dn,fn=y&&!Y&&j.name===`verified`,pn=fn||G,X=y&&!Y&&j.name===`enrolled`,mn;t[121]!==r||t[122]!==X?(mn=X&&r!=null&&(!r.isPlus()||!r.hasPaidSubscription()),t[121]=r,t[122]=X,t[123]=mn):mn=t[123];let hn=mn,gn=H!=null&&X&&r!=null&&r.isPlus()&&r.hasPaidSubscription(),_n=Mt!=null&&r!=null&&r.id===Mt.id&&r.normalizedAccountUserId===Mt.normalizedAccountUserId,vn=_n&&r!=null&&r.isPlus()&&r.hasPaidSubscription(),yn=_n&&!vn,Z=vn||gn,bn=H!=null&&j.name!==`loading`&&!gn,xn=bn&&fn&&r!=null&&r.isPlus()&&r.hasPaidSubscription(),Sn=hn||xn||(H===`failure`||yn)&&X&&!gn,Cn=ft?.accountId===r?.id&&ft?.accountUserId===r?.normalizedAccountUserId&&fn&&!Z?ft?.offer:void 0,Q=!Z&&(hn||bn||(pn||X)&&zt&&(P!=null||yn)),$=pn&&!Z&&!Q&&Cn==null,wn;t[124]!==r||t[125]!==j.name||t[126]!==j.partnerId||t[127]!==$?(wn=$&&j.name===`verified`&&j.partnerId===`handshake`&&r!=null&&r.isPlus()&&r.hasPaidSubscription(),t[124]=r,t[125]=j.name,t[126]=j.partnerId,t[127]=$,t[128]=wn):wn=t[128];let Tn=wn,En=!k&&Q&&N===`discount_conflict`,Dn=r!=null&&pn&&!Z&&!Sn&&!En,On,kn;t[129]===Dn?(On=t[130],kn=t[131]):(On=()=>{if(!Dn)return;let e=new AbortController;return Ne(`chatgpt_checkout`,{signal:e.signal}),()=>e.abort()},kn=[Dn],t[129]=Dn,t[130]=On,t[131]=kn),(0,I.useEffect)(On,kn),p(()=>{if(!Z||r==null)return;let e=Me(r);Rt(e?r:null),It(e)},[r,Z]);let An=pn||X,jn=j.name===`needs-verification`&&(w||q||J),Mn=jn&&j.name===`needs-verification`&&!!j.verificationId&&!!j.accountVerificationId&&r!=null&&!Y&&!i&&!D&&P==null,Nn=i||D||j.name===`error`||jn||P!=null&&!An,Pn=dt({isLoggedIn:y,isProSubscription:k,isMobileStoreSubscription:O,isPersonalWorkspaceRequired:E&&!D&&!je,isEnrolled:X,isVerified:pn,hasActivatedOffer:Z,hasActivationError:Q,requiresActivationSupport:Sn,isVerificationPending:Mn,canRestartVerification:J,hasError:Nn,isUnavailable:dn}),Fn=je||!An&&!Y&&!Nn&&y,In=y&&(!Y||D)&&(!An&&Nn||Q&&!Sn&&N!==`go_upgrade_unavailable`&&!En),Ln=y&&(!Y||D)&&(Sn||En||Q&&N===`go_upgrade_unavailable`),Rn=y&&(!Y||D)&&(!An&&Nn||Q),zn=Q&&(Tt||Xe||W.isCheckoutLoading),Bn;t[132]!==r||t[133]!==Ft||t[134]!==Lt?.id||t[135]!==Lt?.normalizedAccountUserId?(Bn=Ft&&r!=null&&r.isPersonalAccount()&&r.id===Lt?.id&&r.normalizedAccountUserId===Lt?.normalizedAccountUserId,t[132]=r,t[133]=Ft,t[134]=Lt?.id,t[135]=Lt?.normalizedAccountUserId,t[136]=Bn):Bn=t[136];let Vn=Bn,Hn=E?De:null,Un=k||In||Ln||$||(X||Z)&&!Q,Wn=X&&!Z&&!Q?ee?.email:void 0,Gn;t[137]!==s||t[138]!==Fn?(Gn=Fn?(0,L.jsx)(`span`,{"aria-label":s.formatMessage(R.verifyingTitle),className:`bg-token-text-primary mb-6 size-6 animate-pulse rounded-full motion-reduce:animate-none`,role:`status`}):null,t[137]=s,t[138]=Fn,t[139]=Gn):Gn=t[139];let Kn;t[140]!==s||t[141]!==$?(Kn=$?(0,L.jsx)(`img`,{alt:s.formatMessage(R.verifiedIllustrationAlt),className:`mb-6 w-full max-w-44 object-contain sm:mb-14 sm:max-w-[360px]`,height:400,src:xt,width:403}):null,t[140]=s,t[141]=$,t[142]=Kn):Kn=t[142];let qn=Z?`text-token-text-tertiary mt-4 text-base leading-normal font-medium tracking-[-0.2px]`:`text-token-text-secondary mt-2 text-base`,Jn=s.formatMessage(Wn?R.alreadyClaimedDescriptionWithAccount:Q&&N===`go_upgrade_unavailable`?R.goUpgradeUnavailableDescription:En?R.discountConflictDescription:Q&&N===`email_required`?R.emailRefreshError:Pn.description),Yn;t[143]!==qn||t[144]!==Jn?(Yn=(0,L.jsx)(`p`,{className:qn,children:Jn}),t[143]=qn,t[144]=Jn,t[145]=Yn):Yn=t[145];let Xn;t[146]===Tn?Xn=t[147]:(Xn=Tn?(0,L.jsx)(`p`,{className:`text-token-text-secondary mt-4 text-sm`,children:(0,L.jsx)(C,{...R.existingPlusNoAutoRenewalDisclosure})}):null,t[146]=Tn,t[147]=Xn);let Zn;t[148]!==K||t[149]!==Cn||t[150]!==j.name||t[151]!==j.partnerId||t[152]!==M?(Zn=Cn==null?null:(0,L.jsx)(st,{offer:Cn,turnOffAutoRenewal:j.name===`verified`&&j.partnerId===`handshake`,isLoading:M,onConfirm:()=>K({acceptedOffer:Cn}),onDismiss:()=>{A.clearModalError(),Bt(!1)}}),t[148]=K,t[149]=Cn,t[150]=j.name,t[151]=j.partnerId,t[152]=M,t[153]=Zn):Zn=t[153];let Qn;t[154]===Wn?Qn=t[155]:(Qn=Wn?(0,L.jsx)(`p`,{className:`bg-token-bg-tertiary text-token-text-secondary mt-4 max-w-full rounded-lg px-4 py-2 text-sm font-medium break-all`,children:Wn}):null,t[154]=Wn,t[155]=Qn);let $n;t[156]!==c.pathname||t[157]!==c.search||t[158]!==Hn?($n=Hn?(0,L.jsx)(`div`,{className:`mt-8 w-full text-start`,children:(0,L.jsx)(Ze,{className:`max-sm:[&_[role=radio]]:min-h-12!`,data:[Hn],redirectUrl:`${c.pathname}${c.search}`})}):null,t[156]=c.pathname,t[157]=c.search,t[158]=Hn,t[159]=$n):$n=t[159];let er;t[160]!==Q||t[161]!==An||t[162]!==Y||t[163]!==N||t[164]!==P?(er=P&&(!An||Q&&N===`verification`)&&!Y&&y?(0,L.jsx)(`p`,{className:`text-interactive-label-warning-secondary mt-4`,role:`alert`,children:P}):null,t[160]=Q,t[161]=An,t[162]=Y,t[163]=N,t[164]=P,t[165]=er):er=t[165];let tr;t[166]!==K||t[167]!==pn||t[168]!==H||t[169]!==W||t[170]!==r||t[171]!==j.cause||t[172]!==j.name||t[173]!==Z||t[174]!==Q||t[175]!==Vn||t[176]!==D||t[177]!==Un||t[178]!==i||t[179]!==zn||t[180]!==Tt||t[181]!==X||t[182]!==M||t[183]!==Xe||t[184]!==k||t[185]!==q||t[186]!==J||t[187]!==Mn||t[188]!==w||t[189]!==$||t[190]!==Ln||t[191]!==In||t[192]!==Rn||t[193]!==U?(tr=Un?(0,L.jsxs)(`div`,{className:`max-sm:bg-token-bg-primary contents max-sm:flex max-sm:w-full max-sm:flex-none max-sm:flex-col max-sm:pt-4 max-sm:pb-[max(24px,env(safe-area-inset-bottom))]`,children:[In||Ln?(0,L.jsxs)(`div`,{className:Rn?`mt-10 flex flex-wrap justify-center gap-4 max-sm:mt-0 max-sm:w-full max-sm:flex-col max-sm:gap-3`:`mt-8 max-sm:mt-0 max-sm:w-full`,children:[In?(0,L.jsx)(n,{"aria-disabled":zn||void 0,className:St,loading:M||zn,size:`large`,type:`button`,visuallyDisabled:zn,onClick:()=>{if(Q){pn&&(H===`failure`&&r!=null&&Je({accountId:r.id,accountUserId:r.normalizedAccountUserId,status:`failure`}),K());return}if(i||D||j.name===`error`&&j.cause===`refresh`){window.location.reload();return}F.current=`verify`,U()},children:Mn||q&&!w?(0,L.jsx)(C,{...R.resumeVerification}):(0,L.jsx)(C,{...R.tryAgain})}):null,Mn&&J?(0,L.jsx)(n,{className:St,color:`secondary`,loading:M,size:`large`,type:`button`,onClick:()=>{F.current=`verify`,U({restart:!0})},children:(0,L.jsx)(C,{...R.startNewVerification})}):null,Ln||Rn&&!Mn&&!Q?(0,L.jsx)(n,{as:`a`,className:St,color:`secondary`,openNewTab:!0,rel:`noopener noreferrer`,size:`large`,to:`https://help.openai.com`,children:(0,L.jsx)(C,{...R.contactSupport})}):null]}):null,$?(0,L.jsx)(n,{"aria-disabled":Xe||W.isCheckoutLoading||void 0,className:`mt-8 max-sm:mt-0 ${St}`,loading:M||Tt||Xe||W.isCheckoutLoading,size:`large`,type:`button`,visuallyDisabled:Xe||W.isCheckoutLoading,onClick:()=>void K(),children:(0,L.jsx)(C,{...R.activateOffer})}):null,k||(X||Z)&&!Q?(0,L.jsx)(n,{as:`a`,className:`${Z?`mt-6`:`mt-8`} max-sm:mt-0 ${St}`,size:`large`,to:Z?lt(Vn):`/`,onClick:()=>{H==null||r==null||Je({accountId:r.id,accountUserId:r.normalizedAccountUserId,status:H})},children:(0,L.jsx)(C,{...k?R.proSubscriptionOpenChatGPT:R.openChatGPT})}):null]}):null,t[166]=K,t[167]=pn,t[168]=H,t[169]=W,t[170]=r,t[171]=j.cause,t[172]=j.name,t[173]=Z,t[174]=Q,t[175]=Vn,t[176]=D,t[177]=Un,t[178]=i,t[179]=zn,t[180]=Tt,t[181]=X,t[182]=M,t[183]=Xe,t[184]=k,t[185]=q,t[186]=J,t[187]=Mn,t[188]=w,t[189]=$,t[190]=Ln,t[191]=In,t[192]=Rn,t[193]=U,t[194]=tr):tr=t[194];let nr;return t[195]!==K||t[196]!==Ct||t[197]!==s||t[198]!==B?(nr=Ct==null?null:(0,L.jsx)(l,{testId:`modal-add-email`,isOpen:!0,onClose:At,title:s.formatMessage(R.addEmailTitle),visuallyHiddenHeader:!0,type:`success`,className:`max-w-sm`,children:(0,L.jsx)(_t,{enterEmailTitle:s.formatMessage(R.addEmailTitle),enterEmailDescription:s.formatMessage(R.addEmailDescription),onVerified:()=>{B(Ct)&&(wt(null),K({emailVerified:!0}))},cancelFlowButton:(0,L.jsx)(n,{type:`button`,className:`w-full rounded-md`,color:`secondary`,onClick:At,children:(0,L.jsx)(C,{...R.cancelAddEmail})})})}),t[195]=K,t[196]=Ct,t[197]=s,t[198]=B,t[199]=nr):nr=t[199],(0,L.jsxs)(`main`,{className:`bg-token-bg-primary flex min-h-[calc(100svh-var(--mkt-header-height))] items-center justify-center px-6 py-12 max-sm:h-[calc(100svh-var(--mkt-header-height))] max-sm:min-h-0 max-sm:items-stretch max-sm:overflow-hidden max-sm:py-0`,children:[(0,L.jsxs)(`section`,{className:Z?`flex w-full max-w-[569px] flex-col items-center text-center max-sm:h-full max-sm:min-h-0`:`flex w-full max-w-xl flex-col items-center text-center max-sm:h-full max-sm:min-h-0`,children:[(0,L.jsx)(`div`,{className:`contents max-sm:flex max-sm:min-h-0 max-sm:w-full max-sm:flex-1 max-sm:flex-col max-sm:overflow-y-auto`,children:(0,L.jsxs)(`div`,{className:`contents max-sm:my-auto max-sm:flex max-sm:w-full max-sm:flex-none max-sm:flex-col max-sm:items-center max-sm:py-6`,children:[Gn,Kn,Z?(0,L.jsx)(`img`,{alt:s.formatMessage(R.activatedIllustrationAlt),className:`mb-14 w-full max-w-[402px] object-contain max-sm:mb-6 max-sm:max-w-48`,height:400,src:yt,width:402}):null,k||Rn||X&&!Z?(0,L.jsx)(`img`,{alt:k||En?``:s.formatMessage(R.verificationErrorIllustrationAlt),className:`mb-8 size-[200px] object-contain max-sm:mb-4 max-sm:size-32`,height:200,src:bt,width:200}):null,(0,L.jsx)(`h1`,{"aria-atomic":`true`,"aria-live":`polite`,className:Z?`text-[30px] leading-none font-semibold tracking-[-0.3px]`:`text-3xl font-semibold`,children:s.formatMessage(Pn.title)}),Yn,Xn,Zn,Qn,$n,er]})}),tr]}),nr]})}function pt(e){return e+1}function mt(e){return e+1}function ht(e){return e.isPersonalAccount()&&e.canAccessWithCurrentSession}var gt,I,L,_t,vt,yt,bt,xt,St,R,z=e((()=>{gt=T(),ie(),Xe(),x(),P(),g(),le(),re(),i(),r(),se(),d(),We(),nt(),Ve(),$e(),O(),qe(),Oe(),it(),je(),c(),Fe(),E(),a(),o(),I=t(ye()),w(),_e(),L=me(),Ce(),_t=v(()=>xe(()=>import(`./c2675c8c-oz03twoan08d72ud.js`).then(e=>(e.vt(),e._t)).then(e=>e.EmailVerify),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9,10,11,12]))),vt=`774192260`,yt=`https://cdn.openai.com/chatgpt/ctf-cdn/students-2026/offer-activated-c7b3af131a6e.webp`,bt=`https://cdn.openai.com/chatgpt/ctf-cdn/students-2026/verification-error-3efe3d7e397a.svg`,xt=`https://cdn.openai.com/chatgpt/ctf-cdn/students-2026/verification-success-8ef5336c384d.svg`,St=`max-sm:mx-auto max-sm:h-12 max-sm:min-h-12! max-sm:w-full max-sm:max-w-72 max-sm:text-base! max-sm:font-semibold!`,R=ge({addEmailTitle:{id:`AccountPaymentModal.primaryCTA.addEmailTitle`,defaultMessage:`Email required`},addEmailDescription:{id:`AccountPaymentModal.primaryCTA.addEmailDescription`,defaultMessage:`You'll be able to login with this email. It will also be used for account updates (like password resets) and information about OpenAI services.`},cancelAddEmail:{id:`AccountPaymentModal.primaryCTA.cancelAddEmail`,defaultMessage:`Cancel`},emailRefreshError:{id:`chatgpt.students.back_to_school_2026.email.account_refresh_error`,defaultMessage:`We couldn’t confirm an email on your ChatGPT account. Please try again to add or verify your email and continue.`},signingInTitle:{id:`chatgpt.students.back_to_school_2026.claim.sign_in.title`,defaultMessage:`Redirecting to sign in`},signingInDescription:{id:`chatgpt.students.back_to_school_2026.claim.sign_in.description`,defaultMessage:`Sign in to your ChatGPT account before verifying your student status.`},verifyingTitle:{id:`chatgpt.students.back_to_school_2026.claim.verifying.title`,defaultMessage:`Verifying your student status`},verifyingDescription:{id:`chatgpt.students.back_to_school_2026.claim.verifying.description`,defaultMessage:`This may take a minute. Please keep this page open.`},verificationPendingTitle:{id:`chatgpt.students.back_to_school_2026.claim.pending.title`,defaultMessage:`Your student verification is still in progress.`},verificationPendingDescription:{id:`chatgpt.students.back_to_school_2026.claim.pending.description`,defaultMessage:`Return to verification to finish, or check back soon if you’ve submitted your information.`},verificationRestartDescription:{id:`chatgpt.students.back_to_school_2026.claim.pending.restart_description`,defaultMessage:`Resume your existing verification, or start a new one if you need to update your information.`},verifiedTitle:{id:`chatgpt.students.back_to_school_2026.claim.verified.title`,defaultMessage:`You’re verified as a student`},verifiedDescription:{id:`chatgpt.students.back_to_school_2026.claim.verified.description.four_month.work`,defaultMessage:`Next, claim your free four months of ChatGPT Work.`},verifiedIllustrationAlt:{id:`chatgpt.students.back_to_school_2026.claim.verified.illustration.alt`,defaultMessage:`Colorful illustration celebrating successful student verification`},activatedTitle:{id:`chatgpt.students.back_to_school_2026.claim.activated.title.upgrade`,defaultMessage:`Congrats! You got an upgrade.`},activatedDescription:{id:`chatgpt.students.back_to_school_2026.claim.activated.description.upgrade`,defaultMessage:`You now have a free subscription to ChatGPT Plus to access Work and other features. Learn how you can make the most of it this semester.`},activatedIllustrationAlt:{id:`chatgpt.students.back_to_school_2026.claim.activated.illustration.alt`,defaultMessage:`Colorful illustration celebrating an activated student offer`},activateOffer:{id:`chatgpt.students.back_to_school_2026.claim.verified.activate_offer`,defaultMessage:`Activate offer`},existingPlusNoAutoRenewalDisclosure:{id:`chatgpt.students.back_to_school_2026.claim.verified.existing_plus.no_auto_renewal`,defaultMessage:`Activate this offer to get 4 months free on your current Plus subscription. Your subscription will end after the free period and won’t renew automatically.`},activationErrorTitle:{id:`chatgpt.students.back_to_school_2026.claim.activation_error.title`,defaultMessage:`We couldn’t activate your offer`},goUpgradeUnavailableDescription:{id:`chatgpt.students.back_to_school_2026.go_upgrade.unavailable`,defaultMessage:`We can’t activate the student offer on this subscription here. Please check your current plan in Settings or contact support for help.`},discountConflictDescription:{id:`chatgpt.students.back_to_school_2026.claim.discount_conflict.description`,defaultMessage:`Your subscription already has a discount that can’t be combined with this student offer. Your current discount and subscription haven’t been changed.`},activationErrorDescription:{id:`chatgpt.students.back_to_school_2026.claim.activation_error.description`,defaultMessage:`Offer activation failed. Please try again later.`},activationSupportDescription:{id:`chatgpt.students.back_to_school_2026.claim.activation_error.support_description`,defaultMessage:`Your checkout didn’t finish, and this offer can’t be retried here. Please contact support.`},verificationErrorTitle:{id:`chatgpt.students.back_to_school_2026.claim.error.title`,defaultMessage:`We couldn’t verify your eligibility`},verificationErrorDescription:{id:`chatgpt.students.back_to_school_2026.claim.error.description`,defaultMessage:`We couldn’t confirm that you’re eligible for the student offer. If you think this is a mistake, please contact support.`},verificationErrorIllustrationAlt:{id:`chatgpt.students.back_to_school_2026.claim.error.illustration.alt`,defaultMessage:`Blue chat bubble with an exclamation mark representing a verification issue`},contactSupport:{id:`chatgpt.students.back_to_school_2026.claim.error.contact_support`,defaultMessage:`Contact support`},alreadyClaimedTitle:{id:`chatgpt.students.back_to_school_2026.claim.enrolled.title`,defaultMessage:`You’ve already claimed this offer`},alreadyClaimedDescription:{id:`chatgpt.students.back_to_school_2026.claim.enrolled.description`,defaultMessage:`Your student offer is active on your account.`},alreadyClaimedDescriptionWithAccount:{id:`chatgpt.students.back_to_school_2026.claim.enrolled.description.with_account`,defaultMessage:`Your student offer is active on your account:`},openChatGPT:{id:`chatgpt.students.back_to_school_2026.claim.enrolled.open_chatgpt.button.label`,defaultMessage:`Open ChatGPT`},personalWorkspaceTitle:{id:`chatgpt.students.back_to_school_2026.claim.personal_workspace.title`,defaultMessage:`Switch to your personal workspace`},personalWorkspaceDescription:{id:`chatgpt.students.back_to_school_2026.claim.personal_workspace.description`,defaultMessage:`This offer is available only for your personal ChatGPT account.`},proSubscriptionOpenChatGPT:{id:`chatgpt.students.back_to_school_2026.claim.pro_subscription.open_chatgpt.button.label`,defaultMessage:`Open ChatGPT`},proSubscriptionTitle:{id:`chatgpt.students.back_to_school_2026.claim.pro_subscription.title`,defaultMessage:`This subscription isn’t eligible`},proSubscriptionDescription:{id:`chatgpt.students.back_to_school_2026.claim.pro_subscription.description`,defaultMessage:`This student offer is for ChatGPT Plus and isn’t available with your current Pro or Pro Lite subscription. Your subscription hasn’t been changed.`},unsupportedSubscriptionTitle:{id:`chatgpt.students.back_to_school_2026.claim.mobile_subscription.title`,defaultMessage:`This subscription isn’t eligible`},unsupportedSubscriptionDescription:{id:`chatgpt.students.back_to_school_2026.claim.mobile_subscription.description.recovery`,defaultMessage:`This offer can’t be applied to App Store or Google Play subscriptions. Cancel through the store where you subscribed; you’ll keep Plus until your current billing period ends. Then return to check whether the offer is still available.`},offerUnavailableTitle:{id:`chatgpt.students.back_to_school_2026.claim.unavailable.title`,defaultMessage:`Offer unavailable`},offerUnavailableDescription:{id:`chatgpt.students.back_to_school_2026.claim.unavailable.description`,defaultMessage:`This student offer isn’t available for your account.`},resumeVerification:{id:`chatgpt.students.back_to_school_2026.claim.resume_verification`,defaultMessage:`Resume verification`},startNewVerification:{id:`chatgpt.students.back_to_school_2026.claim.start_new_verification`,defaultMessage:`Start a new verification`},tryAgain:{id:`chatgpt.students.back_to_school_2026.claim.try_again`,defaultMessage:`Try again`}})})),Ct,wt,Tt,Et,Dt,Ot,kt=e((()=>{_e(),Ct=T(),ot(),z(),ue(),wt=me(),Tt={hasRouteMeta:!0},Et=()=>[{title:`Student verification | ChatGPT`},{name:`robots`,content:`noindex, nofollow`}],Dt=he(function(){"use forget";let e=(0,Ct.c)(6),{headerNavData:t,locale:n,sheerIdProgramId:r}=Se(),i;e[0]===r?i=e[1]:(i=(0,wt.jsx)(ft,{sheerIdProgramId:r}),e[0]=r,e[1]=i);let a;return e[2]!==t||e[3]!==n||e[4]!==i?(a=(0,wt.jsx)(j,{headerNavData:t,locale:n,slug:`students/claim`,children:i}),e[2]=t,e[3]=n,e[4]=i,e[5]=a):a=e[5],a}),Ot=ve(S)}));e((()=>{kt()}))();export{Ot as ErrorBoundary,Dt as default,Tt as handle,Et as meta};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/c2675c8c-oz03twoan08d72ud.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-mdvd4786a87166cc.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-bcbq46iub1p0ca1t.js", "assets/30901919-s8bko9nrkqwv6i4f.js", "assets/c470f5ab-jwd0o7jx9i9say9k.js", "assets/0e5afe53-hxm3yzzjqriayom4.js", "assets/conversation-small-ep6mlz5m.css", "assets/82782bc9-b4xbouzwkkyrfqq2.js", "assets/8b34dbc2-lmwubajnld74ksfm.js", "assets/global-modals-dxg9ukpk.css"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    Aw as r,
+    CR as i,
+    Crt as a,
+    HN as o,
+    K as s,
+    Lit as c,
+    Ow as l,
+    R3 as ee,
+    Rit as u,
+    S5 as d,
+    TR as f,
+    UN as p,
+    Uit as m,
+    V1 as h,
+    Y as te,
+    Z as g,
+    _rt as ne,
+    a0 as _,
+    a2 as v,
+    brt as y,
+    e3 as b,
+    eE as x,
+    f0 as re,
+    iO as ie,
+    jR as ae,
+    o as S,
+    o0 as oe,
+    o2 as se,
+    p0 as ce,
+    q1 as le,
+    s as ue,
+    uO as de,
+    x5 as fe
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as pe,
+    Bn as me,
+    Ht as he,
+    Ln as ge,
+    Nn as C,
+    Q as _e,
+    Rn as w,
+    Ut as ve,
+    Vn as ye,
+    Vt as be,
+    cn as xe,
+    kt as Se,
+    ln as Ce,
+    wn as T,
+    zn as we
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Cn as Te,
+    En as Ee,
+    Fn as De,
+    Hp as Oe,
+    Jsn as E,
+    Mn as ke,
+    Nn as Ae,
+    Pn as je,
+    Tn as D,
+    Wp as Me,
+    Ysn as Ne,
+    a2t as Pe,
+    o2t as Fe,
+    wn as Ie
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Bg as Le,
+    Gg as Re,
+    Hg as ze,
+    Jg as Be,
+    Kg as O,
+    Vg as Ve,
+    Xg as He,
+    Yg as Ue,
+    e_ as k,
+    n_ as We,
+    qg as Ge
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    c as Ke,
+    i as qe,
+    o as Je,
+    s as Ye
+} from "./efd279b6-b90gmea5n9iovib1.js";
+import {
+    n as Xe,
+    t as Ze
+} from "./da2e4f1d-n3i0nlguv6reckjx.js";
+import {
+    a as Qe,
+    d as $e,
+    f as et,
+    i as tt,
+    l as nt,
+    o as rt,
+    r as it,
+    t as A,
+    u as at
+} from "./d4df9516-bf83asg8daoe3j3p.js";
+import {
+    n as ot,
+    t as j
+} from "./759cd6d0-izeqbqz5y1zm0s85.js";
+
+function st(e) {
+    "use forget";
+    let t = (0, M.c)(29),
+        {
+            offer: r,
+            turnOffAutoRenewal: i,
+            isLoading: a,
+            onConfirm: o,
+            onDismiss: s
+        } = e,
+        c = i !== void 0 && i,
+        l = we(),
+        u;
+    t[0] !== l || t[1] !== r.currency || t[2] !== r.monthly_price_minor ? (u = l.formatNumber(r.monthly_price_minor / 10 ** ee(r.currency), {
+        style: `currency`,
+        currency: r.currency
+    }), t[0] = l, t[1] = r.currency, t[2] = r.monthly_price_minor, t[3] = u) : u = t[3];
+    let d = u,
+        f;
+    t[4] !== l || t[5] !== r.renews_at ? (f = l.formatDate(r.renews_at * 1e3, {
+        timeZone: `UTC`,
+        year: `numeric`,
+        month: `long`,
+        day: `numeric`
+    }), t[4] = l, t[5] = r.renews_at, t[6] = f) : f = t[6];
+    let p = f,
+        m;
+    t[7] !== d || t[8] !== p || t[9] !== c ? (m = (0, N.jsx)(`p`, {
+        className: `text-token-text-primary text-base`,
+        children: c ? (0, N.jsx)(C, {
+            id: `chatgpt.students.back_to_school_2026.go_upgrade.terms.no_auto_renewal`,
+            defaultMessage: `Switch from Go to Plus today with 4 months free. Your Plus subscription will end after the free period and won’t renew automatically.`
+        }) : (0, N.jsx)(C, {
+            id: `chatgpt.students.back_to_school_2026.go_upgrade.terms`,
+            defaultMessage: `Switch from Go to Plus today with 4 months free. Plus then renews automatically at {monthlyPrice}/month, plus applicable tax, starting {renewalDate} (UTC).`,
+            values: {
+                monthlyPrice: d,
+                renewalDate: p
+            }
+        })
+    }), t[7] = d, t[8] = p, t[9] = c, t[10] = m) : m = t[10];
+    let h;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, N.jsx)(`p`, {
+        className: `text-token-text-secondary text-sm`,
+        children: (0, N.jsx)(C, {
+            id: `chatgpt.students.back_to_school_2026.go_upgrade.credit`,
+            defaultMessage: `Unused Go time will be credited to your account toward future bills, not refunded in cash. You can cancel your subscription in Settings.`
+        })
+    }), t[11] = h) : h = t[11];
+    let te;
+    t[12] === Symbol.for(`react.memo_cache_sentinel`) ? (te = (0, N.jsx)(C, {
+        id: `chatgpt.students.back_to_school_2026.go_upgrade.confirm`,
+        defaultMessage: `Upgrade to Plus and activate offer`
+    }), t[12] = te) : te = t[12];
+    let g;
+    t[13] !== a || t[14] !== o ? (g = (0, N.jsx)(n, {
+        type: `button`,
+        size: `large`,
+        loading: a,
+        onClick: o,
+        children: te
+    }), t[13] = a, t[14] = o, t[15] = g) : g = t[15];
+    let ne;
+    t[16] !== a || t[17] !== s ? (ne = () => {
+        a || s()
+    }, t[16] = a, t[17] = s, t[18] = ne) : ne = t[18];
+    let _;
+    t[19] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = (0, N.jsx)(C, {
+        id: `chatgpt.students.back_to_school_2026.go_upgrade.decline`,
+        defaultMessage: `Keep Go`
+    }), t[19] = _) : _ = t[19];
+    let v;
+    t[20] !== a || t[21] !== ne ? (v = (0, N.jsx)(n, {
+        type: `button`,
+        size: `large`,
+        color: `secondary`,
+        "aria-disabled": a,
+        visuallyDisabled: a,
+        onClick: ne,
+        children: _
+    }), t[20] = a, t[21] = ne, t[22] = v) : v = t[22];
+    let y;
+    t[23] !== v || t[24] !== g ? (y = (0, N.jsxs)(`div`, {
+        className: `flex flex-col gap-3`,
+        children: [g, v]
+    }), t[23] = v, t[24] = g, t[25] = y) : y = t[25];
+    let b;
+    return t[26] !== y || t[27] !== m ? (b = (0, N.jsxs)(`div`, {
+        className: `mt-6 space-y-4`,
+        children: [m, h, y]
+    }), t[26] = y, t[27] = m, t[28] = b) : b = t[28], b
+}
+var M, N, P = e((() => {
+    M = T(), x(), b(), w(), N = me()
+}));
+
+function ct(e) {
+    let t = new URLSearchParams({
+            campaign: k
+        }),
+        n = Ae(e);
+    return n != null && t.set(Ee, n), `/students/claim?${t.toString()}`
+}
+
+function lt(e) {
+    return e ? De() && y(vt, {
+        disableExposureLog: !0
+    }).get(`mobile_destination`, `web`) === `native` ? D : te : s
+}
+
+function ut() {
+    if (typeof performance.getEntriesByType != `function`) return !1;
+    let e = performance.getEntriesByType(`navigation`).at(0);
+    return e != null && `type` in e && e.type === `back_forward`
+}
+
+function dt({
+    isLoggedIn: e,
+    isMobileStoreSubscription: t,
+    isProSubscription: n,
+    isPersonalWorkspaceRequired: r,
+    isEnrolled: i,
+    isVerified: a,
+    hasActivatedOffer: o,
+    hasActivationError: s,
+    requiresActivationSupport: c,
+    isVerificationPending: l,
+    canRestartVerification: ee,
+    hasError: u,
+    isUnavailable: d
+}) {
+    return e ? r ? {
+        title: R.personalWorkspaceTitle,
+        description: R.personalWorkspaceDescription
+    } : n ? {
+        title: R.proSubscriptionTitle,
+        description: R.proSubscriptionDescription
+    } : t ? {
+        title: R.unsupportedSubscriptionTitle,
+        description: R.unsupportedSubscriptionDescription
+    } : o ? {
+        title: R.activatedTitle,
+        description: R.activatedDescription
+    } : s ? {
+        title: R.activationErrorTitle,
+        description: c ? R.activationSupportDescription : R.activationErrorDescription
+    } : i ? {
+        title: R.alreadyClaimedTitle,
+        description: R.alreadyClaimedDescription
+    } : a ? {
+        title: R.verifiedTitle,
+        description: R.verifiedDescription
+    } : l ? {
+        title: R.verificationPendingTitle,
+        description: ee ? R.verificationRestartDescription : R.verificationPendingDescription
+    } : u ? {
+        title: R.verificationErrorTitle,
+        description: R.verificationErrorDescription
+    } : d ? {
+        title: R.offerUnavailableTitle,
+        description: R.offerUnavailableDescription
+    } : {
+        title: R.verifyingTitle,
+        description: R.verifyingDescription
+    } : {
+        title: R.signingInTitle,
+        description: R.signingInDescription
+    }
+}
+
+function ft(e) {
+    "use forget";
+    let t = (0, gt.c)(15),
+        {
+            sheerIdProgramId: n
+        } = e,
+        r = _(),
+        i = oe(),
+        a = i?.id ?? null,
+        o;
+    t[0] !== r || t[1] !== i ? (o = u() && i == null && r.isError && !r.isFetching, t[0] = r, t[1] = i, t[2] = o) : o = t[2];
+    let s = o,
+        c;
+    t[3] !== r || t[4] !== i ? (c = u() && i == null && r.isSuccess && !r.isFetching, t[3] = r, t[4] = i, t[5] = c) : c = t[5];
+    let l = c,
+        ee = (0, I.useRef)(a),
+        d, f;
+    t[6] === a ? (d = t[7], f = t[8]) : (d = () => {
+        if (a == null) return;
+        let e = ee.current;
+        ee.current = a, e != null && e !== a && (A.clearModalError(), A.setIsLoading(!1))
+    }, f = [a], t[6] = a, t[7] = d, t[8] = f), p(d, f);
+    let m = i == null ? `no-account` : `${i.id}:${i.normalizedAccountUserId}`,
+        h;
+    return t[9] !== i || t[10] !== s || t[11] !== l || t[12] !== n || t[13] !== m ? (h = (0, L.jsx)(F, {
+        currentAccount: i,
+        isAccountBootstrapError: s,
+        isAccountSelectionRequired: l,
+        sheerIdProgramId: n
+    }, m), t[9] = i, t[10] = s, t[11] = l, t[12] = n, t[13] = m, t[14] = h) : h = t[14], h
+}
+
+function F(e) {
+    "use forget";
+    let t = (0, gt.c)(200),
+        {
+            currentAccount: r,
+            isAccountBootstrapError: i,
+            isAccountSelectionRequired: a,
+            sheerIdProgramId: o
+        } = e,
+        s = we(),
+        c = pe(),
+        ee = f(),
+        {
+            data: d,
+            isFetching: te
+        } = de(),
+        g = te !== void 0 && te,
+        [_] = be(),
+        v;
+    t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (v = u(), t[0] = v) : v = t[0];
+    let y = v,
+        b = r?.id,
+        x = r?.normalizedAccountUserId,
+        re;
+    t[1] === r ? re = t[2] : (re = r?.isPersonalAccount() ?? !1, t[1] = r, t[2] = re);
+    let ie = re,
+        [S, oe] = (0, I.useState)(null),
+        [se, le] = (0, I.useState)(null),
+        ue, me;
+    t[3] !== b || t[4] !== x || t[5] !== ie || t[6] !== _ ? (ue = () => {
+        let e = Ge(_);
+        if (y && ie && typeof b == `string` && typeof x == `string`) {
+            let t = {
+                accountId: b,
+                accountUserId: x
+            };
+            e = ze(t), e != null && _.get(`redirectedFromAuth`) === `true` && Ue(`auth_completed`, {
+                identity: t
+            })
+        }
+        oe(Be(e))
+    }, me = [b, x, y, ie, _], t[3] = b, t[4] = x, t[5] = ie, t[6] = _, t[7] = ue, t[8] = me) : (ue = t[7], me = t[8]), p(ue, me);
+    let he;
+    t[9] === _ ? he = t[10] : (he = Ye(_), t[9] = _, t[10] = he);
+    let ge = he,
+        _e;
+    t[11] === _ ? _e = t[12] : (_e = _.get(Ie), t[11] = _, t[12] = _e);
+    let w = _e === `true`,
+        ve = c.state != null && typeof c.state == `object` && `students2026VerificationError` in c.state && c.state.students2026VerificationError === !0,
+        ye;
+    t[13] === _ ? ye = t[14] : (ye = Ae(_), t[13] = _, t[14] = ye);
+    let xe = ye,
+        Se;
+    t[15] === _ ? Se = t[16] : (Se = ct(_), t[15] = _, t[16] = Se);
+    let Ce;
+    t[17] !== o || t[18] !== Se ? (Ce = {
+        ...He,
+        sheerIdProgramId: o,
+        landingPath: Se
+    }, t[17] = o, t[18] = Se, t[19] = Ce) : Ce = t[19];
+    let T = Ce,
+        Ee;
+    t[20] === d ? Ee = t[21] : (Ee = d.find(ht) ?? null, t[20] = d, t[21] = Ee);
+    let De = Ee,
+        Oe;
+    t[22] !== De || t[23] !== r || t[24] !== a ? (Oe = y && (r != null && !r.isPersonalAccount() || a && De != null), t[22] = De, t[23] = r, t[24] = a, t[25] = Oe) : Oe = t[25];
+    let E = Oe,
+        je = (a || E) && De == null && g,
+        D = (a || E) && De == null && !g,
+        Fe;
+    t[26] !== r || t[27] !== T.blocksMobileStoreSubscribers ? (Fe = y && r != null && T.blocksMobileStoreSubscribers && Pe(r), t[26] = r, t[27] = T.blocksMobileStoreSubscribers, t[28] = Fe) : Fe = t[28];
+    let O = Fe,
+        Ve;
+    t[29] === r ? Ve = t[30] : (Ve = y && at(r), t[29] = r, t[30] = Ve);
+    let k = Ve,
+        [We, qe] = (0, I.useState)(0),
+        [Xe, $e] = (0, I.useState)(!1),
+        nt = (0, I.useRef)(null),
+        it = y && r != null && !E && !O && !k,
+        ot;
+    t[31] !== w || t[32] !== it || t[33] !== We ? (ot = {
+        enabled: it,
+        shouldPollAfterSheerIdReturn: w,
+        reportRefreshErrors: !0,
+        recoverPendingVerification: !0,
+        refreshRequestId: We
+    }, t[31] = w, t[32] = it, t[33] = We, t[34] = ot) : ot = t[34];
+    let j = et(T, ot),
+        {
+            isLoading: M,
+            modalErrorKind: N,
+            modalErrorMessage: P,
+            goUpgradeOffer: ft
+        } = Qe(),
+        F = (0, I.useRef)(null),
+        vt = (0, I.useRef)(null),
+        z = (0, I.useRef)(null),
+        [Ct, wt] = (0, I.useState)(null),
+        [Tt, Et] = (0, I.useState)(!1),
+        Dt, Ot;
+    t[35] === Symbol.for(`react.memo_cache_sentinel`) ? (Dt = () => () => {
+        z.current = null
+    }, Ot = [], t[35] = Dt, t[36] = Ot) : (Dt = t[35], Ot = t[36]), (0, I.useEffect)(Dt, Ot);
+    let kt;
+    t[37] === Symbol.for(`react.memo_cache_sentinel`) ? (kt = function() {
+        vt.current = null, z.current = null, wt(null), Et(!1)
+    }, t[37] = kt) : kt = t[37];
+    let At = kt,
+        jt;
+    t[38] === r ? jt = t[39] : (jt = function(e) {
+        let t = h();
+        return z.current === e && u() && r != null && t?.id === r.id && t?.normalizedAccountUserId === r.normalizedAccountUserId
+    }, t[38] = r, t[39] = jt);
+    let B = jt,
+        [Mt, Nt] = (0, I.useState)(null),
+        [V, Pt] = (0, I.useState)(null),
+        [Ft, It] = (0, I.useState)(!1),
+        [Lt, Rt] = (0, I.useState)(null),
+        [zt, Bt] = (0, I.useState)(!1),
+        [Vt, Ht] = (0, I.useState)(!1),
+        Ut, Wt;
+    t[40] !== ge || t[41] !== r ? (Ut = () => {
+        if (!y || ge == null || r == null || !r.isPersonalAccount() || r.normalizedAccountUserId == null) return;
+        let e = r.normalizedAccountUserId;
+        Ke({
+            accountId: r.id,
+            accountUserId: e,
+            status: ge
+        }) && Pt({
+            accountId: r.id,
+            accountUserId: e,
+            status: ge
+        })
+    }, Wt = [ge, r, y], t[40] = ge, t[41] = r, t[42] = Ut, t[43] = Wt) : (Ut = t[42], Wt = t[43]), p(Ut, Wt);
+    let Gt;
+    t[44] !== V || t[45] !== r ? (Gt = V != null && y && r != null && r.isPersonalAccount() && r.id === V.accountId && r.normalizedAccountUserId === V.accountUserId, t[44] = V, t[45] = r, t[46] = Gt) : Gt = t[46];
+    let Kt = Gt,
+        H = Kt ? V.status : null,
+        qt, Jt;
+    t[47] !== V || t[48] !== Kt ? (qt = () => {
+        V != null && !Kt && Pt(null)
+    }, Jt = [V, Kt], t[47] = V, t[48] = Kt, t[49] = qt, t[50] = Jt) : (qt = t[49], Jt = t[50]), p(qt, Jt);
+    let U = rt(j.name === `needs-verification` ? j.verificationId ?? null : null, j.name === `needs-verification` ? j.accountVerificationId ?? null : null, T, xe),
+        Yt;
+    t[51] === Symbol.for(`react.memo_cache_sentinel`) ? (Yt = {
+        navigateOnSuccess: !1
+    }, t[51] = Yt) : Yt = t[51];
+    let W = tt(j.name === `verified` ? j.accountVerificationId : ``, T, Yt),
+        Xt;
+    t[52] !== r || t[53] !== b || t[54] !== x || t[55] !== se || t[56] !== j.accountVerificationId || t[57] !== j.name || t[58] !== j.verificationId || t[59] !== S || t[60] !== O || t[61] !== E || t[62] !== k || t[63] !== xe ? (Xt = xe == null && S === !0 && ne(`3006568523`) && !(se != null && se.accountId === b && se.accountUserId === x) && y && r != null && r.isFree() && !E && !O && !k && j.name === `needs-verification` && !j.verificationId && !j.accountVerificationId, t[52] = r, t[53] = b, t[54] = x, t[55] = se, t[56] = j.accountVerificationId, t[57] = j.name, t[58] = j.verificationId, t[59] = S, t[60] = O, t[61] = E, t[62] = k, t[63] = xe, t[64] = Xt) : Xt = t[64];
+    let G = Xt,
+        Zt;
+    t[65] !== W || t[66] !== r || t[67] !== s || t[68] !== G || t[69] !== B || t[70] !== M || t[71] !== k || t[72] !== N || t[73] !== ee?.email ? (Zt = function(e) {
+        let {
+            emailVerified: t,
+            acceptedOffer: n
+        } = e === void 0 ? {} : e, i = t !== void 0 && t;
+        if (k || vt.current != null || M || W.isCheckoutLoading) return;
+        let a = Symbol(`students-activation`);
+        vt.current = a;
+        let o = r,
+            c = !ee?.email || N === `email_required` || i,
+            l = () => {
+                At(), Bt(!0), A.setModalError(s.formatMessage(R.emailRefreshError), `email_required`)
+            };
+        (async () => {
+            if (!c) return !0;
+            let e = Symbol(`students-email-recovery`);
+            z.current = e, Et(!0);
+            try {
+                if (!i) {
+                    let t = await m({
+                        reason: `students_email_recovery`
+                    });
+                    if (!B(e)) return !1;
+                    if (!t.ok) return l(), !1
+                }
+                if (!B(e)) return !1;
+                let t = fe();
+                if (await t.cancelQueries({
+                        queryKey: ae.queryKey,
+                        exact: !0
+                    }), !B(e)) return !1;
+                let n = await t.fetchQuery({
+                    ...ae,
+                    staleTime: 0
+                });
+                return B(e) ? n.id === o?.authUserId ? n.email ? (wt(null), Et(!1), !0) : i ? (l(), !1) : (A.clearModalError(), Bt(!1), wt(e), Et(!1), !1) : (At(), !1) : !1
+            } catch {
+                return B(e) && l(), !1
+            }
+        })().then(async e => {
+            if (!e || !u()) return;
+            let t = h();
+            if (o == null || t?.id !== o.id || t?.normalizedAccountUserId !== o.normalizedAccountUserId || c && (z.current == null || !B(z.current))) return;
+            z.current = null, Bt(!0), Nt(null);
+            let r;
+            if (G) {
+                $e(!0);
+                let e = await Le.preverify2025Redeemer(),
+                    t = h();
+                if (t?.id !== o.id || t.normalizedAccountUserId !== o.normalizedAccountUserId) return;
+                if (e.metadata == null) {
+                    A.clearModalError(), le({
+                        accountId: o.id,
+                        accountUserId: o.normalizedAccountUserId
+                    }), Bt(!1);
+                    return
+                }
+                if (e.metadata.enrollment_step !== `verified`) {
+                    A.clearModalError(), qe(mt), Bt(!1);
+                    return
+                }
+                if (typeof e.metadata.account_verification_id != `string` || e.metadata.account_verification_id.trim() === ``) throw Error(`2025 redeemer is not eligible for preverification`);
+                r = e.metadata.account_verification_id
+            }
+            await W(n, r == null ? void 0 : {
+                accountVerificationId: r
+            }) != null && o != null && Nt(o)
+        }).catch(() => {
+            let e = h();
+            o != null && e?.id === o.id && e?.normalizedAccountUserId === o.normalizedAccountUserId && A.setModalError(s.formatMessage(R.activationErrorDescription))
+        }).finally(() => {
+            $e(!1), vt.current === a && (vt.current = null)
+        })
+    }, t[65] = W, t[66] = r, t[67] = s, t[68] = G, t[69] = B, t[70] = M, t[71] = k, t[72] = N, t[73] = ee?.email, t[74] = Zt) : Zt = t[74];
+    let K = Zt,
+        Qt;
+    t[75] !== j.name || t[76] !== j.verificationId || t[77] !== Vt ? (Qt = j.name === `needs-verification` && !!j.verificationId && (Vt || ut()), t[75] = j.name, t[76] = j.verificationId, t[77] = Vt, t[78] = Qt) : Qt = t[78];
+    let q = Qt,
+        J = j.name === `needs-verification` && j.verificationStatus === `pending` && !!j.verificationId && !!j.accountVerificationId,
+        $t = J || w && (j.name === `needs-verification` || j.name === `error` && j.cause === `refresh`),
+        en, tn;
+    t[79] !== $t || t[80] !== b || t[81] !== O || t[82] !== E || t[83] !== k ? (en = () => {
+        if (!y || b == null || E || O || k || !$t) return;
+        let e, t = () => {
+            window.clearTimeout(e), !(document.visibilityState === `hidden` || !navigator.onLine) && (e = window.setTimeout(() => {
+                document.visibilityState !== `hidden` && navigator.onLine && (nt.current = performance.now(), qe(pt))
+            }, nt.current == null ? 0 : Math.max(0, 15e3 - (performance.now() - nt.current))))
+        };
+        return window.addEventListener(`focus`, t), window.addEventListener(`online`, t), document.addEventListener(`visibilitychange`, t), () => {
+            window.clearTimeout(e), window.removeEventListener(`focus`, t), window.removeEventListener(`online`, t), document.removeEventListener(`visibilitychange`, t)
+        }
+    }, tn = [$t, b, y, O, k, E], t[79] = $t, t[80] = b, t[81] = O, t[82] = E, t[83] = k, t[84] = en, t[85] = tn) : (en = t[84], tn = t[85]), (0, I.useEffect)(en, tn);
+    let nn, rn;
+    t[86] !== r || t[87] !== j.name || t[88] !== zt || t[89] !== G || t[90] !== O || t[91] !== E || t[92] !== k || t[93] !== q || t[94] !== P || t[95] !== w || t[96] !== ve ? (nn = () => {
+        !y || r == null || E || O || k || w || ve || q || G && zt || P == null || j.name !== `needs-verification` || F.current === `verify` || A.clearModalError()
+    }, rn = [r, j.name, y, O, k, E, q, G, zt, P, w, ve], t[86] = r, t[87] = j.name, t[88] = zt, t[89] = G, t[90] = O, t[91] = E, t[92] = k, t[93] = q, t[94] = P, t[95] = w, t[96] = ve, t[97] = nn, t[98] = rn) : (nn = t[97], rn = t[98]), p(nn, rn);
+    let an, on;
+    t[99] === Symbol.for(`react.memo_cache_sentinel`) ? (an = () => {
+        let e = e => {
+            e.persisted && (Ht(!0), window.location.reload())
+        };
+        return window.addEventListener(`pageshow`, e), () => window.removeEventListener(`pageshow`, e)
+    }, on = [], t[99] = an, t[100] = on) : (an = t[99], on = t[100]), (0, I.useEffect)(an, on);
+    let sn, cn;
+    t[101] !== w || t[102] !== T.landingPath ? (sn = () => {
+        y || F.current === `auth` || (F.current = `auth`, Ue(`sign_in_started`), ce({
+            fallbackScreenHint: `login`,
+            callbackUrl: ke(Re(T.landingPath), w ? Ie : Te)
+        }))
+    }, cn = [y, w, T.landingPath], t[101] = w, t[102] = T.landingPath, t[103] = sn, t[104] = cn) : (sn = t[103], cn = t[104]), (0, I.useEffect)(sn, cn);
+    let ln, un;
+    t[105] !== H || t[106] !== r || t[107] !== j.name || t[108] !== G || t[109] !== S || t[110] !== M || t[111] !== O || t[112] !== E || t[113] !== k || t[114] !== q || t[115] !== J || t[116] !== P || t[117] !== w || t[118] !== U ? (ln = () => {
+        !y || r == null || M || E || O || k || w || H != null || q || J || S == null || G || P || j.name !== `needs-verification` || F.current === `verify` || (F.current = `verify`, U())
+    }, un = [r, H, j.name, M, y, O, k, E, q, J, S, G, P, w, U], t[105] = H, t[106] = r, t[107] = j.name, t[108] = G, t[109] = S, t[110] = M, t[111] = O, t[112] = E, t[113] = k, t[114] = q, t[115] = J, t[116] = P, t[117] = w, t[118] = U, t[119] = ln, t[120] = un) : (ln = t[119], un = t[120]), (0, I.useEffect)(ln, un);
+    let dn = j.name === `coming-soon`,
+        Y = E || O || k || dn,
+        fn = y && !Y && j.name === `verified`,
+        pn = fn || G,
+        X = y && !Y && j.name === `enrolled`,
+        mn;
+    t[121] !== r || t[122] !== X ? (mn = X && r != null && (!r.isPlus() || !r.hasPaidSubscription()), t[121] = r, t[122] = X, t[123] = mn) : mn = t[123];
+    let hn = mn,
+        gn = H != null && X && r != null && r.isPlus() && r.hasPaidSubscription(),
+        _n = Mt != null && r != null && r.id === Mt.id && r.normalizedAccountUserId === Mt.normalizedAccountUserId,
+        vn = _n && r != null && r.isPlus() && r.hasPaidSubscription(),
+        yn = _n && !vn,
+        Z = vn || gn,
+        bn = H != null && j.name !== `loading` && !gn,
+        xn = bn && fn && r != null && r.isPlus() && r.hasPaidSubscription(),
+        Sn = hn || xn || (H === `failure` || yn) && X && !gn,
+        Cn = ft?.accountId === r?.id && ft?.accountUserId === r?.normalizedAccountUserId && fn && !Z ? ft?.offer : void 0,
+        Q = !Z && (hn || bn || (pn || X) && zt && (P != null || yn)),
+        $ = pn && !Z && !Q && Cn == null,
+        wn;
+    t[124] !== r || t[125] !== j.name || t[126] !== j.partnerId || t[127] !== $ ? (wn = $ && j.name === `verified` && j.partnerId === `handshake` && r != null && r.isPlus() && r.hasPaidSubscription(), t[124] = r, t[125] = j.name, t[126] = j.partnerId, t[127] = $, t[128] = wn) : wn = t[128];
+    let Tn = wn,
+        En = !k && Q && N === `discount_conflict`,
+        Dn = r != null && pn && !Z && !Sn && !En,
+        On, kn;
+    t[129] === Dn ? (On = t[130], kn = t[131]) : (On = () => {
+        if (!Dn) return;
+        let e = new AbortController;
+        return Ne(`chatgpt_checkout`, {
+            signal: e.signal
+        }), () => e.abort()
+    }, kn = [Dn], t[129] = Dn, t[130] = On, t[131] = kn), (0, I.useEffect)(On, kn), p(() => {
+        if (!Z || r == null) return;
+        let e = Me(r);
+        Rt(e ? r : null), It(e)
+    }, [r, Z]);
+    let An = pn || X,
+        jn = j.name === `needs-verification` && (w || q || J),
+        Mn = jn && j.name === `needs-verification` && !!j.verificationId && !!j.accountVerificationId && r != null && !Y && !i && !D && P == null,
+        Nn = i || D || j.name === `error` || jn || P != null && !An,
+        Pn = dt({
+            isLoggedIn: y,
+            isProSubscription: k,
+            isMobileStoreSubscription: O,
+            isPersonalWorkspaceRequired: E && !D && !je,
+            isEnrolled: X,
+            isVerified: pn,
+            hasActivatedOffer: Z,
+            hasActivationError: Q,
+            requiresActivationSupport: Sn,
+            isVerificationPending: Mn,
+            canRestartVerification: J,
+            hasError: Nn,
+            isUnavailable: dn
+        }),
+        Fn = je || !An && !Y && !Nn && y,
+        In = y && (!Y || D) && (!An && Nn || Q && !Sn && N !== `go_upgrade_unavailable` && !En),
+        Ln = y && (!Y || D) && (Sn || En || Q && N === `go_upgrade_unavailable`),
+        Rn = y && (!Y || D) && (!An && Nn || Q),
+        zn = Q && (Tt || Xe || W.isCheckoutLoading),
+        Bn;
+    t[132] !== r || t[133] !== Ft || t[134] !== Lt?.id || t[135] !== Lt?.normalizedAccountUserId ? (Bn = Ft && r != null && r.isPersonalAccount() && r.id === Lt?.id && r.normalizedAccountUserId === Lt?.normalizedAccountUserId, t[132] = r, t[133] = Ft, t[134] = Lt?.id, t[135] = Lt?.normalizedAccountUserId, t[136] = Bn) : Bn = t[136];
+    let Vn = Bn,
+        Hn = E ? De : null,
+        Un = k || In || Ln || $ || (X || Z) && !Q,
+        Wn = X && !Z && !Q ? ee?.email : void 0,
+        Gn;
+    t[137] !== s || t[138] !== Fn ? (Gn = Fn ? (0, L.jsx)(`span`, {
+        "aria-label": s.formatMessage(R.verifyingTitle),
+        className: `bg-token-text-primary mb-6 size-6 animate-pulse rounded-full motion-reduce:animate-none`,
+        role: `status`
+    }) : null, t[137] = s, t[138] = Fn, t[139] = Gn) : Gn = t[139];
+    let Kn;
+    t[140] !== s || t[141] !== $ ? (Kn = $ ? (0, L.jsx)(`img`, {
+        alt: s.formatMessage(R.verifiedIllustrationAlt),
+        className: `mb-6 w-full max-w-44 object-contain sm:mb-14 sm:max-w-[360px]`,
+        height: 400,
+        src: xt,
+        width: 403
+    }) : null, t[140] = s, t[141] = $, t[142] = Kn) : Kn = t[142];
+    let qn = Z ? `text-token-text-tertiary mt-4 text-base leading-normal font-medium tracking-[-0.2px]` : `text-token-text-secondary mt-2 text-base`,
+        Jn = s.formatMessage(Wn ? R.alreadyClaimedDescriptionWithAccount : Q && N === `go_upgrade_unavailable` ? R.goUpgradeUnavailableDescription : En ? R.discountConflictDescription : Q && N === `email_required` ? R.emailRefreshError : Pn.description),
+        Yn;
+    t[143] !== qn || t[144] !== Jn ? (Yn = (0, L.jsx)(`p`, {
+        className: qn,
+        children: Jn
+    }), t[143] = qn, t[144] = Jn, t[145] = Yn) : Yn = t[145];
+    let Xn;
+    t[146] === Tn ? Xn = t[147] : (Xn = Tn ? (0, L.jsx)(`p`, {
+        className: `text-token-text-secondary mt-4 text-sm`,
+        children: (0, L.jsx)(C, {
+            ...R.existingPlusNoAutoRenewalDisclosure
+        })
+    }) : null, t[146] = Tn, t[147] = Xn);
+    let Zn;
+    t[148] !== K || t[149] !== Cn || t[150] !== j.name || t[151] !== j.partnerId || t[152] !== M ? (Zn = Cn == null ? null : (0, L.jsx)(st, {
+        offer: Cn,
+        turnOffAutoRenewal: j.name === `verified` && j.partnerId === `handshake`,
+        isLoading: M,
+        onConfirm: () => K({
+            acceptedOffer: Cn
+        }),
+        onDismiss: () => {
+            A.clearModalError(), Bt(!1)
+        }
+    }), t[148] = K, t[149] = Cn, t[150] = j.name, t[151] = j.partnerId, t[152] = M, t[153] = Zn) : Zn = t[153];
+    let Qn;
+    t[154] === Wn ? Qn = t[155] : (Qn = Wn ? (0, L.jsx)(`p`, {
+        className: `bg-token-bg-tertiary text-token-text-secondary mt-4 max-w-full rounded-lg px-4 py-2 text-sm font-medium break-all`,
+        children: Wn
+    }) : null, t[154] = Wn, t[155] = Qn);
+    let $n;
+    t[156] !== c.pathname || t[157] !== c.search || t[158] !== Hn ? ($n = Hn ? (0, L.jsx)(`div`, {
+        className: `mt-8 w-full text-start`,
+        children: (0, L.jsx)(Ze, {
+            className: `max-sm:[&_[role=radio]]:min-h-12!`,
+            data: [Hn],
+            redirectUrl: `${c.pathname}${c.search}`
+        })
+    }) : null, t[156] = c.pathname, t[157] = c.search, t[158] = Hn, t[159] = $n) : $n = t[159];
+    let er;
+    t[160] !== Q || t[161] !== An || t[162] !== Y || t[163] !== N || t[164] !== P ? (er = P && (!An || Q && N === `verification`) && !Y && y ? (0, L.jsx)(`p`, {
+        className: `text-interactive-label-warning-secondary mt-4`,
+        role: `alert`,
+        children: P
+    }) : null, t[160] = Q, t[161] = An, t[162] = Y, t[163] = N, t[164] = P, t[165] = er) : er = t[165];
+    let tr;
+    t[166] !== K || t[167] !== pn || t[168] !== H || t[169] !== W || t[170] !== r || t[171] !== j.cause || t[172] !== j.name || t[173] !== Z || t[174] !== Q || t[175] !== Vn || t[176] !== D || t[177] !== Un || t[178] !== i || t[179] !== zn || t[180] !== Tt || t[181] !== X || t[182] !== M || t[183] !== Xe || t[184] !== k || t[185] !== q || t[186] !== J || t[187] !== Mn || t[188] !== w || t[189] !== $ || t[190] !== Ln || t[191] !== In || t[192] !== Rn || t[193] !== U ? (tr = Un ? (0, L.jsxs)(`div`, {
+        className: `max-sm:bg-token-bg-primary contents max-sm:flex max-sm:w-full max-sm:flex-none max-sm:flex-col max-sm:pt-4 max-sm:pb-[max(24px,env(safe-area-inset-bottom))]`,
+        children: [In || Ln ? (0, L.jsxs)(`div`, {
+            className: Rn ? `mt-10 flex flex-wrap justify-center gap-4 max-sm:mt-0 max-sm:w-full max-sm:flex-col max-sm:gap-3` : `mt-8 max-sm:mt-0 max-sm:w-full`,
+            children: [In ? (0, L.jsx)(n, {
+                "aria-disabled": zn || void 0,
+                className: St,
+                loading: M || zn,
+                size: `large`,
+                type: `button`,
+                visuallyDisabled: zn,
+                onClick: () => {
+                    if (Q) {
+                        pn && (H === `failure` && r != null && Je({
+                            accountId: r.id,
+                            accountUserId: r.normalizedAccountUserId,
+                            status: `failure`
+                        }), K());
+                        return
+                    }
+                    if (i || D || j.name === `error` && j.cause === `refresh`) {
+                        window.location.reload();
+                        return
+                    }
+                    F.current = `verify`, U()
+                },
+                children: Mn || q && !w ? (0, L.jsx)(C, {
+                    ...R.resumeVerification
+                }) : (0, L.jsx)(C, {
+                    ...R.tryAgain
+                })
+            }) : null, Mn && J ? (0, L.jsx)(n, {
+                className: St,
+                color: `secondary`,
+                loading: M,
+                size: `large`,
+                type: `button`,
+                onClick: () => {
+                    F.current = `verify`, U({
+                        restart: !0
+                    })
+                },
+                children: (0, L.jsx)(C, {
+                    ...R.startNewVerification
+                })
+            }) : null, Ln || Rn && !Mn && !Q ? (0, L.jsx)(n, {
+                as: `a`,
+                className: St,
+                color: `secondary`,
+                openNewTab: !0,
+                rel: `noopener noreferrer`,
+                size: `large`,
+                to: `https://help.openai.com`,
+                children: (0, L.jsx)(C, {
+                    ...R.contactSupport
+                })
+            }) : null]
+        }) : null, $ ? (0, L.jsx)(n, {
+            "aria-disabled": Xe || W.isCheckoutLoading || void 0,
+            className: `mt-8 max-sm:mt-0 ${St}`,
+            loading: M || Tt || Xe || W.isCheckoutLoading,
+            size: `large`,
+            type: `button`,
+            visuallyDisabled: Xe || W.isCheckoutLoading,
+            onClick: () => void K(),
+            children: (0, L.jsx)(C, {
+                ...R.activateOffer
+            })
+        }) : null, k || (X || Z) && !Q ? (0, L.jsx)(n, {
+            as: `a`,
+            className: `${Z?`mt-6`:`mt-8`} max-sm:mt-0 ${St}`,
+            size: `large`,
+            to: Z ? lt(Vn) : `/`,
+            onClick: () => {
+                H == null || r == null || Je({
+                    accountId: r.id,
+                    accountUserId: r.normalizedAccountUserId,
+                    status: H
+                })
+            },
+            children: (0, L.jsx)(C, {
+                ...k ? R.proSubscriptionOpenChatGPT : R.openChatGPT
+            })
+        }) : null]
+    }) : null, t[166] = K, t[167] = pn, t[168] = H, t[169] = W, t[170] = r, t[171] = j.cause, t[172] = j.name, t[173] = Z, t[174] = Q, t[175] = Vn, t[176] = D, t[177] = Un, t[178] = i, t[179] = zn, t[180] = Tt, t[181] = X, t[182] = M, t[183] = Xe, t[184] = k, t[185] = q, t[186] = J, t[187] = Mn, t[188] = w, t[189] = $, t[190] = Ln, t[191] = In, t[192] = Rn, t[193] = U, t[194] = tr) : tr = t[194];
+    let nr;
+    return t[195] !== K || t[196] !== Ct || t[197] !== s || t[198] !== B ? (nr = Ct == null ? null : (0, L.jsx)(l, {
+        testId: `modal-add-email`,
+        isOpen: !0,
+        onClose: At,
+        title: s.formatMessage(R.addEmailTitle),
+        visuallyHiddenHeader: !0,
+        type: `success`,
+        className: `max-w-sm`,
+        children: (0, L.jsx)(_t, {
+            enterEmailTitle: s.formatMessage(R.addEmailTitle),
+            enterEmailDescription: s.formatMessage(R.addEmailDescription),
+            onVerified: () => {
+                B(Ct) && (wt(null), K({
+                    emailVerified: !0
+                }))
+            },
+            cancelFlowButton: (0, L.jsx)(n, {
+                type: `button`,
+                className: `w-full rounded-md`,
+                color: `secondary`,
+                onClick: At,
+                children: (0, L.jsx)(C, {
+                    ...R.cancelAddEmail
+                })
+            })
+        })
+    }), t[195] = K, t[196] = Ct, t[197] = s, t[198] = B, t[199] = nr) : nr = t[199], (0, L.jsxs)(`main`, {
+        className: `bg-token-bg-primary flex min-h-[calc(100svh-var(--mkt-header-height))] items-center justify-center px-6 py-12 max-sm:h-[calc(100svh-var(--mkt-header-height))] max-sm:min-h-0 max-sm:items-stretch max-sm:overflow-hidden max-sm:py-0`,
+        children: [(0, L.jsxs)(`section`, {
+            className: Z ? `flex w-full max-w-[569px] flex-col items-center text-center max-sm:h-full max-sm:min-h-0` : `flex w-full max-w-xl flex-col items-center text-center max-sm:h-full max-sm:min-h-0`,
+            children: [(0, L.jsx)(`div`, {
+                className: `contents max-sm:flex max-sm:min-h-0 max-sm:w-full max-sm:flex-1 max-sm:flex-col max-sm:overflow-y-auto`,
+                children: (0, L.jsxs)(`div`, {
+                    className: `contents max-sm:my-auto max-sm:flex max-sm:w-full max-sm:flex-none max-sm:flex-col max-sm:items-center max-sm:py-6`,
+                    children: [Gn, Kn, Z ? (0, L.jsx)(`img`, {
+                        alt: s.formatMessage(R.activatedIllustrationAlt),
+                        className: `mb-14 w-full max-w-[402px] object-contain max-sm:mb-6 max-sm:max-w-48`,
+                        height: 400,
+                        src: yt,
+                        width: 402
+                    }) : null, k || Rn || X && !Z ? (0, L.jsx)(`img`, {
+                        alt: k || En ? `` : s.formatMessage(R.verificationErrorIllustrationAlt),
+                        className: `mb-8 size-[200px] object-contain max-sm:mb-4 max-sm:size-32`,
+                        height: 200,
+                        src: bt,
+                        width: 200
+                    }) : null, (0, L.jsx)(`h1`, {
+                        "aria-atomic": `true`,
+                        "aria-live": `polite`,
+                        className: Z ? `text-[30px] leading-none font-semibold tracking-[-0.3px]` : `text-3xl font-semibold`,
+                        children: s.formatMessage(Pn.title)
+                    }), Yn, Xn, Zn, Qn, $n, er]
+                })
+            }), tr]
+        }), nr]
+    })
+}
+
+function pt(e) {
+    return e + 1
+}
+
+function mt(e) {
+    return e + 1
+}
+
+function ht(e) {
+    return e.isPersonalAccount() && e.canAccessWithCurrentSession
+}
+var gt, I, L, _t, vt, yt, bt, xt, St, R, z = e((() => {
+        gt = T(), ie(), Xe(), x(), P(), g(), le(), re(), i(), r(), se(), d(), We(), nt(), Ve(), $e(), O(), qe(), Oe(), it(), je(), c(), Fe(), E(), a(), o(), I = t(ye()), w(), _e(), L = me(), Ce(), _t = v(() => xe(() => import(`./c2675c8c-oz03twoan08d72ud.js`).then(e => (e.vt(), e._t)).then(e => e.EmailVerify), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]))), vt = `774192260`, yt = `https://cdn.openai.com/chatgpt/ctf-cdn/students-2026/offer-activated-c7b3af131a6e.webp`, bt = `https://cdn.openai.com/chatgpt/ctf-cdn/students-2026/verification-error-3efe3d7e397a.svg`, xt = `https://cdn.openai.com/chatgpt/ctf-cdn/students-2026/verification-success-8ef5336c384d.svg`, St = `max-sm:mx-auto max-sm:h-12 max-sm:min-h-12! max-sm:w-full max-sm:max-w-72 max-sm:text-base! max-sm:font-semibold!`, R = ge({
+            addEmailTitle: {
+                id: `AccountPaymentModal.primaryCTA.addEmailTitle`,
+                defaultMessage: `Email required`
+            },
+            addEmailDescription: {
+                id: `AccountPaymentModal.primaryCTA.addEmailDescription`,
+                defaultMessage: `You'll be able to login with this email. It will also be used for account updates (like password resets) and information about OpenAI services.`
+            },
+            cancelAddEmail: {
+                id: `AccountPaymentModal.primaryCTA.cancelAddEmail`,
+                defaultMessage: `Cancel`
+            },
+            emailRefreshError: {
+                id: `chatgpt.students.back_to_school_2026.email.account_refresh_error`,
+                defaultMessage: `We couldn’t confirm an email on your ChatGPT account. Please try again to add or verify your email and continue.`
+            },
+            signingInTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.sign_in.title`,
+                defaultMessage: `Redirecting to sign in`
+            },
+            signingInDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.sign_in.description`,
+                defaultMessage: `Sign in to your ChatGPT account before verifying your student status.`
+            },
+            verifyingTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.verifying.title`,
+                defaultMessage: `Verifying your student status`
+            },
+            verifyingDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.verifying.description`,
+                defaultMessage: `This may take a minute. Please keep this page open.`
+            },
+            verificationPendingTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.pending.title`,
+                defaultMessage: `Your student verification is still in progress.`
+            },
+            verificationPendingDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.pending.description`,
+                defaultMessage: `Return to verification to finish, or check back soon if you’ve submitted your information.`
+            },
+            verificationRestartDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.pending.restart_description`,
+                defaultMessage: `Resume your existing verification, or start a new one if you need to update your information.`
+            },
+            verifiedTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.verified.title`,
+                defaultMessage: `You’re verified as a student`
+            },
+            verifiedDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.verified.description.four_month.work`,
+                defaultMessage: `Next, claim your free four months of ChatGPT Work.`
+            },
+            verifiedIllustrationAlt: {
+                id: `chatgpt.students.back_to_school_2026.claim.verified.illustration.alt`,
+                defaultMessage: `Colorful illustration celebrating successful student verification`
+            },
+            activatedTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.activated.title.upgrade`,
+                defaultMessage: `Congrats! You got an upgrade.`
+            },
+            activatedDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.activated.description.upgrade`,
+                defaultMessage: `You now have a free subscription to ChatGPT Plus to access Work and other features. Learn how you can make the most of it this semester.`
+            },
+            activatedIllustrationAlt: {
+                id: `chatgpt.students.back_to_school_2026.claim.activated.illustration.alt`,
+                defaultMessage: `Colorful illustration celebrating an activated student offer`
+            },
+            activateOffer: {
+                id: `chatgpt.students.back_to_school_2026.claim.verified.activate_offer`,
+                defaultMessage: `Activate offer`
+            },
+            existingPlusNoAutoRenewalDisclosure: {
+                id: `chatgpt.students.back_to_school_2026.claim.verified.existing_plus.no_auto_renewal`,
+                defaultMessage: `Activate this offer to get 4 months free on your current Plus subscription. Your subscription will end after the free period and won’t renew automatically.`
+            },
+            activationErrorTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.activation_error.title`,
+                defaultMessage: `We couldn’t activate your offer`
+            },
+            goUpgradeUnavailableDescription: {
+                id: `chatgpt.students.back_to_school_2026.go_upgrade.unavailable`,
+                defaultMessage: `We can’t activate the student offer on this subscription here. Please check your current plan in Settings or contact support for help.`
+            },
+            discountConflictDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.discount_conflict.description`,
+                defaultMessage: `Your subscription already has a discount that can’t be combined with this student offer. Your current discount and subscription haven’t been changed.`
+            },
+            activationErrorDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.activation_error.description`,
+                defaultMessage: `Offer activation failed. Please try again later.`
+            },
+            activationSupportDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.activation_error.support_description`,
+                defaultMessage: `Your checkout didn’t finish, and this offer can’t be retried here. Please contact support.`
+            },
+            verificationErrorTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.error.title`,
+                defaultMessage: `We couldn’t verify your eligibility`
+            },
+            verificationErrorDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.error.description`,
+                defaultMessage: `We couldn’t confirm that you’re eligible for the student offer. If you think this is a mistake, please contact support.`
+            },
+            verificationErrorIllustrationAlt: {
+                id: `chatgpt.students.back_to_school_2026.claim.error.illustration.alt`,
+                defaultMessage: `Blue chat bubble with an exclamation mark representing a verification issue`
+            },
+            contactSupport: {
+                id: `chatgpt.students.back_to_school_2026.claim.error.contact_support`,
+                defaultMessage: `Contact support`
+            },
+            alreadyClaimedTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.enrolled.title`,
+                defaultMessage: `You’ve already claimed this offer`
+            },
+            alreadyClaimedDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.enrolled.description`,
+                defaultMessage: `Your student offer is active on your account.`
+            },
+            alreadyClaimedDescriptionWithAccount: {
+                id: `chatgpt.students.back_to_school_2026.claim.enrolled.description.with_account`,
+                defaultMessage: `Your student offer is active on your account:`
+            },
+            openChatGPT: {
+                id: `chatgpt.students.back_to_school_2026.claim.enrolled.open_chatgpt.button.label`,
+                defaultMessage: `Open ChatGPT`
+            },
+            personalWorkspaceTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.personal_workspace.title`,
+                defaultMessage: `Switch to your personal workspace`
+            },
+            personalWorkspaceDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.personal_workspace.description`,
+                defaultMessage: `This offer is available only for your personal ChatGPT account.`
+            },
+            proSubscriptionOpenChatGPT: {
+                id: `chatgpt.students.back_to_school_2026.claim.pro_subscription.open_chatgpt.button.label`,
+                defaultMessage: `Open ChatGPT`
+            },
+            proSubscriptionTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.pro_subscription.title`,
+                defaultMessage: `This subscription isn’t eligible`
+            },
+            proSubscriptionDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.pro_subscription.description`,
+                defaultMessage: `This student offer is for ChatGPT Plus and isn’t available with your current Pro or Pro Lite subscription. Your subscription hasn’t been changed.`
+            },
+            unsupportedSubscriptionTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.mobile_subscription.title`,
+                defaultMessage: `This subscription isn’t eligible`
+            },
+            unsupportedSubscriptionDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.mobile_subscription.description.recovery`,
+                defaultMessage: `This offer can’t be applied to App Store or Google Play subscriptions. Cancel through the store where you subscribed; you’ll keep Plus until your current billing period ends. Then return to check whether the offer is still available.`
+            },
+            offerUnavailableTitle: {
+                id: `chatgpt.students.back_to_school_2026.claim.unavailable.title`,
+                defaultMessage: `Offer unavailable`
+            },
+            offerUnavailableDescription: {
+                id: `chatgpt.students.back_to_school_2026.claim.unavailable.description`,
+                defaultMessage: `This student offer isn’t available for your account.`
+            },
+            resumeVerification: {
+                id: `chatgpt.students.back_to_school_2026.claim.resume_verification`,
+                defaultMessage: `Resume verification`
+            },
+            startNewVerification: {
+                id: `chatgpt.students.back_to_school_2026.claim.start_new_verification`,
+                defaultMessage: `Start a new verification`
+            },
+            tryAgain: {
+                id: `chatgpt.students.back_to_school_2026.claim.try_again`,
+                defaultMessage: `Try again`
+            }
+        })
+    })),
+    Ct, wt, Tt, Et, Dt, Ot, kt = e((() => {
+        _e(), Ct = T(), ot(), z(), ue(), wt = me(), Tt = {
+            hasRouteMeta: !0
+        }, Et = () => [{
+            title: `Student verification | ChatGPT`
+        }, {
+            name: `robots`,
+            content: `noindex, nofollow`
+        }], Dt = he(function() {
+            "use forget";
+            let e = (0, Ct.c)(6),
+                {
+                    headerNavData: t,
+                    locale: n,
+                    sheerIdProgramId: r
+                } = Se(),
+                i;
+            e[0] === r ? i = e[1] : (i = (0, wt.jsx)(ft, {
+                sheerIdProgramId: r
+            }), e[0] = r, e[1] = i);
+            let a;
+            return e[2] !== t || e[3] !== n || e[4] !== i ? (a = (0, wt.jsx)(j, {
+                headerNavData: t,
+                locale: n,
+                slug: `students/claim`,
+                children: i
+            }), e[2] = t, e[3] = n, e[4] = i, e[5] = a) : a = e[5], a
+        }), Ot = ve(S)
+    }));
+e((() => {
+    kt()
+}))();
+export {
+    Ot as ErrorBoundary, Dt as
+    default, Tt as handle, Et as meta
+};
 //# sourceMappingURL=students_.claim-g9luyaed.js.map

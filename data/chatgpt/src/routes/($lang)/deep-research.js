@@ -1,2 +1,125 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{HN as n,MA as r,NA as i,Ns as a,Oct as o,Rs as s,U1 as c,UN as l,ZG as u,eK as d,hst as f,lF as p,mst as m,oK as h,q1 as g,sK as _,vF as v,wct as y}from"./4813494d-mdvd4786a87166cc.js";import{Bn as b,Ht as x,Q as S,Vn as C,bt as w,ct as T,wn as E}from"./2340486e-i7pjxgdhv0bs6apg.js";import{c as D,mxn as O,pxn as k,s as A}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Nt as j,O_ as M,Pt as N,f as P,k_ as F,m as I,x_ as L,y_ as R}from"./8b34dbc2-lmwubajnld74ksfm.js";import{n as z,t as B}from"./9f7bb6d3-ne1jvpjid0rtccp9.js";function V(){"use forget";let e=(0,U.c)(17),t=(0,W.use)(p),n;e[0]===t?n=e[1]:(n=f(t),e[0]=t,e[1]=n);let r=n,i;e[2]===Symbol.for(`react.memo_cache_sentinel`)?(i=c()?.getWorkspaceId(),e[2]=i):i=e[2];let o=i,s=o!=null,{data:u,isLoading:m}=d(s?o:void 0),g=F(),_;e[3]===u?_=e[4]:(_=!s||(u?.permissions==null?u?.beta_settings?.[y.DEEP_RESEARCH]===!0:u.permissions.includes(h.DeepResearchAccess)),e[3]=u,e[4]=_);let v=_,b;e[5]===Symbol.for(`react.memo_cache_sentinel`)?(b=[],e[5]=b):b=e[5],l(H,b);let x,S;if(e[6]!==g||e[7]!==v||e[8]!==m?(x=()=>{m||!v||R(g,a)},S=[g,v,m],e[6]=g,e[7]=v,e[8]=m,e[9]=x,e[10]=S):(x=e[9],S=e[10]),(0,W.useEffect)(x,S),m)return null;if(!v){let t;return e[11]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,G.jsx)(T,{to:`/`,replace:!0}),e[11]=t):t=e[11],t}let C;e[12]===r?C=e[13]:(C=(0,G.jsx)(j,{conversation:r,className:`deep-research-app`},r.id),e[12]=r,e[13]=C);let w;return e[14]!==r||e[15]!==C?(w=(0,G.jsx)(G.Fragment,{children:(0,G.jsx)(P,{conversation:r,children:C})}),e[14]=r,e[15]=C,e[16]=w):w=e[16],w}function H(){r.dismiss()}var U,W,G,K,q,J=e((()=>{S(),U=E(),o(),_(),z(),I(),M(),v(),s(),L(),u(),g(),i(),N(),O(),m(),n(),A(),W=t(C()),G=b(),K=()=>(D(),k()?{isOutletBasedRoute:!0,pageType:`deep-research`,prefetchSearch:null}:w(`/`)),q=x(function(){"use forget";let e=(0,U.c)(1),t;return e[0]===Symbol.for(`react.memo_cache_sentinel`)?(t=(0,G.jsx)(B,{children:(0,G.jsx)(V,{})}),e[0]=t):t=e[0],t})}));e((()=>{J()}))();export{K as clientLoader,q as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    HN as n,
+    MA as r,
+    NA as i,
+    Ns as a,
+    Oct as o,
+    Rs as s,
+    U1 as c,
+    UN as l,
+    ZG as u,
+    eK as d,
+    hst as f,
+    lF as p,
+    mst as m,
+    oK as h,
+    q1 as g,
+    sK as _,
+    vF as v,
+    wct as y
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as b,
+    Ht as x,
+    Q as S,
+    Vn as C,
+    bt as w,
+    ct as T,
+    wn as E
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    c as D,
+    mxn as O,
+    pxn as k,
+    s as A
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Nt as j,
+    O_ as M,
+    Pt as N,
+    f as P,
+    k_ as F,
+    m as I,
+    x_ as L,
+    y_ as R
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    n as z,
+    t as B
+} from "./9f7bb6d3-ne1jvpjid0rtccp9.js";
+
+function V() {
+    "use forget";
+    let e = (0, U.c)(17),
+        t = (0, W.use)(p),
+        n;
+    e[0] === t ? n = e[1] : (n = f(t), e[0] = t, e[1] = n);
+    let r = n,
+        i;
+    e[2] === Symbol.for(`react.memo_cache_sentinel`) ? (i = c()?.getWorkspaceId(), e[2] = i) : i = e[2];
+    let o = i,
+        s = o != null,
+        {
+            data: u,
+            isLoading: m
+        } = d(s ? o : void 0),
+        g = F(),
+        _;
+    e[3] === u ? _ = e[4] : (_ = !s || (u?.permissions == null ? u?.beta_settings?.[y.DEEP_RESEARCH] === !0 : u.permissions.includes(h.DeepResearchAccess)), e[3] = u, e[4] = _);
+    let v = _,
+        b;
+    e[5] === Symbol.for(`react.memo_cache_sentinel`) ? (b = [], e[5] = b) : b = e[5], l(H, b);
+    let x, S;
+    if (e[6] !== g || e[7] !== v || e[8] !== m ? (x = () => {
+            m || !v || R(g, a)
+        }, S = [g, v, m], e[6] = g, e[7] = v, e[8] = m, e[9] = x, e[10] = S) : (x = e[9], S = e[10]), (0, W.useEffect)(x, S), m) return null;
+    if (!v) {
+        let t;
+        return e[11] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, G.jsx)(T, {
+            to: `/`,
+            replace: !0
+        }), e[11] = t) : t = e[11], t
+    }
+    let C;
+    e[12] === r ? C = e[13] : (C = (0, G.jsx)(j, {
+        conversation: r,
+        className: `deep-research-app`
+    }, r.id), e[12] = r, e[13] = C);
+    let w;
+    return e[14] !== r || e[15] !== C ? (w = (0, G.jsx)(G.Fragment, {
+        children: (0, G.jsx)(P, {
+            conversation: r,
+            children: C
+        })
+    }), e[14] = r, e[15] = C, e[16] = w) : w = e[16], w
+}
+
+function H() {
+    r.dismiss()
+}
+var U, W, G, K, q, J = e((() => {
+    S(), U = E(), o(), _(), z(), I(), M(), v(), s(), L(), u(), g(), i(), N(), O(), m(), n(), A(), W = t(C()), G = b(), K = () => (D(), k() ? {
+        isOutletBasedRoute: !0,
+        pageType: `deep-research`,
+        prefetchSearch: null
+    } : w(`/`)), q = x(function() {
+        "use forget";
+        let e = (0, U.c)(1),
+            t;
+        return e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (t = (0, G.jsx)(B, {
+            children: (0, G.jsx)(V, {})
+        }), e[0] = t) : t = e[0], t
+    })
+}));
+e((() => {
+    J()
+}))();
+export {
+    K as clientLoader, q as
+    default
+};
 //# sourceMappingURL=(_lang).deep-research-d189suls.js.map

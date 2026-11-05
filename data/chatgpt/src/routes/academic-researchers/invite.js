@@ -1,2 +1,19 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{n as t,r as n,t as r}from"./39e3b9e4-omx9yyxw5a7fovpw.js";var i=e((()=>{t()}));e((()=>{i()}))();export{n as default,r as handle};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    n as t,
+    r as n,
+    t as r
+} from "./39e3b9e4-omx9yyxw5a7fovpw.js";
+var i = e((() => {
+    t()
+}));
+e((() => {
+    i()
+}))();
+export {
+    n as
+    default, r as handle
+};
 //# sourceMappingURL=academic-researchers.invite-dbbam8y3.js.map

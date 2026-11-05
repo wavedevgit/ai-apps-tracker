@@ -1,3 +1,2407 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/18798b51-brm8ak3tl2d7w6lj.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-mdvd4786a87166cc.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$D as n,$T as r,A8 as i,At as a,Aw as o,BO as s,BV as c,Bz as l,Crt as u,DS as d,FS as f,Fh as p,Hh as m,Hn as h,I7 as g,IU as ee,JV as te,K5 as _,LU as v,M7 as y,OO as ne,Oct as re,Ow as b,PO as x,Ph as S,Qy as C,RU as w,Rz as ie,SN as T,Sct as ae,Tct as E,U1 as oe,Uh as D,Un as O,VO as se,VV as ce,Vz as k,ZG as le,Zy as ue,_D as de,_ct as A,_rt as fe,a2 as j,cn as pe,cot as me,dD as he,dot as M,eE as N,eH as ge,eK as _e,eO as ve,fB as ye,fJ as be,gJ as P,gct as xe,hn as Se,j5 as Ce,lV as we,my as F,o0 as Te,o2 as Ee,pB as De,pct as Oe,q1 as I,q5 as L,rV as R,wct as ke,wy as z,xN as Ae,y5 as je,zU as Me,zV as B,zz as Ne}from"./4813494d-mdvd4786a87166cc.js";import{Bn as V,Ln as Pe,N as Fe,Nn as H,Nt as Ie,Q as Le,Rn as U,Vn as Re,cn as ze,l as Be,ln as Ve,p as He,s as Ue,wn as We,zn as Ge}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Ah as Ke,BUn as qe,Bhn as Je,Bst as Ye,Ch as Xe,Djt as Ze,Ed as Qe,Eh as $e,Ejt as et,Hh as tt,JCn as nt,Lhn as rt,MUn as it,Ph as at,Rhn as ot,Sh as st,Td as ct,Th as lt,Uh as ut,VUn as dt,Vst as ft,XWn as pt,YCn as mt,ZWn as ht,_h as gt,awn as _t,cgn as vt,cqn as yt,cwn as bt,dgn as xt,eMt as St,fgn as Ct,jUn as W,jh as wt,lgn as Tt,lwn as Et,own as Dt,sgn as Ot,sqn as kt,swn as At,tMt as jt,ugn as Mt,vh as Nt,wh as Pt,yh as Ft,zhn as It}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Cf as Lt,Dx as Rt,Mx as zt,Ob as Bt,Ox as Vt,by as Ht,jx as Ut,kb as Wt,wf as Gt,xy as Kt}from"./30901919-s8bko9nrkqwv6i4f.js";import{$o as qt,Iv as G,Jo as Jt,Lv as Yt,Xo as Xt,Yo as Zt,Zo as Qt,es as $t,fl as en,is as tn,ns as nn,pl as rn,ss as an,ts as on}from"./c2675c8c-oz03twoan08d72ud.js";import{In as sn,Ln as cn,Lv as ln,Tv as un,g_ as dn,h_ as K,zv as fn}from"./8b34dbc2-lmwubajnld74ksfm.js";import{n as pn,t as mn}from"./9f2e6d33-h33rm8r24h08gyr1.js";import{n as hn,t as gn}from"./acd36773-tqhuox2xfelsiqb8.js";import{l as _n,o as vn}from"./d84f4c09-in2i53o5pcwcwqw8.js";import{i as yn,t as bn}from"./32d3feda-hhfdhqajoabb5vr8.js";import{a as xn,n as Sn,t as Cn}from"./8c6976e5-d8nzzrgxiaivy5n7.js";import{n as wn,s as Tn}from"./b90db9d2-obtztx8g8suw7cbr.js";import{n as En,t as Dn}from"./b3532ffc-cxid0xthssfipob5.js";import{r as On,t as kn}from"./12cc112f-nvr9jolbx5qr37j4.js";import{n as An,t as jn}from"./22143f97-f1fwupvtyq4phcwu.js";import{n as Mn,t as Nn}from"./877c5994-hxide9t2m8mfxiij.js";function Pn(){return(0,q.jsx)(ye,{className:`icon-sm text-token-text-tertiary ms-1`})}function Fn({onChange:e,enabled:t,Icon:n,label:r,labelValues:i,description:a,onClickInfo:o,tooltip:s,tooltipValues:c,hasPadding:l=!0,className:u,disabled:d=!1,messageAfterTooltip:f=void 0,after:p}){return(0,q.jsx)(Qt,{className:_(`justify-start`,l?`py-6`:`py-0`,u),children:(0,q.jsxs)(`div`,{className:`flex flex-col gap-0.5`,children:[(0,q.jsxs)(`div`,{className:`flex flex-row gap-4`,children:[(0,q.jsx)(F,{label:``,disabled:d,enabled:t,onChange:e}),(0,q.jsxs)(`p`,{className:`text-md inline-flex items-center`,children:[n&&(0,q.jsx)(n,{className:`icon me-1.5`}),r&&(0,q.jsx)(H,{...r,values:i}),s&&(0,q.jsx)(ue,{interactive:!0,label:(0,q.jsx)(H,{...s,values:c}),side:`top`,children:o?(0,q.jsx)(`button`,{className:`block h-full`,onClick:o,children:(0,q.jsx)(Pn,{})}):(0,q.jsx)(Pn,{})}),f&&(0,q.jsx)(`span`,{className:`text-token-text-secondary ps-1 text-sm`,children:(0,q.jsx)(H,{...f})})]})]}),a&&(0,q.jsx)(`span`,{className:`text-token-text-secondary ms-14 text-sm`,children:(0,q.jsx)(H,{...a})}),p]})})}function In({workspaceId:e,Icon:t,label:n,description:r,onClickInfo:i,feature:a,value:o,tooltip:s,hasPadding:c=!0,className:l,disabled:u=!1,overrideDisplayValue:d=void 0,messageAfterTooltip:f=void 0,after:p}){let m=Fe(),{variables:h,mutate:g}=He({mutationFn:({feature:t,enabled:n})=>y.safePost(`/accounts/{account_id}/beta_features`,{parameters:{path:{account_id:e}},requestBody:{feature:t,value:n}}),onSettled:()=>{m.invalidateQueries({queryKey:[`workspace-settings`,e]})},onError:()=>{w.danger(Ln.featureSettingsUpdateFailed,{toastId:`workspace_beta_feature_toggle_row`})}});return(0,q.jsx)(Fn,{onChange:e=>{g({feature:a,enabled:e})},enabled:d??h?.enabled??o,Icon:t,label:n,description:r,tooltip:s,hasPadding:c,className:l,disabled:u,messageAfterTooltip:f,onClickInfo:i,after:p})}var q,Ln,Rn=e((()=>{De(),C(),z(),v(),g(),Ue(),L(),U(),on(),q=V(),Ln=Pe({featureSettingsUpdateFailed:{id:`workspaceSettingsOld.featureSettingsUpdateFailed`,defaultMessage:`Failed to update feature setting`}})})),zn,Bn=e((()=>{P(),zn=be({name:`arrow-up-lg-light-16`,canvas:{width:16,height:16,viewBox:`0 0 16 16`,frame:{x:0,y:0,width:16,height:16},inkBounds:{x:2.808594,y:2.279785,width:10.382568,height:11.578125},visualBounds:{x:2.808594,y:2.279785,width:10.382568,height:11.578125}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:2.808594,y:2.279785,width:10.382568,height:11.578125},center:{x:7.999878,y:8.068848},insets:{top:2.279785,right:2.808838,bottom:2.14209,left:2.808594},anchors:{frame:{x:8,y:8},ink:{x:7.999878,y:8.068848},foreground:{x:7.999878,y:8.068848}}},capabilities:[`icon`],body:`<path d="M7.45819 2.4721C7.77271 2.21556 8.22656 2.2158 8.5412 2.4721L8.60663 2.53069L13.0373 6.96233C13.2423 7.16736 13.2423 7.49949 13.0373 7.70452C12.8322 7.90905 12.5 7.90938 12.2951 7.70452L8.52557 3.93401V13.3334C8.5254 13.6232 8.29002 13.8578 8.00018 13.8578C7.71034 13.8578 7.47497 13.6232 7.47479 13.3334V3.93206L3.70429 7.70452C3.49929 7.90915 3.16702 7.90927 2.9621 7.70452C2.75738 7.49959 2.75747 7.16732 2.9621 6.96233L7.39276 2.53069L7.45819 2.4721Z" fill="currentColor"/>`})})),Vn,Hn=e((()=>{P(),Vn=be({name:`funnel-light-16`,canvas:{width:16,height:16,viewBox:`0 0 16 16`,frame:{x:0,y:0,width:16,height:16},inkBounds:{x:2.141357,y:2.141113,width:11.716797,height:12.306641},visualBounds:{x:2.141357,y:2.141113,width:11.716797,height:12.306641}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:2.141357,y:2.141113,width:11.716797,height:12.306641},center:{x:7.999756,y:8.294434},insets:{top:2.141113,right:2.141846,bottom:1.552246,left:2.141357},anchors:{frame:{x:8,y:8},ink:{x:7.999756,y:8.294434},foreground:{x:7.999756,y:8.294434}}},capabilities:[`icon`],body:`<path d="M12.8083 3.99951C12.8082 3.55323 12.4461 3.19189 11.9998 3.19189H3.99976C3.55358 3.19207 3.19231 3.55334 3.19214 3.99951V4.74365C3.19223 4.97128 3.28835 5.18818 3.45679 5.34131L6.24976 7.88135C6.63717 8.23354 6.85815 8.73277 6.85815 9.25635V12.2544C6.85815 12.3079 6.88845 12.3573 6.93628 12.3813L8.93628 13.3813C9.03047 13.4284 9.14136 13.3597 9.14136 13.2544V9.25635C9.14136 8.73285 9.36246 8.23353 9.74976 7.88135L12.5437 5.34131C12.7121 5.18818 12.8083 4.97128 12.8083 4.74365V3.99951ZM13.8582 4.74365C13.8581 5.26712 13.6371 5.76653 13.2498 6.11865L10.4568 8.65869C10.2883 8.81189 10.1921 9.0286 10.1921 9.25635V13.2544C10.1921 14.1401 9.25977 14.7165 8.46753 14.3208L6.46753 13.3208C6.06381 13.1189 5.80835 12.7058 5.80835 12.2544V9.25635C5.80835 9.02868 5.71211 8.81188 5.5437 8.65869L2.74976 6.11865C2.36243 5.76653 2.14144 5.26711 2.14136 4.74365V3.99951C2.14153 2.97344 2.97368 2.14129 3.99976 2.14111H11.9998C13.026 2.14111 13.858 2.97333 13.8582 3.99951V4.74365Z" fill="currentColor"/>`})})),Un,Wn=e((()=>{P(),Un=be({name:`funnel-light-20`,canvas:{width:20,height:20,viewBox:`0 0 20 20`,frame:{x:0,y:0,width:20,height:20},inkBounds:{x:2.668213,y:2.668457,width:14.663086,height:15.400391},visualBounds:{x:2.668213,y:2.668457,width:14.663086,height:15.400391}},paint:{kind:`monochrome`},optical:{shape:`non-circular`,bounds:{x:2.668213,y:2.668457,width:14.663086,height:15.400391},center:{x:9.999756,y:10.368653},insets:{top:2.668457,right:2.668701,bottom:1.931152,left:2.668213},anchors:{frame:{x:10,y:10},ink:{x:9.999756,y:10.368653},foreground:{x:9.999756,y:10.368653}}},capabilities:[`icon`],body:`<path d="M16.0012 5.00049C16.0012 4.44739 15.5533 3.99871 15.0002 3.99854H5.00024C4.44704 3.99854 3.99829 4.44728 3.99829 5.00049V5.9292C3.99829 6.21141 4.11759 6.48057 4.32642 6.67041L7.8186 9.84521C8.3047 10.2871 8.5813 10.9139 8.5813 11.5708V15.3188C8.58144 15.3825 8.61813 15.4408 8.67505 15.4692L11.175 16.7192C11.2868 16.7747 11.4179 16.6936 11.4182 16.5688V11.5708C11.4182 10.9139 11.6958 10.2871 12.1819 9.84521L15.6741 6.67041C15.8827 6.48059 16.0012 6.21126 16.0012 5.9292V5.00049ZM17.3313 5.9292C17.3313 6.58606 17.0546 7.21289 16.5686 7.65479L13.0764 10.8296C12.8676 11.0194 12.7483 11.2886 12.7483 11.5708V16.5688C12.748 17.6823 11.5764 18.4064 10.5803 17.9087L8.08032 16.6587C7.57282 16.4049 7.25136 15.8862 7.25122 15.3188V11.5708C7.25122 11.2887 7.13278 11.0194 6.92407 10.8296L3.43188 7.65479C2.94579 7.21288 2.66821 6.58613 2.66821 5.9292V5.00049C2.66821 3.71274 3.7125 2.66846 5.00024 2.66846H15.0002C16.2878 2.66863 17.3313 3.71285 17.3313 5.00049V5.9292Z" fill="currentColor"/>`})})),Gn,Kn,qn,Jn,Yn,Xn,Zn,Qn,$n,er=e((()=>{k(),xt(),hn(),Qe(),Mt(),vt(),Bn(),An(),Hn(),Wn(),It(),rt(),Gn=Ct({id:`workspace-gpt-table-actions`,icons:{download:{normal:Ot,small:Tt},trash:{normal:ot,small:Je},filter:{normal:Un,small:Vn},"arrow-up":{normal:jn,small:zn},"arrow-down":{normal:ct,small:gn}}}),Kn=Gn.Download,qn=Gn.Trash,Jn=l.Plus,Yn=l.LockKeyHole,Xn=l.Cross,Zn=Gn.Filter,Qn=Gn.ArrowUp,$n=Gn.ArrowDown}));function tr({isOpen:e,onClose:t,account:n,gpt:i}){let a=Ge(),[o,s]=(0,nr.useState)(!1),[c,l]=(0,nr.useState)(``),[u,d]=(0,nr.useState)(!0),f=i.gizmo.is_unassigned;return(0,J.jsxs)(b,{testId:`modal-change-owner`,size:`custom`,className:`max-w-lg text-sm`,isOpen:e,onClose:T,type:`success`,title:a.formatMessage(f?rr.assignModalTitle:rr.changeModalTitle),children:[(0,J.jsx)(`p`,{className:`text-token-text-primary mb-4`,children:(0,J.jsx)(H,{...rr.changeModalPrompt,values:{gptName:i.gizmo.display.name}})}),!u&&(0,J.jsx)(`p`,{className:`text-red-500`,children:(0,J.jsx)(H,{...rr.invalidEmail})}),(0,J.jsx)(Ye,{ariaLabel:a.formatMessage({id:`x4A5l2`,defaultMessage:`Email`}),className:_(`px-3 py-2`,u?``:`border-red-500`),name:`email`,type:`email`,value:c,placeholder:`Email`,onChange:e=>{l(e.target.value)}}),(0,J.jsxs)(`div`,{className:`mt-4 flex justify-end gap-2`,children:[(0,J.jsx)(r,{color:`secondary`,onClick:()=>{t(!1),s(!1),d(!0)},loading:o,children:(0,J.jsx)(H,{...rr.cancelButtonText})}),(0,J.jsx)(r,{color:`primary`,loading:o,onClick:()=>{s(!0),d(!0),c==``||!O.test(c)?(d(!1),s(!1)):y.safePost(`/accounts/{account_id}/gpts/{gizmo_id}/owner`,{parameters:{path:{account_id:n.id,gizmo_id:i.gizmo.id}},requestBody:{email:c}}).then(()=>{t(!0),s(!1),d(!0)},()=>{d(!1),s(!1)})},children:(0,J.jsx)(H,{...f?rr.assignButtonText:rr.changeOwnerButtonText})})]})]})}var nr,J,rr,ir=e((()=>{N(),o(),ft(),h(),g(),L(),Ae(),nr=t(Re()),U(),J=V(),rr=Pe({changeModalTitle:{id:`changeOwnerModal.changeModalTitle`,defaultMessage:`Change Owner`},assignModalTitle:{id:`changeOwnerModal.assignModalTitle`,defaultMessage:`Assign Owner`},changeModalPrompt:{id:`changeOwnerModal.changeModalPrompt`,defaultMessage:`New owner of {gptName}`},cancelButtonText:{id:`changeOwnerModal.cancelButtonText`,defaultMessage:`Cancel`},changeOwnerButtonText:{id:`changeOwnerModal.changeOwnerButtonText`,defaultMessage:`Change owner`},assignButtonText:{id:`changeOwnerModal.assignButtonText`,defaultMessage:`Assign`},invalidEmail:{id:`changeOwnerModal.invalidEmail`,defaultMessage:`Email is invalid or does not belong to a member in this workspace`}})}));function ar({isOpen:e,onClose:t,account:n,gpt:i}){let a=Ge(),[o,s]=(0,or.useState)(!1);return(0,sr.jsxs)(b,{testId:`modal-delete-gpt`,size:`custom`,className:`max-w-lg text-sm`,isOpen:e,onClose:T,type:`success`,title:a.formatMessage(cr.deleteModalTitle),children:[(0,sr.jsx)(`p`,{className:`text-token-text-primary mb-4`,children:(0,sr.jsx)(H,{...cr.deleteModalPrompt,values:{gptName:i.gizmo.display.name}})}),(0,sr.jsxs)(`div`,{className:`mt-4 flex justify-end gap-2`,children:[(0,sr.jsx)(r,{color:`secondary`,onClick:()=>{t(!1)},loading:o,children:(0,sr.jsx)(H,{...cr.cancelButtonText})}),(0,sr.jsx)(r,{color:`danger`,loading:o,onClick:()=>{s(!0),y.safeDelete(`/accounts/{account_id}/gpts/{gizmo_id}`,{parameters:{path:{account_id:n.id,gizmo_id:i.gizmo.id}}}).finally(()=>{t(!0),s(!1)})},children:(0,sr.jsx)(H,{...cr.deleteButtonText})})]})]})}var or,sr,cr,lr=e((()=>{N(),o(),g(),Ae(),or=t(Re()),U(),sr=V(),cr=Pe({deleteModalTitle:{id:`deleteGPTModal.accessModalTitle`,defaultMessage:`Delete GPT`},deleteModalPrompt:{id:`deleteGPTModal.accessModalPrompt`,defaultMessage:`Are you sure you would like to delete {gptName}? This action can not be undone.`},cancelButtonText:{id:`deleteGPTModal.cancelButtonText`,defaultMessage:`Cancel`},deleteButtonText:{id:`deleteGPTModal.deleteButtonText`,defaultMessage:`Delete`}})})),ur,dr=e((()=>{re(),g(),ur=async(e,t,n,r,i)=>{let a=r;for(;;){n.migrationEnabled&&i?.throwIfAborted();let r=await y.safeGet(`/workspace-resources/{account_id}/admin/gizmos`,{parameters:{path:{account_id:e},query:{search:n.search??``,limit:10,order_by:n.orderBy??`updated_at`,order_dir:n.orderDir??`desc`,share_recipients:n.shareRecipients??[],is_approved:t===E.THIRD_PARTY,is_unassigned:t===E.UNASSIGNED,...n.toolTypes?.length?{tool_types:n.toolTypes}:{},...a?{query_continuation:a}:{}}},signal:n.migrationEnabled?i:void 0}),o=r.items.filter(({gizmo:e})=>!n.migrationEnabled||t===E.THIRD_PARTY||!!e.migrated_plugin_id==(t===`migrated`));if(a=r.query_continuation??void 0,!n.migrationEnabled||o.length||!a)return{items:o,query_continuation:a??null}}}}));function fr({account:e,gpt:t,thirdParty:n,migrated:r,onMigrate:i}){"use no forget";let a=Fe(),o=Ge(),[c,l]=(0,Y.useState)(!1),[u,f]=(0,Y.useState)(!1),[p,h]=(0,Y.useState)(!1),[g,te]=(0,Y.useState)(!1),[_,v]=(0,Y.useState)(!1),[y,ne]=(0,Y.useState)(!1),re=Ie(),b=new Date(n?t.gizmo.workspace_approval_date??``:t.gizmo.created_at).toLocaleDateString(`en-US`,{month:`short`,day:`numeric`}),x=new Date(t.gizmo.updated_at).toLocaleDateString(`en-US`,{month:`short`,day:`numeric`}),S=(0,Y.useMemo)(()=>{let e=t.tools.flatMap(e=>ge(e)?[e.metadata.domain]:[]);return e.length===1?e[0]:e.length>1?`${e.length} domains`:``},[t.tools]),C=t.gizmo.is_unassigned,w=ve(t.gizmo.migrated_plugin_id),T=_&&w&&!n?t.gizmo.migrated_plugin_id??void 0:void 0,ae=Ce(()=>Nt(T)),oe=Ce(()=>gt(T)===`pending`),D=Ce(()=>Ke(t)),O=D===`migrate`,se=Ce(lt),k=Ce($e),le=D===`gpt_permission_required`,ue=Ce(wt),de=D===`read_access_required`,A=fe(`1315690859`),j=(0,Y.useCallback)(e=>{!e&&y||v(e)},[y]),pe=(0,Y.useCallback)(async()=>{if(!y){ne(!0);try{let n=await s.exportWorkspaceAdminGizmoZip({accountId:e.id,gizmoId:t.gizmo.id});bt(await n.blob(),nt(n.headers.get(`Content-Disposition`))??`gizmo-export.zip`)}catch(e){let t=M(e);ee().danger(t??o.formatMessage(Z.exportGizmoFailure))}finally{ne(!1),v(!1)}}},[e.id,t.gizmo.id,o,y]);return(0,X.jsxs)(X.Fragment,{children:[(0,X.jsxs)(G.Row,{className:`relative`,children:[(0,X.jsx)(G.Cell,{className:`max-w-[320px] min-w-[240px] py-2 pe-2 align-middle! whitespace-break-spaces`,children:(0,X.jsxs)(`div`,{className:`flex items-center`,children:[(0,X.jsx)(`div`,{className:`h-10 w-10 shrink-0`,children:(0,X.jsx)(St,{src:t.gizmo.display.profile_picture_url,isFirstParty:t.gizmo.tags?.includes(ce.FirstParty)??!1,alt:t.gizmo.display.name,className:`h-10 w-10`})}),(0,X.jsx)(pt,{className:`ms-4`,onClick:()=>re(he(t)),children:(0,X.jsx)(`div`,{className:`text-token-text-primary text-sm font-semibold`,children:t.gizmo.display.name})})]})}),(0,X.jsx)(G.Cell,{className:`text-token-text-secondary w-full max-w-[160px] min-w-[100px] p-2 align-middle! text-sm`,children:C?(0,X.jsx)(`div`,{className:`bg-token-bg-tertiary rounded-lg px-2 py-1`,children:(0,X.jsx)(H,{...Z.unassigned})}):(0,X.jsx)(`span`,{className:`block overflow-hidden text-ellipsis whitespace-nowrap`,children:t.gizmo.author.display_name})}),!r&&(0,X.jsxs)(X.Fragment,{children:[(0,X.jsx)(G.Cell,{wrap:!0,className:`text-token-text-secondary max-w-[240px] min-w-[160px] p-2 align-middle! text-sm`,children:S===``?`—`:S}),!n&&(0,X.jsx)(G.Cell,{className:`text-token-text-secondary p-2 align-middle! text-sm whitespace-nowrap`,children:(0,X.jsx)(mr,{gizmo:t,account:e})}),!n&&(0,X.jsx)(G.Cell,{className:`text-token-text-secondary p-2 align-middle! text-sm whitespace-nowrap`,children:t.gizmo.vanity_metrics?.num_conversations_str??0}),(0,X.jsx)(G.Cell,{className:`text-token-text-secondary p-2 align-middle! text-sm whitespace-nowrap`,children:b}),(0,X.jsx)(G.Cell,{className:`text-token-text-secondary p-2 align-middle! text-sm whitespace-nowrap`,children:x})]}),(0,X.jsx)(G.Cell,{className:`border-token-border-heavy bg-token-bg-primary sticky end-0 border-s-[0.5px] p-1 align-middle!`,textAlign:`center`,children:(0,X.jsxs)(W.Root,{open:_,onOpenChange:j,children:[(0,X.jsx)(W.Trigger,{"aria-label":o.formatMessage({id:`workspaceSettings.gptActions.label`,defaultMessage:`Actions for {gptName}`},{gptName:t.gizmo.display.name}),children:(0,X.jsx)(Rt,{className:`icon-sm`})}),(0,X.jsx)(W.Portal,{children:!n&&w&&t.gizmo.migrated_plugin_id?(0,X.jsx)(W.Content,{children:(0,X.jsx)(W.LinkItem,{to:ae??un({pluginId:t.gizmo.migrated_plugin_id,searchParams:new URLSearchParams}),external:ae!=null,"aria-disabled":oe||void 0,onClick:e=>{oe&&e.preventDefault()},icon:oe?ie:m,children:(0,X.jsx)(H,{id:`workspaceSettings.pluginMigration.viewPlugin`,defaultMessage:`View Plugin`})})}):n?(0,X.jsx)(W.Content,{children:(0,X.jsx)(W.Item,{onClick:()=>{te(!0)},color:`danger`,icon:qn,children:(0,X.jsx)(H,{...Z.removeFromWorkspace})})}):(0,X.jsxs)(W.Content,{children:[(0,X.jsx)(W.Item,{disabled:w,onClick:()=>{l(t)},icon:zt,children:(0,X.jsx)(H,{...Z.changeAccess})}),(0,X.jsx)(W.Item,{disabled:w,onClick:()=>{h(!0)},icon:C?Gt:Yn,children:(0,X.jsx)(H,{...C?Z.assignOwner:Z.changeOwner})}),(O||de||le)&&(0,X.jsx)(et,{disabled:se&&!de&&!le,content:k?(0,X.jsx)(H,{id:`workspaceSettings.pluginMigration.workspaceAuthoringDisabled.tooltip`,defaultMessage:`Plugin creation is disabled for this workspace.`}):se?le?(0,X.jsx)(st,{permission:ue}):(0,X.jsx)(H,{id:`workspaceSettings.pluginMigration.readAccessRequired.tooltip`,defaultMessage:`You don't have access to view this GPT. Request access to view it and migrate it to a plugin.`}):(0,X.jsx)(st,{permission:`pending`}),contentLayout:`multi-line`,showOnTouch:!0,children:e=>(0,X.jsx)(W.Item,{...e,"aria-label":o.formatMessage(Z.migrateToPlugin),"aria-disabled":!se||de||le,className:`aria-disabled:cursor-default aria-disabled:opacity-50`,onClick:e=>{if(!je(lt)){e.preventDefault();return}O&&i(t)},onSelect:e=>{(!O||!je(lt))&&e.preventDefault()},icon:Kt,children:(0,X.jsx)(H,{...Z.migrateToPlugin})})}),A&&(0,X.jsx)(W.Item,{disabled:y,onClick:()=>{pe()},onSelect:e=>{e.preventDefault()},icon:Kn,trailing:y?(0,X.jsx)(ie,{className:`icon-sm`}):void 0,children:(0,X.jsx)(H,{...Z.exportGizmoInternal})}),(0,X.jsx)(W.Item,{onClick:()=>{f(!0)},icon:qn,color:`danger`,children:(0,X.jsx)(H,{...Z.deleteGPT})})]})})]})})]}),c&&!w&&(0,X.jsx)(vn,{publishedGizmo:c,gizmo:d(c),onClose:()=>l(!1),appealGizmo:()=>re(R(c.gizmo.id)),shareOnly:!0,workspaceOwner:!0}),(0,X.jsx)(tr,{isOpen:p&&!w,gpt:t,account:e,onClose:t=>{h(!1),t&&a.invalidateQueries({queryKey:[`workspace`,e.id,E.WORKSPACE]})}}),(0,X.jsx)(ar,{isOpen:u,gpt:t,account:e,onClose:t=>{f(!1),t&&a.invalidateQueries({queryKey:[`workspace`,e.id,E.WORKSPACE]})}}),(0,X.jsx)(Sr,{isOpen:g,gpt:t,account:e,onClose:t=>{te(!1),t&&a.invalidateQueries({queryKey:[`workspace`,e.id,E.THIRD_PARTY]})}})]})}function pr(e,t,n){return Be({queryKey:[`workspace`,e,`admin-gizmos`,t,...n.migrationEnabled?[!0]:[],n.search??``,(n.toolTypes??[]).join(`,`),(n.shareRecipients??[]).join(`,`),n.orderBy,n.orderDir],queryFn:r=>ur(e,t,n,r.pageParam.query_continuation,n.migrationEnabled?r.signal:void 0),initialPageParam:{query_continuation:``},getNextPageParam:e=>e.query_continuation?{query_continuation:e.query_continuation}:void 0})}function mr({gizmo:e,account:t}){let n=Ge(),r={[c.Private]:n.formatMessage(Z.shareRecipientTitlePrivate),[c.User]:n.formatMessage(Z.shareRecipientTitlePrivate),[c.Group]:n.formatMessage(Z.shareRecipientTitlePrivate),[c.Email]:n.formatMessage(Z.shareRecipientTitlePrivate),[c.Link]:n.formatMessage(Z.shareRecipientTitleLink),[c.Marketplace]:n.formatMessage(Z.shareRecipientTitlePublic),[c.Workspace]:t.data.name,[c.WorkspaceLink]:t.data.name};if([`private`,`user`,`group`,`email`].includes(e.gizmo.share_recipient)){let{users:t,groups:i}=hr(e);return t===0&&i===0?(0,X.jsx)(`span`,{className:`text-token-text-secondary`,children:(0,X.jsx)(H,{...Z.shareRecipientTitlePrivate})}):t>0&&i>0?(0,X.jsxs)(`span`,{className:`text-token-text-secondary`,children:[r[e.gizmo.share_recipient],(0,X.jsx)(`br`,{}),(0,X.jsx)(H,{id:`fQ+tJG`,defaultMessage:`Shared with {users} and {groups}`,values:{users:n.formatMessage(Z.userCount,{numUsers:t}),groups:n.formatMessage(Z.groupCount,{numGroups:i})}})]}):t>0?(0,X.jsxs)(`span`,{className:`text-token-text-secondary`,children:[r[e.gizmo.share_recipient],(0,X.jsx)(`br`,{}),(0,X.jsx)(H,{...Z.userCount,values:{numUsers:t}})]}):(0,X.jsxs)(`span`,{className:`text-token-text-secondary`,children:[r[e.gizmo.share_recipient],(0,X.jsx)(`br`,{}),(0,X.jsx)(H,{...Z.groupCount,values:{numGroups:i}})]})}return(0,X.jsx)(`span`,{children:r[e.gizmo.share_recipient]})}function hr(e){let t=e.gizmo.sharing?.subjects;return t?{users:t.filter(e=>e.type===B.USER).length,groups:t.filter(e=>e.type===B.GROUP).length}:{users:0,groups:0}}function gr(){return fe(`2160578039`)}function _r(e){return e===`asc`?`desc`:`asc`}function vr(e){return Math.max(1,e-1)}function yr(e){return e+1}function br(e){return e+1}var xr,Y,X,Sr,Cr,wr,Z,Tr=e((()=>{xr=We(),re(),N(),ht(),Ne(),At(),er(),yt(),it(),Yt(),Wt(),Vt(),D(),Ht(),Ut(),S(),Lt(),Ze(),dt(),jt(),de(),te(),se(),ut(),at(),Xe(),Ft(),fn(),Pt(),i(),_n(),n(),f(),yn(),v(),Et(),me(),mt(),u(),we(),Ee(),Ue(),a(),Y=t(Re()),U(),Le(),Mn(),ir(),lr(),dr(),X=V(),Ve(),Sr=j(()=>ze(()=>import(`./18798b51-brm8ak3tl2d7w6lj.js`),__vite__mapDeps([0,1,2,3,4]))),Cr=[A.BROWSER,A.PYTHON,A.JIT_PLUGIN,A.RETRIEVAL,A.IMAGE_GEN,A.CANVAS,A.CONNECTOR],wr=e=>{"use forget";let t=(0,xr.c)(115),{account:n,showThirdParty:i}=e,a=Ce(gr),[o,s]=(0,Y.useState)(),[l,u]=(0,Y.useState)(E.WORKSPACE),d=l===`migrated`&&!a?E.WORKSPACE:l,f=d===`migrated`,m=Ge(),[h,g]=(0,Y.useState)(!1),ee=(0,Y.useRef)(null),[te,_]=(0,Y.useState)(``),[v,y]=(0,Y.useState)(!1),[ne,re]=(0,Y.useState)(te),b=(0,Y.useRef)(null),[x,S]=(0,Y.useState)(1),C;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(C=e=>{if(_(e),b.current&&=(clearTimeout(b.current),null),e===``){re(``),S(1);return}b.current=window.setTimeout(()=>{re(e),S(1),b.current=null},500)},t[0]=C):C=t[0];let w=C,[T,ae]=(0,Y.useState)(`updated_at`),[oe,D]=(0,Y.useState)(`desc`),O=oe===`asc`?Qn:$n,se=[{value:`private`,label:m.formatMessage(Z.shareRecipientTitlePrivate),share_recipients:[c.Private,c.User,c.Group]},{value:`link`,label:m.formatMessage(Z.shareRecipientTitleLink),share_recipients:[c.Link]},{value:`workspace`,label:n.data.name??``,share_recipients:[c.Workspace,c.WorkspaceLink]},{value:`marketplace`,label:m.formatMessage(Z.shareRecipientTitlePublic),share_recipients:[c.Marketplace]}],ce;t[1]===Symbol.for(`react.memo_cache_sentinel`)?(ce=[],t[1]=ce):ce=t[1];let[k,le]=(0,Y.useState)(ce),ue;t[2]===Symbol.for(`react.memo_cache_sentinel`)?(ue=[],t[2]=ue):ue=t[2];let[de,fe]=(0,Y.useState)(ue),j=Fe(),me,he;t[3]===v?(me=t[4],he=t[5]):(me=()=>{v&&ee.current&&ee.current.focus()},he=[v],t[3]=v,t[4]=me,t[5]=he),(0,Y.useEffect)(me,he);let M;t[6]===Symbol.for(`react.memo_cache_sentinel`)?(M=e=>{u(e),S(1)},t[6]=M):M=t[6];let N=M,ge;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(ge=(e,t)=>{le(n=>t?[...n,e]:n.filter(t=>t!==e)),S(1)},t[7]=ge):ge=t[7];let _e=ge,ve=(e,t)=>{fe(n=>t?[...n,e]:n.filter(t=>t!==e)),S(1)},ye;t[8]===Symbol.for(`react.memo_cache_sentinel`)?(ye=()=>{le([]),fe([]),S(1)},t[8]=ye):ye=t[8];let be=ye,{data:P,fetchNextPage:xe,hasNextPage:we,isFetchingNextPage:F,isLoading:Te,isError:Ee,refetch:De}=pr(n.id,d,{migrationEnabled:a,search:ne,toolTypes:k.includes(A.IMAGE_GEN)?[...k,A.DALLE]:k,shareRecipients:se.flatMap(e=>de.includes(e.value)?e.share_recipients:[]),orderBy:T,orderDir:oe}),Oe=Te,I=k.length+de.length,L;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(L=function(e){ae(t=>t===e?(D(_r),e):(D(`asc`),e)),S(1)},t[9]=L):L=t[9];let R=L,ke;bb0:{if(!P){let e;t[10]===Symbol.for(`react.memo_cache_sentinel`)?(e=[],t[10]=e):e=t[10],ke=e;break bb0}let e=P.pages[x-1],n;t[11]===e?n=t[12]:(n=e?e.items:[],t[11]=e,t[12]=n),ke=n}let z=ke,Ae=d===E.WORKSPACE,je,Me;t[13]===Symbol.for(`react.memo_cache_sentinel`)?(je=()=>N(E.WORKSPACE),Me=(0,X.jsx)(H,{...Z.workspaceTab}),t[13]=je,t[14]=Me):(je=t[13],Me=t[14]);let B;t[15]===Ae?B=t[16]:(B=(0,X.jsx)(bn,{isActive:Ae,onClick:je,children:Me}),t[15]=Ae,t[16]=B);let Ne;t[17]!==f||t[18]!==a?(Ne=a&&(0,X.jsx)(bn,{isActive:f,onClick:()=>N(`migrated`),children:(0,X.jsx)(H,{id:`workspaceSettings.pluginMigration.migratedTab`,defaultMessage:`Migrated`})}),t[17]=f,t[18]=a,t[19]=Ne):Ne=t[19];let V;t[20]!==i||t[21]!==d?(V=i&&(0,X.jsx)(bn,{isActive:d===E.THIRD_PARTY,onClick:()=>N(E.THIRD_PARTY),children:(0,X.jsx)(H,{...Z.thirdPartyTab})}),t[20]=i,t[21]=d,t[22]=V):V=t[22];let Pe=d===E.UNASSIGNED,Ie,Le;t[23]===Symbol.for(`react.memo_cache_sentinel`)?(Ie=()=>N(E.UNASSIGNED),Le=(0,X.jsx)(H,{...Z.unassigned}),t[23]=Ie,t[24]=Le):(Ie=t[23],Le=t[24]);let U;t[25]===Pe?U=t[26]:(U=(0,X.jsx)(bn,{isActive:Pe,onClick:Ie,children:Le}),t[25]=Pe,t[26]=U);let Re;t[27]!==B||t[28]!==Ne||t[29]!==V||t[30]!==U?(Re=(0,X.jsxs)(`div`,{className:`flex space-x-4 pt-2`,children:[B,Ne,V,U]}),t[27]=B,t[28]=Ne,t[29]=V,t[30]=U,t[31]=Re):Re=t[31];let ze;t[32]===I?ze=t[33]:(ze=I>0&&(0,X.jsxs)(qe,{className:`flex items-center space-x-1`,onClick:be,children:[(0,X.jsx)(`span`,{className:`font-medium`,children:(0,X.jsx)(H,{id:`2HkRen`,defaultMessage:`{filterCount, plural, one {# filter} other {# filters}} applied`,values:{filterCount:I}})}),(0,X.jsx)(Xn,{className:`icon`})]}),t[32]=I,t[33]=ze);let Be=W,Ve;t[34]===Symbol.for(`react.memo_cache_sentinel`)?(Ve=(0,X.jsx)(W.Trigger,{children:(0,X.jsx)(Zn,{className:`icon`})}),t[34]=Ve):Ve=t[34];let He=W,Ue=W,We;t[35]===Symbol.for(`react.memo_cache_sentinel`)?(We=(0,X.jsx)(`span`,{className:`flex font-semibold`,children:(0,X.jsx)(H,{...Z.capabilitiesTitle})}),t[35]=We):We=t[35];let Ke;t[36]!==n||t[37]!==m||t[38]!==k?(Ke=Cr.map(e=>(0,X.jsx)(kt,{id:e,checked:k.includes(e),label:Dt(n,e,m),onChange:t=>_e(e,t.target.checked)},e)),t[36]=n,t[37]=m,t[38]=k,t[39]=Ke):Ke=t[39];let Je;t[40]===Ke?Je=t[41]:(Je=(0,X.jsxs)(`div`,{className:`flex-col space-y-2`,children:[We,Ke]}),t[40]=Ke,t[41]=Je);let Ye;t[42]===Symbol.for(`react.memo_cache_sentinel`)?(Ye=(0,X.jsx)(`span`,{className:`flex font-semibold`,children:(0,X.jsx)(H,{...Z.whoHasAccessTitle})}),t[42]=Ye):Ye=t[42];let Xe=se.map(e=>(0,X.jsx)(kt,{id:e.value,checked:de.includes(e.value),label:e.label,onChange:t=>ve(e.value,t.target.checked)},e.value)),Ze;t[43]!==Ye||t[44]!==Xe?(Ze=(0,X.jsxs)(`div`,{className:`mt-4 flex-col space-y-2 border-t pt-4`,children:[Ye,Xe]}),t[43]=Ye,t[44]=Xe,t[45]=Ze):Ze=t[45];let Qe;t[46]!==Je||t[47]!==Ze?(Qe=(0,X.jsxs)(`div`,{className:`text-token-text-primary w-64 space-y-2 p-2 font-normal`,children:[Je,Ze]}),t[46]=Je,t[47]=Ze,t[48]=Qe):Qe=t[48];let $e;t[49]!==Ue.Content||t[50]!==Qe?($e=(0,X.jsx)(Ue.Content,{className:`rounded-lg px-2 text-sm`,children:Qe}),t[49]=Ue.Content,t[50]=Qe,t[51]=$e):$e=t[51];let et;t[52]!==He.Portal||t[53]!==$e?(et=(0,X.jsx)(He.Portal,{children:$e}),t[52]=He.Portal,t[53]=$e,t[54]=et):et=t[54];let nt;t[55]!==Be.Root||t[56]!==Ve||t[57]!==et?(nt=(0,X.jsxs)(Be.Root,{children:[Ve,et]}),t[55]=Be.Root,t[56]=Ve,t[57]=et,t[58]=nt):nt=t[58];let rt;t[59]===Symbol.for(`react.memo_cache_sentinel`)?(rt=(0,X.jsx)(qe,{onClick:()=>y(!0),children:(0,X.jsx)(p,{className:`icon`})}),t[59]=rt):rt=t[59];let it;t[60]!==m||t[61]!==te||t[62]!==v?(it=v&&(0,X.jsx)(pe.input,{type:`text`,ref:ee,placeholder:m.formatMessage(Z.filterByNameOrDescriptionPlaceholder),className:`bg-token-bg-primary border-none px-0 focus:ring-0`,initial:{width:0,opacity:0},animate:{width:`192px`,opacity:1},exit:{width:0,opacity:0,visibility:`hidden`},value:te,onChange:e=>w(e.target.value)}),t[60]=m,t[61]=te,t[62]=v,t[63]=it):it=t[63];let at;t[64]===it?at=t[65]:(at=(0,X.jsx)(Se,{children:it}),t[64]=it,t[65]=at);let ot;t[66]===v?ot=t[67]:(ot=v&&(0,X.jsx)(`div`,{className:`cursor-pointer`,onClick:()=>{y(!1),w(``)},children:(0,X.jsx)(Xn,{className:`icon-sm`})}),t[66]=v,t[67]=ot);let st;t[68]!==at||t[69]!==ot?(st=(0,X.jsxs)(`div`,{className:`flex items-center`,children:[rt,at,ot]}),t[68]=at,t[69]=ot,t[70]=st):st=t[70];let ct;t[71]===i?ct=t[72]:(ct=i&&(0,X.jsx)(r,{color:`secondary`,onClick:()=>g(!0),icon:Jn,children:(0,X.jsx)(H,{...Z.approveAGPTButton})}),t[71]=i,t[72]=ct);let lt;t[73]!==ze||t[74]!==nt||t[75]!==st||t[76]!==ct?(lt=(0,X.jsxs)(`div`,{className:`flex items-center pb-2`,children:[ze,nt,st,ct]}),t[73]=ze,t[74]=nt,t[75]=st,t[76]=ct,t[77]=lt):lt=t[77];let ut;t[78]!==Re||t[79]!==lt?(ut=(0,X.jsxs)(`div`,{className:`border-token-border-default flex justify-between border-b`,children:[Re,lt]}),t[78]=Re,t[79]=lt,t[80]=ut):ut=t[80];let dt;t[81]!==O||t[82]!==n||t[83]!==x||t[84]!==P||t[85]!==z||t[86]!==xe||t[87]!==Oe||t[88]!==R||t[89]!==we||t[90]!==Ee||t[91]!==F||t[92]!==f||t[93]!==a||t[94]!==De||t[95]!==T||t[96]!==d?(dt=Oe?(0,X.jsx)(`div`,{className:`mt-8 flex min-h-[320px] items-center justify-center`,children:(0,X.jsx)(ie,{})}):a&&Ee?(0,X.jsxs)(`div`,{role:`alert`,className:`flex min-h-[320px] flex-col items-center justify-center gap-4`,children:[(0,X.jsx)(H,{id:`workspaceSettings.pluginMigration.loadError`,defaultMessage:`Couldn’t load GPTs. Try again.`}),(0,X.jsx)(r,{color:`secondary`,onClick:()=>void De(),children:(0,X.jsx)(H,{id:`workspaceSettings.pluginMigration.retry`,defaultMessage:`Retry`})})]}):(0,X.jsxs)(`div`,{className:`mb-8 min-h-[320px]`,children:[z.length>0?(0,X.jsxs)(G.Root,{size:`normal`,className:`bg-token-bg-primary w-full min-w-full overflow-hidden overflow-x-auto sm:rounded-lg`,children:[(0,X.jsxs)(G.Header,{children:[(0,X.jsx)(G.HeaderCell,{className:`text-token-text-secondary py-2 pe-4 text-start text-xs`,children:(0,X.jsx)(H,{...Z.nameCellTitle})}),(0,X.jsx)(G.HeaderCell,{className:`text-token-text-secondary px-2 py-2 text-start text-xs`,children:(0,X.jsx)(H,{...Z.builderCellTitle})}),!f&&(0,X.jsxs)(X.Fragment,{children:[(0,X.jsx)(G.HeaderCell,{className:`text-token-text-secondary px-2 py-2 text-start text-xs`,children:(0,X.jsx)(H,{...Z.customActionsCellTitle})}),(d===E.WORKSPACE||d===E.UNASSIGNED)&&(0,X.jsx)(G.HeaderCell,{className:`text-token-text-secondary px-2 py-2 text-start text-xs`,children:(0,X.jsx)(H,{...Z.whoHasAccessTitle})}),(d===E.WORKSPACE||d===E.UNASSIGNED)&&(0,X.jsx)(G.HeaderCell,{className:`text-token-text-secondary cursor-pointer px-2 py-2 text-start text-xs`,children:(0,X.jsxs)(`div`,{className:`flex items-center gap-1`,onClick:()=>R(`accurate_num_paid_conversations`),children:[(0,X.jsx)(`span`,{children:(0,X.jsx)(H,{...Z.chatsCellTitle})}),T===`accurate_num_paid_conversations`&&(0,X.jsx)(O,{className:`icon-sm`})]})}),(0,X.jsx)(G.HeaderCell,{className:`text-token-text-secondary cursor-pointer px-2 py-2 text-start text-xs`,children:(0,X.jsxs)(`div`,{className:`flex items-center gap-1`,onClick:()=>R(`created_at`),children:[(0,X.jsx)(`span`,{children:d===E.WORKSPACE||d===E.UNASSIGNED?(0,X.jsx)(H,{...Z.createdCellTitle}):(0,X.jsx)(H,{...Z.approvedCellTitle})}),T===`created_at`&&(0,X.jsx)(O,{className:`icon-sm`})]})}),(0,X.jsx)(G.HeaderCell,{className:`text-token-text-secondary cursor-pointer px-2 py-2 text-start text-xs`,children:(0,X.jsxs)(`div`,{className:`flex items-center gap-1`,onClick:()=>R(`updated_at`),children:[(0,X.jsx)(`span`,{children:(0,X.jsx)(H,{...Z.updatedCellTitle})}),T===`updated_at`&&(0,X.jsx)(O,{className:`icon-sm`})]})})]}),(0,X.jsx)(G.HeaderCell,{className:`border-token-border-heavy absolute end-0 w-16 border-s-[0.5px]`})]}),(0,X.jsx)(G.Body,{children:z.map(e=>(0,X.jsx)(fr,{account:n,gpt:e,migrated:f,onMigrate:s,thirdParty:d===E.THIRD_PARTY},e.gizmo.id))})]}):(0,X.jsxs)(`div`,{className:`flex h-full w-full flex-col items-center gap-4 py-16`,children:[(0,X.jsx)(`div`,{children:(0,X.jsx)(Bt,{className:`h-12 w-12 text-gray-400`})}),(0,X.jsx)(`p`,{className:`text-token-text-secondary`,children:f?(0,X.jsx)(H,{id:`workspaceSettings.pluginMigration.empty`,defaultMessage:`No migrated GPTs`}):d===E.THIRD_PARTY?(0,X.jsx)(H,{...Z.noWorkspaceApprovedGPTs}):d===E.UNASSIGNED?(0,X.jsx)(H,{...Z.noUnassignedGPTs}):(0,X.jsx)(H,{...Z.noWorkspaceGPTs})}),d===E.THIRD_PARTY&&(0,X.jsx)(r,{color:`secondary`,onClick:()=>g(!0),icon:Jn,children:(0,X.jsx)(H,{...Z.approveAGPTButton})})]}),P&&(0,X.jsxs)(`div`,{className:`text-token-text-tertiary my-4 flex w-full items-center justify-center gap-6`,children:[(0,X.jsx)(r,{color:`secondary`,disabled:x===1,onClick:()=>S(vr),children:(0,X.jsx)(H,{id:`KFhxP7`,defaultMessage:`Prev`})}),(0,X.jsx)(`span`,{className:`text-sm`,children:(0,X.jsx)(H,{id:`WEQoNb`,defaultMessage:`Page {page}`,values:{page:x}})}),(0,X.jsx)(r,{color:`secondary`,loading:F,disabled:!we&&(a?!P.pages[x]?.items.length:x===P.pages.length),onClick:async()=>{let e=x;if(e<P.pages.length){(!a||P.pages[e].items.length)&&S(yr);return}if(we&&!F){let t=await xe();(!a||!t.isError&&t.data?.pages[e]?.items.length)&&S(br)}},children:(0,X.jsx)(H,{id:`wDyvFZ`,defaultMessage:`Next`})})]})]}),t[81]=O,t[82]=n,t[83]=x,t[84]=P,t[85]=z,t[86]=xe,t[87]=Oe,t[88]=R,t[89]=we,t[90]=Ee,t[91]=F,t[92]=f,t[93]=a,t[94]=De,t[95]=T,t[96]=d,t[97]=dt):dt=t[97];let ft;t[98]!==n.id||t[99]!==a||t[100]!==o||t[101]!==j?(ft=o&&a&&(0,X.jsx)(tt,{gizmoId:o.gizmo.id,gizmoName:o.gizmo.display.name,gizmoTools:o.tools,onClose:()=>s(void 0),onMigrated:()=>{S(1),j.invalidateQueries({queryKey:[`workspace`,n.id,`admin-gizmos`]})}}),t[98]=n.id,t[99]=a,t[100]=o,t[101]=j,t[102]=ft):ft=t[102];let pt;t[103]!==n.id||t[104]!==j?(pt=()=>{g(!1),j.invalidateQueries({queryKey:[`workspace`,n.id,E.THIRD_PARTY]})},t[103]=n.id,t[104]=j,t[105]=pt):pt=t[105];let mt;t[106]!==n||t[107]!==h||t[108]!==pt?(mt=(0,X.jsx)(Nn,{isOpen:h,onClose:pt,account:n}),t[106]=n,t[107]=h,t[108]=pt,t[109]=mt):mt=t[109];let ht;return t[110]!==ut||t[111]!==dt||t[112]!==ft||t[113]!==mt?(ht=(0,X.jsxs)(`div`,{children:[ut,dt,ft,mt]}),t[110]=ut,t[111]=dt,t[112]=ft,t[113]=mt,t[114]=ht):ht=t[114],ht},Z=Pe({migrateToPlugin:{id:`workspaceSettings.pluginMigration.migrate`,defaultMessage:`Migrate to plugin`},noUnassignedGPTs:{id:`workspaceSettings.noUnassignedGPTs`,defaultMessage:`No unassigned GPTs`},noWorkspaceGPTs:{id:`workspaceSettings.noWorkspaceGPTs`,defaultMessage:`This workspace does not have any GPTs`},noWorkspaceApprovedGPTs:{id:`workspaceSettings.noWorkspaceApprovedGPTs`,defaultMessage:`You haven't approved any third-party GPTs`},workspaceTab:{id:`workspaceSettings.workspaceTab`,defaultMessage:`Workspace`},thirdPartyTab:{id:`workspaceSettings.thirdPartyTab`,defaultMessage:`Third-party`},capabilitiesTitle:{id:`workspaceSettings.capabilitiesTitle`,defaultMessage:`Capabilities`},whoHasAccessTitle:{id:`workspaceSettings.whoHasAccessTitle`,defaultMessage:`Who has access`},filterByNameOrDescriptionPlaceholder:{id:`workspaceSettings.filterByNameOrDescriptionPlaceholder`,defaultMessage:`Filter by name or description...`},nameCellTitle:{id:`workspaceSettings.nameCellTitle`,defaultMessage:`Name`},builderCellTitle:{id:`workspaceSettings.builderCellTitle`,defaultMessage:`Builder`},customActionsCellTitle:{id:`workspaceSettings.customActionsCellTitle`,defaultMessage:`Custom Actions`},chatsCellTitle:{id:`workspaceSettings.chatsCellTitle`,defaultMessage:`Chats`},createdCellTitle:{id:`workspaceSettings.createdCellTitle`,defaultMessage:`Created`},updatedCellTitle:{id:`workspaceSettings.updatedCellTitle`,defaultMessage:`Updated`},approvedCellTitle:{id:`workspaceSettings.approvedCellTitle`,defaultMessage:`Approved`},approveAGPTButton:{id:`workspaceSettings.approveAGPTButton`,defaultMessage:`Approve a GPT`},shareRecipientTitlePrivate:{id:`vyjlzc`,defaultMessage:`Invite only`},shareRecipientTitleLink:{id:`workspaceSettings.shareRecipientTitleLink`,defaultMessage:`Link`},shareRecipientTitlePublic:{id:`workspaceSettings.shareRecipientTitlePublic`,defaultMessage:`Public`},changeAccess:{id:`workspaceSettings.changeAccess`,defaultMessage:`Change who has access`},changeOwner:{id:`workspaceSettings.changeOwner`,defaultMessage:`Change Owner`},assignOwner:{id:`workspaceSettings.assignOwner`,defaultMessage:`Assign Owner`},deleteGPT:{id:`workspaceSettings.deleteGPT`,defaultMessage:`Delete GPT`},removeFromWorkspace:{id:`workspaceSettings.removeFromWorkspace`,defaultMessage:`Remove from workspace`},exportGizmoInternal:{id:`workspaceSettings.exportGizmoInternal`,defaultMessage:`Export (internal)`},exportGizmoFailure:{id:`workspaceSettings.exportGizmoFailure`,defaultMessage:`Couldn't export this GPT. Please try again.`},userCount:{id:`P1xo2B`,defaultMessage:`{numUsers, plural, one {# user} other {# users}}`},groupCount:{id:`4zRUED`,defaultMessage:`{numGroups, plural, one {# group} other {# groups}}`},unassigned:{id:`workspaceSettings.unassignedGPTs`,defaultMessage:`Unassigned`}})}));function Er({title:e,description:t,children:n,upsellEnterprise:r=!1,className:i=``}){return(0,Q.jsx)(ue,{label:(0,Q.jsx)(H,{...$.enterpriseRequiredMessage}),side:`top`,disabled:!r,className:`max-w-5xl`,triggerAs:null,children:(0,Q.jsxs)(Jt,{className:_(r&&`text-token-text-tertiary`,`max-w-4xl`,i),children:[(0,Q.jsxs)(Zt,{className:`flex items-center gap-3`,children:[(0,Q.jsx)(H,{...e}),r&&(0,Q.jsx)(`span`,{className:`bg-token-main-surface-tertiary rounded-xl px-2 pb-0.5 text-sm`,children:(0,Q.jsx)(H,{...$.enterpriseUpsellPill})})]}),t&&(0,Q.jsx)(qt,{className:`text-token-text-secondary py-2`,children:(0,Q.jsx)(H,{...t})}),n]})})}function Dr({show:e,message:t=wn,className:n}){return e?(0,Q.jsx)(`div`,{className:_(`text-token-text-status-warning py-2 text-sm`,n),children:(0,Q.jsx)(H,{...t})}):null}function Or({workspaceId:e,label:t,setting:n,defaultValue:r,values:i,disabled:a=!1}){let o=Me(),s=Fe(),{variables:c,mutate:l}=He({mutationFn:({setting:t,value:n})=>y.safePost(`/accounts/{account_id}/settings/share_settings`,{parameters:{path:{account_id:e}},requestBody:{setting:t,value:n}}),onSettled:()=>{s.invalidateQueries({queryKey:[`workspace-settings`]}),s.invalidateQueries({queryKey:[`workspace`]})},onError:()=>{o.danger($.featureSettingsUpdateFailed,{toastId:`workspace_gpt_settings_page`})}});return(0,Q.jsxs)(Qt,{children:[(0,Q.jsx)(`p`,{className:`text-md inline-flex items-center`,children:(0,Q.jsx)(H,{...t})}),(0,Q.jsxs)(K.Root,{defaultValue:c?.value??r,onValueChange:e=>{l({setting:n,value:e})},disabled:a,children:[(0,Q.jsxs)(K.Trigger,{className:`text-md focus-visible:border-none`,children:[(0,Q.jsx)(K.Value,{}),(0,Q.jsx)(K.Icon,{})]}),(0,Q.jsx)(K.Portal,{children:(0,Q.jsx)(K.Content,{children:i.map((e,t)=>(0,Q.jsx)(K.Item,{className:`text-md`,value:e.value,children:(0,Q.jsx)(H,{...e.display})},t))})})]})]})}function kr({workspaceId:e,value:t,upsellEnterprise:n=!1}){let r=Me(),i=Fe(),{variables:a,mutate:o}=He({mutationFn:({value:t})=>y.safePost(`/accounts/{account_id}/settings/third_party_gpts`,{parameters:{path:{account_id:e}},requestBody:{value:t}}),onSettled:()=>{i.invalidateQueries({queryKey:[`workspace-settings`]})},onError:()=>{r.danger($.featureSettingsUpdateFailed,{toastId:`third_party_gpt_setting_dropdown`})}});return(0,Q.jsxs)(K.Root,{defaultValue:a?.value??t,onValueChange:e=>{o({value:e})},children:[(0,Q.jsxs)(K.Trigger,{className:`border-token-border-default focus-visible:border-token-border-default border text-base`,children:[(0,Q.jsx)(K.Value,{}),(0,Q.jsx)(K.Icon,{})]}),(0,Q.jsx)(K.Portal,{children:(0,Q.jsxs)(K.Content,{children:[(0,Q.jsx)(K.Item,{className:`text-base`,value:xe.ALLOW_ALL,children:(0,Q.jsx)(H,{...$.allowAllOption})}),!n&&(0,Q.jsx)(K.Item,{className:`text-base`,value:xe.ALLOW_SPECIFIC,children:(0,Q.jsx)(H,{...$.ownerApprovedOnlyOption})}),(0,Q.jsx)(K.Item,{className:`text-base`,value:xe.ALLOW_NONE,children:(0,Q.jsx)(H,{...$.dontAllowOption})})]})})]})}function Ar(e){"use forget";let t=(0,Nr.c)(85),{workspaceId:n,data:r}=e,i=Ce(jr),a=Ie(),o=Ge(),s=Me(),c=Te(),l=oe(),{role:u}=rn(),d;t[0]!==c||t[1]!==u?(d=u==null?c?.isOwnerOfAccount()??!1:_t(u),t[0]=c,t[1]=u,t[2]=d):d=t[2];let f=d,p=c?.isHipaaCompliantWorkspace??!1,m=Fe(),h;t[3]===Symbol.for(`react.memo_cache_sentinel`)?(h=ne(),t[3]=h):h=t[3];let g=h,ee;t[4]===Symbol.for(`react.memo_cache_sentinel`)?(ee=fe(`2218609681`),t[4]=ee):ee=t[4];let te=ee,_;t[5]===Symbol.for(`react.memo_cache_sentinel`)?(_=[],t[5]=_):_=t[5];let[v,re]=(0,Pr.useState)(_),b;t[6]===n?b=t[7]:(b=e=>{let{value:t}=e;return y.safePost(`/accounts/{account_id}/settings/allowed_custom_actions_domains`,{parameters:{path:{account_id:n}},requestBody:{domains:t}})},t[6]=n,t[7]=b);let x;t[8]===m?x=t[9]:(x=()=>{m.invalidateQueries({queryKey:[`workspace-settings`]})},t[8]=m,t[9]=x);let S;t[10]===s?S=t[11]:(S=()=>{s.danger($.featureSettingsUpdateFailed,{toastId:`workspace_settings`})},t[10]=s,t[11]=S);let C;t[12]!==b||t[13]!==x||t[14]!==S?(C={mutationFn:b,onSettled:x,onError:S},t[12]=b,t[13]=x,t[14]=S,t[15]=C):C=t[15];let w=He(C);if(c==null)return null;let T=l?.isSelfServeBusiness()??c.isSelfServeBusiness(),E;t[16]===p?E=t[17]:(E=(0,Q.jsx)(Dr,{show:p}),t[16]=p,t[17]=E);let D;t[18]!==r.allow_third_party_gpts||t[19]!==T||t[20]!==n?(D=(0,Q.jsx)(kr,{workspaceId:n,value:r.allow_third_party_gpts,upsellEnterprise:T}),t[18]=r.allow_third_party_gpts,t[19]=T,t[20]=n,t[21]=D):D=t[21];let O;t[22]!==D||t[23]!==E?(O=(0,Q.jsx)(Er,{title:$.thirdPartyGPTsTitle,description:$.thirdPartyGPTsDescription,className:`border-token-border-default border-b pb-4`,children:(0,Q.jsxs)(`div`,{children:[E,D]})}),t[22]=D,t[23]=E,t[24]=O):O=t[24];let se=O,ce=!T&&r.allow_third_party_gpts===xe.ALLOW_SPECIFIC,k;t[25]!==c||t[26]!==ce?(k=(0,Q.jsx)(Er,{title:$.sidebarTitle,children:(0,Q.jsx)(wr,{account:c,showThirdParty:ce})}),t[25]=c,t[26]=ce,t[27]=k):k=t[27];let le=k,de=r.beta_settings.workspace_gpt_custom_actions??!0,A=r.allowed_custom_actions_domains!=null||!de,j=r.beta_settings.workspace_gpt_apps??!p,pe;t[28]!==a||t[29]!==i?(pe=i&&(0,Q.jsx)(sn,{onExplore:()=>a(ln())}),t[28]=a,t[29]=i,t[30]=pe):pe=t[30];let me=T&&!g&&se,he=T&&f&&le,M;t[31]!==r.share_settings||t[32]!==g||t[33]!==T||t[34]!==n?(M=!g&&(0,Q.jsx)(Or,{workspaceId:n,label:$.gptSharingTitle,disabled:T,setting:ae.GPT_SHARE_SETTINGS,defaultValue:r.share_settings.gpt_share_setting,values:[{display:$.anyOneSelect,value:Oe.ANYONE},{display:$.workspaceMembersOnlySelect,value:Oe.WORKSPACE_ONLY},{display:$.inviteOnlySelect,value:Oe.NO_ONE}]}),t[31]=r.share_settings,t[32]=g,t[33]=T,t[34]=n,t[35]=M):M=t[35];let N;t[36]!==te||t[37]!==j||t[38]!==p||t[39]!==T||t[40]!==n?(N=te&&(0,Q.jsx)(In,{workspaceId:n,feature:ke.WORKSPACE_GPT_APPS,value:j,label:$.gptAppsToggleTitle,description:$.gptAppsToggleDescription,tooltip:$.gptAppsToggleTooltip,disabled:T,messageAfterTooltip:T?$.enterpriseUpsellPill:void 0,after:(0,Q.jsx)(Dr,{show:p,message:$.gptAppsHipaaWarning,className:`ms-14 py-1`})}),t[36]=te,t[37]=j,t[38]=p,t[39]=T,t[40]=n,t[41]=N):N=t[41];let ge;t[42]===Symbol.for(`react.memo_cache_sentinel`)?(ge=(0,Q.jsx)(`div`,{className:`text-xl font-semibold`,children:(0,Q.jsx)(H,{id:`ugI3Yt`,defaultMessage:`GPT actions`})}),t[42]=ge):ge=t[42];let _e;t[43]===Symbol.for(`react.memo_cache_sentinel`)?(_e=(0,Q.jsx)(`div`,{className:`text-token-text-secondary py-2 text-sm`,children:(0,Q.jsx)(H,{id:`HY2eof`,defaultMessage:`GPT actions allow GPTs to call third-party APIs for tasks such as retrieving or modifying data. GPT actions are defined by GPT builders, and you can limit the domains that can be used for GPTs created in your workspace.`})}),t[43]=_e):_e=t[43];let ve;t[44]===p?ve=t[45]:(ve=(0,Q.jsx)(Dr,{show:p,message:$.gptActionsHipaaWarning}),t[44]=p,t[45]=ve);let ye=!A,be;t[46]!==v||t[47]!==r.allowed_custom_actions_domains||t[48]!==w||t[49]!==re?(be=e=>{e.currentTarget.checked?(re(r.allowed_custom_actions_domains),w.mutate({value:null})):w.mutate({value:v??[]})},t[46]=v,t[47]=r.allowed_custom_actions_domains,t[48]=w,t[49]=re,t[50]=be):be=t[50];let P;t[51]===Symbol.for(`react.memo_cache_sentinel`)?(P=(0,Q.jsx)(H,{id:`WnWoqJ`,defaultMessage:`Allow all domains for GPT actions`}),t[51]=P):P=t[51];let Se;t[52]===Symbol.for(`react.memo_cache_sentinel`)?(Se=(0,Q.jsx)(H,{id:`KjJtEm`,defaultMessage:`Limit the Internet domains that can be used by GPTs created in your workspace. This does not apply to third-party GPTs.`}),t[52]=Se):Se=t[52];let we;t[53]===Symbol.for(`react.memo_cache_sentinel`)?(we=(0,Q.jsxs)(`span`,{className:`flex flex-row items-center`,children:[P,(0,Q.jsx)(ue,{interactive:!0,label:Se,side:`top`,children:(0,Q.jsx)(Pn,{})})]}),t[53]=we):we=t[53];let F;t[54]!==ye||t[55]!==be?(F=(0,Q.jsx)(kt,{checked:ye,id:`allow-all-domains`,onChange:be,label:we}),t[54]=ye,t[55]=be,t[56]=F):F=t[56];let Ee;t[57]===w.isPending?Ee=t[58]:(Ee=w.isPending&&(0,Q.jsx)(ie,{}),t[57]=w.isPending,t[58]=Ee);let De;t[59]!==F||t[60]!==Ee?(De=(0,Q.jsxs)(`div`,{className:`flex flex-row items-center gap-4`,children:[F,Ee]}),t[59]=F,t[60]=Ee,t[61]=De):De=t[61];let I;t[62]!==r.allowed_custom_actions_domains||t[63]!==w||t[64]!==o||t[65]!==A?(I=A&&(0,Q.jsx)(Dn,{value:r.allowed_custom_actions_domains??[],title:o.formatMessage({id:`YetDcq`,defaultMessage:`Domains`}),onChange:e=>{w.mutate({value:e})},emptyMessage:o.formatMessage({id:`rFH4IP`,defaultMessage:`No domains added. No GPT actions will be allowed.`})}),t[62]=r.allowed_custom_actions_domains,t[63]=w,t[64]=o,t[65]=A,t[66]=I):I=t[66];let L;t[67]!==ve||t[68]!==De||t[69]!==I?(L=(0,Q.jsx)(Q.Fragment,{children:(0,Q.jsxs)(`div`,{className:`flex flex-col gap-4 py-6`,children:[ge,_e,ve,De,I]})}),t[67]=ve,t[68]=De,t[69]=I,t[70]=L):L=t[70];let R;t[71]!==M||t[72]!==N||t[73]!==L?(R=(0,Q.jsxs)(Xt,{children:[M,N,L]}),t[71]=M,t[72]=N,t[73]=L,t[74]=R):R=t[74];let z;t[75]!==R||t[76]!==T?(z=(0,Q.jsx)(Er,{title:$.sharingSettingsTitle,upsellEnterprise:T,children:R}),t[75]=R,t[76]=T,t[77]=z):z=t[77];let Ae=!T&&!g&&se,je=!T&&f&&le,B;return t[78]!==pe||t[79]!==me||t[80]!==he||t[81]!==z||t[82]!==Ae||t[83]!==je?(B=(0,Q.jsxs)($t,{className:`max-w-5xl`,children:[pe,me,he,z,Ae,je]}),t[78]=pe,t[79]=me,t[80]=he,t[81]=z,t[82]=Ae,t[83]=je,t[84]=B):B=t[84],B}function jr(){return fe(`2160578039`)}function Mr({currentWorkspaceId:e}){let t=!!oe()?.isFreeWorkspace(),{data:n,isLoading:r}=_e(e),i=Ge();return(0,Q.jsxs)(Q.Fragment,{children:[(0,Q.jsx)(mn,{children:(0,Q.jsx)(`title`,{children:i.formatMessage($.sidebarTitle)})}),(0,Q.jsx)(tn,{title:i.formatMessage($.sidebarTitle)}),(0,Q.jsx)(nn,{showSpinner:!t&&r,children:t?(0,Q.jsx)(kn,{}):n===void 0?null:(0,Q.jsx)(Ar,{workspaceId:e,data:n})})]})}var Nr,Pr,Q,$,Fr=e((()=>{Nr=We(),re(),C(),le(),Ne(),en(),yt(),dn(),cn(),fn(),i(),I(),v(),g(),u(),pn(),Ue(),L(),Pr=t(Re()),U(),Le(),an(),En(),Rn(),Tr(),Tn(),x(),On(),on(),At(),Q=V(),$=Pe({sidebarTitle:{id:`workspaceSettingsOld.sidebarTitle`,defaultMessage:`GPTs`},allowAllOption:{id:`workspaceSettingsOld.allowAllOption`,defaultMessage:`Allow all`},ownerApprovedOnlyOption:{id:`workspaceSettingsOld.ownerApprovedOnlyOption`,defaultMessage:`Owner-approved only`},dontAllowOption:{id:`workspaceSettingsOld.dontAllowOption`,defaultMessage:`Don't allow`},thirdPartyGPTsTitle:{id:`workspaceSettingsOld.thirdPartyGPTsTitle`,defaultMessage:`Third-party`},thirdPartyGPTsDescription:{id:`workspaceSettingsOld.thirdPartyGPTsDescription`,defaultMessage:`Manage whether members can use GPTs created outside your workspace.`},sharingSettingsTitle:{id:`workspaceSettingsOld.sharingSettingsTitle`,defaultMessage:`Sharing`},gptSharingTitle:{id:`workspaceSettingsOld.gptSharingTitle`,defaultMessage:`GPTs can be shared with...`},workspaceMembersOnlySelect:{id:`workspaceSettingsOld.workspaceMembersOnlySelect`,defaultMessage:`Workspace members only`},anyOneSelect:{id:`workspaceSettingsOld.anyOneSelect`,defaultMessage:`Anyone`},inviteOnlySelect:{id:`workspaceSettingsOld.inviteOnlySelect`,defaultMessage:`Invite only`},featureSettingsUpdateFailed:{id:`workspaceSettingsOld.featureSettingsUpdateFailed`,defaultMessage:`Failed to update feature setting`},enterpriseUpsellPill:{id:`workspaceSettingsOld.enterpriseUpsellPill`,defaultMessage:`Enterprise`},enterpriseRequiredMessage:{id:`workspaceSettingsOld.enterpriseRequiredMessage`,defaultMessage:`Only workspaces with the Enterprise plan can change these settings`},gptAppsToggleTitle:{id:`workspaceSettingsOld.gptAppsToggleTitle`,defaultMessage:`Apps`},gptAppsToggleDescription:{id:`workspaceSettingsOld.gptAppsToggleDescription`,defaultMessage:`Allow GPT builders to enable Apps in GPTs created in your workspace.`},gptAppsToggleTooltip:{id:`workspaceSettingsOld.gptAppsToggleTooltip`,defaultMessage:`When disabled, GPTs created in your workspace cannot use Apps. This does not apply to third-party GPTs.`},gptAppsHipaaWarning:{id:`workspaceSettingsOld.gptAppsHipaaWarning`,defaultMessage:`Apps can send data from GPTs to external services. Review your HIPAA obligations before enabling Apps.`},gptActionsHipaaWarning:{id:`workspaceSettingsOld.gptActionsHipaaWarning`,defaultMessage:`GPT actions can send data to the domains you allow. Only add domains approved for your HIPAA obligations.`}})}));function Ir(){let e=Sn();return xn(),(0,Lr.jsx)(Mr,{...e})}var Lr,Rr=e((()=>{Fr(),Cn(),Lr=V()})),zr=e((()=>{Rr()}));e((()=>{zr()}))();export{Ir as default};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/18798b51-brm8ak3tl2d7w6lj.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-mdvd4786a87166cc.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $D as n,
+    $T as r,
+    A8 as i,
+    At as a,
+    Aw as o,
+    BO as s,
+    BV as c,
+    Bz as l,
+    Crt as u,
+    DS as d,
+    FS as f,
+    Fh as p,
+    Hh as m,
+    Hn as h,
+    I7 as g,
+    IU as ee,
+    JV as te,
+    K5 as _,
+    LU as v,
+    M7 as y,
+    OO as ne,
+    Oct as re,
+    Ow as b,
+    PO as x,
+    Ph as S,
+    Qy as C,
+    RU as w,
+    Rz as ie,
+    SN as T,
+    Sct as ae,
+    Tct as E,
+    U1 as oe,
+    Uh as D,
+    Un as O,
+    VO as se,
+    VV as ce,
+    Vz as k,
+    ZG as le,
+    Zy as ue,
+    _D as de,
+    _ct as A,
+    _rt as fe,
+    a2 as j,
+    cn as pe,
+    cot as me,
+    dD as he,
+    dot as M,
+    eE as N,
+    eH as ge,
+    eK as _e,
+    eO as ve,
+    fB as ye,
+    fJ as be,
+    gJ as P,
+    gct as xe,
+    hn as Se,
+    j5 as Ce,
+    lV as we,
+    my as F,
+    o0 as Te,
+    o2 as Ee,
+    pB as De,
+    pct as Oe,
+    q1 as I,
+    q5 as L,
+    rV as R,
+    wct as ke,
+    wy as z,
+    xN as Ae,
+    y5 as je,
+    zU as Me,
+    zV as B,
+    zz as Ne
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as V,
+    Ln as Pe,
+    N as Fe,
+    Nn as H,
+    Nt as Ie,
+    Q as Le,
+    Rn as U,
+    Vn as Re,
+    cn as ze,
+    l as Be,
+    ln as Ve,
+    p as He,
+    s as Ue,
+    wn as We,
+    zn as Ge
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Ah as Ke,
+    BUn as qe,
+    Bhn as Je,
+    Bst as Ye,
+    Ch as Xe,
+    Djt as Ze,
+    Ed as Qe,
+    Eh as $e,
+    Ejt as et,
+    Hh as tt,
+    JCn as nt,
+    Lhn as rt,
+    MUn as it,
+    Ph as at,
+    Rhn as ot,
+    Sh as st,
+    Td as ct,
+    Th as lt,
+    Uh as ut,
+    VUn as dt,
+    Vst as ft,
+    XWn as pt,
+    YCn as mt,
+    ZWn as ht,
+    _h as gt,
+    awn as _t,
+    cgn as vt,
+    cqn as yt,
+    cwn as bt,
+    dgn as xt,
+    eMt as St,
+    fgn as Ct,
+    jUn as W,
+    jh as wt,
+    lgn as Tt,
+    lwn as Et,
+    own as Dt,
+    sgn as Ot,
+    sqn as kt,
+    swn as At,
+    tMt as jt,
+    ugn as Mt,
+    vh as Nt,
+    wh as Pt,
+    yh as Ft,
+    zhn as It
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Cf as Lt,
+    Dx as Rt,
+    Mx as zt,
+    Ob as Bt,
+    Ox as Vt,
+    by as Ht,
+    jx as Ut,
+    kb as Wt,
+    wf as Gt,
+    xy as Kt
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    $o as qt,
+    Iv as G,
+    Jo as Jt,
+    Lv as Yt,
+    Xo as Xt,
+    Yo as Zt,
+    Zo as Qt,
+    es as $t,
+    fl as en,
+    is as tn,
+    ns as nn,
+    pl as rn,
+    ss as an,
+    ts as on
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    In as sn,
+    Ln as cn,
+    Lv as ln,
+    Tv as un,
+    g_ as dn,
+    h_ as K,
+    zv as fn
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    n as pn,
+    t as mn
+} from "./9f2e6d33-h33rm8r24h08gyr1.js";
+import {
+    n as hn,
+    t as gn
+} from "./acd36773-tqhuox2xfelsiqb8.js";
+import {
+    l as _n,
+    o as vn
+} from "./d84f4c09-in2i53o5pcwcwqw8.js";
+import {
+    i as yn,
+    t as bn
+} from "./32d3feda-hhfdhqajoabb5vr8.js";
+import {
+    a as xn,
+    n as Sn,
+    t as Cn
+} from "./8c6976e5-d8nzzrgxiaivy5n7.js";
+import {
+    n as wn,
+    s as Tn
+} from "./b90db9d2-obtztx8g8suw7cbr.js";
+import {
+    n as En,
+    t as Dn
+} from "./b3532ffc-cxid0xthssfipob5.js";
+import {
+    r as On,
+    t as kn
+} from "./12cc112f-nvr9jolbx5qr37j4.js";
+import {
+    n as An,
+    t as jn
+} from "./22143f97-f1fwupvtyq4phcwu.js";
+import {
+    n as Mn,
+    t as Nn
+} from "./877c5994-hxide9t2m8mfxiij.js";
+
+function Pn() {
+    return (0, q.jsx)(ye, {
+        className: `icon-sm text-token-text-tertiary ms-1`
+    })
+}
+
+function Fn({
+    onChange: e,
+    enabled: t,
+    Icon: n,
+    label: r,
+    labelValues: i,
+    description: a,
+    onClickInfo: o,
+    tooltip: s,
+    tooltipValues: c,
+    hasPadding: l = !0,
+    className: u,
+    disabled: d = !1,
+    messageAfterTooltip: f = void 0,
+    after: p
+}) {
+    return (0, q.jsx)(Qt, {
+        className: _(`justify-start`, l ? `py-6` : `py-0`, u),
+        children: (0, q.jsxs)(`div`, {
+            className: `flex flex-col gap-0.5`,
+            children: [(0, q.jsxs)(`div`, {
+                className: `flex flex-row gap-4`,
+                children: [(0, q.jsx)(F, {
+                    label: ``,
+                    disabled: d,
+                    enabled: t,
+                    onChange: e
+                }), (0, q.jsxs)(`p`, {
+                    className: `text-md inline-flex items-center`,
+                    children: [n && (0, q.jsx)(n, {
+                        className: `icon me-1.5`
+                    }), r && (0, q.jsx)(H, {
+                        ...r,
+                        values: i
+                    }), s && (0, q.jsx)(ue, {
+                        interactive: !0,
+                        label: (0, q.jsx)(H, {
+                            ...s,
+                            values: c
+                        }),
+                        side: `top`,
+                        children: o ? (0, q.jsx)(`button`, {
+                            className: `block h-full`,
+                            onClick: o,
+                            children: (0, q.jsx)(Pn, {})
+                        }) : (0, q.jsx)(Pn, {})
+                    }), f && (0, q.jsx)(`span`, {
+                        className: `text-token-text-secondary ps-1 text-sm`,
+                        children: (0, q.jsx)(H, {
+                            ...f
+                        })
+                    })]
+                })]
+            }), a && (0, q.jsx)(`span`, {
+                className: `text-token-text-secondary ms-14 text-sm`,
+                children: (0, q.jsx)(H, {
+                    ...a
+                })
+            }), p]
+        })
+    })
+}
+
+function In({
+    workspaceId: e,
+    Icon: t,
+    label: n,
+    description: r,
+    onClickInfo: i,
+    feature: a,
+    value: o,
+    tooltip: s,
+    hasPadding: c = !0,
+    className: l,
+    disabled: u = !1,
+    overrideDisplayValue: d = void 0,
+    messageAfterTooltip: f = void 0,
+    after: p
+}) {
+    let m = Fe(),
+        {
+            variables: h,
+            mutate: g
+        } = He({
+            mutationFn: ({
+                feature: t,
+                enabled: n
+            }) => y.safePost(`/accounts/{account_id}/beta_features`, {
+                parameters: {
+                    path: {
+                        account_id: e
+                    }
+                },
+                requestBody: {
+                    feature: t,
+                    value: n
+                }
+            }),
+            onSettled: () => {
+                m.invalidateQueries({
+                    queryKey: [`workspace-settings`, e]
+                })
+            },
+            onError: () => {
+                w.danger(Ln.featureSettingsUpdateFailed, {
+                    toastId: `workspace_beta_feature_toggle_row`
+                })
+            }
+        });
+    return (0, q.jsx)(Fn, {
+        onChange: e => {
+            g({
+                feature: a,
+                enabled: e
+            })
+        },
+        enabled: d ?? h?.enabled ?? o,
+        Icon: t,
+        label: n,
+        description: r,
+        tooltip: s,
+        hasPadding: c,
+        className: l,
+        disabled: u,
+        messageAfterTooltip: f,
+        onClickInfo: i,
+        after: p
+    })
+}
+var q, Ln, Rn = e((() => {
+        De(), C(), z(), v(), g(), Ue(), L(), U(), on(), q = V(), Ln = Pe({
+            featureSettingsUpdateFailed: {
+                id: `workspaceSettingsOld.featureSettingsUpdateFailed`,
+                defaultMessage: `Failed to update feature setting`
+            }
+        })
+    })),
+    zn, Bn = e((() => {
+        P(), zn = be({
+            name: `arrow-up-lg-light-16`,
+            canvas: {
+                width: 16,
+                height: 16,
+                viewBox: `0 0 16 16`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 16,
+                    height: 16
+                },
+                inkBounds: {
+                    x: 2.808594,
+                    y: 2.279785,
+                    width: 10.382568,
+                    height: 11.578125
+                },
+                visualBounds: {
+                    x: 2.808594,
+                    y: 2.279785,
+                    width: 10.382568,
+                    height: 11.578125
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 2.808594,
+                    y: 2.279785,
+                    width: 10.382568,
+                    height: 11.578125
+                },
+                center: {
+                    x: 7.999878,
+                    y: 8.068848
+                },
+                insets: {
+                    top: 2.279785,
+                    right: 2.808838,
+                    bottom: 2.14209,
+                    left: 2.808594
+                },
+                anchors: {
+                    frame: {
+                        x: 8,
+                        y: 8
+                    },
+                    ink: {
+                        x: 7.999878,
+                        y: 8.068848
+                    },
+                    foreground: {
+                        x: 7.999878,
+                        y: 8.068848
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M7.45819 2.4721C7.77271 2.21556 8.22656 2.2158 8.5412 2.4721L8.60663 2.53069L13.0373 6.96233C13.2423 7.16736 13.2423 7.49949 13.0373 7.70452C12.8322 7.90905 12.5 7.90938 12.2951 7.70452L8.52557 3.93401V13.3334C8.5254 13.6232 8.29002 13.8578 8.00018 13.8578C7.71034 13.8578 7.47497 13.6232 7.47479 13.3334V3.93206L3.70429 7.70452C3.49929 7.90915 3.16702 7.90927 2.9621 7.70452C2.75738 7.49959 2.75747 7.16732 2.9621 6.96233L7.39276 2.53069L7.45819 2.4721Z" fill="currentColor"/>`
+        })
+    })),
+    Vn, Hn = e((() => {
+        P(), Vn = be({
+            name: `funnel-light-16`,
+            canvas: {
+                width: 16,
+                height: 16,
+                viewBox: `0 0 16 16`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 16,
+                    height: 16
+                },
+                inkBounds: {
+                    x: 2.141357,
+                    y: 2.141113,
+                    width: 11.716797,
+                    height: 12.306641
+                },
+                visualBounds: {
+                    x: 2.141357,
+                    y: 2.141113,
+                    width: 11.716797,
+                    height: 12.306641
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 2.141357,
+                    y: 2.141113,
+                    width: 11.716797,
+                    height: 12.306641
+                },
+                center: {
+                    x: 7.999756,
+                    y: 8.294434
+                },
+                insets: {
+                    top: 2.141113,
+                    right: 2.141846,
+                    bottom: 1.552246,
+                    left: 2.141357
+                },
+                anchors: {
+                    frame: {
+                        x: 8,
+                        y: 8
+                    },
+                    ink: {
+                        x: 7.999756,
+                        y: 8.294434
+                    },
+                    foreground: {
+                        x: 7.999756,
+                        y: 8.294434
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M12.8083 3.99951C12.8082 3.55323 12.4461 3.19189 11.9998 3.19189H3.99976C3.55358 3.19207 3.19231 3.55334 3.19214 3.99951V4.74365C3.19223 4.97128 3.28835 5.18818 3.45679 5.34131L6.24976 7.88135C6.63717 8.23354 6.85815 8.73277 6.85815 9.25635V12.2544C6.85815 12.3079 6.88845 12.3573 6.93628 12.3813L8.93628 13.3813C9.03047 13.4284 9.14136 13.3597 9.14136 13.2544V9.25635C9.14136 8.73285 9.36246 8.23353 9.74976 7.88135L12.5437 5.34131C12.7121 5.18818 12.8083 4.97128 12.8083 4.74365V3.99951ZM13.8582 4.74365C13.8581 5.26712 13.6371 5.76653 13.2498 6.11865L10.4568 8.65869C10.2883 8.81189 10.1921 9.0286 10.1921 9.25635V13.2544C10.1921 14.1401 9.25977 14.7165 8.46753 14.3208L6.46753 13.3208C6.06381 13.1189 5.80835 12.7058 5.80835 12.2544V9.25635C5.80835 9.02868 5.71211 8.81188 5.5437 8.65869L2.74976 6.11865C2.36243 5.76653 2.14144 5.26711 2.14136 4.74365V3.99951C2.14153 2.97344 2.97368 2.14129 3.99976 2.14111H11.9998C13.026 2.14111 13.858 2.97333 13.8582 3.99951V4.74365Z" fill="currentColor"/>`
+        })
+    })),
+    Un, Wn = e((() => {
+        P(), Un = be({
+            name: `funnel-light-20`,
+            canvas: {
+                width: 20,
+                height: 20,
+                viewBox: `0 0 20 20`,
+                frame: {
+                    x: 0,
+                    y: 0,
+                    width: 20,
+                    height: 20
+                },
+                inkBounds: {
+                    x: 2.668213,
+                    y: 2.668457,
+                    width: 14.663086,
+                    height: 15.400391
+                },
+                visualBounds: {
+                    x: 2.668213,
+                    y: 2.668457,
+                    width: 14.663086,
+                    height: 15.400391
+                }
+            },
+            paint: {
+                kind: `monochrome`
+            },
+            optical: {
+                shape: `non-circular`,
+                bounds: {
+                    x: 2.668213,
+                    y: 2.668457,
+                    width: 14.663086,
+                    height: 15.400391
+                },
+                center: {
+                    x: 9.999756,
+                    y: 10.368653
+                },
+                insets: {
+                    top: 2.668457,
+                    right: 2.668701,
+                    bottom: 1.931152,
+                    left: 2.668213
+                },
+                anchors: {
+                    frame: {
+                        x: 10,
+                        y: 10
+                    },
+                    ink: {
+                        x: 9.999756,
+                        y: 10.368653
+                    },
+                    foreground: {
+                        x: 9.999756,
+                        y: 10.368653
+                    }
+                }
+            },
+            capabilities: [`icon`],
+            body: `<path d="M16.0012 5.00049C16.0012 4.44739 15.5533 3.99871 15.0002 3.99854H5.00024C4.44704 3.99854 3.99829 4.44728 3.99829 5.00049V5.9292C3.99829 6.21141 4.11759 6.48057 4.32642 6.67041L7.8186 9.84521C8.3047 10.2871 8.5813 10.9139 8.5813 11.5708V15.3188C8.58144 15.3825 8.61813 15.4408 8.67505 15.4692L11.175 16.7192C11.2868 16.7747 11.4179 16.6936 11.4182 16.5688V11.5708C11.4182 10.9139 11.6958 10.2871 12.1819 9.84521L15.6741 6.67041C15.8827 6.48059 16.0012 6.21126 16.0012 5.9292V5.00049ZM17.3313 5.9292C17.3313 6.58606 17.0546 7.21289 16.5686 7.65479L13.0764 10.8296C12.8676 11.0194 12.7483 11.2886 12.7483 11.5708V16.5688C12.748 17.6823 11.5764 18.4064 10.5803 17.9087L8.08032 16.6587C7.57282 16.4049 7.25136 15.8862 7.25122 15.3188V11.5708C7.25122 11.2887 7.13278 11.0194 6.92407 10.8296L3.43188 7.65479C2.94579 7.21288 2.66821 6.58613 2.66821 5.9292V5.00049C2.66821 3.71274 3.7125 2.66846 5.00024 2.66846H15.0002C16.2878 2.66863 17.3313 3.71285 17.3313 5.00049V5.9292Z" fill="currentColor"/>`
+        })
+    })),
+    Gn, Kn, qn, Jn, Yn, Xn, Zn, Qn, $n, er = e((() => {
+        k(), xt(), hn(), Qe(), Mt(), vt(), Bn(), An(), Hn(), Wn(), It(), rt(), Gn = Ct({
+            id: `workspace-gpt-table-actions`,
+            icons: {
+                download: {
+                    normal: Ot,
+                    small: Tt
+                },
+                trash: {
+                    normal: ot,
+                    small: Je
+                },
+                filter: {
+                    normal: Un,
+                    small: Vn
+                },
+                "arrow-up": {
+                    normal: jn,
+                    small: zn
+                },
+                "arrow-down": {
+                    normal: ct,
+                    small: gn
+                }
+            }
+        }), Kn = Gn.Download, qn = Gn.Trash, Jn = l.Plus, Yn = l.LockKeyHole, Xn = l.Cross, Zn = Gn.Filter, Qn = Gn.ArrowUp, $n = Gn.ArrowDown
+    }));
+
+function tr({
+    isOpen: e,
+    onClose: t,
+    account: n,
+    gpt: i
+}) {
+    let a = Ge(),
+        [o, s] = (0, nr.useState)(!1),
+        [c, l] = (0, nr.useState)(``),
+        [u, d] = (0, nr.useState)(!0),
+        f = i.gizmo.is_unassigned;
+    return (0, J.jsxs)(b, {
+        testId: `modal-change-owner`,
+        size: `custom`,
+        className: `max-w-lg text-sm`,
+        isOpen: e,
+        onClose: T,
+        type: `success`,
+        title: a.formatMessage(f ? rr.assignModalTitle : rr.changeModalTitle),
+        children: [(0, J.jsx)(`p`, {
+            className: `text-token-text-primary mb-4`,
+            children: (0, J.jsx)(H, {
+                ...rr.changeModalPrompt,
+                values: {
+                    gptName: i.gizmo.display.name
+                }
+            })
+        }), !u && (0, J.jsx)(`p`, {
+            className: `text-red-500`,
+            children: (0, J.jsx)(H, {
+                ...rr.invalidEmail
+            })
+        }), (0, J.jsx)(Ye, {
+            ariaLabel: a.formatMessage({
+                id: `x4A5l2`,
+                defaultMessage: `Email`
+            }),
+            className: _(`px-3 py-2`, u ? `` : `border-red-500`),
+            name: `email`,
+            type: `email`,
+            value: c,
+            placeholder: `Email`,
+            onChange: e => {
+                l(e.target.value)
+            }
+        }), (0, J.jsxs)(`div`, {
+            className: `mt-4 flex justify-end gap-2`,
+            children: [(0, J.jsx)(r, {
+                color: `secondary`,
+                onClick: () => {
+                    t(!1), s(!1), d(!0)
+                },
+                loading: o,
+                children: (0, J.jsx)(H, {
+                    ...rr.cancelButtonText
+                })
+            }), (0, J.jsx)(r, {
+                color: `primary`,
+                loading: o,
+                onClick: () => {
+                    s(!0), d(!0), c == `` || !O.test(c) ? (d(!1), s(!1)) : y.safePost(`/accounts/{account_id}/gpts/{gizmo_id}/owner`, {
+                        parameters: {
+                            path: {
+                                account_id: n.id,
+                                gizmo_id: i.gizmo.id
+                            }
+                        },
+                        requestBody: {
+                            email: c
+                        }
+                    }).then(() => {
+                        t(!0), s(!1), d(!0)
+                    }, () => {
+                        d(!1), s(!1)
+                    })
+                },
+                children: (0, J.jsx)(H, {
+                    ...f ? rr.assignButtonText : rr.changeOwnerButtonText
+                })
+            })]
+        })]
+    })
+}
+var nr, J, rr, ir = e((() => {
+    N(), o(), ft(), h(), g(), L(), Ae(), nr = t(Re()), U(), J = V(), rr = Pe({
+        changeModalTitle: {
+            id: `changeOwnerModal.changeModalTitle`,
+            defaultMessage: `Change Owner`
+        },
+        assignModalTitle: {
+            id: `changeOwnerModal.assignModalTitle`,
+            defaultMessage: `Assign Owner`
+        },
+        changeModalPrompt: {
+            id: `changeOwnerModal.changeModalPrompt`,
+            defaultMessage: `New owner of {gptName}`
+        },
+        cancelButtonText: {
+            id: `changeOwnerModal.cancelButtonText`,
+            defaultMessage: `Cancel`
+        },
+        changeOwnerButtonText: {
+            id: `changeOwnerModal.changeOwnerButtonText`,
+            defaultMessage: `Change owner`
+        },
+        assignButtonText: {
+            id: `changeOwnerModal.assignButtonText`,
+            defaultMessage: `Assign`
+        },
+        invalidEmail: {
+            id: `changeOwnerModal.invalidEmail`,
+            defaultMessage: `Email is invalid or does not belong to a member in this workspace`
+        }
+    })
+}));
+
+function ar({
+    isOpen: e,
+    onClose: t,
+    account: n,
+    gpt: i
+}) {
+    let a = Ge(),
+        [o, s] = (0, or.useState)(!1);
+    return (0, sr.jsxs)(b, {
+        testId: `modal-delete-gpt`,
+        size: `custom`,
+        className: `max-w-lg text-sm`,
+        isOpen: e,
+        onClose: T,
+        type: `success`,
+        title: a.formatMessage(cr.deleteModalTitle),
+        children: [(0, sr.jsx)(`p`, {
+            className: `text-token-text-primary mb-4`,
+            children: (0, sr.jsx)(H, {
+                ...cr.deleteModalPrompt,
+                values: {
+                    gptName: i.gizmo.display.name
+                }
+            })
+        }), (0, sr.jsxs)(`div`, {
+            className: `mt-4 flex justify-end gap-2`,
+            children: [(0, sr.jsx)(r, {
+                color: `secondary`,
+                onClick: () => {
+                    t(!1)
+                },
+                loading: o,
+                children: (0, sr.jsx)(H, {
+                    ...cr.cancelButtonText
+                })
+            }), (0, sr.jsx)(r, {
+                color: `danger`,
+                loading: o,
+                onClick: () => {
+                    s(!0), y.safeDelete(`/accounts/{account_id}/gpts/{gizmo_id}`, {
+                        parameters: {
+                            path: {
+                                account_id: n.id,
+                                gizmo_id: i.gizmo.id
+                            }
+                        }
+                    }).finally(() => {
+                        t(!0), s(!1)
+                    })
+                },
+                children: (0, sr.jsx)(H, {
+                    ...cr.deleteButtonText
+                })
+            })]
+        })]
+    })
+}
+var or, sr, cr, lr = e((() => {
+        N(), o(), g(), Ae(), or = t(Re()), U(), sr = V(), cr = Pe({
+            deleteModalTitle: {
+                id: `deleteGPTModal.accessModalTitle`,
+                defaultMessage: `Delete GPT`
+            },
+            deleteModalPrompt: {
+                id: `deleteGPTModal.accessModalPrompt`,
+                defaultMessage: `Are you sure you would like to delete {gptName}? This action can not be undone.`
+            },
+            cancelButtonText: {
+                id: `deleteGPTModal.cancelButtonText`,
+                defaultMessage: `Cancel`
+            },
+            deleteButtonText: {
+                id: `deleteGPTModal.deleteButtonText`,
+                defaultMessage: `Delete`
+            }
+        })
+    })),
+    ur, dr = e((() => {
+        re(), g(), ur = async (e, t, n, r, i) => {
+            let a = r;
+            for (;;) {
+                n.migrationEnabled && i?.throwIfAborted();
+                let r = await y.safeGet(`/workspace-resources/{account_id}/admin/gizmos`, {
+                        parameters: {
+                            path: {
+                                account_id: e
+                            },
+                            query: {
+                                search: n.search ?? ``,
+                                limit: 10,
+                                order_by: n.orderBy ?? `updated_at`,
+                                order_dir: n.orderDir ?? `desc`,
+                                share_recipients: n.shareRecipients ?? [],
+                                is_approved: t === E.THIRD_PARTY,
+                                is_unassigned: t === E.UNASSIGNED,
+                                ...n.toolTypes?.length ? {
+                                    tool_types: n.toolTypes
+                                } : {},
+                                ...a ? {
+                                    query_continuation: a
+                                } : {}
+                            }
+                        },
+                        signal: n.migrationEnabled ? i : void 0
+                    }),
+                    o = r.items.filter(({
+                        gizmo: e
+                    }) => !n.migrationEnabled || t === E.THIRD_PARTY || !!e.migrated_plugin_id == (t === `migrated`));
+                if (a = r.query_continuation ?? void 0, !n.migrationEnabled || o.length || !a) return {
+                    items: o,
+                    query_continuation: a ?? null
+                }
+            }
+        }
+    }));
+
+function fr({
+    account: e,
+    gpt: t,
+    thirdParty: n,
+    migrated: r,
+    onMigrate: i
+}) {
+    "use no forget";
+    let a = Fe(),
+        o = Ge(),
+        [c, l] = (0, Y.useState)(!1),
+        [u, f] = (0, Y.useState)(!1),
+        [p, h] = (0, Y.useState)(!1),
+        [g, te] = (0, Y.useState)(!1),
+        [_, v] = (0, Y.useState)(!1),
+        [y, ne] = (0, Y.useState)(!1),
+        re = Ie(),
+        b = new Date(n ? t.gizmo.workspace_approval_date ?? `` : t.gizmo.created_at).toLocaleDateString(`en-US`, {
+            month: `short`,
+            day: `numeric`
+        }),
+        x = new Date(t.gizmo.updated_at).toLocaleDateString(`en-US`, {
+            month: `short`,
+            day: `numeric`
+        }),
+        S = (0, Y.useMemo)(() => {
+            let e = t.tools.flatMap(e => ge(e) ? [e.metadata.domain] : []);
+            return e.length === 1 ? e[0] : e.length > 1 ? `${e.length} domains` : ``
+        }, [t.tools]),
+        C = t.gizmo.is_unassigned,
+        w = ve(t.gizmo.migrated_plugin_id),
+        T = _ && w && !n ? t.gizmo.migrated_plugin_id ?? void 0 : void 0,
+        ae = Ce(() => Nt(T)),
+        oe = Ce(() => gt(T) === `pending`),
+        D = Ce(() => Ke(t)),
+        O = D === `migrate`,
+        se = Ce(lt),
+        k = Ce($e),
+        le = D === `gpt_permission_required`,
+        ue = Ce(wt),
+        de = D === `read_access_required`,
+        A = fe(`1315690859`),
+        j = (0, Y.useCallback)(e => {
+            !e && y || v(e)
+        }, [y]),
+        pe = (0, Y.useCallback)(async () => {
+            if (!y) {
+                ne(!0);
+                try {
+                    let n = await s.exportWorkspaceAdminGizmoZip({
+                        accountId: e.id,
+                        gizmoId: t.gizmo.id
+                    });
+                    bt(await n.blob(), nt(n.headers.get(`Content-Disposition`)) ?? `gizmo-export.zip`)
+                } catch (e) {
+                    let t = M(e);
+                    ee().danger(t ?? o.formatMessage(Z.exportGizmoFailure))
+                } finally {
+                    ne(!1), v(!1)
+                }
+            }
+        }, [e.id, t.gizmo.id, o, y]);
+    return (0, X.jsxs)(X.Fragment, {
+        children: [(0, X.jsxs)(G.Row, {
+            className: `relative`,
+            children: [(0, X.jsx)(G.Cell, {
+                className: `max-w-[320px] min-w-[240px] py-2 pe-2 align-middle! whitespace-break-spaces`,
+                children: (0, X.jsxs)(`div`, {
+                    className: `flex items-center`,
+                    children: [(0, X.jsx)(`div`, {
+                        className: `h-10 w-10 shrink-0`,
+                        children: (0, X.jsx)(St, {
+                            src: t.gizmo.display.profile_picture_url,
+                            isFirstParty: t.gizmo.tags?.includes(ce.FirstParty) ?? !1,
+                            alt: t.gizmo.display.name,
+                            className: `h-10 w-10`
+                        })
+                    }), (0, X.jsx)(pt, {
+                        className: `ms-4`,
+                        onClick: () => re(he(t)),
+                        children: (0, X.jsx)(`div`, {
+                            className: `text-token-text-primary text-sm font-semibold`,
+                            children: t.gizmo.display.name
+                        })
+                    })]
+                })
+            }), (0, X.jsx)(G.Cell, {
+                className: `text-token-text-secondary w-full max-w-[160px] min-w-[100px] p-2 align-middle! text-sm`,
+                children: C ? (0, X.jsx)(`div`, {
+                    className: `bg-token-bg-tertiary rounded-lg px-2 py-1`,
+                    children: (0, X.jsx)(H, {
+                        ...Z.unassigned
+                    })
+                }) : (0, X.jsx)(`span`, {
+                    className: `block overflow-hidden text-ellipsis whitespace-nowrap`,
+                    children: t.gizmo.author.display_name
+                })
+            }), !r && (0, X.jsxs)(X.Fragment, {
+                children: [(0, X.jsx)(G.Cell, {
+                    wrap: !0,
+                    className: `text-token-text-secondary max-w-[240px] min-w-[160px] p-2 align-middle! text-sm`,
+                    children: S === `` ? `—` : S
+                }), !n && (0, X.jsx)(G.Cell, {
+                    className: `text-token-text-secondary p-2 align-middle! text-sm whitespace-nowrap`,
+                    children: (0, X.jsx)(mr, {
+                        gizmo: t,
+                        account: e
+                    })
+                }), !n && (0, X.jsx)(G.Cell, {
+                    className: `text-token-text-secondary p-2 align-middle! text-sm whitespace-nowrap`,
+                    children: t.gizmo.vanity_metrics?.num_conversations_str ?? 0
+                }), (0, X.jsx)(G.Cell, {
+                    className: `text-token-text-secondary p-2 align-middle! text-sm whitespace-nowrap`,
+                    children: b
+                }), (0, X.jsx)(G.Cell, {
+                    className: `text-token-text-secondary p-2 align-middle! text-sm whitespace-nowrap`,
+                    children: x
+                })]
+            }), (0, X.jsx)(G.Cell, {
+                className: `border-token-border-heavy bg-token-bg-primary sticky end-0 border-s-[0.5px] p-1 align-middle!`,
+                textAlign: `center`,
+                children: (0, X.jsxs)(W.Root, {
+                    open: _,
+                    onOpenChange: j,
+                    children: [(0, X.jsx)(W.Trigger, {
+                        "aria-label": o.formatMessage({
+                            id: `workspaceSettings.gptActions.label`,
+                            defaultMessage: `Actions for {gptName}`
+                        }, {
+                            gptName: t.gizmo.display.name
+                        }),
+                        children: (0, X.jsx)(Rt, {
+                            className: `icon-sm`
+                        })
+                    }), (0, X.jsx)(W.Portal, {
+                        children: !n && w && t.gizmo.migrated_plugin_id ? (0, X.jsx)(W.Content, {
+                            children: (0, X.jsx)(W.LinkItem, {
+                                to: ae ?? un({
+                                    pluginId: t.gizmo.migrated_plugin_id,
+                                    searchParams: new URLSearchParams
+                                }),
+                                external: ae != null,
+                                "aria-disabled": oe || void 0,
+                                onClick: e => {
+                                    oe && e.preventDefault()
+                                },
+                                icon: oe ? ie : m,
+                                children: (0, X.jsx)(H, {
+                                    id: `workspaceSettings.pluginMigration.viewPlugin`,
+                                    defaultMessage: `View Plugin`
+                                })
+                            })
+                        }) : n ? (0, X.jsx)(W.Content, {
+                            children: (0, X.jsx)(W.Item, {
+                                onClick: () => {
+                                    te(!0)
+                                },
+                                color: `danger`,
+                                icon: qn,
+                                children: (0, X.jsx)(H, {
+                                    ...Z.removeFromWorkspace
+                                })
+                            })
+                        }) : (0, X.jsxs)(W.Content, {
+                            children: [(0, X.jsx)(W.Item, {
+                                disabled: w,
+                                onClick: () => {
+                                    l(t)
+                                },
+                                icon: zt,
+                                children: (0, X.jsx)(H, {
+                                    ...Z.changeAccess
+                                })
+                            }), (0, X.jsx)(W.Item, {
+                                disabled: w,
+                                onClick: () => {
+                                    h(!0)
+                                },
+                                icon: C ? Gt : Yn,
+                                children: (0, X.jsx)(H, {
+                                    ...C ? Z.assignOwner : Z.changeOwner
+                                })
+                            }), (O || de || le) && (0, X.jsx)(et, {
+                                disabled: se && !de && !le,
+                                content: k ? (0, X.jsx)(H, {
+                                    id: `workspaceSettings.pluginMigration.workspaceAuthoringDisabled.tooltip`,
+                                    defaultMessage: `Plugin creation is disabled for this workspace.`
+                                }) : se ? le ? (0, X.jsx)(st, {
+                                    permission: ue
+                                }) : (0, X.jsx)(H, {
+                                    id: `workspaceSettings.pluginMigration.readAccessRequired.tooltip`,
+                                    defaultMessage: `You don't have access to view this GPT. Request access to view it and migrate it to a plugin.`
+                                }) : (0, X.jsx)(st, {
+                                    permission: `pending`
+                                }),
+                                contentLayout: `multi-line`,
+                                showOnTouch: !0,
+                                children: e => (0, X.jsx)(W.Item, {
+                                    ...e,
+                                    "aria-label": o.formatMessage(Z.migrateToPlugin),
+                                    "aria-disabled": !se || de || le,
+                                    className: `aria-disabled:cursor-default aria-disabled:opacity-50`,
+                                    onClick: e => {
+                                        if (!je(lt)) {
+                                            e.preventDefault();
+                                            return
+                                        }
+                                        O && i(t)
+                                    },
+                                    onSelect: e => {
+                                        (!O || !je(lt)) && e.preventDefault()
+                                    },
+                                    icon: Kt,
+                                    children: (0, X.jsx)(H, {
+                                        ...Z.migrateToPlugin
+                                    })
+                                })
+                            }), A && (0, X.jsx)(W.Item, {
+                                disabled: y,
+                                onClick: () => {
+                                    pe()
+                                },
+                                onSelect: e => {
+                                    e.preventDefault()
+                                },
+                                icon: Kn,
+                                trailing: y ? (0, X.jsx)(ie, {
+                                    className: `icon-sm`
+                                }) : void 0,
+                                children: (0, X.jsx)(H, {
+                                    ...Z.exportGizmoInternal
+                                })
+                            }), (0, X.jsx)(W.Item, {
+                                onClick: () => {
+                                    f(!0)
+                                },
+                                icon: qn,
+                                color: `danger`,
+                                children: (0, X.jsx)(H, {
+                                    ...Z.deleteGPT
+                                })
+                            })]
+                        })
+                    })]
+                })
+            })]
+        }), c && !w && (0, X.jsx)(vn, {
+            publishedGizmo: c,
+            gizmo: d(c),
+            onClose: () => l(!1),
+            appealGizmo: () => re(R(c.gizmo.id)),
+            shareOnly: !0,
+            workspaceOwner: !0
+        }), (0, X.jsx)(tr, {
+            isOpen: p && !w,
+            gpt: t,
+            account: e,
+            onClose: t => {
+                h(!1), t && a.invalidateQueries({
+                    queryKey: [`workspace`, e.id, E.WORKSPACE]
+                })
+            }
+        }), (0, X.jsx)(ar, {
+            isOpen: u,
+            gpt: t,
+            account: e,
+            onClose: t => {
+                f(!1), t && a.invalidateQueries({
+                    queryKey: [`workspace`, e.id, E.WORKSPACE]
+                })
+            }
+        }), (0, X.jsx)(Sr, {
+            isOpen: g,
+            gpt: t,
+            account: e,
+            onClose: t => {
+                te(!1), t && a.invalidateQueries({
+                    queryKey: [`workspace`, e.id, E.THIRD_PARTY]
+                })
+            }
+        })]
+    })
+}
+
+function pr(e, t, n) {
+    return Be({
+        queryKey: [`workspace`, e, `admin-gizmos`, t, ...n.migrationEnabled ? [!0] : [], n.search ?? ``, (n.toolTypes ?? []).join(`,`), (n.shareRecipients ?? []).join(`,`), n.orderBy, n.orderDir],
+        queryFn: r => ur(e, t, n, r.pageParam.query_continuation, n.migrationEnabled ? r.signal : void 0),
+        initialPageParam: {
+            query_continuation: ``
+        },
+        getNextPageParam: e => e.query_continuation ? {
+            query_continuation: e.query_continuation
+        } : void 0
+    })
+}
+
+function mr({
+    gizmo: e,
+    account: t
+}) {
+    let n = Ge(),
+        r = {
+            [c.Private]: n.formatMessage(Z.shareRecipientTitlePrivate),
+            [c.User]: n.formatMessage(Z.shareRecipientTitlePrivate),
+            [c.Group]: n.formatMessage(Z.shareRecipientTitlePrivate),
+            [c.Email]: n.formatMessage(Z.shareRecipientTitlePrivate),
+            [c.Link]: n.formatMessage(Z.shareRecipientTitleLink),
+            [c.Marketplace]: n.formatMessage(Z.shareRecipientTitlePublic),
+            [c.Workspace]: t.data.name,
+            [c.WorkspaceLink]: t.data.name
+        };
+    if ([`private`, `user`, `group`, `email`].includes(e.gizmo.share_recipient)) {
+        let {
+            users: t,
+            groups: i
+        } = hr(e);
+        return t === 0 && i === 0 ? (0, X.jsx)(`span`, {
+            className: `text-token-text-secondary`,
+            children: (0, X.jsx)(H, {
+                ...Z.shareRecipientTitlePrivate
+            })
+        }) : t > 0 && i > 0 ? (0, X.jsxs)(`span`, {
+            className: `text-token-text-secondary`,
+            children: [r[e.gizmo.share_recipient], (0, X.jsx)(`br`, {}), (0, X.jsx)(H, {
+                id: `fQ+tJG`,
+                defaultMessage: `Shared with {users} and {groups}`,
+                values: {
+                    users: n.formatMessage(Z.userCount, {
+                        numUsers: t
+                    }),
+                    groups: n.formatMessage(Z.groupCount, {
+                        numGroups: i
+                    })
+                }
+            })]
+        }) : t > 0 ? (0, X.jsxs)(`span`, {
+            className: `text-token-text-secondary`,
+            children: [r[e.gizmo.share_recipient], (0, X.jsx)(`br`, {}), (0, X.jsx)(H, {
+                ...Z.userCount,
+                values: {
+                    numUsers: t
+                }
+            })]
+        }) : (0, X.jsxs)(`span`, {
+            className: `text-token-text-secondary`,
+            children: [r[e.gizmo.share_recipient], (0, X.jsx)(`br`, {}), (0, X.jsx)(H, {
+                ...Z.groupCount,
+                values: {
+                    numGroups: i
+                }
+            })]
+        })
+    }
+    return (0, X.jsx)(`span`, {
+        children: r[e.gizmo.share_recipient]
+    })
+}
+
+function hr(e) {
+    let t = e.gizmo.sharing?.subjects;
+    return t ? {
+        users: t.filter(e => e.type === B.USER).length,
+        groups: t.filter(e => e.type === B.GROUP).length
+    } : {
+        users: 0,
+        groups: 0
+    }
+}
+
+function gr() {
+    return fe(`2160578039`)
+}
+
+function _r(e) {
+    return e === `asc` ? `desc` : `asc`
+}
+
+function vr(e) {
+    return Math.max(1, e - 1)
+}
+
+function yr(e) {
+    return e + 1
+}
+
+function br(e) {
+    return e + 1
+}
+var xr, Y, X, Sr, Cr, wr, Z, Tr = e((() => {
+    xr = We(), re(), N(), ht(), Ne(), At(), er(), yt(), it(), Yt(), Wt(), Vt(), D(), Ht(), Ut(), S(), Lt(), Ze(), dt(), jt(), de(), te(), se(), ut(), at(), Xe(), Ft(), fn(), Pt(), i(), _n(), n(), f(), yn(), v(), Et(), me(), mt(), u(), we(), Ee(), Ue(), a(), Y = t(Re()), U(), Le(), Mn(), ir(), lr(), dr(), X = V(), Ve(), Sr = j(() => ze(() => import(`./18798b51-brm8ak3tl2d7w6lj.js`), __vite__mapDeps([0, 1, 2, 3, 4]))), Cr = [A.BROWSER, A.PYTHON, A.JIT_PLUGIN, A.RETRIEVAL, A.IMAGE_GEN, A.CANVAS, A.CONNECTOR], wr = e => {
+        "use forget";
+        let t = (0, xr.c)(115),
+            {
+                account: n,
+                showThirdParty: i
+            } = e,
+            a = Ce(gr),
+            [o, s] = (0, Y.useState)(),
+            [l, u] = (0, Y.useState)(E.WORKSPACE),
+            d = l === `migrated` && !a ? E.WORKSPACE : l,
+            f = d === `migrated`,
+            m = Ge(),
+            [h, g] = (0, Y.useState)(!1),
+            ee = (0, Y.useRef)(null),
+            [te, _] = (0, Y.useState)(``),
+            [v, y] = (0, Y.useState)(!1),
+            [ne, re] = (0, Y.useState)(te),
+            b = (0, Y.useRef)(null),
+            [x, S] = (0, Y.useState)(1),
+            C;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (C = e => {
+            if (_(e), b.current &&= (clearTimeout(b.current), null), e === ``) {
+                re(``), S(1);
+                return
+            }
+            b.current = window.setTimeout(() => {
+                re(e), S(1), b.current = null
+            }, 500)
+        }, t[0] = C) : C = t[0];
+        let w = C,
+            [T, ae] = (0, Y.useState)(`updated_at`),
+            [oe, D] = (0, Y.useState)(`desc`),
+            O = oe === `asc` ? Qn : $n,
+            se = [{
+                value: `private`,
+                label: m.formatMessage(Z.shareRecipientTitlePrivate),
+                share_recipients: [c.Private, c.User, c.Group]
+            }, {
+                value: `link`,
+                label: m.formatMessage(Z.shareRecipientTitleLink),
+                share_recipients: [c.Link]
+            }, {
+                value: `workspace`,
+                label: n.data.name ?? ``,
+                share_recipients: [c.Workspace, c.WorkspaceLink]
+            }, {
+                value: `marketplace`,
+                label: m.formatMessage(Z.shareRecipientTitlePublic),
+                share_recipients: [c.Marketplace]
+            }],
+            ce;
+        t[1] === Symbol.for(`react.memo_cache_sentinel`) ? (ce = [], t[1] = ce) : ce = t[1];
+        let [k, le] = (0, Y.useState)(ce), ue;
+        t[2] === Symbol.for(`react.memo_cache_sentinel`) ? (ue = [], t[2] = ue) : ue = t[2];
+        let [de, fe] = (0, Y.useState)(ue), j = Fe(), me, he;
+        t[3] === v ? (me = t[4], he = t[5]) : (me = () => {
+            v && ee.current && ee.current.focus()
+        }, he = [v], t[3] = v, t[4] = me, t[5] = he), (0, Y.useEffect)(me, he);
+        let M;
+        t[6] === Symbol.for(`react.memo_cache_sentinel`) ? (M = e => {
+            u(e), S(1)
+        }, t[6] = M) : M = t[6];
+        let N = M,
+            ge;
+        t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (ge = (e, t) => {
+            le(n => t ? [...n, e] : n.filter(t => t !== e)), S(1)
+        }, t[7] = ge) : ge = t[7];
+        let _e = ge,
+            ve = (e, t) => {
+                fe(n => t ? [...n, e] : n.filter(t => t !== e)), S(1)
+            },
+            ye;
+        t[8] === Symbol.for(`react.memo_cache_sentinel`) ? (ye = () => {
+            le([]), fe([]), S(1)
+        }, t[8] = ye) : ye = t[8];
+        let be = ye,
+            {
+                data: P,
+                fetchNextPage: xe,
+                hasNextPage: we,
+                isFetchingNextPage: F,
+                isLoading: Te,
+                isError: Ee,
+                refetch: De
+            } = pr(n.id, d, {
+                migrationEnabled: a,
+                search: ne,
+                toolTypes: k.includes(A.IMAGE_GEN) ? [...k, A.DALLE] : k,
+                shareRecipients: se.flatMap(e => de.includes(e.value) ? e.share_recipients : []),
+                orderBy: T,
+                orderDir: oe
+            }),
+            Oe = Te,
+            I = k.length + de.length,
+            L;
+        t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (L = function(e) {
+            ae(t => t === e ? (D(_r), e) : (D(`asc`), e)), S(1)
+        }, t[9] = L) : L = t[9];
+        let R = L,
+            ke;
+        bb0: {
+            if (!P) {
+                let e;
+                t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (e = [], t[10] = e) : e = t[10], ke = e;
+                break bb0
+            }
+            let e = P.pages[x - 1],
+                n;t[11] === e ? n = t[12] : (n = e ? e.items : [], t[11] = e, t[12] = n),
+            ke = n
+        }
+        let z = ke,
+            Ae = d === E.WORKSPACE,
+            je, Me;
+        t[13] === Symbol.for(`react.memo_cache_sentinel`) ? (je = () => N(E.WORKSPACE), Me = (0, X.jsx)(H, {
+            ...Z.workspaceTab
+        }), t[13] = je, t[14] = Me) : (je = t[13], Me = t[14]);
+        let B;
+        t[15] === Ae ? B = t[16] : (B = (0, X.jsx)(bn, {
+            isActive: Ae,
+            onClick: je,
+            children: Me
+        }), t[15] = Ae, t[16] = B);
+        let Ne;
+        t[17] !== f || t[18] !== a ? (Ne = a && (0, X.jsx)(bn, {
+            isActive: f,
+            onClick: () => N(`migrated`),
+            children: (0, X.jsx)(H, {
+                id: `workspaceSettings.pluginMigration.migratedTab`,
+                defaultMessage: `Migrated`
+            })
+        }), t[17] = f, t[18] = a, t[19] = Ne) : Ne = t[19];
+        let V;
+        t[20] !== i || t[21] !== d ? (V = i && (0, X.jsx)(bn, {
+            isActive: d === E.THIRD_PARTY,
+            onClick: () => N(E.THIRD_PARTY),
+            children: (0, X.jsx)(H, {
+                ...Z.thirdPartyTab
+            })
+        }), t[20] = i, t[21] = d, t[22] = V) : V = t[22];
+        let Pe = d === E.UNASSIGNED,
+            Ie, Le;
+        t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (Ie = () => N(E.UNASSIGNED), Le = (0, X.jsx)(H, {
+            ...Z.unassigned
+        }), t[23] = Ie, t[24] = Le) : (Ie = t[23], Le = t[24]);
+        let U;
+        t[25] === Pe ? U = t[26] : (U = (0, X.jsx)(bn, {
+            isActive: Pe,
+            onClick: Ie,
+            children: Le
+        }), t[25] = Pe, t[26] = U);
+        let Re;
+        t[27] !== B || t[28] !== Ne || t[29] !== V || t[30] !== U ? (Re = (0, X.jsxs)(`div`, {
+            className: `flex space-x-4 pt-2`,
+            children: [B, Ne, V, U]
+        }), t[27] = B, t[28] = Ne, t[29] = V, t[30] = U, t[31] = Re) : Re = t[31];
+        let ze;
+        t[32] === I ? ze = t[33] : (ze = I > 0 && (0, X.jsxs)(qe, {
+            className: `flex items-center space-x-1`,
+            onClick: be,
+            children: [(0, X.jsx)(`span`, {
+                className: `font-medium`,
+                children: (0, X.jsx)(H, {
+                    id: `2HkRen`,
+                    defaultMessage: `{filterCount, plural, one {# filter} other {# filters}} applied`,
+                    values: {
+                        filterCount: I
+                    }
+                })
+            }), (0, X.jsx)(Xn, {
+                className: `icon`
+            })]
+        }), t[32] = I, t[33] = ze);
+        let Be = W,
+            Ve;
+        t[34] === Symbol.for(`react.memo_cache_sentinel`) ? (Ve = (0, X.jsx)(W.Trigger, {
+            children: (0, X.jsx)(Zn, {
+                className: `icon`
+            })
+        }), t[34] = Ve) : Ve = t[34];
+        let He = W,
+            Ue = W,
+            We;
+        t[35] === Symbol.for(`react.memo_cache_sentinel`) ? (We = (0, X.jsx)(`span`, {
+            className: `flex font-semibold`,
+            children: (0, X.jsx)(H, {
+                ...Z.capabilitiesTitle
+            })
+        }), t[35] = We) : We = t[35];
+        let Ke;
+        t[36] !== n || t[37] !== m || t[38] !== k ? (Ke = Cr.map(e => (0, X.jsx)(kt, {
+            id: e,
+            checked: k.includes(e),
+            label: Dt(n, e, m),
+            onChange: t => _e(e, t.target.checked)
+        }, e)), t[36] = n, t[37] = m, t[38] = k, t[39] = Ke) : Ke = t[39];
+        let Je;
+        t[40] === Ke ? Je = t[41] : (Je = (0, X.jsxs)(`div`, {
+            className: `flex-col space-y-2`,
+            children: [We, Ke]
+        }), t[40] = Ke, t[41] = Je);
+        let Ye;
+        t[42] === Symbol.for(`react.memo_cache_sentinel`) ? (Ye = (0, X.jsx)(`span`, {
+            className: `flex font-semibold`,
+            children: (0, X.jsx)(H, {
+                ...Z.whoHasAccessTitle
+            })
+        }), t[42] = Ye) : Ye = t[42];
+        let Xe = se.map(e => (0, X.jsx)(kt, {
+                id: e.value,
+                checked: de.includes(e.value),
+                label: e.label,
+                onChange: t => ve(e.value, t.target.checked)
+            }, e.value)),
+            Ze;
+        t[43] !== Ye || t[44] !== Xe ? (Ze = (0, X.jsxs)(`div`, {
+            className: `mt-4 flex-col space-y-2 border-t pt-4`,
+            children: [Ye, Xe]
+        }), t[43] = Ye, t[44] = Xe, t[45] = Ze) : Ze = t[45];
+        let Qe;
+        t[46] !== Je || t[47] !== Ze ? (Qe = (0, X.jsxs)(`div`, {
+            className: `text-token-text-primary w-64 space-y-2 p-2 font-normal`,
+            children: [Je, Ze]
+        }), t[46] = Je, t[47] = Ze, t[48] = Qe) : Qe = t[48];
+        let $e;
+        t[49] !== Ue.Content || t[50] !== Qe ? ($e = (0, X.jsx)(Ue.Content, {
+            className: `rounded-lg px-2 text-sm`,
+            children: Qe
+        }), t[49] = Ue.Content, t[50] = Qe, t[51] = $e) : $e = t[51];
+        let et;
+        t[52] !== He.Portal || t[53] !== $e ? (et = (0, X.jsx)(He.Portal, {
+            children: $e
+        }), t[52] = He.Portal, t[53] = $e, t[54] = et) : et = t[54];
+        let nt;
+        t[55] !== Be.Root || t[56] !== Ve || t[57] !== et ? (nt = (0, X.jsxs)(Be.Root, {
+            children: [Ve, et]
+        }), t[55] = Be.Root, t[56] = Ve, t[57] = et, t[58] = nt) : nt = t[58];
+        let rt;
+        t[59] === Symbol.for(`react.memo_cache_sentinel`) ? (rt = (0, X.jsx)(qe, {
+            onClick: () => y(!0),
+            children: (0, X.jsx)(p, {
+                className: `icon`
+            })
+        }), t[59] = rt) : rt = t[59];
+        let it;
+        t[60] !== m || t[61] !== te || t[62] !== v ? (it = v && (0, X.jsx)(pe.input, {
+            type: `text`,
+            ref: ee,
+            placeholder: m.formatMessage(Z.filterByNameOrDescriptionPlaceholder),
+            className: `bg-token-bg-primary border-none px-0 focus:ring-0`,
+            initial: {
+                width: 0,
+                opacity: 0
+            },
+            animate: {
+                width: `192px`,
+                opacity: 1
+            },
+            exit: {
+                width: 0,
+                opacity: 0,
+                visibility: `hidden`
+            },
+            value: te,
+            onChange: e => w(e.target.value)
+        }), t[60] = m, t[61] = te, t[62] = v, t[63] = it) : it = t[63];
+        let at;
+        t[64] === it ? at = t[65] : (at = (0, X.jsx)(Se, {
+            children: it
+        }), t[64] = it, t[65] = at);
+        let ot;
+        t[66] === v ? ot = t[67] : (ot = v && (0, X.jsx)(`div`, {
+            className: `cursor-pointer`,
+            onClick: () => {
+                y(!1), w(``)
+            },
+            children: (0, X.jsx)(Xn, {
+                className: `icon-sm`
+            })
+        }), t[66] = v, t[67] = ot);
+        let st;
+        t[68] !== at || t[69] !== ot ? (st = (0, X.jsxs)(`div`, {
+            className: `flex items-center`,
+            children: [rt, at, ot]
+        }), t[68] = at, t[69] = ot, t[70] = st) : st = t[70];
+        let ct;
+        t[71] === i ? ct = t[72] : (ct = i && (0, X.jsx)(r, {
+            color: `secondary`,
+            onClick: () => g(!0),
+            icon: Jn,
+            children: (0, X.jsx)(H, {
+                ...Z.approveAGPTButton
+            })
+        }), t[71] = i, t[72] = ct);
+        let lt;
+        t[73] !== ze || t[74] !== nt || t[75] !== st || t[76] !== ct ? (lt = (0, X.jsxs)(`div`, {
+            className: `flex items-center pb-2`,
+            children: [ze, nt, st, ct]
+        }), t[73] = ze, t[74] = nt, t[75] = st, t[76] = ct, t[77] = lt) : lt = t[77];
+        let ut;
+        t[78] !== Re || t[79] !== lt ? (ut = (0, X.jsxs)(`div`, {
+            className: `border-token-border-default flex justify-between border-b`,
+            children: [Re, lt]
+        }), t[78] = Re, t[79] = lt, t[80] = ut) : ut = t[80];
+        let dt;
+        t[81] !== O || t[82] !== n || t[83] !== x || t[84] !== P || t[85] !== z || t[86] !== xe || t[87] !== Oe || t[88] !== R || t[89] !== we || t[90] !== Ee || t[91] !== F || t[92] !== f || t[93] !== a || t[94] !== De || t[95] !== T || t[96] !== d ? (dt = Oe ? (0, X.jsx)(`div`, {
+            className: `mt-8 flex min-h-[320px] items-center justify-center`,
+            children: (0, X.jsx)(ie, {})
+        }) : a && Ee ? (0, X.jsxs)(`div`, {
+            role: `alert`,
+            className: `flex min-h-[320px] flex-col items-center justify-center gap-4`,
+            children: [(0, X.jsx)(H, {
+                id: `workspaceSettings.pluginMigration.loadError`,
+                defaultMessage: `Couldn’t load GPTs. Try again.`
+            }), (0, X.jsx)(r, {
+                color: `secondary`,
+                onClick: () => void De(),
+                children: (0, X.jsx)(H, {
+                    id: `workspaceSettings.pluginMigration.retry`,
+                    defaultMessage: `Retry`
+                })
+            })]
+        }) : (0, X.jsxs)(`div`, {
+            className: `mb-8 min-h-[320px]`,
+            children: [z.length > 0 ? (0, X.jsxs)(G.Root, {
+                size: `normal`,
+                className: `bg-token-bg-primary w-full min-w-full overflow-hidden overflow-x-auto sm:rounded-lg`,
+                children: [(0, X.jsxs)(G.Header, {
+                    children: [(0, X.jsx)(G.HeaderCell, {
+                        className: `text-token-text-secondary py-2 pe-4 text-start text-xs`,
+                        children: (0, X.jsx)(H, {
+                            ...Z.nameCellTitle
+                        })
+                    }), (0, X.jsx)(G.HeaderCell, {
+                        className: `text-token-text-secondary px-2 py-2 text-start text-xs`,
+                        children: (0, X.jsx)(H, {
+                            ...Z.builderCellTitle
+                        })
+                    }), !f && (0, X.jsxs)(X.Fragment, {
+                        children: [(0, X.jsx)(G.HeaderCell, {
+                            className: `text-token-text-secondary px-2 py-2 text-start text-xs`,
+                            children: (0, X.jsx)(H, {
+                                ...Z.customActionsCellTitle
+                            })
+                        }), (d === E.WORKSPACE || d === E.UNASSIGNED) && (0, X.jsx)(G.HeaderCell, {
+                            className: `text-token-text-secondary px-2 py-2 text-start text-xs`,
+                            children: (0, X.jsx)(H, {
+                                ...Z.whoHasAccessTitle
+                            })
+                        }), (d === E.WORKSPACE || d === E.UNASSIGNED) && (0, X.jsx)(G.HeaderCell, {
+                            className: `text-token-text-secondary cursor-pointer px-2 py-2 text-start text-xs`,
+                            children: (0, X.jsxs)(`div`, {
+                                className: `flex items-center gap-1`,
+                                onClick: () => R(`accurate_num_paid_conversations`),
+                                children: [(0, X.jsx)(`span`, {
+                                    children: (0, X.jsx)(H, {
+                                        ...Z.chatsCellTitle
+                                    })
+                                }), T === `accurate_num_paid_conversations` && (0, X.jsx)(O, {
+                                    className: `icon-sm`
+                                })]
+                            })
+                        }), (0, X.jsx)(G.HeaderCell, {
+                            className: `text-token-text-secondary cursor-pointer px-2 py-2 text-start text-xs`,
+                            children: (0, X.jsxs)(`div`, {
+                                className: `flex items-center gap-1`,
+                                onClick: () => R(`created_at`),
+                                children: [(0, X.jsx)(`span`, {
+                                    children: d === E.WORKSPACE || d === E.UNASSIGNED ? (0, X.jsx)(H, {
+                                        ...Z.createdCellTitle
+                                    }) : (0, X.jsx)(H, {
+                                        ...Z.approvedCellTitle
+                                    })
+                                }), T === `created_at` && (0, X.jsx)(O, {
+                                    className: `icon-sm`
+                                })]
+                            })
+                        }), (0, X.jsx)(G.HeaderCell, {
+                            className: `text-token-text-secondary cursor-pointer px-2 py-2 text-start text-xs`,
+                            children: (0, X.jsxs)(`div`, {
+                                className: `flex items-center gap-1`,
+                                onClick: () => R(`updated_at`),
+                                children: [(0, X.jsx)(`span`, {
+                                    children: (0, X.jsx)(H, {
+                                        ...Z.updatedCellTitle
+                                    })
+                                }), T === `updated_at` && (0, X.jsx)(O, {
+                                    className: `icon-sm`
+                                })]
+                            })
+                        })]
+                    }), (0, X.jsx)(G.HeaderCell, {
+                        className: `border-token-border-heavy absolute end-0 w-16 border-s-[0.5px]`
+                    })]
+                }), (0, X.jsx)(G.Body, {
+                    children: z.map(e => (0, X.jsx)(fr, {
+                        account: n,
+                        gpt: e,
+                        migrated: f,
+                        onMigrate: s,
+                        thirdParty: d === E.THIRD_PARTY
+                    }, e.gizmo.id))
+                })]
+            }) : (0, X.jsxs)(`div`, {
+                className: `flex h-full w-full flex-col items-center gap-4 py-16`,
+                children: [(0, X.jsx)(`div`, {
+                    children: (0, X.jsx)(Bt, {
+                        className: `h-12 w-12 text-gray-400`
+                    })
+                }), (0, X.jsx)(`p`, {
+                    className: `text-token-text-secondary`,
+                    children: f ? (0, X.jsx)(H, {
+                        id: `workspaceSettings.pluginMigration.empty`,
+                        defaultMessage: `No migrated GPTs`
+                    }) : d === E.THIRD_PARTY ? (0, X.jsx)(H, {
+                        ...Z.noWorkspaceApprovedGPTs
+                    }) : d === E.UNASSIGNED ? (0, X.jsx)(H, {
+                        ...Z.noUnassignedGPTs
+                    }) : (0, X.jsx)(H, {
+                        ...Z.noWorkspaceGPTs
+                    })
+                }), d === E.THIRD_PARTY && (0, X.jsx)(r, {
+                    color: `secondary`,
+                    onClick: () => g(!0),
+                    icon: Jn,
+                    children: (0, X.jsx)(H, {
+                        ...Z.approveAGPTButton
+                    })
+                })]
+            }), P && (0, X.jsxs)(`div`, {
+                className: `text-token-text-tertiary my-4 flex w-full items-center justify-center gap-6`,
+                children: [(0, X.jsx)(r, {
+                    color: `secondary`,
+                    disabled: x === 1,
+                    onClick: () => S(vr),
+                    children: (0, X.jsx)(H, {
+                        id: `KFhxP7`,
+                        defaultMessage: `Prev`
+                    })
+                }), (0, X.jsx)(`span`, {
+                    className: `text-sm`,
+                    children: (0, X.jsx)(H, {
+                        id: `WEQoNb`,
+                        defaultMessage: `Page {page}`,
+                        values: {
+                            page: x
+                        }
+                    })
+                }), (0, X.jsx)(r, {
+                    color: `secondary`,
+                    loading: F,
+                    disabled: !we && (a ? !P.pages[x]?.items.length : x === P.pages.length),
+                    onClick: async () => {
+                        let e = x;
+                        if (e < P.pages.length) {
+                            (!a || P.pages[e].items.length) && S(yr);
+                            return
+                        }
+                        if (we && !F) {
+                            let t = await xe();
+                            (!a || !t.isError && t.data?.pages[e]?.items.length) && S(br)
+                        }
+                    },
+                    children: (0, X.jsx)(H, {
+                        id: `wDyvFZ`,
+                        defaultMessage: `Next`
+                    })
+                })]
+            })]
+        }), t[81] = O, t[82] = n, t[83] = x, t[84] = P, t[85] = z, t[86] = xe, t[87] = Oe, t[88] = R, t[89] = we, t[90] = Ee, t[91] = F, t[92] = f, t[93] = a, t[94] = De, t[95] = T, t[96] = d, t[97] = dt) : dt = t[97];
+        let ft;
+        t[98] !== n.id || t[99] !== a || t[100] !== o || t[101] !== j ? (ft = o && a && (0, X.jsx)(tt, {
+            gizmoId: o.gizmo.id,
+            gizmoName: o.gizmo.display.name,
+            gizmoTools: o.tools,
+            onClose: () => s(void 0),
+            onMigrated: () => {
+                S(1), j.invalidateQueries({
+                    queryKey: [`workspace`, n.id, `admin-gizmos`]
+                })
+            }
+        }), t[98] = n.id, t[99] = a, t[100] = o, t[101] = j, t[102] = ft) : ft = t[102];
+        let pt;
+        t[103] !== n.id || t[104] !== j ? (pt = () => {
+            g(!1), j.invalidateQueries({
+                queryKey: [`workspace`, n.id, E.THIRD_PARTY]
+            })
+        }, t[103] = n.id, t[104] = j, t[105] = pt) : pt = t[105];
+        let mt;
+        t[106] !== n || t[107] !== h || t[108] !== pt ? (mt = (0, X.jsx)(Nn, {
+            isOpen: h,
+            onClose: pt,
+            account: n
+        }), t[106] = n, t[107] = h, t[108] = pt, t[109] = mt) : mt = t[109];
+        let ht;
+        return t[110] !== ut || t[111] !== dt || t[112] !== ft || t[113] !== mt ? (ht = (0, X.jsxs)(`div`, {
+            children: [ut, dt, ft, mt]
+        }), t[110] = ut, t[111] = dt, t[112] = ft, t[113] = mt, t[114] = ht) : ht = t[114], ht
+    }, Z = Pe({
+        migrateToPlugin: {
+            id: `workspaceSettings.pluginMigration.migrate`,
+            defaultMessage: `Migrate to plugin`
+        },
+        noUnassignedGPTs: {
+            id: `workspaceSettings.noUnassignedGPTs`,
+            defaultMessage: `No unassigned GPTs`
+        },
+        noWorkspaceGPTs: {
+            id: `workspaceSettings.noWorkspaceGPTs`,
+            defaultMessage: `This workspace does not have any GPTs`
+        },
+        noWorkspaceApprovedGPTs: {
+            id: `workspaceSettings.noWorkspaceApprovedGPTs`,
+            defaultMessage: `You haven't approved any third-party GPTs`
+        },
+        workspaceTab: {
+            id: `workspaceSettings.workspaceTab`,
+            defaultMessage: `Workspace`
+        },
+        thirdPartyTab: {
+            id: `workspaceSettings.thirdPartyTab`,
+            defaultMessage: `Third-party`
+        },
+        capabilitiesTitle: {
+            id: `workspaceSettings.capabilitiesTitle`,
+            defaultMessage: `Capabilities`
+        },
+        whoHasAccessTitle: {
+            id: `workspaceSettings.whoHasAccessTitle`,
+            defaultMessage: `Who has access`
+        },
+        filterByNameOrDescriptionPlaceholder: {
+            id: `workspaceSettings.filterByNameOrDescriptionPlaceholder`,
+            defaultMessage: `Filter by name or description...`
+        },
+        nameCellTitle: {
+            id: `workspaceSettings.nameCellTitle`,
+            defaultMessage: `Name`
+        },
+        builderCellTitle: {
+            id: `workspaceSettings.builderCellTitle`,
+            defaultMessage: `Builder`
+        },
+        customActionsCellTitle: {
+            id: `workspaceSettings.customActionsCellTitle`,
+            defaultMessage: `Custom Actions`
+        },
+        chatsCellTitle: {
+            id: `workspaceSettings.chatsCellTitle`,
+            defaultMessage: `Chats`
+        },
+        createdCellTitle: {
+            id: `workspaceSettings.createdCellTitle`,
+            defaultMessage: `Created`
+        },
+        updatedCellTitle: {
+            id: `workspaceSettings.updatedCellTitle`,
+            defaultMessage: `Updated`
+        },
+        approvedCellTitle: {
+            id: `workspaceSettings.approvedCellTitle`,
+            defaultMessage: `Approved`
+        },
+        approveAGPTButton: {
+            id: `workspaceSettings.approveAGPTButton`,
+            defaultMessage: `Approve a GPT`
+        },
+        shareRecipientTitlePrivate: {
+            id: `vyjlzc`,
+            defaultMessage: `Invite only`
+        },
+        shareRecipientTitleLink: {
+            id: `workspaceSettings.shareRecipientTitleLink`,
+            defaultMessage: `Link`
+        },
+        shareRecipientTitlePublic: {
+            id: `workspaceSettings.shareRecipientTitlePublic`,
+            defaultMessage: `Public`
+        },
+        changeAccess: {
+            id: `workspaceSettings.changeAccess`,
+            defaultMessage: `Change who has access`
+        },
+        changeOwner: {
+            id: `workspaceSettings.changeOwner`,
+            defaultMessage: `Change Owner`
+        },
+        assignOwner: {
+            id: `workspaceSettings.assignOwner`,
+            defaultMessage: `Assign Owner`
+        },
+        deleteGPT: {
+            id: `workspaceSettings.deleteGPT`,
+            defaultMessage: `Delete GPT`
+        },
+        removeFromWorkspace: {
+            id: `workspaceSettings.removeFromWorkspace`,
+            defaultMessage: `Remove from workspace`
+        },
+        exportGizmoInternal: {
+            id: `workspaceSettings.exportGizmoInternal`,
+            defaultMessage: `Export (internal)`
+        },
+        exportGizmoFailure: {
+            id: `workspaceSettings.exportGizmoFailure`,
+            defaultMessage: `Couldn't export this GPT. Please try again.`
+        },
+        userCount: {
+            id: `P1xo2B`,
+            defaultMessage: `{numUsers, plural, one {# user} other {# users}}`
+        },
+        groupCount: {
+            id: `4zRUED`,
+            defaultMessage: `{numGroups, plural, one {# group} other {# groups}}`
+        },
+        unassigned: {
+            id: `workspaceSettings.unassignedGPTs`,
+            defaultMessage: `Unassigned`
+        }
+    })
+}));
+
+function Er({
+    title: e,
+    description: t,
+    children: n,
+    upsellEnterprise: r = !1,
+    className: i = ``
+}) {
+    return (0, Q.jsx)(ue, {
+        label: (0, Q.jsx)(H, {
+            ...$.enterpriseRequiredMessage
+        }),
+        side: `top`,
+        disabled: !r,
+        className: `max-w-5xl`,
+        triggerAs: null,
+        children: (0, Q.jsxs)(Jt, {
+            className: _(r && `text-token-text-tertiary`, `max-w-4xl`, i),
+            children: [(0, Q.jsxs)(Zt, {
+                className: `flex items-center gap-3`,
+                children: [(0, Q.jsx)(H, {
+                    ...e
+                }), r && (0, Q.jsx)(`span`, {
+                    className: `bg-token-main-surface-tertiary rounded-xl px-2 pb-0.5 text-sm`,
+                    children: (0, Q.jsx)(H, {
+                        ...$.enterpriseUpsellPill
+                    })
+                })]
+            }), t && (0, Q.jsx)(qt, {
+                className: `text-token-text-secondary py-2`,
+                children: (0, Q.jsx)(H, {
+                    ...t
+                })
+            }), n]
+        })
+    })
+}
+
+function Dr({
+    show: e,
+    message: t = wn,
+    className: n
+}) {
+    return e ? (0, Q.jsx)(`div`, {
+        className: _(`text-token-text-status-warning py-2 text-sm`, n),
+        children: (0, Q.jsx)(H, {
+            ...t
+        })
+    }) : null
+}
+
+function Or({
+    workspaceId: e,
+    label: t,
+    setting: n,
+    defaultValue: r,
+    values: i,
+    disabled: a = !1
+}) {
+    let o = Me(),
+        s = Fe(),
+        {
+            variables: c,
+            mutate: l
+        } = He({
+            mutationFn: ({
+                setting: t,
+                value: n
+            }) => y.safePost(`/accounts/{account_id}/settings/share_settings`, {
+                parameters: {
+                    path: {
+                        account_id: e
+                    }
+                },
+                requestBody: {
+                    setting: t,
+                    value: n
+                }
+            }),
+            onSettled: () => {
+                s.invalidateQueries({
+                    queryKey: [`workspace-settings`]
+                }), s.invalidateQueries({
+                    queryKey: [`workspace`]
+                })
+            },
+            onError: () => {
+                o.danger($.featureSettingsUpdateFailed, {
+                    toastId: `workspace_gpt_settings_page`
+                })
+            }
+        });
+    return (0, Q.jsxs)(Qt, {
+        children: [(0, Q.jsx)(`p`, {
+            className: `text-md inline-flex items-center`,
+            children: (0, Q.jsx)(H, {
+                ...t
+            })
+        }), (0, Q.jsxs)(K.Root, {
+            defaultValue: c?.value ?? r,
+            onValueChange: e => {
+                l({
+                    setting: n,
+                    value: e
+                })
+            },
+            disabled: a,
+            children: [(0, Q.jsxs)(K.Trigger, {
+                className: `text-md focus-visible:border-none`,
+                children: [(0, Q.jsx)(K.Value, {}), (0, Q.jsx)(K.Icon, {})]
+            }), (0, Q.jsx)(K.Portal, {
+                children: (0, Q.jsx)(K.Content, {
+                    children: i.map((e, t) => (0, Q.jsx)(K.Item, {
+                        className: `text-md`,
+                        value: e.value,
+                        children: (0, Q.jsx)(H, {
+                            ...e.display
+                        })
+                    }, t))
+                })
+            })]
+        })]
+    })
+}
+
+function kr({
+    workspaceId: e,
+    value: t,
+    upsellEnterprise: n = !1
+}) {
+    let r = Me(),
+        i = Fe(),
+        {
+            variables: a,
+            mutate: o
+        } = He({
+            mutationFn: ({
+                value: t
+            }) => y.safePost(`/accounts/{account_id}/settings/third_party_gpts`, {
+                parameters: {
+                    path: {
+                        account_id: e
+                    }
+                },
+                requestBody: {
+                    value: t
+                }
+            }),
+            onSettled: () => {
+                i.invalidateQueries({
+                    queryKey: [`workspace-settings`]
+                })
+            },
+            onError: () => {
+                r.danger($.featureSettingsUpdateFailed, {
+                    toastId: `third_party_gpt_setting_dropdown`
+                })
+            }
+        });
+    return (0, Q.jsxs)(K.Root, {
+        defaultValue: a?.value ?? t,
+        onValueChange: e => {
+            o({
+                value: e
+            })
+        },
+        children: [(0, Q.jsxs)(K.Trigger, {
+            className: `border-token-border-default focus-visible:border-token-border-default border text-base`,
+            children: [(0, Q.jsx)(K.Value, {}), (0, Q.jsx)(K.Icon, {})]
+        }), (0, Q.jsx)(K.Portal, {
+            children: (0, Q.jsxs)(K.Content, {
+                children: [(0, Q.jsx)(K.Item, {
+                    className: `text-base`,
+                    value: xe.ALLOW_ALL,
+                    children: (0, Q.jsx)(H, {
+                        ...$.allowAllOption
+                    })
+                }), !n && (0, Q.jsx)(K.Item, {
+                    className: `text-base`,
+                    value: xe.ALLOW_SPECIFIC,
+                    children: (0, Q.jsx)(H, {
+                        ...$.ownerApprovedOnlyOption
+                    })
+                }), (0, Q.jsx)(K.Item, {
+                    className: `text-base`,
+                    value: xe.ALLOW_NONE,
+                    children: (0, Q.jsx)(H, {
+                        ...$.dontAllowOption
+                    })
+                })]
+            })
+        })]
+    })
+}
+
+function Ar(e) {
+    "use forget";
+    let t = (0, Nr.c)(85),
+        {
+            workspaceId: n,
+            data: r
+        } = e,
+        i = Ce(jr),
+        a = Ie(),
+        o = Ge(),
+        s = Me(),
+        c = Te(),
+        l = oe(),
+        {
+            role: u
+        } = rn(),
+        d;
+    t[0] !== c || t[1] !== u ? (d = u == null ? c?.isOwnerOfAccount() ?? !1 : _t(u), t[0] = c, t[1] = u, t[2] = d) : d = t[2];
+    let f = d,
+        p = c?.isHipaaCompliantWorkspace ?? !1,
+        m = Fe(),
+        h;
+    t[3] === Symbol.for(`react.memo_cache_sentinel`) ? (h = ne(), t[3] = h) : h = t[3];
+    let g = h,
+        ee;
+    t[4] === Symbol.for(`react.memo_cache_sentinel`) ? (ee = fe(`2218609681`), t[4] = ee) : ee = t[4];
+    let te = ee,
+        _;
+    t[5] === Symbol.for(`react.memo_cache_sentinel`) ? (_ = [], t[5] = _) : _ = t[5];
+    let [v, re] = (0, Pr.useState)(_), b;
+    t[6] === n ? b = t[7] : (b = e => {
+        let {
+            value: t
+        } = e;
+        return y.safePost(`/accounts/{account_id}/settings/allowed_custom_actions_domains`, {
+            parameters: {
+                path: {
+                    account_id: n
+                }
+            },
+            requestBody: {
+                domains: t
+            }
+        })
+    }, t[6] = n, t[7] = b);
+    let x;
+    t[8] === m ? x = t[9] : (x = () => {
+        m.invalidateQueries({
+            queryKey: [`workspace-settings`]
+        })
+    }, t[8] = m, t[9] = x);
+    let S;
+    t[10] === s ? S = t[11] : (S = () => {
+        s.danger($.featureSettingsUpdateFailed, {
+            toastId: `workspace_settings`
+        })
+    }, t[10] = s, t[11] = S);
+    let C;
+    t[12] !== b || t[13] !== x || t[14] !== S ? (C = {
+        mutationFn: b,
+        onSettled: x,
+        onError: S
+    }, t[12] = b, t[13] = x, t[14] = S, t[15] = C) : C = t[15];
+    let w = He(C);
+    if (c == null) return null;
+    let T = l?.isSelfServeBusiness() ?? c.isSelfServeBusiness(),
+        E;
+    t[16] === p ? E = t[17] : (E = (0, Q.jsx)(Dr, {
+        show: p
+    }), t[16] = p, t[17] = E);
+    let D;
+    t[18] !== r.allow_third_party_gpts || t[19] !== T || t[20] !== n ? (D = (0, Q.jsx)(kr, {
+        workspaceId: n,
+        value: r.allow_third_party_gpts,
+        upsellEnterprise: T
+    }), t[18] = r.allow_third_party_gpts, t[19] = T, t[20] = n, t[21] = D) : D = t[21];
+    let O;
+    t[22] !== D || t[23] !== E ? (O = (0, Q.jsx)(Er, {
+        title: $.thirdPartyGPTsTitle,
+        description: $.thirdPartyGPTsDescription,
+        className: `border-token-border-default border-b pb-4`,
+        children: (0, Q.jsxs)(`div`, {
+            children: [E, D]
+        })
+    }), t[22] = D, t[23] = E, t[24] = O) : O = t[24];
+    let se = O,
+        ce = !T && r.allow_third_party_gpts === xe.ALLOW_SPECIFIC,
+        k;
+    t[25] !== c || t[26] !== ce ? (k = (0, Q.jsx)(Er, {
+        title: $.sidebarTitle,
+        children: (0, Q.jsx)(wr, {
+            account: c,
+            showThirdParty: ce
+        })
+    }), t[25] = c, t[26] = ce, t[27] = k) : k = t[27];
+    let le = k,
+        de = r.beta_settings.workspace_gpt_custom_actions ?? !0,
+        A = r.allowed_custom_actions_domains != null || !de,
+        j = r.beta_settings.workspace_gpt_apps ?? !p,
+        pe;
+    t[28] !== a || t[29] !== i ? (pe = i && (0, Q.jsx)(sn, {
+        onExplore: () => a(ln())
+    }), t[28] = a, t[29] = i, t[30] = pe) : pe = t[30];
+    let me = T && !g && se,
+        he = T && f && le,
+        M;
+    t[31] !== r.share_settings || t[32] !== g || t[33] !== T || t[34] !== n ? (M = !g && (0, Q.jsx)(Or, {
+        workspaceId: n,
+        label: $.gptSharingTitle,
+        disabled: T,
+        setting: ae.GPT_SHARE_SETTINGS,
+        defaultValue: r.share_settings.gpt_share_setting,
+        values: [{
+            display: $.anyOneSelect,
+            value: Oe.ANYONE
+        }, {
+            display: $.workspaceMembersOnlySelect,
+            value: Oe.WORKSPACE_ONLY
+        }, {
+            display: $.inviteOnlySelect,
+            value: Oe.NO_ONE
+        }]
+    }), t[31] = r.share_settings, t[32] = g, t[33] = T, t[34] = n, t[35] = M) : M = t[35];
+    let N;
+    t[36] !== te || t[37] !== j || t[38] !== p || t[39] !== T || t[40] !== n ? (N = te && (0, Q.jsx)(In, {
+        workspaceId: n,
+        feature: ke.WORKSPACE_GPT_APPS,
+        value: j,
+        label: $.gptAppsToggleTitle,
+        description: $.gptAppsToggleDescription,
+        tooltip: $.gptAppsToggleTooltip,
+        disabled: T,
+        messageAfterTooltip: T ? $.enterpriseUpsellPill : void 0,
+        after: (0, Q.jsx)(Dr, {
+            show: p,
+            message: $.gptAppsHipaaWarning,
+            className: `ms-14 py-1`
+        })
+    }), t[36] = te, t[37] = j, t[38] = p, t[39] = T, t[40] = n, t[41] = N) : N = t[41];
+    let ge;
+    t[42] === Symbol.for(`react.memo_cache_sentinel`) ? (ge = (0, Q.jsx)(`div`, {
+        className: `text-xl font-semibold`,
+        children: (0, Q.jsx)(H, {
+            id: `ugI3Yt`,
+            defaultMessage: `GPT actions`
+        })
+    }), t[42] = ge) : ge = t[42];
+    let _e;
+    t[43] === Symbol.for(`react.memo_cache_sentinel`) ? (_e = (0, Q.jsx)(`div`, {
+        className: `text-token-text-secondary py-2 text-sm`,
+        children: (0, Q.jsx)(H, {
+            id: `HY2eof`,
+            defaultMessage: `GPT actions allow GPTs to call third-party APIs for tasks such as retrieving or modifying data. GPT actions are defined by GPT builders, and you can limit the domains that can be used for GPTs created in your workspace.`
+        })
+    }), t[43] = _e) : _e = t[43];
+    let ve;
+    t[44] === p ? ve = t[45] : (ve = (0, Q.jsx)(Dr, {
+        show: p,
+        message: $.gptActionsHipaaWarning
+    }), t[44] = p, t[45] = ve);
+    let ye = !A,
+        be;
+    t[46] !== v || t[47] !== r.allowed_custom_actions_domains || t[48] !== w || t[49] !== re ? (be = e => {
+        e.currentTarget.checked ? (re(r.allowed_custom_actions_domains), w.mutate({
+            value: null
+        })) : w.mutate({
+            value: v ?? []
+        })
+    }, t[46] = v, t[47] = r.allowed_custom_actions_domains, t[48] = w, t[49] = re, t[50] = be) : be = t[50];
+    let P;
+    t[51] === Symbol.for(`react.memo_cache_sentinel`) ? (P = (0, Q.jsx)(H, {
+        id: `WnWoqJ`,
+        defaultMessage: `Allow all domains for GPT actions`
+    }), t[51] = P) : P = t[51];
+    let Se;
+    t[52] === Symbol.for(`react.memo_cache_sentinel`) ? (Se = (0, Q.jsx)(H, {
+        id: `KjJtEm`,
+        defaultMessage: `Limit the Internet domains that can be used by GPTs created in your workspace. This does not apply to third-party GPTs.`
+    }), t[52] = Se) : Se = t[52];
+    let we;
+    t[53] === Symbol.for(`react.memo_cache_sentinel`) ? (we = (0, Q.jsxs)(`span`, {
+        className: `flex flex-row items-center`,
+        children: [P, (0, Q.jsx)(ue, {
+            interactive: !0,
+            label: Se,
+            side: `top`,
+            children: (0, Q.jsx)(Pn, {})
+        })]
+    }), t[53] = we) : we = t[53];
+    let F;
+    t[54] !== ye || t[55] !== be ? (F = (0, Q.jsx)(kt, {
+        checked: ye,
+        id: `allow-all-domains`,
+        onChange: be,
+        label: we
+    }), t[54] = ye, t[55] = be, t[56] = F) : F = t[56];
+    let Ee;
+    t[57] === w.isPending ? Ee = t[58] : (Ee = w.isPending && (0, Q.jsx)(ie, {}), t[57] = w.isPending, t[58] = Ee);
+    let De;
+    t[59] !== F || t[60] !== Ee ? (De = (0, Q.jsxs)(`div`, {
+        className: `flex flex-row items-center gap-4`,
+        children: [F, Ee]
+    }), t[59] = F, t[60] = Ee, t[61] = De) : De = t[61];
+    let I;
+    t[62] !== r.allowed_custom_actions_domains || t[63] !== w || t[64] !== o || t[65] !== A ? (I = A && (0, Q.jsx)(Dn, {
+        value: r.allowed_custom_actions_domains ?? [],
+        title: o.formatMessage({
+            id: `YetDcq`,
+            defaultMessage: `Domains`
+        }),
+        onChange: e => {
+            w.mutate({
+                value: e
+            })
+        },
+        emptyMessage: o.formatMessage({
+            id: `rFH4IP`,
+            defaultMessage: `No domains added. No GPT actions will be allowed.`
+        })
+    }), t[62] = r.allowed_custom_actions_domains, t[63] = w, t[64] = o, t[65] = A, t[66] = I) : I = t[66];
+    let L;
+    t[67] !== ve || t[68] !== De || t[69] !== I ? (L = (0, Q.jsx)(Q.Fragment, {
+        children: (0, Q.jsxs)(`div`, {
+            className: `flex flex-col gap-4 py-6`,
+            children: [ge, _e, ve, De, I]
+        })
+    }), t[67] = ve, t[68] = De, t[69] = I, t[70] = L) : L = t[70];
+    let R;
+    t[71] !== M || t[72] !== N || t[73] !== L ? (R = (0, Q.jsxs)(Xt, {
+        children: [M, N, L]
+    }), t[71] = M, t[72] = N, t[73] = L, t[74] = R) : R = t[74];
+    let z;
+    t[75] !== R || t[76] !== T ? (z = (0, Q.jsx)(Er, {
+        title: $.sharingSettingsTitle,
+        upsellEnterprise: T,
+        children: R
+    }), t[75] = R, t[76] = T, t[77] = z) : z = t[77];
+    let Ae = !T && !g && se,
+        je = !T && f && le,
+        B;
+    return t[78] !== pe || t[79] !== me || t[80] !== he || t[81] !== z || t[82] !== Ae || t[83] !== je ? (B = (0, Q.jsxs)($t, {
+        className: `max-w-5xl`,
+        children: [pe, me, he, z, Ae, je]
+    }), t[78] = pe, t[79] = me, t[80] = he, t[81] = z, t[82] = Ae, t[83] = je, t[84] = B) : B = t[84], B
+}
+
+function jr() {
+    return fe(`2160578039`)
+}
+
+function Mr({
+    currentWorkspaceId: e
+}) {
+    let t = !!oe()?.isFreeWorkspace(),
+        {
+            data: n,
+            isLoading: r
+        } = _e(e),
+        i = Ge();
+    return (0, Q.jsxs)(Q.Fragment, {
+        children: [(0, Q.jsx)(mn, {
+            children: (0, Q.jsx)(`title`, {
+                children: i.formatMessage($.sidebarTitle)
+            })
+        }), (0, Q.jsx)(tn, {
+            title: i.formatMessage($.sidebarTitle)
+        }), (0, Q.jsx)(nn, {
+            showSpinner: !t && r,
+            children: t ? (0, Q.jsx)(kn, {}) : n === void 0 ? null : (0, Q.jsx)(Ar, {
+                workspaceId: e,
+                data: n
+            })
+        })]
+    })
+}
+var Nr, Pr, Q, $, Fr = e((() => {
+    Nr = We(), re(), C(), le(), Ne(), en(), yt(), dn(), cn(), fn(), i(), I(), v(), g(), u(), pn(), Ue(), L(), Pr = t(Re()), U(), Le(), an(), En(), Rn(), Tr(), Tn(), x(), On(), on(), At(), Q = V(), $ = Pe({
+        sidebarTitle: {
+            id: `workspaceSettingsOld.sidebarTitle`,
+            defaultMessage: `GPTs`
+        },
+        allowAllOption: {
+            id: `workspaceSettingsOld.allowAllOption`,
+            defaultMessage: `Allow all`
+        },
+        ownerApprovedOnlyOption: {
+            id: `workspaceSettingsOld.ownerApprovedOnlyOption`,
+            defaultMessage: `Owner-approved only`
+        },
+        dontAllowOption: {
+            id: `workspaceSettingsOld.dontAllowOption`,
+            defaultMessage: `Don't allow`
+        },
+        thirdPartyGPTsTitle: {
+            id: `workspaceSettingsOld.thirdPartyGPTsTitle`,
+            defaultMessage: `Third-party`
+        },
+        thirdPartyGPTsDescription: {
+            id: `workspaceSettingsOld.thirdPartyGPTsDescription`,
+            defaultMessage: `Manage whether members can use GPTs created outside your workspace.`
+        },
+        sharingSettingsTitle: {
+            id: `workspaceSettingsOld.sharingSettingsTitle`,
+            defaultMessage: `Sharing`
+        },
+        gptSharingTitle: {
+            id: `workspaceSettingsOld.gptSharingTitle`,
+            defaultMessage: `GPTs can be shared with...`
+        },
+        workspaceMembersOnlySelect: {
+            id: `workspaceSettingsOld.workspaceMembersOnlySelect`,
+            defaultMessage: `Workspace members only`
+        },
+        anyOneSelect: {
+            id: `workspaceSettingsOld.anyOneSelect`,
+            defaultMessage: `Anyone`
+        },
+        inviteOnlySelect: {
+            id: `workspaceSettingsOld.inviteOnlySelect`,
+            defaultMessage: `Invite only`
+        },
+        featureSettingsUpdateFailed: {
+            id: `workspaceSettingsOld.featureSettingsUpdateFailed`,
+            defaultMessage: `Failed to update feature setting`
+        },
+        enterpriseUpsellPill: {
+            id: `workspaceSettingsOld.enterpriseUpsellPill`,
+            defaultMessage: `Enterprise`
+        },
+        enterpriseRequiredMessage: {
+            id: `workspaceSettingsOld.enterpriseRequiredMessage`,
+            defaultMessage: `Only workspaces with the Enterprise plan can change these settings`
+        },
+        gptAppsToggleTitle: {
+            id: `workspaceSettingsOld.gptAppsToggleTitle`,
+            defaultMessage: `Apps`
+        },
+        gptAppsToggleDescription: {
+            id: `workspaceSettingsOld.gptAppsToggleDescription`,
+            defaultMessage: `Allow GPT builders to enable Apps in GPTs created in your workspace.`
+        },
+        gptAppsToggleTooltip: {
+            id: `workspaceSettingsOld.gptAppsToggleTooltip`,
+            defaultMessage: `When disabled, GPTs created in your workspace cannot use Apps. This does not apply to third-party GPTs.`
+        },
+        gptAppsHipaaWarning: {
+            id: `workspaceSettingsOld.gptAppsHipaaWarning`,
+            defaultMessage: `Apps can send data from GPTs to external services. Review your HIPAA obligations before enabling Apps.`
+        },
+        gptActionsHipaaWarning: {
+            id: `workspaceSettingsOld.gptActionsHipaaWarning`,
+            defaultMessage: `GPT actions can send data to the domains you allow. Only add domains approved for your HIPAA obligations.`
+        }
+    })
+}));
+
+function Ir() {
+    let e = Sn();
+    return xn(), (0, Lr.jsx)(Mr, {
+        ...e
+    })
+}
+var Lr, Rr = e((() => {
+        Fr(), Cn(), Lr = V()
+    })),
+    zr = e((() => {
+        Rr()
+    }));
+e((() => {
+    zr()
+}))();
+export {
+    Ir as
+    default
+};
 //# sourceMappingURL=admin.gpts-dtlchmxt.js.map

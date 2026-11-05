@@ -1,3 +1,1413 @@
-const __vite__mapDeps=(i,m=__vite__mapDeps,d=(m.f||(m.f=["assets/83df066d-kbuc5mp2s1s6pz2p.js","assets/f025431a-ehagpvg3m4e1cduv.js","assets/4813494d-mdvd4786a87166cc.js","assets/2340486e-i7pjxgdhv0bs6apg.js","assets/root-lelxp0l2.css","assets/conversation-small-bcbq46iub1p0ca1t.js","assets/30901919-s8bko9nrkqwv6i4f.js","assets/c470f5ab-jwd0o7jx9i9say9k.js","assets/0e5afe53-hxm3yzzjqriayom4.js","assets/conversation-small-ep6mlz5m.css","assets/a9a4fd4f-peajfznlbaiuh0vt.js","assets/8b34dbc2-lmwubajnld74ksfm.js","assets/82782bc9-b4xbouzwkkyrfqq2.js","assets/5ab42519-k568uuuaxbejj6ab.js","assets/0332a383-ns1dyuxco4m4ipbh.js","assets/31feedf8-bvx3z1muxkropppz.js","assets/4b3275f4-klibze6k73hyv8ch.js","assets/07b12a2d-f9ggv0r3kizfw35e.js"])))=>i.map(i=>d[i]);
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,A8 as r,Aq as i,Crt as a,DU as o,EU as s,Eit as c,Fx as l,I7 as u,IU as d,Jo as f,K5 as p,Knt as m,LU as h,Lit as g,Lw as ee,Lx as _,M7 as v,Px as y,Rw as b,S5 as x,Wet as S,Wnt as C,XF as w,Xh as T,Xo as te,YF as E,Yo as D,ZW as ne,_c as re,_rt as O,a2 as k,aB as A,c2 as j,cot as M,cs as N,d1 as ie,d2 as P,eE as F,eY as I,ei as L,f0 as R,fnt as z,g2 as ae,gtt as B,j5 as oe,lnt as V,mnt as H,not as U,o2 as se,oB as ce,os as le,p0 as ue,pF as de,pc as fe,q5 as pe,qJ as me,qW as he,qh as ge,qr as _e,sY as ve,sst as ye,u1 as be,unt as xe,vF as Se,vG as Ce,vit as we,wq as Te,x5 as Ee,yc as De,zU as Oe}from"./4813494d-mdvd4786a87166cc.js";import{Bn as ke,Ht as Ae,Ln as je,Nn as W,Nt as Me,Q as Ne,Rn as Pe,Vn as Fe,Vt as Ie,cn as Le,kt as Re,ln as ze,p as Be,s as Ve,wn as He,zn as Ue}from"./2340486e-i7pjxgdhv0bs6apg.js";import{$L as We,Hz as Ge,Jf as Ke,O8 as qe,QL as Je,Rr as Ye,Vz as Xe,ZL as Ze,ap as Qe,b2 as $e,bEt as et,dSn as tt,eHn as nt,eR as rt,fp as it,ip as at,k8 as ot,lLn as st,odn as ct,op as lt,pp as ut,qf as dt,sLn as ft,sdn as pt,tHn as mt,uSn as ht,y2 as gt,yEt as _t,zr as vt}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Br as yt,Vr as bt,bC as xt,xC as St}from"./30901919-s8bko9nrkqwv6i4f.js";import{B as Ct,V as wt}from"./c2675c8c-oz03twoan08d72ud.js";import{Bn as Tt,D_ as Et,Hn as Dt,Jl as Ot,O_ as kt,Vn as At,Yl as jt,c as Mt,l as Nt}from"./8b34dbc2-lmwubajnld74ksfm.js";import{d as Pt,f as Ft}from"./c470f5ab-jwd0o7jx9i9say9k.js";import{o as It,t as Lt}from"./cf64444f-dqd06iv4bk9jkqwt.js";import{r as Rt,t as zt}from"./0f28d127-laypgwdxjcvsjidb.js";import{n as Bt,t as Vt}from"./b0ac1aff-lbsfgs1b3i3edp2h.js";import{a as Ht,i as Ut,n as Wt,o as Gt,r as Kt,t as qt}from"./f8de74c4-g57beeef7ot18e1z.js";import{a as Jt,i as Yt,n as Xt,t as Zt}from"./f538e41f-du9609zoqzh5cl3m.js";import{n as G,t as Qt}from"./9dfa96b1-b7obg40moobf4kn8.js";import{n as $t,r as en,t as tn}from"./ee874e5c-cvdxewajjvmol024.js";import{n as nn,t as rn}from"./3f84cbf0-cgi7k706ziysk583.js";import{a as an,i as on,n as sn,r as cn}from"./05d28061-lit11g3m3ly3h2ce.js";import{r as ln,t as un}from"./de61f170-jxcxtk15k3bf96s9.js";var K,dn,fn=e((()=>{F(),T(),yt(),pe(),Pe(),K=ke(),dn=({title:e})=>{let t=Ue().formatMessage({id:`5tCuOj`,defaultMessage:`Try ChatGPT`});return(0,K.jsxs)(`div`,{className:`flex justify-between print:hidden`,children:[(0,K.jsxs)(`div`,{className:`flex flex-col justify-start`,children:[(0,K.jsx)(`p`,{className:`text-token-text-primary text-lg font-medium`,children:e}),(0,K.jsx)(`div`,{className:`text-token-text-tertiary text-sm`,children:(0,K.jsx)(W,{id:`FqymvQ`,defaultMessage:`Content may be unverified or unsafe. <reportLink>Report</reportLink>`,values:{reportLink:e=>(0,K.jsx)(`a`,{href:`https://openai.com/form/report-content/`,target:`_blank`,rel:`noopener noreferrer`,className:`underline`,children:e})}})})]}),(0,K.jsxs)(`div`,{className:`flex cursor-pointer flex-row items-center gap-x-4 rounded-md p-2`,children:[(0,K.jsx)(bt,{className:`icon text-token-text-secondary hover:bg-token-main-surface-secondary`,onClick:()=>print()}),(0,K.jsx)(n,{className:p(`btn btn-secondary bg-black text-white hover:opacity-70`),onClick:()=>{window.open(`https://chatgpt.com/?utm_src=deep-research-sharing`,`_blank`)},icon:ge,label:t,children:t})]})]})}}));function pn({postWithProfile:e,title:t,children:n,contentRef:r}){return(0,q.jsx)(ht.Provider,{value:{postId:e.post.id},children:(0,q.jsx)(Et,{children:(0,q.jsx)(`div`,{className:`bg-token-main-surface-secondary min-h-screen w-full pb-8`,children:(0,q.jsxs)(`div`,{className:`mx-auto max-w-3xl`,children:[(0,q.jsx)(`div`,{className:`px-2 py-6`,children:!!t&&(0,q.jsx)(dn,{title:t})}),(0,q.jsx)(`div`,{className:`border-token-border-xlight bg-token-main-surface-primary flex flex-col rounded-xl border-b pt-4 shadow-md print:border-none print:pt-2 print:shadow-none`,children:(0,q.jsxs)(`div`,{className:`p-14 pt-8`,ref:r,children:[(0,q.jsx)(`a`,{href:`https://chatgpt.com/?utm_src=deep-research-sharing`,target:`_blank`,rel:`noopener noreferrer`,children:(0,q.jsxs)(`div`,{className:`flex items-center gap-3 pb-4`,children:[(0,q.jsx)(ge,{className:`text-token-text-primary h-8 w-8`}),(0,q.jsx)(qe,{})]})}),(0,q.jsx)(_t,{hideInaccessibleFiles:!0,children:n})]})})]})})})})}var q,mn=e((()=>{fn(),tt(),kt(),ot(),T(),et(),q=ke()}));function hn(e){if(e.post.attachments[0].kind!==`codex`)throw Error(`Post attachment is not a codex`);let t=e.post.attachments[0];return{task:t.task,fetchedTurns:t.turns,current_user_turn:t.current_user_turn,current_assistant_turn:t.current_assistant_turn,current_diff_task_turn:t.current_diff_task_turn,exampleTaskInfo:t.example_task_info}}function gn({postWithProfile:e}){Bt();let t=pt(e=>e.addTurnToTaskMap),{task:n,fetchedTurns:r,current_user_turn:i,current_assistant_turn:a,current_diff_task_turn:o,exampleTaskInfo:s}=hn(e),c=Ue(),u=Me(),d=ae(ft),f=O(`2818336692`),[p,m]=(0,J.useState)([]),h=(0,J.useCallback)(()=>{m([])},[]),{focusedAssistantTurn:g,setFocusedAssistantTurnId:ee}=Ut({taskId:n.id,task:n,currentUserTurn:i??null,currentAssistantTurn:a??null}),_=(0,J.useMemo)(()=>Lt(g),[g]),v=(0,J.useMemo)(()=>({comments:p,setComments:m,clearComments:h,readonlyComments:_}),[p,m,h,_]),b=pt(({getTurnsForTask:e})=>n?e(n.id):[]),x=(0,J.useMemo)(()=>qt({focusedAssistantTurn:g,pastTurns:b,currentDiffTaskTurnId:o?.id??null}),[g,o?.id,b]),S=(0,J.useMemo)(()=>({setFocusedAssistantTurnId:ee,focusedAssistantTurn:g,currentDiffTaskTurn:x,taskId:n?.id,task:n,pastTurns:b,canFollowUp:!1}),[g,x,n,b,ee]);return(0,J.useEffect)(()=>{Object.values(r?.turn_mapping??{}).forEach(e=>{t(n?.id??``,e.turn)})},[r,t,n]),Rt([{key:`newTask`,action:()=>{u(`/codex/cloud`,{state:{focusComposer:!0}})},actionMessageDescriptor:c.formatMessage({id:`wham.keyboardActions.newTask`,defaultMessage:`New task`}),group:y.Chat,bindings:[{binding:[l.Mod,l.Shift,`o`]}]},{key:`closeTask`,action:()=>{u(`/codex/cloud`)},actionMessageDescriptor:c.formatMessage({id:`wham.keyboardActions.closeTask`,defaultMessage:`Close task`}),group:y.Chat,bindings:[{binding:[l.Escape]}],enabled:!d}]),!n||!b?null:(0,_n.jsx)(E.Provider,{value:{postWithProfile:e,setIsReportModalOpen:()=>{}},children:(0,_n.jsx)(Et,{children:(0,_n.jsx)(Zt,{value:v,children:(0,_n.jsx)(Yt,{value:S,children:(0,_n.jsx)(Ht,{permissions:`read`,turnId:a?.id??``,showForkButton:f,loadingTurnMapping:!1,isSharedExampleTask:!!s})})})})})}var J,_n,vn=e((()=>{kt(),st(),j(),w(),_(),a(),Kt(),zt(),Vt(),Xt(),Jt(),Gt(),Wt(),It(),ct(),J=t(Fe()),Pe(),Ne(),_n=ke()}));function yn(e){return e instanceof U&&e.status===409&&e.message===`You already own this pet`}function bn(e){"use forget";let t=(0,xn.c)(77),{accountId:r,isLoggedIn:i,pet:a,sharedPetId:o}=e,c=Ue(),l=Me(),u=oe(ne),[f,p]=(0,Sn.useState)(null),[m,h]=(0,Sn.useState)(0),g;t[0]!==r||t[1]!==o?(g=async()=>{if(r==null)throw Error(`An account is required to adopt a pet`);return await v.safePost(`/pets/share/{shared_pet_id}/adopt`,{additionalHeaders:{"ChatGPT-Account-ID":r},parameters:{path:{shared_pet_id:o}}})},t[0]=r,t[1]=o,t[2]=g):g=t[2];let _=g,y;t[3]!==r||t[4]!==u||t[5]!==c||t[6]!==l?(y=e=>{let{pet:t,pet_was_auto_selected:n}=e;if(p(t.name),r!=null&&(lt(r,t),ut(r),Ee().invalidateQueries(s())),!u){l(`/#settings/Personalization/Pet`);return}let i=new URLSearchParams({surface:`tpp`});n||i.set(`prompt`,c.formatMessage(X.makePrimaryPetPrompt,{petName:t.name})),l(`/?${i.toString()}`)},t[3]=r,t[4]=u,t[5]=c,t[6]=l,t[7]=y):y=t[7];let b;t[8]===c?b=t[9]:(b=e=>{yn(e)||d().danger(c.formatMessage(X.adoptError))},t[8]=c,t[9]=b);let x;t[10]!==_||t[11]!==y||t[12]!==b?(x={mutationFn:_,onSuccess:y,onError:b},t[10]=_,t[11]=y,t[12]=b,t[13]=x):x=t[13];let S=Be(x),C;t[14]!==S||t[15]!==a.is_owned_by_viewer?(C=a.is_owned_by_viewer||yn(S.error),t[14]=S,t[15]=a.is_owned_by_viewer,t[16]=C):C=t[16];let w=C,T;t[17]!==S||t[18]!==f||t[19]!==i?(T=()=>{if(!i){ue({callbackUrl:window.location.pathname,fallbackScreenHint:`login`,useFallbackScreenHint:!0});return}!S.isPending&&f==null&&S.mutate()},t[17]=S,t[18]=f,t[19]=i,t[20]=T):T=t[20];let te=T,E;t[21]===c?E=t[22]:(E=c.formatMessage(X.chatGPTHomeLabel),t[21]=c,t[22]=E);let D,re;t[23]===Symbol.for(`react.memo_cache_sentinel`)?(D=(0,Y.jsx)(Pt,{className:`size-7 dark:invert`}),re=(0,Y.jsx)(W,{...X.chatGPTBrandName}),t[23]=D,t[24]=re):(D=t[23],re=t[24]);let O;t[25]===E?O=t[26]:(O=(0,Y.jsx)(`header`,{className:`flex h-16 items-center px-5 sm:px-8`,children:(0,Y.jsxs)(`a`,{"aria-label":E,className:`flex items-center gap-2 text-lg font-semibold`,href:`/`,children:[D,re]})}),t[25]=E,t[26]=O);let k;t[27]===c?k=t[28]:(k=c.formatMessage(X.previousAnimationLabel),t[27]=c,t[28]=k);let A;t[29]===m?A=t[30]:(A=()=>h((m+Cn.length-1)%Cn.length),t[29]=m,t[30]=A);let j;t[31]!==k||t[32]!==A?(j=(0,Y.jsx)(n,{"aria-label":k,color:`secondary`,icon:ee,onClick:A,size:`small`,type:`button`}),t[31]=k,t[32]=A,t[33]=j):j=t[33];let M;t[34]!==c||t[35]!==a.name?(M=c.formatMessage(X.petArtworkLabel,{petName:a.name}),t[34]=c,t[35]=a.name,t[36]=M):M=t[36];let N;t[37]!==a.spritesheet_url||t[38]!==o?(N={petId:o,spritesheetUrl:a.spritesheet_url},t[37]=a.spritesheet_url,t[38]=o,t[39]=N):N=t[39];let ie=Cn[m],P;t[40]!==N||t[41]!==ie?(P=(0,Y.jsx)(Ke,{assetMap:at,className:`[--codex-pet-width:128px]`,respondToHover:!0,source:N,state:ie}),t[40]=N,t[41]=ie,t[42]=P):P=t[42];let F;t[43]!==M||t[44]!==P?(F=(0,Y.jsx)(`div`,{"aria-label":M,className:`bg-surface-primary flex size-44 items-center justify-center overflow-hidden rounded-[36px] border border-black/5 shadow-sm dark:border-white/10`,role:`img`,children:P}),t[43]=M,t[44]=P,t[45]=F):F=t[45];let I;t[46]===c?I=t[47]:(I=c.formatMessage(X.nextAnimationLabel),t[46]=c,t[47]=I);let L;t[48]===m?L=t[49]:(L=()=>h((m+1)%Cn.length),t[48]=m,t[49]=L);let R;t[50]!==I||t[51]!==L?(R=(0,Y.jsx)(n,{"aria-label":I,color:`secondary`,icon:xt,onClick:L,size:`small`,type:`button`}),t[50]=I,t[51]=L,t[52]=R):R=t[52];let z;t[53]!==j||t[54]!==F||t[55]!==R?(z=(0,Y.jsxs)(`div`,{className:`mb-7 flex items-center gap-3 sm:gap-5`,children:[j,F,R]}),t[53]=j,t[54]=F,t[55]=R,t[56]=z):z=t[56];let ae;t[57]===Symbol.for(`react.memo_cache_sentinel`)?(ae=(0,Y.jsx)(`p`,{className:`text-token-text-tertiary mb-2 text-sm font-medium`,children:(0,Y.jsx)(W,{...X.sharedPetEyebrow})}),t[57]=ae):ae=t[57];let B;t[58]===a.name?B=t[59]:(B=(0,Y.jsx)(`h1`,{className:`mb-3 text-3xl font-semibold tracking-tight`,children:a.name}),t[58]=a.name,t[59]=B);let V;t[60]===a.description?V=t[61]:(V=a.description!=null&&a.description.length>0&&(0,Y.jsx)(`p`,{className:`text-token-text-secondary mb-7 max-w-md text-base leading-6`,children:a.description}),t[60]=a.description,t[61]=V);let H;t[62]!==S||t[63]!==f||t[64]!==te||t[65]!==i||t[66]!==w?(H=w?(0,Y.jsxs)(`div`,{className:`bg-token-bg-secondary w-full rounded-2xl px-5 py-4`,children:[(0,Y.jsx)(`p`,{className:`font-medium`,children:(0,Y.jsx)(W,{...X.ownedPetTitle})}),(0,Y.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-sm`,children:(0,Y.jsx)(W,{...X.ownedPetExplanation})})]}):f==null?(0,Y.jsxs)(Y.Fragment,{children:[(0,Y.jsx)(n,{className:`min-w-36`,color:`primary`,loading:S.isPending,onClick:te,size:`large`,type:`button`,children:(0,Y.jsx)(W,{...i?X.adoptButton:X.loginButton})}),(0,Y.jsx)(`p`,{className:`text-token-text-tertiary mt-4 max-w-sm text-sm leading-5`,children:(0,Y.jsx)(W,{...i?X.adoptExplanation:X.loggedOutExplanation})})]}):(0,Y.jsxs)(`div`,{className:`bg-token-bg-secondary w-full rounded-2xl px-5 py-4`,children:[(0,Y.jsx)(`p`,{className:`font-medium`,children:(0,Y.jsx)(W,{...X.adoptSuccess,values:{petName:f}})}),(0,Y.jsx)(`p`,{className:`text-token-text-secondary mt-1 text-sm`,children:(0,Y.jsx)(W,{...X.adoptSuccessExplanation})})]}),t[62]=S,t[63]=f,t[64]=te,t[65]=i,t[66]=w,t[67]=H):H=t[67];let U;t[68]!==z||t[69]!==B||t[70]!==V||t[71]!==H?(U=(0,Y.jsx)(`section`,{className:`flex flex-1 items-center justify-center px-5 py-10 sm:px-8`,children:(0,Y.jsxs)(`div`,{className:`border-token-border-light bg-token-bg-elevated-secondary flex w-full max-w-xl flex-col items-center rounded-[32px] border px-7 py-10 text-center shadow-sm sm:px-12 sm:py-12`,children:[z,ae,B,V,H]})}),t[68]=z,t[69]=B,t[70]=V,t[71]=H,t[72]=U):U=t[72];let se;t[73]===Symbol.for(`react.memo_cache_sentinel`)?(se=(0,Y.jsx)(`footer`,{className:`text-token-text-tertiary px-5 py-6 text-center text-xs`,children:(0,Y.jsx)(W,{...X.privacyFooter})}),t[73]=se):se=t[73];let ce;return t[74]!==O||t[75]!==U?(ce=(0,Y.jsxs)(`main`,{className:`bg-token-bg-primary text-token-text-primary flex min-h-screen flex-col`,children:[O,U,se]}),t[74]=O,t[75]=U,t[76]=ce):ce=t[76],ce}var xn,Sn,Y,Cn,X,wn=e((()=>{xn=He(),F(),b(),St(),Ft(),o(),r(),R(),h(),it(),he(),Qe(),M(),x(),u(),dt(),Ve(),Sn=t(Fe()),Pe(),Ne(),Y=ke(),Cn=[`idle`,`waving`,`jumping`,`running-right`,`running-left`,`running`,`waiting`,`review`,`failed`],X=je({chatGPTBrandName:{id:`chatgpt.shared_pet.header.brand_name`,defaultMessage:`ChatGPT`},chatGPTHomeLabel:{id:`chatgpt.shared_pet.header.home.accessible_label`,defaultMessage:`ChatGPT home`},petArtworkLabel:{id:`chatgpt.shared_pet.artwork.accessible_label`,defaultMessage:`{petName}, a shared ChatGPT pet`},previousAnimationLabel:{id:`chatgpt.shared_pet.artwork.previous_animation.accessible_label`,defaultMessage:`Previous pet animation`},nextAnimationLabel:{id:`chatgpt.shared_pet.artwork.next_animation.accessible_label`,defaultMessage:`Next pet animation`},sharedPetEyebrow:{id:`chatgpt.shared_pet.eyebrow`,defaultMessage:`A pet shared from ChatGPT`},adoptButton:{id:`chatgpt.shared_pet.button.adopt`,defaultMessage:`Adopt this pet`},loginButton:{id:`chatgpt.shared_pet.button.login`,defaultMessage:`Log in to adopt`},adoptExplanation:{id:`chatgpt.shared_pet.adopt.explanation`,defaultMessage:`Adopting adds an editable copy to your pet library.`},loggedOutExplanation:{id:`chatgpt.shared_pet.logged_out.explanation`,defaultMessage:`Log in to add an editable copy to your pet library.`},adoptSuccess:{id:`chatgpt.shared_pet.adopt.success`,defaultMessage:`{petName} is now in your pet library`},adoptSuccessExplanation:{id:`chatgpt.shared_pet.adopt.success_explanation`,defaultMessage:`This is your own copy, so you can edit or share it.`},makePrimaryPetPrompt:{id:`chatgpt.shared_pet.adopt.make_primary.prompt`,defaultMessage:`Make this pet my primary pet: "{petName}"`},ownedPetTitle:{id:`chatgpt.shared_pet.owned.title`,defaultMessage:`You own this pet`},ownedPetExplanation:{id:`chatgpt.shared_pet.owned.explanation`,defaultMessage:`This pet is already in your pet library.`},adoptError:{id:`chatgpt.shared_pet.adopt.error`,defaultMessage:`Couldn't adopt this pet. Try again.`},privacyFooter:{id:`chatgpt.shared_pet.footer.privacy`,defaultMessage:`Shared pet pages don't display information about who created them.`}})}));function Tn(){let e=Ue(),t=Me(),n=Oe(),r=e.formatMessage({id:`C02fyX`,defaultMessage:`This shared message was deleted and is no longer available.`});return(0,Q.useEffect)(()=>{n.warning(r,{duration:5,id:`shared-post-deleted`}),t(`/`,{replace:!0})},[r,t,n]),null}function En({loaderData:e}){let[t]=Ie(),n=(0,Q.useRef)(null),r=rt(e.postWithProfile.post);(0,Q.useEffect)(()=>{if(C.logEventWithStatsig(`Share Post: Shared Post Page Viewed`,`chatgpt_share_post_page_viewed`,{post_id:e.postWithProfile.post.id,primary_attachment_type:e.postWithProfile.post.attachments?.[0]?.kind,referrer:e.referrer}),!r){let t=Ye(e.postWithProfile.post);N({action:f.CHATGPT_SHARE_FLOW_ACTION_SHARED_CONTENT_VIEWED,shareId:e.postWithProfile.post.id,contentType:te.CHATGPT_SHARE_FLOW_CONTENT_TYPE_POST_SLICE,...t})}},[r,e]);let i=ye(),a=(0,Q.useMemo)(()=>{let e=de();return me.initThread({clientThreadId:e.id,conversationMode:{kind:S.PrimaryAssistant},userId:i?.user?.id,accountId:i?.account?.id}),e},[i?.account?.id,i?.user?.id]),o=e.postWithProfile.post.attachments?.[0];if(o.kind===`deep_research`){let t=o.messages,r=ie(t),i=r?.metadata?.async_task_title;return r?(0,$.jsxs)(pn,{postWithProfile:e.postWithProfile,contentRef:n,title:i,children:[(0,$.jsx)(Ct,{messages:t,conversation:a}),(0,$.jsx)(A,{containerRef:n,conversationId:a.id})]}):null}return o.kind===`codex`?(0,$.jsx)(gn,{postWithProfile:e.postWithProfile}):o.kind===`code_block`&&Ge(t)?(0,$.jsx)(zn,{conversationId:a.id,postWithProfile:e.postWithProfile}):r?(0,$.jsx)(In,{reason:`general`}):(0,$.jsx)(Ln,{postWithProfile:e.postWithProfile,messagingRoomId:e.messagingRoomId},e.postWithProfile.post.id)}function Z(e,t,n){return{url:e,width:t,height:n,alt:Kn,secureUrl:tn(e)}}function Dn(e){return{url:`https://ogimg.chatgpt.com/?postId=${e}`,width:1200,height:630,alt:Kn,secureUrl:`https://ogimg.chatgpt.com/?postId=${e}`}}function On(e,t){let n=`https://ogimg.chatgpt.com/post/${e}/${t}.png`;return{url:n,width:1200,height:630,alt:Kn,secureUrl:n}}function kn(e){switch(e){case`igbl`:case`igcff`:case`igni`:return e;default:return null}}function An(e,t,n){if(!e.attachments||e.attachments.length===0)return Z(G.src);if(e.attachments[0].kind===`codex`)return null;let r=e.attachments[0],i=kn(n??e.og_image_variant),a=un(n??e.og_image_variant)==null?null:n??e.og_image_variant;if(r.kind===`media_generation`&&i===`igni`)return null;if(r.kind===`media_generation`&&i!=null)return On(e.id,i);if((r.kind===`message_slice`||r.kind===`prompt`)&&a!=null)return On(e.id,a);switch(r.kind){case`media_generation`:{let e=r.encodings?.md,n=r.encodings?.unfurl,i=r.encodings?.thumbnail,a=e?.width!=null&&e.height!=null,o=e?.path?Z(e.path,a?e.width:r.width,a?e.height:r.height):void 0,s=n?.path?Z(n.path,n.width,n.height):void 0,c=i?.path?Z(i.path,i.width,i.height):void 0,l=Z(r.url,r.width,r.height);return t?o??l:s??c??l}case`message_slice`:case`prompt`:return Dn(e.id);case`sora`:return r.encodings?.unfurl?.path?Z(r.encodings.unfurl.path):r.encodings?.thumbnail?.path?Z(r.encodings.thumbnail.path):Z(G.src);default:return Z(G.src)}}function jn(e){let t=e.text?.trim();if(t)return t;let n=e.attachments?.[0];if(n?.kind===`media_generation`&&n.title?.trim())return n.title.trim();if(n?.kind===`codex`){let e=n.task?.title?.trim();if(e)return e}return`Shared Content`}function Mn(e){return e.og_title?.trim()||null}function Nn(e){return e.og_description?.trim()||null}function Pn(e){return Mn(e)??jn(e)}function Fn(e,t){return Nn(e)??t}function In({reason:e}){return(0,Q.useEffect)(()=>{P(Un,{reason:e})},[]),(0,$.jsx)(Mt,{})}function Ln({postWithProfile:e,messagingRoomId:t}){let[n,r]=(0,Q.useState)(!1),i=oe(ne),a=Je(e.post),o=a!=null,s=a?.sourceConversationIsWorkMode===!0,[c]=(0,Q.useState)(()=>Ye(e.post)),[l]=(0,Q.useState)(()=>{let t=de(a==null?void 0:{sharedPromptPostPrefill:a});if(a!=null){let n=ye();me.initThread({clientThreadId:t.id,conversationMode:{kind:S.PrimaryAssistant},userId:n?.user?.id,accountId:n?.account?.id}),ve(t.id,t=>{t.continuingFromSharedPostId=e.post.id,t.continuingFromSharedPostShareFlowMetadata=c,t.forkFromSharedPost=!0})}return t});(0,Q.useEffect)(()=>{if(!o)return;if(s){if(!i)return;re({conversation:l,nextMode:Ce.TPP}),De(l.id,we.TPP);return}let e=re({conversation:l,nextMode:Ce.Chat});De(l.id,e?null:we.TPP)},[l,o,i,s]);let u=e.post.attachments,d=!!u?.length&&u.every(e=>e.kind===`message_slice`),f=on(u),p=cn(u),m=(0,Q.useMemo)(()=>z(l.id,()=>sn(u),!1),[l.id,u]),h=l.id;!f&&m&&z(l.id,()=>{mt(l,m.threadResponse,{skipIfExisting:!0,continuingFromSharedPostId:e.post.id,continuingFromSharedPostShareFlowMetadata:c,forkFromSharedPost:!0});for(let e of m.allConversationMessages)_e(l,e.message)});let g=p||!1;return(0,Q.useEffect)(()=>{!g||!m||z(l.id,()=>{mt(l,m.threadResponse,{skipIfExisting:!1,continuingFromSharedPostId:e.post.id,continuingFromSharedPostShareFlowMetadata:c,forkFromSharedPost:!0});for(let e of m.allConversationMessages)_e(l,e.message)})},[l,e.post.id,c,m,g]),(0,$.jsxs)(E.Provider,{value:{postWithProfile:e,messagingRoomId:t,setIsReportModalOpen:r,shouldUseMessageSliceShareContinuation:d,shouldUseSharedImageAutoLanding:p},children:[n&&(0,$.jsx)(Tt,{post:e.post,onClose:()=>r(!1)}),(0,$.jsx)(Mt,{clientThreadId:h})]})}function Rn(e){"use forget";let t=(0,Bn.c)(36),{promptSharePostWithProfile:n,referrer:r}=e,i;t[0]===n.post?i=t[1]:(i=rt(n.post)?null:Je(n.post),t[0]=n.post,t[1]=i);let a=i,[o,s]=(0,Q.useState)(!0),[c,l]=(0,Q.useState)(!1),u;t[2]!==n.post.id||t[3]!==a?(u=()=>{if(a==null)return null;let e=de({sharedPromptPostPrefill:a}),t=ye();return me.initThread({clientThreadId:e.id,conversationMode:{kind:S.PrimaryAssistant},userId:t?.user?.id,accountId:t?.account?.id}),ve(e.id,e=>{e.continuingFromSharedPostId=n.post.id,e.continuingFromSharedPostShareFlowMetadata={attachmentType:D.CHATGPT_SHARE_FLOW_ATTACHMENT_TYPE_IMAGE_SHARE}}),e},t[2]=n.post.id,t[3]=a,t[4]=u):u=t[4];let[d]=(0,Q.useState)(u),p,m;if(t[5]!==d||t[6]!==n.post.id||t[7]!==r?(p=()=>{d!=null&&(jt(d),C.logEventWithStatsig(`Share Post: Shared Post Page Viewed`,`chatgpt_share_post_page_viewed`,{post_id:n.post.id,primary_attachment_type:`prompt_share`,referrer:r}),N({action:f.CHATGPT_SHARE_FLOW_ACTION_SHARED_CONTENT_VIEWED,shareId:n.post.id,contentType:te.CHATGPT_SHARE_FLOW_CONTENT_TYPE_POST_SLICE,attachmentType:D.CHATGPT_SHARE_FLOW_ATTACHMENT_TYPE_IMAGE_SHARE}))},m=[d,n.post.id,r],t[5]=d,t[6]=n.post.id,t[7]=r,t[8]=p,t[9]=m):(p=t[8],m=t[9]),(0,Q.useEffect)(p,m),d==null){let e;return t[10]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,$.jsx)(In,{reason:`general`}),t[10]=e):e=t[10],e}let h=n.post.attachments[0];if(h?.kind!==`prompt_share`){let e;return t[11]===Symbol.for(`react.memo_cache_sentinel`)?(e=(0,$.jsx)(In,{reason:`general`}),t[11]=e):e=t[11],e}let g;t[12]!==h.prompt_share||t[13]!==n.post.preview_image_url?(g=Ze({promptShare:h.prompt_share,fallbackImageUrl:n.post.preview_image_url}),t[12]=h.prompt_share,t[13]=n.post.preview_image_url,t[14]=g):g=t[14];let ee=g,_;t[15]===n.post?_=t[16]:(_={postWithProfile:null,reportablePost:n.post,setIsReportModalOpen:l},t[15]=n.post,t[16]=_);let v;t[17]!==c||t[18]!==n.post?(v=c&&(0,$.jsx)(Tt,{post:n.post,onClose:()=>l(!1)}),t[17]=c,t[18]=n.post,t[19]=v):v=t[19];let y;t[20]===Symbol.for(`react.memo_cache_sentinel`)?(y={initialSystemHint:Te.PictureV2},t[20]=y):y=t[20];let b;t[21]!==h.prompt_share||t[22]!==ee||t[23]!==n.post.id||t[24]!==o?(b=o?(0,$.jsxs)($.Fragment,{children:[(0,$.jsx)(`div`,{className:`lg:hidden`,children:(0,$.jsx)(At,{})}),(0,$.jsx)(rn,{promptItem:ee,showAllPromptItems:!0,showPromptVariationDisclosure:!0,isPromptAltered:h.prompt_share.content.generated_image?.prompt_match===`differs_from_shared_prompt`,showPromptTextPreview:!0,onTryItSelected:()=>N({action:f.CHATGPT_SHARE_FLOW_ACTION_CONTINUE_SELECTED,shareId:n.post.id,contentType:te.CHATGPT_SHARE_FLOW_CONTENT_TYPE_POST_SLICE,attachmentType:D.CHATGPT_SHARE_FLOW_ATTACHMENT_TYPE_IMAGE_SHARE}),onTryIt:()=>s(!1)})]}):null,t[21]=h.prompt_share,t[22]=ee,t[23]=n.post.id,t[24]=o,t[25]=b):b=t[25];let x;t[26]!==d.id||t[27]!==b?(x=(0,$.jsx)(Mt,{clientThreadId:d.id,children:b}),t[26]=d.id,t[27]=b,t[28]=x):x=t[28];let w;t[29]!==d||t[30]!==x?(w=(0,$.jsx)(Et,{conversation:d,options:y,children:x}),t[29]=d,t[30]=x,t[31]=w):w=t[31];let T;return t[32]!==w||t[33]!==_||t[34]!==v?(T=(0,$.jsxs)(E.Provider,{value:_,children:[v,w]}),t[32]=w,t[33]=_,t[34]=v,t[35]=T):T=t[35],T}function zn(e){"use forget";let t=(0,Bn.c)(9),{conversationId:n,postWithProfile:r}=e,i=r.post.attachments[0];if(!i||i.kind!==`code_block`)return null;let a=i.language??void 0,o;t[0]!==i.content||t[1]!==a?(o={content:i.content,language:a},t[0]=i.content,t[1]=a,t[2]=o):o=t[2];let s;t[3]===n?s=t[4]:(s=(0,$.jsx)(Mt,{clientThreadId:n}),t[3]=n,t[4]=s);let c;return t[5]!==r.post.id||t[6]!==o||t[7]!==s?(c=(0,$.jsx)(gt,{initialSharedCodeBlockRemix:o,children:s},r.post.id),t[5]=r.post.id,t[6]=o,t[7]=s,t[8]=c):c=t[8],c}var Bn,Q,$,Vn,Hn,Un,Wn,Gn,Kn,qn,Jn=e((()=>{Ne(),Bn=He(),B(),Qt(),wt(),mn(),Nt(),ce(),xe(),Xe(),$e(),kt(),c(),Se(),L(),nt(),j(),Ot(),Dt(),le(),w(),an(),vt(),ln(),en(),We(),r(),I(),i(),h(),nn(),fe(),he(),g(),m(),vn(),se(),be(),Q=t(Fe()),Pe(),wn(),$=ke(),ze(),Vn=k(()=>Le(()=>import(`./83df066d-kbuc5mp2s1s6pz2p.js`).then(e=>e.BirthdayCardSharePage),__vite__mapDeps([0,1,2,3,4,5,6,7,8,9]))),Hn=k(()=>Le(()=>import(`./a9a4fd4f-peajfznlbaiuh0vt.js`).then(e=>(e.r(),e.n)).then(e=>e.SharedAutomationPage),__vite__mapDeps([10,1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,17]))),Un=k(()=>Le(()=>import(`./8b34dbc2-lmwubajnld74ksfm.js`).then(e=>(e.ca(),e.la)).then(e=>e.PostSharingErrorModal),__vite__mapDeps([11,1,2,3,4,5,6,7,8,9,12]))),Wn={hasRouteMeta:!0},Gn=Ae(function(){let e=Re(),t=window.location.pathname,n=e.kind===`post_with_profile`?e.postWithProfile.post.attachments?.[0]:void 0,r=n?.kind??e.kind,i=e.kind===`forbidden`||e.kind===`deleted`,a=e.kind===`post_with_profile`&&(n?.kind===`message_slice`||n?.kind===`deep_research`||cn(e.postWithProfile.post.attachments));return H(t,e.shareReceivePerformance,r),(0,Q.useEffect)(()=>{i?V(t,`load_error`):a||V(t,`unsupported`)},[i,a,t]),e.kind===`forbidden`?(0,$.jsx)(In,{reason:`workspace`}):e.kind===`deleted`?(0,$.jsx)(Tn,{}):e.kind===`shared_pet`?(0,$.jsx)(bn,{...e.sharedPet}):e.kind===`shared_automation`?(0,$.jsx)(Hn,{isLoggedIn:e.isLoggedIn,sharedAutomation:e.sharedAutomation}):e.kind===`prompt_share_post_with_profile`?(0,$.jsx)(Rn,{promptSharePostWithProfile:e.promptSharePostWithProfile,referrer:e.referrer},e.promptSharePostWithProfile.post.id):e.postWithProfile.post.og_image_variant===`birthday_card`?(0,$.jsx)(Vn,{post:e.postWithProfile.post,firstName:e.postWithProfile.profile.display_name?.trim().split(/\s+/u)[0]}):(0,$.jsx)(En,{loaderData:e})}),Kn=`Preview of shared ChatGPT content`,qn=({data:e})=>{let t=e,n={name:`robots`,content:`noindex,nofollow`};if(t?.kind===`shared_pet`){let{pet:e,sharedPetId:r}=t.sharedPet,i=e.name,a=`${i} - ChatGPT`,o=`Meet ${i}, a pet shared from ChatGPT.`,s=`/pets/share/${r}`,c=new URLSearchParams({name:e.name,description:e.description,imageUrl:e.spritesheet_url});return[{title:a},{name:`description`,content:o},n,{property:`og:site_name`,content:`ChatGPT`},{property:`og:title`,content:a},{property:`og:description`,content:o},{property:`og:type`,content:`website`},{id:`shared-pet-install`,"script:ld+json":{"@context":`https://schema.org`,"@type":`SoftwareApplication`,name:e.name,description:e.description,applicationCategory:`Codex Desktop pet`,identifier:r,downloadUrl:e.spritesheet_url,potentialAction:{"@type":`InstallAction`,description:`Install this shared pet in Codex Desktop. The name, description, and spritesheet are available at the resource URLs. Open the target deep link to preview and confirm installation.`,target:`codex://pets/install?${c.toString()}`},additionalProperty:[{"@type":`PropertyValue`,name:`nameUrl`,value:`${s}/name`},{"@type":`PropertyValue`,name:`descriptionUrl`,value:`${s}/desc`},{"@type":`PropertyValue`,name:`spritesheetUrl`,value:`${s}/sprite`}]}}]}if(t?.kind===`shared_automation`){let e=t.sharedAutomation.automation.title,r=t.sharedAutomation.post.permalink;return[{title:`${e} - ChatGPT`},n,{property:`og:site_name`,content:`ChatGPT`},{property:`og:title`,content:e},{property:`og:description`,content:t.defaultOgDescription},{property:`og:type`,content:`website`},...r?[{property:`og:url`,content:r}]:[]]}if(!t||t.kind===`forbidden`||t.kind===`deleted`){let e=`Privately Shared Content`;return[{title:`ChatGPT - ${e}`},n,{property:`og:site_name`,content:`ChatGPT`},{property:`og:title`,content:e},{property:`og:type`,content:`website`},{property:`og:image`,content:G.src},{name:`twitter:card`,content:`summary_large_image`},{name:`twitter:image`,content:G.src},{name:`twitter:site`,content:`@ChatGPTapp`},{name:`twitter:title`,content:e}]}if(t.kind===`prompt_share_post_with_profile`){let{post:e}=t.promptSharePostWithProfile,r=e.attachments[0],i=r?.kind===`prompt_share`?r.prompt_share:void 0,a=i?.content.title.trim()||e.text?.trim()||`Shared Content`,o=e.og_title?.trim()||a,s=e.og_description?.trim()||t.defaultOgDescription,c=rt(e)?G.src:i?.content.generated_image?.image_url?Dn(e.id).url:On(e.id,`response_multicolor_v1`).url,l=Z(c);return[{title:`ChatGPT - ${a}`},n,{property:`og:site_name`,content:`ChatGPT`},{property:`og:type`,content:`article`},...e.permalink?[{property:`og:url`,content:e.permalink}]:[],{property:`og:title`,content:o},{property:`og:description`,content:s},...$t(l),{property:`article:published_time`,content:new Date(e.posted_at*1e3).toISOString()},{name:`twitter:site`,content:`@ChatGPTapp`},{name:`twitter:title`,content:o},{name:`twitter:description`,content:s},{name:`twitter:card`,content:`summary_large_image`},{name:`twitter:image`,content:c},{name:`twitter:image:alt`,content:l.alt}]}let{post:r}=t.postWithProfile,i=r.og_image_variant===`birthday_card`&&r.attachments?.[0]?.kind===`media_generation`?r.attachments[0]:null,a;if(i?.prompt)try{let{message:e}=JSON.parse(i.prompt);typeof e==`string`&&(a=e.trim())}catch{a=void 0}let o=t.enforceRenderedOgImg||t.ogImageVariantOverride===`rendered`?`rendered`:t.ogImageVariantOverride,s=rt(r)?Z(G.src):i==null?o===`rendered`?Dn(r.id):An(r,t.preferIntrinsicAspectRatioForOgImage,o):Z(i.url,i.width,i.height),c=s!=null&&i==null&&!rt(r)&&t.imagegenOgImagePolicy===`intrinsic_og`&&r.attachments?.[0]?.kind===`media_generation`?Dn(r.id):s,l=jn(r),u=i?.title?.trim()||Pn(r),d=a||Fn(r,t.defaultOgDescription),f=r.permalink,p=new Date(r.posted_at*1e3).toISOString(),m=r.attachments?.[0]?.kind===`codex`?`Codex`:`ChatGPT`;return[{title:`${m} - ${l}`},n,{property:`og:site_name`,content:m},{property:`og:type`,content:`article`},{property:`og:url`,content:f},{property:`og:title`,content:u},{property:`og:description`,content:d},{property:`og:locale`,content:`en_US`},...s==null?[]:[...$t(s)],{property:`article:published_time`,content:p},{name:`twitter:site`,content:`@ChatGPTapp`},{name:`twitter:title`,content:u},{name:`twitter:description`,content:d},...c==null?[]:[{name:`twitter:card`,content:`summary_large_image`},{name:`twitter:image`,content:c.url},{name:`twitter:image:alt`,content:c.alt}]]}}));e((()=>{Jn()}))();export{Gn as default,Wn as handle,qn as meta};
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/83df066d-kbuc5mp2s1s6pz2p.js", "assets/f025431a-ehagpvg3m4e1cduv.js", "assets/4813494d-mdvd4786a87166cc.js", "assets/2340486e-i7pjxgdhv0bs6apg.js", "assets/root-lelxp0l2.css", "assets/conversation-small-bcbq46iub1p0ca1t.js", "assets/30901919-s8bko9nrkqwv6i4f.js", "assets/c470f5ab-jwd0o7jx9i9say9k.js", "assets/0e5afe53-hxm3yzzjqriayom4.js", "assets/conversation-small-ep6mlz5m.css", "assets/a9a4fd4f-peajfznlbaiuh0vt.js", "assets/8b34dbc2-lmwubajnld74ksfm.js", "assets/82782bc9-b4xbouzwkkyrfqq2.js", "assets/5ab42519-k568uuuaxbejj6ab.js", "assets/0332a383-ns1dyuxco4m4ipbh.js", "assets/31feedf8-bvx3z1muxkropppz.js", "assets/4b3275f4-klibze6k73hyv8ch.js", "assets/07b12a2d-f9ggv0r3kizfw35e.js"]))) => i.map(i => d[i]);
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    A8 as r,
+    Aq as i,
+    Crt as a,
+    DU as o,
+    EU as s,
+    Eit as c,
+    Fx as l,
+    I7 as u,
+    IU as d,
+    Jo as f,
+    K5 as p,
+    Knt as m,
+    LU as h,
+    Lit as g,
+    Lw as ee,
+    Lx as _,
+    M7 as v,
+    Px as y,
+    Rw as b,
+    S5 as x,
+    Wet as S,
+    Wnt as C,
+    XF as w,
+    Xh as T,
+    Xo as te,
+    YF as E,
+    Yo as D,
+    ZW as ne,
+    _c as re,
+    _rt as O,
+    a2 as k,
+    aB as A,
+    c2 as j,
+    cot as M,
+    cs as N,
+    d1 as ie,
+    d2 as P,
+    eE as F,
+    eY as I,
+    ei as L,
+    f0 as R,
+    fnt as z,
+    g2 as ae,
+    gtt as B,
+    j5 as oe,
+    lnt as V,
+    mnt as H,
+    not as U,
+    o2 as se,
+    oB as ce,
+    os as le,
+    p0 as ue,
+    pF as de,
+    pc as fe,
+    q5 as pe,
+    qJ as me,
+    qW as he,
+    qh as ge,
+    qr as _e,
+    sY as ve,
+    sst as ye,
+    u1 as be,
+    unt as xe,
+    vF as Se,
+    vG as Ce,
+    vit as we,
+    wq as Te,
+    x5 as Ee,
+    yc as De,
+    zU as Oe
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as ke,
+    Ht as Ae,
+    Ln as je,
+    Nn as W,
+    Nt as Me,
+    Q as Ne,
+    Rn as Pe,
+    Vn as Fe,
+    Vt as Ie,
+    cn as Le,
+    kt as Re,
+    ln as ze,
+    p as Be,
+    s as Ve,
+    wn as He,
+    zn as Ue
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    $L as We,
+    Hz as Ge,
+    Jf as Ke,
+    O8 as qe,
+    QL as Je,
+    Rr as Ye,
+    Vz as Xe,
+    ZL as Ze,
+    ap as Qe,
+    b2 as $e,
+    bEt as et,
+    dSn as tt,
+    eHn as nt,
+    eR as rt,
+    fp as it,
+    ip as at,
+    k8 as ot,
+    lLn as st,
+    odn as ct,
+    op as lt,
+    pp as ut,
+    qf as dt,
+    sLn as ft,
+    sdn as pt,
+    tHn as mt,
+    uSn as ht,
+    y2 as gt,
+    yEt as _t,
+    zr as vt
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Br as yt,
+    Vr as bt,
+    bC as xt,
+    xC as St
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    B as Ct,
+    V as wt
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    Bn as Tt,
+    D_ as Et,
+    Hn as Dt,
+    Jl as Ot,
+    O_ as kt,
+    Vn as At,
+    Yl as jt,
+    c as Mt,
+    l as Nt
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    d as Pt,
+    f as Ft
+} from "./c470f5ab-jwd0o7jx9i9say9k.js";
+import {
+    o as It,
+    t as Lt
+} from "./cf64444f-dqd06iv4bk9jkqwt.js";
+import {
+    r as Rt,
+    t as zt
+} from "./0f28d127-laypgwdxjcvsjidb.js";
+import {
+    n as Bt,
+    t as Vt
+} from "./b0ac1aff-lbsfgs1b3i3edp2h.js";
+import {
+    a as Ht,
+    i as Ut,
+    n as Wt,
+    o as Gt,
+    r as Kt,
+    t as qt
+} from "./f8de74c4-g57beeef7ot18e1z.js";
+import {
+    a as Jt,
+    i as Yt,
+    n as Xt,
+    t as Zt
+} from "./f538e41f-du9609zoqzh5cl3m.js";
+import {
+    n as G,
+    t as Qt
+} from "./9dfa96b1-b7obg40moobf4kn8.js";
+import {
+    n as $t,
+    r as en,
+    t as tn
+} from "./ee874e5c-cvdxewajjvmol024.js";
+import {
+    n as nn,
+    t as rn
+} from "./3f84cbf0-cgi7k706ziysk583.js";
+import {
+    a as an,
+    i as on,
+    n as sn,
+    r as cn
+} from "./05d28061-lit11g3m3ly3h2ce.js";
+import {
+    r as ln,
+    t as un
+} from "./de61f170-jxcxtk15k3bf96s9.js";
+var K, dn, fn = e((() => {
+    F(), T(), yt(), pe(), Pe(), K = ke(), dn = ({
+        title: e
+    }) => {
+        let t = Ue().formatMessage({
+            id: `5tCuOj`,
+            defaultMessage: `Try ChatGPT`
+        });
+        return (0, K.jsxs)(`div`, {
+            className: `flex justify-between print:hidden`,
+            children: [(0, K.jsxs)(`div`, {
+                className: `flex flex-col justify-start`,
+                children: [(0, K.jsx)(`p`, {
+                    className: `text-token-text-primary text-lg font-medium`,
+                    children: e
+                }), (0, K.jsx)(`div`, {
+                    className: `text-token-text-tertiary text-sm`,
+                    children: (0, K.jsx)(W, {
+                        id: `FqymvQ`,
+                        defaultMessage: `Content may be unverified or unsafe. <reportLink>Report</reportLink>`,
+                        values: {
+                            reportLink: e => (0, K.jsx)(`a`, {
+                                href: `https://openai.com/form/report-content/`,
+                                target: `_blank`,
+                                rel: `noopener noreferrer`,
+                                className: `underline`,
+                                children: e
+                            })
+                        }
+                    })
+                })]
+            }), (0, K.jsxs)(`div`, {
+                className: `flex cursor-pointer flex-row items-center gap-x-4 rounded-md p-2`,
+                children: [(0, K.jsx)(bt, {
+                    className: `icon text-token-text-secondary hover:bg-token-main-surface-secondary`,
+                    onClick: () => print()
+                }), (0, K.jsx)(n, {
+                    className: p(`btn btn-secondary bg-black text-white hover:opacity-70`),
+                    onClick: () => {
+                        window.open(`https://chatgpt.com/?utm_src=deep-research-sharing`, `_blank`)
+                    },
+                    icon: ge,
+                    label: t,
+                    children: t
+                })]
+            })]
+        })
+    }
+}));
+
+function pn({
+    postWithProfile: e,
+    title: t,
+    children: n,
+    contentRef: r
+}) {
+    return (0, q.jsx)(ht.Provider, {
+        value: {
+            postId: e.post.id
+        },
+        children: (0, q.jsx)(Et, {
+            children: (0, q.jsx)(`div`, {
+                className: `bg-token-main-surface-secondary min-h-screen w-full pb-8`,
+                children: (0, q.jsxs)(`div`, {
+                    className: `mx-auto max-w-3xl`,
+                    children: [(0, q.jsx)(`div`, {
+                        className: `px-2 py-6`,
+                        children: !!t && (0, q.jsx)(dn, {
+                            title: t
+                        })
+                    }), (0, q.jsx)(`div`, {
+                        className: `border-token-border-xlight bg-token-main-surface-primary flex flex-col rounded-xl border-b pt-4 shadow-md print:border-none print:pt-2 print:shadow-none`,
+                        children: (0, q.jsxs)(`div`, {
+                            className: `p-14 pt-8`,
+                            ref: r,
+                            children: [(0, q.jsx)(`a`, {
+                                href: `https://chatgpt.com/?utm_src=deep-research-sharing`,
+                                target: `_blank`,
+                                rel: `noopener noreferrer`,
+                                children: (0, q.jsxs)(`div`, {
+                                    className: `flex items-center gap-3 pb-4`,
+                                    children: [(0, q.jsx)(ge, {
+                                        className: `text-token-text-primary h-8 w-8`
+                                    }), (0, q.jsx)(qe, {})]
+                                })
+                            }), (0, q.jsx)(_t, {
+                                hideInaccessibleFiles: !0,
+                                children: n
+                            })]
+                        })
+                    })]
+                })
+            })
+        })
+    })
+}
+var q, mn = e((() => {
+    fn(), tt(), kt(), ot(), T(), et(), q = ke()
+}));
+
+function hn(e) {
+    if (e.post.attachments[0].kind !== `codex`) throw Error(`Post attachment is not a codex`);
+    let t = e.post.attachments[0];
+    return {
+        task: t.task,
+        fetchedTurns: t.turns,
+        current_user_turn: t.current_user_turn,
+        current_assistant_turn: t.current_assistant_turn,
+        current_diff_task_turn: t.current_diff_task_turn,
+        exampleTaskInfo: t.example_task_info
+    }
+}
+
+function gn({
+    postWithProfile: e
+}) {
+    Bt();
+    let t = pt(e => e.addTurnToTaskMap),
+        {
+            task: n,
+            fetchedTurns: r,
+            current_user_turn: i,
+            current_assistant_turn: a,
+            current_diff_task_turn: o,
+            exampleTaskInfo: s
+        } = hn(e),
+        c = Ue(),
+        u = Me(),
+        d = ae(ft),
+        f = O(`2818336692`),
+        [p, m] = (0, J.useState)([]),
+        h = (0, J.useCallback)(() => {
+            m([])
+        }, []),
+        {
+            focusedAssistantTurn: g,
+            setFocusedAssistantTurnId: ee
+        } = Ut({
+            taskId: n.id,
+            task: n,
+            currentUserTurn: i ?? null,
+            currentAssistantTurn: a ?? null
+        }),
+        _ = (0, J.useMemo)(() => Lt(g), [g]),
+        v = (0, J.useMemo)(() => ({
+            comments: p,
+            setComments: m,
+            clearComments: h,
+            readonlyComments: _
+        }), [p, m, h, _]),
+        b = pt(({
+            getTurnsForTask: e
+        }) => n ? e(n.id) : []),
+        x = (0, J.useMemo)(() => qt({
+            focusedAssistantTurn: g,
+            pastTurns: b,
+            currentDiffTaskTurnId: o?.id ?? null
+        }), [g, o?.id, b]),
+        S = (0, J.useMemo)(() => ({
+            setFocusedAssistantTurnId: ee,
+            focusedAssistantTurn: g,
+            currentDiffTaskTurn: x,
+            taskId: n?.id,
+            task: n,
+            pastTurns: b,
+            canFollowUp: !1
+        }), [g, x, n, b, ee]);
+    return (0, J.useEffect)(() => {
+        Object.values(r?.turn_mapping ?? {}).forEach(e => {
+            t(n?.id ?? ``, e.turn)
+        })
+    }, [r, t, n]), Rt([{
+        key: `newTask`,
+        action: () => {
+            u(`/codex/cloud`, {
+                state: {
+                    focusComposer: !0
+                }
+            })
+        },
+        actionMessageDescriptor: c.formatMessage({
+            id: `wham.keyboardActions.newTask`,
+            defaultMessage: `New task`
+        }),
+        group: y.Chat,
+        bindings: [{
+            binding: [l.Mod, l.Shift, `o`]
+        }]
+    }, {
+        key: `closeTask`,
+        action: () => {
+            u(`/codex/cloud`)
+        },
+        actionMessageDescriptor: c.formatMessage({
+            id: `wham.keyboardActions.closeTask`,
+            defaultMessage: `Close task`
+        }),
+        group: y.Chat,
+        bindings: [{
+            binding: [l.Escape]
+        }],
+        enabled: !d
+    }]), !n || !b ? null : (0, _n.jsx)(E.Provider, {
+        value: {
+            postWithProfile: e,
+            setIsReportModalOpen: () => {}
+        },
+        children: (0, _n.jsx)(Et, {
+            children: (0, _n.jsx)(Zt, {
+                value: v,
+                children: (0, _n.jsx)(Yt, {
+                    value: S,
+                    children: (0, _n.jsx)(Ht, {
+                        permissions: `read`,
+                        turnId: a?.id ?? ``,
+                        showForkButton: f,
+                        loadingTurnMapping: !1,
+                        isSharedExampleTask: !!s
+                    })
+                })
+            })
+        })
+    })
+}
+var J, _n, vn = e((() => {
+    kt(), st(), j(), w(), _(), a(), Kt(), zt(), Vt(), Xt(), Jt(), Gt(), Wt(), It(), ct(), J = t(Fe()), Pe(), Ne(), _n = ke()
+}));
+
+function yn(e) {
+    return e instanceof U && e.status === 409 && e.message === `You already own this pet`
+}
+
+function bn(e) {
+    "use forget";
+    let t = (0, xn.c)(77),
+        {
+            accountId: r,
+            isLoggedIn: i,
+            pet: a,
+            sharedPetId: o
+        } = e,
+        c = Ue(),
+        l = Me(),
+        u = oe(ne),
+        [f, p] = (0, Sn.useState)(null),
+        [m, h] = (0, Sn.useState)(0),
+        g;
+    t[0] !== r || t[1] !== o ? (g = async () => {
+        if (r == null) throw Error(`An account is required to adopt a pet`);
+        return await v.safePost(`/pets/share/{shared_pet_id}/adopt`, {
+            additionalHeaders: {
+                "ChatGPT-Account-ID": r
+            },
+            parameters: {
+                path: {
+                    shared_pet_id: o
+                }
+            }
+        })
+    }, t[0] = r, t[1] = o, t[2] = g) : g = t[2];
+    let _ = g,
+        y;
+    t[3] !== r || t[4] !== u || t[5] !== c || t[6] !== l ? (y = e => {
+        let {
+            pet: t,
+            pet_was_auto_selected: n
+        } = e;
+        if (p(t.name), r != null && (lt(r, t), ut(r), Ee().invalidateQueries(s())), !u) {
+            l(`/#settings/Personalization/Pet`);
+            return
+        }
+        let i = new URLSearchParams({
+            surface: `tpp`
+        });
+        n || i.set(`prompt`, c.formatMessage(X.makePrimaryPetPrompt, {
+            petName: t.name
+        })), l(`/?${i.toString()}`)
+    }, t[3] = r, t[4] = u, t[5] = c, t[6] = l, t[7] = y) : y = t[7];
+    let b;
+    t[8] === c ? b = t[9] : (b = e => {
+        yn(e) || d().danger(c.formatMessage(X.adoptError))
+    }, t[8] = c, t[9] = b);
+    let x;
+    t[10] !== _ || t[11] !== y || t[12] !== b ? (x = {
+        mutationFn: _,
+        onSuccess: y,
+        onError: b
+    }, t[10] = _, t[11] = y, t[12] = b, t[13] = x) : x = t[13];
+    let S = Be(x),
+        C;
+    t[14] !== S || t[15] !== a.is_owned_by_viewer ? (C = a.is_owned_by_viewer || yn(S.error), t[14] = S, t[15] = a.is_owned_by_viewer, t[16] = C) : C = t[16];
+    let w = C,
+        T;
+    t[17] !== S || t[18] !== f || t[19] !== i ? (T = () => {
+        if (!i) {
+            ue({
+                callbackUrl: window.location.pathname,
+                fallbackScreenHint: `login`,
+                useFallbackScreenHint: !0
+            });
+            return
+        }!S.isPending && f == null && S.mutate()
+    }, t[17] = S, t[18] = f, t[19] = i, t[20] = T) : T = t[20];
+    let te = T,
+        E;
+    t[21] === c ? E = t[22] : (E = c.formatMessage(X.chatGPTHomeLabel), t[21] = c, t[22] = E);
+    let D, re;
+    t[23] === Symbol.for(`react.memo_cache_sentinel`) ? (D = (0, Y.jsx)(Pt, {
+        className: `size-7 dark:invert`
+    }), re = (0, Y.jsx)(W, {
+        ...X.chatGPTBrandName
+    }), t[23] = D, t[24] = re) : (D = t[23], re = t[24]);
+    let O;
+    t[25] === E ? O = t[26] : (O = (0, Y.jsx)(`header`, {
+        className: `flex h-16 items-center px-5 sm:px-8`,
+        children: (0, Y.jsxs)(`a`, {
+            "aria-label": E,
+            className: `flex items-center gap-2 text-lg font-semibold`,
+            href: `/`,
+            children: [D, re]
+        })
+    }), t[25] = E, t[26] = O);
+    let k;
+    t[27] === c ? k = t[28] : (k = c.formatMessage(X.previousAnimationLabel), t[27] = c, t[28] = k);
+    let A;
+    t[29] === m ? A = t[30] : (A = () => h((m + Cn.length - 1) % Cn.length), t[29] = m, t[30] = A);
+    let j;
+    t[31] !== k || t[32] !== A ? (j = (0, Y.jsx)(n, {
+        "aria-label": k,
+        color: `secondary`,
+        icon: ee,
+        onClick: A,
+        size: `small`,
+        type: `button`
+    }), t[31] = k, t[32] = A, t[33] = j) : j = t[33];
+    let M;
+    t[34] !== c || t[35] !== a.name ? (M = c.formatMessage(X.petArtworkLabel, {
+        petName: a.name
+    }), t[34] = c, t[35] = a.name, t[36] = M) : M = t[36];
+    let N;
+    t[37] !== a.spritesheet_url || t[38] !== o ? (N = {
+        petId: o,
+        spritesheetUrl: a.spritesheet_url
+    }, t[37] = a.spritesheet_url, t[38] = o, t[39] = N) : N = t[39];
+    let ie = Cn[m],
+        P;
+    t[40] !== N || t[41] !== ie ? (P = (0, Y.jsx)(Ke, {
+        assetMap: at,
+        className: `[--codex-pet-width:128px]`,
+        respondToHover: !0,
+        source: N,
+        state: ie
+    }), t[40] = N, t[41] = ie, t[42] = P) : P = t[42];
+    let F;
+    t[43] !== M || t[44] !== P ? (F = (0, Y.jsx)(`div`, {
+        "aria-label": M,
+        className: `bg-surface-primary flex size-44 items-center justify-center overflow-hidden rounded-[36px] border border-black/5 shadow-sm dark:border-white/10`,
+        role: `img`,
+        children: P
+    }), t[43] = M, t[44] = P, t[45] = F) : F = t[45];
+    let I;
+    t[46] === c ? I = t[47] : (I = c.formatMessage(X.nextAnimationLabel), t[46] = c, t[47] = I);
+    let L;
+    t[48] === m ? L = t[49] : (L = () => h((m + 1) % Cn.length), t[48] = m, t[49] = L);
+    let R;
+    t[50] !== I || t[51] !== L ? (R = (0, Y.jsx)(n, {
+        "aria-label": I,
+        color: `secondary`,
+        icon: xt,
+        onClick: L,
+        size: `small`,
+        type: `button`
+    }), t[50] = I, t[51] = L, t[52] = R) : R = t[52];
+    let z;
+    t[53] !== j || t[54] !== F || t[55] !== R ? (z = (0, Y.jsxs)(`div`, {
+        className: `mb-7 flex items-center gap-3 sm:gap-5`,
+        children: [j, F, R]
+    }), t[53] = j, t[54] = F, t[55] = R, t[56] = z) : z = t[56];
+    let ae;
+    t[57] === Symbol.for(`react.memo_cache_sentinel`) ? (ae = (0, Y.jsx)(`p`, {
+        className: `text-token-text-tertiary mb-2 text-sm font-medium`,
+        children: (0, Y.jsx)(W, {
+            ...X.sharedPetEyebrow
+        })
+    }), t[57] = ae) : ae = t[57];
+    let B;
+    t[58] === a.name ? B = t[59] : (B = (0, Y.jsx)(`h1`, {
+        className: `mb-3 text-3xl font-semibold tracking-tight`,
+        children: a.name
+    }), t[58] = a.name, t[59] = B);
+    let V;
+    t[60] === a.description ? V = t[61] : (V = a.description != null && a.description.length > 0 && (0, Y.jsx)(`p`, {
+        className: `text-token-text-secondary mb-7 max-w-md text-base leading-6`,
+        children: a.description
+    }), t[60] = a.description, t[61] = V);
+    let H;
+    t[62] !== S || t[63] !== f || t[64] !== te || t[65] !== i || t[66] !== w ? (H = w ? (0, Y.jsxs)(`div`, {
+        className: `bg-token-bg-secondary w-full rounded-2xl px-5 py-4`,
+        children: [(0, Y.jsx)(`p`, {
+            className: `font-medium`,
+            children: (0, Y.jsx)(W, {
+                ...X.ownedPetTitle
+            })
+        }), (0, Y.jsx)(`p`, {
+            className: `text-token-text-secondary mt-1 text-sm`,
+            children: (0, Y.jsx)(W, {
+                ...X.ownedPetExplanation
+            })
+        })]
+    }) : f == null ? (0, Y.jsxs)(Y.Fragment, {
+        children: [(0, Y.jsx)(n, {
+            className: `min-w-36`,
+            color: `primary`,
+            loading: S.isPending,
+            onClick: te,
+            size: `large`,
+            type: `button`,
+            children: (0, Y.jsx)(W, {
+                ...i ? X.adoptButton : X.loginButton
+            })
+        }), (0, Y.jsx)(`p`, {
+            className: `text-token-text-tertiary mt-4 max-w-sm text-sm leading-5`,
+            children: (0, Y.jsx)(W, {
+                ...i ? X.adoptExplanation : X.loggedOutExplanation
+            })
+        })]
+    }) : (0, Y.jsxs)(`div`, {
+        className: `bg-token-bg-secondary w-full rounded-2xl px-5 py-4`,
+        children: [(0, Y.jsx)(`p`, {
+            className: `font-medium`,
+            children: (0, Y.jsx)(W, {
+                ...X.adoptSuccess,
+                values: {
+                    petName: f
+                }
+            })
+        }), (0, Y.jsx)(`p`, {
+            className: `text-token-text-secondary mt-1 text-sm`,
+            children: (0, Y.jsx)(W, {
+                ...X.adoptSuccessExplanation
+            })
+        })]
+    }), t[62] = S, t[63] = f, t[64] = te, t[65] = i, t[66] = w, t[67] = H) : H = t[67];
+    let U;
+    t[68] !== z || t[69] !== B || t[70] !== V || t[71] !== H ? (U = (0, Y.jsx)(`section`, {
+        className: `flex flex-1 items-center justify-center px-5 py-10 sm:px-8`,
+        children: (0, Y.jsxs)(`div`, {
+            className: `border-token-border-light bg-token-bg-elevated-secondary flex w-full max-w-xl flex-col items-center rounded-[32px] border px-7 py-10 text-center shadow-sm sm:px-12 sm:py-12`,
+            children: [z, ae, B, V, H]
+        })
+    }), t[68] = z, t[69] = B, t[70] = V, t[71] = H, t[72] = U) : U = t[72];
+    let se;
+    t[73] === Symbol.for(`react.memo_cache_sentinel`) ? (se = (0, Y.jsx)(`footer`, {
+        className: `text-token-text-tertiary px-5 py-6 text-center text-xs`,
+        children: (0, Y.jsx)(W, {
+            ...X.privacyFooter
+        })
+    }), t[73] = se) : se = t[73];
+    let ce;
+    return t[74] !== O || t[75] !== U ? (ce = (0, Y.jsxs)(`main`, {
+        className: `bg-token-bg-primary text-token-text-primary flex min-h-screen flex-col`,
+        children: [O, U, se]
+    }), t[74] = O, t[75] = U, t[76] = ce) : ce = t[76], ce
+}
+var xn, Sn, Y, Cn, X, wn = e((() => {
+    xn = He(), F(), b(), St(), Ft(), o(), r(), R(), h(), it(), he(), Qe(), M(), x(), u(), dt(), Ve(), Sn = t(Fe()), Pe(), Ne(), Y = ke(), Cn = [`idle`, `waving`, `jumping`, `running-right`, `running-left`, `running`, `waiting`, `review`, `failed`], X = je({
+        chatGPTBrandName: {
+            id: `chatgpt.shared_pet.header.brand_name`,
+            defaultMessage: `ChatGPT`
+        },
+        chatGPTHomeLabel: {
+            id: `chatgpt.shared_pet.header.home.accessible_label`,
+            defaultMessage: `ChatGPT home`
+        },
+        petArtworkLabel: {
+            id: `chatgpt.shared_pet.artwork.accessible_label`,
+            defaultMessage: `{petName}, a shared ChatGPT pet`
+        },
+        previousAnimationLabel: {
+            id: `chatgpt.shared_pet.artwork.previous_animation.accessible_label`,
+            defaultMessage: `Previous pet animation`
+        },
+        nextAnimationLabel: {
+            id: `chatgpt.shared_pet.artwork.next_animation.accessible_label`,
+            defaultMessage: `Next pet animation`
+        },
+        sharedPetEyebrow: {
+            id: `chatgpt.shared_pet.eyebrow`,
+            defaultMessage: `A pet shared from ChatGPT`
+        },
+        adoptButton: {
+            id: `chatgpt.shared_pet.button.adopt`,
+            defaultMessage: `Adopt this pet`
+        },
+        loginButton: {
+            id: `chatgpt.shared_pet.button.login`,
+            defaultMessage: `Log in to adopt`
+        },
+        adoptExplanation: {
+            id: `chatgpt.shared_pet.adopt.explanation`,
+            defaultMessage: `Adopting adds an editable copy to your pet library.`
+        },
+        loggedOutExplanation: {
+            id: `chatgpt.shared_pet.logged_out.explanation`,
+            defaultMessage: `Log in to add an editable copy to your pet library.`
+        },
+        adoptSuccess: {
+            id: `chatgpt.shared_pet.adopt.success`,
+            defaultMessage: `{petName} is now in your pet library`
+        },
+        adoptSuccessExplanation: {
+            id: `chatgpt.shared_pet.adopt.success_explanation`,
+            defaultMessage: `This is your own copy, so you can edit or share it.`
+        },
+        makePrimaryPetPrompt: {
+            id: `chatgpt.shared_pet.adopt.make_primary.prompt`,
+            defaultMessage: `Make this pet my primary pet: "{petName}"`
+        },
+        ownedPetTitle: {
+            id: `chatgpt.shared_pet.owned.title`,
+            defaultMessage: `You own this pet`
+        },
+        ownedPetExplanation: {
+            id: `chatgpt.shared_pet.owned.explanation`,
+            defaultMessage: `This pet is already in your pet library.`
+        },
+        adoptError: {
+            id: `chatgpt.shared_pet.adopt.error`,
+            defaultMessage: `Couldn't adopt this pet. Try again.`
+        },
+        privacyFooter: {
+            id: `chatgpt.shared_pet.footer.privacy`,
+            defaultMessage: `Shared pet pages don't display information about who created them.`
+        }
+    })
+}));
+
+function Tn() {
+    let e = Ue(),
+        t = Me(),
+        n = Oe(),
+        r = e.formatMessage({
+            id: `C02fyX`,
+            defaultMessage: `This shared message was deleted and is no longer available.`
+        });
+    return (0, Q.useEffect)(() => {
+        n.warning(r, {
+            duration: 5,
+            id: `shared-post-deleted`
+        }), t(`/`, {
+            replace: !0
+        })
+    }, [r, t, n]), null
+}
+
+function En({
+    loaderData: e
+}) {
+    let [t] = Ie(), n = (0, Q.useRef)(null), r = rt(e.postWithProfile.post);
+    (0, Q.useEffect)(() => {
+        if (C.logEventWithStatsig(`Share Post: Shared Post Page Viewed`, `chatgpt_share_post_page_viewed`, {
+                post_id: e.postWithProfile.post.id,
+                primary_attachment_type: e.postWithProfile.post.attachments?.[0]?.kind,
+                referrer: e.referrer
+            }), !r) {
+            let t = Ye(e.postWithProfile.post);
+            N({
+                action: f.CHATGPT_SHARE_FLOW_ACTION_SHARED_CONTENT_VIEWED,
+                shareId: e.postWithProfile.post.id,
+                contentType: te.CHATGPT_SHARE_FLOW_CONTENT_TYPE_POST_SLICE,
+                ...t
+            })
+        }
+    }, [r, e]);
+    let i = ye(),
+        a = (0, Q.useMemo)(() => {
+            let e = de();
+            return me.initThread({
+                clientThreadId: e.id,
+                conversationMode: {
+                    kind: S.PrimaryAssistant
+                },
+                userId: i?.user?.id,
+                accountId: i?.account?.id
+            }), e
+        }, [i?.account?.id, i?.user?.id]),
+        o = e.postWithProfile.post.attachments?.[0];
+    if (o.kind === `deep_research`) {
+        let t = o.messages,
+            r = ie(t),
+            i = r?.metadata?.async_task_title;
+        return r ? (0, $.jsxs)(pn, {
+            postWithProfile: e.postWithProfile,
+            contentRef: n,
+            title: i,
+            children: [(0, $.jsx)(Ct, {
+                messages: t,
+                conversation: a
+            }), (0, $.jsx)(A, {
+                containerRef: n,
+                conversationId: a.id
+            })]
+        }) : null
+    }
+    return o.kind === `codex` ? (0, $.jsx)(gn, {
+        postWithProfile: e.postWithProfile
+    }) : o.kind === `code_block` && Ge(t) ? (0, $.jsx)(zn, {
+        conversationId: a.id,
+        postWithProfile: e.postWithProfile
+    }) : r ? (0, $.jsx)(In, {
+        reason: `general`
+    }) : (0, $.jsx)(Ln, {
+        postWithProfile: e.postWithProfile,
+        messagingRoomId: e.messagingRoomId
+    }, e.postWithProfile.post.id)
+}
+
+function Z(e, t, n) {
+    return {
+        url: e,
+        width: t,
+        height: n,
+        alt: Kn,
+        secureUrl: tn(e)
+    }
+}
+
+function Dn(e) {
+    return {
+        url: `https://ogimg.chatgpt.com/?postId=${e}`,
+        width: 1200,
+        height: 630,
+        alt: Kn,
+        secureUrl: `https://ogimg.chatgpt.com/?postId=${e}`
+    }
+}
+
+function On(e, t) {
+    let n = `https://ogimg.chatgpt.com/post/${e}/${t}.png`;
+    return {
+        url: n,
+        width: 1200,
+        height: 630,
+        alt: Kn,
+        secureUrl: n
+    }
+}
+
+function kn(e) {
+    switch (e) {
+        case `igbl`:
+        case `igcff`:
+        case `igni`:
+            return e;
+        default:
+            return null
+    }
+}
+
+function An(e, t, n) {
+    if (!e.attachments || e.attachments.length === 0) return Z(G.src);
+    if (e.attachments[0].kind === `codex`) return null;
+    let r = e.attachments[0],
+        i = kn(n ?? e.og_image_variant),
+        a = un(n ?? e.og_image_variant) == null ? null : n ?? e.og_image_variant;
+    if (r.kind === `media_generation` && i === `igni`) return null;
+    if (r.kind === `media_generation` && i != null) return On(e.id, i);
+    if ((r.kind === `message_slice` || r.kind === `prompt`) && a != null) return On(e.id, a);
+    switch (r.kind) {
+        case `media_generation`: {
+            let e = r.encodings?.md,
+                n = r.encodings?.unfurl,
+                i = r.encodings?.thumbnail,
+                a = e?.width != null && e.height != null,
+                o = e?.path ? Z(e.path, a ? e.width : r.width, a ? e.height : r.height) : void 0,
+                s = n?.path ? Z(n.path, n.width, n.height) : void 0,
+                c = i?.path ? Z(i.path, i.width, i.height) : void 0,
+                l = Z(r.url, r.width, r.height);
+            return t ? o ?? l : s ?? c ?? l
+        }
+        case `message_slice`:
+        case `prompt`:
+            return Dn(e.id);
+        case `sora`:
+            return r.encodings?.unfurl?.path ? Z(r.encodings.unfurl.path) : r.encodings?.thumbnail?.path ? Z(r.encodings.thumbnail.path) : Z(G.src);
+        default:
+            return Z(G.src)
+    }
+}
+
+function jn(e) {
+    let t = e.text?.trim();
+    if (t) return t;
+    let n = e.attachments?.[0];
+    if (n?.kind === `media_generation` && n.title?.trim()) return n.title.trim();
+    if (n?.kind === `codex`) {
+        let e = n.task?.title?.trim();
+        if (e) return e
+    }
+    return `Shared Content`
+}
+
+function Mn(e) {
+    return e.og_title?.trim() || null
+}
+
+function Nn(e) {
+    return e.og_description?.trim() || null
+}
+
+function Pn(e) {
+    return Mn(e) ?? jn(e)
+}
+
+function Fn(e, t) {
+    return Nn(e) ?? t
+}
+
+function In({
+    reason: e
+}) {
+    return (0, Q.useEffect)(() => {
+        P(Un, {
+            reason: e
+        })
+    }, []), (0, $.jsx)(Mt, {})
+}
+
+function Ln({
+    postWithProfile: e,
+    messagingRoomId: t
+}) {
+    let [n, r] = (0, Q.useState)(!1), i = oe(ne), a = Je(e.post), o = a != null, s = a?.sourceConversationIsWorkMode === !0, [c] = (0, Q.useState)(() => Ye(e.post)), [l] = (0, Q.useState)(() => {
+        let t = de(a == null ? void 0 : {
+            sharedPromptPostPrefill: a
+        });
+        if (a != null) {
+            let n = ye();
+            me.initThread({
+                clientThreadId: t.id,
+                conversationMode: {
+                    kind: S.PrimaryAssistant
+                },
+                userId: n?.user?.id,
+                accountId: n?.account?.id
+            }), ve(t.id, t => {
+                t.continuingFromSharedPostId = e.post.id, t.continuingFromSharedPostShareFlowMetadata = c, t.forkFromSharedPost = !0
+            })
+        }
+        return t
+    });
+    (0, Q.useEffect)(() => {
+        if (!o) return;
+        if (s) {
+            if (!i) return;
+            re({
+                conversation: l,
+                nextMode: Ce.TPP
+            }), De(l.id, we.TPP);
+            return
+        }
+        let e = re({
+            conversation: l,
+            nextMode: Ce.Chat
+        });
+        De(l.id, e ? null : we.TPP)
+    }, [l, o, i, s]);
+    let u = e.post.attachments,
+        d = !!u?.length && u.every(e => e.kind === `message_slice`),
+        f = on(u),
+        p = cn(u),
+        m = (0, Q.useMemo)(() => z(l.id, () => sn(u), !1), [l.id, u]),
+        h = l.id;
+    !f && m && z(l.id, () => {
+        mt(l, m.threadResponse, {
+            skipIfExisting: !0,
+            continuingFromSharedPostId: e.post.id,
+            continuingFromSharedPostShareFlowMetadata: c,
+            forkFromSharedPost: !0
+        });
+        for (let e of m.allConversationMessages) _e(l, e.message)
+    });
+    let g = p || !1;
+    return (0, Q.useEffect)(() => {
+        !g || !m || z(l.id, () => {
+            mt(l, m.threadResponse, {
+                skipIfExisting: !1,
+                continuingFromSharedPostId: e.post.id,
+                continuingFromSharedPostShareFlowMetadata: c,
+                forkFromSharedPost: !0
+            });
+            for (let e of m.allConversationMessages) _e(l, e.message)
+        })
+    }, [l, e.post.id, c, m, g]), (0, $.jsxs)(E.Provider, {
+        value: {
+            postWithProfile: e,
+            messagingRoomId: t,
+            setIsReportModalOpen: r,
+            shouldUseMessageSliceShareContinuation: d,
+            shouldUseSharedImageAutoLanding: p
+        },
+        children: [n && (0, $.jsx)(Tt, {
+            post: e.post,
+            onClose: () => r(!1)
+        }), (0, $.jsx)(Mt, {
+            clientThreadId: h
+        })]
+    })
+}
+
+function Rn(e) {
+    "use forget";
+    let t = (0, Bn.c)(36),
+        {
+            promptSharePostWithProfile: n,
+            referrer: r
+        } = e,
+        i;
+    t[0] === n.post ? i = t[1] : (i = rt(n.post) ? null : Je(n.post), t[0] = n.post, t[1] = i);
+    let a = i,
+        [o, s] = (0, Q.useState)(!0),
+        [c, l] = (0, Q.useState)(!1),
+        u;
+    t[2] !== n.post.id || t[3] !== a ? (u = () => {
+        if (a == null) return null;
+        let e = de({
+                sharedPromptPostPrefill: a
+            }),
+            t = ye();
+        return me.initThread({
+            clientThreadId: e.id,
+            conversationMode: {
+                kind: S.PrimaryAssistant
+            },
+            userId: t?.user?.id,
+            accountId: t?.account?.id
+        }), ve(e.id, e => {
+            e.continuingFromSharedPostId = n.post.id, e.continuingFromSharedPostShareFlowMetadata = {
+                attachmentType: D.CHATGPT_SHARE_FLOW_ATTACHMENT_TYPE_IMAGE_SHARE
+            }
+        }), e
+    }, t[2] = n.post.id, t[3] = a, t[4] = u) : u = t[4];
+    let [d] = (0, Q.useState)(u), p, m;
+    if (t[5] !== d || t[6] !== n.post.id || t[7] !== r ? (p = () => {
+            d != null && (jt(d), C.logEventWithStatsig(`Share Post: Shared Post Page Viewed`, `chatgpt_share_post_page_viewed`, {
+                post_id: n.post.id,
+                primary_attachment_type: `prompt_share`,
+                referrer: r
+            }), N({
+                action: f.CHATGPT_SHARE_FLOW_ACTION_SHARED_CONTENT_VIEWED,
+                shareId: n.post.id,
+                contentType: te.CHATGPT_SHARE_FLOW_CONTENT_TYPE_POST_SLICE,
+                attachmentType: D.CHATGPT_SHARE_FLOW_ATTACHMENT_TYPE_IMAGE_SHARE
+            }))
+        }, m = [d, n.post.id, r], t[5] = d, t[6] = n.post.id, t[7] = r, t[8] = p, t[9] = m) : (p = t[8], m = t[9]), (0, Q.useEffect)(p, m), d == null) {
+        let e;
+        return t[10] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, $.jsx)(In, {
+            reason: `general`
+        }), t[10] = e) : e = t[10], e
+    }
+    let h = n.post.attachments[0];
+    if (h?.kind !== `prompt_share`) {
+        let e;
+        return t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (e = (0, $.jsx)(In, {
+            reason: `general`
+        }), t[11] = e) : e = t[11], e
+    }
+    let g;
+    t[12] !== h.prompt_share || t[13] !== n.post.preview_image_url ? (g = Ze({
+        promptShare: h.prompt_share,
+        fallbackImageUrl: n.post.preview_image_url
+    }), t[12] = h.prompt_share, t[13] = n.post.preview_image_url, t[14] = g) : g = t[14];
+    let ee = g,
+        _;
+    t[15] === n.post ? _ = t[16] : (_ = {
+        postWithProfile: null,
+        reportablePost: n.post,
+        setIsReportModalOpen: l
+    }, t[15] = n.post, t[16] = _);
+    let v;
+    t[17] !== c || t[18] !== n.post ? (v = c && (0, $.jsx)(Tt, {
+        post: n.post,
+        onClose: () => l(!1)
+    }), t[17] = c, t[18] = n.post, t[19] = v) : v = t[19];
+    let y;
+    t[20] === Symbol.for(`react.memo_cache_sentinel`) ? (y = {
+        initialSystemHint: Te.PictureV2
+    }, t[20] = y) : y = t[20];
+    let b;
+    t[21] !== h.prompt_share || t[22] !== ee || t[23] !== n.post.id || t[24] !== o ? (b = o ? (0, $.jsxs)($.Fragment, {
+        children: [(0, $.jsx)(`div`, {
+            className: `lg:hidden`,
+            children: (0, $.jsx)(At, {})
+        }), (0, $.jsx)(rn, {
+            promptItem: ee,
+            showAllPromptItems: !0,
+            showPromptVariationDisclosure: !0,
+            isPromptAltered: h.prompt_share.content.generated_image?.prompt_match === `differs_from_shared_prompt`,
+            showPromptTextPreview: !0,
+            onTryItSelected: () => N({
+                action: f.CHATGPT_SHARE_FLOW_ACTION_CONTINUE_SELECTED,
+                shareId: n.post.id,
+                contentType: te.CHATGPT_SHARE_FLOW_CONTENT_TYPE_POST_SLICE,
+                attachmentType: D.CHATGPT_SHARE_FLOW_ATTACHMENT_TYPE_IMAGE_SHARE
+            }),
+            onTryIt: () => s(!1)
+        })]
+    }) : null, t[21] = h.prompt_share, t[22] = ee, t[23] = n.post.id, t[24] = o, t[25] = b) : b = t[25];
+    let x;
+    t[26] !== d.id || t[27] !== b ? (x = (0, $.jsx)(Mt, {
+        clientThreadId: d.id,
+        children: b
+    }), t[26] = d.id, t[27] = b, t[28] = x) : x = t[28];
+    let w;
+    t[29] !== d || t[30] !== x ? (w = (0, $.jsx)(Et, {
+        conversation: d,
+        options: y,
+        children: x
+    }), t[29] = d, t[30] = x, t[31] = w) : w = t[31];
+    let T;
+    return t[32] !== w || t[33] !== _ || t[34] !== v ? (T = (0, $.jsxs)(E.Provider, {
+        value: _,
+        children: [v, w]
+    }), t[32] = w, t[33] = _, t[34] = v, t[35] = T) : T = t[35], T
+}
+
+function zn(e) {
+    "use forget";
+    let t = (0, Bn.c)(9),
+        {
+            conversationId: n,
+            postWithProfile: r
+        } = e,
+        i = r.post.attachments[0];
+    if (!i || i.kind !== `code_block`) return null;
+    let a = i.language ?? void 0,
+        o;
+    t[0] !== i.content || t[1] !== a ? (o = {
+        content: i.content,
+        language: a
+    }, t[0] = i.content, t[1] = a, t[2] = o) : o = t[2];
+    let s;
+    t[3] === n ? s = t[4] : (s = (0, $.jsx)(Mt, {
+        clientThreadId: n
+    }), t[3] = n, t[4] = s);
+    let c;
+    return t[5] !== r.post.id || t[6] !== o || t[7] !== s ? (c = (0, $.jsx)(gt, {
+        initialSharedCodeBlockRemix: o,
+        children: s
+    }, r.post.id), t[5] = r.post.id, t[6] = o, t[7] = s, t[8] = c) : c = t[8], c
+}
+var Bn, Q, $, Vn, Hn, Un, Wn, Gn, Kn, qn, Jn = e((() => {
+    Ne(), Bn = He(), B(), Qt(), wt(), mn(), Nt(), ce(), xe(), Xe(), $e(), kt(), c(), Se(), L(), nt(), j(), Ot(), Dt(), le(), w(), an(), vt(), ln(), en(), We(), r(), I(), i(), h(), nn(), fe(), he(), g(), m(), vn(), se(), be(), Q = t(Fe()), Pe(), wn(), $ = ke(), ze(), Vn = k(() => Le(() => import(`./83df066d-kbuc5mp2s1s6pz2p.js`).then(e => e.BirthdayCardSharePage), __vite__mapDeps([0, 1, 2, 3, 4, 5, 6, 7, 8, 9]))), Hn = k(() => Le(() => import(`./a9a4fd4f-peajfznlbaiuh0vt.js`).then(e => (e.r(), e.n)).then(e => e.SharedAutomationPage), __vite__mapDeps([10, 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13, 14, 15, 16, 17]))), Un = k(() => Le(() => import(`./8b34dbc2-lmwubajnld74ksfm.js`).then(e => (e.ca(), e.la)).then(e => e.PostSharingErrorModal), __vite__mapDeps([11, 1, 2, 3, 4, 5, 6, 7, 8, 9, 12]))), Wn = {
+        hasRouteMeta: !0
+    }, Gn = Ae(function() {
+        let e = Re(),
+            t = window.location.pathname,
+            n = e.kind === `post_with_profile` ? e.postWithProfile.post.attachments?.[0] : void 0,
+            r = n?.kind ?? e.kind,
+            i = e.kind === `forbidden` || e.kind === `deleted`,
+            a = e.kind === `post_with_profile` && (n?.kind === `message_slice` || n?.kind === `deep_research` || cn(e.postWithProfile.post.attachments));
+        return H(t, e.shareReceivePerformance, r), (0, Q.useEffect)(() => {
+            i ? V(t, `load_error`) : a || V(t, `unsupported`)
+        }, [i, a, t]), e.kind === `forbidden` ? (0, $.jsx)(In, {
+            reason: `workspace`
+        }) : e.kind === `deleted` ? (0, $.jsx)(Tn, {}) : e.kind === `shared_pet` ? (0, $.jsx)(bn, {
+            ...e.sharedPet
+        }) : e.kind === `shared_automation` ? (0, $.jsx)(Hn, {
+            isLoggedIn: e.isLoggedIn,
+            sharedAutomation: e.sharedAutomation
+        }) : e.kind === `prompt_share_post_with_profile` ? (0, $.jsx)(Rn, {
+            promptSharePostWithProfile: e.promptSharePostWithProfile,
+            referrer: e.referrer
+        }, e.promptSharePostWithProfile.post.id) : e.postWithProfile.post.og_image_variant === `birthday_card` ? (0, $.jsx)(Vn, {
+            post: e.postWithProfile.post,
+            firstName: e.postWithProfile.profile.display_name?.trim().split(/\s+/u)[0]
+        }) : (0, $.jsx)(En, {
+            loaderData: e
+        })
+    }), Kn = `Preview of shared ChatGPT content`, qn = ({
+        data: e
+    }) => {
+        let t = e,
+            n = {
+                name: `robots`,
+                content: `noindex,nofollow`
+            };
+        if (t?.kind === `shared_pet`) {
+            let {
+                pet: e,
+                sharedPetId: r
+            } = t.sharedPet, i = e.name, a = `${i} - ChatGPT`, o = `Meet ${i}, a pet shared from ChatGPT.`, s = `/pets/share/${r}`, c = new URLSearchParams({
+                name: e.name,
+                description: e.description,
+                imageUrl: e.spritesheet_url
+            });
+            return [{
+                title: a
+            }, {
+                name: `description`,
+                content: o
+            }, n, {
+                property: `og:site_name`,
+                content: `ChatGPT`
+            }, {
+                property: `og:title`,
+                content: a
+            }, {
+                property: `og:description`,
+                content: o
+            }, {
+                property: `og:type`,
+                content: `website`
+            }, {
+                id: `shared-pet-install`,
+                "script:ld+json": {
+                    "@context": `https://schema.org`,
+                    "@type": `SoftwareApplication`,
+                    name: e.name,
+                    description: e.description,
+                    applicationCategory: `Codex Desktop pet`,
+                    identifier: r,
+                    downloadUrl: e.spritesheet_url,
+                    potentialAction: {
+                        "@type": `InstallAction`,
+                        description: `Install this shared pet in Codex Desktop. The name, description, and spritesheet are available at the resource URLs. Open the target deep link to preview and confirm installation.`,
+                        target: `codex://pets/install?${c.toString()}`
+                    },
+                    additionalProperty: [{
+                        "@type": `PropertyValue`,
+                        name: `nameUrl`,
+                        value: `${s}/name`
+                    }, {
+                        "@type": `PropertyValue`,
+                        name: `descriptionUrl`,
+                        value: `${s}/desc`
+                    }, {
+                        "@type": `PropertyValue`,
+                        name: `spritesheetUrl`,
+                        value: `${s}/sprite`
+                    }]
+                }
+            }]
+        }
+        if (t?.kind === `shared_automation`) {
+            let e = t.sharedAutomation.automation.title,
+                r = t.sharedAutomation.post.permalink;
+            return [{
+                title: `${e} - ChatGPT`
+            }, n, {
+                property: `og:site_name`,
+                content: `ChatGPT`
+            }, {
+                property: `og:title`,
+                content: e
+            }, {
+                property: `og:description`,
+                content: t.defaultOgDescription
+            }, {
+                property: `og:type`,
+                content: `website`
+            }, ...r ? [{
+                property: `og:url`,
+                content: r
+            }] : []]
+        }
+        if (!t || t.kind === `forbidden` || t.kind === `deleted`) {
+            let e = `Privately Shared Content`;
+            return [{
+                title: `ChatGPT - ${e}`
+            }, n, {
+                property: `og:site_name`,
+                content: `ChatGPT`
+            }, {
+                property: `og:title`,
+                content: e
+            }, {
+                property: `og:type`,
+                content: `website`
+            }, {
+                property: `og:image`,
+                content: G.src
+            }, {
+                name: `twitter:card`,
+                content: `summary_large_image`
+            }, {
+                name: `twitter:image`,
+                content: G.src
+            }, {
+                name: `twitter:site`,
+                content: `@ChatGPTapp`
+            }, {
+                name: `twitter:title`,
+                content: e
+            }]
+        }
+        if (t.kind === `prompt_share_post_with_profile`) {
+            let {
+                post: e
+            } = t.promptSharePostWithProfile, r = e.attachments[0], i = r?.kind === `prompt_share` ? r.prompt_share : void 0, a = i?.content.title.trim() || e.text?.trim() || `Shared Content`, o = e.og_title?.trim() || a, s = e.og_description?.trim() || t.defaultOgDescription, c = rt(e) ? G.src : i?.content.generated_image?.image_url ? Dn(e.id).url : On(e.id, `response_multicolor_v1`).url, l = Z(c);
+            return [{
+                title: `ChatGPT - ${a}`
+            }, n, {
+                property: `og:site_name`,
+                content: `ChatGPT`
+            }, {
+                property: `og:type`,
+                content: `article`
+            }, ...e.permalink ? [{
+                property: `og:url`,
+                content: e.permalink
+            }] : [], {
+                property: `og:title`,
+                content: o
+            }, {
+                property: `og:description`,
+                content: s
+            }, ...$t(l), {
+                property: `article:published_time`,
+                content: new Date(e.posted_at * 1e3).toISOString()
+            }, {
+                name: `twitter:site`,
+                content: `@ChatGPTapp`
+            }, {
+                name: `twitter:title`,
+                content: o
+            }, {
+                name: `twitter:description`,
+                content: s
+            }, {
+                name: `twitter:card`,
+                content: `summary_large_image`
+            }, {
+                name: `twitter:image`,
+                content: c
+            }, {
+                name: `twitter:image:alt`,
+                content: l.alt
+            }]
+        }
+        let {
+            post: r
+        } = t.postWithProfile, i = r.og_image_variant === `birthday_card` && r.attachments?.[0]?.kind === `media_generation` ? r.attachments[0] : null, a;
+        if (i?.prompt) try {
+            let {
+                message: e
+            } = JSON.parse(i.prompt);
+            typeof e == `string` && (a = e.trim())
+        } catch {
+            a = void 0
+        }
+        let o = t.enforceRenderedOgImg || t.ogImageVariantOverride === `rendered` ? `rendered` : t.ogImageVariantOverride,
+            s = rt(r) ? Z(G.src) : i == null ? o === `rendered` ? Dn(r.id) : An(r, t.preferIntrinsicAspectRatioForOgImage, o) : Z(i.url, i.width, i.height),
+            c = s != null && i == null && !rt(r) && t.imagegenOgImagePolicy === `intrinsic_og` && r.attachments?.[0]?.kind === `media_generation` ? Dn(r.id) : s,
+            l = jn(r),
+            u = i?.title?.trim() || Pn(r),
+            d = a || Fn(r, t.defaultOgDescription),
+            f = r.permalink,
+            p = new Date(r.posted_at * 1e3).toISOString(),
+            m = r.attachments?.[0]?.kind === `codex` ? `Codex` : `ChatGPT`;
+        return [{
+            title: `${m} - ${l}`
+        }, n, {
+            property: `og:site_name`,
+            content: m
+        }, {
+            property: `og:type`,
+            content: `article`
+        }, {
+            property: `og:url`,
+            content: f
+        }, {
+            property: `og:title`,
+            content: u
+        }, {
+            property: `og:description`,
+            content: d
+        }, {
+            property: `og:locale`,
+            content: `en_US`
+        }, ...s == null ? [] : [...$t(s)], {
+            property: `article:published_time`,
+            content: p
+        }, {
+            name: `twitter:site`,
+            content: `@ChatGPTapp`
+        }, {
+            name: `twitter:title`,
+            content: u
+        }, {
+            name: `twitter:description`,
+            content: d
+        }, ...c == null ? [] : [{
+            name: `twitter:card`,
+            content: `summary_large_image`
+        }, {
+            name: `twitter:image`,
+            content: c.url
+        }, {
+            name: `twitter:image:alt`,
+            content: c.alt
+        }]]
+    }
+}));
+e((() => {
+    Jn()
+}))();
+export {
+    Gn as
+    default, Wn as handle, qn as meta
+};
 //# sourceMappingURL=s._postId-m05msuw5.js.map

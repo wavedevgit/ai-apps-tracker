@@ -1,3 +1,1086 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$T as n,A8 as r,AH as i,At as a,C0 as o,CQ as s,Cat as c,Crt as l,Cz as u,Dat as d,E0 as f,Eat as p,F0 as m,Fnt as h,Fz as g,IR as _,Irt as v,Iz as y,JR as b,K5 as x,Knt as S,LU as C,Lit as w,Lrt as T,N0 as ee,Nit as E,OH as D,ON as O,Oct as k,QR as te,RR as ne,Rrt as A,SQ as re,Srt as j,TN as M,Vst as N,WF as ie,Wnt as ae,XR as oe,Xh as P,YR as se,cn as ce,eE as F,fst as I,gq as L,hR as le,hn as R,hrt as ue,hz as z,j5 as B,kat as de,kit as fe,kz as pe,lz as me,mL as V,mR as H,mz as U,pL as he,pst as W,pz as ge,q5 as G,qh as _e,rq as ve,uz as K,w0 as ye,wat as be,x0 as xe,xnt as Se,yz as Ce,zU as we}from"./4813494d-mdvd4786a87166cc.js";import{At as Te,Bn as q,Ht as Ee,Ln as De,Nn as Oe,Q as ke,Rn as Ae,Vn as je,Vt as Me,Zt as Ne,it as Pe,kt as Fe,o as Ie,rn as Le,wn as Re,zn as ze}from"./2340486e-i7pjxgdhv0bs6apg.js";import{i as Be,n as Ve,t as He}from"./d42ee766-o7vl4qh4y6dmhmh7.js";import{$zt as Ue,EKn as We,MJ as Ge,NJt as Ke,O8 as qe,OFt as Je,OKn as Ye,PJt as Xe,_Kn as Ze,bKn as Qe,eBt as $e,jJ as et,k8 as tt,kFt as nt}from"./conversation-small-bcbq46iub1p0ca1t.js";import{Jy as rt,Xy as it,Yy as at,Zy as ot}from"./30901919-s8bko9nrkqwv6i4f.js";import{Fu as st,Iu as ct,Nu as J,Xf as lt,Yf as ut}from"./c2675c8c-oz03twoan08d72ud.js";import{Bb as dt}from"./8b34dbc2-lmwubajnld74ksfm.js";import{g as ft,h as pt,m as mt,p as ht}from"./c470f5ab-jwd0o7jx9i9say9k.js";import{a as gt,i as _t}from"./9bbac052-nadlmfa3ycvthdvm.js";import{n as vt,t as yt}from"./35711af7-obpiisgj5grklvz2.js";import{n as bt,r as xt}from"./877ce4d3-d0zlv3naj8f9x8q2.js";function St(e){if(!le(e))return null;let{pathname:t}=new URL(e,`https://chatgpt.com`),n=t.split(`/`).filter(Boolean);if(n.length!==2||n[0]!==`purchase`)return null;let r=n[1];return ct(r)?wt[r]??null:null}function Ct({isSso:e,readTreatment:t,selectedPlanIntent:n}){return n!=null&&!e&&t()}var wt,Tt=e((()=>{k(),st(),H(),wt={[J.Go]:{accountPlanType:N.GO,planType:J.Go},[J.Plus]:{accountPlanType:N.PLUS,planType:J.Plus},[J.Pro]:{accountPlanType:N.PRO,planType:J.Pro},[J.ProLite]:{accountPlanType:N.PROLITE,planType:J.ProLite}}}));function Et(){let[e,t]=(0,Ot.useState)(0),n=(0,Ot.useRef)($e(Object.values(jt))),r=I().locale;return(0,Y.jsx)(R,{mode:`wait`,initial:!1,children:(0,Y.jsx)(ce.div,{className:`-mt-4 flex w-full flex-col ps-5 md:ps-8 lg:ps-10`,initial:{opacity:0,y:24},animate:{opacity:1,y:0},exit:{opacity:0,y:-24},transition:{duration:.2},children:(0,Y.jsx)(Oe,{...n.current[e],values:{title:e=>(0,Y.jsx)(`p`,{className:`font-bold`,children:e},`title`),body:e=>{let i=e?.[0];return typeof i==`string`?(0,Y.jsx)(Dt,{text:i,onFinishedTyping:()=>{setTimeout(()=>{t(e=>(e+1)%n.current.length)},At)}},r):null}}})},e)})}function Dt({text:e,onFinishedTyping:t}){let n=re(e),r=n.length,[i,a]=(0,Ot.useState)(-12),o=(0,Ot.useRef)(!1);return(0,Ot.useEffect)(()=>{o.current||i===r&&(t(),o.current=!0)},[i,r,t]),Xe(()=>{a(e=>e+1)},kt),(0,Y.jsxs)(`p`,{className:`font-normal`,children:[n.slice(0,Math.max(i,0)).join(``),(0,Y.jsxs)(`span`,{className:x(`font-circle`,{invisible:i>r+12}),children:[`​`,`●`]})]})}var Ot,Y,kt,At,jt,Mt=e((()=>{s(),Ke(),W(),G(),Ue(),a(),Ot=t(je()),Ae(),Y=q(),kt=40,At=2500,jt=De({marketingExample1:{id:`PvNRKc`,defaultMessage:`<title>Recommend a dish</title><body>to bring to a potluck</body>`},marketingExample2:{id:`x6dDU4`,defaultMessage:`<title>Recommend a dish</title><body>to impress a date who's a picky eater</body>`},marketingExample3:{id:`dVTBN5`,defaultMessage:`<title>Help me debug</title><body>a Python script automating daily reports</body>`},marketingExample4:{id:`Hlddw+`,defaultMessage:`<title>Help me debug</title><body>why the linked list appears empty after I've reversed it</body>`},marketingExample5:{id:`faJr4O`,defaultMessage:`<title>Draft an email</title><body>to request a quote from local plumbers</body>`},marketingExample6:{id:`oV5RJ5`,defaultMessage:`<title>Draft an email</title><body>requesting a deadline extension for my project</body>`},marketingExample7:{id:`vL3rX1`,defaultMessage:`<title>Summarize this article</title><body>into three key points</body>`},marketingExample8:{id:`xo9nQj`,defaultMessage:`<title>Summarize this article</title><body>as a table of pros and cons</body>`},marketingExample9:{id:`VVg3aa`,defaultMessage:`<title>Write a text</title><body>asking a friend to be my plus-one at a wedding</body>`},marketingExample10:{id:`8Vl7TM`,defaultMessage:`<title>Write a text</title><body>that goes with a kitten gif for a friend having a rough day</body>`},marketingExample11:{id:`dXqZbT`,defaultMessage:`<title>Suggest fun activities</title><body>for a family of 4 to do indoors on a rainy day</body>`},marketingExample12:{id:`h09XOo`,defaultMessage:`<title>Suggest fun activities</title><body>for a team-building day with remote employees</body>`},marketingExample13:{id:`6FcHEa`,defaultMessage:`<title>Brainstorm names</title><body>for my fantasy football team</body>`},marketingExample14:{id:`O6iNBu`,defaultMessage:`<title>Brainstorm names</title><body>for an orange cat we're adopting from the shelter</body>`},marketingExample15:{id:`uw95Qj`,defaultMessage:`<title>Give me ideas</title><body>for what to do with my kids' art</body>`},marketingExample16:{id:`HQTYuP`,defaultMessage:`<title>Give me ideas</title><body>for a customer loyalty program in a small bookstore</body>`},marketingExample17:{id:`s3Gh5S`,defaultMessage:`<title>Plan a trip</title><body>to see the northern lights in Norway</body>`},marketingExample18:{id:`517NID`,defaultMessage:`<title>Plan a trip</title><body>to experience Seoul like a local</body>`},marketingExample19:{id:`EASxoK`,defaultMessage:`<title>Write a thank-you note</title><body>to my interviewer</body>`},marketingExample20:{id:`ozMspN`,defaultMessage:`<title>Write a thank-you note</title><body>to our babysitter for the last-minute help</body>`},marketingExample21:{id:`2o1b9o`,defaultMessage:`<title>Help me pick</title><body>a gift for my dad who loves fishing</body>`},marketingExample22:{id:`TysYjq`,defaultMessage:`<title>Help me pick</title><body>an outfit that will look good on camera</body>`},marketingExample23:{id:`pVmQs6`,defaultMessage:`<title>Improve my post</title><body>for hiring a store associate</body>`},marketingExample24:{id:`mvvlCD`,defaultMessage:`<title>Improve my post</title><body>for selling a used vacuum in good condition</body>`}})}));function Nt(){return(0,Pt.jsxs)(`div`,{className:`relative hidden flex-1 flex-col justify-center px-5 pt-8 text-[#FE7600] md:flex md:px-6 md:py-[22px] lg:px-8 dark:text-[#D292FF]`,children:[(0,Pt.jsx)(`nav`,{className:`start-0 top-8 flex w-full px-6 sm:absolute md:top-[22px] md:px-6 lg:px-8`,children:(0,Pt.jsx)(qe,{})}),(0,Pt.jsx)(`div`,{className:`flex flex-col text-[32px] leading-[1.2] md:text-[40px]`,"aria-hidden":`true`,children:(0,Pt.jsx)(g,{children:(0,Pt.jsx)(Et,{})})})]})}var Pt,Ft=e((()=>{tt(),y(),Mt(),Pt=q()}));function It(e){"use forget";let t=(0,Bt.c)(6),{prompt:n,shouldReduceMotion:r}=e,[i,a]=(0,Vt.useState)(``),o,s;t[0]!==n||t[1]!==r?(o=()=>{let e,t=window.setTimeout(()=>{if(r){a(n);return}let t=Array.from(n),i=0;e=window.setInterval(()=>{i+=1,a(t.slice(0,i).join(``)),i>=t.length&&window.clearInterval(e)},38)},r?0:160);return()=>{window.clearTimeout(t),window.clearInterval(e)}},s=[n,r],t[0]=n,t[1]=r,t[2]=o,t[3]=s):(o=t[2],s=t[3]),(0,Vt.useEffect)(o,s);let c;return t[4]===i?c=t[5]:(c=(0,X.jsx)(`span`,{className:`truncate text-lg empty:hidden lg:text-2xl`,children:i}),t[4]=i,t[5]=c),c}function Lt(e){"use forget";let t=(0,Bt.c)(29),{isNoAuthExitAvailable:n}=e,r=ze(),i=B(L),[a,o]=(0,Vt.useState)(0),[s,c]=(0,Vt.useState)(!1),l=Ut[a],u;t[0]!==l||t[1]!==r?(u=r.formatMessage(Ht[l]),t[0]=l,t[1]=r,t[2]=u):u=t[2];let d=u,f,p;t[3]!==s||t[4]!==i?(f=()=>{if(s||i)return;let e=window.setInterval(()=>{o(zt)},5e3);return()=>window.clearInterval(e)},p=[s,i],t[3]=s,t[4]=i,t[5]=f,t[6]=p):(f=t[5],p=t[6]),(0,Vt.useEffect)(f,p);let m;t[7]===a?m=t[8]:(m=Ut.map((e,t)=>(0,X.jsx)(`div`,{"aria-hidden":`true`,"data-testid":`photo-login-image`,style:{backgroundImage:`url(/images/auth/login/${e}.jpg)`},className:x(`absolute inset-0 size-full bg-cover bg-center motion-safe:transition-opacity motion-safe:duration-500`,a===t?`opacity-100`:`opacity-0`)},e)),t[7]=a,t[8]=m);let h;t[9]===Symbol.for(`react.memo_cache_sentinel`)?(h=(0,X.jsx)(`div`,{className:`absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent`}),t[9]=h):h=t[9];let g;t[10]!==l||t[11]!==n?(g=n?(0,X.jsx)(Pe,{to:`/?slm=1`,className:x(`absolute start-6 top-6 z-10 lg:start-10 lg:top-8`,l===`desk`?`text-black`:`text-white`),children:(0,X.jsx)(qe,{})}):(0,X.jsx)(`div`,{className:x(`absolute start-6 top-6 z-10 lg:start-10 lg:top-8`,l===`desk`?`text-black`:`text-white`),children:(0,X.jsx)(qe,{})}),t[10]=l,t[11]=n,t[12]=g):g=t[12];let _;t[13]!==r||t[14]!==s||t[15]!==i?(_=!i&&(0,X.jsx)(`button`,{type:`button`,"aria-label":r.formatMessage(s?Ht.playCarousel:Ht.pauseCarousel),className:`interactive-button absolute end-6 top-6 z-10 rounded-full bg-black/50 p-2 text-white lg:end-10 lg:top-8`,onClick:()=>c(Rt),children:s?(0,X.jsx)(at,{className:`icon`}):(0,X.jsx)(ot,{className:`icon`})}),t[13]=r,t[14]=s,t[15]=i,t[16]=_):_=t[16];let v;t[17]!==l||t[18]!==i||t[19]!==d?(v=(0,X.jsx)(It,{prompt:d,shouldReduceMotion:i},l),t[17]=l,t[18]=i,t[19]=d,t[20]=v):v=t[20];let y;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(y=(0,X.jsx)(`span`,{className:`size-4 shrink-0 rounded-full bg-white lg:size-5`}),t[21]=y):y=t[21];let b;t[22]===v?b=t[23]:(b=(0,X.jsxs)(`div`,{"data-testid":`photo-login-prompt`,className:`absolute start-6 bottom-8 z-10 flex max-w-[calc(100%-3rem)] items-center gap-3 text-white lg:start-10 lg:bottom-10 lg:gap-4`,children:[v,y]}),t[22]=v,t[23]=b);let S;return t[24]!==b||t[25]!==m||t[26]!==g||t[27]!==_?(S=(0,X.jsxs)(`div`,{className:`relative hidden min-h-screen overflow-hidden md:block`,children:[m,h,g,_,b]}),t[24]=b,t[25]=m,t[26]=g,t[27]=_,t[28]=S):S=t[28],S}function Rt(e){return!e}function zt(e){return(e+1)%Ut.length}var Bt,Vt,X,Ht,Ut,Wt=e((()=>{Bt=Re(),tt(),it(),rt(),ie(),r(),ve(),G(),Vt=t(je()),Ae(),ke(),X=q(),Ht=De({recipe:{id:`Login.photoPrompt.recipe`,defaultMessage:`Walk me through this recipe`},desk:{id:`Login.photoPrompt.desk`,defaultMessage:`Make a plan from these notes`},gym:{id:`Login.photoPrompt.gym`,defaultMessage:`Act as my personal trainer`},pauseCarousel:{id:`Login.photoCarousel.pause`,defaultMessage:`Pause photo carousel`},playCarousel:{id:`Login.photoCarousel.play`,defaultMessage:`Play photo carousel`}}),Ut=[`recipe`,`desk`,`gym`]}));function Gt(){let e=I().userCountry?.toLowerCase();T.count(A.DEFAULT,sn,{program_id:on,entrypoint:`rate_limit`,device_type:h()?`mobile`:`desktop`,...e==null?{}:{country:e}})}function Kt(e){return an.test(new URL(e,`https://chatgpt.com`).pathname)}function qt(){switch(U()){case K.PersonalGoalPlan:return $.valuePropSubtitlePersonalGoalPlan;case K.ToughQuestions:return $.valuePropSubtitleToughQuestions;case K.BuildSkills:return $.valuePropSubtitleBuildSkills;case K.LearnSolveProgress:return $.valuePropSubtitleLearnSolveProgress;case K.BigQuestionsPersonalGoals:return $.valuePropSubtitleBigQuestionsPersonalGoals;default:return $.valuePropSubtitle}}function Jt(e){"use forget";let t=(0,nn.c)(71),{auth0Provider:n,cfConnectingIp:r,isStorageComplianceEnabled:i,stagingCallbackUrl:a}=e,{hash:o}=Te(),[s]=Me(),c;if(t[0]!==s||t[1]!==a){let e=s.get(`next`);c=a??(e&&le(e)?e:`/`),t[0]=s,t[1]=a,t[2]=c}else c=t[2];let l=c+o,u;t[3]===l?u=t[4]:(u=St(l),t[3]=l,t[4]=u);let d=u,f;t[5]===l?f=t[6]:(f=Kt(l),t[5]=l,t[6]=f);let m=f,h=ze(),_=we(),v=(0,Z.useRef)(!1),y=(0,Z.useRef)(!1),b;t[7]===s?b=t[8]:(b=s.get(`sso`),t[7]=s,t[8]=b);let x=b,S;t[9]!==s||t[10]!==x?(S=x?s.get(`connection`):void 0,t[9]=s,t[10]=x,t[11]=S):S=t[11];let C=S,w;t[12]!==s||t[13]!==x?(w=x?s.get(`accept_wId`):void 0,t[12]=s,t[13]=x,t[14]=w):w=t[14];let T=w,D;t[15]!==s||t[16]!==T?(D=T?s.get(`login_hint`):void 0,t[15]=s,t[16]=T,t[17]=D):D=t[17];let k=D,te;t[18]!==n||t[19]!==s?(te=xe(s)||n,t[18]=n,t[19]=s,t[20]=te):te=t[20];let ne=te,A;t[21]===Symbol.for(`react.memo_cache_sentinel`)?(A=ge(),t[21]=A):A=t[21];let re=A,j;t[22]===x?j=t[23]:(j=!x&&!he()&&pe(),t[22]=x,t[23]=j);let M=j,N=!M&&re.variant===me.Default,ie=re.useNoAuthHoldoutUx,oe,P;t[24]!==ne||t[25]!==l||t[26]!==x||t[27]!==T||t[28]!==C||t[29]!==k?(oe=()=>{if(x){let e=p.getCookie(de.DeviceId)??``;(0,rn.signIn)(ne,{callbackUrl:l},{[fe]:ye(),...e?{device_id:e}:{},...k?{login_hint:k}:{},...T?{accept_wId:T}:{},...C?{connection:C,connection_provider:C.startsWith(`conn_`)||C.startsWith(`oaisaml_`)?E.WorkOS.toString():E.Auth0.toString()}:{},...ee(e)})}},P=[l,x,C,k,T,ne],t[24]=ne,t[25]=l,t[26]=x,t[27]=T,t[28]=C,t[29]=k,t[30]=oe,t[31]=P):(oe=t[30],P=t[31]),(0,Z.useEffect)(oe,P);let se;t[32]!==r||t[33]!==d?.planType?(se=()=>{ae.logEventWithStatsig(`Logged Out: Opened Auth Login Page`,`chatgpt_auth_login_page_load`,{cfConnectingIp:r,selected_plan_type:d?.planType??`none`})},t[32]=r,t[33]=d?.planType,t[34]=se):se=t[34];let ce=d?.planType,F;t[35]!==r||t[36]!==ce?(F=[r,ce],t[35]=r,t[36]=ce,t[37]=F):F=t[37],(0,Z.useEffect)(se,F);let I,L;t[38]===m?(I=t[39],L=t[40]):(I=()=>{if(!m||y.current)return;y.current=!0,Gt();let e=ae.logStructuredEvent(`ChatgptFreeReferralAuthPageShown`,{legacyStatsigEventName:`chatgpt_free_referral_auth_page_viewed`,programId:on,entryPoint:`rate_limit`});ue.logEvent(`chatgpt_free_referral_auth_page_viewed`,null,{program_id:on,entrypoint:`rate_limit`,...e?{unique_event_id:e}:{}})},L=[m],t[38]=m,t[39]=I,t[40]=L),(0,Z.useEffect)(I,L);let R;t[41]===Symbol.for(`react.memo_cache_sentinel`)?(R=[],t[41]=R):R=t[41],(0,Z.useEffect)(Yt,R);let z,B;t[42]!==h||t[43]!==s||t[44]!==_?(z=()=>{if(v.current)return;v.current=!0;let e=s.get(`inv_ws_name`),t=s.get(`inv_email`),n=s.get(`invite_toast`);e&&n===`seat_upgrade_approved`?_.success(h.formatMessage(nt.seatUpgradeApprovedToastMessage,{workspace_name:e}),{hasCloseButton:!0,duration:600}):e&&t&&_.success(h.formatMessage(nt.invitedToastMessage,{workspace_name:e,email:t}),{hasCloseButton:!0,duration:600})},B=[s,h,_],t[42]=h,t[43]=s,t[44]=_,t[45]=z,t[46]=B):(z=t[45],B=t[46]),(0,Z.useEffect)(z,B);let V=O(),H;t[47]===h?H=t[48]:(H=h.formatMessage({id:`Login.pageHeadTitle`,defaultMessage:`Get started | ChatGPT`}),t[47]=h,t[48]=H);let U;t[49]===H?U=t[50]:(U=(0,Q.jsx)(`title`,{children:H}),t[49]=H,t[50]=U);let W=U;if(x)return W;let G;t[51]===h?G=t[52]:(G=h.formatMessage({id:`Login.pageDescription`,defaultMessage:`Log in or sign up to ChatGPT`}),t[51]=h,t[52]=G);let _e;t[53]===G?_e=t[54]:(_e=(0,Q.jsx)(`meta`,{name:`description`,content:G}),t[53]=G,t[54]=_e);let ve=N?void 0:V?`#00002E`:`#FFFFDB`,K;t[55]===ve?K=t[56]:(K={minHeight:`100dvh`,backgroundColor:ve},t[55]=ve,t[56]=K);let be;t[57]!==M||t[58]!==N||t[59]!==i||t[60]!==l||t[61]!==d?(be=(0,Q.jsx)(ln,{nextUrl:l,selectedPlanIntent:d,isStorageComplianceEnabled:i,isPlainLoginPage:N,useNoAuthHoldoutUx:ie,isPhotoLoginPage:M}),t[57]=M,t[58]=N,t[59]=i,t[60]=l,t[61]=d,t[62]=be):be=t[62];let Se;t[63]===Symbol.for(`react.memo_cache_sentinel`)?(Se=(0,Q.jsx)(g,{children:(0,Q.jsx)(We,{})}),t[63]=Se):Se=t[63];let Ce;t[64]!==K||t[65]!==be?(Ce=(0,Q.jsxs)(`div`,{className:`flex min-h-screen flex-col justify-between`,style:K,children:[be,Se]}),t[64]=K,t[65]=be,t[66]=Ce):Ce=t[66];let q;return t[67]!==W||t[68]!==_e||t[69]!==Ce?(q=(0,Q.jsxs)(Q.Fragment,{children:[W,_e,Ce]}),t[67]=W,t[68]=_e,t[69]=Ce,t[70]=q):q=t[70],q}function Yt(){window.location.hash===`#pricing`&&p.setBooleanCookie(de.ShowPaymentModal,!0,{maxAge:21600})}function Xt(e){"use forget";let t=(0,nn.c)(60),{nextUrl:n,selectedPlanIntent:r,isStorageComplianceEnabled:i,isPlainLoginPage:a,useNoAuthHoldoutUx:o,simplifiedHeader:s,isPhotoLoginPage:l}=e,u=s!==void 0&&s,d=l!==void 0&&l,f=ze(),[m]=Me(),h;t[0]!==m||t[1]!==r?(h=Ct({isSso:m.has(`sso`),readTreatment:$t,selectedPlanIntent:r}),t[0]=m,t[1]=r,t[2]=h):h=t[2];let _=h,v=r==null?null:ut(r.accountPlanType,f),y=r?.planType,S;t[3]===n?S=t[4]:(S=Kt(n),t[3]=n,t[4]=S);let C=S,w;t[5]!==f||t[6]!==C||t[7]!==n?(w=C?f.formatMessage($.referralTitle):/^\/invite\/?$/.test(n)?f.formatMessage($.workspaceInviteTitle):null,t[5]=f,t[6]=C,t[7]=n,t[8]=w):w=t[8];let T=w,[E]=(0,Z.useState)(Qt),D;t[9]===m?D=t[10]:(D=()=>{let e=p.getCookie(de.AuthSessionLoggingId);return e&&xt(m,{authSessionLoggingId:e,deviceId:p.getCookie(de.DeviceId)})?e:Le()},t[9]=m,t[10]=D);let[O]=(0,Z.useState)(D),k;t[11]===Symbol.for(`react.memo_cache_sentinel`)?(k=ee(c()),t[11]=k):k=t[11];let A;t[12]===O?A=t[13]:(A={...k,[fe]:O},t[12]=O,t[13]=A);let re=A,j;t[14]===Symbol.for(`react.memo_cache_sentinel`)?(j=he(),t[14]=j):j=t[14];let M=j,N;t[15]===M?N=t[16]:(N=!M||Ce(),t[15]=M,t[16]=N);let ie=N&&!o&&!C,ae,P;t[17]!==O||t[18]!==E||t[19]!==y?(ae=()=>{p.getCookie(de.AuthSessionLoggingId)!==O&&p.setCookie(de.AuthSessionLoggingId,O);let e=He();(E||e?.value)&&Be(`info`,`Login email hydration checkpoint`,{phase:`hydration_complete`,auth_session_logging_id:O,captured_email_present:!!E,current_email_present:!!e?.value,email_value_preserved:e?.value===E,email_input_focused:document.activeElement===e}),ne({authSessionLoggingId:O,actionType:b.ACCESS_FLOW_ENTRY_ACTION_TYPE_PAGE_LOADED,entryPoint:se.ACCESS_FLOW_ENTRY_POINT_AUTH_LOGIN_PAGE,entryTrigger:oe.ACCESS_FLOW_ENTRY_TRIGGER_AUTOMATIC,cta:y==null?`auto-triggerred`:`selected-plan-intent:${y}`})},P=[O,E,y],t[17]=O,t[18]=E,t[19]=y,t[20]=ae,t[21]=P):(ae=t[20],P=t[21]),(0,Z.useEffect)(ae,P);let ce=!a&&`bg-white dark:bg-black`,F;t[22]===ce?F=t[23]:(F=x(`relative flex grow flex-col items-center justify-between px-5 py-8 text-black md:px-6 dark:text-white`,ce),t[22]=ce,t[23]=F);let I=yt,L=Zt,le=T??(_&&v!=null?f.formatMessage($.selectedPlanIntentTitle,{plan:v}):d?f.formatMessage($.photoTitle,{lineBreak:`
-`}):f.formatMessage(o?$.valuePropTitle:u?nt.pageTitle:$.standardTitle)),R=d?`text-heading-1 whitespace-pre-line`:void 0,ue;t[24]!==T||t[25]!==f||t[26]!==d||t[27]!==a||t[28]!==_||t[29]!==u||t[30]!==o?(ue=T==null?d&&!_?f.formatMessage($.valuePropSubtitle):o?f.formatMessage(qt()):_||u||a?null:f.formatMessage({id:`AuthModal.subtitle`,defaultMessage:`You’ll get smarter responses and can upload files, images, and more.`}):null,t[24]=T,t[25]=f,t[26]=d,t[27]=a,t[28]=_,t[29]=u,t[30]=o,t[31]=ue):ue=t[31];let z;t[32]===f?z=t[33]:(z=f.formatMessage({id:`Login.tryItFirst`,defaultMessage:`Try it first`}),t[32]=f,t[33]=z);let B=d?`photo`:`default`,pe;t[34]!==I||t[35]!==re||t[36]!==E||t[37]!==C||t[38]!==ie||t[39]!==n||t[40]!==L||t[41]!==le||t[42]!==R||t[43]!==ue||t[44]!==z||t[45]!==B?(pe=(0,Q.jsx)(I,{initialEmail:E,isUsernameOnTop:!1,onClose:L,title:le,titleClassName:R,subtitle:ue,callbackUrl:n,authorizationParams:re,accessFlowEntryPoint:se.ACCESS_FLOW_ENTRY_POINT_AUTH_LOGIN_PAGE,accessFlowPage:te.ACCESS_FLOW_PAGE_TYPE_CHATGPT_WEB_LOGIN_PAGE,hidePhoneOption:C,isStayLoggedOutVisible:ie,stayLoggedOutText:z,stayLoggedOutPlacement:`bottom`,isInModal:!1,collapsedLoginVariant:`none`,layoutVariant:B}),t[34]=I,t[35]=re,t[36]=E,t[37]=C,t[38]=ie,t[39]=n,t[40]=L,t[41]=le,t[42]=R,t[43]=ue,t[44]=z,t[45]=B,t[46]=pe):pe=t[46];let me;t[47]!==M||t[48]!==d?(me=!d&&(0,Q.jsx)(g,{children:(0,Q.jsx)(cn,{isElectron:M})}),t[47]=M,t[48]=d,t[49]=me):me=t[49];let V;t[50]!==pe||t[51]!==me?(V=(0,Q.jsx)(`div`,{className:`relative flex w-full grow flex-col items-center justify-center`,children:(0,Q.jsxs)(`div`,{className:`mt-5 w-full max-w-[440px]`,"data-login-form-container":`true`,children:[pe,me]})}),t[50]=pe,t[51]=me,t[52]=V):V=t[52];let H;t[53]===Symbol.for(`react.memo_cache_sentinel`)?(H=(0,Q.jsx)(_e,{}),t[53]=H):H=t[53];let U;t[54]===i?U=t[55]:(U=(0,Q.jsxs)(`div`,{className:`mt-10 flex flex-col items-center justify-center`,children:[H,(0,Q.jsx)(_t,{isStorageComplianceEnabled:i})]}),t[54]=i,t[55]=U);let W;return t[56]!==F||t[57]!==V||t[58]!==U?(W=(0,Q.jsxs)(`div`,{className:F,children:[V,U]}),t[56]=F,t[57]=V,t[58]=U,t[59]=W):W=t[59],W}function Zt(){}function Qt(){return He()?.value}function $t(){return j(`3233347819`).get(`show_selected_plan_intent`,!1)}function en(e){"use forget";let t=(0,nn.c)(23),{nextUrl:n,selectedPlanIntent:r,isStorageComplianceEnabled:i,isPlainLoginPage:a,useNoAuthHoldoutUx:o,isPhotoLoginPage:s}=e,c=ze();if(a){let e;t[0]!==c||t[1]!==o?(e=o?(0,Q.jsx)(`div`,{className:`text-token-text-primary absolute start-5 top-5 md:start-8 md:top-6`,children:(0,Q.jsx)(qe,{})}):(0,Q.jsx)(Pe,{to:`/?slm=1`,className:`text-token-text-primary absolute start-5 top-5 md:start-8 md:top-6`,"aria-label":c.formatMessage({id:`Login.noAuthWordmarkLink`,defaultMessage:`ChatGPT home`}),children:(0,Q.jsx)(qe,{})}),t[0]=c,t[1]=o,t[2]=e):e=t[2];let a;t[3]!==i||t[4]!==n||t[5]!==r||t[6]!==o?(a=(0,Q.jsx)(`div`,{className:`flex w-full max-w-[520px]`,children:(0,Q.jsx)(Xt,{nextUrl:n,selectedPlanIntent:r,isStorageComplianceEnabled:i,isPlainLoginPage:!0,useNoAuthHoldoutUx:o})}),t[3]=i,t[4]=n,t[5]=r,t[6]=o,t[7]=a):a=t[7];let s;return t[8]!==e||t[9]!==a?(s=(0,Q.jsxs)(`div`,{className:`relative flex w-screen flex-1 justify-center`,children:[e,a]}),t[8]=e,t[9]=a,t[10]=s):s=t[10],s}let l;t[11]!==s||t[12]!==o?(l=s?(0,Q.jsx)(Lt,{isNoAuthExitAvailable:!o}):(0,Q.jsx)(Nt,{}),t[11]=s,t[12]=o,t[13]=l):l=t[13];let u;t[14]!==s||t[15]!==i||t[16]!==n||t[17]!==r||t[18]!==o?(u=(0,Q.jsx)(Xt,{nextUrl:n,selectedPlanIntent:r,isStorageComplianceEnabled:i,isPlainLoginPage:!1,useNoAuthHoldoutUx:o,simplifiedHeader:!0,isPhotoLoginPage:s}),t[14]=s,t[15]=i,t[16]=n,t[17]=r,t[18]=o,t[19]=u):u=t[19];let d;return t[20]!==l||t[21]!==u?(d=(0,Q.jsxs)(`div`,{className:`flex w-screen flex-1 flex-col md:grid md:grid-cols-2 lg:grid-cols-[60%_40%]`,children:[l,u]}),t[20]=l,t[21]=u,t[22]=d):d=t[22],d}function tn(){et.recordCodexAppSurfaceAction(`chatgpt_auth_login_desktop_app`,`download`)}var nn,rn,Z,Q,$,an,on,sn,cn,ln,un,dn,fn=e((()=>{ke(),nn=Re(),_(),gt(),z(),Tt(),vt(),Ve(),bt(),Je(),F(),Ye(),tt(),ft(),mt(),i(),P(),Ft(),Wt(),ie(),f(),Qe(),V(),y(),o(),C(),w(),m(),lt(),S(),d(),be(),H(),l(),v(),M(),Se(),Ge(),dt(),G(),rn=Ie(),Z=t(je()),Ae(),Ne(),W(),Q=q(),$=De({standardTitle:{id:`AuthModal.title`,defaultMessage:`Log in or sign up`},valuePropTitle:{id:`Login.valuePropTitle`,defaultMessage:`Log in to start chatting`},valuePropSubtitle:{id:`Login.valuePropSubtitle`,defaultMessage:`Write, plan, learn, and create with ChatGPT`},photoTitle:{id:`Login.photoTitle`,defaultMessage:`Do anything,{lineBreak}one chat at a time`},valuePropSubtitlePersonalGoalPlan:{id:`Login.valuePropSubtitle.personalGoalPlan`,defaultMessage:`Turn your goals into a plan you can follow.`},valuePropSubtitleToughQuestions:{id:`Login.valuePropSubtitle.toughQuestions`,defaultMessage:`Work through tough questions and find a way forward.`},valuePropSubtitleBuildSkills:{id:`Login.valuePropSubtitle.buildSkills`,defaultMessage:`Build skills, understand more, and make progress faster.`},valuePropSubtitleLearnSolveProgress:{id:`Login.valuePropSubtitle.learnSolveProgress`,defaultMessage:`Learn, solve problems, and make progress on what matters.`},valuePropSubtitleBigQuestionsPersonalGoals:{id:`Login.valuePropSubtitle.bigQuestionsPersonalGoals`,defaultMessage:`From big questions to personal goals, take the next step.`},selectedPlanIntentTitle:{id:`Login.selectedPlanIntent.title`,defaultMessage:`Sign in to continue with {plan}`},referralTitle:{id:`Login.referralTitle`,defaultMessage:`Accept this referral`},workspaceInviteTitle:{id:`Login.workspaceInvite.title`,defaultMessage:`Log in or sign up to join this workspace`}}),an=/^\/refer\/[^/]+\/?$/,on=`chatgpt_referral_consumer_free`,sn=`chatgpt_free_referral_auth_page_viewed`,cn=e=>{"use forget";let t=(0,nn.c)(5),{isElectron:r}=e,i;t[0]===Symbol.for(`react.memo_cache_sentinel`)?(i=Ze(),t[0]=i):i=t[0];let a=i,o=a===`https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.dmg`?pt:a===`https://apps.microsoft.com/detail/9nt1r1c2hh7j`?ht:null,s;t[1]===r?s=t[2]:(s=!r&&o!=null&&u(),t[1]=r,t[2]=s);let c=s,l;return t[3]===c?l=t[4]:(l=c&&(0,Q.jsx)(`div`,{className:`mt-6`,children:(0,Q.jsx)(n,{as:`a`,color:`secondary`,fullWidth:!0,icon:o,openNewTab:!0,rel:`noopener`,size:`large`,to:a,onClick:tn,children:(0,Q.jsx)(Oe,{id:`Login.downloadDesktopApp`,defaultMessage:`Download desktop app`})})}),t[3]=c,t[4]=l),l},ln=e=>{"use forget";let t=(0,nn.c)(10),{nextUrl:n,selectedPlanIntent:r,isStorageComplianceEnabled:i,isPlainLoginPage:a,useNoAuthHoldoutUx:o,isPhotoLoginPage:s}=e,c;t[0]!==s||t[1]!==a||t[2]!==i||t[3]!==n||t[4]!==r||t[5]!==o?(c=(0,Q.jsx)(en,{nextUrl:n,selectedPlanIntent:r,isStorageComplianceEnabled:i,isPlainLoginPage:a,useNoAuthHoldoutUx:o,isPhotoLoginPage:s}),t[0]=s,t[1]=a,t[2]=i,t[3]=n,t[4]=r,t[5]=o,t[6]=c):c=t[6];let l;t[7]===Symbol.for(`react.memo_cache_sentinel`)?(l=void 0,t[7]=l):l=t[7];let u;return t[8]===c?u=t[9]:(u=(0,Q.jsxs)(Q.Fragment,{children:[c,l]}),t[8]=c,t[9]=u),u},un=()=>[...D],dn=Ee(function(){"use forget";let e=(0,nn.c)(2),t=Fe(),n;return e[0]===t?n=e[1]:(n=(0,Q.jsx)(Jt,{...t}),e[0]=t,e[1]=n),n})}));e((()=>{fn()}))();export{dn as default,un as meta};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $T as n,
+    A8 as r,
+    AH as i,
+    At as a,
+    C0 as o,
+    CQ as s,
+    Cat as c,
+    Crt as l,
+    Cz as u,
+    Dat as d,
+    E0 as f,
+    Eat as p,
+    F0 as m,
+    Fnt as h,
+    Fz as g,
+    IR as _,
+    Irt as v,
+    Iz as y,
+    JR as b,
+    K5 as x,
+    Knt as S,
+    LU as C,
+    Lit as w,
+    Lrt as T,
+    N0 as ee,
+    Nit as E,
+    OH as D,
+    ON as O,
+    Oct as k,
+    QR as te,
+    RR as ne,
+    Rrt as A,
+    SQ as re,
+    Srt as j,
+    TN as M,
+    Vst as N,
+    WF as ie,
+    Wnt as ae,
+    XR as oe,
+    Xh as P,
+    YR as se,
+    cn as ce,
+    eE as F,
+    fst as I,
+    gq as L,
+    hR as le,
+    hn as R,
+    hrt as ue,
+    hz as z,
+    j5 as B,
+    kat as de,
+    kit as fe,
+    kz as pe,
+    lz as me,
+    mL as V,
+    mR as H,
+    mz as U,
+    pL as he,
+    pst as W,
+    pz as ge,
+    q5 as G,
+    qh as _e,
+    rq as ve,
+    uz as K,
+    w0 as ye,
+    wat as be,
+    x0 as xe,
+    xnt as Se,
+    yz as Ce,
+    zU as we
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as Te,
+    Bn as q,
+    Ht as Ee,
+    Ln as De,
+    Nn as Oe,
+    Q as ke,
+    Rn as Ae,
+    Vn as je,
+    Vt as Me,
+    Zt as Ne,
+    it as Pe,
+    kt as Fe,
+    o as Ie,
+    rn as Le,
+    wn as Re,
+    zn as ze
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    i as Be,
+    n as Ve,
+    t as He
+} from "./d42ee766-o7vl4qh4y6dmhmh7.js";
+import {
+    $zt as Ue,
+    EKn as We,
+    MJ as Ge,
+    NJt as Ke,
+    O8 as qe,
+    OFt as Je,
+    OKn as Ye,
+    PJt as Xe,
+    _Kn as Ze,
+    bKn as Qe,
+    eBt as $e,
+    jJ as et,
+    k8 as tt,
+    kFt as nt
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    Jy as rt,
+    Xy as it,
+    Yy as at,
+    Zy as ot
+} from "./30901919-s8bko9nrkqwv6i4f.js";
+import {
+    Fu as st,
+    Iu as ct,
+    Nu as J,
+    Xf as lt,
+    Yf as ut
+} from "./c2675c8c-oz03twoan08d72ud.js";
+import {
+    Bb as dt
+} from "./8b34dbc2-lmwubajnld74ksfm.js";
+import {
+    g as ft,
+    h as pt,
+    m as mt,
+    p as ht
+} from "./c470f5ab-jwd0o7jx9i9say9k.js";
+import {
+    a as gt,
+    i as _t
+} from "./9bbac052-nadlmfa3ycvthdvm.js";
+import {
+    n as vt,
+    t as yt
+} from "./35711af7-obpiisgj5grklvz2.js";
+import {
+    n as bt,
+    r as xt
+} from "./877ce4d3-d0zlv3naj8f9x8q2.js";
+
+function St(e) {
+    if (!le(e)) return null;
+    let {
+        pathname: t
+    } = new URL(e, `https://chatgpt.com`), n = t.split(`/`).filter(Boolean);
+    if (n.length !== 2 || n[0] !== `purchase`) return null;
+    let r = n[1];
+    return ct(r) ? wt[r] ?? null : null
+}
+
+function Ct({
+    isSso: e,
+    readTreatment: t,
+    selectedPlanIntent: n
+}) {
+    return n != null && !e && t()
+}
+var wt, Tt = e((() => {
+    k(), st(), H(), wt = {
+        [J.Go]: {
+            accountPlanType: N.GO,
+            planType: J.Go
+        },
+        [J.Plus]: {
+            accountPlanType: N.PLUS,
+            planType: J.Plus
+        },
+        [J.Pro]: {
+            accountPlanType: N.PRO,
+            planType: J.Pro
+        },
+        [J.ProLite]: {
+            accountPlanType: N.PROLITE,
+            planType: J.ProLite
+        }
+    }
+}));
+
+function Et() {
+    let [e, t] = (0, Ot.useState)(0), n = (0, Ot.useRef)($e(Object.values(jt))), r = I().locale;
+    return (0, Y.jsx)(R, {
+        mode: `wait`,
+        initial: !1,
+        children: (0, Y.jsx)(ce.div, {
+            className: `-mt-4 flex w-full flex-col ps-5 md:ps-8 lg:ps-10`,
+            initial: {
+                opacity: 0,
+                y: 24
+            },
+            animate: {
+                opacity: 1,
+                y: 0
+            },
+            exit: {
+                opacity: 0,
+                y: -24
+            },
+            transition: {
+                duration: .2
+            },
+            children: (0, Y.jsx)(Oe, {
+                ...n.current[e],
+                values: {
+                    title: e => (0, Y.jsx)(`p`, {
+                        className: `font-bold`,
+                        children: e
+                    }, `title`),
+                    body: e => {
+                        let i = e?.[0];
+                        return typeof i == `string` ? (0, Y.jsx)(Dt, {
+                            text: i,
+                            onFinishedTyping: () => {
+                                setTimeout(() => {
+                                    t(e => (e + 1) % n.current.length)
+                                }, At)
+                            }
+                        }, r) : null
+                    }
+                }
+            })
+        }, e)
+    })
+}
+
+function Dt({
+    text: e,
+    onFinishedTyping: t
+}) {
+    let n = re(e),
+        r = n.length,
+        [i, a] = (0, Ot.useState)(-12),
+        o = (0, Ot.useRef)(!1);
+    return (0, Ot.useEffect)(() => {
+        o.current || i === r && (t(), o.current = !0)
+    }, [i, r, t]), Xe(() => {
+        a(e => e + 1)
+    }, kt), (0, Y.jsxs)(`p`, {
+        className: `font-normal`,
+        children: [n.slice(0, Math.max(i, 0)).join(``), (0, Y.jsxs)(`span`, {
+            className: x(`font-circle`, {
+                invisible: i > r + 12
+            }),
+            children: [`​`, `●`]
+        })]
+    })
+}
+var Ot, Y, kt, At, jt, Mt = e((() => {
+    s(), Ke(), W(), G(), Ue(), a(), Ot = t(je()), Ae(), Y = q(), kt = 40, At = 2500, jt = De({
+        marketingExample1: {
+            id: `PvNRKc`,
+            defaultMessage: `<title>Recommend a dish</title><body>to bring to a potluck</body>`
+        },
+        marketingExample2: {
+            id: `x6dDU4`,
+            defaultMessage: `<title>Recommend a dish</title><body>to impress a date who's a picky eater</body>`
+        },
+        marketingExample3: {
+            id: `dVTBN5`,
+            defaultMessage: `<title>Help me debug</title><body>a Python script automating daily reports</body>`
+        },
+        marketingExample4: {
+            id: `Hlddw+`,
+            defaultMessage: `<title>Help me debug</title><body>why the linked list appears empty after I've reversed it</body>`
+        },
+        marketingExample5: {
+            id: `faJr4O`,
+            defaultMessage: `<title>Draft an email</title><body>to request a quote from local plumbers</body>`
+        },
+        marketingExample6: {
+            id: `oV5RJ5`,
+            defaultMessage: `<title>Draft an email</title><body>requesting a deadline extension for my project</body>`
+        },
+        marketingExample7: {
+            id: `vL3rX1`,
+            defaultMessage: `<title>Summarize this article</title><body>into three key points</body>`
+        },
+        marketingExample8: {
+            id: `xo9nQj`,
+            defaultMessage: `<title>Summarize this article</title><body>as a table of pros and cons</body>`
+        },
+        marketingExample9: {
+            id: `VVg3aa`,
+            defaultMessage: `<title>Write a text</title><body>asking a friend to be my plus-one at a wedding</body>`
+        },
+        marketingExample10: {
+            id: `8Vl7TM`,
+            defaultMessage: `<title>Write a text</title><body>that goes with a kitten gif for a friend having a rough day</body>`
+        },
+        marketingExample11: {
+            id: `dXqZbT`,
+            defaultMessage: `<title>Suggest fun activities</title><body>for a family of 4 to do indoors on a rainy day</body>`
+        },
+        marketingExample12: {
+            id: `h09XOo`,
+            defaultMessage: `<title>Suggest fun activities</title><body>for a team-building day with remote employees</body>`
+        },
+        marketingExample13: {
+            id: `6FcHEa`,
+            defaultMessage: `<title>Brainstorm names</title><body>for my fantasy football team</body>`
+        },
+        marketingExample14: {
+            id: `O6iNBu`,
+            defaultMessage: `<title>Brainstorm names</title><body>for an orange cat we're adopting from the shelter</body>`
+        },
+        marketingExample15: {
+            id: `uw95Qj`,
+            defaultMessage: `<title>Give me ideas</title><body>for what to do with my kids' art</body>`
+        },
+        marketingExample16: {
+            id: `HQTYuP`,
+            defaultMessage: `<title>Give me ideas</title><body>for a customer loyalty program in a small bookstore</body>`
+        },
+        marketingExample17: {
+            id: `s3Gh5S`,
+            defaultMessage: `<title>Plan a trip</title><body>to see the northern lights in Norway</body>`
+        },
+        marketingExample18: {
+            id: `517NID`,
+            defaultMessage: `<title>Plan a trip</title><body>to experience Seoul like a local</body>`
+        },
+        marketingExample19: {
+            id: `EASxoK`,
+            defaultMessage: `<title>Write a thank-you note</title><body>to my interviewer</body>`
+        },
+        marketingExample20: {
+            id: `ozMspN`,
+            defaultMessage: `<title>Write a thank-you note</title><body>to our babysitter for the last-minute help</body>`
+        },
+        marketingExample21: {
+            id: `2o1b9o`,
+            defaultMessage: `<title>Help me pick</title><body>a gift for my dad who loves fishing</body>`
+        },
+        marketingExample22: {
+            id: `TysYjq`,
+            defaultMessage: `<title>Help me pick</title><body>an outfit that will look good on camera</body>`
+        },
+        marketingExample23: {
+            id: `pVmQs6`,
+            defaultMessage: `<title>Improve my post</title><body>for hiring a store associate</body>`
+        },
+        marketingExample24: {
+            id: `mvvlCD`,
+            defaultMessage: `<title>Improve my post</title><body>for selling a used vacuum in good condition</body>`
+        }
+    })
+}));
+
+function Nt() {
+    return (0, Pt.jsxs)(`div`, {
+        className: `relative hidden flex-1 flex-col justify-center px-5 pt-8 text-[#FE7600] md:flex md:px-6 md:py-[22px] lg:px-8 dark:text-[#D292FF]`,
+        children: [(0, Pt.jsx)(`nav`, {
+            className: `start-0 top-8 flex w-full px-6 sm:absolute md:top-[22px] md:px-6 lg:px-8`,
+            children: (0, Pt.jsx)(qe, {})
+        }), (0, Pt.jsx)(`div`, {
+            className: `flex flex-col text-[32px] leading-[1.2] md:text-[40px]`,
+            "aria-hidden": `true`,
+            children: (0, Pt.jsx)(g, {
+                children: (0, Pt.jsx)(Et, {})
+            })
+        })]
+    })
+}
+var Pt, Ft = e((() => {
+    tt(), y(), Mt(), Pt = q()
+}));
+
+function It(e) {
+    "use forget";
+    let t = (0, Bt.c)(6),
+        {
+            prompt: n,
+            shouldReduceMotion: r
+        } = e,
+        [i, a] = (0, Vt.useState)(``),
+        o, s;
+    t[0] !== n || t[1] !== r ? (o = () => {
+        let e, t = window.setTimeout(() => {
+            if (r) {
+                a(n);
+                return
+            }
+            let t = Array.from(n),
+                i = 0;
+            e = window.setInterval(() => {
+                i += 1, a(t.slice(0, i).join(``)), i >= t.length && window.clearInterval(e)
+            }, 38)
+        }, r ? 0 : 160);
+        return () => {
+            window.clearTimeout(t), window.clearInterval(e)
+        }
+    }, s = [n, r], t[0] = n, t[1] = r, t[2] = o, t[3] = s) : (o = t[2], s = t[3]), (0, Vt.useEffect)(o, s);
+    let c;
+    return t[4] === i ? c = t[5] : (c = (0, X.jsx)(`span`, {
+        className: `truncate text-lg empty:hidden lg:text-2xl`,
+        children: i
+    }), t[4] = i, t[5] = c), c
+}
+
+function Lt(e) {
+    "use forget";
+    let t = (0, Bt.c)(29),
+        {
+            isNoAuthExitAvailable: n
+        } = e,
+        r = ze(),
+        i = B(L),
+        [a, o] = (0, Vt.useState)(0),
+        [s, c] = (0, Vt.useState)(!1),
+        l = Ut[a],
+        u;
+    t[0] !== l || t[1] !== r ? (u = r.formatMessage(Ht[l]), t[0] = l, t[1] = r, t[2] = u) : u = t[2];
+    let d = u,
+        f, p;
+    t[3] !== s || t[4] !== i ? (f = () => {
+        if (s || i) return;
+        let e = window.setInterval(() => {
+            o(zt)
+        }, 5e3);
+        return () => window.clearInterval(e)
+    }, p = [s, i], t[3] = s, t[4] = i, t[5] = f, t[6] = p) : (f = t[5], p = t[6]), (0, Vt.useEffect)(f, p);
+    let m;
+    t[7] === a ? m = t[8] : (m = Ut.map((e, t) => (0, X.jsx)(`div`, {
+        "aria-hidden": `true`,
+        "data-testid": `photo-login-image`,
+        style: {
+            backgroundImage: `url(/images/auth/login/${e}.jpg)`
+        },
+        className: x(`absolute inset-0 size-full bg-cover bg-center motion-safe:transition-opacity motion-safe:duration-500`, a === t ? `opacity-100` : `opacity-0`)
+    }, e)), t[7] = a, t[8] = m);
+    let h;
+    t[9] === Symbol.for(`react.memo_cache_sentinel`) ? (h = (0, X.jsx)(`div`, {
+        className: `absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent`
+    }), t[9] = h) : h = t[9];
+    let g;
+    t[10] !== l || t[11] !== n ? (g = n ? (0, X.jsx)(Pe, {
+        to: `/?slm=1`,
+        className: x(`absolute start-6 top-6 z-10 lg:start-10 lg:top-8`, l === `desk` ? `text-black` : `text-white`),
+        children: (0, X.jsx)(qe, {})
+    }) : (0, X.jsx)(`div`, {
+        className: x(`absolute start-6 top-6 z-10 lg:start-10 lg:top-8`, l === `desk` ? `text-black` : `text-white`),
+        children: (0, X.jsx)(qe, {})
+    }), t[10] = l, t[11] = n, t[12] = g) : g = t[12];
+    let _;
+    t[13] !== r || t[14] !== s || t[15] !== i ? (_ = !i && (0, X.jsx)(`button`, {
+        type: `button`,
+        "aria-label": r.formatMessage(s ? Ht.playCarousel : Ht.pauseCarousel),
+        className: `interactive-button absolute end-6 top-6 z-10 rounded-full bg-black/50 p-2 text-white lg:end-10 lg:top-8`,
+        onClick: () => c(Rt),
+        children: s ? (0, X.jsx)(at, {
+            className: `icon`
+        }) : (0, X.jsx)(ot, {
+            className: `icon`
+        })
+    }), t[13] = r, t[14] = s, t[15] = i, t[16] = _) : _ = t[16];
+    let v;
+    t[17] !== l || t[18] !== i || t[19] !== d ? (v = (0, X.jsx)(It, {
+        prompt: d,
+        shouldReduceMotion: i
+    }, l), t[17] = l, t[18] = i, t[19] = d, t[20] = v) : v = t[20];
+    let y;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (y = (0, X.jsx)(`span`, {
+        className: `size-4 shrink-0 rounded-full bg-white lg:size-5`
+    }), t[21] = y) : y = t[21];
+    let b;
+    t[22] === v ? b = t[23] : (b = (0, X.jsxs)(`div`, {
+        "data-testid": `photo-login-prompt`,
+        className: `absolute start-6 bottom-8 z-10 flex max-w-[calc(100%-3rem)] items-center gap-3 text-white lg:start-10 lg:bottom-10 lg:gap-4`,
+        children: [v, y]
+    }), t[22] = v, t[23] = b);
+    let S;
+    return t[24] !== b || t[25] !== m || t[26] !== g || t[27] !== _ ? (S = (0, X.jsxs)(`div`, {
+        className: `relative hidden min-h-screen overflow-hidden md:block`,
+        children: [m, h, g, _, b]
+    }), t[24] = b, t[25] = m, t[26] = g, t[27] = _, t[28] = S) : S = t[28], S
+}
+
+function Rt(e) {
+    return !e
+}
+
+function zt(e) {
+    return (e + 1) % Ut.length
+}
+var Bt, Vt, X, Ht, Ut, Wt = e((() => {
+    Bt = Re(), tt(), it(), rt(), ie(), r(), ve(), G(), Vt = t(je()), Ae(), ke(), X = q(), Ht = De({
+        recipe: {
+            id: `Login.photoPrompt.recipe`,
+            defaultMessage: `Walk me through this recipe`
+        },
+        desk: {
+            id: `Login.photoPrompt.desk`,
+            defaultMessage: `Make a plan from these notes`
+        },
+        gym: {
+            id: `Login.photoPrompt.gym`,
+            defaultMessage: `Act as my personal trainer`
+        },
+        pauseCarousel: {
+            id: `Login.photoCarousel.pause`,
+            defaultMessage: `Pause photo carousel`
+        },
+        playCarousel: {
+            id: `Login.photoCarousel.play`,
+            defaultMessage: `Play photo carousel`
+        }
+    }), Ut = [`recipe`, `desk`, `gym`]
+}));
+
+function Gt() {
+    let e = I().userCountry?.toLowerCase();
+    T.count(A.DEFAULT, sn, {
+        program_id: on,
+        entrypoint: `rate_limit`,
+        device_type: h() ? `mobile` : `desktop`,
+        ...e == null ? {} : {
+            country: e
+        }
+    })
+}
+
+function Kt(e) {
+    return an.test(new URL(e, `https://chatgpt.com`).pathname)
+}
+
+function qt() {
+    switch (U()) {
+        case K.PersonalGoalPlan:
+            return $.valuePropSubtitlePersonalGoalPlan;
+        case K.ToughQuestions:
+            return $.valuePropSubtitleToughQuestions;
+        case K.BuildSkills:
+            return $.valuePropSubtitleBuildSkills;
+        case K.LearnSolveProgress:
+            return $.valuePropSubtitleLearnSolveProgress;
+        case K.BigQuestionsPersonalGoals:
+            return $.valuePropSubtitleBigQuestionsPersonalGoals;
+        default:
+            return $.valuePropSubtitle
+    }
+}
+
+function Jt(e) {
+    "use forget";
+    let t = (0, nn.c)(71),
+        {
+            auth0Provider: n,
+            cfConnectingIp: r,
+            isStorageComplianceEnabled: i,
+            stagingCallbackUrl: a
+        } = e,
+        {
+            hash: o
+        } = Te(),
+        [s] = Me(),
+        c;
+    if (t[0] !== s || t[1] !== a) {
+        let e = s.get(`next`);
+        c = a ?? (e && le(e) ? e : `/`), t[0] = s, t[1] = a, t[2] = c
+    } else c = t[2];
+    let l = c + o,
+        u;
+    t[3] === l ? u = t[4] : (u = St(l), t[3] = l, t[4] = u);
+    let d = u,
+        f;
+    t[5] === l ? f = t[6] : (f = Kt(l), t[5] = l, t[6] = f);
+    let m = f,
+        h = ze(),
+        _ = we(),
+        v = (0, Z.useRef)(!1),
+        y = (0, Z.useRef)(!1),
+        b;
+    t[7] === s ? b = t[8] : (b = s.get(`sso`), t[7] = s, t[8] = b);
+    let x = b,
+        S;
+    t[9] !== s || t[10] !== x ? (S = x ? s.get(`connection`) : void 0, t[9] = s, t[10] = x, t[11] = S) : S = t[11];
+    let C = S,
+        w;
+    t[12] !== s || t[13] !== x ? (w = x ? s.get(`accept_wId`) : void 0, t[12] = s, t[13] = x, t[14] = w) : w = t[14];
+    let T = w,
+        D;
+    t[15] !== s || t[16] !== T ? (D = T ? s.get(`login_hint`) : void 0, t[15] = s, t[16] = T, t[17] = D) : D = t[17];
+    let k = D,
+        te;
+    t[18] !== n || t[19] !== s ? (te = xe(s) || n, t[18] = n, t[19] = s, t[20] = te) : te = t[20];
+    let ne = te,
+        A;
+    t[21] === Symbol.for(`react.memo_cache_sentinel`) ? (A = ge(), t[21] = A) : A = t[21];
+    let re = A,
+        j;
+    t[22] === x ? j = t[23] : (j = !x && !he() && pe(), t[22] = x, t[23] = j);
+    let M = j,
+        N = !M && re.variant === me.Default,
+        ie = re.useNoAuthHoldoutUx,
+        oe, P;
+    t[24] !== ne || t[25] !== l || t[26] !== x || t[27] !== T || t[28] !== C || t[29] !== k ? (oe = () => {
+        if (x) {
+            let e = p.getCookie(de.DeviceId) ?? ``;
+            (0, rn.signIn)(ne, {
+                callbackUrl: l
+            }, {
+                [fe]: ye(),
+                ...e ? {
+                    device_id: e
+                } : {},
+                ...k ? {
+                    login_hint: k
+                } : {},
+                ...T ? {
+                    accept_wId: T
+                } : {},
+                ...C ? {
+                    connection: C,
+                    connection_provider: C.startsWith(`conn_`) || C.startsWith(`oaisaml_`) ? E.WorkOS.toString() : E.Auth0.toString()
+                } : {},
+                ...ee(e)
+            })
+        }
+    }, P = [l, x, C, k, T, ne], t[24] = ne, t[25] = l, t[26] = x, t[27] = T, t[28] = C, t[29] = k, t[30] = oe, t[31] = P) : (oe = t[30], P = t[31]), (0, Z.useEffect)(oe, P);
+    let se;
+    t[32] !== r || t[33] !== d?.planType ? (se = () => {
+        ae.logEventWithStatsig(`Logged Out: Opened Auth Login Page`, `chatgpt_auth_login_page_load`, {
+            cfConnectingIp: r,
+            selected_plan_type: d?.planType ?? `none`
+        })
+    }, t[32] = r, t[33] = d?.planType, t[34] = se) : se = t[34];
+    let ce = d?.planType,
+        F;
+    t[35] !== r || t[36] !== ce ? (F = [r, ce], t[35] = r, t[36] = ce, t[37] = F) : F = t[37], (0, Z.useEffect)(se, F);
+    let I, L;
+    t[38] === m ? (I = t[39], L = t[40]) : (I = () => {
+        if (!m || y.current) return;
+        y.current = !0, Gt();
+        let e = ae.logStructuredEvent(`ChatgptFreeReferralAuthPageShown`, {
+            legacyStatsigEventName: `chatgpt_free_referral_auth_page_viewed`,
+            programId: on,
+            entryPoint: `rate_limit`
+        });
+        ue.logEvent(`chatgpt_free_referral_auth_page_viewed`, null, {
+            program_id: on,
+            entrypoint: `rate_limit`,
+            ...e ? {
+                unique_event_id: e
+            } : {}
+        })
+    }, L = [m], t[38] = m, t[39] = I, t[40] = L), (0, Z.useEffect)(I, L);
+    let R;
+    t[41] === Symbol.for(`react.memo_cache_sentinel`) ? (R = [], t[41] = R) : R = t[41], (0, Z.useEffect)(Yt, R);
+    let z, B;
+    t[42] !== h || t[43] !== s || t[44] !== _ ? (z = () => {
+        if (v.current) return;
+        v.current = !0;
+        let e = s.get(`inv_ws_name`),
+            t = s.get(`inv_email`),
+            n = s.get(`invite_toast`);
+        e && n === `seat_upgrade_approved` ? _.success(h.formatMessage(nt.seatUpgradeApprovedToastMessage, {
+            workspace_name: e
+        }), {
+            hasCloseButton: !0,
+            duration: 600
+        }) : e && t && _.success(h.formatMessage(nt.invitedToastMessage, {
+            workspace_name: e,
+            email: t
+        }), {
+            hasCloseButton: !0,
+            duration: 600
+        })
+    }, B = [s, h, _], t[42] = h, t[43] = s, t[44] = _, t[45] = z, t[46] = B) : (z = t[45], B = t[46]), (0, Z.useEffect)(z, B);
+    let V = O(),
+        H;
+    t[47] === h ? H = t[48] : (H = h.formatMessage({
+        id: `Login.pageHeadTitle`,
+        defaultMessage: `Get started | ChatGPT`
+    }), t[47] = h, t[48] = H);
+    let U;
+    t[49] === H ? U = t[50] : (U = (0, Q.jsx)(`title`, {
+        children: H
+    }), t[49] = H, t[50] = U);
+    let W = U;
+    if (x) return W;
+    let G;
+    t[51] === h ? G = t[52] : (G = h.formatMessage({
+        id: `Login.pageDescription`,
+        defaultMessage: `Log in or sign up to ChatGPT`
+    }), t[51] = h, t[52] = G);
+    let _e;
+    t[53] === G ? _e = t[54] : (_e = (0, Q.jsx)(`meta`, {
+        name: `description`,
+        content: G
+    }), t[53] = G, t[54] = _e);
+    let ve = N ? void 0 : V ? `#00002E` : `#FFFFDB`,
+        K;
+    t[55] === ve ? K = t[56] : (K = {
+        minHeight: `100dvh`,
+        backgroundColor: ve
+    }, t[55] = ve, t[56] = K);
+    let be;
+    t[57] !== M || t[58] !== N || t[59] !== i || t[60] !== l || t[61] !== d ? (be = (0, Q.jsx)(ln, {
+        nextUrl: l,
+        selectedPlanIntent: d,
+        isStorageComplianceEnabled: i,
+        isPlainLoginPage: N,
+        useNoAuthHoldoutUx: ie,
+        isPhotoLoginPage: M
+    }), t[57] = M, t[58] = N, t[59] = i, t[60] = l, t[61] = d, t[62] = be) : be = t[62];
+    let Se;
+    t[63] === Symbol.for(`react.memo_cache_sentinel`) ? (Se = (0, Q.jsx)(g, {
+        children: (0, Q.jsx)(We, {})
+    }), t[63] = Se) : Se = t[63];
+    let Ce;
+    t[64] !== K || t[65] !== be ? (Ce = (0, Q.jsxs)(`div`, {
+        className: `flex min-h-screen flex-col justify-between`,
+        style: K,
+        children: [be, Se]
+    }), t[64] = K, t[65] = be, t[66] = Ce) : Ce = t[66];
+    let q;
+    return t[67] !== W || t[68] !== _e || t[69] !== Ce ? (q = (0, Q.jsxs)(Q.Fragment, {
+        children: [W, _e, Ce]
+    }), t[67] = W, t[68] = _e, t[69] = Ce, t[70] = q) : q = t[70], q
+}
+
+function Yt() {
+    window.location.hash === `#pricing` && p.setBooleanCookie(de.ShowPaymentModal, !0, {
+        maxAge: 21600
+    })
+}
+
+function Xt(e) {
+    "use forget";
+    let t = (0, nn.c)(60),
+        {
+            nextUrl: n,
+            selectedPlanIntent: r,
+            isStorageComplianceEnabled: i,
+            isPlainLoginPage: a,
+            useNoAuthHoldoutUx: o,
+            simplifiedHeader: s,
+            isPhotoLoginPage: l
+        } = e,
+        u = s !== void 0 && s,
+        d = l !== void 0 && l,
+        f = ze(),
+        [m] = Me(),
+        h;
+    t[0] !== m || t[1] !== r ? (h = Ct({
+        isSso: m.has(`sso`),
+        readTreatment: $t,
+        selectedPlanIntent: r
+    }), t[0] = m, t[1] = r, t[2] = h) : h = t[2];
+    let _ = h,
+        v = r == null ? null : ut(r.accountPlanType, f),
+        y = r?.planType,
+        S;
+    t[3] === n ? S = t[4] : (S = Kt(n), t[3] = n, t[4] = S);
+    let C = S,
+        w;
+    t[5] !== f || t[6] !== C || t[7] !== n ? (w = C ? f.formatMessage($.referralTitle) : /^\/invite\/?$/.test(n) ? f.formatMessage($.workspaceInviteTitle) : null, t[5] = f, t[6] = C, t[7] = n, t[8] = w) : w = t[8];
+    let T = w,
+        [E] = (0, Z.useState)(Qt),
+        D;
+    t[9] === m ? D = t[10] : (D = () => {
+        let e = p.getCookie(de.AuthSessionLoggingId);
+        return e && xt(m, {
+            authSessionLoggingId: e,
+            deviceId: p.getCookie(de.DeviceId)
+        }) ? e : Le()
+    }, t[9] = m, t[10] = D);
+    let [O] = (0, Z.useState)(D), k;
+    t[11] === Symbol.for(`react.memo_cache_sentinel`) ? (k = ee(c()), t[11] = k) : k = t[11];
+    let A;
+    t[12] === O ? A = t[13] : (A = {
+        ...k,
+        [fe]: O
+    }, t[12] = O, t[13] = A);
+    let re = A,
+        j;
+    t[14] === Symbol.for(`react.memo_cache_sentinel`) ? (j = he(), t[14] = j) : j = t[14];
+    let M = j,
+        N;
+    t[15] === M ? N = t[16] : (N = !M || Ce(), t[15] = M, t[16] = N);
+    let ie = N && !o && !C,
+        ae, P;
+    t[17] !== O || t[18] !== E || t[19] !== y ? (ae = () => {
+        p.getCookie(de.AuthSessionLoggingId) !== O && p.setCookie(de.AuthSessionLoggingId, O);
+        let e = He();
+        (E || e?.value) && Be(`info`, `Login email hydration checkpoint`, {
+            phase: `hydration_complete`,
+            auth_session_logging_id: O,
+            captured_email_present: !!E,
+            current_email_present: !!e?.value,
+            email_value_preserved: e?.value === E,
+            email_input_focused: document.activeElement === e
+        }), ne({
+            authSessionLoggingId: O,
+            actionType: b.ACCESS_FLOW_ENTRY_ACTION_TYPE_PAGE_LOADED,
+            entryPoint: se.ACCESS_FLOW_ENTRY_POINT_AUTH_LOGIN_PAGE,
+            entryTrigger: oe.ACCESS_FLOW_ENTRY_TRIGGER_AUTOMATIC,
+            cta: y == null ? `auto-triggerred` : `selected-plan-intent:${y}`
+        })
+    }, P = [O, E, y], t[17] = O, t[18] = E, t[19] = y, t[20] = ae, t[21] = P) : (ae = t[20], P = t[21]), (0, Z.useEffect)(ae, P);
+    let ce = !a && `bg-white dark:bg-black`,
+        F;
+    t[22] === ce ? F = t[23] : (F = x(`relative flex grow flex-col items-center justify-between px-5 py-8 text-black md:px-6 dark:text-white`, ce), t[22] = ce, t[23] = F);
+    let I = yt,
+        L = Zt,
+        le = T ?? (_ && v != null ? f.formatMessage($.selectedPlanIntentTitle, {
+            plan: v
+        }) : d ? f.formatMessage($.photoTitle, {
+            lineBreak: `
+`
+        }) : f.formatMessage(o ? $.valuePropTitle : u ? nt.pageTitle : $.standardTitle)),
+        R = d ? `text-heading-1 whitespace-pre-line` : void 0,
+        ue;
+    t[24] !== T || t[25] !== f || t[26] !== d || t[27] !== a || t[28] !== _ || t[29] !== u || t[30] !== o ? (ue = T == null ? d && !_ ? f.formatMessage($.valuePropSubtitle) : o ? f.formatMessage(qt()) : _ || u || a ? null : f.formatMessage({
+        id: `AuthModal.subtitle`,
+        defaultMessage: `You’ll get smarter responses and can upload files, images, and more.`
+    }) : null, t[24] = T, t[25] = f, t[26] = d, t[27] = a, t[28] = _, t[29] = u, t[30] = o, t[31] = ue) : ue = t[31];
+    let z;
+    t[32] === f ? z = t[33] : (z = f.formatMessage({
+        id: `Login.tryItFirst`,
+        defaultMessage: `Try it first`
+    }), t[32] = f, t[33] = z);
+    let B = d ? `photo` : `default`,
+        pe;
+    t[34] !== I || t[35] !== re || t[36] !== E || t[37] !== C || t[38] !== ie || t[39] !== n || t[40] !== L || t[41] !== le || t[42] !== R || t[43] !== ue || t[44] !== z || t[45] !== B ? (pe = (0, Q.jsx)(I, {
+        initialEmail: E,
+        isUsernameOnTop: !1,
+        onClose: L,
+        title: le,
+        titleClassName: R,
+        subtitle: ue,
+        callbackUrl: n,
+        authorizationParams: re,
+        accessFlowEntryPoint: se.ACCESS_FLOW_ENTRY_POINT_AUTH_LOGIN_PAGE,
+        accessFlowPage: te.ACCESS_FLOW_PAGE_TYPE_CHATGPT_WEB_LOGIN_PAGE,
+        hidePhoneOption: C,
+        isStayLoggedOutVisible: ie,
+        stayLoggedOutText: z,
+        stayLoggedOutPlacement: `bottom`,
+        isInModal: !1,
+        collapsedLoginVariant: `none`,
+        layoutVariant: B
+    }), t[34] = I, t[35] = re, t[36] = E, t[37] = C, t[38] = ie, t[39] = n, t[40] = L, t[41] = le, t[42] = R, t[43] = ue, t[44] = z, t[45] = B, t[46] = pe) : pe = t[46];
+    let me;
+    t[47] !== M || t[48] !== d ? (me = !d && (0, Q.jsx)(g, {
+        children: (0, Q.jsx)(cn, {
+            isElectron: M
+        })
+    }), t[47] = M, t[48] = d, t[49] = me) : me = t[49];
+    let V;
+    t[50] !== pe || t[51] !== me ? (V = (0, Q.jsx)(`div`, {
+        className: `relative flex w-full grow flex-col items-center justify-center`,
+        children: (0, Q.jsxs)(`div`, {
+            className: `mt-5 w-full max-w-[440px]`,
+            "data-login-form-container": `true`,
+            children: [pe, me]
+        })
+    }), t[50] = pe, t[51] = me, t[52] = V) : V = t[52];
+    let H;
+    t[53] === Symbol.for(`react.memo_cache_sentinel`) ? (H = (0, Q.jsx)(_e, {}), t[53] = H) : H = t[53];
+    let U;
+    t[54] === i ? U = t[55] : (U = (0, Q.jsxs)(`div`, {
+        className: `mt-10 flex flex-col items-center justify-center`,
+        children: [H, (0, Q.jsx)(_t, {
+            isStorageComplianceEnabled: i
+        })]
+    }), t[54] = i, t[55] = U);
+    let W;
+    return t[56] !== F || t[57] !== V || t[58] !== U ? (W = (0, Q.jsxs)(`div`, {
+        className: F,
+        children: [V, U]
+    }), t[56] = F, t[57] = V, t[58] = U, t[59] = W) : W = t[59], W
+}
+
+function Zt() {}
+
+function Qt() {
+    return He()?.value
+}
+
+function $t() {
+    return j(`3233347819`).get(`show_selected_plan_intent`, !1)
+}
+
+function en(e) {
+    "use forget";
+    let t = (0, nn.c)(23),
+        {
+            nextUrl: n,
+            selectedPlanIntent: r,
+            isStorageComplianceEnabled: i,
+            isPlainLoginPage: a,
+            useNoAuthHoldoutUx: o,
+            isPhotoLoginPage: s
+        } = e,
+        c = ze();
+    if (a) {
+        let e;
+        t[0] !== c || t[1] !== o ? (e = o ? (0, Q.jsx)(`div`, {
+            className: `text-token-text-primary absolute start-5 top-5 md:start-8 md:top-6`,
+            children: (0, Q.jsx)(qe, {})
+        }) : (0, Q.jsx)(Pe, {
+            to: `/?slm=1`,
+            className: `text-token-text-primary absolute start-5 top-5 md:start-8 md:top-6`,
+            "aria-label": c.formatMessage({
+                id: `Login.noAuthWordmarkLink`,
+                defaultMessage: `ChatGPT home`
+            }),
+            children: (0, Q.jsx)(qe, {})
+        }), t[0] = c, t[1] = o, t[2] = e) : e = t[2];
+        let a;
+        t[3] !== i || t[4] !== n || t[5] !== r || t[6] !== o ? (a = (0, Q.jsx)(`div`, {
+            className: `flex w-full max-w-[520px]`,
+            children: (0, Q.jsx)(Xt, {
+                nextUrl: n,
+                selectedPlanIntent: r,
+                isStorageComplianceEnabled: i,
+                isPlainLoginPage: !0,
+                useNoAuthHoldoutUx: o
+            })
+        }), t[3] = i, t[4] = n, t[5] = r, t[6] = o, t[7] = a) : a = t[7];
+        let s;
+        return t[8] !== e || t[9] !== a ? (s = (0, Q.jsxs)(`div`, {
+            className: `relative flex w-screen flex-1 justify-center`,
+            children: [e, a]
+        }), t[8] = e, t[9] = a, t[10] = s) : s = t[10], s
+    }
+    let l;
+    t[11] !== s || t[12] !== o ? (l = s ? (0, Q.jsx)(Lt, {
+        isNoAuthExitAvailable: !o
+    }) : (0, Q.jsx)(Nt, {}), t[11] = s, t[12] = o, t[13] = l) : l = t[13];
+    let u;
+    t[14] !== s || t[15] !== i || t[16] !== n || t[17] !== r || t[18] !== o ? (u = (0, Q.jsx)(Xt, {
+        nextUrl: n,
+        selectedPlanIntent: r,
+        isStorageComplianceEnabled: i,
+        isPlainLoginPage: !1,
+        useNoAuthHoldoutUx: o,
+        simplifiedHeader: !0,
+        isPhotoLoginPage: s
+    }), t[14] = s, t[15] = i, t[16] = n, t[17] = r, t[18] = o, t[19] = u) : u = t[19];
+    let d;
+    return t[20] !== l || t[21] !== u ? (d = (0, Q.jsxs)(`div`, {
+        className: `flex w-screen flex-1 flex-col md:grid md:grid-cols-2 lg:grid-cols-[60%_40%]`,
+        children: [l, u]
+    }), t[20] = l, t[21] = u, t[22] = d) : d = t[22], d
+}
+
+function tn() {
+    et.recordCodexAppSurfaceAction(`chatgpt_auth_login_desktop_app`, `download`)
+}
+var nn, rn, Z, Q, $, an, on, sn, cn, ln, un, dn, fn = e((() => {
+    ke(), nn = Re(), _(), gt(), z(), Tt(), vt(), Ve(), bt(), Je(), F(), Ye(), tt(), ft(), mt(), i(), P(), Ft(), Wt(), ie(), f(), Qe(), V(), y(), o(), C(), w(), m(), lt(), S(), d(), be(), H(), l(), v(), M(), Se(), Ge(), dt(), G(), rn = Ie(), Z = t(je()), Ae(), Ne(), W(), Q = q(), $ = De({
+        standardTitle: {
+            id: `AuthModal.title`,
+            defaultMessage: `Log in or sign up`
+        },
+        valuePropTitle: {
+            id: `Login.valuePropTitle`,
+            defaultMessage: `Log in to start chatting`
+        },
+        valuePropSubtitle: {
+            id: `Login.valuePropSubtitle`,
+            defaultMessage: `Write, plan, learn, and create with ChatGPT`
+        },
+        photoTitle: {
+            id: `Login.photoTitle`,
+            defaultMessage: `Do anything,{lineBreak}one chat at a time`
+        },
+        valuePropSubtitlePersonalGoalPlan: {
+            id: `Login.valuePropSubtitle.personalGoalPlan`,
+            defaultMessage: `Turn your goals into a plan you can follow.`
+        },
+        valuePropSubtitleToughQuestions: {
+            id: `Login.valuePropSubtitle.toughQuestions`,
+            defaultMessage: `Work through tough questions and find a way forward.`
+        },
+        valuePropSubtitleBuildSkills: {
+            id: `Login.valuePropSubtitle.buildSkills`,
+            defaultMessage: `Build skills, understand more, and make progress faster.`
+        },
+        valuePropSubtitleLearnSolveProgress: {
+            id: `Login.valuePropSubtitle.learnSolveProgress`,
+            defaultMessage: `Learn, solve problems, and make progress on what matters.`
+        },
+        valuePropSubtitleBigQuestionsPersonalGoals: {
+            id: `Login.valuePropSubtitle.bigQuestionsPersonalGoals`,
+            defaultMessage: `From big questions to personal goals, take the next step.`
+        },
+        selectedPlanIntentTitle: {
+            id: `Login.selectedPlanIntent.title`,
+            defaultMessage: `Sign in to continue with {plan}`
+        },
+        referralTitle: {
+            id: `Login.referralTitle`,
+            defaultMessage: `Accept this referral`
+        },
+        workspaceInviteTitle: {
+            id: `Login.workspaceInvite.title`,
+            defaultMessage: `Log in or sign up to join this workspace`
+        }
+    }), an = /^\/refer\/[^/]+\/?$/, on = `chatgpt_referral_consumer_free`, sn = `chatgpt_free_referral_auth_page_viewed`, cn = e => {
+        "use forget";
+        let t = (0, nn.c)(5),
+            {
+                isElectron: r
+            } = e,
+            i;
+        t[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = Ze(), t[0] = i) : i = t[0];
+        let a = i,
+            o = a === `https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_latest.dmg` ? pt : a === `https://apps.microsoft.com/detail/9nt1r1c2hh7j` ? ht : null,
+            s;
+        t[1] === r ? s = t[2] : (s = !r && o != null && u(), t[1] = r, t[2] = s);
+        let c = s,
+            l;
+        return t[3] === c ? l = t[4] : (l = c && (0, Q.jsx)(`div`, {
+            className: `mt-6`,
+            children: (0, Q.jsx)(n, {
+                as: `a`,
+                color: `secondary`,
+                fullWidth: !0,
+                icon: o,
+                openNewTab: !0,
+                rel: `noopener`,
+                size: `large`,
+                to: a,
+                onClick: tn,
+                children: (0, Q.jsx)(Oe, {
+                    id: `Login.downloadDesktopApp`,
+                    defaultMessage: `Download desktop app`
+                })
+            })
+        }), t[3] = c, t[4] = l), l
+    }, ln = e => {
+        "use forget";
+        let t = (0, nn.c)(10),
+            {
+                nextUrl: n,
+                selectedPlanIntent: r,
+                isStorageComplianceEnabled: i,
+                isPlainLoginPage: a,
+                useNoAuthHoldoutUx: o,
+                isPhotoLoginPage: s
+            } = e,
+            c;
+        t[0] !== s || t[1] !== a || t[2] !== i || t[3] !== n || t[4] !== r || t[5] !== o ? (c = (0, Q.jsx)(en, {
+            nextUrl: n,
+            selectedPlanIntent: r,
+            isStorageComplianceEnabled: i,
+            isPlainLoginPage: a,
+            useNoAuthHoldoutUx: o,
+            isPhotoLoginPage: s
+        }), t[0] = s, t[1] = a, t[2] = i, t[3] = n, t[4] = r, t[5] = o, t[6] = c) : c = t[6];
+        let l;
+        t[7] === Symbol.for(`react.memo_cache_sentinel`) ? (l = void 0, t[7] = l) : l = t[7];
+        let u;
+        return t[8] === c ? u = t[9] : (u = (0, Q.jsxs)(Q.Fragment, {
+            children: [c, l]
+        }), t[8] = c, t[9] = u), u
+    }, un = () => [...D], dn = Ee(function() {
+        "use forget";
+        let e = (0, nn.c)(2),
+            t = Fe(),
+            n;
+        return e[0] === t ? n = e[1] : (n = (0, Q.jsx)(Jt, {
+            ...t
+        }), e[0] = t, e[1] = n), n
+    })
+}));
+e((() => {
+    fn()
+}))();
+export {
+    dn as
+    default, un as meta
+};
 //# sourceMappingURL=auth.login-cp5h8859.js.map

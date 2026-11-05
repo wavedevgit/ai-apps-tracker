@@ -1,2 +1,220 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{$N as n,Crt as r,Dat as i,Eat as a,LF as o,M4 as s,Nat as c,P4 as l,QN as u,RF as d,WB as f,XN as ee,ZN as te,cat as p,dat as ne,dr as m,eP as h,fr as g,fst as _,hr as v,ht as y,jF as b,jat as x,kB as re,kat as S,lat as ie,mt as ae,pat as C,pst as w,rP as T,uat as E,ur as D,wrt as O}from"./4813494d-mdvd4786a87166cc.js";import{At as k,Bn as A,Ht as j,Q as M,Vn as N,kt as P}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Cfn as F,Sfn as I}from"./conversation-small-bcbq46iub1p0ca1t.js";function L(e){x.addAction(`auth_logout_route.logout_all_timeout`,{phase:e,stored_session_count:b()}),O(`chatgpt_account_switcher_logout_all_timeout`,0,{phase:e}),x.addError(Error(`Account switch logout_all timed out`),{phase:e})}async function R(e,t,n,r){if(!n){await e().catch(e=>{x.addError(Error(`Failed to logout`,{cause:e}))});return}let i,a=e().then(()=>`completed`).catch(e=>(i=e,`errored`)),o=await Promise.race([a,new Promise(e=>{globalThis.setTimeout(()=>e(`timeout`),z)})]),s=o;o===`timeout`&&(L(t),s=await a),s===`errored`&&(x.addError(Error(`Failed to logout`,{cause:i}),{phase:t}),r?.(t))}var z,B=e((()=>{o(),c(),r(),z=1e4}));function V(e,t){if(typeof e==`string`&&e.trim().length>0)return e.trim().toLowerCase();if(typeof t==`string`){let e=t.replace(/\D/g,``);if(e.length>0)return e}return null}function H(e){h(),a.deleteCookie(S.AccountSwitchLogoutPendingResume),a.deleteCookie(S.AccountSwitchLogoutPendingAction),a.deleteCookie(S.AccountSwitchLogoutPendingCallbackUrl),x.addAction(`auth_logout_route.logout_all_failed`,{phase:e,stored_session_count:b()}),window.location.replace(`/auth/error?error=LogoutFailed`)}function U(e,t){return e==null?window.location.origin:C(new URL(e),t).toString()}function W(e){let t=new URL(e,window.location.origin),n=K();if(t.origin===window.location.origin)return t.searchParams.set(`account_switch_action`,`logout`),t.pathname===`/`&&(t.pathname=n),t.toString();let r=t.searchParams.get(`returnTo`);if(r!=null){let e=new URL(r,window.location.origin);e.origin===window.location.origin&&(e.pathname=n,e.searchParams.set(`account_switch_action`,`logout`),t.searchParams.set(`returnTo`,e.toString()))}return t.toString()}function G({federatedLogoutUri:e,currentSessionToken:t,currentEmail:n,currentPhoneNumber:r}){let{isFannyPackInitializerEnabled:i}=I(),a=k(),o=new URLSearchParams(a.search).get(`account_switch_action`)===`logout`,s=o&&D()===`logout_all`,c=s&&(d()||b()>=1);return(0,q.useEffect)(()=>{let a=ie({reason:o?p.AccountSwitcher:p.AuthLogoutRoute,source:`auth.logout.route`});x.addAction(`chatgpt.web.logout.context_ready`,{...E(a),isAccountSwitchLogoutFlow:o});let l=U(e,a),u=m(),d=V(n,r),f=u?.identity&&u.identity===d?`${u.mode}:${u.identity}`:null;if(x.addAction(`auth_logout_route.entered`,{is_account_switch_logout_flow:o,is_account_switch_logout_all_flow:s,should_use_logout_all_timeout:c,pending_logout_mode:u?.mode,has_pending_logout_identity:u?.identity!=null,pending_identity_matches_current:f!=null,stored_session_count:b()}),f&&f===Y){x.addAction(`auth_logout_route.skip_duplicate_attempt`,{pending_logout_mode:u?.mode,stored_session_count:b()});return}f&&(Y=f),window&&window.indexedDB&&i&&typeof window.indexedDB.databases==`function`?(x.addAction(`chatgpt.web.logout.clearIndexedDB`),(async()=>{let e=(await window.indexedDB.databases()).map(e=>new Promise((t,n)=>{if(e.name){let r=window.indexedDB.deleteDatabase(e.name);r.onsuccess=()=>t(),r.onerror=t=>{x.addError(Error(`Delete IndexedDB failed for database ${e.name}, ${t}`)),n()},r.onblocked=()=>{x.addError(Error(`Delete IndexedDB blocked for database ${e.name}`)),t()}}else x.addError(Error(`Invalid database name ${e.name}`)),t()}));await Promise.race([Promise.all(e),new Promise(e=>setTimeout(e,$))])})().then(()=>{x.addTiming(`chatgpt.web.logout.clearedIndexedDB`),R(()=>Z(l,!0,t,n,r),`auth_logout_route_after_indexeddb`,c,H)}).catch(e=>{x.addError(Error(`Failed to clear IndexedDB`,{cause:e})),R(()=>Z(l,!0,t,n,r),`auth_logout_route_indexeddb_error_path`,c,H)})):R(()=>Z(l,!1,t,n,r),`auth_logout_route_direct`,c,H)},[i,e,t,n,r,o,s,c]),o?(0,J.jsx)(y,{mode:`logout`,logoutVariant:D()===`logout_all`?`all`:`single`}):null}function K(){let{isNoAuthEnabled:e,isOpaqueNoAuthDisabledLandingPageEnabled:t}=_();return e||t?`/`:`/auth/login`}var q,J,Y,X,Z,Q,$,oe=e((()=>{M(),f(),ae(),g(),F(),T(),o(),i(),c(),ne(),B(),u(),l(),te(),w(),q=t(N()),J=A(),Y=null,X=async(e,t,r,i)=>{re();let a=D(),o=d()||b()>=1,c=a!=null;o&&a!==`logout_switch`&&(c=v({currentSessionToken:t,currentEmail:r,currentPhoneNumber:i,useLoadingScreen:!0})||c);let l=await n({callbackUrl:c?W(e):e,redirect:!1});ee(),await s(),window.location.assign(l.url)},Z=(e,t,n,r,i)=>X(e,n,r,i).then(()=>{x.addTiming(t?`chatgpt.web.logout.shouldClearIndexedDB`:`chatgpt.web.logout.default`)}),Q=j(function(){return(0,J.jsx)(G,{...P()})}),$=2e3}));e((()=>{oe()}))();export{Q as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    $N as n,
+    Crt as r,
+    Dat as i,
+    Eat as a,
+    LF as o,
+    M4 as s,
+    Nat as c,
+    P4 as l,
+    QN as u,
+    RF as d,
+    WB as f,
+    XN as ee,
+    ZN as te,
+    cat as p,
+    dat as ne,
+    dr as m,
+    eP as h,
+    fr as g,
+    fst as _,
+    hr as v,
+    ht as y,
+    jF as b,
+    jat as x,
+    kB as re,
+    kat as S,
+    lat as ie,
+    mt as ae,
+    pat as C,
+    pst as w,
+    rP as T,
+    uat as E,
+    ur as D,
+    wrt as O
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    At as k,
+    Bn as A,
+    Ht as j,
+    Q as M,
+    Vn as N,
+    kt as P
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Cfn as F,
+    Sfn as I
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+
+function L(e) {
+    x.addAction(`auth_logout_route.logout_all_timeout`, {
+        phase: e,
+        stored_session_count: b()
+    }), O(`chatgpt_account_switcher_logout_all_timeout`, 0, {
+        phase: e
+    }), x.addError(Error(`Account switch logout_all timed out`), {
+        phase: e
+    })
+}
+async function R(e, t, n, r) {
+    if (!n) {
+        await e().catch(e => {
+            x.addError(Error(`Failed to logout`, {
+                cause: e
+            }))
+        });
+        return
+    }
+    let i, a = e().then(() => `completed`).catch(e => (i = e, `errored`)),
+        o = await Promise.race([a, new Promise(e => {
+            globalThis.setTimeout(() => e(`timeout`), z)
+        })]),
+        s = o;
+    o === `timeout` && (L(t), s = await a), s === `errored` && (x.addError(Error(`Failed to logout`, {
+        cause: i
+    }), {
+        phase: t
+    }), r?.(t))
+}
+var z, B = e((() => {
+    o(), c(), r(), z = 1e4
+}));
+
+function V(e, t) {
+    if (typeof e == `string` && e.trim().length > 0) return e.trim().toLowerCase();
+    if (typeof t == `string`) {
+        let e = t.replace(/\D/g, ``);
+        if (e.length > 0) return e
+    }
+    return null
+}
+
+function H(e) {
+    h(), a.deleteCookie(S.AccountSwitchLogoutPendingResume), a.deleteCookie(S.AccountSwitchLogoutPendingAction), a.deleteCookie(S.AccountSwitchLogoutPendingCallbackUrl), x.addAction(`auth_logout_route.logout_all_failed`, {
+        phase: e,
+        stored_session_count: b()
+    }), window.location.replace(`/auth/error?error=LogoutFailed`)
+}
+
+function U(e, t) {
+    return e == null ? window.location.origin : C(new URL(e), t).toString()
+}
+
+function W(e) {
+    let t = new URL(e, window.location.origin),
+        n = K();
+    if (t.origin === window.location.origin) return t.searchParams.set(`account_switch_action`, `logout`), t.pathname === `/` && (t.pathname = n), t.toString();
+    let r = t.searchParams.get(`returnTo`);
+    if (r != null) {
+        let e = new URL(r, window.location.origin);
+        e.origin === window.location.origin && (e.pathname = n, e.searchParams.set(`account_switch_action`, `logout`), t.searchParams.set(`returnTo`, e.toString()))
+    }
+    return t.toString()
+}
+
+function G({
+    federatedLogoutUri: e,
+    currentSessionToken: t,
+    currentEmail: n,
+    currentPhoneNumber: r
+}) {
+    let {
+        isFannyPackInitializerEnabled: i
+    } = I(), a = k(), o = new URLSearchParams(a.search).get(`account_switch_action`) === `logout`, s = o && D() === `logout_all`, c = s && (d() || b() >= 1);
+    return (0, q.useEffect)(() => {
+        let a = ie({
+            reason: o ? p.AccountSwitcher : p.AuthLogoutRoute,
+            source: `auth.logout.route`
+        });
+        x.addAction(`chatgpt.web.logout.context_ready`, {
+            ...E(a),
+            isAccountSwitchLogoutFlow: o
+        });
+        let l = U(e, a),
+            u = m(),
+            d = V(n, r),
+            f = u?.identity && u.identity === d ? `${u.mode}:${u.identity}` : null;
+        if (x.addAction(`auth_logout_route.entered`, {
+                is_account_switch_logout_flow: o,
+                is_account_switch_logout_all_flow: s,
+                should_use_logout_all_timeout: c,
+                pending_logout_mode: u?.mode,
+                has_pending_logout_identity: u?.identity != null,
+                pending_identity_matches_current: f != null,
+                stored_session_count: b()
+            }), f && f === Y) {
+            x.addAction(`auth_logout_route.skip_duplicate_attempt`, {
+                pending_logout_mode: u?.mode,
+                stored_session_count: b()
+            });
+            return
+        }
+        f && (Y = f), window && window.indexedDB && i && typeof window.indexedDB.databases == `function` ? (x.addAction(`chatgpt.web.logout.clearIndexedDB`), (async () => {
+            let e = (await window.indexedDB.databases()).map(e => new Promise((t, n) => {
+                if (e.name) {
+                    let r = window.indexedDB.deleteDatabase(e.name);
+                    r.onsuccess = () => t(), r.onerror = t => {
+                        x.addError(Error(`Delete IndexedDB failed for database ${e.name}, ${t}`)), n()
+                    }, r.onblocked = () => {
+                        x.addError(Error(`Delete IndexedDB blocked for database ${e.name}`)), t()
+                    }
+                } else x.addError(Error(`Invalid database name ${e.name}`)), t()
+            }));
+            await Promise.race([Promise.all(e), new Promise(e => setTimeout(e, $))])
+        })().then(() => {
+            x.addTiming(`chatgpt.web.logout.clearedIndexedDB`), R(() => Z(l, !0, t, n, r), `auth_logout_route_after_indexeddb`, c, H)
+        }).catch(e => {
+            x.addError(Error(`Failed to clear IndexedDB`, {
+                cause: e
+            })), R(() => Z(l, !0, t, n, r), `auth_logout_route_indexeddb_error_path`, c, H)
+        })) : R(() => Z(l, !1, t, n, r), `auth_logout_route_direct`, c, H)
+    }, [i, e, t, n, r, o, s, c]), o ? (0, J.jsx)(y, {
+        mode: `logout`,
+        logoutVariant: D() === `logout_all` ? `all` : `single`
+    }) : null
+}
+
+function K() {
+    let {
+        isNoAuthEnabled: e,
+        isOpaqueNoAuthDisabledLandingPageEnabled: t
+    } = _();
+    return e || t ? `/` : `/auth/login`
+}
+var q, J, Y, X, Z, Q, $, oe = e((() => {
+    M(), f(), ae(), g(), F(), T(), o(), i(), c(), ne(), B(), u(), l(), te(), w(), q = t(N()), J = A(), Y = null, X = async (e, t, r, i) => {
+        re();
+        let a = D(),
+            o = d() || b() >= 1,
+            c = a != null;
+        o && a !== `logout_switch` && (c = v({
+            currentSessionToken: t,
+            currentEmail: r,
+            currentPhoneNumber: i,
+            useLoadingScreen: !0
+        }) || c);
+        let l = await n({
+            callbackUrl: c ? W(e) : e,
+            redirect: !1
+        });
+        ee(), await s(), window.location.assign(l.url)
+    }, Z = (e, t, n, r, i) => X(e, n, r, i).then(() => {
+        x.addTiming(t ? `chatgpt.web.logout.shouldClearIndexedDB` : `chatgpt.web.logout.default`)
+    }), Q = j(function() {
+        return (0, J.jsx)(G, {
+            ...P()
+        })
+    }), $ = 2e3
+}));
+e((() => {
+    oe()
+}))();
+export {
+    Q as
+    default
+};
 //# sourceMappingURL=auth.logout-blh0rxun.js.map

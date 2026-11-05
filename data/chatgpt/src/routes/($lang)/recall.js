@@ -1,2 +1,46 @@
-import{n as e}from"./f025431a-ehagpvg3m4e1cduv.js";import{A8 as t,Kk as n,Uk as r,Wk as i,y5 as a}from"./4813494d-mdvd4786a87166cc.js";import{Ht as o,Q as s,bt as c}from"./2340486e-i7pjxgdhv0bs6apg.js";import{c as l,s as u}from"./conversation-small-bcbq46iub1p0ca1t.js";function d({isEnabled:e}){return e?`/library`:`/`}var f,p,m,h,g=e((()=>{s(),i(),t(),u(),f={hasRouteMeta:!0,useScrollRestoration:!0},p=async()=>{throw l(),c(d({isEnabled:await r()&&a(n)}),302)},p.hydrate=!0,m=()=>!1,h=o(function(){"use no forget";return null})}));e((()=>{g()}))();export{p as clientLoader,h as default,f as handle,m as shouldRevalidate};
+import {
+    n as e
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    A8 as t,
+    Kk as n,
+    Uk as r,
+    Wk as i,
+    y5 as a
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Ht as o,
+    Q as s,
+    bt as c
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    c as l,
+    s as u
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+
+function d({
+    isEnabled: e
+}) {
+    return e ? `/library` : `/`
+}
+var f, p, m, h, g = e((() => {
+    s(), i(), t(), u(), f = {
+        hasRouteMeta: !0,
+        useScrollRestoration: !0
+    }, p = async () => {
+        throw l(), c(d({
+            isEnabled: await r() && a(n)
+        }), 302)
+    }, p.hydrate = !0, m = () => !1, h = o(function() {
+        "use no forget";
+        return null
+    })
+}));
+e((() => {
+    g()
+}))();
+export {
+    p as clientLoader, h as
+    default, f as handle, m as shouldRevalidate
+};
 //# sourceMappingURL=(_lang).recall-oagrehtj.js.map

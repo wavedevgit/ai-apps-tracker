@@ -1,2 +1,111 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{CR as n,ER as r,I7 as i,Knt as a,M7 as o,TR as s,Wnt as c}from"./4813494d-mdvd4786a87166cc.js";import{Bn as l,Ht as u,O as d,Q as f,Vn as p,Y as m,s as h,w as g,wn as _}from"./2340486e-i7pjxgdhv0bs6apg.js";import{Dun as v,ddn as y,mun as b,pdn as x}from"./conversation-small-bcbq46iub1p0ca1t.js";import{n as S,t as C}from"./d993e3db-l428jxoum4l8sxre.js";var w,T=e((()=>{i(),h(),w=e=>g({queryKey:[`enterprise_compliance_spec`,e],queryFn:e?()=>o.safeGet(`/accounts/{account_id}/enterprise-api-reference/{version}`,{parameters:{path:{account_id:e,version:`latest`}}}):m,enabled:!!e})}));function E(){let e=document.body.style.overflow;return document.body.style.overflow=`scroll`,()=>{document.body.style.overflow=e}}function D(e){return e.currentWorkspace}var O,k,A,j,M,N,P=e((()=>{f(),O=_(),y(),S(),T(),n(),a(),b(),h(),k=t(p()),A=l(),j=()=>[{title:`OpenAI Admin API Reference`},{name:`robots`,content:`noindex, nofollow`}],M=({serverLoader:e})=>e(),N=u(function(){"use forget";let e=(0,O.c)(14),t=r(D),n=s()?t!=null:void 0,i;e[0]===Symbol.for(`react.memo_cache_sentinel`)?(i=[],e[0]=i):i=e[0],(0,k.useEffect)(E,i);let a,o;e[1]===n?(a=e[2],o=e[3]):(a=()=>{n!==void 0&&c.logStructuredEvent(`CompliancePlatformLogsDocumentationViewed`,{hasSpecPagePrivileges:n})},o=[n],e[1]=n,e[2]=a,e[3]=o),(0,k.useEffect)(a,o);let l=t?.id,u;e[4]===l?u=e[5]:(u=w(l),e[4]=l,e[5]=u);let{data:f}=d(u),p=n===!0,m;e[6]===p?m=e[7]:(m={enabled:p},e[6]=p,e[7]=m);let{data:h,isLoading:g}=v(m),_;e[8]!==h||e[9]!==f?(_=x(f,h),e[8]=h,e[9]=f,e[10]=_):_=e[10];let y=_;if(n!==!0||!t)return null;let b;return e[11]!==g||e[12]!==y?(b=!g&&(0,A.jsx)(C,{audience:`internal`,spec:y}),e[11]=g,e[12]=y,e[13]=b):b=e[13],b})}));e((()=>{P()}))();export{M as clientLoader,N as default,j as meta};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    CR as n,
+    ER as r,
+    I7 as i,
+    Knt as a,
+    M7 as o,
+    TR as s,
+    Wnt as c
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as l,
+    Ht as u,
+    O as d,
+    Q as f,
+    Vn as p,
+    Y as m,
+    s as h,
+    w as g,
+    wn as _
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    Dun as v,
+    ddn as y,
+    mun as b,
+    pdn as x
+} from "./conversation-small-bcbq46iub1p0ca1t.js";
+import {
+    n as S,
+    t as C
+} from "./d993e3db-l428jxoum4l8sxre.js";
+var w, T = e((() => {
+    i(), h(), w = e => g({
+        queryKey: [`enterprise_compliance_spec`, e],
+        queryFn: e ? () => o.safeGet(`/accounts/{account_id}/enterprise-api-reference/{version}`, {
+            parameters: {
+                path: {
+                    account_id: e,
+                    version: `latest`
+                }
+            }
+        }) : m,
+        enabled: !!e
+    })
+}));
+
+function E() {
+    let e = document.body.style.overflow;
+    return document.body.style.overflow = `scroll`, () => {
+        document.body.style.overflow = e
+    }
+}
+
+function D(e) {
+    return e.currentWorkspace
+}
+var O, k, A, j, M, N, P = e((() => {
+    f(), O = _(), y(), S(), T(), n(), a(), b(), h(), k = t(p()), A = l(), j = () => [{
+        title: `OpenAI Admin API Reference`
+    }, {
+        name: `robots`,
+        content: `noindex, nofollow`
+    }], M = ({
+        serverLoader: e
+    }) => e(), N = u(function() {
+        "use forget";
+        let e = (0, O.c)(14),
+            t = r(D),
+            n = s() ? t != null : void 0,
+            i;
+        e[0] === Symbol.for(`react.memo_cache_sentinel`) ? (i = [], e[0] = i) : i = e[0], (0, k.useEffect)(E, i);
+        let a, o;
+        e[1] === n ? (a = e[2], o = e[3]) : (a = () => {
+            n !== void 0 && c.logStructuredEvent(`CompliancePlatformLogsDocumentationViewed`, {
+                hasSpecPagePrivileges: n
+            })
+        }, o = [n], e[1] = n, e[2] = a, e[3] = o), (0, k.useEffect)(a, o);
+        let l = t?.id,
+            u;
+        e[4] === l ? u = e[5] : (u = w(l), e[4] = l, e[5] = u);
+        let {
+            data: f
+        } = d(u), p = n === !0, m;
+        e[6] === p ? m = e[7] : (m = {
+            enabled: p
+        }, e[6] = p, e[7] = m);
+        let {
+            data: h,
+            isLoading: g
+        } = v(m), _;
+        e[8] !== h || e[9] !== f ? (_ = x(f, h), e[8] = h, e[9] = f, e[10] = _) : _ = e[10];
+        let y = _;
+        if (n !== !0 || !t) return null;
+        let b;
+        return e[11] !== g || e[12] !== y ? (b = !g && (0, A.jsx)(C, {
+            audience: `internal`,
+            spec: y
+        }), e[11] = g, e[12] = y, e[13] = b) : b = e[13], b
+    })
+}));
+e((() => {
+    P()
+}))();
+export {
+    M as clientLoader, N as
+    default, j as meta
+};
 //# sourceMappingURL=admin_.api-reference-cysjw58w.js.map

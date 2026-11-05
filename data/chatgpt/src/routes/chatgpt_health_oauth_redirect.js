@@ -1,2 +1,70 @@
-import{n as e,s as t}from"./f025431a-ehagpvg3m4e1cduv.js";import{Est as n,I7 as r,M7 as i,Tst as a,cot as o,not as s}from"./4813494d-mdvd4786a87166cc.js";import{Bn as c,Ht as l,Nt as u,Q as d,Vn as f,wn as p}from"./2340486e-i7pjxgdhv0bs6apg.js";import{n as m,t as h}from"./af004db9-ncue41w0x271s8a6.js";var g,_,v,y,b=e((()=>{d(),g=p(),m(),n(),o(),r(),_=t(f()),v=c(),y=l(function(){"use forget";let e=(0,g.c)(4);a();let t=u(),n=(0,_.useRef)(!1),r,o;e[0]===t?(r=e[1],o=e[2]):(r=()=>{n.current||(n.current=!0,(async function(){let e=window.location.href,n=`/`;try{n=(await i.safePost(`/aip/olympic/oauth/callback`,{requestBody:{full_redirect_url:e}})).postAuthRedirectPath}catch(e){let n=e;if(n instanceof s){t(`/`);return}throw n}window.close(),window.setTimeout(()=>{t(n)},150)})())},o=[t],e[0]=t,e[1]=r,e[2]=o),(0,_.useEffect)(r,o);let c;return e[3]===Symbol.for(`react.memo_cache_sentinel`)?(c=(0,v.jsx)(`div`,{className:`flex min-h-[40vh] items-center justify-center`,children:(0,v.jsx)(h,{})}),e[3]=c):c=e[3],c})}));e((()=>{b()}))();export{y as default};
+import {
+    n as e,
+    s as t
+} from "./f025431a-ehagpvg3m4e1cduv.js";
+import {
+    Est as n,
+    I7 as r,
+    M7 as i,
+    Tst as a,
+    cot as o,
+    not as s
+} from "./4813494d-mdvd4786a87166cc.js";
+import {
+    Bn as c,
+    Ht as l,
+    Nt as u,
+    Q as d,
+    Vn as f,
+    wn as p
+} from "./2340486e-i7pjxgdhv0bs6apg.js";
+import {
+    n as m,
+    t as h
+} from "./af004db9-ncue41w0x271s8a6.js";
+var g, _, v, y, b = e((() => {
+    d(), g = p(), m(), n(), o(), r(), _ = t(f()), v = c(), y = l(function() {
+        "use forget";
+        let e = (0, g.c)(4);
+        a();
+        let t = u(),
+            n = (0, _.useRef)(!1),
+            r, o;
+        e[0] === t ? (r = e[1], o = e[2]) : (r = () => {
+            n.current || (n.current = !0, (async function() {
+                let e = window.location.href,
+                    n = `/`;
+                try {
+                    n = (await i.safePost(`/aip/olympic/oauth/callback`, {
+                        requestBody: {
+                            full_redirect_url: e
+                        }
+                    })).postAuthRedirectPath
+                } catch (e) {
+                    let n = e;
+                    if (n instanceof s) {
+                        t(`/`);
+                        return
+                    }
+                    throw n
+                }
+                window.close(), window.setTimeout(() => {
+                    t(n)
+                }, 150)
+            })())
+        }, o = [t], e[0] = t, e[1] = r, e[2] = o), (0, _.useEffect)(r, o);
+        let c;
+        return e[3] === Symbol.for(`react.memo_cache_sentinel`) ? (c = (0, v.jsx)(`div`, {
+            className: `flex min-h-[40vh] items-center justify-center`,
+            children: (0, v.jsx)(h, {})
+        }), e[3] = c) : c = e[3], c
+    })
+}));
+e((() => {
+    b()
+}))();
+export {
+    y as
+    default
+};
 //# sourceMappingURL=chatgpt_health_oauth_redirect-nwo45cwr.js.map
