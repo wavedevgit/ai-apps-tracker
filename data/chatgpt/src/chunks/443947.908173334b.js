@@ -1886,6 +1886,7 @@ export const __webpack_modules__ = {
                                                     let t = e.previewSrc ?? e.src;
                                                     if (!/^(https?:|data:image\/|blob:)/i.test(t)) continue;
                                                     let n = await
+
                                                     function(e, t) {
                                                         return new Promise(n => {
                                                             let a = new Image,
