@@ -1,10 +1,1 @@
-export const __rspack_esm_ids = [155568];
-export const __webpack_modules__ = {
-    DnKW: (function(_, o, e) {
-        e.d(o, {}, {
-            a: function(_) {
-                return "codex_work_web" === _ || "codex_work_mobile" === _
-            }
-        })
-    })
-};
+export const __rspack_esm_ids=[155568];export const __webpack_modules__={DnKW:(function(_,o,e){e.d(o,{},{a:function(_){return"codex_work_web"===_||"codex_work_mobile"===_}})})};
