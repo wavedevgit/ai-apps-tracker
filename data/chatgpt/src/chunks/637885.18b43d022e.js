@@ -196,6 +196,7 @@ export const __webpack_modules__ = {
                                 return;
                             case "open-in-browser":
                                 return void
+
                                 function(e, t, r) {
                                     let a = (0, g.b)(e) ?? e;
                                     if ((0, s.mi)(a)) return window.location.assign(a);
