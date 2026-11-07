@@ -1,0 +1,10068 @@
+export const __rspack_esm_ids = [201300];
+export const __webpack_modules__ = {
+    piij: (function(e, t, n) {
+        e.exports = n.p + "assets/space-recovery.105d9c61fe.png"
+    }),
+    ylLY: (function(e, t, n) {
+        let a = (0, n("zd8w").createContext)(null);
+        n.d(t, {}, {
+            a: a
+        })
+    }),
+    bn59: (function(e, t, n) {
+        n.d(t, {
+            a: () => B,
+            ChatSeatAccessScreen: () => G
+        });
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("zd8w"),
+            i = n("oyxz"),
+            l = n("jqIZ"),
+            c = n("StMt"),
+            d = n("OFP1"),
+            u = n("kphc"),
+            h = n("Sm6l"),
+            p = n("DVOM"),
+            m = n("OWtl"),
+            g = n("mBJV"),
+            f = n("Wf1j"),
+            v = n("ASxG"),
+            y = n("fDv2"),
+            b = n("rLEB"),
+            x = n("Ietk"),
+            C = n("twmu"),
+            w = n("EOo5"),
+            _ = n("Kwur"),
+            I = n("udGC"),
+            S = n("aTcy"),
+            j = n("JNtf"),
+            T = n("mUDD"),
+            P = n("Ot7V"),
+            E = n("SGsN"),
+            A = n("DAA7"),
+            M = n("yGJW"),
+            k = n("GDNt");
+
+        function R(e) {
+            let t, n, l, c, d, u, p, v, y, k, R, F, G, z, B, D, L, W, H, q, K, U, V = (0, r.c)(70),
+                {
+                    account: Q,
+                    accountId: $,
+                    userId: Y,
+                    onClose: X,
+                    onSwitchToWork: J
+                } = e,
+                Z = (0, s.y)(m.a),
+                ee = (0, f.a)(),
+                {
+                    email: et
+                } = (0, w.a)(),
+                [en, ea] = (0, o.useState)(),
+                er = (0, o.useRef)(!0);
+            V[0] === Symbol.for("react.memo_cache_sentinel") ? (t = () => (er.current = !0, () => {
+                er.current = !1
+            }), n = [], V[0] = t, V[1] = n) : (t = V[0], n = V[1]), (0, o.useEffect)(t, n);
+            let es = "account-owner" === Q.account.account_user_role,
+                eo = "account-admin" === Q.account.account_user_role,
+                ei = !0 === Q.entitlement.has_active_subscription,
+                el = (es || eo) && ei,
+                ec = es || el;
+            V[2] !== el || V[3] !== es ? (l = "CHATGPT_USAGE_BASED_WORKSPACE_ACCESS_MODAL_PRIMARY_CTA_TYPE_REQUEST_CHANGE", el ? l = "CHATGPT_USAGE_BASED_WORKSPACE_ACCESS_MODAL_PRIMARY_CTA_TYPE_UPDATE_DIRECTLY" : es && (l = "CHATGPT_USAGE_BASED_WORKSPACE_ACCESS_MODAL_PRIMARY_CTA_TYPE_GO_TO_WORKSPACE_AND_UPDATE"), V[2] = el, V[3] = es, V[4] = l) : l = V[4], V[5] !== Q.account.account_user_role || V[6] !== l || V[7] !== ei || V[8] !== Z ? (c = (e, t) => {
+                (0, M.a)(Z, g.rd, {
+                    actionType: e,
+                    ctaType: void 0 !== t && t ? l : void 0,
+                    userRole: Q.account.account_user_role ?? void 0,
+                    hasPaidSubscription: ei
+                })
+            }, V[5] = Q.account.account_user_role, V[6] = l, V[7] = ei, V[8] = Z, V[9] = c) : c = V[9];
+            let ed = c;
+            V[10] !== X ? (d = () => {
+                X(), (0, P.f)({
+                    href: new URL("/codex/cloud", S.h).toString(),
+                    initiator: "open_in_browser_bridge"
+                })
+            }, V[10] = X, V[11] = d) : d = V[11];
+            let eu = d;
+            V[12] !== Q.account.subscription_seat_pools_enabled || V[13] !== $ || V[14] !== eu || V[15] !== el || V[16] !== et || V[17] !== ee || V[18] !== es || V[19] !== ed || V[20] !== X || V[21] !== J || V[22] !== en || V[23] !== Z || V[24] !== Y ? (u = async () => {
+                if ("requesting" !== en) {
+                    if (ed("CHATGPT_USAGE_BASED_WORKSPACE_ACCESS_MODAL_ACTION_TYPE_PRIMARY_CTA_CLICKED", !0), es && !el) {
+                        let e = new URL("/admin/members", S.h);
+                        e.searchParams.set("account_id", $), et && e.searchParams.set("search", et);
+                        let t = e.toString(),
+                            n = (0, A.c)(Z, t, $),
+                            a = null == n ? null : await n;
+                        X(), (0, P.f)({
+                            href: a ?? t,
+                            initiator: "open_in_browser_bridge",
+                            openTarget: null == a ? void 0 : "external-browser"
+                        });
+                        return
+                    }
+                    ea("requesting");
+                    try {
+                        if (el) {
+                            if (Q.account.subscription_seat_pools_enabled ? await _.Request.safePost("/accounts/{account_id}/users/{user_id}/seat/update", {
+                                    parameters: {
+                                        path: {
+                                            account_id: $,
+                                            user_id: Y
+                                        }
+                                    },
+                                    requestBody: {
+                                        operation: "switch",
+                                        seat_type: "default"
+                                    },
+                                    isExpectedError: N
+                                }) : await _.Request.safePatch("/accounts/{account_id}/users/{user_id}", {
+                                    parameters: {
+                                        path: {
+                                            account_id: $,
+                                            user_id: Y
+                                        }
+                                    },
+                                    additionalHeaders: {
+                                        "X-OpenAI-Account-User-Update-Source": "web_usage_based_workspace_access_modal"
+                                    },
+                                    requestBody: {
+                                        seat_type: "default"
+                                    }
+                                }), !er.current) return;
+                            (0, I.e)(Z), await (0, x.g)("accounts-check"), await Promise.all([Z.query.invalidate(C.b, $), Z.queryClient.invalidateQueries({
+                                queryKey: ["accounts", "check"]
+                            })]), er.current && X()
+                        } else {
+                            if ((0, b.b)(Z, $), await _.Request.safePost("/accounts/{account_id}/invites/request", {
+                                    parameters: {
+                                        path: {
+                                            account_id: $
+                                        }
+                                    }
+                                }), !er.current) return;
+                            J ? (X(), J()) : eu(), Z.get(E.f).success(ee.formatMessage({
+                                id: "UsageBasedWorkspaceAccessModal.accessRequestSubmittedToast",
+                                defaultMessage: "Access request submitted",
+                                description: "Success toast shown after requesting ChatGPT access from the modal"
+                            }))
+                        }
+                    } catch (e) {
+                        er.current && ea(O(e) ?? "error")
+                    }
+                }
+            }, V[12] = Q.account.subscription_seat_pools_enabled, V[13] = $, V[14] = eu, V[15] = el, V[16] = et, V[17] = ee, V[18] = es, V[19] = ed, V[20] = X, V[21] = J, V[22] = en, V[23] = Z, V[24] = Y, V[25] = u) : u = V[25];
+            let eh = u;
+            V[26] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, a.jsx)(i.a, {
+                id: "UsageBasedWorkspaceAccessModal.chatWork.title",
+                defaultMessage: "You don’t have access to Chat on this plan",
+                description: "Title of the seat access explanation on the Chat surface. Chat is a product name."
+            }), V[26] = p) : p = V[26];
+            let ep = p;
+            V[27] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, a.jsx)(i.a, {
+                id: "UsageBasedWorkspaceAccessModal.chatWork.message",
+                defaultMessage: "You are assigned Work access only. Reach out to your admin to request access to ChatGPT.",
+                description: "Explanation for workspace members who need admin approval for ChatGPT access"
+            }), V[27] = v) : v = V[27];
+            let em = v;
+            if (ec) {
+                let e;
+                V[28] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(i.a, {
+                    id: "UsageBasedWorkspaceAccessModal.chatWork.ownerMessage",
+                    defaultMessage: "Your current seat is Work-only. Update your seat type in Workspace settings to start using ChatGPT.",
+                    description: "Explanation for workspace owners and paid admins who can update their seat to get ChatGPT access"
+                }), V[28] = e) : e = V[28], em = e
+            } else if (eo) {
+                let e;
+                V[29] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(i.a, {
+                    id: "UsageBasedWorkspaceAccessModal.chatWork.adminMessage",
+                    defaultMessage: "You are assigned Work access only. Ask your workspace owner to buy ChatGPT seats, then update your seat type in Workspace settings.",
+                    description: "Explanation for unpaid workspace admins who need an owner to buy ChatGPT seats"
+                }), V[29] = e) : e = V[29], em = e
+            }
+            V[30] !== ed || V[31] !== X ? (y = e => {
+                e || (ed("CHATGPT_USAGE_BASED_WORKSPACE_ACCESS_MODAL_ACTION_TYPE_CLOSED"), X())
+            }, V[30] = ed, V[31] = X, V[32] = y) : y = V[32], V[33] !== eh ? (k = e => {
+                e.preventDefault(), eh()
+            }, V[33] = eh, V[34] = k) : k = V[34], V[35] === Symbol.for("react.memo_cache_sentinel") ? (R = (0, a.jsx)(j.d, {
+                className: "heading-lg font-semibold",
+                children: ep
+            }), V[35] = R) : R = V[35], V[36] !== em ? (F = (0, a.jsxs)("div", {
+                className: "flex w-full max-w-md flex-col gap-4",
+                children: [R, (0, a.jsx)(j.c, {
+                    className: "text-lg leading-6 text-secondary",
+                    children: em
+                })]
+            }), V[36] = em, V[37] = F) : F = V[37];
+            let eg = "requesting" === en,
+                ef = "requesting" === en;
+            return V[38] !== ec ? (G = ec ? (0, a.jsx)(i.a, {
+                id: "UsageBasedWorkspaceAccessModal.updateSeatButton",
+                defaultMessage: "Update seat",
+                description: "Updates the current user's seat to include ChatGPT"
+            }) : (0, a.jsx)(i.a, {
+                id: "UsageBasedWorkspaceAccessModal.requestAccessButton",
+                defaultMessage: "Request access",
+                description: "Requests ChatGPT access from a workspace administrator"
+            }), V[38] = ec, V[39] = G) : G = V[39], V[40] !== eg || V[41] !== ef || V[42] !== G ? (z = (0, a.jsx)(h.a, {
+                autoFocus: !0,
+                className: "w-full",
+                size: "auth",
+                type: "submit",
+                loading: eg,
+                disabled: ef,
+                children: G
+            }), V[40] = eg, V[41] = ef, V[42] = G, V[43] = z) : z = V[43], V[44] !== eu || V[45] !== ed || V[46] !== X || V[47] !== J ? (B = () => {
+                J ? (X(), J()) : (ed("CHATGPT_USAGE_BASED_WORKSPACE_ACCESS_MODAL_ACTION_TYPE_BACK_TO_CODEX_CLICKED"), eu())
+            }, V[44] = eu, V[45] = ed, V[46] = X, V[47] = J, V[48] = B) : B = V[48], V[49] !== J ? (D = J ? (0, a.jsx)(i.a, {
+                id: "UsageBasedWorkspaceAccessModal.chatWork.switchToWorkButton",
+                defaultMessage: "Switch to Work",
+                description: "Switches from the Chat access explanation to the available Work surface"
+            }) : (0, a.jsx)(i.a, {
+                id: "UsageBasedWorkspaceAccessModal.backToCodexButton",
+                defaultMessage: "Back to Codex",
+                description: "Returns to Codex from the Chat access explanation"
+            }), V[49] = J, V[50] = D) : D = V[50], V[51] !== B || V[52] !== D ? (L = (0, a.jsx)(h.a, {
+                className: "w-full",
+                color: "outlineGhost",
+                size: "auth",
+                onClick: B,
+                children: D
+            }), V[51] = B, V[52] = D, V[53] = L) : L = V[53], V[54] !== z || V[55] !== L ? (W = (0, a.jsxs)("div", {
+                className: "flex w-full max-w-xs flex-col gap-3",
+                children: [z, L]
+            }), V[54] = z, V[55] = L, V[56] = W) : W = V[56], V[57] !== ee || V[58] !== en ? (H = null != en && "requesting" !== en ? (0, a.jsx)("p", {
+                className: "text-sm text-secondary",
+                role: "alert",
+                children: "error" !== en ? (0, a.jsx)(i.a, {
+                    id: "businessSeatRenewal.wait",
+                    defaultMessage: "Seat changes are temporarily unavailable. Please try again after {time}.",
+                    description: "Error during a Business seat change when billing has not caught up. time is the suggested retry date and time in the user's locale and time zone, not a guaranteed completion time.",
+                    values: {
+                        time: ee.formatDate(en.retry_at, {
+                            dateStyle: "medium",
+                            timeStyle: "short"
+                        })
+                    }
+                }) : (0, a.jsx)(i.a, {
+                    id: "UsageBasedWorkspaceAccessModal.errorMessage",
+                    defaultMessage: "Could not request access. Please contact your workspace administrator to grant ChatGPT access.",
+                    description: "Error after a seat update or access request fails. The primary action can be retried."
+                })
+            }) : null, V[57] = ee, V[58] = en, V[59] = H) : H = V[59], V[60] !== F || V[61] !== W || V[62] !== H ? (q = (0, a.jsxs)("div", {
+                className: "flex flex-col items-center gap-8 p-10 text-center",
+                children: [F, W, H]
+            }), V[60] = F, V[61] = W, V[62] = H, V[63] = q) : q = V[63], V[64] !== q || V[65] !== k ? (K = (0, a.jsx)(T.b, {
+                as: "form",
+                className: "select-none",
+                size: "viewport",
+                variant: "chatgpt",
+                onSubmit: k,
+                children: q
+            }), V[64] = q, V[65] = k, V[66] = K) : K = V[66], V[67] !== K || V[68] !== y ? (U = (0, a.jsx)(j.a, {
+                open: !0,
+                size: "wide",
+                variant: "chatgpt",
+                onOpenChange: y,
+                children: K
+            }), V[67] = K, V[68] = y, V[69] = U) : U = V[69], U
+        }
+
+        function N(e) {
+            return null != O(e)
+        }
+
+        function O(e) {
+            if (e instanceof k.a && 409 === e.status) try {
+                let t = v.object({
+                    detail: v.object({
+                        operation: v.literal("switch"),
+                        error_type: v.literal("stale_state"),
+                        retry: v.object({
+                            reason: v.literal("renewal_in_progress"),
+                            retry_at: y.datetime()
+                        })
+                    })
+                }).safeParse(JSON.parse(e.message));
+                return t.success ? t.data.detail.retry : void 0
+            } catch {
+                return
+            }
+        }
+        var F = n("pBDs");
+
+        function G(e) {
+            let t, n, o = (0, r.c)(9),
+                {
+                    modeToggle: i,
+                    onSwitchToWork: c
+                } = e,
+                h = (0, s.y)(m.a),
+                p = (0, s.z)(F.a),
+                g = (0, s.z)(d.u),
+                f = (0, l._)();
+            if ("restricted" !== p.status) return null;
+            let v = `${p.accountId}:${p.userId}`;
+            return o[0] !== f || o[1] !== c || o[2] !== h || o[3] !== g.status ? (t = "allowed" === g.status ? c ?? (() => {
+                (0, u.l)(h, "work"), f("/")
+            }) : void 0, o[0] = f, o[1] = c, o[2] = h, o[3] = g.status, o[4] = t) : t = o[4], o[5] !== i || o[6] !== v || o[7] !== t ? (n = (0, a.jsx)(z, {
+                modeToggle: i,
+                onSwitchToWork: t
+            }, v), o[5] = i, o[6] = v, o[7] = t, o[8] = n) : n = o[8], n
+        }
+
+        function z(e) {
+            let t, n, l, c, d, u = (0, r.c)(13),
+                {
+                    modeToggle: m,
+                    onSwitchToWork: g
+                } = e,
+                f = (0, s.z)(F.a),
+                [v, y] = (0, o.useState)(!1);
+            return "restricted" !== f.status ? null : (u[0] !== m ? (t = null == m ? null : (0, a.jsx)(p.c, {
+                children: m
+            }), u[0] = m, u[1] = t) : t = u[1], u[2] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, a.jsx)("h1", {
+                className: "heading-xl font-normal text-default",
+                children: (0, a.jsx)(i.a, {
+                    id: "UsageBasedWorkspaceAccessModal.chatWork.title",
+                    defaultMessage: "You don’t have access to Chat on this plan",
+                    description: "Title of the seat access explanation on the Chat surface. Chat is a product name."
+                })
+            }), u[2] = n) : n = u[2], u[3] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, a.jsx)("main", {
+                className: "flex h-full min-h-0 flex-1 items-center justify-center px-panel",
+                children: (0, a.jsxs)("div", {
+                    className: "flex w-full max-w-3xl flex-col items-center gap-8 text-center select-none",
+                    children: [n, (0, a.jsx)(h.a, {
+                        onClick: () => y(!1),
+                        children: (0, a.jsx)(i.a, {
+                            id: "chatSeatAccess.reviewAccess",
+                            defaultMessage: "Review access options",
+                            description: "Reopens the Chat seat access dialog after dismissal"
+                        })
+                    })]
+                })
+            }), u[3] = l) : l = u[3], u[4] !== v || u[5] !== g || u[6] !== f.account || u[7] !== f.accountId || u[8] !== f.userId ? (c = v ? null : (0, a.jsx)(R, {
+                account: f.account,
+                accountId: f.accountId,
+                userId: f.userId,
+                onClose: () => y(!0),
+                onSwitchToWork: g
+            }), u[4] = v, u[5] = g, u[6] = f.account, u[7] = f.accountId, u[8] = f.userId, u[9] = c) : c = u[9], u[10] !== t || u[11] !== c ? (d = (0, a.jsxs)(a.Fragment, {
+                children: [t, l, c]
+            }), u[10] = t, u[11] = c, u[12] = d) : d = u[12], d)
+        }
+
+        function B(e) {
+            let t, n, o = (0, r.c)(4),
+                {
+                    children: i,
+                    enabled: l
+                } = e;
+            o[0] === Symbol.for("react.memo_cache_sentinel") ? (t = {
+                name: "chatgpt.seat-access"
+            }, o[0] = t) : t = o[0];
+            let d = (0, s.x)(c.a, t);
+            return l ? d.isLoading ? null : (o[1] !== d.isCapable || o[2] !== i ? (n = d.isCapable ? (0, a.jsx)(G, {}) : i, o[1] = d.isCapable, o[2] = i, o[3] = n) : n = o[3], n) : i
+        }
+    }),
+    Pyg2: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("rjva"),
+            i = n("tSEg"),
+            l = n("ZIh4");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, c, d, u = (0, r.c)(10);
+                u[0] !== e ? ({
+                    composerOnly: n,
+                    placement: c,
+                    ...t
+                } = e, u[0] = e, u[1] = t, u[2] = n, u[3] = c) : (t = u[1], n = u[2], c = u[3]);
+                let h = void 0 === n || n,
+                    p = void 0 === c ? "floating" : c,
+                    m = (0, s.y)(i.a),
+                    g = (0, s.z)("home" === m.value.routeKind && l.a),
+                    f = g ? "floating" : p,
+                    v = !g && t.reserveContent,
+                    y = !!g || t.showHeader;
+                return u[4] !== h || u[5] !== t || u[6] !== f || u[7] !== v || u[8] !== y ? (d = (0, a.jsx)(o.a, {
+                    ...t,
+                    composerOnly: h,
+                    placement: f,
+                    reserveContent: v,
+                    showHeader: y
+                }), u[4] = h, u[5] = t, u[6] = f, u[7] = v, u[8] = y, u[9] = d) : d = u[9], d
+            }
+        })
+    }),
+    AZW7: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("zd8w"),
+            o = n("kjQz"),
+            i = n("dJBt");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, l, c, d, u, h = (0, r.c)(11),
+                    {
+                        name: p,
+                        ready: m,
+                        failed: g
+                    } = e,
+                    f = void 0 !== g && g,
+                    v = (0, s.useRef)(!1),
+                    y = (0, s.useRef)(null);
+                h[0] !== p ? (t = () => ({
+                    name: p,
+                    key: crypto.randomUUID(),
+                    startedAtMs: performance.timeOrigin + performance.now()
+                }), h[0] = p, h[1] = t) : t = h[1];
+                let [b] = (0, s.useState)(t);
+                return h[2] !== b ? (n = () => (v.current = !0, y.current = y.current ?? o.a.start(b.name, {}, b), y.current.mark("route_entered"), () => {
+                    v.current = !1, queueMicrotask(() => {
+                        v.current || y.current?.abort("navigation_away")
+                    })
+                }), l = [b], h[2] = b, h[3] = n, h[4] = l) : (n = h[3], l = h[4]), (0, s.useEffect)(n, l), h[5] !== f || h[6] !== m ? (c = () => {
+                    !m && f && y.current?.fail("load_failed")
+                }, d = [m, f], h[5] = f, h[6] = m, h[7] = c, h[8] = d) : (c = h[7], d = h[8]), (0, s.useEffect)(c, d), h[9] !== m ? (u = m ? (0, a.jsx)(i.a, {
+                    requireVisibleAtPaint: !0,
+                    onPaint: () => {
+                        y.current?.mark("content_visible"), y.current?.end()
+                    }
+                }) : null, h[9] = m, h[10] = u) : u = h[10], u
+            }
+        })
+    }),
+    lZ4W: (function(e, t, n) {
+        var a = n("BolX"),
+            r = n("OWtl"),
+            s = n("dQRk"),
+            o = n("PsNT"),
+            i = n("JtOe");
+        let l = (0, a.d)(r.a, (e, t) => {
+            let {
+                get: n
+            } = t;
+            if (null == e) return !1;
+            let {
+                steeredPromptId: a,
+                ...r
+            } = e;
+            if (n(i.f, r)) return !1;
+            let l = n(i.g, r);
+            if (l?.response.visibility.status !== "allowed" || !(0, o.b)(l.response.content) || !c(l.response.content)) return !1;
+            let d = n(s.t, r.conversationId),
+                u = d?.at(-1);
+            return u === r.userMessageId || null != a && u === a && d?.includes(r.userMessageId) === !0
+        });
+
+        function c(e) {
+            return e?.type === "single_advertiser_ad_unit" && "composer_pinned" === e.presentation && e.ad_cards?.[0]?.format === "image_card_v2"
+        }
+        n.d(t, {}, {
+            a: l,
+            b: c
+        })
+    }),
+    zpMv: (function(e, t, n) {
+        var a = n("SZCv"),
+            r = n.n(a),
+            s = n("BolX"),
+            o = n("Ro2M"),
+            i = n("OWtl"),
+            l = n("OMIV"),
+            c = n("dQRk"),
+            d = n("QkVh");
+        let u = (0, s.d)(i.a, (e, t) => {
+                let {
+                    get: n
+                } = t;
+                if (!n(l.d, "3901104270")) return [];
+                let a = n(c.q, e),
+                    r = a?.filter(e => {
+                        let {
+                            source: t
+                        } = e;
+                        return "list" !== t
+                    }) ?? [];
+                return 0 === r.length ? [] : (n(o.h, n(o.b)), r.flatMap(e => {
+                    let {
+                        automationId: t,
+                        messageId: a
+                    } = e, r = n(o.e, t).data?.automation;
+                    if (null == r) return [];
+                    let s = /^file-inline-(libfile[_-][^~]+)(?:~.*)?$/.exec(r.plan_file_id ?? "")?.[1];
+                    return null == s ? [] : [{
+                        automationId: t,
+                        messageId: a,
+                        libraryFileId: s,
+                        query: n(d.a, s)
+                    }]
+                }))
+            }, {
+                isEqual: r()
+            }),
+            h = (0, s.d)(i.a, (e, t) => {
+                let {
+                    get: n
+                } = t, a = new Map;
+                for (let {
+                        automationId: t,
+                        messageId: r,
+                        libraryFileId: s,
+                        query: o
+                    }
+                    of n(u, e)) {
+                    if (a.has(s)) continue;
+                    let e = o.data;
+                    e?.mime_type === "text/markdown" && "owned" === e.access_kind && a.set(s, {
+                        automationId: t,
+                        downloadTarget: {
+                            type: "file-id",
+                            fileId: `file-inline-${e.id}`,
+                            libraryFileId: e.id
+                        },
+                        fileId: `file-inline-${e.id}`,
+                        key: `automation-plan:${e.id}`,
+                        kind: "file",
+                        libraryArtifactType: e.library_artifact_type,
+                        libraryFileId: e.id,
+                        messageId: r,
+                        mimeType: e.mime_type,
+                        name: e.name,
+                        sandboxPath: null,
+                        sizeBytes: null
+                    })
+                }
+                return [...a.values()]
+            }, {
+                isEqual: r()
+            }),
+            p = (0, s.d)(i.a, (e, t) => {
+                let {
+                    get: n
+                } = t, a = n(h, e), r = n(c.q, e), s = r?.filter(e => "list" !== e.source && a.some(t => t.automationId === e.automationId)), o = s?.at(-1)?.messageId;
+                if (null == o) return null;
+                let i = new Set(s?.filter(e => e.messageId === o).map(e => e.automationId));
+                return 1 === i.size ? a.find(e => i.has(e.automationId)) ?? null : null
+            }, {
+                isEqual: r()
+            });
+        n.d(t, {}, {
+            a: h,
+            b: u,
+            c: p,
+            d: function(e, t) {
+                return null != e && t.includes(e.replace(/^file-inline-/, "").split("~")[0])
+            }
+        })
+    }),
+    ckwE: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("zd8w"),
+            o = n("VnEZ");
+
+        function i() {
+            let e = null,
+                t = new Set,
+                n = n => {
+                    for (let a of (e = n, t)) a()
+                };
+            return {
+                getSnapshot: () => e,
+                subscribe: e => (t.add(e), () => {
+                    t.delete(e)
+                }),
+                register: t => (n(t), () => {
+                    e === t && n(null)
+                })
+            }
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n = (0, r.c)(3),
+                    {
+                        children: l
+                    } = e,
+                    [c] = (0, s.useState)(i);
+                return n[0] !== c || n[1] !== l ? (t = (0, a.jsx)(o.a, {
+                    value: c,
+                    children: l
+                }), n[0] = c, n[1] = l, n[2] = t) : t = n[2], t
+            }
+        })
+    }),
+    S0ko: (function(e, t, n) {
+        n.d(t, {
+            BusinessAgentConversationHeader: () => z,
+            BusinessAgentHomeHero: () => B
+        });
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("nlNF"),
+            i = n("OWtl"),
+            l = n("OOaz"),
+            c = n("dQRk"),
+            d = n("nUDt"),
+            u = n("grx7"),
+            h = n("on57"),
+            p = n("zd8w"),
+            m = n("oyxz"),
+            g = n("L6H2"),
+            f = n("zKCW"),
+            v = n("Sm6l"),
+            y = n("JNtf"),
+            b = n("mUDD"),
+            x = n("ZtSy"),
+            C = n("HOLv"),
+            w = n("mEbU"),
+            _ = n("RU3e"),
+            I = n("UIU6"),
+            S = n("Bbed"),
+            j = n("T1PX");
+        let T = (0, S.a)(async () => {
+            let [{
+                SvgLottie: e
+            }, {
+                strFromU8: t,
+                unzipSync: r
+            }, {
+                z: s
+            }, o] = await Promise.all([Promise.all([n.e(747352), n.e(766175)]).then(n.bind(n, "lARO")), Promise.resolve().then(n.bind(n, "yCWm")), Promise.all([n.e(190782), n.e(58670)]).then(n.bind(n, "PkUi")), fetch("https://cdn.openai.com/chatgpt/clients/bazaar/business-agent-disclosure/2026-09-23/business-disclosure-animation-1754caf3cef014e7.lottie", {
+                credentials: "omit",
+                referrerPolicy: "no-referrer",
+                redirect: "error",
+                signal: AbortSignal.timeout(5e3)
+            }).then(e => e.ok ? e.arrayBuffer() : null).catch(() => null)]);
+            if (null == o) return function(e) {
+                return (0, a.jsx)(A, {})
+            };
+            let i = "animations/sponsored-agents.json",
+                l = r(new Uint8Array(o), {
+                    filter: e => {
+                        let {
+                            name: t
+                        } = e;
+                        return t === i
+                    }
+                })[i];
+            if (null == l) throw Error("Business Agent disclosure animation is missing");
+            let c = s.looseObject({
+                layers: s.array(s.looseObject({
+                    nm: s.string().optional(),
+                    refId: s.string().optional(),
+                    masksProperties: s.array(s.looseObject({
+                        nm: s.string().optional()
+                    })).optional()
+                }))
+            }).parse(JSON.parse(t(l)));
+            return function(t) {
+                let {
+                    onError: n
+                } = t, [r, s] = (0, p.useState)(!1), [o] = (0, p.useState)(() => {
+                    let e = structuredClone(c);
+                    for (let t of e.layers) "🖼️ Image (replace img. layer)" === t.nm && "art_0" === t.refId && (t.masksProperties = t.masksProperties?.filter(e => "Sheet top corners" !== e.nm));
+                    return e
+                });
+                return (0, a.jsx)("div", {
+                    className: r ? "size-full" : "invisible size-full",
+                    children: (0, a.jsx)(e, {
+                        className: "size-full",
+                        animationData: o,
+                        autoplay: !0,
+                        loop: !0,
+                        onDataFailed: n,
+                        onDOMLoaded: () => s(!0)
+                    })
+                })
+            }
+        }, {
+            errorFallback: (0, a.jsx)(A, {})
+        });
+
+        function P(e) {
+            let t, n = (0, r.c)(2),
+                s = (0, j.a)();
+            return n[0] !== s ? (t = (0, a.jsx)("div", {
+                "aria-hidden": !0,
+                className: "pointer-events-none relative aspect-2/1 w-full shrink-0 overflow-hidden",
+                children: s ? (0, a.jsx)(A, {}) : (0, a.jsx)(E, {})
+            }), n[0] = s, n[1] = t) : t = n[1], t
+        }
+
+        function E(e) {
+            let t, n, o, i = (0, r.c)(7),
+                l = (0, p.useRef)(null),
+                c = (0, w.a)(l),
+                d = (0, s.z)(_.b),
+                [u, h] = (0, p.useState)(!1);
+            if (u) {
+                let e;
+                return i[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(A, {}), i[0] = e) : e = i[0], e
+            }
+            return i[1] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(A, {}), i[1] = t) : t = i[1], i[2] !== c || i[3] !== d ? (n = c && !0 === d ? (0, a.jsx)(T, {
+                onError: () => h(!0)
+            }) : null, i[2] = c, i[3] = d, i[4] = n) : n = i[4], i[5] !== n ? (o = (0, a.jsx)(I.a, {
+                name: "BusinessAgentDisclosureHero",
+                fallback: t,
+                children: (0, a.jsx)("div", {
+                    ref: l,
+                    className: "absolute inset-0",
+                    children: n
+                })
+            }), i[5] = n, i[6] = o) : o = i[6], o
+        }
+
+        function A(e) {
+            let t, n = (0, r.c)(1);
+            return n[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)("img", {
+                className: "absolute inset-0 size-full object-cover",
+                alt: "",
+                draggable: !1,
+                referrerPolicy: "no-referrer",
+                src: "https://cdn.openai.com/chatgpt/clients/bazaar/business-agent-disclosure/2026-09-23/business-disclosure-static-ade5a622504d70d9.png"
+            }), n[0] = t) : t = n[0], t
+        }
+        var M = {
+                kind: "sprite",
+                name: "lightbulb-rays-regular-24",
+                canvas: {
+                    width: 24,
+                    height: 24,
+                    viewBox: "0 0 24 24"
+                },
+                href: "#codex-icon-lightbulb-rays-regular-24",
+                style: {},
+                alignment: {
+                    authored: {
+                        x: 0,
+                        y: 0,
+                        overflows: !1
+                    },
+                    primary: {
+                        x: 0,
+                        y: .375,
+                        overflows: !1
+                    },
+                    composite: {
+                        x: 0,
+                        y: .375,
+                        overflows: !1
+                    }
+                }
+            },
+            k = {
+                kind: "sprite",
+                name: "lock-regular-24",
+                canvas: {
+                    width: 24,
+                    height: 24,
+                    viewBox: "0 0 24 24"
+                },
+                href: "#codex-icon-lock-regular-24",
+                style: {},
+                alignment: {
+                    authored: {
+                        x: 0,
+                        y: 0,
+                        overflows: !1
+                    },
+                    primary: {
+                        x: 0,
+                        y: 0,
+                        overflows: !1
+                    },
+                    composite: {
+                        x: 0,
+                        y: 0,
+                        overflows: !1
+                    }
+                }
+            };
+
+        function R(e) {
+            let t, n, s, o, i, l, c, d = (0, r.c)(17),
+                {
+                    compact: u,
+                    state: p
+                } = e,
+                f = void 0 !== u && u,
+                v = "ready" === p.status ? p.context : p,
+                y = f && "max-w-[60%] shrink-0";
+            d[0] !== y ? (t = (0, h.b)("flex min-w-0 items-center gap-2 select-none", y), d[0] = y, d[1] = t) : t = d[1];
+            let b = f ? "shrink-0 max-sm:hidden" : "contents",
+                x = v.businessName ?? null,
+                C = v.logoUrl ?? null;
+            return d[2] !== x || d[3] !== C ? (n = (0, a.jsx)(g.a, {
+                alt: "",
+                name: x,
+                size: "md",
+                src: C
+            }), d[2] = x, d[3] = C, d[4] = n) : n = d[4], d[5] !== b || d[6] !== n ? (s = (0, a.jsx)("div", {
+                className: b,
+                children: n
+            }), d[5] = b, d[6] = n, d[7] = s) : s = d[7], d[8] !== v.businessName ? (o = (0, a.jsx)("span", {
+                className: "truncate text-sm font-semibold",
+                children: (0, a.jsx)(F, {
+                    businessName: v.businessName
+                })
+            }), d[8] = v.businessName, d[9] = o) : o = d[9], d[10] === Symbol.for("react.memo_cache_sentinel") ? (i = (0, a.jsx)("span", {
+                className: "truncate text-xs font-normal text-secondary",
+                children: (0, a.jsx)(m.a, {
+                    id: "chatgpt.ads.business_agent.thread_header.subtitle",
+                    defaultMessage: "Business chat",
+                    description: "Short subtitle beneath the business name in the header of a Business Agent conversation. It tells an end user that the custom GPT chat represents a business. Keep this compact enough to fit on one line; there are no placeholders or formatting."
+                })
+            }), d[10] = i) : i = d[10], d[11] !== o ? (l = (0, a.jsxs)("div", {
+                className: "flex min-w-0 flex-col text-start",
+                children: [o, i]
+            }), d[11] = o, d[12] = l) : l = d[12], d[13] !== l || d[14] !== t || d[15] !== s ? (c = (0, a.jsxs)("div", {
+                className: t,
+                children: [s, l]
+            }), d[13] = l, d[14] = t, d[15] = s, d[16] = c) : c = d[16], c
+        }
+
+        function N(e) {
+            let t, n = (0, r.c)(14),
+                {
+                    state: s,
+                    onStarterPromptSelect: o
+                } = e,
+                i = "ready" === s.status ? s.context : s;
+            if (n[0] !== i.businessName || n[1] !== i.logoUrl || n[2] !== i.showConversationStarters || n[3] !== o || n[4] !== s.context || n[5] !== s.status) {
+                let e, r, l, c = "ready" === s.status && i.showConversationStarters ? s.context.conversationStarters?.slice(0, 4) : void 0,
+                    d = i.businessName ?? null,
+                    u = i.logoUrl ?? null;
+                n[7] !== d || n[8] !== u ? (e = (0, a.jsx)(g.a, {
+                    alt: "",
+                    name: d,
+                    size: "lg",
+                    src: u
+                }), n[7] = d, n[8] = u, n[9] = e) : e = n[9], n[10] !== i.businessName ? (r = (0, a.jsx)("h1", {
+                    className: "heading-xl font-normal text-default select-none",
+                    children: (0, a.jsx)(F, {
+                        businessName: i.businessName
+                    })
+                }), n[10] = i.businessName, n[11] = r) : r = n[11], n[12] !== s.status ? (l = "ready" !== s.status ? (0, a.jsx)(f.a, {
+                    ariaLive: "polite",
+                    role: "failed" === s.status ? "alert" : "status",
+                    type: "failed" === s.status ? "error" : "normal",
+                    content: "failed" === s.status ? (0, a.jsx)(m.a, {
+                        id: "chatgptConversations.businessAgent.unavailable",
+                        defaultMessage: "This Business Agent is unavailable. Please return to the ad and try again",
+                        description: "Error on a Business Agent chat destination when creating its interaction fails; sending is unavailable and the user can retry from the original ad"
+                    }) : (0, a.jsx)(m.a, {
+                        id: "chatgptConversations.businessAgent.loading",
+                        defaultMessage: "Opening Business Agent…",
+                        description: "Loading status on a Business Agent chat destination while its interaction is being created"
+                    })
+                }) : null, n[12] = s.status, n[13] = l) : l = n[13], t = (0, a.jsxs)("div", {
+                    className: "mx-auto flex w-[min(100%,var(--thread-content-max-width))] min-w-0 flex-col items-center gap-3 px-panel text-center",
+                    children: [e, r, l, null != c && (c.length > 1 || 1 === c.length && "ready" === s.status && !0 === s.context.disablePrefill) ? (0, a.jsx)("div", {
+                        className: "mt-3 flex flex-wrap justify-center gap-2 select-none",
+                        children: c.map(e => (0, a.jsx)(v.a, {
+                            color: "secondary",
+                            size: "medium",
+                            disabled: null == o,
+                            onClick: () => o?.(e),
+                            children: e
+                        }, e))
+                    }) : null]
+                }), n[0] = i.businessName, n[1] = i.logoUrl, n[2] = i.showConversationStarters, n[3] = o, n[4] = s.context, n[5] = s.status, n[6] = t
+            } else t = n[6];
+            return t
+        }
+
+        function O(e) {
+            let t, n, s, o, i, l, c, d, u, h, g, f, w, _, I, S, j, T = (0, r.c)(29),
+                {
+                    context: E,
+                    onPresented: A,
+                    onContinue: R,
+                    onDismiss: N
+                } = e,
+                [O, F] = (0, p.useState)(!0 === E.showDisclosureModal);
+            T[0] !== E.privacyPolicyUrl ? (t = function(e) {
+                if (null == e) return null;
+                try {
+                    let t = new URL(e);
+                    return ("https:" === t.protocol || "http:" === t.protocol) && t.hostname ? t.href : null
+                } catch {
+                    return null
+                }
+            }(E.privacyPolicyUrl), T[0] = E.privacyPolicyUrl, T[1] = t) : t = T[1];
+            let G = t;
+            return T[2] !== N ? (n = e => {
+                F(e), e || N?.()
+            }, T[2] = N, T[3] = n) : n = T[3], T[4] !== A ? (s = {
+                "data-theme": "light",
+                onOpenAutoFocus: A
+            }, T[4] = A, T[5] = s) : s = T[5], T[6] !== R ? (o = e => {
+                e.preventDefault(), F(!1), R?.()
+            }, T[6] = R, T[7] = o) : o = T[7], T[8] === Symbol.for("react.memo_cache_sentinel") ? (i = (0, a.jsx)(P, {}), T[8] = i) : i = T[8], T[9] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, a.jsx)(y.d, {
+                className: "heading-lg text-center leading-7 font-semibold",
+                children: (0, a.jsx)(m.a, {
+                    id: "chatgptConversations.businessAgent.disclosureTitle",
+                    defaultMessage: "About chatting with businesses",
+                    description: "Title of the introductory dialog shown when a signed-in person opens an eligible Business Agent chat. It introduces what business AI chats offer and how chat privacy works. Keep it neutral and concise; there are no placeholders."
+                })
+            }), T[9] = l) : l = T[9], T[10] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, a.jsx)(C.a, {
+                className: "shrink-0",
+                asset: M
+            }), T[10] = c) : c = T[10], T[11] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, a.jsx)("h3", {
+                className: "text-base leading-relaxed font-semibold text-default",
+                children: (0, a.jsx)(m.a, {
+                    id: "chatgptConversations.businessAgent.disclosureQuestionsTitle",
+                    defaultMessage: "Ask questions and compare options",
+                    description: "Short heading in the introductory dialog shown when a signed-in person opens an eligible Business Agent chat. It explains that they can ask about the business and compare options before deciding. Keep the tone informative; there are no placeholders."
+                })
+            }), T[11] = d) : d = T[11], T[12] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, a.jsxs)("div", {
+                className: "flex items-start gap-3",
+                children: [c, (0, a.jsxs)("div", {
+                    className: "flex min-w-0 flex-col gap-0.5",
+                    children: [d, (0, a.jsx)("p", {
+                        className: "text-base leading-snug tracking-tight text-secondary",
+                        children: (0, a.jsx)(m.a, {
+                            id: "chatgptConversations.businessAgent.disclosureQuestionsBody",
+                            defaultMessage: "Learn what the business offers and ask detailed follow-ups as you decide.",
+                            description: "Body beneath the questions-and-comparison heading in the introductory dialog shown when a signed-in person opens an eligible Business Agent chat. It explains that they can learn about the business and ask further questions while deciding. Use a neutral tone; there are no placeholders."
+                        })
+                    })]
+                })]
+            }), T[12] = u) : u = T[12], T[13] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, a.jsx)(C.a, {
+                className: "shrink-0",
+                asset: k
+            }), T[13] = h) : h = T[13], T[14] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, a.jsx)("h3", {
+                className: "text-base leading-relaxed font-semibold text-default",
+                children: (0, a.jsx)(m.a, {
+                    id: "chatgptConversations.businessAgent.disclosureUsageTrendsTitle",
+                    defaultMessage: "Your chats remain private",
+                    description: "Short privacy heading in the introductory dialog shown when a signed-in person opens an eligible Business Agent chat. Reassure the person that their conversations with business AI agents remain private from the businesses. There are no placeholders."
+                })
+            }), T[14] = g) : g = T[14], T[15] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, a.jsxs)("div", {
+                className: "flex flex-col gap-4",
+                children: [l, (0, a.jsx)(y.c, {
+                    asChild: !0,
+                    children: (0, a.jsxs)("div", {
+                        className: "flex flex-col gap-4",
+                        children: [u, (0, a.jsxs)("div", {
+                            className: "flex items-start gap-3",
+                            children: [h, (0, a.jsxs)("div", {
+                                className: "flex min-w-0 flex-col gap-0.5",
+                                children: [g, (0, a.jsx)("p", {
+                                    className: "text-base leading-snug tracking-tight text-secondary",
+                                    children: (0, a.jsx)(m.a, {
+                                        id: "chatgptConversations.businessAgent.disclosureUsageTrendsBody",
+                                        defaultMessage: "Businesses can’t see your chats or your personal info — just overall usage trends to help improve their AI agent.",
+                                        description: "Privacy explanation in the introductory dialog shown when a signed-in person opens an eligible Business Agent chat. The business cannot see the chat or personal information and only receives overall usage trends to improve its AI agent. Use a clear neutral tone; there are no placeholders or links."
+                                    })
+                                })]
+                            })]
+                        })]
+                    })
+                })]
+            }), T[15] = f) : f = T[15], T[16] !== G ? (w = null == G ? null : (0, a.jsx)(x.a, {
+                href: G,
+                initiator: "external_link",
+                openTarget: "external-browser",
+                children: (0, a.jsx)(m.a, {
+                    id: "chatgptConversations.businessAgent.privacyPolicy",
+                    defaultMessage: "Privacy policy",
+                    description: "Link to the business-provided privacy policy in the introductory Business Agent dialog. Opens separately without accepting or dismissing the dialog. Keep the label short."
+                })
+            }), T[16] = G, T[17] = w) : w = T[17], T[18] === Symbol.for("react.memo_cache_sentinel") ? (_ = (0, a.jsx)("div", {
+                className: "flex justify-center",
+                children: (0, a.jsx)(v.a, {
+                    color: "primary",
+                    size: "dialogAction",
+                    type: "submit",
+                    children: (0, a.jsx)(m.a, {
+                        id: "chatgptConversations.businessAgent.disclosureStartChat",
+                        defaultMessage: "Start chatting",
+                        description: "Short button label in the introductory dialog shown when a signed-in person opens an eligible Business Agent chat. Dismisses the information dialog so they can start chatting. It does not send a message or change a privacy setting; there are no placeholders."
+                    })
+                })
+            }), T[18] = _) : _ = T[18], T[19] !== w ? (I = (0, a.jsxs)("div", {
+                className: "flex flex-col gap-4 pb-10 select-none",
+                children: [i, (0, a.jsxs)("div", {
+                    className: "flex flex-col gap-6 px-8",
+                    children: [f, w, _]
+                })]
+            }), T[19] = w, T[20] = I) : I = T[20], T[21] !== I || T[22] !== o ? (S = (0, a.jsx)(b.b, {
+                as: "form",
+                size: "viewport",
+                variant: "chatgpt",
+                onSubmit: o,
+                children: I
+            }), T[21] = I, T[22] = o, T[23] = S) : S = T[23], T[24] !== O || T[25] !== S || T[26] !== n || T[27] !== s ? (j = (0, a.jsx)(y.a, {
+                open: O,
+                onOpenChange: n,
+                size: "beacon",
+                variant: "promotional",
+                contentProps: s,
+                children: S
+            }), T[24] = O, T[25] = S, T[26] = n, T[27] = s, T[28] = j) : j = T[28], j
+        }
+
+        function F(e) {
+            let t, n = (0, r.c)(2),
+                {
+                    businessName: s
+                } = e;
+            return n[0] !== s ? (t = s?.trim() ? (0, a.jsx)(a.Fragment, {
+                children: s
+            }) : (0, a.jsx)(m.a, {
+                id: "chatgpt.ads.business_agent.disclosure.fallback_name",
+                defaultMessage: "Business Agent",
+                description: "Fallback heading in the compact data-sharing disclosure shown at the top of every organic or sponsored Business Agent conversation. Use a short neutral title that fits on one line. This appears when the business has not supplied a display name."
+            }), n[0] = s, n[1] = t) : t = n[1], t
+        }
+        var G = n("zHQF");
+
+        function z(e) {
+            let t, n = (0, r.c)(4),
+                {
+                    compact: o,
+                    conversationId: i,
+                    fallback: l
+                } = e,
+                d = (0, s.x)(c.u, i);
+            return n[0] !== o || n[1] !== l || n[2] !== d ? (t = null == d ? l : (0, a.jsx)(R, {
+                compact: o,
+                state: d
+            }), n[0] = o, n[1] = l, n[2] = d, n[3] = t) : t = n[3], t
+        }
+
+        function B(e) {
+            let t, n, d, h = (0, r.c)(18),
+                {
+                    conversationId: p,
+                    fallback: m,
+                    onStarterPromptSelect: g
+                } = e,
+                f = (0, s.y)(i.a),
+                v = (0, s.x)(c.u, p),
+                y = (0, s.z)(v?.status === "failed" ? o.c : null),
+                b = y?.state?.businessProfileChat;
+            if (v?.status === "failed" && b && y?.state?.initialChatGptConversationId === p && y.state.initialChatGptBusinessAgentGizmoId === b.gizmoId && (0, l.e)(p)) {
+                let e;
+                if (v.accountId !== b.accountId || null != v.userId && v.userId !== b.userId) {
+                    let e;
+                    return h[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(G.b, {}), h[0] = e) : e = h[0], e
+                }
+                return h[1] !== p || h[2] !== b || h[3] !== f || h[4] !== v.businessName || h[5] !== v.logoUrl ? (e = (0, a.jsx)(G.a, {
+                    retry: () => void(0, u.a)(f, p, b, {
+                        businessName: v.businessName,
+                        logoUrl: v.logoUrl
+                    })
+                }), h[1] = p, h[2] = b, h[3] = f, h[4] = v.businessName, h[5] = v.logoUrl, h[6] = e) : e = h[6], e
+            }
+            return null == v ? m : (h[7] !== m || h[8] !== g || h[9] !== v ? (t = "ready" !== v.status || v.context.showConversationStarters ? (0, a.jsx)(N, {
+                state: v,
+                onStarterPromptSelect: g
+            }) : m, h[7] = m, h[8] = g, h[9] = v, h[10] = t) : t = h[10], h[11] !== p || h[12] !== v.context || h[13] !== v.status ? (n = "ready" === v.status ? (0, a.jsx)(D, {
+                context: v.context,
+                conversationId: p
+            }, v.context.interactionId) : null, h[11] = p, h[12] = v.context, h[13] = v.status, h[14] = n) : n = h[14], h[15] !== t || h[16] !== n ? (d = (0, a.jsxs)(a.Fragment, {
+                children: [t, n]
+            }), h[15] = t, h[16] = n, h[17] = d) : d = h[17], d)
+        }
+
+        function D(e) {
+            let t, n, o, l = (0, r.c)(11),
+                {
+                    context: c,
+                    conversationId: u
+                } = e,
+                h = (0, s.y)(i.a),
+                p = (0, s.z)(d.b),
+                m = p?.conversationId === u && p.ready;
+            return m || !0 === c.showDisclosureModal ? (l[0] !== m || l[1] !== c || l[2] !== p ? (t = m ? {
+                ...c,
+                showDisclosureModal: !p.presented
+            } : c, l[0] = m, l[1] = c, l[2] = p, l[3] = t) : t = l[3], l[4] !== m || l[5] !== u || l[6] !== h ? (n = m ? () => (0, d.a)(h, u) : void 0, l[4] = m, l[5] = u, l[6] = h, l[7] = n) : n = l[7], l[8] !== t || l[9] !== n ? (o = (0, a.jsx)(O, {
+                context: t,
+                onPresented: n
+            }), l[8] = t, l[9] = n, l[10] = o) : o = l[10], o) : null
+        }
+    }),
+    KvJW: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("zd8w"),
+            i = n("oyxz"),
+            l = n("WQca"),
+            c = n("IxgT"),
+            d = n("yGJW"),
+            u = n("OWtl"),
+            h = n("eShZ"),
+            p = n("ZhoB");
+        let m = new WeakSet;
+
+        function g(e) {
+            let t, n, a = (0, r.c)(5),
+                {
+                    error: s,
+                    onShown: i
+                } = e,
+                l = (0, o.useEffectEvent)(i);
+            return a[0] !== s || a[1] !== l ? (t = () => {
+                if (null != s) {
+                    if ((0, h.d)(s)) {
+                        if (m.has(s)) return;
+                        m.add(s)
+                    }
+                    l()
+                }
+            }, a[0] = s, a[1] = l, a[2] = t) : t = a[2], a[3] !== s ? (n = [s], a[3] = s, a[4] = n) : n = a[4], (0, o.useEffect)(t, n), null
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, o, m, f, v, y, b, x = (0, r.c)(24),
+                    {
+                        conversationId: C,
+                        error: w,
+                        loadError: _,
+                        canRetry: I,
+                        isWorkConversation: S,
+                        showChatFallback: j,
+                        children: T
+                    } = e,
+                    P = (0, s.y)(u.a),
+                    E = (0, s.z)(void 0 !== j && j && !1 === S ? c.b : null);
+                if (null != E) return E;
+                x[0] !== C || x[1] !== S || x[2] !== P ? (t = (e, t) => {
+                    (0, p.e)(P.get(d.c).logProductEvent, {
+                        conversationId: C,
+                        error: e,
+                        isWorkConversation: S,
+                        canRetry: t
+                    })
+                }, x[0] = C, x[1] = S, x[2] = P, x[3] = t) : t = x[3];
+                let A = t;
+                x[4] !== I || x[5] !== _ || x[6] !== A ? (n = () => A(_, I), x[4] = I, x[5] = _, x[6] = A, x[7] = n) : n = x[7], x[8] !== _ || x[9] !== n ? (o = (0, a.jsx)(g, {
+                    error: _,
+                    onShown: n
+                }), x[8] = _, x[9] = n, x[10] = o) : o = x[10], x[11] !== T || x[12] !== o ? (m = (0, a.jsxs)(a.Fragment, {
+                    children: [o, T]
+                }), x[11] = T, x[12] = o, x[13] = m) : m = x[13];
+                let M = m;
+                return x[14] !== w ? (f = w instanceof h.FetchError && !(0, h.d)(w) && (403 === w.status || 404 === w.status), x[14] = w, x[15] = f) : f = x[15], x[16] !== w || x[17] !== A ? (v = () => A(w, !1), x[16] = w, x[17] = A, x[18] = v) : v = x[18], x[19] === Symbol.for("react.memo_cache_sentinel") ? (y = (0, a.jsx)(i.a, {
+                    id: "chatgptConversations.conversationInaccessible",
+                    defaultMessage: "You don’t have access to this conversation. Make sure you’re logged in to the right account, or ask the conversation owner to send you a share link.",
+                    description: "Info toast shown when a user opens a ChatGPT conversation that does not exist or that they cannot access. The user is returned to Home and can switch accounts or ask the owner for a share link."
+                }), x[19] = y) : y = x[19], x[20] !== M || x[21] !== f || x[22] !== v ? (b = (0, a.jsxs)(a.Fragment, {
+                    children: [null, (0, a.jsx)(a.Fragment, {
+                        children: (0, a.jsx)(l.a, {
+                            isUnavailable: f,
+                            homePath: "/",
+                            onUnavailable: v,
+                            message: y,
+                            children: M
+                        })
+                    })]
+                }), x[20] = M, x[21] = f, x[22] = v, x[23] = b) : b = x[23], b
+            }
+        })
+    }),
+    eKlv: (function(e, t, n) {
+        var a = n("Cslg"),
+            r = n("X6Vn"),
+            s = n("SGsN"),
+            o = n("svjy"),
+            i = n("gbnW"),
+            l = n("ZrYB"),
+            c = n("AOHi"),
+            d = n("OtLV"),
+            u = n("sfmI"),
+            h = n("lBzi"),
+            p = n("dQRk"),
+            m = n("vVgo"),
+            g = n("gyrn"),
+            f = n("LOqV"),
+            v = n("QmkR");
+
+        function y(e, t) {
+            let n = e.query.getData(h.chatGptConversationQueryById$, t) ?? (0, f.g)(e.queryClient, t);
+            if (null != n) return n;
+            let a = e.get(p.l).find(n => e.get(p.j, n) === t);
+            if (!(null == a || e.get(p.B, a))) return {
+                id: t,
+                conversation_origin: e.get(p.y, a),
+                gizmo_id: e.get(p.S, a),
+                is_starred: !1,
+                title: e.get(p.db, a)
+            }
+        }
+
+        function b(e, t) {
+            let n = e.get(p.j, t);
+            return null == n ? null : e.query.snapshot(h.chatGptConversationQueryById$, n).getData() ?? null
+        }
+        n.d(t, {}, {
+            a: function(e, t) {
+                let n = b(e, t);
+                null != n && (0, l.a)(e, n.conversation_id)
+            },
+            b: y,
+            c: function(e, t) {
+                let n = e.get(p.j, t);
+                if (null == n) return;
+                let r = y(e, n);
+                null != r && (0, v.d)(e, n) && (0, u.a)(r, e.get(a.h), e.get(a.g)) && (0, v.V)({
+                    scope: e,
+                    conversation: "conversation_id" in r ? {
+                        gizmo_id: r.gizmo_id,
+                        id: r.conversation_id,
+                        is_archived: r.is_archived,
+                        is_starred: r.is_starred,
+                        title: r.title,
+                        context_scopes: r.context_scopes
+                    } : r
+                }).catch(t => {
+                    let n = t instanceof Error ? (0, c.e)(t)?.trim() : null;
+                    e.get(s.f).danger(n || e.get(o.a).formatMessage(d.a.pinError), {
+                        errorAnalytics: {
+                            toastId: "chatgptConversations.activeChat.pinError"
+                        }
+                    })
+                })
+            },
+            renameActiveChatGptConversation: function(e, t, n) {
+                let s = b(e, t);
+                if (null == s || !(0, u.b)(s, e.get(a.h), e.get(a.g), e.get(v.g, s.conversation_id))) {
+                    if (null != n) throw Error("Chat is unavailable for renaming.");
+                    return
+                }
+                let o = e.get(p.E, t) ? e.get(p.db, t) : s.title,
+                    l = (0, m.a)(s.context_scopes) ? s.gizmo_id : void 0,
+                    c = t => (0, v.R)({
+                        scope: e,
+                        conversationId: s.conversation_id,
+                        previousTitle: o,
+                        title: t
+                    });
+                if (null != n) {
+                    if (null != l && e.get(g.f)?.projectId !== l) throw Error("Chat is locked.");
+                    return c(n)
+                }(0, r.f)(e, i.SidebarRenameDialog, {
+                    initialValue: o ?? "",
+                    draftKey: s.conversation_id,
+                    protectedProjectId: l,
+                    onSave: c,
+                    requireNonEmpty: !0,
+                    trimOnSave: !0
+                })
+            }
+        })
+    }),
+    aLqR: (function(e, t, n) {
+        var a = n("QosV"),
+            r = n("BolX"),
+            s = n("Wf1j"),
+            o = n("EFj1"),
+            i = n("SGsN"),
+            l = n("TL6G"),
+            c = n("OWtl"),
+            d = n("eKlv"),
+            u = n("OtLV"),
+            h = n("XtQP");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, p, m, g, f, v, y = (0, a.c)(16),
+                    {
+                        conversationId: b
+                    } = e,
+                    x = (0, r.y)(c.a),
+                    C = (0, s.a)();
+                return y[0] !== b || y[1] !== C || y[2] !== x ? (t = () => {
+                    (0, h.c)(x, b).catch(() => {
+                        x.get(i.f).danger(C.formatMessage(u.a.markUnreadError), {
+                            errorAnalytics: {
+                                toastId: "chatgptConversations.sidebar.markUnreadError"
+                            }
+                        })
+                    })
+                }, y[0] = b, y[1] = C, y[2] = x, y[3] = t) : t = y[3], (0, o.a)("markThreadUnread", t), y[4] !== b || y[5] !== x ? (n = () => void(0, d.renameActiveChatGptConversation)(x, b), p = [b, x], y[4] = b, y[5] = x, y[6] = n, y[7] = p) : (n = y[6], p = y[7]), (0, l.d)("rename-thread", n, p), y[8] !== b || y[9] !== x ? (m = () => (0, d.c)(x, b), g = [b, x], y[8] = b, y[9] = x, y[10] = m, y[11] = g) : (m = y[10], g = y[11]), (0, l.d)("toggle-thread-pin", m, g), y[12] !== b || y[13] !== x ? (f = () => (0, d.a)(x, b), v = [b, x], y[12] = b, y[13] = x, y[14] = f, y[15] = v) : (f = y[14], v = y[15]), (0, l.d)("archive-thread", f, v), null
+            }
+        })
+    }),
+    kGGU: (function(e, t, n) {
+        n.d(t, {
+            a: () => it,
+            ChatGptConversationPage: () => ie
+        });
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("FS1B"),
+            o = n("T0Rc"),
+            i = n("on57"),
+            l = n("IPUh"),
+            c = n("HVBu"),
+            d = n.n(c),
+            u = n("BolX"),
+            h = n("d0tz"),
+            p = n("AuIy"),
+            m = n("iqEK"),
+            g = n("NRIv"),
+            f = n("zd8w"),
+            v = n("v7qY"),
+            y = n("Wf1j"),
+            b = n("oyxz"),
+            x = n("jqIZ"),
+            C = n("bn59"),
+            w = n("OY84"),
+            _ = n("Yxds"),
+            I = n("StMt"),
+            S = n("E8Sp"),
+            j = n("z0li"),
+            T = n("QcFS"),
+            P = n("ZU27"),
+            E = n("Pyg2"),
+            A = n("ZIh4"),
+            M = n("O0M0"),
+            k = n("Cslg"),
+            R = n("OFP1"),
+            N = n("ItIk"),
+            O = (n("AZW7"), n("jov5")),
+            F = n("dQRk"),
+            G = n("tSEg"),
+            z = n("Ro2M"),
+            B = n("bN4H"),
+            D = n("TS05");
+
+        function L(e) {
+            let t, n, s, o, i = (0, r.c)(12),
+                {
+                    conversationId: l,
+                    entries: c,
+                    turnListApi: d
+                } = e,
+                {
+                    key: h,
+                    search: p,
+                    state: m
+                } = (0, x.Y)();
+            i[0] === Symbol.for("react.memo_cache_sentinel") ? (t = {
+                name: "automations.cloud.scheduled-tasks"
+            }, i[0] = t) : t = i[0];
+            let {
+                isCapable: g
+            } = (0, u.x)(I.a, t);
+            if (i[1] !== g || i[2] !== m?.sidebarArea || i[3] !== p) {
+                let e = new URLSearchParams(p);
+                n = e.get("automationId"), s = m?.sidebarArea === "scheduled" || !g || !n || "finalAgentTurnStart" !== e.get("messageId"), i[1] = g, i[2] = m?.sidebarArea, i[3] = p, i[4] = n, i[5] = s
+            } else n = i[4], s = i[5];
+            return s ? null : (i[6] !== n || i[7] !== l || i[8] !== c || i[9] !== h || i[10] !== d ? (o = (0, a.jsx)(W, {
+                automationId: n,
+                conversationId: l,
+                entries: c,
+                turnListApi: d
+            }, h), i[6] = n, i[7] = l, i[8] = c, i[9] = h, i[10] = d, i[11] = o) : o = i[11], o)
+        }
+
+        function W(e) {
+            let t, n, a, s, o = (0, r.c)(25),
+                {
+                    automationId: i,
+                    conversationId: l,
+                    entries: c,
+                    turnListApi: d
+                } = e,
+                h = (0, u.y)(G.a),
+                p = (0, x.Y)(),
+                m = (0, u.z)(k.f),
+                g = (0, u.x)(F.j, l),
+                {
+                    data: v
+                } = (0, u.x)(z.e, i),
+                y = (0, u.z)(O.a),
+                b = (0, f.useRef)(null),
+                C = (0, f.useRef)(null);
+            o[0] !== c ? (t = c.findLast(K), o[0] = c, o[1] = t) : t = o[1];
+            let w = t;
+            o[2] !== m || o[3] !== i || o[4] !== y || o[5] !== w || o[6] !== v || o[7] !== p || o[8] !== h || o[9] !== d ? (n = () => {
+                null == v || null == m || (y || b.current === m || (b.current = m, (0, B.openAutomationSidePanelTab)({
+                    scope: h,
+                    automationId: i,
+                    title: v.automation.title
+                })), null != d && null != w && C.current !== m && (C.current = m, d.scrollToKey(w.turnKey, H, {
+                    align: "top"
+                }).then(() => {
+                    h.set(D.a, {
+                        locationKey: p.key,
+                        accountId: m
+                    }, !0)
+                })))
+            }, o[2] = m, o[3] = i, o[4] = y, o[5] = w, o[6] = v, o[7] = p, o[8] = h, o[9] = d, o[10] = n) : n = o[10];
+            let _ = (0, f.useEffectEvent)(n);
+            o[11] !== m || o[12] !== l || o[13] !== v?.automation.conversation_id || o[14] !== _ || o[15] !== g ? (a = () => {
+                null != m && v?.automation.conversation_id === (g ?? l) && _()
+            }, o[11] = m, o[12] = l, o[13] = v?.automation.conversation_id, o[14] = _, o[15] = g, o[16] = a) : a = o[16];
+            let I = w?.turnKey,
+                S = v?.automation.conversation_id;
+            return o[17] !== m || o[18] !== y || o[19] !== l || o[20] !== g || o[21] !== I || o[22] !== S || o[23] !== d ? (s = [m, l, I, S, g, y, d], o[17] = m, o[18] = y, o[19] = l, o[20] = g, o[21] = I, o[22] = S, o[23] = d, o[24] = s) : s = o[24], (0, f.useEffect)(a, s), null
+        }
+
+        function H(e) {
+            let t = e.querySelector("[data-chatgpt-agent-turn-start]");
+            if (null == t) return null;
+            let n = e.ownerDocument.createTreeWalker(e, NodeFilter.SHOW_ELEMENT, {
+                acceptNode: q
+            });
+            n.currentNode = t;
+            let a = n.nextNode();
+            return a instanceof HTMLElement ? a : null
+        }
+
+        function q(e) {
+            return e instanceof HTMLElement && e.getClientRects().length > 0 ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP
+        }
+
+        function K(e) {
+            let {
+                turn: t
+            } = e;
+            return t.items.some(U)
+        }
+
+        function U(e) {
+            return "user-message" !== e.type
+        }
+        var V = n("uxPT"),
+            Q = n("nKJ6"),
+            $ = n("GMTh"),
+            Y = n("zpMv"),
+            X = n("PFzG"),
+            J = n("KvJW"),
+            Z = n("TDcV"),
+            ee = n("Xvoy"),
+            et = n("SGsN"),
+            en = n("WAdu"),
+            ea = n("OWtl"),
+            er = n("hZax"),
+            es = n("VnEZ");
+        let eo = {
+            $type: "protobuf_analytics_events.v1.ChatgptConversationPrintLifecycle"
+        };
+        var ei = n("jDEJ"),
+            el = n("yGJW");
+        let ec = (0, u.u)(ea.a, null);
+
+        function ed(e, t) {
+            if (!e.get(el.c).isChatgptBrowserReplacement || t.repeat || ((0, ei.a)() ? !t.metaKey || t.ctrlKey : !t.ctrlKey || t.metaKey) || t.altKey || t.shiftKey || "p" !== t.key.toLowerCase() || null != e.get(ec)) return;
+            let n = eh("CHATGPT_CONVERSATION_PRINT_ENTRY_POINT_SHORTCUT");
+            e.set(ec, n), ep(e, n, "CHATGPT_CONVERSATION_PRINT_STAGE_INTENT_OBSERVED")
+        }
+        async function eu(e, t, n, a) {
+            let r = e.get(ec);
+            if (!e.get(el.c).isChatgptBrowserReplacement || null == r) return a();
+            let s = n => {
+                ep(e, r, n, t)
+            };
+            s("CHATGPT_CONVERSATION_PRINT_STAGE_PREPARATION_STARTED");
+            try {
+                let e = await a();
+                return n.aborted || s("CHATGPT_CONVERSATION_PRINT_STAGE_PREPARATION_SUCCEEDED"), e
+            } catch (a) {
+                throw n.aborted || s("CHATGPT_CONVERSATION_PRINT_STAGE_PREPARATION_FAILED"), "CHATGPT_CONVERSATION_PRINT_PREPARATION_HISTORY" !== t || e.get(ec)?.id !== r.id || e.get(ec)?.printing || e.set(ec, null), a
+            }
+        }
+
+        function eh(e) {
+            let t = performance.now();
+            return {
+                id: crypto.randomUUID(),
+                entryPoint: e,
+                startedAt: t,
+                printing: !1
+            }
+        }
+
+        function ep(e, t, n, a) {
+            (0, el.a)(e, eo, {
+                attemptId: t.id,
+                stage: n,
+                entryPoint: t.entryPoint,
+                elapsedMs: Math.max(0, performance.now() - t.startedAt),
+                preparation: a
+            })
+        }
+        var em = n("CpsU"),
+            eg = n.n(em),
+            ef = n("rKAs"),
+            ev = n("SqqO"),
+            ey = n("zHp1"),
+            eb = n("rvFo"),
+            ex = n("taWv");
+
+        function eC() {
+            return Object.fromEntries(Array.from(document.images).flatMap(e => {
+                if (!e.complete || 0 === e.naturalWidth) return [];
+                let t = e.currentSrc || e.src;
+                return [e.getAttribute("src"), e.src, t].flatMap(e => e ? [
+                    [e, t]
+                ] : [])
+            }))
+        }
+        var ew = n("rxj0"),
+            e_ = n("gsAl"),
+            eI = n("AO3k"),
+            eS = n("aS84"),
+            ej = n("Qtjq"),
+            eT = "printDocument-v_w5Ax";
+        let eP = "https://chatgpt.com/download/?utm_source=chatgpt_web&utm_medium=print&utm_campaign=app_install";
+
+        function eE(e) {
+            let t, n, s, o, l, c, d, u, h, p, m, g, f = (0, r.c)(22),
+                {
+                    children: v,
+                    title: x
+                } = e,
+                C = (0, y.a)(),
+                {
+                    getExperiment: w
+                } = (0, er.j)();
+            if (!w("448755449").get("enabled", !1)) {
+                let e, t;
+                return f[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, i.b)(eT, "hidden w-full space-y-1.5 bg-surface text-default print:block"), f[0] = e) : e = f[0], f[1] !== v ? (t = (0, a.jsx)("div", {
+                    className: e,
+                    "data-conversation-print": "",
+                    "data-theme": "light",
+                    children: v
+                }), f[1] = v, f[2] = t) : t = f[2], t
+            }
+            return f[3] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, i.b)(eT, "formattedPrintDocument-tP74Wl", "group/conversation-print hidden w-full bg-surface text-default print:block"), f[3] = t) : t = f[3], f[4] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, a.jsx)(eS.a, {
+                className: "h-6 w-auto shrink-0"
+            }), f[4] = n) : n = f[4], f[5] !== x ? (s = (0, a.jsxs)("header", {
+                className: "mb-6 flex items-center justify-between gap-6",
+                children: [n, (0, a.jsx)("p", {
+                    className: "min-w-0 text-end text-sm wrap-anywhere text-secondary",
+                    children: x
+                })]
+            }), f[5] = x, f[6] = s) : s = f[6], f[7] !== v ? (o = (0, a.jsx)("div", {
+                className: "transcript-XHYu34",
+                children: v
+            }), f[7] = v, f[8] = o) : o = f[8], f[9] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, i.b)("footer-QEzLbn", "flex items-center gap-3 rounded-2xl border border-default bg-surface-secondary p-2 text-default"), f[9] = l) : l = f[9], f[10] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, a.jsx)("div", {
+                className: "flex size-10 shrink-0 items-center justify-center rounded-xl border border-default bg-surface",
+                children: (0, a.jsx)(ej.a, {
+                    className: "size-7",
+                    "aria-hidden": "true"
+                })
+            }), f[10] = c) : c = f[10], f[11] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, a.jsx)("p", {
+                className: "font-semibold",
+                children: (0, a.jsx)(b.a, {
+                    id: "chatgpt.print.downloadApp.title",
+                    defaultMessage: "Take your curiosity further",
+                    description: "Headline in the footer of a printed or PDF-saved ChatGPT conversation, inviting the reader to download the mobile app. Keep it short and encouraging."
+                })
+            }), f[11] = d) : d = f[11], f[12] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, a.jsxs)("div", {
+                className: "min-w-0 flex-1 text-sm",
+                children: [d, (0, a.jsx)("p", {
+                    className: "mt-1 text-secondary",
+                    children: (0, a.jsx)(b.a, {
+                        id: "chatgpt.print.downloadApp.description",
+                        defaultMessage: "Scan to get the ChatGPT app",
+                        description: "Instruction beside the QR code in the footer of a printed or PDF-saved conversation. Scanning the code opens the ChatGPT app download page. Keep it short."
+                    })
+                })]
+            }), f[12] = u) : u = f[12], f[13] !== C ? (h = C.formatMessage({
+                id: "chatgpt.print.downloadApp.qrCode",
+                defaultMessage: "Download the ChatGPT app",
+                description: "Accessible label for a QR code and link in a printed or PDF-saved conversation. The code and link open the ChatGPT app download page."
+            }), f[13] = C, f[14] = h) : h = f[14], f[15] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, a.jsx)(b.a, {
+                id: "chatgpt.print.downloadApp.fallback",
+                defaultMessage: "Get the app",
+                description: "Link to the ChatGPT app download page when its QR code cannot be generated in a printed conversation"
+            }), f[15] = p) : p = f[15], f[16] !== h ? (m = (0, a.jsxs)("footer", {
+                className: l,
+                children: [c, u, (0, a.jsx)("a", {
+                    className: "shrink-0",
+                    href: `${eP}&utm_content=pdf_link`,
+                    children: (0, a.jsx)(eI.a, {
+                        value: `${eP}&utm_content=qr`,
+                        size: "inline",
+                        ariaLabel: h,
+                        fallback: p
+                    })
+                })]
+            }), f[16] = h, f[17] = m) : m = f[17], f[18] !== m || f[19] !== s || f[20] !== o ? (g = (0, a.jsxs)("div", {
+                className: t,
+                "data-conversation-print": "",
+                "data-print-formatting": "",
+                "data-theme": "light",
+                children: [s, o, m]
+            }), f[18] = m, f[19] = s, f[20] = o, f[21] = g) : g = f[21], g
+        }
+
+        function eA(e) {
+            return {
+                ...e,
+                renderTelemetryMessages: void 0
+            }
+        }
+        var eM = n("zn0A"),
+            ek = n("OOaz"),
+            eR = n("jfiJ"),
+            eN = n("FGJH"),
+            eO = n("nmN6");
+        let eF = new WeakMap;
+
+        function eG(e) {
+            let t, n, s = (0, r.c)(6),
+                o = (0, u.z)(Z.a);
+            return s[0] !== o || s[1] !== e.entries[0]?.conversationId ? (t = JSON.stringify([o, e.entries[0]?.conversationId]), s[0] = o, s[1] = e.entries[0]?.conversationId, s[2] = t) : t = s[2], s[3] !== e || s[4] !== t ? (n = (0, a.jsx)(ez, {
+                ...e
+            }, t), s[3] = e, s[4] = t, s[5] = n) : n = s[5], n
+        }
+
+        function ez(e) {
+            let t, n, s, o, i, l, c = (0, r.c)(16),
+                d = (0, u.y)(G.a),
+                h = (0, u.z)(ee.a),
+                [p, m] = (0, f.useState)(!1),
+                g = (0, f.useRef)(null);
+            c[0] !== d ? (t = (e, t) => {
+                if (ed(d, e), !e.ctrlKey && !e.metaKey || e.altKey || e.shiftKey || "p" !== e.key.toLowerCase()) return;
+                if (e.repeat) return void g.current?.onKeyDown(e, t);
+                let n = eF.get(e);
+                if (e.defaultPrevented && null == n) return;
+                (0, v.flushSync)(() => m(!0));
+                let a = n ?? g.current?.onKeyDown(e, t);
+                null == a && e.defaultPrevented || Promise.resolve(a).then(() => eF.get(e)).finally(() => {
+                    t.aborted || m(!1)
+                })
+            }, c[0] = d, c[1] = t) : t = c[1];
+            let y = (0, f.useEffectEvent)(t);
+            c[2] === Symbol.for("react.memo_cache_sentinel") ? (n = () => {
+                (0, v.flushSync)(() => m(!0)), g.current?.onBeforePrint()
+            }, c[2] = n) : n = c[2];
+            let b = (0, f.useEffectEvent)(n);
+            c[3] !== d ? (s = () => {
+                d.set(eM.a, null), m(!1)
+            }, c[3] = d, c[4] = s) : s = c[4];
+            let x = (0, f.useEffectEvent)(s);
+            return c[5] !== x || c[6] !== b || c[7] !== y || c[8] !== d ? (o = () => {
+                let e, t, n = new AbortController,
+                    a = (e = () => {
+                        if (!d.get(el.c).isChatgptBrowserReplacement) return;
+                        let e = d.get(ec);
+                        if (e?.printing) return;
+                        let t = {
+                            ...e ?? eh("CHATGPT_CONVERSATION_PRINT_ENTRY_POINT_UNOBSERVED"),
+                            printing: !0
+                        };
+                        d.set(ec, t), ep(d, t, "CHATGPT_CONVERSATION_PRINT_STAGE_BEFORE_PRINT")
+                    }, t = () => {
+                        let e = d.get(ec);
+                        d.get(el.c).isChatgptBrowserReplacement && e?.printing && (ep(d, e, "CHATGPT_CONVERSATION_PRINT_STAGE_AFTER_PRINT"), d.set(ec, null))
+                    }, window.addEventListener("beforeprint", e, !0), window.addEventListener("afterprint", t), () => {
+                        window.removeEventListener("beforeprint", e, !0), window.removeEventListener("afterprint", t), d.set(ec, null)
+                    }),
+                    r = e => y(e, n.signal);
+                return window.addEventListener("keydown", r, !0), window.addEventListener("beforeprint", b, !0), window.addEventListener("afterprint", x), () => {
+                    n.abort(), window.removeEventListener("keydown", r, !0), window.removeEventListener("beforeprint", b, !0), window.removeEventListener("afterprint", x), d.set(eM.a, null), a()
+                }
+            }, c[5] = x, c[6] = b, c[7] = y, c[8] = d, c[9] = o) : o = c[9], c[10] !== d ? (i = [d], c[10] = d, c[11] = i) : i = c[11], (0, f.useEffect)(o, i), c[12] !== h || c[13] !== e || c[14] !== p ? (l = p || h ? (0, a.jsx)(eB, {
+                ...e,
+                ref: g,
+                printing: h
+            }) : null, c[12] = h, c[13] = e, c[14] = p, c[15] = l) : l = c[15], l
+        }
+
+        function eB(e) {
+            let t, n, s, i, l = (0, r.c)(19),
+                {
+                    entries: c,
+                    title: d,
+                    TurnRowComponent: h,
+                    printing: p,
+                    ref: m
+                } = e,
+                g = (0, u.y)(G.a),
+                y = (0, f.useContext)(M.a),
+                x = (0, f.useContext)(en.a),
+                {
+                    getExperiment: C
+                } = (0, er.j)(),
+                w = C("448755449", {
+                    disableExposureLog: !0
+                }).get("enabled", !1);
+            l[0] !== c[0]?.conversationId ? (t = c[0]?.conversationId ?? (0, ek.d)(""), l[0] = c[0]?.conversationId, l[1] = t) : t = l[1], l[2] !== y || l[3] !== t ? (n = {
+                auth: y,
+                conversationId: t
+            }, l[2] = y, l[3] = t, l[4] = n) : n = l[4];
+            let _ = (0, u.x)(null != c[0] && e_.h, n),
+                I = (0, u.x)(null == c[0] ? null : ew.d, c[0]?.conversationId ?? "") ?? !0,
+                S = (0, f.useRef)(null),
+                j = function(e, t, n) {
+                    let a = arguments.length > 3 && void 0 !== arguments[3] && arguments[3],
+                        r = !(arguments.length > 4) || void 0 === arguments[4] || arguments[4],
+                        s = arguments.length > 5 ? arguments[5] : void 0,
+                        o = [],
+                        i = [],
+                        l = new Map;
+                    for (let n of t) {
+                        let t = l.get(n.conversationId);
+                        if (null == t) {
+                            let a = e.get(F.j, n.conversationId);
+                            t = {
+                                serverId: a,
+                                userResolver: (0, ex.c)(void 0, void 0, void 0, e.get(F.S, n.conversationId) ?? void 0),
+                                scopedResolver: (0, ex.c)(a ?? void 0)
+                            }, l.set(n.conversationId, t)
+                        }
+                        let {
+                            serverId: s,
+                            userResolver: c,
+                            scopedResolver: d
+                        } = t;
+                        for (let l of n.turn.items.flatMap(e => "chatgpt-reasoning-group" === e.type ? e.items : [e]))
+                            if ("user-message" === l.type) i.push(...l.images.map(e => ({
+                                src: e,
+                                resolver: c
+                            }))), null != l.imageEditOperation && i.push({
+                                src: `sediment://${l.imageEditOperation.original_file_id}`,
+                                resolver: d
+                            });
+                            else if ("generated-image" === l.type) {
+                            void 0 === t.generatedResolver && (t.generatedResolver = e.get(ex.a, n.conversationId));
+                            let a = t.generatedResolver;
+                            null != a && i.push({
+                                src: l.src,
+                                resolver: a
+                            })
+                        } else if ("chatgpt-python-execution" === l.type && null != s) i.push(...l.images.map(e => {
+                            let {
+                                src: t
+                            } = e;
+                            return {
+                                src: t,
+                                resolver: d
+                            }
+                        }));
+                        else if ("assistant-message" === l.type) {
+                            if (a) {
+                                for (let [e, t] of l.contentReferences.entries())
+                                    if ("image_group" === t.type || "image_v2" === t.type)
+                                        for (let a of (0, ef.u)(t, e)) {
+                                            if (r && (0, ev.d)(a.src)) continue;
+                                            let e = a.searchResult?.isProxied && (a.previewSrc === a.searchResult.contentSrc || a.previewSrc === a.searchResult.originalSrc) ? a.src : a.previewSrc;
+                                            o.push({
+                                                conversationId: n.conversationId,
+                                                src: a.src,
+                                                previewSrc: null != e && r && (0, ev.d)(e) ? a.src : e
+                                            })
+                                        }
+                            }
+                            if (null == s) continue;
+                            i.push(...l.contentReferences.flatMap((e, t) => (0, ef.u)(e, t).map(e => {
+                                let {
+                                    src: t
+                                } = e;
+                                return {
+                                    src: t,
+                                    resolver: d
+                                }
+                            })), ...(l.pythonExecutions ?? []).flatMap(e => {
+                                let {
+                                    images: t
+                                } = e;
+                                return t.map(e => {
+                                    let {
+                                        src: t
+                                    } = e;
+                                    return {
+                                        src: t,
+                                        resolver: d
+                                    }
+                                })
+                            }))
+                        }
+                    }
+                    let c = i.flatMap(e => {
+                        let {
+                            src: t,
+                            resolver: n
+                        } = e;
+                        return null != t && (0, ey.h)(t) ? [{
+                            src: t,
+                            resolver: n
+                        }] : []
+                    });
+                    return {
+                        queryKey: ["chatgpt-print-assets", e.get(Z.a), t[0]?.conversationId, a, r, o, c.map(e => {
+                            let {
+                                src: t,
+                                resolver: n
+                            } = e;
+                            return [t, ...n.cacheKey, n.validationSessionId]
+                        })],
+                        initialData: 0 === c.length ? {
+                            imageSources: {},
+                            complete: 0 === o.length
+                        } : void 0,
+                        enabled: n && c.length > 0,
+                        staleTime: eb.b.FIVE_MINUTES,
+                        refetchOnWindowFocus: !1,
+                        retry: !1,
+                        queryFn: t => {
+                            let {
+                                client: a,
+                                signal: i,
+                                queryKey: l
+                            } = t;
+                            return eu(e, "CHATGPT_CONVERSATION_PRINT_PREPARATION_IMAGES", i, async () => {
+                                let t = {
+                                    ...a.getQueryData(l)?.imageSources
+                                };
+                                for (let e of eg()(c, 6)) i.throwIfAborted(), await Promise.all(e.map(async e => {
+                                    let {
+                                        src: n,
+                                        resolver: r
+                                    } = e, s = await (0, ey.a)(a, n, r);
+                                    if (i.throwIfAborted(), null != s) {
+                                        let e = new Image;
+                                        e.referrerPolicy = "no-referrer", e.src = s, await e.decode(), t[n] = s
+                                    }
+                                }));
+                                let d = new Map,
+                                    u = o.flatMap(t => {
+                                        let n = d.get(t.conversationId);
+                                        return (null == n && (n = r || !e.get(e_.h, {
+                                            auth: s,
+                                            conversationId: t.conversationId
+                                        }) && e.get(ew.d, t.conversationId), d.set(t.conversationId, n)), n && (0, ev.d)(t.src)) ? [] : [{
+                                            ...t,
+                                            previewSrc: n && null != t.previewSrc && (0, ev.d)(t.previewSrc) ? t.src : t.previewSrc
+                                        }]
+                                    }),
+                                    h = n ? t : await async function(e, t, n) {
+                                        if (0 === e.length) return t;
+                                        let a = eC(),
+                                            r = {
+                                                ...t
+                                            },
+                                            s = [];
+                                        for (let n of e) {
+                                            let e = t[n.src] ?? a[n.src] ?? (null == n.previewSrc ? void 0 : t[n.previewSrc] ?? a[n.previewSrc]);
+                                            null != e ? r[n.src] = e : s.push(n)
+                                        }
+                                        if (0 === s.length || n.aborted) return r;
+                                        let o = new AbortController,
+                                            i = () => o.abort();
+                                        n.addEventListener("abort", i, {
+                                            once: !0
+                                        });
+                                        let l = setTimeout(i, 1e3),
+                                            c = 0;
+                                        try {
+                                            await Promise.all(Array.from({
+                                                length: Math.min(4, s.length)
+                                            }, async () => {
+                                                for (; !o.signal.aborted;) {
+                                                    let e = s[c++];
+                                                    if (null == e) return;
+                                                    let t = e.previewSrc ?? e.src;
+                                                    if (!/^(https?:|data:image\/|blob:)/i.test(t)) continue;
+                                                    let n = await
+                                                    function(e, t) {
+                                                        return new Promise(n => {
+                                                            let a = new Image,
+                                                                r = e => {
+                                                                    t.removeEventListener("abort", s), n(e)
+                                                                },
+                                                                s = () => {
+                                                                    a.removeAttribute("src"), r(null)
+                                                                };
+                                                            t.aborted ? n(null) : (t.addEventListener("abort", s, {
+                                                                once: !0
+                                                            }), a.referrerPolicy = "no-referrer", a.src = e, a.decode().then(() => r(e), () => r(null)))
+                                                        })
+                                                    }(t, o.signal);
+                                                    null != n && (r[e.src] = n)
+                                                }
+                                            }))
+                                        } finally {
+                                            clearTimeout(l), n.removeEventListener("abort", i)
+                                        }
+                                        return n.throwIfAborted(), r
+                                    }(u, t, i);
+                                return {
+                                    imageSources: h,
+                                    complete: u.every(e => null != h[e.src])
+                                }
+                            })
+                        }
+                    }
+                }(g, c, p, w, "restricted" === x || !_ && I, y),
+                {
+                    data: T,
+                    isSuccess: P,
+                    isError: E,
+                    refetch: A
+                } = (0, o.a)(j);
+            return l[5] !== j || l[6] !== T || l[7] !== w || l[8] !== P || l[9] !== A || l[10] !== g ? (s = () => ({
+                onKeyDown(e, t) {
+                    if (!e.defaultPrevented && (!P || !T.complete) && (e.preventDefault(), !e.repeat && S.current !== t)) return S.current = t, A({
+                        cancelRefetch: !1
+                    }).then(() => {
+                        t.aborted || window.print()
+                    }).finally(() => {
+                        S.current === t && (S.current = null)
+                    })
+                },
+                onBeforePrint() {
+                    if (w) {
+                        let e = g.queryClient.getQueryData(j.queryKey),
+                            t = {
+                                ...eC(),
+                                ...e?.imageSources
+                            };
+                        (0, v.flushSync)(() => g.set(eM.a, t))
+                    }
+                }
+            }), l[5] = j, l[6] = T, l[7] = w, l[8] = P, l[9] = A, l[10] = g, l[11] = s) : s = l[11], (0, f.useImperativeHandle)(m, s), l[12] !== h || l[13] !== c || l[14] !== E || l[15] !== P || l[16] !== p || l[17] !== d ? (i = p ? (0, v.createPortal)((0, a.jsx)(eE, {
+                title: d,
+                children: (0, a.jsx)(es.a, {
+                    value: null,
+                    children: (0, a.jsx)(eO.a, {
+                        value: null,
+                        children: P ? c.map(e => {
+                            var t;
+                            return (0, a.jsx)(h, {
+                                entry: {
+                                    ...e,
+                                    timestampSeparatorAtMs: null,
+                                    turn: {
+                                        ...t = e.turn,
+                                        suppressTurnActions: !0,
+                                        items: t.items.map(e => "chatgpt-reasoning-group" !== e.type ? eA(e) : {
+                                            ...e,
+                                            items: e.items.map(eA),
+                                            activeReasoning: null == e.activeReasoning ? void 0 : eA(e.activeReasoning)
+                                        })
+                                    },
+                                    isReadOnly: !0,
+                                    onEditUserMessage: void 0,
+                                    onFork: void 0,
+                                    onRegenerateResponse: void 0,
+                                    readAloudEnabled: !1,
+                                    feedbackEnabled: !1,
+                                    shareEnabled: !1,
+                                    showSharedConversationPrivateDisclaimer: !1
+                                },
+                                renderMcpApps: !1,
+                                trackShownImpressions: !1
+                            }, e.turnKey)
+                        }) : (0, a.jsx)("p", {
+                            children: E ? (0, a.jsx)(b.a, {
+                                id: "chatgpt.printAssets.error",
+                                defaultMessage: "Some images could not be loaded. Close print and try again.",
+                                description: "Printed instead of a partial conversation when its images failed to load"
+                            }) : (0, a.jsx)(b.a, {
+                                id: "chatgpt.printAssets.loading",
+                                defaultMessage: "Images are still loading. Close print and try again.",
+                                description: "Printed instead of an incomplete conversation when its images are still loading"
+                            })
+                        })
+                    })
+                })
+            }), document.body) : null, l[12] = h, l[13] = c, l[14] = E, l[15] = P, l[16] = p, l[17] = d, l[18] = i) : i = l[18], i
+        }
+
+        function eD(e) {
+            let t, n, a, s, i, l, c = (0, r.c)(22),
+                {
+                    conversationId: d
+                } = e,
+                h = (0, u.y)(ea.a),
+                p = (0, y.a)(),
+                m = (0, f.useRef)(null),
+                g = (0, u.z)(Z.a),
+                v = (0, u.x)(F.j, d),
+                b = (0, u.z)(eN.b);
+            c[0] !== g || c[1] !== v ? (t = ["chatgpt-print-history", g, v], c[0] = g, c[1] = v, c[2] = t) : t = c[2], c[3] !== h || c[4] !== v ? (n = e => {
+                let {
+                    signal: t
+                } = e;
+                return eu(h, "CHATGPT_CONVERSATION_PRINT_PREPARATION_HISTORY", t, async () => (null != v && await (0, eR.a)(h, v, t), !0))
+            }, c[3] = h, c[4] = v, c[5] = n) : n = c[5], c[6] !== t || c[7] !== n ? (a = {
+                queryKey: t,
+                enabled: !1,
+                staleTime: 0,
+                retry: !1,
+                refetchOnWindowFocus: !1,
+                queryFn: n
+            }, c[6] = t, c[7] = n, c[8] = a) : a = c[8];
+            let {
+                refetch: x
+            } = (0, o.a)(a);
+            c[9] !== g || c[10] !== d || c[11] !== p || c[12] !== b || c[13] !== x || c[14] !== h || c[15] !== v ? (s = (e, t) => {
+                if (ed(h, e), e.defaultPrevented || null == v || 0 === b || h.get(eN.c, v)?.complete === !0 || !e.ctrlKey && !e.metaKey || e.altKey || e.shiftKey || "p" !== e.key.toLowerCase() || (e.preventDefault(), e.repeat)) return;
+                if (m.current?.signal === t) return void eF.set(e, m.current.preparation);
+                let n = x({
+                    cancelRefetch: !1
+                }).then(async e => {
+                    if (!t.aborted && h.get(Z.a) === g) {
+                        if (e.isError) return void h.get(et.f).danger(p.formatMessage({
+                            id: "chatgpt.printHistory.error",
+                            defaultMessage: "Couldn't load the full conversation to print",
+                            description: "Error toast after printing a conversation fails because its older messages could not be loaded; the user can retry printing"
+                        }), {
+                            errorAnalytics: {
+                                toastId: "chatgpt.printHistory.error"
+                            }
+                        });
+                        await Promise.all(h.queryClient.getQueryCache().findAll({
+                            queryKey: ["chatgpt-print-assets", g, d],
+                            predicate: eH
+                        }).map(eL)), t.aborted || h.get(Z.a) !== g || window.print()
+                    }
+                }).finally(() => {
+                    m.current?.signal === t && (m.current = null)
+                });
+                m.current = {
+                    signal: t,
+                    preparation: n
+                }, eF.set(e, n)
+            }, c[9] = g, c[10] = d, c[11] = p, c[12] = b, c[13] = x, c[14] = h, c[15] = v, c[16] = s) : s = c[16];
+            let C = (0, f.useEffectEvent)(s);
+            return c[17] !== C ? (i = () => {
+                let e = new AbortController,
+                    t = t => C(t, e.signal);
+                return window.addEventListener("keydown", t, !0), () => {
+                    e.abort(), window.removeEventListener("keydown", t, !0)
+                }
+            }, c[17] = C, c[18] = i) : i = c[18], c[19] !== g || c[20] !== v ? (l = [g, v], c[19] = g, c[20] = v, c[21] = l) : l = c[21], (0, f.useEffect)(i, l), null
+        }
+
+        function eL(e) {
+            return e.fetch(void 0, {
+                cancelRefetch: !1
+            }).catch(eW)
+        }
+
+        function eW() {}
+
+        function eH(e) {
+            return e.getObserversCount() > 0
+        }
+        var eq = n("DrWu"),
+            eK = n("x4uR"),
+            eU = n("hx97");
+
+        function eV(e) {
+            return "assistant" === e.author.role && e.metadata?.open_thread_summary === !0
+        }
+        var eQ = n("MrzV"),
+            e$ = n("Sm6l"),
+            eY = n("gbRX");
+
+        function eX(e) {
+            let t, n, s = (0, r.c)(4),
+                {
+                    isFetching: o,
+                    isSharedConversation: i,
+                    onRetry: l
+                } = e,
+                c = (0, u.z)(!i && eY.a) || o;
+            return s[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(b.a, {
+                id: "chatgptConversations.preview.retry",
+                defaultMessage: "Try again",
+                description: "Retry loading a ChatGPT conversation after its history could not be loaded"
+            }), s[0] = t) : t = s[0], s[1] !== l || s[2] !== c ? (n = (0, a.jsx)(e$.a, {
+                color: "ghost",
+                disabled: c,
+                onClick: l,
+                children: t
+            }), s[1] = l, s[2] = c, s[3] = n) : n = s[3], n
+        }
+
+        function eJ(e) {
+            let t, n, s, o = (0, r.c)(7),
+                {
+                    isFetching: i,
+                    isSharedConversation: l,
+                    onRetry: c
+                } = e;
+            return o[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(b.a, {
+                id: "chatgptConversations.loadError",
+                defaultMessage: "Could not load this ChatGPT conversation",
+                description: "Error state when a ChatGPT conversation fetch fails"
+            }), o[0] = t) : t = o[0], o[1] !== i || o[2] !== l || o[3] !== c ? (n = null != c ? (0, a.jsx)(eX, {
+                isFetching: i,
+                isSharedConversation: l,
+                onRetry: c
+            }) : null, o[1] = i, o[2] = l, o[3] = c, o[4] = n) : n = o[4], o[5] !== n ? (s = (0, a.jsxs)("div", {
+                className: "rounded-xl border border-default bg-surface-secondary/92 p-4 text-sm text-default",
+                children: [t, n]
+            }), o[5] = n, o[6] = s) : s = o[6], s
+        }
+        var eZ = n("FfNP"),
+            e0 = n("Bbed"),
+            e1 = n("WVag");
+        let e2 = (0, e0.a)(eZ.loadEpicChartIndicator);
+
+        function e3(e) {
+            let t, n = (0, r.c)(3),
+                {
+                    conversationId: s
+                } = e,
+                o = (0, u.x)(e1.a, s),
+                [i, l] = (0, f.useState)(!1);
+            return i || null == o || l(!0), n[0] !== s || n[1] !== i ? (t = i ? (0, a.jsx)(e2, {
+                conversationId: s
+            }) : null, n[0] = s, n[1] = i, n[2] = t) : t = n[2], t
+        }
+        var e4 = n("YTsa"),
+            e5 = n("AoaR"),
+            e6 = n("Ow2S"),
+            e7 = n("fDfx"),
+            e8 = n("u4MG"),
+            e9 = n("Xslx"),
+            te = n("EEop"),
+            tt = n("bxvp"),
+            tn = n("VBQS"),
+            ta = n("hsIu");
+        let tr = (0, u.d)(ea.a, (e, t) => {
+            let {
+                get: n
+            } = t;
+            if (null == e || !n(tt.c) || null == n(k.f) || null == n(k.k)) return null;
+            let {
+                data: a,
+                isError: r
+            } = n(ta.b);
+            if (r || a?.project_id !== e) return null;
+            let {
+                data: s,
+                isError: o
+            } = n(te.l, (0, tn.a)());
+            return o ? null : (0, tn.b)(s)
+        });
+        var ts = n("DWXw"),
+            to = n("FmJi"),
+            ti = n("TSib"),
+            tl = n("sIex"),
+            tc = n("jEN2"),
+            td = n("kphc"),
+            tu = n("YWcr"),
+            th = n("RGWz"),
+            tp = n("QxH2"),
+            tm = n("mwa5"),
+            tg = n("UuVq"),
+            tf = n("TwSq"),
+            tv = n("l0fK"),
+            ty = n("hkBU"),
+            tb = n("UxN3"),
+            tx = n("XcNx"),
+            tC = n("GKsW"),
+            tw = n("yWTM"),
+            t_ = n("Z2JT"),
+            tI = n("SkIz"),
+            tS = n("hsSf"),
+            tj = n("ibLK"),
+            tT = n("T1PX"),
+            tP = n("Fjd0"),
+            tE = n("VPBa"),
+            tA = n("PWXi"),
+            tM = n("zOE4"),
+            tk = n("Xc94"),
+            tR = n("Sgih"),
+            tN = n("HwRo"),
+            tO = n("qwxA"),
+            tF = n("gOnr"),
+            tG = n("KXCj"),
+            tz = n("e1xH"),
+            tB = n("pAFY");
+        n("kErH");
+        var tD = n("dJBt"),
+            tL = n("FR8U"),
+            tW = n("xqnZ"),
+            tH = n("UMxD"),
+            tq = n("VV6Z"),
+            tK = n("JhDO"),
+            tU = n("Mbqw"),
+            tV = n("kl6F"),
+            tQ = n("kfGJ"),
+            t$ = n("khOd"),
+            tY = n("RZBv"),
+            tX = n("yzQ9"),
+            tJ = n("OMIV"),
+            tZ = n("JCJj"),
+            t0 = n("KkZX"),
+            t1 = n("uYx2"),
+            t2 = n("Gjet"),
+            t3 = n("SBcL"),
+            t4 = n("BdYu"),
+            t5 = n("Nyub"),
+            t6 = n("jZDY"),
+            t7 = n("HgLj"),
+            t8 = n("Bc5r"),
+            t9 = n("bIvi"),
+            ne = n("Elta"),
+            nt = n("eW0T"),
+            nn = n("hOYb"),
+            na = n("eShZ"),
+            nr = n("qqut"),
+            ns = n("CsbC"),
+            no = n("tCyZ"),
+            ni = n("S0ko"),
+            nl = n("GgLN"),
+            nc = n("KdfG"),
+            nd = n("AOHi"),
+            nu = n("iRMi"),
+            nh = n("U2UX"),
+            np = n("gbrq"),
+            nm = n("K33Q"),
+            ng = n("mv4d"),
+            nf = n("w7Qu"),
+            nv = n("dt5v"),
+            ny = n("bWX0"),
+            nb = n("smHt"),
+            nx = n("aoTb"),
+            nC = n("pqpL"),
+            nw = n("uqg3"),
+            n_ = n("XcRr"),
+            nI = n("dk3M"),
+            nS = n("WFY2"),
+            nj = n("vldH"),
+            nT = n("ISgP"),
+            nP = n("t2JB"),
+            nE = n("DIH2"),
+            nA = n("aFoA"),
+            nM = n("H8lk"),
+            nk = n("f2PP"),
+            nR = n("S95W");
+        let nN = (0, u.v)(ea.a, e => null);
+        var nO = n("DM5G"),
+            nF = n("gJe8"),
+            nG = n("d2rV"),
+            nz = n("n6zj"),
+            nB = n("aLqR"),
+            nD = n("VlIB"),
+            nL = n("ASxG"),
+            nW = n("wD9O"),
+            nH = n("lsfk"),
+            nq = n("IObw"),
+            nK = n("BOYb"),
+            nU = n("kQNh"),
+            nV = n.n(nU),
+            nQ = n("NkEl"),
+            n$ = n("FW69"),
+            nY = "highlight-x7OnzP",
+            nX = "safari-wcvuzB",
+            nJ = "block-t7sxyD";
+        let nZ = "chatgpt-search-result",
+            n0 = "script, style, textarea, input, select, [hidden], [aria-hidden='true'], [data-thread-find-skip]";
+
+        function* n1(e, t) {
+            let n = e.ownerDocument.createTreeWalker(e, NodeFilter.SHOW_TEXT, {
+                    acceptNode: e => e.parentElement?.closest(n0) == null ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT
+                }),
+                a = [],
+                r = "";
+            for (let e = n.nextNode(); null != e; e = n.nextNode()) {
+                let t = r.length;
+                r += e.textContent ?? "", a.push({
+                    node: e,
+                    start: t,
+                    end: r.length
+                })
+            }
+            let s = RegExp(t.split(/\n+/u).map(nV()).join("\\n*"), "g");
+            for (let n = s.exec(r); null != n && n.index < r.length; n = s.exec(r)) {
+                let r = n.index;
+                s.lastIndex = r + 1;
+                let o = r + n[0].length,
+                    i = a.find(e => e.end > r),
+                    l = a.findLast(e => e.start < o);
+                if (null == i || null == l) continue;
+                let c = e.ownerDocument.createRange();
+                c.setStart(i.node, r - i.start), c.setEnd(l.node, o - l.start), n2(c) && ((0, n$.a)(c) ?? c.toString()).trim() === t && (yield c)
+            }
+        }
+
+        function n2(e) {
+            return Array.from(e.getClientRects()).some(e => e.width > 0 && e.height > 0) && null != e.startContainer.parentElement && "hidden" !== getComputedStyle(e.startContainer.parentElement).visibility
+        }
+        let n3 = nL.object({
+            chatGptSearchNavigation: nL.object({
+                key: nL.string(),
+                messageId: nL.string()
+            })
+        });
+
+        function n4(e) {
+            let t, n, a, s, o, i, l, c, d, h, p, m, g = (0, r.c)(50),
+                {
+                    conversationId: v,
+                    entries: y,
+                    isConversationFetching: b,
+                    turnListApi: C
+                } = e,
+                w = (0, u.y)(ea.a),
+                _ = (0, u.x)(F.s, v),
+                I = (0, nH.b)(),
+                S = (0, nW.c)();
+            g[0] !== I || g[1] !== S ? (t = e => {
+                ! function(e, t, n) {
+                    let a = t.getScrollElement();
+                    if (null == a) return;
+                    let r = e instanceof Range ? e.startContainer : e,
+                        s = r instanceof HTMLElement ? r : r.parentElement;
+                    for (let t = e instanceof Range ? s : s?.parentElement; null != t && t !== a; t = t.parentElement) {
+                        if (t.scrollWidth <= t.clientWidth || !/^(auto|scroll)$/.test(getComputedStyle(t).overflowX)) continue;
+                        let a = e instanceof Range ? e.getClientRects()[0] : e.getBoundingClientRect();
+                        if (null == a) continue;
+                        let r = t.getBoundingClientRect();
+                        (a.left < r.left || a.right > r.right) && t.scrollBy({
+                            left: (0, nW.b)(a.left + a.width / 2 - r.left - r.width / 2, n),
+                            behavior: "instant"
+                        })
+                    }
+                    let o = e instanceof Range ? e.getClientRects()[0] : e.getBoundingClientRect();
+                    if (null == o) return;
+                    let i = a.getBoundingClientRect(),
+                        l = getComputedStyle(a),
+                        c = Number.parseFloat(l.scrollPaddingTop) || 0,
+                        d = Number.parseFloat(l.scrollPaddingBottom) || 0,
+                        u = a.clientHeight - c - d,
+                        h = (0, nW.b)(o.height, n),
+                        p = (0, nW.b)(o.top - i.top, n) - c + Math.min(h, u) / 2 - u / 2;
+                    t.scrollToDistanceFromBottomPx(t.getLastScrollDistanceFromBottomPx() - p, "instant", "user")
+                }(e, I, S)
+            }, g[0] = I, g[1] = S, g[2] = t) : t = g[2];
+            let j = (0, f.useEffectEvent)(t),
+                T = (0, x.Y)(),
+                P = (0, x._)(),
+                E = new URLSearchParams(T.search),
+                A = E.get("messageId") ?? E.get("message"),
+                M = n3.safeParse(T.state).data?.chatGptSearchNavigation,
+                k = A ?? M?.messageId,
+                R = E.get("selectedTextQuery") ?? "",
+                N = (0, u.x)(F.M, v),
+                O = !R || null != k && null != N && (N[k]?.message != null || Object.values(N).some(e => e.message?.id === k)),
+                G = R || E.get("historySearchQuery") || "",
+                z = JSON.stringify([v, null != A ? T.key : M?.key ?? T.key, k]);
+            g[3] !== z ? (n = {
+                key: z,
+                handled: !1,
+                positioned: !1
+            }, g[3] = z, g[4] = n) : n = g[4];
+            let B = (0, f.useRef)(n),
+                D = (0, f.useEffectEvent)(e => {
+                    B.current.positioned = !0;
+                    let t = G.trim().length > 0 ? function(e, t, n) {
+                        let a, r, s, o, i = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : "terms",
+                            l = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : 0,
+                            c = "phrase" === i ? t.trim() : null,
+                            d = [...new Set(t.trim().toLowerCase().normalize("NFC").split(/\s+/).map(e => e.replace(/^[^\p{Letter}\p{Number}]+|[^\p{Letter}\p{Number}]+$/gu, "")).filter(e => e.length > 0))],
+                            u = new TextEncoder,
+                            h = d.filter(e => !/^\p{Letter}+$/u.test(e) || u.encode(e.normalize("NFKD").replace(/\p{Mark}/gu, "")).byteLength >= 3),
+                            p = h.length > 0 ? h : d;
+                        if (c?.length === 0 || null == c && 0 === p.length) return () => {};
+                        let m = new RegExp(null == c ? p.toSorted((e, t) => t.length - e.length).map(nV()).join("|") : nV()(c), null == c ? "giu" : "gu"),
+                            g = !1,
+                            f = performance.now(),
+                            v = !1,
+                            y = new WeakSet,
+                            b = new Set,
+                            x = new MutationObserver(w);
+
+                        function C() {
+                            for (let t of (g = !0, x.disconnect(), clearTimeout(r), null != s && cancelAnimationFrame(s), null != a && CSS.highlights.get(nZ) === a && CSS.highlights.delete(nZ), e.classList.remove(nY, nX), b)) t.classList.remove(nY, nJ)
+                        }
+
+                        function w() {
+                            g || null != r || null != s || (r = setTimeout(() => {
+                                r = void 0, s = requestAnimationFrame(() => {
+                                    s = void 0, _()
+                                })
+                            }, 50))
+                        }
+
+                        function _() {
+                            let t;
+                            if (g || !e.isConnected || null != s) return;
+                            let d = performance.now() - f;
+                            if (d < 4e3 && null != e.querySelector("[data-search-result-pending]")) return void w();
+                            let u = (0, nQ.a)(e);
+                            for (let t of e.querySelectorAll("a[href]")) u.some(e => {
+                                let {
+                                    element: n,
+                                    target: a
+                                } = e;
+                                return "text" !== a.highlight && n.contains(t)
+                            }) || u.push({
+                                element: t,
+                                target: {
+                                    highlight: "auto",
+                                    text: [t.getAttribute("href"), t.title].join(" ")
+                                }
+                            });
+                            let h = u.filter(e => {
+                                    let {
+                                        element: t,
+                                        target: n
+                                    } = e;
+                                    return null != (n.text ?? t.textContent ?? "").normalize("NFC").match(m)
+                                }),
+                                p = !1;
+                            for (let {
+                                    element: e,
+                                    target: t
+                                }
+                                of u) null != t.reveal && !y.has(e) && h.some(t => e.contains(t.element)) && (y.add(e), t.reveal(), p = !0);
+                            if (p) {
+                                s = requestAnimationFrame(() => {
+                                    s = requestAnimationFrame(() => {
+                                        s = void 0, _()
+                                    })
+                                });
+                                return
+                            }
+                            let I = [];
+                            if (null != c) {
+                                let t = e.querySelector('[data-markdown-text-style="assistant-message"]') ?? e,
+                                    n = 0;
+                                for (let e of n1(t, c))
+                                    if (!(n++ < l)) {
+                                        I.push(e);
+                                        break
+                                    }
+                            } else {
+                                let t = e.ownerDocument.createTreeWalker(e, NodeFilter.SHOW_TEXT, {
+                                    acceptNode: e => e.parentElement?.closest(n0) != null || u.some(t => {
+                                        let {
+                                            element: n,
+                                            target: a
+                                        } = t;
+                                        return "block" === a.highlight && n.contains(e)
+                                    }) ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT
+                                });
+                                for (let n = t.nextNode(); null != n; n = t.nextNode())
+                                    for (let t of (n.textContent ?? "").matchAll(m)) {
+                                        let a = e.ownerDocument.createRange();
+                                        a.setStart(n, t.index), a.setEnd(n, t.index + t[0].length), n2(a) && I.push(a)
+                                    }
+                            }
+                            let S = h.flatMap(e => {
+                                let {
+                                    element: t,
+                                    target: n
+                                } = e, a = t.getBoundingClientRect(), r = I.some(e => t.contains(e.startContainer));
+                                return "terms" === i && a.width > 0 && a.height > 0 && ("block" === n.highlight || "auto" === n.highlight && !r) ? [t] : []
+                            });
+                            if (0 === I.length && 0 === S.length) {
+                                if (d < 800) return void w();
+                                S.push(e)
+                            }
+                            let j = 0,
+                                T = 0;
+                            for (let e of [...I, ...S]) {
+                                let n = e instanceof Range ? e.getClientRects()[0] : e.getBoundingClientRect(),
+                                    a = n?.top ?? 0,
+                                    r = n?.left ?? 0;
+                                (null == t || 0 > (a - j || r - T)) && (t = e, j = a, T = r)
+                            }
+                            t = t ?? e, v && n?.(t);
+                            let P = t instanceof Range ? t.getClientRects()[0] : t.getBoundingClientRect(),
+                                E = [P?.top, P?.left, P?.width, P?.height, e.scrollHeight].join(":");
+                            if (d < 4e3 && E !== o) {
+                                o = E, w();
+                                return
+                            }
+                            if (!v) {
+                                v = !0, o = void 0, n?.(t), w();
+                                return
+                            }
+                            for (let t of (x.disconnect(), clearTimeout(r), "u" > typeof Highlight && null != CSS.highlights ? (a = new Highlight(...I), CSS.highlights.set(nZ, a)) : I.length > 0 && S.push(e), e.classList.add(nY), (0, nK.e)() && e.classList.add(nX), S)) t.classList.add(nY, nJ), b.add(t);
+                            r = setTimeout(C, 3600)
+                        }
+                        return x.observe(e, {
+                            childList: !0,
+                            characterData: !0,
+                            attributes: !0,
+                            subtree: !0
+                        }), _(), C
+                    }(e, G, j, R ? "phrase" : "terms", Number(E.get("selectedTextOccurrence"))) : void 0;
+                    return null != A && (E.delete("messageId"), E.delete("message"), E.delete("historySearchQuery"), E.delete("selectedTextQuery"), E.delete("selectedTextOccurrence"), P({
+                        pathname: T.pathname,
+                        search: E.toString(),
+                        hash: T.hash
+                    }, {
+                        replace: !0,
+                        preventScrollReset: !0,
+                        state: {
+                            ...T.state,
+                            chatGptSearchNavigation: {
+                                key: T.key,
+                                messageId: A
+                            }
+                        }
+                    })), t
+                });
+            g[5] !== v || g[6] !== b || g[7] !== k || g[8] !== z || g[9] !== w || g[10] !== O ? (a = () => {
+                if (B.current.key !== z && (B.current = {
+                        key: z,
+                        handled: !1,
+                        positioned: !1
+                    }), null != k && !b && O) return w.watch(e => {
+                    !B.current.handled && (0, F.Pb)(e, v, k) && (B.current.handled = !0)
+                })
+            }, s = [v, b, k, z, w, O], g[5] = v, g[6] = b, g[7] = k, g[8] = z, g[9] = w, g[10] = O, g[11] = a, g[12] = s) : (a = g[11], s = g[12]), (0, f.useLayoutEffect)(a, s), g[13] !== y || g[14] !== k ? (o = null == k ? void 0 : y.find(e => {
+                let {
+                    turn: t
+                } = e;
+                return t.messageIds.includes(k)
+            }), g[13] = y, g[14] = k, g[15] = o) : o = g[15];
+            let L = o;
+            g[16] !== T || g[17] !== P || g[18] !== A || g[19] !== M ? (i = () => {
+                null == A && null != M && P(T, {
+                    replace: !0,
+                    preventScrollReset: !0,
+                    state: {
+                        ...T.state,
+                        chatGptSearchNavigation: void 0
+                    }
+                })
+            }, g[16] = T, g[17] = P, g[18] = A, g[19] = M, g[20] = i) : i = g[20];
+            let W = (0, f.useEffectEvent)(i);
+            if (g[21] !== W || g[22] !== _ || g[23] !== b || g[24] !== L ? (l = () => {
+                    !B.current.positioned || null != L || b || _ || W()
+                }, g[21] = W, g[22] = _, g[23] = b, g[24] = L, g[25] = l) : l = g[25], g[26] !== _ || g[27] !== b || g[28] !== L ? (c = [_, b, L], g[26] = _, g[27] = b, g[28] = L, g[29] = c) : c = g[29], (0, f.useLayoutEffect)(l, c), g[30] !== k || g[31] !== L?.id || g[32] !== L?.turn || g[33] !== L?.turn.items || g[34] !== L?.turn.items.findIndex || g[35] !== L?.turnKey) {
+                let e = L?.turn.items.findIndex(e => "messageId" in e && e.messageId === k || "assistant-message" === e.type && null != k && e.sourceMessageIds?.includes(k)) ?? -1,
+                    t = L?.turn.items[e],
+                    n = L?.id;
+                h = L?.turnKey, d = null == t || null == n ? void 0 : (0, nq.b)(t, e, n), g[30] = k, g[31] = L?.id, g[32] = L?.turn, g[33] = L?.turn.items, g[34] = L?.turn.items.findIndex, g[35] = L?.turnKey, g[36] = d, g[37] = h
+            } else d = g[36], h = g[37];
+            let H = d;
+            return g[38] !== D || g[39] !== k || g[40] !== h || g[41] !== C || g[42] !== H ? (p = () => {
+                let e;
+                if (null == h || null == C) return;
+                let t = new AbortController,
+                    n = null;
+                return C.scrollToKey(h, e => n = (null == k ? null : e.querySelector(`[data-chatgpt-search-message-ids~="${CSS.escape(k)}"]`)) ?? (null == H ? null : e.querySelector(`[data-chatgpt-search-unit-key="${CSS.escape(H)}"]`)) ?? e, {
+                    align: "top",
+                    signal: t.signal
+                }).then(() => {
+                    !t.signal.aborted && n?.isConnected && (e = D(n))
+                }), () => {
+                    t.abort(), e?.()
+                }
+            }, g[38] = D, g[39] = k, g[40] = h, g[41] = C, g[42] = H, g[43] = p) : p = g[43], g[44] !== k || g[45] !== z || g[46] !== h || g[47] !== C || g[48] !== H ? (m = [z, k, h, C, H], g[44] = k, g[45] = z, g[46] = h, g[47] = C, g[48] = H, g[49] = m) : m = g[49], (0, f.useLayoutEffect)(p, m), null
+        }
+        var n5 = n("iGzJ");
+        let n6 = (0, u.v)(ea.a, e => null);
+        var n7 = n("sfmI"),
+            n8 = n("SZi8"),
+            n9 = n("lBzi"),
+            ae = n("Ga6O"),
+            at = n("ESlL"),
+            an = n("vknh"),
+            aa = n("Ppno"),
+            ar = n("lA5q"),
+            as = n("wDWo"),
+            ao = n("IgxH"),
+            ai = n("iaTG"),
+            al = n("c3f5"),
+            ac = n("XpUB"),
+            ad = n("xAIC"),
+            au = n("slpy"),
+            ah = n("bf6R"),
+            ap = n("O666"),
+            am = n("OtLV"),
+            ag = n("tNq4"),
+            af = n("Skaw"),
+            av = n("PYCG");
+
+        function ay(e) {
+            let t, n, s, o, i, l, c, d, h, p, m, g = (0, r.c)(50),
+                {
+                    conversationId: f,
+                    projectId: v,
+                    sharedProjectConversation: x,
+                    isReady: C,
+                    isRestricted: w,
+                    isStreaming: _
+                } = e,
+                I = void 0 === v ? null : v,
+                S = (0, u.y)(ea.a),
+                j = (0, y.a)(),
+                T = (0, u.z)(k.e),
+                P = (0, u.z)(null == I ? null : af.a),
+                E = (0, u.x)(F.j, f),
+                {
+                    data: A
+                } = (0, u.x)(n9.chatGptConversationQueryById$, null == I ? null : E),
+                M = (0, u.x)(nA.a, null == I ? null : E),
+                R = (0, u.x)(F.B, M);
+            g[0] !== M || g[1] !== A || g[2] !== R || g[3] !== I || g[4] !== E ? (t = null == A && null != M && null != E ? {
+                id: E,
+                gizmo_id: I,
+                is_temporary_chat: R
+            } : void 0, g[0] = M, g[1] = A, g[2] = R, g[3] = I, g[4] = E, g[5] = t) : t = g[5];
+            let N = t,
+                {
+                    data: O
+                } = (0, u.x)(eK.b, I),
+                G = null == I ? null : (0, af.b)(P ?? null, x ?? A ?? N, O),
+                z = (0, u.x)(ag.b, f);
+            g[6] !== j ? (n = j.formatMessage(am.a.headerShare), g[6] = j, g[7] = n) : n = g[7];
+            let B = n,
+                D = (0, u.x)(null == x ? ag.a : null, f),
+                L = null != x || null != D,
+                W = null;
+            if (w || G?.type === "unavailable") {
+                let e;
+                g[8] !== j ? (e = j.formatMessage(am.a.shareDisabledRestricted), g[8] = j, g[9] = e) : e = g[9], W = e
+            } else if (_ && !L) {
+                let e;
+                g[10] !== j ? (e = j.formatMessage(am.a.shareDisabledStreaming), g[10] = j, g[11] = e) : e = g[11], W = e
+            } else if (!C || !L) {
+                let e;
+                g[12] !== j ? (e = j.formatMessage(am.a.shareDisabledNotReady), g[12] = j, g[13] = e) : e = g[13], W = e
+            }
+            let H = null != W || z;
+            g[14] !== H ? (s = {
+                layer: "3087497570",
+                parameter: "use_larger_icon",
+                disableExposureLog: H
+            }, g[14] = H, g[15] = s) : s = g[15];
+            let q = (0, u.x)(ap.b, s),
+                K = "loaded" === T.status && "personal" === T.structure && (null == G || "snapshot" === G.type),
+                U = null != W || z;
+            g[16] !== U ? (o = {
+                layer: "1823366130",
+                parameter: "disable_hover",
+                disableExposureLog: U
+            }, g[16] = U, g[17] = o) : o = g[17];
+            let V = (0, u.x)(K ? ap.b : null, o);
+            g[18] !== f || g[19] !== N || g[20] !== I || g[21] !== S || g[22] !== x ? (i = () => {
+                let e = null == x ? S.get(ag.c, f) : {
+                    serverConversationId: x.conversation_id,
+                    title: x.title,
+                    currentNodeId: x.current_node ?? void 0
+                };
+                null != e && (0, av.shareChatGptProjectConversation)(S, e.serverConversationId, e.title ?? "", I, e.currentNodeId, "CHATGPT_SHARE_FLOW_SOURCE_SENDER_HEADER", x ?? N)
+            }, g[18] = f, g[19] = N, g[20] = I, g[21] = S, g[22] = x, g[23] = i) : i = g[23];
+            let Q = i,
+                $ = B;
+            if ("loaded" === T.status && (null == G || "snapshot" === G.type)) {
+                let e;
+                g[24] !== T.structure || g[25] !== j ? (e = j.formatMessage("workspace" === T.structure ? am.a.shareWorkspaceTooltip : am.a.sharePublicTooltip), g[24] = T.structure, g[25] = j, g[26] = e) : e = g[26], $ = e
+            }
+            let Y = null == W && !z && !0 === V,
+                X = W ?? $,
+                J = null != W || z;
+            return g[27] !== z || g[28] !== q ? (l = !z && (q ? (0, a.jsx)(ah.M, {}) : (0, a.jsx)(ah.L, {})), g[27] = z, g[28] = q, g[29] = l) : l = g[29], g[30] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, a.jsx)("span", {
+                className: "max-sm:hidden",
+                children: (0, a.jsx)(b.a, {
+                    ...am.a.headerShare
+                })
+            }), g[30] = c) : c = g[30], g[31] !== Q || g[32] !== z || g[33] !== B || g[34] !== J || g[35] !== l ? (d = (0, a.jsxs)(e$.a, {
+                "aria-label": B,
+                color: "ghostActive",
+                disabled: J,
+                loading: z,
+                radius: "large",
+                size: "toolbar",
+                onClick: Q,
+                children: [l, c]
+            }), g[31] = Q, g[32] = z, g[33] = B, g[34] = J, g[35] = l, g[36] = d) : d = g[36], g[37] !== X || g[38] !== d || g[39] !== Y ? (h = (0, a.jsx)(au.a, {
+                disabled: Y,
+                content: X,
+                children: d
+            }), g[37] = X, g[38] = d, g[39] = Y, g[40] = h) : h = g[40], g[41] !== f || g[42] !== z || g[43] !== I || g[44] !== W || g[45] !== x ? (p = !1, g[41] = f, g[42] = z, g[43] = I, g[44] = W, g[45] = x, g[46] = p) : p = g[46], g[47] !== h || g[48] !== p ? (m = (0, a.jsxs)(a.Fragment, {
+                children: [h, p]
+            }), g[47] = h, g[48] = p, g[49] = m) : m = g[49], m
+        }(0, e0.a)(async () => () => null);
+        var ab = n("B0Wx"),
+            ax = n("if6d"),
+            aC = n("Sd8U");
+        let aw = (0, u.t)("ChatGptTranscriptScope", {
+            parent: aC.a,
+            key: e => e.presentation
+        });
+        var a_ = n("r2mP"),
+            aI = n("ag0v"),
+            aS = n("v5tk"),
+            aj = n("ZhoB"),
+            aT = n("RADZ"),
+            aP = n("rZzh"),
+            aE = n("hZRx");
+
+        function aA(e) {
+            let t, n, s, o, i, l, c, d, h, p, m = (0, r.c)(57),
+                {
+                    entry: g,
+                    renderMcpApps: f,
+                    trackShownImpressions: v
+                } = e,
+                y = void 0 === f || f,
+                x = void 0 === v || v,
+                C = (0, u.y)(ea.a);
+            m[0] !== g.conversationId ? (t = (0, tV.o)({
+                routeKind: "chatgpt-thread",
+                conversationId: g.conversationId
+            }), m[0] = g.conversationId, m[1] = t) : t = m[1];
+            let w = (0, u.x)(x ? tR.c : null, t),
+                _ = x && null == w,
+                I = (0, u.x)(g.isMostRecentTurn ? aP.e : null, g.conversationId);
+            m[2] !== g.timestampSeparatorAtMs ? (n = null == g.timestampSeparatorAtMs ? null : (0, a.jsx)(a_.b, {
+                sentAtMs: g.timestampSeparatorAtMs
+            }), m[2] = g.timestampSeparatorAtMs, m[3] = n) : n = m[3];
+            let S = null != g.paragen;
+            m[4] !== g.branchingMessageId || m[5] !== g.browserConversationId || m[6] !== g.conversationId || m[7] !== g.dilEditDisclosure || m[8] !== g.enableCloudBrowserActivity || m[9] !== g.feedbackEnabled || m[10] !== g.hasLaterSitesPreview || m[11] !== g.id || m[12] !== g.isMostRecentTurn || m[13] !== g.isReadOnly || m[14] !== g.isTemporaryChat || m[15] !== g.isWorkConversation || m[16] !== g.onEditUserMessage || m[17] !== g.onFork || m[18] !== g.onRegenerateResponse || m[19] !== g.pendingSubmissionAttachments || m[20] !== g.readAloudEnabled || m[21] !== g.referenceImageSuggestionActionInput || m[22] !== g.safetyReview || m[23] !== g.shareEnabled || m[24] !== g.turn || m[25] !== y || m[26] !== _ || m[27] !== S ? (s = (0, a.jsx)(aS.a, {
+                dilEditDisclosure: g.dilEditDisclosure,
+                browserConversationId: g.browserConversationId,
+                conversationId: g.conversationId,
+                enableCloudBrowserActivity: g.enableCloudBrowserActivity,
+                branchingMessageId: g.branchingMessageId,
+                hasLaterSitesPreview: g.hasLaterSitesPreview,
+                hostId: tQ.a,
+                isMostRecentTurn: g.isMostRecentTurn,
+                isReadOnly: g.isReadOnly,
+                isTemporaryChat: g.isTemporaryChat,
+                isParagen: S,
+                isWorkConversation: g.isWorkConversation,
+                readAloudEnabled: g.readAloudEnabled,
+                renderMcpApps: y,
+                feedbackEnabled: g.feedbackEnabled,
+                onEditUserMessage: g.onEditUserMessage,
+                onFork: g.onFork,
+                onRegenerateResponse: g.onRegenerateResponse,
+                pendingSubmissionAttachments: g.pendingSubmissionAttachments,
+                referenceImageSuggestionActionInput: g.referenceImageSuggestionActionInput,
+                shareEnabled: g.shareEnabled,
+                safetyReview: g.safetyReview,
+                trackShownImpressions: _,
+                turn: g.turn,
+                turnId: g.id
+            }), m[4] = g.branchingMessageId, m[5] = g.browserConversationId, m[6] = g.conversationId, m[7] = g.dilEditDisclosure, m[8] = g.enableCloudBrowserActivity, m[9] = g.feedbackEnabled, m[10] = g.hasLaterSitesPreview, m[11] = g.id, m[12] = g.isMostRecentTurn, m[13] = g.isReadOnly, m[14] = g.isTemporaryChat, m[15] = g.isWorkConversation, m[16] = g.onEditUserMessage, m[17] = g.onFork, m[18] = g.onRegenerateResponse, m[19] = g.pendingSubmissionAttachments, m[20] = g.readAloudEnabled, m[21] = g.referenceImageSuggestionActionInput, m[22] = g.safetyReview, m[23] = g.shareEnabled, m[24] = g.turn, m[25] = y, m[26] = _, m[27] = S, m[28] = s) : s = m[28], m[29] !== g.conversationId || m[30] !== g.isTemporaryChat || m[31] !== g.isWorkConversation || m[32] !== g.paragen || m[33] !== y || m[34] !== _ ? (o = null == g.paragen ? null : (0, a.jsx)(aT.a, {
+                renderMcpApps: y,
+                comparison: g.paragen,
+                conversationId: g.conversationId,
+                hostId: tQ.a,
+                isTemporaryChat: g.isTemporaryChat,
+                isWorkConversation: g.isWorkConversation,
+                trackTaskViews: _
+            }, g.paragen.promptMessageId), m[29] = g.conversationId, m[30] = g.isTemporaryChat, m[31] = g.isWorkConversation, m[32] = g.paragen, m[33] = y, m[34] = _, m[35] = o) : o = m[35], m[36] !== g.showSharedConversationPrivateDisclaimer ? (i = g.showSharedConversationPrivateDisclaimer ? (0, a.jsxs)("div", {
+                className: "my-2 flex items-center justify-center gap-2 text-size-chat text-secondary select-none",
+                children: [(0, a.jsx)(tb.a, {
+                    className: "shrink-0",
+                    legacyIcon: aI.a,
+                    asset16: aE.a,
+                    legacyClassName: "icon-2xs",
+                    "aria-hidden": !0
+                }), (0, a.jsx)(b.a, {
+                    id: "chatgptConversations.sharedConversation.privateMessagesDisclaimer",
+                    defaultMessage: "Messages beyond this point are only visible to you",
+                    description: "Privacy disclaimer shown between the original shared ChatGPT conversation and the reader's new private messages after they continue the shared conversation in Codex Desktop"
+                })]
+            }) : null, m[36] = g.showSharedConversationPrivateDisclaimer, m[37] = i) : i = m[37], m[38] !== g || m[39] !== I || m[40] !== C || m[41] !== _ ? (l = g.isMostRecentTurn ? (0, a.jsx)(at.a, {
+                conversationId: g.conversationId,
+                errorMessage: g.errorMessage,
+                isWorkConversation: g.isWorkConversation,
+                onRetry: null == g.onRegenerateResponse || null == I ? void 0 : async e => {
+                    let t = C.get(aP.e, g.conversationId);
+                    if (t?.message.id == null || t.isRetryDisabled) return;
+                    let n = C.get(F.U, g.conversationId)?.metadata?.errorCode;
+                    (0, aj.d)(C.get(el.c).logProductEvent, {
+                        conversationId: C.get(F.j, g.conversationId),
+                        messageId: t.message.id,
+                        useDefaultModel: t.useDefaultModel,
+                        errorCode: n
+                    }), await g.onRegenerateResponse?.(t.message.id, {
+                        sourceEventTimeStamp: e,
+                        source: "model_cap_exceeded" === n ? "rate_limit_retry" : "error_retry",
+                        model: (0, aP.f)(t.message, C.get(e6.t, g.conversationId)),
+                        useDefaultModel: t.useDefaultModel,
+                        forceUseSearch: t.forceUseSearch
+                    })
+                },
+                showPendingLoadingMessage: g.showPendingLoadingMessage,
+                showRequestUserInputStatus: g.showRequestUserInputStatus,
+                trackShownImpressions: _,
+                useDefaultModel: I?.useDefaultModel,
+                isRetryDisabled: I?.isRetryDisabled
+            }) : null, m[38] = g, m[39] = I, m[40] = C, m[41] = _, m[42] = l) : l = m[42], m[43] !== s || m[44] !== o || m[45] !== i || m[46] !== l ? (c = (0, a.jsxs)("div", {
+                className: "flex flex-col gap-1.5",
+                children: [s, o, i, l]
+            }), m[43] = s, m[44] = o, m[45] = i, m[46] = l, m[47] = c) : c = m[47], m[48] !== g.id || m[49] !== c || m[50] !== n ? (d = (0, a.jsxs)("div", {
+                "data-content-search-turn-key": g.id,
+                children: [n, c]
+            }), m[48] = g.id, m[49] = c, m[50] = n, m[51] = d) : d = m[51];
+            let j = d;
+            return m[52] !== g.dilVisualSlotId ? (h = null != g.dilVisualSlotId && (0, a.jsx)("div", {
+                "data-dil-anchor-spacer": "",
+                "aria-hidden": "true"
+            }), m[52] = g.dilVisualSlotId, m[53] = h) : h = m[53], m[54] !== j || m[55] !== h ? (p = (0, a.jsxs)(a.Fragment, {
+                children: [h, j]
+            }), m[54] = j, m[55] = h, m[56] = p) : p = m[56], p
+        }
+
+        function aM(e) {
+            let t, n, s, o = (0, r.c)(6);
+            o[0] !== e ? ({
+                renderMcpApps: n,
+                ...t
+            } = e, o[0] = e, o[1] = t, o[2] = n) : (t = o[1], n = o[2]);
+            let i = void 0 === n || n,
+                l = (0, u.y)(aw),
+                c = i && l.value.rendersWidgets;
+            return o[3] !== t || o[4] !== c ? (s = (0, a.jsx)(aA, {
+                ...t,
+                renderMcpApps: c
+            }), o[3] = t, o[4] = c, o[5] = s) : s = o[5], s
+        }
+
+        function ak(e) {
+            let t, n, s, o, i, l, c, d = (0, r.c)(17),
+                {
+                    entries: h,
+                    historyLoader: p,
+                    isVisible: m,
+                    rendersWidgets: g,
+                    onVisibilityChange: v
+                } = e;
+            d[0] !== m || d[1] !== v ? (t = () => (v(m), () => v(!1)), n = [m, v], d[0] = m, d[1] = v, d[2] = t, d[3] = n) : (t = d[2], n = d[3]), (0, f.useLayoutEffect)(t, n), d[4] !== g ? (s = {
+                presentation: "floating",
+                rendersWidgets: g
+            }, d[4] = g, d[5] = s) : s = d[5];
+            let y = m ? p : null;
+            return d[6] !== h ? (o = (0, a.jsx)(ax.a, {
+                entries: h,
+                preserveMeasuredTurnViewport: !0,
+                RowComponent: aR
+            }), d[6] = h, d[7] = o) : o = d[7], d[8] !== y || d[9] !== o ? (i = (0, a.jsx)(es.a, {
+                value: null,
+                children: (0, a.jsxs)(eO.a, {
+                    value: null,
+                    children: [y, o]
+                })
+            }), d[8] = y, d[9] = o, d[10] = i) : i = d[10], d[11] !== m || d[12] !== i ? (l = (0, a.jsx)(t2.a, {
+                active: m,
+                presentation: "panel",
+                children: i
+            }), d[11] = m, d[12] = i, d[13] = l) : l = d[13], d[14] !== s || d[15] !== l ? (c = (0, a.jsx)(u.b, {
+                scope: aw,
+                value: s,
+                children: l
+            }), d[14] = s, d[15] = l, d[16] = c) : c = d[16], c
+        }
+
+        function aR(e) {
+            let t, n = (0, r.c)(2),
+                {
+                    entry: s
+                } = e;
+            return n[0] !== s ? (t = (0, a.jsx)(aM, {
+                entry: {
+                    ...s,
+                    onEditUserMessage: void 0,
+                    onFork: void 0,
+                    readAloudEnabled: !1
+                },
+                trackShownImpressions: !1
+            }), n[0] = s, n[1] = t) : t = n[1], t
+        }
+        var aN = n("TRQ3"),
+            aO = n("SZCv"),
+            aF = n.n(aO),
+            aG = n("qZWE"),
+            az = n("PC5z"),
+            aB = n("lZ4W"),
+            aD = n("ihvi"),
+            aL = n("nMdB");
+        let aW = "[data-d-component]:not([data-d-text-flow])";
+        class aH extends f.Component {
+            static contextType = nW.a;
+            held = null;
+            presented = this.props;
+            userMotion;
+            resumePlacement;
+            stopLayoutCorrection;
+            textObserver;
+            unsubscribe;
+            releaseHold = () => {
+                this.held = null, this.textObserver?.disconnect(), this.textObserver = void 0, this.userMotion?.cancel(), this.userMotion = void 0, this.resumePlacement = void 0, this.stopLayoutCorrection?.(), this.stopLayoutCorrection = void 0
+            };
+            componentDidMount() {
+                this.unsubscribe = this.props.scrollController.addUserScrollListener(() => {
+                    let e = null != this.userMotion;
+                    this.releaseHold(), e && (this.presented = this.props, this.forceUpdate())
+                })
+            }
+            componentWillUnmount() {
+                this.releaseHold(), this.unsubscribe?.()
+            }
+            holdForResponse = e => (!this.held && this.props.active && (this.held = this.capture()), !!this.held && (this.resumePlacement = e, this.props.scrollController.holdViewport(), !0));
+            releaseForHistoryToggle = () => {
+                this.releaseHold()
+            };
+            capture() {
+                let {
+                    visualId: e,
+                    scrollController: t
+                } = this.props;
+                if (!e) return null;
+                let n = t.getScrollElement(),
+                    a = n?.querySelector(`[data-dil-visual-slot="${CSS.escape(e)}"]`);
+                if (!n || !a) return null;
+                let r = a.querySelector(aW) ?? a,
+                    s = r.getBoundingClientRect(),
+                    o = n.getBoundingClientRect();
+                return s.bottom <= o.top || s.top >= o.bottom ? null : {
+                    top: s.top,
+                    body: r,
+                    element: a,
+                    scrollElement: n
+                }
+            }
+            requestingBubble(e) {
+                let t = this.props.exchangeKey;
+                return null == t ? null : e.scrollElement.querySelector(`[data-turn-key="${CSS.escape(t)}"] [data-user-message-bubble]`)
+            }
+            getSnapshotBeforeUpdate(e) {
+                let t = e.visualId !== this.props.visualId,
+                    n = !this.props.active && (this.props.hasStreamingFinalText || e.replyPending && !this.props.replyPending);
+                if (t || n) {
+                    let e = this.resumePlacement;
+                    return this.releaseHold(), n || this.props.active && null != this.props.visualId ? e ?? null : null
+                }
+                return e.active && e.exchangeKey !== this.props.exchangeKey && (this.stopLayoutCorrection?.(), this.userMotion?.cancel(), this.held = this.held ?? this.capture(), this.held || (this.resumePlacement = void 0)), this.held
+            }
+            observeStreamingDilText() {
+                let {
+                    streamingDilFinalId: e,
+                    exchangeKey: t
+                } = this.props, n = this.held?.scrollElement;
+                if (this.textObserver || !n || !e || !t) return;
+                let a = n.querySelector(`[data-turn-key="${CSS.escape(t)}"]`);
+                if (!a) return;
+                let r = `[data-dil-source-message-id="${CSS.escape(e)}"] [data-d-component]`,
+                    s = () => {
+                        let e = a.querySelector(r);
+                        if (e?.dataset.dComponent !== "text" || !e.textContent?.trim() || !e.getClientRects().length) return;
+                        let n = this.resumePlacement;
+                        this.releaseHold(), n?.(t)
+                    };
+                this.textObserver = new MutationObserver(s), this.textObserver.observe(a, {
+                    subtree: !0,
+                    childList: !0,
+                    characterData: !0
+                }), s()
+            }
+            componentDidUpdate(e, t, n) {
+                if ((e.streamingDilFinalId !== this.props.streamingDilFinalId || e.exchangeKey !== this.props.exchangeKey) && (this.textObserver?.disconnect(), this.textObserver = void 0), "function" == typeof n ? null != this.props.exchangeKey && n(this.props.exchangeKey) : this.restore(n), this.props.active || this.observeStreamingDilText(), this.props.active && e.visualOwnerId !== this.props.visualOwnerId && (this.resumePlacement = void 0), this.held && this.shouldAnimateFold()) {
+                    if (!this.userMotion) {
+                        let e = this.requestingBubble(this.held);
+                        e ? (this.userMotion = e.animate([{
+                            translate: "0 0",
+                            opacity: 1
+                        }, {
+                            translate: "0 -36px",
+                            opacity: 0
+                        }], {
+                            duration: 245,
+                            easing: "cubic-bezier(.25,.55,.35,1)",
+                            fill: "forwards"
+                        }), this.userMotion.onfinish = this.showAcceptedEdit) : this.showAcceptedEdit()
+                    }
+                    return
+                }
+                this.presented = this.props, this.userMotion?.cancel(), this.userMotion = void 0
+            }
+            shouldAnimateFold() {
+                return null != this.held && !this.props.reducedMotion && this.props.active && this.presented.visualId === this.props.visualId && this.presented.exchangeKey === this.props.exchangeKey && this.presented.visualOwnerId !== this.props.visualOwnerId
+            }
+            showAcceptedEdit = () => {
+                this.presented = this.props, this.forceUpdate()
+            };
+            restoreAfterMeasurement = () => {
+                this.restore(this.held)
+            };
+            restore(e) {
+                if (!e?.element.isConnected) return;
+                let {
+                    scrollController: t
+                } = this.props;
+                e.body.isConnected || (e.body = e.element.querySelector(aW) ?? e.element);
+                let n = () => (0, nW.b)(e.body.getBoundingClientRect().top - e.top, this.context),
+                    a = n();
+                if (!(1 > Math.abs(a))) {
+                    if (this.held) {
+                        let t = e.element.closest("[data-turn-key]")?.querySelector("[data-dil-anchor-spacer]");
+                        if (t) {
+                            let r = parseFloat(t.style.height) || 0,
+                                s = r + Math.max(0, -a - e.scrollElement.scrollTop) - Math.min(r, Math.max(0, a));
+                            s !== r && (t.style.height = `${s}px`, a = n())
+                        }
+                    }
+                    this.held && a > 0 && this.props.ensureScrollRoomForAnchor?.(a), t.holdViewport(), t.compensateScrollToDistanceFromBottomPx(Math.max(0, (0, t1.b)(e.scrollElement) - a)), this.stopLayoutCorrection?.(), this.stopLayoutCorrection = (0, aL.a)(e.body, this.context)
+                }
+            }
+            render() {
+                return this.shouldAnimateFold() ? this.presented.children : this.props.children
+            }
+        }
+        var aq = n("aRto"),
+            aK = n("WWSI"),
+            aU = n("U3Gy"),
+            aV = n("mKTJ");
+        let aQ = (0, u.c)(tV.a, e => {
+                let {
+                    get: t
+                } = e;
+                return t(aG.l)
+            }, {
+                isEqual: aF()
+            }),
+            a$ = (0, u.c)(tV.a, e => {
+                let {
+                    get: t
+                } = e;
+                return t(az.i)
+            }, {
+                isEqual: (e, t) => e.length === t.length && e.every((e, n) => e.messageId === t[n]?.messageId && e.turnId === t[n]?.turnId)
+            });
+
+        function aY(e) {
+            let t, n, s, o, i, l, c, d = (0, r.c)(39),
+                {
+                    conversationId: h,
+                    entries: p,
+                    viewportRef: m,
+                    isTurnActive: g,
+                    onApiChange: v,
+                    onVisibleContentReady: y,
+                    responseSpacerState: b
+                } = e,
+                {
+                    sharedConversationId: C
+                } = (0, x.cb)(),
+                w = (0, u.z)(null != C && "u" > typeof Element && "function" != typeof Element.prototype.moveBefore ? aQ : null),
+                _ = (0, u.z)(a$),
+                I = (0, nH.b)(),
+                [S, j] = (0, f.useState)(aZ);
+            d[0] !== m ? (t = (e, t) => {
+                m.current?.releaseForHistoryToggle(), j(n => {
+                    let a = new Map(n);
+                    return a.get(e) === t ? a.delete(e) : a.set(e, t), a
+                })
+            }, d[0] = m, d[1] = t) : t = d[1];
+            let T = function(e, t, n) {
+                    if (!e.some(e => null != e.dilEditRequests)) return e;
+                    let a = new Set;
+                    return e.flatMap(e => {
+                        let r, s = e.dilEditRequests;
+                        if (!s || e.dilVisualSlotId) return [e];
+                        let o = e.turn.items.filter(e => {
+                            if ("user-message" !== e.type || !e.messageId) return !0;
+                            let o = s.get(e.messageId);
+                            if (!o) return !0;
+                            let i = t.get(o.slotId) === o.editCount;
+                            return e.messageId !== o.originalRequestId ? i || !a.has(o.slotId) : (a.add(o.slotId), r = {
+                                slotId: o.slotId,
+                                requestId: e.messageId,
+                                count: o.editCount,
+                                expanded: i,
+                                onToggle: () => n(o.slotId, o.editCount)
+                            }, !0)
+                        });
+                        return o.length === e.turn.items.length ? [r ? {
+                            ...e,
+                            dilEditDisclosure: r
+                        } : e] : o.length ? [{
+                            ...e,
+                            turn: {
+                                ...e.turn,
+                                items: o
+                            },
+                            dilEditDisclosure: r
+                        }] : []
+                    })
+                }(p, S, (0, t9.a)(t)),
+                P = p.findLastIndex(aJ),
+                E = p[P]?.dilVisualSlotId,
+                A = (0, tT.a)(null != E),
+                M = p[P]?.turn.items[0];
+            d[2] !== p || d[3] !== b?.voiceAutoScrollEnabled || d[4] !== E ? (n = null != E || b?.voiceAutoScrollEnabled ? p.findLastIndex(a0) : -1, d[2] = p, d[3] = b?.voiceAutoScrollEnabled, d[4] = E, d[5] = n) : n = d[5];
+            let k = n,
+                R = p[k],
+                N = P > k;
+            d[6] !== p ? (s = e => {
+                let t = p.find(t => t.turn.items.some(t => "chatgpt-writing-block-patch" === t.type && t.messageId === e.messageId)),
+                    n = t?.turnKey ?? p.find(t => {
+                        let {
+                            id: n
+                        } = t;
+                        return n === e.turnId
+                    })?.turnKey;
+                return null == n ? [] : [n]
+            }, d[6] = p, d[7] = s) : s = d[7];
+            let O = _.flatMap(s),
+                F = (0, f.useContext)(aq.a),
+                G = p.at(-1),
+                z = g || G?.turn.status === "in_progress";
+            if (F?.aboveComposer != null && null != G && O.push(G.turnKey), null != C && w?.size)
+                for (let e of p) e.turn.items.flatMap(aX).some(e => "chatgpt-hosted-widget" === e.type && (0, aV.h)(e) && w.has((0, aV.e)(C, e.messageId))) && O.push(e.turnKey);
+            let B = null == E ? void 0 : T.find(e => e.dilEditDisclosure?.slotId === E);
+            B && O.push(B.turnKey, p[P].turnKey);
+            let D = N ? B : void 0;
+            b?.voiceAutoScrollEnabled && null != R && O.push(R.turnKey);
+            let L = (0, u.x)(aD.b, h),
+                W = null == L ? void 0 : p.findLast(e => {
+                    let {
+                        turn: t
+                    } = e;
+                    return t.messageIds.includes(L)
+                }),
+                H = null == W ? void 0 : (0, aD.a)(W.turn.items);
+            (0, u.x)(aB.a, null == H ? null : {
+                conversationId: h,
+                userMessageId: H,
+                steeredPromptId: W === G ? L : void 0
+            }) && null != W && O.push(W.turnKey);
+            let q = (0, u.x)(aU.b, h),
+                K = R?.turnKey,
+                U = M?.type === "assistant-message" ? M.messageId : void 0,
+                V = b?.ensureScrollRoomForAnchor,
+                Q = G?.hasStreamingFinalText === !0,
+                $ = G?.streamingDilFinalId,
+                Y = ax.a,
+                X = (0, aK.a)(T, q, h),
+                J = b?.getHeightPx,
+                Z = D?.turnKey,
+                ee = D?.dilEditDisclosure?.count,
+                et = D?.turnKey ?? (null != E || b?.voiceAutoScrollEnabled ? R?.turnKey : void 0);
+            return d[8] !== b || d[9] !== m ? (o = (e, t) => {
+                b?.onTurnLayoutReady(e, t), m.current?.restoreAfterMeasurement()
+            }, d[8] = b, d[9] = m, d[10] = o) : o = d[10], d[11] !== b ? (i = e => {
+                let {
+                    heightDeltaPx: t
+                } = e;
+                b?.consumeGrowth(t ?? 0)
+            }, d[11] = b, d[12] = i) : i = d[12], d[13] !== Y || d[14] !== v || d[15] !== y || d[16] !== O || d[17] !== X || d[18] !== J || d[19] !== Z || d[20] !== ee || d[21] !== et || d[22] !== o || d[23] !== i ? (l = (0, a.jsx)(Y, {
+                entries: X,
+                getBottomScrollPaddingPx: J,
+                synchronousMeasurementTurnKey: Z,
+                latestTurnSynchronousMeasurementKey: ee,
+                layoutReadyTurnKey: et,
+                onTurnLayoutReady: o,
+                onLatestTurnHeightChange: i,
+                onApiChange: v,
+                onVisibleContentReady: y,
+                preserveMeasuredTurnViewport: !0,
+                retainedTurnKeys: O,
+                RowComponent: aM
+            }), d[13] = Y, d[14] = v, d[15] = y, d[16] = O, d[17] = X, d[18] = J, d[19] = Z, d[20] = ee, d[21] = et, d[22] = o, d[23] = i, d[24] = l) : l = d[24], d[25] !== aH || d[26] !== N || d[27] !== A || d[28] !== z || d[29] !== I || d[30] !== l || d[31] !== K || d[32] !== U || d[33] !== V || d[34] !== Q || d[35] !== $ || d[36] !== m || d[37] !== E ? (c = (0, a.jsx)(aH, {
+                ref: m,
+                exchangeKey: K,
+                visualId: E,
+                visualOwnerId: U,
+                active: N,
+                ensureScrollRoomForAnchor: V,
+                hasStreamingFinalText: Q,
+                streamingDilFinalId: $,
+                replyPending: z,
+                reducedMotion: A,
+                scrollController: I,
+                children: l
+            }), d[25] = aH, d[26] = N, d[27] = A, d[28] = z, d[29] = I, d[30] = l, d[31] = K, d[32] = U, d[33] = V, d[34] = Q, d[35] = $, d[36] = m, d[37] = E, d[38] = c) : c = d[38], c
+        }
+
+        function aX(e) {
+            return "chatgpt-reasoning-group" === e.type ? e.items : [e]
+        }
+
+        function aJ(e) {
+            return null != e.dilVisualSlotId
+        }
+
+        function aZ() {
+            return new Map
+        }
+
+        function a0(e) {
+            return e.turn.items.some(e => "user-message" === e.type)
+        }
+        var a1 = n("XAP6"),
+            a2 = n("bzoy"),
+            a3 = n("LYS1"),
+            a4 = n("aZoZ"),
+            a5 = n("Gv8v"),
+            a6 = n("EGpF"),
+            a7 = n("mTPq"),
+            a8 = n("Vcrm"),
+            a9 = n("QBVt");
+        let re = (0, u.d)(ea.a, (e, t) => {
+            let {
+                get: n
+            } = t, a = n(F.$, e);
+            if (!(0, F.Ab)(a)) return !0;
+            let r = n(F.M, e),
+                s = n(F.C, e);
+            if (null == r || null == s) return !1;
+            let o = r[s]?.message;
+            if (null == o || a3.a.has(o.author.role)) return !1;
+            let i = n(F.y, e),
+                l = (0, a7.c)({
+                    mapping: r,
+                    current_node: s
+                }, n(F.R, e)),
+                c = n(F.cb, e);
+            return "streaming" === a && "tpp" !== i && "flora" !== i && null != n(F.j, e) && !(0, a2.e)(n(F.p, e)) && null != c && !n(a1.e).has(c) && null != rt(n, e).request.current && (null == l || l.info.num_variants_in_stream <= 1)
+        });
+
+        function rt(e, t) {
+            let n = e(a6.a, t),
+                a = e(F.j, t);
+            return null == n.request.current && null != a ? e(a6.a, a) : n
+        }
+        var rn = n("xtkq"),
+            ra = n("PG5R"),
+            rr = n("zrki"),
+            rs = n("iLYI"),
+            ro = n("Ipgw"),
+            ri = n("wVX4");
+
+        function rl(e) {
+            let t, n, s, o, i = (0, r.c)(18),
+                {
+                    conversationId: l
+                } = e,
+                c = (0, u.y)(ea.a),
+                d = (0, y.a)(),
+                h = (0, t6.a)(),
+                p = (0, u.x)(F.$, l),
+                m = (0, u.x)(F.cb, l),
+                g = (0, u.x)(F.w, l),
+                b = (0, u.x)(F.bb, l),
+                x = (0, f.useRef)(null),
+                C = (0, f.useRef)(null);
+            i[0] !== g || i[1] !== l || i[2] !== d || i[3] !== m || i[4] !== c || i[5] !== p || i[6] !== b ? (t = () => {
+                let e = x.current;
+                if (null == e) return;
+                let t = C.current;
+                if ((0, F.Ab)(p)) {
+                    e.textContent = "", C.current = {
+                        conversationId: l,
+                        requestId: m ?? ("active-async-turn" === p || "active-tpp-turn" === p ? g?.requestId : null) ?? (t?.conversationId === l ? t.requestId : null)
+                    };
+                    return
+                }
+                b || (C.current = null, t?.conversationId === l && "idle" === p && g?.result === "completed" && g.requestId === t.requestId && null == c.get(F.D, l) && (e.textContent = d.formatMessage({
+                    id: "chatgptConversations.responseComplete",
+                    defaultMessage: "Response complete",
+                    description: "Polite screen-reader announcement after the ChatGPT response the user was waiting for finishes successfully"
+                })))
+            }, i[0] = g, i[1] = l, i[2] = d, i[3] = m, i[4] = c, i[5] = p, i[6] = b, i[7] = t) : t = i[7];
+            let w = (0, f.useEffectEvent)(t);
+            return (i[8] !== w ? (n = () => {
+                w()
+            }, i[8] = w, i[9] = n) : n = i[9], i[10] !== g || i[11] !== l || i[12] !== h || i[13] !== m || i[14] !== p || i[15] !== b ? (s = [l, p, m, g, b, h], i[10] = g, i[11] = l, i[12] = h, i[13] = m, i[14] = p, i[15] = b, i[16] = s) : s = i[16], (0, f.useEffect)(n, s), h) ? (i[17] === Symbol.for("react.memo_cache_sentinel") ? (o = (0, v.createPortal)((0, a.jsx)("span", {
+                ref: x,
+                className: "sr-only select-none",
+                "aria-atomic": "true",
+                "aria-live": "polite",
+                role: "status"
+            }), document.body), i[17] = o) : o = i[17], o) : null
+        }
+        var rc = n("n5iL"),
+            rd = n("EFj1"),
+            ru = n("iS3k"),
+            rh = n("pDUk"),
+            rp = n("GaCK"),
+            rm = n("Dofq");
+        let rg = (0, e0.a)(async () => (await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(153380), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(204542), n.e(982651), n.e(673108), n.e(487481), n.e(229522), n.e(390575), n.e(353032), n.e(637885), n.e(954111)]).then(n.bind(n, "YhBP"))).ChatGptThreadSummaryPanelBody, {
+            fallback: (0, a.jsx)(ru.a.Content, {
+                children: (0, a.jsx)("div", {
+                    className: "flex flex-col gap-0.5 px-5",
+                    children: (0, a.jsx)("span", {
+                        className: "select-none",
+                        role: "status",
+                        children: (0, a.jsx)(b.a, {
+                            id: "chatgptConversations.summaryPanel.loading",
+                            defaultMessage: "Loading summary…",
+                            description: "Status shown in the Work task summary panel while its interface downloads"
+                        })
+                    })
+                })
+            }),
+            errorFallback: (0, a.jsx)(ru.a.Content, {
+                children: (0, a.jsx)("div", {
+                    className: "flex flex-col gap-0.5 px-5",
+                    children: (0, a.jsx)("span", {
+                        className: "select-none",
+                        role: "status",
+                        children: (0, a.jsx)(b.a, {
+                            id: "chatgptConversations.summaryPanel.loadError",
+                            defaultMessage: "Summary could not load. Reload the app to try again",
+                            description: "Recovery instructions in the Work task summary panel after its interface fails to download; closing the panel does not retry"
+                        })
+                    })
+                })
+            })
+        });
+
+        function rf(e) {
+            let t, n, s, o = (0, r.c)(6);
+            o[0] !== e ? ({
+                readData: n,
+                ...t
+            } = e, o[0] = e, o[1] = t, o[2] = n) : (t = o[1], n = o[2]);
+            let i = (0, ru.b)(),
+                [l, c] = (0, f.useState)(null);
+            return i && l?.readData !== n && c({
+                readData: n,
+                data: n()
+            }), o[3] !== l || o[4] !== t ? (s = null == l ? null : (0, a.jsx)(rg, {
+                ...t,
+                data: l.data
+            }), o[3] = l, o[4] = t, o[5] = s) : s = o[5], s
+        }
+
+        function rv(e) {
+            let t, n, s, o = (0, r.c)(15),
+                {
+                    conversationId: i,
+                    composerActions: l,
+                    readData: c,
+                    display: d,
+                    shouldBlockExternalEgress: h,
+                    showSources: p
+                } = e,
+                m = void 0 === p || p,
+                g = (0, u.y)(G.a),
+                f = (0, er.h)("2903661647"),
+                v = f ? "dynamic-isle" : "summary";
+            return o[0] !== g || o[1] !== v ? (t = {
+                scope: g,
+                layout: v
+            }, o[0] = g, o[1] = v, o[2] = t) : t = o[2], o[3] !== l || o[4] !== i || o[5] !== f || o[6] !== c || o[7] !== h || o[8] !== m ? (n = (0, a.jsx)(rf, {
+                conversationId: i,
+                composerActions: l,
+                readData: c,
+                isUnifiedDynamicIsleEnabled: f,
+                showSources: m,
+                shouldBlockExternalEgress: h
+            }, i), o[3] = l, o[4] = i, o[5] = f, o[6] = c, o[7] = h, o[8] = m, o[9] = n) : n = o[9], o[10] !== d.shouldHideInlineImmediately || o[11] !== d.shouldShow || o[12] !== t || o[13] !== n ? (s = (0, a.jsx)(ru.a.Root, {
+                analytics: t,
+                shouldHideInlineImmediately: d.shouldHideInlineImmediately,
+                shouldShow: d.shouldShow,
+                children: n
+            }), o[10] = d.shouldHideInlineImmediately, o[11] = d.shouldShow, o[12] = t, o[13] = n, o[14] = s) : s = o[14], s
+        }
+
+        function ry(e) {
+            let t, n, s, o = (0, r.c)(22),
+                {
+                    conversationId: i,
+                    composerActions: l,
+                    controlledState: c,
+                    readData: d,
+                    shouldBlockExternalEgress: h,
+                    showSources: p
+                } = e,
+                m = void 0 === p || p,
+                g = (0, u.y)(G.a),
+                v = (0, f.useContext)(es.a),
+                b = (0, y.a)(),
+                x = (0, er.h)("2903661647"),
+                C = (0, u.z)(null == c ? np.N : null);
+            o[0] !== c?.isOpen || o[1] !== C ? (t = c?.isOpen ?? (0, np.z)(C, !0), o[0] = c?.isOpen, o[1] = C, o[2] = t) : t = o[2];
+            let w = t,
+                _ = (0, u.z)(rp.b),
+                I = c?.isOpen ?? _.isPopoverOpen,
+                S = (0, u.x)(rc.f, "togglePinnedSummary");
+            (0, t4.b)(g), o[3] !== c || o[4] !== g ? (n = () => {
+                null != c ? c.onOpenChange(!c.isOpen) : (0, rm.b)(g)
+            }, o[3] = c, o[4] = g, o[5] = n) : n = o[5];
+            let j = n;
+            return (0, rd.a)("togglePinnedSummary", j), o[6] !== l || o[7] !== v || o[8] !== c || o[9] !== i || o[10] !== b || o[11] !== w || o[12] !== I || o[13] !== x || o[14] !== _.displayMode || o[15] !== d || o[16] !== g || o[17] !== S || o[18] !== h || o[19] !== m || o[20] !== j ? (s = (0, a.jsx)(T.a.HeaderAction, {
+                actionId: "chatgpt-thread-summary-panel-toggle",
+                align: "end",
+                order: 250,
+                children: "overlay" === _.displayMode ? (0, a.jsx)(rh.a, {
+                    isOpen: I,
+                    shouldPreventAutoFocus: c?.shouldPreventAutoFocus,
+                    onOpenChange: e => {
+                        null != c ? c.onOpenChange(e) : g.set(rp.b, t => "overlay" !== t.displayMode || t.isPopoverOpen === e ? t : {
+                            ...t,
+                            isPopoverOpen: e
+                        })
+                    },
+                    trigger: (0, a.jsx)(ru.a.HeaderButton, {
+                        analytics: {
+                            scope: g
+                        },
+                        label: b.formatMessage({
+                            id: "chatgptConversations.summaryPanel.toggle",
+                            defaultMessage: "Toggle summary",
+                            description: "Button label for toggling the ChatGPT summary panel"
+                        }),
+                        pressed: I,
+                        shortcut: S
+                    }),
+                    children: null != d ? (0, a.jsx)(es.a, {
+                        value: v,
+                        children: (0, a.jsx)(ru.a.PopoverContent, {
+                            analytics: {
+                                scope: g,
+                                layout: x ? "dynamic-isle" : "summary"
+                            },
+                            children: (0, a.jsx)(rf, {
+                                conversationId: i,
+                                composerActions: l,
+                                readData: d,
+                                isUnifiedDynamicIsleEnabled: x,
+                                showSources: m,
+                                shouldBlockExternalEgress: h
+                            }, i)
+                        })
+                    }) : null
+                }) : (0, a.jsx)(ru.a.HeaderButton, {
+                    analytics: {
+                        scope: g
+                    },
+                    label: b.formatMessage({
+                        id: "chatgptConversations.summaryPanel.togglePinned",
+                        defaultMessage: "Toggle pinned summary",
+                        description: "Button label for toggling whether the ChatGPT summary panel reserves layout space"
+                    }),
+                    pressed: w,
+                    shortcut: S,
+                    onClick: j
+                })
+            }), o[6] = l, o[7] = v, o[8] = c, o[9] = i, o[10] = b, o[11] = w, o[12] = I, o[13] = x, o[14] = _.displayMode, o[15] = d, o[16] = g, o[17] = S, o[18] = h, o[19] = m, o[20] = j, o[21] = s) : s = o[21], s
+        }
+        var rb = n("JjRy"),
+            rx = n.n(rb),
+            rC = n("G4E3"),
+            rw = n("KaH3"),
+            r_ = n("Yz3b"),
+            rI = n("ghNX"),
+            rS = n("KvVi"),
+            rj = n("m250"),
+            rT = n("Ng4B"),
+            rP = n("bTKb"),
+            rE = n("dGDB"),
+            rA = n("lIsV");
+
+        function rM(e) {
+            return e.flatMap(e => "chatgpt-reasoning-group" === e.type ? e.items : [e])
+        }
+        var rk = n("JlMc"),
+            rR = n("TUMj"),
+            rN = n("f6KK"),
+            rO = n("JPXZ"),
+            rF = n("zWHk");
+
+        function rG(e) {
+            let t, n, a, s, o, i, l, c = (0, r.c)(34),
+                {
+                    composerController: d,
+                    enabled: u
+                } = e,
+                h = (0, x.Y)(),
+                p = (0, x._)();
+            if (c[0] !== h.search) {
+                let e = new URLSearchParams(h.search);
+                t = e.get("prompt"), n = e.get("promptSource"), c[0] = h.search, c[1] = t, c[2] = n
+            } else t = c[1], n = c[2];
+            let m = n,
+                g = h.key,
+                v = (0, f.useRef)(null);
+            c[3] !== h.hash || c[4] !== h.pathname || c[5] !== h.search || c[6] !== h.state || c[7] !== g || c[8] !== p ? (a = e => {
+                let t = new URLSearchParams(h.search);
+                t.delete("prompt"), t.delete("promptSource"), p({
+                    pathname: h.pathname,
+                    search: t.toString(),
+                    hash: h.hash
+                }, {
+                    replace: !0,
+                    state: {
+                        ...h.state,
+                        consumedUrlPromptKey: g,
+                        ...e && "widget" === t.get("site_edit_source") ? {
+                            siteEditSource: "widget"
+                        } : void 0
+                    }
+                })
+            }, c[3] = h.hash, c[4] = h.pathname, c[5] = h.search, c[6] = h.state, c[7] = g, c[8] = p, c[9] = a) : a = c[9];
+            let y = (0, f.useEffectEvent)(a);
+            return c[10] !== y || c[11] !== d || c[12] !== u || c[13] !== g || c[14] !== t ? (s = () => {
+                if (!u && t && v.current !== g) return (0, rF.b)(d.view, (e, t) => {
+                    e && t?.getMeta("addToHistory") !== !1 && d.consumeLocationPromptPrefill(g) && y(!1)
+                })
+            }, c[10] = y, c[11] = d, c[12] = u, c[13] = g, c[14] = t, c[15] = s) : s = c[15], c[16] !== d || c[17] !== u || c[18] !== g || c[19] !== t ? (o = [d, u, g, t], c[16] = d, c[17] = u, c[18] = g, c[19] = t, c[20] = o) : o = c[20], (0, f.useLayoutEffect)(s, o), c[21] !== y || c[22] !== d || c[23] !== u || c[24] !== g || c[25] !== t || c[26] !== m ? (i = () => {
+                if (!u || !t || v.current === g) return;
+                v.current = g;
+                let e = d.consumeLocationPromptPrefill(g);
+                if (y(e), !e) return;
+                let {
+                    view: n
+                } = d, a = t.replace(/\r\n/g, "\n"), r = "codex-app" === m ? (0, rO.f)({
+                    schema: n.state.schema,
+                    text: a,
+                    restoreOnlySitesAndPluginMentions: !0
+                }) : (0, rO.e)({
+                    schema: n.state.schema,
+                    text: a
+                }), s = n.state.tr.replaceWith(0, n.state.doc.content.size, r.content);
+                s.setSelection(rN.h.atEnd(s.doc)), n.dispatch(s)
+            }, c[21] = y, c[22] = d, c[23] = u, c[24] = g, c[25] = t, c[26] = m, c[27] = i) : i = c[27], c[28] !== d || c[29] !== u || c[30] !== g || c[31] !== t || c[32] !== m ? (l = [d, u, g, t, m], c[28] = d, c[29] = u, c[30] = g, c[31] = t, c[32] = m, c[33] = l) : l = c[33], (0, f.useLayoutEffect)(i, l), null
+        }
+        var rz = n("zKCW");
+
+        function rB(e) {
+            let t, n, s, o, i, l = (0, r.c)(11),
+                {
+                    canConvert: c,
+                    isChatInstantAvailable: d,
+                    isConverting: u,
+                    onConvert: h
+                } = e;
+            l[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(b.a, {
+                id: "chatgptConversations.workOnlyConversion.title",
+                defaultMessage: "Continue in Work",
+                description: "Banner title shown in a disabled historical Chat conversation for a Work-only member in Codex Desktop"
+            }), l[0] = t) : t = l[0], l[1] !== d ? (n = d ? (0, a.jsx)(b.a, {
+                id: "chatgptConversations.workOnlyConversion.instantDescription",
+                defaultMessage: "Move this chat to Work to use agentic tools and take on more complex tasks. You can still use chat instant for quick questions",
+                description: "Banner description shown for a Chat Instant conversation when a Work-only member can continue using Chat Instant in Codex Desktop"
+            }) : (0, a.jsx)(b.a, {
+                id: "chatgptConversations.workOnlyConversion.description",
+                defaultMessage: "Move this chat to Work to use agentic tools and take on more complex tasks",
+                description: "Banner description shown when a Work-only member cannot continue a historical Chat conversation in Codex Desktop"
+            }), l[1] = d, l[2] = n) : n = l[2];
+            let p = !c;
+            return l[3] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, a.jsx)(b.a, {
+                id: "chatgptConversations.workOnlyConversion.action",
+                defaultMessage: "Convert to Work",
+                description: "Button that converts a disabled historical Chat conversation to Work in Codex Desktop"
+            }), l[3] = s) : s = l[3], l[4] !== u || l[5] !== h || l[6] !== p ? (o = (0, a.jsx)(e$.a, {
+                color: "primary",
+                disabled: p,
+                loading: u,
+                onClick: h,
+                children: s
+            }), l[4] = u, l[5] = h, l[6] = p, l[7] = o) : o = l[7], l[8] !== n || l[9] !== o ? (i = (0, a.jsx)("div", {
+                className: "mx-auto mb-3 w-full max-w-[var(--thread-content-max-width)]",
+                children: (0, a.jsx)(rz.a, {
+                    ariaLive: "polite",
+                    title: t,
+                    content: n,
+                    customCtas: o
+                })
+            }), l[8] = n, l[9] = o, l[10] = i) : i = l[10], i
+        }
+        var rD = n("pgeU");
+        let rL = (0, e0.a)(async () => (await Promise.all([n.e(747352), n.e(94193)]).then(n.bind(n, "FKl5"))).ClientDelightPresentation);
+
+        function rW(e) {
+            let t, n, s, o = (0, r.c)(7),
+                {
+                    conversationId: i
+                } = e,
+                l = (0, u.y)(ea.a),
+                c = (0, u.x)(rD.a, i);
+            return o[0] !== i || o[1] !== l ? (t = () => {
+                let e = () => {
+                        let e = l.get(rD.a, i);
+                        null != e && (0, rD.b)(l, i, e, "hidden_or_unmounted")
+                    },
+                    t = () => {
+                        "visible" !== document.visibilityState && e()
+                    };
+                return document.addEventListener("visibilitychange", t), window.addEventListener("pagehide", e), () => {
+                    document.removeEventListener("visibilitychange", t), window.removeEventListener("pagehide", e), e()
+                }
+            }, n = [i, l], o[0] = i, o[1] = l, o[2] = t, o[3] = n) : (t = o[2], n = o[3]), (0, f.useEffect)(t, n), o[4] !== i || o[5] !== c ? (s = null == c ? null : (0, a.jsx)(rL, {
+                conversationId: i,
+                effect: c
+            }, c.id), o[4] = i, o[5] = c, o[6] = s) : s = o[6], s
+        }
+        var rH = n("fr5e"),
+            rq = n("V8xe"),
+            rK = n("LEgg");
+        let rU = (0, e0.a)(() => n.e(766350).then(n.bind(n, "wWAQ")).then(e => e.ScheduledGoalNavigationBridge));
+
+        function rV(e) {
+            let t, n, s = (0, r.c)(6),
+                {
+                    conversationId: o,
+                    scheduledAutomationId: i
+                } = e,
+                l = (0, er.h)("3901104270");
+            return s[0] !== o || s[1] !== l || s[2] !== i ? (t = l && null != i ? (0, a.jsx)(rU, {
+                conversationId: o,
+                automationId: i
+            }) : null, s[0] = o, s[1] = l, s[2] = i, s[3] = t) : t = s[3], s[4] !== t ? (n = (0, a.jsx)(a.Fragment, {
+                children: t
+            }), s[4] = t, s[5] = n) : n = s[5], n
+        }
+        var rQ = n("Bs4i"),
+            r$ = n("Qgfj"),
+            rY = n("rmk3"),
+            rX = n("f38C"),
+            rJ = n("MRlq"),
+            rZ = n("sqqv"),
+            r0 = n("fQbA"),
+            r1 = n("dDDU"),
+            r2 = n("soaw"),
+            r3 = n("ZrYB"),
+            r4 = n("X6Vn"),
+            r5 = n("Kwur"),
+            r6 = n("eKlv"),
+            r7 = n("MYlA"),
+            r8 = n("JCtZ"),
+            r9 = n("g2p6"),
+            se = n("oaTv"),
+            st = n("PME0"),
+            sn = n("lgcP"),
+            sa = n("AcSY"),
+            sr = n("w7E5"),
+            ss = n("QmkR"),
+            so = n("xEXG"),
+            si = n("J6LI"),
+            sl = n("lUUH"),
+            sc = n("ftAl");
+
+        function sd(e) {
+            let t, n, s, o = (0, r.c)(17),
+                {
+                    children: i,
+                    conversationId: l,
+                    getBaseItems: c,
+                    menuTriggerRef: d,
+                    navigate: h,
+                    onBeforeOpen: p,
+                    renderDropdown: m
+                } = e,
+                g = (0, u.y)(ea.a),
+                {
+                    data: f
+                } = (0, sa.i)(),
+                v = (0, so.b)();
+            return o[0] !== f || o[1] !== l || o[2] !== c || o[3] !== d || o[4] !== h || o[5] !== v || o[6] !== g ? (t = () => {
+                let e = g.get(sc.a, l, {
+                        enabled: !1
+                    }),
+                    t = (0, e8.a)(e?.gizmo_id) ? e?.gizmo_id ?? null : null,
+                    n = null == t ? void 0 : g.query.getData(eK.b, t);
+                return c(function(e) {
+                    let {
+                        scope: t,
+                        conversationId: n,
+                        conversation: a,
+                        project: r,
+                        account: s,
+                        projectCrudStatus: o,
+                        navigate: i,
+                        onCreateProjectDialogCloseAutoFocus: l
+                    } = e, c = (0, e8.a)(a?.gizmo_id) ? a?.gizmo_id ?? null : null, d = t.get(sr.a), u = t.get(ss.m), {
+                        data: h
+                    } = d, p = h?.pages.flatMap(e => e.items).length ?? 0, m = (a?.conversation_origin === "tpp" || a?.conversation_origin === "flora") && ("allowed" === o || h?.pages.some(e => null != e.cursor) === !0), g = t.get(ss.h, n);
+                    return null == s || null == a || t.get(ss.g, n) || (0, si.c)(a, r).sourceUnavailable || null == (0, si.b)(t, a, g, !1) || null != c && null == r || null == h || 0 === p && !m ? [] : [...null == r ? [] : [{
+                        id: "current-project-name",
+                        message: sm.projectName,
+                        messageValues: {
+                            projectName: r.gizmo.display.name
+                        },
+                        enabled: !1
+                    }], ...(0, sl.b)({
+                        scope: t,
+                        conversation: a,
+                        project: r,
+                        showDestinationFetchState: !1,
+                        showMoveToProject: null == c || p > 1 || m,
+                        projectCrudStatus: o,
+                        projectListQuery: d,
+                        pinnedProjectsQuery: u,
+                        navigate: i,
+                        onCreateProjectDialogCloseAutoFocus: l
+                    })]
+                }({
+                    scope: g,
+                    conversationId: l,
+                    conversation: e,
+                    project: n,
+                    account: f,
+                    projectCrudStatus: v,
+                    navigate: h,
+                    onCreateProjectDialogCloseAutoFocus: e => {
+                        e.preventDefault(), d.current?.focus({
+                            preventScroll: !0
+                        })
+                    }
+                }))
+            }, o[0] = f, o[1] = l, o[2] = c, o[3] = d, o[4] = h, o[5] = v, o[6] = g, o[7] = t) : t = o[7], o[8] !== l || o[9] !== p || o[10] !== g ? (n = async () => {
+                await Promise.all([(async () => {
+                    let e = g.get(n9.chatGptConversationQueryById$, l, {
+                        enabled: !1
+                    });
+                    null == e.data && e.isFetching && await g.query.getOrFetch(n9.chatGptConversationQueryById$, l).catch(sp), null == g.query.getData(n9.chatGptConversationQueryById$, l) && await g.query.getOrFetch(ss.j, [l]).catch(sh)
+                })(), p?.()]);
+                let e = g.get(sc.a, l, {
+                    enabled: !1
+                });
+                (0, e8.a)(e?.gizmo_id) && e?.gizmo_id != null && await g.query.getOrFetch(eK.b, e.gizmo_id).catch(su)
+            }, o[8] = l, o[9] = p, o[10] = g, o[11] = n) : n = o[11], o[12] !== i || o[13] !== m || o[14] !== t || o[15] !== n ? (s = (0, a.jsx)(rY.a, {
+                preserveBrowserContextMenu: !0,
+                awaitBeforeOpen: !1,
+                getItems: t,
+                onBeforeOpen: n,
+                renderItem: r0.b,
+                renderDropdown: m,
+                trigger: "click",
+                children: i
+            }), o[12] = i, o[13] = m, o[14] = t, o[15] = n, o[16] = s) : s = o[16], s
+        }
+
+        function su() {}
+
+        function sh() {}
+
+        function sp() {}
+        let sm = (0, r$.f)({
+            projectName: {
+                id: "chatgptConversations.projectActions.projectName",
+                defaultMessage: "{projectName}",
+                description: "Name of a ChatGPT project offered as a destination for moving a conversation or Work task"
+            }
+        });
+
+        function sg(e) {
+            let t, s, o, i, l, c, d, h, p, m, g, v, b, C, w, _, j, T, P = (0, r.c)(72),
+                {
+                    isTitleMenu: E,
+                    triggerButton: A,
+                    renderDropdown: M,
+                    conversationOrigin: R,
+                    conversationId: N,
+                    title: O,
+                    isHandoffPending: F,
+                    isArchived: z,
+                    isChatConversation: B,
+                    onHandoff: D,
+                    onOpenMessage: L,
+                    projectId: W,
+                    projectName: H,
+                    serverConversationId: q
+                } = e,
+                K = void 0 !== E && E,
+                U = (0, u.y)(G.a),
+                V = (0, u.y)(ea.a),
+                Q = (0, r2.a)(),
+                $ = (0, er.k)();
+            P[0] !== $ ? (t = $.checkGate("224248639"), P[0] = $, P[1] = t) : t = P[1];
+            let Y = t;
+            P[2] !== $ ? (s = $.getLayer("3017902351").get("web_file_library_enabled", !1), P[2] = $, P[3] = s) : s = P[3];
+            let X = s,
+                J = Y || X;
+            P[4] !== J ? (o = {
+                enabled: J
+            }, P[4] = J, P[5] = o) : o = P[5];
+            let {
+                data: Z
+            } = (0, u.z)(r9.p, o), ee = J && Z?.fileLibraryEnabledForRegistrationCountry !== !1, en = (0, y.a)(), es = (0, x._)(), [eo, ei] = (0, f.useState)(null), el = (0, f.useRef)(null), ec = (0, f.useRef)(null);
+            P[6] === Symbol.for("react.memo_cache_sentinel") ? (i = [], P[6] = i) : i = P[6];
+            let ed = (0, f.useRef)(i);
+            P[7] === Symbol.for("react.memo_cache_sentinel") ? (l = {
+                name: "chatgpt"
+            }, P[7] = l) : l = P[7];
+            let {
+                isCapable: eu
+            } = (0, u.x)(I.a, l), eh = (0, u.x)(ss.g, q);
+            P[8] === Symbol.for("react.memo_cache_sentinel") ? (c = () => ei("shortcut"), P[8] = c) : c = P[8];
+            let ep = B && !eh;
+            P[9] !== U || P[10] !== q ? (d = () => (0, n7.a)(U.query.getData(n9.chatGptConversationQueryById$, q), U.get(k.h), U.get(k.g)), P[9] = U, P[10] = q, P[11] = d) : d = P[11], P[12] !== ep || P[13] !== d ? (h = {
+                enabled: ep,
+                isActive: d
+            }, P[12] = ep, P[13] = d, P[14] = h) : h = P[14], (0, rd.a)("deleteChat", c, h), P[15] !== V || P[16] !== eh || P[17] !== es || P[18] !== U || P[19] !== q ? (p = e => {
+                !eh && (0, n7.a)(U.query.getData(n9.chatGptConversationQueryById$, q), U.get(k.h), U.get(k.g)) && (ei(null), (0, sn.a)(V, q, e), es("/", {
+                    replace: !0,
+                    state: {
+                        leavingDeletedChatGptConversation: !0
+                    }
+                }))
+            }, P[15] = V, P[16] = eh, P[17] = es, P[18] = U, P[19] = q, P[20] = p) : p = P[20];
+            let em = p;
+            P[21] !== en ? (m = en.formatMessage(sb.chatActions), P[21] = en, P[22] = m) : m = P[22];
+            let eg = m;
+            P[23] !== U || P[24] !== q ? (g = async () => {
+                let e = [];
+                ed.current = e, e.push(...await async function(e, t) {
+                    let a = await r5.Request.safeGet("/live/conversations/{conversation_id}/session-sharing", {
+                        parameters: {
+                            path: {
+                                conversation_id: t
+                            }
+                        }
+                    }).catch(() => null);
+                    return a?.can_share && 0 !== a.av_sessions.length ? [{
+                        id: "share-live-session",
+                        icon: ah.aj,
+                        message: (0, r$.e)({
+                            id: "chatgptConversations.liveSessionSharing.action",
+                            defaultMessage: "Share Live session",
+                            description: "Conversation menu action that lets an eligible user create a GPT-Live session viewer link for one of their previous voice calls"
+                        }),
+                        selectAfterClose: !0,
+                        onSelect: () => {
+                            n.e(571376).then(n.bind(n, "ATrx")).then(n => {
+                                let {
+                                    BidiSessionSharingDialog: r
+                                } = n;
+                                (0, r4.f)(e, r, {
+                                    conversationId: t,
+                                    sessions: a.av_sessions
+                                })
+                            })
+                        }
+                    }] : []
+                }(U, q))
+            }, P[23] = U, P[24] = q, P[25] = g) : g = P[25];
+            let ef = g;
+            P[26] !== N || P[27] !== R || P[28] !== ee || P[29] !== en || P[30] !== eh || P[31] !== z || P[32] !== F || P[33] !== Q || P[34] !== K || P[35] !== es || P[36] !== D || P[37] !== L || P[38] !== W || P[39] !== H || P[40] !== U || P[41] !== q || P[42] !== $ || P[43] !== O ? (v = e => {
+                let t = U.get(k.f),
+                    a = U.get(k.k),
+                    r = U.query.getData(n9.chatGptConversationQueryById$, q),
+                    s = U.get(k.h),
+                    o = U.get(k.g),
+                    i = (0, n7.a)(r, s, o),
+                    l = (0, r6.b)(U, q),
+                    c = !eh && (0, n7.a)(l, s, o),
+                    d = U.get(S.b).pathname,
+                    u = () => Q() && d === U.get(S.b).pathname && t === U.get(k.f) && a === U.get(k.k),
+                    h = (0, se.a)(U, N, R, () => (0, st.a)(es)),
+                    p = [];
+                return $.getLayer("3732549458").get("enable_conversation_audio_summary", !1) && p.push({
+                    id: "chatgpt-audio-summary",
+                    message: (0, r$.e)({
+                        id: "GizmoInformation.audioSummary",
+                        defaultMessage: "Audio summary",
+                        description: "Opens the dialog for generating and listening to an audio summary of the current chat"
+                    }),
+                    icon: ah.qg,
+                    selectAfterClose: !0,
+                    onSelect: () => {
+                        (async function() {
+                            return (await n.e(600460).then(n.bind(n, "EEPj"))).openAudioSummaryDialog
+                        })().then(e => {
+                            u() && e(U, q)
+                        }).catch(() => {
+                            u() && (el.current?.focus({
+                                preventScroll: !0
+                            }), U.get(et.f).danger(en.formatMessage({
+                                id: "chatgpt.audioSummary.openError",
+                                defaultMessage: "Couldn’t open audio summary",
+                                description: "Error toast when loading the audio summary dialog fails after selecting its conversation menu action"
+                            }), {
+                                errorAnalytics: {
+                                    toastId: "chatgpt.audioSummary.openError"
+                                }
+                            }))
+                        })
+                    }
+                }), ee && p.unshift({
+                    id: "chatgpt-conversation-files",
+                    message: (0, r$.e)({
+                        id: "GizmoInformation.viewFiles",
+                        defaultMessage: "View files in chat",
+                        description: "Opens the side panel listing files referenced in the active saved ChatGPT conversation, even when the list is empty"
+                    }),
+                    icon: ah.sb,
+                    onSelect: () => {
+                        (async function() {
+                            return (await n.e(368308).then(n.bind(n, "LFUX"))).openConversationFiles
+                        })().then(e => {
+                            u() && e(U, {
+                                conversationId: N,
+                                serverConversationId: q,
+                                onOpenMessage: L
+                            })
+                        }).catch(() => {
+                            u() && U.get(et.f).danger(en.formatMessage({
+                                id: "chatgptConversations.files.loadPanelError",
+                                defaultMessage: "Couldn’t open files in chat",
+                                description: "Error toast when loading the Files in chat panel fails after selecting its conversation menu action"
+                            }), {
+                                errorAnalytics: {
+                                    toastId: "chatgptConversations.files.loadPanelError"
+                                }
+                            })
+                        })
+                    }
+                }), p.push(...(0, r1.a)(U)), (0, r8.a)(U, {
+                    organizationItems: (0, r0.a)([]),
+                    projectItems: void 0 === e ? [] : e,
+                    sharingItems: ed.current,
+                    viewItems: p,
+                    feedbackItems: [],
+                    preferenceItems: null == h ? [] : [h],
+                    surface: "header",
+                    isTitleMenu: K,
+                    conversationId: q,
+                    stateConversationId: N,
+                    conversationOrigin: R,
+                    title: O,
+                    isHandoffPending: F,
+                    canHandoff: null != D,
+                    onHandoff: D,
+                    projectId: W,
+                    projectName: H,
+                    onRename: (0, n7.b)(r, s, o, eh) ? () => void(0, r6.renameActiveChatGptConversation)(U, N) : void 0,
+                    isPinned: U.get(ss.h, q) ?? l?.is_starred === !0,
+                    onTogglePin: c ? () => {
+                        let e = (0, r6.b)(U, q);
+                        !(null == e || U.get(ss.g, q)) && (0, n7.a)(e, U.get(k.h), U.get(k.g)) && (0, ss.V)({
+                            scope: U,
+                            conversation: "conversation_id" in e ? {
+                                gizmo_id: e.gizmo_id,
+                                id: e.conversation_id,
+                                is_archived: e.is_archived,
+                                is_starred: e.is_starred,
+                                title: e.title
+                            } : e
+                        }).catch(sf)
+                    } : void 0,
+                    onArchive: !i || eh || z ? void 0 : () => (0, r3.a)(U, q),
+                    onUnarchive: i && !eh && z ? () => {
+                        (0, ss.W)({
+                            scope: U,
+                            conversationId: q
+                        }).then(() => {
+                            U.get(et.f).success(en.formatMessage(rJ.a.unarchiveSuccessPlain))
+                        }).catch(() => {
+                            U.get(et.f).danger(en.formatMessage(am.a.unarchiveError), {
+                                errorAnalytics: {
+                                    toastId: "chatgptConversationPage.onUnarchive.unarchiveError"
+                                }
+                            })
+                        })
+                    } : void 0,
+                    onDelete: !i || eh ? void 0 : () => ei("menu")
+                })
+            }, P[26] = N, P[27] = R, P[28] = ee, P[29] = en, P[30] = eh, P[31] = z, P[32] = F, P[33] = Q, P[34] = K, P[35] = es, P[36] = D, P[37] = L, P[38] = W, P[39] = H, P[40] = U, P[41] = q, P[42] = $, P[43] = O, P[44] = v) : v = P[44];
+            let ev = v;
+            if (null != A) {
+                let e;
+                P[45] !== A ? (e = (0, a.jsx)(rQ.b, {
+                    ref: el,
+                    children: A
+                }), P[45] = A, P[46] = e) : e = P[46], b = e
+            } else if (K) {
+                let e;
+                P[47] !== O ? (e = (0, a.jsx)(rZ.a, {
+                    ref: el,
+                    title: O
+                }), P[47] = O, P[48] = e) : e = P[48], b = e
+            } else {
+                let e;
+                P[49] !== eg ? (e = (0, a.jsx)(rX.a, {
+                    ref: el,
+                    className: "no-drag",
+                    label: eg,
+                    size: "toolbar"
+                }), P[49] = eg, P[50] = e) : e = P[50], b = e
+            }
+            P[51] !== ev || P[52] !== b || P[53] !== es || P[54] !== eu || P[55] !== ef || P[56] !== M || P[57] !== q ? (C = eu ? (0, a.jsx)(sd, {
+                conversationId: q,
+                getBaseItems: ev,
+                menuTriggerRef: el,
+                navigate: es,
+                onBeforeOpen: ef,
+                renderDropdown: M,
+                children: b
+            }) : (0, a.jsx)(rY.a, {
+                preserveBrowserContextMenu: !0,
+                getItems: () => ev(),
+                onBeforeOpen: ef,
+                renderItem: r0.b,
+                renderDropdown: M,
+                trigger: "click",
+                children: b
+            }), P[51] = ev, P[52] = b, P[53] = es, P[54] = eu, P[55] = ef, P[56] = M, P[57] = q, P[58] = C) : C = P[58];
+            let ey = "shortcut" === eo,
+                eb = null != eo;
+            return P[59] !== eo ? (w = () => {
+                ec.current = "menu" === eo ? el.current : null, ei(null)
+            }, P[59] = eo, P[60] = w) : w = P[60], P[61] === Symbol.for("react.memo_cache_sentinel") ? (_ = e => {
+                let t = ec.current;
+                if (ec.current = null, null == t) return;
+                e.preventDefault();
+                let n = t.ownerDocument.activeElement;
+                t.isConnected && (n === t.ownerDocument.body || e.target instanceof HTMLElement && e.target.contains(n)) && t.focus({
+                    preventScroll: !0
+                })
+            }, P[61] = _) : _ = P[61], P[62] !== em || P[63] !== eh || P[64] !== ey || P[65] !== eb || P[66] !== w || P[67] !== O ? (j = (0, a.jsx)(r7.a, {
+                allowArtifactDeletion: !0,
+                autoFocusConfirm: ey,
+                open: eb,
+                onOpenChange: w,
+                onCloseAutoFocus: _,
+                isDeleting: eh,
+                onConfirm: em,
+                title: O
+            }), P[62] = em, P[63] = eh, P[64] = ey, P[65] = eb, P[66] = w, P[67] = O, P[68] = j) : j = P[68], P[69] !== C || P[70] !== j ? (T = (0, a.jsxs)(a.Fragment, {
+                children: [C, j]
+            }), P[69] = C, P[70] = j, P[71] = T) : T = P[71], T
+        }
+
+        function sf() {}
+
+        function sv() {
+            let e, t, n = (0, r.c)(4),
+                s = (0, y.a)();
+            n[0] !== s ? (e = s.formatMessage(sb.more), n[0] = s, n[1] = e) : e = n[1];
+            let o = e;
+            return n[2] !== o ? (t = (0, a.jsx)(a.Fragment, {
+                children: (0, a.jsx)(rY.a, {
+                    preserveBrowserContextMenu: !0,
+                    getItems: sy,
+                    renderItem: r0.b,
+                    trigger: "click",
+                    children: (0, a.jsx)(rX.a, {
+                        className: "no-drag",
+                        label: o,
+                        size: "toolbar"
+                    })
+                })
+            }), n[2] = o, n[3] = t) : t = n[3], t
+        }
+
+        function sy() {
+            return (0, r0.a)([])
+        }
+        let sb = (0, r$.f)({
+            chatActions: {
+                id: "chatgpt.conversation.header.control.actions.label",
+                defaultMessage: "Chat actions",
+                description: "Accessible name for the icon-only menu of actions for the current chat in the conversation header. Keep this action label concise."
+            },
+            more: {
+                id: "chatgpt.conversation.header.control.more.label",
+                defaultMessage: "More",
+                description: "Accessible label for the icon-only overflow control in the active ChatGPT conversation header. It opens additional actions for the current chat. Sibling header controls include Share. Keep this single word concise and do not add punctuation. No placeholders."
+            }
+        });
+        var sx = n("dLcZ"),
+            sC = n("W5pg"),
+            sw = n("I7bK"),
+            s_ = n("QcW8"),
+            sI = n("yC2B");
+
+        function sS(e) {
+            let t, n, s, o, c, d, h, p, m, g = (0, r.c)(30),
+                {
+                    header: f,
+                    courseShortcut: v,
+                    progress: b
+                } = e,
+                {
+                    titleBarLeftInset: x,
+                    rightPanelAnimatedWidth: C,
+                    isContentFullWidth: w
+                } = (0, sw.g)(),
+                _ = (0, u.z)(s_.ab),
+                I = (0, u.z)(s_.cb),
+                S = (0, y.a)();
+            g[0] !== S.locale ? (t = (0, sI.a)(S.locale), g[0] = S.locale, g[1] = t) : t = g[1];
+            let j = t,
+                P = _?.mode === "split" && "left" === I != ("rtl" === j);
+            g[2] !== P || g[3] !== w ? (n = e => P && !w ? e : 0, g[2] = P, g[3] = w, g[4] = n) : n = g[4];
+            let E = (0, sC.a)(C, n);
+            g[5] !== E || g[6] !== x ? (s = [x, E], g[5] = E, g[6] = x, g[7] = s) : s = g[7];
+            let A = (0, sC.a)(s, sj);
+            g[8] !== A || g[9] !== E ? (o = {
+                "--learning-header-left-inset": A,
+                insetInlineStart: E
+            }, g[8] = A, g[9] = E, g[10] = o) : o = g[10];
+            let M = o,
+                k = null;
+            g[11] !== v ? (c = null == v ? null : (0, a.jsx)("div", {
+                className: "flex min-w-0 flex-1",
+                children: v
+            }), g[11] = v, g[12] = c) : c = g[12], g[13] !== k || g[14] !== c ? (d = (0, a.jsxs)("div", {
+                className: "flex w-full min-w-0 items-center gap-toolbar-action",
+                children: [k, c]
+            }), g[13] = k, g[14] = c, g[15] = d) : d = g[15];
+            let R = d;
+            if (null == b) return R;
+            if (_?.isVisible && "full" === _.mode) {
+                let e, t, n;
+                return g[16] !== v ? (e = null == v ? null : (0, a.jsx)("div", {
+                    className: "flex min-w-0 flex-1",
+                    children: v
+                }), g[16] = v, g[17] = e) : e = g[17], g[18] !== b ? (t = (0, a.jsx)("div", {
+                    className: "min-w-0 flex-1",
+                    children: b
+                }), g[18] = b, g[19] = t) : t = g[19], g[20] !== t || g[21] !== e ? (n = (0, a.jsx)(T.a.HeaderAction, {
+                    actionId: "sectioned-conversation-navigation",
+                    align: "center",
+                    children: (0, a.jsxs)("div", {
+                        className: "flex min-w-0 items-center gap-toolbar-action",
+                        children: [e, t]
+                    })
+                }), g[20] = t, g[21] = e, g[22] = n) : n = g[22], n
+            }
+            return g[23] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, i.b)("relative flex max-w-[min(var(--learning-progress-max-width),max(0px,calc(100cqw-2*(var(--app-shell-header-end-actions-width)+var(--spacing)*3))))] min-w-0 items-center", "[--learning-progress-max-width:var(--thread-content-max-width)]", "@max-thread-expanded/home-mode-toggle:[--learning-progress-max-width:var(--thread-content-compact-max-width,var(--thread-content-max-width))]"), g[23] = h) : h = g[23], g[24] !== R ? (p = (0, a.jsx)("div", {
+                className: "absolute inset-y-0 end-full me-toolbar-action flex w-[max(0px,calc((100cqw-100%)/2-var(--spacing-toolbar-action)-var(--spacing)*2-var(--learning-header-left-inset)))] min-w-0 items-center overflow-hidden",
+                "data-app-shell-header-obstacle": !0,
+                children: R
+            }), g[24] = R, g[25] = p) : p = g[25], g[26] !== b || g[27] !== M || g[28] !== p ? (m = (0, a.jsx)(T.a.HeaderAction, {
+                actionId: "sectioned-conversation-navigation",
+                align: "center",
+                children: (0, a.jsxs)(l.a.div, {
+                    className: h,
+                    style: M,
+                    children: [p, b]
+                })
+            }), g[26] = b, g[27] = M, g[28] = p, g[29] = m) : m = g[29], m
+        }
+
+        function sj(e) {
+            let [t, n] = e;
+            return `${Math.max(0,t-n)}px`
+        }
+        var sT = n("NVRI"),
+            sP = n("WLgA");
+
+        function sE(e) {
+            let t, n, s = (0, r.c)(9),
+                {
+                    icon: o,
+                    name: i,
+                    projectId: l,
+                    linkToProject: c
+                } = e;
+            s[0] !== o || s[1] !== c || s[2] !== i || s[3] !== l ? (t = c && null != i ? (0, a.jsx)(e$.b, {
+                "aria-label": i,
+                color: "ghostActive",
+                size: "toolbar",
+                to: (0, sP.c)(l),
+                uniform: !0,
+                children: o
+            }) : null, s[0] = o, s[1] = c, s[2] = i, s[3] = l, s[4] = t) : t = s[4];
+            let d = t,
+                u = d ?? o,
+                h = null != d;
+            return s[5] !== i || s[6] !== u || s[7] !== h ? (n = (0, a.jsx)(sT.b, {
+                project: {
+                    icon: u,
+                    iconInteractive: h,
+                    name: i
+                }
+            }), s[5] = i, s[6] = u, s[7] = h, s[8] = n) : n = s[8], n
+        }
+        var sA = n("Zt82"),
+            sM = n("ftSl"),
+            sk = n("u9Jt");
+
+        function sR(e) {
+            let t, n, s = (0, r.c)(18),
+                {
+                    conversationId: o,
+                    canRename: i,
+                    hasTitleMenu: l,
+                    project: c,
+                    title: d,
+                    titleValue: h
+                } = e,
+                p = (0, u.y)(G.a),
+                m = (0, y.a)();
+            if (l) {
+                let e, t, n, r = c?.name;
+                return s[0] !== m || s[1] !== r ? (e = (0, sA.a)(m, r), s[0] = m, s[1] = r, s[2] = e) : e = s[2], s[3] !== c ? (t = null == c ? null : (0, a.jsx)(au.a, {
+                    content: c.name,
+                    children: (0, a.jsx)("span", {
+                        children: c.icon
+                    })
+                }), s[3] = c, s[4] = t) : t = s[4], s[5] !== e || s[6] !== t || s[7] !== d ? (n = (0, a.jsx)(sk.a, {
+                    triggerButton: (0, a.jsx)(rZ.a, {
+                        "aria-description": e,
+                        title: d,
+                        icon: t
+                    })
+                }), s[5] = e, s[6] = t, s[7] = d, s[8] = n) : n = s[8], n
+            }
+            return s[9] !== i || s[10] !== o || s[11] !== m || s[12] !== p ? (t = i ? async e => {
+                try {
+                    await (0, r6.renameActiveChatGptConversation)(p, o, e)
+                } catch (e) {
+                    throw p.get(et.f).danger(m.formatMessage({
+                        id: "chatgptConversations.header.renameFailed",
+                        defaultMessage: "Couldn't rename this chat. Try again.",
+                        description: "Error shown when saving an edited chat title fails"
+                    }), {
+                        errorAnalytics: {
+                            toastId: "chatgptConversations.header.renameFailed"
+                        }
+                    }), e
+                }
+            }: void 0, s[9] = i, s[10] = o, s[11] = m, s[12] = p, s[13] = t) : t = s[13], s[14] !== t || s[15] !== d || s[16] !== h ? (n = (0, a.jsx)(sM.a, {
+                className: "max-w-full",
+                variant: "flush-start",
+                title: d,
+                titleValue: h,
+                onRename: t
+            }), s[14] = t, s[15] = d, s[16] = h, s[17] = n) : n = s[17], n
+        }
+        let sN = (0, u.c)(G.a, e => {
+            let {
+                get: t
+            } = e, n = t(s_.ab);
+            return !(n?.isVisible && "full" === n.mode)
+        });
+        var sO = n("X0li");
+        let sF = (0, e0.a)(sO.d),
+            sG = (0, e0.a)(async () => (await n.e(328371).then(n.bind(n, "uPMT"))).SectionHistory),
+            sz = (0, e0.a)(async () => (await n.e(270015).then(n.bind(n, "r5vN"))).SectionNavigation);
+        var sB = n("lX86"),
+            sD = n("gCr7");
+        n("i1of");
+        var sL = n("a4V1"),
+            sW = n("alJ6"),
+            sH = n("u9iS"),
+            sq = n("KidQ");
+        let sK = {
+            addInitialContentToHistory: !0,
+            enableCodeBlocks: !1,
+            enableSelectedTextLinks: !1,
+            enableFileMentions: !0,
+            enableSkillMentions: !1,
+            enableSlashCommands: {
+                triggers: ["/"]
+            }
+        };
+
+        function sU(e) {
+            let t, n, s, o, i, l = (0, r.c)(15),
+                {
+                    children: c,
+                    draftKey: d,
+                    enableInlineSystemHints: h
+                } = e,
+                p = (0, u.y)(ea.a),
+                m = (0, f.useContext)(tl.a),
+                g = h ? "chatgpt" : void 0;
+            return l[0] !== h || l[1] !== g ? (t = {
+                enableInlineSystemHints: h,
+                variant: g
+            }, l[0] = h, l[1] = g, l[2] = t) : t = l[2], l[3] !== d || l[4] !== p ? (n = () => ({
+                defaultText: p.get(e6.s, d),
+                defaultTextKind: "prompt"
+            }), l[3] = d, l[4] = p, l[5] = n) : n = l[5], l[6] !== m ? (s = () => {
+                let e = m?.input.current ?? document.querySelector("#pending-conversation-input");
+                return null == e || null == m ? null : {
+                    element: e,
+                    locationKey: m.locationKey
+                }
+            }, l[6] = m, l[7] = s) : s = l[7], l[8] !== c ? (o = e => null == e ? null : c(e), l[8] = c, l[9] = o) : o = l[9], l[10] !== t || l[11] !== n || l[12] !== s || l[13] !== o ? (i = (0, a.jsx)(sq.a, {
+                controllerOptions: sK,
+                initialSuggestionOptions: t,
+                getInitialContent: n,
+                getInitialInput: s,
+                children: o
+            }), l[10] = t, l[11] = n, l[12] = s, l[13] = o, l[14] = i) : i = l[14], i
+        }
+        var sV = n("ygKd"),
+            sQ = n("KSir"),
+            s$ = n("fNPc"),
+            sY = n("vVgo");
+        let sX = (0, e0.a)(async () => (await n.e(777791).then(n.bind(n, "DGJb"))).CourseHeaderShortcut);
+
+        function sJ(e) {
+            let t, n = (0, r.c)(3),
+                {
+                    conversationId: s
+                } = e,
+                o = (0, er.h)("4035922817");
+            return n[0] !== s || n[1] !== o ? (t = o ? (0, a.jsx)(a.Fragment, {
+                children: (0, a.jsx)(sX, {
+                    conversationId: s
+                })
+            }) : null, n[0] = s, n[1] = o, n[2] = t) : t = n[2], t
+        }
+        var sZ = n("T33u"),
+            s0 = n("QPeR"),
+            s1 = n("MgyE"),
+            s2 = n("gyrn"),
+            s3 = n("wnpN"),
+            s4 = n("rcFj"),
+            s5 = n("M3Kf");
+
+        function s6(e) {
+            let t, n, s, i, l, c, d = (0, r.c)(21),
+                {
+                    conversationId: h
+                } = e,
+                p = (0, u.y)(ea.a),
+                m = (0, u.x)(F.j, h),
+                g = (0, u.z)(eN.b),
+                {
+                    search: f
+                } = (0, x.Y)();
+            if (d[0] !== f) {
+                let e = new URLSearchParams(f);
+                t = e.get("messageId") ?? e.get("message"), n = e.has("selectedTextQuery"), d[0] = f, d[1] = t, d[2] = n
+            } else t = d[1], n = d[2];
+            let v = n;
+            d[3] !== v || d[4] !== t || d[5] !== m ? (s = ["chatgpt-message-target", m, t, v], d[3] = v, d[4] = t, d[5] = m, d[6] = s) : s = d[6];
+            let y = null != m && null != t && g > 0,
+                C = v ? 0 : 1 / 0;
+            d[7] !== h || d[8] !== v || d[9] !== t || d[10] !== p || d[11] !== m ? (i = async e => {
+                let {
+                    signal: n
+                } = e;
+                if (null != m) {
+                    if (null != t && v) {
+                        let e = p.get(F.M, h),
+                            n = e?.[t] ?? (null == e ? void 0 : Object.values(e).find(e => e.message?.id === t));
+                        if (n?.message != null) return !0
+                    }
+                    await (0, eR.a)(p, m, n)
+                }
+                return !0
+            }, d[7] = h, d[8] = v, d[9] = t, d[10] = p, d[11] = m, d[12] = i) : i = d[12], d[13] !== s || d[14] !== y || d[15] !== C || d[16] !== i ? (l = {
+                queryKey: s,
+                enabled: y,
+                staleTime: C,
+                retry: !1,
+                queryFn: i
+            }, d[13] = s, d[14] = y, d[15] = C, d[16] = i, d[17] = l) : l = d[17];
+            let {
+                isError: w,
+                refetch: _
+            } = (0, o.a)(l);
+            return d[18] !== w || d[19] !== _ ? (c = w ? (0, a.jsx)(e$.a, {
+                color: "secondary",
+                onClick: () => void _(),
+                children: (0, a.jsx)(b.a, {
+                    id: "chatgpt.pagination.retryMessage",
+                    defaultMessage: "Retry loading this message",
+                    description: "Button to retry loading the full conversation for a link to an older message"
+                })
+            }) : null, d[18] = w, d[19] = _, d[20] = c) : c = d[20], c
+        }
+        var s7 = n("ckwE");
+
+        function s8(e) {
+            let t, n = (0, r.c)(3),
+                {
+                    children: s
+                } = e,
+                [o] = (0, f.useState)(s9);
+            return n[0] !== o || n[1] !== s ? (t = (0, a.jsx)(eO.a, {
+                value: o,
+                children: s
+            }), n[0] = o, n[1] = s, n[2] = t) : t = n[2], t
+        }
+
+        function s9() {
+            let e = null,
+                t = new Set,
+                n = n => {
+                    for (let a of (e = n, t)) a()
+                };
+            return {
+                getSnapshot: () => e,
+                register: t => (n(t), () => {
+                    e === t && n(null)
+                }),
+                subscribe: e => (t.add(e), () => {
+                    t.delete(e)
+                })
+            }
+        }
+
+        function oe(e) {
+            let t, n = (0, r.c)(2),
+                {
+                    children: s
+                } = e;
+            return n[0] !== s ? (t = (0, a.jsx)(s7.a, {
+                children: (0, a.jsx)(s8, {
+                    children: s
+                })
+            }), n[0] = s, n[1] = t) : t = n[1], t
+        }
+        var ot = n("TmaW"),
+            on = n("MDmT"),
+            oa = n("b6fw"),
+            or = n("K45w"),
+            os = n("jCHb"),
+            oo = n("V8uZ");
+
+        function oi(e) {
+            let t = e.querySelector("[data-dil-message-id]") ?? e;
+            return t.checkVisibility() && null == t.querySelector("[data-dil-render-failed]") && t.innerText.trim().length > 0
+        }
+        n("CSxw");
+        var ol = n("NqfB"),
+            oc = n("JEFL"),
+            od = n("moBM");
+        let ou = '[data-markdown-text-style="assistant-message"]',
+            oh = (0, u.d)(ea.a, (e, t) => {
+                let {
+                    conversationId: n,
+                    messageId: a
+                } = e, {
+                    get: r
+                } = t;
+                return null == a ? null : r(F.M, n)?.[a]?.message ?? null
+            });
+
+        function op(e) {
+            let t, n, s = (0, r.c)(5),
+                o = `[data-chatgpt-conversation-selection-target="${e.conversationId}"]`;
+            return s[0] !== e ? (t = t => (0, a.jsx)(om, {
+                ...e,
+                selection: t
+            }), s[0] = e, s[1] = t) : t = s[1], s[2] !== o || s[3] !== t ? (n = (0, a.jsx)(ol.a, {
+                align: "start",
+                targetSelector: o,
+                children: t
+            }), s[2] = o, s[3] = t, s[4] = n) : n = s[4], n
+        }
+
+        function om(e) {
+            let t, s, o, i, l, c, d, h = (0, r.c)(30),
+                {
+                    conversationId: p,
+                    moreDetailsEnabled: m,
+                    onAddSelectedText: g,
+                    selection: f
+                } = e,
+                v = (0, u.y)(G.a),
+                b = (0, y.a)(),
+                x = (0, er.h)("4290238484"),
+                C = (0, er.h)("473637331"),
+                w = (0, u.z)(od.a),
+                _ = (0, u.x)(F.y, p);
+            h[0] !== _ || h[1] !== w || h[2] !== v ? (t = w && "tpp" === _ && "chatgpt-thread" === v.value.routeKind && null == v.value.workSideChat && !0, h[0] = _, h[1] = w, h[2] = v, h[3] = t) : t = h[3];
+            let I = t;
+            h[4] !== p || h[5] !== f.selectionRange ? (s = function(e) {
+                let {
+                    conversationId: t,
+                    range: n
+                } = e, a = n.startContainer instanceof Element ? n.startContainer : n.startContainer.parentElement, r = n.endContainer instanceof Element ? n.endContainer : n.endContainer.parentElement, s = a?.closest(ou);
+                if (n.collapsed || null == s || !s.isConnected || s !== r?.closest(ou)) return null;
+                let o = s.parentElement,
+                    i = o?.getAttribute("data-chatgpt-selection-message-id");
+                return !i || o?.getAttribute("data-chatgpt-selection-conversation-id") !== t || [...s.querySelectorAll('[data-writing-block-variant], [data-conversation-component="learning"], [contenteditable="true"], [data-markdown-copy="exclude"]')].some(e => n.intersectsNode(e)) ? null : {
+                    markdownElement: s,
+                    messageId: i
+                }
+            }({
+                conversationId: p,
+                range: f.selectionRange
+            }), h[4] = p, h[5] = f.selectionRange, h[6] = s) : s = h[6];
+            let S = s,
+                j = S?.messageId ?? null;
+            h[7] !== p || h[8] !== j ? (o = {
+                conversationId: p,
+                messageId: j
+            }, h[7] = p, h[8] = j, h[9] = o) : o = h[9];
+            let T = (0, u.x)(oh, o),
+                P = (0, u.x)(F.j, p),
+                E = x && m && null != P && null != S && T?.author.role === "assistant";
+            return h[10] !== I || h[11] !== v ? (i = I ? e => {
+                n.e(971224).then(n.bind(n, "f8of")).then(t => {
+                    let {
+                        createAndOpenWorkSideChat: n
+                    } = t;
+                    return n(v, {
+                        target: "right",
+                        selectedText: e
+                    })
+                })
+            } : void 0, h[10] = I, h[11] = v, h[12] = i) : i = h[12], h[13] !== E || h[14] !== C || h[15] !== g || h[16] !== f.selectionRange || h[17] !== S ? (l = !E || C ? e => {
+                g(e, S?.messageId, null == S ? void 0 : function(e, t, n) {
+                    let a = 0;
+                    for (let r of n1(e, n.trim())) {
+                        if (0 >= t.compareBoundaryPoints(Range.START_TO_START, r)) break;
+                        a++
+                    }
+                    return a
+                }(S.markdownElement, f.selectionRange, e))
+            } : void 0, h[13] = E, h[14] = C, h[15] = g, h[16] = f.selectionRange, h[17] = S, h[18] = l) : l = h[18], h[19] !== E || h[20] !== p || h[21] !== b || h[22] !== v || h[23] !== S ? (c = E ? e => {
+                Promise.all([n.e(753405), n.e(321957), n.e(585419), n.e(877700), n.e(353230), n.e(81461), n.e(882456), n.e(145049), n.e(744644), n.e(909395), n.e(212487), n.e(17983), n.e(167649), n.e(509282), n.e(523433), n.e(37774), n.e(282285)]).then(n.bind(n, "zRlR")).then(t => {
+                    let {
+                        openChatGptEntitySidePanel: n
+                    } = t;
+                    return n(v, {
+                        askSidebarParams: {
+                            query: e
+                        },
+                        category: "ask_sidebar",
+                        contentReferenceStartIndex: 0,
+                        extraParams: null,
+                        locale: b.locale,
+                        messageId: S.messageId,
+                        query: b.formatMessage({
+                            id: "chatgpt.selection.moreDetailsTitle",
+                            defaultMessage: "More details",
+                            description: "Title of the side panel explaining selected text from an assistant response"
+                        }),
+                        shouldBlockExternalEgress: v.get(ew.d, p),
+                        sourceConversationId: p
+                    })
+                })
+            } : void 0, h[19] = E, h[20] = p, h[21] = b, h[22] = v, h[23] = S, h[24] = c) : c = h[24], h[25] !== f.selectedText || h[26] !== i || h[27] !== l || h[28] !== c ? (d = (0, a.jsx)(oc.a, {
+                conversationTerminology: "chat",
+                selectedText: f.selectedText,
+                onOpenSideChat: i,
+                onAddSelectedText: l,
+                onMoreDetails: c
+            }), h[25] = f.selectedText, h[26] = i, h[27] = l, h[28] = c, h[29] = d) : d = h[29], d
+        }
+        var og = n("Fjze");
+
+        function of(e) {
+            let t, n, a, s = (0, r.c)(7),
+                {
+                    sharedConversationId: o
+                } = e,
+                i = (0, u.y)(ea.a),
+                l = null != o;
+            s[0] !== i || s[1] !== o ? (t = () => {
+                null != o && (r5.Request.safePost("/received-shares/open", {
+                    requestBody: {
+                        share_kind: "conversation",
+                        share_id: o
+                    }
+                }).then(() => i.queryClient.invalidateQueries({
+                    queryKey: ["opened-shared-links"]
+                })).catch(ov), (0, el.a)(i, og.a, {
+                    sharedConversationId: o
+                }))
+            }, s[0] = i, s[1] = o, s[2] = t) : t = s[2];
+            let c = (0, f.useEffectEvent)(t);
+            return s[3] !== c ? (n = () => {
+                c()
+            }, s[3] = c, s[4] = n) : n = s[4], s[5] !== l ? (a = [l], s[5] = l, s[6] = a) : a = s[6], (0, f.useEffect)(n, a), null
+        }
+
+        function ov() {}
+        var oy = n("GigQ"),
+            ob = n("JKdL"),
+            ox = n("d107"),
+            oC = n("HOLv"),
+            ow = n("FGv0"),
+            o_ = n("r9i9"),
+            oI = n("tdfh"),
+            oS = n("SEBt"),
+            oj = n("uQqo"),
+            oT = n("yi1v"),
+            oP = n("hMfc");
+
+        function oE(e) {
+            let t, s, o, i, l, c = (0, r.c)(12),
+                {
+                    data: d
+                } = e,
+                h = (0, u.y)(ea.a),
+                p = (0, y.a)();
+            c[0] !== p ? (t = p.formatMessage(am.a.headerShare), c[0] = p, c[1] = t) : t = c[1];
+            let m = t,
+                [g, v] = (0, f.useState)(!1);
+            return c[2] !== d || c[3] !== g || c[4] !== h ? (s = () => {
+                g || (v(!0), (async function(e, t) {
+                    let a = t.sharedPost,
+                        [r, ...s] = a?.attachments[0]?.kind === "media_generation" ? (0, oj.a)(a, (0, oj.b)(a)) : [],
+                        o = crypto.randomUUID();
+                    (0, oS.b)(e, {
+                        attachmentType: t.attachmentType,
+                        contentType: t.contentType,
+                        shareId: t.shareId,
+                        shareSessionId: o
+                    });
+                    let i = t.dialogProps.receiverShareLink;
+                    if ((0, oT.a)() && null != i && ("conversation" === i.contentType || "CHATGPT_SHARE_FLOW_ATTACHMENT_TYPE_MESSAGE_SLICE" === t.attachmentType)) {
+                        if ("unsupported" !== await (0, oT.b)(e, {
+                                url: i.shareLinkUrl,
+                                title: t.dialogProps.title ?? void 0
+                            }, {
+                                actor: "CHATGPT_SHARE_FLOW_ACTOR_RECEIVER",
+                                attachmentType: t.attachmentType,
+                                contentType: t.contentType,
+                                shareId: t.shareId,
+                                shareSessionId: o,
+                                source: "CHATGPT_SHARE_FLOW_SOURCE_RECEIVER_HEADER"
+                            })) return;
+                        if ("conversation" === i.contentType) return void(0, r4.f)(e, oI.a, {
+                            ...t.dialogProps,
+                            shareSessionId: o
+                        })
+                    }
+                    if (i?.contentType === "conversation") {
+                        let a = (0, oS.a)(e, {
+                                actor: "CHATGPT_SHARE_FLOW_ACTOR_RECEIVER",
+                                shareId: t.shareId,
+                                shareSessionId: o,
+                                source: "CHATGPT_SHARE_FLOW_SOURCE_RECEIVER_HEADER",
+                                usedExistingLink: !0,
+                                omitSheetType: !0
+                            }),
+                            r = await (0, ow.a)(Promise.resolve(i.shareLinkUrl));
+                        if (a({
+                                result: r ? "link-copied" : "copy-failed",
+                                shareId: t.shareId
+                            }), r) {
+                            let {
+                                showConversationShareCopiedToast: t
+                            } = await n.e(555532).then(n.bind(n, "euaP"));
+                            t(e, null, !0 === i.isWorkspaceOnly)
+                        } else(0, r4.f)(e, oI.a, {
+                            ...t.dialogProps,
+                            previewTurns: (0, o_.j)(t.conversation, t.conversation.current_node ?? t.dialogProps.currentNodeId, 1 / 0),
+                            recoveryShareLink: i,
+                            shareSessionId: o
+                        });
+                        return
+                    }(0, r4.f)(e, oI.a, {
+                        ...t.dialogProps,
+                        image: r?.src == null ? void 0 : {
+                            alt: t.dialogProps.title ?? "",
+                            item: r,
+                            previewSrc: r.src,
+                            additionalPublishedPreviewUrls: s.flatMap(e => null == e.src ? [] : [e.src])
+                        },
+                        previewTurns: null != r ? void 0 : (0, o_.j)(t.conversation, t.conversation.current_node ?? t.dialogProps.currentNodeId, 1 / 0),
+                        privacyNotices: (0, o_.k)({
+                            conversation: t.conversation,
+                            projectId: null
+                        }),
+                        shareSessionId: o
+                    })
+                })(h, d).finally(() => v(!1)))
+            }, c[2] = d, c[3] = g, c[4] = h, c[5] = s) : s = c[5], c[6] === Symbol.for("react.memo_cache_sentinel") ? (o = (0, a.jsx)(oC.a, {
+                asset: oP.a
+            }), i = (0, a.jsx)(b.a, {
+                ...am.a.headerShare
+            }), c[6] = o, c[7] = i) : (o = c[6], i = c[7]), c[8] !== g || c[9] !== m || c[10] !== s ? (l = (0, a.jsxs)(e$.a, {
+                "aria-label": m,
+                color: "ghostActive",
+                loading: g,
+                size: "toolbar",
+                onClick: s,
+                children: [o, i]
+            }), c[8] = g, c[9] = m, c[10] = s, c[11] = l) : l = c[11], l
+        }
+        var oA = n("JUxu");
+        let oM = (0, f.lazy)(async () => ({
+            default: (await Promise.resolve().then(n.bind(n, "taaw"))).CodexThreadReportDialog
+        }));
+
+        function ok(e) {
+            let t, n, s, o, i = (0, r.c)(11),
+                {
+                    sharedConversationId: l
+                } = e,
+                c = (0, u.y)(ea.a),
+                d = (0, u.x)(e_.f, (0, f.useContext)(M.a));
+            if (null != d) {
+                let e, t;
+                return i[0] !== d ? (e = (0, e_.b)(d), i[0] = d, i[1] = e) : e = i[1], i[2] !== e ? (t = (0, a.jsx)(oA.a, {
+                    imageOnly: e
+                }), i[2] = e, i[3] = t) : t = i[3], t
+            }
+            return i[4] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)("div", {
+                className: "text-secondary",
+                children: (0, a.jsx)(b.a, {
+                    id: "chatgptConversations.sharedConversation.copyDisclaimer",
+                    defaultMessage: "This is a copy of a shared ChatGPT chat. It won't be added to memory.",
+                    description: "Informational notice above a shared ChatGPT chat explaining that the copy will not be added to the viewer's memory"
+                })
+            }), i[4] = t) : t = i[4], i[5] !== c || i[6] !== l ? (n = e => {
+                if (null == l) return;
+                let t = e.currentTarget;
+                (0, r4.f)(c, oM, {
+                    reportEntityType: "share_link",
+                    threadId: l,
+                    onCloseAutoFocus: e => {
+                        e.preventDefault();
+                        let n = t.ownerDocument.activeElement;
+                        t.isConnected && (n === t.ownerDocument.body || e.target instanceof HTMLElement && e.target.contains(n)) && t.focus({
+                            preventScroll: !0
+                        })
+                    }
+                }), (0, oS.c)(c, l)
+            }, i[5] = c, i[6] = l, i[7] = n) : n = i[7], i[8] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, a.jsx)(b.a, {
+                id: "chatgptConversations.sharedConversation.reportButton",
+                defaultMessage: "Report conversation",
+                description: "Button above a shared ChatGPT conversation in Codex Desktop that opens ChatGPT's report modal for reporting another person's shared conversation"
+            }), i[8] = s) : s = i[8], i[9] !== n ? (o = (0, a.jsxs)("div", {
+                className: "flex flex-col items-center gap-1 text-center text-xs select-none",
+                children: [t, (0, a.jsx)(e$.a, {
+                    className: "font-semibold",
+                    color: "ghostActive",
+                    onClick: n,
+                    children: s
+                })]
+            }), i[9] = n, i[10] = o) : o = i[10], o
+        }
+        var oR = n("zbjM"),
+            oN = n("MVHH"),
+            oO = n("xSOA"),
+            oF = n("rhKI"),
+            oG = n("PP3M"),
+            oz = n("jAnS"),
+            oB = n("CFOe"),
+            oD = n("JNtf"),
+            oL = n("mUDD");
+
+        function oW(e) {
+            let t, n, s, o, i, l, c, d, u, h, p, m, g, f = (0, r.c)(31),
+                {
+                    canSave: v,
+                    isPending: y,
+                    onCancel: x,
+                    onClose: C,
+                    onSave: w
+                } = e;
+            f[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(b.a, {
+                id: "chatgptConversations.temporaryChat.save.close",
+                defaultMessage: "Close",
+                description: "Accessible label for the close button in the temporary chat save confirmation dialog."
+            }), f[0] = t) : t = f[0], f[1] !== y || f[2] !== C ? (n = e => {
+                e || y || C()
+            }, f[1] = y, f[2] = C, f[3] = n) : n = f[3];
+            let _ = !y;
+            f[4] !== v || f[5] !== w ? (s = e => {
+                e.preventDefault(), v && w()
+            }, f[4] = v, f[5] = w, f[6] = s) : s = f[6], f[7] === Symbol.for("react.memo_cache_sentinel") ? (o = (0, a.jsx)(oD.d, {
+                children: (0, a.jsx)(b.a, {
+                    id: "chatgptConversations.temporaryChat.save.title",
+                    defaultMessage: "Save chat?",
+                    description: "Title of the confirmation dialog for converting a temporary ChatGPT conversation into a regular saved chat."
+                })
+            }), f[7] = o) : o = f[7], f[8] === Symbol.for("react.memo_cache_sentinel") ? (i = (0, a.jsx)(oL.e, {
+                children: (0, a.jsx)(oL.d, {
+                    className: "select-none",
+                    title: o,
+                    subtitle: (0, a.jsx)(oD.c, {
+                        children: (0, a.jsx)(b.a, {
+                            id: "chatgptConversations.temporaryChat.save.description.regularChatSettings",
+                            defaultMessage: "This chat will now be included in your history. It will follow your memory and model training settings used for regular chats.",
+                            description: "Body of the confirmation dialog shown when a user saves a temporary ChatGPT conversation. Explains before they confirm that the chat will appear in history and follow the memory and model training settings already configured for regular chats."
+                        })
+                    })
+                })
+            }), f[8] = i) : i = f[8], f[9] !== x || f[10] !== C ? (l = () => {
+                x?.(), C()
+            }, f[9] = x, f[10] = C, f[11] = l) : l = f[11], f[12] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, a.jsx)(b.a, {
+                id: "chatgptConversations.temporaryChat.save.cancel",
+                defaultMessage: "Cancel",
+                description: "Secondary button that closes the save confirmation dialog and leaves the ChatGPT conversation temporary."
+            }), f[12] = c) : c = f[12], f[13] !== y || f[14] !== l ? (d = (0, a.jsx)(e$.a, {
+                color: "secondary",
+                disabled: y,
+                onClick: l,
+                children: c
+            }), f[13] = y, f[14] = l, f[15] = d) : d = f[15];
+            let I = !v;
+            return f[16] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, a.jsx)(b.a, {
+                id: "chatgptConversations.temporaryChat.save.confirm",
+                defaultMessage: "Save",
+                description: "Primary button that saves a temporary ChatGPT conversation to regular chat history."
+            }), f[16] = u) : u = f[16], f[17] !== y || f[18] !== I ? (h = (0, a.jsx)(e$.a, {
+                color: "primary",
+                disabled: I,
+                loading: y,
+                type: "submit",
+                children: u
+            }), f[17] = y, f[18] = I, f[19] = h) : h = f[19], f[20] !== h || f[21] !== d ? (p = (0, a.jsx)(oL.e, {
+                children: (0, a.jsxs)(oL.c, {
+                    children: [d, h]
+                })
+            }), f[20] = h, f[21] = d, f[22] = p) : p = f[22], f[23] !== p || f[24] !== s ? (m = (0, a.jsxs)(oL.b, {
+                as: "form",
+                onSubmit: s,
+                children: [i, p]
+            }), f[23] = p, f[24] = s, f[25] = m) : m = f[25], f[26] !== y || f[27] !== m || f[28] !== n || f[29] !== _ ? (g = (0, a.jsx)(oD.a, {
+                open: !0,
+                dialogCloseLabel: t,
+                onOpenChange: n,
+                shouldIgnoreClickOutside: y,
+                showDialogClose: _,
+                size: "narrow",
+                children: m
+            }), f[26] = y, f[27] = m, f[28] = n, f[29] = _, f[30] = g) : g = f[30], g
+        }
+
+        function oH(e) {
+            (0, n9.e)(e).catch(() => {
+                nS.a.warning("Failed to acknowledge temporary chat save coachmark")
+            })
+        }
+
+        function oq(e) {
+            let t, n = (0, r.c)(2),
+                {
+                    conversationId: s
+                } = e;
+            return n[0] !== s ? (t = (0, a.jsxs)(a.Fragment, {
+                children: [null, (0, a.jsx)(a.Fragment, {
+                    children: (0, a.jsx)(oK, {
+                        conversationId: s
+                    })
+                })]
+            }), n[0] = s, n[1] = t) : t = n[1], t
+        }
+
+        function oK(e) {
+            let t, n = (0, r.c)(2),
+                {
+                    conversationId: s
+                } = e;
+            return (0, u.z)(oG.e) ? (n[0] !== s ? (t = (0, a.jsx)(oU, {
+                conversationId: s
+            }), n[0] = s, n[1] = t) : t = n[1], t) : null
+        }
+
+        function oU(e) {
+            let t, n, s, o, i, l, c, d, h, p, m, g, v, C = (0, r.c)(49),
+                {
+                    conversationId: w
+                } = e,
+                _ = (0, u.y)(ea.a),
+                I = (0, y.a)(),
+                S = (0, x._)(),
+                [j, T] = (0, f.useState)(!1),
+                [P, E] = (0, f.useState)(!1),
+                [A, M] = (0, f.useState)(!1),
+                [k, R] = (0, f.useState)(!1),
+                N = (0, f.useRef)(!1),
+                O = (0, u.z)(r9.p).data,
+                G = (0, u.x)(F.j, w),
+                z = (0, u.x)(F.X, w),
+                B = (0, u.x)(F.I, w),
+                D = (0, u.x)(e6.i, w);
+            C[0] !== w || C[1] !== _ ? (t = {
+                mutationFn: e => {
+                    let {
+                        sourceConversationId: t,
+                        selectedLeafId: n
+                    } = e;
+                    if (_.get(F.I, w) || _.get(e6.i, w) || t !== _.get(F.j, w) || n !== _.get(F.X, w)) throw Error("Cannot save an unavailable temporary chat message");
+                    return r5.Request.safePost("/conversation/{conversation_id}/save", {
+                        parameters: {
+                            path: {
+                                conversation_id: t
+                            }
+                        },
+                        requestBody: {
+                            selected_leaf_id: n
+                        },
+                        isExpectedError: oX
+                    }).then(oY)
+                },
+                retry: o$
+            }, C[0] = w, C[1] = _, C[2] = t) : t = C[2];
+            let {
+                mutateAsync: L,
+                isPending: W
+            } = (0, oO.a)(t), H = null != G && null != z && !B && !D && !W && !P;
+            C[3] !== I ? (n = I.formatMessage({
+                id: "chatgptConversations.temporaryChat.save.button",
+                defaultMessage: "Save chat",
+                description: "Tooltip and accessible label for the bookmark button in a temporary ChatGPT conversation. Opens a confirmation dialog to save it to regular history."
+            }), C[3] = I, C[4] = n) : n = C[4];
+            let q = n;
+            C[5] !== O?.eligibleAnnouncements ? (s = O?.eligibleAnnouncements?.includes(r9.h), C[5] = O?.eligibleAnnouncements, C[6] = s) : s = C[6];
+            let K = !0 === s,
+                U = !k && (A || K && H);
+            C[7] !== w || C[8] !== A || C[9] !== _ || C[10] !== U ? (o = () => {
+                if (!U || A || N.current) return;
+                let e = !1;
+                return queueMicrotask(() => {
+                    e || N.current || (N.current = !0, (0, el.a)(_, oN.Ab, {
+                        personalizationMode: (0, oF.a)((0, oG.k)(_, w))
+                    }), M(!0), oH(_))
+                }), () => {
+                    e = !0
+                }
+            }, i = [w, A, _, U], C[7] = w, C[8] = A, C[9] = _, C[10] = U, C[11] = o, C[12] = i) : (o = C[11], i = C[12]), (0, f.useEffect)(o, i), C[13] !== _ ? (l = () => {
+                R(!0), N.current || (N.current = !0, oH(_))
+            }, C[13] = _, C[14] = l) : l = C[14];
+            let V = l;
+            C[15] !== H || C[16] !== w || C[17] !== I || C[18] !== S || C[19] !== L || C[20] !== _ || C[21] !== z || C[22] !== G ? (c = async function() {
+                let e;
+                if (!H || null == G || null == z) return;
+                let t = (0, oF.a)((0, oG.k)(_, w));
+                (0, el.a)(_, oN.Bb, {
+                    personalizationMode: t
+                });
+                try {
+                    e = (await L({
+                        sourceConversationId: G,
+                        selectedLeafId: z
+                    })).conversation_id
+                } catch (e) {
+                    (0, el.a)(_, oN.Cb, {
+                        personalizationMode: t,
+                        failureCategory: (0, oF.b)(e)
+                    }), _.get(et.f).danger(I.formatMessage({
+                        id: "chatgptConversations.temporaryChat.save.error",
+                        defaultMessage: "Couldn't save this chat. Please try again.",
+                        description: "Error toast after saving a temporary ChatGPT conversation fails. The chat remains temporary and the user can retry."
+                    }), {
+                        errorAnalytics: {
+                            toastId: "chatgptConversations.temporaryChat.save.error"
+                        }
+                    });
+                    return
+                }
+                E(!0), T(!1), (0, ss.H)(_), (0, ss.K)(_, G, "remove"), (0, ss.K)(_, e, "refresh"), S((0, oz.c)(e), {
+                    replace: !0
+                }), _.get(et.f).success(I.formatMessage({
+                    id: "chatgptConversations.temporaryChat.save.success",
+                    defaultMessage: "Chat saved. It will now appear in your chat history.",
+                    description: "Success toast confirming that a formerly temporary ChatGPT conversation is now saved in regular history."
+                })), r5.Request.safePost("/conversation/gen_title/{conversation_id}", {
+                    parameters: {
+                        path: {
+                            conversation_id: e
+                        }
+                    },
+                    requestBody: {
+                        message_id: z
+                    }
+                }).then(oQ).then(t => {
+                    (0, F.ac)({
+                        scope: _,
+                        conversationId: e,
+                        title: t
+                    }), _.query.setData(n9.chatGptConversationQueryById$, e, e => null == e ? e : {
+                        ...e,
+                        title: t
+                    }), (0, ss.H)(_), (0, ss.K)(_, e, "refresh")
+                }).catch(oV)
+            }, C[15] = H, C[16] = w, C[17] = I, C[18] = S, C[19] = L, C[20] = _, C[21] = z, C[22] = G, C[23] = c) : c = C[23];
+            let Q = c,
+                $ = !H;
+            C[24] !== w || C[25] !== _ || C[26] !== U ? (d = () => {
+                (0, el.a)(_, oN.Eb, {
+                    personalizationMode: (0, oF.a)((0, oG.k)(_, w)),
+                    coachMarkVisible: U
+                }), T(!0)
+            }, C[24] = w, C[25] = _, C[26] = U, C[27] = d) : d = C[27], C[28] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, a.jsx)(tb.b, {
+                icon: {
+                    16: ah.qb,
+                    20: ah.rb
+                }
+            }), C[28] = h) : h = C[28], C[29] !== q || C[30] !== $ || C[31] !== d ? (p = (0, a.jsx)(e$.a, {
+                "aria-label": q,
+                color: "toolbar",
+                disabled: $,
+                size: "toolbar",
+                uniform: !0,
+                onClick: d,
+                children: h
+            }), C[29] = q, C[30] = $, C[31] = d, C[32] = p) : p = C[32];
+            let Y = p;
+            return C[33] !== V || C[34] !== I || C[35] !== q || C[36] !== Y || C[37] !== U ? (m = U ? (0, a.jsx)(oB.a, {
+                align: "end",
+                description: (0, a.jsx)(b.a, {
+                    id: "chatgptConversations.temporaryChat.save.coachmark.description",
+                    defaultMessage: "Want to keep this chat? You can now save it to your history.",
+                    description: "Body of a one-time onboarding coachmark anchored to the Save chat button after a user creates an eligible temporary chat."
+                }),
+                dismissLabel: I.formatMessage({
+                    id: "chatgptConversations.temporaryChat.save.coachmark.dismiss",
+                    defaultMessage: "Close tooltip",
+                    description: "Accessible label for dismissing the temporary chat save coachmark."
+                }),
+                onDismiss: V,
+                open: !0,
+                side: "bottom",
+                sideOffset: 10,
+                title: (0, a.jsx)(b.a, {
+                    id: "chatgptConversations.temporaryChat.save.button",
+                    defaultMessage: "Save chat",
+                    description: "Title of a one-time onboarding coachmark anchored to the Save chat button in a temporary ChatGPT conversation."
+                }),
+                tooltipClassName: "w-60",
+                children: Y
+            }) : (0, a.jsx)(au.a, {
+                content: q,
+                children: Y
+            }), C[33] = V, C[34] = I, C[35] = q, C[36] = Y, C[37] = U, C[38] = m) : m = C[38], C[39] !== H || C[40] !== w || C[41] !== Q || C[42] !== j || C[43] !== W || C[44] !== _ ? (g = j ? (0, a.jsx)(oW, {
+                canSave: H,
+                isPending: W,
+                onCancel: () => {
+                    (0, el.a)(_, oN.zb, {
+                        personalizationMode: (0, oF.a)((0, oG.k)(_, w))
+                    })
+                },
+                onClose: () => T(!1),
+                onSave: () => void Q()
+            }) : null, C[39] = H, C[40] = w, C[41] = Q, C[42] = j, C[43] = W, C[44] = _, C[45] = g) : g = C[45], C[46] !== m || C[47] !== g ? (v = (0, a.jsxs)(a.Fragment, {
+                children: [m, g]
+            }), C[46] = m, C[47] = g, C[48] = v) : v = C[48], v
+        }
+
+        function oV() {}
+
+        function oQ(e) {
+            return nL.object({
+                title: nL.string()
+            }).parse(e).title
+        }
+
+        function o$(e, t) {
+            return e < 1 && t instanceof na.FetchError && 412 === t.status && "conversation_precondition_failed" === t.errorCode
+        }
+
+        function oY(e) {
+            return nL.object({
+                conversation_id: nL.string().min(1)
+            }).parse(e)
+        }
+
+        function oX(e) {
+            return 412 === e.status && "conversation_precondition_failed" === e.errorCode
+        }
+        var oJ = n("AORd"),
+            oZ = n("J8FU"),
+            o0 = n("vpdG"),
+            o1 = n("cP1f");
+
+        function o2(e) {
+            let {
+                turn: t
+            } = e;
+            return t.items.some(o3)
+        }
+
+        function o3(e) {
+            return "assistant-message" === e.type || "generated-image" === e.type && null != e.src
+        }
+        var o4 = n("Aluh"),
+            o5 = n("mG6J");
+
+        function o6(e) {
+            let t, n, s = (0, r.c)(14),
+                {
+                    conversationId: o,
+                    shouldBlockExternalEgress: i,
+                    widgets: l
+                } = e,
+                c = (0, u.z)(o4.b);
+            if (i) return null;
+            if (s[0] !== c || s[1] !== o || s[2] !== l) {
+                let e, n, r;
+                s[4] !== c || s[5] !== o ? (e = e => c.has((0, aV.e)(o, e.messageId)), s[4] = c, s[5] = o, s[6] = e) : e = s[6];
+                let i = l.filter(e),
+                    d = `chatgpt:${o}`;
+                s[7] !== d ? (n = (0, h.Re)(d), s[7] = d, s[8] = n) : n = s[8];
+                let u = n;
+                s[9] !== u || s[10] !== o ? (r = e => (0, a.jsx)(o5.b, {
+                    conversationId: u,
+                    chatGptConversationId: o,
+                    hostId: "local",
+                    item: e
+                }, e.messageId), s[9] = u, s[10] = o, s[11] = r) : r = s[11], t = i.map(r), s[0] = c, s[1] = o, s[2] = l, s[3] = t
+            } else t = s[3];
+            return s[12] !== t ? (n = (0, a.jsx)(a.Fragment, {
+                children: t
+            }), s[12] = t, s[13] = n) : n = s[13], n
+        }
+        var o7 = n("JVSG"),
+            o8 = {
+                kind: "sprite",
+                name: "folder-person-2-light-16",
+                canvas: {
+                    width: 16,
+                    height: 16,
+                    viewBox: "0 0 16 16"
+                },
+                href: "#codex-icon-folder-person-2-light-16",
+                style: {},
+                alignment: {
+                    authored: {
+                        x: 0,
+                        y: 0,
+                        overflows: !1
+                    },
+                    primary: {
+                        x: 0,
+                        y: 488e-6,
+                        overflows: !1
+                    },
+                    composite: {
+                        x: 0,
+                        y: 488e-6,
+                        overflows: !1
+                    }
+                }
+            },
+            o9 = n("ebpE");
+
+        function ie() {
+            let e, t, n, s, o, i, l, c, d, h, p, m, g, v, y, b = (0, r.c)(40),
+                C = (0, x._)(),
+                _ = (0, f.useContext)(tk.a);
+            b[0] === Symbol.for("react.memo_cache_sentinel") ? (e = {
+                name: "chatgpt.conversations"
+            }, b[0] = e) : e = b[0];
+            let S = (0, u.x)(I.a, e),
+                j = (0, u.z)(N.a),
+                T = (0, x.bb)() ?? 0,
+                {
+                    conversationId: P
+                } = (0, x.cb)(),
+                {
+                    search: E,
+                    state: A
+                } = (0, x.Y)(),
+                M = (0, u.x)(nA.a, P ?? null),
+                k = (0, u.x)(null == P || ew.d, M ?? P ?? ""),
+                R = A?.archivedConversationPreview === !0;
+            b[1] !== E ? (t = (0, oz.i)(E), b[1] = E, b[2] = t) : t = b[2];
+            let O = t;
+            b[3] !== R || b[4] !== O || b[5] !== P ? (n = null == P || (0, ek.e)(P) || O || R ? null : P, b[3] = R, b[4] = O, b[5] = P, b[6] = n) : n = b[6];
+            let {
+                data: F
+            } = (0, u.x)(n9.chatGptConversationQueryById$, n);
+            if (null == P) {
+                let e;
+                return b[7] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(x.l, {
+                    to: "/",
+                    replace: !0
+                }), b[7] = e) : e = b[7], e
+            }
+            b[8] !== M || b[9] !== P ? (s = M ?? (0, ek.d)(P), b[8] = M, b[9] = P, b[10] = s) : s = b[10];
+            let G = s,
+                z = S.isCapable && !j && !k && null != F;
+            b[11] !== C ? (o = e => (C((0, oz.c)(e)), !0), b[11] = C, b[12] = o) : o = b[12];
+            let B = o;
+            b[13] === Symbol.for("react.memo_cache_sentinel") ? (i = (0, a.jsx)(w.a, {}), l = (0, a.jsx)(tm.a.Surface, {}), b[13] = i, b[14] = l) : (i = b[13], l = b[14]), b[15] !== R ? (c = null, b[15] = R, b[16] = c) : c = b[16], b[17] !== G || b[18] !== R || b[19] !== O ? (d = O || R ? null : (0, a.jsx)(nB.a, {
+                conversationId: G
+            }), b[17] = G, b[18] = R, b[19] = O, b[20] = d) : d = b[20];
+            let D = _ ?? (z ? B : null),
+                L = `${G}:${O}`;
+            b[21] === Symbol.for("react.memo_cache_sentinel") ? (h = void 0, b[21] = h) : h = b[21], b[22] !== G || b[23] !== R || b[24] !== O || b[25] !== L || b[26] !== T ? (p = (0, a.jsx)(it, {
+                conversationId: G,
+                viewActivation: T,
+                isArchivedPreview: R,
+                isReadOnlyPreview: !1,
+                banner: h,
+                isTemporaryChat: O,
+                sharedConversationId: null
+            }, L), b[22] = G, b[23] = R, b[24] = O, b[25] = L, b[26] = T, b[27] = p) : p = b[27], b[28] !== p || b[29] !== D ? (m = (0, a.jsx)(tk.a, {
+                value: D,
+                children: p
+            }), b[28] = p, b[29] = D, b[30] = m) : m = b[30], b[31] !== m || b[32] !== c || b[33] !== d ? (g = (0, a.jsxs)(a.Fragment, {
+                children: [i, l, c, d, m]
+            }), b[31] = m, b[32] = c, b[33] = d, b[34] = g) : g = b[34];
+            let W = g;
+            return b[35] !== W ? (v = W, b[35] = W, b[36] = v) : v = b[36], b[37] !== G || b[38] !== v ? (y = (0, a.jsx)(aN.a, {
+                conversationId: G,
+                children: v
+            }), b[37] = G, b[38] = v, b[39] = y) : y = b[39], y
+        }
+
+        function it(e) {
+            let t, n, i, l, c, v, b, w, I, E, A, O, z, B, D, L, W, H, q, K, U, Q, Z, ee, en, ea, es, eo, ei, ec, ed, eu, eh, ep, em, eg, ef, ev, ey, ex, eC, eI, eS, ej, eT, eP, eE, eA, eM, eR, eN, eO, eF, eG, ez, eB, eD, eL, eW, eH, e$, eY, eX, eJ, eZ, e0, e1, e2, e3, e5, e7, te, tt, tn, ta, tr, ts, to, tl, th, tp, tm, tg, tf, tv, ty, t_, tT, tP, tE, tA, tM, tk, tq, tU, tX, t1, t2, t3, t7, nF, nz, nB, nL, nW = (0, r.c)(767),
+                {
+                    conversationId: nH,
+                    viewActivation: nq,
+                    isArchivedPreview: nK,
+                    isInlinePreview: nU,
+                    hideModelPicker: nV,
+                    showFilePicker: nQ,
+                    disableAutoFocus: n$,
+                    hideInitialUserMessage: nY,
+                    transcriptPresentation: nX,
+                    scrollOrigin: nJ,
+                    isReadOnlyPreview: nZ,
+                    onSubmitAccepted: n0,
+                    isTemporaryChat: n1,
+                    sharedConversationId: n2,
+                    sharedPostContinuation: n3,
+                    requiredSystemHints: n4,
+                    routePattern: at,
+                    composerLeadingContent: aa,
+                    headerLeadingContent: ar,
+                    banner: as,
+                    onRetryMissingConversation: ao,
+                    sharedProjectConversation: ai,
+                    workspace: al
+                } = e,
+                ac = void 0 === nq ? 0 : nq,
+                ad = void 0 !== nK && nK,
+                au = void 0 !== nU && nU,
+                ah = void 0 === nQ || nQ,
+                ap = (0, u.y)(G.a),
+                am = (0, f.useContext)(M.a),
+                af = (0, u.x)(e_.f, am),
+                av = (0, u.z)(null != af && N.a);
+            nW[0] !== am || nW[1] !== nH ? (t = {
+                auth: am,
+                conversationId: nH
+            }, nW[0] = am, nW[1] = nH, nW[2] = t) : t = nW[2];
+            let ax = (0, u.x)(null != am && !am.isLoading && null === am.authMethod && e_.h, t),
+                {
+                    conversationId: aC
+                } = (0, x.cb)();
+            nW[3] !== nH || nW[4] !== au || nW[5] !== aC || nW[6] !== ap || nW[7] !== al ? (n = () => (0, ek.e)(au || null != al || null == ap.get(F.j, nH) ? nH : aC ?? ""), nW[3] = nH, nW[4] = au, nW[5] = aC, nW[6] = ap, nW[7] = al, nW[8] = n) : n = nW[8];
+            let [aw, a_] = (0, f.useState)(n);
+            nW[9] !== aw || nW[10] !== nH || nW[11] !== ap ? (i = () => aw && !ap.get(sD.b, nH) ? nH : null, nW[9] = aw, nW[10] = nH, nW[11] = ap, nW[12] = i) : i = nW[12];
+            let [aI] = (0, f.useState)(i), aS = null != n2 || null != af && !(void 0 !== n3 && n3 && av);
+            nW[13] !== nH || nW[14] !== ad || nW[15] !== au || nW[16] !== aS || nW[17] !== ap ? (l = () => {
+                if (!aS && !ad && !au) return function(e, t) {
+                    let n = e.get(nA.a, t) ?? t,
+                        a = e.get(X.b, t),
+                        r = e.get(nN, n),
+                        s = null;
+                    null != a && r?.attemptId === a && (s = r);
+                    let o = {
+                            attemptId: a,
+                            observedTurn: s?.observedTurn ?? !1,
+                            activeRequestId: s?.activeRequestId ?? null,
+                            dismissed: s?.dismissed ?? !1,
+                            initialCreationMessageIds: s?.initialCreationMessageIds ?? new Set,
+                            openedCreatedPage: s?.openedCreatedPage ?? !1
+                        },
+                        i = e.get(np.i),
+                        l = o.observedTurn,
+                        c = null;
+
+                    function d(t) {
+                        for (let n of t.toReversed())
+                            if (!o.initialCreationMessageIds.has(n.messageId) && (0, nw.openSpacePageSidePanelTab)(e, n.pageId, {
+                                    title: n.title,
+                                    openSource: "turn_auto_open"
+                                }).opened) {
+                                o.openedCreatedPage = !0;
+                                break
+                            }
+                    }
+                    let u = e.watch(n => {
+                        let {
+                            get: a
+                        } = n, r = a(F.$, t), s = a(np.i), u = a(F.bb, t);
+                        if ((0, F.Ab)(r)) {
+                            l = !1;
+                            let e = a(X.b, t),
+                                n = a(F.cb, t),
+                                r = !o.observedTurn || o.attemptId !== e;
+                            if (o.attemptId = e, r) {
+                                let e = c;
+                                c = null, e?.abort(), o.observedTurn = !0, o.activeRequestId = n, o.dismissed = u, o.openedCreatedPage = !1
+                            } else o.activeRequestId = n ?? o.activeRequestId, o.dismissed = o.dismissed || u || i && !s;
+                            i = s;
+                            let h = !u && !o.dismissed && !s && !o.openedCreatedPage && !a(G.j) && !a(F.D, t) && !a(ew.d, t),
+                                p = [];
+                            if ((r || h) && (p = a(F.Q, t) ?? []), r) {
+                                o.initialCreationMessageIds = new Set(p.map(e => e.messageId));
+                                return
+                            }
+                            h && d(p);
+                            return
+                        }
+                        if (!o.observedTurn) return;
+                        let h = a(F.w, t);
+                        if ("idle" !== r || u || null != h && "completed" !== h.result || null != e.get(F.D, t) || e.get(G.j) || e.get(ew.d, t)) {
+                            o.observedTurn = !1;
+                            return
+                        }
+                        if (l) {
+                            if (o.dismissed || s || o.openedCreatedPage || a(X.b, t) !== o.attemptId) {
+                                o.observedTurn = !1;
+                                return
+                            }
+                            if (h?.result !== "completed") return;
+                            d(a(F.Q, t) ?? []), o.observedTurn = !o.openedCreatedPage;
+                            return
+                        }
+                        if (o.observedTurn = !1, h?.result !== "completed" || h.requestId !== o.activeRequestId) return;
+                        let m = e.get(F.M, t);
+                        if (null == m) return;
+                        let g = (0, p.b)({
+                                mapping: m,
+                                current_node: e.get(F.C, t)
+                            }),
+                            f = g.findLast(nR.b);
+                        if (f?.status !== "finished_successfully") return;
+                        let v = [...(0, nM.e)(g).outputs, ...g.flatMap(e => (0, nM.c)(e).map(e => e.file))],
+                            y = e.get(nT.a, t)?.at(-1);
+                        if (y?.turn.status !== "complete") return;
+                        let b = [...(0, ng.b)(g), ...y.turn.items.flatMap(e => "chatgpt-reasoning-group" === e.type ? e.items : [e]).filter(e => "mcp-tool-call" === e.type)];
+                        if (!((0, nm.a)(e, b, !o.dismissed) || !o.dismissed && !o.openedCreatedPage && (0, n_.a)(e, b)) && !o.dismissed && !s && !o.openedCreatedPage) {
+                            for (let t of (0, nC.c)((0, p.e)(f)).toReversed())
+                                if ((0, nw.openSpacePageSidePanelTab)(e, t.id, {
+                                        openSource: "turn_auto_open",
+                                        blockId: t.blockId
+                                    }).opened) return;
+                            if ((0, nk.canOpenChatGptFilePreview)({
+                                    browserPreview: !0
+                                })) {
+                                for (let n of y.turn.items)
+                                    if ("assistant-message" === n.type && n.completed)
+                                        for (let [a, r] of n.contentReferences.entries()) {
+                                            let s = (0, nP.a)(r),
+                                                o = null == s ? null : (0, nf.a)(s),
+                                                i = v.find(e => null != e.fileId && e.fileId === (r.file_id ?? r.id) || null != e.libraryFileId && e.libraryFileId === r.library_file_id);
+                                            if ("file" !== r.type || !(0, nh.a)(r) || null == s || null == o || !(0, nf.f)(o) || null == i && null == (0, nE.b)(r.sandbox_path) && !(0, nE.b)(r.matched_text)?.includes("sandbox:") || i?.sizeBytes != null && i.sizeBytes > nb.a) continue;
+                                            let l = n.contentReferenceMessageIds?.[a] ?? n.messageId,
+                                                d = (0, nj.b)(r, {
+                                                    fileName: s,
+                                                    messageId: l
+                                                });
+                                            if (null == d) continue;
+                                            if (e.get(tJ.f)?.getExperiment("1965446322").get("enable_artifact_preview_auto_open", !1) !== !0) return;
+                                            let u = e.get(F.j, t) ?? t,
+                                                h = `${l??"message"}:${String(a)}:${s}`,
+                                                p = `chatgpt-file:${u}:${h}`,
+                                                m = {
+                                                    turnId: y.id,
+                                                    inputMessageId: g.find(e => "user" === e.author.role)?.id ?? null,
+                                                    messageId: l ?? null
+                                                },
+                                                f = new AbortController,
+                                                b = (0, nk.openChatGptFile)(e, {
+                                                    conversationId: u,
+                                                    fileName: s,
+                                                    gizmoId: e.get(F.S, t),
+                                                    sharedConversationId: e.get(F.Z, t),
+                                                    target: d,
+                                                    tabKey: h,
+                                                    browserPreview: !0,
+                                                    isAccessBlocked: e => e.get(ew.d, t),
+                                                    downloadFallback: !1,
+                                                    openSource: "auto_open",
+                                                    originatingTurn: m,
+                                                    signal: f.signal,
+                                                    onOpened: () => {
+                                                        let t = e.get(P.l.activeTab$);
+                                                        f.signal.aborted || t?.tabId !== p || t.tabType.kind !== nv.a || ((0, el.a)(e, nu.CodexFileOpened, {
+                                                            threadId: u,
+                                                            turnId: m.turnId,
+                                                            inputMessageId: m.inputMessageId ?? void 0,
+                                                            messageId: m.messageId ?? void 0,
+                                                            fileExtension: (0, ny.c)(s) ?? void 0,
+                                                            openSource: "auto_open",
+                                                            openDestination: "codex_preview"
+                                                        }), (0, el.a)(e, nu.CodexWorkspaceFilePreviewAttempted, (0, nx.a)({
+                                                            modifiedClick: !1,
+                                                            openedSidePanelTarget: "artifact",
+                                                            openSource: "auto_open",
+                                                            originatingTurn: m,
+                                                            path: s,
+                                                            threadId: u,
+                                                            windowType: "browser"
+                                                        })), (0, nI.b)(e, p, "auto_open"))
+                                                    },
+                                                    onClose: () => f.abort()
+                                                });
+                                            c = f;
+                                            let x = e.watch(e => {
+                                                let {
+                                                    get: n
+                                                } = e;
+                                                (n(np.i) && n(P.l.activeTab$)?.tabId !== p || n(ew.d, t)) && f.abort()
+                                            });
+                                            b.catch(e => {
+                                                f.signal.aborted || nS.a.debug("Automatic ChatGPT artifact preview could not open", {
+                                                    safe: {},
+                                                    sensitive: {
+                                                        error: e
+                                                    }
+                                                })
+                                            }).finally(() => {
+                                                x(), c === f && (c = null)
+                                            });
+                                            return
+                                        }
+                            }
+                        }
+                    });
+                    return () => {
+                        u(), c?.abort(), null != o.attemptId && e.set(nN, n, {
+                            ...o,
+                            attemptId: o.attemptId
+                        })
+                    }
+                }(ap, nH)
+            }, c = [nH, ad, au, aS, ap], nW[13] = nH, nW[14] = ad, nW[15] = au, nW[16] = aS, nW[17] = ap, nW[18] = l, nW[19] = c) : (l = nW[18], c = nW[19]), (0, f.useEffect)(l, c);
+            let aT = (0, u.x)(a8.a, nH),
+                aE = aS ? null : aT;
+            nW[20] !== n2 ? (v = () => null == n2 ? null : (0, ek.b)(), nW[20] = n2, nW[21] = v) : v = nW[21];
+            let [aA] = (0, f.useState)(v), aM = aA ?? nH;
+            nW[22] !== aM ? (b = (0, tV.o)({
+                routeKind: "chatgpt-thread",
+                conversationId: aM
+            }), nW[22] = aM, nW[23] = b) : b = nW[23];
+            let ak = null != (0, u.x)(tR.c, b);
+            nW[24] !== aM || nW[25] !== n4 || nW[26] !== ap ? (w = () => {
+                if (null != n4 && 0 !== n4.length) return (0, e9.b)(ap, aM, n4)
+            }, I = [aM, n4, ap], nW[24] = aM, nW[25] = n4, nW[26] = ap, nW[27] = w, nW[28] = I) : (w = nW[27], I = nW[28]), (0, f.useEffect)(w, I);
+            let aR = (0, f.useRef)(null),
+                [aN, aO] = (0, f.useState)(null),
+                [aG, az] = (0, f.useState)(null),
+                [aB, aD] = (0, f.useState)(null),
+                aL = aG?.activation === ac ? aG.messageId : null,
+                aW = aB === ac,
+                aH = (0, f.useRef)(null);
+            nW[29] === Symbol.for("react.memo_cache_sentinel") ? (E = () => {
+                let e = new AbortController;
+                return aH.current = e, () => e.abort()
+            }, nW[29] = E) : E = nW[29], nW[30] !== ac ? (A = [ac], nW[30] = ac, nW[31] = A) : A = nW[31], (0, f.useLayoutEffect)(E, A);
+            let aq = (0, y.a)(),
+                aK = (0, x._)(),
+                aU = (0, t8.c)(),
+                aV = (0, u.x)(F.j, nH);
+            nW[32] !== ap ? (O = e => {
+                (0, nO.c)(ap, e)
+            }, nW[32] = ap, nW[33] = O) : O = nW[33];
+            let aQ = (0, f.useEffectEvent)(O);
+            nW[34] !== aV || nW[35] !== aQ ? (z = () => () => {
+                null != aV && aQ(aV)
+            }, nW[34] = aV, nW[35] = aQ, nW[36] = z) : z = nW[36], nW[37] !== aV ? (B = [aV], nW[37] = aV, nW[38] = B) : B = nW[38], (0, f.useEffect)(z, B);
+            let a$ = (0, u.x)(oR.b, nH),
+                aY = (0, u.x)(F.M, nH),
+                aX = (0, u.x)(n9.chatGptConversationQueryById$, aS || n1 && null != aY ? null : aV);
+            (0, u.x)(aS ? null : an.a, aV);
+            let aJ = (0, u.x)(!ax && ew.d, nH),
+                aZ = aV ?? nH,
+                a0 = (0, u.x)(F.C, nH),
+                a1 = (0, u.x)(F.y, nH),
+                a2 = (0, u.x)(F.S, nH),
+                a3 = (0, u.x)(F.D, nH),
+                a6 = (0, u.x)(F.N, nH),
+                a7 = (0, u.x)(F.$, nH),
+                ro = (0, u.x)(F.W, nH),
+                rl = (0, u.x)(F.Y, nH),
+                rc = (0, u.x)(ab.a, nH),
+                rd = (0, u.x)(F.E, nH),
+                ru = (0, u.x)(F.db, nH),
+                rh = (0, u.x)(F.eb, nH),
+                rp = (0, u.x)(n9.n, n2),
+                rm = (0, f.useRef)(null),
+                rg = rp.isSuccess && null != rp.data ? n2 : null;
+            nW[39] !== ap ? (D = e => {
+                (0, el.a)(ap, s.h, {
+                    actor: "CHATGPT_SHARE_FLOW_ACTOR_RECEIVER",
+                    action: "CHATGPT_SHARE_FLOW_ACTION_SHARED_CONTENT_VIEWED",
+                    contentType: "CHATGPT_SHARE_FLOW_CONTENT_TYPE_SHARED_CONVERSATION",
+                    availability: "CHATGPT_SHARE_FLOW_AVAILABILITY_COMPLETE",
+                    shareId: e
+                })
+            }, nW[39] = ap, nW[40] = D) : D = nW[40];
+            let rf = (0, f.useEffectEvent)(D);
+            nW[41] !== rg || nW[42] !== rf ? (L = () => {
+                null != rg && rm.current !== rg && (rm.current = rg, rf(rg))
+            }, nW[41] = rg, nW[42] = rf, nW[43] = L) : L = nW[43], nW[44] !== rg ? (W = [rg], nW[44] = rg, nW[45] = W) : W = nW[45], (0, f.useEffect)(L, W);
+            let rb = (0, u.x)(e6.p, nH),
+                rk = (0, u.x)(e6.o, nH),
+                rR = (0, u.x)(e6.m, nH),
+                rN = (0, u.x)(e6.q, nH),
+                rO = (0, u.x)(e6.n, nH),
+                rF = (0, u.x)(e6.i, nH),
+                rG = (0, u.x)(F.bb, nH),
+                rz = (0, u.x)(e6.z, nH);
+            nW[46] !== a7 ? (H = (0, F.Ab)(a7), nW[46] = a7, nW[47] = H) : H = nW[47];
+            let rD = H,
+                rL = (0, u.x)(re, nH),
+                rW = (0, u.z)(R.u),
+                rq = (0, u.z)(R.r),
+                rU = (0, u.z)(R.t),
+                rQ = (0, u.z)(R.m),
+                r$ = (0, u.z)(R.b),
+                rY = (0, u.z)(R.n),
+                rX = (0, u.z)(tz.pagesEnabled$);
+            nW[48] === Symbol.for("react.memo_cache_sentinel") ? (q = (0, e4.a)(), nW[48] = q) : q = nW[48];
+            let rJ = (0, er.h)(q);
+            nW[49] === Symbol.for("react.memo_cache_sentinel") ? (K = (0, tN.b)(), nW[49] = K) : K = nW[49];
+            let rZ = (0, er.h)(K),
+                r0 = null != aY,
+                r1 = (0, u.z)(s2.f),
+                r2 = aS ? rp : aX;
+            aw && null != r2.data && a_(!1);
+            let r3 = aw && r0 && null == r2.data,
+                r4 = r2.isLoading || !r3 && r2.isError;
+            nW[50] !== aN || nW[51] !== aM || nW[52] !== r4 || nW[53] !== aS || nW[54] !== n1 || nW[55] !== ap ? (U = (e, t, n, a) => {
+                !(e || ap.get(tK.a)) && ((0, e6.b)(ap, aM, t, void 0, n, a), aN?.focus(), aS || r4 || (0, n8.f)(ap, aM, {
+                    isTemporaryChat: n1
+                }))
+            }, nW[50] = aN, nW[51] = aM, nW[52] = r4, nW[53] = aS, nW[54] = n1, nW[55] = ap, nW[56] = U) : U = nW[56];
+            let r5 = U;
+            nW[57] !== nH || nW[58] !== af ? (Z = null == (Q = null == af ? null : (0, oy.a)(af, nH)) ? void 0 : (0, sB.a)(Q), nW[57] = nH, nW[58] = af, nW[59] = Q, nW[60] = Z) : (Q = nW[59], Z = nW[60]);
+            let r6 = Z,
+                r7 = Q ?? r2.data,
+                r8 = rd ? ru : r7?.title,
+                r9 = (0, u.z)(k.h),
+                se = (0, u.z)(k.g),
+                st = "chatgpt-thread" === ap.value.routeKind && ap.value.workSideChat?.conversationId === nH,
+                sn = r7?.conversation_origin ?? a1 ?? (null != al || st ? "tpp" : null),
+                sa = "tpp" === sn,
+                sr = sa && "denied" === rW.status && "go-plan" === rW.reason,
+                so = (0, u.z)(tZ.e),
+                si = (0, x.Y)(),
+                sl = si.state;
+            (0, u.z)(t$.b);
+            let sc = (0, u.x)(tJ.d, "3901104270") && sl?.openGoalPlan === !0,
+                sd = (0, t6.a)(),
+                su = "tpp" === sn || "flora" === sn,
+                sh = (0, er.h)("2871250183"),
+                sp = (0, u.z)(!!su && R.v),
+                sm = void 0 !== nZ && nZ || sp,
+                sf = null == so || so.isFullWidth ? void 0 : so.width ?? 420,
+                sy = !0 === (0, u.z)(su ? null : ns.d),
+                sb = (0, u.z)(su ? tH.b : tH.a),
+                sC = !su && sb,
+                sw = !rZ || rY && !su,
+                s_ = !aS && rY && !su,
+                sI = s_ && rQ,
+                sj = aS && r7?.is_read_only === !0 || ai?.is_read_only === !0;
+            nW[61] !== nH || nW[62] !== aS || nW[63] !== ap ? (ee = () => null, nW[61] = nH, nW[62] = aS, nW[63] = ap, nW[64] = ee) : ee = nW[64];
+            let [sT] = (0, f.useState)(ee), sA = r7?.gizmo_id ?? a2 ?? sT?.gizmoId ?? null;
+            nW[65] !== sA || nW[66] !== aS ? (en = aS || null == sA || (0, e8.a)(sA) ? null : sA, nW[65] = sA, nW[66] = aS, nW[67] = en) : en = nW[67];
+            let sM = en,
+                sk = (0, u.x)(n6, aM);
+            nW[68] !== r7 || nW[69] !== nH || nW[70] !== rc || nW[71] !== si.pathname || nW[72] !== n2 || nW[73] !== af ? (ea = (0, ag.d)({
+                conversation: r7,
+                conversationId: nH,
+                conversationTitle: rc,
+                pathname: si.pathname,
+                sharedConversationId: n2,
+                sharedPost: af
+            }), nW[68] = r7, nW[69] = nH, nW[70] = rc, nW[71] = si.pathname, nW[72] = n2, nW[73] = af, nW[74] = ea) : ea = nW[74];
+            let sO = ea,
+                sL = !rU && null == r7 && null == sT,
+                sq = null != aV && !aJ && !sL && (rU || rq),
+                sK = null;
+            aS || (sK = null != r7 ? (0, ss.B)(r7) : (0, e8.a)(a2) ? a2 : sT?.projectId ?? null);
+            let sU = (0, u.x)(nl.c, aS ? null : nH),
+                sV = aS || su || null != sK || sU || null == sk ? sM : sk.id;
+            nW[75] !== aM || nW[76] !== sV || nW[77] !== si.pathname ? (es = {
+                gizmoId: sV,
+                conversationId: aM,
+                visitKey: si.pathname
+            }, nW[75] = aM, nW[76] = sV, nW[77] = si.pathname, nW[78] = es) : es = nW[78];
+            let sQ = (0, u.x)(sH.d, es),
+                {
+                    data: sX
+                } = (0, o.a)({
+                    enabled: null != sK,
+                    queryFn: () => {
+                        if (null == sK) throw Error("Expected a ChatGPT project id");
+                        return (0, eK.c)(sK)
+                    },
+                    queryKey: (0, ss.E)(sK ?? ""),
+                    staleTime: eb.b.ONE_MINUTE
+                }),
+                s0 = null != sK && (sX?.gizmo.share_recipient !== "private" || (sX?.gizmo.sharing?.subjects?.length ?? 0) > 0);
+            nW[79] !== r7?.context_scopes || nW[80] !== sX?.gizmo.gizmo_snorlax_type ? (eo = r7?.context_scopes?.includes("HEALTH") === !0 || sX?.gizmo.gizmo_snorlax_type === "potion", nW[79] = r7?.context_scopes, nW[80] = sX?.gizmo.gizmo_snorlax_type, nW[81] = eo) : eo = nW[81];
+            let s3 = eo,
+                s4 = (0, sY.a)(r7?.context_scopes, {
+                    projectType: sX?.gizmo.gizmo_snorlax_type,
+                    projectId: sK,
+                    lockedProjectId: r1?.projectId
+                }),
+                s5 = aJ || s0 || s3 || s4;
+            nW[82] !== sX?.gizmo.display.name || nW[83] !== sX?.gizmo.display.name.trim ? (ei = sX?.gizmo.display.name.trim() || null, nW[82] = sX?.gizmo.display.name, nW[83] = sX?.gizmo.display.name.trim, nW[84] = ei) : ei = nW[84];
+            let s6 = ei,
+                s7 = sX?.gizmo.display.theme,
+                s8 = sX?.gizmo.display.emoji;
+            nW[85] !== sX ? (ec = "shared" === (0, ri.b)(sX) ? (0, a.jsx)(tb.b, {
+                icon: {
+                    assets: {
+                        16: o8,
+                        20: o9.a
+                    }
+                }
+            }) : void 0, nW[85] = sX, nW[86] = ec) : ec = nW[86], nW[87] !== s7 || nW[88] !== s8 || nW[89] !== ec ? (ed = (0, a.jsx)(tL.a, {
+                className: "icon-leading",
+                size: "leading",
+                color: s7,
+                icon: s8,
+                sharedIcon: ec
+            }), nW[87] = s7, nW[88] = s8, nW[89] = ec, nW[90] = ed) : ed = nW[90];
+            let s9 = ed,
+                ot = (0, u.x)(F.i, nH),
+                or = ot?.metadata ?? r7?.context_truncation_continuation,
+                os = aS || n1 || null != ai || null == r9 || r7?.owner?.user_id == null || null == sK || r7.owner.user_id === (se ? r9.split("__")[0] : r9) ? null : (0, sP.d)(sK, r7.conversation_id, r7.owner.user_id),
+                oo = !aS && !ad && !sm,
+                oi = (0, u.x)(oo ? on.c : null, nH),
+                ol = oi?.isReviewing === !0,
+                oc = null == oi ? aY : oi.conversation.mapping,
+                od = null == oi ? a0 : oi.conversation.current_node,
+                ou = null == aY ? r7 : null,
+                oh = oc ?? ou?.mapping,
+                op = (0, er.k)();
+            nW[91] !== oh || nW[92] !== op ? (eu = function(e, t) {
+                if (null != e && Object.values(e).some(e => e?.message != null && (0, s$.b)(e.message))) return () => (0, er.f)(t, "2347981323").get("enabled", !1)
+            }(oh, op), nW[91] = oh, nW[92] = op, nW[93] = eu) : eu = nW[93];
+            let om = eu,
+                og = (0, u.z)(null != om ? nn.h : void 0),
+                ov = (0, u.x)(null != om && !aS && !ad && !ol && ne.a, nH),
+                oC = (0, u.z)(ov ? nt.a : void 0);
+            nW[94] === Symbol.for("react.memo_cache_sentinel") ? (eh = (0, ae.a)(), nW[94] = eh) : eh = nW[94];
+            let ow = eh;
+            nW[95] === Symbol.for("react.memo_cache_sentinel") ? (ep = new WeakMap, nW[95] = ep) : ep = nW[95];
+            let o_ = ep;
+            nW[96] !== sb || nW[97] !== sC || nW[98] !== or || nW[99] !== sn || nW[100] !== od || nW[101] !== oc || nW[102] !== sh || nW[103] !== om || nW[104] !== ou || nW[105] !== ad || nW[106] !== aS || nW[107] !== rD || nW[108] !== su || nW[109] !== a6 || nW[110] !== rR || nW[111] !== rO || nW[112] !== rk || nW[113] !== rb || nW[114] !== rN || nW[115] !== ol || nW[116] !== ap.get || nW[117] !== oi?.isEntering || nW[118] !== a$ || nW[119] !== a7 || nW[120] !== oC || nW[121] !== og ? (em = () => ow({
+                conversation: ou,
+                contextContinuation: or,
+                clinicalSearchEnabled: sC,
+                clinicalCitationsEnabled: sb,
+                enableCloudBrowserActivity: sh,
+                conversationOrigin: sn,
+                enableVoiceImageLoadingFix: om,
+                voiceImageSessionId: og,
+                voiceImageGenerationSpawnIds: oC,
+                enableImageGenerationLoadingState: !aS && !ad && !ol && "error" !== a7,
+                getRenderTelemetry: e => (0, oZ.c)(ap.get, e),
+                isWorkConversation: su,
+                isStreaming: !aS && !ad && !ol && rD,
+                mode: "conversation",
+                mcpResponseCache: o_,
+                moderationDisclaimersByMessageId: a6,
+                streamingOrders: a$,
+                pendingSubmission: null == rb || aS || ol || oi?.isEntering ? null : {
+                    attachments: rR,
+                    commentAttachments: rO,
+                    prompt: rb,
+                    ...rk,
+                    selectedTextAttachments: rN
+                },
+                threadCurrentNode: od,
+                threadMapping: oc
+            }), nW[96] = sb, nW[97] = sC, nW[98] = or, nW[99] = sn, nW[100] = od, nW[101] = oc, nW[102] = sh, nW[103] = om, nW[104] = ou, nW[105] = ad, nW[106] = aS, nW[107] = rD, nW[108] = su, nW[109] = a6, nW[110] = rR, nW[111] = rO, nW[112] = rk, nW[113] = rb, nW[114] = rN, nW[115] = ol, nW[116] = ap.get, nW[117] = oi?.isEntering, nW[118] = a$, nW[119] = a7, nW[120] = oC, nW[121] = og, nW[122] = em) : em = nW[122], oi?.isEntering, nW[123] !== em ? (eg = em(), nW[123] = em, nW[124] = eg) : eg = nW[124];
+            let {
+                isConversationEmpty: oI,
+                renderedConversation: oS,
+                renderedTurns: oj,
+                showPendingLoadingMessage: oT
+            } = eg;
+            nW[125] !== au || nW[126] !== su || nW[127] !== oS || nW[128] !== ap ? (ef = () => {
+                if (!au && su) return ap.set(o7.b, oS), () => {
+                    ap.get(o7.b) === oS && ap.set(o7.b, null)
+                }
+            }, ev = [au, su, oS, ap], nW[125] = au, nW[126] = su, nW[127] = oS, nW[128] = ap, nW[129] = ef, nW[130] = ev) : (ef = nW[129], ev = nW[130]), (0, f.useEffect)(ef, ev);
+            let oP = (0, u.x)(nc.g, nH),
+                oA = oT && null == oP,
+                oM = !su && !aS && !au && !ad,
+                ok = (0, u.x)(sC || au || aS ? null : Y.a, nH),
+                oN = (ok?.length ?? 0) > 0,
+                oO = (0, u.x)(oM ? X.b : null, nH),
+                oF = JSON.stringify([nH, ac]),
+                [oG, oB] = (0, f.useState)(null),
+                oD = function(e, t) {
+                    let {
+                        conversation: n,
+                        completionAttemptId: a,
+                        allowAutoOpen: r = !0,
+                        suppressAutoOpen: s = !1,
+                        isTurnActive: o,
+                        isPendingUserTurn: i,
+                        hasGoal: l = !1,
+                        visitKey: c
+                    } = t;
+                    if (e?.visitKey === c && e.conversation === n && e.completionAttemptId === a && e.allowAutoOpen === r && e.suppressAutoOpen === s && e.isTurnActive === o && e.isPendingUserTurn === i && e.hasGoal === l) return e;
+                    let d = null == n ? [] : (0, p.b)(n, eU.k),
+                        u = null == e || e.visitKey !== c,
+                        h = d.find(eU.k)?.id ?? (u || i ? null : e.userMessageId),
+                        m = i ? null : d.findLast(eV)?.id ?? null,
+                        g = !u && (i && !e.isPendingUserTurn || !e.isPendingUserTurn && null != h && (null != e.userMessageId || !e.isTurnActive && null != a && a !== e.completionAttemptId) && e.userMessageId !== h),
+                        f = new Set(u ? [] : e.observedSummaryRequestIds),
+                        v = !u && !g && e.hasConsumedSummaryRequest,
+                        y = !v && !u && null != e.conversation && (o || e.isTurnActive || null != a && e.completionAttemptId !== a) && null != m && !f.has(m);
+                    if (null != n && (u || null == e.conversation || !o))
+                        for (let e of Object.values(n.mapping)) e?.message?.id != null && eV(e.message) && f.add(e.message.id);
+                    else null != m && f.add(m);
+                    return {
+                        visitKey: c,
+                        conversation: n,
+                        completionAttemptId: a,
+                        allowAutoOpen: r,
+                        suppressAutoOpen: s,
+                        isTurnActive: o,
+                        isPendingUserTurn: i,
+                        hasGoal: l,
+                        observedSummaryRequestIds: f,
+                        userMessageId: h,
+                        hasConsumedSummaryRequest: v || null != m,
+                        isOpen: s ? !u && e.suppressAutoOpen && e.isOpen : r && (l && (u || !e.hasGoal) || y) || !u && (!g || l) && (!e.hasGoal || l) && e.isOpen,
+                        shouldPreventAutoFocus: u || g || l && !e.hasGoal || y && !e.isOpen || e.shouldPreventAutoFocus
+                    }
+                }(oG, {
+                    completionAttemptId: oO,
+                    allowAutoOpen: !(0, tj.a)("(width < 768px)"),
+                    suppressAutoOpen: sc,
+                    conversation: oM && (r3 || !r4) ? oS : null,
+                    isTurnActive: rD,
+                    hasGoal: oN,
+                    isPendingUserTurn: rF && null != rb && !rD,
+                    visitKey: oF
+                });
+            oD !== oG && oB(oD);
+            let oL = null == al && !sC && !au && !aS && (sa || oM) && !ad,
+                oW = oL && oS?.mapping === aY && oS?.current_node === a0,
+                oH = (0, u.x)(oW ? F.q : null, nH),
+                oK = oS?.mapping,
+                oU = oS?.current_node;
+            nW[131] !== oK || nW[132] !== oU ? (ey = d()(() => {
+                let e = null == oK ? [] : (0, p.a)({
+                    mapping: oK,
+                    current_node: oU
+                });
+                return {
+                    messages: e,
+                    resources: (0, nM.e)(e)
+                }
+            }), nW[131] = oK, nW[132] = oU, nW[133] = ey) : ey = nW[133];
+            let oV = ey;
+            nW[134] !== oM || nW[135] !== rF || nW[136] !== oL || nW[137] !== rD || nW[138] !== rX || nW[139] !== rR || nW[140] !== oV || nW[141] !== oj || nW[142] !== oH ? (ex = oL ? d()(() => (function(e) {
+                var t;
+                let n, a, {
+                        automationReferences: r,
+                        includePages: s = !1,
+                        includeSources: o = !0,
+                        messages: i,
+                        pendingAttachments: l = [],
+                        resources: c = (0, nM.e)(i),
+                        turns: d,
+                        isTurnActive: u = d.at(-1)?.turn.status === "in_progress"
+                    } = e,
+                    h = [...c.inputs],
+                    m = o ? (0, rT.a)(i, d) : [],
+                    g = new Map,
+                    f = new Map,
+                    v = (t = i, -1 !== (n = rx()(t, e => e?.recipient === "turn_plan.update_turn_plan" && (0, rA.b)(e)?.item?.type === "todo-list")) && t.slice(n + 1).some(e => "assistant" === e.author.role && "final" === e.channel && "all" === e.recipient && "finished_successfully" === e.status)),
+                    y = [],
+                    b = new Map(i.map(e => [(0, p.g)(e), e])),
+                    x = rx()(i, e => "user" === e.author.role),
+                    C = [];
+                for (let e of l) h.some(t => t.fileId === e.id || null != e.libraryFileId && t.libraryFileId === e.libraryFileId) || h.push({
+                    downloadTarget: {
+                        fileId: e.id,
+                        type: "file-id"
+                    },
+                    fileId: e.id,
+                    key: `input:pending:${e.id}`,
+                    kind: "file",
+                    libraryFileId: e.libraryFileId ?? null,
+                    messageId: "pending-submission",
+                    mimeType: e.mimeType,
+                    mountedLibraryFileId: e.mountedLibraryFileId,
+                    sourceMimeType: e.mountedLibraryMimeType,
+                    sourceUrl: e.sourceUrl,
+                    name: e.name,
+                    sandboxPath: null,
+                    sizeBytes: e.size ?? null
+                });
+                for (let {
+                        id: e,
+                        turn: t
+                    }
+                    of d) {
+                    if (o && "complete" === t.status)
+                        for (let n of t.messageIds) {
+                            let t = b.get(n);
+                            t?.author.role === "assistant" && ("finished_successfully" === t.status || "finished_partial_completion" === t.status) && (0, rj.j)(t.metadata) && y.push({
+                                messageId: n,
+                                turnId: e,
+                                deletedMemoryCitationUuids: (0, rj.c)(t.metadata)
+                            })
+                        }
+                    for (let n of rM(t.items)) {
+                        if (s && "mcp-tool-call" === n.type) {
+                            let e = (0, rI.b)(n);
+                            if (null != e && (e.activities.includes("created") || e.activities.includes("updated"))) {
+                                let t = (0, rC.d)(e.url);
+                                if (t?.kind === "page") {
+                                    let n = f.get(t.id);
+                                    f.set(t.id, {
+                                        key: `page:${t.id}`,
+                                        kind: "page",
+                                        pageId: t.id,
+                                        title: e.title ?? n?.title ?? null
+                                    })
+                                }
+                            }
+                        }
+                        if (s && "assistant-message" === n.type && n.completed)
+                            for (let e of (0, nC.c)(n.content)) f.has(e.id) || f.set(e.id, {
+                                key: `page:${e.id}`,
+                                kind: "page",
+                                pageId: e.id,
+                                title: null
+                            });
+                        if ("todo-list" === n.type) {
+                            C = n.plan.map((t, n) => ({
+                                key: `progress:${e}:${String(n)}`,
+                                label: t.step,
+                                status: v ? "completed" : t.status
+                            }));
+                            continue
+                        }
+                        if ("generated-image" === n.type && "completed" === n.status && null != n.src) {
+                            let e = `image:${n.id}`;
+                            g.set(e, {
+                                image: n,
+                                key: e,
+                                kind: "generated-image"
+                            })
+                        }
+                    }
+                }
+                let w = (0, rw.b)(d.flatMap(e => {
+                    let {
+                        turn: t
+                    } = e;
+                    return rM(t.items).filter(e => "mcp-tool-call" === e.type)
+                })).at(-1);
+                return a = null == w ? [...c.outputs, ...f.values(), ...g.values()] : [{
+                    ...w,
+                    key: `site:${w.projectId}`,
+                    kind: "site"
+                }, ...c.outputs.filter(e => null == w.archivePath || ! function(e, t) {
+                    if (null != e.sandboxPath) return e.sandboxPath === t;
+                    let n = t.split(/[\\/]/u).at(-1)?.toLowerCase();
+                    return null != n && e.name.toLowerCase() === n
+                }(e, w.archivePath)), ...f.values(), ...g.values()], {
+                    automationIds: (0, rS.b)(i, r ?? void 0),
+                    browserScreenshots: (0, rP.d)(i),
+                    inputs: h,
+                    sourceTurns: y,
+                    outputs: a,
+                    progressSteps: C,
+                    isPlanSummaryUpdating: u && i.slice(x + 1).some(e => "assistant" === e.author.role && rS.a.test(e.recipient ?? "") || "tool" === e.author.role && rS.a.test(e.author.name ?? "")),
+                    planSummaryRefreshKey: `${d.at(-1)?.id??""}:${u}`,
+                    sources: o ? [...Array.from(new Map(i.filter(e => "user" === e.author.role).flatMap(e => (0, r_.a)((0, p.e)(e))).map(e => [e.projectId, e])).values(), e => ({
+                        kind: "site",
+                        key: `site:${e.projectId}`,
+                        projectId: e.projectId,
+                        label: e.title
+                    })), ...m.filter(e => "memory" === e.kind), ...new Map(d.flatMap(e => {
+                        let {
+                            turn: t
+                        } = e;
+                        return (t.skillSources ?? []).map(e => [e.key, e])
+                    })).values(), ...c.pluginSources, ...m.filter(e => "web" === e.kind && "apps" === e.category), ...m.filter(e => "file-source" === e.kind), ...m.filter(e => "web" === e.kind && "apps" !== e.category)] : [],
+                    subagents: (0, rE.a)(i, {
+                        isTurnLive: d.at(-1)?.turn.status === "in_progress"
+                    })?.subagents ?? []
+                }
+            })({
+                automationReferences: oH,
+                includePages: rX,
+                includeSources: !oM,
+                isTurnActive: rD || rF,
+                ...oV(),
+                pendingAttachments: rF ? rR : [],
+                turns: oj
+            })) : null, eC = oM ? ex?.() : null, nW[134] = oM, nW[135] = rF, nW[136] = oL, nW[137] = rD, nW[138] = rX, nW[139] = rR, nW[140] = oV, nW[141] = oj, nW[142] = oH, nW[143] = ex, nW[144] = eC) : (ex = nW[143], eC = nW[144]);
+            let oQ = eC,
+                o$ = oN || null != oQ && (oQ.outputs.length > 0 || oQ.progressSteps.length > 0 || oQ.automationIds.length > 0 || oQ.subagents.length > 0 || !aJ && oQ.browserScreenshots.length > 0),
+                oY = oL && (!oM || o$),
+                oX = oY && null == so,
+                oJ = JSON.stringify([oF, null != so]),
+                o0 = oM ? oD.isOpen : void 0,
+                o1 = oY && !so?.isFullWidth;
+            nW[145] !== sf || nW[146] !== oJ || nW[147] !== o0 || nW[148] !== o1 ? (eI = {
+                contentShiftResetKey: oJ,
+                controlledIsOpen: o0,
+                isEnabled: o1,
+                floatingPanelWidth: sf
+            }, nW[145] = sf, nW[146] = oJ, nW[147] = o0, nW[148] = o1, nW[149] = eI) : eI = nW[149];
+            let o2 = (0, t4.a)(eI),
+                o3 = aV ?? nH,
+                o5 = sa && null == rh,
+                ie = a3 ?? rz,
+                it = r2.isLoading && !r0,
+                id = r2.isError && !r3;
+            nW[150] !== r2.error || nW[151] !== au ? (eS = au || (0, na.d)(r2.error) || !(r2.error instanceof na.FetchError && [401, 403, 404].includes(r2.error.status)), nW[150] = r2.error, nW[151] = au, nW[152] = eS) : eS = nW[152];
+            let iu = eS;
+            nW[153] !== r2.error || nW[154] !== nH || nW[155] !== id || nW[156] !== au || nW[157] !== ap || nW[158] !== n2 ? (ej = () => {
+                id && !au && tB.a.loadFailed(ap, nH, n2, r2.error)
+            }, eT = [r2.error, nH, id, au, ap, n2], nW[153] = r2.error, nW[154] = nH, nW[155] = id, nW[156] = au, nW[157] = ap, nW[158] = n2, nW[159] = ej, nW[160] = eT) : (ej = nW[159], eT = nW[160]), (0, f.useEffect)(ej, eT), nW[161] !== nH || nW[162] !== aS || nW[163] !== aV ? (eP = null, aS || (eP = aV ?? ((0, ek.e)(nH) ? null : nH)), nW[161] = nH, nW[162] = aS, nW[163] = aV, nW[164] = eP) : eP = nW[164], nW[165] !== aL || nW[166] !== r7 || nW[167] !== sn || nW[168] !== aq || nW[169] !== n1 || nW[170] !== su || nW[171] !== sr || nW[172] !== aK || nW[173] !== eP || nW[174] !== at || nW[175] !== ap || nW[176] !== ac ? (eE = (e, t) => {
+                let n = void 0 !== t && t;
+                if (null == eP || null != aL || sr) return;
+                let a = aH.current?.signal;
+                null == a || a.aborted || (az({
+                    messageId: e,
+                    activation: ac
+                }), (0, F.h)(ap, {
+                    conversationId: eP,
+                    messageId: e,
+                    inWorkMode: n
+                }).then(e => {
+                    let {
+                        clientThreadId: t
+                    } = e;
+                    a.aborted || (n && (0, no.a)(ap, "opened"), aK(null == at ? (0, oz.c)(t, {
+                        isTemporaryChat: n1
+                    }) : (0, x.C)(at, {
+                        conversationId: t
+                    })))
+                }).catch(() => {
+                    a.aborted || (n && (0, no.a)(ap, "failed"), az(null), ap.get(et.f).danger(aq.formatMessage({
+                        id: "chatgptConversations.branchFailed",
+                        defaultMessage: "Failed to create chat",
+                        description: "Error shown when ChatGPT cannot continue a conversation in a new chat"
+                    }), {
+                        errorAnalytics: {
+                            toastId: "branch_conversation_failed",
+                            operation: "branch_conversation",
+                            errorCategory: "conversation",
+                            conversationId: eP ?? void 0,
+                            retryable: !0,
+                            userFacingError: {
+                                surface: (0, aj.b)(null == sn && null == r7 ? null : su),
+                                errorCategory: "CHATGPT_USER_FACING_ERROR_CATEGORY_CONVERSATION"
+                            }
+                        }
+                    }))
+                }))
+            }, nW[165] = aL, nW[166] = r7, nW[167] = sn, nW[168] = aq, nW[169] = n1, nW[170] = su, nW[171] = sr, nW[172] = aK, nW[173] = eP, nW[174] = at, nW[175] = ap, nW[176] = ac, nW[177] = eE) : eE = nW[177];
+            let ih = (0, t9.a)(eE);
+            nW[178] !== r7 || nW[179] !== nH || nW[180] !== sn || nW[181] !== aq || nW[182] !== sy || nW[183] !== n1 || nW[184] !== su || nW[185] !== ap || nW[186] !== aV ? (eA = async (e, t, n, a) => {
+                if (!sy) try {
+                    await async function(e, t) {
+                        let {
+                            conversationId: n,
+                            isTemporaryChat: a = !1,
+                            messageId: r,
+                            prompt: s,
+                            renderFormat: o,
+                            inlineSystemHints: i
+                        } = t;
+                        if (e.get(e6.i, n)) throw new a5.a("edit_message_busy", "The chat is busy.");
+                        let l = e.get(F.y, n);
+                        if ("tpp" === l) throw new a5.a("edit_message_unsupported_conversation", "Work messages cannot be edited with the Chat flow.");
+                        if (!e.get(re, n)) throw new a5.a("edit_message_busy", "The chat is busy.");
+                        let c = e.get(a4.b, {
+                            conversationId: n,
+                            messageId: r
+                        });
+                        if (null == c) throw new a5.a("edit_message_target_unavailable", "The user message could not be edited.");
+                        let {
+                            selectedModel: d
+                        } = c, u = s.trim(), h = (0, a4.c)(c.message, e.get, i), p = (0, a9.c)({
+                            message: c.message,
+                            prompt: u,
+                            renderFormat: o,
+                            systemHints: h,
+                            inlineSystemHints: i
+                        }), g = (0, m.f)(p.message.metadata), f = p.message.content, v = "multimodal_text" === f.content_type && f.parts.some(e => "string" != typeof e);
+                        if (0 === u.length && 0 === g.length && !v) throw new a5.a("edit_message_empty", "The edited message cannot be empty.");
+                        if (e.get(tJ.d, "3574573347")) {
+                            let t = e.get(a4.a, n);
+                            t?.messageId === r && t.prompt === s && aF()((0, a4.c)(c.message, e.get, t.inlineSystemHints), h) || (e.set(a4.a, n, {
+                                messageId: r,
+                                prompt: s,
+                                isTemporaryChat: a,
+                                inlineSystemHints: i
+                            }), (0, n8.f)(e, n, {
+                                isTemporaryChat: a
+                            }))
+                        }
+                        let y = rt(e.get, n),
+                            b = y.request.current,
+                            x = () => rt(e.get, n).request.current === b && aF()(e.get(a4.b, {
+                                conversationId: n,
+                                messageId: r
+                            }), c) && !(0, F.Ab)(e.get(F.$, n));
+                        e.set(e6.i, n, !0);
+                        try {
+                            if ("flora" !== l && null != b && null == e.get(y.session$) && null == e.get(a8.a, n) && (await b.stop(), await b.closed), !x()) throw new a5.a("edit_message_target_unavailable", "The edited message or active response changed.");
+                            await (0, a9.submitChatGPTCompletion)(e, {
+                                isSubmissionCurrent: x,
+                                isRequestCurrent: () => e.get(F.C, n) === p.message.id,
+                                attachments: g,
+                                conversationId: n,
+                                isTemporaryChat: a,
+                                model: d.slug,
+                                parentMessageId: c.parentMessageId,
+                                prompt: u,
+                                systemHints: h,
+                                thinkingEffort: d.thinkingEffort,
+                                userCompletionMessages: p
+                            })
+                        } finally {
+                            e.set(e6.i, n, !1)
+                        }
+                    }(ap, {
+                        conversationId: nH,
+                        isTemporaryChat: n1,
+                        messageId: e,
+                        prompt: t,
+                        inlineSystemHints: a,
+                        renderFormat: n
+                    })
+                } catch (t) {
+                    let e = (0, aj.c)(t);
+                    throw ap.get(et.f).danger(aq.formatMessage({
+                        id: "chatgptConversations.editMessageFailed",
+                        defaultMessage: "Failed to edit message",
+                        description: "Toast shown in a Chat mode conversation when submitting an edit to a user message fails"
+                    }), {
+                        errorAnalytics: {
+                            toastId: "chatgptConversations.editMessageFailed",
+                            operation: "edit_message",
+                            apiErrorCode: e.errorCode,
+                            retryable: !0,
+                            errorCategory: "conversation",
+                            conversationId: aV ?? void 0,
+                            userFacingError: {
+                                ...e,
+                                surface: (0, aj.b)(null == sn && null == r7 ? null : su),
+                                errorCategory: "CHATGPT_USER_FACING_ERROR_CATEGORY_CONVERSATION"
+                            }
+                        }
+                    }), t
+                }
+            }, nW[178] = r7, nW[179] = nH, nW[180] = sn, nW[181] = aq, nW[182] = sy, nW[183] = n1, nW[184] = su, nW[185] = ap, nW[186] = aV, nW[187] = eA) : eA = nW[187];
+            let ip = (0, t9.a)(eA);
+            nW[188] !== aM || nW[189] !== r7 || nW[190] !== nH || nW[191] !== sn || nW[192] !== aq || nW[193] !== sy || nW[194] !== n1 || nW[195] !== su || nW[196] !== sr || nW[197] !== aK || nW[198] !== ao || nW[199] !== ap || nW[200] !== aV ? (eM = async (e, t) => {
+                if (!sy && !sr) try {
+                    let n = ap.get(aP.e, nH);
+                    if (n?.startsNewWorkConversation || null == ap.get(F.j, nH) || (0, nd.j)(ap.get(F.U, nH)?.metadata?.errorCode)) {
+                        if (n?.message.id !== e) return;
+                        let a = (0, p.e)(n.prompt),
+                            r = (0, eq.i)(n.prompt.metadata, a, (0, m.e)(n.prompt.metadata), (0, g.w)(a)),
+                            s = (0, eQ.a)(n.prompt, a, r),
+                            o = ap.get(e6.s, aM),
+                            i = "markdown" === s.renderFormat ? s.message : a,
+                            l = o.length > 0 ? o : i,
+                            c = o.length > 0 ? void 0 : s.renderFormat ?? "plain";
+                        if (null != ao) return void await ao(l, c);
+                        if (null == ap.get(F.j, nH) && "string" == typeof n.prompt.metadata?.model_first_landing_ref) {
+                            let e = l;
+                            if (null != c) {
+                                let t = (0, tW.e)(l, {
+                                    defaultTextKind: "plain" === c ? "literal" : "prompt",
+                                    enableRichText: !0,
+                                    enableFileMentions: !0
+                                });
+                                e = t.getPersistedText(), t.destroy()
+                            }
+                            let t = `chatgpt:${nH}`;
+                            (0, tc.E)(t, (t, n) => n ? t : e) || (0, e6.V)(ap, nH, e), (0, tc.e)(t);
+                            return
+                        }
+                        if (n.startsNewWorkConversation) {
+                            let e = "user" === n.prompt.author.role ? (0, p.i)((0, p.r)(n.prompt.metadata?.serialization_metadata)?.work_handoff_recovery_prompt) : null,
+                                t = null != e && e.length <= 1e3 ? e : (0, g.w)(a);
+                            (0, td.m)(ap, "work"), await aK("/", {
+                                state: {
+                                    focusComposerNonce: Date.now(),
+                                    prefillPrompt: o.length > 0 ? o : t,
+                                    prefillPromptFormat: o.length > 0 ? void 0 : "plain",
+                                    prefillPromptOnlyIfEmpty: !0
+                                }
+                            });
+                            return
+                        }
+                        if (su && !n1 && (0, ti.fb)(ap, (0, tw.b)({
+                                entrypoint: "home"
+                            }))) return void await aK("/");
+                        let d = (0, p.k)(n.prompt.metadata?.system_hints).filter(e => "search" !== e || !1 !== n.forceUseSearch);
+                        !0 !== n.forceUseSearch || d.includes("search") || d.push("search");
+                        let u = (0, rs.g)(ap, d);
+                        (0, e6.W)(ap, u, t.model);
+                        let h = ap.get(F.S, nH);
+                        (0, td.m)(ap, su ? "work" : "chat"), await aK({
+                            pathname: "/",
+                            search: (0, oz.e)("", n1)
+                        }, {
+                            state: {
+                                initialChatGptConversationId: u,
+                                project: null,
+                                chatGptProjectId: (0, e8.a)(h) ? h : null,
+                                chatGptCustomGptId: (0, e8.a)(h) ? null : h,
+                                focusComposerNonce: Date.now(),
+                                prefillPrompt: l,
+                                prefillPromptFormat: c,
+                                prefillPromptOnlyIfEmpty: su
+                            }
+                        });
+                        return
+                    }
+                    await (0, aP.h)(ap, {
+                        conversationId: nH,
+                        isTemporaryChat: n1,
+                        messageId: e,
+                        retry: su && "error_retry" === t.source && null == t.model.thinkingEffort ? {
+                            ...t,
+                            model: ap.get(e6.t, nH)
+                        } : t
+                    })
+                } catch {
+                    ap.get(et.f).danger(aq.formatMessage({
+                        id: "chatgptConversations.regenerate.failed",
+                        defaultMessage: "Failed to regenerate response",
+                        description: "Error toast shown when generating another version of a ChatGPT response fails"
+                    }), {
+                        errorAnalytics: {
+                            toastId: "chatgptConversations.regenerate.failed",
+                            operation: "regenerate_response",
+                            errorCategory: "conversation",
+                            conversationId: aV ?? void 0,
+                            userFacingError: {
+                                surface: (0, aj.b)(null == sn && null == r7 ? null : su),
+                                errorCategory: "CHATGPT_USER_FACING_ERROR_CATEGORY_CONVERSATION"
+                            }
+                        }
+                    })
+                }
+            }, nW[188] = aM, nW[189] = r7, nW[190] = nH, nW[191] = sn, nW[192] = aq, nW[193] = sy, nW[194] = n1, nW[195] = su, nW[196] = sr, nW[197] = aK, nW[198] = ao, nW[199] = ap, nW[200] = aV, nW[201] = eM) : eM = nW[201];
+            let im = (0, t9.a)(eM);
+            nW[202] !== r7 || nW[203] !== nH || nW[204] !== rc || nW[205] !== aq || nW[206] !== aW || nW[207] !== n1 || nW[208] !== aK || nW[209] !== aU || nW[210] !== sK || nW[211] !== ap || nW[212] !== aV || nW[213] !== sT || nW[214] !== ac ? (eR = () => {
+                if (aW || null == aV) return;
+                let e = ap.get(R.t);
+                if (!e && !ap.get(R.r) || !e && null == r7 && null == sT) return;
+                let t = aH.current?.signal;
+                null == t || t.aborted || (aD(ac), (e ? (0, nG.f)(ap, {
+                    chatGptThreadId: nH,
+                    conversationTitle: rc
+                }).then(e => {
+                    if (null == e) return null;
+                    let n = (0, j.a)(ap, e);
+                    if ("created" === e.status) return null == n || t.aborted || ap.get(et.f).danger(n.message, {
+                        errorAnalytics: {
+                            toastId: "chatgptConversationPage.handleHandoff"
+                        }
+                    }), e.conversationId;
+                    throw (0, j.a)(ap, e)
+                }) : (0, _.a)({
+                    scope: ap,
+                    projectId: sK ?? void 0,
+                    prompt: `Continuing from ${(0,tu.f)({conversationId:aV,title:rc?.trim()||"ChatGPT thread"})}`
+                }).then(il)).then(n => {
+                    if (!t.aborted) {
+                        if (null != n) return void(e ? aU(n) : aK((0, oz.c)(n, {
+                            isTemporaryChat: n1
+                        })));
+                        throw Error("Unable to create a Work conversation")
+                    }
+                }).catch(() => {
+                    t.aborted || (aD(null), ap.get(et.f).danger(aq.formatMessage({
+                        id: "chatgptConversations.handoffFailed",
+                        defaultMessage: "Failed to create chat",
+                        description: "Error shown when ChatGPT cannot hand off a conversation to a task"
+                    }), {
+                        errorAnalytics: {
+                            toastId: "chatgptConversations.handoffFailed"
+                        }
+                    }))
+                }))
+            }, nW[202] = r7, nW[203] = nH, nW[204] = rc, nW[205] = aq, nW[206] = aW, nW[207] = n1, nW[208] = aK, nW[209] = aU, nW[210] = sK, nW[211] = ap, nW[212] = aV, nW[213] = sT, nW[214] = ac, nW[215] = eR) : eR = nW[215];
+            let ig = eR;
+            nW[216] !== nH || nW[217] !== aK || nW[218] !== ap || nW[219] !== aA || nW[220] !== n2 || nW[221] !== af ? (eN = () => {
+                if (null != af) {
+                    if ((0, ek.e)(nH)) {
+                        let e = (0, e_.a)(ap, af, nH);
+                        null != e && (ap.get(N.a) ? ap.set(ox.a, e) : aK((0, oz.c)(e)))
+                    }
+                    return
+                }
+                let e = ap.query.getData(n9.n, n2);
+                null != e && null != n2 && null != aA && ((0, F.nb)(ap, {
+                    conversation: e,
+                    conversationId: aA,
+                    sharedConversationId: n2
+                }), ap.get(N.a) ? ap.set(ox.a, aA) : aK((0, oz.c)(aA)))
+            }, nW[216] = nH, nW[217] = aK, nW[218] = ap, nW[219] = aA, nW[220] = n2, nW[221] = af, nW[222] = eN) : eN = nW[222];
+            let iv = (0, t9.a)(eN);
+            nW[223] !== al ? (eO = al?.mcpAppContext == null ? null : {
+                hostId: tQ.a,
+                server: "codex_apps",
+                connectorId: al.mcpAppContext.id
+            }, nW[223] = al, nW[224] = eO) : eO = nW[224];
+            let iy = (0, u.x)(tG.b, eO),
+                ib = al?.fullscreenContent != null ? "content" : "workspace",
+                ix = (0, $.a)(au ? "embedded" : ib),
+                iC = !iy && (r3 || !r2.isError) && !ad && !sm && (null == af || am?.authMethod === "chatgpt" || av) && (!aS || null != r7),
+                iw = r$ || sm || sj || sI || sr,
+                i_ = iw || ol || oi?.needsEntry === !0;
+            if (ol) {
+                let e;
+                nW[225] !== aq ? (e = aq.formatMessage(on.d.readOnlyPlaceholder), nW[225] = aq, nW[226] = e) : e = nW[226], eF = e
+            } else !iw && oi?.needsEntry && (eF = !1);
+            let iI = iC && !iw && !aS && !r4 && !sy && !rD && !rF && !rG && !sQ,
+                iS = !iC || aS || i_ || r4 ? null : aN;
+            if (nW[227] !== sQ || nW[228] !== aL || nW[229] !== sb || nW[230] !== sC || nW[231] !== r7?.current_node || nW[232] !== nH || nW[233] !== sM || nW[234] !== sh || nW[235] !== ie || nW[236] !== ih || nW[237] !== ip || nW[238] !== im || nW[239] !== nY || nW[240] !== ad || nW[241] !== i_ || nW[242] !== r4 || nW[243] !== s5 || nW[244] !== sm || nW[245] !== aS || nW[246] !== rF || nW[247] !== n1 || nW[248] !== sa || nW[249] !== rD || nW[250] !== su || nW[251] !== sI || nW[252] !== sr || nW[253] !== aE || nW[254] !== rR || nW[255] !== eP || nW[256] !== oS || nW[257] !== oj || nW[258] !== ol || nW[259] !== ro || nW[260] !== ap.get || nW[261] !== rl || nW[262] !== Q?.current_node || nW[263] !== ai || nW[264] !== iC || nW[265] !== oA || nW[266] !== a$ || nW[267] !== rL) {
+                let e;
+                nW[269] !== sb || nW[270] !== sC || nW[271] !== sh || nW[272] !== su || nW[273] !== aE || nW[274] !== oS || nW[275] !== oj || nW[276] !== ol || nW[277] !== ap.get || nW[278] !== a$ ? (e = ol || null == aE || null == oS ? oj : (0, n5.a)({
+                    ...oS,
+                    current_node: aE.promptMessageId
+                }, {
+                    clinicalSearchEnabled: sC,
+                    clinicalCitationsEnabled: sb,
+                    enableCloudBrowserActivity: sh,
+                    streamingOrders: a$,
+                    isWorkConversation: su,
+                    getRenderTelemetry: e => (0, oZ.c)(ap.get, e)
+                }), nW[269] = sb, nW[270] = sC, nW[271] = sh, nW[272] = su, nW[273] = aE, nW[274] = oS, nW[275] = oj, nW[276] = ol, nW[277] = ap.get, nW[278] = a$, nW[279] = e) : e = nW[279];
+                let t = (0, ae.c)({
+                    paragen: aE,
+                    hideInitialUserMessage: nY,
+                    browserConversationId: void 0,
+                    conversationId: nH,
+                    enableCloudBrowserActivity: sh,
+                    errorMessage: ie,
+                    branchingMessageId: aL,
+                    isReadOnly: ad || sm || aS || null != ai,
+                    isTemporaryChat: n1,
+                    isWorkConversation: sa,
+                    onRegenerateResponse: sQ || aS || null != ai || ad || sm || sI || sr || rD || rF ? void 0 : im,
+                    onEditUserMessage: sQ || null == eP || sa || ad || sm || sI || !rL || rF ? void 0 : ip,
+                    onFork: null == eP || n1 || sI || sr || ad || sm ? void 0 : ih,
+                    pendingSubmissionAttachments: rR,
+                    shareEnabled: null == sM && !n1 && !aS && !ad && !sm && !s5,
+                    readAloudEnabled: !aS && !sm,
+                    feedbackEnabled: !aS && !sm && null == ai,
+                    renderedTurns: e,
+                    safetyReview: ro,
+                    sharedConversationLastMessageId: Q?.current_node ?? rl ?? (aS ? r7?.current_node : null),
+                    showPendingLoadingMessage: oA,
+                    showRequestUserInputStatus: iC && !i_ && !r4
+                });
+                eG = ol ? (0, on.a)(t) : t, nW[227] = sQ, nW[228] = aL, nW[229] = sb, nW[230] = sC, nW[231] = r7?.current_node, nW[232] = nH, nW[233] = sM, nW[234] = sh, nW[235] = ie, nW[236] = ih, nW[237] = ip, nW[238] = im, nW[239] = nY, nW[240] = ad, nW[241] = i_, nW[242] = r4, nW[243] = s5, nW[244] = sm, nW[245] = aS, nW[246] = rF, nW[247] = n1, nW[248] = sa, nW[249] = rD, nW[250] = su, nW[251] = sI, nW[252] = sr, nW[253] = aE, nW[254] = rR, nW[255] = eP, nW[256] = oS, nW[257] = oj, nW[258] = ol, nW[259] = ro, nW[260] = ap.get, nW[261] = rl, nW[262] = Q?.current_node, nW[263] = ai, nW[264] = iC, nW[265] = oA, nW[266] = a$, nW[267] = rL, nW[268] = eG
+            } else eG = nW[268];
+            let ij = eG;
+            nW[280] !== aq ? (ez = aq.formatMessage({
+                id: "chatgptConversations.loadingConversation",
+                defaultMessage: "Loading ChatGPT conversation",
+                description: "Accessible loading status shown while a ChatGPT conversation is loading in Codex Desktop"
+            }), nW[280] = aq, nW[281] = ez) : ez = nW[281];
+            let iT = ez,
+                iP = (0, u.x)(ss.g, aV ?? nH);
+            nW[282] !== r9 || nW[283] !== r7 || nW[284] !== iP || nW[285] !== ad || nW[286] !== se || nW[287] !== sm || nW[288] !== aS || nW[289] !== sj || nW[290] !== n1 || nW[291] !== aV ? (eB = null != aV && !aS && !sj && !ad && !sm && !n1 && (0, n7.b)(r7, r9, se, iP), nW[282] = r9, nW[283] = r7, nW[284] = iP, nW[285] = ad, nW[286] = se, nW[287] = sm, nW[288] = aS, nW[289] = sj, nW[290] = n1, nW[291] = aV, nW[292] = eB) : eB = nW[292];
+            let iE = eB;
+            nW[293] !== nH || nW[294] !== sM ? (eD = null == sM ? null : (0, a.jsx)(rr.ChatGptGizmoHeader, {
+                conversationId: nH,
+                gizmoId: sM
+            }), nW[293] = nH, nW[294] = sM, nW[295] = eD) : eD = nW[295];
+            let iA = eD;
+            nW[296] !== ad || nW[297] !== aS || nW[298] !== sa ? (eL = !sa || aS || ad ? null : (0, a.jsx)(tI.a, {
+                hostId: tQ.a
+            }), nW[296] = ad, nW[297] = aS, nW[298] = sa, nW[299] = eL) : eL = nW[299];
+            let iM = eL,
+                ik = !aS && null == ai && !ad && !n1 && !aJ,
+                iR = (0, u.x)(!!ik && sZ.c, nH);
+            nW[300] !== nH || nW[301] !== iR ? (eW = iR ? (0, a.jsx)(sJ, {
+                conversationId: nH
+            }) : null, nW[300] = nH, nW[301] = iR, nW[302] = eW) : eW = nW[302];
+            let iN = eW;
+            nW[303] !== iI || nW[304] !== nH || nW[305] !== sy || nW[306] !== oi ? (eH = null != oi ? (0, a.jsx)("div", {
+                className: "max-w-full min-w-0",
+                inert: sy,
+                children: (0, a.jsx)(sz, {
+                    conversationId: nH,
+                    placement: "progress",
+                    canStartSection: iI
+                })
+            }) : null, nW[303] = iI, nW[304] = nH, nW[305] = sy, nW[306] = oi, nW[307] = eH) : eH = nW[307];
+            let iO = eH,
+                iF = !r3 && !(n1 && null != aY) && (null == r7 || r2.isFetching && null == r7.title),
+                iG = aX.data?.sectioned_conversation != null;
+            nW[308] !== nH || nW[309] !== iG ? (e$ = {
+                conversationId: nH,
+                hasHistorySections: iG
+            }, nW[308] = nH, nW[309] = iG, nW[310] = e$) : e$ = nW[310];
+            let iz = (0, u.x)(!!(oo && (0, tx.a)({
+                    browser: !0
+                })) && oa.h, e$),
+                iB = iF || iz,
+                iD = null != oi;
+            nW[311] !== iR || nW[312] !== iB || nW[313] !== iD ? (eY = function(e) {
+                let {
+                    hasCourseShortcut: t,
+                    hasSectionNavigation: n,
+                    hideBrowserTitle: a
+                } = e;
+                return (0, tx.a)({
+                    browser: !0
+                }) ? !a && !t && !n : !n || !t && sN
+            }({
+                hasCourseShortcut: iR,
+                hasSectionNavigation: iD,
+                hideBrowserTitle: iB
+            }), nW[311] = iR, nW[312] = iB, nW[313] = iD, nW[314] = eY) : eY = nW[314];
+            let iL = (0, u.z)(eY),
+                iW = !n1 && !ad && !sm;
+            nW[315] !== rc || nW[316] !== iL || nW[317] !== aS || nW[318] !== sj || nW[319] !== aV || nW[320] !== iW ? (eX = iW && iL && !aS && !sj && null != aV && !!rc.trim(), nW[315] = rc, nW[316] = iL, nW[317] = aS, nW[318] = sj, nW[319] = aV, nW[320] = iW, nW[321] = eX) : eX = nW[321];
+            let iH = eX;
+            nW[322] !== ar || nW[323] !== su || nW[324] !== s6 ? (eJ = (0, tx.a)({
+                browser: !0
+            }) && !su && null != s6 && null == ar, nW[322] = ar, nW[323] = su, nW[324] = s6, nW[325] = eJ) : eJ = nW[325];
+            let iq = eJ;
+            nW[326] !== iH || nW[327] !== iq || nW[328] !== s9 || nW[329] !== sK || nW[330] !== s6 ? (eZ = iH && null != sK && !iq ? {
+                icon: s9,
+                name: s6
+            } : void 0, nW[326] = iH, nW[327] = iq, nW[328] = s9, nW[329] = sK, nW[330] = s6, nW[331] = eZ) : eZ = nW[331];
+            let iK = eZ,
+                iU = rd || null != r7 ? r8 ?? "" : null;
+            nW[332] !== iE || nW[333] !== nH || nW[334] !== rc || nW[335] !== iH || nW[336] !== iU || nW[337] !== iK ? (e0 = (0, a.jsx)(sR, {
+                conversationId: nH,
+                canRename: iE,
+                hasTitleMenu: iH,
+                project: iK,
+                title: rc,
+                titleValue: iU
+            }), nW[332] = iE, nW[333] = nH, nW[334] = rc, nW[335] = iH, nW[336] = iU, nW[337] = iK, nW[338] = e0) : e0 = nW[338];
+            let iV = e0,
+                iQ = o5 && !aS && !ad;
+            nW[339] !== nH || nW[340] !== iA || nW[341] !== aS ? (e1 = aS ? null : (0, a.jsx)(ni.BusinessAgentConversationHeader, {
+                compact: !0,
+                conversationId: nH,
+                fallback: iA
+            }), nW[339] = nH, nW[340] = iA, nW[341] = aS, nW[342] = e1) : e1 = nW[342], nW[343] !== iq || nW[344] !== s9 || nW[345] !== sK || nW[346] !== s6 || nW[347] !== iK ? (e2 = null != sK && null == iK ? (0, a.jsx)(sE, {
+                projectId: sK,
+                name: s6,
+                icon: s9,
+                linkToProject: iq
+            }) : null, nW[343] = iq, nW[344] = s9, nW[345] = sK, nW[346] = s6, nW[347] = iK, nW[348] = e2) : e2 = nW[348], nW[349] !== ar || nW[350] !== e1 || nW[351] !== e2 ? (e3 = (0, a.jsxs)(a.Fragment, {
+                children: [ar, e1, e2]
+            }), nW[349] = ar, nW[350] = e1, nW[351] = e2, nW[352] = e3) : e3 = nW[352], nW[353] !== iV || nW[354] !== iB ? (e5 = iB ? null : (0, a.jsx)(a.Fragment, {
+                children: iV
+            }), nW[353] = iV, nW[354] = iB, nW[355] = e5) : e5 = nW[355], nW[356] !== n1 || nW[357] !== iM || nW[358] !== iQ || nW[359] !== e3 || nW[360] !== e5 ? (e7 = (0, a.jsx)(sx.a, {
+                isTemporaryChat: n1,
+                isCloudTask: iQ,
+                leading: e3,
+                start: e5,
+                startActions: iM
+            }), nW[356] = n1, nW[357] = iM, nW[358] = iQ, nW[359] = e3, nW[360] = e5, nW[361] = e7) : e7 = nW[361];
+            let i$ = e7;
+            nW[362] !== i$ || nW[363] !== iN || nW[364] !== iO ? (te = null != iN || null != iO ? (0, a.jsx)(sS, {
+                header: i$,
+                courseShortcut: iN,
+                progress: iO
+            }) : null, nW[362] = i$, nW[363] = iN, nW[364] = iO, nW[365] = te) : te = nW[365];
+            let iY = te;
+            if (nW[366] !== r2 || nW[367] !== am?.authMethod || nW[368] !== sQ || nW[369] !== as || nW[370] !== sw || nW[371] !== sq || nW[372] !== iu || nW[373] !== iI || nW[374] !== aM || nW[375] !== sV || nW[376] !== aa || nW[377] !== r7 || nW[378] !== i$ || nW[379] !== nH || nW[380] !== iT || nW[381] !== sn || nW[382] !== rc || nW[383] !== oD || nW[384] !== n$ || nW[385] !== ie || nW[386] !== so || nW[387] !== sf || nW[388] !== ex || nW[389] !== sA || nW[390] !== r5 || nW[391] !== ig || nW[392] !== iv || nW[393] !== id || nW[394] !== r0 || nW[395] !== iH || nW[396] !== nV || nW[397] !== aI || nW[398] !== ad || nW[399] !== oM || nW[400] !== i_ || nW[401] !== oI || nW[402] !== r4 || nW[403] !== it || nW[404] !== ak || nW[405] !== aW || nW[406] !== s3 || nW[407] !== au || nW[408] !== s4 || nW[409] !== iy || nW[410] !== rJ || nW[411] !== sy || nW[412] !== sm || nW[413] !== sd || !1 !== nW[414] || nW[415] !== aS || nW[416] !== sj || nW[417] !== rG || nW[418] !== rF || nW[419] !== n1 || nW[420] !== sa || nW[421] !== rD || nW[422] !== su || nW[423] !== s_ || nW[424] !== rQ || nW[425] !== sI || nW[426] !== sr || nW[427] !== st || nW[428] !== iY || nW[429] !== si.pathname || nW[430] !== r1 || nW[431] !== sl?.sidebarAutomationId || nW[432] !== n0 || nW[433] !== sc || nW[434] !== sX || nW[435] !== s9 || nW[436] !== sK || nW[437] !== s6 || nW[438] !== eF || nW[439] !== sO || nW[440] !== oS || nW[441] !== oj || nW[442] !== n4 || nW[443] !== ol || nW[444] !== ix || nW[445] !== r8 || nW[446] !== ap || nW[447] !== nJ || nW[448] !== aZ || nW[449] !== oi || nW[450] !== iO || nW[451] !== aV || nW[452] !== oB || nW[453] !== n2 || nW[454] !== af || nW[455] !== r6 || nW[456] !== ai || nW[457] !== os || nW[458] !== aJ || nW[459] !== ik || nW[460] !== oX || nW[461] !== iC || nW[462] !== ah || nW[463] !== iW || nW[464] !== oA || nW[465] !== iS || nW[466] !== o3 || nW[467] !== o2 || nW[468] !== a0 || nW[469] !== nX || nW[470] !== ij || nW[471] !== al) {
+                tp = Symbol.for("react.early_return_sentinel");
+                e: {
+                    let e, t, n, r, s, o, i, l, c, d, u, m, g, v = oj.flatMap(ii).flatMap(io),
+                        y = v.flatMap(is);
+                    if (!aS && (r2.error instanceof na.FetchError && 423 === r2.error.status || s4 && null == r1)) {
+                        let e;
+                        nW[497] !== r2 || nW[498] !== nH || nW[499] !== ap ? (e = (0, a.jsx)(s1.a, {
+                            onUnlocked: () => {
+                                (0, s2.g)(ap.get(s2.f)?.projectId, [nH]), r2.refetch()
+                            }
+                        }), nW[497] = r2, nW[498] = nH, nW[499] = ap, nW[500] = e) : e = nW[500], tp = e;
+                        break e
+                    }
+                    if (null != os) {
+                        let e;
+                        nW[501] !== os ? (e = (0, a.jsx)(x.l, {
+                            replace: !0,
+                            to: os
+                        }), nW[501] = os, nW[502] = e) : e = nW[502], tp = e;
+                        break e
+                    }
+                    ta = oe,
+                    nW[503] !== r7 || nW[504] !== r0 || nW[505] !== ad || nW[506] !== it || nW[507] !== au || nW[508] !== sm || nW[509] !== aS || nW[510] !== su ? (tk = su || aS || au || sm || ad || it || null == r7 && !r0 ? null : (0, a.jsx)(V.a, {}), nW[503] = r7, nW[504] = r0, nW[505] = ad, nW[506] = it, nW[507] = au, nW[508] = sm, nW[509] = aS, nW[510] = su, nW[511] = tk) : tk = nW[511],
+                    nW[512] !== r2.fetchStatus || nW[513] !== r7 || nW[514] !== id || nW[515] !== r0 || nW[516] !== it || nW[517] !== au ? (tq = !1, nW[512] = r2.fetchStatus, nW[513] = r7, nW[514] = id, nW[515] = r0, nW[516] = it, nW[517] = au, nW[518] = tq) : tq = nW[518],
+                    nW[519] !== r2.data || nW[520] !== r2.fetchStatus || nW[521] !== r7 || nW[522] !== nH || nW[523] !== id || nW[524] !== r0 || nW[525] !== oI || nW[526] !== it || !1 !== nW[527] || nW[528] !== oj.length ? (tU = null, nW[519] = r2.data, nW[520] = r2.fetchStatus, nW[521] = r7, nW[522] = nH, nW[523] = id, nW[524] = r0, nW[525] = oI, nW[526] = it, nW[527] = !1, nW[528] = oj.length, nW[529] = tU) : tU = nW[529],
+                    tX = !aS && !sm && (0, tN.c)() ? (0, a.jsx)(tO.c, {
+                        callIds: y,
+                        hostId: tQ.a,
+                        conversationId: (0, h.Re)(`chatgpt:${nH}`)
+                    }) : null,
+                    nW[530] !== rc || nW[531] !== au || nW[532] !== af || nW[533] !== al?.documentTitle ? (t1 = au ? null : (0, a.jsx)(tC.a, {
+                        title: null == af ? al?.documentTitle ?? rc : null
+                    }), nW[530] = rc, nW[531] = au, nW[532] = af, nW[533] = al?.documentTitle, nW[534] = t1) : t1 = nW[534],
+                    nW[535] !== nH || nW[536] !== au || nW[537] !== sy || nW[538] !== aS || nW[539] !== n1 || nW[540] !== su || nW[541] !== ij ? (tr = au || su ? null : (0, a.jsx)(rH.a, {
+                        conversationId: nH,
+                        canCopy: !sy,
+                        paragenEnabled: !aS,
+                        turns: ij,
+                        loadHistory: !n1 && !aS
+                    }), nW[535] = nH, nW[536] = au, nW[537] = sy, nW[538] = aS, nW[539] = n1, nW[540] = su, nW[541] = ij, nW[542] = tr) : tr = nW[542];
+                    let b = null != r7 || r0;nW[543] !== id || nW[544] !== su || nW[545] !== b ? (ts = (0, a.jsx)(nr.a, {
+                        isWorkConversation: su,
+                        hasConversationContent: b,
+                        hasLoadError: id
+                    }), nW[543] = id, nW[544] = su, nW[545] = b, nW[546] = ts) : ts = nW[546],
+                    nW[547] !== r7 || nW[548] !== nH || nW[549] !== id || nW[550] !== r0 || nW[551] !== it || nW[552] !== au || nW[553] !== si.pathname || nW[554] !== ap || nW[555] !== n2 ? (to = au || it || id || null == r7 && !r0 ? null : (0, a.jsxs)(a.Fragment, {
+                        children: [(0, a.jsx)(of, {
+                            sharedConversationId: n2
+                        }), (0, a.jsx)(a.Fragment, {
+                            children: (0, a.jsx)(tD.a, {
+                                onCommit: () => tB.a.contentCommitted(ap, nH, n2, si.pathname),
+                                onPaint: () => tB.a.contentVisible(ap, nH, n2)
+                            }, n2 ?? nH)
+                        })]
+                    }), nW[547] = r7, nW[548] = nH, nW[549] = id, nW[550] = r0, nW[551] = it, nW[552] = au, nW[553] = si.pathname, nW[554] = ap, nW[555] = n2, nW[556] = to) : to = nW[556],
+                    nW[557] !== am?.authMethod || nW[558] !== sq || nW[559] !== sV || nW[560] !== r7 || nW[561] !== i$ || nW[562] !== nH || nW[563] !== sn || nW[564] !== rc || nW[565] !== oD || nW[566] !== ex || nW[567] !== sA || nW[568] !== ig || nW[569] !== iH || nW[570] !== ad || nW[571] !== oM || nW[572] !== aW || nW[573] !== s3 || nW[574] !== au || nW[575] !== s4 || nW[576] !== aS || nW[577] !== n1 || nW[578] !== rD || nW[579] !== su || nW[580] !== iY || nW[581] !== sl?.sidebarAutomationId || nW[582] !== sc || nW[583] !== s9 || nW[584] !== sK || nW[585] !== s6 || nW[586] !== sO || nW[587] !== oS || nW[588] !== oj.length || nW[589] !== ap || nW[590] !== aV || nW[591] !== oB || nW[592] !== ai || nW[593] !== aJ || nW[594] !== ik || nW[595] !== oX || nW[596] !== iW || nW[597] !== iS || nW[598] !== o3 || nW[599] !== a0 || nW[600] !== al ? (tl = au || null != al ? null : (0, a.jsxs)(rK.a, {
+                        chatIcon: null == sK ? void 0 : s9,
+                        header: null != iY ? (0, a.jsxs)(a.Fragment, {
+                            children: [(0, a.jsx)(a.Fragment, {
+                                children: iY
+                            }), null]
+                        }) : i$,
+                        title: rc,
+                        isArchivedPreview: ad,
+                        children: [null, am?.authMethod === "chatgpt" ? (0, a.jsx)(tS.t, {
+                            productExperience: su ? "work" : "chat"
+                        }) : null, aS ? (0, a.jsx)(ob.a, {
+                            children: null == sO ? null : (0, a.jsx)(a.Fragment, {
+                                children: (0, a.jsx)(oE, {
+                                    data: sO
+                                })
+                            })
+                        }) : null, ik ? (0, a.jsx)(rV, {
+                            conversationId: nH,
+                            scheduledAutomationId: sc ? sl?.sidebarAutomationId : void 0
+                        }, nH) : null, oX ? (0, a.jsx)(ry, {
+                            composerActions: iS,
+                            conversationId: o3,
+                            controlledState: oM ? {
+                                isOpen: oD.isOpen,
+                                shouldPreventAutoFocus: oD.shouldPreventAutoFocus,
+                                onOpenChange: e => {
+                                    oB({
+                                        ...oD,
+                                        isOpen: e,
+                                        shouldPreventAutoFocus: !e && oD.shouldPreventAutoFocus
+                                    })
+                                }
+                            } : void 0,
+                            readData: !oM || oD.isOpen ? ex : null,
+                            showSources: !oM,
+                            shouldBlockExternalEgress: aJ
+                        }) : null, n1 && !aS && !ad && null == sA && null == sV && null == sK && !s3 && null != oS && (0, p.a)(oS).some(ir) ? (0, a.jsx)(T.a.HeaderAction, {
+                            actionId: "chatgpt-conversation-save",
+                            align: "end",
+                            order: 100,
+                            children: (0, a.jsx)(oq, {
+                                conversationId: nH
+                            })
+                        }) : null, iW ? (0, a.jsx)(sx.b, {
+                            hasTitleMenu: iH,
+                            menu: aS || null == aV ? (0, a.jsx)(sv, {}) : (0, a.jsx)(sg, {
+                                isTitleMenu: iH,
+                                conversationId: nH,
+                                title: rc,
+                                isHandoffPending: aW,
+                                isArchived: r7?.is_archived === !0,
+                                isChatConversation: null != r7 && !su,
+                                onHandoff: sq ? ig : void 0,
+                                onOpenMessage: async e => {
+                                    aH.current?.signal.aborted === !1 && ap.get(S.b)?.pathname === ap.value.pathname && await aR.current?.scrollToMessage(e)
+                                },
+                                projectId: sK,
+                                projectName: s6,
+                                serverConversationId: aV,
+                                conversationOrigin: sn
+                            }),
+                            children: aS || s4 ? null : (0, a.jsx)(ay, {
+                                conversationId: nH,
+                                projectId: sK,
+                                sharedProjectConversation: ai,
+                                isReady: (null != aV || null != ai) && oj.length > 0 && (a0 ?? r7?.current_node) != null,
+                                isRestricted: aJ || s3,
+                                isStreaming: rD
+                            })
+                        }) : null]
+                    }), nW[557] = am?.authMethod, nW[558] = sq, nW[559] = sV, nW[560] = r7, nW[561] = i$, nW[562] = nH, nW[563] = sn, nW[564] = rc, nW[565] = oD, nW[566] = ex, nW[567] = sA, nW[568] = ig, nW[569] = iH, nW[570] = ad, nW[571] = oM, nW[572] = aW, nW[573] = s3, nW[574] = au, nW[575] = s4, nW[576] = aS, nW[577] = n1, nW[578] = rD, nW[579] = su, nW[580] = iY, nW[581] = sl?.sidebarAutomationId, nW[582] = sc, nW[583] = s9, nW[584] = sK, nW[585] = s6, nW[586] = sO, nW[587] = oS, nW[588] = oj.length, nW[589] = ap, nW[590] = aV, nW[591] = oB, nW[592] = ai, nW[593] = aJ, nW[594] = ik, nW[595] = oX, nW[596] = iW, nW[597] = iS, nW[598] = o3, nW[599] = a0, nW[600] = al, nW[601] = tl) : tl = nW[601],
+                    th = null,
+                    tn = ra.a,
+                    t_ = aM,
+                    tT = sn,
+                    tP = !ah || !iC || ix.isHidden || i_ || sQ || sy || r4 || ad || sm || sj || sI || sr || rG || rF,
+                    tE = n1,
+                    tA = sK,
+                    tM = null != sV,
+                    tt = t0.c,
+                    tm = sf,
+                    nW[602] !== au || nW[603] !== sd || nW[604] !== su || nW[605] !== iO || nW[606] !== al ? (tg = au || null != al ? iO : sd && (0, t5.a)() && !su && (0, a.jsx)("div", {
+                        className: "h-px",
+                        "aria-hidden": !0
+                    }), nW[602] = au, nW[603] = sd, nW[604] = su, nW[605] = iO, nW[606] = al, nW[607] = tg) : tg = nW[607],
+                    tf = as;
+                    let C = null == oi ? "flex h-full min-h-0 flex-col" : "h-full",
+                        w = r8 ?? rc,
+                        _ = !sy,
+                        I = !ak && !au && !aS && !iy && !ix.isHidden,
+                        j = aJ || sw,
+                        P = so?.isFullWidth === !0,
+                        E = null == so ? o2.contentShift : void 0,
+                        A = oi?.selectedIndex;nW[608] !== iI || nW[609] !== nH || nW[610] !== oi ? (e = null != oi ? (0, a.jsx)(sz, {
+                        conversationId: nH,
+                        placement: "composer",
+                        canStartSection: iI
+                    }) : void 0, nW[608] = iI, nW[609] = nH, nW[610] = oi, nW[611] = e) : e = nW[611],
+                    nW[612] !== nH || nW[613] !== oi ? (t = null != oi ? (0, a.jsx)(sG, {
+                        conversationId: nH
+                    }) : void 0, nW[612] = nH, nW[613] = oi, nW[614] = t) : t = nW[614];
+                    let M = !su,
+                        k = ol ? null : ie;nW[615] !== r2 || nW[616] !== iu ? (n = iu ? () => {
+                        r2.refetch({
+                            cancelRefetch: !1
+                        })
+                    } : void 0, nW[615] = r2, nW[616] = iu, nW[617] = n) : n = nW[617];
+                    let R = oj.length > 0,
+                        N = eF,
+                        O = !s3 && (null == sK || null != sX),
+                        F = null == oi && !st,
+                        G = r2.isFetching,
+                        z = !ol && rD;nW[618] !== r7?.is_archived || nW[619] !== nH || nW[620] !== ad || nW[621] !== au || nW[622] !== aS || nW[623] !== n1 || nW[624] !== rD || nW[625] !== su ? (r = au || !su || aS || ad || r7?.is_archived === !0 || n1 ? null : (0, a.jsx)(f.Suspense, {
+                        fallback: null,
+                        children: (0, a.jsx)(sF, {
+                            conversationId: nH,
+                            isTurnActive: rD
+                        })
+                    }), nW[618] = r7?.is_archived, nW[619] = nH, nW[620] = ad, nW[621] = au, nW[622] = aS, nW[623] = n1, nW[624] = rD, nW[625] = su, nW[626] = r) : r = nW[626],
+                    nW[627] !== nH || nW[628] !== ad || nW[629] !== aV ? (s = ad ? (0, a.jsx)(tY.a, {
+                        conversationId: aV ?? nH,
+                        kind: "chatgpt"
+                    }, aV ?? nH) : void 0, nW[627] = nH, nW[628] = ad, nW[629] = aV, nW[630] = s) : s = nW[630];
+                    let B = !ol && oA;nW[631] !== sV ? (o = null != sV ? (0, a.jsx)(sW.GptPluginMigrationBanner, {
+                        gizmoId: sV
+                    }) : null, nW[631] = sV, nW[632] = o) : o = nW[632],
+                    nW[633] !== sq || nW[634] !== ig || nW[635] !== aW || nW[636] !== n1 || nW[637] !== s_ || nW[638] !== rQ ? (i = s_ && !n1 ? (0, a.jsx)(rB, {
+                        canConvert: sq,
+                        isChatInstantAvailable: !rQ,
+                        isConverting: aW,
+                        onConvert: ig
+                    }) : null, nW[633] = sq, nW[634] = ig, nW[635] = aW, nW[636] = n1, nW[637] = s_, nW[638] = rQ, nW[639] = i) : i = nW[639],
+                    nW[640] !== r5 || nW[641] !== sm ? (l = r5.bind(null, sm), nW[640] = r5, nW[641] = sm, nW[642] = l) : l = nW[642],
+                    nW[643] !== iv || nW[644] !== aS || nW[645] !== n0 ? (c = e => {
+                        n0?.(e), aS && iv()
+                    }, nW[643] = iv, nW[644] = aS, nW[645] = n0, nW[646] = c) : c = nW[646],
+                    nW[647] !== r2.isFetching || nW[648] !== sQ || nW[649] !== aM || nW[650] !== sV || nW[651] !== aa || nW[652] !== nH || nW[653] !== iT || nW[654] !== n$ || nW[655] !== id || nW[656] !== nV || nW[657] !== aI || nW[658] !== i_ || nW[659] !== oI || nW[660] !== r4 || nW[661] !== it || nW[662] !== ak || nW[663] !== au || nW[664] !== aS || nW[665] !== n1 || nW[666] !== sa || nW[667] !== eF || nW[668] !== n4 || nW[669] !== nJ || nW[670] !== aZ || nW[671] !== n2 || nW[672] !== r6 || nW[673] !== iC || nW[674] !== ah || nW[675] !== w || nW[676] !== _ || nW[677] !== I || nW[678] !== j || nW[679] !== P || nW[680] !== E || nW[681] !== A || nW[682] !== e || nW[683] !== t || nW[684] !== M || nW[685] !== k || nW[686] !== n || nW[687] !== R || nW[688] !== O || nW[689] !== F || nW[690] !== z || nW[691] !== r || nW[692] !== s || nW[693] !== B || nW[694] !== o || nW[695] !== i || nW[696] !== l || nW[697] !== c || nW[698] !== nX || nW[699] !== ij || nW[700] !== al ? (d = (0, a.jsx)(ic, {
+                        ref: aR,
+                        printTitle: w,
+                        trackShownImpressions: _,
+                        trackReadState: I,
+                        workspace: al,
+                        shouldBlockMcpApps: j,
+                        isCoveredByFloatingPanel: P,
+                        isFormOnly: ak,
+                        isInlinePreview: au,
+                        hideModelPicker: nV,
+                        showFilePicker: ah,
+                        disableAutoFocus: n$,
+                        transcriptPresentation: nX,
+                        scrollOrigin: nJ,
+                        composerRef: aO,
+                        contentX: E,
+                        conversationId: nH,
+                        composerConversationId: aM,
+                        sectionIndex: A,
+                        composerLeadingContent: aa,
+                        aboveComposerContent: e,
+                        historyLoadingContent: t,
+                        requiredSystemHints: n4,
+                        isChatConversation: M,
+                        customGptId: sV,
+                        conversationLoadingLabel: iT,
+                        entries: ij,
+                        errorMessage: k,
+                        hasLoadError: id,
+                        onRetryLoad: n,
+                        hasRenderableTurns: R,
+                        isComposerDisabled: i_,
+                        readOnlyPlaceholder: N,
+                        moreDetailsEnabled: O,
+                        isConversationEmpty: oI,
+                        showEmptyState: F,
+                        isConversationFetching: G,
+                        isConversationLoading: it,
+                        isSharedConversation: aS,
+                        isSubmitDisabled: r4,
+                        isTemporaryChat: n1,
+                        isTurnActive: z,
+                        isWorkConversation: sa,
+                        onboardingPrelude: r,
+                        scrollStateConversationId: aZ,
+                        initialResponsePlacementKey: aI,
+                        sharedConversationId: n2,
+                        sharedPostRegulatedConnectorKind: r6,
+                        showComposer: iC,
+                        archivedPreviewFooter: s,
+                        showPendingLoadingMessage: B,
+                        gptPluginMigrationBanner: o,
+                        awaitingGptContinuation: sQ,
+                        workOnlyConversionBanner: i,
+                        onAddSelectedText: l,
+                        onSubmitAccepted: c
+                    }), nW[647] = r2.isFetching, nW[648] = sQ, nW[649] = aM, nW[650] = sV, nW[651] = aa, nW[652] = nH, nW[653] = iT, nW[654] = n$, nW[655] = id, nW[656] = nV, nW[657] = aI, nW[658] = i_, nW[659] = oI, nW[660] = r4, nW[661] = it, nW[662] = ak, nW[663] = au, nW[664] = aS, nW[665] = n1, nW[666] = sa, nW[667] = eF, nW[668] = n4, nW[669] = nJ, nW[670] = aZ, nW[671] = n2, nW[672] = r6, nW[673] = iC, nW[674] = ah, nW[675] = w, nW[676] = _, nW[677] = I, nW[678] = j, nW[679] = P, nW[680] = E, nW[681] = A, nW[682] = e, nW[683] = t, nW[684] = M, nW[685] = k, nW[686] = n, nW[687] = R, nW[688] = O, nW[689] = F, nW[690] = z, nW[691] = r, nW[692] = s, nW[693] = B, nW[694] = o, nW[695] = i, nW[696] = l, nW[697] = c, nW[698] = nX, nW[699] = ij, nW[700] = al, nW[701] = d) : d = nW[701],
+                    nW[702] !== oD || nW[703] !== ex || nW[704] !== oM || nW[705] !== aJ || nW[706] !== oX || nW[707] !== iS || nW[708] !== o3 || nW[709] !== o2 ? (u = oX && null != ex && (!oM || oD.isOpen) ? (0, a.jsx)(rv, {
+                        composerActions: iS,
+                        conversationId: o3,
+                        readData: ex,
+                        showSources: !oM,
+                        display: o2,
+                        shouldBlockExternalEgress: aJ
+                    }) : null, nW[702] = oD, nW[703] = ex, nW[704] = oM, nW[705] = aJ, nW[706] = oX, nW[707] = iS, nW[708] = o3, nW[709] = o2, nW[710] = u) : u = nW[710],
+                    nW[711] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, a.jsx)(rn.a, {}), nW[711] = m) : m = nW[711],
+                    nW[712] !== au ? (g = null, nW[712] = au, nW[713] = g) : g = nW[713],
+                    nW[714] !== sy || nW[715] !== C || nW[716] !== d || nW[717] !== u || nW[718] !== g ? (tv = (0, a.jsxs)("div", {
+                        className: C,
+                        inert: sy,
+                        children: [d, u, m, g]
+                    }), nW[714] = sy, nW[715] = C, nW[716] = d, nW[717] = u, nW[718] = g, nW[719] = tv) : tv = nW[719],
+                    ty = !sm && (0, tN.c)() ? (0, a.jsxs)(a.Fragment, {
+                        children: [(0, a.jsx)(o6, {
+                            conversationId: nH,
+                            shouldBlockExternalEgress: aJ || sw,
+                            widgets: v.filter(ia)
+                        }), aS ? null : (0, a.jsx)(tF.a, {
+                            blockedWidgetSource: rJ ? void 0 : "descriptor",
+                            transcriptMcpAppIds: (0, o4.c)(nH, v, rJ),
+                            shouldBlockExternalEgress: aJ || sw
+                        })]
+                    }) : null
+                }
+                nW[366] = r2, nW[367] = am?.authMethod, nW[368] = sQ, nW[369] = as, nW[370] = sw, nW[371] = sq, nW[372] = iu, nW[373] = iI, nW[374] = aM, nW[375] = sV, nW[376] = aa, nW[377] = r7, nW[378] = i$, nW[379] = nH, nW[380] = iT, nW[381] = sn, nW[382] = rc, nW[383] = oD, nW[384] = n$, nW[385] = ie, nW[386] = so, nW[387] = sf, nW[388] = ex, nW[389] = sA, nW[390] = r5, nW[391] = ig, nW[392] = iv, nW[393] = id, nW[394] = r0, nW[395] = iH, nW[396] = nV, nW[397] = aI, nW[398] = ad, nW[399] = oM, nW[400] = i_, nW[401] = oI, nW[402] = r4, nW[403] = it, nW[404] = ak, nW[405] = aW, nW[406] = s3, nW[407] = au, nW[408] = s4, nW[409] = iy, nW[410] = rJ, nW[411] = sy, nW[412] = sm, nW[413] = sd, nW[414] = !1, nW[415] = aS, nW[416] = sj, nW[417] = rG, nW[418] = rF, nW[419] = n1, nW[420] = sa, nW[421] = rD, nW[422] = su, nW[423] = s_, nW[424] = rQ, nW[425] = sI, nW[426] = sr, nW[427] = st, nW[428] = iY, nW[429] = si.pathname, nW[430] = r1, nW[431] = sl?.sidebarAutomationId, nW[432] = n0, nW[433] = sc, nW[434] = sX, nW[435] = s9, nW[436] = sK, nW[437] = s6, nW[438] = eF, nW[439] = sO, nW[440] = oS, nW[441] = oj, nW[442] = n4, nW[443] = ol, nW[444] = ix, nW[445] = r8, nW[446] = ap, nW[447] = nJ, nW[448] = aZ, nW[449] = oi, nW[450] = iO, nW[451] = aV, nW[452] = oB, nW[453] = n2, nW[454] = af, nW[455] = r6, nW[456] = ai, nW[457] = os, nW[458] = aJ, nW[459] = ik, nW[460] = oX, nW[461] = iC, nW[462] = ah, nW[463] = iW, nW[464] = oA, nW[465] = iS, nW[466] = o3, nW[467] = o2, nW[468] = a0, nW[469] = nX, nW[470] = ij, nW[471] = al, nW[472] = tt, nW[473] = tn, nW[474] = ta, nW[475] = tr, nW[476] = ts, nW[477] = to, nW[478] = tl, nW[479] = th, nW[480] = tp, nW[481] = tm, nW[482] = tg, nW[483] = tf, nW[484] = tv, nW[485] = ty, nW[486] = t_, nW[487] = tT, nW[488] = tP, nW[489] = tE, nW[490] = tA, nW[491] = tM, nW[492] = tk, nW[493] = tq, nW[494] = tU, nW[495] = tX, nW[496] = t1
+            } else tt = nW[472], tn = nW[473], ta = nW[474], tr = nW[475], ts = nW[476], to = nW[477], tl = nW[478], th = nW[479], tp = nW[480], tm = nW[481], tg = nW[482], tf = nW[483], tv = nW[484], ty = nW[485], t_ = nW[486], tT = nW[487], tP = nW[488], tE = nW[489], tA = nW[490], tM = nW[491], tk = nW[492], tq = nW[493], tU = nW[494], tX = nW[495], t1 = nW[496];
+            if (tp !== Symbol.for("react.early_return_sentinel")) return tp;
+            nW[720] !== tt || nW[721] !== tm || nW[722] !== tg || nW[723] !== tf || nW[724] !== tv || nW[725] !== ty ? (t2 = (0, a.jsxs)(tt, {
+                floatingPanelWidth: tm,
+                header: tg,
+                banner: tf,
+                children: [tv, ty]
+            }), nW[720] = tt, nW[721] = tm, nW[722] = tg, nW[723] = tf, nW[724] = tv, nW[725] = ty, nW[726] = t2) : t2 = nW[726], nW[727] !== tn || nW[728] !== t2 || nW[729] !== t_ || nW[730] !== tT || nW[731] !== tP || nW[732] !== tE || nW[733] !== tA || nW[734] !== tM ? (t3 = (0, a.jsx)(tn, {
+                conversationId: t_,
+                conversationOrigin: tT,
+                disabled: tP,
+                isTemporaryChat: tE,
+                projectId: tA,
+                requiresGizmoId: tM,
+                children: t2
+            }), nW[727] = tn, nW[728] = t2, nW[729] = t_, nW[730] = tT, nW[731] = tP, nW[732] = tE, nW[733] = tA, nW[734] = tM, nW[735] = t3) : t3 = nW[735], nW[736] !== ta || nW[737] !== tr || nW[738] !== ts || nW[739] !== to || nW[740] !== tl || nW[741] !== th || nW[742] !== t3 || nW[743] !== tk || nW[744] !== tq || nW[745] !== tU || nW[746] !== tX || nW[747] !== t1 ? (t7 = (0, a.jsxs)(ta, {
+                children: [tk, tq, tU, tX, t1, tr, ts, to, tl, th, t3]
+            }), nW[736] = ta, nW[737] = tr, nW[738] = ts, nW[739] = to, nW[740] = tl, nW[741] = th, nW[742] = t3, nW[743] = tk, nW[744] = tq, nW[745] = tU, nW[746] = tX, nW[747] = t1, nW[748] = t7) : t7 = nW[748];
+            let iX = t7,
+                iJ = !au && !sa,
+                iZ = aS || !r2.isFetchedAfterMount || r2.isFetching || r3 ? null : r2.error,
+                i0 = id ? r2.error : null,
+                i1 = null == sn && null == r7 ? null : su,
+                i2 = !su && !it;
+            return nW[749] !== aN || nW[750] !== aM || nW[751] !== n2 ? (nF = {
+                conversationId: aM,
+                composer: aN,
+                sharedConversationId: n2
+            }, nW[749] = aN, nW[750] = aM, nW[751] = n2, nW[752] = nF) : nF = nW[752], nW[753] !== iX || nW[754] !== nF ? (nz = (0, a.jsx)(nD.a, {
+                value: nF,
+                children: iX
+            }), nW[753] = iX, nW[754] = nF, nW[755] = nz) : nz = nW[755], nW[756] !== i2 || nW[757] !== nz ? (nB = (0, a.jsx)(C.a, {
+                enabled: i2,
+                children: nz
+            }), nW[756] = i2, nW[757] = nz, nW[758] = nB) : nB = nW[758], nW[759] !== iu || nW[760] !== aV || nW[761] !== iJ || nW[762] !== iZ || nW[763] !== i0 || nW[764] !== i1 || nW[765] !== nB ? (nL = (0, a.jsx)(J.a, {
+                showChatFallback: iJ,
+                conversationId: aV,
+                error: iZ,
+                loadError: i0,
+                canRetry: iu,
+                isWorkConversation: i1,
+                children: nB
+            }), nW[759] = iu, nW[760] = aV, nW[761] = iJ, nW[762] = iZ, nW[763] = i0, nW[764] = i1, nW[765] = nB, nW[766] = nL) : nL = nW[766], nL
+        }
+
+        function ia(e) {
+            return "chatgpt-hosted-widget" === e.type
+        }
+
+        function ir(e) {
+            return "user" === e.author.role
+        }
+
+        function is(e) {
+            return "mcp-tool-call" === e.type ? [e.callId] : []
+        }
+
+        function io(e) {
+            return "chatgpt-reasoning-group" === e.type ? e.items : e
+        }
+
+        function ii(e) {
+            let {
+                turn: t
+            } = e;
+            return t.items
+        }
+
+        function il(e) {
+            return "threadId" in e ? e.threadId : e.clientThreadId
+        }
+
+        function ic(e) {
+            let t, n, s, o, c, d, h, p, m, g, y, x, C, w, _, I, S, j, T, P, E, A, k, R, N, O, z, B, D, W = (0, r.c)(228),
+                {
+                    ref: H,
+                    printTitle: q,
+                    trackReadState: K,
+                    trackShownImpressions: U,
+                    composerRef: V,
+                    workspace: Q,
+                    shouldBlockMcpApps: Y,
+                    contentX: X,
+                    conversationId: J,
+                    sectionIndex: Z,
+                    composerConversationId: ee,
+                    composerLeadingContent: et,
+                    aboveComposerContent: en,
+                    historyLoadingContent: ea,
+                    requiredSystemHints: er,
+                    isCoveredByFloatingPanel: es,
+                    isFormOnly: eo,
+                    isInlinePreview: ei,
+                    hideModelPicker: el,
+                    showFilePicker: ec,
+                    disableAutoFocus: ed,
+                    transcriptPresentation: eu,
+                    scrollOrigin: eh,
+                    isChatConversation: ep,
+                    customGptId: em,
+                    conversationLoadingLabel: eg,
+                    entries: ev,
+                    errorMessage: ey,
+                    hasLoadError: eb,
+                    onRetryLoad: ex,
+                    hasRenderableTurns: eC,
+                    isComposerDisabled: ew,
+                    readOnlyPlaceholder: eI,
+                    moreDetailsEnabled: eS,
+                    isConversationEmpty: ej,
+                    showEmptyState: eT,
+                    isConversationFetching: eP,
+                    isConversationLoading: eE,
+                    isSharedConversation: eA,
+                    isSubmitDisabled: eM,
+                    isTemporaryChat: ek,
+                    isTurnActive: eO,
+                    isWorkConversation: eF,
+                    onboardingPrelude: ez,
+                    scrollStateConversationId: eB,
+                    initialResponsePlacementKey: eL,
+                    sharedConversationId: eW,
+                    sharedPostRegulatedConnectorKind: eH,
+                    showComposer: eq,
+                    archivedPreviewFooter: eK,
+                    showPendingLoadingMessage: eU,
+                    gptPluginMigrationBanner: eV,
+                    awaitingGptContinuation: eQ,
+                    workOnlyConversionBanner: e$,
+                    onAddSelectedText: eY,
+                    onSubmitAccepted: eX
+                } = e,
+                eZ = void 0 === eT || eT,
+                e0 = (0, u.y)(G.a),
+                e1 = (0, u.z)(null),
+                e2 = (0, u.x)(e_.f, (0, f.useContext)(M.a)),
+                e4 = (0, u.z)(tK.a),
+                e5 = (0, u.x)(ne.a, J),
+                e6 = Q?.fullscreenContent != null ? "content" : "workspace",
+                e7 = (0, $.a)(ei ? "embedded" : e6),
+                e8 = (0, u.z)(s0.a),
+                e9 = eq && e8?.source.turnContext.conversationId !== ee,
+                te = "floating" === e7.placement,
+                [tt, tn] = (0, f.useState)(!1),
+                ta = Q?.fullscreenContent != null || te && tt && !e7.isHidden && !eo ? "floating" : "main",
+                tr = (0, u.z)(sV.h),
+                to = ep && null == eW && null == e2 && null == eK,
+                ti = !eE && !eO && !eb && ej && !eC,
+                tl = (0, u.x)(F.i, J),
+                tc = eZ && to && ti && null == tl && !e5 && !te,
+                td = null == em ? "centered-home" : "home",
+                tu = eZ && !e5 && (!to || !ej),
+                tm = (0, f.useRef)(null),
+                tb = (0, f.useRef)(null),
+                [tx, tC] = (0, f.useState)(null),
+                [tw, t_] = (0, f.useState)(!1),
+                tI = ((D = (0, r.c)(7))[0] !== tx || D[1] !== ev ? (O = () => ({
+                    async scrollToMessage(e) {
+                        let t = ev.find(t => {
+                            let {
+                                turn: n
+                            } = t;
+                            return n.messageIds.includes(e)
+                        });
+                        null != t && null != tx && await tx.scrollToKey(t.turnKey, void 0, {
+                            align: "top"
+                        })
+                    }
+                }), z = [ev, tx], D[0] = tx, D[1] = ev, D[2] = O, D[3] = z) : (O = D[2], z = D[3]), (0, f.useImperativeHandle)(H, O, z), D[4] !== tx?.scrollToKey || D[5] !== ev ? (B = e => {
+                    let t = ev.findLast(o2);
+                    return (0, o1.a)(tx?.scrollToKey, t?.turnKey, e)
+                }, D[4] = tx?.scrollToKey, D[5] = ev, D[6] = B) : B = D[6], B);
+            W[0] !== ev ? (t = () => ev, W[0] = ev, W[1] = t) : t = W[1];
+            let tS = (0, t9.a)(t),
+                [tj, tP] = (0, f.useState)(null);
+            W[2] !== ei || W[3] !== e0 || W[4] !== eB ? (n = () => ei ? 0 : e0.get(t3.a, eB), W[2] = ei, W[3] = e0, W[4] = eB, W[5] = n) : n = W[5];
+            let [tE, tA] = (0, f.useState)(n);
+            W[6] !== ei || W[7] !== tj || W[8] !== e0 || W[9] !== eB ? (s = e => {
+                ei || e0.set(t3.a, eB, (0, t1.a)(e, tj?.getHeightPx() ?? 0))
+            }, W[6] = ei, W[7] = tj, W[8] = e0, W[9] = eB, W[10] = s) : s = W[10];
+            let tk = (0, t9.a)(s);
+            W[11] !== ev || W[12] !== tx ? (o = (e, t) => (0, tp.c)(tx, ev.find(t => {
+                let {
+                    id: n
+                } = t;
+                return n === e
+            })?.turnKey, t), W[11] = ev, W[12] = tx, W[13] = o) : o = W[13];
+            let tR = (0, t9.a)(o);
+            W[14] !== J || W[15] !== ev || W[16] !== tx ? (c = async e => {
+                let t = ev.find(t => {
+                    let {
+                        turn: n
+                    } = t;
+                    return n.messageIds.includes(e)
+                });
+                null != t && null != tx && await tx.scrollToKey(t.turnKey, t => t.querySelector(`[id="${CSS.escape(`delayed-image-gen-${J}-${e}`)}"]`), {
+                    align: "center"
+                })
+            }, W[14] = J, W[15] = ev, W[16] = tx, W[17] = c) : c = W[17];
+            let tN = (0, t9.a)(c);
+            W[18] === Symbol.for("react.memo_cache_sentinel") ? (d = e => (0, tp.a)(tb.current, e), W[18] = d) : d = W[18];
+            let tO = (0, t9.a)(d),
+                tF = `chatgpt:${J}`;
+            if (W[19] !== J || W[20] !== tS || W[21] !== tO || W[22] !== ek || W[23] !== e0 || W[24] !== tR || W[25] !== eW || W[26] !== e2 || W[27] !== tF) {
+                let e;
+                W[29] !== J || W[30] !== ek || W[31] !== e0 || W[32] !== eW || W[33] !== e2 ? (e = async e => {
+                    let t = e0.get(F.j, J);
+                    !ek && null == eW && null == e2 && null != t && e0.get(eN.b) > 0 && await (0, eR.a)(e0, t, e)
+                }, W[29] = J, W[30] = ek, W[31] = e0, W[32] = eW, W[33] = e2, W[34] = e) : e = W[34], h = function(e) {
+                    let {
+                        getTurns: t,
+                        routeContextId: n,
+                        scrollAdapter: a,
+                        ensureHistory: r
+                    } = e, s = (0, ai.a)({
+                        contextId: n,
+                        searchMath: !0,
+                        getTurns: () => t().map(e => {
+                            let {
+                                id: t,
+                                turn: n
+                            } = e;
+                            return {
+                                turnKey: t,
+                                units: n.items.flatMap((e, t) => {
+                                    if ("user-message" === e.type) {
+                                        let n = e.message.trim();
+                                        return 0 === n.length ? [] : [{
+                                            unitId: (0, nq.a)("user", t),
+                                            text: n
+                                        }]
+                                    }
+                                    if ("assistant-message" === e.type) {
+                                        let n = (0, ac.a)(e.content, ef.b),
+                                            a = [],
+                                            r = "";
+                                        for (; e.content.includes(r);) r += "";
+                                        let s = (0, ao.a)(function e(t, n, a, r) {
+                                                let s = "",
+                                                    o = 0;
+                                                for (let i of t) {
+                                                    let t = n.indexOf(i.raw, o); - 1 !== t && (s += n.slice(o, t), s += function(t, n, a) {
+                                                        var r, s;
+                                                        if ("math" === t.type && "text" in t && "string" == typeof t.text) return a(t.text);
+                                                        if ("codexDirective" === (r = t).type && "name" in r && "string" == typeof r.name && "attributes" in r && null != r.attributes && "object" == typeof r.attributes) return function(e, t) {
+                                                            if (e.name === ef.a) {
+                                                                let n = (0, ad.a)(e.attributes),
+                                                                    a = (0, ad.b)(e.attributes),
+                                                                    r = null != n ? t[n] : null == a ? void 0 : t.find(e => (0, ef.l)(e) === a);
+                                                                if (null == r) return "";
+                                                                let s = (0, ef.i)(r);
+                                                                return "hidden" === s || "block" === s ? "" : (0, ef.j)(r) ?? ""
+                                                            }
+                                                            return e.name === as.a ? (0, al.a)(e.attributes, "label") ?? "" : e.name === as.b || e.name === as.c ? "" : e.name === ar.a ? e.text ?? "" : null
+                                                        }(t, n) ?? t.raw;
+                                                        if ("tokens" in t && Array.isArray(t.tokens)) return e(t.tokens, t.raw, n, a);
+                                                        if ("table" === t.type) return e([...t.header, ...t.rows.flat()].flatMap(e => e.tokens), t.raw, n, a);
+                                                        if (!("list" === (s = t).type && "items" in s && Array.isArray(s.items))) return t.raw;
+                                                        let o = "",
+                                                            i = 0;
+                                                        for (let r of t.items) {
+                                                            let s = t.raw.indexOf(r.raw, i); - 1 !== s && (o += t.raw.slice(i, s), o += e(r.tokens, r.raw, n, a), i = s + r.raw.length)
+                                                        }
+                                                        return o + t.raw.slice(i)
+                                                    }(i, a, r), o = t + i.raw.length)
+                                                }
+                                                return s + n.slice(o)
+                                            }(n, e.content, e.contentReferences, e => (a.push(e), r))),
+                                            o = 0 === a.length ? void 0 : s.split(r);
+                                        return 0 === s.length && 0 === a.length ? [] : [{
+                                            unitId: (0, nq.a)("assistant", t),
+                                            text: o?.join(" ") ?? s,
+                                            textChunks: o,
+                                            equations: a
+                                        }]
+                                    }
+                                    return []
+                                })
+                            }
+                        }),
+                        scrollAdapter: a
+                    });
+                    return {
+                        ...s,
+                        search: async (e, t) => (await r?.(t?.signal), t?.signal?.throwIfAborted(), s.search(e, t))
+                    }
+                }({
+                    getTurns: tS,
+                    routeContextId: tF,
+                    scrollAdapter: {
+                        scrollToTurn: tR,
+                        getTurnContainer: tO
+                    },
+                    ensureHistory: e
+                }), W[19] = J, W[20] = tS, W[21] = tO, W[22] = ek, W[23] = e0, W[24] = tR, W[25] = eW, W[26] = e2, W[27] = tF, W[28] = h
+            } else h = W[28];
+            let tG = h;
+            W[35] !== tG.contextId ? (p = {
+                containerRef: tb,
+                contextId: tG.contextId
+            }, W[35] = tG.contextId, W[36] = p) : p = W[36], (0, tv.a)(p);
+            let tz = e9 && null == eK,
+                tB = e4 && tz && !te,
+                tD = (0, tT.a)();
+            W[37] !== J || W[38] !== eC || W[39] !== es || W[40] !== Z || W[41] !== tD ? (m = {
+                conversationId: J,
+                sectionIndex: Z,
+                hasRenderableTurns: eC,
+                isCoveredByFloatingPanel: es,
+                shouldReduceMotion: tD,
+                containerRef: tb
+            }, W[37] = J, W[38] = eC, W[39] = es, W[40] = Z, W[41] = tD, W[42] = m) : m = W[42];
+            let tL = function(e) {
+                    let t, n, a, s = (0, r.c)(12),
+                        {
+                            conversationId: o,
+                            sectionIndex: i,
+                            hasRenderableTurns: l,
+                            isCoveredByFloatingPanel: c,
+                            shouldReduceMotion: d,
+                            containerRef: u
+                        } = e,
+                        h = (0, or.a)(0);
+                    s[0] !== o || s[1] !== i ? (t = {
+                        conversationId: o,
+                        sectionIndex: i
+                    }, s[0] = o, s[1] = i, s[2] = t) : t = s[2];
+                    let p = (0, f.useRef)(t);
+                    return s[3] !== u || s[4] !== o || s[5] !== l || s[6] !== c || s[7] !== i || s[8] !== h || s[9] !== d ? (n = () => {
+                        let e;
+                        if (!l) return;
+                        let t = p.current;
+                        p.current = {
+                            conversationId: o,
+                            sectionIndex: i
+                        };
+                        let n = u.current;
+                        if (null == n || d || c || t.conversationId !== o || null == t.sectionIndex || null == i || t.sectionIndex === i) return;
+                        let a = Math.sign(i - t.sectionIndex),
+                            r = () => {
+                                Array.from(n.querySelectorAll('[data-markdown-text-style="assistant-message"]')).some(oi) && 0 !== n.clientWidth && (s.disconnect(), h.set(a * n.clientWidth), e = (0, os.a)(h, 0, {
+                                    duration: .3,
+                                    ease: oo.d
+                                }))
+                            },
+                            s = new MutationObserver(r);
+                        return s.observe(n, {
+                            childList: !0,
+                            characterData: !0,
+                            subtree: !0
+                        }), r(), () => {
+                            s.disconnect(), e?.stop(), h.set(0)
+                        }
+                    }, a = [o, i, l, d, c, h, u], s[3] = u, s[4] = o, s[5] = l, s[6] = c, s[7] = i, s[8] = h, s[9] = d, s[10] = n, s[11] = a) : (n = s[10], a = s[11]), (0, f.useLayoutEffect)(n, a), h
+                }(m),
+                tW = tz && te,
+                [tH, tV] = (0, f.useState)(null),
+                [tQ, t$] = (0, f.useState)(null),
+                [tY, tJ] = (0, f.useState)(null),
+                tZ = eA && tz && !ew && !te && !e4,
+                [t4, t5] = (0, f.useState)(null);
+            W[43] !== eQ || W[44] !== J || W[45] !== eC || W[46] !== ek || W[47] !== eH || W[48] !== eq ? (g = eq && !eQ ? (0, a.jsx)(a.Fragment, {
+                children: (0, a.jsx)(ts.BrowserComposerDisclaimer, {
+                    supportsMessageDisclosures: !0,
+                    conversationId: J,
+                    hasUserMessage: eC,
+                    isTemporaryChat: ek,
+                    regulatedConnectorKindOverride: eH
+                })
+            }) : void 0, W[43] = eQ, W[44] = J, W[45] = eC, W[46] = ek, W[47] = eH, W[48] = eq, W[49] = g) : g = W[49];
+            let t6 = g;
+            W[50] !== J || W[51] !== ey || W[52] !== eC || W[53] !== ew || W[54] !== eM || W[55] !== eF || W[56] !== eq || W[57] !== eU ? (y = eC ? null : (0, a.jsx)(at.a, {
+                conversationId: J,
+                errorMessage: ey,
+                isWorkConversation: eF,
+                showPendingLoadingMessage: eU,
+                showRequestUserInputStatus: eq && !ew && !eM
+            }), W[50] = J, W[51] = ey, W[52] = eC, W[53] = ew, W[54] = eM, W[55] = eF, W[56] = eq, W[57] = eU, W[58] = y) : y = W[58];
+            let t7 = y;
+            W[59] !== J || W[60] !== eF || W[61] !== eW || W[62] !== e2 ? (x = eF && null == eW && null == e2 ? (0, a.jsx)(a.Fragment, {
+                children: (0, a.jsx)(e3, {
+                    conversationId: J
+                }, J)
+            }) : null, W[59] = J, W[60] = eF, W[61] = eW, W[62] = e2, W[63] = x) : x = W[63];
+            let t8 = x;
+            W[64] !== eK || W[65] !== t8 ? (C = null != eK ? (0, a.jsxs)(a.Fragment, {
+                children: [t8, eK]
+            }) : null, W[64] = eK, W[65] = t8, W[66] = C) : C = W[66];
+            let nt = C;
+            W[67] !== en || W[68] !== nt || W[69] !== eQ || W[70] !== ee || W[71] !== et || W[72] !== V || W[73] !== J || W[74] !== ed || W[75] !== t6 || W[76] !== t7 || W[77] !== ev || W[78] !== t8 || W[79] !== tH || W[80] !== eV || W[81] !== eb || W[82] !== eC || W[83] !== el || W[84] !== e4 || W[85] !== ew || W[86] !== eE || W[87] !== es || W[88] !== eo || W[89] !== te || W[90] !== tr || W[91] !== ei || W[92] !== eA || W[93] !== eM || W[94] !== ek || W[95] !== eF || W[96] !== eX || W[97] !== eI || W[98] !== tZ || W[99] !== er || W[100] !== tj || W[101] !== tI || W[102] !== e7.isHidden || W[103] !== eW || W[104] !== e2 || W[105] !== e9 || W[106] !== ec || W[107] !== tW || W[108] !== tB || W[109] !== K || W[110] !== U || W[111] !== ta || W[112] !== e$ || W[113] !== Q ? (w = nt ?? (e9 ? (0, a.jsxs)(rR.a.Provider, {
+                value: ev.at(-1) ?? null,
+                children: [eo || te ? null : (0, a.jsx)(ty.a, {
+                    onNavigate: tI
+                }, J), te ? null : et, (0, a.jsx)(ih, {
+                    requiredSystemHints: er,
+                    composerRef: V,
+                    workspace: Q,
+                    isInlinePreview: ei,
+                    hideModelPicker: el,
+                    showFilePicker: ec,
+                    disableAutoFocus: ed,
+                    conversationId: ee,
+                    isImageEditComposer: tr,
+                    disabled: ew,
+                    readOnlyPlaceholder: eI,
+                    awaitingGptContinuation: eQ,
+                    headerContent: t8,
+                    aboveComposerContent: (0, a.jsxs)(a.Fragment, {
+                        children: [tZ ? (0, a.jsx)("div", {
+                            ref: tJ,
+                            className: "empty:hidden"
+                        }) : null, en, !eE && !eb && eC && !eQ && e$, e4 ? null : eV, tW && t7]
+                    }),
+                    isFullscreenComposer: te,
+                    isHidden: e7.isHidden,
+                    trackReadState: K && !es,
+                    trackShownImpressions: U && !es,
+                    isSharedConversation: eA,
+                    isSubmitDisabled: eM,
+                    followupPortalTarget: tH,
+                    takeoverDisclaimerRef: t5,
+                    showConversationFollowups: null == eW && null == e2 && !ek && !eF && !te,
+                    isTemporaryChat: ek,
+                    isWorkConversation: eF,
+                    responseSpacerState: tj,
+                    renderTranscript: e => {
+                        let {
+                            isVisible: t
+                        } = e;
+                        return (0, a.jsx)(ak, {
+                            entries: ev,
+                            historyLoader: ek || null != eW || null != e2 ? null : (0, a.jsx)(s5.a, {
+                                conversationId: J
+                            }),
+                            isVisible: t,
+                            rendersWidgets: "floating" === ta,
+                            onVisibilityChange: tn
+                        }, J)
+                    },
+                    showVoiceStage: !tB,
+                    voiceDisclaimer: e4 && !tB ? t6 : void 0,
+                    onSubmitAccepted: e => {
+                        tA(0), eX?.(e)
+                    }
+                }, `${ee}:${tr?"image-edit":"chat"}`)]
+            }) : t8), W[67] = en, W[68] = nt, W[69] = eQ, W[70] = ee, W[71] = et, W[72] = V, W[73] = J, W[74] = ed, W[75] = t6, W[76] = t7, W[77] = ev, W[78] = t8, W[79] = tH, W[80] = eV, W[81] = eb, W[82] = eC, W[83] = el, W[84] = e4, W[85] = ew, W[86] = eE, W[87] = es, W[88] = eo, W[89] = te, W[90] = tr, W[91] = ei, W[92] = eA, W[93] = eM, W[94] = ek, W[95] = eF, W[96] = eX, W[97] = eI, W[98] = tZ, W[99] = er, W[100] = tj, W[101] = tI, W[102] = e7.isHidden, W[103] = eW, W[104] = e2, W[105] = e9, W[106] = ec, W[107] = tW, W[108] = tB, W[109] = K, W[110] = U, W[111] = ta, W[112] = e$, W[113] = Q, W[114] = w) : w = W[114];
+            let nn = w;
+            W[115] !== J || W[116] !== es || W[117] !== ei || W[118] !== e1 || W[119] !== eW || W[120] !== e2 ? (_ = void 0, W[115] = J, W[116] = es, W[117] = ei, W[118] = e1, W[119] = eW, W[120] = e2, W[121] = _) : _ = W[121];
+            let na = _,
+                nr = es || void 0;
+            W[122] === Symbol.for("react.memo_cache_sentinel") ? (I = null, W[122] = I) : I = W[122], W[123] !== J || W[124] !== es || W[125] !== te || W[126] !== K ? (S = !K || te || es ? null : (0, a.jsx)(rk.a, {
+                conversationId: J
+            }), W[123] = J, W[124] = es, W[125] = te, W[126] = K, W[127] = S) : S = W[127], W[128] !== eK || W[129] !== J || W[130] !== ei || W[131] !== eW || W[132] !== e2 ? (j = ei || null != eW || null != e2 || null != eK ? null : (0, a.jsx)(rl, {
+                conversationId: J
+            }, J), W[128] = eK, W[129] = J, W[130] = ei, W[131] = eW, W[132] = e2, W[133] = j) : j = W[133], W[134] !== J || W[135] !== eE || W[136] !== ek || W[137] !== eW || W[138] !== e2 ? (T = eE || ek || null != eW || null != e2 ? null : (0, a.jsx)(s6, {
+                conversationId: J
+            }), W[134] = J, W[135] = eE, W[136] = ek, W[137] = eW, W[138] = e2, W[139] = T) : T = W[139], W[140] !== J || W[141] !== ev || W[142] !== tw || W[143] !== eP || W[144] !== eE || W[145] !== ei || W[146] !== tI || W[147] !== eW || W[148] !== e2 || W[149] !== tx ? (P = ei || eE || null != eW || null != e2 ? null : (0, a.jsxs)(a.Fragment, {
+                children: [(0, a.jsx)(L, {
+                    conversationId: J,
+                    entries: ev,
+                    turnListApi: tx
+                }), (0, a.jsx)(tX.a, {
+                    ready: !eP && tw && null != tx && ev.length > 0,
+                    onNavigate: tI
+                })]
+            }), W[140] = J, W[141] = ev, W[142] = tw, W[143] = eP, W[144] = eE, W[145] = ei, W[146] = tI, W[147] = eW, W[148] = e2, W[149] = tx, W[150] = P) : P = W[150], W[151] !== eK || W[152] !== tc || W[153] !== ee || W[154] !== X || W[155] !== tl || W[156] !== J || W[157] !== eg || W[158] !== tG || W[159] !== t6 || W[160] !== t7 || W[161] !== ev || W[162] !== nn || W[163] !== tk || W[164] !== eb || W[165] !== eC || W[166] !== ea || W[167] !== td || W[168] !== eL || W[169] !== tE || W[170] !== e4 || W[171] !== e5 || W[172] !== ew || W[173] !== eP || W[174] !== eE || W[175] !== es || W[176] !== eo || W[177] !== te || W[178] !== ei || W[179] !== eA || W[180] !== ek || W[181] !== eO || W[182] !== eF || W[183] !== eS || W[184] !== na || W[185] !== eY || W[186] !== ex || W[187] !== ez || W[188] !== q || W[189] !== tY || W[190] !== tQ || W[191] !== tZ || W[192] !== tj || W[193] !== e7.isChatPaneHidden || W[194] !== e0 || W[195] !== eh || W[196] !== tN || W[197] !== tL || W[198] !== eW || W[199] !== e2 || W[200] !== Y || W[201] !== tD || W[202] !== eq || W[203] !== e9 || W[204] !== tu || W[205] !== tz || W[206] !== tW || W[207] !== tB || W[208] !== t4 || W[209] !== eu || W[210] !== tx || W[211] !== Q ? (E = Q?.fullscreenContent != null ? (0, a.jsxs)(a.Fragment, {
+                children: [!Y && Q.fullscreenContent, nn]
+            }) : (0, a.jsxs)(t2.a, {
+                viewportOverlay: eo || ei || eF || null != eW || null != e2 || null != eK || es || te ? null : (0, a.jsx)(a.Fragment, {
+                    children: (0, a.jsx)(rW, {
+                        conversationId: J
+                    }, J)
+                }),
+                hideTranscript: eo,
+                active: !eE && (!eC || null != tx),
+                presentation: eu ?? (ei ? "compact" : "default"),
+                contentX: X,
+                composerFade: !1,
+                supportsComposerExpansion: tz && !te && null == Q,
+                footerPlacement: tc ? td : "bottom",
+                initialOffset: tE,
+                scrollOrigin: eh,
+                onScroll: tk,
+                scrollToBottomButton: !e9 || te || tB ? void 0 : {
+                    isWorking: eO
+                },
+                threadEndContent: e4 ? void 0 : (0, a.jsxs)(a.Fragment, {
+                    children: [(0, a.jsx)("div", {
+                        ref: tV,
+                        className: t0.a
+                    }), null == t4 ? t6 : (0, v.createPortal)(t6, t4)]
+                }),
+                footerLeadingContent: tB ? (0, a.jsxs)(a.Fragment, {
+                    children: [(0, a.jsx)(a.Fragment, {
+                        children: (0, a.jsx)("div", {
+                            className: t0.a,
+                            children: (0, a.jsx)(tq.a, {})
+                        })
+                    }), (0, a.jsx)("div", {
+                        className: "overflow-hidden electron:[scrollbar-gutter:stable_both-edges]",
+                        children: t6
+                    })]
+                }) : na,
+                footer: nn,
+                children: [ei || eE || null != eW ? null : (0, a.jsx)(n4, {
+                    conversationId: J,
+                    entries: ev,
+                    isConversationFetching: eP,
+                    turnListApi: tx
+                }), (0, a.jsxs)(l.a.div, {
+                    ref: tb,
+                    style: {
+                        x: tL
+                    },
+                    "data-chatgpt-conversation-selection-target": J,
+                    className: (0, i.b)("flex min-h-full flex-1 flex-col gap-1.5 pb-5", ei && "pt-5"),
+                    "data-thread-find-target": "conversation",
+                    onFocusCapture: () => {
+                        (0, tf.K)(e0, "conversation")
+                    },
+                    onMouseDownCapture: () => {
+                        (0, tf.K)(e0, "conversation")
+                    },
+                    children: [(0, a.jsxs)(f.Suspense, {
+                        fallback: (0, a.jsx)(tM.LoadingPage, {
+                            debugName: "ChatGptConversationPage",
+                            fillParent: !0
+                        }),
+                        children: [ei || eE ? null : (0, a.jsx)(tg.a, {
+                            conversationSource: tG
+                        }), es || e7.isChatPaneHidden || ek || null != eW || null != e2 ? null : ea ?? (0, a.jsx)(s5.a, {
+                            conversationId: J
+                        }), (0, a.jsx)(oJ.b, {
+                            conversationId: J
+                        }), (null != eW || null != e2) && eC ? (0, a.jsx)(ok, {
+                            sharedConversationId: eW
+                        }) : null, null == ez ? null : (0, a.jsx)(a.Fragment, {
+                            children: (0, a.jsx)("div", {
+                                className: t0.a,
+                                children: ez
+                            })
+                        }), null == tl || eE ? null : (0, a.jsx)(nF.a, {
+                            conversationId: J,
+                            branchSource: {
+                                conversationId: tl.metadata.source_conversation_id,
+                                title: tl.metadata.source_conversation_title,
+                                gizmoId: tl.metadata.source_conversation_gizmo_id,
+                                ownerId: tl.metadata.source_conversation_owner_id
+                            }
+                        }), eb ? (0, a.jsx)(eJ, {
+                            isFetching: eP,
+                            isSharedConversation: eA,
+                            onRetry: ex
+                        }) : eE ? (0, a.jsx)("div", {
+                            "aria-busy": "true",
+                            "aria-label": eg,
+                            className: "relative min-h-0 flex-1",
+                            role: "status",
+                            children: (0, a.jsx)(tM.LoadingPage, {
+                                debugName: "ChatGptConversationPage",
+                                fillParent: !0
+                            })
+                        }) : eC ? (0, a.jsxs)(sQ.a, {
+                            value: tN,
+                            children: [ei || es ? null : (0, a.jsxs)(a.Fragment, {
+                                children: [ek || null != eW || null != e2 ? null : (0, a.jsx)(a.Fragment, {
+                                    children: (0, a.jsx)(eD, {
+                                        conversationId: J
+                                    })
+                                }), (0, a.jsx)(eG, {
+                                    entries: ev,
+                                    title: q,
+                                    TurnRowComponent: aM
+                                })]
+                            }), (0, a.jsx)(ot.a, {
+                                enabled: tZ,
+                                aboveComposer: tY,
+                                belowMessage: tQ,
+                                children: (0, a.jsx)(aY, {
+                                    viewportRef: tm,
+                                    isTurnActive: eO,
+                                    conversationId: J,
+                                    entries: ev,
+                                    onApiChange: tC,
+                                    onVisibleContentReady: () => t_(!0),
+                                    responseSpacerState: tj
+                                })
+                            }), tZ ? (0, a.jsx)("div", {
+                                ref: t$,
+                                className: "empty:hidden"
+                            }) : null]
+                        }) : tu && null == tl && (0, a.jsx)("div", {
+                            className: "rounded-xl border border-default bg-surface-secondary/92 p-4 text-sm text-codex-description",
+                            children: (0, a.jsx)(b.a, {
+                                id: "chatgptConversations.emptyConversation",
+                                defaultMessage: "No renderable ChatGPT messages were found in this conversation",
+                                description: "Empty state when a ChatGPT conversation has no user or assistant text messages"
+                            })
+                        }), !tW && t7, (0, a.jsx)(ro.a, {
+                            conversationId: ee,
+                            isWorkConversation: eF
+                        }), eq && !ew ? (0, a.jsx)(op, {
+                            conversationId: J,
+                            moreDetailsEnabled: eS,
+                            onAddSelectedText: eY
+                        }) : null]
+                    }), ei ? null : (0, a.jsx)(aa.a, {
+                        preserveResponseViewport: e => tm.current?.holdForResponse(e) ?? !1,
+                        initialPlacementKey: eL,
+                        isActiveVoiceConversation: e4 && e5,
+                        isLoadingHistory: eE,
+                        latestUserTurnKey: ev.findLast(id)?.turnKey,
+                        onResponseSpacerStateChange: tP
+                    }), tB ? (0, a.jsx)(l.a.div, {
+                        className: "pointer-events-none shrink-0",
+                        "aria-hidden": !0,
+                        initial: {
+                            height: 0
+                        },
+                        animate: {
+                            height: 112
+                        },
+                        transition: tD ? tU.c : tU.b
+                    }) : null]
+                })]
+            }), W[151] = eK, W[152] = tc, W[153] = ee, W[154] = X, W[155] = tl, W[156] = J, W[157] = eg, W[158] = tG, W[159] = t6, W[160] = t7, W[161] = ev, W[162] = nn, W[163] = tk, W[164] = eb, W[165] = eC, W[166] = ea, W[167] = td, W[168] = eL, W[169] = tE, W[170] = e4, W[171] = e5, W[172] = ew, W[173] = eP, W[174] = eE, W[175] = es, W[176] = eo, W[177] = te, W[178] = ei, W[179] = eA, W[180] = ek, W[181] = eO, W[182] = eF, W[183] = eS, W[184] = na, W[185] = eY, W[186] = ex, W[187] = ez, W[188] = q, W[189] = tY, W[190] = tQ, W[191] = tZ, W[192] = tj, W[193] = e7.isChatPaneHidden, W[194] = e0, W[195] = eh, W[196] = tN, W[197] = tL, W[198] = eW, W[199] = e2, W[200] = Y, W[201] = tD, W[202] = eq, W[203] = e9, W[204] = tu, W[205] = tz, W[206] = tW, W[207] = tB, W[208] = t4, W[209] = eu, W[210] = tx, W[211] = Q, W[212] = E) : E = W[212], W[213] !== es || W[214] !== nr || W[215] !== S || W[216] !== j || W[217] !== T || W[218] !== P || W[219] !== E ? (A = (0, a.jsxs)("div", {
+                className: "contents",
+                "aria-hidden": nr,
+                inert: es,
+                children: [I, S, j, T, P, E]
+            }), W[213] = es, W[214] = nr, W[215] = S, W[216] = j, W[217] = T, W[218] = P, W[219] = E, W[220] = A) : A = W[220];
+            let ns = A,
+                no = "main" === ta;
+            return W[221] !== no ? (k = {
+                presentation: "main",
+                rendersWidgets: no
+            }, W[221] = no, W[222] = k) : k = W[222], W[223] !== ns ? (R = (0, a.jsx)(th.a, {
+                children: ns
+            }), W[223] = ns, W[224] = R) : R = W[224], W[225] !== k || W[226] !== R ? (N = (0, a.jsx)(u.b, {
+                scope: aw,
+                value: k,
+                children: R
+            }), W[225] = k, W[226] = R, W[227] = N) : N = W[227], N
+        }
+
+        function id(e) {
+            let {
+                turn: t
+            } = e;
+            return t.items.some(iu)
+        }
+
+        function iu(e) {
+            return "user-message" === e.type
+        }
+
+        function ih(e) {
+            let t, n, s, o = (0, r.c)(11),
+                i = (0, f.useContext)(tl.a);
+            if (null == i || i.conversationId !== e.conversationId) {
+                let t;
+                return o[0] !== e ? (t = (0, a.jsx)(ip, {
+                    ...e
+                }), o[0] = e, o[1] = t) : t = o[1], t
+            }
+            o[2] !== e.conversationId || o[3] !== e.isImageEditComposer ? (t = e.isImageEditComposer ? {
+                conversationId: e.conversationId,
+                surface: "image-edit"
+            } : e.conversationId, o[2] = e.conversationId, o[3] = e.isImageEditComposer, o[4] = t) : t = o[4];
+            let l = !e.isWorkConversation;
+            return o[5] !== e ? (n = t => (0, a.jsx)(ip, {
+                ...e,
+                initialController: t
+            }), o[5] = e, o[6] = n) : n = o[6], o[7] !== t || o[8] !== l || o[9] !== n ? (s = (0, a.jsx)(sU, {
+                draftKey: t,
+                enableInlineSystemHints: l,
+                children: n
+            }), o[7] = t, o[8] = l, o[9] = n, o[10] = s) : s = o[10], s
+        }
+
+        function ip(e) {
+            let t, n, s, o, i, l, c, d, h, p, m, g, v, b, C, w, _, I, S, j = (0, r.c)(83),
+                {
+                    composerRef: T,
+                    initialController: M,
+                    ...k
+                } = e,
+                R = (0, u.y)(G.a),
+                N = (0, u.x)(A.d, k.isTemporaryChat),
+                {
+                    conversationId: O,
+                    isFullscreenComposer: z
+                } = k,
+                B = (0, y.a)(),
+                {
+                    state: D
+                } = (0, x.Y)(),
+                L = (0, u.x)(n6, O),
+                W = (0, u.x)(F.S, O),
+                H = !(!k.disabled && !k.isSharedConversation && !k.isWorkConversation && !k.isTemporaryChat && !k.isImageEditComposer && (0, e8.a)(W)) ? null : W,
+                q = (0, u.x)(null == k.requiredSystemHints ? tr : null, H);
+            j[0] !== q || j[1] !== k.requiredSystemHints ? (t = k.requiredSystemHints ?? (null == q ? void 0 : [q]), j[0] = q, j[1] = k.requiredSystemHints, j[2] = t) : t = j[2];
+            let K = t;
+            j[3] !== q || j[4] !== O || j[5] !== R ? (n = () => {
+                if (null != q) {
+                    let e, t;
+                    return e = (0, e9.b)(R, O, [q]), t = (0, e7.h)(R, {
+                        draftKey: O,
+                        isTemporaryChat: !1
+                    }), () => {
+                        if (e(), R.get(e9.a, O).includes(q)) return;
+                        let n = R.get(e6.v, O).filter(e => e !== q && e !== `plugin:${e5.d}`);
+                        (0, e6.U)(R, O, n, t)
+                    }
+                }
+            }, s = [R, O, q], j[3] = q, j[4] = O, j[5] = R, j[6] = n, j[7] = s) : (n = j[6], s = j[7]), (0, f.useEffect)(n, s);
+            let U = (0, u.x)(nl.c, O);
+            j[8] !== U || j[9] !== k.isSharedConversation || j[10] !== k.isWorkConversation || j[11] !== W ? (o = !k.isSharedConversation && !k.isWorkConversation && !(0, e8.a)(W) && !U, j[8] = U, j[9] = k.isSharedConversation, j[10] = k.isWorkConversation, j[11] = W, j[12] = o) : o = j[12];
+            let V = o,
+                $ = V && !k.disabled && !k.isSubmitDisabled && !k.isImageEditComposer,
+                Y = V ? L : void 0;
+            j[13] !== O || j[14] !== k.isImageEditComposer ? (i = k.isImageEditComposer ? {
+                conversationId: O,
+                surface: "image-edit"
+            } : O, j[13] = O, j[14] = k.isImageEditComposer, j[15] = i) : i = j[15];
+            let X = i;
+            j[16] !== O || j[17] !== X || j[18] !== M ? (l = {
+                composerController: M,
+                conversationId: O,
+                draftKey: X
+            }, j[16] = O, j[17] = X, j[18] = M, j[19] = l) : l = j[19];
+            let J = (0, o0.a)(l),
+                Z = (0, s4.a)(J, O, !k.isInlinePreview && !k.disabled, k.workspace && "tpp"),
+                ee = (0, f.useContext)(tl.a),
+                et = (0, f.useRef)(!1);
+            j[20] !== X || j[21] !== ee || j[22] !== M || j[23] !== k.isTemporaryChat || j[24] !== R ? (c = e => {
+                null == e || null == M || et.current || (et.current = !0, (0, e6.V)(R, X, M.getPersistedText(), {
+                    isTemporaryChat: k.isTemporaryChat
+                }), ee?.onAdopt())
+            }, j[20] = X, j[21] = ee, j[22] = M, j[23] = k.isTemporaryChat, j[24] = R, j[25] = c) : c = j[25];
+            let en = (0, t9.a)(c);
+            j[26] !== en || j[27] !== T ? (d = (0, t7.a)(T, en), j[26] = en, j[27] = T, j[28] = d) : d = j[28];
+            let ea = d,
+                er = (0, f.useContext)(rR.a),
+                es = (0, u.w)(sL.a, O),
+                eo = (0, u.x)(F.db, O),
+                ei = (0, u.x)(F.$, O),
+                el = (0, u.x)(e6.i, O);
+            j[29] !== ei ? (h = (0, F.Ab)(ei), j[29] = ei, j[30] = h) : h = j[30];
+            let ec = h,
+                ed = (0, u.z)(P.l.activeTab$);
+            if (j[31] !== ed || j[32] !== z || j[33] !== ec || j[34] !== er) {
+                let e = er?.turn.items.flatMap(iy);
+                p = z && ed?.tabType.kind === tE.a && "generatedImages" in ed.props && null != ed.props.generatedImages && !ec && null != er && "in_progress" !== er.turn.status && !er.turn.hasPendingAssistantReply && !er.showPendingLoadingMessage && !e?.some(iv) && (null != er.errorMessage || e?.some(ig)) ? er.turn.messageIds.at(-1) ?? er.turnKey : null, j[31] = ed, j[32] = z, j[33] = ec, j[34] = er, j[35] = p
+            } else p = j[35];
+            let eu = p,
+                eh = (0, f.useRef)(null);
+            j[36] !== eu || j[37] !== R ? (m = () => {
+                null != eu && eu !== eh.current && (eh.current = eu, R.set(t_.a, "expanded"))
+            }, g = [eu, R], j[36] = eu, j[37] = R, j[38] = m, j[39] = g) : (m = j[38], g = j[39]), (0, f.useEffect)(m, g);
+            let ep = (0, u.w)(s3.a, z ? O : null);
+            j[40] !== q || j[41] !== H || j[42] !== J || j[43] !== O || j[44] !== $ || j[45] !== X || j[46] !== Z || j[47] !== B || j[48] !== z || j[49] !== ea || j[50] !== N || j[51] !== k || j[52] !== K || j[53] !== R || j[54] !== Y || j[55] !== D?.libraryFileCreation || j[56] !== W ? (v = e => (0, a.jsxs)(tP.a, {
+                children: [z && k.trackReadState && !e?.isHidden ? (0, a.jsx)(rk.a, {
+                    conversationId: O,
+                    isTranscriptVisible: e?.isCompact === !1 && !e.isMinimized
+                }) : null, k.aboveComposerContent, (0, a.jsx)(to.a, {
+                    children: (0, a.jsx)(nz.a, {
+                        ref: ea,
+                        trackShownImpressions: k.trackShownImpressions && !k.isHidden && !e?.isHidden && !e?.isMinimized,
+                        headerContent: k.headerContent,
+                        legacyImageSuggestionsEnabled: !k.disabled && !k.isSharedConversation && !k.isImageEditComposer,
+                        allowBackgroundSubmit: k.isInlinePreview,
+                        ...Z,
+                        disableAutoFocus: k.disableAutoFocus,
+                        conversationOrigin: null == k.workspace ? void 0 : "tpp",
+                        mcpAppContext: k.workspace?.mcpAppContext,
+                        onServerThreadIdChange: k.workspace?.onServerThreadIdChange,
+                        followupPortalTarget: k.followupPortalTarget,
+                        takeoverDisclaimerRef: k.takeoverDisclaimerRef,
+                        showConversationFollowups: k.showConversationFollowups,
+                        autoPrepare: !k.isSubmitDisabled && !k.isSharedConversation,
+                        browserConversationId: (0, Q.getThreadBrowserConversationId)(R) ?? O,
+                        composerController: J,
+                        conversationId: O,
+                        requiredSystemHints: K,
+                        hideSystemHints: null != k.requiredSystemHints,
+                        getSubmissionGuard: null != q ? () => () => R.get(F.S, O) === W && R.get(tr, H) === q : void 0,
+                        draftKey: X,
+                        onPromptChange: N,
+                        selectedCustomGpt: Y,
+                        targetGizmoId: Y?.id,
+                        onCustomGptChange: $ ? e => {
+                            R.set(n6, O, e)
+                        } : void 0,
+                        onCustomAgentSelected: $ ? () => {
+                            R.set(n6, O, null)
+                        } : void 0,
+                        disableDraftPrepare: k.isSubmitDisabled || k.isSharedConversation,
+                        disableSubmit: k.disabled || k.isSubmitDisabled,
+                        voiceInputDisabled: k.disabled,
+                        aboveComposerHeaderContent: k.voiceDisclaimer,
+                        getExtraDeveloperInstructions: !k.isInlinePreview && D?.libraryFileCreation && !k.isTemporaryChat ? im : void 0,
+                        isTemporaryChat: k.isTemporaryChat,
+                        placeholder: k.disabled && !1 !== k.readOnlyPlaceholder ? k.readOnlyPlaceholder ?? B.formatMessage(rq.a.readOnlyConversationPlaceholder) : void 0,
+                        readOnly: k.disabled,
+                        hideModelPicker: k.hideModelPicker,
+                        modelPickerPending: k.isSubmitDisabled,
+                        showFilePicker: k.showFilePicker && !k.disabled && !k.isSubmitDisabled,
+                        showPendingFilePicker: k.showFilePicker && !k.disabled && k.isSubmitDisabled,
+                        showVoiceStage: k.showVoiceStage,
+                        onSubmitAccepted: t => {
+                            e?.onSubmitStart(), k.responseSpacerState?.place(), k.onSubmitAccepted?.(t)
+                        },
+                        onSubmitError: k.responseSpacerState?.clear
+                    })
+                })]
+            }), j[40] = q, j[41] = H, j[42] = J, j[43] = O, j[44] = $, j[45] = X, j[46] = Z, j[47] = B, j[48] = z, j[49] = ea, j[50] = N, j[51] = k, j[52] = K, j[53] = R, j[54] = Y, j[55] = D?.libraryFileCreation, j[56] = W, j[57] = v) : v = j[57];
+            let em = v;
+            j[58] !== R ? (b = () => {
+                (0, tf.K)(R, "conversation")
+            }, C = () => {
+                (0, tf.K)(R, "conversation")
+            }, j[58] = R, j[59] = b, j[60] = C) : (b = j[59], C = j[60]);
+            let eg = !k.isInlinePreview && !k.disabled && !k.isSubmitDisabled;
+            j[61] !== J || j[62] !== eg ? (w = (0, a.jsx)(a.Fragment, {
+                children: (0, a.jsx)(rG, {
+                    composerController: J,
+                    enabled: eg
+                })
+            }), j[61] = J, j[62] = eg, j[63] = w) : w = j[63];
+            let ef = z ? "floating" : "pane",
+                ev = k.disabled || k.awaitingGptContinuation,
+                ey = null == er && !ec,
+                eb = el || ec ? "loading" : "idle";
+            return j[64] !== eb ? (_ = {
+                type: eb,
+                unread: !1
+            }, j[64] = eb, j[65] = _) : _ = j[65], j[66] !== ep || j[67] !== k.isHidden || j[68] !== k.renderTranscript || j[69] !== em || j[70] !== es || j[71] !== ef || j[72] !== ev || j[73] !== ey || j[74] !== _ || j[75] !== eo ? (I = (0, a.jsx)(E.a, {
+                notifications: ep,
+                isHidden: k.isHidden,
+                placement: ef,
+                responsePreview: es,
+                forceExpanded: ev,
+                composerOnly: ey,
+                title: eo,
+                statusState: _,
+                renderTranscript: k.renderTranscript,
+                children: em
+            }), j[66] = ep, j[67] = k.isHidden, j[68] = k.renderTranscript, j[69] = em, j[70] = es, j[71] = ef, j[72] = ev, j[73] = ey, j[74] = _, j[75] = eo, j[76] = I) : I = j[76], j[77] !== O || j[78] !== b || j[79] !== C || j[80] !== w || j[81] !== I ? (S = (0, a.jsxs)("div", {
+                className: "contents",
+                "data-map-composer-conversation": O,
+                onMouseDownCapture: b,
+                onFocusCapture: C,
+                children: [w, I]
+            }), j[77] = O, j[78] = b, j[79] = C, j[80] = w, j[81] = I, j[82] = S) : S = j[82], S
+        }
+        async function im() {
+            return [tA.a]
+        }
+
+        function ig(e) {
+            return "assistant-message" === e.type && "" !== e.content.trim()
+        }
+
+        function iv(e) {
+            return "generated-image" === e.type || "chatgpt-delayed-image-gen" === e.type
+        }
+
+        function iy(e) {
+            return "chatgpt-reasoning-group" === e.type ? e.items : [e]
+        }
+    }),
+    Ppno: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("zd8w"),
+            o = n("hZax"),
+            i = n("Ho4C"),
+            l = n("KFm7"),
+            c = n("lsfk"),
+            d = n("bIvi");
+
+        function u(e, t) {
+            let n = e.querySelector(`[data-turn-key="${CSS.escape(t)}"]`);
+            return n?.querySelector("[data-user-message-bubble]") ?? n
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, h, p, m, g, f, v, y, b, x, C, w, _, I, S, j = (0, r.c)(64),
+                    {
+                        initialPlacementKey: T,
+                        isActiveVoiceConversation: P,
+                        isLoadingHistory: E,
+                        latestUserTurnKey: A,
+                        onResponseSpacerStateChange: M,
+                        preserveResponseViewport: k
+                    } = e,
+                    R = void 0 !== P && P,
+                    N = void 0 !== E && E,
+                    O = (0, o.k)();
+                j[0] !== R || j[1] !== O ? (t = R && (0, o.f)(O, "2825211774").get("voice_orb_transcript_clearance_enabled", !1), j[0] = R, j[1] = O, j[2] = t) : t = j[2];
+                let F = t,
+                    G = (0, s.useRef)(A),
+                    z = (0, s.useRef)(N),
+                    B = (0, s.useRef)(null),
+                    D = (0, s.useRef)(null),
+                    L = (0, c.b)();
+                j[3] !== L ? (n = () => new l.a(L), j[3] = L, j[4] = n) : n = j[4];
+                let [W] = (0, s.useState)(n), {
+                    clear: H,
+                    consumeGrowth: q,
+                    getHeightPx: K,
+                    ensureScrollRoomForAnchor: U,
+                    place: V,
+                    prepareThreadEndContent: Q
+                } = W, {
+                    addScrollListener: $,
+                    getScrollElement: Y,
+                    responseSpacerController: X
+                } = L;
+                j[5] !== Y || j[6] !== V || j[7] !== k ? (h = e => {
+                    k?.(e => {
+                        let t = Y();
+                        null != t && V(u(t, e) ?? void 0)
+                    }) || V(e)
+                }, j[5] = Y, j[6] = V, j[7] = k, j[8] = h) : h = j[8];
+                let J = (0, d.a)(h);
+                j[9] !== H || j[10] !== L ? (p = () => {
+                    H(), L.scrollToBottom()
+                }, j[9] = H, j[10] = L, j[11] = p) : p = j[11];
+                let Z = (0, d.a)(p);
+                j[12] !== q || j[13] !== K || j[14] !== Q || j[15] !== W.height || j[16] !== W.holdViewport || j[17] !== X || j[18] !== Z ? (m = () => X.register({
+                    consumeGrowth: q,
+                    getHeightPx: K,
+                    holdViewport: W.holdViewport,
+                    prepareThreadEndContent: Q,
+                    scrollToBottom: Z
+                }, W.height).dispose, j[12] = q, j[13] = K, j[14] = Q, j[15] = W.height, j[16] = W.holdViewport, j[17] = X, j[18] = Z, j[19] = m) : m = j[19], j[20] !== q || j[21] !== K || j[22] !== Q || j[23] !== W || j[24] !== X || j[25] !== Z ? (g = [q, K, Q, W, X, Z], j[20] = q, j[21] = K, j[22] = Q, j[23] = W, j[24] = X, j[25] = Z, j[26] = g) : g = j[26], (0, s.useInsertionEffect)(m, g), j[27] === Symbol.for("react.memo_cache_sentinel") ? (f = (e, t) => {
+                    B.current = {
+                        turnKey: e,
+                        element: t
+                    }, D.current?.(e, t)
+                }, j[27] = f) : f = j[27];
+                let ee = (0, d.a)(f);
+                j[28] === Symbol.for("react.memo_cache_sentinel") ? (v = e => {
+                    D.current = e;
+                    let t = B.current;
+                    return null != t && e(t.turnKey, t.element), () => {
+                        D.current = null
+                    }
+                }, j[28] = v) : v = j[28];
+                let et = (0, d.a)(v);
+                j[29] !== Y || j[30] !== A || j[31] !== V || j[32] !== F ? (y = () => {
+                    let e = Y();
+                    if (null != e && 0 !== e.clientHeight)
+                        if (F && null != A) {
+                            let t = u(e, A);
+                            if (null == t) return;
+                            V(t)
+                        } else V()
+                }, j[29] = Y, j[30] = A, j[31] = V, j[32] = F, j[33] = y) : y = j[33];
+                let en = (0, s.useEffectEvent)(y);
+                return j[34] !== H || j[35] !== q || j[36] !== U || j[37] !== K || j[38] !== M || j[39] !== ee || j[40] !== J || j[41] !== F ? (b = () => (M({
+                    voiceAutoScrollEnabled: F,
+                    clear: H,
+                    consumeGrowth: q,
+                    getHeightPx: K,
+                    ensureScrollRoomForAnchor: U,
+                    onTurnLayoutReady: ee,
+                    place: J
+                }), () => {
+                    M(null)
+                }), x = [H, q, K, U, M, ee, J, F], j[34] = H, j[35] = q, j[36] = U, j[37] = K, j[38] = M, j[39] = ee, j[40] = J, j[41] = F, j[42] = b, j[43] = x) : (b = j[42], x = j[43]), (0, s.useLayoutEffect)(b, x), j[44] !== Y || j[45] !== N || j[46] !== A || j[47] !== J || j[48] !== W || j[49] !== et || j[50] !== F ? (C = () => {
+                    let e = G.current,
+                        t = z.current;
+                    if (G.current = A, z.current = N, F && !N && !t && null != A && A !== e) {
+                        var n, a, r, s, o;
+                        let e, t, i, l, c;
+                        return n = A, a = Y, r = J, s = et, o = W.getPendingPlacementSignal(), t = null, i = null, l = !1, c = () => {
+                            l = !0, null != t && (cancelAnimationFrame(t), t = null), o.removeEventListener("abort", c), e?.()
+                        }, o.addEventListener("abort", c, {
+                            once: !0
+                        }), e = s((e, s) => {
+                            l || e !== n || (i = s, null == t && (t = requestAnimationFrame(() => {
+                                t = null;
+                                let e = a(),
+                                    n = i?.querySelector("[data-user-message-bubble]") ?? i;
+                                null != e && 0 !== e.clientHeight && null != n && e.contains(n) && !(n.getBoundingClientRect().height <= 0) && (c(), r(n))
+                            })))
+                        }), c
+                    }
+                }, w = [Y, N, A, J, et, W, F], j[44] = Y, j[45] = N, j[46] = A, j[47] = J, j[48] = W, j[49] = et, j[50] = F, j[51] = C, j[52] = w) : (C = j[51], w = j[52]), (0, s.useLayoutEffect)(C, w), j[53] !== $ || j[54] !== T || j[55] !== en || j[56] !== W ? (_ = () => {
+                    if (null == T) return;
+                    let e = W.getPendingPlacementSignal();
+                    return $(() => {
+                        e.aborted || en()
+                    })
+                }, j[53] = $, j[54] = T, j[55] = en, j[56] = W, j[57] = _) : _ = j[57], j[58] !== $ || j[59] !== T || j[60] !== W ? (I = [$, T, W], j[58] = $, j[59] = T, j[60] = W, j[61] = I) : I = j[61], (0, s.useLayoutEffect)(_, I), j[62] !== W ? (S = (0, a.jsx)(i.a, {
+                    controller: W
+                }), j[62] = W, j[63] = S) : S = j[63], S
+            }
+        })
+    }),
+    TRQ3: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("jqIZ"),
+            i = n("OWtl"),
+            l = n("Ow2S"),
+            c = n("wwvo"),
+            d = n("x4uR"),
+            u = n("u4MG"),
+            h = n("OOaz"),
+            p = n("dQRk"),
+            m = n("jAnS");
+        let g = (0, s.d)(i.a, (e, t) => {
+            let {
+                get: n
+            } = t, a = n(p.j, e);
+            return null != a ? a : n(p.E, e) || n(l.i, e) || null != n(l.y, e) ? void 0 : null
+        });
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, l, f, v, y, b, x = (0, r.c)(36),
+                    {
+                        children: C,
+                        conversationId: w,
+                        routePattern: _,
+                        homePath: I
+                    } = e,
+                    S = void 0 === I ? "/" : I,
+                    j = (0, s.y)(i.a),
+                    {
+                        hash: T,
+                        key: P,
+                        pathname: E,
+                        search: A,
+                        state: M
+                    } = (0, o.Y)(),
+                    {
+                        conversationId: k,
+                        gizmoId: R
+                    } = (0, o.cb)(),
+                    N = (0, s.x)(g, w),
+                    O = (0, s.x)(p.E, w),
+                    F = (0, s.x)(p.S, w),
+                    G = O ? F : R;
+                x[0] !== G ? (t = null != G && (0, u.a)(G) ? G : null, x[0] = G, x[1] = t) : t = x[1], x[2] === Symbol.for("react.memo_cache_sentinel") ? (n = {
+                    enabled: !1
+                }, x[2] = n) : n = x[2];
+                let {
+                    data: z
+                } = (0, s.x)(d.b, t, n);
+                x[3] !== G ? (l = null == G || (0, u.a)(G) ? null : G, x[3] = G, x[4] = l) : l = x[4], x[5] === Symbol.for("react.memo_cache_sentinel") ? (f = {
+                    enabled: !1
+                }, x[5] = f) : f = x[5];
+                let {
+                    data: B
+                } = (0, s.x)(c.b, l, f);
+                if (null === N || (0, m.i)(A) && null != N && !O) {
+                    let e;
+                    return x[6] !== S || x[7] !== A ? (e = (0, a.jsx)(o.l, {
+                        replace: !0,
+                        to: {
+                            pathname: S,
+                            search: A
+                        }
+                    }), x[6] = S, x[7] = A, x[8] = e) : e = x[8], e
+                }
+                x[9] !== w || x[10] !== B || x[11] !== G || x[12] !== z || x[13] !== N || x[14] !== _ ? (v = null != _ ? (0, o.C)(_, {
+                    conversationId: N ?? w
+                }) : (0, m.c)(N ?? w, {
+                    gizmoId: z?.gizmo.short_url ?? B?.gizmo.short_url ?? G
+                }), x[9] = w, x[10] = B, x[11] = G, x[12] = z, x[13] = N, x[14] = _, x[15] = v) : v = x[15];
+                let D = v;
+                if (x[16] !== w || x[17] !== D || x[18] !== k || x[19] !== T || x[20] !== P || x[21] !== E || x[22] !== N || x[23] !== j || x[24] !== A || x[25] !== M) {
+                    let e = new URLSearchParams(A),
+                        t = null != N && e.has("mfr"),
+                        n = j.get(p.y, w),
+                        r = M;
+                    if (t) {
+                        let t, n;
+                        if (e.delete("mfr"), x[27] !== M ? (t = M ?? {}, x[27] = M, x[28] = t) : t = x[28], x[29] !== t) {
+                            let {
+                                modelFirstLanding: e,
+                                modelFirstFallback: a,
+                                ...r
+                            } = t;
+                            n = r, x[29] = t, x[30] = n
+                        } else n = x[30];
+                        r = n
+                    }
+                    if (null != k && (0, h.e)(k) && null != N) {
+                        let e;
+                        x[31] !== r ? (e = {
+                            ...r,
+                            fromChatGptFirstSend: !0
+                        }, x[31] = r, x[32] = e) : e = x[32], r = e
+                    }
+                    y = E !== D || t ? (0, a.jsx)(o.l, {
+                        replace: !0,
+                        state: "tpp" === n || "flora" === n ? {
+                            ...r,
+                            workTurnVisit: (0, m.f)(j, P, M?.workTurnVisit)
+                        } : r,
+                        to: {
+                            hash: t ? "" : T,
+                            pathname: D,
+                            search: t ? e.toString() : A
+                        }
+                    }) : null, x[16] = w, x[17] = D, x[18] = k, x[19] = T, x[20] = P, x[21] = E, x[22] = N, x[23] = j, x[24] = A, x[25] = M, x[26] = y
+                } else y = x[26];
+                return x[33] !== C || x[34] !== y ? (b = (0, a.jsxs)(a.Fragment, {
+                    children: [y, C]
+                }), x[33] = C, x[34] = y, x[35] = b) : b = x[35], b
+            }
+        })
+    }),
+    xtkq: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("zd8w"),
+            i = n("Q2Qp"),
+            l = n("tSEg"),
+            c = n("JCJj"),
+            d = n("iS3k");
+
+        function u(e) {
+            return null != e
+        }
+        n.d(t, {}, {
+            a: function() {
+                let e, t, n, h = (0, r.c)(6),
+                    p = (0, s.y)(l.a),
+                    m = (0, s.z)(c.e),
+                    g = (0, o.useContext)(i.a);
+                return h[0] !== p ? (e = () => (p.set(c.f, !0), () => {
+                    p.set(c.f, !1), (0, c.a)(p)
+                }), t = [p], h[0] = p, h[1] = e, h[2] = t) : (e = h[1], t = h[2]), (0, o.useLayoutEffect)(e, t), h[3] !== g || h[4] !== m ? (n = null == m ? null : (0, a.jsx)(a.Fragment, {
+                    children: [...(0, c.b)(m), m.overlay].filter(u).map(e => (0, a.jsx)(d.a.Root, {
+                        animateOnMount: e.animateOnMount ?? !0,
+                        fillHeight: !0,
+                        fullWidth: e.isFullWidth,
+                        fullWidthTransition: e.fullWidthTransition,
+                        isPIPObstacle: !1,
+                        portalContainer: g,
+                        reserveToolbarSpace: e.reserveToolbarSpace ?? !0,
+                        shouldHideInlineImmediately: e !== m && e !== m.overlay,
+                        shouldShow: !0,
+                        width: e.width ?? 420,
+                        children: (0, a.jsx)(d.a.Content, {
+                            className: "h-full",
+                            "aria-label": e.label,
+                            role: "complementary",
+                            scrollable: !1,
+                            children: e.content
+                        })
+                    }, e.renderKey))
+                }), h[3] = g, h[4] = m, h[5] = n) : n = h[5], n
+            }
+        })
+    }),
+    zrki: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("mBJV"),
+            o = n("BolX"),
+            i = n("zd8w"),
+            l = n("Wf1j"),
+            c = n("oyxz"),
+            d = n("jqIZ"),
+            u = n("Cslg"),
+            h = n("kphc"),
+            p = n("Sm6l"),
+            m = n("bqtn"),
+            g = n("Ot7V"),
+            f = n("bf6R"),
+            v = n("Bbed"),
+            y = n("X6Vn"),
+            b = n("SGsN"),
+            x = n("ANuo"),
+            C = n("yGJW"),
+            w = n("gBBC"),
+            _ = n("OWtl"),
+            I = n("hZax"),
+            S = n("JYRT"),
+            j = n("wwvo"),
+            T = n("wrCb"),
+            P = n("H7Nt"),
+            E = n("vzxm"),
+            A = n("jAnS"),
+            M = n("wzUW"),
+            k = n("Q9Us"),
+            R = n("fwYa"),
+            N = n("qfGT");
+        let O = (0, v.a)(async () => (await Promise.all([n.e(680612), n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(153380), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(204542), n.e(982651), n.e(673108), n.e(487481), n.e(229522), n.e(390575), n.e(353032), n.e(637885), n.e(480171), n.e(716164), n.e(74952)]).then(n.bind(n, "eZlv"))).GptHeaderAboutDialog);
+
+        function F(e) {
+            let t, n, v, F, G, z, B, D, L, W, H, q, K, U, V, Q, $, Y, X, J, Z = (0, r.c)(56),
+                {
+                    gizmo: ee
+                } = e,
+                et = (0, o.y)(_.a),
+                en = (0, l.a)(),
+                {
+                    search: ea
+                } = (0, d.Y)(),
+                er = (0, d._)(),
+                [es, eo] = (0, i.useState)(!1),
+                ei = (0, I.h)("2160578039"),
+                el = (0, o.x)(S.a, "2513446768"),
+                ec = ei && "gpt" === ee.gizmo.gizmo_type && null != ee.gizmo.migrated_plugin_id;
+            Z[0] !== el ? (t = el?.get("disable_gpt_updates", !1), Z[0] = el, Z[1] = t) : t = Z[1];
+            let ed = t,
+                eu = ee.gizmo.current_user_permission?.can_write && !ec && !ed,
+                {
+                    data: eh
+                } = (0, o.z)(j.c);
+            Z[2] !== ee.gizmo.id || Z[3] !== eh ? (n = eh?.some(e => {
+                let {
+                    item: t
+                } = e;
+                return t.gizmo.id === ee.gizmo.id
+            }), Z[2] = ee.gizmo.id, Z[3] = eh, Z[4] = n) : n = Z[4];
+            let ep = n;
+            Z[5] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, T.a)("/gpts/editor"), Z[5] = v) : v = Z[5];
+            let em = `${v}/${encodeURIComponent(ee.gizmo.id)}`;
+            Z[6] !== ee.gizmo.id || Z[7] !== ee.gizmo.short_url ? (F = ee.gizmo.short_url?.trim() || ee.gizmo.id, Z[6] = ee.gizmo.id, Z[7] = ee.gizmo.short_url, Z[8] = F) : F = Z[8], Z[9] !== F ? (G = (0, E.c)(F), Z[9] = F, Z[10] = G) : G = Z[10], Z[11] !== ea ? (z = (0, A.e)("", (0, A.i)(ea)), Z[11] = ea, Z[12] = z) : z = Z[12];
+            let eg = `${G}${z}`;
+            Z[13] !== en ? (B = en.formatMessage({
+                id: "chatgptConversations.customGpt.actionsMenu",
+                defaultMessage: "GPT actions",
+                description: "Accessible label for the compact overflow menu containing actions for the current custom GPT in Codex Desktop"
+            }), Z[13] = en, Z[14] = B) : B = Z[14];
+            let ef = B;
+            Z[15] === Symbol.for("react.memo_cache_sentinel") ? (D = (0, a.jsx)(x.a, {
+                className: "icon-sm"
+            }), Z[15] = D) : D = Z[15], Z[16] !== ef ? (L = (0, a.jsx)(p.a, {
+                "aria-label": ef,
+                color: "ghost",
+                size: "icon",
+                children: D
+            }), Z[16] = ef, Z[17] = L) : L = Z[17], Z[18] !== ee.gizmo.gizmo_type || Z[19] !== ee.gizmo.id || Z[20] !== er || Z[21] !== eg || Z[22] !== et ? (W = "gpt" === ee.gizmo.gizmo_type ? (0, a.jsxs)(m.c.Item, {
+                href: eg,
+                onClick: e => {
+                    e.defaultPrevented || ((0, C.a)(et, s.oc, {
+                        stage: "CHATGPT_NEW_CHAT_ENTRY_STAGE_ENTRY",
+                        entryPoint: "CHATGPT_NEW_CHAT_ENTRY_POINT_GPT_MENU",
+                        location: "CHATGPT_NEW_CHAT_ENTRY_LOCATION_GIZMO_INFORMATION_DROPDOWN",
+                        gizmoId: ee.gizmo.id
+                    }), 0 !== e.button || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || (e.preventDefault(), eo(!1), (0, w.c)(et, null), (0, h.m)(et, "chat"), er(eg, {
+                        state: {
+                            focusComposerNonce: Date.now()
+                        }
+                    })))
+                },
+                children: [(0, a.jsx)(m.c.ItemIcon, {
+                    children: (0, a.jsx)(f.Mh, {})
+                }), (0, a.jsx)(c.a, {
+                    id: "chatgptConversations.customGpt.newChat",
+                    defaultMessage: "New chat",
+                    description: "Short GPT actions menu label that opens a new conversation with the same custom GPT, rather than switching to general ChatGPT"
+                })]
+            }) : null, Z[18] = ee.gizmo.gizmo_type, Z[19] = ee.gizmo.id, Z[20] = er, Z[21] = eg, Z[22] = et, Z[23] = W) : W = Z[23], Z[24] !== ee || Z[25] !== et ? (H = () => (0, y.f)(et, O, {
+                accountId: et.get(u.f),
+                resource: ee
+            }), Z[24] = ee, Z[25] = et, Z[26] = H) : H = Z[26], Z[27] === Symbol.for("react.memo_cache_sentinel") ? (q = (0, a.jsx)(m.c.ItemIcon, {
+                children: (0, a.jsx)(f.he, {})
+            }), K = (0, a.jsx)(c.a, {
+                id: "chatgptConversations.customGpt.about",
+                defaultMessage: "About",
+                description: "GPT menu action that opens its details over the current conversation or landing page"
+            }), Z[27] = q, Z[28] = K) : (q = Z[27], K = Z[28]), Z[29] !== H ? (U = (0, a.jsxs)(m.c.Item, {
+                onSelect: H,
+                children: [q, K]
+            }), Z[29] = H, Z[30] = U) : U = Z[30];
+            let ev = ep ? N.a : R.a;
+            return Z[31] !== ee || Z[32] !== en || Z[33] !== ep || Z[34] !== et ? (V = () => {
+                (0, j.e)(et, ee, !ep).catch(() => {
+                    et.get(b.f).danger(en.formatMessage({
+                        id: "chatgptConversations.customGpt.pinFailed",
+                        defaultMessage: "Couldn't update pinned GPT",
+                        description: "Error toast shown when adding or removing a custom GPT from the user's pinned sidebar items fails in Codex Desktop"
+                    }), {
+                        errorAnalytics: {
+                            toastId: "chatgptConversations.customGpt.pinFailed"
+                        }
+                    })
+                })
+            }, Z[31] = ee, Z[32] = en, Z[33] = ep, Z[34] = et, Z[35] = V) : V = Z[35], Z[36] !== ep ? (Q = ep ? (0, a.jsx)(c.a, {
+                id: "chatgptConversations.customGpt.unpin",
+                defaultMessage: "Unpin GPT",
+                description: "Compact overflow-menu action that removes the current custom GPT from the user's pinned sidebar items in Codex Desktop"
+            }) : (0, a.jsx)(c.a, {
+                id: "chatgptConversations.customGpt.pin",
+                defaultMessage: "Pin GPT",
+                description: "Compact overflow-menu action that adds the current custom GPT to the user's pinned sidebar items in Codex Desktop"
+            }), Z[36] = ep, Z[37] = Q) : Q = Z[37], Z[38] !== ev || Z[39] !== V || Z[40] !== Q ? ($ = (0, a.jsx)(m.c.Item, {
+                leftIconAsset: ev,
+                onSelect: V,
+                children: Q
+            }), Z[38] = ev, Z[39] = V, Z[40] = Q, Z[41] = $) : $ = Z[41], Z[42] !== eu || Z[43] !== em || Z[44] !== ee.gizmo.current_user_permission?.can_view_config ? (Y = eu || ee.gizmo.current_user_permission?.can_view_config ? (0, a.jsx)(m.c.Item, {
+                href: em,
+                leftIconAsset: eu ? k.a : M.a,
+                onClick: e => {
+                    (0, g.e)({
+                        event: e,
+                        href: em,
+                        initiator: "open_in_browser_bridge",
+                        openTarget: eu ? "external-browser" : void 0
+                    })
+                },
+                children: eu ? (0, a.jsx)(c.a, {
+                    id: "chatgptConversations.customGpt.edit",
+                    defaultMessage: "Edit GPT",
+                    description: "Compact overflow-menu action that opens the current custom GPT in its ChatGPT web editor from Codex Desktop"
+                }) : (0, a.jsx)(c.a, {
+                    id: "chatgptConversations.customGpt.view",
+                    defaultMessage: "View",
+                    description: "Short action in the custom GPT overflow menu for users who can view its configuration but cannot edit it, including after migration to a plugin. Opens the read-only GPT configuration page in ChatGPT."
+                })
+            }) : null, Z[42] = eu, Z[43] = em, Z[44] = ee.gizmo.current_user_permission?.can_view_config, Z[45] = Y) : Y = Z[45], Z[46] !== ee ? (X = (0, a.jsx)(P.a, {
+                resource: ee
+            }), Z[46] = ee, Z[47] = X) : X = Z[47], Z[48] !== es || Z[49] !== W || Z[50] !== U || Z[51] !== $ || Z[52] !== Y || Z[53] !== X || Z[54] !== L ? (J = (0, a.jsxs)(m.a, {
+                align: "start",
+                contentWidth: "menu",
+                open: es,
+                onOpenChange: eo,
+                triggerButton: L,
+                children: [W, U, $, Y, X]
+            }), Z[48] = es, Z[49] = W, Z[50] = U, Z[51] = $, Z[52] = Y, Z[53] = X, Z[54] = L, Z[55] = J) : J = Z[55], J
+        }
+        n.d(t, {}, {
+            ChatGptGizmoHeader: function(e) {
+                let t, n, s, i, l, c = (0, r.c)(12),
+                    {
+                        gizmoId: d,
+                        conversationId: u
+                    } = e;
+                c[0] !== u || c[1] !== d ? (t = null == u ? d : {
+                    gizmoId: d,
+                    conversationId: u
+                }, c[0] = u, c[1] = d, c[2] = t) : t = c[2];
+                let {
+                    data: h
+                } = (0, o.x)(j.b, t);
+                if (null == h) return null;
+                c[3] !== h.gizmo.display.name ? (n = h.gizmo.display.name.trim(), c[3] = h.gizmo.display.name, c[4] = n) : n = c[4];
+                let p = n;
+                return c[5] !== p ? (s = p ? (0, a.jsx)("span", {
+                    className: "truncate",
+                    children: p
+                }) : null, c[5] = p, c[6] = s) : s = c[6], c[7] !== h ? (i = (0, a.jsx)(F, {
+                    gizmo: h
+                }), c[7] = h, c[8] = i) : i = c[8], c[9] !== s || c[10] !== i ? (l = (0, a.jsxs)("div", {
+                    className: "flex min-w-0 items-center gap-1 select-none",
+                    children: [s, i]
+                }), c[9] = s, c[10] = i, c[11] = l) : l = c[11], l
+            }
+        })
+    }),
+    JlMc: (function(e, t, n) {
+        var a = n("QosV"),
+            r = n("BolX"),
+            s = n("zd8w"),
+            o = n("RU3e"),
+            i = n("AcSY"),
+            l = n("OWtl"),
+            c = n("RFDv"),
+            d = n("r6TF"),
+            u = n("d6Ff");
+        n("lBzi"), n("XtQP");
+        var h = n("dQRk"),
+            p = n("UWHW");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, m, g, f = (0, a.c)(11),
+                    {
+                        conversationId: v,
+                        isTranscriptVisible: y
+                    } = e,
+                    b = void 0 === y || y,
+                    x = (0, r.y)(l.a),
+                    C = (0, s.useId)(),
+                    {
+                        mutate: w
+                    } = (0, i.l)();
+                return f[0] !== v || f[1] !== C || f[2] !== x ? (t = () => (x.set(p.b, e => new Map(e).set(C, v)), x.get(p.a)?.dismissCurrent(), () => {
+                    x.set(p.b, e => {
+                        let t = new Map(e);
+                        return t.delete(C), t
+                    })
+                }), n = [v, C, x], f[0] = v, f[1] = C, f[2] = x, f[3] = t, f[4] = n) : (t = f[3], n = f[4]), (0, s.useEffect)(t, n), f[5] !== v || f[6] !== b || f[7] !== w || f[8] !== x ? (m = () => {
+                    if (!b) return;
+                    let e = x.watch(e => {
+                            let {
+                                get: t
+                            } = e
+                        }),
+                        t = x.watch(e => {
+                            let {
+                                get: t
+                            } = e, n = !0 === t(o.b);
+                            if ((0, h.bc)(x, v, n), !n) return;
+                            let a = t(h.j, v);
+                            if (null == a || !0 !== t(d.r, a)) return;
+                            let r = (0, u.b)(a);
+                            (0, c.j)(x, r, x.get(d.z, r)), w(a)
+                        });
+                    return () => {
+                        e(), t(), (0, h.bc)(x, v, !1)
+                    }
+                }, g = [v, b, w, x], f[5] = v, f[6] = b, f[7] = w, f[8] = x, f[9] = m, f[10] = g) : (m = f[9], g = f[10]), (0, s.useEffect)(m, g), null
+            }
+        })
+    }),
+    fr5e: (function(e, t, n) {
+        n.d(t, {
+            a: () => F
+        });
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("iRMi"),
+            o = n("D99L"),
+            i = n("D015"),
+            l = n("BolX"),
+            c = n("zd8w"),
+            d = n("oyxz"),
+            u = n("TDcV"),
+            h = n("vF5L"),
+            p = n("EFj1"),
+            m = n("SGsN"),
+            g = n("yGJW"),
+            f = n("OWtl"),
+            v = n("aepO"),
+            y = n("bIvi"),
+            b = n("lBzi"),
+            x = n("Ga6O"),
+            C = n("dQRk"),
+            w = n("jfiJ"),
+            _ = n("FGJH"),
+            I = n("Vcrm"),
+            S = n("OCK3"),
+            j = n("dhxJ"),
+            T = n("lsky"),
+            P = n("rKAs"),
+            E = n("ASxG"),
+            A = n("rn0J"),
+            M = n("XpUB"),
+            k = n("G6mJ"),
+            R = n("VB5Q"),
+            N = n("VTN2");
+        let O = E.record(E.string(), E.union([E.string(), E.literal(!0)]));
+
+        function F(e) {
+            let t, n, E, F, z, B, D = (0, r.c)(28),
+                {
+                    conversationId: L,
+                    turns: W,
+                    loadHistory: H,
+                    renderMode: q,
+                    paragenEnabled: K,
+                    enabled: U,
+                    canCopy: V,
+                    priority: Q
+                } = e,
+                $ = void 0 === q ? "conversation" : q,
+                Y = void 0 !== K && K,
+                X = void 0 === U || U,
+                J = void 0 === V || V,
+                Z = void 0 === Q ? "fallback" : Q,
+                ee = (0, l.y)(f.a),
+                et = (0, c.useRef)(null);
+            D[0] === Symbol.for("react.memo_cache_sentinel") ? (t = () => () => et.current?.abort(), D[0] = t) : t = D[0], D[1] !== J || D[2] !== L || D[3] !== X || D[4] !== H || D[5] !== Y || D[6] !== $ ? (n = [L, X, J, H, $, Y], D[1] = J, D[2] = L, D[3] = X, D[4] = H, D[5] = Y, D[6] = $, D[7] = n) : n = D[7], (0, c.useEffect)(t, n), D[8] !== J || D[9] !== L || D[10] !== Y || D[11] !== $ || D[12] !== ee || D[13] !== W ? (E = () => {
+                let e = ee.get(C.j, L),
+                    t = ee.query.getData(b.chatGptConversationQueryById$, e),
+                    n = t?.conversation_origin ?? ee.get(C.y, L);
+                if (!J || "tpp" === n || "flora" === n) return null;
+                let a = ee.get(C.M, L),
+                    r = Y && "conversation" === $ ? ee.get(I.a, L)?.promptMessageId : void 0,
+                    s = function(e) {
+                        for (let {
+                                turn: t
+                            }
+                            of e.toReversed())
+                            for (let e of t.items.toReversed()) {
+                                if ("assistant-message" !== e.type) continue;
+                                let t = null,
+                                    n = 0;
+                                if ((0, T.h)((0, M.a)(e.content, P.b), a => {
+                                        if ("codexDirective" === a.type && a.name === P.a) {
+                                            let n = O.safeParse(a.attributes);
+                                            if (!n.success) return;
+                                            let r = (0, k.a)(n.data, e.contentReferences),
+                                                s = N.d.safeParse(r?.reference);
+                                            if (null == r || !s.success || (null == n.data.is_streaming ? !e.completed && (e.contentReferenceMessageStatuses?.[r.index] ?? "in_progress") === "in_progress" : "true" === n.data.is_streaming)) return;
+                                            let o = e.contentReferenceMessageIds?.[r.index];
+                                            t = {
+                                                content: (0, R.a)(s.data.data),
+                                                messageId: o ?? e.messageId,
+                                                codeBlockIndex: null == o ? r.index : e.contentReferenceMessageIds?.slice(0, r.index).filter(e => e === o).length ?? 0
+                                            };
+                                            return
+                                        }
+                                        "code" !== a.type || (null == ("indented" === a.codeBlockStyle ? null : a.raw.split("\n").reduce(A.a, null)) && (t = {
+                                            content: e.codeBlocks?.[String(n)]?.content ?? a.text,
+                                            codeBlockIndex: n,
+                                            messageId: e.messageId
+                                        }), n += 1)
+                                    }), null != t) return t
+                            }
+                        return null
+                    }(W ?? (0, x.b)({
+                        conversation: t,
+                        threadMapping: a,
+                        threadCurrentNode: r ?? ee.get(C.C, L),
+                        conversationOrigin: n,
+                        isStreaming: (0, C.Ab)(ee.get(C.$, L)),
+                        mode: $,
+                        moderationDisclaimersByMessageId: ee.get(C.N, L),
+                        pendingSubmission: null
+                    }).renderedTurns);
+                if (s?.messageId == null) return {
+                    serverId: e,
+                    comparisonPromptMessageId: r,
+                    content: s?.content
+                };
+                let o = {
+                        conversationId: L,
+                        messageId: s.messageId,
+                        codeBlockIndex: s.codeBlockIndex
+                    },
+                    i = (0, j.a)(a?.[s.messageId]?.message?.metadata);
+                return {
+                    serverId: e,
+                    comparisonPromptMessageId: r,
+                    content: ee.get(S.b, o) ?? i?.[String(s.codeBlockIndex)]?.content ?? s.content
+                }
+            }, D[8] = J, D[9] = L, D[10] = Y, D[11] = $, D[12] = ee, D[13] = W, D[14] = E) : E = D[14];
+            let en = (0, y.a)(E);
+            D[15] !== ee ? (F = (e, t) => {
+                let n = e => {
+                    (0, g.a)(ee, o.CodexChatgptInteractionCodeCopyRequested, {
+                        characterCount: (0, i.a)(e.length),
+                        productExperience: s.CodexExpandedSidePanelProductSurface.CODEX_EXPANDED_SIDE_PANEL_PRODUCT_SURFACE_CHAT
+                    })
+                };
+                return (0, v.c)(e, void 0, () => {
+                    "string" == typeof e ? n(e) : e.then(n, G)
+                }).then(e => {
+                    e && !t?.aborted && ee.get(m.f).success((0, a.jsx)(d.a, {
+                        id: "chatgpt.codeBlocks.copyLast.success",
+                        defaultMessage: "Copied code block to clipboard",
+                        description: "Success toast after the user copies the last assistant code block using the keyboard shortcut or command menu in Chat mode"
+                    }))
+                })
+            }, D[15] = ee, D[16] = F) : F = D[16];
+            let ea = F;
+            return D[17] !== L || D[18] !== en || D[19] !== H || D[20] !== Y || D[21] !== $ || D[22] !== ee || D[23] !== ea ? (z = () => {
+                if (et.current?.signal.aborted === !1) return;
+                let e = en();
+                if (null == e) return;
+                if (null != e.content) return void ea(e.content);
+                let {
+                    serverId: t,
+                    comparisonPromptMessageId: n
+                } = e;
+                if (!H || ee.get(C.B, L) || null == t || ee.get(_.c, t)?.complete !== !1) return;
+                let a = new AbortController;
+                et.current = a;
+                let r = ee.get(u.a),
+                    s = ee.get(C.C, L),
+                    o = ee.get(h.e).copyLastCodeBlock,
+                    i = ee.watch(e => {
+                        let {
+                            get: t
+                        } = e;
+                        (t(u.a) !== r || t(C.C, L) !== s || Y && "conversation" === $ && t(I.a, L)?.promptMessageId !== n || t(h.e).copyLastCodeBlock !== o) && a.abort()
+                    });
+                ea((async () => {
+                    await (0, w.a)(ee, t, a.signal), a.signal.throwIfAborted();
+                    let e = en()?.content;
+                    if (null == e) throw Error("No complete code block in this conversation");
+                    return e
+                })(), a.signal).finally(() => {
+                    i(), et.current === a && (et.current = null)
+                })
+            }, D[17] = L, D[18] = en, D[19] = H, D[20] = Y, D[21] = $, D[22] = ee, D[23] = ea, D[24] = z) : z = D[24], D[25] !== X || D[26] !== Z ? (B = {
+                enabled: X,
+                priority: Z
+            }, D[25] = X, D[26] = Z, D[27] = B) : B = D[27], (0, p.a)("copyLastCodeBlock", z, B), null
+        }
+
+        function G() {}
+    }),
+    LEgg: (function(e, t, n) {
+        n.d(t, {
+            a: () => w
+        });
+        var a = n("ABep"),
+            r = n("QosV");
+        n("slpy");
+        var s = n("BolX"),
+            o = n("Wf1j"),
+            i = n("QcFS"),
+            l = n("TdH6"),
+            c = n("QcW8");
+        n("ZU27"), n("TpEm");
+        var d = n("gbrq"),
+            u = n("fBor"),
+            h = n("ipGa"),
+            p = n("d0tz"),
+            m = n("zd8w"),
+            g = n("tSEg"),
+            f = n("YnF4"),
+            v = n("dQRk");
+
+        function y() {
+            let e, t, n = (0, r.c)(3),
+                a = (0, s.y)(g.a);
+            return n[0] !== a ? (e = () => {
+                if ("chatgpt-thread" !== a.value.routeKind) return;
+                let e = a.value.conversationId;
+                return a.watch(t => {
+                    let {
+                        get: n
+                    } = t, r = n(v.j, e);
+                    if (null != r) return (0, f.a)(a, (0, p.Re)(`chatgpt:${r}`))
+                })
+            }, t = [a], n[0] = a, n[1] = e, n[2] = t) : (e = n[1], t = n[2]), (0, m.useLayoutEffect)(e, t), null
+        }
+        n("n5iL"), n("q3HK"), n("bf6R");
+        var b = n("rBfn"),
+            x = n("enMl"),
+            C = n("PCEr");
+
+        function w(e) {
+            let t, n, s, o, l, c, d = (0, r.c)(16),
+                {
+                    chatIcon: p,
+                    header: m,
+                    title: g,
+                    isArchivedPreview: f,
+                    children: v
+                } = e;
+            return d[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(i.a.MainContentLayout, {
+                layout: (0, h.a)() ? "default" : "thread-edge-scroll"
+            }), d[0] = t) : t = d[0], d[1] !== f ? (n = f ? null : (0, a.jsx)(u.SitePreviewBridge, {}), d[1] = f, d[2] = n) : n = d[2], d[3] !== m ? (s = (0, a.jsx)(i.a.Header, {
+                desktopPlacement: "titlebar",
+                divider: !1,
+                children: m
+            }), d[3] = m, d[4] = s) : s = d[4], d[5] === Symbol.for("react.memo_cache_sentinel") ? (o = (0, a.jsx)(i.a.RightPanelOutlet, {
+                children: (0, a.jsx)(i.a.RightPanelTabs, {})
+            }), d[5] = o) : o = d[5], d[6] !== p || d[7] !== m || d[8] !== f || d[9] !== g ? (l = f ? null : (0, a.jsx)(_, {
+                chatIcon: p,
+                mainToolbar: m,
+                title: g
+            }), d[6] = p, d[7] = m, d[8] = f, d[9] = g, d[10] = l) : l = d[10], d[11] !== v || d[12] !== n || d[13] !== s || d[14] !== l ? (c = (0, a.jsxs)(a.Fragment, {
+                children: [t, n, s, v, o, l]
+            }), d[11] = v, d[12] = n, d[13] = s, d[14] = l, d[15] = c) : c = d[15], c
+        }
+
+        function _(e) {
+            let t, n, i, u, p, m, f = (0, r.c)(13),
+                {
+                    chatIcon: v,
+                    mainToolbar: w,
+                    title: _
+                } = e,
+                I = (0, s.y)(g.a);
+            return (0, o.a)(), (0, s.z)(d.i), (0, s.z)(c.s), f[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(l.a, {}), n = (0, a.jsx)(y, {}), f[0] = t, f[1] = n) : (t = f[0], n = f[1]), f[2] !== v || f[3] !== _ ? (i = (0, a.jsx)(x.a, {
+                title: _,
+                icon: v
+            }), f[2] = v, f[3] = _, f[4] = i) : i = f[4], f[5] !== w ? (u = (0, a.jsx)(C.a, {
+                mainToolbar: w
+            }), f[5] = w, f[6] = u) : u = f[6], f[7] !== I.value.routeKind ? (p = "other" === I.value.routeKind || (0, h.a)() ? null : (0, a.jsx)(b.b, {
+                showLauncherButton: !1
+            }), f[7] = I.value.routeKind, f[8] = p) : p = f[8], f[9] !== i || f[10] !== u || f[11] !== p ? (m = (0, a.jsxs)(a.Fragment, {
+                children: [t, n, i, u, p, null, null]
+            }), f[9] = i, f[10] = u, f[11] = p, f[12] = m) : m = f[12], m
+        }
+    }),
+    dLcZ: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV");
+        n("slpy"), n("zd8w");
+        var s = n("QcFS");
+        n("Sm6l"), n("HOLv");
+        var o = n("NVRI"),
+            i = n("MMlk");
+
+        function l(e) {
+            let {
+                actionId: t,
+                order: n,
+                content: r
+            } = e;
+            return null == r ? null : (0, a.jsx)(s.a.HeaderAction, {
+                actionId: t,
+                align: "end",
+                order: n,
+                children: (0, a.jsx)("div", {
+                    className: "flex items-center gap-toolbar-action",
+                    children: r
+                })
+            }, t)
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, s, l, c, d, u, h, p, m = (0, r.c)(18);
+                m[0] !== e ? ({
+                    isTemporaryChat: c,
+                    isCloudTask: t,
+                    leading: n,
+                    startActions: l,
+                    ...s
+                } = e, m[0] = e, m[1] = t, m[2] = n, m[3] = s, m[4] = l, m[5] = c) : (t = m[1], n = m[2], s = m[3], l = m[4], c = m[5]);
+                let g = void 0 !== c && c;
+                return m[6] !== n || null !== m[7] ? (d = (0, a.jsxs)(a.Fragment, {
+                    children: [n, null]
+                }), m[6] = n, m[7] = null, m[8] = d) : d = m[8], m[9] !== g ? (u = g ? (0, a.jsx)(i.b, {
+                    isIndicator: !0,
+                    isTemporaryChat: !0
+                }) : null, m[9] = g, m[10] = u) : u = m[10], m[11] !== l || m[12] !== u ? (h = (0, a.jsxs)(a.Fragment, {
+                    children: [l, u]
+                }), m[11] = l, m[12] = u, m[13] = h) : h = m[13], m[14] !== s || m[15] !== d || m[16] !== h ? (p = (0, a.jsx)(a.Fragment, {
+                    children: (0, a.jsx)(o.a, {
+                        ...s,
+                        inset: "tab-strip-flush-start",
+                        leading: d,
+                        startActions: h
+                    })
+                }), m[14] = s, m[15] = d, m[16] = h, m[17] = p) : p = m[17], p
+            },
+            b: function(e) {
+                let t, n, o, i, c, d = (0, r.c)(13),
+                    {
+                        children: u,
+                        menu: h,
+                        hasTitleMenu: p
+                    } = e,
+                    m = void 0 !== p && p;
+                d[0] !== m || d[1] !== h ? (t = m ? (0, a.jsx)(s.a.HeaderAction, {
+                    actionId: "chatgpt-conversation-title-menu",
+                    align: "start",
+                    slotPosition: "threadTitle",
+                    children: h
+                }) : null, d[0] = m, d[1] = h, d[2] = t) : t = d[2], d[3] !== u ? (n = {
+                    actionId: "chatgpt-conversation-actions",
+                    order: 100,
+                    content: u
+                }, d[3] = u, d[4] = n) : n = d[4];
+                let g = m ? null : h;
+                return d[5] !== g ? (o = {
+                    actionId: "chatgpt-conversation-overflow",
+                    order: 0,
+                    content: g
+                }, d[5] = g, d[6] = o) : o = d[6], d[7] !== n || d[8] !== o ? (i = [n, o].map(l), d[7] = n, d[8] = o, d[9] = i) : i = d[9], d[10] !== t || d[11] !== i ? (c = (0, a.jsxs)(a.Fragment, {
+                    children: [t, i]
+                }), d[10] = t, d[11] = i, d[12] = c) : c = d[12], c
+            }
+        })
+    }),
+    WVag: (function(e, t, n) {
+        var a = n("LwKP"),
+            r = n("BolX"),
+            s = n("ASxG"),
+            o = n("fDv2"),
+            i = n("OWtl"),
+            l = n("dQRk");
+        let c = s.object({
+                epic_patient_label: s.string(),
+                epic_patient_name: s.string().nullable().optional(),
+                epic_patient_birth_date: o.date().nullable().optional(),
+                epic_encounter_label: s.string().nullable().optional()
+            }),
+            d = (0, r.d)(i.a, (e, t) => {
+                let {
+                    get: n
+                } = t, a = n(l.M, e);
+                return null == a ? null : Object.values(a).map(e => e.message)
+            }, {
+                autoDispose: !0,
+                isEqual: (e, t) => e === t || null != e && null != t && e.length === t.length && e.every((e, n) => e?.id === t[n]?.id && e?.metadata === t[n]?.metadata)
+            }),
+            u = (0, r.i)(i.a, e => null, (e, t) => {
+                let {
+                    scope: n,
+                    set: r
+                } = t;
+                if (null == e) return;
+                let s = null,
+                    o = () => {
+                        r(h(e, s, null))
+                    };
+                window.addEventListener(a.b, o);
+                let i = n.watch(t => {
+                    let {
+                        get: n
+                    } = t;
+                    s = n(d, e), o()
+                });
+                return () => {
+                    i(), window.removeEventListener(a.b, o)
+                }
+            }, {
+                autoDispose: !0,
+                isEqual: (e, t) => e === t || null != e && null != t && e.labels?.epic_patient_label === t.labels?.epic_patient_label && e.labels?.epic_patient_name === t.labels?.epic_patient_name && e.labels?.epic_patient_birth_date === t.labels?.epic_patient_birth_date && e.labels?.epic_encounter_label === t.labels?.epic_encounter_label && e.snapshot === t.snapshot && e.destination === t.destination
+            });
+
+        function h(e, t, n) {
+            let a = t?.find(e => c.safeParse(e?.metadata).success),
+                r = c.safeParse(a?.metadata),
+                s = "u" < typeof window ? void 0 : window.__oaiEpicNativeLaunch,
+                o = (null == e ? n : null) ?? (t?.some(e => e?.id != null && s?.ownsMessage(e.id)) ? s?.get() ?? null : null);
+            return r.success || null != o ? {
+                labels: r.success ? r.data : null,
+                snapshot: o,
+                destination: null == o ? void 0 : s?.destination()
+            } : null
+        }
+        n.d(t, {}, {
+            a: u,
+            b: h
+        })
+    }),
+    a4V1: (function(e, t, n) {
+        var a = n("BolX"),
+            r = n("AuIy"),
+            s = n("IgxH"),
+            o = n("OWtl"),
+            i = n("OMIV"),
+            l = n("dQRk");
+        let c = (0, a.d)(o.a, (e, t) => {
+                let {
+                    get: n
+                } = t;
+                if (null == e) return null;
+                let a = n(l.M, e),
+                    s = n(l.C, e);
+                return null == a || null == s ? null : (0, r.b)({
+                    mapping: a,
+                    current_node: s
+                }).findLast(e => "assistant" === e.author.role && !(0, r.m)(e) && "" !== (0, r.e)(e).trim())
+            }),
+            d = (0, a.d)(o.a, (e, t) => {
+                let {
+                    get: n
+                } = t;
+                if (null == e || n(i.d, "2163293173") && !n(l.J, e)) return null;
+                let a = n(c, e);
+                return null == a ? null : (0, s.a)((0, r.e)(a)).trim()
+            });
+        n.d(t, {}, {
+            a: d
+        })
+    }),
+    wrCb: (function(e, t, n) {
+        n.d(t, {}, {
+            a: function(e) {
+                return new URL(e, window.location.origin).href
+            }
+        })
+    }),
+    H7Nt: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("oyxz"),
+            i = n("Cslg"),
+            l = n("bqtn"),
+            c = n("bf6R"),
+            d = n("Bbed"),
+            u = n("X6Vn"),
+            h = n("OWtl");
+        let p = (0, d.a)(async () => (await n.e(306529).then(n.bind(n, "GkN4"))).GptReportDialog);
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, d, m, g = (0, r.c)(9),
+                    {
+                        resource: f,
+                        onSelect: v
+                    } = e,
+                    y = (0, s.y)(h.a),
+                    b = (0, s.z)(i.f);
+                return null == b || f.gizmo.tags?.includes("first_party") || "marketplace" !== f.gizmo.share_recipient && "link" !== f.gizmo.share_recipient ? null : (g[0] !== b || g[1] !== v || g[2] !== f || g[3] !== y ? (t = () => {
+                    v?.(), (0, u.f)(y, p, {
+                        accountId: b,
+                        resource: f
+                    })
+                }, g[0] = b, g[1] = v, g[2] = f, g[3] = y, g[4] = t) : t = g[4], g[5] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, a.jsx)(l.c.ItemIcon, {
+                    children: (0, a.jsx)(c.rd, {})
+                }), d = (0, a.jsx)(o.a, {
+                    id: "chatgptConversations.gpts.report.action",
+                    defaultMessage: "Report GPT",
+                    description: "Menu action to report a publicly shared third-party GPT"
+                }), g[5] = n, g[6] = d) : (n = g[5], d = g[6]), g[7] !== t ? (m = (0, a.jsxs)(l.c.Item, {
+                    onSelect: t,
+                    children: [n, d]
+                }), g[7] = t, g[8] = m) : m = g[8], m)
+            }
+        })
+    }),
+    alJ6: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("on57"),
+            o = n("BolX"),
+            i = n("jqIZ"),
+            l = n("Bbed"),
+            c = n("OWtl"),
+            d = n("OMIV"),
+            u = n("tV8b"),
+            h = n("u9iS");
+        let p = (0, l.a)(async () => (await n.e(901042).then(n.bind(n, "ut8h"))).GptPluginMigrationBannerContent, {
+            errorFallback: e => (0, a.jsx)(g, {
+                ...e
+            })
+        });
+
+        function m(e) {
+            let t, n = (0, r.c)(3),
+                {
+                    gizmoId: s
+                } = e,
+                i = (0, o.x)(d.d, "2160578039");
+            return n[0] !== i || n[1] !== s ? (t = i ? (0, a.jsx)(p, {
+                gizmoId: s
+            }, s) : null, n[0] = i, n[1] = s, n[2] = t) : t = n[2], t
+        }
+
+        function g(e) {
+            let t, n, s = (0, r.c)(10),
+                {
+                    gizmoId: l
+                } = e,
+                d = (0, o.y)(c.a),
+                p = (0, i.Y)(),
+                m = (0, i._)(),
+                {
+                    data: g
+                } = (0, o.x)(h.f, l);
+            s[0] !== l || s[1] !== p.pathname ? (t = {
+                gizmoId: l,
+                visitKey: p.pathname
+            }, s[0] = l, s[1] = p.pathname, s[2] = t) : t = s[2];
+            let f = (0, o.x)(h.c, t);
+            return s[3] !== f || s[4] !== l || s[5] !== p.pathname || s[6] !== m || s[7] !== g || s[8] !== d ? (n = f && g?.gizmo.migrated_plugin_id ? (0, a.jsx)(u.a, {
+                gptName: g.gizmo.display.name,
+                accessState: "error",
+                onUsePlugin: () => void m("/plugins"),
+                onKeepUsingGpt: () => (0, h.a)(d, {
+                    gizmoId: l,
+                    visitKey: p.pathname
+                })
+            }) : null, s[3] = f, s[4] = l, s[5] = p.pathname, s[6] = m, s[7] = g, s[8] = d, s[9] = n) : n = s[9], n
+        }
+        n.d(t, {}, {
+            GptPluginMigrationBanner: m,
+            GptPluginMigrationHomeBanner: function(e) {
+                let t, n, o, i = (0, r.c)(7),
+                    {
+                        entryPoint: l,
+                        gizmoId: c
+                    } = e,
+                    d = "codex" === l && "electron:mx-[var(--home-composer-inline-inset)]";
+                return i[0] !== d ? (t = (0, s.b)("empty:hidden", d), i[0] = d, i[1] = t) : t = i[1], i[2] !== c ? (n = (0, a.jsx)(m, {
+                    gizmoId: c
+                }), i[2] = c, i[3] = n) : n = i[3], i[4] !== t || i[5] !== n ? (o = (0, a.jsx)("div", {
+                    className: t,
+                    children: n
+                }), i[4] = t, i[5] = n, i[6] = o) : o = i[6], o
+            }
+        })
+    }),
+    tV8b: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("Wf1j"),
+            o = n("oyxz"),
+            i = n("zKCW"),
+            l = n("Sm6l"),
+            c = n("HOLv"),
+            d = n("hZax"),
+            u = n("slBk"),
+            h = n("CS9C");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, p, m, g, f, v, y, b, x = (0, r.c)(34),
+                    {
+                        gptName: C,
+                        accessState: w,
+                        onUsePlugin: _,
+                        onKeepUsingGpt: I,
+                        onRetry: S
+                    } = e,
+                    j = (0, s.a)(),
+                    T = (0, d.g)("2513446768");
+                x[0] !== T || x[1] !== j ? (t = j.formatDate((0, u.a)(T.get("retirement_date", "")), {
+                    month: "long",
+                    day: "numeric",
+                    timeZone: "UTC"
+                }), x[0] = T, x[1] = j, x[2] = t) : t = x[2];
+                let P = t;
+                if ("error" === w && null != S) {
+                    let e;
+                    x[3] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(o.a, {
+                        id: "chatgptConversations.gpts.migration.chatChoiceRetry",
+                        defaultMessage: "Try again",
+                        description: "Retry checking access to the migrated plugin"
+                    }), x[3] = e) : e = x[3], n = e
+                } else if ("admin" === w) {
+                    let e;
+                    x[4] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(o.a, {
+                        id: "chatgptConversations.gpts.migration.viewPlugin",
+                        defaultMessage: "View Plugin",
+                        description: "Button that opens a migrated plugin in workspace admin settings for an administrator who cannot open its ordinary plugin details; does not start a chat"
+                    }), x[4] = e) : e = x[4], n = e
+                } else if ("allowed" === w || "pending" === w) {
+                    let e;
+                    x[5] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(o.a, {
+                        id: "chatgptConversations.gpts.migration.chatChoiceUsePlugin",
+                        defaultMessage: "Use plugin",
+                        description: "Opens the migrated plugin detail page from the initial GPT chat choice."
+                    }), x[5] = e) : e = x[5], n = e
+                } else {
+                    let e;
+                    x[6] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(o.a, {
+                        id: "chatgptConversations.gpts.migration.chatChoiceExplorePlugins",
+                        defaultMessage: "Explore plugins",
+                        description: "Opens the plugin directory from a migrated GPT chat banner when access to its plugin was denied or could not be verified after a failed request."
+                    }), x[6] = e) : e = x[6], n = e
+                }
+                if ("error" === w && null == S) {
+                    let e;
+                    x[7] !== P ? (e = (0, a.jsx)(o.a, {
+                        id: "chatgptConversations.gpts.migration.chatChoiceAccessUnconfirmed",
+                        defaultMessage: "We couldn’t check your access to the plugin. You can keep using this GPT until {deadline}.",
+                        description: "Fallback when the migration banner cannot load. Access is unknown; the user can explore plugins or continue using the GPT.",
+                        values: {
+                            deadline: P
+                        }
+                    }), x[7] = P, x[8] = e) : e = x[8], p = e
+                } else if ("error" === w) {
+                    let e;
+                    x[9] !== P ? (e = (0, a.jsx)(o.a, {
+                        id: "chatgptConversations.gpts.migration.chatChoiceAccessError",
+                        defaultMessage: "We couldn’t check your access to the plugin. Try again, or keep using this GPT until {deadline}.",
+                        description: "Migrated GPT notice after a failed plugin-access check; deadline is the localized retirement date",
+                        values: {
+                            deadline: P
+                        }
+                    }), x[9] = P, x[10] = e) : e = x[10], p = e
+                } else if ("denied" === w) {
+                    let e;
+                    x[11] !== P ? (e = (0, a.jsx)(o.a, {
+                        id: "chatgptConversations.gpts.migration.chatChoiceAccessDenied",
+                        defaultMessage: "This plugin isn’t available to you. You can keep using this GPT until {deadline}.",
+                        description: "Migrated GPT notice when the destination plugin is inaccessible; deadline is the localized retirement date",
+                        values: {
+                            deadline: P
+                        }
+                    }), x[11] = P, x[12] = e) : e = x[12], p = e
+                } else if (C.trim()) {
+                    let e;
+                    x[13] !== P || x[14] !== C ? (e = (0, a.jsx)(o.a, {
+                        id: "chatgptConversations.gpts.migration.chatChoiceNamedBody",
+                        defaultMessage: "{gptName} is now available as a plugin. You can keep using this GPT until {deadline}.",
+                        description: "Explains the migrated GPT choice before the composer. gptName is the GPT display name and deadline is a localized month and day.",
+                        values: {
+                            gptName: C,
+                            deadline: P
+                        }
+                    }), x[13] = P, x[14] = C, x[15] = e) : e = x[15], p = e
+                } else {
+                    let e;
+                    x[16] !== P ? (e = (0, a.jsx)(o.a, {
+                        id: "chatgptConversations.gpts.migration.chatChoiceBody",
+                        defaultMessage: "This GPT is now available as a plugin. You can keep using this GPT until {deadline}.",
+                        description: "Explains the migrated GPT choice when the GPT has no display name; deadline is a localized month and day.",
+                        values: {
+                            deadline: P
+                        }
+                    }), x[16] = P, x[17] = e) : e = x[17], p = e
+                }
+                x[18] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, a.jsx)(c.a, {
+                    asset: h.a,
+                    className: "text-secondary"
+                }), x[18] = m) : m = x[18], x[19] !== C ? (g = C.trim() ? (0, a.jsx)(o.a, {
+                    id: "chatgptConversations.gpts.migration.chatChoiceNamedTitle",
+                    defaultMessage: "{gptName} is now a plugin",
+                    description: "Title of the migrated GPT chat choice shown before the composer. gptName is the user-provided GPT name.",
+                    values: {
+                        gptName: C
+                    }
+                }) : (0, a.jsx)(o.a, {
+                    id: "chatgptConversations.gpts.migration.chatChoiceTitle",
+                    defaultMessage: "This GPT is now a plugin",
+                    description: "Title of the migrated GPT chat choice when the GPT has no display name."
+                }), x[19] = C, x[20] = g) : g = x[20];
+                let E = "pending" === w,
+                    A = "error" === w && null != S ? S : _;
+                return x[21] !== n || x[22] !== E || x[23] !== A ? (f = (0, a.jsx)(l.a, {
+                    color: "primary",
+                    loading: E,
+                    size: "dialog",
+                    type: "button",
+                    onClick: A,
+                    children: n
+                }), x[21] = n, x[22] = E, x[23] = A, x[24] = f) : f = x[24], x[25] !== I ? (v = null == I ? null : (0, a.jsx)(l.a, {
+                    color: "outline",
+                    size: "dialog",
+                    type: "button",
+                    onClick: I,
+                    children: (0, a.jsx)(o.a, {
+                        id: "chatgptConversations.gpts.migration.chatChoiceKeepUsing",
+                        defaultMessage: "Keep using GPT",
+                        description: "Reveals the existing GPT chat composer for this visit only, keeping its draft. The choice is shown again when the GPT is reopened."
+                    })
+                }), x[25] = I, x[26] = v) : v = x[26], x[27] !== f || x[28] !== v ? (y = (0, a.jsxs)("div", {
+                    className: "flex flex-wrap items-center gap-2",
+                    children: [f, v]
+                }), x[27] = f, x[28] = v, x[29] = y) : y = x[29], x[30] !== p || x[31] !== g || x[32] !== y ? (b = (0, a.jsx)("div", {
+                    className: "mx-auto mb-3 w-full max-w-[var(--thread-content-max-width)]",
+                    children: (0, a.jsx)(i.a, {
+                        variant: "announcement",
+                        icon: m,
+                        stackOnNarrow: !0,
+                        wrapCtas: !0,
+                        title: g,
+                        content: p,
+                        customCtas: y
+                    })
+                }), x[30] = p, x[31] = g, x[32] = y, x[33] = b) : b = x[33], b
+            }
+        })
+    }),
+    slBk: (function(e, t, n) {
+        var a = n("rHrT");
+        let r = Date.UTC(2026, 11, 11);
+        n.d(t, {}, {
+            a: function(e) {
+                if (!/^\d{4}-\d{2}-\d{2}$/.test(e)) return r;
+                let t = Date.parse(`${e}T00:00:00.000Z`);
+                return Number.isFinite(t) && new Date(t).toISOString().slice(0, 10) === e ? t : r
+            },
+            b: function(e, t) {
+                let n = ((0, a.a)(e)?.locale ?? "en-US").toLowerCase(),
+                    r = "en-us" === n ? "en" : n,
+                    s = `https://help.openai.com/${r}/articles/20001519-custom-gpt-retirement-and-migration-faq`;
+                try {
+                    let e = new URL(t.replaceAll("{lang}", r));
+                    return "https:" === e.protocol ? e.href : s
+                } catch {
+                    return s
+                }
+            }
+        })
+    }),
+    YdNM: (function(e, t, n) {
+        var a = n("ASxG");
+        let r = a.url({
+            protocol: /^https$/
+        }).or(a.emoji()).nullish().catch(null);
+        n.d(t, {}, {
+            a: r
+        })
+    }),
+    T33u: (function(e, t, n) {
+        var a = n("czpb"),
+            r = n("BolX"),
+            s = n("ASxG"),
+            o = n("OWtl"),
+            i = n("OMIV"),
+            l = n("b6fw"),
+            c = n("YdNM");
+        let d = s.object({
+                course_id: s.string().trim().min(1),
+                title: s.string().trim().nullish().catch(null),
+                icon_url_or_emoji: c.a
+            }),
+            u = s.object({
+                course_info: d.nullish()
+            }),
+            h = (0, r.d)(o.a, (e, t) => {
+                let {
+                    get: n
+                } = t, a = u.safeParse(n(l.i, e)?.view);
+                return a.success ? a.data.course_info ?? null : null
+            }, {
+                isEqual: a.isEqual
+            }),
+            p = (0, r.d)(o.a, (e, t) => {
+                let {
+                    get: n
+                } = t;
+                return n(i.d, "4035922817") ? n(h, e) : null
+            }),
+            m = (0, r.d)(o.a, (e, t) => {
+                let {
+                    get: n
+                } = t;
+                return n(p, e)?.course_id ?? null
+            }),
+            g = (0, r.d)(o.a, (e, t) => {
+                let {
+                    get: n
+                } = t;
+                return !!n(p, e)?.title
+            });
+        n.d(t, {}, {
+            a: m,
+            b: p,
+            c: g
+        })
+    }),
+    wnpN: (function(e, t, n) {
+        var a = n("FC5L"),
+            r = n("OMIV"),
+            s = n("XtQP"),
+            o = n("dQRk"),
+            i = n("ZniH");
+        let l = (0, a.a)({
+            conversationIds: (e, t) => [t],
+            status: (e, t) => {
+                let {
+                    get: n
+                } = e, a = n(o.w, t);
+                return {
+                    pending: (0, o.Ab)(n(o.$, t)),
+                    completed: null == a || "completed" === a.result,
+                    completionId: n(r.d, "2163293173") ? JSON.stringify([t, a?.requestId, n(o.C, t)]) : void 0,
+                    unread: n(o.J, t)
+                }
+            },
+            preview: (e, t) => {
+                let {
+                    get: n
+                } = e, a = n(o.M, t);
+                return null == a ? null : (0, i.a)({
+                    mapping: a,
+                    current_node: n(o.C, t)
+                })?.text ?? null
+            },
+            title: (e, t) => {
+                let {
+                    get: n
+                } = e;
+                return n(o.db, t) || null
+            },
+            dismiss: (e, t) => {
+                (0, o.Wb)(e, t, !1), (0, s.b)(e, t).catch(() => {})
+            }
+        });
+        n.d(t, {}, {
+            a: l
+        })
+    }),
+    M3Kf: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("zd8w"),
+            i = n("v7qY"),
+            l = n("hEYZ"),
+            c = n("OWtl"),
+            d = n("yLzP"),
+            u = n("lsfk"),
+            h = n("dQRk"),
+            p = n("jfiJ"),
+            m = n("FGJH");
+
+        function g(e) {
+            return e.isIntersecting
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, f, v, y, b = (0, r.c)(20),
+                    {
+                        conversationId: x
+                    } = e,
+                    C = (0, s.y)(c.a),
+                    w = (0, s.z)(l.b),
+                    _ = (0, s.x)(h.j, x),
+                    I = (0, s.x)(m.c, _ ?? x),
+                    S = (0, u.b)(),
+                    j = (0, o.useRef)(null);
+                b[0] !== C || b[1] !== _ ? (t = () => {
+                    null != _ && (0, p.b)(C, _, i.flushSync)
+                }, b[0] = C, b[1] = _, b[2] = t) : t = b[2];
+                let T = t;
+                b[3] !== x || b[4] !== T || b[5] !== C || b[6] !== _ ? (n = () => {
+                    let e = C.get(m.c, _ ?? x);
+                    C.get(l.b) || e?.hasError || T()
+                }, b[3] = x, b[4] = T, b[5] = C, b[6] = _, b[7] = n) : n = b[7];
+                let P = (0, o.useEffectEvent)(n);
+                b[8] !== S || b[9] !== w || b[10] !== P ? (f = () => {
+                    if (w) return;
+                    let e = j.current,
+                        t = S.getScrollElement();
+                    if (null == e || null == t) return;
+                    let n = new IntersectionObserver(e => {
+                        e.some(g) && P()
+                    }, {
+                        root: t,
+                        rootMargin: "80px 0px 0px 0px"
+                    });
+                    return n.observe(e), () => n.disconnect()
+                }, b[8] = S, b[9] = w, b[10] = P, b[11] = f) : f = b[11];
+                let E = I?.cursor,
+                    A = I?.hasError;
+                if (b[12] !== S || b[13] !== w || b[14] !== _ || b[15] !== E || b[16] !== A ? (v = [S, w, _, E, A], b[12] = S, b[13] = w, b[14] = _, b[15] = E, b[16] = A, b[17] = v) : v = b[17], (0, o.useEffect)(f, v), null == I || I.complete || null == I.cursor) return null;
+                let M = I.hasError ? T : null;
+                return b[18] !== M ? (y = (0, a.jsx)(d.a, {
+                    ref: j,
+                    onRetry: M
+                }), b[18] = M, b[19] = y) : y = b[19], y
+            }
+        })
+    }),
+    lUUH: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("oyxz"),
+            i = n("Qgfj"),
+            l = n("jqIZ"),
+            c = n("bqtn"),
+            d = n("bf6R"),
+            u = n("SGsN"),
+            h = n("svjy"),
+            p = n("nlNF"),
+            m = n("crAQ"),
+            g = n("FR8U"),
+            f = n("OWtl"),
+            v = n("OtLV"),
+            y = n("w7E5"),
+            b = n("wVX4"),
+            x = n("c5lN"),
+            C = n("QmkR"),
+            w = n("xEXG"),
+            _ = n("KMqT"),
+            I = n("J6LI"),
+            S = n("FgUr"),
+            j = n("WLgA");
+        let T = (0, s.u)(f.a, 0);
+
+        function P(e) {
+            let {
+                scope: t,
+                conversation: n,
+                project: r,
+                projectListQuery: s,
+                pinnedProjectsQuery: o,
+                showMoveToProject: i = !0,
+                showDestinationFetchState: l = !0,
+                projectCrudStatus: c,
+                navigate: f,
+                onCreateProjectDialogCloseAutoFocus: w
+            } = e, {
+                isWorkConversation: P,
+                sourceMemoryBlocked: A
+            } = (0, I.c)(n, r), M = A ? v.a.projectOnlyMoveUnavailable : void 0, {
+                data: k,
+                isPending: R,
+                isError: N
+            } = s, {
+                data: O,
+                isPending: F,
+                isError: G
+            } = o, z = (0, S.a)(O, k, r?.gizmo.id), B = "allowed" === c, D = e => {
+                let a = t.get(T) + 1,
+                    r = t.get(p.e);
+                t.set(T, a), (0, C.T)({
+                    scope: t,
+                    conversationId: n.id,
+                    projectId: e.gizmo.id
+                }).then(n => {
+                    n && t.get(T) === a && t.get(p.e) === r && f((0, j.c)(e.gizmo.id))
+                }).catch(() => {
+                    t.get(u.f).danger(t.get(h.a).formatMessage(E.moveFailed), {
+                        errorAnalytics: {
+                            toastId: "move_conversation_to_snorlax_error"
+                        }
+                    })
+                })
+            }, L = [];
+            for (let e of (B && (L.push({
+                    id: "new-chatgpt-project",
+                    icon: d.yg,
+                    message: E.newProject,
+                    selectAfterClose: !0,
+                    onSelect: () => {
+                        t.set(T, e => e + 1), (0, x.a)(t, D, {
+                            allowLocalProjectCreation: !1,
+                            forceGlobalMemory: P,
+                            onCloseAutoFocus: w
+                        })
+                    }
+                }), z.length > 0 && L.push({
+                    id: "new-project-separator",
+                    type: "separator"
+                })), z)) {
+                let {
+                    targetMemoryBlocked: t
+                } = (0, I.c)(n, void 0, e), r = t ? (0, _.a)((0, b.c)(e)) : void 0;
+                L.push({
+                    id: `move-to-project:${e.gizmo.id}`,
+                    icon: (0, a.jsx)(g.a, {
+                        className: "icon-xs",
+                        size: 16,
+                        color: e.gizmo.display.theme,
+                        fallbackIcon: (0, a.jsx)(d.vd, {}),
+                        icon: e.gizmo.display.emoji
+                    }),
+                    nativeIcon: (0, m.b)(e.gizmo.display.emoji),
+                    message: E.projectName,
+                    messageValues: {
+                        projectName: e.gizmo.display.name
+                    },
+                    enabled: null == r,
+                    tooltipMessage: r,
+                    onSelect: () => D(e)
+                })
+            }
+            return l && (N || G) ? L.push({
+                id: "retry-project-destinations",
+                message: E.destinationsFailed,
+                closeOnSelect: !1,
+                onSelect: () => {
+                    Promise.all([t.query.invalidate(y.a), t.query.invalidate(C.m)])
+                }
+            }) : l && (R || F) ? L.push({
+                id: "loading-project-destinations",
+                message: E.loading,
+                tooltipMessage: E.reopen,
+                enabled: !1
+            }) : N || G || R || F || 0 !== z.length || B || L.push({
+                id: "no-project-destinations",
+                message: E.noDestinations,
+                enabled: !1
+            }), [...i && L.length > 0 ? [{
+                id: "move-to-project",
+                icon: d.vd,
+                message: E.moveToProject,
+                enabled: !A,
+                tooltipMessage: M,
+                submenu: L
+            }] : [], ...null == r ? [] : [{
+                id: "remove-from-project",
+                icon: d.Dd,
+                message: E.removeFromProject,
+                enabled: !A,
+                tooltipMessage: M,
+                onSelect: () => {
+                    t.set(T, e => e + 1), (0, C.T)({
+                        scope: t,
+                        conversationId: n.id,
+                        projectId: null
+                    }).catch(() => {
+                        t.get(u.f).danger(t.get(h.a).formatMessage(E.removeFailed), {
+                            errorAnalytics: {
+                                toastId: "move_conversation_to_snorlax_error"
+                            }
+                        })
+                    })
+                }
+            }]]
+        }
+        let E = (0, i.f)({
+            moveToProject: {
+                id: "chatgptConversations.projectActions.moveToProject",
+                defaultMessage: "Move to project",
+                description: "Context or overflow submenu that moves a ChatGPT conversation or Work task into a different ChatGPT project"
+            },
+            projectName: {
+                id: "chatgptConversations.projectActions.projectName",
+                defaultMessage: "{projectName}",
+                description: "Name of a ChatGPT project offered as a destination for moving a conversation or Work task"
+            },
+            removeFromProject: {
+                id: "chatgptProjectHome.chats.projectActions.remove",
+                defaultMessage: "Remove from project",
+                description: "Action in a conversation header or project-home chat's overflow menu that moves the chat back to general history; the project name appears in the section heading"
+            },
+            moveFailed: {
+                id: "chatgptProjectHome.chats.projectActions.moveFailed",
+                defaultMessage: "Failed to move the conversation to the project",
+                description: "Error toast after moving a chat from the project-home or conversation-header overflow menu fails; the chat's previous project membership is restored"
+            },
+            removeFailed: {
+                id: "chatgptProjectHome.chats.projectActions.removeFailed",
+                defaultMessage: "Failed to remove the conversation from the project",
+                description: "Error toast after a chat cannot be removed from its current project; its previous membership is restored"
+            },
+            newProject: {
+                id: "chatgptProjectHome.chats.projectActions.newProject",
+                defaultMessage: "New project",
+                description: "Action in the project-home or conversation-header Move to project submenu that creates a new cloud project and then moves the chat into it"
+            },
+            destinationsFailed: {
+                id: "chatgptProjectHome.chats.projectActions.destinationsFailed",
+                defaultMessage: "Couldn’t load projects. Try again",
+                description: "Retry action in the project-home or conversation-header Move to project submenu when project destinations fail to load; already loaded destinations remain available"
+            },
+            loading: {
+                id: "chatgptConversations.projects.loadingMenu",
+                defaultMessage: "Loading projects…",
+                description: "Disabled menu item while project destinations load"
+            },
+            reopen: {
+                id: "chatgptConversations.projects.reopenMenu",
+                defaultMessage: "Reopen this menu to refresh project destinations",
+                description: "Native menu hint for refreshing project destinations"
+            },
+            noDestinations: {
+                id: "chatgptProjectHome.chats.projectActions.noDestinations",
+                defaultMessage: "No other projects",
+                description: "Empty state in a project-home or conversation-header Move to project submenu when no destination projects are available and project creation is not allowed"
+            }
+        });
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, i = (0, r.c)(12),
+                    {
+                        conversation: d,
+                        onCreateProjectDialogCloseAutoFocus: u,
+                        project: h,
+                        showMoveToProject: p
+                    } = e,
+                    m = void 0 === p || p,
+                    g = (0, s.y)(f.a),
+                    v = (0, l._)(),
+                    b = (0, s.z)(y.a),
+                    x = (0, s.z)(C.m),
+                    _ = (0, w.b)();
+                if (i[0] !== d || i[1] !== v || i[2] !== u || i[3] !== x || i[4] !== h || i[5] !== _ || i[6] !== b || i[7] !== g || i[8] !== m) {
+                    let e = P({
+                            scope: g,
+                            conversation: d,
+                            project: h,
+                            projectListQuery: b,
+                            pinnedProjectsQuery: x,
+                            showMoveToProject: m,
+                            projectCrudStatus: _,
+                            navigate: v,
+                            onCreateProjectDialogCloseAutoFocus: u
+                        }),
+                        n = e => {
+                            if ("separator" === e.type) return (0, a.jsx)(c.c.Separator, {}, e.id);
+                            let t = e.message ? (0, a.jsx)(o.a, {
+                                    ...e.message,
+                                    values: e.messageValues
+                                }) : e.id,
+                                r = e.tooltipMessage ? (0, a.jsx)(o.a, {
+                                    ...e.tooltipMessage,
+                                    values: e.tooltipMessageValues
+                                }) : void 0;
+                            return null != e.submenu ? (0, a.jsx)(c.c.FlyoutSubmenuItem, {
+                                LeftIcon: "function" == typeof e.icon ? e.icon : void 0,
+                                disabled: !1 === e.enabled,
+                                tooltipSide: "bottom",
+                                tooltipSideOffset: 8,
+                                label: t,
+                                tooltipText: r,
+                                children: e.submenu.map(n)
+                            }, e.id) : (0, a.jsx)(c.c.Item, {
+                                LeftIcon: "function" == typeof e.icon ? e.icon : void 0,
+                                leftIcon: "object" == typeof e.icon ? e.icon : void 0,
+                                disabled: !1 === e.enabled,
+                                tooltipSide: "bottom",
+                                tooltipSideOffset: 8,
+                                tooltipText: r,
+                                onSelect: t => {
+                                    !1 === e.closeOnSelect && t.preventDefault(), e.onSelect?.()
+                                },
+                                children: t
+                            }, e.id)
+                        };
+                    t = e.map(n), i[0] = d, i[1] = v, i[2] = u, i[3] = x, i[4] = h, i[5] = _, i[6] = b, i[7] = g, i[8] = m, i[9] = t
+                } else t = i[9];
+                return i[10] !== t ? (n = (0, a.jsx)(a.Fragment, {
+                    children: t
+                }), i[10] = t, i[11] = n) : n = i[11], n
+            },
+            b: P
+        })
+    }),
+    MDmT: (function(e, t, n) {
+        var a = n("BolX"),
+            r = n("Qgfj"),
+            s = n("OWtl"),
+            o = n("dQRk"),
+            i = n("b6fw");
+        let l = (0, a.d)(s.a, (e, t) => {
+            let {
+                get: n
+            } = t, a = n(i.i, e);
+            if (null == a) return null;
+            let r = n(o.M, e);
+            return null == r ? null : c({
+                ...a,
+                conversation: {
+                    mapping: r,
+                    current_node: n(o.C, e),
+                    conversation_origin: n(o.y, e),
+                    context_truncation_continuation: n(o.i, e)?.metadata
+                }
+            })
+        });
+
+        function c(e) {
+            let {
+                conversation: t,
+                view: n,
+                selectedSectionId: a,
+                entryMessageIds: r,
+                entry: s
+            } = e, o = n.definition.sections, i = o.findIndex(e => e.id === a), l = o[i], c = [], d = new Set, u = t.current_node ?? null;
+            for (; null != u && !d.has(u);) c.push(u), d.add(u), u = t.mapping[u]?.parent ?? null;
+            c.reverse();
+            let h = new Map(c.map((e, t) => [e, t])),
+                p = e => {
+                    if (null == e) return;
+                    let t = [e.start_message_id, ...r[e.id] ?? []].flatMap(e => {
+                        let t = null == e ? void 0 : h.get(e);
+                        return null == t ? [] : [t]
+                    });
+                    return 0 === t.length ? void 0 : Math.min(...t)
+                },
+                m = o[i + 1],
+                g = p(l),
+                f = p(m),
+                v = l?.start_message_id != null && null == g || m?.start_message_id != null && null == f,
+                y = s?.status === "sending" && (s.sectionId === l?.id || s.sectionId === m?.id),
+                b = null == g || v ? [] : c.slice(g, f ?? c.length),
+                x = Object.fromEntries(b.map(e => [e, t.mapping[e]]));
+            return {
+                selectedIndex: i,
+                conversation: {
+                    ...t,
+                    current_node: b.at(-1) ?? null,
+                    mapping: x
+                },
+                needsOlderMessages: v && !y,
+                isReviewing: a !== n.current_section_id && s?.sectionId !== a,
+                needsEntry: l?.start_message_id == null,
+                isEntering: s?.status === "sending"
+            }
+        }
+        let d = (0, r.f)({
+            readOnlyPlaceholder: {
+                id: "sectionedConversation.readOnlyPlaceholder",
+                defaultMessage: "This section is read-only",
+                description: "Placeholder in the disabled message composer while reviewing an earlier section of a guided conversation. Users can return to the current section to send messages."
+            }
+        });
+        n.d(t, {}, {
+            a: function(e) {
+                return e.map(e => ({
+                    ...e,
+                    errorMessage: null,
+                    isMostRecentTurn: !1,
+                    isReadOnly: !0,
+                    onEditUserMessage: void 0,
+                    onFork: void 0,
+                    onRegenerateResponse: void 0,
+                    paragen: null,
+                    pendingSubmissionAttachments: void 0,
+                    safetyReview: null,
+                    showPendingLoadingMessage: !1,
+                    showRequestUserInputStatus: !1
+                }))
+            },
+            b: c,
+            c: l,
+            d: d
+        })
+    }),
+    JUxu: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("zd8w"),
+            i = n("oyxz"),
+            l = n("QcFS"),
+            c = n("EOo5"),
+            d = n("Sm6l"),
+            u = n("X6Vn"),
+            h = n("OWtl"),
+            p = n("gsAl");
+        let m = (0, o.lazy)(async () => ({
+            default: (await Promise.resolve().then(n.bind(n, "taaw"))).CodexThreadReportDialog
+        }));
+
+        function g(e) {
+            let t, n, o, l = (0, r.c)(9),
+                {
+                    imageOnly: u
+                } = e,
+                m = (0, s.y)(h.a),
+                g = (0, s.x)(p.f, (0, c.a)());
+            return null == g ? null : (l[0] !== u || l[1] !== m || l[2] !== g.id ? (t = () => f(m, g.id, u), l[0] = u, l[1] = m, l[2] = g.id, l[3] = t) : t = l[3], l[4] !== u ? (n = u ? (0, a.jsx)(i.a, {
+                id: "chatgptConversations.sharedPost.webImage.reportButton",
+                defaultMessage: "Report image",
+                description: "Button below the shared-image disclosure that opens safety reporting for the image-only Post."
+            }) : (0, a.jsx)(i.a, {
+                id: "chatgptConversations.sharedPost.reportButton",
+                defaultMessage: "Report conversation",
+                description: "Button below the shared-chat disclosure that opens safety reporting for the shared ChatGPT image post shown in the conversation."
+            }), l[4] = u, l[5] = n) : n = l[5], l[6] !== t || l[7] !== n ? (o = (0, a.jsx)(d.a, {
+                className: "font-semibold",
+                color: "ghostActive",
+                type: "button",
+                onClick: t,
+                children: n
+            }), l[6] = t, l[7] = n, l[8] = o) : o = l[8], o)
+        }
+
+        function f(e, t) {
+            let n = arguments.length > 2 && void 0 !== arguments[2] && arguments[2];
+            (0, u.f)(e, m, {
+                reportEntityType: "post",
+                productArea: "chatgpt_post",
+                threadId: t,
+                title: n ? (0, a.jsx)(i.a, {
+                    id: "chatgptConversations.sharedPost.webImage.reportTitle",
+                    defaultMessage: "Report an image",
+                    description: "Title of the safety report dialog for an existing web image shared as an image-only Post."
+                }) : (0, a.jsx)(i.a, {
+                    id: "chatgptConversations.sharedPost.reportTitle",
+                    defaultMessage: "Report a conversation",
+                    description: "Title of the existing safety report dialog when it is opened for a shared ChatGPT image conversation."
+                })
+            })
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n = (0, r.c)(2),
+                    {
+                        imageOnly: s
+                    } = e,
+                    o = void 0 !== s && s;
+                return n[0] !== o ? (t = (0, a.jsxs)("div", {
+                    className: "flex flex-col items-center gap-1 text-center text-xs select-none",
+                    children: [(0, a.jsx)("div", {
+                        className: "text-secondary",
+                        children: o ? (0, a.jsx)(i.a, {
+                            id: "chatgptConversations.sharedPost.webImage.disclaimer",
+                            defaultMessage: "This is a shared image.",
+                            description: "Notice above an existing web image shared as an image-only Post. The sender has not shared a conversation."
+                        }) : (0, a.jsx)(i.a, {
+                            id: "chatgptConversations.sharedConversation.copyDisclaimer",
+                            defaultMessage: "This is a copy of a shared ChatGPT chat. It won't be added to memory.",
+                            description: "Informational notice above a shared ChatGPT chat explaining that the copy will not be added to the viewer's memory"
+                        })
+                    }), (0, a.jsx)(g, {
+                        imageOnly: o
+                    })]
+                }), n[0] = o, n[1] = t) : t = n[1], t
+            },
+            b: function(e) {
+                let t, n = (0, r.c)(3),
+                    {
+                        postId: o
+                    } = e,
+                    c = (0, s.y)(h.a);
+                return n[0] !== o || n[1] !== c ? (t = (0, a.jsx)(l.a.HeaderAction, {
+                    actionId: "chatgpt-shared-prompt-notice",
+                    align: "center",
+                    children: (0, a.jsx)("div", {
+                        className: "flex flex-col items-center text-center text-xs text-secondary select-none sm:block",
+                        children: (0, a.jsx)(i.a, {
+                            id: "chatgptConversations.sharedPost.promptNotice",
+                            defaultMessage: "Content created using ChatGPT. <reportButton>Report if unsafe</reportButton>",
+                            description: "Notice in the shared prompt header. The reportButton tag opens safety reporting for the original shared post.",
+                            values: {
+                                reportButton: e => (0, a.jsx)(d.a, {
+                                    className: "inline underline",
+                                    color: "ghostSecondary",
+                                    size: "inline",
+                                    onClick: () => f(c, o),
+                                    children: e
+                                }, "report")
+                            }
+                        })
+                    })
+                }), n[0] = o, n[1] = c, n[2] = t) : t = n[2], t
+            }
+        })
+    }),
+    JKdL: (function(e, t, n) {
+        n.d(t, {
+            a: () => u
+        });
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("QcFS"),
+            i = n("Cslg"),
+            l = n("OFP1"),
+            c = n("EOo5"),
+            d = n("MMlk");
+
+        function u(e) {
+            let t, n, u, h = (0, r.c)(9),
+                {
+                    children: p
+                } = e,
+                m = (0, c.a)(),
+                g = (0, s.z)(i.l),
+                f = (0, s.z)(l.m);
+            h[0] !== m.authMethod || h[1] !== g.status || h[2] !== f ? (t = function(e) {
+                let {
+                    authMethod: t,
+                    chatGptAccessStatus: n,
+                    isWorkOnlyChatDisabled: a
+                } = e;
+                return "chatgpt" === t && "allowed" === n && !a
+            }({
+                authMethod: m.authMethod,
+                chatGptAccessStatus: g.status,
+                isWorkOnlyChatDisabled: f
+            }), h[0] = m.authMethod, h[1] = g.status, h[2] = f, h[3] = t) : t = h[3];
+            let v = t;
+            return v || null != p ? (h[4] !== v ? (n = v ? (0, a.jsx)(d.a, {}) : null, h[4] = v, h[5] = n) : n = h[5], h[6] !== p || h[7] !== n ? (u = (0, a.jsx)(o.a.HeaderAction, {
+                actionId: "chatgpt-shared-post-actions",
+                align: "end",
+                allowsThreadContentOverlap: !0,
+                order: 100,
+                children: (0, a.jsxs)("div", {
+                    className: "flex items-center gap-2 browser:rounded-lg browser:bg-surface",
+                    children: [p, n]
+                })
+            }), h[6] = p, h[7] = n, h[8] = u) : u = h[8], u) : null
+        }
+    }),
+    vpdG: (function(e, t, n) {
+        var a = n("QosV"),
+            r = n("HVBu"),
+            s = n.n(r),
+            o = n("BolX"),
+            i = n("d0tz"),
+            l = n("zd8w"),
+            c = n("Gdjn"),
+            d = n("xqnZ"),
+            u = n("OWtl"),
+            h = n("ADAj"),
+            p = n("Ow2S"),
+            m = n("fDfx"),
+            g = n("dQRk");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, r, f, v, y, b = (0, a.c)(19);
+                b[0] !== e ? (t = void 0 === e ? {} : e, b[0] = e, b[1] = t) : t = b[1];
+                let {
+                    composerController: x,
+                    conversationId: C,
+                    draftKey: w,
+                    initialPrompt: _,
+                    initialPromptKind: I
+                } = t, S = void 0 === w ? C : w, j = (0, o.y)(u.a);
+                b[2] !== C || b[3] !== S || b[4] !== _ || b[5] !== I || b[6] !== j ? (n = () => s()(() => {
+                    let e = null == C ? null : j.get(g.y, C),
+                        t = (0, d.e)(_ ?? (null == S ? "" : j.get(p.s, S)), {
+                            addInitialContentToHistory: null == _ && null != S,
+                            defaultTextKind: I ?? (null == _ && null != S || (0, c.b)(_ ?? "").length > 0 ? "prompt" : "plain"),
+                            enableFileMentions: !0,
+                            enableRichText: !0,
+                            enableSkillMentions: !1,
+                            enableSlashCommands: {
+                                triggers: ["/"]
+                            },
+                            plainTextMode: (0, h.b)(j.get, i.sf.composerPlainTextMode),
+                            suggestionOptions: {
+                                enableInlineSystemHints: "tpp" !== e && "flora" !== e,
+                                variant: "tpp" !== e && "flora" !== e ? "chatgpt" : void 0
+                            }
+                        });
+                    return null == _ && null != C && "string" == typeof S && null != (0, m.j)(j, S) && "tpp" !== e && "flora" !== e && (0, p.Q)(j, C, t.getChatGptPrompt().systemHints), t
+                }), b[2] = C, b[3] = S, b[4] = _, b[5] = I, b[6] = j, b[7] = n) : n = b[7];
+                let [T] = (0, l.useState)(n);
+                b[8] !== T || b[9] !== x ? (r = x ?? T(), b[8] = T, b[9] = x, b[10] = r) : r = b[10];
+                let P = r,
+                    E = (0, l.useRef)(null);
+                b[11] !== P || b[12] !== S || b[13] !== j ? (f = () => {
+                    if (null == S) return;
+                    let e = j.get(p.s, S);
+                    return null != E.current && E.current !== e && P.restoreDraft(e), () => {
+                        E.current = j.get(p.s, S)
+                    }
+                }, v = [P, S, j], b[11] = P, b[12] = S, b[13] = j, b[14] = f, b[15] = v) : (f = b[14], v = b[15]), (0, l.useLayoutEffect)(f, v), b[16] !== P || b[17] !== x ? (y = () => {
+                    null != x || P.view.isDestroyed || P.destroy()
+                }, b[16] = P, b[17] = x, b[18] = y) : y = b[18];
+                let A = y;
+                return (0, d.f)(A, P), P
+            }
+        })
+    }),
+    Yrvy: (function(e, t, n) {
+        var a = n("QosV"),
+            r = n("xSOA"),
+            s = n("BolX"),
+            o = n("Wf1j"),
+            i = n("SGsN"),
+            l = n("OWtl"),
+            c = n("MRlq"),
+            d = n("QmkR");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, u, h, p = (0, a.c)(12),
+                    m = (0, s.y)(l.a),
+                    g = (0, o.a)();
+                return p[0] !== e || p[1] !== m ? (t = t => (0, d.u)({
+                    scope: m,
+                    conversationId: e,
+                    deleteArtifacts: t
+                }), p[0] = e, p[1] = m, p[2] = t) : t = p[2], p[3] !== m ? (n = () => m.queryClient.invalidateQueries({
+                    queryKey: [d.a]
+                }), p[3] = m, p[4] = n) : n = p[4], p[5] !== g || p[6] !== m ? (u = () => {
+                    m.get(i.f).danger(g.formatMessage(c.a.deleteError), {
+                        errorAnalytics: {
+                            toastId: "archived_conversations_modal_delete_failed"
+                        }
+                    })
+                }, p[5] = g, p[6] = m, p[7] = u) : u = p[7], p[8] !== t || p[9] !== n || p[10] !== u ? (h = {
+                    mutationFn: t,
+                    onSuccess: n,
+                    onError: u
+                }, p[8] = t, p[9] = n, p[10] = u, p[11] = h) : h = p[11], (0, r.a)(h)
+            }
+        })
+    }),
+    JjB1: (function(e, t, n) {
+        var a = n("on57");
+        let r = '-apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro", "Segoe UI", sans-serif',
+            s = (0, a.b)("text-default min-h-0 w-full p-0 leading-normal !font-sans", "[&_.ProseMirror]:w-full", "[&_.ProseMirror]:!text-default", "[&_.ProseMirror]:!font-sans", "[&_.ProseMirror]:px-0", "[&_.ProseMirror]:py-0", "[&_.ProseMirror]:!leading-6", "[&_.ProseMirror_p]:!font-sans", "[&_.ProseMirror_p]:!leading-6", "[&_.ProseMirror_p_*]:!font-sans", "[&_.ProseMirror_span]:!font-sans", "!min-h-0 text-base", "[&_.ProseMirror]:min-h-6");
+        n.d(t, {}, {
+            a: "absolute inset-x-0 bottom-0 flex h-12 items-center ps-2 pe-3 origin-bottom-left transition-[opacity,transform] duration-basic ease-out motion-reduce:transition-none",
+            b: s,
+            c: "absolute left-4 min-w-0 overflow-hidden transition-[left,width,top,bottom] duration-[140ms] ease-enter-snappy motion-reduce:transition-none",
+            d: {
+                "--codex-chat-font-size": "var(--annotation-comment-font-size, 13px)",
+                "--composer-top-tray-background": "var(--color-surface)",
+                "--composer-top-tray-border": "transparent",
+                "--font-sans": r,
+                "--font-ui-family": r,
+                fontFamily: r
+            }
+        })
+    }),
+    YwjY: (function(e, t, n) {
+        n.d(t, {
+            a: () => i
+        });
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("on57"),
+            o = n("JjB1");
+
+        function i(e) {
+            let t, n, i, l, c, d, u, h, p, m, g, f, v = (0, r.c)(24);
+            v[0] !== e ? ({
+                className: n,
+                children: t,
+                style: l,
+                isRevealingPageComment: c,
+                surfaceVariant: d,
+                ...i
+            } = e, v[0] = e, v[1] = t, v[2] = n, v[3] = i, v[4] = l, v[5] = c, v[6] = d) : (t = v[1], n = v[2], i = v[3], l = v[4], c = v[5], d = v[6]);
+            let y = void 0 === d ? "default" : d,
+                b = "default" === y && "bg-surface-elevated-secondary shadow-md",
+                x = void 0 !== c && c ? "transition-none" : "transition-[height,width,opacity]";
+            return v[7] !== n || v[8] !== b || v[9] !== x ? (u = (0, s.b)("surface-AyYLmv", "pointer-events-auto isolate rounded-[22px] ease-enter-snappy motion-reduce:transition-none", b, x, n), v[7] = n, v[8] = b, v[9] = x, v[10] = u) : u = v[10], v[11] !== l ? (h = {
+                ...o.d,
+                ...l
+            }, v[11] = l, v[12] = h) : h = v[12], v[13] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, s.b)("content-Sj8_aX", "overflow-hidden rounded-[inherit] bg-inherit"), v[13] = p) : p = v[13], v[14] !== t ? (m = (0, a.jsx)("div", {
+                className: p,
+                children: t
+            }), v[14] = t, v[15] = m) : m = v[15], v[16] !== y ? (g = "default" === y ? (0, a.jsx)("div", {
+                "aria-hidden": !0,
+                className: "pointer-events-none absolute inset-0 rounded-[inherit] mix-blend-multiply outline-1 outline-border"
+            }) : null, v[16] = y, v[17] = g) : g = v[17], v[18] !== i || v[19] !== u || v[20] !== h || v[21] !== m || v[22] !== g ? (f = (0, a.jsxs)("div", {
+                ...i,
+                className: u,
+                style: h,
+                children: [m, g]
+            }), v[18] = i, v[19] = u, v[20] = h, v[21] = m, v[22] = g, v[23] = f) : f = v[23], f
+        }
+    }),
+    iqo5: (function(e, t, n) {
+        n.d(t, {
+            a: () => f
+        });
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("zd8w"),
+            o = n("oyxz"),
+            i = n("YwjY"),
+            l = n("Sm6l"),
+            c = n("UIU6"),
+            d = n("Bbed"),
+            u = n("RNul"),
+            h = n("d0tz"),
+            p = n("T1PX");
+
+        function m(e) {
+            let t, n, o, i, l, c, d = (0, r.c)(13),
+                {
+                    children: u,
+                    source: m
+                } = e,
+                g = (0, s.useRef)(null),
+                f = !(0, p.a)() && m.width > 0 && m.height > 0;
+            d[0] !== f || d[1] !== m ? (t = () => {
+                let e = g.current,
+                    t = e?.ownerDocument.defaultView;
+                if (!e || !t || !f) return;
+                let n = 0,
+                    a = new ResizeObserver(() => {
+                        a.disconnect(), n = t.requestAnimationFrame(() => {
+                            let a = e.getBoundingClientRect();
+                            if (!a.width || !a.height) {
+                                e.dataset.phase = "open";
+                                return
+                            }
+                            let r = e.offsetWidth / a.width,
+                                s = e.offsetHeight / a.height,
+                                o = (m.left - a.left) * r,
+                                i = (m.top - a.top) * s,
+                                l = (a.right - m.right) * r,
+                                c = (a.bottom - m.bottom) * s;
+                            e.style.setProperty("--entry-inset", `${i}px ${l}px ${c}px ${o}px`), e.style.setProperty("--entry-transform", `translate(${o}px, ${i}px) scale(${m.width/a.width}, ${m.height/a.height})`), e.dataset.phase = "source", n = t.requestAnimationFrame(() => {
+                                e.dataset.phase = "open"
+                            })
+                        })
+                    });
+                return a.observe(e), () => {
+                    a.disconnect(), t.cancelAnimationFrame(n), delete e.dataset.phase, e.style.removeProperty("--entry-inset"), e.style.removeProperty("--entry-transform")
+                }
+            }, n = [f, m], d[0] = f, d[1] = m, d[2] = t, d[3] = n) : (t = d[2], n = d[3]), (0, s.useLayoutEffect)(t, n);
+            let v = f ? "entry-yS3y1e" : void 0;
+            return d[4] === Symbol.for("react.memo_cache_sentinel") ? (o = {
+                position: "relative",
+                maxWidth: "100%",
+                width: h.S
+            }, d[4] = o) : o = d[4], d[5] !== f ? (i = f ? (0, a.jsx)("div", {
+                "aria-hidden": !0,
+                className: "surface-Iou1vs pointer-events-none absolute inset-0 rounded-[22px] bg-surface-elevated-secondary shadow-md outline-1 outline-border"
+            }) : null, d[5] = f, d[6] = i) : i = d[6], d[7] !== u ? (l = (0, a.jsx)("div", {
+                className: "content-ARLCcU",
+                children: u
+            }), d[7] = u, d[8] = l) : l = d[8], d[9] !== v || d[10] !== i || d[11] !== l ? (c = (0, a.jsxs)("div", {
+                ref: g,
+                "data-selection-annotation-entry": "",
+                className: v,
+                style: o,
+                children: [i, l]
+            }), d[9] = v, d[10] = i, d[11] = l, d[12] = c) : c = d[12], c
+        }
+        let g = (0, d.a)(async () => (await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(153380), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(514085), n.e(204542), n.e(982651), n.e(673108), n.e(487481), n.e(229522), n.e(390575), n.e(353032), n.e(637885), n.e(570398), n.e(55068), n.e(633848), n.e(562647)]).then(n.bind(n, "FQ1K"))).SelectedTextAnnotationEditor, {
+            suspendToParent: !0,
+            errorFallback: e => (0, a.jsx)(v, {
+                failed: !0,
+                onClose: e.onCancel
+            })
+        });
+
+        function f(e) {
+            let t, n, o, i, l, d, u, h, p = (0, r.c)(18);
+            p[0] !== e ? ({
+                entryRect: t,
+                ...n
+            } = e, p[0] = e, p[1] = t, p[2] = n) : (t = p[1], n = p[2]), p[3] !== n.onCancel ? (o = (0, a.jsx)(v, {
+                failed: !0,
+                onClose: n.onCancel
+            }), p[3] = n.onCancel, p[4] = o) : o = p[4], p[5] !== n.onCancel ? (i = (0, a.jsx)(v, {
+                onClose: n.onCancel
+            }), p[5] = n.onCancel, p[6] = i) : i = p[6], p[7] !== n ? (l = (0, a.jsx)(g, {
+                ...n
+            }), p[7] = n, p[8] = l) : l = p[8], p[9] !== i || p[10] !== l ? (d = (0, a.jsx)(s.Suspense, {
+                fallback: i,
+                children: l
+            }), p[9] = i, p[10] = l, p[11] = d) : d = p[11], p[12] !== o || p[13] !== d ? (u = (0, a.jsx)(c.a, {
+                name: "ResponseTextAnnotationEditor",
+                fallback: o,
+                children: d
+            }), p[12] = o, p[13] = d, p[14] = u) : u = p[14];
+            let f = u;
+            return p[15] !== f || p[16] !== t ? (h = null == t ? f : (0, a.jsx)(m, {
+                source: t,
+                children: f
+            }), p[15] = f, p[16] = t, p[17] = h) : h = p[17], h
+        }
+
+        function v(e) {
+            let t, n, s, c, d = (0, r.c)(9),
+                {
+                    failed: h,
+                    onClose: p
+                } = e,
+                m = void 0 !== h && h,
+                g = m ? "alert" : "status";
+            return d[0] !== m ? (t = m ? (0, a.jsx)(o.a, {
+                id: "responseTextAnnotationMarkers.editor.loadError",
+                defaultMessage: "Couldn't load the editor. Reload to try again",
+                description: "Error inside the response annotation editor when its code fails to download after retrying. Reloading the app allows another attempt."
+            }) : (0, a.jsxs)(a.Fragment, {
+                children: [(0, a.jsx)(u.a, {}), (0, a.jsx)(o.a, {
+                    id: "responseTextAnnotationMarkers.editor.loading",
+                    defaultMessage: "Loading editor…",
+                    description: "Loading status inside the editor for a comment on selected response text"
+                })]
+            }), d[0] = m, d[1] = t) : t = d[1], d[2] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, a.jsx)(o.a, {
+                id: "responseTextAnnotationMarkers.editor.close",
+                defaultMessage: "Close",
+                description: "Button that dismisses a loading or unavailable response annotation editor while preserving the annotation"
+            }), d[2] = n) : n = d[2], d[3] !== p ? (s = (0, a.jsx)(l.a, {
+                color: "secondary",
+                onClick: p,
+                children: n
+            }), d[3] = p, d[4] = s) : s = d[4], d[5] !== g || d[6] !== t || d[7] !== s ? (c = (0, a.jsxs)(i.a, {
+                className: "flex flex-col items-center justify-center gap-3 p-4 text-center text-sm text-secondary select-none",
+                role: g,
+                children: [t, s]
+            }), d[5] = g, d[6] = t, d[7] = s, d[8] = c) : c = d[8], c
+        }
+        f.prefetch = () => g.prefetch()
+    }),
+    WQca: (function(e, t, n) {
+        var a = n("QosV"),
+            r = n("BolX"),
+            s = n("zd8w"),
+            o = n("jqIZ"),
+            i = n("SGsN"),
+            l = n("OWtl");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, c, d = (0, a.c)(11),
+                    {
+                        isUnavailable: u,
+                        message: h,
+                        homePath: p,
+                        onUnavailable: m,
+                        children: g
+                    } = e,
+                    f = (0, r.y)(l.a),
+                    v = (0, o._)(),
+                    y = (0, s.useRef)(!1);
+                d[0] !== p || d[1] !== h || d[2] !== v || d[3] !== m || d[4] !== f ? (t = () => {
+                    m?.(), f.get(i.f).info(h, {
+                        id: "conversation-inaccessible",
+                        duration: 5
+                    }), v(p, {
+                        replace: !0
+                    })
+                }, d[0] = p, d[1] = h, d[2] = v, d[3] = m, d[4] = f, d[5] = t) : t = d[5];
+                let b = (0, s.useEffectEvent)(t);
+                return d[6] !== u || d[7] !== b ? (n = () => {
+                    u && !y.current && (y.current = !0, b())
+                }, d[6] = u, d[7] = b, d[8] = n) : n = d[8], d[9] !== u ? (c = [u], d[9] = u, d[10] = c) : c = d[10], (0, s.useEffect)(n, c), u ? null : g
+            }
+        })
+    }),
+    IxWh: (function(e, t, n) {
+        var a = n("Vzyk"),
+            r = n.n(a);
+
+        function s(e) {
+            let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "ltr",
+                n = Math.max(0, e.scrollWidth - e.clientWidth);
+            if ("rtl" === t) return {
+                maximum: 0,
+                minimum: -n
+            };
+            let a = e.firstElementChild,
+                r = Math.min(n, a instanceof HTMLElement ? Math.max(0, o(e, a, t)) : 0);
+            return {
+                maximum: n,
+                minimum: r
+            }
+        }
+
+        function o(e, t, n) {
+            return "rtl" === n ? t.offsetLeft - e.offsetLeft + t.offsetWidth - e.clientWidth + i(e, n) : t.offsetLeft - e.offsetLeft - i(e, n)
+        }
+
+        function i(e, t) {
+            let n = Number.parseFloat("rtl" === t ? getComputedStyle(e).scrollPaddingRight : getComputedStyle(e).scrollPaddingLeft);
+            return Number.isNaN(n) ? 0 : n
+        }
+        n.d(t, {}, {
+            a: s,
+            b: function(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : "ltr",
+                    {
+                        maximum: a,
+                        minimum: l
+                    } = s(e, n),
+                    c = "rtl" === n ? -t : t,
+                    d = r()(e.scrollLeft + c * (e.clientWidth - i(e, n)), l, a),
+                    u = e.children;
+                for (let s = 1 === t ? 0 : u.length - 1; s >= 0 && s < u.length; s += t) {
+                    let t = u.item(s);
+                    if (!(t instanceof HTMLElement)) continue;
+                    let i = r()(o(e, t, n), l, a);
+                    if (1 === c && i >= d - 1 || -1 === c && i <= d + 1) return i
+                }
+                return 1 === c ? a : l
+            }
+        })
+    }),
+    GKsW: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("BolX"),
+            o = n("zd8w"),
+            i = n("GaA7"),
+            l = n("OWtl"),
+            c = n("tSEg"),
+            d = n("n5oN");
+        let u = (0, s.u)(l.a, () => []);
+
+        function h(e) {
+            let t, n, a, c, d, h, f = (0, r.c)(13),
+                {
+                    title: v,
+                    nativeTitle: y
+                } = e,
+                b = void 0 === y ? v : y,
+                x = (0, s.y)(l.a),
+                [C] = (0, o.useState)(p);
+            return f[0] !== b || f[1] !== C || f[2] !== x || f[3] !== v ? (t = () => {
+                if (i.appServices?.windowTitle == null) return;
+                let e = {
+                    owner: C,
+                    title: null == v ? void 0 : b ?? null
+                };
+                x.set(u, t => t.some(e => e.owner === C) ? t.map(t => t.owner === C ? e : t) : [...t, e]), g(x)
+            }, n = [x, C, v, b], f[0] = b, f[1] = C, f[2] = x, f[3] = v, f[4] = t, f[5] = n) : (t = f[4], n = f[5]), (0, o.useEffect)(t, n), f[6] !== C || f[7] !== x ? (a = () => () => {
+                i.appServices?.windowTitle != null && (x.set(u, e => e.filter(e => e.owner !== C)), g(x))
+            }, c = [x, C], f[6] = C, f[7] = x, f[8] = a, f[9] = c) : (a = f[8], c = f[9]), (0, o.useEffect)(a, c), f[10] !== v ? (d = () => {
+                if (null == v) return;
+                let e = document.title;
+                m(v);
+                let t = document.title;
+                return () => {
+                    document.title === t && m(e)
+                }
+            }, h = [v], f[10] = v, f[11] = d, f[12] = h) : (d = f[11], h = f[12]), (0, o.useEffect)(d, h), null
+        }
+
+        function p() {
+            return Symbol()
+        }
+
+        function m(e) {
+            let t = document.head.querySelector("title")?.firstChild;
+            t instanceof Text && null == t.nextSibling ? t.data = e : document.title = e
+        }
+
+        function g(e) {
+            i.appServices.windowTitle?.setTitle(e.get(u).findLast(e => void 0 !== e.title)?.title ?? null)
+        }
+        n.d(t, {}, {
+            a: h,
+            b: function(e) {
+                let t, n = (0, r.c)(2),
+                    {
+                        title: o
+                    } = e,
+                    i = (0, s.y)(c.a),
+                    l = (0, s.x)(d.a, `${i.value.pathname}${i.value.search??""}`),
+                    u = o ?? l;
+                return n[0] !== u ? (t = (0, a.jsx)(h, {
+                    title: u
+                }), n[0] = u, n[1] = t) : t = n[1], t
+            }
+        })
+    }),
+    RZBv: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            s = n("xSOA"),
+            o = n("BolX"),
+            i = n("zd8w"),
+            l = n("Wf1j"),
+            c = n("oyxz"),
+            d = n("jqIZ"),
+            u = n("Cslg"),
+            h = n("MYlA"),
+            p = n("OtLV"),
+            m = n("sfmI"),
+            g = n("QmkR"),
+            f = n("Yrvy"),
+            v = n("HOLv"),
+            y = n("SGsN"),
+            b = n("nlNF"),
+            x = n("iGet"),
+            C = n("OWtl"),
+            w = n("MRlq"),
+            _ = n("HFSu"),
+            I = n("vNLk"),
+            S = n("PCxL"),
+            j = n("aZgH"),
+            T = n("CzoK");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, P, E, A, M, k, R, N, O, F, G, z, B, D = (0, r.c)(59),
+                    {
+                        conversationId: L,
+                        kind: W
+                    } = e,
+                    H = (0, o.y)(C.a),
+                    q = (0, l.a)(),
+                    K = (0, d.Y)(),
+                    U = (0, d._)(),
+                    V = (0, o.z)(S.h),
+                    Q = (0, o.z)(u.h),
+                    $ = (0, o.z)(u.g);
+                D[0] !== Q || D[1] !== L || D[2] !== $ || D[3] !== W || D[4] !== V ? (t = "chatgpt" === W && V?.kind === "chatgpt" && V.conversation.id === L && (0, m.a)(V.conversation, Q, $) ? V.conversation : null, D[0] = Q, D[1] = L, D[2] = $, D[3] = W, D[4] = V, D[5] = t) : t = D[5];
+                let Y = t,
+                    [X, J] = (0, i.useState)(!1),
+                    {
+                        mutate: Z,
+                        isPending: ee
+                    } = (0, f.a)(L);
+                D[6] !== K.hash || D[7] !== K.pathname || D[8] !== K.search || D[9] !== U || D[10] !== H ? (n = () => {
+                    (0, S.e)(H), U({
+                        pathname: K.pathname,
+                        search: K.search,
+                        hash: K.hash
+                    }, {
+                        replace: !0,
+                        state: null
+                    })
+                }, D[6] = K.hash, D[7] = K.pathname, D[8] = K.search, D[9] = U, D[10] = H, D[11] = n) : n = D[11];
+                let et = n,
+                    en = (0, o.z)(S.g);
+                D[12] !== L || D[13] !== en ? (P = en?.find(e => (0, j.a)(e.task) === `hosted:${L}`), D[12] = L, D[13] = en, D[14] = P) : P = D[14];
+                let ea = P;
+                D[15] !== L || D[16] !== H ? (E = () => {
+                    let e = H.get(S.h);
+                    return null != e && (0, j.a)(e) === `hosted:${L}` ? (0, S.d)(H, e) : void 0
+                }, D[15] = L, D[16] = H, D[17] = E) : E = D[17], D[18] !== L || D[19] !== W || D[20] !== H ? (A = async () => {
+                    if ("cloud" === W) {
+                        await _.CodexRequest.safePost("/wham/tasks/{task_id}/recover", {
+                            parameters: {
+                                path: {
+                                    task_id: L
+                                }
+                            }
+                        }), (0, x.c)(H, L, !1);
+                        return
+                    }
+                    await (0, g.W)({
+                        scope: H,
+                        conversationId: L
+                    })
+                }, D[18] = L, D[19] = W, D[20] = H, D[21] = A) : A = D[21], D[22] !== L || D[23] !== et || D[24] !== W || D[25] !== H ? (M = (e, t, n) => {
+                    n?.("restored");
+                    let r = H.get(y.f).info((0, a.jsx)(c.a, {
+                        ...w.a.unarchiveSuccessPlain
+                    }), {
+                        leading: (0, a.jsx)(v.a, {
+                            "aria-hidden": !1,
+                            asset: T.a
+                        }),
+                        primaryAction: {
+                            label: (0, a.jsx)(c.a, {
+                                ...w.a.viewNow
+                            }),
+                            onClick: () => {
+                                r.close(), et()
+                            }
+                        },
+                        id: `unarchive-thread-${W}:${L}`
+                    })
+                }, D[22] = L, D[23] = et, D[24] = W, D[25] = H, D[26] = M) : M = D[26], D[27] !== q || D[28] !== H ? (k = (e, t, n) => {
+                    n?.(null), H.get(y.f).danger(q.formatMessage(w.a.unarchiveError), {
+                        errorAnalytics: {
+                            toastId: "previewFooter.onError.unarchiveError"
+                        }
+                    })
+                }, D[27] = q, D[28] = H, D[29] = k) : k = D[29], D[30] !== E || D[31] !== A || D[32] !== M || D[33] !== k ? (R = {
+                    onMutate: E,
+                    mutationFn: A,
+                    onSuccess: M,
+                    onError: k
+                }, D[30] = E, D[31] = A, D[32] = M, D[33] = k, D[34] = R) : R = D[34];
+                let {
+                    mutate: er,
+                    isPending: es,
+                    isSuccess: eo
+                } = (0, s.a)(R);
+                D[35] !== Z || D[36] !== U || D[37] !== H ? (N = e => {
+                    let t = H.get(S.c),
+                        n = H.get(b.c),
+                        a = H.get(u.f);
+                    Z(e, {
+                        onSuccess: () => {
+                            if (J(!1), t !== H.get(S.c) || n !== H.get(b.c) || a !== H.get(u.f)) return;
+                            H.set(S.h, null);
+                            let e = t?.pathname === S.a ? t : null;
+                            U(e ?? "/", {
+                                replace: !0,
+                                state: e?.state ?? null
+                            })
+                        }
+                    })
+                }, D[35] = Z, D[36] = U, D[37] = H, D[38] = N) : N = D[38];
+                let ei = N;
+                D[39] !== Y ? (O = null == Y ? void 0 : () => J(!0), D[39] = Y, D[40] = O) : O = D[40];
+                let el = eo || ea?.status === "restored",
+                    ec = es || ea?.status === "restoring";
+                return D[41] !== er ? (F = () => er(), D[41] = er, D[42] = F) : F = D[42], D[43] !== et || D[44] !== ee || D[45] !== O || D[46] !== el || D[47] !== ec || D[48] !== F ? (G = (0, a.jsx)(I.a, {
+                    deleting: ee,
+                    onDelete: O,
+                    restored: el,
+                    restoring: ec,
+                    onUnarchive: F,
+                    onDone: et
+                }), D[43] = et, D[44] = ee, D[45] = O, D[46] = el, D[47] = ec, D[48] = F, D[49] = G) : G = D[49], D[50] !== Y || D[51] !== ei || D[52] !== q || D[53] !== X || D[54] !== ee ? (z = null != Y && (0, a.jsx)(h.a, {
+                    allowArtifactDeletion: !0,
+                    title: Y.title?.trim() || q.formatMessage(p.a.newChat),
+                    open: X,
+                    isDeleting: ee,
+                    onOpenChange: J,
+                    onConfirm: ei
+                }), D[50] = Y, D[51] = ei, D[52] = q, D[53] = X, D[54] = ee, D[55] = z) : z = D[55], D[56] !== G || D[57] !== z ? (B = (0, a.jsxs)(a.Fragment, {
+                    children: [G, z]
+                }), D[56] = G, D[57] = z, D[58] = B) : B = D[58], B
+            }
+        })
+    })
+};

@@ -27988,6 +27988,7 @@ export const __webpack_modules__ = {
                                 } catch (e) {
                                     if (!(e instanceof S.a) || !T(e)) throw ef = ef || (0, C.d)(e), e;
                                     await
+
                                     function(e, t) {
                                         return t.throwIfAborted(), new Promise(n => {
                                             let a = () => {
@@ -36023,6 +36024,7 @@ ${" ".repeat(t.length)}${n}`));
                     S = null != I && I.length > 0 && I.every(e => "page_write_forbidden" === e || "write-access-denied" === e);
                 if (("pages.realtime.notice" === t || "pages.realtime.recovery" === t || t.startsWith("pages.realtime.recovery.")) && (b?.pagesErrorCode == null || "page_write_forbidden" === b.pagesErrorCode || "write-access-denied" === b.pagesErrorCode) && (w?.localSaveStatus !== "blocked" || "write_access_denied" === w.noticeReason) && (w?.noticeReason == null || "write_access_denied" === w.noticeReason || "recovery_drafts" === w.noticeReason) && (null == n || n instanceof r.a && "write-access-denied" === n.code || n instanceof d.a && "page_write_forbidden" === n.errorCode) && (null == I || 0 === I.length || S) && (b?.errorUiType === a.CodexPagesErrorUiType.CODEX_PAGES_ERROR_UI_TYPE_WRITE_ACCESS_DENIED || w?.noticeReason === "write_access_denied" || S) || n instanceof s.a && !0 === n.silent && (b?.errorUiType == null || b.errorUiType === a.CodexPagesErrorUiType.CODEX_PAGES_ERROR_UI_TYPE_NONE)) return;
                 if (!(o?.nativeDocumentType != null || b?.documentType != null && "page" !== b.documentType || t.startsWith("pages.native.") || t.startsWith("pages.artifact.") || t.startsWith("pages.presentation.") || "pages.file.preview.presentation-import" === t || "pages.file.preview.workbook-import" === t || "pages.document.import" === t || "pages.catalog.recover" === t && null == o || "pages.companion.persist" === t && b?.documentType == null) && (null == o || null != o.isOfflineEngine)) return void
+
                 function(e, t, n, r, s) {
                     let o, h = v(t, n);
                     try {
