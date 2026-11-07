@@ -1,0 +1,2047 @@
+export const __rspack_esm_ids = [907652];
+export const __webpack_modules__ = {
+    bfX9: (function(e, t, r) {
+        r.d(t, {}, {
+            a: function(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : "claim";
+                return !!e?.ownership_state_enabled && (e.ownership?.available_action === t || e.ownership?.available_action === "view_request" && e.ownership.current_request?.kind === t) && !e.profiles.some(e => e.allowed_actions.includes("manage")) && ("claim" === t || !0 === e.is_verified)
+            }
+        })
+    }),
+    xAIC: (function(e, t, r) {
+        var n = r("ASxG");
+        let l = n.object({
+                index: n.string().regex(/^\d+$/).transform(Number)
+            }).strip(),
+            a = n.object({
+                marker_text: n.string().trim().min(1).optional(),
+                marker_type: n.string().trim().min(1).optional()
+            }).strip();
+        r.d(t, {}, {
+            a: function(e) {
+                let t = l.safeParse(e);
+                return t.success ? t.data.index : null
+            },
+            b: function(e) {
+                let t = a.safeParse(e);
+                return t.success ? t.data.marker_text ?? null : null
+            },
+            c: function(e) {
+                let t = a.safeParse(e);
+                return t.success ? t.data.marker_type ?? null : null
+            }
+        })
+    }),
+    G6mJ: (function(e, t, r) {
+        var n = r("rKAs"),
+            l = r("xAIC");
+        r.d(t, {}, {
+            a: function(e, t) {
+                if (null == t) return null;
+                let r = (0, l.a)(e);
+                if (null != r) {
+                    let e = t[r];
+                    return null == e ? null : {
+                        index: r,
+                        reference: e
+                    }
+                }
+                let a = (0, l.b)(e);
+                if (null == a) return null;
+                let i = t.findIndex(e => (0, n.l)(e) === a);
+                if (-1 === i) return null;
+                let o = t[i];
+                return null == o ? null : {
+                    index: i,
+                    reference: o
+                }
+            }
+        })
+    }),
+    niC2: (function(e, t, r) {
+        var n = r("ABep"),
+            l = r("QosV"),
+            a = r("on57"),
+            i = r("zd8w"),
+            o = r("Wf1j"),
+            s = r("Sm6l"),
+            u = r("vxGj"),
+            d = r("HOLv"),
+            c = r("r21w"),
+            f = r("SUhA"),
+            p = r("JwGC"),
+            g = r("SbOw"),
+            m = r("LQio"),
+            h = r("Ygex"),
+            b = r("p7j6");
+
+        function v(e) {
+            let t, r, s, u, d, p, g, m, h = (0, l.c)(36),
+                {
+                    conversationId: b,
+                    fallbackSrc: v,
+                    image: y,
+                    imageAssetResolver: x,
+                    imageNumber: w,
+                    imageRef: _,
+                    onOpen: j,
+                    single: k,
+                    presentation: I
+                } = e,
+                C = (0, o.a)(),
+                [S, P] = (0, i.useState)(null),
+                [M, A] = (0, i.useState)(null),
+                N = null != y.previewSrc && y.previewSrc !== M ? y.previewSrc : y.src;
+            h[0] !== b || h[1] !== x || h[2] !== N ? (t = {
+                src: N,
+                conversationId: b,
+                imageAssetResolver: x,
+                shouldLoadFileDataUrl: !1
+            }, h[0] = b, h[1] = x, h[2] = N, h[3] = t) : t = h[3];
+            let {
+                previewSrc: E
+            } = (0, f.a)(t), T = null != v && (null == E || S !== E), F = k && "w-full", B = !k && ("dialog" === I ? "w-2/3" : "max-w-19/20");
+            return h[4] !== F || h[5] !== B ? (r = (0, a.b)("relative h-full shrink-0 snap-center cursor-interaction overflow-hidden bg-surface-secondary first:snap-start last:snap-end focus-visible:outline-2 focus-visible:-outline-offset-2 focus-visible:outline-ring", F, B), h[4] = F, h[5] = B, h[6] = r) : r = h[6], h[7] !== v || h[8] !== y.height || h[9] !== y.width || h[10] !== I || h[11] !== k ? (s = k || "dialog" === I ? void 0 : {
+                aspectRatio: null == v ? `${y.width??1}/${y.height??1}` : "5/4"
+            }, h[7] = v, h[8] = y.height, h[9] = y.width, h[10] = I, h[11] = k, h[12] = s) : s = h[12], h[13] !== w || h[14] !== C ? (u = C.formatMessage({
+                id: "chatgpt.imageGroup.openPhoto",
+                defaultMessage: "Open photo {number}",
+                description: "Accessible label for opening a full-size image from a ChatGPT entity photo carousel; number is the one-based photo position"
+            }, {
+                number: w
+            }), h[13] = w, h[14] = C, h[15] = u) : u = h[15], h[16] !== j ? (d = e => j(e.currentTarget), h[16] = j, h[17] = d) : d = h[17], h[18] !== v || h[19] !== y.previewSrc || h[20] !== _ || h[21] !== S || h[22] !== E || h[23] !== T ? (p = null == E ? (0, n.jsx)(c.a, {
+                className: "h-full w-full"
+            }) : (0, n.jsx)("img", {
+                ref: T ? void 0 : _,
+                className: (0, a.b)("h-full w-full object-cover transition-opacity duration-basic ease-enter motion-reduce:transition-none", null == v && S !== E && "opacity-0"),
+                src: E,
+                alt: "",
+                draggable: !1,
+                loading: null == v ? "lazy" : "eager",
+                referrerPolicy: "no-referrer",
+                onLoad: () => P(E),
+                onError: () => A(y.previewSrc ?? null)
+            }), h[18] = v, h[19] = y.previewSrc, h[20] = _, h[21] = S, h[22] = E, h[23] = T, h[24] = p) : p = h[24], h[25] !== v || h[26] !== _ || h[27] !== T ? (g = T ? (0, n.jsx)("img", {
+                ref: _,
+                className: "pointer-events-none absolute inset-0 h-full w-full object-cover",
+                src: v,
+                alt: "",
+                "aria-hidden": !0,
+                draggable: !1,
+                fetchPriority: "high",
+                loading: "eager",
+                referrerPolicy: "no-referrer"
+            }) : null, h[25] = v, h[26] = _, h[27] = T, h[28] = g) : g = h[28], h[29] !== g || h[30] !== r || h[31] !== s || h[32] !== u || h[33] !== d || h[34] !== p ? (m = (0, n.jsxs)("button", {
+                className: r,
+                style: s,
+                "aria-label": u,
+                type: "button",
+                onClick: d,
+                children: [p, g]
+            }), h[29] = g, h[30] = r, h[31] = s, h[32] = u, h[33] = d, h[34] = p, h[35] = m) : m = h[35], m
+        }
+
+        function y(e) {
+            let t, r, a, i, s = (0, l.c)(16),
+                {
+                    conversationId: u,
+                    image: d,
+                    imageAssetResolver: c,
+                    imageNumber: g,
+                    onClose: m,
+                    onCloseAutoFocus: h,
+                    onNextImage: b,
+                    onPreviousImage: v
+                } = e,
+                y = (0, o.a)();
+            s[0] !== u || s[1] !== d.src || s[2] !== c ? (t = {
+                src: d.src,
+                conversationId: u,
+                imageAssetResolver: c,
+                shouldLoadFileDataUrl: !1
+            }, s[0] = u, s[1] = d.src, s[2] = c, s[3] = t) : t = s[3];
+            let {
+                previewSrc: x
+            } = (0, f.a)(t);
+            return null == x ? null : (s[4] !== g || s[5] !== y ? (r = y.formatMessage({
+                id: "chatgpt.imageGroup.photoAlt",
+                defaultMessage: "Photo {number}",
+                description: "Alt text for a full-size photo in the ChatGPT entity image viewer; number is the one-based photo position"
+            }, {
+                number: g
+            }), s[4] = g, s[5] = y, s[6] = r) : r = s[6], s[7] !== m ? (a = e => {
+                e || m()
+            }, s[7] = m, s[8] = a) : a = s[8], s[9] !== h || s[10] !== b || s[11] !== v || s[12] !== x || s[13] !== r || s[14] !== a ? (i = (0, n.jsx)(p.a, {
+                alt: r,
+                src: x,
+                showDownload: !1,
+                imageReferrerPolicy: "no-referrer",
+                open: !0,
+                onCloseAutoFocus: h,
+                onOpenChange: a,
+                onNextImage: b,
+                onPreviousImage: v
+            }), s[9] = h, s[10] = b, s[11] = v, s[12] = x, s[13] = r, s[14] = a, s[15] = i) : i = s[15], i)
+        }
+
+        function x(e, t) {
+            let r = e.children.item(t);
+            if (!(r instanceof HTMLElement)) return 0;
+            let n = "rtl" === getComputedStyle(e).direction,
+                l = e.scrollWidth - e.clientWidth,
+                a = r.offsetLeft - (e.clientWidth - r.offsetWidth) / 2;
+            return 0 === t ? a = 0 : t === e.children.length - 1 && (a = n ? r.offsetLeft : r.offsetLeft + r.offsetWidth - e.clientWidth), n ? Math.max(-l, Math.min(0, a)) : Math.max(0, Math.min(l, a))
+        }
+        r.d(t, {}, {
+            a: function(e) {
+                let t, r, c, f, p, w, _, j, k, I, C, S, P, M, A, N, E, T, F, B, z = (0, l.c)(63),
+                    {
+                        ref: q,
+                        conversationId: L,
+                        businessProfileHeader: D,
+                        firstPhotoFallbackSrc: R,
+                        imageAssetResolver: U,
+                        images: G,
+                        onOpenImage: O,
+                        onArrowClick: H,
+                        presentation: W
+                    } = e,
+                    K = void 0 === W ? "sidebar" : W,
+                    Q = (0, o.a)(),
+                    V = (0, i.useContext)(m.a),
+                    $ = (0, i.useRef)(null),
+                    X = (0, i.useRef)(null),
+                    J = (0, i.useRef)(null);
+                z[0] === Symbol.for("react.memo_cache_sentinel") ? (t = new Map, z[0] = t) : t = z[0];
+                let Z = (0, i.useRef)(t);
+                z[1] === Symbol.for("react.memo_cache_sentinel") ? (r = () => ({
+                    getThumbnail: e => Z.current.get(e) ?? null
+                }), z[1] = r) : r = z[1], (0, i.useImperativeHandle)(q, r);
+                let [Y, ee] = (0, i.useState)(0), [et, er] = (0, i.useState)(null);
+                z[2] !== et ? (c = e => e.id === et, z[2] = et, z[3] = c) : c = z[3];
+                let en = G.findIndex(c),
+                    el = G[en],
+                    ea = Math.min(Y, G.length - 1);
+                z[4] === Symbol.for("react.memo_cache_sentinel") ? (f = e => {
+                    let t = $.current;
+                    if (null == t) return;
+                    let r = x(t, e);
+                    X.current = 1 >= Math.abs(t.scrollLeft - r) ? null : r, t.scrollTo({
+                        left: r
+                    }), ee(e)
+                }, z[4] = f) : f = z[4];
+                let ei = f;
+                z[5] !== G.length ? (p = e => {
+                    let t = 0,
+                        r = 1 / 0;
+                    for (let n = 0; n < G.length; n += 1) {
+                        let l = Math.abs(x(e, n) - e.scrollLeft);
+                        l < r && (r = l, t = n)
+                    }
+                    ee(t)
+                }, z[5] = G.length, z[6] = p) : p = z[6];
+                let eo = p,
+                    es = !D && "dialog" !== K && "mb-5";
+                z[7] !== es ? (w = (0, a.b)("-mx-6", es), z[7] = es, z[8] = w) : w = z[8];
+                let eu = "dialog" === K && "h-56 sm:h-64",
+                    ed = "cover" === K && "aspect-3/1",
+                    ec = "sidebar" === K && "aspect-5/4";
+                z[9] !== eu || z[10] !== ed || z[11] !== ec ? (_ = (0, a.b)("group/photos relative overflow-hidden select-none", eu, ed, ec), z[9] = eu, z[10] = ed, z[11] = ec, z[12] = _) : _ = z[12], z[13] !== Q ? (j = Q.formatMessage({
+                    id: "chatgpt.imageGroup.photos",
+                    defaultMessage: "Photos",
+                    description: "Accessible name for the photo carousel in a ChatGPT entity details panel"
+                }), z[13] = Q, z[14] = j) : j = z[14], z[15] !== G.length || z[16] !== Q ? (k = G.length > 1 ? Q.formatMessage({
+                    id: "chatgpt.imageGroup.carouselRole",
+                    defaultMessage: "carousel",
+                    description: "Accessible role description for the horizontally navigable photo carousel in a ChatGPT entity details panel"
+                }) : void 0, z[15] = G.length, z[16] = Q, z[17] = k) : k = z[17], z[18] !== G.length || z[19] !== ei || z[20] !== ea ? (I = e => {
+                    if (!(G.length < 2) && !e.altKey && !e.ctrlKey && !e.metaKey && !e.shiftKey && ("ArrowRight" === e.key || "ArrowLeft" === e.key)) {
+                        e.preventDefault(), e.stopPropagation();
+                        let t = "rtl" === getComputedStyle(e.currentTarget).direction,
+                            r = e.key === (t ? "ArrowLeft" : "ArrowRight") ? (ea + 1) % G.length : Math.max(0, ea - 1);
+                        ei(r);
+                        let n = $.current,
+                            l = n?.children.item(r);
+                        e.target instanceof HTMLButtonElement && e.target.parentElement === n && l instanceof HTMLButtonElement && l.focus({
+                            preventScroll: !0
+                        })
+                    }
+                }, z[18] = G.length, z[19] = ei, z[20] = ea, z[21] = I) : I = z[21], z[22] !== eo ? (C = e => {
+                    let t = e.currentTarget,
+                        r = X.current;
+                    if (null != r) {
+                        1 >= Math.abs(t.scrollLeft - r) && (X.current = null);
+                        return
+                    }
+                    eo(t)
+                }, S = e => {
+                    X.current = null, eo(e.currentTarget)
+                }, z[22] = eo, z[23] = C, z[24] = S) : (C = z[23], S = z[24]), z[25] === Symbol.for("react.memo_cache_sentinel") ? (P = () => {
+                    X.current = null
+                }, M = () => {
+                    X.current = null
+                }, z[25] = P, z[26] = M) : (P = z[25], M = z[26]);
+                let ef = G.map((e, t) => (0, n.jsx)(v, {
+                    conversationId: L,
+                    fallbackSrc: 0 === t ? R : void 0,
+                    image: e,
+                    imageAssetResolver: U,
+                    imageNumber: t + 1,
+                    imageRef: t => {
+                        if (null != t) return Z.current.set(e.id, t), () => {
+                            Z.current.get(e.id) === t && Z.current.delete(e.id)
+                        }
+                    },
+                    single: 1 === G.length,
+                    presentation: K,
+                    onOpen: r => {
+                        null != O ? O(t) : (J.current = r, er(e.id))
+                    }
+                }, e.id));
+                z[27] !== C || z[28] !== S || z[29] !== P || z[30] !== M || z[31] !== ef ? (A = (0, n.jsx)("div", {
+                    ref: $,
+                    className: "relative hide-scrollbar flex h-full snap-x snap-mandatory gap-0.5 overflow-x-auto scroll-smooth motion-reduce:scroll-auto",
+                    onScroll: C,
+                    onScrollEnd: S,
+                    onPointerDown: P,
+                    onWheel: M,
+                    children: ef
+                }), z[27] = C, z[28] = S, z[29] = P, z[30] = M, z[31] = ef, z[32] = A) : A = z[32], z[33] !== G.length || z[34] !== Q || z[35] !== H || z[36] !== ei || z[37] !== ea ? (N = G.length > 1 ? (0, n.jsxs)(n.Fragment, {
+                    children: [(0, n.jsxs)("div", {
+                        className: "pointer-events-none absolute inset-x-3 top-1/2 flex -translate-y-1/2 justify-between opacity-0 group-hover/photos:opacity-100 group-has-[:focus-visible]/photos:opacity-100",
+                        children: [(0, n.jsx)(s.a, {
+                            className: (0, a.b)("group-hover/photos:pointer-events-auto group-has-[:focus-visible]/photos:pointer-events-auto", 0 === ea && "invisible"),
+                            "aria-label": Q.formatMessage({
+                                id: "chatgpt.imageGroup.previousPhoto",
+                                defaultMessage: "Previous photo",
+                                description: "Accessible label for the previous photo button in a ChatGPT entity photo carousel"
+                            }),
+                            color: "mediaSolid",
+                            radius: "full",
+                            size: "inputIcon",
+                            onClick: () => {
+                                let e = Math.max(0, ea - 1);
+                                e !== ea && H?.("previous", e), ei(e)
+                            },
+                            children: (0, n.jsx)(d.a, {
+                                className: "rtl:rotate-180",
+                                asset: h.a
+                            })
+                        }), (0, n.jsx)(s.a, {
+                            className: "group-hover/photos:pointer-events-auto group-has-[:focus-visible]/photos:pointer-events-auto",
+                            "aria-label": Q.formatMessage({
+                                id: "chatgpt.imageGroup.nextPhoto",
+                                defaultMessage: "Next photo",
+                                description: "Accessible label for the next photo button in a ChatGPT entity photo carousel"
+                            }),
+                            color: "mediaSolid",
+                            radius: "full",
+                            size: "inputIcon",
+                            onClick: () => {
+                                let e = (ea + 1) % G.length;
+                                e !== ea && H?.("next", e), ei(e)
+                            },
+                            children: (0, n.jsx)(d.a, {
+                                className: "rtl:rotate-180",
+                                asset: b.a
+                            })
+                        })]
+                    }), G.length <= 20 ? (0, n.jsx)("div", {
+                        className: "absolute inset-x-0 bottom-3 flex justify-center",
+                        children: (0, n.jsx)(u.a, {
+                            count: G.length,
+                            activeIndex: ea,
+                            getPageLabel: e => Q.formatMessage({
+                                id: "chatgpt.imageGroup.goToPhoto",
+                                defaultMessage: "Go to photo {number}",
+                                description: "Accessible label for a photo carousel position indicator; number is the one-based photo position"
+                            }, {
+                                number: e + 1
+                            }),
+                            onSelect: ei
+                        })
+                    }) : null]
+                }) : null, z[33] = G.length, z[34] = Q, z[35] = H, z[36] = ei, z[37] = ea, z[38] = N) : N = z[38], z[39] !== V || z[40] !== _ || z[41] !== j || z[42] !== k || z[43] !== I || z[44] !== A || z[45] !== N ? (E = (0, n.jsxs)("div", {
+                    ref: V,
+                    className: _,
+                    "data-entity-photos": !0,
+                    "aria-label": j,
+                    "aria-roledescription": k,
+                    role: "region",
+                    onKeyDown: I,
+                    children: [A, N]
+                }), z[39] = V, z[40] = _, z[41] = j, z[42] = k, z[43] = I, z[44] = A, z[45] = N, z[46] = E) : E = z[46], z[47] !== L || z[48] !== U || z[49] !== G || z[50] !== J || z[51] !== el || z[52] !== en || z[53] !== er ? (T = null != el ? (0, n.jsx)(y, {
+                    conversationId: L,
+                    image: el,
+                    imageAssetResolver: U,
+                    imageNumber: en + 1,
+                    onClose: () => er(null),
+                    onCloseAutoFocus: e => {
+                        e.preventDefault(), J.current?.focus()
+                    },
+                    onPreviousImage: en > 0 ? () => er(G[en - 1].id) : void 0,
+                    onNextImage: en < G.length - 1 ? () => er(G[en + 1].id) : void 0
+                }) : null, z[47] = L, z[48] = U, z[49] = G, z[50] = J, z[51] = el, z[52] = en, z[53] = er, z[54] = T) : T = z[54], z[55] !== E || z[56] !== T || z[57] !== w ? (F = (0, n.jsxs)("div", {
+                    className: w,
+                    "data-testid": "chatgpt-image-group-carousel",
+                    children: [E, T]
+                }), z[55] = E, z[56] = T, z[57] = w, z[58] = F) : F = z[58];
+                let ep = F;
+                return z[59] !== D || z[60] !== ep || z[61] !== G.length ? (B = D ? (0, n.jsx)(g.b, {
+                    ...D,
+                    children: G.length > 0 ? ep : null
+                }) : ep, z[59] = D, z[60] = ep, z[61] = G.length, z[62] = B) : B = z[62], B
+            }
+        })
+    }),
+    NDDl: (function(e, t, r) {
+        var n = r("ABep"),
+            l = r("QosV"),
+            a = r("BolX"),
+            i = r("zd8w"),
+            o = r("oyxz"),
+            s = r("bf6R"),
+            u = r("OWtl"),
+            d = r("zHQF"),
+            c = r("TUMj"),
+            f = r("w7PD"),
+            p = r("cGwJ"),
+            g = r("JV0C");
+
+        function m(e) {
+            let t, r = (0, l.c)(2),
+                {
+                    nativeUnavailable: a
+                } = e;
+            return r[0] !== a ? (t = (0, n.jsx)("span", {
+                role: "alert",
+                className: "text-sm text-danger",
+                children: a ? (0, n.jsx)(d.b, {}) : (0, n.jsx)(o.a, {
+                    id: "chatgpt.entity.businessProfile.chatUnavailable",
+                    defaultMessage: "Couldn’t open this chat. Try again.",
+                    description: "Error after a business profile's chat button or suggested question could not open a new conversation. The user can click the action again."
+                })
+            }), r[0] = a, r[1] = t) : t = r[1], t
+        }
+
+        function h(e) {
+            let t, r, i = (0, l.c)(5),
+                {
+                    conversationId: o,
+                    data: s
+                } = e,
+                u = (0, a.x)(f.b, o);
+            if (null == u) return null;
+            i[0] !== s ? (t = f.a.safeParse(s).data?.items, i[0] = s, i[1] = t) : t = i[1];
+            let d = t;
+            return i[2] !== u || i[3] !== d ? (r = d ? (0, n.jsx)(b, {
+                chat: u,
+                items: d,
+                onSelect: u.open
+            }) : null, i[2] = u, i[3] = d, i[4] = r) : r = i[4], r
+        }
+
+        function b(e) {
+            let t, r, a, i = (0, l.c)(13),
+                {
+                    chat: o,
+                    items: u,
+                    onSelect: d
+                } = e;
+            if (i[0] !== o || i[1] !== u || i[2] !== d) {
+                let e;
+                i[4] !== o || i[5] !== d ? (e = e => (0, n.jsxs)(g.a, {
+                    allowShrink: !0,
+                    color: "conversationPill",
+                    size: "suggestedQuestion",
+                    disabled: null != o.pendingId,
+                    loading: o.pendingId === e.id,
+                    onClick: () => d(e),
+                    children: [(0, n.jsx)(s.Hb, {
+                        "aria-hidden": !0
+                    }), (0, n.jsx)("span", {
+                        className: "min-w-0 text-start break-words whitespace-normal",
+                        children: e.label
+                    })]
+                }, e.id), i[4] = o, i[5] = d, i[6] = e) : e = i[6], t = u.map(e), i[0] = o, i[1] = u, i[2] = d, i[3] = t
+            } else t = i[3];
+            return i[7] !== o || i[8] !== u ? (r = u.some(e => {
+                let {
+                    id: t
+                } = e;
+                return t === o.failedId
+            }) ? (0, n.jsx)(m, {
+                nativeUnavailable: o.nativeUnavailable
+            }) : null, i[7] = o, i[8] = u, i[9] = r) : r = i[9], i[10] !== t || i[11] !== r ? (a = (0, n.jsxs)("div", {
+                className: "flex flex-col items-start gap-2.5 pb-4",
+                children: [t, r]
+            }), i[10] = t, i[11] = r, i[12] = a) : a = i[12], a
+        }
+
+        function v(e, t) {
+            return {
+                id: `profile-starter-${t}`,
+                label: e,
+                prefill: e
+            }
+        }
+        r.d(t, {}, {
+            a: function(e) {
+                let t, r, o, s = (0, l.c)(7),
+                    {
+                        conversationId: d,
+                        actions: c,
+                        children: p
+                    } = e,
+                    g = (0, a.y)(u.a);
+                return s[0] !== c || s[1] !== d || s[2] !== g ? (t = () => {
+                    let e = g.watch(e => {
+                        let {
+                            get: t
+                        } = e;
+                        t(f.b, d)
+                    });
+                    return g.set(f.b, d, c), () => {
+                        g.get(f.b, d) === c && g.set(f.b, d, null), e()
+                    }
+                }, r = [g, d, c], s[0] = c, s[1] = d, s[2] = g, s[3] = t, s[4] = r) : (t = s[3], r = s[4]), (0, i.useLayoutEffect)(t, r), s[5] !== p ? (o = (0, n.jsx)(n.Fragment, {
+                    children: p
+                }), s[5] = p, s[6] = o) : o = s[6], o
+            },
+            b: function(e) {
+                let t, r, i, s, u, d = (0, l.c)(15),
+                    {
+                        conversationId: c
+                    } = e,
+                    p = (0, a.x)(f.b, c);
+                if (p?.startChat == null) return null;
+                let h = p.startChat,
+                    b = null != p.pendingId,
+                    v = p.pendingId === h.id;
+                return d[0] !== h || d[1] !== p ? (t = () => p.open(h, "start-chat"), d[0] = h, d[1] = p, d[2] = t) : t = d[2], d[3] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, n.jsx)(o.a, {
+                    id: "chatgpt.entity.businessProfile.startChat",
+                    defaultMessage: "Start chat",
+                    description: "Button in a business profile header that opens a new conversation with that business’s AI agent."
+                }), d[3] = r) : r = d[3], d[4] !== b || d[5] !== v || d[6] !== t ? (i = (0, n.jsx)(g.a, {
+                    color: "primary",
+                    size: "businessProfileAction",
+                    disabled: b,
+                    loading: v,
+                    onClick: t,
+                    children: r
+                }), d[4] = b, d[5] = v, d[6] = t, d[7] = i) : i = d[7], d[8] !== h.id || d[9] !== p.failedId || d[10] !== p.nativeUnavailable ? (s = p.failedId === h.id ? (0, n.jsx)(m, {
+                    nativeUnavailable: p.nativeUnavailable
+                }) : null, d[8] = h.id, d[9] = p.failedId, d[10] = p.nativeUnavailable, d[11] = s) : s = d[11], d[12] !== i || d[13] !== s ? (u = (0, n.jsxs)(n.Fragment, {
+                    children: [i, s]
+                }), d[12] = i, d[13] = s, d[14] = u) : u = d[14], u
+            },
+            c: function(e) {
+                let t, r = (0, l.c)(5),
+                    {
+                        conversationId: i,
+                        after: o
+                    } = e,
+                    s = void 0 === o ? "transcript" : o,
+                    u = (0, a.x)(f.b, i),
+                    d = u?.suggestedQuestions,
+                    c = (0, a.x)(d?.length ? p.a : null, i);
+                return r[0] !== s || r[1] !== u || r[2] !== c || r[3] !== d ? (t = u && d?.length && c === s ? (0, n.jsx)(b, {
+                    chat: u,
+                    items: d.map(v),
+                    onSelect: e => u.open(e, "suggestion")
+                }) : null, r[0] = s, r[1] = u, r[2] = c, r[3] = d, r[4] = t) : t = r[4], t
+            },
+            d: function(e) {
+                let t, r = (0, l.c)(3),
+                    {
+                        data: a
+                    } = e,
+                    i = (0, c.d)();
+                return r[0] !== a || r[1] !== i ? (t = i?.conversationType === "sidebar" ? (0, n.jsx)(h, {
+                    conversationId: i.conversationId,
+                    data: a
+                }) : null, r[0] = a, r[1] = i, r[2] = t) : t = r[2], t
+            }
+        })
+    }),
+    w7PD: (function(e, t, r) {
+        var n = r("BolX"),
+            l = r("ASxG"),
+            a = r("OWtl");
+        let i = l.object({
+                items: l.array(l.object({
+                    id: l.string().trim().min(1),
+                    label: l.string().trim().min(1),
+                    prefill: l.string().nullish()
+                })).min(1)
+            }),
+            o = (0, n.v)(a.a, e => null, void 0, {
+                autoDispose: !0
+            });
+        r.d(t, {}, {
+            a: i,
+            b: o
+        })
+    }),
+    FQiC: (function(e, t, r) {
+        var n = r("BolX"),
+            l = r("zd8w"),
+            a = r("Cslg"),
+            i = r("OWtl"),
+            o = r("tZ3A"),
+            s = r("orgn");
+        let u = (0, n.d)(i.a, (e, t) => {
+                let {
+                    get: r
+                } = t, n = r(o.c, e)?.businessProfile, l = r(s.a, e);
+                return {
+                    conversationId: e,
+                    accountId: r(a.f),
+                    userId: r(a.j),
+                    profileId: l?.profileId ?? null,
+                    identity: JSON.stringify([l?.profileId, l?.source, l?.source === "entity-knowledge" ? null : n ?? null])
+                }
+            }),
+            d = (0, n.j)(i.a, (e, t) => {
+                let {
+                    signal: r
+                } = t;
+                return {
+                    isOpen$: r(!1),
+                    triggerRef: (0, l.createRef)()
+                }
+            }, {
+                autoDispose: !0
+            });
+        r.d(t, {}, {
+            a: d,
+            b: u
+        })
+    }),
+    SbOw: (function(e, t, r) {
+        var n = r("ABep"),
+            l = r("QosV"),
+            a = r("on57"),
+            i = r("zd8w"),
+            o = r("E6P3"),
+            s = r("zSQm"),
+            u = r("WAdu"),
+            d = r("TUMj"),
+            c = r("LQio");
+
+        function f(e) {
+            let t, r, c = (0, l.c)(7),
+                {
+                    src: f,
+                    overlap: p
+                } = e,
+                g = void 0 !== p && p,
+                m = (0, i.useContext)(u.a),
+                h = (0, d.d)();
+            c[0] !== m || c[1] !== f || c[2] !== h?.shouldBlockExternalEgress ? (t = f && "restricted" !== m && !h?.shouldBlockExternalEgress ? (0, s.b)(f) : void 0, c[0] = m, c[1] = f, c[2] = h?.shouldBlockExternalEgress, c[3] = t) : t = c[3];
+            let b = t;
+            return c[4] !== g || c[5] !== b ? (r = b ? (0, n.jsx)(o.a, {
+                alt: "",
+                src: b,
+                fallback: (0, n.jsx)(n.Fragment, {}),
+                className: (0, a.b)("size-18 rounded-2xl border-4 border-surface bg-surface", g ? "relative -mt-8 self-start" : "mb-3")
+            }, b) : null, c[4] = g, c[5] = b, c[6] = r) : r = c[6], r
+        }
+        r.d(t, {}, {
+            a: f,
+            b: function(e) {
+                let t, r, o, s = (0, l.c)(10),
+                    {
+                        children: u,
+                        logoUrl: d,
+                        logoPrimaryColor: p,
+                        photosPending: g
+                    } = e,
+                    m = (0, i.useContext)(c.a);
+                return s[0] !== u || s[1] !== p || s[2] !== g || s[3] !== m ? (t = u ?? (0, n.jsx)("div", {
+                    ref: m,
+                    "aria-hidden": "true",
+                    "data-entity-photos": !0,
+                    className: (0, a.b)("-mx-6 bg-text/10", g ? "aspect-5/4" : "aspect-3/1"),
+                    style: {
+                        backgroundColor: p ?? void 0
+                    }
+                }), s[0] = u, s[1] = p, s[2] = g, s[3] = m, s[4] = t) : t = s[4], s[5] !== d ? (r = (0, n.jsx)(f, {
+                    src: d,
+                    overlap: !0
+                }), s[5] = d, s[6] = r) : r = s[6], s[7] !== t || s[8] !== r ? (o = (0, n.jsxs)("div", {
+                    className: "mb-5 flex flex-col has-[>img]:mb-3",
+                    children: [t, r]
+                }), s[7] = t, s[8] = r, s[9] = o) : o = s[9], o
+            }
+        })
+    }),
+    orgn: (function(e, t, r) {
+        var n = r("D7Ms"),
+            l = r("BolX"),
+            a = r("DNHP"),
+            i = r("Cslg"),
+            o = r("OWtl"),
+            s = r("OMIV"),
+            u = r("tZ3A"),
+            d = r("Kwur");
+        let c = (0, l.q)(o.a, (e, t) => {
+                let {
+                    get: r
+                } = t, l = r(u.c, e), o = l?.entityKnowledgeId, c = r(i.f), f = r(i.j), p = null != o && !l?.entityKnowledgePending && ["business", "brand", "company", "organization"].includes(l?.category ?? "") && null != c && null != f && r(s.d, "2778625748");
+                return {
+                    queryKey: ["entity-business-profile", c, f, e, "entity-knowledge", o],
+                    enabled: p,
+                    staleTime: 0,
+                    gcTime: 0,
+                    retry: !1,
+                    refetchOnMount: "always",
+                    queryFn: p ? async e => {
+                        let {
+                            signal: t
+                        } = e, r = await d.Request.safePost("/chat/frontend/v1/business-profiles/resolve", {
+                            additionalHeaders: {
+                                "x-openai-use-sheep": "1",
+                                [a.$b]: c
+                            },
+                            requestBody: {
+                                provider: "entity-knowledge",
+                                provider_business_id: o
+                            },
+                            signal: t,
+                            expectedErrorStatuses: [400, 403, 404, 409, 422]
+                        });
+                        return t.throwIfAborted(), null == r.business_profile_id ? null : {
+                            profileId: r.business_profile_id,
+                            source: "entity-knowledge",
+                            status: r
+                        }
+                    } : n.u
+                }
+            }),
+            f = (0, l.q)(o.a, (e, t) => {
+                let {
+                    get: r
+                } = t, l = r(u.c, e), o = l?.businessProfile, f = r(i.f), p = r(i.j), g = null != o && !l?.entityKnowledgePending && ["business", "brand", "company", "organization"].includes(l?.category ?? "") && null != f && null != p && r(s.d, "2778625748");
+                if (g && l?.entityKnowledgeId != null) {
+                    let {
+                        data: t,
+                        isEnabled: n,
+                        isPending: l
+                    } = r(c, e);
+                    g = n && !l && null == t
+                }
+                return {
+                    queryKey: ["entity-business-profile", f, p, e, "canonical-business-profile", o?.canonical_id, o?.profile_id],
+                    enabled: g,
+                    staleTime: 0,
+                    gcTime: 0,
+                    retry: !1,
+                    refetchOnMount: "always",
+                    queryFn: g && null != o && null != f ? async e => {
+                        let {
+                            signal: t
+                        } = e, r = await d.Request.safePost("/chat/frontend/v1/business-profiles/resolve", {
+                            additionalHeaders: {
+                                "x-openai-use-sheep": "1",
+                                [a.$b]: f
+                            },
+                            requestBody: {
+                                provider: "canonical-business-profile",
+                                provider_business_id: o.canonical_id
+                            },
+                            signal: t,
+                            expectedErrorStatuses: [400, 403, 404, 409, 422]
+                        });
+                        return t.throwIfAborted(), {
+                            profileId: o.profile_id,
+                            source: "canonical",
+                            status: r
+                        }
+                    } : n.u
+                }
+            }),
+            p = (0, l.d)(o.a, (e, t) => {
+                let {
+                    get: r
+                } = t, n = r(u.c, e);
+                if (n?.businessProfile == null && n?.entityKnowledgeId == null || n?.entityKnowledgePending || !["business", "brand", "company", "organization"].includes(n?.category ?? "") || !r(s.d, "2778625748")) return null;
+                if (n?.entityKnowledgeId != null) {
+                    let {
+                        data: t,
+                        isEnabled: n,
+                        isPending: l
+                    } = r(c, e);
+                    if (!n || l) return null;
+                    if (null != t) return t
+                }
+                let {
+                    data: l,
+                    isEnabled: a
+                } = r(f, e);
+                return a ? l ?? null : null
+            }),
+            g = (0, l.d)(o.a, (e, t) => {
+                let {
+                    get: r
+                } = t;
+                return r(p, e)?.status ?? null
+            });
+        r.d(t, {}, {
+            a: p,
+            b: g
+        })
+    }),
+    cGwJ: (function(e, t, r) {
+        var n = r("BolX"),
+            l = r("rKAs"),
+            a = r("IgxH"),
+            i = r("OWtl"),
+            o = r("CTBG"),
+            s = r("iGzJ"),
+            u = r("dQRk"),
+            d = r("w7PD");
+
+        function c(e, t) {
+            return `${e}:${t}`
+        }
+        let f = (0, n.d)(i.a, (e, t) => {
+            let r, {
+                get: n
+            } = t;
+            if ("idle" !== n(u.$, e)) return null;
+            let i = n(o.c, e),
+                f = n(u.N, e),
+                p = !1;
+            for (let e of i ?? []) {
+                let t;
+                if (!e.id || f[e.id]?.blocked) continue;
+                let n = (0, s.d)(e);
+                if (!n.markdown) continue;
+                let i = "finished_successfully" === e.status;
+                for (let e of n.contentReferences)
+                    if (!(0, l.H)(e)) {
+                        if ("client_defined_widget" === e.type && "business_profile_starter_pills" === e.category && d.a.safeParse(e.data).success) return null;
+                        i && null == r && ("product_group" === e.type || "products" === e.type) && "number" == typeof e.start_idx && (null == t || e.start_idx < t) && (0, l.y)(e).length > 0 && (t = e.start_idx)
+                    } null != t && (r = c(e.id, t)), !i || r || p || (p = (0, a.a)(n.markdown).length > 0)
+            }
+            return r ?? (p ? "transcript" : null)
+        });
+        r.d(t, {}, {
+            a: f,
+            b: c
+        })
+    }),
+    SZ0w: (function(e, t, r) {
+        var n = r("ABep"),
+            l = r("QosV"),
+            a = r("v1r0"),
+            i = r("BolX"),
+            o = r("Wf1j"),
+            s = r("oyxz"),
+            u = r("bfX9"),
+            d = r("bqtn"),
+            c = r("HOLv"),
+            f = r("zSQm"),
+            p = r("OWtl"),
+            g = r("tZ3A"),
+            m = r("KDax"),
+            h = r("NDDl"),
+            b = r("FQiC"),
+            v = r("SbOw"),
+            y = r("orgn"),
+            x = r("T2J5"),
+            w = r("Csob"),
+            _ = r("Vp8q"),
+            j = r("Ff4E"),
+            k = r("iYVU");
+
+        function I() {
+            let e, t, r = (0, l.c)(4),
+                a = (0, o.a)();
+            return r[0] !== a ? (e = a.formatMessage({
+                id: "chatgpt.localBusiness.claim.verified.label",
+                defaultMessage: "Verified business",
+                description: "Accessible label for the blue badge beside a business name after ownership approval"
+            }), r[0] = a, r[1] = e) : e = r[1], r[2] !== e ? (t = (0, n.jsx)(x.a, {
+                className: "ms-1.5",
+                label: e,
+                showTooltip: !0,
+                size: 24
+            }), r[2] = e, r[3] = t) : t = r[3], t
+        }
+
+        function C(e) {
+            let t, r, a, i, o = (0, l.c)(14),
+                {
+                    conversationId: d,
+                    requiresConfirmation: c,
+                    status: p,
+                    websiteUrl: g,
+                    children: b
+                } = e;
+            if (o[0] !== g) {
+                let e = (0, f.a)(g?.trim() ?? "");
+                t = e && /^https?:\/\//i.test(e) ? e : null, o[0] = g, o[1] = t
+            } else t = o[1];
+            let v = t,
+                y = p?.chat_target != null && p.header?.start_chat != null;
+            return o[2] !== d || o[3] !== y || o[4] !== c || o[5] !== v ? (r = y || null != v ? (0, n.jsxs)("div", {
+                className: "-ms-1 mt-4 mb-5 flex flex-wrap items-center gap-2 empty:hidden",
+                children: [y ? (0, n.jsx)(h.b, {
+                    conversationId: d
+                }) : null, null != v ? (0, n.jsx)(m.a, {
+                    className: "flex min-h-9 shrink-0 cursor-interaction items-center justify-center rounded-full border border-default bg-transparent px-5 text-entity-action whitespace-nowrap text-default select-none no-drag only:border-transparent only:bg-primary-solid only:text-primary-solid hover:bg-secondary-ghost-hover only:hover:bg-primary-solid-hover focus:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                    href: v,
+                    initiator: "markdown_link_click",
+                    requiresConfirmation: c,
+                    appearance: "button",
+                    underline: "none",
+                    openAsWebsite: !0,
+                    children: (0, n.jsx)(s.a, {
+                        id: "chatgpt.entity.businessProfile.viewWebsite",
+                        defaultMessage: "View website",
+                        description: "Button beneath a business name in the entity sidebar that opens the website supplied by its business profile. Use a short action label; no placeholders."
+                    })
+                }) : null]
+            }) : null, o[2] = d, o[3] = y, o[4] = c, o[5] = v, o[6] = r) : r = o[6], o[7] !== d || o[8] !== p ? (a = (0, u.a)(p) ? (0, n.jsx)("div", {
+                className: "border-t border-default",
+                children: (0, n.jsx)(S, {
+                    conversationId: d,
+                    status: p
+                })
+            }) : null, o[7] = d, o[8] = p, o[9] = a) : a = o[9], o[10] !== b || o[11] !== r || o[12] !== a ? (i = (0, n.jsxs)(n.Fragment, {
+                children: [r, b, a]
+            }), o[10] = b, o[11] = r, o[12] = a, o[13] = i) : i = o[13], i
+        }
+
+        function S(e) {
+            let t, r, a = (0, l.c)(6),
+                {
+                    conversationId: o,
+                    status: s
+                } = e,
+                d = (0, i.y)(p.a);
+            a[0] !== o || a[1] !== d ? (t = () => {
+                if (!(0, u.a)(d.get(y.b, o))) return;
+                let e = d.get(b.a, d.get(b.b, o));
+                e.triggerRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null, d.set(e.isOpen$, !0)
+            }, a[0] = o, a[1] = d, a[2] = t) : t = a[2];
+            let c = s?.ownership?.current_request;
+            return a[3] !== t || a[4] !== c ? (r = (0, n.jsx)(w.a, {
+                onClick: t,
+                request: c
+            }), a[3] = t, a[4] = c, a[5] = r) : r = a[5], r
+        }
+
+        function P(e) {
+            return e.trim().length > 0
+        }
+
+        function M(e, t) {
+            if (null == e) return null;
+            try {
+                return t.safeParse(JSON.parse(e)).data ?? null
+            } catch {
+                return null
+            }
+        }
+        r.d(t, {}, {
+            a: function(e) {
+                let t, r, a, o = (0, l.c)(6),
+                    {
+                        conversationId: c
+                    } = e,
+                    f = (0, i.y)(p.a),
+                    g = (0, i.x)(y.b, c);
+                return (0, u.a)(g, "dispute") ? (o[0] !== c || o[1] !== f ? (t = () => {
+                    if (!(0, u.a)(f.get(y.b, c), "dispute")) return;
+                    let e = f.get(b.a, f.get(b.b, c));
+                    e.triggerRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null, f.set(e.isOpen$, !0)
+                }, o[0] = c, o[1] = f, o[2] = t) : t = o[2], o[3] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, n.jsx)(s.a, {
+                    id: "chatgpt.localBusiness.dispute.action",
+                    defaultMessage: "Dispute profile ownership",
+                    description: "First menu action for a claimed business profile, available only to people who do not own the profile. Opens the ownership dispute flow."
+                }), o[3] = r) : r = o[3], o[4] !== t ? (a = (0, n.jsx)(d.c.Item, {
+                    leftIconAsset: k.a,
+                    onSelect: t,
+                    children: r
+                }), o[4] = t, o[5] = a) : a = o[5], a) : null
+            },
+            b: function(e) {
+                let t, r = (0, l.c)(4),
+                    {
+                        conversationId: a
+                    } = e,
+                    o = (0, i.x)(y.a, a),
+                    s = (0, i.x)(g.c, a);
+                if (o?.source !== "entity-knowledge" || s?.businessProfile != null) return null;
+                let u = s?.shouldBlockExternalEgress;
+                return r[0] !== a || r[1] !== o.status || r[2] !== u ? (t = (0, n.jsx)(C, {
+                    conversationId: a,
+                    requiresConfirmation: u,
+                    status: o.status
+                }), r[0] = a, r[1] = o.status, r[2] = u, r[3] = t) : t = r[3], t
+            },
+            c: function(e) {
+                let t, r, u, d, f, p, m, h, b, x, k, S, A = (0, l.c)(52),
+                    {
+                        conversationId: N,
+                        profile: E,
+                        inSidebar: T,
+                        name: F
+                    } = e,
+                    B = void 0 !== T && T,
+                    z = (0, o.a)(),
+                    q = (0, i.x)(y.b, N),
+                    L = (0, i.x)(g.c, N),
+                    D = (0, i.x)(y.a, N),
+                    R = D?.source === "entity-knowledge" && D.profileId !== E.profile_id ? null : E;
+                A[0] !== R?.categories || A[1] !== R?.categories.find ? (t = R?.categories.find(P), A[0] = R?.categories, A[1] = R?.categories.find, A[2] = t) : t = A[2];
+                let U = t;
+                if (A[3] !== E || A[4] !== U || A[5] !== N || A[6] !== B || A[7] !== z || A[8] !== F || A[9] !== L?.businessProfile?.canonical_id || A[10] !== L?.query || A[11] !== L?.shouldBlockExternalEgress || A[12] !== R?.delivery_policy || A[13] !== R?.display_name || A[14] !== R?.logo_url || A[15] !== R?.returns_policy || A[16] !== R?.website_url || A[17] !== q) {
+                    let e, t, l = M(R?.delivery_policy, a.b),
+                        i = R?.returns_policy;
+                    A[27] !== i ? (e = M(i, a.d), A[27] = i, A[28] = e) : e = A[28];
+                    let o = e,
+                        g = B && L?.businessProfile?.canonical_id === E.canonical_id;
+                    A[29] !== g || A[30] !== L?.shouldBlockExternalEgress || A[31] !== R?.logo_url ? (b = g || L?.shouldBlockExternalEgress ? null : (0, n.jsx)(v.a, {
+                        src: R?.logo_url
+                    }), A[29] = g, A[30] = L?.shouldBlockExternalEgress, A[31] = R?.logo_url, A[32] = b) : b = A[32];
+                    let y = R?.display_name ?? F ?? L?.query;
+                    A[33] !== q?.is_verified ? (t = q?.is_verified ? (0, n.jsx)(I, {}) : null, A[33] = q?.is_verified, A[34] = t) : t = A[34], A[35] !== y || A[36] !== t ? (x = (0, n.jsxs)("h2", {
+                        className: "text-card-title break-words",
+                        children: [y, t]
+                    }), A[35] = y, A[36] = t, A[37] = x) : x = A[37], A[38] !== U ? (u = U ? (0, n.jsx)("div", {
+                        className: "text-lg leading-6 font-normal break-words text-default",
+                        children: U
+                    }) : null, A[38] = U, A[39] = u) : u = A[39], r = C, d = N, f = L?.shouldBlockExternalEgress, p = q, m = R?.website_url, h = null == l && null == o ? null : (0, n.jsxs)("div", {
+                        className: "divide-y divide-border border-t border-default",
+                        children: [null != l ? (0, n.jsxs)(w.f, {
+                            icon: (0, n.jsx)(c.a, {
+                                asset: j.a
+                            }),
+                            children: ["none" === l.delivery ? (0, n.jsx)(s.a, {
+                                id: "chatgpt.entity.businessProfile.noDelivery",
+                                defaultMessage: "Delivery unavailable",
+                                description: "Merchant policy in the business sidebar when delivery is not offered"
+                            }) : null, "paid" === l.delivery ? (0, n.jsx)(s.a, {
+                                id: "chatgpt.entity.businessProfile.paidDelivery",
+                                defaultMessage: "Paid delivery",
+                                description: "Merchant policy in the business sidebar when delivery costs are charged at checkout"
+                            }) : null, "free" === l.delivery && "all_orders" === l.scope ? (0, n.jsx)(s.a, {
+                                id: "chatgpt.entity.businessProfile.freeDelivery",
+                                defaultMessage: "Free delivery on all orders",
+                                description: "Merchant policy in the business sidebar when all orders qualify for free delivery"
+                            }) : null, "free" === l.delivery && "minimum_order" === l.scope ? (0, n.jsx)(s.a, {
+                                id: "chatgpt.entity.businessProfile.deliveryMinimum",
+                                defaultMessage: "Free delivery over {amount}",
+                                description: "Merchant policy in the business sidebar for free delivery above a minimum order amount; amount includes its currency",
+                                values: {
+                                    amount: z.formatNumber(Number(l.minimum_order_amount), {
+                                        style: "currency",
+                                        currency: l.currency,
+                                        minimumFractionDigits: 0,
+                                        maximumFractionDigits: 20
+                                    })
+                                }
+                            }) : null]
+                        }) : null, null != o ? (0, n.jsxs)(w.f, {
+                            icon: (0, n.jsx)(c.a, {
+                                asset: _.a
+                            }),
+                            children: ["none" === o.returns ? (0, n.jsx)(s.a, {
+                                id: "chatgpt.entity.businessProfile.noReturns",
+                                defaultMessage: "Returns not accepted",
+                                description: "Merchant policy in the business sidebar when returns are not accepted"
+                            }) : null, "none" !== o.returns && "window" in o ? (0, n.jsx)(s.a, {
+                                id: "chatgpt.entity.businessProfile.unlimitedReturns",
+                                defaultMessage: "{kind, select, free {Free returns with no time limit} other {Returns with no time limit, fees apply}}",
+                                description: "Return policy summary for customers in the business sidebar. Returns have no time limit. The kind value is free when no return fees apply, or fees otherwise.",
+                                values: {
+                                    kind: o.returns
+                                }
+                            }) : null, "none" !== o.returns && "window_days" in o ? (0, n.jsx)(s.a, {
+                                id: "chatgpt.entity.businessProfile.returnWindow",
+                                defaultMessage: "{kind, select, free {Free returns within {days, plural, one {# day} other {# days}}} other {Returns within {days, plural, one {# day} other {# days}}, fees apply}}",
+                                description: "Merchant policy in the business sidebar showing the return window from delivery and whether return fees apply",
+                                values: {
+                                    kind: o.returns,
+                                    days: o.window_days
+                                }
+                            }) : null]
+                        }) : null]
+                    }), A[3] = E, A[4] = U, A[5] = N, A[6] = B, A[7] = z, A[8] = F, A[9] = L?.businessProfile?.canonical_id, A[10] = L?.query, A[11] = L?.shouldBlockExternalEgress, A[12] = R?.delivery_policy, A[13] = R?.display_name, A[14] = R?.logo_url, A[15] = R?.returns_policy, A[16] = R?.website_url, A[17] = q, A[18] = r, A[19] = u, A[20] = d, A[21] = f, A[22] = p, A[23] = m, A[24] = h, A[25] = b, A[26] = x
+                } else r = A[18], u = A[19], d = A[20], f = A[21], p = A[22], m = A[23], h = A[24], b = A[25], x = A[26];
+                return A[40] !== r || A[41] !== d || A[42] !== f || A[43] !== p || A[44] !== m || A[45] !== h ? (k = (0, n.jsx)(r, {
+                    conversationId: d,
+                    requiresConfirmation: f,
+                    status: p,
+                    websiteUrl: m,
+                    children: h
+                }), A[40] = r, A[41] = d, A[42] = f, A[43] = p, A[44] = m, A[45] = h, A[46] = k) : k = A[46], A[47] !== u || A[48] !== k || A[49] !== b || A[50] !== x ? (S = (0, n.jsxs)(n.Fragment, {
+                    children: [b, x, u, k]
+                }), A[47] = u, A[48] = k, A[49] = b, A[50] = x, A[51] = S) : S = A[51], S
+            }
+        })
+    }),
+    wFiG: (function(e, t, r) {
+        var n = r("ABep"),
+            l = r("QosV"),
+            a = r("EA6X"),
+            i = r("BolX"),
+            o = r("DNHP"),
+            s = r("zd8w"),
+            u = r("DcH0"),
+            d = r("WAdu"),
+            c = r("OWtl"),
+            f = r("tZ3A"),
+            p = r("niC2"),
+            g = r("TUMj"),
+            m = r("rxj0"),
+            h = r("xof2"),
+            b = r("SZ0w"),
+            v = r("Csob"),
+            y = r("FRPb"),
+            x = r("LQio"),
+            w = r("H0jo");
+
+        function _(e) {
+            let t, r, o, u, p = (0, l.c)(21),
+                {
+                    conversationId: x,
+                    isTranscriptPending: w,
+                    turnContext: _,
+                    showClaimedBusinessTooltip: j
+                } = e,
+                k = void 0 !== w && w,
+                I = void 0 !== j && j,
+                C = (0, i.y)(c.a),
+                S = (0, s.useContext)(d.a),
+                P = (0, i.x)(m.d, x),
+                M = (0, i.x)(y.b, x),
+                A = (0, i.x)(y.d, x),
+                N = k ? M?.business : A,
+                E = (0, i.x)(f.c, x),
+                T = (0, i.x)(f.e, x),
+                F = (0, i.x)(y.c, x),
+                B = k ? T : F;
+            if (null == N && null == B) {
+                if (E?.extraParams?.resolve_basemap_place === !0 && null == E.businessPreview) {
+                    let e;
+                    return p[0] !== E.query ? (e = (0, n.jsx)("h2", {
+                        className: "mb-1 text-[22px] leading-7 font-medium break-words",
+                        children: E.query
+                    }), p[0] = E.query, p[1] = e) : e = p[1], e
+                }
+                return null
+            }
+            let z = P ? "restricted" : S,
+                q = _ ?? null;
+            return p[2] !== x || p[3] !== E?.query || p[4] !== B ? (t = null != B && (0, n.jsx)(b.c, {
+                conversationId: x,
+                profile: B,
+                inSidebar: !0,
+                name: E?.query
+            }), p[2] = x, p[3] = E?.query, p[4] = B, p[5] = t) : t = p[5], p[6] !== N || p[7] !== M?.category || p[8] !== M?.messageId || p[9] !== M?.sourceConversationId || p[10] !== B || p[11] !== C || p[12] !== I ? (r = null == B && null != N && (0, n.jsx)(v.ChatGptLocalBusinessMetadata, {
+                business: N,
+                isOptimistic: !0,
+                showClaimedBusinessTooltip: I,
+                onAction: e => {
+                    (0, h.b)(C, {
+                        actionType: "CHATGPT_ENGAGEMENT_ACTION_TYPE_CLICKED",
+                        entityAffordance: e,
+                        entityId: N.id.trim() || void 0,
+                        entityCategory: M?.category ?? void 0,
+                        messageId: M?.messageId,
+                        assistantMessageId: M?.messageId,
+                        conversationId: M?.sourceConversationId,
+                        contentReferenceType: "entity_metadata",
+                        surfaceLocation: a.b.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_SIDEBAR,
+                        isGenui: !1
+                    })
+                }
+            }), p[6] = N, p[7] = M?.category, p[8] = M?.messageId, p[9] = M?.sourceConversationId, p[10] = B, p[11] = C, p[12] = I, p[13] = r) : r = p[13], p[14] !== q || p[15] !== t || p[16] !== r ? (o = (0, n.jsxs)(g.b, {
+                value: q,
+                children: [t, r]
+            }), p[14] = q, p[15] = t, p[16] = r, p[17] = o) : o = p[17], p[18] !== z || p[19] !== o ? (u = (0, n.jsx)(d.a, {
+                value: z,
+                children: o
+            }), p[18] = z, p[19] = o, p[20] = u) : u = p[20], u
+        }
+        r.d(t, {}, {
+            a: _,
+            b: function(e) {
+                let t, r, a, c = (0, l.c)(25),
+                    {
+                        conversationId: f,
+                        isTranscriptPending: g,
+                        turnContext: m,
+                        showClaimedBusinessTooltip: h
+                    } = e,
+                    b = void 0 !== g && g,
+                    v = void 0 !== h && h,
+                    y = (0, s.useContext)(d.a),
+                    j = (0, i.x)(w.a, f),
+                    k = (0, i.x)(w.b, "restricted" === y ? null : f),
+                    I = (0, i.x)(w.i, f),
+                    C = (0, i.x)(w.d, f),
+                    S = (0, i.x)(w.f, f),
+                    P = (0, s.useContext)(x.a);
+                if (C && !b) return null;
+                c[0] !== y || c[1] !== I || c[2] !== k ? (t = (0, w.g)(k, null != I && "restricted" !== y ? [I] : []), c[0] = y, c[1] = I, c[2] = k, c[3] = t) : t = c[3];
+                let M = t,
+                    A = null;
+                if (M.length > 0 || null != j) {
+                    let e, t, r, l = `chatgpt:${f}`;
+                    c[4] !== l ? (e = (0, o.Se)(l), c[4] = l, c[5] = e) : e = c[5], c[6] !== b || c[7] !== j ? (t = j && b ? {
+                        ...j,
+                        photosPending: !0
+                    } : j, c[6] = b, c[7] = j, c[8] = t) : t = c[8];
+                    let a = k?.isCover ? "cover" : "sidebar";
+                    c[9] !== M || c[10] !== e || c[11] !== t || c[12] !== a ? (r = (0, n.jsx)(p.a, {
+                        conversationId: e,
+                        images: M,
+                        businessProfileHeader: t,
+                        presentation: a
+                    }), c[9] = M, c[10] = e, c[11] = t, c[12] = a, c[13] = r) : r = c[13], A = r
+                } else if (S || b && C) {
+                    let e, t;
+                    c[14] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)(u.a, {
+                        className: "aspect-5/4",
+                        "aria-hidden": "true",
+                        variant: "prominent"
+                    }), c[14] = e) : e = c[14], c[15] !== P ? (t = (0, n.jsx)("div", {
+                        className: "-mx-6 mb-5",
+                        children: (0, n.jsx)("div", {
+                            ref: P,
+                            "data-entity-photos": !0,
+                            children: e
+                        })
+                    }), c[15] = P, c[16] = t) : t = c[16], A = t
+                }
+                return c[17] !== f || c[18] !== b || c[19] !== v || c[20] !== m ? (r = (0, n.jsx)(_, {
+                    conversationId: f,
+                    isTranscriptPending: b,
+                    turnContext: m,
+                    showClaimedBusinessTooltip: v
+                }), c[17] = f, c[18] = b, c[19] = v, c[20] = m, c[21] = r) : r = c[21], c[22] !== A || c[23] !== r ? (a = (0, n.jsxs)(n.Fragment, {
+                    children: [A, r]
+                }), c[22] = A, c[23] = r, c[24] = a) : a = c[24], a
+            }
+        })
+    }),
+    LQio: (function(e, t, r) {
+        let n = (0, r("zd8w").createContext)(null);
+        r.d(t, {}, {
+            a: n
+        })
+    }),
+    H0jo: (function(e, t, r) {
+        var n = r("BolX"),
+            l = r("rKAs"),
+            a = r("SqqO"),
+            i = r("OWtl"),
+            o = r("fzVa"),
+            s = r("iGzJ"),
+            u = r("tZ3A"),
+            d = r("dQRk"),
+            c = r("rxj0"),
+            f = r("orgn"),
+            p = r("TJEh"),
+            g = r("FRPb");
+        let m = (0, n.d)(i.a, (e, t) => {
+                let {
+                    get: r
+                } = t;
+                return null != e && r(u.a, e) && null == r(g.b, e) && r(u.c, e)?.businessProfile == null && r(u.c, e)?.extraParams?.resolve_basemap_place !== !0 ? r(d.db, e) : null
+            }),
+            h = (0, n.d)(i.a, (e, t) => {
+                let {
+                    get: r
+                } = t, n = r(g.b, e), i = r(d.M, e);
+                return null != i && Object.values(i).some(t => null != t.message && (0, s.c)(t.message).some((t, i) => "image_group" === t.type && ("full_width" === t.layout || 0 === t.start_idx && (r(u.a, e) || (0, p.i)(n?.category ?? null))) && (!r(c.d, e) || (0, l.u)(t, i).some(e => !(0, a.d)(e.src)))))
+            }),
+            b = (0, n.d)(i.a, (e, t) => {
+                let {
+                    get: r
+                } = t;
+                if (null == e) return null;
+                let n = r(u.c, e);
+                if (n?.businessProfile == null) return null;
+                let l = n.businessProfile,
+                    a = r(f.a, e);
+                if (a?.source === "entity-knowledge" && a.profileId !== l.profile_id) return null;
+                let i = n.shouldBlockExternalEgress || n.sourceTurnContext?.shouldBlockExternalEgress || r(c.d, e);
+                return {
+                    logoUrl: i ? null : l.logo_url ?? null,
+                    logoPrimaryColor: l.logo_primary_color,
+                    photosPending: (0, d.Ab)(r(d.$, e)) || !i && !!(l.cover_image_url || l.photo_urls?.length || r(x, e)) && r(o.b).isLoading,
+                    coverUrl: i ? null : l.cover_image_url,
+                    photoUrls: i ? null : l.photo_urls
+                }
+            }),
+            v = (0, n.d)(i.a, (e, t) => {
+                let {
+                    get: r
+                } = t, n = r(b, e);
+                if (!n || !n.coverUrl && !n.photoUrls?.length) return null;
+                let l = r(o.b).data?.age_status;
+                if ("over_18" !== l && "unsure" !== l) return null;
+                let a = n.coverUrl && URL.parse(n.coverUrl)?.protocol === "https:" ? n.coverUrl : null,
+                    i = new Set(a ? [a] : n.photoUrls?.filter(e => URL.parse(e)?.protocol === "https:"));
+                return i.size > 0 ? {
+                    isCover: null != a,
+                    urls: i
+                } : null
+            });
+
+        function y(e, t) {
+            return [e.src, e.previewSrc, e.searchResult?.originalSrc, e.searchResult?.contentSrc].some(e => null != e && t.has(e))
+        }
+        let x = (0, n.d)(i.a, (e, t) => {
+                let {
+                    get: r
+                } = t;
+                if (null == e) return null;
+                let n = r(g.b, e);
+                if (r(c.d, e)) return null;
+                let l = r(u.b, e),
+                    a = null == n ? null : (0, p.f)(n.business);
+                return l ?? (null == a ? null : {
+                    id: a,
+                    src: a,
+                    status: "completed",
+                    type: "generated-image"
+                })
+            }),
+            w = (0, n.d)(i.a, (e, t) => {
+                let {
+                    get: r
+                } = t, n = r(x, e);
+                if (null == n) return null;
+                let l = r(o.b).data?.age_status;
+                return "over_18" === l || "unsure" === l ? n : null
+            }),
+            _ = (0, n.d)(i.a, (e, t) => {
+                let {
+                    get: r
+                } = t;
+                return (r(u.a, e) || null != r(g.b, e)) && (0, d.Ab)(r(d.$, e)) && !r(h, e) && null == r(w, e)
+            }),
+            j = (0, n.d)(i.a, (e, t) => {
+                let {
+                    get: r
+                } = t;
+                return r(h, e) || null != r(b, e) || null != r(w, e) || r(_, e)
+            });
+        r.d(t, {}, {
+            a: b,
+            b: v,
+            c: j,
+            d: h,
+            e: m,
+            f: _,
+            g: function(e, t) {
+                if (null == e) return t;
+                let r = Array.from(e.urls, e => ({
+                    id: e,
+                    src: e,
+                    type: "generated-image",
+                    status: "completed"
+                }));
+                return e.isCover ? r : [...r, ...t.filter(t => !y(t, e.urls))]
+            },
+            h: y,
+            i: w
+        })
+    }),
+    vxGj: (function(e, t, r) {
+        var n = r("ABep"),
+            l = r("QosV"),
+            a = r("on57");
+        r.d(t, {}, {
+            a: function(e) {
+                let t, r = (0, l.c)(9),
+                    {
+                        count: i,
+                        activeIndex: o,
+                        getPageLabel: s,
+                        onSelect: u
+                    } = e;
+                if (r[0] !== o || r[1] !== i || r[2] !== s || r[3] !== u) {
+                    let e;
+                    r[5] !== o || r[6] !== s || r[7] !== u ? (e = (e, t) => (0, n.jsx)("button", {
+                        className: "flex shrink-0 cursor-interaction items-center justify-center rounded-full p-0.75 focus-visible:ring-2 focus-visible:ring-ring",
+                        type: "button",
+                        "aria-current": t === o ? "true" : void 0,
+                        "aria-label": s(t),
+                        onClick: () => u(t),
+                        children: (0, n.jsx)("span", {
+                            className: (0, a.b)("pointer-events-none h-1 rounded-full bg-media-foreground transition-[width,opacity] duration-basic ease-out motion-reduce:transition-none", t === o ? "w-3 opacity-100" : "w-1 opacity-40")
+                        })
+                    }, t), r[5] = o, r[6] = s, r[7] = u, r[8] = e) : e = r[8], t = (0, n.jsx)("div", {
+                        className: "flex w-fit items-center justify-center rounded-full bg-media-scrim/40 bg-clip-padding p-0.75 backdrop-blur select-none",
+                        children: Array.from({
+                            length: i
+                        }, e)
+                    }), r[0] = o, r[1] = i, r[2] = s, r[3] = u, r[4] = t
+                } else t = r[4];
+                return t
+            }
+        })
+    }),
+    nUGc: (function(e, t, r) {
+        let n = (0, r("zd8w").createContext)(null);
+        r.d(t, {}, {
+            a: n
+        })
+    }),
+    msI5: (function(e, t, r) {
+        var n = r("ABep"),
+            l = r("rKAs"),
+            a = r("zd8w"),
+            i = r("G6mJ"),
+            o = r("NDV0");
+        let s = (0, a.createContext)(null);
+
+        function u(e) {
+            return e?.type === "codexDirective" && e.name === l.a && !0 === e.block
+        }
+        r.d(t, {}, {
+            a: s,
+            b: function(e, t, r, l, a) {
+                let s, d = e.findIndex(e => "space" !== e.type),
+                    c = e[d],
+                    f = c?.type === "heading" && (1 === c.depth || 2 === c.depth) && "string" == typeof c.text && c.text.trim() === l.trim() ? e.slice(d + 1) : e,
+                    p = f.filter(e => "space" !== e.type),
+                    g = e => u(e) ? (0, i.a)(e.attributes, r)?.reference : void 0,
+                    m = p.at(-1);
+                a && u(m) && !g(m) && p.pop();
+                let h = p.findIndex(e => g(e)?.name === "ledger_spend_by_category_recent_transactions");
+                h >= 0 ? s = p[h - 1] : a && g(p.at(-2))?.name === "ledger_spend_by_category_detail" && (s = p.at(-1));
+                let b = function(e) {
+                    if (e?.type === "heading" && 3 === e.depth) return e.tokens;
+                    if (e?.type === "paragraph" && e.tokens?.length === 1) {
+                        let t = e.tokens[0];
+                        return t?.type === "strong" ? t.tokens : void 0
+                    }
+                }(s);
+                if (!s || !b) return t(f);
+                let v = f.indexOf(s);
+                return [...t(f.slice(0, v)), (0, n.jsx)("h3", {
+                    className: `${o.a.Paragraph} font-semibold`,
+                    style: {
+                        fontSize: "var(--text-lg)",
+                        lineHeight: "1.625rem"
+                    },
+                    children: t(b)
+                }, "spending-recent-transactions"), ...t(f.slice(v + 1))]
+            }
+        })
+    }),
+    Yq7Q: (function(e, t, r) {
+        var n = r("ABep"),
+            l = r("QosV"),
+            a = r("on57"),
+            i = r("Sm6l"),
+            o = r("psL3");
+
+        function s(e) {
+            e.currentTarget.blur()
+        }
+        r.d(t, {}, {
+            a: function(e) {
+                let t, r, o, u, d, c, f, p, g, m, h, b, v, y, x, w, _ = (0, l.c)(38);
+                _[0] !== e ? ({
+                    appearance: u,
+                    controlSize: d,
+                    children: t,
+                    className: r,
+                    iconOnly: c,
+                    joined: f,
+                    loading: p,
+                    ...o
+                } = e, _[0] = e, _[1] = t, _[2] = r, _[3] = o, _[4] = u, _[5] = d, _[6] = c, _[7] = f, _[8] = p) : (t = _[1], r = _[2], o = _[3], u = _[4], d = _[5], c = _[6], f = _[7], p = _[8]);
+                let j = void 0 === u ? "compact" : u,
+                    k = void 0 === d ? "default" : d,
+                    I = void 0 !== c && c,
+                    C = void 0 !== f && f,
+                    S = void 0 !== p && p,
+                    P = "compact" !== j,
+                    M = "blurred" === j && "backdrop-blur-md";
+                if (_[9] !== M || _[10] !== r || _[11] !== k || _[12] !== I || _[13] !== P || _[14] !== C || _[15] !== o) {
+                    let e = (0, a.b)("h-6 !bg-media-background/45 !px-2 !py-0 !text-media-foreground enabled:hover:!bg-media-background/60", "rounded-full bg-media-background/45 font-medium text-media-foreground shadow-sm backdrop-blur-[12px]");
+                    P && I ? e = (0, a.b)("group/gallery-action !bg-transparent !p-0 !text-media-foreground enabled:hover:!bg-transparent", C && "relative shrink-0 !border-0 [&>[data-loading-indicator]]:absolute [&>[data-loading-indicator]]:inset-0 [&>[data-loading-indicator]]:m-auto", "small" === k ? "size-9" : "size-10") : P && (e = (0, a.b)("!bg-media-background/45 !px-3 !py-0 font-medium !text-media-foreground enabled:hover:!bg-media-background/60 focus:!bg-media-background/60", M, "small" === k ? "h-9" : "h-10")), g = i.a, h = o, b = "secondary", v = P ? "full" : "default", y = P ? "default" : "icon", m = (0, a.b)(e, r), _[9] = M, _[10] = r, _[11] = k, _[12] = I, _[13] = P, _[14] = C, _[15] = o, _[16] = g, _[17] = m, _[18] = h, _[19] = b, _[20] = v, _[21] = y
+                } else g = _[16], m = _[17], h = _[18], b = _[19], v = _[20], y = _[21];
+                return _[22] !== M || _[23] !== t || _[24] !== I || _[25] !== P || _[26] !== C || _[27] !== S ? (x = P && I ? (0, n.jsx)("span", {
+                    className: (0, a.b)("flex size-9 items-center justify-center", C ? "rounded-none bg-transparent group-hover/gallery-action:bg-media-background/25 group-focus/gallery-action:bg-media-background/25" : "rounded-full bg-media-background/45 group-hover/gallery-action:bg-media-background/60 group-focus/gallery-action:bg-media-background/60", !C && M),
+                    children: S ? null : t
+                }) : t, _[22] = M, _[23] = t, _[24] = I, _[25] = P, _[26] = C, _[27] = S, _[28] = x) : x = _[28], _[29] !== g || _[30] !== S || _[31] !== m || _[32] !== x || _[33] !== h || _[34] !== b || _[35] !== v || _[36] !== y ? (w = (0, n.jsx)(g, {
+                    ...h,
+                    color: b,
+                    radius: v,
+                    size: y,
+                    className: m,
+                    loading: S,
+                    onPointerUp: s,
+                    children: x
+                }), _[29] = g, _[30] = S, _[31] = m, _[32] = x, _[33] = h, _[34] = b, _[35] = v, _[36] = y, _[37] = w) : w = _[37], w
+            },
+            b: function(e) {
+                let t, r, i, s, u = (0, l.c)(8);
+                return u[0] !== e ? ({
+                    className: t,
+                    ...r
+                } = e, u[0] = e, u[1] = t, u[2] = r) : (t = u[1], r = u[2]), u[3] !== t ? (i = (0, a.b)("overflow-hidden rounded-full bg-transparent group-focus-within/generated-image-preview:bg-media-background/45 group-focus-within/generated-image-preview:backdrop-blur-md group-focus-within/search-image:bg-media-background/45 group-focus-within/search-image:backdrop-blur-md group-hover/generated-image-preview:bg-media-background/45 group-hover/generated-image-preview:backdrop-blur-md group-hover/search-image:bg-media-background/45 group-hover/search-image:backdrop-blur-md has-[[data-saved=true]]:bg-media-background/45 has-[[data-saved=true]]:backdrop-blur-md has-[[data-state=open]]:bg-media-background/45 has-[[data-state=open]]:backdrop-blur-md pointer-coarse:bg-media-background/45 pointer-coarse:backdrop-blur-md [@media(hover:none)]:bg-media-background/45 [@media(hover:none)]:backdrop-blur-md", t), u[3] = t, u[4] = i) : i = u[4], u[5] !== r || u[6] !== i ? (s = (0, n.jsx)(o.a, {
+                    ...r,
+                    className: i
+                }), u[5] = r, u[6] = i, u[7] = s) : s = u[7], s
+            }
+        })
+    }),
+    SUhA: (function(e, t, r) {
+        var n = r("QosV"),
+            l = r("irkb"),
+            a = r("BolX"),
+            i = r("zd8w"),
+            o = r("tl5a"),
+            s = r("CBsD"),
+            u = r("kfGJ"),
+            d = r("gTKF"),
+            c = r("zHp1");
+        r.d(t, {}, {
+            a: function(e) {
+                let t, r, f, p, g, m, h, b, v = (0, n.c)(38),
+                    {
+                        src: y,
+                        conversationId: x,
+                        hostId: w,
+                        imageAssetResolver: _,
+                        shouldLoadFileDataUrl: j
+                    } = e,
+                    k = (0, l.c)(),
+                    I = (0, a.x)(o.E, x),
+                    C = w ?? I ?? u.a,
+                    S = (0, u.c)(C);
+                v[0] !== x ? (t = null == x ? null : {
+                    kind: "app-server",
+                    conversationId: x
+                }, v[0] = x, v[1] = t) : t = v[1];
+                let P = (0, a.x)(d.threadExecutorTargetByThread$, t),
+                    M = P?.hostId === C ? P.environmentId : void 0,
+                    [A, N] = (0, i.useState)(null);
+                v[2] !== y ? (r = y.trim(), v[2] = y, v[3] = r) : r = v[3];
+                let E = r.length > 0,
+                    T = E && (0, c.h)(y) ? y : "",
+                    {
+                        dataUrl: F,
+                        src: B,
+                        isLoading: z,
+                        isError: q,
+                        loadSource: L,
+                        loadTiming: D,
+                        imageCacheHit: R,
+                        isShowingCachedImage: U,
+                        imageCheck: G,
+                        refetch: O,
+                        deleted: H
+                    } = (0, c.k)(T, _);
+                v[4] !== E || v[5] !== S.id || v[6] !== S.kind || v[7] !== C || v[8] !== y ? (f = E ? (0, s.b)(y) : null, "local" === S.kind && S.id, p = null, v[4] = E, v[5] = S.id, v[6] = S.kind, v[7] = C, v[8] = y, v[9] = f, v[10] = p) : (f = v[9], p = v[10]);
+                let W = p,
+                    K = A?.src === y && A.environmentId === M ? A : null,
+                    Q = K?.dataUrl ?? null,
+                    V = E ? B ?? W ?? (null != f || T ? Q : y) : null;
+                v[11] !== f || v[12] !== x || v[13] !== W || v[14] !== M || v[15] !== C || v[16] !== k || v[17] !== j || v[18] !== y ? (g = () => {
+                    if (null == f || null != W && !j) return;
+                    let e = !1;
+                    return N({
+                        src: y,
+                        dataUrl: null,
+                        environmentId: M,
+                        isLoading: !0
+                    }), (0, s.e)(f, C, k, void 0, x, M).then(t => {
+                        e || N({
+                            src: y,
+                            dataUrl: t,
+                            environmentId: M,
+                            isLoading: !1
+                        })
+                    }), () => {
+                        e = !0
+                    }
+                }, m = [f, x, W, M, C, k, j, y], v[11] = f, v[12] = x, v[13] = W, v[14] = M, v[15] = C, v[16] = k, v[17] = j, v[18] = y, v[19] = g, v[20] = m) : (g = v[19], m = v[20]), (0, i.useEffect)(g, m), v[21] !== F || v[22] !== Q || v[23] !== y ? (h = F ?? Q ?? (y.startsWith("data:image/") ? y : null), v[21] = F, v[22] = Q, v[23] = y, v[24] = h) : h = v[24];
+                let $ = F ?? Q ?? V,
+                    X = z || null != f && null == W && (null == K || K.isLoading),
+                    J = !!T && q;
+                return v[25] !== H || v[26] !== R || v[27] !== G || v[28] !== U || v[29] !== L || v[30] !== D || v[31] !== V || v[32] !== O || v[33] !== h || v[34] !== $ || v[35] !== X || v[36] !== J ? (b = {
+                    dataUrl: h,
+                    previewSrc: V,
+                    downloadSrc: $,
+                    isLoading: X,
+                    isError: J,
+                    loadSource: L,
+                    loadTiming: D,
+                    imageCacheHit: R,
+                    isShowingCachedImage: U,
+                    imageCheck: G,
+                    refetch: O,
+                    deleted: H
+                }, v[25] = H, v[26] = R, v[27] = G, v[28] = U, v[29] = L, v[30] = D, v[31] = V, v[32] = O, v[33] = h, v[34] = $, v[35] = X, v[36] = J, v[37] = b) : b = v[37], b
+            }
+        })
+    }),
+    jo5I: (function(e, t, r) {
+        r.d(t, {
+            a: () => C
+        });
+        var n = r("ABep"),
+            l = r("QosV"),
+            a = r("slpy"),
+            i = r("on57"),
+            o = r("BolX"),
+            s = r("zd8w"),
+            u = r("Wf1j"),
+            d = r("oyxz"),
+            c = r("Sm6l"),
+            f = r("bqtn"),
+            p = r("HOLv"),
+            g = r("bf6R"),
+            m = r("Yq7Q"),
+            h = r("jU86"),
+            b = r("cZk2");
+        let v = (0, r("Bbed").a)(async () => (await Promise.all([r.e(418851), r.e(109308), r.e(399565), r.e(257798), r.e(153380), r.e(617936), r.e(807489), r.e(337882), r.e(955979), r.e(646436), r.e(7078), r.e(200429), r.e(698524), r.e(956483), r.e(87162), r.e(396705), r.e(155568), r.e(731863), r.e(767086), r.e(76629), r.e(514085), r.e(204542), r.e(982651), r.e(673108), r.e(487481), r.e(229522), r.e(390575), r.e(353032), r.e(637885), r.e(284470), r.e(596051)]).then(r.bind(r, "drqx"))).CreateLibraryFolderDialog, {
+            suspendToParent: !0,
+            errorFallback: e => (0, n.jsx)(x, {
+                ...e,
+                failed: !0
+            })
+        });
+
+        function y(e) {
+            let t, r = (0, l.c)(3),
+                [a, i] = (0, s.useState)(!!e.open);
+            return e.open && !a && i(!0), r[0] !== a || r[1] !== e ? (t = a ? (0, n.jsx)(s.Suspense, {
+                fallback: (0, n.jsx)(x, {
+                    ...e
+                }),
+                children: (0, n.jsx)(v, {
+                    ...e
+                })
+            }) : null, r[0] = a, r[1] = e, r[2] = t) : t = r[2], t
+        }
+
+        function x(e) {
+            let t, r, a, i = (0, l.c)(10),
+                {
+                    open: o,
+                    onOpenChange: s,
+                    onCloseAutoFocus: u,
+                    failed: c
+                } = e,
+                f = void 0 !== c && c,
+                p = !!o;
+            return i[0] !== s ? (t = e => s?.(e), i[0] = s, i[1] = t) : t = i[1], i[2] !== f ? (r = f ? (0, n.jsx)(d.a, {
+                id: "library.favoriteFolder.createLoadError",
+                defaultMessage: "Couldn’t open New folder",
+                description: "Title when downloading the Favorites folder creation dialog failed after retrying"
+            }) : (0, n.jsx)(d.a, {
+                id: "library.favoriteFolder.createLoading",
+                defaultMessage: "Loading New folder…",
+                description: "Title while downloading the dismissible Favorites folder creation dialog"
+            }), i[2] = f, i[3] = r) : r = i[3], i[4] !== f || i[5] !== u || i[6] !== p || i[7] !== t || i[8] !== r ? (a = (0, n.jsx)(b.a, {
+                open: p,
+                onOpenChange: t,
+                onCloseAutoFocus: u,
+                failed: f,
+                title: r
+            }), i[4] = f, i[5] = u, i[6] = p, i[7] = t, i[8] = r, i[9] = a) : a = i[9], a
+        }
+        var w = r("IZUf"),
+            _ = r("lc3A"),
+            j = r("k2zB"),
+            k = r("gwSn");
+        let I = {
+            "entity-header": {
+                color: "ghostActive",
+                focusRing: "inset",
+                radius: "default",
+                size: "entityHeader"
+            },
+            "product-card": {
+                color: "outlineSurface",
+                radius: "full",
+                size: "menuRow",
+                uniform: !0
+            },
+            "map-card": {
+                color: "mapSurface",
+                radius: "full",
+                size: "inputIcon"
+            }
+        };
+
+        function C(e) {
+            let t, r, g, m, b, v, x, I, C, N, E, T, F, B, z, q, L, D, R, U, G, O, H, W, K, Q, V, $, X, J = (0, l.c)(90),
+                {
+                    className: Z,
+                    appearance: Y,
+                    joined: ee,
+                    visibility: et,
+                    isSaved: er,
+                    isBusy: en,
+                    isCheckingStatus: el,
+                    selectedFolderId: ea,
+                    onToggleFavorite: ei,
+                    onSelectFolder: eo
+                } = e,
+                es = void 0 === Y ? "media-overlay" : Y,
+                eu = void 0 !== ee && ee,
+                ed = (0, o.y)(h.c),
+                ec = (0, u.a)(),
+                [ef, ep] = (0, s.useState)(!1),
+                [eg, em] = (0, s.useState)(!1),
+                [eh, eb] = (0, s.useState)(!1),
+                [ev, ey] = (0, s.useState)(null),
+                ex = (0, s.useRef)(null),
+                ew = (0, s.useRef)(null),
+                e_ = en || el;
+            J[0] !== ec ? (t = ec.formatMessage({
+                id: "library.favoriteFolder.create",
+                defaultMessage: "Create folder",
+                description: "Button that opens the Library folder creation dialog for a saved item"
+            }), J[0] = ec, J[1] = t) : t = J[1];
+            let ej = t;
+            if (el) {
+                let e;
+                J[2] !== ec ? (e = ec.formatMessage({
+                    id: "library.favoriteFolder.checking",
+                    defaultMessage: "Checking Favorites status",
+                    description: "Accessible status for a bookmark while checking whether the item is already saved"
+                }), J[2] = ec, J[3] = e) : e = J[3], r = e
+            } else if (er) {
+                let e;
+                J[4] !== ec ? (e = ec.formatMessage({
+                    id: "library.favoriteFolder.remove",
+                    defaultMessage: "Remove from Favorites",
+                    description: "Accessible label and tooltip for removing an item from Favorites"
+                }), J[4] = ec, J[5] = e) : e = J[5], r = e
+            } else {
+                let e;
+                J[6] !== ec ? (e = ec.formatMessage({
+                    id: "library.favoriteFolder.add",
+                    defaultMessage: "Add to Favorites",
+                    description: "Accessible label for saving an item to Favorites and opening optional folder selection"
+                }), J[6] = ec, J[7] = e) : e = J[7], r = e
+            }
+            J[8] !== e_ || J[9] !== er || J[10] !== ei ? (g = () => {
+                e_ ? ep(!1) : (eb(!0), ep(!er), ei())
+            }, J[8] = e_, J[9] = er, J[10] = ei, J[11] = g) : g = J[11];
+            let ek = g;
+            J[12] !== es || J[13] !== Z || J[14] !== er || J[15] !== ef || J[16] !== et ? (m = (0, i.b)("select-none", "always" === et || "entity-header" === es || "map-card" === es || er || ef ? "pointer-events-auto" : ["pointer-events-none opacity-0 pointer-coarse:pointer-events-auto pointer-coarse:opacity-100", "product-card" === es ? "group-hover/product-card:pointer-events-auto group-hover/product-card:opacity-100 group-has-focus-visible/product-card:pointer-events-auto group-has-focus-visible/product-card:opacity-100" : "group-hover/generated-image-preview:pointer-events-auto group-hover/generated-image-preview:opacity-100 group-has-focus-visible/generated-image-preview:pointer-events-auto group-has-focus-visible/generated-image-preview:opacity-100 group-hover/search-image:pointer-events-auto group-hover/search-image:opacity-100 group-has-focus-visible/search-image:pointer-events-auto group-has-focus-visible/search-image:opacity-100"], Z), J[12] = es, J[13] = Z, J[14] = er, J[15] = ef, J[16] = et, J[17] = m) : m = J[17];
+            let eI = ef ? "open" : "closed";
+            J[18] !== eg ? (b = e => {
+                eg && e.preventDefault()
+            }, J[18] = eg, J[19] = b) : b = J[19], J[20] === Symbol.for("react.memo_cache_sentinel") ? (v = e => {
+                e || (ep(!1), eb(!0))
+            }, J[20] = v) : v = J[20];
+            let eC = !er || ef || eh;
+            J[21] === Symbol.for("react.memo_cache_sentinel") ? (x = e => {
+                ex.current = e, ey(e?.closest(".codex-dialog") ?? null)
+            }, J[21] = x) : x = J[21];
+            let eS = e_ || void 0,
+                eP = e_ && !ef || void 0,
+                eM = !er || ef ? "menu" : void 0,
+                eA = !er || ef ? ef : void 0;
+            J[22] === Symbol.for("react.memo_cache_sentinel") ? (I = () => eb(!1), C = () => eb(!1), N = () => eb(!1), J[22] = I, J[23] = C, J[24] = N) : (I = J[22], C = J[23], N = J[24]), J[25] !== ek ? (E = e => {
+                e.preventDefault(), e.stopPropagation(), ek()
+            }, J[25] = ek, J[26] = E) : E = J[26], J[27] !== e_ || J[28] !== er || J[29] !== ek ? (T = e => {
+                !e.nativeEvent.isComposing && ["Enter", " ", "ArrowDown"].includes(e.key) && (e.preventDefault(), e.stopPropagation(), "ArrowDown" !== e.key ? ek() : e_ || er || ep(!0))
+            }, J[27] = e_, J[28] = er, J[29] = ek, J[30] = T) : T = J[30];
+            let eN = er ? _.a : j.a;
+            return J[31] !== eN ? (F = (0, n.jsx)(p.a, {
+                asset: eN
+            }), J[31] = eN, J[32] = F) : F = J[32], J[33] !== es || J[34] !== er || J[35] !== eu || J[36] !== r || J[37] !== eS || J[38] !== eP || J[39] !== eM || J[40] !== eA || J[41] !== E || J[42] !== T || J[43] !== F ? (B = (0, n.jsx)(M, {
+                ref: x,
+                "aria-label": r,
+                "aria-busy": eS,
+                "aria-disabled": eP,
+                "aria-haspopup": eM,
+                "aria-expanded": eA,
+                "aria-pressed": er,
+                appearance: es,
+                joined: eu,
+                onPointerEnter: I,
+                onPointerLeave: C,
+                onBlur: N,
+                onPointerDown: P,
+                onClick: E,
+                onKeyDown: T,
+                children: F
+            }), J[33] = es, J[34] = er, J[35] = eu, J[36] = r, J[37] = eS, J[38] = eP, J[39] = eM, J[40] = eA, J[41] = E, J[42] = T, J[43] = F, J[44] = B) : B = J[44], J[45] !== r || J[46] !== B || J[47] !== eC ? (z = (0, n.jsx)(a.a, {
+                content: r,
+                disabled: eC,
+                children: B
+            }), J[45] = r, J[46] = B, J[47] = eC, J[48] = z) : z = J[48], J[49] === Symbol.for("react.memo_cache_sentinel") ? (q = (0, n.jsx)("span", {
+                className: "text-sm font-semibold",
+                children: (0, n.jsx)(d.a, {
+                    id: "library.favoriteFolder.moveToFolder",
+                    defaultMessage: "Move to folder",
+                    description: "Heading in the optional Library folder menu after saving an item to Favorites"
+                })
+            }), J[49] = q) : q = J[49], J[50] === Symbol.for("react.memo_cache_sentinel") ? (L = () => {
+                ep(!1), em(!0)
+            }, D = (0, n.jsx)(p.a, {
+                asset: k.a
+            }), J[50] = L, J[51] = D) : (L = J[50], D = J[51]), J[52] !== e_ || J[53] !== ej ? (R = (0, n.jsx)(c.a, {
+                ref: ew,
+                "aria-label": ej,
+                color: "ghostActive",
+                size: "menuRow",
+                uniform: !0,
+                disabled: e_,
+                onClick: L,
+                children: D
+            }), J[52] = e_, J[53] = ej, J[54] = R) : R = J[54], J[55] !== e_ || J[56] !== R ? (U = (0, n.jsx)(f.c.ItemSlot, {
+                asChild: !0,
+                disabled: e_,
+                children: R
+            }), J[55] = e_, J[56] = R, J[57] = U) : U = J[57], J[58] !== ej || J[59] !== U ? (G = (0, n.jsxs)("div", {
+                className: "flex h-9 shrink-0 items-center justify-between gap-2 px-3",
+                children: [q, (0, n.jsx)(a.a, {
+                    content: ej,
+                    children: U
+                })]
+            }), J[58] = ej, J[59] = U, J[60] = G) : G = J[60], J[61] === Symbol.for("react.memo_cache_sentinel") ? (O = () => ew.current?.focus(), J[61] = O) : O = J[61], J[62] !== e_ || J[63] !== eo || J[64] !== ea ? (H = (0, n.jsx)("div", {
+                className: "min-h-0 overflow-y-auto overscroll-contain pb-2",
+                children: (0, n.jsx)(A, {
+                    isBusy: e_,
+                    selectedFolderId: ea,
+                    onSelectFolder: eo,
+                    focusCreateFolder: O
+                })
+            }), J[62] = e_, J[63] = eo, J[64] = ea, J[65] = H) : H = J[65], J[66] !== ef || J[67] !== ev || J[68] !== z || J[69] !== G || J[70] !== H || J[71] !== b ? (W = (0, n.jsxs)(f.a, {
+                align: "end",
+                contentClassName: "pointer-events-auto",
+                contentWidth: "menuWide",
+                contentMaxHeight: "tall",
+                size: "select",
+                portalContainer: ev,
+                open: ef,
+                onCloseAutoFocus: b,
+                onOpenChange: v,
+                triggerButton: z,
+                children: [G, H]
+            }), J[66] = ef, J[67] = ev, J[68] = z, J[69] = G, J[70] = H, J[71] = b, J[72] = W) : W = J[72], J[73] !== er || J[74] !== W || J[75] !== m || J[76] !== eI ? (K = (0, n.jsx)("div", {
+                className: m,
+                "data-saved": er,
+                "data-state": eI,
+                children: W
+            }), J[73] = er, J[74] = W, J[75] = m, J[76] = eI, J[77] = K) : K = J[77], J[78] === Symbol.for("react.memo_cache_sentinel") ? (Q = e => {
+                e.preventDefault(), ex.current?.focus()
+            }, J[78] = Q) : Q = J[78], J[79] !== eo || J[80] !== ed.query ? (V = async e => {
+                await ed.query.cancel(w.a);
+                let t = !1;
+                ed.query.setData(w.a, r => (t = null == r, [...(r ?? []).filter(t => t.id !== e.id), {
+                    ...e,
+                    kind: "directory"
+                }].sort(S))), t && ed.query.invalidate(w.a), await eo(e, !0)
+            }, J[79] = eo, J[80] = ed.query, J[81] = V) : V = J[81], J[82] !== eg || J[83] !== ed.value.accountId || J[84] !== ed.value.userId || J[85] !== V ? ($ = (0, n.jsx)(y, {
+                open: eg,
+                accountId: ed.value.accountId,
+                userId: ed.value.userId,
+                directoryId: null,
+                onOpenChange: em,
+                onCloseAutoFocus: Q,
+                onCreated: V
+            }), J[82] = eg, J[83] = ed.value.accountId, J[84] = ed.value.userId, J[85] = V, J[86] = $) : $ = J[86], J[87] !== K || J[88] !== $ ? (X = (0, n.jsxs)(n.Fragment, {
+                children: [K, $]
+            }), J[87] = K, J[88] = $, J[89] = X) : X = J[89], X
+        }
+
+        function S(e, t) {
+            return e.name.localeCompare(t.name)
+        }
+
+        function P(e) {
+            e.preventDefault()
+        }
+
+        function M(e) {
+            let t, r, a, i, o = (0, l.c)(8);
+            return o[0] !== e ? ({
+                appearance: t,
+                joined: r,
+                ...a
+            } = e, o[0] = e, o[1] = t, o[2] = r, o[3] = a) : (t = o[1], r = o[2], a = o[3]), o[4] !== t || o[5] !== r || o[6] !== a ? (i = "media-overlay" === t ? (0, n.jsx)(m.a, {
+                ...a,
+                appearance: "blurred",
+                controlSize: "small",
+                iconOnly: !0,
+                joined: r
+            }) : (0, n.jsx)(c.a, {
+                ...a,
+                ...I[t]
+            }), o[4] = t, o[5] = r, o[6] = a, o[7] = i) : i = o[7], i
+        }
+
+        function A(e) {
+            let t, r, a = (0, l.c)(16),
+                {
+                    focusCreateFolder: i,
+                    isBusy: s,
+                    selectedFolderId: u,
+                    onSelectFolder: c
+                } = e,
+                {
+                    data: p,
+                    isPending: m,
+                    isError: h,
+                    refetch: b
+                } = (0, o.z)(w.a);
+            if (m) {
+                let e;
+                return a[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)(f.c.Message, {
+                    role: "status",
+                    children: (0, n.jsx)(d.a, {
+                        id: "library.favoriteFolder.loading",
+                        defaultMessage: "Loading folders…",
+                        description: "Status in the favorite folder menu while personal Library folders load"
+                    })
+                }), a[0] = e) : e = a[0], e
+            }
+            if (h && null == p) {
+                let e, t, r, l;
+                return a[1] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)(f.c.Message, {
+                    role: "alert",
+                    tone: "error",
+                    children: (0, n.jsx)(d.a, {
+                        id: "library.favoriteFolder.failed",
+                        defaultMessage: "Could not load folders",
+                        description: "Error in the favorite folder menu; the user can retry loading folders"
+                    })
+                }), a[1] = e) : e = a[1], a[2] !== i || a[3] !== b ? (t = e => {
+                    e.preventDefault(), i(), b()
+                }, a[2] = i, a[3] = b, a[4] = t) : t = a[4], a[5] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, n.jsx)(d.a, {
+                    id: "library.favoriteFolder.retry",
+                    defaultMessage: "Try again",
+                    description: "Action that retries loading Library folders while keeping the favorite folder menu open"
+                }), a[5] = r) : r = a[5], a[6] !== t ? (l = (0, n.jsxs)(n.Fragment, {
+                    children: [e, (0, n.jsx)(f.c.Item, {
+                        onSelect: t,
+                        children: r
+                    })]
+                }), a[6] = t, a[7] = l) : l = a[7], l
+            }
+            if (p?.length === 0) {
+                let e;
+                return a[8] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, n.jsx)(f.c.Message, {
+                    role: "status",
+                    children: (0, n.jsx)(d.a, {
+                        id: "library.favoriteFolder.empty",
+                        defaultMessage: "No folders created yet",
+                        description: "Empty state in the favorite folder menu; Create folder is still available"
+                    })
+                }), a[8] = e) : e = a[8], e
+            }
+            return a[9] !== p || a[10] !== s || a[11] !== c || a[12] !== u ? (t = p?.map(e => (0, n.jsx)(f.c.Item, {
+                role: "menuitemcheckbox",
+                "aria-checked": u === e.id,
+                isActive: u === e.id,
+                disabled: s,
+                onSelect: () => void c({
+                    id: e.id,
+                    name: e.name,
+                    parent_directory_id: e.parent_directory_id
+                }, !1),
+                children: (0, n.jsxs)("span", {
+                    className: "flex min-w-0 items-center gap-2",
+                    children: [(0, n.jsx)(N, {
+                        imageUrl: e.thumbnail_url ?? null
+                    }), (0, n.jsx)("span", {
+                        className: "line-clamp-2 min-w-0 flex-1 whitespace-normal",
+                        children: e.name
+                    }), (0, n.jsx)(g.Ub, {
+                        className: u === e.id ? void 0 : "invisible"
+                    })]
+                })
+            }, e.id)), a[9] = p, a[10] = s, a[11] = c, a[12] = u, a[13] = t) : t = a[13], a[14] !== t ? (r = (0, n.jsx)(n.Fragment, {
+                children: t
+            }), a[14] = t, a[15] = r) : r = a[15], r
+        }
+
+        function N(e) {
+            let t, r, a, o = (0, l.c)(8),
+                {
+                    imageUrl: u
+                } = e,
+                [d, c] = (0, s.useState)(null),
+                f = null != u && u !== d,
+                p = !f && "border border-default bg-surface";
+            return o[0] !== p ? (t = (0, i.b)("flex size-11 shrink-0 items-center justify-center overflow-hidden rounded-lg", p), o[0] = p, o[1] = t) : t = o[1], o[2] !== u || o[3] !== f ? (r = f ? (0, n.jsx)("img", {
+                alt: "",
+                className: "size-full object-cover",
+                loading: "lazy",
+                src: u,
+                onError: () => c(u)
+            }) : (0, n.jsx)(g.wd, {}), o[2] = u, o[3] = f, o[4] = r) : r = o[4], o[5] !== t || o[6] !== r ? (a = (0, n.jsx)("span", {
+                "aria-hidden": "true",
+                className: t,
+                children: r
+            }), o[5] = t, o[6] = r, o[7] = a) : a = o[7], a
+        }
+    }),
+    IZUf: (function(e, t, r) {
+        var n = r("BolX"),
+            l = r("Kwur"),
+            a = r("jU86");
+        let i = (0, n.r)(a.c, e => {
+            let {
+                scope: t
+            } = e;
+            return {
+                queryKey: ["library-api", t.value.accountId, t.value.userId, "favorite-folders"],
+                staleTime: 3e4,
+                queryFn: async e => {
+                    let {
+                        signal: r
+                    } = e;
+                    return (await l.Request.safeGet("/files/library/nodes", {
+                        additionalHeaders: {
+                            "ChatGPT-Account-ID": t.value.accountId
+                        },
+                        parameters: {
+                            query: {
+                                parent_directory_id: null,
+                                cursor: null,
+                                include_files: !1,
+                                hydrate_folder_thumbnails: !0
+                            }
+                        },
+                        signal: r
+                    })).items.filter(e => "directory" === e.kind && !0 !== e.is_root && null == e.direct_share_id && null == e.shared_by && "shared" !== e.access_kind && "mounted" !== e.access_kind && !e.id.startsWith("library:") && !e.id.startsWith("external-") && e.name.trim().length > 0).sort((e, t) => e.name.localeCompare(t.name))
+                }
+            }
+        });
+        r.d(t, {}, {
+            a: i,
+            b: async function(e, t, r) {
+                await l.Request.safePatch("/files/library/files/{library_file_id}/move", {
+                    additionalHeaders: {
+                        "ChatGPT-Account-ID": e.value.accountId
+                    },
+                    parameters: {
+                        path: {
+                            library_file_id: t
+                        }
+                    },
+                    requestBody: {
+                        directory_id: r
+                    }
+                }), await e.queryClient.invalidateQueries({
+                    queryKey: ["library-api", e.value.accountId, e.value.userId]
+                })
+            }
+        })
+    })
+};
