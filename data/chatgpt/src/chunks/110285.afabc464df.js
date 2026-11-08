@@ -1,1 +1,1439 @@
-export const __rspack_esm_ids=[110285];export const __webpack_modules__={pm4K:(function(e,t,a){var s=a("ABep");a("zd8w"),t.a=e=>(0,s.jsx)("svg",{width:20,height:20,viewBox:"0 0 20 20",fill:"none",xmlns:"http://www.w3.org/2000/svg",...e,children:(0,s.jsx)("path",{d:"M14.3349 13.3301V6.60645L5.47065 15.4707C5.21095 15.7304 4.78895 15.7304 4.52925 15.4707C4.26955 15.211 4.26955 14.789 4.52925 14.5293L13.3935 5.66504H6.66011C6.29284 5.66504 5.99507 5.36727 5.99507 5C5.99507 4.63273 6.29284 4.33496 6.66011 4.33496H14.9999L15.1337 4.34863C15.4369 4.41057 15.665 4.67857 15.665 5V13.3301C15.6649 13.6973 15.3672 13.9951 14.9999 13.9951C14.6327 13.9951 14.335 13.6973 14.3349 13.3301Z",fill:"currentColor"})})}),XK0l:(function(e,t,a){var s=a("ABep"),r=a("QosV");t.default=e=>{let t,a,n,o,i,l=(0,r.c)(6);return l[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,s.jsxs)("g",{filter:"url(#filter0_d_8150_6803)",children:[(0,s.jsx)("mask",{id:"path-1-inside-1_8150_6803",fill:"white",children:(0,s.jsx)("path",{fillRule:"evenodd",clipRule:"evenodd",d:"M23 7.85169C23 7.59052 23.0001 7.32933 22.9985 7.06813C22.9972 6.84811 22.9947 6.62813 22.9887 6.40822C22.9758 5.92889 22.9475 5.44545 22.8622 4.97147C22.7758 4.49065 22.6346 4.04314 22.4121 3.60627C22.1934 3.17687 21.9077 2.78394 21.5668 2.44329C21.226 2.10264 20.833 1.81712 20.4034 1.59854C19.9661 1.376 19.5181 1.23487 19.0367 1.14845C18.5627 1.06333 18.0791 1.03511 17.5998 1.02216C17.3797 1.01621 17.1597 1.0137 16.9395 1.01233C16.6782 1.01073 16.4169 1.01087 16.1555 1.01087L13.1213 1H10.8519L7.87129 1.01087C7.60946 1.01087 7.34762 1.01073 7.08578 1.01233C6.8652 1.0137 6.64472 1.01621 6.42421 1.02216C5.94377 1.03511 5.45911 1.06336 4.98395 1.14858C4.50195 1.23498 4.05331 1.37605 3.61539 1.59843C3.18493 1.81704 2.79104 2.10259 2.44951 2.44329C2.10803 2.78392 1.82179 3.17676 1.60267 3.60608C1.37958 4.04317 1.23813 4.49094 1.15146 4.97203C1.06613 5.44583 1.03786 5.9291 1.02486 6.40822C1.01893 6.62816 1.01637 6.84813 1.01503 7.06813C1.01343 7.32936 1 7.65383 1 7.91502L1.00008 10.8543L1 13.148L1.01356 16.1497C1.01356 16.4113 1.01346 16.6728 1.01503 16.9344C1.01637 17.1547 1.01893 17.375 1.02488 17.5952C1.03786 18.0751 1.06619 18.5593 1.1516 19.0339C1.23823 19.5154 1.37966 19.9635 1.60257 20.4009C1.82171 20.831 2.108 21.2244 2.44951 21.5655C2.79101 21.9067 3.18479 22.1925 3.61518 22.4114C4.05336 22.6343 4.50222 22.7756 4.98451 22.8621C5.45945 22.9474 5.94396 22.9757 6.42421 22.9886C6.64472 22.9946 6.86523 22.9971 7.08581 22.9984C7.34765 23 7.60946 22.9999 7.87129 22.9999L10.8788 23H13.1538L16.1555 22.9999C16.4169 22.9999 16.6782 23 16.9395 22.9984C17.1597 22.9971 17.3797 22.9946 17.5998 22.9886C18.0793 22.9756 18.5631 22.9473 19.0373 22.862C19.5184 22.7755 19.9661 22.6342 20.4032 22.4115C20.8329 22.1927 21.226 21.9067 21.5668 21.5655C21.9076 21.2244 22.1933 20.8311 22.412 20.4011C22.6347 19.9635 22.7758 19.5151 22.8623 19.0333C22.9475 18.5589 22.9758 18.075 22.9887 17.5952C22.9947 17.3749 22.9972 17.1547 22.9985 16.9344C23.0001 16.6728 23 16.4113 23 16.1497C23 16.1497 22.9998 13.201 22.9998 13.148V10.8519C22.9998 10.8128 23 7.85169 23 7.85169Z"})}),(0,s.jsx)("path",{fillRule:"evenodd",clipRule:"evenodd",d:"M23 7.85169C23 7.59052 23.0001 7.32933 22.9985 7.06813C22.9972 6.84811 22.9947 6.62813 22.9887 6.40822C22.9758 5.92889 22.9475 5.44545 22.8622 4.97147C22.7758 4.49065 22.6346 4.04314 22.4121 3.60627C22.1934 3.17687 21.9077 2.78394 21.5668 2.44329C21.226 2.10264 20.833 1.81712 20.4034 1.59854C19.9661 1.376 19.5181 1.23487 19.0367 1.14845C18.5627 1.06333 18.0791 1.03511 17.5998 1.02216C17.3797 1.01621 17.1597 1.0137 16.9395 1.01233C16.6782 1.01073 16.4169 1.01087 16.1555 1.01087L13.1213 1H10.8519L7.87129 1.01087C7.60946 1.01087 7.34762 1.01073 7.08578 1.01233C6.8652 1.0137 6.64472 1.01621 6.42421 1.02216C5.94377 1.03511 5.45911 1.06336 4.98395 1.14858C4.50195 1.23498 4.05331 1.37605 3.61539 1.59843C3.18493 1.81704 2.79104 2.10259 2.44951 2.44329C2.10803 2.78392 1.82179 3.17676 1.60267 3.60608C1.37958 4.04317 1.23813 4.49094 1.15146 4.97203C1.06613 5.44583 1.03786 5.9291 1.02486 6.40822C1.01893 6.62816 1.01637 6.84813 1.01503 7.06813C1.01343 7.32936 1 7.65383 1 7.91502L1.00008 10.8543L1 13.148L1.01356 16.1497C1.01356 16.4113 1.01346 16.6728 1.01503 16.9344C1.01637 17.1547 1.01893 17.375 1.02488 17.5952C1.03786 18.0751 1.06619 18.5593 1.1516 19.0339C1.23823 19.5154 1.37966 19.9635 1.60257 20.4009C1.82171 20.831 2.108 21.2244 2.44951 21.5655C2.79101 21.9067 3.18479 22.1925 3.61518 22.4114C4.05336 22.6343 4.50222 22.7756 4.98451 22.8621C5.45945 22.9474 5.94396 22.9757 6.42421 22.9886C6.64472 22.9946 6.86523 22.9971 7.08581 22.9984C7.34765 23 7.60946 22.9999 7.87129 22.9999L10.8788 23H13.1538L16.1555 22.9999C16.4169 22.9999 16.6782 23 16.9395 22.9984C17.1597 22.9971 17.3797 22.9946 17.5998 22.9886C18.0793 22.9756 18.5631 22.9473 19.0373 22.862C19.5184 22.7755 19.9661 22.6342 20.4032 22.4115C20.8329 22.1927 21.226 21.9067 21.5668 21.5655C21.9076 21.2244 22.1933 20.8311 22.412 20.4011C22.6347 19.9635 22.7758 19.5151 22.8623 19.0333C22.9475 18.5589 22.9758 18.075 22.9887 17.5952C22.9947 17.3749 22.9972 17.1547 22.9985 16.9344C23.0001 16.6728 23 16.4113 23 16.1497C23 16.1497 22.9998 13.201 22.9998 13.148V10.8519C22.9998 10.8128 23 7.85169 23 7.85169Z",fill:"url(#paint0_linear_8150_6803)"}),(0,s.jsx)("path",{d:"M22.9985 7.06813L22.4985 7.07111L22.4985 7.0712L22.9985 7.06813ZM22.9887 6.40822L22.4889 6.42169L22.4889 6.42181L22.9887 6.40822ZM22.8622 4.97147L22.3701 5.05995L22.3701 5.05997L22.8622 4.97147ZM22.4121 3.60627L22.8577 3.37937L22.8577 3.37933L22.4121 3.60627ZM21.5668 2.44329L21.2133 2.79693L21.2134 2.79697L21.5668 2.44329ZM20.4034 1.59854L20.6302 1.15291L20.6302 1.15291L20.4034 1.59854ZM19.0367 1.14845L18.9484 1.64058L18.9484 1.64058L19.0367 1.14845ZM17.5998 1.02216L17.5863 1.52198L17.5863 1.52198L17.5998 1.02216ZM16.9395 1.01233L16.9426 0.512344L16.9426 0.512344L16.9395 1.01233ZM16.1555 1.01087L16.1537 1.51087H16.1555V1.01087ZM13.1213 1L13.1231 0.5H13.1213V1ZM10.8519 1V0.499997L10.85 0.500003L10.8519 1ZM7.87129 1.01087V1.51087L7.87311 1.51086L7.87129 1.01087ZM7.08578 1.01233L7.08273 0.512344L7.0827 0.512344L7.08578 1.01233ZM6.42421 1.02216L6.43769 1.52198L6.43771 1.52198L6.42421 1.02216ZM4.98395 1.14858L5.07217 1.64074L5.07222 1.64073L4.98395 1.14858ZM3.61539 1.59843L3.389 1.15262L3.38899 1.15262L3.61539 1.59843ZM2.44951 2.44329L2.80262 2.79729L2.80263 2.79727L2.44951 2.44329ZM1.60267 3.60608L2.04802 3.83339L2.04802 3.83338L1.60267 3.60608ZM1.15146 4.97203L0.659383 4.88338L0.659379 4.8834L1.15146 4.97203ZM1.02486 6.40822L0.525041 6.39465L0.525038 6.39475L1.02486 6.40822ZM1.01503 7.06813L1.51502 7.0712L1.51502 7.07117L1.01503 7.06813ZM1 7.91502H0.5V7.91504L1 7.91502ZM1.00008 10.8543L1.50008 10.8543V10.8543L1.00008 10.8543ZM1 13.148L0.499995 13.148L0.500005 13.1503L1 13.148ZM1.01356 16.1497H1.51357L1.51356 16.1475L1.01356 16.1497ZM1.01503 16.9344L0.515041 16.9374L0.515041 16.9374L1.01503 16.9344ZM1.02488 17.5952L0.525066 17.6087L0.525066 17.6087L1.02488 17.5952ZM1.1516 19.0339L1.64369 18.9453L1.64369 18.9453L1.1516 19.0339ZM1.60257 20.4009L1.15707 20.628L1.15708 20.628L1.60257 20.4009ZM3.61518 22.4114L3.3885 22.8571L3.38853 22.8571L3.61518 22.4114ZM4.98451 22.8621L5.07284 22.37L5.07281 22.37L4.98451 22.8621ZM6.42421 22.9886L6.43771 22.4888H6.43769L6.42421 22.9886ZM7.08581 22.9984L7.08887 22.4984H7.08884L7.08581 22.9984ZM7.87129 22.9999L7.8713 22.4999H7.87129V22.9999ZM10.8788 23L10.8788 23.5H10.8788V23ZM13.1538 23V23.5H13.1539L13.1538 23ZM16.1555 22.9999V22.4999H16.1555L16.1555 22.9999ZM16.9395 22.9984L16.9365 22.4984H16.9365L16.9395 22.9984ZM17.5998 22.9886L17.6133 23.4884H17.6133L17.5998 22.9886ZM19.0373 22.862L19.1258 23.3541H19.1258L19.0373 22.862ZM20.4032 22.4115L20.1762 21.966L20.1762 21.966L20.4032 22.4115ZM21.5668 21.5655L21.2131 21.2121L21.2131 21.2121L21.5668 21.5655ZM22.412 20.4011L22.8577 20.6278L22.8577 20.6278L22.412 20.4011ZM22.8623 19.0333L23.3545 19.1217L23.3545 19.1217L22.8623 19.0333ZM22.9887 17.5952L22.4889 17.5817V17.5817L22.9887 17.5952ZM22.9985 16.9344L22.4985 16.9313L22.4985 16.9314L22.9985 16.9344ZM23 16.1497H23.5V16.1497L23 16.1497ZM23 7.85169H23.5C23.5 7.59099 23.5001 7.32812 23.4985 7.06507L22.9985 7.06813L22.4985 7.0712C22.5001 7.33054 22.5 7.59006 22.5 7.85169H23ZM22.9985 7.06813L23.4985 7.06516C23.4972 6.84347 23.4946 6.61956 23.4885 6.39462L22.9887 6.40822L22.4889 6.42181C22.4947 6.63671 22.4972 6.85274 22.4985 7.07111L22.9985 7.06813ZM22.9887 6.40822L23.4885 6.39474C23.4753 5.90713 23.4463 5.39412 23.3543 4.88296L22.8622 4.97147L22.3701 5.05997C22.4487 5.49679 22.4762 5.95065 22.4889 6.42169L22.9887 6.40822ZM22.8622 4.97147L23.3543 4.88299C23.2604 4.36025 23.1051 3.86518 22.8577 3.37937L22.4121 3.60627L21.9666 3.83317C22.1641 4.22111 22.2912 4.62104 22.3701 5.05995L22.8622 4.97147ZM22.4121 3.60627L22.8577 3.37933C22.615 2.90303 22.2982 2.46734 21.9202 2.08961L21.5668 2.44329L21.2134 2.79697C21.5172 3.10054 21.7718 3.45071 21.9666 3.8332L22.4121 3.60627ZM21.5668 2.44329L21.9203 2.08966C21.5424 1.71195 21.1066 1.39536 20.6302 1.15291L20.4034 1.59854L20.1766 2.04416C20.5593 2.23888 20.9096 2.49333 21.2133 2.79693L21.5668 2.44329ZM20.4034 1.59854L20.6302 1.15291C20.1439 0.905457 19.6483 0.750255 19.1251 0.656315L19.0367 1.14845L18.9484 1.64058C19.3879 1.71949 19.7883 1.84654 20.1766 2.04416L20.4034 1.59854ZM19.0367 1.14845L19.1251 0.656316C18.614 0.564535 18.1009 0.535513 17.6133 0.522342L17.5998 1.02216L17.5863 1.52198C18.0574 1.5347 18.5115 1.56212 18.9484 1.64058L19.0367 1.14845ZM17.5998 1.02216L17.6133 0.522343C17.3883 0.516254 17.1643 0.513716 16.9426 0.512344L16.9395 1.01233L16.9364 1.51233C17.155 1.51368 17.3712 1.51616 17.5863 1.52198L17.5998 1.02216ZM16.9395 1.01233L16.9426 0.512344C16.6794 0.510731 16.4163 0.510866 16.1555 0.510866V1.01087V1.51087C16.4174 1.51087 16.677 1.51074 16.9365 1.51233L16.9395 1.01233ZM16.1555 1.01087L16.1573 0.51087L13.1231 0.500003L13.1213 1L13.1195 1.5L16.1537 1.51086L16.1555 1.01087ZM13.1213 1V0.5H10.8519V1V1.5H13.1213V1ZM10.8519 1L10.85 0.500003L7.86947 0.51087L7.87129 1.01087L7.87311 1.51086L10.8537 1.5L10.8519 1ZM7.87129 1.01087V0.510866C7.60997 0.510866 7.34642 0.510731 7.08273 0.512344L7.08578 1.01233L7.08884 1.51233C7.34882 1.51074 7.60894 1.51087 7.87129 1.51087V1.01087ZM7.08578 1.01233L7.0827 0.512344C6.86059 0.513715 6.63621 0.516254 6.41072 0.522342L6.42421 1.02216L6.43771 1.52198C6.65323 1.51616 6.86981 1.51368 7.08887 1.51233L7.08578 1.01233ZM6.42421 1.02216L6.41074 0.522342C5.92208 0.535512 5.40792 0.564559 4.89568 0.656433L4.98395 1.14858L5.07222 1.64073C5.51029 1.56215 5.96546 1.53471 6.43769 1.52198L6.42421 1.02216ZM4.98395 1.14858L4.89573 0.656424C4.37197 0.750308 3.87583 0.905404 3.389 1.15262L3.61539 1.59843L3.84178 2.04424C4.23078 1.84671 4.63194 1.71965 5.07217 1.64074L4.98395 1.14858ZM3.61539 1.59843L3.38899 1.15262C2.91168 1.39503 2.47503 1.71157 2.09638 2.08931L2.44951 2.44329L2.80263 2.79727C3.10704 2.4936 3.45817 2.23905 3.84179 2.04424L3.61539 1.59843ZM2.44951 2.44329L2.0964 2.0893C1.71781 2.46693 1.40041 2.90251 1.15732 3.37878L1.60267 3.60608L2.04802 3.83338C2.24317 3.45102 2.49825 3.1009 2.80262 2.79729L2.44951 2.44329ZM1.60267 3.60608L1.15733 3.37877C0.909192 3.86492 0.753601 4.36036 0.659383 4.88338L1.15146 4.97203L1.64354 5.06067C1.72265 4.62151 1.84996 4.22142 2.04802 3.83339L1.60267 3.60608ZM1.15146 4.97203L0.659379 4.8834C0.567345 5.39443 0.538266 5.90732 0.525041 6.39465L1.02486 6.40822L1.52467 6.42178C1.53745 5.95088 1.56492 5.49722 1.64355 5.06065L1.15146 4.97203ZM1.02486 6.40822L0.525038 6.39475C0.518979 6.6196 0.516386 6.84343 0.515041 7.0651L1.01503 7.06813L1.51502 7.07117C1.51635 6.85284 1.51888 6.63672 1.52468 6.42168L1.02486 6.40822ZM1.01503 7.06813L0.515041 7.06507C0.514274 7.19006 0.510666 7.33114 0.507063 7.47944C0.503525 7.62505 0.5 7.77741 0.5 7.91502H1H1.5C1.5 7.79144 1.50319 7.65097 1.50677 7.50373C1.51028 7.35919 1.51419 7.20742 1.51502 7.0712L1.01503 7.06813ZM1 7.91502L0.5 7.91504L0.50008 10.8543L1.00008 10.8543L1.50008 10.8543L1.5 7.91501L1 7.91502ZM1.00008 10.8543L0.50008 10.8543L0.5 13.148L1 13.148L1.5 13.148L1.50008 10.8543L1.00008 10.8543ZM1 13.148L0.500005 13.1503L0.513568 16.152L1.01356 16.1497L1.51356 16.1475L1.49999 13.1458L1 13.148ZM1.01356 16.1497H0.513563C0.513563 16.4108 0.513454 16.674 0.515041 16.9374L1.01503 16.9344L1.51502 16.9314C1.51346 16.6716 1.51356 16.4118 1.51356 16.1497H1.01356ZM1.01503 16.9344L0.515041 16.9374C0.516386 17.1594 0.518979 17.3835 0.525066 17.6087L1.02488 17.5952L1.5247 17.5817C1.51888 17.3664 1.51635 17.15 1.51502 16.9313L1.01503 16.9344ZM1.02488 17.5952L0.525066 17.6087C0.538265 18.0969 0.567398 18.6106 0.6595 19.1225L1.1516 19.0339L1.64369 18.9453C1.56497 18.5079 1.53745 18.0534 1.5247 17.5817L1.02488 17.5952ZM1.1516 19.0339L0.6595 19.1225C0.753676 19.6458 0.909205 20.1415 1.15707 20.628L1.60257 20.4009L2.04806 20.1739C1.85011 19.7855 1.72279 19.3849 1.64369 18.9453L1.1516 19.0339ZM1.60257 20.4009L1.15708 20.628C1.40015 21.1049 1.71757 21.5411 2.09615 21.9193L2.44951 21.5655L2.80287 21.2118C2.49843 20.9077 2.24327 20.557 2.04805 20.1739L1.60257 20.4009ZM2.44951 21.5655L2.09615 21.9193C2.47473 22.2974 2.91125 22.6144 3.3885 22.8571L3.61518 22.4114L3.84185 21.9658C3.45834 21.7707 3.10729 21.5159 2.80287 21.2118L2.44951 21.5655ZM3.61518 22.4114L3.38853 22.8571C3.87567 23.1049 4.37209 23.2602 4.89621 23.3543L4.98451 22.8621L5.07281 22.37C4.63235 22.291 4.23104 22.1637 3.84182 21.9658L3.61518 22.4114ZM4.98451 22.8621L4.89617 23.3543C5.40822 23.4462 5.92224 23.4752 6.41074 23.4884L6.42421 22.9886L6.43769 22.4888C5.96567 22.4761 5.51068 22.4486 5.07284 22.37L4.98451 22.8621ZM6.42421 22.9886L6.41072 23.4884C6.63619 23.4945 6.86058 23.4971 7.08279 23.4984L7.08581 22.9984L7.08884 22.4984C6.86987 22.4971 6.65325 22.4946 6.43771 22.4888L6.42421 22.9886ZM7.08581 22.9984L7.08275 23.4984C7.34644 23.5 7.60992 23.4999 7.87129 23.4999V22.9999V22.4999C7.60899 22.4999 7.34886 22.5 7.08887 22.4984L7.08581 22.9984ZM7.87129 22.9999L7.87128 23.4999L10.8788 23.5L10.8788 23L10.8788 22.5L7.8713 22.4999L7.87129 22.9999ZM10.8788 23V23.5H13.1538V23V22.5H10.8788V23ZM13.1538 23L13.1539 23.5L16.1556 23.4999L16.1555 22.9999L16.1555 22.4999L13.1538 22.5L13.1538 23ZM16.1555 22.9999V23.4999C16.4163 23.4999 16.6794 23.5 16.9426 23.4984L16.9395 22.9984L16.9365 22.4984C16.677 22.5 16.4174 22.4999 16.1555 22.4999V22.9999ZM16.9395 22.9984L16.9426 23.4984C17.1643 23.4971 17.3883 23.4945 17.6133 23.4884L17.5998 22.9886L17.5863 22.4888C17.3712 22.4946 17.155 22.4971 16.9365 22.4984L16.9395 22.9984ZM17.5998 22.9886L17.6133 23.4884C18.1011 23.4752 18.6144 23.4461 19.1258 23.3541L19.0373 22.862L18.9488 22.3699C18.5117 22.4485 18.0575 22.476 17.5863 22.4888L17.5998 22.9886ZM19.0373 22.862L19.1258 23.3541C19.6488 23.2601 20.1441 23.1047 20.6302 22.857L20.4032 22.4115L20.1762 21.966C19.7881 22.1638 19.388 22.2909 18.9488 22.3699L19.0373 22.862ZM20.4032 22.4115L20.6302 22.857C21.1068 22.6143 21.5426 22.2972 21.9205 21.9189L21.5668 21.5655L21.2131 21.2121C20.9093 21.5162 20.5589 21.771 20.1762 21.966L20.4032 22.4115ZM21.5668 21.5655L21.9205 21.9189C22.2984 21.5408 22.6151 21.1047 22.8577 20.6278L22.412 20.4011L21.9664 20.1744C21.7715 20.5575 21.5169 20.9081 21.2131 21.2121L21.5668 21.5655ZM22.412 20.4011L22.8577 20.6278C23.1052 20.1412 23.2605 19.6453 23.3545 19.1217L22.8623 19.0333L22.3702 18.945C22.2912 19.385 22.1641 19.7858 21.9664 20.1744L22.412 20.4011ZM22.8623 19.0333L23.3545 19.1217C23.4463 18.6101 23.4754 18.0967 23.4885 17.6087L22.9887 17.5952L22.4889 17.5817C22.4762 18.0532 22.4487 18.5077 22.3702 18.945L22.8623 19.0333ZM22.9887 17.5952L23.4885 17.6087C23.4946 17.3835 23.4972 17.1593 23.4985 16.9373L22.9985 16.9344L22.4985 16.9314C22.4972 17.15 22.4947 17.3664 22.4889 17.5817L22.9887 17.5952ZM22.9985 16.9344L23.4985 16.9375C23.5001 16.6741 23.5 16.4108 23.5 16.1497H23H22.5C22.5 16.4118 22.5001 16.6716 22.4985 16.9313L22.9985 16.9344ZM23 16.1497C23.5 16.1497 23.5 16.1497 23.5 16.1497C23.5 16.1497 23.5 16.1496 23.5 16.1496C23.5 16.1495 23.5 16.1494 23.5 16.1492C23.5 16.1488 23.5 16.1483 23.5 16.1476C23.5 16.1462 23.5 16.1441 23.5 16.1413C23.5 16.1357 23.5 16.1274 23.5 16.1166C23.5 16.095 23.5 16.0633 23.5 16.0229C23.5 15.9422 23.5 15.8268 23.5 15.6882C23.5 15.4109 23.4999 15.0406 23.4999 14.6687C23.4999 13.9249 23.4998 13.1745 23.4998 13.148H22.9998H22.4998C22.4998 13.1745 22.4999 13.925 22.4999 14.6688C22.4999 15.0407 22.5 15.4109 22.5 15.6882C22.5 15.8268 22.5 15.9422 22.5 16.023C22.5 16.0633 22.5 16.095 22.5 16.1166C22.5 16.1275 22.5 16.1357 22.5 16.1413C22.5 16.1441 22.5 16.1462 22.5 16.1476C22.5 16.1483 22.5 16.1489 22.5 16.1492C22.5 16.1494 22.5 16.1496 22.5 16.1496C22.5 16.1497 22.5 16.1497 22.5 16.1497C22.5 16.1498 22.5 16.1498 23 16.1497ZM22.9998 13.148H23.4998V10.8519H22.9998H22.4998V13.148H22.9998ZM22.9998 10.8519H23.4998C23.4998 10.8324 23.4999 10.0823 23.4999 9.33715C23.4999 8.96457 23.5 8.59321 23.5 8.315C23.5 8.17589 23.5 8.06007 23.5 7.97903C23.5 7.93851 23.5 7.90668 23.5 7.88498C23.5 7.87414 23.5 7.86582 23.5 7.86022C23.5 7.85741 23.5 7.85529 23.5 7.85387C23.5 7.85316 23.5 7.85262 23.5 7.85226C23.5 7.85208 23.5 7.85195 23.5 7.85186C23.5 7.85181 23.5 7.85178 23.5 7.85175C23.5 7.85173 23.5 7.85172 23 7.85169C22.5 7.85167 22.5 7.85168 22.5 7.8517C22.5 7.85172 22.5 7.85176 22.5 7.8518C22.5 7.85189 22.5 7.85203 22.5 7.85221C22.5 7.85256 22.5 7.8531 22.5 7.85381C22.5 7.85523 22.5 7.85736 22.5 7.86016C22.5 7.86576 22.5 7.87408 22.5 7.88493C22.5 7.90663 22.5 7.93846 22.5 7.97898C22.5 8.06002 22.5 8.17584 22.5 8.31495C22.5 8.59316 22.4999 8.96451 22.4999 9.3371C22.4999 10.0822 22.4998 10.8323 22.4998 10.8519H22.9998Z",fill:"#C0CBDA",fillOpacity:.8,mask:"url(#path-1-inside-1_8150_6803)"})]}),a=(0,s.jsx)("path",{d:"M13.2038 20C12.6705 20 12.1638 19.8987 11.6838 19.696C11.2038 19.4933 10.7772 19.2107 10.4038 18.848C9.9985 18.9867 9.57716 19.056 9.13983 19.056C8.42516 19.056 7.76383 18.88 7.15583 18.528C6.54783 18.176 6.05716 17.696 5.68383 17.088C5.32116 16.48 5.13983 15.8027 5.13983 15.056C5.13983 14.7467 5.18249 14.4107 5.26783 14.048C4.84116 13.6533 4.51049 13.2 4.27583 12.688C4.04116 12.1653 3.92383 11.6213 3.92383 11.056C3.92383 10.48 4.04649 9.92533 4.29183 9.392C4.53716 8.85867 4.87849 8.4 5.31583 8.016C5.76383 7.62133 6.28116 7.34933 6.86783 7.2C6.98516 6.592 7.23049 6.048 7.60383 5.568C7.98783 5.07733 8.45716 4.69333 9.01183 4.416C9.56649 4.13867 10.1585 4 10.7878 4C11.3212 4 11.8278 4.10133 12.3078 4.304C12.7878 4.50667 13.2145 4.78933 13.5878 5.152C13.9932 5.01333 14.4145 4.944 14.8518 4.944C15.5665 4.944 16.2278 5.12 16.8358 5.472C17.4438 5.824 17.9292 6.304 18.2918 6.912C18.6652 7.52 18.8518 8.19733 18.8518 8.944C18.8518 9.25333 18.8092 9.58933 18.7238 9.952C19.1505 10.3467 19.4812 10.8053 19.7158 11.328C19.9505 11.84 20.0678 12.3787 20.0678 12.944C20.0678 13.52 19.9452 14.0747 19.6998 14.608C19.4545 15.1413 19.1078 15.6053 18.6598 16C18.2225 16.384 17.7105 16.6507 17.1238 16.8C17.0065 17.408 16.7558 17.952 16.3718 18.432C15.9985 18.9227 15.5345 19.3067 14.9798 19.584C14.4252 19.8613 13.8332 20 13.2038 20ZM9.28383 17.824C9.78516 17.824 10.2278 17.712 10.6118 17.488L13.5078 15.824C13.6252 15.7493 13.6838 15.648 13.6838 15.52V14.4L10.1158 16.448C9.78516 16.64 9.45449 16.64 9.12383 16.448L6.37183 14.864C6.37183 14.8747 6.37183 14.8907 6.37183 14.912C6.37183 14.9333 6.37183 14.96 6.37183 14.992C6.37183 15.5147 6.4945 15.9947 6.73983 16.432C6.99583 16.8587 7.34783 17.1947 7.79583 17.44C8.24383 17.696 8.73983 17.824 9.28383 17.824ZM9.42783 15.216C9.49183 15.2587 9.5505 15.28 9.60383 15.28C9.65716 15.2693 9.71583 15.248 9.77983 15.216L10.7558 14.672L7.20383 12.592C6.87316 12.4107 6.70783 12.1227 6.70783 11.728V8.576C6.23849 8.82133 5.86516 9.168 5.58783 9.616C5.32116 10.0533 5.18783 10.5387 5.18783 11.072C5.18783 11.5733 5.3105 12.0533 5.55583 12.512C5.81183 12.96 6.14249 13.3013 6.54783 13.536L9.42783 15.216ZM13.1878 18.752C13.7318 18.752 14.2225 18.6293 14.6598 18.384C15.0972 18.1387 15.4385 17.8027 15.6838 17.376C15.9398 16.9493 16.0678 16.4747 16.0678 15.952V12.624C16.0678 12.4853 16.0092 12.384 15.8918 12.32L14.9158 11.728V15.856C14.9158 16.2507 14.7505 16.5387 14.4198 16.72L11.6838 18.304C12.1532 18.6027 12.6545 18.752 13.1878 18.752ZM13.6838 13.008V10.992L12.0038 10.032L10.3078 10.992V13.008L12.0038 13.968L13.6838 13.008ZM9.07583 8.144C9.07583 7.74933 9.24116 7.46133 9.57183 7.28L12.3078 5.696C11.8385 5.39733 11.3372 5.248 10.8038 5.248C10.2705 5.248 9.78516 5.37067 9.34783 5.616C8.9105 5.86133 8.56383 6.19733 8.30783 6.624C8.0625 7.05067 7.93983 7.52533 7.93983 8.048V11.36C7.93983 11.488 7.9985 11.5947 8.11583 11.68L9.07583 12.272V8.144ZM17.2998 15.424C17.7585 15.1893 18.1212 14.848 18.3878 14.4C18.6652 13.952 18.8038 13.4613 18.8038 12.928C18.8038 12.4267 18.6758 11.952 18.4198 11.504C18.1745 11.0453 17.8492 10.6987 17.4438 10.464L14.5638 8.8C14.4998 8.75733 14.4412 8.74133 14.3878 8.752C14.3345 8.752 14.2758 8.768 14.2118 8.8L13.2358 9.328L16.8038 11.424C16.9745 11.52 17.0972 11.6373 17.1718 11.776C17.2572 11.904 17.2998 12.0693 17.2998 12.272V15.424ZM13.8758 7.52C14.2065 7.31733 14.5372 7.31733 14.8678 7.52L17.6198 9.136C17.6198 9.104 17.6198 9.072 17.6198 9.04C17.6198 8.54933 17.4972 8.08533 17.2518 7.648C17.0172 7.2 16.6758 6.84267 16.2278 6.576C15.7905 6.30933 15.2838 6.176 14.7078 6.176C14.2065 6.176 13.7638 6.288 13.3798 6.512L10.4838 8.176C10.3665 8.25067 10.3078 8.352 10.3078 8.48V9.6L13.8758 7.52Z",fill:"#2C3339"}),l[0]=t,l[1]=a):(t=l[0],a=l[1]),l[2]===Symbol.for("react.memo_cache_sentinel")?(n=(0,s.jsxs)("filter",{id:"filter0_d_8150_6803",x:.583333,y:1,width:22.8333,height:22.8333,filterUnits:"userSpaceOnUse",colorInterpolationFilters:"sRGB",children:[(0,s.jsx)("feFlood",{floodOpacity:0,result:"BackgroundImageFix"}),(0,s.jsx)("feColorMatrix",{in:"SourceAlpha",type:"matrix",values:"0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",result:"hardAlpha"}),(0,s.jsx)("feOffset",{dy:.416667}),(0,s.jsx)("feGaussianBlur",{stdDeviation:.208333}),(0,s.jsx)("feComposite",{in2:"hardAlpha",operator:"out"}),(0,s.jsx)("feColorMatrix",{type:"matrix",values:"0 0 0 0 0.172549 0 0 0 0 0.2 0 0 0 0 0.223529 0 0 0 0.36 0"}),(0,s.jsx)("feBlend",{mode:"normal",in2:"BackgroundImageFix",result:"effect1_dropShadow_8150_6803"}),(0,s.jsx)("feBlend",{mode:"normal",in:"SourceGraphic",in2:"effect1_dropShadow_8150_6803",result:"shape"})]}),l[2]=n):n=l[2],l[3]===Symbol.for("react.memo_cache_sentinel")?(o=(0,s.jsxs)("defs",{children:[n,(0,s.jsxs)("linearGradient",{id:"paint0_linear_8150_6803",x1:12,y1:1,x2:12,y2:23,gradientUnits:"userSpaceOnUse",children:[(0,s.jsx)("stop",{stopColor:"white"}),(0,s.jsx)("stop",{offset:1,stopColor:"#E2EAF3"})]})]}),l[3]=o):o=l[3],l[4]!==e?(i=(0,s.jsxs)("svg",{width:"1em",height:"1em",viewBox:"0 0 24 24",fill:"currentColor",...e,children:[t,a,o]}),l[4]=e,l[5]=i):i=l[5],i}}),taVj:(function(e,t,a){var s=a("ABep"),r=a("QosV"),n=a("oyxz"),o=a("Sm6l"),i=a("JNtf"),l=a("mUDD");a.d(t,{},{a:function(e){let t,a,c,d,u,m,p,h,C,L,f,g,x,b=(0,r.c)(34),{isPending:w,name:v,onCancel:M,onCloseAutoFocus:y,onConfirm:k,open:_}=e;b[0]!==y?(t={onCloseAutoFocus:e=>{null!=y&&(e.preventDefault(),y())}},b[0]=y,b[1]=t):t=b[1];let j=!w;return b[2]!==w||b[3]!==M?(a=e=>{e||w||M()},b[2]=w,b[3]=M,b[4]=a):a=b[4],b[5]!==w||b[6]!==k?(c=e=>{e.preventDefault(),w||k()},b[5]=w,b[6]=k,b[7]=c):c=b[7],b[8]!==v?(d=(0,s.jsx)(i.d,{children:(0,s.jsx)(n.a,{id:"inbox.automations.deleteConfirm.title",defaultMessage:"Delete {name}?",description:"Title for the delete automation confirmation dialog",values:{name:(0,s.jsx)("strong",{className:"font-semibold text-default",children:v})}})}),b[8]=v,b[9]=d):d=b[9],b[10]===Symbol.for("react.memo_cache_sentinel")?(u=(0,s.jsx)(i.c,{children:(0,s.jsx)(n.a,{id:"inbox.automations.deleteConfirm.descriptionNoPeriod",defaultMessage:"This will permanently delete the scheduled task and stop future runs",description:"Description for the delete scheduled task confirmation dialog"})}),b[10]=u):u=b[10],b[11]!==d?(m=(0,s.jsx)(l.e,{children:(0,s.jsx)(l.d,{title:d,subtitle:u})}),b[11]=d,b[12]=m):m=b[12],b[13]===Symbol.for("react.memo_cache_sentinel")?(p=(0,s.jsx)(n.a,{id:"inbox.automations.deleteConfirm.cancel",defaultMessage:"Cancel",description:"Cancel button label for delete automation confirmation dialog"}),b[13]=p):p=b[13],b[14]!==w||b[15]!==M?(h=(0,s.jsx)(o.a,{color:"outline",disabled:w,onClick:M,children:p}),b[14]=w,b[15]=M,b[16]=h):h=b[16],b[17]===Symbol.for("react.memo_cache_sentinel")?(C=(0,s.jsx)(n.a,{id:"inbox.automations.deleteConfirm.confirm",defaultMessage:"Delete scheduled task",description:"Confirm button label for delete scheduled task confirmation dialog"}),b[17]=C):C=b[17],b[18]!==w?(L=(0,s.jsx)(o.a,{color:"danger",loading:w,type:"submit",children:C}),b[18]=w,b[19]=L):L=b[19],b[20]!==L||b[21]!==h?(f=(0,s.jsx)(l.e,{children:(0,s.jsxs)(l.c,{children:[h,L]})}),b[20]=L,b[21]=h,b[22]=f):f=b[22],b[23]!==f||b[24]!==c||b[25]!==m?(g=(0,s.jsxs)(l.b,{as:"form",onSubmit:c,children:[m,f]}),b[23]=f,b[24]=c,b[25]=m,b[26]=g):g=b[26],b[27]!==w||b[28]!==_||b[29]!==t||b[30]!==g||b[31]!==j||b[32]!==a?(x=(0,s.jsx)(i.a,{open:_,contentProps:t,showDialogClose:j,shouldIgnoreClickOutside:w,onOpenChange:a,children:g}),b[27]=w,b[28]=_,b[29]=t,b[30]=g,b[31]=j,b[32]=a,b[33]=x):x=b[33],x}})}),ED7I:(function(e,t,a){var s=a("ABep"),r=a("QosV"),n=a("BolX"),o=a("zd8w"),i=a("Wf1j"),l=a("oyxz"),c=a("SGsN"),d=a("OWtl"),u=a("taVj"),m=a("TZBk"),p=a("fGpH"),h=a("Ro2M");a.d(t,{},{a:function(e){let t,a,C,L,f,g,x,b=(0,r.c)(54),{item:w,onDeleted:v,onDeleteRequested:M,onPaused:y,onResumed:k,onStatusChanged:_,onEdit:j,onOpenConversation:Z,trailingMenuItems:A,renderActions:S,status:D,statusMutation:T}=e,I=(0,n.y)(d.a),P=(0,i.a)(),V=(0,n.z)(T??h.u),H=(0,n.z)(h.s),N=(0,n.z)(h.m),B=(0,n.z)(h.r),[O,z]=(0,o.useState)(!1),{automation:E,teamId:W}=w;b[0]!==E?(t=(0,p.l)(E),b[0]=E,b[1]=t):t=b[1];let{canManage:G,canDelete:R}=t,F=G&&"local"!==E.executor;b[2]!==E||b[3]!==D?(a=D??(0,p.p)(E),b[2]=E,b[3]=D,b[4]=a):a=b[4];let K=a,U="completed"===K;b[5]!==E?(C=(0,p.m)(E),b[5]=E,b[6]=C):C=b[6];let X=(0,n.x)(h.j,C),q=V.isPending||H.isPending||N.isPending||B.isPending;if(!G&&!R||!F&&U&&!R)return null;b[7]!==E||b[8]!==P||b[9]!==y||b[10]!==k||b[11]!==_||b[12]!==I||b[13]!==V?(L=e=>{e&&(0,p.t)(E)||V.mutate({automationId:E.id,isEnabled:e},{onSuccess:t=>{_?.(t),e?k?.():y?.()},onError:e=>{I.get(c.f).danger(P.formatMessage({id:"inbox.automations.cloud.updateError",defaultMessage:"Could not update cloud scheduled task",description:"Toast title when updating a cloud scheduled task fails"}),{errorAnalytics:{toastId:"inbox.automations.cloud.updateError"},description:e instanceof Error?e.message:void 0})}})},b[7]=E,b[8]=P,b[9]=y,b[10]=k,b[11]=_,b[12]=I,b[13]=V,b[14]=L):L=b[14];let Q=L;if(b[15]!==E||b[16]!==R||b[17]!==G||b[18]!==F||b[19]!==U||b[20]!==q||b[21]!==M||b[22]!==j||b[23]!==Z||b[24]!==S||b[25]!==X||b[26]!==B||b[27]!==Q||b[28]!==K||b[29]!==W||b[30]!==A||b[31]!==V.isPending||b[32]!==V.variables?.automationId){let e,t,a;b[34]!==Q?(e=()=>Q(!1),b[34]=Q,b[35]=e):e=b[35],b[36]!==G||b[37]!==U||b[38]!==X?(t=G&&!U&&X?(0,s.jsx)(l.a,{...m.a.expiredResume}):void 0,b[36]=G,b[37]=U,b[38]=X,b[39]=t):t=b[39],b[40]!==Q?(a=()=>Q(!0),b[40]=Q,b[41]=a):a=b[41],f=S({deleteAction:R?{disabled:q,onSelect:M??(()=>z(!0))}:void 0,editAction:G&&!U&&null!=j?{disabled:q,onSelect:j}:void 0,isCompleted:U,isPaused:"paused"===K,isStatusPending:V.isPending&&V.variables?.automationId===E.id,openConversationAction:null==W&&R&&null!=Z?{disabled:q,onSelect:Z}:void 0,pauseAction:{disabled:!G||q,onSelect:e},pauseResumeInMenu:!0,resumeAction:{disabled:!G||q||X,disabledReason:t,onSelect:a},runNowAction:F?{disabled:q,tooltipText:(0,s.jsx)(l.a,{id:"inbox.automations.cloud.runNowTooltip",defaultMessage:"Run the saved instructions once",description:"Tooltip for the cloud scheduled task Run now action. The run uses the task's saved instructions and does not save edits from the detail panel."}),onSelect:()=>{B.mutate({automationId:E.id,requestBody:{idempotency_key:crypto.randomUUID()}})}}:void 0,trailingMenuItems:A}),b[15]=E,b[16]=R,b[17]=G,b[18]=F,b[19]=U,b[20]=q,b[21]=M,b[22]=j,b[23]=Z,b[24]=S,b[25]=X,b[26]=B,b[27]=Q,b[28]=K,b[29]=W,b[30]=A,b[31]=V.isPending,b[32]=V.variables?.automationId,b[33]=f}else f=b[33];return b[42]!==E||b[43]!==R||b[44]!==N||b[45]!==P||b[46]!==O||b[47]!==w||b[48]!==v||b[49]!==I?(g=R&&O?(0,s.jsx)(u.a,{isPending:N.isPending,name:(0,p.h)(w),open:!0,onCancel:()=>z(!1),onConfirm:()=>{N.mutate({automationId:E.id},{onSuccess:()=>{z(!1),v?.()},onError:e=>{z(!1),I.get(c.f).danger(P.formatMessage({id:"inbox.automations.cloud.deleteError",defaultMessage:"Could not delete cloud scheduled task",description:"Toast title when deleting a cloud scheduled task fails"}),{errorAnalytics:{toastId:"inbox.automations.cloud.deleteError"},description:e instanceof Error?e.message:void 0})}})}}):null,b[42]=E,b[43]=R,b[44]=N,b[45]=P,b[46]=O,b[47]=w,b[48]=v,b[49]=I,b[50]=g):g=b[50],b[51]!==f||b[52]!==g?(x=(0,s.jsxs)(s.Fragment,{children:[f,g]}),b[51]=f,b[52]=g,b[53]=x):x=b[53],x}})}),Xvoy:(function(e,t,a){var s=a("BolX"),r=a("v7qY"),n=a("OWtl");let o=(0,s.h)(n.a,()=>!1,e=>{let{set:t}=e,a=()=>(0,r.flushSync)(()=>t(!0)),s=()=>t(!1);return window.addEventListener("beforeprint",a),window.addEventListener("afterprint",s),()=>{window.removeEventListener("beforeprint",a),window.removeEventListener("afterprint",s)}});a.d(t,{},{a:o})}),IL1g:(function(e,t,a){var s=a("ABep"),r=a("QosV"),n=a("zd8w"),o=a("Wf1j"),i=a("ZtSy");let l=[{label:"OpenAI OpCo, LLC",emphasize:!0},{label:"대표자: Sam Altman"},{label:"주소: 1455 3rd Street, San Francisco, CA 94158"},{label:"전화: 02-735-2109"},{label:"https://help.openai.com/ko-kr",href:"https://help.openai.com/ko-kr"},{label:"816-80-03326",prefix:"사업자등록번호: ",emphasize:!0},{label:"통신판매업신고번호: 2026-공정-0022"},{label:"이용 약관",href:"https://openai.com/ko-KR/policies/row-terms-of-use/"},{label:"호스팅 서비스 제공: Microsoft Azure"},{label:"사업자 추가 정보",href:"https://www.ftc.go.kr/selectBizOvrCommPop.do?apvPermMgtNo=2026%EA%B3%B5%EC%A0%950022",emphasize:!0}];function c(e){let t,a,o=(0,r.c)(4),{inDialog:c}=e,d=void 0!==c&&c;return o[0]!==d?(t=l.map((e,t)=>{let a=e.emphasize?(0,s.jsx)("strong",{children:e.label}):e.label;return(0,s.jsxs)(n.Fragment,{children:[t>0&&(0,s.jsx)("span",{"aria-hidden":"true",children:"|"}),e.href?(0,s.jsx)(i.a,{href:e.href,initiator:"open_in_browser_bridge",openTarget:d?"external-browser":void 0,underline:"always",children:a}):(0,s.jsxs)("span",{children:[e.prefix,a]})]},e.label)}),o[0]=d,o[1]=t):t=o[1],o[2]!==t?(a=(0,s.jsx)("div",{className:"flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center text-xs text-secondary select-text",children:t}),o[2]=t,o[3]=a):a=o[3],a}a.d(t,{},{a:function(e){let t,a,n,i=(0,r.c)(5),{inDialog:l}=e,d=void 0!==l&&l,u=(0,o.a)();return"ko"!==new Intl.Locale(u.locale).language?null:(i[0]!==d?(t=(0,s.jsx)(c,{inDialog:d}),i[0]=d,i[1]=t):t=i[1],i[2]===Symbol.for("react.memo_cache_sentinel")?(a=(0,s.jsx)("p",{children:"귀하가 19세 미만의 이용자로서 귀하의 법정대리인이 본 계약에 동의하지 않은 경우, 귀하 또는 귀하의 법정대리인은 계약을 취소할 수 있습니다."}),i[2]=a):a=i[2],i[3]!==t?(n=(0,s.jsxs)("div",{className:"flex flex-col items-center gap-2 text-center text-xs text-secondary select-text",children:[t,a]}),i[3]=t,i[4]=n):n=i[4],n)},b:c})}),DWXw:(function(e,t,a){a.d(t,{BrowserComposerDisclaimer:()=>O,BrowserComposerDisclaimerMessage:()=>E,a:()=>K});var s=a("ABep"),r=a("QosV"),n=a("BolX"),o=a("Wf1j"),i=a("oyxz"),l=a("Qgfj"),c=a("jqIZ"),d=a("OFP1"),u=a("EOo5"),m=a("ipGa");function p(e){let t,a,n,o,l=(0,r.c)(9),{context:c}=e;l[0]!==c.businessName?(t=c.businessName?.trim(),l[0]=c.businessName,l[1]=t):t=l[1];let d=t;return l[2]!==d?(a=(0,s.jsx)("p",{children:d?(0,s.jsx)(i.a,{id:"chatgpt.ads.business_agent.composer_disclosure.aggregate_usage.body.named",defaultMessage:"{businessName} can’t see this chat or your personal info — just overall usage trends to help improve their AI agent.",values:{businessName:d},description:"Privacy disclosure below the composer in every organic or sponsored Business Agent chat. It reassures users that the business cannot see the conversation or personal information and receives only aggregate usage trends to improve its AI agent. The {businessName} placeholder is the advertiser-provided business display name and may be long. Allow the sentence to wrap."}):(0,s.jsx)(i.a,{id:"chatgpt.ads.business_agent.composer_disclosure.aggregate_usage.body.unnamed",defaultMessage:"This business can’t see this chat or your personal info — just overall usage trends to help improve their AI agent.",description:"Privacy disclosure below the composer in every organic or sponsored Business Agent chat when no business display name is available. It reassures users that the business operating the agent cannot see the conversation or personal information and receives only aggregate usage trends to improve its AI agent. Allow the sentence to wrap."})}),l[2]=d,l[3]=a):a=l[3],l[4]!==c.notice?(n=c.notice?.trim()?(0,s.jsx)("p",{children:c.notice}):null,l[4]=c.notice,l[5]=n):n=l[5],l[6]!==a||l[7]!==n?(o=(0,s.jsxs)("div",{className:"flex flex-col gap-1",children:[a,n]}),l[6]=a,l[7]=n,l[8]=o):o=l[8],o}var h=a("YJm0"),C=a("fzVa"),L=a("dQRk"),f=a("g2p6"),g=a("jAnS"),x=a("AcSY"),b=a("ZtSy"),w=a("Ho8f"),v=a("hZax"),M=a("fNyS"),y=a("zd8w"),k=a("IL1g"),_=a("JNtf"),j=a("mUDD"),Z=a("ibLK"),A=a("jVko"),S=a("zWHk");let D=new WeakSet;function T(e){let t,a,n,o,l=(0,r.c)(10),{children:c}=e,d=(0,Z.a)("(width < 640px)"),u=(0,y.useContext)(A.a);l[0]!==u?(t=e=>{if(null==u)return P;let t=()=>{D.add(u),e()},a=u.view.dom;a.addEventListener("input",t,!0);let s=(0,S.b)(u.view,t=>{t&&e()});return()=>{a.removeEventListener("input",t,!0),s()}},l[0]=u,l[1]=t):t=l[1];let m=t;l[2]!==u?(a=()=>null==u||!u.hasText()&&!D.has(u),l[2]=u,l[3]=a):a=l[3];let p=a,h=(0,y.useSyncExternalStore)(m,p,I);if(!d){let e;return l[4]===Symbol.for("react.memo_cache_sentinel")?(e=(0,s.jsx)(k.b,{}),l[4]=e):e=l[4],e}return l[5]!==h?(n=h&&(0,s.jsx)(_.a,{size:"responsiveSheet",triggerContent:(0,s.jsx)("button",{className:"inline-flex min-h-6 min-w-6 cursor-interaction items-center justify-center text-xs text-secondary underline select-none",type:"button",children:(0,s.jsx)(i.a,{...V.companyInformation})}),contentProps:{"aria-describedby":void 0},children:(0,s.jsxs)(j.b,{children:[(0,s.jsx)(j.d,{title:(0,s.jsx)(_.d,{children:(0,s.jsx)(i.a,{...V.companyInformation})})}),(0,s.jsx)(j.e,{children:(0,s.jsx)(k.b,{inDialog:!0})})]})}),l[5]=h,l[6]=n):n=l[6],l[7]!==c||l[8]!==n?(o=(0,s.jsxs)("div",{className:"flex flex-col items-center gap-1",children:[c,n]}),l[7]=c,l[8]=n,l[9]=o):o=l[9],o}function I(){return!0}function P(){}let V=(0,l.f)({companyInformation:{id:"chatgpt.compliance.korean_regulatory.company_information.label",defaultMessage:"Company info",description:"Short footer link and dialog title shown to Korean-language ChatGPT users on their signed-in or signed-out mobile-web landing page. Selecting the link opens OpenAI's legally required company registration, address, support, hosting, terms, and business disclosures. Keep the label short for the mobile footer."}});var H=a("md8w"),N=a("dBtq"),B=a("RGWz");function O(e){let t,a,o,i,l=(0,r.c)(10);l[0]!==e?({supportsMessageDisclosures:a,...t}=e,l[0]=e,l[1]=t,l[2]=a):(t=l[1],a=l[2]);let c=void 0!==a&&a,d=(0,n.z)(H.b),u=(0,n.x)(N.a,t.conversationId);if("home"!==t.placement&&(c&&d||!u))return null;let m="home"===t.placement?"empty:hidden":void 0,p=t.placement??"thread",h="home"===t.placement?void 0:z;return l[3]!==t||l[4]!==h?(o=(0,s.jsx)(E,{...t,renderOrdinaryDisclaimer:h}),l[3]=t,l[4]=h,l[5]=o):o=l[5],l[6]!==m||l[7]!==p||l[8]!==o?(i=(0,s.jsx)(w.a,{browser:!0,children:(0,s.jsx)(M.a,{className:m,placement:p,children:o})}),l[6]=m,l[7]=p,l[8]=o,l[9]=i):i=l[9],i}function z(e){return(0,s.jsxs)(s.Fragment,{children:[(0,s.jsx)(s.Fragment,{children:(0,s.jsx)(B.b,{children:e})}),null]})}function E(e){let t,a,l,d=(0,r.c)(28),{aiServiceDisclaimer:u,conversationId:h,hasUserMessage:C,isTemporaryChat:f,ordinaryDisclaimer:b,pendingWorkspaceDisclaimer:w,placement:v,regulatedConnectorKindOverride:M,renderOrdinaryDisclaimer:y}=e,k=void 0===v?"thread":v,_=(0,o.a)(),{search:j}=(0,c.Y)(),{data:Z}=(0,x.i)(),A=(0,n.x)(L.t,h??null),S=(0,n.x)(L.S,A?.status==="ready"&&void 0===M?h??null:null);d[0]!==C||d[1]!==f||d[2]!==k||d[3]!==j?(t=(f??(0,g.i)(j))&&!(C??"thread"===k),d[0]=C,d[1]=f,d[2]=k,d[3]=j,d[4]=t):t=d[4];let D=t;if(null==Z)return null==A?w??null:null;if(null!=A){let e;if("ready"!==A.status)return null;let t=void 0!==M?M:S;if(null!=t){let e;return d[5]!==t||d[6]!==b?(e=(0,s.jsx)(K,{ordinaryDisclaimer:b,regulatedConnectorKind:t}),d[5]=t,d[6]=b,d[7]=e):e=d[7],e}return d[8]!==A.context?(e=(0,s.jsx)(p,{context:A.context}),d[8]=A.context,d[9]=e):e=d[9],e}if("workspace"===Z.structure){let e;return d[10]!==Z||d[11]!==w||d[12]!==y||d[13]!==D?(e=(0,s.jsx)(U,{account:Z,pendingWorkspaceDisclaimer:w,isTemporaryChat:D,renderOrdinaryDisclaimer:y}),d[10]=Z,d[11]=w,d[12]=y,d[13]=D,d[14]=e):e=d[14],e}d[15]!==b||d[16]!==y?(a=y?.(b??(0,s.jsx)(i.a,{...q.personal}))??b,d[15]=b,d[16]=y,d[17]=a):a=d[17],d[18]!==Z.id||d[19]!==u||d[20]!==h||d[21]!==k||d[22]!==M||d[23]!==D||d[24]!==a?(l=(0,s.jsx)(W,{accountId:Z.id,aiServiceDisclaimer:u,conversationId:h,isTemporaryChat:D,ordinaryDisclaimer:a,placement:k,regulatedConnectorKindOverride:M}),d[18]=Z.id,d[19]=u,d[20]=h,d[21]=k,d[22]=M,d[23]=D,d[24]=a,d[25]=l):l=d[25];let I=l;if("home"===k&&!C&&!D&&!(0,m.a)()&&"ko"===new Intl.Locale(_.locale).language){let e;return d[26]!==I?(e=(0,s.jsx)(T,{children:I}),d[26]=I,d[27]=e):e=d[27],e}return I}function W(e){let t,a=(0,r.c)(16),{accountId:n,aiServiceDisclaimer:o,conversationId:i,isTemporaryChat:l,ordinaryDisclaimer:c,placement:d,regulatedConnectorKindOverride:u}=e,m=(0,v.h)("1831960162");if(!(0,v.i)("1831960162")&&!m){let e;return a[0]!==n||a[1]!==o||a[2]!==i||a[3]!==l||a[4]!==c||a[5]!==d||a[6]!==u?(e=(0,s.jsx)(G,{accountId:n,aiServiceDisclaimer:o,conversationId:i,isTemporaryChat:l,ordinaryDisclaimer:c,placement:d,regulatedConnectorKindOverride:u}),a[0]=n,a[1]=o,a[2]=i,a[3]=l,a[4]=c,a[5]=d,a[6]=u,a[7]=e):e=a[7],e}return a[8]!==o||a[9]!==i||a[10]!==l||a[11]!==c||a[12]!==d||a[13]!==u||a[14]!==m?(t=(0,s.jsx)(R,{aiServiceDisclaimer:o,conversationId:i,isTemporaryChat:l,ordinaryDisclaimer:c,placement:d,regulatedConnectorKindOverride:u,showAiServiceDisclaimer:m}),a[8]=o,a[9]=i,a[10]=l,a[11]=c,a[12]=d,a[13]=u,a[14]=m,a[15]=t):t=a[15],t}function G(e){let t,a=(0,r.c)(8),{accountId:o,aiServiceDisclaimer:i,conversationId:l,isTemporaryChat:c,ordinaryDisclaimer:d,placement:m,regulatedConnectorKindOverride:p}=e,{userId:h}=(0,u.a)(),L=(0,n.z)(f.n),{data:g}=(0,n.z)(C.b),x=null!=h&&L===o,b=(0,v.h)(!!x&&(null==g||"under_18"===g.age_status)&&"1639821169");return x?(a[0]!==i||a[1]!==l||a[2]!==c||a[3]!==d||a[4]!==m||a[5]!==p||a[6]!==b?(t=(0,s.jsx)(R,{aiServiceDisclaimer:i,conversationId:l,isTemporaryChat:c,ordinaryDisclaimer:d,placement:m,regulatedConnectorKindOverride:p,showAiServiceDisclaimer:b}),a[0]=i,a[1]=l,a[2]=c,a[3]=d,a[4]=m,a[5]=p,a[6]=b,a[7]=t):t=a[7],t):null}function R(e){let t,a,n=(0,r.c)(10),{aiServiceDisclaimer:o,conversationId:l,isTemporaryChat:c,ordinaryDisclaimer:d,placement:u,regulatedConnectorKindOverride:p,showAiServiceDisclaimer:h}=e;n[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,m.a)(),n[0]=t):t=n[0];let C=t;if(c){let e;return n[1]===Symbol.for("react.memo_cache_sentinel")?(e=(0,s.jsx)(i.a,{...q.temporaryChat}),n[1]=e):e=n[1],e}if(h){let e;return n[2]!==o?(e=o??(0,s.jsx)(i.a,{...q.aiService}),n[2]=o,n[3]=e):e=n[3],e}if(void 0!==p){let e;return null==p&&(C||"home"===u)?null:(n[4]!==d||n[5]!==p?(e=(0,s.jsx)(K,{ordinaryDisclaimer:d,regulatedConnectorKind:p}),n[4]=d,n[5]=p,n[6]=e):e=n[6],e)}return"home"===u?null:(n[7]!==l||n[8]!==d?(a=(0,s.jsx)(F,{conversationId:l,isBrowserSideChat:C,ordinaryDisclaimer:d}),n[7]=l,n[8]=d,n[9]=a):a=n[9],a)}function F(e){let t,a=(0,r.c)(3),{conversationId:o,isBrowserSideChat:i,ordinaryDisclaimer:l}=e,c=(0,n.x)(L.S,o??null);return i&&null==c?null:(a[0]!==l||a[1]!==c?(t=(0,s.jsx)(K,{ordinaryDisclaimer:l,regulatedConnectorKind:c}),a[0]=l,a[1]=c,a[2]=t):t=a[2],t)}function K(e){let t,a=(0,r.c)(4),{ordinaryDisclaimer:n,regulatedConnectorKind:o}=e;if("finance"===o){let e;return a[0]===Symbol.for("react.memo_cache_sentinel")?(e=(0,s.jsx)(i.a,{...q.finance}),a[0]=e):e=a[0],e}if("health"===o){let e;return a[1]===Symbol.for("react.memo_cache_sentinel")?(e=(0,s.jsx)(i.a,{...q.health}),a[1]=e):e=a[1],e}return a[2]!==n?(t=n??(0,s.jsx)(i.a,{...q.personal}),a[2]=n,a[3]=t):t=a[3],t}function U(e){let t,a=(0,r.c)(10),{account:o,pendingWorkspaceDisclaimer:l,isTemporaryChat:c,renderOrdinaryDisclaimer:u}=e,p=(0,m.a)(),{data:C}=(0,n.x)(h.a,o.id),{data:L}=(0,n.x)(d.l,o.id);if(null==C||null!=l&&null==L)return l??null;let f="early-access"===C.account.workspace_type;if(!f&&null==L)return null;let g=C.account.name??o.name;if(L?.beta_settings.training_allowed===!0){let e;a[0]===Symbol.for("react.memo_cache_sentinel")?(e=(0,s.jsx)(i.a,{...q.workspaceResearchPartner,values:{link:X}}),a[0]=e):e=a[0],t=e}else if(f){let e;a[1]!==g?(e=null==g?(0,s.jsx)(i.a,{...q.earlyAccessWorkspaceWithoutName}):(0,s.jsx)(i.a,{...q.earlyAccessWorkspace,values:{workspaceName:g}}),a[1]=g,a[2]=e):e=a[2],t=e}else if(c){let e;a[3]===Symbol.for("react.memo_cache_sentinel")?(e=(0,s.jsx)(i.a,{...q.workspaceTemporaryChat}),a[3]=e):e=a[3],t=e}else if(null!=C.account.ekm_config){let e;a[4]===Symbol.for("react.memo_cache_sentinel")?(e=(0,s.jsx)(i.a,{...q.encryptedWorkspace}),a[4]=e):e=a[4],t=e}else if("k12"===o.plan_type){let e;a[5]!==g?(e=null==g?(0,s.jsx)(i.a,{...q.k12WorkspaceWithoutName}):(0,s.jsx)(i.a,{...q.k12Workspace,values:{workspaceName:g}}),a[5]=g,a[6]=e):e=a[6],t=e}else{let e,r;return p?null:(a[7]===Symbol.for("react.memo_cache_sentinel")?(e=(0,s.jsx)(i.a,{...q.workspace}),a[7]=e):e=a[7],t=e,a[8]!==u?(r=u?.(t)??t,a[8]=u,a[9]=r):r=a[9],r)}return t}function X(e){return(0,s.jsx)(b.a,{className:"cursor-interaction underline underline-offset-2 hover:text-default",href:"https://help.openai.com/articles/20001245",initiator:"open_in_browser_bridge",isBrowserEnabled:!1,children:e})}let q=(0,l.f)({finance:{id:"mattressFinanceDisclaimer.composerDisclaimer",defaultMessage:"ChatGPT can make mistakes and isn’t a licensed investment adviser or authorized to prepare tax returns.",description:"Footer disclaimer shown below the ChatGPT Personal Finance chat composer on web and below the regular Chat composer after a Finance app, connector, or plugin is selected or invoked. Legal/regulatory context: U.S.-specific. ‘Licensed investment adviser’ refers to a regulated, licensed/registered professional (e.g., SEC/state registered). ‘Prepare tax returns’ means preparing and filing tax return documents for tax authorities (not ‘tax refunds’). Keep the tone as a legal disclaimer."},health:{id:"potion.footerDisclaimer.medicalDisclaimer",defaultMessage:"ChatGPT can make mistakes and isn't intended for diagnosis or treatment. Consult a doctor for medical advice.",description:"Medical disclaimer under the Health message composer"},aiService:{id:"codex.composer.browserDisclaimer.aiService",defaultMessage:"ChatGPT is AI and can make mistakes. Check important info.",description:"Compact legal disclosure beside the ChatGPT composer on Home and in conversations for eligible personal-account users. It explicitly identifies ChatGPT as artificial intelligence and reminds users to verify important information. Keep both sentences together; the footer may wrap on narrow screens."},personal:{id:"codex.composer.browserDisclaimer",defaultMessage:"ChatGPT can make mistakes. Check important info.",description:"Compact legal disclosure above the browser conversation composer for a personal ChatGPT account, reminding users that AI responses may contain mistakes and important information should be checked."},temporaryChat:{id:"codex.composer.browserDisclaimer.temporaryChat",defaultMessage:"For safety, we may keep a copy of this chat for up to 30 days.",description:"Compact privacy disclosure above the browser composer before a personal-account user sends the first message in a temporary ChatGPT conversation, explaining its maximum safety-retention period."},workspace:{id:"codex.composer.browserDisclaimer.workspace",defaultMessage:"ChatGPT can make mistakes. Workspace data isn't used to train models.",description:"Compact legal and privacy disclosure above the browser composer for a Business or Enterprise workspace that has not opted in to model training, reassuring workspace members that their data is excluded from training."},workspaceResearchPartner:{id:"codex.composer.browserDisclaimer.workspaceResearchPartner",defaultMessage:"ChatGPT can make mistakes. This workspace is opted in to the ChatGPT Business Research Partner Program. <link>Learn more</link>",description:"Legal and privacy disclosure above the browser composer for a Business workspace opted in to sharing its data through the ChatGPT Business Research Partner Program. The <link> tag wraps a clickable Help Center article labeled Learn more."},earlyAccessWorkspace:{id:"codex.composer.browserDisclaimer.earlyAccessWorkspace",defaultMessage:"ChatGPT can make mistakes. OpenAI uses {workspaceName} workspace data to train its models.",description:"Legal and privacy disclosure above the browser composer for an early-access workspace whose data is used to train AI models. The {workspaceName} placeholder is the human-readable name of the current workspace."},earlyAccessWorkspaceWithoutName:{id:"codex.composer.browserDisclaimer.earlyAccessWorkspaceWithoutName",defaultMessage:"ChatGPT can make mistakes. OpenAI uses your workspace data to train its models.",description:"Legal and privacy disclosure above the browser composer for an early-access workspace whose data is used to train AI models when the workspace has no display name."},workspaceTemporaryChat:{id:"codex.composer.browserDisclaimer.workspaceTemporaryChat",defaultMessage:"Workspace data isn't used to train models by default. For safety, we may keep a copy of this chat for up to 30 days.",description:"Privacy disclosure above the browser composer before a workspace member sends the first message in a temporary ChatGPT conversation, explaining that workspace data is not used for model training and may be retained for safety for up to 30 days."},encryptedWorkspace:{id:"codex.composer.browserDisclaimer.encryptedWorkspaceData",defaultMessage:"ChatGPT can make mistakes. OpenAI doesn’t train on your workspace data, which is encrypted with keys managed by your organization.",description:"Legal and privacy disclosure above the browser composer for Business, Enterprise, and ChatGPT for Teachers workspaces protected by organization-managed cryptographic encryption keys. Reassures members that OpenAI does not train on their workspace data and that their organization manages its encryption keys. Uses the same generic ChatGPT wording regardless of the workspace name or plan."},k12Workspace:{id:"codex.composer.browserDisclaimer.k12Workspace",defaultMessage:"ChatGPT for Teachers can make mistakes. OpenAI doesn't use {workspaceName} workspace data to train its models.",description:"Legal and privacy disclosure above the browser composer for a ChatGPT for Teachers workspace, assuring educators that their workspace data is not used to train AI models. The {workspaceName} placeholder is the human-readable name of the school workspace."},k12WorkspaceWithoutName:{id:"codex.composer.browserDisclaimer.k12WorkspaceWithoutName",defaultMessage:"ChatGPT for Teachers can make mistakes. OpenAI doesn't use your workspace data to train its models.",description:"Legal and privacy disclosure above the browser composer for a ChatGPT for Teachers workspace without a display name, assuring educators that their workspace data is not used to train AI models."}})}),md8w:(function(e,t,a){var s=a("BolX"),r=a("ASxG"),n=a("Cslg"),o=a("OWtl"),i=a("cX6x"),l=a("O666");let c="623291997",d=r.number().nonnegative().catch(2),u=r.number().nonnegative().catch(24),m=(0,s.c)(o.a,e=>{let{get:t}=e,a=t(l.a,c),s=null==a?(0,i.d)(c)?.value:void 0,r=null!=t(n.k)&&(a?.get("app_disclosure_below_message_actions",!1)??s?.app_disclosure_below_message_actions===!0),o=r?a?.get("app_disclosure_impression_seconds",2)??s?.app_disclosure_impression_seconds:2,m=r?a?.get("app_disclosure_cooldown_hours",24)??s?.app_disclosure_cooldown_hours:24;return{enabled:r,aboveActions:r&&(a?.get("app_disclosure_above_message_actions",!1)??s?.app_disclosure_above_message_actions===!0),workModeEnabled:a?.get("app_disclosure_in_work_mode",!1)??s?.app_disclosure_in_work_mode===!0,showOnFirstMessage:a?.get("app_disclosure_show_on_first_message",!1)??s?.app_disclosure_show_on_first_message===!0,impressionMs:1e3*d.parse(o),cooldownMs:60*u.parse(m)*6e4,hideOnSend:!r||(a?.get("app_hide_disclosure_on_send",!0)??s?.app_hide_disclosure_on_send!==!1)}},{isEqual:(e,t)=>e.enabled===t.enabled&&e.aboveActions===t.aboveActions&&e.workModeEnabled===t.workModeEnabled&&e.showOnFirstMessage===t.showOnFirstMessage&&e.impressionMs===t.impressionMs&&e.cooldownMs===t.cooldownMs&&e.hideOnSend===t.hideOnSend}),p=(0,s.c)(o.a,e=>{let{get:t}=e;return t(m).enabled});a.d(t,{},{a:m,b:p})}),dBtq:(function(e,t,a){a.d(t,{a:()=>g,b:()=>x,c:()=>w});var s=a("BolX"),r=a("ASxG"),n=a("Ow2S"),o=a("x4uR"),i=a("aFoA"),l=a("dQRk"),c=a("OWtl"),d=a("Nwp9"),u=a("md8w"),m=a("AuIy"),p=a("ccwJ"),h=a("lX86");let C=r.object({at:r.number().nonnegative(),messageId:r.string()}),L=(0,d.b)("message-disclosure-standard-impression",null,{coerceStoredValue:e=>C.safeParse(e).data??null}),f=(0,s.u)(c.a,0),g=(0,s.d)(c.a,(e,t)=>{let{get:a}=t,s=null==e?void 0:a(l.x,e);return"tpp"!==s&&"flora"!==s||a(u.a).workModeEnabled}),x=(0,s.d)(c.a,(e,t)=>{let{get:a,scope:s}=t,r=a(u.a);if(!r.enabled||!a(g,e))return{};let c=a(i.a,e)??e,d=a(n.i,c);if(d&&r.hideOnSend)return{};let C=a(l.L,e);if(null==C)return{};let x=a(l.R,e),b=null!=x&&a(o.b,x).data?.gizmo.gizmo_snorlax_type==="potion"?"health":null;a(f);let w=s.get(L),v=Date.now();return function(e,t,a,s){let r,n=arguments.length>4&&void 0!==arguments[4]?arguments[4]:()=>!0,o=arguments.length>5&&void 0!==arguments[5]&&arguments[5],i=(0,m.a)(e),l=i.findLastIndex(e=>"user"===e.author.role),c={},d=s??"standard",u=!1,C=()=>{null!=r&&("standard"!==d||o&&!u||n(r))&&(c[d]=r),u=u||null!=r,r=void 0};for(let[e,n]of i.entries()){"user"===n.author.role&&(C(),d=s??"standard",t&&(delete c.standard,delete c.health,delete c.finance)),d=(0,h.b)(n)??d;let o=(0,p.b)(n,{isActiveTurn:!1,isStreaming:!1}).some(e=>"completed"===e.status&&null!=e.src);!(a&&e>l||(0,m.m)(n))&&(o||"assistant"===n.author.role&&(null==n.recipient||"all"===n.recipient)&&(null==n.channel||"final"===n.channel)&&("finished_successfully"===n.status||"finished_partial_completion"===n.status))&&(r=n.id)}return C(),c}({mapping:C,current_node:a(l.B,e)},r.hideOnSend,d||a(l.H,e),b,e=>{var t,a,s,n;return t=e,a=w,s=r.cooldownMs,n=v,null==a||a.messageId===t||0===s||n<a.at||n-a.at>=s},r.showOnFirstMessage)},{isEqual:(e,t)=>e.standard===t.standard&&e.health===t.health&&e.finance===t.finance}),b=(0,s.d)(c.a,(e,t)=>{let{conversationId:a,messageId:s}=e,{get:r}=t,n=r(x,a);return n.health===s?"health":n.finance===s?"finance":n.standard===s?"standard":null});function w(e,t,a){"standard"===e.get(b,{conversationId:t,messageId:a})&&e.set(L,{at:Date.now(),messageId:a})}}),dKZq:(function(e,t,a){var s=a("ABep"),r=a("QosV"),n=a("on57"),o=a("BolX"),i=a("zd8w"),l=a("oyxz"),c=a("Xvoy"),d=a("NkEl"),u=a("Sm6l"),m=a("oQwr"),p=a("zEpR"),h=a("hMRX");let C="a[href], area[href]";function L(e,t,a){e.toggleAttribute("inert",!t),t?null==a?e.removeAttribute("aria-hidden"):e.setAttribute("aria-hidden",a):e.setAttribute("aria-hidden","true")}a.d(t,{},{a:function(e){let t,a,f,g,x,b,w,v,M,y,k,_,j,Z,A,S,D=(0,r.c)(59),{children:T,collapsedLineCount:I,collapseIndicator:P,textTone:V,text:H}=e,N=void 0===I?20:I,B=void 0===P?"ellipsis":P,O=void 0===V?"default":V,z=(0,o.z)(c.a),E=512*N,W=!z&&"function"==typeof T&&H.length>E;D[0]!==N||D[1]!==W||D[2]!==H?(t={text:H,collapsedLineCount:N,fallbackFontSizePx:13,forceCollapsible:W},D[0]=N,D[1]=W,D[2]=H,D[3]=t):t=D[3];let{setTextContentMeasurementRef:G,collapseState:R,handleToggleExpansion:F}=(0,m.b)(t),K=!z&&"collapsed"===R,U=K&&"ellipsis"===B&&N>2,X=N-!!U,q=(0,i.useRef)(null);D[4]!==X||D[5]!==W||D[6]!==K?(a=()=>{if(!K||W)return;let e=q.current,t=e?.firstElementChild;if(null==e||null==t)return;let a=()=>{let t=e.querySelectorAll('[data-markdown-copy="code-block"]:not(pre)');if(0===t.length){e.style.maxHeight=`${X}lh`;return}let a=Number.parseFloat(window.getComputedStyle(e).lineHeight);if(!Number.isFinite(a))return;let s=e.getBoundingClientRect(),r=0===e.offsetHeight?1:s.height/e.offsetHeight,n=Math.ceil(a*X);for(let e of t){let t=e.getBoundingClientRect(),a=(t.top-s.top)/r,o=(t.bottom-s.top)/r;a<n&&o>n&&(n=Math.ceil(o))}e.style.maxHeight=`${n}px`};a();let s=new ResizeObserver(a);s.observe(t);let r=new MutationObserver(a);return r.observe(t,{childList:!0,subtree:!0}),()=>{s.disconnect(),r.disconnect()}},D[4]=X,D[5]=W,D[6]=K,D[7]=a):a=D[7],D[8]!==X||D[9]!==W||D[10]!==K||D[11]!==H?(f=[X,W,K,H],D[8]=X,D[9]=W,D[10]=K,D[11]=H,D[12]=f):f=D[12],(0,i.useLayoutEffect)(a,f),D[13]!==K?(g=()=>{if(!K)return;let e=q.current;if(null==e)return;let t="u"<typeof IntersectionObserver?null:new IntersectionObserver(e=>{for(let t of e)a.has(t.target)&&L(t.target,t.isIntersecting&&(t.target.matches(C)?t.intersectionRatio>0:t.intersectionRatio>=1),a.get(t.target)??null)},{root:e,rootMargin:"0px",threshold:[Number.EPSILON,1]}),a=new Map,s=()=>{for(let s of a.keys())e.contains(s)||(t?.unobserve(s),a.delete(s));for(let s of e.querySelectorAll('a[href], area[href], button, input, select, textarea, summary, audio[controls], video[controls], iframe, [contenteditable]:not([contenteditable="false"]), [tabindex]:not([tabindex="-1"])')){if(a.has(s)||s.hasAttribute("inert"))continue;let r=s.getAttribute("aria-hidden");a.set(s,r),L(s,null==t&&function(e,t){let a=e.getBoundingClientRect(),s=t.getBoundingClientRect();return e.matches(C)?Math.min(a.right,s.right)>Math.max(a.left,s.left)&&Math.min(a.bottom,s.bottom)>Math.max(a.top,s.top):a.top>=s.top&&a.right<=s.right&&a.bottom<=s.bottom&&a.left>=s.left}(s,e),r),t?.observe(s)}};s();let r=new MutationObserver(s);return r.observe(e,{childList:!0,subtree:!0}),()=>{for(let[e,s]of(t?.disconnect(),r.disconnect(),a))L(e,!0,s)}},D[13]=K,D[14]=g):g=D[14],D[15]!==N||D[16]!==K||D[17]!==H?(x=[N,K,H],D[15]=N,D[16]=K,D[17]=H,D[18]=x):x=D[18],(0,i.useEffect)(g,x);let Q=!z;D[19]!==F||D[20]!==W||D[21]!==K||D[22]!==H?(b=e=>{if(q.current=e,null!=e)return(0,d.b)(e,{highlight:"text",text:H,isTruncated:K&&W,reveal:K?F:void 0})},D[19]=F,D[20]=W,D[21]=K,D[22]=H,D[23]=b):b=D[23];let Y=K&&"overflow-hidden",J=K&&"fade"===B&&"mask-b-from-80% mask-b-to-100%";D[24]!==Y||D[25]!==J?(w=(0,n.b)(Y,J),D[24]=Y,D[25]=J,D[26]=w):w=D[26],D[27]!==X||D[28]!==K?(v=K?{maxHeight:`${X}lh`}:void 0,D[27]=X,D[28]=K,D[29]=v):v=D[29];let $=W?void 0:G;return D[30]!==T||D[31]!==K||D[32]!==E||D[33]!==H?(M="function"==typeof T?T(K?H.slice(0,E):H):T,D[30]=T,D[31]=K,D[32]=E,D[33]=H,D[34]=M):M=D[34],D[35]!==$||D[36]!==M?(y=(0,s.jsx)("div",{ref:$,children:M}),D[35]=$,D[36]=M,D[37]=y):y=D[37],D[38]!==b||D[39]!==w||D[40]!==v||D[41]!==y?(k=(0,s.jsx)("div",{ref:b,className:w,style:v,children:y}),D[38]=b,D[39]=w,D[40]=v,D[41]=y,D[42]=k):k=D[42],D[43]!==k||D[44]!==Q?(_=(0,s.jsx)(h.a.Provider,{value:Q,children:k}),D[43]=k,D[44]=Q,D[45]=_):_=D[45],D[46]!==U?(j=U?(0,s.jsx)("span",{"aria-hidden":"true",className:"block",children:"…"}):null,D[46]=U,D[47]=j):j=D[47],D[48]!==_||D[49]!==j?(Z=(0,s.jsxs)("div",{className:"relative w-full min-w-0 text-size-chat leading-relaxed",children:[_,j]}),D[48]=_,D[49]=j,D[50]=Z):Z=D[50],D[51]!==R||D[52]!==F||D[53]!==z||D[54]!==O?(A=z||"uncollapsible"===R?null:(0,s.jsxs)(u.a,{className:(0,n.b)("mt-1.5 self-start text-size-chat","default"===O&&"text-codex-description"),"aria-expanded":"expanded"===R,"data-thread-find-skip":!0,"data-markdown-copy":"exclude",color:"user-message"===O?"ghostUserMessage":"disclosure",onClick:F,size:"inline",children:[(0,s.jsx)("span",{children:"expanded"===R?(0,s.jsx)(l.a,{id:"codex.userMessage.showLess",defaultMessage:"Show less",description:"Button label for collapsing an expanded user message"}):(0,s.jsx)(l.a,{id:"codex.userMessage.showMore",defaultMessage:"Show more",description:"Button label for expanding a truncated user message"})}),(0,s.jsx)(p.a,{className:"expanded"===R?"icon-2xs rotate-180":"icon-2xs"})]}),D[51]=R,D[52]=F,D[53]=z,D[54]=O,D[55]=A):A=D[55],D[56]!==Z||D[57]!==A?(S=(0,s.jsxs)("div",{className:"flex flex-col items-end gap-1",children:[Z,A]}),D[56]=Z,D[57]=A,D[58]=S):S=D[58],S}})}),r2mP:(function(e,t,a){var s=a("ABep"),r=a("QosV"),n=a("zd8w"),o=a("Wf1j"),i=a("oyxz"),l=a("ozji"),c=a("dMTK");function d(e){return(0,s.jsx)("span",{className:"font-medium",children:e})}function u(e){return e.join("")}function m(){return Date.now()}function p(e){let t,a,n,o=(0,r.c)(11),{children:i,compact:l,label:c,sentAtMs:d}=e,u=void 0!==l&&l,m=u?"flex justify-center py-2":"flex justify-center py-4",p=null==c?void 0:"separator",h=u?"text-xs text-tertiary select-none":"text-sm leading-5 font-normal text-tertiary select-none";return o[0]!==d?(t=new Date(d).toISOString(),o[0]=d,o[1]=t):t=o[1],o[2]!==i||o[3]!==h||o[4]!==t?(a=(0,s.jsx)("time",{className:h,dateTime:t,children:i}),o[2]=i,o[3]=h,o[4]=t,o[5]=a):a=o[5],o[6]!==c||o[7]!==m||o[8]!==p||o[9]!==a?(n=(0,s.jsx)("div",{"aria-label":c,className:m,role:p,"data-markdown-copy":"exclude",children:a}),o[6]=c,o[7]=m,o[8]=p,o[9]=a,o[10]=n):n=o[10],n}a.d(t,{},{a:p,b:function(e){let t,a,h,C,L,f,g,x,b=(0,r.c)(20),{sentAtMs:w,nowMs:v}=e,M=(0,o.a)(),[y]=(0,n.useState)(m);if(!Number.isFinite(w))return null;if(b[0]!==M||b[1]!==y||b[2]!==v||b[3]!==w){let{date:e,time:s,includeAt:r}=(0,c.c)(M,new Date(w),new Date(v??y));a=e,L=s,h=r?l.a.older:l.a.recent,t=p,C=M.formatMessage(h,{date:a,time:L,day:u}),b[0]=M,b[1]=y,b[2]=v,b[3]=w,b[4]=t,b[5]=a,b[6]=h,b[7]=C,b[8]=L}else t=b[4],a=b[5],h=b[6],C=b[7],L=b[8];return b[9]!==a||b[10]!==L?(f={date:a,time:L,day:d},b[9]=a,b[10]=L,b[11]=f):f=b[11],b[12]!==h||b[13]!==f?(g=(0,s.jsx)(i.a,{...h,values:f}),b[12]=h,b[13]=f,b[14]=g):g=b[14],b[15]!==t||b[16]!==w||b[17]!==C||b[18]!==g?(x=(0,s.jsx)(t,{label:C,sentAtMs:w,children:g}),b[15]=t,b[16]=w,b[17]=C,b[18]=g,b[19]=x):x=b[19],x}})}),dMTK:(function(e,t,a){function s(e,t){return(Date.UTC(e.getFullYear(),e.getMonth(),e.getDate())-Date.UTC(t.getFullYear(),t.getMonth(),t.getDate()))/864e5}function r(e,t){let a=e.formatRelativeTime(t,"day",{numeric:"auto"});return e.locale.startsWith("en")?a.charAt(0).toUpperCase()+a.slice(1):a}a.d(t,{},{a:s,b:r,c:function(e,t,a){let n=Math.max(s(a,t),0);return{date:n<=1?r(e,-n):n<=7?e.formatDate(t,{weekday:"long"}):n<=365?e.formatDate(t,{weekday:"short",month:"short",day:"numeric"}):e.formatDate(t,{month:"short",day:"numeric",year:"numeric"}),time:e.formatTime(t,{hour:"numeric",minute:"2-digit"}),includeAt:n>7}},d:function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:Date.now(),a=null,s=!1;return e.map(e=>{if(null==e)return a=null,s=!0,null;let r=null;for(let n of e)n.breaksPreviousAdjacency&&(a=null),null==r&&function(e){let{current:t,previous:a,isFirstUserTurn:s,nowMs:r}=e;return null!=t.sentAtMs&&!!Number.isFinite(t.sentAtMs)&&(!!s&&r-t.sentAtMs>36e5||a?.role==="assistant"&&null!=a.sentAtMs&&Number.isFinite(a.sentAtMs)&&t.sentAtMs-a.sentAtMs>("user"===t.role?36e5:6e5))}({current:n,previous:a,isFirstUserTurn:"user"===n.role&&!s,nowMs:t})&&(r=n.sentAtMs),s=s||"user"===n.role,a=n;return r})}})})};
+export const __rspack_esm_ids = [110285];
+export const __webpack_modules__ = {
+    pm4K: (function(e, t, a) {
+        var s = a("ABep");
+        a("zd8w"), t.a = e => (0, s.jsx)("svg", {
+            width: 20,
+            height: 20,
+            viewBox: "0 0 20 20",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg",
+            ...e,
+            children: (0, s.jsx)("path", {
+                d: "M14.3349 13.3301V6.60645L5.47065 15.4707C5.21095 15.7304 4.78895 15.7304 4.52925 15.4707C4.26955 15.211 4.26955 14.789 4.52925 14.5293L13.3935 5.66504H6.66011C6.29284 5.66504 5.99507 5.36727 5.99507 5C5.99507 4.63273 6.29284 4.33496 6.66011 4.33496H14.9999L15.1337 4.34863C15.4369 4.41057 15.665 4.67857 15.665 5V13.3301C15.6649 13.6973 15.3672 13.9951 14.9999 13.9951C14.6327 13.9951 14.335 13.6973 14.3349 13.3301Z",
+                fill: "currentColor"
+            })
+        })
+    }),
+    XK0l: (function(e, t, a) {
+        var s = a("ABep"),
+            r = a("QosV");
+        t.default = e => {
+            let t, a, n, o, i, l = (0, r.c)(6);
+            return l[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, s.jsxs)("g", {
+                filter: "url(#filter0_d_8150_6803)",
+                children: [(0, s.jsx)("mask", {
+                    id: "path-1-inside-1_8150_6803",
+                    fill: "white",
+                    children: (0, s.jsx)("path", {
+                        fillRule: "evenodd",
+                        clipRule: "evenodd",
+                        d: "M23 7.85169C23 7.59052 23.0001 7.32933 22.9985 7.06813C22.9972 6.84811 22.9947 6.62813 22.9887 6.40822C22.9758 5.92889 22.9475 5.44545 22.8622 4.97147C22.7758 4.49065 22.6346 4.04314 22.4121 3.60627C22.1934 3.17687 21.9077 2.78394 21.5668 2.44329C21.226 2.10264 20.833 1.81712 20.4034 1.59854C19.9661 1.376 19.5181 1.23487 19.0367 1.14845C18.5627 1.06333 18.0791 1.03511 17.5998 1.02216C17.3797 1.01621 17.1597 1.0137 16.9395 1.01233C16.6782 1.01073 16.4169 1.01087 16.1555 1.01087L13.1213 1H10.8519L7.87129 1.01087C7.60946 1.01087 7.34762 1.01073 7.08578 1.01233C6.8652 1.0137 6.64472 1.01621 6.42421 1.02216C5.94377 1.03511 5.45911 1.06336 4.98395 1.14858C4.50195 1.23498 4.05331 1.37605 3.61539 1.59843C3.18493 1.81704 2.79104 2.10259 2.44951 2.44329C2.10803 2.78392 1.82179 3.17676 1.60267 3.60608C1.37958 4.04317 1.23813 4.49094 1.15146 4.97203C1.06613 5.44583 1.03786 5.9291 1.02486 6.40822C1.01893 6.62816 1.01637 6.84813 1.01503 7.06813C1.01343 7.32936 1 7.65383 1 7.91502L1.00008 10.8543L1 13.148L1.01356 16.1497C1.01356 16.4113 1.01346 16.6728 1.01503 16.9344C1.01637 17.1547 1.01893 17.375 1.02488 17.5952C1.03786 18.0751 1.06619 18.5593 1.1516 19.0339C1.23823 19.5154 1.37966 19.9635 1.60257 20.4009C1.82171 20.831 2.108 21.2244 2.44951 21.5655C2.79101 21.9067 3.18479 22.1925 3.61518 22.4114C4.05336 22.6343 4.50222 22.7756 4.98451 22.8621C5.45945 22.9474 5.94396 22.9757 6.42421 22.9886C6.64472 22.9946 6.86523 22.9971 7.08581 22.9984C7.34765 23 7.60946 22.9999 7.87129 22.9999L10.8788 23H13.1538L16.1555 22.9999C16.4169 22.9999 16.6782 23 16.9395 22.9984C17.1597 22.9971 17.3797 22.9946 17.5998 22.9886C18.0793 22.9756 18.5631 22.9473 19.0373 22.862C19.5184 22.7755 19.9661 22.6342 20.4032 22.4115C20.8329 22.1927 21.226 21.9067 21.5668 21.5655C21.9076 21.2244 22.1933 20.8311 22.412 20.4011C22.6347 19.9635 22.7758 19.5151 22.8623 19.0333C22.9475 18.5589 22.9758 18.075 22.9887 17.5952C22.9947 17.3749 22.9972 17.1547 22.9985 16.9344C23.0001 16.6728 23 16.4113 23 16.1497C23 16.1497 22.9998 13.201 22.9998 13.148V10.8519C22.9998 10.8128 23 7.85169 23 7.85169Z"
+                    })
+                }), (0, s.jsx)("path", {
+                    fillRule: "evenodd",
+                    clipRule: "evenodd",
+                    d: "M23 7.85169C23 7.59052 23.0001 7.32933 22.9985 7.06813C22.9972 6.84811 22.9947 6.62813 22.9887 6.40822C22.9758 5.92889 22.9475 5.44545 22.8622 4.97147C22.7758 4.49065 22.6346 4.04314 22.4121 3.60627C22.1934 3.17687 21.9077 2.78394 21.5668 2.44329C21.226 2.10264 20.833 1.81712 20.4034 1.59854C19.9661 1.376 19.5181 1.23487 19.0367 1.14845C18.5627 1.06333 18.0791 1.03511 17.5998 1.02216C17.3797 1.01621 17.1597 1.0137 16.9395 1.01233C16.6782 1.01073 16.4169 1.01087 16.1555 1.01087L13.1213 1H10.8519L7.87129 1.01087C7.60946 1.01087 7.34762 1.01073 7.08578 1.01233C6.8652 1.0137 6.64472 1.01621 6.42421 1.02216C5.94377 1.03511 5.45911 1.06336 4.98395 1.14858C4.50195 1.23498 4.05331 1.37605 3.61539 1.59843C3.18493 1.81704 2.79104 2.10259 2.44951 2.44329C2.10803 2.78392 1.82179 3.17676 1.60267 3.60608C1.37958 4.04317 1.23813 4.49094 1.15146 4.97203C1.06613 5.44583 1.03786 5.9291 1.02486 6.40822C1.01893 6.62816 1.01637 6.84813 1.01503 7.06813C1.01343 7.32936 1 7.65383 1 7.91502L1.00008 10.8543L1 13.148L1.01356 16.1497C1.01356 16.4113 1.01346 16.6728 1.01503 16.9344C1.01637 17.1547 1.01893 17.375 1.02488 17.5952C1.03786 18.0751 1.06619 18.5593 1.1516 19.0339C1.23823 19.5154 1.37966 19.9635 1.60257 20.4009C1.82171 20.831 2.108 21.2244 2.44951 21.5655C2.79101 21.9067 3.18479 22.1925 3.61518 22.4114C4.05336 22.6343 4.50222 22.7756 4.98451 22.8621C5.45945 22.9474 5.94396 22.9757 6.42421 22.9886C6.64472 22.9946 6.86523 22.9971 7.08581 22.9984C7.34765 23 7.60946 22.9999 7.87129 22.9999L10.8788 23H13.1538L16.1555 22.9999C16.4169 22.9999 16.6782 23 16.9395 22.9984C17.1597 22.9971 17.3797 22.9946 17.5998 22.9886C18.0793 22.9756 18.5631 22.9473 19.0373 22.862C19.5184 22.7755 19.9661 22.6342 20.4032 22.4115C20.8329 22.1927 21.226 21.9067 21.5668 21.5655C21.9076 21.2244 22.1933 20.8311 22.412 20.4011C22.6347 19.9635 22.7758 19.5151 22.8623 19.0333C22.9475 18.5589 22.9758 18.075 22.9887 17.5952C22.9947 17.3749 22.9972 17.1547 22.9985 16.9344C23.0001 16.6728 23 16.4113 23 16.1497C23 16.1497 22.9998 13.201 22.9998 13.148V10.8519C22.9998 10.8128 23 7.85169 23 7.85169Z",
+                    fill: "url(#paint0_linear_8150_6803)"
+                }), (0, s.jsx)("path", {
+                    d: "M22.9985 7.06813L22.4985 7.07111L22.4985 7.0712L22.9985 7.06813ZM22.9887 6.40822L22.4889 6.42169L22.4889 6.42181L22.9887 6.40822ZM22.8622 4.97147L22.3701 5.05995L22.3701 5.05997L22.8622 4.97147ZM22.4121 3.60627L22.8577 3.37937L22.8577 3.37933L22.4121 3.60627ZM21.5668 2.44329L21.2133 2.79693L21.2134 2.79697L21.5668 2.44329ZM20.4034 1.59854L20.6302 1.15291L20.6302 1.15291L20.4034 1.59854ZM19.0367 1.14845L18.9484 1.64058L18.9484 1.64058L19.0367 1.14845ZM17.5998 1.02216L17.5863 1.52198L17.5863 1.52198L17.5998 1.02216ZM16.9395 1.01233L16.9426 0.512344L16.9426 0.512344L16.9395 1.01233ZM16.1555 1.01087L16.1537 1.51087H16.1555V1.01087ZM13.1213 1L13.1231 0.5H13.1213V1ZM10.8519 1V0.499997L10.85 0.500003L10.8519 1ZM7.87129 1.01087V1.51087L7.87311 1.51086L7.87129 1.01087ZM7.08578 1.01233L7.08273 0.512344L7.0827 0.512344L7.08578 1.01233ZM6.42421 1.02216L6.43769 1.52198L6.43771 1.52198L6.42421 1.02216ZM4.98395 1.14858L5.07217 1.64074L5.07222 1.64073L4.98395 1.14858ZM3.61539 1.59843L3.389 1.15262L3.38899 1.15262L3.61539 1.59843ZM2.44951 2.44329L2.80262 2.79729L2.80263 2.79727L2.44951 2.44329ZM1.60267 3.60608L2.04802 3.83339L2.04802 3.83338L1.60267 3.60608ZM1.15146 4.97203L0.659383 4.88338L0.659379 4.8834L1.15146 4.97203ZM1.02486 6.40822L0.525041 6.39465L0.525038 6.39475L1.02486 6.40822ZM1.01503 7.06813L1.51502 7.0712L1.51502 7.07117L1.01503 7.06813ZM1 7.91502H0.5V7.91504L1 7.91502ZM1.00008 10.8543L1.50008 10.8543V10.8543L1.00008 10.8543ZM1 13.148L0.499995 13.148L0.500005 13.1503L1 13.148ZM1.01356 16.1497H1.51357L1.51356 16.1475L1.01356 16.1497ZM1.01503 16.9344L0.515041 16.9374L0.515041 16.9374L1.01503 16.9344ZM1.02488 17.5952L0.525066 17.6087L0.525066 17.6087L1.02488 17.5952ZM1.1516 19.0339L1.64369 18.9453L1.64369 18.9453L1.1516 19.0339ZM1.60257 20.4009L1.15707 20.628L1.15708 20.628L1.60257 20.4009ZM3.61518 22.4114L3.3885 22.8571L3.38853 22.8571L3.61518 22.4114ZM4.98451 22.8621L5.07284 22.37L5.07281 22.37L4.98451 22.8621ZM6.42421 22.9886L6.43771 22.4888H6.43769L6.42421 22.9886ZM7.08581 22.9984L7.08887 22.4984H7.08884L7.08581 22.9984ZM7.87129 22.9999L7.8713 22.4999H7.87129V22.9999ZM10.8788 23L10.8788 23.5H10.8788V23ZM13.1538 23V23.5H13.1539L13.1538 23ZM16.1555 22.9999V22.4999H16.1555L16.1555 22.9999ZM16.9395 22.9984L16.9365 22.4984H16.9365L16.9395 22.9984ZM17.5998 22.9886L17.6133 23.4884H17.6133L17.5998 22.9886ZM19.0373 22.862L19.1258 23.3541H19.1258L19.0373 22.862ZM20.4032 22.4115L20.1762 21.966L20.1762 21.966L20.4032 22.4115ZM21.5668 21.5655L21.2131 21.2121L21.2131 21.2121L21.5668 21.5655ZM22.412 20.4011L22.8577 20.6278L22.8577 20.6278L22.412 20.4011ZM22.8623 19.0333L23.3545 19.1217L23.3545 19.1217L22.8623 19.0333ZM22.9887 17.5952L22.4889 17.5817V17.5817L22.9887 17.5952ZM22.9985 16.9344L22.4985 16.9313L22.4985 16.9314L22.9985 16.9344ZM23 16.1497H23.5V16.1497L23 16.1497ZM23 7.85169H23.5C23.5 7.59099 23.5001 7.32812 23.4985 7.06507L22.9985 7.06813L22.4985 7.0712C22.5001 7.33054 22.5 7.59006 22.5 7.85169H23ZM22.9985 7.06813L23.4985 7.06516C23.4972 6.84347 23.4946 6.61956 23.4885 6.39462L22.9887 6.40822L22.4889 6.42181C22.4947 6.63671 22.4972 6.85274 22.4985 7.07111L22.9985 7.06813ZM22.9887 6.40822L23.4885 6.39474C23.4753 5.90713 23.4463 5.39412 23.3543 4.88296L22.8622 4.97147L22.3701 5.05997C22.4487 5.49679 22.4762 5.95065 22.4889 6.42169L22.9887 6.40822ZM22.8622 4.97147L23.3543 4.88299C23.2604 4.36025 23.1051 3.86518 22.8577 3.37937L22.4121 3.60627L21.9666 3.83317C22.1641 4.22111 22.2912 4.62104 22.3701 5.05995L22.8622 4.97147ZM22.4121 3.60627L22.8577 3.37933C22.615 2.90303 22.2982 2.46734 21.9202 2.08961L21.5668 2.44329L21.2134 2.79697C21.5172 3.10054 21.7718 3.45071 21.9666 3.8332L22.4121 3.60627ZM21.5668 2.44329L21.9203 2.08966C21.5424 1.71195 21.1066 1.39536 20.6302 1.15291L20.4034 1.59854L20.1766 2.04416C20.5593 2.23888 20.9096 2.49333 21.2133 2.79693L21.5668 2.44329ZM20.4034 1.59854L20.6302 1.15291C20.1439 0.905457 19.6483 0.750255 19.1251 0.656315L19.0367 1.14845L18.9484 1.64058C19.3879 1.71949 19.7883 1.84654 20.1766 2.04416L20.4034 1.59854ZM19.0367 1.14845L19.1251 0.656316C18.614 0.564535 18.1009 0.535513 17.6133 0.522342L17.5998 1.02216L17.5863 1.52198C18.0574 1.5347 18.5115 1.56212 18.9484 1.64058L19.0367 1.14845ZM17.5998 1.02216L17.6133 0.522343C17.3883 0.516254 17.1643 0.513716 16.9426 0.512344L16.9395 1.01233L16.9364 1.51233C17.155 1.51368 17.3712 1.51616 17.5863 1.52198L17.5998 1.02216ZM16.9395 1.01233L16.9426 0.512344C16.6794 0.510731 16.4163 0.510866 16.1555 0.510866V1.01087V1.51087C16.4174 1.51087 16.677 1.51074 16.9365 1.51233L16.9395 1.01233ZM16.1555 1.01087L16.1573 0.51087L13.1231 0.500003L13.1213 1L13.1195 1.5L16.1537 1.51086L16.1555 1.01087ZM13.1213 1V0.5H10.8519V1V1.5H13.1213V1ZM10.8519 1L10.85 0.500003L7.86947 0.51087L7.87129 1.01087L7.87311 1.51086L10.8537 1.5L10.8519 1ZM7.87129 1.01087V0.510866C7.60997 0.510866 7.34642 0.510731 7.08273 0.512344L7.08578 1.01233L7.08884 1.51233C7.34882 1.51074 7.60894 1.51087 7.87129 1.51087V1.01087ZM7.08578 1.01233L7.0827 0.512344C6.86059 0.513715 6.63621 0.516254 6.41072 0.522342L6.42421 1.02216L6.43771 1.52198C6.65323 1.51616 6.86981 1.51368 7.08887 1.51233L7.08578 1.01233ZM6.42421 1.02216L6.41074 0.522342C5.92208 0.535512 5.40792 0.564559 4.89568 0.656433L4.98395 1.14858L5.07222 1.64073C5.51029 1.56215 5.96546 1.53471 6.43769 1.52198L6.42421 1.02216ZM4.98395 1.14858L4.89573 0.656424C4.37197 0.750308 3.87583 0.905404 3.389 1.15262L3.61539 1.59843L3.84178 2.04424C4.23078 1.84671 4.63194 1.71965 5.07217 1.64074L4.98395 1.14858ZM3.61539 1.59843L3.38899 1.15262C2.91168 1.39503 2.47503 1.71157 2.09638 2.08931L2.44951 2.44329L2.80263 2.79727C3.10704 2.4936 3.45817 2.23905 3.84179 2.04424L3.61539 1.59843ZM2.44951 2.44329L2.0964 2.0893C1.71781 2.46693 1.40041 2.90251 1.15732 3.37878L1.60267 3.60608L2.04802 3.83338C2.24317 3.45102 2.49825 3.1009 2.80262 2.79729L2.44951 2.44329ZM1.60267 3.60608L1.15733 3.37877C0.909192 3.86492 0.753601 4.36036 0.659383 4.88338L1.15146 4.97203L1.64354 5.06067C1.72265 4.62151 1.84996 4.22142 2.04802 3.83339L1.60267 3.60608ZM1.15146 4.97203L0.659379 4.8834C0.567345 5.39443 0.538266 5.90732 0.525041 6.39465L1.02486 6.40822L1.52467 6.42178C1.53745 5.95088 1.56492 5.49722 1.64355 5.06065L1.15146 4.97203ZM1.02486 6.40822L0.525038 6.39475C0.518979 6.6196 0.516386 6.84343 0.515041 7.0651L1.01503 7.06813L1.51502 7.07117C1.51635 6.85284 1.51888 6.63672 1.52468 6.42168L1.02486 6.40822ZM1.01503 7.06813L0.515041 7.06507C0.514274 7.19006 0.510666 7.33114 0.507063 7.47944C0.503525 7.62505 0.5 7.77741 0.5 7.91502H1H1.5C1.5 7.79144 1.50319 7.65097 1.50677 7.50373C1.51028 7.35919 1.51419 7.20742 1.51502 7.0712L1.01503 7.06813ZM1 7.91502L0.5 7.91504L0.50008 10.8543L1.00008 10.8543L1.50008 10.8543L1.5 7.91501L1 7.91502ZM1.00008 10.8543L0.50008 10.8543L0.5 13.148L1 13.148L1.5 13.148L1.50008 10.8543L1.00008 10.8543ZM1 13.148L0.500005 13.1503L0.513568 16.152L1.01356 16.1497L1.51356 16.1475L1.49999 13.1458L1 13.148ZM1.01356 16.1497H0.513563C0.513563 16.4108 0.513454 16.674 0.515041 16.9374L1.01503 16.9344L1.51502 16.9314C1.51346 16.6716 1.51356 16.4118 1.51356 16.1497H1.01356ZM1.01503 16.9344L0.515041 16.9374C0.516386 17.1594 0.518979 17.3835 0.525066 17.6087L1.02488 17.5952L1.5247 17.5817C1.51888 17.3664 1.51635 17.15 1.51502 16.9313L1.01503 16.9344ZM1.02488 17.5952L0.525066 17.6087C0.538265 18.0969 0.567398 18.6106 0.6595 19.1225L1.1516 19.0339L1.64369 18.9453C1.56497 18.5079 1.53745 18.0534 1.5247 17.5817L1.02488 17.5952ZM1.1516 19.0339L0.6595 19.1225C0.753676 19.6458 0.909205 20.1415 1.15707 20.628L1.60257 20.4009L2.04806 20.1739C1.85011 19.7855 1.72279 19.3849 1.64369 18.9453L1.1516 19.0339ZM1.60257 20.4009L1.15708 20.628C1.40015 21.1049 1.71757 21.5411 2.09615 21.9193L2.44951 21.5655L2.80287 21.2118C2.49843 20.9077 2.24327 20.557 2.04805 20.1739L1.60257 20.4009ZM2.44951 21.5655L2.09615 21.9193C2.47473 22.2974 2.91125 22.6144 3.3885 22.8571L3.61518 22.4114L3.84185 21.9658C3.45834 21.7707 3.10729 21.5159 2.80287 21.2118L2.44951 21.5655ZM3.61518 22.4114L3.38853 22.8571C3.87567 23.1049 4.37209 23.2602 4.89621 23.3543L4.98451 22.8621L5.07281 22.37C4.63235 22.291 4.23104 22.1637 3.84182 21.9658L3.61518 22.4114ZM4.98451 22.8621L4.89617 23.3543C5.40822 23.4462 5.92224 23.4752 6.41074 23.4884L6.42421 22.9886L6.43769 22.4888C5.96567 22.4761 5.51068 22.4486 5.07284 22.37L4.98451 22.8621ZM6.42421 22.9886L6.41072 23.4884C6.63619 23.4945 6.86058 23.4971 7.08279 23.4984L7.08581 22.9984L7.08884 22.4984C6.86987 22.4971 6.65325 22.4946 6.43771 22.4888L6.42421 22.9886ZM7.08581 22.9984L7.08275 23.4984C7.34644 23.5 7.60992 23.4999 7.87129 23.4999V22.9999V22.4999C7.60899 22.4999 7.34886 22.5 7.08887 22.4984L7.08581 22.9984ZM7.87129 22.9999L7.87128 23.4999L10.8788 23.5L10.8788 23L10.8788 22.5L7.8713 22.4999L7.87129 22.9999ZM10.8788 23V23.5H13.1538V23V22.5H10.8788V23ZM13.1538 23L13.1539 23.5L16.1556 23.4999L16.1555 22.9999L16.1555 22.4999L13.1538 22.5L13.1538 23ZM16.1555 22.9999V23.4999C16.4163 23.4999 16.6794 23.5 16.9426 23.4984L16.9395 22.9984L16.9365 22.4984C16.677 22.5 16.4174 22.4999 16.1555 22.4999V22.9999ZM16.9395 22.9984L16.9426 23.4984C17.1643 23.4971 17.3883 23.4945 17.6133 23.4884L17.5998 22.9886L17.5863 22.4888C17.3712 22.4946 17.155 22.4971 16.9365 22.4984L16.9395 22.9984ZM17.5998 22.9886L17.6133 23.4884C18.1011 23.4752 18.6144 23.4461 19.1258 23.3541L19.0373 22.862L18.9488 22.3699C18.5117 22.4485 18.0575 22.476 17.5863 22.4888L17.5998 22.9886ZM19.0373 22.862L19.1258 23.3541C19.6488 23.2601 20.1441 23.1047 20.6302 22.857L20.4032 22.4115L20.1762 21.966C19.7881 22.1638 19.388 22.2909 18.9488 22.3699L19.0373 22.862ZM20.4032 22.4115L20.6302 22.857C21.1068 22.6143 21.5426 22.2972 21.9205 21.9189L21.5668 21.5655L21.2131 21.2121C20.9093 21.5162 20.5589 21.771 20.1762 21.966L20.4032 22.4115ZM21.5668 21.5655L21.9205 21.9189C22.2984 21.5408 22.6151 21.1047 22.8577 20.6278L22.412 20.4011L21.9664 20.1744C21.7715 20.5575 21.5169 20.9081 21.2131 21.2121L21.5668 21.5655ZM22.412 20.4011L22.8577 20.6278C23.1052 20.1412 23.2605 19.6453 23.3545 19.1217L22.8623 19.0333L22.3702 18.945C22.2912 19.385 22.1641 19.7858 21.9664 20.1744L22.412 20.4011ZM22.8623 19.0333L23.3545 19.1217C23.4463 18.6101 23.4754 18.0967 23.4885 17.6087L22.9887 17.5952L22.4889 17.5817C22.4762 18.0532 22.4487 18.5077 22.3702 18.945L22.8623 19.0333ZM22.9887 17.5952L23.4885 17.6087C23.4946 17.3835 23.4972 17.1593 23.4985 16.9373L22.9985 16.9344L22.4985 16.9314C22.4972 17.15 22.4947 17.3664 22.4889 17.5817L22.9887 17.5952ZM22.9985 16.9344L23.4985 16.9375C23.5001 16.6741 23.5 16.4108 23.5 16.1497H23H22.5C22.5 16.4118 22.5001 16.6716 22.4985 16.9313L22.9985 16.9344ZM23 16.1497C23.5 16.1497 23.5 16.1497 23.5 16.1497C23.5 16.1497 23.5 16.1496 23.5 16.1496C23.5 16.1495 23.5 16.1494 23.5 16.1492C23.5 16.1488 23.5 16.1483 23.5 16.1476C23.5 16.1462 23.5 16.1441 23.5 16.1413C23.5 16.1357 23.5 16.1274 23.5 16.1166C23.5 16.095 23.5 16.0633 23.5 16.0229C23.5 15.9422 23.5 15.8268 23.5 15.6882C23.5 15.4109 23.4999 15.0406 23.4999 14.6687C23.4999 13.9249 23.4998 13.1745 23.4998 13.148H22.9998H22.4998C22.4998 13.1745 22.4999 13.925 22.4999 14.6688C22.4999 15.0407 22.5 15.4109 22.5 15.6882C22.5 15.8268 22.5 15.9422 22.5 16.023C22.5 16.0633 22.5 16.095 22.5 16.1166C22.5 16.1275 22.5 16.1357 22.5 16.1413C22.5 16.1441 22.5 16.1462 22.5 16.1476C22.5 16.1483 22.5 16.1489 22.5 16.1492C22.5 16.1494 22.5 16.1496 22.5 16.1496C22.5 16.1497 22.5 16.1497 22.5 16.1497C22.5 16.1498 22.5 16.1498 23 16.1497ZM22.9998 13.148H23.4998V10.8519H22.9998H22.4998V13.148H22.9998ZM22.9998 10.8519H23.4998C23.4998 10.8324 23.4999 10.0823 23.4999 9.33715C23.4999 8.96457 23.5 8.59321 23.5 8.315C23.5 8.17589 23.5 8.06007 23.5 7.97903C23.5 7.93851 23.5 7.90668 23.5 7.88498C23.5 7.87414 23.5 7.86582 23.5 7.86022C23.5 7.85741 23.5 7.85529 23.5 7.85387C23.5 7.85316 23.5 7.85262 23.5 7.85226C23.5 7.85208 23.5 7.85195 23.5 7.85186C23.5 7.85181 23.5 7.85178 23.5 7.85175C23.5 7.85173 23.5 7.85172 23 7.85169C22.5 7.85167 22.5 7.85168 22.5 7.8517C22.5 7.85172 22.5 7.85176 22.5 7.8518C22.5 7.85189 22.5 7.85203 22.5 7.85221C22.5 7.85256 22.5 7.8531 22.5 7.85381C22.5 7.85523 22.5 7.85736 22.5 7.86016C22.5 7.86576 22.5 7.87408 22.5 7.88493C22.5 7.90663 22.5 7.93846 22.5 7.97898C22.5 8.06002 22.5 8.17584 22.5 8.31495C22.5 8.59316 22.4999 8.96451 22.4999 9.3371C22.4999 10.0822 22.4998 10.8323 22.4998 10.8519H22.9998Z",
+                    fill: "#C0CBDA",
+                    fillOpacity: .8,
+                    mask: "url(#path-1-inside-1_8150_6803)"
+                })]
+            }), a = (0, s.jsx)("path", {
+                d: "M13.2038 20C12.6705 20 12.1638 19.8987 11.6838 19.696C11.2038 19.4933 10.7772 19.2107 10.4038 18.848C9.9985 18.9867 9.57716 19.056 9.13983 19.056C8.42516 19.056 7.76383 18.88 7.15583 18.528C6.54783 18.176 6.05716 17.696 5.68383 17.088C5.32116 16.48 5.13983 15.8027 5.13983 15.056C5.13983 14.7467 5.18249 14.4107 5.26783 14.048C4.84116 13.6533 4.51049 13.2 4.27583 12.688C4.04116 12.1653 3.92383 11.6213 3.92383 11.056C3.92383 10.48 4.04649 9.92533 4.29183 9.392C4.53716 8.85867 4.87849 8.4 5.31583 8.016C5.76383 7.62133 6.28116 7.34933 6.86783 7.2C6.98516 6.592 7.23049 6.048 7.60383 5.568C7.98783 5.07733 8.45716 4.69333 9.01183 4.416C9.56649 4.13867 10.1585 4 10.7878 4C11.3212 4 11.8278 4.10133 12.3078 4.304C12.7878 4.50667 13.2145 4.78933 13.5878 5.152C13.9932 5.01333 14.4145 4.944 14.8518 4.944C15.5665 4.944 16.2278 5.12 16.8358 5.472C17.4438 5.824 17.9292 6.304 18.2918 6.912C18.6652 7.52 18.8518 8.19733 18.8518 8.944C18.8518 9.25333 18.8092 9.58933 18.7238 9.952C19.1505 10.3467 19.4812 10.8053 19.7158 11.328C19.9505 11.84 20.0678 12.3787 20.0678 12.944C20.0678 13.52 19.9452 14.0747 19.6998 14.608C19.4545 15.1413 19.1078 15.6053 18.6598 16C18.2225 16.384 17.7105 16.6507 17.1238 16.8C17.0065 17.408 16.7558 17.952 16.3718 18.432C15.9985 18.9227 15.5345 19.3067 14.9798 19.584C14.4252 19.8613 13.8332 20 13.2038 20ZM9.28383 17.824C9.78516 17.824 10.2278 17.712 10.6118 17.488L13.5078 15.824C13.6252 15.7493 13.6838 15.648 13.6838 15.52V14.4L10.1158 16.448C9.78516 16.64 9.45449 16.64 9.12383 16.448L6.37183 14.864C6.37183 14.8747 6.37183 14.8907 6.37183 14.912C6.37183 14.9333 6.37183 14.96 6.37183 14.992C6.37183 15.5147 6.4945 15.9947 6.73983 16.432C6.99583 16.8587 7.34783 17.1947 7.79583 17.44C8.24383 17.696 8.73983 17.824 9.28383 17.824ZM9.42783 15.216C9.49183 15.2587 9.5505 15.28 9.60383 15.28C9.65716 15.2693 9.71583 15.248 9.77983 15.216L10.7558 14.672L7.20383 12.592C6.87316 12.4107 6.70783 12.1227 6.70783 11.728V8.576C6.23849 8.82133 5.86516 9.168 5.58783 9.616C5.32116 10.0533 5.18783 10.5387 5.18783 11.072C5.18783 11.5733 5.3105 12.0533 5.55583 12.512C5.81183 12.96 6.14249 13.3013 6.54783 13.536L9.42783 15.216ZM13.1878 18.752C13.7318 18.752 14.2225 18.6293 14.6598 18.384C15.0972 18.1387 15.4385 17.8027 15.6838 17.376C15.9398 16.9493 16.0678 16.4747 16.0678 15.952V12.624C16.0678 12.4853 16.0092 12.384 15.8918 12.32L14.9158 11.728V15.856C14.9158 16.2507 14.7505 16.5387 14.4198 16.72L11.6838 18.304C12.1532 18.6027 12.6545 18.752 13.1878 18.752ZM13.6838 13.008V10.992L12.0038 10.032L10.3078 10.992V13.008L12.0038 13.968L13.6838 13.008ZM9.07583 8.144C9.07583 7.74933 9.24116 7.46133 9.57183 7.28L12.3078 5.696C11.8385 5.39733 11.3372 5.248 10.8038 5.248C10.2705 5.248 9.78516 5.37067 9.34783 5.616C8.9105 5.86133 8.56383 6.19733 8.30783 6.624C8.0625 7.05067 7.93983 7.52533 7.93983 8.048V11.36C7.93983 11.488 7.9985 11.5947 8.11583 11.68L9.07583 12.272V8.144ZM17.2998 15.424C17.7585 15.1893 18.1212 14.848 18.3878 14.4C18.6652 13.952 18.8038 13.4613 18.8038 12.928C18.8038 12.4267 18.6758 11.952 18.4198 11.504C18.1745 11.0453 17.8492 10.6987 17.4438 10.464L14.5638 8.8C14.4998 8.75733 14.4412 8.74133 14.3878 8.752C14.3345 8.752 14.2758 8.768 14.2118 8.8L13.2358 9.328L16.8038 11.424C16.9745 11.52 17.0972 11.6373 17.1718 11.776C17.2572 11.904 17.2998 12.0693 17.2998 12.272V15.424ZM13.8758 7.52C14.2065 7.31733 14.5372 7.31733 14.8678 7.52L17.6198 9.136C17.6198 9.104 17.6198 9.072 17.6198 9.04C17.6198 8.54933 17.4972 8.08533 17.2518 7.648C17.0172 7.2 16.6758 6.84267 16.2278 6.576C15.7905 6.30933 15.2838 6.176 14.7078 6.176C14.2065 6.176 13.7638 6.288 13.3798 6.512L10.4838 8.176C10.3665 8.25067 10.3078 8.352 10.3078 8.48V9.6L13.8758 7.52Z",
+                fill: "#2C3339"
+            }), l[0] = t, l[1] = a) : (t = l[0], a = l[1]), l[2] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, s.jsxs)("filter", {
+                id: "filter0_d_8150_6803",
+                x: .583333,
+                y: 1,
+                width: 22.8333,
+                height: 22.8333,
+                filterUnits: "userSpaceOnUse",
+                colorInterpolationFilters: "sRGB",
+                children: [(0, s.jsx)("feFlood", {
+                    floodOpacity: 0,
+                    result: "BackgroundImageFix"
+                }), (0, s.jsx)("feColorMatrix", {
+                    in: "SourceAlpha",
+                    type: "matrix",
+                    values: "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0",
+                    result: "hardAlpha"
+                }), (0, s.jsx)("feOffset", {
+                    dy: .416667
+                }), (0, s.jsx)("feGaussianBlur", {
+                    stdDeviation: .208333
+                }), (0, s.jsx)("feComposite", {
+                    in2: "hardAlpha",
+                    operator: "out"
+                }), (0, s.jsx)("feColorMatrix", {
+                    type: "matrix",
+                    values: "0 0 0 0 0.172549 0 0 0 0 0.2 0 0 0 0 0.223529 0 0 0 0.36 0"
+                }), (0, s.jsx)("feBlend", {
+                    mode: "normal",
+                    in2: "BackgroundImageFix",
+                    result: "effect1_dropShadow_8150_6803"
+                }), (0, s.jsx)("feBlend", {
+                    mode: "normal",
+                    in: "SourceGraphic",
+                    in2: "effect1_dropShadow_8150_6803",
+                    result: "shape"
+                })]
+            }), l[2] = n) : n = l[2], l[3] === Symbol.for("react.memo_cache_sentinel") ? (o = (0, s.jsxs)("defs", {
+                children: [n, (0, s.jsxs)("linearGradient", {
+                    id: "paint0_linear_8150_6803",
+                    x1: 12,
+                    y1: 1,
+                    x2: 12,
+                    y2: 23,
+                    gradientUnits: "userSpaceOnUse",
+                    children: [(0, s.jsx)("stop", {
+                        stopColor: "white"
+                    }), (0, s.jsx)("stop", {
+                        offset: 1,
+                        stopColor: "#E2EAF3"
+                    })]
+                })]
+            }), l[3] = o) : o = l[3], l[4] !== e ? (i = (0, s.jsxs)("svg", {
+                width: "1em",
+                height: "1em",
+                viewBox: "0 0 24 24",
+                fill: "currentColor",
+                ...e,
+                children: [t, a, o]
+            }), l[4] = e, l[5] = i) : i = l[5], i
+        }
+    }),
+    taVj: (function(e, t, a) {
+        var s = a("ABep"),
+            r = a("QosV"),
+            n = a("oyxz"),
+            o = a("Sm6l"),
+            i = a("JNtf"),
+            l = a("mUDD");
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, c, d, u, m, p, h, C, L, f, g, x, b = (0, r.c)(34),
+                    {
+                        isPending: w,
+                        name: v,
+                        onCancel: M,
+                        onCloseAutoFocus: y,
+                        onConfirm: k,
+                        open: _
+                    } = e;
+                b[0] !== y ? (t = {
+                    onCloseAutoFocus: e => {
+                        null != y && (e.preventDefault(), y())
+                    }
+                }, b[0] = y, b[1] = t) : t = b[1];
+                let j = !w;
+                return b[2] !== w || b[3] !== M ? (a = e => {
+                    e || w || M()
+                }, b[2] = w, b[3] = M, b[4] = a) : a = b[4], b[5] !== w || b[6] !== k ? (c = e => {
+                    e.preventDefault(), w || k()
+                }, b[5] = w, b[6] = k, b[7] = c) : c = b[7], b[8] !== v ? (d = (0, s.jsx)(i.d, {
+                    children: (0, s.jsx)(n.a, {
+                        id: "inbox.automations.deleteConfirm.title",
+                        defaultMessage: "Delete {name}?",
+                        description: "Title for the delete automation confirmation dialog",
+                        values: {
+                            name: (0, s.jsx)("strong", {
+                                className: "font-semibold text-default",
+                                children: v
+                            })
+                        }
+                    })
+                }), b[8] = v, b[9] = d) : d = b[9], b[10] === Symbol.for("react.memo_cache_sentinel") ? (u = (0, s.jsx)(i.c, {
+                    children: (0, s.jsx)(n.a, {
+                        id: "inbox.automations.deleteConfirm.descriptionNoPeriod",
+                        defaultMessage: "This will permanently delete the scheduled task and stop future runs",
+                        description: "Description for the delete scheduled task confirmation dialog"
+                    })
+                }), b[10] = u) : u = b[10], b[11] !== d ? (m = (0, s.jsx)(l.e, {
+                    children: (0, s.jsx)(l.d, {
+                        title: d,
+                        subtitle: u
+                    })
+                }), b[11] = d, b[12] = m) : m = b[12], b[13] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, s.jsx)(n.a, {
+                    id: "inbox.automations.deleteConfirm.cancel",
+                    defaultMessage: "Cancel",
+                    description: "Cancel button label for delete automation confirmation dialog"
+                }), b[13] = p) : p = b[13], b[14] !== w || b[15] !== M ? (h = (0, s.jsx)(o.a, {
+                    color: "outline",
+                    disabled: w,
+                    onClick: M,
+                    children: p
+                }), b[14] = w, b[15] = M, b[16] = h) : h = b[16], b[17] === Symbol.for("react.memo_cache_sentinel") ? (C = (0, s.jsx)(n.a, {
+                    id: "inbox.automations.deleteConfirm.confirm",
+                    defaultMessage: "Delete scheduled task",
+                    description: "Confirm button label for delete scheduled task confirmation dialog"
+                }), b[17] = C) : C = b[17], b[18] !== w ? (L = (0, s.jsx)(o.a, {
+                    color: "danger",
+                    loading: w,
+                    type: "submit",
+                    children: C
+                }), b[18] = w, b[19] = L) : L = b[19], b[20] !== L || b[21] !== h ? (f = (0, s.jsx)(l.e, {
+                    children: (0, s.jsxs)(l.c, {
+                        children: [h, L]
+                    })
+                }), b[20] = L, b[21] = h, b[22] = f) : f = b[22], b[23] !== f || b[24] !== c || b[25] !== m ? (g = (0, s.jsxs)(l.b, {
+                    as: "form",
+                    onSubmit: c,
+                    children: [m, f]
+                }), b[23] = f, b[24] = c, b[25] = m, b[26] = g) : g = b[26], b[27] !== w || b[28] !== _ || b[29] !== t || b[30] !== g || b[31] !== j || b[32] !== a ? (x = (0, s.jsx)(i.a, {
+                    open: _,
+                    contentProps: t,
+                    showDialogClose: j,
+                    shouldIgnoreClickOutside: w,
+                    onOpenChange: a,
+                    children: g
+                }), b[27] = w, b[28] = _, b[29] = t, b[30] = g, b[31] = j, b[32] = a, b[33] = x) : x = b[33], x
+            }
+        })
+    }),
+    ED7I: (function(e, t, a) {
+        var s = a("ABep"),
+            r = a("QosV"),
+            n = a("BolX"),
+            o = a("zd8w"),
+            i = a("Wf1j"),
+            l = a("oyxz"),
+            c = a("SGsN"),
+            d = a("OWtl"),
+            u = a("taVj"),
+            m = a("TZBk"),
+            p = a("fGpH"),
+            h = a("Ro2M");
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, C, L, f, g, x, b = (0, r.c)(54),
+                    {
+                        item: w,
+                        onDeleted: v,
+                        onDeleteRequested: M,
+                        onPaused: y,
+                        onResumed: k,
+                        onStatusChanged: _,
+                        onEdit: j,
+                        onOpenConversation: Z,
+                        trailingMenuItems: A,
+                        renderActions: S,
+                        status: D,
+                        statusMutation: T
+                    } = e,
+                    I = (0, n.y)(d.a),
+                    P = (0, i.a)(),
+                    V = (0, n.z)(T ?? h.u),
+                    H = (0, n.z)(h.s),
+                    N = (0, n.z)(h.m),
+                    B = (0, n.z)(h.r),
+                    [O, z] = (0, o.useState)(!1),
+                    {
+                        automation: E,
+                        teamId: W
+                    } = w;
+                b[0] !== E ? (t = (0, p.l)(E), b[0] = E, b[1] = t) : t = b[1];
+                let {
+                    canManage: G,
+                    canDelete: R
+                } = t, F = G && "local" !== E.executor;
+                b[2] !== E || b[3] !== D ? (a = D ?? (0, p.p)(E), b[2] = E, b[3] = D, b[4] = a) : a = b[4];
+                let K = a,
+                    U = "completed" === K;
+                b[5] !== E ? (C = (0, p.m)(E), b[5] = E, b[6] = C) : C = b[6];
+                let X = (0, n.x)(h.j, C),
+                    q = V.isPending || H.isPending || N.isPending || B.isPending;
+                if (!G && !R || !F && U && !R) return null;
+                b[7] !== E || b[8] !== P || b[9] !== y || b[10] !== k || b[11] !== _ || b[12] !== I || b[13] !== V ? (L = e => {
+                    e && (0, p.t)(E) || V.mutate({
+                        automationId: E.id,
+                        isEnabled: e
+                    }, {
+                        onSuccess: t => {
+                            _?.(t), e ? k?.() : y?.()
+                        },
+                        onError: e => {
+                            I.get(c.f).danger(P.formatMessage({
+                                id: "inbox.automations.cloud.updateError",
+                                defaultMessage: "Could not update cloud scheduled task",
+                                description: "Toast title when updating a cloud scheduled task fails"
+                            }), {
+                                errorAnalytics: {
+                                    toastId: "inbox.automations.cloud.updateError"
+                                },
+                                description: e instanceof Error ? e.message : void 0
+                            })
+                        }
+                    })
+                }, b[7] = E, b[8] = P, b[9] = y, b[10] = k, b[11] = _, b[12] = I, b[13] = V, b[14] = L) : L = b[14];
+                let Q = L;
+                if (b[15] !== E || b[16] !== R || b[17] !== G || b[18] !== F || b[19] !== U || b[20] !== q || b[21] !== M || b[22] !== j || b[23] !== Z || b[24] !== S || b[25] !== X || b[26] !== B || b[27] !== Q || b[28] !== K || b[29] !== W || b[30] !== A || b[31] !== V.isPending || b[32] !== V.variables?.automationId) {
+                    let e, t, a;
+                    b[34] !== Q ? (e = () => Q(!1), b[34] = Q, b[35] = e) : e = b[35], b[36] !== G || b[37] !== U || b[38] !== X ? (t = G && !U && X ? (0, s.jsx)(l.a, {
+                        ...m.a.expiredResume
+                    }) : void 0, b[36] = G, b[37] = U, b[38] = X, b[39] = t) : t = b[39], b[40] !== Q ? (a = () => Q(!0), b[40] = Q, b[41] = a) : a = b[41], f = S({
+                        deleteAction: R ? {
+                            disabled: q,
+                            onSelect: M ?? (() => z(!0))
+                        } : void 0,
+                        editAction: G && !U && null != j ? {
+                            disabled: q,
+                            onSelect: j
+                        } : void 0,
+                        isCompleted: U,
+                        isPaused: "paused" === K,
+                        isStatusPending: V.isPending && V.variables?.automationId === E.id,
+                        openConversationAction: null == W && R && null != Z ? {
+                            disabled: q,
+                            onSelect: Z
+                        } : void 0,
+                        pauseAction: {
+                            disabled: !G || q,
+                            onSelect: e
+                        },
+                        pauseResumeInMenu: !0,
+                        resumeAction: {
+                            disabled: !G || q || X,
+                            disabledReason: t,
+                            onSelect: a
+                        },
+                        runNowAction: F ? {
+                            disabled: q,
+                            tooltipText: (0, s.jsx)(l.a, {
+                                id: "inbox.automations.cloud.runNowTooltip",
+                                defaultMessage: "Run the saved instructions once",
+                                description: "Tooltip for the cloud scheduled task Run now action. The run uses the task's saved instructions and does not save edits from the detail panel."
+                            }),
+                            onSelect: () => {
+                                B.mutate({
+                                    automationId: E.id,
+                                    requestBody: {
+                                        idempotency_key: crypto.randomUUID()
+                                    }
+                                })
+                            }
+                        } : void 0,
+                        trailingMenuItems: A
+                    }), b[15] = E, b[16] = R, b[17] = G, b[18] = F, b[19] = U, b[20] = q, b[21] = M, b[22] = j, b[23] = Z, b[24] = S, b[25] = X, b[26] = B, b[27] = Q, b[28] = K, b[29] = W, b[30] = A, b[31] = V.isPending, b[32] = V.variables?.automationId, b[33] = f
+                } else f = b[33];
+                return b[42] !== E || b[43] !== R || b[44] !== N || b[45] !== P || b[46] !== O || b[47] !== w || b[48] !== v || b[49] !== I ? (g = R && O ? (0, s.jsx)(u.a, {
+                    isPending: N.isPending,
+                    name: (0, p.h)(w),
+                    open: !0,
+                    onCancel: () => z(!1),
+                    onConfirm: () => {
+                        N.mutate({
+                            automationId: E.id
+                        }, {
+                            onSuccess: () => {
+                                z(!1), v?.()
+                            },
+                            onError: e => {
+                                z(!1), I.get(c.f).danger(P.formatMessage({
+                                    id: "inbox.automations.cloud.deleteError",
+                                    defaultMessage: "Could not delete cloud scheduled task",
+                                    description: "Toast title when deleting a cloud scheduled task fails"
+                                }), {
+                                    errorAnalytics: {
+                                        toastId: "inbox.automations.cloud.deleteError"
+                                    },
+                                    description: e instanceof Error ? e.message : void 0
+                                })
+                            }
+                        })
+                    }
+                }) : null, b[42] = E, b[43] = R, b[44] = N, b[45] = P, b[46] = O, b[47] = w, b[48] = v, b[49] = I, b[50] = g) : g = b[50], b[51] !== f || b[52] !== g ? (x = (0, s.jsxs)(s.Fragment, {
+                    children: [f, g]
+                }), b[51] = f, b[52] = g, b[53] = x) : x = b[53], x
+            }
+        })
+    }),
+    Xvoy: (function(e, t, a) {
+        var s = a("BolX"),
+            r = a("v7qY"),
+            n = a("OWtl");
+        let o = (0, s.h)(n.a, () => !1, e => {
+            let {
+                set: t
+            } = e, a = () => (0, r.flushSync)(() => t(!0)), s = () => t(!1);
+            return window.addEventListener("beforeprint", a), window.addEventListener("afterprint", s), () => {
+                window.removeEventListener("beforeprint", a), window.removeEventListener("afterprint", s)
+            }
+        });
+        a.d(t, {}, {
+            a: o
+        })
+    }),
+    IL1g: (function(e, t, a) {
+        var s = a("ABep"),
+            r = a("QosV"),
+            n = a("zd8w"),
+            o = a("Wf1j"),
+            i = a("ZtSy");
+        let l = [{
+            label: "OpenAI OpCo, LLC",
+            emphasize: !0
+        }, {
+            label: "대표자: Sam Altman"
+        }, {
+            label: "주소: 1455 3rd Street, San Francisco, CA 94158"
+        }, {
+            label: "전화: 02-735-2109"
+        }, {
+            label: "https://help.openai.com/ko-kr",
+            href: "https://help.openai.com/ko-kr"
+        }, {
+            label: "816-80-03326",
+            prefix: "사업자등록번호: ",
+            emphasize: !0
+        }, {
+            label: "통신판매업신고번호: 2026-공정-0022"
+        }, {
+            label: "이용 약관",
+            href: "https://openai.com/ko-KR/policies/row-terms-of-use/"
+        }, {
+            label: "호스팅 서비스 제공: Microsoft Azure"
+        }, {
+            label: "사업자 추가 정보",
+            href: "https://www.ftc.go.kr/selectBizOvrCommPop.do?apvPermMgtNo=2026%EA%B3%B5%EC%A0%950022",
+            emphasize: !0
+        }];
+
+        function c(e) {
+            let t, a, o = (0, r.c)(4),
+                {
+                    inDialog: c
+                } = e,
+                d = void 0 !== c && c;
+            return o[0] !== d ? (t = l.map((e, t) => {
+                let a = e.emphasize ? (0, s.jsx)("strong", {
+                    children: e.label
+                }) : e.label;
+                return (0, s.jsxs)(n.Fragment, {
+                    children: [t > 0 && (0, s.jsx)("span", {
+                        "aria-hidden": "true",
+                        children: "|"
+                    }), e.href ? (0, s.jsx)(i.a, {
+                        href: e.href,
+                        initiator: "open_in_browser_bridge",
+                        openTarget: d ? "external-browser" : void 0,
+                        underline: "always",
+                        children: a
+                    }) : (0, s.jsxs)("span", {
+                        children: [e.prefix, a]
+                    })]
+                }, e.label)
+            }), o[0] = d, o[1] = t) : t = o[1], o[2] !== t ? (a = (0, s.jsx)("div", {
+                className: "flex flex-wrap items-center justify-center gap-x-2 gap-y-1 text-center text-xs text-secondary select-text",
+                children: t
+            }), o[2] = t, o[3] = a) : a = o[3], a
+        }
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, n, i = (0, r.c)(5),
+                    {
+                        inDialog: l
+                    } = e,
+                    d = void 0 !== l && l,
+                    u = (0, o.a)();
+                return "ko" !== new Intl.Locale(u.locale).language ? null : (i[0] !== d ? (t = (0, s.jsx)(c, {
+                    inDialog: d
+                }), i[0] = d, i[1] = t) : t = i[1], i[2] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, s.jsx)("p", {
+                    children: "귀하가 19세 미만의 이용자로서 귀하의 법정대리인이 본 계약에 동의하지 않은 경우, 귀하 또는 귀하의 법정대리인은 계약을 취소할 수 있습니다."
+                }), i[2] = a) : a = i[2], i[3] !== t ? (n = (0, s.jsxs)("div", {
+                    className: "flex flex-col items-center gap-2 text-center text-xs text-secondary select-text",
+                    children: [t, a]
+                }), i[3] = t, i[4] = n) : n = i[4], n)
+            },
+            b: c
+        })
+    }),
+    DWXw: (function(e, t, a) {
+        a.d(t, {
+            BrowserComposerDisclaimer: () => O,
+            BrowserComposerDisclaimerMessage: () => E,
+            a: () => K
+        });
+        var s = a("ABep"),
+            r = a("QosV"),
+            n = a("BolX"),
+            o = a("Wf1j"),
+            i = a("oyxz"),
+            l = a("Qgfj"),
+            c = a("jqIZ"),
+            d = a("OFP1"),
+            u = a("EOo5"),
+            m = a("ipGa");
+
+        function p(e) {
+            let t, a, n, o, l = (0, r.c)(9),
+                {
+                    context: c
+                } = e;
+            l[0] !== c.businessName ? (t = c.businessName?.trim(), l[0] = c.businessName, l[1] = t) : t = l[1];
+            let d = t;
+            return l[2] !== d ? (a = (0, s.jsx)("p", {
+                children: d ? (0, s.jsx)(i.a, {
+                    id: "chatgpt.ads.business_agent.composer_disclosure.aggregate_usage.body.named",
+                    defaultMessage: "{businessName} can’t see this chat or your personal info — just overall usage trends to help improve their AI agent.",
+                    values: {
+                        businessName: d
+                    },
+                    description: "Privacy disclosure below the composer in every organic or sponsored Business Agent chat. It reassures users that the business cannot see the conversation or personal information and receives only aggregate usage trends to improve its AI agent. The {businessName} placeholder is the advertiser-provided business display name and may be long. Allow the sentence to wrap."
+                }) : (0, s.jsx)(i.a, {
+                    id: "chatgpt.ads.business_agent.composer_disclosure.aggregate_usage.body.unnamed",
+                    defaultMessage: "This business can’t see this chat or your personal info — just overall usage trends to help improve their AI agent.",
+                    description: "Privacy disclosure below the composer in every organic or sponsored Business Agent chat when no business display name is available. It reassures users that the business operating the agent cannot see the conversation or personal information and receives only aggregate usage trends to improve its AI agent. Allow the sentence to wrap."
+                })
+            }), l[2] = d, l[3] = a) : a = l[3], l[4] !== c.notice ? (n = c.notice?.trim() ? (0, s.jsx)("p", {
+                children: c.notice
+            }) : null, l[4] = c.notice, l[5] = n) : n = l[5], l[6] !== a || l[7] !== n ? (o = (0, s.jsxs)("div", {
+                className: "flex flex-col gap-1",
+                children: [a, n]
+            }), l[6] = a, l[7] = n, l[8] = o) : o = l[8], o
+        }
+        var h = a("YJm0"),
+            C = a("fzVa"),
+            L = a("dQRk"),
+            f = a("g2p6"),
+            g = a("jAnS"),
+            x = a("AcSY"),
+            b = a("ZtSy"),
+            w = a("Ho8f"),
+            v = a("hZax"),
+            M = a("fNyS"),
+            y = a("zd8w"),
+            k = a("IL1g"),
+            _ = a("JNtf"),
+            j = a("mUDD"),
+            Z = a("ibLK"),
+            A = a("jVko"),
+            S = a("zWHk");
+        let D = new WeakSet;
+
+        function T(e) {
+            let t, a, n, o, l = (0, r.c)(10),
+                {
+                    children: c
+                } = e,
+                d = (0, Z.a)("(width < 640px)"),
+                u = (0, y.useContext)(A.a);
+            l[0] !== u ? (t = e => {
+                if (null == u) return P;
+                let t = () => {
+                        D.add(u), e()
+                    },
+                    a = u.view.dom;
+                a.addEventListener("input", t, !0);
+                let s = (0, S.b)(u.view, t => {
+                    t && e()
+                });
+                return () => {
+                    a.removeEventListener("input", t, !0), s()
+                }
+            }, l[0] = u, l[1] = t) : t = l[1];
+            let m = t;
+            l[2] !== u ? (a = () => null == u || !u.hasText() && !D.has(u), l[2] = u, l[3] = a) : a = l[3];
+            let p = a,
+                h = (0, y.useSyncExternalStore)(m, p, I);
+            if (!d) {
+                let e;
+                return l[4] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(k.b, {}), l[4] = e) : e = l[4], e
+            }
+            return l[5] !== h ? (n = h && (0, s.jsx)(_.a, {
+                size: "responsiveSheet",
+                triggerContent: (0, s.jsx)("button", {
+                    className: "inline-flex min-h-6 min-w-6 cursor-interaction items-center justify-center text-xs text-secondary underline select-none",
+                    type: "button",
+                    children: (0, s.jsx)(i.a, {
+                        ...V.companyInformation
+                    })
+                }),
+                contentProps: {
+                    "aria-describedby": void 0
+                },
+                children: (0, s.jsxs)(j.b, {
+                    children: [(0, s.jsx)(j.d, {
+                        title: (0, s.jsx)(_.d, {
+                            children: (0, s.jsx)(i.a, {
+                                ...V.companyInformation
+                            })
+                        })
+                    }), (0, s.jsx)(j.e, {
+                        children: (0, s.jsx)(k.b, {
+                            inDialog: !0
+                        })
+                    })]
+                })
+            }), l[5] = h, l[6] = n) : n = l[6], l[7] !== c || l[8] !== n ? (o = (0, s.jsxs)("div", {
+                className: "flex flex-col items-center gap-1",
+                children: [c, n]
+            }), l[7] = c, l[8] = n, l[9] = o) : o = l[9], o
+        }
+
+        function I() {
+            return !0
+        }
+
+        function P() {}
+        let V = (0, l.f)({
+            companyInformation: {
+                id: "chatgpt.compliance.korean_regulatory.company_information.label",
+                defaultMessage: "Company info",
+                description: "Short footer link and dialog title shown to Korean-language ChatGPT users on their signed-in or signed-out mobile-web landing page. Selecting the link opens OpenAI's legally required company registration, address, support, hosting, terms, and business disclosures. Keep the label short for the mobile footer."
+            }
+        });
+        var H = a("md8w"),
+            N = a("dBtq"),
+            B = a("RGWz");
+
+        function O(e) {
+            let t, a, o, i, l = (0, r.c)(10);
+            l[0] !== e ? ({
+                supportsMessageDisclosures: a,
+                ...t
+            } = e, l[0] = e, l[1] = t, l[2] = a) : (t = l[1], a = l[2]);
+            let c = void 0 !== a && a,
+                d = (0, n.z)(H.b),
+                u = (0, n.x)(N.a, t.conversationId);
+            if ("home" !== t.placement && (c && d || !u)) return null;
+            let m = "home" === t.placement ? "empty:hidden" : void 0,
+                p = t.placement ?? "thread",
+                h = "home" === t.placement ? void 0 : z;
+            return l[3] !== t || l[4] !== h ? (o = (0, s.jsx)(E, {
+                ...t,
+                renderOrdinaryDisclaimer: h
+            }), l[3] = t, l[4] = h, l[5] = o) : o = l[5], l[6] !== m || l[7] !== p || l[8] !== o ? (i = (0, s.jsx)(w.a, {
+                browser: !0,
+                children: (0, s.jsx)(M.a, {
+                    className: m,
+                    placement: p,
+                    children: o
+                })
+            }), l[6] = m, l[7] = p, l[8] = o, l[9] = i) : i = l[9], i
+        }
+
+        function z(e) {
+            return (0, s.jsxs)(s.Fragment, {
+                children: [(0, s.jsx)(s.Fragment, {
+                    children: (0, s.jsx)(B.b, {
+                        children: e
+                    })
+                }), null]
+            })
+        }
+
+        function E(e) {
+            let t, a, l, d = (0, r.c)(28),
+                {
+                    aiServiceDisclaimer: u,
+                    conversationId: h,
+                    hasUserMessage: C,
+                    isTemporaryChat: f,
+                    ordinaryDisclaimer: b,
+                    pendingWorkspaceDisclaimer: w,
+                    placement: v,
+                    regulatedConnectorKindOverride: M,
+                    renderOrdinaryDisclaimer: y
+                } = e,
+                k = void 0 === v ? "thread" : v,
+                _ = (0, o.a)(),
+                {
+                    search: j
+                } = (0, c.Y)(),
+                {
+                    data: Z
+                } = (0, x.i)(),
+                A = (0, n.x)(L.t, h ?? null),
+                S = (0, n.x)(L.S, A?.status === "ready" && void 0 === M ? h ?? null : null);
+            d[0] !== C || d[1] !== f || d[2] !== k || d[3] !== j ? (t = (f ?? (0, g.i)(j)) && !(C ?? "thread" === k), d[0] = C, d[1] = f, d[2] = k, d[3] = j, d[4] = t) : t = d[4];
+            let D = t;
+            if (null == Z) return null == A ? w ?? null : null;
+            if (null != A) {
+                let e;
+                if ("ready" !== A.status) return null;
+                let t = void 0 !== M ? M : S;
+                if (null != t) {
+                    let e;
+                    return d[5] !== t || d[6] !== b ? (e = (0, s.jsx)(K, {
+                        ordinaryDisclaimer: b,
+                        regulatedConnectorKind: t
+                    }), d[5] = t, d[6] = b, d[7] = e) : e = d[7], e
+                }
+                return d[8] !== A.context ? (e = (0, s.jsx)(p, {
+                    context: A.context
+                }), d[8] = A.context, d[9] = e) : e = d[9], e
+            }
+            if ("workspace" === Z.structure) {
+                let e;
+                return d[10] !== Z || d[11] !== w || d[12] !== y || d[13] !== D ? (e = (0, s.jsx)(U, {
+                    account: Z,
+                    pendingWorkspaceDisclaimer: w,
+                    isTemporaryChat: D,
+                    renderOrdinaryDisclaimer: y
+                }), d[10] = Z, d[11] = w, d[12] = y, d[13] = D, d[14] = e) : e = d[14], e
+            }
+            d[15] !== b || d[16] !== y ? (a = y?.(b ?? (0, s.jsx)(i.a, {
+                ...q.personal
+            })) ?? b, d[15] = b, d[16] = y, d[17] = a) : a = d[17], d[18] !== Z.id || d[19] !== u || d[20] !== h || d[21] !== k || d[22] !== M || d[23] !== D || d[24] !== a ? (l = (0, s.jsx)(W, {
+                accountId: Z.id,
+                aiServiceDisclaimer: u,
+                conversationId: h,
+                isTemporaryChat: D,
+                ordinaryDisclaimer: a,
+                placement: k,
+                regulatedConnectorKindOverride: M
+            }), d[18] = Z.id, d[19] = u, d[20] = h, d[21] = k, d[22] = M, d[23] = D, d[24] = a, d[25] = l) : l = d[25];
+            let I = l;
+            if ("home" === k && !C && !D && !(0, m.a)() && "ko" === new Intl.Locale(_.locale).language) {
+                let e;
+                return d[26] !== I ? (e = (0, s.jsx)(T, {
+                    children: I
+                }), d[26] = I, d[27] = e) : e = d[27], e
+            }
+            return I
+        }
+
+        function W(e) {
+            let t, a = (0, r.c)(16),
+                {
+                    accountId: n,
+                    aiServiceDisclaimer: o,
+                    conversationId: i,
+                    isTemporaryChat: l,
+                    ordinaryDisclaimer: c,
+                    placement: d,
+                    regulatedConnectorKindOverride: u
+                } = e,
+                m = (0, v.h)("1831960162");
+            if (!(0, v.i)("1831960162") && !m) {
+                let e;
+                return a[0] !== n || a[1] !== o || a[2] !== i || a[3] !== l || a[4] !== c || a[5] !== d || a[6] !== u ? (e = (0, s.jsx)(G, {
+                    accountId: n,
+                    aiServiceDisclaimer: o,
+                    conversationId: i,
+                    isTemporaryChat: l,
+                    ordinaryDisclaimer: c,
+                    placement: d,
+                    regulatedConnectorKindOverride: u
+                }), a[0] = n, a[1] = o, a[2] = i, a[3] = l, a[4] = c, a[5] = d, a[6] = u, a[7] = e) : e = a[7], e
+            }
+            return a[8] !== o || a[9] !== i || a[10] !== l || a[11] !== c || a[12] !== d || a[13] !== u || a[14] !== m ? (t = (0, s.jsx)(R, {
+                aiServiceDisclaimer: o,
+                conversationId: i,
+                isTemporaryChat: l,
+                ordinaryDisclaimer: c,
+                placement: d,
+                regulatedConnectorKindOverride: u,
+                showAiServiceDisclaimer: m
+            }), a[8] = o, a[9] = i, a[10] = l, a[11] = c, a[12] = d, a[13] = u, a[14] = m, a[15] = t) : t = a[15], t
+        }
+
+        function G(e) {
+            let t, a = (0, r.c)(8),
+                {
+                    accountId: o,
+                    aiServiceDisclaimer: i,
+                    conversationId: l,
+                    isTemporaryChat: c,
+                    ordinaryDisclaimer: d,
+                    placement: m,
+                    regulatedConnectorKindOverride: p
+                } = e,
+                {
+                    userId: h
+                } = (0, u.a)(),
+                L = (0, n.z)(f.n),
+                {
+                    data: g
+                } = (0, n.z)(C.b),
+                x = null != h && L === o,
+                b = (0, v.h)(!!x && (null == g || "under_18" === g.age_status) && "1639821169");
+            return x ? (a[0] !== i || a[1] !== l || a[2] !== c || a[3] !== d || a[4] !== m || a[5] !== p || a[6] !== b ? (t = (0, s.jsx)(R, {
+                aiServiceDisclaimer: i,
+                conversationId: l,
+                isTemporaryChat: c,
+                ordinaryDisclaimer: d,
+                placement: m,
+                regulatedConnectorKindOverride: p,
+                showAiServiceDisclaimer: b
+            }), a[0] = i, a[1] = l, a[2] = c, a[3] = d, a[4] = m, a[5] = p, a[6] = b, a[7] = t) : t = a[7], t) : null
+        }
+
+        function R(e) {
+            let t, a, n = (0, r.c)(10),
+                {
+                    aiServiceDisclaimer: o,
+                    conversationId: l,
+                    isTemporaryChat: c,
+                    ordinaryDisclaimer: d,
+                    placement: u,
+                    regulatedConnectorKindOverride: p,
+                    showAiServiceDisclaimer: h
+                } = e;
+            n[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, m.a)(), n[0] = t) : t = n[0];
+            let C = t;
+            if (c) {
+                let e;
+                return n[1] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(i.a, {
+                    ...q.temporaryChat
+                }), n[1] = e) : e = n[1], e
+            }
+            if (h) {
+                let e;
+                return n[2] !== o ? (e = o ?? (0, s.jsx)(i.a, {
+                    ...q.aiService
+                }), n[2] = o, n[3] = e) : e = n[3], e
+            }
+            if (void 0 !== p) {
+                let e;
+                return null == p && (C || "home" === u) ? null : (n[4] !== d || n[5] !== p ? (e = (0, s.jsx)(K, {
+                    ordinaryDisclaimer: d,
+                    regulatedConnectorKind: p
+                }), n[4] = d, n[5] = p, n[6] = e) : e = n[6], e)
+            }
+            return "home" === u ? null : (n[7] !== l || n[8] !== d ? (a = (0, s.jsx)(F, {
+                conversationId: l,
+                isBrowserSideChat: C,
+                ordinaryDisclaimer: d
+            }), n[7] = l, n[8] = d, n[9] = a) : a = n[9], a)
+        }
+
+        function F(e) {
+            let t, a = (0, r.c)(3),
+                {
+                    conversationId: o,
+                    isBrowserSideChat: i,
+                    ordinaryDisclaimer: l
+                } = e,
+                c = (0, n.x)(L.S, o ?? null);
+            return i && null == c ? null : (a[0] !== l || a[1] !== c ? (t = (0, s.jsx)(K, {
+                ordinaryDisclaimer: l,
+                regulatedConnectorKind: c
+            }), a[0] = l, a[1] = c, a[2] = t) : t = a[2], t)
+        }
+
+        function K(e) {
+            let t, a = (0, r.c)(4),
+                {
+                    ordinaryDisclaimer: n,
+                    regulatedConnectorKind: o
+                } = e;
+            if ("finance" === o) {
+                let e;
+                return a[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(i.a, {
+                    ...q.finance
+                }), a[0] = e) : e = a[0], e
+            }
+            if ("health" === o) {
+                let e;
+                return a[1] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(i.a, {
+                    ...q.health
+                }), a[1] = e) : e = a[1], e
+            }
+            return a[2] !== n ? (t = n ?? (0, s.jsx)(i.a, {
+                ...q.personal
+            }), a[2] = n, a[3] = t) : t = a[3], t
+        }
+
+        function U(e) {
+            let t, a = (0, r.c)(10),
+                {
+                    account: o,
+                    pendingWorkspaceDisclaimer: l,
+                    isTemporaryChat: c,
+                    renderOrdinaryDisclaimer: u
+                } = e,
+                p = (0, m.a)(),
+                {
+                    data: C
+                } = (0, n.x)(h.a, o.id),
+                {
+                    data: L
+                } = (0, n.x)(d.l, o.id);
+            if (null == C || null != l && null == L) return l ?? null;
+            let f = "early-access" === C.account.workspace_type;
+            if (!f && null == L) return null;
+            let g = C.account.name ?? o.name;
+            if (L?.beta_settings.training_allowed === !0) {
+                let e;
+                a[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(i.a, {
+                    ...q.workspaceResearchPartner,
+                    values: {
+                        link: X
+                    }
+                }), a[0] = e) : e = a[0], t = e
+            } else if (f) {
+                let e;
+                a[1] !== g ? (e = null == g ? (0, s.jsx)(i.a, {
+                    ...q.earlyAccessWorkspaceWithoutName
+                }) : (0, s.jsx)(i.a, {
+                    ...q.earlyAccessWorkspace,
+                    values: {
+                        workspaceName: g
+                    }
+                }), a[1] = g, a[2] = e) : e = a[2], t = e
+            } else if (c) {
+                let e;
+                a[3] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(i.a, {
+                    ...q.workspaceTemporaryChat
+                }), a[3] = e) : e = a[3], t = e
+            } else if (null != C.account.ekm_config) {
+                let e;
+                a[4] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(i.a, {
+                    ...q.encryptedWorkspace
+                }), a[4] = e) : e = a[4], t = e
+            } else if ("k12" === o.plan_type) {
+                let e;
+                a[5] !== g ? (e = null == g ? (0, s.jsx)(i.a, {
+                    ...q.k12WorkspaceWithoutName
+                }) : (0, s.jsx)(i.a, {
+                    ...q.k12Workspace,
+                    values: {
+                        workspaceName: g
+                    }
+                }), a[5] = g, a[6] = e) : e = a[6], t = e
+            } else {
+                let e, r;
+                return p ? null : (a[7] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(i.a, {
+                    ...q.workspace
+                }), a[7] = e) : e = a[7], t = e, a[8] !== u ? (r = u?.(t) ?? t, a[8] = u, a[9] = r) : r = a[9], r)
+            }
+            return t
+        }
+
+        function X(e) {
+            return (0, s.jsx)(b.a, {
+                className: "cursor-interaction underline underline-offset-2 hover:text-default",
+                href: "https://help.openai.com/articles/20001245",
+                initiator: "open_in_browser_bridge",
+                isBrowserEnabled: !1,
+                children: e
+            })
+        }
+        let q = (0, l.f)({
+            finance: {
+                id: "mattressFinanceDisclaimer.composerDisclaimer",
+                defaultMessage: "ChatGPT can make mistakes and isn’t a licensed investment adviser or authorized to prepare tax returns.",
+                description: "Footer disclaimer shown below the ChatGPT Personal Finance chat composer on web and below the regular Chat composer after a Finance app, connector, or plugin is selected or invoked. Legal/regulatory context: U.S.-specific. ‘Licensed investment adviser’ refers to a regulated, licensed/registered professional (e.g., SEC/state registered). ‘Prepare tax returns’ means preparing and filing tax return documents for tax authorities (not ‘tax refunds’). Keep the tone as a legal disclaimer."
+            },
+            health: {
+                id: "potion.footerDisclaimer.medicalDisclaimer",
+                defaultMessage: "ChatGPT can make mistakes and isn't intended for diagnosis or treatment. Consult a doctor for medical advice.",
+                description: "Medical disclaimer under the Health message composer"
+            },
+            aiService: {
+                id: "codex.composer.browserDisclaimer.aiService",
+                defaultMessage: "ChatGPT is AI and can make mistakes. Check important info.",
+                description: "Compact legal disclosure beside the ChatGPT composer on Home and in conversations for eligible personal-account users. It explicitly identifies ChatGPT as artificial intelligence and reminds users to verify important information. Keep both sentences together; the footer may wrap on narrow screens."
+            },
+            personal: {
+                id: "codex.composer.browserDisclaimer",
+                defaultMessage: "ChatGPT can make mistakes. Check important info.",
+                description: "Compact legal disclosure above the browser conversation composer for a personal ChatGPT account, reminding users that AI responses may contain mistakes and important information should be checked."
+            },
+            temporaryChat: {
+                id: "codex.composer.browserDisclaimer.temporaryChat",
+                defaultMessage: "For safety, we may keep a copy of this chat for up to 30 days.",
+                description: "Compact privacy disclosure above the browser composer before a personal-account user sends the first message in a temporary ChatGPT conversation, explaining its maximum safety-retention period."
+            },
+            workspace: {
+                id: "codex.composer.browserDisclaimer.workspace",
+                defaultMessage: "ChatGPT can make mistakes. Workspace data isn't used to train models.",
+                description: "Compact legal and privacy disclosure above the browser composer for a Business or Enterprise workspace that has not opted in to model training, reassuring workspace members that their data is excluded from training."
+            },
+            workspaceResearchPartner: {
+                id: "codex.composer.browserDisclaimer.workspaceResearchPartner",
+                defaultMessage: "ChatGPT can make mistakes. This workspace is opted in to the ChatGPT Business Research Partner Program. <link>Learn more</link>",
+                description: "Legal and privacy disclosure above the browser composer for a Business workspace opted in to sharing its data through the ChatGPT Business Research Partner Program. The <link> tag wraps a clickable Help Center article labeled Learn more."
+            },
+            earlyAccessWorkspace: {
+                id: "codex.composer.browserDisclaimer.earlyAccessWorkspace",
+                defaultMessage: "ChatGPT can make mistakes. OpenAI uses {workspaceName} workspace data to train its models.",
+                description: "Legal and privacy disclosure above the browser composer for an early-access workspace whose data is used to train AI models. The {workspaceName} placeholder is the human-readable name of the current workspace."
+            },
+            earlyAccessWorkspaceWithoutName: {
+                id: "codex.composer.browserDisclaimer.earlyAccessWorkspaceWithoutName",
+                defaultMessage: "ChatGPT can make mistakes. OpenAI uses your workspace data to train its models.",
+                description: "Legal and privacy disclosure above the browser composer for an early-access workspace whose data is used to train AI models when the workspace has no display name."
+            },
+            workspaceTemporaryChat: {
+                id: "codex.composer.browserDisclaimer.workspaceTemporaryChat",
+                defaultMessage: "Workspace data isn't used to train models by default. For safety, we may keep a copy of this chat for up to 30 days.",
+                description: "Privacy disclosure above the browser composer before a workspace member sends the first message in a temporary ChatGPT conversation, explaining that workspace data is not used for model training and may be retained for safety for up to 30 days."
+            },
+            encryptedWorkspace: {
+                id: "codex.composer.browserDisclaimer.encryptedWorkspaceData",
+                defaultMessage: "ChatGPT can make mistakes. OpenAI doesn’t train on your workspace data, which is encrypted with keys managed by your organization.",
+                description: "Legal and privacy disclosure above the browser composer for Business, Enterprise, and ChatGPT for Teachers workspaces protected by organization-managed cryptographic encryption keys. Reassures members that OpenAI does not train on their workspace data and that their organization manages its encryption keys. Uses the same generic ChatGPT wording regardless of the workspace name or plan."
+            },
+            k12Workspace: {
+                id: "codex.composer.browserDisclaimer.k12Workspace",
+                defaultMessage: "ChatGPT for Teachers can make mistakes. OpenAI doesn't use {workspaceName} workspace data to train its models.",
+                description: "Legal and privacy disclosure above the browser composer for a ChatGPT for Teachers workspace, assuring educators that their workspace data is not used to train AI models. The {workspaceName} placeholder is the human-readable name of the school workspace."
+            },
+            k12WorkspaceWithoutName: {
+                id: "codex.composer.browserDisclaimer.k12WorkspaceWithoutName",
+                defaultMessage: "ChatGPT for Teachers can make mistakes. OpenAI doesn't use your workspace data to train its models.",
+                description: "Legal and privacy disclosure above the browser composer for a ChatGPT for Teachers workspace without a display name, assuring educators that their workspace data is not used to train AI models."
+            }
+        })
+    }),
+    md8w: (function(e, t, a) {
+        var s = a("BolX"),
+            r = a("ASxG"),
+            n = a("Cslg"),
+            o = a("OWtl"),
+            i = a("cX6x"),
+            l = a("O666");
+        let c = "623291997",
+            d = r.number().nonnegative().catch(2),
+            u = r.number().nonnegative().catch(24),
+            m = (0, s.c)(o.a, e => {
+                let {
+                    get: t
+                } = e, a = t(l.a, c), s = null == a ? (0, i.d)(c)?.value : void 0, r = null != t(n.k) && (a?.get("app_disclosure_below_message_actions", !1) ?? s?.app_disclosure_below_message_actions === !0), o = r ? a?.get("app_disclosure_impression_seconds", 2) ?? s?.app_disclosure_impression_seconds : 2, m = r ? a?.get("app_disclosure_cooldown_hours", 24) ?? s?.app_disclosure_cooldown_hours : 24;
+                return {
+                    enabled: r,
+                    aboveActions: r && (a?.get("app_disclosure_above_message_actions", !1) ?? s?.app_disclosure_above_message_actions === !0),
+                    workModeEnabled: a?.get("app_disclosure_in_work_mode", !1) ?? s?.app_disclosure_in_work_mode === !0,
+                    showOnFirstMessage: a?.get("app_disclosure_show_on_first_message", !1) ?? s?.app_disclosure_show_on_first_message === !0,
+                    impressionMs: 1e3 * d.parse(o),
+                    cooldownMs: 60 * u.parse(m) * 6e4,
+                    hideOnSend: !r || (a?.get("app_hide_disclosure_on_send", !0) ?? s?.app_hide_disclosure_on_send !== !1)
+                }
+            }, {
+                isEqual: (e, t) => e.enabled === t.enabled && e.aboveActions === t.aboveActions && e.workModeEnabled === t.workModeEnabled && e.showOnFirstMessage === t.showOnFirstMessage && e.impressionMs === t.impressionMs && e.cooldownMs === t.cooldownMs && e.hideOnSend === t.hideOnSend
+            }),
+            p = (0, s.c)(o.a, e => {
+                let {
+                    get: t
+                } = e;
+                return t(m).enabled
+            });
+        a.d(t, {}, {
+            a: m,
+            b: p
+        })
+    }),
+    dBtq: (function(e, t, a) {
+        a.d(t, {
+            a: () => g,
+            b: () => x,
+            c: () => w
+        });
+        var s = a("BolX"),
+            r = a("ASxG"),
+            n = a("Ow2S"),
+            o = a("x4uR"),
+            i = a("aFoA"),
+            l = a("dQRk"),
+            c = a("OWtl"),
+            d = a("Nwp9"),
+            u = a("md8w"),
+            m = a("AuIy"),
+            p = a("ccwJ"),
+            h = a("lX86");
+        let C = r.object({
+                at: r.number().nonnegative(),
+                messageId: r.string()
+            }),
+            L = (0, d.b)("message-disclosure-standard-impression", null, {
+                coerceStoredValue: e => C.safeParse(e).data ?? null
+            }),
+            f = (0, s.u)(c.a, 0),
+            g = (0, s.d)(c.a, (e, t) => {
+                let {
+                    get: a
+                } = t, s = null == e ? void 0 : a(l.x, e);
+                return "tpp" !== s && "flora" !== s || a(u.a).workModeEnabled
+            }),
+            x = (0, s.d)(c.a, (e, t) => {
+                let {
+                    get: a,
+                    scope: s
+                } = t, r = a(u.a);
+                if (!r.enabled || !a(g, e)) return {};
+                let c = a(i.a, e) ?? e,
+                    d = a(n.i, c);
+                if (d && r.hideOnSend) return {};
+                let C = a(l.L, e);
+                if (null == C) return {};
+                let x = a(l.R, e),
+                    b = null != x && a(o.b, x).data?.gizmo.gizmo_snorlax_type === "potion" ? "health" : null;
+                a(f);
+                let w = s.get(L),
+                    v = Date.now();
+                return function(e, t, a, s) {
+                    let r, n = arguments.length > 4 && void 0 !== arguments[4] ? arguments[4] : () => !0,
+                        o = arguments.length > 5 && void 0 !== arguments[5] && arguments[5],
+                        i = (0, m.a)(e),
+                        l = i.findLastIndex(e => "user" === e.author.role),
+                        c = {},
+                        d = s ?? "standard",
+                        u = !1,
+                        C = () => {
+                            null != r && ("standard" !== d || o && !u || n(r)) && (c[d] = r), u = u || null != r, r = void 0
+                        };
+                    for (let [e, n] of i.entries()) {
+                        "user" === n.author.role && (C(), d = s ?? "standard", t && (delete c.standard, delete c.health, delete c.finance)), d = (0, h.b)(n) ?? d;
+                        let o = (0, p.b)(n, {
+                            isActiveTurn: !1,
+                            isStreaming: !1
+                        }).some(e => "completed" === e.status && null != e.src);
+                        !(a && e > l || (0, m.m)(n)) && (o || "assistant" === n.author.role && (null == n.recipient || "all" === n.recipient) && (null == n.channel || "final" === n.channel) && ("finished_successfully" === n.status || "finished_partial_completion" === n.status)) && (r = n.id)
+                    }
+                    return C(), c
+                }({
+                    mapping: C,
+                    current_node: a(l.B, e)
+                }, r.hideOnSend, d || a(l.H, e), b, e => {
+                    var t, a, s, n;
+                    return t = e, a = w, s = r.cooldownMs, n = v, null == a || a.messageId === t || 0 === s || n < a.at || n - a.at >= s
+                }, r.showOnFirstMessage)
+            }, {
+                isEqual: (e, t) => e.standard === t.standard && e.health === t.health && e.finance === t.finance
+            }),
+            b = (0, s.d)(c.a, (e, t) => {
+                let {
+                    conversationId: a,
+                    messageId: s
+                } = e, {
+                    get: r
+                } = t, n = r(x, a);
+                return n.health === s ? "health" : n.finance === s ? "finance" : n.standard === s ? "standard" : null
+            });
+
+        function w(e, t, a) {
+            "standard" === e.get(b, {
+                conversationId: t,
+                messageId: a
+            }) && e.set(L, {
+                at: Date.now(),
+                messageId: a
+            })
+        }
+    }),
+    dKZq: (function(e, t, a) {
+        var s = a("ABep"),
+            r = a("QosV"),
+            n = a("on57"),
+            o = a("BolX"),
+            i = a("zd8w"),
+            l = a("oyxz"),
+            c = a("Xvoy"),
+            d = a("NkEl"),
+            u = a("Sm6l"),
+            m = a("oQwr"),
+            p = a("zEpR"),
+            h = a("hMRX");
+        let C = "a[href], area[href]";
+
+        function L(e, t, a) {
+            e.toggleAttribute("inert", !t), t ? null == a ? e.removeAttribute("aria-hidden") : e.setAttribute("aria-hidden", a) : e.setAttribute("aria-hidden", "true")
+        }
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, f, g, x, b, w, v, M, y, k, _, j, Z, A, S, D = (0, r.c)(59),
+                    {
+                        children: T,
+                        collapsedLineCount: I,
+                        collapseIndicator: P,
+                        textTone: V,
+                        text: H
+                    } = e,
+                    N = void 0 === I ? 20 : I,
+                    B = void 0 === P ? "ellipsis" : P,
+                    O = void 0 === V ? "default" : V,
+                    z = (0, o.z)(c.a),
+                    E = 512 * N,
+                    W = !z && "function" == typeof T && H.length > E;
+                D[0] !== N || D[1] !== W || D[2] !== H ? (t = {
+                    text: H,
+                    collapsedLineCount: N,
+                    fallbackFontSizePx: 13,
+                    forceCollapsible: W
+                }, D[0] = N, D[1] = W, D[2] = H, D[3] = t) : t = D[3];
+                let {
+                    setTextContentMeasurementRef: G,
+                    collapseState: R,
+                    handleToggleExpansion: F
+                } = (0, m.b)(t), K = !z && "collapsed" === R, U = K && "ellipsis" === B && N > 2, X = N - !!U, q = (0, i.useRef)(null);
+                D[4] !== X || D[5] !== W || D[6] !== K ? (a = () => {
+                    if (!K || W) return;
+                    let e = q.current,
+                        t = e?.firstElementChild;
+                    if (null == e || null == t) return;
+                    let a = () => {
+                        let t = e.querySelectorAll('[data-markdown-copy="code-block"]:not(pre)');
+                        if (0 === t.length) {
+                            e.style.maxHeight = `${X}lh`;
+                            return
+                        }
+                        let a = Number.parseFloat(window.getComputedStyle(e).lineHeight);
+                        if (!Number.isFinite(a)) return;
+                        let s = e.getBoundingClientRect(),
+                            r = 0 === e.offsetHeight ? 1 : s.height / e.offsetHeight,
+                            n = Math.ceil(a * X);
+                        for (let e of t) {
+                            let t = e.getBoundingClientRect(),
+                                a = (t.top - s.top) / r,
+                                o = (t.bottom - s.top) / r;
+                            a < n && o > n && (n = Math.ceil(o))
+                        }
+                        e.style.maxHeight = `${n}px`
+                    };
+                    a();
+                    let s = new ResizeObserver(a);
+                    s.observe(t);
+                    let r = new MutationObserver(a);
+                    return r.observe(t, {
+                        childList: !0,
+                        subtree: !0
+                    }), () => {
+                        s.disconnect(), r.disconnect()
+                    }
+                }, D[4] = X, D[5] = W, D[6] = K, D[7] = a) : a = D[7], D[8] !== X || D[9] !== W || D[10] !== K || D[11] !== H ? (f = [X, W, K, H], D[8] = X, D[9] = W, D[10] = K, D[11] = H, D[12] = f) : f = D[12], (0, i.useLayoutEffect)(a, f), D[13] !== K ? (g = () => {
+                    if (!K) return;
+                    let e = q.current;
+                    if (null == e) return;
+                    let t = "u" < typeof IntersectionObserver ? null : new IntersectionObserver(e => {
+                            for (let t of e) a.has(t.target) && L(t.target, t.isIntersecting && (t.target.matches(C) ? t.intersectionRatio > 0 : t.intersectionRatio >= 1), a.get(t.target) ?? null)
+                        }, {
+                            root: e,
+                            rootMargin: "0px",
+                            threshold: [Number.EPSILON, 1]
+                        }),
+                        a = new Map,
+                        s = () => {
+                            for (let s of a.keys()) e.contains(s) || (t?.unobserve(s), a.delete(s));
+                            for (let s of e.querySelectorAll('a[href], area[href], button, input, select, textarea, summary, audio[controls], video[controls], iframe, [contenteditable]:not([contenteditable="false"]), [tabindex]:not([tabindex="-1"])')) {
+                                if (a.has(s) || s.hasAttribute("inert")) continue;
+                                let r = s.getAttribute("aria-hidden");
+                                a.set(s, r), L(s, null == t && function(e, t) {
+                                    let a = e.getBoundingClientRect(),
+                                        s = t.getBoundingClientRect();
+                                    return e.matches(C) ? Math.min(a.right, s.right) > Math.max(a.left, s.left) && Math.min(a.bottom, s.bottom) > Math.max(a.top, s.top) : a.top >= s.top && a.right <= s.right && a.bottom <= s.bottom && a.left >= s.left
+                                }(s, e), r), t?.observe(s)
+                            }
+                        };
+                    s();
+                    let r = new MutationObserver(s);
+                    return r.observe(e, {
+                        childList: !0,
+                        subtree: !0
+                    }), () => {
+                        for (let [e, s] of(t?.disconnect(), r.disconnect(), a)) L(e, !0, s)
+                    }
+                }, D[13] = K, D[14] = g) : g = D[14], D[15] !== N || D[16] !== K || D[17] !== H ? (x = [N, K, H], D[15] = N, D[16] = K, D[17] = H, D[18] = x) : x = D[18], (0, i.useEffect)(g, x);
+                let Q = !z;
+                D[19] !== F || D[20] !== W || D[21] !== K || D[22] !== H ? (b = e => {
+                    if (q.current = e, null != e) return (0, d.b)(e, {
+                        highlight: "text",
+                        text: H,
+                        isTruncated: K && W,
+                        reveal: K ? F : void 0
+                    })
+                }, D[19] = F, D[20] = W, D[21] = K, D[22] = H, D[23] = b) : b = D[23];
+                let Y = K && "overflow-hidden",
+                    J = K && "fade" === B && "mask-b-from-80% mask-b-to-100%";
+                D[24] !== Y || D[25] !== J ? (w = (0, n.b)(Y, J), D[24] = Y, D[25] = J, D[26] = w) : w = D[26], D[27] !== X || D[28] !== K ? (v = K ? {
+                    maxHeight: `${X}lh`
+                } : void 0, D[27] = X, D[28] = K, D[29] = v) : v = D[29];
+                let $ = W ? void 0 : G;
+                return D[30] !== T || D[31] !== K || D[32] !== E || D[33] !== H ? (M = "function" == typeof T ? T(K ? H.slice(0, E) : H) : T, D[30] = T, D[31] = K, D[32] = E, D[33] = H, D[34] = M) : M = D[34], D[35] !== $ || D[36] !== M ? (y = (0, s.jsx)("div", {
+                    ref: $,
+                    children: M
+                }), D[35] = $, D[36] = M, D[37] = y) : y = D[37], D[38] !== b || D[39] !== w || D[40] !== v || D[41] !== y ? (k = (0, s.jsx)("div", {
+                    ref: b,
+                    className: w,
+                    style: v,
+                    children: y
+                }), D[38] = b, D[39] = w, D[40] = v, D[41] = y, D[42] = k) : k = D[42], D[43] !== k || D[44] !== Q ? (_ = (0, s.jsx)(h.a.Provider, {
+                    value: Q,
+                    children: k
+                }), D[43] = k, D[44] = Q, D[45] = _) : _ = D[45], D[46] !== U ? (j = U ? (0, s.jsx)("span", {
+                    "aria-hidden": "true",
+                    className: "block",
+                    children: "…"
+                }) : null, D[46] = U, D[47] = j) : j = D[47], D[48] !== _ || D[49] !== j ? (Z = (0, s.jsxs)("div", {
+                    className: "relative w-full min-w-0 text-size-chat leading-relaxed",
+                    children: [_, j]
+                }), D[48] = _, D[49] = j, D[50] = Z) : Z = D[50], D[51] !== R || D[52] !== F || D[53] !== z || D[54] !== O ? (A = z || "uncollapsible" === R ? null : (0, s.jsxs)(u.a, {
+                    className: (0, n.b)("mt-1.5 self-start text-size-chat", "default" === O && "text-codex-description"),
+                    "aria-expanded": "expanded" === R,
+                    "data-thread-find-skip": !0,
+                    "data-markdown-copy": "exclude",
+                    color: "user-message" === O ? "ghostUserMessage" : "disclosure",
+                    onClick: F,
+                    size: "inline",
+                    children: [(0, s.jsx)("span", {
+                        children: "expanded" === R ? (0, s.jsx)(l.a, {
+                            id: "codex.userMessage.showLess",
+                            defaultMessage: "Show less",
+                            description: "Button label for collapsing an expanded user message"
+                        }) : (0, s.jsx)(l.a, {
+                            id: "codex.userMessage.showMore",
+                            defaultMessage: "Show more",
+                            description: "Button label for expanding a truncated user message"
+                        })
+                    }), (0, s.jsx)(p.a, {
+                        className: "expanded" === R ? "icon-2xs rotate-180" : "icon-2xs"
+                    })]
+                }), D[51] = R, D[52] = F, D[53] = z, D[54] = O, D[55] = A) : A = D[55], D[56] !== Z || D[57] !== A ? (S = (0, s.jsxs)("div", {
+                    className: "flex flex-col items-end gap-1",
+                    children: [Z, A]
+                }), D[56] = Z, D[57] = A, D[58] = S) : S = D[58], S
+            }
+        })
+    }),
+    r2mP: (function(e, t, a) {
+        var s = a("ABep"),
+            r = a("QosV"),
+            n = a("zd8w"),
+            o = a("Wf1j"),
+            i = a("oyxz"),
+            l = a("ozji"),
+            c = a("dMTK");
+
+        function d(e) {
+            return (0, s.jsx)("span", {
+                className: "font-medium",
+                children: e
+            })
+        }
+
+        function u(e) {
+            return e.join("")
+        }
+
+        function m() {
+            return Date.now()
+        }
+
+        function p(e) {
+            let t, a, n, o = (0, r.c)(11),
+                {
+                    children: i,
+                    compact: l,
+                    label: c,
+                    sentAtMs: d
+                } = e,
+                u = void 0 !== l && l,
+                m = u ? "flex justify-center py-2" : "flex justify-center py-4",
+                p = null == c ? void 0 : "separator",
+                h = u ? "text-xs text-tertiary select-none" : "text-sm leading-5 font-normal text-tertiary select-none";
+            return o[0] !== d ? (t = new Date(d).toISOString(), o[0] = d, o[1] = t) : t = o[1], o[2] !== i || o[3] !== h || o[4] !== t ? (a = (0, s.jsx)("time", {
+                className: h,
+                dateTime: t,
+                children: i
+            }), o[2] = i, o[3] = h, o[4] = t, o[5] = a) : a = o[5], o[6] !== c || o[7] !== m || o[8] !== p || o[9] !== a ? (n = (0, s.jsx)("div", {
+                "aria-label": c,
+                className: m,
+                role: p,
+                "data-markdown-copy": "exclude",
+                children: a
+            }), o[6] = c, o[7] = m, o[8] = p, o[9] = a, o[10] = n) : n = o[10], n
+        }
+        a.d(t, {}, {
+            a: p,
+            b: function(e) {
+                let t, a, h, C, L, f, g, x, b = (0, r.c)(20),
+                    {
+                        sentAtMs: w,
+                        nowMs: v
+                    } = e,
+                    M = (0, o.a)(),
+                    [y] = (0, n.useState)(m);
+                if (!Number.isFinite(w)) return null;
+                if (b[0] !== M || b[1] !== y || b[2] !== v || b[3] !== w) {
+                    let {
+                        date: e,
+                        time: s,
+                        includeAt: r
+                    } = (0, c.c)(M, new Date(w), new Date(v ?? y));
+                    a = e, L = s, h = r ? l.a.older : l.a.recent, t = p, C = M.formatMessage(h, {
+                        date: a,
+                        time: L,
+                        day: u
+                    }), b[0] = M, b[1] = y, b[2] = v, b[3] = w, b[4] = t, b[5] = a, b[6] = h, b[7] = C, b[8] = L
+                } else t = b[4], a = b[5], h = b[6], C = b[7], L = b[8];
+                return b[9] !== a || b[10] !== L ? (f = {
+                    date: a,
+                    time: L,
+                    day: d
+                }, b[9] = a, b[10] = L, b[11] = f) : f = b[11], b[12] !== h || b[13] !== f ? (g = (0, s.jsx)(i.a, {
+                    ...h,
+                    values: f
+                }), b[12] = h, b[13] = f, b[14] = g) : g = b[14], b[15] !== t || b[16] !== w || b[17] !== C || b[18] !== g ? (x = (0, s.jsx)(t, {
+                    label: C,
+                    sentAtMs: w,
+                    children: g
+                }), b[15] = t, b[16] = w, b[17] = C, b[18] = g, b[19] = x) : x = b[19], x
+            }
+        })
+    }),
+    dMTK: (function(e, t, a) {
+        function s(e, t) {
+            return (Date.UTC(e.getFullYear(), e.getMonth(), e.getDate()) - Date.UTC(t.getFullYear(), t.getMonth(), t.getDate())) / 864e5
+        }
+
+        function r(e, t) {
+            let a = e.formatRelativeTime(t, "day", {
+                numeric: "auto"
+            });
+            return e.locale.startsWith("en") ? a.charAt(0).toUpperCase() + a.slice(1) : a
+        }
+        a.d(t, {}, {
+            a: s,
+            b: r,
+            c: function(e, t, a) {
+                let n = Math.max(s(a, t), 0);
+                return {
+                    date: n <= 1 ? r(e, -n) : n <= 7 ? e.formatDate(t, {
+                        weekday: "long"
+                    }) : n <= 365 ? e.formatDate(t, {
+                        weekday: "short",
+                        month: "short",
+                        day: "numeric"
+                    }) : e.formatDate(t, {
+                        month: "short",
+                        day: "numeric",
+                        year: "numeric"
+                    }),
+                    time: e.formatTime(t, {
+                        hour: "numeric",
+                        minute: "2-digit"
+                    }),
+                    includeAt: n > 7
+                }
+            },
+            d: function(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : Date.now(),
+                    a = null,
+                    s = !1;
+                return e.map(e => {
+                    if (null == e) return a = null, s = !0, null;
+                    let r = null;
+                    for (let n of e) n.breaksPreviousAdjacency && (a = null), null == r && function(e) {
+                        let {
+                            current: t,
+                            previous: a,
+                            isFirstUserTurn: s,
+                            nowMs: r
+                        } = e;
+                        return null != t.sentAtMs && !!Number.isFinite(t.sentAtMs) && (!!s && r - t.sentAtMs > 36e5 || a?.role === "assistant" && null != a.sentAtMs && Number.isFinite(a.sentAtMs) && t.sentAtMs - a.sentAtMs > ("user" === t.role ? 36e5 : 6e5))
+                    }({
+                        current: n,
+                        previous: a,
+                        isFirstUserTurn: "user" === n.role && !s,
+                        nowMs: t
+                    }) && (r = n.sentAtMs), s = s || "user" === n.role, a = n;
+                    return r
+                })
+            }
+        })
+    })
+};

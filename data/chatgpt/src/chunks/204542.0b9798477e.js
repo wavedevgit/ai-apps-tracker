@@ -27324,6 +27324,7 @@ ${e.effect}`;
                                 } catch (e) {
                                     if (!(e instanceof _.a) || !P(e)) throw ed = ed || (0, I.d)(e), e;
                                     await
+
                                     function(e, t) {
                                         return t.throwIfAborted(), new Promise(a => {
                                             let n = () => {
@@ -33797,6 +33798,7 @@ ${e.effect}`;
         function g(e, t, a, s, g) {
             if (a instanceof r.a && !0 === a.silent && (g?.errorUiType == null || g.errorUiType === n.CodexPagesErrorUiType.CODEX_PAGES_ERROR_UI_TYPE_NONE)) return;
             if (!(g?.documentType != null && "page" !== g.documentType || t.startsWith("pages.native.") || t.startsWith("pages.artifact.") || t.startsWith("pages.presentation.") || "pages.file.preview.presentation-import" === t || "pages.file.preview.workbook-import" === t || "pages.document.import" === t || "pages.catalog.recover" === t && null == s || "pages.companion.persist" === t && g?.documentType == null) && (null == s || null != s.isOfflineEngine)) return void
+
             function(e, t, a, r, s) {
                 let p, g = m(t, a);
                 try {

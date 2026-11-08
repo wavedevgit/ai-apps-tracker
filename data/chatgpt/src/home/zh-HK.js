@@ -1,1 +1,91 @@
-export const __rspack_esm_ids=[906348];export const __webpack_modules__={nDjx:(function(s,o,r){s.exports=r.p+"assets/appshot-logo.f0152cb4dd.png"}),OCvz:(function(s,o,r){s.exports=r.p+"assets/dictation-start.f6efcb404f.wav"}),DJ2e:(function(s,o,r){s.exports=r.p+"assets/dictation-stop.e3bc7ebc5e.wav"}),EBQV:(function(o){o.exports=s.ir("/cdn/assets/dotnet.js").then(function(s){return s})})};import{__webpack_require__ as s}from"./633146.7a7da82fba.js";import*as o from"./418851.7ea990b865.js";s.C(o);import*as r from"./109308.fbb414d4aa.js";s.C(r);import*as m from"./399565.a7f9c29dec.js";s.C(m);import*as a from"./257798.0b3d6025cd.js";s.C(a);import*as f from"./153380.6675e448cd.js";s.C(f);import*as t from"./617936.c61cb3b894.js";s.C(t);import*as e from"./807489.00704ce5f6.js";s.C(e);import*as p from"./337882.d56c5dd9ec.js";s.C(p);import*as i from"./955979.4ec7b9c49b.js";s.C(i);import*as j from"./646436.1f33d39585.js";s.C(j);import*as C from"./7078.e9c7fab122.js";s.C(C);import*as c from"./200429.4217a3f10d.js";s.C(c);import*as b from"./698524.cd24e3b049.js";s.C(b);import*as d from"./956483.d9bedeb1ff.js";s.C(d);import*as _ from"./87162.636a6b2a55.js";s.C(_);import*as n from"./396705.c39944bbf2.js";s.C(n);import*as x from"./155568.984a5c9de4.js";s.C(x);import*as u from"./731863.8b87e9728a.js";s.C(u);import*as l from"./767086.db77131b17.js";s.C(l);import*as v from"./76629.2edc9c8efc.js";s.C(v);import*as w from"./514085.87ea9a1275.js";s.C(w);import*as k from"./204542.91dfabf541.js";s.C(k);import*as g from"./982651.7bfd071e83.js";s.C(g);import*as h from"./673108.8e78836d0a.js";s.C(h);import*as D from"./487481.59f4896493.js";s.C(D);import*as Q from"./229522.e2e5d6765c.js";s.C(Q);import*as z from"./390575.8b3e50f119.js";s.C(z);import*as B from"./353032.600f273724.js";s.C(B);import*as E from"./637885.d599a2287f.js";s.C(E);import*as J from"./284470.fdb0479a8d.js";s.C(J);import*as K from"./226913.b323f04fd6.js";s.C(K);import*as O from"./902158.5a4b6c2c66.js";s.C(O);import*as S from"./906348.5a2f11131e.js";s.C(S);var V=s(s.s="QKS3").a;export{V as default};
+export const __rspack_esm_ids = [906348];
+export const __webpack_modules__ = {
+    nDjx: (function(s, o, r) {
+        s.exports = r.p + "assets/appshot-logo.f0152cb4dd.png"
+    }),
+    OCvz: (function(s, o, r) {
+        s.exports = r.p + "assets/dictation-start.f6efcb404f.wav"
+    }),
+    DJ2e: (function(s, o, r) {
+        s.exports = r.p + "assets/dictation-stop.e3bc7ebc5e.wav"
+    }),
+    EBQV: (function(o) {
+        o.exports = s.ir("/cdn/assets/dotnet.js").then(function(s) {
+            return s
+        })
+    })
+};
+import {
+    __webpack_require__ as s
+} from "./633146.7a7da82fba.js";
+import * as o from "./418851.7ea990b865.js";
+s.C(o);
+import * as r from "./109308.fbb414d4aa.js";
+s.C(r);
+import * as m from "./399565.a7f9c29dec.js";
+s.C(m);
+import * as a from "./257798.0b3d6025cd.js";
+s.C(a);
+import * as f from "./153380.6675e448cd.js";
+s.C(f);
+import * as t from "./617936.c61cb3b894.js";
+s.C(t);
+import * as e from "./807489.00704ce5f6.js";
+s.C(e);
+import * as p from "./337882.d56c5dd9ec.js";
+s.C(p);
+import * as i from "./955979.4ec7b9c49b.js";
+s.C(i);
+import * as j from "./646436.1f33d39585.js";
+s.C(j);
+import * as C from "./7078.e9c7fab122.js";
+s.C(C);
+import * as c from "./200429.4217a3f10d.js";
+s.C(c);
+import * as b from "./698524.cd24e3b049.js";
+s.C(b);
+import * as d from "./956483.d9bedeb1ff.js";
+s.C(d);
+import * as _ from "./87162.636a6b2a55.js";
+s.C(_);
+import * as n from "./396705.c39944bbf2.js";
+s.C(n);
+import * as x from "./155568.984a5c9de4.js";
+s.C(x);
+import * as u from "./731863.8b87e9728a.js";
+s.C(u);
+import * as l from "./767086.db77131b17.js";
+s.C(l);
+import * as v from "./76629.2edc9c8efc.js";
+s.C(v);
+import * as w from "./514085.87ea9a1275.js";
+s.C(w);
+import * as k from "./204542.91dfabf541.js";
+s.C(k);
+import * as g from "./982651.7bfd071e83.js";
+s.C(g);
+import * as h from "./673108.8e78836d0a.js";
+s.C(h);
+import * as D from "./487481.59f4896493.js";
+s.C(D);
+import * as Q from "./229522.e2e5d6765c.js";
+s.C(Q);
+import * as z from "./390575.8b3e50f119.js";
+s.C(z);
+import * as B from "./353032.600f273724.js";
+s.C(B);
+import * as E from "./637885.d599a2287f.js";
+s.C(E);
+import * as J from "./284470.fdb0479a8d.js";
+s.C(J);
+import * as K from "./226913.b323f04fd6.js";
+s.C(K);
+import * as O from "./902158.5a4b6c2c66.js";
+s.C(O);
+import * as S from "./906348.5a2f11131e.js";
+s.C(S);
+var V = s(s.s = "QKS3").a;
+export {
+    V as
+    default
+};

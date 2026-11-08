@@ -16699,16 +16699,16 @@ var lb = e((() => {})),
                 })
             }
             async
-                do() {
-                    return this.operations.length === 0 ? Promise.resolve() : (this.parallelExecute(), new Promise((e, t) => {
-                        this.emitter.on(`finish`, e), this.emitter.on(`error`, e => {
-                            this.state = db.Error, t(e)
-                        })
-                    }))
-                }
-                nextOperation() {
-                    return this.offset < this.operations.length ? this.operations[this.offset++] : null
-                }
+            do() {
+                return this.operations.length === 0 ? Promise.resolve() : (this.parallelExecute(), new Promise((e, t) => {
+                    this.emitter.on(`finish`, e), this.emitter.on(`error`, e => {
+                        this.state = db.Error, t(e)
+                    })
+                }))
+            }
+            nextOperation() {
+                return this.offset < this.operations.length ? this.operations[this.offset++] : null
+            }
             parallelExecute() {
                 if (this.state !== db.Error) {
                     if (this.completed >= this.operations.length) {
