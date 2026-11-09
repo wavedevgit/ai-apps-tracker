@@ -29,8 +29,8 @@ export const __webpack_modules__ = {
                     j = (0, a.x)(null != f && c.E, h ?? ""),
                     A = s.state?.modelFirstLanding,
                     N = u && null != A && (0, g.e)(h ?? ""),
-                    m = (0, a.x)(!!N && c.E, h ?? ""),
-                    x = (0, a.x)(!!N && I.d, "4162100792");
+                    x = (0, a.x)(!!N && c.E, h ?? ""),
+                    m = (0, a.x)(!!N && I.d, "4162100792");
                 if (null != f && (0, g.e)(h ?? "")) {
                     if (L.isLoading || !u) {
                         let t;
@@ -49,7 +49,7 @@ export const __webpack_modules__ = {
                         let t;
                         return e[2] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, i.jsx)(d.LoadingPage, {}), e[2] = t) : t = e[2], t
                     }
-                    if (!m || !x || A.accountId !== L.accountId || A.userId !== L.userId) {
+                    if (!x || !m || A.accountId !== L.accountId || A.userId !== L.userId) {
                         let t, o, a, r;
                         if (e[3] !== s.state ? (t = s.state ?? {}, e[3] = s.state, e[4] = t) : t = e[4], e[5] !== t) {
                             let {
@@ -517,7 +517,7 @@ export const __webpack_modules__ = {
         t.exports = s.p + "assets/error.f54db4f9bb.wav"
     }),
     MRPP: (function(t, e, s) {
-        var n = s("DNHP"),
+        var n = s("wWGv"),
             i = s("ASxG"),
             o = s("Cslg"),
             a = s("kpIY"),
@@ -581,18 +581,18 @@ export const __webpack_modules__ = {
                 if (j.userId !== u || j.accountId !== r || j.context.gizmoId !== s || j.expiresAt <= Date.now()) throw new DOMException("Business Agent draft unavailable", "AbortError");
                 let A = t => t(o.k) === u && t(C.n) === r && t(o.f) === r,
                     N = !1,
-                    m = t.watch(t => {
+                    x = t.watch(t => {
                         let {
                             get: e
                         } = t;
                         N = N || !A(e)
                     }),
-                    x = () => {
+                    m = () => {
                         if (N || !A(t.get)) throw new DOMException("Business Agent identity changed", "AbortError");
                         (0, c.c)(t)
                     };
                 try {
-                    null != j.context.nativeRuntimeVersion && x();
+                    null != j.context.nativeRuntimeVersion && m();
                     let i = await l.Request.safePost("/gizmos/business-agents/{business_agent_id}/interactions", {
                             requestBody: null == j.context.nativeRuntimeVersion ? void 0 : {
                                 native_runtime_version: j.context.nativeRuntimeVersion,
@@ -605,7 +605,7 @@ export const __webpack_modules__ = {
                             },
                             additionalHeaders: {
                                 "ChatGPT-Account-ID": r,
-                                [n.$b]: r,
+                                [n._b]: r,
                                 "x-openai-business-agent-interaction-id": j.context.interactionId
                             }
                         }),
@@ -626,7 +626,7 @@ export const __webpack_modules__ = {
                             context: C
                         };
                     if (null != a) {
-                        x();
+                        m();
                         let s = await (0, g.a)(t, c, i.gizmo_resource);
                         if (N) throw new DOMException("Business Agent identity changed", "AbortError");
                         if (C.businessName = s.gizmo.display.name.trim() || void 0, C.logoUrl = o.favicon_url?.trim() || s.gizmo.display.profile_picture_url?.trim() || void 0, C.headerColor = o.header_color?.trim() || s.gizmo.display.theme?.trim() || void 0, C.conversationStarters = s.gizmo.display.prompt_starters?.slice(0, 4) ?? void 0, null == j.context.nativeRuntimeVersion && !L(t, e, {
@@ -637,7 +637,7 @@ export const __webpack_modules__ = {
                     }
                     return c
                 } finally {
-                    m()
+                    x()
                 }
             },
             removeBusinessAgentDraftsForInteraction: function(t, e) {
@@ -760,7 +760,7 @@ export const __webpack_modules__ = {
     }),
     lSqO: (function(t, e, s) {
         var n = s("BolX"),
-            i = s("DNHP"),
+            i = s("wWGv"),
             o = s("ASxG"),
             a = s("Cslg"),
             r = s("nUDt"),
@@ -882,7 +882,7 @@ export const __webpack_modules__ = {
                         },
                         additionalHeaders: {
                             "ChatGPT-Account-ID": this.accountId,
-                            [i.$b]: this.accountId
+                            [i._b]: this.accountId
                         },
                         expectedIdentity: {
                             accountId: this.accountId,
@@ -1020,10 +1020,10 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as t
-} from "./633146.7a7da82fba.js";
+} from "./633146.77f467ae88.js";
 import * as e from "./680612.3c8d72f22d.js";
 t.C(e);
-import * as s from "./418851.7ea990b865.js";
+import * as s from "./418851.24af49562e.js";
 t.C(s);
 import * as n from "./109308.fbb414d4aa.js";
 t.C(n);
@@ -1033,148 +1033,146 @@ import * as o from "./257798.0b3d6025cd.js";
 t.C(o);
 import * as a from "./153380.6675e448cd.js";
 t.C(a);
-import * as r from "./617936.c61cb3b894.js";
+import * as r from "./617936.ab7454adbe.js";
 t.C(r);
-import * as l from "./807489.00704ce5f6.js";
+import * as l from "./807489.74b193586a.js";
 t.C(l);
-import * as C from "./337882.d56c5dd9ec.js";
+import * as C from "./337882.eb4e205b01.js";
 t.C(C);
-import * as g from "./955979.4ec7b9c49b.js";
+import * as g from "./955979.c147b344d3.js";
 t.C(g);
-import * as c from "./646436.1f33d39585.js";
+import * as c from "./646436.92303256ff.js";
 t.C(c);
-import * as M from "./7078.e9c7fab122.js";
+import * as M from "./7078.1a10efd8a2.js";
 t.C(M);
-import * as d from "./200429.4217a3f10d.js";
+import * as d from "./200429.6705d27d2a.js";
 t.C(d);
-import * as I from "./698524.cd24e3b049.js";
+import * as I from "./698524.7253a53056.js";
 t.C(I);
-import * as p from "./956483.d9bedeb1ff.js";
+import * as p from "./956483.cb805cdd0f.js";
 t.C(p);
 import * as h from "./87162.636a6b2a55.js";
 t.C(h);
 import * as L from "./396705.c39944bbf2.js";
 t.C(L);
-import * as u from "./155568.984a5c9de4.js";
+import * as u from "./155568.d3b291934c.js";
 t.C(u);
 import * as f from "./731863.8b87e9728a.js";
 t.C(f);
-import * as j from "./767086.db77131b17.js";
+import * as j from "./767086.6da4be4bcc.js";
 t.C(j);
-import * as A from "./76629.2edc9c8efc.js";
+import * as A from "./76629.c67c63e9cf.js";
 t.C(A);
-import * as N from "./514085.87ea9a1275.js";
+import * as N from "./514085.4d87b5885b.js";
 t.C(N);
-import * as m from "./204542.91dfabf541.js";
-t.C(m);
-import * as x from "./982651.7bfd071e83.js";
+import * as x from "./204542.cb541ce34a.js";
 t.C(x);
-import * as w from "./673108.8e78836d0a.js";
+import * as m from "./982651.7bfd071e83.js";
+t.C(m);
+import * as w from "./673108.34c2463692.js";
 t.C(w);
-import * as v from "./487481.59f4896493.js";
+import * as v from "./487481.90065b7f5d.js";
 t.C(v);
-import * as y from "./229522.e2e5d6765c.js";
+import * as y from "./229522.aca0c6dfc8.js";
 t.C(y);
-import * as D from "./390575.8b3e50f119.js";
+import * as D from "./390575.8f68283a1b.js";
 t.C(D);
-import * as T from "./353032.600f273724.js";
+import * as T from "./353032.f68e05ddda.js";
 t.C(T);
-import * as z from "./637885.d599a2287f.js";
+import * as z from "./637885.a0eaa62308.js";
 t.C(z);
-import * as b from "./284470.fdb0479a8d.js";
+import * as b from "./226913.b323f04fd6.js";
 t.C(b);
-import * as E from "./226913.b323f04fd6.js";
+import * as E from "./560170.d1abedbeb0.js";
 t.C(E);
-import * as Z from "./560170.d1abedbeb0.js";
+import * as Z from "./736465.50abf010f7.js";
 t.C(Z);
-import * as O from "./736465.50abf010f7.js";
+import * as O from "./222773.261d06366f.js";
 t.C(O);
-import * as S from "./222773.261d06366f.js";
+import * as S from "./207991.5e64358f40.js";
 t.C(S);
-import * as _ from "./207991.5e64358f40.js";
+import * as _ from "./171815.b7da87f9f2.js";
 t.C(_);
-import * as B from "./171815.b7da87f9f2.js";
+import * as B from "./843292.d031c2c8ba.js";
 t.C(B);
-import * as Y from "./843292.d031c2c8ba.js";
+import * as Y from "./431630.bbe3272fa4.js";
 t.C(Y);
-import * as k from "./431630.bbe3272fa4.js";
+import * as k from "./709075.7be359a401.js";
 t.C(k);
-import * as V from "./395286.5da972828c.js";
+import * as V from "./680164.053d26694b.js";
 t.C(V);
-import * as H from "./680164.053d26694b.js";
+import * as H from "./151915.36ef085328.js";
 t.C(H);
-import * as U from "./151915.36ef085328.js";
+import * as U from "./4304.32b5d11667.js";
 t.C(U);
-import * as G from "./4304.3a1a2c2acd.js";
+import * as G from "./164460.6c0406c438.js";
 t.C(G);
-import * as F from "./164460.6c0406c438.js";
+import * as F from "./499790.13e029bc5e.js";
 t.C(F);
-import * as P from "./499790.13e029bc5e.js";
+import * as P from "./769185.e5f456fd91.js";
 t.C(P);
-import * as R from "./769185.cfc2f35a54.js";
+import * as R from "./416239.5317b1b7e7.js";
 t.C(R);
-import * as Q from "./416239.1fc1c69c2b.js";
+import * as Q from "./355084.50dce55ec1.js";
 t.C(Q);
-import * as W from "./355084.c8db78ebfe.js";
+import * as W from "./265004.b16e595e85.js";
 t.C(W);
-import * as J from "./265004.952b55dc71.js";
+import * as J from "./907652.71496842b7.js";
 t.C(J);
-import * as X from "./907652.98fc8d08cc.js";
+import * as X from "./70086.2f4071c0e9.js";
 t.C(X);
-import * as K from "./70086.f80280271c.js";
+import * as K from "./22085.9a4256c872.js";
 t.C(K);
-import * as q from "./22085.85d146738c.js";
+import * as q from "./587936.d399d88969.js";
 t.C(q);
-import * as $ from "./587936.30398d1524.js";
+import * as $ from "./904817.dcb2b49fc8.js";
 t.C($);
-import * as tt from "./904817.df6171b729.js";
+import * as tt from "./452048.ef52437903.js";
 t.C(tt);
-import * as te from "./452048.88c186bd65.js";
+import * as te from "./252961.9d0ae10f5c.js";
 t.C(te);
-import * as ts from "./252961.9d0ae10f5c.js";
+import * as ts from "./445991.4c38ddd963.js";
 t.C(ts);
-import * as tn from "./445991.f85ebd0389.js";
+import * as tn from "./299268.105150295a.js";
 t.C(tn);
-import * as ti from "./299268.74855e1a11.js";
+import * as ti from "./478218.7dff2de054.js";
 t.C(ti);
-import * as to from "./478218.5b9f17eb9d.js";
+import * as to from "./499685.f2d7a80078.js";
 t.C(to);
-import * as ta from "./499685.268db0e0ab.js";
+import * as ta from "./428069.b599e3382a.js";
 t.C(ta);
-import * as tr from "./428069.a825a4b938.js";
+import * as tr from "./835890.f592489545.js";
 t.C(tr);
-import * as tl from "./835890.bd1ed93881.js";
+import * as tl from "./895612.be2142866c.js";
 t.C(tl);
-import * as tC from "./895612.018049f12b.js";
+import * as tC from "./466116.946e146348.js";
 t.C(tC);
-import * as tg from "./466116.6417794260.js";
+import * as tg from "./857274.756a8131ee.js";
 t.C(tg);
-import * as tc from "./857274.06860f7835.js";
+import * as tc from "./826779.9df0de8a2c.js";
 t.C(tc);
-import * as tM from "./826779.94906bdc5e.js";
+import * as tM from "./433520.4ae172653d.js";
 t.C(tM);
-import * as td from "./433520.4ae172653d.js";
+import * as td from "./546943.fa00442541.js";
 t.C(td);
-import * as tI from "./546943.fa00442541.js";
+import * as tI from "./842376.9e0b09cc8f.js";
 t.C(tI);
-import * as tp from "./842376.1503b16baf.js";
+import * as tp from "./464191.08d2fcf407.js";
 t.C(tp);
-import * as th from "./464191.55c134edbe.js";
+import * as th from "./849939.c21de56713.js";
 t.C(th);
-import * as tL from "./849939.88ce6a8dd5.js";
+import * as tL from "./308581.a4b70de2b9.js";
 t.C(tL);
-import * as tu from "./308581.b6c0a39ca2.js";
+import * as tu from "./200196.8612c7b67d.js";
 t.C(tu);
-import * as tf from "./200196.47c3e83f50.js";
+import * as tf from "./237059.cfdd51b00c.js";
 t.C(tf);
-import * as tj from "./237059.cfdd51b00c.js";
+import * as tj from "./244146.c9fde886a9.js";
 t.C(tj);
-import * as tA from "./244146.00f0183478.js";
+import * as tA from "./860004.0d1f3fca62.js";
 t.C(tA);
-import * as tN from "./860004.d86bfdd9e2.js";
-t.C(tN);
-var tm = t(t.s = "yXtd").a;
+var tN = t(t.s = "yXtd").a;
 export {
-    tm as
+    tN as
     default
 };

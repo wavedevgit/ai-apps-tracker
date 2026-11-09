@@ -5,8 +5,8 @@ export const __webpack_modules__ = {
             a: () => m
         });
         var a = t("jqIZ"),
-            r = t("ABep"),
-            n = t("QosV"),
+            n = t("ABep"),
+            r = t("QosV"),
             s = t("BolX"),
             i = t("zd8w"),
             l = t("G8V1");
@@ -15,7 +15,7 @@ export const __webpack_modules__ = {
             d = t("pICO"),
             c = t("eAav"),
             m = (0, a.hb)(function() {
-                let e, o, t, m, f, h, u = (0, n.c)(17),
+                let e, o, t, m, f, h, u = (0, r.c)(17),
                     {
                         locale: g
                     } = (0, s.y)(c.a).value,
@@ -48,8 +48,8 @@ export const __webpack_modules__ = {
                             return null
                         }
                         if ("http:" !== t.protocol && "https:" !== t.protocol || 0 === t.hostname.length || t.username.length > 0 || t.password.length > 0) return null;
-                        let r = new URL("codex://browser");
-                        return r.searchParams.set("url", t.toString()), r.toString()
+                        let n = new URL("codex://browser");
+                        return n.searchParams.set("url", t.toString()), n.toString()
                     }
                     let t = new URL("codex://new");
                     for (let o of ["prompt", "originUrl", "path"]) {
@@ -65,12 +65,12 @@ export const __webpack_modules__ = {
                 let k = w ? "mobile" : "opening";
                 return u[6] !== C ? (m = () => {
                     null != C && window.location.assign(C)
-                }, u[6] = C, u[7] = m) : m = u[7], u[8] !== C || u[9] !== b || u[10] !== k || u[11] !== m ? (f = (0, r.jsx)(d.a, {
+                }, u[6] = C, u[7] = m) : m = u[7], u[8] !== C || u[9] !== b || u[10] !== k || u[11] !== m ? (f = (0, n.jsx)(d.a, {
                     downloadPlatform: b,
                     deepLink: C,
                     status: k,
                     onOpen: m
-                }), u[8] = C, u[9] = b, u[10] = k, u[11] = m, u[12] = f) : f = u[12], u[13] !== g || u[14] !== j || u[15] !== f ? (h = (0, r.jsx)(l.a, {
+                }), u[8] = C, u[9] = b, u[10] = k, u[11] = m, u[12] = f) : f = u[12], u[13] !== g || u[14] !== j || u[15] !== f ? (h = (0, n.jsx)(l.a, {
                     locale: g,
                     defaultLocale: "en-US",
                     messages: j,
@@ -80,8 +80,8 @@ export const __webpack_modules__ = {
     }),
     pICO: (function(e, o, t) {
         var a = t("ABep"),
-            r = t("QosV"),
-            n = t("oyxz"),
+            n = t("QosV"),
+            r = t("oyxz"),
             s = t("AlDs"),
             i = t("Sm6l");
 
@@ -108,7 +108,7 @@ export const __webpack_modules__ = {
         }
         t.d(o, {}, {
             a: function(e) {
-                let o, t, s, m, f, h, u, g, b, w, j, x, C, k = (0, r.c)(42),
+                let o, t, s, m, f, h, u, g, b, w, j, x, C, k = (0, n.c)(42),
                     {
                         deepLink: y,
                         downloadPlatform: D,
@@ -117,15 +117,15 @@ export const __webpack_modules__ = {
                     } = e,
                     T = void 0 === _ ? "opening" : _,
                     G = "login" === T || "cli-login" === T;
-                return k[0] !== G ? (o = G ? (0, a.jsx)(n.a, {
+                return k[0] !== G ? (o = G ? (0, a.jsx)(r.a, {
                     id: "browser.codexDeeplink.signedIn",
                     defaultMessage: "You’re signed in",
                     description: "Heading on the desktop launcher page after browser authentication succeeds"
-                }) : null, k[0] = G, k[1] = o) : o = k[1], k[2] !== T ? (t = "mobile" === T ? (0, a.jsx)(n.a, {
+                }) : null, k[0] = G, k[1] = o) : o = k[1], k[2] !== T ? (t = "mobile" === T ? (0, a.jsx)(r.a, {
                     id: "browser.codexDeeplink.mobileTitle",
                     defaultMessage: "Open the ChatGPT desktop app on your computer",
                     description: "Heading telling mobile users to use a computer to open a desktop app link"
-                }) : null, k[2] = T, k[3] = t) : t = k[3], k[4] !== T ? (s = "opening" === T ? (0, a.jsx)(n.a, {
+                }) : null, k[2] = T, k[3] = t) : t = k[3], k[4] !== T ? (s = "opening" === T ? (0, a.jsx)(r.a, {
                     id: "browser.codexDeeplink.title",
                     defaultMessage: "Opening ChatGPT…",
                     description: "Heading on a browser launcher page while it opens the ChatGPT desktop app with a chat or browser destination"
@@ -134,14 +134,14 @@ export const __webpack_modules__ = {
                     children: [o, t, s]
                 }), k[6] = o, k[7] = t, k[8] = s, k[9] = m) : m = k[9], k[10] !== G ? (f = G ? (0, a.jsx)("p", {
                     className: "text-secondary",
-                    children: (0, a.jsx)(n.a, {
+                    children: (0, a.jsx)(r.a, {
                         id: "browser.codexDeeplink.signedInBody",
                         defaultMessage: "You’re signed in and may close this tab",
                         description: "Confirmation after desktop or CLI login finishes in the browser; closing the tab does not interrupt authentication"
                     })
                 }) : null, k[10] = G, k[11] = f) : f = k[11], k[12] !== T ? (h = "opening" === T ? (0, a.jsx)("p", {
                     className: "text-secondary",
-                    children: (0, a.jsx)(n.a, {
+                    children: (0, a.jsx)(r.a, {
                         id: "browser.codexDeeplink.body",
                         defaultMessage: "We're trying to open ChatGPT automatically. If nothing happens, download the app and try opening it again.",
                         description: "Instructions on the browser launcher page if automatic opening of a chat in the ChatGPT desktop app does not work"
@@ -149,7 +149,7 @@ export const __webpack_modules__ = {
                 }) : null, k[12] = T, k[13] = h) : h = k[13], k[14] !== y || k[15] !== G ? (u = null != y || G ? null : (0, a.jsx)("p", {
                     role: "alert",
                     className: "text-secondary",
-                    children: (0, a.jsx)(n.a, {
+                    children: (0, a.jsx)(r.a, {
                         id: "browser.codexDeeplink.missingDetails",
                         defaultMessage: "This link is missing the chat details ChatGPT needs to reopen your work",
                         description: "Error on the browser launcher page when the chat or browser URL is missing or invalid, so opening the desktop app is unavailable"
@@ -158,7 +158,7 @@ export const __webpack_modules__ = {
                     color: "primary",
                     size: "auth",
                     onClick: c,
-                    children: (0, a.jsx)(n.a, {
+                    children: (0, a.jsx)(r.a, {
                         id: "browser.codexDeeplink.download",
                         defaultMessage: "Download the app",
                         description: "Download button on the browser launcher page for installing the ChatGPT desktop app without losing the chat link"
@@ -168,7 +168,7 @@ export const __webpack_modules__ = {
                         color: "primary",
                         size: "auth",
                         onClick: d,
-                        children: (0, a.jsx)(n.a, {
+                        children: (0, a.jsx)(r.a, {
                             id: "browser.codexDeeplink.downloadAppleSilicon",
                             defaultMessage: "Download for Apple Silicon",
                             description: "Download button on the browser launcher page for the Apple Silicon version of the ChatGPT desktop app"
@@ -177,7 +177,7 @@ export const __webpack_modules__ = {
                         color: "outlineSurface",
                         size: "auth",
                         onClick: p,
-                        children: (0, a.jsx)(n.a, {
+                        children: (0, a.jsx)(r.a, {
                             id: "browser.codexDeeplink.downloadIntel",
                             defaultMessage: "Download for Intel Mac",
                             description: "Download button on the browser launcher page for the Intel Mac version of the ChatGPT desktop app"
@@ -187,7 +187,7 @@ export const __webpack_modules__ = {
                     color: "primary",
                     size: "auth",
                     onClick: l,
-                    children: (0, a.jsx)(n.a, {
+                    children: (0, a.jsx)(r.a, {
                         id: "browser.codexDeeplink.learnMore",
                         defaultMessage: "Learn more",
                         description: "Link from the mobile desktop-launcher page to information about downloading the desktop app"
@@ -197,7 +197,7 @@ export const __webpack_modules__ = {
                     size: "auth",
                     disabled: null == y,
                     onClick: P,
-                    children: (0, a.jsx)(n.a, {
+                    children: (0, a.jsx)(r.a, {
                         id: "browser.codexDeeplink.open",
                         defaultMessage: "Open ChatGPT",
                         description: "Retry button on the browser launcher page for opening a chat in the ChatGPT desktop app"
@@ -218,75 +218,73 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.7a7da82fba.js";
+} from "./633146.77f467ae88.js";
 import * as o from "./680612.3c8d72f22d.js";
 e.C(o);
-import * as t from "./418851.7ea990b865.js";
+import * as t from "./418851.24af49562e.js";
 e.C(t);
 import * as a from "./109308.fbb414d4aa.js";
 e.C(a);
-import * as r from "./399565.a7f9c29dec.js";
-e.C(r);
-import * as n from "./257798.0b3d6025cd.js";
+import * as n from "./399565.a7f9c29dec.js";
 e.C(n);
+import * as r from "./257798.0b3d6025cd.js";
+e.C(r);
 import * as s from "./153380.6675e448cd.js";
 e.C(s);
-import * as i from "./617936.c61cb3b894.js";
+import * as i from "./617936.ab7454adbe.js";
 e.C(i);
-import * as l from "./807489.00704ce5f6.js";
+import * as l from "./807489.74b193586a.js";
 e.C(l);
-import * as p from "./337882.d56c5dd9ec.js";
+import * as p from "./337882.eb4e205b01.js";
 e.C(p);
-import * as d from "./955979.4ec7b9c49b.js";
+import * as d from "./955979.c147b344d3.js";
 e.C(d);
-import * as c from "./646436.1f33d39585.js";
+import * as c from "./646436.92303256ff.js";
 e.C(c);
-import * as m from "./7078.e9c7fab122.js";
+import * as m from "./7078.1a10efd8a2.js";
 e.C(m);
-import * as f from "./200429.4217a3f10d.js";
+import * as f from "./200429.6705d27d2a.js";
 e.C(f);
-import * as h from "./698524.cd24e3b049.js";
+import * as h from "./698524.7253a53056.js";
 e.C(h);
-import * as u from "./956483.d9bedeb1ff.js";
+import * as u from "./956483.cb805cdd0f.js";
 e.C(u);
 import * as g from "./87162.636a6b2a55.js";
 e.C(g);
 import * as b from "./396705.c39944bbf2.js";
 e.C(b);
-import * as w from "./155568.984a5c9de4.js";
+import * as w from "./155568.d3b291934c.js";
 e.C(w);
 import * as j from "./731863.8b87e9728a.js";
 e.C(j);
-import * as x from "./767086.db77131b17.js";
+import * as x from "./767086.6da4be4bcc.js";
 e.C(x);
-import * as C from "./76629.2edc9c8efc.js";
+import * as C from "./76629.c67c63e9cf.js";
 e.C(C);
-import * as k from "./514085.87ea9a1275.js";
+import * as k from "./514085.4d87b5885b.js";
 e.C(k);
-import * as y from "./204542.91dfabf541.js";
+import * as y from "./204542.cb541ce34a.js";
 e.C(y);
 import * as D from "./982651.7bfd071e83.js";
 e.C(D);
-import * as _ from "./673108.8e78836d0a.js";
+import * as _ from "./673108.34c2463692.js";
 e.C(_);
-import * as P from "./487481.59f4896493.js";
+import * as P from "./487481.90065b7f5d.js";
 e.C(P);
-import * as T from "./229522.e2e5d6765c.js";
+import * as T from "./229522.aca0c6dfc8.js";
 e.C(T);
-import * as G from "./390575.8b3e50f119.js";
+import * as G from "./390575.8f68283a1b.js";
 e.C(G);
-import * as M from "./353032.600f273724.js";
+import * as M from "./353032.f68e05ddda.js";
 e.C(M);
-import * as v from "./637885.d599a2287f.js";
+import * as v from "./637885.a0eaa62308.js";
 e.C(v);
-import * as I from "./284470.fdb0479a8d.js";
+import * as I from "./226913.b323f04fd6.js";
 e.C(I);
-import * as L from "./226913.b323f04fd6.js";
+import * as L from "./965367.e7ba2a4c17.js";
 e.C(L);
-import * as S from "./965367.fcd0d2c75e.js";
-e.C(S);
-var A = e(e.s = "LZjk").a;
+var S = e(e.s = "LZjk").a;
 export {
-    A as
+    S as
     default
 };

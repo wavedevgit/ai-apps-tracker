@@ -25,15 +25,15 @@ export const __webpack_modules__ = {
                 } = (0, c.a)(),
                 _ = (0, m.a)(),
                 j = (0, r.Y)(),
-                b = (0, r.W)(j);
+                w = (0, r.W)(j);
             if (!_ || h) {
                 let e;
                 return C[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(l.LoadingPage, {}), C[0] = e) : e = C[0], e
             }
-            if (C[1] !== b) {
+            if (C[1] !== w) {
                 a = Symbol.for("react.early_return_sentinel");
                 e: {
-                    if (n = new URL(b, window.location.origin), !(e = u.safeParse({
+                    if (n = new URL(w, window.location.origin), !(e = u.safeParse({
                             accountId: n.searchParams.getAll("account_id"),
                             returnTo: n.searchParams.getAll("return_to"),
                             attempted: n.searchParams.getAll("handoff_attempt")
@@ -60,7 +60,7 @@ export const __webpack_modules__ = {
                     n.searchParams.set("return_to", t),
                     n.hash = ""
                 }
-                C[1] = b, C[2] = e, C[3] = t, C[4] = a, C[5] = n
+                C[1] = w, C[2] = e, C[3] = t, C[4] = a, C[5] = n
             } else e = C[2], t = C[3], a = C[4], n = C[5];
             if (a !== Symbol.for("react.early_return_sentinel")) return a;
             if (null == f) {
@@ -74,11 +74,11 @@ export const __webpack_modules__ = {
                     replace: !0
                 }), C[10] = o, C[11] = t) : t = C[11], t
             }
-            let w = j.pathname + n.search;
-            return C[12] !== e.data.attempted[0] || C[13] !== w ? (d = {
-                returnTo: w,
+            let b = j.pathname + n.search;
+            return C[12] !== e.data.attempted[0] || C[13] !== b ? (d = {
+                returnTo: b,
                 attempted: e.data.attempted[0]
-            }, C[12] = e.data.attempted[0], C[13] = w, C[14] = d) : d = C[14], C[15] !== e.data.accountId[0] || C[16] !== t || C[17] !== d ? (p = (0, s.jsx)(i.WorkspaceLinkRoute, {
+            }, C[12] = e.data.attempted[0], C[13] = b, C[14] = d) : d = C[14], C[15] !== e.data.accountId[0] || C[16] !== t || C[17] !== d ? (p = (0, s.jsx)(i.WorkspaceLinkRoute, {
                 accountId: e.data.accountId[0],
                 destination: t,
                 documentHandoff: d,
@@ -106,8 +106,8 @@ export const __webpack_modules__ = {
             h = a("tSEg"),
             _ = a("vLpE"),
             j = a("iPqE"),
-            b = a("hZax"),
-            w = a("dHX4");
+            w = a("hZax"),
+            b = a("dHX4");
         let g = i.string().regex(/^[a-zA-Z0-9_-]{1,255}$/),
             L = i.object({
                 source: i.tuple([i.literal("codex-code-attribution")]),
@@ -134,7 +134,7 @@ export const __webpack_modules__ = {
                 W = (0, c.W)(I),
                 q = (0, c.W)(v?.returnTo ?? I),
                 G = (0, c.W)(P),
-                O = (0, b.k)();
+                O = (0, w.k)();
             x[0] !== A || x[1] !== W || x[2] !== v || x[3] !== Z.key || x[4] !== R || x[5] !== q || x[6] !== G || x[7] !== T ? (t = ["workspace-link-account", Z.key, T, A, W, G, R, v, q], x[0] = A, x[1] = W, x[2] = v, x[3] = Z.key, x[4] = R, x[5] = q, x[6] = G, x[7] = T, x[8] = t) : t = x[8], x[9] !== A || x[10] !== V || x[11] !== I || x[12] !== v || x[13] !== Z.pathname || x[14] !== Z.search || x[15] !== R || x[16] !== q || x[17] !== O || x[18] !== G ? (a = async e => {
                 let {
                     signal: t
@@ -226,7 +226,7 @@ export const __webpack_modules__ = {
                 ...Z,
                 routeTemplate: z
             }), x[27] = Z, x[28] = Y, x[29] = z, x[30] = g) : g = x[30], x[31] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, r.jsxs)(f.a, {
-                children: [(0, r.jsx)(w.b, {}), (0, r.jsx)(C.LoadingPage, {})]
+                children: [(0, r.jsx)(b.b, {}), (0, r.jsx)(C.LoadingPage, {})]
             }), x[31] = L) : L = x[31], x[32] !== M || x[33] !== g ? (k = (0, r.jsx)(M, {
                 route: g,
                 children: L
@@ -288,8 +288,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.7a7da82fba.js";
-import * as t from "./418851.7ea990b865.js";
+} from "./633146.77f467ae88.js";
+import * as t from "./418851.24af49562e.js";
 e.C(t);
 import * as a from "./109308.fbb414d4aa.js";
 e.C(a);
@@ -299,62 +299,60 @@ import * as s from "./257798.0b3d6025cd.js";
 e.C(s);
 import * as o from "./153380.6675e448cd.js";
 e.C(o);
-import * as n from "./617936.c61cb3b894.js";
+import * as n from "./617936.ab7454adbe.js";
 e.C(n);
-import * as c from "./807489.00704ce5f6.js";
+import * as c from "./807489.74b193586a.js";
 e.C(c);
-import * as i from "./337882.d56c5dd9ec.js";
+import * as i from "./337882.eb4e205b01.js";
 e.C(i);
-import * as l from "./955979.4ec7b9c49b.js";
+import * as l from "./955979.c147b344d3.js";
 e.C(l);
-import * as m from "./646436.1f33d39585.js";
+import * as m from "./646436.92303256ff.js";
 e.C(m);
-import * as u from "./7078.e9c7fab122.js";
+import * as u from "./7078.1a10efd8a2.js";
 e.C(u);
-import * as d from "./200429.4217a3f10d.js";
+import * as d from "./200429.6705d27d2a.js";
 e.C(d);
-import * as p from "./698524.cd24e3b049.js";
+import * as p from "./698524.7253a53056.js";
 e.C(p);
-import * as C from "./956483.d9bedeb1ff.js";
+import * as C from "./956483.cb805cdd0f.js";
 e.C(C);
 import * as f from "./87162.636a6b2a55.js";
 e.C(f);
 import * as h from "./396705.c39944bbf2.js";
 e.C(h);
-import * as _ from "./155568.984a5c9de4.js";
+import * as _ from "./155568.d3b291934c.js";
 e.C(_);
 import * as j from "./731863.8b87e9728a.js";
 e.C(j);
-import * as b from "./767086.db77131b17.js";
-e.C(b);
-import * as w from "./76629.2edc9c8efc.js";
+import * as w from "./767086.6da4be4bcc.js";
 e.C(w);
-import * as g from "./514085.87ea9a1275.js";
+import * as b from "./76629.c67c63e9cf.js";
+e.C(b);
+import * as g from "./514085.4d87b5885b.js";
 e.C(g);
-import * as L from "./204542.91dfabf541.js";
+import * as L from "./204542.cb541ce34a.js";
 e.C(L);
 import * as k from "./982651.7bfd071e83.js";
 e.C(k);
-import * as y from "./673108.8e78836d0a.js";
+import * as y from "./673108.34c2463692.js";
 e.C(y);
-import * as x from "./487481.59f4896493.js";
+import * as x from "./487481.90065b7f5d.js";
 e.C(x);
-import * as A from "./229522.e2e5d6765c.js";
+import * as A from "./229522.aca0c6dfc8.js";
 e.C(A);
-import * as I from "./390575.8b3e50f119.js";
+import * as I from "./390575.8f68283a1b.js";
 e.C(I);
-import * as v from "./353032.600f273724.js";
+import * as v from "./353032.f68e05ddda.js";
 e.C(v);
-import * as S from "./637885.d599a2287f.js";
+import * as S from "./637885.a0eaa62308.js";
 e.C(S);
-import * as P from "./284470.fdb0479a8d.js";
+import * as P from "./226913.b323f04fd6.js";
 e.C(P);
-import * as R from "./226913.b323f04fd6.js";
+import * as R from "./631517.62d33d6625.js";
 e.C(R);
-import * as T from "./631517.0a6f29189a.js";
-e.C(T);
-var V = e(e.s = "YYy6").a;
+var T = e(e.s = "YYy6").a;
 export {
-    V as
+    T as
     default
 };

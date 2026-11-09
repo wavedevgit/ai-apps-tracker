@@ -41,7 +41,7 @@ export const __webpack_modules__ = {
             r = a("wvhd"),
             c = a("xvAb"),
             d = a("vhdp");
-        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(153380), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(982651), a.e(673108), a.e(487481), a.e(229522), a.e(390575), a.e(353032), a.e(637885), a.e(284470), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
+        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(153380), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(982651), a.e(673108), a.e(487481), a.e(229522), a.e(390575), a.e(353032), a.e(637885), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
             fallback: (0, s.jsx)(c.b, {}),
             errorFallback: () => (0, s.jsx)(r.a, {
                 result: void 0,
@@ -465,10 +465,10 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.7a7da82fba.js";
+} from "./633146.77f467ae88.js";
 import * as t from "./680612.3c8d72f22d.js";
 e.C(t);
-import * as a from "./418851.7ea990b865.js";
+import * as a from "./418851.24af49562e.js";
 e.C(a);
 import * as s from "./109308.fbb414d4aa.js";
 e.C(s);
@@ -478,64 +478,62 @@ import * as n from "./257798.0b3d6025cd.js";
 e.C(n);
 import * as o from "./153380.6675e448cd.js";
 e.C(o);
-import * as l from "./617936.c61cb3b894.js";
+import * as l from "./617936.ab7454adbe.js";
 e.C(l);
-import * as r from "./807489.00704ce5f6.js";
+import * as r from "./807489.74b193586a.js";
 e.C(r);
-import * as c from "./337882.d56c5dd9ec.js";
+import * as c from "./337882.eb4e205b01.js";
 e.C(c);
-import * as d from "./955979.4ec7b9c49b.js";
+import * as d from "./955979.c147b344d3.js";
 e.C(d);
-import * as m from "./646436.1f33d39585.js";
+import * as m from "./646436.92303256ff.js";
 e.C(m);
-import * as f from "./7078.e9c7fab122.js";
+import * as f from "./7078.1a10efd8a2.js";
 e.C(f);
-import * as h from "./200429.4217a3f10d.js";
+import * as h from "./200429.6705d27d2a.js";
 e.C(h);
-import * as u from "./698524.cd24e3b049.js";
+import * as u from "./698524.7253a53056.js";
 e.C(u);
-import * as x from "./956483.d9bedeb1ff.js";
+import * as x from "./956483.cb805cdd0f.js";
 e.C(x);
 import * as g from "./87162.636a6b2a55.js";
 e.C(g);
 import * as p from "./396705.c39944bbf2.js";
 e.C(p);
-import * as C from "./155568.984a5c9de4.js";
+import * as C from "./155568.d3b291934c.js";
 e.C(C);
 import * as b from "./731863.8b87e9728a.js";
 e.C(b);
-import * as j from "./767086.db77131b17.js";
+import * as j from "./767086.6da4be4bcc.js";
 e.C(j);
-import * as v from "./76629.2edc9c8efc.js";
+import * as v from "./76629.c67c63e9cf.js";
 e.C(v);
-import * as _ from "./514085.87ea9a1275.js";
+import * as _ from "./514085.4d87b5885b.js";
 e.C(_);
-import * as y from "./204542.91dfabf541.js";
+import * as y from "./204542.cb541ce34a.js";
 e.C(y);
 import * as w from "./982651.7bfd071e83.js";
 e.C(w);
-import * as k from "./673108.8e78836d0a.js";
+import * as k from "./673108.34c2463692.js";
 e.C(k);
-import * as L from "./487481.59f4896493.js";
+import * as L from "./487481.90065b7f5d.js";
 e.C(L);
-import * as M from "./229522.e2e5d6765c.js";
+import * as M from "./229522.aca0c6dfc8.js";
 e.C(M);
-import * as S from "./390575.8b3e50f119.js";
+import * as S from "./390575.8f68283a1b.js";
 e.C(S);
-import * as V from "./353032.600f273724.js";
+import * as V from "./353032.f68e05ddda.js";
 e.C(V);
-import * as N from "./637885.d599a2287f.js";
+import * as N from "./637885.a0eaa62308.js";
 e.C(N);
-import * as A from "./284470.fdb0479a8d.js";
+import * as A from "./226913.b323f04fd6.js";
 e.C(A);
-import * as P from "./226913.b323f04fd6.js";
+import * as P from "./24435.78fa6dbc91.js";
 e.C(P);
-import * as Z from "./24435.7241ba1526.js";
-e.C(Z);
-var B = e(e.s = "FaKe"),
-    T = B.a,
-    U = B.b;
+var Z = e(e.s = "FaKe"),
+    B = Z.a,
+    T = Z.b;
 export {
-    T as
-    default, U as handle
+    B as
+    default, T as handle
 };

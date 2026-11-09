@@ -21,16 +21,16 @@ export const __webpack_modules__ = {
             f = t("cVcC"),
             v = t("QvdU"),
             h = t("NnV7"),
-            C = t("dJBt"),
-            x = t("OWtl"),
+            x = t("dJBt"),
+            C = t("OWtl"),
             P = t("bIvi"),
             w = t("eShZ"),
-            j = t("WrMt"),
-            I = t("YCKz"),
+            I = t("WrMt"),
+            j = t("YCKz"),
             y = t("msAz");
 
         function D(e) {
-            let a, t, l, c, m, g, f, h, C, j, D, S, T, z, L, B = (0, n.c)(58),
+            let a, t, l, c, m, g, f, h, x, I, D, S, T, z, L, B = (0, n.c)(58),
                 {
                     snapshot: q,
                     enabled: M,
@@ -38,10 +38,10 @@ export const __webpack_modules__ = {
                     children: F
                 } = e,
                 A = void 0 !== N && N,
-                R = (0, s.y)(x.a),
+                R = (0, s.y)(C.a),
                 $ = (0, u.useId)(),
                 [E, W] = (0, u.useState)(null),
-                V = (0, s.x)(I.d, $),
+                V = (0, s.x)(j.d, $),
                 {
                     pageId: H
                 } = (0, r.cb)(),
@@ -64,8 +64,8 @@ export const __webpack_modules__ = {
                 userId: Z
             }, B[6] = $, B[7] = J, B[8] = K, B[9] = Z, B[10] = t) : t = B[10];
             let Y = t,
-                ee = (0, s.x)(null != q && I.c, Y),
-                ea = (0, s.x)(null == q ? null : I.e, Y),
+                ee = (0, s.x)(null != q && j.c, Y),
+                ea = (0, s.x)(null == q ? null : j.e, Y),
                 et = (0, s.x)(null == q ? void 0 : v.loadedSpacePageMetadata$, Y.pageId),
                 er = (0, s.x)(null != q && p.u, Y.pageId),
                 {
@@ -77,7 +77,7 @@ export const __webpack_modules__ = {
                 [es, ei] = (0, u.useState)(!1),
                 el = null == q || !M || G.pageId !== H || G.accountId !== O || G.userId !== Q || G.localUserId !== U || G.accountUserId !== X || er || et?.view_only === !0 || eo?.metadata.view_only === !0 || et?.deleted_at != null || eo?.metadata.deleted_at != null || et?.access.can_read === !1 || eo?.metadata.access.can_read === !1 || en instanceof w.FetchError && [401, 403, 404, 410].includes(en.status) || ea?.failed === !0;
             el && !es && ei(!0), B[11] !== $ || B[12] !== R ? (l = e => {
-                R.set(I.d, $, !e)
+                R.set(j.d, $, !e)
             }, B[11] = $, B[12] = R, B[13] = l) : l = B[13];
             let ec = (0, P.a)(l);
             B[14] !== ec ? (c = e => {
@@ -125,18 +125,18 @@ export const __webpack_modules__ = {
             }), B[33] = g) : g = B[33], B[34] !== F ? (f = (0, o.jsx)(u.Suspense, {
                 fallback: g,
                 children: F
-            }), B[34] = F, B[35] = f) : f = B[35], B[36] !== ef || B[37] !== f ? (h = (0, o.jsx)(I.b, {
+            }), B[34] = F, B[35] = f) : f = B[35], B[36] !== ef || B[37] !== f ? (h = (0, o.jsx)(j.b, {
                 value: ef,
                 children: f
-            }), B[36] = ef, B[37] = f, B[38] = h) : h = B[38], B[39] !== $ || B[40] !== h ? (C = (0, o.jsx)(I.a, {
+            }), B[36] = ef, B[37] = f, B[38] = h) : h = B[38], B[39] !== $ || B[40] !== h ? (x = (0, o.jsx)(j.a, {
                 value: $,
                 children: h
-            }), B[39] = $, B[40] = h, B[41] = C) : C = B[41], B[42] !== eb || B[43] !== ep || B[44] !== C ? (j = (0, o.jsx)("div", {
+            }), B[39] = $, B[40] = h, B[41] = x) : x = B[41], B[42] !== eb || B[43] !== ep || B[44] !== x ? (I = (0, o.jsx)("div", {
                 className: "flex min-h-0 flex-1 flex-col",
                 inert: eb,
                 "aria-hidden": ep,
-                children: C
-            }), B[42] = eb, B[43] = ep, B[44] = C, B[45] = j) : j = B[45];
+                children: x
+            }), B[42] = eb, B[43] = ep, B[44] = x, B[45] = I) : I = B[45];
             let ev = A ? y.a.PageSnapshotCover : "inset-0";
             return B[46] !== ev ? (D = (0, d.b)("pointer-events-none absolute flex min-h-0 flex-col", ev), B[46] = ev, B[47] = D) : D = B[47], B[48] === Symbol.for("react.memo_cache_sentinel") ? (S = (0, o.jsx)("div", {
                 ref: W,
@@ -147,11 +147,11 @@ export const __webpack_modules__ = {
             }), B[49] = eu, B[50] = T) : T = B[50], B[51] !== D || B[52] !== T ? (z = (0, o.jsxs)("div", {
                 className: D,
                 children: [S, T]
-            }), B[51] = D, B[52] = T, B[53] = z) : z = B[53], B[54] !== eg || B[55] !== j || B[56] !== z ? (L = (0, o.jsxs)("div", {
+            }), B[51] = D, B[52] = T, B[53] = z) : z = B[53], B[54] !== eg || B[55] !== I || B[56] !== z ? (L = (0, o.jsxs)("div", {
                 ref: eg,
                 className: "relative flex min-h-0 flex-1 flex-col",
-                children: [j, z]
-            }), B[54] = eg, B[55] = j, B[56] = z, B[57] = L) : L = B[57], L
+                children: [I, z]
+            }), B[54] = eg, B[55] = I, B[56] = z, B[57] = L) : L = B[57], L
         }
 
         function k(e) {
@@ -164,7 +164,7 @@ export const __webpack_modules__ = {
                 } = e;
             r[0] !== l || r[1] !== i || r[2] !== s ? (a = e => {
                 if (null != e) return i(s), () => {
-                    s && (0, j.e)(), i(!1), s && l?.(e)
+                    s && (0, I.e)(), i(!1), s && l?.(e)
                 }
             }, r[0] = l, r[1] = i, r[2] = s, r[3] = a) : a = r[3];
             let d = a,
@@ -182,42 +182,42 @@ export const __webpack_modules__ = {
         }
 
         function _(e) {
-            let a, t, i, d, p, f, v, C, w = (0, n.c)(30),
+            let a, t, i, d, p, f, v, x, w = (0, n.c)(30),
                 {
-                    mountId: j,
+                    mountId: I,
                     snapshot: D,
                     setClientCovered: _
                 } = e,
-                T = (0, s.y)(x.a),
+                T = (0, s.y)(C.a),
                 z = (0, u.useRef)(null),
                 {
                     pageId: L
                 } = (0, r.cb)(),
                 B = (0, s.z)(b.f),
                 q = (0, s.z)(b.j);
-            w[0] !== j || w[1] !== D.accountId || w[2] !== D.pageId || w[3] !== D.userId ? (a = {
-                mountId: j,
+            w[0] !== I || w[1] !== D.accountId || w[2] !== D.pageId || w[3] !== D.userId ? (a = {
+                mountId: I,
                 pageId: D.pageId,
                 accountId: D.accountId,
                 userId: D.userId
-            }, w[0] = j, w[1] = D.accountId, w[2] = D.pageId, w[3] = D.userId, w[4] = a) : a = w[4];
-            let M = (0, s.x)(I.e, a),
+            }, w[0] = I, w[1] = D.accountId, w[2] = D.pageId, w[3] = D.userId, w[4] = a) : a = w[4];
+            let M = (0, s.x)(j.e, a),
                 N = L !== D.pageId || B !== D.accountId || q !== D.userId || M?.failed === !0,
                 [F, A] = (0, u.useState)(!1),
                 R = null != M && !M.failed && M.sequence >= D.throughSequence;
             !F && R && A(!0);
             let $ = !N && !F && !R;
-            w[5] !== j || w[6] !== T || w[7] !== D.accountId || w[8] !== D.pageId || w[9] !== D.throughSequence || w[10] !== D.userId ? (t = e => {
+            w[5] !== I || w[6] !== T || w[7] !== D.accountId || w[8] !== D.pageId || w[9] !== D.throughSequence || w[10] !== D.userId ? (t = e => {
                 let a = (0, m.d)(`page://${D.pageId}${e.ownerDocument.defaultView?.location.hash??""}`);
                 if (a?.kind === "page" && null != a.blockId) return;
-                let t = T.get(I.e, {
-                    mountId: j,
+                let t = T.get(j.e, {
+                    mountId: I,
                     pageId: D.pageId,
                     accountId: D.accountId,
                     userId: D.userId
                 });
                 !t?.failed && null != t && t.sequence >= D.throughSequence && T.get(b.f) === D.accountId && T.get(b.j) === D.userId && t.restoreScroll?.(e.scrollTop)
-            }, w[5] = j, w[6] = T, w[7] = D.accountId, w[8] = D.pageId, w[9] = D.throughSequence, w[10] = D.userId, w[11] = t) : t = w[11];
+            }, w[5] = I, w[6] = T, w[7] = D.accountId, w[8] = D.pageId, w[9] = D.throughSequence, w[10] = D.userId, w[11] = t) : t = w[11];
             let E = (0, P.a)(t);
             return w[12] !== D.pageId || w[13] !== $ ? (i = $ && (0, o.jsx)(S, {
                 pageId: D.pageId,
@@ -244,12 +244,12 @@ export const __webpack_modules__ = {
             }), w[19] = D.html, w[20] = f) : f = w[20], w[21] !== p || w[22] !== f ? (v = (0, o.jsxs)("div", {
                 className: `${y.a.PageContent} pt-10 pb-panel`,
                 children: [p, f]
-            }), w[21] = p, w[22] = f, w[23] = v) : v = w[23], w[24] !== E || w[25] !== _ || w[26] !== i || w[27] !== v || w[28] !== $ ? (C = (0, o.jsxs)(k, {
+            }), w[21] = p, w[22] = f, w[23] = v) : v = w[23], w[24] !== E || w[25] !== _ || w[26] !== i || w[27] !== v || w[28] !== $ ? (x = (0, o.jsxs)(k, {
                 visible: $,
                 setClientCovered: _,
                 onRemove: E,
                 children: [i, v]
-            }), w[24] = E, w[25] = _, w[26] = i, w[27] = v, w[28] = $, w[29] = C) : C = w[29], C
+            }), w[24] = E, w[25] = _, w[26] = i, w[27] = v, w[28] = $, w[29] = x) : x = w[29], x
         }
 
         function S(e) {
@@ -263,10 +263,10 @@ export const __webpack_modules__ = {
                 c.current = f.b.getDebugLoad(i)?.browserFirstContent, c.current?.observeDocumentType("page")
             }, s[0] = i, s[1] = a) : a = s[1], s[2] !== l.current || s[3] !== i ? (t = () => {
                 if (l.current?.querySelector('[elementtiming="codex-page-ssr-content"]') == null) return;
-                (0, j.d)();
+                (0, I.d)();
                 let e = c.current ?? f.b.getDebugLoad(i)?.browserFirstContent;
                 e?.observeDocumentType("page"), e?.contentVisible()
-            }, s[2] = l.current, s[3] = i, s[4] = t) : t = s[4], s[5] !== a || s[6] !== t ? (r = (0, o.jsx)(C.a, {
+            }, s[2] = l.current, s[3] = i, s[4] = t) : t = s[4], s[5] !== a || s[6] !== t ? (r = (0, o.jsx)(x.a, {
                 requireVisibleAtPaint: !0,
                 onCommit: a,
                 onPaint: t
@@ -305,13 +305,13 @@ export const __webpack_modules__ = {
                     })
                 }), c[2] = g, c[3] = t) : t = c[3];
                 let h = t,
-                    C = "disabled" !== b && (!f || null == v.error && v.data?.status !== "age_restricted");
-                return c[4] !== h || c[5] !== u || c[6] !== m || c[7] !== C ? (l = (0, o.jsx)(D, {
+                    x = "disabled" !== b && (!f || null == v.error && v.data?.status !== "age_restricted");
+                return c[4] !== h || c[5] !== u || c[6] !== m || c[7] !== x ? (l = (0, o.jsx)(D, {
                     snapshot: m,
                     nonblocking: u,
-                    enabled: C,
+                    enabled: x,
                     children: h
-                }), c[4] = h, c[5] = u, c[6] = m, c[7] = C, c[8] = l) : l = c[8], l
+                }), c[4] = h, c[5] = u, c[6] = m, c[7] = x, c[8] = l) : l = c[8], l
             });
         let N = e => {
             let {
@@ -452,8 +452,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.7a7da82fba.js";
-import * as a from "./418851.7ea990b865.js";
+} from "./633146.77f467ae88.js";
+import * as a from "./418851.24af49562e.js";
 e.C(a);
 import * as t from "./109308.fbb414d4aa.js";
 e.C(t);
@@ -463,66 +463,64 @@ import * as o from "./257798.0b3d6025cd.js";
 e.C(o);
 import * as n from "./153380.6675e448cd.js";
 e.C(n);
-import * as s from "./617936.c61cb3b894.js";
+import * as s from "./617936.ab7454adbe.js";
 e.C(s);
-import * as i from "./807489.00704ce5f6.js";
+import * as i from "./807489.74b193586a.js";
 e.C(i);
-import * as l from "./337882.d56c5dd9ec.js";
+import * as l from "./337882.eb4e205b01.js";
 e.C(l);
-import * as c from "./955979.4ec7b9c49b.js";
+import * as c from "./955979.c147b344d3.js";
 e.C(c);
-import * as d from "./646436.1f33d39585.js";
+import * as d from "./646436.92303256ff.js";
 e.C(d);
-import * as m from "./7078.e9c7fab122.js";
+import * as m from "./7078.1a10efd8a2.js";
 e.C(m);
-import * as u from "./200429.4217a3f10d.js";
+import * as u from "./200429.6705d27d2a.js";
 e.C(u);
-import * as g from "./698524.cd24e3b049.js";
+import * as g from "./698524.7253a53056.js";
 e.C(g);
-import * as b from "./956483.d9bedeb1ff.js";
+import * as b from "./956483.cb805cdd0f.js";
 e.C(b);
 import * as p from "./87162.636a6b2a55.js";
 e.C(p);
 import * as f from "./396705.c39944bbf2.js";
 e.C(f);
-import * as v from "./155568.984a5c9de4.js";
+import * as v from "./155568.d3b291934c.js";
 e.C(v);
 import * as h from "./731863.8b87e9728a.js";
 e.C(h);
-import * as C from "./767086.db77131b17.js";
-e.C(C);
-import * as x from "./76629.2edc9c8efc.js";
+import * as x from "./767086.6da4be4bcc.js";
 e.C(x);
-import * as P from "./514085.87ea9a1275.js";
+import * as C from "./76629.c67c63e9cf.js";
+e.C(C);
+import * as P from "./514085.4d87b5885b.js";
 e.C(P);
-import * as w from "./204542.91dfabf541.js";
+import * as w from "./204542.cb541ce34a.js";
 e.C(w);
-import * as j from "./982651.7bfd071e83.js";
-e.C(j);
-import * as I from "./673108.8e78836d0a.js";
+import * as I from "./982651.7bfd071e83.js";
 e.C(I);
-import * as y from "./487481.59f4896493.js";
+import * as j from "./673108.34c2463692.js";
+e.C(j);
+import * as y from "./487481.90065b7f5d.js";
 e.C(y);
-import * as D from "./229522.e2e5d6765c.js";
+import * as D from "./229522.aca0c6dfc8.js";
 e.C(D);
-import * as k from "./390575.8b3e50f119.js";
+import * as k from "./390575.8f68283a1b.js";
 e.C(k);
-import * as _ from "./353032.600f273724.js";
+import * as _ from "./353032.f68e05ddda.js";
 e.C(_);
-import * as S from "./637885.d599a2287f.js";
+import * as S from "./637885.a0eaa62308.js";
 e.C(S);
-import * as T from "./284470.fdb0479a8d.js";
+import * as T from "./226913.b323f04fd6.js";
 e.C(T);
-import * as z from "./226913.b323f04fd6.js";
+import * as z from "./902158.5a4b6c2c66.js";
 e.C(z);
-import * as L from "./902158.5a4b6c2c66.js";
+import * as L from "./787702.ca3ed25eef.js";
 e.C(L);
-import * as B from "./787702.3a9a5316a3.js";
-e.C(B);
-var q = e(e.s = "lOPI"),
-    M = q.a,
-    N = q.b;
+var B = e(e.s = "lOPI"),
+    q = B.a,
+    M = B.b;
 export {
-    M as
-    default, N as shouldRevalidate
+    q as
+    default, M as shouldRevalidate
 };

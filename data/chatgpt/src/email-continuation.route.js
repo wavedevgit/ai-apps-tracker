@@ -8,22 +8,22 @@ export const __webpack_modules__ = {
             g = t("ABep"),
             l = t("QosV"),
             e = t("BolX"),
-            c = t("oyxz"),
-            a = t("ASxG"),
+            a = t("oyxz"),
+            c = t("ASxG"),
             I = t("Cslg"),
             o = t("EOo5"),
             C = t("gCr7"),
             s = t("zOE4"),
             j = t("OWtl"),
             N = t("AXDI");
-        let L = a.object({
-                id: a.string(),
-                accountId: a.string(),
-                userId: a.string(),
-                summary: a.string(),
-                reply: a.string(),
-                attachmentsOmitted: a.boolean(),
-                followup: a.string().nullable()
+        let L = c.object({
+                id: c.string(),
+                accountId: c.string(),
+                userId: c.string(),
+                summary: c.string(),
+                reply: c.string(),
+                attachmentsOmitted: c.boolean(),
+                followup: c.string().nullable()
             }),
             r = (0, e.q)(j.a, (n, i) => {
                 let {
@@ -66,7 +66,7 @@ export const __webpack_modules__ = {
         });
 
         function h() {
-            let n, i, t, a, C, j = (0, l.c)(18),
+            let n, i, t, c, C, j = (0, l.c)(18),
                 {
                     accountId: N,
                     userId: L,
@@ -103,7 +103,7 @@ export const __webpack_modules__ = {
                 let n, i;
                 return j[10] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, g.jsx)("p", {
                     role: "alert",
-                    children: (0, g.jsx)(c.a, {
+                    children: (0, g.jsx)(a.a, {
                         id: "chatgpt.emailContinuation.importError",
                         defaultMessage: "Couldn’t open this email conversation. Try opening the link from your email again.",
                         description: "Error when a ChatGPT email continuation link cannot be imported."
@@ -113,7 +113,7 @@ export const __webpack_modules__ = {
                     children: [n, (0, g.jsx)(M.g, {
                         className: "underline",
                         to: "/",
-                        children: (0, g.jsx)(c.a, {
+                        children: (0, g.jsx)(a.a, {
                             id: "chatgpt.emailContinuation.goHome",
                             defaultMessage: "Go to ChatGPT",
                             description: "Link back to ChatGPT home from a failed email continuation."
@@ -122,16 +122,16 @@ export const __webpack_modules__ = {
                 }), j[11] = i) : i = j[11], i
             }
             let z = `/c/${encodeURIComponent(p)}`;
-            return j[12] !== N || j[13] !== L ? (a = {
+            return j[12] !== N || j[13] !== L ? (c = {
                 emailContinuation: {
                     accountId: N,
                     userId: L
                 }
-            }, j[12] = N, j[13] = L, j[14] = a) : a = j[14], j[15] !== z || j[16] !== a ? (C = (0, g.jsx)(M.l, {
+            }, j[12] = N, j[13] = L, j[14] = c) : c = j[14], j[15] !== z || j[16] !== c ? (C = (0, g.jsx)(M.l, {
                 to: z,
-                state: a,
+                state: c,
                 replace: !0
-            }), j[15] = z, j[16] = a, j[17] = C) : C = j[17], C
+            }), j[15] = z, j[16] = c, j[17] = C) : C = j[17], C
         }
     }),
     BmwK: (function(n) {
@@ -277,8 +277,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as n
-} from "./633146.7a7da82fba.js";
-import * as i from "./418851.7ea990b865.js";
+} from "./633146.77f467ae88.js";
+import * as i from "./418851.24af49562e.js";
 n.C(i);
 import * as t from "./109308.fbb414d4aa.js";
 n.C(t);
@@ -288,62 +288,60 @@ import * as g from "./257798.0b3d6025cd.js";
 n.C(g);
 import * as l from "./153380.6675e448cd.js";
 n.C(l);
-import * as e from "./617936.c61cb3b894.js";
+import * as e from "./617936.ab7454adbe.js";
 n.C(e);
-import * as c from "./807489.00704ce5f6.js";
-n.C(c);
-import * as a from "./337882.d56c5dd9ec.js";
+import * as a from "./807489.74b193586a.js";
 n.C(a);
-import * as I from "./955979.4ec7b9c49b.js";
+import * as c from "./337882.eb4e205b01.js";
+n.C(c);
+import * as I from "./955979.c147b344d3.js";
 n.C(I);
-import * as o from "./646436.1f33d39585.js";
+import * as o from "./646436.92303256ff.js";
 n.C(o);
-import * as C from "./7078.e9c7fab122.js";
+import * as C from "./7078.1a10efd8a2.js";
 n.C(C);
-import * as s from "./200429.4217a3f10d.js";
+import * as s from "./200429.6705d27d2a.js";
 n.C(s);
-import * as j from "./698524.cd24e3b049.js";
+import * as j from "./698524.7253a53056.js";
 n.C(j);
-import * as N from "./956483.d9bedeb1ff.js";
+import * as N from "./956483.cb805cdd0f.js";
 n.C(N);
 import * as L from "./87162.636a6b2a55.js";
 n.C(L);
 import * as r from "./396705.c39944bbf2.js";
 n.C(r);
-import * as A from "./155568.984a5c9de4.js";
+import * as A from "./155568.d3b291934c.js";
 n.C(A);
 import * as h from "./731863.8b87e9728a.js";
 n.C(h);
-import * as d from "./767086.db77131b17.js";
+import * as d from "./767086.6da4be4bcc.js";
 n.C(d);
-import * as f from "./76629.2edc9c8efc.js";
+import * as f from "./76629.c67c63e9cf.js";
 n.C(f);
-import * as D from "./514085.87ea9a1275.js";
+import * as D from "./514085.4d87b5885b.js";
 n.C(D);
-import * as y from "./204542.91dfabf541.js";
+import * as y from "./204542.cb541ce34a.js";
 n.C(y);
 import * as u from "./982651.7bfd071e83.js";
 n.C(u);
-import * as x from "./673108.8e78836d0a.js";
+import * as x from "./673108.34c2463692.js";
 n.C(x);
-import * as p from "./487481.59f4896493.js";
+import * as p from "./487481.90065b7f5d.js";
 n.C(p);
-import * as w from "./229522.e2e5d6765c.js";
+import * as w from "./229522.aca0c6dfc8.js";
 n.C(w);
-import * as z from "./390575.8b3e50f119.js";
+import * as z from "./390575.8f68283a1b.js";
 n.C(z);
-import * as m from "./353032.600f273724.js";
+import * as m from "./353032.f68e05ddda.js";
 n.C(m);
-import * as T from "./637885.d599a2287f.js";
+import * as T from "./637885.a0eaa62308.js";
 n.C(T);
-import * as v from "./284470.fdb0479a8d.js";
+import * as v from "./226913.b323f04fd6.js";
 n.C(v);
-import * as Z from "./226913.b323f04fd6.js";
+import * as Z from "./186923.91c4e450f9.js";
 n.C(Z);
-import * as S from "./186923.75d6da80a9.js";
-n.C(S);
-var E = n(n.s = "BLkT").a;
+var S = n(n.s = "BLkT").a;
 export {
-    E as
+    S as
     default
 };
