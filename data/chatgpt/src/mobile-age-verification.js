@@ -1,28 +1,28 @@
 export const __rspack_esm_ids = [594445];
 export const __webpack_modules__ = {
     AnON: (function(e, r, s) {
-        function a(e) {
+        function t(e) {
             let {
                 request: r
             } = e;
             var s = r;
-            let a = new URL(s.url).searchParams.get("inquiry_id");
-            if (!a) throw new Response("Missing inquiryId", {
+            let t = new URL(s.url).searchParams.get("inquiry_id");
+            if (!t) throw new Response("Missing inquiryId", {
                 status: 400
             });
             return {
-                inquiryId: a
+                inquiryId: t
             }
         }
         s.d(r, {
-            a: () => a
+            a: () => t
         })
     })
 };
 import {
     __webpack_require__ as e
-} from "./633146.77f467ae88.js";
-import * as r from "./594445.a02a4dfe2d.js";
+} from "./633146.578f2b23b5.js";
+import * as r from "./594445.4d5b0eeaff.js";
 e.C(r);
 var s = e(e.s = "AnON").a;
 export {

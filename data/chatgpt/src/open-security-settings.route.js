@@ -9,34 +9,34 @@ export const __webpack_modules__ = {
             o = r("QosV"),
             m = r("BolX"),
             i = r("zd8w"),
-            f = r("G8V1"),
-            c = r("oyxz"),
+            c = r("G8V1"),
+            f = r("oyxz"),
             n = r("RNul");
         r("rHrT");
         var p = r("eAav"),
             l = (0, a.hb)(function() {
-                let e, s, r, c, n = (0, o.c)(8),
+                let e, s, r, f, n = (0, o.c)(8),
                     {
                         locale: l
                     } = (0, m.y)(p.a).value,
                     {
                         messages: d
                     } = (0, a.X)(),
-                    b = (0, a._)(),
-                    C = (0, a.W)("/settings/security");
-                return n[0] !== C || n[1] !== b ? (e = () => {
+                    C = (0, a._)(),
+                    b = (0, a.W)("/settings/security");
+                return n[0] !== b || n[1] !== C ? (e = () => {
                     let e = window.setTimeout(() => {
-                        b(`/auth/login_with?${new URLSearchParams({screen_hint:"login",callback_path:C})}`, {
+                        C(`/auth/login_with?${new URLSearchParams({screen_hint:"login",callback_path:b})}`, {
                             replace: !0
                         })
                     }, 3e3);
                     return () => window.clearTimeout(e)
-                }, s = [C, b], n[0] = C, n[1] = b, n[2] = e, n[3] = s) : (e = n[2], s = n[3]), (0, i.useEffect)(e, s), n[4] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, t.jsx)(j, {}), n[4] = r) : r = n[4], n[5] !== l || n[6] !== d ? (c = (0, t.jsx)(f.a, {
+                }, s = [b, C], n[0] = b, n[1] = C, n[2] = e, n[3] = s) : (e = n[2], s = n[3]), (0, i.useEffect)(e, s), n[4] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, t.jsx)(j, {}), n[4] = r) : r = n[4], n[5] !== l || n[6] !== d ? (f = (0, t.jsx)(c.a, {
                     locale: l,
                     defaultLocale: "en-US",
                     messages: d,
                     children: r
-                }), n[5] = l, n[6] = d, n[7] = c) : c = n[7], c
+                }), n[5] = l, n[6] = d, n[7] = f) : f = n[7], f
             });
 
         function j() {
@@ -52,7 +52,7 @@ export const __webpack_modules__ = {
                     "aria-busy": !0,
                     children: [e, (0, t.jsx)("p", {
                         className: "text-sm",
-                        children: (0, t.jsx)(c.a, {
+                        children: (0, t.jsx)(f.a, {
                             id: "security-settings.redirect-message",
                             defaultMessage: "Security settings live in ChatGPT. You’re being redirected in a new tab",
                             description: "Interstitial message shown before redirecting to ChatGPT security settings in a new tab."
@@ -65,10 +65,10 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.77f467ae88.js";
+} from "./633146.578f2b23b5.js";
 import * as s from "./680612.3c8d72f22d.js";
 e.C(s);
-import * as r from "./418851.24af49562e.js";
+import * as r from "./418851.a2414d348c.js";
 e.C(r);
 import * as a from "./109308.fbb414d4aa.js";
 e.C(a);
@@ -78,26 +78,26 @@ import * as o from "./257798.0b3d6025cd.js";
 e.C(o);
 import * as m from "./153380.6675e448cd.js";
 e.C(m);
-import * as i from "./617936.ab7454adbe.js";
+import * as i from "./617936.d20f0bb1f2.js";
 e.C(i);
-import * as f from "./807489.74b193586a.js";
-e.C(f);
-import * as c from "./337882.eb4e205b01.js";
+import * as c from "./807489.7f3d71f5dd.js";
 e.C(c);
-import * as n from "./955979.c147b344d3.js";
+import * as f from "./337882.eb4e205b01.js";
+e.C(f);
+import * as n from "./955979.1d3a3c3d70.js";
 e.C(n);
-import * as p from "./646436.92303256ff.js";
+import * as p from "./646436.669c479758.js";
 e.C(p);
-import * as l from "./7078.1a10efd8a2.js";
+import * as l from "./7078.5a4ac5b67f.js";
 e.C(l);
-import * as j from "./200429.6705d27d2a.js";
+import * as j from "./200429.508d689d4a.js";
 e.C(j);
-import * as d from "./698524.7253a53056.js";
+import * as d from "./698524.7580180eba.js";
 e.C(d);
-import * as b from "./956483.cb805cdd0f.js";
-e.C(b);
-import * as C from "./87162.636a6b2a55.js";
+import * as C from "./956483.21cf7af8b4.js";
 e.C(C);
+import * as b from "./87162.636a6b2a55.js";
+e.C(b);
 import * as u from "./396705.c39944bbf2.js";
 e.C(u);
 import * as _ from "./155568.d3b291934c.js";
@@ -106,29 +106,29 @@ import * as x from "./731863.8b87e9728a.js";
 e.C(x);
 import * as h from "./767086.6da4be4bcc.js";
 e.C(h);
-import * as g from "./76629.c67c63e9cf.js";
+import * as g from "./76629.13408f2772.js";
 e.C(g);
-import * as w from "./514085.4d87b5885b.js";
+import * as w from "./514085.9f7c2a584b.js";
 e.C(w);
-import * as y from "./204542.cb541ce34a.js";
+import * as y from "./204542.a19c84b141.js";
 e.C(y);
 import * as v from "./982651.7bfd071e83.js";
 e.C(v);
-import * as S from "./673108.34c2463692.js";
+import * as S from "./673108.39ad50630b.js";
 e.C(S);
-import * as N from "./487481.90065b7f5d.js";
+import * as N from "./487481.4c3625a8ea.js";
 e.C(N);
-import * as P from "./229522.aca0c6dfc8.js";
+import * as P from "./229522.a213296c9c.js";
 e.C(P);
-import * as T from "./390575.8f68283a1b.js";
+import * as T from "./390575.81bb6844fb.js";
 e.C(T);
-import * as k from "./353032.f68e05ddda.js";
+import * as k from "./353032.6c4c0e25a0.js";
 e.C(k);
-import * as G from "./637885.a0eaa62308.js";
+import * as G from "./637885.77f633a270.js";
 e.C(G);
 import * as z from "./226913.b323f04fd6.js";
 e.C(z);
-import * as A from "./345186.3a36b23a74.js";
+import * as A from "./345186.524a0b38fb.js";
 e.C(A);
 var B = e(e.s = "Ptjs").a;
 export {
