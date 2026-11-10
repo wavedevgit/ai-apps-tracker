@@ -19656,6 +19656,7 @@ ${i}`, e => {
                     var t;
                     for (let n of void 0 !== (t = e.sessionPersistence) ? t : K.b ? [tO.d.MEMORY] : [tO.d.COOKIE]) {
                         let t = await
+
                         function(e, t) {
                             switch (e) {
                                 case tO.d.COOKIE:

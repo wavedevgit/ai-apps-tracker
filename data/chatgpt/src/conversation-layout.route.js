@@ -2,7 +2,7 @@ export const __rspack_esm_ids = [708781];
 export const __webpack_modules__ = {
     cUVU: (function(n, i, t) {
         t.d(i, {
-            a: () => u
+            a: () => f
         });
         var e = t("jqIZ"),
             l = t("ABep"),
@@ -12,16 +12,16 @@ export const __webpack_modules__ = {
             c = t("zd8w"),
             s = t("oyxz"),
             o = t("KUIh"),
-            I = t("KvJW"),
+            I = t("YiPf"),
             C = t("lBzi"),
             j = t("MgyE"),
             r = t("gyrn"),
-            d = t("WF1L"),
-            N = t("mFDr"),
+            N = t("WF1L"),
+            d = t("mFDr"),
             L = t("OWtl"),
             h = t("eShZ"),
             A = t("l3Eh"),
-            u = (0, e.hb)(function() {
+            f = (0, e.hb)(function() {
                 let n, i, t, M, a = (0, g.c)(8),
                     {
                         conversation: s,
@@ -30,12 +30,12 @@ export const __webpack_modules__ = {
                 a[0] !== I ? (n = () => {
                     if (null == I) return;
                     let n = !0;
-                    return N.a?.then(i => {
+                    return d.a?.then(i => {
                         let {
                             addBrowserDatadogRumFeatureFlagEvaluation: t
                         } = i;
                         n && (0, o.c)() && t("codex_web_disable_conversation_history_prefetch", I)
-                    }).catch(f), () => {
+                    }).catch(u), () => {
                         n = !1
                     }
                 }, i = [I], a[0] = I, a[1] = n, a[2] = i) : (n = a[1], i = a[2]), (0, c.useEffect)(n, i);
@@ -50,10 +50,10 @@ export const __webpack_modules__ = {
                 }), a[6] = t, a[7] = M) : M = a[7], M
             });
 
-        function f() {}
+        function u() {}
 
         function y(n) {
-            let i, t, o, N, A, u, f, y = (0, g.c)(27),
+            let i, t, o, d, A, f, u, y = (0, g.c)(27),
                 {
                     conversationId: x,
                     conversation: D
@@ -84,13 +84,13 @@ export const __webpack_modules__ = {
                 isError: v,
                 error: T
             } = (0, M.a)(w);
-            y[10] !== x || y[11] !== p ? (N = () => {
+            y[10] !== x || y[11] !== p ? (d = () => {
                 p.queryClient.prefetchQuery({
                     ...(0, C.v)(p, x),
                     staleTime: 0
                 })
-            }, y[10] = x, y[11] = p, y[12] = N) : N = y[12];
-            let m = N;
+            }, y[10] = x, y[11] = p, y[12] = d) : d = y[12];
+            let m = d;
             if (T instanceof h.FetchError && 423 === T.status) {
                 let n;
                 return y[13] !== x || y[14] !== m || y[15] !== p ? (n = (0, l.jsx)(j.a, {
@@ -99,21 +99,21 @@ export const __webpack_modules__ = {
                     }
                 }), y[13] = x, y[14] = m, y[15] = p, y[16] = n) : n = y[16], n
             }
-            return y[17] !== T ? (A = (0, h.d)(T) ? T : null, y[17] = T, y[18] = A) : A = y[18], y[19] !== v || y[20] !== m ? (u = v ? (0, l.jsx)(d.a, {
+            return y[17] !== T ? (A = (0, h.d)(T) ? T : null, y[17] = T, y[18] = A) : A = y[18], y[19] !== v || y[20] !== m ? (f = v ? (0, l.jsx)(N.a, {
                 title: (0, l.jsx)(s.a, {
                     id: "chatgptConversations.loadError",
                     defaultMessage: "Could not load this ChatGPT conversation",
                     description: "Error state when a ChatGPT conversation fetch fails"
                 }),
                 onRetry: m
-            }) : (0, l.jsx)(e.m, {}), y[19] = v, y[20] = m, y[21] = u) : u = y[21], y[22] !== x || y[23] !== T || y[24] !== A || y[25] !== u ? (f = (0, l.jsx)(I.a, {
+            }) : (0, l.jsx)(e.m, {}), y[19] = v, y[20] = m, y[21] = f) : f = y[21], y[22] !== x || y[23] !== T || y[24] !== A || y[25] !== f ? (u = (0, l.jsx)(I.a, {
                 conversationId: x,
                 error: T,
                 loadError: A,
                 canRetry: !0,
                 isWorkConversation: null,
-                children: u
-            }), y[22] = x, y[23] = T, y[24] = A, y[25] = u, y[26] = f) : f = y[26], f
+                children: f
+            }), y[22] = x, y[23] = T, y[24] = A, y[25] = f, y[26] = u) : u = y[26], u
         }
     }),
     BmwK: (function(n) {
@@ -279,29 +279,29 @@ export const __webpack_modules__ = {
             C = t("UgGw"),
             j = t("O5pN"),
             r = t("osar"),
-            d = t("jqSg"),
-            N = t("enVv"),
+            N = t("jqSg"),
+            d = t("enVv"),
             L = t("sIex"),
             h = t("wHPA"),
             A = t("Gjet"),
-            u = t("jZDY");
+            f = t("jZDY");
 
-        function f(n) {
+        function u(n) {
             let i, t, g, a, c, s = (0, l.c)(18),
                 {
                     children: I,
                     conversationId: C
                 } = n,
-                j = (0, u.a)(),
+                j = (0, f.a)(),
                 r = (0, o.useContext)(L.b);
             s[0] !== C || s[1] !== r ? (i = () => {
                 let n = r?.getInput();
                 return n?.dataset.conversationId === C ? n : null
             }, s[0] = C, s[1] = r, s[2] = i) : i = s[2];
-            let [d] = (0, o.useState)(i), [N] = (0, o.useState)(!j || null != d), [h, f] = (0, o.useState)(!1), x = (0, o.useRef)(null), {
+            let [N] = (0, o.useState)(i), [d] = (0, o.useState)(!j || null != N), [h, u] = (0, o.useState)(!1), x = (0, o.useRef)(null), {
                 key: D
             } = (0, M.Y)();
-            s[3] !== h || s[4] !== C || s[5] !== N ? (t = N && !h ? (0, e.jsx)("div", {
+            s[3] !== h || s[4] !== C || s[5] !== d ? (t = d && !h ? (0, e.jsx)("div", {
                 className: "pointer-events-none absolute inset-0 z-10",
                 children: (0, e.jsx)(A.a, {
                     active: !1,
@@ -312,19 +312,19 @@ export const __webpack_modules__ = {
                     }),
                     children: null
                 })
-            }) : null, s[3] = h, s[4] = C, s[5] = N, s[6] = t) : t = s[6], s[7] !== I || s[8] !== t ? (g = (0, e.jsxs)("div", {
+            }) : null, s[3] = h, s[4] = C, s[5] = d, s[6] = t) : t = s[6], s[7] !== I || s[8] !== t ? (g = (0, e.jsxs)("div", {
                 className: "relative h-full min-h-0",
                 children: [t, I]
             }), s[7] = I, s[8] = t, s[9] = g) : g = s[9];
             let p = g;
-            return s[10] !== C || s[11] !== N || s[12] !== r || s[13] !== D ? (a = N ? {
+            return s[10] !== C || s[11] !== d || s[12] !== r || s[13] !== D ? (a = d ? {
                 conversationId: C,
                 input: x,
                 locationKey: D,
                 onAdopt: () => {
-                    r?.onAdopt(), f(!0)
+                    r?.onAdopt(), u(!0)
                 }
-            } : null, s[10] = C, s[11] = N, s[12] = r, s[13] = D, s[14] = a) : a = s[14], s[15] !== p || s[16] !== a ? (c = (0, e.jsx)(L.a, {
+            } : null, s[10] = C, s[11] = d, s[12] = r, s[13] = D, s[14] = a) : a = s[14], s[15] !== p || s[16] !== a ? (c = (0, e.jsx)(L.a, {
                 value: a,
                 children: p
             }), s[15] = p, s[16] = a, s[17] = c) : c = s[17], c
@@ -337,7 +337,7 @@ export const __webpack_modules__ = {
                     conversationId: L
                 } = n,
                 A = (0, I.a)();
-            return s[0] !== A ? (i = (0, d.d)(A, "chat"), s[0] = A, s[1] = i) : i = s[1], s[2] !== L || s[3] !== o || s[4] !== i ? (t = (0, e.jsx)(r.a.Input, {
+            return s[0] !== A ? (i = (0, N.d)(A, "chat"), s[0] = A, s[1] = i) : i = s[1], s[2] !== L || s[3] !== o || s[4] !== i ? (t = (0, e.jsx)(r.a.Input, {
                 layout: "single-line",
                 children: (0, e.jsx)(j.a, {
                     singleLine: !0,
@@ -356,7 +356,7 @@ export const __webpack_modules__ = {
                 description: "Accessible label for submit when no response is currently in progress"
             }), s[7] = A, s[8] = M) : M = s[8], s[9] !== M ? (a = (0, e.jsx)(r.a.FooterControls, {
                 layout: "single-line",
-                children: (0, e.jsx)(N.a, {
+                children: (0, e.jsx)(d.a, {
                     disabled: !0,
                     ariaLabel: M
                 })
@@ -384,7 +384,7 @@ export const __webpack_modules__ = {
                 {
                     conversationId: r
                 } = (0, M.cb)(),
-                d = (0, g.x)(a.a, r ?? null);
+                N = (0, g.x)(a.a, r ?? null);
             if (j?.state?.leavingDeletedChatGptConversation) {
                 let n;
                 return I[0] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, e.jsx)(c.LoadingPage, {}), I[0] = n) : n = I[0], n
@@ -392,28 +392,105 @@ export const __webpack_modules__ = {
             I[1] !== C ? (i = C ?? (0, e.jsx)(M.m, {}), I[1] = C, I[2] = i) : i = I[2], I[3] !== i ? (t = (0, e.jsx)(s.a, {
                 children: i
             }), I[3] = i, I[4] = t) : t = I[4];
-            let N = t;
-            return I[5] !== d || I[6] !== N || I[7] !== r ? (o = null == r ? N : (0, e.jsx)(f, {
+            let d = t;
+            return I[5] !== N || I[6] !== d || I[7] !== r ? (o = null == r ? d : (0, e.jsx)(u, {
                 conversationId: r,
-                children: N
-            }, d ?? r), I[5] = d, I[6] = N, I[7] = r, I[8] = o) : o = I[8], o
+                children: d
+            }, N ?? r), I[5] = N, I[6] = d, I[7] = r, I[8] = o) : o = I[8], o
         }
     }),
-    KvJW: (function(n, i, t) {
+    YiPf: (function(n, i, t) {
+        t.d(i, {
+            a: () => L
+        });
         var e = t("ABep"),
             l = t("QosV"),
             g = t("BolX"),
             M = t("zd8w"),
             a = t("oyxz"),
-            c = t("WQca"),
-            s = t("IxgT"),
-            o = t("yGJW"),
-            I = t("OWtl"),
-            C = t("eShZ"),
-            j = t("ZhoB");
-        let r = new WeakSet;
+            c = t("jqIZ"),
+            s = t("SGsN"),
+            o = t("OWtl");
 
-        function d(n) {
+        function I(n) {
+            let i, t, e, a = (0, l.c)(11),
+                {
+                    isUnavailable: I,
+                    message: C,
+                    homePath: j,
+                    onUnavailable: r,
+                    children: N
+                } = n,
+                d = (0, g.y)(o.a),
+                L = (0, c._)(),
+                h = (0, M.useRef)(!1);
+            a[0] !== j || a[1] !== C || a[2] !== L || a[3] !== r || a[4] !== d ? (i = () => {
+                r?.(), d.get(s.f).info(C, {
+                    id: "conversation-inaccessible",
+                    duration: 5
+                }), L(j, {
+                    replace: !0
+                })
+            }, a[0] = j, a[1] = C, a[2] = L, a[3] = r, a[4] = d, a[5] = i) : i = a[5];
+            let A = (0, M.useEffectEvent)(i);
+            return a[6] !== I || a[7] !== A ? (t = () => {
+                I && !h.current && (h.current = !0, A())
+            }, a[6] = I, a[7] = A, a[8] = t) : t = a[8], a[9] !== I ? (e = [I], a[9] = I, a[10] = e) : e = a[10], (0, M.useEffect)(t, e), I ? null : N
+        }
+        var C = t("IxgT"),
+            j = t("yGJW"),
+            r = t("eShZ"),
+            N = t("ZhoB");
+        let d = new WeakSet;
+
+        function L(n) {
+            let i, t, M, c, s, d, L, A, f = (0, l.c)(24),
+                {
+                    conversationId: u,
+                    error: y,
+                    loadError: x,
+                    canRetry: D,
+                    isWorkConversation: p,
+                    showChatFallback: w,
+                    children: z
+                } = n,
+                v = (0, g.y)(o.a),
+                T = (0, g.z)(void 0 !== w && w && !1 === p ? C.b : null);
+            if (null != T) return T;
+            f[0] !== u || f[1] !== p || f[2] !== v ? (i = (n, i) => {
+                (0, N.e)(v.get(j.c).logProductEvent, {
+                    conversationId: u,
+                    error: n,
+                    isWorkConversation: p,
+                    canRetry: i
+                })
+            }, f[0] = u, f[1] = p, f[2] = v, f[3] = i) : i = f[3];
+            let m = i;
+            f[4] !== D || f[5] !== x || f[6] !== m ? (t = () => m(x, D), f[4] = D, f[5] = x, f[6] = m, f[7] = t) : t = f[7], f[8] !== x || f[9] !== t ? (M = (0, e.jsx)(h, {
+                error: x,
+                onShown: t
+            }), f[8] = x, f[9] = t, f[10] = M) : M = f[10], f[11] !== z || f[12] !== M ? (c = (0, e.jsxs)(e.Fragment, {
+                children: [M, z]
+            }), f[11] = z, f[12] = M, f[13] = c) : c = f[13];
+            let Z = c;
+            return f[14] !== y ? (s = y instanceof r.FetchError && !(0, r.d)(y) && (403 === y.status || 404 === y.status), f[14] = y, f[15] = s) : s = f[15], f[16] !== y || f[17] !== m ? (d = () => m(y, !1), f[16] = y, f[17] = m, f[18] = d) : d = f[18], f[19] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, e.jsx)(a.a, {
+                id: "chatgptConversations.conversationInaccessible",
+                defaultMessage: "You don’t have access to this conversation. Make sure you’re logged in to the right account, or ask the conversation owner to send you a share link.",
+                description: "Info toast shown when a user opens a ChatGPT conversation that does not exist or that they cannot access. The user is returned to Home and can switch accounts or ask the owner for a share link."
+            }), f[19] = L) : L = f[19], f[20] !== Z || f[21] !== s || f[22] !== d ? (A = (0, e.jsxs)(e.Fragment, {
+                children: [null, (0, e.jsx)(e.Fragment, {
+                    children: (0, e.jsx)(I, {
+                        isUnavailable: s,
+                        homePath: "/",
+                        onUnavailable: d,
+                        message: L,
+                        children: Z
+                    })
+                })]
+            }), f[20] = Z, f[21] = s, f[22] = d, f[23] = A) : A = f[23], A
+        }
+
+        function h(n) {
             let i, t, e = (0, l.c)(5),
                 {
                     error: g,
@@ -422,97 +499,14 @@ export const __webpack_modules__ = {
                 c = (0, M.useEffectEvent)(a);
             return e[0] !== g || e[1] !== c ? (i = () => {
                 if (null != g) {
-                    if ((0, C.d)(g)) {
-                        if (r.has(g)) return;
-                        r.add(g)
+                    if ((0, r.d)(g)) {
+                        if (d.has(g)) return;
+                        d.add(g)
                     }
                     c()
                 }
             }, e[0] = g, e[1] = c, e[2] = i) : i = e[2], e[3] !== g ? (t = [g], e[3] = g, e[4] = t) : t = e[4], (0, M.useEffect)(i, t), null
         }
-        t.d(i, {}, {
-            a: function(n) {
-                let i, t, M, r, N, L, h, A, u = (0, l.c)(24),
-                    {
-                        conversationId: f,
-                        error: y,
-                        loadError: x,
-                        canRetry: D,
-                        isWorkConversation: p,
-                        showChatFallback: w,
-                        children: z
-                    } = n,
-                    v = (0, g.y)(I.a),
-                    T = (0, g.z)(void 0 !== w && w && !1 === p ? s.b : null);
-                if (null != T) return T;
-                u[0] !== f || u[1] !== p || u[2] !== v ? (i = (n, i) => {
-                    (0, j.e)(v.get(o.c).logProductEvent, {
-                        conversationId: f,
-                        error: n,
-                        isWorkConversation: p,
-                        canRetry: i
-                    })
-                }, u[0] = f, u[1] = p, u[2] = v, u[3] = i) : i = u[3];
-                let m = i;
-                u[4] !== D || u[5] !== x || u[6] !== m ? (t = () => m(x, D), u[4] = D, u[5] = x, u[6] = m, u[7] = t) : t = u[7], u[8] !== x || u[9] !== t ? (M = (0, e.jsx)(d, {
-                    error: x,
-                    onShown: t
-                }), u[8] = x, u[9] = t, u[10] = M) : M = u[10], u[11] !== z || u[12] !== M ? (r = (0, e.jsxs)(e.Fragment, {
-                    children: [M, z]
-                }), u[11] = z, u[12] = M, u[13] = r) : r = u[13];
-                let Z = r;
-                return u[14] !== y ? (N = y instanceof C.FetchError && !(0, C.d)(y) && (403 === y.status || 404 === y.status), u[14] = y, u[15] = N) : N = u[15], u[16] !== y || u[17] !== m ? (L = () => m(y, !1), u[16] = y, u[17] = m, u[18] = L) : L = u[18], u[19] === Symbol.for("react.memo_cache_sentinel") ? (h = (0, e.jsx)(a.a, {
-                    id: "chatgptConversations.conversationInaccessible",
-                    defaultMessage: "You don’t have access to this conversation. Make sure you’re logged in to the right account, or ask the conversation owner to send you a share link.",
-                    description: "Info toast shown when a user opens a ChatGPT conversation that does not exist or that they cannot access. The user is returned to Home and can switch accounts or ask the owner for a share link."
-                }), u[19] = h) : h = u[19], u[20] !== Z || u[21] !== N || u[22] !== L ? (A = (0, e.jsxs)(e.Fragment, {
-                    children: [null, (0, e.jsx)(e.Fragment, {
-                        children: (0, e.jsx)(c.a, {
-                            isUnavailable: N,
-                            homePath: "/",
-                            onUnavailable: L,
-                            message: h,
-                            children: Z
-                        })
-                    })]
-                }), u[20] = Z, u[21] = N, u[22] = L, u[23] = A) : A = u[23], A
-            }
-        })
-    }),
-    WQca: (function(n, i, t) {
-        var e = t("QosV"),
-            l = t("BolX"),
-            g = t("zd8w"),
-            M = t("jqIZ"),
-            a = t("SGsN"),
-            c = t("OWtl");
-        t.d(i, {}, {
-            a: function(n) {
-                let i, t, s, o = (0, e.c)(11),
-                    {
-                        isUnavailable: I,
-                        message: C,
-                        homePath: j,
-                        onUnavailable: r,
-                        children: d
-                    } = n,
-                    N = (0, l.y)(c.a),
-                    L = (0, M._)(),
-                    h = (0, g.useRef)(!1);
-                o[0] !== j || o[1] !== C || o[2] !== L || o[3] !== r || o[4] !== N ? (i = () => {
-                    r?.(), N.get(a.f).info(C, {
-                        id: "conversation-inaccessible",
-                        duration: 5
-                    }), L(j, {
-                        replace: !0
-                    })
-                }, o[0] = j, o[1] = C, o[2] = L, o[3] = r, o[4] = N, o[5] = i) : i = o[5];
-                let A = (0, g.useEffectEvent)(i);
-                return o[6] !== I || o[7] !== A ? (t = () => {
-                    I && !h.current && (h.current = !0, A())
-                }, o[6] = I, o[7] = A, o[8] = t) : t = o[8], o[9] !== I ? (s = [I], o[9] = I, o[10] = s) : s = o[10], (0, g.useEffect)(t, s), I ? null : d
-            }
-        })
     }),
     EBQV: (function(i) {
         i.exports = n.ir("/cdn/assets/dotnet.js").then(function(n) {
@@ -522,68 +516,68 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as n
-} from "./633146.516c6a4677.js";
-import * as i from "./418851.8cdff597ce.js";
+} from "./633146.79c7577f6d.js";
+import * as i from "./418851.4cf783e1e4.js";
 n.C(i);
 import * as t from "./109308.fbb414d4aa.js";
 n.C(t);
-import * as e from "./399565.a7f9c29dec.js";
+import * as e from "./399565.ed5e74a86b.js";
 n.C(e);
 import * as l from "./257798.0b3d6025cd.js";
 n.C(l);
 import * as g from "./153380.6675e448cd.js";
 n.C(g);
-import * as M from "./617936.510230e136.js";
+import * as M from "./617936.5a72737818.js";
 n.C(M);
-import * as a from "./807489.a027e374ea.js";
+import * as a from "./807489.54f5772d0d.js";
 n.C(a);
-import * as c from "./337882.c2f7cf8187.js";
+import * as c from "./337882.26e5bd2b09.js";
 n.C(c);
-import * as s from "./955979.24c51c90c6.js";
+import * as s from "./955979.c158e14c67.js";
 n.C(s);
-import * as o from "./646436.c733a3d665.js";
+import * as o from "./646436.73183b8431.js";
 n.C(o);
-import * as I from "./7078.c424185282.js";
+import * as I from "./7078.92e3c91286.js";
 n.C(I);
-import * as C from "./200429.ef6ceeb78d.js";
+import * as C from "./200429.073fa1ac67.js";
 n.C(C);
-import * as j from "./698524.fd3e996752.js";
+import * as j from "./698524.d0f80a4f75.js";
 n.C(j);
-import * as r from "./956483.abe9885def.js";
+import * as r from "./956483.7057f5dd90.js";
 n.C(r);
-import * as d from "./87162.29ee0bd2a9.js";
-n.C(d);
-import * as N from "./396705.c39944bbf2.js";
+import * as N from "./87162.29ee0bd2a9.js";
 n.C(N);
+import * as d from "./396705.c39944bbf2.js";
+n.C(d);
 import * as L from "./155568.7bbfb72b85.js";
 n.C(L);
 import * as h from "./731863.8b87e9728a.js";
 n.C(h);
 import * as A from "./767086.6da4be4bcc.js";
 n.C(A);
-import * as u from "./76629.1ccd088209.js";
-n.C(u);
-import * as f from "./514085.2b0855224a.js";
+import * as f from "./76629.4a3def3f3d.js";
 n.C(f);
-import * as y from "./204542.555643bfb3.js";
+import * as u from "./514085.fce2779453.js";
+n.C(u);
+import * as y from "./204542.ebe6ed48ad.js";
 n.C(y);
 import * as x from "./982651.7bfd071e83.js";
 n.C(x);
-import * as D from "./673108.95021ed52b.js";
+import * as D from "./673108.aaf568e9f3.js";
 n.C(D);
-import * as p from "./487481.dd23dcfc39.js";
+import * as p from "./487481.699d7b5953.js";
 n.C(p);
-import * as w from "./229522.7430726c37.js";
+import * as w from "./229522.110e65fd00.js";
 n.C(w);
-import * as z from "./390575.353218f3fd.js";
+import * as z from "./390575.8e5cb2c01a.js";
 n.C(z);
-import * as v from "./353032.1ea521a002.js";
+import * as v from "./353032.9312ae4acb.js";
 n.C(v);
-import * as T from "./637885.5271cdd835.js";
+import * as T from "./637885.3e8c638fde.js";
 n.C(T);
-import * as m from "./226913.b323f04fd6.js";
+import * as m from "./226913.6965f848b1.js";
 n.C(m);
-import * as Z from "./708781.f2f11e09f0.js";
+import * as Z from "./708781.02b34db842.js";
 n.C(Z);
 var S = n(n.s = "cUVU").a;
 export {

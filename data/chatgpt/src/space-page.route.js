@@ -10,7 +10,7 @@ export const __webpack_modules__ = {
             l = a("QosV"),
             s = a("Bbed"),
             g = a("aBxd");
-        let c = (0, s.a)(async () => (await Promise.all([a.e(680612), a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(153380), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(982651), a.e(673108), a.e(487481), a.e(229522), a.e(390575), a.e(353032), a.e(637885), a.e(480171), a.e(999385), a.e(107895), a.e(553028), a.e(675788), a.e(103041), a.e(795912), a.e(751924), a.e(991592), a.e(677074)]).then(a.bind(a, "CDzG"))).SpacesPersonalRoute),
+        let c = (0, s.a)(async () => (await Promise.all([a.e(680612), a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(153380), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(982651), a.e(673108), a.e(487481), a.e(229522), a.e(390575), a.e(353032), a.e(637885), a.e(226913), a.e(480171), a.e(999385), a.e(107895), a.e(553028), a.e(675788), a.e(103041), a.e(910752), a.e(991592), a.e(356672)]).then(a.bind(a, "CDzG"))).SpacesPersonalRoute),
             o = () => [{
                 title: "ChatGPT Space"
             }, {
@@ -181,7 +181,7 @@ export const __webpack_modules__ = {
             l = a("eY5e"),
             s = a("MhZT");
         let g = {
-                fallback: (0, n.jsx)(l.b, {}),
+                fallback: (0, n.jsx)(l.a, {}),
                 propagateLoadError: !0
             },
             c = (0, i.a)(async () => (await s.a.prefetch(), s.a), g);
@@ -219,7 +219,7 @@ export const __webpack_modules__ = {
             r = a("mNPx"),
             M = a("e1xH"),
             d = a("BkKO"),
-            I = a("QvdU"),
+            I = a("Bok4"),
             p = a("yGJW"),
             C = a("H2L8"),
             u = a("OWtl"),
@@ -264,15 +264,15 @@ export const __webpack_modules__ = {
                     resume: T
                 } = t,
                 S = e.get(I.spaceAccountId$),
-                b = e.get(g.k),
-                Z = e.get(g.j);
+                Z = e.get(g.k),
+                b = e.get(g.j);
             if (null == S) throw Error("space_account_unavailable");
-            if (null != T && (T.accountId !== S || T.userId !== b || null == T.space)) throw Error("space_setup_unavailable");
+            if (null != T && (T.accountId !== S || T.userId !== Z || null == T.space)) throw Error("space_setup_unavailable");
             let E = e.get(g.m).accountUserId,
                 O = T?.localPageId ?? `local-page-${crypto.randomUUID()}`;
             (0, w.b)(e, T ?? {
                 accountId: S,
-                userId: b,
+                userId: Z,
                 localPageId: O,
                 name: x,
                 backingType: "drive",
@@ -295,7 +295,7 @@ export const __webpack_modules__ = {
                     let a = {
                         localPageId: O,
                         accountId: S,
-                        userId: b,
+                        userId: Z,
                         name: x,
                         status: t,
                         response: n,
@@ -307,7 +307,7 @@ export const __webpack_modules__ = {
                 G = () => {
                     if (null != u) return u;
                     if (B || U.signal.aborted) return Promise.reject(new DOMException("Space creation cancelled", "AbortError"));
-                    let t = (0, I.watchSpaceAccount)(e, S, b, E, Z),
+                    let t = (0, I.watchSpaceAccount)(e, S, Z, E, b),
                         l = AbortSignal.any([U.signal, t.signal]),
                         N = async () => {
                             l.throwIfAborted();
@@ -341,10 +341,10 @@ export const __webpack_modules__ = {
                                 let {
                                     get: t
                                 } = e;
-                                return l.aborted || t(I.spaceAccountId$) !== S || t(g.k) !== b || void 0 !== E && t(f.a) !== E || t(f.d) !== Z || !t(M.pagesEnabled$) || t(d.b)?.some(e => e.id === n?.id) === !0
+                                return l.aborted || t(I.spaceAccountId$) !== S || t(g.k) !== Z || void 0 !== E && t(f.a) !== E || t(f.d) !== b || !t(M.pagesEnabled$) || t(d.b)?.some(e => e.id === n?.id) === !0
                             }), l.throwIfAborted(), F("creating");
                             let c = P()?.appearance,
-                                o = (0, i.Aj)(c?.emoji),
+                                o = (0, i.Dj)(c?.emoji),
                                 r = null == o ? null : {
                                     kind: "icon",
                                     value: o,
@@ -353,7 +353,7 @@ export const __webpack_modules__ = {
                             if (s || null != r) {
                                 let {
                                     completeSpaceRootSetup: t
-                                } = await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(153380), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(982651), a.e(673108), a.e(487481), a.e(229522), a.e(390575), a.e(353032), a.e(637885), a.e(753405), a.e(855313)]).then(a.bind(a, "PluF"));
+                                } = await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(153380), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(982651), a.e(673108), a.e(487481), a.e(229522), a.e(390575), a.e(353032), a.e(637885), a.e(226913), a.e(753405), a.e(855313)]).then(a.bind(a, "PluF"));
                                 l.throwIfAborted();
                                 let i = await t(e, n, r, s, l);
                                 l.throwIfAborted(), n = {
@@ -439,7 +439,7 @@ export const __webpack_modules__ = {
                                             }
                                         }).execute({
                                             changes: c
-                                        }), await (0, i.kf)(Promise.all(d), n), n.throwIfAborted(), r.size < c.length) try {
+                                        }), await (0, i.nf)(Promise.all(d), n), n.throwIfAborted(), r.size < c.length) try {
                                         let t = await (0, y.c)(e, s, n, !0);
                                         n.throwIfAborted(), (0, y.b)(t) && c.forEach((e, n) => {
                                             let i = o.get(e) ?? a[n].recipient;
@@ -479,7 +479,7 @@ export const __webpack_modules__ = {
                                     }), t.some(e => "failed" === e.status)) throw Error("space_creation_invitations_incomplete")
                             }(0, w.a)(e, O), F("created")
                         };
-                    return F("creating"), u = Promise.resolve().then(() => null == navigator.locks ? N() : navigator.locks.request(`space-setup:${JSON.stringify([S,b,O])}`, {
+                    return F("creating"), u = Promise.resolve().then(() => null == navigator.locks ? N() : navigator.locks.request(`space-setup:${JSON.stringify([S,Z,O])}`, {
                         signal: l
                     }, N)).catch(t => {
                         if (l.aborted) throw U.abort(), e.set(D, O, void 0), null != n && e.set(D, n.id, void 0), Y.cancel("account_changed"), t;
@@ -488,7 +488,7 @@ export const __webpack_modules__ = {
                                 pathname: t,
                                 search: a
                             } = e.get(s.b);
-                            e.get(I.spaceAccountId$) === S && e.get(g.k) === b && ("/spaces/new" !== t || new URLSearchParams(a).get("creation") !== O) && e.get(c.f).warning(e.get(o.a).formatMessage({
+                            e.get(I.spaceAccountId$) === S && e.get(g.k) === Z && ("/spaces/new" !== t || new URLSearchParams(a).get("creation") !== O) && e.get(c.f).warning(e.get(o.a).formatMessage({
                                 id: "codex.space.sidebar.spaceSetupNeedsAttention",
                                 defaultMessage: "Space setup needs attention",
                                 description: "Toast displayed when a shared Space setup needs retry or recovery. Translate Space/Spaces as a common noun for an area or collection of Pages and files, not a proper name or outer space. Keep the term consistent with navigation."
@@ -505,64 +505,62 @@ export const __webpack_modules__ = {
         var n = a("ABep"),
             i = a("QosV"),
             l = a("BolX"),
-            s = a("zd8w"),
-            g = a("jqIZ"),
-            c = a("VEyj"),
-            o = a("GKgn"),
-            r = a("zOE4"),
-            M = a("j9wQ"),
-            d = a("r1wd"),
-            I = a("zV9s"),
-            p = a("SkNj"),
-            C = a("VUkV");
+            s = a("jqIZ"),
+            g = a("GKgn"),
+            c = a("zOE4"),
+            o = a("j9wQ"),
+            r = a("r1wd"),
+            M = a("zV9s"),
+            d = a("SkNj"),
+            I = a("VUkV");
 
-        function u(e) {
+        function p(e) {
             let t, a, l, s, g = (0, i.c)(14),
                 {
                     preview: c,
-                    onClose: o
+                    onClose: d
                 } = e,
-                r = c.title ?? "",
-                p = c.textPageCard?.symbol;
-            g[0] !== c.pageId || g[1] !== r || g[2] !== p ? (t = (0, n.jsx)(M.c, {
+                p = c.title ?? "",
+                u = c.textPageCard?.symbol;
+            g[0] !== c.pageId || g[1] !== p || g[2] !== u ? (t = (0, n.jsx)(o.c, {
                 disabled: !0,
                 variant: "dropdown",
-                children: (0, n.jsx)(C.a, {
+                children: (0, n.jsx)(I.a, {
                     pageId: c.pageId,
-                    title: r,
-                    symbol: p,
+                    title: p,
+                    symbol: u,
                     documentType: "page",
-                    children: h
+                    children: C
                 })
-            }), g[0] = c.pageId, g[1] = r, g[2] = p, g[3] = t) : t = g[3], g[4] !== o || g[5] !== t ? (a = (0, n.jsx)("div", {
+            }), g[0] = c.pageId, g[1] = p, g[2] = u, g[3] = t) : t = g[3], g[4] !== d || g[5] !== t ? (a = (0, n.jsx)("div", {
                 className: "pointer-events-none absolute inset-x-0 top-0 z-30",
-                children: (0, n.jsx)(I.c, {
+                children: (0, n.jsx)(M.c, {
                     contentFade: !0,
                     inset: !0,
-                    onClose: o,
+                    onClose: d,
                     actions: null,
                     sharing: null,
                     navigation: t
                 })
-            }), g[4] = o, g[5] = t, g[6] = a) : a = g[6];
-            let u = c.textPageCard?.symbol;
-            return g[7] !== c.pageId || g[8] !== c.title || g[9] !== u ? (l = (0, n.jsx)(d.a, {
+            }), g[4] = d, g[5] = t, g[6] = a) : a = g[6];
+            let h = c.textPageCard?.symbol;
+            return g[7] !== c.pageId || g[8] !== c.title || g[9] !== h ? (l = (0, n.jsx)(r.a, {
                 pageId: c.pageId,
                 title: c.title,
-                symbol: u,
+                symbol: h,
                 headerOverlay: !0
-            }), g[7] = c.pageId, g[8] = c.title, g[9] = u, g[10] = l) : l = g[10], g[11] !== a || g[12] !== l ? (s = (0, n.jsxs)("section", {
+            }), g[7] = c.pageId, g[8] = c.title, g[9] = h, g[10] = l) : l = g[10], g[11] !== a || g[12] !== l ? (s = (0, n.jsxs)("section", {
                 className: "relative flex h-full min-h-0 flex-col",
                 children: [a, l]
             }), g[11] = a, g[12] = l, g[13] = s) : s = g[13], s
         }
 
-        function h(e) {
+        function C(e) {
             let {
                 icon: t,
                 title: a
             } = e;
-            return (0, n.jsx)(M.s, {
+            return (0, n.jsx)(o.s, {
                 icon: t,
                 children: (0, n.jsx)("span", {
                     className: "max-w-42 truncate",
@@ -571,66 +569,36 @@ export const __webpack_modules__ = {
             })
         }
         a.d(t, {}, {
+            CardLoadingShell: p,
             a: function(e) {
-                let t, a, o, r, M, d = (0, i.c)(16),
+                let t, a, o = (0, i.c)(7),
                     {
-                        children: I
+                        fillParent: r
                     } = e,
-                    C = (0, s.useContext)(g.d)?.navigation.location,
-                    h = (0, g.Y)(),
-                    j = (0, g._)(),
-                    f = (0, g.W)("/space");
-                d[0] !== C || d[1] !== f ? (t = null == C ? void 0 : (0, g.J)(`${f}/:pageId/:instanceId?`, C.pathname)?.params.pageId, d[0] = C, d[1] = f, d[2] = t) : t = d[2];
-                let N = t,
-                    A = C?.state?.pagePreview;
-                d[3] !== N || d[4] !== A ? (a = {
-                    pageId: N,
-                    preview: A
-                }, d[3] = N, d[4] = A, d[5] = a) : a = d[5];
-                let y = (0, l.x)(p.d, a),
-                    L = null == y ? "visible" : "hidden";
-                return d[6] !== I || d[7] !== L ? (o = (0, n.jsx)(c.a, {
-                    mode: L,
-                    children: I
-                }), d[6] = I, d[7] = L, d[8] = o) : o = d[8], d[9] !== h || d[10] !== j || d[11] !== y ? (r = null != y && (0, n.jsx)(u, {
-                    preview: y,
-                    onClose: () => void j(h, {
-                        replace: !0,
-                        state: h.state
-                    })
-                }), d[9] = h, d[10] = j, d[11] = y, d[12] = r) : r = d[12], d[13] !== o || d[14] !== r ? (M = (0, n.jsxs)(n.Fragment, {
-                    children: [o, r]
-                }), d[13] = o, d[14] = r, d[15] = M) : M = d[15], M
-            },
-            b: function(e) {
-                let t, a, s = (0, i.c)(7),
+                    M = void 0 !== r && r,
+                    I = (0, s.Y)(),
+                    C = (0, s._)(),
                     {
-                        fillParent: c
-                    } = e,
-                    M = void 0 !== c && c,
-                    d = (0, g.Y)(),
-                    I = (0, g._)(),
-                    {
-                        pageId: C
-                    } = (0, g.cb)(),
-                    h = d.state?.pagePreview;
-                s[0] !== C || s[1] !== h ? (t = {
-                    pageId: C,
+                        pageId: u
+                    } = (0, s.cb)(),
+                    h = I.state?.pagePreview;
+                o[0] !== u || o[1] !== h ? (t = {
+                    pageId: u,
                     preview: h
-                }, s[0] = C, s[1] = h, s[2] = t) : t = s[2];
-                let j = (0, l.x)(p.d, t);
-                return s[3] !== M || s[4] !== I || s[5] !== j ? (a = null == j ? (0, n.jsx)(r.LoadingPage, {
+                }, o[0] = u, o[1] = h, o[2] = t) : t = o[2];
+                let j = (0, l.x)(d.d, t);
+                return o[3] !== M || o[4] !== C || o[5] !== j ? (a = null == j ? (0, n.jsx)(c.LoadingPage, {
                     fillParent: M,
                     delay: !1
                 }) : (0, n.jsxs)(n.Fragment, {
-                    children: [(0, n.jsx)(o.a, {
+                    children: [(0, n.jsx)(g.a, {
                         layout: "custom-titlebar",
                         fallback: !0
-                    }), (0, n.jsx)(u, {
+                    }), (0, n.jsx)(p, {
                         preview: j,
-                        onClose: () => void I(-1)
+                        onClose: () => void C(-1)
                     })]
-                }), s[3] = M, s[4] = I, s[5] = j, s[6] = a) : a = s[6], a
+                }), o[3] = M, o[4] = C, o[5] = j, o[6] = a) : a = o[6], a
             }
         })
     }),
@@ -732,7 +700,7 @@ Create a new trip planner page with flight details, hotel reservations, and tour
             I = a("jAir"),
             p = a("ELpK"),
             C = a("vpOl"),
-            u = a("QvdU");
+            u = a("Bok4");
         let h = (0, l.c)(g.a, e => {
                 let {
                     get: t
@@ -816,7 +784,7 @@ Create a new trip planner page with flight details, hotel reservations, and tour
             M = a("WFY2"),
             d = a("kpIY"),
             I = a("Nwp9"),
-            p = a("QvdU"),
+            p = a("Bok4"),
             C = a("Kw4a"),
             u = a("v5SL"),
             h = a("JkZJ"),
@@ -865,7 +833,7 @@ Create a new trip planner page with flight details, hotel reservations, and tour
                 let i = t(g.p);
                 if (i.isSuccess && !i.isPlaceholderData) return Object.hasOwn(i.data.seenAnnouncements ?? {}, N)
             }),
-            b = (0, i.d)(r.a, (e, t) => {
+            Z = (0, i.d)(r.a, (e, t) => {
                 let {
                     get: a
                 } = t;
@@ -895,7 +863,7 @@ Create a new trip planner page with flight details, hotel reservations, and tour
                     pageId: null
                 } : null
             });
-        async function Z(e) {
+        async function b(e) {
             if (!e.get(c.pagesEnabled$)) return;
             let t = e.get(x);
             if (null == t || e.get(u.h, t.key) || "pending" !== e.get(y)[t.key] || e.get(L, t.key)) return;
@@ -951,17 +919,17 @@ Create a new trip planner page with flight details, hotel reservations, and tour
                             value: "pending"
                         }
                     }
-                }), e.set(w, null), Z(e))
+                }), e.set(w, null), b(e))
             },
             d: w,
-            e: Z,
+            e: b,
             f: z,
             g: x,
             h: S,
             i: v,
             j: T,
             k: D,
-            l: b
+            l: Z
         })
     }),
     EBQV: (function(t) {
@@ -972,34 +940,34 @@ Create a new trip planner page with flight details, hotel reservations, and tour
 };
 import {
     __webpack_require__ as e
-} from "./633146.516c6a4677.js";
-import * as t from "./418851.8cdff597ce.js";
+} from "./633146.79c7577f6d.js";
+import * as t from "./418851.4cf783e1e4.js";
 e.C(t);
 import * as a from "./109308.fbb414d4aa.js";
 e.C(a);
-import * as n from "./399565.a7f9c29dec.js";
+import * as n from "./399565.ed5e74a86b.js";
 e.C(n);
 import * as i from "./257798.0b3d6025cd.js";
 e.C(i);
 import * as l from "./153380.6675e448cd.js";
 e.C(l);
-import * as s from "./617936.510230e136.js";
+import * as s from "./617936.5a72737818.js";
 e.C(s);
-import * as g from "./807489.a027e374ea.js";
+import * as g from "./807489.54f5772d0d.js";
 e.C(g);
-import * as c from "./337882.c2f7cf8187.js";
+import * as c from "./337882.26e5bd2b09.js";
 e.C(c);
-import * as o from "./955979.24c51c90c6.js";
+import * as o from "./955979.c158e14c67.js";
 e.C(o);
-import * as r from "./646436.c733a3d665.js";
+import * as r from "./646436.73183b8431.js";
 e.C(r);
-import * as M from "./7078.c424185282.js";
+import * as M from "./7078.92e3c91286.js";
 e.C(M);
-import * as d from "./200429.ef6ceeb78d.js";
+import * as d from "./200429.073fa1ac67.js";
 e.C(d);
-import * as I from "./698524.fd3e996752.js";
+import * as I from "./698524.d0f80a4f75.js";
 e.C(I);
-import * as p from "./956483.abe9885def.js";
+import * as p from "./956483.7057f5dd90.js";
 e.C(p);
 import * as C from "./87162.29ee0bd2a9.js";
 e.C(C);
@@ -1011,34 +979,34 @@ import * as j from "./731863.8b87e9728a.js";
 e.C(j);
 import * as f from "./767086.6da4be4bcc.js";
 e.C(f);
-import * as N from "./76629.1ccd088209.js";
+import * as N from "./76629.4a3def3f3d.js";
 e.C(N);
-import * as A from "./514085.2b0855224a.js";
+import * as A from "./514085.fce2779453.js";
 e.C(A);
-import * as y from "./204542.555643bfb3.js";
+import * as y from "./204542.ebe6ed48ad.js";
 e.C(y);
 import * as L from "./982651.7bfd071e83.js";
 e.C(L);
-import * as w from "./673108.95021ed52b.js";
+import * as w from "./673108.aaf568e9f3.js";
 e.C(w);
-import * as D from "./487481.dd23dcfc39.js";
+import * as D from "./487481.699d7b5953.js";
 e.C(D);
-import * as x from "./229522.7430726c37.js";
+import * as x from "./229522.110e65fd00.js";
 e.C(x);
-import * as m from "./390575.353218f3fd.js";
+import * as m from "./390575.8e5cb2c01a.js";
 e.C(m);
-import * as v from "./353032.1ea521a002.js";
+import * as v from "./353032.9312ae4acb.js";
 e.C(v);
-import * as z from "./637885.5271cdd835.js";
+import * as z from "./637885.3e8c638fde.js";
 e.C(z);
-import * as T from "./226913.b323f04fd6.js";
+import * as T from "./226913.6965f848b1.js";
 e.C(T);
 import * as S from "./355084.bad9e1bc4b.js";
 e.C(S);
-import * as b from "./135441.a67699cd31.js";
-e.C(b);
-import * as Z from "./487589.4e437955a5.js";
+import * as Z from "./135441.fb9fe6ba70.js";
 e.C(Z);
+import * as b from "./487589.5096b919c4.js";
+e.C(b);
 var E = e(e.s = "CTmB"),
     O = E.a,
     Y = E.b;

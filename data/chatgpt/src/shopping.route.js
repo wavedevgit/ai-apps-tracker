@@ -4,9 +4,9 @@ export const __webpack_modules__ = {
         o.d(r, {
             a: () => t
         });
-        var e = o("jqIZ"),
-            a = o("EkCf");
-        let t = (0, e.hb)(a.a)
+        var a = o("jqIZ"),
+            e = o("EkCf");
+        let t = (0, a.hb)(e.a)
     }),
     nDjx: (function(s, r, o) {
         s.exports = o.p + "assets/appshot-logo.f0152cb4dd.png"
@@ -21,8 +21,8 @@ export const __webpack_modules__ = {
         s.exports = o.p + "assets/dictation-stop.e3bc7ebc5e.wav"
     }),
     nlAI: (function(s, r, o) {
-        var e = o("ABep"),
-            a = o("QosV"),
+        var a = o("ABep"),
+            e = o("QosV"),
             t = o("XyTt"),
             f = o("zd8w"),
             m = o("v4LA"),
@@ -30,14 +30,14 @@ export const __webpack_modules__ = {
         let i = (0, m.a)(t.v);
         o.d(r, {}, {
             a: function(s) {
-                let r, o, t = (0, a.c)(3),
+                let r, o, t = (0, e.c)(3),
                     {
                         link: m
                     } = s;
-                return t[0] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, e.jsx)(p.b, {}), t[0] = r) : r = t[0], t[1] !== m ? (o = (0, e.jsx)(p.a, {
-                    children: (0, e.jsx)(f.Suspense, {
+                return t[0] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, a.jsx)(p.b, {}), t[0] = r) : r = t[0], t[1] !== m ? (o = (0, a.jsx)(p.a, {
+                    children: (0, a.jsx)(f.Suspense, {
                         fallback: r,
-                        children: (0, e.jsx)(i, {
+                        children: (0, a.jsx)(i, {
                             link: m
                         })
                     })
@@ -46,8 +46,8 @@ export const __webpack_modules__ = {
         })
     }),
     EkCf: (function(s, r, o) {
-        var e = o("ABep"),
-            a = o("QosV"),
+        var a = o("ABep"),
+            e = o("QosV"),
             t = o("jqIZ"),
             f = o("HnGz"),
             m = o("hC2y"),
@@ -56,39 +56,39 @@ export const __webpack_modules__ = {
             c = o("nlAI");
         o.d(r, {}, {
             a: function(s) {
-                let r, o, d, j, b, l = (0, a.c)(14),
+                let r, o, j, l, n, d = (0, e.c)(14),
                     {
-                        fallback: n
+                        fallback: C
                     } = s,
                     {
-                        pathname: C
+                        pathname: b
                     } = (0, t.Y)();
-                if (l[0] !== n || l[1] !== C) {
-                    j = Symbol.for("react.early_return_sentinel");
+                if (d[0] !== C || d[1] !== b) {
+                    l = Symbol.for("react.early_return_sentinel");
                     s: {
-                        let s = (0, f.g)(m.c, C);
+                        let s = (0, f.g)(m.c, b);
                         if (null == s) {
                             let s;
-                            l[6] !== C ? (s = (0, i.b)(C), l[6] = C, l[7] = s) : s = l[7];
+                            d[6] !== b ? (s = (0, i.b)(b), d[6] = b, d[7] = s) : s = d[7];
                             let r = s;
                             if (null != r) {
                                 let s;
-                                l[8] !== r ? (s = (0, e.jsx)(c.a, {
+                                d[8] !== r ? (s = (0, a.jsx)(c.a, {
                                     link: r
-                                }), l[8] = r, l[9] = s) : s = l[9], j = s;
+                                }), d[8] = r, d[9] = s) : s = d[9], l = s;
                                 break s
                             }
                         }
                         r = p.a,
-                        o = n,
-                        d = null == s ? (0, e.jsx)(m.d, {}) : (0, t.O)(s)
+                        o = C,
+                        j = null == s ? (0, a.jsx)(m.d, {}) : (0, t.O)(s)
                     }
-                    l[0] = n, l[1] = C, l[2] = r, l[3] = o, l[4] = d, l[5] = j
-                } else r = l[2], o = l[3], d = l[4], j = l[5];
-                return j !== Symbol.for("react.early_return_sentinel") ? j : (l[10] !== r || l[11] !== o || l[12] !== d ? (b = (0, e.jsx)(r, {
+                    d[0] = C, d[1] = b, d[2] = r, d[3] = o, d[4] = j, d[5] = l
+                } else r = d[2], o = d[3], j = d[4], l = d[5];
+                return l !== Symbol.for("react.early_return_sentinel") ? l : (d[10] !== r || d[11] !== o || d[12] !== j ? (n = (0, a.jsx)(r, {
                     fallback: o,
-                    children: d
-                }), l[10] = r, l[11] = o, l[12] = d, l[13] = b) : b = l[13], b)
+                    children: j
+                }), d[10] = r, d[11] = o, d[12] = j, d[13] = n) : n = d[13], n)
             }
         })
     }),
@@ -100,70 +100,70 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as s
-} from "./633146.516c6a4677.js";
-import * as r from "./418851.8cdff597ce.js";
+} from "./633146.79c7577f6d.js";
+import * as r from "./418851.4cf783e1e4.js";
 s.C(r);
 import * as o from "./109308.fbb414d4aa.js";
 s.C(o);
-import * as e from "./399565.a7f9c29dec.js";
-s.C(e);
-import * as a from "./257798.0b3d6025cd.js";
+import * as a from "./399565.ed5e74a86b.js";
 s.C(a);
+import * as e from "./257798.0b3d6025cd.js";
+s.C(e);
 import * as t from "./153380.6675e448cd.js";
 s.C(t);
-import * as f from "./617936.510230e136.js";
+import * as f from "./617936.5a72737818.js";
 s.C(f);
-import * as m from "./807489.a027e374ea.js";
+import * as m from "./807489.54f5772d0d.js";
 s.C(m);
-import * as p from "./337882.c2f7cf8187.js";
+import * as p from "./337882.26e5bd2b09.js";
 s.C(p);
-import * as i from "./955979.24c51c90c6.js";
+import * as i from "./955979.c158e14c67.js";
 s.C(i);
-import * as c from "./646436.c733a3d665.js";
+import * as c from "./646436.73183b8431.js";
 s.C(c);
-import * as d from "./7078.c424185282.js";
-s.C(d);
-import * as j from "./200429.ef6ceeb78d.js";
+import * as j from "./7078.92e3c91286.js";
 s.C(j);
-import * as b from "./698524.fd3e996752.js";
-s.C(b);
-import * as l from "./956483.abe9885def.js";
+import * as l from "./200429.073fa1ac67.js";
 s.C(l);
-import * as n from "./87162.29ee0bd2a9.js";
+import * as n from "./698524.d0f80a4f75.js";
 s.C(n);
-import * as C from "./396705.c39944bbf2.js";
+import * as d from "./956483.7057f5dd90.js";
+s.C(d);
+import * as C from "./87162.29ee0bd2a9.js";
 s.C(C);
+import * as b from "./396705.c39944bbf2.js";
+s.C(b);
 import * as _ from "./155568.7bbfb72b85.js";
 s.C(_);
 import * as x from "./731863.8b87e9728a.js";
 s.C(x);
 import * as u from "./767086.6da4be4bcc.js";
 s.C(u);
-import * as k from "./76629.1ccd088209.js";
+import * as k from "./76629.4a3def3f3d.js";
 s.C(k);
-import * as h from "./514085.2b0855224a.js";
+import * as h from "./514085.fce2779453.js";
 s.C(h);
-import * as v from "./204542.555643bfb3.js";
+import * as v from "./204542.ebe6ed48ad.js";
 s.C(v);
 import * as g from "./982651.7bfd071e83.js";
 s.C(g);
-import * as A from "./673108.95021ed52b.js";
+import * as A from "./673108.aaf568e9f3.js";
 s.C(A);
-import * as y from "./487481.dd23dcfc39.js";
+import * as y from "./487481.699d7b5953.js";
 s.C(y);
-import * as I from "./229522.7430726c37.js";
+import * as I from "./229522.110e65fd00.js";
 s.C(I);
-import * as w from "./390575.353218f3fd.js";
+import * as w from "./390575.8e5cb2c01a.js";
 s.C(w);
-import * as D from "./353032.1ea521a002.js";
+import * as D from "./353032.9312ae4acb.js";
 s.C(D);
-import * as S from "./637885.5271cdd835.js";
+import * as S from "./637885.3e8c638fde.js";
 s.C(S);
-import * as V from "./226913.b323f04fd6.js";
+import * as V from "./226913.6965f848b1.js";
 s.C(V);
 import * as z from "./902158.5a4b6c2c66.js";
 s.C(z);
-import * as B from "./62515.edb7a57378.js";
+import * as B from "./62515.52c0d45070.js";
 s.C(B);
 var E = s(s.s = "Hg9t").a;
 export {

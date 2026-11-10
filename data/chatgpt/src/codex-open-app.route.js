@@ -30,7 +30,7 @@ export const __webpack_modules__ = {
                     downloadPlatform: d
                 } = (0, o.X)(),
                 f = (0, u.a)(),
-                C = (0, r.og)(c),
+                C = (0, r.rg)(c),
                 b = (0, h.a)(c),
                 [x, j] = (0, i.useState)(!1),
                 k = c.get("source"),
@@ -321,7 +321,7 @@ export const __webpack_modules__ = {
 
         function i(e) {
             if ("https://chatgpt.com" !== e.origin || null == (0, a.K)(r, e.pathname)) return null;
-            let t = (0, o.og)(e.searchParams);
+            let t = (0, o.rg)(e.searchParams);
             return null == t ? null : new URL(t)
         }
 
@@ -528,34 +528,34 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.516c6a4677.js";
-import * as t from "./418851.8cdff597ce.js";
+} from "./633146.79c7577f6d.js";
+import * as t from "./418851.4cf783e1e4.js";
 e.C(t);
 import * as n from "./109308.fbb414d4aa.js";
 e.C(n);
-import * as o from "./399565.a7f9c29dec.js";
+import * as o from "./399565.ed5e74a86b.js";
 e.C(o);
 import * as a from "./257798.0b3d6025cd.js";
 e.C(a);
 import * as s from "./153380.6675e448cd.js";
 e.C(s);
-import * as r from "./617936.510230e136.js";
+import * as r from "./617936.5a72737818.js";
 e.C(r);
-import * as i from "./807489.a027e374ea.js";
+import * as i from "./807489.54f5772d0d.js";
 e.C(i);
-import * as c from "./337882.c2f7cf8187.js";
+import * as c from "./337882.26e5bd2b09.js";
 e.C(c);
-import * as l from "./955979.24c51c90c6.js";
+import * as l from "./955979.c158e14c67.js";
 e.C(l);
-import * as d from "./646436.c733a3d665.js";
+import * as d from "./646436.73183b8431.js";
 e.C(d);
-import * as p from "./7078.c424185282.js";
+import * as p from "./7078.92e3c91286.js";
 e.C(p);
-import * as u from "./200429.ef6ceeb78d.js";
+import * as u from "./200429.073fa1ac67.js";
 e.C(u);
-import * as h from "./698524.fd3e996752.js";
+import * as h from "./698524.d0f80a4f75.js";
 e.C(h);
-import * as m from "./956483.abe9885def.js";
+import * as m from "./956483.7057f5dd90.js";
 e.C(m);
 import * as f from "./87162.29ee0bd2a9.js";
 e.C(f);
@@ -567,29 +567,29 @@ import * as w from "./731863.8b87e9728a.js";
 e.C(w);
 import * as b from "./767086.6da4be4bcc.js";
 e.C(b);
-import * as x from "./76629.1ccd088209.js";
+import * as x from "./76629.4a3def3f3d.js";
 e.C(x);
-import * as j from "./514085.2b0855224a.js";
+import * as j from "./514085.fce2779453.js";
 e.C(j);
-import * as k from "./204542.555643bfb3.js";
+import * as k from "./204542.ebe6ed48ad.js";
 e.C(k);
 import * as _ from "./982651.7bfd071e83.js";
 e.C(_);
-import * as v from "./673108.95021ed52b.js";
+import * as v from "./673108.aaf568e9f3.js";
 e.C(v);
-import * as y from "./487481.dd23dcfc39.js";
+import * as y from "./487481.699d7b5953.js";
 e.C(y);
-import * as L from "./229522.7430726c37.js";
+import * as L from "./229522.110e65fd00.js";
 e.C(L);
-import * as I from "./390575.353218f3fd.js";
+import * as I from "./390575.8e5cb2c01a.js";
 e.C(I);
-import * as P from "./353032.1ea521a002.js";
+import * as P from "./353032.9312ae4acb.js";
 e.C(P);
-import * as S from "./637885.5271cdd835.js";
+import * as S from "./637885.3e8c638fde.js";
 e.C(S);
-import * as A from "./226913.b323f04fd6.js";
+import * as A from "./226913.6965f848b1.js";
 e.C(A);
-import * as T from "./29819.dce0f5a70e.js";
+import * as T from "./29819.fd86e5f076.js";
 e.C(T);
 var E = e(e.s = "Jvuj").a;
 export {

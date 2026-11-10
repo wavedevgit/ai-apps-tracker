@@ -2,27 +2,27 @@ export const __rspack_esm_ids = [326277];
 export const __webpack_modules__ = {
     EyFy: (function(e, t, s) {
         s.d(t, {
-            a: () => f
+            a: () => p
         });
-        var r = s("jqIZ"),
-            a = s("ABep"),
+        var a = s("jqIZ"),
+            r = s("ABep"),
             o = s("QosV"),
             i = s("BolX"),
             m = s("zd8w"),
             n = s("oyxz"),
             c = s("G8V1"),
-            l = s("RNul");
+            f = s("RNul");
         s("rHrT");
-        var d = s("eAav"),
-            f = (0, r.hb)(function() {
-                let e, t, s, f, p, b, u, h = (0, o.c)(12),
+        var l = s("eAav"),
+            p = (0, a.hb)(function() {
+                let e, t, s, p, d, b, u, h = (0, o.c)(12),
                     {
                         locale: j
-                    } = (0, i.y)(d.a).value,
+                    } = (0, i.y)(l.a).value,
                     {
                         fallbackUrl: C,
                         messages: g
-                    } = (0, r.X)(),
+                    } = (0, a.X)(),
                     _ = (0, m.useRef)(!1),
                     w = (0, m.useRef)(!1);
                 return h[0] !== C ? (e = () => {
@@ -48,33 +48,33 @@ export const __webpack_modules__ = {
                     return () => {
                         window.clearTimeout(s), document.removeEventListener("visibilitychange", e), window.removeEventListener("pagehide", t)
                     }
-                }, t = [C], h[0] = C, h[1] = e, h[2] = t) : (e = h[1], t = h[2]), (0, m.useEffect)(e, t), h[3] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, a.jsx)(l.a, {
+                }, t = [C], h[0] = C, h[1] = e, h[2] = t) : (e = h[1], t = h[2]), (0, m.useEffect)(e, t), h[3] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, r.jsx)(f.a, {
                     className: "icon-lg text-secondary"
-                }), h[3] = s) : s = h[3], h[4] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, a.jsx)("p", {
+                }), h[3] = s) : s = h[3], h[4] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsx)("p", {
                     className: "text-base",
-                    children: (0, a.jsx)(n.a, {
+                    children: (0, r.jsx)(n.a, {
                         id: "chatgpt.memory_mobile_upsell.deeplink_bridge.status",
                         defaultMessage: "Opening ChatGPT…",
                         description: "Loading/status text on the memory mobile Plus upsell bridge page. This page appears briefly for iOS users after they tap the memory launch email CTA, while ChatGPT tries to open the native app before falling back to web pricing. This indicates an in-progress action, not a command. Short sentence."
                     })
-                }), h[4] = f) : f = h[4], h[5] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, a.jsx)(n.a, {
+                }), h[4] = p) : p = h[4], h[5] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, r.jsx)(n.a, {
                     id: "chatgpt.memory_mobile_upsell.deeplink_bridge.web_fallback_link",
                     defaultMessage: "Continue on web",
                     description: "Link label on the iOS bridge page that opens the ChatGPT website in the mobile browser, not the app, to the pricing page with Plus highlighted. Very short."
-                }), h[5] = p) : p = h[5], h[6] !== C ? (b = (0, a.jsx)("main", {
+                }), h[5] = d) : d = h[5], h[6] !== C ? (b = (0, r.jsx)("main", {
                     className: "flex min-h-screen items-center justify-center bg-surface px-6 text-default select-none",
-                    children: (0, a.jsxs)("div", {
+                    children: (0, r.jsxs)("div", {
                         className: "flex max-w-sm flex-col items-center gap-3 text-center",
                         role: "status",
                         "aria-live": "polite",
                         "aria-busy": !0,
-                        children: [s, f, (0, a.jsx)("a", {
+                        children: [s, p, (0, r.jsx)("a", {
                             className: "text-sm text-secondary underline underline-offset-2",
                             href: C,
-                            children: p
+                            children: d
                         })]
                     })
-                }), h[6] = C, h[7] = b) : b = h[7], h[8] !== j || h[9] !== g || h[10] !== b ? (u = (0, a.jsx)(c.a, {
+                }), h[6] = C, h[7] = b) : b = h[7], h[8] !== j || h[9] !== g || h[10] !== b ? (u = (0, r.jsx)(c.a, {
                     locale: j,
                     defaultLocale: "en-US",
                     messages: g,
@@ -85,36 +85,36 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.516c6a4677.js";
+} from "./633146.79c7577f6d.js";
 import * as t from "./680612.3c8d72f22d.js";
 e.C(t);
-import * as s from "./418851.8cdff597ce.js";
+import * as s from "./418851.4cf783e1e4.js";
 e.C(s);
-import * as r from "./109308.fbb414d4aa.js";
-e.C(r);
-import * as a from "./399565.a7f9c29dec.js";
+import * as a from "./109308.fbb414d4aa.js";
 e.C(a);
+import * as r from "./399565.ed5e74a86b.js";
+e.C(r);
 import * as o from "./257798.0b3d6025cd.js";
 e.C(o);
 import * as i from "./153380.6675e448cd.js";
 e.C(i);
-import * as m from "./617936.510230e136.js";
+import * as m from "./617936.5a72737818.js";
 e.C(m);
-import * as n from "./807489.a027e374ea.js";
+import * as n from "./807489.54f5772d0d.js";
 e.C(n);
-import * as c from "./337882.c2f7cf8187.js";
+import * as c from "./337882.26e5bd2b09.js";
 e.C(c);
-import * as l from "./955979.24c51c90c6.js";
-e.C(l);
-import * as d from "./646436.c733a3d665.js";
-e.C(d);
-import * as f from "./7078.c424185282.js";
+import * as f from "./955979.c158e14c67.js";
 e.C(f);
-import * as p from "./200429.ef6ceeb78d.js";
+import * as l from "./646436.73183b8431.js";
+e.C(l);
+import * as p from "./7078.92e3c91286.js";
 e.C(p);
-import * as b from "./698524.fd3e996752.js";
+import * as d from "./200429.073fa1ac67.js";
+e.C(d);
+import * as b from "./698524.d0f80a4f75.js";
 e.C(b);
-import * as u from "./956483.abe9885def.js";
+import * as u from "./956483.7057f5dd90.js";
 e.C(u);
 import * as h from "./87162.29ee0bd2a9.js";
 e.C(h);
@@ -126,29 +126,29 @@ import * as g from "./731863.8b87e9728a.js";
 e.C(g);
 import * as _ from "./767086.6da4be4bcc.js";
 e.C(_);
-import * as w from "./76629.1ccd088209.js";
+import * as w from "./76629.4a3def3f3d.js";
 e.C(w);
-import * as y from "./514085.2b0855224a.js";
+import * as y from "./514085.fce2779453.js";
 e.C(y);
-import * as x from "./204542.555643bfb3.js";
+import * as x from "./204542.ebe6ed48ad.js";
 e.C(x);
 import * as v from "./982651.7bfd071e83.js";
 e.C(v);
-import * as S from "./673108.95021ed52b.js";
+import * as S from "./673108.aaf568e9f3.js";
 e.C(S);
-import * as T from "./487481.dd23dcfc39.js";
+import * as T from "./487481.699d7b5953.js";
 e.C(T);
-import * as k from "./229522.7430726c37.js";
+import * as k from "./229522.110e65fd00.js";
 e.C(k);
-import * as E from "./390575.353218f3fd.js";
+import * as E from "./390575.8e5cb2c01a.js";
 e.C(E);
-import * as L from "./353032.1ea521a002.js";
+import * as L from "./353032.9312ae4acb.js";
 e.C(L);
-import * as N from "./637885.5271cdd835.js";
+import * as N from "./637885.3e8c638fde.js";
 e.C(N);
-import * as P from "./226913.b323f04fd6.js";
+import * as P from "./226913.6965f848b1.js";
 e.C(P);
-import * as G from "./326277.ba76178f67.js";
+import * as G from "./326277.97a2a269b8.js";
 e.C(G);
 var A = e(e.s = "EyFy").a;
 export {
