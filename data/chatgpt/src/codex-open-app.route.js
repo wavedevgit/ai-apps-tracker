@@ -7,7 +7,7 @@ export const __webpack_modules__ = {
         var o = n("jqIZ"),
             a = n("ABep"),
             s = n("QosV"),
-            r = n("wWGv"),
+            r = n("hV9T"),
             i = n("zd8w"),
             c = n("EOo5"),
             l = n("pEfp"),
@@ -30,12 +30,12 @@ export const __webpack_modules__ = {
                     downloadPlatform: d
                 } = (0, o.X)(),
                 f = (0, u.a)(),
-                C = (0, r.ng)(c),
+                C = (0, r.og)(c),
                 b = (0, h.a)(c),
                 [x, j] = (0, i.useState)(!1),
                 k = c.get("source"),
-                v = l ? "mobile" : "opening";
-            if (("cli-login" === k || "login" === k) && (v = k), (0, i.useEffect)(() => {
+                _ = l ? "mobile" : "opening";
+            if (("cli-login" === k || "login" === k) && (_ = k), (0, i.useEffect)(() => {
                     if (!f || l || null == C) return;
                     if (null == b) return void window.location.assign(C);
                     let e = new AbortController,
@@ -59,12 +59,12 @@ export const __webpack_modules__ = {
             }
             return n[3] !== C ? (e = () => {
                 null != C && window.location.assign(C)
-            }, n[3] = C, n[4] = e) : e = n[4], n[5] !== C || n[6] !== d || n[7] !== v || n[8] !== e ? (t = (0, a.jsx)(m.a, {
+            }, n[3] = C, n[4] = e) : e = n[4], n[5] !== C || n[6] !== d || n[7] !== _ || n[8] !== e ? (t = (0, a.jsx)(m.a, {
                 deepLink: C,
                 downloadPlatform: d,
-                status: v,
+                status: _,
                 onOpen: e
-            }), n[5] = C, n[6] = d, n[7] = v, n[8] = e, n[9] = t) : t = n[9], t
+            }), n[5] = C, n[6] = d, n[7] = _, n[8] = e, n[9] = t) : t = n[9], t
         }
 
         function w() {}
@@ -139,8 +139,8 @@ export const __webpack_modules__ = {
                 connectorId: c.array(j).max(1)
             });
 
-        function v(e) {
-            let t, n, c, j, k, v, y = (0, a.c)(35),
+        function _(e) {
+            let t, n, c, j, k, _, y = (0, a.c)(35),
                 {
                     accountId: L,
                     destination: I,
@@ -148,9 +148,9 @@ export const __webpack_modules__ = {
                     reloadOnSelection: S,
                     unavailablePath: A
                 } = e,
-                E = void 0 !== S && S,
+                T = void 0 !== S && S,
                 {
-                    userId: T,
+                    userId: E,
                     accountId: G
                 } = (0, u.a)(),
                 D = (0, i.Y)(),
@@ -158,8 +158,8 @@ export const __webpack_modules__ = {
                 R = (0, i.W)(I),
                 V = (0, i.W)(P?.returnTo ?? I),
                 Z = (0, i.W)(A),
-                O = (0, b.k)();
-            y[0] !== L || y[1] !== R || y[2] !== P || y[3] !== D.key || y[4] !== E || y[5] !== V || y[6] !== Z || y[7] !== T ? (t = ["workspace-link-account", D.key, T, L, R, Z, E, P, V], y[0] = L, y[1] = R, y[2] = P, y[3] = D.key, y[4] = E, y[5] = V, y[6] = Z, y[7] = T, y[8] = t) : t = y[8], y[9] !== L || y[10] !== G || y[11] !== I || y[12] !== P || y[13] !== D.pathname || y[14] !== D.search || y[15] !== E || y[16] !== V || y[17] !== O || y[18] !== Z ? (n = async e => {
+                O = (0, b.i)();
+            y[0] !== L || y[1] !== R || y[2] !== P || y[3] !== D.key || y[4] !== T || y[5] !== V || y[6] !== Z || y[7] !== E ? (t = ["workspace-link-account", D.key, E, L, R, Z, T, P, V], y[0] = L, y[1] = R, y[2] = P, y[3] = D.key, y[4] = T, y[5] = V, y[6] = Z, y[7] = E, y[8] = t) : t = y[8], y[9] !== L || y[10] !== G || y[11] !== I || y[12] !== P || y[13] !== D.pathname || y[14] !== D.search || y[15] !== T || y[16] !== V || y[17] !== O || y[18] !== Z ? (n = async e => {
                 let {
                     signal: t
                 } = e, n = await h.Request.safeGet("/accounts/check/{version}", {
@@ -171,10 +171,10 @@ export const __webpack_modules__ = {
                     signal: t
                 });
                 t.throwIfAborted();
-                let o = "personal" === L && null == P ? Object.values(n.accounts).find(_) : n.accounts[L],
+                let o = "personal" === L && null == P ? Object.values(n.accounts).find(v) : n.accounts[L],
                     a = o?.account;
-                if (null == o || a?.account_id == null || !0 === a.is_deactivated) return E ? ((0, g.setAccountCookie)((0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, g.handleBrowserAccountChangeAndRefresh)(Z, t), "switching") : "unavailable";
-                if (!E && G === a.account_id && !1 !== o.can_access_with_session && (null == P || (0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === a.account_id)) return null != P ? (window.location.replace("string" == typeof I ? I : (0, i.y)(I)), "switching") : "selected";
+                if (null == o || a?.account_id == null || !0 === a.is_deactivated) return T ? ((0, g.setAccountCookie)((0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, g.handleBrowserAccountChangeAndRefresh)(Z, t), "switching") : "unavailable";
+                if (!T && G === a.account_id && !1 !== o.can_access_with_session && (null == P || (0, p.readChatGptTokenClaims)((0, p.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === a.account_id)) return null != P ? (window.location.replace("string" == typeof I ? I : (0, i.y)(I)), "switching") : "selected";
                 if (P?.attempted === "select" || P?.attempted === "authenticate" && !1 === o.can_access_with_session) return "unavailable";
                 let s = (0, i.J)(d.i, D.pathname)?.params.projectId,
                     r = (0, d.t)(new URLSearchParams(D.search));
@@ -215,7 +215,7 @@ export const __webpack_modules__ = {
                     canAccessWithSession: o.can_access_with_session,
                     ssoConnectionName: o.sso_connection_name
                 }, O, c, t), "switching"
-            }, y[9] = L, y[10] = G, y[11] = I, y[12] = P, y[13] = D.pathname, y[14] = D.search, y[15] = E, y[16] = V, y[17] = O, y[18] = Z, y[19] = n) : n = y[19], y[20] !== t || y[21] !== n ? (c = {
+            }, y[9] = L, y[10] = G, y[11] = I, y[12] = P, y[13] = D.pathname, y[14] = D.search, y[15] = T, y[16] = V, y[17] = O, y[18] = Z, y[19] = n) : n = y[19], y[20] !== t || y[21] !== n ? (c = {
                 queryKey: t,
                 queryFn: n,
                 staleTime: 1 / 0,
@@ -225,25 +225,25 @@ export const __webpack_modules__ = {
                 refetchOnReconnect: !1
             }, y[20] = t, y[21] = n, y[22] = c) : c = y[22];
             let {
-                data: W,
-                error: U
+                data: U,
+                error: z
             } = (0, s.a)(c);
-            if (U) throw U;
-            if ("unavailable" === W) {
+            if (z) throw z;
+            if ("unavailable" === U) {
                 let e;
                 return y[23] !== A ? (e = (0, o.jsx)(i.l, {
                     to: A,
                     replace: !0
                 }), y[23] = A, y[24] = e) : e = y[24], e
             }
-            if ("selected" === W) {
+            if ("selected" === U) {
                 let e;
                 return y[25] !== I ? (e = (0, o.jsx)(i.l, {
                     to: I,
                     replace: !0
                 }), y[25] = I, y[26] = e) : e = y[26], e
             }
-            let z = w.a,
+            let W = w.a,
                 q = C.b,
                 B = null == M ? D.pathname : (0, l.e)(M, D.pathname);
             return y[27] !== D || y[28] !== q || y[29] !== B ? (j = q({
@@ -251,13 +251,13 @@ export const __webpack_modules__ = {
                 routeTemplate: B
             }), y[27] = D, y[28] = q, y[29] = B, y[30] = j) : j = y[30], y[31] === Symbol.for("react.memo_cache_sentinel") ? (k = (0, o.jsxs)(f.a, {
                 children: [(0, o.jsx)(x.b, {}), (0, o.jsx)(m.LoadingPage, {})]
-            }), y[31] = k) : k = y[31], y[32] !== z || y[33] !== j ? (v = (0, o.jsx)(z, {
+            }), y[31] = k) : k = y[31], y[32] !== W || y[33] !== j ? (_ = (0, o.jsx)(W, {
                 route: j,
                 children: k
-            }), y[32] = z, y[33] = j, y[34] = v) : v = y[34], v
+            }), y[32] = W, y[33] = j, y[34] = _) : _ = y[34], _
         }
 
-        function _(e) {
+        function v(e) {
             return "personal" === e.account.structure
         }
         n.d(t, {}, {
@@ -285,7 +285,7 @@ export const __webpack_modules__ = {
                                 "product-sku": "CODEX"
                             }),
                             u = c.data.connectorId[0];null != u && l.set("connector", u),
-                        e = v,
+                        e = _,
                         s = c.data.accountId[0],
                         t = "/settings/connectors",
                         n = l.toString()
@@ -301,7 +301,7 @@ export const __webpack_modules__ = {
                     unavailablePath: "/settings/plugins-settings"
                 }), d[10] = e, d[11] = s, d[12] = c, d[13] = l) : l = d[13], l)
             },
-            WorkspaceLinkRoute: v
+            WorkspaceLinkRoute: _
         })
     }),
     tZ2c: (function(e, t, n) {
@@ -309,7 +309,7 @@ export const __webpack_modules__ = {
             a: () => c,
             b: () => i
         });
-        var o = n("wWGv"),
+        var o = n("hV9T"),
             a = n("jqIZ"),
             s = n("ASxG");
         let r = [{
@@ -318,7 +318,7 @@ export const __webpack_modules__ = {
 
         function i(e) {
             if ("https://chatgpt.com" !== e.origin || null == (0, a.K)(r, e.pathname)) return null;
-            let t = (0, o.ng)(e.searchParams);
+            let t = (0, o.og)(e.searchParams);
             return null == t ? null : new URL(t)
         }
 
@@ -371,8 +371,8 @@ export const __webpack_modules__ = {
             a: function(e) {
                 let t, n, r, u, h, m, f, C, w, g, b, x, j, k = (0, a.c)(42),
                     {
-                        deepLink: v,
-                        downloadPlatform: _,
+                        deepLink: _,
+                        downloadPlatform: v,
                         status: y,
                         onOpen: L
                     } = e,
@@ -407,7 +407,7 @@ export const __webpack_modules__ = {
                         defaultMessage: "We're trying to open ChatGPT automatically. If nothing happens, download the app and try opening it again.",
                         description: "Instructions on the browser launcher page if automatic opening of a chat in the ChatGPT desktop app does not work"
                     })
-                }) : null, k[12] = I, k[13] = m) : m = k[13], k[14] !== v || k[15] !== P ? (f = null != v || P ? null : (0, o.jsx)("p", {
+                }) : null, k[12] = I, k[13] = m) : m = k[13], k[14] !== _ || k[15] !== P ? (f = null != _ || P ? null : (0, o.jsx)("p", {
                     role: "alert",
                     className: "text-secondary",
                     children: (0, o.jsx)(s.a, {
@@ -415,7 +415,7 @@ export const __webpack_modules__ = {
                         defaultMessage: "This link is missing the chat details ChatGPT needs to reopen your work",
                         description: "Error on the browser launcher page when the chat or browser URL is missing or invalid, so opening the desktop app is unavailable"
                     })
-                }), k[14] = v, k[15] = P, k[16] = f) : f = k[16], k[17] !== _ || k[18] !== I ? (C = "opening" === I && "windows" === _ ? (0, o.jsx)(i.a, {
+                }), k[14] = _, k[15] = P, k[16] = f) : f = k[16], k[17] !== v || k[18] !== I ? (C = "opening" === I && "windows" === v ? (0, o.jsx)(i.a, {
                     color: "primary",
                     size: "auth",
                     onClick: p,
@@ -424,7 +424,7 @@ export const __webpack_modules__ = {
                         defaultMessage: "Download the app",
                         description: "Download button on the browser launcher page for installing the ChatGPT desktop app without losing the chat link"
                     })
-                }) : null, k[17] = _, k[18] = I, k[19] = C) : C = k[19], k[20] !== _ || k[21] !== I ? (w = "opening" === I && "mac" === _ ? (0, o.jsxs)(o.Fragment, {
+                }) : null, k[17] = v, k[18] = I, k[19] = C) : C = k[19], k[20] !== v || k[21] !== I ? (w = "opening" === I && "mac" === v ? (0, o.jsxs)(o.Fragment, {
                     children: [(0, o.jsx)(i.a, {
                         color: "primary",
                         size: "auth",
@@ -444,7 +444,7 @@ export const __webpack_modules__ = {
                             description: "Download button on the browser launcher page for the Intel Mac version of the ChatGPT desktop app"
                         })
                     })]
-                }) : null, k[20] = _, k[21] = I, k[22] = w) : w = k[22], k[23] !== I ? (g = "mobile" === I ? (0, o.jsx)(i.a, {
+                }) : null, k[20] = v, k[21] = I, k[22] = w) : w = k[22], k[23] !== I ? (g = "mobile" === I ? (0, o.jsx)(i.a, {
                     color: "primary",
                     size: "auth",
                     onClick: c,
@@ -453,17 +453,17 @@ export const __webpack_modules__ = {
                         defaultMessage: "Learn more",
                         description: "Link from the mobile desktop-launcher page to information about downloading the desktop app"
                     })
-                }) : null, k[23] = I, k[24] = g) : g = k[24], k[25] !== v || k[26] !== _ || k[27] !== P || k[28] !== L || k[29] !== I ? (b = "mobile" !== I && "cli-login" !== I ? (0, o.jsx)(i.a, {
-                    color: null == _ || P ? "primary" : "outlineSurface",
+                }) : null, k[23] = I, k[24] = g) : g = k[24], k[25] !== _ || k[26] !== v || k[27] !== P || k[28] !== L || k[29] !== I ? (b = "mobile" !== I && "cli-login" !== I ? (0, o.jsx)(i.a, {
+                    color: null == v || P ? "primary" : "outlineSurface",
                     size: "auth",
-                    disabled: null == v,
+                    disabled: null == _,
                     onClick: L,
                     children: (0, o.jsx)(s.a, {
                         id: "browser.codexDeeplink.open",
                         defaultMessage: "Open ChatGPT",
                         description: "Retry button on the browser launcher page for opening a chat in the ChatGPT desktop app"
                     })
-                }) : null, k[25] = v, k[26] = _, k[27] = P, k[28] = L, k[29] = I, k[30] = b) : b = k[30], k[31] !== w || k[32] !== g || k[33] !== b || k[34] !== C ? (x = (0, o.jsxs)("div", {
+                }) : null, k[25] = _, k[26] = v, k[27] = P, k[28] = L, k[29] = I, k[30] = b) : b = k[30], k[31] !== w || k[32] !== g || k[33] !== b || k[34] !== C ? (x = (0, o.jsxs)("div", {
                     className: "flex flex-col gap-3",
                     children: [C, w, g, b]
                 }), k[31] = w, k[32] = g, k[33] = b, k[34] = C, k[35] = x) : x = k[35], k[36] !== x || k[37] !== u || k[38] !== h || k[39] !== m || k[40] !== f ? (j = (0, o.jsx)("main", {
@@ -525,8 +525,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.578f2b23b5.js";
-import * as t from "./418851.a2414d348c.js";
+} from "./633146.a85b352259.js";
+import * as t from "./418851.b418272bca.js";
 e.C(t);
 import * as n from "./109308.fbb414d4aa.js";
 e.C(n);
@@ -536,60 +536,60 @@ import * as a from "./257798.0b3d6025cd.js";
 e.C(a);
 import * as s from "./153380.6675e448cd.js";
 e.C(s);
-import * as r from "./617936.d20f0bb1f2.js";
+import * as r from "./617936.ed57a1bdc2.js";
 e.C(r);
-import * as i from "./807489.7f3d71f5dd.js";
+import * as i from "./807489.02ba855c8c.js";
 e.C(i);
-import * as c from "./337882.eb4e205b01.js";
+import * as c from "./337882.b1c17957d2.js";
 e.C(c);
-import * as l from "./955979.1d3a3c3d70.js";
+import * as l from "./955979.f40606391d.js";
 e.C(l);
-import * as d from "./646436.669c479758.js";
+import * as d from "./646436.df466850ff.js";
 e.C(d);
-import * as p from "./7078.5a4ac5b67f.js";
+import * as p from "./7078.f43056bf4f.js";
 e.C(p);
-import * as u from "./200429.508d689d4a.js";
+import * as u from "./200429.f5468a7d9e.js";
 e.C(u);
-import * as h from "./698524.7580180eba.js";
+import * as h from "./698524.29c67652d0.js";
 e.C(h);
-import * as m from "./956483.21cf7af8b4.js";
+import * as m from "./956483.0463ebd3e8.js";
 e.C(m);
-import * as f from "./87162.636a6b2a55.js";
+import * as f from "./87162.29ee0bd2a9.js";
 e.C(f);
 import * as C from "./396705.c39944bbf2.js";
 e.C(C);
-import * as w from "./155568.d3b291934c.js";
+import * as w from "./155568.7bbfb72b85.js";
 e.C(w);
 import * as g from "./731863.8b87e9728a.js";
 e.C(g);
 import * as b from "./767086.6da4be4bcc.js";
 e.C(b);
-import * as x from "./76629.13408f2772.js";
+import * as x from "./76629.4b3a6c11d6.js";
 e.C(x);
-import * as j from "./514085.9f7c2a584b.js";
+import * as j from "./514085.5cd44b3418.js";
 e.C(j);
-import * as k from "./204542.a19c84b141.js";
+import * as k from "./204542.555643bfb3.js";
 e.C(k);
-import * as v from "./982651.7bfd071e83.js";
-e.C(v);
-import * as _ from "./673108.39ad50630b.js";
+import * as _ from "./982651.7bfd071e83.js";
 e.C(_);
-import * as y from "./487481.4c3625a8ea.js";
+import * as v from "./673108.84888467b6.js";
+e.C(v);
+import * as y from "./487481.d4be37a58a.js";
 e.C(y);
-import * as L from "./229522.a213296c9c.js";
+import * as L from "./229522.ddc021d49b.js";
 e.C(L);
-import * as I from "./390575.81bb6844fb.js";
+import * as I from "./390575.92d962cefa.js";
 e.C(I);
-import * as P from "./353032.6c4c0e25a0.js";
+import * as P from "./353032.7103e0705d.js";
 e.C(P);
-import * as S from "./637885.77f633a270.js";
+import * as S from "./637885.ac5c2e9cdb.js";
 e.C(S);
 import * as A from "./226913.b323f04fd6.js";
 e.C(A);
-import * as E from "./29819.f76712dd7f.js";
-e.C(E);
-var T = e(e.s = "Jvuj").a;
+import * as T from "./29819.81274352bb.js";
+e.C(T);
+var E = e(e.s = "Jvuj").a;
 export {
-    T as
+    E as
     default
 };

@@ -25,133 +25,134 @@ export const __webpack_modules__ = {
             C = t("OWtl"),
             P = t("bIvi"),
             w = t("eShZ"),
-            I = t("WrMt"),
-            j = t("YCKz"),
+            j = t("WrMt"),
+            I = t("YCKz"),
             y = t("msAz");
 
         function D(e) {
-            let a, t, l, c, m, g, f, h, x, I, D, S, T, z, L, B = (0, n.c)(58),
+            let a, t, l, c, m, g, f, h, x, j, D, S, T, z, L, B, q = (0, n.c)(61),
                 {
-                    snapshot: q,
-                    enabled: M,
-                    nonblocking: N,
-                    children: F
+                    snapshot: M,
+                    enabled: N,
+                    nonblocking: F,
+                    children: A
                 } = e,
-                A = void 0 !== N && N,
-                R = (0, s.y)(C.a),
-                $ = (0, u.useId)(),
-                [E, W] = (0, u.useState)(null),
-                V = (0, s.x)(j.d, $),
+                R = void 0 !== F && F,
+                $ = (0, s.y)(C.a),
+                E = (0, u.useId)(),
+                [W, V] = (0, u.useState)(null),
+                H = (0, s.x)(I.d, E),
                 {
-                    pageId: H
+                    pageId: O
                 } = (0, r.cb)(),
-                O = (0, s.z)(b.f),
-                Q = (0, s.z)(b.j),
-                U = (0, s.z)(b.k),
-                X = (0, s.z)(b.h);
-            B[0] !== O || B[1] !== X || B[2] !== U || B[3] !== H || B[4] !== Q ? (a = {
-                pageId: H,
-                accountId: O,
-                userId: Q,
-                localUserId: U,
-                accountUserId: X
-            }, B[0] = O, B[1] = X, B[2] = U, B[3] = H, B[4] = Q, B[5] = a) : a = B[5];
-            let [G] = (0, u.useState)(a), J = G.pageId ?? "", K = G.accountId ?? "", Z = G.userId ?? "";
-            B[6] !== $ || B[7] !== J || B[8] !== K || B[9] !== Z ? (t = {
-                mountId: $,
-                pageId: J,
-                accountId: K,
-                userId: Z
-            }, B[6] = $, B[7] = J, B[8] = K, B[9] = Z, B[10] = t) : t = B[10];
-            let Y = t,
-                ee = (0, s.x)(null != q && j.c, Y),
-                ea = (0, s.x)(null == q ? null : j.e, Y),
-                et = (0, s.x)(null == q ? void 0 : v.loadedSpacePageMetadata$, Y.pageId),
-                er = (0, s.x)(null != q && p.u, Y.pageId),
+                Q = (0, s.z)(b.f),
+                U = (0, s.z)(b.j),
+                X = (0, s.z)(b.k),
+                G = (0, s.z)(b.h);
+            q[0] !== Q || q[1] !== G || q[2] !== X || q[3] !== O || q[4] !== U ? (a = {
+                pageId: O,
+                accountId: Q,
+                userId: U,
+                localUserId: X,
+                accountUserId: G
+            }, q[0] = Q, q[1] = G, q[2] = X, q[3] = O, q[4] = U, q[5] = a) : a = q[5];
+            let [J] = (0, u.useState)(a), K = J.pageId ?? "", Z = J.accountId ?? "", Y = J.userId ?? "";
+            q[6] !== E || q[7] !== K || q[8] !== Z || q[9] !== Y ? (t = {
+                mountId: E,
+                pageId: K,
+                accountId: Z,
+                userId: Y
+            }, q[6] = E, q[7] = K, q[8] = Z, q[9] = Y, q[10] = t) : t = q[10];
+            let ee = t,
+                ea = (0, s.x)(null != M && I.c, ee),
+                et = (0, s.x)(null == M ? null : I.e, ee),
+                er = (0, s.x)(null != M ? v.loadedSpacePageMetadata$ : void 0, O ?? null),
+                eo = (0, s.x)(null != M && p.u, ee.pageId),
                 {
-                    data: eo,
-                    error: en
-                } = (0, s.x)(null == q ? void 0 : v.spacePageQuery$, Y.pageId, {
+                    data: en,
+                    error: es
+                } = (0, s.x)(null == M ? void 0 : v.spacePageQuery$, ee.pageId, {
                     enabled: !1
                 }) ?? {},
-                [es, ei] = (0, u.useState)(!1),
-                el = null == q || !M || G.pageId !== H || G.accountId !== O || G.userId !== Q || G.localUserId !== U || G.accountUserId !== X || er || et?.view_only === !0 || eo?.metadata.view_only === !0 || et?.deleted_at != null || eo?.metadata.deleted_at != null || et?.access.can_read === !1 || eo?.metadata.access.can_read === !1 || en instanceof w.FetchError && [401, 403, 404, 410].includes(en.status) || ea?.failed === !0;
-            el && !es && ei(!0), B[11] !== $ || B[12] !== R ? (l = e => {
-                R.set(j.d, $, !e)
-            }, B[11] = $, B[12] = R, B[13] = l) : l = B[13];
-            let ec = (0, P.a)(l);
-            B[14] !== ec ? (c = e => {
-                null != e && ec(null != e.querySelector("[data-page-ssr-snapshot]"))
-            }, B[14] = ec, B[15] = c) : c = B[15];
-            let ed = (0, P.a)(c);
-            B[16] !== ec ? (m = (0, o.jsx)(k, {
-                setClientCovered: ec,
+                [ei, el] = (0, u.useState)(!1),
+                ec = null == M || !N || J.pageId !== O || J.accountId !== Q || J.userId !== U || J.localUserId !== X || J.accountUserId !== G || eo || er?.view_only === !0 || en?.metadata.view_only === !0 || er?.deleted_at != null || en?.metadata.deleted_at != null || er?.access.can_read === !1 || en?.metadata.access.can_read === !1 || es instanceof w.FetchError && [401, 403, 404, 410].includes(es.status) || et?.failed === !0;
+            ec && !ei && el(!0), q[11] !== E || q[12] !== $ ? (l = e => {
+                $.set(I.d, E, !e)
+            }, q[11] = E, q[12] = $, q[13] = l) : l = q[13];
+            let ed = (0, P.a)(l);
+            q[14] !== ed ? (c = e => {
+                null != e && ed(null != e.querySelector("[data-page-ssr-snapshot]"))
+            }, q[14] = ed, q[15] = c) : c = q[15];
+            let em = (0, P.a)(c);
+            q[16] !== ed ? (m = (0, o.jsx)(k, {
+                setClientCovered: ed,
                 visible: !1
-            }), B[16] = ec, B[17] = m) : m = B[17];
-            let em = m,
-                eu = em;
-            if (!es && !el && !ee && null != q) {
-                if (A) {
+            }), q[16] = ed, q[17] = m) : m = q[17];
+            let eu = m,
+                eg = eu;
+            if (!ei && !ec && !ea && null != M) {
+                if (R) {
                     let e, a, t;
-                    B[18] !== $ || B[19] !== ec || B[20] !== em ? (e = e => null == e || "status" in e ? em : (0, o.jsx)(_, {
-                        mountId: $,
+                    q[18] !== E || q[19] !== ed || q[20] !== eu ? (e = e => null == e || "status" in e ? eu : (0, o.jsx)(_, {
+                        mountId: E,
                         snapshot: e,
-                        setClientCovered: ec
-                    }), B[18] = $, B[19] = ec, B[20] = em, B[21] = e) : e = B[21], B[22] !== q || B[23] !== e || B[24] !== em ? (a = (0, o.jsx)(r.b, {
-                        resolve: q,
-                        errorElement: em,
+                        setClientCovered: ed
+                    }), q[18] = E, q[19] = ed, q[20] = eu, q[21] = e) : e = q[21], q[22] !== M || q[23] !== e || q[24] !== eu ? (a = (0, o.jsx)(r.b, {
+                        resolve: M,
+                        errorElement: eu,
                         children: e
-                    }), B[22] = q, B[23] = e, B[24] = em, B[25] = a) : a = B[25], B[26] !== a || B[27] !== em ? (t = (0, o.jsx)(u.Suspense, {
-                        fallback: em,
+                    }), q[22] = M, q[23] = e, q[24] = eu, q[25] = a) : a = q[25], q[26] !== a || q[27] !== eu ? (t = (0, o.jsx)(u.Suspense, {
+                        fallback: eu,
                         children: a
-                    }), B[26] = a, B[27] = em, B[28] = t) : t = B[28], eu = t
-                } else if ("html" in q) {
+                    }), q[26] = a, q[27] = eu, q[28] = t) : t = q[28], eg = t
+                } else if ("html" in M) {
                     let e;
-                    B[29] !== $ || B[30] !== ec || B[31] !== q ? (e = (0, o.jsx)(_, {
-                        mountId: $,
-                        snapshot: q,
-                        setClientCovered: ec
-                    }), B[29] = $, B[30] = ec, B[31] = q, B[32] = e) : e = B[32], eu = e
+                    q[29] !== E || q[30] !== ed || q[31] !== M ? (e = (0, o.jsx)(_, {
+                        mountId: E,
+                        snapshot: M,
+                        setClientCovered: ed
+                    }), q[29] = E, q[30] = ed, q[31] = M, q[32] = e) : e = q[32], eg = e
                 }
             }
-            let eg = A && null != q ? ed : void 0,
-                eb = !V,
-                ep = V ? void 0 : "true",
-                ef = es || el || ee ? null : E;
-            B[33] === Symbol.for("react.memo_cache_sentinel") ? (g = (0, o.jsx)(i.a, {
+            let eb = R && null != M ? em : void 0;
+            !1 !== q[33] ? (g = (0, d.b)("relative flex min-h-0 flex-1 flex-col", !1), q[33] = !1, q[34] = g) : g = q[34];
+            let ep = !H,
+                ef = H ? void 0 : "true",
+                ev = ei || ec || ea ? null : W;
+            q[35] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, o.jsx)(i.a, {
                 fillParent: !0,
                 delay: !1,
                 debugName: "PageEditor"
-            }), B[33] = g) : g = B[33], B[34] !== F ? (f = (0, o.jsx)(u.Suspense, {
-                fallback: g,
-                children: F
-            }), B[34] = F, B[35] = f) : f = B[35], B[36] !== ef || B[37] !== f ? (h = (0, o.jsx)(j.b, {
-                value: ef,
-                children: f
-            }), B[36] = ef, B[37] = f, B[38] = h) : h = B[38], B[39] !== $ || B[40] !== h ? (x = (0, o.jsx)(j.a, {
-                value: $,
+            }), q[35] = f) : f = q[35], q[36] !== A ? (h = (0, o.jsx)(u.Suspense, {
+                fallback: f,
+                children: A
+            }), q[36] = A, q[37] = h) : h = q[37], q[38] !== ev || q[39] !== h ? (x = (0, o.jsx)(I.b, {
+                value: ev,
                 children: h
-            }), B[39] = $, B[40] = h, B[41] = x) : x = B[41], B[42] !== eb || B[43] !== ep || B[44] !== x ? (I = (0, o.jsx)("div", {
-                className: "flex min-h-0 flex-1 flex-col",
-                inert: eb,
-                "aria-hidden": ep,
+            }), q[38] = ev, q[39] = h, q[40] = x) : x = q[40], q[41] !== E || q[42] !== x ? (j = (0, o.jsx)(I.a, {
+                value: E,
                 children: x
-            }), B[42] = eb, B[43] = ep, B[44] = x, B[45] = I) : I = B[45];
-            let ev = A ? y.a.PageSnapshotCover : "inset-0";
-            return B[46] !== ev ? (D = (0, d.b)("pointer-events-none absolute flex min-h-0 flex-col", ev), B[46] = ev, B[47] = D) : D = B[47], B[48] === Symbol.for("react.memo_cache_sentinel") ? (S = (0, o.jsx)("div", {
-                ref: W,
+            }), q[41] = E, q[42] = x, q[43] = j) : j = q[43], q[44] !== ep || q[45] !== ef || q[46] !== j ? (D = (0, o.jsx)("div", {
+                className: "flex min-h-0 flex-1 flex-col",
+                inert: ep,
+                "aria-hidden": ef,
+                children: j
+            }), q[44] = ep, q[45] = ef, q[46] = j, q[47] = D) : D = q[47];
+            let eh = R ? y.a.PageSnapshotCover : "inset-0";
+            return q[48] !== eh ? (S = (0, d.b)("pointer-events-none absolute flex min-h-0 flex-col", eh), q[48] = eh, q[49] = S) : S = q[49], q[50] === Symbol.for("react.memo_cache_sentinel") ? (T = (0, o.jsx)("div", {
+                ref: V,
                 className: "pointer-events-auto shrink-0"
-            }), B[48] = S) : S = B[48], B[49] !== eu ? (T = (0, o.jsx)("div", {
+            }), q[50] = T) : T = q[50], q[51] !== eg ? (z = (0, o.jsx)("div", {
                 className: "relative min-h-0 flex-1",
-                children: eu
-            }), B[49] = eu, B[50] = T) : T = B[50], B[51] !== D || B[52] !== T ? (z = (0, o.jsxs)("div", {
-                className: D,
-                children: [S, T]
-            }), B[51] = D, B[52] = T, B[53] = z) : z = B[53], B[54] !== eg || B[55] !== I || B[56] !== z ? (L = (0, o.jsxs)("div", {
-                ref: eg,
-                className: "relative flex min-h-0 flex-1 flex-col",
-                children: [I, z]
-            }), B[54] = eg, B[55] = I, B[56] = z, B[57] = L) : L = B[57], L
+                children: eg
+            }), q[51] = eg, q[52] = z) : z = q[52], q[53] !== S || q[54] !== z ? (L = (0, o.jsxs)("div", {
+                className: S,
+                children: [T, z]
+            }), q[53] = S, q[54] = z, q[55] = L) : L = q[55], q[56] !== eb || q[57] !== g || q[58] !== D || q[59] !== L ? (B = (0, o.jsxs)("div", {
+                ref: eb,
+                className: g,
+                children: [D, L]
+            }), q[56] = eb, q[57] = g, q[58] = D, q[59] = L, q[60] = B) : B = q[60], B
         }
 
         function k(e) {
@@ -164,7 +165,7 @@ export const __webpack_modules__ = {
                 } = e;
             r[0] !== l || r[1] !== i || r[2] !== s ? (a = e => {
                 if (null != e) return i(s), () => {
-                    s && (0, I.e)(), i(!1), s && l?.(e)
+                    s && (0, j.e)(), i(!1), s && l?.(e)
                 }
             }, r[0] = l, r[1] = i, r[2] = s, r[3] = a) : a = r[3];
             let d = a,
@@ -184,7 +185,7 @@ export const __webpack_modules__ = {
         function _(e) {
             let a, t, i, d, p, f, v, x, w = (0, n.c)(30),
                 {
-                    mountId: I,
+                    mountId: j,
                     snapshot: D,
                     setClientCovered: _
                 } = e,
@@ -195,29 +196,29 @@ export const __webpack_modules__ = {
                 } = (0, r.cb)(),
                 B = (0, s.z)(b.f),
                 q = (0, s.z)(b.j);
-            w[0] !== I || w[1] !== D.accountId || w[2] !== D.pageId || w[3] !== D.userId ? (a = {
-                mountId: I,
+            w[0] !== j || w[1] !== D.accountId || w[2] !== D.pageId || w[3] !== D.userId ? (a = {
+                mountId: j,
                 pageId: D.pageId,
                 accountId: D.accountId,
                 userId: D.userId
-            }, w[0] = I, w[1] = D.accountId, w[2] = D.pageId, w[3] = D.userId, w[4] = a) : a = w[4];
-            let M = (0, s.x)(j.e, a),
+            }, w[0] = j, w[1] = D.accountId, w[2] = D.pageId, w[3] = D.userId, w[4] = a) : a = w[4];
+            let M = (0, s.x)(I.e, a),
                 N = L !== D.pageId || B !== D.accountId || q !== D.userId || M?.failed === !0,
                 [F, A] = (0, u.useState)(!1),
                 R = null != M && !M.failed && M.sequence >= D.throughSequence;
             !F && R && A(!0);
             let $ = !N && !F && !R;
-            w[5] !== I || w[6] !== T || w[7] !== D.accountId || w[8] !== D.pageId || w[9] !== D.throughSequence || w[10] !== D.userId ? (t = e => {
+            w[5] !== j || w[6] !== T || w[7] !== D.accountId || w[8] !== D.pageId || w[9] !== D.throughSequence || w[10] !== D.userId ? (t = e => {
                 let a = (0, m.d)(`page://${D.pageId}${e.ownerDocument.defaultView?.location.hash??""}`);
                 if (a?.kind === "page" && null != a.blockId) return;
-                let t = T.get(j.e, {
-                    mountId: I,
+                let t = T.get(I.e, {
+                    mountId: j,
                     pageId: D.pageId,
                     accountId: D.accountId,
                     userId: D.userId
                 });
                 !t?.failed && null != t && t.sequence >= D.throughSequence && T.get(b.f) === D.accountId && T.get(b.j) === D.userId && t.restoreScroll?.(e.scrollTop)
-            }, w[5] = I, w[6] = T, w[7] = D.accountId, w[8] = D.pageId, w[9] = D.throughSequence, w[10] = D.userId, w[11] = t) : t = w[11];
+            }, w[5] = j, w[6] = T, w[7] = D.accountId, w[8] = D.pageId, w[9] = D.throughSequence, w[10] = D.userId, w[11] = t) : t = w[11];
             let E = (0, P.a)(t);
             return w[12] !== D.pageId || w[13] !== $ ? (i = $ && (0, o.jsx)(S, {
                 pageId: D.pageId,
@@ -263,7 +264,7 @@ export const __webpack_modules__ = {
                 c.current = f.b.getDebugLoad(i)?.browserFirstContent, c.current?.observeDocumentType("page")
             }, s[0] = i, s[1] = a) : a = s[1], s[2] !== l.current || s[3] !== i ? (t = () => {
                 if (l.current?.querySelector('[elementtiming="codex-page-ssr-content"]') == null) return;
-                (0, I.d)();
+                (0, j.d)();
                 let e = c.current ?? f.b.getDebugLoad(i)?.browserFirstContent;
                 e?.observeDocumentType("page"), e?.contentVisible()
             }, s[2] = l.current, s[3] = i, s[4] = t) : t = s[4], s[5] !== a || s[6] !== t ? (r = (0, o.jsx)(x.a, {
@@ -452,8 +453,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.578f2b23b5.js";
-import * as a from "./418851.a2414d348c.js";
+} from "./633146.a85b352259.js";
+import * as a from "./418851.b418272bca.js";
 e.C(a);
 import * as t from "./109308.fbb414d4aa.js";
 e.C(t);
@@ -463,59 +464,59 @@ import * as o from "./257798.0b3d6025cd.js";
 e.C(o);
 import * as n from "./153380.6675e448cd.js";
 e.C(n);
-import * as s from "./617936.d20f0bb1f2.js";
+import * as s from "./617936.ed57a1bdc2.js";
 e.C(s);
-import * as i from "./807489.7f3d71f5dd.js";
+import * as i from "./807489.02ba855c8c.js";
 e.C(i);
-import * as l from "./337882.eb4e205b01.js";
+import * as l from "./337882.b1c17957d2.js";
 e.C(l);
-import * as c from "./955979.1d3a3c3d70.js";
+import * as c from "./955979.f40606391d.js";
 e.C(c);
-import * as d from "./646436.669c479758.js";
+import * as d from "./646436.df466850ff.js";
 e.C(d);
-import * as m from "./7078.5a4ac5b67f.js";
+import * as m from "./7078.f43056bf4f.js";
 e.C(m);
-import * as u from "./200429.508d689d4a.js";
+import * as u from "./200429.f5468a7d9e.js";
 e.C(u);
-import * as g from "./698524.7580180eba.js";
+import * as g from "./698524.29c67652d0.js";
 e.C(g);
-import * as b from "./956483.21cf7af8b4.js";
+import * as b from "./956483.0463ebd3e8.js";
 e.C(b);
-import * as p from "./87162.636a6b2a55.js";
+import * as p from "./87162.29ee0bd2a9.js";
 e.C(p);
 import * as f from "./396705.c39944bbf2.js";
 e.C(f);
-import * as v from "./155568.d3b291934c.js";
+import * as v from "./155568.7bbfb72b85.js";
 e.C(v);
 import * as h from "./731863.8b87e9728a.js";
 e.C(h);
 import * as x from "./767086.6da4be4bcc.js";
 e.C(x);
-import * as C from "./76629.13408f2772.js";
+import * as C from "./76629.4b3a6c11d6.js";
 e.C(C);
-import * as P from "./514085.9f7c2a584b.js";
+import * as P from "./514085.5cd44b3418.js";
 e.C(P);
-import * as w from "./204542.a19c84b141.js";
+import * as w from "./204542.555643bfb3.js";
 e.C(w);
-import * as I from "./982651.7bfd071e83.js";
-e.C(I);
-import * as j from "./673108.39ad50630b.js";
+import * as j from "./982651.7bfd071e83.js";
 e.C(j);
-import * as y from "./487481.4c3625a8ea.js";
+import * as I from "./673108.84888467b6.js";
+e.C(I);
+import * as y from "./487481.d4be37a58a.js";
 e.C(y);
-import * as D from "./229522.a213296c9c.js";
+import * as D from "./229522.ddc021d49b.js";
 e.C(D);
-import * as k from "./390575.81bb6844fb.js";
+import * as k from "./390575.92d962cefa.js";
 e.C(k);
-import * as _ from "./353032.6c4c0e25a0.js";
+import * as _ from "./353032.7103e0705d.js";
 e.C(_);
-import * as S from "./637885.77f633a270.js";
+import * as S from "./637885.ac5c2e9cdb.js";
 e.C(S);
 import * as T from "./226913.b323f04fd6.js";
 e.C(T);
 import * as z from "./902158.5a4b6c2c66.js";
 e.C(z);
-import * as L from "./787702.916595f641.js";
+import * as L from "./787702.ba73fe7934.js";
 e.C(L);
 var B = e(e.s = "lOPI"),
     q = B.a,

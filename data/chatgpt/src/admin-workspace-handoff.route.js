@@ -115,8 +115,8 @@ export const __webpack_modules__ = {
                 connectorId: i.array(g).max(1)
             });
 
-        function k(e) {
-            let t, a, i, g, L, k, x = (0, s.c)(35),
+        function y(e) {
+            let t, a, i, g, L, y, x = (0, s.c)(35),
                 {
                     accountId: A,
                     destination: I,
@@ -134,7 +134,7 @@ export const __webpack_modules__ = {
                 W = (0, c.W)(I),
                 q = (0, c.W)(v?.returnTo ?? I),
                 G = (0, c.W)(P),
-                O = (0, w.k)();
+                O = (0, w.i)();
             x[0] !== A || x[1] !== W || x[2] !== v || x[3] !== Z.key || x[4] !== R || x[5] !== q || x[6] !== G || x[7] !== T ? (t = ["workspace-link-account", Z.key, T, A, W, G, R, v, q], x[0] = A, x[1] = W, x[2] = v, x[3] = Z.key, x[4] = R, x[5] = q, x[6] = G, x[7] = T, x[8] = t) : t = x[8], x[9] !== A || x[10] !== V || x[11] !== I || x[12] !== v || x[13] !== Z.pathname || x[14] !== Z.search || x[15] !== R || x[16] !== q || x[17] !== O || x[18] !== G ? (a = async e => {
                 let {
                     signal: t
@@ -147,7 +147,7 @@ export const __webpack_modules__ = {
                     signal: t
                 });
                 t.throwIfAborted();
-                let r = "personal" === A && null == v ? Object.values(a.accounts).find(y) : a.accounts[A],
+                let r = "personal" === A && null == v ? Object.values(a.accounts).find(k) : a.accounts[A],
                     s = r?.account;
                 if (null == r || s?.account_id == null || !0 === s.is_deactivated) return R ? ((0, j.setAccountCookie)((0, u.readChatGptTokenClaims)((0, u.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, j.handleBrowserAccountChangeAndRefresh)(G, t), "switching") : "unavailable";
                 if (!R && V === s.account_id && !1 !== r.can_access_with_session && (null == v || (0, u.readChatGptTokenClaims)((0, u.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === s.account_id)) return null != v ? (window.location.replace("string" == typeof I ? I : (0, c.y)(I)), "switching") : "selected";
@@ -227,13 +227,13 @@ export const __webpack_modules__ = {
                 routeTemplate: z
             }), x[27] = Z, x[28] = Y, x[29] = z, x[30] = g) : g = x[30], x[31] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, r.jsxs)(f.a, {
                 children: [(0, r.jsx)(b.b, {}), (0, r.jsx)(C.LoadingPage, {})]
-            }), x[31] = L) : L = x[31], x[32] !== M || x[33] !== g ? (k = (0, r.jsx)(M, {
+            }), x[31] = L) : L = x[31], x[32] !== M || x[33] !== g ? (y = (0, r.jsx)(M, {
                 route: g,
                 children: L
-            }), x[32] = M, x[33] = g, x[34] = k) : k = x[34], k
+            }), x[32] = M, x[33] = g, x[34] = y) : y = x[34], y
         }
 
-        function y(e) {
+        function k(e) {
             return "personal" === e.account.structure
         }
         a.d(t, {}, {
@@ -261,7 +261,7 @@ export const __webpack_modules__ = {
                                 "product-sku": "CODEX"
                             }),
                             d = i.data.connectorId[0];null != d && l.set("connector", d),
-                        e = k,
+                        e = y,
                         o = i.data.accountId[0],
                         t = "/settings/connectors",
                         a = l.toString()
@@ -277,7 +277,7 @@ export const __webpack_modules__ = {
                     unavailablePath: "/settings/plugins-settings"
                 }), m[10] = e, m[11] = o, m[12] = i, m[13] = l) : l = m[13], l)
             },
-            WorkspaceLinkRoute: k
+            WorkspaceLinkRoute: y
         })
     }),
     EBQV: (function(t) {
@@ -288,8 +288,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.578f2b23b5.js";
-import * as t from "./418851.a2414d348c.js";
+} from "./633146.a85b352259.js";
+import * as t from "./418851.b418272bca.js";
 e.C(t);
 import * as a from "./109308.fbb414d4aa.js";
 e.C(a);
@@ -299,57 +299,57 @@ import * as s from "./257798.0b3d6025cd.js";
 e.C(s);
 import * as o from "./153380.6675e448cd.js";
 e.C(o);
-import * as n from "./617936.d20f0bb1f2.js";
+import * as n from "./617936.ed57a1bdc2.js";
 e.C(n);
-import * as c from "./807489.7f3d71f5dd.js";
+import * as c from "./807489.02ba855c8c.js";
 e.C(c);
-import * as i from "./337882.eb4e205b01.js";
+import * as i from "./337882.b1c17957d2.js";
 e.C(i);
-import * as l from "./955979.1d3a3c3d70.js";
+import * as l from "./955979.f40606391d.js";
 e.C(l);
-import * as m from "./646436.669c479758.js";
+import * as m from "./646436.df466850ff.js";
 e.C(m);
-import * as u from "./7078.5a4ac5b67f.js";
+import * as u from "./7078.f43056bf4f.js";
 e.C(u);
-import * as d from "./200429.508d689d4a.js";
+import * as d from "./200429.f5468a7d9e.js";
 e.C(d);
-import * as p from "./698524.7580180eba.js";
+import * as p from "./698524.29c67652d0.js";
 e.C(p);
-import * as C from "./956483.21cf7af8b4.js";
+import * as C from "./956483.0463ebd3e8.js";
 e.C(C);
-import * as f from "./87162.636a6b2a55.js";
+import * as f from "./87162.29ee0bd2a9.js";
 e.C(f);
 import * as h from "./396705.c39944bbf2.js";
 e.C(h);
-import * as _ from "./155568.d3b291934c.js";
+import * as _ from "./155568.7bbfb72b85.js";
 e.C(_);
 import * as j from "./731863.8b87e9728a.js";
 e.C(j);
 import * as w from "./767086.6da4be4bcc.js";
 e.C(w);
-import * as b from "./76629.13408f2772.js";
+import * as b from "./76629.4b3a6c11d6.js";
 e.C(b);
-import * as g from "./514085.9f7c2a584b.js";
+import * as g from "./514085.5cd44b3418.js";
 e.C(g);
-import * as L from "./204542.a19c84b141.js";
+import * as L from "./204542.555643bfb3.js";
 e.C(L);
-import * as k from "./982651.7bfd071e83.js";
-e.C(k);
-import * as y from "./673108.39ad50630b.js";
+import * as y from "./982651.7bfd071e83.js";
 e.C(y);
-import * as x from "./487481.4c3625a8ea.js";
+import * as k from "./673108.84888467b6.js";
+e.C(k);
+import * as x from "./487481.d4be37a58a.js";
 e.C(x);
-import * as A from "./229522.a213296c9c.js";
+import * as A from "./229522.ddc021d49b.js";
 e.C(A);
-import * as I from "./390575.81bb6844fb.js";
+import * as I from "./390575.92d962cefa.js";
 e.C(I);
-import * as v from "./353032.6c4c0e25a0.js";
+import * as v from "./353032.7103e0705d.js";
 e.C(v);
-import * as S from "./637885.77f633a270.js";
+import * as S from "./637885.ac5c2e9cdb.js";
 e.C(S);
 import * as P from "./226913.b323f04fd6.js";
 e.C(P);
-import * as R from "./631517.2981395eef.js";
+import * as R from "./631517.541014b62f.js";
 e.C(R);
 var T = e(e.s = "YYy6").a;
 export {
