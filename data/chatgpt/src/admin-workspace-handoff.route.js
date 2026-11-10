@@ -2,7 +2,7 @@ export const __rspack_esm_ids = [631517];
 export const __webpack_modules__ = {
     YYy6: (function(e, t, a) {
         a.d(t, {
-            a: () => p
+            a: () => u
         });
         var r = a("jqIZ"),
             s = a("ABep"),
@@ -12,15 +12,15 @@ export const __webpack_modules__ = {
             i = a("pEfp"),
             l = a("zOE4"),
             m = a("jZDY");
-        let u = n.object({
+        let d = n.object({
             accountId: n.tuple([n.string().trim().min(1)]),
             returnTo: n.tuple([n.string().min(1)]),
             attempted: n.array(n.enum(["authenticate", "select"])).max(1)
         });
-        var p = (0, r.hb)(function() {
-            let e, t, a, n, p, d, f = (0, o.c)(19),
+        var u = (0, r.hb)(function() {
+            let e, t, a, n, u, p, C = (0, o.c)(19),
                 {
-                    authMethod: C,
+                    authMethod: f,
                     isLoading: h
                 } = (0, c.a)(),
                 _ = (0, m.a)(),
@@ -28,30 +28,30 @@ export const __webpack_modules__ = {
                 w = (0, r.W)(j);
             if (!_ || h) {
                 let e;
-                return f[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(l.LoadingPage, {}), f[0] = e) : e = f[0], e
+                return C[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(l.LoadingPage, {}), C[0] = e) : e = C[0], e
             }
-            if (f[1] !== w) {
+            if (C[1] !== w) {
                 a = Symbol.for("react.early_return_sentinel");
                 e: {
-                    if (n = new URL(w, window.location.origin), !(e = u.safeParse({
+                    if (n = new URL(w, window.location.origin), !(e = d.safeParse({
                             accountId: n.searchParams.getAll("account_id"),
                             returnTo: n.searchParams.getAll("return_to"),
                             attempted: n.searchParams.getAll("handoff_attempt")
                         })).success) {
                         let e;
-                        f[6] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(r.l, {
+                        C[6] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(r.l, {
                             to: "/",
                             replace: !0
-                        }), f[6] = e) : e = f[6], a = e;
+                        }), C[6] = e) : e = C[6], a = e;
                         break e
                     }
                     let o = URL.parse(e.data.returnTo[0], n);
                     if (null == o || o.origin !== n.origin || null == (0, r.J)("/admin/*", o.pathname) || null != (0, r.J)("/admin/workspace-handoff", o.pathname)) {
                         let e;
-                        f[7] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(r.l, {
+                        C[7] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(r.l, {
                             to: "/",
                             replace: !0
-                        }), f[7] = e) : e = f[7], a = e;
+                        }), C[7] = e) : e = C[7], a = e;
                         break e
                     }
                     o.searchParams.delete("account_id"),
@@ -60,30 +60,30 @@ export const __webpack_modules__ = {
                     n.searchParams.set("return_to", t),
                     n.hash = ""
                 }
-                f[1] = w, f[2] = e, f[3] = t, f[4] = a, f[5] = n
-            } else e = f[2], t = f[3], a = f[4], n = f[5];
+                C[1] = w, C[2] = e, C[3] = t, C[4] = a, C[5] = n
+            } else e = C[2], t = C[3], a = C[4], n = C[5];
             if (a !== Symbol.for("react.early_return_sentinel")) return a;
-            if (null == C) {
+            if (null == f) {
                 let e, t, a = n.pathname + n.search;
-                f[8] !== a ? (e = new URLSearchParams({
+                C[8] !== a ? (e = new URLSearchParams({
                     next: a
-                }), f[8] = a, f[9] = e) : e = f[9];
+                }), C[8] = a, C[9] = e) : e = C[9];
                 let o = `/auth/login?${e}`;
-                return f[10] !== o ? (t = (0, s.jsx)(r.l, {
+                return C[10] !== o ? (t = (0, s.jsx)(r.l, {
                     to: o,
                     replace: !0
-                }), f[10] = o, f[11] = t) : t = f[11], t
+                }), C[10] = o, C[11] = t) : t = C[11], t
             }
             let b = j.pathname + n.search;
-            return f[12] !== e.data.attempted[0] || f[13] !== b ? (p = {
+            return C[12] !== e.data.attempted[0] || C[13] !== b ? (u = {
                 returnTo: b,
                 attempted: e.data.attempted[0]
-            }, f[12] = e.data.attempted[0], f[13] = b, f[14] = p) : p = f[14], f[15] !== e.data.accountId[0] || f[16] !== t || f[17] !== p ? (d = (0, s.jsx)(i.WorkspaceLinkRoute, {
+            }, C[12] = e.data.attempted[0], C[13] = b, C[14] = u) : u = C[14], C[15] !== e.data.accountId[0] || C[16] !== t || C[17] !== u ? (p = (0, s.jsx)(i.WorkspaceLinkRoute, {
                 accountId: e.data.accountId[0],
                 destination: t,
-                documentHandoff: p,
+                documentHandoff: u,
                 unavailablePath: "/"
-            }), f[15] = e.data.accountId[0], f[16] = t, f[17] = p, f[18] = d) : d = f[18], d
+            }), C[15] = e.data.accountId[0], C[16] = t, C[17] = u, C[18] = p) : p = C[18], p
         })
     }),
     dzzk: (function(e, t, a) {
@@ -101,11 +101,11 @@ export const __webpack_modules__ = {
             i = a("ASxG"),
             l = a("HnGz"),
             m = a("l5Vd"),
-            u = a("QdUF"),
-            p = a("EOo5"),
-            d = a("Kwur"),
-            f = a("zOE4"),
-            C = a("uHE8"),
+            d = a("QdUF"),
+            u = a("EOo5"),
+            p = a("Kwur"),
+            C = a("zOE4"),
+            f = a("uHE8"),
             h = a("tSEg"),
             _ = a("vLpE"),
             j = a("iPqE"),
@@ -131,7 +131,7 @@ export const __webpack_modules__ = {
                 {
                     userId: T,
                     accountId: V
-                } = (0, p.a)(),
+                } = (0, u.a)(),
                 Z = (0, c.Y)(),
                 E = (0, n.useContext)(c.q).matches.at(-1)?.route.children,
                 W = (0, c.W)(I),
@@ -141,7 +141,7 @@ export const __webpack_modules__ = {
             y[0] !== A || y[1] !== W || y[2] !== v || y[3] !== Z.key || y[4] !== R || y[5] !== q || y[6] !== G || y[7] !== T ? (t = ["workspace-link-account", Z.key, T, A, W, G, R, v, q], y[0] = A, y[1] = W, y[2] = v, y[3] = Z.key, y[4] = R, y[5] = q, y[6] = G, y[7] = T, y[8] = t) : t = y[8], y[9] !== A || y[10] !== V || y[11] !== I || y[12] !== v || y[13] !== Z.pathname || y[14] !== Z.search || y[15] !== R || y[16] !== q || y[17] !== O || y[18] !== G ? (a = async e => {
                 let {
                     signal: t
-                } = e, a = await d.Request.safeGet("/accounts/check/{version}", {
+                } = e, a = await p.Request.safeGet("/accounts/check/{version}", {
                     parameters: {
                         path: {
                             version: "v4-2023-04-27"
@@ -152,14 +152,14 @@ export const __webpack_modules__ = {
                 t.throwIfAborted();
                 let r = "personal" === A && null == v ? Object.values(a.accounts).find(x) : a.accounts[A],
                     s = r?.account;
-                if (null == r || s?.account_id == null || !0 === s.is_deactivated) return R ? ((0, j.setAccountCookie)((0, u.readChatGptTokenClaims)((0, u.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, j.handleBrowserAccountChangeAndRefresh)(G, t), "switching") : "unavailable";
-                if (!R && V === s.account_id && !1 !== r.can_access_with_session && (null == v || (0, u.readChatGptTokenClaims)((0, u.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === s.account_id)) return null != v ? (window.location.replace("string" == typeof I ? I : (0, c.y)(I)), "switching") : "selected";
+                if (null == r || s?.account_id == null || !0 === s.is_deactivated) return R ? ((0, j.setAccountCookie)((0, d.readChatGptTokenClaims)((0, d.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId ?? void 0), await (0, j.handleBrowserAccountChangeAndRefresh)(G, t), "switching") : "unavailable";
+                if (!R && V === s.account_id && !1 !== r.can_access_with_session && (null == v || (0, d.readChatGptTokenClaims)((0, d.getBrowserChatGptAuthSnapshot)()?.accessToken ?? "")?.accountId === s.account_id)) return null != v ? (window.location.replace("string" == typeof I ? I : (0, c.y)(I)), "switching") : "selected";
                 if (v?.attempted === "select" || v?.attempted === "authenticate" && !1 === r.can_access_with_session) return "unavailable";
                 let o = (0, c.J)(m.i, Z.pathname)?.params.projectId,
                     n = (0, m.t)(new URLSearchParams(Z.search));
                 if (null != o && null != n && !1 !== r.can_access_with_session) {
                     try {
-                        await d.Request.safeGet("/websites/{project_id}/access_request", {
+                        await p.Request.safeGet("/websites/{project_id}/access_request", {
                             additionalHeaders: {
                                 "ChatGPT-Account-ID": s.account_id
                             },
@@ -228,8 +228,8 @@ export const __webpack_modules__ = {
             return y[27] !== Z || y[28] !== M || y[29] !== Y ? (g = M({
                 ...Z,
                 routeTemplate: Y
-            }), y[27] = Z, y[28] = M, y[29] = Y, y[30] = g) : g = y[30], y[31] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, r.jsxs)(C.a, {
-                children: [(0, r.jsx)(b.b, {}), (0, r.jsx)(f.LoadingPage, {})]
+            }), y[27] = Z, y[28] = M, y[29] = Y, y[30] = g) : g = y[30], y[31] === Symbol.for("react.memo_cache_sentinel") ? (L = (0, r.jsxs)(f.a, {
+                children: [(0, r.jsx)(b.b, {}), (0, r.jsx)(C.LoadingPage, {})]
             }), y[31] = L) : L = y[31], y[32] !== B || y[33] !== g ? (k = (0, r.jsx)(B, {
                 route: g,
                 children: L
@@ -242,11 +242,11 @@ export const __webpack_modules__ = {
         a.d(t, {}, {
             CodeAttributionConnectorAccountRoute: function() {
                 let e, t, a, o, n, i, l, m = (0, s.c)(14),
-                    u = (0, c.Y)();
-                if (m[0] !== u.search) {
+                    d = (0, c.Y)();
+                if (m[0] !== d.search) {
                     n = Symbol.for("react.early_return_sentinel");
                     e: {
-                        let s = new URLSearchParams(u.search),
+                        let s = new URLSearchParams(d.search),
                             i = L.safeParse({
                                 source: s.getAll("source"),
                                 accountId: s.getAll("account_id"),
@@ -263,13 +263,13 @@ export const __webpack_modules__ = {
                         let l = new URLSearchParams({
                                 "product-sku": "CODEX"
                             }),
-                            p = i.data.connectorId[0];null != p && l.set("connector", p),
+                            u = i.data.connectorId[0];null != u && l.set("connector", u),
                         e = k,
                         o = i.data.accountId[0],
                         t = "/settings/connectors",
                         a = l.toString()
                     }
-                    m[0] = u.search, m[1] = e, m[2] = t, m[3] = a, m[4] = o, m[5] = n
+                    m[0] = d.search, m[1] = e, m[2] = t, m[3] = a, m[4] = o, m[5] = n
                 } else e = m[1], t = m[2], a = m[3], o = m[4], n = m[5];
                 return n !== Symbol.for("react.early_return_sentinel") ? n : (m[7] !== t || m[8] !== a ? (i = {
                     pathname: t,
@@ -291,8 +291,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.79c7577f6d.js";
-import * as t from "./418851.4cf783e1e4.js";
+} from "./633146.f7301c241c.js";
+import * as t from "./418851.9d6542c0a3.js";
 e.C(t);
 import * as a from "./109308.fbb414d4aa.js";
 e.C(a);
@@ -302,26 +302,26 @@ import * as s from "./257798.0b3d6025cd.js";
 e.C(s);
 import * as o from "./153380.6675e448cd.js";
 e.C(o);
-import * as n from "./617936.5a72737818.js";
+import * as n from "./617936.1be6495150.js";
 e.C(n);
-import * as c from "./807489.54f5772d0d.js";
+import * as c from "./807489.cf46a1fcce.js";
 e.C(c);
-import * as i from "./337882.26e5bd2b09.js";
+import * as i from "./337882.e80888e843.js";
 e.C(i);
-import * as l from "./955979.c158e14c67.js";
+import * as l from "./955979.6fabb942db.js";
 e.C(l);
-import * as m from "./646436.73183b8431.js";
+import * as m from "./646436.4f8e34a529.js";
 e.C(m);
-import * as u from "./7078.92e3c91286.js";
-e.C(u);
-import * as p from "./200429.073fa1ac67.js";
-e.C(p);
-import * as d from "./698524.d0f80a4f75.js";
+import * as d from "./7078.b1d26369b8.js";
 e.C(d);
-import * as f from "./956483.7057f5dd90.js";
-e.C(f);
-import * as C from "./87162.29ee0bd2a9.js";
+import * as u from "./200429.e4432be69e.js";
+e.C(u);
+import * as p from "./698524.91ff895348.js";
+e.C(p);
+import * as C from "./956483.aa76e97d2f.js";
 e.C(C);
+import * as f from "./87162.29ee0bd2a9.js";
+e.C(f);
 import * as h from "./396705.c39944bbf2.js";
 e.C(h);
 import * as _ from "./155568.7bbfb72b85.js";
@@ -330,29 +330,29 @@ import * as j from "./731863.8b87e9728a.js";
 e.C(j);
 import * as w from "./767086.6da4be4bcc.js";
 e.C(w);
-import * as b from "./76629.4a3def3f3d.js";
+import * as b from "./76629.0d0b0e4ffa.js";
 e.C(b);
-import * as g from "./514085.fce2779453.js";
+import * as g from "./514085.b43cbf5099.js";
 e.C(g);
-import * as L from "./204542.ebe6ed48ad.js";
+import * as L from "./204542.9e7fde25b9.js";
 e.C(L);
 import * as k from "./982651.7bfd071e83.js";
 e.C(k);
-import * as x from "./673108.aaf568e9f3.js";
+import * as x from "./673108.f09bd0f99c.js";
 e.C(x);
-import * as y from "./487481.699d7b5953.js";
+import * as y from "./487481.c884695c4d.js";
 e.C(y);
-import * as A from "./229522.110e65fd00.js";
+import * as A from "./229522.4fa6d25393.js";
 e.C(A);
-import * as I from "./390575.8e5cb2c01a.js";
+import * as I from "./390575.db69fec7f2.js";
 e.C(I);
-import * as v from "./353032.9312ae4acb.js";
+import * as v from "./353032.cc07e31e0d.js";
 e.C(v);
-import * as S from "./637885.3e8c638fde.js";
+import * as S from "./637885.ca6d736a13.js";
 e.C(S);
 import * as P from "./226913.6965f848b1.js";
 e.C(P);
-import * as R from "./631517.6fbb445e3e.js";
+import * as R from "./631517.3b0bd8eb35.js";
 e.C(R);
 var T = e(e.s = "YYy6").a;
 export {
