@@ -8,22 +8,22 @@ export const __webpack_modules__ = {
             g = t("ABep"),
             l = t("QosV"),
             e = t("BolX"),
-            a = t("oyxz"),
-            c = t("ASxG"),
+            c = t("oyxz"),
+            a = t("ASxG"),
             I = t("Cslg"),
             o = t("EOo5"),
             C = t("gCr7"),
             s = t("zOE4"),
             j = t("OWtl"),
             N = t("AXDI");
-        let L = c.object({
-                id: c.string(),
-                accountId: c.string(),
-                userId: c.string(),
-                summary: c.string(),
-                reply: c.string(),
-                attachmentsOmitted: c.boolean(),
-                followup: c.string().nullable()
+        let L = a.object({
+                id: a.string(),
+                accountId: a.string(),
+                userId: a.string(),
+                summary: a.string(),
+                reply: a.string(),
+                attachmentsOmitted: a.boolean(),
+                followup: a.string().nullable()
             }),
             r = (0, e.q)(j.a, (n, i) => {
                 let {
@@ -61,19 +61,19 @@ export const __webpack_modules__ = {
         var A = (0, M.hb)(function() {
             let n, i = (0, l.c)(1);
             return i[0] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, g.jsx)(N.a, {
-                children: (0, g.jsx)(h, {})
+                children: (0, g.jsx)(d, {})
             }), i[0] = n) : n = i[0], n
         });
 
-        function h() {
-            let n, i, t, c, C, j = (0, l.c)(18),
+        function d() {
+            let n, i, t, a, C, j = (0, l.c)(18),
                 {
                     accountId: N,
                     userId: L,
                     isLoading: A
                 } = (0, o.a)(),
-                h = (0, e.z)(I.f),
-                d = (0, e.z)(I.k),
+                d = (0, e.z)(I.f),
+                h = (0, e.z)(I.k),
                 f = (0, M.W)(".");
             if (j[0] !== f) {
                 let i;
@@ -81,7 +81,7 @@ export const __webpack_modules__ = {
             } else n = j[1];
             let D = n,
                 y = null != N && null != L,
-                u = A || y && (h !== N || d !== L);
+                u = A || y && (d !== N || h !== L);
             j[3] !== N || j[4] !== D || j[5] !== L ? (i = {
                 path: D,
                 accountId: N,
@@ -103,7 +103,7 @@ export const __webpack_modules__ = {
                 let n, i;
                 return j[10] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, g.jsx)("p", {
                     role: "alert",
-                    children: (0, g.jsx)(a.a, {
+                    children: (0, g.jsx)(c.a, {
                         id: "chatgpt.emailContinuation.importError",
                         defaultMessage: "Couldn’t open this email conversation. Try opening the link from your email again.",
                         description: "Error when a ChatGPT email continuation link cannot be imported."
@@ -113,7 +113,7 @@ export const __webpack_modules__ = {
                     children: [n, (0, g.jsx)(M.g, {
                         className: "underline",
                         to: "/",
-                        children: (0, g.jsx)(a.a, {
+                        children: (0, g.jsx)(c.a, {
                             id: "chatgpt.emailContinuation.goHome",
                             defaultMessage: "Go to ChatGPT",
                             description: "Link back to ChatGPT home from a failed email continuation."
@@ -122,16 +122,16 @@ export const __webpack_modules__ = {
                 }), j[11] = i) : i = j[11], i
             }
             let z = `/c/${encodeURIComponent(p)}`;
-            return j[12] !== N || j[13] !== L ? (c = {
+            return j[12] !== N || j[13] !== L ? (a = {
                 emailContinuation: {
                     accountId: N,
                     userId: L
                 }
-            }, j[12] = N, j[13] = L, j[14] = c) : c = j[14], j[15] !== z || j[16] !== c ? (C = (0, g.jsx)(M.l, {
+            }, j[12] = N, j[13] = L, j[14] = a) : a = j[14], j[15] !== z || j[16] !== a ? (C = (0, g.jsx)(M.l, {
                 to: z,
-                state: c,
+                state: a,
                 replace: !0
-            }), j[15] = z, j[16] = c, j[17] = C) : C = j[17], C
+            }), j[15] = z, j[16] = a, j[17] = C) : C = j[17], C
         }
     }),
     BmwK: (function(n) {
@@ -277,8 +277,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as n
-} from "./633146.a85b352259.js";
-import * as i from "./418851.b418272bca.js";
+} from "./633146.516c6a4677.js";
+import * as i from "./418851.8cdff597ce.js";
 n.C(i);
 import * as t from "./109308.fbb414d4aa.js";
 n.C(t);
@@ -288,23 +288,23 @@ import * as g from "./257798.0b3d6025cd.js";
 n.C(g);
 import * as l from "./153380.6675e448cd.js";
 n.C(l);
-import * as e from "./617936.ed57a1bdc2.js";
+import * as e from "./617936.510230e136.js";
 n.C(e);
-import * as a from "./807489.02ba855c8c.js";
-n.C(a);
-import * as c from "./337882.b1c17957d2.js";
+import * as c from "./807489.a027e374ea.js";
 n.C(c);
-import * as I from "./955979.f40606391d.js";
+import * as a from "./337882.c2f7cf8187.js";
+n.C(a);
+import * as I from "./955979.24c51c90c6.js";
 n.C(I);
-import * as o from "./646436.df466850ff.js";
+import * as o from "./646436.c733a3d665.js";
 n.C(o);
-import * as C from "./7078.f43056bf4f.js";
+import * as C from "./7078.c424185282.js";
 n.C(C);
-import * as s from "./200429.f5468a7d9e.js";
+import * as s from "./200429.ef6ceeb78d.js";
 n.C(s);
-import * as j from "./698524.29c67652d0.js";
+import * as j from "./698524.fd3e996752.js";
 n.C(j);
-import * as N from "./956483.0463ebd3e8.js";
+import * as N from "./956483.abe9885def.js";
 n.C(N);
 import * as L from "./87162.29ee0bd2a9.js";
 n.C(L);
@@ -312,33 +312,33 @@ import * as r from "./396705.c39944bbf2.js";
 n.C(r);
 import * as A from "./155568.7bbfb72b85.js";
 n.C(A);
-import * as h from "./731863.8b87e9728a.js";
-n.C(h);
-import * as d from "./767086.6da4be4bcc.js";
+import * as d from "./731863.8b87e9728a.js";
 n.C(d);
-import * as f from "./76629.4b3a6c11d6.js";
+import * as h from "./767086.6da4be4bcc.js";
+n.C(h);
+import * as f from "./76629.1ccd088209.js";
 n.C(f);
-import * as D from "./514085.5cd44b3418.js";
+import * as D from "./514085.2b0855224a.js";
 n.C(D);
 import * as y from "./204542.555643bfb3.js";
 n.C(y);
 import * as u from "./982651.7bfd071e83.js";
 n.C(u);
-import * as x from "./673108.84888467b6.js";
+import * as x from "./673108.95021ed52b.js";
 n.C(x);
-import * as p from "./487481.d4be37a58a.js";
+import * as p from "./487481.dd23dcfc39.js";
 n.C(p);
-import * as w from "./229522.ddc021d49b.js";
+import * as w from "./229522.7430726c37.js";
 n.C(w);
-import * as z from "./390575.92d962cefa.js";
+import * as z from "./390575.353218f3fd.js";
 n.C(z);
-import * as m from "./353032.7103e0705d.js";
+import * as m from "./353032.1ea521a002.js";
 n.C(m);
-import * as T from "./637885.ac5c2e9cdb.js";
+import * as T from "./637885.5271cdd835.js";
 n.C(T);
 import * as v from "./226913.b323f04fd6.js";
 n.C(v);
-import * as Z from "./186923.2109752f81.js";
+import * as Z from "./186923.4b4fb41f9b.js";
 n.C(Z);
 var S = n(n.s = "BLkT").a;
 export {

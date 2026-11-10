@@ -2,319 +2,396 @@ export const __rspack_esm_ids = [787702];
 export const __webpack_modules__ = {
     lOPI: (function(e, a, t) {
         t.d(a, {
-            a: () => M,
-            b: () => N
+            a: () => O,
+            b: () => V
         });
         var r = t("jqIZ"),
             o = t("ABep"),
             n = t("QosV"),
-            s = t("BolX"),
-            i = t("tmUE"),
-            l = t("sSh9"),
-            c = t("LpCf"),
-            d = t("on57"),
-            m = t("G4E3"),
-            u = t("zd8w"),
-            g = t("oyxz"),
-            b = t("Cslg"),
-            p = t("e1xH"),
-            f = t("cVcC"),
-            v = t("QvdU"),
-            h = t("NnV7"),
-            x = t("dJBt"),
-            C = t("OWtl"),
-            P = t("bIvi"),
-            w = t("eShZ"),
-            j = t("WrMt"),
-            I = t("YCKz"),
-            y = t("msAz");
+            i = t("BolX"),
+            s = t("zd8w"),
+            l = t("Cslg"),
+            d = t("tmUE"),
+            c = t("sSh9"),
+            m = t("LpCf"),
+            u = t("on57"),
+            g = t("LPKZ"),
+            p = t.n(g),
+            b = t("G4E3"),
+            f = t("oyxz"),
+            v = t("e1xH"),
+            h = t("cVcC"),
+            x = t("QvdU"),
+            C = t("NnV7"),
+            P = t("dJBt"),
+            I = t("OWtl"),
+            w = t("bIvi"),
+            j = t("eShZ"),
+            y = t("WrMt"),
+            k = t("YCKz"),
+            D = t("msAz");
+        let _ = () => p(),
+            S = () => !1;
 
-        function D(e) {
-            let a, t, l, c, m, g, f, h, x, j, D, S, T, z, L, B, q = (0, n.c)(61),
+        function z(e) {
+            let a, t, c, m, g, p, b, f, h, C, P, y, z, N, B, q, M = (0, n.c)(66),
                 {
-                    snapshot: M,
-                    enabled: N,
-                    nonblocking: F,
-                    children: A
+                    snapshot: F,
+                    preparation: A,
+                    enabled: R,
+                    nonblocking: $,
+                    openIdentity: E,
+                    children: O
                 } = e,
-                R = void 0 !== F && F,
-                $ = (0, s.y)(C.a),
-                E = (0, u.useId)(),
-                [W, V] = (0, u.useState)(null),
-                H = (0, s.x)(I.d, E),
+                V = void 0 !== $ && $,
+                W = (0, i.y)(I.a),
+                H = (0, s.useId)(),
+                [Q, U] = (0, s.useState)(null),
                 {
-                    pageId: O
+                    pageId: X
                 } = (0, r.cb)(),
-                Q = (0, s.z)(b.f),
-                U = (0, s.z)(b.j),
-                X = (0, s.z)(b.k),
-                G = (0, s.z)(b.h);
-            q[0] !== Q || q[1] !== G || q[2] !== X || q[3] !== O || q[4] !== U ? (a = {
-                pageId: O,
-                accountId: Q,
-                userId: U,
-                localUserId: X,
-                accountUserId: G
-            }, q[0] = Q, q[1] = G, q[2] = X, q[3] = O, q[4] = U, q[5] = a) : a = q[5];
-            let [J] = (0, u.useState)(a), K = J.pageId ?? "", Z = J.accountId ?? "", Y = J.userId ?? "";
-            q[6] !== E || q[7] !== K || q[8] !== Z || q[9] !== Y ? (t = {
-                mountId: E,
-                pageId: K,
-                accountId: Z,
-                userId: Y
-            }, q[6] = E, q[7] = K, q[8] = Z, q[9] = Y, q[10] = t) : t = q[10];
-            let ee = t,
-                ea = (0, s.x)(null != M && I.c, ee),
-                et = (0, s.x)(null == M ? null : I.e, ee),
-                er = (0, s.x)(null != M ? v.loadedSpacePageMetadata$ : void 0, O ?? null),
-                eo = (0, s.x)(null != M && p.u, ee.pageId),
+                G = (0, i.z)(l.f),
+                J = (0, i.z)(l.j),
+                K = (0, i.z)(l.k),
+                Z = (0, i.z)(l.h),
+                Y = E ?? X;
+            M[0] !== G || M[1] !== Z || M[2] !== K || M[3] !== X || M[4] !== Y || M[5] !== J ? (a = {
+                openIdentity: Y,
+                generation: 0,
+                invalidated: !1,
+                pageId: X,
+                accountId: G,
+                userId: J,
+                localUserId: K,
+                accountUserId: Z
+            }, M[0] = G, M[1] = Z, M[2] = K, M[3] = X, M[4] = Y, M[5] = J, M[6] = a) : a = M[6];
+            let [ee, ea] = (0, s.useState)(a), et = 0 === ee.generation ? H : `${H}-${ee.generation}`, er = null == E && 0 === ee.generation, eo = (0, i.x)(k.d, et), en = ee.pageId ?? "", ei = ee.accountId ?? "", es = ee.userId ?? "";
+            M[7] !== et || M[8] !== en || M[9] !== ei || M[10] !== es ? (t = {
+                mountId: et,
+                pageId: en,
+                accountId: ei,
+                userId: es
+            }, M[7] = et, M[8] = en, M[9] = ei, M[10] = es, M[11] = t) : t = M[11];
+            let el = t,
+                ed = (0, i.x)(null != F && k.c, el),
+                ec = null == F || ee.invalidated || ed ? void 0 : A,
+                em = (0, s.useSyncExternalStore)(null == ec ? _ : ec.subscribeInvalidation, null == ec ? S : ec.isInvalidated, S),
+                eu = (0, i.x)(null == F ? null : k.e, el),
+                eg = (0, i.x)(null != F ? x.loadedSpacePageMetadata$ : void 0, X ?? null),
+                ep = (0, i.x)(null != F && v.u, el.pageId),
                 {
-                    data: en,
-                    error: es
-                } = (0, s.x)(null == M ? void 0 : v.spacePageQuery$, ee.pageId, {
+                    data: eb,
+                    error: ef
+                } = (0, i.x)(null == F ? void 0 : x.spacePageQuery$, el.pageId, {
                     enabled: !1
                 }) ?? {},
-                [ei, el] = (0, u.useState)(!1),
-                ec = null == M || !N || J.pageId !== O || J.accountId !== Q || J.userId !== U || J.localUserId !== X || J.accountUserId !== G || eo || er?.view_only === !0 || en?.metadata.view_only === !0 || er?.deleted_at != null || en?.metadata.deleted_at != null || er?.access.can_read === !1 || en?.metadata.access.can_read === !1 || es instanceof w.FetchError && [401, 403, 404, 410].includes(es.status) || et?.failed === !0;
-            ec && !ei && el(!0), q[11] !== E || q[12] !== $ ? (l = e => {
-                $.set(I.d, E, !e)
-            }, q[11] = E, q[12] = $, q[13] = l) : l = q[13];
-            let ed = (0, P.a)(l);
-            q[14] !== ed ? (c = e => {
-                null != e && ed(null != e.querySelector("[data-page-ssr-snapshot]"))
-            }, q[14] = ed, q[15] = c) : c = q[15];
-            let em = (0, P.a)(c);
-            q[16] !== ed ? (m = (0, o.jsx)(k, {
-                setClientCovered: ed,
+                ev = null == F || em || !R || ee.pageId !== X || ee.accountId !== G || ee.userId !== J || ee.localUserId !== K || ee.accountUserId !== Z || ep || eg?.view_only === !0 || eb?.metadata.view_only === !0 || eg?.deleted_at != null || eb?.metadata.deleted_at != null || eg?.access.can_read === !1 || eb?.metadata.access.can_read === !1 || ef instanceof j.FetchError && [401, 403, 404, 410].includes(ef.status) || eu?.failed === !0;
+            null != E && (ee.openIdentity !== E || ee.pageId !== X) ? ea({
+                openIdentity: E,
+                generation: ee.generation + 1,
+                invalidated: !1,
+                pageId: X,
+                accountId: G,
+                userId: J,
+                localUserId: K,
+                accountUserId: Z
+            }) : ev && !ee.invalidated && ea({
+                ...ee,
+                invalidated: !0
+            }), M[12] !== W ? (c = (e, a) => {
+                W.set(k.d, e, !a)
+            }, M[12] = W, M[13] = c) : c = M[13];
+            let eh = (0, w.a)(c);
+            M[14] !== et || M[15] !== eh ? (m = e => {
+                null != e && eh(et, null != e.querySelector("[data-page-ssr-snapshot]"))
+            }, M[14] = et, M[15] = eh, M[16] = m) : m = M[16];
+            let ex = (0, w.a)(m);
+            M[17] !== et || M[18] !== eh ? (g = (0, o.jsx)(T, {
+                mountId: et,
+                setClientCovered: eh,
                 visible: !1
-            }), q[16] = ed, q[17] = m) : m = q[17];
-            let eu = m,
-                eg = eu;
-            if (!ei && !ec && !ea && null != M) {
-                if (R) {
+            }), M[17] = et, M[18] = eh, M[19] = g) : g = M[19];
+            let eC = g,
+                eP = eC;
+            if (!ee.invalidated && !ev && !ed && null != F) {
+                if (V) {
                     let e, a, t;
-                    q[18] !== E || q[19] !== ed || q[20] !== eu ? (e = e => null == e || "status" in e ? eu : (0, o.jsx)(_, {
-                        mountId: E,
+                    M[20] !== er || M[21] !== et || M[22] !== eh || M[23] !== eC ? (e = e => null == e || "status" in e ? eC : (0, o.jsx)(L, {
+                        mountId: et,
+                        initialNavigation: er,
                         snapshot: e,
-                        setClientCovered: ed
-                    }), q[18] = E, q[19] = ed, q[20] = eu, q[21] = e) : e = q[21], q[22] !== M || q[23] !== e || q[24] !== eu ? (a = (0, o.jsx)(r.b, {
-                        resolve: M,
-                        errorElement: eu,
+                        setClientCovered: eh
+                    }), M[20] = er, M[21] = et, M[22] = eh, M[23] = eC, M[24] = e) : e = M[24], M[25] !== F || M[26] !== e || M[27] !== eC ? (a = (0, o.jsx)(r.b, {
+                        resolve: F,
+                        errorElement: eC,
                         children: e
-                    }), q[22] = M, q[23] = e, q[24] = eu, q[25] = a) : a = q[25], q[26] !== a || q[27] !== eu ? (t = (0, o.jsx)(u.Suspense, {
-                        fallback: eu,
+                    }), M[25] = F, M[26] = e, M[27] = eC, M[28] = a) : a = M[28], M[29] !== et || M[30] !== a || M[31] !== eC ? (t = (0, o.jsx)(s.Suspense, {
+                        fallback: eC,
                         children: a
-                    }), q[26] = a, q[27] = eu, q[28] = t) : t = q[28], eg = t
-                } else if ("html" in M) {
+                    }, et), M[29] = et, M[30] = a, M[31] = eC, M[32] = t) : t = M[32], eP = t
+                } else if ("html" in F) {
                     let e;
-                    q[29] !== E || q[30] !== ed || q[31] !== M ? (e = (0, o.jsx)(_, {
-                        mountId: E,
-                        snapshot: M,
-                        setClientCovered: ed
-                    }), q[29] = E, q[30] = ed, q[31] = M, q[32] = e) : e = q[32], eg = e
+                    M[33] !== er || M[34] !== et || M[35] !== eh || M[36] !== F ? (e = (0, o.jsx)(L, {
+                        mountId: et,
+                        initialNavigation: er,
+                        snapshot: F,
+                        setClientCovered: eh
+                    }, et), M[33] = er, M[34] = et, M[35] = eh, M[36] = F, M[37] = e) : e = M[37], eP = e
                 }
             }
-            let eb = R && null != M ? em : void 0;
-            !1 !== q[33] ? (g = (0, d.b)("relative flex min-h-0 flex-1 flex-col", !1), q[33] = !1, q[34] = g) : g = q[34];
-            let ep = !H,
-                ef = H ? void 0 : "true",
-                ev = ei || ec || ea ? null : W;
-            q[35] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, o.jsx)(i.a, {
+            let eI = V && null != F ? ex : void 0;
+            !1 !== M[38] ? (p = (0, u.b)("relative flex min-h-0 flex-1 flex-col", !1), M[38] = !1, M[39] = p) : p = M[39];
+            let ew = !eo,
+                ej = eo ? void 0 : "true",
+                ey = ee.invalidated || ev || ed ? null : Q;
+            M[40] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, o.jsx)(d.a, {
                 fillParent: !0,
                 delay: !1,
                 debugName: "PageEditor"
-            }), q[35] = f) : f = q[35], q[36] !== A ? (h = (0, o.jsx)(u.Suspense, {
-                fallback: f,
-                children: A
-            }), q[36] = A, q[37] = h) : h = q[37], q[38] !== ev || q[39] !== h ? (x = (0, o.jsx)(I.b, {
-                value: ev,
+            }), M[40] = b) : b = M[40], M[41] !== O ? (f = (0, o.jsx)(s.Suspense, {
+                fallback: b,
+                children: O
+            }), M[41] = O, M[42] = f) : f = M[42], M[43] !== ey || M[44] !== f ? (h = (0, o.jsx)(k.b, {
+                value: ey,
+                children: f
+            }), M[43] = ey, M[44] = f, M[45] = h) : h = M[45], M[46] !== et || M[47] !== h ? (C = (0, o.jsx)(k.a, {
+                value: et,
                 children: h
-            }), q[38] = ev, q[39] = h, q[40] = x) : x = q[40], q[41] !== E || q[42] !== x ? (j = (0, o.jsx)(I.a, {
-                value: E,
-                children: x
-            }), q[41] = E, q[42] = x, q[43] = j) : j = q[43], q[44] !== ep || q[45] !== ef || q[46] !== j ? (D = (0, o.jsx)("div", {
+            }), M[46] = et, M[47] = h, M[48] = C) : C = M[48], M[49] !== ew || M[50] !== ej || M[51] !== C ? (P = (0, o.jsx)("div", {
                 className: "flex min-h-0 flex-1 flex-col",
-                inert: ep,
-                "aria-hidden": ef,
-                children: j
-            }), q[44] = ep, q[45] = ef, q[46] = j, q[47] = D) : D = q[47];
-            let eh = R ? y.a.PageSnapshotCover : "inset-0";
-            return q[48] !== eh ? (S = (0, d.b)("pointer-events-none absolute flex min-h-0 flex-col", eh), q[48] = eh, q[49] = S) : S = q[49], q[50] === Symbol.for("react.memo_cache_sentinel") ? (T = (0, o.jsx)("div", {
-                ref: V,
+                inert: ew,
+                "aria-hidden": ej,
+                children: C
+            }), M[49] = ew, M[50] = ej, M[51] = C, M[52] = P) : P = M[52];
+            let ek = V ? D.a.PageSnapshotCover : "inset-0";
+            return M[53] !== ek ? (y = (0, u.b)("pointer-events-none absolute flex min-h-0 flex-col", ek), M[53] = ek, M[54] = y) : y = M[54], M[55] === Symbol.for("react.memo_cache_sentinel") ? (z = (0, o.jsx)("div", {
+                ref: U,
                 className: "pointer-events-auto shrink-0"
-            }), q[50] = T) : T = q[50], q[51] !== eg ? (z = (0, o.jsx)("div", {
+            }), M[55] = z) : z = M[55], M[56] !== eP ? (N = (0, o.jsx)("div", {
                 className: "relative min-h-0 flex-1",
-                children: eg
-            }), q[51] = eg, q[52] = z) : z = q[52], q[53] !== S || q[54] !== z ? (L = (0, o.jsxs)("div", {
-                className: S,
-                children: [T, z]
-            }), q[53] = S, q[54] = z, q[55] = L) : L = q[55], q[56] !== eb || q[57] !== g || q[58] !== D || q[59] !== L ? (B = (0, o.jsxs)("div", {
-                ref: eb,
-                className: g,
-                children: [D, L]
-            }), q[56] = eb, q[57] = g, q[58] = D, q[59] = L, q[60] = B) : B = q[60], B
+                children: eP
+            }), M[56] = eP, M[57] = N) : N = M[57], M[58] !== y || M[59] !== N ? (B = (0, o.jsxs)("div", {
+                className: y,
+                children: [z, N]
+            }), M[58] = y, M[59] = N, M[60] = B) : B = M[60], M[61] !== eI || M[62] !== p || M[63] !== P || M[64] !== B ? (q = (0, o.jsxs)("div", {
+                ref: eI,
+                className: p,
+                children: [P, B]
+            }), M[61] = eI, M[62] = p, M[63] = P, M[64] = B, M[65] = q) : q = M[65], q
         }
 
-        function k(e) {
-            let a, t, r = (0, n.c)(10),
+        function T(e) {
+            let a, t, r = (0, n.c)(12),
                 {
-                    visible: s,
-                    setClientCovered: i,
-                    onRemove: l,
-                    children: c
-                } = e;
-            r[0] !== l || r[1] !== i || r[2] !== s ? (a = e => {
-                if (null != e) return i(s), () => {
-                    s && (0, j.e)(), i(!1), s && l?.(e)
+                    mountId: i,
+                    initialNavigation: s,
+                    visible: l,
+                    setClientCovered: d,
+                    onRemove: c,
+                    children: m
+                } = e,
+                u = void 0 !== s && s;
+            r[0] !== u || r[1] !== i || r[2] !== c || r[3] !== d || r[4] !== l ? (a = e => {
+                if (null != e) return d(i, l), () => {
+                    l && u && (0, y.e)(), d(i, !1), l && c?.(e)
                 }
-            }, r[0] = l, r[1] = i, r[2] = s, r[3] = a) : a = r[3];
-            let d = a,
-                m = s ? "covered" : "uncovered",
-                u = !s,
-                g = s || void 0,
-                b = s ? c : null;
-            return r[4] !== d || r[5] !== m || r[6] !== u || r[7] !== g || r[8] !== b ? (t = (0, o.jsx)("div", {
-                ref: d,
+            }, r[0] = u, r[1] = i, r[2] = c, r[3] = d, r[4] = l, r[5] = a) : a = r[5];
+            let g = a,
+                p = l ? "covered" : "uncovered",
+                b = !l,
+                f = l || void 0,
+                v = l ? m : null;
+            return r[6] !== g || r[7] !== p || r[8] !== b || r[9] !== f || r[10] !== v ? (t = (0, o.jsx)("div", {
+                ref: g,
                 className: "pointer-events-auto absolute inset-0 overflow-auto bg-surface",
-                hidden: u,
-                "data-page-ssr-snapshot": g,
-                children: b
-            }, m), r[4] = d, r[5] = m, r[6] = u, r[7] = g, r[8] = b, r[9] = t) : t = r[9], t
+                hidden: b,
+                "data-page-ssr-snapshot": f,
+                children: v
+            }, p), r[6] = g, r[7] = p, r[8] = b, r[9] = f, r[10] = v, r[11] = t) : t = r[11], t
         }
 
-        function _(e) {
-            let a, t, i, d, p, f, v, x, w = (0, n.c)(30),
+        function L(e) {
+            let a, t, d, u, g, p, v, h, x = (0, n.c)(33),
                 {
-                    mountId: j,
-                    snapshot: D,
+                    mountId: P,
+                    initialNavigation: j,
+                    snapshot: y,
                     setClientCovered: _
                 } = e,
-                T = (0, s.y)(C.a),
-                z = (0, u.useRef)(null),
+                S = (0, i.y)(I.a),
+                z = (0, s.useRef)(null),
                 {
                     pageId: L
                 } = (0, r.cb)(),
-                B = (0, s.z)(b.f),
-                q = (0, s.z)(b.j);
-            w[0] !== j || w[1] !== D.accountId || w[2] !== D.pageId || w[3] !== D.userId ? (a = {
-                mountId: j,
-                pageId: D.pageId,
-                accountId: D.accountId,
-                userId: D.userId
-            }, w[0] = j, w[1] = D.accountId, w[2] = D.pageId, w[3] = D.userId, w[4] = a) : a = w[4];
-            let M = (0, s.x)(I.e, a),
-                N = L !== D.pageId || B !== D.accountId || q !== D.userId || M?.failed === !0,
-                [F, A] = (0, u.useState)(!1),
-                R = null != M && !M.failed && M.sequence >= D.throughSequence;
-            !F && R && A(!0);
-            let $ = !N && !F && !R;
-            w[5] !== j || w[6] !== T || w[7] !== D.accountId || w[8] !== D.pageId || w[9] !== D.throughSequence || w[10] !== D.userId ? (t = e => {
-                let a = (0, m.d)(`page://${D.pageId}${e.ownerDocument.defaultView?.location.hash??""}`);
+                B = (0, i.z)(l.f),
+                q = (0, i.z)(l.j);
+            x[0] !== P || x[1] !== y.accountId || x[2] !== y.pageId || x[3] !== y.userId ? (a = {
+                mountId: P,
+                pageId: y.pageId,
+                accountId: y.accountId,
+                userId: y.userId
+            }, x[0] = P, x[1] = y.accountId, x[2] = y.pageId, x[3] = y.userId, x[4] = a) : a = x[4];
+            let M = (0, i.x)(k.e, a),
+                F = L !== y.pageId || B !== y.accountId || q !== y.userId || M?.failed === !0,
+                [A, R] = (0, s.useState)(!1),
+                $ = null != M && !M.failed && M.sequence >= y.throughSequence;
+            !A && $ && R(!0);
+            let E = !F && !A && !$;
+            x[5] !== P || x[6] !== S || x[7] !== y.accountId || x[8] !== y.pageId || x[9] !== y.throughSequence || x[10] !== y.userId ? (t = e => {
+                let a = (0, b.d)(`page://${y.pageId}${e.ownerDocument.defaultView?.location.hash??""}`);
                 if (a?.kind === "page" && null != a.blockId) return;
-                let t = T.get(I.e, {
-                    mountId: j,
-                    pageId: D.pageId,
-                    accountId: D.accountId,
-                    userId: D.userId
+                let t = S.get(k.e, {
+                    mountId: P,
+                    pageId: y.pageId,
+                    accountId: y.accountId,
+                    userId: y.userId
                 });
-                !t?.failed && null != t && t.sequence >= D.throughSequence && T.get(b.f) === D.accountId && T.get(b.j) === D.userId && t.restoreScroll?.(e.scrollTop)
-            }, w[5] = j, w[6] = T, w[7] = D.accountId, w[8] = D.pageId, w[9] = D.throughSequence, w[10] = D.userId, w[11] = t) : t = w[11];
-            let E = (0, P.a)(t);
-            return w[12] !== D.pageId || w[13] !== $ ? (i = $ && (0, o.jsx)(S, {
-                pageId: D.pageId,
-                content: z
-            }), w[12] = D.pageId, w[13] = $, w[14] = i) : i = w[14], w[15] !== D.title ? (d = D.title || (0, o.jsx)(g.a, {
-                ...h.c.untitled
-            }), w[15] = D.title, w[16] = d) : d = w[16], w[17] !== d ? (p = (0, o.jsx)("h1", {
-                className: `${y.a.PageReadingColumn} ${y.a.PageTitle} font-semibold break-words text-default`,
-                children: d
-            }), w[17] = d, w[18] = p) : p = w[18], w[19] !== D.html ? (f = (0, o.jsx)("div", {
+                !t?.failed && null != t && t.sequence >= y.throughSequence && S.get(l.f) === y.accountId && S.get(l.j) === y.userId && t.restoreScroll?.(e.scrollTop)
+            }, x[5] = P, x[6] = S, x[7] = y.accountId, x[8] = y.pageId, x[9] = y.throughSequence, x[10] = y.userId, x[11] = t) : t = x[11];
+            let O = (0, w.a)(t);
+            return x[12] !== j || x[13] !== y.pageId || x[14] !== E ? (d = E && (0, o.jsx)(N, {
+                pageId: y.pageId,
+                content: z,
+                initialNavigation: j
+            }), x[12] = j, x[13] = y.pageId, x[14] = E, x[15] = d) : d = x[15], x[16] !== y.title ? (u = y.title || (0, o.jsx)(f.a, {
+                ...C.c.untitled
+            }), x[16] = y.title, x[17] = u) : u = x[17], x[18] !== u ? (g = (0, o.jsx)("h1", {
+                className: `${D.a.PageReadingColumn} ${D.a.PageTitle} font-semibold break-words text-default`,
+                children: u
+            }), x[18] = u, x[19] = g) : g = x[19], x[20] !== y.html ? (p = (0, o.jsx)("div", {
                 "data-page-document-selection": !0,
                 children: (0, o.jsx)("div", {
-                    className: `${l.a.root} ${y.a.PageDocumentTheme} px-0`,
-                    style: c.a,
+                    className: `${c.a.root} ${D.a.PageDocumentTheme} px-0`,
+                    style: m.a,
                     children: (0, o.jsx)("div", {
                         ref: z,
-                        className: `${l.a.content} ${y.a.PageDocument} ${y.a.PagePreview}`,
+                        className: `${c.a.content} ${D.a.PageDocument} ${D.a.PagePreview}`,
                         "data-page-static-preview": !0,
                         dangerouslySetInnerHTML: {
-                            __html: D.html
+                            __html: y.html
                         }
                     })
                 })
-            }), w[19] = D.html, w[20] = f) : f = w[20], w[21] !== p || w[22] !== f ? (v = (0, o.jsxs)("div", {
-                className: `${y.a.PageContent} pt-10 pb-panel`,
-                children: [p, f]
-            }), w[21] = p, w[22] = f, w[23] = v) : v = w[23], w[24] !== E || w[25] !== _ || w[26] !== i || w[27] !== v || w[28] !== $ ? (x = (0, o.jsxs)(k, {
-                visible: $,
+            }), x[20] = y.html, x[21] = p) : p = x[21], x[22] !== g || x[23] !== p ? (v = (0, o.jsxs)("div", {
+                className: `${D.a.PageContent} pt-10 pb-panel`,
+                children: [g, p]
+            }), x[22] = g, x[23] = p, x[24] = v) : v = x[24], x[25] !== j || x[26] !== P || x[27] !== O || x[28] !== _ || x[29] !== d || x[30] !== v || x[31] !== E ? (h = (0, o.jsxs)(T, {
+                mountId: P,
+                initialNavigation: j,
+                visible: E,
                 setClientCovered: _,
-                onRemove: E,
-                children: [i, v]
-            }), w[24] = E, w[25] = _, w[26] = i, w[27] = v, w[28] = $, w[29] = x) : x = w[29], x
+                onRemove: O,
+                children: [d, v]
+            }), x[25] = j, x[26] = P, x[27] = O, x[28] = _, x[29] = d, x[30] = v, x[31] = E, x[32] = h) : h = x[32], h
         }
 
-        function S(e) {
-            let a, t, r, s = (0, n.c)(8),
+        function N(e) {
+            let a, t, r, i = (0, n.c)(9),
                 {
-                    pageId: i,
-                    content: l
+                    pageId: l,
+                    content: d,
+                    initialNavigation: c
                 } = e,
-                c = (0, u.useRef)(void 0);
-            return s[0] !== i ? (a = () => {
-                c.current = f.b.getDebugLoad(i)?.browserFirstContent, c.current?.observeDocumentType("page")
-            }, s[0] = i, s[1] = a) : a = s[1], s[2] !== l.current || s[3] !== i ? (t = () => {
-                if (l.current?.querySelector('[elementtiming="codex-page-ssr-content"]') == null) return;
-                (0, j.d)();
-                let e = c.current ?? f.b.getDebugLoad(i)?.browserFirstContent;
+                m = (0, s.useRef)(void 0);
+            return i[0] !== l ? (a = () => {
+                m.current = h.b.getDebugLoad(l)?.browserFirstContent, m.current?.observeDocumentType("page")
+            }, i[0] = l, i[1] = a) : a = i[1], i[2] !== d.current || i[3] !== c || i[4] !== l ? (t = () => {
+                if (d.current?.querySelector('[elementtiming="codex-page-ssr-content"]') == null) return;
+                c && (0, y.d)();
+                let e = m.current ?? h.b.getDebugLoad(l)?.browserFirstContent;
                 e?.observeDocumentType("page"), e?.contentVisible()
-            }, s[2] = l.current, s[3] = i, s[4] = t) : t = s[4], s[5] !== a || s[6] !== t ? (r = (0, o.jsx)(x.a, {
+            }, i[2] = d.current, i[3] = c, i[4] = l, i[5] = t) : t = i[5], i[6] !== a || i[7] !== t ? (r = (0, o.jsx)(P.a, {
                 requireVisibleAtPaint: !0,
                 onCommit: a,
                 onPaint: t
-            }), s[5] = a, s[6] = t, s[7] = r) : r = s[7], r
+            }), i[6] = a, i[7] = t, i[8] = r) : r = i[8], r
         }
-        var T = t("aFW8"),
-            z = t("vnV1"),
-            L = t("OMIV"),
-            B = t("hC2y"),
-            q = t("AXDI"),
-            M = (0, r.hb)(function() {
-                let e, a, t, l, c = (0, n.c)(9),
+        var B = t("M2H2"),
+            q = t("C8z7"),
+            M = t("aFW8"),
+            F = t("vnV1"),
+            A = t("IeFV"),
+            R = t("OMIV"),
+            $ = t("hC2y"),
+            E = t("AXDI"),
+            O = (0, r.hb)(function() {
+                let e, a, t, c, m, u, g, p, b = (0, n.c)(40),
+                    f = (0, i.y)(I.a),
+                    h = (0, r.Y)(),
                     {
-                        pathname: d
-                    } = (0, r.Y)(),
+                        pathname: x
+                    } = h,
                     {
-                        spacePageSnapshot: m,
-                        nonblockingSsr: u
-                    } = (0, r.X)(),
-                    g = (0, s.x)(p.B, d),
-                    b = (0, s.z)(p.v),
-                    f = (0, s.x)(L.d, "4063423961");
-                c[0] === Symbol.for("react.memo_cache_sentinel") ? (e = {
+                        pageId: C
+                    } = (0, r.cb)(),
+                    P = (0, r.X)(),
+                    w = "inAppOpen" in P && P.inAppOpen,
+                    j = (0, i.z)(B.a),
+                    y = (0, i.z)(l.f),
+                    k = (0, i.z)(l.j),
+                    D = (0, i.z)(l.k),
+                    _ = (0, i.z)(l.h);
+                b[0] !== y || b[1] !== _ || b[2] !== D || b[3] !== k ? (e = JSON.stringify([y, k, D, _]), b[0] = y, b[1] = _, b[2] = D, b[3] = k, b[4] = e) : e = b[4];
+                let S = e;
+                b[5] !== w || b[6] !== j || b[7] !== h || b[8] !== f ? (a = () => {
+                    let e = (0, A.a)(h),
+                        a = w && j && null != e ? (0, q.a)(f, document, e) : void 0;
+                    return {
+                        preparation: a,
+                        snapshot: a?.takeSnapshot() ?? null
+                    }
+                }, b[5] = w, b[6] = j, b[7] = h, b[8] = f, b[9] = a) : a = b[9];
+                let T = a;
+                b[10] !== T || b[11] !== S || b[12] !== C ? (t = () => ({
+                    pageId: C,
+                    actor: S,
+                    ...T()
+                }), b[10] = T, b[11] = S, b[12] = C, b[13] = t) : t = b[13];
+                let [L, N] = (0, s.useState)(t), O = L;
+                if (L.pageId !== C || L.actor !== S) {
+                    let e, a;
+                    b[14] !== T || b[15] !== L.pageId || b[16] !== C ? (e = L.pageId !== C ? T() : {
+                        preparation: void 0,
+                        snapshot: null
+                    }, b[14] = T, b[15] = L.pageId, b[16] = C, b[17] = e) : e = b[17], b[18] !== S || b[19] !== C || b[20] !== e ? (a = {
+                        pageId: C,
+                        actor: S,
+                        ...e
+                    }, b[18] = S, b[19] = C, b[20] = e, b[21] = a) : a = b[21], N(O = a)
+                }
+                let V = w ? O.snapshot : P.spacePageSnapshot,
+                    W = w || P.nonblockingSsr,
+                    H = (0, i.x)(v.B, x),
+                    Q = (0, i.z)(v.v),
+                    U = (0, i.x)(R.d, "4063423961");
+                b[22] === Symbol.for("react.memo_cache_sentinel") ? (c = {
                     enabled: !1
-                }, c[0] = e) : e = c[0];
-                let v = (0, s.z)(z.d, e);
-                c[1] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, o.jsx)(i.a, {
+                }, b[22] = c) : c = b[22];
+                let X = (0, i.z)(F.d, c);
+                b[23] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, o.jsx)(d.a, {
                     fillParent: !0,
                     delay: !1
-                }), c[1] = a) : a = c[1], c[2] !== g ? (t = (0, o.jsx)(q.a, {
-                    fallback: a,
-                    children: g ? (0, o.jsx)(T.b, {
+                }), b[23] = m) : m = b[23], b[24] !== H ? (u = (0, o.jsx)(E.a, {
+                    fallback: m,
+                    children: H ? (0, o.jsx)(M.b, {
                         children: (0, o.jsx)(r.m, {})
-                    }) : (0, o.jsx)(B.e, {
+                    }) : (0, o.jsx)($.e, {
                         allowLocal: !0
                     })
-                }), c[2] = g, c[3] = t) : t = c[3];
-                let h = t,
-                    x = "disabled" !== b && (!f || null == v.error && v.data?.status !== "age_restricted");
-                return c[4] !== h || c[5] !== u || c[6] !== m || c[7] !== x ? (l = (0, o.jsx)(D, {
-                    snapshot: m,
-                    nonblocking: u,
-                    enabled: x,
-                    children: h
-                }), c[4] = h, c[5] = u, c[6] = m, c[7] = x, c[8] = l) : l = c[8], l
+                }), b[24] = H, b[25] = u) : u = b[25];
+                let G = u,
+                    J = w ? O.preparation : void 0,
+                    K = w ? C : void 0;
+                return b[26] !== U || b[27] !== w || b[28] !== j || b[29] !== h || b[30] !== Q || b[31] !== X ? (g = (!w || j && null != (0, A.a)(h)) && "disabled" !== Q && (!U || null == X.error && X.data?.status !== "age_restricted"), b[26] = U, b[27] = w, b[28] = j, b[29] = h, b[30] = Q, b[31] = X, b[32] = g) : g = b[32], b[33] !== G || b[34] !== W || b[35] !== V || b[36] !== J || b[37] !== K || b[38] !== g ? (p = (0, o.jsx)(z, {
+                    snapshot: V,
+                    preparation: J,
+                    nonblocking: W,
+                    openIdentity: K,
+                    enabled: g,
+                    children: G
+                }), b[33] = G, b[34] = W, b[35] = V, b[36] = J, b[37] = K, b[38] = g, b[39] = p) : p = b[39], p
             });
-        let N = e => {
+        let V = e => {
             let {
                 currentParams: a,
                 nextParams: t,
@@ -426,22 +503,22 @@ export const __webpack_modules__ = {
         var r = t("BolX"),
             o = t("zd8w"),
             n = t("OWtl");
-        let s = (0, o.createContext)(null),
-            i = (0, o.createContext)(null),
+        let i = (0, o.createContext)(null),
+            s = (0, o.createContext)(null),
             l = (0, r.v)(n.a, e => null, void 0, {
                 autoDispose: !0
             }),
-            c = (0, r.v)(n.a, e => !1, void 0, {
+            d = (0, r.v)(n.a, e => !1, void 0, {
                 autoDispose: !0
             }),
-            d = (0, r.v)(n.a, e => null == e, void 0, {
+            c = (0, r.v)(n.a, e => null == e, void 0, {
                 autoDispose: !0
             });
         t.d(a, {}, {
-            a: s,
-            b: i,
-            c: c,
-            d: d,
+            a: i,
+            b: s,
+            c: d,
+            d: c,
             e: l
         })
     }),
@@ -453,8 +530,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.a85b352259.js";
-import * as a from "./418851.b418272bca.js";
+} from "./633146.516c6a4677.js";
+import * as a from "./418851.8cdff597ce.js";
 e.C(a);
 import * as t from "./109308.fbb414d4aa.js";
 e.C(t);
@@ -464,26 +541,26 @@ import * as o from "./257798.0b3d6025cd.js";
 e.C(o);
 import * as n from "./153380.6675e448cd.js";
 e.C(n);
-import * as s from "./617936.ed57a1bdc2.js";
-e.C(s);
-import * as i from "./807489.02ba855c8c.js";
+import * as i from "./617936.510230e136.js";
 e.C(i);
-import * as l from "./337882.b1c17957d2.js";
+import * as s from "./807489.a027e374ea.js";
+e.C(s);
+import * as l from "./337882.c2f7cf8187.js";
 e.C(l);
-import * as c from "./955979.f40606391d.js";
-e.C(c);
-import * as d from "./646436.df466850ff.js";
+import * as d from "./955979.24c51c90c6.js";
 e.C(d);
-import * as m from "./7078.f43056bf4f.js";
+import * as c from "./646436.c733a3d665.js";
+e.C(c);
+import * as m from "./7078.c424185282.js";
 e.C(m);
-import * as u from "./200429.f5468a7d9e.js";
+import * as u from "./200429.ef6ceeb78d.js";
 e.C(u);
-import * as g from "./698524.29c67652d0.js";
+import * as g from "./698524.fd3e996752.js";
 e.C(g);
-import * as b from "./956483.0463ebd3e8.js";
-e.C(b);
-import * as p from "./87162.29ee0bd2a9.js";
+import * as p from "./956483.abe9885def.js";
 e.C(p);
+import * as b from "./87162.29ee0bd2a9.js";
+e.C(b);
 import * as f from "./396705.c39944bbf2.js";
 e.C(f);
 import * as v from "./155568.7bbfb72b85.js";
@@ -492,36 +569,36 @@ import * as h from "./731863.8b87e9728a.js";
 e.C(h);
 import * as x from "./767086.6da4be4bcc.js";
 e.C(x);
-import * as C from "./76629.4b3a6c11d6.js";
+import * as C from "./76629.1ccd088209.js";
 e.C(C);
-import * as P from "./514085.5cd44b3418.js";
+import * as P from "./514085.2b0855224a.js";
 e.C(P);
-import * as w from "./204542.555643bfb3.js";
-e.C(w);
-import * as j from "./982651.7bfd071e83.js";
-e.C(j);
-import * as I from "./673108.84888467b6.js";
+import * as I from "./204542.555643bfb3.js";
 e.C(I);
-import * as y from "./487481.d4be37a58a.js";
+import * as w from "./982651.7bfd071e83.js";
+e.C(w);
+import * as j from "./673108.95021ed52b.js";
+e.C(j);
+import * as y from "./487481.dd23dcfc39.js";
 e.C(y);
-import * as D from "./229522.ddc021d49b.js";
-e.C(D);
-import * as k from "./390575.92d962cefa.js";
+import * as k from "./229522.7430726c37.js";
 e.C(k);
-import * as _ from "./353032.7103e0705d.js";
+import * as D from "./390575.353218f3fd.js";
+e.C(D);
+import * as _ from "./353032.1ea521a002.js";
 e.C(_);
-import * as S from "./637885.ac5c2e9cdb.js";
+import * as S from "./637885.5271cdd835.js";
 e.C(S);
-import * as T from "./226913.b323f04fd6.js";
-e.C(T);
-import * as z from "./902158.5a4b6c2c66.js";
+import * as z from "./226913.b323f04fd6.js";
 e.C(z);
-import * as L from "./787702.ba73fe7934.js";
+import * as T from "./902158.5a4b6c2c66.js";
+e.C(T);
+import * as L from "./787702.2653fa3b05.js";
 e.C(L);
-var B = e(e.s = "lOPI"),
-    q = B.a,
-    M = B.b;
+var N = e(e.s = "lOPI"),
+    B = N.a,
+    q = N.b;
 export {
-    q as
-    default, M as shouldRevalidate
+    B as
+    default, q as shouldRevalidate
 };

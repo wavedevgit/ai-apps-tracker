@@ -5,7 +5,7 @@ export const __webpack_modules__ = {
             a: () => f.a,
             b: () => n,
             c: () => i,
-            d: () => l
+            d: () => c
         });
         var r = C("jqIZ"),
             t = C("ABep"),
@@ -32,7 +32,7 @@ export const __webpack_modules__ = {
         }
         n.hydrate = !0;
         var f = C("MBaW");
-        let l = () => [{
+        let c = () => [{
             title: "ChatGPT for veterans | ChatGPT"
         }]
     }),
@@ -57,21 +57,21 @@ export const __webpack_modules__ = {
             a: function() {
                 let e, a, C, m = (0, t.c)(5),
                     {
-                        search: l
+                        search: c
                     } = (0, s.Y)();
-                if (m[0] !== l) {
-                    let a = new URLSearchParams(l).getAll("callback_path"),
+                if (m[0] !== c) {
+                    let a = new URLSearchParams(c).getAll("callback_path"),
                         C = 1 === a.length ? a[0] ?? "" : "",
                         r = new URLSearchParams(C.split("?")[1]?.split("#")[0]);
-                    e = (0, n.a)(r), m[0] = l, m[1] = e
+                    e = (0, n.a)(r), m[0] = c, m[1] = e
                 } else e = m[1];
-                let c = e;
-                return m[2] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(i.a, {}), m[2] = a) : a = m[2], m[3] !== c ? (C = (0, r.jsx)(o.a, {
+                let l = e;
+                return m[2] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(i.a, {}), m[2] = a) : a = m[2], m[3] !== l ? (C = (0, r.jsx)(o.a, {
                     fallback: a,
                     children: (0, r.jsx)(f, {
-                        callbackPath: c
+                        callbackPath: l
                     })
-                }), m[3] = c, m[4] = C) : C = m[4], C
+                }), m[3] = l, m[4] = C) : C = m[4], C
             }
         })
     }),
@@ -111,8 +111,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.a85b352259.js";
-import * as a from "./418851.b418272bca.js";
+} from "./633146.516c6a4677.js";
+import * as a from "./418851.8cdff597ce.js";
 e.C(a);
 import * as C from "./109308.fbb414d4aa.js";
 e.C(C);
@@ -122,24 +122,24 @@ import * as t from "./257798.0b3d6025cd.js";
 e.C(t);
 import * as s from "./153380.6675e448cd.js";
 e.C(s);
-import * as o from "./617936.ed57a1bdc2.js";
+import * as o from "./617936.510230e136.js";
 e.C(o);
-import * as m from "./807489.02ba855c8c.js";
+import * as m from "./807489.a027e374ea.js";
 e.C(m);
-import * as i from "./337882.b1c17957d2.js";
+import * as i from "./337882.c2f7cf8187.js";
 e.C(i);
-import * as n from "./955979.f40606391d.js";
+import * as n from "./955979.24c51c90c6.js";
 e.C(n);
-import * as f from "./646436.df466850ff.js";
+import * as f from "./646436.c733a3d665.js";
 e.C(f);
-import * as l from "./7078.f43056bf4f.js";
-e.C(l);
-import * as c from "./200429.f5468a7d9e.js";
+import * as c from "./7078.c424185282.js";
 e.C(c);
-import * as p from "./698524.29c67652d0.js";
-e.C(p);
-import * as d from "./956483.0463ebd3e8.js";
+import * as l from "./200429.ef6ceeb78d.js";
+e.C(l);
+import * as d from "./698524.fd3e996752.js";
 e.C(d);
+import * as p from "./956483.abe9885def.js";
+e.C(p);
 import * as b from "./87162.29ee0bd2a9.js";
 e.C(b);
 import * as L from "./396705.c39944bbf2.js";
@@ -150,29 +150,29 @@ import * as _ from "./731863.8b87e9728a.js";
 e.C(_);
 import * as h from "./767086.6da4be4bcc.js";
 e.C(h);
-import * as V from "./76629.4b3a6c11d6.js";
+import * as V from "./76629.1ccd088209.js";
 e.C(V);
-import * as u from "./514085.5cd44b3418.js";
+import * as u from "./514085.2b0855224a.js";
 e.C(u);
 import * as w from "./204542.555643bfb3.js";
 e.C(w);
 import * as x from "./982651.7bfd071e83.js";
 e.C(x);
-import * as v from "./673108.84888467b6.js";
+import * as v from "./673108.95021ed52b.js";
 e.C(v);
-import * as M from "./487481.d4be37a58a.js";
+import * as M from "./487481.dd23dcfc39.js";
 e.C(M);
-import * as Z from "./229522.ddc021d49b.js";
+import * as Z from "./229522.7430726c37.js";
 e.C(Z);
-import * as g from "./390575.92d962cefa.js";
+import * as g from "./390575.353218f3fd.js";
 e.C(g);
-import * as P from "./353032.7103e0705d.js";
+import * as P from "./353032.1ea521a002.js";
 e.C(P);
-import * as k from "./637885.ac5c2e9cdb.js";
+import * as k from "./637885.5271cdd835.js";
 e.C(k);
 import * as A from "./226913.b323f04fd6.js";
 e.C(A);
-import * as B from "./96356.8522e57dcf.js";
+import * as B from "./96356.cb14016778.js";
 e.C(B);
 var R = e(e.s = "vbaQ"),
     S = R.a,

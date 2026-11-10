@@ -55,16 +55,16 @@ export const __webpack_modules__ = {
         function y(n) {
             let i, t, o, N, A, u, f, y = (0, g.c)(27),
                 {
-                    conversationId: D,
-                    conversation: x
+                    conversationId: x,
+                    conversation: D
                 } = n,
                 p = (0, a.y)(L.a);
-            y[0] !== x || y[1] !== D || y[2] !== p ? (i = () => ({
-                ...(0, C.v)(p, D, () => x),
+            y[0] !== D || y[1] !== x || y[2] !== p ? (i = () => ({
+                ...(0, C.v)(p, x, () => D),
                 retryOnMount: !1,
                 refetchOnReconnect: !1,
                 refetchOnWindowFocus: !1
-            }), y[0] = x, y[1] = D, y[2] = p, y[3] = i) : i = y[3];
+            }), y[0] = D, y[1] = x, y[2] = p, y[3] = i) : i = y[3];
             let [w] = (0, c.useState)(i);
             y[4] !== w.queryKey || y[5] !== p.queryClient ? (t = () => () => {
                 setTimeout(() => {
@@ -84,20 +84,20 @@ export const __webpack_modules__ = {
                 isError: v,
                 error: T
             } = (0, M.a)(w);
-            y[10] !== D || y[11] !== p ? (N = () => {
+            y[10] !== x || y[11] !== p ? (N = () => {
                 p.queryClient.prefetchQuery({
-                    ...(0, C.v)(p, D),
+                    ...(0, C.v)(p, x),
                     staleTime: 0
                 })
-            }, y[10] = D, y[11] = p, y[12] = N) : N = y[12];
+            }, y[10] = x, y[11] = p, y[12] = N) : N = y[12];
             let m = N;
             if (T instanceof h.FetchError && 423 === T.status) {
                 let n;
-                return y[13] !== D || y[14] !== m || y[15] !== p ? (n = (0, l.jsx)(j.a, {
+                return y[13] !== x || y[14] !== m || y[15] !== p ? (n = (0, l.jsx)(j.a, {
                     onUnlocked: () => {
-                        (0, r.g)(p.get(r.f)?.projectId, [D]), m()
+                        (0, r.g)(p.get(r.f)?.projectId, [x]), m()
                     }
-                }), y[13] = D, y[14] = m, y[15] = p, y[16] = n) : n = y[16], n
+                }), y[13] = x, y[14] = m, y[15] = p, y[16] = n) : n = y[16], n
             }
             return y[17] !== T ? (A = (0, h.d)(T) ? T : null, y[17] = T, y[18] = A) : A = y[18], y[19] !== v || y[20] !== m ? (u = v ? (0, l.jsx)(d.a, {
                 title: (0, l.jsx)(s.a, {
@@ -106,14 +106,14 @@ export const __webpack_modules__ = {
                     description: "Error state when a ChatGPT conversation fetch fails"
                 }),
                 onRetry: m
-            }) : (0, l.jsx)(e.m, {}), y[19] = v, y[20] = m, y[21] = u) : u = y[21], y[22] !== D || y[23] !== T || y[24] !== A || y[25] !== u ? (f = (0, l.jsx)(I.a, {
-                conversationId: D,
+            }) : (0, l.jsx)(e.m, {}), y[19] = v, y[20] = m, y[21] = u) : u = y[21], y[22] !== x || y[23] !== T || y[24] !== A || y[25] !== u ? (f = (0, l.jsx)(I.a, {
+                conversationId: x,
                 error: T,
                 loadError: A,
                 canRetry: !0,
                 isWorkConversation: null,
                 children: u
-            }), y[22] = D, y[23] = T, y[24] = A, y[25] = u, y[26] = f) : f = y[26], f
+            }), y[22] = x, y[23] = T, y[24] = A, y[25] = u, y[26] = f) : f = y[26], f
         }
     }),
     BmwK: (function(n) {
@@ -265,7 +265,7 @@ export const __webpack_modules__ = {
     }),
     l3Eh: (function(n, i, t) {
         t.d(i, {
-            a: () => D
+            a: () => x
         });
         var e = t("ABep"),
             l = t("QosV"),
@@ -282,7 +282,7 @@ export const __webpack_modules__ = {
             d = t("jqSg"),
             N = t("enVv"),
             L = t("sIex"),
-            h = t("zCDm"),
+            h = t("wHPA"),
             A = t("Gjet"),
             u = t("jZDY");
 
@@ -298,8 +298,8 @@ export const __webpack_modules__ = {
                 let n = r?.getInput();
                 return n?.dataset.conversationId === C ? n : null
             }, s[0] = C, s[1] = r, s[2] = i) : i = s[2];
-            let [d] = (0, o.useState)(i), [N] = (0, o.useState)(!j || null != d), [h, f] = (0, o.useState)(!1), D = (0, o.useRef)(null), {
-                key: x
+            let [d] = (0, o.useState)(i), [N] = (0, o.useState)(!j || null != d), [h, f] = (0, o.useState)(!1), x = (0, o.useRef)(null), {
+                key: D
             } = (0, M.Y)();
             s[3] !== h || s[4] !== C || s[5] !== N ? (t = N && !h ? (0, e.jsx)("div", {
                 className: "pointer-events-none absolute inset-0 z-10",
@@ -307,7 +307,7 @@ export const __webpack_modules__ = {
                     active: !1,
                     autoLoadHistory: !1,
                     footer: (0, e.jsx)(y, {
-                        inputRef: D,
+                        inputRef: x,
                         conversationId: C
                     }),
                     children: null
@@ -317,14 +317,14 @@ export const __webpack_modules__ = {
                 children: [t, I]
             }), s[7] = I, s[8] = t, s[9] = g) : g = s[9];
             let p = g;
-            return s[10] !== C || s[11] !== N || s[12] !== r || s[13] !== x ? (a = N ? {
+            return s[10] !== C || s[11] !== N || s[12] !== r || s[13] !== D ? (a = N ? {
                 conversationId: C,
-                input: D,
-                locationKey: x,
+                input: x,
+                locationKey: D,
                 onAdopt: () => {
                     r?.onAdopt(), f(!0)
                 }
-            } : null, s[10] = C, s[11] = N, s[12] = r, s[13] = x, s[14] = a) : a = s[14], s[15] !== p || s[16] !== a ? (c = (0, e.jsx)(L.a, {
+            } : null, s[10] = C, s[11] = N, s[12] = r, s[13] = D, s[14] = a) : a = s[14], s[15] !== p || s[16] !== a ? (c = (0, e.jsx)(L.a, {
                 value: a,
                 children: p
             }), s[15] = p, s[16] = a, s[17] = c) : c = s[17], c
@@ -375,7 +375,7 @@ export const __webpack_modules__ = {
             }), s[11] = t, s[12] = a, s[13] = c) : c = s[13], c
         }
 
-        function D(n) {
+        function x(n) {
             let i, t, o, I = (0, l.c)(9),
                 {
                     children: C
@@ -436,8 +436,8 @@ export const __webpack_modules__ = {
                     {
                         conversationId: f,
                         error: y,
-                        loadError: D,
-                        canRetry: x,
+                        loadError: x,
+                        canRetry: D,
                         isWorkConversation: p,
                         showChatFallback: w,
                         children: z
@@ -454,10 +454,10 @@ export const __webpack_modules__ = {
                     })
                 }, u[0] = f, u[1] = p, u[2] = v, u[3] = i) : i = u[3];
                 let m = i;
-                u[4] !== x || u[5] !== D || u[6] !== m ? (t = () => m(D, x), u[4] = x, u[5] = D, u[6] = m, u[7] = t) : t = u[7], u[8] !== D || u[9] !== t ? (M = (0, e.jsx)(d, {
-                    error: D,
+                u[4] !== D || u[5] !== x || u[6] !== m ? (t = () => m(x, D), u[4] = D, u[5] = x, u[6] = m, u[7] = t) : t = u[7], u[8] !== x || u[9] !== t ? (M = (0, e.jsx)(d, {
+                    error: x,
                     onShown: t
-                }), u[8] = D, u[9] = t, u[10] = M) : M = u[10], u[11] !== z || u[12] !== M ? (r = (0, e.jsxs)(e.Fragment, {
+                }), u[8] = x, u[9] = t, u[10] = M) : M = u[10], u[11] !== z || u[12] !== M ? (r = (0, e.jsxs)(e.Fragment, {
                     children: [M, z]
                 }), u[11] = z, u[12] = M, u[13] = r) : r = u[13];
                 let Z = r;
@@ -522,8 +522,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as n
-} from "./633146.a85b352259.js";
-import * as i from "./418851.b418272bca.js";
+} from "./633146.516c6a4677.js";
+import * as i from "./418851.8cdff597ce.js";
 n.C(i);
 import * as t from "./109308.fbb414d4aa.js";
 n.C(t);
@@ -533,23 +533,23 @@ import * as l from "./257798.0b3d6025cd.js";
 n.C(l);
 import * as g from "./153380.6675e448cd.js";
 n.C(g);
-import * as M from "./617936.ed57a1bdc2.js";
+import * as M from "./617936.510230e136.js";
 n.C(M);
-import * as a from "./807489.02ba855c8c.js";
+import * as a from "./807489.a027e374ea.js";
 n.C(a);
-import * as c from "./337882.b1c17957d2.js";
+import * as c from "./337882.c2f7cf8187.js";
 n.C(c);
-import * as s from "./955979.f40606391d.js";
+import * as s from "./955979.24c51c90c6.js";
 n.C(s);
-import * as o from "./646436.df466850ff.js";
+import * as o from "./646436.c733a3d665.js";
 n.C(o);
-import * as I from "./7078.f43056bf4f.js";
+import * as I from "./7078.c424185282.js";
 n.C(I);
-import * as C from "./200429.f5468a7d9e.js";
+import * as C from "./200429.ef6ceeb78d.js";
 n.C(C);
-import * as j from "./698524.29c67652d0.js";
+import * as j from "./698524.fd3e996752.js";
 n.C(j);
-import * as r from "./956483.0463ebd3e8.js";
+import * as r from "./956483.abe9885def.js";
 n.C(r);
 import * as d from "./87162.29ee0bd2a9.js";
 n.C(d);
@@ -561,29 +561,29 @@ import * as h from "./731863.8b87e9728a.js";
 n.C(h);
 import * as A from "./767086.6da4be4bcc.js";
 n.C(A);
-import * as u from "./76629.4b3a6c11d6.js";
+import * as u from "./76629.1ccd088209.js";
 n.C(u);
-import * as f from "./514085.5cd44b3418.js";
+import * as f from "./514085.2b0855224a.js";
 n.C(f);
 import * as y from "./204542.555643bfb3.js";
 n.C(y);
-import * as D from "./982651.7bfd071e83.js";
-n.C(D);
-import * as x from "./673108.84888467b6.js";
+import * as x from "./982651.7bfd071e83.js";
 n.C(x);
-import * as p from "./487481.d4be37a58a.js";
+import * as D from "./673108.95021ed52b.js";
+n.C(D);
+import * as p from "./487481.dd23dcfc39.js";
 n.C(p);
-import * as w from "./229522.ddc021d49b.js";
+import * as w from "./229522.7430726c37.js";
 n.C(w);
-import * as z from "./390575.92d962cefa.js";
+import * as z from "./390575.353218f3fd.js";
 n.C(z);
-import * as v from "./353032.7103e0705d.js";
+import * as v from "./353032.1ea521a002.js";
 n.C(v);
-import * as T from "./637885.ac5c2e9cdb.js";
+import * as T from "./637885.5271cdd835.js";
 n.C(T);
 import * as m from "./226913.b323f04fd6.js";
 n.C(m);
-import * as Z from "./708781.5121395650.js";
+import * as Z from "./708781.f2f11e09f0.js";
 n.C(Z);
 var S = n(n.s = "cUVU").a;
 export {

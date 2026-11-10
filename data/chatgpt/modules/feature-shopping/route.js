@@ -28,8 +28,8 @@ export const __webpack_modules__ = {
                 }];
                 let {
                     title: r,
-                    socialTitle: a,
-                    description: m,
+                    socialTitle: m,
+                    description: a,
                     canonicalUrl: s,
                     imageUrl: p,
                     richLinkRendersEnabled: i
@@ -40,7 +40,7 @@ export const __webpack_modules__ = {
                     content: e
                 }, {
                     name: "description",
-                    content: m
+                    content: a
                 }, {
                     tagName: "link",
                     rel: "canonical",
@@ -53,10 +53,10 @@ export const __webpack_modules__ = {
                     content: s
                 }, {
                     property: "og:title",
-                    content: a
+                    content: m
                 }, {
                     property: "og:description",
-                    content: m
+                    content: a
                 }, {
                     property: "og:image",
                     content: p
@@ -65,10 +65,10 @@ export const __webpack_modules__ = {
                     content: "summary_large_image"
                 }, {
                     name: "twitter:title",
-                    content: a
+                    content: m
                 }, {
                     name: "twitter:description",
-                    content: m
+                    content: a
                 }, {
                     name: "twitter:image",
                     content: p
@@ -90,10 +90,10 @@ export const __webpack_modules__ = {
                     content: "630"
                 }, {
                     property: "og:image:alt",
-                    content: a
+                    content: m
                 }, {
                     name: "twitter:image:alt",
-                    content: a
+                    content: m
                 }), n
             }
         })
@@ -101,37 +101,37 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as t
-} from "./633146.a85b352259.js";
+} from "./633146.516c6a4677.js";
 import * as o from "./680612.3c8d72f22d.js";
 t.C(o);
-import * as r from "./418851.b418272bca.js";
+import * as r from "./418851.8cdff597ce.js";
 t.C(r);
 import * as e from "./109308.fbb414d4aa.js";
 t.C(e);
-import * as a from "./399565.a7f9c29dec.js";
-t.C(a);
-import * as m from "./257798.0b3d6025cd.js";
+import * as m from "./399565.a7f9c29dec.js";
 t.C(m);
+import * as a from "./257798.0b3d6025cd.js";
+t.C(a);
 import * as s from "./153380.6675e448cd.js";
 t.C(s);
-import * as p from "./617936.ed57a1bdc2.js";
+import * as p from "./617936.510230e136.js";
 t.C(p);
-import * as i from "./807489.02ba855c8c.js";
+import * as i from "./807489.a027e374ea.js";
 t.C(i);
-import * as n from "./337882.b1c17957d2.js";
+import * as n from "./337882.c2f7cf8187.js";
 t.C(n);
-import * as f from "./955979.f40606391d.js";
+import * as f from "./955979.24c51c90c6.js";
 t.C(f);
-import * as c from "./646436.df466850ff.js";
+import * as c from "./646436.c733a3d665.js";
 t.C(c);
-import * as j from "./7078.f43056bf4f.js";
-t.C(j);
-import * as C from "./200429.f5468a7d9e.js";
-t.C(C);
-import * as b from "./698524.29c67652d0.js";
+import * as b from "./7078.c424185282.js";
 t.C(b);
-import * as d from "./956483.0463ebd3e8.js";
+import * as d from "./200429.ef6ceeb78d.js";
 t.C(d);
+import * as j from "./698524.fd3e996752.js";
+t.C(j);
+import * as C from "./956483.abe9885def.js";
+t.C(C);
 import * as g from "./87162.29ee0bd2a9.js";
 t.C(g);
 import * as l from "./396705.c39944bbf2.js";
@@ -142,29 +142,29 @@ import * as y from "./731863.8b87e9728a.js";
 t.C(y);
 import * as u from "./767086.6da4be4bcc.js";
 t.C(u);
-import * as w from "./76629.4b3a6c11d6.js";
+import * as w from "./76629.1ccd088209.js";
 t.C(w);
-import * as h from "./514085.5cd44b3418.js";
+import * as h from "./514085.2b0855224a.js";
 t.C(h);
 import * as x from "./204542.555643bfb3.js";
 t.C(x);
 import * as k from "./982651.7bfd071e83.js";
 t.C(k);
-import * as G from "./673108.84888467b6.js";
+import * as G from "./673108.95021ed52b.js";
 t.C(G);
-import * as P from "./487481.d4be37a58a.js";
+import * as P from "./487481.dd23dcfc39.js";
 t.C(P);
-import * as v from "./229522.ddc021d49b.js";
+import * as v from "./229522.7430726c37.js";
 t.C(v);
-import * as T from "./390575.92d962cefa.js";
+import * as T from "./390575.353218f3fd.js";
 t.C(T);
-import * as I from "./353032.7103e0705d.js";
+import * as I from "./353032.1ea521a002.js";
 t.C(I);
-import * as H from "./637885.ac5c2e9cdb.js";
+import * as H from "./637885.5271cdd835.js";
 t.C(H);
 import * as N from "./226913.b323f04fd6.js";
 t.C(N);
-import * as q from "./302004.16f852c6e2.js";
+import * as q from "./302004.69c6df1815.js";
 t.C(q);
 var z = t(t.s = "jglI").a;
 export {

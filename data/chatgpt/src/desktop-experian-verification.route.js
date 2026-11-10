@@ -61,8 +61,8 @@ export const __webpack_modules__ = {
                 theme: s = "light",
                 verificationToken: l,
                 providerEnvironment: d,
-                signal: f,
-                onDiagnosticEvent: c
+                signal: c,
+                onDiagnosticEvent: f
             } = e;
             return new Promise(e => {
                 let r = new AbortController,
@@ -76,24 +76,24 @@ export const __webpack_modules__ = {
                         e.addEventListener(t, e => {
                             let r = e instanceof CustomEvent ? e.detail : void 0,
                                 i = "object" == typeof r && null != r && "experienceDetails" in r ? r.experienceDetails : void 0;
-                            c?.(t, d, i), o?.(i)
+                            f?.(t, d, i), o?.(i)
                         }, {
                             signal: r.signal
                         })
                     };
-                f.aborted ? b() : (f.addEventListener("abort", b, {
+                c.aborted ? b() : (c.addEventListener("abort", b, {
                     once: !0,
                     signal: r.signal
                 }), (async () => {
-                    c?.("start", void 0);
+                    f?.("start", void 0);
                     let {
                         registerIdentityVerification: e
                     } = await a();
-                    e(), r.signal.aborted || (c?.("mount", d), (() => {
-                        let e, a, f = o();
-                        if (null === f) return b();
-                        let c = document.createElement("identity-verification");
-                        c.style.colorScheme = "normal", c.setAttribute("appearance", JSON.stringify((e = t?.identityVerification, {
+                    e(), r.signal.aborted || (f?.("mount", d), (() => {
+                        let e, a, c = o();
+                        if (null === c) return b();
+                        let f = document.createElement("identity-verification");
+                        f.style.colorScheme = "normal", f.setAttribute("appearance", JSON.stringify((e = t?.identityVerification, {
                             ...void 0 === (a = e?.[s]) ? {} : {
                                 theme: {
                                     header_text_color: a.headingText,
@@ -130,7 +130,7 @@ export const __webpack_modules__ = {
                                     }
                                 }
                             }
-                        }))), c.setAttribute("aria-label", n), c.setAttribute("environment", d), c.setAttribute("role", "region"), c.setAttribute("token", l), u(c, "on-load"), u(c, "on-ready"), u(c, "on-status-change"), u(c, "on-verification-complete", e => {
+                        }))), f.setAttribute("aria-label", n), f.setAttribute("environment", d), f.setAttribute("role", "region"), f.setAttribute("token", l), u(f, "on-load"), u(f, "on-ready"), u(f, "on-status-change"), u(f, "on-verification-complete", e => {
                             let t, o;
                             return m((t = !("object" != typeof e || null == e || Array.isArray(e)) && ["status", "verification_id"].every(t => {
                                 let o = Reflect.get(e, t);
@@ -142,34 +142,34 @@ export const __webpack_modules__ = {
                                 kind: 2,
                                 verificationId: t?.status === "failed" || t?.status === "expired" ? o ?? void 0 : void 0
                             }))
-                        }), u(c, "on-error", () => m({
+                        }), u(f, "on-error", () => m({
                             kind: 2
-                        })), u(c, "on-close", b);
+                        })), u(f, "on-close", b);
                         let p = new MutationObserver(() => {
-                                let e = c.querySelector("iframe");
+                                let e = f.querySelector("iframe");
                                 e && (e.setAttribute("referrerpolicy", "origin"), p.disconnect())
                             }),
                             _ = () => {
                                 p.disconnect();
-                                if (c.removeAttribute("token"), "formElement" in c && c.formElement instanceof HTMLFormElement)
-                                    for (let e of c.formElement.querySelectorAll('input[name="token"]')) e.value = "", e.removeAttribute("value");
-                                "context" in c && "object" == typeof c.context && null != c.context && Reflect.deleteProperty(c.context, "authToken"), c.removeAttribute("environment"), c.remove()
+                                if (f.removeAttribute("token"), "formElement" in f && f.formElement instanceof HTMLFormElement)
+                                    for (let e of f.formElement.querySelectorAll('input[name="token"]')) e.value = "", e.removeAttribute("value");
+                                "context" in f && "object" == typeof f.context && null != f.context && Reflect.deleteProperty(f.context, "authToken"), f.removeAttribute("environment"), f.remove()
                             };
                         if (r.signal.aborted) return _();
                         r.signal.addEventListener("abort", _, {
                             once: !0
-                        }), p.observe(c, {
+                        }), p.observe(f, {
                             childList: !0,
                             subtree: !0
                         }), i();
                         try {
-                            f.append(c)
+                            c.append(f)
                         } finally {
                             i()
                         }
                     })())
                 })().catch(e => {
-                    throw c?.("start_failed", d), e
+                    throw f?.("start_failed", d), e
                 }).catch(() => m({
                     kind: 2
                 })))
@@ -214,8 +214,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.a85b352259.js";
-import * as t from "./418851.b418272bca.js";
+} from "./633146.516c6a4677.js";
+import * as t from "./418851.8cdff597ce.js";
 e.C(t);
 import * as o from "./109308.fbb414d4aa.js";
 e.C(o);
@@ -225,23 +225,23 @@ import * as i from "./257798.0b3d6025cd.js";
 e.C(i);
 import * as n from "./153380.6675e448cd.js";
 e.C(n);
-import * as a from "./617936.ed57a1bdc2.js";
+import * as a from "./617936.510230e136.js";
 e.C(a);
-import * as s from "./807489.02ba855c8c.js";
+import * as s from "./807489.a027e374ea.js";
 e.C(s);
-import * as l from "./337882.b1c17957d2.js";
+import * as l from "./337882.c2f7cf8187.js";
 e.C(l);
-import * as d from "./955979.f40606391d.js";
+import * as d from "./955979.24c51c90c6.js";
 e.C(d);
-import * as f from "./646436.df466850ff.js";
-e.C(f);
-import * as c from "./7078.f43056bf4f.js";
+import * as c from "./646436.c733a3d665.js";
 e.C(c);
-import * as m from "./200429.f5468a7d9e.js";
+import * as f from "./7078.c424185282.js";
+e.C(f);
+import * as m from "./200429.ef6ceeb78d.js";
 e.C(m);
-import * as b from "./698524.29c67652d0.js";
+import * as b from "./698524.fd3e996752.js";
 e.C(b);
-import * as u from "./956483.0463ebd3e8.js";
+import * as u from "./956483.abe9885def.js";
 e.C(u);
 import * as p from "./87162.29ee0bd2a9.js";
 e.C(p);
@@ -253,29 +253,29 @@ import * as C from "./731863.8b87e9728a.js";
 e.C(C);
 import * as j from "./767086.6da4be4bcc.js";
 e.C(j);
-import * as g from "./76629.4b3a6c11d6.js";
+import * as g from "./76629.1ccd088209.js";
 e.C(g);
-import * as y from "./514085.5cd44b3418.js";
+import * as y from "./514085.2b0855224a.js";
 e.C(y);
 import * as h from "./204542.555643bfb3.js";
 e.C(h);
 import * as w from "./982651.7bfd071e83.js";
 e.C(w);
-import * as x from "./673108.84888467b6.js";
+import * as x from "./673108.95021ed52b.js";
 e.C(x);
-import * as k from "./487481.d4be37a58a.js";
+import * as k from "./487481.dd23dcfc39.js";
 e.C(k);
-import * as A from "./229522.ddc021d49b.js";
+import * as A from "./229522.7430726c37.js";
 e.C(A);
-import * as E from "./390575.92d962cefa.js";
+import * as E from "./390575.353218f3fd.js";
 e.C(E);
-import * as B from "./353032.7103e0705d.js";
+import * as B from "./353032.1ea521a002.js";
 e.C(B);
-import * as T from "./637885.ac5c2e9cdb.js";
+import * as T from "./637885.5271cdd835.js";
 e.C(T);
 import * as S from "./226913.b323f04fd6.js";
 e.C(S);
-import * as V from "./839024.8323adcfef.js";
+import * as V from "./839024.c9a780be6f.js";
 e.C(V);
 var I = e(e.s = "FRTw").a;
 export {
