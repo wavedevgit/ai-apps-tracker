@@ -2,14 +2,14 @@ export const __rspack_esm_ids = [573324];
 export const __webpack_modules__ = {
     GMUK: (function(e, t, o) {
         o.d(t, {
-            a: () => f,
-            b: () => p
+            a: () => d,
+            b: () => n
         });
         var s = o("jqIZ"),
             r = o("ABep"),
             a = o("QosV"),
-            m = o("Wf1j");
-        let i = (0, o("Qgfj").f)({
+            i = o("Wf1j");
+        let m = (0, o("Qgfj").f)({
             metaTitle: {
                 id: "students.codexOffer.meta.title",
                 defaultMessage: "Student offer for Codex | ChatGPT",
@@ -21,29 +21,29 @@ export const __webpack_modules__ = {
                 description: "Page description for search results and shared-link previews. Invites students to confirm their student eligibility and claim credits to use Codex. Credits are a usage allowance, not academic course credits."
             }
         });
-        var f = (0, s.hb)(function() {
-            let e, t, o, f, p, c, d, n, j = (0, a.c)(18),
-                C = (0, m.a)();
-            j[0] !== C ? (e = C.formatMessage(i.metaTitle), j[0] = C, j[1] = e) : e = j[1];
-            let b = e;
-            j[2] !== C ? (t = C.formatMessage(i.metaDescription), j[2] = C, j[3] = t) : t = j[3];
-            let l = t;
-            return j[4] !== b ? (o = (0, r.jsx)("title", {
-                children: b
-            }), j[4] = b, j[5] = o) : o = j[5], j[6] !== l ? (f = (0, r.jsx)("meta", {
+        var d = (0, s.hb)(function() {
+            let e, t, o, d, n, p, f, c, j = (0, a.c)(18),
+                l = (0, i.a)();
+            j[0] !== l ? (e = l.formatMessage(m.metaTitle), j[0] = l, j[1] = e) : e = j[1];
+            let g = e;
+            j[2] !== l ? (t = l.formatMessage(m.metaDescription), j[2] = l, j[3] = t) : t = j[3];
+            let C = t;
+            return j[4] !== g ? (o = (0, r.jsx)("title", {
+                children: g
+            }), j[4] = g, j[5] = o) : o = j[5], j[6] !== C ? (d = (0, r.jsx)("meta", {
                 name: "description",
-                content: l
-            }), j[6] = l, j[7] = f) : f = j[7], j[8] !== b ? (p = (0, r.jsx)("meta", {
+                content: C
+            }), j[6] = C, j[7] = d) : d = j[7], j[8] !== g ? (n = (0, r.jsx)("meta", {
                 property: "og:title",
-                content: b
-            }), j[8] = b, j[9] = p) : p = j[9], j[10] !== l ? (c = (0, r.jsx)("meta", {
+                content: g
+            }), j[8] = g, j[9] = n) : n = j[9], j[10] !== C ? (p = (0, r.jsx)("meta", {
                 property: "og:description",
-                content: l
-            }), j[10] = l, j[11] = c) : c = j[11], j[12] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, r.jsx)(s.m, {}), j[12] = d) : d = j[12], j[13] !== o || j[14] !== f || j[15] !== p || j[16] !== c ? (n = (0, r.jsxs)(r.Fragment, {
-                children: [o, f, p, c, d]
-            }), j[13] = o, j[14] = f, j[15] = p, j[16] = c, j[17] = n) : n = j[17], n
+                content: C
+            }), j[10] = C, j[11] = p) : p = j[11], j[12] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, r.jsx)(s.m, {}), j[12] = f) : f = j[12], j[13] !== o || j[14] !== d || j[15] !== n || j[16] !== p ? (c = (0, r.jsxs)(r.Fragment, {
+                children: [o, d, n, p, f]
+            }), j[13] = o, j[14] = d, j[15] = n, j[16] = p, j[17] = c) : c = j[17], c
         });
-        let p = () => [{
+        let n = () => [{
             property: "og:site_name",
             content: "ChatGPT"
         }, {
@@ -72,73 +72,55 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.4f53659142.js";
-import * as t from "./418851.5f4d5598ef.js";
+} from "./633146.acefa13d1a.js";
+import * as t from "./418851.4b043c43bc.js";
 e.C(t);
-import * as o from "./109308.fbb414d4aa.js";
+import * as o from "./109308.e66696cd0d.js";
 e.C(o);
-import * as s from "./399565.eb37d98dab.js";
+import * as s from "./399565.2fc4679b26.js";
 e.C(s);
-import * as r from "./257798.0b3d6025cd.js";
+import * as r from "./257798.b51742efd5.js";
 e.C(r);
-import * as a from "./153380.6675e448cd.js";
+import * as a from "./447351.496da706c3.js";
 e.C(a);
-import * as m from "./617936.1be6495150.js";
-e.C(m);
-import * as i from "./807489.47ce3d58eb.js";
+import * as i from "./617936.dcbf382e63.js";
 e.C(i);
-import * as f from "./337882.e80888e843.js";
-e.C(f);
-import * as p from "./955979.ad877350e8.js";
-e.C(p);
-import * as c from "./646436.ac746ad603.js";
-e.C(c);
-import * as d from "./7078.b1d26369b8.js";
+import * as m from "./807489.7f5d47cb0e.js";
+e.C(m);
+import * as d from "./337882.f22d43d615.js";
 e.C(d);
-import * as n from "./200429.e4432be69e.js";
+import * as n from "./955979.d659318431.js";
 e.C(n);
-import * as j from "./698524.167a90d544.js";
+import * as p from "./646436.30c2553f0b.js";
+e.C(p);
+import * as f from "./7078.5cd07a5c9b.js";
+e.C(f);
+import * as c from "./200429.82d37d45f2.js";
+e.C(c);
+import * as j from "./698524.1d78dbab32.js";
 e.C(j);
-import * as C from "./956483.c6b1c36f65.js";
-e.C(C);
-import * as b from "./87162.29ee0bd2a9.js";
-e.C(b);
-import * as l from "./396705.c39944bbf2.js";
+import * as l from "./956483.4fffedad3f.js";
 e.C(l);
-import * as g from "./155568.594d7ca7d4.js";
+import * as g from "./87162.ceb3023033.js";
 e.C(g);
-import * as u from "./731863.8b87e9728a.js";
+import * as C from "./396705.74bbf371c4.js";
+e.C(C);
+import * as b from "./155568.8fe9b1a879.js";
+e.C(b);
+import * as u from "./731863.e2c3850b56.js";
 e.C(u);
-import * as _ from "./767086.6da4be4bcc.js";
+import * as _ from "./767086.e730a8ccb4.js";
 e.C(_);
-import * as h from "./76629.975d74ebd5.js";
+import * as h from "./76629.0f4df00a80.js";
 e.C(h);
-import * as x from "./514085.94507f4bd4.js";
+import * as x from "./226913.27c93050ff.js";
 e.C(x);
-import * as y from "./204542.3d156380d1.js";
+import * as y from "./573324.e6cba7b46a.js";
 e.C(y);
-import * as w from "./982651.7bfd071e83.js";
-e.C(w);
-import * as v from "./673108.c0ee21225d.js";
-e.C(v);
-import * as k from "./487481.c884695c4d.js";
-e.C(k);
-import * as M from "./229522.f9a354baac.js";
-e.C(M);
-import * as G from "./390575.91355aac4e.js";
-e.C(G);
-import * as P from "./353032.505024a946.js";
-e.C(P);
-import * as T from "./637885.ca6d736a13.js";
-e.C(T);
-import * as D from "./226913.6965f848b1.js";
-e.C(D);
-import * as I from "./573324.0570fb167f.js";
-e.C(I);
-var K = e(e.s = "GMUK"),
-    O = K.a,
-    Q = K.b;
+var w = e(e.s = "GMUK"),
+    v = w.a,
+    k = w.b;
 export {
-    O as
-    default, Q as meta
+    v as
+    default, k as meta
 };

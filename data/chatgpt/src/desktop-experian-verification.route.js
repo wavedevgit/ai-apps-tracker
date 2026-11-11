@@ -59,8 +59,8 @@ export const __webpack_modules__ = {
                     try {
                         let i = n(d) ? d : void 0,
                             f = n(i?.apiResponse) ? i.apiResponse : void 0,
-                            m = i?.status,
-                            u = f?.status ?? c,
+                            u = i?.status,
+                            m = f?.status ?? c,
                             b = i?.verification_id;
                         e({
                             "experian.attempt_id": t,
@@ -68,7 +68,7 @@ export const __webpack_modules__ = {
                             "experian.event": s,
                             "experian.environment": "SANDBOX" === l || "PRODUCTION" === l ? l : "unknown",
                             "experian.has_details": void 0 !== i,
-                            "experian.status": null == m ? "missing" : "string" == typeof m && o.has(m) ? m : "unrecognized",
+                            "experian.status": null == u ? "missing" : "string" == typeof u && o.has(u) ? u : "unrecognized",
                             "experian.verification_id_state": function(e) {
                                 if (null == e) return "missing";
                                 if ("string" != typeof e) return "invalid";
@@ -78,7 +78,7 @@ export const __webpack_modules__ = {
                             "experian.has_verification_id": "string" == typeof b && b.trim().length > 0,
                             "experian.next_action": a(i?.next_action),
                             "experian.code": a(f?.code ?? i?.code),
-                            "experian.http_status": "number" == typeof u && Number.isInteger(u) && u >= 100 && u <= 599 ? u : void 0,
+                            "experian.http_status": "number" == typeof m && Number.isInteger(m) && m >= 100 && m <= 599 ? m : void 0,
                             "experian.outcome": "finish" !== s ? void 0 : i?.kind === 0 ? "verified" : i?.kind === 1 ? "cancelled" : i?.kind === 2 ? "failed" : void 0
                         })
                     } catch {}
@@ -114,17 +114,17 @@ export const __webpack_modules__ = {
                 verificationToken: a,
                 providerEnvironment: c,
                 signal: f,
-                onDiagnosticEvent: m
+                onDiagnosticEvent: u
             } = e;
             return new Promise(e => {
                 let l = new AbortController,
-                    u = t => {
-                        l.abort(), m?.("finish", c, {
+                    m = t => {
+                        l.abort(), u?.("finish", c, {
                             kind: t.kind,
                             verification_id: t.verificationId
                         }), e(t)
                     },
-                    b = () => u({
+                    b = () => m({
                         kind: 1
                     }),
                     p = (e, t, r) => {
@@ -132,7 +132,7 @@ export const __webpack_modules__ = {
                             let o = e instanceof CustomEvent ? e.detail : void 0,
                                 i = "object" == typeof o && null != o && "experienceDetails" in o ? o.experienceDetails : void 0,
                                 n = null == i && t === s && "object" == typeof o && null != o && "data" in o && "object" == typeof o.data && null != o.data && "status" in o.data ? o.data.status : void 0;
-                            m?.(t, c, i, n), r?.(i)
+                            u?.(t, c, i, n), r?.(i)
                         }, {
                             signal: l.signal
                         })
@@ -141,15 +141,15 @@ export const __webpack_modules__ = {
                     once: !0,
                     signal: l.signal
                 }), (async () => {
-                    m?.("start", void 0);
+                    u?.("start", void 0);
                     let {
                         registerIdentityVerification: e
                     } = await i();
-                    e(), l.signal.aborted || (m?.("mount", c), (() => {
+                    e(), l.signal.aborted || (u?.("mount", c), (() => {
                         let e, i, f = r();
                         if (null === f) return b();
-                        let m = document.createElement("identity-verification");
-                        m.style.colorScheme = "normal", m.setAttribute("appearance", JSON.stringify((e = t?.identityVerification, {
+                        let u = document.createElement("identity-verification");
+                        u.style.colorScheme = "normal", u.setAttribute("appearance", JSON.stringify((e = t?.identityVerification, {
                             ...void 0 === (i = e?.[n]) ? {} : {
                                 theme: {
                                     header_text_color: i.headingText,
@@ -186,9 +186,9 @@ export const __webpack_modules__ = {
                                     }
                                 }
                             }
-                        }))), m.setAttribute("aria-label", o), m.setAttribute("environment", c), m.setAttribute("role", "region"), m.setAttribute("token", a), p(m, "on-load"), p(m, "on-ready"), p(m, "on-status-change"), p(m, "on-verification-complete", e => {
+                        }))), u.setAttribute("aria-label", o), u.setAttribute("environment", c), u.setAttribute("role", "region"), u.setAttribute("token", a), p(u, "on-load"), p(u, "on-ready"), p(u, "on-status-change"), p(u, "on-verification-complete", e => {
                             let t, r;
-                            return u((t = !("object" != typeof e || null == e || Array.isArray(e)) && ["status", "verification_id"].every(t => {
+                            return m((t = !("object" != typeof e || null == e || Array.isArray(e)) && ["status", "verification_id"].every(t => {
                                 let r = Reflect.get(e, t);
                                 return null == r || "string" == typeof r
                             }) ? e : void 0, r = t?.verification_id, t?.status === "verified" && r ? {
@@ -198,35 +198,35 @@ export const __webpack_modules__ = {
                                 kind: 2,
                                 verificationId: t?.status === "failed" || t?.status === "expired" ? r ?? void 0 : void 0
                             }))
-                        }), p(m, s, () => u({
+                        }), p(u, s, () => m({
                             kind: 2
-                        })), p(m, "on-close", b);
+                        })), p(u, "on-close", b);
                         let _ = new MutationObserver(() => {
-                                let e = m.querySelector("iframe");
+                                let e = u.querySelector("iframe");
                                 e && (e.setAttribute("referrerpolicy", "origin"), _.disconnect())
                             }),
                             v = () => {
                                 _.disconnect();
-                                if (m.removeAttribute("token"), "formElement" in m && m.formElement instanceof HTMLFormElement)
-                                    for (let e of m.formElement.querySelectorAll('input[name="token"]')) e.value = "", e.removeAttribute("value");
-                                "context" in m && "object" == typeof m.context && null != m.context && Reflect.deleteProperty(m.context, "authToken"), m.removeAttribute("environment"), m.remove()
+                                if (u.removeAttribute("token"), "formElement" in u && u.formElement instanceof HTMLFormElement)
+                                    for (let e of u.formElement.querySelectorAll('input[name="token"]')) e.value = "", e.removeAttribute("value");
+                                "context" in u && "object" == typeof u.context && null != u.context && Reflect.deleteProperty(u.context, "authToken"), u.removeAttribute("environment"), u.remove()
                             };
                         if (l.signal.aborted) return v();
                         l.signal.addEventListener("abort", v, {
                             once: !0
-                        }), _.observe(m, {
+                        }), _.observe(u, {
                             childList: !0,
                             subtree: !0
                         }), d();
                         try {
-                            f.append(m)
+                            f.append(u)
                         } finally {
                             d()
                         }
                     })())
                 })().catch(e => {
-                    throw m?.("start_failed", c), e
-                }).catch(() => u({
+                    throw u?.("start_failed", c), e
+                }).catch(() => m({
                     kind: 2
                 })))
             })
@@ -268,71 +268,53 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.4f53659142.js";
-import * as t from "./418851.5f4d5598ef.js";
+} from "./633146.acefa13d1a.js";
+import * as t from "./418851.4b043c43bc.js";
 e.C(t);
-import * as r from "./109308.fbb414d4aa.js";
+import * as r from "./109308.e66696cd0d.js";
 e.C(r);
-import * as o from "./399565.eb37d98dab.js";
+import * as o from "./399565.2fc4679b26.js";
 e.C(o);
-import * as i from "./257798.0b3d6025cd.js";
+import * as i from "./257798.b51742efd5.js";
 e.C(i);
-import * as n from "./153380.6675e448cd.js";
+import * as n from "./447351.496da706c3.js";
 e.C(n);
-import * as a from "./617936.1be6495150.js";
+import * as a from "./617936.dcbf382e63.js";
 e.C(a);
-import * as s from "./807489.47ce3d58eb.js";
+import * as s from "./807489.7f5d47cb0e.js";
 e.C(s);
-import * as l from "./337882.e80888e843.js";
+import * as l from "./337882.f22d43d615.js";
 e.C(l);
-import * as d from "./955979.ad877350e8.js";
+import * as d from "./955979.d659318431.js";
 e.C(d);
-import * as c from "./646436.ac746ad603.js";
+import * as c from "./646436.30c2553f0b.js";
 e.C(c);
-import * as f from "./7078.b1d26369b8.js";
+import * as f from "./7078.5cd07a5c9b.js";
 e.C(f);
-import * as m from "./200429.e4432be69e.js";
-e.C(m);
-import * as u from "./698524.167a90d544.js";
+import * as u from "./200429.82d37d45f2.js";
 e.C(u);
-import * as b from "./956483.c6b1c36f65.js";
+import * as m from "./698524.1d78dbab32.js";
+e.C(m);
+import * as b from "./956483.4fffedad3f.js";
 e.C(b);
-import * as p from "./87162.29ee0bd2a9.js";
+import * as p from "./87162.ceb3023033.js";
 e.C(p);
-import * as _ from "./396705.c39944bbf2.js";
+import * as _ from "./396705.74bbf371c4.js";
 e.C(_);
-import * as v from "./155568.594d7ca7d4.js";
+import * as v from "./155568.8fe9b1a879.js";
 e.C(v);
-import * as g from "./731863.8b87e9728a.js";
+import * as g from "./731863.e2c3850b56.js";
 e.C(g);
-import * as y from "./767086.6da4be4bcc.js";
+import * as y from "./767086.e730a8ccb4.js";
 e.C(y);
-import * as j from "./76629.975d74ebd5.js";
-e.C(j);
-import * as C from "./514085.94507f4bd4.js";
-e.C(C);
-import * as h from "./204542.3d156380d1.js";
+import * as h from "./76629.0f4df00a80.js";
 e.C(h);
-import * as x from "./982651.7bfd071e83.js";
+import * as x from "./226913.27c93050ff.js";
 e.C(x);
-import * as w from "./673108.c0ee21225d.js";
-e.C(w);
-import * as k from "./487481.c884695c4d.js";
-e.C(k);
-import * as A from "./229522.f9a354baac.js";
-e.C(A);
-import * as E from "./390575.91355aac4e.js";
-e.C(E);
-import * as B from "./353032.505024a946.js";
-e.C(B);
-import * as S from "./637885.ca6d736a13.js";
-e.C(S);
-import * as T from "./226913.6965f848b1.js";
-e.C(T);
-import * as R from "./839024.7f3f519f67.js";
-e.C(R);
-var D = e(e.s = "FRTw").a;
+import * as j from "./839024.bbbf6869ba.js";
+e.C(j);
+var C = e(e.s = "FRTw").a;
 export {
-    D as
+    C as
     default
 };

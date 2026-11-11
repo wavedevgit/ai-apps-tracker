@@ -41,7 +41,7 @@ export const __webpack_modules__ = {
             r = a("wvhd"),
             c = a("xvAb"),
             d = a("vhdp");
-        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(153380), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(982651), a.e(673108), a.e(487481), a.e(229522), a.e(390575), a.e(353032), a.e(637885), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
+        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
             fallback: (0, s.jsx)(c.b, {}),
             errorFallback: () => (0, s.jsx)(r.a, {
                 result: void 0,
@@ -217,7 +217,7 @@ export const __webpack_modules__ = {
                 }),
                 children: C
             }) : null, f[0] = C, f[1] = b, f[2] = t) : t = f[2];
-            let j = t;
+            let v = t;
             f[3] !== x || f[4] !== b ? (a = null != x ? (0, s.jsx)("div", {
                 className: (0, n.b)("flex w-full justify-center", {
                     "mb-6 sm:mb-14": "verified" === b || "activated" === b,
@@ -231,23 +231,23 @@ export const __webpack_modules__ = {
                 "aria-atomic": "true",
                 children: h
             }), f[6] = h, f[7] = o) : o = f[7];
-            let v = "activated" === b ? "mt-4 font-medium text-tertiary" : "mt-2 text-secondary";
-            f[8] !== v ? (l = (0, n.b)("text-base", v), f[8] = v, f[9] = l) : l = f[9], f[10] !== u || f[11] !== l ? (r = (0, s.jsx)("div", {
+            let _ = "activated" === b ? "mt-4 font-medium text-tertiary" : "mt-2 text-secondary";
+            f[8] !== _ ? (l = (0, n.b)("text-base", _), f[8] = _, f[9] = l) : l = f[9], f[10] !== u || f[11] !== l ? (r = (0, s.jsx)("div", {
                 className: l,
                 children: u
             }), f[10] = u, f[11] = l, f[12] = r) : r = f[12], f[13] !== g ? (c = null != g ? (0, s.jsx)("div", {
                 className: "mt-4 flex max-w-full flex-col items-center empty:hidden",
                 children: g
             }) : null, f[13] = g, f[14] = c) : c = f[14];
-            let _ = "confirmation" === b ? j : null;
-            f[15] !== a || f[16] !== o || f[17] !== r || f[18] !== c || f[19] !== _ ? (d = (0, s.jsx)("div", {
+            let j = "confirmation" === b ? v : null;
+            f[15] !== a || f[16] !== o || f[17] !== r || f[18] !== c || f[19] !== j ? (d = (0, s.jsx)("div", {
                 className: "contents max-sm:flex max-sm:min-h-0 max-sm:w-full max-sm:flex-1 max-sm:flex-col max-sm:overflow-y-auto",
                 children: (0, s.jsxs)("div", {
                     className: "contents max-sm:my-auto max-sm:flex max-sm:w-full max-sm:flex-none max-sm:flex-col max-sm:items-center max-sm:py-6",
-                    children: [a, o, r, c, _]
+                    children: [a, o, r, c, j]
                 })
-            }), f[15] = a, f[16] = o, f[17] = r, f[18] = c, f[19] = _, f[20] = d) : d = f[20];
-            let y = "confirmation" !== b ? j : null;
+            }), f[15] = a, f[16] = o, f[17] = r, f[18] = c, f[19] = j, f[20] = d) : d = f[20];
+            let y = "confirmation" !== b ? v : null;
             return f[21] !== d || f[22] !== y ? (m = (0, s.jsx)("section", {
                 className: "my-auto flex w-full flex-col items-center px-6 py-12 text-center max-sm:min-h-0 max-sm:flex-1 max-sm:py-0",
                 children: (0, s.jsxs)("div", {
@@ -299,15 +299,15 @@ export const __webpack_modules__ = {
                 let t, a, l, r, c, d, m, f, h, u, x, g, p, C = (0, i.c)(26),
                     {
                         accountEmail: b,
-                        verificationHelpPath: j,
-                        children: v
+                        verificationHelpPath: v,
+                        children: _
                     } = e,
-                    _ = (0, n.a)();
-                return C[0] !== _ ? (t = _.formatMessage({
+                    j = (0, n.a)();
+                return C[0] !== j ? (t = j.formatMessage({
                     id: "chatgpt.students.back_to_school_2026.embedded_verification.artwork.alt.campus_lawn",
                     defaultMessage: "Students sitting together on a college campus lawn",
                     description: "Alternative text for the campus photo beside the student verification form"
-                }), C[0] = _, C[1] = t) : t = C[1], C[2] !== t ? (a = (0, s.jsx)("img", {
+                }), C[0] = j, C[1] = t) : t = C[1], C[2] !== t ? (a = (0, s.jsx)("img", {
                     className: "order-first h-57 w-full object-cover lg:order-last lg:mt-14 lg:h-114 lg:rounded-3xl",
                     src: "https://cdn.openai.com/chatgpt/ctf-cdn/students-2026/verification-campus-lawn-e5c8ee276936.webp",
                     alt: t
@@ -346,35 +346,35 @@ export const __webpack_modules__ = {
                     id: "chatgpt.students.back_to_school_2026.embedded_verification.help",
                     defaultMessage: "How does verifying work?",
                     description: "Link to the student offer FAQ explaining how verification works"
-                }), C[8] = m) : m = C[8], C[9] !== j ? (f = (0, s.jsxs)("div", {
+                }), C[8] = m) : m = C[8], C[9] !== v ? (f = (0, s.jsxs)("div", {
                     className: "px-8 pt-8 lg:px-0 lg:pt-0",
                     children: [r, (0, s.jsxs)("p", {
                         className: "mt-6 text-base leading-relaxed text-secondary",
                         children: [c, d, (0, s.jsx)("a", {
                             className: "ms-1 text-secondary underline underline-offset-4",
-                            href: j,
+                            href: v,
                             rel: "noopener noreferrer",
                             target: "_blank",
                             children: m
                         })]
                     })]
-                }), C[9] = j, C[10] = f) : f = C[10], C[11] !== a || C[12] !== f ? (h = (0, s.jsxs)("section", {
+                }), C[9] = v, C[10] = f) : f = C[10], C[11] !== a || C[12] !== f ? (h = (0, s.jsxs)("section", {
                     className: "flex min-w-0 flex-col lg:flex-5",
                     children: [a, f]
-                }), C[11] = a, C[12] = f, C[13] = h) : h = C[13], C[14] !== _ ? (u = _.formatMessage({
+                }), C[11] = a, C[12] = f, C[13] = h) : h = C[13], C[14] !== j ? (u = j.formatMessage({
                     id: "chatgpt.students.back_to_school_2026.embedded_verification.form.label",
                     defaultMessage: "Student verification form",
                     description: "Accessible label for the account-bound student verification form"
-                }), C[14] = _, C[15] = u) : u = C[15], C[16] !== v || C[17] !== _ ? (x = v ?? (0, s.jsx)("div", {
+                }), C[14] = j, C[15] = u) : u = C[15], C[16] !== _ || C[17] !== j ? (x = _ ?? (0, s.jsx)("div", {
                     className: "min-h-24 w-full",
                     role: "status",
                     "aria-busy": "true",
-                    "aria-label": _.formatMessage({
+                    "aria-label": j.formatMessage({
                         id: "chatgpt.students.back_to_school_2026.embedded_verification.loading",
                         defaultMessage: "Loading student verification",
                         description: "Accessible label while the student verification form loads"
                     })
-                }), C[16] = v, C[17] = _, C[18] = x) : x = C[18], C[19] !== b || C[20] !== u || C[21] !== x ? (g = (0, s.jsxs)("section", {
+                }), C[16] = _, C[17] = j, C[18] = x) : x = C[18], C[19] !== b || C[20] !== u || C[21] !== x ? (g = (0, s.jsxs)("section", {
                     className: "min-w-0 px-8 pt-8 lg:flex-4 lg:px-0 lg:pt-0",
                     "aria-label": u,
                     children: [b, x]
@@ -465,75 +465,57 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.4f53659142.js";
+} from "./633146.acefa13d1a.js";
 import * as t from "./680612.3c8d72f22d.js";
 e.C(t);
-import * as a from "./418851.5f4d5598ef.js";
+import * as a from "./418851.4b043c43bc.js";
 e.C(a);
-import * as s from "./109308.fbb414d4aa.js";
+import * as s from "./109308.e66696cd0d.js";
 e.C(s);
-import * as i from "./399565.eb37d98dab.js";
+import * as i from "./399565.2fc4679b26.js";
 e.C(i);
-import * as n from "./257798.0b3d6025cd.js";
+import * as n from "./257798.b51742efd5.js";
 e.C(n);
-import * as o from "./153380.6675e448cd.js";
+import * as o from "./447351.496da706c3.js";
 e.C(o);
-import * as l from "./617936.1be6495150.js";
+import * as l from "./617936.dcbf382e63.js";
 e.C(l);
-import * as r from "./807489.47ce3d58eb.js";
+import * as r from "./807489.7f5d47cb0e.js";
 e.C(r);
-import * as c from "./337882.e80888e843.js";
+import * as c from "./337882.f22d43d615.js";
 e.C(c);
-import * as d from "./955979.ad877350e8.js";
+import * as d from "./955979.d659318431.js";
 e.C(d);
-import * as m from "./646436.ac746ad603.js";
+import * as m from "./646436.30c2553f0b.js";
 e.C(m);
-import * as f from "./7078.b1d26369b8.js";
+import * as f from "./7078.5cd07a5c9b.js";
 e.C(f);
-import * as h from "./200429.e4432be69e.js";
+import * as h from "./200429.82d37d45f2.js";
 e.C(h);
-import * as u from "./698524.167a90d544.js";
+import * as u from "./698524.1d78dbab32.js";
 e.C(u);
-import * as x from "./956483.c6b1c36f65.js";
+import * as x from "./956483.4fffedad3f.js";
 e.C(x);
-import * as g from "./87162.29ee0bd2a9.js";
+import * as g from "./87162.ceb3023033.js";
 e.C(g);
-import * as p from "./396705.c39944bbf2.js";
+import * as p from "./396705.74bbf371c4.js";
 e.C(p);
-import * as C from "./155568.594d7ca7d4.js";
+import * as C from "./155568.8fe9b1a879.js";
 e.C(C);
-import * as b from "./731863.8b87e9728a.js";
+import * as b from "./731863.e2c3850b56.js";
 e.C(b);
-import * as j from "./767086.6da4be4bcc.js";
-e.C(j);
-import * as v from "./76629.975d74ebd5.js";
+import * as v from "./767086.e730a8ccb4.js";
 e.C(v);
-import * as _ from "./514085.94507f4bd4.js";
+import * as _ from "./76629.0f4df00a80.js";
 e.C(_);
-import * as y from "./204542.3d156380d1.js";
+import * as j from "./226913.27c93050ff.js";
+e.C(j);
+import * as y from "./24435.b1279ceb18.js";
 e.C(y);
-import * as w from "./982651.7bfd071e83.js";
-e.C(w);
-import * as k from "./673108.c0ee21225d.js";
-e.C(k);
-import * as L from "./487481.c884695c4d.js";
-e.C(L);
-import * as M from "./229522.f9a354baac.js";
-e.C(M);
-import * as S from "./390575.91355aac4e.js";
-e.C(S);
-import * as V from "./353032.505024a946.js";
-e.C(V);
-import * as N from "./637885.ca6d736a13.js";
-e.C(N);
-import * as A from "./226913.6965f848b1.js";
-e.C(A);
-import * as P from "./24435.4c0a00878c.js";
-e.C(P);
-var Z = e(e.s = "FaKe"),
-    B = Z.a,
-    T = Z.b;
+var w = e(e.s = "FaKe"),
+    k = w.a,
+    L = w.b;
 export {
-    B as
-    default, T as handle
+    k as
+    default, L as handle
 };

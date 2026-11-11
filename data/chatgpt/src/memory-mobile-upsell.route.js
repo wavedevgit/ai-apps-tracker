@@ -2,30 +2,30 @@ export const __rspack_esm_ids = [326277];
 export const __webpack_modules__ = {
     EyFy: (function(e, t, a) {
         a.d(t, {
-            a: () => p
+            a: () => f
         });
         var s = a("jqIZ"),
             r = a("ABep"),
-            o = a("QosV"),
-            i = a("BolX"),
-            m = a("zd8w"),
-            n = a("oyxz"),
+            i = a("QosV"),
+            o = a("BolX"),
+            n = a("zd8w"),
+            m = a("oyxz"),
             c = a("G8V1"),
-            f = a("RNul");
+            l = a("RNul");
         a("rHrT");
-        var l = a("eAav"),
-            p = (0, s.hb)(function() {
-                let e, t, a, p, d, b, u, h = (0, o.c)(12),
+        var d = a("eAav"),
+            f = (0, s.hb)(function() {
+                let e, t, a, f, p, u, b, h = (0, i.c)(12),
                     {
                         locale: j
-                    } = (0, i.y)(l.a).value,
+                    } = (0, o.y)(d.a).value,
                     {
-                        fallbackUrl: C,
-                        messages: g
+                        fallbackUrl: g,
+                        messages: C
                     } = (0, s.X)(),
-                    _ = (0, m.useRef)(!1),
-                    w = (0, m.useRef)(!1);
-                return h[0] !== C ? (e = () => {
+                    _ = (0, n.useRef)(!1),
+                    w = (0, n.useRef)(!1);
+                return h[0] !== g ? (e = () => {
                     w.current = w.current || "hidden" === document.visibilityState;
                     let e = () => {
                             "hidden" === document.visibilityState && (w.current = !0)
@@ -35,123 +35,105 @@ export const __webpack_modules__ = {
                         };
                     document.addEventListener("visibilitychange", e), window.addEventListener("pagehide", t);
                     let a = window.setTimeout(() => {
-                        w.current || "visible" !== document.visibilityState || window.location.replace(C)
+                        w.current || "visible" !== document.visibilityState || window.location.replace(g)
                     }, 1500);
                     if (!_.current) {
                         _.current = !0;
                         try {
                             window.location.assign("chatgpt://plus-upsell")
                         } catch {
-                            w.current = !0, window.clearTimeout(a), window.location.replace(C)
+                            w.current = !0, window.clearTimeout(a), window.location.replace(g)
                         }
                     }
                     return () => {
                         window.clearTimeout(a), document.removeEventListener("visibilitychange", e), window.removeEventListener("pagehide", t)
                     }
-                }, t = [C], h[0] = C, h[1] = e, h[2] = t) : (e = h[1], t = h[2]), (0, m.useEffect)(e, t), h[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(f.a, {
+                }, t = [g], h[0] = g, h[1] = e, h[2] = t) : (e = h[1], t = h[2]), (0, n.useEffect)(e, t), h[3] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(l.a, {
                     className: "icon-lg text-secondary"
-                }), h[3] = a) : a = h[3], h[4] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsx)("p", {
+                }), h[3] = a) : a = h[3], h[4] === Symbol.for("react.memo_cache_sentinel") ? (f = (0, r.jsx)("p", {
                     className: "text-base",
-                    children: (0, r.jsx)(n.a, {
+                    children: (0, r.jsx)(m.a, {
                         id: "chatgpt.memory_mobile_upsell.deeplink_bridge.status",
                         defaultMessage: "Opening ChatGPT…",
                         description: "Loading/status text on the memory mobile Plus upsell bridge page. This page appears briefly for iOS users after they tap the memory launch email CTA, while ChatGPT tries to open the native app before falling back to web pricing. This indicates an in-progress action, not a command. Short sentence."
                     })
-                }), h[4] = p) : p = h[4], h[5] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, r.jsx)(n.a, {
+                }), h[4] = f) : f = h[4], h[5] === Symbol.for("react.memo_cache_sentinel") ? (p = (0, r.jsx)(m.a, {
                     id: "chatgpt.memory_mobile_upsell.deeplink_bridge.web_fallback_link",
                     defaultMessage: "Continue on web",
                     description: "Link label on the iOS bridge page that opens the ChatGPT website in the mobile browser, not the app, to the pricing page with Plus highlighted. Very short."
-                }), h[5] = d) : d = h[5], h[6] !== C ? (b = (0, r.jsx)("main", {
+                }), h[5] = p) : p = h[5], h[6] !== g ? (u = (0, r.jsx)("main", {
                     className: "flex min-h-screen items-center justify-center bg-surface px-6 text-default select-none",
                     children: (0, r.jsxs)("div", {
                         className: "flex max-w-sm flex-col items-center gap-3 text-center",
                         role: "status",
                         "aria-live": "polite",
                         "aria-busy": !0,
-                        children: [a, p, (0, r.jsx)("a", {
+                        children: [a, f, (0, r.jsx)("a", {
                             className: "text-sm text-secondary underline underline-offset-2",
-                            href: C,
-                            children: d
+                            href: g,
+                            children: p
                         })]
                     })
-                }), h[6] = C, h[7] = b) : b = h[7], h[8] !== j || h[9] !== g || h[10] !== b ? (u = (0, r.jsx)(c.a, {
+                }), h[6] = g, h[7] = u) : u = h[7], h[8] !== j || h[9] !== C || h[10] !== u ? (b = (0, r.jsx)(c.a, {
                     locale: j,
                     defaultLocale: "en-US",
-                    messages: g,
-                    children: b
-                }), h[8] = j, h[9] = g, h[10] = b, h[11] = u) : u = h[11], u
+                    messages: C,
+                    children: u
+                }), h[8] = j, h[9] = C, h[10] = u, h[11] = b) : b = h[11], b
             })
     })
 };
 import {
     __webpack_require__ as e
-} from "./633146.4f53659142.js";
+} from "./633146.acefa13d1a.js";
 import * as t from "./680612.3c8d72f22d.js";
 e.C(t);
-import * as a from "./418851.5f4d5598ef.js";
+import * as a from "./418851.4b043c43bc.js";
 e.C(a);
-import * as s from "./109308.fbb414d4aa.js";
+import * as s from "./109308.e66696cd0d.js";
 e.C(s);
-import * as r from "./399565.eb37d98dab.js";
+import * as r from "./399565.2fc4679b26.js";
 e.C(r);
-import * as o from "./257798.0b3d6025cd.js";
-e.C(o);
-import * as i from "./153380.6675e448cd.js";
+import * as i from "./257798.b51742efd5.js";
 e.C(i);
-import * as m from "./617936.1be6495150.js";
-e.C(m);
-import * as n from "./807489.47ce3d58eb.js";
+import * as o from "./447351.496da706c3.js";
+e.C(o);
+import * as n from "./617936.dcbf382e63.js";
 e.C(n);
-import * as c from "./337882.e80888e843.js";
+import * as m from "./807489.7f5d47cb0e.js";
+e.C(m);
+import * as c from "./337882.f22d43d615.js";
 e.C(c);
-import * as f from "./955979.ad877350e8.js";
-e.C(f);
-import * as l from "./646436.ac746ad603.js";
+import * as l from "./955979.d659318431.js";
 e.C(l);
-import * as p from "./7078.b1d26369b8.js";
-e.C(p);
-import * as d from "./200429.e4432be69e.js";
+import * as d from "./646436.30c2553f0b.js";
 e.C(d);
-import * as b from "./698524.167a90d544.js";
-e.C(b);
-import * as u from "./956483.c6b1c36f65.js";
+import * as f from "./7078.5cd07a5c9b.js";
+e.C(f);
+import * as p from "./200429.82d37d45f2.js";
+e.C(p);
+import * as u from "./698524.1d78dbab32.js";
 e.C(u);
-import * as h from "./87162.29ee0bd2a9.js";
+import * as b from "./956483.4fffedad3f.js";
+e.C(b);
+import * as h from "./87162.ceb3023033.js";
 e.C(h);
-import * as j from "./396705.c39944bbf2.js";
+import * as j from "./396705.74bbf371c4.js";
 e.C(j);
-import * as C from "./155568.594d7ca7d4.js";
-e.C(C);
-import * as g from "./731863.8b87e9728a.js";
+import * as g from "./155568.8fe9b1a879.js";
 e.C(g);
-import * as _ from "./767086.6da4be4bcc.js";
+import * as C from "./731863.e2c3850b56.js";
+e.C(C);
+import * as _ from "./767086.e730a8ccb4.js";
 e.C(_);
-import * as w from "./76629.975d74ebd5.js";
+import * as w from "./76629.0f4df00a80.js";
 e.C(w);
-import * as y from "./514085.94507f4bd4.js";
+import * as y from "./226913.27c93050ff.js";
 e.C(y);
-import * as x from "./204542.3d156380d1.js";
+import * as x from "./326277.faf5815e27.js";
 e.C(x);
-import * as v from "./982651.7bfd071e83.js";
-e.C(v);
-import * as S from "./673108.c0ee21225d.js";
-e.C(S);
-import * as T from "./487481.c884695c4d.js";
-e.C(T);
-import * as k from "./229522.f9a354baac.js";
-e.C(k);
-import * as E from "./390575.91355aac4e.js";
-e.C(E);
-import * as L from "./353032.505024a946.js";
-e.C(L);
-import * as N from "./637885.ca6d736a13.js";
-e.C(N);
-import * as P from "./226913.6965f848b1.js";
-e.C(P);
-import * as G from "./326277.ff000c3cce.js";
-e.C(G);
-var A = e(e.s = "EyFy").a;
+var v = e(e.s = "EyFy").a;
 export {
-    A as
+    v as
     default
 };

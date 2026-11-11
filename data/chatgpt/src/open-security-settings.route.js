@@ -2,44 +2,44 @@ export const __rspack_esm_ids = [345186];
 export const __webpack_modules__ = {
     Ptjs: (function(e, s, a) {
         a.d(s, {
-            a: () => l
+            a: () => d
         });
         var r = a("jqIZ"),
             t = a("ABep"),
             o = a("QosV"),
             m = a("BolX"),
             i = a("zd8w"),
-            f = a("G8V1"),
-            c = a("oyxz"),
+            c = a("G8V1"),
+            f = a("oyxz"),
             n = a("RNul");
         a("rHrT");
-        var p = a("eAav"),
-            l = (0, r.hb)(function() {
-                let e, s, a, c, n = (0, o.c)(8),
+        var l = a("eAav"),
+            d = (0, r.hb)(function() {
+                let e, s, a, f, n = (0, o.c)(8),
                     {
-                        locale: l
-                    } = (0, m.y)(p.a).value,
+                        locale: d
+                    } = (0, m.y)(l.a).value,
                     {
-                        messages: d
+                        messages: j
                     } = (0, r.X)(),
                     b = (0, r._)(),
-                    C = (0, r.W)("/settings/security");
-                return n[0] !== C || n[1] !== b ? (e = () => {
+                    u = (0, r.W)("/settings/security");
+                return n[0] !== u || n[1] !== b ? (e = () => {
                     let e = window.setTimeout(() => {
-                        b(`/auth/login_with?${new URLSearchParams({screen_hint:"login",callback_path:C})}`, {
+                        b(`/auth/login_with?${new URLSearchParams({screen_hint:"login",callback_path:u})}`, {
                             replace: !0
                         })
                     }, 3e3);
                     return () => window.clearTimeout(e)
-                }, s = [C, b], n[0] = C, n[1] = b, n[2] = e, n[3] = s) : (e = n[2], s = n[3]), (0, i.useEffect)(e, s), n[4] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, t.jsx)(j, {}), n[4] = a) : a = n[4], n[5] !== l || n[6] !== d ? (c = (0, t.jsx)(f.a, {
-                    locale: l,
+                }, s = [u, b], n[0] = u, n[1] = b, n[2] = e, n[3] = s) : (e = n[2], s = n[3]), (0, i.useEffect)(e, s), n[4] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, t.jsx)(p, {}), n[4] = a) : a = n[4], n[5] !== d || n[6] !== j ? (f = (0, t.jsx)(c.a, {
+                    locale: d,
                     defaultLocale: "en-US",
-                    messages: d,
+                    messages: j,
                     children: a
-                }), n[5] = l, n[6] = d, n[7] = c) : c = n[7], c
+                }), n[5] = d, n[6] = j, n[7] = f) : f = n[7], f
             });
 
-        function j() {
+        function p() {
             let e, s, a = (0, o.c)(2);
             return a[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, t.jsx)(n.a, {
                 className: "icon-lg text-secondary"
@@ -52,7 +52,7 @@ export const __webpack_modules__ = {
                     "aria-busy": !0,
                     children: [e, (0, t.jsx)("p", {
                         className: "text-sm",
-                        children: (0, t.jsx)(c.a, {
+                        children: (0, t.jsx)(f.a, {
                             id: "security-settings.redirect-message",
                             defaultMessage: "Security settings live in ChatGPT. You’re being redirected in a new tab",
                             description: "Interstitial message shown before redirecting to ChatGPT security settings in a new tab."
@@ -65,73 +65,55 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.4f53659142.js";
+} from "./633146.acefa13d1a.js";
 import * as s from "./680612.3c8d72f22d.js";
 e.C(s);
-import * as a from "./418851.5f4d5598ef.js";
+import * as a from "./418851.4b043c43bc.js";
 e.C(a);
-import * as r from "./109308.fbb414d4aa.js";
+import * as r from "./109308.e66696cd0d.js";
 e.C(r);
-import * as t from "./399565.eb37d98dab.js";
+import * as t from "./399565.2fc4679b26.js";
 e.C(t);
-import * as o from "./257798.0b3d6025cd.js";
+import * as o from "./257798.b51742efd5.js";
 e.C(o);
-import * as m from "./153380.6675e448cd.js";
+import * as m from "./447351.496da706c3.js";
 e.C(m);
-import * as i from "./617936.1be6495150.js";
+import * as i from "./617936.dcbf382e63.js";
 e.C(i);
-import * as f from "./807489.47ce3d58eb.js";
-e.C(f);
-import * as c from "./337882.e80888e843.js";
+import * as c from "./807489.7f5d47cb0e.js";
 e.C(c);
-import * as n from "./955979.ad877350e8.js";
+import * as f from "./337882.f22d43d615.js";
+e.C(f);
+import * as n from "./955979.d659318431.js";
 e.C(n);
-import * as p from "./646436.ac746ad603.js";
-e.C(p);
-import * as l from "./7078.b1d26369b8.js";
+import * as l from "./646436.30c2553f0b.js";
 e.C(l);
-import * as j from "./200429.e4432be69e.js";
-e.C(j);
-import * as d from "./698524.167a90d544.js";
+import * as d from "./7078.5cd07a5c9b.js";
 e.C(d);
-import * as b from "./956483.c6b1c36f65.js";
+import * as p from "./200429.82d37d45f2.js";
+e.C(p);
+import * as j from "./698524.1d78dbab32.js";
+e.C(j);
+import * as b from "./956483.4fffedad3f.js";
 e.C(b);
-import * as C from "./87162.29ee0bd2a9.js";
-e.C(C);
-import * as u from "./396705.c39944bbf2.js";
+import * as u from "./87162.ceb3023033.js";
 e.C(u);
-import * as _ from "./155568.594d7ca7d4.js";
+import * as C from "./396705.74bbf371c4.js";
+e.C(C);
+import * as _ from "./155568.8fe9b1a879.js";
 e.C(_);
-import * as x from "./731863.8b87e9728a.js";
+import * as x from "./731863.e2c3850b56.js";
 e.C(x);
-import * as h from "./767086.6da4be4bcc.js";
+import * as h from "./767086.e730a8ccb4.js";
 e.C(h);
-import * as g from "./76629.975d74ebd5.js";
+import * as g from "./76629.0f4df00a80.js";
 e.C(g);
-import * as w from "./514085.94507f4bd4.js";
+import * as w from "./226913.27c93050ff.js";
 e.C(w);
-import * as y from "./204542.3d156380d1.js";
+import * as y from "./345186.facb2fedab.js";
 e.C(y);
-import * as v from "./982651.7bfd071e83.js";
-e.C(v);
-import * as S from "./673108.c0ee21225d.js";
-e.C(S);
-import * as N from "./487481.c884695c4d.js";
-e.C(N);
-import * as P from "./229522.f9a354baac.js";
-e.C(P);
-import * as T from "./390575.91355aac4e.js";
-e.C(T);
-import * as k from "./353032.505024a946.js";
-e.C(k);
-import * as G from "./637885.ca6d736a13.js";
-e.C(G);
-import * as z from "./226913.6965f848b1.js";
-e.C(z);
-import * as A from "./345186.75a05c2c87.js";
-e.C(A);
-var B = e(e.s = "Ptjs").a;
+var v = e(e.s = "Ptjs").a;
 export {
-    B as
+    v as
     default
 };

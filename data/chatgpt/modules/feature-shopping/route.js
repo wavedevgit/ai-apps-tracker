@@ -30,10 +30,10 @@ export const __webpack_modules__ = {
                     title: r,
                     socialTitle: a,
                     description: m,
-                    canonicalUrl: s,
-                    imageUrl: p,
-                    richLinkRendersEnabled: i
-                } = o, n = [{
+                    canonicalUrl: n,
+                    imageUrl: s,
+                    richLinkRendersEnabled: p
+                } = o, i = [{
                     title: r
                 }, {
                     name: "robots",
@@ -44,13 +44,13 @@ export const __webpack_modules__ = {
                 }, {
                     tagName: "link",
                     rel: "canonical",
-                    href: s
+                    href: n
                 }, {
                     property: "og:type",
                     content: "website"
                 }, {
                     property: "og:url",
-                    content: s
+                    content: n
                 }, {
                     property: "og:title",
                     content: a
@@ -59,7 +59,7 @@ export const __webpack_modules__ = {
                     content: m
                 }, {
                     property: "og:image",
-                    content: p
+                    content: s
                 }, {
                     name: "twitter:card",
                     content: "summary_large_image"
@@ -71,14 +71,14 @@ export const __webpack_modules__ = {
                     content: m
                 }, {
                     name: "twitter:image",
-                    content: p
+                    content: s
                 }];
-                return i && n.push({
+                return p && i.push({
                     property: "og:site_name",
                     content: "ChatGPT"
                 }, {
                     property: "og:image:secure_url",
-                    content: p
+                    content: s
                 }, {
                     property: "og:image:type",
                     content: "image/png"
@@ -94,79 +94,61 @@ export const __webpack_modules__ = {
                 }, {
                     name: "twitter:image:alt",
                     content: a
-                }), n
+                }), i
             }
         })
     })
 };
 import {
     __webpack_require__ as t
-} from "./633146.4f53659142.js";
+} from "./633146.acefa13d1a.js";
 import * as o from "./680612.3c8d72f22d.js";
 t.C(o);
-import * as r from "./418851.5f4d5598ef.js";
+import * as r from "./418851.4b043c43bc.js";
 t.C(r);
-import * as e from "./109308.fbb414d4aa.js";
+import * as e from "./109308.e66696cd0d.js";
 t.C(e);
-import * as a from "./399565.eb37d98dab.js";
+import * as a from "./399565.2fc4679b26.js";
 t.C(a);
-import * as m from "./257798.0b3d6025cd.js";
+import * as m from "./257798.b51742efd5.js";
 t.C(m);
-import * as s from "./153380.6675e448cd.js";
-t.C(s);
-import * as p from "./617936.1be6495150.js";
-t.C(p);
-import * as i from "./807489.47ce3d58eb.js";
-t.C(i);
-import * as n from "./337882.e80888e843.js";
+import * as n from "./447351.496da706c3.js";
 t.C(n);
-import * as f from "./955979.ad877350e8.js";
+import * as s from "./617936.dcbf382e63.js";
+t.C(s);
+import * as p from "./807489.7f5d47cb0e.js";
+t.C(p);
+import * as i from "./337882.f22d43d615.js";
+t.C(i);
+import * as f from "./955979.d659318431.js";
 t.C(f);
-import * as c from "./646436.ac746ad603.js";
+import * as c from "./646436.30c2553f0b.js";
 t.C(c);
-import * as j from "./7078.b1d26369b8.js";
-t.C(j);
-import * as C from "./200429.e4432be69e.js";
-t.C(C);
-import * as b from "./698524.167a90d544.js";
-t.C(b);
-import * as d from "./956483.c6b1c36f65.js";
+import * as d from "./7078.5cd07a5c9b.js";
 t.C(d);
-import * as g from "./87162.29ee0bd2a9.js";
+import * as g from "./200429.82d37d45f2.js";
 t.C(g);
-import * as l from "./396705.c39944bbf2.js";
+import * as j from "./698524.1d78dbab32.js";
+t.C(j);
+import * as C from "./956483.4fffedad3f.js";
+t.C(C);
+import * as b from "./87162.ceb3023033.js";
+t.C(b);
+import * as l from "./396705.74bbf371c4.js";
 t.C(l);
-import * as _ from "./155568.594d7ca7d4.js";
+import * as _ from "./155568.8fe9b1a879.js";
 t.C(_);
-import * as y from "./731863.8b87e9728a.js";
+import * as y from "./731863.e2c3850b56.js";
 t.C(y);
-import * as u from "./767086.6da4be4bcc.js";
+import * as u from "./767086.e730a8ccb4.js";
 t.C(u);
-import * as w from "./76629.975d74ebd5.js";
+import * as w from "./76629.0f4df00a80.js";
 t.C(w);
-import * as h from "./514085.94507f4bd4.js";
+import * as h from "./226913.27c93050ff.js";
 t.C(h);
-import * as x from "./204542.3d156380d1.js";
+import * as x from "./302004.783955adfc.js";
 t.C(x);
-import * as k from "./982651.7bfd071e83.js";
-t.C(k);
-import * as G from "./673108.c0ee21225d.js";
-t.C(G);
-import * as P from "./487481.c884695c4d.js";
-t.C(P);
-import * as v from "./229522.f9a354baac.js";
-t.C(v);
-import * as T from "./390575.91355aac4e.js";
-t.C(T);
-import * as I from "./353032.505024a946.js";
-t.C(I);
-import * as H from "./637885.ca6d736a13.js";
-t.C(H);
-import * as N from "./226913.6965f848b1.js";
-t.C(N);
-import * as q from "./302004.43d35e4a96.js";
-t.C(q);
-var z = t(t.s = "jglI").a;
+var k = t(t.s = "jglI").a;
 export {
-    z as meta
+    k as meta
 };
