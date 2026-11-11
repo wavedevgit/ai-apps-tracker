@@ -1,1 +1,2546 @@
-export const __rspack_esm_ids=[587936];export const __webpack_modules__={O35A:(function(e,t){t.a={widget:"widget-excfHd",frame:"frame-jj9wM2",viewport:"viewport-NxODVD",marker:"marker-mNXBu7",business:"business-XlicwG",pinContent:"pinContent-_vtxB4",label:"label-tyCeio",markerContainer:"markerContainer-lVmL5L",attribution:"attribution-fipj_L"}}),PrhM:(function(e,t){t.a={results:"results-qLgUrv",card:"card-Zug7_a",fullscreen:"fullscreen-TskD9F",item:"item-gCB5MY"}}),K1wx:(function(e,t,n){var a=n("Bbed"),r=n("j8Yf");let l=(0,a.a)(async()=>(await Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(226913),n.e(753405),n.e(321957),n.e(585419),n.e(877700),n.e(843292),n.e(353230),n.e(81461),n.e(882456),n.e(145049),n.e(744644),n.e(896220),n.e(499790),n.e(301030),n.e(909395),n.e(212487),n.e(17983),n.e(167649),n.e(509282),n.e(523433),n.e(403815),n.e(471657),n.e(675518)]).then(n.bind(n,"UT6b"))).ChatGptEntityContentReference,{errorFallback:r.b});n.d(t,{},{a:l})}),j8Yf:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("rKAs"),s=n("JQAz"),i=n("NddG"),o=n("zSQm"),u=n("KDax");function c(e){let t,n,o,u,c=(0,r.c)(18),{isTerminalInline:d,reference:m}=e,f=m.alt;if("alt_text"===m.type&&"latex"===m.render_as&&"string"==typeof f&&f.trim().length>0){let e,t;c[0]!==f?(e=f.trim(),c[0]=f,c[1]=e):e=c[1];let n=e;return c[2]!==n?(t=(0,a.jsx)(i.b,{token:{display:!1,raw:n,text:n,type:"math"}},"chatgpt-latex-alt-text"),c[2]=n,c[3]=t):t=c[3],t}c[4]!==m?(t=(0,l.p)(m),c[4]=m,c[5]=t):t=c[5];let g=t;c[6]!==m?(n=(0,l.o)(m),c[6]=m,c[7]=n):n=c[7];let h=n;if(null==h){let e;return c[8]!==m?(e=(0,a.jsx)(p,{reference:m}),c[8]=m,c[9]=e):e=c[9],e}if(null==g){let e;return c[10]!==h?(e=(0,a.jsx)("span",{className:"text-secondary",children:h}),c[10]=h,c[11]=e):e=c[11],e}return c[12]!==h||c[13]!==g?(o={label:h,title:h,url:g},c[12]=h,c[13]=g,c[14]=o):o=c[14],c[15]!==d||c[16]!==o?(u=(0,a.jsx)(s.a,{attributes:o,isTerminalInline:d}),c[15]=d,c[16]=o,c[17]=u):u=c[17],u}function d(e){let t,n,s,i,u,c,d,p,g,h,x,b,y,v=(0,r.c)(37),{reference:_}=e;v[0]!==_?(t=(0,l.o)(_),v[0]=_,v[1]=t):t=v[1];let I=t;v[2]!==_?(n=(0,l.n)(_),v[2]=_,v[3]=n):n=v[3];let w=n;v[4]!==_?(s=(0,l.j)(_),v[4]=_,v[5]=s):s=v[5];let j=s;if(v[6]!==j||v[7]!==_||v[8]!==w||v[9]!==I){u=Symbol.for("react.early_return_sentinel");e:{var C;let e,t=(Array.isArray((C=_).items)?C.items:[]).map(e=>{if(null==e||"object"!=typeof e)return null;let t="title"in e?e.title:null,n="name"in e?e.name:null;return"string"==typeof t&&t.trim().length>0?t:"string"==typeof n&&n.trim().length>0?n:null}).filter(e=>null!=e).slice(0,4);if(null==I&&null==w&&null==j&&0===t.length){u=null;break e}if(v[18]!==_){let t=(0,l.p)(_);e=null==t?null:(0,o.a)(t),v[18]=_,v[19]=e}else e=v[19];i=e,c="my-3 max-w-[36rem] rounded-lg border border-subtle bg-surface-secondary/92 px-3 py-2 text-sm text-default",d="chatgpt-content-reference-card",v[20]!==I?(p=null==I?null:(0,a.jsx)("div",{className:"font-medium text-default",children:I}),v[20]=I,v[21]=p):p=v[21],v[22]!==w?(g=null==w?null:(0,a.jsx)("div",{className:"mt-1 line-clamp-2 text-secondary",children:w}),v[22]=w,v[23]=g):g=v[23],v[24]!==j||v[25]!==I?(h=null==j||j===I?null:(0,a.jsx)("div",{className:"mt-1 line-clamp-2 text-secondary",children:j}),v[24]=j,v[25]=I,v[26]=h):h=v[26],x=0===t.length?null:(0,a.jsx)("div",{className:"mt-2 flex flex-col gap-1",children:t.map(m)})}v[6]=j,v[7]=_,v[8]=w,v[9]=I,v[10]=i,v[11]=u,v[12]=c,v[13]=d,v[14]=p,v[15]=g,v[16]=h,v[17]=x}else i=v[10],u=v[11],c=v[12],d=v[13],p=v[14],g=v[15],h=v[16],x=v[17];if(u!==Symbol.for("react.early_return_sentinel"))return u;v[27]!==c||v[28]!==d||v[29]!==p||v[30]!==g||v[31]!==h||v[32]!==x?(b=(0,a.jsxs)("div",{className:c,"data-testid":d,children:[p,g,h,x]}),v[27]=c,v[28]=d,v[29]=p,v[30]=g,v[31]=h,v[32]=x,v[33]=b):b=v[33];let N=b;return null==i?N:(v[34]!==N||v[35]!==i?(y=(0,a.jsx)(f,{href:i,children:N}),v[34]=N,v[35]=i,v[36]=y):y=v[36],y)}function m(e,t){return(0,a.jsx)("div",{className:"truncate",children:e},`${e}-${String(t)}`)}function p(e){let t,n,s=(0,r.c)(4),{reference:i}=e;s[0]!==i?(t=(0,l.j)(i),s[0]=i,s[1]=t):t=s[1];let o=t;return s[2]!==o?(n=null==o?null:(0,a.jsx)(a.Fragment,{children:o}),s[2]=o,s[3]=n):n=s[3],n}function f(e){let t,n=(0,r.c)(3),{children:l,href:s}=e;return n[0]!==l||n[1]!==s?(t=(0,a.jsx)(u.a,{className:"block max-w-fit cursor-interaction rounded-lg no-underline outline-none focus-visible:ring-2 focus-visible:ring-ring",href:s,initiator:"markdown_link_click",children:l}),n[0]=l,n[1]=s,n[2]=t):t=n[2],t}n.d(t,{},{a:p,b:function(e){let t=(0,r.c)(7),{isTerminalInline:n,reference:s}=e;switch((0,l.i)(s)){case"inline":{let e;return t[0]!==n||t[1]!==s?(e=(0,a.jsx)(c,{isTerminalInline:n,reference:s}),t[0]=n,t[1]=s,t[2]=e):e=t[2],e}case"block":{let e;return t[3]!==s?(e=(0,a.jsx)(d,{reference:s}),t[3]=s,t[4]=e):e=t[4],e}case"alt":{let e;return t[5]!==s?(e=(0,a.jsx)(p,{reference:s}),t[5]=s,t[6]=e):e=t[6],e}case"hidden":return null}},c:d,d:c})}),jFKl:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("on57"),s=n("zd8w"),i=n("Wf1j"),o=n("oyxz"),u=n("Sm6l"),c=n("HOLv"),d=n("bf6R"),m=n("KDax"),p=n("O35A"),f=n("T5cQ");function g(e){let t,n=(0,r.c)(4),{children:l,href:s,openTarget:i}=e;return n[0]!==l||n[1]!==s||n[2]!==i?(t=(0,a.jsx)(m.a,{className:"cursor-interaction underline decoration-current underline-offset-2 hover:text-default",href:s,initiator:"markdown_link_click",openTarget:i,children:l}),n[0]=l,n[1]=s,n[2]=i,n[3]=t):t=n[3],t}n.d(t,{},{a:function(e){let t,n,m,h,x,b,y,v=(0,r.c)(21),{isFullscreen:_,openTarget:I}=e,[w,j]=(0,s.useState)(!1),C=(0,i.a)(),N=_?"absolute start-3 bottom-3":"me-3 mb-3 self-end";v[0]!==N?(t=(0,l.b)(p.a.attribution,"pointer-events-auto z-20 flex items-center overflow-hidden rounded-full bg-surface text-[10px] font-light whitespace-nowrap text-default",N),v[0]=N,v[1]=t):t=v[1],v[2]!==C?(n=C.formatMessage({id:"chatgpt.contentReferences.map.attribution.toggle",defaultMessage:"Map attribution",description:"Accessible label of the map information button that shows or hides attribution links"}),v[2]=C,v[3]=n):n=v[3];let S=_?"ghostActive":"mapSurface";return v[4]!==w?(m=()=>j(!w),v[4]=w,v[5]=m):m=v[5],v[6]!==w?(h=w?(0,a.jsx)(d.sj,{}):(0,a.jsx)(c.a,{asset:f.a}),v[6]=w,v[7]=h):h=v[7],v[8]!==w||v[9]!==n||v[10]!==S||v[11]!==m||v[12]!==h?(x=(0,a.jsx)(u.a,{"aria-label":n,"aria-expanded":w,color:S,onClick:m,radius:"full",size:"iconCircleSm",children:h}),v[8]=w,v[9]=n,v[10]=S,v[11]=m,v[12]=h,v[13]=x):x=v[13],v[14]!==w||v[15]!==I?(b=w?(0,a.jsxs)("div",{className:"pe-2",children:[(0,a.jsx)("span",{"aria-hidden":!0,children:"© "}),(0,a.jsx)(g,{href:"https://www.mapbox.com/about/maps",openTarget:I,children:"Mapbox"}),(0,a.jsx)("span",{"aria-hidden":!0,children:" "}),(0,a.jsx)(g,{href:"https://www.mapbox.com/legal/end-user-terms",openTarget:I,children:(0,a.jsx)(o.a,{id:"chatgpt.contentReferences.map.attribution.terms",defaultMessage:"Terms",description:"Link to Mapbox's terms of service in map attribution"})}),(0,a.jsx)("span",{"aria-hidden":!0,children:" © "}),(0,a.jsx)(g,{href:"http://www.openstreetmap.org/about",openTarget:I,children:"OpenStreetMap"})]}):null,v[14]=w,v[15]=I,v[16]=b):b=v[16],v[17]!==t||v[18]!==x||v[19]!==b?(y=(0,a.jsxs)("div",{className:t,children:[x,b]}),v[17]=t,v[18]=x,v[19]=b,v[20]=y):y=v[20],y},b:g})}),b2ei:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("DmTj"),s=n("hnKH"),i=n("tszw"),o=n("FER9"),u=n("iodE"),c=n("rKAs"),d=n("Qgfj"),m=n("HOLv"),p=n("Bbed"),f=n("K1wx"),g=n("TUMj"),h=n("TJEh"),x=n("O35A");let b=RegExp(`^(?:${(0,o.a)().source})$`,"u"),y=(0,p.a)(async()=>(await Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(226913),n.e(210851)]).then(n.bind(n,"ac7f"))).ChatGptLocalBusinessHoverCard,{fallback:e=>{let{business:t,mapCarouselCard:n}=e;return n?.title?.trim()||t.name}});n.d(t,{},{a:function(e){let t,n,o,p,v,_,I,w=(0,r.c)(69),{contentReferenceIndex:j,isProvisional:C,isSelected:N,mapContextLabel:S,onOpenEntity:M,place:R,presentation:k,previewPortalContainer:E,stopNumber:T,notesClassName:A,standalone:P}=e,O=void 0!==N&&N,L=void 0!==P&&P,D=(0,g.d)(),B=(0,u.a)();w[0]!==R.id||w[1]!==R.name||w[2]!==D?.contentReferences||w[3]!==D?.contentReferences.findIndex?(t=D?.contentReferences.findIndex(e=>{if("entity"!==e.type)return!1;let t=(0,h.d)(e,"string"==typeof e.category?e.category:(0,c.t)(e)?.category??null);return"string"==typeof R.id?t?.id===R.id:e.name===R.name})??-1,w[0]=R.id,w[1]=R.name,w[2]=D?.contentReferences,w[3]=D?.contentReferences.findIndex,w[4]=t):t=w[4];let G=t;w[5]!==j||w[6]!==G||w[7]!==R||w[8]!==D?(n=D?.contentReferences[G]??{category:R.category??"local_business",entity_data:R,extra_params:R.extra_params,name:R.name,start_idx:D?.contentReferences[j]?.start_idx,status:"done",type:"entity"},w[5]=j,w[6]=G,w[7]=R,w[8]=D,w[9]=n):n=w[9];let F=n;w[10]!==R?(o=h.a.safeParse(R),w[10]=R,w[11]=o):o=w[11];let z=o,K="string"==typeof R.mapLabel?R.mapLabel:void 0,H="string"==typeof R.notes?R.notes:void 0;if(L&&"card"===k&&z.success){let e,t=D?.shouldBlockExternalEgress??!1;return w[12]!==z.data||w[13]!==S||w[14]!==K||w[15]!==H||w[16]!==A||w[17]!==M||w[18]!==R.mapCarouselCard||w[19]!==t?(e=(0,a.jsx)(y,{business:z.data,contextLabel:S,mapCarouselCard:R.mapCarouselCard,mapLabel:K,notes:H,notesClassName:A,onOpenEntity:M,presentation:"map-card",shouldBlockExternalEgress:t}),w[12]=z.data,w[13]=S,w[14]=K,w[15]=H,w[16]=A,w[17]=M,w[18]=R.mapCarouselCard,w[19]=t,w[20]=e):e=w[20],e}let W=i.a;if(null==R.rating&&(W="local_business"===F.category?l.a:s.a),w[21]!==W||w[22]!==R.mapIcon||w[23]!==R.rating||w[24]!==T){let e,t=function(e){let t=e?.trim();if(t&&(b.test(t)||!(Array.from(t).length>8||/^\p{L}$/u.test(t))))return t}("string"==typeof R.mapIcon?R.mapIcon:null);if(t){let n,r=b.test(t)?"text-sm":void 0;w[26]!==t||w[27]!==r?(n=(0,a.jsx)("span",{className:r,children:t}),w[26]=t,w[27]=r,w[28]=n):n=w[28],e=n}else if(null!=T){let t;w[29]!==T?(t=(0,a.jsx)(d.c,{value:T}),w[29]=T,w[30]=t):t=w[30],e=t}else{let t,n,r;w[31]!==W?(t=(0,a.jsx)(m.a,{asset:W}),w[31]=W,w[32]=t):t=w[32],w[33]!==R.rating?(n=null!=R.rating?(0,a.jsx)(d.c,{value:R.rating,minimumFractionDigits:1,maximumFractionDigits:1}):null,w[33]=R.rating,w[34]=n):n=w[34],w[35]!==t||w[36]!==n?(r=(0,a.jsxs)(a.Fragment,{children:[t,n]}),w[35]=t,w[36]=n,w[37]=r):r=w[37],e=r}p=(0,a.jsx)("span",{className:x.a.pinContent,children:e}),w[21]=W,w[22]=R.mapIcon,w[23]=R.rating,w[24]=T,w[25]=p}else p=w[25];let $=p;if(L&&"marker"===k&&null!=M&&B){let e;w[38]!==M||w[39]!==$||w[40]!==R.name?(e=(0,a.jsx)("button",{type:"button","aria-label":R.name,className:`${x.a.marker} cursor-interaction focus-visible:ring-2 focus-visible:ring-ring`,onClick:M,children:$}),w[38]=M,w[39]=$,w[40]=R.name,w[41]=e):e=w[41],v=e}else if(null!=D&&("marker"!==k||B)){let e,t=z.success?z.data:void 0,n=G<0?j:G,r="marker"===k?$:void 0,l="marker"===k?"map-marker":"map-card";w[45]!==S||w[46]!==K||w[47]!==H||w[48]!==A||w[49]!==M||w[50]!==R.mapCarouselCard||w[51]!==E||w[52]!==F||w[53]!==l||w[54]!==t||w[55]!==n||w[56]!==r||w[57]!==D?(e=(0,a.jsx)(f.a,{businessPreview:t,contentReferenceIndex:n,displayName:r,mapCarouselCard:R.mapCarouselCard,mapContextLabel:S,mapLabel:K,mapNotes:H,mapNotesClassName:A,onOpenEntity:M,previewPortalContainer:E,reference:F,turnContext:D,variant:l}),w[45]=S,w[46]=K,w[47]=H,w[48]=A,w[49]=M,w[50]=R.mapCarouselCard,w[51]=E,w[52]=F,w[53]=l,w[54]=t,w[55]=n,w[56]=r,w[57]=D,w[58]=e):e=w[58],v=e}else{let e,t="marker"===k?$:R.name;w[42]!==R.name||w[43]!==t?(e=(0,a.jsx)("div",{className:x.a.marker,"aria-label":R.name,role:"img",children:t}),w[42]=R.name,w[43]=t,w[44]=e):e=w[44],v=e}let Y="marker"===k?R.longitude:void 0,V="marker"===k?R.latitude:void 0;return w[59]!==R.name||w[60]!==k?(_="marker"===k?(0,a.jsx)("span",{className:x.a.label,"data-map-label-blocker":"","aria-hidden":!0,children:R.name}):null,w[59]=R.name,w[60]=k,w[61]=_):_=w[61],w[62]!==C||w[63]!==O||w[64]!==v||w[65]!==Y||w[66]!==V||w[67]!==_?(I=(0,a.jsxs)("div",{className:x.a.business,"data-provisional":C,"data-selected":O,"data-map-marker-longitude":Y,"data-map-marker-latitude":V,children:[v,_]}),w[62]=C,w[63]=O,w[64]=v,w[65]=Y,w[66]=V,w[67]=_,w[68]=I):I=w[68],I}})}),xhWJ:(function(e,t,n){var a=n("EA6X"),r=n("D015"),l=n("rKAs"),s=n("AuIy"),i=n("Wc42"),o=n("dQRk"),u=n("xof2"),c=n("RgGw"),d=n("DUJs");n.d(t,{},{a:function(e){return(0,i.a)(e.entity_lookup_id)??(0,i.a)(e.extra_params?.entity_lookup_id)??(0,i.a)(e.id)??void 0},b:function(e,t,n,m,p){let{turnContext:f}=t,g=(0,i.a)(n.id)??void 0,h=t.reference;if(null!=g){let e=e=>[...(0,l.v)(e,(0,d.a)(e,f)),...(0,c.a)(e)].some(e=>e.id===g);h=(null!=h&&e(h)?h:void 0)??f.contentReferences.find(e)??f.contentReferences.find(e=>"entity"===e.type&&(0,s.s)(e.entity_data)?.id===g)??t.reference}let x=null==h?-1:f.contentReferences.indexOf(h),b=f.contentReferenceMessageIds?.[x]??(h===t.reference?t.mapMessageId:void 0)??f.messageId,y=null==b?void 0:e.get(o.N,f.conversationId)?.[b]?.message?.metadata;(0,u.b)(e,{actionType:"CHATGPT_ENGAGEMENT_ACTION_TYPE_CLICKED",entityAffordance:"marker"===m?a.d.CHATGPT_ENTITY_AFFORDANCE_MAP_MARKER:a.d.CHATGPT_ENTITY_AFFORDANCE_MAP_LIST,entityId:g,entityCategory:(0,i.a)(n.category)??"local_business",conversationId:f.browserConversationId??f.conversationId,messageId:b,assistantMessageId:f.messageId??b,contentReferenceStartIndex:"number"==typeof h?.start_idx?(0,r.a)(h.start_idx):void 0,contentReferenceType:h?.type==="client_defined_widget"?"map":(0,i.a)(h?.type)??void 0,surfaceLocation:p,isGenui:h?.type==="client_defined_widget"&&"map"===h.category||(0,s.s)((0,s.s)(y?.model_dil)?.dil)?.type!=null||y?.model_dil_v2!=null||y?.genui_refresh!=null})}})}),RgGw:(function(e,t,n){var a=n("rKAs"),r=n("sqog");function l(e){return"string"==typeof e.id?e.id:e.name}function s(e){return"string"==typeof e.mapEntityId?e.mapEntityId:l(e)}function i(e,t){if(null==e||0===e.legs.length)return t;let n=[];return e.legs.forEach((e,a)=>{let r=e.from_point_id??t[a],l=e.to_point_id??t[a+1],s=n.at(-1);null!=r&&(null==s||u(s)!==u(r))&&n.push(r),null!=l&&n.push(l)}),n}function o(e){let t=u(e),n=/^point-(\d+)$/.exec(t);return null==n?[e]:[t,`genui-map-point-${n[1]}`]}function u(e){return e.replace(/^genui-map-point-(\d+)$/,"point-$1")}n.d(t,{},{a:function(e){if("client_defined_widget"===e.type)return[];let t=e.raw_search_entities;if(!Array.isArray(t)||0===t.length)return[];let n=new Set((0,a.v)(e).map(l));return(0,a.v)({...e,entities:t}).filter(e=>{let t=l(e);return!n.has(t)&&(n.add(t),!0)})},b:l,c:function(e,t){if(null==t)return null;let n=e.find(e=>s(e)===s(t))??e.find(e=>l(e)===l(t));return null==n?null:s(n)},d:s,e:function(e,t){var n,a;let r,u,c,d,m=new Set,p=e.filter(e=>{let n=null==t?l(e):s(e);return!m.has(n)&&(m.add(n),!0)});if(null==t)return p;let f=(c=(r=i((a=n=t).route,a.pointIds),u=new Set(a.pointIds.keys()),r.flatMap(e=>{let t=o(e),n=a.pointIds.findIndex((e,n)=>u.has(n)&&o(e).some(e=>t.includes(e)));return -1===n?[]:(u.delete(n),[n])})),d=new Set(n.pointIds.keys()),c.forEach(e=>d.delete(e)),[...c,...d].map(e=>({pointId:n.pointIds[e],visitIndex:e})));if(0===f.length)return p;let g=new Map(p.map(e=>[s(e),e]));return f.flatMap(e=>{let{pointId:n,visitIndex:a}=e,r=o(n).map(e=>g.get(e)).find(e=>null!=e);if(null==r)return[];let l=t.notesByVisitIndex?.get(a);return[null==l?r:{...r,notes:l}]})},f:function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,r.a)(e);if(null==t){let t=r.f.safeParse(e.route),n=t.success?t.data:null;return null==n?[]:[{key:"route",pointIds:(0,a.v)(e).map(s),route:n}]}let n=t.groups?.map((e,n)=>{let a=new Set,l=e.locations.flatMap(e=>e.point_id?[e.point_id]:[]),s=i(e.route,l),o=e.locations.map((e,n)=>{let l=e.point_id?.trim();if(l)return l;let i=t.points.findIndex((t,n)=>t.name===e.name&&!a.has(n)),o=-1===i?t.points.findIndex(t=>t.name===e.name):i;return -1!==o&&a.add(o),(-1===o?void 0:(0,r.d)(t.points[o],o))||s[n]||e.name.trim()}),u=new Map;return e.locations.forEach((e,t)=>{let n=e.notes?.trim();n&&u.set(t,n)}),{key:e.id?.trim()||`group-${n}`,dayNumber:e.day_number,title:e.title,pointIds:o,notesByVisitIndex:u,route:e.route,alternativeRoutes:e.alternative_routes}});return null!=n&&n.length>0&&(n.some(e=>null!=e.route)||null==t.route)?n:null==t.route?[]:[{key:"route",pointIds:t.points.map(r.d),route:t.route,alternativeRoutes:t.alternative_routes}]},g:i,h:function(e,t,n){let a=s(e[t]),r=e.slice(0,t).filter(e=>s(e)===a).length;return n.findIndex(e=>o(e).includes(a)&&0==r--)},i:function(e){let t=new Map,n=1;for(let a of e)if(null!=a.route)for(let e of i(a.route,a.pointIds)){let r=o(e),l=r.map(e=>t.get(e)).find(e=>null!=e)??{number:n,routed:!1};for(let e of(n++,l.routed=l.routed||null!=a.route,r))t.set(e,l)}return new Map([...t].flatMap(e=>{let[t,n]=e;return n.routed?[[t,n.number]]:[]}))}})}),F0zR:(function(e,t,n){n.d(t,{},{a:function(e,t){if(null==t)return null;let n=Math.max(1,Math.round(t/60));if(n<=60)return e.formatNumber(n,{style:"unit",unit:"minute",unitDisplay:"short"});let a=[];for(let[t,r]of[["week",10080],["day",1440],["hour",60],["minute",1]]){let l=Math.floor(n/r);if(0!==l&&(a.push(e.formatNumber(l,{style:"unit",unit:t,unitDisplay:"minute"===t?"short":"long"})),n%=r,2===a.length))break}return e.formatList(a,{type:"unit",style:"short"})}})}),ry7c:(function(e,t,n){n.d(t,{a:()=>s});var a=n("v7qY"),r="transition-DDTh2X";let l=null;function s(e){let{triggerId:t,conversationId:n,reducedMotion:s,update:i,onSuperseded:o}=e;if(l?.transition.skipTransition(),l?.cleanup(),l=null,s||"function"!=typeof document.startViewTransition)return void i();let u=document.getElementById(t)?.closest("[data-immersive-map-inline]")??null,c=[],d=()=>{let e=document.querySelector("[data-immersive-map-fullscreen]"),t=e??u,a=e?.querySelector('[data-map-transition="composer"]')??Array.from(document.querySelectorAll("[data-map-composer-conversation]")).find(e=>e.dataset.mapComposerConversation===n);for(let[e,n]of Object.entries({"immersive-map-canvas":t?.querySelector('[data-map-transition="map"]'),"immersive-map-results":t?.querySelector('[data-map-transition="results"], [role="list"]'),"immersive-map-composer":a?.querySelector("[data-composer-body]"),"immersive-map-composer-input":a?.querySelector('[contenteditable="true"]'),"immersive-map-composer-controls":a?.querySelector("[data-composer-footer-responsive]")}))if(null!=n){let t=n.style.viewTransitionName;n.style.viewTransitionName=e,c.push(()=>{n.style.viewTransitionName=t})}},m=()=>{c.splice(0).forEach(e=>e())},p=()=>{m(),document.documentElement.classList.remove(r)},f=!1,g=!1,h=()=>{f||g||(f=!0,(0,a.flushSync)(i))};document.documentElement.classList.add(r),d();try{let e=document.startViewTransition(()=>{g||(m(),h(),d())}),t={transition:e,cleanup:()=>{g=!0,f||o?.(),p()}};l=t,e.ready.catch(()=>{});let n=()=>{l===t&&(p(),l=null)};e.finished.then(n,n)}catch(e){if(p(),f)throw e;h()}}}),Xj7S:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("Wf1j"),s=n("oyxz"),i=n("Sm6l"),o=n("bqtn"),u=n("HOLv"),c=n("bf6R"),d=n("BAmR");function m(e,t){return e.title?.trim()||(0,a.jsx)(s.a,{id:"chatgpt.maps.route_group.day",defaultMessage:"Day {dayNumber}",description:"Map selector label for one trip day; dayNumber is the supplied day number or its one-based position",values:{dayNumber:e.dayNumber??t+1}})}function p(e){return!!e.title?.trim()}function f(e){return e.dayNumber}function g(e){return null!=e.dayNumber}n.d(t,{},{a:function(e){let t,n,u,d,h,x,b,y,v,_,I,w,j,C,N,S,M,R,k,E,T,A,P,O,L,D=(0,r.c)(67),{groups:B,groupsTitle:G,selectedGroupKey:F,onSelectGroup:z}=e,K=(0,l.a)();D[0]!==B?(t=B.every(g)&&new Set(B.map(f)).size>1,D[0]=B,D[1]=t):t=D[1];let H=t,W=B.every(p);if(B.length<2||!H&&!W)return null;if(D[2]!==B||D[3]!==G||D[4]!==H||D[5]!==K||D[6]!==F){let e,t,r;D[23]!==F?(e=e=>e.key===F,D[23]=F,D[24]=e):e=D[24],b=B.findIndex(e),D[25]!==G||D[26]!==H?(t=G?.trim()||(H?(0,a.jsx)(s.a,{id:"chatgpt.maps.route_group.all_days",defaultMessage:"All days",description:"Map group selector option that shows the routes and places for every trip day"}):(0,a.jsx)(s.a,{id:"chatgpt.maps.route_group.all_groups",defaultMessage:"All groups",description:"Map group selector option that shows places from every named group"})),D[25]=G,D[26]=H,D[27]=t):t=D[27],d=t,h=m,D[28]!==H||D[29]!==K?(r=H?K.formatMessage({id:"chatgpt.maps.route_group.filter_label",defaultMessage:"Trip day",description:"Accessible label for the map dropdown that filters places and routes by trip day"}):K.formatMessage({id:"chatgpt.maps.route_group.generic_filter_label",defaultMessage:"Map group",description:"Accessible label for the map dropdown that filters places and routes by named group"}),D[28]=H,D[29]=K,D[30]=r):r=D[30],x=r,u=o.a,y="start",v="chatgpt",n=i.a,w="max-w-full",j=x,C=!0,N="mapSurface",S="full",M="dialogAction",_="truncate",I=b<0?d:h(B[b],b),D[2]=B,D[3]=G,D[4]=H,D[5]=K,D[6]=F,D[7]=n,D[8]=u,D[9]=d,D[10]=h,D[11]=x,D[12]=b,D[13]=y,D[14]=v,D[15]=_,D[16]=I,D[17]=w,D[18]=j,D[19]=C,D[20]=N,D[21]=S,D[22]=M}else n=D[7],u=D[8],d=D[9],h=D[10],x=D[11],b=D[12],y=D[13],v=D[14],_=D[15],I=D[16],w=D[17],j=D[18],C=D[19],N=D[20],S=D[21],M=D[22];D[31]!==_||D[32]!==I?(R=(0,a.jsx)("span",{className:_,children:I}),D[31]=_,D[32]=I,D[33]=R):R=D[33],D[34]===Symbol.for("react.memo_cache_sentinel")?(k=(0,a.jsx)(c.ac,{}),D[34]=k):k=D[34],D[35]!==n||D[36]!==R||D[37]!==w||D[38]!==j||D[39]!==C||D[40]!==N||D[41]!==S||D[42]!==M?(E=(0,a.jsxs)(n,{className:w,"aria-label":j,allowShrink:C,color:N,radius:S,size:M,children:[R,k]}),D[35]=n,D[36]=R,D[37]=w,D[38]=j,D[39]=C,D[40]=N,D[41]=S,D[42]=M,D[43]=E):E=D[43];let $=b<0?"all":String(b);if(D[44]!==z?(T=()=>z(null),D[44]=z,D[45]=T):T=D[45],D[46]!==d||D[47]!==T?(A=(0,a.jsx)(o.c.RadioItem,{value:"all",variant:"chatgpt",onSelect:T,children:d}),D[46]=d,D[47]=T,D[48]=A):A=D[48],D[49]!==h||D[50]!==B||D[51]!==z){let e;D[53]!==h||D[54]!==z?(e=(e,t)=>(0,a.jsx)(o.c.RadioItem,{value:String(t),variant:"chatgpt",onSelect:()=>z(e.key),children:h(e,t)},e.key),D[53]=h,D[54]=z,D[55]=e):e=D[55],P=B.map(e),D[49]=h,D[50]=B,D[51]=z,D[52]=P}else P=D[52];return D[56]!==x||D[57]!==$||D[58]!==A||D[59]!==P?(O=(0,a.jsxs)(o.c.RadioGroup,{"aria-label":x,value:$,children:[A,P]}),D[56]=x,D[57]=$,D[58]=A,D[59]=P,D[60]=O):O=D[60],D[61]!==u||D[62]!==y||D[63]!==v||D[64]!==E||D[65]!==O?(L=(0,a.jsx)(u,{align:y,surface:v,triggerButton:E,children:O}),D[61]=u,D[62]=y,D[63]=v,D[64]=E,D[65]=O,D[66]=L):L=D[66],L},b:function(e){let t,n,s,o=(0,r.c)(6),{onClick:c}=e,m=(0,l.a)();return o[0]!==m?(t=m.formatMessage({id:"chatgpt.map.resetView",defaultMessage:"Reset view",description:"Button that restores the map to the current results"}),o[0]=m,o[1]=t):t=o[1],o[2]===Symbol.for("react.memo_cache_sentinel")?(n=(0,a.jsx)(u.a,{asset:d.a}),o[2]=n):n=o[2],o[3]!==c||o[4]!==t?(s=(0,a.jsx)(i.a,{"aria-label":t,color:"mapSurface",radius:"full",size:"inputIcon",onClick:c,children:n}),o[3]=c,o[4]=t,o[5]=s):s=o[5],s},c:function(e){let t,n,l=(0,r.c)(3),{route:i}=e,o=i?.duration_seconds;return i?.legs.length!==1||null==o?null:(l[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,a.jsx)(c.qc,{}),l[0]=t):t=l[0],l[1]!==o?(n=(0,a.jsxs)("div",{className:"flex items-center gap-1.5 rounded-full border border-default bg-surface px-3 py-1.5 text-sm font-medium select-none",children:[t,o<3600?(0,a.jsx)(s.a,{id:"chatgpt.maps.route.duration_minutes",defaultMessage:"{minutes, plural, one {# min} other {# mins}}",description:"Compact route travel time under one hour shown on the map; minutes is the rounded duration, with a minimum of one",values:{minutes:Math.max(1,Math.round(o/60))}}):(0,a.jsx)(s.a,{id:"chatgpt.maps.route.duration_hours",defaultMessage:"{hours, plural, one {# hour} other {# hours}}",description:"Compact route travel time shown on the map; hours is the duration rounded to one decimal place",values:{hours:Math.round(o/360)/10}})]}),l[1]=o,l[2]=n):n=l[2],n)}})}),YTiF:(function(e,t,n){var a=n("xCr9"),r=n.n(a),l=n("rKAs"),s=n("AuIy"),i=n("yMDx"),o=n("hx97"),u=n("VYHi");function c(e,t,n){let{fastPathEnabled:a}=arguments.length>3&&void 0!==arguments[3]?arguments[3]:{fastPathEnabled:!1};if(null==t)return e;let r=(0,u.a)(t,{fastPathEnabled:a});return r.preferred.length>0||a&&r.additional.length>0||!n&&!0===t.isComplete&&null!=t.reference?t:e}n.d(t,{},{a:function(e,t){let n=[],a=[];function c(){let e=r()(a,e=>"assistant"===e.author.role&&!(0,s.n)(e))??a.at(-1);if(e?.id==null)return;let u=e.id,c=a.flatMap(e=>(0,l.q)(e.metadata).map(t=>({messageId:e.id??u,message:e,reference:t}))),d=r()(c,e=>{let{reference:t}=e;return"map"===t.type||"businesses_map"===t.type||"client_defined_widget"===t.type&&"map"===t.category}),m="assistant"===e.author.role&&"all"===e.recipient&&"text"===e.content.content_type&&"finished_successfully"===e.status;n.push({isComplete:m,mapMessageId:d?.messageId,responseMessageId:a[0]?.id??u,reference:d?.reference??null,turnContext:{...t,isStreaming:!m,dilViewState:(0,i.c)(d?.message.metadata)??(0,i.c)(e.metadata),contentReferences:c.map(e=>{let{reference:t}=e;return t}),contentReferenceMessageIds:c.map(e=>{let{messageId:t}=e;return t}),contentReferenceMessageStatuses:c.map(e=>{let{message:t}=e;return t.status}),messageId:u,turnId:(0,o.f)(e)??void 0}})}for(let t of e)(0,o.m)(t)?(c(),a=[]):("assistant"===t.author.role||"tool"===t.author.role)&&a.push(t);return c(),{history:n.filter(e=>null!=e.reference||(0,u.a)(e,{fastPathEnabled:!1}).preferred.length>0),latest:n.at(-1)}},b:function(e){let{followResponse:t}=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{followResponse:!1};return t?`response:${e.responseMessageId??e.turnContext.messageId}`:[e.mapMessageId??e.turnContext.contentReferenceMessageIds?.[null==e.reference?-1:e.turnContext.contentReferences.indexOf(e.reference)]??e.turnContext.messageId,e.reference?.type,e.reference?.start_idx??e.reference?.previewPlaceKey].join(":")},c:c,d:function(e,t,n,a){if(e.reference?.previewPlaceKey!=null)return e;let r=e.mapMessageId??e.turnContext.messageId;if(null!=r&&n?.reference!=null&&n.turnContext.contentReferenceMessageIds?.includes(r)&&a.some(e=>e.id===r&&"tool"===e.author.role)&&a.some(e=>e.id===n.mapMessageId&&"assistant"===e.author.role)&&c(e,n,n.turnContext.isStreaming)===n)return n;if(null==e.reference)return t.find(t=>t.turnContext.messageId===e.turnContext.messageId)??e;for(let n of t){let t=n.turnContext.contentReferences.findIndex((t,a)=>n.turnContext.contentReferenceMessageIds?.[a]===(e.mapMessageId??e.turnContext.messageId)&&t.type===e.reference?.type&&t.start_idx===e.reference?.start_idx);if(t>=0)return{...n,mapMessageId:n.turnContext.contentReferenceMessageIds?.[t],reference:n.turnContext.contentReferences[t]??null}}return e}})}),VYHi:(function(e,t,n){var a=n("i5ac"),r=n.n(a),l=n("rKAs"),s=n("TJEh"),i=n("RgGw"),o=n("DUJs");function u(e){return"string"==typeof e.notes&&e.notes.trim().length>0}n.d(t,{},{a:function(e,t){let{fastPathEnabled:n}=t,{reference:a,turnContext:c}=e,d=null==a?[]:(0,l.v)(a,(0,o.a)(a,c)),m=null==a?[]:(0,i.a)(a),p=new Map;if(null!=a)for(let e of(0,i.f)(a,(0,o.a)(a,c)))for(let t of(0,i.e)(d,e)){let e=(0,i.d)(t),n=t.notes;"string"==typeof n&&n.trim()&&!p.has(e)&&p.set(e,n)}let f=[];if(n)for(let e of c.contentReferences){let t=e===a?m:(0,i.a)(e);if(t.length>0){f=t;break}}let g=c.contentReferences.flatMap((e,t)=>{let n=c.contentReferenceMessageIds?.[t];if("entity"!==e.type||null!=n&&n!==c.messageId||"string"!=typeof e.category||!(0,s.i)(e.category))return[];let a=s.b.safeParse(e.entity_data);return a.success?(0,l.v)({type:"map",entities:[{entity:a.data,category:e.category,extra_params:e.extra_params,notes:e.notes}]}):[]}),h=new Map([...f,...m,...r()(d,i.b)].map(e=>[(0,i.b)(e),e])),x=new Set(d.map(i.b)),b=new Map(g.map(e=>[(0,i.b)(e),e])),y=r()([...g.filter(e=>!x.has((0,i.b)(e))),...d],i.d).map(e=>{let t=(0,i.b)(e),n=b.get(t)??e,a="string"==typeof e.mapEntityId?e:h.get(t);return null==a||a===n?e:{...a,...n,latitude:n.latitude??a.latitude,longitude:n.longitude??a.longitude,mapEntityId:a.mapEntityId??n.mapEntityId,mapIcon:a.mapIcon??n.mapIcon,mapLabel:a.mapLabel??n.mapLabel,mapCarouselCard:a.mapCarouselCard??n.mapCarouselCard,notes:u(a)?a.notes:n.notes,extra_params:null==n.extra_params?a.extra_params:{...a.extra_params,...n.extra_params}}}),v=new Set(y.map(i.b)),_=r()([...m,...f],i.b).filter(e=>!v.has((0,i.b)(e)));return{preferred:y.map(e=>{let t=p.get((0,i.d)(e));return u(e)||null==t?e:{...e,notes:t}}).sort((e,t)=>Number(u(t))-Number(u(e))),additional:_.sort((e,t)=>Number(u(t))-Number(u(e)))}}})}),DUJs:(function(e,t,n){var a=n("sqog");n.d(t,{},{a:function(e,t){let n=arguments.length>2&&void 0!==arguments[2]?arguments[2]:t?.contentReferences.indexOf(e)??-1,r=t?.contentReferenceMessageIds?.[n]??t?.messageId,l=t?.contentReferenceMessageStatuses?.[n],s=t?.contentReferenceMessageIds==null?n:t.contentReferenceMessageIds.slice(0,n).filter(e=>e===r).length;return(0,a.a)(e,null==r||n<0||null==t?void 0:{messageId:r,referenceIndex:s,widgets:t.dilViewState?.widgets,preferResolvedData:null==l?!t.isStreaming:"finished_successfully"===l})}})}),YAi8:(function(e,t,n){n.d(t,{a:()=>eo});var a=n("ABep"),r=n("QosV"),l=n("EA6X"),s=n("t4av"),i=n("slpy"),o=n("BOYb"),u=n("on57"),c=n("i5ac"),d=n.n(c),m=n("BolX"),p=n("rKAs"),f=n("sqog"),g=n("Wc42"),h=n("zd8w"),x=n("Wf1j"),b=n("oyxz"),y=n("PxnS"),v=n("Sm6l"),_=n("JNtf"),I=n("HOLv"),w=n("bf6R"),j=n("Bbed"),C=n("ibLK"),N=n("zSQm"),S=n("yGJW"),M=n("tSEg"),R=n("eGPX"),k=n("hZax"),E=n("KDax"),T=n("j8Yf"),A=n("dQRk"),P=n("TUMj"),O=n("Nhwt"),L=n("TJEh"),D=n("jFKl"),B=n("zPtR"),G=n("AuIy"),F=n("OWtl");let z=(0,m.u)(F.a,()=>new Set);var K=n("xhWJ"),H=n("tBe6"),W=n("D015"),$=n("Cslg"),Y=n("WFY2"),V=n("Kwur"),q=n("xof2");let Q=(0,m.j)(F.a,e=>new Set),U=(0,m.j)(F.a,e=>{let t=new Set,n=0,a=()=>{for(;n<4&&t.size>0;){let e=t.values().next().value;if(null==e)return;t.delete(e),n+=1,e().catch(e=>{Y.a.warning("Failed to record map entity impression",{safe:{},sensitive:{error:e}})}).finally(()=>{n-=1,a()})}};return e=>{t.add(e),a()}});var J=n("RgGw"),X=n("ry7c"),Z=n("Xj7S"),ee=n("YTiF"),et=n("j7sU"),en=n("QPeR"),ea=n("DUJs"),er=n("FCsE"),el=n("O35A"),es=n("wmA0");let ei=(0,j.a)(async()=>(await Promise.all([n.e(418851),n.e(109308),n.e(399565),n.e(257798),n.e(447351),n.e(617936),n.e(807489),n.e(337882),n.e(955979),n.e(646436),n.e(7078),n.e(200429),n.e(698524),n.e(956483),n.e(87162),n.e(396705),n.e(155568),n.e(731863),n.e(767086),n.e(76629),n.e(753405),n.e(321957),n.e(585419),n.e(877700),n.e(843292),n.e(353230),n.e(81461),n.e(882456),n.e(145049),n.e(744644),n.e(962984),n.e(499790),n.e(301030),n.e(909395),n.e(212487),n.e(17983),n.e(167649),n.e(509282),n.e(523433),n.e(403815),n.e(471657),n.e(37774),n.e(232884)]).then(n.bind(n,"s2JQ"))).ChatGptMapboxCanvas,{propagateLoadError:!0});function eo(e){var t;let n=(0,r.c)(21),{contentReferenceIndex:l,enableFullscreen:s,fullscreenMode:i,showEmptyMap:o,ignoreCoordinateOutliers:u,fallbackCenter:c,isStreaming:d,onOpenStandalonePlace:m,reference:p,events:f}=e,g=void 0===s||s,h=void 0===i?"conversation":i,x=void 0!==o&&o,b=void 0!==u&&u;switch("string"==typeof(t=p).type&&t.type.length>0?t.type:null){case"map":case"businesses_map":{let e;return n[0]!==l||n[1]!==g||n[2]!==f||n[3]!==c||n[4]!==h||n[5]!==b||n[6]!==m||n[7]!==p||n[8]!==x?(e=(0,a.jsx)(eu,{contentReferenceIndex:l,enableFullscreen:g,fullscreenMode:h,showEmptyMap:x,ignoreCoordinateOutliers:b,fallbackCenter:c,onOpenStandalonePlace:m,reference:p,events:f}),n[0]=l,n[1]=g,n[2]=f,n[3]=c,n[4]=h,n[5]=b,n[6]=m,n[7]=p,n[8]=x,n[9]=e):e=n[9],e}case"client_defined_widget":{let e;return n[10]!==l||n[11]!==g||n[12]!==f||n[13]!==c||n[14]!==h||n[15]!==b||n[16]!==d||n[17]!==m||n[18]!==p||n[19]!==x?(e="map"===p.category?(0,a.jsx)(eu,{contentReferenceIndex:l,enableFullscreen:g,fullscreenMode:h,showEmptyMap:x,ignoreCoordinateOutliers:b,fallbackCenter:c,isStreaming:d,onOpenStandalonePlace:m,reference:p,events:f}):null,n[10]=l,n[11]=g,n[12]=f,n[13]=c,n[14]=h,n[15]=b,n[16]=d,n[17]=m,n[18]=p,n[19]=x,n[20]=e):e=n[20],e}default:return null}}function eu(e){var t,n;let c,j,F,Y,eo,eu,ep,ef,eg,eh,ey,ev,e_,eI,ew,ej,eC,eN,eS,eM,eR,ek,eE,eT,eA,eP,eO,eL,eD,eB,eG,eF,ez,eK,eH,eW,e$,eY,eV,eq,eQ,eU,eJ,eX,eZ,e1,e0,e2,e3,e5,e4=(0,r.c)(194),{contentReferenceIndex:e6,enableFullscreen:e7,fullscreenMode:e8,showEmptyMap:e9,ignoreCoordinateOutliers:te,fallbackCenter:tt,isStreaming:tn,onOpenStandalonePlace:ta,reference:tr,events:tl}=e,ts=(0,m.y)(M.a),ti=(0,h.useRef)(null),to=(0,x.a)(),tu=(0,C.a)("(pointer: coarse)")&&(0,o.d)();e4[0]!==to?(c=to.formatMessage({id:"chatgpt.contentReferences.map.expand",defaultMessage:"Expand map",description:"Button that opens the places map fullscreen"}),e4[0]=to,e4[1]=c):c=e4[1];let tc=c,td=(0,P.d)(),tm="dialog"===e8&&null==td,tp=tm&&null!=ta,tf=(0,h.useRef)(null),[tg,th]=(0,h.useState)(!1),tx=td?.messageId,tb=td?.contentReferenceMessageIds?.[e6];e4[2]!==tx||e4[3]!==tb?(j={widgetType:"businesses_map",turnMessageId:tx,sourceMessageId:tb},e4[2]=tx,e4[3]=tb,e4[4]=j):j=e4[4];let ty=(0,m.x)(y.c,j),tv=tg?ty:void 0,t_=(0,k.f)("3194776735"),tI=(0,m.z)(en.a),tw=(0,h.useId)(),tj=(0,h.useId)(),[tC,tN]=(0,h.useState)(!1),[tS,tM]=(0,h.useState)(!1);e4[5]!==tr||e4[6]!==td?(F=null==td?"":(0,ee.b)({reference:tr,turnContext:td}),e4[5]=tr,e4[6]=td,e4[7]=F):F=e4[7];let tR=F;e4[8]!==tI||e4[9]!==tR?(Y=null!=tI&&(0,ee.b)(tI.source)===tR,e4[8]=tI,e4[9]=tR,e4[10]=Y):Y=e4[10];let tk=Y,tE=(0,m.x)(en.b,tR),[tT,tA]=(0,h.useState)(null),[tP,tO]=(0,h.useState)(!1),[tL,tD]=(0,h.useState)(0),[tB,tG]=(0,h.useState)(null),[tF,tz]=(0,h.useState)(null),[tK,tH]=(0,h.useState)(null),[tW,t$]=(0,h.useState)(null),tY=(0,h.useRef)(tE),tV=(0,h.useRef)(null);e4[11]===Symbol.for("react.memo_cache_sentinel")?(eo=()=>()=>tV.current?.abort(),eu=[],e4[11]=eo,e4[12]=eu):(eo=e4[11],eu=e4[12]),(0,h.useEffect)(eo,eu),e4[13]!==tE?(ep=()=>{tY.current=tE},ef=[tE],e4[13]=tE,e4[14]=ep,e4[15]=ef):(ep=e4[14],ef=e4[15]),(0,h.useLayoutEffect)(ep,ef);let tq=async()=>{if(t_&&"dialog"===e8)return void tM(!0);if(!t_||null==td||tk)return;tV.current?.abort();let e=new AbortController;tV.current=e;let t=!0;try{await (0,et.b)()}catch{t=!1}if(e.signal.aborted)return;t$(null);let n=td.contentReferenceMessageIds?.[e6]??td.messageId,a=null!=tZ||1===tX.length;(0,X.a)({triggerId:tw,conversationId:td.conversationId,reducedMotion:!t||ts.get(R.c),onSuperseded:()=>e.abort(),update:()=>{if(e.signal.aborted)return;tV.current=null,ts.set(en.a,{source:{reference:tr,turnContext:td,mapMessageId:n},view:tY.current,triggerId:tw,...null==tK?{}:{selectedPlace:tK},...null==tZ?{}:{selectedGroupKey:tZ.key},...a&&null!=tF?{selectedCardKey:tF}:{}});let t=ts.get(A.j,td.conversationId)??void 0;(0,S.a)(ts,s.p,{conversationId:t,messageId:n,entryPoint:"CHATGPT_PLACES_ENTRY_POINT_MAP_WIDGET"})}})};e4[16]!==e6||e4[17]!==tr||e4[18]!==td?(eg=(0,ea.a)(tr,td,e6),e4[16]=e6,e4[17]=tr,e4[18]=td,e4[19]=eg):eg=e4[19];let tQ=eg;e4[20]!==e6||e4[21]!==tu||e4[22]!==tC||e4[23]!==tr||e4[24]!==ts||e4[25]!==tT||e4[26]!==td||e4[27]!==tQ?(eh=()=>{if(!function(e,t,n,a){let r=(0,P.c)(t,n),l=t?.contentReferenceMessageStatuses?.[n],i=(0,G.s)(t?.contentReferences[n]?.data)?.widget_type;if(null==t||null==r||"map_widget_v2"!==i||null==a||0===a.points.length||(null==l?t.isStreaming:"finished_successfully"!==l)||t.shouldBlockExternalEgress||!1===t.trackShownImpressions||!1===t.isPresented)return;let o=`${r.messageId}:${r.index}`,u=e.get(z);if(u.has(o))return;e.set(z,new Set([...u,o]));let c=a.groups?.length?a.groups.map(e=>e.route):[a.route],d=a.carousel?.known_fields,m=null!=d&&["rating","hours","category","price"].some(e=>!d.some(t=>t===e)),p=a.points.some((e,t)=>{let n=a.carousel?.cards?.[(0,f.d)(e,t)];return null!=n&&Object.values(n).some(e=>null!=e)});(0,S.a)(e,s.a,{messageId:r.messageId,contentReferenceIndex:(0,B.b)(r.index),hasRoute:c.some(e=>null!=e),hasCustomIcons:a.points.some(e=>!!e.icon?.trim()),hasCarouselEdits:m||p,carouselHidden:a.carousel?.visibility==="hidden"})}(ts,td,e6,tQ),tQ?.widget_type==="event_sidebar_map_widget"&&(tu||tQ.points[0]?.address&&!tC))return;let e=(0,J.f)(tr,tQ).find(e=>e.key===tT),t=new Set((0,J.e)((0,p.v)(tr,tQ),e).map(ed));!function(e,t,n,a){let r=(0,P.c)(t,n),s=t?.contentReferences[n];if(null==t||null==r||!r.messageId||r.messageId.startsWith("WEB:")||s?.type!=="client_defined_widget"||"map"!==s.category||null==a||t.shouldBlockExternalEgress||!1===t.trackShownImpressions||!1===t.isPresented)return;let i=e.get(A.j,t.conversationId)??void 0,o=t.messageId??r.messageId,u="number"==typeof s?.start_idx?(0,W.a)(s.start_idx):void 0,c=e.get(Q,JSON.stringify([t.conversationId,r.messageId,r.index])),d=[];for(let e of a.points){let t=(0,g.a)(e.entity?.entity_key)??(0,g.a)(e.extra_params?.entity_key);if(null==e.entity||null==t&&null==(0,g.a)(e.entity.provider)&&null==(0,g.a)(e.extra_params?.business_id))continue;let n=(0,g.a)(e.entity.entity_lookup_id)??(0,g.a)(e.extra_params?.entity_lookup_id)??t??(0,g.a)(e.extra_params?.business_id);null!=n&&(c.has(n)||(c.add(n),d.push({entityId:n,entityKey:t??void 0})))}if(0===d.length)return;let m=(0,q.a)(e,t.conversationId,o),p=e.get($.f),f=e.get($.k),h=e.get(U,void 0);for(let{entityId:n,entityKey:a}of d){let c={conversationId:t.conversationId,messageId:r.messageId,assistantMessageId:o,contentReferenceStartIndex:u,contentReferenceType:"entity",entityId:n,entityCategory:"local_business",actionType:"CHATGPT_ENGAGEMENT_ACTION_TYPE_SHOWN",surfaceLocation:l.b.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE,entityAffordance:l.d.CHATGPT_ENTITY_AFFORDANCE_MAP_MARKER,parentContext:{widgetType:"map",widgetName:(0,g.a)((0,G.s)(s.data)?.widget_type)??void 0},isGenui:!0};(0,q.b)(e,c),e.get(S.c).isChatgptBrowserReplacement&&(0,S.a)(e,H.d,{eventType:"CHATGPT_CONTENT_REFERENCE_EVENT_TYPE_ENTITY_ANCHOR_SHOWN",conversationId:i,messageId:r.messageId,contentReferenceType:"entity",category:"local_business",businessId:n,widgetName:c.parentContext.widgetName}),h(async()=>{p===e.get($.f)&&f===e.get($.k)&&await V.Request.safePost("/unified_user_signals",{requestBody:{signal_type:"entity_shown",product_surface:"CHAT",signal_metadata:{},user_metadata:{},signal_detail:{common_metadata:{conversation_id:i,message_id:r.messageId},entity_shown:{entity_id:n,entity_key:a,entity_category:c.entityCategory,entity_affordance:c.entityAffordance,surface_location:c.surfaceLocation,content_reference_type:c.contentReferenceType,content_reference_index:r.index,content_reference_start_index:u,assistant_message_id:o,turn_ordinal:m}}}})})}}(ts,td,e6,null==tQ?null:{...tQ,points:tQ.points.filter((e,n)=>t.has((0,f.d)(e,n)))})},ey=[ts,td,e6,tQ,tr,tT,tu,tC],e4[20]=e6,e4[21]=tu,e4[22]=tC,e4[23]=tr,e4[24]=ts,e4[25]=tT,e4[26]=td,e4[27]=tQ,e4[28]=eh,e4[29]=ey):(eh=e4[28],ey=e4[29]),(0,h.useEffect)(eh,ey);let tU=tS||tQ?.fill;if(tu&&tQ?.widget_type==="event_sidebar_map_widget")return null;let tJ=tQ?.widget_type==="event_sidebar_map_widget"?tQ.points[0]:void 0,tX=(0,J.f)(tr,tQ);e4[30]!==tT?(ev=e=>e.key===tT,e4[30]=tT,e4[31]=ev):ev=e4[31];let tZ=tX.find(ev),t1=null==tZ?tX:[tZ],t0=(0,p.v)(tr,tQ),t2=(0,J.e)(t0,tZ);e4[32]!==e6||e4[33]!==tr||e4[34]!==td?(e_=null==td||td.isStreaming||td.preciseLocationInfo?.requested!==!0||"below_map"!==td.preciseLocationInfo.footer_location||"map"!==tr.type||(td.contentReferenceMessageIds?.[e6]??td.messageId)!==td.preciseLocationMessageId||td.contentReferences.findIndex((e,t)=>"map"===e.type&&(td.contentReferenceMessageIds?.[t]??td.messageId)===td.preciseLocationMessageId)!==e6?null:(0,a.jsx)(O.a,{conversationId:td.conversationId,isTemporaryChat:td.isTemporaryChat??!1,isReadOnly:!0===td.isReadOnly||!0===td.shouldBlockExternalEgress||!0!==td.isLatestActorMessage,messageId:td.preciseLocationMessageId,preciseLocationInfo:td.preciseLocationInfo,trackImpression:!1!==td.trackShownImpressions&&!1!==td.isPresented},td.preciseLocationMessageId),e4[32]=e6,e4[33]=tr,e4[34]=td,e4[35]=e_):e_=e4[35];let t3=e_;if(!e9&&0===t2.length&&null==tQ){let e,t;return e4[36]!==tr?(e=(0,a.jsx)(T.c,{reference:tr}),e4[36]=tr,e4[37]=e):e=e4[37],e4[38]!==t3||e4[39]!==e?(t=(0,a.jsxs)(a.Fragment,{children:[e,t3]}),e4[38]=t3,e4[39]=e,e4[40]=t):t=e4[40],t}let t5=!(void 0!==tn&&tn)&&tQ?.carousel?.visibility!=="hidden";e4[41]!==tr||e4[42]!==t5||e4[43]!==tQ?.min_height?(eI=(0,f.c)(tr)??Math.max((t=tr,n=t5,ex(t)?300+144*!!n:400),tQ?.min_height??0),e4[41]=tr,e4[42]=t5,e4[43]=tQ?.min_height,e4[44]=eI):eI=e4[44];let t4=eI,t6=d()(t2.filter(eb),J.d);if(!e9&&0===t6.length&&null==tQ||td?.shouldBlockExternalEgress===!0)return(0,a.jsxs)("div",{className:"my-3",children:[(0,a.jsx)(em,{places:t2}),t3]});e4[45]!==tp||e4[46]!==e6||e4[47]!==tS||e4[48]!==ta||e4[49]!==tr||e4[50]!==ts||e4[51]!==td?(ew=(e,t,n)=>{null!=td&&((0,K.b)(ts,{reference:tr,turnContext:td,mapMessageId:td.contentReferenceMessageIds?.[e6]??td.messageId},e,t,l.b.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE),"marker"===t&&(0,S.a)(ts,s.d,{conversationId:ts.get(A.j,td.conversationId)??void 0,messageId:td.contentReferenceMessageIds?.[e6]??td.messageId,entityId:(0,K.a)(e),source:"CHATGPT_PLACES_ENTITY_DETAILS_SOURCE_MARKER"})),tG((0,J.d)(e)),tz(n??null),tH(e),tp&&(tS?(tf.current=e,tM(!1)):ta(e))},e4[45]=tp,e4[46]=e6,e4[47]=tS,e4[48]=ta,e4[49]=tr,e4[50]=ts,e4[51]=td,e4[52]=ew):ew=e4[52];let t7=ew;e4[53]!==tl||e4[54]!==t7?(ej=(e,t)=>{tl?.onCardClick?.(),t7(e,"list",t)},e4[53]=tl,e4[54]=t7,e4[55]=ej):ej=e4[55];let t8=ej,t9=tB??(tJ?.address&&1===t6.length?(0,J.d)(t6[0]):null),ne=td?.conversationId,nt=null==tZ?(0,J.c)(t6,t0.find(e=>(0,J.d)(e)===tW)):tW,nn=e9?tt:void 0,na=e9&&0===t6.length?null==tt?1:10:void 0,nr=td?.contentReferenceMessageIds?.[e6]??td?.messageId;e4[56]!==tl?(eC=e=>{th(e),e&&tl?.onReady?.()},e4[56]=tl,e4[57]=eC):eC=e4[57];let nl=()=>{tl?.onMapClick?.(),e7&&tq()};e4[58]!==tl||e4[59]!==t7?(eN=e=>{tl?.onPinClick?.(),t7(e,"marker")},e4[58]=tl,e4[59]=t7,e4[60]=eN):eN=e4[60];let ns=null==tZ?(0,J.c)(t6,t0.find(e=>(0,J.d)(e)===t9)):t9;e4[61]!==t5?(eS=t5?void 0:{bottom:20},e4[61]=t5,e4[62]=eS):eS=e4[62],e4[63]!==ei||e4[64]!==tp||e4[65]!==e6||e4[66]!==t1||e4[67]!==te||e4[68]!==tS||e4[69]!==t6||e4[70]!==tL||e4[71]!==ne||e4[72]!==nt||e4[73]!==nn||e4[74]!==na||e4[75]!==nr||e4[76]!==eC||e4[77]!==nl||e4[78]!==eN||e4[79]!==ns||e4[80]!==eS?(eM=(0,a.jsx)(ei,{contentReferenceIndex:e6,conversationId:ne,hoveredBusinessKey:nt,isFullscreen:tS,ignoreCoordinateOutliers:te,fallbackCenter:nn,initialZoom:na,messageId:nr,onReadyChange:eC,onUserMovementChange:tO,onExpand:nl,onOpenEntity:eN,places:t6,resetViewKey:tL,routeGroups:t1,selectedBusinessKey:ns,standalone:tp,viewRef:tY,viewportPadding:eS}),e4[63]=ei,e4[64]=tp,e4[65]=e6,e4[66]=t1,e4[67]=te,e4[68]=tS,e4[69]=t6,e4[70]=tL,e4[71]=ne,e4[72]=nt,e4[73]=nn,e4[74]=na,e4[75]=nr,e4[76]=eC,e4[77]=nl,e4[78]=eN,e4[79]=ns,e4[80]=eS,e4[81]=eM):eM=e4[81];let ni=eM,no=tU&&"flex h-full min-h-0 flex-col";e4[82]!==no?(eR=(0,u.b)(el.a.widget,"not-prose w-full",no),e4[82]=no,e4[83]=eR):eR=e4[83],e4[84]!==ts||e4[85]!==tv?(ek=e=>(0,y.a)(ts,tv,e,ti),e4[84]=ts,e4[85]=tv,e4[86]=ek):ek=e4[86],e4[87]!==tU||e4[88]!==tr?(eE=(0,u.b)(ex(tr)&&"pb-2",tU&&"min-h-0 flex-1"),e4[87]=tU,e4[88]=tr,e4[89]=eE):eE=e4[89];let nu=tU&&"h-full";e4[90]!==nu?(eT=(0,u.b)("relative isolate overflow-hidden motion-safe:transition-[max-height,opacity] motion-safe:duration-relaxed motion-safe:ease-out",el.a.frame,nu),e4[90]=nu,e4[91]=eT):eT=e4[91],e4[92]!==tU||e4[93]!==t4?(eA=tU?void 0:{maxHeight:t4},e4[92]=tU,e4[93]=t4,e4[94]=eA):eA=e4[94];let nc=tU&&"h-full";e4[95]!==nc?(eP=(0,u.b)(el.a.frame,"bg-surface-secondary",nc),e4[95]=nc,e4[96]=eP):eP=e4[96],e4[97]!==tU||e4[98]!==t4?(eO=tU?void 0:{height:t4},e4[97]=tU,e4[98]=t4,e4[99]=eO):eO=e4[99],e4[100]===Symbol.for("react.memo_cache_sentinel")?(eL=(0,u.b)(el.a.frame,el.a.viewport,"relative isolate h-full overflow-hidden"),e4[100]=eL):eL=e4[100];let nd=tk?null:ni;e4[101]!==t1||e4[102]!==tk||e4[103]!==tX||e4[104]!==ts||e4[105]!==tZ||e4[106]!==ty||e4[107]!==tP||e4[108]!==tQ?.groups_title?(eD=!tk&&(0,a.jsxs)("div",{className:"absolute start-3 top-3 z-20 flex items-center gap-2",children:[(0,a.jsx)(Z.a,{groups:tX,groupsTitle:tQ?.groups_title,selectedGroupKey:tZ?.key??null,onSelectGroup:e=>{tA(e),tO(!1),tG(null),tz(null),tH(null),t$(null)}}),1===t1.length&&(0,a.jsx)(Z.c,{route:t1[0].route}),tP&&(0,a.jsx)(Z.b,{onClick:()=>{tG(null),t$(null),tO(!1),(0,y.b)(ts,ty,"reset_view"),tD(ec)}})]}),e4[101]=t1,e4[102]=tk,e4[103]=tX,e4[104]=ts,e4[105]=tZ,e4[106]=ty,e4[107]=tP,e4[108]=tQ?.groups_title,e4[109]=eD):eD=e4[109],e4[110]===Symbol.for("react.memo_cache_sentinel")?(eB=(0,a.jsx)("div",{className:(0,u.b)(el.a.frame,"pointer-events-none absolute inset-0 z-2 ring-1 ring-border/50 ring-inset")}),e4[110]=eB):eB=e4[110],e4[111]!==tp||e4[112]!==e6||e4[113]!==t1||e4[114]!==tl?.onCardsShown||e4[115]!==t8||e4[116]!==tS||e4[117]!==tk||e4[118]!==t2||e4[119]!==tB||e4[120]!==tF||e4[121]!==t5||e4[122]!==tm?(eG=!tk&&(0,a.jsxs)("div",{className:"pointer-events-none absolute inset-x-0 bottom-0 z-20 flex flex-col",children:[(0,a.jsx)(D.a,{isFullscreen:!1,openTarget:tS?"external-browser":void 0}),t5&&(0,a.jsx)(er.a,{contentReferenceIndex:e6,isFullscreen:!1,onHoverBusiness:t$,onPlacesShown:tl?.onCardsShown,onOpenEntity:tm&&!tp?void 0:t8,places:t2,selectedBusinessKey:tB,selectedCardKey:tF,standalone:tm,route:1===t1.length?t1[0].route:null})]}),e4[111]=tp,e4[112]=e6,e4[113]=t1,e4[114]=tl?.onCardsShown,e4[115]=t8,e4[116]=tS,e4[117]=tk,e4[118]=t2,e4[119]=tB,e4[120]=tF,e4[121]=t5,e4[122]=tm,e4[123]=eG):eG=e4[123],e4[124]!==e7||e4[125]!==tc||e4[126]!==tq||e4[127]!==tS||e4[128]!==t_||e4[129]!==tw?(eF=t_&&e7&&!tS&&(0,a.jsx)("div",{className:"absolute end-3 top-3 z-20",children:(0,a.jsx)(i.a,{content:tc,children:(0,a.jsx)(v.a,{id:tw,"aria-label":tc,color:"mapSurface",radius:"full",size:"inputIcon",onClick:()=>void tq(),children:(0,a.jsx)(w.N,{})})})}),e4[124]=e7,e4[125]=tc,e4[126]=tq,e4[127]=tS,e4[128]=t_,e4[129]=tw,e4[130]=eF):eF=e4[130],e4[131]!==nd||e4[132]!==eD||e4[133]!==eG||e4[134]!==eF?(ez=(0,a.jsxs)("div",{className:eL,children:[nd,eD,eB,eG,eF]}),e4[131]=nd,e4[132]=eD,e4[133]=eG,e4[134]=eF,e4[135]=ez):ez=e4[135],e4[136]!==eP||e4[137]!==eO||e4[138]!==ez?(eK=(0,a.jsx)("div",{className:eP,style:eO,children:ez}),e4[136]=eP,e4[137]=eO,e4[138]=ez,e4[139]=eK):eK=e4[139],e4[140]!==eT||e4[141]!==eA||e4[142]!==eK?(eH=(0,a.jsx)("div",{className:eT,style:eA,children:eK}),e4[140]=eT,e4[141]=eA,e4[142]=eK,e4[143]=eH):eH=e4[143],e4[144]!==eE||e4[145]!==eH?(eW=(0,a.jsx)("div",{className:eE,children:eH}),e4[144]=eE,e4[145]=eH,e4[146]=eW):eW=e4[146],e4[147]!==t3||e4[148]!==eR||e4[149]!==ek||e4[150]!==eW||e4[151]!==tw?(e$=(0,a.jsxs)("div",{className:eR,ref:ek,"data-testid":"businesses-map-widget","data-immersive-map-inline":tw,children:[eW,t3]}),e4[147]=t3,e4[148]=eR,e4[149]=ek,e4[150]=eW,e4[151]=tw,e4[152]=e$):e$=e4[152];let nm=e$;if(tS){let e,t,n;return e4[153]!==ta||e4[154]!==tw?(e={"aria-describedby":void 0,onCloseAutoFocus:e=>{let t=tf.current;if(tf.current=null,null!=t&&null!=ta){e.preventDefault(),ta(t);return}let n=document.getElementById(tw);null!=n&&(e.preventDefault(),n.focus({preventScroll:!0}))}},e4[153]=ta,e4[154]=tw,e4[155]=e):e=e4[155],e4[156]===Symbol.for("react.memo_cache_sentinel")?(t=(0,a.jsx)(_.e,{className:"sr-only",children:(0,a.jsx)(b.a,{id:"chatgpt.contentReferences.map.title",defaultMessage:"Map",description:"Title of the fullscreen places map"})}),e4[156]=t):t=e4[156],e4[157]!==nm||e4[158]!==e?(n=(0,a.jsxs)(_.a,{contentClassName:"h-full w-full",contentProps:e,onOpenChange:tM,open:!0,unstyledContent:!0,viewportSized:!0,children:[t,nm]}),e4[157]=nm,e4[158]=e,e4[159]=n):n=e4[159],n}if(!tJ?.address)return nm;e4[160]!==tJ.address||e4[161]!==tJ.name?(eY=[tJ.name,tJ.address].filter(Boolean),e4[160]=tJ.address,e4[161]=tJ.name,e4[162]=eY):eY=e4[162];let np=eY.join(", ");e4[163]!==tJ?(eV=(0,N.a)((0,L.e)(tJ)??"")||null,e4[163]=tJ,e4[164]=eV):eV=e4[164];let nf=eV;e4[165]===Symbol.for("react.memo_cache_sentinel")?(eq=(0,a.jsx)("span",{className:"flex size-6 shrink-0 items-center justify-center",children:(0,a.jsx)(I.a,{asset:es.a})}),e4[165]=eq):eq=e4[165],e4[166]!==nf||e4[167]!==np?(eQ=null==nf?np:(0,a.jsx)(E.a,{className:"cursor-interaction hover:underline",href:nf,initiator:"markdown_link_click",children:np}),e4[166]=nf,e4[167]=np,e4[168]=eQ):eQ=e4[168],e4[169]!==eQ?(eU=(0,a.jsx)("span",{className:"min-w-0 flex-1 text-sm font-medium break-words whitespace-normal select-text",children:eQ}),e4[169]=eQ,e4[170]=eU):eU=e4[170],e4[171]!==to?(eJ=to.formatMessage({id:"chatgpt.eventSidebar.toggleVenueMap",defaultMessage:"Toggle venue map",description:"Button beside an event venue address that shows or hides the venue map."}),e4[171]=to,e4[172]=eJ):eJ=e4[172],e4[173]!==tC?(eX=()=>{tC&&tV.current?.abort(),tN(!tC)},e4[173]=tC,e4[174]=eX):eX=e4[174];let ng=tC&&"rotate-180";e4[175]!==ng?(eZ=(0,u.b)("transition-transform",ng),e4[175]=ng,e4[176]=eZ):eZ=e4[176],e4[177]!==eZ?(e1=(0,a.jsx)(w.$b,{className:eZ}),e4[177]=eZ,e4[178]=e1):e1=e4[178],e4[179]!==tC||e4[180]!==eJ||e4[181]!==eX||e4[182]!==e1||e4[183]!==tj?(e0=(0,a.jsx)(v.a,{"aria-controls":tj,"aria-expanded":tC,"aria-label":eJ,color:"ghostSecondary",size:"icon",className:"shrink-0",onClick:eX,children:e1}),e4[179]=tC,e4[180]=eJ,e4[181]=eX,e4[182]=e1,e4[183]=tj,e4[184]=e0):e0=e4[184],e4[185]!==eU||e4[186]!==e0?(e2=(0,a.jsxs)("div",{className:"flex min-h-11 items-center gap-4 py-2",children:[eq,eU,e0]}),e4[185]=eU,e4[186]=e0,e4[187]=e2):e2=e4[187];let nh=tC&&nm;return e4[188]!==nh||e4[189]!==tj?(e3=(0,a.jsx)("div",{id:tj,children:nh}),e4[188]=nh,e4[189]=tj,e4[190]=e3):e3=e4[190],e4[191]!==e2||e4[192]!==e3?(e5=(0,a.jsxs)("div",{className:"-mt-3 w-full min-w-0 border-t border-default pb-2",children:[e2,e3]}),e4[191]=e2,e4[192]=e3,e4[193]=e5):e5=e4[193],e5}function ec(e){return e+1}function ed(e){return e.mapEntityId}function em(e){let t,n,l,s=(0,r.c)(5),{places:i}=e;return s[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,a.jsx)("div",{className:"font-medium text-default",children:(0,a.jsx)(b.a,{id:"chatgpt.contentReferences.localResults.title",defaultMessage:"Local results",description:"Title for a local business map content reference card"})}),s[0]=t):t=s[0],s[1]!==i?(n=i.slice(0,5).map(ep),s[1]=i,s[2]=n):n=s[2],s[3]!==n?(l=(0,a.jsxs)("div",{className:"rounded-lg border border-subtle bg-surface-secondary/92 px-3 py-2 text-sm text-default","data-testid":"chatgpt-content-reference-card",children:[t,(0,a.jsx)("div",{className:"mt-3 flex flex-col gap-2",children:n})]}),s[3]=n,s[4]=l):l=s[4],l}function ep(e,t){return(0,a.jsx)(ef,{place:e},`${e.name}-${String(t)}`)}function ef(e){var t,n,l,s;let i,o,u,c,d,m,p,f,h,b,y,v,_,I=(0,r.c)(28),{place:w}=e;I[0]!==w?(t=w,u=null==(i=(0,g.a)(t.provider_url)??(0,g.a)(t.website_url))?null:(0,N.a)(i)??null,I[0]=w,I[1]=u):u=I[1];let j=u,C=(0,x.a)();I[2]!==C||I[3]!==w?(n=w,l=C,c=null==n.rating?null:null==n.review_count?l.formatNumber(n.rating,{maximumFractionDigits:1,minimumFractionDigits:1}):`${l.formatNumber(n.rating,{maximumFractionDigits:1,minimumFractionDigits:1})} (${l.formatNumber(n.review_count)})`,I[2]=C,I[3]=w,I[4]=c):c=I[4];let S=c;I[5]!==w.address?(d=(0,g.a)(w.address),I[5]=w.address,I[6]=d):d=I[6],I[7]!==w.price_str?(m=(0,g.a)(w.price_str),I[7]=w.price_str,I[8]=m):m=I[8],I[9]!==S||I[10]!==d||I[11]!==m?(p=[d,S,m].filter(eh),I[9]=S,I[10]=d,I[11]=m,I[12]=p):p=I[12];let M=p;I[13]!==w?(s=w,f=null==(o=s.categories?.map(g.a).filter(e=>null!=e))||0===o.length?null:o.join(", "),I[13]=w,I[14]=f):f=I[14];let R=f;return I[15]!==j||I[16]!==w.name?(h=null==j?w.name:(0,a.jsx)(D.b,{href:j,children:w.name}),I[15]=j,I[16]=w.name,I[17]=h):h=I[17],I[18]!==h?(b=(0,a.jsx)("div",{className:"font-medium text-default",children:h}),I[18]=h,I[19]=b):b=I[19],I[20]!==M?(y=0===M.length?null:(0,a.jsx)("div",{className:"mt-1 flex flex-wrap gap-x-1 text-secondary",children:M.map(eg)}),I[20]=M,I[21]=y):y=I[21],I[22]!==R?(v=null==R?null:(0,a.jsx)("div",{className:"mt-1 text-secondary",children:R}),I[22]=R,I[23]=v):v=I[23],I[24]!==v||I[25]!==b||I[26]!==y?(_=(0,a.jsxs)("div",{className:"rounded-md border border-subtle p-2",children:[b,y,v]}),I[24]=v,I[25]=b,I[26]=y,I[27]=_):_=I[27],_}function eg(e,t){return(0,a.jsxs)("span",{children:[0===t?null:(0,a.jsx)("span",{"aria-hidden":!0,children:"· "}),e]},e)}function eh(e){return null!=e}function ex(e){return"number"==typeof e.start_idx&&e.start_idx<4}function eb(e){return null!=e.latitude&&null!=e.longitude}}),FCsE:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("t4av"),s=n("D015"),i=n("on57"),o=n("suct"),u=n("iodE"),c=n("IPUh"),d=n("BolX"),m=n("zd8w"),p=n("Wf1j"),f=n("oyxz"),g=n("X3K1"),h=n("T1PX"),x=n("yGJW"),b=n("OWtl");n("V8uZ");var y=n("HgLj"),v=n("dQRk"),_=n("TUMj"),I=n("b2ei"),w=n("xhWJ"),j=n("RgGw"),C=n("F0zR"),N=n("phAi"),S=n("PrhM");function M(e,t){return(0,a.jsxs)("div",{className:(0,i.b)(S.a.card,"flex w-4/5 max-w-80 items-center gap-3 p-4 md:w-full md:max-w-none"),"aria-hidden":!0,children:[(0,a.jsx)(g.a,{size:"thumbnail",variant:"chatgpt"}),(0,a.jsx)(g.b,{lines:3,variant:"chatgpt"})]},`loading-${t}`)}function R(e){let t,n,l,s,i,o,d,p,f,g=(0,r.c)(23);g[0]!==e?({onShown:t,place:n,ref:s,...l}=e,g[0]=e,g[1]=t,g[2]=n,g[3]=l,g[4]=s):(t=g[1],n=g[2],l=g[3],s=g[4]);let h=(0,u.a)(),x=(0,m.useRef)(null);g[5]!==t||g[6]!==n?(i=e=>{e.some(k)&&t?.(n)},g[5]=t,g[6]=n,g[7]=i):i=g[7];let b=(0,m.useEffectEvent)(i),v=null!=t;g[8]!==h||g[9]!==b||g[10]!==v?(o=()=>{if(!h||!v||null==x.current)return;let e=new IntersectionObserver(e=>b(e),{threshold:0});return e.observe(x.current),()=>e.disconnect()},g[8]=h,g[9]=b,g[10]=v,g[11]=o):o=g[11],g[12]!==h||g[13]!==n||g[14]!==v?(d=[h,n,v],g[12]=h,g[13]=n,g[14]=v,g[15]=d):d=g[15],(0,m.useEffect)(o,d),g[16]!==s?(p=(0,y.a)(x,s),g[16]=s,g[17]=p):p=g[17];let _=!h,I=!h||void 0;return g[18]!==l||g[19]!==p||g[20]!==_||g[21]!==I?(f=(0,a.jsx)(c.a.div,{...l,ref:p,inert:_,"aria-hidden":I}),g[18]=l,g[19]=p,g[20]=_,g[21]=I,g[22]=f):f=g[22],f}function k(e){return e.isIntersecting}n.d(t,{},{a:function(e){let t,n,u,c,g,y,k,E=(0,r.c)(21),{contentReferenceIndex:T,isFullscreen:A,isLoading:P,onOpenEntity:O,onHoverBusiness:L,places:D,onPlacesShown:B,route:G,selectedBusinessKey:F,selectedCardKey:z,standalone:K}=e,H=void 0!==P&&P,W=void 0!==K&&K,$=(0,d.y)(b.a),Y=(0,p.a)(),V=(0,_.d)(),q=(0,h.a)(),Q=(0,m.useRef)(null),U=(0,j.g)(G,D.map(j.d));E[0]===Symbol.for("react.memo_cache_sentinel")?(t=()=>{Q.current?.scrollIntoView({block:"nearest",inline:"nearest"})},E[0]=t):t=E[0],E[1]!==F||E[2]!==z?(n=[F,z],E[1]=F,E[2]=z,E[3]=n):n=E[3],(0,m.useEffect)(t,n);let J=N.a;E[4]!==Y?(u=Y.formatMessage({id:"chatgpt.contentReferences.map.results",defaultMessage:"Map places",description:"Accessible name of the scrollable business cards displayed on the places map"}),E[4]=Y,E[5]=u):u=E[5];let X=o.a,Z=D.map((e,t)=>{let n=(0,j.d)(e),r=(0,j.h)(D,t,U),o=G?.legs[r-1],u=null==G?n:`${n}:${r}`,c=null!=z?z===u:F===n&&D.findIndex(e=>(0,j.d)(e)===n)===t,d=function(e){let{duration:t,index:n,route:r,total:l}=e;return null==r?null:null!=t?(0,a.jsx)(f.a,{id:"chatgpt.places.route_stops.card.incoming_leg_duration",defaultMessage:"{routeMode, select, walking {Walk} cycling {Bike} transit {Transit} other {Drive}} ~{duration}",description:"Travel mode and approximate time from the preceding stop to this destination card in the map carousel; duration is localized",values:{routeMode:r.route_mode,duration:t}}):0===n?(0,a.jsx)(f.a,{id:"chatgpt.places.route_stops.card.role.start",defaultMessage:"Start here",description:"Role label on the first place in the ordered route"}):n===l-1?(0,a.jsx)(f.a,{id:"chatgpt.places.route_stops.card.role.destination",defaultMessage:"Destination",description:"Role label on the final place in the ordered route"}):(0,a.jsx)(f.a,{id:"chatgpt.places.route_stops.card.role.intermediate",defaultMessage:"Stop {stopNumber}",description:"Role label on an intermediate route stop; stopNumber is its one-based route position",values:{stopNumber:n+1}})}({duration:(0,C.a)(Y,o?.duration_seconds),index:t,route:G,total:D.length});return(0,a.jsx)(R,{ref:c?Q:void 0,className:(0,i.b)(S.a.card,S.a.item,A?"w-4/5 max-w-80 md:w-full md:max-w-none":"w-80 max-w-full"),onMouseEnter:()=>L?.(n),onMouseLeave:()=>L?.(null),onFocus:()=>L?.(n,!1),onBlur:()=>L?.(null,!1),role:"listitem",place:e,onShown:null==B?void 0:e=>B([e]),initial:!q&&!!A&&{opacity:0},animate:{opacity:1},exit:{opacity:0},transition:{duration:.15*!q},children:(0,a.jsx)(I.a,{contentReferenceIndex:T,isSelected:c,mapContextLabel:d,onOpenEntity:null==O?void 0:()=>{if(!A&&null!=V){let n=$.get(v.j,V.conversationId)??void 0;(0,x.a)($,l.b,{conversationId:n,entityId:"string"==typeof e.id?e.id:void 0,entityName:e.name,entityIndex:(0,s.a)(t)}),(0,x.a)($,l.d,{conversationId:n,messageId:V.contentReferenceMessageIds?.[T]??V.messageId,entityId:(0,w.a)(e),source:"CHATGPT_PLACES_ENTITY_DETAILS_SOURCE_BUSINESS_LIST"})}O(e,u)},place:e,presentation:"card",standalone:W})},u)});return E[6]!==X||E[7]!==Z?(c=(0,a.jsx)(X,{initial:!1,children:Z}),E[6]=X,E[7]=Z,E[8]=c):c=E[8],E[9]!==H?(g=H&&(0,a.jsx)("div",{className:"sr-only",role:"status",children:(0,a.jsx)(f.a,{id:"chatgpt.map.loadingPlaces",defaultMessage:"Searching for places…",description:"Screen reader status while a search for businesses in the fullscreen map is still generating results"})}),E[9]=H,E[10]=g):g=E[10],E[11]!==H||E[12]!==D.length?(y=H&&Array.from({length:0===D.length?4:2},M),E[11]=H,E[12]=D.length,E[13]=y):y=E[13],E[14]!==J||E[15]!==A||E[16]!==g||E[17]!==y||E[18]!==u||E[19]!==c?(k=(0,a.jsxs)(J,{as:"div",isFullscreen:A,label:u,children:[c,g,y]}),E[14]=J,E[15]=A,E[16]=g,E[17]=y,E[18]=u,E[19]=c,E[20]=k):k=E[20],k}})}),phAi:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("on57"),s=n("zd8w"),i=n("PrhM");function o(e){return e.preventDefault()}n.d(t,{},{a:function(e){let t,n,u,c,d,m,p,f=(0,r.c)(13),{as:g,ref:h,children:x,isFullscreen:b,label:y}=e,v=(0,s.useRef)(null),_=b&&i.a.fullscreen;return f[0]!==_?(t=(0,l.b)(i.a.results,_,"m-0 min-h-0 list-none"),f[0]=_,f[1]=t):t=f[1],f[2]===Symbol.for("react.memo_cache_sentinel")?(n=e=>{v.current?.didDrag&&(e.preventDefault(),e.stopPropagation(),v.current=null)},f[2]=n):n=f[2],f[3]===Symbol.for("react.memo_cache_sentinel")?(u=e=>{"mouse"===e.pointerType&&0===e.button&&e.currentTarget.scrollWidth>e.currentTarget.clientWidth&&(v.current={pointerId:e.pointerId,startX:e.clientX,scrollLeft:e.currentTarget.scrollLeft,didDrag:!1})},c=e=>{if(1!==e.buttons){v.current=null;return}let t=v.current;if(null==t||t.pointerId!==e.pointerId)return;let n=e.clientX-t.startX;!t.didDrag&&4>Math.abs(n)||(t.didDrag||(t.didDrag=!0,e.currentTarget.setPointerCapture(e.pointerId)),e.preventDefault(),e.currentTarget.scrollLeft=t.scrollLeft-n)},d=e=>{let t=v.current;null!=t&&t.pointerId===e.pointerId&&(t.didDrag&&e.currentTarget.releasePointerCapture(e.pointerId),t.pointerId=null)},m=()=>{v.current=null},f[3]=u,f[4]=c,f[5]=d,f[6]=m):(u=f[3],c=f[4],d=f[5],m=f[6]),f[7]!==g||f[8]!==x||f[9]!==y||f[10]!==h||f[11]!==t?(p=(0,a.jsx)(g,{ref:h,className:t,"aria-label":y,role:"list",onClickCapture:n,onDragStart:o,onPointerDown:u,onPointerMove:c,onPointerUp:d,onPointerCancel:m,children:x}),f[7]=g,f[8]=x,f[9]=y,f[10]=h,f[11]=t,f[12]=p):p=f[12],p}})}),Nhwt:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("r6FN"),s=n("BolX"),i=n("zd8w"),o=n("oyxz"),u=n("bf6R"),c=n("yGJW"),d=n("OWtl"),m=n("udGC"),p=n("QaQr"),f=n("OX9U"),g=n("ITxD"),h=n("SZLI");let x="CHATGPT_PRECISE_LOCATION_ENTRY_POINT_MESSAGE_FOOTER";n.d(t,{},{a:function(e){let t,n,b,y,v,_,I,w=(0,r.c)(23),{conversationId:j,isTemporaryChat:C,isReadOnly:N,messageId:S,preciseLocationInfo:M,trackImpression:R}=e,k=(0,s.y)(d.a),E=(0,s.z)(g.a),T=(0,s.z)(f.a),[A,P]=(0,i.useState)(!1),O=M.location_used?.trim()?M.location_used:null,L=!N&&!0===M.requested&&!0!==M.location_is_precise&&E.enabled&&"granted"!==T;w[0]!==k?(t=()=>{(0,c.a)(k,l.d,{entryPoint:x})},w[0]=k,w[1]=t):t=w[1];let D=(0,i.useEffectEvent)(t);return(w[2]!==D||w[3]!==L||w[4]!==R?(n=()=>{L&&R&&D()},w[2]=D,w[3]=L,w[4]=R,w[5]=n):n=w[5],w[6]!==L||w[7]!==R?(b=[L,R],w[6]=L,w[7]=R,w[8]=b):b=w[8],(0,i.useEffect)(n,b),null!=O||L)?(w[9]===Symbol.for("react.memo_cache_sentinel")?(y=(0,a.jsx)(u.og,{}),w[9]=y):y=w[9],w[10]!==O?(v=null!=O?(0,a.jsx)("span",{className:"min-w-0 truncate",children:O}):null,w[10]=O,w[11]=v):v=w[11],w[12]!==j||w[13]!==C||w[14]!==O||w[15]!==S||w[16]!==A||w[17]!==k||w[18]!==L?(_=L?(0,a.jsxs)(a.Fragment,{children:[null!=O?(0,a.jsx)("span",{"aria-hidden":!0,className:"before:content-['·']"}):null,(0,a.jsx)("button",{className:"shrink-0 cursor-interaction underline underline-offset-2 select-none disabled:cursor-default disabled:opacity-50",disabled:A,type:"button",onClick:()=>{P(!0);let e=k.get(m.f,j)?.banner_info;e?.name==="precise-location-banner"&&(0,m.g)(k,j,e),(0,h.a)(k,x,"CHATGPT_LOCATION_PERMISSION_INTERACTION_STATUS_ROW").then(async e=>{e&&null!=S&&await (0,p.a)(k,{conversationId:j,isTemporaryChat:C,messageId:S,entryPoint:x})}).finally(()=>P(!1))},children:(0,a.jsx)(o.a,{id:"chatgptConversations.preciseLocation.footer.button.enable",defaultMessage:"Use precise location",description:"Link beneath a ChatGPT response requesting permission to share precise location and regenerate the latest response using it"})})]}):null,w[12]=j,w[13]=C,w[14]=O,w[15]=S,w[16]=A,w[17]=k,w[18]=L,w[19]=_):_=w[19],w[20]!==v||w[21]!==_?(I=(0,a.jsxs)("div",{className:"my-2 flex min-w-0 items-center gap-1.5 text-sm text-secondary","data-testid":"conversation-turn-location-footer",children:[y,v,_]}),w[20]=v,w[21]=_,w[22]=I):I=w[22],I):null}})}),JQAz:(function(e,t,n){var a=n("ABep"),r=n("QosV"),l=n("bFOP"),s=n("BOYb"),i=n("on57"),o=n("zd8w"),u=n("Wf1j"),c=n("oyxz"),d=n("NkEl"),m=n("ZtSy"),p=n("KxMp"),f=n("fhpB"),g=n("zSQm"),h=n("WAdu"),x=n("vYmP");function b(e){return[e.label,e.title,e.url,e.snippet]}function y(e){let t,n,l,s,i=(0,r.c)(16),{children:o,className:d,currentIndex:m,setCurrentIndex:p,sourceCount:g}=e,h=(0,u.a)();i[0]!==p||i[1]!==g?(t=e=>{p(t=>(t+e+g)%g)},i[0]=p,i[1]=g,i[2]=t):t=i[2];let x=t;return i[3]!==x||i[4]!==g?(n=e=>{g>1&&("ArrowLeft"===e.key||"ArrowRight"===e.key)&&(e.preventDefault(),x("ArrowLeft"===e.key?-1:1))},i[3]=x,i[4]=g,i[5]=n):n=i[5],i[6]!==m||i[7]!==h||i[8]!==x||i[9]!==g?(l=g>1?(0,a.jsxs)("div",{className:"flex h-9 items-center justify-between gap-1.5",children:[(0,a.jsxs)("div",{className:"mx-1.5 flex gap-1 text-secondary",children:[(0,a.jsx)("button",{type:"button",className:"h-6 w-6 cursor-interaction rounded-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none","aria-label":h.formatMessage({id:"chatgpt.citation.hover.previousSource",defaultMessage:"Previous source",description:"Accessible label for a button that moves to the previous web citation source in a citation hover carousel"}),onClick:()=>x(-1),children:(0,a.jsx)(f.a,{className:"icon-sm m-auto"})}),(0,a.jsx)("button",{type:"button",className:"h-6 w-6 cursor-interaction rounded-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none","aria-label":h.formatMessage({id:"chatgpt.citation.hover.nextSource",defaultMessage:"Next source",description:"Accessible label for a button that moves to the next web citation source in a citation hover carousel"}),onClick:()=>x(1),children:(0,a.jsx)(f.a,{className:"icon-sm m-auto rotate-180"})})]}),(0,a.jsx)("span",{className:"mx-3.5 text-tertiary",children:(0,a.jsx)(c.a,{id:"chatgpt.citation.hover.sourcePosition",defaultMessage:"{currentSourceNumber}/{sourceCount}",description:"Position label for the active source in a web citation hover carousel",values:{currentSourceNumber:m+1,sourceCount:g}})})]}):null,i[6]=m,i[7]=h,i[8]=x,i[9]=g,i[10]=l):l=i[10],i[11]!==o||i[12]!==d||i[13]!==n||i[14]!==l?(s=(0,a.jsxs)("div",{className:d,role:"presentation",onKeyDown:n,tabIndex:-1,children:[l,o]}),i[11]=o,i[12]=d,i[13]=n,i[14]=l,i[15]=s):s=i[15],s}function v(e){var t;let n,l,s,d,f,g,x,b,v,_,I=(0,r.c)(32),{currentSourceIndex:w,onClick:j,setCurrentSourceIndex:C,sources:N}=e,S=(0,u.a)(),M=(0,o.useContext)(h.a),R=N[w]??N[0];if(null==R)return null;I[0]!==S||I[1]!==R.pubDate?(n=null==R.pubDate?null:S.formatDate(1e3*R.pubDate,{year:"numeric",month:"long",day:"numeric"}),I[0]=S,I[1]=R.pubDate,I[2]=n):n=I[2];let k=n,E=N.length;I[3]===Symbol.for("react.memo_cache_sentinel")?(l=(0,i.b)("flex cursor-interaction flex-col gap-2 p-3 no-underline outline-none","text-default focus-visible:ring-2 focus-visible:ring-ring"),I[3]=l):l=I[3];let T=R.href,A="restricted"===M;I[4]!==R?(s=[null!=(t=R).title&&t.title!==t.label?`${t.label}: ${t.title}`:t.label,t.url].join(", "),I[4]=R,I[5]=s):s=I[5];let P="restricted"!==M;return I[6]!==R.href||I[7]!==P?(d=(0,a.jsx)(p.a,{href:R.href,className:"h-4 w-4 shrink-0 text-current",loadRemote:P}),I[6]=R.href,I[7]=P,I[8]=d):d=I[8],I[9]!==R.label?(f=(0,a.jsx)("span",{className:"truncate text-default",children:R.label}),I[9]=R.label,I[10]=f):f=I[10],I[11]!==d||I[12]!==f?(g=(0,a.jsxs)("span",{className:"flex min-w-0 items-center gap-1.5",children:[d,f]}),I[11]=d,I[12]=f,I[13]=g):g=I[13],I[14]!==R.title?(x=(0,a.jsx)("span",{className:"line-clamp-2 text-sm leading-5 font-medium break-words text-default",children:R.title}),I[14]=R.title,I[15]=x):x=I[15],I[16]!==k||I[17]!==R.snippet?(b=null!=k||R.snippet?(0,a.jsx)("span",{className:"line-clamp-2 text-sm leading-5 break-words text-secondary",children:null!=k&&R.snippet?(0,a.jsx)(c.a,{id:"chatgpt.citation.hover.publicationSummary",defaultMessage:"{date} — {snippet}",description:"Publication metadata below the article title in a web citation popup. Date is the formatted publication date; snippet is the source-provided summary. Both values are present, and the combined text is limited to two visible lines.",values:{date:k,snippet:R.snippet}}):k??R.snippet}):null,I[16]=k,I[17]=R.snippet,I[18]=b):b=I[18],I[19]!==j||I[20]!==R.href||I[21]!==g||I[22]!==x||I[23]!==b||I[24]!==A||I[25]!==s?(v=(0,a.jsxs)(m.a,{className:l,href:T,initiator:"markdown_link_click",onClick:j,requiresConfirmation:A,"aria-label":s,children:[g,x,b]}),I[19]=j,I[20]=R.href,I[21]=g,I[22]=x,I[23]=b,I[24]=A,I[25]=s,I[26]=v):v=I[26],I[27]!==w||I[28]!==C||I[29]!==N.length||I[30]!==v?(_=(0,a.jsx)(y,{className:"flex w-full flex-col overflow-hidden text-start text-xs font-normal",currentIndex:w,setCurrentIndex:C,sourceCount:E,children:v}),I[27]=w,I[28]=C,I[29]=N.length,I[30]=v,I[31]=_):_=I[31],_}n.d(t,{},{a:function(e){let t,n,i,c,m,f,y,_,I,w,j,C,N,S,M,R,k,E,T,A,P,O,L,D,B=(0,r.c)(61),{attributes:G,isTerminalInline:F,onClick:z,sources:K}=e,H=(0,u.a)(),W=(0,o.useContext)(h.a),[$,Y]=(0,o.useState)(0),[V,q]=(0,o.useState)(!1);if(B[0]!==G.label||B[1]!==G.supporting_count||B[2]!==G.title||B[3]!==G.url||B[4]!==$||B[5]!==W||B[6]!==H||B[7]!==V||B[8]!==F||B[9]!==z||B[10]!==K){C=Symbol.for("react.early_return_sentinel");e:{var Q;let e,r="string"==typeof G.label&&G.label.trim().length>0?G.label.trim():null,o="string"==typeof G.url&&G.url.trim().length>0?G.url.trim():null,u="string"==typeof G.title&&G.title.trim().length>0?G.title.trim():null,h=function(e){if("string"!=typeof e)return 0;let t=Number(e);return Number.isInteger(t)&&t>0?t:0}(G.supporting_count);if(null==r||null==o){C=null;break e}let v=(0,g.a)(o);if(null==v){C=null;break e}let P=(c=function(e,t){let n=[];for(let t of e){let e=(0,g.a)(t.url);null!=e&&n.push({...t,href:e})}return n.length>0?n:[t]}(null==K||0===K.length?[{kind:"primary",label:r,title:u,url:o}]:K,{kind:"primary",label:r,title:u,url:o,href:v}))[$]??c[0];if(null==P){C=null;break e}let O=V?P:c[0];if(null==O){C=null;break e}let L=h>0?H.formatMessage({id:"chatgpt.citation.aria.additionalSources",defaultMessage:"{supportingCount, plural, one {# additional source} other {# additional sources}}",description:"Accessible label segment that reports how many additional web sources support a citation"},{supportingCount:h}):null;i=function(e){let{label:t,supportingSourcesLabel:n,title:a,url:r}=e,l=[null!=a&&a!==t?`${t}: ${a}`:t,r];return null!=n&&l.push(n),l.join(", ")}({label:O.label,supportingSourcesLabel:L,title:O.title,url:O.url}),B[31]===Symbol.for("react.memo_cache_sentinel")?(e=e=>{q(e),e||Y(0)},B[31]=e):e=B[31];let D=e;n=l.a,I=!0,w=V,j=D,t=x.a,m=l.a.Trigger,N=e=>{if(null!=e)return(0,d.b)(e,{highlight:(0,s.e)()?"block":"auto",text:[...c.flatMap(b),(0,s.e)()?e.textContent:void 0].join(" ")})},S=i,M=O.href,R=(0,a.jsx)(p.a,{href:O.href,className:"size-3 overflow-hidden rounded-full text-current [&>img]:rounded-full",globeSize:12,loadRemote:"restricted"!==W}),k=V,E=F,T=O.label,B[32]===Symbol.for("react.memo_cache_sentinel")?(A=()=>D(!1),B[32]=A):A=B[32],f=z,y="restricted"===W,_=h>0?(Q=h,`+${Q}`):void 0}B[0]=G.label,B[1]=G.supporting_count,B[2]=G.title,B[3]=G.url,B[4]=$,B[5]=W,B[6]=H,B[7]=V,B[8]=F,B[9]=z,B[10]=K,B[11]=t,B[12]=n,B[13]=i,B[14]=c,B[15]=m,B[16]=f,B[17]=y,B[18]=_,B[19]=I,B[20]=w,B[21]=j,B[22]=C,B[23]=N,B[24]=S,B[25]=M,B[26]=R,B[27]=k,B[28]=E,B[29]=T,B[30]=A}else t=B[11],n=B[12],i=B[13],c=B[14],m=B[15],f=B[16],y=B[17],_=B[18],I=B[19],w=B[20],j=B[21],C=B[22],N=B[23],S=B[24],M=B[25],R=B[26],k=B[27],E=B[28],T=B[29],A=B[30];return C!==Symbol.for("react.early_return_sentinel")?C:(B[33]!==t||B[34]!==m||B[35]!==f||B[36]!==y||B[37]!==_||B[38]!==N||B[39]!==S||B[40]!==M||B[41]!==R||B[42]!==k||B[43]!==E||B[44]!==T||B[45]!==A?(P=(0,a.jsx)(t,{ActionWrapper:m,ref:N,ariaLabel:S,href:M,icon:R,isActive:k,isTerminalInline:E,label:T,onActivate:A,onClick:f,requiresConfirmation:y,supportingCountLabel:_,testId:"chatgpt-citation"}),B[33]=t,B[34]=m,B[35]=f,B[36]=y,B[37]=_,B[38]=N,B[39]=S,B[40]=M,B[41]=R,B[42]=k,B[43]=E,B[44]=T,B[45]=A,B[46]=P):P=B[46],B[47]!==$||B[48]!==z||B[49]!==c?(O=(0,a.jsx)(v,{currentSourceIndex:$,onClick:z,setCurrentSourceIndex:Y,sources:c}),B[47]=$,B[48]=z,B[49]=c,B[50]=O):O=B[50],B[51]!==i||B[52]!==O?(L=(0,a.jsx)(l.a.Content,{"aria-label":i,align:"start",alignOffset:0,side:"bottom",sideOffset:6,width:320,minWidth:"auto",children:O}),B[51]=i,B[52]=O,B[53]=L):L=B[53],B[54]!==n||B[55]!==I||B[56]!==w||B[57]!==j||B[58]!==P||B[59]!==L?(D=(0,a.jsxs)(n,{showOnHover:I,open:w,onOpenChange:j,children:[P,L]}),B[54]=n,B[55]=I,B[56]=w,B[57]=j,B[58]=P,B[59]=L,B[60]=D):D=B[60],D)},b:y})})};
+export const __rspack_esm_ids = [587936];
+export const __webpack_modules__ = {
+    O35A: (function(e, t) {
+        t.a = {
+            widget: "widget-excfHd",
+            frame: "frame-jj9wM2",
+            viewport: "viewport-NxODVD",
+            marker: "marker-mNXBu7",
+            business: "business-XlicwG",
+            pinContent: "pinContent-_vtxB4",
+            label: "label-tyCeio",
+            markerContainer: "markerContainer-lVmL5L",
+            attribution: "attribution-fipj_L"
+        }
+    }),
+    PrhM: (function(e, t) {
+        t.a = {
+            results: "results-qLgUrv",
+            card: "card-Zug7_a",
+            fullscreen: "fullscreen-TskD9F",
+            item: "item-gCB5MY"
+        }
+    }),
+    K1wx: (function(e, t, n) {
+        var a = n("Bbed"),
+            r = n("j8Yf");
+        let l = (0, a.a)(async () => (await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(226913), n.e(753405), n.e(321957), n.e(585419), n.e(877700), n.e(843292), n.e(353230), n.e(81461), n.e(882456), n.e(145049), n.e(744644), n.e(896220), n.e(499790), n.e(301030), n.e(909395), n.e(212487), n.e(17983), n.e(167649), n.e(509282), n.e(523433), n.e(403815), n.e(471657), n.e(675518)]).then(n.bind(n, "UT6b"))).ChatGptEntityContentReference, {
+            errorFallback: r.b
+        });
+        n.d(t, {}, {
+            a: l
+        })
+    }),
+    j8Yf: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("rKAs"),
+            s = n("JQAz"),
+            i = n("NddG"),
+            o = n("zSQm"),
+            u = n("KDax");
+
+        function c(e) {
+            let t, n, o, u, c = (0, r.c)(18),
+                {
+                    isTerminalInline: d,
+                    reference: m
+                } = e,
+                f = m.alt;
+            if ("alt_text" === m.type && "latex" === m.render_as && "string" == typeof f && f.trim().length > 0) {
+                let e, t;
+                c[0] !== f ? (e = f.trim(), c[0] = f, c[1] = e) : e = c[1];
+                let n = e;
+                return c[2] !== n ? (t = (0, a.jsx)(i.b, {
+                    token: {
+                        display: !1,
+                        raw: n,
+                        text: n,
+                        type: "math"
+                    }
+                }, "chatgpt-latex-alt-text"), c[2] = n, c[3] = t) : t = c[3], t
+            }
+            c[4] !== m ? (t = (0, l.p)(m), c[4] = m, c[5] = t) : t = c[5];
+            let g = t;
+            c[6] !== m ? (n = (0, l.o)(m), c[6] = m, c[7] = n) : n = c[7];
+            let h = n;
+            if (null == h) {
+                let e;
+                return c[8] !== m ? (e = (0, a.jsx)(p, {
+                    reference: m
+                }), c[8] = m, c[9] = e) : e = c[9], e
+            }
+            if (null == g) {
+                let e;
+                return c[10] !== h ? (e = (0, a.jsx)("span", {
+                    className: "text-secondary",
+                    children: h
+                }), c[10] = h, c[11] = e) : e = c[11], e
+            }
+            return c[12] !== h || c[13] !== g ? (o = {
+                label: h,
+                title: h,
+                url: g
+            }, c[12] = h, c[13] = g, c[14] = o) : o = c[14], c[15] !== d || c[16] !== o ? (u = (0, a.jsx)(s.a, {
+                attributes: o,
+                isTerminalInline: d
+            }), c[15] = d, c[16] = o, c[17] = u) : u = c[17], u
+        }
+
+        function d(e) {
+            let t, n, s, i, u, c, d, p, g, h, x, b, y, v = (0, r.c)(37),
+                {
+                    reference: _
+                } = e;
+            v[0] !== _ ? (t = (0, l.o)(_), v[0] = _, v[1] = t) : t = v[1];
+            let I = t;
+            v[2] !== _ ? (n = (0, l.n)(_), v[2] = _, v[3] = n) : n = v[3];
+            let w = n;
+            v[4] !== _ ? (s = (0, l.j)(_), v[4] = _, v[5] = s) : s = v[5];
+            let j = s;
+            if (v[6] !== j || v[7] !== _ || v[8] !== w || v[9] !== I) {
+                u = Symbol.for("react.early_return_sentinel");
+                e: {
+                    var C;
+                    let e, t = (Array.isArray((C = _).items) ? C.items : []).map(e => {
+                        if (null == e || "object" != typeof e) return null;
+                        let t = "title" in e ? e.title : null,
+                            n = "name" in e ? e.name : null;
+                        return "string" == typeof t && t.trim().length > 0 ? t : "string" == typeof n && n.trim().length > 0 ? n : null
+                    }).filter(e => null != e).slice(0, 4);
+                    if (null == I && null == w && null == j && 0 === t.length) {
+                        u = null;
+                        break e
+                    }
+                    if (v[18] !== _) {
+                        let t = (0, l.p)(_);
+                        e = null == t ? null : (0, o.a)(t), v[18] = _, v[19] = e
+                    } else e = v[19];i = e,
+                    c = "my-3 max-w-[36rem] rounded-lg border border-subtle bg-surface-secondary/92 px-3 py-2 text-sm text-default",
+                    d = "chatgpt-content-reference-card",
+                    v[20] !== I ? (p = null == I ? null : (0, a.jsx)("div", {
+                        className: "font-medium text-default",
+                        children: I
+                    }), v[20] = I, v[21] = p) : p = v[21],
+                    v[22] !== w ? (g = null == w ? null : (0, a.jsx)("div", {
+                        className: "mt-1 line-clamp-2 text-secondary",
+                        children: w
+                    }), v[22] = w, v[23] = g) : g = v[23],
+                    v[24] !== j || v[25] !== I ? (h = null == j || j === I ? null : (0, a.jsx)("div", {
+                        className: "mt-1 line-clamp-2 text-secondary",
+                        children: j
+                    }), v[24] = j, v[25] = I, v[26] = h) : h = v[26],
+                    x = 0 === t.length ? null : (0, a.jsx)("div", {
+                        className: "mt-2 flex flex-col gap-1",
+                        children: t.map(m)
+                    })
+                }
+                v[6] = j, v[7] = _, v[8] = w, v[9] = I, v[10] = i, v[11] = u, v[12] = c, v[13] = d, v[14] = p, v[15] = g, v[16] = h, v[17] = x
+            } else i = v[10], u = v[11], c = v[12], d = v[13], p = v[14], g = v[15], h = v[16], x = v[17];
+            if (u !== Symbol.for("react.early_return_sentinel")) return u;
+            v[27] !== c || v[28] !== d || v[29] !== p || v[30] !== g || v[31] !== h || v[32] !== x ? (b = (0, a.jsxs)("div", {
+                className: c,
+                "data-testid": d,
+                children: [p, g, h, x]
+            }), v[27] = c, v[28] = d, v[29] = p, v[30] = g, v[31] = h, v[32] = x, v[33] = b) : b = v[33];
+            let N = b;
+            return null == i ? N : (v[34] !== N || v[35] !== i ? (y = (0, a.jsx)(f, {
+                href: i,
+                children: N
+            }), v[34] = N, v[35] = i, v[36] = y) : y = v[36], y)
+        }
+
+        function m(e, t) {
+            return (0, a.jsx)("div", {
+                className: "truncate",
+                children: e
+            }, `${e}-${String(t)}`)
+        }
+
+        function p(e) {
+            let t, n, s = (0, r.c)(4),
+                {
+                    reference: i
+                } = e;
+            s[0] !== i ? (t = (0, l.j)(i), s[0] = i, s[1] = t) : t = s[1];
+            let o = t;
+            return s[2] !== o ? (n = null == o ? null : (0, a.jsx)(a.Fragment, {
+                children: o
+            }), s[2] = o, s[3] = n) : n = s[3], n
+        }
+
+        function f(e) {
+            let t, n = (0, r.c)(3),
+                {
+                    children: l,
+                    href: s
+                } = e;
+            return n[0] !== l || n[1] !== s ? (t = (0, a.jsx)(u.a, {
+                className: "block max-w-fit cursor-interaction rounded-lg no-underline outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                href: s,
+                initiator: "markdown_link_click",
+                children: l
+            }), n[0] = l, n[1] = s, n[2] = t) : t = n[2], t
+        }
+        n.d(t, {}, {
+            a: p,
+            b: function(e) {
+                let t = (0, r.c)(7),
+                    {
+                        isTerminalInline: n,
+                        reference: s
+                    } = e;
+                switch ((0, l.i)(s)) {
+                    case "inline": {
+                        let e;
+                        return t[0] !== n || t[1] !== s ? (e = (0, a.jsx)(c, {
+                            isTerminalInline: n,
+                            reference: s
+                        }), t[0] = n, t[1] = s, t[2] = e) : e = t[2], e
+                    }
+                    case "block": {
+                        let e;
+                        return t[3] !== s ? (e = (0, a.jsx)(d, {
+                            reference: s
+                        }), t[3] = s, t[4] = e) : e = t[4], e
+                    }
+                    case "alt": {
+                        let e;
+                        return t[5] !== s ? (e = (0, a.jsx)(p, {
+                            reference: s
+                        }), t[5] = s, t[6] = e) : e = t[6], e
+                    }
+                    case "hidden":
+                        return null
+                }
+            },
+            c: d,
+            d: c
+        })
+    }),
+    jFKl: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("on57"),
+            s = n("zd8w"),
+            i = n("Wf1j"),
+            o = n("oyxz"),
+            u = n("Sm6l"),
+            c = n("HOLv"),
+            d = n("bf6R"),
+            m = n("KDax"),
+            p = n("O35A"),
+            f = n("T5cQ");
+
+        function g(e) {
+            let t, n = (0, r.c)(4),
+                {
+                    children: l,
+                    href: s,
+                    openTarget: i
+                } = e;
+            return n[0] !== l || n[1] !== s || n[2] !== i ? (t = (0, a.jsx)(m.a, {
+                className: "cursor-interaction underline decoration-current underline-offset-2 hover:text-default",
+                href: s,
+                initiator: "markdown_link_click",
+                openTarget: i,
+                children: l
+            }), n[0] = l, n[1] = s, n[2] = i, n[3] = t) : t = n[3], t
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, m, h, x, b, y, v = (0, r.c)(21),
+                    {
+                        isFullscreen: _,
+                        openTarget: I
+                    } = e,
+                    [w, j] = (0, s.useState)(!1),
+                    C = (0, i.a)(),
+                    N = _ ? "absolute start-3 bottom-3" : "me-3 mb-3 self-end";
+                v[0] !== N ? (t = (0, l.b)(p.a.attribution, "pointer-events-auto z-20 flex items-center overflow-hidden rounded-full bg-surface text-[10px] font-light whitespace-nowrap text-default", N), v[0] = N, v[1] = t) : t = v[1], v[2] !== C ? (n = C.formatMessage({
+                    id: "chatgpt.contentReferences.map.attribution.toggle",
+                    defaultMessage: "Map attribution",
+                    description: "Accessible label of the map information button that shows or hides attribution links"
+                }), v[2] = C, v[3] = n) : n = v[3];
+                let S = _ ? "ghostActive" : "mapSurface";
+                return v[4] !== w ? (m = () => j(!w), v[4] = w, v[5] = m) : m = v[5], v[6] !== w ? (h = w ? (0, a.jsx)(d.sj, {}) : (0, a.jsx)(c.a, {
+                    asset: f.a
+                }), v[6] = w, v[7] = h) : h = v[7], v[8] !== w || v[9] !== n || v[10] !== S || v[11] !== m || v[12] !== h ? (x = (0, a.jsx)(u.a, {
+                    "aria-label": n,
+                    "aria-expanded": w,
+                    color: S,
+                    onClick: m,
+                    radius: "full",
+                    size: "iconCircleSm",
+                    children: h
+                }), v[8] = w, v[9] = n, v[10] = S, v[11] = m, v[12] = h, v[13] = x) : x = v[13], v[14] !== w || v[15] !== I ? (b = w ? (0, a.jsxs)("div", {
+                    className: "pe-2",
+                    children: [(0, a.jsx)("span", {
+                        "aria-hidden": !0,
+                        children: "© "
+                    }), (0, a.jsx)(g, {
+                        href: "https://www.mapbox.com/about/maps",
+                        openTarget: I,
+                        children: "Mapbox"
+                    }), (0, a.jsx)("span", {
+                        "aria-hidden": !0,
+                        children: " "
+                    }), (0, a.jsx)(g, {
+                        href: "https://www.mapbox.com/legal/end-user-terms",
+                        openTarget: I,
+                        children: (0, a.jsx)(o.a, {
+                            id: "chatgpt.contentReferences.map.attribution.terms",
+                            defaultMessage: "Terms",
+                            description: "Link to Mapbox's terms of service in map attribution"
+                        })
+                    }), (0, a.jsx)("span", {
+                        "aria-hidden": !0,
+                        children: " © "
+                    }), (0, a.jsx)(g, {
+                        href: "http://www.openstreetmap.org/about",
+                        openTarget: I,
+                        children: "OpenStreetMap"
+                    })]
+                }) : null, v[14] = w, v[15] = I, v[16] = b) : b = v[16], v[17] !== t || v[18] !== x || v[19] !== b ? (y = (0, a.jsxs)("div", {
+                    className: t,
+                    children: [x, b]
+                }), v[17] = t, v[18] = x, v[19] = b, v[20] = y) : y = v[20], y
+            },
+            b: g
+        })
+    }),
+    b2ei: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("DmTj"),
+            s = n("hnKH"),
+            i = n("tszw"),
+            o = n("FER9"),
+            u = n("iodE"),
+            c = n("rKAs"),
+            d = n("Qgfj"),
+            m = n("HOLv"),
+            p = n("Bbed"),
+            f = n("K1wx"),
+            g = n("TUMj"),
+            h = n("TJEh"),
+            x = n("O35A");
+        let b = RegExp(`^(?:${(0,o.a)().source})$`, "u"),
+            y = (0, p.a)(async () => (await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(226913), n.e(210851)]).then(n.bind(n, "ac7f"))).ChatGptLocalBusinessHoverCard, {
+                fallback: e => {
+                    let {
+                        business: t,
+                        mapCarouselCard: n
+                    } = e;
+                    return n?.title?.trim() || t.name
+                }
+            });
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, o, p, v, _, I, w = (0, r.c)(69),
+                    {
+                        contentReferenceIndex: j,
+                        isProvisional: C,
+                        isSelected: N,
+                        mapContextLabel: S,
+                        onOpenEntity: M,
+                        place: R,
+                        presentation: k,
+                        previewPortalContainer: E,
+                        stopNumber: T,
+                        notesClassName: A,
+                        standalone: P
+                    } = e,
+                    O = void 0 !== N && N,
+                    L = void 0 !== P && P,
+                    D = (0, g.d)(),
+                    B = (0, u.a)();
+                w[0] !== R.id || w[1] !== R.name || w[2] !== D?.contentReferences || w[3] !== D?.contentReferences.findIndex ? (t = D?.contentReferences.findIndex(e => {
+                    if ("entity" !== e.type) return !1;
+                    let t = (0, h.d)(e, "string" == typeof e.category ? e.category : (0, c.t)(e)?.category ?? null);
+                    return "string" == typeof R.id ? t?.id === R.id : e.name === R.name
+                }) ?? -1, w[0] = R.id, w[1] = R.name, w[2] = D?.contentReferences, w[3] = D?.contentReferences.findIndex, w[4] = t) : t = w[4];
+                let G = t;
+                w[5] !== j || w[6] !== G || w[7] !== R || w[8] !== D ? (n = D?.contentReferences[G] ?? {
+                    category: R.category ?? "local_business",
+                    entity_data: R,
+                    extra_params: R.extra_params,
+                    name: R.name,
+                    start_idx: D?.contentReferences[j]?.start_idx,
+                    status: "done",
+                    type: "entity"
+                }, w[5] = j, w[6] = G, w[7] = R, w[8] = D, w[9] = n) : n = w[9];
+                let F = n;
+                w[10] !== R ? (o = h.a.safeParse(R), w[10] = R, w[11] = o) : o = w[11];
+                let z = o,
+                    K = "string" == typeof R.mapLabel ? R.mapLabel : void 0,
+                    H = "string" == typeof R.notes ? R.notes : void 0;
+                if (L && "card" === k && z.success) {
+                    let e, t = D?.shouldBlockExternalEgress ?? !1;
+                    return w[12] !== z.data || w[13] !== S || w[14] !== K || w[15] !== H || w[16] !== A || w[17] !== M || w[18] !== R.mapCarouselCard || w[19] !== t ? (e = (0, a.jsx)(y, {
+                        business: z.data,
+                        contextLabel: S,
+                        mapCarouselCard: R.mapCarouselCard,
+                        mapLabel: K,
+                        notes: H,
+                        notesClassName: A,
+                        onOpenEntity: M,
+                        presentation: "map-card",
+                        shouldBlockExternalEgress: t
+                    }), w[12] = z.data, w[13] = S, w[14] = K, w[15] = H, w[16] = A, w[17] = M, w[18] = R.mapCarouselCard, w[19] = t, w[20] = e) : e = w[20], e
+                }
+                let W = i.a;
+                if (null == R.rating && (W = "local_business" === F.category ? l.a : s.a), w[21] !== W || w[22] !== R.mapIcon || w[23] !== R.rating || w[24] !== T) {
+                    let e, t = function(e) {
+                        let t = e?.trim();
+                        if (t && (b.test(t) || !(Array.from(t).length > 8 || /^\p{L}$/u.test(t)))) return t
+                    }("string" == typeof R.mapIcon ? R.mapIcon : null);
+                    if (t) {
+                        let n, r = b.test(t) ? "text-sm" : void 0;
+                        w[26] !== t || w[27] !== r ? (n = (0, a.jsx)("span", {
+                            className: r,
+                            children: t
+                        }), w[26] = t, w[27] = r, w[28] = n) : n = w[28], e = n
+                    } else if (null != T) {
+                        let t;
+                        w[29] !== T ? (t = (0, a.jsx)(d.c, {
+                            value: T
+                        }), w[29] = T, w[30] = t) : t = w[30], e = t
+                    } else {
+                        let t, n, r;
+                        w[31] !== W ? (t = (0, a.jsx)(m.a, {
+                            asset: W
+                        }), w[31] = W, w[32] = t) : t = w[32], w[33] !== R.rating ? (n = null != R.rating ? (0, a.jsx)(d.c, {
+                            value: R.rating,
+                            minimumFractionDigits: 1,
+                            maximumFractionDigits: 1
+                        }) : null, w[33] = R.rating, w[34] = n) : n = w[34], w[35] !== t || w[36] !== n ? (r = (0, a.jsxs)(a.Fragment, {
+                            children: [t, n]
+                        }), w[35] = t, w[36] = n, w[37] = r) : r = w[37], e = r
+                    }
+                    p = (0, a.jsx)("span", {
+                        className: x.a.pinContent,
+                        children: e
+                    }), w[21] = W, w[22] = R.mapIcon, w[23] = R.rating, w[24] = T, w[25] = p
+                } else p = w[25];
+                let $ = p;
+                if (L && "marker" === k && null != M && B) {
+                    let e;
+                    w[38] !== M || w[39] !== $ || w[40] !== R.name ? (e = (0, a.jsx)("button", {
+                        type: "button",
+                        "aria-label": R.name,
+                        className: `${x.a.marker} cursor-interaction focus-visible:ring-2 focus-visible:ring-ring`,
+                        onClick: M,
+                        children: $
+                    }), w[38] = M, w[39] = $, w[40] = R.name, w[41] = e) : e = w[41], v = e
+                } else if (null != D && ("marker" !== k || B)) {
+                    let e, t = z.success ? z.data : void 0,
+                        n = G < 0 ? j : G,
+                        r = "marker" === k ? $ : void 0,
+                        l = "marker" === k ? "map-marker" : "map-card";
+                    w[45] !== S || w[46] !== K || w[47] !== H || w[48] !== A || w[49] !== M || w[50] !== R.mapCarouselCard || w[51] !== E || w[52] !== F || w[53] !== l || w[54] !== t || w[55] !== n || w[56] !== r || w[57] !== D ? (e = (0, a.jsx)(f.a, {
+                        businessPreview: t,
+                        contentReferenceIndex: n,
+                        displayName: r,
+                        mapCarouselCard: R.mapCarouselCard,
+                        mapContextLabel: S,
+                        mapLabel: K,
+                        mapNotes: H,
+                        mapNotesClassName: A,
+                        onOpenEntity: M,
+                        previewPortalContainer: E,
+                        reference: F,
+                        turnContext: D,
+                        variant: l
+                    }), w[45] = S, w[46] = K, w[47] = H, w[48] = A, w[49] = M, w[50] = R.mapCarouselCard, w[51] = E, w[52] = F, w[53] = l, w[54] = t, w[55] = n, w[56] = r, w[57] = D, w[58] = e) : e = w[58], v = e
+                } else {
+                    let e, t = "marker" === k ? $ : R.name;
+                    w[42] !== R.name || w[43] !== t ? (e = (0, a.jsx)("div", {
+                        className: x.a.marker,
+                        "aria-label": R.name,
+                        role: "img",
+                        children: t
+                    }), w[42] = R.name, w[43] = t, w[44] = e) : e = w[44], v = e
+                }
+                let Y = "marker" === k ? R.longitude : void 0,
+                    V = "marker" === k ? R.latitude : void 0;
+                return w[59] !== R.name || w[60] !== k ? (_ = "marker" === k ? (0, a.jsx)("span", {
+                    className: x.a.label,
+                    "data-map-label-blocker": "",
+                    "aria-hidden": !0,
+                    children: R.name
+                }) : null, w[59] = R.name, w[60] = k, w[61] = _) : _ = w[61], w[62] !== C || w[63] !== O || w[64] !== v || w[65] !== Y || w[66] !== V || w[67] !== _ ? (I = (0, a.jsxs)("div", {
+                    className: x.a.business,
+                    "data-provisional": C,
+                    "data-selected": O,
+                    "data-map-marker-longitude": Y,
+                    "data-map-marker-latitude": V,
+                    children: [v, _]
+                }), w[62] = C, w[63] = O, w[64] = v, w[65] = Y, w[66] = V, w[67] = _, w[68] = I) : I = w[68], I
+            }
+        })
+    }),
+    xhWJ: (function(e, t, n) {
+        var a = n("EA6X"),
+            r = n("D015"),
+            l = n("rKAs"),
+            s = n("AuIy"),
+            i = n("Wc42"),
+            o = n("dQRk"),
+            u = n("xof2"),
+            c = n("RgGw"),
+            d = n("DUJs");
+        n.d(t, {}, {
+            a: function(e) {
+                return (0, i.a)(e.entity_lookup_id) ?? (0, i.a)(e.extra_params?.entity_lookup_id) ?? (0, i.a)(e.id) ?? void 0
+            },
+            b: function(e, t, n, m, p) {
+                let {
+                    turnContext: f
+                } = t, g = (0, i.a)(n.id) ?? void 0, h = t.reference;
+                if (null != g) {
+                    let e = e => [...(0, l.v)(e, (0, d.a)(e, f)), ...(0, c.a)(e)].some(e => e.id === g);
+                    h = (null != h && e(h) ? h : void 0) ?? f.contentReferences.find(e) ?? f.contentReferences.find(e => "entity" === e.type && (0, s.s)(e.entity_data)?.id === g) ?? t.reference
+                }
+                let x = null == h ? -1 : f.contentReferences.indexOf(h),
+                    b = f.contentReferenceMessageIds?.[x] ?? (h === t.reference ? t.mapMessageId : void 0) ?? f.messageId,
+                    y = null == b ? void 0 : e.get(o.N, f.conversationId)?.[b]?.message?.metadata;
+                (0, u.b)(e, {
+                    actionType: "CHATGPT_ENGAGEMENT_ACTION_TYPE_CLICKED",
+                    entityAffordance: "marker" === m ? a.d.CHATGPT_ENTITY_AFFORDANCE_MAP_MARKER : a.d.CHATGPT_ENTITY_AFFORDANCE_MAP_LIST,
+                    entityId: g,
+                    entityCategory: (0, i.a)(n.category) ?? "local_business",
+                    conversationId: f.browserConversationId ?? f.conversationId,
+                    messageId: b,
+                    assistantMessageId: f.messageId ?? b,
+                    contentReferenceStartIndex: "number" == typeof h?.start_idx ? (0, r.a)(h.start_idx) : void 0,
+                    contentReferenceType: h?.type === "client_defined_widget" ? "map" : (0, i.a)(h?.type) ?? void 0,
+                    surfaceLocation: p,
+                    isGenui: h?.type === "client_defined_widget" && "map" === h.category || (0, s.s)((0, s.s)(y?.model_dil)?.dil)?.type != null || y?.model_dil_v2 != null || y?.genui_refresh != null
+                })
+            }
+        })
+    }),
+    RgGw: (function(e, t, n) {
+        var a = n("rKAs"),
+            r = n("sqog");
+
+        function l(e) {
+            return "string" == typeof e.id ? e.id : e.name
+        }
+
+        function s(e) {
+            return "string" == typeof e.mapEntityId ? e.mapEntityId : l(e)
+        }
+
+        function i(e, t) {
+            if (null == e || 0 === e.legs.length) return t;
+            let n = [];
+            return e.legs.forEach((e, a) => {
+                let r = e.from_point_id ?? t[a],
+                    l = e.to_point_id ?? t[a + 1],
+                    s = n.at(-1);
+                null != r && (null == s || u(s) !== u(r)) && n.push(r), null != l && n.push(l)
+            }), n
+        }
+
+        function o(e) {
+            let t = u(e),
+                n = /^point-(\d+)$/.exec(t);
+            return null == n ? [e] : [t, `genui-map-point-${n[1]}`]
+        }
+
+        function u(e) {
+            return e.replace(/^genui-map-point-(\d+)$/, "point-$1")
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                if ("client_defined_widget" === e.type) return [];
+                let t = e.raw_search_entities;
+                if (!Array.isArray(t) || 0 === t.length) return [];
+                let n = new Set((0, a.v)(e).map(l));
+                return (0, a.v)({
+                    ...e,
+                    entities: t
+                }).filter(e => {
+                    let t = l(e);
+                    return !n.has(t) && (n.add(t), !0)
+                })
+            },
+            b: l,
+            c: function(e, t) {
+                if (null == t) return null;
+                let n = e.find(e => s(e) === s(t)) ?? e.find(e => l(e) === l(t));
+                return null == n ? null : s(n)
+            },
+            d: s,
+            e: function(e, t) {
+                var n, a;
+                let r, u, c, d, m = new Set,
+                    p = e.filter(e => {
+                        let n = null == t ? l(e) : s(e);
+                        return !m.has(n) && (m.add(n), !0)
+                    });
+                if (null == t) return p;
+                let f = (c = (r = i((a = n = t).route, a.pointIds), u = new Set(a.pointIds.keys()), r.flatMap(e => {
+                    let t = o(e),
+                        n = a.pointIds.findIndex((e, n) => u.has(n) && o(e).some(e => t.includes(e)));
+                    return -1 === n ? [] : (u.delete(n), [n])
+                })), d = new Set(n.pointIds.keys()), c.forEach(e => d.delete(e)), [...c, ...d].map(e => ({
+                    pointId: n.pointIds[e],
+                    visitIndex: e
+                })));
+                if (0 === f.length) return p;
+                let g = new Map(p.map(e => [s(e), e]));
+                return f.flatMap(e => {
+                    let {
+                        pointId: n,
+                        visitIndex: a
+                    } = e, r = o(n).map(e => g.get(e)).find(e => null != e);
+                    if (null == r) return [];
+                    let l = t.notesByVisitIndex?.get(a);
+                    return [null == l ? r : {
+                        ...r,
+                        notes: l
+                    }]
+                })
+            },
+            f: function(e) {
+                let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : (0, r.a)(e);
+                if (null == t) {
+                    let t = r.f.safeParse(e.route),
+                        n = t.success ? t.data : null;
+                    return null == n ? [] : [{
+                        key: "route",
+                        pointIds: (0, a.v)(e).map(s),
+                        route: n
+                    }]
+                }
+                let n = t.groups?.map((e, n) => {
+                    let a = new Set,
+                        l = e.locations.flatMap(e => e.point_id ? [e.point_id] : []),
+                        s = i(e.route, l),
+                        o = e.locations.map((e, n) => {
+                            let l = e.point_id?.trim();
+                            if (l) return l;
+                            let i = t.points.findIndex((t, n) => t.name === e.name && !a.has(n)),
+                                o = -1 === i ? t.points.findIndex(t => t.name === e.name) : i;
+                            return -1 !== o && a.add(o), (-1 === o ? void 0 : (0, r.d)(t.points[o], o)) || s[n] || e.name.trim()
+                        }),
+                        u = new Map;
+                    return e.locations.forEach((e, t) => {
+                        let n = e.notes?.trim();
+                        n && u.set(t, n)
+                    }), {
+                        key: e.id?.trim() || `group-${n}`,
+                        dayNumber: e.day_number,
+                        title: e.title,
+                        pointIds: o,
+                        notesByVisitIndex: u,
+                        route: e.route,
+                        alternativeRoutes: e.alternative_routes
+                    }
+                });
+                return null != n && n.length > 0 && (n.some(e => null != e.route) || null == t.route) ? n : null == t.route ? [] : [{
+                    key: "route",
+                    pointIds: t.points.map(r.d),
+                    route: t.route,
+                    alternativeRoutes: t.alternative_routes
+                }]
+            },
+            g: i,
+            h: function(e, t, n) {
+                let a = s(e[t]),
+                    r = e.slice(0, t).filter(e => s(e) === a).length;
+                return n.findIndex(e => o(e).includes(a) && 0 == r--)
+            },
+            i: function(e) {
+                let t = new Map,
+                    n = 1;
+                for (let a of e)
+                    if (null != a.route)
+                        for (let e of i(a.route, a.pointIds)) {
+                            let r = o(e),
+                                l = r.map(e => t.get(e)).find(e => null != e) ?? {
+                                    number: n,
+                                    routed: !1
+                                };
+                            for (let e of (n++, l.routed = l.routed || null != a.route, r)) t.set(e, l)
+                        }
+                return new Map([...t].flatMap(e => {
+                    let [t, n] = e;
+                    return n.routed ? [
+                        [t, n.number]
+                    ] : []
+                }))
+            }
+        })
+    }),
+    F0zR: (function(e, t, n) {
+        n.d(t, {}, {
+            a: function(e, t) {
+                if (null == t) return null;
+                let n = Math.max(1, Math.round(t / 60));
+                if (n <= 60) return e.formatNumber(n, {
+                    style: "unit",
+                    unit: "minute",
+                    unitDisplay: "short"
+                });
+                let a = [];
+                for (let [t, r] of [
+                        ["week", 10080],
+                        ["day", 1440],
+                        ["hour", 60],
+                        ["minute", 1]
+                    ]) {
+                    let l = Math.floor(n / r);
+                    if (0 !== l && (a.push(e.formatNumber(l, {
+                            style: "unit",
+                            unit: t,
+                            unitDisplay: "minute" === t ? "short" : "long"
+                        })), n %= r, 2 === a.length)) break
+                }
+                return e.formatList(a, {
+                    type: "unit",
+                    style: "short"
+                })
+            }
+        })
+    }),
+    ry7c: (function(e, t, n) {
+        n.d(t, {
+            a: () => s
+        });
+        var a = n("v7qY"),
+            r = "transition-DDTh2X";
+        let l = null;
+
+        function s(e) {
+            let {
+                triggerId: t,
+                conversationId: n,
+                reducedMotion: s,
+                update: i,
+                onSuperseded: o
+            } = e;
+            if (l?.transition.skipTransition(), l?.cleanup(), l = null, s || "function" != typeof document.startViewTransition) return void i();
+            let u = document.getElementById(t)?.closest("[data-immersive-map-inline]") ?? null,
+                c = [],
+                d = () => {
+                    let e = document.querySelector("[data-immersive-map-fullscreen]"),
+                        t = e ?? u,
+                        a = e?.querySelector('[data-map-transition="composer"]') ?? Array.from(document.querySelectorAll("[data-map-composer-conversation]")).find(e => e.dataset.mapComposerConversation === n);
+                    for (let [e, n] of Object.entries({
+                            "immersive-map-canvas": t?.querySelector('[data-map-transition="map"]'),
+                            "immersive-map-results": t?.querySelector('[data-map-transition="results"], [role="list"]'),
+                            "immersive-map-composer": a?.querySelector("[data-composer-body]"),
+                            "immersive-map-composer-input": a?.querySelector('[contenteditable="true"]'),
+                            "immersive-map-composer-controls": a?.querySelector("[data-composer-footer-responsive]")
+                        }))
+                        if (null != n) {
+                            let t = n.style.viewTransitionName;
+                            n.style.viewTransitionName = e, c.push(() => {
+                                n.style.viewTransitionName = t
+                            })
+                        }
+                },
+                m = () => {
+                    c.splice(0).forEach(e => e())
+                },
+                p = () => {
+                    m(), document.documentElement.classList.remove(r)
+                },
+                f = !1,
+                g = !1,
+                h = () => {
+                    f || g || (f = !0, (0, a.flushSync)(i))
+                };
+            document.documentElement.classList.add(r), d();
+            try {
+                let e = document.startViewTransition(() => {
+                        g || (m(), h(), d())
+                    }),
+                    t = {
+                        transition: e,
+                        cleanup: () => {
+                            g = !0, f || o?.(), p()
+                        }
+                    };
+                l = t, e.ready.catch(() => {});
+                let n = () => {
+                    l === t && (p(), l = null)
+                };
+                e.finished.then(n, n)
+            } catch (e) {
+                if (p(), f) throw e;
+                h()
+            }
+        }
+    }),
+    Xj7S: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("Wf1j"),
+            s = n("oyxz"),
+            i = n("Sm6l"),
+            o = n("bqtn"),
+            u = n("HOLv"),
+            c = n("bf6R"),
+            d = n("BAmR");
+
+        function m(e, t) {
+            return e.title?.trim() || (0, a.jsx)(s.a, {
+                id: "chatgpt.maps.route_group.day",
+                defaultMessage: "Day {dayNumber}",
+                description: "Map selector label for one trip day; dayNumber is the supplied day number or its one-based position",
+                values: {
+                    dayNumber: e.dayNumber ?? t + 1
+                }
+            })
+        }
+
+        function p(e) {
+            return !!e.title?.trim()
+        }
+
+        function f(e) {
+            return e.dayNumber
+        }
+
+        function g(e) {
+            return null != e.dayNumber
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, u, d, h, x, b, y, v, _, I, w, j, C, N, S, M, R, k, E, T, A, P, O, L, D = (0, r.c)(67),
+                    {
+                        groups: B,
+                        groupsTitle: G,
+                        selectedGroupKey: F,
+                        onSelectGroup: z
+                    } = e,
+                    K = (0, l.a)();
+                D[0] !== B ? (t = B.every(g) && new Set(B.map(f)).size > 1, D[0] = B, D[1] = t) : t = D[1];
+                let H = t,
+                    W = B.every(p);
+                if (B.length < 2 || !H && !W) return null;
+                if (D[2] !== B || D[3] !== G || D[4] !== H || D[5] !== K || D[6] !== F) {
+                    let e, t, r;
+                    D[23] !== F ? (e = e => e.key === F, D[23] = F, D[24] = e) : e = D[24], b = B.findIndex(e), D[25] !== G || D[26] !== H ? (t = G?.trim() || (H ? (0, a.jsx)(s.a, {
+                        id: "chatgpt.maps.route_group.all_days",
+                        defaultMessage: "All days",
+                        description: "Map group selector option that shows the routes and places for every trip day"
+                    }) : (0, a.jsx)(s.a, {
+                        id: "chatgpt.maps.route_group.all_groups",
+                        defaultMessage: "All groups",
+                        description: "Map group selector option that shows places from every named group"
+                    })), D[25] = G, D[26] = H, D[27] = t) : t = D[27], d = t, h = m, D[28] !== H || D[29] !== K ? (r = H ? K.formatMessage({
+                        id: "chatgpt.maps.route_group.filter_label",
+                        defaultMessage: "Trip day",
+                        description: "Accessible label for the map dropdown that filters places and routes by trip day"
+                    }) : K.formatMessage({
+                        id: "chatgpt.maps.route_group.generic_filter_label",
+                        defaultMessage: "Map group",
+                        description: "Accessible label for the map dropdown that filters places and routes by named group"
+                    }), D[28] = H, D[29] = K, D[30] = r) : r = D[30], x = r, u = o.a, y = "start", v = "chatgpt", n = i.a, w = "max-w-full", j = x, C = !0, N = "mapSurface", S = "full", M = "dialogAction", _ = "truncate", I = b < 0 ? d : h(B[b], b), D[2] = B, D[3] = G, D[4] = H, D[5] = K, D[6] = F, D[7] = n, D[8] = u, D[9] = d, D[10] = h, D[11] = x, D[12] = b, D[13] = y, D[14] = v, D[15] = _, D[16] = I, D[17] = w, D[18] = j, D[19] = C, D[20] = N, D[21] = S, D[22] = M
+                } else n = D[7], u = D[8], d = D[9], h = D[10], x = D[11], b = D[12], y = D[13], v = D[14], _ = D[15], I = D[16], w = D[17], j = D[18], C = D[19], N = D[20], S = D[21], M = D[22];
+                D[31] !== _ || D[32] !== I ? (R = (0, a.jsx)("span", {
+                    className: _,
+                    children: I
+                }), D[31] = _, D[32] = I, D[33] = R) : R = D[33], D[34] === Symbol.for("react.memo_cache_sentinel") ? (k = (0, a.jsx)(c.ac, {}), D[34] = k) : k = D[34], D[35] !== n || D[36] !== R || D[37] !== w || D[38] !== j || D[39] !== C || D[40] !== N || D[41] !== S || D[42] !== M ? (E = (0, a.jsxs)(n, {
+                    className: w,
+                    "aria-label": j,
+                    allowShrink: C,
+                    color: N,
+                    radius: S,
+                    size: M,
+                    children: [R, k]
+                }), D[35] = n, D[36] = R, D[37] = w, D[38] = j, D[39] = C, D[40] = N, D[41] = S, D[42] = M, D[43] = E) : E = D[43];
+                let $ = b < 0 ? "all" : String(b);
+                if (D[44] !== z ? (T = () => z(null), D[44] = z, D[45] = T) : T = D[45], D[46] !== d || D[47] !== T ? (A = (0, a.jsx)(o.c.RadioItem, {
+                        value: "all",
+                        variant: "chatgpt",
+                        onSelect: T,
+                        children: d
+                    }), D[46] = d, D[47] = T, D[48] = A) : A = D[48], D[49] !== h || D[50] !== B || D[51] !== z) {
+                    let e;
+                    D[53] !== h || D[54] !== z ? (e = (e, t) => (0, a.jsx)(o.c.RadioItem, {
+                        value: String(t),
+                        variant: "chatgpt",
+                        onSelect: () => z(e.key),
+                        children: h(e, t)
+                    }, e.key), D[53] = h, D[54] = z, D[55] = e) : e = D[55], P = B.map(e), D[49] = h, D[50] = B, D[51] = z, D[52] = P
+                } else P = D[52];
+                return D[56] !== x || D[57] !== $ || D[58] !== A || D[59] !== P ? (O = (0, a.jsxs)(o.c.RadioGroup, {
+                    "aria-label": x,
+                    value: $,
+                    children: [A, P]
+                }), D[56] = x, D[57] = $, D[58] = A, D[59] = P, D[60] = O) : O = D[60], D[61] !== u || D[62] !== y || D[63] !== v || D[64] !== E || D[65] !== O ? (L = (0, a.jsx)(u, {
+                    align: y,
+                    surface: v,
+                    triggerButton: E,
+                    children: O
+                }), D[61] = u, D[62] = y, D[63] = v, D[64] = E, D[65] = O, D[66] = L) : L = D[66], L
+            },
+            b: function(e) {
+                let t, n, s, o = (0, r.c)(6),
+                    {
+                        onClick: c
+                    } = e,
+                    m = (0, l.a)();
+                return o[0] !== m ? (t = m.formatMessage({
+                    id: "chatgpt.map.resetView",
+                    defaultMessage: "Reset view",
+                    description: "Button that restores the map to the current results"
+                }), o[0] = m, o[1] = t) : t = o[1], o[2] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, a.jsx)(u.a, {
+                    asset: d.a
+                }), o[2] = n) : n = o[2], o[3] !== c || o[4] !== t ? (s = (0, a.jsx)(i.a, {
+                    "aria-label": t,
+                    color: "mapSurface",
+                    radius: "full",
+                    size: "inputIcon",
+                    onClick: c,
+                    children: n
+                }), o[3] = c, o[4] = t, o[5] = s) : s = o[5], s
+            },
+            c: function(e) {
+                let t, n, l = (0, r.c)(3),
+                    {
+                        route: i
+                    } = e,
+                    o = i?.duration_seconds;
+                return i?.legs.length !== 1 || null == o ? null : (l[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(c.qc, {}), l[0] = t) : t = l[0], l[1] !== o ? (n = (0, a.jsxs)("div", {
+                    className: "flex items-center gap-1.5 rounded-full border border-default bg-surface px-3 py-1.5 text-sm font-medium select-none",
+                    children: [t, o < 3600 ? (0, a.jsx)(s.a, {
+                        id: "chatgpt.maps.route.duration_minutes",
+                        defaultMessage: "{minutes, plural, one {# min} other {# mins}}",
+                        description: "Compact route travel time under one hour shown on the map; minutes is the rounded duration, with a minimum of one",
+                        values: {
+                            minutes: Math.max(1, Math.round(o / 60))
+                        }
+                    }) : (0, a.jsx)(s.a, {
+                        id: "chatgpt.maps.route.duration_hours",
+                        defaultMessage: "{hours, plural, one {# hour} other {# hours}}",
+                        description: "Compact route travel time shown on the map; hours is the duration rounded to one decimal place",
+                        values: {
+                            hours: Math.round(o / 360) / 10
+                        }
+                    })]
+                }), l[1] = o, l[2] = n) : n = l[2], n)
+            }
+        })
+    }),
+    YTiF: (function(e, t, n) {
+        var a = n("xCr9"),
+            r = n.n(a),
+            l = n("rKAs"),
+            s = n("AuIy"),
+            i = n("yMDx"),
+            o = n("hx97"),
+            u = n("VYHi");
+
+        function c(e, t, n) {
+            let {
+                fastPathEnabled: a
+            } = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : {
+                fastPathEnabled: !1
+            };
+            if (null == t) return e;
+            let r = (0, u.a)(t, {
+                fastPathEnabled: a
+            });
+            return r.preferred.length > 0 || a && r.additional.length > 0 || !n && !0 === t.isComplete && null != t.reference ? t : e
+        }
+        n.d(t, {}, {
+            a: function(e, t) {
+                let n = [],
+                    a = [];
+
+                function c() {
+                    let e = r()(a, e => "assistant" === e.author.role && !(0, s.n)(e)) ?? a.at(-1);
+                    if (e?.id == null) return;
+                    let u = e.id,
+                        c = a.flatMap(e => (0, l.q)(e.metadata).map(t => ({
+                            messageId: e.id ?? u,
+                            message: e,
+                            reference: t
+                        }))),
+                        d = r()(c, e => {
+                            let {
+                                reference: t
+                            } = e;
+                            return "map" === t.type || "businesses_map" === t.type || "client_defined_widget" === t.type && "map" === t.category
+                        }),
+                        m = "assistant" === e.author.role && "all" === e.recipient && "text" === e.content.content_type && "finished_successfully" === e.status;
+                    n.push({
+                        isComplete: m,
+                        mapMessageId: d?.messageId,
+                        responseMessageId: a[0]?.id ?? u,
+                        reference: d?.reference ?? null,
+                        turnContext: {
+                            ...t,
+                            isStreaming: !m,
+                            dilViewState: (0, i.c)(d?.message.metadata) ?? (0, i.c)(e.metadata),
+                            contentReferences: c.map(e => {
+                                let {
+                                    reference: t
+                                } = e;
+                                return t
+                            }),
+                            contentReferenceMessageIds: c.map(e => {
+                                let {
+                                    messageId: t
+                                } = e;
+                                return t
+                            }),
+                            contentReferenceMessageStatuses: c.map(e => {
+                                let {
+                                    message: t
+                                } = e;
+                                return t.status
+                            }),
+                            messageId: u,
+                            turnId: (0, o.f)(e) ?? void 0
+                        }
+                    })
+                }
+                for (let t of e)(0, o.m)(t) ? (c(), a = []) : ("assistant" === t.author.role || "tool" === t.author.role) && a.push(t);
+                return c(), {
+                    history: n.filter(e => null != e.reference || (0, u.a)(e, {
+                        fastPathEnabled: !1
+                    }).preferred.length > 0),
+                    latest: n.at(-1)
+                }
+            },
+            b: function(e) {
+                let {
+                    followResponse: t
+                } = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : {
+                    followResponse: !1
+                };
+                return t ? `response:${e.responseMessageId??e.turnContext.messageId}` : [e.mapMessageId ?? e.turnContext.contentReferenceMessageIds?.[null == e.reference ? -1 : e.turnContext.contentReferences.indexOf(e.reference)] ?? e.turnContext.messageId, e.reference?.type, e.reference?.start_idx ?? e.reference?.previewPlaceKey].join(":")
+            },
+            c: c,
+            d: function(e, t, n, a) {
+                if (e.reference?.previewPlaceKey != null) return e;
+                let r = e.mapMessageId ?? e.turnContext.messageId;
+                if (null != r && n?.reference != null && n.turnContext.contentReferenceMessageIds?.includes(r) && a.some(e => e.id === r && "tool" === e.author.role) && a.some(e => e.id === n.mapMessageId && "assistant" === e.author.role) && c(e, n, n.turnContext.isStreaming) === n) return n;
+                if (null == e.reference) return t.find(t => t.turnContext.messageId === e.turnContext.messageId) ?? e;
+                for (let n of t) {
+                    let t = n.turnContext.contentReferences.findIndex((t, a) => n.turnContext.contentReferenceMessageIds?.[a] === (e.mapMessageId ?? e.turnContext.messageId) && t.type === e.reference?.type && t.start_idx === e.reference?.start_idx);
+                    if (t >= 0) return {
+                        ...n,
+                        mapMessageId: n.turnContext.contentReferenceMessageIds?.[t],
+                        reference: n.turnContext.contentReferences[t] ?? null
+                    }
+                }
+                return e
+            }
+        })
+    }),
+    VYHi: (function(e, t, n) {
+        var a = n("i5ac"),
+            r = n.n(a),
+            l = n("rKAs"),
+            s = n("TJEh"),
+            i = n("RgGw"),
+            o = n("DUJs");
+
+        function u(e) {
+            return "string" == typeof e.notes && e.notes.trim().length > 0
+        }
+        n.d(t, {}, {
+            a: function(e, t) {
+                let {
+                    fastPathEnabled: n
+                } = t, {
+                    reference: a,
+                    turnContext: c
+                } = e, d = null == a ? [] : (0, l.v)(a, (0, o.a)(a, c)), m = null == a ? [] : (0, i.a)(a), p = new Map;
+                if (null != a)
+                    for (let e of (0, i.f)(a, (0, o.a)(a, c)))
+                        for (let t of (0, i.e)(d, e)) {
+                            let e = (0, i.d)(t),
+                                n = t.notes;
+                            "string" == typeof n && n.trim() && !p.has(e) && p.set(e, n)
+                        }
+                let f = [];
+                if (n)
+                    for (let e of c.contentReferences) {
+                        let t = e === a ? m : (0, i.a)(e);
+                        if (t.length > 0) {
+                            f = t;
+                            break
+                        }
+                    }
+                let g = c.contentReferences.flatMap((e, t) => {
+                        let n = c.contentReferenceMessageIds?.[t];
+                        if ("entity" !== e.type || null != n && n !== c.messageId || "string" != typeof e.category || !(0, s.i)(e.category)) return [];
+                        let a = s.b.safeParse(e.entity_data);
+                        return a.success ? (0, l.v)({
+                            type: "map",
+                            entities: [{
+                                entity: a.data,
+                                category: e.category,
+                                extra_params: e.extra_params,
+                                notes: e.notes
+                            }]
+                        }) : []
+                    }),
+                    h = new Map([...f, ...m, ...r()(d, i.b)].map(e => [(0, i.b)(e), e])),
+                    x = new Set(d.map(i.b)),
+                    b = new Map(g.map(e => [(0, i.b)(e), e])),
+                    y = r()([...g.filter(e => !x.has((0, i.b)(e))), ...d], i.d).map(e => {
+                        let t = (0, i.b)(e),
+                            n = b.get(t) ?? e,
+                            a = "string" == typeof e.mapEntityId ? e : h.get(t);
+                        return null == a || a === n ? e : {
+                            ...a,
+                            ...n,
+                            latitude: n.latitude ?? a.latitude,
+                            longitude: n.longitude ?? a.longitude,
+                            mapEntityId: a.mapEntityId ?? n.mapEntityId,
+                            mapIcon: a.mapIcon ?? n.mapIcon,
+                            mapLabel: a.mapLabel ?? n.mapLabel,
+                            mapCarouselCard: a.mapCarouselCard ?? n.mapCarouselCard,
+                            notes: u(a) ? a.notes : n.notes,
+                            extra_params: null == n.extra_params ? a.extra_params : {
+                                ...a.extra_params,
+                                ...n.extra_params
+                            }
+                        }
+                    }),
+                    v = new Set(y.map(i.b)),
+                    _ = r()([...m, ...f], i.b).filter(e => !v.has((0, i.b)(e)));
+                return {
+                    preferred: y.map(e => {
+                        let t = p.get((0, i.d)(e));
+                        return u(e) || null == t ? e : {
+                            ...e,
+                            notes: t
+                        }
+                    }).sort((e, t) => Number(u(t)) - Number(u(e))),
+                    additional: _.sort((e, t) => Number(u(t)) - Number(u(e)))
+                }
+            }
+        })
+    }),
+    DUJs: (function(e, t, n) {
+        var a = n("sqog");
+        n.d(t, {}, {
+            a: function(e, t) {
+                let n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : t?.contentReferences.indexOf(e) ?? -1,
+                    r = t?.contentReferenceMessageIds?.[n] ?? t?.messageId,
+                    l = t?.contentReferenceMessageStatuses?.[n],
+                    s = t?.contentReferenceMessageIds == null ? n : t.contentReferenceMessageIds.slice(0, n).filter(e => e === r).length;
+                return (0, a.a)(e, null == r || n < 0 || null == t ? void 0 : {
+                    messageId: r,
+                    referenceIndex: s,
+                    widgets: t.dilViewState?.widgets,
+                    preferResolvedData: null == l ? !t.isStreaming : "finished_successfully" === l
+                })
+            }
+        })
+    }),
+    YAi8: (function(e, t, n) {
+        n.d(t, {
+            a: () => eo
+        });
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("EA6X"),
+            s = n("t4av"),
+            i = n("slpy"),
+            o = n("BOYb"),
+            u = n("on57"),
+            c = n("i5ac"),
+            d = n.n(c),
+            m = n("BolX"),
+            p = n("rKAs"),
+            f = n("sqog"),
+            g = n("Wc42"),
+            h = n("zd8w"),
+            x = n("Wf1j"),
+            b = n("oyxz"),
+            y = n("PxnS"),
+            v = n("Sm6l"),
+            _ = n("JNtf"),
+            I = n("HOLv"),
+            w = n("bf6R"),
+            j = n("Bbed"),
+            C = n("ibLK"),
+            N = n("zSQm"),
+            S = n("yGJW"),
+            M = n("tSEg"),
+            R = n("eGPX"),
+            k = n("hZax"),
+            E = n("KDax"),
+            T = n("j8Yf"),
+            A = n("dQRk"),
+            P = n("TUMj"),
+            O = n("Nhwt"),
+            L = n("TJEh"),
+            D = n("jFKl"),
+            B = n("zPtR"),
+            G = n("AuIy"),
+            F = n("OWtl");
+        let z = (0, m.u)(F.a, () => new Set);
+        var K = n("xhWJ"),
+            H = n("tBe6"),
+            W = n("D015"),
+            $ = n("Cslg"),
+            Y = n("WFY2"),
+            V = n("Kwur"),
+            q = n("xof2");
+        let Q = (0, m.j)(F.a, e => new Set),
+            U = (0, m.j)(F.a, e => {
+                let t = new Set,
+                    n = 0,
+                    a = () => {
+                        for (; n < 4 && t.size > 0;) {
+                            let e = t.values().next().value;
+                            if (null == e) return;
+                            t.delete(e), n += 1, e().catch(e => {
+                                Y.a.warning("Failed to record map entity impression", {
+                                    safe: {},
+                                    sensitive: {
+                                        error: e
+                                    }
+                                })
+                            }).finally(() => {
+                                n -= 1, a()
+                            })
+                        }
+                    };
+                return e => {
+                    t.add(e), a()
+                }
+            });
+        var J = n("RgGw"),
+            X = n("ry7c"),
+            Z = n("Xj7S"),
+            ee = n("YTiF"),
+            et = n("j7sU"),
+            en = n("QPeR"),
+            ea = n("DUJs"),
+            er = n("FCsE"),
+            el = n("O35A"),
+            es = n("wmA0");
+        let ei = (0, j.a)(async () => (await Promise.all([n.e(418851), n.e(109308), n.e(399565), n.e(257798), n.e(447351), n.e(617936), n.e(807489), n.e(337882), n.e(955979), n.e(646436), n.e(7078), n.e(200429), n.e(698524), n.e(956483), n.e(87162), n.e(396705), n.e(155568), n.e(731863), n.e(767086), n.e(76629), n.e(753405), n.e(321957), n.e(585419), n.e(877700), n.e(843292), n.e(353230), n.e(81461), n.e(882456), n.e(145049), n.e(744644), n.e(962984), n.e(499790), n.e(301030), n.e(909395), n.e(212487), n.e(17983), n.e(167649), n.e(509282), n.e(523433), n.e(403815), n.e(471657), n.e(37774), n.e(232884)]).then(n.bind(n, "s2JQ"))).ChatGptMapboxCanvas, {
+            propagateLoadError: !0
+        });
+
+        function eo(e) {
+            var t;
+            let n = (0, r.c)(21),
+                {
+                    contentReferenceIndex: l,
+                    enableFullscreen: s,
+                    fullscreenMode: i,
+                    showEmptyMap: o,
+                    ignoreCoordinateOutliers: u,
+                    fallbackCenter: c,
+                    isStreaming: d,
+                    onOpenStandalonePlace: m,
+                    reference: p,
+                    events: f
+                } = e,
+                g = void 0 === s || s,
+                h = void 0 === i ? "conversation" : i,
+                x = void 0 !== o && o,
+                b = void 0 !== u && u;
+            switch ("string" == typeof(t = p).type && t.type.length > 0 ? t.type : null) {
+                case "map":
+                case "businesses_map": {
+                    let e;
+                    return n[0] !== l || n[1] !== g || n[2] !== f || n[3] !== c || n[4] !== h || n[5] !== b || n[6] !== m || n[7] !== p || n[8] !== x ? (e = (0, a.jsx)(eu, {
+                        contentReferenceIndex: l,
+                        enableFullscreen: g,
+                        fullscreenMode: h,
+                        showEmptyMap: x,
+                        ignoreCoordinateOutliers: b,
+                        fallbackCenter: c,
+                        onOpenStandalonePlace: m,
+                        reference: p,
+                        events: f
+                    }), n[0] = l, n[1] = g, n[2] = f, n[3] = c, n[4] = h, n[5] = b, n[6] = m, n[7] = p, n[8] = x, n[9] = e) : e = n[9], e
+                }
+                case "client_defined_widget": {
+                    let e;
+                    return n[10] !== l || n[11] !== g || n[12] !== f || n[13] !== c || n[14] !== h || n[15] !== b || n[16] !== d || n[17] !== m || n[18] !== p || n[19] !== x ? (e = "map" === p.category ? (0, a.jsx)(eu, {
+                        contentReferenceIndex: l,
+                        enableFullscreen: g,
+                        fullscreenMode: h,
+                        showEmptyMap: x,
+                        ignoreCoordinateOutliers: b,
+                        fallbackCenter: c,
+                        isStreaming: d,
+                        onOpenStandalonePlace: m,
+                        reference: p,
+                        events: f
+                    }) : null, n[10] = l, n[11] = g, n[12] = f, n[13] = c, n[14] = h, n[15] = b, n[16] = d, n[17] = m, n[18] = p, n[19] = x, n[20] = e) : e = n[20], e
+                }
+                default:
+                    return null
+            }
+        }
+
+        function eu(e) {
+            var t, n;
+            let c, j, F, Y, eo, eu, ep, ef, eg, eh, ey, ev, e_, eI, ew, ej, eC, eN, eS, eM, eR, ek, eE, eT, eA, eP, eO, eL, eD, eB, eG, eF, ez, eK, eH, eW, e$, eY, eV, eq, eQ, eU, eJ, eX, eZ, e1, e0, e2, e3, e5, e4 = (0, r.c)(194),
+                {
+                    contentReferenceIndex: e6,
+                    enableFullscreen: e7,
+                    fullscreenMode: e8,
+                    showEmptyMap: e9,
+                    ignoreCoordinateOutliers: te,
+                    fallbackCenter: tt,
+                    isStreaming: tn,
+                    onOpenStandalonePlace: ta,
+                    reference: tr,
+                    events: tl
+                } = e,
+                ts = (0, m.y)(M.a),
+                ti = (0, h.useRef)(null),
+                to = (0, x.a)(),
+                tu = (0, C.a)("(pointer: coarse)") && (0, o.d)();
+            e4[0] !== to ? (c = to.formatMessage({
+                id: "chatgpt.contentReferences.map.expand",
+                defaultMessage: "Expand map",
+                description: "Button that opens the places map fullscreen"
+            }), e4[0] = to, e4[1] = c) : c = e4[1];
+            let tc = c,
+                td = (0, P.d)(),
+                tm = "dialog" === e8 && null == td,
+                tp = tm && null != ta,
+                tf = (0, h.useRef)(null),
+                [tg, th] = (0, h.useState)(!1),
+                tx = td?.messageId,
+                tb = td?.contentReferenceMessageIds?.[e6];
+            e4[2] !== tx || e4[3] !== tb ? (j = {
+                widgetType: "businesses_map",
+                turnMessageId: tx,
+                sourceMessageId: tb
+            }, e4[2] = tx, e4[3] = tb, e4[4] = j) : j = e4[4];
+            let ty = (0, m.x)(y.c, j),
+                tv = tg ? ty : void 0,
+                t_ = (0, k.f)("3194776735"),
+                tI = (0, m.z)(en.a),
+                tw = (0, h.useId)(),
+                tj = (0, h.useId)(),
+                [tC, tN] = (0, h.useState)(!1),
+                [tS, tM] = (0, h.useState)(!1);
+            e4[5] !== tr || e4[6] !== td ? (F = null == td ? "" : (0, ee.b)({
+                reference: tr,
+                turnContext: td
+            }), e4[5] = tr, e4[6] = td, e4[7] = F) : F = e4[7];
+            let tR = F;
+            e4[8] !== tI || e4[9] !== tR ? (Y = null != tI && (0, ee.b)(tI.source) === tR, e4[8] = tI, e4[9] = tR, e4[10] = Y) : Y = e4[10];
+            let tk = Y,
+                tE = (0, m.x)(en.b, tR),
+                [tT, tA] = (0, h.useState)(null),
+                [tP, tO] = (0, h.useState)(!1),
+                [tL, tD] = (0, h.useState)(0),
+                [tB, tG] = (0, h.useState)(null),
+                [tF, tz] = (0, h.useState)(null),
+                [tK, tH] = (0, h.useState)(null),
+                [tW, t$] = (0, h.useState)(null),
+                tY = (0, h.useRef)(tE),
+                tV = (0, h.useRef)(null);
+            e4[11] === Symbol.for("react.memo_cache_sentinel") ? (eo = () => () => tV.current?.abort(), eu = [], e4[11] = eo, e4[12] = eu) : (eo = e4[11], eu = e4[12]), (0, h.useEffect)(eo, eu), e4[13] !== tE ? (ep = () => {
+                tY.current = tE
+            }, ef = [tE], e4[13] = tE, e4[14] = ep, e4[15] = ef) : (ep = e4[14], ef = e4[15]), (0, h.useLayoutEffect)(ep, ef);
+            let tq = async () => {
+                if (t_ && "dialog" === e8) return void tM(!0);
+                if (!t_ || null == td || tk) return;
+                tV.current?.abort();
+                let e = new AbortController;
+                tV.current = e;
+                let t = !0;
+                try {
+                    await (0, et.b)()
+                } catch {
+                    t = !1
+                }
+                if (e.signal.aborted) return;
+                t$(null);
+                let n = td.contentReferenceMessageIds?.[e6] ?? td.messageId,
+                    a = null != tZ || 1 === tX.length;
+                (0, X.a)({
+                    triggerId: tw,
+                    conversationId: td.conversationId,
+                    reducedMotion: !t || ts.get(R.c),
+                    onSuperseded: () => e.abort(),
+                    update: () => {
+                        if (e.signal.aborted) return;
+                        tV.current = null, ts.set(en.a, {
+                            source: {
+                                reference: tr,
+                                turnContext: td,
+                                mapMessageId: n
+                            },
+                            view: tY.current,
+                            triggerId: tw,
+                            ...null == tK ? {} : {
+                                selectedPlace: tK
+                            },
+                            ...null == tZ ? {} : {
+                                selectedGroupKey: tZ.key
+                            },
+                            ...a && null != tF ? {
+                                selectedCardKey: tF
+                            } : {}
+                        });
+                        let t = ts.get(A.j, td.conversationId) ?? void 0;
+                        (0, S.a)(ts, s.p, {
+                            conversationId: t,
+                            messageId: n,
+                            entryPoint: "CHATGPT_PLACES_ENTRY_POINT_MAP_WIDGET"
+                        })
+                    }
+                })
+            };
+            e4[16] !== e6 || e4[17] !== tr || e4[18] !== td ? (eg = (0, ea.a)(tr, td, e6), e4[16] = e6, e4[17] = tr, e4[18] = td, e4[19] = eg) : eg = e4[19];
+            let tQ = eg;
+            e4[20] !== e6 || e4[21] !== tu || e4[22] !== tC || e4[23] !== tr || e4[24] !== ts || e4[25] !== tT || e4[26] !== td || e4[27] !== tQ ? (eh = () => {
+                if (! function(e, t, n, a) {
+                        let r = (0, P.c)(t, n),
+                            l = t?.contentReferenceMessageStatuses?.[n],
+                            i = (0, G.s)(t?.contentReferences[n]?.data)?.widget_type;
+                        if (null == t || null == r || "map_widget_v2" !== i || null == a || 0 === a.points.length || (null == l ? t.isStreaming : "finished_successfully" !== l) || t.shouldBlockExternalEgress || !1 === t.trackShownImpressions || !1 === t.isPresented) return;
+                        let o = `${r.messageId}:${r.index}`,
+                            u = e.get(z);
+                        if (u.has(o)) return;
+                        e.set(z, new Set([...u, o]));
+                        let c = a.groups?.length ? a.groups.map(e => e.route) : [a.route],
+                            d = a.carousel?.known_fields,
+                            m = null != d && ["rating", "hours", "category", "price"].some(e => !d.some(t => t === e)),
+                            p = a.points.some((e, t) => {
+                                let n = a.carousel?.cards?.[(0, f.d)(e, t)];
+                                return null != n && Object.values(n).some(e => null != e)
+                            });
+                        (0, S.a)(e, s.a, {
+                            messageId: r.messageId,
+                            contentReferenceIndex: (0, B.b)(r.index),
+                            hasRoute: c.some(e => null != e),
+                            hasCustomIcons: a.points.some(e => !!e.icon?.trim()),
+                            hasCarouselEdits: m || p,
+                            carouselHidden: a.carousel?.visibility === "hidden"
+                        })
+                    }(ts, td, e6, tQ), tQ?.widget_type === "event_sidebar_map_widget" && (tu || tQ.points[0]?.address && !tC)) return;
+                let e = (0, J.f)(tr, tQ).find(e => e.key === tT),
+                    t = new Set((0, J.e)((0, p.v)(tr, tQ), e).map(ed));
+                ! function(e, t, n, a) {
+                    let r = (0, P.c)(t, n),
+                        s = t?.contentReferences[n];
+                    if (null == t || null == r || !r.messageId || r.messageId.startsWith("WEB:") || s?.type !== "client_defined_widget" || "map" !== s.category || null == a || t.shouldBlockExternalEgress || !1 === t.trackShownImpressions || !1 === t.isPresented) return;
+                    let i = e.get(A.j, t.conversationId) ?? void 0,
+                        o = t.messageId ?? r.messageId,
+                        u = "number" == typeof s?.start_idx ? (0, W.a)(s.start_idx) : void 0,
+                        c = e.get(Q, JSON.stringify([t.conversationId, r.messageId, r.index])),
+                        d = [];
+                    for (let e of a.points) {
+                        let t = (0, g.a)(e.entity?.entity_key) ?? (0, g.a)(e.extra_params?.entity_key);
+                        if (null == e.entity || null == t && null == (0, g.a)(e.entity.provider) && null == (0, g.a)(e.extra_params?.business_id)) continue;
+                        let n = (0, g.a)(e.entity.entity_lookup_id) ?? (0, g.a)(e.extra_params?.entity_lookup_id) ?? t ?? (0, g.a)(e.extra_params?.business_id);
+                        null != n && (c.has(n) || (c.add(n), d.push({
+                            entityId: n,
+                            entityKey: t ?? void 0
+                        })))
+                    }
+                    if (0 === d.length) return;
+                    let m = (0, q.a)(e, t.conversationId, o),
+                        p = e.get($.f),
+                        f = e.get($.k),
+                        h = e.get(U, void 0);
+                    for (let {
+                            entityId: n,
+                            entityKey: a
+                        }
+                        of d) {
+                        let c = {
+                            conversationId: t.conversationId,
+                            messageId: r.messageId,
+                            assistantMessageId: o,
+                            contentReferenceStartIndex: u,
+                            contentReferenceType: "entity",
+                            entityId: n,
+                            entityCategory: "local_business",
+                            actionType: "CHATGPT_ENGAGEMENT_ACTION_TYPE_SHOWN",
+                            surfaceLocation: l.b.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE,
+                            entityAffordance: l.d.CHATGPT_ENTITY_AFFORDANCE_MAP_MARKER,
+                            parentContext: {
+                                widgetType: "map",
+                                widgetName: (0, g.a)((0, G.s)(s.data)?.widget_type) ?? void 0
+                            },
+                            isGenui: !0
+                        };
+                        (0, q.b)(e, c), e.get(S.c).isChatgptBrowserReplacement && (0, S.a)(e, H.d, {
+                            eventType: "CHATGPT_CONTENT_REFERENCE_EVENT_TYPE_ENTITY_ANCHOR_SHOWN",
+                            conversationId: i,
+                            messageId: r.messageId,
+                            contentReferenceType: "entity",
+                            category: "local_business",
+                            businessId: n,
+                            widgetName: c.parentContext.widgetName
+                        }), h(async () => {
+                            p === e.get($.f) && f === e.get($.k) && await V.Request.safePost("/unified_user_signals", {
+                                requestBody: {
+                                    signal_type: "entity_shown",
+                                    product_surface: "CHAT",
+                                    signal_metadata: {},
+                                    user_metadata: {},
+                                    signal_detail: {
+                                        common_metadata: {
+                                            conversation_id: i,
+                                            message_id: r.messageId
+                                        },
+                                        entity_shown: {
+                                            entity_id: n,
+                                            entity_key: a,
+                                            entity_category: c.entityCategory,
+                                            entity_affordance: c.entityAffordance,
+                                            surface_location: c.surfaceLocation,
+                                            content_reference_type: c.contentReferenceType,
+                                            content_reference_index: r.index,
+                                            content_reference_start_index: u,
+                                            assistant_message_id: o,
+                                            turn_ordinal: m
+                                        }
+                                    }
+                                }
+                            })
+                        })
+                    }
+                }(ts, td, e6, null == tQ ? null : {
+                    ...tQ,
+                    points: tQ.points.filter((e, n) => t.has((0, f.d)(e, n)))
+                })
+            }, ey = [ts, td, e6, tQ, tr, tT, tu, tC], e4[20] = e6, e4[21] = tu, e4[22] = tC, e4[23] = tr, e4[24] = ts, e4[25] = tT, e4[26] = td, e4[27] = tQ, e4[28] = eh, e4[29] = ey) : (eh = e4[28], ey = e4[29]), (0, h.useEffect)(eh, ey);
+            let tU = tS || tQ?.fill;
+            if (tu && tQ?.widget_type === "event_sidebar_map_widget") return null;
+            let tJ = tQ?.widget_type === "event_sidebar_map_widget" ? tQ.points[0] : void 0,
+                tX = (0, J.f)(tr, tQ);
+            e4[30] !== tT ? (ev = e => e.key === tT, e4[30] = tT, e4[31] = ev) : ev = e4[31];
+            let tZ = tX.find(ev),
+                t1 = null == tZ ? tX : [tZ],
+                t0 = (0, p.v)(tr, tQ),
+                t2 = (0, J.e)(t0, tZ);
+            e4[32] !== e6 || e4[33] !== tr || e4[34] !== td ? (e_ = null == td || td.isStreaming || td.preciseLocationInfo?.requested !== !0 || "below_map" !== td.preciseLocationInfo.footer_location || "map" !== tr.type || (td.contentReferenceMessageIds?.[e6] ?? td.messageId) !== td.preciseLocationMessageId || td.contentReferences.findIndex((e, t) => "map" === e.type && (td.contentReferenceMessageIds?.[t] ?? td.messageId) === td.preciseLocationMessageId) !== e6 ? null : (0, a.jsx)(O.a, {
+                conversationId: td.conversationId,
+                isTemporaryChat: td.isTemporaryChat ?? !1,
+                isReadOnly: !0 === td.isReadOnly || !0 === td.shouldBlockExternalEgress || !0 !== td.isLatestActorMessage,
+                messageId: td.preciseLocationMessageId,
+                preciseLocationInfo: td.preciseLocationInfo,
+                trackImpression: !1 !== td.trackShownImpressions && !1 !== td.isPresented
+            }, td.preciseLocationMessageId), e4[32] = e6, e4[33] = tr, e4[34] = td, e4[35] = e_) : e_ = e4[35];
+            let t3 = e_;
+            if (!e9 && 0 === t2.length && null == tQ) {
+                let e, t;
+                return e4[36] !== tr ? (e = (0, a.jsx)(T.c, {
+                    reference: tr
+                }), e4[36] = tr, e4[37] = e) : e = e4[37], e4[38] !== t3 || e4[39] !== e ? (t = (0, a.jsxs)(a.Fragment, {
+                    children: [e, t3]
+                }), e4[38] = t3, e4[39] = e, e4[40] = t) : t = e4[40], t
+            }
+            let t5 = !(void 0 !== tn && tn) && tQ?.carousel?.visibility !== "hidden";
+            e4[41] !== tr || e4[42] !== t5 || e4[43] !== tQ?.min_height ? (eI = (0, f.c)(tr) ?? Math.max((t = tr, n = t5, ex(t) ? 300 + 144 * !!n : 400), tQ?.min_height ?? 0), e4[41] = tr, e4[42] = t5, e4[43] = tQ?.min_height, e4[44] = eI) : eI = e4[44];
+            let t4 = eI,
+                t6 = d()(t2.filter(eb), J.d);
+            if (!e9 && 0 === t6.length && null == tQ || td?.shouldBlockExternalEgress === !0) return (0, a.jsxs)("div", {
+                className: "my-3",
+                children: [(0, a.jsx)(em, {
+                    places: t2
+                }), t3]
+            });
+            e4[45] !== tp || e4[46] !== e6 || e4[47] !== tS || e4[48] !== ta || e4[49] !== tr || e4[50] !== ts || e4[51] !== td ? (ew = (e, t, n) => {
+                null != td && ((0, K.b)(ts, {
+                    reference: tr,
+                    turnContext: td,
+                    mapMessageId: td.contentReferenceMessageIds?.[e6] ?? td.messageId
+                }, e, t, l.b.CHATGPT_ENGAGEMENT_SURFACE_LOCATION_RESPONSE), "marker" === t && (0, S.a)(ts, s.d, {
+                    conversationId: ts.get(A.j, td.conversationId) ?? void 0,
+                    messageId: td.contentReferenceMessageIds?.[e6] ?? td.messageId,
+                    entityId: (0, K.a)(e),
+                    source: "CHATGPT_PLACES_ENTITY_DETAILS_SOURCE_MARKER"
+                })), tG((0, J.d)(e)), tz(n ?? null), tH(e), tp && (tS ? (tf.current = e, tM(!1)) : ta(e))
+            }, e4[45] = tp, e4[46] = e6, e4[47] = tS, e4[48] = ta, e4[49] = tr, e4[50] = ts, e4[51] = td, e4[52] = ew) : ew = e4[52];
+            let t7 = ew;
+            e4[53] !== tl || e4[54] !== t7 ? (ej = (e, t) => {
+                tl?.onCardClick?.(), t7(e, "list", t)
+            }, e4[53] = tl, e4[54] = t7, e4[55] = ej) : ej = e4[55];
+            let t8 = ej,
+                t9 = tB ?? (tJ?.address && 1 === t6.length ? (0, J.d)(t6[0]) : null),
+                ne = td?.conversationId,
+                nt = null == tZ ? (0, J.c)(t6, t0.find(e => (0, J.d)(e) === tW)) : tW,
+                nn = e9 ? tt : void 0,
+                na = e9 && 0 === t6.length ? null == tt ? 1 : 10 : void 0,
+                nr = td?.contentReferenceMessageIds?.[e6] ?? td?.messageId;
+            e4[56] !== tl ? (eC = e => {
+                th(e), e && tl?.onReady?.()
+            }, e4[56] = tl, e4[57] = eC) : eC = e4[57];
+            let nl = () => {
+                tl?.onMapClick?.(), e7 && tq()
+            };
+            e4[58] !== tl || e4[59] !== t7 ? (eN = e => {
+                tl?.onPinClick?.(), t7(e, "marker")
+            }, e4[58] = tl, e4[59] = t7, e4[60] = eN) : eN = e4[60];
+            let ns = null == tZ ? (0, J.c)(t6, t0.find(e => (0, J.d)(e) === t9)) : t9;
+            e4[61] !== t5 ? (eS = t5 ? void 0 : {
+                bottom: 20
+            }, e4[61] = t5, e4[62] = eS) : eS = e4[62], e4[63] !== ei || e4[64] !== tp || e4[65] !== e6 || e4[66] !== t1 || e4[67] !== te || e4[68] !== tS || e4[69] !== t6 || e4[70] !== tL || e4[71] !== ne || e4[72] !== nt || e4[73] !== nn || e4[74] !== na || e4[75] !== nr || e4[76] !== eC || e4[77] !== nl || e4[78] !== eN || e4[79] !== ns || e4[80] !== eS ? (eM = (0, a.jsx)(ei, {
+                contentReferenceIndex: e6,
+                conversationId: ne,
+                hoveredBusinessKey: nt,
+                isFullscreen: tS,
+                ignoreCoordinateOutliers: te,
+                fallbackCenter: nn,
+                initialZoom: na,
+                messageId: nr,
+                onReadyChange: eC,
+                onUserMovementChange: tO,
+                onExpand: nl,
+                onOpenEntity: eN,
+                places: t6,
+                resetViewKey: tL,
+                routeGroups: t1,
+                selectedBusinessKey: ns,
+                standalone: tp,
+                viewRef: tY,
+                viewportPadding: eS
+            }), e4[63] = ei, e4[64] = tp, e4[65] = e6, e4[66] = t1, e4[67] = te, e4[68] = tS, e4[69] = t6, e4[70] = tL, e4[71] = ne, e4[72] = nt, e4[73] = nn, e4[74] = na, e4[75] = nr, e4[76] = eC, e4[77] = nl, e4[78] = eN, e4[79] = ns, e4[80] = eS, e4[81] = eM) : eM = e4[81];
+            let ni = eM,
+                no = tU && "flex h-full min-h-0 flex-col";
+            e4[82] !== no ? (eR = (0, u.b)(el.a.widget, "not-prose w-full", no), e4[82] = no, e4[83] = eR) : eR = e4[83], e4[84] !== ts || e4[85] !== tv ? (ek = e => (0, y.a)(ts, tv, e, ti), e4[84] = ts, e4[85] = tv, e4[86] = ek) : ek = e4[86], e4[87] !== tU || e4[88] !== tr ? (eE = (0, u.b)(ex(tr) && "pb-2", tU && "min-h-0 flex-1"), e4[87] = tU, e4[88] = tr, e4[89] = eE) : eE = e4[89];
+            let nu = tU && "h-full";
+            e4[90] !== nu ? (eT = (0, u.b)("relative isolate overflow-hidden motion-safe:transition-[max-height,opacity] motion-safe:duration-relaxed motion-safe:ease-out", el.a.frame, nu), e4[90] = nu, e4[91] = eT) : eT = e4[91], e4[92] !== tU || e4[93] !== t4 ? (eA = tU ? void 0 : {
+                maxHeight: t4
+            }, e4[92] = tU, e4[93] = t4, e4[94] = eA) : eA = e4[94];
+            let nc = tU && "h-full";
+            e4[95] !== nc ? (eP = (0, u.b)(el.a.frame, "bg-surface-secondary", nc), e4[95] = nc, e4[96] = eP) : eP = e4[96], e4[97] !== tU || e4[98] !== t4 ? (eO = tU ? void 0 : {
+                height: t4
+            }, e4[97] = tU, e4[98] = t4, e4[99] = eO) : eO = e4[99], e4[100] === Symbol.for("react.memo_cache_sentinel") ? (eL = (0, u.b)(el.a.frame, el.a.viewport, "relative isolate h-full overflow-hidden"), e4[100] = eL) : eL = e4[100];
+            let nd = tk ? null : ni;
+            e4[101] !== t1 || e4[102] !== tk || e4[103] !== tX || e4[104] !== ts || e4[105] !== tZ || e4[106] !== ty || e4[107] !== tP || e4[108] !== tQ?.groups_title ? (eD = !tk && (0, a.jsxs)("div", {
+                className: "absolute start-3 top-3 z-20 flex items-center gap-2",
+                children: [(0, a.jsx)(Z.a, {
+                    groups: tX,
+                    groupsTitle: tQ?.groups_title,
+                    selectedGroupKey: tZ?.key ?? null,
+                    onSelectGroup: e => {
+                        tA(e), tO(!1), tG(null), tz(null), tH(null), t$(null)
+                    }
+                }), 1 === t1.length && (0, a.jsx)(Z.c, {
+                    route: t1[0].route
+                }), tP && (0, a.jsx)(Z.b, {
+                    onClick: () => {
+                        tG(null), t$(null), tO(!1), (0, y.b)(ts, ty, "reset_view"), tD(ec)
+                    }
+                })]
+            }), e4[101] = t1, e4[102] = tk, e4[103] = tX, e4[104] = ts, e4[105] = tZ, e4[106] = ty, e4[107] = tP, e4[108] = tQ?.groups_title, e4[109] = eD) : eD = e4[109], e4[110] === Symbol.for("react.memo_cache_sentinel") ? (eB = (0, a.jsx)("div", {
+                className: (0, u.b)(el.a.frame, "pointer-events-none absolute inset-0 z-2 ring-1 ring-border/50 ring-inset")
+            }), e4[110] = eB) : eB = e4[110], e4[111] !== tp || e4[112] !== e6 || e4[113] !== t1 || e4[114] !== tl?.onCardsShown || e4[115] !== t8 || e4[116] !== tS || e4[117] !== tk || e4[118] !== t2 || e4[119] !== tB || e4[120] !== tF || e4[121] !== t5 || e4[122] !== tm ? (eG = !tk && (0, a.jsxs)("div", {
+                className: "pointer-events-none absolute inset-x-0 bottom-0 z-20 flex flex-col",
+                children: [(0, a.jsx)(D.a, {
+                    isFullscreen: !1,
+                    openTarget: tS ? "external-browser" : void 0
+                }), t5 && (0, a.jsx)(er.a, {
+                    contentReferenceIndex: e6,
+                    isFullscreen: !1,
+                    onHoverBusiness: t$,
+                    onPlacesShown: tl?.onCardsShown,
+                    onOpenEntity: tm && !tp ? void 0 : t8,
+                    places: t2,
+                    selectedBusinessKey: tB,
+                    selectedCardKey: tF,
+                    standalone: tm,
+                    route: 1 === t1.length ? t1[0].route : null
+                })]
+            }), e4[111] = tp, e4[112] = e6, e4[113] = t1, e4[114] = tl?.onCardsShown, e4[115] = t8, e4[116] = tS, e4[117] = tk, e4[118] = t2, e4[119] = tB, e4[120] = tF, e4[121] = t5, e4[122] = tm, e4[123] = eG) : eG = e4[123], e4[124] !== e7 || e4[125] !== tc || e4[126] !== tq || e4[127] !== tS || e4[128] !== t_ || e4[129] !== tw ? (eF = t_ && e7 && !tS && (0, a.jsx)("div", {
+                className: "absolute end-3 top-3 z-20",
+                children: (0, a.jsx)(i.a, {
+                    content: tc,
+                    children: (0, a.jsx)(v.a, {
+                        id: tw,
+                        "aria-label": tc,
+                        color: "mapSurface",
+                        radius: "full",
+                        size: "inputIcon",
+                        onClick: () => void tq(),
+                        children: (0, a.jsx)(w.N, {})
+                    })
+                })
+            }), e4[124] = e7, e4[125] = tc, e4[126] = tq, e4[127] = tS, e4[128] = t_, e4[129] = tw, e4[130] = eF) : eF = e4[130], e4[131] !== nd || e4[132] !== eD || e4[133] !== eG || e4[134] !== eF ? (ez = (0, a.jsxs)("div", {
+                className: eL,
+                children: [nd, eD, eB, eG, eF]
+            }), e4[131] = nd, e4[132] = eD, e4[133] = eG, e4[134] = eF, e4[135] = ez) : ez = e4[135], e4[136] !== eP || e4[137] !== eO || e4[138] !== ez ? (eK = (0, a.jsx)("div", {
+                className: eP,
+                style: eO,
+                children: ez
+            }), e4[136] = eP, e4[137] = eO, e4[138] = ez, e4[139] = eK) : eK = e4[139], e4[140] !== eT || e4[141] !== eA || e4[142] !== eK ? (eH = (0, a.jsx)("div", {
+                className: eT,
+                style: eA,
+                children: eK
+            }), e4[140] = eT, e4[141] = eA, e4[142] = eK, e4[143] = eH) : eH = e4[143], e4[144] !== eE || e4[145] !== eH ? (eW = (0, a.jsx)("div", {
+                className: eE,
+                children: eH
+            }), e4[144] = eE, e4[145] = eH, e4[146] = eW) : eW = e4[146], e4[147] !== t3 || e4[148] !== eR || e4[149] !== ek || e4[150] !== eW || e4[151] !== tw ? (e$ = (0, a.jsxs)("div", {
+                className: eR,
+                ref: ek,
+                "data-testid": "businesses-map-widget",
+                "data-immersive-map-inline": tw,
+                children: [eW, t3]
+            }), e4[147] = t3, e4[148] = eR, e4[149] = ek, e4[150] = eW, e4[151] = tw, e4[152] = e$) : e$ = e4[152];
+            let nm = e$;
+            if (tS) {
+                let e, t, n;
+                return e4[153] !== ta || e4[154] !== tw ? (e = {
+                    "aria-describedby": void 0,
+                    onCloseAutoFocus: e => {
+                        let t = tf.current;
+                        if (tf.current = null, null != t && null != ta) {
+                            e.preventDefault(), ta(t);
+                            return
+                        }
+                        let n = document.getElementById(tw);
+                        null != n && (e.preventDefault(), n.focus({
+                            preventScroll: !0
+                        }))
+                    }
+                }, e4[153] = ta, e4[154] = tw, e4[155] = e) : e = e4[155], e4[156] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)(_.e, {
+                    className: "sr-only",
+                    children: (0, a.jsx)(b.a, {
+                        id: "chatgpt.contentReferences.map.title",
+                        defaultMessage: "Map",
+                        description: "Title of the fullscreen places map"
+                    })
+                }), e4[156] = t) : t = e4[156], e4[157] !== nm || e4[158] !== e ? (n = (0, a.jsxs)(_.a, {
+                    contentClassName: "h-full w-full",
+                    contentProps: e,
+                    onOpenChange: tM,
+                    open: !0,
+                    unstyledContent: !0,
+                    viewportSized: !0,
+                    children: [t, nm]
+                }), e4[157] = nm, e4[158] = e, e4[159] = n) : n = e4[159], n
+            }
+            if (!tJ?.address) return nm;
+            e4[160] !== tJ.address || e4[161] !== tJ.name ? (eY = [tJ.name, tJ.address].filter(Boolean), e4[160] = tJ.address, e4[161] = tJ.name, e4[162] = eY) : eY = e4[162];
+            let np = eY.join(", ");
+            e4[163] !== tJ ? (eV = (0, N.a)((0, L.e)(tJ) ?? "") || null, e4[163] = tJ, e4[164] = eV) : eV = e4[164];
+            let nf = eV;
+            e4[165] === Symbol.for("react.memo_cache_sentinel") ? (eq = (0, a.jsx)("span", {
+                className: "flex size-6 shrink-0 items-center justify-center",
+                children: (0, a.jsx)(I.a, {
+                    asset: es.a
+                })
+            }), e4[165] = eq) : eq = e4[165], e4[166] !== nf || e4[167] !== np ? (eQ = null == nf ? np : (0, a.jsx)(E.a, {
+                className: "cursor-interaction hover:underline",
+                href: nf,
+                initiator: "markdown_link_click",
+                children: np
+            }), e4[166] = nf, e4[167] = np, e4[168] = eQ) : eQ = e4[168], e4[169] !== eQ ? (eU = (0, a.jsx)("span", {
+                className: "min-w-0 flex-1 text-sm font-medium break-words whitespace-normal select-text",
+                children: eQ
+            }), e4[169] = eQ, e4[170] = eU) : eU = e4[170], e4[171] !== to ? (eJ = to.formatMessage({
+                id: "chatgpt.eventSidebar.toggleVenueMap",
+                defaultMessage: "Toggle venue map",
+                description: "Button beside an event venue address that shows or hides the venue map."
+            }), e4[171] = to, e4[172] = eJ) : eJ = e4[172], e4[173] !== tC ? (eX = () => {
+                tC && tV.current?.abort(), tN(!tC)
+            }, e4[173] = tC, e4[174] = eX) : eX = e4[174];
+            let ng = tC && "rotate-180";
+            e4[175] !== ng ? (eZ = (0, u.b)("transition-transform", ng), e4[175] = ng, e4[176] = eZ) : eZ = e4[176], e4[177] !== eZ ? (e1 = (0, a.jsx)(w.$b, {
+                className: eZ
+            }), e4[177] = eZ, e4[178] = e1) : e1 = e4[178], e4[179] !== tC || e4[180] !== eJ || e4[181] !== eX || e4[182] !== e1 || e4[183] !== tj ? (e0 = (0, a.jsx)(v.a, {
+                "aria-controls": tj,
+                "aria-expanded": tC,
+                "aria-label": eJ,
+                color: "ghostSecondary",
+                size: "icon",
+                className: "shrink-0",
+                onClick: eX,
+                children: e1
+            }), e4[179] = tC, e4[180] = eJ, e4[181] = eX, e4[182] = e1, e4[183] = tj, e4[184] = e0) : e0 = e4[184], e4[185] !== eU || e4[186] !== e0 ? (e2 = (0, a.jsxs)("div", {
+                className: "flex min-h-11 items-center gap-4 py-2",
+                children: [eq, eU, e0]
+            }), e4[185] = eU, e4[186] = e0, e4[187] = e2) : e2 = e4[187];
+            let nh = tC && nm;
+            return e4[188] !== nh || e4[189] !== tj ? (e3 = (0, a.jsx)("div", {
+                id: tj,
+                children: nh
+            }), e4[188] = nh, e4[189] = tj, e4[190] = e3) : e3 = e4[190], e4[191] !== e2 || e4[192] !== e3 ? (e5 = (0, a.jsxs)("div", {
+                className: "-mt-3 w-full min-w-0 border-t border-default pb-2",
+                children: [e2, e3]
+            }), e4[191] = e2, e4[192] = e3, e4[193] = e5) : e5 = e4[193], e5
+        }
+
+        function ec(e) {
+            return e + 1
+        }
+
+        function ed(e) {
+            return e.mapEntityId
+        }
+
+        function em(e) {
+            let t, n, l, s = (0, r.c)(5),
+                {
+                    places: i
+                } = e;
+            return s[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, a.jsx)("div", {
+                className: "font-medium text-default",
+                children: (0, a.jsx)(b.a, {
+                    id: "chatgpt.contentReferences.localResults.title",
+                    defaultMessage: "Local results",
+                    description: "Title for a local business map content reference card"
+                })
+            }), s[0] = t) : t = s[0], s[1] !== i ? (n = i.slice(0, 5).map(ep), s[1] = i, s[2] = n) : n = s[2], s[3] !== n ? (l = (0, a.jsxs)("div", {
+                className: "rounded-lg border border-subtle bg-surface-secondary/92 px-3 py-2 text-sm text-default",
+                "data-testid": "chatgpt-content-reference-card",
+                children: [t, (0, a.jsx)("div", {
+                    className: "mt-3 flex flex-col gap-2",
+                    children: n
+                })]
+            }), s[3] = n, s[4] = l) : l = s[4], l
+        }
+
+        function ep(e, t) {
+            return (0, a.jsx)(ef, {
+                place: e
+            }, `${e.name}-${String(t)}`)
+        }
+
+        function ef(e) {
+            var t, n, l, s;
+            let i, o, u, c, d, m, p, f, h, b, y, v, _, I = (0, r.c)(28),
+                {
+                    place: w
+                } = e;
+            I[0] !== w ? (t = w, u = null == (i = (0, g.a)(t.provider_url) ?? (0, g.a)(t.website_url)) ? null : (0, N.a)(i) ?? null, I[0] = w, I[1] = u) : u = I[1];
+            let j = u,
+                C = (0, x.a)();
+            I[2] !== C || I[3] !== w ? (n = w, l = C, c = null == n.rating ? null : null == n.review_count ? l.formatNumber(n.rating, {
+                maximumFractionDigits: 1,
+                minimumFractionDigits: 1
+            }) : `${l.formatNumber(n.rating,{maximumFractionDigits:1,minimumFractionDigits:1})} (${l.formatNumber(n.review_count)})`, I[2] = C, I[3] = w, I[4] = c) : c = I[4];
+            let S = c;
+            I[5] !== w.address ? (d = (0, g.a)(w.address), I[5] = w.address, I[6] = d) : d = I[6], I[7] !== w.price_str ? (m = (0, g.a)(w.price_str), I[7] = w.price_str, I[8] = m) : m = I[8], I[9] !== S || I[10] !== d || I[11] !== m ? (p = [d, S, m].filter(eh), I[9] = S, I[10] = d, I[11] = m, I[12] = p) : p = I[12];
+            let M = p;
+            I[13] !== w ? (s = w, f = null == (o = s.categories?.map(g.a).filter(e => null != e)) || 0 === o.length ? null : o.join(", "), I[13] = w, I[14] = f) : f = I[14];
+            let R = f;
+            return I[15] !== j || I[16] !== w.name ? (h = null == j ? w.name : (0, a.jsx)(D.b, {
+                href: j,
+                children: w.name
+            }), I[15] = j, I[16] = w.name, I[17] = h) : h = I[17], I[18] !== h ? (b = (0, a.jsx)("div", {
+                className: "font-medium text-default",
+                children: h
+            }), I[18] = h, I[19] = b) : b = I[19], I[20] !== M ? (y = 0 === M.length ? null : (0, a.jsx)("div", {
+                className: "mt-1 flex flex-wrap gap-x-1 text-secondary",
+                children: M.map(eg)
+            }), I[20] = M, I[21] = y) : y = I[21], I[22] !== R ? (v = null == R ? null : (0, a.jsx)("div", {
+                className: "mt-1 text-secondary",
+                children: R
+            }), I[22] = R, I[23] = v) : v = I[23], I[24] !== v || I[25] !== b || I[26] !== y ? (_ = (0, a.jsxs)("div", {
+                className: "rounded-md border border-subtle p-2",
+                children: [b, y, v]
+            }), I[24] = v, I[25] = b, I[26] = y, I[27] = _) : _ = I[27], _
+        }
+
+        function eg(e, t) {
+            return (0, a.jsxs)("span", {
+                children: [0 === t ? null : (0, a.jsx)("span", {
+                    "aria-hidden": !0,
+                    children: "· "
+                }), e]
+            }, e)
+        }
+
+        function eh(e) {
+            return null != e
+        }
+
+        function ex(e) {
+            return "number" == typeof e.start_idx && e.start_idx < 4
+        }
+
+        function eb(e) {
+            return null != e.latitude && null != e.longitude
+        }
+    }),
+    FCsE: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("t4av"),
+            s = n("D015"),
+            i = n("on57"),
+            o = n("suct"),
+            u = n("iodE"),
+            c = n("IPUh"),
+            d = n("BolX"),
+            m = n("zd8w"),
+            p = n("Wf1j"),
+            f = n("oyxz"),
+            g = n("X3K1"),
+            h = n("T1PX"),
+            x = n("yGJW"),
+            b = n("OWtl");
+        n("V8uZ");
+        var y = n("HgLj"),
+            v = n("dQRk"),
+            _ = n("TUMj"),
+            I = n("b2ei"),
+            w = n("xhWJ"),
+            j = n("RgGw"),
+            C = n("F0zR"),
+            N = n("phAi"),
+            S = n("PrhM");
+
+        function M(e, t) {
+            return (0, a.jsxs)("div", {
+                className: (0, i.b)(S.a.card, "flex w-4/5 max-w-80 items-center gap-3 p-4 md:w-full md:max-w-none"),
+                "aria-hidden": !0,
+                children: [(0, a.jsx)(g.a, {
+                    size: "thumbnail",
+                    variant: "chatgpt"
+                }), (0, a.jsx)(g.b, {
+                    lines: 3,
+                    variant: "chatgpt"
+                })]
+            }, `loading-${t}`)
+        }
+
+        function R(e) {
+            let t, n, l, s, i, o, d, p, f, g = (0, r.c)(23);
+            g[0] !== e ? ({
+                onShown: t,
+                place: n,
+                ref: s,
+                ...l
+            } = e, g[0] = e, g[1] = t, g[2] = n, g[3] = l, g[4] = s) : (t = g[1], n = g[2], l = g[3], s = g[4]);
+            let h = (0, u.a)(),
+                x = (0, m.useRef)(null);
+            g[5] !== t || g[6] !== n ? (i = e => {
+                e.some(k) && t?.(n)
+            }, g[5] = t, g[6] = n, g[7] = i) : i = g[7];
+            let b = (0, m.useEffectEvent)(i),
+                v = null != t;
+            g[8] !== h || g[9] !== b || g[10] !== v ? (o = () => {
+                if (!h || !v || null == x.current) return;
+                let e = new IntersectionObserver(e => b(e), {
+                    threshold: 0
+                });
+                return e.observe(x.current), () => e.disconnect()
+            }, g[8] = h, g[9] = b, g[10] = v, g[11] = o) : o = g[11], g[12] !== h || g[13] !== n || g[14] !== v ? (d = [h, n, v], g[12] = h, g[13] = n, g[14] = v, g[15] = d) : d = g[15], (0, m.useEffect)(o, d), g[16] !== s ? (p = (0, y.a)(x, s), g[16] = s, g[17] = p) : p = g[17];
+            let _ = !h,
+                I = !h || void 0;
+            return g[18] !== l || g[19] !== p || g[20] !== _ || g[21] !== I ? (f = (0, a.jsx)(c.a.div, {
+                ...l,
+                ref: p,
+                inert: _,
+                "aria-hidden": I
+            }), g[18] = l, g[19] = p, g[20] = _, g[21] = I, g[22] = f) : f = g[22], f
+        }
+
+        function k(e) {
+            return e.isIntersecting
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, u, c, g, y, k, E = (0, r.c)(21),
+                    {
+                        contentReferenceIndex: T,
+                        isFullscreen: A,
+                        isLoading: P,
+                        onOpenEntity: O,
+                        onHoverBusiness: L,
+                        places: D,
+                        onPlacesShown: B,
+                        route: G,
+                        selectedBusinessKey: F,
+                        selectedCardKey: z,
+                        standalone: K
+                    } = e,
+                    H = void 0 !== P && P,
+                    W = void 0 !== K && K,
+                    $ = (0, d.y)(b.a),
+                    Y = (0, p.a)(),
+                    V = (0, _.d)(),
+                    q = (0, h.a)(),
+                    Q = (0, m.useRef)(null),
+                    U = (0, j.g)(G, D.map(j.d));
+                E[0] === Symbol.for("react.memo_cache_sentinel") ? (t = () => {
+                    Q.current?.scrollIntoView({
+                        block: "nearest",
+                        inline: "nearest"
+                    })
+                }, E[0] = t) : t = E[0], E[1] !== F || E[2] !== z ? (n = [F, z], E[1] = F, E[2] = z, E[3] = n) : n = E[3], (0, m.useEffect)(t, n);
+                let J = N.a;
+                E[4] !== Y ? (u = Y.formatMessage({
+                    id: "chatgpt.contentReferences.map.results",
+                    defaultMessage: "Map places",
+                    description: "Accessible name of the scrollable business cards displayed on the places map"
+                }), E[4] = Y, E[5] = u) : u = E[5];
+                let X = o.a,
+                    Z = D.map((e, t) => {
+                        let n = (0, j.d)(e),
+                            r = (0, j.h)(D, t, U),
+                            o = G?.legs[r - 1],
+                            u = null == G ? n : `${n}:${r}`,
+                            c = null != z ? z === u : F === n && D.findIndex(e => (0, j.d)(e) === n) === t,
+                            d = function(e) {
+                                let {
+                                    duration: t,
+                                    index: n,
+                                    route: r,
+                                    total: l
+                                } = e;
+                                return null == r ? null : null != t ? (0, a.jsx)(f.a, {
+                                    id: "chatgpt.places.route_stops.card.incoming_leg_duration",
+                                    defaultMessage: "{routeMode, select, walking {Walk} cycling {Bike} transit {Transit} other {Drive}} ~{duration}",
+                                    description: "Travel mode and approximate time from the preceding stop to this destination card in the map carousel; duration is localized",
+                                    values: {
+                                        routeMode: r.route_mode,
+                                        duration: t
+                                    }
+                                }) : 0 === n ? (0, a.jsx)(f.a, {
+                                    id: "chatgpt.places.route_stops.card.role.start",
+                                    defaultMessage: "Start here",
+                                    description: "Role label on the first place in the ordered route"
+                                }) : n === l - 1 ? (0, a.jsx)(f.a, {
+                                    id: "chatgpt.places.route_stops.card.role.destination",
+                                    defaultMessage: "Destination",
+                                    description: "Role label on the final place in the ordered route"
+                                }) : (0, a.jsx)(f.a, {
+                                    id: "chatgpt.places.route_stops.card.role.intermediate",
+                                    defaultMessage: "Stop {stopNumber}",
+                                    description: "Role label on an intermediate route stop; stopNumber is its one-based route position",
+                                    values: {
+                                        stopNumber: n + 1
+                                    }
+                                })
+                            }({
+                                duration: (0, C.a)(Y, o?.duration_seconds),
+                                index: t,
+                                route: G,
+                                total: D.length
+                            });
+                        return (0, a.jsx)(R, {
+                            ref: c ? Q : void 0,
+                            className: (0, i.b)(S.a.card, S.a.item, A ? "w-4/5 max-w-80 md:w-full md:max-w-none" : "w-80 max-w-full"),
+                            onMouseEnter: () => L?.(n),
+                            onMouseLeave: () => L?.(null),
+                            onFocus: () => L?.(n, !1),
+                            onBlur: () => L?.(null, !1),
+                            role: "listitem",
+                            place: e,
+                            onShown: null == B ? void 0 : e => B([e]),
+                            initial: !q && !!A && {
+                                opacity: 0
+                            },
+                            animate: {
+                                opacity: 1
+                            },
+                            exit: {
+                                opacity: 0
+                            },
+                            transition: {
+                                duration: .15 * !q
+                            },
+                            children: (0, a.jsx)(I.a, {
+                                contentReferenceIndex: T,
+                                isSelected: c,
+                                mapContextLabel: d,
+                                onOpenEntity: null == O ? void 0 : () => {
+                                    if (!A && null != V) {
+                                        let n = $.get(v.j, V.conversationId) ?? void 0;
+                                        (0, x.a)($, l.b, {
+                                            conversationId: n,
+                                            entityId: "string" == typeof e.id ? e.id : void 0,
+                                            entityName: e.name,
+                                            entityIndex: (0, s.a)(t)
+                                        }), (0, x.a)($, l.d, {
+                                            conversationId: n,
+                                            messageId: V.contentReferenceMessageIds?.[T] ?? V.messageId,
+                                            entityId: (0, w.a)(e),
+                                            source: "CHATGPT_PLACES_ENTITY_DETAILS_SOURCE_BUSINESS_LIST"
+                                        })
+                                    }
+                                    O(e, u)
+                                },
+                                place: e,
+                                presentation: "card",
+                                standalone: W
+                            })
+                        }, u)
+                    });
+                return E[6] !== X || E[7] !== Z ? (c = (0, a.jsx)(X, {
+                    initial: !1,
+                    children: Z
+                }), E[6] = X, E[7] = Z, E[8] = c) : c = E[8], E[9] !== H ? (g = H && (0, a.jsx)("div", {
+                    className: "sr-only",
+                    role: "status",
+                    children: (0, a.jsx)(f.a, {
+                        id: "chatgpt.map.loadingPlaces",
+                        defaultMessage: "Searching for places…",
+                        description: "Screen reader status while a search for businesses in the fullscreen map is still generating results"
+                    })
+                }), E[9] = H, E[10] = g) : g = E[10], E[11] !== H || E[12] !== D.length ? (y = H && Array.from({
+                    length: 0 === D.length ? 4 : 2
+                }, M), E[11] = H, E[12] = D.length, E[13] = y) : y = E[13], E[14] !== J || E[15] !== A || E[16] !== g || E[17] !== y || E[18] !== u || E[19] !== c ? (k = (0, a.jsxs)(J, {
+                    as: "div",
+                    isFullscreen: A,
+                    label: u,
+                    children: [c, g, y]
+                }), E[14] = J, E[15] = A, E[16] = g, E[17] = y, E[18] = u, E[19] = c, E[20] = k) : k = E[20], k
+            }
+        })
+    }),
+    phAi: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("on57"),
+            s = n("zd8w"),
+            i = n("PrhM");
+
+        function o(e) {
+            return e.preventDefault()
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, u, c, d, m, p, f = (0, r.c)(13),
+                    {
+                        as: g,
+                        ref: h,
+                        children: x,
+                        isFullscreen: b,
+                        label: y
+                    } = e,
+                    v = (0, s.useRef)(null),
+                    _ = b && i.a.fullscreen;
+                return f[0] !== _ ? (t = (0, l.b)(i.a.results, _, "m-0 min-h-0 list-none"), f[0] = _, f[1] = t) : t = f[1], f[2] === Symbol.for("react.memo_cache_sentinel") ? (n = e => {
+                    v.current?.didDrag && (e.preventDefault(), e.stopPropagation(), v.current = null)
+                }, f[2] = n) : n = f[2], f[3] === Symbol.for("react.memo_cache_sentinel") ? (u = e => {
+                    "mouse" === e.pointerType && 0 === e.button && e.currentTarget.scrollWidth > e.currentTarget.clientWidth && (v.current = {
+                        pointerId: e.pointerId,
+                        startX: e.clientX,
+                        scrollLeft: e.currentTarget.scrollLeft,
+                        didDrag: !1
+                    })
+                }, c = e => {
+                    if (1 !== e.buttons) {
+                        v.current = null;
+                        return
+                    }
+                    let t = v.current;
+                    if (null == t || t.pointerId !== e.pointerId) return;
+                    let n = e.clientX - t.startX;
+                    !t.didDrag && 4 > Math.abs(n) || (t.didDrag || (t.didDrag = !0, e.currentTarget.setPointerCapture(e.pointerId)), e.preventDefault(), e.currentTarget.scrollLeft = t.scrollLeft - n)
+                }, d = e => {
+                    let t = v.current;
+                    null != t && t.pointerId === e.pointerId && (t.didDrag && e.currentTarget.releasePointerCapture(e.pointerId), t.pointerId = null)
+                }, m = () => {
+                    v.current = null
+                }, f[3] = u, f[4] = c, f[5] = d, f[6] = m) : (u = f[3], c = f[4], d = f[5], m = f[6]), f[7] !== g || f[8] !== x || f[9] !== y || f[10] !== h || f[11] !== t ? (p = (0, a.jsx)(g, {
+                    ref: h,
+                    className: t,
+                    "aria-label": y,
+                    role: "list",
+                    onClickCapture: n,
+                    onDragStart: o,
+                    onPointerDown: u,
+                    onPointerMove: c,
+                    onPointerUp: d,
+                    onPointerCancel: m,
+                    children: x
+                }), f[7] = g, f[8] = x, f[9] = y, f[10] = h, f[11] = t, f[12] = p) : p = f[12], p
+            }
+        })
+    }),
+    Nhwt: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("r6FN"),
+            s = n("BolX"),
+            i = n("zd8w"),
+            o = n("oyxz"),
+            u = n("bf6R"),
+            c = n("yGJW"),
+            d = n("OWtl"),
+            m = n("udGC"),
+            p = n("QaQr"),
+            f = n("OX9U"),
+            g = n("ITxD"),
+            h = n("SZLI");
+        let x = "CHATGPT_PRECISE_LOCATION_ENTRY_POINT_MESSAGE_FOOTER";
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, b, y, v, _, I, w = (0, r.c)(23),
+                    {
+                        conversationId: j,
+                        isTemporaryChat: C,
+                        isReadOnly: N,
+                        messageId: S,
+                        preciseLocationInfo: M,
+                        trackImpression: R
+                    } = e,
+                    k = (0, s.y)(d.a),
+                    E = (0, s.z)(g.a),
+                    T = (0, s.z)(f.a),
+                    [A, P] = (0, i.useState)(!1),
+                    O = M.location_used?.trim() ? M.location_used : null,
+                    L = !N && !0 === M.requested && !0 !== M.location_is_precise && E.enabled && "granted" !== T;
+                w[0] !== k ? (t = () => {
+                    (0, c.a)(k, l.d, {
+                        entryPoint: x
+                    })
+                }, w[0] = k, w[1] = t) : t = w[1];
+                let D = (0, i.useEffectEvent)(t);
+                return (w[2] !== D || w[3] !== L || w[4] !== R ? (n = () => {
+                    L && R && D()
+                }, w[2] = D, w[3] = L, w[4] = R, w[5] = n) : n = w[5], w[6] !== L || w[7] !== R ? (b = [L, R], w[6] = L, w[7] = R, w[8] = b) : b = w[8], (0, i.useEffect)(n, b), null != O || L) ? (w[9] === Symbol.for("react.memo_cache_sentinel") ? (y = (0, a.jsx)(u.og, {}), w[9] = y) : y = w[9], w[10] !== O ? (v = null != O ? (0, a.jsx)("span", {
+                    className: "min-w-0 truncate",
+                    children: O
+                }) : null, w[10] = O, w[11] = v) : v = w[11], w[12] !== j || w[13] !== C || w[14] !== O || w[15] !== S || w[16] !== A || w[17] !== k || w[18] !== L ? (_ = L ? (0, a.jsxs)(a.Fragment, {
+                    children: [null != O ? (0, a.jsx)("span", {
+                        "aria-hidden": !0,
+                        className: "before:content-['·']"
+                    }) : null, (0, a.jsx)("button", {
+                        className: "shrink-0 cursor-interaction underline underline-offset-2 select-none disabled:cursor-default disabled:opacity-50",
+                        disabled: A,
+                        type: "button",
+                        onClick: () => {
+                            P(!0);
+                            let e = k.get(m.f, j)?.banner_info;
+                            e?.name === "precise-location-banner" && (0, m.g)(k, j, e), (0, h.a)(k, x, "CHATGPT_LOCATION_PERMISSION_INTERACTION_STATUS_ROW").then(async e => {
+                                e && null != S && await (0, p.a)(k, {
+                                    conversationId: j,
+                                    isTemporaryChat: C,
+                                    messageId: S,
+                                    entryPoint: x
+                                })
+                            }).finally(() => P(!1))
+                        },
+                        children: (0, a.jsx)(o.a, {
+                            id: "chatgptConversations.preciseLocation.footer.button.enable",
+                            defaultMessage: "Use precise location",
+                            description: "Link beneath a ChatGPT response requesting permission to share precise location and regenerate the latest response using it"
+                        })
+                    })]
+                }) : null, w[12] = j, w[13] = C, w[14] = O, w[15] = S, w[16] = A, w[17] = k, w[18] = L, w[19] = _) : _ = w[19], w[20] !== v || w[21] !== _ ? (I = (0, a.jsxs)("div", {
+                    className: "my-2 flex min-w-0 items-center gap-1.5 text-sm text-secondary",
+                    "data-testid": "conversation-turn-location-footer",
+                    children: [y, v, _]
+                }), w[20] = v, w[21] = _, w[22] = I) : I = w[22], I) : null
+            }
+        })
+    }),
+    JQAz: (function(e, t, n) {
+        var a = n("ABep"),
+            r = n("QosV"),
+            l = n("bFOP"),
+            s = n("BOYb"),
+            i = n("on57"),
+            o = n("zd8w"),
+            u = n("Wf1j"),
+            c = n("oyxz"),
+            d = n("NkEl"),
+            m = n("ZtSy"),
+            p = n("KxMp"),
+            f = n("fhpB"),
+            g = n("zSQm"),
+            h = n("WAdu"),
+            x = n("vYmP");
+
+        function b(e) {
+            return [e.label, e.title, e.url, e.snippet]
+        }
+
+        function y(e) {
+            let t, n, l, s, i = (0, r.c)(16),
+                {
+                    children: o,
+                    className: d,
+                    currentIndex: m,
+                    setCurrentIndex: p,
+                    sourceCount: g
+                } = e,
+                h = (0, u.a)();
+            i[0] !== p || i[1] !== g ? (t = e => {
+                p(t => (t + e + g) % g)
+            }, i[0] = p, i[1] = g, i[2] = t) : t = i[2];
+            let x = t;
+            return i[3] !== x || i[4] !== g ? (n = e => {
+                g > 1 && ("ArrowLeft" === e.key || "ArrowRight" === e.key) && (e.preventDefault(), x("ArrowLeft" === e.key ? -1 : 1))
+            }, i[3] = x, i[4] = g, i[5] = n) : n = i[5], i[6] !== m || i[7] !== h || i[8] !== x || i[9] !== g ? (l = g > 1 ? (0, a.jsxs)("div", {
+                className: "flex h-9 items-center justify-between gap-1.5",
+                children: [(0, a.jsxs)("div", {
+                    className: "mx-1.5 flex gap-1 text-secondary",
+                    children: [(0, a.jsx)("button", {
+                        type: "button",
+                        className: "h-6 w-6 cursor-interaction rounded-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+                        "aria-label": h.formatMessage({
+                            id: "chatgpt.citation.hover.previousSource",
+                            defaultMessage: "Previous source",
+                            description: "Accessible label for a button that moves to the previous web citation source in a citation hover carousel"
+                        }),
+                        onClick: () => x(-1),
+                        children: (0, a.jsx)(f.a, {
+                            className: "icon-sm m-auto"
+                        })
+                    }), (0, a.jsx)("button", {
+                        type: "button",
+                        className: "h-6 w-6 cursor-interaction rounded-md focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none",
+                        "aria-label": h.formatMessage({
+                            id: "chatgpt.citation.hover.nextSource",
+                            defaultMessage: "Next source",
+                            description: "Accessible label for a button that moves to the next web citation source in a citation hover carousel"
+                        }),
+                        onClick: () => x(1),
+                        children: (0, a.jsx)(f.a, {
+                            className: "icon-sm m-auto rotate-180"
+                        })
+                    })]
+                }), (0, a.jsx)("span", {
+                    className: "mx-3.5 text-tertiary",
+                    children: (0, a.jsx)(c.a, {
+                        id: "chatgpt.citation.hover.sourcePosition",
+                        defaultMessage: "{currentSourceNumber}/{sourceCount}",
+                        description: "Position label for the active source in a web citation hover carousel",
+                        values: {
+                            currentSourceNumber: m + 1,
+                            sourceCount: g
+                        }
+                    })
+                })]
+            }) : null, i[6] = m, i[7] = h, i[8] = x, i[9] = g, i[10] = l) : l = i[10], i[11] !== o || i[12] !== d || i[13] !== n || i[14] !== l ? (s = (0, a.jsxs)("div", {
+                className: d,
+                role: "presentation",
+                onKeyDown: n,
+                tabIndex: -1,
+                children: [l, o]
+            }), i[11] = o, i[12] = d, i[13] = n, i[14] = l, i[15] = s) : s = i[15], s
+        }
+
+        function v(e) {
+            var t;
+            let n, l, s, d, f, g, x, b, v, _, I = (0, r.c)(32),
+                {
+                    currentSourceIndex: w,
+                    onClick: j,
+                    setCurrentSourceIndex: C,
+                    sources: N
+                } = e,
+                S = (0, u.a)(),
+                M = (0, o.useContext)(h.a),
+                R = N[w] ?? N[0];
+            if (null == R) return null;
+            I[0] !== S || I[1] !== R.pubDate ? (n = null == R.pubDate ? null : S.formatDate(1e3 * R.pubDate, {
+                year: "numeric",
+                month: "long",
+                day: "numeric"
+            }), I[0] = S, I[1] = R.pubDate, I[2] = n) : n = I[2];
+            let k = n,
+                E = N.length;
+            I[3] === Symbol.for("react.memo_cache_sentinel") ? (l = (0, i.b)("flex cursor-interaction flex-col gap-2 p-3 no-underline outline-none", "text-default focus-visible:ring-2 focus-visible:ring-ring"), I[3] = l) : l = I[3];
+            let T = R.href,
+                A = "restricted" === M;
+            I[4] !== R ? (s = [null != (t = R).title && t.title !== t.label ? `${t.label}: ${t.title}` : t.label, t.url].join(", "), I[4] = R, I[5] = s) : s = I[5];
+            let P = "restricted" !== M;
+            return I[6] !== R.href || I[7] !== P ? (d = (0, a.jsx)(p.a, {
+                href: R.href,
+                className: "h-4 w-4 shrink-0 text-current",
+                loadRemote: P
+            }), I[6] = R.href, I[7] = P, I[8] = d) : d = I[8], I[9] !== R.label ? (f = (0, a.jsx)("span", {
+                className: "truncate text-default",
+                children: R.label
+            }), I[9] = R.label, I[10] = f) : f = I[10], I[11] !== d || I[12] !== f ? (g = (0, a.jsxs)("span", {
+                className: "flex min-w-0 items-center gap-1.5",
+                children: [d, f]
+            }), I[11] = d, I[12] = f, I[13] = g) : g = I[13], I[14] !== R.title ? (x = (0, a.jsx)("span", {
+                className: "line-clamp-2 text-sm leading-5 font-medium break-words text-default",
+                children: R.title
+            }), I[14] = R.title, I[15] = x) : x = I[15], I[16] !== k || I[17] !== R.snippet ? (b = null != k || R.snippet ? (0, a.jsx)("span", {
+                className: "line-clamp-2 text-sm leading-5 break-words text-secondary",
+                children: null != k && R.snippet ? (0, a.jsx)(c.a, {
+                    id: "chatgpt.citation.hover.publicationSummary",
+                    defaultMessage: "{date} — {snippet}",
+                    description: "Publication metadata below the article title in a web citation popup. Date is the formatted publication date; snippet is the source-provided summary. Both values are present, and the combined text is limited to two visible lines.",
+                    values: {
+                        date: k,
+                        snippet: R.snippet
+                    }
+                }) : k ?? R.snippet
+            }) : null, I[16] = k, I[17] = R.snippet, I[18] = b) : b = I[18], I[19] !== j || I[20] !== R.href || I[21] !== g || I[22] !== x || I[23] !== b || I[24] !== A || I[25] !== s ? (v = (0, a.jsxs)(m.a, {
+                className: l,
+                href: T,
+                initiator: "markdown_link_click",
+                onClick: j,
+                requiresConfirmation: A,
+                "aria-label": s,
+                children: [g, x, b]
+            }), I[19] = j, I[20] = R.href, I[21] = g, I[22] = x, I[23] = b, I[24] = A, I[25] = s, I[26] = v) : v = I[26], I[27] !== w || I[28] !== C || I[29] !== N.length || I[30] !== v ? (_ = (0, a.jsx)(y, {
+                className: "flex w-full flex-col overflow-hidden text-start text-xs font-normal",
+                currentIndex: w,
+                setCurrentIndex: C,
+                sourceCount: E,
+                children: v
+            }), I[27] = w, I[28] = C, I[29] = N.length, I[30] = v, I[31] = _) : _ = I[31], _
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, i, c, m, f, y, _, I, w, j, C, N, S, M, R, k, E, T, A, P, O, L, D, B = (0, r.c)(61),
+                    {
+                        attributes: G,
+                        isTerminalInline: F,
+                        onClick: z,
+                        sources: K
+                    } = e,
+                    H = (0, u.a)(),
+                    W = (0, o.useContext)(h.a),
+                    [$, Y] = (0, o.useState)(0),
+                    [V, q] = (0, o.useState)(!1);
+                if (B[0] !== G.label || B[1] !== G.supporting_count || B[2] !== G.title || B[3] !== G.url || B[4] !== $ || B[5] !== W || B[6] !== H || B[7] !== V || B[8] !== F || B[9] !== z || B[10] !== K) {
+                    C = Symbol.for("react.early_return_sentinel");
+                    e: {
+                        var Q;
+                        let e, r = "string" == typeof G.label && G.label.trim().length > 0 ? G.label.trim() : null,
+                            o = "string" == typeof G.url && G.url.trim().length > 0 ? G.url.trim() : null,
+                            u = "string" == typeof G.title && G.title.trim().length > 0 ? G.title.trim() : null,
+                            h = function(e) {
+                                if ("string" != typeof e) return 0;
+                                let t = Number(e);
+                                return Number.isInteger(t) && t > 0 ? t : 0
+                            }(G.supporting_count);
+                        if (null == r || null == o) {
+                            C = null;
+                            break e
+                        }
+                        let v = (0, g.a)(o);
+                        if (null == v) {
+                            C = null;
+                            break e
+                        }
+                        let P = (c = function(e, t) {
+                            let n = [];
+                            for (let t of e) {
+                                let e = (0, g.a)(t.url);
+                                null != e && n.push({
+                                    ...t,
+                                    href: e
+                                })
+                            }
+                            return n.length > 0 ? n : [t]
+                        }(null == K || 0 === K.length ? [{
+                            kind: "primary",
+                            label: r,
+                            title: u,
+                            url: o
+                        }] : K, {
+                            kind: "primary",
+                            label: r,
+                            title: u,
+                            url: o,
+                            href: v
+                        }))[$] ?? c[0];
+                        if (null == P) {
+                            C = null;
+                            break e
+                        }
+                        let O = V ? P : c[0];
+                        if (null == O) {
+                            C = null;
+                            break e
+                        }
+                        let L = h > 0 ? H.formatMessage({
+                            id: "chatgpt.citation.aria.additionalSources",
+                            defaultMessage: "{supportingCount, plural, one {# additional source} other {# additional sources}}",
+                            description: "Accessible label segment that reports how many additional web sources support a citation"
+                        }, {
+                            supportingCount: h
+                        }) : null;i = function(e) {
+                            let {
+                                label: t,
+                                supportingSourcesLabel: n,
+                                title: a,
+                                url: r
+                            } = e, l = [null != a && a !== t ? `${t}: ${a}` : t, r];
+                            return null != n && l.push(n), l.join(", ")
+                        }({
+                            label: O.label,
+                            supportingSourcesLabel: L,
+                            title: O.title,
+                            url: O.url
+                        }),
+                        B[31] === Symbol.for("react.memo_cache_sentinel") ? (e = e => {
+                            q(e), e || Y(0)
+                        }, B[31] = e) : e = B[31];
+                        let D = e;n = l.a,
+                        I = !0,
+                        w = V,
+                        j = D,
+                        t = x.a,
+                        m = l.a.Trigger,
+                        N = e => {
+                            if (null != e) return (0, d.b)(e, {
+                                highlight: (0, s.e)() ? "block" : "auto",
+                                text: [...c.flatMap(b), (0, s.e)() ? e.textContent : void 0].join(" ")
+                            })
+                        },
+                        S = i,
+                        M = O.href,
+                        R = (0, a.jsx)(p.a, {
+                            href: O.href,
+                            className: "size-3 overflow-hidden rounded-full text-current [&>img]:rounded-full",
+                            globeSize: 12,
+                            loadRemote: "restricted" !== W
+                        }),
+                        k = V,
+                        E = F,
+                        T = O.label,
+                        B[32] === Symbol.for("react.memo_cache_sentinel") ? (A = () => D(!1), B[32] = A) : A = B[32],
+                        f = z,
+                        y = "restricted" === W,
+                        _ = h > 0 ? (Q = h, `+${Q}`) : void 0
+                    }
+                    B[0] = G.label, B[1] = G.supporting_count, B[2] = G.title, B[3] = G.url, B[4] = $, B[5] = W, B[6] = H, B[7] = V, B[8] = F, B[9] = z, B[10] = K, B[11] = t, B[12] = n, B[13] = i, B[14] = c, B[15] = m, B[16] = f, B[17] = y, B[18] = _, B[19] = I, B[20] = w, B[21] = j, B[22] = C, B[23] = N, B[24] = S, B[25] = M, B[26] = R, B[27] = k, B[28] = E, B[29] = T, B[30] = A
+                } else t = B[11], n = B[12], i = B[13], c = B[14], m = B[15], f = B[16], y = B[17], _ = B[18], I = B[19], w = B[20], j = B[21], C = B[22], N = B[23], S = B[24], M = B[25], R = B[26], k = B[27], E = B[28], T = B[29], A = B[30];
+                return C !== Symbol.for("react.early_return_sentinel") ? C : (B[33] !== t || B[34] !== m || B[35] !== f || B[36] !== y || B[37] !== _ || B[38] !== N || B[39] !== S || B[40] !== M || B[41] !== R || B[42] !== k || B[43] !== E || B[44] !== T || B[45] !== A ? (P = (0, a.jsx)(t, {
+                    ActionWrapper: m,
+                    ref: N,
+                    ariaLabel: S,
+                    href: M,
+                    icon: R,
+                    isActive: k,
+                    isTerminalInline: E,
+                    label: T,
+                    onActivate: A,
+                    onClick: f,
+                    requiresConfirmation: y,
+                    supportingCountLabel: _,
+                    testId: "chatgpt-citation"
+                }), B[33] = t, B[34] = m, B[35] = f, B[36] = y, B[37] = _, B[38] = N, B[39] = S, B[40] = M, B[41] = R, B[42] = k, B[43] = E, B[44] = T, B[45] = A, B[46] = P) : P = B[46], B[47] !== $ || B[48] !== z || B[49] !== c ? (O = (0, a.jsx)(v, {
+                    currentSourceIndex: $,
+                    onClick: z,
+                    setCurrentSourceIndex: Y,
+                    sources: c
+                }), B[47] = $, B[48] = z, B[49] = c, B[50] = O) : O = B[50], B[51] !== i || B[52] !== O ? (L = (0, a.jsx)(l.a.Content, {
+                    "aria-label": i,
+                    align: "start",
+                    alignOffset: 0,
+                    side: "bottom",
+                    sideOffset: 6,
+                    width: 320,
+                    minWidth: "auto",
+                    children: O
+                }), B[51] = i, B[52] = O, B[53] = L) : L = B[53], B[54] !== n || B[55] !== I || B[56] !== w || B[57] !== j || B[58] !== P || B[59] !== L ? (D = (0, a.jsxs)(n, {
+                    showOnHover: I,
+                    open: w,
+                    onOpenChange: j,
+                    children: [P, L]
+                }), B[54] = n, B[55] = I, B[56] = w, B[57] = j, B[58] = P, B[59] = L, B[60] = D) : D = B[60], D)
+            },
+            b: y
+        })
+    })
+};

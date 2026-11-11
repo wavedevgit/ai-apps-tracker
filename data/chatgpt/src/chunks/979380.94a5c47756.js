@@ -1,1 +1,2367 @@
-export const __rspack_esm_ids=[979380];export const __webpack_modules__={TS05:(function(e,t,n){var r=n("BolX"),l=n("tSEg");let o=(0,r.v)(l.a,e=>!1,void 0,{autoDispose:6e4});n.d(t,{},{a:o})}),iaTG:(function(e,t,n){n.d(t,{a:()=>p});var r=n("i5ac"),l=n.n(r),o=n("SKhr"),i=n("L6Md");let a=Array.from("αβγδεζηθικλμνξοπρστυφχψω"),u=new Map([..."alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigma tau upsilon phi chi psi omega".split(" ").map((e,t)=>[e,a[t]]),..."nabla:∇ partial:∂ cdot:⋅ times:× div:÷ pm:± mp:∓ le:≤ leq:≤ ge:≥ geq:≥ ne:≠ neq:≠ infty:∞ sum:∑ prod:∏ int:∫ in:∈ notin:∉ to:→ rightarrow:→ leftarrow:←".split(" ").map(e=>{let[t,n]=e.split(":");return[t,n]})]),s=/^\\(?:mathbf|boldsymbol|bm|mathrm|mathit|mathsf|mathtt|mathnormal|mathbb|mathcal|mathscr|mathfrak|textbf|textit|textrm)$/,c=/^\\(?:quad|qquad|enspace|thinspace|medspace|thickspace|negthinspace|displaystyle|textstyle|scriptstyle|scriptscriptstyle|limits|nolimits|[,;:! ])$/,h=/^\\(?:left|right|middle|big|Big|bigg|Bigg|bigl|bigr|Bigl|Bigr|biggl|biggr|Biggl|Biggr)$/;function d(e){let t=Array.from(e.matchAll(/\\[a-zA-Z]+|\\[^\r\n]|[^\s]/gu),e=>({value:e[0],start:e.index,end:e.index+e[0].length})),n=[],r=[],l=0;function o(){let e=t[l]?.start;if(null==e)throw Error("Missing argument");let n=i(),r=t[l-1].end;return[{value:"argument:start",start:e,end:e},...n,{value:"argument:end",start:r,end:r}]}function i(){let e=t[l++];if(null==e||"}"===e.value)throw Error("Incomplete math");if("{"===e.value){let r=[];for(;t[l]?.value!=="}";)r.push(...i());return n.push({start:e.start,end:t[l++].end}),r}if(s.test(e.value)){let r=i();return n.push({start:e.start,end:t[l-1].end}),r}if(c.test(e.value))return[];if(h.test(e.value)){let n,o=t[l++];if(null==o)throw Error("Missing delimiter");if("\\left"===e.value)n={start:e.start,end:o.end},r.push(n);else if("\\right"===e.value){if(null==(n=r.pop()))throw Error("Unpaired delimiter");n.end=o.end}return"."===o.value?[]:[{...o,start:e.start,delimiter:n}]}if(/^\\[dt]?frac$/.test(e.value))return[{...e,value:"\\frac"},...o(),...o()];if(/^(?:[_^]|\\(?:sqrt|vec|hat|bar|overline|underline))$/.test(e.value)||e.value.startsWith("\\")&&!u.has(e.value.slice(1).replace(/^var/,"").toLowerCase())&&t[l]?.value==="{"){if(t[l]?.value==="[")throw Error("Indexed argument");return[e,...o()]}let a=e.value.replace(/^\\/,"");return a=(a=(a=u.get(a.replace(/^var/,"").toLowerCase())??e.value).replace(/[\u{1D400}-\u{1D7FF}]/gu,e=>e.normalize("NFKC")).toLowerCase()).replace(/[ϵϑϕϖϱς−·]/g,e=>"εθφπρσ-⋅"["ϵϑϕϖϱς−·".indexOf(e)]),[{...e,value:a}]}try{let e=[];for(;l<t.length;)e.push(...i());return 0===r.length?{tokens:e,groups:n}:null}catch{return null}}var g=n("agQa"),m=n("QxH2"),f=n("h8aU");function p(e){let{contextId:t,getTurns:n,hydratePersistedMatch:r,revealUnrenderedMatches:a=!1,searchPersisted:s,searchMath:c=!1,scrollAdapter:h}=e;return{domain:"conversation",contextId:t,async search(e,t){var r,a;let h,m,p=await async function(e,t,n,r){let l=e.query.trim(),a=n&&l.length>1&&l.startsWith("/")&&l.endsWith("/")?l.slice(1,-1):void 0,s=t.flatMap(e=>e.units.flatMap(t=>(t.textChunks??[t.text]).flatMap((r,l)=>{let o={turnKey:e.turnKey,unitId:t.unitId,text:n?r.replace(/\s+/g," ").trim():r,equationIndex:void 0},i=n?t.equations?.[l]:void 0;return null==i?[o]:[o,{...o,text:i,equationIndex:l}]}))),c={domain:e.domain,contextId:e.contextId,query:l,regex:a,searchMath:n||void 0,matches:[],totalMatches:0,isCapped:!1};if(!l)return c;let h=null==a?null:await (0,g.a)({query:a,texts:s.map(e=>e.text),mathTexts:s.map(e=>null!=e.equationIndex),maxMatches:250},r);if(h?.error)return{...c,error:h.error};c.totalMatches=h?.totalMatches??0;let m=new Map;for(let[t,n]of s.entries()){let r=(0,o.d)(n.turnKey,n.unitId),a=m.get(r)??0,{offsets:s,totalMatches:g}=null!=h?{offsets:h.offsets[t]??[],totalMatches:0}:(null==n.equationIndex?f.a:function(e,t,n){let r=t.trim(),l=[];if(!r)return{offsets:l,totalMatches:0};let o=d(e),a=d(u.get(r)??r);if(null==o||null==a){let t=e.toLowerCase(),o=r.toLowerCase(),a=[...e.matchAll(/\\[a-zA-Z]+/g)];for(let n=t.indexOf(o);n>=0;n=t.indexOf(o,n+o.length))a.some(e=>n>e.index&&n<e.index+e[0].length)||l.push((0,i.a)(e,{start:n,end:n+r.length}));return{offsets:l.slice(0,n),totalMatches:l.length}}let s=0;for(let e=0;a.tokens.length>0&&e<=o.tokens.length-a.tokens.length;e+=1){if(!a.tokens.every((t,n)=>t.value===o.tokens[e+n].value))continue;let t=o.tokens.slice(e,e+a.tokens.length),r=t[0].start,i=t[t.length-1].end;for(let e of t)r=Math.min(r,e.delimiter?.start??r),i=Math.max(i,e.delimiter?.end??i);for(let e of o.groups)r<e.start&&i>e.start&&i<e.end&&(i=e.end),r>e.start&&r<e.end&&i>e.end&&(r=e.start);s+=1,l.length<n&&l.push({start:r,end:i}),e+=a.tokens.length-1}return{offsets:l,totalMatches:s}})(n.text,l,250-c.matches.length);for(let[t,r]of(c.totalMatches+=g,s.entries())){let l={domain:"conversation",contextId:e.contextId,turnKey:n.turnKey,unitId:n.unitId,matchIndex:null==n.equationIndex?a+t:t,equationIndex:n.equationIndex,equationRange:null==n.equationIndex?void 0:r};c.matches.push({id:(0,o.c)(l),ordinal:c.matches.length+1,location:l})}null==n.equationIndex&&m.set(r,a+s.length)}return c.isCapped=c.totalMatches>c.matches.length,c}(e,n(),c,t?.signal);if(c||null==s)return p;let x=await s(e,t);return null==x?p:(r=p,a=x,h=new Map(r.matches.map(e=>[e.id,e])),m=l()([...a.matches.map(e=>h.get(e.id)??e),...r.matches],"id").map((e,t)=>({...e,ordinal:t+1})),{...r,matches:m,totalMatches:Math.max(m.length,r.totalMatches,a.totalMatches),isCapped:r.isCapped||a.isCapped})},async ensureVisible(e,n){if("conversation"!==e.domain||e.contextId!==t||null!=e.turnCursor&&null!=r&&!await r(e,n)||n?.signal?.aborted)return;h.onNavigate?.();let l=null!=e.turnCursor,i=h.getTurnContainer(e.turnKey),u=(0,o.c)(e),s=a&&null!=i&&null==(0,o.i)({container:i,matchId:u,includeShadowRoots:!1});if(null==i||l||s){if(n?.signal?.aborted||(n?.signal==null?await h.scrollToTurn(e.turnKey):await h.scrollToTurn(e.turnKey,{signal:n.signal}),n?.signal?.aborted))return;null!=(i=h.getTurnContainer(e.turnKey))&&h.mountUnit?.(i,e.unitId)}null!=i&&await (0,m.b)({container:i,matchId:u,includeShadowRoots:!1,signal:n?.signal})}}}}),gSdW:(function(e,t,n){var r=n("SKhr");n.d(t,{},{a:function(e){let t=new Map;for(let n of e){if("conversation"!==n.location.domain)continue;let e=(0,r.d)(n.location.turnKey,n.location.unitId),l=t.get(e)??[];l.push(n),t.set(e,l)}return t},b:function(e){let t=new Map;for(let n of e){if("diff"!==n.location.domain)continue;let e=t.get(n.location.path)??[];e.push(n),t.set(n.location.path,e)}return t}})}),l0fK:(function(e,t,n){n.d(t,{a:()=>c});var r=n("QosV"),l=n("BolX"),o=n("zd8w"),i=n("SKhr"),a=n("gSdW");function u(e){let t=[],n=document.createTreeWalker(e,NodeFilter.SHOW_TEXT);for(let r=n.nextNode();null!=r;r=n.nextNode()){if(!(r instanceof Text)||r.parentElement?.closest(".vlist-s"))continue;let n=r.parentElement;for(;null!=n&&n!==e&&""===n.style.color;)n=n.parentElement;let l=0;for(let e of r.data)t.push({node:r,text:e,color:n?.style.color??"",offset:l}),l+=e.length}return t}var s=n("TwSq");function c(e){let t,c,f,p,x,y,P,v,w,b,S,E,C,B,I=(0,r.c)(25),{containerRef:H,contextId:R,onContentChange:M}=e,K=(0,l.z)(s.d),T=(0,l.z)(s.g),F=K?.contextId===R?K:null,D=null==F?null:T?.id??null,{schedule:L,cancel:k}=(S=(0,r.c)(5),E=(0,o.useRef)(null),80!==S[0]?(v=e=>{null==E.current&&(E.current=window.setTimeout(()=>{E.current=null,e()},80))},S[0]=80,S[1]=v):v=S[1],C=v,S[2]===Symbol.for("react.memo_cache_sentinel")?(w=()=>{null!=E.current&&(window.clearTimeout(E.current),E.current=null)},S[2]=w):w=S[2],B=w,S[3]!==C?(b={schedule:C,cancel:B},S[3]=C,S[4]=b):b=S[4],b);I[0]!==M?(t=()=>M?.(),I[0]=M,I[1]=t):t=I[1];let q=(0,o.useEffectEvent)(t);I[2]!==D?(c=(e,t)=>{t.forEach(t=>{(0,i.n)({element:t,matchId:e}),(0,i.m)(t,e===D)})},I[2]=D,I[3]=c):c=I[3];let A=(0,o.useEffectEvent)(c);I[4]!==F||I[5]!==H||I[6]!==A?(f=async(e,t)=>{let r=H.current;if(null==r||((0,i.a)(r,{includeShadowRoots:!1}),t.takeRecords(),null==F))return;let l=(0,a.a)(F.matches),o=Array.from(r.querySelectorAll("[data-content-search-unit-key]")).flatMap(e=>{let t=l.get(e.dataset.contentSearchUnitKey??"");return null==t?[]:[{element:e,matches:t}]}),s=o.map(m),c=e=>{e.forEach((e,t)=>e.forEach((e,n)=>A(s[t].matches[n].id,e)))};if(!F.searchMath){c(s.map(e=>{let{element:t,matches:n}=e;return(0,i.k)({target:t,query:F.query,maxMatches:n.length,includeShadowRoots:!1}).matches})),t.takeRecords();return}let f=[];for(let{element:e,matches:t}of o)e.querySelectorAll("[data-math-source]").forEach((e,r)=>{let l=t.flatMap(e=>{let{id:t,location:n}=e;return"conversation"===n.domain&&n.equationIndex===r&&null!=n.equationRange?[{id:t,range:n.equationRange}]:[]});0!==l.length&&f.push((async function(e,t){let r=e.querySelector(".katex-html"),l=e.dataset.mathSource;if(null==r||null==l||0===t.length)return()=>t.map(()=>[]);let{katex:o}=await Promise.all([n.e(990054),n.e(559373)]).then(n.bind(n,"RlG8")),a=u(r),s=new Map(a.map(e=>{let{node:t}=e;return[t,t.data]})),c=new Set(a.map(e=>{let{color:t}=e;return t})),h=document.createElement("span"),d=t.map(()=>{let e,t=c.size+1;do e=`#${t.toString(16).padStart(6,"0")}`,h.style.color=e,t+=1;while(c.has(h.style.color))return c.add(h.style.color),{hex:e,css:h.style.color}});h.style.color="";let g=new Map(d.map((e,t)=>{let{css:n}=e;return[n,t]})),m=new Map,f=n=>{let r=l;for(let e of[...n].reverse()){let{start:n,end:l}=t[e];r=`${r.slice(0,n)}{\\textcolor{${d[e].hex}}{${r.slice(n,l)}}}${r.slice(l)}`}try{h.innerHTML=o.renderToString(r,{displayMode:null!=e.querySelector(".katex-display"),strict:"ignore",output:"html"})}catch{return!1}let i=u(h),s=i.length===a.length&&i.every((e,t)=>{let{text:n}=e;return n===a[t].text});return i.forEach((e,t)=>{let n=g.get(e.color);if(null==n)return;let r=a[t];if(!s){let t=a.filter(t=>{let{text:n}=t;return n===e.text});if(1!==t.length||1!==i.filter(t=>{let{text:n}=t;return n===e.text}).length)return;r=t[0]}m.set(r,n)}),!0};return f(t.map((e,t)=>t))||t.forEach((e,t)=>f([t])),()=>{let n,o=t.map(()=>[]);if(e.dataset.mathSource!==l||!e.contains(r)||[...s].some(e=>{let[t,n]=e;return!r.contains(t)||t.data!==n}))return o;let u=[];for(let e of a){let t=m.get(e);if(null==t){n=void 0;continue}let r=e.node.parentElement?.closest(".vlist > span, .base")??null;n?.index===t&&n.row===r?n.glyphs.push(e):(n={index:t,row:r,glyphs:[e]},u.push(n))}for(let{index:e,glyphs:t}of u.reverse())o[e].unshift(...function e(t){let n=t[0],r=t[t.length-1],l=document.createRange();l.setStart(n.node,n.offset),l.setEnd(r.node,r.offset+r.text.length);let o=l.commonAncestorContainer;for(;l.startContainer!==o&&0===l.startOffset;)l.setStartBefore(l.startContainer);for(;l.endContainer!==o&&l.endOffset===(l.endContainer instanceof Text?l.endContainer.length:l.endContainer.childNodes.length);)l.setEndAfter(l.endContainer);if(l.startContainer!==l.endContainer)return[...t].reverse().flatMap(t=>e([t])).reverse();let a=(0,i.f)();return l.surroundContents(a),[a]}(t));return o}})(e,l.map(g)).then(e=>()=>e().forEach((e,t)=>A(l[t].id,e))))});let[p,x]=await Promise.all([(0,i.l)(s.map(d),F.query,F.regex,e),Promise.all(f)]);e.aborted||(c(p()),x.forEach(h),t.takeRecords())},I[4]=F,I[5]=H,I[6]=A,I[7]=f):f=I[7];let z=(0,o.useEffectEvent)(f);I[8]!==F?.runId||I[9]!==z||I[10]!==k||I[11]!==H||I[12]!==q||I[13]!==L?(p=()=>{let e=H.current;if(null==e)return;let t=null,n=()=>{t?.abort(),z((t=new AbortController).signal,r)},r=new MutationObserver(e=>{(0,i.o)(e)&&(t?.abort(),L(()=>{q(),n()}))});return F?.runId==null?void n():(r.observe(e,{childList:!0,subtree:!0,characterData:!0,attributeFilter:["hidden","inert"]}),n(),()=>{r.disconnect(),t?.abort(),k(),(0,i.a)(e,{includeShadowRoots:!1})})},I[8]=F?.runId,I[9]=z,I[10]=k,I[11]=H,I[12]=q,I[13]=L,I[14]=p):p=I[14];let O=F?.runId;I[15]!==k||I[16]!==H||I[17]!==R||I[18]!==L||I[19]!==O?(x=[O,k,H,R,L],I[15]=k,I[16]=H,I[17]=R,I[18]=L,I[19]=O,I[20]=x):x=I[20],(0,o.useEffect)(p,x),I[21]!==D||I[22]!==H?(y=()=>{H.current?.querySelectorAll("mark[data-search-match]").forEach(e=>{(0,i.m)(e,e.dataset.contentSearchMatchId===D)})},P=[D,H],I[21]=D,I[22]=H,I[23]=y,I[24]=P):(y=I[23],P=I[24]),(0,o.useEffect)(y,P)}function h(e){return e()}function d(e){let{element:t,matches:n}=e;return{element:t,maxMatches:n.length}}function g(e){let{range:t}=e;return t}function m(e){let{element:t,matches:n}=e;return{element:t,matches:n.filter(f)}}function f(e){return"conversation"===e.location.domain&&null==e.location.equationIndex}}),hkBU:(function(e,t,n){var r=n("ABep"),l=n("QosV"),o=n("zd8w"),i=n("oyxz");n.d(t,{},{a:function(e){let t,n,a,u,s,c,h,d,g,m=(0,l.c)(15),{onNavigate:f}=e,p=(0,o.useRef)(null),x=(0,o.useRef)(null),[y,P]=(0,o.useState)(!1);return m[0]===Symbol.for("react.memo_cache_sentinel")?(t=()=>{let e=p.current;if(null==e)return;let t=e.ownerDocument,n=e.closest("[data-thread-scroll-footer]")??e.parentElement,r=()=>{let n=t.activeElement;null!=n&&e.compareDocumentPosition(n)===Node.DOCUMENT_POSITION_FOLLOWING&&(e.tabIndex=0)},l=t=>{"Tab"!==t.key||t.shiftKey||t.defaultPrevented||(e.tabIndex=-1)};return t.addEventListener("keydown",l),n?.addEventListener("focusin",r),()=>{t.removeEventListener("keydown",l),n?.removeEventListener("focusin",r),x.current?.abort()}},n=[],m[0]=t,m[1]=n):(t=m[0],n=m[1]),(0,o.useEffect)(t,n),m[2]===Symbol.for("react.memo_cache_sentinel")?(a=()=>x.current?.abort(),m[2]=a):a=m[2],m[3]!==f?(u=e=>{x.current?.abort();let t=e.currentTarget;t.tabIndex=-1;let n=new AbortController;x.current=n,P(!1),f(n.signal).then(e=>{!n.signal.aborted&&t.isConnected&&t.ownerDocument.activeElement===t&&(e?.isConnected?e.focus({preventScroll:!0}):P(!0))})},m[3]=f,m[4]=u):u=m[4],m[5]===Symbol.for("react.memo_cache_sentinel")?(s=(0,r.jsx)(i.a,{id:"codex.conversation.latestResponse",defaultMessage:"Latest response",description:"Invisible heading before the composer; focusing it moves to the newest assistant response"}),m[5]=s):s=m[5],m[6]!==u?(c=(0,r.jsx)("h4",{ref:p,className:"sr-only m-0 select-none",tabIndex:0,onBlur:a,onFocus:u,children:s}),m[6]=u,m[7]=c):c=m[7],m[8]!==y?(h=y?(0,r.jsx)(i.a,{id:"codex.conversation.latestResponseUnavailable",defaultMessage:"No response available",description:"Screen-reader announcement when navigation to the latest assistant response finds no response in the conversation"}):null,m[8]=y,m[9]=h):h=m[9],m[10]!==h?(d=(0,r.jsx)("span",{className:"sr-only m-0",role:"status",children:h}),m[10]=h,m[11]=d):d=m[11],m[12]!==c||m[13]!==d?(g=(0,r.jsxs)(r.Fragment,{children:[c,d]}),m[12]=c,m[13]=d,m[14]=g):g=m[14],g}})}),cP1f:(function(e,t,n){n.d(t,{},{a:async function(e,t,n){if(null==e||null==t||n.aborted)return null;let r=null;return await e(t,e=>{let t=e.querySelectorAll('[data-conversation-role="assistant"]');return r=t.item(t.length-1)},{align:"top",signal:n}),n.aborted?null:r}})}),u0tN:(function(e,t,n){n.d(t,{a:()=>v});var r=n("ABep"),l=n("QosV"),o=n("on57"),i=n("BolX"),a=n("zd8w"),u=n("v7qY"),s=n("wD9O"),c=n("zm5q"),h=n("f4Vb"),d=n("QEDJ"),g=n("lsfk"),m=n("uYx2"),f=n("g3o5"),p=n("bIvi"),x=n("RKko");function y(e,t,n){let r=arguments.length>3&&void 0!==arguments[3]?arguments[3]:null;if(null==e||null==t)return null;let l=t.getBoundingClientRect();if(0===l.height)return null;let o=e.querySelectorAll("[data-history-message-id]"),i=()=>{let t=e.getBoundingClientRect();return"retention"===n&&null!=r&&t.height>0&&t.bottom>l.top&&t.top<l.bottom?r:null};if(0===o.length)return i();let a=0,u=o.length;for(;a<u;){let e=Math.floor((a+u)/2),t=o[e].getBoundingClientRect();if(0===t.height)return null;t.bottom<=l.top?a=e+1:u=e}let s=o[a];if(null==s)return i();let c=s.getBoundingClientRect();if(0===c.height||c.top>=l.bottom)return null;let h="retention"===n&&c.top>l.top?o[a-1]:s;return h?.dataset.historyMessageId??null}let P={};function v(e){let t,n,v,K,T,F,D,L,k,q,A,z,O,U,_,N,j,V,W,$,Q,G,X,Y,Z,J,ee,et,en,er,el,eo,ei,ea,eu,es,ec,eh,ed,eg,em,ef,ep,ex,ey,eP,ev,ew,eb,eS,eE,eC,eB,eI,eH,eR,eM,eK,eT,eF,eD,eL,ek,eq,eA,ez,eO,eU,e_,eN,ej,eV,eW,e$,eQ=(0,l.c)(279),{collapseEmptyRows:eG,entries:eX,RowComponent:eY,onApiChange:eZ,onVisibleContentReady:eJ,className:e0,gapPx:e1,getBottomScrollPaddingPx:e2,isSubmitPlacementAnimating:e3,onLatestTurnHeightChange:e4,preserveMeasuredTurnViewport:e5,preserveUnderfilledViewport:e6,getPendingRestoreScrollDistanceFromBottomPx:e7,restoreScrollDistanceFromBottomPx:e8,initialRestoreState:e9,latestTurnFooter:te,latestTurnFooterKey:tt,onRestoreStateChange:tn,onViewportChange:tr,onHistoryRetentionBoundaryChange:tl,latestTurnSynchronousMeasurementKey:to,layoutReadyTurnKey:ti,onTurnLayoutReady:ta,synchronousMeasurementTurnKey:tu,retainedTurnKeys:ts,skipEmptyResizeMeasurements:tc}=e,th=void 0!==eG&&eG,td=void 0===e1?12:e1,tg=void 0!==e5&&e5,tm=void 0!==e6&&e6,tf=void 0!==tc&&tc,tp=(0,i.z)(f.b);eQ[0]!==ts?(t=ts??[],eQ[0]=ts,eQ[1]=t):t=eQ[1];let tx=[...t,...tp],[ty,tP]=(0,a.useState)(null),[tv]=(0,a.useState)(B);eQ[2]!==ty||eQ[3]!==tm||eQ[4]!==eX?(n=tm&&null!=ty&&ty.turnKey===eX.at(-1)?.turnKey?ty.viewportHeightPx-ty.heightOutsideTurnPx:void 0,eQ[2]=ty,eQ[3]=tm,eQ[4]=eX,eQ[5]=n):n=eQ[5];let tw=n;eQ[6]!==tw||eQ[7]!==tv||eQ[8]!==eX?(v=tv(eX,tw),eQ[6]=tw,eQ[7]=tv,eQ[8]=eX,eQ[9]=v):v=eQ[9];let tb=v,tS=(0,g.b)(),tE=(0,s.c)(),tC=tE*(globalThis.devicePixelRatio??1),tB=e9?.turnHeightsByKey??P,[tI,tH]=(0,a.useState)(tB),[tR,tM]=(0,a.useState)(null);eQ[10]!==th||eQ[11]!==tb||eQ[12]!==td||eQ[13]!==tC||eQ[14]!==tI?(K=(0,x.a)({collapseEmptyRows:th,entries:tb,gapPx:td,measuredHeightsByKey:tI,pixelScale:tC}),eQ[10]=th,eQ[11]=tb,eQ[12]=td,eQ[13]=tC,eQ[14]=tI,eQ[15]=K):K=eQ[15];let tK=K;eQ[16]!==e2||eQ[17]!==e9||eQ[18]!==tK||eQ[19]!==tS?(T=()=>{var e,t,n;let r,l,o=H(e2);return e=tK,t=R(tS.getLastScrollDistanceFromBottomPx(),o),n=e9,r=Math.min(t,e.totalHeightPx),l=(0,x.d)({distanceFromBottomPx:r,layout:e,overscanCount:2,viewportHeightPx:800}),{distanceFromBottomPx:r,renderedRange:(n?.renderedWindow==null?null:(0,x.e)({anchorKey:n.renderedWindow.anchorKey,layout:e,previousRange:{startIndex:0,endIndex:Math.min(n.renderedWindow.count,l.endIndex-l.startIndex)}}))??l,turnKeys:e.turnKeys,viewportHeightPx:800}},eQ[16]=e2,eQ[17]=e9,eQ[18]=tK,eQ[19]=tS,eQ[20]=T):T=eQ[20];let[tT,tF]=(0,a.useState)(T),[tD]=(0,a.useState)(b),tL=(0,a.useSyncExternalStore)(tD.subscribe,tD.getSnapshot,tD.getSnapshot),tk=(0,a.useRef)(null),tq=(0,a.useRef)(tI),tA=(0,a.useRef)(0);eQ[21]===Symbol.for("react.memo_cache_sentinel")?(F=e=>{tA.current=e;let t=tk.current;null!=t&&(t.style.minHeight=e>0?`${e}px`:"")},eQ[21]=F):F=eQ[21];let tz=(0,p.a)(F),tO=(0,a.useRef)(tT),tU=(0,a.useRef)(null);eQ[22]===Symbol.for("react.memo_cache_sentinel")?(D=new Map,eQ[22]=D):D=eQ[22];let t_=(0,a.useRef)(D);eQ[23]===Symbol.for("react.memo_cache_sentinel")?(L=new Map,eQ[23]=L):L=eQ[23];let tN=(0,a.useRef)(L);eQ[24]===Symbol.for("react.memo_cache_sentinel")?(k=new WeakSet,eQ[24]=k):k=eQ[24];let tj=(0,a.useRef)(k);eQ[25]===Symbol.for("react.memo_cache_sentinel")?(q=new Map,eQ[25]=q):q=eQ[25];let tV=(0,a.useRef)(q);eQ[26]===Symbol.for("react.memo_cache_sentinel")?(A=new Map,eQ[26]=A):A=eQ[26];let tW=(0,a.useRef)(A),t$=(0,a.useRef)(null),tQ=(0,a.useRef)(null),tG=(0,a.useRef)(0),tX=(0,a.useRef)(null),[tY,tZ]=(0,a.useState)(null),tJ=(0,a.useRef)(!1),t0=(0,a.useRef)(null),t1=(0,a.useRef)(tK),t2=(0,a.useRef)(tK),t3=(0,a.useRef)(tK),t4=(0,a.useRef)(eX),t5=(0,a.useRef)(null);eQ[27]!==tI?(z=()=>{tI!==tq.current&&tH(tq.current)},eQ[27]=tI,eQ[28]=z):z=eQ[28],eQ[29]!==th||eQ[30]!==tb||eQ[31]!==td||eQ[32]!==tC||eQ[33]!==tI?(O=[th,tb,td,tC,tI],eQ[29]=th,eQ[30]=tb,eQ[31]=td,eQ[32]=tC,eQ[33]=tI,eQ[34]=O):O=eQ[34],(0,a.useLayoutEffect)(z,O),eQ[35]===Symbol.for("react.memo_cache_sentinel")?(U=e=>{tk.current=e,tM(e)},eQ[35]=U):U=eQ[35];let t6=(0,p.a)(U);eQ[36]!==th||eQ[37]!==tb||eQ[38]!==td||eQ[39]!==tK||eQ[40]!==tC||eQ[41]!==tI?(_=()=>{if(t2.current!==tK){t2.current=tK,t1.current=tI===tq.current?tK:(0,x.a)({collapseEmptyRows:th,entries:tb,gapPx:td,measuredHeightsByKey:tq.current,pixelScale:tC});let e=tk.current;null!=e&&(e.style.height=`${t1.current.totalHeightPx}px`)}return t1.current},eQ[36]=th,eQ[37]=tb,eQ[38]=td,eQ[39]=tK,eQ[40]=tC,eQ[41]=tI,eQ[42]=_):_=eQ[42];let t7=(0,p.a)(_);eQ[43]!==e2||eQ[44]!==tS||eQ[45]!==tE?(N=e=>{let t=tS.getScrollElement(),n=tk.current,r=t?.firstElementChild;return null==n||null==r?e-H(e2):e-(0,s.b)(r.getBoundingClientRect().bottom-n.getBoundingClientRect().bottom,tE)},eQ[43]=e2,eQ[44]=tS,eQ[45]=tE,eQ[46]=N):N=eQ[46];let t8=(0,p.a)(N),t9=tT.renderedRange;if(null!=tL){let e=(0,x.c)({layout:tK,turnKey:tL.turnKey,viewportHeightPx:tT.viewportHeightPx});null!=e&&(t9=(0,x.d)({distanceFromBottomPx:e,layout:tK,overscanCount:2,viewportHeightPx:tT.viewportHeightPx}))}else if(!I(tT.turnKeys,tK.turnKeys)){let e=tT.turnKeys[tT.renderedRange.startIndex];null!=e&&(t9=(0,x.e)({anchorKey:e,layout:tK,previousRange:t9})??(0,x.d)({distanceFromBottomPx:tT.distanceFromBottomPx,layout:tK,overscanCount:2,viewportHeightPx:tT.viewportHeightPx}))}eQ[47]!==e8?(j=()=>{null==t$.current&&e8?.()},eQ[47]=e8,eQ[48]=j):j=eQ[48];let ne=(0,p.a)(j);eQ[49]===Symbol.for("react.memo_cache_sentinel")?(V=()=>{null!=t0.current&&(window.cancelAnimationFrame(t0.current),t0.current=null)},eQ[49]=V):V=eQ[49];let nt=(0,p.a)(V);eQ[50]!==tb||eQ[51]!==eJ||eQ[52]!==ne?(W=()=>{null==eJ||tJ.current||null!=t0.current||null==tk.current||tb.length>0&&0===tN.current.size||(t0.current=window.requestAnimationFrame(()=>{t0.current=window.requestAnimationFrame(()=>{t0.current=null,tJ.current||null==tk.current||tb.length>0&&0===tN.current.size||(tJ.current=!0,ne(),eJ())})}))},eQ[50]=tb,eQ[51]=eJ,eQ[52]=ne,eQ[53]=W):W=eQ[53];let nn=(0,p.a)(W),nr=eX.slice(t9.startIndex,t9.endIndex).map((e,t)=>({entry:e,turnIndex:t9.startIndex+t}));for(let e of new Set(tx)){let t=tK.turnIndexByKey.get(e);if(null==t||t>=t9.startIndex&&t<t9.endIndex)continue;let n=eX[t];null!=n&&nr.push({entry:n,turnIndex:t})}nr.sort(w),eQ[54]!==tS?($=e=>y(tN.current.get(e),tS.getScrollElement(),"visible"),eQ[54]=tS,eQ[55]=$):$=eQ[55];let nl=(0,p.a)($),no=null==tl?null:function(e,t,n,r){let{startIndex:l,endIndex:o}=(0,x.d)({distanceFromBottomPx:0,layout:n,overscanCount:0,viewportHeightPx:r}),i=1/0,a=null,u=n=>{let r=e[n];if("gap"===r.type)return!1;let l=null;if("sourceTurnId"in r&&"string"==typeof r.sourceTurnId?l=r.sourceTurnId:"turnId"in r&&"string"==typeof r.turnId&&(l=r.turnId),null==l)return!1;if(n<i){i=n;let e="historyRetentionLastItemId"in r&&"string"==typeof r.historyRetentionLastItemId&&!t?.includes(r.turnKey)?r.historyRetentionLastItemId:null;a={anchorItemId:"historyRetentionAnchorItemId"in r&&"string"==typeof r.historyRetentionAnchorItemId?r.historyRetentionAnchorItemId:null,turnId:l,measuredTurnKey:null==e?null:r.turnKey,lastItemId:e}}return!0};for(let e=l;e<o;e++)if(!u(e))return null;for(let e of t??[]){let t=n.turnIndexByKey.get(e);if(null!=t&&!u(t))return null}return a}(eX,tx,tK,tT.viewportHeightPx+24),ni=(0,p.a)(e=>{if(null!=tl){if(null==no||e>24||null!=tD.getSnapshot())return void tl(null);tl({oldestProtectedTurnId:no.turnId,firstProtectedItemId:null==no.measuredTurnKey?null:y(tN.current.get(no.measuredTurnKey),tS.getScrollElement(),"retention",no.anchorItemId??no.lastItemId)})}});eQ[56]!==ni||eQ[57]!==tS?(Q=()=>{ni(tS.getLastScrollDistanceFromBottomPx())},eQ[56]=ni,eQ[57]=tS,eQ[58]=Q):Q=eQ[58];let na=no?.anchorItemId,nu=no?.turnId,ns=no?.measuredTurnKey,nc=no?.lastItemId;eQ[59]!==tK.totalHeightPx||eQ[60]!==tl||eQ[61]!==tL||eQ[62]!==tT.viewportHeightPx||eQ[63]!==ni||eQ[64]!==tS||eQ[65]!==na||eQ[66]!==nu||eQ[67]!==ns||eQ[68]!==nc?(G=[na,nu,ns,nc,tT.viewportHeightPx,tK.totalHeightPx,tl,tL,ni,tS],eQ[59]=tK.totalHeightPx,eQ[60]=tl,eQ[61]=tL,eQ[62]=tT.viewportHeightPx,eQ[63]=ni,eQ[64]=tS,eQ[65]=na,eQ[66]=nu,eQ[67]=ns,eQ[68]=nc,eQ[69]=G):G=eQ[69],(0,a.useLayoutEffect)(Q,G),eQ[70]!==ti||eQ[71]!==ta||eQ[72]!==tS?(X=()=>{if(null==ti||null==ta||null!=t$.current||tV.current.size>0)return;let e=tS.getScrollElement(),t=tN.current.get(ti);null!=e&&!(e.clientHeight<=0)&&null!=t&&tj.current.has(t)&&!((tq.current[ti]??0)<=0)&&ta(ti,t)},eQ[70]=ti,eQ[71]=ta,eQ[72]=tS,eQ[73]=X):X=eQ[73];let nh=(0,p.a)(X);eQ[74]!==e2||eQ[75]!==e7||eQ[76]!==e3||eQ[77]!==e4||eQ[78]!==ne||eQ[79]!==tS||eQ[80]!==tD?(Y=e=>{let t=H(e2);if(null!=e.latestTurnHeightChange&&e4?.(e.latestTurnHeightChange),e.restoreScrollDistanceFromBottom)ne();else if(null!=e.scrollDistanceFromBottomPx){var n,r;let l,o=e.scrollDistanceFromBottomPx,i=t3.current,a=t1.current,u=t5.current;e3?.()&&null!=e.latestTurnHeightChange&&null!=u&&u.totalHeightPx!==i.totalHeightPx&&null==tD.getSnapshot()&&e7?.()==null&&(n=i,(l=(r=a).turnKeys.length-1)>0&&n.turnKeys.length===r.turnKeys.length&&n.turnKeys[l]!==r.turnKeys[l]&&n.turnKeys.every((e,t)=>t===l||e===r.turnKeys[t]&&n.topOffsetsPx[t]===r.topOffsetsPx[t]&&n.heightsPx[t]===r.heightsPx[t]))&&(o=tS.getUnroundedScrollDistanceFromBottomPx(tS.getLastScrollDistanceFromBottomPx())+a.totalHeightPx-i.totalHeightPx,t5.current=i),tS.compensateScrollToDistanceFromBottomPx(o+H(e2)-t,null!=e.afterMeasure||null!=tD.getSnapshot()||e7?.()!=null||e3?.()?void 0:"turn-resize")}e.afterMeasure?.()},eQ[74]=e2,eQ[75]=e7,eQ[76]=e3,eQ[77]=e4,eQ[78]=ne,eQ[79]=tS,eQ[80]=tD,eQ[81]=Y):Y=eQ[81];let nd=(0,p.a)(Y);eQ[82]!==t7?(Z=(e,t)=>{if(null!=t$.current||t<=0)return;let n=tO.current,r=E({current:n,distanceFromBottomPx:e,layout:t7(),viewportHeightPx:t});r===n||(tO.current=r,r.renderedRange.startIndex===n.renderedRange.startIndex&&r.renderedRange.endIndex===n.renderedRange.endIndex&&I(r.turnKeys,n.turnKeys)||tF(r))},eQ[82]=t7,eQ[83]=Z):Z=eQ[83];let ng=(0,p.a)(Z);eQ[84]!==tl?(J=()=>()=>tl?.(void 0),ee=[tl],eQ[84]=tl,eQ[85]=J,eQ[86]=ee):(J=eQ[85],ee=eQ[86]),(0,a.useLayoutEffect)(J,ee),eQ[87]!==t7||eQ[88]!==tr?(et=(e,t,n)=>{if(null==tr)return;let r=t7(),l=Math.max(0,Math.min(r.totalHeightPx,r.totalHeightPx-e)),o=Math.max(0,l-t);tr({viewportEndPx:l,viewportStartPx:o},n)},eQ[87]=t7,eQ[88]=tr,eQ[89]=et):et=eQ[89];let nm=(0,p.a)(et);eQ[90]!==tD?(en=e=>{tD.getSnapshot()===e&&tD.replace(null)},eQ[90]=tD,eQ[91]=en):en=eQ[91];let nf=(0,p.a)(en);eQ[92]!==tl||eQ[93]!==tD?(er=(e,t,n)=>n?.signal?.aborted?Promise.resolve():(tl?.(null),new Promise(r=>{let l=()=>{tD.getSnapshot()===o&&tD.replace(null)},o={align:n?.align??"center",complete:()=>{n?.signal?.removeEventListener("abort",l),r()},getTargetElement:t,turnKey:e};tF(tO.current),tD.replace(o),n?.signal?.addEventListener("abort",l,{once:!0})})),eQ[92]=tl,eQ[93]=tD,eQ[94]=er):er=eQ[94];let np=(0,p.a)(er);eQ[95]!==t7||eQ[96]!==eX?(el=e=>{let{viewportStartPx:t,viewportEndPx:n}=e;return(0,x.f)(eX,t7(),t,n)},eQ[95]=t7,eQ[96]=eX,eQ[97]=el):el=eQ[97];let nx=(0,p.a)(el);eQ[98]!==t7?(eo=e=>{let t=t7(),n=t.turnIndexByKey.get(e);if(null==n)return null;let r=t.topOffsetsPx[n],l=t.heightsPx[n];return null==r||null==l?null:{endPx:r+l,startPx:r}},eQ[98]=t7,eQ[99]=eo):eo=eQ[99];let ny=(0,p.a)(eo);eQ[100]!==e4||eQ[101]!==tS||eQ[102]!==tE?(ei=()=>{let e=0,t=null;for(let[n,r]of tW.current)e+=r,(null==t||t.compareDocumentPosition(n)===Node.DOCUMENT_POSITION_FOLLOWING)&&(t=n);null!=t&&e4?.({heightDeltaPx:null,heightPx:null,bottomViewportOverflowPx:tS.isNativeEndSnapFollowing?.()?0:M({scrollElement:tS.getScrollElement(),turnElement:t,windowZoom:tE}),turnElement:t,followContentHeightPx:e})},eQ[100]=e4,eQ[101]=tS,eQ[102]=tE,eQ[103]=ei):ei=eQ[103];let nP=(0,p.a)(ei);eQ[104]!==th||eQ[105]!==nd||eQ[106]!==tb||eQ[107]!==td||eQ[108]!==e2||eQ[109]!==t7||eQ[110]!==t8||eQ[111]!==e7||eQ[112]!==tC||eQ[113]!==tg||eQ[114]!==tS||eQ[115]!==tD||eQ[116]!==tz||eQ[117]!==tE?(ea=(e,t,n)=>{var r;let l=t7(),o=tS.getScrollElement();if(o?.getClientRects().length===0)return!1;let i=t$.current,a=tq.current,c=a,h=0,d=!1,g=null,m=0,f=!1,p=!1,y="controller"===(void 0===n?"measured":n)?tS.getLastScrollDistanceFromBottomPx({includePendingUserScroll:!0}):function(e,t){let n=e.getScrollElement(),r=n?.firstElementChild;if(null==n||null==r||0===n.clientHeight)return e.getLastScrollDistanceFromBottomPx();let l=r.getBoundingClientRect();if(0===l.height)return e.getLastScrollDistanceFromBottomPx();let o=n.scrollTop;return Math.max(0,Math.round(o+(0,s.b)(l.bottom-n.getBoundingClientRect().top,t))-n.clientHeight)-o}(tS,tE),P=H(e2),v=R(y,P),w=tg?null:e7?.()??null,b=null==i?v:tO.current.distanceFromBottomPx,S=b;if(tg&&null==tD.getSnapshot()&&e7?.()==null){let e=I(t3.current.turnKeys,l.turnKeys)?l:t3.current,t=e===l?i?.scrollDistanceFromBottomPx??y:y,n=C({distanceFromBottomPx:t8(t),preferLatestVisibleRow:t<P,layout:e,measuredHeightsByKey:a,nextLayout:l,viewportHeightPx:tO.current.viewportHeightPx}),r=o?.ownerDocument.activeElement,u=r?.closest("[data-turn-key]"),s=u?.dataset.turnKey;if(o&&r&&u&&s&&tN.current.get(s)===u){let e=r.getBoundingClientRect(),t=o.getBoundingClientRect();e.bottom>t.top&&e.top<t.bottom&&(n=s)}let c=null==n?null:l.turnIndexByKey.get(n);null!=c&&(S=l.bottomOffsetsPx[c]??b)}for(let[t,n]of e){let{element:e,heightPx:r}=n,o=tN.current.get(t);if(o!==e)continue;r>0?tj.current.add(o):tj.current.delete(o);let i=Math.max(+!th,r),u=a[t];if(u===i)continue;c===a&&(c={...a}),c[t]=i;let s=l.turnIndexByKey.get(t);if(null==s)continue;let x=s===l.turnKeys.length-1,y=Math.round(Math.max(tb[s]?.minHeightPx??0,i)*tC)/tC,P=y-(l.heightsPx[s]??y);p=p||null==u||0!==P,x&&(d=!0,h+=null==u?0:P,g=o),f=f||th&&(0===y||0===l.heightsPx[s]),(l.bottomOffsetsPx[s]??0)<=S&&(tg||null!=e7&&!x)&&(m+=P)}if(c===a)return!1;if(!p)return tq.current=c,!1;let B=(0,x.a)({collapseEmptyRows:th,entries:tb,gapPx:td,measuredHeightsByKey:c,pixelScale:tC});if(f)for(let[e,t]of B.gapsBeforePx.entries()){let n=t-(l.gapsBeforePx[e]??0);(l.bottomOffsetsPx[e]??0)+(l.heightsPx[e]??0)<=S&&(tg||null!=e7&&e!==l.turnKeys.length-1)&&(m+=n)}let K=tA.current;if(K>0){let e=Math.max(0,K-l.totalHeightPx),t=Math.max(0,K-B.totalHeightPx);m+=t-e,h>0&&e>t&&(h=Math.max(0,h-(e-t))),e>0&&0===t&&tz(0)}let T=tS.isNativeEndSnapFollowing?.(),F=tg&&tS.shouldFollowContentGrowth()&&(T||(r=y,0===P&&r<=24))&&g?.querySelector("[data-preserve-turn-viewport]")==null,D=i?.restoreScrollDistanceFromBottom||null!=w,L=null;D||(L=F?0:0!==m?(i?.scrollDistanceFromBottomPx??tS.getUnroundedScrollDistanceFromBottomPx(y))+m:i?.scrollDistanceFromBottomPx??(tg||!d?y:null));let k=tO.current.distanceFromBottomPx;D?k=w??k:null!=L&&(k=R(L,P));let q=E({current:tO.current,distanceFromBottomPx:k,layout:B,viewportHeightPx:tO.current.viewportHeightPx}),A=i?.latestTurnHeightChange,z=g??A?.turnElement??null,O={afterMeasure:i?.afterMeasure,latestTurnHeightChange:d||null!=A?{heightDeltaPx:(A?.heightDeltaPx??0)+h,heightPx:B.heightsPx.at(-1)??null,bottomViewportOverflowPx:T?0:M({scrollElement:tS.getScrollElement(),turnElement:z,windowZoom:tE}),turnElement:z,followContentHeightPx:null}:null,restoreScrollDistanceFromBottom:D,scrollDistanceFromBottomPx:L,turnHeightsByKey:c},U=tk.current;for(let[t,n]of e){let{element:e}=n,r=B.turnIndexByKey.get(t);tN.current.get(t)===e&&null!=r&&null!=e.parentElement&&(e.parentElement.style.height=`${B.heightsPx[r]}px`,e.parentElement.style.minHeight="")}if(d&&1===e.size&&null==i&&q===tO.current&&B.gapsBeforePx.at(-1)===l.gapsBeforePx.at(-1)&&null!=U)return tq.current=c,t1.current=B,t3.current=B,U.style.height=`${B.totalHeightPx}px`,nd(O),!0;null==t5.current&&(t5.current=l);let _=()=>{tq.current=c,t1.current=B,tH(c),q!==tO.current&&(tO.current=q,tF(q))};return t$.current=O,void 0===t||t?(0,u.flushSync)(_):_(),!0},eQ[104]=th,eQ[105]=nd,eQ[106]=tb,eQ[107]=td,eQ[108]=e2,eQ[109]=t7,eQ[110]=t8,eQ[111]=e7,eQ[112]=tC,eQ[113]=tg,eQ[114]=tS,eQ[115]=tD,eQ[116]=tz,eQ[117]=tE,eQ[118]=ea):ea=eQ[118];let nv=(0,p.a)(ea);eQ[119]!==nv||eQ[120]!==nP||eQ[121]!==nh||eQ[122]!==tf?(eu=e=>{let t=new Map,n=!1,r=!1;for(let l of e){let e=t_.current.get(l.target);if(null==e)continue;let{height:o}=(0,h.a)(l);switch(e.kind){case"turn":{n=!0;let r=e.turnKey,i=tN.current.get(r);if(o>0&&i===l.target&&tj.current.has(i)&&tq.current[r]===o)break;t.set(r,{element:l.target,heightPx:o});break}case"latest-turn-follow-content":tW.current.set(e.element,o),r=!0}}!(t.size>0)&&(n||tf)||nv(t),r&&nP(),nh()},eQ[119]=nv,eQ[120]=nP,eQ[121]=nh,eQ[122]=tf,eQ[123]=eu):eu=eQ[123];let nw=(0,p.a)(eu);eQ[124]!==nw?(es=()=>{if(null!=tQ.current)return tQ.current;let e=new ResizeObserver(nw);return tQ.current=e,e},eQ[124]=nw,eQ[125]=es):es=eQ[125];let nb=(0,p.a)(es);eQ[126]!==nb||eQ[127]!==nn?(ec=(e,t)=>{if(null==t)return;t_.current.set(t,{kind:"turn",turnKey:e}),tN.current.set(e,t),tj.current.delete(t),tV.current.set(e,t);let n=nb();return n.observe(t),nn(),()=>{n.unobserve(t),t_.current.delete(t),tV.current.get(e)===t&&tV.current.delete(e),tN.current.get(e)===t&&tN.current.delete(e)}},eQ[126]=nb,eQ[127]=nn,eQ[128]=ec):ec=eQ[128];let nS=(0,p.a)(ec);eQ[129]!==nv||eQ[130]!==tE?(eh=(e,t)=>{let n=tN.current.get(e);if(null==n)return;let r=(0,s.b)(n.getBoundingClientRect().height,tE);if(!(r<=0)&&(nv(new Map([[e,{element:n,heightPx:r}]]),!1),null!=t)){let e=t$.current;null==e?t():e.afterMeasure=t}},eQ[129]=nv,eQ[130]=tE,eQ[131]=eh):eh=eQ[131];let nE=(0,p.a)(eh);eQ[132]!==nb?(ed=e=>{if(null==e)return;t_.current.set(e,{element:e,kind:"latest-turn-follow-content"}),tW.current.set(e,0);let t=nb();return t.observe(e),()=>{t.unobserve(e),t_.current.delete(e),tW.current.delete(e)}},eQ[132]=nb,eQ[133]=ed):ed=eQ[133];let nC=(0,p.a)(ed);eQ[134]!==nv||eQ[135]!==tE?(eg=()=>{let e=tV.current;if(0===e.size){tG.current=0;return}if(null!=tX.current)return;if(tG.current>=8){tX.current=requestAnimationFrame(e=>{tX.current=null,tG.current=0,tZ(e)});return}tG.current=tG.current+1,tV.current=new Map;let t=new Map;if((0,c.a)("virtualizedTurnList.readMountedHeights",()=>{for(let[n,r]of e){if(tN.current.get(n)!==r)continue;let e=(0,s.b)(r.getBoundingClientRect().height,tE);e>0&&t.set(n,{element:r,heightPx:e})}},e.size),t.size>0){let n=tq.current;if(nv(t,!1,"controller"))for(let[t,r]of e)(null==n[t]||tG.current>1)&&tN.current.get(t)===r&&tV.current.set(t,r);else tG.current=0}},eQ[134]=nv,eQ[135]=tE,eQ[136]=eg):eg=eQ[136],(0,a.useLayoutEffect)(eg),eQ[137]!==tb||eQ[138]!==nE||eQ[139]!==tu?(em=()=>{let e=tu??tb.at(-1)?.turnKey;null!=e&&nE(e)},eQ[137]=tb,eQ[138]=nE,eQ[139]=tu,eQ[140]=em):em=eQ[140];let nB=(0,p.a)(em);eQ[141]!==to||eQ[142]!==nB?(ef=()=>{null!=to&&nB()},ep=[to,nB],eQ[141]=to,eQ[142]=nB,eQ[143]=ef,eQ[144]=ep):(ef=eQ[143],ep=eQ[144]),(0,a.useLayoutEffect)(ef,ep),eQ[145]!==nd||eQ[146]!==tI?(ex=()=>{let e=t$.current;null!=e&&e.turnHeightsByKey===tI&&(t$.current=null,nd(e))},ey=[nd,tI],eQ[145]=nd,eQ[146]=tI,eQ[147]=ex,eQ[148]=ey):(ex=eQ[147],ey=eQ[148]),(0,a.useLayoutEffect)(ex,ey),eQ[149]!==tb||eQ[150]!==ty||eQ[151]!==tK.heightsPx||eQ[152]!==tm||eQ[153]!==tI||eQ[154]!==tR||eQ[155]!==tE?(eP=e=>{if(!tm||ty?.viewportHeightPx===e)return;if(null!=ty)return void(0,u.flushSync)(()=>{tP({...ty,viewportHeightPx:e})});let t=tR?.closest("[data-thread-user-message-navigation-content]"),n=t?.lastElementChild,r=tb.at(-1)?.turnKey;if(null==t||null==n||null==r||tb.some(e=>null==tI[e.turnKey]))return;let l=(0,s.b)(t.getBoundingClientRect().bottom-n.getBoundingClientRect().bottom,tE)-parseFloat(getComputedStyle(t).paddingBottom);l<=24||(0,u.flushSync)(()=>{tP({turnKey:r,heightOutsideTurnPx:e-(tK.heightsPx.at(-1)??0)-l,viewportHeightPx:e})})},eQ[149]=tb,eQ[150]=ty,eQ[151]=tK.heightsPx,eQ[152]=tm,eQ[153]=tI,eQ[154]=tR,eQ[155]=tE,eQ[156]=eP):eP=eQ[156];let nI=(0,p.a)(eP);eQ[157]!==nx||eQ[158]!==ny||eQ[159]!==nl||eQ[160]!==nE||eQ[161]!==eZ||eQ[162]!==np?(ev=()=>{if(null!=eZ)return eZ({getEntriesInViewport:nx,getFirstVisibleMessageItemId:nl,getEntryGeometry:ny,measureTurnBeforePaint:nE,scrollToKey:np}),()=>{eZ(null)}},ew=[nx,nl,ny,nE,eZ,np],eQ[157]=nx,eQ[158]=ny,eQ[159]=nl,eQ[160]=nE,eQ[161]=eZ,eQ[162]=np,eQ[163]=ev,eQ[164]=ew):(ev=eQ[163],ew=eQ[164]),(0,a.useEffect)(ev,ew),eQ[165]!==nt?(eb=()=>()=>{tJ.current=!1,nt()},eS=[nt],eQ[165]=nt,eQ[166]=eb,eQ[167]=eS):(eb=eQ[166],eS=eQ[167]),(0,a.useLayoutEffect)(eb,eS),eQ[168]!==nt||eQ[169]!==nn?(eE=()=>(nn(),nt),eQ[168]=nt,eQ[169]=nn,eQ[170]=eE):eE=eQ[170],eQ[171]!==nt||eQ[172]!==tb.length||eQ[173]!==eJ||eQ[174]!==nn||eQ[175]!==tR?(eC=[nt,tb.length,eJ,nn,tR],eQ[171]=nt,eQ[172]=tb.length,eQ[173]=eJ,eQ[174]=nn,eQ[175]=tR,eQ[176]=eC):eC=eQ[176],(0,a.useEffect)(eE,eC),eQ[177]!==tD?(eB=()=>{let e=t_.current,t=tN.current,n=tW.current;return()=>{null!=tX.current&&(cancelAnimationFrame(tX.current),tX.current=null),tQ.current?.disconnect(),tQ.current=null,e.clear(),t.clear(),tV.current.clear(),n.clear(),t$.current=null,tD.replace(null)}},eI=[tD],eQ[177]=tD,eQ[178]=eB,eQ[179]=eI):(eB=eQ[178],eI=eQ[179]),(0,a.useEffect)(eB,eI),eQ[180]!==tn?(eH=()=>{if(null!=tn)return()=>{tn(function(e,t,n){let r={};for(let n of t){let t=e[n];null!=t&&(r[n]=t)}let l=t[n.startIndex];return 0===Object.keys(r).length||null==l?null:{renderedWindow:{anchorKey:l,count:n.endIndex-n.startIndex},turnHeightsByKey:r}}(tq.current,tO.current.turnKeys,tO.current.renderedRange))}},eR=[tn],eQ[180]=tn,eQ[181]=eH,eQ[182]=eR):(eH=eQ[181],eR=eQ[182]),(0,a.useLayoutEffect)(eH,eR),eQ[183]!==eX?(eM=eX.at(-1),eQ[183]=eX,eQ[184]=eM):eM=eQ[184];let nH=eM,nR=nH?.turnSearchKey??nH?.turnKey;eQ[185]!==nR||eQ[186]!==tS||eQ[187]!==tz||eQ[188]!==tR||eQ[189]!==tE?(eK=()=>{if(null==tR||null==nR)return;let e=e=>{let t=tS.getScrollElement(),n=e.target;null!=t&&!(t.scrollTop<=0)&&n instanceof Element&&!(n.getBoundingClientRect().bottom<=t.getBoundingClientRect().top)&&tz(Math.max(0,(0,s.b)(tR.getBoundingClientRect().height,tE)-(0,m.b)(t)))};return tR.addEventListener(d.a,e),()=>{tR.removeEventListener(d.a,e),tz(0)}},eT=[nR,tS,tz,tR,tE],eQ[185]=nR,eQ[186]=tS,eQ[187]=tz,eQ[188]=tR,eQ[189]=tE,eQ[190]=eK,eQ[191]=eT):(eK=eQ[190],eT=eQ[191]),(0,a.useLayoutEffect)(eK,eT);let{addScrollListener:nM,addUserScrollListener:nK,getScrollElement:nT}=tS;eQ[192]!==nM||eQ[193]!==nK||eQ[194]!==e2||eQ[195]!==nT||eQ[196]!==nI||eQ[197]!==tm||eQ[198]!==ni||eQ[199]!==nh||eQ[200]!==nm||eQ[201]!==ne||eQ[202]!==tz||eQ[203]!==tR||eQ[204]!==ng?(eF=()=>{let e=nT();if(null==e)return;let t=()=>(null==tU.current&&(tU.current=e.clientHeight),tU.current||tO.current.viewportHeightPx||800),n=nM(e=>{ng(R(e,H(e2)),t()),ni(e)}),r=nK((e,n)=>{let r=tA.current;if(r>0){let t=r-e;tz(t>t1.current.totalHeightPx&&e>0?t:0)}nm(R(e,H(e2)),t(),null!=n&&e>n)}),l=new ResizeObserver(n=>{let r=n.find(t=>t.target===e);if(null!=r){let{height:e}=(0,h.a)(r);tU.current=e,ng(tO.current.distanceFromBottomPx,e),ne()}nI(t()),nh()});return l.observe(e),tm&&null!=tR&&l.observe(tR),()=>{n(),r(),l.disconnect()}},eD=[nM,nK,e2,nT,nI,nh,tm,nm,ni,ne,tz,tR,ng],eQ[192]=nM,eQ[193]=nK,eQ[194]=e2,eQ[195]=nT,eQ[196]=nI,eQ[197]=tm,eQ[198]=ni,eQ[199]=nh,eQ[200]=nm,eQ[201]=ne,eQ[202]=tz,eQ[203]=tR,eQ[204]=ng,eQ[205]=eF,eQ[206]=eD):(eF=eQ[205],eD=eQ[206]),(0,a.useLayoutEffect)(eF,eD),eQ[207]!==nv||eQ[208]!==e2||eQ[209]!==tK||eQ[210]!==tL||eQ[211]!==tS||eQ[212]!==tD||eQ[213]!==nf||eQ[214]!==ng||eQ[215]!==tE?(eL=()=>{if(null==tL||tD.getSnapshot()!==tL||null!=tX.current)return;let e=tS.getScrollElement();if(null==e)return;let t=new Map;for(let[e,n]of tN.current){let r=(0,s.b)(n.getBoundingClientRect().height,tE);r>0&&t.set(e,{element:n,heightPx:r})}if(nv(t,!1)||null!=t$.current)return;let n=tN.current.get(tL.turnKey),r=null==n?null:tL.getTargetElement?.(n)??n,l=null==n||null==r?function(e){let{align:t,layout:n,turnKey:r,viewportHeightPx:l}=e;if("center"===t)return(0,x.c)({layout:n,turnKey:r,viewportHeightPx:l});let o=n.turnIndexByKey.get(r);return null==o?null:Math.max(0,(n.bottomOffsetsPx[o]??0)+(n.heightsPx[o]??0)-l+10)}({align:tL.align,layout:tK,turnKey:tL.turnKey,viewportHeightPx:e.clientHeight}):function(e){let{align:t,layout:n,targetElement:r,turnElement:l,turnKey:o,windowZoom:i,viewportHeightPx:a}=e,u=n.turnIndexByKey.get(o);if(null==u)return null;let c=l.getBoundingClientRect(),h=r.getBoundingClientRect(),d=(0,s.b)(h.top-c.top,i),g=(0,s.b)(h.height,i),m=(n.bottomOffsetsPx[u]??0)+(n.heightsPx[u]??0)-d;return"top"===t?Math.max(0,m-a+10):Math.max(0,m-g/2-a/2)}({align:tL.align,layout:tK,targetElement:r,turnElement:n,turnKey:tL.turnKey,viewportHeightPx:e.clientHeight,windowZoom:tE});if(null==l)return void queueMicrotask(()=>nf(tL));let o="top"===tL.align&&null!=r?Math.max(0,tS.getLastScrollDistanceFromBottomPx()-(0,s.b)(r.getBoundingClientRect().top-e.getBoundingClientRect().top,tE)+10):l+H(e2);tS.scrollToDistanceFromBottomPx(o,"instant","user"),ng(Math.max(0,o-H(e2)),e.clientHeight),queueMicrotask(()=>nf(tL))},eQ[207]=nv,eQ[208]=e2,eQ[209]=tK,eQ[210]=tL,eQ[211]=tS,eQ[212]=tD,eQ[213]=nf,eQ[214]=ng,eQ[215]=tE,eQ[216]=eL):eL=eQ[216],eQ[217]!==nv||eQ[218]!==e2||eQ[219]!==tK||eQ[220]!==tY||eQ[221]!==tL||eQ[222]!==tS||eQ[223]!==tD||eQ[224]!==nf||eQ[225]!==ng||eQ[226]!==tE?(ek=[nv,tK,tY,tL,tS,tD,nf,e2,ng,tE],eQ[217]=nv,eQ[218]=e2,eQ[219]=tK,eQ[220]=tY,eQ[221]=tL,eQ[222]=tS,eQ[223]=tD,eQ[224]=nf,eQ[225]=ng,eQ[226]=tE,eQ[227]=ek):ek=eQ[227],(0,a.useLayoutEffect)(eL,ek),eQ[228]!==e2||eQ[229]!==t7||eQ[230]!==t8||eQ[231]!==e7||eQ[232]!==tL||eQ[233]!==tg||eQ[234]!==eX||eQ[235]!==tS||eQ[236]!==ng?(eq=()=>{var e;if(null!=t$.current)return;let t=t3.current,n=t7(),r=t5.current??n;t5.current=null,t3.current=n;let l=t4.current!==eX;if(t4.current=eX,null!=tL||!tg&&t.turnKeys.at(-1)!==r.turnKeys.at(-1)||t===r&&!l)return;let o=H(e2),i=tS.getLastScrollDistanceFromBottomPx({includePendingUserScroll:!0});if(null!=(e7?.()??null))return;if(tS.shouldFollowContentGrowth()&&(e=i,0===o&&e<=24))return void tS.compensateScrollToDistanceFromBottomPx(0);if(t===r)return;let a=C({distanceFromBottomPx:t8(i),preferLatestVisibleRow:i<o,layout:t,measuredHeightsByKey:tq.current,nextLayout:r,viewportHeightPx:tO.current.viewportHeightPx});if(null==a)return;let u=tS.getUnroundedScrollDistanceFromBottomPx(i),s=(0,x.b)({anchorKey:a,distanceFromBottomPx:u,nextLayout:r,previousLayout:t});null!=s&&(s!==u||t.totalHeightPx!==r.totalHeightPx)&&(ng(R(s,o),tO.current.viewportHeightPx),tS.compensateScrollToDistanceFromBottomPx(s))},eQ[228]=e2,eQ[229]=t7,eQ[230]=t8,eQ[231]=e7,eQ[232]=tL,eQ[233]=tg,eQ[234]=eX,eQ[235]=tS,eQ[236]=ng,eQ[237]=eq):eq=eQ[237],eQ[238]!==e2||eQ[239]!==t7||eQ[240]!==t8||eQ[241]!==e7||eQ[242]!==tK||eQ[243]!==tL||eQ[244]!==tg||eQ[245]!==eX||eQ[246]!==tS||eQ[247]!==ng?(eA=[e2,t7,t8,e7,tK,tL,tg,eX,tS,ng],eQ[238]=e2,eQ[239]=t7,eQ[240]=t8,eQ[241]=e7,eQ[242]=tK,eQ[243]=tL,eQ[244]=tg,eQ[245]=eX,eQ[246]=tS,eQ[247]=ng,eQ[248]=eA):eA=eQ[248],(0,a.useLayoutEffect)(eq,eA),eQ[249]!==tL||eQ[250]!==nm||eQ[251]!==ne||eQ[252]!==ng?(ez=()=>{null==tL&&null==t$.current&&(ng(tO.current.distanceFromBottomPx,tO.current.viewportHeightPx),ne(),nm(tO.current.distanceFromBottomPx,tO.current.viewportHeightPx,!1))},eQ[249]=tL,eQ[250]=nm,eQ[251]=ne,eQ[252]=ng,eQ[253]=ez):ez=eQ[253],eQ[254]!==tK||eQ[255]!==tL||eQ[256]!==nm||eQ[257]!==ne||eQ[258]!==ng?(eO=[tK,tL,nm,ne,ng],eQ[254]=tK,eQ[255]=tL,eQ[256]=nm,eQ[257]=ne,eQ[258]=ng,eQ[259]=eO):eO=eQ[259],(0,a.useLayoutEffect)(ez,eO),eQ[260]!==nh?(eU=()=>{nh()},eQ[260]=nh,eQ[261]=eU):eU=eQ[261],(0,a.useLayoutEffect)(eU),eQ[262]!==tb||eQ[263]!==tt?(e_=tt??tb.at(-1)?.turnKey,eQ[262]=tb,eQ[263]=tt,eQ[264]=e_):e_=eQ[264];let nF=e_;eQ[265]!==e0?(eN=(0,o.b)("relative shrink-0",e0),eQ[265]=e0,eQ[266]=eN):eN=eQ[266],eQ[267]!==tK.totalHeightPx?(ej={height:tK.totalHeightPx},eQ[267]=tK.totalHeightPx,eQ[268]=ej):ej=eQ[268];let nD=`${tK.topOffsetsPx[t9.startIndex]??0}px`;eQ[269]!==nD?(eV={marginTop:nD},eQ[269]=nD,eQ[270]=eV):eV=eQ[270];let nL=nr.map(e=>{let{entry:t,turnIndex:n}=e;return(0,r.jsx)(S,{entry:t,gapBeforePx:n===t9.startIndex?0:tK.gapsBeforePx[n]??0,retainedTopPx:n<t9.startIndex||n>=t9.endIndex?tK.topOffsetsPx[n]:void 0,latestTurnFollowContentRef:n===tb.length-1&&null!=e4?nC:void 0,latestTurnFooter:t.turnKey===nF?te:void 0,RowComponent:eY,measuredHeightPx:null==tI[t.turnKey]?void 0:tK.heightsPx[n],constrainedHeightPx:n!==tb.length-1&&tL?.turnKey!==t.turnKey&&null==tI[t.turnKey]?tK.heightsPx[n]:void 0,observeTurnElement:nS},t.turnKey)});return eQ[271]!==eV||eQ[272]!==nL?(eW=(0,r.jsx)("div",{className:"flex flex-col",style:eV,children:nL}),eQ[271]=eV,eQ[272]=nL,eQ[273]=eW):eW=eQ[273],eQ[274]!==t6||eQ[275]!==eN||eQ[276]!==ej||eQ[277]!==eW?(e$=(0,r.jsx)("div",{ref:t6,className:eN,style:ej,children:eW}),eQ[274]=t6,eQ[275]=eN,eQ[276]=ej,eQ[277]=eW,eQ[278]=e$):e$=eQ[278],e$}function w(e,t){return e.turnIndex-t.turnIndex}function b(){return new K}let S=(0,a.memo)(function(e){let t,n,i,a,u,s,c=(0,l.c)(25),{entry:h,gapBeforePx:d,latestTurnFollowContentRef:g,latestTurnFooter:m,RowComponent:f,constrainedHeightPx:x,measuredHeightPx:y,retainedTopPx:P,observeTurnElement:v}=e,{turnKey:w}=h;c[0]!==v||c[1]!==w?(t=e=>v(w,e),c[0]=v,c[1]=w,c[2]=t):t=c[2];let b=(0,p.a)(t),S=null!=P&&"absolute inset-x-0",E=null!=x&&"overflow-hidden";c[3]!==S||c[4]!==E?(n=(0,o.b)(S,E),c[3]=S,c[4]=E,c[5]=n):n=c[5];let C=null!=y?"size":void 0,B=y??x,I=null==P?d:0,H=null==y?h.minHeightPx:void 0;return c[6]!==P||c[7]!==C||c[8]!==B||c[9]!==I||c[10]!==H?(i={contain:C,height:B,marginTop:I,minHeight:H,top:P},c[6]=P,c[7]=C,c[8]=B,c[9]=I,c[10]=H,c[11]=i):i=c[11],c[12]!==f||c[13]!==h||c[14]!==g||c[15]!==m?(a=(0,r.jsx)(f,{entry:h,latestTurnFooter:m,latestTurnFollowContentRef:g}),c[12]=f,c[13]=h,c[14]=g,c[15]=m,c[16]=a):a=c[16],c[17]!==b||c[18]!==a||c[19]!==w?(u=(0,r.jsx)("div",{ref:b,className:"[&_[data-virtualized-turn-content]]:[content-visibility:visible]","data-turn-key":w,children:a}),c[17]=b,c[18]=a,c[19]=w,c[20]=u):u=c[20],c[21]!==u||c[22]!==n||c[23]!==i?(s=(0,r.jsx)("div",{className:n,style:i,children:u}),c[21]=u,c[22]=n,c[23]=i,c[24]=s):s=c[24],s});function E(e){var t,n;let{current:r,distanceFromBottomPx:l,layout:o,viewportHeightPx:i}=e,a=Math.min(l,o.totalHeightPx),u=(0,x.d)({distanceFromBottomPx:a,layout:o,overscanCount:2,viewportHeightPx:i}),s=(t=r.renderedRange,n=u,t.startIndex<=n.startIndex&&t.endIndex>=n.endIndex)?r.renderedRange:u;return r.distanceFromBottomPx===a&&r.viewportHeightPx===i&&r.renderedRange.startIndex===s.startIndex&&r.renderedRange.endIndex===s.endIndex&&I(r.turnKeys,o.turnKeys)?r:{distanceFromBottomPx:a,renderedRange:s,turnKeys:o.turnKeys,viewportHeightPx:i}}function C(e){let{distanceFromBottomPx:t,preferLatestVisibleRow:n,layout:r,measuredHeightsByKey:l,nextLayout:o,viewportHeightPx:i}=e,a=(0,x.d)({distanceFromBottomPx:t,layout:r,overscanCount:0,viewportHeightPx:Math.max(0,i+Math.min(0,t))}),u=null;for(let e=a.startIndex;e<a.endIndex;e+=1){let a=r.turnKeys[e];if(null!=a&&!r.gapKeys.has(a)&&(!r.collapseEmptyRows||(r.heightsPx[e]??0)>0)&&null!=l[a]&&o.turnIndexByKey.has(a)&&(r.bottomOffsetsPx[e]??0)<t+i&&(r.bottomOffsetsPx[e]??0)+(r.heightsPx[e]??0)>t){if(n)u=a;else if(null==u&&(u=a),(r.bottomOffsetsPx[e]??0)+(r.heightsPx[e]??0)<=t+i)return a}}return u}function B(){let e=[];return(t,n)=>{let r=t.at(-1)?.turnKey,l=e=>null!=n&&e.turnKey===r?Math.max(e.minHeightPx??0,n):e.minHeightPx;return(t.length!==e.length||t.some((t,n)=>{let r=e[n];return t.turnKey!==r.turnKey||t.gapBeforePx!==r.gapBeforePx||t.estimatedHeightPx!==r.estimatedHeightPx||l(t)!==r.minHeightPx||t.type!==r.type}))&&(e=t.map(e=>({turnKey:e.turnKey,gapBeforePx:e.gapBeforePx,estimatedHeightPx:e.estimatedHeightPx,minHeightPx:l(e),type:e.type}))),e}}function I(e,t){return e===t||e.length===t.length&&e.every((e,n)=>e===t[n])}function H(e){return Math.max(0,e?.()??0)}function R(e,t){return Math.max(0,e-t)}function M(e){let{scrollElement:t,turnElement:n,windowZoom:r}=e;return null==t||null==n?0:(0,s.b)(n.getBoundingClientRect().bottom-t.getBoundingClientRect().bottom,r)}class K{request=null;listeners=new Set;getSnapshot=()=>this.request;subscribe=e=>(this.listeners.add(e),()=>{this.listeners.delete(e)});replace(e){if(this.request===e)return;let t=this.request;for(let n of(this.request=e,t?.complete(),this.listeners))n()}}}),gOnr:(function(e,t,n){var r=n("QosV"),l=n("BolX"),o=n("zd8w"),i=n("TSib"),a=n("ipIJ"),u=n("Sd8U"),s=n("tSEg"),c=n("DRR4"),h=n("qZWE");n.d(t,{},{a:function(e){let t,n,d,g,m,f=(0,r.c)(14);f[0]!==e?(t=void 0===e?{}:e,f[0]=e,f[1]=t):t=f[1];let{transcriptMcpAppIds:p,blockedWidgetSource:x,shouldBlockExternalEgress:y}=t,P=void 0!==y&&y,v=(0,l.y)(s.a),w=(0,l.y)(u.a),b=(0,l.z)(h.i),S=(0,l.z)(i.w);return f[2]!==S||f[3]!==x||f[4]!==w||f[5]!==b||f[6]!==v||f[7]!==P||f[8]!==p?(n=()=>{for(let[e,t]of("chatgpt-thread"===v.value.routeKind&&(0,a.b)(w,S.filter(e=>P||null!=x&&(e.widgetSource??"descriptor")===x)),b))(P||null!=x&&(t.content.mcpAppScope.widgetSource??"descriptor")===x||t.hostedInThreadScrollLayout&&p?.has(e)===!1)&&(0,h.z)(v,e)},d=[S,x,p,w,b,v,P],f[2]=S,f[3]=x,f[4]=w,f[5]=b,f[6]=v,f[7]=P,f[8]=p,f[9]=n,f[10]=d):(n=f[9],d=f[10]),(0,o.useLayoutEffect)(n,d),f[11]!==v?(g=()=>{(0,c.g)(v)},m=[v],f[11]=v,f[12]=g,f[13]=m):(g=f[12],m=f[13]),(0,o.useLayoutEffect)(g,m),null}})}),Mbqw:(function(e,t,n){n.d(t,{},{a:{duration:.2,ease:[.16,1,.3,1]},b:{duration:.28,ease:[.33,1,.68,1]},c:{duration:0}})}),yzQ9:(function(e,t,n){var r=n("QosV"),l=n("BolX"),o=n("zd8w"),i=n("jqIZ"),a=n("Cslg"),u=n("TS05"),s=n("tSEg");n.d(t,{},{a:function(e){let t,n,c,h=(0,r.c)(18),{ready:d,onNavigate:g}=e,m=(0,l.y)(s.a),f=(0,l.z)(a.f),p=(0,i.Y)(),x=p.state,y=x?.sidebarArea==="scheduled";h[0]!==f||h[1]!==p.key?(t={locationKey:p.key,accountId:f},h[0]=f,h[1]=p.key,h[2]=t):t=h[2];let P=(0,l.x)(u.a,t),v=(0,o.useEffectEvent)(g);return h[3]!==f||h[4]!==P||h[5]!==p.key||h[6]!==v||h[7]!==d||h[8]!==y||h[9]!==m?(n=()=>{if(!y||!d||P)return;let e=new AbortController;return v(e.signal).then(()=>{e.signal.aborted||m.set(u.a,{locationKey:p.key,accountId:f},!0)}),()=>e.abort()},h[3]=f,h[4]=P,h[5]=p.key,h[6]=v,h[7]=d,h[8]=y,h[9]=m,h[10]=n):n=h[10],h[11]!==f||h[12]!==P||h[13]!==p.key||h[14]!==d||h[15]!==y||h[16]!==m?(c=[f,P,p.key,d,y,m],h[11]=f,h[12]=P,h[13]=p.key,h[14]=d,h[15]=y,h[16]=m,h[17]=c):c=h[17],(0,o.useEffect)(n,c),null}})}),QEDJ:(function(e,t,n){n.d(t,{},{a:"thread-content-will-collapse"})}),yLzP:(function(e,t,n){var r=n("ABep"),l=n("QosV"),o=n("oyxz"),i=n("Sm6l"),a=n("RNul");n.d(t,{},{a:function(e){let t,n,u=(0,l.c)(5),{ref:s,onRetry:c}=e;return u[0]!==c?(t=null!=c?(0,r.jsx)(i.a,{color:"secondary",onClick:c,children:(0,r.jsx)(o.a,{id:"chatgpt.pagination.retry",defaultMessage:"Try again",description:"Button to retry loading older conversation messages after a failure"})}):(0,r.jsxs)("div",{role:"status",children:[(0,r.jsx)(a.a,{}),(0,r.jsx)("span",{className:"sr-only",children:(0,r.jsx)(o.a,{id:"chatgpt.pagination.loading",defaultMessage:"Loading older messages…",description:"Accessible status while an older page of conversation messages loads"})})]}),u[0]=c,u[1]=t):t=u[1],u[2]!==s||u[3]!==t?(n=(0,r.jsx)("div",{ref:s,className:"flex justify-center py-4",children:t}),u[2]=s,u[3]=t,u[4]=n):n=u[4],n}})}),KFm7:(function(e,t,n){var r=n("acLe"),l=n("jCHb"),o=n("p5Yg"),i=n("V8uZ"),a=n("uYx2");let u=2/3;function s(e){let t=Number.parseFloat(e.style.getPropertyValue("--thread-scroll-padding-bottom")||e.style.getPropertyValue("--thread-scroll-seeded-padding-bottom"));return Number.isFinite(t)?t:0}function c(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=Math.max(0,e.clientHeight-s(e));return t?n:Math.max(0,Math.min(n*u,n-240))}n.d(t,{},{a:class{scrollController;height=(0,r.c)(0);element=null;prefersReducedMotion=!0;onReleased;pendingPlacement=null;stopPlacementAnimation=null;canPrepareThreadEndContent=!1;pendingUserScrollDecayPx=0;pendingUserScrollElement=null;userScrollDecayAnimationFrame=null;viewportHeightPx=null;scrollPaddingBottomPx=null;placementTarget;constructor(e){this.scrollController=e}updateContext=(e,t,n)=>{this.scrollController=e,this.prefersReducedMotion=t,this.onReleased=n};setElement=e=>{this.element=e,null!=e&&(e.style.height=`${this.height.get()}px`)};getHeightPx=()=>this.height.get();isPlacementAnimating=()=>null!=this.stopPlacementAnimation;getElement=()=>this.element;ensureScrollRoomForAnchor=e=>{let t=this.scrollController.getScrollElement();if(!this.element||!t)return;let n=e-(0,a.b)(t);if(n<=0)return;let r=this.height.get()+n;if(t.scrollHeight<=t.clientHeight){let n=r+t.clientHeight;this.writeHeight(n),r=n-((0,a.b)(t)-e)}this.writeHeight(r)};stop=()=>{this.stopPlacementAnimation?.(),this.stopPlacementAnimation=null};getPendingPlacementSignal=()=>(null==this.pendingPlacement&&(this.pendingPlacement=new AbortController),this.pendingPlacement.signal);interruptPlacement=()=>{this.pendingPlacement?.abort(),this.pendingPlacement=null,this.stop()};holdViewport=()=>{this.canPrepareThreadEndContent=!1,this.interruptPlacement()};writeHeight=e=>{this.height.set(e),null!=this.element&&(this.element.style.height=`${e}px`)};consumeGrowth=e=>{this.writeHeight(Math.max(0,this.height.get()-Math.max(0,e)))};trimTo=e=>{let t=this.height.get(),n=Math.max(0,Math.min(t,e));if(t<=n)return!1;let r=this.scrollController.getScrollElement(),l=null==r?0:(0,a.b)(r);return this.writeHeight(n),null!=r&&this.scrollController.compensateScrollToDistanceFromBottomPx(Math.max(0,l-(t-n))),0===n&&this.onReleased?.(),!0};cancelPendingUserScrollDecay=()=>{null!=this.userScrollDecayAnimationFrame&&(window.cancelAnimationFrame(this.userScrollDecayAnimationFrame),this.userScrollDecayAnimationFrame=null),this.pendingUserScrollDecayPx=0,this.pendingUserScrollElement=null};clear=()=>{this.holdViewport(),this.cancelPendingUserScrollDecay(),this.writeHeight(0),this.placementTarget=void 0};prepareThreadEndContent=e=>{let t=this.scrollController.getScrollElement(),n=this.element;if(!this.canPrepareThreadEndContent||null!=this.stopPlacementAnimation||null==t||t.clientHeight<=0||null==n)return;let r=t.getBoundingClientRect(),l=r.bottom-s(t)*(r.height/t.clientHeight);!(n.getBoundingClientRect().top>l)&&e()&&(this.canPrepareThreadEndContent=!1,this.cancelPendingUserScrollDecay(),this.consumeGrowth((0,a.b)(t)),this.scrollController.compensateScrollToDistanceFromBottomPx(0))};collapseIfHidden=()=>{let e=this.scrollController.getScrollElement();if(0>=this.height.get()||null!=this.stopPlacementAnimation||null==e||null==this.element)return;let t=e.getBoundingClientRect(),n=t.height/e.clientHeight,r=t.bottom-s(e)*n;this.element.getBoundingClientRect().top<r-n||this.trimTo(0)};flushUserScrollDecay=()=>{this.userScrollDecayAnimationFrame=null;let e=this.pendingUserScrollDecayPx,t=this.pendingUserScrollElement;this.pendingUserScrollDecayPx=0,this.pendingUserScrollElement=null,t===this.scrollController.getScrollElement()&&this.trimTo(this.height.get()-e)&&this.collapseIfHidden()};handleScroll=e=>{let t=this.scrollController.getScrollElement();this.height.get()>0&&null!=t&&t.scrollHeight<=t.clientHeight&&0===this.scrollController.getUnroundedScrollDistanceFromBottomPx(e)&&this.clear()};handleUserScroll=(e,t)=>{if(this.interruptPlacement(),null==t)return;if(e<t&&(0,a.d)(e))return void this.clear();let n=e-t;if(n<=0)return;this.canPrepareThreadEndContent=!1;let r=this.scrollController.getScrollElement();this.pendingUserScrollElement!==r&&this.cancelPendingUserScrollDecay(),this.pendingUserScrollDecayPx+=n,null==this.userScrollDecayAnimationFrame&&(this.pendingUserScrollElement=r,this.userScrollDecayAnimationFrame=window.requestAnimationFrame(this.flushUserScrollDecay))};reconcileViewport=()=>{let e=this.scrollController.getScrollElement();if(null!=e&&e.clientHeight>0){let t=e.clientHeight,n=s(e),r=t!==this.viewportHeightPx||n!==this.scrollPaddingBottomPx;this.viewportHeightPx=t,this.scrollPaddingBottomPx=n;let l=r&&null!=this.stopPlacementAnimation,o=this.canPrepareThreadEndContent;l&&(this.canPrepareThreadEndContent=!1,this.stop());let i=this.trimTo(c(e,null!=this.placementTarget));l&&(i||this.scrollController.compensateScrollToDistanceFromBottomPx((0,a.b)(e)),this.animatePlacement(),this.canPrepareThreadEndContent=o)}};place=e=>{let t=this.scrollController.getScrollElement();if(null==t)return;this.canPrepareThreadEndContent=!1,this.cancelPendingUserScrollDecay(),this.interruptPlacement(),this.placementTarget=e,this.viewportHeightPx=t.clientHeight,this.scrollPaddingBottomPx=s(t);let n=this.height.get(),r=(0,a.b)(t),l=this.getPlacementDistancePx(t);this.scrollController.holdViewport(),this.writeHeight(null==e?c(t):Math.max(0,n-l+1)),this.prefersReducedMotion||this.scrollController.compensateScrollToDistanceFromBottomPx(r+this.height.get()-n),this.animatePlacement(),this.canPrepareThreadEndContent=!0};animatePlacement=()=>{let e=this.scrollController.getScrollElement();if(null==e)return;let t=Math.max(1,this.getPlacementDistancePx(e));if(!this.prefersReducedMotion){let e=this.scrollController.getLastScrollDistanceFromBottomPx()-t;if(e>0){let t=0,n=!1,r=(0,l.a)(0,e,{...i.g,driver:e=>{let t=0,n=n=>{let{delta:r}=n;e(t+=r)};return{start:()=>{o.b.update(n,!0)},stop:()=>{(0,o.a)(n)},now:()=>t}},onUpdate:e=>{if(n)return;let r=this.scrollController.getUnroundedScrollDistanceFromBottomPx(this.scrollController.getLastScrollDistanceFromBottomPx());this.scrollController.compensateScrollToDistanceFromBottomPx(Math.max(1,r-(e-t))),t=e},onComplete:()=>{this.stopPlacementAnimation=null,this.scrollController.compensateScrollToDistanceFromBottomPx(this.scrollController.getUnroundedScrollDistanceFromBottomPx(this.scrollController.getLastScrollDistanceFromBottomPx()))}});this.stopPlacementAnimation=()=>{n=!0,r.stop()};return}}this.scrollController.scrollToDistanceFromBottomPx(t,"instant")};getPlacementDistancePx=e=>{if(null==this.placementTarget)return 1;let t=e.getBoundingClientRect(),n=t.height/(e.offsetHeight||e.clientHeight),r=Number.parseFloat(getComputedStyle(e).paddingTop)||0;return(0,a.b)(e)-(this.placementTarget.getBoundingClientRect().top-t.top)/n+e.clientTop+r}},b:s})}),Ho4C:(function(e,t,n){var r=n("ABep"),l=n("QosV"),o=n("zd8w"),i=n("T1PX"),a=n("ZYy5"),u=n("m8On"),s=n("bIvi"),c=n("lsfk");let h=Array.from({length:101},(e,t)=>t/100);n.d(t,{},{a:function(e){let t,n,d,g,m,f,p,x,y,P,v,w,b,S,E=(0,l.c)(31),{controller:C,onReleased:B}=e,I=(0,c.b)(),H=(0,o.useContext)(a.a),R=(0,i.a)(),{getScrollElement:M}=I;E[0]!==C?(t=e=>{C.setElement(e)},E[0]=C,E[1]=t):t=E[1];let K=(0,s.a)(t);return E[2]!==C||E[3]!==B||E[4]!==R||E[5]!==I?(n=()=>{C.updateContext(I,R,B)},d=[C,I,R,B],E[2]=C,E[3]=B,E[4]=R,E[5]=I,E[6]=n,E[7]=d):(n=E[6],d=E[7]),(0,o.useInsertionEffect)(n,d),E[8]!==C||E[9]!==M?(g=()=>{let e=M();if(null==e)return;let t=new AbortController;for(let n of["wheel","touchstart","pointerdown","keydown"])e.addEventListener(n,C.interruptPlacement,{capture:!0,passive:!0,signal:t.signal});return()=>{t.abort(),C.interruptPlacement()}},m=[C,M],E[8]=C,E[9]=M,E[10]=g,E[11]=m):(g=E[10],m=E[11]),(0,o.useEffect)(g,m),E[12]!==C.cancelPendingUserScrollDecay?(f=()=>C.cancelPendingUserScrollDecay,E[12]=C.cancelPendingUserScrollDecay,E[13]=f):f=E[13],E[14]!==C?(p=[C],E[14]=C,E[15]=p):p=E[15],(0,o.useEffect)(f,p),E[16]!==C||E[17]!==M?(x=()=>{let e=M();if(null==e||"u"<typeof IntersectionObserver)return;let t=new IntersectionObserver(C.collapseIfHidden,{root:e,threshold:h}),n=C.getElement();return null!=n&&t.observe(n),()=>t.disconnect()},y=[C,M],E[16]=C,E[17]=M,E[18]=x,E[19]=y):(x=E[18],y=E[19]),(0,o.useEffect)(x,y),E[20]!==C||E[21]!==I?(P=()=>{let e=I.addScrollListener(C.handleScroll),t=I.addUserScrollListener(C.handleUserScroll);return C.reconcileViewport(),()=>{e(),t()}},v=[C,I],E[20]=C,E[21]=I,E[22]=P,E[23]=v):(P=E[22],v=E[23]),(0,o.useLayoutEffect)(P,v),E[24]!==C||E[25]!==M||E[26]!==H?(w=()=>{let e=M();if(null==e)return;let t=null,n=()=>{null==t&&(t=window.requestAnimationFrame(()=>{t=null,C.reconcileViewport()}))},r=H??(0,u.b)(),l=e.parentElement?.querySelector("[data-thread-scroll-footer]"),o=null==l?[e]:[e,l];for(let e of o)(0,u.a)({element:e,callback:n,observer:r});return window.addEventListener("resize",n,{passive:!0}),()=>{for(let e of o)(0,u.c)({element:e,callback:n,observer:r});null==H&&r?.disconnect(),window.removeEventListener("resize",n),null!=t&&window.cancelAnimationFrame(t)}},b=[C,M,H],E[24]=C,E[25]=M,E[26]=H,E[27]=w,E[28]=b):(w=E[27],b=E[28]),(0,o.useEffect)(w,b),E[29]!==K?(S=(0,r.jsx)("div",{ref:K,className:"shrink-0","aria-hidden":!0}),E[29]=K,E[30]=S):S=E[30],S}})}),g3o5:(function(e,t,n){var r=n("SZCv"),l=n.n(r),o=n("BolX"),i=n("OWtl");let a=(0,o.u)(i.a,()=>new Map),u=(0,o.c)(i.a,e=>{let{get:t}=e;return[...t(a).keys()]},{isEqual:l()});n.d(t,{},{a:function(e,t){return e.set(a,e=>new Map(e).set(t,(e.get(t)??0)+1)),()=>{e.set(a,e=>{let n=new Map(e),r=(n.get(t)??1)-1;return 0===r?n.delete(t):n.set(t,r),n})}},b:u})}),BdYu:(function(e,t,n){var r=n("QosV"),l=n("K45w"),o=n("p5Yg"),i=n("B7sF"),a=n("jCHb"),u=n("RgeH"),s=n("BolX"),c=n("zd8w"),h=n("I7bK"),d=n("QcW8"),g=n("gbrq"),m=n("kl6F"),f=n("eGPX"),p=n("Exwq"),x=n("w2yL"),y=n("KWzM"),P=n("GaCK");function v(e){return e.isPopoverOpen?{...e,isPopoverOpen:!1}:e}function w(e,t,n,r,l,o){return b({isSummaryPanelPinned:t&&(o??(0,g.z)(!0===n?e.get(g.N):e.get(g.C,n),n)),floatingPanelWidth:l,mainContentTargetWidth:r})}function b(e){let{isSummaryPanelPinned:t,floatingPanelWidth:n,mainContentTargetWidth:r}=e,l=(0,x.c)(r,n);return null!=n&&"overlay"===l?(0,x.b)({displayMode:(0,x.c)(r),isPinned:t}):(0,x.b)({displayMode:l,isPinned:null!=n||t,panelWidth:n})}n.d(t,{},{a:function(e){let t,n,o,i,v,S,E,C,B,I,H,R,M,K,T,F,D,L=(0,r.c)(73);L[0]!==e?(t=void 0===e?{}:e,L[0]=e,L[1]=t):t=L[1];let{contentShiftResetKey:k,controlledIsOpen:q,floatingPanelWidth:A,getCurrentPinStateKey:z,isEnabled:O,pinStateKey:U}=t,_=void 0===O||O,N=void 0===U||U,j=(0,s.y)(m.a),V=(0,s.z)(null==q&&!0===N?g.N:null),W=(0,s.x)(null==q&&!0!==N?g.C:null,!0!==N&&N);L[2]!==q||L[3]!==W||L[4]!==V||L[5]!==N?(n=q??(0,g.z)(!0===N?V:W,N),L[2]=q,L[3]=W,L[4]=V,L[5]=N,L[6]=n):n=L[6];let $=n,Q=(0,s.z)(g.h),G=(0,s.z)(d.G),X=(0,s.z)(p.g),Y=(0,s.z)(P.b),Z=_&&$,J=A??300,ee=_&&null==A&&(q??(Y.isPopoverOpen||"boolean"!=typeof N&&$)),et=(0,s.z)(f.c),en=(0,c.useContext)(h.c),er=(0,l.a)(0),el=en?.mainContentTargetWidth??er;L[7]!==A||L[8]!==Z||L[9]!==el?(o=b({isSummaryPanelPinned:Z,floatingPanelWidth:A,mainContentTargetWidth:el.get()}),L[7]=A,L[8]=Z,L[9]=el,L[10]=o):o=L[10];let eo=(0,l.a)(o);L[11]!==el?(i=e=>el.on("change",e),L[11]=el,L[12]=i):i=L[12],L[13]!==el||L[14]!==J?(v=()=>(0,x.c)(el.get(),J),L[13]=el,L[14]=J,L[15]=v):v=L[15],L[16]!==i||L[17]!==v?(S={subscribe:i,getSnapshot:v},L[16]=i,L[17]=v,L[18]=S):S=L[18];let ei=S,ea=(0,c.useSyncExternalStore)(ei.subscribe,ei.getSnapshot,ei.getSnapshot),eu=(0,c.useRef)(null);L[19]!==eo?(E=eo.get(),L[19]=eo,L[20]=E):E=L[20],L[21]!==el?(C=el.get(),L[21]=el,L[22]=C):C=L[22],L[23]!==C||L[24]!==E?(B={offset:E,width:C},L[23]=C,L[24]=E,L[25]=B):B=L[25];let es=(0,c.useRef)(B),ec=(0,c.useRef)(!1),eh=(0,c.useRef)(k),ed=(0,c.useRef)(Q),eg=(0,c.useRef)(G),em=Z&&null==A;L[26]!==ea||L[27]!==ee||L[28]!==em?(I=(0,x.a)({displayMode:ea,isPinned:em,isPopoverOpen:ee}),L[26]=ea,L[27]=ee,L[28]=em,L[29]=I):I=L[29];let ef=I,ep=ef.shouldShow&&!X;L[30]!==eo||L[31]!==k||L[32]!==q||L[33]!==A||L[34]!==z||L[35]!==G||L[36]!==_||L[37]!==el||L[38]!==N||L[39]!==Q||L[40]!==j?(H=()=>{let e=ed.current!==Q,t=eg.current!==G;if(!ec.current&&eh.current===k&&!e&&!t)return;ec.current=!1,eh.current=k,ed.current=Q,eg.current=G;let n=w(j,_,z?.()??N,el.get(),A,q);es.current={offset:n,width:el.get()},eu.current?.(),eo.jump(n)},R=[eo,k,q,A,z,G,_,el,N,Q,j],L[30]=eo,L[31]=k,L[32]=q,L[33]=A,L[34]=z,L[35]=G,L[36]=_,L[37]=el,L[38]=N,L[39]=Q,L[40]=j,L[41]=H,L[42]=R):(H=L[41],R=L[42]),(0,c.useLayoutEffect)(H,R);let ex=en?.chatPaneWidth??el;L[43]!==ex||L[44]!==eo||L[45]!==q||L[46]!==A||L[47]!==z||L[48]!==_||L[49]!==el||L[50]!==N||L[51]!==j||L[52]!==et?(M=()=>{let e=(e,t)=>{let n=w(j,_,z?.()??N,e,A,q),r=es.current,l=eo.get();if(r.offset===n&&(l===n||r.width===e&&!t))return;if(es.current={offset:n,width:e},eu.current?.(),t||0===e||l===n)return void eo.jump(n);let o=ex.get();if(o===e){let e=(0,a.a)(eo,n,y.a),t=document.activeViewTransition;if(null!=t){e.pause();let n=()=>e.play();t.ready.then(n,n)}eu.current=()=>e.stop();return}let i=(0,u.a)([o,e],[l,n]),s=ex.on("change",e=>{let t=i(e);eo.set(t),t===n&&queueMicrotask(s)});eu.current=s};return e(el.get(),et),el.on("change",t=>{e(t,et||0===el.getPrevious()||j.get(g.h)!==ed.current)})},L[43]=ex,L[44]=eo,L[45]=q,L[46]=A,L[47]=z,L[48]=_,L[49]=el,L[50]=N,L[51]=j,L[52]=et,L[53]=M):M=L[53],L[54]!==ex||L[55]!==eo||L[56]!==q||L[57]!==A||L[58]!==z||L[59]!==_||L[60]!==Z||L[61]!==el||L[62]!==N||L[63]!==j||L[64]!==et?(K=[ex,eo,q,A,z,_,Z,el,N,j,et],L[54]=ex,L[55]=eo,L[56]=q,L[57]=A,L[58]=z,L[59]=_,L[60]=Z,L[61]=el,L[62]=N,L[63]=j,L[64]=et,L[65]=K):K=L[65],(0,c.useLayoutEffect)(M,K),L[66]===Symbol.for("react.memo_cache_sentinel")?(T=()=>()=>{ec.current=!0,eu.current?.()},F=[],L[66]=T,L[67]=F):(T=L[66],F=L[67]),(0,c.useLayoutEffect)(T,F);let ey=ef.shouldHideInlineImmediately||X,eP=X?null:ef.visibleSurface;return L[68]!==eo||L[69]!==ep||L[70]!==ey||L[71]!==eP?(D={contentShift:eo,shouldHideInlineImmediately:ey,shouldShow:ep,visibleSurface:eP},L[68]=eo,L[69]=ep,L[70]=ey,L[71]=eP,L[72]=D):D=L[72],D},b:function(e,t){let n,a,u,d,m,f,p=(0,r.c)(15),y=void 0!==t&&t,w=(0,s.z)(g.i),b=(0,s.z)(g.r),S=(0,c.useContext)(h.c),E=(0,l.a)(0),C=S?.mainContentTargetWidth??E;p[0]!==y||p[1]!==C||p[2]!==e?(n=()=>{var t,n;t=e,n=y?"overlay":(0,x.c)(C.get()),t.set(P.b,e=>{let t="overlay"===n&&e.isPopoverOpen;return e.displayMode===n&&e.isPopoverOpen===t?e:{displayMode:n,isPopoverOpen:t}})},p[0]=y,p[1]=C,p[2]=e,p[3]=n):n=p[3];let B=n;p[4]!==B?(a=()=>{o.b.update(B)},p[4]=B,p[5]=a):a=p[5],(0,i.a)(C,"change",a),p[6]!==B?(u=()=>(B(),()=>(0,o.a)(B)),p[6]=B,p[7]=u):u=p[7],p[8]!==w||p[9]!==b||p[10]!==B?(d=[w,b,B],p[8]=w,p[9]=b,p[10]=B,p[11]=d):d=p[11],(0,c.useLayoutEffect)(u,d),p[12]!==e?(m=()=>()=>{e.set(P.b,v)},f=[e],p[12]=e,p[13]=m,p[14]=f):(m=p[13],f=p[14]),(0,c.useLayoutEffect)(m,f)}})})};
+export const __rspack_esm_ids = [979380];
+export const __webpack_modules__ = {
+    TS05: (function(e, t, n) {
+        var r = n("BolX"),
+            l = n("tSEg");
+        let o = (0, r.v)(l.a, e => !1, void 0, {
+            autoDispose: 6e4
+        });
+        n.d(t, {}, {
+            a: o
+        })
+    }),
+    iaTG: (function(e, t, n) {
+        n.d(t, {
+            a: () => p
+        });
+        var r = n("i5ac"),
+            l = n.n(r),
+            o = n("SKhr"),
+            i = n("L6Md");
+        let a = Array.from("αβγδεζηθικλμνξοπρστυφχψω"),
+            u = new Map([..."alpha beta gamma delta epsilon zeta eta theta iota kappa lambda mu nu xi omicron pi rho sigma tau upsilon phi chi psi omega".split(" ").map((e, t) => [e, a[t]]), ..."nabla:∇ partial:∂ cdot:⋅ times:× div:÷ pm:± mp:∓ le:≤ leq:≤ ge:≥ geq:≥ ne:≠ neq:≠ infty:∞ sum:∑ prod:∏ int:∫ in:∈ notin:∉ to:→ rightarrow:→ leftarrow:←".split(" ").map(e => {
+                let [t, n] = e.split(":");
+                return [t, n]
+            })]),
+            s = /^\\(?:mathbf|boldsymbol|bm|mathrm|mathit|mathsf|mathtt|mathnormal|mathbb|mathcal|mathscr|mathfrak|textbf|textit|textrm)$/,
+            c = /^\\(?:quad|qquad|enspace|thinspace|medspace|thickspace|negthinspace|displaystyle|textstyle|scriptstyle|scriptscriptstyle|limits|nolimits|[,;:! ])$/,
+            h = /^\\(?:left|right|middle|big|Big|bigg|Bigg|bigl|bigr|Bigl|Bigr|biggl|biggr|Biggl|Biggr)$/;
+
+        function d(e) {
+            let t = Array.from(e.matchAll(/\\[a-zA-Z]+|\\[^\r\n]|[^\s]/gu), e => ({
+                    value: e[0],
+                    start: e.index,
+                    end: e.index + e[0].length
+                })),
+                n = [],
+                r = [],
+                l = 0;
+
+            function o() {
+                let e = t[l]?.start;
+                if (null == e) throw Error("Missing argument");
+                let n = i(),
+                    r = t[l - 1].end;
+                return [{
+                    value: "argument:start",
+                    start: e,
+                    end: e
+                }, ...n, {
+                    value: "argument:end",
+                    start: r,
+                    end: r
+                }]
+            }
+
+            function i() {
+                let e = t[l++];
+                if (null == e || "}" === e.value) throw Error("Incomplete math");
+                if ("{" === e.value) {
+                    let r = [];
+                    for (; t[l]?.value !== "}";) r.push(...i());
+                    return n.push({
+                        start: e.start,
+                        end: t[l++].end
+                    }), r
+                }
+                if (s.test(e.value)) {
+                    let r = i();
+                    return n.push({
+                        start: e.start,
+                        end: t[l - 1].end
+                    }), r
+                }
+                if (c.test(e.value)) return [];
+                if (h.test(e.value)) {
+                    let n, o = t[l++];
+                    if (null == o) throw Error("Missing delimiter");
+                    if ("\\left" === e.value) n = {
+                        start: e.start,
+                        end: o.end
+                    }, r.push(n);
+                    else if ("\\right" === e.value) {
+                        if (null == (n = r.pop())) throw Error("Unpaired delimiter");
+                        n.end = o.end
+                    }
+                    return "." === o.value ? [] : [{
+                        ...o,
+                        start: e.start,
+                        delimiter: n
+                    }]
+                }
+                if (/^\\[dt]?frac$/.test(e.value)) return [{
+                    ...e,
+                    value: "\\frac"
+                }, ...o(), ...o()];
+                if (/^(?:[_^]|\\(?:sqrt|vec|hat|bar|overline|underline))$/.test(e.value) || e.value.startsWith("\\") && !u.has(e.value.slice(1).replace(/^var/, "").toLowerCase()) && t[l]?.value === "{") {
+                    if (t[l]?.value === "[") throw Error("Indexed argument");
+                    return [e, ...o()]
+                }
+                let a = e.value.replace(/^\\/, "");
+                return a = (a = (a = u.get(a.replace(/^var/, "").toLowerCase()) ?? e.value).replace(/[\u{1D400}-\u{1D7FF}]/gu, e => e.normalize("NFKC")).toLowerCase()).replace(/[ϵϑϕϖϱς−·]/g, e => "εθφπρσ-⋅" ["ϵϑϕϖϱς−·".indexOf(e)]), [{
+                    ...e,
+                    value: a
+                }]
+            }
+            try {
+                let e = [];
+                for (; l < t.length;) e.push(...i());
+                return 0 === r.length ? {
+                    tokens: e,
+                    groups: n
+                } : null
+            } catch {
+                return null
+            }
+        }
+        var g = n("agQa"),
+            m = n("QxH2"),
+            f = n("h8aU");
+
+        function p(e) {
+            let {
+                contextId: t,
+                getTurns: n,
+                hydratePersistedMatch: r,
+                revealUnrenderedMatches: a = !1,
+                searchPersisted: s,
+                searchMath: c = !1,
+                scrollAdapter: h
+            } = e;
+            return {
+                domain: "conversation",
+                contextId: t,
+                async search(e, t) {
+                    var r, a;
+                    let h, m, p = await async function(e, t, n, r) {
+                        let l = e.query.trim(),
+                            a = n && l.length > 1 && l.startsWith("/") && l.endsWith("/") ? l.slice(1, -1) : void 0,
+                            s = t.flatMap(e => e.units.flatMap(t => (t.textChunks ?? [t.text]).flatMap((r, l) => {
+                                let o = {
+                                        turnKey: e.turnKey,
+                                        unitId: t.unitId,
+                                        text: n ? r.replace(/\s+/g, " ").trim() : r,
+                                        equationIndex: void 0
+                                    },
+                                    i = n ? t.equations?.[l] : void 0;
+                                return null == i ? [o] : [o, {
+                                    ...o,
+                                    text: i,
+                                    equationIndex: l
+                                }]
+                            }))),
+                            c = {
+                                domain: e.domain,
+                                contextId: e.contextId,
+                                query: l,
+                                regex: a,
+                                searchMath: n || void 0,
+                                matches: [],
+                                totalMatches: 0,
+                                isCapped: !1
+                            };
+                        if (!l) return c;
+                        let h = null == a ? null : await (0, g.a)({
+                            query: a,
+                            texts: s.map(e => e.text),
+                            mathTexts: s.map(e => null != e.equationIndex),
+                            maxMatches: 250
+                        }, r);
+                        if (h?.error) return {
+                            ...c,
+                            error: h.error
+                        };
+                        c.totalMatches = h?.totalMatches ?? 0;
+                        let m = new Map;
+                        for (let [t, n] of s.entries()) {
+                            let r = (0, o.d)(n.turnKey, n.unitId),
+                                a = m.get(r) ?? 0,
+                                {
+                                    offsets: s,
+                                    totalMatches: g
+                                } = null != h ? {
+                                    offsets: h.offsets[t] ?? [],
+                                    totalMatches: 0
+                                } : (null == n.equationIndex ? f.a : function(e, t, n) {
+                                    let r = t.trim(),
+                                        l = [];
+                                    if (!r) return {
+                                        offsets: l,
+                                        totalMatches: 0
+                                    };
+                                    let o = d(e),
+                                        a = d(u.get(r) ?? r);
+                                    if (null == o || null == a) {
+                                        let t = e.toLowerCase(),
+                                            o = r.toLowerCase(),
+                                            a = [...e.matchAll(/\\[a-zA-Z]+/g)];
+                                        for (let n = t.indexOf(o); n >= 0; n = t.indexOf(o, n + o.length)) a.some(e => n > e.index && n < e.index + e[0].length) || l.push((0, i.a)(e, {
+                                            start: n,
+                                            end: n + r.length
+                                        }));
+                                        return {
+                                            offsets: l.slice(0, n),
+                                            totalMatches: l.length
+                                        }
+                                    }
+                                    let s = 0;
+                                    for (let e = 0; a.tokens.length > 0 && e <= o.tokens.length - a.tokens.length; e += 1) {
+                                        if (!a.tokens.every((t, n) => t.value === o.tokens[e + n].value)) continue;
+                                        let t = o.tokens.slice(e, e + a.tokens.length),
+                                            r = t[0].start,
+                                            i = t[t.length - 1].end;
+                                        for (let e of t) r = Math.min(r, e.delimiter?.start ?? r), i = Math.max(i, e.delimiter?.end ?? i);
+                                        for (let e of o.groups) r < e.start && i > e.start && i < e.end && (i = e.end), r > e.start && r < e.end && i > e.end && (r = e.start);
+                                        s += 1, l.length < n && l.push({
+                                            start: r,
+                                            end: i
+                                        }), e += a.tokens.length - 1
+                                    }
+                                    return {
+                                        offsets: l,
+                                        totalMatches: s
+                                    }
+                                })(n.text, l, 250 - c.matches.length);
+                            for (let [t, r] of(c.totalMatches += g, s.entries())) {
+                                let l = {
+                                    domain: "conversation",
+                                    contextId: e.contextId,
+                                    turnKey: n.turnKey,
+                                    unitId: n.unitId,
+                                    matchIndex: null == n.equationIndex ? a + t : t,
+                                    equationIndex: n.equationIndex,
+                                    equationRange: null == n.equationIndex ? void 0 : r
+                                };
+                                c.matches.push({
+                                    id: (0, o.c)(l),
+                                    ordinal: c.matches.length + 1,
+                                    location: l
+                                })
+                            }
+                            null == n.equationIndex && m.set(r, a + s.length)
+                        }
+                        return c.isCapped = c.totalMatches > c.matches.length, c
+                    }(e, n(), c, t?.signal);
+                    if (c || null == s) return p;
+                    let x = await s(e, t);
+                    return null == x ? p : (r = p, a = x, h = new Map(r.matches.map(e => [e.id, e])), m = l()([...a.matches.map(e => h.get(e.id) ?? e), ...r.matches], "id").map((e, t) => ({
+                        ...e,
+                        ordinal: t + 1
+                    })), {
+                        ...r,
+                        matches: m,
+                        totalMatches: Math.max(m.length, r.totalMatches, a.totalMatches),
+                        isCapped: r.isCapped || a.isCapped
+                    })
+                },
+                async ensureVisible(e, n) {
+                    if ("conversation" !== e.domain || e.contextId !== t || null != e.turnCursor && null != r && !await r(e, n) || n?.signal?.aborted) return;
+                    h.onNavigate?.();
+                    let l = null != e.turnCursor,
+                        i = h.getTurnContainer(e.turnKey),
+                        u = (0, o.c)(e),
+                        s = a && null != i && null == (0, o.i)({
+                            container: i,
+                            matchId: u,
+                            includeShadowRoots: !1
+                        });
+                    if (null == i || l || s) {
+                        if (n?.signal?.aborted || (n?.signal == null ? await h.scrollToTurn(e.turnKey) : await h.scrollToTurn(e.turnKey, {
+                                signal: n.signal
+                            }), n?.signal?.aborted)) return;
+                        null != (i = h.getTurnContainer(e.turnKey)) && h.mountUnit?.(i, e.unitId)
+                    }
+                    null != i && await (0, m.b)({
+                        container: i,
+                        matchId: u,
+                        includeShadowRoots: !1,
+                        signal: n?.signal
+                    })
+                }
+            }
+        }
+    }),
+    gSdW: (function(e, t, n) {
+        var r = n("SKhr");
+        n.d(t, {}, {
+            a: function(e) {
+                let t = new Map;
+                for (let n of e) {
+                    if ("conversation" !== n.location.domain) continue;
+                    let e = (0, r.d)(n.location.turnKey, n.location.unitId),
+                        l = t.get(e) ?? [];
+                    l.push(n), t.set(e, l)
+                }
+                return t
+            },
+            b: function(e) {
+                let t = new Map;
+                for (let n of e) {
+                    if ("diff" !== n.location.domain) continue;
+                    let e = t.get(n.location.path) ?? [];
+                    e.push(n), t.set(n.location.path, e)
+                }
+                return t
+            }
+        })
+    }),
+    l0fK: (function(e, t, n) {
+        n.d(t, {
+            a: () => c
+        });
+        var r = n("QosV"),
+            l = n("BolX"),
+            o = n("zd8w"),
+            i = n("SKhr"),
+            a = n("gSdW");
+
+        function u(e) {
+            let t = [],
+                n = document.createTreeWalker(e, NodeFilter.SHOW_TEXT);
+            for (let r = n.nextNode(); null != r; r = n.nextNode()) {
+                if (!(r instanceof Text) || r.parentElement?.closest(".vlist-s")) continue;
+                let n = r.parentElement;
+                for (; null != n && n !== e && "" === n.style.color;) n = n.parentElement;
+                let l = 0;
+                for (let e of r.data) t.push({
+                    node: r,
+                    text: e,
+                    color: n?.style.color ?? "",
+                    offset: l
+                }), l += e.length
+            }
+            return t
+        }
+        var s = n("TwSq");
+
+        function c(e) {
+            let t, c, f, p, x, y, P, v, w, b, S, E, C, B, I = (0, r.c)(25),
+                {
+                    containerRef: H,
+                    contextId: R,
+                    onContentChange: M
+                } = e,
+                K = (0, l.z)(s.d),
+                T = (0, l.z)(s.g),
+                F = K?.contextId === R ? K : null,
+                D = null == F ? null : T?.id ?? null,
+                {
+                    schedule: L,
+                    cancel: k
+                } = (S = (0, r.c)(5), E = (0, o.useRef)(null), 80 !== S[0] ? (v = e => {
+                    null == E.current && (E.current = window.setTimeout(() => {
+                        E.current = null, e()
+                    }, 80))
+                }, S[0] = 80, S[1] = v) : v = S[1], C = v, S[2] === Symbol.for("react.memo_cache_sentinel") ? (w = () => {
+                    null != E.current && (window.clearTimeout(E.current), E.current = null)
+                }, S[2] = w) : w = S[2], B = w, S[3] !== C ? (b = {
+                    schedule: C,
+                    cancel: B
+                }, S[3] = C, S[4] = b) : b = S[4], b);
+            I[0] !== M ? (t = () => M?.(), I[0] = M, I[1] = t) : t = I[1];
+            let q = (0, o.useEffectEvent)(t);
+            I[2] !== D ? (c = (e, t) => {
+                t.forEach(t => {
+                    (0, i.n)({
+                        element: t,
+                        matchId: e
+                    }), (0, i.m)(t, e === D)
+                })
+            }, I[2] = D, I[3] = c) : c = I[3];
+            let A = (0, o.useEffectEvent)(c);
+            I[4] !== F || I[5] !== H || I[6] !== A ? (f = async (e, t) => {
+                let r = H.current;
+                if (null == r || ((0, i.a)(r, {
+                        includeShadowRoots: !1
+                    }), t.takeRecords(), null == F)) return;
+                let l = (0, a.a)(F.matches),
+                    o = Array.from(r.querySelectorAll("[data-content-search-unit-key]")).flatMap(e => {
+                        let t = l.get(e.dataset.contentSearchUnitKey ?? "");
+                        return null == t ? [] : [{
+                            element: e,
+                            matches: t
+                        }]
+                    }),
+                    s = o.map(m),
+                    c = e => {
+                        e.forEach((e, t) => e.forEach((e, n) => A(s[t].matches[n].id, e)))
+                    };
+                if (!F.searchMath) {
+                    c(s.map(e => {
+                        let {
+                            element: t,
+                            matches: n
+                        } = e;
+                        return (0, i.k)({
+                            target: t,
+                            query: F.query,
+                            maxMatches: n.length,
+                            includeShadowRoots: !1
+                        }).matches
+                    })), t.takeRecords();
+                    return
+                }
+                let f = [];
+                for (let {
+                        element: e,
+                        matches: t
+                    }
+                    of o) e.querySelectorAll("[data-math-source]").forEach((e, r) => {
+                    let l = t.flatMap(e => {
+                        let {
+                            id: t,
+                            location: n
+                        } = e;
+                        return "conversation" === n.domain && n.equationIndex === r && null != n.equationRange ? [{
+                            id: t,
+                            range: n.equationRange
+                        }] : []
+                    });
+                    0 !== l.length && f.push((async function(e, t) {
+                        let r = e.querySelector(".katex-html"),
+                            l = e.dataset.mathSource;
+                        if (null == r || null == l || 0 === t.length) return () => t.map(() => []);
+                        let {
+                            katex: o
+                        } = await Promise.all([n.e(990054), n.e(559373)]).then(n.bind(n, "RlG8")), a = u(r), s = new Map(a.map(e => {
+                            let {
+                                node: t
+                            } = e;
+                            return [t, t.data]
+                        })), c = new Set(a.map(e => {
+                            let {
+                                color: t
+                            } = e;
+                            return t
+                        })), h = document.createElement("span"), d = t.map(() => {
+                            let e, t = c.size + 1;
+                            do e = `#${t.toString(16).padStart(6,"0")}`, h.style.color = e, t += 1; while (c.has(h.style.color)) return c.add(h.style.color), {
+                                hex: e,
+                                css: h.style.color
+                            }
+                        });
+                        h.style.color = "";
+                        let g = new Map(d.map((e, t) => {
+                                let {
+                                    css: n
+                                } = e;
+                                return [n, t]
+                            })),
+                            m = new Map,
+                            f = n => {
+                                let r = l;
+                                for (let e of [...n].reverse()) {
+                                    let {
+                                        start: n,
+                                        end: l
+                                    } = t[e];
+                                    r = `${r.slice(0,n)}{\\textcolor{${d[e].hex}}{${r.slice(n,l)}}}${r.slice(l)}`
+                                }
+                                try {
+                                    h.innerHTML = o.renderToString(r, {
+                                        displayMode: null != e.querySelector(".katex-display"),
+                                        strict: "ignore",
+                                        output: "html"
+                                    })
+                                } catch {
+                                    return !1
+                                }
+                                let i = u(h),
+                                    s = i.length === a.length && i.every((e, t) => {
+                                        let {
+                                            text: n
+                                        } = e;
+                                        return n === a[t].text
+                                    });
+                                return i.forEach((e, t) => {
+                                    let n = g.get(e.color);
+                                    if (null == n) return;
+                                    let r = a[t];
+                                    if (!s) {
+                                        let t = a.filter(t => {
+                                            let {
+                                                text: n
+                                            } = t;
+                                            return n === e.text
+                                        });
+                                        if (1 !== t.length || 1 !== i.filter(t => {
+                                                let {
+                                                    text: n
+                                                } = t;
+                                                return n === e.text
+                                            }).length) return;
+                                        r = t[0]
+                                    }
+                                    m.set(r, n)
+                                }), !0
+                            };
+                        return f(t.map((e, t) => t)) || t.forEach((e, t) => f([t])), () => {
+                            let n, o = t.map(() => []);
+                            if (e.dataset.mathSource !== l || !e.contains(r) || [...s].some(e => {
+                                    let [t, n] = e;
+                                    return !r.contains(t) || t.data !== n
+                                })) return o;
+                            let u = [];
+                            for (let e of a) {
+                                let t = m.get(e);
+                                if (null == t) {
+                                    n = void 0;
+                                    continue
+                                }
+                                let r = e.node.parentElement?.closest(".vlist > span, .base") ?? null;
+                                n?.index === t && n.row === r ? n.glyphs.push(e) : (n = {
+                                    index: t,
+                                    row: r,
+                                    glyphs: [e]
+                                }, u.push(n))
+                            }
+                            for (let {
+                                    index: e,
+                                    glyphs: t
+                                }
+                                of u.reverse()) o[e].unshift(... function e(t) {
+                                let n = t[0],
+                                    r = t[t.length - 1],
+                                    l = document.createRange();
+                                l.setStart(n.node, n.offset), l.setEnd(r.node, r.offset + r.text.length);
+                                let o = l.commonAncestorContainer;
+                                for (; l.startContainer !== o && 0 === l.startOffset;) l.setStartBefore(l.startContainer);
+                                for (; l.endContainer !== o && l.endOffset === (l.endContainer instanceof Text ? l.endContainer.length : l.endContainer.childNodes.length);) l.setEndAfter(l.endContainer);
+                                if (l.startContainer !== l.endContainer) return [...t].reverse().flatMap(t => e([t])).reverse();
+                                let a = (0, i.f)();
+                                return l.surroundContents(a), [a]
+                            }(t));
+                            return o
+                        }
+                    })(e, l.map(g)).then(e => () => e().forEach((e, t) => A(l[t].id, e))))
+                });
+                let [p, x] = await Promise.all([(0, i.l)(s.map(d), F.query, F.regex, e), Promise.all(f)]);
+                e.aborted || (c(p()), x.forEach(h), t.takeRecords())
+            }, I[4] = F, I[5] = H, I[6] = A, I[7] = f) : f = I[7];
+            let z = (0, o.useEffectEvent)(f);
+            I[8] !== F?.runId || I[9] !== z || I[10] !== k || I[11] !== H || I[12] !== q || I[13] !== L ? (p = () => {
+                let e = H.current;
+                if (null == e) return;
+                let t = null,
+                    n = () => {
+                        t?.abort(), z((t = new AbortController).signal, r)
+                    },
+                    r = new MutationObserver(e => {
+                        (0, i.o)(e) && (t?.abort(), L(() => {
+                            q(), n()
+                        }))
+                    });
+                return F?.runId == null ? void n() : (r.observe(e, {
+                    childList: !0,
+                    subtree: !0,
+                    characterData: !0,
+                    attributeFilter: ["hidden", "inert"]
+                }), n(), () => {
+                    r.disconnect(), t?.abort(), k(), (0, i.a)(e, {
+                        includeShadowRoots: !1
+                    })
+                })
+            }, I[8] = F?.runId, I[9] = z, I[10] = k, I[11] = H, I[12] = q, I[13] = L, I[14] = p) : p = I[14];
+            let O = F?.runId;
+            I[15] !== k || I[16] !== H || I[17] !== R || I[18] !== L || I[19] !== O ? (x = [O, k, H, R, L], I[15] = k, I[16] = H, I[17] = R, I[18] = L, I[19] = O, I[20] = x) : x = I[20], (0, o.useEffect)(p, x), I[21] !== D || I[22] !== H ? (y = () => {
+                H.current?.querySelectorAll("mark[data-search-match]").forEach(e => {
+                    (0, i.m)(e, e.dataset.contentSearchMatchId === D)
+                })
+            }, P = [D, H], I[21] = D, I[22] = H, I[23] = y, I[24] = P) : (y = I[23], P = I[24]), (0, o.useEffect)(y, P)
+        }
+
+        function h(e) {
+            return e()
+        }
+
+        function d(e) {
+            let {
+                element: t,
+                matches: n
+            } = e;
+            return {
+                element: t,
+                maxMatches: n.length
+            }
+        }
+
+        function g(e) {
+            let {
+                range: t
+            } = e;
+            return t
+        }
+
+        function m(e) {
+            let {
+                element: t,
+                matches: n
+            } = e;
+            return {
+                element: t,
+                matches: n.filter(f)
+            }
+        }
+
+        function f(e) {
+            return "conversation" === e.location.domain && null == e.location.equationIndex
+        }
+    }),
+    hkBU: (function(e, t, n) {
+        var r = n("ABep"),
+            l = n("QosV"),
+            o = n("zd8w"),
+            i = n("oyxz");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, a, u, s, c, h, d, g, m = (0, l.c)(15),
+                    {
+                        onNavigate: f
+                    } = e,
+                    p = (0, o.useRef)(null),
+                    x = (0, o.useRef)(null),
+                    [y, P] = (0, o.useState)(!1);
+                return m[0] === Symbol.for("react.memo_cache_sentinel") ? (t = () => {
+                    let e = p.current;
+                    if (null == e) return;
+                    let t = e.ownerDocument,
+                        n = e.closest("[data-thread-scroll-footer]") ?? e.parentElement,
+                        r = () => {
+                            let n = t.activeElement;
+                            null != n && e.compareDocumentPosition(n) === Node.DOCUMENT_POSITION_FOLLOWING && (e.tabIndex = 0)
+                        },
+                        l = t => {
+                            "Tab" !== t.key || t.shiftKey || t.defaultPrevented || (e.tabIndex = -1)
+                        };
+                    return t.addEventListener("keydown", l), n?.addEventListener("focusin", r), () => {
+                        t.removeEventListener("keydown", l), n?.removeEventListener("focusin", r), x.current?.abort()
+                    }
+                }, n = [], m[0] = t, m[1] = n) : (t = m[0], n = m[1]), (0, o.useEffect)(t, n), m[2] === Symbol.for("react.memo_cache_sentinel") ? (a = () => x.current?.abort(), m[2] = a) : a = m[2], m[3] !== f ? (u = e => {
+                    x.current?.abort();
+                    let t = e.currentTarget;
+                    t.tabIndex = -1;
+                    let n = new AbortController;
+                    x.current = n, P(!1), f(n.signal).then(e => {
+                        !n.signal.aborted && t.isConnected && t.ownerDocument.activeElement === t && (e?.isConnected ? e.focus({
+                            preventScroll: !0
+                        }) : P(!0))
+                    })
+                }, m[3] = f, m[4] = u) : u = m[4], m[5] === Symbol.for("react.memo_cache_sentinel") ? (s = (0, r.jsx)(i.a, {
+                    id: "codex.conversation.latestResponse",
+                    defaultMessage: "Latest response",
+                    description: "Invisible heading before the composer; focusing it moves to the newest assistant response"
+                }), m[5] = s) : s = m[5], m[6] !== u ? (c = (0, r.jsx)("h4", {
+                    ref: p,
+                    className: "sr-only m-0 select-none",
+                    tabIndex: 0,
+                    onBlur: a,
+                    onFocus: u,
+                    children: s
+                }), m[6] = u, m[7] = c) : c = m[7], m[8] !== y ? (h = y ? (0, r.jsx)(i.a, {
+                    id: "codex.conversation.latestResponseUnavailable",
+                    defaultMessage: "No response available",
+                    description: "Screen-reader announcement when navigation to the latest assistant response finds no response in the conversation"
+                }) : null, m[8] = y, m[9] = h) : h = m[9], m[10] !== h ? (d = (0, r.jsx)("span", {
+                    className: "sr-only m-0",
+                    role: "status",
+                    children: h
+                }), m[10] = h, m[11] = d) : d = m[11], m[12] !== c || m[13] !== d ? (g = (0, r.jsxs)(r.Fragment, {
+                    children: [c, d]
+                }), m[12] = c, m[13] = d, m[14] = g) : g = m[14], g
+            }
+        })
+    }),
+    cP1f: (function(e, t, n) {
+        n.d(t, {}, {
+            a: async function(e, t, n) {
+                if (null == e || null == t || n.aborted) return null;
+                let r = null;
+                return await e(t, e => {
+                    let t = e.querySelectorAll('[data-conversation-role="assistant"]');
+                    return r = t.item(t.length - 1)
+                }, {
+                    align: "top",
+                    signal: n
+                }), n.aborted ? null : r
+            }
+        })
+    }),
+    u0tN: (function(e, t, n) {
+        n.d(t, {
+            a: () => v
+        });
+        var r = n("ABep"),
+            l = n("QosV"),
+            o = n("on57"),
+            i = n("BolX"),
+            a = n("zd8w"),
+            u = n("v7qY"),
+            s = n("wD9O"),
+            c = n("zm5q"),
+            h = n("f4Vb"),
+            d = n("QEDJ"),
+            g = n("lsfk"),
+            m = n("uYx2"),
+            f = n("g3o5"),
+            p = n("bIvi"),
+            x = n("RKko");
+
+        function y(e, t, n) {
+            let r = arguments.length > 3 && void 0 !== arguments[3] ? arguments[3] : null;
+            if (null == e || null == t) return null;
+            let l = t.getBoundingClientRect();
+            if (0 === l.height) return null;
+            let o = e.querySelectorAll("[data-history-message-id]"),
+                i = () => {
+                    let t = e.getBoundingClientRect();
+                    return "retention" === n && null != r && t.height > 0 && t.bottom > l.top && t.top < l.bottom ? r : null
+                };
+            if (0 === o.length) return i();
+            let a = 0,
+                u = o.length;
+            for (; a < u;) {
+                let e = Math.floor((a + u) / 2),
+                    t = o[e].getBoundingClientRect();
+                if (0 === t.height) return null;
+                t.bottom <= l.top ? a = e + 1 : u = e
+            }
+            let s = o[a];
+            if (null == s) return i();
+            let c = s.getBoundingClientRect();
+            if (0 === c.height || c.top >= l.bottom) return null;
+            let h = "retention" === n && c.top > l.top ? o[a - 1] : s;
+            return h?.dataset.historyMessageId ?? null
+        }
+        let P = {};
+
+        function v(e) {
+            let t, n, v, K, T, F, D, L, k, q, A, z, O, U, _, N, j, V, W, $, Q, G, X, Y, Z, J, ee, et, en, er, el, eo, ei, ea, eu, es, ec, eh, ed, eg, em, ef, ep, ex, ey, eP, ev, ew, eb, eS, eE, eC, eB, eI, eH, eR, eM, eK, eT, eF, eD, eL, ek, eq, eA, ez, eO, eU, e_, eN, ej, eV, eW, e$, eQ = (0, l.c)(279),
+                {
+                    collapseEmptyRows: eG,
+                    entries: eX,
+                    RowComponent: eY,
+                    onApiChange: eZ,
+                    onVisibleContentReady: eJ,
+                    className: e0,
+                    gapPx: e1,
+                    getBottomScrollPaddingPx: e2,
+                    isSubmitPlacementAnimating: e3,
+                    onLatestTurnHeightChange: e4,
+                    preserveMeasuredTurnViewport: e5,
+                    preserveUnderfilledViewport: e6,
+                    getPendingRestoreScrollDistanceFromBottomPx: e7,
+                    restoreScrollDistanceFromBottomPx: e8,
+                    initialRestoreState: e9,
+                    latestTurnFooter: te,
+                    latestTurnFooterKey: tt,
+                    onRestoreStateChange: tn,
+                    onViewportChange: tr,
+                    onHistoryRetentionBoundaryChange: tl,
+                    latestTurnSynchronousMeasurementKey: to,
+                    layoutReadyTurnKey: ti,
+                    onTurnLayoutReady: ta,
+                    synchronousMeasurementTurnKey: tu,
+                    retainedTurnKeys: ts,
+                    skipEmptyResizeMeasurements: tc
+                } = e,
+                th = void 0 !== eG && eG,
+                td = void 0 === e1 ? 12 : e1,
+                tg = void 0 !== e5 && e5,
+                tm = void 0 !== e6 && e6,
+                tf = void 0 !== tc && tc,
+                tp = (0, i.z)(f.b);
+            eQ[0] !== ts ? (t = ts ?? [], eQ[0] = ts, eQ[1] = t) : t = eQ[1];
+            let tx = [...t, ...tp],
+                [ty, tP] = (0, a.useState)(null),
+                [tv] = (0, a.useState)(B);
+            eQ[2] !== ty || eQ[3] !== tm || eQ[4] !== eX ? (n = tm && null != ty && ty.turnKey === eX.at(-1)?.turnKey ? ty.viewportHeightPx - ty.heightOutsideTurnPx : void 0, eQ[2] = ty, eQ[3] = tm, eQ[4] = eX, eQ[5] = n) : n = eQ[5];
+            let tw = n;
+            eQ[6] !== tw || eQ[7] !== tv || eQ[8] !== eX ? (v = tv(eX, tw), eQ[6] = tw, eQ[7] = tv, eQ[8] = eX, eQ[9] = v) : v = eQ[9];
+            let tb = v,
+                tS = (0, g.b)(),
+                tE = (0, s.c)(),
+                tC = tE * (globalThis.devicePixelRatio ?? 1),
+                tB = e9?.turnHeightsByKey ?? P,
+                [tI, tH] = (0, a.useState)(tB),
+                [tR, tM] = (0, a.useState)(null);
+            eQ[10] !== th || eQ[11] !== tb || eQ[12] !== td || eQ[13] !== tC || eQ[14] !== tI ? (K = (0, x.a)({
+                collapseEmptyRows: th,
+                entries: tb,
+                gapPx: td,
+                measuredHeightsByKey: tI,
+                pixelScale: tC
+            }), eQ[10] = th, eQ[11] = tb, eQ[12] = td, eQ[13] = tC, eQ[14] = tI, eQ[15] = K) : K = eQ[15];
+            let tK = K;
+            eQ[16] !== e2 || eQ[17] !== e9 || eQ[18] !== tK || eQ[19] !== tS ? (T = () => {
+                var e, t, n;
+                let r, l, o = H(e2);
+                return e = tK, t = R(tS.getLastScrollDistanceFromBottomPx(), o), n = e9, r = Math.min(t, e.totalHeightPx), l = (0, x.d)({
+                    distanceFromBottomPx: r,
+                    layout: e,
+                    overscanCount: 2,
+                    viewportHeightPx: 800
+                }), {
+                    distanceFromBottomPx: r,
+                    renderedRange: (n?.renderedWindow == null ? null : (0, x.e)({
+                        anchorKey: n.renderedWindow.anchorKey,
+                        layout: e,
+                        previousRange: {
+                            startIndex: 0,
+                            endIndex: Math.min(n.renderedWindow.count, l.endIndex - l.startIndex)
+                        }
+                    })) ?? l,
+                    turnKeys: e.turnKeys,
+                    viewportHeightPx: 800
+                }
+            }, eQ[16] = e2, eQ[17] = e9, eQ[18] = tK, eQ[19] = tS, eQ[20] = T) : T = eQ[20];
+            let [tT, tF] = (0, a.useState)(T), [tD] = (0, a.useState)(b), tL = (0, a.useSyncExternalStore)(tD.subscribe, tD.getSnapshot, tD.getSnapshot), tk = (0, a.useRef)(null), tq = (0, a.useRef)(tI), tA = (0, a.useRef)(0);
+            eQ[21] === Symbol.for("react.memo_cache_sentinel") ? (F = e => {
+                tA.current = e;
+                let t = tk.current;
+                null != t && (t.style.minHeight = e > 0 ? `${e}px` : "")
+            }, eQ[21] = F) : F = eQ[21];
+            let tz = (0, p.a)(F),
+                tO = (0, a.useRef)(tT),
+                tU = (0, a.useRef)(null);
+            eQ[22] === Symbol.for("react.memo_cache_sentinel") ? (D = new Map, eQ[22] = D) : D = eQ[22];
+            let t_ = (0, a.useRef)(D);
+            eQ[23] === Symbol.for("react.memo_cache_sentinel") ? (L = new Map, eQ[23] = L) : L = eQ[23];
+            let tN = (0, a.useRef)(L);
+            eQ[24] === Symbol.for("react.memo_cache_sentinel") ? (k = new WeakSet, eQ[24] = k) : k = eQ[24];
+            let tj = (0, a.useRef)(k);
+            eQ[25] === Symbol.for("react.memo_cache_sentinel") ? (q = new Map, eQ[25] = q) : q = eQ[25];
+            let tV = (0, a.useRef)(q);
+            eQ[26] === Symbol.for("react.memo_cache_sentinel") ? (A = new Map, eQ[26] = A) : A = eQ[26];
+            let tW = (0, a.useRef)(A),
+                t$ = (0, a.useRef)(null),
+                tQ = (0, a.useRef)(null),
+                tG = (0, a.useRef)(0),
+                tX = (0, a.useRef)(null),
+                [tY, tZ] = (0, a.useState)(null),
+                tJ = (0, a.useRef)(!1),
+                t0 = (0, a.useRef)(null),
+                t1 = (0, a.useRef)(tK),
+                t2 = (0, a.useRef)(tK),
+                t3 = (0, a.useRef)(tK),
+                t4 = (0, a.useRef)(eX),
+                t5 = (0, a.useRef)(null);
+            eQ[27] !== tI ? (z = () => {
+                tI !== tq.current && tH(tq.current)
+            }, eQ[27] = tI, eQ[28] = z) : z = eQ[28], eQ[29] !== th || eQ[30] !== tb || eQ[31] !== td || eQ[32] !== tC || eQ[33] !== tI ? (O = [th, tb, td, tC, tI], eQ[29] = th, eQ[30] = tb, eQ[31] = td, eQ[32] = tC, eQ[33] = tI, eQ[34] = O) : O = eQ[34], (0, a.useLayoutEffect)(z, O), eQ[35] === Symbol.for("react.memo_cache_sentinel") ? (U = e => {
+                tk.current = e, tM(e)
+            }, eQ[35] = U) : U = eQ[35];
+            let t6 = (0, p.a)(U);
+            eQ[36] !== th || eQ[37] !== tb || eQ[38] !== td || eQ[39] !== tK || eQ[40] !== tC || eQ[41] !== tI ? (_ = () => {
+                if (t2.current !== tK) {
+                    t2.current = tK, t1.current = tI === tq.current ? tK : (0, x.a)({
+                        collapseEmptyRows: th,
+                        entries: tb,
+                        gapPx: td,
+                        measuredHeightsByKey: tq.current,
+                        pixelScale: tC
+                    });
+                    let e = tk.current;
+                    null != e && (e.style.height = `${t1.current.totalHeightPx}px`)
+                }
+                return t1.current
+            }, eQ[36] = th, eQ[37] = tb, eQ[38] = td, eQ[39] = tK, eQ[40] = tC, eQ[41] = tI, eQ[42] = _) : _ = eQ[42];
+            let t7 = (0, p.a)(_);
+            eQ[43] !== e2 || eQ[44] !== tS || eQ[45] !== tE ? (N = e => {
+                let t = tS.getScrollElement(),
+                    n = tk.current,
+                    r = t?.firstElementChild;
+                return null == n || null == r ? e - H(e2) : e - (0, s.b)(r.getBoundingClientRect().bottom - n.getBoundingClientRect().bottom, tE)
+            }, eQ[43] = e2, eQ[44] = tS, eQ[45] = tE, eQ[46] = N) : N = eQ[46];
+            let t8 = (0, p.a)(N),
+                t9 = tT.renderedRange;
+            if (null != tL) {
+                let e = (0, x.c)({
+                    layout: tK,
+                    turnKey: tL.turnKey,
+                    viewportHeightPx: tT.viewportHeightPx
+                });
+                null != e && (t9 = (0, x.d)({
+                    distanceFromBottomPx: e,
+                    layout: tK,
+                    overscanCount: 2,
+                    viewportHeightPx: tT.viewportHeightPx
+                }))
+            } else if (!I(tT.turnKeys, tK.turnKeys)) {
+                let e = tT.turnKeys[tT.renderedRange.startIndex];
+                null != e && (t9 = (0, x.e)({
+                    anchorKey: e,
+                    layout: tK,
+                    previousRange: t9
+                }) ?? (0, x.d)({
+                    distanceFromBottomPx: tT.distanceFromBottomPx,
+                    layout: tK,
+                    overscanCount: 2,
+                    viewportHeightPx: tT.viewportHeightPx
+                }))
+            }
+            eQ[47] !== e8 ? (j = () => {
+                null == t$.current && e8?.()
+            }, eQ[47] = e8, eQ[48] = j) : j = eQ[48];
+            let ne = (0, p.a)(j);
+            eQ[49] === Symbol.for("react.memo_cache_sentinel") ? (V = () => {
+                null != t0.current && (window.cancelAnimationFrame(t0.current), t0.current = null)
+            }, eQ[49] = V) : V = eQ[49];
+            let nt = (0, p.a)(V);
+            eQ[50] !== tb || eQ[51] !== eJ || eQ[52] !== ne ? (W = () => {
+                null == eJ || tJ.current || null != t0.current || null == tk.current || tb.length > 0 && 0 === tN.current.size || (t0.current = window.requestAnimationFrame(() => {
+                    t0.current = window.requestAnimationFrame(() => {
+                        t0.current = null, tJ.current || null == tk.current || tb.length > 0 && 0 === tN.current.size || (tJ.current = !0, ne(), eJ())
+                    })
+                }))
+            }, eQ[50] = tb, eQ[51] = eJ, eQ[52] = ne, eQ[53] = W) : W = eQ[53];
+            let nn = (0, p.a)(W),
+                nr = eX.slice(t9.startIndex, t9.endIndex).map((e, t) => ({
+                    entry: e,
+                    turnIndex: t9.startIndex + t
+                }));
+            for (let e of new Set(tx)) {
+                let t = tK.turnIndexByKey.get(e);
+                if (null == t || t >= t9.startIndex && t < t9.endIndex) continue;
+                let n = eX[t];
+                null != n && nr.push({
+                    entry: n,
+                    turnIndex: t
+                })
+            }
+            nr.sort(w), eQ[54] !== tS ? ($ = e => y(tN.current.get(e), tS.getScrollElement(), "visible"), eQ[54] = tS, eQ[55] = $) : $ = eQ[55];
+            let nl = (0, p.a)($),
+                no = null == tl ? null : function(e, t, n, r) {
+                    let {
+                        startIndex: l,
+                        endIndex: o
+                    } = (0, x.d)({
+                        distanceFromBottomPx: 0,
+                        layout: n,
+                        overscanCount: 0,
+                        viewportHeightPx: r
+                    }), i = 1 / 0, a = null, u = n => {
+                        let r = e[n];
+                        if ("gap" === r.type) return !1;
+                        let l = null;
+                        if ("sourceTurnId" in r && "string" == typeof r.sourceTurnId ? l = r.sourceTurnId : "turnId" in r && "string" == typeof r.turnId && (l = r.turnId), null == l) return !1;
+                        if (n < i) {
+                            i = n;
+                            let e = "historyRetentionLastItemId" in r && "string" == typeof r.historyRetentionLastItemId && !t?.includes(r.turnKey) ? r.historyRetentionLastItemId : null;
+                            a = {
+                                anchorItemId: "historyRetentionAnchorItemId" in r && "string" == typeof r.historyRetentionAnchorItemId ? r.historyRetentionAnchorItemId : null,
+                                turnId: l,
+                                measuredTurnKey: null == e ? null : r.turnKey,
+                                lastItemId: e
+                            }
+                        }
+                        return !0
+                    };
+                    for (let e = l; e < o; e++)
+                        if (!u(e)) return null;
+                    for (let e of t ?? []) {
+                        let t = n.turnIndexByKey.get(e);
+                        if (null != t && !u(t)) return null
+                    }
+                    return a
+                }(eX, tx, tK, tT.viewportHeightPx + 24),
+                ni = (0, p.a)(e => {
+                    if (null != tl) {
+                        if (null == no || e > 24 || null != tD.getSnapshot()) return void tl(null);
+                        tl({
+                            oldestProtectedTurnId: no.turnId,
+                            firstProtectedItemId: null == no.measuredTurnKey ? null : y(tN.current.get(no.measuredTurnKey), tS.getScrollElement(), "retention", no.anchorItemId ?? no.lastItemId)
+                        })
+                    }
+                });
+            eQ[56] !== ni || eQ[57] !== tS ? (Q = () => {
+                ni(tS.getLastScrollDistanceFromBottomPx())
+            }, eQ[56] = ni, eQ[57] = tS, eQ[58] = Q) : Q = eQ[58];
+            let na = no?.anchorItemId,
+                nu = no?.turnId,
+                ns = no?.measuredTurnKey,
+                nc = no?.lastItemId;
+            eQ[59] !== tK.totalHeightPx || eQ[60] !== tl || eQ[61] !== tL || eQ[62] !== tT.viewportHeightPx || eQ[63] !== ni || eQ[64] !== tS || eQ[65] !== na || eQ[66] !== nu || eQ[67] !== ns || eQ[68] !== nc ? (G = [na, nu, ns, nc, tT.viewportHeightPx, tK.totalHeightPx, tl, tL, ni, tS], eQ[59] = tK.totalHeightPx, eQ[60] = tl, eQ[61] = tL, eQ[62] = tT.viewportHeightPx, eQ[63] = ni, eQ[64] = tS, eQ[65] = na, eQ[66] = nu, eQ[67] = ns, eQ[68] = nc, eQ[69] = G) : G = eQ[69], (0, a.useLayoutEffect)(Q, G), eQ[70] !== ti || eQ[71] !== ta || eQ[72] !== tS ? (X = () => {
+                if (null == ti || null == ta || null != t$.current || tV.current.size > 0) return;
+                let e = tS.getScrollElement(),
+                    t = tN.current.get(ti);
+                null != e && !(e.clientHeight <= 0) && null != t && tj.current.has(t) && !((tq.current[ti] ?? 0) <= 0) && ta(ti, t)
+            }, eQ[70] = ti, eQ[71] = ta, eQ[72] = tS, eQ[73] = X) : X = eQ[73];
+            let nh = (0, p.a)(X);
+            eQ[74] !== e2 || eQ[75] !== e7 || eQ[76] !== e3 || eQ[77] !== e4 || eQ[78] !== ne || eQ[79] !== tS || eQ[80] !== tD ? (Y = e => {
+                let t = H(e2);
+                if (null != e.latestTurnHeightChange && e4?.(e.latestTurnHeightChange), e.restoreScrollDistanceFromBottom) ne();
+                else if (null != e.scrollDistanceFromBottomPx) {
+                    var n, r;
+                    let l, o = e.scrollDistanceFromBottomPx,
+                        i = t3.current,
+                        a = t1.current,
+                        u = t5.current;
+                    e3?.() && null != e.latestTurnHeightChange && null != u && u.totalHeightPx !== i.totalHeightPx && null == tD.getSnapshot() && e7?.() == null && (n = i, (l = (r = a).turnKeys.length - 1) > 0 && n.turnKeys.length === r.turnKeys.length && n.turnKeys[l] !== r.turnKeys[l] && n.turnKeys.every((e, t) => t === l || e === r.turnKeys[t] && n.topOffsetsPx[t] === r.topOffsetsPx[t] && n.heightsPx[t] === r.heightsPx[t])) && (o = tS.getUnroundedScrollDistanceFromBottomPx(tS.getLastScrollDistanceFromBottomPx()) + a.totalHeightPx - i.totalHeightPx, t5.current = i), tS.compensateScrollToDistanceFromBottomPx(o + H(e2) - t, null != e.afterMeasure || null != tD.getSnapshot() || e7?.() != null || e3?.() ? void 0 : "turn-resize")
+                }
+                e.afterMeasure?.()
+            }, eQ[74] = e2, eQ[75] = e7, eQ[76] = e3, eQ[77] = e4, eQ[78] = ne, eQ[79] = tS, eQ[80] = tD, eQ[81] = Y) : Y = eQ[81];
+            let nd = (0, p.a)(Y);
+            eQ[82] !== t7 ? (Z = (e, t) => {
+                if (null != t$.current || t <= 0) return;
+                let n = tO.current,
+                    r = E({
+                        current: n,
+                        distanceFromBottomPx: e,
+                        layout: t7(),
+                        viewportHeightPx: t
+                    });
+                r === n || (tO.current = r, r.renderedRange.startIndex === n.renderedRange.startIndex && r.renderedRange.endIndex === n.renderedRange.endIndex && I(r.turnKeys, n.turnKeys) || tF(r))
+            }, eQ[82] = t7, eQ[83] = Z) : Z = eQ[83];
+            let ng = (0, p.a)(Z);
+            eQ[84] !== tl ? (J = () => () => tl?.(void 0), ee = [tl], eQ[84] = tl, eQ[85] = J, eQ[86] = ee) : (J = eQ[85], ee = eQ[86]), (0, a.useLayoutEffect)(J, ee), eQ[87] !== t7 || eQ[88] !== tr ? (et = (e, t, n) => {
+                if (null == tr) return;
+                let r = t7(),
+                    l = Math.max(0, Math.min(r.totalHeightPx, r.totalHeightPx - e)),
+                    o = Math.max(0, l - t);
+                tr({
+                    viewportEndPx: l,
+                    viewportStartPx: o
+                }, n)
+            }, eQ[87] = t7, eQ[88] = tr, eQ[89] = et) : et = eQ[89];
+            let nm = (0, p.a)(et);
+            eQ[90] !== tD ? (en = e => {
+                tD.getSnapshot() === e && tD.replace(null)
+            }, eQ[90] = tD, eQ[91] = en) : en = eQ[91];
+            let nf = (0, p.a)(en);
+            eQ[92] !== tl || eQ[93] !== tD ? (er = (e, t, n) => n?.signal?.aborted ? Promise.resolve() : (tl?.(null), new Promise(r => {
+                let l = () => {
+                        tD.getSnapshot() === o && tD.replace(null)
+                    },
+                    o = {
+                        align: n?.align ?? "center",
+                        complete: () => {
+                            n?.signal?.removeEventListener("abort", l), r()
+                        },
+                        getTargetElement: t,
+                        turnKey: e
+                    };
+                tF(tO.current), tD.replace(o), n?.signal?.addEventListener("abort", l, {
+                    once: !0
+                })
+            })), eQ[92] = tl, eQ[93] = tD, eQ[94] = er) : er = eQ[94];
+            let np = (0, p.a)(er);
+            eQ[95] !== t7 || eQ[96] !== eX ? (el = e => {
+                let {
+                    viewportStartPx: t,
+                    viewportEndPx: n
+                } = e;
+                return (0, x.f)(eX, t7(), t, n)
+            }, eQ[95] = t7, eQ[96] = eX, eQ[97] = el) : el = eQ[97];
+            let nx = (0, p.a)(el);
+            eQ[98] !== t7 ? (eo = e => {
+                let t = t7(),
+                    n = t.turnIndexByKey.get(e);
+                if (null == n) return null;
+                let r = t.topOffsetsPx[n],
+                    l = t.heightsPx[n];
+                return null == r || null == l ? null : {
+                    endPx: r + l,
+                    startPx: r
+                }
+            }, eQ[98] = t7, eQ[99] = eo) : eo = eQ[99];
+            let ny = (0, p.a)(eo);
+            eQ[100] !== e4 || eQ[101] !== tS || eQ[102] !== tE ? (ei = () => {
+                let e = 0,
+                    t = null;
+                for (let [n, r] of tW.current) e += r, (null == t || t.compareDocumentPosition(n) === Node.DOCUMENT_POSITION_FOLLOWING) && (t = n);
+                null != t && e4?.({
+                    heightDeltaPx: null,
+                    heightPx: null,
+                    bottomViewportOverflowPx: tS.isNativeEndSnapFollowing?.() ? 0 : M({
+                        scrollElement: tS.getScrollElement(),
+                        turnElement: t,
+                        windowZoom: tE
+                    }),
+                    turnElement: t,
+                    followContentHeightPx: e
+                })
+            }, eQ[100] = e4, eQ[101] = tS, eQ[102] = tE, eQ[103] = ei) : ei = eQ[103];
+            let nP = (0, p.a)(ei);
+            eQ[104] !== th || eQ[105] !== nd || eQ[106] !== tb || eQ[107] !== td || eQ[108] !== e2 || eQ[109] !== t7 || eQ[110] !== t8 || eQ[111] !== e7 || eQ[112] !== tC || eQ[113] !== tg || eQ[114] !== tS || eQ[115] !== tD || eQ[116] !== tz || eQ[117] !== tE ? (ea = (e, t, n) => {
+                var r;
+                let l = t7(),
+                    o = tS.getScrollElement();
+                if (o?.getClientRects().length === 0) return !1;
+                let i = t$.current,
+                    a = tq.current,
+                    c = a,
+                    h = 0,
+                    d = !1,
+                    g = null,
+                    m = 0,
+                    f = !1,
+                    p = !1,
+                    y = "controller" === (void 0 === n ? "measured" : n) ? tS.getLastScrollDistanceFromBottomPx({
+                        includePendingUserScroll: !0
+                    }) : function(e, t) {
+                        let n = e.getScrollElement(),
+                            r = n?.firstElementChild;
+                        if (null == n || null == r || 0 === n.clientHeight) return e.getLastScrollDistanceFromBottomPx();
+                        let l = r.getBoundingClientRect();
+                        if (0 === l.height) return e.getLastScrollDistanceFromBottomPx();
+                        let o = n.scrollTop;
+                        return Math.max(0, Math.round(o + (0, s.b)(l.bottom - n.getBoundingClientRect().top, t)) - n.clientHeight) - o
+                    }(tS, tE),
+                    P = H(e2),
+                    v = R(y, P),
+                    w = tg ? null : e7?.() ?? null,
+                    b = null == i ? v : tO.current.distanceFromBottomPx,
+                    S = b;
+                if (tg && null == tD.getSnapshot() && e7?.() == null) {
+                    let e = I(t3.current.turnKeys, l.turnKeys) ? l : t3.current,
+                        t = e === l ? i?.scrollDistanceFromBottomPx ?? y : y,
+                        n = C({
+                            distanceFromBottomPx: t8(t),
+                            preferLatestVisibleRow: t < P,
+                            layout: e,
+                            measuredHeightsByKey: a,
+                            nextLayout: l,
+                            viewportHeightPx: tO.current.viewportHeightPx
+                        }),
+                        r = o?.ownerDocument.activeElement,
+                        u = r?.closest("[data-turn-key]"),
+                        s = u?.dataset.turnKey;
+                    if (o && r && u && s && tN.current.get(s) === u) {
+                        let e = r.getBoundingClientRect(),
+                            t = o.getBoundingClientRect();
+                        e.bottom > t.top && e.top < t.bottom && (n = s)
+                    }
+                    let c = null == n ? null : l.turnIndexByKey.get(n);
+                    null != c && (S = l.bottomOffsetsPx[c] ?? b)
+                }
+                for (let [t, n] of e) {
+                    let {
+                        element: e,
+                        heightPx: r
+                    } = n, o = tN.current.get(t);
+                    if (o !== e) continue;
+                    r > 0 ? tj.current.add(o) : tj.current.delete(o);
+                    let i = Math.max(+!th, r),
+                        u = a[t];
+                    if (u === i) continue;
+                    c === a && (c = {
+                        ...a
+                    }), c[t] = i;
+                    let s = l.turnIndexByKey.get(t);
+                    if (null == s) continue;
+                    let x = s === l.turnKeys.length - 1,
+                        y = Math.round(Math.max(tb[s]?.minHeightPx ?? 0, i) * tC) / tC,
+                        P = y - (l.heightsPx[s] ?? y);
+                    p = p || null == u || 0 !== P, x && (d = !0, h += null == u ? 0 : P, g = o), f = f || th && (0 === y || 0 === l.heightsPx[s]), (l.bottomOffsetsPx[s] ?? 0) <= S && (tg || null != e7 && !x) && (m += P)
+                }
+                if (c === a) return !1;
+                if (!p) return tq.current = c, !1;
+                let B = (0, x.a)({
+                    collapseEmptyRows: th,
+                    entries: tb,
+                    gapPx: td,
+                    measuredHeightsByKey: c,
+                    pixelScale: tC
+                });
+                if (f)
+                    for (let [e, t] of B.gapsBeforePx.entries()) {
+                        let n = t - (l.gapsBeforePx[e] ?? 0);
+                        (l.bottomOffsetsPx[e] ?? 0) + (l.heightsPx[e] ?? 0) <= S && (tg || null != e7 && e !== l.turnKeys.length - 1) && (m += n)
+                    }
+                let K = tA.current;
+                if (K > 0) {
+                    let e = Math.max(0, K - l.totalHeightPx),
+                        t = Math.max(0, K - B.totalHeightPx);
+                    m += t - e, h > 0 && e > t && (h = Math.max(0, h - (e - t))), e > 0 && 0 === t && tz(0)
+                }
+                let T = tS.isNativeEndSnapFollowing?.(),
+                    F = tg && tS.shouldFollowContentGrowth() && (T || (r = y, 0 === P && r <= 24)) && g?.querySelector("[data-preserve-turn-viewport]") == null,
+                    D = i?.restoreScrollDistanceFromBottom || null != w,
+                    L = null;
+                D || (L = F ? 0 : 0 !== m ? (i?.scrollDistanceFromBottomPx ?? tS.getUnroundedScrollDistanceFromBottomPx(y)) + m : i?.scrollDistanceFromBottomPx ?? (tg || !d ? y : null));
+                let k = tO.current.distanceFromBottomPx;
+                D ? k = w ?? k : null != L && (k = R(L, P));
+                let q = E({
+                        current: tO.current,
+                        distanceFromBottomPx: k,
+                        layout: B,
+                        viewportHeightPx: tO.current.viewportHeightPx
+                    }),
+                    A = i?.latestTurnHeightChange,
+                    z = g ?? A?.turnElement ?? null,
+                    O = {
+                        afterMeasure: i?.afterMeasure,
+                        latestTurnHeightChange: d || null != A ? {
+                            heightDeltaPx: (A?.heightDeltaPx ?? 0) + h,
+                            heightPx: B.heightsPx.at(-1) ?? null,
+                            bottomViewportOverflowPx: T ? 0 : M({
+                                scrollElement: tS.getScrollElement(),
+                                turnElement: z,
+                                windowZoom: tE
+                            }),
+                            turnElement: z,
+                            followContentHeightPx: null
+                        } : null,
+                        restoreScrollDistanceFromBottom: D,
+                        scrollDistanceFromBottomPx: L,
+                        turnHeightsByKey: c
+                    },
+                    U = tk.current;
+                for (let [t, n] of e) {
+                    let {
+                        element: e
+                    } = n, r = B.turnIndexByKey.get(t);
+                    tN.current.get(t) === e && null != r && null != e.parentElement && (e.parentElement.style.height = `${B.heightsPx[r]}px`, e.parentElement.style.minHeight = "")
+                }
+                if (d && 1 === e.size && null == i && q === tO.current && B.gapsBeforePx.at(-1) === l.gapsBeforePx.at(-1) && null != U) return tq.current = c, t1.current = B, t3.current = B, U.style.height = `${B.totalHeightPx}px`, nd(O), !0;
+                null == t5.current && (t5.current = l);
+                let _ = () => {
+                    tq.current = c, t1.current = B, tH(c), q !== tO.current && (tO.current = q, tF(q))
+                };
+                return t$.current = O, void 0 === t || t ? (0, u.flushSync)(_) : _(), !0
+            }, eQ[104] = th, eQ[105] = nd, eQ[106] = tb, eQ[107] = td, eQ[108] = e2, eQ[109] = t7, eQ[110] = t8, eQ[111] = e7, eQ[112] = tC, eQ[113] = tg, eQ[114] = tS, eQ[115] = tD, eQ[116] = tz, eQ[117] = tE, eQ[118] = ea) : ea = eQ[118];
+            let nv = (0, p.a)(ea);
+            eQ[119] !== nv || eQ[120] !== nP || eQ[121] !== nh || eQ[122] !== tf ? (eu = e => {
+                let t = new Map,
+                    n = !1,
+                    r = !1;
+                for (let l of e) {
+                    let e = t_.current.get(l.target);
+                    if (null == e) continue;
+                    let {
+                        height: o
+                    } = (0, h.a)(l);
+                    switch (e.kind) {
+                        case "turn": {
+                            n = !0;
+                            let r = e.turnKey,
+                                i = tN.current.get(r);
+                            if (o > 0 && i === l.target && tj.current.has(i) && tq.current[r] === o) break;
+                            t.set(r, {
+                                element: l.target,
+                                heightPx: o
+                            });
+                            break
+                        }
+                        case "latest-turn-follow-content":
+                            tW.current.set(e.element, o), r = !0
+                    }
+                }!(t.size > 0) && (n || tf) || nv(t), r && nP(), nh()
+            }, eQ[119] = nv, eQ[120] = nP, eQ[121] = nh, eQ[122] = tf, eQ[123] = eu) : eu = eQ[123];
+            let nw = (0, p.a)(eu);
+            eQ[124] !== nw ? (es = () => {
+                if (null != tQ.current) return tQ.current;
+                let e = new ResizeObserver(nw);
+                return tQ.current = e, e
+            }, eQ[124] = nw, eQ[125] = es) : es = eQ[125];
+            let nb = (0, p.a)(es);
+            eQ[126] !== nb || eQ[127] !== nn ? (ec = (e, t) => {
+                if (null == t) return;
+                t_.current.set(t, {
+                    kind: "turn",
+                    turnKey: e
+                }), tN.current.set(e, t), tj.current.delete(t), tV.current.set(e, t);
+                let n = nb();
+                return n.observe(t), nn(), () => {
+                    n.unobserve(t), t_.current.delete(t), tV.current.get(e) === t && tV.current.delete(e), tN.current.get(e) === t && tN.current.delete(e)
+                }
+            }, eQ[126] = nb, eQ[127] = nn, eQ[128] = ec) : ec = eQ[128];
+            let nS = (0, p.a)(ec);
+            eQ[129] !== nv || eQ[130] !== tE ? (eh = (e, t) => {
+                let n = tN.current.get(e);
+                if (null == n) return;
+                let r = (0, s.b)(n.getBoundingClientRect().height, tE);
+                if (!(r <= 0) && (nv(new Map([
+                        [e, {
+                            element: n,
+                            heightPx: r
+                        }]
+                    ]), !1), null != t)) {
+                    let e = t$.current;
+                    null == e ? t() : e.afterMeasure = t
+                }
+            }, eQ[129] = nv, eQ[130] = tE, eQ[131] = eh) : eh = eQ[131];
+            let nE = (0, p.a)(eh);
+            eQ[132] !== nb ? (ed = e => {
+                if (null == e) return;
+                t_.current.set(e, {
+                    element: e,
+                    kind: "latest-turn-follow-content"
+                }), tW.current.set(e, 0);
+                let t = nb();
+                return t.observe(e), () => {
+                    t.unobserve(e), t_.current.delete(e), tW.current.delete(e)
+                }
+            }, eQ[132] = nb, eQ[133] = ed) : ed = eQ[133];
+            let nC = (0, p.a)(ed);
+            eQ[134] !== nv || eQ[135] !== tE ? (eg = () => {
+                let e = tV.current;
+                if (0 === e.size) {
+                    tG.current = 0;
+                    return
+                }
+                if (null != tX.current) return;
+                if (tG.current >= 8) {
+                    tX.current = requestAnimationFrame(e => {
+                        tX.current = null, tG.current = 0, tZ(e)
+                    });
+                    return
+                }
+                tG.current = tG.current + 1, tV.current = new Map;
+                let t = new Map;
+                if ((0, c.a)("virtualizedTurnList.readMountedHeights", () => {
+                        for (let [n, r] of e) {
+                            if (tN.current.get(n) !== r) continue;
+                            let e = (0, s.b)(r.getBoundingClientRect().height, tE);
+                            e > 0 && t.set(n, {
+                                element: r,
+                                heightPx: e
+                            })
+                        }
+                    }, e.size), t.size > 0) {
+                    let n = tq.current;
+                    if (nv(t, !1, "controller"))
+                        for (let [t, r] of e)(null == n[t] || tG.current > 1) && tN.current.get(t) === r && tV.current.set(t, r);
+                    else tG.current = 0
+                }
+            }, eQ[134] = nv, eQ[135] = tE, eQ[136] = eg) : eg = eQ[136], (0, a.useLayoutEffect)(eg), eQ[137] !== tb || eQ[138] !== nE || eQ[139] !== tu ? (em = () => {
+                let e = tu ?? tb.at(-1)?.turnKey;
+                null != e && nE(e)
+            }, eQ[137] = tb, eQ[138] = nE, eQ[139] = tu, eQ[140] = em) : em = eQ[140];
+            let nB = (0, p.a)(em);
+            eQ[141] !== to || eQ[142] !== nB ? (ef = () => {
+                null != to && nB()
+            }, ep = [to, nB], eQ[141] = to, eQ[142] = nB, eQ[143] = ef, eQ[144] = ep) : (ef = eQ[143], ep = eQ[144]), (0, a.useLayoutEffect)(ef, ep), eQ[145] !== nd || eQ[146] !== tI ? (ex = () => {
+                let e = t$.current;
+                null != e && e.turnHeightsByKey === tI && (t$.current = null, nd(e))
+            }, ey = [nd, tI], eQ[145] = nd, eQ[146] = tI, eQ[147] = ex, eQ[148] = ey) : (ex = eQ[147], ey = eQ[148]), (0, a.useLayoutEffect)(ex, ey), eQ[149] !== tb || eQ[150] !== ty || eQ[151] !== tK.heightsPx || eQ[152] !== tm || eQ[153] !== tI || eQ[154] !== tR || eQ[155] !== tE ? (eP = e => {
+                if (!tm || ty?.viewportHeightPx === e) return;
+                if (null != ty) return void(0, u.flushSync)(() => {
+                    tP({
+                        ...ty,
+                        viewportHeightPx: e
+                    })
+                });
+                let t = tR?.closest("[data-thread-user-message-navigation-content]"),
+                    n = t?.lastElementChild,
+                    r = tb.at(-1)?.turnKey;
+                if (null == t || null == n || null == r || tb.some(e => null == tI[e.turnKey])) return;
+                let l = (0, s.b)(t.getBoundingClientRect().bottom - n.getBoundingClientRect().bottom, tE) - parseFloat(getComputedStyle(t).paddingBottom);
+                l <= 24 || (0, u.flushSync)(() => {
+                    tP({
+                        turnKey: r,
+                        heightOutsideTurnPx: e - (tK.heightsPx.at(-1) ?? 0) - l,
+                        viewportHeightPx: e
+                    })
+                })
+            }, eQ[149] = tb, eQ[150] = ty, eQ[151] = tK.heightsPx, eQ[152] = tm, eQ[153] = tI, eQ[154] = tR, eQ[155] = tE, eQ[156] = eP) : eP = eQ[156];
+            let nI = (0, p.a)(eP);
+            eQ[157] !== nx || eQ[158] !== ny || eQ[159] !== nl || eQ[160] !== nE || eQ[161] !== eZ || eQ[162] !== np ? (ev = () => {
+                if (null != eZ) return eZ({
+                    getEntriesInViewport: nx,
+                    getFirstVisibleMessageItemId: nl,
+                    getEntryGeometry: ny,
+                    measureTurnBeforePaint: nE,
+                    scrollToKey: np
+                }), () => {
+                    eZ(null)
+                }
+            }, ew = [nx, nl, ny, nE, eZ, np], eQ[157] = nx, eQ[158] = ny, eQ[159] = nl, eQ[160] = nE, eQ[161] = eZ, eQ[162] = np, eQ[163] = ev, eQ[164] = ew) : (ev = eQ[163], ew = eQ[164]), (0, a.useEffect)(ev, ew), eQ[165] !== nt ? (eb = () => () => {
+                tJ.current = !1, nt()
+            }, eS = [nt], eQ[165] = nt, eQ[166] = eb, eQ[167] = eS) : (eb = eQ[166], eS = eQ[167]), (0, a.useLayoutEffect)(eb, eS), eQ[168] !== nt || eQ[169] !== nn ? (eE = () => (nn(), nt), eQ[168] = nt, eQ[169] = nn, eQ[170] = eE) : eE = eQ[170], eQ[171] !== nt || eQ[172] !== tb.length || eQ[173] !== eJ || eQ[174] !== nn || eQ[175] !== tR ? (eC = [nt, tb.length, eJ, nn, tR], eQ[171] = nt, eQ[172] = tb.length, eQ[173] = eJ, eQ[174] = nn, eQ[175] = tR, eQ[176] = eC) : eC = eQ[176], (0, a.useEffect)(eE, eC), eQ[177] !== tD ? (eB = () => {
+                let e = t_.current,
+                    t = tN.current,
+                    n = tW.current;
+                return () => {
+                    null != tX.current && (cancelAnimationFrame(tX.current), tX.current = null), tQ.current?.disconnect(), tQ.current = null, e.clear(), t.clear(), tV.current.clear(), n.clear(), t$.current = null, tD.replace(null)
+                }
+            }, eI = [tD], eQ[177] = tD, eQ[178] = eB, eQ[179] = eI) : (eB = eQ[178], eI = eQ[179]), (0, a.useEffect)(eB, eI), eQ[180] !== tn ? (eH = () => {
+                if (null != tn) return () => {
+                    tn(function(e, t, n) {
+                        let r = {};
+                        for (let n of t) {
+                            let t = e[n];
+                            null != t && (r[n] = t)
+                        }
+                        let l = t[n.startIndex];
+                        return 0 === Object.keys(r).length || null == l ? null : {
+                            renderedWindow: {
+                                anchorKey: l,
+                                count: n.endIndex - n.startIndex
+                            },
+                            turnHeightsByKey: r
+                        }
+                    }(tq.current, tO.current.turnKeys, tO.current.renderedRange))
+                }
+            }, eR = [tn], eQ[180] = tn, eQ[181] = eH, eQ[182] = eR) : (eH = eQ[181], eR = eQ[182]), (0, a.useLayoutEffect)(eH, eR), eQ[183] !== eX ? (eM = eX.at(-1), eQ[183] = eX, eQ[184] = eM) : eM = eQ[184];
+            let nH = eM,
+                nR = nH?.turnSearchKey ?? nH?.turnKey;
+            eQ[185] !== nR || eQ[186] !== tS || eQ[187] !== tz || eQ[188] !== tR || eQ[189] !== tE ? (eK = () => {
+                if (null == tR || null == nR) return;
+                let e = e => {
+                    let t = tS.getScrollElement(),
+                        n = e.target;
+                    null != t && !(t.scrollTop <= 0) && n instanceof Element && !(n.getBoundingClientRect().bottom <= t.getBoundingClientRect().top) && tz(Math.max(0, (0, s.b)(tR.getBoundingClientRect().height, tE) - (0, m.b)(t)))
+                };
+                return tR.addEventListener(d.a, e), () => {
+                    tR.removeEventListener(d.a, e), tz(0)
+                }
+            }, eT = [nR, tS, tz, tR, tE], eQ[185] = nR, eQ[186] = tS, eQ[187] = tz, eQ[188] = tR, eQ[189] = tE, eQ[190] = eK, eQ[191] = eT) : (eK = eQ[190], eT = eQ[191]), (0, a.useLayoutEffect)(eK, eT);
+            let {
+                addScrollListener: nM,
+                addUserScrollListener: nK,
+                getScrollElement: nT
+            } = tS;
+            eQ[192] !== nM || eQ[193] !== nK || eQ[194] !== e2 || eQ[195] !== nT || eQ[196] !== nI || eQ[197] !== tm || eQ[198] !== ni || eQ[199] !== nh || eQ[200] !== nm || eQ[201] !== ne || eQ[202] !== tz || eQ[203] !== tR || eQ[204] !== ng ? (eF = () => {
+                let e = nT();
+                if (null == e) return;
+                let t = () => (null == tU.current && (tU.current = e.clientHeight), tU.current || tO.current.viewportHeightPx || 800),
+                    n = nM(e => {
+                        ng(R(e, H(e2)), t()), ni(e)
+                    }),
+                    r = nK((e, n) => {
+                        let r = tA.current;
+                        if (r > 0) {
+                            let t = r - e;
+                            tz(t > t1.current.totalHeightPx && e > 0 ? t : 0)
+                        }
+                        nm(R(e, H(e2)), t(), null != n && e > n)
+                    }),
+                    l = new ResizeObserver(n => {
+                        let r = n.find(t => t.target === e);
+                        if (null != r) {
+                            let {
+                                height: e
+                            } = (0, h.a)(r);
+                            tU.current = e, ng(tO.current.distanceFromBottomPx, e), ne()
+                        }
+                        nI(t()), nh()
+                    });
+                return l.observe(e), tm && null != tR && l.observe(tR), () => {
+                    n(), r(), l.disconnect()
+                }
+            }, eD = [nM, nK, e2, nT, nI, nh, tm, nm, ni, ne, tz, tR, ng], eQ[192] = nM, eQ[193] = nK, eQ[194] = e2, eQ[195] = nT, eQ[196] = nI, eQ[197] = tm, eQ[198] = ni, eQ[199] = nh, eQ[200] = nm, eQ[201] = ne, eQ[202] = tz, eQ[203] = tR, eQ[204] = ng, eQ[205] = eF, eQ[206] = eD) : (eF = eQ[205], eD = eQ[206]), (0, a.useLayoutEffect)(eF, eD), eQ[207] !== nv || eQ[208] !== e2 || eQ[209] !== tK || eQ[210] !== tL || eQ[211] !== tS || eQ[212] !== tD || eQ[213] !== nf || eQ[214] !== ng || eQ[215] !== tE ? (eL = () => {
+                if (null == tL || tD.getSnapshot() !== tL || null != tX.current) return;
+                let e = tS.getScrollElement();
+                if (null == e) return;
+                let t = new Map;
+                for (let [e, n] of tN.current) {
+                    let r = (0, s.b)(n.getBoundingClientRect().height, tE);
+                    r > 0 && t.set(e, {
+                        element: n,
+                        heightPx: r
+                    })
+                }
+                if (nv(t, !1) || null != t$.current) return;
+                let n = tN.current.get(tL.turnKey),
+                    r = null == n ? null : tL.getTargetElement?.(n) ?? n,
+                    l = null == n || null == r ? function(e) {
+                        let {
+                            align: t,
+                            layout: n,
+                            turnKey: r,
+                            viewportHeightPx: l
+                        } = e;
+                        if ("center" === t) return (0, x.c)({
+                            layout: n,
+                            turnKey: r,
+                            viewportHeightPx: l
+                        });
+                        let o = n.turnIndexByKey.get(r);
+                        return null == o ? null : Math.max(0, (n.bottomOffsetsPx[o] ?? 0) + (n.heightsPx[o] ?? 0) - l + 10)
+                    }({
+                        align: tL.align,
+                        layout: tK,
+                        turnKey: tL.turnKey,
+                        viewportHeightPx: e.clientHeight
+                    }) : function(e) {
+                        let {
+                            align: t,
+                            layout: n,
+                            targetElement: r,
+                            turnElement: l,
+                            turnKey: o,
+                            windowZoom: i,
+                            viewportHeightPx: a
+                        } = e, u = n.turnIndexByKey.get(o);
+                        if (null == u) return null;
+                        let c = l.getBoundingClientRect(),
+                            h = r.getBoundingClientRect(),
+                            d = (0, s.b)(h.top - c.top, i),
+                            g = (0, s.b)(h.height, i),
+                            m = (n.bottomOffsetsPx[u] ?? 0) + (n.heightsPx[u] ?? 0) - d;
+                        return "top" === t ? Math.max(0, m - a + 10) : Math.max(0, m - g / 2 - a / 2)
+                    }({
+                        align: tL.align,
+                        layout: tK,
+                        targetElement: r,
+                        turnElement: n,
+                        turnKey: tL.turnKey,
+                        viewportHeightPx: e.clientHeight,
+                        windowZoom: tE
+                    });
+                if (null == l) return void queueMicrotask(() => nf(tL));
+                let o = "top" === tL.align && null != r ? Math.max(0, tS.getLastScrollDistanceFromBottomPx() - (0, s.b)(r.getBoundingClientRect().top - e.getBoundingClientRect().top, tE) + 10) : l + H(e2);
+                tS.scrollToDistanceFromBottomPx(o, "instant", "user"), ng(Math.max(0, o - H(e2)), e.clientHeight), queueMicrotask(() => nf(tL))
+            }, eQ[207] = nv, eQ[208] = e2, eQ[209] = tK, eQ[210] = tL, eQ[211] = tS, eQ[212] = tD, eQ[213] = nf, eQ[214] = ng, eQ[215] = tE, eQ[216] = eL) : eL = eQ[216], eQ[217] !== nv || eQ[218] !== e2 || eQ[219] !== tK || eQ[220] !== tY || eQ[221] !== tL || eQ[222] !== tS || eQ[223] !== tD || eQ[224] !== nf || eQ[225] !== ng || eQ[226] !== tE ? (ek = [nv, tK, tY, tL, tS, tD, nf, e2, ng, tE], eQ[217] = nv, eQ[218] = e2, eQ[219] = tK, eQ[220] = tY, eQ[221] = tL, eQ[222] = tS, eQ[223] = tD, eQ[224] = nf, eQ[225] = ng, eQ[226] = tE, eQ[227] = ek) : ek = eQ[227], (0, a.useLayoutEffect)(eL, ek), eQ[228] !== e2 || eQ[229] !== t7 || eQ[230] !== t8 || eQ[231] !== e7 || eQ[232] !== tL || eQ[233] !== tg || eQ[234] !== eX || eQ[235] !== tS || eQ[236] !== ng ? (eq = () => {
+                var e;
+                if (null != t$.current) return;
+                let t = t3.current,
+                    n = t7(),
+                    r = t5.current ?? n;
+                t5.current = null, t3.current = n;
+                let l = t4.current !== eX;
+                if (t4.current = eX, null != tL || !tg && t.turnKeys.at(-1) !== r.turnKeys.at(-1) || t === r && !l) return;
+                let o = H(e2),
+                    i = tS.getLastScrollDistanceFromBottomPx({
+                        includePendingUserScroll: !0
+                    });
+                if (null != (e7?.() ?? null)) return;
+                if (tS.shouldFollowContentGrowth() && (e = i, 0 === o && e <= 24)) return void tS.compensateScrollToDistanceFromBottomPx(0);
+                if (t === r) return;
+                let a = C({
+                    distanceFromBottomPx: t8(i),
+                    preferLatestVisibleRow: i < o,
+                    layout: t,
+                    measuredHeightsByKey: tq.current,
+                    nextLayout: r,
+                    viewportHeightPx: tO.current.viewportHeightPx
+                });
+                if (null == a) return;
+                let u = tS.getUnroundedScrollDistanceFromBottomPx(i),
+                    s = (0, x.b)({
+                        anchorKey: a,
+                        distanceFromBottomPx: u,
+                        nextLayout: r,
+                        previousLayout: t
+                    });
+                null != s && (s !== u || t.totalHeightPx !== r.totalHeightPx) && (ng(R(s, o), tO.current.viewportHeightPx), tS.compensateScrollToDistanceFromBottomPx(s))
+            }, eQ[228] = e2, eQ[229] = t7, eQ[230] = t8, eQ[231] = e7, eQ[232] = tL, eQ[233] = tg, eQ[234] = eX, eQ[235] = tS, eQ[236] = ng, eQ[237] = eq) : eq = eQ[237], eQ[238] !== e2 || eQ[239] !== t7 || eQ[240] !== t8 || eQ[241] !== e7 || eQ[242] !== tK || eQ[243] !== tL || eQ[244] !== tg || eQ[245] !== eX || eQ[246] !== tS || eQ[247] !== ng ? (eA = [e2, t7, t8, e7, tK, tL, tg, eX, tS, ng], eQ[238] = e2, eQ[239] = t7, eQ[240] = t8, eQ[241] = e7, eQ[242] = tK, eQ[243] = tL, eQ[244] = tg, eQ[245] = eX, eQ[246] = tS, eQ[247] = ng, eQ[248] = eA) : eA = eQ[248], (0, a.useLayoutEffect)(eq, eA), eQ[249] !== tL || eQ[250] !== nm || eQ[251] !== ne || eQ[252] !== ng ? (ez = () => {
+                null == tL && null == t$.current && (ng(tO.current.distanceFromBottomPx, tO.current.viewportHeightPx), ne(), nm(tO.current.distanceFromBottomPx, tO.current.viewportHeightPx, !1))
+            }, eQ[249] = tL, eQ[250] = nm, eQ[251] = ne, eQ[252] = ng, eQ[253] = ez) : ez = eQ[253], eQ[254] !== tK || eQ[255] !== tL || eQ[256] !== nm || eQ[257] !== ne || eQ[258] !== ng ? (eO = [tK, tL, nm, ne, ng], eQ[254] = tK, eQ[255] = tL, eQ[256] = nm, eQ[257] = ne, eQ[258] = ng, eQ[259] = eO) : eO = eQ[259], (0, a.useLayoutEffect)(ez, eO), eQ[260] !== nh ? (eU = () => {
+                nh()
+            }, eQ[260] = nh, eQ[261] = eU) : eU = eQ[261], (0, a.useLayoutEffect)(eU), eQ[262] !== tb || eQ[263] !== tt ? (e_ = tt ?? tb.at(-1)?.turnKey, eQ[262] = tb, eQ[263] = tt, eQ[264] = e_) : e_ = eQ[264];
+            let nF = e_;
+            eQ[265] !== e0 ? (eN = (0, o.b)("relative shrink-0", e0), eQ[265] = e0, eQ[266] = eN) : eN = eQ[266], eQ[267] !== tK.totalHeightPx ? (ej = {
+                height: tK.totalHeightPx
+            }, eQ[267] = tK.totalHeightPx, eQ[268] = ej) : ej = eQ[268];
+            let nD = `${tK.topOffsetsPx[t9.startIndex]??0}px`;
+            eQ[269] !== nD ? (eV = {
+                marginTop: nD
+            }, eQ[269] = nD, eQ[270] = eV) : eV = eQ[270];
+            let nL = nr.map(e => {
+                let {
+                    entry: t,
+                    turnIndex: n
+                } = e;
+                return (0, r.jsx)(S, {
+                    entry: t,
+                    gapBeforePx: n === t9.startIndex ? 0 : tK.gapsBeforePx[n] ?? 0,
+                    retainedTopPx: n < t9.startIndex || n >= t9.endIndex ? tK.topOffsetsPx[n] : void 0,
+                    latestTurnFollowContentRef: n === tb.length - 1 && null != e4 ? nC : void 0,
+                    latestTurnFooter: t.turnKey === nF ? te : void 0,
+                    RowComponent: eY,
+                    measuredHeightPx: null == tI[t.turnKey] ? void 0 : tK.heightsPx[n],
+                    constrainedHeightPx: n !== tb.length - 1 && tL?.turnKey !== t.turnKey && null == tI[t.turnKey] ? tK.heightsPx[n] : void 0,
+                    observeTurnElement: nS
+                }, t.turnKey)
+            });
+            return eQ[271] !== eV || eQ[272] !== nL ? (eW = (0, r.jsx)("div", {
+                className: "flex flex-col",
+                style: eV,
+                children: nL
+            }), eQ[271] = eV, eQ[272] = nL, eQ[273] = eW) : eW = eQ[273], eQ[274] !== t6 || eQ[275] !== eN || eQ[276] !== ej || eQ[277] !== eW ? (e$ = (0, r.jsx)("div", {
+                ref: t6,
+                className: eN,
+                style: ej,
+                children: eW
+            }), eQ[274] = t6, eQ[275] = eN, eQ[276] = ej, eQ[277] = eW, eQ[278] = e$) : e$ = eQ[278], e$
+        }
+
+        function w(e, t) {
+            return e.turnIndex - t.turnIndex
+        }
+
+        function b() {
+            return new K
+        }
+        let S = (0, a.memo)(function(e) {
+            let t, n, i, a, u, s, c = (0, l.c)(25),
+                {
+                    entry: h,
+                    gapBeforePx: d,
+                    latestTurnFollowContentRef: g,
+                    latestTurnFooter: m,
+                    RowComponent: f,
+                    constrainedHeightPx: x,
+                    measuredHeightPx: y,
+                    retainedTopPx: P,
+                    observeTurnElement: v
+                } = e,
+                {
+                    turnKey: w
+                } = h;
+            c[0] !== v || c[1] !== w ? (t = e => v(w, e), c[0] = v, c[1] = w, c[2] = t) : t = c[2];
+            let b = (0, p.a)(t),
+                S = null != P && "absolute inset-x-0",
+                E = null != x && "overflow-hidden";
+            c[3] !== S || c[4] !== E ? (n = (0, o.b)(S, E), c[3] = S, c[4] = E, c[5] = n) : n = c[5];
+            let C = null != y ? "size" : void 0,
+                B = y ?? x,
+                I = null == P ? d : 0,
+                H = null == y ? h.minHeightPx : void 0;
+            return c[6] !== P || c[7] !== C || c[8] !== B || c[9] !== I || c[10] !== H ? (i = {
+                contain: C,
+                height: B,
+                marginTop: I,
+                minHeight: H,
+                top: P
+            }, c[6] = P, c[7] = C, c[8] = B, c[9] = I, c[10] = H, c[11] = i) : i = c[11], c[12] !== f || c[13] !== h || c[14] !== g || c[15] !== m ? (a = (0, r.jsx)(f, {
+                entry: h,
+                latestTurnFooter: m,
+                latestTurnFollowContentRef: g
+            }), c[12] = f, c[13] = h, c[14] = g, c[15] = m, c[16] = a) : a = c[16], c[17] !== b || c[18] !== a || c[19] !== w ? (u = (0, r.jsx)("div", {
+                ref: b,
+                className: "[&_[data-virtualized-turn-content]]:[content-visibility:visible]",
+                "data-turn-key": w,
+                children: a
+            }), c[17] = b, c[18] = a, c[19] = w, c[20] = u) : u = c[20], c[21] !== u || c[22] !== n || c[23] !== i ? (s = (0, r.jsx)("div", {
+                className: n,
+                style: i,
+                children: u
+            }), c[21] = u, c[22] = n, c[23] = i, c[24] = s) : s = c[24], s
+        });
+
+        function E(e) {
+            var t, n;
+            let {
+                current: r,
+                distanceFromBottomPx: l,
+                layout: o,
+                viewportHeightPx: i
+            } = e, a = Math.min(l, o.totalHeightPx), u = (0, x.d)({
+                distanceFromBottomPx: a,
+                layout: o,
+                overscanCount: 2,
+                viewportHeightPx: i
+            }), s = (t = r.renderedRange, n = u, t.startIndex <= n.startIndex && t.endIndex >= n.endIndex) ? r.renderedRange : u;
+            return r.distanceFromBottomPx === a && r.viewportHeightPx === i && r.renderedRange.startIndex === s.startIndex && r.renderedRange.endIndex === s.endIndex && I(r.turnKeys, o.turnKeys) ? r : {
+                distanceFromBottomPx: a,
+                renderedRange: s,
+                turnKeys: o.turnKeys,
+                viewportHeightPx: i
+            }
+        }
+
+        function C(e) {
+            let {
+                distanceFromBottomPx: t,
+                preferLatestVisibleRow: n,
+                layout: r,
+                measuredHeightsByKey: l,
+                nextLayout: o,
+                viewportHeightPx: i
+            } = e, a = (0, x.d)({
+                distanceFromBottomPx: t,
+                layout: r,
+                overscanCount: 0,
+                viewportHeightPx: Math.max(0, i + Math.min(0, t))
+            }), u = null;
+            for (let e = a.startIndex; e < a.endIndex; e += 1) {
+                let a = r.turnKeys[e];
+                if (null != a && !r.gapKeys.has(a) && (!r.collapseEmptyRows || (r.heightsPx[e] ?? 0) > 0) && null != l[a] && o.turnIndexByKey.has(a) && (r.bottomOffsetsPx[e] ?? 0) < t + i && (r.bottomOffsetsPx[e] ?? 0) + (r.heightsPx[e] ?? 0) > t) {
+                    if (n) u = a;
+                    else if (null == u && (u = a), (r.bottomOffsetsPx[e] ?? 0) + (r.heightsPx[e] ?? 0) <= t + i) return a
+                }
+            }
+            return u
+        }
+
+        function B() {
+            let e = [];
+            return (t, n) => {
+                let r = t.at(-1)?.turnKey,
+                    l = e => null != n && e.turnKey === r ? Math.max(e.minHeightPx ?? 0, n) : e.minHeightPx;
+                return (t.length !== e.length || t.some((t, n) => {
+                    let r = e[n];
+                    return t.turnKey !== r.turnKey || t.gapBeforePx !== r.gapBeforePx || t.estimatedHeightPx !== r.estimatedHeightPx || l(t) !== r.minHeightPx || t.type !== r.type
+                })) && (e = t.map(e => ({
+                    turnKey: e.turnKey,
+                    gapBeforePx: e.gapBeforePx,
+                    estimatedHeightPx: e.estimatedHeightPx,
+                    minHeightPx: l(e),
+                    type: e.type
+                }))), e
+            }
+        }
+
+        function I(e, t) {
+            return e === t || e.length === t.length && e.every((e, n) => e === t[n])
+        }
+
+        function H(e) {
+            return Math.max(0, e?.() ?? 0)
+        }
+
+        function R(e, t) {
+            return Math.max(0, e - t)
+        }
+
+        function M(e) {
+            let {
+                scrollElement: t,
+                turnElement: n,
+                windowZoom: r
+            } = e;
+            return null == t || null == n ? 0 : (0, s.b)(n.getBoundingClientRect().bottom - t.getBoundingClientRect().bottom, r)
+        }
+        class K {
+            request = null;
+            listeners = new Set;
+            getSnapshot = () => this.request;
+            subscribe = e => (this.listeners.add(e), () => {
+                this.listeners.delete(e)
+            });
+            replace(e) {
+                if (this.request === e) return;
+                let t = this.request;
+                for (let n of (this.request = e, t?.complete(), this.listeners)) n()
+            }
+        }
+    }),
+    gOnr: (function(e, t, n) {
+        var r = n("QosV"),
+            l = n("BolX"),
+            o = n("zd8w"),
+            i = n("TSib"),
+            a = n("ipIJ"),
+            u = n("Sd8U"),
+            s = n("tSEg"),
+            c = n("DRR4"),
+            h = n("qZWE");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, d, g, m, f = (0, r.c)(14);
+                f[0] !== e ? (t = void 0 === e ? {} : e, f[0] = e, f[1] = t) : t = f[1];
+                let {
+                    transcriptMcpAppIds: p,
+                    blockedWidgetSource: x,
+                    shouldBlockExternalEgress: y
+                } = t, P = void 0 !== y && y, v = (0, l.y)(s.a), w = (0, l.y)(u.a), b = (0, l.z)(h.i), S = (0, l.z)(i.w);
+                return f[2] !== S || f[3] !== x || f[4] !== w || f[5] !== b || f[6] !== v || f[7] !== P || f[8] !== p ? (n = () => {
+                    for (let [e, t] of("chatgpt-thread" === v.value.routeKind && (0, a.b)(w, S.filter(e => P || null != x && (e.widgetSource ?? "descriptor") === x)), b))(P || null != x && (t.content.mcpAppScope.widgetSource ?? "descriptor") === x || t.hostedInThreadScrollLayout && p?.has(e) === !1) && (0, h.z)(v, e)
+                }, d = [S, x, p, w, b, v, P], f[2] = S, f[3] = x, f[4] = w, f[5] = b, f[6] = v, f[7] = P, f[8] = p, f[9] = n, f[10] = d) : (n = f[9], d = f[10]), (0, o.useLayoutEffect)(n, d), f[11] !== v ? (g = () => {
+                    (0, c.g)(v)
+                }, m = [v], f[11] = v, f[12] = g, f[13] = m) : (g = f[12], m = f[13]), (0, o.useLayoutEffect)(g, m), null
+            }
+        })
+    }),
+    Mbqw: (function(e, t, n) {
+        n.d(t, {}, {
+            a: {
+                duration: .2,
+                ease: [.16, 1, .3, 1]
+            },
+            b: {
+                duration: .28,
+                ease: [.33, 1, .68, 1]
+            },
+            c: {
+                duration: 0
+            }
+        })
+    }),
+    yzQ9: (function(e, t, n) {
+        var r = n("QosV"),
+            l = n("BolX"),
+            o = n("zd8w"),
+            i = n("jqIZ"),
+            a = n("Cslg"),
+            u = n("TS05"),
+            s = n("tSEg");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, c, h = (0, r.c)(18),
+                    {
+                        ready: d,
+                        onNavigate: g
+                    } = e,
+                    m = (0, l.y)(s.a),
+                    f = (0, l.z)(a.f),
+                    p = (0, i.Y)(),
+                    x = p.state,
+                    y = x?.sidebarArea === "scheduled";
+                h[0] !== f || h[1] !== p.key ? (t = {
+                    locationKey: p.key,
+                    accountId: f
+                }, h[0] = f, h[1] = p.key, h[2] = t) : t = h[2];
+                let P = (0, l.x)(u.a, t),
+                    v = (0, o.useEffectEvent)(g);
+                return h[3] !== f || h[4] !== P || h[5] !== p.key || h[6] !== v || h[7] !== d || h[8] !== y || h[9] !== m ? (n = () => {
+                    if (!y || !d || P) return;
+                    let e = new AbortController;
+                    return v(e.signal).then(() => {
+                        e.signal.aborted || m.set(u.a, {
+                            locationKey: p.key,
+                            accountId: f
+                        }, !0)
+                    }), () => e.abort()
+                }, h[3] = f, h[4] = P, h[5] = p.key, h[6] = v, h[7] = d, h[8] = y, h[9] = m, h[10] = n) : n = h[10], h[11] !== f || h[12] !== P || h[13] !== p.key || h[14] !== d || h[15] !== y || h[16] !== m ? (c = [f, P, p.key, d, y, m], h[11] = f, h[12] = P, h[13] = p.key, h[14] = d, h[15] = y, h[16] = m, h[17] = c) : c = h[17], (0, o.useEffect)(n, c), null
+            }
+        })
+    }),
+    QEDJ: (function(e, t, n) {
+        n.d(t, {}, {
+            a: "thread-content-will-collapse"
+        })
+    }),
+    yLzP: (function(e, t, n) {
+        var r = n("ABep"),
+            l = n("QosV"),
+            o = n("oyxz"),
+            i = n("Sm6l"),
+            a = n("RNul");
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, u = (0, l.c)(5),
+                    {
+                        ref: s,
+                        onRetry: c
+                    } = e;
+                return u[0] !== c ? (t = null != c ? (0, r.jsx)(i.a, {
+                    color: "secondary",
+                    onClick: c,
+                    children: (0, r.jsx)(o.a, {
+                        id: "chatgpt.pagination.retry",
+                        defaultMessage: "Try again",
+                        description: "Button to retry loading older conversation messages after a failure"
+                    })
+                }) : (0, r.jsxs)("div", {
+                    role: "status",
+                    children: [(0, r.jsx)(a.a, {}), (0, r.jsx)("span", {
+                        className: "sr-only",
+                        children: (0, r.jsx)(o.a, {
+                            id: "chatgpt.pagination.loading",
+                            defaultMessage: "Loading older messages…",
+                            description: "Accessible status while an older page of conversation messages loads"
+                        })
+                    })]
+                }), u[0] = c, u[1] = t) : t = u[1], u[2] !== s || u[3] !== t ? (n = (0, r.jsx)("div", {
+                    ref: s,
+                    className: "flex justify-center py-4",
+                    children: t
+                }), u[2] = s, u[3] = t, u[4] = n) : n = u[4], n
+            }
+        })
+    }),
+    KFm7: (function(e, t, n) {
+        var r = n("acLe"),
+            l = n("jCHb"),
+            o = n("p5Yg"),
+            i = n("V8uZ"),
+            a = n("uYx2");
+        let u = 2 / 3;
+
+        function s(e) {
+            let t = Number.parseFloat(e.style.getPropertyValue("--thread-scroll-padding-bottom") || e.style.getPropertyValue("--thread-scroll-seeded-padding-bottom"));
+            return Number.isFinite(t) ? t : 0
+        }
+
+        function c(e) {
+            let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1],
+                n = Math.max(0, e.clientHeight - s(e));
+            return t ? n : Math.max(0, Math.min(n * u, n - 240))
+        }
+        n.d(t, {}, {
+            a: class {
+                scrollController;
+                height = (0, r.c)(0);
+                element = null;
+                prefersReducedMotion = !0;
+                onReleased;
+                pendingPlacement = null;
+                stopPlacementAnimation = null;
+                canPrepareThreadEndContent = !1;
+                pendingUserScrollDecayPx = 0;
+                pendingUserScrollElement = null;
+                userScrollDecayAnimationFrame = null;
+                viewportHeightPx = null;
+                scrollPaddingBottomPx = null;
+                placementTarget;
+                constructor(e) {
+                    this.scrollController = e
+                }
+                updateContext = (e, t, n) => {
+                    this.scrollController = e, this.prefersReducedMotion = t, this.onReleased = n
+                };
+                setElement = e => {
+                    this.element = e, null != e && (e.style.height = `${this.height.get()}px`)
+                };
+                getHeightPx = () => this.height.get();
+                isPlacementAnimating = () => null != this.stopPlacementAnimation;
+                getElement = () => this.element;
+                ensureScrollRoomForAnchor = e => {
+                    let t = this.scrollController.getScrollElement();
+                    if (!this.element || !t) return;
+                    let n = e - (0, a.b)(t);
+                    if (n <= 0) return;
+                    let r = this.height.get() + n;
+                    if (t.scrollHeight <= t.clientHeight) {
+                        let n = r + t.clientHeight;
+                        this.writeHeight(n), r = n - ((0, a.b)(t) - e)
+                    }
+                    this.writeHeight(r)
+                };
+                stop = () => {
+                    this.stopPlacementAnimation?.(), this.stopPlacementAnimation = null
+                };
+                getPendingPlacementSignal = () => (null == this.pendingPlacement && (this.pendingPlacement = new AbortController), this.pendingPlacement.signal);
+                interruptPlacement = () => {
+                    this.pendingPlacement?.abort(), this.pendingPlacement = null, this.stop()
+                };
+                holdViewport = () => {
+                    this.canPrepareThreadEndContent = !1, this.interruptPlacement()
+                };
+                writeHeight = e => {
+                    this.height.set(e), null != this.element && (this.element.style.height = `${e}px`)
+                };
+                consumeGrowth = e => {
+                    this.writeHeight(Math.max(0, this.height.get() - Math.max(0, e)))
+                };
+                trimTo = e => {
+                    let t = this.height.get(),
+                        n = Math.max(0, Math.min(t, e));
+                    if (t <= n) return !1;
+                    let r = this.scrollController.getScrollElement(),
+                        l = null == r ? 0 : (0, a.b)(r);
+                    return this.writeHeight(n), null != r && this.scrollController.compensateScrollToDistanceFromBottomPx(Math.max(0, l - (t - n))), 0 === n && this.onReleased?.(), !0
+                };
+                cancelPendingUserScrollDecay = () => {
+                    null != this.userScrollDecayAnimationFrame && (window.cancelAnimationFrame(this.userScrollDecayAnimationFrame), this.userScrollDecayAnimationFrame = null), this.pendingUserScrollDecayPx = 0, this.pendingUserScrollElement = null
+                };
+                clear = () => {
+                    this.holdViewport(), this.cancelPendingUserScrollDecay(), this.writeHeight(0), this.placementTarget = void 0
+                };
+                prepareThreadEndContent = e => {
+                    let t = this.scrollController.getScrollElement(),
+                        n = this.element;
+                    if (!this.canPrepareThreadEndContent || null != this.stopPlacementAnimation || null == t || t.clientHeight <= 0 || null == n) return;
+                    let r = t.getBoundingClientRect(),
+                        l = r.bottom - s(t) * (r.height / t.clientHeight);
+                    !(n.getBoundingClientRect().top > l) && e() && (this.canPrepareThreadEndContent = !1, this.cancelPendingUserScrollDecay(), this.consumeGrowth((0, a.b)(t)), this.scrollController.compensateScrollToDistanceFromBottomPx(0))
+                };
+                collapseIfHidden = () => {
+                    let e = this.scrollController.getScrollElement();
+                    if (0 >= this.height.get() || null != this.stopPlacementAnimation || null == e || null == this.element) return;
+                    let t = e.getBoundingClientRect(),
+                        n = t.height / e.clientHeight,
+                        r = t.bottom - s(e) * n;
+                    this.element.getBoundingClientRect().top < r - n || this.trimTo(0)
+                };
+                flushUserScrollDecay = () => {
+                    this.userScrollDecayAnimationFrame = null;
+                    let e = this.pendingUserScrollDecayPx,
+                        t = this.pendingUserScrollElement;
+                    this.pendingUserScrollDecayPx = 0, this.pendingUserScrollElement = null, t === this.scrollController.getScrollElement() && this.trimTo(this.height.get() - e) && this.collapseIfHidden()
+                };
+                handleScroll = e => {
+                    let t = this.scrollController.getScrollElement();
+                    this.height.get() > 0 && null != t && t.scrollHeight <= t.clientHeight && 0 === this.scrollController.getUnroundedScrollDistanceFromBottomPx(e) && this.clear()
+                };
+                handleUserScroll = (e, t) => {
+                    if (this.interruptPlacement(), null == t) return;
+                    if (e < t && (0, a.d)(e)) return void this.clear();
+                    let n = e - t;
+                    if (n <= 0) return;
+                    this.canPrepareThreadEndContent = !1;
+                    let r = this.scrollController.getScrollElement();
+                    this.pendingUserScrollElement !== r && this.cancelPendingUserScrollDecay(), this.pendingUserScrollDecayPx += n, null == this.userScrollDecayAnimationFrame && (this.pendingUserScrollElement = r, this.userScrollDecayAnimationFrame = window.requestAnimationFrame(this.flushUserScrollDecay))
+                };
+                reconcileViewport = () => {
+                    let e = this.scrollController.getScrollElement();
+                    if (null != e && e.clientHeight > 0) {
+                        let t = e.clientHeight,
+                            n = s(e),
+                            r = t !== this.viewportHeightPx || n !== this.scrollPaddingBottomPx;
+                        this.viewportHeightPx = t, this.scrollPaddingBottomPx = n;
+                        let l = r && null != this.stopPlacementAnimation,
+                            o = this.canPrepareThreadEndContent;
+                        l && (this.canPrepareThreadEndContent = !1, this.stop());
+                        let i = this.trimTo(c(e, null != this.placementTarget));
+                        l && (i || this.scrollController.compensateScrollToDistanceFromBottomPx((0, a.b)(e)), this.animatePlacement(), this.canPrepareThreadEndContent = o)
+                    }
+                };
+                place = e => {
+                    let t = this.scrollController.getScrollElement();
+                    if (null == t) return;
+                    this.canPrepareThreadEndContent = !1, this.cancelPendingUserScrollDecay(), this.interruptPlacement(), this.placementTarget = e, this.viewportHeightPx = t.clientHeight, this.scrollPaddingBottomPx = s(t);
+                    let n = this.height.get(),
+                        r = (0, a.b)(t),
+                        l = this.getPlacementDistancePx(t);
+                    this.scrollController.holdViewport(), this.writeHeight(null == e ? c(t) : Math.max(0, n - l + 1)), this.prefersReducedMotion || this.scrollController.compensateScrollToDistanceFromBottomPx(r + this.height.get() - n), this.animatePlacement(), this.canPrepareThreadEndContent = !0
+                };
+                animatePlacement = () => {
+                    let e = this.scrollController.getScrollElement();
+                    if (null == e) return;
+                    let t = Math.max(1, this.getPlacementDistancePx(e));
+                    if (!this.prefersReducedMotion) {
+                        let e = this.scrollController.getLastScrollDistanceFromBottomPx() - t;
+                        if (e > 0) {
+                            let t = 0,
+                                n = !1,
+                                r = (0, l.a)(0, e, {
+                                    ...i.g,
+                                    driver: e => {
+                                        let t = 0,
+                                            n = n => {
+                                                let {
+                                                    delta: r
+                                                } = n;
+                                                e(t += r)
+                                            };
+                                        return {
+                                            start: () => {
+                                                o.b.update(n, !0)
+                                            },
+                                            stop: () => {
+                                                (0, o.a)(n)
+                                            },
+                                            now: () => t
+                                        }
+                                    },
+                                    onUpdate: e => {
+                                        if (n) return;
+                                        let r = this.scrollController.getUnroundedScrollDistanceFromBottomPx(this.scrollController.getLastScrollDistanceFromBottomPx());
+                                        this.scrollController.compensateScrollToDistanceFromBottomPx(Math.max(1, r - (e - t))), t = e
+                                    },
+                                    onComplete: () => {
+                                        this.stopPlacementAnimation = null, this.scrollController.compensateScrollToDistanceFromBottomPx(this.scrollController.getUnroundedScrollDistanceFromBottomPx(this.scrollController.getLastScrollDistanceFromBottomPx()))
+                                    }
+                                });
+                            this.stopPlacementAnimation = () => {
+                                n = !0, r.stop()
+                            };
+                            return
+                        }
+                    }
+                    this.scrollController.scrollToDistanceFromBottomPx(t, "instant")
+                };
+                getPlacementDistancePx = e => {
+                    if (null == this.placementTarget) return 1;
+                    let t = e.getBoundingClientRect(),
+                        n = t.height / (e.offsetHeight || e.clientHeight),
+                        r = Number.parseFloat(getComputedStyle(e).paddingTop) || 0;
+                    return (0, a.b)(e) - (this.placementTarget.getBoundingClientRect().top - t.top) / n + e.clientTop + r
+                }
+            },
+            b: s
+        })
+    }),
+    Ho4C: (function(e, t, n) {
+        var r = n("ABep"),
+            l = n("QosV"),
+            o = n("zd8w"),
+            i = n("T1PX"),
+            a = n("ZYy5"),
+            u = n("m8On"),
+            s = n("bIvi"),
+            c = n("lsfk");
+        let h = Array.from({
+            length: 101
+        }, (e, t) => t / 100);
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, d, g, m, f, p, x, y, P, v, w, b, S, E = (0, l.c)(31),
+                    {
+                        controller: C,
+                        onReleased: B
+                    } = e,
+                    I = (0, c.b)(),
+                    H = (0, o.useContext)(a.a),
+                    R = (0, i.a)(),
+                    {
+                        getScrollElement: M
+                    } = I;
+                E[0] !== C ? (t = e => {
+                    C.setElement(e)
+                }, E[0] = C, E[1] = t) : t = E[1];
+                let K = (0, s.a)(t);
+                return E[2] !== C || E[3] !== B || E[4] !== R || E[5] !== I ? (n = () => {
+                    C.updateContext(I, R, B)
+                }, d = [C, I, R, B], E[2] = C, E[3] = B, E[4] = R, E[5] = I, E[6] = n, E[7] = d) : (n = E[6], d = E[7]), (0, o.useInsertionEffect)(n, d), E[8] !== C || E[9] !== M ? (g = () => {
+                    let e = M();
+                    if (null == e) return;
+                    let t = new AbortController;
+                    for (let n of ["wheel", "touchstart", "pointerdown", "keydown"]) e.addEventListener(n, C.interruptPlacement, {
+                        capture: !0,
+                        passive: !0,
+                        signal: t.signal
+                    });
+                    return () => {
+                        t.abort(), C.interruptPlacement()
+                    }
+                }, m = [C, M], E[8] = C, E[9] = M, E[10] = g, E[11] = m) : (g = E[10], m = E[11]), (0, o.useEffect)(g, m), E[12] !== C.cancelPendingUserScrollDecay ? (f = () => C.cancelPendingUserScrollDecay, E[12] = C.cancelPendingUserScrollDecay, E[13] = f) : f = E[13], E[14] !== C ? (p = [C], E[14] = C, E[15] = p) : p = E[15], (0, o.useEffect)(f, p), E[16] !== C || E[17] !== M ? (x = () => {
+                    let e = M();
+                    if (null == e || "u" < typeof IntersectionObserver) return;
+                    let t = new IntersectionObserver(C.collapseIfHidden, {
+                            root: e,
+                            threshold: h
+                        }),
+                        n = C.getElement();
+                    return null != n && t.observe(n), () => t.disconnect()
+                }, y = [C, M], E[16] = C, E[17] = M, E[18] = x, E[19] = y) : (x = E[18], y = E[19]), (0, o.useEffect)(x, y), E[20] !== C || E[21] !== I ? (P = () => {
+                    let e = I.addScrollListener(C.handleScroll),
+                        t = I.addUserScrollListener(C.handleUserScroll);
+                    return C.reconcileViewport(), () => {
+                        e(), t()
+                    }
+                }, v = [C, I], E[20] = C, E[21] = I, E[22] = P, E[23] = v) : (P = E[22], v = E[23]), (0, o.useLayoutEffect)(P, v), E[24] !== C || E[25] !== M || E[26] !== H ? (w = () => {
+                    let e = M();
+                    if (null == e) return;
+                    let t = null,
+                        n = () => {
+                            null == t && (t = window.requestAnimationFrame(() => {
+                                t = null, C.reconcileViewport()
+                            }))
+                        },
+                        r = H ?? (0, u.b)(),
+                        l = e.parentElement?.querySelector("[data-thread-scroll-footer]"),
+                        o = null == l ? [e] : [e, l];
+                    for (let e of o)(0, u.a)({
+                        element: e,
+                        callback: n,
+                        observer: r
+                    });
+                    return window.addEventListener("resize", n, {
+                        passive: !0
+                    }), () => {
+                        for (let e of o)(0, u.c)({
+                            element: e,
+                            callback: n,
+                            observer: r
+                        });
+                        null == H && r?.disconnect(), window.removeEventListener("resize", n), null != t && window.cancelAnimationFrame(t)
+                    }
+                }, b = [C, M, H], E[24] = C, E[25] = M, E[26] = H, E[27] = w, E[28] = b) : (w = E[27], b = E[28]), (0, o.useEffect)(w, b), E[29] !== K ? (S = (0, r.jsx)("div", {
+                    ref: K,
+                    className: "shrink-0",
+                    "aria-hidden": !0
+                }), E[29] = K, E[30] = S) : S = E[30], S
+            }
+        })
+    }),
+    g3o5: (function(e, t, n) {
+        var r = n("SZCv"),
+            l = n.n(r),
+            o = n("BolX"),
+            i = n("OWtl");
+        let a = (0, o.u)(i.a, () => new Map),
+            u = (0, o.c)(i.a, e => {
+                let {
+                    get: t
+                } = e;
+                return [...t(a).keys()]
+            }, {
+                isEqual: l()
+            });
+        n.d(t, {}, {
+            a: function(e, t) {
+                return e.set(a, e => new Map(e).set(t, (e.get(t) ?? 0) + 1)), () => {
+                    e.set(a, e => {
+                        let n = new Map(e),
+                            r = (n.get(t) ?? 1) - 1;
+                        return 0 === r ? n.delete(t) : n.set(t, r), n
+                    })
+                }
+            },
+            b: u
+        })
+    }),
+    BdYu: (function(e, t, n) {
+        var r = n("QosV"),
+            l = n("K45w"),
+            o = n("p5Yg"),
+            i = n("B7sF"),
+            a = n("jCHb"),
+            u = n("RgeH"),
+            s = n("BolX"),
+            c = n("zd8w"),
+            h = n("I7bK"),
+            d = n("QcW8"),
+            g = n("gbrq"),
+            m = n("kl6F"),
+            f = n("eGPX"),
+            p = n("Exwq"),
+            x = n("w2yL"),
+            y = n("KWzM"),
+            P = n("GaCK");
+
+        function v(e) {
+            return e.isPopoverOpen ? {
+                ...e,
+                isPopoverOpen: !1
+            } : e
+        }
+
+        function w(e, t, n, r, l, o) {
+            return b({
+                isSummaryPanelPinned: t && (o ?? (0, g.z)(!0 === n ? e.get(g.N) : e.get(g.C, n), n)),
+                floatingPanelWidth: l,
+                mainContentTargetWidth: r
+            })
+        }
+
+        function b(e) {
+            let {
+                isSummaryPanelPinned: t,
+                floatingPanelWidth: n,
+                mainContentTargetWidth: r
+            } = e, l = (0, x.c)(r, n);
+            return null != n && "overlay" === l ? (0, x.b)({
+                displayMode: (0, x.c)(r),
+                isPinned: t
+            }) : (0, x.b)({
+                displayMode: l,
+                isPinned: null != n || t,
+                panelWidth: n
+            })
+        }
+        n.d(t, {}, {
+            a: function(e) {
+                let t, n, o, i, v, S, E, C, B, I, H, R, M, K, T, F, D, L = (0, r.c)(73);
+                L[0] !== e ? (t = void 0 === e ? {} : e, L[0] = e, L[1] = t) : t = L[1];
+                let {
+                    contentShiftResetKey: k,
+                    controlledIsOpen: q,
+                    floatingPanelWidth: A,
+                    getCurrentPinStateKey: z,
+                    isEnabled: O,
+                    pinStateKey: U
+                } = t, _ = void 0 === O || O, N = void 0 === U || U, j = (0, s.y)(m.a), V = (0, s.z)(null == q && !0 === N ? g.N : null), W = (0, s.x)(null == q && !0 !== N ? g.C : null, !0 !== N && N);
+                L[2] !== q || L[3] !== W || L[4] !== V || L[5] !== N ? (n = q ?? (0, g.z)(!0 === N ? V : W, N), L[2] = q, L[3] = W, L[4] = V, L[5] = N, L[6] = n) : n = L[6];
+                let $ = n,
+                    Q = (0, s.z)(g.h),
+                    G = (0, s.z)(d.G),
+                    X = (0, s.z)(p.g),
+                    Y = (0, s.z)(P.b),
+                    Z = _ && $,
+                    J = A ?? 300,
+                    ee = _ && null == A && (q ?? (Y.isPopoverOpen || "boolean" != typeof N && $)),
+                    et = (0, s.z)(f.c),
+                    en = (0, c.useContext)(h.c),
+                    er = (0, l.a)(0),
+                    el = en?.mainContentTargetWidth ?? er;
+                L[7] !== A || L[8] !== Z || L[9] !== el ? (o = b({
+                    isSummaryPanelPinned: Z,
+                    floatingPanelWidth: A,
+                    mainContentTargetWidth: el.get()
+                }), L[7] = A, L[8] = Z, L[9] = el, L[10] = o) : o = L[10];
+                let eo = (0, l.a)(o);
+                L[11] !== el ? (i = e => el.on("change", e), L[11] = el, L[12] = i) : i = L[12], L[13] !== el || L[14] !== J ? (v = () => (0, x.c)(el.get(), J), L[13] = el, L[14] = J, L[15] = v) : v = L[15], L[16] !== i || L[17] !== v ? (S = {
+                    subscribe: i,
+                    getSnapshot: v
+                }, L[16] = i, L[17] = v, L[18] = S) : S = L[18];
+                let ei = S,
+                    ea = (0, c.useSyncExternalStore)(ei.subscribe, ei.getSnapshot, ei.getSnapshot),
+                    eu = (0, c.useRef)(null);
+                L[19] !== eo ? (E = eo.get(), L[19] = eo, L[20] = E) : E = L[20], L[21] !== el ? (C = el.get(), L[21] = el, L[22] = C) : C = L[22], L[23] !== C || L[24] !== E ? (B = {
+                    offset: E,
+                    width: C
+                }, L[23] = C, L[24] = E, L[25] = B) : B = L[25];
+                let es = (0, c.useRef)(B),
+                    ec = (0, c.useRef)(!1),
+                    eh = (0, c.useRef)(k),
+                    ed = (0, c.useRef)(Q),
+                    eg = (0, c.useRef)(G),
+                    em = Z && null == A;
+                L[26] !== ea || L[27] !== ee || L[28] !== em ? (I = (0, x.a)({
+                    displayMode: ea,
+                    isPinned: em,
+                    isPopoverOpen: ee
+                }), L[26] = ea, L[27] = ee, L[28] = em, L[29] = I) : I = L[29];
+                let ef = I,
+                    ep = ef.shouldShow && !X;
+                L[30] !== eo || L[31] !== k || L[32] !== q || L[33] !== A || L[34] !== z || L[35] !== G || L[36] !== _ || L[37] !== el || L[38] !== N || L[39] !== Q || L[40] !== j ? (H = () => {
+                    let e = ed.current !== Q,
+                        t = eg.current !== G;
+                    if (!ec.current && eh.current === k && !e && !t) return;
+                    ec.current = !1, eh.current = k, ed.current = Q, eg.current = G;
+                    let n = w(j, _, z?.() ?? N, el.get(), A, q);
+                    es.current = {
+                        offset: n,
+                        width: el.get()
+                    }, eu.current?.(), eo.jump(n)
+                }, R = [eo, k, q, A, z, G, _, el, N, Q, j], L[30] = eo, L[31] = k, L[32] = q, L[33] = A, L[34] = z, L[35] = G, L[36] = _, L[37] = el, L[38] = N, L[39] = Q, L[40] = j, L[41] = H, L[42] = R) : (H = L[41], R = L[42]), (0, c.useLayoutEffect)(H, R);
+                let ex = en?.chatPaneWidth ?? el;
+                L[43] !== ex || L[44] !== eo || L[45] !== q || L[46] !== A || L[47] !== z || L[48] !== _ || L[49] !== el || L[50] !== N || L[51] !== j || L[52] !== et ? (M = () => {
+                    let e = (e, t) => {
+                        let n = w(j, _, z?.() ?? N, e, A, q),
+                            r = es.current,
+                            l = eo.get();
+                        if (r.offset === n && (l === n || r.width === e && !t)) return;
+                        if (es.current = {
+                                offset: n,
+                                width: e
+                            }, eu.current?.(), t || 0 === e || l === n) return void eo.jump(n);
+                        let o = ex.get();
+                        if (o === e) {
+                            let e = (0, a.a)(eo, n, y.a),
+                                t = document.activeViewTransition;
+                            if (null != t) {
+                                e.pause();
+                                let n = () => e.play();
+                                t.ready.then(n, n)
+                            }
+                            eu.current = () => e.stop();
+                            return
+                        }
+                        let i = (0, u.a)([o, e], [l, n]),
+                            s = ex.on("change", e => {
+                                let t = i(e);
+                                eo.set(t), t === n && queueMicrotask(s)
+                            });
+                        eu.current = s
+                    };
+                    return e(el.get(), et), el.on("change", t => {
+                        e(t, et || 0 === el.getPrevious() || j.get(g.h) !== ed.current)
+                    })
+                }, L[43] = ex, L[44] = eo, L[45] = q, L[46] = A, L[47] = z, L[48] = _, L[49] = el, L[50] = N, L[51] = j, L[52] = et, L[53] = M) : M = L[53], L[54] !== ex || L[55] !== eo || L[56] !== q || L[57] !== A || L[58] !== z || L[59] !== _ || L[60] !== Z || L[61] !== el || L[62] !== N || L[63] !== j || L[64] !== et ? (K = [ex, eo, q, A, z, _, Z, el, N, j, et], L[54] = ex, L[55] = eo, L[56] = q, L[57] = A, L[58] = z, L[59] = _, L[60] = Z, L[61] = el, L[62] = N, L[63] = j, L[64] = et, L[65] = K) : K = L[65], (0, c.useLayoutEffect)(M, K), L[66] === Symbol.for("react.memo_cache_sentinel") ? (T = () => () => {
+                    ec.current = !0, eu.current?.()
+                }, F = [], L[66] = T, L[67] = F) : (T = L[66], F = L[67]), (0, c.useLayoutEffect)(T, F);
+                let ey = ef.shouldHideInlineImmediately || X,
+                    eP = X ? null : ef.visibleSurface;
+                return L[68] !== eo || L[69] !== ep || L[70] !== ey || L[71] !== eP ? (D = {
+                    contentShift: eo,
+                    shouldHideInlineImmediately: ey,
+                    shouldShow: ep,
+                    visibleSurface: eP
+                }, L[68] = eo, L[69] = ep, L[70] = ey, L[71] = eP, L[72] = D) : D = L[72], D
+            },
+            b: function(e, t) {
+                let n, a, u, d, m, f, p = (0, r.c)(15),
+                    y = void 0 !== t && t,
+                    w = (0, s.z)(g.i),
+                    b = (0, s.z)(g.r),
+                    S = (0, c.useContext)(h.c),
+                    E = (0, l.a)(0),
+                    C = S?.mainContentTargetWidth ?? E;
+                p[0] !== y || p[1] !== C || p[2] !== e ? (n = () => {
+                    var t, n;
+                    t = e, n = y ? "overlay" : (0, x.c)(C.get()), t.set(P.b, e => {
+                        let t = "overlay" === n && e.isPopoverOpen;
+                        return e.displayMode === n && e.isPopoverOpen === t ? e : {
+                            displayMode: n,
+                            isPopoverOpen: t
+                        }
+                    })
+                }, p[0] = y, p[1] = C, p[2] = e, p[3] = n) : n = p[3];
+                let B = n;
+                p[4] !== B ? (a = () => {
+                    o.b.update(B)
+                }, p[4] = B, p[5] = a) : a = p[5], (0, i.a)(C, "change", a), p[6] !== B ? (u = () => (B(), () => (0, o.a)(B)), p[6] = B, p[7] = u) : u = p[7], p[8] !== w || p[9] !== b || p[10] !== B ? (d = [w, b, B], p[8] = w, p[9] = b, p[10] = B, p[11] = d) : d = p[11], (0, c.useLayoutEffect)(u, d), p[12] !== e ? (m = () => () => {
+                    e.set(P.b, v)
+                }, f = [e], p[12] = e, p[13] = m, p[14] = f) : (m = p[13], f = p[14]), (0, c.useLayoutEffect)(m, f)
+            }
+        })
+    })
+};
