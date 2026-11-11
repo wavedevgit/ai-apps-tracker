@@ -1,1 +1,1326 @@
-export const __rspack_esm_ids=[308581];export const __webpack_modules__={oTAj:(function(e,t,a){a.d(t,{a:()=>ee});var l=a("ABep"),n=a("QosV"),r=a("SIRb"),i=a("slpy"),s=a("BolX"),o=a("hV9T"),d=a("zd8w"),c=a("jqIZ"),m=a("B8Ul"),u=a("Cslg"),h=a("Gdjn"),f=a("ILTo"),p=a("YWcr"),b=a("DAFh"),y=a("rS3J"),x=a("WB4T"),g=a("dKZq"),v=a("QlrJ"),I=a("HOLv"),w=a("bf6R"),j=a("Bbed"),T=a("A9Yt"),S=a("FqCE"),k=a("WE3h"),E=a("TxRk"),F=a("e2wX"),_=a("k7G6"),L=a("tSEg"),M=a("lBzi"),C=a("Kmy6"),A=a("M0Ez"),N=a("ZfbS"),B=a("drbS"),z=a("YRXX"),P=a("dQRk"),U=a("NcJA");function $(e){let t,a,r,i,o=(0,n.c)(17),{mention:d,conversationId:c,shouldBlockExternalEgress:m}=e,u=(0,s.y)(L.a),h=(0,s.z)(U.a.registration$)?.host,f=(0,s.z)(U.a.boundConversationId$),p=(0,s.x)(P.j,c);o[0]!==f||o[1]!==h||o[2]!==d.path||o[3]!==u||o[4]!==p?(t=null!=p&&f===p?h?.getReferenceAction?.(d.path,()=>u.get(U.a.registration$)?.host===h&&u.get(U.a.boundConversationId$)===p):void 0,o[0]=f,o[1]=h,o[2]=d.path,o[3]=u,o[4]=p,o[5]=t):t=o[5];let b=t;if(m||null==b){let e;return o[6]!==d.label?(e=(0,l.jsx)("span",{children:d.label}),o[6]=d.label,o[7]=e):e=o[7],e}return o[8]!==d.label||o[9]!==d.path?(a=(0,y.e)({href:d.path,label:d.label}),o[8]=d.label,o[9]=d.path,o[10]=a):a=o[10],o[11]!==d.label||o[12]!==a?(r=(0,l.jsx)(E.a,{interactive:!0,dataAttributes:a,children:d.label}),o[11]=d.label,o[12]=a,o[13]=r):r=o[13],o[14]!==b||o[15]!==r?(i=(0,l.jsx)("button",{type:"button",onClick:b,children:r}),o[14]=b,o[15]=r,o[16]=i):i=o[16],i}var R=a("tHvi"),V=a("pdPj"),G=a("OWtl"),H=a("Kwur"),W=a("ZM7C"),q=a("gJdM"),K=a("iHfE"),J=a("OWHf"),O=a("t5e6");let X=(0,s.q)(G.a,(e,t)=>{let{get:a}=t,l=a(W.a);return{enabled:null!=l&&a(V.a),queryKey:["chatgpt-reference-image-message-thumbnail",l,a(W.b),e],queryFn:async t=>{let{signal:a}=t;return(await H.Request.safeGet("/files/library/reference-images/{reference_image_id}/thumbnail_url",{additionalHeaders:null==l?void 0:(0,J.a)(l),parameters:{path:{reference_image_id:e}},signal:a})).thumbnail_url},staleTime:27e5,gcTime:27e5,retry:!1}});function Z(e){let t,a,r,i,o=(0,n.c)(13),{mention:d,shouldBlockExternalEgress:c}=e,m=(0,s.z)(V.a);o[0]===Symbol.for("react.memo_cache_sentinel")?(t={enabled:!1},o[0]=t):t=o[0];let{data:u}=(0,s.z)(K.c,t),h=m&&!c?u?.find(e=>e.id===d.referenceImageId):void 0,f=!c&&null==h;o[1]!==f?(a={enabled:f},o[1]=f,o[2]=a):a=o[2];let{data:p}=(0,s.x)(X,d.referenceImageId,a),b=E.a,x=(0,y.e)({href:(0,q.b)({referenceImageId:d.referenceImageId,assetPointer:h?.asset_pointer,thumbnailAssetPointer:h?.thumbnail_asset_pointer}),label:d.name});return o[3]!==m||o[4]!==h||o[5]!==c||o[6]!==p?(r=m&&!c&&(null!=h||null!=p)?(0,l.jsx)("span",{children:(0,l.jsx)(O.a,{alt:"",assetPointer:h?.asset_pointer,composerThumbnailUrl:h?.thumbnail_url??p,fallbackUrl:h?.thumbnail_url??p,name:null,size:"response",thumbnailAssetPointer:h?.thumbnail_asset_pointer,useComposerThumbnailCache:!0})}):(0,l.jsx)(w.fg,{}),o[3]=m,o[4]=h,o[5]=c,o[6]=p,o[7]=r):r=o[7],o[8]!==b||o[9]!==d.name||o[10]!==x||o[11]!==r?(i=(0,l.jsx)(b,{fontWeight:"inherit",dataAttributes:x,icon:r,iconSizing:"authored",layout:"inline-flow",tone:"composer-reference",children:d.name}),o[8]=b,o[9]=d.name,o[10]=x,o[11]=r,o[12]=i):i=o[12],i}var Q=a("SCbd");let Y=(0,j.a)(r.h,{suspendToParent:!0,errorFallback:e=>{let{name:t}=e;return(0,l.jsx)(E.a,{icon:(0,f.b)(),children:t})}}),D=(0,s.t)("ChatGptUserMessageContentScope",{key:e=>e.tabKeyPrefix,parent:L.a,retain:{max:0}});function ee(e){let t,a,r,i,o,c,m,u,h,f,b,y,I,w=(0,n.c)(55),{ref:j,plainTextRef:T,conversationId:S,hostId:E,mentions:F,skillMentions:_,folderMentions:L,referenceImageMentions:C,message:A,messageId:N,renderMarkdown:z,shouldBlockExternalEgress:P,systemHintMentions:U,tabKeyPrefix:$}=e;w[0]!==_?(t=void 0===_?[]:_,w[0]=_,w[1]=t):t=w[1];let V=t;w[2]!==L?(a=void 0===L?[]:L,w[2]=L,w[3]=a):a=w[3];let G=a;w[4]!==C?(r=void 0===C?[]:C,w[4]=C,w[5]=r):r=w[5];let H=r;if(w[6]!==G||w[7]!==F||w[8]!==H||w[9]!==V||w[10]!==A)i=[...F,...V,...G,...H,...A.includes(R.a)?(0,B.g)(A).filter(e=>e.path.startsWith(R.a)).map(e=>({...e,label:(0,R.b)(e.label),officeSheet:!0})):[]].sort(el),w[6]=G,w[7]=F,w[8]=H,w[9]=V,w[10]=A,w[11]=i;else i=w[11];let W=i,q=(0,d.useId)();if(w[12]!==q){let e;w[14]===Symbol.for("react.memo_cache_sentinel")?(e=/[^a-z0-9-]/gi,w[14]=e):e=w[14],o=q.replace(e,""),w[12]=q,w[13]=o}else o=w[13];let K=`chatgpt-file-mention-${o}`;w[15]!==P||w[16]!==A?(c=!P&&A.includes("app://"),w[15]=P,w[16]=A,w[17]=c):c=w[17];let J=c;w[18]!==J?(m={enabled:J},w[18]=J,w[19]=m):m=w[19];let{data:O}=(0,s.z)(M.m,m);if(w[20]!==J||w[21]!==U||w[22]!==O||w[23]!==A){if(u=[],J&&null!=O)for(let e of(0,B.g)(A)){let t=O[e.path];null!=t&&u.push({id:t.system_hint,label:t.name,startIndex:e.startIndex,endIndex:e.endIndex,promptLink:{href:e.path,label:e.label},systemHint:{name:t.name,logo:t.logo}})}u.push(...U),w[20]=J,w[21]=U,w[22]=O,w[23]=A,w[24]=u}else u=w[24];w[25]!==K?(h={[K]:en},w[25]=K,w[26]=h):h=w[26];let X=h;w[27]!==W||w[28]!==u||w[29]!==A?(f=e=>{if(e.length===A.length)return A;let t=[...W,...u].reduce(ea,e.length);return A.slice(0,t)},w[27]=W,w[28]=u,w[29]=A,w[30]=f):f=w[30];let Z=f;return w[31]!==S||w[32]!==E||w[33]!==W||w[34]!==N||w[35]!==u||w[36]!==P||w[37]!==$||w[38]!==A?(b={conversationId:S,hostId:E,message:A,messageId:N,mentions:W,shouldBlockExternalEgress:P,systemHintMentions:u,tabKeyPrefix:$},w[31]=S,w[32]=E,w[33]=W,w[34]=N,w[35]=u,w[36]=P,w[37]=$,w[38]=A,w[39]=b):b=w[39],w[40]!==K||w[41]!==X||w[42]!==Z||w[43]!==E||w[44]!==W||w[45]!==T||w[46]!==j||w[47]!==z||w[48]!==u||w[49]!==P||w[50]!==A?(y=z?(0,l.jsx)(x.a,{ref:j,cwd:null,directives:X,hostId:E,hasSerializedParagraphs:!0,renderMath:!1,serializeVisibleText:e=>es(Z(e),W,u).map(e=>"text"===e.kind?e.text:`:${K}{kind="${e.kind}" index="${String(e.index)}"}`).join(""),text:A}):(0,l.jsx)(g.a,{text:A,textTone:"user-message",children:e=>{let t=Z(e),a=es(t,W,u);return(0,l.jsx)(g.b,{ref:a.some(et)?j:T,children:a.map((e,a)=>"text"===e.kind?(0,l.jsx)(v.a,{renderLink:e=>"text"===(0,p.x)(e)?null:P?e.label:(0,k.b)({...e,hostId:E,cwd:null}),sourceStartIndex:e.startIndex,sourceText:t,text:e.text},a):(0,l.jsx)(en,{name:K,attributes:{kind:e.kind,index:String(e.index)}},a))})}}),w[40]=K,w[41]=X,w[42]=Z,w[43]=E,w[44]=W,w[45]=T,w[46]=j,w[47]=z,w[48]=u,w[49]=P,w[50]=A,w[51]=y):y=w[51],w[52]!==b||w[53]!==y?(I=(0,l.jsx)(s.b,{scope:D,value:b,children:y}),w[52]=b,w[53]=y,w[54]=I):I=w[54],I}function et(e){return"text"!==e.kind}function ea(e,t){return t.startIndex<e&&t.endIndex>e?Math.min(e,t.startIndex):e}function el(e,t){return e.startIndex-t.startIndex}function en(e){let t,a=(0,n.c)(66),{attributes:r}=e,{value:o}=(0,s.y)(D),m=(0,s.z)(u.f),p=(0,s.z)(u.k);a[0]!==r.index?(t="string"==typeof r.index?Number.parseInt(r.index,10):0/0,a[0]=r.index,a[1]=t):t=a[1];let b=t;if("system-hint"===r.kind){let e,t=o.systemHintMentions[b];return a[2]!==t?(e=null==t?null:(0,l.jsx)(er,{mention:t}),a[2]=t,a[3]=e):e=a[3],e}let x=o.mentions[b];if(null==x)return null;if("officeSheet"in x){let e;return a[4]!==x||a[5]!==o.conversationId||a[6]!==o.shouldBlockExternalEgress?(e=(0,l.jsx)($,{mention:x,conversationId:o.conversationId,shouldBlockExternalEgress:o.shouldBlockExternalEgress}),a[4]=x,a[5]=o.conversationId,a[6]=o.shouldBlockExternalEgress,a[7]=e):e=a[7],e}if("referenceImageId"in x){let e;return a[8]!==x||a[9]!==o.shouldBlockExternalEgress?(e=(0,l.jsx)(Z,{mention:x,shouldBlockExternalEgress:o.shouldBlockExternalEgress}),a[8]=x,a[9]=o.shouldBlockExternalEgress,a[10]=e):e=a[10],e}if("directoryId"in x){let e,t,n,r,s=x.displayPath??x.name;a[18]!==x.directoryId||a[19]!==x.name?(e=(0,y.e)({href:(0,S.f)(x.directoryId),label:x.name}),a[18]=x.directoryId,a[19]=x.name,a[20]=e):e=a[20];let d=e;a[21]===Symbol.for("react.memo_cache_sentinel")?(t=(0,l.jsx)(w.wd,{}),a[21]=t):t=a[21],a[22]!==x.name?(n=(0,l.jsxs)(l.Fragment,{children:[t,(0,l.jsx)("span",{className:"max-w-64 self-baseline truncate",children:x.name})]}),a[22]=x.name,a[23]=n):n=a[23];let m=n;return a[24]!==m||a[25]!==d||a[26]!==s||a[27]!==x.directoryId||a[28]!==x.displayPath||a[29]!==o.shouldBlockExternalEgress?(r=null==x.displayPath||o.shouldBlockExternalEgress?(0,l.jsx)("span",{...d,className:"inline-flex max-w-full items-center gap-1 rounded-sm px-1 py-0 align-baseline font-medium whitespace-nowrap",title:s,children:m}):(0,l.jsx)(i.a,{content:s,children:(0,l.jsx)(c.g,{...d,className:"inline-flex max-w-full cursor-interaction items-center gap-1 rounded-sm px-1 py-0 align-baseline font-medium whitespace-nowrap underline decoration-dotted underline-offset-2 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0 focus-visible:outline-none",to:`/library/d/${encodeURIComponent(x.directoryId)}`,"aria-label":s,children:m})}),a[24]=m,a[25]=d,a[26]=s,a[27]=x.directoryId,a[28]=x.displayPath,a[29]=o.shouldBlockExternalEgress,a[30]=r):r=a[30],r}if("name"in x){let e,t,n,r,i;a[31]===Symbol.for("react.memo_cache_sentinel")?(e=(0,f.b)(),a[31]=e):e=a[31],a[32]!==x.name?(t=(0,l.jsx)(E.a,{icon:e,children:x.name}),a[32]=x.name,a[33]=t):t=a[33];let s=t;return a[34]!==m||a[35]!==x.id||a[36]!==x.name||a[37]!==p?(n=(0,y.e)({href:null==m?void 0:(0,h.a)(x.id,{accountId:m,userId:p}),label:`@${x.name}`}),a[34]=m,a[35]=x.id,a[36]=x.name,a[37]=p,a[38]=n):n=a[38],a[39]!==s||a[40]!==x.id||a[41]!==x.name||a[42]!==o.hostId||a[43]!==o.shouldBlockExternalEgress?(r=o.shouldBlockExternalEgress?s:(0,l.jsx)(d.Suspense,{fallback:s,children:(0,l.jsx)(Y,{id:x.id,name:x.name,hostId:o.hostId})}),a[39]=s,a[40]=x.id,a[41]=x.name,a[42]=o.hostId,a[43]=o.shouldBlockExternalEgress,a[44]=r):r=a[44],a[45]!==n||a[46]!==r?(i=(0,l.jsx)("span",{...n,children:r}),a[45]=n,a[46]=r,a[47]=i):i=a[47],i}if("attachment"in x){let e,t,n,{attachment:r}=x,i=r.mountedLibraryFileId??r.libraryFileId;a[48]!==r.fileId||a[49]!==r.libraryArtifactType||a[50]!==r.mimeType||a[51]!==r.mountedLibraryMimeType||a[52]!==i||a[53]!==x.endIndex||a[54]!==x.startIndex||a[55]!==o.message?(e=(0,y.e)({href:null==i?void 0:(0,S.c)({fileId:r.fileId??"",libraryFileId:i,libraryArtifactType:r.libraryArtifactType??"",mimeType:r.mountedLibraryMimeType??r.mimeType??""}),label:o.message.slice(x.startIndex,x.endIndex).replace(/^@/,"")}),a[48]=r.fileId,a[49]=r.libraryArtifactType,a[50]=r.mimeType,a[51]=r.mountedLibraryMimeType,a[52]=i,a[53]=x.endIndex,a[54]=x.startIndex,a[55]=o.message,a[56]=e):e=a[56];let s=`${o.tabKeyPrefix}:${String(b)}:${r.name}`;return a[57]!==r||a[58]!==s||a[59]!==o.conversationId||a[60]!==o.messageId||a[61]!==o.shouldBlockExternalEgress?(t=(0,l.jsx)(z.a,{attachment:r,conversationId:o.conversationId,messageId:o.messageId,shouldBlockExternalEgress:o.shouldBlockExternalEgress,tabKey:s,variant:"inline"}),a[57]=r,a[58]=s,a[59]=o.conversationId,a[60]=o.messageId,a[61]=o.shouldBlockExternalEgress,a[62]=t):t=a[62],a[63]!==e||a[64]!==t?(n=(0,l.jsx)("span",{...e,children:t}),a[63]=e,a[64]=t,a[65]=n):n=a[65],n}return null}function er(e){let t,a=(0,n.c)(8),{mention:r}=e;if(null!=(0,p.z)(r.id)){let e,t;return a[0]!==r.id||a[1]!==r.label?(e=(0,y.e)({href:r.id,label:r.label}),a[0]=r.id,a[1]=r.label,a[2]=e):e=a[2],a[3]!==r.label||a[4]!==e?(t=(0,l.jsx)(E.a,{dataAttributes:e,icon:T.a,layout:"selection-pill",title:r.label,children:r.label}),a[3]=r.label,a[4]=e,a[5]=t):t=a[5],t}return a[6]!==r?(t=(0,l.jsx)(ei,{mention:r}),a[6]=r,a[7]=t):t=a[7],t}function ei(e){let t,a,r,i,d,u,h,f,x,g,v,w,j,T,S=(0,n.c)(47),{mention:k}=e,{value:L}=(0,s.y)(D),B=!L.shouldBlockExternalEgress&&null==k.systemHint;S[0]!==B?(t={enabled:B},S[0]=B,S[1]=t):t=S[1];let{data:z}=(0,s.z)(M.m,t);S[2]!==k.id||S[3]!==L.shouldBlockExternalEgress?(i=k.id.replace(/^(?:connector|plugin):/u,""),a=(0,A.g)(i),r=!L.shouldBlockExternalEgress&&/^(?:connector|plugin):.+/u.test(k.id)&&null==a,d=k.id.startsWith("plugin:")&&(0,o.di)(i)?i:null,S[2]=k.id,S[3]=L.shouldBlockExternalEgress,S[4]=a,S[5]=r,S[6]=i,S[7]=d):(a=S[4],r=S[5],i=S[6],d=S[7]);let P=d;S[8]===Symbol.for("react.memo_cache_sentinel")?(u={enabled:!1},S[8]=u):u=S[8];let U=(0,s.x)(N.b,i,u),$=r?P??U:null;S[9]!==k.systemHint||S[10]!==i||S[11]!==z||S[12]!==L.shouldBlockExternalEgress?(h=L.shouldBlockExternalEgress?void 0:k.systemHint??z?.[(0,p.c)(i)],S[9]=k.systemHint,S[10]=i,S[11]=z,S[12]=L.shouldBlockExternalEgress,S[13]=h):h=S[13];let R=h;S[14]!==R?.name||S[15]!==i?(f=(0,m.c)(i)??(0,m.c)(R?.name),S[14]=R?.name,S[15]=i,S[16]=f):f=S[16];let V=f,G=a??V?.icon;if(null==G&&V?.iconUrl){let e;S[17]!==V.iconUrl?(e=(0,l.jsx)("img",{alt:"",src:V.iconUrl}),S[17]=V.iconUrl,S[18]=e):e=S[18],G=e}if(null==G){let e;S[19]!==R?(e=R?.logo?(0,l.jsx)(C.a,{logo:R.logo}):(0,l.jsx)(I.a,{asset:Q.a}),S[19]=R,S[20]=e):e=S[20],G=e}if(S[21]!==k.id||S[22]!==k.label||S[23]!==k.promptLink||S[24]!==i){let e=b.d.shape.systemHint.safeParse(k.id);x=E.a,g=y.e,v=k.promptLink??{href:e.success?(0,b.g)(e.data):(0,p.c)(i),label:e.success?k.label:`@${k.label}`},S[21]=k.id,S[22]=k.label,S[23]=k.promptLink,S[24]=i,S[25]=x,S[26]=g,S[27]=v}else x=S[25],g=S[26],v=S[27];S[28]!==g||S[29]!==v?(w=g(v),S[28]=g,S[29]=v,S[30]=w):w=S[30];let H=V?.name??R?.name??k.label;S[31]!==x||S[32]!==r||S[33]!==G||S[34]!==H||S[35]!==w?(j=(0,l.jsx)(x,{dataAttributes:w,icon:G,interactive:r,layout:"selection-pill",children:H}),S[31]=x,S[32]=r,S[33]=G,S[34]=H,S[35]=w,S[36]=j):j=S[36];let W=j;if(!r)return W;if(null==$&&k.id.startsWith("plugin:")&&null!=(0,o.Wg)(i)){let e,t;return S[37]!==i||S[38]!==L.hostId?(e=(0,_.a)({pluginId:i,hostId:L.hostId}),S[37]=i,S[38]=L.hostId,S[39]=e):e=S[39],S[40]!==W||S[41]!==e?(t=(0,l.jsx)(c.g,{className:"inline cursor-interaction bg-transparent p-0 text-start align-baseline",to:e,children:W}),S[40]=W,S[41]=e,S[42]=t):t=S[42],t}return S[43]!==W||S[44]!==$||S[45]!==i?(T=(0,l.jsx)(F.a,{appId:i,pluginId:$,children:W}),S[43]=W,S[44]=$,S[45]=i,S[46]=T):T=S[46],T}function es(e,t,a){let l=[...t.map((e,t)=>({...e,index:t,kind:"inline"})),...a.map((e,t)=>({...e,index:t,kind:"system-hint"}))].sort((e,t)=>e.startIndex-t.startIndex||t.endIndex-e.endIndex),n=[],r=0;for(let t of l)t.startIndex<r||t.endIndex>e.length||(n.push({kind:"text",startIndex:r,text:e.slice(r,t.startIndex)},{kind:t.kind,index:t.index}),r=t.endIndex);return n.push({kind:"text",startIndex:r,text:e.slice(r)}),n}}),YRXX:(function(e,t,a){a.d(t,{a:()=>Y,b:()=>Z});var l=a("ABep"),n=a("QosV"),r=a("Rzcw"),i=a("BolX"),s=a("zd8w"),o=a("oyxz"),d=a("Cslg"),c=a("rS3J"),m=a("ZtSy"),u=a("Bbed"),h=a("VL1D"),f=a("RNul"),p=a("SGsN"),b=a("R1rp"),y=a("FqCE"),x=a("UxLW"),g=a("ulpJ"),v=a("L9GI"),I=a("MExO"),w=a("tSEg"),j=a("hZax"),T=a("WFY2"),S=a("ug4w"),k=a("YJm0"),E=a("DrWu"),F=a("dQRk"),_=a("rxj0"),L=a("Ul98"),M=a("f2PP"),C=a("c9lJ"),A=a("slpy"),N=a("T0Rc"),B=a("Wf1j"),z=a("Sm6l"),P=a("HOLv"),U=a("rJql"),$=a("rvFo"),R=a("zsxQ"),V=a("vldH"),G=a("fi73"),H=a("AtSM");function W(e){let t,a,r,s,d,c,m,u,h,y,x,g,v,I,j,S,k,E,L,C,W,J,O=(0,n.c)(86),{attachment:X,conversationId:Z,tabKey:Q,target:Y}=e,D=(0,i.y)(w.a),ee=(0,B.a)();O[0]!==Z||O[1]!==D?(t=D.get(F.S,Z),O[0]=Z,O[1]=D,O[2]=t):t=O[2];let et=t;O[3]!==Z||O[4]!==D?(a=D.get(F.Z,Z),O[3]=Z,O[4]=D,O[5]=a):a=O[5];let ea=a;O[6]!==Z||O[7]!==Q?(r=["chatgpt-user-message-csv-preview",Z,Q],O[6]=Z,O[7]=Q,O[8]=r):r=O[8],O[9]!==Z||O[10]!==et||O[11]!==ea||O[12]!==Y?(s=async e=>{let{signal:t}=e,a=await (0,V.fetchChatGptFileBlob)({conversationId:Z,gizmoId:et,sharedConversationId:ea,signal:t,target:Y});if(a.size>1e6)throw Error("ChatGPT CSV attachment exceeds the preview size limit");let l=await a.text();return t.throwIfAborted(),function(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:1e6,a=1,l=1,n=1,r=1,i=!1;for(let t=0;t<e.length;t+=1){let s=e[t];if('"'===s){i&&'"'===e[t+1]?t+=1:i=!i;continue}if(!i&&(","===s?(a+=1,l=Math.max(l,a),r+=1):("\n"===s||"\r"===s)&&("\r"===s&&"\n"===e[t+1]&&(t+=1),a=1,n+=1,r+=1),a>100||n>1e4||r>1e5))throw Error("CSV exceeds preview shape limits")}if(n*l>t)throw Error("CSV exceeds preview shape limits");return(0,U.planCsvImport)(e).values}(l)},O[9]=Z,O[10]=et,O[11]=ea,O[12]=Y,O[13]=s):s=O[13],O[14]!==r||O[15]!==s?(d={queryKey:r,queryFn:s,retry:!1,staleTime:$.b.FIVE_MINUTES},O[14]=r,O[15]=s,O[16]=d):d=O[16];let{data:el,isError:en,isLoading:er,refetch:ei}=(0,N.a)(d);O[17]!==X.name?(c=(X.name.split("/").at(-1)??"").replace(/[-_]/gu," ").split(".")[0]??"",O[17]=X.name,O[18]=c):c=O[18];let es=c;O[19]!==X.name||O[20]!==ee?(m=ee.formatMessage({id:"chatgpt.userMessage.csvPreview.download",defaultMessage:"Download {filename}",description:"Accessible label for a compact icon button in an inline CSV attachment preview. Activating the button downloads the named file. {filename} is the original user-visible filename and may be truncated elsewhere in the preview."},{filename:X.name}),O[19]=X.name,O[20]=ee,O[21]=m):m=O[21];let eo=m;O[22]!==X.name||O[23]!==ee?(u=ee.formatMessage({id:"chatgpt.userMessage.csvPreview.open",defaultMessage:"Open {filename}",description:"Accessible label for a compact icon button in an inline CSV attachment preview. Activating the button opens the named file in the full file preview. {filename} is the original user-visible filename and may be truncated elsewhere in the preview."},{filename:X.name}),O[22]=X.name,O[23]=ee,O[24]=u):u=O[24];let ed=u;O[25]!==X.name||O[26]!==Z||O[27]!==et||O[28]!==D||O[29]!==ea||O[30]!==Y?(h=()=>{(0,V.a)({conversationId:Z,fileName:X.name,gizmoId:et,sharedConversationId:ea,target:Y}).catch(e=>{T.a.error("ChatGPT CSV attachment failed to download",{safe:{},sensitive:{error:e}}),D.get(p.f).danger((0,l.jsx)(o.a,{id:"chatgpt.userMessage.csvPreview.downloadFailed",defaultMessage:"Couldn't download this file. Try again",description:"Error shown when an attached CSV file cannot be downloaded from its inline preview"}),{errorAnalytics:{toastId:"chatgpt.userMessage.csvPreview.downloadFailed"}})})},O[25]=X.name,O[26]=Z,O[27]=et,O[28]=D,O[29]=ea,O[30]=Y,O[31]=h):h=O[31];let ec=h;O[32]!==X.isSharedLibraryFile||O[33]!==X.mimeType||O[34]!==X.name||O[35]!==Z||O[36]!==et||O[37]!==D||O[38]!==ea||O[39]!==Q||O[40]!==Y?(y=()=>{(0,M.openChatGptFile)(D,{isAccessBlocked:e=>(0,_.j)(e,Z)||!0===X.isSharedLibraryFile&&e.get(b.d),browserPreview:(0,R.a)(X.name,X.mimeType),conversationId:Z,fileName:X.name,mimeType:X.mimeType,gizmoId:et,sharedConversationId:ea,tabKey:Q,target:Y}).catch(q)},O[32]=X.isSharedLibraryFile,O[33]=X.mimeType,O[34]=X.name,O[35]=Z,O[36]=et,O[37]=D,O[38]=ea,O[39]=Q,O[40]=Y,O[41]=y):y=O[41];let em=y;if(er){let e,t;O[42]===Symbol.for("react.memo_cache_sentinel")?(e=(0,l.jsx)(f.a,{"aria-hidden":!0}),O[42]=e):e=O[42],O[43]===Symbol.for("react.memo_cache_sentinel")?(t=(0,l.jsxs)("div",{className:"flex h-full items-center justify-center",children:[e,(0,l.jsx)("span",{className:"sr-only",children:(0,l.jsx)(o.a,{id:"chatgpt.userMessage.csvPreview.loading",defaultMessage:"Loading table preview",description:"Screen-reader status announced while an inline preview of an attached CSV file is loading in a ChatGPT conversation"})})]}),O[43]=t):t=O[43],x=t}else if(en){let e,t,a,n;O[44]===Symbol.for("react.memo_cache_sentinel")?(e=(0,l.jsx)("span",{className:"text-sm text-secondary",children:(0,l.jsx)(o.a,{id:"chatgpt.userMessage.csvPreview.error",defaultMessage:"Unable to display table preview",description:"Error message shown inside an attached CSV file preview when the table could not be downloaded or parsed"})}),O[44]=e):e=O[44],O[45]!==ei?(t=()=>void ei(),O[45]=ei,O[46]=t):t=O[46],O[47]===Symbol.for("react.memo_cache_sentinel")?(a=(0,l.jsx)(o.a,{id:"chatgpt.userMessage.csvPreview.retry",defaultMessage:"Try again",description:"Button label for retrying a failed inline CSV attachment preview in a ChatGPT conversation"}),O[47]=a):a=O[47],O[48]!==t?(n=(0,l.jsxs)("div",{className:"flex h-full flex-col items-center justify-center gap-3 px-4 text-center",role:"alert",children:[e,(0,l.jsx)(z.a,{color:"secondary",onClick:t,children:a})]}),O[48]=t,O[49]=n):n=O[49],x=n}else if(null==el||0===el.length){let e;O[50]===Symbol.for("react.memo_cache_sentinel")?(e=(0,l.jsx)("div",{className:"flex h-full items-center justify-center px-4 text-center text-sm text-secondary",children:(0,l.jsx)(o.a,{id:"chatgpt.userMessage.csvPreview.empty",defaultMessage:"This CSV file is empty",description:"Empty state shown inside an inline CSV attachment preview when the file contains no rows"})}),O[50]=e):e=O[50],x=e}else{let e,t,a;O[51]!==el[0]?(e=el[0]??[],O[51]=el[0],O[52]=e):e=O[52],O[53]!==el?(t=el.slice(1),O[53]=el,O[54]=t):t=O[54],O[55]!==e||O[56]!==t?(a=(0,l.jsx)(K,{columnNames:e,rows:t}),O[55]=e,O[56]=t,O[57]=a):a=O[57],x=a}return O[58]!==es?(g=(0,l.jsx)("span",{className:"truncate font-semibold text-default capitalize",children:es}),O[58]=es,O[59]=g):g=O[59],O[60]===Symbol.for("react.memo_cache_sentinel")?(v=(0,l.jsx)(P.a,{asset:G.a}),O[60]=v):v=O[60],O[61]!==eo||O[62]!==ec?(I=(0,l.jsx)(z.a,{"aria-label":eo,color:"ghost",onClick:ec,size:"iconCircleSm",children:v}),O[61]=eo,O[62]=ec,O[63]=I):I=O[63],O[64]!==eo||O[65]!==I?(j=(0,l.jsx)(A.a,{content:eo,children:I}),O[64]=eo,O[65]=I,O[66]=j):j=O[66],O[67]===Symbol.for("react.memo_cache_sentinel")?(S=(0,l.jsx)(P.a,{asset:H.a}),O[67]=S):S=O[67],O[68]!==em||O[69]!==ed?(k=(0,l.jsx)(z.a,{"aria-label":ed,color:"ghost",onClick:em,size:"iconCircleSm",children:S}),O[68]=em,O[69]=ed,O[70]=k):k=O[70],O[71]!==ed||O[72]!==k?(E=(0,l.jsx)(A.a,{content:ed,children:k}),O[71]=ed,O[72]=k,O[73]=E):E=O[73],O[74]!==j||O[75]!==E?(L=(0,l.jsxs)("span",{className:"flex items-center gap-2",children:[j,E]}),O[74]=j,O[75]=E,O[76]=L):L=O[76],O[77]!==g||O[78]!==L?(C=(0,l.jsxs)("header",{className:"flex h-12 items-center justify-between gap-2 px-4 select-none",children:[g,L]}),O[77]=g,O[78]=L,O[79]=C):C=O[79],O[80]!==x?(W=(0,l.jsx)("div",{className:"h-72 border-t border-default",children:x}),O[80]=x,O[81]=W):W=O[81],O[82]!==X.name||O[83]!==C||O[84]!==W?(J=(0,l.jsxs)("section",{className:"w-full overflow-hidden rounded-2xl border border-default bg-surface","aria-label":X.name,children:[C,W]}),O[82]=X.name,O[83]=C,O[84]=W,O[85]=J):J=O[85],J}function q(e){T.a.error("ChatGPT CSV attachment failed to open",{safe:{},sensitive:{error:e}})}function K(e){let t,a,r,i,o,d,c,m,u,h,f,p,b=(0,n.c)(40),{columnNames:y,rows:x}=e,[g,v]=(0,s.useState)(0),I=Math.max(0,Math.floor(g/40)-5),w=Math.min(x.length,I+18);if(b[0]!==y||b[1]!==I||b[2]!==w||b[3]!==x){let e,n,s,u,h=x.slice(I,w),f=40*I;t=(x.length-w)*40,b[12]===Symbol.for("react.memo_cache_sentinel")?(e=e=>{v(e.currentTarget.scrollTop)},b[12]=e):e=b[12],c="h-full overflow-auto",m=e,i="min-w-full border-separate border-spacing-0 text-start text-sm",o=x.length+1,b[13]===Symbol.for("react.memo_cache_sentinel")?(n=(0,l.jsx)("th",{className:"sticky start-0 top-0 z-20 h-10 w-10 min-w-10 border-e border-b border-default bg-surface-secondary px-2 text-end font-normal text-tertiary","aria-hidden":!0}),b[13]=n):n=b[13],b[14]!==y?(s=y.map(J),b[14]=y,b[15]=s):s=b[15],b[16]!==s?(d=(0,l.jsx)("thead",{children:(0,l.jsxs)("tr",{"aria-rowindex":1,children:[n,s]})}),b[16]=s,b[17]=d):d=b[17],b[18]!==y.length||b[19]!==f?(a=f>0?(0,l.jsx)("tr",{"aria-hidden":!0,children:(0,l.jsx)("td",{colSpan:y.length+1,style:{height:f}})}):null,b[18]=y.length,b[19]=f,b[20]=a):a=b[20],b[21]!==y||b[22]!==I?(u=(e,t)=>{let a=I+t;return(0,l.jsxs)("tr",{"aria-rowindex":a+2,children:[(0,l.jsx)("th",{className:"sticky start-0 z-10 h-10 w-10 min-w-10 border-e border-b border-default bg-surface-secondary px-2 text-end font-normal text-tertiary",scope:"row",children:a+1}),y.map((t,a)=>{let n=e[a]??"";return(0,l.jsx)("td",{className:"h-10 min-w-32 border-e border-b border-default px-3 text-default last:border-e-0",title:n,children:(0,l.jsx)("span",{className:"block max-w-80 truncate",children:n})},a)})]},a)},b[21]=y,b[22]=I,b[23]=u):u=b[23],r=h.map(u),b[0]=y,b[1]=I,b[2]=w,b[3]=x,b[4]=t,b[5]=a,b[6]=r,b[7]=i,b[8]=o,b[9]=d,b[10]=c,b[11]=m}else t=b[4],a=b[5],r=b[6],i=b[7],o=b[8],d=b[9],c=b[10],m=b[11];return b[24]!==t||b[25]!==y.length?(u=t>0?(0,l.jsx)("tr",{"aria-hidden":!0,children:(0,l.jsx)("td",{colSpan:y.length+1,style:{height:t}})}):null,b[24]=t,b[25]=y.length,b[26]=u):u=b[26],b[27]!==a||b[28]!==r||b[29]!==u?(h=(0,l.jsxs)("tbody",{children:[a,r,u]}),b[27]=a,b[28]=r,b[29]=u,b[30]=h):h=b[30],b[31]!==i||b[32]!==o||b[33]!==d||b[34]!==h?(f=(0,l.jsxs)("table",{className:i,"aria-rowcount":o,children:[d,h]}),b[31]=i,b[32]=o,b[33]=d,b[34]=h,b[35]=f):f=b[35],b[36]!==f||b[37]!==c||b[38]!==m?(p=(0,l.jsx)("div",{className:c,onScroll:m,children:f}),b[36]=f,b[37]=c,b[38]=m,b[39]=p):p=b[39],p}function J(e,t){return(0,l.jsx)("th",{className:"sticky top-0 z-10 h-10 min-w-32 border-e border-b border-default bg-surface-secondary px-3 text-start font-semibold text-default last:border-e-0",scope:"col",title:e,children:(0,l.jsx)("span",{className:"block max-w-80 truncate",children:e})},`${e}-${String(t)}`)}function O(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];if(e.isSharedLibraryFile&&!t)return null;if(null!=e.mountedLibraryFileId)return{fileName:e.name,mimeType:e.mountedLibraryMimeType??e.mimeType??void 0,mountedLibraryFileId:e.mountedLibraryFileId,sourceUrl:e.sourceUrl,type:"mounted-library"};let a=(0,V.i)(e.downloadUrl);return null!=a?{downloadUrl:a,fileId:e.fileId??void 0,isSharedLibraryFile:e.isSharedLibraryFile,libraryFileId:e.libraryFileId??void 0,type:"download-url"}:null==e.fileId?null:{fileId:e.fileId,libraryFileId:e.libraryFileId??void 0,type:"file-id"}}let X=(0,u.a)(async()=>(await Promise.all([a.e(418851),a.e(109308),a.e(399565),a.e(257798),a.e(153380),a.e(617936),a.e(807489),a.e(337882),a.e(955979),a.e(646436),a.e(7078),a.e(200429),a.e(698524),a.e(956483),a.e(87162),a.e(396705),a.e(155568),a.e(731863),a.e(767086),a.e(76629),a.e(514085),a.e(204542),a.e(982651),a.e(673108),a.e(487481),a.e(229522),a.e(390575),a.e(353032),a.e(637885),a.e(469955)]).then(a.bind(a,"lUP2"))).ChatGptUserMessageAudioAttachment);function Z(e){let t,a,r,s,o=(0,n.c)(15),{attachments:c,conversationId:m,messageId:u,shouldBlockExternalEgress:h,tabKeyPrefix:f}=e,{accountId:p}=(0,i.z)(d.m),y=(0,i.z)(b.c),{data:x}=(0,i.x)(k.a,p);o[0]!==x?.features||o[1]!==h?(t=!h&&x?.features?.includes("graphite")===!0,o[0]=x?.features,o[1]=h,o[2]=t):t=o[2];let g=t;if(o[3]!==c||o[4]!==m||o[5]!==u||o[6]!==y||o[7]!==h||o[8]!==g||o[9]!==f){let e=g?c.flatMap((e,t)=>{let a=O(e,y);return e.name.trim().toLowerCase().endsWith(".csv")&&null!=e.sizeBytes&&e.sizeBytes<=1e6&&null!=a?[{attachment:e,attachmentIndex:t,target:a}]:[]}):[],t=new Set(e.map(Q)),n=c.flatMap((e,a)=>t.has(a)?[]:[{attachment:e,attachmentIndex:a}]);a=n.length>0?(0,l.jsx)("div",{className:"flex w-full flex-wrap justify-end gap-2 self-end md:w-4/5",children:n.map(e=>{let{attachment:t,attachmentIndex:a}=e;return(0,l.jsx)(Y,{attachment:t,conversationId:m,messageId:u,shouldBlockExternalEgress:h,tabKey:`${f}:${String(a)}:${t.name}`},`${t.name}-${String(a)}`)})}):null,r=e.length>0?(0,l.jsx)("div",{className:"flex w-full flex-col gap-2 self-end md:w-4/5",children:e.map(e=>{let{attachment:t,attachmentIndex:a,target:n}=e;return(0,l.jsx)(W,{attachment:t,conversationId:m,tabKey:`${f}:${String(a)}:${t.name}`,target:n},`${t.name}-${String(a)}`)})}):null,o[3]=c,o[4]=m,o[5]=u,o[6]=y,o[7]=h,o[8]=g,o[9]=f,o[10]=a,o[11]=r}else a=o[10],r=o[11];return o[12]!==a||o[13]!==r?(s=(0,l.jsxs)(l.Fragment,{children:[a,r]}),o[12]=a,o[13]=r,o[14]=s):s=o[14],s}function Q(e){let{attachmentIndex:t}=e;return t}function Y(e){let t,a,d,u,k,A,N,B,z,P,U,$,R,V,G,H,W,q,K,J,Z,Q,Y,D,ee=(0,n.c)(137),{attachment:et,conversationId:ea,messageId:el,shouldBlockExternalEgress:en,tabKey:er,variant:ei}=e,es=void 0===ei?"card":ei,eo=(0,i.y)(w.a),ed=(0,j.i)(),ec=(0,i.x)(F.y,ea),[em,eu]=(0,s.useState)(!1),eh=(0,s.useRef)(null);ee[0]===Symbol.for("react.memo_cache_sentinel")?(t=()=>()=>eh.current?.abort(),a=[],ee[0]=t,ee[1]=a):(t=ee[0],a=ee[1]),(0,s.useEffect)(t,a);let ef=(0,i.z)(b.d);if(ee[2]!==et||ee[3]!==ec||ee[4]!==ef||ee[5]!==en||ee[6]!==ed||ee[7]!==es){let e;B=O(et,!ef),u=!en&&null!=B,k="card"===es&&"tpp"!==ec&&"flora"!==ec&&!en&&null!=B&&(0,S.d)({fileName:et.name,mimeType:et.mountedLibraryMimeType??et.mimeType}),d=ed.checkGate("2666007232",{disableExposureLog:!k});let t=et.mountedLibraryFileId??et.libraryFileId;ee[14]!==t?(e=(0,x.a)(t),ee[14]=t,ee[15]=e):e=ee[15],A=e;let a=u?(0,L.a)(B,et.name,et.mimeType):null;N=null==a?null:(0,I.d)(a)?.sourceUrl,null!=a&&et.isSourceReference&&(N=et.sourceUrl??N),ee[2]=et,ee[3]=ec,ee[4]=ef,ee[5]=en,ee[6]=ed,ee[7]=es,ee[8]=d,ee[9]=u,ee[10]=k,ee[11]=A,ee[12]=N,ee[13]=B}else d=ee[8],u=ee[9],k=ee[10],A=ee[11],N=ee[12],B=ee[13];ee[16]!==et.isSharedLibraryFile||ee[17]!==et.isSourceReference||ee[18]!==et.libraryArtifactType||ee[19]!==et.mimeType||ee[20]!==et.mountedLibraryFileId||ee[21]!==et.mountedLibraryMimeType||ee[22]!==et.name||ee[23]!==u||ee[24]!==ea||ee[25]!==em||ee[26]!==el||ee[27]!==eo||ee[28]!==N||ee[29]!==er||ee[30]!==B?(z=u?e=>{if(et.isSourceReference&&null!=N&&null!=et.mountedLibraryFileId)return void(0,v.b)(eo,{href:N,title:et.name,libraryFileId:et.mountedLibraryFileId,mimeType:et.mimeType},e,ea);if(em)return;let t=new AbortController;eh.current=t,eu(!0);let a=(0,C.a)(eo.value.pathname);(0,M.openChatGptFile)(eo,{connectedFileIntent:"open",interaction:e,isAccessBlocked:e=>(0,_.j)(e,ea)||!0===et.isSharedLibraryFile&&e.get(b.d),browserPreview:!0,conversationId:ea,messageId:el,fileName:et.name,libraryArtifactType:et.libraryArtifactType,gizmoId:eo.get(F.S,ea),sharedConversationId:null!=a&&a.params.sharedConversationId!==ea?null:a?.params.sharedConversationId??eo.get(F.Z,ea),mimeType:et.mountedLibraryMimeType??et.mimeType,signal:t.signal,tabKey:er,target:B}).catch(e=>{t.signal.aborted||et.isSharedLibraryFile&&eo.get(b.d)||(T.a.warning("ChatGPT user attachment failed to open",{safe:{},sensitive:{error:e}}),eo.get(p.f).danger((0,l.jsx)(o.a,{id:"file-tile.download-failed",defaultMessage:"Failed to download file. Please try again later.",description:"Error toast when opening or downloading a file from a ChatGPT message fails"}),{errorAnalytics:{toastId:"unknown"}}))}).finally(()=>{eh.current=null,eu(!1)})}:void 0,ee[16]=et.isSharedLibraryFile,ee[17]=et.isSourceReference,ee[18]=et.libraryArtifactType,ee[19]=et.mimeType,ee[20]=et.mountedLibraryFileId,ee[21]=et.mountedLibraryMimeType,ee[22]=et.name,ee[23]=u,ee[24]=ea,ee[25]=em,ee[26]=el,ee[27]=eo,ee[28]=N,ee[29]=er,ee[30]=B,ee[31]=z):z=ee[31];let ep=z;ee[32]!==ep?(P=e=>{null!=ep&&(e.preventDefault(),ep(e))},ee[32]=ep,ee[33]=P):P=ee[33];let eb=P;if(k&&d){let e;return ee[34]!==et||ee[35]!==ea||ee[36]!==B?(e=(0,l.jsx)(X,{attachment:et,conversationId:ea,target:B}),ee[34]=et,ee[35]=ea,ee[36]=B,ee[37]=e):e=ee[37],e}if("inline"===es){let e,t,a,n,r,i,s=et.mountedLibraryFileId??et.libraryFileId;ee[38]!==et.fileId||ee[39]!==et.isSourceReference||ee[40]!==et.libraryArtifactType||ee[41]!==et.mimeType||ee[42]!==et.mountedLibraryMimeType||ee[43]!==et.name||ee[44]!==et.sourceUrl||ee[45]!==s?(e=null==s?void 0:(0,c.e)({label:et.name,href:(0,y.c)({fileId:et.fileId??"",libraryArtifactType:et.libraryArtifactType??"",libraryFileId:s,mimeType:et.mountedLibraryMimeType??et.mimeType??"",...et.isSourceReference?{sourceUrl:et.sourceUrl,serializeAsUrl:!0}:{}})}),ee[38]=et.fileId,ee[39]=et.isSourceReference,ee[40]=et.libraryArtifactType,ee[41]=et.mimeType,ee[42]=et.mountedLibraryMimeType,ee[43]=et.name,ee[44]=et.sourceUrl,ee[45]=s,ee[46]=e):e=ee[46];let o=e;ee[47]!==et.libraryArtifactType||ee[48]!==et.libraryFileId||ee[49]!==et.mimeType||ee[50]!==et.mountedLibraryFileId||ee[51]!==et.mountedLibraryMimeType||ee[52]!==et.name||ee[53]!==et.sourceUrl||ee[54]!==em||ee[55]!==A?(t=em?(0,l.jsx)(f.a,{as:"span",className:"size-4"}):(0,l.jsx)(g.a,{fileName:et.name,libraryArtifactType:et.libraryArtifactType,mimeType:et.mimeType??void 0,provider:A,sourceMimeType:et.mountedLibraryMimeType??void 0,mountedLibraryFileId:et.mountedLibraryFileId??et.libraryFileId,sourceUrl:et.sourceUrl??void 0,style:"message-inline"}),ee[47]=et.libraryArtifactType,ee[48]=et.libraryFileId,ee[49]=et.mimeType,ee[50]=et.mountedLibraryFileId,ee[51]=et.mountedLibraryMimeType,ee[52]=et.name,ee[53]=et.sourceUrl,ee[54]=em,ee[55]=A,ee[56]=t):t=ee[56],ee[57]!==et?(a=0===(0,E.h)(et).length?et.name:(0,E.g)(et.name),ee[57]=et,ee[58]=a):a=ee[58],ee[59]!==a?(n=(0,l.jsx)("span",{className:"max-w-64 self-baseline truncate",children:a}),ee[59]=a,ee[60]=n):n=ee[60],ee[61]!==t||ee[62]!==n?(r=(0,l.jsxs)(l.Fragment,{children:[t,n]}),ee[61]=t,ee[62]=n,ee[63]=r):r=ee[63];let d=r;if(null!=N){let e;return ee[64]!==et.name||ee[65]!==d||ee[66]!==o||ee[67]!==eb||ee[68]!==N?(e=(0,l.jsx)(m.a,{...o,className:"inline-flex max-w-full cursor-interaction items-center gap-1 rounded-sm px-1 py-0 align-baseline font-medium whitespace-nowrap focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0 focus-visible:outline-none","aria-label":et.name,href:N,initiator:"sites_library",showHoverActions:!0,tooltipContent:et.name,onUnmodifiedClick:eb,children:d}),ee[64]=et.name,ee[65]=d,ee[66]=o,ee[67]=eb,ee[68]=N,ee[69]=e):e=ee[69],e}return ee[70]!==et.name||ee[71]!==u||ee[72]!==d||ee[73]!==o||ee[74]!==em||ee[75]!==ep?(i=u?(0,l.jsx)("button",{...o,type:"button",className:"inline-flex max-w-full cursor-interaction items-center gap-1 rounded-sm px-1 py-0 align-baseline font-medium whitespace-nowrap focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0 focus-visible:outline-none","aria-busy":em,"aria-label":et.name,disabled:em,onClick:ep,children:d}):(0,l.jsx)("span",{...o,className:"inline-flex max-w-full items-center gap-1 rounded-sm px-1 py-0 align-baseline font-medium whitespace-nowrap",children:d}),ee[70]=et.name,ee[71]=u,ee[72]=d,ee[73]=o,ee[74]=em,ee[75]=ep,ee[76]=i):i=ee[76],i}if(ee[77]!==et.libraryArtifactType||ee[78]!==et.libraryFileId||ee[79]!==et.mimeType||ee[80]!==et.mountedLibraryFileId||ee[81]!==et.mountedLibraryMimeType||ee[82]!==et.name||ee[83]!==et.sourceUrl||ee[84]!==u||ee[85]!==em||ee[86]!==ep||ee[87]!==eb||ee[88]!==A||ee[89]!==N){let e=(0,r.f)({fileName:et.name,mimeType:et.mimeType??void 0}),t=null;if(null!=N){let e;ee[100]!==et.name||ee[101]!==eb||ee[102]!==N?(e=(0,l.jsx)(h.b,{"aria-label":et.name,href:N,initiator:"sites_library",showHoverActions:!0,tooltipContent:et.name,onUnmodifiedClick:eb}),ee[100]=et.name,ee[101]=eb,ee[102]=N,ee[103]=e):e=ee[103],t=e}else if(u){let e;ee[104]!==et.name||ee[105]!==em||ee[106]!==ep?(e=(0,l.jsx)(h.b,{"aria-busy":em,"aria-label":et.name,disabled:em,onClick:ep}),ee[104]=et.name,ee[105]=em,ee[106]=ep,ee[107]=e):e=ee[107],t=e}R=h.a,G="span",H="file-tile",J="group/resource-card relative",V=t,$=h.h,q="pointer-events-none relative z-10",ee[108]!==et.libraryArtifactType||ee[109]!==et.libraryFileId||ee[110]!==et.mimeType||ee[111]!==et.mountedLibraryFileId||ee[112]!==et.mountedLibraryMimeType||ee[113]!==et.name||ee[114]!==et.sourceUrl||ee[115]!==em||ee[116]!==A?(K=(0,l.jsx)("span",{className:"flex size-10 items-center justify-center overflow-hidden rounded-xl",children:em?(0,l.jsx)(f.a,{as:"span",className:"size-5"}):(0,l.jsx)(g.a,{fileName:et.name,libraryArtifactType:et.libraryArtifactType,mimeType:et.mimeType??void 0,provider:A,sourceMimeType:et.mountedLibraryMimeType??void 0,mountedLibraryFileId:et.mountedLibraryFileId??et.libraryFileId,sourceUrl:et.sourceUrl??void 0,style:"message-card"})}),ee[108]=et.libraryArtifactType,ee[109]=et.libraryFileId,ee[110]=et.mimeType,ee[111]=et.mountedLibraryFileId,ee[112]=et.mountedLibraryMimeType,ee[113]=et.name,ee[114]=et.sourceUrl,ee[115]=em,ee[116]=A,ee[117]=K):K=ee[117],U=o.a,W=(0,r.d)(e.category),ee[77]=et.libraryArtifactType,ee[78]=et.libraryFileId,ee[79]=et.mimeType,ee[80]=et.mountedLibraryFileId,ee[81]=et.mountedLibraryMimeType,ee[82]=et.name,ee[83]=et.sourceUrl,ee[84]=u,ee[85]=em,ee[86]=ep,ee[87]=eb,ee[88]=A,ee[89]=N,ee[90]=U,ee[91]=$,ee[92]=R,ee[93]=V,ee[94]=G,ee[95]=H,ee[96]=W,ee[97]=q,ee[98]=K,ee[99]=J}else U=ee[90],$=ee[91],R=ee[92],V=ee[93],G=ee[94],H=ee[95],W=ee[96],q=ee[97],K=ee[98],J=ee[99];ee[118]!==U||ee[119]!==W?(Z=(0,l.jsx)(U,{...W}),ee[118]=U,ee[119]=W,ee[120]=Z):Z=ee[120];let ey=null==N?et.name:void 0;return ee[121]!==$||ee[122]!==et.name||ee[123]!==Z||ee[124]!==ey||ee[125]!==q||ee[126]!==K?(Q=(0,l.jsx)($,{className:q,icon:K,subtitle:Z,title:et.name,titleTooltip:ey,variant:"file-tile"}),ee[121]=$,ee[122]=et.name,ee[123]=Z,ee[124]=ey,ee[125]=q,ee[126]=K,ee[127]=Q):Q=ee[127],ee[128]!==V||ee[129]!==Q||ee[130]!==J?(Y=(0,l.jsxs)("span",{className:J,children:[V,Q]}),ee[128]=V,ee[129]=Q,ee[130]=J,ee[131]=Y):Y=ee[131],ee[132]!==R||ee[133]!==G||ee[134]!==H||ee[135]!==Y?(D=(0,l.jsx)(R,{as:G,variant:H,children:Y}),ee[132]=R,ee[133]=G,ee[134]=H,ee[135]=Y,ee[136]=D):D=ee[136],D}}),Aa8X:(function(e,t,a){var l=a("ABep"),n=a("QosV"),r=a("oyxz"),i=a("zjpG"),s=a("bf6R");a.d(t,{},{a:function(e){let t,a,o,d,c,m,u=(0,n.c)(14),{settings:h}=e,{style_label:f,aspect_ratio:p,image_count:b}=h;if(!f&&null==p&&null==b)return null;u[0]===Symbol.for("react.memo_cache_sentinel")?(t=(0,l.jsxs)(l.Fragment,{children:[" ",(0,l.jsx)(i.a,{})," "]}),u[0]=t):t=u[0];let y=t;u[1]===Symbol.for("react.memo_cache_sentinel")?(a=(0,l.jsx)(s.wh,{}),u[1]=a):a=u[1],u[2]!==f?(o=f&&(0,l.jsx)("bdi",{children:f}),u[2]=f,u[3]=o):o=u[3];let x=f&&null!=p?y:null;u[4]!==p?(d=null!=p&&(0,l.jsx)("bdi",{children:"auto"===p?(0,l.jsx)(r.a,{id:"chatgptConversations.imageOptions.sent.autoRatio",defaultMessage:"Auto",description:"Short label above a sent image prompt indicating that the image model was allowed to choose its aspect ratio"}):p}),u[4]=p,u[5]=d):d=u[5];let g=(f||null!=p)&&null!=b?y:null;return u[6]!==b?(c=null!=b&&(0,l.jsx)("bdi",{children:(0,l.jsx)(r.a,{id:"chatgptConversations.imageOptions.sent.count",defaultMessage:"{count, plural, one {# image} other {# images}}",description:"Number of images the user requested, shown above their sent image prompt alongside the selected style and aspect ratio",values:{count:b}})}),u[6]=b,u[7]=c):c=u[7],u[8]!==o||u[9]!==x||u[10]!==d||u[11]!==g||u[12]!==c?(m=(0,l.jsxs)("div",{role:"note",className:"flex max-w-[70%] items-center gap-1.5 self-end pe-3 text-sm text-secondary",children:[a,(0,l.jsxs)("span",{className:"min-w-0 text-end break-words",children:[o,x,d,g,c]})]}),u[8]=o,u[9]=x,u[10]=d,u[11]=g,u[12]=c,u[13]=m):m=u[13],m}})}),R1rp:(function(e,t,a){a.d(t,{a:()=>c,b:()=>d,c:()=>m,d:()=>u});var l=a("BolX"),n=a("OWtl"),r=a("twmu"),i=a("Cslg");let s=(0,l.c)(n.a,e=>{let{get:t}=e,a=t(i.f);if(null!=a&&"allowed"===t(i.n))return t(r.b,a).data?.accounts[a]?.features}),o=(0,l.c)(n.a,e=>{let{get:t}=e,a=t(i.n);return"loading"===a||"allowed"===a&&t(r.b,t(i.f)).isPending}),d=(0,l.c)(n.a,()=>!1),c=(0,l.c)(n.a,()=>!1),m=(0,l.c)(n.a,e=>{let{get:t}=e;return t(s)?.includes("library_shared_content_available")===!0}),u=(0,l.c)(n.a,e=>{let{get:t}=e;return!t(o)&&!t(m)})})};
+export const __rspack_esm_ids = [308581];
+export const __webpack_modules__ = {
+    oTAj: (function(e, t, a) {
+        a.d(t, {
+            a: () => ee
+        });
+        var l = a("ABep"),
+            n = a("QosV"),
+            r = a("SIRb"),
+            i = a("slpy"),
+            s = a("BolX"),
+            o = a("hV9T"),
+            d = a("zd8w"),
+            c = a("jqIZ"),
+            m = a("B8Ul"),
+            u = a("Cslg"),
+            h = a("Gdjn"),
+            f = a("ILTo"),
+            p = a("YWcr"),
+            b = a("DAFh"),
+            y = a("rS3J"),
+            x = a("WB4T"),
+            g = a("dKZq"),
+            v = a("QlrJ"),
+            I = a("HOLv"),
+            w = a("bf6R"),
+            j = a("Bbed"),
+            T = a("A9Yt"),
+            S = a("FqCE"),
+            k = a("WE3h"),
+            E = a("TxRk"),
+            F = a("e2wX"),
+            _ = a("k7G6"),
+            L = a("tSEg"),
+            M = a("lBzi"),
+            C = a("Kmy6"),
+            A = a("M0Ez"),
+            N = a("ZfbS"),
+            B = a("drbS"),
+            z = a("YRXX"),
+            P = a("dQRk"),
+            U = a("NcJA");
+
+        function $(e) {
+            let t, a, r, i, o = (0, n.c)(17),
+                {
+                    mention: d,
+                    conversationId: c,
+                    shouldBlockExternalEgress: m
+                } = e,
+                u = (0, s.y)(L.a),
+                h = (0, s.z)(U.a.registration$)?.host,
+                f = (0, s.z)(U.a.boundConversationId$),
+                p = (0, s.x)(P.j, c);
+            o[0] !== f || o[1] !== h || o[2] !== d.path || o[3] !== u || o[4] !== p ? (t = null != p && f === p ? h?.getReferenceAction?.(d.path, () => u.get(U.a.registration$)?.host === h && u.get(U.a.boundConversationId$) === p) : void 0, o[0] = f, o[1] = h, o[2] = d.path, o[3] = u, o[4] = p, o[5] = t) : t = o[5];
+            let b = t;
+            if (m || null == b) {
+                let e;
+                return o[6] !== d.label ? (e = (0, l.jsx)("span", {
+                    children: d.label
+                }), o[6] = d.label, o[7] = e) : e = o[7], e
+            }
+            return o[8] !== d.label || o[9] !== d.path ? (a = (0, y.e)({
+                href: d.path,
+                label: d.label
+            }), o[8] = d.label, o[9] = d.path, o[10] = a) : a = o[10], o[11] !== d.label || o[12] !== a ? (r = (0, l.jsx)(E.a, {
+                interactive: !0,
+                dataAttributes: a,
+                children: d.label
+            }), o[11] = d.label, o[12] = a, o[13] = r) : r = o[13], o[14] !== b || o[15] !== r ? (i = (0, l.jsx)("button", {
+                type: "button",
+                onClick: b,
+                children: r
+            }), o[14] = b, o[15] = r, o[16] = i) : i = o[16], i
+        }
+        var R = a("tHvi"),
+            V = a("pdPj"),
+            G = a("OWtl"),
+            H = a("Kwur"),
+            W = a("ZM7C"),
+            q = a("gJdM"),
+            K = a("iHfE"),
+            J = a("OWHf"),
+            O = a("t5e6");
+        let X = (0, s.q)(G.a, (e, t) => {
+            let {
+                get: a
+            } = t, l = a(W.a);
+            return {
+                enabled: null != l && a(V.a),
+                queryKey: ["chatgpt-reference-image-message-thumbnail", l, a(W.b), e],
+                queryFn: async t => {
+                    let {
+                        signal: a
+                    } = t;
+                    return (await H.Request.safeGet("/files/library/reference-images/{reference_image_id}/thumbnail_url", {
+                        additionalHeaders: null == l ? void 0 : (0, J.a)(l),
+                        parameters: {
+                            path: {
+                                reference_image_id: e
+                            }
+                        },
+                        signal: a
+                    })).thumbnail_url
+                },
+                staleTime: 27e5,
+                gcTime: 27e5,
+                retry: !1
+            }
+        });
+
+        function Z(e) {
+            let t, a, r, i, o = (0, n.c)(13),
+                {
+                    mention: d,
+                    shouldBlockExternalEgress: c
+                } = e,
+                m = (0, s.z)(V.a);
+            o[0] === Symbol.for("react.memo_cache_sentinel") ? (t = {
+                enabled: !1
+            }, o[0] = t) : t = o[0];
+            let {
+                data: u
+            } = (0, s.z)(K.c, t), h = m && !c ? u?.find(e => e.id === d.referenceImageId) : void 0, f = !c && null == h;
+            o[1] !== f ? (a = {
+                enabled: f
+            }, o[1] = f, o[2] = a) : a = o[2];
+            let {
+                data: p
+            } = (0, s.x)(X, d.referenceImageId, a), b = E.a, x = (0, y.e)({
+                href: (0, q.b)({
+                    referenceImageId: d.referenceImageId,
+                    assetPointer: h?.asset_pointer,
+                    thumbnailAssetPointer: h?.thumbnail_asset_pointer
+                }),
+                label: d.name
+            });
+            return o[3] !== m || o[4] !== h || o[5] !== c || o[6] !== p ? (r = m && !c && (null != h || null != p) ? (0, l.jsx)("span", {
+                children: (0, l.jsx)(O.a, {
+                    alt: "",
+                    assetPointer: h?.asset_pointer,
+                    composerThumbnailUrl: h?.thumbnail_url ?? p,
+                    fallbackUrl: h?.thumbnail_url ?? p,
+                    name: null,
+                    size: "response",
+                    thumbnailAssetPointer: h?.thumbnail_asset_pointer,
+                    useComposerThumbnailCache: !0
+                })
+            }) : (0, l.jsx)(w.fg, {}), o[3] = m, o[4] = h, o[5] = c, o[6] = p, o[7] = r) : r = o[7], o[8] !== b || o[9] !== d.name || o[10] !== x || o[11] !== r ? (i = (0, l.jsx)(b, {
+                fontWeight: "inherit",
+                dataAttributes: x,
+                icon: r,
+                iconSizing: "authored",
+                layout: "inline-flow",
+                tone: "composer-reference",
+                children: d.name
+            }), o[8] = b, o[9] = d.name, o[10] = x, o[11] = r, o[12] = i) : i = o[12], i
+        }
+        var Q = a("SCbd");
+        let Y = (0, j.a)(r.h, {
+                suspendToParent: !0,
+                errorFallback: e => {
+                    let {
+                        name: t
+                    } = e;
+                    return (0, l.jsx)(E.a, {
+                        icon: (0, f.b)(),
+                        children: t
+                    })
+                }
+            }),
+            D = (0, s.t)("ChatGptUserMessageContentScope", {
+                key: e => e.tabKeyPrefix,
+                parent: L.a,
+                retain: {
+                    max: 0
+                }
+            });
+
+        function ee(e) {
+            let t, a, r, i, o, c, m, u, h, f, b, y, I, w = (0, n.c)(55),
+                {
+                    ref: j,
+                    plainTextRef: T,
+                    conversationId: S,
+                    hostId: E,
+                    mentions: F,
+                    skillMentions: _,
+                    folderMentions: L,
+                    referenceImageMentions: C,
+                    message: A,
+                    messageId: N,
+                    renderMarkdown: z,
+                    shouldBlockExternalEgress: P,
+                    systemHintMentions: U,
+                    tabKeyPrefix: $
+                } = e;
+            w[0] !== _ ? (t = void 0 === _ ? [] : _, w[0] = _, w[1] = t) : t = w[1];
+            let V = t;
+            w[2] !== L ? (a = void 0 === L ? [] : L, w[2] = L, w[3] = a) : a = w[3];
+            let G = a;
+            w[4] !== C ? (r = void 0 === C ? [] : C, w[4] = C, w[5] = r) : r = w[5];
+            let H = r;
+            if (w[6] !== G || w[7] !== F || w[8] !== H || w[9] !== V || w[10] !== A) i = [...F, ...V, ...G, ...H, ...A.includes(R.a) ? (0, B.g)(A).filter(e => e.path.startsWith(R.a)).map(e => ({
+                ...e,
+                label: (0, R.b)(e.label),
+                officeSheet: !0
+            })) : []].sort(el), w[6] = G, w[7] = F, w[8] = H, w[9] = V, w[10] = A, w[11] = i;
+            else i = w[11];
+            let W = i,
+                q = (0, d.useId)();
+            if (w[12] !== q) {
+                let e;
+                w[14] === Symbol.for("react.memo_cache_sentinel") ? (e = /[^a-z0-9-]/gi, w[14] = e) : e = w[14], o = q.replace(e, ""), w[12] = q, w[13] = o
+            } else o = w[13];
+            let K = `chatgpt-file-mention-${o}`;
+            w[15] !== P || w[16] !== A ? (c = !P && A.includes("app://"), w[15] = P, w[16] = A, w[17] = c) : c = w[17];
+            let J = c;
+            w[18] !== J ? (m = {
+                enabled: J
+            }, w[18] = J, w[19] = m) : m = w[19];
+            let {
+                data: O
+            } = (0, s.z)(M.m, m);
+            if (w[20] !== J || w[21] !== U || w[22] !== O || w[23] !== A) {
+                if (u = [], J && null != O)
+                    for (let e of (0, B.g)(A)) {
+                        let t = O[e.path];
+                        null != t && u.push({
+                            id: t.system_hint,
+                            label: t.name,
+                            startIndex: e.startIndex,
+                            endIndex: e.endIndex,
+                            promptLink: {
+                                href: e.path,
+                                label: e.label
+                            },
+                            systemHint: {
+                                name: t.name,
+                                logo: t.logo
+                            }
+                        })
+                    }
+                u.push(...U), w[20] = J, w[21] = U, w[22] = O, w[23] = A, w[24] = u
+            } else u = w[24];
+            w[25] !== K ? (h = {
+                [K]: en
+            }, w[25] = K, w[26] = h) : h = w[26];
+            let X = h;
+            w[27] !== W || w[28] !== u || w[29] !== A ? (f = e => {
+                if (e.length === A.length) return A;
+                let t = [...W, ...u].reduce(ea, e.length);
+                return A.slice(0, t)
+            }, w[27] = W, w[28] = u, w[29] = A, w[30] = f) : f = w[30];
+            let Z = f;
+            return w[31] !== S || w[32] !== E || w[33] !== W || w[34] !== N || w[35] !== u || w[36] !== P || w[37] !== $ || w[38] !== A ? (b = {
+                conversationId: S,
+                hostId: E,
+                message: A,
+                messageId: N,
+                mentions: W,
+                shouldBlockExternalEgress: P,
+                systemHintMentions: u,
+                tabKeyPrefix: $
+            }, w[31] = S, w[32] = E, w[33] = W, w[34] = N, w[35] = u, w[36] = P, w[37] = $, w[38] = A, w[39] = b) : b = w[39], w[40] !== K || w[41] !== X || w[42] !== Z || w[43] !== E || w[44] !== W || w[45] !== T || w[46] !== j || w[47] !== z || w[48] !== u || w[49] !== P || w[50] !== A ? (y = z ? (0, l.jsx)(x.a, {
+                ref: j,
+                cwd: null,
+                directives: X,
+                hostId: E,
+                hasSerializedParagraphs: !0,
+                renderMath: !1,
+                serializeVisibleText: e => es(Z(e), W, u).map(e => "text" === e.kind ? e.text : `:${K}{kind="${e.kind}" index="${String(e.index)}"}`).join(""),
+                text: A
+            }) : (0, l.jsx)(g.a, {
+                text: A,
+                textTone: "user-message",
+                children: e => {
+                    let t = Z(e),
+                        a = es(t, W, u);
+                    return (0, l.jsx)(g.b, {
+                        ref: a.some(et) ? j : T,
+                        children: a.map((e, a) => "text" === e.kind ? (0, l.jsx)(v.a, {
+                            renderLink: e => "text" === (0, p.x)(e) ? null : P ? e.label : (0, k.b)({
+                                ...e,
+                                hostId: E,
+                                cwd: null
+                            }),
+                            sourceStartIndex: e.startIndex,
+                            sourceText: t,
+                            text: e.text
+                        }, a) : (0, l.jsx)(en, {
+                            name: K,
+                            attributes: {
+                                kind: e.kind,
+                                index: String(e.index)
+                            }
+                        }, a))
+                    })
+                }
+            }), w[40] = K, w[41] = X, w[42] = Z, w[43] = E, w[44] = W, w[45] = T, w[46] = j, w[47] = z, w[48] = u, w[49] = P, w[50] = A, w[51] = y) : y = w[51], w[52] !== b || w[53] !== y ? (I = (0, l.jsx)(s.b, {
+                scope: D,
+                value: b,
+                children: y
+            }), w[52] = b, w[53] = y, w[54] = I) : I = w[54], I
+        }
+
+        function et(e) {
+            return "text" !== e.kind
+        }
+
+        function ea(e, t) {
+            return t.startIndex < e && t.endIndex > e ? Math.min(e, t.startIndex) : e
+        }
+
+        function el(e, t) {
+            return e.startIndex - t.startIndex
+        }
+
+        function en(e) {
+            let t, a = (0, n.c)(66),
+                {
+                    attributes: r
+                } = e,
+                {
+                    value: o
+                } = (0, s.y)(D),
+                m = (0, s.z)(u.f),
+                p = (0, s.z)(u.k);
+            a[0] !== r.index ? (t = "string" == typeof r.index ? Number.parseInt(r.index, 10) : 0 / 0, a[0] = r.index, a[1] = t) : t = a[1];
+            let b = t;
+            if ("system-hint" === r.kind) {
+                let e, t = o.systemHintMentions[b];
+                return a[2] !== t ? (e = null == t ? null : (0, l.jsx)(er, {
+                    mention: t
+                }), a[2] = t, a[3] = e) : e = a[3], e
+            }
+            let x = o.mentions[b];
+            if (null == x) return null;
+            if ("officeSheet" in x) {
+                let e;
+                return a[4] !== x || a[5] !== o.conversationId || a[6] !== o.shouldBlockExternalEgress ? (e = (0, l.jsx)($, {
+                    mention: x,
+                    conversationId: o.conversationId,
+                    shouldBlockExternalEgress: o.shouldBlockExternalEgress
+                }), a[4] = x, a[5] = o.conversationId, a[6] = o.shouldBlockExternalEgress, a[7] = e) : e = a[7], e
+            }
+            if ("referenceImageId" in x) {
+                let e;
+                return a[8] !== x || a[9] !== o.shouldBlockExternalEgress ? (e = (0, l.jsx)(Z, {
+                    mention: x,
+                    shouldBlockExternalEgress: o.shouldBlockExternalEgress
+                }), a[8] = x, a[9] = o.shouldBlockExternalEgress, a[10] = e) : e = a[10], e
+            }
+            if ("directoryId" in x) {
+                let e, t, n, r, s = x.displayPath ?? x.name;
+                a[18] !== x.directoryId || a[19] !== x.name ? (e = (0, y.e)({
+                    href: (0, S.f)(x.directoryId),
+                    label: x.name
+                }), a[18] = x.directoryId, a[19] = x.name, a[20] = e) : e = a[20];
+                let d = e;
+                a[21] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, l.jsx)(w.wd, {}), a[21] = t) : t = a[21], a[22] !== x.name ? (n = (0, l.jsxs)(l.Fragment, {
+                    children: [t, (0, l.jsx)("span", {
+                        className: "max-w-64 self-baseline truncate",
+                        children: x.name
+                    })]
+                }), a[22] = x.name, a[23] = n) : n = a[23];
+                let m = n;
+                return a[24] !== m || a[25] !== d || a[26] !== s || a[27] !== x.directoryId || a[28] !== x.displayPath || a[29] !== o.shouldBlockExternalEgress ? (r = null == x.displayPath || o.shouldBlockExternalEgress ? (0, l.jsx)("span", {
+                    ...d,
+                    className: "inline-flex max-w-full items-center gap-1 rounded-sm px-1 py-0 align-baseline font-medium whitespace-nowrap",
+                    title: s,
+                    children: m
+                }) : (0, l.jsx)(i.a, {
+                    content: s,
+                    children: (0, l.jsx)(c.g, {
+                        ...d,
+                        className: "inline-flex max-w-full cursor-interaction items-center gap-1 rounded-sm px-1 py-0 align-baseline font-medium whitespace-nowrap underline decoration-dotted underline-offset-2 focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0 focus-visible:outline-none",
+                        to: `/library/d/${encodeURIComponent(x.directoryId)}`,
+                        "aria-label": s,
+                        children: m
+                    })
+                }), a[24] = m, a[25] = d, a[26] = s, a[27] = x.directoryId, a[28] = x.displayPath, a[29] = o.shouldBlockExternalEgress, a[30] = r) : r = a[30], r
+            }
+            if ("name" in x) {
+                let e, t, n, r, i;
+                a[31] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, f.b)(), a[31] = e) : e = a[31], a[32] !== x.name ? (t = (0, l.jsx)(E.a, {
+                    icon: e,
+                    children: x.name
+                }), a[32] = x.name, a[33] = t) : t = a[33];
+                let s = t;
+                return a[34] !== m || a[35] !== x.id || a[36] !== x.name || a[37] !== p ? (n = (0, y.e)({
+                    href: null == m ? void 0 : (0, h.a)(x.id, {
+                        accountId: m,
+                        userId: p
+                    }),
+                    label: `@${x.name}`
+                }), a[34] = m, a[35] = x.id, a[36] = x.name, a[37] = p, a[38] = n) : n = a[38], a[39] !== s || a[40] !== x.id || a[41] !== x.name || a[42] !== o.hostId || a[43] !== o.shouldBlockExternalEgress ? (r = o.shouldBlockExternalEgress ? s : (0, l.jsx)(d.Suspense, {
+                    fallback: s,
+                    children: (0, l.jsx)(Y, {
+                        id: x.id,
+                        name: x.name,
+                        hostId: o.hostId
+                    })
+                }), a[39] = s, a[40] = x.id, a[41] = x.name, a[42] = o.hostId, a[43] = o.shouldBlockExternalEgress, a[44] = r) : r = a[44], a[45] !== n || a[46] !== r ? (i = (0, l.jsx)("span", {
+                    ...n,
+                    children: r
+                }), a[45] = n, a[46] = r, a[47] = i) : i = a[47], i
+            }
+            if ("attachment" in x) {
+                let e, t, n, {
+                        attachment: r
+                    } = x,
+                    i = r.mountedLibraryFileId ?? r.libraryFileId;
+                a[48] !== r.fileId || a[49] !== r.libraryArtifactType || a[50] !== r.mimeType || a[51] !== r.mountedLibraryMimeType || a[52] !== i || a[53] !== x.endIndex || a[54] !== x.startIndex || a[55] !== o.message ? (e = (0, y.e)({
+                    href: null == i ? void 0 : (0, S.c)({
+                        fileId: r.fileId ?? "",
+                        libraryFileId: i,
+                        libraryArtifactType: r.libraryArtifactType ?? "",
+                        mimeType: r.mountedLibraryMimeType ?? r.mimeType ?? ""
+                    }),
+                    label: o.message.slice(x.startIndex, x.endIndex).replace(/^@/, "")
+                }), a[48] = r.fileId, a[49] = r.libraryArtifactType, a[50] = r.mimeType, a[51] = r.mountedLibraryMimeType, a[52] = i, a[53] = x.endIndex, a[54] = x.startIndex, a[55] = o.message, a[56] = e) : e = a[56];
+                let s = `${o.tabKeyPrefix}:${String(b)}:${r.name}`;
+                return a[57] !== r || a[58] !== s || a[59] !== o.conversationId || a[60] !== o.messageId || a[61] !== o.shouldBlockExternalEgress ? (t = (0, l.jsx)(z.a, {
+                    attachment: r,
+                    conversationId: o.conversationId,
+                    messageId: o.messageId,
+                    shouldBlockExternalEgress: o.shouldBlockExternalEgress,
+                    tabKey: s,
+                    variant: "inline"
+                }), a[57] = r, a[58] = s, a[59] = o.conversationId, a[60] = o.messageId, a[61] = o.shouldBlockExternalEgress, a[62] = t) : t = a[62], a[63] !== e || a[64] !== t ? (n = (0, l.jsx)("span", {
+                    ...e,
+                    children: t
+                }), a[63] = e, a[64] = t, a[65] = n) : n = a[65], n
+            }
+            return null
+        }
+
+        function er(e) {
+            let t, a = (0, n.c)(8),
+                {
+                    mention: r
+                } = e;
+            if (null != (0, p.z)(r.id)) {
+                let e, t;
+                return a[0] !== r.id || a[1] !== r.label ? (e = (0, y.e)({
+                    href: r.id,
+                    label: r.label
+                }), a[0] = r.id, a[1] = r.label, a[2] = e) : e = a[2], a[3] !== r.label || a[4] !== e ? (t = (0, l.jsx)(E.a, {
+                    dataAttributes: e,
+                    icon: T.a,
+                    layout: "selection-pill",
+                    title: r.label,
+                    children: r.label
+                }), a[3] = r.label, a[4] = e, a[5] = t) : t = a[5], t
+            }
+            return a[6] !== r ? (t = (0, l.jsx)(ei, {
+                mention: r
+            }), a[6] = r, a[7] = t) : t = a[7], t
+        }
+
+        function ei(e) {
+            let t, a, r, i, d, u, h, f, x, g, v, w, j, T, S = (0, n.c)(47),
+                {
+                    mention: k
+                } = e,
+                {
+                    value: L
+                } = (0, s.y)(D),
+                B = !L.shouldBlockExternalEgress && null == k.systemHint;
+            S[0] !== B ? (t = {
+                enabled: B
+            }, S[0] = B, S[1] = t) : t = S[1];
+            let {
+                data: z
+            } = (0, s.z)(M.m, t);
+            S[2] !== k.id || S[3] !== L.shouldBlockExternalEgress ? (i = k.id.replace(/^(?:connector|plugin):/u, ""), a = (0, A.g)(i), r = !L.shouldBlockExternalEgress && /^(?:connector|plugin):.+/u.test(k.id) && null == a, d = k.id.startsWith("plugin:") && (0, o.di)(i) ? i : null, S[2] = k.id, S[3] = L.shouldBlockExternalEgress, S[4] = a, S[5] = r, S[6] = i, S[7] = d) : (a = S[4], r = S[5], i = S[6], d = S[7]);
+            let P = d;
+            S[8] === Symbol.for("react.memo_cache_sentinel") ? (u = {
+                enabled: !1
+            }, S[8] = u) : u = S[8];
+            let U = (0, s.x)(N.b, i, u),
+                $ = r ? P ?? U : null;
+            S[9] !== k.systemHint || S[10] !== i || S[11] !== z || S[12] !== L.shouldBlockExternalEgress ? (h = L.shouldBlockExternalEgress ? void 0 : k.systemHint ?? z?.[(0, p.c)(i)], S[9] = k.systemHint, S[10] = i, S[11] = z, S[12] = L.shouldBlockExternalEgress, S[13] = h) : h = S[13];
+            let R = h;
+            S[14] !== R?.name || S[15] !== i ? (f = (0, m.c)(i) ?? (0, m.c)(R?.name), S[14] = R?.name, S[15] = i, S[16] = f) : f = S[16];
+            let V = f,
+                G = a ?? V?.icon;
+            if (null == G && V?.iconUrl) {
+                let e;
+                S[17] !== V.iconUrl ? (e = (0, l.jsx)("img", {
+                    alt: "",
+                    src: V.iconUrl
+                }), S[17] = V.iconUrl, S[18] = e) : e = S[18], G = e
+            }
+            if (null == G) {
+                let e;
+                S[19] !== R ? (e = R?.logo ? (0, l.jsx)(C.a, {
+                    logo: R.logo
+                }) : (0, l.jsx)(I.a, {
+                    asset: Q.a
+                }), S[19] = R, S[20] = e) : e = S[20], G = e
+            }
+            if (S[21] !== k.id || S[22] !== k.label || S[23] !== k.promptLink || S[24] !== i) {
+                let e = b.d.shape.systemHint.safeParse(k.id);
+                x = E.a, g = y.e, v = k.promptLink ?? {
+                    href: e.success ? (0, b.g)(e.data) : (0, p.c)(i),
+                    label: e.success ? k.label : `@${k.label}`
+                }, S[21] = k.id, S[22] = k.label, S[23] = k.promptLink, S[24] = i, S[25] = x, S[26] = g, S[27] = v
+            } else x = S[25], g = S[26], v = S[27];
+            S[28] !== g || S[29] !== v ? (w = g(v), S[28] = g, S[29] = v, S[30] = w) : w = S[30];
+            let H = V?.name ?? R?.name ?? k.label;
+            S[31] !== x || S[32] !== r || S[33] !== G || S[34] !== H || S[35] !== w ? (j = (0, l.jsx)(x, {
+                dataAttributes: w,
+                icon: G,
+                interactive: r,
+                layout: "selection-pill",
+                children: H
+            }), S[31] = x, S[32] = r, S[33] = G, S[34] = H, S[35] = w, S[36] = j) : j = S[36];
+            let W = j;
+            if (!r) return W;
+            if (null == $ && k.id.startsWith("plugin:") && null != (0, o.Wg)(i)) {
+                let e, t;
+                return S[37] !== i || S[38] !== L.hostId ? (e = (0, _.a)({
+                    pluginId: i,
+                    hostId: L.hostId
+                }), S[37] = i, S[38] = L.hostId, S[39] = e) : e = S[39], S[40] !== W || S[41] !== e ? (t = (0, l.jsx)(c.g, {
+                    className: "inline cursor-interaction bg-transparent p-0 text-start align-baseline",
+                    to: e,
+                    children: W
+                }), S[40] = W, S[41] = e, S[42] = t) : t = S[42], t
+            }
+            return S[43] !== W || S[44] !== $ || S[45] !== i ? (T = (0, l.jsx)(F.a, {
+                appId: i,
+                pluginId: $,
+                children: W
+            }), S[43] = W, S[44] = $, S[45] = i, S[46] = T) : T = S[46], T
+        }
+
+        function es(e, t, a) {
+            let l = [...t.map((e, t) => ({
+                    ...e,
+                    index: t,
+                    kind: "inline"
+                })), ...a.map((e, t) => ({
+                    ...e,
+                    index: t,
+                    kind: "system-hint"
+                }))].sort((e, t) => e.startIndex - t.startIndex || t.endIndex - e.endIndex),
+                n = [],
+                r = 0;
+            for (let t of l) t.startIndex < r || t.endIndex > e.length || (n.push({
+                kind: "text",
+                startIndex: r,
+                text: e.slice(r, t.startIndex)
+            }, {
+                kind: t.kind,
+                index: t.index
+            }), r = t.endIndex);
+            return n.push({
+                kind: "text",
+                startIndex: r,
+                text: e.slice(r)
+            }), n
+        }
+    }),
+    YRXX: (function(e, t, a) {
+        a.d(t, {
+            a: () => Y,
+            b: () => Z
+        });
+        var l = a("ABep"),
+            n = a("QosV"),
+            r = a("Rzcw"),
+            i = a("BolX"),
+            s = a("zd8w"),
+            o = a("oyxz"),
+            d = a("Cslg"),
+            c = a("rS3J"),
+            m = a("ZtSy"),
+            u = a("Bbed"),
+            h = a("VL1D"),
+            f = a("RNul"),
+            p = a("SGsN"),
+            b = a("R1rp"),
+            y = a("FqCE"),
+            x = a("UxLW"),
+            g = a("ulpJ"),
+            v = a("L9GI"),
+            I = a("MExO"),
+            w = a("tSEg"),
+            j = a("hZax"),
+            T = a("WFY2"),
+            S = a("ug4w"),
+            k = a("YJm0"),
+            E = a("DrWu"),
+            F = a("dQRk"),
+            _ = a("rxj0"),
+            L = a("Ul98"),
+            M = a("f2PP"),
+            C = a("c9lJ"),
+            A = a("slpy"),
+            N = a("T0Rc"),
+            B = a("Wf1j"),
+            z = a("Sm6l"),
+            P = a("HOLv"),
+            U = a("rJql"),
+            $ = a("rvFo"),
+            R = a("zsxQ"),
+            V = a("vldH"),
+            G = a("fi73"),
+            H = a("AtSM");
+
+        function W(e) {
+            let t, a, r, s, d, c, m, u, h, y, x, g, v, I, j, S, k, E, L, C, W, J, O = (0, n.c)(86),
+                {
+                    attachment: X,
+                    conversationId: Z,
+                    tabKey: Q,
+                    target: Y
+                } = e,
+                D = (0, i.y)(w.a),
+                ee = (0, B.a)();
+            O[0] !== Z || O[1] !== D ? (t = D.get(F.S, Z), O[0] = Z, O[1] = D, O[2] = t) : t = O[2];
+            let et = t;
+            O[3] !== Z || O[4] !== D ? (a = D.get(F.Z, Z), O[3] = Z, O[4] = D, O[5] = a) : a = O[5];
+            let ea = a;
+            O[6] !== Z || O[7] !== Q ? (r = ["chatgpt-user-message-csv-preview", Z, Q], O[6] = Z, O[7] = Q, O[8] = r) : r = O[8], O[9] !== Z || O[10] !== et || O[11] !== ea || O[12] !== Y ? (s = async e => {
+                let {
+                    signal: t
+                } = e, a = await (0, V.fetchChatGptFileBlob)({
+                    conversationId: Z,
+                    gizmoId: et,
+                    sharedConversationId: ea,
+                    signal: t,
+                    target: Y
+                });
+                if (a.size > 1e6) throw Error("ChatGPT CSV attachment exceeds the preview size limit");
+                let l = await a.text();
+                return t.throwIfAborted(),
+                    function(e) {
+                        let t = arguments.length > 1 && void 0 !== arguments[1] ? arguments[1] : 1e6,
+                            a = 1,
+                            l = 1,
+                            n = 1,
+                            r = 1,
+                            i = !1;
+                        for (let t = 0; t < e.length; t += 1) {
+                            let s = e[t];
+                            if ('"' === s) {
+                                i && '"' === e[t + 1] ? t += 1 : i = !i;
+                                continue
+                            }
+                            if (!i && ("," === s ? (a += 1, l = Math.max(l, a), r += 1) : ("\n" === s || "\r" === s) && ("\r" === s && "\n" === e[t + 1] && (t += 1), a = 1, n += 1, r += 1), a > 100 || n > 1e4 || r > 1e5)) throw Error("CSV exceeds preview shape limits")
+                        }
+                        if (n * l > t) throw Error("CSV exceeds preview shape limits");
+                        return (0, U.planCsvImport)(e).values
+                    }(l)
+            }, O[9] = Z, O[10] = et, O[11] = ea, O[12] = Y, O[13] = s) : s = O[13], O[14] !== r || O[15] !== s ? (d = {
+                queryKey: r,
+                queryFn: s,
+                retry: !1,
+                staleTime: $.b.FIVE_MINUTES
+            }, O[14] = r, O[15] = s, O[16] = d) : d = O[16];
+            let {
+                data: el,
+                isError: en,
+                isLoading: er,
+                refetch: ei
+            } = (0, N.a)(d);
+            O[17] !== X.name ? (c = (X.name.split("/").at(-1) ?? "").replace(/[-_]/gu, " ").split(".")[0] ?? "", O[17] = X.name, O[18] = c) : c = O[18];
+            let es = c;
+            O[19] !== X.name || O[20] !== ee ? (m = ee.formatMessage({
+                id: "chatgpt.userMessage.csvPreview.download",
+                defaultMessage: "Download {filename}",
+                description: "Accessible label for a compact icon button in an inline CSV attachment preview. Activating the button downloads the named file. {filename} is the original user-visible filename and may be truncated elsewhere in the preview."
+            }, {
+                filename: X.name
+            }), O[19] = X.name, O[20] = ee, O[21] = m) : m = O[21];
+            let eo = m;
+            O[22] !== X.name || O[23] !== ee ? (u = ee.formatMessage({
+                id: "chatgpt.userMessage.csvPreview.open",
+                defaultMessage: "Open {filename}",
+                description: "Accessible label for a compact icon button in an inline CSV attachment preview. Activating the button opens the named file in the full file preview. {filename} is the original user-visible filename and may be truncated elsewhere in the preview."
+            }, {
+                filename: X.name
+            }), O[22] = X.name, O[23] = ee, O[24] = u) : u = O[24];
+            let ed = u;
+            O[25] !== X.name || O[26] !== Z || O[27] !== et || O[28] !== D || O[29] !== ea || O[30] !== Y ? (h = () => {
+                (0, V.a)({
+                    conversationId: Z,
+                    fileName: X.name,
+                    gizmoId: et,
+                    sharedConversationId: ea,
+                    target: Y
+                }).catch(e => {
+                    T.a.error("ChatGPT CSV attachment failed to download", {
+                        safe: {},
+                        sensitive: {
+                            error: e
+                        }
+                    }), D.get(p.f).danger((0, l.jsx)(o.a, {
+                        id: "chatgpt.userMessage.csvPreview.downloadFailed",
+                        defaultMessage: "Couldn't download this file. Try again",
+                        description: "Error shown when an attached CSV file cannot be downloaded from its inline preview"
+                    }), {
+                        errorAnalytics: {
+                            toastId: "chatgpt.userMessage.csvPreview.downloadFailed"
+                        }
+                    })
+                })
+            }, O[25] = X.name, O[26] = Z, O[27] = et, O[28] = D, O[29] = ea, O[30] = Y, O[31] = h) : h = O[31];
+            let ec = h;
+            O[32] !== X.isSharedLibraryFile || O[33] !== X.mimeType || O[34] !== X.name || O[35] !== Z || O[36] !== et || O[37] !== D || O[38] !== ea || O[39] !== Q || O[40] !== Y ? (y = () => {
+                (0, M.openChatGptFile)(D, {
+                    isAccessBlocked: e => (0, _.j)(e, Z) || !0 === X.isSharedLibraryFile && e.get(b.d),
+                    browserPreview: (0, R.a)(X.name, X.mimeType),
+                    conversationId: Z,
+                    fileName: X.name,
+                    mimeType: X.mimeType,
+                    gizmoId: et,
+                    sharedConversationId: ea,
+                    tabKey: Q,
+                    target: Y
+                }).catch(q)
+            }, O[32] = X.isSharedLibraryFile, O[33] = X.mimeType, O[34] = X.name, O[35] = Z, O[36] = et, O[37] = D, O[38] = ea, O[39] = Q, O[40] = Y, O[41] = y) : y = O[41];
+            let em = y;
+            if (er) {
+                let e, t;
+                O[42] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, l.jsx)(f.a, {
+                    "aria-hidden": !0
+                }), O[42] = e) : e = O[42], O[43] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, l.jsxs)("div", {
+                    className: "flex h-full items-center justify-center",
+                    children: [e, (0, l.jsx)("span", {
+                        className: "sr-only",
+                        children: (0, l.jsx)(o.a, {
+                            id: "chatgpt.userMessage.csvPreview.loading",
+                            defaultMessage: "Loading table preview",
+                            description: "Screen-reader status announced while an inline preview of an attached CSV file is loading in a ChatGPT conversation"
+                        })
+                    })]
+                }), O[43] = t) : t = O[43], x = t
+            } else if (en) {
+                let e, t, a, n;
+                O[44] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, l.jsx)("span", {
+                    className: "text-sm text-secondary",
+                    children: (0, l.jsx)(o.a, {
+                        id: "chatgpt.userMessage.csvPreview.error",
+                        defaultMessage: "Unable to display table preview",
+                        description: "Error message shown inside an attached CSV file preview when the table could not be downloaded or parsed"
+                    })
+                }), O[44] = e) : e = O[44], O[45] !== ei ? (t = () => void ei(), O[45] = ei, O[46] = t) : t = O[46], O[47] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, l.jsx)(o.a, {
+                    id: "chatgpt.userMessage.csvPreview.retry",
+                    defaultMessage: "Try again",
+                    description: "Button label for retrying a failed inline CSV attachment preview in a ChatGPT conversation"
+                }), O[47] = a) : a = O[47], O[48] !== t ? (n = (0, l.jsxs)("div", {
+                    className: "flex h-full flex-col items-center justify-center gap-3 px-4 text-center",
+                    role: "alert",
+                    children: [e, (0, l.jsx)(z.a, {
+                        color: "secondary",
+                        onClick: t,
+                        children: a
+                    })]
+                }), O[48] = t, O[49] = n) : n = O[49], x = n
+            } else if (null == el || 0 === el.length) {
+                let e;
+                O[50] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, l.jsx)("div", {
+                    className: "flex h-full items-center justify-center px-4 text-center text-sm text-secondary",
+                    children: (0, l.jsx)(o.a, {
+                        id: "chatgpt.userMessage.csvPreview.empty",
+                        defaultMessage: "This CSV file is empty",
+                        description: "Empty state shown inside an inline CSV attachment preview when the file contains no rows"
+                    })
+                }), O[50] = e) : e = O[50], x = e
+            } else {
+                let e, t, a;
+                O[51] !== el[0] ? (e = el[0] ?? [], O[51] = el[0], O[52] = e) : e = O[52], O[53] !== el ? (t = el.slice(1), O[53] = el, O[54] = t) : t = O[54], O[55] !== e || O[56] !== t ? (a = (0, l.jsx)(K, {
+                    columnNames: e,
+                    rows: t
+                }), O[55] = e, O[56] = t, O[57] = a) : a = O[57], x = a
+            }
+            return O[58] !== es ? (g = (0, l.jsx)("span", {
+                className: "truncate font-semibold text-default capitalize",
+                children: es
+            }), O[58] = es, O[59] = g) : g = O[59], O[60] === Symbol.for("react.memo_cache_sentinel") ? (v = (0, l.jsx)(P.a, {
+                asset: G.a
+            }), O[60] = v) : v = O[60], O[61] !== eo || O[62] !== ec ? (I = (0, l.jsx)(z.a, {
+                "aria-label": eo,
+                color: "ghost",
+                onClick: ec,
+                size: "iconCircleSm",
+                children: v
+            }), O[61] = eo, O[62] = ec, O[63] = I) : I = O[63], O[64] !== eo || O[65] !== I ? (j = (0, l.jsx)(A.a, {
+                content: eo,
+                children: I
+            }), O[64] = eo, O[65] = I, O[66] = j) : j = O[66], O[67] === Symbol.for("react.memo_cache_sentinel") ? (S = (0, l.jsx)(P.a, {
+                asset: H.a
+            }), O[67] = S) : S = O[67], O[68] !== em || O[69] !== ed ? (k = (0, l.jsx)(z.a, {
+                "aria-label": ed,
+                color: "ghost",
+                onClick: em,
+                size: "iconCircleSm",
+                children: S
+            }), O[68] = em, O[69] = ed, O[70] = k) : k = O[70], O[71] !== ed || O[72] !== k ? (E = (0, l.jsx)(A.a, {
+                content: ed,
+                children: k
+            }), O[71] = ed, O[72] = k, O[73] = E) : E = O[73], O[74] !== j || O[75] !== E ? (L = (0, l.jsxs)("span", {
+                className: "flex items-center gap-2",
+                children: [j, E]
+            }), O[74] = j, O[75] = E, O[76] = L) : L = O[76], O[77] !== g || O[78] !== L ? (C = (0, l.jsxs)("header", {
+                className: "flex h-12 items-center justify-between gap-2 px-4 select-none",
+                children: [g, L]
+            }), O[77] = g, O[78] = L, O[79] = C) : C = O[79], O[80] !== x ? (W = (0, l.jsx)("div", {
+                className: "h-72 border-t border-default",
+                children: x
+            }), O[80] = x, O[81] = W) : W = O[81], O[82] !== X.name || O[83] !== C || O[84] !== W ? (J = (0, l.jsxs)("section", {
+                className: "w-full overflow-hidden rounded-2xl border border-default bg-surface",
+                "aria-label": X.name,
+                children: [C, W]
+            }), O[82] = X.name, O[83] = C, O[84] = W, O[85] = J) : J = O[85], J
+        }
+
+        function q(e) {
+            T.a.error("ChatGPT CSV attachment failed to open", {
+                safe: {},
+                sensitive: {
+                    error: e
+                }
+            })
+        }
+
+        function K(e) {
+            let t, a, r, i, o, d, c, m, u, h, f, p, b = (0, n.c)(40),
+                {
+                    columnNames: y,
+                    rows: x
+                } = e,
+                [g, v] = (0, s.useState)(0),
+                I = Math.max(0, Math.floor(g / 40) - 5),
+                w = Math.min(x.length, I + 18);
+            if (b[0] !== y || b[1] !== I || b[2] !== w || b[3] !== x) {
+                let e, n, s, u, h = x.slice(I, w),
+                    f = 40 * I;
+                t = (x.length - w) * 40, b[12] === Symbol.for("react.memo_cache_sentinel") ? (e = e => {
+                    v(e.currentTarget.scrollTop)
+                }, b[12] = e) : e = b[12], c = "h-full overflow-auto", m = e, i = "min-w-full border-separate border-spacing-0 text-start text-sm", o = x.length + 1, b[13] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, l.jsx)("th", {
+                    className: "sticky start-0 top-0 z-20 h-10 w-10 min-w-10 border-e border-b border-default bg-surface-secondary px-2 text-end font-normal text-tertiary",
+                    "aria-hidden": !0
+                }), b[13] = n) : n = b[13], b[14] !== y ? (s = y.map(J), b[14] = y, b[15] = s) : s = b[15], b[16] !== s ? (d = (0, l.jsx)("thead", {
+                    children: (0, l.jsxs)("tr", {
+                        "aria-rowindex": 1,
+                        children: [n, s]
+                    })
+                }), b[16] = s, b[17] = d) : d = b[17], b[18] !== y.length || b[19] !== f ? (a = f > 0 ? (0, l.jsx)("tr", {
+                    "aria-hidden": !0,
+                    children: (0, l.jsx)("td", {
+                        colSpan: y.length + 1,
+                        style: {
+                            height: f
+                        }
+                    })
+                }) : null, b[18] = y.length, b[19] = f, b[20] = a) : a = b[20], b[21] !== y || b[22] !== I ? (u = (e, t) => {
+                    let a = I + t;
+                    return (0, l.jsxs)("tr", {
+                        "aria-rowindex": a + 2,
+                        children: [(0, l.jsx)("th", {
+                            className: "sticky start-0 z-10 h-10 w-10 min-w-10 border-e border-b border-default bg-surface-secondary px-2 text-end font-normal text-tertiary",
+                            scope: "row",
+                            children: a + 1
+                        }), y.map((t, a) => {
+                            let n = e[a] ?? "";
+                            return (0, l.jsx)("td", {
+                                className: "h-10 min-w-32 border-e border-b border-default px-3 text-default last:border-e-0",
+                                title: n,
+                                children: (0, l.jsx)("span", {
+                                    className: "block max-w-80 truncate",
+                                    children: n
+                                })
+                            }, a)
+                        })]
+                    }, a)
+                }, b[21] = y, b[22] = I, b[23] = u) : u = b[23], r = h.map(u), b[0] = y, b[1] = I, b[2] = w, b[3] = x, b[4] = t, b[5] = a, b[6] = r, b[7] = i, b[8] = o, b[9] = d, b[10] = c, b[11] = m
+            } else t = b[4], a = b[5], r = b[6], i = b[7], o = b[8], d = b[9], c = b[10], m = b[11];
+            return b[24] !== t || b[25] !== y.length ? (u = t > 0 ? (0, l.jsx)("tr", {
+                "aria-hidden": !0,
+                children: (0, l.jsx)("td", {
+                    colSpan: y.length + 1,
+                    style: {
+                        height: t
+                    }
+                })
+            }) : null, b[24] = t, b[25] = y.length, b[26] = u) : u = b[26], b[27] !== a || b[28] !== r || b[29] !== u ? (h = (0, l.jsxs)("tbody", {
+                children: [a, r, u]
+            }), b[27] = a, b[28] = r, b[29] = u, b[30] = h) : h = b[30], b[31] !== i || b[32] !== o || b[33] !== d || b[34] !== h ? (f = (0, l.jsxs)("table", {
+                className: i,
+                "aria-rowcount": o,
+                children: [d, h]
+            }), b[31] = i, b[32] = o, b[33] = d, b[34] = h, b[35] = f) : f = b[35], b[36] !== f || b[37] !== c || b[38] !== m ? (p = (0, l.jsx)("div", {
+                className: c,
+                onScroll: m,
+                children: f
+            }), b[36] = f, b[37] = c, b[38] = m, b[39] = p) : p = b[39], p
+        }
+
+        function J(e, t) {
+            return (0, l.jsx)("th", {
+                className: "sticky top-0 z-10 h-10 min-w-32 border-e border-b border-default bg-surface-secondary px-3 text-start font-semibold text-default last:border-e-0",
+                scope: "col",
+                title: e,
+                children: (0, l.jsx)("span", {
+                    className: "block max-w-80 truncate",
+                    children: e
+                })
+            }, `${e}-${String(t)}`)
+        }
+
+        function O(e) {
+            let t = arguments.length > 1 && void 0 !== arguments[1] && arguments[1];
+            if (e.isSharedLibraryFile && !t) return null;
+            if (null != e.mountedLibraryFileId) return {
+                fileName: e.name,
+                mimeType: e.mountedLibraryMimeType ?? e.mimeType ?? void 0,
+                mountedLibraryFileId: e.mountedLibraryFileId,
+                sourceUrl: e.sourceUrl,
+                type: "mounted-library"
+            };
+            let a = (0, V.i)(e.downloadUrl);
+            return null != a ? {
+                downloadUrl: a,
+                fileId: e.fileId ?? void 0,
+                isSharedLibraryFile: e.isSharedLibraryFile,
+                libraryFileId: e.libraryFileId ?? void 0,
+                type: "download-url"
+            } : null == e.fileId ? null : {
+                fileId: e.fileId,
+                libraryFileId: e.libraryFileId ?? void 0,
+                type: "file-id"
+            }
+        }
+        let X = (0, u.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(153380), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(204542), a.e(982651), a.e(673108), a.e(487481), a.e(229522), a.e(390575), a.e(353032), a.e(637885), a.e(469955)]).then(a.bind(a, "lUP2"))).ChatGptUserMessageAudioAttachment);
+
+        function Z(e) {
+            let t, a, r, s, o = (0, n.c)(15),
+                {
+                    attachments: c,
+                    conversationId: m,
+                    messageId: u,
+                    shouldBlockExternalEgress: h,
+                    tabKeyPrefix: f
+                } = e,
+                {
+                    accountId: p
+                } = (0, i.z)(d.m),
+                y = (0, i.z)(b.c),
+                {
+                    data: x
+                } = (0, i.x)(k.a, p);
+            o[0] !== x?.features || o[1] !== h ? (t = !h && x?.features?.includes("graphite") === !0, o[0] = x?.features, o[1] = h, o[2] = t) : t = o[2];
+            let g = t;
+            if (o[3] !== c || o[4] !== m || o[5] !== u || o[6] !== y || o[7] !== h || o[8] !== g || o[9] !== f) {
+                let e = g ? c.flatMap((e, t) => {
+                        let a = O(e, y);
+                        return e.name.trim().toLowerCase().endsWith(".csv") && null != e.sizeBytes && e.sizeBytes <= 1e6 && null != a ? [{
+                            attachment: e,
+                            attachmentIndex: t,
+                            target: a
+                        }] : []
+                    }) : [],
+                    t = new Set(e.map(Q)),
+                    n = c.flatMap((e, a) => t.has(a) ? [] : [{
+                        attachment: e,
+                        attachmentIndex: a
+                    }]);
+                a = n.length > 0 ? (0, l.jsx)("div", {
+                    className: "flex w-full flex-wrap justify-end gap-2 self-end md:w-4/5",
+                    children: n.map(e => {
+                        let {
+                            attachment: t,
+                            attachmentIndex: a
+                        } = e;
+                        return (0, l.jsx)(Y, {
+                            attachment: t,
+                            conversationId: m,
+                            messageId: u,
+                            shouldBlockExternalEgress: h,
+                            tabKey: `${f}:${String(a)}:${t.name}`
+                        }, `${t.name}-${String(a)}`)
+                    })
+                }) : null, r = e.length > 0 ? (0, l.jsx)("div", {
+                    className: "flex w-full flex-col gap-2 self-end md:w-4/5",
+                    children: e.map(e => {
+                        let {
+                            attachment: t,
+                            attachmentIndex: a,
+                            target: n
+                        } = e;
+                        return (0, l.jsx)(W, {
+                            attachment: t,
+                            conversationId: m,
+                            tabKey: `${f}:${String(a)}:${t.name}`,
+                            target: n
+                        }, `${t.name}-${String(a)}`)
+                    })
+                }) : null, o[3] = c, o[4] = m, o[5] = u, o[6] = y, o[7] = h, o[8] = g, o[9] = f, o[10] = a, o[11] = r
+            } else a = o[10], r = o[11];
+            return o[12] !== a || o[13] !== r ? (s = (0, l.jsxs)(l.Fragment, {
+                children: [a, r]
+            }), o[12] = a, o[13] = r, o[14] = s) : s = o[14], s
+        }
+
+        function Q(e) {
+            let {
+                attachmentIndex: t
+            } = e;
+            return t
+        }
+
+        function Y(e) {
+            let t, a, d, u, k, A, N, B, z, P, U, $, R, V, G, H, W, q, K, J, Z, Q, Y, D, ee = (0, n.c)(137),
+                {
+                    attachment: et,
+                    conversationId: ea,
+                    messageId: el,
+                    shouldBlockExternalEgress: en,
+                    tabKey: er,
+                    variant: ei
+                } = e,
+                es = void 0 === ei ? "card" : ei,
+                eo = (0, i.y)(w.a),
+                ed = (0, j.i)(),
+                ec = (0, i.x)(F.y, ea),
+                [em, eu] = (0, s.useState)(!1),
+                eh = (0, s.useRef)(null);
+            ee[0] === Symbol.for("react.memo_cache_sentinel") ? (t = () => () => eh.current?.abort(), a = [], ee[0] = t, ee[1] = a) : (t = ee[0], a = ee[1]), (0, s.useEffect)(t, a);
+            let ef = (0, i.z)(b.d);
+            if (ee[2] !== et || ee[3] !== ec || ee[4] !== ef || ee[5] !== en || ee[6] !== ed || ee[7] !== es) {
+                let e;
+                B = O(et, !ef), u = !en && null != B, k = "card" === es && "tpp" !== ec && "flora" !== ec && !en && null != B && (0, S.d)({
+                    fileName: et.name,
+                    mimeType: et.mountedLibraryMimeType ?? et.mimeType
+                }), d = ed.checkGate("2666007232", {
+                    disableExposureLog: !k
+                });
+                let t = et.mountedLibraryFileId ?? et.libraryFileId;
+                ee[14] !== t ? (e = (0, x.a)(t), ee[14] = t, ee[15] = e) : e = ee[15], A = e;
+                let a = u ? (0, L.a)(B, et.name, et.mimeType) : null;
+                N = null == a ? null : (0, I.d)(a)?.sourceUrl, null != a && et.isSourceReference && (N = et.sourceUrl ?? N), ee[2] = et, ee[3] = ec, ee[4] = ef, ee[5] = en, ee[6] = ed, ee[7] = es, ee[8] = d, ee[9] = u, ee[10] = k, ee[11] = A, ee[12] = N, ee[13] = B
+            } else d = ee[8], u = ee[9], k = ee[10], A = ee[11], N = ee[12], B = ee[13];
+            ee[16] !== et.isSharedLibraryFile || ee[17] !== et.isSourceReference || ee[18] !== et.libraryArtifactType || ee[19] !== et.mimeType || ee[20] !== et.mountedLibraryFileId || ee[21] !== et.mountedLibraryMimeType || ee[22] !== et.name || ee[23] !== u || ee[24] !== ea || ee[25] !== em || ee[26] !== el || ee[27] !== eo || ee[28] !== N || ee[29] !== er || ee[30] !== B ? (z = u ? e => {
+                if (et.isSourceReference && null != N && null != et.mountedLibraryFileId) return void(0, v.b)(eo, {
+                    href: N,
+                    title: et.name,
+                    libraryFileId: et.mountedLibraryFileId,
+                    mimeType: et.mimeType
+                }, e, ea);
+                if (em) return;
+                let t = new AbortController;
+                eh.current = t, eu(!0);
+                let a = (0, C.a)(eo.value.pathname);
+                (0, M.openChatGptFile)(eo, {
+                    connectedFileIntent: "open",
+                    interaction: e,
+                    isAccessBlocked: e => (0, _.j)(e, ea) || !0 === et.isSharedLibraryFile && e.get(b.d),
+                    browserPreview: !0,
+                    conversationId: ea,
+                    messageId: el,
+                    fileName: et.name,
+                    libraryArtifactType: et.libraryArtifactType,
+                    gizmoId: eo.get(F.S, ea),
+                    sharedConversationId: null != a && a.params.sharedConversationId !== ea ? null : a?.params.sharedConversationId ?? eo.get(F.Z, ea),
+                    mimeType: et.mountedLibraryMimeType ?? et.mimeType,
+                    signal: t.signal,
+                    tabKey: er,
+                    target: B
+                }).catch(e => {
+                    t.signal.aborted || et.isSharedLibraryFile && eo.get(b.d) || (T.a.warning("ChatGPT user attachment failed to open", {
+                        safe: {},
+                        sensitive: {
+                            error: e
+                        }
+                    }), eo.get(p.f).danger((0, l.jsx)(o.a, {
+                        id: "file-tile.download-failed",
+                        defaultMessage: "Failed to download file. Please try again later.",
+                        description: "Error toast when opening or downloading a file from a ChatGPT message fails"
+                    }), {
+                        errorAnalytics: {
+                            toastId: "unknown"
+                        }
+                    }))
+                }).finally(() => {
+                    eh.current = null, eu(!1)
+                })
+            } : void 0, ee[16] = et.isSharedLibraryFile, ee[17] = et.isSourceReference, ee[18] = et.libraryArtifactType, ee[19] = et.mimeType, ee[20] = et.mountedLibraryFileId, ee[21] = et.mountedLibraryMimeType, ee[22] = et.name, ee[23] = u, ee[24] = ea, ee[25] = em, ee[26] = el, ee[27] = eo, ee[28] = N, ee[29] = er, ee[30] = B, ee[31] = z) : z = ee[31];
+            let ep = z;
+            ee[32] !== ep ? (P = e => {
+                null != ep && (e.preventDefault(), ep(e))
+            }, ee[32] = ep, ee[33] = P) : P = ee[33];
+            let eb = P;
+            if (k && d) {
+                let e;
+                return ee[34] !== et || ee[35] !== ea || ee[36] !== B ? (e = (0, l.jsx)(X, {
+                    attachment: et,
+                    conversationId: ea,
+                    target: B
+                }), ee[34] = et, ee[35] = ea, ee[36] = B, ee[37] = e) : e = ee[37], e
+            }
+            if ("inline" === es) {
+                let e, t, a, n, r, i, s = et.mountedLibraryFileId ?? et.libraryFileId;
+                ee[38] !== et.fileId || ee[39] !== et.isSourceReference || ee[40] !== et.libraryArtifactType || ee[41] !== et.mimeType || ee[42] !== et.mountedLibraryMimeType || ee[43] !== et.name || ee[44] !== et.sourceUrl || ee[45] !== s ? (e = null == s ? void 0 : (0, c.e)({
+                    label: et.name,
+                    href: (0, y.c)({
+                        fileId: et.fileId ?? "",
+                        libraryArtifactType: et.libraryArtifactType ?? "",
+                        libraryFileId: s,
+                        mimeType: et.mountedLibraryMimeType ?? et.mimeType ?? "",
+                        ...et.isSourceReference ? {
+                            sourceUrl: et.sourceUrl,
+                            serializeAsUrl: !0
+                        } : {}
+                    })
+                }), ee[38] = et.fileId, ee[39] = et.isSourceReference, ee[40] = et.libraryArtifactType, ee[41] = et.mimeType, ee[42] = et.mountedLibraryMimeType, ee[43] = et.name, ee[44] = et.sourceUrl, ee[45] = s, ee[46] = e) : e = ee[46];
+                let o = e;
+                ee[47] !== et.libraryArtifactType || ee[48] !== et.libraryFileId || ee[49] !== et.mimeType || ee[50] !== et.mountedLibraryFileId || ee[51] !== et.mountedLibraryMimeType || ee[52] !== et.name || ee[53] !== et.sourceUrl || ee[54] !== em || ee[55] !== A ? (t = em ? (0, l.jsx)(f.a, {
+                    as: "span",
+                    className: "size-4"
+                }) : (0, l.jsx)(g.a, {
+                    fileName: et.name,
+                    libraryArtifactType: et.libraryArtifactType,
+                    mimeType: et.mimeType ?? void 0,
+                    provider: A,
+                    sourceMimeType: et.mountedLibraryMimeType ?? void 0,
+                    mountedLibraryFileId: et.mountedLibraryFileId ?? et.libraryFileId,
+                    sourceUrl: et.sourceUrl ?? void 0,
+                    style: "message-inline"
+                }), ee[47] = et.libraryArtifactType, ee[48] = et.libraryFileId, ee[49] = et.mimeType, ee[50] = et.mountedLibraryFileId, ee[51] = et.mountedLibraryMimeType, ee[52] = et.name, ee[53] = et.sourceUrl, ee[54] = em, ee[55] = A, ee[56] = t) : t = ee[56], ee[57] !== et ? (a = 0 === (0, E.h)(et).length ? et.name : (0, E.g)(et.name), ee[57] = et, ee[58] = a) : a = ee[58], ee[59] !== a ? (n = (0, l.jsx)("span", {
+                    className: "max-w-64 self-baseline truncate",
+                    children: a
+                }), ee[59] = a, ee[60] = n) : n = ee[60], ee[61] !== t || ee[62] !== n ? (r = (0, l.jsxs)(l.Fragment, {
+                    children: [t, n]
+                }), ee[61] = t, ee[62] = n, ee[63] = r) : r = ee[63];
+                let d = r;
+                if (null != N) {
+                    let e;
+                    return ee[64] !== et.name || ee[65] !== d || ee[66] !== o || ee[67] !== eb || ee[68] !== N ? (e = (0, l.jsx)(m.a, {
+                        ...o,
+                        className: "inline-flex max-w-full cursor-interaction items-center gap-1 rounded-sm px-1 py-0 align-baseline font-medium whitespace-nowrap focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0 focus-visible:outline-none",
+                        "aria-label": et.name,
+                        href: N,
+                        initiator: "sites_library",
+                        showHoverActions: !0,
+                        tooltipContent: et.name,
+                        onUnmodifiedClick: eb,
+                        children: d
+                    }), ee[64] = et.name, ee[65] = d, ee[66] = o, ee[67] = eb, ee[68] = N, ee[69] = e) : e = ee[69], e
+                }
+                return ee[70] !== et.name || ee[71] !== u || ee[72] !== d || ee[73] !== o || ee[74] !== em || ee[75] !== ep ? (i = u ? (0, l.jsx)("button", {
+                    ...o,
+                    type: "button",
+                    className: "inline-flex max-w-full cursor-interaction items-center gap-1 rounded-sm px-1 py-0 align-baseline font-medium whitespace-nowrap focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-0 focus-visible:outline-none",
+                    "aria-busy": em,
+                    "aria-label": et.name,
+                    disabled: em,
+                    onClick: ep,
+                    children: d
+                }) : (0, l.jsx)("span", {
+                    ...o,
+                    className: "inline-flex max-w-full items-center gap-1 rounded-sm px-1 py-0 align-baseline font-medium whitespace-nowrap",
+                    children: d
+                }), ee[70] = et.name, ee[71] = u, ee[72] = d, ee[73] = o, ee[74] = em, ee[75] = ep, ee[76] = i) : i = ee[76], i
+            }
+            if (ee[77] !== et.libraryArtifactType || ee[78] !== et.libraryFileId || ee[79] !== et.mimeType || ee[80] !== et.mountedLibraryFileId || ee[81] !== et.mountedLibraryMimeType || ee[82] !== et.name || ee[83] !== et.sourceUrl || ee[84] !== u || ee[85] !== em || ee[86] !== ep || ee[87] !== eb || ee[88] !== A || ee[89] !== N) {
+                let e = (0, r.f)({
+                        fileName: et.name,
+                        mimeType: et.mimeType ?? void 0
+                    }),
+                    t = null;
+                if (null != N) {
+                    let e;
+                    ee[100] !== et.name || ee[101] !== eb || ee[102] !== N ? (e = (0, l.jsx)(h.b, {
+                        "aria-label": et.name,
+                        href: N,
+                        initiator: "sites_library",
+                        showHoverActions: !0,
+                        tooltipContent: et.name,
+                        onUnmodifiedClick: eb
+                    }), ee[100] = et.name, ee[101] = eb, ee[102] = N, ee[103] = e) : e = ee[103], t = e
+                } else if (u) {
+                    let e;
+                    ee[104] !== et.name || ee[105] !== em || ee[106] !== ep ? (e = (0, l.jsx)(h.b, {
+                        "aria-busy": em,
+                        "aria-label": et.name,
+                        disabled: em,
+                        onClick: ep
+                    }), ee[104] = et.name, ee[105] = em, ee[106] = ep, ee[107] = e) : e = ee[107], t = e
+                }
+                R = h.a, G = "span", H = "file-tile", J = "group/resource-card relative", V = t, $ = h.h, q = "pointer-events-none relative z-10", ee[108] !== et.libraryArtifactType || ee[109] !== et.libraryFileId || ee[110] !== et.mimeType || ee[111] !== et.mountedLibraryFileId || ee[112] !== et.mountedLibraryMimeType || ee[113] !== et.name || ee[114] !== et.sourceUrl || ee[115] !== em || ee[116] !== A ? (K = (0, l.jsx)("span", {
+                    className: "flex size-10 items-center justify-center overflow-hidden rounded-xl",
+                    children: em ? (0, l.jsx)(f.a, {
+                        as: "span",
+                        className: "size-5"
+                    }) : (0, l.jsx)(g.a, {
+                        fileName: et.name,
+                        libraryArtifactType: et.libraryArtifactType,
+                        mimeType: et.mimeType ?? void 0,
+                        provider: A,
+                        sourceMimeType: et.mountedLibraryMimeType ?? void 0,
+                        mountedLibraryFileId: et.mountedLibraryFileId ?? et.libraryFileId,
+                        sourceUrl: et.sourceUrl ?? void 0,
+                        style: "message-card"
+                    })
+                }), ee[108] = et.libraryArtifactType, ee[109] = et.libraryFileId, ee[110] = et.mimeType, ee[111] = et.mountedLibraryFileId, ee[112] = et.mountedLibraryMimeType, ee[113] = et.name, ee[114] = et.sourceUrl, ee[115] = em, ee[116] = A, ee[117] = K) : K = ee[117], U = o.a, W = (0, r.d)(e.category), ee[77] = et.libraryArtifactType, ee[78] = et.libraryFileId, ee[79] = et.mimeType, ee[80] = et.mountedLibraryFileId, ee[81] = et.mountedLibraryMimeType, ee[82] = et.name, ee[83] = et.sourceUrl, ee[84] = u, ee[85] = em, ee[86] = ep, ee[87] = eb, ee[88] = A, ee[89] = N, ee[90] = U, ee[91] = $, ee[92] = R, ee[93] = V, ee[94] = G, ee[95] = H, ee[96] = W, ee[97] = q, ee[98] = K, ee[99] = J
+            } else U = ee[90], $ = ee[91], R = ee[92], V = ee[93], G = ee[94], H = ee[95], W = ee[96], q = ee[97], K = ee[98], J = ee[99];
+            ee[118] !== U || ee[119] !== W ? (Z = (0, l.jsx)(U, {
+                ...W
+            }), ee[118] = U, ee[119] = W, ee[120] = Z) : Z = ee[120];
+            let ey = null == N ? et.name : void 0;
+            return ee[121] !== $ || ee[122] !== et.name || ee[123] !== Z || ee[124] !== ey || ee[125] !== q || ee[126] !== K ? (Q = (0, l.jsx)($, {
+                className: q,
+                icon: K,
+                subtitle: Z,
+                title: et.name,
+                titleTooltip: ey,
+                variant: "file-tile"
+            }), ee[121] = $, ee[122] = et.name, ee[123] = Z, ee[124] = ey, ee[125] = q, ee[126] = K, ee[127] = Q) : Q = ee[127], ee[128] !== V || ee[129] !== Q || ee[130] !== J ? (Y = (0, l.jsxs)("span", {
+                className: J,
+                children: [V, Q]
+            }), ee[128] = V, ee[129] = Q, ee[130] = J, ee[131] = Y) : Y = ee[131], ee[132] !== R || ee[133] !== G || ee[134] !== H || ee[135] !== Y ? (D = (0, l.jsx)(R, {
+                as: G,
+                variant: H,
+                children: Y
+            }), ee[132] = R, ee[133] = G, ee[134] = H, ee[135] = Y, ee[136] = D) : D = ee[136], D
+        }
+    }),
+    Aa8X: (function(e, t, a) {
+        var l = a("ABep"),
+            n = a("QosV"),
+            r = a("oyxz"),
+            i = a("zjpG"),
+            s = a("bf6R");
+        a.d(t, {}, {
+            a: function(e) {
+                let t, a, o, d, c, m, u = (0, n.c)(14),
+                    {
+                        settings: h
+                    } = e,
+                    {
+                        style_label: f,
+                        aspect_ratio: p,
+                        image_count: b
+                    } = h;
+                if (!f && null == p && null == b) return null;
+                u[0] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, l.jsxs)(l.Fragment, {
+                    children: [" ", (0, l.jsx)(i.a, {}), " "]
+                }), u[0] = t) : t = u[0];
+                let y = t;
+                u[1] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, l.jsx)(s.wh, {}), u[1] = a) : a = u[1], u[2] !== f ? (o = f && (0, l.jsx)("bdi", {
+                    children: f
+                }), u[2] = f, u[3] = o) : o = u[3];
+                let x = f && null != p ? y : null;
+                u[4] !== p ? (d = null != p && (0, l.jsx)("bdi", {
+                    children: "auto" === p ? (0, l.jsx)(r.a, {
+                        id: "chatgptConversations.imageOptions.sent.autoRatio",
+                        defaultMessage: "Auto",
+                        description: "Short label above a sent image prompt indicating that the image model was allowed to choose its aspect ratio"
+                    }) : p
+                }), u[4] = p, u[5] = d) : d = u[5];
+                let g = (f || null != p) && null != b ? y : null;
+                return u[6] !== b ? (c = null != b && (0, l.jsx)("bdi", {
+                    children: (0, l.jsx)(r.a, {
+                        id: "chatgptConversations.imageOptions.sent.count",
+                        defaultMessage: "{count, plural, one {# image} other {# images}}",
+                        description: "Number of images the user requested, shown above their sent image prompt alongside the selected style and aspect ratio",
+                        values: {
+                            count: b
+                        }
+                    })
+                }), u[6] = b, u[7] = c) : c = u[7], u[8] !== o || u[9] !== x || u[10] !== d || u[11] !== g || u[12] !== c ? (m = (0, l.jsxs)("div", {
+                    role: "note",
+                    className: "flex max-w-[70%] items-center gap-1.5 self-end pe-3 text-sm text-secondary",
+                    children: [a, (0, l.jsxs)("span", {
+                        className: "min-w-0 text-end break-words",
+                        children: [o, x, d, g, c]
+                    })]
+                }), u[8] = o, u[9] = x, u[10] = d, u[11] = g, u[12] = c, u[13] = m) : m = u[13], m
+            }
+        })
+    }),
+    R1rp: (function(e, t, a) {
+        a.d(t, {
+            a: () => c,
+            b: () => d,
+            c: () => m,
+            d: () => u
+        });
+        var l = a("BolX"),
+            n = a("OWtl"),
+            r = a("twmu"),
+            i = a("Cslg");
+        let s = (0, l.c)(n.a, e => {
+                let {
+                    get: t
+                } = e, a = t(i.f);
+                if (null != a && "allowed" === t(i.n)) return t(r.b, a).data?.accounts[a]?.features
+            }),
+            o = (0, l.c)(n.a, e => {
+                let {
+                    get: t
+                } = e, a = t(i.n);
+                return "loading" === a || "allowed" === a && t(r.b, t(i.f)).isPending
+            }),
+            d = (0, l.c)(n.a, () => !1),
+            c = (0, l.c)(n.a, () => !1),
+            m = (0, l.c)(n.a, e => {
+                let {
+                    get: t
+                } = e;
+                return t(s)?.includes("library_shared_content_available") === !0
+            }),
+            u = (0, l.c)(n.a, e => {
+                let {
+                    get: t
+                } = e;
+                return !t(o) && !t(m)
+            })
+    })
+};
