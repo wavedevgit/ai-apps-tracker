@@ -13,10 +13,10 @@ export const __webpack_modules__ = {
             i = a("BolX"),
             c = a("zd8w"),
             d = a("oyxz"),
-            f = a("Qgfj"),
-            l = a("fVs5"),
+            l = a("Qgfj"),
+            m = a("fVs5"),
             u = a("Cslg"),
-            m = a("zOE4"),
+            f = a("zOE4"),
             p = a("OWtl"),
             L = a("OMIV"),
             h = a("AXDI");
@@ -28,10 +28,10 @@ export const __webpack_modules__ = {
             } = e, {
                 get: C,
                 scope: i
-            } = t, c = C(u.m), d = C(L.d, o.c), f = C(L.g, o.c), l = c.authenticatedAccountId, m = c.authenticatedUserId, p = "personal" === c.accountStructure ? m : c.accountUserId, h = d && "chatgpt" === c.authMethod && c.hasChatGptToken;
+            } = t, c = C(u.m), d = C(L.d, o.c), l = C(L.g, o.c), m = c.authenticatedAccountId, f = c.authenticatedUserId, p = "personal" === c.accountStructure ? f : c.accountUserId, h = d && "chatgpt" === c.authMethod && c.hasChatGptToken;
             return {
-                queryKey: ["business-profile-agent-preview", a, s, r, l, m, p, h],
-                enabled: !f && !c.authLoading && !c.accountLoading,
+                queryKey: ["business-profile-agent-preview", a, s, r, m, f, p, h],
+                enabled: !l && !c.authLoading && !c.accountLoading,
                 gcTime: 0,
                 staleTime: 1 / 0,
                 retry: !1,
@@ -41,59 +41,57 @@ export const __webpack_modules__ = {
                     let {
                         signal: t
                     } = e;
-                    if (!h || !l || !m) throw Error("Preview unavailable");
+                    if (!h || !m || !f) throw Error("Preview unavailable");
                     let r = await (0, n.a)({
-                        accountId: l,
-                        userId: m,
+                        accountId: m,
+                        userId: f,
                         profileId: a
                     }, s, p ?? void 0, t);
                     t.throwIfAborted();
                     let C = i.get(u.m);
-                    if (C.authLoading || C.accountLoading || "chatgpt" !== C.authMethod || !C.hasChatGptToken || C.authenticatedAccountId !== l || C.authenticatedUserId !== m || ("personal" === C.accountStructure ? m : C.accountUserId) !== p || !i.get(L.d, o.c)) throw Error("Preview unavailable");
+                    if (C.authLoading || C.accountLoading || "chatgpt" !== C.authMethod || !C.hasChatGptToken || C.authenticatedAccountId !== m || C.authenticatedUserId !== f || ("personal" === C.accountStructure ? f : C.accountUserId) !== p || !i.get(L.d, o.c)) throw Error("Preview unavailable");
                     return r
                 }
             }
         });
 
         function b(e) {
-            let t, a, o, n, f = (0, C.c)(10),
+            let t, a, o, n, l = (0, C.c)(10),
                 {
-                    profileId: l,
+                    profileId: m,
                     agentId: u
                 } = e,
                 {
-                    key: m
+                    key: f
                 } = (0, s.Y)();
-            f[0] !== u || f[1] !== m || f[2] !== l ? (t = {
-                profileId: l,
+            l[0] !== u || l[1] !== f || l[2] !== m ? (t = {
+                profileId: m,
                 agentId: u,
-                navigationKey: m
-            }, f[0] = u, f[1] = m, f[2] = l, f[3] = t) : t = f[3];
+                navigationKey: f
+            }, l[0] = u, l[1] = f, l[2] = m, l[3] = t) : t = l[3];
             let p = (0, i.x)(g, t);
-            if (f[4] !== p.data || f[5] !== p.isSuccess ? (a = () => {
+            if (l[4] !== p.data || l[5] !== p.isSuccess ? (a = () => {
                     p.isSuccess && window.location.replace(p.data)
-                }, o = [p.isSuccess, p.data], f[4] = p.data, f[5] = p.isSuccess, f[6] = a, f[7] = o) : (a = f[6], o = f[7]), (0, c.useEffect)(a, o), !p.isError) {
+                }, o = [p.isSuccess, p.data], l[4] = p.data, l[5] = p.isSuccess, l[6] = a, l[7] = o) : (a = l[6], o = l[7]), (0, c.useEffect)(a, o), !p.isError) {
                 let e;
-                return f[8] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, r.jsx)(j, {}), f[8] = e) : e = f[8], e
+                return l[8] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, r.jsx)(j, {}), l[8] = e) : e = l[8], e
             }
-            return f[9] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, r.jsx)("div", {
+            return l[9] === Symbol.for("react.memo_cache_sentinel") ? (n = (0, r.jsx)("div", {
                 role: "alert",
                 children: (0, r.jsx)(d.a, {
                     id: "businessHub.agentPreview.unavailable",
-                    defaultMessage: "Preview unavailable",
-                    description: "Shown when a signed-in Business Hub user cannot open this agent preview."
+                    defaultMessage: "Preview unavailable"
                 })
-            }), f[9] = n) : n = f[9], n
+            }), l[9] = n) : n = l[9], n
         }
-        let w = (0, f.e)({
+        let w = (0, l.e)({
                 id: "businessHub.agentPreview.opening",
-                defaultMessage: "Opening preview…",
-                description: "Shown while opening the saved Business Hub agent in ChatGPT."
+                defaultMessage: "Opening preview…"
             }),
             j = (0, s.jb)(function() {
                 let e, t, a = (0, C.c)(4),
-                    s = (0, c.useContext)(l.a);
-                return a[0] !== s ? (e = s?.formatMessage(w) ?? w.defaultMessage, a[0] = s, a[1] = e) : e = a[1], a[2] !== e ? (t = (0, r.jsx)(m.LoadingPage, {
+                    s = (0, c.useContext)(m.a);
+                return a[0] !== s ? (e = s?.formatMessage(w) ?? w.defaultMessage, a[0] = s, a[1] = e) : e = a[1], a[2] !== e ? (t = (0, r.jsx)(f.LoadingPage, {
                     fillParent: !0,
                     delay: !1,
                     debugName: "BusinessHubAgentPreview",
@@ -129,55 +127,57 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.acefa13d1a.js";
-import * as t from "./418851.4b043c43bc.js";
+} from "./633146.4981d79ae4.js";
+import * as t from "./418851.7f18e986d5.js";
 e.C(t);
 import * as a from "./109308.e66696cd0d.js";
 e.C(a);
-import * as s from "./399565.2fc4679b26.js";
+import * as s from "./399565.6af208675d.js";
 e.C(s);
 import * as r from "./257798.b51742efd5.js";
 e.C(r);
-import * as C from "./447351.496da706c3.js";
+import * as C from "./447351.7f028af5cc.js";
 e.C(C);
-import * as o from "./617936.dcbf382e63.js";
+import * as o from "./617936.e33610e0b9.js";
 e.C(o);
-import * as n from "./807489.7f5d47cb0e.js";
+import * as n from "./807489.b2a4c99bd1.js";
 e.C(n);
-import * as i from "./337882.f22d43d615.js";
+import * as i from "./337882.240014b3db.js";
 e.C(i);
-import * as c from "./955979.d659318431.js";
+import * as c from "./955979.cac5f7aa7e.js";
 e.C(c);
-import * as d from "./646436.30c2553f0b.js";
+import * as d from "./646436.b849db233f.js";
 e.C(d);
-import * as f from "./7078.5cd07a5c9b.js";
-e.C(f);
-import * as l from "./200429.82d37d45f2.js";
+import * as l from "./7078.73ded76a8d.js";
 e.C(l);
-import * as u from "./698524.1d78dbab32.js";
-e.C(u);
-import * as m from "./956483.4fffedad3f.js";
+import * as m from "./200429.f68bf8c5d0.js";
 e.C(m);
-import * as p from "./87162.ceb3023033.js";
+import * as u from "./698524.5c1f88ec3d.js";
+e.C(u);
+import * as f from "./956483.da8bcbe744.js";
+e.C(f);
+import * as p from "./87162.47f0360b7c.js";
 e.C(p);
-import * as L from "./396705.74bbf371c4.js";
+import * as L from "./396705.bfc19c0c6a.js";
 e.C(L);
-import * as h from "./155568.8fe9b1a879.js";
+import * as h from "./155568.fb329e6a3b.js";
 e.C(h);
-import * as g from "./731863.e2c3850b56.js";
+import * as g from "./731863.850a24e1c0.js";
 e.C(g);
-import * as b from "./767086.e730a8ccb4.js";
+import * as b from "./767086.b68e569328.js";
 e.C(b);
-import * as w from "./76629.0f4df00a80.js";
+import * as w from "./76629.ca4c17c8af.js";
 e.C(w);
-import * as j from "./226913.27c93050ff.js";
+import * as j from "./514085.6514ba1a89.js";
 e.C(j);
-import * as v from "./971092.bf3d39bfab.js";
+import * as v from "./226913.27c93050ff.js";
 e.C(v);
-var V = e(e.s = "gUP7"),
-    _ = V.a,
-    M = V.b;
+import * as V from "./971092.cf80816235.js";
+e.C(V);
+var _ = e(e.s = "gUP7"),
+    M = _.a,
+    x = _.b;
 export {
-    _ as HydrateFallback, M as
+    M as HydrateFallback, x as
     default
 };

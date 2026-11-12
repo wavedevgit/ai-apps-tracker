@@ -11,193 +11,155 @@ export const __webpack_modules__ = {
         let s = (0, i("Qgfj").f)({
             pageTitle: {
                 id: "advancedAccountSecurity.pageTitle",
-                defaultMessage: "Advanced Account Security - OpenAI",
-                description: "Browser title for the Advanced Account Security page"
+                defaultMessage: "Advanced Account Security - OpenAI"
             },
             pageDescription: {
                 id: "advancedAccountSecurity.pageDescription.v2",
-                defaultMessage: "Extra protection for people at increased risk of phishing, account takeover, and other targeted online attacks.",
-                description: "Meta description for the refreshed Advanced Account Security landing page"
+                defaultMessage: "Extra protection for people at increased risk of phishing, account takeover, and other targeted online attacks."
             },
             title: {
                 id: "advancedAccountSecurity.title.v2",
-                defaultMessage: "Advanced Account Security",
-                description: "Title for the Advanced Account Security landing page"
+                defaultMessage: "Advanced Account Security"
             },
             subtitle: {
                 id: "advancedAccountSecurity.subtitle.v2",
-                defaultMessage: "Advanced Account Security uses stronger sign-in protections and additional safeguards to help prevent unauthorized access to your account.",
-                description: "Introductory copy for the Advanced Account Security page"
+                defaultMessage: "Advanced Account Security uses stronger sign-in protections and additional safeguards to help prevent unauthorized access to your account."
             },
             topCta: {
                 id: "advancedAccountSecurity.topCta.v2",
-                defaultMessage: "Enroll",
-                description: "Top primary CTA on the Advanced Account Security page"
+                defaultMessage: "Enroll"
             },
             signOutNotice: {
                 id: "advancedAccountSecurity.signOutNotice.v2",
-                defaultMessage: "Enrolling signs you out everywhere and disconnects your paired Codex devices. You’ll need to sign in and pair them again.",
-                description: "Short helper text shown below both enrollment buttons on the Advanced Account Security landing page. It warns people considering enrollment that enabling the feature signs them out everywhere, disconnects their paired Codex devices, and requires them to sign in and pair those devices again."
+                defaultMessage: "Enrolling signs you out everywhere and disconnects your paired Codex devices. You’ll need to sign in and pair them again."
             },
             whyChooseTitle: {
                 id: "advancedAccountSecurity.whyChooseTitle.v3",
-                defaultMessage: "Protect your account from takeovers",
-                description: "Section H2 above the hero image; headline means protect your account from account takeover (ATO) attacks."
+                defaultMessage: "Protect your account from takeovers"
             },
             whyChooseDescription: {
                 id: "advancedAccountSecurity.whyChooseDescription.v3",
-                defaultMessage: "Advanced Account Security adds stronger defenses to stop attackers from signing in—even if someone has your password.",
-                description: "Description for the why choose section"
+                defaultMessage: "Advanced Account Security adds stronger defenses to stop attackers from signing in—even if someone has your password."
             },
             heroAlt: {
                 id: "advancedAccountSecurity.heroAlt.v3",
-                defaultMessage: "Illustrated desktop ChatGPT security settings showing trusted devices and security keys and passkeys.",
-                description: "Alt text for the Advanced Account Security hero image"
+                defaultMessage: "Illustrated desktop ChatGPT security settings showing trusted devices and security keys and passkeys."
             },
             whoTitle: {
                 id: "advancedAccountSecurity.whoTitle.v2",
-                defaultMessage: "Who this is for",
-                description: "Heading for the audience description section"
+                defaultMessage: "Who this is for"
             },
             whoDescription: {
                 id: "advancedAccountSecurity.whoDescription.v3",
-                defaultMessage: "For anyone who wants elevated protection against account takeover—including targeted attacks like phishing and stolen passwords. Stronger sign-in and recovery checks help reduce takeover risk, with extra verification when it matters.",
-                description: "Audience blurb; account takeover means ATO attacks such as phishing and stolen passwords. Extra verification when it matters means during high-risk events such as new devices, unusual activity, or sensitive changes."
+                defaultMessage: "For anyone who wants elevated protection against account takeover—including targeted attacks like phishing and stolen passwords. Stronger sign-in and recovery checks help reduce takeover risk, with extra verification when it matters."
             },
             featuresTitle: {
                 id: "advancedAccountSecurity.featuresTitle.v2",
-                defaultMessage: "Additional account protections when you enroll",
-                description: "Heading above the feature cards section"
+                defaultMessage: "Additional account protections when you enroll"
             },
             strongerSignInTitle: {
                 id: "advancedAccountSecurity.strongerSignInTitle.v2",
-                defaultMessage: "Stronger sign-in methods",
-                description: "Title for the stronger sign-in methods card"
+                defaultMessage: "Stronger sign-in methods"
             },
             strongerSignInDescription: {
                 id: "advancedAccountSecurity.strongerSignInDescription.v3",
-                defaultMessage: "Security keys and passkeys make phishing-resistant sign-in the default, preventing attackers from signing in even with a stolen password.",
-                description: "Description for the stronger sign-in methods card"
+                defaultMessage: "Security keys and passkeys make phishing-resistant sign-in the default, preventing attackers from signing in even with a stolen password."
             },
             recoveryTitle: {
                 id: "advancedAccountSecurity.recoveryTitle.v2",
-                defaultMessage: "Stricter account recovery",
-                description: "Title for the stricter account recovery card"
+                defaultMessage: "Stricter account recovery"
             },
             recoveryDescription: {
                 id: "advancedAccountSecurity.recoveryDescription.v2",
-                defaultMessage: "Recovery options are more secure to help prevent attackers from taking over your account.",
-                description: "Description for the stricter account recovery card"
+                defaultMessage: "Recovery options are more secure to help prevent attackers from taking over your account."
             },
             trainingTitle: {
                 id: "advancedAccountSecurity.trainingTitle.v3",
-                defaultMessage: "Protect sensitive conversations",
-                description: "Title for the sensitive conversations protection card"
+                defaultMessage: "Protect sensitive conversations"
             },
             trainingDescription: {
                 id: "advancedAccountSecurity.trainingDescription.v4",
-                defaultMessage: "Conversations aren’t used to train OpenAI models while Advanced Account Security is enabled.",
-                description: "Card description; train refers to machine learning model training. User conversations are excluded from ML training while Advanced Account Security is enabled."
+                defaultMessage: "Conversations aren’t used to train OpenAI models while Advanced Account Security is enabled."
             },
             shorterSessionsTitle: {
                 id: "advancedAccountSecurity.shorterSessionsTitle.v2",
-                defaultMessage: "Shorter sign-in sessions",
-                description: "Title for feature that shortens session duration and requires more frequent reauthentication."
+                defaultMessage: "Shorter sign-in sessions"
             },
             shorterSessionsDescription: {
                 id: "advancedAccountSecurity.shorterSessionsDescription.v2",
-                defaultMessage: "Requires signing in again periodically to reduce the time an attacker can use stolen credentials.",
-                description: "Card description; sessions expire after a shorter fixed duration, requiring time-based reauthentication."
+                defaultMessage: "Requires signing in again periodically to reduce the time an attacker can use stolen credentials."
             },
             loginProtectionsTitle: {
                 id: "advancedAccountSecurity.loginProtectionsTitle.v3",
-                defaultMessage: "Login alerts",
-                description: "Title for the login alerts card"
+                defaultMessage: "Login alerts"
             },
             loginProtectionsDescription: {
                 id: "advancedAccountSecurity.loginProtectionsDescription.v3",
-                defaultMessage: "Get notified when your account is signed in on a new device so you can quickly review and take action.",
-                description: "Description for the login alerts card"
+                defaultMessage: "Get notified when your account is signed in on a new device so you can quickly review and take action."
             },
             visibilityTitle: {
                 id: "advancedAccountSecurity.visibilityTitle.v3",
-                defaultMessage: "More visibility",
-                description: "Title for the account activity visibility card; user can see where they are signed in and manage active sessions."
+                defaultMessage: "More visibility"
             },
             visibilityDescription: {
                 id: "advancedAccountSecurity.visibilityDescription.v2",
-                defaultMessage: "See where your account is signed in and review or sign out of active sessions.",
-                description: "Description for the visibility and control card"
+                defaultMessage: "See where your account is signed in and review or sign out of active sessions."
             },
             yubikeyTitle: {
                 id: "advancedAccountSecurity.yubikeyTitle.v3",
-                defaultMessage: "Use security keys for our strongest phishing-resistant protection",
-                description: "Heading for the security key callout"
+                defaultMessage: "Use security keys for our strongest phishing-resistant protection"
             },
             yubikeyDescription: {
                 id: "advancedAccountSecurity.yubikeyDescription.v2",
-                defaultMessage: "A physical security key adds an extra layer of defense and helps protect your account even if your password is exposed. You can use any compatible FIDO® security key. During setup, you’ll also have the option to purchase a set of two best in class security keys at preferred pricing through our partnership with Yubico.",
-                description: "Description for the security key callout"
+                defaultMessage: "A physical security key adds an extra layer of defense and helps protect your account even if your password is exposed. You can use any compatible FIDO® security key. During setup, you’ll also have the option to purchase a set of two best in class security keys at preferred pricing through our partnership with Yubico."
             },
             readyTitle: {
                 id: "advancedAccountSecurity.readyTitle.v2",
-                defaultMessage: "Ready to enroll?",
-                description: "Heading for the final CTA section"
+                defaultMessage: "Ready to enroll?"
             },
             readyDescription: {
                 id: "advancedAccountSecurity.readyDescription.v2",
-                defaultMessage: "Set up stronger protection for your ChatGPT account in a few steps.",
-                description: "Description for the final CTA section"
+                defaultMessage: "Set up stronger protection for your ChatGPT account in a few steps."
             },
             readyUpdateNotice: {
                 id: "advancedAccountSecurity.readyUpdateNotice",
-                defaultMessage: "To ensure you get the latest security features, update ChatGPT on your devices before you enroll.",
-                description: "Second line in the final CTA section telling users to update ChatGPT before enrollment."
+                defaultMessage: "To ensure you get the latest security features, update ChatGPT on your devices before you enroll."
             },
             readyButton: {
                 id: "advancedAccountSecurity.readyButton.v2",
-                defaultMessage: "Enroll in Advanced Account Security",
-                description: "Primary CTA in the final section; starts enrollment in the Advanced Account Security feature."
+                defaultMessage: "Enroll in Advanced Account Security"
             },
             backToChatgpt: {
                 id: "advancedAccountSecurity.backToChatgpt",
-                defaultMessage: "Back to ChatGPT",
-                description: "Link label to return to ChatGPT settings from the Advanced Account Security landing page"
+                defaultMessage: "Back to ChatGPT"
             },
             backToCyber: {
                 id: "advancedAccountSecurity.backToDaybreak",
-                defaultMessage: "Back to Daybreak",
-                description: "Link label and accessible label on the Advanced Account Security landing page when the Daybreak application sent the user here. Returns to the cybersecurity eligibility page without starting enrollment. Daybreak is the program's brand name and stays untranslated. Short navigation label."
+                defaultMessage: "Back to Daybreak"
             },
             topLeftChatgptHome: {
                 id: "advancedAccountSecurity.topLeftChatgptHome",
-                defaultMessage: "ChatGPT home",
-                description: "Accessible label for the top-left ChatGPT wordmark link on the Advanced Account Security landing page"
+                defaultMessage: "ChatGPT home"
             },
             warningTitle: {
                 id: "advancedAccountSecurity.warningTitle.v2",
-                defaultMessage: "Important tradeoffs",
-                description: "Title for the bottom warning callout"
+                defaultMessage: "Important tradeoffs"
             },
             warningDescription: {
                 id: "advancedAccountSecurity.warningDescription.v4",
-                defaultMessage: "Turning on Advanced Account Security signs you out everywhere and disconnects your paired Codex devices. You’ll need to pair those devices again. Recovery options are more limited, which can make account recovery harder.",
-                description: "Multi-sentence body text in the warning callout near the bottom of the Advanced Account Security enrollment landing page. It tells people considering enrollment that enabling the feature signs them out everywhere, temporarily requires them to pair connected Codex devices again, and limits account recovery options."
+                defaultMessage: "Turning on Advanced Account Security signs you out everywhere and disconnects your paired Codex devices. You’ll need to pair those devices again. Recovery options are more limited, which can make account recovery harder."
             },
             terms: {
                 id: "advancedAccountSecurity.terms",
-                defaultMessage: "Terms of use",
-                description: "Terms of use footer link label"
+                defaultMessage: "Terms of use"
             },
             privacy: {
                 id: "advancedAccountSecurity.privacy",
-                defaultMessage: "Privacy policy",
-                description: "Privacy policy footer link label"
+                defaultMessage: "Privacy policy"
             },
             footerSeparator: {
                 id: "advancedAccountSecurity.footerSeparator.v2",
-                defaultMessage: "·",
-                description: "Separator between footer links"
+                defaultMessage: "·"
             }
         });
         var o = i("zd8w"),
@@ -241,7 +203,7 @@ export const __webpack_modules__ = {
                             getClientBootstrap: n
                         }, {
                             signInToBrowserSession: r
-                        }] = await Promise.all([Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629)]).then(i.bind(i, "M8lA")), Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(226913)]).then(i.bind(i, "jEww"))]);
+                        }] = await Promise.all([Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(514085)]).then(i.bind(i, "M8lA")), Promise.all([i.e(418851), i.e(109308), i.e(399565), i.e(257798), i.e(447351), i.e(617936), i.e(807489), i.e(337882), i.e(955979), i.e(646436), i.e(7078), i.e(200429), i.e(698524), i.e(956483), i.e(87162), i.e(396705), i.e(155568), i.e(731863), i.e(767086), i.e(76629), i.e(514085), i.e(226913)]).then(i.bind(i, "jEww"))]);
                         if (a.aborted) return {
                             ok: !1
                         };
@@ -262,8 +224,7 @@ export const __webpack_modules__ = {
             let ef = f;
             ei[9] !== ep ? (x = "error" === ep ? (0, n.jsx)(l.a, {
                 id: "advancedAccountSecurity.enrollmentError",
-                defaultMessage: "We couldn’t start enrollment. Please try again.",
-                description: "Error on the Advanced Account Security landing page when the sign-in request fails. The Enroll buttons can be used to retry."
+                defaultMessage: "We couldn’t start enrollment. Please try again."
             }) : null, ei[9] = ep, ei[10] = x) : x = ei[10];
             let em = x;
             ei[11] !== ea || ei[12] !== es ? (v = ea.formatMessage(es ? s.backToCyber : s.topLeftChatgptHome), ei[11] = ea, ei[12] = es, ei[13] = v) : v = ei[13], ei[14] === Symbol.for("react.memo_cache_sentinel") ? (b = (0, n.jsx)(p.a, {
@@ -329,7 +290,7 @@ export const __webpack_modules__ = {
                     ...s.featuresTitle
                 })
             }), ei[35] = H) : H = ei[35], ei[36] === Symbol.for("react.memo_cache_sentinel") ? (P = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.oe, {}),
+                icon: (0, n.jsx)(u.se, {}),
                 title: (0, n.jsx)(l.a, {
                     ...s.strongerSignInTitle
                 }),
@@ -337,7 +298,7 @@ export const __webpack_modules__ = {
                     ...s.strongerSignInDescription
                 })
             }), ei[36] = P) : P = ei[36], ei[37] === Symbol.for("react.memo_cache_sentinel") ? (V = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.Ne, {}),
+                icon: (0, n.jsx)(u.Se, {}),
                 title: (0, n.jsx)(l.a, {
                     ...s.recoveryTitle
                 }),
@@ -345,7 +306,7 @@ export const __webpack_modules__ = {
                     ...s.recoveryDescription
                 })
             }), ei[37] = V) : V = ei[37], ei[38] === Symbol.for("react.memo_cache_sentinel") ? (E = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.hh, {}),
+                icon: (0, n.jsx)(u.mh, {}),
                 title: (0, n.jsx)(l.a, {
                     ...s.trainingTitle
                 }),
@@ -353,7 +314,7 @@ export const __webpack_modules__ = {
                     ...s.trainingDescription
                 })
             }), ei[38] = E) : E = ei[38], ei[39] === Symbol.for("react.memo_cache_sentinel") ? (I = (0, n.jsx)(y, {
-                icon: (0, n.jsx)(u.rc, {}),
+                icon: (0, n.jsx)(u.tc, {}),
                 title: (0, n.jsx)(l.a, {
                     ...s.shorterSessionsTitle
                 }),
@@ -373,7 +334,7 @@ export const __webpack_modules__ = {
                 children: [H, (0, n.jsxs)("div", {
                     className: "grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6",
                     children: [P, V, E, I, L, (0, n.jsx)(y, {
-                        icon: (0, n.jsx)(u.kd, {}),
+                        icon: (0, n.jsx)(u.od, {}),
                         title: (0, n.jsx)(l.a, {
                             ...s.visibilityTitle
                         }),
@@ -389,7 +350,7 @@ export const __webpack_modules__ = {
                 children: (0, n.jsx)(l.a, {
                     ...s.yubikeyDescription
                 })
-            }), ei[42] = G) : G = ei[42], ei[43] === Symbol.for("react.memo_cache_sentinel") ? (Z = (0, n.jsx)(u.id, {}), ei[43] = Z) : Z = ei[43], ei[44] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, n.jsx)("h2", {
+            }), ei[42] = G) : G = ei[42], ei[43] === Symbol.for("react.memo_cache_sentinel") ? (Z = (0, n.jsx)(u.md, {}), ei[43] = Z) : Z = ei[43], ei[44] === Symbol.for("react.memo_cache_sentinel") ? (B = (0, n.jsx)("h2", {
                 className: "text-base font-medium",
                 children: (0, n.jsx)(l.a, {
                     ...s.warningTitle
@@ -594,55 +555,57 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.acefa13d1a.js";
-import * as t from "./418851.4b043c43bc.js";
+} from "./633146.4981d79ae4.js";
+import * as t from "./418851.7f18e986d5.js";
 e.C(t);
 import * as i from "./109308.e66696cd0d.js";
 e.C(i);
-import * as a from "./399565.2fc4679b26.js";
+import * as a from "./399565.6af208675d.js";
 e.C(a);
 import * as n from "./257798.b51742efd5.js";
 e.C(n);
-import * as r from "./447351.496da706c3.js";
+import * as r from "./447351.7f028af5cc.js";
 e.C(r);
-import * as s from "./617936.dcbf382e63.js";
+import * as s from "./617936.e33610e0b9.js";
 e.C(s);
-import * as o from "./807489.7f5d47cb0e.js";
+import * as o from "./807489.b2a4c99bd1.js";
 e.C(o);
-import * as c from "./337882.f22d43d615.js";
+import * as c from "./337882.240014b3db.js";
 e.C(c);
-import * as l from "./955979.d659318431.js";
+import * as l from "./955979.cac5f7aa7e.js";
 e.C(l);
-import * as d from "./646436.30c2553f0b.js";
+import * as d from "./646436.b849db233f.js";
 e.C(d);
-import * as u from "./7078.5cd07a5c9b.js";
+import * as u from "./7078.73ded76a8d.js";
 e.C(u);
-import * as p from "./200429.82d37d45f2.js";
+import * as p from "./200429.f68bf8c5d0.js";
 e.C(p);
-import * as h from "./698524.1d78dbab32.js";
+import * as h from "./698524.5c1f88ec3d.js";
 e.C(h);
-import * as f from "./956483.4fffedad3f.js";
+import * as f from "./956483.da8bcbe744.js";
 e.C(f);
-import * as m from "./87162.ceb3023033.js";
+import * as m from "./87162.47f0360b7c.js";
 e.C(m);
-import * as g from "./396705.74bbf371c4.js";
+import * as g from "./396705.bfc19c0c6a.js";
 e.C(g);
-import * as y from "./155568.8fe9b1a879.js";
+import * as y from "./155568.fb329e6a3b.js";
 e.C(y);
-import * as x from "./731863.e2c3850b56.js";
+import * as x from "./731863.850a24e1c0.js";
 e.C(x);
-import * as v from "./767086.e730a8ccb4.js";
+import * as v from "./767086.b68e569328.js";
 e.C(v);
-import * as b from "./76629.0f4df00a80.js";
+import * as b from "./76629.ca4c17c8af.js";
 e.C(b);
-import * as j from "./226913.27c93050ff.js";
+import * as j from "./514085.6514ba1a89.js";
 e.C(j);
-import * as S from "./392067.820b3b39bd.js";
+import * as S from "./226913.27c93050ff.js";
 e.C(S);
-var w = e(e.s = "P0UP"),
-    C = w.a,
-    A = w.b;
+import * as w from "./392067.f6573c735b.js";
+e.C(w);
+var C = e(e.s = "P0UP"),
+    A = C.a,
+    _ = C.b;
 export {
-    C as
-    default, A as meta
+    A as
+    default, _ as meta
 };

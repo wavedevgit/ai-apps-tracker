@@ -2,26 +2,26 @@ export const __rspack_esm_ids = [340918];
 export const __webpack_modules__ = {
     fd8z: (function(e, a, s) {
         s.d(a, {
-            a: () => m,
-            b: () => i,
-            c: () => c
+            a: () => i,
+            b: () => m,
+            c: () => l
         });
         var r = s("jqIZ"),
             t = s("LKEn"),
             o = s("i4z1"),
             n = s("gsBt"),
-            f = s("EkCf");
-        let i = (0, r.hb)(f.a);
-        async function m(e) {
+            c = s("EkCf");
+        let m = (0, r.hb)(c.a);
+        async function i(e) {
             let {
                 params: a,
                 request: s,
-                serverLoader: f
-            } = e, i = await f();
-            return null == i && null != (0, r.J)("/:profileId/products", `/${a["*"]??""}`) && "owner" === (0, o.c)(new URL(s.url).searchParams) && Promise.all([n.a.prefetch(), (0, t.c)()]).catch(() => void 0), i
+                serverLoader: c
+            } = e, m = await c();
+            return null == m && null != (0, r.J)("/:profileId/products", `/${a["*"]??""}`) && "owner" === (0, o.c)(new URL(s.url).searchParams) && Promise.all([n.a.prefetch(), (0, t.c)()]).catch(() => void 0), m
         }
-        m.hydrate = !0;
-        let c = e => {
+        i.hydrate = !0;
+        let l = e => {
             let {
                 currentUrl: a,
                 nextUrl: s,
@@ -53,23 +53,23 @@ export const __webpack_modules__ = {
             t = s("QosV"),
             o = s("XyTt"),
             n = s("zd8w"),
-            f = s("v4LA"),
-            i = s("AXDI");
-        let m = (0, f.a)(o.v);
+            c = s("v4LA"),
+            m = s("AXDI");
+        let i = (0, c.a)(o.x);
         s.d(a, {}, {
             a: function(e) {
                 let a, s, o = (0, t.c)(3),
                     {
-                        link: f
+                        link: c
                     } = e;
-                return o[0] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(i.b, {}), o[0] = a) : a = o[0], o[1] !== f ? (s = (0, r.jsx)(i.a, {
+                return o[0] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, r.jsx)(m.b, {}), o[0] = a) : a = o[0], o[1] !== c ? (s = (0, r.jsx)(m.a, {
                     children: (0, r.jsx)(n.Suspense, {
                         fallback: a,
-                        children: (0, r.jsx)(m, {
-                            link: f
+                        children: (0, r.jsx)(i, {
+                            link: c
                         })
                     })
-                }), o[1] = f, o[2] = s) : s = o[2], s
+                }), o[1] = c, o[2] = s) : s = o[2], s
             }
         })
     }),
@@ -78,45 +78,45 @@ export const __webpack_modules__ = {
             t = s("QosV"),
             o = s("jqIZ"),
             n = s("HnGz"),
-            f = s("hC2y"),
-            i = s("AXDI"),
-            m = s("NVla"),
-            c = s("nlAI");
+            c = s("hC2y"),
+            m = s("AXDI"),
+            i = s("NVla"),
+            l = s("nlAI");
         s.d(a, {}, {
             a: function(e) {
-                let a, s, l, p, d, h = (0, t.c)(14),
+                let a, s, p, f, d, j = (0, t.c)(14),
                     {
-                        fallback: j
+                        fallback: h
                     } = e,
                     {
                         pathname: b
                     } = (0, o.Y)();
-                if (h[0] !== j || h[1] !== b) {
-                    p = Symbol.for("react.early_return_sentinel");
+                if (j[0] !== h || j[1] !== b) {
+                    f = Symbol.for("react.early_return_sentinel");
                     e: {
-                        let e = (0, n.g)(f.c, b);
+                        let e = (0, n.g)(c.c, b);
                         if (null == e) {
                             let e;
-                            h[6] !== b ? (e = (0, m.b)(b), h[6] = b, h[7] = e) : e = h[7];
+                            j[6] !== b ? (e = (0, i.b)(b), j[6] = b, j[7] = e) : e = j[7];
                             let a = e;
                             if (null != a) {
                                 let e;
-                                h[8] !== a ? (e = (0, r.jsx)(c.a, {
+                                j[8] !== a ? (e = (0, r.jsx)(l.a, {
                                     link: a
-                                }), h[8] = a, h[9] = e) : e = h[9], p = e;
+                                }), j[8] = a, j[9] = e) : e = j[9], f = e;
                                 break e
                             }
                         }
-                        a = i.a,
-                        s = j,
-                        l = null == e ? (0, r.jsx)(f.d, {}) : (0, o.O)(e)
+                        a = m.a,
+                        s = h,
+                        p = null == e ? (0, r.jsx)(c.d, {}) : (0, o.O)(e)
                     }
-                    h[0] = j, h[1] = b, h[2] = a, h[3] = s, h[4] = l, h[5] = p
-                } else a = h[2], s = h[3], l = h[4], p = h[5];
-                return p !== Symbol.for("react.early_return_sentinel") ? p : (h[10] !== a || h[11] !== s || h[12] !== l ? (d = (0, r.jsx)(a, {
+                    j[0] = h, j[1] = b, j[2] = a, j[3] = s, j[4] = p, j[5] = f
+                } else a = j[2], s = j[3], p = j[4], f = j[5];
+                return f !== Symbol.for("react.early_return_sentinel") ? f : (j[10] !== a || j[11] !== s || j[12] !== p ? (d = (0, r.jsx)(a, {
                     fallback: s,
-                    children: l
-                }), h[10] = a, h[11] = s, h[12] = l, h[13] = d) : d = h[13], d)
+                    children: p
+                }), j[10] = a, j[11] = s, j[12] = p, j[13] = d) : d = j[13], d)
             }
         })
     }),
@@ -128,58 +128,60 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.acefa13d1a.js";
-import * as a from "./418851.4b043c43bc.js";
+} from "./633146.4981d79ae4.js";
+import * as a from "./418851.7f18e986d5.js";
 e.C(a);
 import * as s from "./109308.e66696cd0d.js";
 e.C(s);
-import * as r from "./399565.2fc4679b26.js";
+import * as r from "./399565.6af208675d.js";
 e.C(r);
 import * as t from "./257798.b51742efd5.js";
 e.C(t);
-import * as o from "./447351.496da706c3.js";
+import * as o from "./447351.7f028af5cc.js";
 e.C(o);
-import * as n from "./617936.dcbf382e63.js";
+import * as n from "./617936.e33610e0b9.js";
 e.C(n);
-import * as f from "./807489.7f5d47cb0e.js";
-e.C(f);
-import * as i from "./337882.f22d43d615.js";
-e.C(i);
-import * as m from "./955979.d659318431.js";
-e.C(m);
-import * as c from "./646436.30c2553f0b.js";
+import * as c from "./807489.b2a4c99bd1.js";
 e.C(c);
-import * as l from "./7078.5cd07a5c9b.js";
+import * as m from "./337882.240014b3db.js";
+e.C(m);
+import * as i from "./955979.cac5f7aa7e.js";
+e.C(i);
+import * as l from "./646436.b849db233f.js";
 e.C(l);
-import * as p from "./200429.82d37d45f2.js";
+import * as p from "./7078.73ded76a8d.js";
 e.C(p);
-import * as d from "./698524.1d78dbab32.js";
+import * as f from "./200429.f68bf8c5d0.js";
+e.C(f);
+import * as d from "./698524.5c1f88ec3d.js";
 e.C(d);
-import * as h from "./956483.4fffedad3f.js";
-e.C(h);
-import * as j from "./87162.ceb3023033.js";
+import * as j from "./956483.da8bcbe744.js";
 e.C(j);
-import * as b from "./396705.74bbf371c4.js";
+import * as h from "./87162.47f0360b7c.js";
+e.C(h);
+import * as b from "./396705.bfc19c0c6a.js";
 e.C(b);
-import * as u from "./155568.8fe9b1a879.js";
+import * as u from "./155568.fb329e6a3b.js";
 e.C(u);
-import * as _ from "./731863.e2c3850b56.js";
+import * as _ from "./731863.850a24e1c0.js";
 e.C(_);
-import * as C from "./767086.e730a8ccb4.js";
+import * as C from "./767086.b68e569328.js";
 e.C(C);
-import * as x from "./76629.0f4df00a80.js";
+import * as x from "./76629.ca4c17c8af.js";
 e.C(x);
-import * as g from "./226913.27c93050ff.js";
+import * as g from "./514085.6514ba1a89.js";
 e.C(g);
-import * as w from "./902158.5a4b6c2c66.js";
+import * as w from "./226913.27c93050ff.js";
 e.C(w);
-import * as k from "./340918.67d04df656.js";
+import * as k from "./902158.5a4b6c2c66.js";
 e.C(k);
-var v = e(e.s = "fd8z"),
-    y = v.a,
-    P = v.b,
-    A = v.c;
+import * as v from "./340918.400c2ef409.js";
+e.C(v);
+var y = e(e.s = "fd8z"),
+    P = y.a,
+    A = y.b,
+    I = y.c;
 export {
-    y as clientLoader, P as
-    default, A as shouldRevalidate
+    P as clientLoader, A as
+    default, I as shouldRevalidate
 };

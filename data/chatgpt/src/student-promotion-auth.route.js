@@ -41,7 +41,7 @@ export const __webpack_modules__ = {
             r = a("wvhd"),
             c = a("xvAb"),
             d = a("vhdp");
-        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
+        let m = (0, l.a)(async () => (await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(931360)]).then(a.bind(a, "gzJU"))).StudentPromotionSignIn, {
             fallback: (0, s.jsx)(c.b, {}),
             errorFallback: () => (0, s.jsx)(r.a, {
                 result: void 0,
@@ -169,20 +169,16 @@ export const __webpack_modules__ = {
                     f = void 0 !== m && m;
                 return d[0] !== f ? (t = f ? void 0 : (0, s.jsx)(o.a, {}), d[0] = f, d[1] = t) : t = d[1], d[2] !== f ? (a = f ? (0, s.jsx)(n.a, {
                     id: "chatgpt.students.back_to_school_2026.claim.sign_in.title",
-                    defaultMessage: "Redirecting to sign in",
-                    description: "Heading shown while a logged-out college student is redirected to sign in before starting the 2026 student-offer verification flow"
+                    defaultMessage: "Redirecting to sign in"
                 }) : (0, s.jsx)(n.a, {
                     id: "chatgpt.students.back_to_school_2026.claim.verifying.title",
-                    defaultMessage: "Verifying your student status",
-                    description: "Progress heading while checking the student's eligibility and verification status for the 2026 offer"
+                    defaultMessage: "Verifying your student status"
                 }), r = f ? (0, s.jsx)(n.a, {
                     id: "chatgpt.students.back_to_school_2026.claim.sign_in.description",
-                    defaultMessage: "Sign in to your ChatGPT account before verifying your student status.",
-                    description: "Supporting message explaining that students must sign in before the secure 2026 student verification experience opens"
+                    defaultMessage: "Sign in to your ChatGPT account before verifying your student status."
                 }) : (0, s.jsx)(n.a, {
                     id: "chatgpt.students.back_to_school_2026.claim.verifying.description",
-                    defaultMessage: "This may take a minute. Please keep this page open.",
-                    description: "Supporting message asking students to keep the page open while their 2026 student verification is confirmed"
+                    defaultMessage: "This may take a minute. Please keep this page open."
                 }), d[2] = f, d[3] = a, d[4] = r) : (a = d[3], r = d[4]), d[5] !== t || d[6] !== a || d[7] !== r ? (c = (0, s.jsx)(l.b, {
                     variant: "loading",
                     illustration: t,
@@ -277,13 +273,11 @@ export const __webpack_modules__ = {
                 return t[0] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, s.jsx)(l, {
                     title: (0, s.jsx)(o.a, {
                         id: "chatgpt.students.back_to_school_2026.claim.unavailable.title",
-                        defaultMessage: "Offer unavailable",
-                        description: "Heading when this account cannot use the student offer"
+                        defaultMessage: "Offer unavailable"
                     }),
                     description: (0, s.jsx)(o.a, {
                         id: "chatgpt.students.back_to_school_2026.claim.unavailable.description",
-                        defaultMessage: "This student offer isn’t available for your account.",
-                        description: "Explains that the current account cannot start the student offer"
+                        defaultMessage: "This student offer isn’t available for your account."
                     })
                 }), t[0] = e) : e = t[0], e
             }
@@ -305,8 +299,7 @@ export const __webpack_modules__ = {
                     j = (0, n.a)();
                 return C[0] !== j ? (t = j.formatMessage({
                     id: "chatgpt.students.back_to_school_2026.embedded_verification.artwork.alt.campus_lawn",
-                    defaultMessage: "Students sitting together on a college campus lawn",
-                    description: "Alternative text for the campus photo beside the student verification form"
+                    defaultMessage: "Students sitting together on a college campus lawn"
                 }), C[0] = j, C[1] = t) : t = C[1], C[2] !== t ? (a = (0, s.jsx)("img", {
                     className: "order-first h-57 w-full object-cover lg:order-last lg:mt-14 lg:h-114 lg:rounded-3xl",
                     src: "https://cdn.openai.com/chatgpt/ctf-cdn/students-2026/verification-campus-lawn-e5c8ee276936.webp",
@@ -315,8 +308,7 @@ export const __webpack_modules__ = {
                     className: "lg:hidden",
                     children: (0, s.jsx)(o.a, {
                         id: "chatgpt.students.back_to_school_2026.embedded_verification.title.work.four_month",
-                        defaultMessage: "Get 4 months of ChatGPT Work free",
-                        description: "Mobile headline advertising four free months of ChatGPT Work to eligible college students"
+                        defaultMessage: "Get 4 months of ChatGPT Work free"
                     })
                 }), C[4] = l) : l = C[4], C[5] === Symbol.for("react.memo_cache_sentinel") ? (r = (0, s.jsxs)("h1", {
                     className: "text-3xl leading-tight font-medium lg:text-6xl lg:leading-none",
@@ -324,28 +316,24 @@ export const __webpack_modules__ = {
                         className: "hidden lg:inline",
                         children: (0, s.jsx)(o.a, {
                             id: "chatgpt.students.back_to_school_2026.embedded_verification.title.desktop.work.four_month",
-                            defaultMessage: "Study. Build. Launch. Get 4 months of ChatGPT Work on us.",
-                            description: "Desktop headline advertising four free months of ChatGPT Work to eligible college students"
+                            defaultMessage: "Study. Build. Launch. Get 4 months of ChatGPT Work on us."
                         })
                     })]
                 }), C[5] = r) : r = C[5], C[6] === Symbol.for("react.memo_cache_sentinel") ? (c = (0, s.jsx)("span", {
                     className: "lg:hidden",
                     children: (0, s.jsx)(o.a, {
                         id: "chatgpt.students.back_to_school_2026.embedded_verification.description.college",
-                        defaultMessage: "An $80 value for eligible U.S. college students. Verify your student status to claim.",
-                        description: "Supporting copy on the ChatGPT-hosted student verification page stating the offer value, eligibility for U.S. college students, and the need to verify student status."
+                        defaultMessage: "An $80 value for eligible U.S. college students. Verify your student status to claim."
                     })
                 }), C[6] = c) : c = C[6], C[7] === Symbol.for("react.memo_cache_sentinel") ? (d = (0, s.jsx)("span", {
                     className: "hidden lg:inline",
                     children: (0, s.jsx)(o.a, {
                         id: "chatgpt.students.back_to_school_2026.embedded_verification.description.desktop.college",
-                        defaultMessage: "An $80 value for eligible U.S. college students. Verify your student status to claim.",
-                        description: "Desktop supporting copy on the ChatGPT-hosted student verification page stating the offer value, eligibility for U.S. college students, and the need to verify student status."
+                        defaultMessage: "An $80 value for eligible U.S. college students. Verify your student status to claim."
                     })
                 }), C[7] = d) : d = C[7], C[8] === Symbol.for("react.memo_cache_sentinel") ? (m = (0, s.jsx)(o.a, {
                     id: "chatgpt.students.back_to_school_2026.embedded_verification.help",
-                    defaultMessage: "How does verifying work?",
-                    description: "Link to the student offer FAQ explaining how verification works"
+                    defaultMessage: "How does verifying work?"
                 }), C[8] = m) : m = C[8], C[9] !== v ? (f = (0, s.jsxs)("div", {
                     className: "px-8 pt-8 lg:px-0 lg:pt-0",
                     children: [r, (0, s.jsxs)("p", {
@@ -363,16 +351,14 @@ export const __webpack_modules__ = {
                     children: [a, f]
                 }), C[11] = a, C[12] = f, C[13] = h) : h = C[13], C[14] !== j ? (u = j.formatMessage({
                     id: "chatgpt.students.back_to_school_2026.embedded_verification.form.label",
-                    defaultMessage: "Student verification form",
-                    description: "Accessible label for the account-bound student verification form"
+                    defaultMessage: "Student verification form"
                 }), C[14] = j, C[15] = u) : u = C[15], C[16] !== _ || C[17] !== j ? (x = _ ?? (0, s.jsx)("div", {
                     className: "min-h-24 w-full",
                     role: "status",
                     "aria-busy": "true",
                     "aria-label": j.formatMessage({
                         id: "chatgpt.students.back_to_school_2026.embedded_verification.loading",
-                        defaultMessage: "Loading student verification",
-                        description: "Accessible label while the student verification form loads"
+                        defaultMessage: "Loading student verification"
                     })
                 }), C[16] = _, C[17] = j, C[18] = x) : x = C[18], C[19] !== b || C[20] !== u || C[21] !== x ? (g = (0, s.jsxs)("section", {
                     className: "min-w-0 px-8 pt-8 lg:flex-4 lg:px-0 lg:pt-0",
@@ -415,24 +401,21 @@ export const __webpack_modules__ = {
                 }
                 return f[6] === Symbol.for("react.memo_cache_sentinel") ? (a = (0, s.jsx)(n.a, {
                     id: "browser.auth.handoff.title",
-                    defaultMessage: "Continue to sign in",
-                    description: "Heading while automatically continuing an authentication flow"
+                    defaultMessage: "Continue to sign in"
                 }), f[6] = a) : a = f[6], f[7] !== C || f[8] !== h ? (r = h?.ok ? (0, s.jsx)("a", {
                     ref: C,
                     className: "text-center",
                     href: h.url,
                     children: (0, s.jsx)(n.a, {
                         id: "browser.auth.handoff.continue",
-                        defaultMessage: "Continue",
-                        description: "Fallback link to continue authentication if automatic navigation did not occur"
+                        defaultMessage: "Continue"
                     })
                 }) : null, f[7] = C, f[8] = h, f[9] = r) : r = f[9], f[10] !== u || f[11] !== h?.ok ? (c = !h?.ok && u ? (0, s.jsx)("p", {
                     className: "text-center",
                     role: "status",
                     children: (0, s.jsx)(n.a, {
                         id: "browser.auth.login.pending",
-                        defaultMessage: "Connecting…",
-                        description: "Label while the ChatGPT browser login page waits for the selected authentication provider"
+                        defaultMessage: "Connecting…"
                     })
                 }) : null, f[10] = u, f[11] = h?.ok, f[12] = c) : c = f[12], f[13] !== x || f[14] !== u || f[15] !== h?.ok ? (d = h?.ok || u ? null : (0, s.jsxs)(s.Fragment, {
                     children: [(0, s.jsx)("p", {
@@ -440,8 +423,7 @@ export const __webpack_modules__ = {
                         role: "alert",
                         children: (0, s.jsx)(n.a, {
                             id: "browser.auth.handoff.failed",
-                            defaultMessage: "We couldn’t sign you in. Please try again",
-                            description: "Error after an automatic authentication handoff fails; the user can retry the same handoff"
+                            defaultMessage: "We couldn’t sign you in. Please try again"
                         })
                     }), (0, s.jsx)(o.a, {
                         type: "button",
@@ -450,8 +432,7 @@ export const __webpack_modules__ = {
                         onClick: x,
                         children: (0, s.jsx)(n.a, {
                             id: "browser.auth.handoff.retry",
-                            defaultMessage: "Try again",
-                            description: "Button to retry the same authentication handoff after it fails"
+                            defaultMessage: "Try again"
                         })
                     })]
                 }), f[13] = x, f[14] = u, f[15] = h?.ok, f[16] = d) : d = f[16], f[17] !== r || f[18] !== c || f[19] !== d ? (m = (0, s.jsxs)(l.a, {
@@ -465,57 +446,59 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.acefa13d1a.js";
+} from "./633146.4981d79ae4.js";
 import * as t from "./680612.3c8d72f22d.js";
 e.C(t);
-import * as a from "./418851.4b043c43bc.js";
+import * as a from "./418851.7f18e986d5.js";
 e.C(a);
 import * as s from "./109308.e66696cd0d.js";
 e.C(s);
-import * as i from "./399565.2fc4679b26.js";
+import * as i from "./399565.6af208675d.js";
 e.C(i);
 import * as n from "./257798.b51742efd5.js";
 e.C(n);
-import * as o from "./447351.496da706c3.js";
+import * as o from "./447351.7f028af5cc.js";
 e.C(o);
-import * as l from "./617936.dcbf382e63.js";
+import * as l from "./617936.e33610e0b9.js";
 e.C(l);
-import * as r from "./807489.7f5d47cb0e.js";
+import * as r from "./807489.b2a4c99bd1.js";
 e.C(r);
-import * as c from "./337882.f22d43d615.js";
+import * as c from "./337882.240014b3db.js";
 e.C(c);
-import * as d from "./955979.d659318431.js";
+import * as d from "./955979.cac5f7aa7e.js";
 e.C(d);
-import * as m from "./646436.30c2553f0b.js";
+import * as m from "./646436.b849db233f.js";
 e.C(m);
-import * as f from "./7078.5cd07a5c9b.js";
+import * as f from "./7078.73ded76a8d.js";
 e.C(f);
-import * as h from "./200429.82d37d45f2.js";
+import * as h from "./200429.f68bf8c5d0.js";
 e.C(h);
-import * as u from "./698524.1d78dbab32.js";
+import * as u from "./698524.5c1f88ec3d.js";
 e.C(u);
-import * as x from "./956483.4fffedad3f.js";
+import * as x from "./956483.da8bcbe744.js";
 e.C(x);
-import * as g from "./87162.ceb3023033.js";
+import * as g from "./87162.47f0360b7c.js";
 e.C(g);
-import * as p from "./396705.74bbf371c4.js";
+import * as p from "./396705.bfc19c0c6a.js";
 e.C(p);
-import * as C from "./155568.8fe9b1a879.js";
+import * as C from "./155568.fb329e6a3b.js";
 e.C(C);
-import * as b from "./731863.e2c3850b56.js";
+import * as b from "./731863.850a24e1c0.js";
 e.C(b);
-import * as v from "./767086.e730a8ccb4.js";
+import * as v from "./767086.b68e569328.js";
 e.C(v);
-import * as _ from "./76629.0f4df00a80.js";
+import * as _ from "./76629.ca4c17c8af.js";
 e.C(_);
-import * as j from "./226913.27c93050ff.js";
+import * as j from "./514085.6514ba1a89.js";
 e.C(j);
-import * as y from "./24435.b1279ceb18.js";
+import * as y from "./226913.27c93050ff.js";
 e.C(y);
-var w = e(e.s = "FaKe"),
-    k = w.a,
-    L = w.b;
+import * as w from "./24435.b4a946c875.js";
+e.C(w);
+var k = e(e.s = "FaKe"),
+    L = k.a,
+    M = k.b;
 export {
-    k as
-    default, L as handle
+    L as
+    default, M as handle
 };

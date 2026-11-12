@@ -61,7 +61,7 @@ export const __webpack_modules__ = {
                             f = n(i?.apiResponse) ? i.apiResponse : void 0,
                             u = i?.status,
                             m = f?.status ?? c,
-                            b = i?.verification_id;
+                            p = i?.verification_id;
                         e({
                             "experian.attempt_id": t,
                             "experian.sequence": r,
@@ -74,8 +74,8 @@ export const __webpack_modules__ = {
                                 if ("string" != typeof e) return "invalid";
                                 let t = e.trim();
                                 return "" === t || "null" === t.toLowerCase() ? "invalid" : "valid"
-                            }(b),
-                            "experian.has_verification_id": "string" == typeof b && b.trim().length > 0,
+                            }(p),
+                            "experian.has_verification_id": "string" == typeof p && p.trim().length > 0,
                             "experian.next_action": a(i?.next_action),
                             "experian.code": a(f?.code ?? i?.code),
                             "experian.http_status": "number" == typeof m && Number.isInteger(m) && m >= 100 && m <= 599 ? m : void 0,
@@ -124,10 +124,10 @@ export const __webpack_modules__ = {
                             verification_id: t.verificationId
                         }), e(t)
                     },
-                    b = () => m({
+                    p = () => m({
                         kind: 1
                     }),
-                    p = (e, t, r) => {
+                    b = (e, t, r) => {
                         e.addEventListener(t, e => {
                             let o = e instanceof CustomEvent ? e.detail : void 0,
                                 i = "object" == typeof o && null != o && "experienceDetails" in o ? o.experienceDetails : void 0,
@@ -137,7 +137,7 @@ export const __webpack_modules__ = {
                             signal: l.signal
                         })
                     };
-                f.aborted ? b() : (f.addEventListener("abort", b, {
+                f.aborted ? p() : (f.addEventListener("abort", p, {
                     once: !0,
                     signal: l.signal
                 }), (async () => {
@@ -147,7 +147,7 @@ export const __webpack_modules__ = {
                     } = await i();
                     e(), l.signal.aborted || (u?.("mount", c), (() => {
                         let e, i, f = r();
-                        if (null === f) return b();
+                        if (null === f) return p();
                         let u = document.createElement("identity-verification");
                         u.style.colorScheme = "normal", u.setAttribute("appearance", JSON.stringify((e = t?.identityVerification, {
                             ...void 0 === (i = e?.[n]) ? {} : {
@@ -186,7 +186,7 @@ export const __webpack_modules__ = {
                                     }
                                 }
                             }
-                        }))), u.setAttribute("aria-label", o), u.setAttribute("environment", c), u.setAttribute("role", "region"), u.setAttribute("token", a), p(u, "on-load"), p(u, "on-ready"), p(u, "on-status-change"), p(u, "on-verification-complete", e => {
+                        }))), u.setAttribute("aria-label", o), u.setAttribute("environment", c), u.setAttribute("role", "region"), u.setAttribute("token", a), b(u, "on-load"), b(u, "on-ready"), b(u, "on-status-change"), b(u, "on-verification-complete", e => {
                             let t, r;
                             return m((t = !("object" != typeof e || null == e || Array.isArray(e)) && ["status", "verification_id"].every(t => {
                                 let r = Reflect.get(e, t);
@@ -198,9 +198,9 @@ export const __webpack_modules__ = {
                                 kind: 2,
                                 verificationId: t?.status === "failed" || t?.status === "expired" ? r ?? void 0 : void 0
                             }))
-                        }), p(u, s, () => m({
+                        }), b(u, s, () => m({
                             kind: 2
-                        })), p(u, "on-close", b);
+                        })), b(u, "on-close", p);
                         let _ = new MutationObserver(() => {
                                 let e = u.querySelector("iframe");
                                 e && (e.setAttribute("referrerpolicy", "origin"), _.disconnect())
@@ -268,53 +268,55 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.acefa13d1a.js";
-import * as t from "./418851.4b043c43bc.js";
+} from "./633146.4981d79ae4.js";
+import * as t from "./418851.7f18e986d5.js";
 e.C(t);
 import * as r from "./109308.e66696cd0d.js";
 e.C(r);
-import * as o from "./399565.2fc4679b26.js";
+import * as o from "./399565.6af208675d.js";
 e.C(o);
 import * as i from "./257798.b51742efd5.js";
 e.C(i);
-import * as n from "./447351.496da706c3.js";
+import * as n from "./447351.7f028af5cc.js";
 e.C(n);
-import * as a from "./617936.dcbf382e63.js";
+import * as a from "./617936.e33610e0b9.js";
 e.C(a);
-import * as s from "./807489.7f5d47cb0e.js";
+import * as s from "./807489.b2a4c99bd1.js";
 e.C(s);
-import * as l from "./337882.f22d43d615.js";
+import * as l from "./337882.240014b3db.js";
 e.C(l);
-import * as d from "./955979.d659318431.js";
+import * as d from "./955979.cac5f7aa7e.js";
 e.C(d);
-import * as c from "./646436.30c2553f0b.js";
+import * as c from "./646436.b849db233f.js";
 e.C(c);
-import * as f from "./7078.5cd07a5c9b.js";
+import * as f from "./7078.73ded76a8d.js";
 e.C(f);
-import * as u from "./200429.82d37d45f2.js";
+import * as u from "./200429.f68bf8c5d0.js";
 e.C(u);
-import * as m from "./698524.1d78dbab32.js";
+import * as m from "./698524.5c1f88ec3d.js";
 e.C(m);
-import * as b from "./956483.4fffedad3f.js";
-e.C(b);
-import * as p from "./87162.ceb3023033.js";
+import * as p from "./956483.da8bcbe744.js";
 e.C(p);
-import * as _ from "./396705.74bbf371c4.js";
+import * as b from "./87162.47f0360b7c.js";
+e.C(b);
+import * as _ from "./396705.bfc19c0c6a.js";
 e.C(_);
-import * as v from "./155568.8fe9b1a879.js";
+import * as v from "./155568.fb329e6a3b.js";
 e.C(v);
-import * as g from "./731863.e2c3850b56.js";
+import * as g from "./731863.850a24e1c0.js";
 e.C(g);
-import * as y from "./767086.e730a8ccb4.js";
+import * as y from "./767086.b68e569328.js";
 e.C(y);
-import * as h from "./76629.0f4df00a80.js";
+import * as h from "./76629.ca4c17c8af.js";
 e.C(h);
-import * as x from "./226913.27c93050ff.js";
+import * as x from "./514085.6514ba1a89.js";
 e.C(x);
-import * as j from "./839024.bbbf6869ba.js";
+import * as j from "./226913.27c93050ff.js";
 e.C(j);
-var C = e(e.s = "FRTw").a;
+import * as C from "./839024.7076444e17.js";
+e.C(C);
+var w = e(e.s = "FRTw").a;
 export {
-    C as
+    w as
     default
 };
