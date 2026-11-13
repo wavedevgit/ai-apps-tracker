@@ -1,6 +1,6 @@
 export const __rspack_esm_ids = [965367];
 export const __webpack_modules__ = {
-    LZjk: (function(e, o, t) {
+    LQWP: (function(e, o, t) {
         t.d(o, {
             a: () => m
         });
@@ -12,16 +12,16 @@ export const __webpack_modules__ = {
             l = t("G8V1");
         t("rHrT");
         var p = t("WoME"),
-            d = t("pICO"),
-            c = t("eAav"),
+            c = t("pICO"),
+            d = t("eAav"),
             m = (0, a.hb)(function() {
                 let e, o, t, m, h, u, f = (0, r.c)(17),
                     {
                         locale: g
-                    } = (0, s.y)(c.a).value,
+                    } = (0, s.y)(d.a).value,
                     {
-                        downloadPlatform: b,
-                        isMobile: w,
+                        downloadPlatform: w,
+                        isMobile: b,
                         messages: x
                     } = (0, a.X)(),
                     [j] = (0, a.gb)();
@@ -59,18 +59,18 @@ export const __webpack_modules__ = {
                     return t.searchParams.size > 0 ? t.toString() : null
                 }(j), f[0] = j, f[1] = e) : e = f[1];
                 let C = e;
-                f[2] !== C || f[3] !== w ? (o = () => {
-                    w || null == C || window.location.assign(C)
-                }, t = [C, w], f[2] = C, f[3] = w, f[4] = o, f[5] = t) : (o = f[4], t = f[5]), (0, i.useEffect)(o, t);
-                let k = w ? "mobile" : "opening";
+                f[2] !== C || f[3] !== b ? (o = () => {
+                    b || null == C || window.location.assign(C)
+                }, t = [C, b], f[2] = C, f[3] = b, f[4] = o, f[5] = t) : (o = f[4], t = f[5]), (0, i.useEffect)(o, t);
+                let k = b ? "mobile" : "opening";
                 return f[6] !== C ? (m = () => {
                     null != C && window.location.assign(C)
-                }, f[6] = C, f[7] = m) : m = f[7], f[8] !== C || f[9] !== b || f[10] !== k || f[11] !== m ? (h = (0, n.jsx)(d.a, {
-                    downloadPlatform: b,
+                }, f[6] = C, f[7] = m) : m = f[7], f[8] !== C || f[9] !== w || f[10] !== k || f[11] !== m ? (h = (0, n.jsx)(c.a, {
+                    downloadPlatform: w,
                     deepLink: C,
                     status: k,
                     onOpen: m
-                }), f[8] = C, f[9] = b, f[10] = k, f[11] = m, f[12] = h) : h = f[12], f[13] !== g || f[14] !== x || f[15] !== h ? (u = (0, n.jsx)(l.a, {
+                }), f[8] = C, f[9] = w, f[10] = k, f[11] = m, f[12] = h) : h = f[12], f[13] !== g || f[14] !== x || f[15] !== h ? (u = (0, n.jsx)(l.a, {
                     locale: g,
                     defaultLocale: "en-US",
                     messages: x,
@@ -93,11 +93,11 @@ export const __webpack_modules__ = {
             return m("https://persistent.oaistatic.com/codex-app-prod/ChatGPT-latest-x64.dmg")
         }
 
-        function d() {
+        function c() {
             return m("https://persistent.oaistatic.com/codex-app-prod/ChatGPT.dmg")
         }
 
-        function c() {
+        function d() {
             return m("https://get.microsoft.com/installer/download/9PLM9XGG6VKS?cid=website_cta_psi")
         }
 
@@ -108,14 +108,14 @@ export const __webpack_modules__ = {
         }
         t.d(o, {}, {
             a: function(e) {
-                let o, t, s, m, h, u, f, g, b, w, x, j, C, k = (0, n.c)(42),
+                let o, t, s, m, h, u, f, g, w, b, x, j, C, k = (0, n.c)(42),
                     {
                         deepLink: y,
-                        downloadPlatform: D,
-                        status: _,
-                        onOpen: P
+                        downloadPlatform: P,
+                        status: D,
+                        onOpen: _
                     } = e,
-                    T = void 0 === _ ? "opening" : _,
+                    T = void 0 === D ? "opening" : D,
                     G = "login" === T || "cli-login" === T;
                 return k[0] !== G ? (o = G ? (0, a.jsx)(r.a, {
                     id: "browser.codexDeeplink.signedIn",
@@ -148,19 +148,19 @@ export const __webpack_modules__ = {
                         id: "browser.codexDeeplink.missingDetails",
                         defaultMessage: "This link is missing the chat details ChatGPT needs to reopen your work"
                     })
-                }), k[14] = y, k[15] = G, k[16] = f) : f = k[16], k[17] !== D || k[18] !== T ? (g = "opening" === T && "windows" === D ? (0, a.jsx)(i.a, {
+                }), k[14] = y, k[15] = G, k[16] = f) : f = k[16], k[17] !== P || k[18] !== T ? (g = "opening" === T && "windows" === P ? (0, a.jsx)(i.a, {
                     color: "primary",
                     size: "auth",
-                    onClick: c,
+                    onClick: d,
                     children: (0, a.jsx)(r.a, {
                         id: "browser.codexDeeplink.download",
                         defaultMessage: "Download the app"
                     })
-                }) : null, k[17] = D, k[18] = T, k[19] = g) : g = k[19], k[20] !== D || k[21] !== T ? (b = "opening" === T && "mac" === D ? (0, a.jsxs)(a.Fragment, {
+                }) : null, k[17] = P, k[18] = T, k[19] = g) : g = k[19], k[20] !== P || k[21] !== T ? (w = "opening" === T && "mac" === P ? (0, a.jsxs)(a.Fragment, {
                     children: [(0, a.jsx)(i.a, {
                         color: "primary",
                         size: "auth",
-                        onClick: d,
+                        onClick: c,
                         children: (0, a.jsx)(r.a, {
                             id: "browser.codexDeeplink.downloadAppleSilicon",
                             defaultMessage: "Download for Apple Silicon"
@@ -174,7 +174,7 @@ export const __webpack_modules__ = {
                             defaultMessage: "Download for Intel Mac"
                         })
                     })]
-                }) : null, k[20] = D, k[21] = T, k[22] = b) : b = k[22], k[23] !== T ? (w = "mobile" === T ? (0, a.jsx)(i.a, {
+                }) : null, k[20] = P, k[21] = T, k[22] = w) : w = k[22], k[23] !== T ? (b = "mobile" === T ? (0, a.jsx)(i.a, {
                     color: "primary",
                     size: "auth",
                     onClick: l,
@@ -182,19 +182,19 @@ export const __webpack_modules__ = {
                         id: "browser.codexDeeplink.learnMore",
                         defaultMessage: "Learn more"
                     })
-                }) : null, k[23] = T, k[24] = w) : w = k[24], k[25] !== y || k[26] !== D || k[27] !== G || k[28] !== P || k[29] !== T ? (x = "mobile" !== T && "cli-login" !== T ? (0, a.jsx)(i.a, {
-                    color: null == D || G ? "primary" : "outlineSurface",
+                }) : null, k[23] = T, k[24] = b) : b = k[24], k[25] !== y || k[26] !== P || k[27] !== G || k[28] !== _ || k[29] !== T ? (x = "mobile" !== T && "cli-login" !== T ? (0, a.jsx)(i.a, {
+                    color: null == P || G ? "primary" : "outlineSurface",
                     size: "auth",
                     disabled: null == y,
-                    onClick: P,
+                    onClick: _,
                     children: (0, a.jsx)(r.a, {
                         id: "browser.codexDeeplink.open",
                         defaultMessage: "Open ChatGPT"
                     })
-                }) : null, k[25] = y, k[26] = D, k[27] = G, k[28] = P, k[29] = T, k[30] = x) : x = k[30], k[31] !== b || k[32] !== w || k[33] !== x || k[34] !== g ? (j = (0, a.jsxs)("div", {
+                }) : null, k[25] = y, k[26] = P, k[27] = G, k[28] = _, k[29] = T, k[30] = x) : x = k[30], k[31] !== w || k[32] !== b || k[33] !== x || k[34] !== g ? (j = (0, a.jsxs)("div", {
                     className: "flex flex-col gap-3",
-                    children: [g, b, w, x]
-                }), k[31] = b, k[32] = w, k[33] = x, k[34] = g, k[35] = j) : j = k[35], k[36] !== j || k[37] !== m || k[38] !== h || k[39] !== u || k[40] !== f ? (C = (0, a.jsx)("main", {
+                    children: [g, w, b, x]
+                }), k[31] = w, k[32] = b, k[33] = x, k[34] = g, k[35] = j) : j = k[35], k[36] !== j || k[37] !== m || k[38] !== h || k[39] !== u || k[40] !== f ? (C = (0, a.jsx)("main", {
                     className: "flex min-h-screen flex-col items-center justify-center bg-surface px-6 py-12 text-default select-none",
                     children: (0, a.jsxs)("div", {
                         className: "flex w-full max-w-md flex-col gap-5",
@@ -207,10 +207,10 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.d376de6326.js";
+} from "./633146.de799da76f.js";
 import * as o from "./680612.3c8d72f22d.js";
 e.C(o);
-import * as t from "./418851.b915ffe930.js";
+import * as t from "./418851.915eb36248.js";
 e.C(t);
 import * as a from "./109308.e66696cd0d.js";
 e.C(a);
@@ -218,46 +218,46 @@ import * as n from "./399565.6af208675d.js";
 e.C(n);
 import * as r from "./257798.b51742efd5.js";
 e.C(r);
-import * as s from "./447351.dafe7b7b5e.js";
+import * as s from "./447351.984c166fc8.js";
 e.C(s);
 import * as i from "./617936.e33610e0b9.js";
 e.C(i);
-import * as l from "./807489.01dbb0865d.js";
+import * as l from "./807489.850de05ef3.js";
 e.C(l);
-import * as p from "./337882.7119120a0c.js";
+import * as p from "./337882.5f151ee5b8.js";
 e.C(p);
-import * as d from "./955979.cdc247a476.js";
-e.C(d);
-import * as c from "./646436.2bf4f5cfd6.js";
+import * as c from "./955979.9e9440262c.js";
 e.C(c);
-import * as m from "./7078.89396f9757.js";
+import * as d from "./646436.03e4f4565c.js";
+e.C(d);
+import * as m from "./7078.feaab618bd.js";
 e.C(m);
-import * as h from "./200429.ddc1bbef02.js";
+import * as h from "./200429.333f7655c5.js";
 e.C(h);
-import * as u from "./698524.21708788d0.js";
+import * as u from "./698524.dcafe4f0ed.js";
 e.C(u);
-import * as f from "./956483.c322d2995f.js";
+import * as f from "./956483.aba2ca38e0.js";
 e.C(f);
-import * as g from "./87162.b460b44fcb.js";
+import * as g from "./87162.5b3170a587.js";
 e.C(g);
-import * as b from "./396705.f9a5e3185a.js";
-e.C(b);
-import * as w from "./155568.be3429758e.js";
+import * as w from "./396705.7a4525a973.js";
 e.C(w);
-import * as x from "./731863.f2322456e0.js";
+import * as b from "./155568.76836d52b2.js";
+e.C(b);
+import * as x from "./731863.17b468ae96.js";
 e.C(x);
-import * as j from "./767086.ab7a1efc0d.js";
+import * as j from "./767086.ec4c8241bf.js";
 e.C(j);
-import * as C from "./76629.3c6cad96ca.js";
+import * as C from "./76629.3da73a70ff.js";
 e.C(C);
-import * as k from "./514085.2befcfe573.js";
+import * as k from "./514085.ed26950330.js";
 e.C(k);
 import * as y from "./226913.27c93050ff.js";
 e.C(y);
-import * as D from "./965367.1affaa92e5.js";
-e.C(D);
-var _ = e(e.s = "LZjk").a;
+import * as P from "./965367.13542736b2.js";
+e.C(P);
+var D = e(e.s = "LQWP").a;
 export {
-    _ as
+    D as
     default
 };

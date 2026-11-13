@@ -1,6 +1,6 @@
 export const __rspack_esm_ids = [487589];
 export const __webpack_modules__ = {
-    CTmB: (function(e, t, a) {
+    zd4v: (function(e, t, a) {
         a.d(t, {
             a: () => r,
             b: () => o
@@ -10,7 +10,7 @@ export const __webpack_modules__ = {
             l = a("QosV"),
             s = a("Bbed"),
             g = a("aBxd");
-        let c = (0, s.a)(async () => (await Promise.all([a.e(680612), a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(480171), a.e(999385), a.e(107895), a.e(553028), a.e(195563), a.e(103041), a.e(154542), a.e(155016), a.e(521552)]).then(a.bind(a, "CDzG"))).SpacesPersonalRoute),
+        let c = (0, s.a)(async () => (await Promise.all([a.e(680612), a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(480171), a.e(999385), a.e(107895), a.e(553028), a.e(195563), a.e(103041), a.e(154542), a.e(573917), a.e(561789)]).then(a.bind(a, "CDzG"))).SpacesPersonalRoute),
             o = () => [{
                 title: "ChatGPT Space"
             }, {
@@ -264,15 +264,15 @@ export const __webpack_modules__ = {
                     resume: T
                 } = t,
                 S = e.get(I.spaceAccountId$),
-                b = e.get(g.k),
-                Z = e.get(g.j);
+                Z = e.get(g.k),
+                b = e.get(g.j);
             if (null == S) throw Error("space_account_unavailable");
-            if (null != T && (T.accountId !== S || T.userId !== b || null == T.space)) throw Error("space_setup_unavailable");
+            if (null != T && (T.accountId !== S || T.userId !== Z || null == T.space)) throw Error("space_setup_unavailable");
             let E = e.get(g.m).accountUserId,
                 O = T?.localPageId ?? `local-page-${crypto.randomUUID()}`;
             (0, w.b)(e, T ?? {
                 accountId: S,
-                userId: b,
+                userId: Z,
                 localPageId: O,
                 name: x,
                 backingType: "drive",
@@ -295,7 +295,7 @@ export const __webpack_modules__ = {
                     let a = {
                         localPageId: O,
                         accountId: S,
-                        userId: b,
+                        userId: Z,
                         name: x,
                         status: t,
                         response: n,
@@ -307,7 +307,7 @@ export const __webpack_modules__ = {
                 G = () => {
                     if (null != u) return u;
                     if (B || U.signal.aborted) return Promise.reject(new DOMException("Space creation cancelled", "AbortError"));
-                    let t = (0, I.watchSpaceAccount)(e, S, b, E, Z),
+                    let t = (0, I.watchSpaceAccount)(e, S, Z, E, b),
                         l = AbortSignal.any([U.signal, t.signal]),
                         N = async () => {
                             l.throwIfAborted();
@@ -341,10 +341,10 @@ export const __webpack_modules__ = {
                                 let {
                                     get: t
                                 } = e;
-                                return l.aborted || t(I.spaceAccountId$) !== S || t(g.k) !== b || void 0 !== E && t(f.a) !== E || t(f.d) !== Z || !t(M.pagesEnabled$) || t(d.b)?.some(e => e.id === n?.id) === !0
+                                return l.aborted || t(I.spaceAccountId$) !== S || t(g.k) !== Z || void 0 !== E && t(f.a) !== E || t(f.d) !== b || !t(M.pagesEnabled$) || t(d.b)?.some(e => e.id === n?.id) === !0
                             }), l.throwIfAborted(), F("creating");
                             let c = P()?.appearance,
-                                o = (0, i.Aj)(c?.emoji),
+                                o = (0, i.Cj)(c?.emoji),
                                 r = null == o ? null : {
                                     kind: "icon",
                                     value: o,
@@ -353,7 +353,7 @@ export const __webpack_modules__ = {
                             if (s || null != r) {
                                 let {
                                     completeSpaceRootSetup: t
-                                } = await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(753405), a.e(193172), a.e(619452)]).then(a.bind(a, "PluF"));
+                                } = await Promise.all([a.e(418851), a.e(109308), a.e(399565), a.e(257798), a.e(447351), a.e(617936), a.e(807489), a.e(337882), a.e(955979), a.e(646436), a.e(7078), a.e(200429), a.e(698524), a.e(956483), a.e(87162), a.e(396705), a.e(155568), a.e(731863), a.e(767086), a.e(76629), a.e(514085), a.e(226913), a.e(753405), a.e(193172), a.e(535342)]).then(a.bind(a, "PluF"));
                                 l.throwIfAborted();
                                 let i = await t(e, n, r, s, l);
                                 l.throwIfAborted(), n = {
@@ -439,7 +439,7 @@ export const __webpack_modules__ = {
                                             }
                                         }).execute({
                                             changes: c
-                                        }), await (0, i.kf)(Promise.all(d), n), n.throwIfAborted(), r.size < c.length) try {
+                                        }), await (0, i.mf)(Promise.all(d), n), n.throwIfAborted(), r.size < c.length) try {
                                         let t = await (0, y.c)(e, s, n, !0);
                                         n.throwIfAborted(), (0, y.b)(t) && c.forEach((e, n) => {
                                             let i = o.get(e) ?? a[n].recipient;
@@ -479,7 +479,7 @@ export const __webpack_modules__ = {
                                     }), t.some(e => "failed" === e.status)) throw Error("space_creation_invitations_incomplete")
                             }(0, w.a)(e, O), F("created")
                         };
-                    return F("creating"), u = Promise.resolve().then(() => null == navigator.locks ? N() : navigator.locks.request(`space-setup:${JSON.stringify([S,b,O])}`, {
+                    return F("creating"), u = Promise.resolve().then(() => null == navigator.locks ? N() : navigator.locks.request(`space-setup:${JSON.stringify([S,Z,O])}`, {
                         signal: l
                     }, N)).catch(t => {
                         if (l.aborted) throw U.abort(), e.set(D, O, void 0), null != n && e.set(D, n.id, void 0), Y.cancel("account_changed"), t;
@@ -488,7 +488,7 @@ export const __webpack_modules__ = {
                                 pathname: t,
                                 search: a
                             } = e.get(s.b);
-                            e.get(I.spaceAccountId$) === S && e.get(g.k) === b && ("/spaces/new" !== t || new URLSearchParams(a).get("creation") !== O) && e.get(c.f).warning(e.get(o.a).formatMessage({
+                            e.get(I.spaceAccountId$) === S && e.get(g.k) === Z && ("/spaces/new" !== t || new URLSearchParams(a).get("creation") !== O) && e.get(c.f).warning(e.get(o.a).formatMessage({
                                 id: "codex.space.sidebar.spaceSetupNeedsAttention",
                                 defaultMessage: "Space setup needs attention"
                             }))
@@ -818,7 +818,7 @@ Create a new trip planner page with flight details, hotel reservations, and tour
                 } = t, n = a(D);
                 return a(u.g) && n?.awaitingPaint === !0 && !a(h.h, n.identityKey) && n.pageId === e && n.identityKey === a(m)?.key
             }),
-            b = (0, i.c)(r.a, e => {
+            Z = (0, i.c)(r.a, e => {
                 let {
                     get: t
                 } = e, a = t(m);
@@ -828,7 +828,7 @@ Create a new trip planner page with flight details, hotel reservations, and tour
                 let i = t(g.p);
                 if (i.isSuccess && !i.isPlaceholderData) return Object.hasOwn(i.data.seenAnnouncements ?? {}, A)
             }),
-            Z = (0, i.d)(r.a, (e, t) => {
+            b = (0, i.d)(r.a, (e, t) => {
                 let {
                     get: a
                 } = t;
@@ -839,7 +839,7 @@ Create a new trip planner page with flight details, hotel reservations, and tour
                 if (i.visible) return {
                     pageId: i.pageId
                 };
-                if (!1 !== a(b)) return null;
+                if (!1 !== a(Z)) return null;
                 let l = a(C.spacePagesQuery$),
                     s = a(C.spacesQuery$);
                 if (!a(C.spacePagesComplete$) || !l.isSuccess || !l.isFetched || l.isFetching || l.isPlaceholderData || !s.isSuccess || !s.isFetched || s.isFetching) return null;
@@ -920,14 +920,14 @@ Create a new trip planner page with flight details, hotel reservations, and tour
             e: E,
             f: T,
             g: m,
-            h: b,
+            h: Z,
             i: z,
             j: S,
             k: function(e) {
                 return e instanceof Error && (0, p.a)(e) ? "retryable" : "failed"
             },
             l: x,
-            m: Z
+            m: b
         })
     }),
     EBQV: (function(t) {
@@ -935,7 +935,7 @@ Create a new trip planner page with flight details, hotel reservations, and tour
             return e
         })
     }),
-    NBTh: (function(e, t) {
+    NM5E: (function(e, t) {
         t.a = {
             kind: "sprite",
             name: "minus-sm-light-20",
@@ -1000,8 +1000,8 @@ Create a new trip planner page with flight details, hotel reservations, and tour
 };
 import {
     __webpack_require__ as e
-} from "./633146.d376de6326.js";
-import * as t from "./418851.b915ffe930.js";
+} from "./633146.de799da76f.js";
+import * as t from "./418851.915eb36248.js";
 e.C(t);
 import * as a from "./109308.e66696cd0d.js";
 e.C(a);
@@ -1009,49 +1009,49 @@ import * as n from "./399565.6af208675d.js";
 e.C(n);
 import * as i from "./257798.b51742efd5.js";
 e.C(i);
-import * as l from "./447351.dafe7b7b5e.js";
+import * as l from "./447351.984c166fc8.js";
 e.C(l);
 import * as s from "./617936.e33610e0b9.js";
 e.C(s);
-import * as g from "./807489.01dbb0865d.js";
+import * as g from "./807489.850de05ef3.js";
 e.C(g);
-import * as c from "./337882.7119120a0c.js";
+import * as c from "./337882.5f151ee5b8.js";
 e.C(c);
-import * as o from "./955979.cdc247a476.js";
+import * as o from "./955979.9e9440262c.js";
 e.C(o);
-import * as r from "./646436.2bf4f5cfd6.js";
+import * as r from "./646436.03e4f4565c.js";
 e.C(r);
-import * as M from "./7078.89396f9757.js";
+import * as M from "./7078.feaab618bd.js";
 e.C(M);
-import * as d from "./200429.ddc1bbef02.js";
+import * as d from "./200429.333f7655c5.js";
 e.C(d);
-import * as I from "./698524.21708788d0.js";
+import * as I from "./698524.dcafe4f0ed.js";
 e.C(I);
-import * as p from "./956483.c322d2995f.js";
+import * as p from "./956483.aba2ca38e0.js";
 e.C(p);
-import * as C from "./87162.b460b44fcb.js";
+import * as C from "./87162.5b3170a587.js";
 e.C(C);
-import * as u from "./396705.f9a5e3185a.js";
+import * as u from "./396705.7a4525a973.js";
 e.C(u);
-import * as h from "./155568.be3429758e.js";
+import * as h from "./155568.76836d52b2.js";
 e.C(h);
-import * as j from "./731863.f2322456e0.js";
+import * as j from "./731863.17b468ae96.js";
 e.C(j);
-import * as f from "./767086.ab7a1efc0d.js";
+import * as f from "./767086.ec4c8241bf.js";
 e.C(f);
-import * as N from "./76629.3c6cad96ca.js";
+import * as N from "./76629.3da73a70ff.js";
 e.C(N);
-import * as A from "./514085.2befcfe573.js";
+import * as A from "./514085.ed26950330.js";
 e.C(A);
 import * as y from "./226913.27c93050ff.js";
 e.C(y);
-import * as L from "./355084.5a9bfd591f.js";
+import * as L from "./355084.b74d0edc8c.js";
 e.C(L);
-import * as w from "./352477.3c43299853.js";
+import * as w from "./352477.eb81416a8f.js";
 e.C(w);
-import * as D from "./487589.5be5faca24.js";
+import * as D from "./487589.63caa82351.js";
 e.C(D);
-var x = e(e.s = "CTmB"),
+var x = e(e.s = "zd4v"),
     m = x.a,
     v = x.b;
 export {

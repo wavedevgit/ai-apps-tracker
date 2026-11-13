@@ -1,6 +1,6 @@
 export const __rspack_esm_ids = [518881];
 export const __webpack_modules__ = {
-    VR1s: (function(e, r, t) {
+    ZjYw: (function(e, r, t) {
         t.d(r, {
             a: () => i
         });
@@ -29,8 +29,8 @@ export const __webpack_modules__ = {
             s = t("zd8w"),
             n = t("jqIZ"),
             i = t("Kwur"),
-            l = t("jVlT"),
-            f = t("M8lA"),
+            f = t("jVlT"),
+            l = t("M8lA"),
             m = t("WWY6");
         let c = /^[A-Za-z0-9_-]{43}$/;
         t.d(r, {}, {
@@ -42,13 +42,13 @@ export const __webpack_modules__ = {
                         a = t.getAll("token");
                     e = null != (r = 1 === t.size && 1 === a.length ? a[0] : null) && c.test(r), g[0] = _.search, g[1] = e, g[2] = r
                 } else e = g[1], r = g[2];
-                let b = e;
-                g[3] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, f.getClientBootstrap)(), g[3] = t) : t = g[3];
-                let w = "logged_in" === t.authStatus;
+                let w = e;
+                g[3] === Symbol.for("react.memo_cache_sentinel") ? (t = (0, l.getClientBootstrap)(), g[3] = t) : t = g[3];
+                let j = "logged_in" === t.authStatus;
                 g[4] !== r ? (p = ["paid-image-handoff-redeem", r], d = async e => {
                     let {
                         signal: t
-                    } = e, a = (0, l.c)();
+                    } = e, a = (0, f.c)();
                     if ((0, m.a)(), null == r || null == a) throw Error("Missing handoff token");
                     let {
                         prompt: o,
@@ -60,29 +60,29 @@ export const __webpack_modules__ = {
                         },
                         signal: t
                     });
-                    if (t.throwIfAborted(), !o.trim() || "picture_v2" !== C || !(0, l.e)(o, a)) throw Error("Unable to prepare image handoff replay");
+                    if (t.throwIfAborted(), !o.trim() || "picture_v2" !== C || !(0, f.e)(o, a)) throw Error("Unable to prepare image handoff replay");
                     let n = new URL("/", window.location.origin);
-                    for (let e of (n.searchParams.set(l.a, "submit"), n.searchParams.set("skip_instant_query", "1"), Object.keys(s))) n.searchParams.set(e, s[e]);
+                    for (let e of (n.searchParams.set(f.a, "submit"), n.searchParams.set("skip_instant_query", "1"), Object.keys(s))) n.searchParams.set(e, s[e]);
                     return n.toString()
                 }, g[4] = r, g[5] = p, g[6] = d) : (p = g[5], d = g[6]);
-                let j = w && b;
-                g[7] !== p || g[8] !== d || g[9] !== j ? (u = {
+                let b = j && w;
+                g[7] !== p || g[8] !== d || g[9] !== b ? (u = {
                     queryKey: p,
                     queryFn: d,
-                    enabled: j,
+                    enabled: b,
                     staleTime: 1 / 0,
                     gcTime: 0,
                     retry: !1,
                     refetchOnWindowFocus: !1,
                     refetchOnReconnect: !1
-                }, g[7] = p, g[8] = d, g[9] = j, g[10] = u) : u = g[10];
+                }, g[7] = p, g[8] = d, g[9] = b, g[10] = u) : u = g[10];
                 let {
                     data: V,
-                    isError: M
+                    isError: Z
                 } = (0, C.a)(u);
                 if (g[11] !== V ? (h = () => {
                         null != V && window.location.replace(V)
-                    }, L = [V], g[11] = V, g[12] = h, g[13] = L) : (h = g[12], L = g[13]), (0, s.useEffect)(h, L), b && !w) {
+                    }, L = [V], g[11] = V, g[12] = h, g[13] = L) : (h = g[12], L = g[13]), (0, s.useEffect)(h, L), w && !j) {
                     let e, t, o = `/paid-image-handoff?token=${encodeURIComponent(r)}`;
                     g[14] !== o ? (e = new URLSearchParams({
                         callback_path: o
@@ -93,7 +93,7 @@ export const __webpack_modules__ = {
                         to: C
                     }), g[16] = C, g[17] = t) : t = g[17], t
                 }
-                if (!b || M) {
+                if (!w || Z) {
                     let e;
                     return g[18] === Symbol.for("react.memo_cache_sentinel") ? (e = (0, a.jsx)(n.l, {
                         to: "/?paid_image_handoff_carryover=unavailable",
@@ -140,8 +140,8 @@ export const __webpack_modules__ = {
 };
 import {
     __webpack_require__ as e
-} from "./633146.d376de6326.js";
-import * as r from "./418851.b915ffe930.js";
+} from "./633146.de799da76f.js";
+import * as r from "./418851.915eb36248.js";
 e.C(r);
 import * as t from "./109308.e66696cd0d.js";
 e.C(t);
@@ -149,46 +149,46 @@ import * as a from "./399565.6af208675d.js";
 e.C(a);
 import * as o from "./257798.b51742efd5.js";
 e.C(o);
-import * as C from "./447351.dafe7b7b5e.js";
+import * as C from "./447351.984c166fc8.js";
 e.C(C);
 import * as s from "./617936.e33610e0b9.js";
 e.C(s);
-import * as n from "./807489.01dbb0865d.js";
+import * as n from "./807489.850de05ef3.js";
 e.C(n);
-import * as i from "./337882.7119120a0c.js";
+import * as i from "./337882.5f151ee5b8.js";
 e.C(i);
-import * as l from "./955979.cdc247a476.js";
-e.C(l);
-import * as f from "./646436.2bf4f5cfd6.js";
+import * as f from "./955979.9e9440262c.js";
 e.C(f);
-import * as m from "./7078.89396f9757.js";
+import * as l from "./646436.03e4f4565c.js";
+e.C(l);
+import * as m from "./7078.feaab618bd.js";
 e.C(m);
-import * as c from "./200429.ddc1bbef02.js";
+import * as c from "./200429.333f7655c5.js";
 e.C(c);
-import * as p from "./698524.21708788d0.js";
+import * as p from "./698524.dcafe4f0ed.js";
 e.C(p);
-import * as d from "./956483.c322d2995f.js";
+import * as d from "./956483.aba2ca38e0.js";
 e.C(d);
-import * as u from "./87162.b460b44fcb.js";
+import * as u from "./87162.5b3170a587.js";
 e.C(u);
-import * as h from "./396705.f9a5e3185a.js";
+import * as h from "./396705.7a4525a973.js";
 e.C(h);
-import * as L from "./155568.be3429758e.js";
+import * as L from "./155568.76836d52b2.js";
 e.C(L);
-import * as g from "./731863.f2322456e0.js";
+import * as g from "./731863.17b468ae96.js";
 e.C(g);
-import * as _ from "./767086.ab7a1efc0d.js";
+import * as _ from "./767086.ec4c8241bf.js";
 e.C(_);
-import * as b from "./76629.3c6cad96ca.js";
-e.C(b);
-import * as w from "./514085.2befcfe573.js";
+import * as w from "./76629.3da73a70ff.js";
 e.C(w);
-import * as j from "./226913.27c93050ff.js";
+import * as j from "./514085.ed26950330.js";
 e.C(j);
-import * as V from "./518881.2725a2dca9.js";
+import * as b from "./226913.27c93050ff.js";
+e.C(b);
+import * as V from "./518881.00449a231a.js";
 e.C(V);
-var M = e(e.s = "VR1s").a;
+var Z = e(e.s = "ZjYw").a;
 export {
-    M as
+    Z as
     default
 };
